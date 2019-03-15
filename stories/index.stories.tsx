@@ -1,6 +1,5 @@
 import React from 'react';
 import styled, { ThemeProvider } from 'styled-components';
-import { theme } from 'nordnet-ui-kit';
 
 import { storiesOf, addDecorator } from '@storybook/react';
 import { action } from '@storybook/addon-actions';
@@ -9,20 +8,6 @@ import { linkTo } from '@storybook/addon-links';
 import { Button, Welcome } from '@storybook/react/demo';
 
 // import { Text } from '../src/components/text';
-
-const ThemeDecorator = storyFn => {
-  return <ThemeProvider theme={theme}>{storyFn()}</ThemeProvider>;
-};
-
-storiesOf('Text', module)
-  .addDecorator(ThemeDecorator)
-  .add('with theme', () => {
-    const Text = styled.p`
-      font-family: ${props => props.theme.typography.primary().fontFamily};
-    `;
-
-    return <Text>Test</Text>;
-  });
 
 storiesOf('Welcome', module).add('to Storybook', () => <Welcome showApp={linkTo('Button')} />);
 
