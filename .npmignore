@@ -1,0 +1,10 @@
+*
+!dist
+!dist/**/*
+dist/**/*.test*
+!src
+!src/**/*
+src/**/*.test*
+!bin
+!package.json
+!tsconfig.json
