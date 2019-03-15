@@ -8,6 +8,7 @@
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
     "lint": "eslint --ext=.jsx --ext=.js src",
+    "lint:css": "stylelint './src/**/*.{js,jsx}'",
     "format": "prettier --write 'src/**/*.{js,jsx}'",
     "babel:esm": "BABEL_ENV=esm babel -d dist/esm src/",
     "babel:cjs": "babel -d dist/cjs src/",
@@ -47,6 +48,10 @@
     "eslint-plugin-react": "7.12.4",
     "eslint-plugin-react-hooks": "1.5.1",
     "prettier": "1.16.4",
-    "rimraf": "2.6.3"
+    "rimraf": "2.6.3",
+    "stylelint": "9.10.1",
+    "stylelint-config-recommended": "2.1.0",
+    "stylelint-config-styled-components": "0.1.1",
+    "stylelint-processor-styled-components": "1.5.2"
   }
 }
