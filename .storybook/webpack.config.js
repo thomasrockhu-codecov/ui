@@ -1,3 +1,5 @@
+const path = require('path');
+
 module.exports = ({ config, mode }) => {
   config.module.rules.push({
     test: /\.(ts|tsx)$/,
@@ -7,5 +9,10 @@ module.exports = ({ config, mode }) => {
     },
   });
   config.resolve.extensions.push('.ts', '.tsx');
+  config.resolve.alias = {
+    ...config.resolve.alias,
+    ['Atoms']: path.resolve(__dirname, '../src/Atoms/'),
+    ['Templates']: path.resolve(__dirname, '../src/Templates/'),
+  };
   return config;
 };
