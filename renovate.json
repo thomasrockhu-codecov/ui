@@ -1,0 +1,13 @@
+{
+  "extends": [
+    "config:base",
+    ":pinOnlyDevDependencies"
+  ],
+  "ignoreDeps": ["color"],
+  "packageRules": [
+    {
+      "depTypeList":  ["devDependencies"],
+      "schedule": "before 3am on Monday"
+    }
+  ]
+}
