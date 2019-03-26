@@ -1,4 +1,4 @@
-import { assert } from 'common/utils'; // eslint-disable-line import/no-unresolved
+import { assert } from '../common/utils'; // eslint-disable-line import/no-unresolved
 import { ThemeConfig, Theme, RawColor } from './theme.types';
 
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
