@@ -24,7 +24,6 @@ jobs:
         - npm run build
         - npm run build-storybook
 
-    TODO
     - stage: release
       script:
         - git config user.email "nordnet-release@localhost"
