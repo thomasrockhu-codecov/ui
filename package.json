@@ -20,7 +20,7 @@
     "babel:cjs": "babel -d dist/cjs src/ --extensions=.ts,.tsx --copy-files",
     "build": "rimraf dist && yarn babel:esm && yarn babel:cjs",
     "build-storybook": "build-storybook",
-    "docs-publish": "gh-pages -d documentation/dist --repo https://$GH_TOKEN@github.com/nordnet/ui.git --silent",
+    "docs-publish": "gh-pages -d storybook-static --repo https://$GH_TOKEN@github.com/nordnet/ui.git --silent",
     "now-build": "build-storybook",
     "commit": "git-cz"
   },
