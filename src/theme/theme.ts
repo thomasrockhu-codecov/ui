@@ -4,15 +4,16 @@ import { ThemeConfig, Theme, RawColor } from './theme.types';
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
 export const createTheme = (config?: ThemeConfig): Theme => {
   const size: Theme['size'] = {
-    xsmall: 360,
-    small: 768,
-    medium: 992,
-    large: 1440,
-    xlarge: 1680,
+    xs: 360,
+    sm: 768,
+    md: 992,
+    lg: 1440,
+    xl: 1680,
   };
 
   const sizeValues = Object.values(size) as number[];
 
+  const GUTTER = 5;
   const UNIT = 4;
   const unit = (times: number) => times * UNIT;
   unit.valueOf = () => UNIT;
@@ -55,6 +56,7 @@ export const createTheme = (config?: ThemeConfig): Theme => {
   } as RawColor;
   const spacing: Theme['spacing'] = {
     unit,
+    gutter: GUTTER,
   };
 
   const theme: Theme = {
