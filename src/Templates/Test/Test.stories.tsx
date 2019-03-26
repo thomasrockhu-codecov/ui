@@ -1,8 +1,8 @@
 import React from 'react';
 
 import { storiesOf } from '@storybook/react';
-import Text from 'Atoms/Text';
-import Input from 'Atoms/Input';
+import Text from '../../Atoms/Text';
+import Input from '../../Atoms/Input';
 
 storiesOf('Templates/Test', module).add('basic use', () => (
   <div>
