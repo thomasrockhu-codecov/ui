@@ -64,7 +64,9 @@ const StyledDiv = styled.div<Props>`
     const { sm, md, lg, xl } = props;
     const createStyles = (innerProps: Partial<Props>, size?: 'sm' | 'md' | 'lg' | 'xl') => {
       const { height, areas, templateRows, templateColumns } = innerProps;
-      const gutter = innerProps.gutter || props.theme.spacing.gutter;
+      const gutter = isUndefined(innerProps.gutter)
+        ? props.theme.spacing.gutter
+        : innerProps.gutter;
       const baseStyles = `
           ${height ? `height: ${height}` : ''};
           ${areas ? `grid-template-areas: ${formatAreas(areas)};` : ''}
@@ -97,8 +99,7 @@ const StyledDiv = styled.div<Props>`
   box-sizing: border-box;
   display: grid;
 `;
-const StyledCssGrid: React.FC<Props> = props => <StyledDiv {...props} />;
 
-export const CssGrid: React.FunctionComponent<Props> = props => <StyledCssGrid {...props} />;
+export const CssGrid: React.FC<Props> = props => <StyledDiv {...props} />;
 
 CssGrid.displayName = 'Grid.Container.CssGrid';
