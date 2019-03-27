@@ -127,20 +127,20 @@ stories.add('Two dimensional grid with custom templateColumns', () => (
 stories.add('Two dimensional grid with  different layouts for different screen sizes', () => (
   <Grid.Container
     twoDimension
-    templateColumns={[3, 6, 3]}
+    templateColumns={[6, 6]}
+    // prettier-ignore
     areas={[
-      ['left', 'top', 'sidebar'],
-      ['left', 'content', 'sidebar'],
-      ['left', 'content', 'sidebar'],
+      ['top', 'top'],
+      ['left', 'sidebar'],
+      ['content', 'sidebar'],
     ]}
     sm={{
-      templateColumns: [6, 6],
+      templateColumns: [3, 6, 3],
       // prettier-ignore
       areas: [
-        ['left', 'sidebar'],
-        ['left', 'sidebar'],
-        ['top', 'top'],
-        ['content', 'content'],
+        ['left', 'top', 'sidebar'],
+        ['left', 'content', 'sidebar'],
+        ['left', 'content', 'sidebar'],
       ]
     }}
   >
