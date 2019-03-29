@@ -26,13 +26,13 @@
   },
   "commitlint": {
     "extends": [
-      "squash-pr",
       "@commitlint/config-conventional"
     ],
     "rules": {
       "scope-case": [
         0
-      ]
+      ],
+      "header-max-length": [0]
     }
   },
   "lint-staged": {
@@ -99,7 +99,6 @@
     "babel-plugin-transform-remove-imports": "^1.0.8",
     "babel-plugin-typescript-to-proptypes": "0.17.1",
     "codecov": "3.2.0",
-    "commitlint-config-squash-pr": "1.0.1",
     "cz-conventional-changelog": "2.1.0",
     "enzyme": "3.9.0",
     "enzyme-adapter-react-16": "1.11.2",
