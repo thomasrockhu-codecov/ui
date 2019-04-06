@@ -4,8 +4,7 @@ import styled from 'styled-components';
 import { Props } from './Card.types';
 
 import { Card } from '../..';
-
-const stories = storiesOf('Atoms/Card', module);
+import { Display } from '../../common/Display';
 
 const StyledContent = styled.div`
   height: 50vh;
@@ -16,26 +15,31 @@ const StyledContent = styled.div`
 
 const Content: React.FC<Props> = ({ children }) => <StyledContent>{children}</StyledContent>;
 
-stories.add('Basic Card', () => {
-  return (
+storiesOf('Atoms | Card', module)
+  .add('Basic Card', () => (
     <Card>
       <Content>A Card as a div containing content</Content>
     </Card>
-  );
-});
-
-stories.add('Card as section', () => {
-  return (
-    <Card as="section">
-      <Content>A Card as a section containing content</Content>
-    </Card>
-  );
-});
-
-stories.add('Card as article', () => {
-  return (
-    <Card as="article">
-      <Content>A Card as a article containing content</Content>
-    </Card>
-  );
-});
+  ))
+  .add('Card rendered with different html tags', () => (
+    <Display
+      items={[
+        {
+          title: 'Section',
+          component: (
+            <Card as="section">
+              <Content>A Card as a section containing content</Content>
+            </Card>
+          ),
+        },
+        {
+          title: 'Article',
+          component: (
+            <Card as="article">
+              <Content>A Card as a article containing content</Content>
+            </Card>
+          ),
+        },
+      ]}
+    />
+  ));

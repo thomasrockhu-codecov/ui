@@ -3,9 +3,7 @@ import React from 'react';
 
 import { Media } from '../..';
 
-const stories = storiesOf('Atoms/Media', module);
-
-stories.add('Basic usage', () => {
+storiesOf('Atoms | Media', module).add('Basic usage', () => {
   return (
     <>
       <Media query={t => t.media.lessThan(t.size.md)}>

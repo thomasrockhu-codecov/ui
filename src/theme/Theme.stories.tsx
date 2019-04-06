@@ -1,34 +1,30 @@
 import { storiesOf } from '@storybook/react';
 import React from 'react';
-
 import styled from 'styled-components';
+import theme from '.';
 
-const stories = storiesOf('Theme', module);
+import { Display } from '../common/Display';
 
-stories.add('styled components theme is properly passed', () => {
-  const Component = styled.div`
-    width: ${p => p.theme.spacing.unit(50)}px;
-    height: ${p => p.theme.spacing.unit(50)}px;
-    border: 1px solid ${p => p.theme.color.cta};
-  `;
-  return <Component>Width, height and border comes from theme!</Component>;
-});
-
-const Component = styled.div`
-  width: ${p => p.theme.spacing.unit(50)}px;
-  height: ${p => p.theme.spacing.unit(50)}px;
-  background: ${({ theme }) => theme.color.cta};
-
-  ${({ theme }) => theme.media.greaterThan(theme.size.xs)} {
-    background: ${({ theme }) => theme.color.positive};
-  }
-  ${({ theme }) => theme.media.greaterThan(theme.size.sm)} {
-    background: ${({ theme }) => theme.color.negative};
-  }
-  ${({ theme }) => theme.media.greaterThan(theme.size.md)} {
-    background: ${({ theme }) => theme.color.warning};
-  }
+const Color = styled.div`
+  width: 30px;
+  height: 30px;
+  background-color: ${p => p.color};
+  border: 1px solid #eee;
 `;
-stories.add('media queries works', () => {
-  return <Component>Change the size of the screen and watch me changing colors</Component>;
-});
+storiesOf('Theme', module)
+  .add('Colors', () => (
+    <Display
+      items={Object.entries(theme.color).map(([title, color]) => ({
+        title,
+        component: <Color color={color} />,
+      }))}
+    />
+  ))
+  .add('Screen sizes', () => (
+    <Display
+      items={Object.entries(theme.size).map(([title, size]) => ({
+        title,
+        component: <pre>{size}</pre>,
+      }))}
+    />
+  ));

@@ -1,18 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Storyshots Atoms/Avatar Basic usage 1`] = `
-<div
-  className="Avatar__StyledDiv-a8mb4w-0 igAJTE"
->
-  <span
-    className="Text__StyledText-sc-1974afi-0 cEGWcE"
-  >
-    ASK
-  </span>
-</div>
-`;
-
-exports[`Storyshots Atoms/Card Basic Card 1`] = `
+exports[`Storyshots Atoms | Card Basic Card 1`] = `
 <div
   className="Card__StyledCard-sc-1e5czjc-0 gwDvCn"
 >
@@ -24,31 +12,57 @@ exports[`Storyshots Atoms/Card Basic Card 1`] = `
 </div>
 `;
 
-exports[`Storyshots Atoms/Card Card as article 1`] = `
-<article
-  className="Card__StyledCard-sc-1e5czjc-0 gwDvCn"
+exports[`Storyshots Atoms | Card Card rendered with different html tags 1`] = `
+<div
+  className="Display__StyledFlexDiv-sc-1yo6rmg-0 fcTgTL"
+  direction="column"
 >
   <div
-    className="Cardstories__StyledContent-eexhxe-0 kGEqlI"
+    className="Display__StyledFlexDiv-sc-1yo6rmg-0 hFANJJ"
+    direction="row"
   >
-    A Card as a article containing content
+    <div
+      className="Display__DivWithBorder-sc-1yo6rmg-1 cmlFBm"
+    >
+      Section
+    </div>
+    <div>
+      <section
+        className="Card__StyledCard-sc-1e5czjc-0 gwDvCn"
+      >
+        <div
+          className="Cardstories__StyledContent-eexhxe-0 kGEqlI"
+        >
+          A Card as a section containing content
+        </div>
+      </section>
+    </div>
   </div>
-</article>
-`;
-
-exports[`Storyshots Atoms/Card Card as section 1`] = `
-<section
-  className="Card__StyledCard-sc-1e5czjc-0 gwDvCn"
->
   <div
-    className="Cardstories__StyledContent-eexhxe-0 kGEqlI"
+    className="Display__StyledFlexDiv-sc-1yo6rmg-0 hFANJJ"
+    direction="row"
   >
-    A Card as a section containing content
+    <div
+      className="Display__DivWithBorder-sc-1yo6rmg-1 cmlFBm"
+    >
+      Article
+    </div>
+    <div>
+      <article
+        className="Card__StyledCard-sc-1e5czjc-0 gwDvCn"
+      >
+        <div
+          className="Cardstories__StyledContent-eexhxe-0 kGEqlI"
+        >
+          A Card as a article containing content
+        </div>
+      </article>
+    </div>
   </div>
-</section>
+</div>
 `;
 
-exports[`Storyshots Atoms/CssGrid CssGrid with custom gutter 1`] = `
+exports[`Storyshots Atoms | CssGrid CssGrid with custom gutter 1`] = `
 <div
   className="CssGrid__StyledDiv-bu5cxy-0 kAoCvY"
 >
@@ -91,7 +105,7 @@ exports[`Storyshots Atoms/CssGrid CssGrid with custom gutter 1`] = `
 </div>
 `;
 
-exports[`Storyshots Atoms/CssGrid CssGrid with custom templateColumns 1`] = `
+exports[`Storyshots Atoms | CssGrid CssGrid with custom templateColumns 1`] = `
 <div
   className="CssGrid__StyledDiv-bu5cxy-0 htHwvF"
 >
@@ -134,7 +148,7 @@ exports[`Storyshots Atoms/CssGrid CssGrid with custom templateColumns 1`] = `
 </div>
 `;
 
-exports[`Storyshots Atoms/CssGrid CssGrid with different layouts for different screen sizes 1`] = `
+exports[`Storyshots Atoms | CssGrid CssGrid with different layouts for different screen sizes 1`] = `
 <div
   className="CssGrid__StyledDiv-bu5cxy-0 jIOgaG"
 >
@@ -177,7 +191,7 @@ exports[`Storyshots Atoms/CssGrid CssGrid with different layouts for different s
 </div>
 `;
 
-exports[`Storyshots Atoms/CssGrid CssGrid with object as gutter and custom sized columns 1`] = `
+exports[`Storyshots Atoms | CssGrid CssGrid with object as gutter and custom sized columns 1`] = `
 <div
   className="CssGrid__StyledDiv-bu5cxy-0 fvIXEW"
 >
@@ -238,7 +252,7 @@ exports[`Storyshots Atoms/CssGrid CssGrid with object as gutter and custom sized
 </div>
 `;
 
-exports[`Storyshots Atoms/CssGrid Simple CssGrid 1`] = `
+exports[`Storyshots Atoms | CssGrid Simple CssGrid 1`] = `
 <div
   className="CssGrid__StyledDiv-bu5cxy-0 dmRbLA"
 >
@@ -290,7 +304,7 @@ exports[`Storyshots Atoms/CssGrid Simple CssGrid 1`] = `
 </div>
 `;
 
-exports[`Storyshots Atoms/Currency Primary default 1`] = `
+exports[`Storyshots Atoms | Currency Primary default 1`] = `
 <span
   className="Text__StyledText-sc-1974afi-0 cmCWWJ"
 >
@@ -298,7 +312,7 @@ exports[`Storyshots Atoms/Currency Primary default 1`] = `
 </span>
 `;
 
-exports[`Storyshots Atoms/Currency Secondary default 1`] = `
+exports[`Storyshots Atoms | Currency Secondary default 1`] = `
 <span
   className="Text__StyledText-sc-1974afi-0 laXMaY"
 >
@@ -306,7 +320,7 @@ exports[`Storyshots Atoms/Currency Secondary default 1`] = `
 </span>
 `;
 
-exports[`Storyshots Atoms/Currency Tertiary default 1`] = `
+exports[`Storyshots Atoms | Currency Tertiary default 1`] = `
 <span
   className="Text__StyledText-sc-1974afi-0 kBKleW"
 >
@@ -314,7 +328,7 @@ exports[`Storyshots Atoms/Currency Tertiary default 1`] = `
 </span>
 `;
 
-exports[`Storyshots Atoms/Currency Title1 default 1`] = `
+exports[`Storyshots Atoms | Currency Title1 default 1`] = `
 <span
   className="Text__StyledText-sc-1974afi-0 iUYKst"
 >
@@ -322,7 +336,7 @@ exports[`Storyshots Atoms/Currency Title1 default 1`] = `
 </span>
 `;
 
-exports[`Storyshots Atoms/Currency Title3 default 1`] = `
+exports[`Storyshots Atoms | Currency Title3 default 1`] = `
 <span
   className="Text__StyledText-sc-1974afi-0 joblfr"
 >
@@ -330,106 +344,205 @@ exports[`Storyshots Atoms/Currency Title3 default 1`] = `
 </span>
 `;
 
-exports[`Storyshots Atoms/Development Primary 1`] = `
-Array [
-  <div>
-    <span
-      className="Text__StyledText-sc-1974afi-0 gcIsAz"
+exports[`Storyshots Atoms | Development Primary 1`] = `
+<div
+  className="Display__StyledFlexDiv-sc-1yo6rmg-0 fcTgTL"
+  direction="column"
+>
+  <div
+    className="Display__StyledFlexDiv-sc-1yo6rmg-0 hFANJJ"
+    direction="row"
+  >
+    <div
+      className="Display__DivWithBorder-sc-1yo6rmg-1 cmlFBm"
     >
-      ▲
-      +
-      5.4
-      %
-    </span>
-  </div>,
-  <div>
-    <span
-      className="Text__StyledText-sc-1974afi-0 cmCWWJ"
+      Positive value
+    </div>
+    <div>
+      <span
+        className="Text__StyledText-sc-1974afi-0 gcIsAz"
+      >
+        ▲
+        +
+        5.4
+        %
+      </span>
+    </div>
+  </div>
+  <div
+    className="Display__StyledFlexDiv-sc-1yo6rmg-0 hFANJJ"
+    direction="row"
+  >
+    <div
+      className="Display__DivWithBorder-sc-1yo6rmg-1 cmlFBm"
     >
-      0
-      0
-      %
-    </span>
-  </div>,
-  <div>
-    <span
-      className="Text__StyledText-sc-1974afi-0 hCpHGw"
+      Zero value
+    </div>
+    <div>
+      <span
+        className="Text__StyledText-sc-1974afi-0 cmCWWJ"
+      >
+        0
+        0
+        %
+      </span>
+    </div>
+  </div>
+  <div
+    className="Display__StyledFlexDiv-sc-1yo6rmg-0 hFANJJ"
+    direction="row"
+  >
+    <div
+      className="Display__DivWithBorder-sc-1yo6rmg-1 cmlFBm"
     >
-      ▼
-      -2.1
-      %
-    </span>
-  </div>,
-]
+      Negative value
+    </div>
+    <div>
+      <span
+        className="Text__StyledText-sc-1974afi-0 hCpHGw"
+      >
+        ▼
+        -2.1
+        %
+      </span>
+    </div>
+  </div>
+</div>
 `;
 
-exports[`Storyshots Atoms/Development Secondary 1`] = `
-Array [
-  <div>
-    <span
-      className="Text__StyledText-sc-1974afi-0 bmOtmq"
+exports[`Storyshots Atoms | Development Secondary 1`] = `
+<div
+  className="Display__StyledFlexDiv-sc-1yo6rmg-0 fcTgTL"
+  direction="column"
+>
+  <div
+    className="Display__StyledFlexDiv-sc-1yo6rmg-0 hFANJJ"
+    direction="row"
+  >
+    <div
+      className="Display__DivWithBorder-sc-1yo6rmg-1 cmlFBm"
     >
-      ▲
-      +
-      5.4
-      %
-    </span>
-  </div>,
-  <div>
-    <span
-      className="Text__StyledText-sc-1974afi-0 laXMaY"
+      Positive value
+    </div>
+    <div>
+      <span
+        className="Text__StyledText-sc-1974afi-0 bmOtmq"
+      >
+        ▲
+        +
+        5.4
+        %
+      </span>
+    </div>
+  </div>
+  <div
+    className="Display__StyledFlexDiv-sc-1yo6rmg-0 hFANJJ"
+    direction="row"
+  >
+    <div
+      className="Display__DivWithBorder-sc-1yo6rmg-1 cmlFBm"
     >
-      0
-      0
-      %
-    </span>
-  </div>,
-  <div>
-    <span
-      className="Text__StyledText-sc-1974afi-0 jWluYu"
+      Zero value
+    </div>
+    <div>
+      <span
+        className="Text__StyledText-sc-1974afi-0 laXMaY"
+      >
+        0
+        0
+        %
+      </span>
+    </div>
+  </div>
+  <div
+    className="Display__StyledFlexDiv-sc-1yo6rmg-0 hFANJJ"
+    direction="row"
+  >
+    <div
+      className="Display__DivWithBorder-sc-1yo6rmg-1 cmlFBm"
     >
-      ▼
-      -2.1
-      %
-    </span>
-  </div>,
-]
+      Negative value
+    </div>
+    <div>
+      <span
+        className="Text__StyledText-sc-1974afi-0 jWluYu"
+      >
+        ▼
+        -2.1
+        %
+      </span>
+    </div>
+  </div>
+</div>
 `;
 
-exports[`Storyshots Atoms/Development Tertiary 1`] = `
-Array [
-  <div>
-    <span
-      className="Text__StyledText-sc-1974afi-0 ekeaEF"
+exports[`Storyshots Atoms | Development Tertiary 1`] = `
+<div
+  className="Display__StyledFlexDiv-sc-1yo6rmg-0 fcTgTL"
+  direction="column"
+>
+  <div
+    className="Display__StyledFlexDiv-sc-1yo6rmg-0 hFANJJ"
+    direction="row"
+  >
+    <div
+      className="Display__DivWithBorder-sc-1yo6rmg-1 cmlFBm"
     >
-      ▲
-      +
-      5.4
-      %
-    </span>
-  </div>,
-  <div>
-    <span
-      className="Text__StyledText-sc-1974afi-0 kBKleW"
+      Positive value
+    </div>
+    <div>
+      <span
+        className="Text__StyledText-sc-1974afi-0 ekeaEF"
+      >
+        ▲
+        +
+        5.4
+        %
+      </span>
+    </div>
+  </div>
+  <div
+    className="Display__StyledFlexDiv-sc-1yo6rmg-0 hFANJJ"
+    direction="row"
+  >
+    <div
+      className="Display__DivWithBorder-sc-1yo6rmg-1 cmlFBm"
     >
-      0
-      0
-      %
-    </span>
-  </div>,
-  <div>
-    <span
-      className="Text__StyledText-sc-1974afi-0 eumSjM"
+      Zero value
+    </div>
+    <div>
+      <span
+        className="Text__StyledText-sc-1974afi-0 kBKleW"
+      >
+        0
+        0
+        %
+      </span>
+    </div>
+  </div>
+  <div
+    className="Display__StyledFlexDiv-sc-1yo6rmg-0 hFANJJ"
+    direction="row"
+  >
+    <div
+      className="Display__DivWithBorder-sc-1yo6rmg-1 cmlFBm"
     >
-      ▼
-      -2.1
-      %
-    </span>
-  </div>,
-]
+      Negative value
+    </div>
+    <div>
+      <span
+        className="Text__StyledText-sc-1974afi-0 eumSjM"
+      >
+        ▼
+        -2.1
+        %
+      </span>
+    </div>
+  </div>
+</div>
 `;
 
-exports[`Storyshots Atoms/Flexbox Flexbox default 1`] = `
+exports[`Storyshots Atoms | Flexbox Flexbox default 1`] = `
 <div
   className="FlexboxContainer__StyledFlexbox-sc-1efwhdg-0 kvhUqX"
 >
@@ -466,7 +579,7 @@ exports[`Storyshots Atoms/Flexbox Flexbox default 1`] = `
 </div>
 `;
 
-exports[`Storyshots Atoms/Flexbox Flexbox with custom gutter 1`] = `
+exports[`Storyshots Atoms | Flexbox Flexbox with custom gutter 1`] = `
 <div
   className="FlexboxContainer__StyledFlexbox-sc-1efwhdg-0 gNrjJB"
 >
@@ -493,7 +606,7 @@ exports[`Storyshots Atoms/Flexbox Flexbox with custom gutter 1`] = `
 </div>
 `;
 
-exports[`Storyshots Atoms/Flexbox Flexbox with direction: column 1`] = `
+exports[`Storyshots Atoms | Flexbox Flexbox with direction: column 1`] = `
 <div
   className="FlexboxContainer__StyledFlexbox-sc-1efwhdg-0 jmuCEd"
   direction="column"
@@ -531,157 +644,118 @@ exports[`Storyshots Atoms/Flexbox Flexbox with direction: column 1`] = `
 </div>
 `;
 
-exports[`Storyshots Atoms/Icon Icons 1`] = `
-<ul
-  className="Iconstories__StyledList-sc-19nkl57-0 hBkFPW"
+exports[`Storyshots Atoms | Icon Available icons 1`] = `
+<div
+  className="Display__StyledFlexDiv-sc-1yo6rmg-0 fcTgTL"
+  direction="column"
 >
-  <li
-    className="Iconstories__StyledListItem-sc-19nkl57-1 iyBkoV"
+  <div
+    className="Display__StyledFlexDiv-sc-1yo6rmg-0 hFANJJ"
+    direction="row"
   >
-    <svg
-      aria-hidden="true"
-      className="IconBase__StyledIconBase-sc-10cbji3-0 glOwBq"
-      focusable="false"
-      role="presentation"
-      size={5}
-      viewBox="0 0 24 24"
-    >
-      <polygon
-        points="19.969 4 24 8.027 12 20 0 8.027 4.031 4 12 11.952"
-        transform="rotate(-180 12 12)"
-      />
-    </svg>
-    <p
-      className="Iconstories__StyledCaption-sc-19nkl57-2 gsfxdh"
-    >
-      ChevronUp
-    </p>
-  </li>
-  <li
-    className="Iconstories__StyledListItem-sc-19nkl57-1 iyBkoV"
-  >
-    <svg
-      aria-hidden="true"
-      className="IconBase__StyledIconBase-sc-10cbji3-0 glOwBq"
-      focusable="false"
-      role="presentation"
-      size={5}
-      viewBox="0 0 24 24"
-    >
-      <polygon
-        points="19.969 4 24 8.027 12 20 0 8.027 4.031 4 12 11.952"
-      />
-    </svg>
-    <p
-      className="Iconstories__StyledCaption-sc-19nkl57-2 gsfxdh"
+    <div
+      className="Display__DivWithBorder-sc-1yo6rmg-1 cmlFBm"
     >
       ChevronDown
-    </p>
-  </li>
-  <li
-    className="Iconstories__StyledListItem-sc-19nkl57-1 iyBkoV"
+    </div>
+    <div>
+      <svg
+        aria-hidden="true"
+        className="IconBase__StyledIconBase-sc-10cbji3-0 glOwBq"
+        focusable="false"
+        role="presentation"
+        size={5}
+        viewBox="0 0 24 24"
+      >
+        <polygon
+          points="19.969 4 24 8.027 12 20 0 8.027 4.031 4 12 11.952"
+        />
+      </svg>
+    </div>
+  </div>
+  <div
+    className="Display__StyledFlexDiv-sc-1yo6rmg-0 hFANJJ"
+    direction="row"
   >
-    <svg
-      aria-hidden="true"
-      className="IconBase__StyledIconBase-sc-10cbji3-0 glOwBq"
-      focusable="false"
-      role="presentation"
-      size={5}
-      viewBox="0 0 24 24"
-    >
-      <polygon
-        points="16.278 14 0 14 0 10 16.278 10 8.211 2 13.916 2 24 12 21.148 14.828 13.916 22 8.211 22"
-      />
-    </svg>
-    <p
-      className="Iconstories__StyledCaption-sc-19nkl57-2 gsfxdh"
-    >
-      ArrowRight
-    </p>
-  </li>
-</ul>
-`;
-
-exports[`Storyshots Atoms/Icon Icons with different size and color 1`] = `
-<ul
-  className="Iconstories__StyledList-sc-19nkl57-0 hBkFPW"
->
-  <li
-    className="Iconstories__StyledListItem-sc-19nkl57-1 iyBkoV"
-  >
-    <svg
-      aria-hidden="true"
-      className="IconBase__StyledIconBase-sc-10cbji3-0 cFisAB"
-      focusable="false"
-      role="presentation"
-      size={10}
-      viewBox="0 0 24 24"
-    >
-      <polygon
-        points="19.969 4 24 8.027 12 20 0 8.027 4.031 4 12 11.952"
-        transform="rotate(-180 12 12)"
-      />
-    </svg>
-    <p
-      className="Iconstories__StyledCaption-sc-19nkl57-2 gsfxdh"
+    <div
+      className="Display__DivWithBorder-sc-1yo6rmg-1 cmlFBm"
     >
       ChevronUp
-    </p>
-  </li>
-  <li
-    className="Iconstories__StyledListItem-sc-19nkl57-1 iyBkoV"
+    </div>
+    <div>
+      <svg
+        aria-hidden="true"
+        className="IconBase__StyledIconBase-sc-10cbji3-0 glOwBq"
+        focusable="false"
+        role="presentation"
+        size={5}
+        viewBox="0 0 24 24"
+      >
+        <polygon
+          points="19.969 4 24 8.027 12 20 0 8.027 4.031 4 12 11.952"
+          transform="rotate(-180 12 12)"
+        />
+      </svg>
+    </div>
+  </div>
+  <div
+    className="Display__StyledFlexDiv-sc-1yo6rmg-0 hFANJJ"
+    direction="row"
   >
-    <svg
-      aria-hidden="true"
-      className="IconBase__StyledIconBase-sc-10cbji3-0 cFisAB"
-      focusable="false"
-      role="presentation"
-      size={10}
-      viewBox="0 0 24 24"
-    >
-      <polygon
-        points="19.969 4 24 8.027 12 20 0 8.027 4.031 4 12 11.952"
-      />
-    </svg>
-    <p
-      className="Iconstories__StyledCaption-sc-19nkl57-2 gsfxdh"
-    >
-      ChevronDown
-    </p>
-  </li>
-  <li
-    className="Iconstories__StyledListItem-sc-19nkl57-1 iyBkoV"
-  >
-    <svg
-      aria-hidden="true"
-      className="IconBase__StyledIconBase-sc-10cbji3-0 cFisAB"
-      focusable="false"
-      role="presentation"
-      size={10}
-      viewBox="0 0 24 24"
-    >
-      <polygon
-        points="16.278 14 0 14 0 10 16.278 10 8.211 2 13.916 2 24 12 21.148 14.828 13.916 22 8.211 22"
-      />
-    </svg>
-    <p
-      className="Iconstories__StyledCaption-sc-19nkl57-2 gsfxdh"
+    <div
+      className="Display__DivWithBorder-sc-1yo6rmg-1 cmlFBm"
     >
       ArrowRight
-    </p>
-  </li>
-</ul>
+    </div>
+    <div>
+      <svg
+        aria-hidden="true"
+        className="IconBase__StyledIconBase-sc-10cbji3-0 glOwBq"
+        focusable="false"
+        role="presentation"
+        size={5}
+        viewBox="0 0 24 24"
+      >
+        <polygon
+          points="16.278 14 0 14 0 10 16.278 10 8.211 2 13.916 2 24 12 21.148 14.828 13.916 22 8.211 22"
+        />
+      </svg>
+    </div>
+  </div>
+</div>
 `;
 
-exports[`Storyshots Atoms/Input/Text basic use 1`] = `
-<input
-  className="Textplaceholder__StyledInput-sc-1w1wjsu-0 kQGjxY"
-  color="#282823"
-  fontSize={16}
-/>
+exports[`Storyshots Atoms | Icon Default use 1`] = `
+<svg
+  aria-hidden="true"
+  className="IconBase__StyledIconBase-sc-10cbji3-0 glOwBq"
+  focusable="false"
+  role="presentation"
+  size={5}
+  viewBox="0 0 24 24"
+>
+  <polygon
+    points="16.278 14 0 14 0 10 16.278 10 8.211 2 13.916 2 24 12 21.148 14.828 13.916 22 8.211 22"
+  />
+</svg>
 `;
 
-exports[`Storyshots Atoms/List Basic ordered list 1`] = `
+exports[`Storyshots Atoms | Icon Different size and color 1`] = `
+<svg
+  aria-hidden="true"
+  className="IconBase__StyledIconBase-sc-10cbji3-0 cFisAB"
+  focusable="false"
+  role="presentation"
+  size={10}
+  viewBox="0 0 24 24"
+>
+  <polygon
+    points="16.278 14 0 14 0 10 16.278 10 8.211 2 13.916 2 24 12 21.148 14.828 13.916 22 8.211 22"
+  />
+</svg>
+`;
+
+exports[`Storyshots Atoms | List Basic ordered list 1`] = `
 <ol
   className="List__StyledList-sc-67l9u3-0 wlTZH"
 >
@@ -703,7 +777,7 @@ exports[`Storyshots Atoms/List Basic ordered list 1`] = `
 </ol>
 `;
 
-exports[`Storyshots Atoms/List Basic unordered list 1`] = `
+exports[`Storyshots Atoms | List Basic unordered list 1`] = `
 <ul
   className="List__StyledList-sc-67l9u3-0 wlTZH"
 >
@@ -725,7 +799,7 @@ exports[`Storyshots Atoms/List Basic unordered list 1`] = `
 </ul>
 `;
 
-exports[`Storyshots Atoms/ListItem Basic list item 1`] = `
+exports[`Storyshots Atoms | ListItem Basic list item 1`] = `
 <ul>
   <li
     className="ListItem__StyledListItem-pn91gs-0 LDMQb"
@@ -735,7 +809,7 @@ exports[`Storyshots Atoms/ListItem Basic list item 1`] = `
 </ul>
 `;
 
-exports[`Storyshots Atoms/Media Basic usage 1`] = `
+exports[`Storyshots Atoms | Media Basic usage 1`] = `
 Array [
   <div
     className="Media__StyledDiv-sc-1dic02p-0 eEsbmZ"
@@ -755,17 +829,9 @@ Array [
 ]
 `;
 
-exports[`Storyshots Atoms/Placeholder Rect 1`] = `
-<div
-  className="Rect__StyledDiv-sc-17y83bx-0 gWwnpZ"
-  height="100vh"
-  width="100%"
-/>
-`;
+exports[`Storyshots Atoms | Separator Documentation 1`] = `null`;
 
-exports[`Storyshots Atoms/Separator Documentation 1`] = `null`;
-
-exports[`Storyshots Atoms/Separator Separator default 1`] = `
+exports[`Storyshots Atoms | Separator Separator default 1`] = `
 <div
   className="Separatorstories__StyledContainer-sc-12j0h8a-0 ixCTfH"
 >
@@ -775,7 +841,7 @@ exports[`Storyshots Atoms/Separator Separator default 1`] = `
 </div>
 `;
 
-exports[`Storyshots Atoms/Separator Separator vertical 1`] = `
+exports[`Storyshots Atoms | Separator Separator vertical 1`] = `
 <div
   className="Separatorstories__StyledContainer-sc-12j0h8a-0 ixCTfH"
 >
@@ -785,139 +851,311 @@ exports[`Storyshots Atoms/Separator Separator vertical 1`] = `
 </div>
 `;
 
-exports[`Storyshots Atoms/Text Colors 1`] = `
-Array [
-  <div>
-    <span
-      className="Text__StyledText-sc-1974afi-0 cmCWWJ"
+exports[`Storyshots Atoms | Text Colors 1`] = `
+<div
+  className="Display__StyledFlexDiv-sc-1yo6rmg-0 fcTgTL"
+  direction="column"
+>
+  <div
+    className="Display__StyledFlexDiv-sc-1yo6rmg-0 hFANJJ"
+    direction="row"
+  >
+    <div
+      className="Display__DivWithBorder-sc-1yo6rmg-1 cmlFBm"
     >
       Default
-    </span>
-  </div>,
-  <div>
-    <span
-      className="Text__StyledText-sc-1974afi-0 cmCWWJ"
+    </div>
+    <div>
+      <span
+        className="Text__StyledText-sc-1974afi-0 cmCWWJ"
+      >
+        Default
+      </span>
+    </div>
+  </div>
+  <div
+    className="Display__StyledFlexDiv-sc-1yo6rmg-0 hFANJJ"
+    direction="row"
+  >
+    <div
+      className="Display__DivWithBorder-sc-1yo6rmg-1 cmlFBm"
     >
-      Text
-    </span>
-  </div>,
-  <div>
-    <span
-      className="Text__StyledText-sc-1974afi-0 gcIsAz"
+      Color: text
+    </div>
+    <div>
+      <span
+        className="Text__StyledText-sc-1974afi-0 cmCWWJ"
+      >
+        Text
+      </span>
+    </div>
+  </div>
+  <div
+    className="Display__StyledFlexDiv-sc-1yo6rmg-0 hFANJJ"
+    direction="row"
+  >
+    <div
+      className="Display__DivWithBorder-sc-1yo6rmg-1 cmlFBm"
     >
-      Positive
-    </span>
-  </div>,
-  <div>
-    <span
-      className="Text__StyledText-sc-1974afi-0 hCpHGw"
+      Color: positive
+    </div>
+    <div>
+      <span
+        className="Text__StyledText-sc-1974afi-0 gcIsAz"
+      >
+        Positive
+      </span>
+    </div>
+  </div>
+  <div
+    className="Display__StyledFlexDiv-sc-1yo6rmg-0 hFANJJ"
+    direction="row"
+  >
+    <div
+      className="Display__DivWithBorder-sc-1yo6rmg-1 cmlFBm"
     >
-      Negative
-    </span>
-  </div>,
-  <div>
-    <span
-      className="Text__StyledText-sc-1974afi-0 kLDCRD"
+      Color: negative
+    </div>
+    <div>
+      <span
+        className="Text__StyledText-sc-1974afi-0 hCpHGw"
+      >
+        Negative
+      </span>
+    </div>
+  </div>
+  <div
+    className="Display__StyledFlexDiv-sc-1yo6rmg-0 hFANJJ"
+    direction="row"
+  >
+    <div
+      className="Display__DivWithBorder-sc-1yo6rmg-1 cmlFBm"
     >
-      Warning
-    </span>
-  </div>,
-  <div>
-    <span
-      className="Text__StyledText-sc-1974afi-0 eEIqHm"
+      Color: warning
+    </div>
+    <div>
+      <span
+        className="Text__StyledText-sc-1974afi-0 kLDCRD"
+      >
+        Warning
+      </span>
+    </div>
+  </div>
+  <div
+    className="Display__StyledFlexDiv-sc-1yo6rmg-0 hFANJJ"
+    direction="row"
+  >
+    <div
+      className="Display__DivWithBorder-sc-1yo6rmg-1 cmlFBm"
     >
-      CTA
-    </span>
-  </div>,
-  <div>
-    <span
-      className="Text__StyledText-sc-1974afi-0 foWpFZ"
+      Color: cta
+    </div>
+    <div>
+      <span
+        className="Text__StyledText-sc-1974afi-0 eEIqHm"
+      >
+        CTA
+      </span>
+    </div>
+  </div>
+  <div
+    className="Display__StyledFlexDiv-sc-1yo6rmg-0 hFANJJ"
+    direction="row"
+  >
+    <div
+      className="Display__DivWithBorder-sc-1yo6rmg-1 cmlFBm"
     >
-      Label
-    </span>
-  </div>,
-]
+      Color: label
+    </div>
+    <div>
+      <span
+        className="Text__StyledText-sc-1974afi-0 foWpFZ"
+      >
+        Label
+      </span>
+    </div>
+  </div>
+</div>
 `;
 
-exports[`Storyshots Atoms/Text Primary 1`] = `
-Array [
-  <div>
-    <span
-      className="Text__StyledText-sc-1974afi-0 cmCWWJ"
+exports[`Storyshots Atoms | Text Primary 1`] = `
+<div
+  className="Display__StyledFlexDiv-sc-1yo6rmg-0 fcTgTL"
+  direction="column"
+>
+  <div
+    className="Display__StyledFlexDiv-sc-1yo6rmg-0 hFANJJ"
+    direction="row"
+  >
+    <div
+      className="Display__DivWithBorder-sc-1yo6rmg-1 cmlFBm"
     >
       Primary text
-    </span>
-  </div>,
-  <div>
-    <span
-      className="Text__StyledText-sc-1974afi-0 cHZfwv"
+    </div>
+    <div>
+      <span
+        className="Text__StyledText-sc-1974afi-0 cmCWWJ"
+      >
+        Primary text
+      </span>
+    </div>
+  </div>
+  <div
+    className="Display__StyledFlexDiv-sc-1yo6rmg-0 hFANJJ"
+    direction="row"
+  >
+    <div
+      className="Display__DivWithBorder-sc-1yo6rmg-1 cmlFBm"
     >
-      Primary bold
-    </span>
-  </div>,
-  <div>
-    <span
-      className="Text__StyledText-sc-1974afi-0 bnIaaO"
+      Primary bold text
+    </div>
+    <div>
+      <span
+        className="Text__StyledText-sc-1974afi-0 cHZfwv"
+      >
+        Primary bold text
+      </span>
+    </div>
+  </div>
+  <div
+    className="Display__StyledFlexDiv-sc-1yo6rmg-0 hFANJJ"
+    direction="row"
+  >
+    <div
+      className="Display__DivWithBorder-sc-1yo6rmg-1 cmlFBm"
     >
-      Primary text
-    </span>
-  </div>,
-]
+      Primary extrabold text
+    </div>
+    <div>
+      <span
+        className="Text__StyledText-sc-1974afi-0 bnIaaO"
+      >
+        Primary extrabold text
+      </span>
+    </div>
+  </div>
+</div>
 `;
 
-exports[`Storyshots Atoms/Text Secondary 1`] = `
-Array [
-  <div>
-    <span
-      className="Text__StyledText-sc-1974afi-0 laXMaY"
+exports[`Storyshots Atoms | Text Secondary 1`] = `
+<div
+  className="Display__StyledFlexDiv-sc-1yo6rmg-0 fcTgTL"
+  direction="column"
+>
+  <div
+    className="Display__StyledFlexDiv-sc-1yo6rmg-0 hFANJJ"
+    direction="row"
+  >
+    <div
+      className="Display__DivWithBorder-sc-1yo6rmg-1 cmlFBm"
     >
       Secondary text
-    </span>
-  </div>,
-  <div>
-    <span
-      className="Text__StyledText-sc-1974afi-0 gHlEVt"
+    </div>
+    <div>
+      <span
+        className="Text__StyledText-sc-1974afi-0 laXMaY"
+      >
+        Secondary text
+      </span>
+    </div>
+  </div>
+  <div
+    className="Display__StyledFlexDiv-sc-1yo6rmg-0 hFANJJ"
+    direction="row"
+  >
+    <div
+      className="Display__DivWithBorder-sc-1yo6rmg-1 cmlFBm"
     >
-      Secondary bold
-    </span>
-  </div>,
-  <div>
-    <span
-      className="Text__StyledText-sc-1974afi-0 iXItug"
+      Secondary bold text
+    </div>
+    <div>
+      <span
+        className="Text__StyledText-sc-1974afi-0 gHlEVt"
+      >
+        Secondary bold text
+      </span>
+    </div>
+  </div>
+  <div
+    className="Display__StyledFlexDiv-sc-1yo6rmg-0 hFANJJ"
+    direction="row"
+  >
+    <div
+      className="Display__DivWithBorder-sc-1yo6rmg-1 cmlFBm"
     >
-      Secondary text
-    </span>
-  </div>,
-]
+      Secondary extrabold text
+    </div>
+    <div>
+      <span
+        className="Text__StyledText-sc-1974afi-0 iXItug"
+      >
+        Secondary extrabold text
+      </span>
+    </div>
+  </div>
+</div>
 `;
 
-exports[`Storyshots Atoms/Text Tertiary 1`] = `
-Array [
-  <div>
-    <span
-      className="Text__StyledText-sc-1974afi-0 kBKleW"
+exports[`Storyshots Atoms | Text Tertiary 1`] = `
+<div
+  className="Display__StyledFlexDiv-sc-1yo6rmg-0 fcTgTL"
+  direction="column"
+>
+  <div
+    className="Display__StyledFlexDiv-sc-1yo6rmg-0 hFANJJ"
+    direction="row"
+  >
+    <div
+      className="Display__DivWithBorder-sc-1yo6rmg-1 cmlFBm"
     >
       Tertiary text
-    </span>
-  </div>,
-  <div>
-    <span
-      className="Text__StyledText-sc-1974afi-0 lnwQxH"
+    </div>
+    <div>
+      <span
+        className="Text__StyledText-sc-1974afi-0 kBKleW"
+      >
+        Tertiary text
+      </span>
+    </div>
+  </div>
+  <div
+    className="Display__StyledFlexDiv-sc-1yo6rmg-0 hFANJJ"
+    direction="row"
+  >
+    <div
+      className="Display__DivWithBorder-sc-1yo6rmg-1 cmlFBm"
     >
-      Tertiary bold
-    </span>
-  </div>,
-  <div>
-    <span
-      className="Text__StyledText-sc-1974afi-0 bjBurG"
+      Tertiary bold text
+    </div>
+    <div>
+      <span
+        className="Text__StyledText-sc-1974afi-0 lnwQxH"
+      >
+        Tertiary bold text
+      </span>
+    </div>
+  </div>
+  <div
+    className="Display__StyledFlexDiv-sc-1yo6rmg-0 hFANJJ"
+    direction="row"
+  >
+    <div
+      className="Display__DivWithBorder-sc-1yo6rmg-1 cmlFBm"
     >
-      Tertiary text
-    </span>
-  </div>,
-]
+      Tertiary extrabold text
+    </div>
+    <div>
+      <span
+        className="Text__StyledText-sc-1974afi-0 bjBurG"
+      >
+        Tertiary extrabold text
+      </span>
+    </div>
+  </div>
+</div>
 `;
 
-exports[`Storyshots Atoms/Text Title1 1`] = `
+exports[`Storyshots Atoms | Text Title1 1`] = `
 <span
   className="Text__StyledText-sc-1974afi-0 iUYKst"
 >
@@ -925,7 +1163,7 @@ exports[`Storyshots Atoms/Text Title1 1`] = `
 </span>
 `;
 
-exports[`Storyshots Atoms/Text Title3 1`] = `
+exports[`Storyshots Atoms | Text Title3 1`] = `
 <span
   className="Text__StyledText-sc-1974afi-0 joblfr"
 >
@@ -933,88 +1171,333 @@ exports[`Storyshots Atoms/Text Title3 1`] = `
 </span>
 `;
 
-exports[`Storyshots Molecules/Button Button primary with size modified 1`] = `
+exports[`Storyshots Display Documentation 1`] = `
 <div
-  className="Buttonstories__StyledContainer-sc-1d10526-0 dkZgYK"
+  className="Display__StyledFlexDiv-sc-1yo6rmg-0 fcTgTL"
+  direction="column"
 >
-  <button
-    className="NormalizedButton__Button-ey7f5x-0 Button__StyledButton-lqp9m3-0 jjxzVi"
-    onClick={[Function]}
-    size="s"
-    type="button"
+  <div
+    className="Display__StyledFlexDiv-sc-1yo6rmg-0 hFANJJ"
+    direction="row"
   >
-    Small
-  </button>
-  <button
-    className="NormalizedButton__Button-ey7f5x-0 Button__StyledButton-lqp9m3-0 dugpYI"
-    onClick={[Function]}
-    type="button"
+    <div
+      className="Display__DivWithBorder-sc-1yo6rmg-1 cmlFBm"
+    >
+      Vertical layout
+    </div>
+    <div>
+      <div
+        className="Display__StyledFlexDiv-sc-1yo6rmg-0 fcTgTL"
+        direction="column"
+      >
+        <div
+          className="Display__StyledFlexDiv-sc-1yo6rmg-0 hFANJJ"
+          direction="row"
+        >
+          <div
+            className="Display__DivWithBorder-sc-1yo6rmg-1 cmlFBm"
+          >
+            Title 1
+          </div>
+          <div>
+            <div>
+              Component 1
+            </div>
+          </div>
+        </div>
+        <div
+          className="Display__StyledFlexDiv-sc-1yo6rmg-0 hFANJJ"
+          direction="row"
+        >
+          <div
+            className="Display__DivWithBorder-sc-1yo6rmg-1 cmlFBm"
+          >
+            Title 2
+          </div>
+          <div>
+            <div>
+              Component 2
+            </div>
+          </div>
+        </div>
+        <div
+          className="Display__StyledFlexDiv-sc-1yo6rmg-0 hFANJJ"
+          direction="row"
+        >
+          <div
+            className="Display__DivWithBorder-sc-1yo6rmg-1 cmlFBm"
+          >
+            Title 3
+          </div>
+          <div>
+            <div>
+              Component 3
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    className="Display__StyledFlexDiv-sc-1yo6rmg-0 hFANJJ"
+    direction="row"
   >
-    Medium
-  </button>
-  <button
-    className="NormalizedButton__Button-ey7f5x-0 Button__StyledButton-lqp9m3-0 byIuXa"
-    onClick={[Function]}
-    size="l"
-    type="button"
-  >
-    Large
-  </button>
+    <div
+      className="Display__DivWithBorder-sc-1yo6rmg-1 cmlFBm"
+    >
+      Horizontal layout
+    </div>
+    <div>
+      <div
+        className="Display__StyledFlexDiv-sc-1yo6rmg-0 iahwSN"
+        direction="row"
+      >
+        <div
+          className="Display__StyledFlexDiv-sc-1yo6rmg-0 buAJms"
+          direction="column"
+        >
+          <div
+            className="Display__DivWithBorder-sc-1yo6rmg-1 eVoBs"
+          >
+            Title 1
+          </div>
+          <div>
+            <div>
+              Component 1
+            </div>
+          </div>
+        </div>
+        <div
+          className="Display__StyledFlexDiv-sc-1yo6rmg-0 buAJms"
+          direction="column"
+        >
+          <div
+            className="Display__DivWithBorder-sc-1yo6rmg-1 eVoBs"
+          >
+            Title 2
+          </div>
+          <div>
+            <div>
+              Component 2
+            </div>
+          </div>
+        </div>
+        <div
+          className="Display__StyledFlexDiv-sc-1yo6rmg-0 buAJms"
+          direction="column"
+        >
+          <div
+            className="Display__DivWithBorder-sc-1yo6rmg-1 eVoBs"
+          >
+            Title 3
+          </div>
+          <div>
+            <div>
+              Component 3
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
 `;
 
-exports[`Storyshots Molecules/Button Button secondary with size modified 1`] = `
+exports[`Storyshots Molecules | Avatar Basic usage 1`] = `
 <div
-  className="Buttonstories__StyledContainer-sc-1d10526-0 dkZgYK"
+  className="Avatar__StyledDiv-a8mb4w-0 igAJTE"
 >
-  <button
-    className="NormalizedButton__Button-ey7f5x-0 Button__StyledButton-lqp9m3-0 kZIyEw"
-    onClick={[Function]}
-    size="s"
-    type="button"
+  <span
+    className="Text__StyledText-sc-1974afi-0 cEGWcE"
   >
-    Small
-  </button>
-  <button
-    className="NormalizedButton__Button-ey7f5x-0 Button__StyledButton-lqp9m3-0 kEUmvh"
-    onClick={[Function]}
-    type="button"
-  >
-    Medium
-  </button>
-  <button
-    className="NormalizedButton__Button-ey7f5x-0 Button__StyledButton-lqp9m3-0 kygVIR"
-    onClick={[Function]}
-    size="l"
-    type="button"
-  >
-    Large
-  </button>
+    ASK
+  </span>
 </div>
 `;
 
-exports[`Storyshots Molecules/Button Button with type modified 1`] = `
+exports[`Storyshots Molecules | Button Button primary with size modified 1`] = `
 <div
-  className="Buttonstories__StyledContainer-sc-1d10526-0 dkZgYK"
+  className="Display__StyledFlexDiv-sc-1yo6rmg-0 iahwSN"
+  direction="row"
 >
-  <button
-    className="NormalizedButton__Button-ey7f5x-0 Button__StyledButton-lqp9m3-0 dugpYI"
-    onClick={[Function]}
-    type="reset"
+  <div
+    className="Display__StyledFlexDiv-sc-1yo6rmg-0 buAJms"
+    direction="column"
   >
-    Reset
-  </button>
-  <button
-    className="NormalizedButton__Button-ey7f5x-0 Button__StyledButton-lqp9m3-0 dugpYI"
-    onClick={[Function]}
-    type="submit"
+    <div
+      className="Display__DivWithBorder-sc-1yo6rmg-1 eVoBs"
+    >
+      Small
+    </div>
+    <div>
+      <button
+        className="NormalizedButton__Button-ey7f5x-0 Button__StyledButton-lqp9m3-0 jjxzVi"
+        onClick={[Function]}
+        size="s"
+        type="button"
+      >
+        Small
+      </button>
+    </div>
+  </div>
+  <div
+    className="Display__StyledFlexDiv-sc-1yo6rmg-0 buAJms"
+    direction="column"
   >
-    Submit
-  </button>
+    <div
+      className="Display__DivWithBorder-sc-1yo6rmg-1 eVoBs"
+    >
+      Medium
+    </div>
+    <div>
+      <button
+        className="NormalizedButton__Button-ey7f5x-0 Button__StyledButton-lqp9m3-0 dugpYI"
+        onClick={[Function]}
+        size="m"
+        type="button"
+      >
+        Medium
+      </button>
+    </div>
+  </div>
+  <div
+    className="Display__StyledFlexDiv-sc-1yo6rmg-0 buAJms"
+    direction="column"
+  >
+    <div
+      className="Display__DivWithBorder-sc-1yo6rmg-1 eVoBs"
+    >
+      Large
+    </div>
+    <div>
+      <button
+        className="NormalizedButton__Button-ey7f5x-0 Button__StyledButton-lqp9m3-0 byIuXa"
+        onClick={[Function]}
+        size="l"
+        type="button"
+      >
+        Large
+      </button>
+    </div>
+  </div>
 </div>
 `;
 
-exports[`Storyshots Molecules/Button Button with variant 1`] = `
+exports[`Storyshots Molecules | Button Button secondary with size modified 1`] = `
+<div
+  className="Display__StyledFlexDiv-sc-1yo6rmg-0 iahwSN"
+  direction="row"
+>
+  <div
+    className="Display__StyledFlexDiv-sc-1yo6rmg-0 buAJms"
+    direction="column"
+  >
+    <div
+      className="Display__DivWithBorder-sc-1yo6rmg-1 eVoBs"
+    >
+      Small
+    </div>
+    <div>
+      <button
+        className="NormalizedButton__Button-ey7f5x-0 Button__StyledButton-lqp9m3-0 kZIyEw"
+        onClick={[Function]}
+        size="s"
+        type="button"
+      >
+        Small
+      </button>
+    </div>
+  </div>
+  <div
+    className="Display__StyledFlexDiv-sc-1yo6rmg-0 buAJms"
+    direction="column"
+  >
+    <div
+      className="Display__DivWithBorder-sc-1yo6rmg-1 eVoBs"
+    >
+      Medium
+    </div>
+    <div>
+      <button
+        className="NormalizedButton__Button-ey7f5x-0 Button__StyledButton-lqp9m3-0 kEUmvh"
+        onClick={[Function]}
+        size="m"
+        type="button"
+      >
+        Medium
+      </button>
+    </div>
+  </div>
+  <div
+    className="Display__StyledFlexDiv-sc-1yo6rmg-0 buAJms"
+    direction="column"
+  >
+    <div
+      className="Display__DivWithBorder-sc-1yo6rmg-1 eVoBs"
+    >
+      Large
+    </div>
+    <div>
+      <button
+        className="NormalizedButton__Button-ey7f5x-0 Button__StyledButton-lqp9m3-0 kygVIR"
+        onClick={[Function]}
+        size="l"
+        type="button"
+      >
+        Large
+      </button>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Molecules | Button Button with type modified 1`] = `
+<div
+  className="Display__StyledFlexDiv-sc-1yo6rmg-0 fcTgTL"
+  direction="column"
+>
+  <div
+    className="Display__StyledFlexDiv-sc-1yo6rmg-0 hFANJJ"
+    direction="row"
+  >
+    <div
+      className="Display__DivWithBorder-sc-1yo6rmg-1 cmlFBm"
+    >
+      Reset
+    </div>
+    <div>
+      <button
+        className="NormalizedButton__Button-ey7f5x-0 Button__StyledButton-lqp9m3-0 dugpYI"
+        onClick={[Function]}
+        type="reset"
+      >
+        Reset
+      </button>
+    </div>
+  </div>
+  <div
+    className="Display__StyledFlexDiv-sc-1yo6rmg-0 hFANJJ"
+    direction="row"
+  >
+    <div
+      className="Display__DivWithBorder-sc-1yo6rmg-1 cmlFBm"
+    >
+      Submit
+    </div>
+    <div>
+      <button
+        className="NormalizedButton__Button-ey7f5x-0 Button__StyledButton-lqp9m3-0 dugpYI"
+        onClick={[Function]}
+        type="submit"
+      >
+        Submit
+      </button>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Molecules | Button Button with variant 1`] = `
 <button
   className="NormalizedButton__Button-ey7f5x-0 Button__StyledButton-lqp9m3-0 kEUmvh"
   onClick={[Function]}
@@ -1024,7 +1507,7 @@ exports[`Storyshots Molecules/Button Button with variant 1`] = `
 </button>
 `;
 
-exports[`Storyshots Molecules/Button Default usage 1`] = `
+exports[`Storyshots Molecules | Button Default usage 1`] = `
 <button
   className="NormalizedButton__Button-ey7f5x-0 Button__StyledButton-lqp9m3-0 dugpYI"
   onClick={[Function]}
@@ -1034,7 +1517,7 @@ exports[`Storyshots Molecules/Button Default usage 1`] = `
 </button>
 `;
 
-exports[`Storyshots Molecules/Button Disabled button 1`] = `
+exports[`Storyshots Molecules | Button Disabled button 1`] = `
 <button
   className="NormalizedButton__Button-ey7f5x-0 Button__StyledButton-lqp9m3-0 cWJwss"
   disabled={true}
@@ -1045,7 +1528,7 @@ exports[`Storyshots Molecules/Button Disabled button 1`] = `
 </button>
 `;
 
-exports[`Storyshots Molecules/LabeledValue LabeledValue secondary currency 1`] = `
+exports[`Storyshots Molecules | LabeledValue LabeledValue secondary currency 1`] = `
 <div
   className="LabeledValue__StyledLabeledValue-hatse2-0 drexN"
 >
@@ -1066,7 +1549,7 @@ exports[`Storyshots Molecules/LabeledValue LabeledValue secondary currency 1`] =
 </div>
 `;
 
-exports[`Storyshots Molecules/LabeledValue LabeledValue title1 1`] = `
+exports[`Storyshots Molecules | LabeledValue LabeledValue title1 1`] = `
 <div
   className="LabeledValue__StyledLabeledValue-hatse2-0 drexN"
 >
@@ -1087,7 +1570,7 @@ exports[`Storyshots Molecules/LabeledValue LabeledValue title1 1`] = `
 </div>
 `;
 
-exports[`Storyshots Molecules/LabeledValue LabeledValue with negative development and currency 1`] = `
+exports[`Storyshots Molecules | LabeledValue LabeledValue with negative development and currency 1`] = `
 <div
   className="LabeledValue__StyledLabeledValue-hatse2-0 drexN"
 >
@@ -1123,7 +1606,7 @@ exports[`Storyshots Molecules/LabeledValue LabeledValue with negative developmen
 </div>
 `;
 
-exports[`Storyshots Molecules/LabeledValue LabeledValue with positive development and currency 1`] = `
+exports[`Storyshots Molecules | LabeledValue LabeledValue with positive development and currency 1`] = `
 <div
   className="LabeledValue__StyledLabeledValue-hatse2-0 drexN"
 >
@@ -1160,7 +1643,7 @@ exports[`Storyshots Molecules/LabeledValue LabeledValue with positive developmen
 </div>
 `;
 
-exports[`Storyshots Molecules/Link Default usage 1`] = `
+exports[`Storyshots Molecules | Link Default usage 1`] = `
 <a
   className="Link__StyledLink-apj04t-0 dJiWQG"
   href="/startpage"
@@ -1174,7 +1657,7 @@ exports[`Storyshots Molecules/Link Default usage 1`] = `
 </a>
 `;
 
-exports[`Storyshots Molecules/Link Link with _blank target 1`] = `
+exports[`Storyshots Molecules | Link Link with _blank target 1`] = `
 <a
   className="Link__StyledLink-apj04t-0 dJiWQG"
   href="/www.google.com"
@@ -1189,44 +1672,365 @@ exports[`Storyshots Molecules/Link Link with _blank target 1`] = `
 </a>
 `;
 
-exports[`Storyshots Templates/Test basic use 1`] = `
-<div>
-  <div>
-    <span
-      className="Text__StyledText-sc-1974afi-0 iUYKst"
+exports[`Storyshots Theme Colors 1`] = `
+<div
+  className="Display__StyledFlexDiv-sc-1yo6rmg-0 fcTgTL"
+  direction="column"
+>
+  <div
+    className="Display__StyledFlexDiv-sc-1yo6rmg-0 hFANJJ"
+    direction="row"
+  >
+    <div
+      className="Display__DivWithBorder-sc-1yo6rmg-1 cmlFBm"
     >
-       Some header here
-    </span>
+      background
+    </div>
+    <div>
+      <div
+        className="Themestories__Color-skwibd-0 fBqExT"
+        color="#F5F5F5"
+      />
+    </div>
   </div>
-  <div>
-    <span
-      className="Text__StyledText-sc-1974afi-0 cmCWWJ"
+  <div
+    className="Display__StyledFlexDiv-sc-1yo6rmg-0 hFANJJ"
+    direction="row"
+  >
+    <div
+      className="Display__DivWithBorder-sc-1yo6rmg-1 cmlFBm"
     >
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla enim dui, rutrum ut ornare a, suscipit ut metus. Praesent ut est ac nisi pulvinar aliquam sit amet quis risus. Etiam at nulla elit. Donec ac eleifend lorem. Nam ut malesuada nunc. Fusce convallis lorem lacinia, venenatis nunc sed, commodo ante. Morbi nulla ipsum, hendrerit id diam eu, dictum malesuada nunc. Vestibulum gravida erat vitae dolor maximus interdum. Duis hendrerit purus ac magna tempus, vel gravida lorem semper. Nunc in lacus erat.
-    </span>
+      backgroundDark
+    </div>
+    <div>
+      <div
+        className="Themestories__Color-skwibd-0 gsWvMU"
+        color="#282823"
+      />
+    </div>
   </div>
-  <div>
-    <span
-      className="Text__StyledText-sc-1974afi-0 joblfr"
+  <div
+    className="Display__StyledFlexDiv-sc-1yo6rmg-0 hFANJJ"
+    direction="row"
+  >
+    <div
+      className="Display__DivWithBorder-sc-1yo6rmg-1 cmlFBm"
     >
-      Lorem ipsum dolor sit amet,
-    </span>
+      buttonSecondaryBackground
+    </div>
+    <div>
+      <div
+        className="Themestories__Color-skwibd-0 jCtZrB"
+        color="#FFFFFF"
+      />
+    </div>
+  </div>
+  <div
+    className="Display__StyledFlexDiv-sc-1yo6rmg-0 hFANJJ"
+    direction="row"
+  >
+    <div
+      className="Display__DivWithBorder-sc-1yo6rmg-1 cmlFBm"
+    >
+      buttonText
+    </div>
+    <div>
+      <div
+        className="Themestories__Color-skwibd-0 jCtZrB"
+        color="#FFFFFF"
+      />
+    </div>
+  </div>
+  <div
+    className="Display__StyledFlexDiv-sc-1yo6rmg-0 hFANJJ"
+    direction="row"
+  >
+    <div
+      className="Display__DivWithBorder-sc-1yo6rmg-1 cmlFBm"
+    >
+      buy
+    </div>
+    <div>
+      <div
+        className="Themestories__Color-skwibd-0 eVHow"
+        color="#0046FF"
+      />
+    </div>
+  </div>
+  <div
+    className="Display__StyledFlexDiv-sc-1yo6rmg-0 hFANJJ"
+    direction="row"
+  >
+    <div
+      className="Display__DivWithBorder-sc-1yo6rmg-1 cmlFBm"
+    >
+      card
+    </div>
+    <div>
+      <div
+        className="Themestories__Color-skwibd-0 jCtZrB"
+        color="#FFFFFF"
+      />
+    </div>
+  </div>
+  <div
+    className="Display__StyledFlexDiv-sc-1yo6rmg-0 hFANJJ"
+    direction="row"
+  >
+    <div
+      className="Display__DivWithBorder-sc-1yo6rmg-1 cmlFBm"
+    >
+      cta
+    </div>
+    <div>
+      <div
+        className="Themestories__Color-skwibd-0 eVHow"
+        color="#0046FF"
+      />
+    </div>
+  </div>
+  <div
+    className="Display__StyledFlexDiv-sc-1yo6rmg-0 hFANJJ"
+    direction="row"
+  >
+    <div
+      className="Display__DivWithBorder-sc-1yo6rmg-1 cmlFBm"
+    >
+      disabled
+    </div>
+    <div>
+      <div
+        className="Themestories__Color-skwibd-0 eHENBg"
+        color="#D7D7D2"
+      />
+    </div>
+  </div>
+  <div
+    className="Display__StyledFlexDiv-sc-1yo6rmg-0 hFANJJ"
+    direction="row"
+  >
+    <div
+      className="Display__DivWithBorder-sc-1yo6rmg-1 cmlFBm"
+    >
+      divider
+    </div>
+    <div>
+      <div
+        className="Themestories__Color-skwibd-0 kqeahF"
+        color="#EBEBE8"
+      />
+    </div>
+  </div>
+  <div
+    className="Display__StyledFlexDiv-sc-1yo6rmg-0 hFANJJ"
+    direction="row"
+  >
+    <div
+      className="Display__DivWithBorder-sc-1yo6rmg-1 cmlFBm"
+    >
+      label
+    </div>
+    <div>
+      <div
+        className="Themestories__Color-skwibd-0 hWriMt"
+        color="#6E6E69"
+      />
+    </div>
+  </div>
+  <div
+    className="Display__StyledFlexDiv-sc-1yo6rmg-0 hFANJJ"
+    direction="row"
+  >
+    <div
+      className="Display__DivWithBorder-sc-1yo6rmg-1 cmlFBm"
+    >
+      module
+    </div>
+    <div>
+      <div
+        className="Themestories__Color-skwibd-0 jCtZrB"
+        color="#FFFFFF"
+      />
+    </div>
+  </div>
+  <div
+    className="Display__StyledFlexDiv-sc-1yo6rmg-0 hFANJJ"
+    direction="row"
+  >
+    <div
+      className="Display__DivWithBorder-sc-1yo6rmg-1 cmlFBm"
+    >
+      negative
+    </div>
+    <div>
+      <div
+        className="Themestories__Color-skwibd-0 bkNmAu"
+        color="#FF1900"
+      />
+    </div>
+  </div>
+  <div
+    className="Display__StyledFlexDiv-sc-1yo6rmg-0 hFANJJ"
+    direction="row"
+  >
+    <div
+      className="Display__DivWithBorder-sc-1yo6rmg-1 cmlFBm"
+    >
+      positive
+    </div>
+    <div>
+      <div
+        className="Themestories__Color-skwibd-0 dAIMEK"
+        color="#00D200"
+      />
+    </div>
+  </div>
+  <div
+    className="Display__StyledFlexDiv-sc-1yo6rmg-0 hFANJJ"
+    direction="row"
+  >
+    <div
+      className="Display__DivWithBorder-sc-1yo6rmg-1 cmlFBm"
+    >
+      sell
+    </div>
+    <div>
+      <div
+        className="Themestories__Color-skwibd-0 bkNmAu"
+        color="#FF1900"
+      />
+    </div>
+  </div>
+  <div
+    className="Display__StyledFlexDiv-sc-1yo6rmg-0 hFANJJ"
+    direction="row"
+  >
+    <div
+      className="Display__DivWithBorder-sc-1yo6rmg-1 cmlFBm"
+    >
+      text
+    </div>
+    <div>
+      <div
+        className="Themestories__Color-skwibd-0 gsWvMU"
+        color="#282823"
+      />
+    </div>
+  </div>
+  <div
+    className="Display__StyledFlexDiv-sc-1yo6rmg-0 hFANJJ"
+    direction="row"
+  >
+    <div
+      className="Display__DivWithBorder-sc-1yo6rmg-1 cmlFBm"
+    >
+      textLight
+    </div>
+    <div>
+      <div
+        className="Themestories__Color-skwibd-0 jCtZrB"
+        color="#FFFFFF"
+      />
+    </div>
+  </div>
+  <div
+    className="Display__StyledFlexDiv-sc-1yo6rmg-0 hFANJJ"
+    direction="row"
+  >
+    <div
+      className="Display__DivWithBorder-sc-1yo6rmg-1 cmlFBm"
+    >
+      warning
+    </div>
+    <div>
+      <div
+        className="Themestories__Color-skwibd-0 iArkpu"
+        color="#FFCF00"
+      />
+    </div>
   </div>
 </div>
 `;
 
-exports[`Storyshots Theme media queries works 1`] = `
+exports[`Storyshots Theme Screen sizes 1`] = `
 <div
-  className="Themestories__Component-skwibd-1 bJHDQk"
+  className="Display__StyledFlexDiv-sc-1yo6rmg-0 fcTgTL"
+  direction="column"
 >
-  Change the size of the screen and watch me changing colors
-</div>
-`;
-
-exports[`Storyshots Theme styled components theme is properly passed 1`] = `
-<div
-  className="Themestories__Component-skwibd-0 fdGjjA"
->
-  Width, height and border comes from theme!
+  <div
+    className="Display__StyledFlexDiv-sc-1yo6rmg-0 hFANJJ"
+    direction="row"
+  >
+    <div
+      className="Display__DivWithBorder-sc-1yo6rmg-1 cmlFBm"
+    >
+      xs
+    </div>
+    <div>
+      <pre>
+        360
+      </pre>
+    </div>
+  </div>
+  <div
+    className="Display__StyledFlexDiv-sc-1yo6rmg-0 hFANJJ"
+    direction="row"
+  >
+    <div
+      className="Display__DivWithBorder-sc-1yo6rmg-1 cmlFBm"
+    >
+      sm
+    </div>
+    <div>
+      <pre>
+        768
+      </pre>
+    </div>
+  </div>
+  <div
+    className="Display__StyledFlexDiv-sc-1yo6rmg-0 hFANJJ"
+    direction="row"
+  >
+    <div
+      className="Display__DivWithBorder-sc-1yo6rmg-1 cmlFBm"
+    >
+      md
+    </div>
+    <div>
+      <pre>
+        992
+      </pre>
+    </div>
+  </div>
+  <div
+    className="Display__StyledFlexDiv-sc-1yo6rmg-0 hFANJJ"
+    direction="row"
+  >
+    <div
+      className="Display__DivWithBorder-sc-1yo6rmg-1 cmlFBm"
+    >
+      lg
+    </div>
+    <div>
+      <pre>
+        1440
+      </pre>
+    </div>
+  </div>
+  <div
+    className="Display__StyledFlexDiv-sc-1yo6rmg-0 hFANJJ"
+    direction="row"
+  >
+    <div
+      className="Display__DivWithBorder-sc-1yo6rmg-1 cmlFBm"
+    >
+      xl
+    </div>
+    <div>
+      <pre>
+        1680
+      </pre>
+    </div>
+  </div>
 </div>
 `;

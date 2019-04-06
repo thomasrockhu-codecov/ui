@@ -15,7 +15,7 @@ const StyledContainer = styled.div`
 `;
 const Container = ({ children }: any) => <StyledContainer>{children}</StyledContainer>;
 
-storiesOf('Atoms/Separator', module)
+storiesOf('Atoms | Separator', module)
   .add('Documentation', () => <MD source={docs} />)
   .add('Separator default', () => (
     <Container>
