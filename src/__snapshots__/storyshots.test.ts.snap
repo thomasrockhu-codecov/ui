@@ -48,6 +48,248 @@ exports[`Storyshots Atoms/Card Card as section 1`] = `
 </section>
 `;
 
+exports[`Storyshots Atoms/CssGrid CssGrid with custom gutter 1`] = `
+<div
+  className="CssGrid__StyledDiv-bu5cxy-0 kAoCvY"
+>
+  <div
+    className="CssGrid__RawCssGridItem-bu5cxy-1 sc-bdVaJa jZclqz"
+  >
+    <div
+      className="CssGridstories__StyledContent-sc-1pgrjiv-0 iFWmiS"
+    >
+      Left
+    </div>
+  </div>
+  <div
+    className="CssGrid__RawCssGridItem-bu5cxy-1 sc-bdVaJa cSvSRX"
+  >
+    <div
+      className="CssGridstories__StyledContent-sc-1pgrjiv-0 iFWmiS"
+    >
+      Top
+    </div>
+  </div>
+  <div
+    className="CssGrid__RawCssGridItem-bu5cxy-1 sc-bdVaJa cTgXiO"
+  >
+    <div
+      className="CssGridstories__StyledContent-sc-1pgrjiv-0 iFWmiS"
+    >
+      Content
+    </div>
+  </div>
+  <div
+    className="CssGrid__RawCssGridItem-bu5cxy-1 sc-bdVaJa htfucg"
+  >
+    <div
+      className="CssGridstories__StyledContent-sc-1pgrjiv-0 iFWmiS"
+    >
+      Sidebar
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Atoms/CssGrid CssGrid with custom templateColumns 1`] = `
+<div
+  className="CssGrid__StyledDiv-bu5cxy-0 htHwvF"
+>
+  <div
+    className="CssGrid__RawCssGridItem-bu5cxy-1 sc-bdVaJa jZclqz"
+  >
+    <div
+      className="CssGridstories__StyledContent-sc-1pgrjiv-0 iFWmiS"
+    >
+      Left
+    </div>
+  </div>
+  <div
+    className="CssGrid__RawCssGridItem-bu5cxy-1 sc-bdVaJa cSvSRX"
+  >
+    <div
+      className="CssGridstories__StyledContent-sc-1pgrjiv-0 iFWmiS"
+    >
+      Top
+    </div>
+  </div>
+  <div
+    className="CssGrid__RawCssGridItem-bu5cxy-1 sc-bdVaJa cTgXiO"
+  >
+    <div
+      className="CssGridstories__StyledContent-sc-1pgrjiv-0 iFWmiS"
+    >
+      Content
+    </div>
+  </div>
+  <div
+    className="CssGrid__RawCssGridItem-bu5cxy-1 sc-bdVaJa htfucg"
+  >
+    <div
+      className="CssGridstories__StyledContent-sc-1pgrjiv-0 iFWmiS"
+    >
+      Sidebar
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Atoms/CssGrid CssGrid with different layouts for different screen sizes 1`] = `
+<div
+  className="CssGrid__StyledDiv-bu5cxy-0 jIOgaG"
+>
+  <div
+    className="CssGrid__RawCssGridItem-bu5cxy-1 sc-bdVaJa dSufaw"
+  >
+    <div
+      className="CssGridstories__StyledContent-sc-1pgrjiv-0 iFWmiS"
+    >
+      Left
+    </div>
+  </div>
+  <div
+    className="CssGrid__RawCssGridItem-bu5cxy-1 sc-bdVaJa emIQMK"
+  >
+    <div
+      className="CssGridstories__StyledContent-sc-1pgrjiv-0 iFWmiS"
+    >
+      Top
+    </div>
+  </div>
+  <div
+    className="CssGrid__RawCssGridItem-bu5cxy-1 sc-bdVaJa czSiSC"
+  >
+    <div
+      className="CssGridstories__StyledContent-sc-1pgrjiv-0 iFWmiS"
+    >
+      Content
+    </div>
+  </div>
+  <div
+    className="CssGrid__RawCssGridItem-bu5cxy-1 sc-bdVaJa dQUeqc"
+  >
+    <div
+      className="CssGridstories__StyledContent-sc-1pgrjiv-0 iFWmiS"
+    >
+      Sidebar
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Atoms/CssGrid CssGrid with object as gutter and custom sized columns 1`] = `
+<div
+  className="CssGrid__StyledDiv-bu5cxy-0 fvIXEW"
+>
+  <div
+    className="CssGrid__RawCssGridItem-bu5cxy-1 sc-bdVaJa dBpfEh"
+  >
+    <div
+      className="CssGridstories__StyledContent-sc-1pgrjiv-0 iFWmiS"
+    >
+      Left
+    </div>
+  </div>
+  <div
+    className="CssGrid__RawCssGridItem-bu5cxy-1 sc-bdVaJa eHGQpe"
+  >
+    <div
+      className="CssGridstories__StyledContent-sc-1pgrjiv-0 iFWmiS"
+    >
+      Top
+    </div>
+  </div>
+  <div
+    className="CssGrid__RawCssGridItem-bu5cxy-1 sc-bdVaJa ezZumu"
+  >
+    <div
+      className="CssGridstories__StyledContent-sc-1pgrjiv-0 iFWmiS"
+    >
+      Content
+    </div>
+  </div>
+  <div
+    className="CssGrid__RawCssGridItem-bu5cxy-1 sc-bdVaJa cRNBno"
+  >
+    <div
+      className="CssGridstories__StyledContent-sc-1pgrjiv-0 iFWmiS"
+    >
+      Messages
+    </div>
+  </div>
+  <div
+    className="CssGrid__RawCssGridItem-bu5cxy-1 sc-bdVaJa jODgqu"
+  >
+    <div
+      className="CssGridstories__StyledContent-sc-1pgrjiv-0 iFWmiS"
+    >
+      Order
+    </div>
+  </div>
+  <div
+    className="CssGrid__RawCssGridItem-bu5cxy-1 sc-bdVaJa jHKUNH"
+  >
+    <div
+      className="CssGridstories__StyledContent-sc-1pgrjiv-0 iFWmiS"
+    >
+      Sidebar
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Atoms/CssGrid Simple CssGrid 1`] = `
+<div
+  className="CssGrid__StyledDiv-bu5cxy-0 dmRbLA"
+>
+  <div
+    className="CssGrid__RawCssGridItem-bu5cxy-1 sc-bdVaJa bRGSev"
+  >
+    <div
+      className="CssGridstories__StyledContent-sc-1pgrjiv-0 iFWmiS"
+    >
+      Header
+    </div>
+  </div>
+  <div
+    className="CssGrid__RawCssGridItem-bu5cxy-1 sc-bdVaJa ioWuYc"
+  >
+    <div
+      className="CssGridstories__StyledContent-sc-1pgrjiv-0 iFWmiS"
+    >
+      Content
+    </div>
+  </div>
+  <div
+    className="CssGrid__RawCssGridItem-bu5cxy-1 sc-bdVaJa YvQdv"
+  >
+    <div
+      className="CssGridstories__StyledContent-sc-1pgrjiv-0 iFWmiS"
+    >
+      Menu
+    </div>
+  </div>
+  <div
+    className="CssGrid__RawCssGridItem-bu5cxy-1 sc-bdVaJa eKmgOm"
+  >
+    <div
+      className="CssGridstories__StyledContent-sc-1pgrjiv-0 iFWmiS"
+    >
+      Ads
+    </div>
+  </div>
+  <div
+    className="CssGrid__RawCssGridItem-bu5cxy-1 sc-bdVaJa hPuVlu"
+  >
+    <div
+      className="CssGridstories__StyledContent-sc-1pgrjiv-0 iFWmiS"
+    >
+      Footer
+    </div>
+  </div>
+</div>
+`;
+
 exports[`Storyshots Atoms/Currency Primary default 1`] = `
 <span
   className="Text__StyledText-sc-1974afi-0 cmCWWJ"
@@ -187,345 +429,103 @@ Array [
 ]
 `;
 
-exports[`Storyshots Atoms/Grid Grid based on Flexbox: column 1`] = `
+exports[`Storyshots Atoms/Flexbox Flexbox default 1`] = `
 <div
-  className="FlexboxContainer__StyledFlexbox-omaj0r-0 hHWMaO"
+  className="FlexboxContainer__StyledFlexbox-sc-1efwhdg-0 kvhUqX"
+>
+  <div
+    className="FlexboxItem__StyledItem-uyxq1j-0 FlexboxItem__StyledItemWithHorisontalGutter-uyxq1j-1 flIvvs"
+    size={3}
+  >
+    <div
+      className="Flexboxstories__StyledContent-sc-103j0u1-0 iVuNfs"
+    >
+      Col 1
+    </div>
+  </div>
+  <div
+    className="FlexboxItem__StyledItem-uyxq1j-0 FlexboxItem__StyledItemWithHorisontalGutter-uyxq1j-1 gLvGZa"
+    size={6}
+  >
+    <div
+      className="Flexboxstories__StyledContent-sc-103j0u1-0 iVuNfs"
+    >
+      Col 2
+    </div>
+  </div>
+  <div
+    className="FlexboxItem__StyledItem-uyxq1j-0 FlexboxItem__StyledItemWithHorisontalGutter-uyxq1j-1 flIvvs"
+    size={3}
+  >
+    <div
+      className="Flexboxstories__StyledContent-sc-103j0u1-0 iVuNfs"
+    >
+      Col 3
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Atoms/Flexbox Flexbox with custom gutter 1`] = `
+<div
+  className="FlexboxContainer__StyledFlexbox-sc-1efwhdg-0 gNrjJB"
+>
+  <div
+    className="FlexboxItem__StyledItem-uyxq1j-0 FlexboxItem__StyledItemWithHorisontalGutter-uyxq1j-1 gbPXqp"
+    size={6}
+  >
+    <div
+      className="Flexboxstories__StyledContent-sc-103j0u1-0 iVuNfs"
+    >
+      Col 1
+    </div>
+  </div>
+  <div
+    className="FlexboxItem__StyledItem-uyxq1j-0 FlexboxItem__StyledItemWithHorisontalGutter-uyxq1j-1 gbPXqp"
+    size={6}
+  >
+    <div
+      className="Flexboxstories__StyledContent-sc-103j0u1-0 iVuNfs"
+    >
+      Col 2
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Atoms/Flexbox Flexbox with direction: column 1`] = `
+<div
+  className="FlexboxContainer__StyledFlexbox-sc-1efwhdg-0 jmuCEd"
   direction="column"
 >
   <div
-    className="FlexboxItem__StyledItem-sc-17g0a2v-0 FlexboxItem__StyledItemWithVerticalGutter-sc-17g0a2v-2 mCgkB"
+    className="FlexboxItem__StyledItem-uyxq1j-0 FlexboxItem__StyledItemWithVerticalGutter-uyxq1j-2 goOQKU"
     order={2}
   >
     <div
-      className="Gridstories__StyledContent-sc-1ylbf4z-0 eWnvtw"
+      className="Flexboxstories__StyledContent-sc-103j0u1-0 iVuNfs"
     >
       Col 1
     </div>
   </div>
   <div
-    className="FlexboxItem__StyledItem-sc-17g0a2v-0 FlexboxItem__StyledItemWithVerticalGutter-sc-17g0a2v-2 dlLrFd"
+    className="FlexboxItem__StyledItem-uyxq1j-0 FlexboxItem__StyledItemWithVerticalGutter-uyxq1j-2 epkXgE"
     order={1}
   >
     <div
-      className="Gridstories__StyledContent-sc-1ylbf4z-0 eWnvtw"
+      className="Flexboxstories__StyledContent-sc-103j0u1-0 iVuNfs"
     >
       Col 2
     </div>
   </div>
   <div
-    className="FlexboxItem__StyledItem-sc-17g0a2v-0 FlexboxItem__StyledItemWithVerticalGutter-sc-17g0a2v-2 iWwBfx"
+    className="FlexboxItem__StyledItem-uyxq1j-0 FlexboxItem__StyledItemWithVerticalGutter-uyxq1j-2 hCMvsg"
     order={3}
   >
     <div
-      className="Gridstories__StyledContent-sc-1ylbf4z-0 eWnvtw"
+      className="Flexboxstories__StyledContent-sc-103j0u1-0 iVuNfs"
     >
       Col 3
-    </div>
-  </div>
-</div>
-`;
-
-exports[`Storyshots Atoms/Grid One dimensional grid 1`] = `
-<div
-  className="FlexboxContainer__StyledFlexbox-omaj0r-0 iZuTTm"
->
-  <div
-    className="FlexboxItem__StyledItem-sc-17g0a2v-0 FlexboxItem__StyledItemWithHorisontalGutter-sc-17g0a2v-1 knaIkO"
-    size={3}
-  >
-    <div
-      className="Gridstories__StyledContent-sc-1ylbf4z-0 eWnvtw"
-    >
-      Col 1
-    </div>
-  </div>
-  <div
-    className="FlexboxItem__StyledItem-sc-17g0a2v-0 FlexboxItem__StyledItemWithHorisontalGutter-sc-17g0a2v-1 brHSFP"
-    size={6}
-  >
-    <div
-      className="Gridstories__StyledContent-sc-1ylbf4z-0 eWnvtw"
-    >
-      Col 2
-    </div>
-  </div>
-  <div
-    className="FlexboxItem__StyledItem-sc-17g0a2v-0 FlexboxItem__StyledItemWithHorisontalGutter-sc-17g0a2v-1 knaIkO"
-    size={3}
-  >
-    <div
-      className="Gridstories__StyledContent-sc-1ylbf4z-0 eWnvtw"
-    >
-      Col 3
-    </div>
-  </div>
-</div>
-`;
-
-exports[`Storyshots Atoms/Grid One dimensional grid with custom gutter 1`] = `
-<div
-  className="FlexboxContainer__StyledFlexbox-omaj0r-0 jVRRzI"
->
-  <div
-    className="FlexboxItem__StyledItem-sc-17g0a2v-0 FlexboxItem__StyledItemWithHorisontalGutter-sc-17g0a2v-1 iQUrlY"
-    size={6}
-  >
-    <div
-      className="Gridstories__StyledContent-sc-1ylbf4z-0 eWnvtw"
-    >
-      Col 1
-    </div>
-  </div>
-  <div
-    className="FlexboxItem__StyledItem-sc-17g0a2v-0 FlexboxItem__StyledItemWithHorisontalGutter-sc-17g0a2v-1 iQUrlY"
-    size={6}
-  >
-    <div
-      className="Gridstories__StyledContent-sc-1ylbf4z-0 eWnvtw"
-    >
-      Col 2
-    </div>
-  </div>
-</div>
-`;
-
-exports[`Storyshots Atoms/Grid Two dimensional grid 1`] = `
-<div
-  className="CssGridContainer__StyledDiv-k27iz3-0 jCYVSN"
->
-  <div
-    className="CssGridItem__StyledItem-sc-1hbjro9-0 erPZML"
-  >
-    <div
-      className="Gridstories__StyledContent-sc-1ylbf4z-0 eWnvtw"
-    >
-      Header
-    </div>
-  </div>
-  <div
-    className="CssGridItem__StyledItem-sc-1hbjro9-0 hESqJe"
-  >
-    <div
-      className="Gridstories__StyledContent-sc-1ylbf4z-0 eWnvtw"
-    >
-      Content
-    </div>
-  </div>
-  <div
-    className="CssGridItem__StyledItem-sc-1hbjro9-0 djmqzm"
-  >
-    <div
-      className="Gridstories__StyledContent-sc-1ylbf4z-0 eWnvtw"
-    >
-      Menu
-    </div>
-  </div>
-  <div
-    className="CssGridItem__StyledItem-sc-1hbjro9-0 byTuWA"
-  >
-    <div
-      className="Gridstories__StyledContent-sc-1ylbf4z-0 eWnvtw"
-    >
-      Ads
-    </div>
-  </div>
-  <div
-    className="CssGridItem__StyledItem-sc-1hbjro9-0 bYiAzQ"
-  >
-    <div
-      className="Gridstories__StyledContent-sc-1ylbf4z-0 eWnvtw"
-    >
-      Footer
-    </div>
-  </div>
-</div>
-`;
-
-exports[`Storyshots Atoms/Grid Two dimensional grid with  different layouts for different screen sizes 1`] = `
-<div
-  className="CssGridContainer__StyledDiv-k27iz3-0 bVPGGC"
->
-  <div
-    className="CssGridItem__StyledItem-sc-1hbjro9-0 bmZEnV"
-  >
-    <div
-      className="Gridstories__StyledContent-sc-1ylbf4z-0 eWnvtw"
-    >
-      Left
-    </div>
-  </div>
-  <div
-    className="CssGridItem__StyledItem-sc-1hbjro9-0 iLpxaN"
-  >
-    <div
-      className="Gridstories__StyledContent-sc-1ylbf4z-0 eWnvtw"
-    >
-      Top
-    </div>
-  </div>
-  <div
-    className="CssGridItem__StyledItem-sc-1hbjro9-0 hESqJe"
-  >
-    <div
-      className="Gridstories__StyledContent-sc-1ylbf4z-0 eWnvtw"
-    >
-      Content
-    </div>
-  </div>
-  <div
-    className="CssGridItem__StyledItem-sc-1hbjro9-0 cszTAO"
-  >
-    <div
-      className="Gridstories__StyledContent-sc-1ylbf4z-0 eWnvtw"
-    >
-      Sidebar
-    </div>
-  </div>
-</div>
-`;
-
-exports[`Storyshots Atoms/Grid Two dimensional grid with custom gutter 1`] = `
-<div
-  className="CssGridContainer__StyledDiv-k27iz3-0 dHLEBg"
->
-  <div
-    className="CssGridItem__StyledItem-sc-1hbjro9-0 bmZEnV"
-  >
-    <div
-      className="Gridstories__StyledContent-sc-1ylbf4z-0 eWnvtw"
-    >
-      Left
-    </div>
-  </div>
-  <div
-    className="CssGridItem__StyledItem-sc-1hbjro9-0 iLpxaN"
-  >
-    <div
-      className="Gridstories__StyledContent-sc-1ylbf4z-0 eWnvtw"
-    >
-      Top
-    </div>
-  </div>
-  <div
-    className="CssGridItem__StyledItem-sc-1hbjro9-0 hESqJe"
-  >
-    <div
-      className="Gridstories__StyledContent-sc-1ylbf4z-0 eWnvtw"
-    >
-      Content
-    </div>
-  </div>
-  <div
-    className="CssGridItem__StyledItem-sc-1hbjro9-0 cszTAO"
-  >
-    <div
-      className="Gridstories__StyledContent-sc-1ylbf4z-0 eWnvtw"
-    >
-      Sidebar
-    </div>
-  </div>
-</div>
-`;
-
-exports[`Storyshots Atoms/Grid Two dimensional grid with custom templateColumns 1`] = `
-<div
-  className="CssGridContainer__StyledDiv-k27iz3-0 dJsqmZ"
->
-  <div
-    className="CssGridItem__StyledItem-sc-1hbjro9-0 bmZEnV"
-  >
-    <div
-      className="Gridstories__StyledContent-sc-1ylbf4z-0 eWnvtw"
-    >
-      Left
-    </div>
-  </div>
-  <div
-    className="CssGridItem__StyledItem-sc-1hbjro9-0 iLpxaN"
-  >
-    <div
-      className="Gridstories__StyledContent-sc-1ylbf4z-0 eWnvtw"
-    >
-      Top
-    </div>
-  </div>
-  <div
-    className="CssGridItem__StyledItem-sc-1hbjro9-0 hESqJe"
-  >
-    <div
-      className="Gridstories__StyledContent-sc-1ylbf4z-0 eWnvtw"
-    >
-      Content
-    </div>
-  </div>
-  <div
-    className="CssGridItem__StyledItem-sc-1hbjro9-0 cszTAO"
-  >
-    <div
-      className="Gridstories__StyledContent-sc-1ylbf4z-0 eWnvtw"
-    >
-      Sidebar
-    </div>
-  </div>
-</div>
-`;
-
-exports[`Storyshots Atoms/Grid Two dimensional grid with object as gutter and custom sized columns 1`] = `
-<div
-  className="CssGridContainer__StyledDiv-k27iz3-0 lgXtpC"
->
-  <div
-    className="CssGridItem__StyledItem-sc-1hbjro9-0 bmZEnV"
-  >
-    <div
-      className="Gridstories__StyledContent-sc-1ylbf4z-0 eWnvtw"
-    >
-      Left
-    </div>
-  </div>
-  <div
-    className="CssGridItem__StyledItem-sc-1hbjro9-0 iLpxaN"
-  >
-    <div
-      className="Gridstories__StyledContent-sc-1ylbf4z-0 eWnvtw"
-    >
-      Top
-    </div>
-  </div>
-  <div
-    className="CssGridItem__StyledItem-sc-1hbjro9-0 hESqJe"
-  >
-    <div
-      className="Gridstories__StyledContent-sc-1ylbf4z-0 eWnvtw"
-    >
-      Content
-    </div>
-  </div>
-  <div
-    className="CssGridItem__StyledItem-sc-1hbjro9-0 bhtUDR"
-  >
-    <div
-      className="Gridstories__StyledContent-sc-1ylbf4z-0 eWnvtw"
-    >
-      Messages
-    </div>
-  </div>
-  <div
-    className="CssGridItem__StyledItem-sc-1hbjro9-0 idvPed"
-  >
-    <div
-      className="Gridstories__StyledContent-sc-1ylbf4z-0 eWnvtw"
-    >
-      Order
-    </div>
-  </div>
-  <div
-    className="CssGridItem__StyledItem-sc-1hbjro9-0 cszTAO"
-  >
-    <div
-      className="Gridstories__StyledContent-sc-1ylbf4z-0 eWnvtw"
-    >
-      Sidebar
     </div>
   </div>
 </div>

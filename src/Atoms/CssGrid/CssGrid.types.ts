@@ -1,12 +1,17 @@
 export type Areas = AreasRow[];
 type AreasRow = AreaName[];
-
+export type AreaInfo = {
+  id: number;
+  rowStart: number;
+  rowSpan: number;
+  colStart: number;
+  colSpan: number;
+};
 export type AreaName = string;
 export type Gutter = number | { row: number; col: number };
 export type TemplateColumn = string[] | number[];
 type BaseProps = {
   children: React.ReactNode;
-  twoDimension: true;
   height?: string;
 
   /** 

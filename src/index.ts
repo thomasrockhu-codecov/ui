@@ -3,7 +3,8 @@ import Card from './Atoms/Card';
 import Currency from './Atoms/Currency';
 import Development from './Atoms/Development';
 import Input from './Atoms/Input';
-import Grid from './Atoms/Grid';
+import CssGrid from './Atoms/CssGrid';
+import Flexbox from './Atoms/Flexbox';
 import Media from './Atoms/Media';
 // import Placeholder from './Atoms/Placeholder';
 import Separator from './Atoms/Separator';
@@ -23,7 +24,8 @@ export {
   Development,
   Icon,
   Input,
-  Grid,
+  CssGrid,
+  Flexbox,
   Media,
   //  Placeholder,
   Separator,
