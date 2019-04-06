@@ -1,5 +1,4 @@
 import { configure, addDecorator } from '@storybook/react';
-import { withInfo } from '@storybook/addon-info';
 import { withA11y } from '@storybook/addon-a11y';
 import { ThemeDecorator } from './ThemeDecorator';
 import { setIntlConfig, withIntl } from 'storybook-addon-intl';
