@@ -1672,7 +1672,514 @@ exports[`Storyshots Molecules | Link Link with _blank target 1`] = `
 </a>
 `;
 
-exports[`Storyshots Theme Colors 1`] = `
+exports[`Storyshots Theme Colors (palette) 1`] = `
+Array [
+  <h1>
+    ⚠️ Internal object, use colors (semantic)
+  </h1>,
+  <div
+    className="Display__StyledFlexDiv-sc-1yo6rmg-0 fcTgTL"
+    direction="column"
+  >
+    <div
+      className="Display__StyledFlexDiv-sc-1yo6rmg-0 hFANJJ"
+      direction="row"
+    >
+      <div
+        className="Display__DivWithBorder-sc-1yo6rmg-1 cmlFBm"
+      >
+        brandBlue
+      </div>
+      <div>
+        <div
+          className="Themestories__Color-skwibd-0 kOmGCZ"
+          color="#00C8F5"
+        />
+        <div>
+          #00C8F5
+        </div>
+      </div>
+    </div>
+    <div
+      className="Display__StyledFlexDiv-sc-1yo6rmg-0 hFANJJ"
+      direction="row"
+    >
+      <div
+        className="Display__DivWithBorder-sc-1yo6rmg-1 cmlFBm"
+      >
+        brandGreen
+      </div>
+      <div>
+        <div
+          className="Themestories__Color-skwibd-0 dcCMPu"
+          color="#D2F500"
+        />
+        <div>
+          #D2F500
+        </div>
+      </div>
+    </div>
+    <div
+      className="Display__StyledFlexDiv-sc-1yo6rmg-0 hFANJJ"
+      direction="row"
+    >
+      <div
+        className="Display__DivWithBorder-sc-1yo6rmg-1 cmlFBm"
+      >
+        brandPink
+      </div>
+      <div>
+        <div
+          className="Themestories__Color-skwibd-0 frFZiK"
+          color="#FF2B83"
+        />
+        <div>
+          #FF2B83
+        </div>
+      </div>
+    </div>
+    <div
+      className="Display__StyledFlexDiv-sc-1yo6rmg-0 hFANJJ"
+      direction="row"
+    >
+      <div
+        className="Display__DivWithBorder-sc-1yo6rmg-1 cmlFBm"
+      >
+        brandTurquoise
+      </div>
+      <div>
+        <div
+          className="Themestories__Color-skwibd-0 bEZtkc"
+          color="#00F0E1"
+        />
+        <div>
+          #00F0E1
+        </div>
+      </div>
+    </div>
+    <div
+      className="Display__StyledFlexDiv-sc-1yo6rmg-0 hFANJJ"
+      direction="row"
+    >
+      <div
+        className="Display__DivWithBorder-sc-1yo6rmg-1 cmlFBm"
+      >
+        complementaryBlue1
+      </div>
+      <div>
+        <div
+          className="Themestories__Color-skwibd-0 fZBGro"
+          color="#385E9D"
+        />
+        <div>
+          #385E9D
+        </div>
+      </div>
+    </div>
+    <div
+      className="Display__StyledFlexDiv-sc-1yo6rmg-0 hFANJJ"
+      direction="row"
+    >
+      <div
+        className="Display__DivWithBorder-sc-1yo6rmg-1 cmlFBm"
+      >
+        complementaryBlue2
+      </div>
+      <div>
+        <div
+          className="Themestories__Color-skwibd-0 JcyXL"
+          color="#131F4F"
+        />
+        <div>
+          #131F4F
+        </div>
+      </div>
+    </div>
+    <div
+      className="Display__StyledFlexDiv-sc-1yo6rmg-0 hFANJJ"
+      direction="row"
+    >
+      <div
+        className="Display__DivWithBorder-sc-1yo6rmg-1 cmlFBm"
+      >
+        complementaryGreen1
+      </div>
+      <div>
+        <div
+          className="Themestories__Color-skwibd-0 iYFqke"
+          color="#3A913F"
+        />
+        <div>
+          #3A913F
+        </div>
+      </div>
+    </div>
+    <div
+      className="Display__StyledFlexDiv-sc-1yo6rmg-0 hFANJJ"
+      direction="row"
+    >
+      <div
+        className="Display__DivWithBorder-sc-1yo6rmg-1 cmlFBm"
+      >
+        complementaryGreen2
+      </div>
+      <div>
+        <div
+          className="Themestories__Color-skwibd-0 daMTqK"
+          color="#023C00"
+        />
+        <div>
+          #023C00
+        </div>
+      </div>
+    </div>
+    <div
+      className="Display__StyledFlexDiv-sc-1yo6rmg-0 hFANJJ"
+      direction="row"
+    >
+      <div
+        className="Display__DivWithBorder-sc-1yo6rmg-1 cmlFBm"
+      >
+        complementaryPink1
+      </div>
+      <div>
+        <div
+          className="Themestories__Color-skwibd-0 hIOCjj"
+          color="#AC135A"
+        />
+        <div>
+          #AC135A
+        </div>
+      </div>
+    </div>
+    <div
+      className="Display__StyledFlexDiv-sc-1yo6rmg-0 hFANJJ"
+      direction="row"
+    >
+      <div
+        className="Display__DivWithBorder-sc-1yo6rmg-1 cmlFBm"
+      >
+        complementaryPink2
+      </div>
+      <div>
+        <div
+          className="Themestories__Color-skwibd-0 kxTlod"
+          color="#78013A"
+        />
+        <div>
+          #78013A
+        </div>
+      </div>
+    </div>
+    <div
+      className="Display__StyledFlexDiv-sc-1yo6rmg-0 hFANJJ"
+      direction="row"
+    >
+      <div
+        className="Display__DivWithBorder-sc-1yo6rmg-1 cmlFBm"
+      >
+        complementaryTurquoise1
+      </div>
+      <div>
+        <div
+          className="Themestories__Color-skwibd-0 jvRuIw"
+          color="#009195"
+        />
+        <div>
+          #009195
+        </div>
+      </div>
+    </div>
+    <div
+      className="Display__StyledFlexDiv-sc-1yo6rmg-0 hFANJJ"
+      direction="row"
+    >
+      <div
+        className="Display__DivWithBorder-sc-1yo6rmg-1 cmlFBm"
+      >
+        complementaryTurquoise2
+      </div>
+      <div>
+        <div
+          className="Themestories__Color-skwibd-0 kkcTjo"
+          color="#01424C"
+        />
+        <div>
+          #01424C
+        </div>
+      </div>
+    </div>
+    <div
+      className="Display__StyledFlexDiv-sc-1yo6rmg-0 hFANJJ"
+      direction="row"
+    >
+      <div
+        className="Display__DivWithBorder-sc-1yo6rmg-1 cmlFBm"
+      >
+        black
+      </div>
+      <div>
+        <div
+          className="Themestories__Color-skwibd-0 ieWnBj"
+          color="#000000"
+        />
+        <div>
+          #000000
+        </div>
+      </div>
+    </div>
+    <div
+      className="Display__StyledFlexDiv-sc-1yo6rmg-0 hFANJJ"
+      direction="row"
+    >
+      <div
+        className="Display__DivWithBorder-sc-1yo6rmg-1 cmlFBm"
+      >
+        gray0
+      </div>
+      <div>
+        <div
+          className="Themestories__Color-skwibd-0 kSpBvQ"
+          color="#282823"
+        />
+        <div>
+          #282823
+        </div>
+      </div>
+    </div>
+    <div
+      className="Display__StyledFlexDiv-sc-1yo6rmg-0 hFANJJ"
+      direction="row"
+    >
+      <div
+        className="Display__DivWithBorder-sc-1yo6rmg-1 cmlFBm"
+      >
+        gray1
+      </div>
+      <div>
+        <div
+          className="Themestories__Color-skwibd-0 kwZsJL"
+          color="#4B4B46"
+        />
+        <div>
+          #4B4B46
+        </div>
+      </div>
+    </div>
+    <div
+      className="Display__StyledFlexDiv-sc-1yo6rmg-0 hFANJJ"
+      direction="row"
+    >
+      <div
+        className="Display__DivWithBorder-sc-1yo6rmg-1 cmlFBm"
+      >
+        gray2
+      </div>
+      <div>
+        <div
+          className="Themestories__Color-skwibd-0 lkTHRk"
+          color="#6E6E69"
+        />
+        <div>
+          #6E6E69
+        </div>
+      </div>
+    </div>
+    <div
+      className="Display__StyledFlexDiv-sc-1yo6rmg-0 hFANJJ"
+      direction="row"
+    >
+      <div
+        className="Display__DivWithBorder-sc-1yo6rmg-1 cmlFBm"
+      >
+        gray3
+      </div>
+      <div>
+        <div
+          className="Themestories__Color-skwibd-0 kMjKh"
+          color="#A0A09B"
+        />
+        <div>
+          #A0A09B
+        </div>
+      </div>
+    </div>
+    <div
+      className="Display__StyledFlexDiv-sc-1yo6rmg-0 hFANJJ"
+      direction="row"
+    >
+      <div
+        className="Display__DivWithBorder-sc-1yo6rmg-1 cmlFBm"
+      >
+        gray4
+      </div>
+      <div>
+        <div
+          className="Themestories__Color-skwibd-0 gTPmLe"
+          color="#BCBCB6"
+        />
+        <div>
+          #BCBCB6
+        </div>
+      </div>
+    </div>
+    <div
+      className="Display__StyledFlexDiv-sc-1yo6rmg-0 hFANJJ"
+      direction="row"
+    >
+      <div
+        className="Display__DivWithBorder-sc-1yo6rmg-1 cmlFBm"
+      >
+        gray5
+      </div>
+      <div>
+        <div
+          className="Themestories__Color-skwibd-0 iqDMOi"
+          color="#D7D7D2"
+        />
+        <div>
+          #D7D7D2
+        </div>
+      </div>
+    </div>
+    <div
+      className="Display__StyledFlexDiv-sc-1yo6rmg-0 hFANJJ"
+      direction="row"
+    >
+      <div
+        className="Display__DivWithBorder-sc-1yo6rmg-1 cmlFBm"
+      >
+        gray6
+      </div>
+      <div>
+        <div
+          className="Themestories__Color-skwibd-0 dsXKsO"
+          color="#EBEBE8"
+        />
+        <div>
+          #EBEBE8
+        </div>
+      </div>
+    </div>
+    <div
+      className="Display__StyledFlexDiv-sc-1yo6rmg-0 hFANJJ"
+      direction="row"
+    >
+      <div
+        className="Display__DivWithBorder-sc-1yo6rmg-1 cmlFBm"
+      >
+        gray7
+      </div>
+      <div>
+        <div
+          className="Themestories__Color-skwibd-0 dUSBgM"
+          color="#F5F5F5"
+        />
+        <div>
+          #F5F5F5
+        </div>
+      </div>
+    </div>
+    <div
+      className="Display__StyledFlexDiv-sc-1yo6rmg-0 hFANJJ"
+      direction="row"
+    >
+      <div
+        className="Display__DivWithBorder-sc-1yo6rmg-1 cmlFBm"
+      >
+        white
+      </div>
+      <div>
+        <div
+          className="Themestories__Color-skwibd-0 hBnfLF"
+          color="#FFFFFF"
+        />
+        <div>
+          #FFFFFF
+        </div>
+      </div>
+    </div>
+    <div
+      className="Display__StyledFlexDiv-sc-1yo6rmg-0 hFANJJ"
+      direction="row"
+    >
+      <div
+        className="Display__DivWithBorder-sc-1yo6rmg-1 cmlFBm"
+      >
+        cta
+      </div>
+      <div>
+        <div
+          className="Themestories__Color-skwibd-0 dBlEpN"
+          color="#0046FF"
+        />
+        <div>
+          #0046FF
+        </div>
+      </div>
+    </div>
+    <div
+      className="Display__StyledFlexDiv-sc-1yo6rmg-0 hFANJJ"
+      direction="row"
+    >
+      <div
+        className="Display__DivWithBorder-sc-1yo6rmg-1 cmlFBm"
+      >
+        positive
+      </div>
+      <div>
+        <div
+          className="Themestories__Color-skwibd-0 dwSKTR"
+          color="#00D200"
+        />
+        <div>
+          #00D200
+        </div>
+      </div>
+    </div>
+    <div
+      className="Display__StyledFlexDiv-sc-1yo6rmg-0 hFANJJ"
+      direction="row"
+    >
+      <div
+        className="Display__DivWithBorder-sc-1yo6rmg-1 cmlFBm"
+      >
+        negative
+      </div>
+      <div>
+        <div
+          className="Themestories__Color-skwibd-0 dgVkns"
+          color="#FF1900"
+        />
+        <div>
+          #FF1900
+        </div>
+      </div>
+    </div>
+    <div
+      className="Display__StyledFlexDiv-sc-1yo6rmg-0 hFANJJ"
+      direction="row"
+    >
+      <div
+        className="Display__DivWithBorder-sc-1yo6rmg-1 cmlFBm"
+      >
+        index
+      </div>
+      <div>
+        <div
+          className="Themestories__Color-skwibd-0 bOsXQs"
+          color="#FFCF00"
+        />
+        <div>
+          #FFCF00
+        </div>
+      </div>
+    </div>
+  </div>,
+]
+`;
+
+exports[`Storyshots Theme Colors (semantic) 1`] = `
 <div
   className="Display__StyledFlexDiv-sc-1yo6rmg-0 fcTgTL"
   direction="column"
@@ -1688,9 +2195,12 @@ exports[`Storyshots Theme Colors 1`] = `
     </div>
     <div>
       <div
-        className="Themestories__Color-skwibd-0 fBqExT"
+        className="Themestories__Color-skwibd-0 dUSBgM"
         color="#F5F5F5"
       />
+      <div>
+        #F5F5F5
+      </div>
     </div>
   </div>
   <div
@@ -1704,9 +2214,12 @@ exports[`Storyshots Theme Colors 1`] = `
     </div>
     <div>
       <div
-        className="Themestories__Color-skwibd-0 gsWvMU"
+        className="Themestories__Color-skwibd-0 kSpBvQ"
         color="#282823"
       />
+      <div>
+        #282823
+      </div>
     </div>
   </div>
   <div
@@ -1720,9 +2233,12 @@ exports[`Storyshots Theme Colors 1`] = `
     </div>
     <div>
       <div
-        className="Themestories__Color-skwibd-0 jCtZrB"
+        className="Themestories__Color-skwibd-0 hBnfLF"
         color="#FFFFFF"
       />
+      <div>
+        #FFFFFF
+      </div>
     </div>
   </div>
   <div
@@ -1736,9 +2252,12 @@ exports[`Storyshots Theme Colors 1`] = `
     </div>
     <div>
       <div
-        className="Themestories__Color-skwibd-0 jCtZrB"
+        className="Themestories__Color-skwibd-0 hBnfLF"
         color="#FFFFFF"
       />
+      <div>
+        #FFFFFF
+      </div>
     </div>
   </div>
   <div
@@ -1752,9 +2271,12 @@ exports[`Storyshots Theme Colors 1`] = `
     </div>
     <div>
       <div
-        className="Themestories__Color-skwibd-0 eVHow"
+        className="Themestories__Color-skwibd-0 dBlEpN"
         color="#0046FF"
       />
+      <div>
+        #0046FF
+      </div>
     </div>
   </div>
   <div
@@ -1768,9 +2290,12 @@ exports[`Storyshots Theme Colors 1`] = `
     </div>
     <div>
       <div
-        className="Themestories__Color-skwibd-0 jCtZrB"
+        className="Themestories__Color-skwibd-0 hBnfLF"
         color="#FFFFFF"
       />
+      <div>
+        #FFFFFF
+      </div>
     </div>
   </div>
   <div
@@ -1784,9 +2309,12 @@ exports[`Storyshots Theme Colors 1`] = `
     </div>
     <div>
       <div
-        className="Themestories__Color-skwibd-0 eVHow"
+        className="Themestories__Color-skwibd-0 dBlEpN"
         color="#0046FF"
       />
+      <div>
+        #0046FF
+      </div>
     </div>
   </div>
   <div
@@ -1800,9 +2328,12 @@ exports[`Storyshots Theme Colors 1`] = `
     </div>
     <div>
       <div
-        className="Themestories__Color-skwibd-0 eHENBg"
+        className="Themestories__Color-skwibd-0 iqDMOi"
         color="#D7D7D2"
       />
+      <div>
+        #D7D7D2
+      </div>
     </div>
   </div>
   <div
@@ -1816,9 +2347,12 @@ exports[`Storyshots Theme Colors 1`] = `
     </div>
     <div>
       <div
-        className="Themestories__Color-skwibd-0 kqeahF"
+        className="Themestories__Color-skwibd-0 dsXKsO"
         color="#EBEBE8"
       />
+      <div>
+        #EBEBE8
+      </div>
     </div>
   </div>
   <div
@@ -1832,9 +2366,12 @@ exports[`Storyshots Theme Colors 1`] = `
     </div>
     <div>
       <div
-        className="Themestories__Color-skwibd-0 hWriMt"
+        className="Themestories__Color-skwibd-0 lkTHRk"
         color="#6E6E69"
       />
+      <div>
+        #6E6E69
+      </div>
     </div>
   </div>
   <div
@@ -1848,9 +2385,12 @@ exports[`Storyshots Theme Colors 1`] = `
     </div>
     <div>
       <div
-        className="Themestories__Color-skwibd-0 jCtZrB"
+        className="Themestories__Color-skwibd-0 hBnfLF"
         color="#FFFFFF"
       />
+      <div>
+        #FFFFFF
+      </div>
     </div>
   </div>
   <div
@@ -1864,9 +2404,12 @@ exports[`Storyshots Theme Colors 1`] = `
     </div>
     <div>
       <div
-        className="Themestories__Color-skwibd-0 bkNmAu"
+        className="Themestories__Color-skwibd-0 dgVkns"
         color="#FF1900"
       />
+      <div>
+        #FF1900
+      </div>
     </div>
   </div>
   <div
@@ -1880,9 +2423,12 @@ exports[`Storyshots Theme Colors 1`] = `
     </div>
     <div>
       <div
-        className="Themestories__Color-skwibd-0 dAIMEK"
+        className="Themestories__Color-skwibd-0 dwSKTR"
         color="#00D200"
       />
+      <div>
+        #00D200
+      </div>
     </div>
   </div>
   <div
@@ -1896,9 +2442,12 @@ exports[`Storyshots Theme Colors 1`] = `
     </div>
     <div>
       <div
-        className="Themestories__Color-skwibd-0 bkNmAu"
+        className="Themestories__Color-skwibd-0 dgVkns"
         color="#FF1900"
       />
+      <div>
+        #FF1900
+      </div>
     </div>
   </div>
   <div
@@ -1912,9 +2461,12 @@ exports[`Storyshots Theme Colors 1`] = `
     </div>
     <div>
       <div
-        className="Themestories__Color-skwibd-0 gsWvMU"
+        className="Themestories__Color-skwibd-0 kSpBvQ"
         color="#282823"
       />
+      <div>
+        #282823
+      </div>
     </div>
   </div>
   <div
@@ -1928,9 +2480,12 @@ exports[`Storyshots Theme Colors 1`] = `
     </div>
     <div>
       <div
-        className="Themestories__Color-skwibd-0 jCtZrB"
+        className="Themestories__Color-skwibd-0 hBnfLF"
         color="#FFFFFF"
       />
+      <div>
+        #FFFFFF
+      </div>
     </div>
   </div>
   <div
@@ -1944,13 +2499,18 @@ exports[`Storyshots Theme Colors 1`] = `
     </div>
     <div>
       <div
-        className="Themestories__Color-skwibd-0 iArkpu"
+        className="Themestories__Color-skwibd-0 bOsXQs"
         color="#FFCF00"
       />
+      <div>
+        #FFCF00
+      </div>
     </div>
   </div>
 </div>
 `;
+
+exports[`Storyshots Theme Documentation 1`] = `null`;
 
 exports[`Storyshots Theme Screen sizes 1`] = `
 <div
