@@ -5,6 +5,7 @@ import { ButtonComponent, Props } from './Button.types';
 import { Theme } from '../../theme/theme.types';
 import { isUndefined } from '../../common/utils';
 import NormalizedElements from '../../common/NormalizedElements';
+import { Text } from '../..';
 
 const HEIGHT = {
   s: 6,
@@ -63,17 +64,20 @@ const StyledButton = styled(NormalizedElements.Button)<Props>`
   padding: 0 ${p => (p.size === 's' ? p.theme.spacing.unit(2) : p.theme.spacing.unit(4))}px;
 `;
 
-export const Button: ButtonComponent = props => (
-  <StyledButton
-    disabled={props.disabled}
-    onClick={props.onClick}
-    size={props.size}
-    type={props.type}
-    variant={props.variant}
-  >
-    {props.children}
-  </StyledButton>
-);
+export const Button: ButtonComponent = props => {
+  const TextComponent = props.size === 'l' ? Text.Primary : Text.Secondary;
+  return (
+    <StyledButton
+      disabled={props.disabled}
+      onClick={props.onClick}
+      size={props.size}
+      type={props.type}
+      variant={props.variant}
+    >
+      <TextComponent color="inherit">{props.children}</TextComponent>
+    </StyledButton>
+  );
+};
 
 Button.defaultProps = {
   type: 'button',

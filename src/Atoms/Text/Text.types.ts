@@ -5,7 +5,7 @@ export type StyledTextProps = {
   as?: keyof JSX.IntrinsicElements | React.ComponentType<any>;
   sizeMobile: number;
   sizeDesktop: number;
-  colorFn?: ColorFn;
+  colorOrColorFn?: ColorFn | 'inherit';
   weight: Weight;
 };
 type Values<ObjectType> = ObjectType extends Record<any, infer K> ? K : never; // can move it to util types
@@ -14,7 +14,7 @@ type ColorFn = (t: Theme) => Values<Theme['color']>;
 export type BaseProps = {
   as?: keyof JSX.IntrinsicElements | React.ComponentType<any>;
   children: React.ReactNode;
-  color?: ColorFn;
+  color?: ColorFn | 'inherit';
 };
 
 export type Weight = 'regular' | 'bold' | 'extrabold';

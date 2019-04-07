@@ -1336,7 +1336,11 @@ exports[`Storyshots Molecules | Button Button primary with size modified 1`] = `
         size="s"
         type="button"
       >
-        Small
+        <span
+          className="Text__StyledText-sc-1974afi-0 jVjxzY"
+        >
+          Small
+        </span>
       </button>
     </div>
   </div>
@@ -1356,7 +1360,11 @@ exports[`Storyshots Molecules | Button Button primary with size modified 1`] = `
         size="m"
         type="button"
       >
-        Medium
+        <span
+          className="Text__StyledText-sc-1974afi-0 jVjxzY"
+        >
+          Medium
+        </span>
       </button>
     </div>
   </div>
@@ -1376,7 +1384,11 @@ exports[`Storyshots Molecules | Button Button primary with size modified 1`] = `
         size="l"
         type="button"
       >
-        Large
+        <span
+          className="Text__StyledText-sc-1974afi-0 bBiCvk"
+        >
+          Large
+        </span>
       </button>
     </div>
   </div>
@@ -1404,7 +1416,11 @@ exports[`Storyshots Molecules | Button Button secondary with size modified 1`] =
         size="s"
         type="button"
       >
-        Small
+        <span
+          className="Text__StyledText-sc-1974afi-0 jVjxzY"
+        >
+          Small
+        </span>
       </button>
     </div>
   </div>
@@ -1424,7 +1440,11 @@ exports[`Storyshots Molecules | Button Button secondary with size modified 1`] =
         size="m"
         type="button"
       >
-        Medium
+        <span
+          className="Text__StyledText-sc-1974afi-0 jVjxzY"
+        >
+          Medium
+        </span>
       </button>
     </div>
   </div>
@@ -1444,7 +1464,11 @@ exports[`Storyshots Molecules | Button Button secondary with size modified 1`] =
         size="l"
         type="button"
       >
-        Large
+        <span
+          className="Text__StyledText-sc-1974afi-0 bBiCvk"
+        >
+          Large
+        </span>
       </button>
     </div>
   </div>
@@ -1471,7 +1495,11 @@ exports[`Storyshots Molecules | Button Button with type modified 1`] = `
         onClick={[Function]}
         type="reset"
       >
-        Reset
+        <span
+          className="Text__StyledText-sc-1974afi-0 jVjxzY"
+        >
+          Reset
+        </span>
       </button>
     </div>
   </div>
@@ -1490,7 +1518,11 @@ exports[`Storyshots Molecules | Button Button with type modified 1`] = `
         onClick={[Function]}
         type="submit"
       >
-        Submit
+        <span
+          className="Text__StyledText-sc-1974afi-0 jVjxzY"
+        >
+          Submit
+        </span>
       </button>
     </div>
   </div>
@@ -1503,7 +1535,11 @@ exports[`Storyshots Molecules | Button Button with variant 1`] = `
   onClick={[Function]}
   type="button"
 >
-  Button
+  <span
+    className="Text__StyledText-sc-1974afi-0 jVjxzY"
+  >
+    Button
+  </span>
 </button>
 `;
 
@@ -1513,7 +1549,11 @@ exports[`Storyshots Molecules | Button Default usage 1`] = `
   onClick={[Function]}
   type="button"
 >
-  Button
+  <span
+    className="Text__StyledText-sc-1974afi-0 jVjxzY"
+  >
+    Button
+  </span>
 </button>
 `;
 
@@ -1524,7 +1564,11 @@ exports[`Storyshots Molecules | Button Disabled button 1`] = `
   onClick={[Function]}
   type="button"
 >
-  Button
+  <span
+    className="Text__StyledText-sc-1974afi-0 jVjxzY"
+  >
+    Button
+  </span>
 </button>
 `;
 
