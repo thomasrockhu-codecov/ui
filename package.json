@@ -23,7 +23,8 @@
     "docs-publish": "gh-pages -d storybook-static --repo https://$GH_TOKEN@github.com/nordnet/ui.git --silent",
     "now-build": "build-storybook",
     "commit": "git-cz",
-    "semantic-release": "semantic-release"
+    "semantic-release": "semantic-release",
+    "prepublishOnly": "yarn build"
   },
   "commitlint": {
     "extends": [
