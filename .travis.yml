@@ -28,6 +28,7 @@ jobs:
       script:
         - git config user.email "nordnet-release@localhost"
         - git config user.name "nordnet-release"
+        - git checkout --track -b master origin/master
         # releasing with zeit/release for now
         - TRAVIS_JOB_NUMBER=WORKAROUND.1 yarn run release
       after_script:
