@@ -1,8 +1,8 @@
 tagFormat: ${version}
 
 branches:
-  - name: master
-    prerelease: 'beta'
+  - name: 'beta'
+    prerelease: true
 generateNotes: []
 prepare: []
 publish: []
