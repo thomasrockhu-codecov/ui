@@ -23,7 +23,7 @@
     "docs-publish": "gh-pages -d storybook-static --repo https://$GH_TOKEN@github.com/nordnet/ui.git --silent",
     "now-build": "build-storybook",
     "commit": "git-cz",
-    "release": "release pre beta"
+    "semantic-release": "semantic-release"
   },
   "commitlint": {
     "extends": [
@@ -72,7 +72,6 @@
     "react-intl": "2"
   },
   "devDependencies": {
-    "release": "6.0.1",
     "@babel/cli": "7.4.3",
     "@babel/core": "7.4.3",
     "@babel/plugin-proposal-class-properties": "7.4.0",
@@ -134,7 +133,9 @@
     "react-intl": "2.8.0",
     "react-markdown": "4.0.6",
     "react-test-renderer": "16.8.6",
+    "release": "6.0.1",
     "rimraf": "2.6.3",
+    "semantic-release": "^15.13.3",
     "storybook-addon-intl": "2.4.0",
     "stylelint": "9.10.1",
     "stylelint-config-recommended": "2.1.0",
