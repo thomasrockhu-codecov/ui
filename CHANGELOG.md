@@ -1,3 +1,11 @@
+# [1.0.0-beta.10](https://github.com/nordnet/ui/compare/v1.0.0-beta.9@beta...v1.0.0-beta.10@beta) (2019-04-10)
+
+
+### Bug Fixes
+
+* 🐛 nordnet-release please release smthing ([a466ef8](https://github.com/nordnet/ui/commit/a466ef8))
+* align icon in the middle vertically ([#69](https://github.com/nordnet/ui/issues/69)) ([cf17289](https://github.com/nordnet/ui/commit/cf17289))
+
 # [1.0.0-beta.9](https://github.com/nordnet/ui/compare/v1.0.0-beta.8@beta...v1.0.0-beta.9@beta) (2019-04-09)
 
 
