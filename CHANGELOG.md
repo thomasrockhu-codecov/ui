@@ -1,3 +1,10 @@
+# [1.0.0-beta.11](https://github.com/nordnet/ui/compare/v1.0.0-beta.10@beta...v1.0.0-beta.11@beta) (2019-04-10)
+
+
+### Bug Fixes
+
+* proper build ([7088543](https://github.com/nordnet/ui/commit/7088543))
+
 # [1.0.0-beta.10](https://github.com/nordnet/ui/compare/v1.0.0-beta.9@beta...v1.0.0-beta.10@beta) (2019-04-10)
 
 
