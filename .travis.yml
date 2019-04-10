@@ -28,7 +28,7 @@ jobs:
       script:
         - git config user.email "nordnet-release@localhost"
         - git config user.name "nordnet-release"
-        - TRAVIS_JOB_NUMBER=WORKAROUND.1 npm run semantic-release
+        - GIT_AUTHOR_NAME="nordnet-release" GIT_AUTHOR_EMAIL="nordnet-release@localhost" GIT_COMMITTER_NAME="nordnet-release" GIT_COMMITTER_EMAIL="nordnet-release@localhost" TRAVIS_JOB_NUMBER=WORKAROUND.1 npm run semantic-release
       after_script:
         - npm run build-storybook
         - npm run docs-publish
