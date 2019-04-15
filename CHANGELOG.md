@@ -1,3 +1,17 @@
+# [1.0.0-beta.12](https://github.com/nordnet/ui/compare/v1.0.0-beta.11@beta...v1.0.0-beta.12@beta) (2019-04-15)
+
+
+### Features
+
+* 🎸 remove font from development and currency ([6c02e9b](https://github.com/nordnet/ui/commit/6c02e9b))
+
+
+### BREAKING CHANGES
+
+* 🧨 Development.Primary is removed as well as Currency.Primary and other
+types of this components. From now on wrap everythign font-related in
+<Typography></Typography> component
+
 # [1.0.0-beta.11](https://github.com/nordnet/ui/compare/v1.0.0-beta.10@beta...v1.0.0-beta.11@beta) (2019-04-10)
 
 
