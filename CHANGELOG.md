@@ -1,3 +1,10 @@
+# [1.0.0-beta.14](https://github.com/nordnet/ui/compare/v1.0.0-beta.13@beta...v1.0.0-beta.14@beta) (2019-04-16)
+
+
+### Bug Fixes
+
+* add favicon ([4449df1](https://github.com/nordnet/ui/commit/4449df1))
+
 # [1.0.0-beta.13](https://github.com/nordnet/ui/compare/v1.0.0-beta.12@beta...v1.0.0-beta.13@beta) (2019-04-16)
 
 
