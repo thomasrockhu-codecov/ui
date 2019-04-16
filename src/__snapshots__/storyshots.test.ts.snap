@@ -2321,6 +2321,14 @@ Array [
 ]
 `;
 
+exports[`Storyshots Atoms | Number Invalid value 1`] = `"-"`;
+
+exports[`Storyshots Atoms | Number Number with 0 decimals  1`] = `"100"`;
+
+exports[`Storyshots Atoms | Number Number with 2 decimals  1`] = `"10.00"`;
+
+exports[`Storyshots Atoms | Number Uses custom symbol for invalid value 1`] = `"X"`;
+
 exports[`Storyshots Atoms | Separator Separator default 1`] = `
 <div
   className="Separatorstories__StyledContainer-sc-12j0h8a-0 ixCTfH"
@@ -4035,6 +4043,12 @@ exports[`Storyshots Atoms | Spinner Spinner default 1`] = `
 </span>
 `;
 
+exports[`Storyshots Atoms | Time Invalid value 1`] = `"-"`;
+
+exports[`Storyshots Atoms | Time Time  1`] = `"23:53:44"`;
+
+exports[`Storyshots Atoms | Time Uses custom symbol for invalid value 1`] = `"X"`;
+
 exports[`Storyshots Atoms | Typography Caption 1`] = `
 <div
   className="Display__StyledFlexDiv-sc-1yo6rmg-0 fcTgTL"
@@ -5185,6 +5199,24 @@ exports[`Storyshots Molecules | LinkSell LinkSell disabled 1`] = `
   </span>
 </span>
 `;
+
+exports[`Storyshots Molecules | Percent Invalid value 1`] = `"-"`;
+
+exports[`Storyshots Molecules | Percent Percent with 0 decimals  1`] = `
+Array [
+  "100",
+  "%",
+]
+`;
+
+exports[`Storyshots Molecules | Percent Percent with 2 decimals  1`] = `
+Array [
+  "10.00",
+  "%",
+]
+`;
+
+exports[`Storyshots Molecules | Percent Uses custom symbol for invalid value 1`] = `"X"`;
 
 exports[`Storyshots Theme Colors (palette) 1`] = `
 Array [
