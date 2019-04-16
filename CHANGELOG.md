@@ -1,3 +1,10 @@
+# [1.0.0-beta.13](https://github.com/nordnet/ui/compare/v1.0.0-beta.12@beta...v1.0.0-beta.13@beta) (2019-04-16)
+
+
+### Bug Fixes
+
+* add checks for allowed weights and add missing typography types ([#81](https://github.com/nordnet/ui/issues/81)) ([06100eb](https://github.com/nordnet/ui/commit/06100eb))
+
 # [1.0.0-beta.12](https://github.com/nordnet/ui/compare/v1.0.0-beta.11@beta...v1.0.0-beta.12@beta) (2019-04-15)
 
 
