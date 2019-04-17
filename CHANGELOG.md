@@ -1,3 +1,10 @@
+# [1.0.0-beta.19](https://github.com/nordnet/ui/compare/v1.0.0-beta.18@beta...v1.0.0-beta.19@beta) (2019-04-17)
+
+
+### Features
+
+* add table ([#85](https://github.com/nordnet/ui/issues/85)) ([c15919c](https://github.com/nordnet/ui/commit/c15919c))
+
 # [1.0.0-beta.18](https://github.com/nordnet/ui/compare/v1.0.0-beta.17@beta...v1.0.0-beta.18@beta) (2019-04-17)
 
 
