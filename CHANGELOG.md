@@ -1,3 +1,10 @@
+# [1.0.0-beta.18](https://github.com/nordnet/ui/compare/v1.0.0-beta.17@beta...v1.0.0-beta.18@beta) (2019-04-17)
+
+
+### Features
+
+* add list with titles ([#83](https://github.com/nordnet/ui/issues/83)) ([099899c](https://github.com/nordnet/ui/commit/099899c))
+
 # [1.0.0-beta.17](https://github.com/nordnet/ui/compare/v1.0.0-beta.16@beta...v1.0.0-beta.17@beta) (2019-04-17)
 
 
