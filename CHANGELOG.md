@@ -1,3 +1,10 @@
+# [1.0.0-beta.16](https://github.com/nordnet/ui/compare/v1.0.0-beta.15@beta...v1.0.0-beta.16@beta) (2019-04-17)
+
+
+### Bug Fixes
+
+* add edge cases ([#60](https://github.com/nordnet/ui/issues/60)) ([1c6919c](https://github.com/nordnet/ui/commit/1c6919c))
+
 # [1.0.0-beta.15](https://github.com/nordnet/ui/compare/v1.0.0-beta.14@beta...v1.0.0-beta.15@beta) (2019-04-17)
 
 
