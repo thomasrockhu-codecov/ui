@@ -1,3 +1,10 @@
+# [1.0.0-beta.17](https://github.com/nordnet/ui/compare/v1.0.0-beta.16@beta...v1.0.0-beta.17@beta) (2019-04-17)
+
+
+### Bug Fixes
+
+* some fixes ([#84](https://github.com/nordnet/ui/issues/84)) ([dfb738b](https://github.com/nordnet/ui/commit/dfb738b))
+
 # [1.0.0-beta.16](https://github.com/nordnet/ui/compare/v1.0.0-beta.15@beta...v1.0.0-beta.16@beta) (2019-04-17)
 
 
