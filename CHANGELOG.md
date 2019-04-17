@@ -1,3 +1,10 @@
+# [1.0.0-beta.15](https://github.com/nordnet/ui/compare/v1.0.0-beta.14@beta...v1.0.0-beta.15@beta) (2019-04-17)
+
+
+### Features
+
+* add contract for list with titles ([#82](https://github.com/nordnet/ui/issues/82)) ([f2ffafe](https://github.com/nordnet/ui/commit/f2ffafe))
+
 # [1.0.0-beta.14](https://github.com/nordnet/ui/compare/v1.0.0-beta.13@beta...v1.0.0-beta.14@beta) (2019-04-16)
 
 
