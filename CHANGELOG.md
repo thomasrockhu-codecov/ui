@@ -1,3 +1,16 @@
+# [1.0.0-beta.20](https://github.com/nordnet/ui/compare/v1.0.0-beta.19@beta...v1.0.0-beta.20@beta) (2019-04-23)
+
+
+### Bug Fixes
+
+* build ([5af2123](https://github.com/nordnet/ui/commit/5af2123))
+
+
+### Features
+
+* 🎸 error message for link without to prop ([#94](https://github.com/nordnet/ui/issues/94)) ([143ad8a](https://github.com/nordnet/ui/commit/143ad8a))
+* replace with dumbed down spinner ([#86](https://github.com/nordnet/ui/issues/86)) ([445db6d](https://github.com/nordnet/ui/commit/445db6d))
+
 # [1.0.0-beta.19](https://github.com/nordnet/ui/compare/v1.0.0-beta.18@beta...v1.0.0-beta.19@beta) (2019-04-17)
 
 
