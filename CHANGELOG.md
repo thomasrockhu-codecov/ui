@@ -1,3 +1,19 @@
+# [1.0.0-beta.23](https://github.com/nordnet/ui/compare/v1.0.0-beta.22@beta...v1.0.0-beta.23@beta) (2019-04-23)
+
+
+### Features
+
+* 🎸 wip tabs ([#70](https://github.com/nordnet/ui/issues/70)) ([4029e05](https://github.com/nordnet/ui/commit/4029e05))
+
+
+### BREAKING CHANGES
+
+* 🧨 remove padding from cardwithtitle
+
+feat: tabs
+
+* test: updated snapshots
+
 # [1.0.0-beta.22](https://github.com/nordnet/ui/compare/v1.0.0-beta.21@beta...v1.0.0-beta.22@beta) (2019-04-23)
 
 
