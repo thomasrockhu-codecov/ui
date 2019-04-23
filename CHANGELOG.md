@@ -1,3 +1,10 @@
+# [1.0.0-beta.22](https://github.com/nordnet/ui/compare/v1.0.0-beta.21@beta...v1.0.0-beta.22@beta) (2019-04-23)
+
+
+### Bug Fixes
+
+* flag ruining build ([#99](https://github.com/nordnet/ui/issues/99)) ([510d3b0](https://github.com/nordnet/ui/commit/510d3b0))
+
 # [1.0.0-beta.21](https://github.com/nordnet/ui/compare/v1.0.0-beta.20@beta...v1.0.0-beta.21@beta) (2019-04-23)
 
 
