@@ -1,3 +1,10 @@
+# [1.0.0-beta.21](https://github.com/nordnet/ui/compare/v1.0.0-beta.20@beta...v1.0.0-beta.21@beta) (2019-04-23)
+
+
+### Bug Fixes
+
+* downgrade react-router-dom ([#97](https://github.com/nordnet/ui/issues/97)) ([41cbaee](https://github.com/nordnet/ui/commit/41cbaee))
+
 # [1.0.0-beta.20](https://github.com/nordnet/ui/compare/v1.0.0-beta.19@beta...v1.0.0-beta.20@beta) (2019-04-23)
 
 
