@@ -1,3 +1,10 @@
+# [1.0.0-beta.28](https://github.com/nordnet/ui/compare/v1.0.0-beta.27@beta...v1.0.0-beta.28@beta) (2019-04-26)
+
+
+### Bug Fixes
+
+* types for typography ([31b13f2](https://github.com/nordnet/ui/commit/31b13f2))
+
 # [1.0.0-beta.27](https://github.com/nordnet/ui/compare/v1.0.0-beta.26@beta...v1.0.0-beta.27@beta) (2019-04-26)
 
 
