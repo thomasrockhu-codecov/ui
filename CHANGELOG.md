@@ -1,3 +1,10 @@
+# [1.0.0-beta.26](https://github.com/nordnet/ui/compare/v1.0.0-beta.25@beta...v1.0.0-beta.26@beta) (2019-04-26)
+
+
+### Features
+
+* add colors ([#106](https://github.com/nordnet/ui/issues/106)) ([9ab3ab0](https://github.com/nordnet/ui/commit/9ab3ab0))
+
 # [1.0.0-beta.25](https://github.com/nordnet/ui/compare/v1.0.0-beta.24@beta...v1.0.0-beta.25@beta) (2019-04-24)
 
 
