@@ -1,3 +1,17 @@
+# [1.0.0-beta.27](https://github.com/nordnet/ui/compare/v1.0.0-beta.26@beta...v1.0.0-beta.27@beta) (2019-04-26)
+
+
+### Features
+
+* added right title to card with title ([#103](https://github.com/nordnet/ui/issues/103)) ([b73bfea](https://github.com/nordnet/ui/commit/b73bfea))
+
+
+### BREAKING CHANGES
+
+* 🧨 remove default styles from CardWithTitle
+
+* test: 💍 update snapshots
+
 # [1.0.0-beta.26](https://github.com/nordnet/ui/compare/v1.0.0-beta.25@beta...v1.0.0-beta.26@beta) (2019-04-26)
 
 
