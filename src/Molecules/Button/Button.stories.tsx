@@ -1,6 +1,7 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 import { action } from '@storybook/addon-actions';
+import { HashRouter } from 'react-router-dom';
 
 import { Button, Flexbox } from '../..';
 import { Display } from '../../common/Display';
@@ -119,4 +120,28 @@ storiesOf('Molecules | Button', module)
         </Button>
       </Flexbox.Item>
     </Flexbox.Container>
+  ))
+  .add('Link looking like a button', () => (
+    <Display
+      items={[
+        {
+          title: 'Reset',
+          component: (
+            <HashRouter>
+              <Button to="route1">To Route1</Button>
+            </HashRouter>
+          ),
+        },
+        {
+          title: 'Submit',
+          component: (
+            <HashRouter>
+              <Button to="route2" variant="secondary">
+                To Route2
+              </Button>
+            </HashRouter>
+          ),
+        },
+      ]}
+    />
   ));
