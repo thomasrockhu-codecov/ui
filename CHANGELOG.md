@@ -1,3 +1,10 @@
+# [1.0.0-beta.29](https://github.com/nordnet/ui/compare/v1.0.0-beta.28@beta...v1.0.0-beta.29@beta) (2019-04-29)
+
+
+### Bug Fixes
+
+* 🐛 disabled tabs children checks for now ([#112](https://github.com/nordnet/ui/issues/112)) ([7bbb006](https://github.com/nordnet/ui/commit/7bbb006))
+
 # [1.0.0-beta.28](https://github.com/nordnet/ui/compare/v1.0.0-beta.27@beta...v1.0.0-beta.28@beta) (2019-04-26)
 
 
