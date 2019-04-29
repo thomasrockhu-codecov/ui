@@ -1426,11 +1426,821 @@ Array [
 ]
 `;
 
+exports[`Storyshots Atoms | Number Default 1`] = `
+<div
+  className="Display__StyledFlexDiv-sc-1yo6rmg-0 fcTgTL"
+  direction="column"
+>
+  <div
+    className="Display__StyledFlexDiv-sc-1yo6rmg-0 hFANJJ"
+    direction="row"
+  >
+    <div
+      className="Display__DivWithBorder-sc-1yo6rmg-1 cmlFBm"
+    >
+      value = 1000
+    </div>
+    <div>
+      
+      1,000
+    </div>
+  </div>
+  <div
+    className="Display__StyledFlexDiv-sc-1yo6rmg-0 hFANJJ"
+    direction="row"
+  >
+    <div
+      className="Display__DivWithBorder-sc-1yo6rmg-1 cmlFBm"
+    >
+      value = 9000000
+    </div>
+    <div>
+      
+      9,000,000
+    </div>
+  </div>
+  <div
+    className="Display__StyledFlexDiv-sc-1yo6rmg-0 hFANJJ"
+    direction="row"
+  >
+    <div
+      className="Display__DivWithBorder-sc-1yo6rmg-1 cmlFBm"
+    >
+      value = 0.01
+    </div>
+    <div>
+      
+      0.01
+    </div>
+  </div>
+  <div
+    className="Display__StyledFlexDiv-sc-1yo6rmg-0 hFANJJ"
+    direction="row"
+  >
+    <div
+      className="Display__DivWithBorder-sc-1yo6rmg-1 cmlFBm"
+    >
+      value = 111.2
+    </div>
+    <div>
+      
+      111.2
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Atoms | Number Integration: with different typographies 1`] = `
+<div
+  className="Display__StyledFlexDiv-sc-1yo6rmg-0 fcTgTL"
+  direction="column"
+>
+  <div
+    className="Display__StyledFlexDiv-sc-1yo6rmg-0 hFANJJ"
+    direction="row"
+  >
+    <div
+      className="Display__DivWithBorder-sc-1yo6rmg-1 cmlFBm"
+    >
+      primary
+    </div>
+    <div>
+      <span
+        className="Typography__StyledTypography-sc-10mju41-0 HwchK"
+        type="primary"
+      >
+        <div
+          className="Display__StyledFlexDiv-sc-1yo6rmg-0 fcTgTL"
+          direction="column"
+        >
+          <div
+            className="Display__StyledFlexDiv-sc-1yo6rmg-0 hFANJJ"
+            direction="row"
+          >
+            <div
+              className="Display__DivWithBorder-sc-1yo6rmg-1 cmlFBm"
+            >
+              value = 1000
+            </div>
+            <div>
+              
+              1,000
+            </div>
+          </div>
+          <div
+            className="Display__StyledFlexDiv-sc-1yo6rmg-0 hFANJJ"
+            direction="row"
+          >
+            <div
+              className="Display__DivWithBorder-sc-1yo6rmg-1 cmlFBm"
+            >
+              value = 9000000
+            </div>
+            <div>
+              
+              9,000,000
+            </div>
+          </div>
+          <div
+            className="Display__StyledFlexDiv-sc-1yo6rmg-0 hFANJJ"
+            direction="row"
+          >
+            <div
+              className="Display__DivWithBorder-sc-1yo6rmg-1 cmlFBm"
+            >
+              value = 0.01
+            </div>
+            <div>
+              
+              0.01
+            </div>
+          </div>
+          <div
+            className="Display__StyledFlexDiv-sc-1yo6rmg-0 hFANJJ"
+            direction="row"
+          >
+            <div
+              className="Display__DivWithBorder-sc-1yo6rmg-1 cmlFBm"
+            >
+              value = 111.2
+            </div>
+            <div>
+              
+              111.2
+            </div>
+          </div>
+        </div>
+      </span>
+    </div>
+  </div>
+  <div
+    className="Display__StyledFlexDiv-sc-1yo6rmg-0 hFANJJ"
+    direction="row"
+  >
+    <div
+      className="Display__DivWithBorder-sc-1yo6rmg-1 cmlFBm"
+    >
+      secondary
+    </div>
+    <div>
+      <span
+        className="Typography__StyledTypography-sc-10mju41-0 cCEknw"
+        type="secondary"
+      >
+        <div
+          className="Display__StyledFlexDiv-sc-1yo6rmg-0 fcTgTL"
+          direction="column"
+        >
+          <div
+            className="Display__StyledFlexDiv-sc-1yo6rmg-0 hFANJJ"
+            direction="row"
+          >
+            <div
+              className="Display__DivWithBorder-sc-1yo6rmg-1 cmlFBm"
+            >
+              value = 1000
+            </div>
+            <div>
+              
+              1,000
+            </div>
+          </div>
+          <div
+            className="Display__StyledFlexDiv-sc-1yo6rmg-0 hFANJJ"
+            direction="row"
+          >
+            <div
+              className="Display__DivWithBorder-sc-1yo6rmg-1 cmlFBm"
+            >
+              value = 9000000
+            </div>
+            <div>
+              
+              9,000,000
+            </div>
+          </div>
+          <div
+            className="Display__StyledFlexDiv-sc-1yo6rmg-0 hFANJJ"
+            direction="row"
+          >
+            <div
+              className="Display__DivWithBorder-sc-1yo6rmg-1 cmlFBm"
+            >
+              value = 0.01
+            </div>
+            <div>
+              
+              0.01
+            </div>
+          </div>
+          <div
+            className="Display__StyledFlexDiv-sc-1yo6rmg-0 hFANJJ"
+            direction="row"
+          >
+            <div
+              className="Display__DivWithBorder-sc-1yo6rmg-1 cmlFBm"
+            >
+              value = 111.2
+            </div>
+            <div>
+              
+              111.2
+            </div>
+          </div>
+        </div>
+      </span>
+    </div>
+  </div>
+  <div
+    className="Display__StyledFlexDiv-sc-1yo6rmg-0 hFANJJ"
+    direction="row"
+  >
+    <div
+      className="Display__DivWithBorder-sc-1yo6rmg-1 cmlFBm"
+    >
+      tertiary
+    </div>
+    <div>
+      <span
+        className="Typography__StyledTypography-sc-10mju41-0 KAGKP"
+        type="tertiary"
+      >
+        <div
+          className="Display__StyledFlexDiv-sc-1yo6rmg-0 fcTgTL"
+          direction="column"
+        >
+          <div
+            className="Display__StyledFlexDiv-sc-1yo6rmg-0 hFANJJ"
+            direction="row"
+          >
+            <div
+              className="Display__DivWithBorder-sc-1yo6rmg-1 cmlFBm"
+            >
+              value = 1000
+            </div>
+            <div>
+              
+              1,000
+            </div>
+          </div>
+          <div
+            className="Display__StyledFlexDiv-sc-1yo6rmg-0 hFANJJ"
+            direction="row"
+          >
+            <div
+              className="Display__DivWithBorder-sc-1yo6rmg-1 cmlFBm"
+            >
+              value = 9000000
+            </div>
+            <div>
+              
+              9,000,000
+            </div>
+          </div>
+          <div
+            className="Display__StyledFlexDiv-sc-1yo6rmg-0 hFANJJ"
+            direction="row"
+          >
+            <div
+              className="Display__DivWithBorder-sc-1yo6rmg-1 cmlFBm"
+            >
+              value = 0.01
+            </div>
+            <div>
+              
+              0.01
+            </div>
+          </div>
+          <div
+            className="Display__StyledFlexDiv-sc-1yo6rmg-0 hFANJJ"
+            direction="row"
+          >
+            <div
+              className="Display__DivWithBorder-sc-1yo6rmg-1 cmlFBm"
+            >
+              value = 111.2
+            </div>
+            <div>
+              
+              111.2
+            </div>
+          </div>
+        </div>
+      </span>
+    </div>
+  </div>
+  <div
+    className="Display__StyledFlexDiv-sc-1yo6rmg-0 hFANJJ"
+    direction="row"
+  >
+    <div
+      className="Display__DivWithBorder-sc-1yo6rmg-1 cmlFBm"
+    >
+      caption
+    </div>
+    <div>
+      <span
+        className="Typography__StyledTypography-sc-10mju41-0 edxUbM"
+        type="caption"
+      >
+        <div
+          className="Display__StyledFlexDiv-sc-1yo6rmg-0 fcTgTL"
+          direction="column"
+        >
+          <div
+            className="Display__StyledFlexDiv-sc-1yo6rmg-0 hFANJJ"
+            direction="row"
+          >
+            <div
+              className="Display__DivWithBorder-sc-1yo6rmg-1 cmlFBm"
+            >
+              value = 1000
+            </div>
+            <div>
+              
+              1,000
+            </div>
+          </div>
+          <div
+            className="Display__StyledFlexDiv-sc-1yo6rmg-0 hFANJJ"
+            direction="row"
+          >
+            <div
+              className="Display__DivWithBorder-sc-1yo6rmg-1 cmlFBm"
+            >
+              value = 9000000
+            </div>
+            <div>
+              
+              9,000,000
+            </div>
+          </div>
+          <div
+            className="Display__StyledFlexDiv-sc-1yo6rmg-0 hFANJJ"
+            direction="row"
+          >
+            <div
+              className="Display__DivWithBorder-sc-1yo6rmg-1 cmlFBm"
+            >
+              value = 0.01
+            </div>
+            <div>
+              
+              0.01
+            </div>
+          </div>
+          <div
+            className="Display__StyledFlexDiv-sc-1yo6rmg-0 hFANJJ"
+            direction="row"
+          >
+            <div
+              className="Display__DivWithBorder-sc-1yo6rmg-1 cmlFBm"
+            >
+              value = 111.2
+            </div>
+            <div>
+              
+              111.2
+            </div>
+          </div>
+        </div>
+      </span>
+    </div>
+  </div>
+  <div
+    className="Display__StyledFlexDiv-sc-1yo6rmg-0 hFANJJ"
+    direction="row"
+  >
+    <div
+      className="Display__DivWithBorder-sc-1yo6rmg-1 cmlFBm"
+    >
+      title1
+    </div>
+    <div>
+      <span
+        className="Typography__StyledTypography-sc-10mju41-0 iyoqVf"
+        type="title1"
+      >
+        <div
+          className="Display__StyledFlexDiv-sc-1yo6rmg-0 fcTgTL"
+          direction="column"
+        >
+          <div
+            className="Display__StyledFlexDiv-sc-1yo6rmg-0 hFANJJ"
+            direction="row"
+          >
+            <div
+              className="Display__DivWithBorder-sc-1yo6rmg-1 cmlFBm"
+            >
+              value = 1000
+            </div>
+            <div>
+              
+              1,000
+            </div>
+          </div>
+          <div
+            className="Display__StyledFlexDiv-sc-1yo6rmg-0 hFANJJ"
+            direction="row"
+          >
+            <div
+              className="Display__DivWithBorder-sc-1yo6rmg-1 cmlFBm"
+            >
+              value = 9000000
+            </div>
+            <div>
+              
+              9,000,000
+            </div>
+          </div>
+          <div
+            className="Display__StyledFlexDiv-sc-1yo6rmg-0 hFANJJ"
+            direction="row"
+          >
+            <div
+              className="Display__DivWithBorder-sc-1yo6rmg-1 cmlFBm"
+            >
+              value = 0.01
+            </div>
+            <div>
+              
+              0.01
+            </div>
+          </div>
+          <div
+            className="Display__StyledFlexDiv-sc-1yo6rmg-0 hFANJJ"
+            direction="row"
+          >
+            <div
+              className="Display__DivWithBorder-sc-1yo6rmg-1 cmlFBm"
+            >
+              value = 111.2
+            </div>
+            <div>
+              
+              111.2
+            </div>
+          </div>
+        </div>
+      </span>
+    </div>
+  </div>
+  <div
+    className="Display__StyledFlexDiv-sc-1yo6rmg-0 hFANJJ"
+    direction="row"
+  >
+    <div
+      className="Display__DivWithBorder-sc-1yo6rmg-1 cmlFBm"
+    >
+      title2
+    </div>
+    <div>
+      <span
+        className="Typography__StyledTypography-sc-10mju41-0 YnQiR"
+        type="title2"
+      >
+        <div
+          className="Display__StyledFlexDiv-sc-1yo6rmg-0 fcTgTL"
+          direction="column"
+        >
+          <div
+            className="Display__StyledFlexDiv-sc-1yo6rmg-0 hFANJJ"
+            direction="row"
+          >
+            <div
+              className="Display__DivWithBorder-sc-1yo6rmg-1 cmlFBm"
+            >
+              value = 1000
+            </div>
+            <div>
+              
+              1,000
+            </div>
+          </div>
+          <div
+            className="Display__StyledFlexDiv-sc-1yo6rmg-0 hFANJJ"
+            direction="row"
+          >
+            <div
+              className="Display__DivWithBorder-sc-1yo6rmg-1 cmlFBm"
+            >
+              value = 9000000
+            </div>
+            <div>
+              
+              9,000,000
+            </div>
+          </div>
+          <div
+            className="Display__StyledFlexDiv-sc-1yo6rmg-0 hFANJJ"
+            direction="row"
+          >
+            <div
+              className="Display__DivWithBorder-sc-1yo6rmg-1 cmlFBm"
+            >
+              value = 0.01
+            </div>
+            <div>
+              
+              0.01
+            </div>
+          </div>
+          <div
+            className="Display__StyledFlexDiv-sc-1yo6rmg-0 hFANJJ"
+            direction="row"
+          >
+            <div
+              className="Display__DivWithBorder-sc-1yo6rmg-1 cmlFBm"
+            >
+              value = 111.2
+            </div>
+            <div>
+              
+              111.2
+            </div>
+          </div>
+        </div>
+      </span>
+    </div>
+  </div>
+  <div
+    className="Display__StyledFlexDiv-sc-1yo6rmg-0 hFANJJ"
+    direction="row"
+  >
+    <div
+      className="Display__DivWithBorder-sc-1yo6rmg-1 cmlFBm"
+    >
+      title3
+    </div>
+    <div>
+      <span
+        className="Typography__StyledTypography-sc-10mju41-0 gxmkvI"
+        type="title3"
+      >
+        <div
+          className="Display__StyledFlexDiv-sc-1yo6rmg-0 fcTgTL"
+          direction="column"
+        >
+          <div
+            className="Display__StyledFlexDiv-sc-1yo6rmg-0 hFANJJ"
+            direction="row"
+          >
+            <div
+              className="Display__DivWithBorder-sc-1yo6rmg-1 cmlFBm"
+            >
+              value = 1000
+            </div>
+            <div>
+              
+              1,000
+            </div>
+          </div>
+          <div
+            className="Display__StyledFlexDiv-sc-1yo6rmg-0 hFANJJ"
+            direction="row"
+          >
+            <div
+              className="Display__DivWithBorder-sc-1yo6rmg-1 cmlFBm"
+            >
+              value = 9000000
+            </div>
+            <div>
+              
+              9,000,000
+            </div>
+          </div>
+          <div
+            className="Display__StyledFlexDiv-sc-1yo6rmg-0 hFANJJ"
+            direction="row"
+          >
+            <div
+              className="Display__DivWithBorder-sc-1yo6rmg-1 cmlFBm"
+            >
+              value = 0.01
+            </div>
+            <div>
+              
+              0.01
+            </div>
+          </div>
+          <div
+            className="Display__StyledFlexDiv-sc-1yo6rmg-0 hFANJJ"
+            direction="row"
+          >
+            <div
+              className="Display__DivWithBorder-sc-1yo6rmg-1 cmlFBm"
+            >
+              value = 111.2
+            </div>
+            <div>
+              
+              111.2
+            </div>
+          </div>
+        </div>
+      </span>
+    </div>
+  </div>
+  <div
+    className="Display__StyledFlexDiv-sc-1yo6rmg-0 hFANJJ"
+    direction="row"
+  >
+    <div
+      className="Display__DivWithBorder-sc-1yo6rmg-1 cmlFBm"
+    >
+      hero
+    </div>
+    <div>
+      <span
+        className="Typography__StyledTypography-sc-10mju41-0 cZQYXr"
+        type="hero"
+      >
+        <div
+          className="Display__StyledFlexDiv-sc-1yo6rmg-0 fcTgTL"
+          direction="column"
+        >
+          <div
+            className="Display__StyledFlexDiv-sc-1yo6rmg-0 hFANJJ"
+            direction="row"
+          >
+            <div
+              className="Display__DivWithBorder-sc-1yo6rmg-1 cmlFBm"
+            >
+              value = 1000
+            </div>
+            <div>
+              
+              1,000
+            </div>
+          </div>
+          <div
+            className="Display__StyledFlexDiv-sc-1yo6rmg-0 hFANJJ"
+            direction="row"
+          >
+            <div
+              className="Display__DivWithBorder-sc-1yo6rmg-1 cmlFBm"
+            >
+              value = 9000000
+            </div>
+            <div>
+              
+              9,000,000
+            </div>
+          </div>
+          <div
+            className="Display__StyledFlexDiv-sc-1yo6rmg-0 hFANJJ"
+            direction="row"
+          >
+            <div
+              className="Display__DivWithBorder-sc-1yo6rmg-1 cmlFBm"
+            >
+              value = 0.01
+            </div>
+            <div>
+              
+              0.01
+            </div>
+          </div>
+          <div
+            className="Display__StyledFlexDiv-sc-1yo6rmg-0 hFANJJ"
+            direction="row"
+          >
+            <div
+              className="Display__DivWithBorder-sc-1yo6rmg-1 cmlFBm"
+            >
+              value = 111.2
+            </div>
+            <div>
+              
+              111.2
+            </div>
+          </div>
+        </div>
+      </span>
+    </div>
+  </div>
+</div>
+`;
+
 exports[`Storyshots Atoms | Number Invalid value 1`] = `"-"`;
 
-exports[`Storyshots Atoms | Number Number with 0 decimals  1`] = `"100"`;
+exports[`Storyshots Atoms | Number Number with 2 decimals  1`] = `
+<div
+  className="Display__StyledFlexDiv-sc-1yo6rmg-0 fcTgTL"
+  direction="column"
+>
+  <div
+    className="Display__StyledFlexDiv-sc-1yo6rmg-0 hFANJJ"
+    direction="row"
+  >
+    <div
+      className="Display__DivWithBorder-sc-1yo6rmg-1 cmlFBm"
+    >
+      value = 10.378
+    </div>
+    <div>
+      
+      10.38
+    </div>
+  </div>
+  <div
+    className="Display__StyledFlexDiv-sc-1yo6rmg-0 hFANJJ"
+    direction="row"
+  >
+    <div
+      className="Display__DivWithBorder-sc-1yo6rmg-1 cmlFBm"
+    >
+      value = 10.333
+    </div>
+    <div>
+      
+      10.33
+    </div>
+  </div>
+  <div
+    className="Display__StyledFlexDiv-sc-1yo6rmg-0 hFANJJ"
+    direction="row"
+  >
+    <div
+      className="Display__DivWithBorder-sc-1yo6rmg-1 cmlFBm"
+    >
+      value = 10
+    </div>
+    <div>
+      
+      10.00
+    </div>
+  </div>
+</div>
+`;
 
-exports[`Storyshots Atoms | Number Number with 2 decimals  1`] = `"10.00"`;
+exports[`Storyshots Atoms | Number Number with currency 1`] = `
+Array [
+  "",
+  "2.3",
+  " SEK",
+]
+`;
+
+exports[`Storyshots Atoms | Number Number with percentage 1`] = `
+Array [
+  "",
+  "2.3",
+  "%",
+]
+`;
+
+exports[`Storyshots Atoms | Number Number with sign 1`] = `
+<div
+  className="Display__StyledFlexDiv-sc-1yo6rmg-0 fcTgTL"
+  direction="column"
+>
+  <div
+    className="Display__StyledFlexDiv-sc-1yo6rmg-0 hFANJJ"
+    direction="row"
+  >
+    <div
+      className="Display__DivWithBorder-sc-1yo6rmg-1 cmlFBm"
+    >
+      value = 2
+    </div>
+    <div>
+      +
+      2
+    </div>
+  </div>
+  <div
+    className="Display__StyledFlexDiv-sc-1yo6rmg-0 hFANJJ"
+    direction="row"
+  >
+    <div
+      className="Display__DivWithBorder-sc-1yo6rmg-1 cmlFBm"
+    >
+      value = 0
+    </div>
+    <div>
+      
+      0
+    </div>
+  </div>
+  <div
+    className="Display__StyledFlexDiv-sc-1yo6rmg-0 hFANJJ"
+    direction="row"
+  >
+    <div
+      className="Display__DivWithBorder-sc-1yo6rmg-1 cmlFBm"
+    >
+      value = -1
+    </div>
+    <div>
+      
+      -1
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Atoms | Number null currency 1`] = `"-"`;
 
 exports[`Storyshots Atoms | Separator Separator default 1`] = `
 <div
@@ -17731,16 +18541,7 @@ exports[`Storyshots Molecules | CardWithTitle Integration: CardWithTitle with cu
 </div>
 `;
 
-exports[`Storyshots Molecules | Currency Default 1`] = `
-Array [
-  "",
-  "234,234",
-  " ",
-  "SEK",
-]
-`;
-
-exports[`Storyshots Molecules | Currency Integration: Usage with different typographies  1`] = `
+exports[`Storyshots Molecules | Development As currency 1`] = `
 <div
   className="Display__StyledFlexDiv-sc-1yo6rmg-0 fcTgTL"
   direction="column"
@@ -17752,17 +18553,16 @@ exports[`Storyshots Molecules | Currency Integration: Usage with different typog
     <div
       className="Display__DivWithBorder-sc-1yo6rmg-1 cmlFBm"
     >
-      primary
+      Positive value
     </div>
     <div>
       <span
-        className="Typography__StyledTypography-sc-10mju41-0 HwchK"
-        type="primary"
+        className="Development__StyledDevelopment-sc-193bgbs-0 yrYQb"
+        value={50}
       >
-        
-        234,234
-         
-        SEK
+        +
+        50
+         USD
       </span>
     </div>
   </div>
@@ -17773,17 +18573,16 @@ exports[`Storyshots Molecules | Currency Integration: Usage with different typog
     <div
       className="Display__DivWithBorder-sc-1yo6rmg-1 cmlFBm"
     >
-      secondary
+      Zero value
     </div>
     <div>
       <span
-        className="Typography__StyledTypography-sc-10mju41-0 cCEknw"
-        type="secondary"
+        className="Development__StyledDevelopment-sc-193bgbs-0 gxeMWL"
+        value={0}
       >
         
-        234,234
-         
-        SEK
+        0
+         USD
       </span>
     </div>
   </div>
@@ -17794,131 +18593,23 @@ exports[`Storyshots Molecules | Currency Integration: Usage with different typog
     <div
       className="Display__DivWithBorder-sc-1yo6rmg-1 cmlFBm"
     >
-      tertiary
+      Negative value
     </div>
     <div>
       <span
-        className="Typography__StyledTypography-sc-10mju41-0 KAGKP"
-        type="tertiary"
+        className="Development__StyledDevelopment-sc-193bgbs-0 eiIldu"
+        value={-200}
       >
         
-        234,234
-         
-        SEK
-      </span>
-    </div>
-  </div>
-  <div
-    className="Display__StyledFlexDiv-sc-1yo6rmg-0 hFANJJ"
-    direction="row"
-  >
-    <div
-      className="Display__DivWithBorder-sc-1yo6rmg-1 cmlFBm"
-    >
-      caption
-    </div>
-    <div>
-      <span
-        className="Typography__StyledTypography-sc-10mju41-0 edxUbM"
-        type="caption"
-      >
-        
-        234,234
-         
-        SEK
-      </span>
-    </div>
-  </div>
-  <div
-    className="Display__StyledFlexDiv-sc-1yo6rmg-0 hFANJJ"
-    direction="row"
-  >
-    <div
-      className="Display__DivWithBorder-sc-1yo6rmg-1 cmlFBm"
-    >
-      title1
-    </div>
-    <div>
-      <span
-        className="Typography__StyledTypography-sc-10mju41-0 iyoqVf"
-        type="title1"
-      >
-        
-        234,234
-         
-        SEK
-      </span>
-    </div>
-  </div>
-  <div
-    className="Display__StyledFlexDiv-sc-1yo6rmg-0 hFANJJ"
-    direction="row"
-  >
-    <div
-      className="Display__DivWithBorder-sc-1yo6rmg-1 cmlFBm"
-    >
-      title2
-    </div>
-    <div>
-      <span
-        className="Typography__StyledTypography-sc-10mju41-0 YnQiR"
-        type="title2"
-      >
-        
-        234,234
-         
-        SEK
-      </span>
-    </div>
-  </div>
-  <div
-    className="Display__StyledFlexDiv-sc-1yo6rmg-0 hFANJJ"
-    direction="row"
-  >
-    <div
-      className="Display__DivWithBorder-sc-1yo6rmg-1 cmlFBm"
-    >
-      title3
-    </div>
-    <div>
-      <span
-        className="Typography__StyledTypography-sc-10mju41-0 gxmkvI"
-        type="title3"
-      >
-        
-        234,234
-         
-        SEK
-      </span>
-    </div>
-  </div>
-  <div
-    className="Display__StyledFlexDiv-sc-1yo6rmg-0 hFANJJ"
-    direction="row"
-  >
-    <div
-      className="Display__DivWithBorder-sc-1yo6rmg-1 cmlFBm"
-    >
-      hero
-    </div>
-    <div>
-      <span
-        className="Typography__StyledTypography-sc-10mju41-0 cZQYXr"
-        type="hero"
-      >
-        
-        234,234
-         
-        SEK
+        -200
+         USD
       </span>
     </div>
   </div>
 </div>
 `;
 
-exports[`Storyshots Molecules | Currency Invalid value 1`] = `"-"`;
-
-exports[`Storyshots Molecules | Development Default 1`] = `
+exports[`Storyshots Molecules | Development As percentage 1`] = `
 <div
   className="Display__StyledFlexDiv-sc-1yo6rmg-0 fcTgTL"
   direction="column"
@@ -17937,9 +18628,8 @@ exports[`Storyshots Molecules | Development Default 1`] = `
         className="Development__StyledDevelopment-sc-193bgbs-0 yrYQb"
         value={5.4}
       >
-        ▲
         +
-        5
+        5.4
         %
       </span>
     </div>
@@ -17954,7 +18644,14 @@ exports[`Storyshots Molecules | Development Default 1`] = `
       Zero value
     </div>
     <div>
-      -
+      <span
+        className="Development__StyledDevelopment-sc-193bgbs-0 gxeMWL"
+        value={0}
+      >
+        
+        0
+        %
+      </span>
     </div>
   </div>
   <div
@@ -17971,9 +18668,74 @@ exports[`Storyshots Molecules | Development Default 1`] = `
         className="Development__StyledDevelopment-sc-193bgbs-0 eiIldu"
         value={-2.1}
       >
-        ▼
-        -2
+        
+        -2.1
         %
+      </span>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Molecules | Development Default 1`] = `
+<div
+  className="Display__StyledFlexDiv-sc-1yo6rmg-0 fcTgTL"
+  direction="column"
+>
+  <div
+    className="Display__StyledFlexDiv-sc-1yo6rmg-0 hFANJJ"
+    direction="row"
+  >
+    <div
+      className="Display__DivWithBorder-sc-1yo6rmg-1 cmlFBm"
+    >
+      Positive value
+    </div>
+    <div>
+      <span
+        className="Development__StyledDevelopment-sc-193bgbs-0 yrYQb"
+        value={50}
+      >
+        +
+        50
+      </span>
+    </div>
+  </div>
+  <div
+    className="Display__StyledFlexDiv-sc-1yo6rmg-0 hFANJJ"
+    direction="row"
+  >
+    <div
+      className="Display__DivWithBorder-sc-1yo6rmg-1 cmlFBm"
+    >
+      Zero value
+    </div>
+    <div>
+      <span
+        className="Development__StyledDevelopment-sc-193bgbs-0 gxeMWL"
+        value={0}
+      >
+        
+        0
+      </span>
+    </div>
+  </div>
+  <div
+    className="Display__StyledFlexDiv-sc-1yo6rmg-0 hFANJJ"
+    direction="row"
+  >
+    <div
+      className="Display__DivWithBorder-sc-1yo6rmg-1 cmlFBm"
+    >
+      Negative value
+    </div>
+    <div>
+      <span
+        className="Development__StyledDevelopment-sc-193bgbs-0 eiIldu"
+        value={-200}
+      >
+        
+        -200
       </span>
     </div>
   </div>
@@ -18017,10 +18779,8 @@ exports[`Storyshots Molecules | Development Integration: with different typograp
                 className="Development__StyledDevelopment-sc-193bgbs-0 yrYQb"
                 value={5.4}
               >
-                ▲
                 +
-                5
-                %
+                5.4
               </span>
             </div>
           </div>
@@ -18034,7 +18794,13 @@ exports[`Storyshots Molecules | Development Integration: with different typograp
               Zero value
             </div>
             <div>
-              -
+              <span
+                className="Development__StyledDevelopment-sc-193bgbs-0 gxeMWL"
+                value={0}
+              >
+                
+                0
+              </span>
             </div>
           </div>
           <div
@@ -18051,9 +18817,8 @@ exports[`Storyshots Molecules | Development Integration: with different typograp
                 className="Development__StyledDevelopment-sc-193bgbs-0 eiIldu"
                 value={-2.1}
               >
-                ▼
-                -2
-                %
+                
+                -2.1
               </span>
             </div>
           </div>
@@ -18093,10 +18858,8 @@ exports[`Storyshots Molecules | Development Integration: with different typograp
                 className="Development__StyledDevelopment-sc-193bgbs-0 yrYQb"
                 value={5.4}
               >
-                ▲
                 +
-                5
-                %
+                5.4
               </span>
             </div>
           </div>
@@ -18110,7 +18873,13 @@ exports[`Storyshots Molecules | Development Integration: with different typograp
               Zero value
             </div>
             <div>
-              -
+              <span
+                className="Development__StyledDevelopment-sc-193bgbs-0 gxeMWL"
+                value={0}
+              >
+                
+                0
+              </span>
             </div>
           </div>
           <div
@@ -18127,9 +18896,8 @@ exports[`Storyshots Molecules | Development Integration: with different typograp
                 className="Development__StyledDevelopment-sc-193bgbs-0 eiIldu"
                 value={-2.1}
               >
-                ▼
-                -2
-                %
+                
+                -2.1
               </span>
             </div>
           </div>
@@ -18169,10 +18937,8 @@ exports[`Storyshots Molecules | Development Integration: with different typograp
                 className="Development__StyledDevelopment-sc-193bgbs-0 yrYQb"
                 value={5.4}
               >
-                ▲
                 +
-                5
-                %
+                5.4
               </span>
             </div>
           </div>
@@ -18186,7 +18952,13 @@ exports[`Storyshots Molecules | Development Integration: with different typograp
               Zero value
             </div>
             <div>
-              -
+              <span
+                className="Development__StyledDevelopment-sc-193bgbs-0 gxeMWL"
+                value={0}
+              >
+                
+                0
+              </span>
             </div>
           </div>
           <div
@@ -18203,9 +18975,8 @@ exports[`Storyshots Molecules | Development Integration: with different typograp
                 className="Development__StyledDevelopment-sc-193bgbs-0 eiIldu"
                 value={-2.1}
               >
-                ▼
-                -2
-                %
+                
+                -2.1
               </span>
             </div>
           </div>
@@ -18245,10 +19016,8 @@ exports[`Storyshots Molecules | Development Integration: with different typograp
                 className="Development__StyledDevelopment-sc-193bgbs-0 yrYQb"
                 value={5.4}
               >
-                ▲
                 +
-                5
-                %
+                5.4
               </span>
             </div>
           </div>
@@ -18262,7 +19031,13 @@ exports[`Storyshots Molecules | Development Integration: with different typograp
               Zero value
             </div>
             <div>
-              -
+              <span
+                className="Development__StyledDevelopment-sc-193bgbs-0 gxeMWL"
+                value={0}
+              >
+                
+                0
+              </span>
             </div>
           </div>
           <div
@@ -18279,9 +19054,8 @@ exports[`Storyshots Molecules | Development Integration: with different typograp
                 className="Development__StyledDevelopment-sc-193bgbs-0 eiIldu"
                 value={-2.1}
               >
-                ▼
-                -2
-                %
+                
+                -2.1
               </span>
             </div>
           </div>
@@ -18321,10 +19095,8 @@ exports[`Storyshots Molecules | Development Integration: with different typograp
                 className="Development__StyledDevelopment-sc-193bgbs-0 yrYQb"
                 value={5.4}
               >
-                ▲
                 +
-                5
-                %
+                5.4
               </span>
             </div>
           </div>
@@ -18338,7 +19110,13 @@ exports[`Storyshots Molecules | Development Integration: with different typograp
               Zero value
             </div>
             <div>
-              -
+              <span
+                className="Development__StyledDevelopment-sc-193bgbs-0 gxeMWL"
+                value={0}
+              >
+                
+                0
+              </span>
             </div>
           </div>
           <div
@@ -18355,9 +19133,8 @@ exports[`Storyshots Molecules | Development Integration: with different typograp
                 className="Development__StyledDevelopment-sc-193bgbs-0 eiIldu"
                 value={-2.1}
               >
-                ▼
-                -2
-                %
+                
+                -2.1
               </span>
             </div>
           </div>
@@ -18397,10 +19174,8 @@ exports[`Storyshots Molecules | Development Integration: with different typograp
                 className="Development__StyledDevelopment-sc-193bgbs-0 yrYQb"
                 value={5.4}
               >
-                ▲
                 +
-                5
-                %
+                5.4
               </span>
             </div>
           </div>
@@ -18414,7 +19189,13 @@ exports[`Storyshots Molecules | Development Integration: with different typograp
               Zero value
             </div>
             <div>
-              -
+              <span
+                className="Development__StyledDevelopment-sc-193bgbs-0 gxeMWL"
+                value={0}
+              >
+                
+                0
+              </span>
             </div>
           </div>
           <div
@@ -18431,9 +19212,8 @@ exports[`Storyshots Molecules | Development Integration: with different typograp
                 className="Development__StyledDevelopment-sc-193bgbs-0 eiIldu"
                 value={-2.1}
               >
-                ▼
-                -2
-                %
+                
+                -2.1
               </span>
             </div>
           </div>
@@ -18473,10 +19253,8 @@ exports[`Storyshots Molecules | Development Integration: with different typograp
                 className="Development__StyledDevelopment-sc-193bgbs-0 yrYQb"
                 value={5.4}
               >
-                ▲
                 +
-                5
-                %
+                5.4
               </span>
             </div>
           </div>
@@ -18490,7 +19268,13 @@ exports[`Storyshots Molecules | Development Integration: with different typograp
               Zero value
             </div>
             <div>
-              -
+              <span
+                className="Development__StyledDevelopment-sc-193bgbs-0 gxeMWL"
+                value={0}
+              >
+                
+                0
+              </span>
             </div>
           </div>
           <div
@@ -18507,9 +19291,8 @@ exports[`Storyshots Molecules | Development Integration: with different typograp
                 className="Development__StyledDevelopment-sc-193bgbs-0 eiIldu"
                 value={-2.1}
               >
-                ▼
-                -2
-                %
+                
+                -2.1
               </span>
             </div>
           </div>
@@ -18549,10 +19332,8 @@ exports[`Storyshots Molecules | Development Integration: with different typograp
                 className="Development__StyledDevelopment-sc-193bgbs-0 yrYQb"
                 value={5.4}
               >
-                ▲
                 +
-                5
-                %
+                5.4
               </span>
             </div>
           </div>
@@ -18566,7 +19347,13 @@ exports[`Storyshots Molecules | Development Integration: with different typograp
               Zero value
             </div>
             <div>
-              -
+              <span
+                className="Development__StyledDevelopment-sc-193bgbs-0 gxeMWL"
+                value={0}
+              >
+                
+                0
+              </span>
             </div>
           </div>
           <div
@@ -18583,9 +19370,8 @@ exports[`Storyshots Molecules | Development Integration: with different typograp
                 className="Development__StyledDevelopment-sc-193bgbs-0 eiIldu"
                 value={-2.1}
               >
-                ▼
-                -2
-                %
+                
+                -2.1
               </span>
             </div>
           </div>
@@ -18596,7 +19382,73 @@ exports[`Storyshots Molecules | Development Integration: with different typograp
 </div>
 `;
 
-exports[`Storyshots Molecules | Development Invalid value 1`] = `"-"`;
+exports[`Storyshots Molecules | Development With icon 1`] = `
+<div
+  className="Display__StyledFlexDiv-sc-1yo6rmg-0 fcTgTL"
+  direction="column"
+>
+  <div
+    className="Display__StyledFlexDiv-sc-1yo6rmg-0 hFANJJ"
+    direction="row"
+  >
+    <div
+      className="Display__DivWithBorder-sc-1yo6rmg-1 cmlFBm"
+    >
+      Positive value
+    </div>
+    <div>
+      <span
+        className="Development__StyledDevelopment-sc-193bgbs-0 yrYQb"
+        value={50}
+      >
+        ▲
+        +
+        50
+      </span>
+    </div>
+  </div>
+  <div
+    className="Display__StyledFlexDiv-sc-1yo6rmg-0 hFANJJ"
+    direction="row"
+  >
+    <div
+      className="Display__DivWithBorder-sc-1yo6rmg-1 cmlFBm"
+    >
+      Zero value
+    </div>
+    <div>
+      <span
+        className="Development__StyledDevelopment-sc-193bgbs-0 gxeMWL"
+        value={0}
+      >
+        
+        
+        0
+      </span>
+    </div>
+  </div>
+  <div
+    className="Display__StyledFlexDiv-sc-1yo6rmg-0 hFANJJ"
+    direction="row"
+  >
+    <div
+      className="Display__DivWithBorder-sc-1yo6rmg-1 cmlFBm"
+    >
+      Negative value
+    </div>
+    <div>
+      <span
+        className="Development__StyledDevelopment-sc-193bgbs-0 eiIldu"
+        value={-200}
+      >
+        ▼
+        
+        -200
+      </span>
+    </div>
+  </div>
+</div>
+`;
 
 exports[`Storyshots Molecules | LabeledValue Default 1`] = `
 <div
@@ -18638,8 +19490,7 @@ exports[`Storyshots Molecules | LabeledValue Integration: LabeledValue secondary
   >
     
     4,672,198
-     
-    SEK
+     SEK
   </span>
 </div>
 `;
@@ -18663,7 +19514,8 @@ exports[`Storyshots Molecules | LabeledValue Integration: LabeledValue title1 1`
     className="Typography__StyledTypography-sc-10mju41-0 iyoqVf"
     type="title1"
   >
-    4713119
+    
+    4,713,119
   </span>
 </div>
 `;
@@ -18699,7 +19551,8 @@ exports[`Storyshots Molecules | LabeledValue Integration: LabeledValue with nega
           value={-9.2}
         >
           ▼
-          -9
+          
+          -9.2
           %
         </span>
       </span>
@@ -18713,8 +19566,7 @@ exports[`Storyshots Molecules | LabeledValue Integration: LabeledValue with nega
       >
         
         -4,672,198
-         
-        SEK
+         SEK
       </span>
     </div>
   </div>
@@ -18753,7 +19605,7 @@ exports[`Storyshots Molecules | LabeledValue Integration: LabeledValue with posi
         >
           ▲
           +
-          9
+          9.2
           %
         </span>
       </span>
@@ -18767,8 +19619,7 @@ exports[`Storyshots Molecules | LabeledValue Integration: LabeledValue with posi
       >
         +
         4,672,198
-         
-        SEK
+         SEK
       </span>
     </div>
   </div>
@@ -19130,22 +19981,6 @@ exports[`Storyshots Molecules | ListWithTitles Integration: ListWithTitles with 
     </li>
   </ol>
 </div>
-`;
-
-exports[`Storyshots Molecules | Percent Invalid value 1`] = `"-"`;
-
-exports[`Storyshots Molecules | Percent Percent with 0 decimals  1`] = `
-Array [
-  "100",
-  "%",
-]
-`;
-
-exports[`Storyshots Molecules | Percent Percent with 2 decimals  1`] = `
-Array [
-  "10.00",
-  "%",
-]
 `;
 
 exports[`Storyshots Molecules | Tabs Default (extra space inside) 1`] = `
