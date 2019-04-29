@@ -1,3 +1,10 @@
+# [1.0.0-beta.30](https://github.com/nordnet/ui/compare/v1.0.0-beta.29@beta...v1.0.0-beta.30@beta) (2019-04-29)
+
+
+### Features
+
+* **Tr:** added classname as prop ([ab5e237](https://github.com/nordnet/ui/commit/ab5e237))
+
 # [1.0.0-beta.29](https://github.com/nordnet/ui/compare/v1.0.0-beta.28@beta...v1.0.0-beta.29@beta) (2019-04-29)
 
 
