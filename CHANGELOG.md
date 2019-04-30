@@ -1,3 +1,10 @@
+# [1.0.0-beta.32](https://github.com/nordnet/ui/compare/v1.0.0-beta.31@beta...v1.0.0-beta.32@beta) (2019-04-30)
+
+
+### Features
+
+* add pagewrapper component ([#114](https://github.com/nordnet/ui/issues/114)) ([7d97949](https://github.com/nordnet/ui/commit/7d97949))
+
 # [1.0.0-beta.31](https://github.com/nordnet/ui/compare/v1.0.0-beta.30@beta...v1.0.0-beta.31@beta) (2019-04-29)
 
 
