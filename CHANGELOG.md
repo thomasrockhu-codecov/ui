@@ -1,3 +1,10 @@
+# [1.0.0-beta.33](https://github.com/nordnet/ui/compare/v1.0.0-beta.32@beta...v1.0.0-beta.33@beta) (2019-04-30)
+
+
+### Features
+
+* **Number:** implement ticks ([#115](https://github.com/nordnet/ui/issues/115)) ([6ecb1c9](https://github.com/nordnet/ui/commit/6ecb1c9))
+
 # [1.0.0-beta.32](https://github.com/nordnet/ui/compare/v1.0.0-beta.31@beta...v1.0.0-beta.32@beta) (2019-04-30)
 
 
