@@ -1,3 +1,20 @@
+# [1.0.0-beta.36](https://github.com/nordnet/ui/compare/v1.0.0-beta.35@beta...v1.0.0-beta.36@beta) (2019-05-02)
+
+
+### Bug Fixes
+
+* 🐛 default css, passing classname ([6d66486](https://github.com/nordnet/ui/commit/6d66486))
+* make match as a prop ([df6d1c3](https://github.com/nordnet/ui/commit/df6d1c3))
+* match route exact ([3242110](https://github.com/nordnet/ui/commit/3242110))
+* name ([c3349c9](https://github.com/nordnet/ui/commit/c3349c9))
+
+
+### Features
+
+* 🎸 add a11y colors, deprecate gray5 ([66a9545](https://github.com/nordnet/ui/commit/66a9545))
+* add responsive spacing ([24bb195](https://github.com/nordnet/ui/commit/24bb195))
+* box component wip ([4deb7f3](https://github.com/nordnet/ui/commit/4deb7f3))
+
 # [1.0.0-beta.35](https://github.com/nordnet/ui/compare/v1.0.0-beta.34@beta...v1.0.0-beta.35@beta) (2019-05-02)
 
 
