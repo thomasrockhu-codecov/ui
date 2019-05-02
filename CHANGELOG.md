@@ -1,3 +1,16 @@
+# [1.0.0-beta.37](https://github.com/nordnet/ui/compare/v1.0.0-beta.36@beta...v1.0.0-beta.37@beta) (2019-05-02)
+
+
+### Bug Fixes
+
+* merge master ([f25f884](https://github.com/nordnet/ui/commit/f25f884))
+* move unit calculation ([2da311d](https://github.com/nordnet/ui/commit/2da311d))
+
+
+### Features
+
+* update typography styles and add line height ([fe5b71a](https://github.com/nordnet/ui/commit/fe5b71a))
+
 # [1.0.0-beta.36](https://github.com/nordnet/ui/compare/v1.0.0-beta.35@beta...v1.0.0-beta.36@beta) (2019-05-02)
 
 
