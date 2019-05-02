@@ -1,3 +1,15 @@
+# [1.0.0-beta.35](https://github.com/nordnet/ui/compare/v1.0.0-beta.34@beta...v1.0.0-beta.35@beta) (2019-05-02)
+
+
+### Bug Fixes
+
+* tabsnav ([c2a12ec](https://github.com/nordnet/ui/commit/c2a12ec))
+
+
+### Features
+
+* add globe icon ([dcfd875](https://github.com/nordnet/ui/commit/dcfd875))
+
 # [1.0.0-beta.34](https://github.com/nordnet/ui/compare/v1.0.0-beta.33@beta...v1.0.0-beta.34@beta) (2019-05-02)
 
 
