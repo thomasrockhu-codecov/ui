@@ -1,3 +1,10 @@
+# [1.0.0-beta.38](https://github.com/nordnet/ui/compare/v1.0.0-beta.37@beta...v1.0.0-beta.38@beta) (2019-05-03)
+
+
+### Bug Fixes
+
+* 🐛 box component string props ([b7c56e0](https://github.com/nordnet/ui/commit/b7c56e0))
+
 # [1.0.0-beta.37](https://github.com/nordnet/ui/compare/v1.0.0-beta.36@beta...v1.0.0-beta.37@beta) (2019-05-02)
 
 
