@@ -1,3 +1,15 @@
+# [1.0.0-beta.41](https://github.com/nordnet/ui/compare/v1.0.0-beta.40@beta...v1.0.0-beta.41@beta) (2019-05-03)
+
+
+### Bug Fixes
+
+* update docs ([f84ccb9](https://github.com/nordnet/ui/commit/f84ccb9))
+
+
+### Features
+
+* add className to Listitem ([9775007](https://github.com/nordnet/ui/commit/9775007))
+
 # [1.0.0-beta.40](https://github.com/nordnet/ui/compare/v1.0.0-beta.39@beta...v1.0.0-beta.40@beta) (2019-05-03)
 
 
