@@ -1,3 +1,15 @@
+# [1.0.0-beta.39](https://github.com/nordnet/ui/compare/v1.0.0-beta.38@beta...v1.0.0-beta.39@beta) (2019-05-03)
+
+
+### Bug Fixes
+
+* 🐛 unique ids for spinners ([b11d114](https://github.com/nordnet/ui/commit/b11d114))
+
+
+### BREAKING CHANGES
+
+* 🧨 All spinners now require a unique `id` prop.
+
 # [1.0.0-beta.38](https://github.com/nordnet/ui/compare/v1.0.0-beta.37@beta...v1.0.0-beta.38@beta) (2019-05-03)
 
 
