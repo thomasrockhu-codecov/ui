@@ -1,3 +1,18 @@
+# [1.0.0-beta.40](https://github.com/nordnet/ui/compare/v1.0.0-beta.39@beta...v1.0.0-beta.40@beta) (2019-05-03)
+
+
+### Bug Fixes
+
+* add breakpoints ([7d4c99d](https://github.com/nordnet/ui/commit/7d4c99d))
+* adjust todo message ([86fe269](https://github.com/nordnet/ui/commit/86fe269))
+* document props ([7713612](https://github.com/nordnet/ui/commit/7713612))
+* extend examples ([d13f897](https://github.com/nordnet/ui/commit/d13f897))
+
+
+### Features
+
+* add documentation ([c93addf](https://github.com/nordnet/ui/commit/c93addf))
+
 # [1.0.0-beta.39](https://github.com/nordnet/ui/compare/v1.0.0-beta.38@beta...v1.0.0-beta.39@beta) (2019-05-03)
 
 
