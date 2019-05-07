@@ -44,17 +44,6 @@ storiesOf('Theme', module)
         ))}
       </Tbody>
     </Table>
-    // <Display
-    //   items={Object.entries(theme.color).map(([title, color]) => ({
-    //     title,
-    //     component: (
-    //       <>
-    //         <Color color={color} />
-    //         <div>{color}</div>
-    //       </>
-    //     ),
-    //   }))}
-    // />
   )})
   .add('Colors (palette)', () => {
     return (
