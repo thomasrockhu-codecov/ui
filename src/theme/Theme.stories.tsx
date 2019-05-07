@@ -2,7 +2,7 @@ import { storiesOf } from '@storybook/react';
 import React from 'react';
 import styled from 'styled-components';
 import MD from 'react-markdown';
-import theme from '.';
+import theme, { createTheme } from '.';
 import { rawColor } from './theme';
 import colorDocs from './Colors.md';
 import { Display } from '../common/Display';
@@ -28,6 +28,22 @@ storiesOf('Theme', module)
       }))}
     />
   ))
+  .add('Colors (semantic a11y)', () => {
+    const a11yTheme = createTheme({ a11yColors: true });
+    return (
+      <Display
+        items={Object.entries(a11yTheme.color).map(([title, color]) => ({
+          title,
+          component: (
+            <>
+              <Color color={color} />
+              <div>{color}</div>
+            </>
+          ),
+        }))}
+      />
+    );
+  })
   .add('Colors (palette)', () => {
     return (
       <>

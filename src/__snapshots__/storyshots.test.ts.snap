@@ -21348,6 +21348,432 @@ Array [
 ]
 `;
 
+exports[`Storyshots Theme Colors (semantic a11y) 1`] = `
+<div
+  className="Display__StyledFlexDiv-sc-1yo6rmg-0 fcTgTL"
+  direction="column"
+>
+  <div
+    className="Display__StyledFlexDiv-sc-1yo6rmg-0 hFANJJ"
+    direction="row"
+  >
+    <div
+      className="Display__DivWithBorder-sc-1yo6rmg-1 cmlFBm"
+    >
+      background
+    </div>
+    <div>
+      <div
+        className="Themestories__Color-skwibd-0 dUSBgM"
+        color="#F5F5F5"
+      />
+      <div>
+        #F5F5F5
+      </div>
+    </div>
+  </div>
+  <div
+    className="Display__StyledFlexDiv-sc-1yo6rmg-0 hFANJJ"
+    direction="row"
+  >
+    <div
+      className="Display__DivWithBorder-sc-1yo6rmg-1 cmlFBm"
+    >
+      backgroundDark
+    </div>
+    <div>
+      <div
+        className="Themestories__Color-skwibd-0 kSpBvQ"
+        color="#282823"
+      />
+      <div>
+        #282823
+      </div>
+    </div>
+  </div>
+  <div
+    className="Display__StyledFlexDiv-sc-1yo6rmg-0 hFANJJ"
+    direction="row"
+  >
+    <div
+      className="Display__DivWithBorder-sc-1yo6rmg-1 cmlFBm"
+    >
+      buttonSecondaryBackground
+    </div>
+    <div>
+      <div
+        className="Themestories__Color-skwibd-0 hBnfLF"
+        color="#FFFFFF"
+      />
+      <div>
+        #FFFFFF
+      </div>
+    </div>
+  </div>
+  <div
+    className="Display__StyledFlexDiv-sc-1yo6rmg-0 hFANJJ"
+    direction="row"
+  >
+    <div
+      className="Display__DivWithBorder-sc-1yo6rmg-1 cmlFBm"
+    >
+      buttonText
+    </div>
+    <div>
+      <div
+        className="Themestories__Color-skwibd-0 hBnfLF"
+        color="#FFFFFF"
+      />
+      <div>
+        #FFFFFF
+      </div>
+    </div>
+  </div>
+  <div
+    className="Display__StyledFlexDiv-sc-1yo6rmg-0 hFANJJ"
+    direction="row"
+  >
+    <div
+      className="Display__DivWithBorder-sc-1yo6rmg-1 cmlFBm"
+    >
+      buy
+    </div>
+    <div>
+      <div
+        className="Themestories__Color-skwibd-0 cUGlUC"
+        color="#2D67FF"
+      />
+      <div>
+        #2D67FF
+      </div>
+    </div>
+  </div>
+  <div
+    className="Display__StyledFlexDiv-sc-1yo6rmg-0 hFANJJ"
+    direction="row"
+  >
+    <div
+      className="Display__DivWithBorder-sc-1yo6rmg-1 cmlFBm"
+    >
+      borderActive
+    </div>
+    <div>
+      <div
+        className="Themestories__Color-skwibd-0 cUGlUC"
+        color="#2D67FF"
+      />
+      <div>
+        #2D67FF
+      </div>
+    </div>
+  </div>
+  <div
+    className="Display__StyledFlexDiv-sc-1yo6rmg-0 hFANJJ"
+    direction="row"
+  >
+    <div
+      className="Display__DivWithBorder-sc-1yo6rmg-1 cmlFBm"
+    >
+      card
+    </div>
+    <div>
+      <div
+        className="Themestories__Color-skwibd-0 hBnfLF"
+        color="#FFFFFF"
+      />
+      <div>
+        #FFFFFF
+      </div>
+    </div>
+  </div>
+  <div
+    className="Display__StyledFlexDiv-sc-1yo6rmg-0 hFANJJ"
+    direction="row"
+  >
+    <div
+      className="Display__DivWithBorder-sc-1yo6rmg-1 cmlFBm"
+    >
+      cta
+    </div>
+    <div>
+      <div
+        className="Themestories__Color-skwibd-0 cUGlUC"
+        color="#2D67FF"
+      />
+      <div>
+        #2D67FF
+      </div>
+    </div>
+  </div>
+  <div
+    className="Display__StyledFlexDiv-sc-1yo6rmg-0 hFANJJ"
+    direction="row"
+  >
+    <div
+      className="Display__DivWithBorder-sc-1yo6rmg-1 cmlFBm"
+    >
+      disabled
+    </div>
+    <div>
+      <div
+        className="Themestories__Color-skwibd-0 kMjKh"
+        color="#A0A09B"
+      />
+      <div>
+        #A0A09B
+      </div>
+    </div>
+  </div>
+  <div
+    className="Display__StyledFlexDiv-sc-1yo6rmg-0 hFANJJ"
+    direction="row"
+  >
+    <div
+      className="Display__DivWithBorder-sc-1yo6rmg-1 cmlFBm"
+    >
+      divider
+    </div>
+    <div>
+      <div
+        className="Themestories__Color-skwibd-0 dsXKsO"
+        color="#EBEBE8"
+      />
+      <div>
+        #EBEBE8
+      </div>
+    </div>
+  </div>
+  <div
+    className="Display__StyledFlexDiv-sc-1yo6rmg-0 hFANJJ"
+    direction="row"
+  >
+    <div
+      className="Display__DivWithBorder-sc-1yo6rmg-1 cmlFBm"
+    >
+      label
+    </div>
+    <div>
+      <div
+        className="Themestories__Color-skwibd-0 lkTHRk"
+        color="#6E6E69"
+      />
+      <div>
+        #6E6E69
+      </div>
+    </div>
+  </div>
+  <div
+    className="Display__StyledFlexDiv-sc-1yo6rmg-0 hFANJJ"
+    direction="row"
+  >
+    <div
+      className="Display__DivWithBorder-sc-1yo6rmg-1 cmlFBm"
+    >
+      module
+    </div>
+    <div>
+      <div
+        className="Themestories__Color-skwibd-0 hBnfLF"
+        color="#FFFFFF"
+      />
+      <div>
+        #FFFFFF
+      </div>
+    </div>
+  </div>
+  <div
+    className="Display__StyledFlexDiv-sc-1yo6rmg-0 hFANJJ"
+    direction="row"
+  >
+    <div
+      className="Display__DivWithBorder-sc-1yo6rmg-1 cmlFBm"
+    >
+      negative
+    </div>
+    <div>
+      <div
+        className="Themestories__Color-skwibd-0 fxpGBF"
+        color="#E81700"
+      />
+      <div>
+        #E81700
+      </div>
+    </div>
+  </div>
+  <div
+    className="Display__StyledFlexDiv-sc-1yo6rmg-0 hFANJJ"
+    direction="row"
+  >
+    <div
+      className="Display__DivWithBorder-sc-1yo6rmg-1 cmlFBm"
+    >
+      positive
+    </div>
+    <div>
+      <div
+        className="Themestories__Color-skwibd-0 UwSSf"
+        color="#008A00"
+      />
+      <div>
+        #008A00
+      </div>
+    </div>
+  </div>
+  <div
+    className="Display__StyledFlexDiv-sc-1yo6rmg-0 hFANJJ"
+    direction="row"
+  >
+    <div
+      className="Display__DivWithBorder-sc-1yo6rmg-1 cmlFBm"
+    >
+      sell
+    </div>
+    <div>
+      <div
+        className="Themestories__Color-skwibd-0 fxpGBF"
+        color="#E81700"
+      />
+      <div>
+        #E81700
+      </div>
+    </div>
+  </div>
+  <div
+    className="Display__StyledFlexDiv-sc-1yo6rmg-0 hFANJJ"
+    direction="row"
+  >
+    <div
+      className="Display__DivWithBorder-sc-1yo6rmg-1 cmlFBm"
+    >
+      spinnerBlack
+    </div>
+    <div>
+      <div
+        className="Themestories__Color-skwibd-0 ieWnBj"
+        color="#000000"
+      />
+      <div>
+        #000000
+      </div>
+    </div>
+  </div>
+  <div
+    className="Display__StyledFlexDiv-sc-1yo6rmg-0 hFANJJ"
+    direction="row"
+  >
+    <div
+      className="Display__DivWithBorder-sc-1yo6rmg-1 cmlFBm"
+    >
+      spinnerWhite
+    </div>
+    <div>
+      <div
+        className="Themestories__Color-skwibd-0 hBnfLF"
+        color="#FFFFFF"
+      />
+      <div>
+        #FFFFFF
+      </div>
+    </div>
+  </div>
+  <div
+    className="Display__StyledFlexDiv-sc-1yo6rmg-0 hFANJJ"
+    direction="row"
+  >
+    <div
+      className="Display__DivWithBorder-sc-1yo6rmg-1 cmlFBm"
+    >
+      text
+    </div>
+    <div>
+      <div
+        className="Themestories__Color-skwibd-0 kSpBvQ"
+        color="#282823"
+      />
+      <div>
+        #282823
+      </div>
+    </div>
+  </div>
+  <div
+    className="Display__StyledFlexDiv-sc-1yo6rmg-0 hFANJJ"
+    direction="row"
+  >
+    <div
+      className="Display__DivWithBorder-sc-1yo6rmg-1 cmlFBm"
+    >
+      textLight
+    </div>
+    <div>
+      <div
+        className="Themestories__Color-skwibd-0 hBnfLF"
+        color="#FFFFFF"
+      />
+      <div>
+        #FFFFFF
+      </div>
+    </div>
+  </div>
+  <div
+    className="Display__StyledFlexDiv-sc-1yo6rmg-0 hFANJJ"
+    direction="row"
+  >
+    <div
+      className="Display__DivWithBorder-sc-1yo6rmg-1 cmlFBm"
+    >
+      warning
+    </div>
+    <div>
+      <div
+        className="Themestories__Color-skwibd-0 cRhANN"
+        color="#C15700"
+      />
+      <div>
+        #C15700
+      </div>
+    </div>
+  </div>
+  <div
+    className="Display__StyledFlexDiv-sc-1yo6rmg-0 hFANJJ"
+    direction="row"
+  >
+    <div
+      className="Display__DivWithBorder-sc-1yo6rmg-1 cmlFBm"
+    >
+      inputBorder
+    </div>
+    <div>
+      <div
+        className="Themestories__Color-skwibd-0 gTPmLe"
+        color="#BCBCB6"
+      />
+      <div>
+        #BCBCB6
+      </div>
+    </div>
+  </div>
+  <div
+    className="Display__StyledFlexDiv-sc-1yo6rmg-0 hFANJJ"
+    direction="row"
+  >
+    <div
+      className="Display__DivWithBorder-sc-1yo6rmg-1 cmlFBm"
+    >
+      inputBorderHover
+    </div>
+    <div>
+      <div
+        className="Themestories__Color-skwibd-0 kwZsJL"
+        color="#4B4B46"
+      />
+      <div>
+        #4B4B46
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
 exports[`Storyshots Theme Colors (semantic) 1`] = `
 <div
   className="Display__StyledFlexDiv-sc-1yo6rmg-0 fcTgTL"

@@ -1,6 +1,8 @@
 type MediaQuery = string;
 /** Number of pixels */
-export type ThemeConfig = {};
+export type ThemeConfig = {
+  a11yColors?: boolean;
+};
 type Unit = {
   (times: number): number;
   toString: () => string;
@@ -60,21 +62,21 @@ export type Theme = {
     /** gray2 */
     label: RawColor['gray2'];
     /** cta */
-    buy: RawColor['cta'];
+    buy: RawColor['cta'] | RawColor['a11yCta'];
     /** white */
     buttonText: RawColor['white'];
     /** cta */
-    borderActive: RawColor['cta'];
+    borderActive: RawColor['cta'] | RawColor['a11yCta'];
     /** negative */
-    sell: RawColor['negative'];
+    sell: RawColor['negative'] | RawColor['a11yNegative'];
     /** cta */
-    cta: RawColor['cta'];
+    cta: RawColor['cta'] | RawColor['a11yCta'];
     /** positive */
-    positive: RawColor['positive'];
+    positive: RawColor['positive'] | RawColor['a11yPositive'];
     /** negative */
-    negative: RawColor['negative'];
+    negative: RawColor['negative'] | RawColor['a11yNegative'];
     /** index */
-    warning: RawColor['index'];
+    warning: RawColor['index'] | RawColor['a11yIndex'];
     /** white */
     card: RawColor['white'];
     /** gray6 */
