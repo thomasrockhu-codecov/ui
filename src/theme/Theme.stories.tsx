@@ -2,7 +2,7 @@ import { storiesOf } from '@storybook/react';
 import React from 'react';
 import styled from 'styled-components';
 import MD from 'react-markdown';
-import theme, { createTheme } from '.';
+import { theme, createTheme } from '..';
 import { rawColor } from './theme';
 import colorDocs from './Colors.md';
 import { Display } from '../common/Display';

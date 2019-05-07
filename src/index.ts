@@ -33,9 +33,10 @@ import TabsNav from './Molecules/TabsNav';
 /** Organisms */
 import CardWithTabs from './Organisms/CardWithTabs';
 
-import theme from './theme';
+import theme, { createTheme } from './theme';
 /** Runtime code */
 export {
+  createTheme,
   Avatar,
   Button,
   Card,
