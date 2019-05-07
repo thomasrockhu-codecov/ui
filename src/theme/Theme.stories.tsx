@@ -2,7 +2,7 @@ import { storiesOf } from '@storybook/react';
 import React from 'react';
 import styled from 'styled-components';
 import MD from 'react-markdown';
-import { theme, createTheme } from '..';
+import { theme, createTheme, Table, Thead, Tbody, Th, Tr, Td } from '..';
 import { rawColor } from './theme';
 import colorDocs from './Colors.md';
 import { Display } from '../common/Display';
@@ -12,38 +12,50 @@ const Color = styled.div`
   height: ${p => p.theme.spacing.unit(14)}px;
   background-color: ${p => p.color};
   border: 1px solid #eee;
+  display:
 `;
+
+const ColorWithValue: React.FC<{ color: string}> = ({ color }) => (
+  <>
+    <Color color={color} />
+    <div>{color}</div>
+  </>
+)
 storiesOf('Theme', module)
   .add('Documentation', () => <MD source={colorDocs} />)
-  .add('Colors (semantic)', () => (
-    <Display
-      items={Object.entries(theme.color).map(([title, color]) => ({
-        title,
-        component: (
-          <>
-            <Color color={color} />
-            <div>{color}</div>
-          </>
-        ),
-      }))}
-    />
-  ))
-  .add('Colors (semantic a11y)', () => {
+  .add('Colors (semantic)', () => { 
     const a11yTheme = createTheme({ a11yColors: true });
     return (
-      <Display
-        items={Object.entries(a11yTheme.color).map(([title, color]) => ({
-          title,
-          component: (
-            <>
-              <Color color={color} />
-              <div>{color}</div>
-            </>
-          ),
-        }))}
-      />
-    );
-  })
+    <Table>
+      <Thead>
+        <Tr>
+        <Th>Name</Th>
+        <Th>Default</Th>
+        <Th>A11y</Th>
+        </Tr>
+      </Thead>
+      <Tbody>
+        {Object.keys(theme.color).map(title => (
+          <Tr>
+            <Td>{title}</Td>
+            <Td><ColorWithValue color={theme.color[title]} /></Td>
+            <Td><ColorWithValue color={a11yTheme.color[title]} /></Td>
+          </Tr>
+        ))}
+      </Tbody>
+    </Table>
+    // <Display
+    //   items={Object.entries(theme.color).map(([title, color]) => ({
+    //     title,
+    //     component: (
+    //       <>
+    //         <Color color={color} />
+    //         <div>{color}</div>
+    //       </>
+    //     ),
+    //   }))}
+    // />
+  )})
   .add('Colors (palette)', () => {
     return (
       <>
