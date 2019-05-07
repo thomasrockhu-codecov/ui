@@ -4489,7 +4489,6 @@ exports[`Storyshots Atoms | Spinner Regression: 2 spinners with same color and s
       Only the one with green border should be shown. The bug before was that if two spinners had the same size and color, both were hidden.
     </span>
   </div>
-   
   <div
     style={
       Object {
@@ -4498,7 +4497,6 @@ exports[`Storyshots Atoms | Spinner Regression: 2 spinners with same color and s
       }
     }
   >
-     
     <span
       className="c1"
     >
@@ -4561,9 +4559,7 @@ exports[`Storyshots Atoms | Spinner Regression: 2 spinners with same color and s
         </g>
       </svg>
     </span>
-     
   </div>
-   
   <div
     style={
       Object {
@@ -4571,7 +4567,6 @@ exports[`Storyshots Atoms | Spinner Regression: 2 spinners with same color and s
       }
     }
   >
-     
     <span
       className="c1"
     >
@@ -4634,9 +4629,7 @@ exports[`Storyshots Atoms | Spinner Regression: 2 spinners with same color and s
         </g>
       </svg>
     </span>
-     
   </div>
-   
 </div>
 `;
 
@@ -19867,7 +19860,11 @@ exports[`Storyshots Atoms | Table Integration: Table with Typography and ellipsi
 
 exports[`Storyshots Atoms | Time Invalid value 1`] = `"-"`;
 
-exports[`Storyshots Atoms | Time Time  1`] = `"23:53:44"`;
+exports[`Storyshots Atoms | Time Time  1`] = `
+<time>
+  23:53:44
+</time>
+`;
 
 exports[`Storyshots Atoms | Time Uses custom symbol for invalid value 1`] = `"X"`;
 
