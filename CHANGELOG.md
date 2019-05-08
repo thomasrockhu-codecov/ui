@@ -1,3 +1,10 @@
+# [1.0.0-beta.47](https://github.com/nordnet/ui/compare/v1.0.0-beta.46@beta...v1.0.0-beta.47@beta) (2019-05-08)
+
+
+### Bug Fixes
+
+* horizontal padding adjustment ([56d338d](https://github.com/nordnet/ui/commit/56d338d))
+
 # [1.0.0-beta.46](https://github.com/nordnet/ui/compare/v1.0.0-beta.45@beta...v1.0.0-beta.46@beta) (2019-05-08)
 
 
