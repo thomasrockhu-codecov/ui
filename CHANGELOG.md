@@ -1,3 +1,16 @@
+# [1.0.0-beta.44](https://github.com/nordnet/ui/compare/v1.0.0-beta.43@beta...v1.0.0-beta.44@beta) (2019-05-08)
+
+
+### Bug Fixes
+
+* export createTheme in root ([702fba1](https://github.com/nordnet/ui/commit/702fba1))
+* types ([b8b5338](https://github.com/nordnet/ui/commit/b8b5338))
+
+
+### Features
+
+* add a11yColors option ([b2d680c](https://github.com/nordnet/ui/commit/b2d680c))
+
 # [1.0.0-beta.43](https://github.com/nordnet/ui/compare/v1.0.0-beta.42@beta...v1.0.0-beta.43@beta) (2019-05-08)
 
 
