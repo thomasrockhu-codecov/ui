@@ -1,3 +1,10 @@
+# [1.0.0-beta.45](https://github.com/nordnet/ui/compare/v1.0.0-beta.44@beta...v1.0.0-beta.45@beta) (2019-05-08)
+
+
+### Bug Fixes
+
+* 🐛 snapshots, remove theme toggle for now ([306b27c](https://github.com/nordnet/ui/commit/306b27c))
+
 # [1.0.0-beta.44](https://github.com/nordnet/ui/compare/v1.0.0-beta.43@beta...v1.0.0-beta.44@beta) (2019-05-08)
 
 
