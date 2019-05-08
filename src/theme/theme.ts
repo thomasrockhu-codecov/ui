@@ -46,7 +46,8 @@ export const rawColor = {
 } as RawColor;
 
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
-export const createTheme = (config?: ThemeConfig): Theme => {
+export const createTheme = (config: ThemeConfig = {}): Theme => {
+  const { a11yColors = false } = config;
   const size: Theme['size'] = {
     xs: 360,
     sm: 768,
@@ -78,22 +79,22 @@ export const createTheme = (config?: ThemeConfig): Theme => {
       backgroundDark: rawColor.gray0,
       buttonSecondaryBackground: rawColor.white,
       buttonText: rawColor.white,
-      buy: rawColor.cta,
-      borderActive: rawColor.cta,
+      buy: a11yColors ? rawColor.a11yCta : rawColor.cta,
+      borderActive: a11yColors ? rawColor.a11yCta : rawColor.cta,
       card: rawColor.white,
-      cta: rawColor.cta,
+      cta: a11yColors ? rawColor.a11yCta : rawColor.cta,
       disabled: rawColor.gray3,
       divider: rawColor.gray6,
       label: rawColor.gray2,
       module: rawColor.white,
-      negative: rawColor.negative,
-      positive: rawColor.positive,
-      sell: rawColor.negative,
+      negative: a11yColors ? rawColor.a11yNegative : rawColor.negative,
+      positive: a11yColors ? rawColor.a11yPositive : rawColor.positive,
+      sell: a11yColors ? rawColor.a11yNegative : rawColor.negative,
       spinnerBlack: rawColor.black,
       spinnerWhite: rawColor.white,
       text: rawColor.gray0,
       textLight: rawColor.white, // FIXME: to be removed later
-      warning: rawColor.index,
+      warning: a11yColors ? rawColor.a11yIndex : rawColor.index,
       inputBorder: rawColor.gray4,
       inputBorderHover: rawColor.gray1,
       flagBorder: rawColor.gray6,
