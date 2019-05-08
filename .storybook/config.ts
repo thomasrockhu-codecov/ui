@@ -1,7 +1,7 @@
 import { configure, addDecorator } from '@storybook/react';
 import { withA11y } from '@storybook/addon-a11y';
-import { ThemeDecorator } from './ThemeDecorator';
 import { setIntlConfig, withIntl } from 'storybook-addon-intl';
+import { withThemesProvider } from 'storybook-addon-styled-component-theme';
 // Load the locale data for all your defined locales
 import { addLocaleData } from 'react-intl';
 import enLocaleData from 'react-intl/locale-data/en';
@@ -10,6 +10,7 @@ import noLocaleData from 'react-intl/locale-data/no';
 import daLocaleData from 'react-intl/locale-data/da';
 import fiLocaleData from 'react-intl/locale-data/fi';
 
+import { createTheme } from '../src';
 addLocaleData(enLocaleData);
 addLocaleData(svLocaleData);
 addLocaleData(noLocaleData);
@@ -25,7 +26,17 @@ function loadStories() {
 
 addDecorator(withA11y);
 
-addDecorator(ThemeDecorator);
+const light = {
+  ...createTheme(),
+  name: 'light',
+};
+const lightA11y = {
+  ...createTheme({ a11yColors: true }),
+  name: 'light with a11y',
+};
+
+const themes = [light, lightA11y];
+addDecorator(withThemesProvider(themes));
 
 setIntlConfig({
   locales: ['sv', 'nb', 'da', 'fi', 'en'],
