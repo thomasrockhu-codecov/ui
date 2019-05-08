@@ -1,3 +1,13 @@
+# [1.0.0-beta.48](https://github.com/nordnet/ui/compare/v1.0.0-beta.47@beta...v1.0.0-beta.48@beta) (2019-05-08)
+
+
+### Bug Fixes
+
+* add best practice to avatar story ([45d1034](https://github.com/nordnet/ui/commit/45d1034))
+* merge beta ([937fe51](https://github.com/nordnet/ui/commit/937fe51))
+* merge beta ([37815e3](https://github.com/nordnet/ui/commit/37815e3))
+* minor fixes ([2d98dab](https://github.com/nordnet/ui/commit/2d98dab))
+
 # [1.0.0-beta.47](https://github.com/nordnet/ui/compare/v1.0.0-beta.46@beta...v1.0.0-beta.47@beta) (2019-05-08)
 
 
