@@ -4,7 +4,7 @@ import { Avatar } from '../..';
 
 storiesOf('Molecules | Avatar', module)
   .add('Basic usage', () => <Avatar>ASK</Avatar>)
-  .add('With element as children', () => (
+  .add('Best practice, with element as children', () => (
     <Avatar>
       <abbr title="Investeringssparkonto">ISK</abbr>
     </Avatar>
