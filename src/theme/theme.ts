@@ -97,6 +97,7 @@ export const createTheme = (config: ThemeConfig = {}): Theme => {
       warning: a11yColors ? rawColor.a11yIndex : rawColor.index,
       inputBorder: rawColor.gray4,
       inputBorderHover: rawColor.gray1,
+      flagBorder: rawColor.gray6,
     },
     media: {
       between: (s1, s2) => {

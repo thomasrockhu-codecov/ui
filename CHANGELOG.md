@@ -1,3 +1,22 @@
+# [1.0.0-beta.43](https://github.com/nordnet/ui/compare/v1.0.0-beta.42@beta...v1.0.0-beta.43@beta) (2019-05-08)
+
+
+### Bug Fixes
+
+* put time in time tag ([525caf3](https://github.com/nordnet/ui/commit/525caf3))
+
+
+### Features
+
+* 🎸 amazing storyshots!!! ([2a6ea8c](https://github.com/nordnet/ui/commit/2a6ea8c))
+
+# [1.0.0-beta.42](https://github.com/nordnet/ui/compare/v1.0.0-beta.41@beta...v1.0.0-beta.42@beta) (2019-05-07)
+
+
+### Features
+
+* 🎸 flag now have border ([6caf6b8](https://github.com/nordnet/ui/commit/6caf6b8))
+
 # [1.0.0-beta.41](https://github.com/nordnet/ui/compare/v1.0.0-beta.40@beta...v1.0.0-beta.41@beta) (2019-05-03)
 
 
