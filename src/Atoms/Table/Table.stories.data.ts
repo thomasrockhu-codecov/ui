@@ -1,4 +1,4 @@
-export const data = [
+export const data: [number, string, string, number, number, number][] = [
   [1, 'HM B', 'Hennes & Mauritz AB, H & M ser. B', 10, 271, -0.48],
   [2, 'ERIC B', 'Ericsson, Telefonab. L M ser. B', 10, 61.4, -0.73],
   [3, 'BOL A', 'Boliden AB', 10, 192.1, -0.16],
