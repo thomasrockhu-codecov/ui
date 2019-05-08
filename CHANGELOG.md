@@ -1,3 +1,12 @@
+# [1.0.0-beta.49](https://github.com/nordnet/ui/compare/v1.0.0-beta.48@beta...v1.0.0-beta.49@beta) (2019-05-08)
+
+
+### Bug Fixes
+
+* 🐛 fix inline baseline ([59fe9ff](https://github.com/nordnet/ui/commit/59fe9ff))
+* 🐛 ie11 flag ([0724f54](https://github.com/nordnet/ui/commit/0724f54))
+* 🐛 remove ie11 render fix for now ([a354255](https://github.com/nordnet/ui/commit/a354255))
+
 # [1.0.0-beta.48](https://github.com/nordnet/ui/compare/v1.0.0-beta.47@beta...v1.0.0-beta.48@beta) (2019-05-08)
 
 
