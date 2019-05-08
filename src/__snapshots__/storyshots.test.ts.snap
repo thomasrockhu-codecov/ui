@@ -2636,7 +2636,7 @@ Array [
   >
     I am only shown on screens smaller than medium size
   </div>,
-  @media not all and (min-width:992px) and (max-width:1440px) {
+  @media not all and (min-width:992px) and (max-width:1300px) {
   .c0 {
     display: none;
   }
@@ -2647,7 +2647,7 @@ Array [
   >
     I am only shown between medium and large sizes
   </div>,
-  @media not all and (min-width:1440px) {
+  @media not all and (min-width:1300px) {
   .c0 {
     display: none;
   }
@@ -26226,9 +26226,9 @@ exports[`Storyshots Molecules | PageWrapper PageWrapper 1`] = `
   }
 }
 
-@media (min-width:1440px) {
+@media (min-width:1300px) {
   .c0 {
-    max-width: 1390px;
+    max-width: 1250px;
   }
 }
 
@@ -26301,9 +26301,9 @@ exports[`Storyshots Molecules | PageWrapper PageWrapper with a custom background
   }
 }
 
-@media (min-width:1440px) {
+@media (min-width:1300px) {
   .c1 {
-    max-width: 1390px;
+    max-width: 1250px;
   }
 }
 
@@ -28950,22 +28950,7 @@ exports[`Storyshots Theme Screen sizes 1`] = `
     </div>
     <div>
       <pre>
-        1440
-      </pre>
-    </div>
-  </div>
-  <div
-    className="c1"
-    direction="row"
-  >
-    <div
-      className="c2"
-    >
-      xl
-    </div>
-    <div>
-      <pre>
-        1680
+        1300
       </pre>
     </div>
   </div>
