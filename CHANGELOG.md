@@ -1,3 +1,10 @@
+# [1.0.0-beta.52](https://github.com/nordnet/ui/compare/v1.0.0-beta.51@beta...v1.0.0-beta.52@beta) (2019-05-09)
+
+
+### Features
+
+* 🎸 awesome splitted snapshots ([e871972](https://github.com/nordnet/ui/commit/e871972))
+
 # [1.0.0-beta.51](https://github.com/nordnet/ui/compare/v1.0.0-beta.50@beta...v1.0.0-beta.51@beta) (2019-05-09)
 
 
