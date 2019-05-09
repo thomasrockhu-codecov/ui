@@ -1,3 +1,10 @@
+# [1.0.0-beta.50](https://github.com/nordnet/ui/compare/v1.0.0-beta.49@beta...v1.0.0-beta.50@beta) (2019-05-09)
+
+
+### Bug Fixes
+
+* temporarily move back to old grid values ([c9c08f3](https://github.com/nordnet/ui/commit/c9c08f3))
+
 # [1.0.0-beta.49](https://github.com/nordnet/ui/compare/v1.0.0-beta.48@beta...v1.0.0-beta.49@beta) (2019-05-08)
 
 
