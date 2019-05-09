@@ -1,3 +1,10 @@
+# [1.0.0-beta.51](https://github.com/nordnet/ui/compare/v1.0.0-beta.50@beta...v1.0.0-beta.51@beta) (2019-05-09)
+
+
+### Features
+
+* add rel prop to links ([026b8ba](https://github.com/nordnet/ui/commit/026b8ba))
+
 # [1.0.0-beta.50](https://github.com/nordnet/ui/compare/v1.0.0-beta.49@beta...v1.0.0-beta.50@beta) (2019-05-09)
 
 
