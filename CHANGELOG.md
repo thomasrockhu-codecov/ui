@@ -1,3 +1,10 @@
+# [1.0.0-beta.53](https://github.com/nordnet/ui/compare/v1.0.0-beta.52@beta...v1.0.0-beta.53@beta) (2019-05-10)
+
+
+### Features
+
+* add documentation ([9746177](https://github.com/nordnet/ui/commit/9746177))
+
 # [1.0.0-beta.52](https://github.com/nordnet/ui/compare/v1.0.0-beta.51@beta...v1.0.0-beta.52@beta) (2019-05-09)
 
 
