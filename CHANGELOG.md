@@ -1,3 +1,18 @@
+# [1.0.0-beta.54](https://github.com/nordnet/ui/compare/v1.0.0-beta.53@beta...v1.0.0-beta.54@beta) (2019-05-10)
+
+
+### Bug Fixes
+
+* margin no longer overflows ([3ac5107](https://github.com/nordnet/ui/commit/3ac5107))
+* replace svgs ([432cf04](https://github.com/nordnet/ui/commit/432cf04))
+* update snap ([36aa8f4](https://github.com/nordnet/ui/commit/36aa8f4))
+
+
+### Features
+
+* add new sorting icons Closes issues: TP-7418 ([05bb938](https://github.com/nordnet/ui/commit/05bb938))
+* add new sorting icons Closes issues: TP-7418 ([fc4d74d](https://github.com/nordnet/ui/commit/fc4d74d))
+
 # [1.0.0-beta.53](https://github.com/nordnet/ui/compare/v1.0.0-beta.52@beta...v1.0.0-beta.53@beta) (2019-05-10)
 
 
