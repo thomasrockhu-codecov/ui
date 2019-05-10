@@ -1,3 +1,10 @@
+# [1.0.0-beta.55](https://github.com/nordnet/ui/compare/v1.0.0-beta.54@beta...v1.0.0-beta.55@beta) (2019-05-10)
+
+
+### Bug Fixes
+
+* media max-width issue ([79228b8](https://github.com/nordnet/ui/commit/79228b8))
+
 # [1.0.0-beta.54](https://github.com/nordnet/ui/compare/v1.0.0-beta.53@beta...v1.0.0-beta.54@beta) (2019-05-10)
 
 
