@@ -1,3 +1,10 @@
+# [1.0.0-beta.58](https://github.com/nordnet/ui/compare/v1.0.0-beta.57@beta...v1.0.0-beta.58@beta) (2019-05-13)
+
+
+### Bug Fixes
+
+* tighten outer padding ([e55548d](https://github.com/nordnet/ui/commit/e55548d))
+
 # [1.0.0-beta.57](https://github.com/nordnet/ui/compare/v1.0.0-beta.56@beta...v1.0.0-beta.57@beta) (2019-05-13)
 
 
