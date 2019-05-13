@@ -3,8 +3,8 @@ import React from 'react';
 import { Tabs, CardWithTitle } from '../..';
 import { Component } from './CardWithTabs.types';
 
-const CardWithTabs: Component = ({ title, children, initialActiveTabIndex }) => (
-  <CardWithTitle title={title}>
+const CardWithTabs: Component = ({ children, initialActiveTabIndex, ...rest }) => (
+  <CardWithTitle {...rest}>
     <Tabs initialActiveTabIndex={initialActiveTabIndex}>{children}</Tabs>
   </CardWithTitle>
 );
