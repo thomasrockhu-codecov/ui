@@ -1,3 +1,138 @@
+# [1.0.0-beta.56](https://github.com/nordnet/ui/compare/v1.0.0-beta.55@beta...v1.0.0-beta.56@beta) (2019-05-13)
+
+
+### Features
+
+* 🎸 add initialActiveIndex on CardWithTabs ([b9e8f9d](https://github.com/nordnet/ui/commit/b9e8f9d))
+
+
+### BREAKING CHANGES
+
+* 🧨 initialActiveId is now correctly initialActiveIndex on Tabs.
+
+# [1.0.0-beta.55](https://github.com/nordnet/ui/compare/v1.0.0-beta.54@beta...v1.0.0-beta.55@beta) (2019-05-10)
+
+
+### Bug Fixes
+
+* media max-width issue ([79228b8](https://github.com/nordnet/ui/commit/79228b8))
+
+# [1.0.0-beta.54](https://github.com/nordnet/ui/compare/v1.0.0-beta.53@beta...v1.0.0-beta.54@beta) (2019-05-10)
+
+
+### Bug Fixes
+
+* margin no longer overflows ([3ac5107](https://github.com/nordnet/ui/commit/3ac5107))
+* replace svgs ([432cf04](https://github.com/nordnet/ui/commit/432cf04))
+* update snap ([36aa8f4](https://github.com/nordnet/ui/commit/36aa8f4))
+
+
+### Features
+
+* add new sorting icons Closes issues: TP-7418 ([05bb938](https://github.com/nordnet/ui/commit/05bb938))
+* add new sorting icons Closes issues: TP-7418 ([fc4d74d](https://github.com/nordnet/ui/commit/fc4d74d))
+
+# [1.0.0-beta.53](https://github.com/nordnet/ui/compare/v1.0.0-beta.52@beta...v1.0.0-beta.53@beta) (2019-05-10)
+
+
+### Features
+
+* add documentation ([9746177](https://github.com/nordnet/ui/commit/9746177))
+
+# [1.0.0-beta.52](https://github.com/nordnet/ui/compare/v1.0.0-beta.51@beta...v1.0.0-beta.52@beta) (2019-05-09)
+
+
+### Features
+
+* 🎸 awesome splitted snapshots ([e871972](https://github.com/nordnet/ui/commit/e871972))
+
+# [1.0.0-beta.51](https://github.com/nordnet/ui/compare/v1.0.0-beta.50@beta...v1.0.0-beta.51@beta) (2019-05-09)
+
+
+### Features
+
+* add rel prop to links ([026b8ba](https://github.com/nordnet/ui/commit/026b8ba))
+
+# [1.0.0-beta.50](https://github.com/nordnet/ui/compare/v1.0.0-beta.49@beta...v1.0.0-beta.50@beta) (2019-05-09)
+
+
+### Bug Fixes
+
+* temporarily move back to old grid values ([c9c08f3](https://github.com/nordnet/ui/commit/c9c08f3))
+
+# [1.0.0-beta.49](https://github.com/nordnet/ui/compare/v1.0.0-beta.48@beta...v1.0.0-beta.49@beta) (2019-05-08)
+
+
+### Bug Fixes
+
+* 🐛 fix inline baseline ([59fe9ff](https://github.com/nordnet/ui/commit/59fe9ff))
+* 🐛 ie11 flag ([0724f54](https://github.com/nordnet/ui/commit/0724f54))
+* 🐛 remove ie11 render fix for now ([a354255](https://github.com/nordnet/ui/commit/a354255))
+
+# [1.0.0-beta.48](https://github.com/nordnet/ui/compare/v1.0.0-beta.47@beta...v1.0.0-beta.48@beta) (2019-05-08)
+
+
+### Bug Fixes
+
+* add best practice to avatar story ([45d1034](https://github.com/nordnet/ui/commit/45d1034))
+* merge beta ([937fe51](https://github.com/nordnet/ui/commit/937fe51))
+* merge beta ([37815e3](https://github.com/nordnet/ui/commit/37815e3))
+* minor fixes ([2d98dab](https://github.com/nordnet/ui/commit/2d98dab))
+
+# [1.0.0-beta.47](https://github.com/nordnet/ui/compare/v1.0.0-beta.46@beta...v1.0.0-beta.47@beta) (2019-05-08)
+
+
+### Bug Fixes
+
+* horizontal padding adjustment ([56d338d](https://github.com/nordnet/ui/commit/56d338d))
+
+# [1.0.0-beta.46](https://github.com/nordnet/ui/compare/v1.0.0-beta.45@beta...v1.0.0-beta.46@beta) (2019-05-08)
+
+
+### Features
+
+* 🎸 add inline prop in contracts for flag and icon ([3539c8b](https://github.com/nordnet/ui/commit/3539c8b))
+* 🎸 inline prop implementation ([8cc75e6](https://github.com/nordnet/ui/commit/8cc75e6))
+
+# [1.0.0-beta.45](https://github.com/nordnet/ui/compare/v1.0.0-beta.44@beta...v1.0.0-beta.45@beta) (2019-05-08)
+
+
+### Bug Fixes
+
+* 🐛 snapshots, remove theme toggle for now ([306b27c](https://github.com/nordnet/ui/commit/306b27c))
+
+# [1.0.0-beta.44](https://github.com/nordnet/ui/compare/v1.0.0-beta.43@beta...v1.0.0-beta.44@beta) (2019-05-08)
+
+
+### Bug Fixes
+
+* export createTheme in root ([702fba1](https://github.com/nordnet/ui/commit/702fba1))
+* types ([b8b5338](https://github.com/nordnet/ui/commit/b8b5338))
+
+
+### Features
+
+* add a11yColors option ([b2d680c](https://github.com/nordnet/ui/commit/b2d680c))
+
+# [1.0.0-beta.43](https://github.com/nordnet/ui/compare/v1.0.0-beta.42@beta...v1.0.0-beta.43@beta) (2019-05-08)
+
+
+### Bug Fixes
+
+* put time in time tag ([525caf3](https://github.com/nordnet/ui/commit/525caf3))
+
+
+### Features
+
+* 🎸 amazing storyshots!!! ([2a6ea8c](https://github.com/nordnet/ui/commit/2a6ea8c))
+
+# [1.0.0-beta.42](https://github.com/nordnet/ui/compare/v1.0.0-beta.41@beta...v1.0.0-beta.42@beta) (2019-05-07)
+
+
+### Features
+
+* 🎸 flag now have border ([6caf6b8](https://github.com/nordnet/ui/commit/6caf6b8))
+
 # [1.0.0-beta.41](https://github.com/nordnet/ui/compare/v1.0.0-beta.40@beta...v1.0.0-beta.41@beta) (2019-05-03)
 
 

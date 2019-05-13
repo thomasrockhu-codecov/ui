@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
-import { Flexbox, Typography, Separator, TabTitle } from '../..';
+import { Flexbox, Typography, Separator, TabTitle, List } from '../..';
 import NormalizedElements from '../../common/NormalizedElements/index';
 import { assert } from '../../common/utils';
 import { useKeyboardNavigation } from './useKeyboardNavigation';
@@ -49,12 +49,9 @@ const Title: TitleComponent = ({
   );
 };
 Title.displayName = 'Tabs.Title';
-const StyledUl = styled.ul`
-  margin-top: 0;
-  list-style: none;
-  display: flex;
+const StyledUl = styled(List)`
   /** @todo reconsider spacing */
-  padding-left: ${p => p.theme.spacing.unit(5)}px;
+  padding: 0 ${p => p.theme.spacing.unit(5)}px;
   /** @todo check this out */
   margin-bottom: -1px;
 `;
@@ -62,8 +59,8 @@ const StyledUl = styled.ul`
 const isItemElement = (x: any): x is { type: typeof Item; props: ItemProps } =>
   x != null && typeof x === 'object' && Object.hasOwnProperty.call(x, 'type'); // FIXME: && x.type === Item;
 
-const Tabs: ContainerComponent = ({ children, initialActiveTabId = 0 }) => {
-  const [active, setActive] = useState(initialActiveTabId);
+const Tabs: ContainerComponent = ({ children, initialActiveTabIndex = 0 }) => {
+  const [active, setActive] = useState(initialActiveTabIndex);
   const handleTitleClick = (i: number) => () => setActive(i);
   const { setRef, onKeyDown } = useKeyboardNavigation({
     itemsLength: React.Children.count(children),

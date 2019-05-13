@@ -1,7 +1,7 @@
 import { configure, addDecorator } from '@storybook/react';
 import { withA11y } from '@storybook/addon-a11y';
-import { ThemeDecorator } from './ThemeDecorator';
 import { setIntlConfig, withIntl } from 'storybook-addon-intl';
+import { ThemeDecorator } from './ThemeDecorator';
 // Load the locale data for all your defined locales
 import { addLocaleData } from 'react-intl';
 import enLocaleData from 'react-intl/locale-data/en';

@@ -7,7 +7,13 @@ import { Display } from '../../common/Display';
 
 storiesOf('Atoms | Flag', module)
   .add('Default use', () => <Flag country="SE" />)
-  .add('Different size ', () => <Flag country="SE" width={10} height={10} />)
+  .add('Inline', () => (
+    <span>
+      You can put the <Flag inline country="SE" /> directly in the text with inline prop!
+    </span>
+  ))
+  .add('Different size ', () => <Flag country="SE" height={10} />)
+  .add('Renders nothing if wrong country code', () => <Flag country="WRONG" />)
   .add('Available flags', () => (
     <Display
       items={Object.keys(flags).map((flagName: string) => ({

@@ -56,7 +56,7 @@ const getHeight = (props: ThemedStyledProps<ButtonProps | LinkProps, Theme>) => 
 };
 
 const getSharedStyle = (props: ThemedStyledProps<ButtonProps | LinkProps, Theme>) => {
-  const { theme, variant, size, fullWidth } = props;
+  const { theme, variant, fullWidth } = props;
   const height = getHeight(props);
 
   return `
@@ -66,7 +66,7 @@ const getSharedStyle = (props: ThemedStyledProps<ButtonProps | LinkProps, Theme>
     color: ${isSecondary(variant) ? theme.color.cta : theme.color.buttonText};
     height: ${height}px;
     line-height: ${height - BORDER_SIZE * 2}px;
-    padding: 0 ${size === 's' ? theme.spacing.unit(2) : theme.spacing.unit(4)}px;
+    padding: 0 ${theme.spacing.unit(2)}px;
     ${fullWidth ? `display: block; width: 100%;` : `display: inline-block;`}
   `;
 };
@@ -85,7 +85,7 @@ const StyledLink = styled(RouterLink)<LinkProps>`
 
 export const Button: ButtonComponent = props => {
   const typeIsNotPresent = typeof props.type === 'undefined';
-  const { disabled, onClick, size, type = 'button', variant, fullWidth, to, children } = props;
+  const { disabled, onClick, size, type = 'button', variant, fullWidth, to, children, rel } = props;
   const toAndDisabledAreNotPresentTogether = !(to && disabled);
 
   assert(
@@ -102,7 +102,14 @@ export const Button: ButtonComponent = props => {
     );
 
     return (
-      <StyledLink to={to} onClick={onClick} size={size} variant={variant} fullWidth={fullWidth}>
+      <StyledLink
+        to={to}
+        rel={rel}
+        onClick={onClick}
+        size={size}
+        variant={variant}
+        fullWidth={fullWidth}
+      >
         <Typography type={size === 'l' ? 'primary' : 'secondary'} color="inherit">
           {children}
         </Typography>

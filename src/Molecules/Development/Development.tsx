@@ -20,7 +20,7 @@ const StyledDevelopment = styled.span<DevelopmentProps>`
 
 const Development: DevelopmentComponent = ({ value, className, icon = false, ...props }) => (
   <StyledDevelopment className={className} value={value}>
-    {icon && getPrefix(value)}
+    <span aria-hidden>{icon && getPrefix(value)}</span>
     <NumberComponent value={value} sign {...props} />
   </StyledDevelopment>
 );

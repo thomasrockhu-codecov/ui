@@ -1,13 +1,12 @@
 import React from 'react';
 
+export type InternalProps = {
+  height: number;
+  inline?: boolean;
+};
 export type Props = {
   height?: number;
-  width?: number;
-};
-export type InternalProps = {
-  height?: number;
-  width?: number;
   country: string;
+  inline?: boolean;
 };
-
-export type FlagComponent = React.FunctionComponent<InternalProps>;
+export type FlagComponent = React.FunctionComponent<Props>;

@@ -46,13 +46,13 @@ export const rawColor = {
 } as RawColor;
 
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
-export const createTheme = (config?: ThemeConfig): Theme => {
+export const createTheme = (config: ThemeConfig = {}): Theme => {
+  const { a11yColors = false } = config;
   const size: Theme['size'] = {
     xs: 360,
     sm: 768,
     md: 992,
-    lg: 1440,
-    xl: 1680,
+    lg: 1300,
   };
 
   const sizeValues = Object.values(size) as number[];
@@ -78,31 +78,32 @@ export const createTheme = (config?: ThemeConfig): Theme => {
       backgroundDark: rawColor.gray0,
       buttonSecondaryBackground: rawColor.white,
       buttonText: rawColor.white,
-      buy: rawColor.cta,
-      borderActive: rawColor.cta,
+      buy: a11yColors ? rawColor.a11yCta : rawColor.cta,
+      borderActive: a11yColors ? rawColor.a11yCta : rawColor.cta,
       card: rawColor.white,
-      cta: rawColor.cta,
+      cta: a11yColors ? rawColor.a11yCta : rawColor.cta,
       disabled: rawColor.gray3,
       divider: rawColor.gray6,
       label: rawColor.gray2,
       module: rawColor.white,
-      negative: rawColor.negative,
-      positive: rawColor.positive,
-      sell: rawColor.negative,
+      negative: a11yColors ? rawColor.a11yNegative : rawColor.negative,
+      positive: a11yColors ? rawColor.a11yPositive : rawColor.positive,
+      sell: a11yColors ? rawColor.a11yNegative : rawColor.negative,
       spinnerBlack: rawColor.black,
       spinnerWhite: rawColor.white,
       text: rawColor.gray0,
       textLight: rawColor.white, // FIXME: to be removed later
-      warning: rawColor.index,
+      warning: a11yColors ? rawColor.a11yIndex : rawColor.index,
       inputBorder: rawColor.gray4,
       inputBorderHover: rawColor.gray1,
+      flagBorder: rawColor.gray6,
     },
     media: {
       between: (s1, s2) => {
         assert(sizeValues.includes(s1), `[theme.media] Unrecognized size value: ${s1}`);
         assert(sizeValues.includes(s2), `[theme.media] Unrecognized size value: ${s2}`);
 
-        return `@media (min-width: ${s1}px) and (max-width: ${s2}px)`;
+        return `@media (min-width: ${s1}px) and (max-width: ${s2 - 1}px)`;
       },
       greaterThan: s => {
         assert(sizeValues.includes(s), `[theme.media] Unrecognized size value: ${s}`);
@@ -110,7 +111,7 @@ export const createTheme = (config?: ThemeConfig): Theme => {
       },
       lessThan: s => {
         assert(sizeValues.includes(s), `[theme.media] Unrecognized size value: ${s}`);
-        return `@media (max-width: ${s}px)`;
+        return `@media (max-width: ${s - 1}px)`;
       },
     },
     size,
