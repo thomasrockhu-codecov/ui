@@ -3,8 +3,6 @@
 exports[`Storyshots Molecules | Tabs Default (extra space inside) 1`] = `
 .c4 {
   box-sizing: border-box;
-  padding-left: 8px;
-  padding-right: 8px;
 }
 
 .c1 {
@@ -13,11 +11,13 @@ exports[`Storyshots Molecules | Tabs Default (extra space inside) 1`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  margin-left: -8px;
-  margin-right: -8px;
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
+}
+
+.c1 > *:not(:first-child) {
+  margin-left: 8px;
 }
 
 .c3 {
