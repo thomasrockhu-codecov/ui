@@ -1,3 +1,11 @@
+# [1.0.0-beta.57](https://github.com/nordnet/ui/compare/v1.0.0-beta.56@beta...v1.0.0-beta.57@beta) (2019-05-13)
+
+
+### Features
+
+* expand card with title props ([2af777d](https://github.com/nordnet/ui/commit/2af777d))
+* expand card with title props ([f584514](https://github.com/nordnet/ui/commit/f584514))
+
 # [1.0.0-beta.56](https://github.com/nordnet/ui/compare/v1.0.0-beta.55@beta...v1.0.0-beta.56@beta) (2019-05-13)
 
 
