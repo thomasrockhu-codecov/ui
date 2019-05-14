@@ -69,7 +69,7 @@ const TabsNav: Component = (withRouter(({ children, location }) => {
       );
 
       titles.push(
-        <Flexbox.Item as="li">
+        <Flexbox item as="li" key={btoa(c.props.to)}>
           <Title
             active={isIndexActive}
             onClick={c.props.onTitleClick}
@@ -79,15 +79,15 @@ const TabsNav: Component = (withRouter(({ children, location }) => {
           >
             {c.props.title}
           </Title>
-        </Flexbox.Item>,
+        </Flexbox>,
       );
     }
   });
 
   return (
-    <Flexbox.Container direction="row" gutter={4} as={StyledUl}>
+    <Flexbox container direction="row" gutter={4} as={StyledUl}>
       {titles}
-    </Flexbox.Container>
+    </Flexbox>
   );
 }) as unknown) as Component;
 TabsNav.displayName = 'TabsNav';

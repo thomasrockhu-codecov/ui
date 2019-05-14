@@ -82,7 +82,7 @@ const Tabs: ContainerComponent = ({ children, initialActiveTabIndex = 0, activeT
     } else {
       titles.push(
         // eslint-disable-next-line react/no-array-index-key
-        <Flexbox.Item as="li" role="presentation" key={`tabs-${i}`}>
+        <Flexbox item as="li" role="presentation" key={`tabs-${i}`}>
           <Title
             active={isActive}
             index={i}
@@ -94,7 +94,7 @@ const Tabs: ContainerComponent = ({ children, initialActiveTabIndex = 0, activeT
               {c.props.title}
             </Typography>
           </Title>
-        </Flexbox.Item>,
+        </Flexbox>,
       );
 
       if (isActive) {
@@ -114,9 +114,9 @@ const Tabs: ContainerComponent = ({ children, initialActiveTabIndex = 0, activeT
 
   return (
     <div>
-      <Flexbox.Container direction="row" gutter={4} as={StyledUl} role="tablist">
+      <Flexbox container direction="row" gutter={4} as={StyledUl} role="tablist">
         {titles}
-      </Flexbox.Container>
+      </Flexbox>
       <Separator />
 
       <div>{contents}</div>

@@ -16,8 +16,8 @@ storiesOf('Molecules | TabsNav', module).add(
   'Integration: With react-router (extra space inside)',
   () => (
     <HashRouter>
-      <Flexbox.Container direction="column" gutter={0}>
-        <Flexbox.Item>
+      <Flexbox container direction="column" gutter={0}>
+        <Flexbox item>
           <Typography type="secondary">
             <TabsNav>
               <TabsNav.Tab
@@ -32,18 +32,18 @@ storiesOf('Molecules | TabsNav', module).add(
               />
             </TabsNav>
           </Typography>
-        </Flexbox.Item>
-        <Flexbox.Item>
+        </Flexbox>
+        <Flexbox item>
           <Separator />
-        </Flexbox.Item>
-        <Flexbox.Item>
+        </Flexbox>
+        <Flexbox item>
           <SpacingInside>
             <Route path="/route1" component={() => <>/route1 content</>} />
             <Route path="/route2" component={() => <>/route2 content</>} />
             <Route exact path="/" render={() => <Redirect to="/route1" />} />
           </SpacingInside>
-        </Flexbox.Item>
-      </Flexbox.Container>
+        </Flexbox>
+      </Flexbox>
     </HashRouter>
   ),
 );
