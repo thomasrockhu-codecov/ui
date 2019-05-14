@@ -15,8 +15,6 @@ Array [
 
 .c6 {
   box-sizing: border-box;
-  padding-left: 8px;
-  padding-right: 8px;
 }
 
 .c3 {
@@ -25,11 +23,13 @@ Array [
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  margin-left: -8px;
-  margin-right: -8px;
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
+}
+
+.c3 > *:not(:first-child) {
+  margin-left: 16px;
 }
 
 .c5 {
