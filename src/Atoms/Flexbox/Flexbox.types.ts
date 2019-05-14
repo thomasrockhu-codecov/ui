@@ -1,6 +1,5 @@
 export type ContainerProps = {
   container?: boolean;
-
   height?: number;
   as?: keyof JSX.IntrinsicElements | React.ComponentType<any>;
   /** flexbox direction */
@@ -57,4 +56,4 @@ export type ItemProps = {
   role?: string;
 };
 
-export type Props = ItemProps & ContainerProps;
+export type Props = ItemProps & ContainerProps & { className?: string };
