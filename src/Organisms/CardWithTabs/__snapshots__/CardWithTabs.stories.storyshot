@@ -22,7 +22,7 @@ exports[`Storyshots Organisms | CardWithTabs Integration: with Typography and ex
 }
 
 .c3 > *:not(:first-child) {
-  margin-left: 8px;
+  margin-left: 16px;
 }
 
 .c5 {
@@ -291,7 +291,7 @@ exports[`Storyshots Organisms | CardWithTabs with initialActiveTabIndex 1`] = `
 }
 
 .c3 > *:not(:first-child) {
-  margin-left: 8px;
+  margin-left: 16px;
 }
 
 .c5 {

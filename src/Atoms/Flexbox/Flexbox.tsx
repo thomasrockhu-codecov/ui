@@ -40,10 +40,10 @@ const getGutterStyles = ({
 }) => {
   return direction === 'row' || direction === 'row-reverse'
     ? `
-  margin-left: ${theme.spacing.unit(gutter / 2)}px;
+  margin-left: ${theme.spacing.unit(gutter)}px;
 `
     : `
-      margin-top: ${theme.spacing.unit(gutter / 2)}px;
+      margin-top: ${theme.spacing.unit(gutter)}px;
     `;
 };
 
@@ -85,6 +85,11 @@ const sanitizeProps = R.omit([
   'container',
   'item',
   'gutter',
+  'alignItems',
+  'grow',
+  'shrink',
+  'basis',
+  'order',
 ]);
 const SanitizedDiv = (props: Props) => <div {...sanitizeProps(props)} />;
 
