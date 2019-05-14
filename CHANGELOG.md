@@ -1,3 +1,31 @@
+# [1.0.0-beta.60](https://github.com/nordnet/ui/compare/v1.0.0-beta.59@beta...v1.0.0-beta.60@beta) (2019-05-14)
+
+
+### Features
+
+* 🎸 controlled behaviour for tabs and cardwithtabs ([fe8427a](https://github.com/nordnet/ui/commit/fe8427a))
+* 🎸 onclick for tabs ([b08a440](https://github.com/nordnet/ui/commit/b08a440))
+
+# [1.0.0-beta.59](https://github.com/nordnet/ui/compare/v1.0.0-beta.58@beta...v1.0.0-beta.59@beta) (2019-05-14)
+
+
+### Bug Fixes
+
+* align attachement in artboard ([bfdaa9a](https://github.com/nordnet/ui/commit/bfdaa9a))
+* remove attachement fill ([c996fb6](https://github.com/nordnet/ui/commit/c996fb6))
+
+
+### Features
+
+* add flag, trash, attachement and printer ([a06c493](https://github.com/nordnet/ui/commit/a06c493))
+
+# [1.0.0-beta.58](https://github.com/nordnet/ui/compare/v1.0.0-beta.57@beta...v1.0.0-beta.58@beta) (2019-05-13)
+
+
+### Bug Fixes
+
+* tighten outer padding ([e55548d](https://github.com/nordnet/ui/commit/e55548d))
+
 # [1.0.0-beta.57](https://github.com/nordnet/ui/compare/v1.0.0-beta.56@beta...v1.0.0-beta.57@beta) (2019-05-13)
 
 
