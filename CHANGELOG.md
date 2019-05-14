@@ -1,3 +1,11 @@
+# [1.0.0-beta.60](https://github.com/nordnet/ui/compare/v1.0.0-beta.59@beta...v1.0.0-beta.60@beta) (2019-05-14)
+
+
+### Features
+
+* 🎸 controlled behaviour for tabs and cardwithtabs ([fe8427a](https://github.com/nordnet/ui/commit/fe8427a))
+* 🎸 onclick for tabs ([b08a440](https://github.com/nordnet/ui/commit/b08a440))
+
 # [1.0.0-beta.59](https://github.com/nordnet/ui/compare/v1.0.0-beta.58@beta...v1.0.0-beta.59@beta) (2019-05-14)
 
 
