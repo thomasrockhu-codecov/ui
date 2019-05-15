@@ -1,3 +1,10 @@
+# [1.0.0-beta.64](https://github.com/nordnet/ui/compare/v1.0.0-beta.63@beta...v1.0.0-beta.64@beta) (2019-05-15)
+
+
+### Bug Fixes
+
+* add spacing after refactor ([2b92e64](https://github.com/nordnet/ui/commit/2b92e64))
+
 # [1.0.0-beta.63](https://github.com/nordnet/ui/compare/v1.0.0-beta.62@beta...v1.0.0-beta.63@beta) (2019-05-15)
 
 
