@@ -1,3 +1,10 @@
+# [1.0.0-beta.65](https://github.com/nordnet/ui/compare/v1.0.0-beta.64@beta...v1.0.0-beta.65@beta) (2019-05-15)
+
+
+### Bug Fixes
+
+* 🐛 export new component ([9266bcd](https://github.com/nordnet/ui/commit/9266bcd))
+
 # [1.0.0-beta.64](https://github.com/nordnet/ui/compare/v1.0.0-beta.63@beta...v1.0.0-beta.64@beta) (2019-05-15)
 
 
