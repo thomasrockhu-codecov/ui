@@ -1,3 +1,20 @@
+# [1.0.0-beta.63](https://github.com/nordnet/ui/compare/v1.0.0-beta.62@beta...v1.0.0-beta.63@beta) (2019-05-15)
+
+
+### Bug Fixes
+
+* 🐛 types for select ([af7b905](https://github.com/nordnet/ui/commit/af7b905))
+* disable chevron rotating ([f5a43c0](https://github.com/nordnet/ui/commit/f5a43c0))
+* minor style update ([1d35030](https://github.com/nordnet/ui/commit/1d35030))
+* overflow in select ([8ba37ca](https://github.com/nordnet/ui/commit/8ba37ca))
+* overflow issue ([450a0a1](https://github.com/nordnet/ui/commit/450a0a1))
+
+
+### Features
+
+* add Select and VisuallyHidden ([4226e90](https://github.com/nordnet/ui/commit/4226e90))
+* add support to use custom outer spacing for tabs ([eb8a5e7](https://github.com/nordnet/ui/commit/eb8a5e7))
+
 # [1.0.0-beta.62](https://github.com/nordnet/ui/compare/v1.0.0-beta.61@beta...v1.0.0-beta.62@beta) (2019-05-15)
 
 
