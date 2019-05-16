@@ -65,7 +65,7 @@ const TabsNav: Component = (withRouter(({ children, location }) => {
       );
 
       titles.push(
-        <Flexbox item as="li" key={btoa(c.props.to)}>
+        <Flexbox item as="li" key={c.props.to}>
           <Title
             active={isIndexActive}
             onClick={c.props.onTitleClick}
