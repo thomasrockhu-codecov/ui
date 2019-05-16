@@ -1,3 +1,11 @@
+# [1.0.0-beta.71](https://github.com/nordnet/ui/compare/v1.0.0-beta.70@beta...v1.0.0-beta.71@beta) (2019-05-16)
+
+
+### Features
+
+* enabled to use items style with 0 as value ([aec488f](https://github.com/nordnet/ui/commit/aec488f))
+* removed isNil check on size prop ([460e917](https://github.com/nordnet/ui/commit/460e917))
+
 # [1.0.0-beta.70](https://github.com/nordnet/ui/compare/v1.0.0-beta.69@beta...v1.0.0-beta.70@beta) (2019-05-16)
 
 
