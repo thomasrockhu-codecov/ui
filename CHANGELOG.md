@@ -1,3 +1,11 @@
+# [1.0.0-beta.69](https://github.com/nordnet/ui/compare/v1.0.0-beta.68@beta...v1.0.0-beta.69@beta) (2019-05-16)
+
+
+### Bug Fixes
+
+* 🐛 btoa ssr ([2a1588e](https://github.com/nordnet/ui/commit/2a1588e))
+* btoa ([b514d7b](https://github.com/nordnet/ui/commit/b514d7b))
+
 # [1.0.0-beta.68](https://github.com/nordnet/ui/compare/v1.0.0-beta.67@beta...v1.0.0-beta.68@beta) (2019-05-16)
 
 
