@@ -1,3 +1,10 @@
+# [1.0.0-beta.70](https://github.com/nordnet/ui/compare/v1.0.0-beta.69@beta...v1.0.0-beta.70@beta) (2019-05-16)
+
+
+### Bug Fixes
+
+* rounding with zero decimals ([cc92bbe](https://github.com/nordnet/ui/commit/cc92bbe))
+
 # [1.0.0-beta.69](https://github.com/nordnet/ui/compare/v1.0.0-beta.68@beta...v1.0.0-beta.69@beta) (2019-05-16)
 
 
