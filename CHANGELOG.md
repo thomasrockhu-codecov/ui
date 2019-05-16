@@ -1,3 +1,10 @@
+# [1.0.0-beta.66](https://github.com/nordnet/ui/compare/v1.0.0-beta.65@beta...v1.0.0-beta.66@beta) (2019-05-16)
+
+
+### Features
+
+* add icons to be used with forms ([a76d92e](https://github.com/nordnet/ui/commit/a76d92e))
+
 # [1.0.0-beta.65](https://github.com/nordnet/ui/compare/v1.0.0-beta.64@beta...v1.0.0-beta.65@beta) (2019-05-15)
 
 
