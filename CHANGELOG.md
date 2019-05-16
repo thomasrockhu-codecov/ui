@@ -1,3 +1,10 @@
+# [1.0.0-beta.67](https://github.com/nordnet/ui/compare/v1.0.0-beta.66@beta...v1.0.0-beta.67@beta) (2019-05-16)
+
+
+### Bug Fixes
+
+* prevent grid blowout ([e8407d2](https://github.com/nordnet/ui/commit/e8407d2))
+
 # [1.0.0-beta.66](https://github.com/nordnet/ui/compare/v1.0.0-beta.65@beta...v1.0.0-beta.66@beta) (2019-05-16)
 
 
