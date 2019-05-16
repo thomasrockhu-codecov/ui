@@ -1,3 +1,11 @@
+# [1.0.0-beta.68](https://github.com/nordnet/ui/compare/v1.0.0-beta.67@beta...v1.0.0-beta.68@beta) (2019-05-16)
+
+
+### Bug Fixes
+
+* value is positive but rounded value is zero ([6950f20](https://github.com/nordnet/ui/commit/6950f20))
+* warn users if ticks are snake cased ([850cae3](https://github.com/nordnet/ui/commit/850cae3))
+
 # [1.0.0-beta.67](https://github.com/nordnet/ui/compare/v1.0.0-beta.66@beta...v1.0.0-beta.67@beta) (2019-05-16)
 
 
