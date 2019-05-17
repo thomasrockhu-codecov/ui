@@ -1,3 +1,10 @@
+# [1.0.0-beta.74](https://github.com/nordnet/ui/compare/v1.0.0-beta.73@beta...v1.0.0-beta.74@beta) (2019-05-17)
+
+
+### Bug Fixes
+
+* min max without decimals ([8123334](https://github.com/nordnet/ui/commit/8123334))
+
 # [1.0.0-beta.73](https://github.com/nordnet/ui/compare/v1.0.0-beta.72@beta...v1.0.0-beta.73@beta) (2019-05-17)
 
 
