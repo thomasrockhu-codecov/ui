@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { Props } from './Display.types';
+import { Typography, Box } from '../..';
 
 const StyledFlexDiv = styled.div<{
   direction: 'column' | 'row';
@@ -26,13 +27,21 @@ const DivWithBorder = styled.div<{ horizontal?: boolean }>`
   ${p => (p.horizontal ? `border-bottom: 1px solid #eee` : `border-right: 1px solid #eee`)};
   align-self: center;
 `;
-export const Display: React.FC<Props> = ({ items, horizontal }) => (
-  <Flex direction={horizontal ? 'row' : 'column'}>
-    {items.map(({ title, component }) => (
-      <Flex direction={horizontal ? 'column' : 'row'} margin={5} key={`${title}`} addBorder>
-        <DivWithBorder horizontal={horizontal}>{title}</DivWithBorder>
-        <div>{component}</div>
-      </Flex>
-    ))}
-  </Flex>
+export const Display: React.FC<Props> = ({ items, horizontal, title: displayTitle }) => (
+  <>
+    {displayTitle && (
+      <Box mb={4}>
+        <Typography type="title1">{displayTitle}</Typography>
+      </Box>
+    )}
+    <Flex direction={horizontal ? 'row' : 'column'}>
+      {items.map(({ title, component }) => (
+        <Flex direction={horizontal ? 'column' : 'row'} margin={5} key={`${title}`} addBorder>
+          <DivWithBorder horizontal={horizontal}>{title}</DivWithBorder>
+          <div>{component}</div>
+        </Flex>
+      ))}
+    </Flex>
+    {displayTitle && <Box mb={8} />}
+  </>
 );

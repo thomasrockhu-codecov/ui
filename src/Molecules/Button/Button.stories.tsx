@@ -227,4 +227,66 @@ storiesOf('Molecules | Button', module)
         Button
       </Button>
     </HashRouter>
+  ))
+  .add('Link looking like a button with with colors', () => (
+    <HashRouter>
+      <>
+        <Display
+          title="Primary"
+          items={[
+            {
+              title: 't => t.color.cta',
+              component: (
+                <Button to="www.google.com" color={t => t.color.cta} onClick={action('clicked')}>
+                  Button
+                </Button>
+              ),
+            },
+            {
+              title: 't => t.color.negative',
+              component: (
+                <Button
+                  to="www.google.com"
+                  color={t => t.color.negative}
+                  onClick={action('clicked')}
+                >
+                  Button
+                </Button>
+              ),
+            },
+          ]}
+        />
+        <Display
+          title="Secondary"
+          items={[
+            {
+              title: 't => t.color.cta',
+              component: (
+                <Button
+                  variant="secondary"
+                  to="www.google.com"
+                  color={t => t.color.cta}
+                  onClick={action('clicked')}
+                >
+                  Button
+                </Button>
+              ),
+            },
+            {
+              title: 't => t.color.negative',
+              component: (
+                <Button
+                  variant="secondary"
+                  to="www.google.com"
+                  color={t => t.color.negative}
+                  onClick={action('clicked')}
+                >
+                  Button
+                </Button>
+              ),
+            },
+          ]}
+        />
+      </>
+    </HashRouter>
   ));

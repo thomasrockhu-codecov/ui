@@ -19,7 +19,7 @@ const BORDER_SIZE = 2;
 const isSecondary = (variant: ButtonProps['variant']) => variant === 'secondary';
 
 const getBackgroundColor = (props: ThemedStyledProps<ButtonProps | LinkProps, Theme>) => {
-  const { disabled, theme, variant, color: colorFn } = props;
+  const { disabled, theme, variant, colorFn } = props;
   if (disabled) {
     return `background-color: ${theme.color.disabled};`;
   }
@@ -92,7 +92,7 @@ const getHeight = (props: ThemedStyledProps<ButtonProps | LinkProps, Theme>) => 
 };
 
 const getSharedStyle = (props: ThemedStyledProps<ButtonProps | LinkProps, Theme>) => {
-  const { theme, variant, fullWidth, color: colorFn } = props;
+  const { theme, variant, fullWidth, colorFn } = props;
   const height = getHeight(props);
 
   const color = colorFn && colorFn(theme);
@@ -167,6 +167,7 @@ export const Button: ButtonComponent = props => {
         size={size}
         variant={variant}
         fullWidth={fullWidth}
+        colorFn={color}
       >
         <Typography type={size === 'l' ? 'primary' : 'secondary'} color="inherit">
           {children}
@@ -183,7 +184,7 @@ export const Button: ButtonComponent = props => {
       type={type}
       variant={variant}
       fullWidth={fullWidth}
-      color={color}
+      colorFn={color}
     >
       <Typography type={size === 'l' ? 'primary' : 'secondary'} color="inherit">
         {children}

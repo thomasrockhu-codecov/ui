@@ -3,7 +3,7 @@ import { LinkProps as ReactRouterDomLinkProps } from 'react-router-dom';
 import { Theme } from '../../theme/theme.types';
 
 type Colors = Theme['color'];
-
+type ColorFn = (t: Theme) => Colors['cta'] | Colors['negative'];
 export type SharedProps = {
   /** @default primary */
   variant?: 'primary' | 'secondary';
@@ -12,7 +12,7 @@ export type SharedProps = {
   /** @default false */
   fullWidth?: boolean;
   children: React.ReactChild | React.ReactChild[];
-  color?: (t: Theme) => Colors['cta'] | Colors['negative'];
+  color?: ColorFn;
 };
 
 export type ButtonProps = {
@@ -22,6 +22,7 @@ export type ButtonProps = {
   type?: 'button' | 'reset' | 'submit';
   to?: never;
   rel?: never;
+  colorFn?: ColorFn;
 } & SharedProps;
 
 export type LinkProps = {
@@ -30,6 +31,7 @@ export type LinkProps = {
   rel?: string;
   type?: never;
   disabled?: never;
+  colorFn?: ColorFn;
 } & SharedProps;
 
 export type ButtonComponent = React.FC<ButtonProps | LinkProps>;
