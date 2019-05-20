@@ -1,3 +1,10 @@
+# [1.0.0-beta.75](https://github.com/nordnet/ui/compare/v1.0.0-beta.74@beta...v1.0.0-beta.75@beta) (2019-05-20)
+
+
+### Features
+
+* 🎸 add button color prop ([e7978de](https://github.com/nordnet/ui/commit/e7978de))
+
 # [1.0.0-beta.74](https://github.com/nordnet/ui/compare/v1.0.0-beta.73@beta...v1.0.0-beta.74@beta) (2019-05-17)
 
 
