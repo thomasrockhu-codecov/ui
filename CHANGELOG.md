@@ -1,3 +1,17 @@
+# [1.0.0-beta.76](https://github.com/nordnet/ui/compare/v1.0.0-beta.75@beta...v1.0.0-beta.76@beta) (2019-05-20)
+
+
+### Bug Fixes
+
+* chevron not clickable ([07d9aa1](https://github.com/nordnet/ui/commit/07d9aa1))
+* **Select:** hide unnecessary span label for screen readers ([c3ae718](https://github.com/nordnet/ui/commit/c3ae718))
+* **Select:** make focus have higher prio than hover styling ([3512432](https://github.com/nordnet/ui/commit/3512432))
+
+
+### Features
+
+* pass aria attributes to typography ([727cc68](https://github.com/nordnet/ui/commit/727cc68))
+
 # [1.0.0-beta.75](https://github.com/nordnet/ui/compare/v1.0.0-beta.74@beta...v1.0.0-beta.75@beta) (2019-05-20)
 
 
