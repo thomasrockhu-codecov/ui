@@ -1,3 +1,15 @@
+# [1.0.0-beta.78](https://github.com/nordnet/ui/compare/v1.0.0-beta.77@beta...v1.0.0-beta.78@beta) (2019-05-20)
+
+
+### Bug Fixes
+
+* **Number:** inherit weight for currency with typography ([cfe14d7](https://github.com/nordnet/ui/commit/cfe14d7))
+
+
+### Features
+
+* add currencySize prop ([d55ae4b](https://github.com/nordnet/ui/commit/d55ae4b))
+
 # [1.0.0-beta.77](https://github.com/nordnet/ui/compare/v1.0.0-beta.76@beta...v1.0.0-beta.77@beta) (2019-05-20)
 
 
