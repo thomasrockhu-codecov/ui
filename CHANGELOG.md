@@ -1,3 +1,16 @@
+# [1.0.0-beta.77](https://github.com/nordnet/ui/compare/v1.0.0-beta.76@beta...v1.0.0-beta.77@beta) (2019-05-20)
+
+
+### Bug Fixes
+
+* colors for link button ([5e98b8e](https://github.com/nordnet/ui/commit/5e98b8e))
+* colors for link button ([9af8b69](https://github.com/nordnet/ui/commit/9af8b69))
+
+
+### Features
+
+* add classname to table ([6dde41f](https://github.com/nordnet/ui/commit/6dde41f))
+
 # [1.0.0-beta.76](https://github.com/nordnet/ui/compare/v1.0.0-beta.75@beta...v1.0.0-beta.76@beta) (2019-05-20)
 
 
