@@ -2,8 +2,10 @@ import React from 'react';
 import styled from 'styled-components';
 import R from 'ramda';
 
-// eslint-disable-next-line react/button-has-type
-const CleanButton = (props: any) => <button {...R.omit(['color', 'fullWidth', 'size'], props)} />;
+const CleanButton = (props: any) => (
+  // eslint-disable-next-line react/button-has-type
+  <button {...R.omit(['color', 'fullWidth', 'size', 'colorFn'], props)} />
+);
 
 /** From Normalize.css v8.0.1 */
 export const Button = styled(CleanButton)`
