@@ -1,3 +1,10 @@
+# [1.0.0-beta.79](https://github.com/nordnet/ui/compare/v1.0.0-beta.78@beta...v1.0.0-beta.79@beta) (2019-05-21)
+
+
+### Bug Fixes
+
+* **Number:** minus zero ([1713e25](https://github.com/nordnet/ui/commit/1713e25))
+
 # [1.0.0-beta.78](https://github.com/nordnet/ui/compare/v1.0.0-beta.77@beta...v1.0.0-beta.78@beta) (2019-05-20)
 
 
