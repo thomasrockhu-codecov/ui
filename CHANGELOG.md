@@ -1,3 +1,10 @@
+# [1.0.0-beta.80](https://github.com/nordnet/ui/compare/v1.0.0-beta.79@beta...v1.0.0-beta.80@beta) (2019-05-22)
+
+
+### Bug Fixes
+
+* correct select height ([7702470](https://github.com/nordnet/ui/commit/7702470))
+
 # [1.0.0-beta.79](https://github.com/nordnet/ui/compare/v1.0.0-beta.78@beta...v1.0.0-beta.79@beta) (2019-05-21)
 
 
