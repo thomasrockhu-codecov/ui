@@ -1,3 +1,10 @@
+# [1.0.0-beta.81](https://github.com/nordnet/ui/compare/v1.0.0-beta.80@beta...v1.0.0-beta.81@beta) (2019-05-24)
+
+
+### Bug Fixes
+
+* **Flag:** only use greyBorder when necessary ([5098e0d](https://github.com/nordnet/ui/commit/5098e0d))
+
 # [1.0.0-beta.80](https://github.com/nordnet/ui/compare/v1.0.0-beta.79@beta...v1.0.0-beta.80@beta) (2019-05-22)
 
 
