@@ -1,3 +1,10 @@
+# [1.2.0](https://github.com/nordnet/ui/compare/v1.1.0...v1.2.0) (2019-05-27)
+
+
+### Features
+
+* made a table row clickable ([b5f5834](https://github.com/nordnet/ui/commit/b5f5834))
+
 # [1.1.0](https://github.com/nordnet/ui/compare/v1.0.1...v1.1.0) (2019-05-27)
 
 
