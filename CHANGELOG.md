@@ -1,3 +1,16 @@
+# [1.1.0](https://github.com/nordnet/ui/compare/v1.0.1...v1.1.0) (2019-05-27)
+
+
+### Bug Fixes
+
+* **CollapsibleCard:** fix slowness with onTouchStart ([6434e8b](https://github.com/nordnet/ui/commit/6434e8b))
+
+
+### Features
+
+* move over CollapsibleCard ([62816bf](https://github.com/nordnet/ui/commit/62816bf))
+* **CollapsibleCard:** add heading prop ([9d6bdbf](https://github.com/nordnet/ui/commit/9d6bdbf))
+
 ## [1.0.1](https://github.com/nordnet/ui/compare/v1.0.0...v1.0.1) (2019-05-27)
 
 
