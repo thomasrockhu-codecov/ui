@@ -1,3 +1,10 @@
+## [1.0.1](https://github.com/nordnet/ui/compare/v1.0.0...v1.0.1) (2019-05-27)
+
+
+### Bug Fixes
+
+* attempt to fix ci and release 1.0.1 ([0e1b9ec](https://github.com/nordnet/ui/commit/0e1b9ec))
+
 # 1.0.0 (2019-05-27)
 
 
