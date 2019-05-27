@@ -1,3 +1,12 @@
+# [1.4.0](https://github.com/nordnet/ui/compare/v1.3.0...v1.4.0) (2019-05-27)
+
+
+### Features
+
+* exposed onTouchStart and onClick props ([2354098](https://github.com/nordnet/ui/commit/2354098))
+* only exposed onClick ([0257bce](https://github.com/nordnet/ui/commit/0257bce))
+* used exposed props ([8ca6587](https://github.com/nordnet/ui/commit/8ca6587))
+
 # [1.3.0](https://github.com/nordnet/ui/compare/v1.2.0...v1.3.0) (2019-05-27)
 
 
