@@ -1,3 +1,10 @@
+# [1.3.0](https://github.com/nordnet/ui/compare/v1.2.0...v1.3.0) (2019-05-27)
+
+
+### Features
+
+* add bolt icon ([d0e758f](https://github.com/nordnet/ui/commit/d0e758f))
+
 # [1.2.0](https://github.com/nordnet/ui/compare/v1.1.0...v1.2.0) (2019-05-27)
 
 
