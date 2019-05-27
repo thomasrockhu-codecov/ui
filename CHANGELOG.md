@@ -1,3 +1,10 @@
+# [1.0.0-beta.82](https://github.com/nordnet/ui/compare/v1.0.0-beta.81@beta...v1.0.0-beta.82@beta) (2019-05-27)
+
+
+### Features
+
+* add bolt icon ([b36d53c](https://github.com/nordnet/ui/commit/b36d53c))
+
 # [1.0.0-beta.81](https://github.com/nordnet/ui/compare/v1.0.0-beta.80@beta...v1.0.0-beta.81@beta) (2019-05-24)
 
 
