@@ -1,3 +1,10 @@
+## [1.4.2](https://github.com/nordnet/ui/compare/v1.4.1...v1.4.2) (2019-05-28)
+
+
+### Bug Fixes
+
+* norwegian flag title ([f8ffd1d](https://github.com/nordnet/ui/commit/f8ffd1d))
+
 ## [1.4.1](https://github.com/nordnet/ui/compare/v1.4.0...v1.4.1) (2019-05-28)
 
 
