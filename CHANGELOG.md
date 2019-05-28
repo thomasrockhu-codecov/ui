@@ -1,3 +1,16 @@
+# [1.5.0](https://github.com/nordnet/ui/compare/v1.4.2...v1.5.0) (2019-05-28)
+
+
+### Bug Fixes
+
+* update snap ([d7db198](https://github.com/nordnet/ui/commit/d7db198))
+
+
+### Features
+
+* add flags for in,za,hk,br and au ([51157ea](https://github.com/nordnet/ui/commit/51157ea))
+* add new flags ([fee17e0](https://github.com/nordnet/ui/commit/fee17e0))
+
 ## [1.4.2](https://github.com/nordnet/ui/compare/v1.4.1...v1.4.2) (2019-05-28)
 
 
