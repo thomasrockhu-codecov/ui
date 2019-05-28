@@ -1,3 +1,13 @@
+## [1.4.1](https://github.com/nordnet/ui/compare/v1.4.0...v1.4.1) (2019-05-28)
+
+
+### Bug Fixes
+
+* add className prop ([c09eb17](https://github.com/nordnet/ui/commit/c09eb17))
+* change disabled colors and paddings ([d219708](https://github.com/nordnet/ui/commit/d219708))
+* update snaps ([5add10d](https://github.com/nordnet/ui/commit/5add10d))
+* **Development:** fix infinity edge case ([fc798ff](https://github.com/nordnet/ui/commit/fc798ff))
+
 # [1.4.0](https://github.com/nordnet/ui/compare/v1.3.0...v1.4.0) (2019-05-27)
 
 
