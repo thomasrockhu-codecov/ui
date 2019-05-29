@@ -1,3 +1,10 @@
+# [1.6.0](https://github.com/nordnet/ui/compare/v1.5.0...v1.6.0) (2019-05-29)
+
+
+### Features
+
+* add new cross icon ([2f81242](https://github.com/nordnet/ui/commit/2f81242))
+
 # [1.5.0](https://github.com/nordnet/ui/compare/v1.4.2...v1.5.0) (2019-05-28)
 
 
