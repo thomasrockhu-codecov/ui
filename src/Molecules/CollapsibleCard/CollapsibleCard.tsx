@@ -140,7 +140,7 @@ export const CollapsibleCard: React.FC<CollapsibleProps> = ({
     // this will make it feel more responsive.
     e.preventDefault();
 
-    if ('ontouchstart' in document.documentElement) {
+    if (document && 'ontouchstart' in document.documentElement) {
       if (e.type !== 'click') {
         onClick(e);
       }
