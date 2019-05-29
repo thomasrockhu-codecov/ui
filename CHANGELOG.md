@@ -1,3 +1,10 @@
+## [1.6.1](https://github.com/nordnet/ui/compare/v1.6.0...v1.6.1) (2019-05-29)
+
+
+### Bug Fixes
+
+* fail early when no country code is specified ([a66ab55](https://github.com/nordnet/ui/commit/a66ab55))
+
 # [1.6.0](https://github.com/nordnet/ui/compare/v1.5.0...v1.6.0) (2019-05-29)
 
 
