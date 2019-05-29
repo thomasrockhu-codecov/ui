@@ -139,7 +139,15 @@ export const CollapsibleCard: React.FC<CollapsibleProps> = ({
     // The browser will fire touchstart before click, if touchstart is supported,
     // this will make it feel more responsive.
     e.preventDefault();
-    onClick(e);
+
+    if ('ontouchstart' in document.documentElement) {
+      if (e.type !== 'click') {
+        onClick(e);
+      }
+    } else {
+      onClick(e);
+    }
+
     if (collapsed) {
       setExpanding(true);
     } else {
