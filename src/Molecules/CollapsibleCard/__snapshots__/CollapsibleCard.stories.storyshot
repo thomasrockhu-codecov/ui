@@ -137,7 +137,6 @@ exports[`Storyshots Molecules | CollapsibleCard Collapsed initially 1`] = `
     aria-expanded={false}
     className="c1"
     onClick={[Function]}
-    onTouchStart={[Function]}
     type="button"
   >
     <div
@@ -326,7 +325,6 @@ exports[`Storyshots Molecules | CollapsibleCard Collapsible with custom componen
     aria-expanded={true}
     className="c1"
     onClick={[Function]}
-    onTouchStart={[Function]}
     type="button"
   >
     <div
@@ -517,7 +515,6 @@ exports[`Storyshots Molecules | CollapsibleCard Collapsible with onClick listene
     aria-expanded={true}
     className="c1"
     onClick={[Function]}
-    onTouchStart={[Function]}
     type="button"
   >
     <div
@@ -706,7 +703,6 @@ exports[`Storyshots Molecules | CollapsibleCard Default 1`] = `
     aria-expanded={true}
     className="c1"
     onClick={[Function]}
-    onTouchStart={[Function]}
     type="button"
   >
     <div
