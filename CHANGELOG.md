@@ -1,3 +1,12 @@
+## [1.6.2](https://github.com/nordnet/ui/compare/v1.6.1...v1.6.2) (2019-05-31)
+
+
+### Bug Fixes
+
+* **CollapsibleCard:** add document check to be sure ([bc6ca31](https://github.com/nordnet/ui/commit/bc6ca31))
+* **CollapsibleCard:** prevent onClick being called on both touch start and onClick ([58f0e66](https://github.com/nordnet/ui/commit/58f0e66))
+* **CollapsibleCard:** use a different solution for onTouchStart ([4d2b9cd](https://github.com/nordnet/ui/commit/4d2b9cd))
+
 ## [1.6.1](https://github.com/nordnet/ui/compare/v1.6.0...v1.6.1) (2019-05-29)
 
 
