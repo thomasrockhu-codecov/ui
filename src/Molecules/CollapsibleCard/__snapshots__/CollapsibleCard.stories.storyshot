@@ -27,6 +27,7 @@ exports[`Storyshots Molecules | CollapsibleCard Collapsed initially 1`] = `
 }
 
 .c2 > *:not(:first-child) {
+  margin-top: 0;
   margin-left: 16px;
 }
 
@@ -216,6 +217,7 @@ exports[`Storyshots Molecules | CollapsibleCard Collapsible with custom componen
 }
 
 .c2 > *:not(:first-child) {
+  margin-top: 0;
   margin-left: 16px;
 }
 
@@ -407,6 +409,7 @@ exports[`Storyshots Molecules | CollapsibleCard Default 1`] = `
 }
 
 .c2 > *:not(:first-child) {
+  margin-top: 0;
   margin-left: 16px;
 }
 

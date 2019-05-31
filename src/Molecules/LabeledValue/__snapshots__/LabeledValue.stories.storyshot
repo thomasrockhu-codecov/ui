@@ -209,6 +209,7 @@ exports[`Storyshots Molecules | LabeledValue Integration: LabeledValue with nega
 }
 
 .c3 > *:not(:first-child) {
+  margin-top: 0;
   margin-left: 8px;
 }
 
@@ -350,6 +351,7 @@ exports[`Storyshots Molecules | LabeledValue Integration: LabeledValue with posi
 }
 
 .c3 > *:not(:first-child) {
+  margin-top: 0;
   margin-left: 8px;
 }
 
