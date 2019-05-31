@@ -134,12 +134,8 @@ export const CollapsibleCard: React.FC<CollapsibleProps> = ({
   };
 
   const toggle = (e: React.MouseEvent | React.TouchEvent) => {
-    // If touchstart was fired, prevent the following click event
-    // https://developer.mozilla.org/en-US/docs/Web/API/Touch_events/Supporting_both_TouchEvent_and_MouseEvent
-    // The browser will fire touchstart before click, if touchstart is supported,
-    // this will make it feel more responsive.
-    e.preventDefault();
     onClick(e);
+
     if (collapsed) {
       setExpanding(true);
     } else {
@@ -147,12 +143,14 @@ export const CollapsibleCard: React.FC<CollapsibleProps> = ({
     }
   };
 
+  const hasOnTouch =
+    document && document.documentElement && 'ontouchstart' in document.documentElement;
+
   return (
     <Card>
       <StyledButton
         type="button"
-        onClick={toggle}
-        onTouchStart={toggle}
+        {...{ [hasOnTouch ? 'onTouchStart' : 'onClick']: toggle }}
         collapsed={collapsed}
         aria-expanded={!collapsed}
       >
