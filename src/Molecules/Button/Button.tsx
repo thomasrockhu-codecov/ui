@@ -91,8 +91,25 @@ const getHeight = (props: ThemedStyledProps<ButtonProps | LinkProps, Theme>) => 
   return theme.spacing.unit(hugeness);
 };
 
+const getPadding = (props: ThemedStyledProps<ButtonProps | LinkProps, Theme>) => {
+  let horizontalPadding: number;
+  switch (props.size) {
+    case 's':
+      horizontalPadding = 2;
+      break;
+    case 'm':
+      horizontalPadding = 3;
+      break;
+    default:
+      horizontalPadding = 4;
+      break;
+  }
+  return `
+    padding: 0 ${props.theme.spacing.unit(horizontalPadding)}px;
+  `;
+};
 const getSharedStyle = (props: ThemedStyledProps<ButtonProps | LinkProps, Theme>) => {
-  const { theme, variant, fullWidth, colorFn, size, disabled } = props;
+  const { theme, variant, fullWidth, colorFn, disabled } = props;
   const height = getHeight(props);
 
   const color = colorFn && colorFn(theme);
@@ -113,7 +130,7 @@ const getSharedStyle = (props: ThemedStyledProps<ButtonProps | LinkProps, Theme>
     color: ${disabled ? theme.color.disabledText : getColorWithDefault(theme.color.buttonText)};
     height: ${height}px;
     line-height: ${height - BORDER_SIZE * 2}px;
-    padding: 0 ${size === 's' ? theme.spacing.unit(2) : theme.spacing.unit(4)}px;
+    ${getPadding(props)}
     ${fullWidth ? `display: block; width: 100%;` : `display: inline-block;`}
   `;
 };
@@ -171,7 +188,11 @@ export const Button: ButtonComponent = props => {
         fullWidth={fullWidth}
         colorFn={color}
       >
-        <Typography type={size === 'l' ? 'primary' : 'secondary'} color="inherit">
+        <Typography
+          type={size === 'l' ? 'primary' : 'secondary'}
+          color="inherit"
+          lineHeight="inherit"
+        >
           {children}
         </Typography>
       </StyledLink>
@@ -189,7 +210,11 @@ export const Button: ButtonComponent = props => {
       fullWidth={fullWidth}
       colorFn={color}
     >
-      <Typography type={size === 'l' ? 'primary' : 'secondary'} color="inherit">
+      <Typography
+        type={size === 'l' ? 'primary' : 'secondary'}
+        color="inherit"
+        lineHeight="inherit"
+      >
         {children}
       </Typography>
     </StyledButton>
