@@ -1,3 +1,10 @@
+## [1.6.3](https://github.com/nordnet/ui/compare/v1.6.2...v1.6.3) (2019-05-31)
+
+
+### Bug Fixes
+
+* type check of document ([3f48c4b](https://github.com/nordnet/ui/commit/3f48c4b))
+
 ## [1.6.2](https://github.com/nordnet/ui/compare/v1.6.1...v1.6.2) (2019-05-31)
 
 
