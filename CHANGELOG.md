@@ -1,3 +1,10 @@
+# [1.7.0](https://github.com/nordnet/ui/compare/v1.6.3...v1.7.0) (2019-05-31)
+
+
+### Features
+
+* new paddings for medium buttons ([c5bc6e8](https://github.com/nordnet/ui/commit/c5bc6e8))
+
 ## [1.6.3](https://github.com/nordnet/ui/compare/v1.6.2...v1.6.3) (2019-05-31)
 
 
