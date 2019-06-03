@@ -1,3 +1,16 @@
+# [1.9.0](https://github.com/nordnet/ui/compare/v1.8.0...v1.9.0) (2019-06-03)
+
+
+### Bug Fixes
+
+* merge master ([8f3d669](https://github.com/nordnet/ui/commit/8f3d669))
+* update snaps ([7561143](https://github.com/nordnet/ui/commit/7561143))
+
+
+### Features
+
+* add page-header-card ([1e41d8a](https://github.com/nordnet/ui/commit/1e41d8a))
+
 # [1.8.0](https://github.com/nordnet/ui/compare/v1.7.0...v1.8.0) (2019-06-03)
 
 
