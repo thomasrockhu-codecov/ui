@@ -407,6 +407,7 @@ exports[`Storyshots Molecules | CollapsibleCard Collapsible with onClick listene
 }
 
 .c2 > *:not(:first-child) {
+  margin-top: 0;
   margin-left: 16px;
 }
 
