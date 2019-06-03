@@ -1,3 +1,17 @@
+# [1.8.0](https://github.com/nordnet/ui/compare/v1.7.0...v1.8.0) (2019-06-03)
+
+
+### Bug Fixes
+
+* snapshots ([349b6e7](https://github.com/nordnet/ui/commit/349b6e7))
+* update example to use gutter ([1aac1bc](https://github.com/nordnet/ui/commit/1aac1bc))
+* update snaps ([59b3345](https://github.com/nordnet/ui/commit/59b3345))
+
+
+### Features
+
+* add flexbox screen sized props ([0397d44](https://github.com/nordnet/ui/commit/0397d44))
+
 # [1.7.0](https://github.com/nordnet/ui/compare/v1.6.3...v1.7.0) (2019-05-31)
 
 
