@@ -1,3 +1,79 @@
+# [1.7.0](https://github.com/nordnet/ui/compare/v1.6.3...v1.7.0) (2019-05-31)
+
+
+### Features
+
+* new paddings for medium buttons ([c5bc6e8](https://github.com/nordnet/ui/commit/c5bc6e8))
+
+## [1.6.3](https://github.com/nordnet/ui/compare/v1.6.2...v1.6.3) (2019-05-31)
+
+
+### Bug Fixes
+
+* type check of document ([3f48c4b](https://github.com/nordnet/ui/commit/3f48c4b))
+
+## [1.6.2](https://github.com/nordnet/ui/compare/v1.6.1...v1.6.2) (2019-05-31)
+
+
+### Bug Fixes
+
+* **CollapsibleCard:** add document check to be sure ([bc6ca31](https://github.com/nordnet/ui/commit/bc6ca31))
+* **CollapsibleCard:** prevent onClick being called on both touch start and onClick ([58f0e66](https://github.com/nordnet/ui/commit/58f0e66))
+* **CollapsibleCard:** use a different solution for onTouchStart ([4d2b9cd](https://github.com/nordnet/ui/commit/4d2b9cd))
+
+## [1.6.1](https://github.com/nordnet/ui/compare/v1.6.0...v1.6.1) (2019-05-29)
+
+
+### Bug Fixes
+
+* fail early when no country code is specified ([a66ab55](https://github.com/nordnet/ui/commit/a66ab55))
+
+# [1.6.0](https://github.com/nordnet/ui/compare/v1.5.0...v1.6.0) (2019-05-29)
+
+
+### Features
+
+* add new cross icon ([2f81242](https://github.com/nordnet/ui/commit/2f81242))
+
+# [1.5.0](https://github.com/nordnet/ui/compare/v1.4.2...v1.5.0) (2019-05-28)
+
+
+### Bug Fixes
+
+* update snap ([d7db198](https://github.com/nordnet/ui/commit/d7db198))
+
+
+### Features
+
+* add flags for in,za,hk,br and au ([51157ea](https://github.com/nordnet/ui/commit/51157ea))
+* add new flags ([fee17e0](https://github.com/nordnet/ui/commit/fee17e0))
+
+## [1.4.2](https://github.com/nordnet/ui/compare/v1.4.1...v1.4.2) (2019-05-28)
+
+
+### Bug Fixes
+
+* norwegian flag title ([f8ffd1d](https://github.com/nordnet/ui/commit/f8ffd1d))
+
+## [1.4.1](https://github.com/nordnet/ui/compare/v1.4.0...v1.4.1) (2019-05-28)
+
+
+### Bug Fixes
+
+* add className prop ([c09eb17](https://github.com/nordnet/ui/commit/c09eb17))
+* change disabled colors and paddings ([d219708](https://github.com/nordnet/ui/commit/d219708))
+* update snaps ([5add10d](https://github.com/nordnet/ui/commit/5add10d))
+* **Development:** fix infinity edge case ([fc798ff](https://github.com/nordnet/ui/commit/fc798ff))
+
+# [1.4.0](https://github.com/nordnet/ui/compare/v1.3.0...v1.4.0) (2019-05-27)
+
+
+### Features
+
+* exposed onTouchStart and onClick props ([2354098](https://github.com/nordnet/ui/commit/2354098))
+* only exposed onClick ([0257bce](https://github.com/nordnet/ui/commit/0257bce))
+* used exposed props ([8ca6587](https://github.com/nordnet/ui/commit/8ca6587))
+
 # [1.3.0](https://github.com/nordnet/ui/compare/v1.2.0...v1.3.0) (2019-05-27)
 
 

@@ -7,6 +7,20 @@ const styledText = styled.p`
   margin: 0;
 `;
 
+const ExampleWithOnClick = () => {
+  const [clicked, setClicked] = React.useState(0);
+  return (
+    <CollapsibleCard
+      title={`I've been clicked ${clicked} times`}
+      onClick={() => setClicked(clicked + 1)}
+    >
+      <Typography type="primary" as={styledText}>
+        On mobile the onClick event should fire for onTouchStart and not onClick.
+      </Typography>
+    </CollapsibleCard>
+  );
+};
+
 storiesOf('Molecules | CollapsibleCard', module)
   .add('Default', () => {
     return (
@@ -41,4 +55,5 @@ storiesOf('Molecules | CollapsibleCard', module)
         </Typography>
       </CollapsibleCard>
     );
-  });
+  })
+  .add('Collapsible with onClick listener', () => <ExampleWithOnClick />);

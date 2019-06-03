@@ -63,7 +63,7 @@ exports[`Storyshots Molecules | PageHeader Page header with children 1`] = `
   margin: 0;
   font-weight: 400;
   font-size: 14px;
-  line-height: 1.7142857142857142;
+  line-height: inherit;
 }
 
 .c2 {
@@ -97,7 +97,7 @@ exports[`Storyshots Molecules | PageHeader Page header with children 1`] = `
   color: #FFFFFF;
   height: 32px;
   line-height: 28px;
-  padding: 0 8px;
+  padding: 0 16px;
   display: inline-block;
   border-radius: 0;
   cursor: pointer;
@@ -169,7 +169,7 @@ exports[`Storyshots Molecules | PageHeader Page header with children 1`] = `
 @media (min-width:360px) {
   .c13 {
     font-size: 14px;
-    line-height: 1.7142857142857142;
+    line-height: inherit;
   }
 }
 

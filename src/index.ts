@@ -21,7 +21,6 @@ import Avatar from './Molecules/Avatar';
 import Button from './Molecules/Button';
 import CardWithTitle from './Molecules/CardWithTitle';
 import CollapsibleCard from './Molecules/CollapsibleCard';
-import Development from './Molecules/Development/index';
 import LabeledValue from './Molecules/LabeledValue';
 import Link from './Molecules/Link';
 import LinkBuy from './Molecules/LinkBuy';
@@ -36,6 +35,7 @@ import TabsNav from './Molecules/TabsNav';
 
 /** Organisms */
 import CardWithTabs from './Organisms/CardWithTabs';
+import Development from './Organisms/Development';
 
 import theme, { createTheme } from './theme';
 /** Runtime code */

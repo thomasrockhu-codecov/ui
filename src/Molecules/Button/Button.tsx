@@ -21,7 +21,7 @@ const isSecondary = (variant: ButtonProps['variant']) => variant === 'secondary'
 const getBackgroundColor = (props: ThemedStyledProps<ButtonProps | LinkProps, Theme>) => {
   const { disabled, theme, variant, colorFn } = props;
   if (disabled) {
-    return `background-color: ${theme.color.disabled};`;
+    return `background-color: ${theme.color.disabledBackground};`;
   }
 
   if (variant === 'secondary') {
@@ -91,8 +91,25 @@ const getHeight = (props: ThemedStyledProps<ButtonProps | LinkProps, Theme>) => 
   return theme.spacing.unit(hugeness);
 };
 
+const getPadding = (props: ThemedStyledProps<ButtonProps | LinkProps, Theme>) => {
+  let horizontalPadding: number;
+  switch (props.size) {
+    case 's':
+      horizontalPadding = 2;
+      break;
+    case 'm':
+      horizontalPadding = 3;
+      break;
+    default:
+      horizontalPadding = 4;
+      break;
+  }
+  return `
+    padding: 0 ${props.theme.spacing.unit(horizontalPadding)}px;
+  `;
+};
 const getSharedStyle = (props: ThemedStyledProps<ButtonProps | LinkProps, Theme>) => {
-  const { theme, variant, fullWidth, colorFn } = props;
+  const { theme, variant, fullWidth, colorFn, disabled } = props;
   const height = getHeight(props);
 
   const color = colorFn && colorFn(theme);
@@ -110,10 +127,10 @@ const getSharedStyle = (props: ThemedStyledProps<ButtonProps | LinkProps, Theme>
     ${getBackgroundColor(props)}
     box-sizing: border-box;
     border: ${BORDER_SIZE}px solid ${getColorWithDefault('transparent')};
-    color: ${getColorWithDefault(theme.color.buttonText)};
+    color: ${disabled ? theme.color.disabledText : getColorWithDefault(theme.color.buttonText)};
     height: ${height}px;
     line-height: ${height - BORDER_SIZE * 2}px;
-    padding: 0 ${theme.spacing.unit(2)}px;
+    ${getPadding(props)}
     ${fullWidth ? `display: block; width: 100%;` : `display: inline-block;`}
   `;
 };
@@ -133,6 +150,7 @@ const StyledLink = styled(RouterLink)<LinkProps>`
 export const Button: ButtonComponent = props => {
   const typeIsNotPresent = typeof props.type === 'undefined';
   const {
+    className,
     disabled,
     onClick,
     size,
@@ -161,6 +179,7 @@ export const Button: ButtonComponent = props => {
 
     return (
       <StyledLink
+        className={className}
         to={to}
         rel={rel}
         onClick={onClick}
@@ -169,7 +188,11 @@ export const Button: ButtonComponent = props => {
         fullWidth={fullWidth}
         colorFn={color}
       >
-        <Typography type={size === 'l' ? 'primary' : 'secondary'} color="inherit">
+        <Typography
+          type={size === 'l' ? 'primary' : 'secondary'}
+          color="inherit"
+          lineHeight="inherit"
+        >
           {children}
         </Typography>
       </StyledLink>
@@ -178,6 +201,7 @@ export const Button: ButtonComponent = props => {
 
   return (
     <StyledButton
+      className={className}
       disabled={disabled}
       onClick={onClick}
       size={size}
@@ -186,7 +210,11 @@ export const Button: ButtonComponent = props => {
       fullWidth={fullWidth}
       colorFn={color}
     >
-      <Typography type={size === 'l' ? 'primary' : 'secondary'} color="inherit">
+      <Typography
+        type={size === 'l' ? 'primary' : 'secondary'}
+        color="inherit"
+        lineHeight="inherit"
+      >
         {children}
       </Typography>
     </StyledButton>

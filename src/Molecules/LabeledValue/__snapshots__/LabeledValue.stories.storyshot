@@ -240,10 +240,6 @@ exports[`Storyshots Molecules | LabeledValue Integration: LabeledValue with nega
   line-height: 1.7142857142857142;
 }
 
-.c6 {
-  color: #FF1900;
-}
-
 .c0 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -256,6 +252,10 @@ exports[`Storyshots Molecules | LabeledValue Integration: LabeledValue with nega
 
 .c1 {
   margin-bottom: 4px;
+}
+
+.c6 {
+  color: #FF1900;
 }
 
 @media (min-width:360px) {
@@ -373,10 +373,6 @@ exports[`Storyshots Molecules | LabeledValue Integration: LabeledValue with posi
   line-height: 1.7142857142857142;
 }
 
-.c6 {
-  color: #00D200;
-}
-
 .c0 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -389,6 +385,10 @@ exports[`Storyshots Molecules | LabeledValue Integration: LabeledValue with posi
 
 .c1 {
   margin-bottom: 4px;
+}
+
+.c6 {
+  color: #00D200;
 }
 
 @media (min-width:360px) {
