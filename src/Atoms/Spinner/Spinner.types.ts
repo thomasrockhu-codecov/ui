@@ -8,6 +8,7 @@ export type Props = {
   color?: ColorFn;
   /** Globally unique id for the spinner */
   id: string;
+  instant?: boolean;
 };
 
 export type PropsWithTheme = Props & {

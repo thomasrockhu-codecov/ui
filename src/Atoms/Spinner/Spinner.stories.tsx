@@ -20,6 +20,7 @@ storiesOf('Atoms | Spinner', module)
   ))
   .add('Spinner default', () => <Spinner id="mySpinner" />)
   .add('Spinner big', () => <Spinner size={16} id="mySpinner" />)
+  .add('Spinner without delay', () => <Spinner size={16} id="mySpinner" instant />)
   .add('Colors', () => (
     <Display
       items={[
