@@ -1,3 +1,14 @@
+# [1.10.0](https://github.com/nordnet/ui/compare/v1.9.0...v1.10.0) (2019-06-04)
+
+
+### Features
+
+* added back assert warning ([5a010c2](https://github.com/nordnet/ui/commit/5a010c2))
+* added story for disabled button ([010a95b](https://github.com/nordnet/ui/commit/010a95b))
+* allowed to prop for button ([6a7d072](https://github.com/nordnet/ui/commit/6a7d072))
+* fixed border color ([7954b24](https://github.com/nordnet/ui/commit/7954b24))
+* fixed styling for disabled button ([6110415](https://github.com/nordnet/ui/commit/6110415))
+
 # [1.9.0](https://github.com/nordnet/ui/compare/v1.8.0...v1.9.0) (2019-06-03)
 
 
