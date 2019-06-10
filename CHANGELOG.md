@@ -1,3 +1,10 @@
+## [1.11.1](https://github.com/nordnet/ui/compare/v1.11.0...v1.11.1) (2019-06-10)
+
+
+### Bug Fixes
+
+* successfully check if label is a element ([3171ab9](https://github.com/nordnet/ui/commit/3171ab9))
+
 # [1.11.0](https://github.com/nordnet/ui/compare/v1.10.0...v1.11.0) (2019-06-10)
 
 
