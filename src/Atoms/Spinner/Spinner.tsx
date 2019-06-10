@@ -54,16 +54,19 @@ const RawSpinner: React.FC<PropsWithTheme> = ({ theme, size, color, id }) => {
   );
 };
 
-const TimeoutSpinner: React.FC<PropsWithTheme> = ({ instant = false, ...restProps }) => {
+const TimeoutSpinner: React.FC<PropsWithTheme> = ({ delay, ...restProps }) => {
   const [spinning, setSpinning] = useState(false);
   useEffect(() => {
-    const timer = setTimeout(() => {
-      setSpinning(true);
-    }, 270);
+    const timer = setTimeout(
+      () => {
+        setSpinning(true);
+      },
+      typeof delay === 'boolean' ? 270 : delay || 0,
+    );
     return () => clearTimeout(timer);
   }, []);
 
-  if (instant || spinning) {
+  if (!delay || spinning) {
     return <RawSpinner {...restProps} />;
   }
 
