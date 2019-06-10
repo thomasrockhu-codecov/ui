@@ -113,8 +113,12 @@ const getSharedStyle = (props: ThemedStyledProps<ButtonProps | LinkProps, Theme>
   const height = getHeight(props);
 
   const color = colorFn && colorFn(theme);
-  const getColorWithDefault = (defaultColor: string) =>
-    isSecondary(variant) ? color || theme.color.cta : defaultColor;
+  const getColorWithDefault = (defaultColor: string) => {
+    if (disabled) {
+      return 'transparent';
+    }
+    return isSecondary(variant) ? color || theme.color.cta : defaultColor;
+  };
 
   if (color) {
     assert(
@@ -138,7 +142,7 @@ const getSharedStyle = (props: ThemedStyledProps<ButtonProps | LinkProps, Theme>
 const StyledButton = styled(NormalizedElements.Button)<ButtonProps>`
   ${p => getSharedStyle(p)}
   border-radius: 0;
-  cursor: pointer;
+  cursor: ${p => (p.disabled ? 'not-allowed' : 'pointer')};
 `;
 
 const StyledLink = styled(RouterLink)<LinkProps>`
@@ -166,10 +170,9 @@ export const Button: ButtonComponent = props => {
 
   assert(
     toAndDisabledAreNotPresentTogether,
-    "Button: You're using `to` prop together with `disabled` prop. Link's can't be disabled",
+    "You're using `to` prop together with `disabled` prop. `Disabled` prop won't be propagated to the dom node, because <a> element can't be disabled",
     { level: 'warn' },
   );
-
   if (to && !disabled) {
     assert(
       typeIsNotPresent,

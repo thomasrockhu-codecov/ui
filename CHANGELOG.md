@@ -1,3 +1,32 @@
+# [1.11.0](https://github.com/nordnet/ui/compare/v1.10.0...v1.11.0) (2019-06-10)
+
+
+### Bug Fixes
+
+* move to molecules ([2fe74b7](https://github.com/nordnet/ui/commit/2fe74b7))
+* remove unnecessary onchange ([d0739f8](https://github.com/nordnet/ui/commit/d0739f8))
+* update story name ([9ed2c01](https://github.com/nordnet/ui/commit/9ed2c01))
+
+
+### Features
+
+* add hiddenlabel prop ([baad8f3](https://github.com/nordnet/ui/commit/baad8f3))
+* add onchange callback ([b38180a](https://github.com/nordnet/ui/commit/b38180a))
+* add support for controlled behaviour ([233f19b](https://github.com/nordnet/ui/commit/233f19b))
+* create switch component ([39c79d8](https://github.com/nordnet/ui/commit/39c79d8))
+* make label be either string or element ([911b439](https://github.com/nordnet/ui/commit/911b439))
+
+# [1.10.0](https://github.com/nordnet/ui/compare/v1.9.0...v1.10.0) (2019-06-04)
+
+
+### Features
+
+* added back assert warning ([5a010c2](https://github.com/nordnet/ui/commit/5a010c2))
+* added story for disabled button ([010a95b](https://github.com/nordnet/ui/commit/010a95b))
+* allowed to prop for button ([6a7d072](https://github.com/nordnet/ui/commit/6a7d072))
+* fixed border color ([7954b24](https://github.com/nordnet/ui/commit/7954b24))
+* fixed styling for disabled button ([6110415](https://github.com/nordnet/ui/commit/6110415))
+
 # [1.9.0](https://github.com/nordnet/ui/compare/v1.8.0...v1.9.0) (2019-06-03)
 
 
