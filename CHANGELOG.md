@@ -1,3 +1,10 @@
+## [1.11.2](https://github.com/nordnet/ui/compare/v1.11.1...v1.11.2) (2019-06-11)
+
+
+### Bug Fixes
+
+* update paddings and height of buttons ([8f662e3](https://github.com/nordnet/ui/commit/8f662e3))
+
 ## [1.11.1](https://github.com/nordnet/ui/compare/v1.11.0...v1.11.1) (2019-06-10)
 
 
