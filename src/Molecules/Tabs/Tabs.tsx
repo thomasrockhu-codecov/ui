@@ -14,11 +14,15 @@ Item.displayName = 'Tabs.Content';
 
 const StyledButton = styled(NormalizedElements.Button)`
   background: none;
-  display: inline-block;
+  display: flex;
   border: none;
   margin: 0;
   padding: 0;
   cursor: pointer;
+`;
+
+const StyledTypography = styled(Typography)`
+  display: flex;
 `;
 
 const Title: TitleComponent = ({
@@ -32,7 +36,7 @@ const Title: TitleComponent = ({
   const active = activeFromProps;
 
   return (
-    <Typography type="secondary" weight={active ? 'bold' : 'regular'}>
+    <StyledTypography type="secondary" weight={active ? 'bold' : 'regular'}>
       <StyledButton
         ref={setRef}
         type="button"
@@ -45,15 +49,10 @@ const Title: TitleComponent = ({
       >
         <TabTitle active={active}>{children}</TabTitle>
       </StyledButton>
-    </Typography>
+    </StyledTypography>
   );
 };
 Title.displayName = 'Tabs.Title';
-
-const StyledUl = styled(List)`
-  /** @todo check this out */
-  margin-bottom: -1px;
-`;
 
 const isItemElement = (x: any): x is { type: typeof Item; props: ItemProps } =>
   x != null && typeof x === 'object' && Object.hasOwnProperty.call(x, 'type'); // FIXME: && x.type === Item;
@@ -63,20 +62,25 @@ const Tabs: ContainerComponent = ({
   initialActiveTabIndex = 0,
   activeTabIndex,
   className,
+  height = 8,
 }) => {
   // eslint-disable-next-line prefer-const
   let [active, setActive] = useState(initialActiveTabIndex);
   const isControlled = typeof activeTabIndex !== 'undefined';
+
   if (isControlled) active = activeTabIndex!;
+
   const handleTitleClick = (i: number, handler?: React.MouseEventHandler) => (
     e: React.MouseEvent,
   ) => {
     if (handler) handler(e);
     if (!isControlled) setActive(i);
   };
+
   const { setRef, onKeyDown } = useKeyboardNavigation({
     itemsLength: React.Children.count(children),
   });
+
   const titles: React.ReactElement<any>[] = [];
   let contents: React.ReactElement<any> | null = null;
 
@@ -88,7 +92,7 @@ const Tabs: ContainerComponent = ({
     } else {
       titles.push(
         // eslint-disable-next-line react/no-array-index-key
-        <Flexbox item as="li" role="presentation" key={`tabs-${i}`}>
+        <Flexbox item container as="li" role="presentation" key={`tabs-${i}`}>
           <Title
             active={isActive}
             index={i}
@@ -96,9 +100,7 @@ const Tabs: ContainerComponent = ({
             onKeyDown={onKeyDown}
             setRef={setRef(i)}
           >
-            <Typography type="secondary" weight={active === i ? 'bold' : 'regular'}>
-              {c.props.title}
-            </Typography>
+            {c.props.title}
           </Title>
         </Flexbox>,
       );
@@ -119,21 +121,22 @@ const Tabs: ContainerComponent = ({
   });
 
   return (
-    <div>
+    <>
       <Flexbox
         container
         direction="row"
         gutter={4}
-        as={StyledUl}
+        as={List}
         role="tablist"
         className={className}
+        height={11}
       >
         {titles}
       </Flexbox>
       <Separator />
 
       <div>{contents}</div>
-    </div>
+    </>
   );
 };
 Tabs.displayName = 'Tabs';

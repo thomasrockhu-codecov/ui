@@ -3,7 +3,7 @@ import React from 'react';
 import { Route, Redirect } from 'react-router';
 import { HashRouter } from 'react-router-dom';
 import { action } from '@storybook/addon-actions';
-import { Typography, TabsNav, Separator, Flexbox, Box } from '../..';
+import { TabsNav, Separator, Flexbox, Box, Typography } from '../..';
 
 storiesOf('Molecules | TabsNav', module).add('Integration: With react-router', () => (
   <HashRouter>

@@ -14,6 +14,7 @@ const Item: ItemComponent = ({ children }) => {
 Item.displayName = 'TabsNav.Tab';
 
 const StyledLink = styled(Link)`
+  display: flex;
   text-decoration: none;
   &:active {
     color: inherit;
@@ -23,29 +24,26 @@ const StyledLink = styled(Link)`
   }
 `;
 
+const StyledTypography = styled(Typography)`
+  display: flex;
+`;
+
 const Title: TitleComponent = ({ active, children, setRef, to, onKeyDown, onClick }) => {
   return (
-    <Typography type="secondary" weight={active ? 'bold' : 'regular'}>
-      <div>
-        <StyledLink
-          to={to}
-          innerRef={setRef}
-          aria-current={active && 'page'}
-          onKeyDown={onKeyDown}
-          onClick={onClick}
-        >
-          <TabTitle active={active}>{children}</TabTitle>
-        </StyledLink>
-      </div>
-    </Typography>
+    <StyledTypography type="secondary" weight={active ? 'bold' : 'regular'}>
+      <StyledLink
+        to={to}
+        innerRef={setRef}
+        aria-current={active && 'page'}
+        onKeyDown={onKeyDown}
+        onClick={onClick}
+      >
+        <TabTitle active={active}>{children}</TabTitle>
+      </StyledLink>
+    </StyledTypography>
   );
 };
 Title.displayName = 'TabsNav.Title';
-
-const StyledUl = styled(List)`
-  /** @todo check this out */
-  margin-bottom: -1px;
-`;
 
 const isItemElement = (x: any): x is { type: typeof Item; props: ItemProps } =>
   x != null && typeof x === 'object' && Object.hasOwnProperty.call(x, 'type'); // FIXME: && x.type === Item;
@@ -65,7 +63,7 @@ const TabsNav: Component = (withRouter(({ children, location }) => {
       );
 
       titles.push(
-        <Flexbox item as="li" key={c.props.to}>
+        <Flexbox item container as="li" key={c.props.to}>
           <Title
             active={isIndexActive}
             onClick={c.props.onTitleClick}
@@ -81,7 +79,7 @@ const TabsNav: Component = (withRouter(({ children, location }) => {
   });
 
   return (
-    <Flexbox container direction="row" gutter={4} as={StyledUl}>
+    <Flexbox container direction="row" gutter={4} as={List} height={11}>
       {titles}
     </Flexbox>
   );

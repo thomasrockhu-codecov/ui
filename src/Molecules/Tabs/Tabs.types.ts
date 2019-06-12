@@ -21,6 +21,7 @@ export type ContainerProps = {
   activeTabIndex?: number;
   children: React.ReactNode;
   className?: string;
+  height?: number;
 };
 
 export type ItemComponent = React.FC<ItemProps>;
