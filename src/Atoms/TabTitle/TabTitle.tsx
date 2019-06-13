@@ -4,6 +4,7 @@ import { Props } from './TabTitle.types';
 
 const StyledTitle = styled.span<Props>`
   ${props => (props.height ? `height: ${props.theme.spacing.unit(props.height)}px;` : '')}
+  position: relative;
   display: inline-flex;
   align-items: center;
 

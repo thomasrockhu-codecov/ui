@@ -47,6 +47,7 @@ Array [
 
 .c11 {
   height: 32px;
+  position: relative;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -59,6 +60,7 @@ Array [
 
 .c9 {
   height: 32px;
+  position: relative;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -123,7 +125,6 @@ Array [
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  position: relative;
   border: none;
   margin: 0;
   padding: 0;
@@ -306,6 +307,7 @@ exports[`Storyshots Organisms | CardWithTabs Integration: with Typography and ex
 
 .c11 {
   height: 32px;
+  position: relative;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -318,6 +320,7 @@ exports[`Storyshots Organisms | CardWithTabs Integration: with Typography and ex
 
 .c9 {
   height: 32px;
+  position: relative;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -382,7 +385,6 @@ exports[`Storyshots Organisms | CardWithTabs Integration: with Typography and ex
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  position: relative;
   border: none;
   margin: 0;
   padding: 0;
@@ -583,6 +585,7 @@ exports[`Storyshots Organisms | CardWithTabs with initialActiveTabIndex 1`] = `
 
 .c9 {
   height: 32px;
+  position: relative;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -595,6 +598,7 @@ exports[`Storyshots Organisms | CardWithTabs with initialActiveTabIndex 1`] = `
 
 .c11 {
   height: 32px;
+  position: relative;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -659,7 +663,6 @@ exports[`Storyshots Organisms | CardWithTabs with initialActiveTabIndex 1`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  position: relative;
   border: none;
   margin: 0;
   padding: 0;

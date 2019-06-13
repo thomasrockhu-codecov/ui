@@ -4,7 +4,6 @@ import { storiesOf } from '@storybook/react';
 import { TabTitle, Flexbox } from '../..';
 
 const Container = styled.div`
-  position: relative;
   display: inline-flex;
 `;
 

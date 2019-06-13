@@ -53,14 +53,14 @@ storiesOf('Molecules | Tabs', module)
   ))
   .add('With height modified', () => (
     <Typography type="secondary">
-      <StyledTabs height={11}>
+      <Tabs height={11}>
         <Tabs.Tab title="One" onTitleClick={action('Clicked title1')}>
-          <SpacingInside>Ones children</SpacingInside>
+          Ones children
         </Tabs.Tab>
         <Tabs.Tab title="two" onTitleClick={action('Clicked title2')}>
-          <SpacingInside>Twos children</SpacingInside>
+          Twos children
         </Tabs.Tab>
-      </StyledTabs>
+      </Tabs>
     </Typography>
   ))
   .add('Controlled behaviour', () => {

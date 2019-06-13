@@ -16,7 +16,6 @@ Item.displayName = 'TabsNav.Tab';
 const StyledLink = styled(Link)`
   display: flex;
   text-decoration: none;
-  position: relative;
   color: inherit;
 `;
 

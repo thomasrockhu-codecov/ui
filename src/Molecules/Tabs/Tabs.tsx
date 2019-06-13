@@ -15,7 +15,6 @@ Item.displayName = 'Tabs.Content';
 const StyledButton = styled(NormalizedElements.Button)`
   background: none;
   display: flex;
-  position: relative;
   border: none;
   margin: 0;
   padding: 0;
