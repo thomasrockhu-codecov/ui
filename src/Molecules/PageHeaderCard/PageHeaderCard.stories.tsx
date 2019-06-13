@@ -2,7 +2,7 @@ import React from 'react';
 import { storiesOf } from '@storybook/react';
 import { action } from '@storybook/addon-actions';
 import { HashRouter } from 'react-router-dom';
-import { PageHeaderCard, Flexbox, Button, Box, TabsNav, Separator, Typography } from '../..';
+import { PageHeaderCard, Flexbox, Button, Box, TabsNav, Separator } from '../..';
 
 storiesOf('Molecules | PageHeader', module)
   .add('Regular page header', () => <PageHeaderCard title="Your darkest loaves" />)
