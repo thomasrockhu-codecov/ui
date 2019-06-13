@@ -4,8 +4,8 @@ import { storiesOf } from '@storybook/react';
 import { TabTitle, Flexbox } from '../..';
 
 const Container = styled.div`
-  height: ${p => p.theme.spacing.unit(8)}px;
-  display: flex;
+  position: relative;
+  display: inline-flex;
 `;
 
 storiesOf('Atoms | TabTitle', module)
@@ -19,16 +19,29 @@ storiesOf('Atoms | TabTitle', module)
       <TabTitle active>This is tab title</TabTitle>
     </Container>
   ))
+  .add('With height modified', () => (
+    <Container>
+      <TabTitle height={11} active>
+        This is tab title
+      </TabTitle>
+    </Container>
+  ))
   .add('Integration: with Flexbox', () => (
-    <Flexbox container direction="row" height={8}>
-      <Flexbox item container>
-        <TabTitle>TabTitle1</TabTitle>
+    <Flexbox container direction="row">
+      <Flexbox item>
+        <Container>
+          <TabTitle>TabTitle1</TabTitle>
+        </Container>
       </Flexbox>
-      <Flexbox item container>
-        <TabTitle active>TabTitle2</TabTitle>
+      <Flexbox item>
+        <Container>
+          <TabTitle active>TabTitle2</TabTitle>
+        </Container>
       </Flexbox>
-      <Flexbox item container>
-        <TabTitle>TabTitle3</TabTitle>
+      <Flexbox item>
+        <Container>
+          <TabTitle>TabTitle3</TabTitle>
+        </Container>
       </Flexbox>
     </Flexbox>
   ));

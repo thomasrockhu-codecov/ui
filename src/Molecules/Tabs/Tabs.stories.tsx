@@ -51,6 +51,18 @@ storiesOf('Molecules | Tabs', module)
       </StyledTabs>
     </Typography>
   ))
+  .add('With height modified', () => (
+    <Typography type="secondary">
+      <StyledTabs height={11}>
+        <Tabs.Tab title="One" onTitleClick={action('Clicked title1')}>
+          <SpacingInside>Ones children</SpacingInside>
+        </Tabs.Tab>
+        <Tabs.Tab title="two" onTitleClick={action('Clicked title2')}>
+          <SpacingInside>Twos children</SpacingInside>
+        </Tabs.Tab>
+      </StyledTabs>
+    </Typography>
+  ))
   .add('Controlled behaviour', () => {
     const ControlledExample = () => {
       const [active, setActive] = useState(0);

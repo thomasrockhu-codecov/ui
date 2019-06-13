@@ -15,14 +15,12 @@ Item.displayName = 'Tabs.Content';
 const StyledButton = styled(NormalizedElements.Button)`
   background: none;
   display: flex;
+  position: relative;
   border: none;
   margin: 0;
   padding: 0;
   cursor: pointer;
-`;
-
-const StyledTypography = styled(Typography)`
-  display: flex;
+  font-weight: inherit;
 `;
 
 const Title: TitleComponent = ({
@@ -32,11 +30,12 @@ const Title: TitleComponent = ({
   onKeyDown,
   index,
   setRef,
+  height,
 }) => {
   const active = activeFromProps;
 
   return (
-    <StyledTypography type="secondary" weight={active ? 'bold' : 'regular'}>
+    <Typography type="secondary" weight={active ? 'bold' : 'regular'}>
       <StyledButton
         ref={setRef}
         type="button"
@@ -47,9 +46,11 @@ const Title: TitleComponent = ({
         id={`tabs-tab-${index}`}
         tabIndex={active ? 0 : -1}
       >
-        <TabTitle active={active}>{children}</TabTitle>
+        <TabTitle active={active} height={height}>
+          {children}
+        </TabTitle>
       </StyledButton>
-    </StyledTypography>
+    </Typography>
   );
 };
 Title.displayName = 'Tabs.Title';
@@ -92,13 +93,14 @@ const Tabs: ContainerComponent = ({
     } else {
       titles.push(
         // eslint-disable-next-line react/no-array-index-key
-        <Flexbox item container as="li" role="presentation" key={`tabs-${i}`}>
+        <Flexbox item as="li" role="presentation" key={`tabs-${i}`}>
           <Title
             active={isActive}
             index={i}
             onClick={handleTitleClick(i, c.props.onTitleClick)}
             onKeyDown={onKeyDown}
             setRef={setRef(i)}
+            height={height}
           >
             {c.props.title}
           </Title>
@@ -122,15 +124,7 @@ const Tabs: ContainerComponent = ({
 
   return (
     <>
-      <Flexbox
-        container
-        direction="row"
-        gutter={4}
-        as={List}
-        role="tablist"
-        className={className}
-        height={11}
-      >
+      <Flexbox container direction="row" gutter={4} as={List} role="tablist" className={className}>
         {titles}
       </Flexbox>
       <Separator />

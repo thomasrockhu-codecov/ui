@@ -16,21 +16,13 @@ Item.displayName = 'TabsNav.Tab';
 const StyledLink = styled(Link)`
   display: flex;
   text-decoration: none;
-  &:active {
-    color: inherit;
-  }
-  &:visited {
-    color: inherit;
-  }
+  position: relative;
+  color: inherit;
 `;
 
-const StyledTypography = styled(Typography)`
-  display: flex;
-`;
-
-const Title: TitleComponent = ({ active, children, setRef, to, onKeyDown, onClick }) => {
+const Title: TitleComponent = ({ active, children, setRef, to, onKeyDown, onClick, height }) => {
   return (
-    <StyledTypography type="secondary" weight={active ? 'bold' : 'regular'}>
+    <Typography type="primary" weight={active ? 'bold' : 'regular'}>
       <StyledLink
         to={to}
         innerRef={setRef}
@@ -38,9 +30,11 @@ const Title: TitleComponent = ({ active, children, setRef, to, onKeyDown, onClic
         onKeyDown={onKeyDown}
         onClick={onClick}
       >
-        <TabTitle active={active}>{children}</TabTitle>
+        <TabTitle active={active} height={height}>
+          {children}
+        </TabTitle>
       </StyledLink>
-    </StyledTypography>
+    </Typography>
   );
 };
 Title.displayName = 'TabsNav.Title';
@@ -48,7 +42,9 @@ Title.displayName = 'TabsNav.Title';
 const isItemElement = (x: any): x is { type: typeof Item; props: ItemProps } =>
   x != null && typeof x === 'object' && Object.hasOwnProperty.call(x, 'type'); // FIXME: && x.type === Item;
 
-const TabsNav: Component = (withRouter(({ children, location }) => {
+// TODO: fix ts issue with height prop
+// @ts-ignore
+const TabsNav: Component = (withRouter(({ children, location, height = 11 }) => {
   const { setRef, onKeyDown } = useKeyboardNavigation({
     itemsLength: React.Children.count(children),
   });
@@ -63,13 +59,14 @@ const TabsNav: Component = (withRouter(({ children, location }) => {
       );
 
       titles.push(
-        <Flexbox item container as="li" key={c.props.to}>
+        <Flexbox item as="li" key={c.props.to}>
           <Title
             active={isIndexActive}
             onClick={c.props.onTitleClick}
             setRef={setRef(i)}
             to={c.props.to}
             onKeyDown={onKeyDown}
+            height={height}
           >
             {c.props.title}
           </Title>
@@ -79,11 +76,12 @@ const TabsNav: Component = (withRouter(({ children, location }) => {
   });
 
   return (
-    <Flexbox container direction="row" gutter={4} as={List} height={11}>
+    <Flexbox container direction="row" gutter={4} as={List} sm={{ gutter: 8 }}>
       {titles}
     </Flexbox>
   );
 }) as unknown) as Component;
+
 TabsNav.displayName = 'TabsNav';
 TabsNav.Tab = Item;
 
