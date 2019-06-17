@@ -47,8 +47,13 @@ const StyledUl = styled(List)`
   margin-bottom: -1px;
 `;
 
-const isItemElement = (x: any): x is { type: typeof Item; props: ItemProps } =>
-  x != null && typeof x === 'object' && Object.hasOwnProperty.call(x, 'type'); // FIXME: && x.type === Item;
+const isItemOrUndefined = (x: any): x is { type: typeof Item; props: ItemProps } => {
+  if (x == null || typeof x === 'undefined') {
+    return true;
+  }
+
+  return typeof x === 'object' && Object.hasOwnProperty.call(x, 'type'); // FIXME: && x.type === Item;
+};
 
 const TabsNav: Component = (withRouter(({ children, location }) => {
   const { setRef, onKeyDown } = useKeyboardNavigation({
@@ -57,9 +62,9 @@ const TabsNav: Component = (withRouter(({ children, location }) => {
   const titles: React.ReactNode[] = [];
 
   React.Children.forEach(children, (c, i) => {
-    if (!isItemElement(c)) {
+    if (!isItemOrUndefined(c)) {
       assert(false, 'There should be only <TabsNav.Tab> children inside of <TabsNav> component');
-    } else {
+    } else if (c) {
       const isIndexActive = Boolean(
         matchPath(location.pathname, { path: c.props.to, exact: Boolean(c.props.exact) }),
       );
