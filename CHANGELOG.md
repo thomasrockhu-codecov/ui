@@ -1,3 +1,10 @@
+## [1.13.1](https://github.com/nordnet/ui/compare/v1.13.0...v1.13.1) (2019-06-17)
+
+
+### Bug Fixes
+
+* allow null or undefined for tabs ([b5b95cb](https://github.com/nordnet/ui/commit/b5b95cb))
+
 # [1.13.0](https://github.com/nordnet/ui/compare/v1.12.0...v1.13.0) (2019-06-17)
 
 
