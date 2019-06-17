@@ -1,3 +1,61 @@
+# [1.13.0](https://github.com/nordnet/ui/compare/v1.12.0...v1.13.0) (2019-06-17)
+
+
+### Bug Fixes
+
+* **spinner:** change prop to delay ([93abf35](https://github.com/nordnet/ui/commit/93abf35))
+
+
+### Features
+
+* **spinner:** add delay to show spinner ([45816bd](https://github.com/nordnet/ui/commit/45816bd))
+
+# [1.12.0](https://github.com/nordnet/ui/compare/v1.11.2...v1.12.0) (2019-06-12)
+
+
+### Bug Fixes
+
+* make change not be a breaking change ([775cf1c](https://github.com/nordnet/ui/commit/775cf1c))
+* update snap ([9e0886f](https://github.com/nordnet/ui/commit/9e0886f))
+* update snaps ([0637efa](https://github.com/nordnet/ui/commit/0637efa))
+
+
+### Features
+
+* add new stars and add support for stroke ([f2b1f16](https://github.com/nordnet/ui/commit/f2b1f16))
+
+## [1.11.2](https://github.com/nordnet/ui/compare/v1.11.1...v1.11.2) (2019-06-11)
+
+
+### Bug Fixes
+
+* update paddings and height of buttons ([8f662e3](https://github.com/nordnet/ui/commit/8f662e3))
+
+## [1.11.1](https://github.com/nordnet/ui/compare/v1.11.0...v1.11.1) (2019-06-10)
+
+
+### Bug Fixes
+
+* successfully check if label is a element ([3171ab9](https://github.com/nordnet/ui/commit/3171ab9))
+
+# [1.11.0](https://github.com/nordnet/ui/compare/v1.10.0...v1.11.0) (2019-06-10)
+
+
+### Bug Fixes
+
+* move to molecules ([2fe74b7](https://github.com/nordnet/ui/commit/2fe74b7))
+* remove unnecessary onchange ([d0739f8](https://github.com/nordnet/ui/commit/d0739f8))
+* update story name ([9ed2c01](https://github.com/nordnet/ui/commit/9ed2c01))
+
+
+### Features
+
+* add hiddenlabel prop ([baad8f3](https://github.com/nordnet/ui/commit/baad8f3))
+* add onchange callback ([b38180a](https://github.com/nordnet/ui/commit/b38180a))
+* add support for controlled behaviour ([233f19b](https://github.com/nordnet/ui/commit/233f19b))
+* create switch component ([39c79d8](https://github.com/nordnet/ui/commit/39c79d8))
+* make label be either string or element ([911b439](https://github.com/nordnet/ui/commit/911b439))
+
 # [1.10.0](https://github.com/nordnet/ui/compare/v1.9.0...v1.10.0) (2019-06-04)
 
 

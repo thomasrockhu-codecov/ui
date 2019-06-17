@@ -1,6 +1,24 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Storyshots Molecules | PageHeader Page header with children 1`] = `
+.c2 {
+  margin: 0 auto;
+}
+
+.c5 {
+  padding: 12px;
+}
+
+.c9 {
+  padding-left: 12px;
+  padding-right: 12px;
+}
+
+.c10 {
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
 .c0 {
   background: #FFFFFF;
   box-shadow: 0 2px 2px 0 rgba(0,0,0,0.03);
@@ -63,25 +81,7 @@ exports[`Storyshots Molecules | PageHeader Page header with children 1`] = `
   margin: 0;
   font-weight: 400;
   font-size: 14px;
-  line-height: inherit;
-}
-
-.c2 {
-  margin: 0 auto;
-}
-
-.c5 {
-  padding: 12px;
-}
-
-.c9 {
-  padding-left: 12px;
-  padding-right: 12px;
-}
-
-.c10 {
-  padding-top: 8px;
-  padding-bottom: 8px;
+  line-height: 1.7142857142857142;
 }
 
 .c12 {
@@ -92,13 +92,24 @@ exports[`Storyshots Molecules | PageHeader Page header with children 1`] = `
   overflow: visible;
   text-transform: none;
   background-color: #0046FF;
+  padding: 4px 12px;
+  min-height: 32px;
+  position: relative;
   box-sizing: border-box;
-  border: 2px solid transparent;
   color: #FFFFFF;
-  height: 32px;
-  line-height: 28px;
-  padding: 0 16px;
-  display: inline-block;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  border: none;
   border-radius: 0;
   cursor: pointer;
 }
@@ -131,6 +142,47 @@ exports[`Storyshots Molecules | PageHeader Page header with children 1`] = `
 
 .c12:active {
   background-color: hsl(223.5,100%,40%);
+}
+
+.c12::before {
+  content: '';
+  display: block;
+  border: 2px solid transparent;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: calc(100% - 4px);
+  height: calc(100% - 4px);
+}
+
+@media (min-width:768px) {
+  .c2 {
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+}
+
+@media (min-width:768px) {
+  .c5 {
+    padding-left: 0px;
+    padding-top: 8px;
+    padding-right: 0px;
+    padding-bottom: 8px;
+  }
+}
+
+@media (min-width:768px) {
+  .c9 {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+}
+
+@media (min-width:768px) {
+  .c10 {
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
 }
 
 @media (min-width:768px) {
@@ -169,37 +221,7 @@ exports[`Storyshots Molecules | PageHeader Page header with children 1`] = `
 @media (min-width:360px) {
   .c13 {
     font-size: 14px;
-    line-height: inherit;
-  }
-}
-
-@media (min-width:768px) {
-  .c2 {
-    padding-left: 8px;
-    padding-right: 8px;
-  }
-}
-
-@media (min-width:768px) {
-  .c5 {
-    padding-left: 0px;
-    padding-top: 8px;
-    padding-right: 0px;
-    padding-bottom: 8px;
-  }
-}
-
-@media (min-width:768px) {
-  .c9 {
-    padding-left: 0px;
-    padding-right: 0px;
-  }
-}
-
-@media (min-width:768px) {
-  .c10 {
-    padding-top: 0px;
-    padding-bottom: 0px;
+    line-height: 1.7142857142857142;
   }
 }
 
@@ -310,6 +332,14 @@ exports[`Storyshots Molecules | PageHeader Page header with children 1`] = `
 `;
 
 exports[`Storyshots Molecules | PageHeader Regular page header 1`] = `
+.c2 {
+  margin: 0 auto;
+}
+
+.c5 {
+  padding: 12px;
+}
+
 .c0 {
   background: #FFFFFF;
   box-shadow: 0 2px 2px 0 rgba(0,0,0,0.03);
@@ -339,12 +369,20 @@ exports[`Storyshots Molecules | PageHeader Regular page header 1`] = `
   line-height: 1.2;
 }
 
-.c2 {
-  margin: 0 auto;
+@media (min-width:768px) {
+  .c2 {
+    padding-left: 8px;
+    padding-right: 8px;
+  }
 }
 
-.c5 {
-  padding: 12px;
+@media (min-width:768px) {
+  .c5 {
+    padding-left: 0px;
+    padding-top: 8px;
+    padding-right: 0px;
+    padding-bottom: 8px;
+  }
 }
 
 @media (min-width:768px) {
@@ -371,22 +409,6 @@ exports[`Storyshots Molecules | PageHeader Regular page header 1`] = `
   .c6 {
     font-size: 24px;
     line-height: 1.1666666666666667;
-  }
-}
-
-@media (min-width:768px) {
-  .c2 {
-    padding-left: 8px;
-    padding-right: 8px;
-  }
-}
-
-@media (min-width:768px) {
-  .c5 {
-    padding-left: 0px;
-    padding-top: 8px;
-    padding-right: 0px;
-    padding-bottom: 8px;
   }
 }
 

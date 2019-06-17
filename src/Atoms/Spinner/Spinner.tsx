@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import styled, { withTheme } from 'styled-components';
 import { Props, PropsWithTheme } from './Spinner.types';
 
@@ -54,6 +54,25 @@ const RawSpinner: React.FC<PropsWithTheme> = ({ theme, size, color, id }) => {
   );
 };
 
-export const Spinner: React.FC<Props> = withTheme(RawSpinner);
+const TimeoutSpinner: React.FC<PropsWithTheme> = ({ delay, ...restProps }) => {
+  const [spinning, setSpinning] = useState(false);
+  useEffect(() => {
+    const timer = setTimeout(
+      () => {
+        setSpinning(true);
+      },
+      typeof delay === 'boolean' ? 270 : delay || 0,
+    );
+    return () => clearTimeout(timer);
+  }, []);
+
+  if (!delay || spinning) {
+    return <RawSpinner {...restProps} />;
+  }
+
+  return null;
+};
+
+export const Spinner: React.FC<Props> = withTheme(TimeoutSpinner);
 
 Spinner.displayName = 'Spinner';
