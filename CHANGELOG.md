@@ -1,3 +1,12 @@
+## [1.13.2](https://github.com/nordnet/ui/compare/v1.13.1...v1.13.2) (2019-06-17)
+
+
+### Bug Fixes
+
+* make height prop work ([99c2f73](https://github.com/nordnet/ui/commit/99c2f73))
+* media query story ([c4c15a6](https://github.com/nordnet/ui/commit/c4c15a6))
+* update story name ([db79ad1](https://github.com/nordnet/ui/commit/db79ad1))
+
 ## [1.13.1](https://github.com/nordnet/ui/compare/v1.13.0...v1.13.1) (2019-06-17)
 
 ### Bug Fixes
