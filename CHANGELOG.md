@@ -1,3 +1,15 @@
+# [1.13.0](https://github.com/nordnet/ui/compare/v1.12.0...v1.13.0) (2019-06-17)
+
+
+### Bug Fixes
+
+* **spinner:** change prop to delay ([93abf35](https://github.com/nordnet/ui/commit/93abf35))
+
+
+### Features
+
+* **spinner:** add delay to show spinner ([45816bd](https://github.com/nordnet/ui/commit/45816bd))
+
 # [1.12.0](https://github.com/nordnet/ui/compare/v1.11.2...v1.12.0) (2019-06-12)
 
 
