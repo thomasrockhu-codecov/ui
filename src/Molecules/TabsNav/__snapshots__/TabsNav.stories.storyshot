@@ -1,6 +1,11 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Storyshots Molecules | TabsNav Integration: With react-router 1`] = `
+.c11 {
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+
 .c1 {
   box-sizing: border-box;
 }
@@ -28,6 +33,7 @@ exports[`Storyshots Molecules | TabsNav Integration: With react-router 1`] = `
 }
 
 .c3 > *:not(:first-child) {
+  margin-top: 0;
   margin-left: 16px;
 }
 
@@ -81,11 +87,6 @@ exports[`Storyshots Molecules | TabsNav Integration: With react-router 1`] = `
   font-weight: 700;
   font-size: 14px;
   line-height: 1.7142857142857142;
-}
-
-.c11 {
-  padding-top: 16px;
-  padding-bottom: 16px;
 }
 
 .c7 {
@@ -200,6 +201,159 @@ exports[`Storyshots Molecules | TabsNav Integration: With react-router 1`] = `
     >
       /route1 content
     </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Molecules | TabsNav Integration: conditionally hide tab 1`] = `
+.c1 {
+  box-sizing: border-box;
+}
+
+.c0 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.c3 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+}
+
+.c3 > *:not(:first-child) {
+  margin-top: 0;
+  margin-left: 16px;
+}
+
+.c5 {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.c7 {
+  background: none;
+  display: inline-block;
+  border: none;
+  margin: 0;
+  padding: 0;
+  padding-bottom: 4px;
+  color: #282823;
+  border-bottom: 2px solid transparent;
+}
+
+.c2 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7142857142857142;
+}
+
+.c6 {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c6:active {
+  color: inherit;
+}
+
+.c6:visited {
+  color: inherit;
+}
+
+.c4 {
+  margin-bottom: -1px;
+}
+
+@media (min-width:360px) {
+  .c2 {
+    font-size: 14px;
+    line-height: 1.7142857142857142;
+  }
+}
+
+<div
+  className="c0"
+>
+  <div
+    className="c1"
+  >
+    <span
+      className="c2"
+      type="secondary"
+    >
+      <ul
+        className="c3 c4 c5"
+      >
+        <li
+          className="c1"
+        >
+          <span
+            className="c2"
+            type="secondary"
+          >
+            <div>
+              <a
+                aria-current={false}
+                className="c6"
+                href="#/route2"
+                onClick={[Function]}
+                onKeyDown={[Function]}
+              >
+                <div
+                  className="c7"
+                >
+                  <div>
+                    Link to /route2
+                  </div>
+                </div>
+              </a>
+            </div>
+          </span>
+        </li>
+        <li
+          className="c1"
+        >
+          <span
+            className="c2"
+            type="secondary"
+          >
+            <div>
+              <a
+                aria-current={false}
+                className="c6"
+                href="#/route3"
+                onClick={[Function]}
+                onKeyDown={[Function]}
+              >
+                <div
+                  className="c7"
+                >
+                  <div>
+                    Link to /route2
+                  </div>
+                </div>
+              </a>
+            </div>
+          </span>
+        </li>
+      </ul>
+    </span>
   </div>
 </div>
 `;

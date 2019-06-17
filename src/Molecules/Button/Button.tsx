@@ -4,7 +4,7 @@ import Color from 'color';
 import { Link as RouterLink } from 'react-router-dom';
 import { ButtonComponent, ButtonProps, LinkProps } from './Button.types';
 import { Theme } from '../../theme/theme.types';
-import { isUndefined, assert } from '../../common/utils';
+import { assert } from '../../common/utils';
 import NormalizedElements from '../../common/NormalizedElements';
 import { Typography } from '../..';
 
@@ -13,7 +13,16 @@ const HEIGHT = {
   m: 8,
   l: 10,
 };
-
+const PADDING_VERTICAL = {
+  s: 0,
+  m: 1,
+  l: 2,
+};
+const PADDING_HORIZONTAL = {
+  s: 2,
+  m: 3,
+  l: 4,
+};
 const BORDER_SIZE = 2;
 
 const isSecondary = (variant: ButtonProps['variant']) => variant === 'secondary';
@@ -21,7 +30,7 @@ const isSecondary = (variant: ButtonProps['variant']) => variant === 'secondary'
 const getBackgroundColor = (props: ThemedStyledProps<ButtonProps | LinkProps, Theme>) => {
   const { disabled, theme, variant, colorFn } = props;
   if (disabled) {
-    return `background-color: ${theme.color.disabled};`;
+    return `background-color: ${theme.color.disabledBackground};`;
   }
 
   if (variant === 'secondary') {
@@ -84,20 +93,32 @@ const getBackgroundColor = (props: ThemedStyledProps<ButtonProps | LinkProps, Th
     `;
 };
 
-const getHeight = (props: ThemedStyledProps<ButtonProps | LinkProps, Theme>) => {
-  const { theme, size } = props;
-  const hugeness = isUndefined(size) ? HEIGHT.m : HEIGHT[size];
+const getMinHeight = (props: ThemedStyledProps<ButtonProps | LinkProps, Theme>) => {
+  const { theme, size = 'm' } = props;
 
-  return theme.spacing.unit(hugeness);
+  return `min-height: ${theme.spacing.unit(HEIGHT[size])}px`;
+};
+
+const getPadding = (props: ThemedStyledProps<ButtonProps | LinkProps, Theme>) => {
+  const { size = 'm' } = props;
+
+  return `
+    padding:
+      ${props.theme.spacing.unit(PADDING_VERTICAL[size])}px
+      ${props.theme.spacing.unit(PADDING_HORIZONTAL[size])}px;
+  `;
 };
 
 const getSharedStyle = (props: ThemedStyledProps<ButtonProps | LinkProps, Theme>) => {
-  const { theme, variant, fullWidth, colorFn } = props;
-  const height = getHeight(props);
+  const { theme, variant, fullWidth, colorFn, disabled } = props;
 
   const color = colorFn && colorFn(theme);
-  const getColorWithDefault = (defaultColor: string) =>
-    isSecondary(variant) ? color || theme.color.cta : defaultColor;
+  const getColorWithDefault = (defaultColor: string) => {
+    if (disabled) {
+      return 'transparent';
+    }
+    return isSecondary(variant) ? color || theme.color.cta : defaultColor;
+  };
 
   if (color) {
     assert(
@@ -108,31 +129,44 @@ const getSharedStyle = (props: ThemedStyledProps<ButtonProps | LinkProps, Theme>
 
   return `
     ${getBackgroundColor(props)}
+    ${getPadding(props)}
+    ${getMinHeight(props)}
+    position: relative;
     box-sizing: border-box;
-    border: ${BORDER_SIZE}px solid ${getColorWithDefault('transparent')};
-    color: ${getColorWithDefault(theme.color.buttonText)};
-    height: ${height}px;
-    line-height: ${height - BORDER_SIZE * 2}px;
-    padding: 0 ${theme.spacing.unit(2)}px;
-    ${fullWidth ? `display: block; width: 100%;` : `display: inline-block;`}
+    color: ${disabled ? theme.color.disabledText : getColorWithDefault(theme.color.buttonText)};
+    align-items: center;
+    justify-content: center;
+    ${fullWidth ? `display: flex; width: 100%;` : `display: inline-flex;`}
+
+    &::before {
+      content: '';
+      display: block;
+      border: ${BORDER_SIZE}px solid ${getColorWithDefault('transparent')};
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: calc(100% - ${BORDER_SIZE * 2}px);
+      height: calc(100% - ${BORDER_SIZE * 2}px);
+    }
   `;
 };
 
 const StyledButton = styled(NormalizedElements.Button)<ButtonProps>`
   ${p => getSharedStyle(p)}
+  border: none;
   border-radius: 0;
-  cursor: pointer;
+  cursor: ${p => (p.disabled ? 'not-allowed' : 'pointer')};
 `;
 
 const StyledLink = styled(RouterLink)<LinkProps>`
   ${p => getSharedStyle(p)}
   text-decoration: none;
-  text-align: center;
 `;
 
 export const Button: ButtonComponent = props => {
   const typeIsNotPresent = typeof props.type === 'undefined';
   const {
+    className,
     disabled,
     onClick,
     size,
@@ -148,10 +182,9 @@ export const Button: ButtonComponent = props => {
 
   assert(
     toAndDisabledAreNotPresentTogether,
-    "Button: You're using `to` prop together with `disabled` prop. Link's can't be disabled",
+    "You're using `to` prop together with `disabled` prop. `Disabled` prop won't be propagated to the dom node, because <a> element can't be disabled",
     { level: 'warn' },
   );
-
   if (to && !disabled) {
     assert(
       typeIsNotPresent,
@@ -161,6 +194,7 @@ export const Button: ButtonComponent = props => {
 
     return (
       <StyledLink
+        className={className}
         to={to}
         rel={rel}
         onClick={onClick}
@@ -178,6 +212,7 @@ export const Button: ButtonComponent = props => {
 
   return (
     <StyledButton
+      className={className}
       disabled={disabled}
       onClick={onClick}
       size={size}

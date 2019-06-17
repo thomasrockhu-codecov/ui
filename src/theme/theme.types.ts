@@ -83,8 +83,12 @@ export type Theme = {
     divider: RawColor['gray6'];
     /** gray0 */
     backgroundDark: RawColor['gray0'];
-    /** gray3 */
+    /** @deprecated gray3 */
     disabled: RawColor['gray3'];
+    /** gray3 */
+    disabledText: RawColor['gray3'];
+    /** gray6 */
+    disabledBackground: RawColor['gray6'];
     /** white */
     buttonSecondaryBackground: RawColor['white'];
     /** white */
@@ -93,6 +97,10 @@ export type Theme = {
     spinnerBlack: RawColor['black'];
     /** white */
     spinnerWhite: RawColor['white'];
+    /** gray0 */
+    svgFill: RawColor['gray0'];
+    /** gray2 */
+    svgStroke: RawColor['gray2'];
     /** gray4 */
     inputBorder: RawColor['gray4'];
     /** gray1 */

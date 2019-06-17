@@ -4,6 +4,7 @@ import { CheckMarkCircle } from './components/CheckMarkCircle';
 import { ChevronDown } from './components/ChevronDown';
 import { ChevronUp } from './components/ChevronUp';
 import { Bolt } from './components/Bolt';
+import { Cross } from './components/Cross';
 import { CrossCircle } from './components/CrossCircle';
 import { DirectionDown } from './components/DirectionDown';
 import { DirectionUp } from './components/DirectionUp';
@@ -11,6 +12,7 @@ import { Flag } from './components/Flag';
 import { Globe } from './components/Globe';
 import { Printer } from './components/Printer';
 import { Star } from './components/Star';
+import { Star24 } from './components/Star24';
 import { Trash } from './components/Trash';
 
 export default {
@@ -20,6 +22,7 @@ export default {
   ChevronDown,
   ChevronUp,
   Bolt,
+  Cross,
   CrossCircle,
   DirectionDown,
   DirectionUp,
@@ -27,5 +30,6 @@ export default {
   Globe,
   Printer,
   Star,
+  Star24,
   Trash,
 };
