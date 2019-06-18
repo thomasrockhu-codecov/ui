@@ -10,29 +10,32 @@ const negateMedia = R.pipe(
   R.insert(1, 'not all and'),
   R.join(' '),
 );
-// prettier-ignore
-const StyledDiv = styled.div<{query: Props['query']}>`
-    ${p => negateMedia(typeof p.query === 'string' ? p.query : p.query(p.theme))} {
-        display: none;
-    }
-`
-const noop = () => {};
+
+const StyledDiv = styled.div<{ query: Props['query'] }>`
+  ${p => negateMedia(typeof p.query === 'string' ? p.query : p.query(p.theme))} {
+    display: none;
+  }
+`;
 const useMedia = (query: string | ((t: Theme) => string)) => {
   const theme = React.useContext(ThemeContext);
+  const [matches, setMatches] = React.useState<boolean | null>(null);
   const mediaQuery = (typeof query === 'string' ? query : query(theme)).replace('@media ', '');
 
-  const mediaHit =
-    typeof window === 'undefined' || !window || !window.matchMedia
-      ? { matches: null, addListener: noop, removeListener: noop }
-      : window.matchMedia(mediaQuery);
-
-  const [matches, setMatches] = React.useState(mediaHit.matches);
-
+  // Effect won't run during SSR
   React.useEffect(() => {
-    const listener = (x: MediaQueryListEvent) => setMatches(x.matches);
-    mediaHit.addListener(listener);
-    return () => mediaHit.removeListener(listener);
-  }, [mediaHit]);
+    const media = window.matchMedia(mediaQuery);
+
+    // Set matches first time
+    setMatches(media.matches);
+    const handler = (e: MediaQueryListEvent) => setMatches(e.matches);
+
+    // Then update matches
+    // if screen hits new breakpoint
+    media.addEventListener('change', handler);
+
+    // And of course unsubscribe onunmount
+    return () => media.removeEventListener('change', handler);
+  }, [mediaQuery]);
 
   return matches;
 };
@@ -42,7 +45,7 @@ const Media: React.FunctionComponent<Props> = props => {
   // If matches === null it means we are in SSR
   // Show css fallback then
   if (matches === null) return <StyledDiv {...props} />;
-  return matches ? <StyledDiv {...props} /> : null;
+  return matches ? <>{props.children}</> : null;
 };
 
 export { Media, useMedia };
