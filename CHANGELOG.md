@@ -1,3 +1,10 @@
+## [1.13.3](https://github.com/nordnet/ui/compare/v1.13.2...v1.13.3) (2019-06-18)
+
+
+### Bug Fixes
+
+* do not show error if tab is null ([0a9183f](https://github.com/nordnet/ui/commit/0a9183f))
+
 ## [1.13.2](https://github.com/nordnet/ui/compare/v1.13.1...v1.13.2) (2019-06-17)
 
 
