@@ -37,6 +37,34 @@
 * 🎸 polished media component ([34815a3](https://github.com/nordnet/ui/commit/34815a3))
 * improved media and useMedia hook ([40c4102](https://github.com/nordnet/ui/commit/40c4102))
 
+
+# [1.15.0-beta.1](https://github.com/nordnet/ui/compare/v1.14.0...v1.15.0-beta.1@beta) (2019-06-18)
+
+
+### Bug Fixes
+
+* add deprecate message to theme.size ([790b651](https://github.com/nordnet/ui/commit/790b651))
+* attempt semantic release of beta branch ([c0f818c](https://github.com/nordnet/ui/commit/c0f818c))
+* disable href linting of link component ([98ade87](https://github.com/nordnet/ui/commit/98ade87))
+* do not show error if tab is null ([4df980f](https://github.com/nordnet/ui/commit/4df980f))
+* logic fix in types ([401e4bb](https://github.com/nordnet/ui/commit/401e4bb))
+* make height prop work ([2e0acc5](https://github.com/nordnet/ui/commit/2e0acc5))
+* media query story ([ef882bc](https://github.com/nordnet/ui/commit/ef882bc))
+* merge master ([06208cf](https://github.com/nordnet/ui/commit/06208cf))
+* update paths to link component types ([3632552](https://github.com/nordnet/ui/commit/3632552))
+* update snap ([f65870d](https://github.com/nordnet/ui/commit/f65870d))
+* update snaps ([86e85bb](https://github.com/nordnet/ui/commit/86e85bb))
+* update snaps after merge of master ([5fc4bea](https://github.com/nordnet/ui/commit/5fc4bea))
+* update story name ([98073da](https://github.com/nordnet/ui/commit/98073da))
+
+
+### Features
+
+* add bolt icon ([b36d53c](https://github.com/nordnet/ui/commit/b36d53c))
+* add new breakpoints ([2115059](https://github.com/nordnet/ui/commit/2115059))
+* render buttons looking like links ([b4cc511](https://github.com/nordnet/ui/commit/b4cc511))
+
+
 # [1.14.0](https://github.com/nordnet/ui/compare/v1.13.3...v1.14.0) (2019-06-18)
 
 
