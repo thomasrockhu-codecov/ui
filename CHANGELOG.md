@@ -1,3 +1,18 @@
+# [1.14.0](https://github.com/nordnet/ui/compare/v1.13.3...v1.14.0) (2019-06-18)
+
+
+### Bug Fixes
+
+* disable href linting of link component ([d30bbca](https://github.com/nordnet/ui/commit/d30bbca))
+* logic fix in types ([472663e](https://github.com/nordnet/ui/commit/472663e))
+* update paths to link component types ([569d442](https://github.com/nordnet/ui/commit/569d442))
+* update snaps ([e25c386](https://github.com/nordnet/ui/commit/e25c386))
+
+
+### Features
+
+* render buttons looking like links ([b108543](https://github.com/nordnet/ui/commit/b108543))
+
 ## [1.13.3](https://github.com/nordnet/ui/compare/v1.13.2...v1.13.3) (2019-06-18)
 
 
