@@ -1,5 +1,5 @@
 module.exports = {
-  testMatch: ['**/*.test.ts'],
+  testMatch: ['**/*.test.ts', '**/*.test.tsx'],
   setupFiles: ['./jest.enzyme.js'],
   testPathIgnorePatterns: ['/dist/', '/node_modules/'],
   testEnvironment: 'jest-environment-jsdom-fourteen',

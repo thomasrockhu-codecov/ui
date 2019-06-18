@@ -23,6 +23,10 @@ const useMedia = (query: string | ((t: Theme) => string)) => {
 
   // Effect won't run during SSR
   React.useEffect(() => {
+    if (typeof window === 'undefined' || typeof window.matchMedia !== 'function') {
+      return undefined;
+    }
+
     const media = window.matchMedia(mediaQuery);
 
     // Set matches first time
