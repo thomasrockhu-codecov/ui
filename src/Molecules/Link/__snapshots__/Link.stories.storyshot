@@ -184,7 +184,7 @@ exports[`Storyshots Molecules | Link With disabled prop results in a disabled bu
   text-decoration: underline;
 }
 
-@media (min-width:360px) {
+@media (min-width:768px) {
   .c0 {
     font-size: 14px;
     line-height: 1.7142857142857142;
@@ -227,7 +227,7 @@ exports[`Storyshots Molecules | Link With typography primary as type 1`] = `
   text-decoration: underline;
 }
 
-@media (min-width:360px) {
+@media (min-width:768px) {
   .c0 {
     font-size: 16px;
     line-height: 1.5;
@@ -300,7 +300,7 @@ exports[`Storyshots Molecules | Link Without to prop results in a button looking
   text-decoration: underline;
 }
 
-@media (min-width:360px) {
+@media (min-width:768px) {
   .c0 {
     font-size: 14px;
     line-height: 1.7142857142857142;
