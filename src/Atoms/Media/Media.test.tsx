@@ -4,6 +4,7 @@ import { ThemeProvider } from 'styled-components';
 import { renderToString } from 'react-dom/server';
 import ReactDOM from 'react-dom';
 import { Media, useMedia, createTheme } from '../..';
+import { Theme } from '../../theme/theme.types';
 
 afterEach(cleanup);
 beforeEach(() => {
@@ -99,15 +100,10 @@ test('Client-side rendering works: not rendering non-matched media', async () =>
     </ThemeProvider>,
   );
   const oneTestNode = getByTestId('one');
-  let twoTestNode;
-  try {
-    twoTestNode = getByTestId('two');
-  } catch (e) {
-    // do nothing
-  }
-
   expect(oneTestNode).toBeDefined();
-  expect(twoTestNode).not.toBeDefined();
+  expect(() => {
+    getByTestId('two');
+  }).toThrow();
 });
 
 test('Hydration', async () => {
@@ -135,4 +131,29 @@ test('Hydration', async () => {
 
   expect(htmlSSR).toBe(htmlBeforeEffect);
   expect(htmlBeforeEffect).not.toBe(htmlAfterEffect);
+});
+
+test('Client-side: case when media query changes', () => {
+  const firstQuery = (t: Theme) => t.media.greaterThan(t.size.sm);
+  const { rerender, getByTestId } = render(
+    <ThemeProvider theme={createTheme()}>
+      <Media query={firstQuery}>
+        <div data-testid="target">some content</div>
+      </Media>
+    </ThemeProvider>,
+  );
+
+  expect(getByTestId('target')).toBeDefined();
+
+  const secondQuery = (t: Theme) => t.media.lessThan(t.size.sm);
+
+  rerender(
+    <ThemeProvider theme={createTheme()}>
+      <Media query={secondQuery}>
+        <div data-testid="target">some content</div>
+      </Media>
+    </ThemeProvider>,
+  );
+
+  expect(() => getByTestId('target')).toThrow();
 });
