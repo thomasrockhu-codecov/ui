@@ -1,3 +1,16 @@
+# [1.15.0](https://github.com/nordnet/ui/compare/v1.14.0...v1.15.0) (2019-06-19)
+
+
+### Bug Fixes
+
+* remove beta job ([f72bc46](https://github.com/nordnet/ui/commit/f72bc46))
+
+
+### Features
+
+* 🎸 polished media component ([34815a3](https://github.com/nordnet/ui/commit/34815a3))
+* improved media and useMedia hook ([40c4102](https://github.com/nordnet/ui/commit/40c4102))
+
 # [1.14.0](https://github.com/nordnet/ui/compare/v1.13.3...v1.14.0) (2019-06-18)
 
 
