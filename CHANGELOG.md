@@ -37,6 +37,14 @@
 * 🎸 polished media component ([34815a3](https://github.com/nordnet/ui/commit/34815a3))
 * improved media and useMedia hook ([40c4102](https://github.com/nordnet/ui/commit/40c4102))
 
+# [1.15.0-beta.2](https://github.com/nordnet/ui/compare/v1.15.0-beta.1@beta...v1.15.0-beta.2@beta) (2019-06-19)
+
+
+### Bug Fixes
+* optimize code ([a47f58a](https://github.com/nordnet/ui/commit/a47f58a))
+* output line height unitless ([e96b1d3](https://github.com/nordnet/ui/commit/e96b1d3))
+* remove typo ([74a0192](https://github.com/nordnet/ui/commit/74a0192))
+* update snaps ([57ab379](https://github.com/nordnet/ui/commit/57ab379))
 
 # [1.15.0-beta.1](https://github.com/nordnet/ui/compare/v1.14.0...v1.15.0-beta.1@beta) (2019-06-18)
 
@@ -63,7 +71,6 @@
 * add bolt icon ([b36d53c](https://github.com/nordnet/ui/commit/b36d53c))
 * add new breakpoints ([2115059](https://github.com/nordnet/ui/commit/2115059))
 * render buttons looking like links ([b4cc511](https://github.com/nordnet/ui/commit/b4cc511))
-
 
 # [1.14.0](https://github.com/nordnet/ui/compare/v1.13.3...v1.14.0) (2019-06-18)
 
