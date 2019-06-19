@@ -8,7 +8,7 @@ import Flexbox from './Atoms/Flexbox';
 import Icon from './Atoms/Icon';
 import List from './Atoms/List';
 import ListItem from './Atoms/ListItem';
-import Media from './Atoms/Media';
+import Media, { useMedia } from './Atoms/Media';
 import Separator from './Atoms/Separator';
 import Spinner from './Atoms/Spinner';
 import TabTitle from './Atoms/TabTitle';
@@ -62,6 +62,7 @@ export {
   ListItem,
   ListWithTitles,
   Media,
+  useMedia,
   Number,
   PageHeaderCard,
   PageWrapper,
