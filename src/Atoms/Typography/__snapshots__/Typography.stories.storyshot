@@ -7,7 +7,7 @@ exports[`Storyshots Atoms | Typography Caption 1`] = `
   margin: 0;
   font-weight: 400;
   font-size: 10px;
-  line-height: 1.6;
+  line-height: 16px;
 }
 
 .c4 {
@@ -16,7 +16,7 @@ exports[`Storyshots Atoms | Typography Caption 1`] = `
   margin: 0;
   font-weight: 700;
   font-size: 10px;
-  line-height: 1.6;
+  line-height: 16px;
 }
 
 .c0 {
@@ -74,20 +74,6 @@ exports[`Storyshots Atoms | Typography Caption 1`] = `
   -webkit-align-self: center;
   -ms-flex-item-align: center;
   align-self: center;
-}
-
-@media (min-width:768px) {
-  .c3 {
-    font-size: 10px;
-    line-height: 1.6;
-  }
-}
-
-@media (min-width:768px) {
-  .c4 {
-    font-size: 10px;
-    line-height: 1.6;
-  }
 }
 
 <div
@@ -138,7 +124,7 @@ exports[`Storyshots Atoms | Typography Colors 1`] = `
   margin: 0;
   font-weight: 400;
   font-size: 16px;
-  line-height: 1.5;
+  line-height: 24px;
 }
 
 .c4 {
@@ -147,7 +133,7 @@ exports[`Storyshots Atoms | Typography Colors 1`] = `
   margin: 0;
   font-weight: 400;
   font-size: 16px;
-  line-height: 1.5;
+  line-height: 24px;
 }
 
 .c5 {
@@ -156,7 +142,7 @@ exports[`Storyshots Atoms | Typography Colors 1`] = `
   margin: 0;
   font-weight: 400;
   font-size: 16px;
-  line-height: 1.5;
+  line-height: 24px;
 }
 
 .c6 {
@@ -165,7 +151,7 @@ exports[`Storyshots Atoms | Typography Colors 1`] = `
   margin: 0;
   font-weight: 400;
   font-size: 16px;
-  line-height: 1.5;
+  line-height: 24px;
 }
 
 .c7 {
@@ -174,7 +160,7 @@ exports[`Storyshots Atoms | Typography Colors 1`] = `
   margin: 0;
   font-weight: 400;
   font-size: 16px;
-  line-height: 1.5;
+  line-height: 24px;
 }
 
 .c8 {
@@ -183,7 +169,7 @@ exports[`Storyshots Atoms | Typography Colors 1`] = `
   margin: 0;
   font-weight: 400;
   font-size: 16px;
-  line-height: 1.5;
+  line-height: 24px;
 }
 
 .c0 {
@@ -241,48 +227,6 @@ exports[`Storyshots Atoms | Typography Colors 1`] = `
   -webkit-align-self: center;
   -ms-flex-item-align: center;
   align-self: center;
-}
-
-@media (min-width:768px) {
-  .c3 {
-    font-size: 16px;
-    line-height: 1.5;
-  }
-}
-
-@media (min-width:768px) {
-  .c4 {
-    font-size: 16px;
-    line-height: 1.5;
-  }
-}
-
-@media (min-width:768px) {
-  .c5 {
-    font-size: 16px;
-    line-height: 1.5;
-  }
-}
-
-@media (min-width:768px) {
-  .c6 {
-    font-size: 16px;
-    line-height: 1.5;
-  }
-}
-
-@media (min-width:768px) {
-  .c7 {
-    font-size: 16px;
-    line-height: 1.5;
-  }
-}
-
-@media (min-width:768px) {
-  .c8 {
-    font-size: 16px;
-    line-height: 1.5;
-  }
 }
 
 <div
@@ -418,7 +362,7 @@ exports[`Storyshots Atoms | Typography Hero 1`] = `
   margin: 0;
   font-weight: 800;
   font-size: 46px;
-  line-height: 1.0434782608695652;
+  line-height: 48px;
 }
 
 .c4 {
@@ -427,7 +371,7 @@ exports[`Storyshots Atoms | Typography Hero 1`] = `
   margin: 0;
   font-weight: 700;
   font-size: 46px;
-  line-height: 1.0434782608695652;
+  line-height: 48px;
 }
 
 .c0 {
@@ -490,14 +434,14 @@ exports[`Storyshots Atoms | Typography Hero 1`] = `
 @media (min-width:768px) {
   .c3 {
     font-size: 48px;
-    line-height: 1.0833333333333333;
+    line-height: 52px;
   }
 }
 
 @media (min-width:768px) {
   .c4 {
     font-size: 48px;
-    line-height: 1.0833333333333333;
+    line-height: 52px;
   }
 }
 
@@ -549,7 +493,7 @@ exports[`Storyshots Atoms | Typography Primary 1`] = `
   margin: 0;
   font-weight: 400;
   font-size: 16px;
-  line-height: 1.5;
+  line-height: 24px;
 }
 
 .c4 {
@@ -558,7 +502,7 @@ exports[`Storyshots Atoms | Typography Primary 1`] = `
   margin: 0;
   font-weight: 700;
   font-size: 16px;
-  line-height: 1.5;
+  line-height: 24px;
 }
 
 .c5 {
@@ -567,7 +511,7 @@ exports[`Storyshots Atoms | Typography Primary 1`] = `
   margin: 0;
   font-weight: 800;
   font-size: 16px;
-  line-height: 1.5;
+  line-height: 24px;
 }
 
 .c0 {
@@ -625,27 +569,6 @@ exports[`Storyshots Atoms | Typography Primary 1`] = `
   -webkit-align-self: center;
   -ms-flex-item-align: center;
   align-self: center;
-}
-
-@media (min-width:768px) {
-  .c3 {
-    font-size: 16px;
-    line-height: 1.5;
-  }
-}
-
-@media (min-width:768px) {
-  .c4 {
-    font-size: 16px;
-    line-height: 1.5;
-  }
-}
-
-@media (min-width:768px) {
-  .c5 {
-    font-size: 16px;
-    line-height: 1.5;
-  }
 }
 
 <div
@@ -713,7 +636,7 @@ exports[`Storyshots Atoms | Typography Secondary 1`] = `
   margin: 0;
   font-weight: 400;
   font-size: 14px;
-  line-height: 1.7142857142857142;
+  line-height: 24px;
 }
 
 .c4 {
@@ -722,7 +645,7 @@ exports[`Storyshots Atoms | Typography Secondary 1`] = `
   margin: 0;
   font-weight: 700;
   font-size: 14px;
-  line-height: 1.7142857142857142;
+  line-height: 24px;
 }
 
 .c0 {
@@ -780,20 +703,6 @@ exports[`Storyshots Atoms | Typography Secondary 1`] = `
   -webkit-align-self: center;
   -ms-flex-item-align: center;
   align-self: center;
-}
-
-@media (min-width:768px) {
-  .c3 {
-    font-size: 14px;
-    line-height: 1.7142857142857142;
-  }
-}
-
-@media (min-width:768px) {
-  .c4 {
-    font-size: 14px;
-    line-height: 1.7142857142857142;
-  }
 }
 
 <div
@@ -844,7 +753,7 @@ exports[`Storyshots Atoms | Typography Tertiary 1`] = `
   margin: 0;
   font-weight: 400;
   font-size: 12px;
-  line-height: 1.6666666666666667;
+  line-height: 20px;
 }
 
 .c4 {
@@ -853,7 +762,7 @@ exports[`Storyshots Atoms | Typography Tertiary 1`] = `
   margin: 0;
   font-weight: 700;
   font-size: 12px;
-  line-height: 1.6666666666666667;
+  line-height: 20px;
 }
 
 .c0 {
@@ -911,20 +820,6 @@ exports[`Storyshots Atoms | Typography Tertiary 1`] = `
   -webkit-align-self: center;
   -ms-flex-item-align: center;
   align-self: center;
-}
-
-@media (min-width:768px) {
-  .c3 {
-    font-size: 12px;
-    line-height: 1.6666666666666667;
-  }
-}
-
-@media (min-width:768px) {
-  .c4 {
-    font-size: 12px;
-    line-height: 1.6666666666666667;
-  }
 }
 
 <div
@@ -975,7 +870,7 @@ exports[`Storyshots Atoms | Typography Title1 1`] = `
   margin: 0;
   font-weight: 800;
   font-size: 24px;
-  line-height: 1.1666666666666667;
+  line-height: 28px;
 }
 
 .c4 {
@@ -984,7 +879,7 @@ exports[`Storyshots Atoms | Typography Title1 1`] = `
   margin: 0;
   font-weight: 400;
   font-size: 24px;
-  line-height: 1.1666666666666667;
+  line-height: 28px;
 }
 
 .c5 {
@@ -993,7 +888,7 @@ exports[`Storyshots Atoms | Typography Title1 1`] = `
   margin: 0;
   font-weight: 700;
   font-size: 24px;
-  line-height: 1.1666666666666667;
+  line-height: 28px;
 }
 
 .c0 {
@@ -1056,21 +951,21 @@ exports[`Storyshots Atoms | Typography Title1 1`] = `
 @media (min-width:768px) {
   .c3 {
     font-size: 28px;
-    line-height: 1.1428571428571428;
+    line-height: 32px;
   }
 }
 
 @media (min-width:768px) {
   .c4 {
     font-size: 28px;
-    line-height: 1.1428571428571428;
+    line-height: 32px;
   }
 }
 
 @media (min-width:768px) {
   .c5 {
     font-size: 28px;
-    line-height: 1.1428571428571428;
+    line-height: 32px;
   }
 }
 
@@ -1139,7 +1034,7 @@ exports[`Storyshots Atoms | Typography Title2 1`] = `
   margin: 0;
   font-weight: 800;
   font-size: 20px;
-  line-height: 1.2;
+  line-height: 24px;
 }
 
 .c4 {
@@ -1148,7 +1043,7 @@ exports[`Storyshots Atoms | Typography Title2 1`] = `
   margin: 0;
   font-weight: 400;
   font-size: 20px;
-  line-height: 1.2;
+  line-height: 24px;
 }
 
 .c5 {
@@ -1157,7 +1052,7 @@ exports[`Storyshots Atoms | Typography Title2 1`] = `
   margin: 0;
   font-weight: 700;
   font-size: 20px;
-  line-height: 1.2;
+  line-height: 24px;
 }
 
 .c0 {
@@ -1220,21 +1115,21 @@ exports[`Storyshots Atoms | Typography Title2 1`] = `
 @media (min-width:768px) {
   .c3 {
     font-size: 24px;
-    line-height: 1.1666666666666667;
+    line-height: 28px;
   }
 }
 
 @media (min-width:768px) {
   .c4 {
     font-size: 24px;
-    line-height: 1.1666666666666667;
+    line-height: 28px;
   }
 }
 
 @media (min-width:768px) {
   .c5 {
     font-size: 24px;
-    line-height: 1.1666666666666667;
+    line-height: 28px;
   }
 }
 
@@ -1303,7 +1198,7 @@ exports[`Storyshots Atoms | Typography Title3 1`] = `
   margin: 0;
   font-weight: 800;
   font-size: 18px;
-  line-height: 1.3333333333333333;
+  line-height: 24px;
 }
 
 .c4 {
@@ -1312,7 +1207,7 @@ exports[`Storyshots Atoms | Typography Title3 1`] = `
   margin: 0;
   font-weight: 400;
   font-size: 18px;
-  line-height: 1.3333333333333333;
+  line-height: 24px;
 }
 
 .c5 {
@@ -1321,7 +1216,7 @@ exports[`Storyshots Atoms | Typography Title3 1`] = `
   margin: 0;
   font-weight: 700;
   font-size: 18px;
-  line-height: 1.3333333333333333;
+  line-height: 24px;
 }
 
 .c0 {
@@ -1384,21 +1279,21 @@ exports[`Storyshots Atoms | Typography Title3 1`] = `
 @media (min-width:768px) {
   .c3 {
     font-size: 20px;
-    line-height: 1.2;
+    line-height: 24px;
   }
 }
 
 @media (min-width:768px) {
   .c4 {
     font-size: 20px;
-    line-height: 1.2;
+    line-height: 24px;
   }
 }
 
 @media (min-width:768px) {
   .c5 {
     font-size: 20px;
-    line-height: 1.2;
+    line-height: 24px;
   }
 }
 
@@ -1467,7 +1362,7 @@ exports[`Storyshots Atoms | Typography aria attributes 1`] = `
   margin: 0;
   font-weight: 400;
   font-size: 16px;
-  line-height: 1.5;
+  line-height: 24px;
 }
 
 .c0 {
@@ -1525,13 +1420,6 @@ exports[`Storyshots Atoms | Typography aria attributes 1`] = `
   -webkit-align-self: center;
   -ms-flex-item-align: center;
   align-self: center;
-}
-
-@media (min-width:768px) {
-  .c3 {
-    font-size: 16px;
-    line-height: 1.5;
-  }
 }
 
 <div

@@ -11,7 +11,7 @@ exports[`Storyshots Atoms | Box Different padding for different screen sizes  1`
   margin: 0;
   font-weight: 400;
   font-size: 16px;
-  line-height: 1.5;
+  line-height: 24px;
 }
 
 .c0 {
@@ -26,13 +26,6 @@ exports[`Storyshots Atoms | Box Different padding for different screen sizes  1`
 @media (min-width:768px) {
   .c1 {
     padding: 16px;
-  }
-}
-
-@media (min-width:768px) {
-  .c4 {
-    font-size: 16px;
-    line-height: 1.5;
   }
 }
 
@@ -74,7 +67,7 @@ exports[`Storyshots Atoms | Box Margin 1`] = `
   margin: 0;
   font-weight: 400;
   font-size: 16px;
-  line-height: 1.5;
+  line-height: 24px;
 }
 
 .c0 {
@@ -84,13 +77,6 @@ exports[`Storyshots Atoms | Box Margin 1`] = `
 
 .c2 {
   background-color: #F5F5F5;
-}
-
-@media (min-width:768px) {
-  .c4 {
-    font-size: 16px;
-    line-height: 1.5;
-  }
 }
 
 <div
@@ -129,7 +115,7 @@ exports[`Storyshots Atoms | Box Margin and different margin Y-axis 1`] = `
   margin: 0;
   font-weight: 400;
   font-size: 16px;
-  line-height: 1.5;
+  line-height: 24px;
 }
 
 .c0 {
@@ -139,13 +125,6 @@ exports[`Storyshots Atoms | Box Margin and different margin Y-axis 1`] = `
 
 .c2 {
   background-color: #F5F5F5;
-}
-
-@media (min-width:768px) {
-  .c4 {
-    font-size: 16px;
-    line-height: 1.5;
-  }
 }
 
 <div
@@ -182,7 +161,7 @@ exports[`Storyshots Atoms | Box Padding  1`] = `
   margin: 0;
   font-weight: 400;
   font-size: 16px;
-  line-height: 1.5;
+  line-height: 24px;
 }
 
 .c0 {
@@ -192,13 +171,6 @@ exports[`Storyshots Atoms | Box Padding  1`] = `
 
 .c2 {
   background-color: #F5F5F5;
-}
-
-@media (min-width:768px) {
-  .c4 {
-    font-size: 16px;
-    line-height: 1.5;
-  }
 }
 
 <div
@@ -241,7 +213,7 @@ exports[`Storyshots Atoms | Box Padding and different X-axis and left  1`] = `
   margin: 0;
   font-weight: 400;
   font-size: 16px;
-  line-height: 1.5;
+  line-height: 24px;
 }
 
 .c0 {
@@ -251,13 +223,6 @@ exports[`Storyshots Atoms | Box Padding and different X-axis and left  1`] = `
 
 .c2 {
   background-color: #F5F5F5;
-}
-
-@media (min-width:768px) {
-  .c4 {
-    font-size: 16px;
-    line-height: 1.5;
-  }
 }
 
 <div

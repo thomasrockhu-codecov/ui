@@ -73,7 +73,7 @@ Array [
   margin: 0;
   font-weight: 400;
   font-size: 14px;
-  line-height: 1.7142857142857142;
+  line-height: 24px;
 }
 
 .c8 {
@@ -82,7 +82,7 @@ Array [
   margin: 0;
   font-weight: 700;
   font-size: 14px;
-  line-height: 1.7142857142857142;
+  line-height: 24px;
 }
 
 .c2 {
@@ -91,7 +91,7 @@ Array [
   margin: 0;
   font-weight: 800;
   font-size: 18px;
-  line-height: 1.3333333333333333;
+  line-height: 24px;
 }
 
 .c1 {
@@ -144,23 +144,9 @@ Array [
 }
 
 @media (min-width:768px) {
-  .c11 {
-    font-size: 14px;
-    line-height: 1.7142857142857142;
-  }
-}
-
-@media (min-width:768px) {
-  .c8 {
-    font-size: 14px;
-    line-height: 1.7142857142857142;
-  }
-}
-
-@media (min-width:768px) {
   .c2 {
     font-size: 20px;
-    line-height: 1.2;
+    line-height: 24px;
   }
 }
 
@@ -324,7 +310,7 @@ exports[`Storyshots Organisms | CardWithTabs Integration: with Typography and ex
   margin: 0;
   font-weight: 400;
   font-size: 14px;
-  line-height: 1.7142857142857142;
+  line-height: 24px;
 }
 
 .c8 {
@@ -333,7 +319,7 @@ exports[`Storyshots Organisms | CardWithTabs Integration: with Typography and ex
   margin: 0;
   font-weight: 700;
   font-size: 14px;
-  line-height: 1.7142857142857142;
+  line-height: 24px;
 }
 
 .c2 {
@@ -342,7 +328,7 @@ exports[`Storyshots Organisms | CardWithTabs Integration: with Typography and ex
   margin: 0;
   font-weight: 800;
   font-size: 18px;
-  line-height: 1.3333333333333333;
+  line-height: 24px;
 }
 
 .c1 {
@@ -406,23 +392,9 @@ exports[`Storyshots Organisms | CardWithTabs Integration: with Typography and ex
 }
 
 @media (min-width:768px) {
-  .c11 {
-    font-size: 14px;
-    line-height: 1.7142857142857142;
-  }
-}
-
-@media (min-width:768px) {
-  .c8 {
-    font-size: 14px;
-    line-height: 1.7142857142857142;
-  }
-}
-
-@media (min-width:768px) {
   .c2 {
     font-size: 20px;
-    line-height: 1.2;
+    line-height: 24px;
   }
 }
 
@@ -593,7 +565,7 @@ exports[`Storyshots Organisms | CardWithTabs with initialActiveTabIndex 1`] = `
   margin: 0;
   font-weight: 400;
   font-size: 14px;
-  line-height: 1.7142857142857142;
+  line-height: 24px;
 }
 
 .c11 {
@@ -602,7 +574,7 @@ exports[`Storyshots Organisms | CardWithTabs with initialActiveTabIndex 1`] = `
   margin: 0;
   font-weight: 700;
   font-size: 14px;
-  line-height: 1.7142857142857142;
+  line-height: 24px;
 }
 
 .c2 {
@@ -611,7 +583,7 @@ exports[`Storyshots Organisms | CardWithTabs with initialActiveTabIndex 1`] = `
   margin: 0;
   font-weight: 800;
   font-size: 18px;
-  line-height: 1.3333333333333333;
+  line-height: 24px;
 }
 
 .c1 {
@@ -664,23 +636,9 @@ exports[`Storyshots Organisms | CardWithTabs with initialActiveTabIndex 1`] = `
 }
 
 @media (min-width:768px) {
-  .c8 {
-    font-size: 14px;
-    line-height: 1.7142857142857142;
-  }
-}
-
-@media (min-width:768px) {
-  .c11 {
-    font-size: 14px;
-    line-height: 1.7142857142857142;
-  }
-}
-
-@media (min-width:768px) {
   .c2 {
     font-size: 20px;
-    line-height: 1.2;
+    line-height: 24px;
   }
 }
 

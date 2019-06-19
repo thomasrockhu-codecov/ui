@@ -51,7 +51,7 @@ exports[`Storyshots Molecules | CollapsibleCard Collapsed initially 1`] = `
   margin: 0;
   font-weight: 400;
   font-size: 16px;
-  line-height: 1.5;
+  line-height: 24px;
 }
 
 .c4 {
@@ -60,7 +60,7 @@ exports[`Storyshots Molecules | CollapsibleCard Collapsed initially 1`] = `
   margin: 0;
   font-weight: 800;
   font-size: 18px;
-  line-height: 1.3333333333333333;
+  line-height: 24px;
 }
 
 .c7 {
@@ -117,16 +117,9 @@ exports[`Storyshots Molecules | CollapsibleCard Collapsed initially 1`] = `
 }
 
 @media (min-width:768px) {
-  .c8 {
-    font-size: 16px;
-    line-height: 1.5;
-  }
-}
-
-@media (min-width:768px) {
   .c4 {
     font-size: 20px;
-    line-height: 1.2;
+    line-height: 24px;
   }
 }
 
@@ -238,7 +231,7 @@ exports[`Storyshots Molecules | CollapsibleCard Collapsible with custom componen
   margin: 0;
   font-weight: 400;
   font-size: 16px;
-  line-height: 1.5;
+  line-height: 24px;
 }
 
 .c4 {
@@ -247,7 +240,7 @@ exports[`Storyshots Molecules | CollapsibleCard Collapsible with custom componen
   margin: 0;
   font-weight: 800;
   font-size: 18px;
-  line-height: 1.3333333333333333;
+  line-height: 24px;
 }
 
 .c7 {
@@ -304,16 +297,9 @@ exports[`Storyshots Molecules | CollapsibleCard Collapsible with custom componen
 }
 
 @media (min-width:768px) {
-  .c8 {
-    font-size: 16px;
-    line-height: 1.5;
-  }
-}
-
-@media (min-width:768px) {
   .c4 {
     font-size: 20px;
-    line-height: 1.2;
+    line-height: 24px;
   }
 }
 
@@ -427,7 +413,7 @@ exports[`Storyshots Molecules | CollapsibleCard Collapsible with onClick listene
   margin: 0;
   font-weight: 400;
   font-size: 16px;
-  line-height: 1.5;
+  line-height: 24px;
 }
 
 .c4 {
@@ -436,7 +422,7 @@ exports[`Storyshots Molecules | CollapsibleCard Collapsible with onClick listene
   margin: 0;
   font-weight: 800;
   font-size: 18px;
-  line-height: 1.3333333333333333;
+  line-height: 24px;
 }
 
 .c7 {
@@ -493,16 +479,9 @@ exports[`Storyshots Molecules | CollapsibleCard Collapsible with onClick listene
 }
 
 @media (min-width:768px) {
-  .c8 {
-    font-size: 16px;
-    line-height: 1.5;
-  }
-}
-
-@media (min-width:768px) {
   .c4 {
     font-size: 20px;
-    line-height: 1.2;
+    line-height: 24px;
   }
 }
 
@@ -614,7 +593,7 @@ exports[`Storyshots Molecules | CollapsibleCard Default 1`] = `
   margin: 0;
   font-weight: 400;
   font-size: 16px;
-  line-height: 1.5;
+  line-height: 24px;
 }
 
 .c4 {
@@ -623,7 +602,7 @@ exports[`Storyshots Molecules | CollapsibleCard Default 1`] = `
   margin: 0;
   font-weight: 800;
   font-size: 18px;
-  line-height: 1.3333333333333333;
+  line-height: 24px;
 }
 
 .c7 {
@@ -680,16 +659,9 @@ exports[`Storyshots Molecules | CollapsibleCard Default 1`] = `
 }
 
 @media (min-width:768px) {
-  .c8 {
-    font-size: 16px;
-    line-height: 1.5;
-  }
-}
-
-@media (min-width:768px) {
   .c4 {
     font-size: 20px;
-    line-height: 1.2;
+    line-height: 24px;
   }
 }
 
