@@ -1,3 +1,10 @@
+## [1.15.1](https://github.com/nordnet/ui/compare/v1.15.0...v1.15.1) (2019-06-20)
+
+
+### Bug Fixes
+
+* 🐛 display for link component ([061d76c](https://github.com/nordnet/ui/commit/061d76c))
+
 # [1.15.0](https://github.com/nordnet/ui/compare/v1.14.0...v1.15.0) (2019-06-19)
 
 
