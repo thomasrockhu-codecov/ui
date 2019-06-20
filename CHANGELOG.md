@@ -1,3 +1,10 @@
+## [1.15.2](https://github.com/nordnet/ui/compare/v1.15.1...v1.15.2) (2019-06-20)
+
+
+### Bug Fixes
+
+* media AS prop ([f9a838d](https://github.com/nordnet/ui/commit/f9a838d))
+
 ## [1.15.1](https://github.com/nordnet/ui/compare/v1.15.0...v1.15.1) (2019-06-20)
 
 
