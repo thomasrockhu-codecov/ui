@@ -298,7 +298,6 @@ exports[`Storyshots Molecules | PageHeader Page header with children 1`] = `
             >
               <div
                 className="c11"
-                justifyContent="space-between"
               >
                 <div
                   className="c4"
@@ -314,8 +313,6 @@ exports[`Storyshots Molecules | PageHeader Page header with children 1`] = `
                   >
                     <span
                       className="c13"
-                      color="inherit"
-                      type="secondary"
                     >
                       Click here to recruit carl
                     </span>

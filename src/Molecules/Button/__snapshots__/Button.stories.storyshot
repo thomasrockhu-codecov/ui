@@ -240,8 +240,6 @@ exports[`Storyshots Molecules | Button Button primary with colors 1`] = `
       >
         <span
           className="c4"
-          color="inherit"
-          type="secondary"
         >
           Button
         </span>
@@ -266,8 +264,6 @@ exports[`Storyshots Molecules | Button Button primary with colors 1`] = `
       >
         <span
           className="c4"
-          color="inherit"
-          type="secondary"
         >
           Button
         </span>
@@ -601,8 +597,6 @@ exports[`Storyshots Molecules | Button Button primary with size modified 1`] = `
       >
         <span
           className="c4"
-          color="inherit"
-          type="secondary"
         >
           Small
         </span>
@@ -626,8 +620,6 @@ exports[`Storyshots Molecules | Button Button primary with size modified 1`] = `
       >
         <span
           className="c4"
-          color="inherit"
-          type="secondary"
         >
           Medium
         </span>
@@ -651,8 +643,6 @@ exports[`Storyshots Molecules | Button Button primary with size modified 1`] = `
       >
         <span
           className="c7"
-          color="inherit"
-          type="primary"
         >
           Large
         </span>
@@ -902,8 +892,6 @@ exports[`Storyshots Molecules | Button Button secondary with colors 1`] = `
       >
         <span
           className="c4"
-          color="inherit"
-          type="secondary"
         >
           Button
         </span>
@@ -928,8 +916,6 @@ exports[`Storyshots Molecules | Button Button secondary with colors 1`] = `
       >
         <span
           className="c4"
-          color="inherit"
-          type="secondary"
         >
           Button
         </span>
@@ -1267,8 +1253,6 @@ exports[`Storyshots Molecules | Button Button secondary with size modified 1`] =
       >
         <span
           className="c4"
-          color="inherit"
-          type="secondary"
         >
           Small
         </span>
@@ -1293,8 +1277,6 @@ exports[`Storyshots Molecules | Button Button secondary with size modified 1`] =
       >
         <span
           className="c4"
-          color="inherit"
-          type="secondary"
         >
           Medium
         </span>
@@ -1319,8 +1301,6 @@ exports[`Storyshots Molecules | Button Button secondary with size modified 1`] =
       >
         <span
           className="c7"
-          color="inherit"
-          type="primary"
         >
           Large
         </span>
@@ -1426,8 +1406,6 @@ exports[`Storyshots Molecules | Button Button that is full width 1`] = `
 >
   <span
     className="c1"
-    color="inherit"
-    type="secondary"
   >
     Button
   </span>
@@ -1600,8 +1578,6 @@ exports[`Storyshots Molecules | Button Button with type modified 1`] = `
       >
         <span
           className="c4"
-          color="inherit"
-          type="secondary"
         >
           Reset
         </span>
@@ -1625,8 +1601,6 @@ exports[`Storyshots Molecules | Button Button with type modified 1`] = `
       >
         <span
           className="c4"
-          color="inherit"
-          type="secondary"
         >
           Submit
         </span>
@@ -1733,8 +1707,6 @@ exports[`Storyshots Molecules | Button Button with variant 1`] = `
 >
   <span
     className="c1"
-    color="inherit"
-    type="secondary"
   >
     Button
   </span>
@@ -1932,8 +1904,6 @@ exports[`Storyshots Molecules | Button Buttons composed in a group 1`] = `
     >
       <span
         className="c3"
-        color="inherit"
-        type="secondary"
       >
         Submit
       </span>
@@ -1951,8 +1921,6 @@ exports[`Storyshots Molecules | Button Buttons composed in a group 1`] = `
     >
       <span
         className="c3"
-        color="inherit"
-        type="secondary"
       >
         Reset
       </span>
@@ -2056,8 +2024,6 @@ exports[`Storyshots Molecules | Button Default usage 1`] = `
 >
   <span
     className="c1"
-    color="inherit"
-    type="secondary"
   >
     Button
   </span>
@@ -2152,8 +2118,6 @@ exports[`Storyshots Molecules | Button Disabled button 1`] = `
 >
   <span
     className="c1"
-    color="inherit"
-    type="secondary"
   >
     Button
   </span>
@@ -2250,8 +2214,6 @@ exports[`Storyshots Molecules | Button Disabled link looking like a button 1`] =
 >
   <span
     className="c1"
-    color="inherit"
-    type="secondary"
   >
     Button
   </span>
@@ -2438,8 +2400,6 @@ exports[`Storyshots Molecules | Button Link looking like a button 1`] = `
       >
         <span
           className="c4"
-          color="inherit"
-          type="secondary"
         >
           To Route1
         </span>
@@ -2464,8 +2424,6 @@ exports[`Storyshots Molecules | Button Link looking like a button 1`] = `
       >
         <span
           className="c4"
-          color="inherit"
-          type="secondary"
         >
           To Route2
         </span>
@@ -2537,14 +2495,11 @@ exports[`Storyshots Molecules | Button Link looking like a button that is full w
 
 <a
   className="c0"
-  fullWidth={true}
   href="#/www.google.com"
   onClick={[Function]}
 >
   <span
     className="c1"
-    color="inherit"
-    type="secondary"
   >
     Button
   </span>
@@ -2613,15 +2568,12 @@ exports[`Storyshots Molecules | Button Link looking like a button with rel as no
 
 <a
   className="c0"
-  fullWidth={true}
   href="#/www.google.com"
   onClick={[Function]}
   rel="nofollow"
 >
   <span
     className="c1"
-    color="inherit"
-    type="secondary"
   >
     Button
   </span>
@@ -2655,7 +2607,6 @@ Array [
   >
     <span
       className="c1"
-      type="title1"
     >
       Primary
     </span>
@@ -2835,14 +2786,11 @@ Array [
       <div>
         <a
           className="c3"
-          colorFn={[Function]}
           href="#/www.google.com"
           onClick={[Function]}
         >
           <span
             className="c4"
-            color="inherit"
-            type="secondary"
           >
             Button
           </span>
@@ -2861,14 +2809,11 @@ Array [
       <div>
         <a
           className="c5"
-          colorFn={[Function]}
           href="#/www.google.com"
           onClick={[Function]}
         >
           <span
             className="c4"
-            color="inherit"
-            type="secondary"
           >
             Button
           </span>
@@ -2908,7 +2853,6 @@ Array [
   >
     <span
       className="c1"
-      type="title1"
     >
       Secondary
     </span>
@@ -3088,15 +3032,12 @@ Array [
       <div>
         <a
           className="c3"
-          colorFn={[Function]}
           href="#/www.google.com"
           onClick={[Function]}
           variant="secondary"
         >
           <span
             className="c4"
-            color="inherit"
-            type="secondary"
           >
             Button
           </span>
@@ -3115,15 +3056,12 @@ Array [
       <div>
         <a
           className="c5"
-          colorFn={[Function]}
           href="#/www.google.com"
           onClick={[Function]}
           variant="secondary"
         >
           <span
             className="c4"
-            color="inherit"
-            type="secondary"
           >
             Button
           </span>
@@ -3269,14 +3207,11 @@ exports[`Storyshots Molecules | Button Links looking like buttons composed in a 
   >
     <a
       className="c2"
-      fullWidth={true}
       href="#/route1"
       onClick={[Function]}
     >
       <span
         className="c3"
-        color="inherit"
-        type="secondary"
       >
         Submit
       </span>
@@ -3288,15 +3223,12 @@ exports[`Storyshots Molecules | Button Links looking like buttons composed in a 
   >
     <a
       className="c4"
-      fullWidth={true}
       href="#/route2"
       onClick={[Function]}
       variant="secondary"
     >
       <span
         className="c3"
-        color="inherit"
-        type="secondary"
       >
         Reset
       </span>
