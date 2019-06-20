@@ -6,6 +6,7 @@ import { SelectComponent } from './Select.types';
 
 const SELECT_HEIGHT = 8;
 const ARROW_SPACE = 7;
+const PLACEHOLDER_VALUE = '';
 
 const StyledSelect = styled.select`
   width: 100%;
@@ -109,6 +110,7 @@ const Select: SelectComponent = ({
         <StyledSelect
           disabled={disabled}
           value={selectValue}
+          {...(placeholder && !selectValue ? { defaultValue: PLACEHOLDER_VALUE } : {})}
           name={name}
           onChange={onChange}
           className={className}
@@ -116,7 +118,7 @@ const Select: SelectComponent = ({
           onBlur={onBlur}
         >
           {placeholder && (
-            <option value="" selected disabled>
+            <option value={PLACEHOLDER_VALUE} disabled>
               {placeholder}
             </option>
           )}
