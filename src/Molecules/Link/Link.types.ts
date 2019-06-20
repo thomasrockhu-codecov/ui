@@ -5,6 +5,7 @@ export type SharedProps = {
   children: React.ReactChild | React.ReactChild[];
   onClick?: (e: React.MouseEvent) => void;
   className?: string;
+  display?: 'inline' | 'block' | 'inline-block' | 'flex' | 'inline-flex';
 };
 
 export type LinkProps = {

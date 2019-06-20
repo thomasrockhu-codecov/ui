@@ -7,10 +7,12 @@ import { isUndefined } from '../../common/utils';
 import NormalizedElements from '../../common/NormalizedElements';
 
 const getSharedStyle = (props: ThemedStyledProps<LinkProps | ButtonProps, Theme>) => {
-  const { theme, disabled } = props;
+  const { theme, disabled, display = 'inline' } = props;
 
+  // Need to switch to display: inline-block
+  // But it will break pages, so need to do it through mutations
   return `
-    display: inline-block;
+    display: ${display};
     padding: 0;
     color: ${disabled ? theme.color.disabledText : theme.color.cta}
 
