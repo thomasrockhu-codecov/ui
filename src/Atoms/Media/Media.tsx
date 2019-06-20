@@ -45,11 +45,12 @@ const useMedia = (query: string | ((t: Theme) => string)) => {
 };
 
 const Media: React.FunctionComponent<Props> = props => {
+  const As = props.as || 'div';
   const matches = useMedia(props.query);
   // If matches === null it means we are in SSR
   // Show css fallback then
   if (matches === null) return <StyledDiv {...props} />;
-  return matches ? <>{props.children}</> : null;
+  return matches ? <As>{props.children}</As> : null;
 };
 
 export { Media, useMedia };
