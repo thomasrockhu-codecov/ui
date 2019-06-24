@@ -1,3 +1,45 @@
+# [1.17.0-beta.1](https://github.com/nordnet/ui/compare/v1.16.0...v1.17.0-beta.1@beta) (2019-06-24)
+
+
+### Bug Fixes
+
+* add deprecate message to theme.size ([790b651](https://github.com/nordnet/ui/commit/790b651))
+* add deprecate message to theme.size ([afbb257](https://github.com/nordnet/ui/commit/afbb257))
+* attempt semantic release of beta branch ([17d88c5](https://github.com/nordnet/ui/commit/17d88c5))
+* attempt semantic release of beta branch ([c0f818c](https://github.com/nordnet/ui/commit/c0f818c))
+* attempt to solve releases of beta ([f9f7781](https://github.com/nordnet/ui/commit/f9f7781))
+* disable href linting of link component ([98ade87](https://github.com/nordnet/ui/commit/98ade87))
+* do not show error if tab is null ([4df980f](https://github.com/nordnet/ui/commit/4df980f))
+* logic fix in types ([401e4bb](https://github.com/nordnet/ui/commit/401e4bb))
+* make height prop work ([2e0acc5](https://github.com/nordnet/ui/commit/2e0acc5))
+* media query story ([ef882bc](https://github.com/nordnet/ui/commit/ef882bc))
+* merge master ([06208cf](https://github.com/nordnet/ui/commit/06208cf))
+* optimize code ([a47f58a](https://github.com/nordnet/ui/commit/a47f58a))
+* optimize code ([663a9c3](https://github.com/nordnet/ui/commit/663a9c3))
+* output line height unitless ([5cc9be9](https://github.com/nordnet/ui/commit/5cc9be9))
+* output line height unitless ([e96b1d3](https://github.com/nordnet/ui/commit/e96b1d3))
+* remove typo ([398e1c1](https://github.com/nordnet/ui/commit/398e1c1))
+* remove typo ([74a0192](https://github.com/nordnet/ui/commit/74a0192))
+* solve conflicts ([537b01c](https://github.com/nordnet/ui/commit/537b01c))
+* update paths to link component types ([3632552](https://github.com/nordnet/ui/commit/3632552))
+* update snap ([92863e5](https://github.com/nordnet/ui/commit/92863e5))
+* update snap ([f65870d](https://github.com/nordnet/ui/commit/f65870d))
+* update snaps ([86e85bb](https://github.com/nordnet/ui/commit/86e85bb))
+* update snaps ([84bdc96](https://github.com/nordnet/ui/commit/84bdc96))
+* update snaps ([57ab379](https://github.com/nordnet/ui/commit/57ab379))
+* update snaps ([33e8d06](https://github.com/nordnet/ui/commit/33e8d06))
+* update snaps after merge of master ([10f1a5b](https://github.com/nordnet/ui/commit/10f1a5b))
+* update snaps after merge of master ([5fc4bea](https://github.com/nordnet/ui/commit/5fc4bea))
+* update story name ([98073da](https://github.com/nordnet/ui/commit/98073da))
+
+
+### Features
+
+* add bolt icon ([b36d53c](https://github.com/nordnet/ui/commit/b36d53c))
+* add new breakpoints ([0c301c7](https://github.com/nordnet/ui/commit/0c301c7))
+* add new breakpoints ([2115059](https://github.com/nordnet/ui/commit/2115059))
+* render buttons looking like links ([b4cc511](https://github.com/nordnet/ui/commit/b4cc511))
+
 # [1.16.0](https://github.com/nordnet/ui/compare/v1.15.2...v1.16.0) (2019-06-24)
 
 
