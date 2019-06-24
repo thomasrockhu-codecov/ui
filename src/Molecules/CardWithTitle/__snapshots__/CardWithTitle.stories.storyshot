@@ -133,7 +133,7 @@ exports[`Storyshots Molecules | CardWithTitle Integration: CardWithTitle with cu
 }
 
 .c5 {
-  display: inline-block;
+  display: inline;
   padding: 0;
   color: #0046FF;
   -webkit-text-decoration: none;
@@ -168,7 +168,6 @@ exports[`Storyshots Molecules | CardWithTitle Integration: CardWithTitle with cu
   >
     <div
       className="c2"
-      justifyContent="space-between"
     >
       <div
         className="c3"
@@ -190,8 +189,6 @@ exports[`Storyshots Molecules | CardWithTitle Integration: CardWithTitle with cu
         >
           <span
             className="c6"
-            color={[Function]}
-            type="secondary"
           >
             Marknadsöversikt
           </span>

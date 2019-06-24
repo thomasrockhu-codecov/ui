@@ -116,7 +116,6 @@ exports[`Storyshots Molecules | Tabs Controlled behaviour 1`] = `
 
 <span
   className="c0"
-  type="secondary"
 >
   <button
     onClick={[Function]}
@@ -134,7 +133,6 @@ exports[`Storyshots Molecules | Tabs Controlled behaviour 1`] = `
       >
         <span
           className="c5"
-          type="secondary"
         >
           <button
             aria-selected={true}
@@ -151,7 +149,6 @@ exports[`Storyshots Molecules | Tabs Controlled behaviour 1`] = `
             >
               <span
                 className="c5"
-                type="secondary"
               >
                 One
               </span>
@@ -165,7 +162,6 @@ exports[`Storyshots Molecules | Tabs Controlled behaviour 1`] = `
       >
         <span
           className="c0"
-          type="secondary"
         >
           <button
             aria-selected={false}
@@ -182,7 +178,6 @@ exports[`Storyshots Molecules | Tabs Controlled behaviour 1`] = `
             >
               <span
                 className="c0"
-                type="secondary"
               >
                 Two
               </span>
@@ -324,7 +319,6 @@ exports[`Storyshots Molecules | Tabs Default 1`] = `
 
 <span
   className="c0"
-  type="secondary"
 >
   <div>
     <ul
@@ -336,7 +330,6 @@ exports[`Storyshots Molecules | Tabs Default 1`] = `
       >
         <span
           className="c5"
-          type="secondary"
         >
           <button
             aria-selected={true}
@@ -353,7 +346,6 @@ exports[`Storyshots Molecules | Tabs Default 1`] = `
             >
               <span
                 className="c5"
-                type="secondary"
               >
                 One
               </span>
@@ -367,7 +359,6 @@ exports[`Storyshots Molecules | Tabs Default 1`] = `
       >
         <span
           className="c0"
-          type="secondary"
         >
           <button
             aria-selected={false}
@@ -384,7 +375,6 @@ exports[`Storyshots Molecules | Tabs Default 1`] = `
             >
               <span
                 className="c0"
-                type="secondary"
               >
                 <div>
                   Node as well
@@ -518,7 +508,6 @@ exports[`Storyshots Molecules | Tabs With conditionally hidden tab 1`] = `
 
 <span
   className="c0"
-  type="secondary"
 >
   <div>
     <ul
@@ -530,7 +519,6 @@ exports[`Storyshots Molecules | Tabs With conditionally hidden tab 1`] = `
       >
         <span
           className="c0"
-          type="secondary"
         >
           <button
             aria-selected={false}
@@ -547,7 +535,6 @@ exports[`Storyshots Molecules | Tabs With conditionally hidden tab 1`] = `
             >
               <span
                 className="c0"
-                type="secondary"
               >
                 two
               </span>
@@ -690,7 +677,6 @@ exports[`Storyshots Molecules | Tabs With custom styling (like spacing) 1`] = `
 
 <span
   className="c0"
-  type="secondary"
 >
   <div>
     <ul
@@ -702,7 +688,6 @@ exports[`Storyshots Molecules | Tabs With custom styling (like spacing) 1`] = `
       >
         <span
           className="c6"
-          type="secondary"
         >
           <button
             aria-selected={true}
@@ -719,7 +704,6 @@ exports[`Storyshots Molecules | Tabs With custom styling (like spacing) 1`] = `
             >
               <span
                 className="c6"
-                type="secondary"
               >
                 One
               </span>
@@ -733,7 +717,6 @@ exports[`Storyshots Molecules | Tabs With custom styling (like spacing) 1`] = `
       >
         <span
           className="c0"
-          type="secondary"
         >
           <button
             aria-selected={false}
@@ -750,7 +733,6 @@ exports[`Storyshots Molecules | Tabs With custom styling (like spacing) 1`] = `
             >
               <span
                 className="c0"
-                type="secondary"
               >
                 two
               </span>

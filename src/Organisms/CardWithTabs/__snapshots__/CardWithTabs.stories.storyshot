@@ -173,7 +173,6 @@ Array [
         >
           <span
             className="c8"
-            type="secondary"
           >
             <button
               aria-selected={true}
@@ -190,7 +189,6 @@ Array [
               >
                 <span
                   className="c8"
-                  type="secondary"
                 >
                   Tab title 1
                 </span>
@@ -204,7 +202,6 @@ Array [
         >
           <span
             className="c11"
-            type="secondary"
           >
             <button
               aria-selected={false}
@@ -221,7 +218,6 @@ Array [
               >
                 <span
                   className="c11"
-                  type="secondary"
                 >
                   Tab title 2
                 </span>
@@ -425,7 +421,6 @@ exports[`Storyshots Organisms | CardWithTabs Integration: with Typography and ex
       >
         <span
           className="c8"
-          type="secondary"
         >
           <button
             aria-selected={true}
@@ -442,7 +437,6 @@ exports[`Storyshots Organisms | CardWithTabs Integration: with Typography and ex
             >
               <span
                 className="c8"
-                type="secondary"
               >
                 Tab title 1
               </span>
@@ -456,7 +450,6 @@ exports[`Storyshots Organisms | CardWithTabs Integration: with Typography and ex
       >
         <span
           className="c11"
-          type="secondary"
         >
           <button
             aria-selected={false}
@@ -473,7 +466,6 @@ exports[`Storyshots Organisms | CardWithTabs Integration: with Typography and ex
             >
               <span
                 className="c11"
-                type="secondary"
               >
                 <div
                   className="c13"
@@ -673,7 +665,6 @@ exports[`Storyshots Organisms | CardWithTabs with initialActiveTabIndex 1`] = `
       >
         <span
           className="c8"
-          type="secondary"
         >
           <button
             aria-selected={false}
@@ -690,7 +681,6 @@ exports[`Storyshots Organisms | CardWithTabs with initialActiveTabIndex 1`] = `
             >
               <span
                 className="c8"
-                type="secondary"
               >
                 Tab title 1
               </span>
@@ -704,7 +694,6 @@ exports[`Storyshots Organisms | CardWithTabs with initialActiveTabIndex 1`] = `
       >
         <span
           className="c11"
-          type="secondary"
         >
           <button
             aria-selected={true}
@@ -721,7 +710,6 @@ exports[`Storyshots Organisms | CardWithTabs with initialActiveTabIndex 1`] = `
             >
               <span
                 className="c11"
-                type="secondary"
               >
                 Tab title 2
               </span>

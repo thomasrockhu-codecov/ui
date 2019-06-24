@@ -1,4 +1,5 @@
 import React from 'react';
+import R from 'ramda';
 import styled, { ThemedStyledProps } from 'styled-components';
 import { Theme } from '../../theme/theme.types';
 import { Props, Types, FontProps } from './Typography.types';
@@ -168,8 +169,10 @@ const getTypeStyles = (props: ThemedStyledProps<Props, Theme>) => {
     
   `;
 };
-
-const StyledTypography = styled.span<Props>`
+const CleanSpan = (props: any) => (
+  <span {...R.omit(['color', 'type', 'weight', 'lineHeight'])(props)} />
+);
+const StyledTypography = styled(CleanSpan)<Props>`
   font-family: 'Nordnet Sans Mono', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
     sans-serif;
   color: ${p => getColor(p)};

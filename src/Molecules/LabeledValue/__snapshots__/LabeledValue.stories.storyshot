@@ -32,8 +32,6 @@ exports[`Storyshots Molecules | LabeledValue Default 1`] = `
   >
     <span
       className="c2"
-      color={[Function]}
-      type="secondary"
     >
       Label
     </span>
@@ -83,15 +81,12 @@ exports[`Storyshots Molecules | LabeledValue Integration: LabeledValue secondary
   >
     <span
       className="c2"
-      color={[Function]}
-      type="secondary"
     >
       Market value
     </span>
   </div>
   <span
     className="c3"
-    type="secondary"
   >
     
     4,672,198
@@ -148,15 +143,12 @@ exports[`Storyshots Molecules | LabeledValue Integration: LabeledValue title1 1`
   >
     <span
       className="c2"
-      color={[Function]}
-      type="secondary"
     >
       Holdings (SEK)
     </span>
   </div>
   <span
     className="c3"
-    type="title1"
   >
     
     4,713,119
@@ -238,8 +230,6 @@ exports[`Storyshots Molecules | LabeledValue Integration: LabeledValue with nega
   >
     <span
       className="c2"
-      color={[Function]}
-      type="secondary"
     >
       Development this year
     </span>
@@ -252,7 +242,6 @@ exports[`Storyshots Molecules | LabeledValue Integration: LabeledValue with nega
     >
       <span
         className="c5"
-        type="secondary"
       >
         <span
           className="c6"
@@ -274,7 +263,6 @@ exports[`Storyshots Molecules | LabeledValue Integration: LabeledValue with nega
     >
       <span
         className="c7"
-        type="secondary"
       >
         
         -4,672,198
@@ -350,8 +338,6 @@ exports[`Storyshots Molecules | LabeledValue Integration: LabeledValue with posi
   >
     <span
       className="c2"
-      color={[Function]}
-      type="secondary"
     >
       Development this year
     </span>
@@ -364,7 +350,6 @@ exports[`Storyshots Molecules | LabeledValue Integration: LabeledValue with posi
     >
       <span
         className="c5"
-        type="secondary"
       >
         <span
           className="c6"
@@ -386,7 +371,6 @@ exports[`Storyshots Molecules | LabeledValue Integration: LabeledValue with posi
     >
       <span
         className="c5"
-        type="secondary"
       >
         +
         4,672,198

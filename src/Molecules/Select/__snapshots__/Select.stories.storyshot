@@ -99,8 +99,6 @@ exports[`Storyshots Molecules | Select Select with hidden label 1`] = `
   >
     <span
       className="c1"
-      color={[Function]}
-      type="secondary"
     >
       Stocks
     </span>
@@ -135,7 +133,6 @@ exports[`Storyshots Molecules | Select Select with hidden label 1`] = `
     <span
       aria-hidden={true}
       className="c4 c5"
-      type="secondary"
     >
       Option 2
     </span>
@@ -249,8 +246,6 @@ exports[`Storyshots Molecules | Select Select with overflowing placeholder 1`] =
   <label>
     <span
       className="c0"
-      color={[Function]}
-      type="secondary"
     >
       Options
     </span>
@@ -274,7 +269,6 @@ exports[`Storyshots Molecules | Select Select with overflowing placeholder 1`] =
       <span
         aria-hidden={true}
         className="c3 c4"
-        type="secondary"
       >
         Reaaaaaaaaaally long option
       </span>
@@ -382,8 +376,6 @@ exports[`Storyshots Molecules | Select Select with placeholder 1`] = `
 <label>
   <span
     className="c0"
-    color={[Function]}
-    type="secondary"
   >
     Options
   </span>
@@ -392,6 +384,7 @@ exports[`Storyshots Molecules | Select Select with placeholder 1`] = `
   >
     <select
       className="c2"
+      defaultValue=""
       disabled={false}
       onBlur={[Function]}
       onChange={[Function]}
@@ -399,7 +392,6 @@ exports[`Storyshots Molecules | Select Select with placeholder 1`] = `
     >
       <option
         disabled={true}
-        selected={true}
         value=""
       >
         Select option
@@ -423,7 +415,6 @@ exports[`Storyshots Molecules | Select Select with placeholder 1`] = `
     <span
       aria-hidden={true}
       className="c3 c4"
-      type="secondary"
     >
       Select option
     </span>
@@ -530,8 +521,6 @@ exports[`Storyshots Molecules | Select Select with placeholder and preselected v
 <label>
   <span
     className="c0"
-    color={[Function]}
-    type="secondary"
   >
     Options
   </span>
@@ -548,7 +537,6 @@ exports[`Storyshots Molecules | Select Select with placeholder and preselected v
     >
       <option
         disabled={true}
-        selected={true}
         value=""
       >
         Select option
@@ -572,7 +560,6 @@ exports[`Storyshots Molecules | Select Select with placeholder and preselected v
     <span
       aria-hidden={true}
       className="c3 c4"
-      type="secondary"
     >
       Option 2
     </span>
@@ -691,8 +678,6 @@ exports[`Storyshots Molecules | Select Select with prepended empty value 1`] = `
   >
     <span
       className="c1"
-      color={[Function]}
-      type="secondary"
     >
       Stocks
     </span>
@@ -732,7 +717,6 @@ exports[`Storyshots Molecules | Select Select with prepended empty value 1`] = `
     <span
       aria-hidden={true}
       className="c4 c5"
-      type="secondary"
     >
       All
     </span>
@@ -839,8 +823,6 @@ exports[`Storyshots Molecules | Select Select with preselected value 1`] = `
 <label>
   <span
     className="c0"
-    color={[Function]}
-    type="secondary"
   >
     Stocks
   </span>
@@ -874,7 +856,6 @@ exports[`Storyshots Molecules | Select Select with preselected value 1`] = `
     <span
       aria-hidden={true}
       className="c3 c4"
-      type="secondary"
     >
       Option 2
     </span>
@@ -981,8 +962,6 @@ exports[`Storyshots Molecules | Select Select without placeholder 1`] = `
 <label>
   <span
     className="c0"
-    color={[Function]}
-    type="secondary"
   >
     Stocks
   </span>
@@ -1015,7 +994,6 @@ exports[`Storyshots Molecules | Select Select without placeholder 1`] = `
     <span
       aria-hidden={true}
       className="c3 c4"
-      type="secondary"
     />
     <svg
       aria-hidden="true"

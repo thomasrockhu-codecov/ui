@@ -1,4 +1,5 @@
 import React from 'react';
+import R from 'ramda';
 import styled, { ThemedStyledProps } from 'styled-components';
 import Color from 'color';
 import { Link as RouterLink } from 'react-router-dom';
@@ -158,7 +159,10 @@ const StyledButton = styled(NormalizedElements.Button)<ButtonProps>`
   cursor: ${p => (p.disabled ? 'not-allowed' : 'pointer')};
 `;
 
-const StyledLink = styled(RouterLink)<LinkProps>`
+const CleanRouterLink = (props: LinkProps) => (
+  <RouterLink {...R.omit(['fullWidth', 'colorFn', 'color'], props)} />
+);
+const StyledLink = styled(CleanRouterLink)<LinkProps>`
   ${p => getSharedStyle(p)}
   text-decoration: none;
 `;

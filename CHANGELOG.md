@@ -1,8 +1,46 @@
-# [1.15.0-beta.2](https://github.com/nordnet/ui/compare/v1.15.0-beta.1@beta...v1.15.0-beta.2@beta) (2019-06-19)
+# [1.16.0](https://github.com/nordnet/ui/compare/v1.15.2...v1.16.0) (2019-06-24)
 
 
 ### Bug Fixes
 
+* warnings ([bbd117f](https://github.com/nordnet/ui/commit/bbd117f))
+
+
+### Features
+
+* added more fixes ([772690f](https://github.com/nordnet/ui/commit/772690f))
+
+## [1.15.2](https://github.com/nordnet/ui/compare/v1.15.1...v1.15.2) (2019-06-20)
+
+
+### Bug Fixes
+
+* media AS prop ([f9a838d](https://github.com/nordnet/ui/commit/f9a838d))
+
+## [1.15.1](https://github.com/nordnet/ui/compare/v1.15.0...v1.15.1) (2019-06-20)
+
+
+### Bug Fixes
+
+* 🐛 display for link component ([061d76c](https://github.com/nordnet/ui/commit/061d76c))
+
+# [1.15.0](https://github.com/nordnet/ui/compare/v1.14.0...v1.15.0) (2019-06-19)
+
+
+### Bug Fixes
+
+* remove beta job ([f72bc46](https://github.com/nordnet/ui/commit/f72bc46))
+
+
+### Features
+
+* 🎸 polished media component ([34815a3](https://github.com/nordnet/ui/commit/34815a3))
+* improved media and useMedia hook ([40c4102](https://github.com/nordnet/ui/commit/40c4102))
+
+# [1.15.0-beta.2](https://github.com/nordnet/ui/compare/v1.15.0-beta.1@beta...v1.15.0-beta.2@beta) (2019-06-19)
+
+
+### Bug Fixes
 * optimize code ([a47f58a](https://github.com/nordnet/ui/commit/a47f58a))
 * output line height unitless ([e96b1d3](https://github.com/nordnet/ui/commit/e96b1d3))
 * remove typo ([74a0192](https://github.com/nordnet/ui/commit/74a0192))

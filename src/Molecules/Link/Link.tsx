@@ -1,3 +1,4 @@
+import R from 'ramda';
 import React from 'react';
 import styled, { ThemedStyledProps } from 'styled-components';
 import { Link as RouterLink } from 'react-router-dom';
@@ -7,10 +8,12 @@ import { isUndefined } from '../../common/utils';
 import NormalizedElements from '../../common/NormalizedElements';
 
 const getSharedStyle = (props: ThemedStyledProps<LinkProps | ButtonProps, Theme>) => {
-  const { theme, disabled } = props;
+  const { theme, disabled, display = 'inline' } = props;
 
+  // Need to switch to display: inline-block
+  // But it will break pages, so need to do it through mutations
   return `
-    display: inline-block;
+    display: ${display};
     padding: 0;
     color: ${disabled ? theme.color.disabledText : theme.color.cta}
 
@@ -20,7 +23,11 @@ const getSharedStyle = (props: ThemedStyledProps<LinkProps | ButtonProps, Theme>
   `;
 };
 
-const StyledLink = styled(RouterLink)<LinkProps>`
+const CleanRouterLink = (props: LinkProps) => (
+  <RouterLink {...R.omit(['fullWidth', 'colorFn', 'color', 'display'], props)} />
+);
+
+const StyledLink = styled(CleanRouterLink)<LinkProps>`
   ${p => getSharedStyle(p)}
   text-decoration: none;
 `;

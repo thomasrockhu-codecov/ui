@@ -543,7 +543,6 @@ exports[`Storyshots Atoms | Spinner Regression: 2 spinners with same color and s
   <div>
     <span
       className="c0"
-      type="primary"
     >
       Only the one with green border should be shown. The bug before was that if two spinners had the same size and color, both were hidden.
     </span>

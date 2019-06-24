@@ -92,7 +92,6 @@ exports[`Storyshots Atoms | Typography Caption 1`] = `
     <div>
       <span
         className="c3"
-        type="caption"
       >
         Caption text
       </span>
@@ -110,7 +109,6 @@ exports[`Storyshots Atoms | Typography Caption 1`] = `
     <div>
       <span
         className="c4"
-        type="caption"
       >
         Caption bold text
       </span>
@@ -247,7 +245,6 @@ exports[`Storyshots Atoms | Typography Colors 1`] = `
     <div>
       <span
         className="c3"
-        type="primary"
       >
         Default
       </span>
@@ -265,8 +262,6 @@ exports[`Storyshots Atoms | Typography Colors 1`] = `
     <div>
       <span
         className="c3"
-        color={[Function]}
-        type="primary"
       >
         Text
       </span>
@@ -284,8 +279,6 @@ exports[`Storyshots Atoms | Typography Colors 1`] = `
     <div>
       <span
         className="c4"
-        color={[Function]}
-        type="primary"
       >
         Positive
       </span>
@@ -303,8 +296,6 @@ exports[`Storyshots Atoms | Typography Colors 1`] = `
     <div>
       <span
         className="c5"
-        color={[Function]}
-        type="primary"
       >
         Negative
       </span>
@@ -322,8 +313,6 @@ exports[`Storyshots Atoms | Typography Colors 1`] = `
     <div>
       <span
         className="c6"
-        color={[Function]}
-        type="primary"
       >
         Warning
       </span>
@@ -341,8 +330,6 @@ exports[`Storyshots Atoms | Typography Colors 1`] = `
     <div>
       <span
         className="c7"
-        color={[Function]}
-        type="primary"
       >
         CTA
       </span>
@@ -360,8 +347,6 @@ exports[`Storyshots Atoms | Typography Colors 1`] = `
     <div>
       <span
         className="c8"
-        color={[Function]}
-        type="primary"
       >
         Label
       </span>
@@ -476,7 +461,6 @@ exports[`Storyshots Atoms | Typography Hero 1`] = `
     <div>
       <span
         className="c3"
-        type="hero"
       >
         Hero text
       </span>
@@ -494,7 +478,6 @@ exports[`Storyshots Atoms | Typography Hero 1`] = `
     <div>
       <span
         className="c4"
-        type="hero"
       >
         Hero text
       </span>
@@ -621,7 +604,6 @@ exports[`Storyshots Atoms | Typography Primary 1`] = `
     <div>
       <span
         className="c4"
-        type="primary"
       >
         Primary bold text
       </span>
@@ -639,7 +621,6 @@ exports[`Storyshots Atoms | Typography Primary 1`] = `
     <div>
       <span
         className="c5"
-        type="primary"
       >
         Primary extrabold text
       </span>
@@ -740,7 +721,6 @@ exports[`Storyshots Atoms | Typography Secondary 1`] = `
     <div>
       <span
         className="c3"
-        type="secondary"
       >
         Secondary text
       </span>
@@ -758,7 +738,6 @@ exports[`Storyshots Atoms | Typography Secondary 1`] = `
     <div>
       <span
         className="c4"
-        type="secondary"
       >
         Secondary bold text
       </span>
@@ -859,7 +838,6 @@ exports[`Storyshots Atoms | Typography Tertiary 1`] = `
     <div>
       <span
         className="c3"
-        type="tertiary"
       >
         Tertiary text
       </span>
@@ -877,7 +855,6 @@ exports[`Storyshots Atoms | Typography Tertiary 1`] = `
     <div>
       <span
         className="c4"
-        type="tertiary"
       >
         Tertiary bold text
       </span>
@@ -1008,7 +985,6 @@ exports[`Storyshots Atoms | Typography Title1 1`] = `
     <div>
       <span
         className="c3"
-        type="title1"
       >
         Title1 text
       </span>
@@ -1026,7 +1002,6 @@ exports[`Storyshots Atoms | Typography Title1 1`] = `
     <div>
       <span
         className="c4"
-        type="title1"
       >
         Title1 text
       </span>
@@ -1044,7 +1019,6 @@ exports[`Storyshots Atoms | Typography Title1 1`] = `
     <div>
       <span
         className="c5"
-        type="title1"
       >
         Title1 text
       </span>
@@ -1175,7 +1149,6 @@ exports[`Storyshots Atoms | Typography Title2 1`] = `
     <div>
       <span
         className="c3"
-        type="title2"
       >
         Title2 text
       </span>
@@ -1193,7 +1166,6 @@ exports[`Storyshots Atoms | Typography Title2 1`] = `
     <div>
       <span
         className="c4"
-        type="title2"
       >
         Title2 text
       </span>
@@ -1211,7 +1183,6 @@ exports[`Storyshots Atoms | Typography Title2 1`] = `
     <div>
       <span
         className="c5"
-        type="title2"
       >
         Title2 text
       </span>
@@ -1342,7 +1313,6 @@ exports[`Storyshots Atoms | Typography Title3 1`] = `
     <div>
       <span
         className="c3"
-        type="title3"
       >
         Title3 text
       </span>
@@ -1360,7 +1330,6 @@ exports[`Storyshots Atoms | Typography Title3 1`] = `
     <div>
       <span
         className="c4"
-        type="title3"
       >
         Title3 text
       </span>
@@ -1378,7 +1347,6 @@ exports[`Storyshots Atoms | Typography Title3 1`] = `
     <div>
       <span
         className="c5"
-        type="title3"
       >
         Title3 text
       </span>
