@@ -1,3 +1,4 @@
+import R from 'ramda';
 import React from 'react';
 import styled, { ThemedStyledProps } from 'styled-components';
 import { Link as RouterLink } from 'react-router-dom';
@@ -22,7 +23,11 @@ const getSharedStyle = (props: ThemedStyledProps<LinkProps | ButtonProps, Theme>
   `;
 };
 
-const StyledLink = styled(RouterLink)<LinkProps>`
+const CleanRouterLink = (props: LinkProps) => (
+  <RouterLink {...R.omit(['fullWidth', 'colorFn', 'color', 'display'], props)} />
+);
+
+const StyledLink = styled(CleanRouterLink)<LinkProps>`
   ${p => getSharedStyle(p)}
   text-decoration: none;
 `;

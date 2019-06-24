@@ -92,6 +92,7 @@ const sanitizeProps = R.omit([
   'shrink',
   'basis',
   'order',
+  'justifyContent',
 ]);
 const SanitizedDiv = (props: Props) => <div {...sanitizeProps(props)} />;
 

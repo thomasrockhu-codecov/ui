@@ -175,7 +175,6 @@ exports[`Storyshots Molecules | CardWithTitle Integration: CardWithTitle with cu
   >
     <div
       className="c2"
-      justifyContent="space-between"
     >
       <div
         className="c3"
@@ -197,8 +196,6 @@ exports[`Storyshots Molecules | CardWithTitle Integration: CardWithTitle with cu
         >
           <span
             className="c6"
-            color={[Function]}
-            type="secondary"
           >
             Marknadsöversikt
           </span>
