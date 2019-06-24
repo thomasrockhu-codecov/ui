@@ -1,3 +1,10 @@
+## [1.16.1](https://github.com/nordnet/ui/compare/v1.16.0...v1.16.1) (2019-06-24)
+
+
+### Bug Fixes
+
+* ie11 safari crash media ([ad14dca](https://github.com/nordnet/ui/commit/ad14dca))
+
 # [1.16.0](https://github.com/nordnet/ui/compare/v1.15.2...v1.16.0) (2019-06-24)
 
 
