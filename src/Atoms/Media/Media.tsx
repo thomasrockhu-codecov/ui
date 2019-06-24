@@ -35,10 +35,10 @@ const useMedia = (query: string | ((t: Theme) => string)) => {
 
     // Then update matches
     // if screen hits new breakpoint
-    media.addEventListener('change', handler);
+    media.addListener(handler);
 
     // And of course unsubscribe onunmount
-    return () => media.removeEventListener('change', handler);
+    return () => media.removeListener(handler);
   }, [mediaQuery]);
 
   return matches;
