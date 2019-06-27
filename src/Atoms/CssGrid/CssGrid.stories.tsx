@@ -1,6 +1,7 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 import styled from 'styled-components';
+import { action } from '@storybook/addon-actions';
 import MD from 'react-markdown';
 import docs from './CssGrid.md';
 
@@ -23,7 +24,7 @@ const StyledMarkdownContainer = styled.div`
 const Content = ({ children }: any) => <StyledContent>{children}</StyledContent>;
 
 const ComponentThatDoesSomethingOnMount = () => {
-  React.useEffect(() => console.log('By the way, I`ve mounted!'), []);
+  React.useEffect(action('mounted'), []);
   return (
     <div>
       This item is mounted and stays mounted no matter what. However, it&lsquo;d be hidden with css
@@ -32,7 +33,7 @@ const ComponentThatDoesSomethingOnMount = () => {
 };
 
 const ComponentThatLogsRender: React.FC<any> = ({ children }) => {
-  console.log('Im rendered!');
+  action('Rendered!')();
   return children;
 };
 
@@ -52,6 +53,8 @@ storiesOf('Atoms | CssGrid', module)
         ['menu',   'content', 'ads'],
         ['footer', 'footer',  'footer'],
       ]}
+      templateColumns={['1fr', '1fr', '1fr']}
+      templateRows={['1fr', '1fr', '1fr']}
     >
       <Grid.Item area="header">
         <Content>Header</Content>
@@ -79,6 +82,8 @@ storiesOf('Atoms | CssGrid', module)
         ['left', 'content', 'sidebar'],
         ['left', 'content', 'sidebar'],
       ]}
+      templateColumns={['1fr', '1fr', '1fr']}
+      templateRows={['1fr', '1fr', '1fr']}
     >
       <Grid.Item area="left">
         <Content>Left</Content>
@@ -98,6 +103,7 @@ storiesOf('Atoms | CssGrid', module)
     <Grid.Container
       gutter={{ row: 6, col: 4 }}
       templateColumns={['1fr', '2fr', '1fr']}
+      templateRows={['1fr', '1fr', '1fr']}
       // prettier-ignore
       areas={[
         ['left', 'top',     'messages'],
@@ -130,6 +136,7 @@ storiesOf('Atoms | CssGrid', module)
   .add('CssGrid with custom templateColumns', () => (
     <Grid.Container
       templateColumns={[3, 6, 3]}
+      templateRows={['1fr', '1fr', '1fr']}
       // prettier-ignore
       areas={[
         ['left', 'top',     'sidebar'],
@@ -154,6 +161,7 @@ storiesOf('Atoms | CssGrid', module)
   .add('CssGrid with different layouts for different screen sizes', () => (
     <Grid.Container
       templateColumns={[6, 6]}
+      templateRows={['1fr', '1fr', '1fr']}
       // prettier-ignore
       areas={[
       ['top',     'top'],
@@ -222,6 +230,11 @@ storiesOf('Atoms | CssGrid', module)
         ['left', 'content', 'content'],
       ]}
       md={{
+        // prettier-ignore
+        templateRows: [
+          'auto',
+          'auto'
+        ],
         templateColumns: ['1fr'],
         areas: [['left'], ['top'], ['content']],
       }}
@@ -248,11 +261,21 @@ storiesOf('Atoms | CssGrid', module)
     <Grid.Container
       templateColumns={['1fr', '1fr', '1fr']}
       // prettier-ignore
+      templateRows={[
+        'auto',
+        'auto'
+      ]}
+      // prettier-ignore
       areas={[
         ['left', 'top', 'top'],
         ['left', 'content', 'content'],
       ]}
       md={{
+        // prettier-ignore
+        templateRows: [
+          'auto',
+          'auto'
+        ],
         templateColumns: ['1fr'],
         // prettier-ignore
         areas: [
@@ -284,6 +307,11 @@ storiesOf('Atoms | CssGrid', module)
     return (
       <Grid.Container
         templateColumns={['1fr', '1fr', '1fr']}
+        // prettier-ignore
+        templateRows={isHidden ? [
+        'auto',
+        'auto'
+      ]: ['auto']}
         areas={
           // prettier-ignore
           isHidden ? 
@@ -315,6 +343,7 @@ storiesOf('Atoms | CssGrid', module)
     return (
       <Grid.Container
         templateColumns={['1fr', '1fr', '1fr']}
+        templateRows={isHidden ? ['auto', 'auto'] : ['auto']}
         areas={
           // prettier-ignore
           isHidden ? 
@@ -346,6 +375,7 @@ storiesOf('Atoms | CssGrid', module)
     return (
       <Grid.Container
         templateColumns={['1fr', '1fr', '1fr']}
+        templateRows={['auto', 'auto']}
         areas={
           // prettier-ignore
           [
@@ -377,6 +407,7 @@ storiesOf('Atoms | CssGrid', module)
     return (
       <Grid.Container
         templateColumns={['1fr', '1fr', '1fr']}
+        templateRows={['auto', 'auto']}
         areas={
           // prettier-ignore
           [
