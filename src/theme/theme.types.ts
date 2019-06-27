@@ -125,8 +125,6 @@ export type Theme = {
   };
 
   breakpoints: {
-    /** Mobile offset: 3; */
-    xs: Record<'offset', number>;
     /** Tablet, mobile size: 768; offset: 6; */
     sm: Record<'offset' | 'size', number>;
     /** Tablet, desktop size: 992; offset: 7; */

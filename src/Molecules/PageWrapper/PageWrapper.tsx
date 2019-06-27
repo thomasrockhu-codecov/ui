@@ -16,7 +16,6 @@ const Outer = styled.div<Props>`
 const Inner = styled.div`
   box-sizing: border-box;
   margin: 0 auto;
-  padding: 0 ${p => p.theme.spacing.unit(p.theme.breakpoints.xs.offset)}px;
 
   ${getBreakpointStyles('sm')};
   ${getBreakpointStyles('md')};
