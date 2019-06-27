@@ -2,7 +2,15 @@ import React from 'react';
 import R from 'ramda';
 import styled, { css, withTheme } from 'styled-components';
 import { Theme } from '../../theme/theme.types';
-import { Props, Gutter, TemplateColumn, TemplateRow, AreaName, AreaInfo } from './CssGrid.types';
+import {
+  Props,
+  Gutter,
+  TemplateColumn,
+  TemplateRow,
+  AreaName,
+  AreaInfo,
+  Size,
+} from './CssGrid.types';
 import { isUndefined, assert } from '../../common/utils';
 import { getAreasInfo } from './utils';
 
@@ -14,6 +22,11 @@ const formatAreas = (areas: Props['areas']) =>
 
 const isNumber = (x: any): x is number => x === parseInt(x, 10);
 const isArrayOfStrings = (xs: any[]): xs is string[] => xs.every(x => typeof x === 'string');
+const isSupportedCssValue = (s: string) => {
+  const stringS = `${s}`;
+
+  return !(stringS.includes('minmax') || stringS.includes('repeat') || stringS.includes('('));
+};
 
 const getGutterStyles = (props: { gutter: Gutter; theme: Theme }) => {
   const { gutter, theme } = props;
@@ -35,15 +48,27 @@ const getGutterStyles = (props: { gutter: Gutter; theme: Theme }) => {
   `;
 };
 
-const getTemplateColumns = (props: { templateColumns?: TemplateColumn }): string => {
-  const { templateColumns } = props;
+const getTemplateColumns = (props: { templateColumns?: TemplateColumn; size: Size }): string => {
+  const { templateColumns, size } = props;
   const oneColSize = 100 / 12;
 
   if (isUndefined(templateColumns)) {
+    assert(
+      false,
+      `CssGrid: It seems like you don't have templateColumns specified for '${size ||
+        'default'}' size. This may lead to some weird IE11 bugs.`,
+      { level: 'warn' },
+    );
     return '';
   }
 
   if (isArrayOfStrings(templateColumns)) {
+    assert(
+      templateColumns.every(isSupportedCssValue),
+      `CssGrid: Probably unsupported css value used in templateColumns for ${size ||
+        'default'}. This will cause some IE11 bugs.`,
+      { level: 'warn' },
+    );
     return `grid-template-columns: ${templateColumns.join(' ')};`;
   }
 
@@ -52,13 +77,25 @@ const getTemplateColumns = (props: { templateColumns?: TemplateColumn }): string
     .join(' ')};`;
 };
 
-const getTemplateRows = (props: { templateRows?: TemplateRow }): string => {
-  const { templateRows } = props;
+const getTemplateRows = (props: { templateRows?: TemplateRow; size: Size }): string => {
+  const { templateRows, size } = props;
 
   if (isUndefined(templateRows)) {
+    assert(
+      false,
+      `CssGrid: It seems like you don't have templateRows specified for '${size ||
+        'default'}' size. This will definitely cause some weird IE11 bugs. Please check and fix`,
+      { level: 'warn' },
+    );
     return '';
   }
 
+  assert(
+    templateRows.every(isSupportedCssValue),
+    `CssGrid: Probably unsupported css value used in templateRows for ${size ||
+      'default'}. This will cause some IE11 bugs.`,
+    { level: 'warn' },
+  );
   return `grid-template-rows: ${templateRows.join(' ')};`;
 };
 
@@ -162,7 +199,7 @@ const StyledDiv = styled.div<Props>`
 
   ${props => {
     const { sm, md, lg, xl } = props;
-    const createStyles = (innerProps: Partial<Props>, size?: 'sm' | 'md' | 'lg' | 'xl') => {
+    const createStyles = (innerProps: Partial<Props>, size?: Size) => {
       const { height, areas, templateRows, templateColumns } = innerProps;
       const gutter = isUndefined(innerProps.gutter)
         ? props.theme.spacing.gutter
@@ -171,11 +208,13 @@ const StyledDiv = styled.div<Props>`
         getTemplateColumns({
           ...innerProps,
           templateColumns,
+          size,
         }) || '';
       const templateRowsStyles =
         getTemplateRows({
           ...innerProps,
           templateRows,
+          size,
         }) || '';
       const baseStyles = `
           ${height ? `height: ${height};` : ''};
@@ -207,7 +246,7 @@ const StyledDiv = styled.div<Props>`
 
     const styles = Object.entries({ sm, md, lg, xl })
       .filter(([_, sizeProps]) => sizeProps !== undefined)
-      .map(([size, sizeProps]) => createStyles(sizeProps!, size as 'sm' | 'md' | 'lg' | 'xl'));
+      .map(([size, sizeProps]) => createStyles(sizeProps!, size as Size));
     styles.unshift(createStyles(props, undefined));
     return styles.join('\n');
   }}
@@ -234,19 +273,20 @@ const CssGridItem: React.FC<ItemProps> = ({ align, area, children, justify, plac
 );
 CssGridItem.displayName = 'CssGrid.Item';
 
-const generateChildStyles = (
-  areasInfo: Record<string, AreaInfo>,
-  size: 'sm' | 'md' | 'lg' | 'xl' | undefined,
-  theme: Theme,
-) => (areaName: string): string => {
-  assert(
-    Boolean(areasInfo && areasInfo[areaName]),
-    `CSSGrid: Couldn't find area name: ${areaName}`,
-  );
-  const info = areasInfo[areaName];
-  const styles = [`-ms-grid-row: ${info.rowStart};`, `-ms-grid-column: ${info.colStart};`];
-  styles.push(`-ms-grid-column-span: ${info.colSpan};`);
-  styles.push(`-ms-grid-row-span: ${info.rowSpan};`);
+const generateChildStyles = (areasInfo: Record<string, AreaInfo>, size: Size, theme: Theme) => (
+  areaName: string,
+): string => {
+  const styles = [];
+  if (!areasInfo[areaName]) {
+    styles.push('display: none; grid-area: none;');
+  } else {
+    const info = areasInfo[areaName];
+    styles.push(`-ms-grid-row: ${info.rowStart};`, `-ms-grid-column: ${info.colStart};`);
+    styles.push(`-ms-grid-column-span: ${info.colSpan};`);
+    styles.push(`-ms-grid-row-span: ${info.rowSpan};`);
+    styles.push(`display: block; grid-area: ${areaName};`);
+  }
+
   // prettier-ignore
   return size
     ? `
@@ -260,40 +300,59 @@ const generateChildStyles = (
 const RawCSSGridContainer: React.FC<Props & { theme: Theme }> = ({ theme, children, ...props }) => {
   const { sm, md, lg, xl } = props;
 
-  const stylesFnsForChild = Object.entries({ sm, md, lg, xl })
-    .filter(([_, sizeProps]) => sizeProps !== undefined)
-    .map(([size, sizeProps]) =>
-      generateChildStyles(
-        getAreasInfo(
-          (isUndefined(sizeProps!.areas) ? props.areas : sizeProps!.areas) as string[][],
-          { col: true, row: true },
-        ),
-        size as 'sm' | 'md' | 'lg' | 'xl',
-        theme,
-      ),
-    );
+  type SizeAreaTuple = [undefined | Size, { areas: Props['areas'] }];
+  const stylesFnsForChild = React.useMemo(
+    () =>
+      ([
+        [undefined, { areas: props.areas } as any],
+        ['sm', sm],
+        ['md', md],
+        ['lg', lg],
+        ['xl', xl],
+      ] as SizeAreaTuple[])
+        .filter(([_, sizeProps]) => sizeProps !== undefined)
+        .map(([size], currentSizeIdx, allSizes) => {
+          const currentAreas = allSizes
+            .slice(0, currentSizeIdx + 1)
+            .reverse()
+            .find(([_, sizeProps]) => !isUndefined(sizeProps.areas));
 
-  stylesFnsForChild.unshift(
-    generateChildStyles(getAreasInfo(props.areas, { col: true, row: true }), undefined, theme),
+          return generateChildStyles(
+            getAreasInfo(currentAreas![1].areas, { col: true, row: true }),
+            size as Size,
+            theme,
+          );
+        }),
+    [sm, md, lg, xl, props.areas, theme],
   );
 
   const stylesFnForChild = (areaName: string) => stylesFnsForChild.map(f => f(areaName)).join('\n');
 
-  return (
-    <StyledDiv {...props}>
-      {React.Children.map(children as any, (child: { props: ItemProps }) => {
-        return (
-          // @ts-ignore
-          <RawCssGridItem
-            {...child.props}
-            css={css`
-              ${stylesFnForChild(child.props.area)}
-            `}
-          />
+  const renderedChildren = React.Children.map<JSX.Element | null, React.ReactElement<ItemProps>>(
+    children as any,
+    (child, childIndex) => {
+      if (!child) {
+        assert(
+          false,
+          `CssGrid: It seems like you have null-ish children[${childIndex}]. \nIf you wanted to do a conditional rendering, do so with areas prop on CssGrid.Container`,
+          { level: 'warn' },
         );
-      })}
-    </StyledDiv>
+        return null;
+      }
+
+      return (
+        // @ts-ignore
+        <RawCssGridItem
+          {...child.props}
+          css={css`
+            ${stylesFnForChild(child.props.area)}
+          `}
+        />
+      );
+    },
   );
+
+  return <StyledDiv {...props}>{renderedChildren}</StyledDiv>;
 };
 const CssGridContainer = withTheme(RawCSSGridContainer);
 CssGridContainer.displayName = 'CssGrid.Container';

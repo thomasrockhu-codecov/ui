@@ -22,6 +22,20 @@ const StyledMarkdownContainer = styled.div`
 
 const Content = ({ children }: any) => <StyledContent>{children}</StyledContent>;
 
+const ComponentThatDoesSomethingOnMount = () => {
+  React.useEffect(() => console.log('By the way, I`ve mounted!'), []);
+  return (
+    <div>
+      This item is mounted and stays mounted no matter what. However, it&lsquo;d be hidden with css
+    </div>
+  );
+};
+
+const ComponentThatLogsRender: React.FC<any> = ({ children }) => {
+  console.log('Im rendered!');
+  return children;
+};
+
 storiesOf('Atoms | CssGrid', module)
   .add('Documentation', () => (
     <StyledMarkdownContainer>
@@ -194,26 +208,198 @@ storiesOf('Atoms | CssGrid', module)
       </Grid.Item>
     </Grid.Container>
   ))
-  .add('Experimental! Missing template area generates an error', () => (
+  .add('Shown on md+, hidden on small screens', () => (
     <Grid.Container
-      templateColumns={['repeat(2, 1fr)']}
+      templateColumns={['1fr', '1fr', '1fr']}
+      // prettier-ignore
+      templateRows={[
+        'auto',
+        'auto'
+      ]}
       // prettier-ignore
       areas={[
-        ['left', 'top',],
-        ['left', 'content'],
+        ['left', 'content', 'content'],
+        ['left', 'content', 'content'],
       ]}
       md={{
-        areas: [['left'], ['content']],
+        templateColumns: ['1fr'],
+        areas: [['left'], ['top'], ['content']],
       }}
     >
       <Grid.Item area="left">
         <Content>Left</Content>
       </Grid.Item>
       <Grid.Item area="top">
-        <Content>Top</Content>
+        <Content>
+          <ComponentThatDoesSomethingOnMount />
+        </Content>
       </Grid.Item>
       <Grid.Item area="content">
-        <Content>Content</Content>
+        <Content>
+          <ComponentThatLogsRender>Content</ComponentThatLogsRender>
+        </Content>
+      </Grid.Item>
+      <Grid.Item area="non-existing">
+        <Content>something that doesn&lsquo;t exist</Content>
       </Grid.Item>
     </Grid.Container>
-  ));
+  ))
+  .add('Shown on small screen sizes, hidden on md+', () => (
+    <Grid.Container
+      templateColumns={['1fr', '1fr', '1fr']}
+      // prettier-ignore
+      areas={[
+        ['left', 'top', 'top'],
+        ['left', 'content', 'content'],
+      ]}
+      md={{
+        templateColumns: ['1fr'],
+        // prettier-ignore
+        areas: [
+          ['left'], 
+          ['content']
+        ]
+      }}
+    >
+      <Grid.Item area="left">
+        <Content>Left</Content>
+      </Grid.Item>
+      <Grid.Item area="top">
+        <Content>
+          <ComponentThatDoesSomethingOnMount />
+        </Content>
+      </Grid.Item>
+      <Grid.Item area="content">
+        <Content>
+          <ComponentThatLogsRender>Content</ComponentThatLogsRender>
+        </Content>
+      </Grid.Item>
+      <Grid.Item area="non-existing">
+        <Content>something that doesn&lsquo;t exist</Content>
+      </Grid.Item>
+    </Grid.Container>
+  ))
+  .add('Conditionally hidden: good way [hidden]', () => {
+    const isHidden = true;
+    return (
+      <Grid.Container
+        templateColumns={['1fr', '1fr', '1fr']}
+        areas={
+          // prettier-ignore
+          isHidden ? 
+          [
+            ['left', 'top', 'top'],
+            ['left', 'content', 'content']
+          ] : 
+          [['left', 'content', 'content']]
+        }
+      >
+        <Grid.Item area="left">
+          <Content>Left</Content>
+        </Grid.Item>
+        <Grid.Item area="top">
+          <Content>
+            <ComponentThatDoesSomethingOnMount />
+          </Content>
+        </Grid.Item>
+        <Grid.Item area="content">
+          <Content>
+            <ComponentThatLogsRender>Content</ComponentThatLogsRender>
+          </Content>
+        </Grid.Item>
+      </Grid.Container>
+    );
+  })
+  .add('Conditionally hidden: good way [shown]', () => {
+    const isHidden = false;
+    return (
+      <Grid.Container
+        templateColumns={['1fr', '1fr', '1fr']}
+        areas={
+          // prettier-ignore
+          isHidden ? 
+          [
+            ['left', 'top', 'top'],
+            ['left', 'content', 'content']
+          ] : 
+          [['left', 'content', 'content']]
+        }
+      >
+        <Grid.Item area="left">
+          <Content>Left</Content>
+        </Grid.Item>
+        <Grid.Item area="top">
+          <Content>
+            <ComponentThatDoesSomethingOnMount />
+          </Content>
+        </Grid.Item>
+        <Grid.Item area="content">
+          <Content>
+            <ComponentThatLogsRender>Content</ComponentThatLogsRender>
+          </Content>
+        </Grid.Item>
+      </Grid.Container>
+    );
+  })
+  .add('Conditionally hidden: WRONG way [hidden]', () => {
+    const isHidden = true;
+    return (
+      <Grid.Container
+        templateColumns={['1fr', '1fr', '1fr']}
+        areas={
+          // prettier-ignore
+          [
+            ['left', 'top', 'top'],
+            ['left', 'content', 'content']
+          ]
+        }
+      >
+        <Grid.Item area="left">
+          <Content>Left</Content>
+        </Grid.Item>
+        {!isHidden && (
+          <Grid.Item area="top">
+            <Content>
+              <ComponentThatDoesSomethingOnMount />
+            </Content>
+          </Grid.Item>
+        )}
+        <Grid.Item area="content">
+          <Content>
+            <ComponentThatLogsRender>Content</ComponentThatLogsRender>
+          </Content>
+        </Grid.Item>
+      </Grid.Container>
+    );
+  })
+  .add('Conditionally hidden: WRONG way [shown]', () => {
+    const isHidden = false;
+    return (
+      <Grid.Container
+        templateColumns={['1fr', '1fr', '1fr']}
+        areas={
+          // prettier-ignore
+          [
+            ['left', 'top', 'top'],
+            ['left', 'content', 'content']
+          ]
+        }
+      >
+        <Grid.Item area="left">
+          <Content>Left</Content>
+        </Grid.Item>
+        {!isHidden && (
+          <Grid.Item area="top">
+            <Content>
+              <ComponentThatDoesSomethingOnMount />
+            </Content>
+          </Grid.Item>
+        )}
+        <Grid.Item area="content">
+          <Content>
+            <ComponentThatLogsRender>Content</ComponentThatLogsRender>
+          </Content>
+        </Grid.Item>
+      </Grid.Container>
+    );
+  });
