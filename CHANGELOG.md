@@ -1,3 +1,16 @@
+# [1.17.0](https://github.com/nordnet/ui/compare/v1.16.1...v1.17.0) (2019-06-27)
+
+
+### Bug Fixes
+
+* 💂‍align with viewbox ([c7fad38](https://github.com/nordnet/ui/commit/c7fad38))
+* 💂‍update snapshot ([6984a42](https://github.com/nordnet/ui/commit/6984a42))
+
+
+### Features
+
+* 🎸 add pen icon ([2cb0c4c](https://github.com/nordnet/ui/commit/2cb0c4c))
+
 # [1.17.0-beta.1](https://github.com/nordnet/ui/compare/v1.16.0...v1.17.0-beta.1@beta) (2019-06-24)
 
 
@@ -31,7 +44,6 @@
 * update snaps after merge of master ([10f1a5b](https://github.com/nordnet/ui/commit/10f1a5b))
 * update snaps after merge of master ([5fc4bea](https://github.com/nordnet/ui/commit/5fc4bea))
 * update story name ([98073da](https://github.com/nordnet/ui/commit/98073da))
-
 
 ### Features
 
