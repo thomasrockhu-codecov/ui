@@ -10,6 +10,7 @@ import { DirectionDown } from './components/DirectionDown';
 import { DirectionUp } from './components/DirectionUp';
 import { Flag } from './components/Flag';
 import { Globe } from './components/Globe';
+import { Pen } from './components/Pen';
 import { Printer } from './components/Printer';
 import { Star } from './components/Star';
 import { Star24 } from './components/Star24';
@@ -28,6 +29,7 @@ export default {
   DirectionUp,
   Flag,
   Globe,
+  Pen,
   Printer,
   Star,
   Star24,

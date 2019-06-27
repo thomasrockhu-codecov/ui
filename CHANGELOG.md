@@ -1,3 +1,35 @@
+# [1.17.0](https://github.com/nordnet/ui/compare/v1.16.1...v1.17.0) (2019-06-27)
+
+
+### Bug Fixes
+
+* 💂‍align with viewbox ([c7fad38](https://github.com/nordnet/ui/commit/c7fad38))
+* 💂‍update snapshot ([6984a42](https://github.com/nordnet/ui/commit/6984a42))
+
+
+### Features
+
+* 🎸 add pen icon ([2cb0c4c](https://github.com/nordnet/ui/commit/2cb0c4c))
+
+## [1.16.1](https://github.com/nordnet/ui/compare/v1.16.0...v1.16.1) (2019-06-24)
+
+
+### Bug Fixes
+
+* ie11 safari crash media ([ad14dca](https://github.com/nordnet/ui/commit/ad14dca))
+
+# [1.16.0](https://github.com/nordnet/ui/compare/v1.15.2...v1.16.0) (2019-06-24)
+
+
+### Bug Fixes
+
+* warnings ([bbd117f](https://github.com/nordnet/ui/commit/bbd117f))
+
+
+### Features
+
+* added more fixes ([772690f](https://github.com/nordnet/ui/commit/772690f))
+
 ## [1.15.2](https://github.com/nordnet/ui/compare/v1.15.1...v1.15.2) (2019-06-20)
 
 

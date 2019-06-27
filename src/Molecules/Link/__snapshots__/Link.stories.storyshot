@@ -32,7 +32,6 @@ exports[`Storyshots Molecules | Link Default usage 1`] = `
 
 <span
   className="c0"
-  type="secondary"
 >
   <a
     className="c1"
@@ -76,7 +75,6 @@ exports[`Storyshots Molecules | Link Link with _blank target 1`] = `
 
 <span
   className="c0"
-  type="secondary"
 >
   <a
     className="c1"
@@ -121,7 +119,6 @@ exports[`Storyshots Molecules | Link Link with rel as nofollow 1`] = `
 
 <span
   className="c0"
-  type="secondary"
 >
   <a
     className="c1"
@@ -196,7 +193,6 @@ exports[`Storyshots Molecules | Link With disabled prop results in a disabled bu
 
 <span
   className="c0"
-  type="secondary"
 >
   <button
     className="c1"
@@ -240,7 +236,6 @@ exports[`Storyshots Molecules | Link With typography primary as type 1`] = `
 
 <span
   className="c0"
-  type="primary"
 >
   <a
     className="c1"
@@ -314,7 +309,6 @@ exports[`Storyshots Molecules | Link Without to prop results in a button looking
 
 <span
   className="c0"
-  type="secondary"
 >
   <button
     className="c1"
