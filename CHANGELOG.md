@@ -1,3 +1,10 @@
+# [1.18.0-beta.2](https://github.com/nordnet/ui/compare/v1.18.0-beta.1@beta...v1.18.0-beta.2@beta) (2019-06-28)
+
+
+### Bug Fixes
+
+* add beta releases to travis ([e98c44f](https://github.com/nordnet/ui/commit/e98c44f))
+
 # [1.18.0-beta.1](https://github.com/nordnet/ui/compare/v1.17.1...v1.18.0-beta.1@beta) (2019-06-28)
 
 
