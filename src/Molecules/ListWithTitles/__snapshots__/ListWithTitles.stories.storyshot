@@ -40,13 +40,6 @@ exports[`Storyshots Molecules | ListWithTitles Integration: ListWithTitles with 
   margin-bottom: 4px;
 }
 
-@media (min-width:360px) {
-  .c3 {
-    font-size: 14px;
-    line-height: 1.7142857142857142;
-  }
-}
-
 <div>
   <div
     className="c0"
@@ -147,13 +140,6 @@ exports[`Storyshots Molecules | ListWithTitles Integration: ListWithTitles with 
 
 .c0 {
   margin-bottom: 4px;
-}
-
-@media (min-width:360px) {
-  .c3 {
-    font-size: 14px;
-    line-height: 1.7142857142857142;
-  }
 }
 
 <div>
@@ -311,13 +297,6 @@ exports[`Storyshots Molecules | ListWithTitles Integration: ListWithTitles with 
 
 .c0 {
   margin-bottom: 4px;
-}
-
-@media (min-width:360px) {
-  .c3 {
-    font-size: 14px;
-    line-height: 1.7142857142857142;
-  }
 }
 
 <div>

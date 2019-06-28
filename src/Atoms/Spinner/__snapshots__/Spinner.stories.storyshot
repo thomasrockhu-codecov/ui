@@ -539,13 +539,6 @@ exports[`Storyshots Atoms | Spinner Regression: 2 spinners with same color and s
   line-height: 1.5;
 }
 
-@media (min-width:360px) {
-  .c0 {
-    font-size: 16px;
-    line-height: 1.5;
-  }
-}
-
 <div>
   <div>
     <span

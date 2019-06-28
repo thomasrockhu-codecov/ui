@@ -76,20 +76,6 @@ exports[`Storyshots Atoms | Typography Caption 1`] = `
   align-self: center;
 }
 
-@media (min-width:360px) {
-  .c3 {
-    font-size: 10px;
-    line-height: 1.6;
-  }
-}
-
-@media (min-width:360px) {
-  .c4 {
-    font-size: 10px;
-    line-height: 1.6;
-  }
-}
-
 <div
   className="c0"
   direction="column"
@@ -241,48 +227,6 @@ exports[`Storyshots Atoms | Typography Colors 1`] = `
   -webkit-align-self: center;
   -ms-flex-item-align: center;
   align-self: center;
-}
-
-@media (min-width:360px) {
-  .c3 {
-    font-size: 16px;
-    line-height: 1.5;
-  }
-}
-
-@media (min-width:360px) {
-  .c4 {
-    font-size: 16px;
-    line-height: 1.5;
-  }
-}
-
-@media (min-width:360px) {
-  .c5 {
-    font-size: 16px;
-    line-height: 1.5;
-  }
-}
-
-@media (min-width:360px) {
-  .c6 {
-    font-size: 16px;
-    line-height: 1.5;
-  }
-}
-
-@media (min-width:360px) {
-  .c7 {
-    font-size: 16px;
-    line-height: 1.5;
-  }
-}
-
-@media (min-width:360px) {
-  .c8 {
-    font-size: 16px;
-    line-height: 1.5;
-  }
 }
 
 <div
@@ -487,14 +431,14 @@ exports[`Storyshots Atoms | Typography Hero 1`] = `
   align-self: center;
 }
 
-@media (min-width:360px) {
+@media (min-width:768px) {
   .c3 {
     font-size: 48px;
     line-height: 1.0833333333333333;
   }
 }
 
-@media (min-width:360px) {
+@media (min-width:768px) {
   .c4 {
     font-size: 48px;
     line-height: 1.0833333333333333;
@@ -625,27 +569,6 @@ exports[`Storyshots Atoms | Typography Primary 1`] = `
   -webkit-align-self: center;
   -ms-flex-item-align: center;
   align-self: center;
-}
-
-@media (min-width:360px) {
-  .c3 {
-    font-size: 16px;
-    line-height: 1.5;
-  }
-}
-
-@media (min-width:360px) {
-  .c4 {
-    font-size: 16px;
-    line-height: 1.5;
-  }
-}
-
-@media (min-width:360px) {
-  .c5 {
-    font-size: 16px;
-    line-height: 1.5;
-  }
 }
 
 <div
@@ -782,20 +705,6 @@ exports[`Storyshots Atoms | Typography Secondary 1`] = `
   align-self: center;
 }
 
-@media (min-width:360px) {
-  .c3 {
-    font-size: 14px;
-    line-height: 1.7142857142857142;
-  }
-}
-
-@media (min-width:360px) {
-  .c4 {
-    font-size: 14px;
-    line-height: 1.7142857142857142;
-  }
-}
-
 <div
   className="c0"
   direction="column"
@@ -911,20 +820,6 @@ exports[`Storyshots Atoms | Typography Tertiary 1`] = `
   -webkit-align-self: center;
   -ms-flex-item-align: center;
   align-self: center;
-}
-
-@media (min-width:360px) {
-  .c3 {
-    font-size: 12px;
-    line-height: 1.6666666666666667;
-  }
-}
-
-@media (min-width:360px) {
-  .c4 {
-    font-size: 12px;
-    line-height: 1.6666666666666667;
-  }
 }
 
 <div
@@ -1053,21 +948,21 @@ exports[`Storyshots Atoms | Typography Title1 1`] = `
   align-self: center;
 }
 
-@media (min-width:360px) {
+@media (min-width:768px) {
   .c3 {
     font-size: 28px;
     line-height: 1.1428571428571428;
   }
 }
 
-@media (min-width:360px) {
+@media (min-width:768px) {
   .c4 {
     font-size: 28px;
     line-height: 1.1428571428571428;
   }
 }
 
-@media (min-width:360px) {
+@media (min-width:768px) {
   .c5 {
     font-size: 28px;
     line-height: 1.1428571428571428;
@@ -1217,21 +1112,21 @@ exports[`Storyshots Atoms | Typography Title2 1`] = `
   align-self: center;
 }
 
-@media (min-width:360px) {
+@media (min-width:768px) {
   .c3 {
     font-size: 24px;
     line-height: 1.1666666666666667;
   }
 }
 
-@media (min-width:360px) {
+@media (min-width:768px) {
   .c4 {
     font-size: 24px;
     line-height: 1.1666666666666667;
   }
 }
 
-@media (min-width:360px) {
+@media (min-width:768px) {
   .c5 {
     font-size: 24px;
     line-height: 1.1666666666666667;
@@ -1381,21 +1276,21 @@ exports[`Storyshots Atoms | Typography Title3 1`] = `
   align-self: center;
 }
 
-@media (min-width:360px) {
+@media (min-width:768px) {
   .c3 {
     font-size: 20px;
     line-height: 1.2;
   }
 }
 
-@media (min-width:360px) {
+@media (min-width:768px) {
   .c4 {
     font-size: 20px;
     line-height: 1.2;
   }
 }
 
-@media (min-width:360px) {
+@media (min-width:768px) {
   .c5 {
     font-size: 20px;
     line-height: 1.2;
@@ -1525,13 +1420,6 @@ exports[`Storyshots Atoms | Typography aria attributes 1`] = `
   -webkit-align-self: center;
   -ms-flex-item-align: center;
   align-self: center;
-}
-
-@media (min-width:360px) {
-  .c3 {
-    font-size: 16px;
-    line-height: 1.5;
-  }
 }
 
 <div

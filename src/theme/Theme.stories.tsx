@@ -2,6 +2,7 @@ import { storiesOf } from '@storybook/react';
 import React from 'react';
 import styled from 'styled-components';
 import MD from 'react-markdown';
+import { propOr } from 'ramda';
 import { theme, createTheme, Table, Thead, Tbody, Th, Tr, Td } from '..';
 import { rawColor } from './theme';
 import colorDocs from './Colors.md';
@@ -70,10 +71,26 @@ storiesOf('Theme', module)
     );
   })
   .add('Screen sizes', () => (
-    <Display
-      items={Object.entries(theme.size).map(([title, size]) => ({
-        title,
-        component: <pre>{size}</pre>,
-      }))}
-    />
+    <Table>
+      <Thead>
+        <Tr>
+          <Th>Name</Th>
+          <Th>Size</Th>
+          <Th>Offset</Th>
+        </Tr>
+      </Thead>
+      <Tbody>
+        {Object.entries(theme.breakpoints).map(([title, breakpoint]) => (
+          <Tr key={`breakpoints-${title}`}>
+            <Td>{title}</Td>
+            <Td>
+              <pre>{propOr('', 'size', breakpoint)}</pre>
+            </Td>
+            <Td>
+              <pre>{propOr(0, 'offset', breakpoint)} units</pre>
+            </Td>
+          </Tr>
+        ))}
+      </Tbody>
+    </Table>
   ));

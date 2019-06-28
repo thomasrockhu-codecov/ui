@@ -1149,13 +1149,6 @@ exports[`Storyshots Atoms | Table Integration: Table (stickyHeader) with Typogra
   }
 }
 
-@media (min-width:360px) {
-  .c0 {
-    font-size: 14px;
-    line-height: 1.7142857142857142;
-  }
-}
-
 <span
   className="c0"
 >
@@ -5800,13 +5793,6 @@ exports[`Storyshots Atoms | Table Integration: Table with Typography 1`] = `
   .c9 {
     overflow: scroll;
     -webkit-overflow-scrolling: touch;
-  }
-}
-
-@media (min-width:360px) {
-  .c0 {
-    font-size: 14px;
-    line-height: 1.7142857142857142;
   }
 }
 
@@ -10471,13 +10457,6 @@ exports[`Storyshots Atoms | Table Integration: Table with Typography and ellipsi
   .c9 {
     overflow: scroll;
     -webkit-overflow-scrolling: touch;
-  }
-}
-
-@media (min-width:360px) {
-  .c0 {
-    font-size: 14px;
-    line-height: 1.7142857142857142;
   }
 }
 
