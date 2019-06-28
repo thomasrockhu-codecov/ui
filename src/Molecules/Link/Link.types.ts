@@ -1,27 +1,16 @@
 import React from 'react';
 import { LinkProps as ReactRouterDomLinkProps } from 'react-router-dom';
 
-export type SharedProps = {
+export type LinkProps = {
   children: React.ReactChild | React.ReactChild[];
   onClick?: (e: React.MouseEvent) => void;
   className?: string;
   display?: 'inline' | 'block' | 'inline-block' | 'flex' | 'inline-flex';
-};
-
-export type LinkProps = {
   /** @default _self */
   target?: '_blank';
-  to: ReactRouterDomLinkProps['to'];
+  to?: ReactRouterDomLinkProps['to'];
   rel?: string;
-  disabled?: never;
-} & SharedProps;
-
-export type ButtonProps = {
-  /** @default _self */
-  target?: never;
-  to?: never;
-  rel?: never;
   disabled?: boolean;
-} & SharedProps;
+};
 
-export type LinkComponent = React.FunctionComponent<LinkProps | ButtonProps>;
+export type LinkComponent = React.FunctionComponent<LinkProps>;

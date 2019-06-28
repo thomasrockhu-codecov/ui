@@ -1,8 +1,8 @@
 import React from 'react';
-import { LinkProps, ButtonProps } from '../Link/Link.types';
+import { LinkProps } from '../Link/Link.types';
 
 export type Props = {
   as?: string;
 };
 
-export type LinkSellComponent = React.FunctionComponent<(LinkProps | ButtonProps) & Props>;
+export type LinkSellComponent = React.FunctionComponent<LinkProps & Props>;
