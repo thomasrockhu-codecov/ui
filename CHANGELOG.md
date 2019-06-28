@@ -1,3 +1,10 @@
+## [1.17.1](https://github.com/nordnet/ui/compare/v1.17.0...v1.17.1) (2019-06-28)
+
+
+### Bug Fixes
+
+* 🐛 types for link and button ([07a853c](https://github.com/nordnet/ui/commit/07a853c))
+
 # [1.17.0](https://github.com/nordnet/ui/compare/v1.16.1...v1.17.0) (2019-06-27)
 
 
