@@ -2,12 +2,12 @@ import R from 'ramda';
 import React from 'react';
 import styled, { ThemedStyledProps } from 'styled-components';
 import { Link as RouterLink } from 'react-router-dom';
-import { LinkComponent, LinkProps, ButtonProps } from './Link.types';
+import { LinkComponent, LinkProps } from './Link.types';
 import { Theme } from '../../theme/theme.types';
 import { isUndefined } from '../../common/utils';
 import NormalizedElements from '../../common/NormalizedElements';
 
-const getSharedStyle = (props: ThemedStyledProps<LinkProps | ButtonProps, Theme>) => {
+const getSharedStyle = (props: ThemedStyledProps<LinkProps, Theme>) => {
   const { theme, disabled, display = 'inline' } = props;
 
   // Need to switch to display: inline-block
@@ -24,7 +24,7 @@ const getSharedStyle = (props: ThemedStyledProps<LinkProps | ButtonProps, Theme>
 };
 
 const CleanRouterLink = (props: LinkProps) => (
-  <RouterLink {...R.omit(['fullWidth', 'colorFn', 'color', 'display'], props)} />
+  <RouterLink {...R.omit(['fullWidth', 'colorFn', 'color', 'display'], props) as any} />
 );
 
 const StyledLink = styled(CleanRouterLink)<LinkProps>`
@@ -32,7 +32,7 @@ const StyledLink = styled(CleanRouterLink)<LinkProps>`
   text-decoration: none;
 `;
 
-const StyledButton = styled(NormalizedElements.Button)<ButtonProps>`
+const StyledButton = styled(NormalizedElements.Button)<LinkProps>`
   ${p => getSharedStyle(p)}
   cursor: ${p => (p.disabled ? 'not-allowed' : 'pointer')};
   border: none;
