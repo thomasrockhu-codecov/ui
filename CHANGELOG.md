@@ -1,3 +1,11 @@
+# [1.19.0](https://github.com/nordnet/ui/compare/v1.18.0...v1.19.0) (2019-07-01)
+
+
+### Features
+
+* add snaps ([e8f1ca6](https://github.com/nordnet/ui/commit/e8f1ca6))
+* create datetime component ([fda4773](https://github.com/nordnet/ui/commit/fda4773))
+
 # [1.18.0](https://github.com/nordnet/ui/compare/v1.17.1...v1.18.0) (2019-06-28)
 
 
