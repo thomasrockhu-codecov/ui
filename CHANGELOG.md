@@ -1,3 +1,10 @@
+# [1.20.0](https://github.com/nordnet/ui/compare/v1.19.0...v1.20.0) (2019-07-01)
+
+
+### Features
+
+* 🎸 (cssgrid) add conditional hiding items ([6ed7ea2](https://github.com/nordnet/ui/commit/6ed7ea2))
+
 # [1.19.0](https://github.com/nordnet/ui/compare/v1.18.0...v1.19.0) (2019-07-01)
 
 
