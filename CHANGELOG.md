@@ -1,3 +1,10 @@
+## [1.20.1](https://github.com/nordnet/ui/compare/v1.20.0...v1.20.1) (2019-07-01)
+
+
+### Bug Fixes
+
+* add className prop ([890b108](https://github.com/nordnet/ui/commit/890b108))
+
 # [1.20.0](https://github.com/nordnet/ui/compare/v1.19.0...v1.20.0) (2019-07-01)
 
 
