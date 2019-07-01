@@ -23,9 +23,9 @@ const Inner = styled.div`
   ${getBreakpointStyles('xl')};
 `;
 
-export const PageWrapper: React.FC<Props> = ({ children, background }) => {
+export const PageWrapper: React.FC<Props> = ({ children, background, className }) => {
   return (
-    <Outer background={background}>
+    <Outer background={background} className={className}>
       <Inner>{children}</Inner>
     </Outer>
   );
