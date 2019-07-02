@@ -32,21 +32,28 @@ const getSizeStyles = (size: Props['size']) => {
 const getGutterStyles = ({
   direction = 'row',
   theme,
-  gutter = theme.spacing.gutter,
+  gutter,
 }: {
   theme: Theme;
   direction?: Props['direction'];
   gutter?: Props['gutter'];
 }) => {
-  return direction === 'row' || direction === 'row-reverse'
-    ? `
-    margin-top: 0;
-    margin-left: ${theme.spacing.unit(gutter)}px;
-    `
-    : `
-      margin-left: 0;
-      margin-top: ${theme.spacing.unit(gutter)}px;
+  if (direction === 'column' || direction === 'column-reverse') {
+    return `
+      &:not(:first-child) {
+        padding-top: ${theme.spacing.unit(gutter!)}px;
+      }
     `;
+  }
+
+  return `
+    padding-left: ${theme.spacing.unit(gutter! / 2)}px;
+    padding-right: ${theme.spacing.unit(gutter! / 2)}px;
+    
+    &:not(:first-child) {
+      padding-top: 0;
+    }
+  `;
 };
 
 const getContainerStyles = (p: Props & { theme: Theme }) => `
@@ -60,7 +67,14 @@ const getContainerStyles = (p: Props & { theme: Theme }) => `
   ${
     p.gutter
       ? `
-    & > *:not(:first-child) {
+    ${
+      p.direction === 'column' || p.direction === 'column-reverse'
+        ? `
+    `
+        : `margin: 0 -${p.theme.spacing.unit(p.gutter / 2)}px;`
+    }
+
+    & > * {
       ${getGutterStyles(p)}
     }
   `
@@ -90,6 +104,10 @@ const sanitizeProps = R.omit([
   'alignItems',
   'grow',
   'shrink',
+  'sm',
+  'md',
+  'lg',
+  'xl',
   'basis',
   'order',
   'justifyContent',
