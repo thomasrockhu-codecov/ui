@@ -49,11 +49,16 @@ exports[`Storyshots Molecules | PageHeader Page header with children 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  margin: 0 -4px;
+}
+
+.c10 > * {
+  padding-left: 4px;
+  padding-right: 4px;
 }
 
 .c10 > *:not(:first-child) {
-  margin-top: 0;
-  margin-left: 8px;
+  padding-top: 0;
 }
 
 .c7 {
@@ -251,13 +256,6 @@ exports[`Storyshots Molecules | PageHeader Page header with children 1`] = `
     >
       <div
         className="c2"
-        sm={
-          Object {
-            "alignItems": "center",
-            "direction": "row",
-            "justifyContent": "space-between",
-          }
-        }
       >
         <div
           className="c3"
@@ -439,13 +437,6 @@ exports[`Storyshots Molecules | PageHeader Regular page header 1`] = `
     >
       <div
         className="c2"
-        sm={
-          Object {
-            "alignItems": "center",
-            "direction": "row",
-            "justifyContent": "space-between",
-          }
-        }
       >
         <div
           className="c3"
