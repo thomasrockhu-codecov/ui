@@ -3,7 +3,7 @@ import React from 'react';
 import { matchPath, withRouter } from 'react-router';
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
-import { Flexbox, Typography, TabTitle, List } from '../..';
+import { Flexbox, Typography, TabTitle } from '../..';
 import { assert } from '../../common/utils';
 import { useKeyboardNavigation } from '../Tabs/useKeyboardNavigation';
 import { ItemComponent, ItemProps, TitleComponent, Component } from './TabsNav.types';
@@ -42,7 +42,10 @@ const Title: TitleComponent = ({ active, children, setRef, to, onKeyDown, onClic
 };
 Title.displayName = 'TabsNav.Title';
 
-const StyledUl = styled(List)`
+const StyledUl = styled.ul`
+  list-style-type: none;
+  padding: 0;
+
   /** @todo check this out */
   margin-bottom: -1px;
 `;
