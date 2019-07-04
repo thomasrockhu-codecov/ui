@@ -1,3 +1,10 @@
+## [1.20.3](https://github.com/nordnet/ui/compare/v1.20.2...v1.20.3) (2019-07-04)
+
+
+### Bug Fixes
+
+* add more padding to xl breakpoint ([5c969d6](https://github.com/nordnet/ui/commit/5c969d6))
+
 ## [1.20.2](https://github.com/nordnet/ui/compare/v1.20.1...v1.20.2) (2019-07-03)
 
 
