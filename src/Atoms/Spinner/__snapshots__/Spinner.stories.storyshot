@@ -539,18 +539,10 @@ exports[`Storyshots Atoms | Spinner Regression: 2 spinners with same color and s
   line-height: 1.5;
 }
 
-@media (min-width:360px) {
-  .c0 {
-    font-size: 16px;
-    line-height: 1.5;
-  }
-}
-
 <div>
   <div>
     <span
       className="c0"
-      type="primary"
     >
       Only the one with green border should be shown. The bug before was that if two spinners had the same size and color, both were hidden.
     </span>
@@ -793,6 +785,85 @@ exports[`Storyshots Atoms | Spinner Spinner default 1`] = `
     height={16}
     viewBox="0 0 24 24"
     width={16}
+  >
+    <defs>
+      <linearGradient
+        id="spinner-mySpinner-1"
+        x1="50%"
+        x2="50%"
+        y1="0%"
+        y2="100%"
+      >
+        <stop
+          offset="0%"
+          stopColor="#0046FF"
+          stopOpacity="0"
+        />
+        <stop
+          offset="100%"
+          stopColor="#0046FF"
+          stopOpacity=".5"
+        />
+      </linearGradient>
+      <linearGradient
+        id="spinner-mySpinner-2"
+        x1="50%"
+        x2="50%"
+        y1="0%"
+        y2="100%"
+      >
+        <stop
+          offset="0%"
+          stopColor="#0046FF"
+          stopOpacity=".5"
+        />
+        <stop
+          offset="100%"
+          stopColor="#0046FF"
+        />
+      </linearGradient>
+    </defs>
+    <g
+      fill="none"
+      fillRule="evenodd"
+    >
+      <path
+        d="M12,0 C18.627417,0 24,5.372583 24,12 C24,18.627417 18.627417,24 12,24 M12,21 C16.9705627,21 21,16.9705627 21,12 C21,7.02943725 16.9705627,3 12,3"
+        fill="url(#spinner-mySpinner-1)"
+      />
+      <path
+        d="M0,0 C6.627417,0 12,5.372583 12,12 C12,18.627417 6.627417,24 0,24 M0,21 C4.97056275,21 9,16.9705627 9,12 C9,7.02943725 4.97056275,3 0,3"
+        fill="url(#spinner-mySpinner-2)"
+        transform="rotate(-180 6 12)"
+      />
+    </g>
+  </svg>
+</span>
+`;
+
+exports[`Storyshots Atoms | Spinner Spinner with custom 2 sec delay 1`] = `null`;
+
+exports[`Storyshots Atoms | Spinner Spinner with default delay 1`] = `null`;
+
+exports[`Storyshots Atoms | Spinner Spinner with delay is set to false 1`] = `
+.c0 {
+  display: inline-block;
+  -webkit-animation: spinner 1s linear infinite;
+  animation: spinner 1s linear infinite;
+}
+
+.c1 {
+  display: block;
+}
+
+<span
+  className="c0"
+>
+  <svg
+    className="c1"
+    height={64}
+    viewBox="0 0 24 24"
+    width={64}
   >
     <defs>
       <linearGradient

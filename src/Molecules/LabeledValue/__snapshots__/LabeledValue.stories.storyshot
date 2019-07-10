@@ -24,13 +24,6 @@ exports[`Storyshots Molecules | LabeledValue Default 1`] = `
   margin-bottom: 4px;
 }
 
-@media (min-width:360px) {
-  .c2 {
-    font-size: 14px;
-    line-height: 1.7142857142857142;
-  }
-}
-
 <div
   className="c0"
 >
@@ -39,8 +32,6 @@ exports[`Storyshots Molecules | LabeledValue Default 1`] = `
   >
     <span
       className="c2"
-      color={[Function]}
-      type="secondary"
     >
       Label
     </span>
@@ -82,20 +73,6 @@ exports[`Storyshots Molecules | LabeledValue Integration: LabeledValue secondary
   margin-bottom: 4px;
 }
 
-@media (min-width:360px) {
-  .c3 {
-    font-size: 14px;
-    line-height: 1.7142857142857142;
-  }
-}
-
-@media (min-width:360px) {
-  .c2 {
-    font-size: 14px;
-    line-height: 1.7142857142857142;
-  }
-}
-
 <div
   className="c0"
 >
@@ -104,15 +81,12 @@ exports[`Storyshots Molecules | LabeledValue Integration: LabeledValue secondary
   >
     <span
       className="c2"
-      color={[Function]}
-      type="secondary"
     >
       Market value
     </span>
   </div>
   <span
     className="c3"
-    type="secondary"
   >
     
     4,672,198
@@ -154,17 +128,10 @@ exports[`Storyshots Molecules | LabeledValue Integration: LabeledValue title1 1`
   margin-bottom: 4px;
 }
 
-@media (min-width:360px) {
+@media (min-width:768px) {
   .c3 {
     font-size: 28px;
     line-height: 1.1428571428571428;
-  }
-}
-
-@media (min-width:360px) {
-  .c2 {
-    font-size: 14px;
-    line-height: 1.7142857142857142;
   }
 }
 
@@ -176,15 +143,12 @@ exports[`Storyshots Molecules | LabeledValue Integration: LabeledValue title1 1`
   >
     <span
       className="c2"
-      color={[Function]}
-      type="secondary"
     >
       Holdings (SEK)
     </span>
   </div>
   <span
     className="c3"
-    type="title1"
   >
     
     4,713,119
@@ -258,27 +222,6 @@ exports[`Storyshots Molecules | LabeledValue Integration: LabeledValue with nega
   color: #FF1900;
 }
 
-@media (min-width:360px) {
-  .c5 {
-    font-size: 14px;
-    line-height: 1.7142857142857142;
-  }
-}
-
-@media (min-width:360px) {
-  .c7 {
-    font-size: 14px;
-    line-height: 1.7142857142857142;
-  }
-}
-
-@media (min-width:360px) {
-  .c2 {
-    font-size: 14px;
-    line-height: 1.7142857142857142;
-  }
-}
-
 <div
   className="c0"
 >
@@ -287,8 +230,6 @@ exports[`Storyshots Molecules | LabeledValue Integration: LabeledValue with nega
   >
     <span
       className="c2"
-      color={[Function]}
-      type="secondary"
     >
       Development this year
     </span>
@@ -301,7 +242,6 @@ exports[`Storyshots Molecules | LabeledValue Integration: LabeledValue with nega
     >
       <span
         className="c5"
-        type="secondary"
       >
         <span
           className="c6"
@@ -323,7 +263,6 @@ exports[`Storyshots Molecules | LabeledValue Integration: LabeledValue with nega
     >
       <span
         className="c7"
-        type="secondary"
       >
         
         -4,672,198
@@ -391,20 +330,6 @@ exports[`Storyshots Molecules | LabeledValue Integration: LabeledValue with posi
   color: #00D200;
 }
 
-@media (min-width:360px) {
-  .c5 {
-    font-size: 14px;
-    line-height: 1.7142857142857142;
-  }
-}
-
-@media (min-width:360px) {
-  .c2 {
-    font-size: 14px;
-    line-height: 1.7142857142857142;
-  }
-}
-
 <div
   className="c0"
 >
@@ -413,8 +338,6 @@ exports[`Storyshots Molecules | LabeledValue Integration: LabeledValue with posi
   >
     <span
       className="c2"
-      color={[Function]}
-      type="secondary"
     >
       Development this year
     </span>
@@ -427,7 +350,6 @@ exports[`Storyshots Molecules | LabeledValue Integration: LabeledValue with posi
     >
       <span
         className="c5"
-        type="secondary"
       >
         <span
           className="c6"
@@ -449,7 +371,6 @@ exports[`Storyshots Molecules | LabeledValue Integration: LabeledValue with posi
     >
       <span
         className="c5"
-        type="secondary"
       >
         +
         4,672,198

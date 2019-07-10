@@ -50,22 +50,22 @@ const getGutterStyles = ({
 };
 
 const getContainerStyles = (p: Props & { theme: Theme }) => `
-display: flex;
-${p.height ? `height: ${p.height};` : ''}
-${p.direction ? `flex-direction: ${p.direction};` : ''}
-${p.wrap ? `flex-wrap: ${p.wrap};` : ''}
-${p.justifyContent ? `justify-content: ${p.justifyContent};` : ''}
-${p.alignItems ? `align-items: ${p.alignItems};` : ''}
-${p.alignContent ? `align-content: ${p.alignContent};` : ''}
-${
-  p.gutter
-    ? `
-  & > *:not(:first-child) {
-    ${getGutterStyles(p)}
+  display: flex;
+  ${p.height ? `height: ${p.theme.spacing.unit(p.height)}px;` : ''}
+  ${p.direction ? `flex-direction: ${p.direction};` : ''}
+  ${p.wrap ? `flex-wrap: ${p.wrap};` : ''}
+  ${p.justifyContent ? `justify-content: ${p.justifyContent};` : ''}
+  ${p.alignItems ? `align-items: ${p.alignItems};` : ''}
+  ${p.alignContent ? `align-content: ${p.alignContent};` : ''}
+  ${
+    p.gutter
+      ? `
+    & > *:not(:first-child) {
+      ${getGutterStyles(p)}
+    }
+  `
+      : ''
   }
-`
-    : ''
-}
 `;
 
 const getItemStyles = (p: Props & { theme: Theme }) => `
@@ -92,11 +92,12 @@ const sanitizeProps = R.omit([
   'shrink',
   'basis',
   'order',
+  'justifyContent',
 ]);
 const SanitizedDiv = (props: Props) => <div {...sanitizeProps(props)} />;
 
 const getStylesForSize = (size: string) => css<Partial<Props>>`
-  ${p => p.theme.media.greaterThan(p.theme.size[size])} {
+  ${p => p.theme.media.greaterThan(p.theme.breakpoints[size])} {
     ${p => (p.container ? getContainerStyles({ ...p, ...p[size] }) : '')}
     ${p => (p.item ? getItemStyles({ ...p, ...p[size] }) : '')}
   }

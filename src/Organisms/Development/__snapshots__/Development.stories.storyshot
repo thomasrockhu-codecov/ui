@@ -577,56 +577,28 @@ exports[`Storyshots Organisms | Development Integration: with different typograp
   align-self: center;
 }
 
-@media (min-width:360px) {
-  .c3 {
-    font-size: 16px;
-    line-height: 1.5;
-  }
-}
-
-@media (min-width:360px) {
-  .c7 {
-    font-size: 14px;
-    line-height: 1.7142857142857142;
-  }
-}
-
-@media (min-width:360px) {
-  .c8 {
-    font-size: 12px;
-    line-height: 1.6666666666666667;
-  }
-}
-
-@media (min-width:360px) {
-  .c9 {
-    font-size: 10px;
-    line-height: 1.6;
-  }
-}
-
-@media (min-width:360px) {
+@media (min-width:768px) {
   .c10 {
     font-size: 28px;
     line-height: 1.1428571428571428;
   }
 }
 
-@media (min-width:360px) {
+@media (min-width:768px) {
   .c11 {
     font-size: 24px;
     line-height: 1.1666666666666667;
   }
 }
 
-@media (min-width:360px) {
+@media (min-width:768px) {
   .c12 {
     font-size: 20px;
     line-height: 1.2;
   }
 }
 
-@media (min-width:360px) {
+@media (min-width:768px) {
   .c13 {
     font-size: 48px;
     line-height: 1.0833333333333333;
@@ -649,7 +621,6 @@ exports[`Storyshots Organisms | Development Integration: with different typograp
     <div>
       <span
         className="c3"
-        type="primary"
       >
         <div
           className="c0"
@@ -737,7 +708,6 @@ exports[`Storyshots Organisms | Development Integration: with different typograp
     <div>
       <span
         className="c7"
-        type="secondary"
       >
         <div
           className="c0"
@@ -825,7 +795,6 @@ exports[`Storyshots Organisms | Development Integration: with different typograp
     <div>
       <span
         className="c8"
-        type="tertiary"
       >
         <div
           className="c0"
@@ -913,7 +882,6 @@ exports[`Storyshots Organisms | Development Integration: with different typograp
     <div>
       <span
         className="c9"
-        type="caption"
       >
         <div
           className="c0"
@@ -1001,7 +969,6 @@ exports[`Storyshots Organisms | Development Integration: with different typograp
     <div>
       <span
         className="c10"
-        type="title1"
       >
         <div
           className="c0"
@@ -1089,7 +1056,6 @@ exports[`Storyshots Organisms | Development Integration: with different typograp
     <div>
       <span
         className="c11"
-        type="title2"
       >
         <div
           className="c0"
@@ -1177,7 +1143,6 @@ exports[`Storyshots Organisms | Development Integration: with different typograp
     <div>
       <span
         className="c12"
-        type="title3"
       >
         <div
           className="c0"
@@ -1265,7 +1230,6 @@ exports[`Storyshots Organisms | Development Integration: with different typograp
     <div>
       <span
         className="c13"
-        type="hero"
       >
         <div
           className="c0"
@@ -1528,7 +1492,7 @@ exports[`Storyshots Organisms | Development Regression: value is non-zero, but r
     <div
       className="c2"
     >
-      \`value = 0.3\`
+      \`value = 0.3\` and decimals = 0
     </div>
     <div>
       <span
@@ -1550,7 +1514,7 @@ exports[`Storyshots Organisms | Development Regression: value is non-zero, but r
     <div
       className="c2"
     >
-      \`value = -0.3\`
+      \`value = -0.3 and decimals = 0\`
     </div>
     <div>
       <span
@@ -1572,7 +1536,7 @@ exports[`Storyshots Organisms | Development Regression: value is non-zero, but r
     <div
       className="c2"
     >
-      \`value = -0.3\`
+      \`value = -0.3 and maximumDecimals = 0\`
     </div>
     <div>
       <span

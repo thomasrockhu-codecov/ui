@@ -19,20 +19,11 @@ exports[`Storyshots Molecules | Avatar Basic usage 1`] = `
   text-align: center;
 }
 
-@media (min-width:360px) {
-  .c1 {
-    font-size: 12px;
-    line-height: 1.6666666666666667;
-  }
-}
-
 <div
   className="c0"
 >
   <span
     className="c1"
-    color={[Function]}
-    type="tertiary"
   >
     ASK
   </span>
@@ -58,20 +49,11 @@ exports[`Storyshots Molecules | Avatar Best practice, with element as children 1
   text-align: center;
 }
 
-@media (min-width:360px) {
-  .c1 {
-    font-size: 12px;
-    line-height: 1.6666666666666667;
-  }
-}
-
 <div
   className="c0"
 >
   <span
     className="c1"
-    color={[Function]}
-    type="tertiary"
   >
     <abbr
       title="Investeringssparkonto"

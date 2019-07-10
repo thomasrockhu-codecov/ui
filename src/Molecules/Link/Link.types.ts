@@ -1,14 +1,16 @@
 import React from 'react';
-import { LinkProps } from 'react-router-dom';
+import { LinkProps as ReactRouterDomLinkProps } from 'react-router-dom';
 
-export type Props = {
+export type LinkProps = {
   children: React.ReactChild | React.ReactChild[];
   onClick?: (e: React.MouseEvent) => void;
+  className?: string;
+  display?: 'inline' | 'block' | 'inline-block' | 'flex' | 'inline-flex';
   /** @default _self */
   target?: '_blank';
-  to: LinkProps['to'];
-  className?: string;
+  to?: ReactRouterDomLinkProps['to'];
   rel?: string;
+  disabled?: boolean;
 };
 
-export type LinkComponent = React.FunctionComponent<Props>;
+export type LinkComponent = React.FunctionComponent<LinkProps>;

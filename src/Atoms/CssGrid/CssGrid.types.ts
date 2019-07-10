@@ -48,6 +48,9 @@ type BaseProps = {
   templateColumns?: TemplateColumn;
 };
 export type Props = SizeAwareProps<BaseProps>;
+
+export type Size = 'sm' | 'md' | 'lg' | 'xl' | undefined;
+
 type Omit<T, K> = Pick<T, Exclude<keyof T, K>>;
 type PartialWithoutChildren<P> = Partial<Omit<P, 'children'>>;
 type SizeAwareProps<P> = P & {

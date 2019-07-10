@@ -27,7 +27,7 @@ module.exports = api => {
   ];
 
   const ignore = ['**/*.types.ts'];
-  if (process.env.NODE_ENV !== 'test') ignore.unshift('src/**/*.test.ts', 'src/**/*.test.ts.snap');
+  if (process.env.NODE_ENV !== 'test') ignore.unshift('src/**/*.test.ts', 'src/**/*.snap');
 
   return {
     comments: false,
@@ -35,7 +35,7 @@ module.exports = api => {
     plugins,
     env: {
       test: {
-        plugins: ['require-context-hook'],
+        plugins: ['require-context-hook', '@babel/plugin-transform-runtime'],
       },
     },
     ignore,

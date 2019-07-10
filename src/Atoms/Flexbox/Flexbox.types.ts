@@ -13,6 +13,7 @@ export type ContainerProps = {
     | 'space-between'
     | 'space-around'
     | 'space-evenly';
+  /** TODO: alignItems values feels wrong */
   alignItems?:
     | 'normal'
     | 'stretch'
@@ -22,7 +23,9 @@ export type ContainerProps = {
     | 'flex-start'
     | 'flex-end'
     | 'self-start'
-    | 'self-end';
+    | 'self-end'
+    | 'baseline';
+  /** TODO: alignContent values feels wrong */
   alignContent?:
     | 'center'
     | 'start'

@@ -13,7 +13,7 @@ Array [
   box-shadow: 0 2px 2px 0 rgba(0,0,0,0.03);
 }
 
-.c6 {
+.c7 {
   box-sizing: border-box;
 }
 
@@ -33,19 +33,19 @@ Array [
   margin-left: 16px;
 }
 
-.c5 {
+.c6 {
   list-style-type: none;
   margin: 0;
   padding: 0;
 }
 
-.c12 {
+.c13 {
   width: 100%;
   height: 1px;
   background-color: #EBEBE8;
 }
 
-.c11 {
+.c12 {
   height: 32px;
   position: relative;
   display: -webkit-inline-box;
@@ -58,7 +58,7 @@ Array [
   align-items: center;
 }
 
-.c9 {
+.c10 {
   height: 32px;
   position: relative;
   display: -webkit-inline-box;
@@ -71,7 +71,7 @@ Array [
   align-items: center;
 }
 
-.c9::after {
+.c10::after {
   content: '';
   background-color: #0046FF;
   display: block;
@@ -82,7 +82,7 @@ Array [
   left: 0;
 }
 
-.c10 {
+.c11 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
   margin: 0;
@@ -91,7 +91,7 @@ Array [
   line-height: 1.7142857142857142;
 }
 
-.c7 {
+.c8 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
   margin: 0;
@@ -113,7 +113,7 @@ Array [
   padding: 20px;
 }
 
-.c8 {
+.c9 {
   font-family: inherit;
   font-size: 100%;
   line-height: 1.15;
@@ -132,47 +132,37 @@ Array [
   font-weight: inherit;
 }
 
-.c8,
-.c8[type='button'],
-.c8[type='reset'],
-.c8[type='submit'] {
+.c9,
+.c9[type='button'],
+.c9[type='reset'],
+.c9[type='submit'] {
   -webkit-appearance: button;
 }
 
-.c8::-moz-focus-inner,
-.c8[type='button']::-moz-focus-inner,
-.c8[type='reset']::-moz-focus-inner,
-.c8[type='submit']::-moz-focus-inner {
+.c9::-moz-focus-inner,
+.c9[type='button']::-moz-focus-inner,
+.c9[type='reset']::-moz-focus-inner,
+.c9[type='submit']::-moz-focus-inner {
   border-style: none;
   padding: 0;
 }
 
-.c8:-moz-focusring,
-.c8[type='button']:-moz-focusring,
-.c8[type='reset']:-moz-focusring,
-.c8[type='submit']:-moz-focusring {
+.c9:-moz-focusring,
+.c9[type='button']:-moz-focusring,
+.c9[type='reset']:-moz-focusring,
+.c9[type='submit']:-moz-focusring {
   outline: 1px dotted ButtonText;
+}
+
+.c5 {
+  margin-bottom: -1px;
 }
 
 .c3 {
   padding: 0 20px;
 }
 
-@media (min-width:360px) {
-  .c10 {
-    font-size: 14px;
-    line-height: 1.7142857142857142;
-  }
-}
-
-@media (min-width:360px) {
-  .c7 {
-    font-size: 14px;
-    line-height: 1.7142857142857142;
-  }
-}
-
-@media (min-width:360px) {
+@media (min-width:768px) {
   .c2 {
     font-size: 20px;
     line-height: 1.2;
@@ -193,19 +183,18 @@ Array [
       </h2>
     </header>
     <ul
-      className="c3 c4 c5"
+      className="c3 c4 c5 c6"
     >
       <li
-        className="c6"
+        className="c7"
         role="presentation"
       >
         <span
-          className="c7"
-          type="secondary"
+          className="c8"
         >
           <button
             aria-selected={true}
-            className="c8"
+            className="c9"
             id="tabs-tab-0"
             onClick={[Function]}
             onKeyDown={[Function]}
@@ -214,7 +203,7 @@ Array [
             type="button"
           >
             <span
-              className="c9"
+              className="c10"
               height={8}
             >
               Tab title 1
@@ -223,16 +212,15 @@ Array [
         </span>
       </li>
       <li
-        className="c6"
+        className="c7"
         role="presentation"
       >
         <span
-          className="c10"
-          type="secondary"
+          className="c11"
         >
           <button
             aria-selected={false}
-            className="c8"
+            className="c9"
             id="tabs-tab-1"
             onClick={[Function]}
             onKeyDown={[Function]}
@@ -241,7 +229,7 @@ Array [
             type="button"
           >
             <span
-              className="c11"
+              className="c12"
               height={8}
             >
               Tab title 2
@@ -251,7 +239,7 @@ Array [
       </li>
     </ul>
     <div
-      className="c12"
+      className="c13"
     />
     <div>
       <section
@@ -273,7 +261,7 @@ exports[`Storyshots Organisms | CardWithTabs Integration: with Typography and ex
   box-shadow: 0 2px 2px 0 rgba(0,0,0,0.03);
 }
 
-.c6 {
+.c7 {
   box-sizing: border-box;
 }
 
@@ -293,19 +281,19 @@ exports[`Storyshots Organisms | CardWithTabs Integration: with Typography and ex
   margin-left: 16px;
 }
 
-.c5 {
+.c6 {
   list-style-type: none;
   margin: 0;
   padding: 0;
 }
 
-.c13 {
+.c14 {
   width: 100%;
   height: 1px;
   background-color: #EBEBE8;
 }
 
-.c11 {
+.c12 {
   height: 32px;
   position: relative;
   display: -webkit-inline-box;
@@ -318,7 +306,7 @@ exports[`Storyshots Organisms | CardWithTabs Integration: with Typography and ex
   align-items: center;
 }
 
-.c9 {
+.c10 {
   height: 32px;
   position: relative;
   display: -webkit-inline-box;
@@ -331,7 +319,7 @@ exports[`Storyshots Organisms | CardWithTabs Integration: with Typography and ex
   align-items: center;
 }
 
-.c9::after {
+.c10::after {
   content: '';
   background-color: #0046FF;
   display: block;
@@ -342,7 +330,7 @@ exports[`Storyshots Organisms | CardWithTabs Integration: with Typography and ex
   left: 0;
 }
 
-.c10 {
+.c11 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
   margin: 0;
@@ -351,7 +339,7 @@ exports[`Storyshots Organisms | CardWithTabs Integration: with Typography and ex
   line-height: 1.7142857142857142;
 }
 
-.c7 {
+.c8 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
   margin: 0;
@@ -373,7 +361,7 @@ exports[`Storyshots Organisms | CardWithTabs Integration: with Typography and ex
   padding: 20px;
 }
 
-.c8 {
+.c9 {
   font-family: inherit;
   font-size: 100%;
   line-height: 1.15;
@@ -392,58 +380,48 @@ exports[`Storyshots Organisms | CardWithTabs Integration: with Typography and ex
   font-weight: inherit;
 }
 
-.c8,
-.c8[type='button'],
-.c8[type='reset'],
-.c8[type='submit'] {
+.c9,
+.c9[type='button'],
+.c9[type='reset'],
+.c9[type='submit'] {
   -webkit-appearance: button;
 }
 
-.c8::-moz-focus-inner,
-.c8[type='button']::-moz-focus-inner,
-.c8[type='reset']::-moz-focus-inner,
-.c8[type='submit']::-moz-focus-inner {
+.c9::-moz-focus-inner,
+.c9[type='button']::-moz-focus-inner,
+.c9[type='reset']::-moz-focus-inner,
+.c9[type='submit']::-moz-focus-inner {
   border-style: none;
   padding: 0;
 }
 
-.c8:-moz-focusring,
-.c8[type='button']:-moz-focusring,
-.c8[type='reset']:-moz-focusring,
-.c8[type='submit']:-moz-focusring {
+.c9:-moz-focusring,
+.c9[type='button']:-moz-focusring,
+.c9[type='reset']:-moz-focusring,
+.c9[type='submit']:-moz-focusring {
   outline: 1px dotted ButtonText;
+}
+
+.c5 {
+  margin-bottom: -1px;
 }
 
 .c3 {
   padding: 0 20px;
 }
 
-.c14 {
+.c15 {
   padding-top: 16px;
   padding-left: 20px;
   padding-right: 20px;
   padding-bottom: 20px;
 }
 
-.c12 {
+.c13 {
   color: red;
 }
 
-@media (min-width:360px) {
-  .c10 {
-    font-size: 14px;
-    line-height: 1.7142857142857142;
-  }
-}
-
-@media (min-width:360px) {
-  .c7 {
-    font-size: 14px;
-    line-height: 1.7142857142857142;
-  }
-}
-
-@media (min-width:360px) {
+@media (min-width:768px) {
   .c2 {
     font-size: 20px;
     line-height: 1.2;
@@ -464,19 +442,18 @@ exports[`Storyshots Organisms | CardWithTabs Integration: with Typography and ex
     </h2>
   </header>
   <ul
-    className="c3 c4 c5"
+    className="c3 c4 c5 c6"
   >
     <li
-      className="c6"
+      className="c7"
       role="presentation"
     >
       <span
-        className="c7"
-        type="secondary"
+        className="c8"
       >
         <button
           aria-selected={true}
-          className="c8"
+          className="c9"
           id="tabs-tab-0"
           onClick={[Function]}
           onKeyDown={[Function]}
@@ -485,7 +462,7 @@ exports[`Storyshots Organisms | CardWithTabs Integration: with Typography and ex
           type="button"
         >
           <span
-            className="c9"
+            className="c10"
             height={8}
           >
             Tab title 1
@@ -494,16 +471,15 @@ exports[`Storyshots Organisms | CardWithTabs Integration: with Typography and ex
       </span>
     </li>
     <li
-      className="c6"
+      className="c7"
       role="presentation"
     >
       <span
-        className="c10"
-        type="secondary"
+        className="c11"
       >
         <button
           aria-selected={false}
-          className="c8"
+          className="c9"
           id="tabs-tab-1"
           onClick={[Function]}
           onKeyDown={[Function]}
@@ -512,11 +488,11 @@ exports[`Storyshots Organisms | CardWithTabs Integration: with Typography and ex
           type="button"
         >
           <span
-            className="c11"
+            className="c12"
             height={8}
           >
             <div
-              className="c12"
+              className="c13"
             >
               Custom title component
             </div>
@@ -526,7 +502,7 @@ exports[`Storyshots Organisms | CardWithTabs Integration: with Typography and ex
     </li>
   </ul>
   <div
-    className="c13"
+    className="c14"
   />
   <div>
     <section
@@ -536,7 +512,7 @@ exports[`Storyshots Organisms | CardWithTabs Integration: with Typography and ex
       role="tabpanel"
     >
       <div
-        className="c14"
+        className="c15"
       >
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam dictum nulla tincidunt interdum ornare. Duis blandit nibh nec dui varius lobortis. Sed viverra, metus quis vulputate accumsan, eros lacus semper nisl, in commodo risus lacus ut libero. Aliquam augue quam, sollicitudin quis lectus quis, viverra gravida nibh. Quisque vel mi non tortor sollicitudin sodales id eget odio. Sed mollis eleifend leo, et sagittis mi. Curabitur cursus, elit ut porta vehicula, elit ipsum sagittis erat, in dapibus sapien ipsum ut purus. Aliquam sit amet egestas lacus. Aenean leo augue, malesuada id nibh ac, malesuada fermentum tortor. Vivamus dolor ante, fringilla vel consequat in, hendrerit vel metus. Quisque eget ornare turpis. Suspendisse a lectus tortor. Sed ultrices lorem nibh, ultrices pulvinar eros dictum sit amet. Quisque et ipsum in tellus pharetra tempus. Morbi non nunc rhoncus nisi pellentesque sagittis. Ut eu sem et ante facilisis consequat. Aliquam lorem ligula, laoreet quis maximus vel, rhoncus ut odio. Mauris interdum aliquet dolor ac efficitur. Maecenas egestas porttitor tempor. In at dui tellus. Praesent at lorem metus. Quisque ultricies, nulla sed pulvinar volutpat, libero enim auctor erat, nec consectetur purus lacus sed orci. In eleifend a risus at pulvinar. Donec ultricies justo et ligula venenatis, sed ultrices nunc dignissim.
       </div>
@@ -551,7 +527,7 @@ exports[`Storyshots Organisms | CardWithTabs with initialActiveTabIndex 1`] = `
   box-shadow: 0 2px 2px 0 rgba(0,0,0,0.03);
 }
 
-.c6 {
+.c7 {
   box-sizing: border-box;
 }
 
@@ -571,19 +547,19 @@ exports[`Storyshots Organisms | CardWithTabs with initialActiveTabIndex 1`] = `
   margin-left: 16px;
 }
 
-.c5 {
+.c6 {
   list-style-type: none;
   margin: 0;
   padding: 0;
 }
 
-.c12 {
+.c13 {
   width: 100%;
   height: 1px;
   background-color: #EBEBE8;
 }
 
-.c9 {
+.c10 {
   height: 32px;
   position: relative;
   display: -webkit-inline-box;
@@ -596,7 +572,7 @@ exports[`Storyshots Organisms | CardWithTabs with initialActiveTabIndex 1`] = `
   align-items: center;
 }
 
-.c11 {
+.c12 {
   height: 32px;
   position: relative;
   display: -webkit-inline-box;
@@ -609,7 +585,7 @@ exports[`Storyshots Organisms | CardWithTabs with initialActiveTabIndex 1`] = `
   align-items: center;
 }
 
-.c11::after {
+.c12::after {
   content: '';
   background-color: #0046FF;
   display: block;
@@ -620,7 +596,7 @@ exports[`Storyshots Organisms | CardWithTabs with initialActiveTabIndex 1`] = `
   left: 0;
 }
 
-.c7 {
+.c8 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
   margin: 0;
@@ -629,7 +605,7 @@ exports[`Storyshots Organisms | CardWithTabs with initialActiveTabIndex 1`] = `
   line-height: 1.7142857142857142;
 }
 
-.c10 {
+.c11 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
   margin: 0;
@@ -651,7 +627,7 @@ exports[`Storyshots Organisms | CardWithTabs with initialActiveTabIndex 1`] = `
   padding: 20px;
 }
 
-.c8 {
+.c9 {
   font-family: inherit;
   font-size: 100%;
   line-height: 1.15;
@@ -670,47 +646,37 @@ exports[`Storyshots Organisms | CardWithTabs with initialActiveTabIndex 1`] = `
   font-weight: inherit;
 }
 
-.c8,
-.c8[type='button'],
-.c8[type='reset'],
-.c8[type='submit'] {
+.c9,
+.c9[type='button'],
+.c9[type='reset'],
+.c9[type='submit'] {
   -webkit-appearance: button;
 }
 
-.c8::-moz-focus-inner,
-.c8[type='button']::-moz-focus-inner,
-.c8[type='reset']::-moz-focus-inner,
-.c8[type='submit']::-moz-focus-inner {
+.c9::-moz-focus-inner,
+.c9[type='button']::-moz-focus-inner,
+.c9[type='reset']::-moz-focus-inner,
+.c9[type='submit']::-moz-focus-inner {
   border-style: none;
   padding: 0;
 }
 
-.c8:-moz-focusring,
-.c8[type='button']:-moz-focusring,
-.c8[type='reset']:-moz-focusring,
-.c8[type='submit']:-moz-focusring {
+.c9:-moz-focusring,
+.c9[type='button']:-moz-focusring,
+.c9[type='reset']:-moz-focusring,
+.c9[type='submit']:-moz-focusring {
   outline: 1px dotted ButtonText;
+}
+
+.c5 {
+  margin-bottom: -1px;
 }
 
 .c3 {
   padding: 0 20px;
 }
 
-@media (min-width:360px) {
-  .c7 {
-    font-size: 14px;
-    line-height: 1.7142857142857142;
-  }
-}
-
-@media (min-width:360px) {
-  .c10 {
-    font-size: 14px;
-    line-height: 1.7142857142857142;
-  }
-}
-
-@media (min-width:360px) {
+@media (min-width:768px) {
   .c2 {
     font-size: 20px;
     line-height: 1.2;
@@ -731,19 +697,18 @@ exports[`Storyshots Organisms | CardWithTabs with initialActiveTabIndex 1`] = `
     </h2>
   </header>
   <ul
-    className="c3 c4 c5"
+    className="c3 c4 c5 c6"
   >
     <li
-      className="c6"
+      className="c7"
       role="presentation"
     >
       <span
-        className="c7"
-        type="secondary"
+        className="c8"
       >
         <button
           aria-selected={false}
-          className="c8"
+          className="c9"
           id="tabs-tab-0"
           onClick={[Function]}
           onKeyDown={[Function]}
@@ -752,7 +717,7 @@ exports[`Storyshots Organisms | CardWithTabs with initialActiveTabIndex 1`] = `
           type="button"
         >
           <span
-            className="c9"
+            className="c10"
             height={8}
           >
             Tab title 1
@@ -761,16 +726,15 @@ exports[`Storyshots Organisms | CardWithTabs with initialActiveTabIndex 1`] = `
       </span>
     </li>
     <li
-      className="c6"
+      className="c7"
       role="presentation"
     >
       <span
-        className="c10"
-        type="secondary"
+        className="c11"
       >
         <button
           aria-selected={true}
-          className="c8"
+          className="c9"
           id="tabs-tab-1"
           onClick={[Function]}
           onKeyDown={[Function]}
@@ -779,7 +743,7 @@ exports[`Storyshots Organisms | CardWithTabs with initialActiveTabIndex 1`] = `
           type="button"
         >
           <span
-            className="c11"
+            className="c12"
             height={8}
           >
             Tab title 2
@@ -789,7 +753,7 @@ exports[`Storyshots Organisms | CardWithTabs with initialActiveTabIndex 1`] = `
     </li>
   </ul>
   <div
-    className="c12"
+    className="c13"
   />
   <div>
     <section

@@ -65,4 +65,21 @@ storiesOf('Molecules | TabsNav', module)
         </Flexbox>
       </Flexbox>
     </HashRouter>
-  ));
+  ))
+  .add('Integration: conditionally hide tab', () => {
+    const showFirstTab = false;
+
+    return (
+      <HashRouter>
+        <Flexbox container direction="column" gutter={0}>
+          <Flexbox item>
+            <TabsNav>
+              {showFirstTab && <TabsNav.Tab title="Link to /route1" to="/route1" />}
+              <TabsNav.Tab title={<div>Link to /route2</div>} to="/route2" />
+              <TabsNav.Tab title={<div>Link to /route2</div>} to="/route3" />
+            </TabsNav>
+          </Flexbox>
+        </Flexbox>
+      </HashRouter>
+    );
+  });

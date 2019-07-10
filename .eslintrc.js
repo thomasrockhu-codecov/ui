@@ -25,6 +25,7 @@ module.exports = {
   rules: {
     'import/prefer-default-export': 0,
     'react/jsx-filename-extension': 0,
+    'import/no-extraneous-dependencies': 0,
     'react/destructuring-assignment': 0,
     'react/prop-types': 0,
     'prefer-destructuring': 0,
@@ -38,6 +39,15 @@ module.exports = {
         args: 'after-used',
         argsIgnorePattern: '^_',
         ignoreRestSiblings: false,
+      },
+    ],
+    'jsx-a11y/anchor-is-valid': [
+      // remove this rule when Link component only render links
+      'error',
+      {
+        components: ['Link'],
+        specialLink: ['to'],
+        aspects: [],
       },
     ],
   },

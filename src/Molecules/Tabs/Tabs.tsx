@@ -54,8 +54,18 @@ const Title: TitleComponent = ({
 };
 Title.displayName = 'Tabs.Title';
 
-const isItemElement = (x: any): x is { type: typeof Item; props: ItemProps } =>
-  x != null && typeof x === 'object' && Object.hasOwnProperty.call(x, 'type'); // FIXME: && x.type === Item;
+const StyledUl = styled(List)`
+  /** @todo check this out */
+  margin-bottom: -1px;
+`;
+
+const isItemOrUndefined = (x: any): x is { type: typeof Item; props: ItemProps } => {
+  if (x == null || typeof x === 'undefined') {
+    return true;
+  }
+
+  return typeof x === 'object' && Object.hasOwnProperty.call(x, 'type'); // FIXME: && x.type === Item;
+};
 
 const Tabs: ContainerComponent = ({
   children,
@@ -87,9 +97,9 @@ const Tabs: ContainerComponent = ({
   React.Children.forEach(children, (c, i) => {
     const isActive = i === active;
 
-    if (!isItemElement(c)) {
+    if (!isItemOrUndefined(c)) {
       assert(false, 'There should be only <Tabs.Tab> children inside of <Tabs> component');
-    } else {
+    } else if (c) {
       titles.push(
         // eslint-disable-next-line react/no-array-index-key
         <Flexbox item as="li" role="presentation" key={`tabs-${i}`}>
@@ -123,7 +133,14 @@ const Tabs: ContainerComponent = ({
 
   return (
     <>
-      <Flexbox container direction="row" gutter={4} as={List} role="tablist" className={className}>
+      <Flexbox
+        container
+        direction="row"
+        gutter={4}
+        as={StyledUl}
+        role="tablist"
+        className={className}
+      >
         {titles}
       </Flexbox>
       <Separator />

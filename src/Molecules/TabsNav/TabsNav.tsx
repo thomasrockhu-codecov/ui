@@ -38,8 +38,18 @@ const Title: TitleComponent = ({ active, children, setRef, to, onKeyDown, onClic
 };
 Title.displayName = 'TabsNav.Title';
 
-const isItemElement = (x: any): x is { type: typeof Item; props: ItemProps } =>
-  x != null && typeof x === 'object' && Object.hasOwnProperty.call(x, 'type'); // FIXME: && x.type === Item;
+const StyledUl = styled(List)`
+  /** @todo check this out */
+  margin-bottom: -1px;
+`;
+
+const isItemOrUndefined = (x: any): x is { type: typeof Item; props: ItemProps } => {
+  if (x == null || typeof x === 'undefined') {
+    return true;
+  }
+
+  return typeof x === 'object' && Object.hasOwnProperty.call(x, 'type'); // FIXME: && x.type === Item;
+};
 
 // TODO: fix ts issue with height prop
 // @ts-ignore
@@ -50,9 +60,9 @@ const TabsNav: Component = (withRouter(({ children, location, height = 11 }) => 
   const titles: React.ReactNode[] = [];
 
   React.Children.forEach(children, (c, i) => {
-    if (!isItemElement(c)) {
+    if (!isItemOrUndefined(c)) {
       assert(false, 'There should be only <TabsNav.Tab> children inside of <TabsNav> component');
-    } else {
+    } else if (c) {
       const isIndexActive = Boolean(
         matchPath(location.pathname, { path: c.props.to, exact: Boolean(c.props.exact) }),
       );
@@ -75,7 +85,7 @@ const TabsNav: Component = (withRouter(({ children, location, height = 11 }) => 
   });
 
   return (
-    <Flexbox container direction="row" gutter={4} as={List} sm={{ gutter: 8 }}>
+    <Flexbox container direction="row" gutter={4} as={StyledUl} sm={{ gutter: 8 }}>
       {titles}
     </Flexbox>
   );

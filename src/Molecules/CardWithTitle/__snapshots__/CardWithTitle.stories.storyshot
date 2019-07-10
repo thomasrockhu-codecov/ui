@@ -133,6 +133,8 @@ exports[`Storyshots Molecules | CardWithTitle Integration: CardWithTitle with cu
 }
 
 .c5 {
+  display: inline;
+  padding: 0;
   color: #0046FF;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -151,14 +153,7 @@ exports[`Storyshots Molecules | CardWithTitle Integration: CardWithTitle with cu
   padding-left: 4px;
 }
 
-@media (min-width:360px) {
-  .c6 {
-    font-size: 14px;
-    line-height: 1.7142857142857142;
-  }
-}
-
-@media (min-width:360px) {
+@media (min-width:768px) {
   .c4 {
     font-size: 20px;
     line-height: 1.2;
@@ -173,7 +168,6 @@ exports[`Storyshots Molecules | CardWithTitle Integration: CardWithTitle with cu
   >
     <div
       className="c2"
-      justifyContent="space-between"
     >
       <div
         className="c3"
@@ -195,8 +189,6 @@ exports[`Storyshots Molecules | CardWithTitle Integration: CardWithTitle with cu
         >
           <span
             className="c6"
-            color={[Function]}
-            type="secondary"
           >
             Marknadsöversikt
           </span>

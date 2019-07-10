@@ -1,8 +1,9 @@
 import React from 'react';
+import R from 'ramda';
 import styled, { ThemedStyledProps } from 'styled-components';
 import Color from 'color';
 import { Link as RouterLink } from 'react-router-dom';
-import { ButtonComponent, ButtonProps, LinkProps } from './Button.types';
+import { ButtonComponent, ButtonProps } from './Button.types';
 import { Theme } from '../../theme/theme.types';
 import { assert } from '../../common/utils';
 import NormalizedElements from '../../common/NormalizedElements';
@@ -27,7 +28,7 @@ const BORDER_SIZE = 2;
 
 const isSecondary = (variant: ButtonProps['variant']) => variant === 'secondary';
 
-const getBackgroundColor = (props: ThemedStyledProps<ButtonProps | LinkProps, Theme>) => {
+const getBackgroundColor = (props: ThemedStyledProps<ButtonProps, Theme>) => {
   const { disabled, theme, variant, colorFn } = props;
   if (disabled) {
     return `background-color: ${theme.color.disabledBackground};`;
@@ -93,13 +94,13 @@ const getBackgroundColor = (props: ThemedStyledProps<ButtonProps | LinkProps, Th
     `;
 };
 
-const getMinHeight = (props: ThemedStyledProps<ButtonProps | LinkProps, Theme>) => {
+const getMinHeight = (props: ThemedStyledProps<ButtonProps, Theme>) => {
   const { theme, size = 'm' } = props;
 
   return `min-height: ${theme.spacing.unit(HEIGHT[size])}px`;
 };
 
-const getPadding = (props: ThemedStyledProps<ButtonProps | LinkProps, Theme>) => {
+const getPadding = (props: ThemedStyledProps<ButtonProps, Theme>) => {
   const { size = 'm' } = props;
 
   return `
@@ -109,7 +110,7 @@ const getPadding = (props: ThemedStyledProps<ButtonProps | LinkProps, Theme>) =>
   `;
 };
 
-const getSharedStyle = (props: ThemedStyledProps<ButtonProps | LinkProps, Theme>) => {
+const getSharedStyle = (props: ThemedStyledProps<ButtonProps, Theme>) => {
   const { theme, variant, fullWidth, colorFn, disabled } = props;
 
   const color = colorFn && colorFn(theme);
@@ -158,7 +159,10 @@ const StyledButton = styled(NormalizedElements.Button)<ButtonProps>`
   cursor: ${p => (p.disabled ? 'not-allowed' : 'pointer')};
 `;
 
-const StyledLink = styled(RouterLink)<LinkProps>`
+const CleanRouterLink = (props: ButtonProps) => (
+  <RouterLink {...R.omit(['fullWidth', 'colorFn', 'color'], props) as any} />
+);
+const StyledLink = styled(CleanRouterLink)<ButtonProps>`
   ${p => getSharedStyle(p)}
   text-decoration: none;
 `;
