@@ -1,3 +1,10 @@
+# [1.23.0](https://github.com/nordnet/ui/compare/v1.22.0...v1.23.0) (2019-07-10)
+
+
+### Features
+
+* icon bank ([29383b3](https://github.com/nordnet/ui/commit/29383b3))
+
 # [1.22.0](https://github.com/nordnet/ui/compare/v1.21.0...v1.22.0) (2019-07-10)
 
 
