@@ -1,3 +1,19 @@
+# [1.22.0](https://github.com/nordnet/ui/compare/v1.21.0...v1.22.0) (2019-07-10)
+
+
+### Bug Fixes
+
+* adjust gutters for tabs nav ([f08f83e](https://github.com/nordnet/ui/commit/f08f83e))
+* remove unnecessary stuff ([a05f63f](https://github.com/nordnet/ui/commit/a05f63f))
+* remove unused typography component from pageheadercard ([a590a15](https://github.com/nordnet/ui/commit/a590a15))
+* revert pageheadercard stories ([18b7036](https://github.com/nordnet/ui/commit/18b7036))
+* update snap ([f2f03c2](https://github.com/nordnet/ui/commit/f2f03c2))
+
+
+### Features
+
+* wip make height modifiable ([38a4ea3](https://github.com/nordnet/ui/commit/38a4ea3))
+
 # [1.21.0](https://github.com/nordnet/ui/compare/v1.20.3...v1.21.0) (2019-07-10)
 
 
