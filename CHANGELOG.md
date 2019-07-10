@@ -1,3 +1,32 @@
+# [1.21.0](https://github.com/nordnet/ui/compare/v1.20.3...v1.21.0) (2019-07-10)
+
+
+### Bug Fixes
+
+* add notes to flexbox types ([62bd709](https://github.com/nordnet/ui/commit/62bd709))
+* add useeffect comment ([3dcee58](https://github.com/nordnet/ui/commit/3dcee58))
+* close button positioning ([32b0f0f](https://github.com/nordnet/ui/commit/32b0f0f))
+* export usekeypress hook from root ([140cfbf](https://github.com/nordnet/ui/commit/140cfbf))
+* make sure to unmount on close ([c84e0a8](https://github.com/nordnet/ui/commit/c84e0a8))
+* move colors to theme ([a2922ae](https://github.com/nordnet/ui/commit/a2922ae))
+* naming of types ([70ef9d8](https://github.com/nordnet/ui/commit/70ef9d8))
+* naming of useKeyPress hook ([4ea65a9](https://github.com/nordnet/ui/commit/4ea65a9))
+* open prop naming ([da16498](https://github.com/nordnet/ui/commit/da16498))
+* remove portals for now ([73ad36a](https://github.com/nordnet/ui/commit/73ad36a))
+* update snaps ([8c38523](https://github.com/nordnet/ui/commit/8c38523))
+* update snaps ([73d8b8a](https://github.com/nordnet/ui/commit/73d8b8a))
+* use theme for shadow ([85711a2](https://github.com/nordnet/ui/commit/85711a2))
+
+
+### Features
+
+* add snaps ([319911e](https://github.com/nordnet/ui/commit/319911e))
+* add style and displaying behavior ([77da070](https://github.com/nordnet/ui/commit/77da070))
+* add uncontrolled behavior ([da402f1](https://github.com/nordnet/ui/commit/da402f1))
+* add unmounted example ([f3659de](https://github.com/nordnet/ui/commit/f3659de))
+* create basic modal html ([24d2808](https://github.com/nordnet/ui/commit/24d2808))
+* lock scroll and trap focus ([1ca608b](https://github.com/nordnet/ui/commit/1ca608b))
+
 ## [1.20.3](https://github.com/nordnet/ui/compare/v1.20.2...v1.20.3) (2019-07-04)
 
 
