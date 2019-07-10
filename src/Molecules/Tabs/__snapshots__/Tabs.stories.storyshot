@@ -34,25 +34,40 @@ exports[`Storyshots Molecules | Tabs Controlled behaviour 1`] = `
 }
 
 .c8 {
-  background: none;
-  display: inline-block;
-  border: none;
-  margin: 0;
-  padding: 0;
-  padding-bottom: 4px;
-  color: #282823;
-  border-bottom: 2px solid transparent;
+  height: 32px;
+  position: relative;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .c7 {
-  background: none;
-  display: inline-block;
-  border: none;
-  margin: 0;
-  padding: 0;
-  padding-bottom: 4px;
-  color: #282823;
-  border-bottom: 2px solid #0046FF;
+  height: 32px;
+  position: relative;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c7::after {
+  content: '';
+  background-color: #0046FF;
+  display: block;
+  width: 100%;
+  height: 2px;
+  position: absolute;
+  bottom: -1px;
+  left: 0;
 }
 
 .c0 {
@@ -81,11 +96,15 @@ exports[`Storyshots Molecules | Tabs Controlled behaviour 1`] = `
   overflow: visible;
   text-transform: none;
   background: none;
-  display: inline-block;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
   border: none;
   margin: 0;
   padding: 0;
   cursor: pointer;
+  font-weight: inherit;
 }
 
 .c6,
@@ -123,82 +142,74 @@ exports[`Storyshots Molecules | Tabs Controlled behaviour 1`] = `
   >
     Change state outside
   </button>
-  <div>
-    <ul
-      className="c1 c2 c3"
+  <ul
+    className="c1 c2 c3"
+  >
+    <li
+      className="c4"
+      role="presentation"
     >
-      <li
-        className="c4"
-        role="presentation"
+      <span
+        className="c5"
       >
-        <span
-          className="c5"
+        <button
+          aria-selected={true}
+          className="c6"
+          id="tabs-tab-0"
+          onClick={[Function]}
+          onKeyDown={[Function]}
+          role="tab"
+          tabIndex={0}
+          type="button"
         >
-          <button
-            aria-selected={true}
-            className="c6"
-            id="tabs-tab-0"
-            onClick={[Function]}
-            onKeyDown={[Function]}
-            role="tab"
-            tabIndex={0}
-            type="button"
+          <span
+            className="c7"
+            height={8}
           >
-            <div
-              className="c7"
-            >
-              <span
-                className="c5"
-              >
-                One
-              </span>
-            </div>
-          </button>
-        </span>
-      </li>
-      <li
-        className="c4"
-        role="presentation"
+            One
+          </span>
+        </button>
+      </span>
+    </li>
+    <li
+      className="c4"
+      role="presentation"
+    >
+      <span
+        className="c0"
       >
-        <span
-          className="c0"
+        <button
+          aria-selected={false}
+          className="c6"
+          id="tabs-tab-1"
+          onClick={[Function]}
+          onKeyDown={[Function]}
+          role="tab"
+          tabIndex={-1}
+          type="button"
         >
-          <button
-            aria-selected={false}
-            className="c6"
-            id="tabs-tab-1"
-            onClick={[Function]}
-            onKeyDown={[Function]}
-            role="tab"
-            tabIndex={-1}
-            type="button"
+          <span
+            className="c8"
+            height={8}
           >
-            <div
-              className="c8"
-            >
-              <span
-                className="c0"
-              >
-                Two
-              </span>
-            </div>
-          </button>
-        </span>
-      </li>
-    </ul>
-    <div
-      className="c9"
-    />
-    <div>
-      <section
-        aria-labelledby="tabs-tab-0"
-        hidden={false}
-        id="tabs-tabpanel-0"
-        role="tabpanel"
-      >
-        Ones children
-      </section>
-    </div>
+            Two
+          </span>
+        </button>
+      </span>
+    </li>
+  </ul>
+  <div
+    className="c9"
+  />
+  <div>
+    <section
+      aria-labelledby="tabs-tab-0"
+      hidden={false}
+      id="tabs-tabpanel-0"
+      role="tabpanel"
+    >
+      Ones children
+    </section>
   </div>
 </span>
 `;
@@ -237,25 +248,40 @@ exports[`Storyshots Molecules | Tabs Default 1`] = `
 }
 
 .c8 {
-  background: none;
-  display: inline-block;
-  border: none;
-  margin: 0;
-  padding: 0;
-  padding-bottom: 4px;
-  color: #282823;
-  border-bottom: 2px solid transparent;
+  height: 32px;
+  position: relative;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .c7 {
-  background: none;
-  display: inline-block;
-  border: none;
-  margin: 0;
-  padding: 0;
-  padding-bottom: 4px;
-  color: #282823;
-  border-bottom: 2px solid #0046FF;
+  height: 32px;
+  position: relative;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c7::after {
+  content: '';
+  background-color: #0046FF;
+  display: block;
+  width: 100%;
+  height: 2px;
+  position: absolute;
+  bottom: -1px;
+  left: 0;
 }
 
 .c0 {
@@ -284,11 +310,15 @@ exports[`Storyshots Molecules | Tabs Default 1`] = `
   overflow: visible;
   text-transform: none;
   background: none;
-  display: inline-block;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
   border: none;
   margin: 0;
   padding: 0;
   cursor: pointer;
+  font-weight: inherit;
 }
 
 .c6,
@@ -320,90 +350,82 @@ exports[`Storyshots Molecules | Tabs Default 1`] = `
 <span
   className="c0"
 >
-  <div>
-    <ul
-      className="c1 c2 c3"
+  <ul
+    className="c1 c2 c3"
+  >
+    <li
+      className="c4"
+      role="presentation"
     >
-      <li
-        className="c4"
-        role="presentation"
+      <span
+        className="c5"
       >
-        <span
-          className="c5"
+        <button
+          aria-selected={true}
+          className="c6"
+          id="tabs-tab-0"
+          onClick={[Function]}
+          onKeyDown={[Function]}
+          role="tab"
+          tabIndex={0}
+          type="button"
         >
-          <button
-            aria-selected={true}
-            className="c6"
-            id="tabs-tab-0"
-            onClick={[Function]}
-            onKeyDown={[Function]}
-            role="tab"
-            tabIndex={0}
-            type="button"
+          <span
+            className="c7"
+            height={8}
           >
-            <div
-              className="c7"
-            >
+            One
+          </span>
+        </button>
+      </span>
+    </li>
+    <li
+      className="c4"
+      role="presentation"
+    >
+      <span
+        className="c0"
+      >
+        <button
+          aria-selected={false}
+          className="c6"
+          id="tabs-tab-1"
+          onClick={[Function]}
+          onKeyDown={[Function]}
+          role="tab"
+          tabIndex={-1}
+          type="button"
+        >
+          <span
+            className="c8"
+            height={8}
+          >
+            <div>
+              Node as well
               <span
-                className="c5"
+                aria-label="goodjob"
+                role="img"
               >
-                One
+                👍
               </span>
             </div>
-          </button>
-        </span>
-      </li>
-      <li
-        className="c4"
-        role="presentation"
-      >
-        <span
-          className="c0"
-        >
-          <button
-            aria-selected={false}
-            className="c6"
-            id="tabs-tab-1"
-            onClick={[Function]}
-            onKeyDown={[Function]}
-            role="tab"
-            tabIndex={-1}
-            type="button"
-          >
-            <div
-              className="c8"
-            >
-              <span
-                className="c0"
-              >
-                <div>
-                  Node as well
-                  <span
-                    aria-label="goodjob"
-                    role="img"
-                  >
-                    👍
-                  </span>
-                </div>
-              </span>
-            </div>
-          </button>
-        </span>
-      </li>
-    </ul>
-    <div
-      className="c9"
-    />
-    <div>
-      <section
-        aria-labelledby="tabs-tab-0"
-        hidden={false}
-        id="tabs-tabpanel-0"
-        role="tabpanel"
-      >
-        Ones children
-      </section>
-    </div>
+          </span>
+        </button>
+      </span>
+    </li>
+  </ul>
+  <div
+    className="c9"
+  />
+  <div>
+    <section
+      aria-labelledby="tabs-tab-0"
+      hidden={false}
+      id="tabs-tabpanel-0"
+      role="tabpanel"
+    >
+      Ones children
+    </section>
   </div>
 </span>
 `;
@@ -442,14 +464,16 @@ exports[`Storyshots Molecules | Tabs With conditionally hidden tab 1`] = `
 }
 
 .c7 {
-  background: none;
-  display: inline-block;
-  border: none;
-  margin: 0;
-  padding: 0;
-  padding-bottom: 4px;
-  color: #282823;
-  border-bottom: 2px solid transparent;
+  height: 32px;
+  position: relative;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .c0 {
@@ -469,11 +493,15 @@ exports[`Storyshots Molecules | Tabs With conditionally hidden tab 1`] = `
   overflow: visible;
   text-transform: none;
   background: none;
-  display: inline-block;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
   border: none;
   margin: 0;
   padding: 0;
   cursor: pointer;
+  font-weight: inherit;
 }
 
 .c6,
@@ -509,45 +537,40 @@ exports[`Storyshots Molecules | Tabs With conditionally hidden tab 1`] = `
 <span
   className="c0"
 >
-  <div>
-    <ul
-      className="c1 c2 c3 c4"
+  <ul
+    className="c1 c2 c3 c4"
+  >
+    <li
+      className="c5"
+      role="presentation"
     >
-      <li
-        className="c5"
-        role="presentation"
+      <span
+        className="c0"
       >
-        <span
-          className="c0"
+        <button
+          aria-selected={false}
+          className="c6"
+          id="tabs-tab-1"
+          onClick={[Function]}
+          onKeyDown={[Function]}
+          role="tab"
+          tabIndex={-1}
+          type="button"
         >
-          <button
-            aria-selected={false}
-            className="c6"
-            id="tabs-tab-1"
-            onClick={[Function]}
-            onKeyDown={[Function]}
-            role="tab"
-            tabIndex={-1}
-            type="button"
+          <span
+            className="c7"
+            height={8}
           >
-            <div
-              className="c7"
-            >
-              <span
-                className="c0"
-              >
-                two
-              </span>
-            </div>
-          </button>
-        </span>
-      </li>
-    </ul>
-    <div
-      className="c8"
-    />
-    <div />
-  </div>
+            two
+          </span>
+        </button>
+      </span>
+    </li>
+  </ul>
+  <div
+    className="c8"
+  />
+  <div />
 </span>
 `;
 
@@ -585,25 +608,40 @@ exports[`Storyshots Molecules | Tabs With custom styling (like spacing) 1`] = `
 }
 
 .c9 {
-  background: none;
-  display: inline-block;
-  border: none;
-  margin: 0;
-  padding: 0;
-  padding-bottom: 4px;
-  color: #282823;
-  border-bottom: 2px solid transparent;
+  height: 32px;
+  position: relative;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .c8 {
-  background: none;
-  display: inline-block;
-  border: none;
-  margin: 0;
-  padding: 0;
-  padding-bottom: 4px;
-  color: #282823;
-  border-bottom: 2px solid #0046FF;
+  height: 32px;
+  position: relative;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c8::after {
+  content: '';
+  background-color: #0046FF;
+  display: block;
+  width: 100%;
+  height: 2px;
+  position: absolute;
+  bottom: -1px;
+  left: 0;
 }
 
 .c0 {
@@ -632,11 +670,15 @@ exports[`Storyshots Molecules | Tabs With custom styling (like spacing) 1`] = `
   overflow: visible;
   text-transform: none;
   background: none;
-  display: inline-block;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
   border: none;
   margin: 0;
   padding: 0;
   cursor: pointer;
+  font-weight: inherit;
 }
 
 .c7,
@@ -678,86 +720,286 @@ exports[`Storyshots Molecules | Tabs With custom styling (like spacing) 1`] = `
 <span
   className="c0"
 >
-  <div>
-    <ul
-      className="c1 c2 c3 c4"
+  <ul
+    className="c1 c2 c3 c4"
+  >
+    <li
+      className="c5"
+      role="presentation"
     >
-      <li
-        className="c5"
-        role="presentation"
+      <span
+        className="c6"
       >
-        <span
+        <button
+          aria-selected={true}
+          className="c7"
+          id="tabs-tab-0"
+          onClick={[Function]}
+          onKeyDown={[Function]}
+          role="tab"
+          tabIndex={0}
+          type="button"
+        >
+          <span
+            className="c8"
+            height={8}
+          >
+            One
+          </span>
+        </button>
+      </span>
+    </li>
+    <li
+      className="c5"
+      role="presentation"
+    >
+      <span
+        className="c0"
+      >
+        <button
+          aria-selected={false}
+          className="c7"
+          id="tabs-tab-1"
+          onClick={[Function]}
+          onKeyDown={[Function]}
+          role="tab"
+          tabIndex={-1}
+          type="button"
+        >
+          <span
+            className="c9"
+            height={8}
+          >
+            two
+          </span>
+        </button>
+      </span>
+    </li>
+  </ul>
+  <div
+    className="c10"
+  />
+  <div>
+    <section
+      aria-labelledby="tabs-tab-0"
+      hidden={false}
+      id="tabs-tabpanel-0"
+      role="tabpanel"
+    >
+      <div
+        className="c11"
+      >
+        Ones children
+      </div>
+    </section>
+  </div>
+</span>
+`;
+
+exports[`Storyshots Molecules | Tabs With height modified 1`] = `
+.c4 {
+  box-sizing: border-box;
+}
+
+.c1 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+}
+
+.c1 > *:not(:first-child) {
+  margin-top: 0;
+  margin-left: 16px;
+}
+
+.c3 {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.c9 {
+  width: 100%;
+  height: 1px;
+  background-color: #EBEBE8;
+}
+
+.c7 {
+  height: 44px;
+  position: relative;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c7::after {
+  content: '';
+  background-color: #0046FF;
+  display: block;
+  width: 100%;
+  height: 2px;
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+}
+
+.c8 {
+  height: 44px;
+  position: relative;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c0 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7142857142857142;
+}
+
+.c5 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.7142857142857142;
+}
+
+.c6 {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  overflow: visible;
+  text-transform: none;
+  background: none;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  border: none;
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+  font-weight: inherit;
+}
+
+.c6,
+.c6[type='button'],
+.c6[type='reset'],
+.c6[type='submit'] {
+  -webkit-appearance: button;
+}
+
+.c6::-moz-focus-inner,
+.c6[type='button']::-moz-focus-inner,
+.c6[type='reset']::-moz-focus-inner,
+.c6[type='submit']::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+.c6:-moz-focusring,
+.c6[type='button']:-moz-focusring,
+.c6[type='reset']:-moz-focusring,
+.c6[type='submit']:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+.c2 {
+  margin-bottom: -1px;
+}
+
+<span
+  className="c0"
+>
+  <ul
+    className="c1 c2 c3"
+  >
+    <li
+      className="c4"
+      role="presentation"
+    >
+      <span
+        className="c5"
+      >
+        <button
+          aria-selected={true}
           className="c6"
+          id="tabs-tab-0"
+          onClick={[Function]}
+          onKeyDown={[Function]}
+          role="tab"
+          tabIndex={0}
+          type="button"
         >
-          <button
-            aria-selected={true}
+          <span
             className="c7"
-            id="tabs-tab-0"
-            onClick={[Function]}
-            onKeyDown={[Function]}
-            role="tab"
-            tabIndex={0}
-            type="button"
+            height={11}
           >
-            <div
-              className="c8"
-            >
-              <span
-                className="c6"
-              >
-                One
-              </span>
-            </div>
-          </button>
-        </span>
-      </li>
-      <li
-        className="c5"
-        role="presentation"
+            One
+          </span>
+        </button>
+      </span>
+    </li>
+    <li
+      className="c4"
+      role="presentation"
+    >
+      <span
+        className="c0"
       >
-        <span
-          className="c0"
+        <button
+          aria-selected={false}
+          className="c6"
+          id="tabs-tab-1"
+          onClick={[Function]}
+          onKeyDown={[Function]}
+          role="tab"
+          tabIndex={-1}
+          type="button"
         >
-          <button
-            aria-selected={false}
-            className="c7"
-            id="tabs-tab-1"
-            onClick={[Function]}
-            onKeyDown={[Function]}
-            role="tab"
-            tabIndex={-1}
-            type="button"
+          <span
+            className="c8"
+            height={11}
           >
-            <div
-              className="c9"
-            >
-              <span
-                className="c0"
-              >
-                two
-              </span>
-            </div>
-          </button>
-        </span>
-      </li>
-    </ul>
-    <div
-      className="c10"
-    />
-    <div>
-      <section
-        aria-labelledby="tabs-tab-0"
-        hidden={false}
-        id="tabs-tabpanel-0"
-        role="tabpanel"
-      >
-        <div
-          className="c11"
-        >
-          Ones children
-        </div>
-      </section>
-    </div>
+            two
+          </span>
+        </button>
+      </span>
+    </li>
+  </ul>
+  <div
+    className="c9"
+  />
+  <div>
+    <section
+      aria-labelledby="tabs-tab-0"
+      hidden={false}
+      id="tabs-tabpanel-0"
+      role="tabpanel"
+    >
+      Ones children
+    </section>
   </div>
 </span>
 `;

@@ -21,7 +21,7 @@ exports[`Storyshots Molecules | TabsNav Integration: With react-router 1`] = `
   flex-direction: column;
 }
 
-.c3 {
+.c2 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -32,12 +32,12 @@ exports[`Storyshots Molecules | TabsNav Integration: With react-router 1`] = `
   flex-direction: row;
 }
 
-.c3 > *:not(:first-child) {
+.c2 > *:not(:first-child) {
   margin-top: 0;
   margin-left: 16px;
 }
 
-.c5 {
+.c4 {
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -49,61 +49,90 @@ exports[`Storyshots Molecules | TabsNav Integration: With react-router 1`] = `
   background-color: #EBEBE8;
 }
 
+.c7 {
+  height: 44px;
+  position: relative;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c7::after {
+  content: '';
+  background-color: #0046FF;
+  display: block;
+  width: 100%;
+  height: 2px;
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+}
+
 .c9 {
-  background: none;
-  display: inline-block;
-  border: none;
-  margin: 0;
-  padding: 0;
-  padding-bottom: 4px;
-  color: #282823;
-  border-bottom: 2px solid transparent;
+  height: 44px;
+  position: relative;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .c8 {
-  background: none;
-  display: inline-block;
-  border: none;
-  margin: 0;
-  padding: 0;
-  padding-bottom: 4px;
-  color: #282823;
-  border-bottom: 2px solid #0046FF;
-}
-
-.c2 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
   margin: 0;
   font-weight: 400;
-  font-size: 14px;
-  line-height: 1.7142857142857142;
+  font-size: 16px;
+  line-height: 1.5;
 }
 
-.c6 {
+.c5 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
   margin: 0;
   font-weight: 700;
-  font-size: 14px;
-  line-height: 1.7142857142857142;
+  font-size: 16px;
+  line-height: 1.5;
 }
 
-.c7 {
+.c6 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-text-decoration: none;
   text-decoration: none;
-}
-
-.c7:active {
   color: inherit;
 }
 
-.c7:visited {
-  color: inherit;
-}
-
-.c4 {
+.c3 {
   margin-bottom: -1px;
+}
+
+@media (min-width:768px) {
+  .c2 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+  }
+
+  .c2 > *:not(:first-child) {
+    margin-top: 0;
+    margin-left: 32px;
+  }
 }
 
 <div
@@ -112,62 +141,267 @@ exports[`Storyshots Molecules | TabsNav Integration: With react-router 1`] = `
   <div
     className="c1"
   >
-    <span
-      className="c2"
+    <ul
+      className="c2 c3 c4"
     >
-      <ul
-        className="c3 c4 c5"
+      <li
+        className="c1"
       >
-        <li
-          className="c1"
+        <span
+          className="c5"
         >
-          <span
+          <a
+            aria-current="page"
             className="c6"
+            href="#/route1"
+            onClick={[Function]}
+            onKeyDown={[Function]}
           >
-            <div>
-              <a
-                aria-current="page"
-                className="c7"
-                href="#/route1"
-                onClick={[Function]}
-                onKeyDown={[Function]}
-              >
-                <div
-                  className="c8"
-                >
-                  Link to /route1
-                </div>
-              </a>
-            </div>
-          </span>
-        </li>
-        <li
-          className="c1"
+            <span
+              className="c7"
+              height={11}
+            >
+              Link to /route1
+            </span>
+          </a>
+        </span>
+      </li>
+      <li
+        className="c1"
+      >
+        <span
+          className="c8"
         >
-          <span
-            className="c2"
+          <a
+            aria-current={false}
+            className="c6"
+            href="#/route2"
+            onClick={[Function]}
+            onKeyDown={[Function]}
           >
-            <div>
-              <a
-                aria-current={false}
-                className="c7"
-                href="#/route2"
-                onClick={[Function]}
-                onKeyDown={[Function]}
-              >
-                <div
-                  className="c9"
-                >
-                  <div>
-                    Link to /route2
-                  </div>
-                </div>
-              </a>
-            </div>
-          </span>
-        </li>
-      </ul>
-    </span>
+            <span
+              className="c9"
+              height={11}
+            >
+              <div>
+                Link to /route2
+              </div>
+            </span>
+          </a>
+        </span>
+      </li>
+    </ul>
+  </div>
+  <div
+    className="c1"
+  >
+    <div
+      className="c10"
+    />
+  </div>
+  <div
+    className="c1"
+  >
+    <div
+      className="c11"
+    >
+      /route1 content
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Molecules | TabsNav Integration: With react-router and height modified 1`] = `
+.c11 {
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+
+.c1 {
+  box-sizing: border-box;
+}
+
+.c0 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.c2 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+}
+
+.c2 > *:not(:first-child) {
+  margin-top: 0;
+  margin-left: 16px;
+}
+
+.c4 {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.c10 {
+  width: 100%;
+  height: 1px;
+  background-color: #EBEBE8;
+}
+
+.c7 {
+  height: 48px;
+  position: relative;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c7::after {
+  content: '';
+  background-color: #0046FF;
+  display: block;
+  width: 100%;
+  height: 2px;
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+}
+
+.c9 {
+  height: 48px;
+  position: relative;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c8 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.c5 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.c6 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  color: inherit;
+}
+
+.c3 {
+  margin-bottom: -1px;
+}
+
+@media (min-width:768px) {
+  .c2 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+  }
+
+  .c2 > *:not(:first-child) {
+    margin-top: 0;
+    margin-left: 32px;
+  }
+}
+
+<div
+  className="c0"
+>
+  <div
+    className="c1"
+  >
+    <ul
+      className="c2 c3 c4"
+    >
+      <li
+        className="c1"
+      >
+        <span
+          className="c5"
+        >
+          <a
+            aria-current="page"
+            className="c6"
+            href="#/route1"
+            onClick={[Function]}
+            onKeyDown={[Function]}
+          >
+            <span
+              className="c7"
+              height={12}
+            >
+              Link to /route1
+            </span>
+          </a>
+        </span>
+      </li>
+      <li
+        className="c1"
+      >
+        <span
+          className="c8"
+        >
+          <a
+            aria-current={false}
+            className="c6"
+            href="#/route2"
+            onClick={[Function]}
+            onKeyDown={[Function]}
+          >
+            <span
+              className="c9"
+              height={12}
+            >
+              <div>
+                Link to /route2
+              </div>
+            </span>
+          </a>
+        </span>
+      </li>
+    </ul>
   </div>
   <div
     className="c1"
@@ -204,7 +438,7 @@ exports[`Storyshots Molecules | TabsNav Integration: conditionally hide tab 1`] 
   flex-direction: column;
 }
 
-.c3 {
+.c2 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -215,52 +449,68 @@ exports[`Storyshots Molecules | TabsNav Integration: conditionally hide tab 1`] 
   flex-direction: row;
 }
 
-.c3 > *:not(:first-child) {
+.c2 > *:not(:first-child) {
   margin-top: 0;
   margin-left: 16px;
 }
 
-.c5 {
+.c4 {
   list-style-type: none;
   margin: 0;
   padding: 0;
 }
 
 .c7 {
-  background: none;
-  display: inline-block;
-  border: none;
-  margin: 0;
-  padding: 0;
-  padding-bottom: 4px;
-  color: #282823;
-  border-bottom: 2px solid transparent;
+  height: 44px;
+  position: relative;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
-.c2 {
+.c5 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
   margin: 0;
   font-weight: 400;
-  font-size: 14px;
-  line-height: 1.7142857142857142;
+  font-size: 16px;
+  line-height: 1.5;
 }
 
 .c6 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-text-decoration: none;
   text-decoration: none;
-}
-
-.c6:active {
   color: inherit;
 }
 
-.c6:visited {
-  color: inherit;
-}
-
-.c4 {
+.c3 {
   margin-bottom: -1px;
+}
+
+@media (min-width:768px) {
+  .c2 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+  }
+
+  .c2 > *:not(:first-child) {
+    margin-top: 0;
+    margin-left: 32px;
+  }
 }
 
 <div
@@ -269,64 +519,58 @@ exports[`Storyshots Molecules | TabsNav Integration: conditionally hide tab 1`] 
   <div
     className="c1"
   >
-    <span
-      className="c2"
+    <ul
+      className="c2 c3 c4"
     >
-      <ul
-        className="c3 c4 c5"
+      <li
+        className="c1"
       >
-        <li
-          className="c1"
+        <span
+          className="c5"
         >
-          <span
-            className="c2"
+          <a
+            aria-current={false}
+            className="c6"
+            href="#/route2"
+            onClick={[Function]}
+            onKeyDown={[Function]}
           >
-            <div>
-              <a
-                aria-current={false}
-                className="c6"
-                href="#/route2"
-                onClick={[Function]}
-                onKeyDown={[Function]}
-              >
-                <div
-                  className="c7"
-                >
-                  <div>
-                    Link to /route2
-                  </div>
-                </div>
-              </a>
-            </div>
-          </span>
-        </li>
-        <li
-          className="c1"
+            <span
+              className="c7"
+              height={11}
+            >
+              <div>
+                Link to /route2
+              </div>
+            </span>
+          </a>
+        </span>
+      </li>
+      <li
+        className="c1"
+      >
+        <span
+          className="c5"
         >
-          <span
-            className="c2"
+          <a
+            aria-current={false}
+            className="c6"
+            href="#/route3"
+            onClick={[Function]}
+            onKeyDown={[Function]}
           >
-            <div>
-              <a
-                aria-current={false}
-                className="c6"
-                href="#/route3"
-                onClick={[Function]}
-                onKeyDown={[Function]}
-              >
-                <div
-                  className="c7"
-                >
-                  <div>
-                    Link to /route2
-                  </div>
-                </div>
-              </a>
-            </div>
-          </span>
-        </li>
-      </ul>
-    </span>
+            <span
+              className="c7"
+              height={11}
+            >
+              <div>
+                Link to /route2
+              </div>
+            </span>
+          </a>
+        </span>
+      </li>
+    </ul>
   </div>
 </div>
 `;
