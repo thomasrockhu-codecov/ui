@@ -1,3 +1,10 @@
+## [1.23.1](https://github.com/nordnet/ui/compare/v1.23.0...v1.23.1) (2019-07-11)
+
+
+### Bug Fixes
+
+* line below tabItem trimmed if overflow:hidden ([cf831d8](https://github.com/nordnet/ui/commit/cf831d8))
+
 # [1.23.0](https://github.com/nordnet/ui/compare/v1.22.0...v1.23.0) (2019-07-10)
 
 
