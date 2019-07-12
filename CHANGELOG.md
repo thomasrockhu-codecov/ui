@@ -1,3 +1,10 @@
+## [1.23.2](https://github.com/nordnet/ui/compare/v1.23.1...v1.23.2) (2019-07-12)
+
+
+### Bug Fixes
+
+* tabs alignment ([235ae6a](https://github.com/nordnet/ui/commit/235ae6a))
+
 ## [1.23.1](https://github.com/nordnet/ui/compare/v1.23.0...v1.23.1) (2019-07-11)
 
 
