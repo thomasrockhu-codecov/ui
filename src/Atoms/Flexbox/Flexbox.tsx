@@ -29,29 +29,12 @@ const getSizeStyles = (size: Props['size']) => {
   `;
 };
 
-const getGutterStyles = ({
-  direction = 'row',
-  theme,
-  gutter,
-}: {
-  theme: Theme;
-  direction?: Props['direction'];
-  gutter?: Props['gutter'];
-}) => {
-  if (direction === 'column' || direction === 'column-reverse') {
-    return `
-      &:not(:first-child) {
-        padding-top: ${theme.spacing.unit(gutter!)}px;
-      }
-    `;
-  }
-
+const getGutterStyles = ({ theme, gutter }: { theme: Theme; gutter?: Props['gutter'] }) => {
   return `
-    padding-left: ${theme.spacing.unit(gutter! / 2)}px;
-    padding-right: ${theme.spacing.unit(gutter! / 2)}px;
-    
-    &:not(:first-child) {
-      padding-top: 0;
+    margin: -${theme.spacing.unit(gutter! / 2)}px;
+
+    & > * {
+      padding: ${theme.spacing.unit(gutter! / 2)}px;
     }
   `;
 };
@@ -64,22 +47,7 @@ const getContainerStyles = (p: Props & { theme: Theme }) => `
   ${p.justifyContent ? `justify-content: ${p.justifyContent};` : ''}
   ${p.alignItems ? `align-items: ${p.alignItems};` : ''}
   ${p.alignContent ? `align-content: ${p.alignContent};` : ''}
-  ${
-    p.gutter
-      ? `
-    ${
-      p.direction === 'column' || p.direction === 'column-reverse'
-        ? `
-    `
-        : `margin: 0 -${p.theme.spacing.unit(p.gutter / 2)}px;`
-    }
-
-    & > * {
-      ${getGutterStyles(p)}
-    }
-  `
-      : ''
-  }
+  ${p.gutter ? getGutterStyles(p) : ''}
 `;
 
 const getItemStyles = (p: Props & { theme: Theme }) => `
