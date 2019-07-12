@@ -14,29 +14,25 @@ const Item: ItemComponent = ({ children }) => {
 Item.displayName = 'TabsNav.Tab';
 
 const StyledLink = styled(Link)`
+  display: flex;
   text-decoration: none;
-  &:active {
-    color: inherit;
-  }
-  &:visited {
-    color: inherit;
-  }
+  color: inherit;
 `;
 
-const Title: TitleComponent = ({ active, children, setRef, to, onKeyDown, onClick }) => {
+const Title: TitleComponent = ({ active, children, setRef, to, onKeyDown, onClick, height }) => {
   return (
-    <Typography type="secondary" weight={active ? 'bold' : 'regular'}>
-      <div>
-        <StyledLink
-          to={to}
-          innerRef={setRef}
-          aria-current={active && 'page'}
-          onKeyDown={onKeyDown}
-          onClick={onClick}
-        >
-          <TabTitle active={active}>{children}</TabTitle>
-        </StyledLink>
-      </div>
+    <Typography type="primary" weight={active ? 'bold' : 'regular'}>
+      <StyledLink
+        to={to}
+        innerRef={setRef}
+        aria-current={active && 'page'}
+        onKeyDown={onKeyDown}
+        onClick={onClick}
+      >
+        <TabTitle active={active} height={height}>
+          {children}
+        </TabTitle>
+      </StyledLink>
     </Typography>
   );
 };
@@ -45,9 +41,6 @@ Title.displayName = 'TabsNav.Title';
 const StyledUl = styled.ul`
   list-style-type: none;
   padding: 0;
-
-  /** @todo check this out */
-  margin-bottom: -1px;
 `;
 
 const isItemOrUndefined = (x: any): x is { type: typeof Item; props: ItemProps } => {
@@ -58,7 +51,9 @@ const isItemOrUndefined = (x: any): x is { type: typeof Item; props: ItemProps }
   return typeof x === 'object' && Object.hasOwnProperty.call(x, 'type'); // FIXME: && x.type === Item;
 };
 
-const TabsNav: Component = (withRouter(({ children, location }) => {
+// TODO: fix ts issue with height prop
+// @ts-ignore
+const TabsNav: Component = (withRouter(({ children, location, height = 11 }) => {
   const { setRef, onKeyDown } = useKeyboardNavigation({
     itemsLength: React.Children.count(children),
   });
@@ -80,6 +75,7 @@ const TabsNav: Component = (withRouter(({ children, location }) => {
             setRef={setRef(i)}
             to={c.props.to}
             onKeyDown={onKeyDown}
+            height={height}
           >
             {c.props.title}
           </Title>
@@ -89,11 +85,12 @@ const TabsNav: Component = (withRouter(({ children, location }) => {
   });
 
   return (
-    <Flexbox container direction="row" gutter={4} as={StyledUl}>
+    <Flexbox container direction="row" gutter={4} as={StyledUl} sm={{ gutter: 8 }}>
       {titles}
     </Flexbox>
   );
 }) as unknown) as Component;
+
 TabsNav.displayName = 'TabsNav';
 TabsNav.Tab = Item;
 

@@ -28,6 +28,7 @@ import LinkBuy from './Molecules/LinkBuy';
 import LinkSell from './Molecules/LinkSell';
 import ListWithTitles from './Molecules/ListWithTitles';
 import Number from './Molecules/Number';
+import Modal from './Molecules/Modal';
 import PageHeaderCard from './Molecules/PageHeaderCard';
 import PageWrapper from './Molecules/PageWrapper';
 import Select from './Molecules/Select';
@@ -38,6 +39,9 @@ import TabsNav from './Molecules/TabsNav';
 /** Organisms */
 import CardWithTabs from './Organisms/CardWithTabs';
 import Development from './Organisms/Development';
+
+/** Hooks */
+import useKeyPress from './common/Hooks/useKeyPress';
 
 import theme, { createTheme } from './theme';
 /** Runtime code */
@@ -64,6 +68,7 @@ export {
   ListItem,
   ListWithTitles,
   Media,
+  Modal,
   useMedia,
   Number,
   PageHeaderCard,
@@ -85,5 +90,6 @@ export {
   Time,
   Tr,
   Typography,
+  useKeyPress,
   VisuallyHidden,
 };

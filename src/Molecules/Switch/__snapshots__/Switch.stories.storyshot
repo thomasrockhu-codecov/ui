@@ -15,16 +15,11 @@ exports[`Storyshots Molecules | Switch Controlled behaviour 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  margin: 0 -4px;
+  margin: -4px;
 }
 
 .c1 > * {
-  padding-left: 4px;
-  padding-right: 4px;
-}
-
-.c1 > *:not(:first-child) {
-  padding-top: 0;
+  padding: 4px;
 }
 
 .c3 {
@@ -175,16 +170,11 @@ exports[`Storyshots Molecules | Switch Default Off 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  margin: 0 -4px;
+  margin: -4px;
 }
 
 .c1 > * {
-  padding-left: 4px;
-  padding-right: 4px;
-}
-
-.c1 > *:not(:first-child) {
-  padding-top: 0;
+  padding: 4px;
 }
 
 .c3 {
@@ -335,16 +325,11 @@ exports[`Storyshots Molecules | Switch Default On 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  margin: 0 -4px;
+  margin: -4px;
 }
 
 .c1 > * {
-  padding-left: 4px;
-  padding-right: 4px;
-}
-
-.c1 > *:not(:first-child) {
-  padding-top: 0;
+  padding: 4px;
 }
 
 .c3 {
@@ -495,16 +480,11 @@ exports[`Storyshots Molecules | Switch Disabled 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  margin: 0 -4px;
+  margin: -4px;
 }
 
 .c1 > * {
-  padding-left: 4px;
-  padding-right: 4px;
-}
-
-.c1 > *:not(:first-child) {
-  padding-top: 0;
+  padding: 4px;
 }
 
 .c3 {
@@ -656,16 +636,11 @@ exports[`Storyshots Molecules | Switch With Label prop as ReactNode 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  margin: 0 -4px;
+  margin: -4px;
 }
 
 .c1 > * {
-  padding-left: 4px;
-  padding-right: 4px;
-}
-
-.c1 > *:not(:first-child) {
-  padding-top: 0;
+  padding: 4px;
 }
 
 .c3 {
@@ -816,16 +791,11 @@ exports[`Storyshots Molecules | Switch With hidden label 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  margin: 0 -4px;
+  margin: -4px;
 }
 
 .c1 > * {
-  padding-left: 4px;
-  padding-right: 4px;
-}
-
-.c1 > *:not(:first-child) {
-  padding-top: 0;
+  padding: 4px;
 }
 
 .c4 {

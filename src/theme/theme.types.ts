@@ -93,8 +93,16 @@ export type Theme = {
     disabledBackground: RawColor['gray6'];
     /** white */
     buttonSecondaryBackground: RawColor['white'];
+    /** 63 percent of gray2 */
+    modalBackdrop: string;
     /** white */
     module: RawColor['white'];
+    /** 3 percent of black */
+    shadowCard: string;
+    /** 3 percent of black */
+    shadowModal: string;
+    /** 5 percent of black */
+    shadowSwitch: string;
     /** black */
     spinnerBlack: RawColor['black'];
     /** white */
@@ -131,7 +139,7 @@ export type Theme = {
     md: Record<'offset' | 'size', number>;
     /** Desktop size: 1440; offset: 24; */
     lg: Record<'offset' | 'size', number>;
-    /** Desktop big size: 1680; offset: 10 */
+    /** Desktop big size: 1680; offset: 15 */
     xl: Record<'offset' | 'size', number>;
   };
 

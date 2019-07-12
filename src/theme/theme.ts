@@ -1,4 +1,5 @@
 import { filter, values, mapObjIndexed, pipe, prop as Rprop } from 'ramda';
+import Color from 'color';
 import { assert, isNumber, deprecate } from '../common/utils'; // eslint-disable-line import/no-unresolved
 import { ThemeConfig, Theme, RawColor } from './theme.types';
 
@@ -61,7 +62,7 @@ const breakpoints: Theme['breakpoints'] = {
   },
   xl: {
     size: 1680,
-    offset: 10,
+    offset: 15,
   },
 };
 
@@ -119,10 +120,26 @@ export const createTheme = (config: ThemeConfig = {}): Theme => {
       disabledBackground: rawColor.gray6,
       divider: rawColor.gray6,
       label: rawColor.gray2,
+      modalBackdrop: Color(rawColor.gray2)
+        .alpha(0.63)
+        .rgb()
+        .string(),
       module: rawColor.white,
       negative: a11yColors ? rawColor.a11yNegative : rawColor.negative,
       positive: a11yColors ? rawColor.a11yPositive : rawColor.positive,
       sell: a11yColors ? rawColor.a11yNegative : rawColor.negative,
+      shadowCard: Color(rawColor.black)
+        .alpha(0.03)
+        .rgb()
+        .string(),
+      shadowModal: Color(rawColor.black)
+        .alpha(0.03)
+        .rgb()
+        .string(),
+      shadowSwitch: Color(rawColor.black)
+        .alpha(0.05)
+        .rgb()
+        .string(),
       spinnerBlack: rawColor.black,
       spinnerWhite: rawColor.white,
       svgFill: rawColor.gray0,

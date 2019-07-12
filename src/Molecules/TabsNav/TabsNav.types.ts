@@ -4,8 +4,13 @@ export type ItemProps = {
   onTitleClick?: React.MouseEventHandler;
   exact?: boolean;
 };
+
+export type ContainerProps = {
+  height?: number;
+};
+
 export type ItemComponent = React.FC<ItemProps>;
-export type Component = React.FC & { Tab: ItemComponent };
+export type Component = React.FC<ContainerProps> & { Tab: ItemComponent };
 
 export type TitleComponent = React.FC<TitleProps>;
 export type TitleProps = {
@@ -15,4 +20,5 @@ export type TitleProps = {
   setRef: (ref: HTMLAnchorElement | null) => void;
   to: string;
   onKeyDown: (e: React.KeyboardEvent) => void;
+  height?: number;
 };

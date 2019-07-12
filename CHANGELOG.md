@@ -1,3 +1,98 @@
+## [1.23.2](https://github.com/nordnet/ui/compare/v1.23.1...v1.23.2) (2019-07-12)
+
+
+### Bug Fixes
+
+* tabs alignment ([235ae6a](https://github.com/nordnet/ui/commit/235ae6a))
+
+## [1.23.1](https://github.com/nordnet/ui/compare/v1.23.0...v1.23.1) (2019-07-11)
+
+
+### Bug Fixes
+
+* line below tabItem trimmed if overflow:hidden ([cf831d8](https://github.com/nordnet/ui/commit/cf831d8))
+
+# [1.23.0](https://github.com/nordnet/ui/compare/v1.22.0...v1.23.0) (2019-07-10)
+
+
+### Features
+
+* icon bank ([29383b3](https://github.com/nordnet/ui/commit/29383b3))
+
+# [1.22.0](https://github.com/nordnet/ui/compare/v1.21.0...v1.22.0) (2019-07-10)
+
+
+### Bug Fixes
+
+* adjust gutters for tabs nav ([f08f83e](https://github.com/nordnet/ui/commit/f08f83e))
+* remove unnecessary stuff ([a05f63f](https://github.com/nordnet/ui/commit/a05f63f))
+* remove unused typography component from pageheadercard ([a590a15](https://github.com/nordnet/ui/commit/a590a15))
+* revert pageheadercard stories ([18b7036](https://github.com/nordnet/ui/commit/18b7036))
+* update snap ([f2f03c2](https://github.com/nordnet/ui/commit/f2f03c2))
+
+
+### Features
+
+* wip make height modifiable ([38a4ea3](https://github.com/nordnet/ui/commit/38a4ea3))
+
+# [1.21.0](https://github.com/nordnet/ui/compare/v1.20.3...v1.21.0) (2019-07-10)
+
+
+### Bug Fixes
+
+* add notes to flexbox types ([62bd709](https://github.com/nordnet/ui/commit/62bd709))
+* add useeffect comment ([3dcee58](https://github.com/nordnet/ui/commit/3dcee58))
+* close button positioning ([32b0f0f](https://github.com/nordnet/ui/commit/32b0f0f))
+* export usekeypress hook from root ([140cfbf](https://github.com/nordnet/ui/commit/140cfbf))
+* make sure to unmount on close ([c84e0a8](https://github.com/nordnet/ui/commit/c84e0a8))
+* move colors to theme ([a2922ae](https://github.com/nordnet/ui/commit/a2922ae))
+* naming of types ([70ef9d8](https://github.com/nordnet/ui/commit/70ef9d8))
+* naming of useKeyPress hook ([4ea65a9](https://github.com/nordnet/ui/commit/4ea65a9))
+* open prop naming ([da16498](https://github.com/nordnet/ui/commit/da16498))
+* remove portals for now ([73ad36a](https://github.com/nordnet/ui/commit/73ad36a))
+* update snaps ([8c38523](https://github.com/nordnet/ui/commit/8c38523))
+* update snaps ([73d8b8a](https://github.com/nordnet/ui/commit/73d8b8a))
+* use theme for shadow ([85711a2](https://github.com/nordnet/ui/commit/85711a2))
+
+
+### Features
+
+* add snaps ([319911e](https://github.com/nordnet/ui/commit/319911e))
+* add style and displaying behavior ([77da070](https://github.com/nordnet/ui/commit/77da070))
+* add uncontrolled behavior ([da402f1](https://github.com/nordnet/ui/commit/da402f1))
+* add unmounted example ([f3659de](https://github.com/nordnet/ui/commit/f3659de))
+* create basic modal html ([24d2808](https://github.com/nordnet/ui/commit/24d2808))
+* lock scroll and trap focus ([1ca608b](https://github.com/nordnet/ui/commit/1ca608b))
+
+## [1.20.3](https://github.com/nordnet/ui/compare/v1.20.2...v1.20.3) (2019-07-04)
+
+
+### Bug Fixes
+
+* add more padding to xl breakpoint ([5c969d6](https://github.com/nordnet/ui/commit/5c969d6))
+
+## [1.20.2](https://github.com/nordnet/ui/compare/v1.20.1...v1.20.2) (2019-07-03)
+
+
+### Bug Fixes
+
+* simplify breakpoints references ([fd7ba1c](https://github.com/nordnet/ui/commit/fd7ba1c))
+* stop using theme.size internally ([cc2691e](https://github.com/nordnet/ui/commit/cc2691e))
+
+## [1.20.1](https://github.com/nordnet/ui/compare/v1.20.0...v1.20.1) (2019-07-01)
+
+
+### Bug Fixes
+
+* add className prop ([890b108](https://github.com/nordnet/ui/commit/890b108))
+
+# [1.20.0](https://github.com/nordnet/ui/compare/v1.19.0...v1.20.0) (2019-07-01)
+
+
+### Features
+
+* 🎸 (cssgrid) add conditional hiding items ([6ed7ea2](https://github.com/nordnet/ui/commit/6ed7ea2))
+
 # [1.19.0](https://github.com/nordnet/ui/compare/v1.18.0...v1.19.0) (2019-07-01)
 
 

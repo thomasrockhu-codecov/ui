@@ -14,11 +14,12 @@ Item.displayName = 'Tabs.Content';
 
 const StyledButton = styled(NormalizedElements.Button)`
   background: none;
-  display: inline-block;
+  display: flex;
   border: none;
   margin: 0;
   padding: 0;
   cursor: pointer;
+  font-weight: inherit;
 `;
 
 const Title: TitleComponent = ({
@@ -28,6 +29,7 @@ const Title: TitleComponent = ({
   onKeyDown,
   index,
   setRef,
+  height,
 }) => {
   const active = activeFromProps;
 
@@ -43,7 +45,9 @@ const Title: TitleComponent = ({
         id={`tabs-tab-${index}`}
         tabIndex={active ? 0 : -1}
       >
-        <TabTitle active={active}>{children}</TabTitle>
+        <TabTitle active={active} height={height}>
+          {children}
+        </TabTitle>
       </StyledButton>
     </Typography>
   );
@@ -53,9 +57,6 @@ Title.displayName = 'Tabs.Title';
 const StyledUl = styled.ul`
   list-style-type: none;
   padding: 0;
-
-  /** @todo check this out */
-  margin-bottom: -1px;
 `;
 
 const isItemOrUndefined = (x: any): x is { type: typeof Item; props: ItemProps } => {
@@ -71,20 +72,25 @@ const Tabs: ContainerComponent = ({
   initialActiveTabIndex = 0,
   activeTabIndex,
   className,
+  height = 8,
 }) => {
   // eslint-disable-next-line prefer-const
   let [active, setActive] = useState(initialActiveTabIndex);
   const isControlled = typeof activeTabIndex !== 'undefined';
+
   if (isControlled) active = activeTabIndex!;
+
   const handleTitleClick = (i: number, handler?: React.MouseEventHandler) => (
     e: React.MouseEvent,
   ) => {
     if (handler) handler(e);
     if (!isControlled) setActive(i);
   };
+
   const { setRef, onKeyDown } = useKeyboardNavigation({
     itemsLength: React.Children.count(children),
   });
+
   const titles: React.ReactElement<any>[] = [];
   let contents: React.ReactElement<any> | null = null;
 
@@ -103,10 +109,9 @@ const Tabs: ContainerComponent = ({
             onClick={handleTitleClick(i, c.props.onTitleClick)}
             onKeyDown={onKeyDown}
             setRef={setRef(i)}
+            height={height}
           >
-            <Typography type="secondary" weight={active === i ? 'bold' : 'regular'}>
-              {c.props.title}
-            </Typography>
+            {c.props.title}
           </Title>
         </Flexbox>,
       );
@@ -127,7 +132,7 @@ const Tabs: ContainerComponent = ({
   });
 
   return (
-    <div>
+    <>
       <Flexbox
         container
         direction="row"
@@ -141,7 +146,7 @@ const Tabs: ContainerComponent = ({
       <Separator />
 
       <div>{contents}</div>
-    </div>
+    </>
   );
 };
 Tabs.displayName = 'Tabs';
