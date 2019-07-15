@@ -3,9 +3,9 @@ import styled, { css } from 'styled-components';
 import R from 'ramda';
 import { Theme } from '../../theme/theme.types';
 import { Props } from './Flexbox.types';
+import { isUndefined } from '../../common/utils';
 
 const isNumber = (x: any): x is number => x === parseInt(x, 10);
-const isUndefined = (x: any): x is undefined => typeof x === 'undefined';
 
 const getSizeStyles = (size: Props['size']) => {
   const oneCol = 100 / 12;
@@ -29,12 +29,18 @@ const getSizeStyles = (size: Props['size']) => {
   `;
 };
 
-const getGutterStyles = ({ theme, gutter }: { theme: Theme; gutter?: Props['gutter'] }) => {
+const getGutterStyles = ({
+  theme,
+  gutter,
+}: {
+  theme: Theme;
+  gutter: Exclude<Props['gutter'], undefined>;
+}) => {
   return `
-    margin: -${theme.spacing.unit(gutter! / 2)}px;
+    margin: -${theme.spacing.unit(gutter / 2)}px;
 
     & > * {
-      padding: ${theme.spacing.unit(gutter! / 2)}px;
+      padding: ${theme.spacing.unit(gutter / 2)}px;
     }
   `;
 };
