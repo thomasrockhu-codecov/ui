@@ -1,3 +1,16 @@
+## [1.24.1](https://github.com/nordnet/ui/compare/v1.24.0...v1.24.1) (2019-07-15)
+
+
+### Bug Fixes
+
+* add padding all around ([8cb2358](https://github.com/nordnet/ui/commit/8cb2358))
+* align tabs with new flexbox ([1527cde](https://github.com/nordnet/ui/commit/1527cde))
+* make flexbox items wrap friendly ([04d6362](https://github.com/nordnet/ui/commit/04d6362))
+* merge master ([ce37538](https://github.com/nordnet/ui/commit/ce37538))
+* types minor tweak ([073eb14](https://github.com/nordnet/ui/commit/073eb14))
+* typescript ([e256178](https://github.com/nordnet/ui/commit/e256178))
+* update snaps ([5a47213](https://github.com/nordnet/ui/commit/5a47213))
+
 # [1.24.0](https://github.com/nordnet/ui/compare/v1.23.2...v1.24.0) (2019-07-15)
 
 
