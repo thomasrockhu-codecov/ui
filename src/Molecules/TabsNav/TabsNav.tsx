@@ -3,7 +3,7 @@ import React from 'react';
 import { matchPath, withRouter } from 'react-router';
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
-import { Flexbox, Typography, TabTitle, List } from '../..';
+import { Flexbox, Typography, TabTitle } from '../..';
 import { assert } from '../../common/utils';
 import { useKeyboardNavigation } from '../Tabs/useKeyboardNavigation';
 import { ItemComponent, ItemProps, TitleComponent, Component } from './TabsNav.types';
@@ -37,6 +37,11 @@ const Title: TitleComponent = ({ active, children, setRef, to, onKeyDown, onClic
   );
 };
 Title.displayName = 'TabsNav.Title';
+
+const StyledUl = styled.ul`
+  list-style-type: none;
+  padding: 0;
+`;
 
 const isItemOrUndefined = (x: any): x is { type: typeof Item; props: ItemProps } => {
   if (x == null || typeof x === 'undefined') {
@@ -80,7 +85,7 @@ const TabsNav: Component = (withRouter(({ children, location, height = 11 }) => 
   });
 
   return (
-    <Flexbox container direction="row" gutter={4} as={List} sm={{ gutter: 8 }}>
+    <Flexbox container direction="row" gutter={4} as={StyledUl} sm={{ gutter: 8 }}>
       {titles}
     </Flexbox>
   );

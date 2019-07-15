@@ -170,11 +170,11 @@ exports[`Storyshots Molecules | LabeledValue Integration: LabeledValue with nega
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
+  margin: -4px;
 }
 
-.c3 > *:not(:first-child) {
-  margin-top: 0;
-  margin-left: 8px;
+.c3 > * {
+  padding: 4px;
 }
 
 .c5 {
@@ -287,11 +287,11 @@ exports[`Storyshots Molecules | LabeledValue Integration: LabeledValue with posi
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
+  margin: -4px;
 }
 
-.c3 > *:not(:first-child) {
-  margin-top: 0;
-  margin-left: 8px;
+.c3 > * {
+  padding: 4px;
 }
 
 .c5 {

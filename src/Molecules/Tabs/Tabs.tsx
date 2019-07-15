@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
-import { Flexbox, Typography, Separator, TabTitle, List } from '../..';
+import { Flexbox, Typography, Separator, TabTitle } from '../..';
 import NormalizedElements from '../../common/NormalizedElements/index';
 import { assert } from '../../common/utils';
 import { useKeyboardNavigation } from './useKeyboardNavigation';
@@ -53,6 +53,11 @@ const Title: TitleComponent = ({
   );
 };
 Title.displayName = 'Tabs.Title';
+
+const StyledUl = styled.ul`
+  list-style-type: none;
+  padding: 0;
+`;
 
 const isItemOrUndefined = (x: any): x is { type: typeof Item; props: ItemProps } => {
   if (x == null || typeof x === 'undefined') {
@@ -128,7 +133,14 @@ const Tabs: ContainerComponent = ({
 
   return (
     <>
-      <Flexbox container direction="row" gutter={4} as={List} role="tablist" className={className}>
+      <Flexbox
+        container
+        direction="row"
+        gutter={4}
+        as={StyledUl}
+        role="tablist"
+        className={className}
+      >
         {titles}
       </Flexbox>
       <Separator />

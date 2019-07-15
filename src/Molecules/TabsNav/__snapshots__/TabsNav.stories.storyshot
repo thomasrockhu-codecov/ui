@@ -30,17 +30,11 @@ exports[`Storyshots Molecules | TabsNav Integration: With react-router 1`] = `
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
+  margin: -8px;
 }
 
-.c2 > *:not(:first-child) {
-  margin-top: 0;
-  margin-left: 16px;
-}
-
-.c3 {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
+.c2 > * {
+  padding: 8px;
 }
 
 .c9 {
@@ -114,6 +108,11 @@ exports[`Storyshots Molecules | TabsNav Integration: With react-router 1`] = `
   color: inherit;
 }
 
+.c3 {
+  list-style-type: none;
+  padding: 0;
+}
+
 @media (min-width:768px) {
   .c2 {
     display: -webkit-box;
@@ -123,11 +122,11 @@ exports[`Storyshots Molecules | TabsNav Integration: With react-router 1`] = `
     -webkit-flex-direction: row;
     -ms-flex-direction: row;
     flex-direction: row;
+    margin: -16px;
   }
 
-  .c2 > *:not(:first-child) {
-    margin-top: 0;
-    margin-left: 32px;
+  .c2 > * {
+    padding: 16px;
   }
 }
 
@@ -139,6 +138,7 @@ exports[`Storyshots Molecules | TabsNav Integration: With react-router 1`] = `
   >
     <ul
       className="c2 c3"
+      direction="row"
     >
       <li
         className="c1"
@@ -237,17 +237,11 @@ exports[`Storyshots Molecules | TabsNav Integration: With react-router and heigh
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
+  margin: -8px;
 }
 
-.c2 > *:not(:first-child) {
-  margin-top: 0;
-  margin-left: 16px;
-}
-
-.c3 {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
+.c2 > * {
+  padding: 8px;
 }
 
 .c9 {
@@ -321,6 +315,11 @@ exports[`Storyshots Molecules | TabsNav Integration: With react-router and heigh
   color: inherit;
 }
 
+.c3 {
+  list-style-type: none;
+  padding: 0;
+}
+
 @media (min-width:768px) {
   .c2 {
     display: -webkit-box;
@@ -330,11 +329,11 @@ exports[`Storyshots Molecules | TabsNav Integration: With react-router and heigh
     -webkit-flex-direction: row;
     -ms-flex-direction: row;
     flex-direction: row;
+    margin: -16px;
   }
 
-  .c2 > *:not(:first-child) {
-    margin-top: 0;
-    margin-left: 32px;
+  .c2 > * {
+    padding: 16px;
   }
 }
 
@@ -346,6 +345,7 @@ exports[`Storyshots Molecules | TabsNav Integration: With react-router and heigh
   >
     <ul
       className="c2 c3"
+      direction="row"
     >
       <li
         className="c1"
@@ -439,17 +439,11 @@ exports[`Storyshots Molecules | TabsNav Integration: conditionally hide tab 1`] 
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
+  margin: -8px;
 }
 
-.c2 > *:not(:first-child) {
-  margin-top: 0;
-  margin-left: 16px;
-}
-
-.c3 {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
+.c2 > * {
+  padding: 8px;
 }
 
 .c6 {
@@ -484,6 +478,11 @@ exports[`Storyshots Molecules | TabsNav Integration: conditionally hide tab 1`] 
   color: inherit;
 }
 
+.c3 {
+  list-style-type: none;
+  padding: 0;
+}
+
 @media (min-width:768px) {
   .c2 {
     display: -webkit-box;
@@ -493,11 +492,11 @@ exports[`Storyshots Molecules | TabsNav Integration: conditionally hide tab 1`] 
     -webkit-flex-direction: row;
     -ms-flex-direction: row;
     flex-direction: row;
+    margin: -16px;
   }
 
-  .c2 > *:not(:first-child) {
-    margin-top: 0;
-    margin-left: 32px;
+  .c2 > * {
+    padding: 16px;
   }
 }
 
@@ -509,6 +508,7 @@ exports[`Storyshots Molecules | TabsNav Integration: conditionally hide tab 1`] 
   >
     <ul
       className="c2 c3"
+      direction="row"
     >
       <li
         className="c1"

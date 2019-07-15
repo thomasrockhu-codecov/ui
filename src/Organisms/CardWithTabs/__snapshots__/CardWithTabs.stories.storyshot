@@ -26,17 +26,11 @@ Array [
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
+  margin: -8px;
 }
 
-.c4 > *:not(:first-child) {
-  margin-top: 0;
-  margin-left: 16px;
-}
-
-.c5 {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
+.c4 > * {
+  padding: 8px;
 }
 
 .c12 {
@@ -154,6 +148,11 @@ Array [
   outline: 1px dotted ButtonText;
 }
 
+.c5 {
+  list-style-type: none;
+  padding: 0;
+}
+
 .c3 {
   padding: 0 20px;
 }
@@ -180,6 +179,8 @@ Array [
     </header>
     <ul
       className="c3 c4 c5"
+      direction="row"
+      role="tablist"
     >
       <li
         className="c6"
@@ -270,17 +271,11 @@ exports[`Storyshots Organisms | CardWithTabs Integration: with Typography and ex
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
+  margin: -8px;
 }
 
-.c4 > *:not(:first-child) {
-  margin-top: 0;
-  margin-left: 16px;
-}
-
-.c5 {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
+.c4 > * {
+  padding: 8px;
 }
 
 .c13 {
@@ -398,6 +393,11 @@ exports[`Storyshots Organisms | CardWithTabs Integration: with Typography and ex
   outline: 1px dotted ButtonText;
 }
 
+.c5 {
+  list-style-type: none;
+  padding: 0;
+}
+
 .c3 {
   padding: 0 20px;
 }
@@ -435,6 +435,8 @@ exports[`Storyshots Organisms | CardWithTabs Integration: with Typography and ex
   </header>
   <ul
     className="c3 c4 c5"
+    direction="row"
+    role="tablist"
   >
     <li
       className="c6"
@@ -532,17 +534,11 @@ exports[`Storyshots Organisms | CardWithTabs with initialActiveTabIndex 1`] = `
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
+  margin: -8px;
 }
 
-.c4 > *:not(:first-child) {
-  margin-top: 0;
-  margin-left: 16px;
-}
-
-.c5 {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
+.c4 > * {
+  padding: 8px;
 }
 
 .c12 {
@@ -660,6 +656,11 @@ exports[`Storyshots Organisms | CardWithTabs with initialActiveTabIndex 1`] = `
   outline: 1px dotted ButtonText;
 }
 
+.c5 {
+  list-style-type: none;
+  padding: 0;
+}
+
 .c3 {
   padding: 0 20px;
 }
@@ -686,6 +687,8 @@ exports[`Storyshots Organisms | CardWithTabs with initialActiveTabIndex 1`] = `
   </header>
   <ul
     className="c3 c4 c5"
+    direction="row"
+    role="tablist"
   >
     <li
       className="c6"

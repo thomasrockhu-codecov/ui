@@ -14,17 +14,11 @@ exports[`Storyshots Molecules | Tabs Controlled behaviour 1`] = `
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
+  margin: -8px;
 }
 
-.c1 > *:not(:first-child) {
-  margin-top: 0;
-  margin-left: 16px;
-}
-
-.c2 {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
+.c1 > * {
+  padding: 8px;
 }
 
 .c8 {
@@ -129,6 +123,11 @@ exports[`Storyshots Molecules | Tabs Controlled behaviour 1`] = `
   outline: 1px dotted ButtonText;
 }
 
+.c2 {
+  list-style-type: none;
+  padding: 0;
+}
+
 <span
   className="c0"
 >
@@ -140,6 +139,8 @@ exports[`Storyshots Molecules | Tabs Controlled behaviour 1`] = `
   </button>
   <ul
     className="c1 c2"
+    direction="row"
+    role="tablist"
   >
     <li
       className="c3"
@@ -224,17 +225,11 @@ exports[`Storyshots Molecules | Tabs Default 1`] = `
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
+  margin: -8px;
 }
 
-.c1 > *:not(:first-child) {
-  margin-top: 0;
-  margin-left: 16px;
-}
-
-.c2 {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
+.c1 > * {
+  padding: 8px;
 }
 
 .c8 {
@@ -339,11 +334,18 @@ exports[`Storyshots Molecules | Tabs Default 1`] = `
   outline: 1px dotted ButtonText;
 }
 
+.c2 {
+  list-style-type: none;
+  padding: 0;
+}
+
 <span
   className="c0"
 >
   <ul
     className="c1 c2"
+    direction="row"
+    role="tablist"
   >
     <li
       className="c3"
@@ -436,17 +438,11 @@ exports[`Storyshots Molecules | Tabs With conditionally hidden tab 1`] = `
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
+  margin: -8px;
 }
 
-.c2 > *:not(:first-child) {
-  margin-top: 0;
-  margin-left: 16px;
-}
-
-.c3 {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
+.c2 > * {
+  padding: 8px;
 }
 
 .c7 {
@@ -518,6 +514,11 @@ exports[`Storyshots Molecules | Tabs With conditionally hidden tab 1`] = `
   outline: 1px dotted ButtonText;
 }
 
+.c3 {
+  list-style-type: none;
+  padding: 0;
+}
+
 .c1 {
   padding: 0 20px;
 }
@@ -527,6 +528,8 @@ exports[`Storyshots Molecules | Tabs With conditionally hidden tab 1`] = `
 >
   <ul
     className="c1 c2 c3"
+    direction="row"
+    role="tablist"
   >
     <li
       className="c4"
@@ -576,17 +579,11 @@ exports[`Storyshots Molecules | Tabs With custom styling (like spacing) 1`] = `
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
+  margin: -8px;
 }
 
-.c2 > *:not(:first-child) {
-  margin-top: 0;
-  margin-left: 16px;
-}
-
-.c3 {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
+.c2 > * {
+  padding: 8px;
 }
 
 .c9 {
@@ -691,6 +688,11 @@ exports[`Storyshots Molecules | Tabs With custom styling (like spacing) 1`] = `
   outline: 1px dotted ButtonText;
 }
 
+.c3 {
+  list-style-type: none;
+  padding: 0;
+}
+
 .c10 {
   padding-left: 20px;
   padding-right: 20px;
@@ -706,6 +708,8 @@ exports[`Storyshots Molecules | Tabs With custom styling (like spacing) 1`] = `
 >
   <ul
     className="c1 c2 c3"
+    direction="row"
+    role="tablist"
   >
     <li
       className="c4"
@@ -794,17 +798,11 @@ exports[`Storyshots Molecules | Tabs With height modified 1`] = `
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
+  margin: -8px;
 }
 
-.c1 > *:not(:first-child) {
-  margin-top: 0;
-  margin-left: 16px;
-}
-
-.c2 {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
+.c1 > * {
+  padding: 8px;
 }
 
 .c8 {
@@ -909,11 +907,18 @@ exports[`Storyshots Molecules | Tabs With height modified 1`] = `
   outline: 1px dotted ButtonText;
 }
 
+.c2 {
+  list-style-type: none;
+  padding: 0;
+}
+
 <span
   className="c0"
 >
   <ul
     className="c1 c2"
+    direction="row"
+    role="tablist"
   >
     <li
       className="c3"
