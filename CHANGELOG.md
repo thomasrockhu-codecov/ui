@@ -1,3 +1,10 @@
+# [1.24.0](https://github.com/nordnet/ui/compare/v1.23.2...v1.24.0) (2019-07-15)
+
+
+### Features
+
+* create neutral variant for button ([f4f883e](https://github.com/nordnet/ui/commit/f4f883e))
+
 ## [1.23.2](https://github.com/nordnet/ui/compare/v1.23.1...v1.23.2) (2019-07-12)
 
 
