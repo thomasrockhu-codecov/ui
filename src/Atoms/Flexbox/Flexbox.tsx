@@ -29,13 +29,7 @@ const getSizeStyles = (size: Props['size']) => {
   `;
 };
 
-const getGutterStyles = ({
-  theme,
-  gutter,
-}: {
-  theme: Theme;
-  gutter: Exclude<Props['gutter'], undefined>;
-}) => {
+const getGutterStyles = (theme: Theme, gutter: Exclude<Props['gutter'], undefined>) => {
   return `
     margin: -${theme.spacing.unit(gutter / 2)}px;
 
@@ -53,7 +47,7 @@ const getContainerStyles = (p: Props & { theme: Theme }) => `
   ${p.justifyContent ? `justify-content: ${p.justifyContent};` : ''}
   ${p.alignItems ? `align-items: ${p.alignItems};` : ''}
   ${p.alignContent ? `align-content: ${p.alignContent};` : ''}
-  ${p.gutter ? getGutterStyles(p) : ''}
+  ${p.gutter ? getGutterStyles(p.theme, p.gutter) : ''}
 `;
 
 const getItemStyles = (p: Props & { theme: Theme }) => `
