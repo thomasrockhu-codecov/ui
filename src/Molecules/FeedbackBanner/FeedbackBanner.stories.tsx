@@ -7,8 +7,8 @@ import { Display } from '../../common/Display/index';
 storiesOf('Molecules | FeedbackBanner', module)
   .add('Default usage', () => (
     <FeedbackBanner title="Feedback banner">
-      Feedback banner should only be used within modules to display information that needs
-      attention. Content is flexible it can contain links and plain text.
+      Feedback banner should be used within modules to display information that needs attention.
+      Content is flexible, it can contain links and plain text.
     </FeedbackBanner>
   ))
   .add('Displaying title', () => (
@@ -72,7 +72,8 @@ storiesOf('Molecules | FeedbackBanner', module)
           title: 'default gray',
           component: (
             <FeedbackBanner title="Gray background" variant="info" backgroundColor="gray">
-              If supplied with gray or if left undefined
+              Gray background is the default choice, works well against most other backgrounds, but
+              especially on the default background color (white) of most modules
             </FeedbackBanner>
           ),
         },
@@ -80,7 +81,8 @@ storiesOf('Molecules | FeedbackBanner', module)
           title: 'white',
           component: (
             <FeedbackBanner title="White background" variant="info" backgroundColor="white">
-              If supplied with white
+              In some cases a white background may be needed, for example when the background of the
+              module itself is also gray
             </FeedbackBanner>
           ),
         },

@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 
 import { FeedbackBannerComponent, FeedbackBannerProps } from './FeedbackBanner.types';
-import { Icon, Typography } from '../..';
+import { Icon, Typography, Flexbox } from '../..';
 import { Theme } from '../../theme/theme.types';
 
 const getBackgroundColor = ({
@@ -54,23 +54,18 @@ const getIcon = (variant: FeedbackBannerProps['variant']) => {
 
 const StyledContainer = styled.div<FeedbackBannerProps>`
   width: 100%;
-  min-height: ${p => p.theme.spacing.unit(16)}px;
   background: ${getBackgroundColor};
-  border-left: 4px solid ${getBorderColor};
+  border-left: ${p => p.theme.spacing.unit(1)}px solid ${getBorderColor};
   box-sizing: border-box;
-  display: flex;
-  align-items: center;
 `;
 
 const StyledIcon = styled.div`
-  margin-left: 16px;
+  margin-left: ${p => p.theme.spacing.unit(3)}px;
 `;
 
 const StyledContent = styled.div`
   width: 100%;
-  display: flex;
-  flex-direction: column;
-  margin: 12px;
+  margin: ${p => p.theme.spacing.unit(1)}px ${p => p.theme.spacing.unit(3)}px;
   text-align: left;
   & a {
     color: ${p => p.theme.color.cta};
@@ -86,15 +81,19 @@ export const FeedbackBanner: FeedbackBannerComponent = props => {
   const { variant, backgroundColor, title, children, className } = props;
   return (
     <StyledContainer className={className} variant={variant} backgroundColor={backgroundColor}>
-      <StyledIcon>{getIcon(variant)}</StyledIcon>
-      <StyledContent>
-        {title && (
-          <Typography type="secondary" weight="bold">
-            {title}
-          </Typography>
-        )}
-        <Typography type="secondary">{children}</Typography>
-      </StyledContent>
+      <Flexbox container direction="row" alignItems="center">
+        <StyledIcon>{getIcon(variant)}</StyledIcon>
+        <StyledContent>
+          <Flexbox container item direction="column">
+            {title && (
+              <Typography type="secondary" weight="bold">
+                {title}
+              </Typography>
+            )}
+            <Typography type="secondary">{children}</Typography>
+          </Flexbox>
+        </StyledContent>
+      </Flexbox>
     </StyledContainer>
   );
 };
