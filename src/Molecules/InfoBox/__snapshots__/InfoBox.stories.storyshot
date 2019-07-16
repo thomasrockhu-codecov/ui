@@ -1,5 +1,136 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`Storyshots Molecules | InfoBox Complex children 1`] = `
+.c2 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 20px;
+  height: 20px;
+  fill: #FFCF00;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
+}
+
+.c5 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7142857142857142;
+}
+
+.c4 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.7142857142857142;
+}
+
+.c0 {
+  width: 100%;
+  min-height: 64px;
+  background: $colorWhite;
+  border-left: 4px solid #FFCF00;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c1 {
+  margin-left: 16px;
+}
+
+.c3 {
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin: 12px;
+  text-align: left;
+}
+
+.c3 a {
+  color: #0046FF;
+  font-weight: bold;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c3 a:hover {
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+<div
+  className="c0"
+>
+  <div
+    className="c1"
+  >
+    <svg
+      aria-hidden="true"
+      className="c2"
+      focusable="false"
+      role="presentation"
+      size={5}
+      viewBox="0 0 24 24"
+    >
+      <polygon
+        points="12 1 24 23 0 23"
+      />
+      <path
+        d="M11,10 L13,10 L13,16 L11,16 L11,10 Z M11,17 L13,17 L13,19 L11,19 L11,17 Z"
+        fill="#FFFFFF"
+      />
+    </svg>
+  </div>
+  <div
+    className="c3"
+  >
+    <span
+      className="c4"
+    >
+      Warning, complex child
+    </span>
+    <span
+      className="c5"
+    >
+      <div>
+        <div>
+          The message can also be stuctured as a more complex item than just a string
+        </div>
+        <div>
+          For example, you can provide a 
+          <a
+            href="/"
+          >
+            link to somewhere
+          </a>
+           if you want to
+        </div>
+      </div>
+    </span>
+  </div>
+</div>
+`;
+
 exports[`Storyshots Molecules | InfoBox Default usage 1`] = `
 .c2 {
   -webkit-user-select: none;
@@ -64,6 +195,18 @@ exports[`Storyshots Molecules | InfoBox Default usage 1`] = `
   flex-direction: column;
   margin: 12px;
   text-align: left;
+}
+
+.c3 a {
+  color: #0046FF;
+  font-weight: bold;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c3 a:hover {
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
 }
 
 <div
@@ -261,6 +404,18 @@ exports[`Storyshots Molecules | InfoBox Different variant 1`] = `
   flex-direction: column;
   margin: 12px;
   text-align: left;
+}
+
+.c6 a {
+  color: #0046FF;
+  font-weight: bold;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c6 a:hover {
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
 }
 
 .c0 {
@@ -598,6 +753,18 @@ exports[`Storyshots Molecules | InfoBox Displaying title 1`] = `
   flex-direction: column;
   margin: 12px;
   text-align: left;
+}
+
+.c6 a {
+  color: #0046FF;
+  font-weight: bold;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c6 a:hover {
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
 }
 
 .c0 {

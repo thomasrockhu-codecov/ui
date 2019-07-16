@@ -53,6 +53,14 @@ const StyledContent = styled.div`
   flex-direction: column;
   margin: 12px;
   text-align: left;
+  & a {
+    color: ${p => p.theme.color.cta};
+    font-weight: bold;
+    text-decoration: none;
+  }
+  & a:hover {
+    text-decoration: underline;
+  }
 `;
 
 export const InfoBox: InfoBoxComponent = props => {

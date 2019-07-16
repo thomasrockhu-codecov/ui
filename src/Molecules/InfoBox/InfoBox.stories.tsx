@@ -59,4 +59,14 @@ storiesOf('Molecules | InfoBox', module)
         },
       ]}
     />
+  ))
+  .add('Complex children', () => (
+    <InfoBox title="Warning, complex child" variant="warning">
+      <div>
+        <div>The message can also be stuctured as a more complex item than just a string</div>
+        <div>
+          For example, you can provide a <a href="/">link to somewhere</a> if you want to
+        </div>
+      </div>
+    </InfoBox>
   ));
