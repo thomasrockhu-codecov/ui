@@ -1,6 +1,6 @@
 import React from 'react';
 
-export type InfoBoxProps = {
+export type FeedbackBannerProps = {
   /** @default info */
   variant?: 'info' | 'error' | 'warning' | 'success';
   title?: string;
@@ -8,4 +8,4 @@ export type InfoBoxProps = {
   className?: string;
 };
 
-export type InfoBoxComponent = React.FC<InfoBoxProps>;
+export type FeedbackBannerComponent = React.FC<FeedbackBannerProps>;

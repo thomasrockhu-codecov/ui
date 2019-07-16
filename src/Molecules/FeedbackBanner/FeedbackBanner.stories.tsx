@@ -1,23 +1,28 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 
-import { InfoBox } from '../..';
-import { Display } from '../../common/Display';
+import { FeedbackBanner } from '../../index';
+import { Display } from '../../common/Display/index';
 
-storiesOf('Molecules | InfoBox', module)
+storiesOf('Molecules | FeedbackBanner', module)
   .add('Default usage', () => (
-    <InfoBox title="Info box">Use this to display an information box</InfoBox>
+    <FeedbackBanner title="Feedback banner">
+      Feedback banner should only be used within modules to display information that needs
+      attention. Content is flexible it can contain links and plain text.
+    </FeedbackBanner>
   ))
   .add('Displaying title', () => (
     <Display
       items={[
         {
           title: 'With title',
-          component: <InfoBox title="This is a title">This message has a title</InfoBox>,
+          component: (
+            <FeedbackBanner title="This is a title">This message has a title</FeedbackBanner>
+          ),
         },
         {
           title: 'Without title',
-          component: <InfoBox>This message does not have a title</InfoBox>,
+          component: <FeedbackBanner>This message does not have a title</FeedbackBanner>,
         },
       ]}
     />
@@ -28,45 +33,45 @@ storiesOf('Molecules | InfoBox', module)
         {
           title: 'info',
           component: (
-            <InfoBox title="Info" variant="info">
+            <FeedbackBanner title="Info" variant="info">
               This is an information message
-            </InfoBox>
+            </FeedbackBanner>
           ),
         },
         {
           title: 'error',
           component: (
-            <InfoBox title="Error" variant="error">
+            <FeedbackBanner title="Error" variant="error">
               This is an error message
-            </InfoBox>
+            </FeedbackBanner>
           ),
         },
         {
           title: 'warning',
           component: (
-            <InfoBox title="Warning" variant="warning">
+            <FeedbackBanner title="Warning" variant="warning">
               This is a warning message
-            </InfoBox>
+            </FeedbackBanner>
           ),
         },
         {
           title: 'success',
           component: (
-            <InfoBox title="Success" variant="success">
+            <FeedbackBanner title="Success" variant="success">
               This is a success message
-            </InfoBox>
+            </FeedbackBanner>
           ),
         },
       ]}
     />
   ))
   .add('Complex children', () => (
-    <InfoBox title="Warning, complex child" variant="warning">
+    <FeedbackBanner title="Warning, complex child" variant="warning">
       <div>
         <div>The message can also be stuctured as a more complex item than just a string</div>
         <div>
           For example, you can provide a <a href="/">link to somewhere</a> if you want to
         </div>
       </div>
-    </InfoBox>
+    </FeedbackBanner>
   ));

@@ -1,11 +1,17 @@
 import React from 'react';
 import styled from 'styled-components';
 
-import { InfoBoxComponent, InfoBoxProps } from './InfoBox.types';
+import { FeedbackBannerComponent, FeedbackBannerProps } from './FeedbackBanner.types';
 import { Icon, Typography } from '../..';
 import { Theme } from '../../theme/theme.types';
 
-const getColor = ({ variant, theme }: { variant?: InfoBoxProps['variant']; theme: Theme }) => {
+const getColor = ({
+  variant,
+  theme,
+}: {
+  variant?: FeedbackBannerProps['variant'];
+  theme: Theme;
+}) => {
   switch (variant) {
     case 'error':
       return theme.color.negative;
@@ -19,7 +25,7 @@ const getColor = ({ variant, theme }: { variant?: InfoBoxProps['variant']; theme
   }
 };
 
-const getIcon = (variant: InfoBoxProps['variant']) => {
+const getIcon = (variant: FeedbackBannerProps['variant']) => {
   switch (variant) {
     case 'error':
       return <Icon.CrossCircle size={5} fill={t => t.color.negative} />;
@@ -33,7 +39,7 @@ const getIcon = (variant: InfoBoxProps['variant']) => {
   }
 };
 
-const StyledContainer = styled.div<InfoBoxProps>`
+const StyledContainer = styled.div<FeedbackBannerProps>`
   width: 100%;
   min-height: 64px;
   background: ${p => p.theme.color.card};
@@ -63,7 +69,7 @@ const StyledContent = styled.div`
   }
 `;
 
-export const InfoBox: InfoBoxComponent = props => {
+export const FeedbackBanner: FeedbackBannerComponent = props => {
   const { variant, title, children, className } = props;
   return (
     <StyledContainer className={className} variant={variant}>

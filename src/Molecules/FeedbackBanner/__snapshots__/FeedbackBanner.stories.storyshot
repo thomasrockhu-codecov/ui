@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Storyshots Molecules | InfoBox Complex children 1`] = `
+exports[`Storyshots Molecules | FeedbackBanner Complex children 1`] = `
 .c2 {
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -131,7 +131,7 @@ exports[`Storyshots Molecules | InfoBox Complex children 1`] = `
 </div>
 `;
 
-exports[`Storyshots Molecules | InfoBox Default usage 1`] = `
+exports[`Storyshots Molecules | FeedbackBanner Default usage 1`] = `
 .c2 {
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -239,18 +239,18 @@ exports[`Storyshots Molecules | InfoBox Default usage 1`] = `
     <span
       className="c4"
     >
-      Info box
+      Feedback banner
     </span>
     <span
       className="c5"
     >
-      Use this to display an information box
+      Feedback banner should only be used within modules to display information that needs attention. Content is flexible it can contain links and plain text.
     </span>
   </div>
 </div>
 `;
 
-exports[`Storyshots Molecules | InfoBox Different variant 1`] = `
+exports[`Storyshots Molecules | FeedbackBanner Different variant 1`] = `
 .c5 {
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -689,7 +689,7 @@ exports[`Storyshots Molecules | InfoBox Different variant 1`] = `
 </div>
 `;
 
-exports[`Storyshots Molecules | InfoBox Displaying title 1`] = `
+exports[`Storyshots Molecules | FeedbackBanner Displaying title 1`] = `
 .c5 {
   -webkit-user-select: none;
   -moz-user-select: none;

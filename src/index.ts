@@ -22,7 +22,7 @@ import Avatar from './Molecules/Avatar';
 import Button from './Molecules/Button';
 import CardWithTitle from './Molecules/CardWithTitle';
 import CollapsibleCard from './Molecules/CollapsibleCard';
-import InfoBox from './Molecules/InfoBox';
+import FeedbackBanner from './Molecules/FeedbackBanner';
 import LabeledValue from './Molecules/LabeledValue';
 import Link from './Molecules/Link';
 import LinkBuy from './Molecules/LinkBuy';
@@ -61,7 +61,7 @@ export {
   Flag,
   Flexbox,
   Icon,
-  InfoBox,
+  FeedbackBanner,
   LabeledValue,
   Link,
   LinkBuy,
