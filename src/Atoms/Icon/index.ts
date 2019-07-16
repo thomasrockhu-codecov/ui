@@ -11,11 +11,13 @@ import { DirectionDown } from './components/DirectionDown';
 import { DirectionUp } from './components/DirectionUp';
 import { Flag } from './components/Flag';
 import { Globe } from './components/Globe';
+import { InfoCircle } from './components/InfoCircle';
 import { Pen } from './components/Pen';
 import { Printer } from './components/Printer';
 import { Star } from './components/Star';
 import { Star24 } from './components/Star24';
 import { Trash } from './components/Trash';
+import { WarningTriangle } from './components/WarningTriangle';
 
 export default {
   ArrowRight,
@@ -31,9 +33,11 @@ export default {
   DirectionUp,
   Flag,
   Globe,
+  InfoCircle,
   Pen,
   Printer,
   Star,
   Star24,
   Trash,
+  WarningTriangle,
 };
