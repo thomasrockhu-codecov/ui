@@ -36,7 +36,7 @@ const getIcon = (variant: InfoBoxProps['variant']) => {
 const StyledContainer = styled.div<InfoBoxProps>`
   width: 100%;
   min-height: 64px;
-  background: $colorWhite;
+  background: ${p => p.theme.color.card};
   border-left: 4px solid ${getColor};
   box-sizing: border-box;
   display: flex;
