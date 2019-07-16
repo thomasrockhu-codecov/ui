@@ -1,5 +1,263 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`Storyshots Molecules | FeedbackBanner Background color 1`] = `
+.c5 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 20px;
+  height: 20px;
+  fill: #0046FF;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
+}
+
+.c8 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7142857142857142;
+}
+
+.c7 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.7142857142857142;
+}
+
+.c3 {
+  width: 100%;
+  min-height: 64px;
+  background: #F5F5F5;
+  border-left: 4px solid #0046FF;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c9 {
+  width: 100%;
+  min-height: 64px;
+  background: #FFFFFF;
+  border-left: 4px solid #0046FF;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c4 {
+  margin-left: 16px;
+}
+
+.c6 {
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin: 12px;
+  text-align: left;
+}
+
+.c6 a {
+  color: #0046FF;
+  font-weight: bold;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c6 a:hover {
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  border: 0px;
+}
+
+.c0 > * {
+  padding: 0px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  border: 1px solid #eee;
+}
+
+.c1 > * {
+  padding: 20px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.c2 {
+  border-right: 1px solid #eee;
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+}
+
+<div
+  className="c0"
+  direction="column"
+>
+  <div
+    className="c1"
+    direction="row"
+  >
+    <div
+      className="c2"
+    >
+      default gray
+    </div>
+    <div>
+      <div
+        className="c3"
+      >
+        <div
+          className="c4"
+        >
+          <svg
+            aria-hidden="true"
+            className="c5"
+            focusable="false"
+            role="presentation"
+            size={5}
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M12,24 C5.372583,24 0,18.627417 0,12 C0,5.372583 5.372583,0 12,0 C18.627417,0 24,5.372583 24,12 C24,18.627417 18.627417,24 12,24 Z"
+            />
+            <path
+              d="M11,9 L13,9 L13,19 L11,19 L11,9 Z M11,5 L13,5 L13,7 L11,7 L11,5 Z"
+              fill="#FFFFFF"
+            />
+          </svg>
+        </div>
+        <div
+          className="c6"
+        >
+          <span
+            className="c7"
+          >
+            Gray background
+          </span>
+          <span
+            className="c8"
+          >
+            If supplied with gray or if left undefined
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    className="c1"
+    direction="row"
+  >
+    <div
+      className="c2"
+    >
+      white
+    </div>
+    <div>
+      <div
+        className="c9"
+      >
+        <div
+          className="c4"
+        >
+          <svg
+            aria-hidden="true"
+            className="c5"
+            focusable="false"
+            role="presentation"
+            size={5}
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M12,24 C5.372583,24 0,18.627417 0,12 C0,5.372583 5.372583,0 12,0 C18.627417,0 24,5.372583 24,12 C24,18.627417 18.627417,24 12,24 Z"
+            />
+            <path
+              d="M11,9 L13,9 L13,19 L11,19 L11,9 Z M11,5 L13,5 L13,7 L11,7 L11,5 Z"
+              fill="#FFFFFF"
+            />
+          </svg>
+        </div>
+        <div
+          className="c6"
+        >
+          <span
+            className="c7"
+          >
+            White background
+          </span>
+          <span
+            className="c8"
+          >
+            If supplied with white
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
 exports[`Storyshots Molecules | FeedbackBanner Complex children 1`] = `
 .c2 {
   -webkit-user-select: none;
@@ -36,7 +294,7 @@ exports[`Storyshots Molecules | FeedbackBanner Complex children 1`] = `
 .c0 {
   width: 100%;
   min-height: 64px;
-  background: #FFFFFF;
+  background: #F5F5F5;
   border-left: 4px solid #FFCF00;
   box-sizing: border-box;
   display: -webkit-box;
@@ -167,7 +425,7 @@ exports[`Storyshots Molecules | FeedbackBanner Default usage 1`] = `
 .c0 {
   width: 100%;
   min-height: 64px;
-  background: #FFFFFF;
+  background: #F5F5F5;
   border-left: 4px solid #0046FF;
   box-sizing: border-box;
   display: -webkit-box;
@@ -225,7 +483,6 @@ exports[`Storyshots Molecules | FeedbackBanner Default usage 1`] = `
     >
       <path
         d="M12,24 C5.372583,24 0,18.627417 0,12 C0,5.372583 5.372583,0 12,0 C18.627417,0 24,5.372583 24,12 C24,18.627417 18.627417,24 12,24 Z"
-        id="ico-info"
       />
       <path
         d="M11,9 L13,9 L13,19 L11,19 L11,9 Z M11,5 L13,5 L13,7 L11,7 L11,5 Z"
@@ -328,7 +585,7 @@ exports[`Storyshots Molecules | FeedbackBanner Different variant 1`] = `
 .c3 {
   width: 100%;
   min-height: 64px;
-  background: #FFFFFF;
+  background: #F5F5F5;
   border-left: 4px solid #0046FF;
   box-sizing: border-box;
   display: -webkit-box;
@@ -344,7 +601,7 @@ exports[`Storyshots Molecules | FeedbackBanner Different variant 1`] = `
 .c9 {
   width: 100%;
   min-height: 64px;
-  background: #FFFFFF;
+  background: #F5F5F5;
   border-left: 4px solid #FF1900;
   box-sizing: border-box;
   display: -webkit-box;
@@ -360,7 +617,7 @@ exports[`Storyshots Molecules | FeedbackBanner Different variant 1`] = `
 .c11 {
   width: 100%;
   min-height: 64px;
-  background: #FFFFFF;
+  background: #F5F5F5;
   border-left: 4px solid #FFCF00;
   box-sizing: border-box;
   display: -webkit-box;
@@ -376,7 +633,7 @@ exports[`Storyshots Molecules | FeedbackBanner Different variant 1`] = `
 .c13 {
   width: 100%;
   min-height: 64px;
-  background: #FFFFFF;
+  background: #F5F5F5;
   border-left: 4px solid #00D200;
   box-sizing: border-box;
   display: -webkit-box;
@@ -505,7 +762,6 @@ exports[`Storyshots Molecules | FeedbackBanner Different variant 1`] = `
           >
             <path
               d="M12,24 C5.372583,24 0,18.627417 0,12 C0,5.372583 5.372583,0 12,0 C18.627417,0 24,5.372583 24,12 C24,18.627417 18.627417,24 12,24 Z"
-              id="ico-info"
             />
             <path
               d="M11,9 L13,9 L13,19 L11,19 L11,9 Z M11,5 L13,5 L13,7 L11,7 L11,5 Z"
@@ -725,7 +981,7 @@ exports[`Storyshots Molecules | FeedbackBanner Displaying title 1`] = `
 .c3 {
   width: 100%;
   min-height: 64px;
-  background: #FFFFFF;
+  background: #F5F5F5;
   border-left: 4px solid #0046FF;
   box-sizing: border-box;
   display: -webkit-box;
@@ -854,7 +1110,6 @@ exports[`Storyshots Molecules | FeedbackBanner Displaying title 1`] = `
           >
             <path
               d="M12,24 C5.372583,24 0,18.627417 0,12 C0,5.372583 5.372583,0 12,0 C18.627417,0 24,5.372583 24,12 C24,18.627417 18.627417,24 12,24 Z"
-              id="ico-info"
             />
             <path
               d="M11,9 L13,9 L13,19 L11,19 L11,9 Z M11,5 L13,5 L13,7 L11,7 L11,5 Z"
@@ -905,7 +1160,6 @@ exports[`Storyshots Molecules | FeedbackBanner Displaying title 1`] = `
           >
             <path
               d="M12,24 C5.372583,24 0,18.627417 0,12 C0,5.372583 5.372583,0 12,0 C18.627417,0 24,5.372583 24,12 C24,18.627417 18.627417,24 12,24 Z"
-              id="ico-info"
             />
             <path
               d="M11,9 L13,9 L13,19 L11,19 L11,9 Z M11,5 L13,5 L13,7 L11,7 L11,5 Z"

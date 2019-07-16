@@ -5,7 +5,20 @@ import { FeedbackBannerComponent, FeedbackBannerProps } from './FeedbackBanner.t
 import { Icon, Typography } from '../..';
 import { Theme } from '../../theme/theme.types';
 
-const getColor = ({
+const getBackgroundColor = ({
+  backgroundColor,
+  theme,
+}: {
+  backgroundColor?: FeedbackBannerProps['backgroundColor'];
+  theme: Theme;
+}) => {
+  if (backgroundColor === 'white') {
+    return theme.color.card;
+  }
+  return theme.color.background;
+};
+
+const getBorderColor = ({
   variant,
   theme,
 }: {
@@ -41,9 +54,9 @@ const getIcon = (variant: FeedbackBannerProps['variant']) => {
 
 const StyledContainer = styled.div<FeedbackBannerProps>`
   width: 100%;
-  min-height: 64px;
-  background: ${p => p.theme.color.card};
-  border-left: 4px solid ${getColor};
+  min-height: ${p => p.theme.spacing.unit(16)}px;
+  background: ${getBackgroundColor};
+  border-left: 4px solid ${getBorderColor};
   box-sizing: border-box;
   display: flex;
   align-items: center;
@@ -70,9 +83,9 @@ const StyledContent = styled.div`
 `;
 
 export const FeedbackBanner: FeedbackBannerComponent = props => {
-  const { variant, title, children, className } = props;
+  const { variant, backgroundColor, title, children, className } = props;
   return (
-    <StyledContainer className={className} variant={variant}>
+    <StyledContainer className={className} variant={variant} backgroundColor={backgroundColor}>
       <StyledIcon>{getIcon(variant)}</StyledIcon>
       <StyledContent>
         {title && (

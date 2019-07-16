@@ -65,6 +65,28 @@ storiesOf('Molecules | FeedbackBanner', module)
       ]}
     />
   ))
+  .add('Background color', () => (
+    <Display
+      items={[
+        {
+          title: 'default gray',
+          component: (
+            <FeedbackBanner title="Gray background" variant="info" backgroundColor="gray">
+              If supplied with gray or if left undefined
+            </FeedbackBanner>
+          ),
+        },
+        {
+          title: 'white',
+          component: (
+            <FeedbackBanner title="White background" variant="info" backgroundColor="white">
+              If supplied with white
+            </FeedbackBanner>
+          ),
+        },
+      ]}
+    />
+  ))
   .add('Complex children', () => (
     <FeedbackBanner title="Warning, complex child" variant="warning">
       <div>

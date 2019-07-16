@@ -3,8 +3,9 @@ import React from 'react';
 export type FeedbackBannerProps = {
   /** @default info */
   variant?: 'info' | 'error' | 'warning' | 'success';
+  /** @default gray */
+  backgroundColor?: 'gray' | 'white';
   title?: string;
-  children: React.ReactChild | React.ReactChild[];
   className?: string;
 };
 
