@@ -40,16 +40,16 @@ const getIcon = (variant: FeedbackBannerProps['variant']) => {
 };
 
 const StyledContainer = styled.div<FeedbackBannerProps>`
-  ${p => `background-color: ${p.background ? p.background(p.theme) : p.theme.color.background};`}
+  background-color: ${p => p.theme.color.background};
   border-left: ${p => p.theme.spacing.unit(1)}px solid ${getBorderColor};
   padding: ${p => `${p.theme.spacing.unit(1)}px ${p.theme.spacing.unit(3)}px`};
   box-sizing: border-box;
 `;
 
 export const FeedbackBanner: FeedbackBannerComponent = props => {
-  const { variant, background, title, children, className } = props;
+  const { variant, title, children, className } = props;
   return (
-    <StyledContainer className={className} variant={variant} background={background}>
+    <StyledContainer className={className} variant={variant}>
       <Flexbox container direction="row" alignItems="center" gutter={3}>
         <span>{getIcon(variant)}</span>
         <Flexbox container item direction="column">

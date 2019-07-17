@@ -66,49 +66,6 @@ storiesOf('Molecules | FeedbackBanner', module)
       ]}
     />
   ))
-  .add('Background color', () => (
-    <Display
-      items={[
-        {
-          title: 'default gray',
-          component: (
-            <FeedbackBanner
-              title="Gray background"
-              variant="info"
-              background={t => t.color.background}
-            >
-              Gray background is the default choice, works well against most other backgrounds, but
-              especially on the default background color (white) of most modules
-            </FeedbackBanner>
-          ),
-        },
-        {
-          title: 'white',
-          component: (
-            <FeedbackBanner title="White background" variant="info" background={t => t.color.card}>
-              In some cases a white background may be needed, for example when the background of the
-              module itself is also gray
-            </FeedbackBanner>
-          ),
-        },
-        {
-          title: 'red',
-          component: (
-            <FeedbackBanner
-              title={<span style={{ color: 'white' }}>Red background</span>}
-              variant="info"
-              background={t => t.color.negative}
-            >
-              <span style={{ color: 'white' }}>
-                If you want to be a little crazy, go ahead and make it red. I have heard that the
-                red ones go faster!
-              </span>
-            </FeedbackBanner>
-          ),
-        },
-      ]}
-    />
-  ))
   .add('Complex children', () => (
     <HashRouter>
       <FeedbackBanner title="Warning, complex child" variant="warning">
