@@ -1,8 +1,9 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
+import { HashRouter } from 'react-router-dom';
 
-import { FeedbackBanner } from '../../index';
-import { Display } from '../../common/Display/index';
+import { FeedbackBanner, Link } from '../..';
+import { Display } from '../../common/Display';
 
 storiesOf('Molecules | FeedbackBanner', module)
   .add('Default usage', () => (
@@ -71,7 +72,11 @@ storiesOf('Molecules | FeedbackBanner', module)
         {
           title: 'default gray',
           component: (
-            <FeedbackBanner title="Gray background" variant="info" backgroundColor="gray">
+            <FeedbackBanner
+              title="Gray background"
+              variant="info"
+              background={t => t.color.background}
+            >
               Gray background is the default choice, works well against most other backgrounds, but
               especially on the default background color (white) of most modules
             </FeedbackBanner>
@@ -80,9 +85,24 @@ storiesOf('Molecules | FeedbackBanner', module)
         {
           title: 'white',
           component: (
-            <FeedbackBanner title="White background" variant="info" backgroundColor="white">
+            <FeedbackBanner title="White background" variant="info" background={t => t.color.card}>
               In some cases a white background may be needed, for example when the background of the
               module itself is also gray
+            </FeedbackBanner>
+          ),
+        },
+        {
+          title: 'red',
+          component: (
+            <FeedbackBanner
+              title={<span style={{ color: 'white' }}>Red background</span>}
+              variant="info"
+              background={t => t.color.negative}
+            >
+              <span style={{ color: 'white' }}>
+                If you want to be a little crazy, go ahead and make it red. I have heard that the
+                red ones go faster!
+              </span>
             </FeedbackBanner>
           ),
         },
@@ -90,12 +110,14 @@ storiesOf('Molecules | FeedbackBanner', module)
     />
   ))
   .add('Complex children', () => (
-    <FeedbackBanner title="Warning, complex child" variant="warning">
-      <div>
-        <div>The message can also be stuctured as a more complex item than just a string</div>
+    <HashRouter>
+      <FeedbackBanner title="Warning, complex child" variant="warning">
         <div>
-          For example, you can provide a <a href="/">link to somewhere</a> if you want to
+          <div>The message can also be stuctured as a more complex item than just a string</div>
+          <div>
+            For example, you can provide a <Link to="/">link to somewhere</Link> if you want to
+          </div>
         </div>
-      </div>
-    </FeedbackBanner>
+      </FeedbackBanner>
+    </HashRouter>
   ));

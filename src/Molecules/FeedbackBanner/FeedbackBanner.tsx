@@ -5,19 +5,6 @@ import { FeedbackBannerComponent, FeedbackBannerProps } from './FeedbackBanner.t
 import { Icon, Typography, Flexbox } from '../..';
 import { Theme } from '../../theme/theme.types';
 
-const getBackgroundColor = ({
-  backgroundColor,
-  theme,
-}: {
-  backgroundColor?: FeedbackBannerProps['backgroundColor'];
-  theme: Theme;
-}) => {
-  if (backgroundColor === 'white') {
-    return theme.color.card;
-  }
-  return theme.color.background;
-};
-
 const getBorderColor = ({
   variant,
   theme,
@@ -53,40 +40,26 @@ const getIcon = (variant: FeedbackBannerProps['variant']) => {
 };
 
 const StyledContainer = styled.div<FeedbackBannerProps>`
-  background: ${getBackgroundColor};
+  ${p => `background-color: ${p.background ? p.background(p.theme) : p.theme.color.background};`}
   border-left: ${p => p.theme.spacing.unit(1)}px solid ${getBorderColor};
   padding: ${p => `${p.theme.spacing.unit(1)}px ${p.theme.spacing.unit(3)}px`};
   box-sizing: border-box;
 `;
 
-const StyledContent = styled.div`
-  text-align: left;
-  & a {
-    color: ${p => p.theme.color.cta};
-    font-weight: bold;
-    text-decoration: none;
-  }
-  & a:hover {
-    text-decoration: underline;
-  }
-`;
-
 export const FeedbackBanner: FeedbackBannerComponent = props => {
-  const { variant, backgroundColor, title, children, className } = props;
+  const { variant, background, title, children, className } = props;
   return (
-    <StyledContainer className={className} variant={variant} backgroundColor={backgroundColor}>
+    <StyledContainer className={className} variant={variant} background={background}>
       <Flexbox container direction="row" alignItems="center" gutter={3}>
         <span>{getIcon(variant)}</span>
-        <StyledContent>
-          <Flexbox container item direction="column">
-            {title && (
-              <Typography type="secondary" weight="bold">
-                {title}
-              </Typography>
-            )}
-            <Typography type="secondary">{children}</Typography>
-          </Flexbox>
-        </StyledContent>
+        <Flexbox container item direction="column">
+          {title && (
+            <Typography type="secondary" weight="bold">
+              {title}
+            </Typography>
+          )}
+          <Typography type="secondary">{children}</Typography>
+        </Flexbox>
       </Flexbox>
     </StyledContainer>
   );
