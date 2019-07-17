@@ -14,11 +14,17 @@ exports[`Storyshots Molecules | FeedbackBanner Complex children 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  margin: -6px;
+  margin-left: -6px;
+  margin-right: -6px;
 }
 
 .c1 > * {
-  padding: 6px;
+  padding-left: 6px;
+  padding-right: 6px;
+}
+
+.c1 > *:not(:first-child) {
+  padding-top: 0;
 }
 
 .c3 {
@@ -155,11 +161,17 @@ exports[`Storyshots Molecules | FeedbackBanner Default usage 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  margin: -6px;
+  margin-left: -6px;
+  margin-right: -6px;
 }
 
 .c1 > * {
-  padding: 6px;
+  padding-left: 6px;
+  padding-right: 6px;
+}
+
+.c1 > *:not(:first-child) {
+  padding-top: 0;
 }
 
 .c3 {
@@ -268,11 +280,17 @@ exports[`Storyshots Molecules | FeedbackBanner Different variant 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  margin: -6px;
+  margin-left: -6px;
+  margin-right: -6px;
 }
 
 .c4 > * {
-  padding: 6px;
+  padding-left: 6px;
+  padding-right: 6px;
+}
+
+.c4 > *:not(:first-child) {
+  padding-top: 0;
 }
 
 .c6 {
@@ -680,11 +698,17 @@ exports[`Storyshots Molecules | FeedbackBanner Displaying title 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  margin: -6px;
+  margin-left: -6px;
+  margin-right: -6px;
 }
 
 .c4 > * {
-  padding: 6px;
+  padding-left: 6px;
+  padding-right: 6px;
+}
+
+.c4 > *:not(:first-child) {
+  padding-top: 0;
 }
 
 .c6 {
