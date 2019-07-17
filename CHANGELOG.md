@@ -1,3 +1,11 @@
+## [1.24.2](https://github.com/nordnet/ui/compare/v1.24.1...v1.24.2) (2019-07-17)
+
+
+### Bug Fixes
+
+* remove vertical gutters ([ca4255e](https://github.com/nordnet/ui/commit/ca4255e))
+* tabs adjustment to flexbox gutter change ([25314b8](https://github.com/nordnet/ui/commit/25314b8))
+
 ## [1.24.1](https://github.com/nordnet/ui/compare/v1.24.0...v1.24.1) (2019-07-15)
 
 
