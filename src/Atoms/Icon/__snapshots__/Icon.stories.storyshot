@@ -448,6 +448,34 @@ exports[`Storyshots Atoms | Icon Available icons 1`] = `
     <div
       className="c2"
     >
+      InfoCircle
+    </div>
+    <div>
+      <svg
+        aria-hidden="true"
+        className="c3"
+        focusable="false"
+        role="presentation"
+        size={5}
+        viewBox="0 0 24 24"
+      >
+        <path
+          d="M12,24 C5.372583,24 0,18.627417 0,12 C0,5.372583 5.372583,0 12,0 C18.627417,0 24,5.372583 24,12 C24,18.627417 18.627417,24 12,24 Z"
+        />
+        <path
+          d="M11,9 L13,9 L13,19 L11,19 L11,9 Z M11,5 L13,5 L13,7 L11,7 L11,5 Z"
+          fill="#FFFFFF"
+        />
+      </svg>
+    </div>
+  </div>
+  <div
+    className="c1"
+    direction="row"
+  >
+    <div
+      className="c2"
+    >
       Pen
     </div>
     <div>
@@ -567,6 +595,34 @@ exports[`Storyshots Atoms | Icon Available icons 1`] = `
       >
         <path
           d="M14.7,5.2173913 L6.3,5.2173913 L2.1,5.2173913 L2.1,7.30434783 L18.9,7.30434783 L18.9,5.2173913 L14.7,5.2173913 Z M12.6,3.13043478 L12.6,2.08695652 L8.4,2.08695652 L8.4,3.13043478 L12.6,3.13043478 Z M6.3,3.13043478 L6.3,0 L14.7,0 L14.7,3.13043478 L21,3.13043478 L21,9.39130435 L18.9,9.39130435 L18.9,24 L2.1,24 L2.1,9.39130435 L0,9.39130435 L0,3.13043478 L6.3,3.13043478 Z M4.2,9.39130435 L4.2,21.9130435 L16.8,21.9130435 L16.8,9.39130435 L4.2,9.39130435 Z M6.3,11.4782609 L8.4,11.4782609 L8.4,19.826087 L6.3,19.826087 L6.3,11.4782609 Z M9.45,11.4782609 L11.55,11.4782609 L11.55,19.826087 L9.45,19.826087 L9.45,11.4782609 Z M12.6,11.4782609 L14.7,11.4782609 L14.7,19.826087 L12.6,19.826087 L12.6,11.4782609 Z"
+        />
+      </svg>
+    </div>
+  </div>
+  <div
+    className="c1"
+    direction="row"
+  >
+    <div
+      className="c2"
+    >
+      WarningTriangle
+    </div>
+    <div>
+      <svg
+        aria-hidden="true"
+        className="c3"
+        focusable="false"
+        role="presentation"
+        size={5}
+        viewBox="0 0 24 24"
+      >
+        <polygon
+          points="12 1 24 23 0 23"
+        />
+        <path
+          d="M11,10 L13,10 L13,16 L11,16 L11,10 Z M11,17 L13,17 L13,19 L11,19 L11,17 Z"
+          fill="#FFFFFF"
         />
       </svg>
     </div>
