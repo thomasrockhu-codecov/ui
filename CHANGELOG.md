@@ -1,3 +1,24 @@
+# [1.25.0](https://github.com/nordnet/ui/compare/v1.24.2...v1.25.0) (2019-08-05)
+
+
+### Bug Fixes
+
+* 🐛 background color for InfoBox ([70e4f33](https://github.com/nordnet/ui/commit/70e4f33))
+* 🐛 default to gray background for FeedbackBanner ([e437af1](https://github.com/nordnet/ui/commit/e437af1))
+* 🐛 remove background prop ([86f1101](https://github.com/nordnet/ui/commit/86f1101))
+* 🐛 remove link styling and allow any background from theme ([9456527](https://github.com/nordnet/ui/commit/9456527))
+* 🐛 remove useless id from InfoCircle icon ([5d3dc15](https://github.com/nordnet/ui/commit/5d3dc15))
+* 🐛 rename InfoBox to FeedbackBanner ([6b05957](https://github.com/nordnet/ui/commit/6b05957))
+* 🐛 styling for links in InfoBox molecule ([58b8f55](https://github.com/nordnet/ui/commit/58b8f55))
+* 🐛 use Flexbox wrapper component in FeedbackBanner ([0594560](https://github.com/nordnet/ui/commit/0594560))
+* flexbox gutter ([ef0c6e9](https://github.com/nordnet/ui/commit/ef0c6e9))
+
+
+### Features
+
+* 🎸 add InfoBox molecule ([c55e8e9](https://github.com/nordnet/ui/commit/c55e8e9))
+* 🎸 add InfoCircle and WarningTriangle icons ([e9dd4a7](https://github.com/nordnet/ui/commit/e9dd4a7))
+
 ## [1.24.2](https://github.com/nordnet/ui/compare/v1.24.1...v1.24.2) (2019-07-17)
 
 
