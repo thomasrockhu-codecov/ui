@@ -1,3 +1,10 @@
+# [1.26.0](https://github.com/nordnet/ui/compare/v1.25.0...v1.26.0) (2019-08-05)
+
+
+### Features
+
+* transparent button ([4bc9999](https://github.com/nordnet/ui/commit/4bc9999))
+
 # [1.25.0](https://github.com/nordnet/ui/compare/v1.24.2...v1.25.0) (2019-08-05)
 
 
