@@ -23,6 +23,7 @@ import Button from './Molecules/Button';
 import CardWithTitle from './Molecules/CardWithTitle';
 import CollapsibleCard from './Molecules/CollapsibleCard';
 import FeedbackBanner from './Molecules/FeedbackBanner';
+import Input from './Molecules/Input';
 import LabeledValue from './Molecules/LabeledValue';
 import Link from './Molecules/Link';
 import LinkBuy from './Molecules/LinkBuy';
@@ -58,10 +59,11 @@ export {
   CssGrid,
   DateTime,
   Development,
+  FeedbackBanner,
   Flag,
   Flexbox,
   Icon,
-  FeedbackBanner,
+  Input,
   LabeledValue,
   Link,
   LinkBuy,
@@ -71,7 +73,6 @@ export {
   ListWithTitles,
   Media,
   Modal,
-  useMedia,
   Number,
   PageHeaderCard,
   PageWrapper,
@@ -93,5 +94,6 @@ export {
   Tr,
   Typography,
   useKeyPress,
+  useMedia,
   VisuallyHidden,
 };
