@@ -1,3 +1,10 @@
+# [1.27.0](https://github.com/nordnet/ui/compare/v1.26.0...v1.27.0) (2019-08-08)
+
+
+### Features
+
+* add tabsnav classname ([636ac1e](https://github.com/nordnet/ui/commit/636ac1e))
+
 # [1.26.0](https://github.com/nordnet/ui/compare/v1.25.0...v1.26.0) (2019-08-05)
 
 
