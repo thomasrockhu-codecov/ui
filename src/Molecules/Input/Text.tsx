@@ -35,8 +35,28 @@ const UnstyledInput = styled.input.attrs({ type: 'text' })`
   white-space: normal;
   background: none;
   line-height: 1;
+
+  &::placeholder {
+    /* fixes safari placeholder vertical positioning */
+    /* change if typography changes */
+    line-height: 17px;
+  }
+
+  :-ms-input-placeholder {
+    /* fixes IE11 placeholder vertical positioning and color */
+    line-height: 1;
+    color: ${p => p.theme.color.label};
+  }
+
+  &::-moz-placeholder {
+    /* fixes firefox placeholder vertical positioning */
+    /* change if typography changes */
+    line-height: ${p => (p.size === 's' ? '15' : '22')}px;
+  }
+
   box-sizing: border-box;
-  font: inherit;
+  font-family: inherit;
+  font-weight: inherit;
   font-size: inherit;
   color: inherit;
   width: 100%;
@@ -104,10 +124,9 @@ const DensedTypography = styled(Typography)`
   overflow: hidden;
   text-overflow: ellipsis;
 `;
-const Wrapper = styled(Flexbox)`
-  display: inline-flex;
-  align-items: start;
-  ${p => (p.fullWidth ? 'width: 100%' : '')}
+const InlineFlexbox = styled(Flexbox)`
+  display: flex;
+  width: 100%;
 `;
 const BottomWrapper = styled(motion.span)<{ size: PropsWithTheme['size'] }>`
   position: absolute;
@@ -119,21 +138,21 @@ const BottomWrapper = styled(motion.span)<{ size: PropsWithTheme['size'] }>`
   text-overflow: ellipsis;
   top: ${p => getHeight(p)}px;
 `;
-const StyledLabel = styled.label`
+const Wrapper = styled.label<{ fullWidth?: boolean }>`
+  ${p => (p.fullWidth ? 'width: 100%;' : '')}
   margin: 0;
   padding: 0;
   border: 0;
   font-size: 100%;
   font: inherit;
   vertical-align: baseline;
-  display: -ms-grid;
+  display: inline-block;
 `;
 // initial state    focus
 //  gray            cta
 //  error           error
 //  success         success
 export const Text: React.FC<Props> = ({
-  children,
   className,
   disabled,
   error,
@@ -158,8 +177,8 @@ export const Text: React.FC<Props> = ({
   /* eslint-disable jsx-a11y/label-has-associated-control,jsx-a11y/label-has-for */
   return (
     <>
-      <StyledLabel>
-        <Wrapper container direction="column" fullWidth={fullWidth}>
+      <Wrapper fullWidth={fullWidth}>
+        <InlineFlexbox container direction="column">
           <HidableTypography
             hidden={Boolean(hideLabel)}
             type="secondary"
@@ -239,8 +258,8 @@ export const Text: React.FC<Props> = ({
               </StyledOuterFlexbox>
             </Typography>
           </Flexbox>
-        </Wrapper>
-      </StyledLabel>
+        </InlineFlexbox>
+      </Wrapper>
     </>
   );
 };

@@ -1,5 +1,7 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
+import Color from 'color';
+import styled from 'styled-components';
 import { Input, Icon, Flexbox, Button } from '../..';
 import { Display } from '../../common/Display';
 
@@ -106,9 +108,32 @@ storiesOf('Molecules | Input / Text', module)
   ))
   .add('Right addon', () => <Input.Text label="Label" placeholder="Placeholder" rightAddon="SEK" />)
   .add('Hidden label', () => <Input.Text label="Label" placeholder="Placeholder" hideLabel />)
-  .add('Skip bottom margin (if you know there is no errors or info)', () => (
-    <Input.Text label="Label" placeholder="Placeholder" noBottomMargin />
-  ))
+  .add('Skip bottom margin (if you know there is no errors or info)', () => {
+    const WarningStripe = styled.div`
+      width: 160px;
+      height: 20px;
+      ${p => {
+        const stripes = p.theme.color.warning;
+        const stripesDark = Color(stripes).lighten(0.5);
+
+        return `
+    background: repeating-linear-gradient(
+      -45deg,
+      ${stripes},
+      ${stripes} ${p.theme.spacing.unit(2)}px,
+      ${stripesDark} ${p.theme.spacing.unit(2)}px,
+      ${stripesDark} ${p.theme.spacing.unit(4)}px
+    );
+  `;
+      }}
+    `;
+    return (
+      <>
+        <Input.Text label="Label" placeholder="Placeholder" noBottomMargin />
+        <WarningStripe />
+      </>
+    );
+  })
   .add('Simple login form', () => (
     <Flexbox container direction="column" gutter={4}>
       <Flexbox item container gutter={4}>
@@ -116,19 +141,12 @@ storiesOf('Molecules | Input / Text', module)
           <Input.Text
             fullWidth
             label="Username"
-            hideLabel
             placeholder="Username"
             extraInfo="Please provide your username (worst UX right here)"
           />
         </Flexbox>
         <Flexbox item grow={1}>
-          <Input.Text
-            fullWidth
-            label="Password"
-            placeholder="Password"
-            hideLabel
-            error="Simple error"
-          />
+          <Input.Text fullWidth label="Password" placeholder="Password" error="Simple error" />
         </Flexbox>
       </Flexbox>
       <Flexbox item container justifyContent="flex-end" grow={1}>
