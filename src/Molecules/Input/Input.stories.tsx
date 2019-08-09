@@ -55,7 +55,7 @@ storiesOf('Molecules | Input / Text', module)
         {
           component: (
             <Input.Text
-              label="Too long label, but what we can do, the input will make itself wider"
+              label="Too long label, goes into ellipsis. Consider smaller label or bigger input"
               placeholder="If placeholder goes too long though, it probably should be truncated into ellipsis, right?"
               extraInfo="This is much neccessary info wow"
             />
@@ -67,7 +67,7 @@ storiesOf('Molecules | Input / Text', module)
             <Input.Text
               label="Small label"
               placeholder=""
-              extraInfo="Big extra fat extraInfo that should only fit in one line and then ellipsis"
+              extraInfo="Big extra fat extraInfo that will wrap over many lines. Be careful with this pattern, use it only with small texts!"
             />
           ),
           title: 'Long extraInfo',
@@ -80,14 +80,14 @@ storiesOf('Molecules | Input / Text', module)
       title="Full width inputs"
       items={[
         {
-          component: <Input.Text label="Label" fullWidth placeholder="Placeholder" />,
+          component: <Input.Text label="Label" width="100%" placeholder="Placeholder" />,
           title: 'Default',
         },
         {
           component: (
             <Input.Text
               label="Label"
-              fullWidth
+              width="100%"
               placeholder="Placeholder"
               leftAddon={<Icon.Bolt size={4} />}
             />
@@ -96,7 +96,7 @@ storiesOf('Molecules | Input / Text', module)
         },
         {
           component: (
-            <Input.Text label="Label" fullWidth placeholder="Placeholder" rightAddon="SEK" />
+            <Input.Text label="Label" width="100%" placeholder="Placeholder" rightAddon="SEK" />
           ),
           title: 'Right addon',
         },
@@ -110,7 +110,7 @@ storiesOf('Molecules | Input / Text', module)
   .add('Hidden label', () => <Input.Text label="Label" placeholder="Placeholder" hideLabel />)
   .add('Skip bottom margin (if you know there is no errors or info)', () => {
     const WarningStripe = styled.div`
-      width: 160px;
+      width: 200px;
       height: 20px;
       ${p => {
         const stripes = p.theme.color.warning;
@@ -137,23 +137,24 @@ storiesOf('Molecules | Input / Text', module)
   .add('Simple login form', () => (
     <Flexbox container direction="column" gutter={4}>
       <Flexbox item container gutter={4}>
-        <Flexbox item grow={1}>
+        <Flexbox item basis="50%">
           <Input.Text
-            fullWidth
+            width="100%"
             label="Username"
             placeholder="Username"
             extraInfo="Please provide your username (worst UX right here)"
           />
         </Flexbox>
-        <Flexbox item grow={1}>
-          <Input.Text fullWidth label="Password" placeholder="Password" error="Simple error" />
+        <Flexbox item basis="50%">
+          <Input.Text width="100%" label="Password" placeholder="Password" error="Simple error" />
         </Flexbox>
       </Flexbox>
       <Flexbox item container justifyContent="flex-end" grow={1}>
-        <Button fullWidth>Login</Button>
+        <Button width="100%">Login</Button>
       </Flexbox>
     </Flexbox>
   ))
+
   .add('Small', () => (
     <Display
       title={`Size = "s"`}
@@ -163,7 +164,7 @@ storiesOf('Molecules | Input / Text', module)
           title: 'Default',
         },
         {
-          component: <Input.Text label="Label" size="s" fullWidth placeholder="Placeholder" />,
+          component: <Input.Text label="Label" size="s" width="100%" placeholder="Placeholder" />,
           title: 'Full width',
         },
         {

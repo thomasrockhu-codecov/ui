@@ -67,7 +67,6 @@ const UnstyledInput = styled.input.attrs({ type: 'text' })`
   right: 0;
   bottom: 0;
   outline: 0;
-  min-width: ${p => p.theme.spacing.unit(40)}px;
   height: 100%;
   ${p => (p.leftAddon ? `padding-left: ${p.theme.spacing.unit(8)}px` : '')}
   ${p =>
@@ -78,7 +77,6 @@ const UnstyledInput = styled.input.attrs({ type: 'text' })`
 const StyledOuterFlexbox = styled(Flexbox)`
   position: relative;
   height: ${(p: PropsWithTheme) => getHeight(p)}px;
-  ${p => (p.noBottomMargin ? '' : `margin-bottom: ${LINE_HEIGHT_INFO_BELOW}px;`)}
   box-sizing: border-box;
   border: 1px solid ${(p: PropsWithTheme & { isFocused: boolean }) => getBorderColor(p)};
   background-color: #ffffff;
@@ -87,7 +85,6 @@ const StyledOuterFlexbox = styled(Flexbox)`
   font-size: inherit;
   line-height: inherit;
   color: inherit;
-  min-width: ${p => p.theme.spacing.unit(40)}px;
   &:focus-within {
     border-color: ${p => p.theme.color.borderActive};
   }
@@ -105,6 +102,10 @@ const StyledOuterFlexbox = styled(Flexbox)`
 `;
 const HidableTypography = styled(Typography)<{ hidden: boolean }>`
   ${p => (p.hidden ? visuallyHidden : '')}
+  width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 `;
 
 const AddonBox = styled(Flexbox)`
@@ -120,26 +121,16 @@ const AddonBox = styled(Flexbox)`
 const DensedTypography = styled(Typography)`
   line-height: ${LINE_HEIGHT_INFO_BELOW}px;
   display: inline-block;
-  width: 100%;
-  overflow: hidden;
-  text-overflow: ellipsis;
 `;
 const InlineFlexbox = styled(Flexbox)`
   display: flex;
   width: 100%;
 `;
 const BottomWrapper = styled(motion.span)<{ size: PropsWithTheme['size'] }>`
-  position: absolute;
-  line-height: 0;
-  max-height: ${LINE_HEIGHT_INFO_BELOW}px;
-  overflow: hidden;
   width: 100%;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  top: ${p => getHeight(p)}px;
 `;
-const Wrapper = styled.label<{ fullWidth?: boolean }>`
-  ${p => (p.fullWidth ? 'width: 100%;' : '')}
+const Wrapper = styled.label<{ width?: string | number }>`
+  ${p => (p.width ? `width: ${p.width};` : 'width: 200px;')}
   margin: 0;
   padding: 0;
   border: 0;
@@ -156,7 +147,7 @@ export const Text: React.FC<Props> = ({
   className,
   disabled,
   error,
-  fullWidth,
+  width,
   hideLabel,
   label,
   leftAddon,
@@ -177,88 +168,95 @@ export const Text: React.FC<Props> = ({
   /* eslint-disable jsx-a11y/label-has-associated-control,jsx-a11y/label-has-for */
   return (
     <>
-      <Wrapper fullWidth={fullWidth}>
-        <InlineFlexbox container direction="column">
-          <HidableTypography
-            hidden={Boolean(hideLabel)}
-            type="secondary"
-            color={t => t.color.label}
-          >
-            {label}
-          </HidableTypography>
-          <Flexbox item alignSelf="stretch">
-            <Typography type="secondary" color={t => t.color.text}>
-              <StyledOuterFlexbox
-                container
-                alignItems="center"
-                {...{ size, placeholder, error, success, isFocused, noBottomMargin }}
-              >
-                {leftAddon && (
-                  <AddonBox container justifyContent="center" alignItems="center" position="left">
-                    {leftAddon}
-                  </AddonBox>
-                )}
-                <UnstyledInput
-                  onFocus={() => setIsFocused(true)}
-                  onBlur={() => setIsFocused(false)}
-                  {...{
-                    size,
-                    placeholder,
-                    error,
-                    success,
-                    onChange,
-                    leftAddon,
-                    rightAddon,
-                    value,
-                    defaultValue,
-                  }}
-                  {...(error && error !== '' ? { 'aria-invalid': true } : {})}
-                />
-                {rightAddon && (
-                  <AddonBox container justifyContent="center" alignItems="center" position="right">
-                    {rightAddon}
-                  </AddonBox>
-                )}
-                <AnimatePresence>
-                  {error && error !== '' ? (
-                    <BottomWrapper
-                      size={size}
-                      positionTransition
-                      initial={{ y: -10, opacity: 0 }}
-                      animate={{ y: 0, opacity: 1 }}
-                      exit={{ y: 0, opacity: 0 }}
-                      aria-live="assertive"
-                      aria-relevant="additions removals"
-                      key={'animation1'}
-                    >
-                      <DensedTypography type="tertiary" color={t => t.color.negative}>
-                        <VisuallyHidden>Error: </VisuallyHidden>
-                        {error}
-                      </DensedTypography>
-                    </BottomWrapper>
-                  ) : (
-                    extraInfo && (
-                      <BottomWrapper
-                        size={size}
-                        positionTransition
-                        initial={{ y: -10, opacity: 0 }}
-                        key={'animation2'}
-                        animate={{ y: 0, opacity: 1 }}
-                        exit={{ y: 0, opacity: 0 }}
-                        aria-live="assertive"
-                        aria-relevant="additions removals"
-                      >
-                        <DensedTypography type="tertiary" color={t => t.color.label}>
-                          {extraInfo}
-                        </DensedTypography>
-                      </BottomWrapper>
-                    )
+      <Wrapper width={width}>
+        <div style={{ display: 'inline-block', width: '100%' }}>
+          <InlineFlexbox container direction="column">
+            <HidableTypography
+              hidden={Boolean(hideLabel)}
+              type="secondary"
+              color={t => t.color.label}
+            >
+              {label}
+            </HidableTypography>
+            <Flexbox item alignSelf="stretch">
+              <Typography type="secondary" color={t => t.color.text} as="div">
+                <StyledOuterFlexbox
+                  container
+                  alignItems="center"
+                  {...{ size, placeholder, error, success, isFocused, noBottomMargin }}
+                >
+                  {leftAddon && (
+                    <AddonBox container justifyContent="center" alignItems="center" position="left">
+                      {leftAddon}
+                    </AddonBox>
                   )}
-                </AnimatePresence>
-              </StyledOuterFlexbox>
-            </Typography>
-          </Flexbox>
-        </InlineFlexbox>
+                  <UnstyledInput
+                    onFocus={() => setIsFocused(true)}
+                    onBlur={() => setIsFocused(false)}
+                    {...{
+                      size,
+                      placeholder,
+                      error,
+                      success,
+                      onChange,
+                      leftAddon,
+                      rightAddon,
+                      value,
+                      defaultValue,
+                    }}
+                    {...(error && error !== '' ? { 'aria-invalid': true } : {})}
+                  />
+                  {rightAddon && (
+                    <AddonBox
+                      container
+                      justifyContent="center"
+                      alignItems="center"
+                      position="right"
+                    >
+                      {rightAddon}
+                    </AddonBox>
+                  )}
+                </StyledOuterFlexbox>
+              </Typography>
+            </Flexbox>
+          </InlineFlexbox>
+        </div>
+        <AnimatePresence>
+          {error && error !== '' ? (
+            <BottomWrapper
+              size={size}
+              positionTransition
+              initial={{ y: -10, opacity: 0 }}
+              animate={{ y: 0, opacity: 1 }}
+              exit={{ y: 0, opacity: 0 }}
+              aria-live="assertive"
+              aria-relevant="additions removals"
+              key={'animation1'}
+            >
+              <DensedTypography type="tertiary" color={t => t.color.negative}>
+                <VisuallyHidden>Error: </VisuallyHidden>
+                {error}
+              </DensedTypography>
+            </BottomWrapper>
+          ) : (
+            extraInfo && (
+              <BottomWrapper
+                size={size}
+                positionTransition
+                initial={{ y: -10, opacity: 0 }}
+                key={'animation2'}
+                animate={{ y: 0, opacity: 1 }}
+                exit={{ y: 0, opacity: 0 }}
+                aria-live="assertive"
+                aria-relevant="additions removals"
+              >
+                <DensedTypography type="tertiary" color={t => t.color.label}>
+                  {extraInfo}
+                </DensedTypography>
+              </BottomWrapper>
+            )
+          )}
+        </AnimatePresence>
       </Wrapper>
     </>
   );
