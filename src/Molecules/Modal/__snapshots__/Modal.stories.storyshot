@@ -152,7 +152,7 @@ exports[`Storyshots Molecules | Modal Default 1`] = `
     width: 480px;
     top: 50%;
     left: 50%;
-    box-shadow: 0 2px 2px 0 rgba(0,0,0,0.03);
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,0.05);
     -webkit-transform: translate(-50%,0%);
     -ms-transform: translate(-50%,0%);
     transform: translate(-50%,0%);
@@ -485,7 +485,7 @@ exports[`Storyshots Molecules | Modal Uncontrolled behavior 1`] = `
     width: 480px;
     top: 50%;
     left: 50%;
-    box-shadow: 0 2px 2px 0 rgba(0,0,0,0.03);
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,0.05);
     -webkit-transform: translate(-50%,0%);
     -ms-transform: translate(-50%,0%);
     transform: translate(-50%,0%);
@@ -796,7 +796,7 @@ exports[`Storyshots Molecules | Modal Without header 1`] = `
     width: 480px;
     top: 50%;
     left: 50%;
-    box-shadow: 0 2px 2px 0 rgba(0,0,0,0.03);
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,0.05);
     -webkit-transform: translate(-50%,0%);
     -ms-transform: translate(-50%,0%);
     transform: translate(-50%,0%);
