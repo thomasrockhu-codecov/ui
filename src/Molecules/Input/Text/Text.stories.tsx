@@ -1,9 +1,19 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
-import Color from 'color';
-import styled from 'styled-components';
-import { Input, Icon, Flexbox, Button } from '../..';
-import { Display } from '../../common/Display';
+import { actions } from '@storybook/addon-actions';
+import { Input, Icon, Flexbox, Button } from '../../..';
+import { Display } from '../../../common/Display';
+
+// A bit laggy for now, let's optimize later
+const handlers = actions(
+  'onBlur',
+  'onClick',
+  'onFocus',
+  'onKeyDown',
+  'onKeyUp',
+  'onKeyPress',
+  'onChange',
+);
 
 storiesOf('Molecules | Input / Text', module)
   .add('Default', () => <Input.Text label="Label" placeholder="Placeholder" />)
@@ -29,6 +39,16 @@ storiesOf('Molecules | Input / Text', module)
     return <Component />;
   })
   .add('Success', () => <Input.Text label="Label" placeholder="Placeholder" success />)
+  .add('Disabled', () => <Input.Text label="Label" placeholder="Placeholder" disabled />)
+  .add('Actions', () => (
+    <>
+      <p>
+        Actions are a bit laggy because of the @storybook/addon-actions. Prod performance is not
+        affected.
+      </p>
+      <Input.Text label="Label" placeholder="Placeholder" {...handlers} />
+    </>
+  ))
   .add('Extra info below', () => (
     <Input.Text label="Label" placeholder="Placeholder" extraInfo="Use wisely this space" />
   ))
@@ -108,32 +128,7 @@ storiesOf('Molecules | Input / Text', module)
   ))
   .add('Right addon', () => <Input.Text label="Label" placeholder="Placeholder" rightAddon="SEK" />)
   .add('Hidden label', () => <Input.Text label="Label" placeholder="Placeholder" hideLabel />)
-  .add('Skip bottom margin (if you know there is no errors or info)', () => {
-    const WarningStripe = styled.div`
-      width: 200px;
-      height: 20px;
-      ${p => {
-        const stripes = p.theme.color.warning;
-        const stripesDark = Color(stripes).lighten(0.5);
 
-        return `
-    background: repeating-linear-gradient(
-      -45deg,
-      ${stripes},
-      ${stripes} ${p.theme.spacing.unit(2)}px,
-      ${stripesDark} ${p.theme.spacing.unit(2)}px,
-      ${stripesDark} ${p.theme.spacing.unit(4)}px
-    );
-  `;
-      }}
-    `;
-    return (
-      <>
-        <Input.Text label="Label" placeholder="Placeholder" noBottomMargin />
-        <WarningStripe />
-      </>
-    );
-  })
   .add('Simple login form', () => (
     <Flexbox container direction="column" gutter={4}>
       <Flexbox item container gutter={4}>
@@ -150,7 +145,7 @@ storiesOf('Molecules | Input / Text', module)
         </Flexbox>
       </Flexbox>
       <Flexbox item container justifyContent="flex-end" grow={1}>
-        <Button width="100%">Login</Button>
+        <Button fullWidth>Login</Button>
       </Flexbox>
     </Flexbox>
   ))
@@ -173,7 +168,7 @@ storiesOf('Molecules | Input / Text', module)
               label="Label"
               size="s"
               placeholder="Placeholder"
-              error="Some error text that will go to ellipsis"
+              error="Some error text that will wrap itself over couple of lines"
             />
           ),
           title: 'Error',

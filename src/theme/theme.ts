@@ -107,6 +107,7 @@ export const createTheme = (config: ThemeConfig = {}): Theme => {
     },
     breakpoints,
     color: {
+      backgroundInput: rawColor.white,
       background: rawColor.gray7,
       backgroundDark: rawColor.gray0,
       buttonSecondaryBackground: rawColor.white,

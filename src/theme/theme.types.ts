@@ -55,6 +55,8 @@ type NumberOrObjectWithNumber = number | { size: number };
 export type Theme = {
   /** Semantic names for the colors */
   color: {
+    /** white */
+    backgroundInput: RawColor['white'];
     /** gray7 */
     background: RawColor['gray7'];
     /** gray0 */

@@ -1,5 +1,3 @@
-import { Theme } from '../../theme/theme.types';
-
 export type Props = {
   className?: string;
   /** Label should always be presented - A11y */
@@ -16,8 +14,14 @@ export type Props = {
   placeholder?: string;
   fullWidth?: boolean;
   size?: 's';
-
-  noBottomMargin?: boolean;
+  /**
+   * You need to specify width
+   * (better in pixels), because
+   * that will affect wrapping
+   * of the error/info text
+   * underneath
+   */
+  width?: string | number;
 
   value?: string;
   defaultValue?: string;
@@ -26,6 +30,7 @@ export type Props = {
   onClick?: React.MouseEventHandler<HTMLInputElement>;
   onBlur?: React.FocusEventHandler<HTMLInputElement>;
   onFocus?: React.FocusEventHandler<HTMLInputElement>;
+  onKeyDown?: React.KeyboardEventHandler<HTMLInputElement>;
+  onKeyUp?: React.KeyboardEventHandler<HTMLInputElement>;
+  onKeyPress?: React.KeyboardEventHandler<HTMLInputElement>;
 };
-
-export type PropsWithTheme = Props & { theme: Theme };
