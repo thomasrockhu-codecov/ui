@@ -662,7 +662,7 @@ exports[`Storyshots Molecules | Input / Text Edge cases 1`] = `
   line-height: 1.7142857142857142;
 }
 
-.c15 {
+.c14 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #6E6E69;
   margin: 0;
@@ -768,7 +768,7 @@ exports[`Storyshots Molecules | Input / Text Edge cases 1`] = `
   white-space: nowrap;
 }
 
-.c14 {
+.c13 {
   line-height: 17px;
   display: inline-block;
 }
@@ -778,10 +778,6 @@ exports[`Storyshots Molecules | Input / Text Edge cases 1`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  width: 100%;
-}
-
-.c13 {
   width: 100%;
 }
 
@@ -901,21 +897,9 @@ exports[`Storyshots Molecules | Input / Text Edge cases 1`] = `
           </div>
         </label>
         <span
-          aria-live="assertive"
-          aria-relevant="additions removals"
-          className="c13"
-          style={
-            Object {
-              "opacity": 0,
-              "transform": "translateY(-10px) translateZ(0)",
-            }
-          }
+          className="c13 c14"
         >
-          <span
-            className="c14 c15"
-          >
-            This is much neccessary info wow
-          </span>
+          This is much neccessary info wow
         </span>
       </div>
     </div>
@@ -965,21 +949,9 @@ exports[`Storyshots Molecules | Input / Text Edge cases 1`] = `
           </div>
         </label>
         <span
-          aria-live="assertive"
-          aria-relevant="additions removals"
-          className="c13"
-          style={
-            Object {
-              "opacity": 0,
-              "transform": "translateY(-10px) translateZ(0)",
-            }
-          }
+          className="c13 c14"
         >
-          <span
-            className="c14 c15"
-          >
-            Big extra fat extraInfo that will wrap over many lines. Be careful with this pattern, use it only with small texts!
-          </span>
+          Big extra fat extraInfo that will wrap over many lines. Be careful with this pattern, use it only with small texts!
         </span>
       </div>
     </div>
@@ -1036,7 +1008,7 @@ exports[`Storyshots Molecules | Input / Text Error if empty text 1`] = `
   line-height: 1.7142857142857142;
 }
 
-.c12 {
+.c11 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #FF1900;
   margin: 0;
@@ -1045,7 +1017,7 @@ exports[`Storyshots Molecules | Input / Text Error if empty text 1`] = `
   line-height: 1.6666666666666667;
 }
 
-.c13 {
+.c12 {
   position: absolute;
   height: 1px;
   width: 1px;
@@ -1151,7 +1123,7 @@ exports[`Storyshots Molecules | Input / Text Error if empty text 1`] = `
   white-space: nowrap;
 }
 
-.c11 {
+.c10 {
   line-height: 17px;
   display: inline-block;
 }
@@ -1161,10 +1133,6 @@ exports[`Storyshots Molecules | Input / Text Error if empty text 1`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  width: 100%;
-}
-
-.c10 {
   width: 100%;
 }
 
@@ -1216,26 +1184,14 @@ exports[`Storyshots Molecules | Input / Text Error if empty text 1`] = `
     </div>
   </label>
   <span
-    aria-live="assertive"
-    aria-relevant="additions removals"
-    className="c10"
-    style={
-      Object {
-        "opacity": 0,
-        "transform": "translateY(-10px) translateZ(0)",
-      }
-    }
+    className="c10 c11"
   >
-    <span
-      className="c11 c12"
+    <div
+      className="c12"
     >
-      <div
-        className="c13"
-      >
-        Error: 
-      </div>
-      Something went wrong
-    </span>
+      Error: 
+    </div>
+    Something went wrong
   </span>
 </div>
 `;
@@ -1289,7 +1245,7 @@ exports[`Storyshots Molecules | Input / Text Extra info below 1`] = `
   line-height: 1.7142857142857142;
 }
 
-.c12 {
+.c11 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #6E6E69;
   margin: 0;
@@ -1395,7 +1351,7 @@ exports[`Storyshots Molecules | Input / Text Extra info below 1`] = `
   white-space: nowrap;
 }
 
-.c11 {
+.c10 {
   line-height: 17px;
   display: inline-block;
 }
@@ -1405,10 +1361,6 @@ exports[`Storyshots Molecules | Input / Text Extra info below 1`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  width: 100%;
-}
-
-.c10 {
   width: 100%;
 }
 
@@ -1457,21 +1409,9 @@ exports[`Storyshots Molecules | Input / Text Extra info below 1`] = `
     </div>
   </label>
   <span
-    aria-live="assertive"
-    aria-relevant="additions removals"
-    className="c10"
-    style={
-      Object {
-        "opacity": 0,
-        "transform": "translateY(-10px) translateZ(0)",
-      }
-    }
+    className="c10 c11"
   >
-    <span
-      className="c11 c12"
-    >
-      Use wisely this space
-    </span>
+    Use wisely this space
   </span>
 </div>
 `;
@@ -1525,7 +1465,7 @@ exports[`Storyshots Molecules | Input / Text Extra info with error 1`] = `
   line-height: 1.7142857142857142;
 }
 
-.c12 {
+.c11 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #FF1900;
   margin: 0;
@@ -1534,7 +1474,7 @@ exports[`Storyshots Molecules | Input / Text Extra info with error 1`] = `
   line-height: 1.6666666666666667;
 }
 
-.c13 {
+.c12 {
   position: absolute;
   height: 1px;
   width: 1px;
@@ -1640,7 +1580,7 @@ exports[`Storyshots Molecules | Input / Text Extra info with error 1`] = `
   white-space: nowrap;
 }
 
-.c11 {
+.c10 {
   line-height: 17px;
   display: inline-block;
 }
@@ -1650,10 +1590,6 @@ exports[`Storyshots Molecules | Input / Text Extra info with error 1`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  width: 100%;
-}
-
-.c10 {
   width: 100%;
 }
 
@@ -1705,26 +1641,14 @@ exports[`Storyshots Molecules | Input / Text Extra info with error 1`] = `
     </div>
   </label>
   <span
-    aria-live="assertive"
-    aria-relevant="additions removals"
-    className="c10"
-    style={
-      Object {
-        "opacity": 0,
-        "transform": "translateY(-10px) translateZ(0)",
-      }
-    }
+    className="c10 c11"
   >
-    <span
-      className="c11 c12"
+    <div
+      className="c12"
     >
-      <div
-        className="c13"
-      >
-        Error: 
-      </div>
-      Enter text
-    </span>
+      Error: 
+    </div>
+    Enter text
   </span>
 </div>
 `;
@@ -3087,7 +3011,7 @@ exports[`Storyshots Molecules | Input / Text Simple login form 1`] = `
   flex-basis: 50%;
 }
 
-.c19 {
+.c18 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -3112,7 +3036,7 @@ exports[`Storyshots Molecules | Input / Text Simple login form 1`] = `
   line-height: 1.7142857142857142;
 }
 
-.c21 {
+.c20 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: inherit;
   margin: 0;
@@ -3130,7 +3054,7 @@ exports[`Storyshots Molecules | Input / Text Simple login form 1`] = `
   line-height: 1.7142857142857142;
 }
 
-.c17 {
+.c16 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #FF1900;
   margin: 0;
@@ -3139,7 +3063,7 @@ exports[`Storyshots Molecules | Input / Text Simple login form 1`] = `
   line-height: 1.6666666666666667;
 }
 
-.c15 {
+.c14 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #6E6E69;
   margin: 0;
@@ -3148,7 +3072,7 @@ exports[`Storyshots Molecules | Input / Text Simple login form 1`] = `
   line-height: 1.6666666666666667;
 }
 
-.c18 {
+.c17 {
   position: absolute;
   height: 1px;
   width: 1px;
@@ -3157,7 +3081,7 @@ exports[`Storyshots Molecules | Input / Text Simple login form 1`] = `
   clip: rect(1px,1px,1px,1px);
 }
 
-.c20 {
+.c19 {
   font-family: inherit;
   font-size: 100%;
   line-height: 1.15;
@@ -3188,37 +3112,37 @@ exports[`Storyshots Molecules | Input / Text Simple login form 1`] = `
   cursor: pointer;
 }
 
-.c20,
-.c20[type='button'],
-.c20[type='reset'],
-.c20[type='submit'] {
+.c19,
+.c19[type='button'],
+.c19[type='reset'],
+.c19[type='submit'] {
   -webkit-appearance: button;
 }
 
-.c20::-moz-focus-inner,
-.c20[type='button']::-moz-focus-inner,
-.c20[type='reset']::-moz-focus-inner,
-.c20[type='submit']::-moz-focus-inner {
+.c19::-moz-focus-inner,
+.c19[type='button']::-moz-focus-inner,
+.c19[type='reset']::-moz-focus-inner,
+.c19[type='submit']::-moz-focus-inner {
   border-style: none;
   padding: 0;
 }
 
-.c20:-moz-focusring,
-.c20[type='button']:-moz-focusring,
-.c20[type='reset']:-moz-focusring,
-.c20[type='submit']:-moz-focusring {
+.c19:-moz-focusring,
+.c19[type='button']:-moz-focusring,
+.c19[type='reset']:-moz-focusring,
+.c19[type='submit']:-moz-focusring {
   outline: 1px dotted ButtonText;
 }
 
-.c20:hover {
+.c19:hover {
   background-color: hsl(223.5,100%,45%);
 }
 
-.c20:active {
+.c19:active {
   background-color: hsl(223.5,100%,40%);
 }
 
-.c20::before {
+.c19::before {
   content: '';
   display: block;
   border: 2px solid transparent;
@@ -3319,7 +3243,7 @@ exports[`Storyshots Molecules | Input / Text Simple login form 1`] = `
   color: #6E6E69;
 }
 
-.c16 {
+.c15 {
   position: relative;
   height: 40px;
   box-sizing: border-box;
@@ -3332,31 +3256,31 @@ exports[`Storyshots Molecules | Input / Text Simple login form 1`] = `
   color: inherit;
 }
 
-.c16:focus-within {
+.c15:focus-within {
   border-color: #FF1900;
 }
 
-.c16.focus-within {
+.c15.focus-within {
   border-color: #FF1900;
 }
 
-.c16:hover:not(:focus-within) {
+.c15:hover:not(:focus-within) {
   border-color: #4B4B46;
 }
 
-.c16::-webkit-input-placeholder {
+.c15::-webkit-input-placeholder {
   color: #6E6E69;
 }
 
-.c16::-moz-placeholder {
+.c15::-moz-placeholder {
   color: #6E6E69;
 }
 
-.c16:-ms-input-placeholder {
+.c15:-ms-input-placeholder {
   color: #6E6E69;
 }
 
-.c16::placeholder {
+.c15::placeholder {
   color: #6E6E69;
 }
 
@@ -3367,7 +3291,7 @@ exports[`Storyshots Molecules | Input / Text Simple login form 1`] = `
   white-space: nowrap;
 }
 
-.c14 {
+.c13 {
   line-height: 17px;
   display: inline-block;
 }
@@ -3377,10 +3301,6 @@ exports[`Storyshots Molecules | Input / Text Simple login form 1`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  width: 100%;
-}
-
-.c13 {
   width: 100%;
 }
 
@@ -3439,21 +3359,9 @@ exports[`Storyshots Molecules | Input / Text Simple login form 1`] = `
           </div>
         </label>
         <span
-          aria-live="assertive"
-          aria-relevant="additions removals"
-          className="c13"
-          style={
-            Object {
-              "opacity": 0,
-              "transform": "translateY(-10px) translateZ(0)",
-            }
-          }
+          className="c13 c14"
         >
-          <span
-            className="c14 c15"
-          >
-            Please provide your username (worst UX right here)
-          </span>
+          Please provide your username (worst UX right here)
         </span>
       </div>
     </div>
@@ -3482,7 +3390,7 @@ exports[`Storyshots Molecules | Input / Text Simple login form 1`] = `
                 type="secondary"
               >
                 <div
-                  className="c16 c11"
+                  className="c15 c11"
                   error="Simple error"
                   placeholder="Password"
                 >
@@ -3498,39 +3406,27 @@ exports[`Storyshots Molecules | Input / Text Simple login form 1`] = `
           </div>
         </label>
         <span
-          aria-live="assertive"
-          aria-relevant="additions removals"
-          className="c13"
-          style={
-            Object {
-              "opacity": 0,
-              "transform": "translateY(-10px) translateZ(0)",
-            }
-          }
+          className="c13 c16"
         >
-          <span
-            className="c14 c17"
+          <div
+            className="c17"
           >
-            <div
-              className="c18"
-            >
-              Error: 
-            </div>
-            Simple error
-          </span>
+            Error: 
+          </div>
+          Simple error
         </span>
       </div>
     </div>
   </div>
   <div
-    className="c19"
+    className="c18"
   >
     <button
-      className="c20"
+      className="c19"
       type="button"
     >
       <span
-        className="c21"
+        className="c20"
       >
         Login
       </span>
@@ -3600,7 +3496,7 @@ Array [
   align-items: center;
 }
 
-.c21 {
+.c20 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -3616,7 +3512,7 @@ Array [
   align-items: center;
 }
 
-.c22 {
+.c21 {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -3648,7 +3544,7 @@ Array [
   line-height: 1.7142857142857142;
 }
 
-.c17 {
+.c16 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #FF1900;
   margin: 0;
@@ -3657,7 +3553,7 @@ Array [
   line-height: 1.6666666666666667;
 }
 
-.c18 {
+.c17 {
   position: absolute;
   height: 1px;
   width: 1px;
@@ -3715,7 +3611,7 @@ Array [
   line-height: 15px;
 }
 
-.c19 {
+.c18 {
   margin: 0;
   border: 0;
   display: inline-block;
@@ -3740,32 +3636,32 @@ Array [
   padding-left: 32px;
 }
 
-.c19::-webkit-input-placeholder {
+.c18::-webkit-input-placeholder {
   line-height: 17px;
 }
 
-.c19::-moz-placeholder {
+.c18::-moz-placeholder {
   line-height: 17px;
 }
 
-.c19:-ms-input-placeholder {
+.c18:-ms-input-placeholder {
   line-height: 17px;
 }
 
-.c19::placeholder {
+.c18::placeholder {
   line-height: 17px;
 }
 
-.c19:-ms-input-placeholder {
+.c18:-ms-input-placeholder {
   line-height: 1;
   color: #6E6E69;
 }
 
-.c19::-moz-placeholder {
+.c18::-moz-placeholder {
   line-height: 15px;
 }
 
-.c23 {
+.c22 {
   margin: 0;
   border: 0;
   display: inline-block;
@@ -3790,28 +3686,28 @@ Array [
   padding-right: 40px;
 }
 
-.c23::-webkit-input-placeholder {
+.c22::-webkit-input-placeholder {
   line-height: 17px;
 }
 
-.c23::-moz-placeholder {
+.c22::-moz-placeholder {
   line-height: 17px;
 }
 
-.c23:-ms-input-placeholder {
+.c22:-ms-input-placeholder {
   line-height: 17px;
 }
 
-.c23::placeholder {
+.c22::placeholder {
   line-height: 17px;
 }
 
-.c23:-ms-input-placeholder {
+.c22:-ms-input-placeholder {
   line-height: 1;
   color: #6E6E69;
 }
 
-.c23::-moz-placeholder {
+.c22::-moz-placeholder {
   line-height: 15px;
 }
 
@@ -3904,7 +3800,7 @@ Array [
   white-space: nowrap;
 }
 
-.c20 {
+.c19 {
   width: 32px;
   top: 0;
   height: 100%;
@@ -3914,7 +3810,7 @@ Array [
   left: 0;
 }
 
-.c24 {
+.c23 {
   width: 32px;
   top: 0;
   height: 100%;
@@ -3924,7 +3820,7 @@ Array [
   right: 4px;
 }
 
-.c16 {
+.c15 {
   line-height: 17px;
   display: inline-block;
 }
@@ -3934,10 +3830,6 @@ Array [
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  width: 100%;
-}
-
-.c15 {
   width: 100%;
 }
 
@@ -4164,27 +4056,14 @@ Array [
             </div>
           </label>
           <span
-            aria-live="assertive"
-            aria-relevant="additions removals"
-            className="c15"
-            size="s"
-            style={
-              Object {
-                "opacity": 0,
-                "transform": "translateY(-10px) translateZ(0)",
-              }
-            }
+            className="c15 c16"
           >
-            <span
-              className="c16 c17"
+            <div
+              className="c17"
             >
-              <div
-                className="c18"
-              >
-                Error: 
-              </div>
-              Some error text that will wrap itself over couple of lines
-            </span>
+              Error: 
+            </div>
+            Some error text that will wrap itself over couple of lines
           </span>
         </div>
       </div>
@@ -4224,17 +4103,17 @@ Array [
                     placeholder="Placeholder"
                   >
                     <input
-                      className="c19"
+                      className="c18"
                       placeholder="Placeholder"
                       type="text"
                     />
                     <div
-                      className="c20 c21"
+                      className="c19 c20"
                       position="left"
                     >
                       <svg
                         aria-hidden="true"
-                        className="c22"
+                        className="c21"
                         focusable="false"
                         role="presentation"
                         size={4}
@@ -4288,12 +4167,12 @@ Array [
                     placeholder="Placeholder"
                   >
                     <input
-                      className="c23"
+                      className="c22"
                       placeholder="Placeholder"
                       type="text"
                     />
                     <div
-                      className="c24 c21"
+                      className="c23 c20"
                       position="right"
                     >
                       SEK
