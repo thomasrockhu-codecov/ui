@@ -3,15 +3,15 @@ const Adapter = require('enzyme-adapter-react-16');
 const registerRequireContextHook = require('babel-plugin-require-context-hook/register');
 
 jest.mock('framer-motion', () => {
-  const React = require('react');
-  const Dummy = ({ children }) =>
-    React.createElement(React.Fragment, {}, ...(Array.isArray(children) ? children : [children]));
+  const React = require('react'); // eslint-disable-line global-require
+  const Dummy = (type = React.Fragment) => ({ children }) =>
+    React.createElement(type, {}, ...(Array.isArray(children) ? children : [children]));
 
   return {
     motion: {
-      span: Dummy,
+      span: Dummy('span'),
     },
-    AnimatePresence: Dummy,
+    AnimatePresence: Dummy(),
   };
 });
 

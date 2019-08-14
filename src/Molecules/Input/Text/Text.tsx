@@ -1,4 +1,5 @@
 import React from 'react';
+import R from 'ramda';
 import styled, { css } from 'styled-components';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Props } from './Text.types';
@@ -115,7 +116,8 @@ const outerFlexboxBorderColor = css<Pick<Props, 'error' | 'success'>>`
   ${hoverIfNotDisabled}
 `;
 
-const InputWrapperFlexbox = styled(Flexbox)`
+const CleanFlexbox = (props: any) => <Flexbox {...R.omit(['error', 'disabled'], props)} />;
+const InputWrapperFlexbox = styled(CleanFlexbox)`
   position: relative;
   ${height}
   box-sizing: border-box;
@@ -240,7 +242,7 @@ export const Text: React.FC<Props> & {
               <InputWrapperFlexbox
                 container
                 alignItems="center"
-                {...{ size, placeholder, error, success, disabled }}
+                {...{ size, error, success, disabled }}
               >
                 <UnstyledInput
                   {...{

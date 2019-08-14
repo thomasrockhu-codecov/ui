@@ -190,7 +190,6 @@ Array [
           >
             <div
               className="c7 c8"
-              placeholder="Placeholder"
             >
               <input
                 className="c9"
@@ -399,7 +398,6 @@ exports[`Storyshots Molecules | Input / Text Default 1`] = `
         >
           <div
             className="c7 c8"
-            placeholder="Placeholder"
           >
             <input
               className="c9"
@@ -596,8 +594,6 @@ exports[`Storyshots Molecules | Input / Text Disabled 1`] = `
         >
           <div
             className="c7 c8"
-            disabled={true}
-            placeholder="Placeholder"
           >
             <input
               className="c9"
@@ -884,7 +880,6 @@ exports[`Storyshots Molecules | Input / Text Edge cases 1`] = `
               >
                 <div
                   className="c10 c11"
-                  placeholder="If placeholder goes too long though, it probably should be truncated into ellipsis, right?"
                 >
                   <input
                     className="c12"
@@ -896,10 +891,12 @@ exports[`Storyshots Molecules | Input / Text Edge cases 1`] = `
             </div>
           </div>
         </label>
-        <span
-          className="c13 c14"
-        >
-          This is much neccessary info wow
+        <span>
+          <span
+            className="c13 c14"
+          >
+            This is much neccessary info wow
+          </span>
         </span>
       </div>
     </div>
@@ -936,7 +933,6 @@ exports[`Storyshots Molecules | Input / Text Edge cases 1`] = `
               >
                 <div
                   className="c10 c11"
-                  placeholder=""
                 >
                   <input
                     className="c12"
@@ -948,10 +944,12 @@ exports[`Storyshots Molecules | Input / Text Edge cases 1`] = `
             </div>
           </div>
         </label>
-        <span
-          className="c13 c14"
-        >
-          Big extra fat extraInfo that will wrap over many lines. Be careful with this pattern, use it only with small texts!
+        <span>
+          <span
+            className="c13 c14"
+          >
+            Big extra fat extraInfo that will wrap over many lines. Be careful with this pattern, use it only with small texts!
+          </span>
         </span>
       </div>
     </div>
@@ -1168,8 +1166,6 @@ exports[`Storyshots Molecules | Input / Text Error if empty text 1`] = `
         >
           <div
             className="c7 c8"
-            error="Something went wrong"
-            placeholder="This is a placeholder"
           >
             <input
               aria-invalid={true}
@@ -1183,15 +1179,17 @@ exports[`Storyshots Molecules | Input / Text Error if empty text 1`] = `
       </div>
     </div>
   </label>
-  <span
-    className="c10 c11"
-  >
-    <div
-      className="c12"
+  <span>
+    <span
+      className="c10 c11"
     >
-      Error: 
-    </div>
-    Something went wrong
+      <div
+        className="c12"
+      >
+        Error: 
+      </div>
+      Something went wrong
+    </span>
   </span>
 </div>
 `;
@@ -1396,7 +1394,6 @@ exports[`Storyshots Molecules | Input / Text Extra info below 1`] = `
         >
           <div
             className="c7 c8"
-            placeholder="Placeholder"
           >
             <input
               className="c9"
@@ -1408,10 +1405,12 @@ exports[`Storyshots Molecules | Input / Text Extra info below 1`] = `
       </div>
     </div>
   </label>
-  <span
-    className="c10 c11"
-  >
-    Use wisely this space
+  <span>
+    <span
+      className="c10 c11"
+    >
+      Use wisely this space
+    </span>
   </span>
 </div>
 `;
@@ -1625,8 +1624,6 @@ exports[`Storyshots Molecules | Input / Text Extra info with error 1`] = `
         >
           <div
             className="c7 c8"
-            error="Enter text"
-            placeholder="This is a placeholder"
           >
             <input
               aria-invalid={true}
@@ -1640,15 +1637,17 @@ exports[`Storyshots Molecules | Input / Text Extra info with error 1`] = `
       </div>
     </div>
   </label>
-  <span
-    className="c10 c11"
-  >
-    <div
-      className="c12"
+  <span>
+    <span
+      className="c10 c11"
     >
-      Error: 
-    </div>
-    Enter text
+      <div
+        className="c12"
+      >
+        Error: 
+      </div>
+      Enter text
+    </span>
   </span>
 </div>
 `;
@@ -2091,7 +2090,6 @@ Array [
                 >
                   <div
                     className="c10 c11"
-                    placeholder="Placeholder"
                   >
                     <input
                       className="c12"
@@ -2139,7 +2137,6 @@ Array [
                 >
                   <div
                     className="c10 c11"
-                    placeholder="Placeholder"
                   >
                     <input
                       className="c13"
@@ -2204,7 +2201,6 @@ Array [
                 >
                   <div
                     className="c10 c11"
-                    placeholder="Placeholder"
                   >
                     <input
                       className="c17"
@@ -2431,7 +2427,6 @@ exports[`Storyshots Molecules | Input / Text Hidden label 1`] = `
         >
           <div
             className="c7 c8"
-            placeholder="Placeholder"
           >
             <input
               className="c9"
@@ -2673,7 +2668,6 @@ exports[`Storyshots Molecules | Input / Text Left addon 1`] = `
         >
           <div
             className="c7 c8"
-            placeholder="Placeholder"
           >
             <input
               className="c9"
@@ -2918,7 +2912,6 @@ exports[`Storyshots Molecules | Input / Text Right addon 1`] = `
         >
           <div
             className="c7 c8"
-            placeholder="Placeholder"
           >
             <input
               className="c9"
@@ -3346,7 +3339,6 @@ exports[`Storyshots Molecules | Input / Text Simple login form 1`] = `
               >
                 <div
                   className="c10 c11"
-                  placeholder="Username"
                 >
                   <input
                     className="c12"
@@ -3358,10 +3350,12 @@ exports[`Storyshots Molecules | Input / Text Simple login form 1`] = `
             </div>
           </div>
         </label>
-        <span
-          className="c13 c14"
-        >
-          Please provide your username (worst UX right here)
+        <span>
+          <span
+            className="c13 c14"
+          >
+            Please provide your username (worst UX right here)
+          </span>
         </span>
       </div>
     </div>
@@ -3391,8 +3385,6 @@ exports[`Storyshots Molecules | Input / Text Simple login form 1`] = `
               >
                 <div
                   className="c15 c11"
-                  error="Simple error"
-                  placeholder="Password"
                 >
                   <input
                     aria-invalid={true}
@@ -3405,15 +3397,17 @@ exports[`Storyshots Molecules | Input / Text Simple login form 1`] = `
             </div>
           </div>
         </label>
-        <span
-          className="c13 c16"
-        >
-          <div
-            className="c17"
+        <span>
+          <span
+            className="c13 c16"
           >
-            Error: 
-          </div>
-          Simple error
+            <div
+              className="c17"
+            >
+              Error: 
+            </div>
+            Simple error
+          </span>
         </span>
       </div>
     </div>
@@ -3946,7 +3940,6 @@ Array [
                 >
                   <div
                     className="c10 c11"
-                    placeholder="Placeholder"
                   >
                     <input
                       className="c12"
@@ -3994,7 +3987,6 @@ Array [
                 >
                   <div
                     className="c10 c11"
-                    placeholder="Placeholder"
                   >
                     <input
                       className="c12"
@@ -4041,8 +4033,6 @@ Array [
                 >
                   <div
                     className="c14 c11"
-                    error="Some error text that will wrap itself over couple of lines"
-                    placeholder="Placeholder"
                   >
                     <input
                       aria-invalid={true}
@@ -4055,15 +4045,17 @@ Array [
               </div>
             </div>
           </label>
-          <span
-            className="c15 c16"
-          >
-            <div
-              className="c17"
+          <span>
+            <span
+              className="c15 c16"
             >
-              Error: 
-            </div>
-            Some error text that will wrap itself over couple of lines
+              <div
+                className="c17"
+              >
+                Error: 
+              </div>
+              Some error text that will wrap itself over couple of lines
+            </span>
           </span>
         </div>
       </div>
@@ -4100,7 +4092,6 @@ Array [
                 >
                   <div
                     className="c10 c11"
-                    placeholder="Placeholder"
                   >
                     <input
                       className="c18"
@@ -4164,7 +4155,6 @@ Array [
                 >
                   <div
                     className="c10 c11"
-                    placeholder="Placeholder"
                   >
                     <input
                       className="c22"
@@ -4382,7 +4372,6 @@ exports[`Storyshots Molecules | Input / Text Success 1`] = `
         >
           <div
             className="c7 c8"
-            placeholder="Placeholder"
             success={true}
           >
             <input
@@ -4584,7 +4573,6 @@ exports[`Storyshots Molecules | Input / Text With default value (Uncontrolled be
         >
           <div
             className="c7 c8"
-            placeholder="Placeholder"
           >
             <input
               className="c9"
@@ -4786,7 +4774,6 @@ exports[`Storyshots Molecules | Input / Text With value (Controlled behaviour) 1
         >
           <div
             className="c7 c8"
-            placeholder="Placeholder"
           >
             <input
               className="c9"

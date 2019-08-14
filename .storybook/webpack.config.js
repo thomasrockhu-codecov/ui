@@ -3,7 +3,6 @@ const path = require('path');
 module.exports = ({ config, mode }) => {
   config.entry.unshift(require.resolve('core-js/es/weak-set'));
   config.entry.unshift(require.resolve('focus-within-polyfill'));
-  console.dir(config.entry);
   config.module.rules.push({
     test: /\.stories\.tsx?$/,
     loaders: [require.resolve('@storybook/addon-storysource/loader')],
