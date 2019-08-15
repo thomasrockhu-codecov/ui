@@ -1,3 +1,10 @@
+## [1.29.1](https://github.com/nordnet/ui/compare/v1.29.0...v1.29.1) (2019-08-15)
+
+
+### Bug Fixes
+
+* modal backdrop zindex ([cb6179e](https://github.com/nordnet/ui/commit/cb6179e))
+
 # [1.29.0](https://github.com/nordnet/ui/compare/v1.28.0...v1.29.0) (2019-08-15)
 
 
