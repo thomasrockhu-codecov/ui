@@ -1,3 +1,18 @@
+# [1.29.0](https://github.com/nordnet/ui/compare/v1.28.0...v1.29.0) (2019-08-15)
+
+
+### Bug Fixes
+
+* clean modal story ([497b75f](https://github.com/nordnet/ui/commit/497b75f))
+* cleanup ([657cb7c](https://github.com/nordnet/ui/commit/657cb7c))
+* simplify further ([c1f5126](https://github.com/nordnet/ui/commit/c1f5126))
+
+
+### Features
+
+* add attachto prop ([8213e4e](https://github.com/nordnet/ui/commit/8213e4e))
+* create portal atom ([61b1c0f](https://github.com/nordnet/ui/commit/61b1c0f))
+
 # [1.28.0](https://github.com/nordnet/ui/compare/v1.27.0...v1.28.0) (2019-08-13)
 
 
