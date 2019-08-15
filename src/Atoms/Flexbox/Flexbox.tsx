@@ -100,7 +100,9 @@ const sanitizeProps = R.omit([
   'order',
   'justifyContent',
 ]);
-const SanitizedDiv = (props: Props) => <div {...sanitizeProps(props)} />;
+const SanitizedDiv = React.forwardRef((props: Props, ref: React.Ref<HTMLDivElement>) => (
+  <div {...sanitizeProps(props)} ref={ref} />
+));
 
 const getStylesForSize = (size: string) => css<Partial<Props>>`
   ${p => p.theme.media.greaterThan(p.theme.breakpoints[size])} {
@@ -118,6 +120,7 @@ const StyledFlexbox = styled(SanitizedDiv)<Props>`
   ${p => (p.lg ? getStylesForSize('lg') : '')}
 `;
 
-export const Flexbox: React.FC<Props> = props => <StyledFlexbox {...props} />;
-
+export const Flexbox = React.forwardRef<HTMLDivElement, Props>((props, ref) => (
+  <StyledFlexbox {...props} ref={ref} />
+));
 Flexbox.displayName = 'Flexbox';

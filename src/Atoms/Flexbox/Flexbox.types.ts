@@ -69,4 +69,5 @@ type MediaRelatedProps<T> = {
   lg?: Partial<T>;
 };
 
-export type Props = MediaRelatedProps<InternalProps> & InternalProps;
+export type Props = MediaRelatedProps<InternalProps> &
+  InternalProps & { children?: React.ReactNode };

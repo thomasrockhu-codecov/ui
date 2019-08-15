@@ -40,6 +40,15 @@ storiesOf('Molecules | Input / Text', module)
   })
   .add('Success', () => <Input.Text label="Label" placeholder="Placeholder" success />)
   .add('Disabled', () => <Input.Text label="Label" placeholder="Placeholder" disabled />)
+  .add('Disabled +addon', () => (
+    <Input.Text
+      label="Label"
+      placeholder="Placeholder"
+      disabled
+      leftAddon={<Icon.Bolt size={4} />}
+      rightAddon="SEK"
+    />
+  ))
   .add('Actions', () => (
     <>
       <p>
@@ -127,6 +136,14 @@ storiesOf('Molecules | Input / Text', module)
     <Input.Text label="Label" placeholder="Placeholder" leftAddon={<Icon.Bolt size={4} />} />
   ))
   .add('Right addon', () => <Input.Text label="Label" placeholder="Placeholder" rightAddon="SEK" />)
+  .add('Both addons', () => (
+    <Input.Text
+      label="Label"
+      placeholder="Placeholder"
+      leftAddon={<Icon.Bolt size={4} />}
+      rightAddon="SEK"
+    />
+  ))
   .add('Hidden label', () => <Input.Text label="Label" placeholder="Placeholder" hideLabel />)
 
   .add('Simple login form', () => (
