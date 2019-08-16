@@ -1,3 +1,10 @@
+## [1.29.2](https://github.com/nordnet/ui/compare/v1.29.1...v1.29.2) (2019-08-16)
+
+
+### Bug Fixes
+
+* modal z index ([b217565](https://github.com/nordnet/ui/commit/b217565))
+
 ## [1.29.1](https://github.com/nordnet/ui/compare/v1.29.0...v1.29.1) (2019-08-15)
 
 
