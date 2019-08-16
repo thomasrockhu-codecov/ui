@@ -1,3 +1,10 @@
+## [1.29.3](https://github.com/nordnet/ui/compare/v1.29.2...v1.29.3) (2019-08-16)
+
+
+### Bug Fixes
+
+* update line heights ([af32ad3](https://github.com/nordnet/ui/commit/af32ad3))
+
 ## [1.29.2](https://github.com/nordnet/ui/compare/v1.29.1...v1.29.2) (2019-08-16)
 
 
