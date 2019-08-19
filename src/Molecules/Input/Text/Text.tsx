@@ -16,6 +16,7 @@ const placeholderNormalizaion = css<{ sizeProp: Props['size'] }>`
     /* fixes safari placeholder vertical positioning */
     /* change if typography changes */
     line-height: 17px;
+    color: ${p => p.theme.color.label};
   }
 
   :-ms-input-placeholder {
@@ -28,11 +29,6 @@ const placeholderNormalizaion = css<{ sizeProp: Props['size'] }>`
     /* fixes firefox placeholder vertical positioning */
     /* change if typography changes */
     line-height: ${p => (p.sizeProp === 's' ? '15' : '22')}px;
-  }
-
-  &::placeholder {
-    /* Need to do color manually */
-    color: ${p => p.theme.color.label};
   }
 `;
 
