@@ -107,6 +107,7 @@ export const createTheme = (config: ThemeConfig = {}): Theme => {
     },
     breakpoints,
     color: {
+      backgroundInput: rawColor.white,
       background: rawColor.gray7,
       backgroundDark: rawColor.gray0,
       buttonSecondaryBackground: rawColor.white,
@@ -133,6 +134,10 @@ export const createTheme = (config: ThemeConfig = {}): Theme => {
         .rgb()
         .string(),
       shadowModal: Color(rawColor.black)
+        .alpha(0.05)
+        .rgb()
+        .string(),
+      shadowInput: Color(rawColor.black)
         .alpha(0.03)
         .rgb()
         .string(),
@@ -150,6 +155,8 @@ export const createTheme = (config: ThemeConfig = {}): Theme => {
       inputBorder: rawColor.gray4,
       inputBorderHover: rawColor.gray1,
       flagBorder: rawColor.gray6,
+      inputBorderError: rawColor.negative,
+      inputBorderSuccess: rawColor.positive,
     },
     media: {
       between: (s1, s2) => {
