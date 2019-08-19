@@ -3,6 +3,7 @@ import styled, { css } from 'styled-components';
 import { Props } from './Text.types';
 import { Flexbox } from '../../..';
 import { FormField } from '../FormField';
+import NormalizedElements from '../../../common/NormalizedElements';
 
 const hasError = (error?: Props['error']) => error && error !== '';
 
@@ -32,18 +33,10 @@ const placeholderNormalizaion = css<{ sizeProp: Props['size'] }>`
   }
 `;
 
-const UnstyledInput = styled.input.attrs({ type: 'text' })<
+const UnstyledInput = styled(NormalizedElements.Input).attrs({ type: 'text' })<
   Partial<Props> & { sizeProp: Props['size'] }
 >`
-  /* Resetting base rules */
-  margin: 0;
   border: 0;
-  display: inline-block;
-  vertical-align: middle;
-  white-space: normal;
-  background: none;
-  line-height: 1;
-
   box-sizing: border-box;
   font-family: inherit;
   font-weight: inherit;
@@ -56,7 +49,7 @@ const UnstyledInput = styled.input.attrs({ type: 'text' })<
   right: 0;
   bottom: 0;
   outline: 0;
-  height: 101%;
+  height: 100%;
 
   ${placeholderNormalizaion}
   ${inputBackgroundColor}
@@ -79,13 +72,8 @@ const AddonBox = styled(Flexbox)<{ position?: 'left' | 'right' }>`
 `;
 
 const components = {
-  // InlineFlexbox,
-  // HidableTypography,
-  // FormFieldFlexbox,
-  // UnstyledInput,
-  // DensedTypography,
-  // AddonBox,
-  // BottomWrapper,
+  UnstyledInput,
+  AddonBox,
 };
 
 export const Text: React.FC<Props> & {
@@ -118,6 +106,7 @@ export const Text: React.FC<Props> & {
     onKeyDown,
     onKeyUp,
     onKeyPress,
+    name,
   } = props;
   /* eslint-disable jsx-a11y/label-has-associated-control,jsx-a11y/label-has-for */
   return (
@@ -140,6 +129,7 @@ export const Text: React.FC<Props> & {
           onKeyDown,
           onKeyUp,
           onKeyPress,
+          name,
         }}
         {...(hasError(error) ? { 'aria-invalid': true } : {})}
       />
