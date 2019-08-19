@@ -1,3 +1,11 @@
+# [1.30.0](https://github.com/nordnet/ui/compare/v1.29.3...v1.30.0) (2019-08-19)
+
+
+### Features
+
+* added color function prop ([9c5fa63](https://github.com/nordnet/ui/commit/9c5fa63))
+* implemented color logic ([d162211](https://github.com/nordnet/ui/commit/d162211))
+
 ## [1.29.3](https://github.com/nordnet/ui/compare/v1.29.2...v1.29.3) (2019-08-16)
 
 
