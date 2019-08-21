@@ -23,19 +23,19 @@ storiesOf('Molecules | Link', module)
       </Typography>
     </BrowserRouter>
   ))
-  .add('Link with _blank target', () => (
+  .add('External link with _blank target', () => (
     <BrowserRouter>
       <Typography type="secondary" weight="bold">
-        <Link to="www.google.com" target="_blank" onClick={action('clicked')}>
+        <Link to="http://www.google.com" target="_blank" onClick={action('clicked')} external>
           Link
         </Link>
       </Typography>
     </BrowserRouter>
   ))
-  .add('Link with rel as nofollow', () => (
+  .add('External link with rel as nofollow', () => (
     <BrowserRouter>
       <Typography type="secondary" weight="bold">
-        <Link to="www.google.com" rel="nofollow" onClick={action('clicked')}>
+        <Link to="http://ww.google.com" rel="nofollow" onClick={action('clicked')} external>
           Link
         </Link>
       </Typography>

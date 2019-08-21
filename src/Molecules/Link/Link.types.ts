@@ -9,6 +9,7 @@ export type LinkProps = {
   /** @default _self */
   target?: '_blank';
   to?: ReactRouterDomLinkProps['to'];
+  external?: boolean;
   rel?: string;
   disabled?: boolean;
 };
