@@ -1,3 +1,16 @@
+# [1.32.0](https://github.com/nordnet/ui/compare/v1.31.0...v1.32.0) (2019-08-23)
+
+
+### Bug Fixes
+
+* 💂‍snapshot ([d56896f](https://github.com/nordnet/ui/commit/d56896f))
+
+
+### Features
+
+* 🎸 add search and file icons ([a268276](https://github.com/nordnet/ui/commit/a268276))
+* make link suppor external urls ([0b6a7f2](https://github.com/nordnet/ui/commit/0b6a7f2))
+
 # [1.31.0](https://github.com/nordnet/ui/compare/v1.30.0...v1.31.0) (2019-08-19)
 
 
