@@ -55,6 +55,8 @@ type NumberOrObjectWithNumber = number | { size: number };
 export type Theme = {
   /** Semantic names for the colors */
   color: {
+    /** white */
+    backgroundInput: RawColor['white'];
     /** gray7 */
     background: RawColor['gray7'];
     /** gray0 */
@@ -93,8 +95,18 @@ export type Theme = {
     disabledBackground: RawColor['gray6'];
     /** white */
     buttonSecondaryBackground: RawColor['white'];
+    /** 63 percent of gray2 */
+    modalBackdrop: string;
     /** white */
     module: RawColor['white'];
+    /** 3 percent of black */
+    shadowCard: string;
+    /** 3 percent of black */
+    shadowModal: string;
+    /** 5 percent of black */
+    shadowInput: string;
+    /** 5 percent of black */
+    shadowSwitch: string;
     /** black */
     spinnerBlack: RawColor['black'];
     /** white */
@@ -107,6 +119,10 @@ export type Theme = {
     inputBorder: RawColor['gray4'];
     /** gray1 */
     inputBorderHover: RawColor['gray1'];
+    /** negative */
+    inputBorderError: RawColor['negative'];
+    /** positive */
+    inputBorderSuccess: RawColor['positive'];
     /** gray6 */
     flagBorder: RawColor['gray6'];
   };
@@ -131,7 +147,7 @@ export type Theme = {
     md: Record<'offset' | 'size', number>;
     /** Desktop size: 1440; offset: 24; */
     lg: Record<'offset' | 'size', number>;
-    /** Desktop big size: 1680; offset: 10 */
+    /** Desktop big size: 1680; offset: 15 */
     xl: Record<'offset' | 'size', number>;
   };
 

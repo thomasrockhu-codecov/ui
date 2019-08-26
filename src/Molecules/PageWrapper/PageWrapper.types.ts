@@ -6,8 +6,10 @@ type ColorFn = (c: Theme) => Values<Theme['color']>;
 export type Props = {
   children: React.ReactNode;
   background?: ColorFn;
+  className?: string;
 };
 
 export type OuterProps = {
   background?: string;
+  className?: string;
 };

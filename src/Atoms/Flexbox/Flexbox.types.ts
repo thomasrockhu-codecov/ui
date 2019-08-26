@@ -1,3 +1,5 @@
+import { AlignSelfProperty } from 'csstype';
+
 export type ContainerProps = {
   container?: boolean;
   height?: number;
@@ -13,6 +15,7 @@ export type ContainerProps = {
     | 'space-between'
     | 'space-around'
     | 'space-evenly';
+  /** TODO: alignItems values feels wrong */
   alignItems?:
     | 'normal'
     | 'stretch'
@@ -22,7 +25,9 @@ export type ContainerProps = {
     | 'flex-start'
     | 'flex-end'
     | 'self-start'
-    | 'self-end';
+    | 'self-end'
+    | 'baseline';
+  /** TODO: alignContent values feels wrong */
   alignContent?:
     | 'center'
     | 'start'
@@ -50,6 +55,7 @@ export type ItemProps = {
   basis?: string;
   flex?: string;
   align?: 'auto' | 'flex-start' | 'flex-end' | 'center' | 'baseline' | 'stretch';
+  alignSelf?: AlignSelfProperty;
   size?: number | string;
   as?: keyof JSX.IntrinsicElements | React.ComponentType<any>;
   /** a11y */
@@ -63,4 +69,5 @@ type MediaRelatedProps<T> = {
   lg?: Partial<T>;
 };
 
-export type Props = MediaRelatedProps<InternalProps> & InternalProps;
+export type Props = MediaRelatedProps<InternalProps> &
+  InternalProps & { children?: React.ReactNode };

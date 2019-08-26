@@ -49,11 +49,17 @@ exports[`Storyshots Molecules | PageHeader Page header with children 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  margin-left: -4px;
+  margin-right: -4px;
+}
+
+.c10 > * {
+  padding-left: 4px;
+  padding-right: 4px;
 }
 
 .c10 > *:not(:first-child) {
-  margin-top: 0;
-  margin-left: 8px;
+  padding-top: 0;
 }
 
 .c7 {
@@ -77,7 +83,7 @@ exports[`Storyshots Molecules | PageHeader Page header with children 1`] = `
   margin: 0;
   font-weight: 400;
   font-size: 14px;
-  line-height: 1.7142857142857142;
+  line-height: 1.4285714285714286;
 }
 
 .c11 {
@@ -90,9 +96,9 @@ exports[`Storyshots Molecules | PageHeader Page header with children 1`] = `
   background-color: #0046FF;
   padding: 4px 12px;
   min-height: 32px;
+  color: #FFFFFF;
   position: relative;
   box-sizing: border-box;
-  color: #FFFFFF;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -236,7 +242,7 @@ exports[`Storyshots Molecules | PageHeader Page header with children 1`] = `
 @media (min-width:1680px) {
   .c1 {
     max-width: 1680px;
-    padding: 0 40px;
+    padding: 0 60px;
   }
 }
 
@@ -251,13 +257,6 @@ exports[`Storyshots Molecules | PageHeader Page header with children 1`] = `
     >
       <div
         className="c2"
-        sm={
-          Object {
-            "alignItems": "center",
-            "direction": "row",
-            "justifyContent": "space-between",
-          }
-        }
       >
         <div
           className="c3"
@@ -424,7 +423,7 @@ exports[`Storyshots Molecules | PageHeader Regular page header 1`] = `
 @media (min-width:1680px) {
   .c1 {
     max-width: 1680px;
-    padding: 0 40px;
+    padding: 0 60px;
   }
 }
 
@@ -439,13 +438,6 @@ exports[`Storyshots Molecules | PageHeader Regular page header 1`] = `
     >
       <div
         className="c2"
-        sm={
-          Object {
-            "alignItems": "center",
-            "direction": "row",
-            "justifyContent": "space-between",
-          }
-        }
       >
         <div
           className="c3"

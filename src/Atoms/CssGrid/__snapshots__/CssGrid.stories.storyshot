@@ -1,10 +1,338 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`Storyshots Atoms | CssGrid Conditionally hidden: WRONG way [hidden] 1`] = `
+.c0 {
+  display: grid;
+  box-sizing: border-box;
+  grid-template-areas: "left top top" "left content content";
+  grid-template-rows: auto auto;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 20px;
+  display: -ms-grid;
+  -ms-grid-rows: auto 20px auto;
+  -ms-grid-columns: 1fr 20px 1fr 20px 1fr;
+}
+
+.c1 {
+  box-sizing: border-box;
+  min-width: 0;
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  -ms-grid-row-span: 3;
+  display: block;
+  grid-area: left;
+}
+
+.c3 {
+  box-sizing: border-box;
+  min-width: 0;
+  -ms-grid-row: 3;
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 3;
+  -ms-grid-row-span: 1;
+  display: block;
+  grid-area: content;
+}
+
+.c2 {
+  box-sizing: border-box;
+  border: 1px solid black;
+  background-color: #eee;
+  height: 100%;
+}
+
+<div
+  className="c0"
+>
+  <div
+    className="c1"
+  >
+    <div
+      className="c2"
+    >
+      Left
+    </div>
+  </div>
+  <div
+    className="c3"
+  >
+    <div
+      className="c2"
+    >
+      Content
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Atoms | CssGrid Conditionally hidden: WRONG way [shown] 1`] = `
+.c0 {
+  display: grid;
+  box-sizing: border-box;
+  grid-template-areas: "left top top" "left content content";
+  grid-template-rows: auto auto;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 20px;
+  display: -ms-grid;
+  -ms-grid-rows: auto 20px auto;
+  -ms-grid-columns: 1fr 20px 1fr 20px 1fr;
+}
+
+.c1 {
+  box-sizing: border-box;
+  min-width: 0;
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  -ms-grid-row-span: 3;
+  display: block;
+  grid-area: left;
+}
+
+.c3 {
+  box-sizing: border-box;
+  min-width: 0;
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 3;
+  -ms-grid-row-span: 1;
+  display: block;
+  grid-area: top;
+}
+
+.c4 {
+  box-sizing: border-box;
+  min-width: 0;
+  -ms-grid-row: 3;
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 3;
+  -ms-grid-row-span: 1;
+  display: block;
+  grid-area: content;
+}
+
+.c2 {
+  box-sizing: border-box;
+  border: 1px solid black;
+  background-color: #eee;
+  height: 100%;
+}
+
+<div
+  className="c0"
+>
+  <div
+    className="c1"
+  >
+    <div
+      className="c2"
+    >
+      Left
+    </div>
+  </div>
+  <div
+    className="c3"
+  >
+    <div
+      className="c2"
+    >
+      <div>
+        This item is mounted and stays mounted no matter what. However, it‘d be hidden with css
+      </div>
+    </div>
+  </div>
+  <div
+    className="c4"
+  >
+    <div
+      className="c2"
+    >
+      Content
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Atoms | CssGrid Conditionally hidden: good way [hidden] 1`] = `
+.c0 {
+  display: grid;
+  box-sizing: border-box;
+  grid-template-areas: "left top top" "left content content";
+  grid-template-rows: auto auto;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 20px;
+  display: -ms-grid;
+  -ms-grid-rows: auto 20px auto;
+  -ms-grid-columns: 1fr 20px 1fr 20px 1fr;
+}
+
+.c1 {
+  box-sizing: border-box;
+  min-width: 0;
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  -ms-grid-row-span: 3;
+  display: block;
+  grid-area: left;
+}
+
+.c3 {
+  box-sizing: border-box;
+  min-width: 0;
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 3;
+  -ms-grid-row-span: 1;
+  display: block;
+  grid-area: top;
+}
+
+.c4 {
+  box-sizing: border-box;
+  min-width: 0;
+  -ms-grid-row: 3;
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 3;
+  -ms-grid-row-span: 1;
+  display: block;
+  grid-area: content;
+}
+
+.c2 {
+  box-sizing: border-box;
+  border: 1px solid black;
+  background-color: #eee;
+  height: 100%;
+}
+
+<div
+  className="c0"
+>
+  <div
+    className="c1"
+  >
+    <div
+      className="c2"
+    >
+      Left
+    </div>
+  </div>
+  <div
+    className="c3"
+  >
+    <div
+      className="c2"
+    >
+      <div>
+        This item is mounted and stays mounted no matter what. However, it‘d be hidden with css
+      </div>
+    </div>
+  </div>
+  <div
+    className="c4"
+  >
+    <div
+      className="c2"
+    >
+      Content
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Atoms | CssGrid Conditionally hidden: good way [shown] 1`] = `
+.c0 {
+  display: grid;
+  box-sizing: border-box;
+  grid-template-areas: "left content content";
+  grid-template-rows: auto;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 20px;
+  display: -ms-grid;
+  -ms-grid-rows: auto;
+  -ms-grid-columns: 1fr 20px 1fr 20px 1fr;
+}
+
+.c1 {
+  box-sizing: border-box;
+  min-width: 0;
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  -ms-grid-row-span: 1;
+  display: block;
+  grid-area: left;
+}
+
+.c3 {
+  box-sizing: border-box;
+  min-width: 0;
+  display: none;
+  grid-area: none;
+}
+
+.c4 {
+  box-sizing: border-box;
+  min-width: 0;
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 3;
+  -ms-grid-row-span: 1;
+  display: block;
+  grid-area: content;
+}
+
+.c2 {
+  box-sizing: border-box;
+  border: 1px solid black;
+  background-color: #eee;
+  height: 100%;
+}
+
+<div
+  className="c0"
+>
+  <div
+    className="c1"
+  >
+    <div
+      className="c2"
+    >
+      Left
+    </div>
+  </div>
+  <div
+    className="c3"
+  >
+    <div
+      className="c2"
+    >
+      <div>
+        This item is mounted and stays mounted no matter what. However, it‘d be hidden with css
+      </div>
+    </div>
+  </div>
+  <div
+    className="c4"
+  >
+    <div
+      className="c2"
+    >
+      Content
+    </div>
+  </div>
+</div>
+`;
+
 exports[`Storyshots Atoms | CssGrid CssGrid with custom gutter 1`] = `
 .c0 {
   display: grid;
   box-sizing: border-box;
   grid-template-areas: "left top sidebar" "left content sidebar" "left content sidebar";
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 0px;
   display: -ms-grid;
   -ms-grid-rows: 1fr 0px 1fr 0px 1fr;
@@ -14,41 +342,45 @@ exports[`Storyshots Atoms | CssGrid CssGrid with custom gutter 1`] = `
 .c1 {
   box-sizing: border-box;
   min-width: 0;
-  grid-area: left;
   -ms-grid-row: 1;
   -ms-grid-column: 1;
   -ms-grid-column-span: 1;
   -ms-grid-row-span: 5;
+  display: block;
+  grid-area: left;
 }
 
 .c3 {
   box-sizing: border-box;
   min-width: 0;
-  grid-area: top;
   -ms-grid-row: 1;
   -ms-grid-column: 3;
   -ms-grid-column-span: 1;
   -ms-grid-row-span: 1;
+  display: block;
+  grid-area: top;
 }
 
 .c4 {
   box-sizing: border-box;
   min-width: 0;
-  grid-area: content;
   -ms-grid-row: 3;
   -ms-grid-column: 3;
   -ms-grid-column-span: 1;
   -ms-grid-row-span: 3;
+  display: block;
+  grid-area: content;
 }
 
 .c5 {
   box-sizing: border-box;
   min-width: 0;
-  grid-area: sidebar;
   -ms-grid-row: 1;
   -ms-grid-column: 5;
   -ms-grid-column-span: 1;
   -ms-grid-row-span: 5;
+  display: block;
+  grid-area: sidebar;
 }
 
 .c2 {
@@ -105,6 +437,7 @@ exports[`Storyshots Atoms | CssGrid CssGrid with custom templateColumns 1`] = `
   display: grid;
   box-sizing: border-box;
   grid-template-areas: "left top sidebar" "left content sidebar" "left content sidebar";
+  grid-template-rows: 1fr 1fr 1fr;
   grid-template-columns: 25fr 50fr 25fr;
   grid-gap: 20px;
   display: -ms-grid;
@@ -115,41 +448,45 @@ exports[`Storyshots Atoms | CssGrid CssGrid with custom templateColumns 1`] = `
 .c1 {
   box-sizing: border-box;
   min-width: 0;
-  grid-area: left;
   -ms-grid-row: 1;
   -ms-grid-column: 1;
   -ms-grid-column-span: 1;
   -ms-grid-row-span: 5;
+  display: block;
+  grid-area: left;
 }
 
 .c3 {
   box-sizing: border-box;
   min-width: 0;
-  grid-area: top;
   -ms-grid-row: 1;
   -ms-grid-column: 3;
   -ms-grid-column-span: 1;
   -ms-grid-row-span: 1;
+  display: block;
+  grid-area: top;
 }
 
 .c4 {
   box-sizing: border-box;
   min-width: 0;
-  grid-area: content;
   -ms-grid-row: 3;
   -ms-grid-column: 3;
   -ms-grid-column-span: 1;
   -ms-grid-row-span: 3;
+  display: block;
+  grid-area: content;
 }
 
 .c5 {
   box-sizing: border-box;
   min-width: 0;
-  grid-area: sidebar;
   -ms-grid-row: 1;
   -ms-grid-column: 5;
   -ms-grid-column-span: 1;
   -ms-grid-row-span: 5;
+  display: block;
+  grid-area: sidebar;
 }
 
 .c2 {
@@ -206,6 +543,7 @@ exports[`Storyshots Atoms | CssGrid CssGrid with different layouts for different
   display: grid;
   box-sizing: border-box;
   grid-template-areas: "top top" "left sidebar" "content sidebar";
+  grid-template-rows: 1fr 1fr 1fr;
   grid-template-columns: 50fr 50fr;
   grid-gap: 20px;
   display: -ms-grid;
@@ -216,41 +554,45 @@ exports[`Storyshots Atoms | CssGrid CssGrid with different layouts for different
 .c1 {
   box-sizing: border-box;
   min-width: 0;
-  grid-area: left;
   -ms-grid-row: 3;
   -ms-grid-column: 1;
   -ms-grid-column-span: 1;
   -ms-grid-row-span: 1;
+  display: block;
+  grid-area: left;
 }
 
 .c3 {
   box-sizing: border-box;
   min-width: 0;
-  grid-area: top;
   -ms-grid-row: 1;
   -ms-grid-column: 1;
   -ms-grid-column-span: 3;
   -ms-grid-row-span: 1;
+  display: block;
+  grid-area: top;
 }
 
 .c4 {
   box-sizing: border-box;
   min-width: 0;
-  grid-area: content;
   -ms-grid-row: 5;
   -ms-grid-column: 1;
   -ms-grid-column-span: 1;
   -ms-grid-row-span: 1;
+  display: block;
+  grid-area: content;
 }
 
 .c5 {
   box-sizing: border-box;
   min-width: 0;
-  grid-area: sidebar;
   -ms-grid-row: 3;
   -ms-grid-column: 3;
   -ms-grid-column-span: 1;
   -ms-grid-row-span: 3;
+  display: block;
+  grid-area: sidebar;
 }
 
 .c2 {
@@ -278,6 +620,8 @@ exports[`Storyshots Atoms | CssGrid CssGrid with different layouts for different
     -ms-grid-column: 1;
     -ms-grid-column-span: 1;
     -ms-grid-row-span: 5;
+    display: block;
+    grid-area: left;
   }
 }
 
@@ -287,6 +631,8 @@ exports[`Storyshots Atoms | CssGrid CssGrid with different layouts for different
     -ms-grid-column: 3;
     -ms-grid-column-span: 1;
     -ms-grid-row-span: 1;
+    display: block;
+    grid-area: top;
   }
 }
 
@@ -296,6 +642,8 @@ exports[`Storyshots Atoms | CssGrid CssGrid with different layouts for different
     -ms-grid-column: 3;
     -ms-grid-column-span: 1;
     -ms-grid-row-span: 3;
+    display: block;
+    grid-area: content;
   }
 }
 
@@ -305,6 +653,8 @@ exports[`Storyshots Atoms | CssGrid CssGrid with different layouts for different
     -ms-grid-column: 5;
     -ms-grid-column-span: 1;
     -ms-grid-row-span: 5;
+    display: block;
+    grid-area: sidebar;
   }
 }
 
@@ -355,73 +705,80 @@ exports[`Storyshots Atoms | CssGrid CssGrid with object as gutter and custom siz
   display: grid;
   box-sizing: border-box;
   grid-template-areas: "left top messages" "left top order" "left top sidebar" "left top sidebar" "left content sidebar";
+  grid-template-rows: 1fr 1fr 1fr;
   grid-template-columns: 1fr 2fr 1fr;
   -webkit-column-gap: 16px;
   column-gap: 16px;
   row-gap: 24px;
   display: -ms-grid;
-  -ms-grid-rows: 1fr 24px 1fr 24px 1fr 24px 1fr 24px 1fr;
+  -ms-grid-rows: 1fr 24px 1fr 24px 1fr;
   -ms-grid-columns: 1fr 16px 2fr 16px 1fr;
 }
 
 .c1 {
   box-sizing: border-box;
   min-width: 0;
-  grid-area: left;
   -ms-grid-row: 1;
   -ms-grid-column: 1;
   -ms-grid-column-span: 1;
   -ms-grid-row-span: 9;
+  display: block;
+  grid-area: left;
 }
 
 .c3 {
   box-sizing: border-box;
   min-width: 0;
-  grid-area: top;
   -ms-grid-row: 1;
   -ms-grid-column: 3;
   -ms-grid-column-span: 1;
   -ms-grid-row-span: 7;
+  display: block;
+  grid-area: top;
 }
 
 .c4 {
   box-sizing: border-box;
   min-width: 0;
-  grid-area: content;
   -ms-grid-row: 9;
   -ms-grid-column: 3;
   -ms-grid-column-span: 1;
   -ms-grid-row-span: 1;
+  display: block;
+  grid-area: content;
 }
 
 .c5 {
   box-sizing: border-box;
   min-width: 0;
-  grid-area: messages;
   -ms-grid-row: 1;
   -ms-grid-column: 5;
   -ms-grid-column-span: 1;
   -ms-grid-row-span: 1;
+  display: block;
+  grid-area: messages;
 }
 
 .c6 {
   box-sizing: border-box;
   min-width: 0;
-  grid-area: order;
   -ms-grid-row: 3;
   -ms-grid-column: 5;
   -ms-grid-column-span: 1;
   -ms-grid-row-span: 1;
+  display: block;
+  grid-area: order;
 }
 
 .c7 {
   box-sizing: border-box;
   min-width: 0;
-  grid-area: sidebar;
   -ms-grid-row: 5;
   -ms-grid-column: 5;
   -ms-grid-column-span: 1;
   -ms-grid-row-span: 5;
+  display: block;
+  grid-area: sidebar;
 }
 
 .c2 {
@@ -491,11 +848,317 @@ exports[`Storyshots Atoms | CssGrid CssGrid with object as gutter and custom siz
 </div>
 `;
 
+exports[`Storyshots Atoms | CssGrid Shown on md+, hidden on small screens 1`] = `
+.c0 {
+  display: grid;
+  box-sizing: border-box;
+  grid-template-areas: "left content content" "left content content";
+  grid-template-rows: auto auto;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 20px;
+  display: -ms-grid;
+  -ms-grid-rows: auto 20px auto;
+  -ms-grid-columns: 1fr 20px 1fr 20px 1fr;
+}
+
+.c1 {
+  box-sizing: border-box;
+  min-width: 0;
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  -ms-grid-row-span: 3;
+  display: block;
+  grid-area: left;
+}
+
+.c3 {
+  box-sizing: border-box;
+  min-width: 0;
+  display: none;
+  grid-area: none;
+}
+
+.c4 {
+  box-sizing: border-box;
+  min-width: 0;
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 3;
+  -ms-grid-row-span: 3;
+  display: block;
+  grid-area: content;
+}
+
+.c5 {
+  box-sizing: border-box;
+  min-width: 0;
+  display: none;
+  grid-area: none;
+}
+
+.c2 {
+  box-sizing: border-box;
+  border: 1px solid black;
+  background-color: #eee;
+  height: 100%;
+}
+
+@media (min-width:992px), {
+  .c0 {
+    grid-template-areas: "left" "top" "content";
+    grid-template-rows: auto auto;
+    grid-template-columns: 1fr;
+    grid-gap: 20px;
+    display: -ms-grid;
+    -ms-grid-rows: auto 20px auto;
+    -ms-grid-columns: 1fr;
+  }
+}
+
+@media (min-width:992px) {
+  .c1 {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    -ms-grid-row-span: 1;
+    display: block;
+    grid-area: left;
+  }
+}
+
+@media (min-width:992px) {
+  .c3 {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    -ms-grid-row-span: 1;
+    display: block;
+    grid-area: top;
+  }
+}
+
+@media (min-width:992px) {
+  .c4 {
+    -ms-grid-row: 5;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    -ms-grid-row-span: 1;
+    display: block;
+    grid-area: content;
+  }
+}
+
+@media (min-width:992px) {
+  .c5 {
+    display: none;
+    grid-area: none;
+  }
+}
+
+<div
+  className="c0"
+>
+  <div
+    className="c1"
+  >
+    <div
+      className="c2"
+    >
+      Left
+    </div>
+  </div>
+  <div
+    className="c3"
+  >
+    <div
+      className="c2"
+    >
+      <div>
+        This item is mounted and stays mounted no matter what. However, it‘d be hidden with css
+      </div>
+    </div>
+  </div>
+  <div
+    className="c4"
+  >
+    <div
+      className="c2"
+    >
+      Content
+    </div>
+  </div>
+  <div
+    className="c5"
+  >
+    <div
+      className="c2"
+    >
+      something that doesn‘t exist
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Atoms | CssGrid Shown on small screen sizes, hidden on md+ 1`] = `
+.c0 {
+  display: grid;
+  box-sizing: border-box;
+  grid-template-areas: "left top top" "left content content";
+  grid-template-rows: auto auto;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 20px;
+  display: -ms-grid;
+  -ms-grid-rows: auto 20px auto;
+  -ms-grid-columns: 1fr 20px 1fr 20px 1fr;
+}
+
+.c1 {
+  box-sizing: border-box;
+  min-width: 0;
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  -ms-grid-row-span: 3;
+  display: block;
+  grid-area: left;
+}
+
+.c5 {
+  box-sizing: border-box;
+  min-width: 0;
+  display: none;
+  grid-area: none;
+}
+
+.c3 {
+  box-sizing: border-box;
+  min-width: 0;
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 3;
+  -ms-grid-row-span: 1;
+  display: block;
+  grid-area: top;
+}
+
+.c4 {
+  box-sizing: border-box;
+  min-width: 0;
+  -ms-grid-row: 3;
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 3;
+  -ms-grid-row-span: 1;
+  display: block;
+  grid-area: content;
+}
+
+.c2 {
+  box-sizing: border-box;
+  border: 1px solid black;
+  background-color: #eee;
+  height: 100%;
+}
+
+@media (min-width:992px), {
+  .c0 {
+    grid-template-areas: "left" "content";
+    grid-template-rows: auto auto;
+    grid-template-columns: 1fr;
+    grid-gap: 20px;
+    display: -ms-grid;
+    -ms-grid-rows: auto 20px auto;
+    -ms-grid-columns: 1fr;
+  }
+}
+
+@media (min-width:992px) {
+  .c1 {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    -ms-grid-row-span: 1;
+    display: block;
+    grid-area: left;
+  }
+}
+
+@media (min-width:992px) {
+  .c5 {
+    display: none;
+    grid-area: none;
+  }
+}
+
+@media (min-width:992px) {
+  .c3 {
+    display: none;
+    grid-area: none;
+  }
+}
+
+@media (min-width:992px) {
+  .c4 {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    -ms-grid-row-span: 1;
+    display: block;
+    grid-area: content;
+  }
+}
+
+<div
+  className="c0"
+>
+  <div
+    className="c1"
+  >
+    <div
+      className="c2"
+    >
+      Left
+    </div>
+  </div>
+  <div
+    className="c3"
+  >
+    <div
+      className="c2"
+    >
+      <div>
+        This item is mounted and stays mounted no matter what. However, it‘d be hidden with css
+      </div>
+    </div>
+  </div>
+  <div
+    className="c4"
+  >
+    <div
+      className="c2"
+    >
+      Content
+    </div>
+  </div>
+  <div
+    className="c5"
+  >
+    <div
+      className="c2"
+    >
+      something that doesn‘t exist
+    </div>
+  </div>
+</div>
+`;
+
 exports[`Storyshots Atoms | CssGrid Simple CssGrid 1`] = `
 .c0 {
   display: grid;
   box-sizing: border-box;
   grid-template-areas: "header header header" "menu content ads" "footer footer footer";
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 20px;
   display: -ms-grid;
   -ms-grid-rows: 1fr 20px 1fr 20px 1fr;
@@ -505,51 +1168,56 @@ exports[`Storyshots Atoms | CssGrid Simple CssGrid 1`] = `
 .c1 {
   box-sizing: border-box;
   min-width: 0;
-  grid-area: header;
   -ms-grid-row: 1;
   -ms-grid-column: 1;
   -ms-grid-column-span: 5;
   -ms-grid-row-span: 1;
+  display: block;
+  grid-area: header;
 }
 
 .c3 {
   box-sizing: border-box;
   min-width: 0;
-  grid-area: content;
   -ms-grid-row: 3;
   -ms-grid-column: 3;
   -ms-grid-column-span: 1;
   -ms-grid-row-span: 1;
+  display: block;
+  grid-area: content;
 }
 
 .c4 {
   box-sizing: border-box;
   min-width: 0;
-  grid-area: menu;
   -ms-grid-row: 3;
   -ms-grid-column: 1;
   -ms-grid-column-span: 1;
   -ms-grid-row-span: 1;
+  display: block;
+  grid-area: menu;
 }
 
 .c5 {
   box-sizing: border-box;
   min-width: 0;
-  grid-area: ads;
   -ms-grid-row: 3;
   -ms-grid-column: 5;
   -ms-grid-column-span: 1;
   -ms-grid-row-span: 1;
+  display: block;
+  grid-area: ads;
 }
 
 .c6 {
   box-sizing: border-box;
   min-width: 0;
-  grid-area: footer;
   -ms-grid-row: 5;
   -ms-grid-column: 1;
   -ms-grid-column-span: 5;
   -ms-grid-row-span: 1;
+  display: block;
+  grid-area: footer;
 }
 
 .c2 {
