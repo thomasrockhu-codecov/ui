@@ -1,4 +1,4 @@
-import React, { useContext } from 'react';
+import React from 'react';
 import R from 'ramda';
 import styled, { ThemedStyledProps } from 'styled-components';
 import Color from 'color';
@@ -8,7 +8,6 @@ import { Theme } from '../../theme/theme.types';
 import { assert } from '../../common/utils';
 import NormalizedElements from '../../common/NormalizedElements';
 import { Typography } from '../..';
-import TrackingContext from '../../common/tracking';
 
 const HEIGHT = {
   s: 6,
@@ -208,12 +207,6 @@ export const Button: ButtonComponent = props => {
     color,
   } = props;
   const toAndDisabledAreNotPresentTogether = !(to && disabled);
-  const trackContext = useContext(TrackingContext);
-
-  const trackClick = (e: React.MouseEvent<Element, MouseEvent>) => {
-    if (trackContext) trackContext.track('button', e, props);
-    if (onClick) onClick(e);
-  };
 
   assert(
     toAndDisabledAreNotPresentTogether,
@@ -232,7 +225,7 @@ export const Button: ButtonComponent = props => {
         className={className}
         to={to}
         rel={rel}
-        onClick={trackClick}
+        onClick={onClick}
         size={size}
         variant={variant}
         fullWidth={fullWidth}
@@ -249,7 +242,7 @@ export const Button: ButtonComponent = props => {
     <StyledButton
       className={className}
       disabled={disabled}
-      onClick={trackClick}
+      onClick={onClick}
       size={size}
       type={type}
       variant={variant}

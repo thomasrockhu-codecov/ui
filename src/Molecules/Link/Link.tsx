@@ -1,12 +1,11 @@
 import R from 'ramda';
-import React, { useContext } from 'react';
+import React from 'react';
 import styled, { ThemedStyledProps } from 'styled-components';
 import { Link as RouterLink } from 'react-router-dom';
 import { LinkComponent, LinkProps } from './Link.types';
 import { Theme } from '../../theme/theme.types';
 import { isUndefined } from '../../common/utils';
 import NormalizedElements from '../../common/NormalizedElements';
-import TrackingContext from '../../common/tracking';
 
 const getSharedStyle = (props: ThemedStyledProps<LinkProps, Theme>) => {
   const { theme, disabled, display = 'inline' } = props;
@@ -51,15 +50,9 @@ export const Link: LinkComponent = props => {
   const { to, children, disabled, className, onClick, target, rel, external } = props;
   const destinationProp = external ? { href: to } : { to };
 
-  const { track } = useContext(TrackingContext);
-  const trackClick = (e: React.MouseEvent) => {
-    if (track) track('link', e, props);
-    if (onClick) onClick(e);
-  };
-
   if (isUndefined(to) || disabled) {
     return (
-      <StyledButton className={className} onClick={trackClick} disabled={disabled}>
+      <StyledButton className={className} onClick={onClick} disabled={disabled}>
         {children}
       </StyledButton>
     );
