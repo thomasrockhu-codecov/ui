@@ -51,9 +51,9 @@ export const Link: LinkComponent = props => {
   const { to, children, disabled, className, onClick, target, rel, external } = props;
   const destinationProp = external ? { href: to } : { to };
 
-  const { track } = useContext(TrackingContext);
+  const trackContext = useContext(TrackingContext);
   const trackClick = (e: React.MouseEvent) => {
-    if (track) track('link', e, props);
+    if (trackContext) trackContext.track('link', e, props);
     if (onClick) onClick(e);
   };
 
