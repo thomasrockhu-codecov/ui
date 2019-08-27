@@ -1,5 +1,5 @@
 type TrackFunction = (componentName: string, e: React.SyntheticEvent, props: any) => void;
 
-export interface TrackingContextData {
+export type TrackingContextData = {
   track: TrackFunction;
-}
+};
