@@ -1,3 +1,10 @@
+# [1.33.0-beta.3](https://github.com/nordnet/ui/compare/v1.33.0-beta.2@beta...v1.33.0-beta.3@beta) (2019-08-27)
+
+
+### Bug Fixes
+
+* fix link not working if tracking not available ([67007ad](https://github.com/nordnet/ui/commit/67007ad))
+
 # [1.33.0-beta.2](https://github.com/nordnet/ui/compare/v1.33.0-beta.1@beta...v1.33.0-beta.2@beta) (2019-08-26)
 
 
