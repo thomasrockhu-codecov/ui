@@ -1,3 +1,10 @@
+## [1.32.1](https://github.com/nordnet/ui/compare/v1.32.0...v1.32.1) (2019-08-30)
+
+
+### Bug Fixes
+
+* add default values to external link ([26e437c](https://github.com/nordnet/ui/commit/26e437c))
+
 # [1.32.0](https://github.com/nordnet/ui/compare/v1.31.0...v1.32.0) (2019-08-23)
 
 
