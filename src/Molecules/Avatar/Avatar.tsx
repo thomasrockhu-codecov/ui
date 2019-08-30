@@ -34,7 +34,7 @@ const StyledTypography = styled(Typography)<Props>`
       case 'm':
         return '';
       case 's':
-        return `font-size: ${p.theme.spacing.unit(Number(p.size)) / 2.5}px;`;
+        return `font-size: ${p.theme.spacing.unit(2)}px;`;
       default:
         return '';
     }

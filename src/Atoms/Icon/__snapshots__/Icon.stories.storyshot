@@ -188,6 +188,44 @@ exports[`Storyshots Atoms | Icon Available icons 1`] = `
     <div
       className="c2"
     >
+      CheckMark
+    </div>
+    <div>
+      <svg
+        aria-hidden="true"
+        className="c3"
+        focusable="false"
+        role="presentation"
+        size={5}
+        viewBox="0 0 24 24"
+      >
+        <g
+          transform="matrix(2.584033012390137, 0, 0, 2.584033012390137, -0.9930734634399414, 1.9612623850504463)"
+        >
+          <g
+            fill="none"
+            fillRule="evenodd"
+            stroke="none"
+          >
+            <g
+              stroke="currentColor"
+            >
+              <path
+                d="M0.700012207,3.44100952 L3.69873047,6.43997192 L9.29998779,0.839996338"
+              />
+            </g>
+          </g>
+        </g>
+      </svg>
+    </div>
+  </div>
+  <div
+    className="c1"
+    direction="row"
+  >
+    <div
+      className="c2"
+    >
       CheckMarkCircle
     </div>
     <div>
