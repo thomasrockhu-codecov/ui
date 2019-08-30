@@ -18,12 +18,14 @@ import { Star } from './components/Star';
 import { Star24 } from './components/Star24';
 import { Trash } from './components/Trash';
 import { WarningTriangle } from './components/WarningTriangle';
+import { CheckMark } from './components/CheckMark';
 
 export default {
   ArrowRight,
   Attachement,
   Bank,
   Bolt,
+  CheckMark,
   CheckMarkCircle,
   ChevronDown,
   ChevronUp,
