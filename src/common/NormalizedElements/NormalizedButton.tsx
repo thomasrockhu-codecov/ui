@@ -15,6 +15,8 @@ export const Button = styled(CleanButton)`
   margin: 0;
   overflow: visible;
   text-transform: none;
+  padding: 0;
+  text-align: initial;
 
   &,
   &[type='button'],
