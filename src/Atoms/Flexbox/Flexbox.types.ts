@@ -1,3 +1,5 @@
+import { AlignSelfProperty } from 'csstype';
+
 export type ContainerProps = {
   container?: boolean;
   height?: number;
@@ -53,6 +55,7 @@ export type ItemProps = {
   basis?: string;
   flex?: string;
   align?: 'auto' | 'flex-start' | 'flex-end' | 'center' | 'baseline' | 'stretch';
+  alignSelf?: AlignSelfProperty;
   size?: number | string;
   as?: keyof JSX.IntrinsicElements | React.ComponentType<any>;
   /** a11y */
@@ -66,4 +69,5 @@ type MediaRelatedProps<T> = {
   lg?: Partial<T>;
 };
 
-export type Props = MediaRelatedProps<InternalProps> & InternalProps;
+export type Props = MediaRelatedProps<InternalProps> &
+  InternalProps & { children?: React.ReactNode };

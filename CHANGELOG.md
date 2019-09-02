@@ -1,3 +1,52 @@
+## [1.32.1](https://github.com/nordnet/ui/compare/v1.32.0...v1.32.1) (2019-08-30)
+
+
+### Bug Fixes
+
+* add default values to external link ([26e437c](https://github.com/nordnet/ui/commit/26e437c))
+
+# [1.32.0](https://github.com/nordnet/ui/compare/v1.31.0...v1.32.0) (2019-08-23)
+
+
+### Bug Fixes
+
+* 💂‍snapshot ([d56896f](https://github.com/nordnet/ui/commit/d56896f))
+
+
+### Features
+
+* 🎸 add search and file icons ([a268276](https://github.com/nordnet/ui/commit/a268276))
+* make link suppor external urls ([0b6a7f2](https://github.com/nordnet/ui/commit/0b6a7f2))
+
+# [1.31.0](https://github.com/nordnet/ui/compare/v1.30.0...v1.31.0) (2019-08-19)
+
+
+### Bug Fixes
+
+* pr edits ([1479649](https://github.com/nordnet/ui/commit/1479649))
+* pr edits ([b07572a](https://github.com/nordnet/ui/commit/b07572a))
+* small adjustments ([bee2b73](https://github.com/nordnet/ui/commit/bee2b73))
+* some more overflow things ([0539bd2](https://github.com/nordnet/ui/commit/0539bd2))
+* stylelint ([fec28bf](https://github.com/nordnet/ui/commit/fec28bf))
+* test and lint ([61cb680](https://github.com/nordnet/ui/commit/61cb680))
+* tests ([4ca78ca](https://github.com/nordnet/ui/commit/4ca78ca))
+* tests ([5632ad5](https://github.com/nordnet/ui/commit/5632ad5))
+* vendor-related stuff ([39e26e1](https://github.com/nordnet/ui/commit/39e26e1))
+
+
+### Features
+
+* minor adjustments and fixes ([5463801](https://github.com/nordnet/ui/commit/5463801))
+* text input wip ([ed01d21](https://github.com/nordnet/ui/commit/ed01d21))
+
+# [1.30.0](https://github.com/nordnet/ui/compare/v1.29.3...v1.30.0) (2019-08-19)
+
+
+### Features
+
+* added color function prop ([9c5fa63](https://github.com/nordnet/ui/commit/9c5fa63))
+* implemented color logic ([d162211](https://github.com/nordnet/ui/commit/d162211))
+
 ## [1.29.3](https://github.com/nordnet/ui/compare/v1.29.2...v1.29.3) (2019-08-16)
 
 

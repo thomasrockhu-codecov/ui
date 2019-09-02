@@ -70,6 +70,7 @@ const getContainerStyles = (p: Props & { theme: Theme }) => `
 
 const getItemStyles = (p: Props & { theme: Theme }) => `
   ${p.size ? getSizeStyles(p.size) : ''}
+  ${p.alignSelf ? `align-self: ${p.alignSelf}` : ''}
   ${!R.isNil(p.order) ? `order: ${p.order};` : ''}
   ${!R.isNil(p.grow) ? `flex-grow: ${p.grow};` : ''}
   ${!R.isNil(p.shrink) ? `flex-shrink: ${p.shrink};` : ''}
@@ -88,6 +89,7 @@ const sanitizeProps = R.omit([
   'item',
   'gutter',
   'alignItems',
+  'alignSelf',
   'grow',
   'shrink',
   'sm',
@@ -98,7 +100,9 @@ const sanitizeProps = R.omit([
   'order',
   'justifyContent',
 ]);
-const SanitizedDiv = (props: Props) => <div {...sanitizeProps(props)} />;
+const SanitizedDiv = React.forwardRef((props: Props, ref: React.Ref<HTMLDivElement>) => (
+  <div {...sanitizeProps(props)} ref={ref} />
+));
 
 const getStylesForSize = (size: string) => css<Partial<Props>>`
   ${p => p.theme.media.greaterThan(p.theme.breakpoints[size])} {
@@ -116,6 +120,7 @@ const StyledFlexbox = styled(SanitizedDiv)<Props>`
   ${p => (p.lg ? getStylesForSize('lg') : '')}
 `;
 
-export const Flexbox: React.FC<Props> = props => <StyledFlexbox {...props} />;
-
+export const Flexbox = React.forwardRef<HTMLDivElement, Props>((props, ref) => (
+  <StyledFlexbox {...props} ref={ref} />
+));
 Flexbox.displayName = 'Flexbox';

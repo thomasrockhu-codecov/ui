@@ -9,11 +9,13 @@ import { Cross } from './components/Cross';
 import { CrossCircle } from './components/CrossCircle';
 import { DirectionDown } from './components/DirectionDown';
 import { DirectionUp } from './components/DirectionUp';
+import { File } from './components/File';
 import { Flag } from './components/Flag';
 import { Globe } from './components/Globe';
 import { InfoCircle } from './components/InfoCircle';
 import { Pen } from './components/Pen';
 import { Printer } from './components/Printer';
+import { Search } from './components/Search';
 import { Star } from './components/Star';
 import { Star24 } from './components/Star24';
 import { Trash } from './components/Trash';
@@ -31,11 +33,13 @@ export default {
   CrossCircle,
   DirectionDown,
   DirectionUp,
+  File,
   Flag,
   Globe,
   InfoCircle,
   Pen,
   Printer,
+  Search,
   Star,
   Star24,
   Trash,

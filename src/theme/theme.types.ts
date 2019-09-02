@@ -55,6 +55,8 @@ type NumberOrObjectWithNumber = number | { size: number };
 export type Theme = {
   /** Semantic names for the colors */
   color: {
+    /** white */
+    backgroundInput: RawColor['white'];
     /** gray7 */
     background: RawColor['gray7'];
     /** gray0 */
@@ -102,6 +104,8 @@ export type Theme = {
     /** 3 percent of black */
     shadowModal: string;
     /** 5 percent of black */
+    shadowInput: string;
+    /** 5 percent of black */
     shadowSwitch: string;
     /** black */
     spinnerBlack: RawColor['black'];
@@ -115,6 +119,10 @@ export type Theme = {
     inputBorder: RawColor['gray4'];
     /** gray1 */
     inputBorderHover: RawColor['gray1'];
+    /** negative */
+    inputBorderError: RawColor['negative'];
+    /** positive */
+    inputBorderSuccess: RawColor['positive'];
     /** gray6 */
     flagBorder: RawColor['gray6'];
   };
