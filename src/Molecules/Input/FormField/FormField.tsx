@@ -33,12 +33,10 @@ const hoverIfNotDisabled = css<Pick<Props, 'disabled'>>`
 
 const focusBorderColor = css<Pick<Props, 'error'>>`
   &:focus-within {
-    border-color: ${p =>
-      hasError(p.error) ? p.theme.color.inputBorderError : p.theme.color.borderActive};
+    border-color: ${p => p.theme.color.borderActive};
   }
   &.focus-within {
-    border-color: ${p =>
-      hasError(p.error) ? p.theme.color.inputBorderError : p.theme.color.borderActive};
+    border-color: ${p => p.theme.color.borderActive};
   }
 `;
 
@@ -94,60 +92,51 @@ const HidableTypography = styled(Typography)<{ hidden: boolean }>`
   white-space: nowrap;
 `;
 
-export const FormField: React.FC<Props> = ({
-  children,
-  className,
-  width,
-  label,
-  hideLabel,
-  size,
-  error,
-  success,
-  disabled,
-  extraInfo,
-  onClick,
-  innerWrapperRef,
-}) => (
-  /* eslint-disable jsx-a11y/label-has-associated-control,jsx-a11y/label-has-for */
-  <Wrapper width={width} className={className} onClick={onClick}>
-    <label>
-      <InlineFlexbox container direction="column">
-        <HidableTypography hidden={Boolean(hideLabel)} type="secondary" color={t => t.color.label}>
-          {label}
-        </HidableTypography>
-        <Flexbox item alignSelf="stretch">
-          <Typography type="secondary" color={t => t.color.text} as="div">
-            <InnerWrapperFlexbox
-              ref={innerWrapperRef}
-              container
-              alignItems="center"
-              {...{ size, error, success, disabled }}
-            >
-              {children}
-            </InnerWrapperFlexbox>
-          </Typography>
-        </Flexbox>
-      </InlineFlexbox>
-    </label>
-    <AnimatePresence>
-      {hasError(error) ? (
-        <BottomWrapper
-          size={size}
-          initial={{ y: -10, opacity: 0 }}
-          animate={{ y: 0, opacity: 1 }}
-          exit={{ y: 0, opacity: 0 }}
-          aria-live="polite"
-          // TODO: Check this one @manman
-          // @ts-ignore
-          aria-relevant="additions removals"
-        >
-          <DensedTypography type="tertiary" color={t => t.color.negative}>
-            <VisuallyHidden>Error: </VisuallyHidden>
-            {error}
-          </DensedTypography>
-        </BottomWrapper>
-      ) : (
-        extraInfo && (
+export const FormField: React.FC<Props> = React.forwardRef<HTMLDivElement, Props>(
+  (
+    {
+      children,
+      className,
+      width,
+      label,
+      hideLabel,
+      size,
+      error,
+      success,
+      disabled,
+      extraInfo,
+      onClick,
+      innerWrapperRef,
+    },
+    ref,
+  ) => (
+    /* eslint-disable jsx-a11y/label-has-associated-control,jsx-a11y/label-has-for */
+    <Wrapper width={width} className={className} onClick={onClick} ref={ref}>
+      <label>
+        <InlineFlexbox container direction="column">
+          <HidableTypography
+            hidden={Boolean(hideLabel)}
+            type="secondary"
+            color={t => t.color.label}
+          >
+            {label}
+          </HidableTypography>
+          <Flexbox item alignSelf="stretch">
+            <Typography type="secondary" color={t => t.color.text} as="div">
+              <InnerWrapperFlexbox
+                ref={innerWrapperRef}
+                container
+                alignItems="center"
+                {...{ size, error, success, disabled }}
+              >
+                {children}
+              </InnerWrapperFlexbox>
+            </Typography>
+          </Flexbox>
+        </InlineFlexbox>
+      </label>
+      <AnimatePresence>
+        {hasError(error) ? (
           <BottomWrapper
             size={size}
             initial={{ y: -10, opacity: 0 }}
@@ -158,12 +147,30 @@ export const FormField: React.FC<Props> = ({
             // @ts-ignore
             aria-relevant="additions removals"
           >
-            <DensedTypography type="tertiary" color={t => t.color.label}>
-              {extraInfo}
+            <DensedTypography type="tertiary" color={t => t.color.negative}>
+              <VisuallyHidden>Error: </VisuallyHidden>
+              {error}
             </DensedTypography>
           </BottomWrapper>
-        )
-      )}
-    </AnimatePresence>
-  </Wrapper>
+        ) : (
+          extraInfo && (
+            <BottomWrapper
+              size={size}
+              initial={{ y: -10, opacity: 0 }}
+              animate={{ y: 0, opacity: 1 }}
+              exit={{ y: 0, opacity: 0 }}
+              aria-live="polite"
+              // TODO: Check this one @manman
+              // @ts-ignore
+              aria-relevant="additions removals"
+            >
+              <DensedTypography type="tertiary" color={t => t.color.label}>
+                {extraInfo}
+              </DensedTypography>
+            </BottomWrapper>
+          )
+        )}
+      </AnimatePresence>
+    </Wrapper>
+  ),
 );
