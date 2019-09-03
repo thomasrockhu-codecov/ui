@@ -6,11 +6,7 @@ export const CheckMark = (props: BaseProps) => {
   return (
     <IconBase {...props}>
       <g transform="matrix(2.584033012390137, 0, 0, 2.584033012390137, -0.9930734634399414, 1.9612623850504463)">
-        <g stroke="none" fill="none" fillRule="evenodd">
-          <g stroke="currentColor">
-            <path d="M0.700012207,3.44100952 L3.69873047,6.43997192 L9.29998779,0.839996338" />
-          </g>
-        </g>
+        <path d="M0.700012207,3.44100952 L3.69873047,6.43997192 L9.29998779,0.839996338" />
       </g>
     </IconBase>
   );

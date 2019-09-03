@@ -31,12 +31,12 @@ storiesOf('Atoms | Icon', module)
       ]}
     />
   ))
-  .add('Available icons', () => (
+  .add('Available icons + colored', () => (
     <Display
       items={Object.entries(Icon).map(
         ([iconName, IconComponent]: [string, React.ComponentType<any>]) => ({
           title: iconName,
-          component: <IconComponent />,
+          component: <IconComponent color={t => t.color.cta} />,
         }),
       )}
     />

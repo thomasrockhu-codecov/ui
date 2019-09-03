@@ -1,7 +1,9 @@
+import { AddWithCircle } from './components/AddWithCircle';
 import { ArrowRight } from './components/ArrowRight';
 import { Attachement } from './components/Attachement';
 import { Bank } from './components/Bank';
 import { Bolt } from './components/Bolt';
+import { CheckMark } from './components/CheckMark';
 import { CheckMarkCircle } from './components/CheckMarkCircle';
 import { ChevronDown } from './components/ChevronDown';
 import { ChevronUp } from './components/ChevronUp';
@@ -18,9 +20,9 @@ import { Star } from './components/Star';
 import { Star24 } from './components/Star24';
 import { Trash } from './components/Trash';
 import { WarningTriangle } from './components/WarningTriangle';
-import { CheckMark } from './components/CheckMark';
 
 export default {
+  AddWithCircle,
   ArrowRight,
   Attachement,
   Bank,
