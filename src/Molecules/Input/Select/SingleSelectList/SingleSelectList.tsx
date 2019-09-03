@@ -104,7 +104,7 @@ const StyledListItem = styled.div<Pick<ListItemProps, 'selected' | 'disabled'>>`
       `}
 `;
 
-export const ListItem: React.FC<ListItemProps> = React.forwardRef<HTMLDivElement, ListItemProps>(
+export const ListItem = React.forwardRef<HTMLDivElement, ListItemProps>(
   ({ label, disabled, selected }, ref) => (
     <StyledListItem ref={ref} selected={selected} disabled={disabled} tabIndex={disabled ? -1 : 0}>
       <Typography type="tertiary" color="inherit">
