@@ -39,20 +39,36 @@ const StyledLink = styled(CleanLink)<LinkProps>`
 
 const StyledButton = styled(NormalizedElements.Button)<LinkProps>`
   ${p => getSharedStyle(p)}
-  cursor: ${p => (p.disabled ? 'not-allowed' : 'pointer')};
+
+  /* resetting button styles */
   border: none;
-  border-radius: 0;
+  margin: 0;
+  padding: 0;
+  width: auto;
+  overflow: visible;
+
+  background: transparent;
+
+  /* Corrects font smoothing for webkit */
+  -webkit-font-smoothing: inherit;
+  -moz-osx-font-smoothing: inherit;
+
+  /* Corrects inability to style clickable input types in iOS */
+  -webkit-appearance: none !important;
+  /* resetting button styles end */
+
+  cursor: ${p => (p.disabled ? 'not-allowed' : 'pointer')};
 
   font-weight: inherit; /* remove when and if typography is handled inside the component */
 `;
 
-export const Link: LinkComponent = props => {
-  const { to, children, disabled, className, onClick, target, rel, external } = props;
+export const Link: LinkComponent = React.forwardRef((props, ref) => {
+  const { to, children, disabled, className, onClick, target, rel, external, as } = props;
   const destinationProp = external ? { href: to } : { to };
 
   if (isUndefined(to) || disabled) {
     return (
-      <StyledButton className={className} onClick={onClick} disabled={disabled}>
+      <StyledButton ref={ref} className={className} onClick={onClick} disabled={disabled} as={as}>
         {children}
       </StyledButton>
     );
@@ -60,14 +76,16 @@ export const Link: LinkComponent = props => {
 
   return (
     <StyledLink
+      ref={ref}
       className={className}
       onClick={onClick}
       {...destinationProp}
       target={target}
       rel={rel}
       external={external}
+      as={as}
     >
       {children}
     </StyledLink>
   );
-};
+});
