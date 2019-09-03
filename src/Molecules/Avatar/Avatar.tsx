@@ -9,7 +9,7 @@ const getSize = (p: StyledProps<Props>) => {
     case 'm':
       return p.theme.spacing.unit(8);
     case 's':
-      return p.theme.spacing.unit(5);
+      return p.theme.spacing.unit(6);
     default:
       return p.theme.spacing.unit(8);
   }
