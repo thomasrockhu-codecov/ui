@@ -1,21 +1,27 @@
+import { InjectedIntlProps, InjectedIntl } from 'react-intl';
+
 export type Props = {
-  className?: string;
   /** Label should always be presented - A11y */
   label: string;
   /** But you can hide it visually */
   hideLabel?: boolean;
-  error?: string;
-  success?: boolean;
-  /** TODO: is this needed? */
-  extraInfo?: string;
-  rightAddon?: React.ReactNode;
-  leftAddon?: React.ReactNode;
-  innerWrapperRef?: React.Ref<HTMLInputElement>;
+  autoFocus?: boolean;
+  className?: string;
+  defaultValue?: string | number;
   disabled?: boolean;
-  placeholder?: string;
+  error?: string;
+  extraInfo?: string;
+  fieldId: string;
   fullWidth?: boolean;
+  max?: string | number;
+  min?: string | number;
+  name?: string;
+  noSteppers?: boolean;
   required?: boolean;
   size?: 's';
+  step?: string | number;
+  success?: boolean;
+  value?: string | number;
   /**
    * You need to specify width
    * (better in pixels), because
@@ -25,9 +31,8 @@ export type Props = {
    */
   width?: string | number;
 
-  value?: string;
-  defaultValue?: string;
-
+  onStepUp?: (() => void) | ((value?: string) => void);
+  onStepDown?: (() => void) | ((value?: string) => void);
   onChange?: React.ChangeEventHandler<HTMLInputElement>;
   onClick?: React.MouseEventHandler<HTMLInputElement>;
   onBlur?: React.FocusEventHandler<HTMLInputElement>;
@@ -35,4 +40,15 @@ export type Props = {
   onKeyDown?: React.KeyboardEventHandler<HTMLInputElement>;
   onKeyUp?: React.KeyboardEventHandler<HTMLInputElement>;
   onKeyPress?: React.KeyboardEventHandler<HTMLInputElement>;
+};
+
+export type NumberComponent = React.FunctionComponent<Props & InjectedIntlProps>;
+
+export type adjustValueProps = {
+  step: number;
+  min?: number;
+  max?: number;
+  shouldIncrement: boolean;
+  originalValue: number;
+  intl: InjectedIntl;
 };

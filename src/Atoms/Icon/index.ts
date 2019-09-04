@@ -14,7 +14,10 @@ import { Flag } from './components/Flag';
 import { Globe } from './components/Globe';
 import { InfoCircle } from './components/InfoCircle';
 import { Pen } from './components/Pen';
+import { Plus } from './components/Plus';
 import { Printer } from './components/Printer';
+import { Minus } from './components/Minus';
+import { Questionmark } from './components/Questionmark';
 import { Search } from './components/Search';
 import { Star } from './components/Star';
 import { Star24 } from './components/Star24';
@@ -38,7 +41,10 @@ export default {
   Globe,
   InfoCircle,
   Pen,
+  Plus,
   Printer,
+  Minus,
+  Questionmark,
   Search,
   Star,
   Star24,

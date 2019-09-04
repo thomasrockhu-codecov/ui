@@ -97,16 +97,17 @@ const HidableTypography = styled(Typography)<{ hidden: boolean }>`
 export const FormField: React.FC<Props> = ({
   children,
   className,
-  width,
-  label,
-  hideLabel,
-  size,
-  error,
-  success,
   disabled,
+  error,
   extraInfo,
-  onClick,
+  hideLabel,
   innerWrapperRef,
+  label,
+  onClick,
+  required,
+  size,
+  success,
+  width,
 }) => (
   /* eslint-disable jsx-a11y/label-has-associated-control,jsx-a11y/label-has-for */
   <Wrapper width={width} className={className} onClick={onClick}>
@@ -114,6 +115,7 @@ export const FormField: React.FC<Props> = ({
       <InlineFlexbox container direction="column">
         <HidableTypography hidden={Boolean(hideLabel)} type="secondary" color={t => t.color.label}>
           {label}
+          {required ? ' *' : ''}
         </HidableTypography>
         <Flexbox item alignSelf="stretch">
           <Typography type="secondary" color={t => t.color.text} as="div">
@@ -132,14 +134,10 @@ export const FormField: React.FC<Props> = ({
     <AnimatePresence>
       {hasError(error) ? (
         <BottomWrapper
-          size={size}
           initial={{ y: -10, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
           exit={{ y: 0, opacity: 0 }}
           aria-live="polite"
-          // TODO: Check this one @manman
-          // @ts-ignore
-          aria-relevant="additions removals"
         >
           <DensedTypography type="tertiary" color={t => t.color.negative}>
             <VisuallyHidden>Error: </VisuallyHidden>
@@ -149,14 +147,10 @@ export const FormField: React.FC<Props> = ({
       ) : (
         extraInfo && (
           <BottomWrapper
-            size={size}
             initial={{ y: -10, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
             exit={{ y: 0, opacity: 0 }}
             aria-live="polite"
-            // TODO: Check this one @manman
-            // @ts-ignore
-            aria-relevant="additions removals"
           >
             <DensedTypography type="tertiary" color={t => t.color.label}>
               {extraInfo}

@@ -1,3 +1,23 @@
+# [1.33.0](https://github.com/nordnet/ui/compare/v1.32.1...v1.33.0) (2019-09-03)
+
+
+### Bug Fixes
+
+* merge master ([858b71b](https://github.com/nordnet/ui/commit/858b71b))
+* mobile full screen modal ([8b03457](https://github.com/nordnet/ui/commit/8b03457))
+
+
+### Features
+
+* **modal:** change modal to use framer-motion ([6571fa3](https://github.com/nordnet/ui/commit/6571fa3))
+
+## [1.32.1](https://github.com/nordnet/ui/compare/v1.32.0...v1.32.1) (2019-08-30)
+
+
+### Bug Fixes
+
+* add default values to external link ([26e437c](https://github.com/nordnet/ui/commit/26e437c))
+
 # [1.32.0](https://github.com/nordnet/ui/compare/v1.31.0...v1.32.0) (2019-08-23)
 
 
