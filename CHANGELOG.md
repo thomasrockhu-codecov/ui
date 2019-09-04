@@ -1,3 +1,16 @@
+# [1.34.0](https://github.com/nordnet/ui/compare/v1.33.0...v1.34.0) (2019-09-04)
+
+
+### Bug Fixes
+
+* remove manual fill ([d227330](https://github.com/nordnet/ui/commit/d227330))
+* ts props ([55f3637](https://github.com/nordnet/ui/commit/55f3637))
+
+
+### Features
+
+* add questionmark icon ([ac33b03](https://github.com/nordnet/ui/commit/ac33b03))
+
 # [1.33.0](https://github.com/nordnet/ui/compare/v1.32.1...v1.33.0) (2019-09-03)
 
 
