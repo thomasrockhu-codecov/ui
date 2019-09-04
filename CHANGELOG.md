@@ -1,3 +1,10 @@
+# [1.36.0](https://github.com/nordnet/ui/compare/v1.35.0...v1.36.0) (2019-09-04)
+
+
+### Features
+
+* create access to inner components ([602f4f2](https://github.com/nordnet/ui/commit/602f4f2))
+
 # [1.35.0](https://github.com/nordnet/ui/compare/v1.34.0...v1.35.0) (2019-09-04)
 
 
