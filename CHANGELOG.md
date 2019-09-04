@@ -1,3 +1,11 @@
+# [1.35.0](https://github.com/nordnet/ui/compare/v1.34.0...v1.35.0) (2019-09-04)
+
+
+### Features
+
+* 🎸 add new icon for RTMT ([822ce39](https://github.com/nordnet/ui/commit/822ce39))
+* 🎸 enable custom viewbox size for IconBase ([a42a645](https://github.com/nordnet/ui/commit/a42a645))
+
 # [1.34.0](https://github.com/nordnet/ui/compare/v1.33.0...v1.34.0) (2019-09-04)
 
 
