@@ -111,7 +111,7 @@ const NumberInput: NumberComponent & {
    * inner parts with styled-components
    * @example
    * const CustomNumberInput = styled(Input.Number)`
-   *  ${CustomNumberInput} {
+   *  ${Stepper} {
    *    color: pink;
    * }
    * `
