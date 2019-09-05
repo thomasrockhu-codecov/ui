@@ -5,8 +5,8 @@ import { Props, NumberComponent } from './Number.types';
 import { Flexbox, VisuallyHidden, Icon } from '../../..';
 import { FormFieldSimple } from '../FormFieldSimple';
 import NormalizedElements from '../../../common/NormalizedElements';
-import { getStringAsNumber } from './utils';
-import { isNumber } from '../../../common/utils';
+import { getStringAsNumber, getNumberAsString } from './utils';
+import { isNumber, isString } from '../../../common/utils';
 import adjustValue from './adjustValue';
 
 const hasError = (error?: Props['error']) => error && error !== '';
@@ -34,8 +34,7 @@ const hoverBorderStyles = css<Pick<Props, 'disabled'>>`
 
 const focusBorderStyles = css<Pick<Props, 'error'>>`
   &:focus {
-    border-color: ${p =>
-      hasError(p.error) ? p.theme.color.inputBorderError : p.theme.color.borderActive};
+    border-color: ${p => p.theme.color.borderActive};
     z-index: 3;
   }
 `;
@@ -66,16 +65,16 @@ const Stepper = styled.button.attrs({ type: 'button' })<Partial<Props>>`
   justify-content: center;
   flex: 1 0 auto;
 
-  &:active {
+  &:first-of-type {
+    order: -1;
+  }
+
+  &:active:enabled {
     background-color: ${p => p.theme.color.cta};
 
     svg {
       fill: ${p => p.theme.color.buttonText};
     }
-  }
-
-  &:first-of-type {
-    order: -1;
   }
 `;
 
@@ -120,7 +119,7 @@ const NumberInput: NumberComponent & {
 } = props => {
   const {
     autoFocus,
-    defaultValue = 0,
+    defaultValue = 1,
     disabled,
     error,
     fieldId,
@@ -136,17 +135,17 @@ const NumberInput: NumberComponent & {
     onKeyDown,
     onKeyPress,
     onKeyUp,
-    onStepDown = () => {},
-    onStepUp = () => {},
+    onStepDown,
+    onStepUp,
     required,
     size,
     step = 1,
     success,
     value: controlledValue,
   } = props;
-  const [uncontrolledValue, setUncontrolledValue] = useState(defaultValue);
+  const [uncontrolledValue, setUncontrolledValue] = useState(getNumberAsString(defaultValue));
   const inputRef = useRef<HTMLInputElement>(null);
-  const isControlled = controlledValue && controlledValue >= 0;
+  const isControlled = isString(controlledValue) || isNumber(controlledValue);
   const sanitized = {
     max: max ? getStringAsNumber(max) : undefined,
     min: min ? getStringAsNumber(min) : undefined,
@@ -166,19 +165,23 @@ const NumberInput: NumberComponent & {
   };
 
   const onStepHandler = (stepUp: boolean) => {
-    let updatedValue;
-
     if (!isControlled) {
-      updatedValue = getUpdateValue(stepUp);
+      const updatedValue = getUpdateValue(stepUp);
       setUncontrolledValue(updatedValue);
+
+      if (onChange) {
+        onChange(updatedValue);
+      }
     }
 
-    if (stepUp) {
-      if (onStepUp) {
-        onStepUp(updatedValue);
+    if (onStepUp || onStepDown) {
+      if (stepUp && onStepUp) {
+        onStepUp();
       }
-    } else if (onStepDown) {
-      onStepDown(updatedValue);
+
+      if (!stepUp && onStepDown) {
+        onStepDown();
+      }
     }
 
     if (inputRef.current) {
@@ -188,11 +191,12 @@ const NumberInput: NumberComponent & {
 
   const onChangeHandler = (e: React.ChangeEvent<HTMLInputElement>) => {
     if (!isControlled) {
-      setUncontrolledValue(e.target.value);
-    }
+      const newValue = e.target.value;
+      setUncontrolledValue(newValue);
 
-    if (onChange) {
-      onChange(e);
+      if (onChange) {
+        onChange(newValue);
+      }
     }
   };
 
@@ -241,16 +245,16 @@ const NumberInput: NumberComponent & {
           {...(hasError(error) ? { 'aria-invalid': true } : {})}
         />
         {!noSteppers && (
-          <Stepper onClick={() => onStepHandler(false)} size={size} disabled={disabled}>
-            <VisuallyHidden>decrease number by {step}</VisuallyHidden>
-            <Icon.Minus size={3} />
-          </Stepper>
-        )}
-        {!noSteppers && (
-          <Stepper onClick={() => onStepHandler(true)} size={size} disabled={disabled}>
-            <VisuallyHidden>increase number by {step}</VisuallyHidden>
-            <Icon.Plus size={3} />
-          </Stepper>
+          <>
+            <Stepper onClick={() => onStepHandler(false)} size={size} disabled={disabled}>
+              <VisuallyHidden>decrease number by {step}</VisuallyHidden>
+              <Icon.Minus size={3} />
+            </Stepper>
+            <Stepper onClick={() => onStepHandler(true)} size={size} disabled={disabled}>
+              <VisuallyHidden>increase number by {step}</VisuallyHidden>
+              <Icon.Plus size={3} />
+            </Stepper>
+          </>
         )}
       </Flexbox>
     </FormFieldSimple>

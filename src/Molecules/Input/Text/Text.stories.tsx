@@ -49,6 +49,8 @@ storiesOf('Molecules | Input / Text', module)
       rightAddon="SEK"
     />
   ))
+  .add('With auto focus', () => <Input.Text label="Label" placeholder="Placeholder" autoFocus />)
+  .add('Required', () => <Input.Text label="Label" placeholder="Placeholder" required />)
   .add('Actions', () => (
     <>
       <p>

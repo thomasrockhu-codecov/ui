@@ -31,9 +31,9 @@ export type Props = {
    */
   width?: string | number;
 
-  onStepUp?: (() => void) | ((value?: string) => void);
-  onStepDown?: (() => void) | ((value?: string) => void);
-  onChange?: React.ChangeEventHandler<HTMLInputElement>;
+  onStepUp?: () => void;
+  onStepDown?: () => void;
+  onChange?: (value?: string) => void;
   onClick?: React.MouseEventHandler<HTMLInputElement>;
   onBlur?: React.FocusEventHandler<HTMLInputElement>;
   onFocus?: React.FocusEventHandler<HTMLInputElement>;

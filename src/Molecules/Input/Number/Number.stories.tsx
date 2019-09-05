@@ -1,6 +1,6 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
-import { actions } from '@storybook/addon-actions';
+import { actions, action } from '@storybook/addon-actions';
 import { Input } from '../../..';
 import { Display } from '../../../common/Display';
 
@@ -22,25 +22,23 @@ storiesOf('Molecules | Input / Number', module)
     const Component = () => {
       const [value, setValue] = React.useState(10);
 
-      const makeStep = (increment: boolean) => {
-        const nextValue = increment ? value + 1 : value - 1;
-
-        setValue(nextValue);
-      };
-
-      const onChangeHandler = (e: React.ChangeEvent<HTMLInputElement>) => {
-        setValue(parseInt(e.currentTarget.value, 10));
-      };
-
       return (
-        <Input.Number
-          fieldId="insert-unique-id"
-          label="Label"
-          value={value}
-          onChange={onChangeHandler}
-          onStepUp={() => makeStep(true)}
-          onStepDown={() => makeStep(false)}
-        />
+        <>
+          <Input.Number
+            fieldId="insert-unique-id"
+            label="Label"
+            value={value}
+            onChange={action('onChange')}
+            onStepUp={() => setValue(value + 1)}
+            onStepDown={() => setValue(value - 1)}
+          />
+          <button type="button" onClick={() => setValue(value - 1)}>
+            Decrease
+          </button>
+          <button type="button" onClick={() => setValue(value + 1)}>
+            Increase
+          </button>
+        </>
       );
     };
     return <Component />;
@@ -80,7 +78,8 @@ storiesOf('Molecules | Input / Number', module)
   ))
   .add('With error if value is less than 1', () => {
     const Component = () => {
-      const [value, setValue] = React.useState('0');
+      const defaultValue = '0';
+      const [value, setValue] = React.useState(defaultValue);
       const showError = parseInt(value, 10) < 1;
 
       return (
@@ -88,8 +87,8 @@ storiesOf('Molecules | Input / Number', module)
           fieldId="insert-unique-id"
           label="Label"
           step="1"
-          onStepUp={x => x && setValue(x)}
-          onStepDown={x => x && setValue(x)}
+          defaultValue={defaultValue}
+          onChange={x => x && setValue(x)}
           {...(showError ? { error: 'Number needs to be greater than 0' } : {})}
         />
       );
@@ -102,7 +101,8 @@ storiesOf('Molecules | Input / Number', module)
   ))
   .add('With extra info and error', () => {
     const Component = () => {
-      const [value, setValue] = React.useState('0');
+      const defaultValue = '0';
+      const [value, setValue] = React.useState(defaultValue);
       const showError = parseInt(value, 10) < 1;
 
       return (
@@ -110,8 +110,8 @@ storiesOf('Molecules | Input / Number', module)
           fieldId="insert-unique-id"
           label="Label"
           extraInfo="Use wisely this space"
-          onStepUp={x => x && setValue(x)}
-          onStepDown={x => x && setValue(x)}
+          defaultValue={defaultValue}
+          onChange={x => x && setValue(x)}
           {...(showError ? { error: 'Number needs to be greater than 0' } : {})}
         />
       );

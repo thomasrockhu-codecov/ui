@@ -1,6 +1,13 @@
 import * as R from 'ramda';
 import { adjustValueProps } from './Number.types';
 
+const getNumberOfDecimals = R.pipe(
+  R.toString,
+  R.split('.'),
+  R.nth(1),
+  R.ifElse(R.isNil, R.always(0), R.length),
+);
+
 const adjustValue = ({
   originalValue,
   step,
@@ -9,14 +16,8 @@ const adjustValue = ({
   min = -Infinity,
   max = Infinity,
 }: adjustValueProps) => {
-  const getNumberOfDecimals = R.pipe(
-    R.toString,
-    R.split('.'),
-    R.nth(1),
-    R.ifElse(R.isNil, R.always(0), R.length),
-  );
   const numberOfDecimals = getNumberOfDecimals(step);
-  const multiplier = numberOfDecimals === 0 ? 1 : 10 ** numberOfDecimals; // 10^decimals
+  const multiplier = 10 ** numberOfDecimals; // 10^decimals
   const stepCents = multiplier * step;
 
   const getAdjustedValueCents = () => {
