@@ -2,49 +2,30 @@ import React from 'react';
 import styled, { StyledProps } from 'styled-components';
 import { Props } from './Avatar.types';
 
-import Typography from '../../Atoms/Typography';
+import { Flexbox, Typography } from '../..';
 
 const getSize = (p: StyledProps<Props>) => {
   switch (p.size) {
-    case 'm':
-      return p.theme.spacing.unit(8);
     case 's':
       return p.theme.spacing.unit(6);
+    case 'm':
     default:
       return p.theme.spacing.unit(8);
   }
 };
 
-const StyledDiv = styled.div`
-  display: flex;
-  align-items: center;
-  justify-content: center;
+const StyledDiv = styled(Flexbox)`
   background-color: ${p => p.theme.color.backgroundDark};
   width: ${getSize}px;
   height: ${getSize}px;
   font-size: ${getSize}px;
   border-radius: 50%;
-  line-height: ${p =>
-    p.theme.spacing.unit(8) - 1}px; /* FIXME: font is buggy, so baseline is 1px off */
-`;
-
-const StyledTypography = styled(Typography)<Props>`
-  ${p => {
-    switch (p.size) {
-      case 'm':
-        return '';
-      case 's':
-        return `font-size: ${p.theme.spacing.unit(2)}px;`;
-      default:
-        return '';
-    }
-  }}
 `;
 
 export const Avatar: React.FunctionComponent<Props> = ({ children, size = 'm' }) => (
-  <StyledDiv size={size}>
-    <StyledTypography size={size} type="tertiary" color={t => t.color.textLight}>
+  <StyledDiv alignItems="center" justifyContent="center" size={size}>
+    <Typography type={size === 'm' ? 'tertiary' : 'caption'} color={t => t.color.textLight}>
       {children}
-    </StyledTypography>
+    </Typography>
   </StyledDiv>
 );
