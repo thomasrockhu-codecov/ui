@@ -1,3 +1,22 @@
+# [1.37.0](https://github.com/nordnet/ui/compare/v1.36.0...v1.37.0) (2019-09-05)
+
+
+### Bug Fixes
+
+* always trigger onchange if changed ([011a787](https://github.com/nordnet/ui/commit/011a787))
+* merge master ([a19c238](https://github.com/nordnet/ui/commit/a19c238))
+* merge master ([a8bfe11](https://github.com/nordnet/ui/commit/a8bfe11))
+* pr feedback ([40bf915](https://github.com/nordnet/ui/commit/40bf915))
+* reset background of button in link component ([d5c5e93](https://github.com/nordnet/ui/commit/d5c5e93))
+* squash commit ([434a3b8](https://github.com/nordnet/ui/commit/434a3b8))
+* typo in doc ([a86d664](https://github.com/nordnet/ui/commit/a86d664))
+
+
+### Features
+
+* 🎸 add icons import, plus, pluswithcircle, threedots ([887d76e](https://github.com/nordnet/ui/commit/887d76e))
+* preserve aspect ratio and stories ([b8566b9](https://github.com/nordnet/ui/commit/b8566b9))
+
 # [1.36.0](https://github.com/nordnet/ui/compare/v1.35.0...v1.36.0) (2019-09-04)
 
 
