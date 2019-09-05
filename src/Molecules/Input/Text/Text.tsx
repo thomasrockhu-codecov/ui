@@ -81,7 +81,7 @@ export const Text: React.FC<Props> & {
    * This will allow you to customize
    * inner parts with styled-components
    * @example
-   * const CustomText = styled(Text)`
+   * const CustomText = styled(Input.Text)`
    *  ${UnstyledInput} {
    *    color: pink;
    * }
@@ -90,6 +90,7 @@ export const Text: React.FC<Props> & {
   components: typeof components;
 } = props => {
   const {
+    autoFocus,
     disabled,
     error,
     leftAddon,
@@ -107,12 +108,14 @@ export const Text: React.FC<Props> & {
     onKeyUp,
     onKeyPress,
     name,
+    required,
   } = props;
   /* eslint-disable jsx-a11y/label-has-associated-control,jsx-a11y/label-has-for */
   return (
     <FormField {...props}>
       <UnstyledInput
         {...{
+          autoFocus,
           sizeProp: size,
           placeholder,
           error,
@@ -130,6 +133,7 @@ export const Text: React.FC<Props> & {
           onKeyUp,
           onKeyPress,
           name,
+          required,
         }}
         {...(hasError(error) ? { 'aria-invalid': true } : {})}
       />

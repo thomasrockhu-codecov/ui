@@ -18,6 +18,7 @@ import { Pen } from './components/Pen';
 import { Plus } from './components/Plus';
 import { PlusWithCircle } from './components/PlusWithCircle';
 import { Printer } from './components/Printer';
+import { Minus } from './components/Minus';
 import { Questionmark } from './components/Questionmark';
 import { Search } from './components/Search';
 import { Star } from './components/Star';
@@ -48,6 +49,7 @@ export default {
   Plus,
   PlusWithCircle,
   Printer,
+  Minus,
   Questionmark,
   Search,
   Star,

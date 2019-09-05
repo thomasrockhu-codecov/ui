@@ -584,6 +584,43 @@ Array [
       viewBox="0 0 24 24"
     >
       <path
+        d="M0 22h24v2H0v-2zM12.836 0v15.338l6.333-6.383v3.326l-7.5 7.557-7.5-7.558V8.955l6.334 6.382V0h2.333z"
+        fillRule="evenodd"
+      />
+    </svg>
+  </div>,
+  .c0 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 20px;
+  height: 20px;
+  fill: #0046FF;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
+}
+
+<div
+    style={
+      Object {
+        "display": "inline-block",
+        "outline": "1px dashed #bbb",
+      }
+    }
+  >
+    <svg
+      aria-hidden="true"
+      className="c0"
+      focusable="false"
+      preserveAspectRatio="xMidYMid meet"
+      role="presentation"
+      size={5}
+      viewBox="0 0 24 24"
+    >
+      <path
         d="M12,24 C5.372583,24 0,18.627417 0,12 C0,5.372583 5.372583,0 12,0 C18.627417,0 24,5.372583 24,12 C24,18.627417 18.627417,24 12,24 Z"
       />
       <path
@@ -660,6 +697,80 @@ Array [
       size={5}
       viewBox="0 0 24 24"
     >
+      <path
+        d="M13 0v11h11v2H13v11h-2V12.999L0 13v-2l11-.001V0h2z"
+        fillRule="evenodd"
+      />
+    </svg>
+  </div>,
+  .c0 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 20px;
+  height: 20px;
+  fill: #0046FF;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
+}
+
+<div
+    style={
+      Object {
+        "display": "inline-block",
+        "outline": "1px dashed #bbb",
+      }
+    }
+  >
+    <svg
+      aria-hidden="true"
+      className="c0"
+      focusable="false"
+      preserveAspectRatio="xMidYMid meet"
+      role="presentation"
+      size={5}
+      viewBox="0 0 24 24"
+    >
+      <path
+        d="M12 0c6.627 0 12 5.373 12 12s-5.373 12-12 12S0 18.627 0 12 5.373 0 12 0zm0 2C6.477 2 2 6.477 2 12s4.477 10 10 10 10-4.477 10-10S17.523 2 12 2zm1 2v7h7v2h-7v7h-2v-7.001L4 13v-2l7-.001V4h2z"
+        fillRule="evenodd"
+      />
+    </svg>
+  </div>,
+  .c0 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 20px;
+  height: 20px;
+  fill: #0046FF;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
+}
+
+<div
+    style={
+      Object {
+        "display": "inline-block",
+        "outline": "1px dashed #bbb",
+      }
+    }
+  >
+    <svg
+      aria-hidden="true"
+      className="c0"
+      focusable="false"
+      preserveAspectRatio="xMidYMid meet"
+      role="presentation"
+      size={5}
+      viewBox="0 0 24 24"
+    >
       <g>
         <path
           d="M23.1428571,6 L18.8571429,6 L18.8571429,0.857142857 C18.8571429,0.383755929 18.4733869,0 18,0 L6,0 C5.52661307,0 5.14285714,0.383755929 5.14285714,0.857142857 L5.14285714,6 L0.857142857,6 C0.383755929,6 0,6.38375593 0,6.85714286 L0,18 C0,18.4733869 0.383755929,18.8571429 0.857142857,18.8571429 L5.14285714,18.8571429 L5.14285714,23.1428571 C5.14285714,23.6162441 5.52661307,24 6,24 L18,24 C18.4733869,24 18.8571429,23.6162441 18.8571429,23.1428571 L18.8571429,18.8571429 L23.1428571,18.8571429 C23.6162441,18.8571429 24,18.4733869 24,18 L24,6.85714286 C24,6.38375593 23.6162441,6 23.1428571,6 Z M6.85714286,1.71428571 L17.1428571,1.71428571 L17.1428571,6 L6.85714286,6 L6.85714286,1.71428571 Z M17.1428571,22.2857143 L6.85714286,22.2857143 L6.85714286,14.5714286 L17.1428571,14.5714286 L17.1428571,22.2857143 Z M22.2857143,17.1428571 L18.8571429,17.1428571 L18.8571429,14.5714286 L19.7142857,14.5714286 C20.1876726,14.5714286 20.5714286,14.1876726 20.5714286,13.7142857 C20.5714286,13.2408988 20.1876726,12.8571429 19.7142857,12.8571429 L4.28571429,12.8571429 C3.81232736,12.8571429 3.42857143,13.2408988 3.42857143,13.7142857 C3.42857143,14.1876726 3.81232736,14.5714286 4.28571429,14.5714286 L5.14285714,14.5714286 L5.14285714,17.1428571 L1.71428571,17.1428571 L1.71428571,7.71428571 L22.2857143,7.71428571 L22.2857143,17.1428571 Z"
@@ -668,6 +779,43 @@ Array [
           d="M20 11L21 11C21.5522847 11 22 10.7761424 22 10.5 22 10.2238576 21.5522847 10 21 10L20 10C19.4477153 10 19 10.2238576 19 10.5 19 10.7761424 19.4477153 11 20 11zM14.25 17L9.75 17C9.33578644 17 9 17.2238576 9 17.5 9 17.7761424 9.33578644 18 9.75 18L14.25 18C14.6642136 18 15 17.7761424 15 17.5 15 17.2238576 14.6642136 17 14.25 17zM14.25 19L9.75 19C9.33578644 19 9 19.2238576 9 19.5 9 19.7761424 9.33578644 20 9.75 20L14.25 20C14.6642136 20 15 19.7761424 15 19.5 15 19.2238576 14.6642136 19 14.25 19z"
         />
       </g>
+    </svg>
+  </div>,
+  .c0 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 20px;
+  height: 20px;
+  fill: #0046FF;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
+}
+
+<div
+    style={
+      Object {
+        "display": "inline-block",
+        "outline": "1px dashed #bbb",
+      }
+    }
+  >
+    <svg
+      aria-hidden="true"
+      className="c0"
+      focusable="false"
+      preserveAspectRatio="xMidYMid meet"
+      role="presentation"
+      size={5}
+      viewBox="0 0 24 24"
+    >
+      <path
+        d="M24 11v2H0v-2z"
+        fillRule="evenodd"
+      />
     </svg>
   </div>,
   .c0 {
@@ -841,6 +989,43 @@ Array [
         className="c1"
         d="M12,3.28909585 L9.7518819,10.3333333 L2.94990324,10.3333333 L8.34965326,14.4696321 L6.10344598,21.3821992 L12,17.0986537 L17.896554,21.3821992 L15.6503467,14.4696321 L21.0500967,10.3333333 L14.2481181,10.3333333 L12,3.28909585 Z"
         strokeWidth="2"
+      />
+    </svg>
+  </div>,
+  .c0 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 20px;
+  height: 20px;
+  fill: #0046FF;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
+}
+
+<div
+    style={
+      Object {
+        "display": "inline-block",
+        "outline": "1px dashed #bbb",
+      }
+    }
+  >
+    <svg
+      aria-hidden="true"
+      className="c0"
+      focusable="false"
+      preserveAspectRatio="xMidYMid meet"
+      role="presentation"
+      size={5}
+      viewBox="0 0 24 24"
+    >
+      <path
+        d="M21 9a3 3 0 1 1 0 6 3 3 0 0 1 0-6zM3 9a3 3 0 1 1 0 6 3 3 0 0 1 0-6zm9 0a3 3 0 1 1 0 6 3 3 0 0 1 0-6z"
+        fillRule="evenodd"
       />
     </svg>
   </div>,
@@ -1579,19 +1764,29 @@ exports[`Storyshots Atoms | Icon Available icons 1`] = `
       Import
     </div>
     <div>
-      <svg
-        aria-hidden="true"
-        className="c3"
-        focusable="false"
-        role="presentation"
-        size={5}
-        viewBox="0 0 24 24"
+      <div
+        style={
+          Object {
+            "display": "inline-block",
+            "outline": "1px dashed #bbb",
+          }
+        }
       >
-        <path
-          d="M0 22h24v2H0v-2zM12.836 0v15.338l6.333-6.383v3.326l-7.5 7.557-7.5-7.558V8.955l6.334 6.382V0h2.333z"
-          fillRule="evenodd"
-        />
-      </svg>
+        <svg
+          aria-hidden="true"
+          className="c3"
+          focusable="false"
+          preserveAspectRatio="xMidYMid meet"
+          role="presentation"
+          size={5}
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M0 22h24v2H0v-2zM12.836 0v15.338l6.333-6.383v3.326l-7.5 7.557-7.5-7.558V8.955l6.334 6.382V0h2.333z"
+            fillRule="evenodd"
+          />
+        </svg>
+      </div>
     </div>
   </div>
   <div
@@ -1677,19 +1872,29 @@ exports[`Storyshots Atoms | Icon Available icons 1`] = `
       Plus
     </div>
     <div>
-      <svg
-        aria-hidden="true"
-        className="c3"
-        focusable="false"
-        role="presentation"
-        size={5}
-        viewBox="0 0 24 24"
+      <div
+        style={
+          Object {
+            "display": "inline-block",
+            "outline": "1px dashed #bbb",
+          }
+        }
       >
-        <path
-          d="M13 0v11h11v2H13v11h-2V12.999L0 13v-2l11-.001V0h2z"
-          fillRule="evenodd"
-        />
-      </svg>
+        <svg
+          aria-hidden="true"
+          className="c3"
+          focusable="false"
+          preserveAspectRatio="xMidYMid meet"
+          role="presentation"
+          size={5}
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M13 0v11h11v2H13v11h-2V12.999L0 13v-2l11-.001V0h2z"
+            fillRule="evenodd"
+          />
+        </svg>
+      </div>
     </div>
   </div>
   <div
@@ -1702,19 +1907,29 @@ exports[`Storyshots Atoms | Icon Available icons 1`] = `
       PlusWithCircle
     </div>
     <div>
-      <svg
-        aria-hidden="true"
-        className="c3"
-        focusable="false"
-        role="presentation"
-        size={5}
-        viewBox="0 0 24 24"
+      <div
+        style={
+          Object {
+            "display": "inline-block",
+            "outline": "1px dashed #bbb",
+          }
+        }
       >
-        <path
-          d="M12 0c6.627 0 12 5.373 12 12s-5.373 12-12 12S0 18.627 0 12 5.373 0 12 0zm0 2C6.477 2 2 6.477 2 12s4.477 10 10 10 10-4.477 10-10S17.523 2 12 2zm1 2v7h7v2h-7v7h-2v-7.001L4 13v-2l7-.001V4h2z"
-          fillRule="evenodd"
-        />
-      </svg>
+        <svg
+          aria-hidden="true"
+          className="c3"
+          focusable="false"
+          preserveAspectRatio="xMidYMid meet"
+          role="presentation"
+          size={5}
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M12 0c6.627 0 12 5.373 12 12s-5.373 12-12 12S0 18.627 0 12 5.373 0 12 0zm0 2C6.477 2 2 6.477 2 12s4.477 10 10 10 10-4.477 10-10S17.523 2 12 2zm1 2v7h7v2h-7v7h-2v-7.001L4 13v-2l7-.001V4h2z"
+            fillRule="evenodd"
+          />
+        </svg>
+      </div>
     </div>
   </div>
   <div
@@ -1752,6 +1967,41 @@ exports[`Storyshots Atoms | Icon Available icons 1`] = `
               d="M20 11L21 11C21.5522847 11 22 10.7761424 22 10.5 22 10.2238576 21.5522847 10 21 10L20 10C19.4477153 10 19 10.2238576 19 10.5 19 10.7761424 19.4477153 11 20 11zM14.25 17L9.75 17C9.33578644 17 9 17.2238576 9 17.5 9 17.7761424 9.33578644 18 9.75 18L14.25 18C14.6642136 18 15 17.7761424 15 17.5 15 17.2238576 14.6642136 17 14.25 17zM14.25 19L9.75 19C9.33578644 19 9 19.2238576 9 19.5 9 19.7761424 9.33578644 20 9.75 20L14.25 20C14.6642136 20 15 19.7761424 15 19.5 15 19.2238576 14.6642136 19 14.25 19z"
             />
           </g>
+        </svg>
+      </div>
+    </div>
+  </div>
+  <div
+    className="c1"
+    direction="row"
+  >
+    <div
+      className="c2"
+    >
+      Minus
+    </div>
+    <div>
+      <div
+        style={
+          Object {
+            "display": "inline-block",
+            "outline": "1px dashed #bbb",
+          }
+        }
+      >
+        <svg
+          aria-hidden="true"
+          className="c3"
+          focusable="false"
+          preserveAspectRatio="xMidYMid meet"
+          role="presentation"
+          size={5}
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M24 11v2H0v-2z"
+            fillRule="evenodd"
+          />
         </svg>
       </div>
     </div>
@@ -1920,19 +2170,29 @@ exports[`Storyshots Atoms | Icon Available icons 1`] = `
       ThreeDots
     </div>
     <div>
-      <svg
-        aria-hidden="true"
-        className="c3"
-        focusable="false"
-        role="presentation"
-        size={5}
-        viewBox="0 0 24 24"
+      <div
+        style={
+          Object {
+            "display": "inline-block",
+            "outline": "1px dashed #bbb",
+          }
+        }
       >
-        <path
-          d="M21 9a3 3 0 1 1 0 6 3 3 0 0 1 0-6zM3 9a3 3 0 1 1 0 6 3 3 0 0 1 0-6zm9 0a3 3 0 1 1 0 6 3 3 0 0 1 0-6z"
-          fillRule="evenodd"
-        />
-      </svg>
+        <svg
+          aria-hidden="true"
+          className="c3"
+          focusable="false"
+          preserveAspectRatio="xMidYMid meet"
+          role="presentation"
+          size={5}
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M21 9a3 3 0 1 1 0 6 3 3 0 0 1 0-6zM3 9a3 3 0 1 1 0 6 3 3 0 0 1 0-6zm9 0a3 3 0 1 1 0 6 3 3 0 0 1 0-6z"
+            fillRule="evenodd"
+          />
+        </svg>
+      </div>
     </div>
   </div>
   <div
