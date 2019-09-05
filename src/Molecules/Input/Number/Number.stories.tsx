@@ -17,7 +17,9 @@ const handlers = actions(
 );
 
 storiesOf('Molecules | Input / Number', module)
-  .add('Default', () => <Input.Number fieldId="insert-unique-id" label="Label" />)
+  .add('Default', () => (
+    <Input.Number fieldId="insert-unique-id" label="Label" onChange={action('onChange')} />
+  ))
   .add('With value (Controlled behaviour)', () => {
     const Component = () => {
       const [value, setValue] = React.useState(10);

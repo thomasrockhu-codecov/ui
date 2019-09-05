@@ -45,7 +45,7 @@ import CardWithTabs from './Organisms/CardWithTabs';
 import Development from './Organisms/Development';
 
 /** Hooks */
-import useKeyPress from './common/Hooks/useKeyPress';
+import { useKeyPress } from './common/Hooks';
 
 import theme, { createTheme } from './theme';
 

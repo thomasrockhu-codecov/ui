@@ -1,4 +1,4 @@
-import React, { useState, useRef } from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 import { injectIntl } from 'react-intl';
 import styled, { css } from 'styled-components';
 import { Props, NumberComponent } from './Number.types';
@@ -7,6 +7,7 @@ import { FormFieldSimple } from '../FormFieldSimple';
 import NormalizedElements from '../../../common/NormalizedElements';
 import { getStringAsNumber, getNumberAsString } from './utils';
 import { isNumber, isString } from '../../../common/utils';
+import { usePrevious } from '../../../common/Hooks';
 import adjustValue from './adjustValue';
 
 const hasError = (error?: Props['error']) => error && error !== '';
@@ -141,24 +142,26 @@ const NumberInput: NumberComponent & {
     size,
     step = 1,
     success,
-    value: controlledValue,
+    value: controlledValueRaw,
   } = props;
   const [uncontrolledValue, setUncontrolledValue] = useState(getNumberAsString(defaultValue));
+  const isControlled = isString(controlledValueRaw) || isNumber(controlledValueRaw);
+  const controlledValue = isControlled && getNumberAsString(controlledValueRaw);
   const inputRef = useRef<HTMLInputElement>(null);
-  const isControlled = isString(controlledValue) || isNumber(controlledValue);
-  const sanitized = {
+  const sanitizedNumbers = {
     max: max ? getStringAsNumber(max) : undefined,
     min: min ? getStringAsNumber(min) : undefined,
     step: isNumber(step) ? step : getStringAsNumber(step),
     uncontrolledValue: getStringAsNumber(uncontrolledValue),
   };
+  const previousValue = usePrevious(isControlled ? controlledValue : uncontrolledValue);
 
   const getUpdateValue = (increment: boolean) => {
     return adjustValue({
-      originalValue: sanitized.uncontrolledValue,
-      step: sanitized.step,
-      min: sanitized.min,
-      max: sanitized.max,
+      originalValue: sanitizedNumbers.uncontrolledValue,
+      step: sanitizedNumbers.step,
+      min: sanitizedNumbers.min,
+      max: sanitizedNumbers.max,
       shouldIncrement: increment,
       intl,
     });
@@ -168,10 +171,6 @@ const NumberInput: NumberComponent & {
     if (!isControlled) {
       const updatedValue = getUpdateValue(stepUp);
       setUncontrolledValue(updatedValue);
-
-      if (onChange) {
-        onChange(updatedValue);
-      }
     }
 
     if (onStepUp || onStepDown) {
@@ -193,10 +192,6 @@ const NumberInput: NumberComponent & {
     if (!isControlled) {
       const newValue = e.target.value;
       setUncontrolledValue(newValue);
-
-      if (onChange) {
-        onChange(newValue);
-      }
     }
   };
 
@@ -216,6 +211,18 @@ const NumberInput: NumberComponent & {
       onKeyDown(e);
     }
   };
+
+  useEffect(() => {
+    if (onChange) {
+      if (isControlled) {
+        if (previousValue !== controlledValue) {
+          onChange(controlledValue);
+        }
+      } else if (previousValue !== uncontrolledValue) {
+        onChange(uncontrolledValue);
+      }
+    }
+  }, [onChange, previousValue, uncontrolledValue]); // eslint-disable-line
 
   return (
     <FormFieldSimple {...props}>
