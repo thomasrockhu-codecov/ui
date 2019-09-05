@@ -28,9 +28,10 @@ const Chevron = styled(Icon.ChevronDown)<{ open: boolean }>`
 `;
 
 const StyledA11yButton = styled(NormalizedElements.Button)`
-  background: transparent;
+  background: ${p => (p.disabled ? p.theme.color.disabledBackground : 'transparent')};
   width: 100%;
   height: 100%;
+  cursor: ${p => (p.disabled ? 'not-allowed' : 'pointer')};
 
   display: flex;
   border: 0;
@@ -175,29 +176,11 @@ function SelectStateProvider<S extends {}, A extends {}>({
   );
 }
 
-const useReducerOrProvider = ({ options, placeholder, value }: any) => {
-  const contextValue = React.useContext(SelectStateContext);
-  const reducerValues = React.useReducer(defaultSelectReducer, defaultSelectInitialState);
-
-  const [state, dispatch] = contextValue || reducerValues;
-
-  // Using useMemo for synchronous setting initial state
-  // FIXME: is there a better way?
-  React.useMemo(() => {
-    dispatch({
-      type: ActionTypes['Select.Init'],
-      payload: { options, placeholder, ...(Array.isArray(value) ? { value } : {}) },
-    });
-  }, [options, placeholder, dispatch, value]);
-
-  return [state, dispatch];
-};
-
 // type SelectedValueComponent = React.ComponentType<
 //   { selected: boolean } & { ref: React.Ref<HTMLElement> }
 // >;
 const SelectedValueWrapper = React.forwardRef<any, any>(
-  ({ placeholder, dispatch, open, component: Component, state, noFormField }, ref) => {
+  ({ placeholder, dispatch, open, component: Component, state, noFormField, disabled }, ref) => {
     const screenReaderText =
       state.value.length === 1
         ? R.pathOr('', [0, 'label'], state.value)
@@ -215,6 +198,7 @@ const SelectedValueWrapper = React.forwardRef<any, any>(
             aria-haspopup="listbox"
             aria-expanded={open ? 'true' : 'false'}
             onClick={handleClick}
+            disabled={disabled}
             tabIndex={0}
           >
             <div style={{ flex: 1 }} aria-hidden="true">
@@ -250,8 +234,24 @@ const Select = props => {
     options,
     components,
     noFormField,
+    reducer = defaultSelectReducer,
+    initialState = defaultSelectInitialState,
+    disabled,
   } = props;
-  const [state, dispatch] = useReducerOrProvider({ options, placeholder, value: valueFromProps });
+  const [state, dispatch] = React.useReducer(reducer, initialState);
+
+  // Using useMemo for synchronous setting initial state
+  // FIXME: is there a better way?
+  React.useMemo(() => {
+    dispatch({
+      type: ActionTypes['Select.Init'],
+      payload: {
+        options,
+        placeholder,
+        ...(Array.isArray(valueFromProps) ? { valueFromProps } : {}),
+      },
+    });
+  }, [options, placeholder, dispatch, valueFromProps]);
 
   const previousState = usePrevious(state);
 
@@ -304,11 +304,17 @@ const Select = props => {
 
   return (
     <SelectStateContext.Provider value={[state, dispatch]}>
-      <FormFieldOrFragment noFormField={noFormField} {...props} ref={inputWrapperRef}>
+      <FormFieldOrFragment
+        noFormField={noFormField}
+        {...props}
+        ref={inputWrapperRef}
+        disabled={disabled}
+      >
         <SelectedValueWrapper
           state={state}
           ref={buttonRef}
           open={open}
+          disabled={disabled}
           noFormField={noFormField}
           placeholder={placeholder}
           dispatch={dispatch}

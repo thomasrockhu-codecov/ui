@@ -7,7 +7,7 @@ import { Display } from '../../../common/Display';
 
 const actionTypes = Input.Select.defaults.actionTypes;
 const useSelectReducer = Input.Select.useSelectReducer;
-const options = [
+const accountOptions = [
   {
     label: 'First account',
     value: '1',
@@ -31,21 +31,6 @@ const options = [
   },
 ];
 
-// :
-
-const Log = () => {
-  const [state, dispatch] = useSelectReducer();
-  return (
-    <Box mt={20}>
-      Inner state of Input.Select:
-      <pre>{JSON.stringify(state, null, 2)}</pre>
-      <Button onClick={() => dispatch({ type: actionTypes['Select.Open'] })}>Open</Button>
-      <Button variant="secondary" onClick={() => dispatch({ type: actionTypes['Select.Close'] })}>
-        Close
-      </Button>
-    </Box>
-  );
-};
 const StyledBox = styled(Box)`
   cursor: pointer;
   background: ${p => p.theme.color.card};
@@ -132,13 +117,14 @@ storiesOf('Molecules | Input / Select', module)
   .add('Default', () => {
     return (
       <Input.Select
-        options={options}
+        options={accountOptions}
         label="User account"
         placeholder="Select account"
         onChange={action('change')}
       />
     );
   })
+
   .add('Controlled', () => {
     const Component = () => {
       const [selectedValue, setSelectedValue] = React.useState<Array<any>>([]);
@@ -184,7 +170,7 @@ storiesOf('Molecules | Input / Select', module)
             title: 'Disabled',
             component: (
               <Input.Select
-                options={options}
+                options={accountOptions}
                 label="User account"
                 disabled
                 placeholder="Select account"
@@ -195,7 +181,7 @@ storiesOf('Molecules | Input / Select', module)
             title: 'Error',
             component: (
               <Input.Select
-                options={options}
+                options={accountOptions}
                 label="User account"
                 error="Some error"
                 placeholder="Select account"
@@ -206,7 +192,7 @@ storiesOf('Molecules | Input / Select', module)
             title: 'Info',
             component: (
               <Input.Select
-                options={options}
+                options={accountOptions}
                 label="User account"
                 extraInfo="Some extra info"
                 placeholder="Select account"
@@ -217,7 +203,7 @@ storiesOf('Molecules | Input / Select', module)
             title: 'Success',
             component: (
               <Input.Select
-                options={options}
+                options={accountOptions}
                 label="User account"
                 success
                 placeholder="Select account"
@@ -234,7 +220,7 @@ storiesOf('Molecules | Input / Select', module)
         <Input.Select
           type
           components={{ ListItem: AccountListItem }}
-          options={options}
+          options={accountOptions}
           label="Open me"
           placeholder="Select account"
           onChange={action('change1')}
@@ -248,7 +234,7 @@ storiesOf('Molecules | Input / Select', module)
         components={{
           SelectedValue: AccountValue,
         }}
-        options={options}
+        options={accountOptions}
         label="Select something"
         placeholder="Select account"
         onChange={action('change')}
@@ -263,7 +249,7 @@ storiesOf('Molecules | Input / Select', module)
           SelectedValue: AccountValue,
           ListItem: AccountListItem,
         }}
-        options={options}
+        options={accountOptions}
         label="User account"
         onChange={action('value changed')}
         onStateChange={action('state changed')}
@@ -271,20 +257,7 @@ storiesOf('Molecules | Input / Select', module)
       />
     );
   })
-  .add('Provider/Consumer', () => {
-    return (
-      <Input.Select.Provider>
-        <Input.Select
-          options={options}
-          label="User account"
-          onChange={action('value changed')}
-          onStateChange={action('state changed')}
-          placeholder="Select account"
-        />
-        <Log />
-      </Input.Select.Provider>
-    );
-  })
+
   .add('Link with dropdown and search box', () => {
     const SearchContext = React.createContext<[string, React.ChangeEventHandler]>(['', () => {}]);
     const Component = () => {
@@ -332,29 +305,29 @@ storiesOf('Molecules | Input / Select', module)
 
       const hugeOptionsList = React.useMemo(
         () =>
-          options
+          accountOptions
             .concat(
-              options.map(x => ({
+              accountOptions.map(x => ({
                 ...x,
                 value: x.value + Math.random(),
                 label: x.label + Math.random(),
               })),
             )
             .concat(
-              options.map(x => ({
+              accountOptions.map(x => ({
                 ...x,
                 value: x.value + Math.random(),
                 label: x.label + Math.random(),
               })),
             )
             .concat(
-              options.map(x => ({
+              accountOptions.map(x => ({
                 ...x,
                 value: x.value + Math.random(),
                 label: x.label + Math.random(),
               })),
             ),
-        [options],
+        [accountOptions],
       );
 
       const filteredOptions = hugeOptionsList.filter(x =>
@@ -377,20 +350,20 @@ storiesOf('Molecules | Input / Select', module)
     return <Component />;
   })
   .add(`🚧 Multiselect (WIP, don't use for now)`, () => {
-    const multiselectReducer = (state, action) => {
-      if (action.type === actionTypes['Select.SelectValue']) {
+    const multiselectReducer = (state, incomingAction) => {
+      if (incomingAction.type === actionTypes['Select.SelectValue']) {
         return {
           ...state,
-          value: [...state.value, action.payload],
+          value: [...state.value, incomingAction.payload],
         };
       }
-      if (action.type === 'Select.DeselectValue') {
+      if (incomingAction.type === 'Select.DeselectValue') {
         return {
           ...state,
-          value: state.value.filter(x => !Object.is(x, action.payload)),
+          value: state.value.filter(x => !Object.is(x, incomingAction.payload)),
         };
       }
-      return Input.Select.defaults.reducer(state, action);
+      return Input.Select.defaults.reducer(state, incomingAction);
     };
 
     const MultiSelectValue = (_, ref) => {
@@ -401,16 +374,15 @@ storiesOf('Molecules | Input / Select', module)
         </FlexedBox>
       );
     };
+
     return (
-      <Input.Select.Provider value={[multiselectReducer]}>
-        <Input.Select
-          options={options}
-          components={{ SelectedValue: MultiSelectValue }}
-          label="User account"
-          placeholder="Select account"
-          onChange={action('change')}
-        />
-        <Log />
-      </Input.Select.Provider>
+      <Input.Select
+        reducer={multiselectReducer}
+        options={accountOptions}
+        components={{ SelectedValue: MultiSelectValue }}
+        label="User account"
+        placeholder="Select account"
+        onChange={action('change')}
+      />
     );
   });
