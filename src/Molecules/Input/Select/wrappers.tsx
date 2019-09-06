@@ -1,9 +1,9 @@
 import * as React from 'react';
+import R from 'ramda';
 import styled from 'styled-components';
 import { Typography, Flexbox, VisuallyHidden } from '../../..';
 import NormalizedElements from '../../../common/NormalizedElements';
 import { defaultActionTypes } from './defaults';
-import R from 'ramda';
 
 const StyledA11yButton = styled(NormalizedElements.Button)`
   background: ${p => (p.disabled ? p.theme.color.disabledBackground : 'transparent')};
@@ -40,7 +40,6 @@ const StyledListWrapper = styled.div`
 
 export const ListWrapper = React.forwardRef<HTMLDivElement, any>(
   ({ component: Component, children, noFormField }, ref) => {
-    React.useEffect(() => () => console.log('ListWrapper ubnmount'), []);
     return (
       <StyledListWrapper ref={ref} noFormField={noFormField}>
         <Component position={noFormField ? 'left' : 'right'}>{children}</Component>

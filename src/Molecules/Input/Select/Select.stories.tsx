@@ -117,7 +117,6 @@ const AccountListItem = ({ index }, ref) => {
     </StyledBox>
   );
 };
-const handleChange = action('change');
 
 storiesOf('Molecules | Input / Select', module)
   .add('Default', () => {
@@ -127,7 +126,9 @@ storiesOf('Molecules | Input / Select', module)
         options={accountOptions}
         label="User account"
         placeholder="Select account"
-        onChange={handleChange}
+        onChange={action('change')}
+        onBlur={action('blur')}
+        onFocus={action('focus')}
       />
     );
   })
@@ -319,7 +320,7 @@ storiesOf('Molecules | Input / Select', module)
 
   .add('Link with dropdown and search box', () => {
     type SearchContextType = [string, (x: string) => void];
-    const SearchContext = React.createContext<SearchContextType>(['', (value: string) => {}]);
+    const SearchContext = React.createContext<SearchContextType>(['', (_: string) => {}]);
     const Component = () => {
       const [filterQuery, setFilterQuery] = React.useState('');
 
@@ -335,8 +336,7 @@ storiesOf('Molecules | Input / Select', module)
               <Input.Select.defaults.components.List position="left">
                 <Box px={2} mb={2}>
                   <Input.Text
-                    // FIXME: Add search icon
-                    leftAddon="🔍"
+                    leftAddon={<Icon.Search />}
                     label="Filter"
                     autoFocus
                     key={2}
@@ -401,6 +401,7 @@ storiesOf('Molecules | Input / Select', module)
           <Input.Select
             options={filteredOptions}
             label="User account"
+            autoFocusFirstOption={false}
             placeholder="Select account"
             noFormField
             components={customComponents}

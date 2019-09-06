@@ -35,8 +35,8 @@ const StyledRelativeDiv = styled.div`
 `;
 
 const FormFieldOrFragment = React.forwardRef<HTMLDivElement, any>(
-  ({ children, noFormField, open, ...props }, ref) => (
-    <StyledRelativeDiv {...(noFormField ? { ref } : {})}>
+  ({ children, noFormField, open, onFocus, onBlur, ...props }, ref) => (
+    <StyledRelativeDiv {...(noFormField ? { ref } : {})} onBlur={onBlur} onFocus={onFocus}>
       <Flexbox container alignItems="center">
         {noFormField ? (
           children
@@ -56,12 +56,15 @@ const Select = props => {
     placeholder,
     value: valueFromProps,
     onChange: onChangeFromProps,
+    onFocus,
+    onBlur,
     options,
     components,
     noFormField,
     reducer = defaultSelectReducer,
     initialState = defaultSelectInitialState,
     disabled,
+    autoFocusFirstOption = true,
   } = props;
 
   const isControlledMode = typeof valueFromProps !== 'undefined';
@@ -109,8 +112,10 @@ const Select = props => {
   });
 
   React.useLayoutEffect(() => {
-    if (itemsRefs.length > 0 && itemsRefs.every(i => Boolean(i))) {
-      itemsRefs[0].focus();
+    if (autoFocusFirstOption) {
+      if (itemsRefs.length > 0 && itemsRefs.every(i => Boolean(i))) {
+        itemsRefs[0].focus();
+      }
     }
   }, [open]);
 
@@ -132,7 +137,25 @@ const Select = props => {
   };
 
   const counter = createCounter();
-  React.useEffect(() => () => console.log('Select unmount'), []);
+  // Not using isFocused in state, hence ref
+  const isFocused = React.useRef(false);
+
+  const handleBlur = e => {
+    if (!onBlur) return;
+    if (inputWrapperRef && !inputWrapperRef.current.contains(e.relatedTarget)) {
+      onBlur(e);
+      isFocused.current = false;
+    }
+  };
+  const handleFocus = e => {
+    if (!onFocus) return;
+    if (inputWrapperRef && inputWrapperRef.current.contains(document.activeElement)) {
+      if (!isFocused.current) {
+        onFocus(e);
+        isFocused.current = true;
+      }
+    }
+  };
 
   if (!state.initialized) {
     return null;
@@ -146,6 +169,8 @@ const Select = props => {
         ref={inputWrapperRef}
         disabled={disabled}
         open={open}
+        onFocus={handleFocus}
+        onBlur={handleBlur}
       >
         <SelectedValueWrapper
           state={state}
