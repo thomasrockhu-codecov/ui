@@ -2,8 +2,13 @@ import React from 'react';
 import { action } from '@storybook/addon-actions';
 import { storiesOf } from '@storybook/react';
 import styled from 'styled-components';
-import { Input, Avatar, Flexbox, Number, Typography, Box, Link, Icon, Button } from '../../..';
+import { Input, Avatar, Flexbox, Number, Typography, Box, Link, Icon } from '../../..';
 import { Display } from '../../../common/Display';
+
+const loggingReducer = (state, incomingAction) => {
+  action(incomingAction.type)(incomingAction.payload);
+  return Input.Select.defaults.reducer(state, incomingAction);
+};
 
 const actionTypes = Input.Select.defaults.actionTypes;
 const useSelectReducer = Input.Select.useSelectReducer;
@@ -117,6 +122,7 @@ storiesOf('Molecules | Input / Select', module)
   .add('Default', () => {
     return (
       <Input.Select
+        reducer={loggingReducer}
         options={accountOptions}
         label="User account"
         placeholder="Select account"
@@ -127,36 +133,29 @@ storiesOf('Molecules | Input / Select', module)
 
   .add('Controlled', () => {
     const Component = () => {
-      const [selectedValue, setSelectedValue] = React.useState<Array<any>>([]);
       const localOptions = React.useMemo(
         () => [{ value: 1, label: 1 }, { value: 2, label: 2 }, { value: 3, label: 3 }],
         [],
       );
+      const [selectedValue, setSelectedValue] = React.useState<Array<any>>([]);
+      // Going to allow
+      // only selection of
+      // { value: 2, label: 2 } option
+      const handleChange = newValue => {
+        if (newValue.includes(localOptions[1])) {
+          setSelectedValue(newValue);
+        }
+      };
 
       return (
-        <Flexbox container direction="column">
-          <Input.Select
-            options={localOptions}
-            value={selectedValue}
-            label="User account"
-            placeholder="Select account"
-            onChange={setSelectedValue}
-          />
-          <Flexbox item flex="0">
-            <Button
-              onClick={() =>
-                setSelectedValue([
-                  localOptions[
-                    (localOptions.findIndex(x => selectedValue.includes(x)) + 1) %
-                      localOptions.length
-                  ],
-                ])
-              }
-            >
-              next item
-            </Button>
-          </Flexbox>
-        </Flexbox>
+        <Input.Select
+          reducer={loggingReducer}
+          options={localOptions}
+          value={selectedValue}
+          label="Can select only #2"
+          placeholder="Select me"
+          onChange={handleChange}
+        />
       );
     };
     return <Component />;
@@ -205,6 +204,62 @@ storiesOf('Molecules | Input / Select', module)
               <Input.Select
                 options={accountOptions}
                 label="User account"
+                success
+                placeholder="Select account"
+              />
+            ),
+          },
+        ]}
+      />
+    );
+  })
+  .add('Size = `s` variations', () => {
+    return (
+      <Display
+        items={[
+          {
+            title: 'Disabled',
+            component: (
+              <Input.Select
+                options={accountOptions}
+                label="User account"
+                size="s"
+                disabled
+                placeholder="Select account"
+              />
+            ),
+          },
+          {
+            title: 'Error',
+            component: (
+              <Input.Select
+                options={accountOptions}
+                size="s"
+                label="User account"
+                error="Some error"
+                placeholder="Select account"
+              />
+            ),
+          },
+          {
+            title: 'Info',
+            component: (
+              <Input.Select
+                options={accountOptions}
+                label="User account"
+                size="s"
+                extraInfo="Some extra info"
+                placeholder="Select account"
+              />
+            ),
+          },
+          {
+            title: 'Success',
+            component: (
+              <Input.Select
+                options={accountOptions}
+                label="User account"
+                size="s"
                 success
                 placeholder="Select account"
               />

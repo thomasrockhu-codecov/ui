@@ -1,3 +1,12 @@
+export type ActionTypes =
+  | 'Select.Open'
+  | 'Select.Close'
+  | 'Select.Toggle'
+  | 'Select.SelectValue'
+  | 'Select.DeselectValue'
+  | 'Select.SyncState';
+
+export type Action = { type: ActionTypes; payload?: any };
 export type Props = {
   className?: string;
   /** Label should always be presented - A11y */
@@ -44,6 +53,7 @@ export type Option = OptionBase & {};
 
 export type SelectState = {
   open: boolean;
+  controlled: boolean;
   initialized: boolean;
   options: Array<Option>;
   placeholder: React.ReactNode;

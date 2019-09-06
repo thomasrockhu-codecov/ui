@@ -1,20 +1,24 @@
 import React from 'react';
 import styled from 'styled-components';
 import R from 'ramda';
-import { Typography, Icon, Flexbox, VisuallyHidden, Box } from '../../..';
+import { Typography, Icon, Flexbox, VisuallyHidden } from '../../..';
 import { FormField } from '../FormField';
-
-import {
-  List as DefaultList,
-  ListItem as DefaultListItem,
-} from './SingleSelectList/SingleSelectList';
 
 import NormalizedElements from '../../../common/NormalizedElements';
 import { usePrevious, useOnClickOutside } from '../../../common/Hooks';
 import { useKeyboardNavigation } from './useKeyboardNavigation';
 
 import { noop, createCounter } from './utils';
-import { Option, OptionBase, SelectState } from './Select.types';
+import { Option } from './Select.types';
+
+import { useSelectReducer, SelectStateContext } from './context';
+import {
+  useComponentsWithDefaults,
+  defaultComponents,
+  defaultActionTypes,
+  defaultSelectReducer,
+  defaultSelectInitialState,
+} from './defaults';
 
 const Chevron = styled(Icon.ChevronDown)<{ open: boolean }>`
   transform: translateY(-50%) ${p => (p.open ? 'rotate(180deg)' : 'rotate(0)')};
@@ -52,79 +56,14 @@ const StyledA11yButton = styled(NormalizedElements.Button)`
   `}
 `;
 
-// FIXME
-// Need to upgrade to ts@3.5+
-// Then it can be written as
-// ActionTypes = {} as const
-const ActionTypes = {
-  'Select.Open': 'Select.Open' as 'Select.Open',
-  'Select.Close': 'Select.Close' as 'Select.Close',
-  'Select.Toggle': 'Select.Toggle' as 'Select.Toggle',
-  'Select.SelectValue': 'Select.SelectValue' as 'Select.SelectValue',
-  'Select.DeselectValue': 'Select.DeselectValue' as 'Select.DeselectValue',
-  'Select.Init': 'Select.Init' as 'Select.Init',
-};
-
-type ActionTypes = keyof typeof ActionTypes;
-type Action = { type: ActionTypes; payload?: any };
-
-const defaultSelectInitialState: SelectState = {
-  open: false,
-  value: [],
-  options: [],
-  placeholder: '',
-  initialized: false,
-};
-
-const defaultSelectReducer = (state: SelectState, action: Action): SelectState => {
-  switch (action.type) {
-    case ActionTypes['Select.Open']:
-      return { ...state, open: true };
-
-    case ActionTypes['Select.Toggle']:
-      return { ...state, open: !state.open };
-
-    case ActionTypes['Select.Close']:
-      return { ...state, open: false };
-
-    case ActionTypes['Select.SelectValue']:
-      return { ...state, open: false, value: [action.payload] };
-
-    case ActionTypes['Select.Init']:
-      return { ...state, ...action.payload, initialized: true };
-
-    default:
-      return state;
-  }
-};
-
-const getLabelOrPlaceholder = <T extends OptionBase>({
-  value,
-  placeholder,
-}: {
-  options: T[];
-  value: any[];
-  placeholder: React.ReactNode;
-}) => {
-  if (value.length === 0) return placeholder;
-
-  const selectedOptionLabel = R.pathOr('', [0, 'label'], value);
-  return selectedOptionLabel;
-};
-
-const SelectStateContext = React.createContext<[React.Reducer<any, any>, any] | null>(null);
-
-const useSelectReducer = () => {
-  const [state, dispatch] = React.useContext(SelectStateContext)!;
-  return [state, dispatch];
-};
+const StyledRelativeDiv = styled.div`
+  position: relative;
+  display: inline-block;
+`;
 
 const FormFieldOrFragment = React.forwardRef<HTMLDivElement, any>(
   ({ children, noFormField, ...props }, ref) => (
-    <div
-      {...(noFormField ? { ref } : {})}
-      style={{ position: 'relative', display: 'inline-block' }}
-    >
+    <StyledRelativeDiv {...(noFormField ? { ref } : {})}>
       <Flexbox container alignItems="center">
         {noFormField ? (
           children
@@ -134,51 +73,10 @@ const FormFieldOrFragment = React.forwardRef<HTMLDivElement, any>(
           </FormField>
         )}
       </Flexbox>
-    </div>
+    </StyledRelativeDiv>
   ),
 );
 
-const defaultComponents = {
-  ListItem: React.forwardRef<HTMLDivElement, { index: number }>(({ index }, ref) => {
-    const [state] = useSelectReducer();
-    const option = state.options[index];
-    const selected = state.value.includes(option);
-
-    return (
-      <DefaultListItem
-        ref={ref}
-        selected={selected}
-        disabled={option.disabled}
-        label={option.label}
-        value={option.value}
-      />
-    );
-  }),
-  List: DefaultList,
-  SelectedValue: () => {
-    const [state] = useSelectReducer();
-    return <Box px={2}>{getLabelOrPlaceholder(state)}</Box>;
-  },
-};
-
-function SelectStateProvider<S extends {}, A extends {}>({
-  children,
-  value = [],
-}: {
-  children: React.ReactNode;
-  value?: [React.Reducer<S, A>?, S?];
-}) {
-  const [reducer = defaultSelectReducer, initialState = defaultSelectInitialState] = value;
-  return (
-    <SelectStateContext.Provider value={React.useReducer(reducer, initialState) as any}>
-      {children}
-    </SelectStateContext.Provider>
-  );
-}
-
-// type SelectedValueComponent = React.ComponentType<
-//   { selected: boolean } & { ref: React.Ref<HTMLElement> }
-// >;
 const SelectedValueWrapper = React.forwardRef<any, any>(
   ({ placeholder, dispatch, open, component: Component, state, noFormField, disabled }, ref) => {
     const screenReaderText =
@@ -186,9 +84,10 @@ const SelectedValueWrapper = React.forwardRef<any, any>(
         ? R.pathOr('', [0, 'label'], state.value)
         : `${state.value.length} items`;
 
-    const handleClick = React.useCallback(() => dispatch({ type: ActionTypes['Select.Toggle'] }), [
-      dispatch,
-    ]);
+    const handleClick = React.useCallback(
+      () => dispatch({ type: defaultActionTypes['Select.Toggle'] }),
+      [dispatch],
+    );
     return (
       <Flexbox container direction="column" justifyContent="center">
         <Typography type="secondary">
@@ -213,19 +112,6 @@ const SelectedValueWrapper = React.forwardRef<any, any>(
   },
 );
 
-const useComponentsWithDefaults = (components: any = {}) => {
-  return React.useMemo(
-    () =>
-      // @ts-ignore
-      R.pipe(
-        // @ts-ignore
-        R.map(React.forwardRef),
-        R.mergeRight(defaultComponents),
-      )(components),
-    [components],
-  );
-};
-
 const Select = props => {
   const {
     placeholder,
@@ -238,42 +124,47 @@ const Select = props => {
     initialState = defaultSelectInitialState,
     disabled,
   } = props;
-  const [state, dispatch] = React.useReducer(reducer, initialState);
 
-  // Using useMemo for synchronous setting initial state
-  // FIXME: is there a better way?
-  React.useMemo(() => {
-    dispatch({
-      type: ActionTypes['Select.Init'],
-      payload: {
-        options,
-        placeholder,
-        ...(Array.isArray(valueFromProps) ? { valueFromProps } : {}),
-      },
-    });
-  }, [options, placeholder, dispatch, valueFromProps]);
-
-  const previousState = usePrevious(state);
-
-  React.useEffect(() => {
-    if (previousState) {
-      if (onChangeFromProps && !Object.is(previousState.value, state.value)) {
-        onChangeFromProps(state.value);
-      }
-    }
-  }, [state, onChangeFromProps]); // eslint-disable-line react-hooks/exhaustive-deps
-
+  const isControlledMode = typeof valueFromProps !== 'undefined';
+  const [_state, dispatch] = React.useReducer(reducer, initialState);
+  const previousState = usePrevious(_state);
   const { ListItem, List, SelectedValue } = useComponentsWithDefaults(components);
+
+  const valueUpdatedInControlledMode = isControlledMode && _state.value !== valueFromProps;
+  const valueUpdatedInUncontrolledMode =
+    !isControlledMode && previousState && !Object.is(previousState.value, _state.value);
+
+  if (onChangeFromProps && (valueUpdatedInUncontrolledMode || valueUpdatedInControlledMode)) {
+    onChangeFromProps(_state.value);
+  }
+
+  // Adjusting state for possible
+  // changes from props
+  const state = React.useMemo(
+    () =>
+      reducer(state, {
+        type: defaultActionTypes['Select.SyncState'],
+        payload: {
+          options,
+          placeholder,
+          value: isControlledMode ? valueFromProps : state.value,
+        },
+      }),
+    [_state, options, placeholder, isControlledMode, valueFromProps, _state.value],
+  );
+
   const { open, value } = state;
 
-  const buttonRef = React.useRef();
+  const buttonRef = React.useRef<HTMLButtonElement>();
   const customSelectListRef = React.useRef();
 
   const { setRef, onKeyDown: handleListItemKeyDown, itemsRefs } = useKeyboardNavigation({
     itemsLength: options.filter(x => !x.disabled).length,
     onEscape: () => {
-      dispatch({ type: ActionTypes['Select.Close'] });
-      buttonRef.current.focus();
+      dispatch({ type: defaultActionTypes['Select.Close'] });
+      if (buttonRef.current) {
+        buttonRef.current.focus();
+      }
     },
   });
 
@@ -285,14 +176,18 @@ const Select = props => {
 
   const inputWrapperRef = React.useRef();
   useOnClickOutside([customSelectListRef, inputWrapperRef], () =>
-    dispatch({ type: ActionTypes['Select.Close'] }),
+    dispatch({ type: defaultActionTypes['Select.Close'] }),
   );
 
   const handleClickListItem = ({ selected, option }, e) => {
-    dispatch({
-      type: selected ? ActionTypes['Select.DeselectValue'] : ActionTypes['Select.SelectValue'],
+    const action = {
+      type: selected
+        ? defaultActionTypes['Select.DeselectValue']
+        : defaultActionTypes['Select.SelectValue'],
       payload: option,
-    });
+    };
+
+    dispatch(action);
     e.preventDefault();
   };
 
@@ -410,14 +305,12 @@ const ListItemWrapper = React.forwardRef<
 });
 
 const defaults = {
-  actionTypes: ActionTypes,
+  actionTypes: defaultActionTypes,
   reducer: defaultSelectReducer,
   initialState: defaultSelectInitialState,
   components: defaultComponents,
 };
-Select.Provider = SelectStateProvider;
-Select.Consumer = SelectStateContext.Consumer;
-Select.Context = SelectStateContext;
+
 Select.useSelectReducer = useSelectReducer;
 
 Select.defaults = defaults;
