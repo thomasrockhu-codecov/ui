@@ -11,15 +11,24 @@ import { Cross } from './components/Cross';
 import { CrossCircle } from './components/CrossCircle';
 import { DirectionDown } from './components/DirectionDown';
 import { DirectionUp } from './components/DirectionUp';
+import { File } from './components/File';
 import { Flag } from './components/Flag';
 import { Globe } from './components/Globe';
+import { Import } from './components/Import';
 import { InfoCircle } from './components/InfoCircle';
 import { Pen } from './components/Pen';
+import { Plus } from './components/Plus';
+import { PlusWithCircle } from './components/PlusWithCircle';
 import { Printer } from './components/Printer';
+import { Minus } from './components/Minus';
+import { Questionmark } from './components/Questionmark';
+import { Search } from './components/Search';
 import { Star } from './components/Star';
 import { Star24 } from './components/Star24';
+import { ThreeDots } from './components/ThreeDots';
 import { Trash } from './components/Trash';
 import { WarningTriangle } from './components/WarningTriangle';
+import { Rtmt } from './components/Rtmt';
 
 export default {
   AddWithCircle,
@@ -35,13 +44,22 @@ export default {
   CrossCircle,
   DirectionDown,
   DirectionUp,
+  File,
   Flag,
   Globe,
+  Import,
   InfoCircle,
   Pen,
+  Plus,
+  PlusWithCircle,
   Printer,
+  Minus,
+  Questionmark,
+  Search,
   Star,
   Star24,
+  ThreeDots,
   Trash,
   WarningTriangle,
+  Rtmt,
 };

@@ -1,3 +1,83 @@
+# [1.37.0](https://github.com/nordnet/ui/compare/v1.36.0...v1.37.0) (2019-09-05)
+
+
+### Bug Fixes
+
+* always trigger onchange if changed ([011a787](https://github.com/nordnet/ui/commit/011a787))
+* merge master ([a19c238](https://github.com/nordnet/ui/commit/a19c238))
+* merge master ([a8bfe11](https://github.com/nordnet/ui/commit/a8bfe11))
+* pr feedback ([40bf915](https://github.com/nordnet/ui/commit/40bf915))
+* reset background of button in link component ([d5c5e93](https://github.com/nordnet/ui/commit/d5c5e93))
+* squash commit ([434a3b8](https://github.com/nordnet/ui/commit/434a3b8))
+* typo in doc ([a86d664](https://github.com/nordnet/ui/commit/a86d664))
+
+
+### Features
+
+* 🎸 add icons import, plus, pluswithcircle, threedots ([887d76e](https://github.com/nordnet/ui/commit/887d76e))
+* preserve aspect ratio and stories ([b8566b9](https://github.com/nordnet/ui/commit/b8566b9))
+
+# [1.36.0](https://github.com/nordnet/ui/compare/v1.35.0...v1.36.0) (2019-09-04)
+
+
+### Features
+
+* create access to inner components ([602f4f2](https://github.com/nordnet/ui/commit/602f4f2))
+
+# [1.35.0](https://github.com/nordnet/ui/compare/v1.34.0...v1.35.0) (2019-09-04)
+
+
+### Features
+
+* 🎸 add new icon for RTMT ([822ce39](https://github.com/nordnet/ui/commit/822ce39))
+* 🎸 enable custom viewbox size for IconBase ([a42a645](https://github.com/nordnet/ui/commit/a42a645))
+
+# [1.34.0](https://github.com/nordnet/ui/compare/v1.33.0...v1.34.0) (2019-09-04)
+
+
+### Bug Fixes
+
+* remove manual fill ([d227330](https://github.com/nordnet/ui/commit/d227330))
+* ts props ([55f3637](https://github.com/nordnet/ui/commit/55f3637))
+
+
+### Features
+
+* add questionmark icon ([ac33b03](https://github.com/nordnet/ui/commit/ac33b03))
+
+# [1.33.0](https://github.com/nordnet/ui/compare/v1.32.1...v1.33.0) (2019-09-03)
+
+
+### Bug Fixes
+
+* merge master ([858b71b](https://github.com/nordnet/ui/commit/858b71b))
+* mobile full screen modal ([8b03457](https://github.com/nordnet/ui/commit/8b03457))
+
+
+### Features
+
+* **modal:** change modal to use framer-motion ([6571fa3](https://github.com/nordnet/ui/commit/6571fa3))
+
+## [1.32.1](https://github.com/nordnet/ui/compare/v1.32.0...v1.32.1) (2019-08-30)
+
+
+### Bug Fixes
+
+* add default values to external link ([26e437c](https://github.com/nordnet/ui/commit/26e437c))
+
+# [1.32.0](https://github.com/nordnet/ui/compare/v1.31.0...v1.32.0) (2019-08-23)
+
+
+### Bug Fixes
+
+* 💂‍snapshot ([d56896f](https://github.com/nordnet/ui/commit/d56896f))
+
+
+### Features
+
+* 🎸 add search and file icons ([a268276](https://github.com/nordnet/ui/commit/a268276))
+* make link suppor external urls ([0b6a7f2](https://github.com/nordnet/ui/commit/0b6a7f2))
+
 # [1.31.0](https://github.com/nordnet/ui/compare/v1.30.0...v1.31.0) (2019-08-19)
 
 

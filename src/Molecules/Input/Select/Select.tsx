@@ -69,7 +69,7 @@ const Select = props => {
   const previousState = usePrevious(_state);
   const { ListItem, List, SelectedValue } = useComponentsWithDefaults(components);
 
-  const stateValueHasChanged = previousState || !Object.is(previousState.value, _state.value);
+  const stateValueHasChanged = previousState && !Object.is(previousState.value, _state.value);
   const valueUpdatedInControlledMode =
     isControlledMode && stateValueHasChanged && _state.value !== valueFromProps;
   const valueUpdatedInUncontrolledMode = !isControlledMode && previousState && stateValueHasChanged;

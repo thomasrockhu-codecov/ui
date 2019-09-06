@@ -2,9 +2,8 @@ import React from 'react';
 import styled, { css } from 'styled-components';
 import * as R from 'ramda';
 import { Props, Spacings } from './Box.types';
+import { isString, isNumber } from '../../common/utils';
 
-const isString = (x: any): x is string => typeof x === 'string';
-const isNumber = (x: any): x is number => typeof x === 'number';
 const isPropPresentedIn = (props: Props) => (prop: keyof Props) =>
   typeof props[prop] !== 'undefined';
 

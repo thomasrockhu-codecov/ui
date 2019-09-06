@@ -2,6 +2,22 @@
 
 exports[`Storyshots Molecules | Avatar Basic usage 1`] = `
 .c1 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c2 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #FFFFFF;
   margin: 0;
@@ -11,32 +27,18 @@ exports[`Storyshots Molecules | Avatar Basic usage 1`] = `
 }
 
 .c0 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
   background-color: #282823;
   width: 32px;
   height: 32px;
   font-size: 32px;
   border-radius: 50%;
-  line-height: 31px;
 }
 
 <div
-  className="c0"
-  size="m"
+  className="c0 c1"
 >
   <span
-    className="c1"
+    className="c2"
   >
     ASK
   </span>
@@ -45,6 +47,22 @@ exports[`Storyshots Molecules | Avatar Basic usage 1`] = `
 
 exports[`Storyshots Molecules | Avatar Best practice, with element as children 1`] = `
 .c1 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c2 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #FFFFFF;
   margin: 0;
@@ -54,32 +72,18 @@ exports[`Storyshots Molecules | Avatar Best practice, with element as children 1
 }
 
 .c0 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
   background-color: #282823;
   width: 32px;
   height: 32px;
   font-size: 32px;
   border-radius: 50%;
-  line-height: 31px;
 }
 
 <div
-  className="c0"
-  size="m"
+  className="c0 c1"
 >
   <span
-    className="c1"
+    className="c2"
   >
     <abbr
       title="Investeringssparkonto"
@@ -91,7 +95,23 @@ exports[`Storyshots Molecules | Avatar Best practice, with element as children 1
 `;
 
 exports[`Storyshots Molecules | Avatar Different sizes 1`] = `
-.c5 {
+.c4 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c7 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #FFFFFF;
   margin: 0;
@@ -100,50 +120,29 @@ exports[`Storyshots Molecules | Avatar Different sizes 1`] = `
   line-height: 1.3333333333333333;
 }
 
+.c5 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #FFFFFF;
+  margin: 0;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 1.6;
+}
+
 .c6 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
   background-color: #282823;
   width: 32px;
   height: 32px;
   font-size: 32px;
   border-radius: 50%;
-  line-height: 31px;
 }
 
 .c3 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
   background-color: #282823;
-  width: 20px;
-  height: 20px;
-  font-size: 20px;
+  width: 24px;
+  height: 24px;
+  font-size: 24px;
   border-radius: 50%;
-  line-height: 31px;
-}
-
-.c4 {
-  font-size: 8px;
 }
 
 .c0 {
@@ -218,11 +217,10 @@ exports[`Storyshots Molecules | Avatar Different sizes 1`] = `
     </div>
     <div>
       <div
-        className="c3"
-        size="s"
+        className="c3 c4"
       >
         <span
-          className="c4 c5"
+          className="c5"
         >
           ASK
         </span>
@@ -240,11 +238,10 @@ exports[`Storyshots Molecules | Avatar Different sizes 1`] = `
     </div>
     <div>
       <div
-        className="c6"
-        size="m"
+        className="c6 c4"
       >
         <span
-          className="c5"
+          className="c7"
         >
           ASK
         </span>
