@@ -23,7 +23,7 @@ const StyledDiv = styled(Flexbox)`
 `;
 
 export const Avatar: React.FunctionComponent<Props> = ({ children, size = 'm' }) => (
-  <StyledDiv alignItems="center" justifyContent="center" size={size}>
+  <StyledDiv container alignItems="center" justifyContent="center" size={size}>
     <Typography type={size === 'm' ? 'tertiary' : 'caption'} color={t => t.color.textLight}>
       {children}
     </Typography>
