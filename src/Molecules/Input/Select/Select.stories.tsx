@@ -2,7 +2,7 @@ import React from 'react';
 import { action } from '@storybook/addon-actions';
 import { storiesOf } from '@storybook/react';
 import styled from 'styled-components';
-import { Input, Avatar, Flexbox, Number, Typography, Box, Link, Icon } from '../../..';
+import { Input, Avatar, Flexbox, Number, Typography, Box, Link, Icon, Button } from '../../..';
 import { Display } from '../../../common/Display';
 
 const loggingReducer = (state, incomingAction) => {
@@ -117,6 +117,7 @@ const AccountListItem = ({ index }, ref) => {
     </StyledBox>
   );
 };
+const handleChange = action('change');
 
 storiesOf('Molecules | Input / Select', module)
   .add('Default', () => {
@@ -126,7 +127,7 @@ storiesOf('Molecules | Input / Select', module)
         options={accountOptions}
         label="User account"
         placeholder="Select account"
-        onChange={action('change')}
+        onChange={handleChange}
       />
     );
   })
@@ -148,14 +149,17 @@ storiesOf('Molecules | Input / Select', module)
       };
 
       return (
-        <Input.Select
-          reducer={loggingReducer}
-          options={localOptions}
-          value={selectedValue}
-          label="Can select only #2"
-          placeholder="Select me"
-          onChange={handleChange}
-        />
+        <>
+          <Input.Select
+            reducer={loggingReducer}
+            options={localOptions}
+            value={selectedValue}
+            label="Can select only #2"
+            placeholder="Select me"
+            onChange={handleChange}
+          />
+          <Button onClick={() => setSelectedValue([localOptions[0]])}>Select 1st</Button>
+        </>
       );
     };
     return <Component />;
@@ -314,7 +318,8 @@ storiesOf('Molecules | Input / Select', module)
   })
 
   .add('Link with dropdown and search box', () => {
-    const SearchContext = React.createContext<[string, React.ChangeEventHandler]>(['', () => {}]);
+    type SearchContextType = [string, (x: string) => void];
+    const SearchContext = React.createContext<SearchContextType>(['', (value: string) => {}]);
     const Component = () => {
       const [filterQuery, setFilterQuery] = React.useState('');
 
@@ -325,6 +330,7 @@ storiesOf('Molecules | Input / Select', module)
             const handleChange = React.useCallback(e => setFilterQueryInner(e.target.value), [
               setFilterQueryInner,
             ]);
+            React.useEffect(() => () => setFilterQueryInner(''), []);
             return (
               <Input.Select.defaults.components.List position="left">
                 <Box px={2} mb={2}>
@@ -332,6 +338,7 @@ storiesOf('Molecules | Input / Select', module)
                     // FIXME: Add search icon
                     leftAddon="🔍"
                     label="Filter"
+                    autoFocus
                     key={2}
                     value={filterQueryInner}
                     onChange={handleChange}

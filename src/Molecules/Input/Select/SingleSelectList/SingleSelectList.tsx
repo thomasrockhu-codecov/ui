@@ -33,18 +33,18 @@ const commonTriangleCss = css<any>`
   border-right: 10px solid transparent;
 `;
 
-const Triangle = styled.div.attrs({ 'aria-hidden': true })`
+const triangleCss = css`
   &:before {
     ${leftAndRightCss}
     ${commonTriangleCss}
-    top: -10px;
+  top: -10px;
     border-bottom: 10px solid;
     border-bottom-color: #ebebe8;
   }
   &:after {
     ${leftAndRightCss}
     ${commonTriangleCss}
-    top: -8px;
+  top: -8px;
     border-bottom: 10px solid;
     border-bottom-color: #ffffff;
   }
@@ -61,11 +61,11 @@ const StyledList = styled(UIList as any)`
   padding-top: 8px;
   padding-bottom: 8px;
   box-shadow: 0 2px 4px 0 rgba(40, 40, 35, 0.15);
+  ${triangleCss}
 `;
 
 export const List: React.FC<ListProps> = ({ children, position }) => (
-  <StyledList role="listbox">
-    <Triangle position={position} />
+  <StyledList role="listbox" position={position}>
     {children}
   </StyledList>
 );
