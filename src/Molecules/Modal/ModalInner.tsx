@@ -52,7 +52,7 @@ const RightAlignedFlex = styled(Flexbox)`
   margin-left: auto;
 `;
 
-const Content = styled.div`
+export const Content = styled.div`
   max-height: 50vh;
   overflow-y: auto;
 `;
