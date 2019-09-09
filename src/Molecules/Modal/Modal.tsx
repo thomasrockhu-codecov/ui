@@ -1,11 +1,12 @@
 import React, { useState } from 'react';
 import { Props } from './Modal.types';
 import { isBoolean } from '../../common/utils';
-import { ModalInner, Dialog } from './ModalInner';
+import { ModalInner, Dialog, Content } from './ModalInner';
 import { Portal } from '../..';
 
 const components = {
   Dialog,
+  Content,
 };
 
 export const Modal: React.FC<Props> & {
