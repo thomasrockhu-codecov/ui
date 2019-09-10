@@ -10,10 +10,9 @@ exports[`Storyshots Molecules | Input / FormFieldSimple Default 1`] = `
 }
 
 .c1 {
-  width: 100%;
-  overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  cursor: pointer;
 }
 
 .c2 {
@@ -107,10 +106,9 @@ exports[`Storyshots Molecules | Input / FormFieldSimple Error 1`] = `
 }
 
 .c1 {
-  width: 100%;
-  overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  cursor: pointer;
 }
 
 .c2 {
@@ -210,10 +208,9 @@ exports[`Storyshots Molecules | Input / FormFieldSimple Extra info 1`] = `
 }
 
 .c1 {
-  width: 100%;
-  overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  cursor: pointer;
 }
 
 .c2 {
@@ -308,10 +305,9 @@ exports[`Storyshots Molecules | Input / FormFieldSimple Required 1`] = `
 }
 
 .c1 {
-  width: 100%;
-  overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  cursor: pointer;
 }
 
 .c2 {

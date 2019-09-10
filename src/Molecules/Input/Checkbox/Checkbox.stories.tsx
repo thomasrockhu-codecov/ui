@@ -19,9 +19,6 @@ storiesOf('Molecules | Input / Checkbox', module)
   .add('With default checked', () => (
     <Input.Checkbox name="example" value="green" label="Green" defaultChecked />
   ))
-  .add('With default checked', () => (
-    <Input.Checkbox name="example" value="green" label="Green" defaultChecked />
-  ))
   .add('With checked (Controlled behaviour)', () => {
     const Component = () => {
       const [checked, setChecked] = React.useState(false);

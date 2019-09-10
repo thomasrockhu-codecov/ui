@@ -2,10 +2,9 @@
 
 exports[`Storyshots Atoms | FormLabel As a wrapper 1`] = `
 .c0 {
-  width: 100%;
-  overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  cursor: pointer;
 }
 
 .c1 {
@@ -35,10 +34,9 @@ exports[`Storyshots Atoms | FormLabel As a wrapper 1`] = `
 exports[`Storyshots Atoms | FormLabel Default 1`] = `
 Array [
   .c0 {
-  width: 100%;
-  overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  cursor: pointer;
 }
 
 .c1 {
@@ -77,10 +75,9 @@ Array [
   overflow: hidden;
   -webkit-clip: rect(1px,1px,1px,1px);
   clip: rect(1px,1px,1px,1px);
-  width: 100%;
-  overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  cursor: pointer;
 }
 
 .c1 {
