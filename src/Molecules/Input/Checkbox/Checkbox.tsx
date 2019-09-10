@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
-import { FormLabel, Icon, Flexbox } from '../../..';
-import { Props } from './Checkbox.types';
+import { FormLabel, Icon, Flexbox, Typography } from '../../..';
+import { CheckboxComponent } from './Checkbox.types';
 
 const CHECKBOX_SIZE = 5;
 
@@ -9,7 +9,7 @@ const StyledFormLabel = styled(FormLabel)`
   position: relative;
 `;
 
-const Checkmark = styled(Flexbox)`
+const CheckmarkBox = styled(Flexbox)`
   width: ${p => p.theme.spacing.unit(CHECKBOX_SIZE)}px;
   height: ${p => p.theme.spacing.unit(CHECKBOX_SIZE)}px;
   border: 1px solid ${p => p.theme.color.inputBorder};
@@ -22,36 +22,38 @@ const Input = styled.input`
   width: 0;
   cursor: pointer;
 
-  &:checked + ${Checkmark} {
+  &:checked + ${CheckmarkBox} {
     border-color: ${p => p.theme.color.cta};
     background: ${p => p.theme.color.cta};
   }
 
-  &[disabled] + ${Checkmark} {
+  &[disabled] + ${CheckmarkBox} {
     border-color: ${p => p.theme.color.disabledBackground};
   }
 
-  &:checked[disabled] + ${Checkmark} {
+  &:checked[disabled] + ${CheckmarkBox} {
     border-color: ${p => p.theme.color.disabledBackground};
     background: ${p => p.theme.color.disabledBackground};
   }
 
-  &:focus + ${Checkmark} {
+  &:focus + ${CheckmarkBox} {
     border-color: ${p => p.theme.color.cta};
   }
 
-  &:checked:focus + ${Checkmark} {
+  &:checked:focus + ${CheckmarkBox} {
     outline: 5px auto ${p => p.theme.color.cta};
   }
 `;
 
-const LabelText = styled.span`
+const Label = styled(Typography)`
   padding-left: ${p => p.theme.spacing.unit(2)}px;
 `;
 
-const Checkbox: React.FC<Props> = props => {
+const Checkbox: CheckboxComponent = props => {
   const {
     autoFocus,
+    className,
+    checked,
     defaultChecked,
     disabled,
     label,
@@ -67,12 +69,13 @@ const Checkbox: React.FC<Props> = props => {
   } = props;
 
   return (
-    <StyledFormLabel {...props}>
+    <StyledFormLabel className={className}>
       <Flexbox container>
         <Input
           {...{
             type: 'checkbox',
             autoFocus,
+            checked,
             defaultChecked,
             disabled,
             name,
@@ -86,10 +89,12 @@ const Checkbox: React.FC<Props> = props => {
             value,
           }}
         />
-        <Checkmark container alignItems="center" justifyContent="center">
+        <CheckmarkBox container alignItems="center" justifyContent="center">
           <Icon.Plus size={3} color={t => t.color.backgroundInput} />
-        </Checkmark>
-        <LabelText>{label}</LabelText>
+        </CheckmarkBox>
+        <Label type="secondary" color={t => (disabled ? t.color.disabledText : t.color.text)}>
+          {label}
+        </Label>
       </Flexbox>
     </StyledFormLabel>
   );

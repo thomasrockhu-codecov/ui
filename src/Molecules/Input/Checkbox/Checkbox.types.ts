@@ -1,19 +1,22 @@
 export type Props = {
-  label: string;
   autoFocus?: boolean;
+  checked?: boolean;
   className?: string;
   defaultChecked?: boolean;
   disabled?: boolean;
   error?: string;
+  label: string;
   name?: string;
-  value?: string;
   required?: boolean;
+  value?: string;
 
+  onBlur?: React.FocusEventHandler<HTMLInputElement>;
   onChange?: React.ChangeEventHandler<HTMLInputElement>;
   onClick?: React.MouseEventHandler<HTMLInputElement>;
-  onBlur?: React.FocusEventHandler<HTMLInputElement>;
   onFocus?: React.FocusEventHandler<HTMLInputElement>;
   onKeyDown?: React.KeyboardEventHandler<HTMLInputElement>;
-  onKeyUp?: React.KeyboardEventHandler<HTMLInputElement>;
   onKeyPress?: React.KeyboardEventHandler<HTMLInputElement>;
+  onKeyUp?: React.KeyboardEventHandler<HTMLInputElement>;
 };
+
+export type CheckboxComponent = React.FC<Props>;
