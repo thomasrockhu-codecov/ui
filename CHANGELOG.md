@@ -1,3 +1,11 @@
+## [1.38.1](https://github.com/nordnet/ui/compare/v1.38.0...v1.38.1) (2019-09-10)
+
+
+### Bug Fixes
+
+* handle onchange better ([91f2c28](https://github.com/nordnet/ui/commit/91f2c28))
+* update snaps ([672f4f6](https://github.com/nordnet/ui/commit/672f4f6))
+
 # [1.38.0](https://github.com/nordnet/ui/compare/v1.37.0...v1.38.0) (2019-09-10)
 
 
