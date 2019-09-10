@@ -35,6 +35,14 @@ const Input = styled.input`
     border-color: ${p => p.theme.color.disabledBackground};
     background: ${p => p.theme.color.disabledBackground};
   }
+
+  &:focus + ${Checkmark} {
+    border-color: ${p => p.theme.color.cta};
+  }
+
+  &:checked:focus + ${Checkmark} {
+    outline: 5px auto ${p => p.theme.color.cta};
+  }
 `;
 
 const LabelText = styled.span`
@@ -42,17 +50,41 @@ const LabelText = styled.span`
 `;
 
 const Checkbox: React.FC<Props> = props => {
-  const { name, value, label, defaultChecked, disabled } = props;
+  const {
+    autoFocus,
+    defaultChecked,
+    disabled,
+    label,
+    name,
+    onBlur,
+    onChange,
+    onClick,
+    onFocus,
+    onKeyDown,
+    onKeyPress,
+    onKeyUp,
+    value,
+  } = props;
 
   return (
     <StyledFormLabel {...props}>
       <Flexbox container>
         <Input
-          type="checkbox"
-          name={name}
-          value={value}
-          defaultChecked={defaultChecked}
-          disabled={disabled}
+          {...{
+            type: 'checkbox',
+            autoFocus,
+            defaultChecked,
+            disabled,
+            name,
+            onBlur,
+            onChange,
+            onClick,
+            onFocus,
+            onKeyDown,
+            onKeyPress,
+            onKeyUp,
+            value,
+          }}
         />
         <Checkmark container alignItems="center" justifyContent="center">
           <Icon.Plus size={3} color={t => t.color.backgroundInput} />

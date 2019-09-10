@@ -27,34 +27,37 @@ storiesOf('Molecules | Input / Checkbox', module)
   .add('With default checked', () => (
     <Fieldset>
       <Legend>Colors</Legend>
-      <Input.Checkbox name="example2" value="green" label="Green" defaultChecked />
-      <Input.Checkbox name="example2" value="blue" label="Blue" defaultChecked />
-      <Input.Checkbox name="example2" value="yellow" label="Yellow" />
+      <Flexbox container gutter={5}>
+        <Input.Checkbox name="example2" value="green" label="Green" defaultChecked />
+        <Input.Checkbox name="example2" value="blue" label="Blue" defaultChecked />
+        <Input.Checkbox name="example2" value="yellow" label="Yellow" />
+      </Flexbox>
     </Fieldset>
   ))
   .add('Required', () => (
     <Fieldset>
       <Legend>Colors</Legend>
-      <Input.Checkbox name="example3" value="green" label="Green" required />
-      <Input.Checkbox name="example3" value="blue" label="Blue" required />
+      <Flexbox container gutter={5}>
+        <Input.Checkbox name="example3" value="green" label="Green" required />
+        <Input.Checkbox name="example3" value="blue" label="Blue" required />
+      </Flexbox>
     </Fieldset>
   ))
   .add('Disabled', () => (
     <Fieldset>
       <Legend>Colors</Legend>
-      <Input.Checkbox name="example4" value="green" label="Green" defaultChecked disabled />
-      <Input.Checkbox name="example4" value="blue" label="Blue" disabled />
+      <Flexbox container gutter={5}>
+        <Input.Checkbox name="example4" value="green" label="Green" disabled />
+        <Input.Checkbox name="example4" value="blue" label="Blue" defaultChecked disabled />
+      </Flexbox>
     </Fieldset>
   ))
   .add('With auto focus', () => (
-    <Input.Checkbox name="example5" value="green" label="Green" autoFocus />
+    <Flexbox container gutter={5}>
+      <Input.Checkbox name="example5" value="green" label="Green" autoFocus />
+      <Input.Checkbox name="example5" value="green" label="Blue" />
+    </Flexbox>
   ))
   .add('With all actions', () => (
     <Input.Checkbox name="example6" value="green" label="Green" {...handlers} />
-  ))
-  .add('With error', () => (
-    <Input.Checkbox name="example6" value="green" label="Green" error="Error message" />
-  ))
-  .add('With success', () => (
-    <Input.Checkbox name="example3" value="green" label="Green" success />
   ));

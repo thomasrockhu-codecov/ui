@@ -8,9 +8,8 @@ export type Props = {
   name?: string;
   value?: string;
   required?: boolean;
-  success?: boolean;
 
-  onChange?: React.ChangeEvent<HTMLInputElement>;
+  onChange?: React.ChangeEventHandler<HTMLInputElement>;
   onClick?: React.MouseEventHandler<HTMLInputElement>;
   onBlur?: React.FocusEventHandler<HTMLInputElement>;
   onFocus?: React.FocusEventHandler<HTMLInputElement>;
