@@ -2,6 +2,7 @@ import { ArrowRight } from './components/ArrowRight';
 import { Attachement } from './components/Attachement';
 import { Bank } from './components/Bank';
 import { Bolt } from './components/Bolt';
+import { CheckMark } from './components/CheckMark';
 import { CheckMarkCircle } from './components/CheckMarkCircle';
 import { ChevronDown } from './components/ChevronDown';
 import { ChevronUp } from './components/ChevronUp';
@@ -33,6 +34,7 @@ export default {
   Attachement,
   Bank,
   Bolt,
+  CheckMark,
   CheckMarkCircle,
   ChevronDown,
   ChevronUp,

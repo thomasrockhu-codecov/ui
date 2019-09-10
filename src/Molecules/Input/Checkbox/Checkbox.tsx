@@ -90,7 +90,7 @@ const Checkbox: CheckboxComponent = props => {
           }}
         />
         <CheckmarkBox container alignItems="center" justifyContent="center">
-          <Icon.Plus size={3} color={t => t.color.backgroundInput} />
+          <Icon.CheckMark size={3} color={t => t.color.backgroundInput} />
         </CheckmarkBox>
         <Label type="secondary" color={t => (disabled ? t.color.disabledText : t.color.text)}>
           {label}
