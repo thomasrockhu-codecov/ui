@@ -148,7 +148,7 @@ exports[`Storyshots Molecules | Modal Default 1`] = `
   }
 }
 
-@media (min-width:992px) {
+@media (min-width:768px) {
   .c10 {
     max-height: 50vh;
   }
@@ -468,7 +468,7 @@ exports[`Storyshots Molecules | Modal Uncontrolled behavior 1`] = `
   }
 }
 
-@media (min-width:992px) {
+@media (min-width:768px) {
   .c10 {
     max-height: 50vh;
   }
@@ -766,7 +766,7 @@ exports[`Storyshots Molecules | Modal Without header 1`] = `
   }
 }
 
-@media (min-width:992px) {
+@media (min-width:768px) {
   .c9 {
     max-height: 50vh;
   }
