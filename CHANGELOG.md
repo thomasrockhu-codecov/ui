@@ -1,3 +1,16 @@
+# [1.38.0](https://github.com/nordnet/ui/compare/v1.37.0...v1.38.0) (2019-09-10)
+
+
+### Bug Fixes
+
+* 🐛 only set max-height to 50vh if desktop ([2893b34](https://github.com/nordnet/ui/commit/2893b34))
+* 🐛 use breakpoint sm ([e6c8eb6](https://github.com/nordnet/ui/commit/e6c8eb6))
+
+
+### Features
+
+* 🎸 expose modal content for styling ([ca986f5](https://github.com/nordnet/ui/commit/ca986f5))
+
 # [1.37.0](https://github.com/nordnet/ui/compare/v1.36.0...v1.37.0) (2019-09-05)
 
 
