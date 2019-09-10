@@ -53,7 +53,7 @@ const RightAlignedFlex = styled(Flexbox)`
 `;
 
 export const Content = styled.div`
-  ${({ theme }) => theme.media.greaterThan(theme.breakpoints.md)} {
+  ${({ theme }) => theme.media.greaterThan(theme.breakpoints.sm)} {
     max-height: 50vh;
   }
   overflow-y: auto;
