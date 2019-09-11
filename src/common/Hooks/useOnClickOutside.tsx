@@ -1,7 +1,7 @@
 import * as React from 'react';
 
-export default function useOnClickOutside<T extends HTMLElement>(
-  _refs: React.MutableRefObject<T | undefined> | Array<React.MutableRefObject<T | undefined>>,
+export default function useOnClickOutside(
+  _refs: React.MutableRefObject<any> | Array<React.MutableRefObject<any>>,
   handler: React.MouseEventHandler<any>,
 ) {
   React.useEffect(() => {

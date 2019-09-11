@@ -4,6 +4,7 @@ import styled from 'styled-components';
 import { Typography, Flexbox, VisuallyHidden } from '../../..';
 import NormalizedElements from '../../../common/NormalizedElements';
 import { defaultActionTypes } from './defaults';
+import { Option } from './Select.types';
 
 const StyledA11yButton = styled(NormalizedElements.Button)`
   background: ${p => (p.disabled ? p.theme.color.disabledBackground : 'transparent')};
@@ -30,7 +31,7 @@ const StyledA11yButton = styled(NormalizedElements.Button)`
   `}
 `;
 
-const StyledListWrapper = styled.div`
+const StyledListWrapper = styled.div<any>`
   width: ${p => (p.noFormField ? 'auto' : '100%')};
   height: 100%;
   position: absolute;
@@ -53,9 +54,7 @@ const StyledListItemWrapper = styled.li`
   height: 100%;
 `;
 
-type ListItemComponent = React.ComponentType<
-  Option & { selected: boolean } & { ref: React.Ref<HTMLElement> }
->;
+type ListItemComponent = React.ComponentType<{ index: number; ref: React.Ref<HTMLElement> }>;
 
 export const SelectedValueWrapper = React.forwardRef<any, any>(
   ({ placeholder, dispatch, open, component: Component, state, noFormField, disabled }, ref) => {

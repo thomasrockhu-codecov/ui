@@ -6,47 +6,44 @@ export type ActionTypes =
   | 'Select.DeselectValue'
   | 'Select.SyncState';
 
+export type ComponentTypes = 'ListItem' | 'List' | 'SelectedValue';
 export type Action = { type: ActionTypes; payload?: any };
+
 export type Props = {
-  className?: string;
-  /** Label should always be presented - A11y */
-  label: string;
-  /** But you can hide it visually */
-  hideLabel?: boolean;
-  error?: string;
+  options: Option[];
+  value?: any;
+  error?: React.ReactNode;
+  extraInfo?: React.ReactNode;
   success?: boolean;
-  /** TODO: is this needed? */
-  extraInfo?: string;
-  rightAddon?: React.ReactNode;
-  leftAddon?: React.ReactNode;
-  disabled?: boolean;
+  hideLabel?: boolean;
   placeholder?: string;
-  fullWidth?: boolean;
-  size?: 's';
-  /**
-   * You need to specify width
-   * (better in pixels), because
-   * that will affect wrapping
-   * of the error/info text
-   * underneath
+  label: React.ReactNode;
+  name?: string;
+  size?: 's' | 'm';
+  disabled?: boolean;
+  onChange?: (newValue: Option[]) => void;
+  onFocus?: React.FocusEventHandler;
+  onBlur?: React.FocusEventHandler;
+  className?: string;
+  components?: Partial<
+    Record<ComponentTypes, (props: any, ref: React.Ref<any>) => React.ReactNode>
+  >;
+  reducer?: (state: SelectState, action: Action) => SelectState;
+  initialState?: any;
+  /** use this flag if you
+   * are using dropdown not
+   * within form
+   * e.g. a link with dropdown
    */
-  width?: string | number;
-
-  value?: string;
-  defaultValue?: string;
-
-  onChange?: React.ChangeEventHandler<HTMLInputElement>;
-  onClick?: React.MouseEventHandler<HTMLInputElement>;
-  onBlur?: React.FocusEventHandler<HTMLInputElement>;
-  onFocus?: React.FocusEventHandler<HTMLInputElement>;
-  onKeyDown?: React.KeyboardEventHandler<HTMLInputElement>;
-  onKeyUp?: React.KeyboardEventHandler<HTMLInputElement>;
-  onKeyPress?: React.KeyboardEventHandler<HTMLInputElement>;
+  noFormField?: boolean;
+  /** focus first option on open */
+  autoFocusFirstOption?: boolean;
 };
 
 export type OptionBase = {
-  label: string;
-  value: number | string | boolean;
+  label: React.ReactNode;
+  value: any;
+  disabled?: boolean;
 };
 
 export type Option = OptionBase & {};

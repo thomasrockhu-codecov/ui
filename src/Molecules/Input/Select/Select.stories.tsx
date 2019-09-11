@@ -4,8 +4,9 @@ import { storiesOf } from '@storybook/react';
 import styled from 'styled-components';
 import { Input, Avatar, Flexbox, Number, Typography, Box, Link, Icon, Button } from '../../..';
 import { Display } from '../../../common/Display';
+import { SelectState, Action } from './Select.types';
 
-const loggingReducer = (state, incomingAction) => {
+const loggingReducer = (state: SelectState, incomingAction: Action) => {
   action(incomingAction.type)(incomingAction.payload);
   return Input.Select.defaults.reducer(state, incomingAction);
 };
@@ -36,7 +37,7 @@ const accountOptions = [
   },
 ];
 
-const StyledBox = styled(Box)`
+const StyledBox: React.FC<any> = styled(Box)`
   cursor: pointer;
   background: ${p => p.theme.color.card};
   outline: none;
@@ -64,11 +65,11 @@ const AccountValue = () => {
       {!selectedOption ? (
         state.placeholder
       ) : (
-        <Flexbox container item justifyContent="space-between" gutter={2} flex={1}>
+        <Flexbox container item justifyContent="space-between" gutter={2} grow={1}>
           <Flexbox item container alignItems="center" basis="32px" grow={0}>
             <Avatar size="s">{selectedOption.symbol}</Avatar>
           </Flexbox>
-          <Flexbox item container alignItems="center" flex={1}>
+          <Flexbox item container alignItems="center" grow={1}>
             <Typography type="tertiary" weight="bold" color={t => t.color.text}>
               {selectedOption.label}
             </Typography>
@@ -83,13 +84,13 @@ const AccountValue = () => {
   );
 };
 
-const AccountListItem = ({ index }, ref) => {
+const AccountListItem = ({ index }: any, ref: any) => {
   const [state] = useSelectReducer();
   const option = state.options[index];
   const selected = state.value.includes(option);
 
   return (
-    <StyledBox px={2} py={1} selected={selected} ref={ref} tabIndex={0}>
+    <StyledBox px={2} py={1} ref={ref} tabIndex={0}>
       <Flexbox container justifyContent="space-between" gutter={4}>
         <Flexbox item container alignItems="center" basis="32px" grow={0}>
           <Avatar>{option.symbol}</Avatar>
@@ -140,10 +141,11 @@ storiesOf('Molecules | Input / Select', module)
         [],
       );
       const [selectedValue, setSelectedValue] = React.useState<Array<any>>([]);
+
       // Going to allow
       // only selection of
       // { value: 2, label: 2 } option
-      const handleChange = newValue => {
+      const handleChange = (newValue: any[]) => {
         if (newValue.includes(localOptions[1])) {
           setSelectedValue(newValue);
         }
@@ -278,7 +280,6 @@ storiesOf('Molecules | Input / Select', module)
     return (
       <>
         <Input.Select
-          type
           components={{ ListItem: AccountListItem }}
           options={accountOptions}
           label="Open me"
@@ -312,7 +313,6 @@ storiesOf('Molecules | Input / Select', module)
         options={accountOptions}
         label="User account"
         onChange={action('value changed')}
-        onStateChange={action('state changed')}
         placeholder="Select account"
       />
     );
@@ -326,7 +326,7 @@ storiesOf('Molecules | Input / Select', module)
 
       const customComponents = React.useMemo(
         () => ({
-          List: ({ children }) => {
+          List: ({ children }: any) => {
             const [filterQueryInner, setFilterQueryInner] = React.useContext(SearchContext);
             const handleChange = React.useCallback(e => setFilterQueryInner(e.target.value), [
               setFilterQueryInner,
@@ -349,11 +349,11 @@ storiesOf('Molecules | Input / Select', module)
             );
           },
 
-          SelectedValue: (_, ref) => {
+          SelectedValue: (_: any, ref: React.Ref<any>) => {
             const [state] = useSelectReducer();
 
             return (
-              <Link ref={ref} tabIndex={-1} as="div">
+              <Link ref={ref} as="div">
                 <Flexbox container alignItems="center" gutter={2}>
                   <Icon.AddWithCircle inline color={t => t.color.cta} />
                   {state.placeholder}
@@ -413,7 +413,7 @@ storiesOf('Molecules | Input / Select', module)
     return <Component />;
   })
   .add(`🚧 Multiselect (WIP, don't use for now)`, () => {
-    const multiselectReducer = (state, incomingAction) => {
+    const multiselectReducer = (state: SelectState, incomingAction: Action) => {
       if (incomingAction.type === actionTypes['Select.SelectValue']) {
         return {
           ...state,
@@ -429,7 +429,7 @@ storiesOf('Molecules | Input / Select', module)
       return Input.Select.defaults.reducer(state, incomingAction);
     };
 
-    const MultiSelectValue = (_, ref) => {
+    const MultiSelectValue = (_: any, ref: React.Ref<any>) => {
       const [state] = useSelectReducer();
       return (
         <FlexedBox px={2} pr={8} ref={ref}>

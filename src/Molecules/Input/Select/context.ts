@@ -1,6 +1,7 @@
 import * as React from 'react';
+import { Action } from './Select.types';
 
-export const SelectStateContext = React.createContext<[React.Reducer<any, any>, any] | null>(null);
+export const SelectStateContext = React.createContext<[any, (action: Action) => void] | null>(null);
 
 export const useSelectReducer = () => {
   const [state, dispatch] = React.useContext(SelectStateContext)!;

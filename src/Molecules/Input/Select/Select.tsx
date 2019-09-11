@@ -17,6 +17,7 @@ import {
   defaultSelectReducer,
   defaultSelectInitialState,
 } from './defaults';
+import { Props, Option } from './Select.types';
 
 const Chevron = styled(Icon.ChevronDown)<{ open: boolean }>`
   transform: translateY(-50%) ${p => (p.open ? 'rotate(180deg)' : 'rotate(0)')};
@@ -51,7 +52,7 @@ const FormFieldOrFragment = React.forwardRef<HTMLDivElement, any>(
   ),
 );
 
-const Select = props => {
+const Select = (props: Props) => {
   const {
     placeholder,
     value: valueFromProps,
@@ -68,7 +69,10 @@ const Select = props => {
   } = props;
 
   const isControlledMode = typeof valueFromProps !== 'undefined';
-  const [_state, dispatch] = React.useReducer(reducer, initialState);
+  const [_state, dispatch] = React.useReducer(
+    reducer as typeof defaultSelectReducer,
+    initialState as typeof defaultSelectInitialState,
+  );
   const previousState = usePrevious(_state);
   const { ListItem, List, SelectedValue } = useComponentsWithDefaults(components);
 
@@ -93,7 +97,7 @@ const Select = props => {
           value: isControlledMode ? valueFromProps : _state.value,
         },
       }),
-    [_state, options, placeholder, isControlledMode, valueFromProps, _state.value],
+    [_state, options, placeholder, isControlledMode, valueFromProps, reducer],
   );
 
   const { open, value } = state;
@@ -117,14 +121,17 @@ const Select = props => {
         itemsRefs[0].focus();
       }
     }
-  }, [open]);
+  }, [open, autoFocusFirstOption, itemsRefs]);
 
-  const inputWrapperRef = React.useRef<HTMLDivElement>();
+  const inputWrapperRef = React.useRef<HTMLDivElement>(null);
   useOnClickOutside([customSelectListRef, inputWrapperRef], () =>
     dispatch({ type: defaultActionTypes['Select.Close'] }),
   );
 
-  const handleClickListItem = ({ selected, option }, e) => {
+  const handleClickListItem = (
+    { selected, option }: { selected: boolean; option: Option },
+    e: React.MouseEvent,
+  ) => {
     const action = {
       type: selected
         ? defaultActionTypes['Select.DeselectValue']
@@ -140,16 +147,19 @@ const Select = props => {
   // Not using isFocused in state, hence ref
   const isFocused = React.useRef(false);
 
-  const handleBlur = e => {
+  const handleBlur = (e: React.FocusEvent) => {
     if (!onBlur) return;
-    if (inputWrapperRef && !inputWrapperRef.current.contains(e.relatedTarget)) {
+    if (
+      inputWrapperRef.current &&
+      !inputWrapperRef.current.contains((e.relatedTarget as unknown) as Node)
+    ) {
       onBlur(e);
       isFocused.current = false;
     }
   };
-  const handleFocus = e => {
+  const handleFocus = (e: React.FocusEvent) => {
     if (!onFocus) return;
-    if (inputWrapperRef && inputWrapperRef.current.contains(document.activeElement)) {
+    if (inputWrapperRef.current && inputWrapperRef.current.contains(document.activeElement)) {
       if (!isFocused.current) {
         onFocus(e);
         isFocused.current = true;

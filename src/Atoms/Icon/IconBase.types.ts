@@ -17,7 +17,6 @@ export type StyledChildProps = {
 export type BaseProps = {
   className?: string;
   title?: string;
-  viewBox?: string;
   /** @deprecated use fill instead */
   color?: ColorFn;
   fill?: ColorFn;
