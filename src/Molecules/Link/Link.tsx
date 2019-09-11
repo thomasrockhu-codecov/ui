@@ -40,8 +40,6 @@ const StyledLink = styled(CleanLink)<LinkProps>`
 const StyledButton = styled(NormalizedElements.Button)<LinkProps>`
   ${p => getSharedStyle(p)}
   /* resetting button styles */
-  background: none;
-  cursor: ${p => (p.disabled ? 'not-allowed' : 'pointer')};
   border: none;
   margin: 0;
   padding: 0;
@@ -55,6 +53,7 @@ const StyledButton = styled(NormalizedElements.Button)<LinkProps>`
   -moz-osx-font-smoothing: inherit;
 
   /* Corrects inability to style clickable input types in iOS */
+  /* stylelint-disable-next-line property-no-vendor-prefix */
   -webkit-appearance: none !important;
   /* resetting button styles end */
 
