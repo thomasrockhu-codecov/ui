@@ -125,6 +125,8 @@ export type Theme = {
     inputBorderSuccess: RawColor['positive'];
     /** gray6 */
     flagBorder: RawColor['gray6'];
+    /** white */
+    selectOptionBackground: RawColor['white'];
   };
 
   spacing: {

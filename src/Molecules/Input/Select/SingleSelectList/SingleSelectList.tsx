@@ -85,7 +85,7 @@ const StyledOption = styled.div<Pick<OptionProps, 'selected' | 'disabled'>>`
 
   white-space: nowrap;
   background: ${p =>
-    p.disabled ? p.theme.color.disabledBackground : p.theme.color.card /** TODO: fixme */};
+    p.disabled ? p.theme.color.disabledBackground : p.theme.color.selectOptionBackground};
   cursor: pointer;
   ${p =>
     p.disabled
