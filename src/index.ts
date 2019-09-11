@@ -81,7 +81,7 @@ export {
   PageHeaderCard,
   PageWrapper,
   Portal,
-  Select,
+  /** @deprecated */ Select,
   Separator,
   Spinner,
   Switch,
