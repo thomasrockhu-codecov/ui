@@ -51,7 +51,7 @@ const StyledBox: React.FC<any> = styled(Box)`
 `;
 
 const FlexedBox = styled(Box)<any>`
-  flex: 1;
+  flex-grow: 1;
   display: flex;
 `;
 
