@@ -2,6 +2,7 @@ import * as React from 'react';
 import styled, { css } from 'styled-components';
 import { Flexbox, Typography, Icon, List as UIList, Box } from '../../../..';
 
+const TRIANGLE_SIZE = 10;
 type ListProps = {
   /**
    * @default 'right'
@@ -24,28 +25,28 @@ const leftAndRightCss = css<Pick<ListProps, 'position'>>`
 
 const commonTriangleCss = css<any>`
   position: absolute;
-  margin-left: -10px;
+  margin-left: -${TRIANGLE_SIZE}px;
   width: 0;
   height: 0;
   content: '';
   speak: none;
-  border-left: 10px solid transparent;
-  border-right: 10px solid transparent;
+  border-left: ${TRIANGLE_SIZE}px solid transparent;
+  border-right: ${TRIANGLE_SIZE}px solid transparent;
 `;
 
 const triangleCss = css`
   &:before {
     ${leftAndRightCss}
     ${commonTriangleCss}
-  top: -10px;
-    border-bottom: 10px solid;
+  top: -${TRIANGLE_SIZE}px;
+    border-bottom: ${TRIANGLE_SIZE}px solid;
     border-bottom-color: #ebebe8;
   }
   &:after {
     ${leftAndRightCss}
     ${commonTriangleCss}
-  top: -8px;
-    border-bottom: 10px solid;
+  top: -${TRIANGLE_SIZE - 2}px;
+    border-bottom: ${TRIANGLE_SIZE}px solid;
     border-bottom-color: #ffffff;
   }
 `;
