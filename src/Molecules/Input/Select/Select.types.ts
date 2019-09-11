@@ -53,7 +53,6 @@ export type Option = OptionBase & {};
 
 export type SelectState = {
   open: boolean;
-  controlled: boolean;
   initialized: boolean;
   options: Array<Option>;
   placeholder: React.ReactNode;

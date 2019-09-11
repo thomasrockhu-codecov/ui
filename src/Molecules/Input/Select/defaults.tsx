@@ -3,8 +3,8 @@ import R from 'ramda';
 
 import { Box } from '../../..';
 import {
-  List as DefaultList,
-  ListItem as DefaultListItem,
+  OptionList as DefaultList,
+  Option as DefaultListItem,
 } from './SingleSelectList/SingleSelectList';
 
 import { useSelectReducer } from './context';

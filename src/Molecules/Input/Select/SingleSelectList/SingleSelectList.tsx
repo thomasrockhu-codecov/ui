@@ -64,7 +64,7 @@ const StyledList = styled(UIList as any)`
   ${triangleCss}
 `;
 
-export const List: React.FC<ListProps> = ({ children, position }) => (
+export const OptionList: React.FC<ListProps> = ({ children, position }) => (
   <StyledList role="listbox" position={position}>
     {children}
   </StyledList>
@@ -74,8 +74,8 @@ const FullHeightFlexbox = styled(Flexbox)`
   height: 100%;
 `;
 
-type ListItemProps = { selected?: boolean; disabled?: boolean; label: React.ReactNode; value: any };
-const StyledListItem = styled.div<Pick<ListItemProps, 'selected' | 'disabled'>>`
+type OptionProps = { selected?: boolean; disabled?: boolean; label: React.ReactNode; value: any };
+const StyledOption = styled.div<Pick<OptionProps, 'selected' | 'disabled'>>`
   padding-right: ${p => p.theme.spacing.unit(2)}px;
   padding-left: ${p => p.theme.spacing.unit(2)}px;
   color: ${p => (p.selected ? p.theme.color.cta : p.theme.color.inputBorderHover)};
@@ -104,9 +104,9 @@ const StyledListItem = styled.div<Pick<ListItemProps, 'selected' | 'disabled'>>`
       `}
 `;
 
-export const ListItem = React.forwardRef<HTMLDivElement, ListItemProps>(
+export const Option = React.forwardRef<HTMLDivElement, OptionProps>(
   ({ label, disabled, selected }, ref) => (
-    <StyledListItem ref={ref} selected={selected} disabled={disabled} tabIndex={disabled ? -1 : 0}>
+    <StyledOption ref={ref} selected={selected} disabled={disabled} tabIndex={disabled ? -1 : 0}>
       <Typography type="tertiary" color="inherit">
         <FullHeightFlexbox justifyContent="space-between" container>
           <Flexbox item container alignItems="center">
@@ -121,6 +121,6 @@ export const ListItem = React.forwardRef<HTMLDivElement, ListItemProps>(
           )}
         </FullHeightFlexbox>
       </Typography>
-    </StyledListItem>
+    </StyledOption>
   ),
 );
