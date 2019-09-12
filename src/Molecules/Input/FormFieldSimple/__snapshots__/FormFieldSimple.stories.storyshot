@@ -246,10 +246,9 @@ exports[`Storyshots Molecules | Input / FormFieldSimple Required 1`] = `
 
 exports[`Storyshots Molecules | Input / FormFieldSimple Required with no star 1`] = `
 .c1 {
-  width: 100%;
-  overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  cursor: pointer;
 }
 
 .c2 {
