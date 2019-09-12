@@ -1,3 +1,10 @@
+## [1.38.3](https://github.com/nordnet/ui/compare/v1.38.2...v1.38.3) (2019-09-12)
+
+
+### Bug Fixes
+
+* make component more simple ([ea828e3](https://github.com/nordnet/ui/commit/ea828e3))
+
 ## [1.38.2](https://github.com/nordnet/ui/compare/v1.38.1...v1.38.2) (2019-09-12)
 
 
