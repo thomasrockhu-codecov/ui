@@ -1,3 +1,32 @@
+## [1.38.2](https://github.com/nordnet/ui/compare/v1.38.1...v1.38.2) (2019-09-12)
+
+
+### Bug Fixes
+
+* allow reactnode as title ([fe96ef7](https://github.com/nordnet/ui/commit/fe96ef7))
+* update story and snapshot ([c041713](https://github.com/nordnet/ui/commit/c041713))
+
+## [1.38.1](https://github.com/nordnet/ui/compare/v1.38.0...v1.38.1) (2019-09-10)
+
+
+### Bug Fixes
+
+* handle onchange better ([91f2c28](https://github.com/nordnet/ui/commit/91f2c28))
+* update snaps ([672f4f6](https://github.com/nordnet/ui/commit/672f4f6))
+
+# [1.38.0](https://github.com/nordnet/ui/compare/v1.37.0...v1.38.0) (2019-09-10)
+
+
+### Bug Fixes
+
+* 🐛 only set max-height to 50vh if desktop ([2893b34](https://github.com/nordnet/ui/commit/2893b34))
+* 🐛 use breakpoint sm ([e6c8eb6](https://github.com/nordnet/ui/commit/e6c8eb6))
+
+
+### Features
+
+* 🎸 expose modal content for styling ([ca986f5](https://github.com/nordnet/ui/commit/ca986f5))
+
 # [1.37.0](https://github.com/nordnet/ui/compare/v1.36.0...v1.37.0) (2019-09-05)
 
 

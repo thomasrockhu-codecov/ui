@@ -1,8 +1,8 @@
-import React, { useState, useRef, useEffect } from 'react';
+import React, { useState, useRef } from 'react';
 import { injectIntl } from 'react-intl';
 import styled, { css } from 'styled-components';
 import { Props, NumberComponent } from './Number.types';
-import { Flexbox, VisuallyHidden, Icon } from '../../..';
+import { Flexbox, VisuallyHidden, Icon, Typography } from '../../..';
 import { FormFieldSimple } from '../FormFieldSimple';
 import NormalizedElements from '../../../common/NormalizedElements';
 import { getStringAsNumber, getNumberAsString } from './utils';
@@ -14,6 +14,10 @@ const hasError = (error?: Props['error']) => error && error !== '';
 
 const width = css<Pick<Props, 'size'>>`
   width: ${p => (p.size === 's' ? p.theme.spacing.unit(8) : p.theme.spacing.unit(10))}px;
+`;
+
+const height = css<Pick<Props, 'size'>>`
+  height: ${p => (p.size === 's' ? p.theme.spacing.unit(8) : p.theme.spacing.unit(10))}px;
 `;
 
 const background = css<Pick<Props, 'disabled'>>`
@@ -53,11 +57,15 @@ const borderStyles = css<Pick<Props, 'error' | 'success'>>`
   ${focusBorderStyles}
 `;
 
+const Wrapper = styled(Flexbox)`
+  box-shadow: 0 1px 3px ${p => p.theme.color.shadowInput};
+`;
+
 const Stepper = styled.button.attrs({ type: 'button' })<Partial<Props>>`
   ${width}
+  ${height}
   ${background}
   ${borderStyles}
-  height: 100%;
   padding: 0;
   cursor: pointer;
   box-sizing: border-box;
@@ -65,26 +73,26 @@ const Stepper = styled.button.attrs({ type: 'button' })<Partial<Props>>`
   align-items: center;
   justify-content: center;
   flex: 1 0 auto;
-
+  
   &:first-of-type {
     order: -1;
   }
-
+  
   &:active:enabled {
     background-color: ${p => p.theme.color.cta};
-
+    
     svg {
       fill: ${p => p.theme.color.buttonText};
     }
   }
-`;
+  `;
 
 const Input = styled(NormalizedElements.Input).attrs({ type: 'number' })<Partial<Props>>`
   ${background}
   ${borderStyles}
-  padding: ${p => p.theme.spacing.unit(2)}px;
+  ${height}
   width: 100%;
-  height: 100%;
+  padding: ${p => p.theme.spacing.unit(2)}px;
   margin: 0 -1px;
   box-sizing: border-box;
   z-index: 1;
@@ -144,17 +152,31 @@ const NumberInput: NumberComponent & {
     success,
     value: controlledValueRaw,
   } = props;
-  const [uncontrolledValue, setUncontrolledValue] = useState(getNumberAsString(defaultValue));
+  const [internalValue, setInternalValue] = useState(getNumberAsString(defaultValue));
+  const previousInternalValue = usePrevious(internalValue);
+  const inputRef = useRef<HTMLInputElement>(null);
   const isControlled = isString(controlledValueRaw) || isNumber(controlledValueRaw);
   const controlledValue = isControlled && getNumberAsString(controlledValueRaw);
-  const inputRef = useRef<HTMLInputElement>(null);
+  const value = isControlled ? controlledValue : internalValue;
+  const internalValueHasChanged = internalValue !== previousInternalValue;
+  const needToSyncControlledValue = internalValueHasChanged && internalValue !== controlledValue;
+
+  if (onChange) {
+    if (isControlled) {
+      if (needToSyncControlledValue && previousInternalValue) {
+        onChange(internalValue);
+      }
+    } else if (internalValueHasChanged) {
+      onChange(internalValue);
+    }
+  }
+
   const sanitizedNumbers = {
     max: max ? getStringAsNumber(max) : undefined,
     min: min ? getStringAsNumber(min) : undefined,
     step: isNumber(step) ? step : getStringAsNumber(step),
-    uncontrolledValue: getStringAsNumber(uncontrolledValue),
+    uncontrolledValue: getStringAsNumber(value),
   };
-  const previousValue = usePrevious(isControlled ? controlledValue : uncontrolledValue);
 
   const getUpdateValue = (increment: boolean) => {
     return adjustValue({
@@ -168,19 +190,15 @@ const NumberInput: NumberComponent & {
   };
 
   const onStepHandler = (stepUp: boolean) => {
-    if (!isControlled) {
-      const updatedValue = getUpdateValue(stepUp);
-      setUncontrolledValue(updatedValue);
+    const updatedValue = getUpdateValue(stepUp);
+    setInternalValue(updatedValue);
+
+    if (stepUp && onStepUp) {
+      onStepUp();
     }
 
-    if (onStepUp || onStepDown) {
-      if (stepUp && onStepUp) {
-        onStepUp();
-      }
-
-      if (!stepUp && onStepDown) {
-        onStepDown();
-      }
+    if (!stepUp && onStepDown) {
+      onStepDown();
     }
 
     if (inputRef.current) {
@@ -189,22 +207,17 @@ const NumberInput: NumberComponent & {
   };
 
   const onChangeHandler = (e: React.ChangeEvent<HTMLInputElement>) => {
-    if (!isControlled) {
-      const newValue = e.target.value;
-      setUncontrolledValue(newValue);
-    }
+    setInternalValue(e.target.value);
   };
 
   const onKeyDownHandler = (e: React.KeyboardEvent<HTMLInputElement>) => {
-    if (!isControlled) {
-      const { key } = e;
-      const upKey = 'ArrowUp';
-      const downKey = 'ArrowDown';
+    const { key } = e;
+    const upKey = 'ArrowUp';
+    const downKey = 'ArrowDown';
 
-      if (key === upKey || key === downKey) {
-        e.preventDefault();
-        onStepHandler(key === upKey);
-      }
+    if (key === upKey || key === downKey) {
+      e.preventDefault();
+      onStepHandler(key === upKey);
     }
 
     if (onKeyDown) {
@@ -212,58 +225,48 @@ const NumberInput: NumberComponent & {
     }
   };
 
-  useEffect(() => {
-    if (onChange) {
-      if (isControlled) {
-        if (previousValue !== controlledValue) {
-          onChange(controlledValue);
-        }
-      } else if (previousValue !== uncontrolledValue) {
-        onChange(uncontrolledValue);
-      }
-    }
-  }, [onChange, previousValue, uncontrolledValue]); // eslint-disable-line
-
   return (
     <FormFieldSimple {...props}>
-      <Flexbox container item grow={1} alignItems="center">
-        <Input
-          {...{
-            autoFocus,
-            disabled,
-            error,
-            id: fieldId,
-            max,
-            min,
-            name,
-            onBlur,
-            onChange: onChangeHandler,
-            onClick,
-            onFocus,
-            onKeyDown: onKeyDownHandler,
-            onKeyPress,
-            onKeyUp,
-            ref: inputRef,
-            required,
-            step,
-            success,
-            value: controlledValue || uncontrolledValue,
-          }}
-          {...(hasError(error) ? { 'aria-invalid': true } : {})}
-        />
-        {!noSteppers && (
-          <>
-            <Stepper onClick={() => onStepHandler(false)} size={size} disabled={disabled}>
-              <VisuallyHidden>decrease number by {step}</VisuallyHidden>
-              <Icon.Minus size={3} />
-            </Stepper>
-            <Stepper onClick={() => onStepHandler(true)} size={size} disabled={disabled}>
-              <VisuallyHidden>increase number by {step}</VisuallyHidden>
-              <Icon.Plus size={3} />
-            </Stepper>
-          </>
-        )}
-      </Flexbox>
+      <Typography type="secondary" color={t => t.color.text}>
+        <Wrapper container item grow={1} alignItems="center">
+          <Input
+            {...{
+              autoFocus,
+              disabled,
+              error,
+              id: fieldId,
+              max,
+              min,
+              name,
+              onBlur,
+              onChange: onChangeHandler,
+              onClick,
+              onFocus,
+              onKeyDown: onKeyDownHandler,
+              onKeyPress,
+              onKeyUp,
+              ref: inputRef,
+              required,
+              step,
+              success,
+              value,
+            }}
+            {...(hasError(error) ? { 'aria-invalid': true } : {})}
+          />
+          {!noSteppers && (
+            <>
+              <Stepper onClick={() => onStepHandler(false)} size={size} disabled={disabled}>
+                <VisuallyHidden>decrease number by {step}</VisuallyHidden>
+                <Icon.Minus size={3} />
+              </Stepper>
+              <Stepper onClick={() => onStepHandler(true)} size={size} disabled={disabled}>
+                <VisuallyHidden>increase number by {step}</VisuallyHidden>
+                <Icon.Plus size={3} />
+              </Stepper>
+            </>
+          )}
+        </Wrapper>
+      </Typography>
     </FormFieldSimple>
   );
 };

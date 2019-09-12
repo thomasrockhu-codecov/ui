@@ -1,14 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Storyshots Molecules | Input / FormFieldSimple Default 1`] = `
-.c5 {
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-}
-
 .c1 {
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -24,26 +16,9 @@ exports[`Storyshots Molecules | Input / FormFieldSimple Default 1`] = `
   line-height: 1.4285714285714286;
 }
 
-.c3 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #282823;
-  margin: 0;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
-}
-
 .c0 {
   width: 200px;
   display: inline-block;
-}
-
-.c4 {
-  position: relative;
-  background-color: #ffffff;
-  height: 40px;
-  box-shadow: 0 1px 3px rgba(0,0,0,0.03);
-  box-sizing: border-box;
 }
 
 <div
@@ -61,23 +36,15 @@ exports[`Storyshots Molecules | Input / FormFieldSimple Default 1`] = `
       
     </span>
   </label>
-  <span
-    className="c3"
+  <div
+    style={
+      Object {
+        "background": "aqua",
+      }
+    }
   >
-    <div
-      className="c4 c5"
-    >
-      <div
-        style={
-          Object {
-            "background": "aqua",
-          }
-        }
-      >
-        Pass in any children you want
-      </div>
-    </div>
-  </span>
+    Pass in any children you want
+  </div>
 </div>
 `;
 
@@ -88,15 +55,7 @@ exports[`Storyshots Molecules | Input / FormFieldSimple Docs 1`] = `
 `;
 
 exports[`Storyshots Molecules | Input / FormFieldSimple Error 1`] = `
-.c5 {
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.c7 {
+.c4 {
   position: absolute;
   height: 1px;
   width: 1px;
@@ -122,15 +81,6 @@ exports[`Storyshots Molecules | Input / FormFieldSimple Error 1`] = `
 
 .c3 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #282823;
-  margin: 0;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
-}
-
-.c6 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #FF1900;
   margin: 0;
   font-weight: 400;
@@ -143,14 +93,6 @@ exports[`Storyshots Molecules | Input / FormFieldSimple Error 1`] = `
   display: inline-block;
 }
 
-.c4 {
-  position: relative;
-  background-color: #ffffff;
-  height: 40px;
-  box-shadow: 0 1px 3px rgba(0,0,0,0.03);
-  box-sizing: border-box;
-}
-
 <div
   className="c0"
 >
@@ -166,29 +108,21 @@ exports[`Storyshots Molecules | Input / FormFieldSimple Error 1`] = `
       
     </span>
   </label>
-  <span
-    className="c3"
+  <div
+    style={
+      Object {
+        "background": "aqua",
+      }
+    }
   >
-    <div
-      className="c4 c5"
-    >
-      <div
-        style={
-          Object {
-            "background": "aqua",
-          }
-        }
-      >
-        Pass in any children you want
-      </div>
-    </div>
-  </span>
+    Pass in any children you want
+  </div>
   <div>
     <span
-      className="c6"
+      className="c3"
     >
       <div
-        className="c7"
+        className="c4"
       >
         Error: 
       </div>
@@ -199,14 +133,6 @@ exports[`Storyshots Molecules | Input / FormFieldSimple Error 1`] = `
 `;
 
 exports[`Storyshots Molecules | Input / FormFieldSimple Extra info 1`] = `
-.c5 {
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-}
-
 .c1 {
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -223,15 +149,6 @@ exports[`Storyshots Molecules | Input / FormFieldSimple Extra info 1`] = `
 }
 
 .c3 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #282823;
-  margin: 0;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
-}
-
-.c6 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #6E6E69;
   margin: 0;
@@ -245,14 +162,6 @@ exports[`Storyshots Molecules | Input / FormFieldSimple Extra info 1`] = `
   display: inline-block;
 }
 
-.c4 {
-  position: relative;
-  background-color: #ffffff;
-  height: 40px;
-  box-shadow: 0 1px 3px rgba(0,0,0,0.03);
-  box-sizing: border-box;
-}
-
 <div
   className="c0"
 >
@@ -268,26 +177,18 @@ exports[`Storyshots Molecules | Input / FormFieldSimple Extra info 1`] = `
       
     </span>
   </label>
-  <span
-    className="c3"
+  <div
+    style={
+      Object {
+        "background": "aqua",
+      }
+    }
   >
-    <div
-      className="c4 c5"
-    >
-      <div
-        style={
-          Object {
-            "background": "aqua",
-          }
-        }
-      >
-        Pass in any children you want
-      </div>
-    </div>
-  </span>
+    Pass in any children you want
+  </div>
   <div>
     <span
-      className="c6"
+      className="c3"
     >
       Some extra info
     </span>
@@ -296,14 +197,6 @@ exports[`Storyshots Molecules | Input / FormFieldSimple Extra info 1`] = `
 `;
 
 exports[`Storyshots Molecules | Input / FormFieldSimple Required 1`] = `
-.c5 {
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-}
-
 .c1 {
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -319,26 +212,9 @@ exports[`Storyshots Molecules | Input / FormFieldSimple Required 1`] = `
   line-height: 1.4285714285714286;
 }
 
-.c3 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #282823;
-  margin: 0;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
-}
-
 .c0 {
   width: 200px;
   display: inline-block;
-}
-
-.c4 {
-  position: relative;
-  background-color: #ffffff;
-  height: 40px;
-  box-shadow: 0 1px 3px rgba(0,0,0,0.03);
-  box-sizing: border-box;
 }
 
 <div
@@ -356,22 +232,63 @@ exports[`Storyshots Molecules | Input / FormFieldSimple Required 1`] = `
        *
     </span>
   </label>
-  <span
-    className="c3"
+  <div
+    style={
+      Object {
+        "background": "aqua",
+      }
+    }
   >
-    <div
-      className="c4 c5"
+    Pass in any children you want
+  </div>
+</div>
+`;
+
+exports[`Storyshots Molecules | Input / FormFieldSimple Required with no star 1`] = `
+.c1 {
+  width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.c2 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #6E6E69;
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c0 {
+  width: 200px;
+  display: inline-block;
+}
+
+<div
+  className="c0"
+>
+  <label
+    className="c1"
+    hidden={false}
+    htmlFor="unique-id-1"
+  >
+    <span
+      className="c2"
     >
-      <div
-        style={
-          Object {
-            "background": "aqua",
-          }
-        }
-      >
-        Pass in any children you want
-      </div>
-    </div>
-  </span>
+      Label
+      
+    </span>
+  </label>
+  <div
+    style={
+      Object {
+        "background": "aqua",
+      }
+    }
+  >
+    Pass in any children you want
+  </div>
 </div>
 `;
