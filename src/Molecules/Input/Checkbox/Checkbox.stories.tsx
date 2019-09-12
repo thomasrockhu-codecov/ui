@@ -43,7 +43,7 @@ storiesOf('Molecules | Input / Checkbox', module)
   })
   .add('In a group', () => (
     <Fieldset>
-      <Legend>Colors</Legend>
+      <Legend styleType="label">Colors</Legend>
       <Flexbox container gutter={5}>
         <Input.Checkbox name="example" value="green" label="Green" />
         <Input.Checkbox name="example" value="blue" label="Blue" />

@@ -1,28 +1,33 @@
 import React from 'react';
 import styled from 'styled-components';
 import { Props } from './Legend.types';
-import { Typography } from '../..';
-import { isElement } from '../../common/utils';
+import { Typography, FormLabel } from '../..';
+import NormalizedElements from '../../common/NormalizedElements';
 
-const StyledLegend = styled.legend`
-  box-sizing: border-box;
-  color: inherit;
-  display: table;
-  max-width: 100%;
-  padding: 0;
-  white-space: normal;
+const StyledLegendAsCaption = styled(NormalizedElements.Legend)<Props>`
   margin: 0 0 ${p => p.theme.spacing.unit(4)}px 0;
 `;
 
-export const Legend: React.FC<Props> = props => {
-  const { className, children } = props;
-  const titleNode = isElement(children) ? (
-    children
-  ) : (
-    <Typography type="title3" weight="bold">
-      {children}
-    </Typography>
-  );
+const StyledLegendAsLabel = styled(NormalizedElements.Legend)<Props>`
+  cursor: auto;
+`;
 
-  return <StyledLegend className={className}>{titleNode}</StyledLegend>;
+export const Legend: React.FC<Props> = props => {
+  const { className, children, styleType = 'caption' } = props;
+
+  if (styleType === 'caption') {
+    return (
+      <StyledLegendAsCaption className={className}>
+        <Typography type="title3" weight="bold">
+          {children}
+        </Typography>
+      </StyledLegendAsCaption>
+    );
+  }
+
+  return (
+    <FormLabel className={className} as={StyledLegendAsLabel}>
+      {children}
+    </FormLabel>
+  );
 };
