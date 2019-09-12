@@ -1,3 +1,11 @@
+## [1.38.4](https://github.com/nordnet/ui/compare/v1.38.3...v1.38.4) (2019-09-12)
+
+
+### Bug Fixes
+
+* center text ([c3e1ed8](https://github.com/nordnet/ui/commit/c3e1ed8))
+* size prop to input ([de6cc79](https://github.com/nordnet/ui/commit/de6cc79))
+
 ## [1.38.3](https://github.com/nordnet/ui/compare/v1.38.2...v1.38.3) (2019-09-12)
 
 
