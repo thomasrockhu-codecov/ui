@@ -1,3 +1,11 @@
+## [1.38.2](https://github.com/nordnet/ui/compare/v1.38.1...v1.38.2) (2019-09-12)
+
+
+### Bug Fixes
+
+* allow reactnode as title ([fe96ef7](https://github.com/nordnet/ui/commit/fe96ef7))
+* update story and snapshot ([c041713](https://github.com/nordnet/ui/commit/c041713))
+
 ## [1.38.1](https://github.com/nordnet/ui/compare/v1.38.0...v1.38.1) (2019-09-10)
 
 
