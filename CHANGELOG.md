@@ -1,3 +1,11 @@
+## [1.38.6](https://github.com/nordnet/ui/compare/v1.38.5...v1.38.6) (2019-09-13)
+
+
+### Bug Fixes
+
+* controlled value ([c683481](https://github.com/nordnet/ui/commit/c683481))
+* naming ([4cfcd63](https://github.com/nordnet/ui/commit/4cfcd63))
+
 ## [1.38.5](https://github.com/nordnet/ui/compare/v1.38.4...v1.38.5) (2019-09-13)
 
 
