@@ -1,3 +1,16 @@
+# [1.39.0](https://github.com/nordnet/ui/compare/v1.38.7...v1.39.0) (2019-09-16)
+
+
+### Bug Fixes
+
+* remove unneeded css ([1392fd4](https://github.com/nordnet/ui/commit/1392fd4))
+* remove unneeded style ([7c40e01](https://github.com/nordnet/ui/commit/7c40e01))
+
+
+### Features
+
+* make number input as type text ([5ce780c](https://github.com/nordnet/ui/commit/5ce780c))
+
 ## [1.38.7](https://github.com/nordnet/ui/compare/v1.38.6...v1.38.7) (2019-09-13)
 
 
