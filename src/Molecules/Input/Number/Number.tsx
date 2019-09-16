@@ -1,16 +1,17 @@
 import React, { useState, useRef } from 'react';
 import { injectIntl } from 'react-intl';
 import styled, { css } from 'styled-components';
+import * as R from 'ramda';
 import { Props, NumberComponent } from './Number.types';
 import { Flexbox, VisuallyHidden, Icon, Typography } from '../../..';
 import { FormFieldSimple } from '../FormFieldSimple';
 import NormalizedElements from '../../../common/NormalizedElements';
 import { getStringAsNumber, getNumberAsString } from './utils';
 import { isNumber, isString } from '../../../common/utils';
-import { usePrevious } from '../../../common/Hooks';
 import adjustValue from './adjustValue';
 
 const hasError = (error?: Props['error']) => error && error !== '';
+const removeNonNumberCharacters = R.replace(/[^0-9\-.,]+/, '');
 
 const width = css<Pick<Props, 'size'>>`
   width: ${p => (p.size === 's' ? p.theme.spacing.unit(8) : p.theme.spacing.unit(10))}px;
@@ -87,7 +88,7 @@ const Stepper = styled.button.attrs({ type: 'button' })<Partial<Props>>`
   }
   `;
 
-const Input = styled(NormalizedElements.Input).attrs({ type: 'number' })<Partial<Props>>`
+const Input = styled(NormalizedElements.Input).attrs({ type: 'text' })<Partial<Props>>`
   ${background}
   ${borderStyles}
   ${height}
@@ -97,16 +98,6 @@ const Input = styled(NormalizedElements.Input).attrs({ type: 'number' })<Partial
   text-align: center;
   box-sizing: border-box;
   z-index: 1;
-
-  &::-webkit-outer-spin-button,
-  &::-webkit-inner-spin-button {
-    -webkit-appearance: none; /* stylelint-disable-line property-no-vendor-prefix */
-    margin: 0;
-  }
-
-  &[type='number'] {
-    -moz-appearance: textfield; /* stylelint-disable-line property-no-vendor-prefix */
-  }
 `;
 
 const components = {
@@ -150,27 +141,26 @@ const NumberInput: NumberComponent & {
     required,
     size,
     step = 1,
+    inputMode = 'decimal',
     success,
     value: controlledValueRaw,
   } = props;
   const [internalValue, setInternalValue] = useState(getNumberAsString(defaultValue));
-  const previousInternalValue = usePrevious(internalValue);
+  const handleValueChange = (val: string) => {
+    setInternalValue(val);
+
+    if (typeof onChange === 'function') {
+      onChange(val);
+    }
+  };
+
   const inputRef = useRef<HTMLInputElement>(null);
   const isControlled = isString(controlledValueRaw) || isNumber(controlledValueRaw);
-  const controlledValue = isControlled && getNumberAsString(controlledValueRaw);
+  // handle case for entered negative values
+  const numberAsString =
+    controlledValueRaw === '-' ? controlledValueRaw : getNumberAsString(controlledValueRaw);
+  const controlledValue = isControlled && numberAsString;
   const value = isControlled ? controlledValue : internalValue;
-  const internalValueHasChanged = internalValue !== previousInternalValue;
-  const needToSyncControlledValue = internalValueHasChanged && internalValue !== controlledValue;
-
-  if (onChange) {
-    if (isControlled) {
-      if (needToSyncControlledValue && previousInternalValue) {
-        onChange(internalValue);
-      }
-    } else if (internalValueHasChanged) {
-      onChange(internalValue);
-    }
-  }
 
   const sanitizedNumbers = {
     max: max ? getStringAsNumber(max) : undefined,
@@ -192,7 +182,7 @@ const NumberInput: NumberComponent & {
 
   const onStepHandler = (stepUp: boolean) => {
     const updatedValue = getUpdateValue(stepUp);
-    setInternalValue(updatedValue);
+    handleValueChange(updatedValue);
 
     if (stepUp && onStepUp) {
       onStepUp();
@@ -208,7 +198,7 @@ const NumberInput: NumberComponent & {
   };
 
   const onChangeHandler = (e: React.ChangeEvent<HTMLInputElement>) => {
-    setInternalValue(e.target.value);
+    handleValueChange(e.target.value);
   };
 
   const onKeyDownHandler = (e: React.KeyboardEvent<HTMLInputElement>) => {
@@ -251,7 +241,8 @@ const NumberInput: NumberComponent & {
               size,
               step,
               success,
-              value,
+              value: removeNonNumberCharacters(value),
+              inputMode,
             }}
             {...(hasError(error) ? { 'aria-invalid': true } : {})}
           />

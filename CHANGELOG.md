@@ -1,3 +1,33 @@
+## [1.38.7](https://github.com/nordnet/ui/compare/v1.38.6...v1.38.7) (2019-09-13)
+
+
+### Bug Fixes
+
+* added diagonal with circle and bolt is corrected ([9a7c498](https://github.com/nordnet/ui/commit/9a7c498))
+* added eye with plus and eye with plus active ([3a8fe76](https://github.com/nordnet/ui/commit/3a8fe76))
+* added imports to index and updated snapshots ([acf24a1](https://github.com/nordnet/ui/commit/acf24a1))
+* alphabetical order ([4ff52c4](https://github.com/nordnet/ui/commit/4ff52c4))
+* change icon alert to bell ([1f6aae8](https://github.com/nordnet/ui/commit/1f6aae8))
+* updated snapshot ([e5d32a3](https://github.com/nordnet/ui/commit/e5d32a3))
+
+## [1.38.6](https://github.com/nordnet/ui/compare/v1.38.5...v1.38.6) (2019-09-13)
+
+
+### Bug Fixes
+
+* controlled value ([c683481](https://github.com/nordnet/ui/commit/c683481))
+* naming ([4cfcd63](https://github.com/nordnet/ui/commit/4cfcd63))
+
+## [1.38.5](https://github.com/nordnet/ui/compare/v1.38.4...v1.38.5) (2019-09-13)
+
+
+### Bug Fixes
+
+* add alert icon ([77c040e](https://github.com/nordnet/ui/commit/77c040e))
+* remove fill in path ([353e8d5](https://github.com/nordnet/ui/commit/353e8d5))
+* update snapshop ([f26b23e](https://github.com/nordnet/ui/commit/f26b23e))
+* update snapshot ([1fe2a7c](https://github.com/nordnet/ui/commit/1fe2a7c))
+
 ## [1.38.4](https://github.com/nordnet/ui/compare/v1.38.3...v1.38.4) (2019-09-12)
 
 
