@@ -50,4 +50,11 @@ storiesOf('Molecules | LabeledValue', module)
         </Flexbox>
       </Flexbox>
     </LabeledValue>
+  ))
+  .add('Integration: LabeledValue with tertirary title', () => (
+    <LabeledValue label="Market value" labelType="tertiary">
+      <Typography type="tertiary" weight="bold">
+        Hello World
+      </Typography>
+    </LabeledValue>
   ));

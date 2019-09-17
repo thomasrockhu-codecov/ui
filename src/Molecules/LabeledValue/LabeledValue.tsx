@@ -12,13 +12,16 @@ const StyledLabel = styled.div`
   margin-bottom: ${p => p.theme.spacing.unit(1)}px;
 `;
 
-export const LabeledValue: LabeledValueComponent = props => (
-  <StyledLabeledValue>
-    <StyledLabel>
-      <Typography type="secondary" color={t => t.color.label}>
-        {props.label}
-      </Typography>
-    </StyledLabel>
-    {props.children}
-  </StyledLabeledValue>
-);
+export const LabeledValue: LabeledValueComponent = props => {
+  const { labelType = 'secondary' } = props;
+  return (
+    <StyledLabeledValue>
+      <StyledLabel>
+        <Typography type={labelType} color={t => t.color.label}>
+          {props.label}
+        </Typography>
+      </StyledLabel>
+      {props.children}
+    </StyledLabeledValue>
+  );
+};
