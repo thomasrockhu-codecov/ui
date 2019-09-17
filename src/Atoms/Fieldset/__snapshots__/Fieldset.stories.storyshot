@@ -1,6 +1,12 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Storyshots Atoms | Fieldset Default 1`] = `
+.c0 {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
 .c6 {
   box-sizing: border-box;
   display: -webkit-box;
@@ -80,12 +86,6 @@ exports[`Storyshots Atoms | Fieldset Default 1`] = `
   font-weight: 400;
   font-size: 14px;
   line-height: 1.4285714285714286;
-}
-
-.c0 {
-  padding: 0;
-  margin: 0;
-  border: 0;
 }
 
 .c3 {

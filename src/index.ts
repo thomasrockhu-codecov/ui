@@ -4,6 +4,7 @@ import Box from './Atoms/Box';
 import Card from './Atoms/Card';
 import CssGrid from './Atoms/CssGrid';
 import DateTime from './Atoms/DateTime';
+import Fieldset from './Atoms/Fieldset';
 import Flag from './Atoms/Flag';
 import Flexbox from './Atoms/Flexbox';
 import FormLabel from './Atoms/FormLabel';
@@ -26,7 +27,7 @@ import Button from './Molecules/Button';
 import CardWithTitle from './Molecules/CardWithTitle';
 import CollapsibleCard from './Molecules/CollapsibleCard';
 import FeedbackBanner from './Molecules/FeedbackBanner';
-import Fieldset from './Atoms/Fieldset';
+import FormField from './Molecules/FormField';
 import Input from './Molecules/Input';
 import LabeledValue from './Molecules/LabeledValue';
 import Link from './Molecules/Link';
@@ -68,6 +69,7 @@ export {
   Fieldset,
   Flag,
   Flexbox,
+  FormField,
   FormLabel,
   Icon,
   Input,

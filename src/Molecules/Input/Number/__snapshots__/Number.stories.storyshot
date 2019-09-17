@@ -159,13 +159,12 @@ exports[`Storyshots Molecules | Input / Number Default 1`] = `
   <label
     className="c1"
     hidden={false}
-    htmlFor="insert-unique-id"
+    htmlFor="insert-matching-unique-id"
   >
     <span
       className="c2"
     >
-      Label
-      
+      Label 
     </span>
   </label>
   <span
@@ -176,7 +175,6 @@ exports[`Storyshots Molecules | Input / Number Default 1`] = `
     >
       <input
         className="c6"
-        id="insert-unique-id"
         inputMode="decimal"
         min={0}
         onChange={[Function]}
@@ -239,6 +237,267 @@ exports[`Storyshots Molecules | Input / Number Default 1`] = `
       </button>
     </div>
   </span>
+</div>
+`;
+
+exports[`Storyshots Molecules | Input / Number Deprecated usage 1`] = `
+.c5 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+}
+
+.c8 {
+  position: absolute;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  -webkit-clip: rect(1px,1px,1px,1px);
+  clip: rect(1px,1px,1px,1px);
+}
+
+.c1 {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.c9 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 12px;
+  height: 12px;
+  fill: #282823;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
+}
+
+.c2 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #6E6E69;
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c3 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c10 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #FF1900;
+  margin: 0;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.3333333333333333;
+}
+
+.c0 {
+  width: 200px;
+  display: inline-block;
+}
+
+.c4 {
+  box-shadow: 0 1px 3px rgba(0,0,0,0.03);
+}
+
+.c7 {
+  width: 40px;
+  height: 40px;
+  background-color: #FFFFFF;
+  outline: none;
+  border: 1px solid #BCBCB6;
+  position: relative;
+  padding: 0;
+  cursor: pointer;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-flex: 1 0 auto;
+  -ms-flex: 1 0 auto;
+  flex: 1 0 auto;
+}
+
+.c7:hover {
+  border-color: #4B4B46;
+  z-index: 2;
+}
+
+.c7:focus {
+  border-color: #0046FF;
+  z-index: 3;
+}
+
+.c7:first-of-type {
+  -webkit-order: -1;
+  -ms-flex-order: -1;
+  order: -1;
+}
+
+.c7:active:enabled {
+  background-color: #0046FF;
+}
+
+.c7:active:enabled svg {
+  fill: #FFFFFF;
+}
+
+.c6 {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  overflow: visible;
+  background-color: #FFFFFF;
+  outline: none;
+  border: 1px solid #BCBCB6;
+  position: relative;
+  height: 40px;
+  width: 100%;
+  padding: 8px;
+  margin: 0 -1px;
+  text-align: center;
+  box-sizing: border-box;
+  z-index: 1;
+}
+
+.c6:hover {
+  border-color: #4B4B46;
+  z-index: 2;
+}
+
+.c6:focus {
+  border-color: #0046FF;
+  z-index: 3;
+}
+
+<div
+  className="c0"
+>
+  <label
+    className="c1"
+    hidden={false}
+  >
+    <span
+      className="c2"
+    >
+      Label 
+    </span>
+  </label>
+  <span
+    className="c3"
+  >
+    <div
+      className="c4 c5"
+    >
+      <input
+        className="c6"
+        id="insert-unique-id"
+        inputMode="decimal"
+        min={0}
+        onChange={[Function]}
+        onKeyDown={[Function]}
+        step={1}
+        type="text"
+        value="0"
+      />
+      <button
+        className="c7"
+        onClick={[Function]}
+        type="button"
+      >
+        <div
+          className="c8"
+        >
+          decrease number by 
+          1
+        </div>
+        <svg
+          aria-hidden="true"
+          className="c9"
+          focusable="false"
+          preserveAspectRatio="xMidYMid meet"
+          role="presentation"
+          size={3}
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M24 11v2H0v-2z"
+            fillRule="evenodd"
+          />
+        </svg>
+      </button>
+      <button
+        className="c7"
+        onClick={[Function]}
+        type="button"
+      >
+        <div
+          className="c8"
+        >
+          increase number by 
+          1
+        </div>
+        <svg
+          aria-hidden="true"
+          className="c9"
+          focusable="false"
+          preserveAspectRatio="xMidYMid meet"
+          role="presentation"
+          size={3}
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M13 0v11h11v2H13v11h-2V12.999L0 13v-2l11-.001V0h2z"
+            fillRule="evenodd"
+          />
+        </svg>
+      </button>
+    </div>
+  </span>
+  <div>
+    <span
+      className="c10"
+    >
+      <div
+        className="c8"
+      >
+        Error: 
+      </div>
+      Number needs to be greater than 0
+    </span>
+  </div>
 </div>
 `;
 
@@ -391,13 +650,12 @@ exports[`Storyshots Molecules | Input / Number Disabled 1`] = `
   <label
     className="c1"
     hidden={false}
-    htmlFor="insert-unique-id"
+    htmlFor="insert-matching-unique-id"
   >
     <span
       className="c2"
     >
-      Label
-      
+      Label 
     </span>
   </label>
   <span
@@ -409,7 +667,6 @@ exports[`Storyshots Molecules | Input / Number Disabled 1`] = `
       <input
         className="c6"
         disabled={true}
-        id="insert-unique-id"
         inputMode="decimal"
         min={0}
         onChange={[Function]}
@@ -636,13 +893,12 @@ exports[`Storyshots Molecules | Input / Number Required 1`] = `
   <label
     className="c1"
     hidden={false}
-    htmlFor="insert-unique-id"
+    htmlFor="insert-matching-unique-id"
   >
     <span
       className="c2"
     >
-      Label
-      
+      Label 
     </span>
   </label>
   <span
@@ -653,7 +909,6 @@ exports[`Storyshots Molecules | Input / Number Required 1`] = `
     >
       <input
         className="c6"
-        id="insert-unique-id"
         inputMode="decimal"
         min={0}
         onChange={[Function]}
@@ -879,13 +1134,12 @@ exports[`Storyshots Molecules | Input / Number With a smaller step 1`] = `
   <label
     className="c1"
     hidden={false}
-    htmlFor="insert-unique-id"
+    htmlFor="insert-matching-unique-id"
   >
     <span
       className="c2"
     >
-      Label
-      
+      Label 
     </span>
   </label>
   <span
@@ -896,7 +1150,6 @@ exports[`Storyshots Molecules | Input / Number With a smaller step 1`] = `
     >
       <input
         className="c6"
-        id="insert-unique-id"
         inputMode="decimal"
         min={0}
         onChange={[Function]}
@@ -1121,13 +1374,12 @@ exports[`Storyshots Molecules | Input / Number With all actions 1`] = `
   <label
     className="c1"
     hidden={false}
-    htmlFor="insert-unique-id"
+    htmlFor="insert-matching-unique-id"
   >
     <span
       className="c2"
     >
-      Label
-      
+      Label 
     </span>
   </label>
   <span
@@ -1138,7 +1390,6 @@ exports[`Storyshots Molecules | Input / Number With all actions 1`] = `
     >
       <input
         className="c6"
-        id="insert-unique-id"
         inputMode="decimal"
         min={0}
         onBlur={[Function]}
@@ -1368,13 +1619,12 @@ exports[`Storyshots Molecules | Input / Number With auto focus 1`] = `
   <label
     className="c1"
     hidden={false}
-    htmlFor="insert-unique-id"
+    htmlFor="insert-matching-unique-id"
   >
     <span
       className="c2"
     >
-      Label
-      
+      Label 
     </span>
   </label>
   <span
@@ -1386,7 +1636,6 @@ exports[`Storyshots Molecules | Input / Number With auto focus 1`] = `
       <input
         autoFocus={true}
         className="c6"
-        id="insert-unique-id"
         inputMode="decimal"
         min={0}
         onChange={[Function]}
@@ -1611,13 +1860,12 @@ exports[`Storyshots Molecules | Input / Number With default value (Uncontrolled 
   <label
     className="c1"
     hidden={false}
-    htmlFor="insert-unique-id"
+    htmlFor="insert-matching-unique-id"
   >
     <span
       className="c2"
     >
-      Label
-      
+      Label 
     </span>
   </label>
   <span
@@ -1628,7 +1876,6 @@ exports[`Storyshots Molecules | Input / Number With default value (Uncontrolled 
     >
       <input
         className="c6"
-        id="insert-unique-id"
         inputMode="decimal"
         min={0}
         onChange={[Function]}
@@ -1862,13 +2109,12 @@ exports[`Storyshots Molecules | Input / Number With error if value is less than 
   <label
     className="c1"
     hidden={false}
-    htmlFor="insert-unique-id"
+    htmlFor="insert-matching-unique-id"
   >
     <span
       className="c2"
     >
-      Label
-      
+      Label 
     </span>
   </label>
   <span
@@ -1880,7 +2126,7 @@ exports[`Storyshots Molecules | Input / Number With error if value is less than 
       <input
         aria-invalid={true}
         className="c6"
-        id="insert-unique-id"
+        hasError={true}
         inputMode="decimal"
         min={0}
         onChange={[Function]}
@@ -2126,13 +2372,12 @@ exports[`Storyshots Molecules | Input / Number With extra info and error 1`] = `
   <label
     className="c1"
     hidden={false}
-    htmlFor="insert-unique-id"
+    htmlFor="insert-matching-unique-id"
   >
     <span
       className="c2"
     >
-      Label
-      
+      Label 
     </span>
   </label>
   <span
@@ -2144,7 +2389,7 @@ exports[`Storyshots Molecules | Input / Number With extra info and error 1`] = `
       <input
         aria-invalid={true}
         className="c6"
-        id="insert-unique-id"
+        hasError={true}
         inputMode="decimal"
         min={0}
         onChange={[Function]}
@@ -2390,13 +2635,12 @@ exports[`Storyshots Molecules | Input / Number With extra info below 1`] = `
   <label
     className="c1"
     hidden={false}
-    htmlFor="insert-unique-id"
+    htmlFor="insert-matching-unique-id"
   >
     <span
       className="c2"
     >
-      Label
-      
+      Label 
     </span>
   </label>
   <span
@@ -2407,7 +2651,6 @@ exports[`Storyshots Molecules | Input / Number With extra info below 1`] = `
     >
       <input
         className="c6"
-        id="insert-unique-id"
         inputMode="decimal"
         min={0}
         onChange={[Function]}
@@ -2645,13 +2888,12 @@ exports[`Storyshots Molecules | Input / Number With hidden label 1`] = `
   <label
     className="c1"
     hidden={true}
-    htmlFor="insert-unique-id"
+    htmlFor="insert-matching-unique-id"
   >
     <span
       className="c2"
     >
-      Label
-      
+      Label 
     </span>
   </label>
   <span
@@ -2662,7 +2904,6 @@ exports[`Storyshots Molecules | Input / Number With hidden label 1`] = `
     >
       <input
         className="c6"
-        id="insert-unique-id"
         inputMode="decimal"
         min={0}
         onChange={[Function]}
@@ -2887,13 +3128,12 @@ exports[`Storyshots Molecules | Input / Number With max and min 1`] = `
   <label
     className="c1"
     hidden={false}
-    htmlFor="insert-unique-id"
+    htmlFor="insert-matching-unique-id"
   >
     <span
       className="c2"
     >
-      Label
-      
+      Label 
     </span>
   </label>
   <span
@@ -2904,7 +3144,6 @@ exports[`Storyshots Molecules | Input / Number With max and min 1`] = `
     >
       <input
         className="c6"
-        id="insert-unique-id"
         inputMode="decimal"
         max="20"
         min="10"
@@ -3056,13 +3295,12 @@ exports[`Storyshots Molecules | Input / Number With no steppers 1`] = `
   <label
     className="c1"
     hidden={false}
-    htmlFor="insert-unique-id"
+    htmlFor="insert-matching-unique-id"
   >
     <span
       className="c2"
     >
-      Label
-      
+      Label 
     </span>
   </label>
   <span
@@ -3073,7 +3311,6 @@ exports[`Storyshots Molecules | Input / Number With no steppers 1`] = `
     >
       <input
         className="c6"
-        id="insert-unique-id"
         inputMode="decimal"
         min={0}
         onChange={[Function]}
@@ -3385,13 +3622,12 @@ Array [
           <label
             className="c4"
             hidden={false}
-            htmlFor="insert-unique-id"
+            htmlFor="insert-matching-unique-id"
           >
             <span
               className="c5"
             >
-              Label
-              
+              Label 
             </span>
           </label>
           <span
@@ -3402,7 +3638,6 @@ Array [
             >
               <input
                 className="c9"
-                id="insert-unique-id"
                 inputMode="decimal"
                 min={0}
                 onChange={[Function]}
@@ -3486,13 +3721,12 @@ Array [
           <label
             className="c4"
             hidden={false}
-            htmlFor="insert-unique-id"
+            htmlFor="insert-matching-unique-id"
           >
             <span
               className="c5"
             >
-              Label
-              
+              Label 
             </span>
           </label>
           <span
@@ -3503,7 +3737,6 @@ Array [
             >
               <input
                 className="c9"
-                id="insert-unique-id"
                 inputMode="decimal"
                 min={0}
                 onChange={[Function]}
@@ -3533,13 +3766,12 @@ Array [
           <label
             className="c4"
             hidden={false}
-            htmlFor="insert-unique-id"
+            htmlFor="insert-matching-unique-id"
           >
             <span
               className="c5"
             >
-              Label
-              
+              Label 
             </span>
           </label>
           <span
@@ -3551,7 +3783,7 @@ Array [
               <input
                 aria-invalid={true}
                 className="c13"
-                id="insert-unique-id"
+                hasError={true}
                 inputMode="decimal"
                 min={0}
                 onChange={[Function]}
@@ -3801,13 +4033,12 @@ exports[`Storyshots Molecules | Input / Number With success 1`] = `
   <label
     className="c1"
     hidden={false}
-    htmlFor="insert-unique-id"
+    htmlFor="insert-matching-unique-id"
   >
     <span
       className="c2"
     >
-      Label
-      
+      Label 
     </span>
   </label>
   <span
@@ -3818,7 +4049,6 @@ exports[`Storyshots Molecules | Input / Number With success 1`] = `
     >
       <input
         className="c6"
-        id="insert-unique-id"
         inputMode="decimal"
         min={0}
         onChange={[Function]}
@@ -3886,8 +4116,7 @@ exports[`Storyshots Molecules | Input / Number With success 1`] = `
 `;
 
 exports[`Storyshots Molecules | Input / Number With value (Controlled behaviour) 1`] = `
-Array [
-  .c5 {
+.c5 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -4040,103 +4269,100 @@ Array [
 }
 
 <div
-    className="c0"
+  className="c0"
+>
+  <label
+    className="c1"
+    hidden={false}
+    htmlFor="insert-matching-unique-id"
   >
-    <label
-      className="c1"
-      hidden={false}
-      htmlFor="insert-unique-id"
-    >
-      <span
-        className="c2"
-      >
-        Label
-        
-      </span>
-    </label>
     <span
-      className="c3"
+      className="c2"
     >
-      <div
-        className="c4 c5"
-      >
-        <input
-          className="c6"
-          id="insert-unique-id"
-          inputMode="decimal"
-          min={0}
-          onChange={[Function]}
-          onKeyDown={[Function]}
-          step={1}
-          type="text"
-          value="10"
-        />
-        <button
-          className="c7"
-          onClick={[Function]}
-          type="button"
-        >
-          <div
-            className="c8"
-          >
-            decrease number by 
-            1
-          </div>
-          <svg
-            aria-hidden="true"
-            className="c9"
-            focusable="false"
-            preserveAspectRatio="xMidYMid meet"
-            role="presentation"
-            size={3}
-            viewBox="0 0 24 24"
-          >
-            <path
-              d="M24 11v2H0v-2z"
-              fillRule="evenodd"
-            />
-          </svg>
-        </button>
-        <button
-          className="c7"
-          onClick={[Function]}
-          type="button"
-        >
-          <div
-            className="c8"
-          >
-            increase number by 
-            1
-          </div>
-          <svg
-            aria-hidden="true"
-            className="c9"
-            focusable="false"
-            preserveAspectRatio="xMidYMid meet"
-            role="presentation"
-            size={3}
-            viewBox="0 0 24 24"
-          >
-            <path
-              d="M13 0v11h11v2H13v11h-2V12.999L0 13v-2l11-.001V0h2z"
-              fillRule="evenodd"
-            />
-          </svg>
-        </button>
-      </div>
+      Label 
     </span>
-  </div>,
+  </label>
+  <span
+    className="c3"
+  >
+    <div
+      className="c4 c5"
+    >
+      <input
+        className="c6"
+        inputMode="decimal"
+        min={0}
+        onChange={[Function]}
+        onKeyDown={[Function]}
+        step={1}
+        type="text"
+        value="10"
+      />
+      <button
+        className="c7"
+        onClick={[Function]}
+        type="button"
+      >
+        <div
+          className="c8"
+        >
+          decrease number by 
+          1
+        </div>
+        <svg
+          aria-hidden="true"
+          className="c9"
+          focusable="false"
+          preserveAspectRatio="xMidYMid meet"
+          role="presentation"
+          size={3}
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M24 11v2H0v-2z"
+            fillRule="evenodd"
+          />
+        </svg>
+      </button>
+      <button
+        className="c7"
+        onClick={[Function]}
+        type="button"
+      >
+        <div
+          className="c8"
+        >
+          increase number by 
+          1
+        </div>
+        <svg
+          aria-hidden="true"
+          className="c9"
+          focusable="false"
+          preserveAspectRatio="xMidYMid meet"
+          role="presentation"
+          size={3}
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M13 0v11h11v2H13v11h-2V12.999L0 13v-2l11-.001V0h2z"
+            fillRule="evenodd"
+          />
+        </svg>
+      </button>
+    </div>
+  </span>
   <button
     onClick={[Function]}
     type="button"
   >
     Decrease
-  </button>,
+  </button>
   <button
     onClick={[Function]}
     type="button"
   >
     Increase
-  </button>,
-]
+  </button>
+</div>
 `;
