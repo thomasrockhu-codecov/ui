@@ -1,3 +1,19 @@
+# [1.41.0](https://github.com/nordnet/ui/compare/v1.40.0...v1.41.0) (2019-09-17)
+
+
+### Bug Fixes
+
+* 🐛 allow LabeledValue to accept Node as label ([ac1d016](https://github.com/nordnet/ui/commit/ac1d016))
+* 🐛 only set max-height to 50vh if desktop ([c0d60e2](https://github.com/nordnet/ui/commit/c0d60e2))
+* 🐛 remove unused type ([a498ecf](https://github.com/nordnet/ui/commit/a498ecf))
+* 🐛 use breakpoint sm ([1d6f9bf](https://github.com/nordnet/ui/commit/1d6f9bf))
+
+
+### Features
+
+* 🎸 add tertiary title to labeled value ([3d87e55](https://github.com/nordnet/ui/commit/3d87e55))
+* 🎸 expose modal content for styling ([4a155d8](https://github.com/nordnet/ui/commit/4a155d8))
+
 # [1.40.0](https://github.com/nordnet/ui/compare/v1.39.0...v1.40.0) (2019-09-17)
 
 
