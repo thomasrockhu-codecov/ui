@@ -1,3 +1,90 @@
+# [1.39.0](https://github.com/nordnet/ui/compare/v1.38.7...v1.39.0) (2019-09-16)
+
+
+### Bug Fixes
+
+* remove unneeded css ([1392fd4](https://github.com/nordnet/ui/commit/1392fd4))
+* remove unneeded style ([7c40e01](https://github.com/nordnet/ui/commit/7c40e01))
+
+
+### Features
+
+* make number input as type text ([5ce780c](https://github.com/nordnet/ui/commit/5ce780c))
+
+## [1.38.7](https://github.com/nordnet/ui/compare/v1.38.6...v1.38.7) (2019-09-13)
+
+
+### Bug Fixes
+
+* added diagonal with circle and bolt is corrected ([9a7c498](https://github.com/nordnet/ui/commit/9a7c498))
+* added eye with plus and eye with plus active ([3a8fe76](https://github.com/nordnet/ui/commit/3a8fe76))
+* added imports to index and updated snapshots ([acf24a1](https://github.com/nordnet/ui/commit/acf24a1))
+* alphabetical order ([4ff52c4](https://github.com/nordnet/ui/commit/4ff52c4))
+* change icon alert to bell ([1f6aae8](https://github.com/nordnet/ui/commit/1f6aae8))
+* updated snapshot ([e5d32a3](https://github.com/nordnet/ui/commit/e5d32a3))
+
+## [1.38.6](https://github.com/nordnet/ui/compare/v1.38.5...v1.38.6) (2019-09-13)
+
+
+### Bug Fixes
+
+* controlled value ([c683481](https://github.com/nordnet/ui/commit/c683481))
+* naming ([4cfcd63](https://github.com/nordnet/ui/commit/4cfcd63))
+
+## [1.38.5](https://github.com/nordnet/ui/compare/v1.38.4...v1.38.5) (2019-09-13)
+
+
+### Bug Fixes
+
+* add alert icon ([77c040e](https://github.com/nordnet/ui/commit/77c040e))
+* remove fill in path ([353e8d5](https://github.com/nordnet/ui/commit/353e8d5))
+* update snapshop ([f26b23e](https://github.com/nordnet/ui/commit/f26b23e))
+* update snapshot ([1fe2a7c](https://github.com/nordnet/ui/commit/1fe2a7c))
+
+## [1.38.4](https://github.com/nordnet/ui/compare/v1.38.3...v1.38.4) (2019-09-12)
+
+
+### Bug Fixes
+
+* center text ([c3e1ed8](https://github.com/nordnet/ui/commit/c3e1ed8))
+* size prop to input ([de6cc79](https://github.com/nordnet/ui/commit/de6cc79))
+
+## [1.38.3](https://github.com/nordnet/ui/compare/v1.38.2...v1.38.3) (2019-09-12)
+
+
+### Bug Fixes
+
+* make component more simple ([ea828e3](https://github.com/nordnet/ui/commit/ea828e3))
+
+## [1.38.2](https://github.com/nordnet/ui/compare/v1.38.1...v1.38.2) (2019-09-12)
+
+
+### Bug Fixes
+
+* allow reactnode as title ([fe96ef7](https://github.com/nordnet/ui/commit/fe96ef7))
+* update story and snapshot ([c041713](https://github.com/nordnet/ui/commit/c041713))
+
+## [1.38.1](https://github.com/nordnet/ui/compare/v1.38.0...v1.38.1) (2019-09-10)
+
+
+### Bug Fixes
+
+* handle onchange better ([91f2c28](https://github.com/nordnet/ui/commit/91f2c28))
+* update snaps ([672f4f6](https://github.com/nordnet/ui/commit/672f4f6))
+
+# [1.38.0](https://github.com/nordnet/ui/compare/v1.37.0...v1.38.0) (2019-09-10)
+
+
+### Bug Fixes
+
+* 🐛 only set max-height to 50vh if desktop ([2893b34](https://github.com/nordnet/ui/commit/2893b34))
+* 🐛 use breakpoint sm ([e6c8eb6](https://github.com/nordnet/ui/commit/e6c8eb6))
+
+
+### Features
+
+* 🎸 expose modal content for styling ([ca986f5](https://github.com/nordnet/ui/commit/ca986f5))
+
 # [1.37.0](https://github.com/nordnet/ui/compare/v1.36.0...v1.37.0) (2019-09-05)
 
 
