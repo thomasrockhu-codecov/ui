@@ -52,9 +52,9 @@ storiesOf('Molecules | LabeledValue', module)
     </LabeledValue>
   ))
   .add('Integration: LabeledValue with tertirary title', () => (
-    <LabeledValue label="Market value" labelType="tertiary">
+    <LabeledValue label={<Typography type="tertiary">Foo</Typography>}>
       <Typography type="tertiary" weight="bold">
-        Hello World
+        Bar
       </Typography>
     </LabeledValue>
   ));

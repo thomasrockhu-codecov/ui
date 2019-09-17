@@ -394,20 +394,20 @@ exports[`Storyshots Molecules | LabeledValue Integration: LabeledValue with posi
 `;
 
 exports[`Storyshots Molecules | LabeledValue Integration: LabeledValue with tertirary title 1`] = `
+.c2 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.3333333333333333;
+}
+
 .c3 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
   margin: 0;
   font-weight: 700;
-  font-size: 12px;
-  line-height: 1.3333333333333333;
-}
-
-.c2 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #6E6E69;
-  margin: 0;
-  font-weight: 400;
   font-size: 12px;
   line-height: 1.3333333333333333;
 }
@@ -435,13 +435,13 @@ exports[`Storyshots Molecules | LabeledValue Integration: LabeledValue with tert
     <span
       className="c2"
     >
-      Market value
+      Foo
     </span>
   </div>
   <span
     className="c3"
   >
-    Hello World
+    Bar
   </span>
 </div>
 `;
