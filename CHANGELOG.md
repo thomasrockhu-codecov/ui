@@ -1,3 +1,16 @@
+# [1.40.0](https://github.com/nordnet/ui/compare/v1.39.0...v1.40.0) (2019-09-17)
+
+
+### Bug Fixes
+
+* 🐛 minify svg ([f75be8a](https://github.com/nordnet/ui/commit/f75be8a))
+* 🐛 snapshot ([4437e44](https://github.com/nordnet/ui/commit/4437e44))
+
+
+### Features
+
+* 🎸 add external link icon ([dfe35d0](https://github.com/nordnet/ui/commit/dfe35d0))
+
 # [1.39.0](https://github.com/nordnet/ui/compare/v1.38.7...v1.39.0) (2019-09-16)
 
 
