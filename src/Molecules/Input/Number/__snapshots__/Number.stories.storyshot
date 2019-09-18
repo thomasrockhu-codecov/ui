@@ -267,6 +267,12 @@ exports[`Storyshots Molecules | Input / Number Deprecated usage 1`] = `
 }
 
 .c1 {
+  position: absolute;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  -webkit-clip: rect(1px,1px,1px,1px);
+  clip: rect(1px,1px,1px,1px);
   text-overflow: ellipsis;
   white-space: nowrap;
   cursor: pointer;
@@ -314,7 +320,7 @@ exports[`Storyshots Molecules | Input / Number Deprecated usage 1`] = `
 }
 
 .c0 {
-  width: 200px;
+  width: 300px;
   display: inline-block;
 }
 
@@ -404,10 +410,11 @@ exports[`Storyshots Molecules | Input / Number Deprecated usage 1`] = `
 
 <div
   className="c0"
+  width="300px;"
 >
   <label
     className="c1"
-    hidden={false}
+    hidden={true}
   >
     <span
       className="c2"
@@ -2126,7 +2133,6 @@ exports[`Storyshots Molecules | Input / Number With error if value is less than 
       <input
         aria-invalid={true}
         className="c6"
-        hasError={true}
         inputMode="decimal"
         min={0}
         onChange={[Function]}
@@ -2389,7 +2395,6 @@ exports[`Storyshots Molecules | Input / Number With extra info and error 1`] = `
       <input
         aria-invalid={true}
         className="c6"
-        hasError={true}
         inputMode="decimal"
         min={0}
         onChange={[Function]}
@@ -3783,7 +3788,6 @@ Array [
               <input
                 aria-invalid={true}
                 className="c13"
-                hasError={true}
                 inputMode="decimal"
                 min={0}
                 onChange={[Function]}

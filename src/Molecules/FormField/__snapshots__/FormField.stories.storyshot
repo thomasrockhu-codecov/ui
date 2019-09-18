@@ -47,6 +47,12 @@ exports[`Storyshots Molecules | FormField Default 1`] = `
 </div>
 `;
 
+exports[`Storyshots Molecules | FormField Docs 1`] = `
+<p>
+  This component provides a label including the required look of the label. It also provides the displaying of error message and additional information.
+</p>
+`;
+
 exports[`Storyshots Molecules | FormField Error 1`] = `
 .c4 {
   position: absolute;

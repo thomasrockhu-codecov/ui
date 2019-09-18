@@ -192,7 +192,10 @@ storiesOf('Molecules | Input / Number', module)
         <Input.Number
           fieldId="insert-unique-id"
           label="Label"
+          hideLabel
           defaultValue={defaultValue}
+          fullWidth
+          width="300px;"
           onChange={x => x && setValue(x)}
           extraInfo="Use wisely this space"
           {...(showError ? { error: 'Number needs to be greater than 0' } : {})}

@@ -3,6 +3,12 @@ import * as React from 'react';
 import { Flexbox, FormField } from '../..';
 
 storiesOf('Molecules | FormField', module)
+  .add('Docs', () => (
+    <p>
+      This component provides a label including the required look of the label. It also provides the
+      displaying of error message and additional information.
+    </p>
+  ))
   .add('Default', () => (
     <FormField label="Label" forId="unique-id-1">
       <div style={{ background: 'aqua' }}>Pass in any children you want</div>

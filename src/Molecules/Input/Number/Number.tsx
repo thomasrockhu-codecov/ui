@@ -265,10 +265,60 @@ const NumberInput: NumberComponent & {
     </Typography>
   );
 
+  if (props.hideLabel) {
+    assert(
+      false,
+      `Input.Number: (Deprecated usage) Please wrap component in FormField and pass that the hideLabel prop instead.`,
+      {
+        level: 'warn',
+      },
+    );
+  }
+
+  if (error) {
+    assert(
+      false,
+      `Input.Number: (Deprecated usage) Please wrap component in FormField and pass that the error prop instead.`,
+      {
+        level: 'warn',
+      },
+    );
+  }
+
+  if (props.extraInfo) {
+    assert(
+      false,
+      `Input.Number: (Deprecated usage) Please wrap component in FormField and pass that the extraInfo prop instead.`,
+      {
+        level: 'warn',
+      },
+    );
+  }
+
+  if (props.fullWidth) {
+    assert(
+      false,
+      `Input.Number: (Deprecated usage) Please wrap component in FormField and pass that the fullWidth prop instead.`,
+      {
+        level: 'warn',
+      },
+    );
+  }
+
+  if (props.width) {
+    assert(
+      false,
+      `Input.Number: (Deprecated usage) Please wrap component in FormField and pass that the width prop instead.`,
+      {
+        level: 'warn',
+      },
+    );
+  }
+
   if (label && isString(label)) {
     assert(
       false,
-      `Input.Number: Please wrap component in FormField and pass that the label prop instead.`,
+      `Input.Number: (Deprecated usage) Please wrap component in FormField and pass that the label prop instead.`,
       {
         level: 'warn',
       },
@@ -276,7 +326,7 @@ const NumberInput: NumberComponent & {
 
     assert(
       !fieldId,
-      `Input.Number: You forgot to specify fieldId, your label is not linked to your input.`,
+      `Input.Number: (Deprecated usage) You forgot to specify fieldId, your label is not linked to your input.`,
       {
         level: 'warn',
       },
