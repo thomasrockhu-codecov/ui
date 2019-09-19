@@ -1,8 +1,8 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
-import { Fieldset, Input, Legend } from '../../index';
+import { Fieldset, Legend, Input } from '../..';
 
-storiesOf('Atoms | Fieldset', module)
+storiesOf('Molecules | Fieldset', module)
   .add('Docs', () => <p>The Fieldset component is used to group related elements in a form.</p>)
   .add('Default', () => (
     <Fieldset>
