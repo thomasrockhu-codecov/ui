@@ -46,10 +46,9 @@ exports[`Storyshots Atoms | Legend Docs 1`] = `
 
 exports[`Storyshots Atoms | Legend Looking like a label 1`] = `
 .c0 {
-  width: 100%;
-  overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  cursor: pointer;
 }
 
 .c1 {
