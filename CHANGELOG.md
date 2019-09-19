@@ -1,3 +1,16 @@
+# [1.42.0](https://github.com/nordnet/ui/compare/v1.41.0...v1.42.0) (2019-09-19)
+
+
+### Bug Fixes
+
+* eslint rule for label ([b8b21ff](https://github.com/nordnet/ui/commit/b8b21ff))
+
+
+### Features
+
+* add as prop to formlabel ([a8aaadc](https://github.com/nordnet/ui/commit/a8aaadc))
+* create legend ([551b78f](https://github.com/nordnet/ui/commit/551b78f))
+
 # [1.41.0](https://github.com/nordnet/ui/compare/v1.40.0...v1.41.0) (2019-09-17)
 
 
