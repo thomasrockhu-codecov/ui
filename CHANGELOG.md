@@ -1,3 +1,27 @@
+# [1.45.0](https://github.com/nordnet/ui/compare/v1.44.1...v1.45.0) (2019-09-20)
+
+
+### Bug Fixes
+
+* cleanup ([5998620](https://github.com/nordnet/ui/commit/5998620))
+* merge master ([02ee7ce](https://github.com/nordnet/ui/commit/02ee7ce))
+* merge master ([a39c2f5](https://github.com/nordnet/ui/commit/a39c2f5))
+* simplify ([2a415da](https://github.com/nordnet/ui/commit/2a415da))
+* update snaps ([887e43e](https://github.com/nordnet/ui/commit/887e43e))
+* update snaps ([55ca070](https://github.com/nordnet/ui/commit/55ca070))
+* update snaps ([034d6f1](https://github.com/nordnet/ui/commit/034d6f1))
+* update snaps ([01c112c](https://github.com/nordnet/ui/commit/01c112c))
+
+
+### Features
+
+* add check mark icon ([d033bc2](https://github.com/nordnet/ui/commit/d033bc2))
+* add checkbox input ([2570be6](https://github.com/nordnet/ui/commit/2570be6))
+* add events ([c15a11f](https://github.com/nordnet/ui/commit/c15a11f))
+* add warnings for deprecated usage ([7d293b7](https://github.com/nordnet/ui/commit/7d293b7))
+* creat public form field ([bbdad6b](https://github.com/nordnet/ui/commit/bbdad6b))
+* create fieldset and legend ([5645c2e](https://github.com/nordnet/ui/commit/5645c2e))
+
 ## [1.44.1](https://github.com/nordnet/ui/compare/v1.44.0...v1.44.1) (2019-09-20)
 
 
