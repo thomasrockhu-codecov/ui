@@ -1,5 +1,5 @@
-import { storiesOf } from '@storybook/react';
 import React from 'react';
+import { storiesOf } from '@storybook/react';
 
 import { FormLabel } from '../..';
 
@@ -19,10 +19,8 @@ storiesOf('Atoms | FormLabel', module)
     </>
   ))
   .add('As a wrapper', () => (
-    <>
-      <FormLabel>
-        Username
-        <input type="text" />
-      </FormLabel>
-    </>
+    <FormLabel>
+      Username
+      <input type="text" />
+    </FormLabel>
   ));

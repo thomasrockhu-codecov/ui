@@ -1,24 +1,14 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
-import { Fieldset } from '../../index';
+import { Fieldset, Legend, Input } from '../..';
 
-/* eslint-disable jsx-a11y/label-has-associated-control,jsx-a11y/label-has-for */
 storiesOf('Molecules | Fieldset', module)
   .add('Docs', () => <p>The Fieldset component is used to group related elements in a form.</p>)
   .add('Default', () => (
     <Fieldset>
-      <legend>Colors</legend>
-      <label>
-        <input type="checkbox" name="example" value="green" />
-        Green
-      </label>
-      <label>
-        <input type="checkbox" name="example" value="blue" />
-        Blue
-      </label>
-      <label>
-        <input type="checkbox" name="example" value="yellow" />
-        Yellow
-      </label>
+      <Legend>Colors</Legend>
+      <Input.Checkbox name="example" value="green" label="Green" />
+      <Input.Checkbox name="example" value="blue" label="Blue" />
+      <Input.Checkbox name="example" value="yellow" label="Yellow" />
     </Fieldset>
   ));

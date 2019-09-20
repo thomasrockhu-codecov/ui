@@ -2,10 +2,9 @@
 
 exports[`Storyshots Molecules | FormField Default 1`] = `
 .c1 {
-  width: 100%;
-  overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  cursor: pointer;
 }
 
 .c2 {
@@ -65,10 +64,9 @@ exports[`Storyshots Molecules | FormField Error 1`] = `
 }
 
 .c1 {
-  width: 100%;
-  overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  cursor: pointer;
 }
 
 .c2 {
@@ -134,10 +132,9 @@ exports[`Storyshots Molecules | FormField Error 1`] = `
 
 exports[`Storyshots Molecules | FormField Extra info 1`] = `
 .c1 {
-  width: 100%;
-  overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  cursor: pointer;
 }
 
 .c2 {
@@ -198,10 +195,9 @@ exports[`Storyshots Molecules | FormField Extra info 1`] = `
 
 exports[`Storyshots Molecules | FormField Required 1`] = `
 .c1 {
-  width: 100%;
-  overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  cursor: pointer;
 }
 
 .c2 {
@@ -269,10 +265,9 @@ exports[`Storyshots Molecules | FormField With group of items 1`] = `
 }
 
 .c2 {
-  width: 100%;
-  overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  cursor: pointer;
 }
 
 .c3 {
