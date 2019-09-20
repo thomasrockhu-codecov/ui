@@ -33,6 +33,43 @@ Array [
       size={5}
       viewBox="0 0 24 24"
     >
+      <path
+        d="M24,0 L24,6 L22,6 L22,22 L2,22 L2,6 L0,6 L0,0 L24,0 Z M20,6 L4,6 L4,20 L20,20 L20,6 Z M18,8 L18,10 L6,10 L6,8 L18,8 Z M22,2 L2,2 L2,4 L22,4 L22,2 Z M6,10 L8,10 L8,12 L6,12 L6,10 Z M6,12 L18,12 L18,14 L6,14 L6,12 Z M16,10 L18,10 L18,12 L16,12 L16,10 Z"
+        transform="translate(0 1)"
+      />
+    </svg>
+  </div>,
+  .c0 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 20px;
+  height: 20px;
+  fill: #0046FF;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
+}
+
+<div
+    style={
+      Object {
+        "display": "inline-block",
+        "outline": "1px dashed #bbb",
+      }
+    }
+  >
+    <svg
+      aria-hidden="true"
+      className="c0"
+      focusable="false"
+      preserveAspectRatio="xMidYMid meet"
+      role="presentation"
+      size={5}
+      viewBox="0 0 24 24"
+    >
       <polygon
         points="16.278 14 0 14 0 10 16.278 10 8.211 2 13.916 2 24 12 21.148 14.828 13.916 22 8.211 22"
       />
@@ -1452,6 +1489,41 @@ exports[`Storyshots Atoms | Icon Available icons 1`] = `
   className="c0"
   direction="column"
 >
+  <div
+    className="c1"
+    direction="row"
+  >
+    <div
+      className="c2"
+    >
+      Archive
+    </div>
+    <div>
+      <div
+        style={
+          Object {
+            "display": "inline-block",
+            "outline": "1px dashed #bbb",
+          }
+        }
+      >
+        <svg
+          aria-hidden="true"
+          className="c3"
+          focusable="false"
+          preserveAspectRatio="xMidYMid meet"
+          role="presentation"
+          size={5}
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M24,0 L24,6 L22,6 L22,22 L2,22 L2,6 L0,6 L0,0 L24,0 Z M20,6 L4,6 L4,20 L20,20 L20,6 Z M18,8 L18,10 L6,10 L6,8 L18,8 Z M22,2 L2,2 L2,4 L22,4 L22,2 Z M6,10 L8,10 L8,12 L6,12 L6,10 Z M6,12 L18,12 L18,14 L6,14 L6,12 Z M16,10 L18,10 L18,12 L16,12 L16,10 Z"
+            transform="translate(0 1)"
+          />
+        </svg>
+      </div>
+    </div>
+  </div>
   <div
     className="c1"
     direction="row"
