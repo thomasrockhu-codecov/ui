@@ -1,3 +1,10 @@
+# [1.43.0](https://github.com/nordnet/ui/compare/v1.42.0...v1.43.0) (2019-09-19)
+
+
+### Features
+
+* create checkmark icon ([d470218](https://github.com/nordnet/ui/commit/d470218))
+
 # [1.42.0](https://github.com/nordnet/ui/compare/v1.41.0...v1.42.0) (2019-09-19)
 
 
