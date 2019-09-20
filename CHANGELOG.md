@@ -1,3 +1,11 @@
+## [1.44.1](https://github.com/nordnet/ui/compare/v1.44.0...v1.44.1) (2019-09-20)
+
+
+### Bug Fixes
+
+* 🐛 add archive icon ([96d2645](https://github.com/nordnet/ui/commit/96d2645))
+* 🐛 adjust viewbox and remove id from archive icon ([0252543](https://github.com/nordnet/ui/commit/0252543))
+
 # [1.44.0](https://github.com/nordnet/ui/compare/v1.43.0...v1.44.0) (2019-09-20)
 
 
