@@ -1,3 +1,16 @@
+# [1.44.0](https://github.com/nordnet/ui/compare/v1.43.0...v1.44.0) (2019-09-20)
+
+
+### Bug Fixes
+
+* remove unnecessary required prop ([4d617ac](https://github.com/nordnet/ui/commit/4d617ac))
+* show required ([1e08e54](https://github.com/nordnet/ui/commit/1e08e54))
+
+
+### Features
+
+* move out form field component ([08a5045](https://github.com/nordnet/ui/commit/08a5045))
+
 # [1.43.0](https://github.com/nordnet/ui/compare/v1.42.0...v1.43.0) (2019-09-19)
 
 
