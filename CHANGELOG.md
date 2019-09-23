@@ -1,3 +1,11 @@
+## [1.45.1](https://github.com/nordnet/ui/compare/v1.45.0...v1.45.1) (2019-09-23)
+
+
+### Bug Fixes
+
+* cleanup ([62514dd](https://github.com/nordnet/ui/commit/62514dd))
+* remove unnecessary function ([434ddd1](https://github.com/nordnet/ui/commit/434ddd1))
+
 # [1.45.0](https://github.com/nordnet/ui/compare/v1.44.1...v1.45.0) (2019-09-20)
 
 
