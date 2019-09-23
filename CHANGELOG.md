@@ -1,3 +1,10 @@
+## [1.45.2](https://github.com/nordnet/ui/compare/v1.45.1...v1.45.2) (2019-09-23)
+
+
+### Bug Fixes
+
+* types ([a07d466](https://github.com/nordnet/ui/commit/a07d466))
+
 ## [1.45.1](https://github.com/nordnet/ui/compare/v1.45.0...v1.45.1) (2019-09-23)
 
 
