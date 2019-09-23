@@ -1,5 +1,6 @@
 import React from 'react';
 import styled, { css } from 'styled-components';
+import * as R from 'ramda';
 import { Props } from './Text.types';
 import { Flexbox, Typography } from '../../..';
 import NormalizedElements from '../../../common/NormalizedElements';
@@ -143,7 +144,12 @@ export const Text: React.FC<Props> & {
   } = props;
   /* eslint-disable jsx-a11y/label-has-associated-control,jsx-a11y/label-has-for */
   return (
-    <FormField {...props}>
+    <FormField
+      {...R.pick(
+        ['error', 'extraInfo', 'fieldId', 'hideLabel', 'label', 'showRequired', 'width'],
+        props,
+      )}
+    >
       <Typography type="secondary" color={t => t.color.text}>
         <Wrapper>
           <Input
