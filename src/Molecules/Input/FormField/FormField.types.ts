@@ -7,6 +7,7 @@ export type Props = {
   className?: string;
   error?: string;
   extraInfo?: string;
+  fieldId?: string;
   forId?: string;
   group?: boolean;
   showRequired?: boolean;
