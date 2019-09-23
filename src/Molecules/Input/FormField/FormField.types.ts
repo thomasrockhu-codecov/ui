@@ -1,21 +1,16 @@
 export type Props = {
-  className?: string;
   /** Label should always be presented - A11y */
   label: string;
   /** But you can hide it visually */
   hideLabel?: boolean;
+
+  className?: string;
   error?: string;
-  success?: boolean;
-  /** TODO: is this needed? */
   extraInfo?: string;
-  rightAddon?: React.ReactNode;
-  leftAddon?: React.ReactNode;
-  innerWrapperRef?: React.Ref<HTMLInputElement>;
-  disabled?: boolean;
-  placeholder?: string;
-  fullWidth?: boolean;
-  required?: boolean;
-  size?: 's';
+  forId?: string;
+  group?: boolean;
+  showRequired?: boolean;
+
   /**
    * You need to specify width
    * (better in pixels), because
@@ -24,15 +19,4 @@ export type Props = {
    * underneath
    */
   width?: string | number;
-
-  value?: string;
-  defaultValue?: string;
-
-  onChange?: React.ChangeEventHandler<HTMLInputElement>;
-  onClick?: React.MouseEventHandler<HTMLInputElement>;
-  onBlur?: React.FocusEventHandler<HTMLInputElement>;
-  onFocus?: React.FocusEventHandler<HTMLInputElement>;
-  onKeyDown?: React.KeyboardEventHandler<HTMLInputElement>;
-  onKeyUp?: React.KeyboardEventHandler<HTMLInputElement>;
-  onKeyPress?: React.KeyboardEventHandler<HTMLInputElement>;
 };
