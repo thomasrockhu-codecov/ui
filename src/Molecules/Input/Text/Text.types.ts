@@ -28,6 +28,7 @@ export type Props = {
   value?: string;
   defaultValue?: string;
   required?: boolean;
+  showRequired?: boolean;
 
   onChange?: React.ChangeEventHandler<HTMLInputElement>;
   onClick?: React.MouseEventHandler<HTMLInputElement>;
