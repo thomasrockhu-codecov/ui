@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Props } from './FormField.types';
 import { VisuallyHidden, FormLabel, Typography, Fieldset, Legend } from '../../..';
+import { assert } from '../../../common/utils';
 
 const hasError = (error?: Props['error']) => error && error !== '';
 
@@ -18,6 +19,7 @@ export const FormField: React.FC<Props> = ({
   className,
   error,
   extraInfo,
+  fieldId,
   forId,
   group,
   hideLabel,
@@ -37,10 +39,10 @@ export const FormField: React.FC<Props> = ({
       );
     }
 
-    if (forId) {
+    if (fieldId || forId) {
       return (
         <>
-          <FormLabel hideLabel={hideLabel} forId={forId}>
+          <FormLabel hideLabel={hideLabel} forId={fieldId || forId}>
             {labelText}
           </FormLabel>
           {children}
@@ -57,6 +59,12 @@ export const FormField: React.FC<Props> = ({
       </>
     );
   };
+
+  if (forId) {
+    assert(false, `FormField: the prop forId is deprecated, please use fieldId instead.`, {
+      level: 'warn',
+    });
+  }
 
   return (
     <Wrapper width={width} className={className}>

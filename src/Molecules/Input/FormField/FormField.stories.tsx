@@ -14,12 +14,12 @@ storiesOf('Molecules | FormField', module)
     </p>
   ))
   .add('Default', () => (
-    <FormField label="Label" forId="unique-id-1">
+    <FormField label="Label" fieldId="unique-id-1">
       <div style={{ background: 'aqua' }}>Pass in any children you want</div>
     </FormField>
   ))
   .add('With group of items', () => (
-    <FormField label="Caption to a group of items" forId="unique-id-1" group>
+    <FormField label="Caption to a group of items" fieldId="unique-id-1" group>
       <Flexbox container gutter={5}>
         <Flexbox item>
           <div style={{ background: 'aqua' }}>Pass in any children you want</div>
@@ -31,17 +31,17 @@ storiesOf('Molecules | FormField', module)
     </FormField>
   ))
   .add('Required', () => (
-    <FormField label="Label" forId="unique-id-1" showRequired>
+    <FormField label="Label" fieldId="unique-id-1" showRequired>
       <div style={{ background: 'aqua' }}>Pass in any children you want</div>
     </FormField>
   ))
   .add('Error', () => (
-    <FormField label="Label" error="error" forId="unique-id-2">
+    <FormField label="Label" error="error" fieldId="unique-id-2">
       <div style={{ background: 'aqua' }}>Pass in any children you want</div>
     </FormField>
   ))
   .add('Extra info', () => (
-    <FormField label="Label" extraInfo="Some extra info" forId="unique-id-2">
+    <FormField label="Label" extraInfo="Some extra info" fieldId="unique-id-2">
       <div style={{ background: 'aqua' }}>Pass in any children you want</div>
     </FormField>
   ));
