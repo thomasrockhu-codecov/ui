@@ -30,19 +30,25 @@ const Chevron = styled(Icon.ChevronDown)<{ open: boolean }>`
   pointer-events: none;
 `;
 
-const StyledRelativeDiv = styled.div`
+const StyledRelativeDiv = styled.div<any>`
   position: relative;
   display: inline-block;
+  width: ${p => (p.fullWidth ? '100%' : 'initial')};
 `;
 
 const FormFieldOrFragment = React.forwardRef<HTMLDivElement, any>(
-  ({ children, noFormField, open, onFocus, onBlur, ...props }, ref) => (
-    <StyledRelativeDiv {...(noFormField ? { ref } : {})} onBlur={onBlur} onFocus={onFocus}>
-      <Flexbox container alignItems="center">
+  ({ children, noFormField, open, onFocus, onBlur, fullWidth, ...props }, ref) => (
+    <StyledRelativeDiv
+      {...(noFormField ? { ref } : {})}
+      onBlur={onBlur}
+      onFocus={onFocus}
+      fullWidth={fullWidth}
+    >
+      <Flexbox container alignItems="center" {...(fullWidth ? { width: '100%' } : {})}>
         {noFormField ? (
           children
         ) : (
-          <FormField {...props} ref={ref}>
+          <FormField {...props} ref={ref} fullWidth={fullWidth}>
             {children}
             <Chevron open={open} />
           </FormField>
@@ -51,7 +57,7 @@ const FormFieldOrFragment = React.forwardRef<HTMLDivElement, any>(
     </StyledRelativeDiv>
   ),
 );
-
+FormFieldOrFragment.displayName = 'FormFieldOrFragment';
 const Select = (props: Props) => {
   const {
     placeholder,
@@ -66,6 +72,7 @@ const Select = (props: Props) => {
     initialState = defaultSelectInitialState,
     disabled,
     autoFocusFirstOption = true,
+    fullWidth,
   } = props;
 
   const isControlledMode = typeof valueFromProps !== 'undefined';
@@ -181,6 +188,7 @@ const Select = (props: Props) => {
         open={open}
         onFocus={handleFocus}
         onBlur={handleBlur}
+        fullWidth={fullWidth}
       >
         <SelectedValueWrapper
           state={state}

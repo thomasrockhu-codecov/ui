@@ -133,7 +133,35 @@ storiesOf('Molecules | Input / Select', module)
       />
     );
   })
-
+  .add('Full width', () => {
+    return (
+      <Input.Select
+        reducer={loggingReducer}
+        options={accountOptions}
+        label="User account"
+        placeholder="Select account"
+        onChange={action('change')}
+        onBlur={action('blur')}
+        onFocus={action('focus')}
+        fullWidth
+      />
+    );
+  })
+  .add('300px width', () => {
+    return (
+      <Input.Select
+        reducer={loggingReducer}
+        options={accountOptions}
+        label="User account"
+        placeholder="Select account"
+        onChange={action('change')}
+        onBlur={action('blur')}
+        onFocus={action('focus')}
+        width="300px"
+      />
+    );
+  })
+  .add('Accessible from document.forms', () => {})
   .add('Controlled', () => {
     const Component = () => {
       const localOptions = React.useMemo(

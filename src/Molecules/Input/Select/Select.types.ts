@@ -24,6 +24,8 @@ export type Props = {
   onChange?: (newValue: Option[]) => void;
   onFocus?: React.FocusEventHandler;
   onBlur?: React.FocusEventHandler;
+  fullWidth?: boolean;
+  width?: string;
   className?: string;
   components?: Partial<
     Record<ComponentTypes, (props: any, ref: React.Ref<any>) => React.ReactNode>

@@ -108,11 +108,12 @@ export const FormField: React.FC<Props> = React.forwardRef<HTMLDivElement, Props
       size,
       success,
       width,
+      fullWidth,
     },
     ref,
   ) => (
     /* eslint-disable jsx-a11y/label-has-associated-control,jsx-a11y/label-has-for */
-    <Wrapper width={width} className={className} onClick={onClick} ref={ref}>
+    <Wrapper width={fullWidth ? '100%' : width} className={className} onClick={onClick} ref={ref}>
       <label>
         <InlineFlexbox container direction="column">
           <HidableTypography
