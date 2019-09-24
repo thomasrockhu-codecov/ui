@@ -1,19 +1,23 @@
-import React, { useState, useRef, useEffect } from 'react';
+import React, { useState, useRef } from 'react';
 import { injectIntl } from 'react-intl';
 import styled, { css } from 'styled-components';
+import * as R from 'ramda';
 import { Props, NumberComponent } from './Number.types';
-import { Flexbox, VisuallyHidden, Icon } from '../../..';
-import { FormFieldSimple } from '../FormFieldSimple';
+import { Flexbox, VisuallyHidden, Icon, Typography, FormField } from '../../..';
 import NormalizedElements from '../../../common/NormalizedElements';
 import { getStringAsNumber, getNumberAsString } from './utils';
-import { isNumber, isString } from '../../../common/utils';
-import { usePrevious } from '../../../common/Hooks';
+import { isNumber, isString, assert } from '../../../common/utils';
 import adjustValue from './adjustValue';
 
-const hasError = (error?: Props['error']) => error && error !== '';
+const deprecatedErrorPresent = (error?: Props['error']) => error && error !== '';
+const removeNonNumberCharacters = R.replace(/[^0-9\-.,]+/, '');
 
 const width = css<Pick<Props, 'size'>>`
   width: ${p => (p.size === 's' ? p.theme.spacing.unit(8) : p.theme.spacing.unit(10))}px;
+`;
+
+const height = css<Pick<Props, 'size'>>`
+  height: ${p => (p.size === 's' ? p.theme.spacing.unit(8) : p.theme.spacing.unit(10))}px;
 `;
 
 const background = css<Pick<Props, 'disabled'>>`
@@ -33,18 +37,18 @@ const hoverBorderStyles = css<Pick<Props, 'disabled'>>`
 `}
 `;
 
-const focusBorderStyles = css<Pick<Props, 'error'>>`
+const focusBorderStyles = css`
   &:focus {
     border-color: ${p => p.theme.color.borderActive};
     z-index: 3;
   }
 `;
 
-const borderStyles = css<Pick<Props, 'error' | 'success'>>`
+const borderStyles = css<Pick<Props, 'error' | 'hasError' | 'success'>>`
   outline: none;
   border: 1px solid
     ${p => {
-      if (hasError(p.error)) return p.theme.color.inputBorderError;
+      if (p.hasError || deprecatedErrorPresent(p.error)) return p.theme.color.inputBorderError;
       if (p.success) return p.theme.color.inputBorderSuccess;
       return p.theme.color.inputBorder;
     }};
@@ -53,11 +57,15 @@ const borderStyles = css<Pick<Props, 'error' | 'success'>>`
   ${focusBorderStyles}
 `;
 
+const Wrapper = styled(Flexbox)`
+  box-shadow: 0 1px 3px ${p => p.theme.color.shadowInput};
+`;
+
 const Stepper = styled.button.attrs({ type: 'button' })<Partial<Props>>`
   ${width}
+  ${height}
   ${background}
   ${borderStyles}
-  height: 100%;
   padding: 0;
   cursor: pointer;
   box-sizing: border-box;
@@ -65,39 +73,30 @@ const Stepper = styled.button.attrs({ type: 'button' })<Partial<Props>>`
   align-items: center;
   justify-content: center;
   flex: 1 0 auto;
-
+  
   &:first-of-type {
     order: -1;
   }
-
+  
   &:active:enabled {
     background-color: ${p => p.theme.color.cta};
-
+    
     svg {
       fill: ${p => p.theme.color.buttonText};
     }
   }
-`;
+  `;
 
-const Input = styled(NormalizedElements.Input).attrs({ type: 'number' })<Partial<Props>>`
+const Input = styled(NormalizedElements.Input).attrs({ type: 'text' })<Partial<Props>>`
   ${background}
   ${borderStyles}
-  padding: ${p => p.theme.spacing.unit(2)}px;
+  ${height}
   width: 100%;
-  height: 100%;
+  padding: ${p => p.theme.spacing.unit(2)}px;
   margin: 0 -1px;
+  text-align: center;
   box-sizing: border-box;
   z-index: 1;
-
-  &::-webkit-outer-spin-button,
-  &::-webkit-inner-spin-button {
-    -webkit-appearance: none; /* stylelint-disable-line property-no-vendor-prefix */
-    margin: 0;
-  }
-
-  &[type='number'] {
-    -moz-appearance: textfield; /* stylelint-disable-line property-no-vendor-prefix */
-  }
 `;
 
 const components = {
@@ -124,7 +123,9 @@ const NumberInput: NumberComponent & {
     disabled,
     error,
     fieldId,
+    hasError,
     intl,
+    label,
     max,
     min = 0,
     name,
@@ -141,20 +142,33 @@ const NumberInput: NumberComponent & {
     required,
     size,
     step = 1,
+    inputMode = 'decimal',
     success,
     value: controlledValueRaw,
   } = props;
-  const [uncontrolledValue, setUncontrolledValue] = useState(getNumberAsString(defaultValue));
-  const isControlled = isString(controlledValueRaw) || isNumber(controlledValueRaw);
-  const controlledValue = isControlled && getNumberAsString(controlledValueRaw);
+  const [internalValue, setInternalValue] = useState(getNumberAsString(defaultValue));
+  const handleValueChange = (val: string) => {
+    setInternalValue(val);
+
+    if (typeof onChange === 'function') {
+      onChange(val);
+    }
+  };
+
   const inputRef = useRef<HTMLInputElement>(null);
+  const isControlled = isString(controlledValueRaw) || isNumber(controlledValueRaw);
+  // handle case for entered negative values
+  const numberAsString =
+    controlledValueRaw === '-' ? controlledValueRaw : getNumberAsString(controlledValueRaw);
+  const controlledValue = isControlled && numberAsString;
+  const value = isControlled ? controlledValue : internalValue;
+
   const sanitizedNumbers = {
     max: max ? getStringAsNumber(max) : undefined,
     min: min ? getStringAsNumber(min) : undefined,
     step: isNumber(step) ? step : getStringAsNumber(step),
-    uncontrolledValue: getStringAsNumber(uncontrolledValue),
+    uncontrolledValue: getStringAsNumber(value),
   };
-  const previousValue = usePrevious(isControlled ? controlledValue : uncontrolledValue);
 
   const getUpdateValue = (increment: boolean) => {
     return adjustValue({
@@ -168,19 +182,15 @@ const NumberInput: NumberComponent & {
   };
 
   const onStepHandler = (stepUp: boolean) => {
-    if (!isControlled) {
-      const updatedValue = getUpdateValue(stepUp);
-      setUncontrolledValue(updatedValue);
+    const updatedValue = getUpdateValue(stepUp);
+    handleValueChange(updatedValue);
+
+    if (stepUp && onStepUp) {
+      onStepUp();
     }
 
-    if (onStepUp || onStepDown) {
-      if (stepUp && onStepUp) {
-        onStepUp();
-      }
-
-      if (!stepUp && onStepDown) {
-        onStepDown();
-      }
+    if (!stepUp && onStepDown) {
+      onStepDown();
     }
 
     if (inputRef.current) {
@@ -189,22 +199,17 @@ const NumberInput: NumberComponent & {
   };
 
   const onChangeHandler = (e: React.ChangeEvent<HTMLInputElement>) => {
-    if (!isControlled) {
-      const newValue = e.target.value;
-      setUncontrolledValue(newValue);
-    }
+    handleValueChange(e.target.value);
   };
 
   const onKeyDownHandler = (e: React.KeyboardEvent<HTMLInputElement>) => {
-    if (!isControlled) {
-      const { key } = e;
-      const upKey = 'ArrowUp';
-      const downKey = 'ArrowDown';
+    const { key } = e;
+    const upKey = 'ArrowUp';
+    const downKey = 'ArrowDown';
 
-      if (key === upKey || key === downKey) {
-        e.preventDefault();
-        onStepHandler(key === upKey);
-      }
+    if (key === upKey || key === downKey) {
+      e.preventDefault();
+      onStepHandler(key === upKey);
     }
 
     if (onKeyDown) {
@@ -212,26 +217,17 @@ const NumberInput: NumberComponent & {
     }
   };
 
-  useEffect(() => {
-    if (onChange) {
-      if (isControlled) {
-        if (previousValue !== controlledValue) {
-          onChange(controlledValue);
-        }
-      } else if (previousValue !== uncontrolledValue) {
-        onChange(uncontrolledValue);
-      }
-    }
-  }, [onChange, previousValue, uncontrolledValue]); // eslint-disable-line
+  // TODO: remove the line below when the depricated label prop is removed
+  const inputHasError = label ? hasError : hasError || deprecatedErrorPresent(error);
 
-  return (
-    <FormFieldSimple {...props}>
-      <Flexbox container item grow={1} alignItems="center">
+  const InputNumber = (
+    <Typography type="secondary" color={t => t.color.text}>
+      <Wrapper container item grow={1} alignItems="center">
         <Input
           {...{
             autoFocus,
             disabled,
-            error,
+            hasError,
             id: fieldId,
             max,
             min,
@@ -245,11 +241,13 @@ const NumberInput: NumberComponent & {
             onKeyUp,
             ref: inputRef,
             required,
+            size,
             step,
             success,
-            value: controlledValue || uncontrolledValue,
+            value: removeNonNumberCharacters(value),
+            inputMode,
           }}
-          {...(hasError(error) ? { 'aria-invalid': true } : {})}
+          {...(inputHasError ? { 'aria-invalid': true } : {})}
         />
         {!noSteppers && (
           <>
@@ -263,9 +261,85 @@ const NumberInput: NumberComponent & {
             </Stepper>
           </>
         )}
-      </Flexbox>
-    </FormFieldSimple>
+      </Wrapper>
+    </Typography>
   );
+
+  if (props.hideLabel) {
+    assert(
+      false,
+      `Input.Number: (Deprecated usage) Please wrap component in FormField and pass that the hideLabel prop instead.`,
+      {
+        level: 'warn',
+      },
+    );
+  }
+
+  if (error) {
+    assert(
+      false,
+      `Input.Number: (Deprecated usage) Please wrap component in FormField and pass that the error prop instead.`,
+      {
+        level: 'warn',
+      },
+    );
+  }
+
+  if (props.extraInfo) {
+    assert(
+      false,
+      `Input.Number: (Deprecated usage) Please wrap component in FormField and pass that the extraInfo prop instead.`,
+      {
+        level: 'warn',
+      },
+    );
+  }
+
+  if (props.fullWidth) {
+    assert(
+      false,
+      `Input.Number: (Deprecated usage) Please wrap component in FormField and pass that the fullWidth prop instead.`,
+      {
+        level: 'warn',
+      },
+    );
+  }
+
+  if (props.width) {
+    assert(
+      false,
+      `Input.Number: (Deprecated usage) Please wrap component in FormField and pass that the width prop instead.`,
+      {
+        level: 'warn',
+      },
+    );
+  }
+
+  if (label && isString(label)) {
+    assert(
+      false,
+      `Input.Number: (Deprecated usage) Please wrap component in FormField and pass that the label prop instead.`,
+      {
+        level: 'warn',
+      },
+    );
+
+    assert(
+      !fieldId,
+      `Input.Number: (Deprecated usage) You forgot to specify fieldId, your label is not linked to your input.`,
+      {
+        level: 'warn',
+      },
+    );
+
+    return (
+      <FormField {...props} label={label}>
+        {InputNumber}
+      </FormField>
+    );
+  }
+
+  return InputNumber;
 };
 
 NumberInput.components = components;

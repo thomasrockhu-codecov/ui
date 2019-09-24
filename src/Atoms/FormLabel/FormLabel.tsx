@@ -6,14 +6,13 @@ import { visuallyHiddenCss as visuallyHidden } from '../VisuallyHidden';
 
 const StyledLabel = styled.label`
   ${p => (p.hidden ? visuallyHidden : '')}
-  width: 100%;
-  overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  cursor: pointer;
 `;
 
-export const FormLabel: React.FC<Props> = ({ children, className, forId, hideLabel }) => (
-  <StyledLabel className={className} htmlFor={forId} hidden={Boolean(hideLabel)}>
+export const FormLabel: React.FC<Props> = ({ as, children, className, forId, hideLabel }) => (
+  <StyledLabel as={as} className={className} htmlFor={forId} hidden={Boolean(hideLabel)}>
     <Typography type="secondary" color={t => t.color.label}>
       {children}
     </Typography>

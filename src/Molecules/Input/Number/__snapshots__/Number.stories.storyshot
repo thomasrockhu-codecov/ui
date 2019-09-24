@@ -7,14 +7,6 @@ exports[`Storyshots Molecules | Input / Number Default 1`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-}
-
-.c6 {
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -25,7 +17,7 @@ exports[`Storyshots Molecules | Input / Number Default 1`] = `
   flex-grow: 1;
 }
 
-.c9 {
+.c8 {
   position: absolute;
   height: 1px;
   width: 1px;
@@ -35,13 +27,12 @@ exports[`Storyshots Molecules | Input / Number Default 1`] = `
 }
 
 .c1 {
-  width: 100%;
-  overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  cursor: pointer;
 }
 
-.c10 {
+.c9 {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -79,20 +70,16 @@ exports[`Storyshots Molecules | Input / Number Default 1`] = `
 }
 
 .c4 {
-  position: relative;
-  background-color: #ffffff;
-  height: 40px;
   box-shadow: 0 1px 3px rgba(0,0,0,0.03);
-  box-sizing: border-box;
 }
 
-.c8 {
+.c7 {
   width: 40px;
+  height: 40px;
   background-color: #FFFFFF;
   outline: none;
   border: 1px solid #BCBCB6;
   position: relative;
-  height: 100%;
   padding: 0;
   cursor: pointer;
   box-sizing: border-box;
@@ -111,48 +98,6 @@ exports[`Storyshots Molecules | Input / Number Default 1`] = `
   -webkit-flex: 1 0 auto;
   -ms-flex: 1 0 auto;
   flex: 1 0 auto;
-}
-
-.c8:hover {
-  border-color: #4B4B46;
-  z-index: 2;
-}
-
-.c8:focus {
-  border-color: #0046FF;
-  z-index: 3;
-}
-
-.c8:first-of-type {
-  -webkit-order: -1;
-  -ms-flex-order: -1;
-  order: -1;
-}
-
-.c8:active:enabled {
-  background-color: #0046FF;
-}
-
-.c8:active:enabled svg {
-  fill: #FFFFFF;
-}
-
-.c7 {
-  font-family: inherit;
-  font-size: 100%;
-  line-height: 1.15;
-  margin: 0;
-  overflow: visible;
-  background-color: #FFFFFF;
-  outline: none;
-  border: 1px solid #BCBCB6;
-  position: relative;
-  padding: 8px;
-  width: 100%;
-  height: 100%;
-  margin: 0 -1px;
-  box-sizing: border-box;
-  z-index: 1;
 }
 
 .c7:hover {
@@ -165,14 +110,47 @@ exports[`Storyshots Molecules | Input / Number Default 1`] = `
   z-index: 3;
 }
 
-.c7::-webkit-outer-spin-button,
-.c7::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
+.c7:first-of-type {
+  -webkit-order: -1;
+  -ms-flex-order: -1;
+  order: -1;
 }
 
-.c7[type='number'] {
-  -moz-appearance: textfield;
+.c7:active:enabled {
+  background-color: #0046FF;
+}
+
+.c7:active:enabled svg {
+  fill: #FFFFFF;
+}
+
+.c6 {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  overflow: visible;
+  background-color: #FFFFFF;
+  outline: none;
+  border: 1px solid #BCBCB6;
+  position: relative;
+  height: 40px;
+  width: 100%;
+  padding: 8px;
+  margin: 0 -1px;
+  text-align: center;
+  box-sizing: border-box;
+  z-index: 1;
+}
+
+.c6:hover {
+  border-color: #4B4B46;
+  z-index: 2;
+}
+
+.c6:focus {
+  border-color: #0046FF;
+  z-index: 3;
 }
 
 <div
@@ -181,13 +159,12 @@ exports[`Storyshots Molecules | Input / Number Default 1`] = `
   <label
     className="c1"
     hidden={false}
-    htmlFor="insert-unique-id"
+    htmlFor="insert-matching-unique-id"
   >
     <span
       className="c2"
     >
-      Label
-      
+      Label 
     </span>
   </label>
   <span
@@ -196,87 +173,75 @@ exports[`Storyshots Molecules | Input / Number Default 1`] = `
     <div
       className="c4 c5"
     >
-      <div
+      <input
         className="c6"
+        inputMode="decimal"
+        min={0}
+        onChange={[Function]}
+        onKeyDown={[Function]}
+        step={1}
+        type="text"
+        value="1"
+      />
+      <button
+        className="c7"
+        onClick={[Function]}
+        type="button"
       >
-        <input
-          className="c7"
-          id="insert-unique-id"
-          min={0}
-          onChange={[Function]}
-          onKeyDown={[Function]}
-          step={1}
-          type="number"
-          value="1"
-        />
-        <button
+        <div
           className="c8"
-          onClick={[Function]}
-          type="button"
         >
-          <div
-            className="c9"
-          >
-            decrease number by 
-            1
-          </div>
-          <svg
-            aria-hidden="true"
-            className="c10"
-            focusable="false"
-            preserveAspectRatio="xMidYMid meet"
-            role="presentation"
-            size={3}
-            viewBox="0 0 24 24"
-          >
-            <path
-              d="M24 11v2H0v-2z"
-              fillRule="evenodd"
-            />
-          </svg>
-        </button>
-        <button
+          decrease number by 
+          1
+        </div>
+        <svg
+          aria-hidden="true"
+          className="c9"
+          focusable="false"
+          preserveAspectRatio="xMidYMid meet"
+          role="presentation"
+          size={3}
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M24 11v2H0v-2z"
+            fillRule="evenodd"
+          />
+        </svg>
+      </button>
+      <button
+        className="c7"
+        onClick={[Function]}
+        type="button"
+      >
+        <div
           className="c8"
-          onClick={[Function]}
-          type="button"
         >
-          <div
-            className="c9"
-          >
-            increase number by 
-            1
-          </div>
-          <svg
-            aria-hidden="true"
-            className="c10"
-            focusable="false"
-            preserveAspectRatio="xMidYMid meet"
-            role="presentation"
-            size={3}
-            viewBox="0 0 24 24"
-          >
-            <path
-              d="M13 0v11h11v2H13v11h-2V12.999L0 13v-2l11-.001V0h2z"
-              fillRule="evenodd"
-            />
-          </svg>
-        </button>
-      </div>
+          increase number by 
+          1
+        </div>
+        <svg
+          aria-hidden="true"
+          className="c9"
+          focusable="false"
+          preserveAspectRatio="xMidYMid meet"
+          role="presentation"
+          size={3}
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M13 0v11h11v2H13v11h-2V12.999L0 13v-2l11-.001V0h2z"
+            fillRule="evenodd"
+          />
+        </svg>
+      </button>
     </div>
   </span>
 </div>
 `;
 
-exports[`Storyshots Molecules | Input / Number Disabled 1`] = `
+exports[`Storyshots Molecules | Input / Number Deprecated usage 1`] = `
 .c5 {
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.c6 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -292,7 +257,7 @@ exports[`Storyshots Molecules | Input / Number Disabled 1`] = `
   flex-grow: 1;
 }
 
-.c9 {
+.c8 {
   position: absolute;
   height: 1px;
   width: 1px;
@@ -302,13 +267,280 @@ exports[`Storyshots Molecules | Input / Number Disabled 1`] = `
 }
 
 .c1 {
-  width: 100%;
+  position: absolute;
+  height: 1px;
+  width: 1px;
   overflow: hidden;
+  -webkit-clip: rect(1px,1px,1px,1px);
+  clip: rect(1px,1px,1px,1px);
   text-overflow: ellipsis;
   white-space: nowrap;
+  cursor: pointer;
+}
+
+.c9 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 12px;
+  height: 12px;
+  fill: #282823;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
+}
+
+.c2 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #6E6E69;
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c3 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
 }
 
 .c10 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #FF1900;
+  margin: 0;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.3333333333333333;
+}
+
+.c0 {
+  width: 300px;
+  display: inline-block;
+}
+
+.c4 {
+  box-shadow: 0 1px 3px rgba(0,0,0,0.03);
+}
+
+.c7 {
+  width: 40px;
+  height: 40px;
+  background-color: #FFFFFF;
+  outline: none;
+  border: 1px solid #BCBCB6;
+  position: relative;
+  padding: 0;
+  cursor: pointer;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-flex: 1 0 auto;
+  -ms-flex: 1 0 auto;
+  flex: 1 0 auto;
+}
+
+.c7:hover {
+  border-color: #4B4B46;
+  z-index: 2;
+}
+
+.c7:focus {
+  border-color: #0046FF;
+  z-index: 3;
+}
+
+.c7:first-of-type {
+  -webkit-order: -1;
+  -ms-flex-order: -1;
+  order: -1;
+}
+
+.c7:active:enabled {
+  background-color: #0046FF;
+}
+
+.c7:active:enabled svg {
+  fill: #FFFFFF;
+}
+
+.c6 {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  overflow: visible;
+  background-color: #FFFFFF;
+  outline: none;
+  border: 1px solid #BCBCB6;
+  position: relative;
+  height: 40px;
+  width: 100%;
+  padding: 8px;
+  margin: 0 -1px;
+  text-align: center;
+  box-sizing: border-box;
+  z-index: 1;
+}
+
+.c6:hover {
+  border-color: #4B4B46;
+  z-index: 2;
+}
+
+.c6:focus {
+  border-color: #0046FF;
+  z-index: 3;
+}
+
+<div
+  className="c0"
+  width="300px;"
+>
+  <label
+    className="c1"
+    hidden={true}
+  >
+    <span
+      className="c2"
+    >
+      Label 
+    </span>
+  </label>
+  <span
+    className="c3"
+  >
+    <div
+      className="c4 c5"
+    >
+      <input
+        className="c6"
+        id="insert-unique-id"
+        inputMode="decimal"
+        min={0}
+        onChange={[Function]}
+        onKeyDown={[Function]}
+        step={1}
+        type="text"
+        value="0"
+      />
+      <button
+        className="c7"
+        onClick={[Function]}
+        type="button"
+      >
+        <div
+          className="c8"
+        >
+          decrease number by 
+          1
+        </div>
+        <svg
+          aria-hidden="true"
+          className="c9"
+          focusable="false"
+          preserveAspectRatio="xMidYMid meet"
+          role="presentation"
+          size={3}
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M24 11v2H0v-2z"
+            fillRule="evenodd"
+          />
+        </svg>
+      </button>
+      <button
+        className="c7"
+        onClick={[Function]}
+        type="button"
+      >
+        <div
+          className="c8"
+        >
+          increase number by 
+          1
+        </div>
+        <svg
+          aria-hidden="true"
+          className="c9"
+          focusable="false"
+          preserveAspectRatio="xMidYMid meet"
+          role="presentation"
+          size={3}
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M13 0v11h11v2H13v11h-2V12.999L0 13v-2l11-.001V0h2z"
+            fillRule="evenodd"
+          />
+        </svg>
+      </button>
+    </div>
+  </span>
+  <div>
+    <span
+      className="c10"
+    >
+      <div
+        className="c8"
+      >
+        Error: 
+      </div>
+      Number needs to be greater than 0
+    </span>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Molecules | Input / Number Disabled 1`] = `
+.c5 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+}
+
+.c8 {
+  position: absolute;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  -webkit-clip: rect(1px,1px,1px,1px);
+  clip: rect(1px,1px,1px,1px);
+}
+
+.c1 {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.c9 {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -346,20 +578,16 @@ exports[`Storyshots Molecules | Input / Number Disabled 1`] = `
 }
 
 .c4 {
-  position: relative;
-  background-color: #ffffff;
-  height: 40px;
   box-shadow: 0 1px 3px rgba(0,0,0,0.03);
-  box-sizing: border-box;
 }
 
-.c8 {
+.c7 {
   width: 40px;
+  height: 40px;
   background-color: #EBEBE8;
   outline: none;
   border: 1px solid #BCBCB6;
   position: relative;
-  height: 100%;
   padding: 0;
   cursor: pointer;
   box-sizing: border-box;
@@ -380,26 +608,26 @@ exports[`Storyshots Molecules | Input / Number Disabled 1`] = `
   flex: 1 0 auto;
 }
 
-.c8:focus {
+.c7:focus {
   border-color: #0046FF;
   z-index: 3;
 }
 
-.c8:first-of-type {
+.c7:first-of-type {
   -webkit-order: -1;
   -ms-flex-order: -1;
   order: -1;
 }
 
-.c8:active:enabled {
+.c7:active:enabled {
   background-color: #0046FF;
 }
 
-.c8:active:enabled svg {
+.c7:active:enabled svg {
   fill: #FFFFFF;
 }
 
-.c7 {
+.c6 {
   font-family: inherit;
   font-size: 100%;
   line-height: 1.15;
@@ -409,27 +637,18 @@ exports[`Storyshots Molecules | Input / Number Disabled 1`] = `
   outline: none;
   border: 1px solid #BCBCB6;
   position: relative;
-  padding: 8px;
+  height: 40px;
   width: 100%;
-  height: 100%;
+  padding: 8px;
   margin: 0 -1px;
+  text-align: center;
   box-sizing: border-box;
   z-index: 1;
 }
 
-.c7:focus {
+.c6:focus {
   border-color: #0046FF;
   z-index: 3;
-}
-
-.c7::-webkit-outer-spin-button,
-.c7::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
-}
-
-.c7[type='number'] {
-  -moz-appearance: textfield;
 }
 
 <div
@@ -438,13 +657,12 @@ exports[`Storyshots Molecules | Input / Number Disabled 1`] = `
   <label
     className="c1"
     hidden={false}
-    htmlFor="insert-unique-id"
+    htmlFor="insert-matching-unique-id"
   >
     <span
       className="c2"
     >
-      Label
-      
+      Label 
     </span>
   </label>
   <span
@@ -453,75 +671,71 @@ exports[`Storyshots Molecules | Input / Number Disabled 1`] = `
     <div
       className="c4 c5"
     >
-      <div
+      <input
         className="c6"
+        disabled={true}
+        inputMode="decimal"
+        min={0}
+        onChange={[Function]}
+        onKeyDown={[Function]}
+        step="0.25"
+        type="text"
+        value="152.25"
+      />
+      <button
+        className="c7"
+        disabled={true}
+        onClick={[Function]}
+        type="button"
       >
-        <input
-          className="c7"
-          disabled={true}
-          id="insert-unique-id"
-          min={0}
-          onChange={[Function]}
-          onKeyDown={[Function]}
-          step="0.25"
-          type="number"
-          value="152.25"
-        />
-        <button
+        <div
           className="c8"
-          disabled={true}
-          onClick={[Function]}
-          type="button"
         >
-          <div
-            className="c9"
-          >
-            decrease number by 
-            0.25
-          </div>
-          <svg
-            aria-hidden="true"
-            className="c10"
-            focusable="false"
-            preserveAspectRatio="xMidYMid meet"
-            role="presentation"
-            size={3}
-            viewBox="0 0 24 24"
-          >
-            <path
-              d="M24 11v2H0v-2z"
-              fillRule="evenodd"
-            />
-          </svg>
-        </button>
-        <button
+          decrease number by 
+          0.25
+        </div>
+        <svg
+          aria-hidden="true"
+          className="c9"
+          focusable="false"
+          preserveAspectRatio="xMidYMid meet"
+          role="presentation"
+          size={3}
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M24 11v2H0v-2z"
+            fillRule="evenodd"
+          />
+        </svg>
+      </button>
+      <button
+        className="c7"
+        disabled={true}
+        onClick={[Function]}
+        type="button"
+      >
+        <div
           className="c8"
-          disabled={true}
-          onClick={[Function]}
-          type="button"
         >
-          <div
-            className="c9"
-          >
-            increase number by 
-            0.25
-          </div>
-          <svg
-            aria-hidden="true"
-            className="c10"
-            focusable="false"
-            preserveAspectRatio="xMidYMid meet"
-            role="presentation"
-            size={3}
-            viewBox="0 0 24 24"
-          >
-            <path
-              d="M13 0v11h11v2H13v11h-2V12.999L0 13v-2l11-.001V0h2z"
-              fillRule="evenodd"
-            />
-          </svg>
-        </button>
-      </div>
+          increase number by 
+          0.25
+        </div>
+        <svg
+          aria-hidden="true"
+          className="c9"
+          focusable="false"
+          preserveAspectRatio="xMidYMid meet"
+          role="presentation"
+          size={3}
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M13 0v11h11v2H13v11h-2V12.999L0 13v-2l11-.001V0h2z"
+            fillRule="evenodd"
+          />
+        </svg>
+      </button>
     </div>
   </span>
 </div>
@@ -534,14 +748,6 @@ exports[`Storyshots Molecules | Input / Number Required 1`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-}
-
-.c6 {
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -552,7 +758,7 @@ exports[`Storyshots Molecules | Input / Number Required 1`] = `
   flex-grow: 1;
 }
 
-.c9 {
+.c8 {
   position: absolute;
   height: 1px;
   width: 1px;
@@ -562,13 +768,12 @@ exports[`Storyshots Molecules | Input / Number Required 1`] = `
 }
 
 .c1 {
-  width: 100%;
-  overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  cursor: pointer;
 }
 
-.c10 {
+.c9 {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -606,20 +811,16 @@ exports[`Storyshots Molecules | Input / Number Required 1`] = `
 }
 
 .c4 {
-  position: relative;
-  background-color: #ffffff;
-  height: 40px;
   box-shadow: 0 1px 3px rgba(0,0,0,0.03);
-  box-sizing: border-box;
 }
 
-.c8 {
+.c7 {
   width: 40px;
+  height: 40px;
   background-color: #FFFFFF;
   outline: none;
   border: 1px solid #BCBCB6;
   position: relative;
-  height: 100%;
   padding: 0;
   cursor: pointer;
   box-sizing: border-box;
@@ -640,48 +841,6 @@ exports[`Storyshots Molecules | Input / Number Required 1`] = `
   flex: 1 0 auto;
 }
 
-.c8:hover {
-  border-color: #4B4B46;
-  z-index: 2;
-}
-
-.c8:focus {
-  border-color: #0046FF;
-  z-index: 3;
-}
-
-.c8:first-of-type {
-  -webkit-order: -1;
-  -ms-flex-order: -1;
-  order: -1;
-}
-
-.c8:active:enabled {
-  background-color: #0046FF;
-}
-
-.c8:active:enabled svg {
-  fill: #FFFFFF;
-}
-
-.c7 {
-  font-family: inherit;
-  font-size: 100%;
-  line-height: 1.15;
-  margin: 0;
-  overflow: visible;
-  background-color: #FFFFFF;
-  outline: none;
-  border: 1px solid #BCBCB6;
-  position: relative;
-  padding: 8px;
-  width: 100%;
-  height: 100%;
-  margin: 0 -1px;
-  box-sizing: border-box;
-  z-index: 1;
-}
-
 .c7:hover {
   border-color: #4B4B46;
   z-index: 2;
@@ -692,14 +851,47 @@ exports[`Storyshots Molecules | Input / Number Required 1`] = `
   z-index: 3;
 }
 
-.c7::-webkit-outer-spin-button,
-.c7::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
+.c7:first-of-type {
+  -webkit-order: -1;
+  -ms-flex-order: -1;
+  order: -1;
 }
 
-.c7[type='number'] {
-  -moz-appearance: textfield;
+.c7:active:enabled {
+  background-color: #0046FF;
+}
+
+.c7:active:enabled svg {
+  fill: #FFFFFF;
+}
+
+.c6 {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  overflow: visible;
+  background-color: #FFFFFF;
+  outline: none;
+  border: 1px solid #BCBCB6;
+  position: relative;
+  height: 40px;
+  width: 100%;
+  padding: 8px;
+  margin: 0 -1px;
+  text-align: center;
+  box-sizing: border-box;
+  z-index: 1;
+}
+
+.c6:hover {
+  border-color: #4B4B46;
+  z-index: 2;
+}
+
+.c6:focus {
+  border-color: #0046FF;
+  z-index: 3;
 }
 
 <div
@@ -708,13 +900,12 @@ exports[`Storyshots Molecules | Input / Number Required 1`] = `
   <label
     className="c1"
     hidden={false}
-    htmlFor="insert-unique-id"
+    htmlFor="insert-matching-unique-id"
   >
     <span
       className="c2"
     >
-      Label
-       *
+      Label *
     </span>
   </label>
   <span
@@ -723,73 +914,69 @@ exports[`Storyshots Molecules | Input / Number Required 1`] = `
     <div
       className="c4 c5"
     >
-      <div
+      <input
         className="c6"
+        inputMode="decimal"
+        min={0}
+        onChange={[Function]}
+        onKeyDown={[Function]}
+        required={true}
+        step={1}
+        type="text"
+        value="91"
+      />
+      <button
+        className="c7"
+        onClick={[Function]}
+        type="button"
       >
-        <input
-          className="c7"
-          id="insert-unique-id"
-          min={0}
-          onChange={[Function]}
-          onKeyDown={[Function]}
-          required={true}
-          step={1}
-          type="number"
-          value="91"
-        />
-        <button
+        <div
           className="c8"
-          onClick={[Function]}
-          type="button"
         >
-          <div
-            className="c9"
-          >
-            decrease number by 
-            1
-          </div>
-          <svg
-            aria-hidden="true"
-            className="c10"
-            focusable="false"
-            preserveAspectRatio="xMidYMid meet"
-            role="presentation"
-            size={3}
-            viewBox="0 0 24 24"
-          >
-            <path
-              d="M24 11v2H0v-2z"
-              fillRule="evenodd"
-            />
-          </svg>
-        </button>
-        <button
+          decrease number by 
+          1
+        </div>
+        <svg
+          aria-hidden="true"
+          className="c9"
+          focusable="false"
+          preserveAspectRatio="xMidYMid meet"
+          role="presentation"
+          size={3}
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M24 11v2H0v-2z"
+            fillRule="evenodd"
+          />
+        </svg>
+      </button>
+      <button
+        className="c7"
+        onClick={[Function]}
+        type="button"
+      >
+        <div
           className="c8"
-          onClick={[Function]}
-          type="button"
         >
-          <div
-            className="c9"
-          >
-            increase number by 
-            1
-          </div>
-          <svg
-            aria-hidden="true"
-            className="c10"
-            focusable="false"
-            preserveAspectRatio="xMidYMid meet"
-            role="presentation"
-            size={3}
-            viewBox="0 0 24 24"
-          >
-            <path
-              d="M13 0v11h11v2H13v11h-2V12.999L0 13v-2l11-.001V0h2z"
-              fillRule="evenodd"
-            />
-          </svg>
-        </button>
-      </div>
+          increase number by 
+          1
+        </div>
+        <svg
+          aria-hidden="true"
+          className="c9"
+          focusable="false"
+          preserveAspectRatio="xMidYMid meet"
+          role="presentation"
+          size={3}
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M13 0v11h11v2H13v11h-2V12.999L0 13v-2l11-.001V0h2z"
+            fillRule="evenodd"
+          />
+        </svg>
+      </button>
     </div>
   </span>
 </div>
@@ -802,14 +989,6 @@ exports[`Storyshots Molecules | Input / Number With a smaller step 1`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-}
-
-.c6 {
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -820,7 +999,7 @@ exports[`Storyshots Molecules | Input / Number With a smaller step 1`] = `
   flex-grow: 1;
 }
 
-.c9 {
+.c8 {
   position: absolute;
   height: 1px;
   width: 1px;
@@ -830,13 +1009,12 @@ exports[`Storyshots Molecules | Input / Number With a smaller step 1`] = `
 }
 
 .c1 {
-  width: 100%;
-  overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  cursor: pointer;
 }
 
-.c10 {
+.c9 {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -874,20 +1052,16 @@ exports[`Storyshots Molecules | Input / Number With a smaller step 1`] = `
 }
 
 .c4 {
-  position: relative;
-  background-color: #ffffff;
-  height: 40px;
   box-shadow: 0 1px 3px rgba(0,0,0,0.03);
-  box-sizing: border-box;
 }
 
-.c8 {
+.c7 {
   width: 40px;
+  height: 40px;
   background-color: #FFFFFF;
   outline: none;
   border: 1px solid #BCBCB6;
   position: relative;
-  height: 100%;
   padding: 0;
   cursor: pointer;
   box-sizing: border-box;
@@ -908,48 +1082,6 @@ exports[`Storyshots Molecules | Input / Number With a smaller step 1`] = `
   flex: 1 0 auto;
 }
 
-.c8:hover {
-  border-color: #4B4B46;
-  z-index: 2;
-}
-
-.c8:focus {
-  border-color: #0046FF;
-  z-index: 3;
-}
-
-.c8:first-of-type {
-  -webkit-order: -1;
-  -ms-flex-order: -1;
-  order: -1;
-}
-
-.c8:active:enabled {
-  background-color: #0046FF;
-}
-
-.c8:active:enabled svg {
-  fill: #FFFFFF;
-}
-
-.c7 {
-  font-family: inherit;
-  font-size: 100%;
-  line-height: 1.15;
-  margin: 0;
-  overflow: visible;
-  background-color: #FFFFFF;
-  outline: none;
-  border: 1px solid #BCBCB6;
-  position: relative;
-  padding: 8px;
-  width: 100%;
-  height: 100%;
-  margin: 0 -1px;
-  box-sizing: border-box;
-  z-index: 1;
-}
-
 .c7:hover {
   border-color: #4B4B46;
   z-index: 2;
@@ -960,14 +1092,47 @@ exports[`Storyshots Molecules | Input / Number With a smaller step 1`] = `
   z-index: 3;
 }
 
-.c7::-webkit-outer-spin-button,
-.c7::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
+.c7:first-of-type {
+  -webkit-order: -1;
+  -ms-flex-order: -1;
+  order: -1;
 }
 
-.c7[type='number'] {
-  -moz-appearance: textfield;
+.c7:active:enabled {
+  background-color: #0046FF;
+}
+
+.c7:active:enabled svg {
+  fill: #FFFFFF;
+}
+
+.c6 {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  overflow: visible;
+  background-color: #FFFFFF;
+  outline: none;
+  border: 1px solid #BCBCB6;
+  position: relative;
+  height: 40px;
+  width: 100%;
+  padding: 8px;
+  margin: 0 -1px;
+  text-align: center;
+  box-sizing: border-box;
+  z-index: 1;
+}
+
+.c6:hover {
+  border-color: #4B4B46;
+  z-index: 2;
+}
+
+.c6:focus {
+  border-color: #0046FF;
+  z-index: 3;
 }
 
 <div
@@ -976,13 +1141,12 @@ exports[`Storyshots Molecules | Input / Number With a smaller step 1`] = `
   <label
     className="c1"
     hidden={false}
-    htmlFor="insert-unique-id"
+    htmlFor="insert-matching-unique-id"
   >
     <span
       className="c2"
     >
-      Label
-      
+      Label 
     </span>
   </label>
   <span
@@ -991,72 +1155,68 @@ exports[`Storyshots Molecules | Input / Number With a smaller step 1`] = `
     <div
       className="c4 c5"
     >
-      <div
+      <input
         className="c6"
+        inputMode="decimal"
+        min={0}
+        onChange={[Function]}
+        onKeyDown={[Function]}
+        step="0.005"
+        type="text"
+        value="15.200"
+      />
+      <button
+        className="c7"
+        onClick={[Function]}
+        type="button"
       >
-        <input
-          className="c7"
-          id="insert-unique-id"
-          min={0}
-          onChange={[Function]}
-          onKeyDown={[Function]}
-          step="0.005"
-          type="number"
-          value="15.200"
-        />
-        <button
+        <div
           className="c8"
-          onClick={[Function]}
-          type="button"
         >
-          <div
-            className="c9"
-          >
-            decrease number by 
-            0.005
-          </div>
-          <svg
-            aria-hidden="true"
-            className="c10"
-            focusable="false"
-            preserveAspectRatio="xMidYMid meet"
-            role="presentation"
-            size={3}
-            viewBox="0 0 24 24"
-          >
-            <path
-              d="M24 11v2H0v-2z"
-              fillRule="evenodd"
-            />
-          </svg>
-        </button>
-        <button
+          decrease number by 
+          0.005
+        </div>
+        <svg
+          aria-hidden="true"
+          className="c9"
+          focusable="false"
+          preserveAspectRatio="xMidYMid meet"
+          role="presentation"
+          size={3}
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M24 11v2H0v-2z"
+            fillRule="evenodd"
+          />
+        </svg>
+      </button>
+      <button
+        className="c7"
+        onClick={[Function]}
+        type="button"
+      >
+        <div
           className="c8"
-          onClick={[Function]}
-          type="button"
         >
-          <div
-            className="c9"
-          >
-            increase number by 
-            0.005
-          </div>
-          <svg
-            aria-hidden="true"
-            className="c10"
-            focusable="false"
-            preserveAspectRatio="xMidYMid meet"
-            role="presentation"
-            size={3}
-            viewBox="0 0 24 24"
-          >
-            <path
-              d="M13 0v11h11v2H13v11h-2V12.999L0 13v-2l11-.001V0h2z"
-              fillRule="evenodd"
-            />
-          </svg>
-        </button>
-      </div>
+          increase number by 
+          0.005
+        </div>
+        <svg
+          aria-hidden="true"
+          className="c9"
+          focusable="false"
+          preserveAspectRatio="xMidYMid meet"
+          role="presentation"
+          size={3}
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M13 0v11h11v2H13v11h-2V12.999L0 13v-2l11-.001V0h2z"
+            fillRule="evenodd"
+          />
+        </svg>
+      </button>
     </div>
   </span>
 </div>
@@ -1069,14 +1229,6 @@ exports[`Storyshots Molecules | Input / Number With all actions 1`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-}
-
-.c6 {
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -1087,7 +1239,7 @@ exports[`Storyshots Molecules | Input / Number With all actions 1`] = `
   flex-grow: 1;
 }
 
-.c9 {
+.c8 {
   position: absolute;
   height: 1px;
   width: 1px;
@@ -1097,13 +1249,12 @@ exports[`Storyshots Molecules | Input / Number With all actions 1`] = `
 }
 
 .c1 {
-  width: 100%;
-  overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  cursor: pointer;
 }
 
-.c10 {
+.c9 {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -1141,20 +1292,16 @@ exports[`Storyshots Molecules | Input / Number With all actions 1`] = `
 }
 
 .c4 {
-  position: relative;
-  background-color: #ffffff;
-  height: 40px;
   box-shadow: 0 1px 3px rgba(0,0,0,0.03);
-  box-sizing: border-box;
 }
 
-.c8 {
+.c7 {
   width: 40px;
+  height: 40px;
   background-color: #FFFFFF;
   outline: none;
   border: 1px solid #BCBCB6;
   position: relative;
-  height: 100%;
   padding: 0;
   cursor: pointer;
   box-sizing: border-box;
@@ -1175,48 +1322,6 @@ exports[`Storyshots Molecules | Input / Number With all actions 1`] = `
   flex: 1 0 auto;
 }
 
-.c8:hover {
-  border-color: #4B4B46;
-  z-index: 2;
-}
-
-.c8:focus {
-  border-color: #0046FF;
-  z-index: 3;
-}
-
-.c8:first-of-type {
-  -webkit-order: -1;
-  -ms-flex-order: -1;
-  order: -1;
-}
-
-.c8:active:enabled {
-  background-color: #0046FF;
-}
-
-.c8:active:enabled svg {
-  fill: #FFFFFF;
-}
-
-.c7 {
-  font-family: inherit;
-  font-size: 100%;
-  line-height: 1.15;
-  margin: 0;
-  overflow: visible;
-  background-color: #FFFFFF;
-  outline: none;
-  border: 1px solid #BCBCB6;
-  position: relative;
-  padding: 8px;
-  width: 100%;
-  height: 100%;
-  margin: 0 -1px;
-  box-sizing: border-box;
-  z-index: 1;
-}
-
 .c7:hover {
   border-color: #4B4B46;
   z-index: 2;
@@ -1227,14 +1332,47 @@ exports[`Storyshots Molecules | Input / Number With all actions 1`] = `
   z-index: 3;
 }
 
-.c7::-webkit-outer-spin-button,
-.c7::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
+.c7:first-of-type {
+  -webkit-order: -1;
+  -ms-flex-order: -1;
+  order: -1;
 }
 
-.c7[type='number'] {
-  -moz-appearance: textfield;
+.c7:active:enabled {
+  background-color: #0046FF;
+}
+
+.c7:active:enabled svg {
+  fill: #FFFFFF;
+}
+
+.c6 {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  overflow: visible;
+  background-color: #FFFFFF;
+  outline: none;
+  border: 1px solid #BCBCB6;
+  position: relative;
+  height: 40px;
+  width: 100%;
+  padding: 8px;
+  margin: 0 -1px;
+  text-align: center;
+  box-sizing: border-box;
+  z-index: 1;
+}
+
+.c6:hover {
+  border-color: #4B4B46;
+  z-index: 2;
+}
+
+.c6:focus {
+  border-color: #0046FF;
+  z-index: 3;
 }
 
 <div
@@ -1243,13 +1381,12 @@ exports[`Storyshots Molecules | Input / Number With all actions 1`] = `
   <label
     className="c1"
     hidden={false}
-    htmlFor="insert-unique-id"
+    htmlFor="insert-matching-unique-id"
   >
     <span
       className="c2"
     >
-      Label
-      
+      Label 
     </span>
   </label>
   <span
@@ -1258,77 +1395,73 @@ exports[`Storyshots Molecules | Input / Number With all actions 1`] = `
     <div
       className="c4 c5"
     >
-      <div
+      <input
         className="c6"
+        inputMode="decimal"
+        min={0}
+        onBlur={[Function]}
+        onChange={[Function]}
+        onClick={[Function]}
+        onFocus={[Function]}
+        onKeyDown={[Function]}
+        onKeyPress={[Function]}
+        onKeyUp={[Function]}
+        step={1}
+        type="text"
+        value="1"
+      />
+      <button
+        className="c7"
+        onClick={[Function]}
+        type="button"
       >
-        <input
-          className="c7"
-          id="insert-unique-id"
-          min={0}
-          onBlur={[Function]}
-          onChange={[Function]}
-          onClick={[Function]}
-          onFocus={[Function]}
-          onKeyDown={[Function]}
-          onKeyPress={[Function]}
-          onKeyUp={[Function]}
-          step={1}
-          type="number"
-          value="1"
-        />
-        <button
+        <div
           className="c8"
-          onClick={[Function]}
-          type="button"
         >
-          <div
-            className="c9"
-          >
-            decrease number by 
-            1
-          </div>
-          <svg
-            aria-hidden="true"
-            className="c10"
-            focusable="false"
-            preserveAspectRatio="xMidYMid meet"
-            role="presentation"
-            size={3}
-            viewBox="0 0 24 24"
-          >
-            <path
-              d="M24 11v2H0v-2z"
-              fillRule="evenodd"
-            />
-          </svg>
-        </button>
-        <button
+          decrease number by 
+          1
+        </div>
+        <svg
+          aria-hidden="true"
+          className="c9"
+          focusable="false"
+          preserveAspectRatio="xMidYMid meet"
+          role="presentation"
+          size={3}
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M24 11v2H0v-2z"
+            fillRule="evenodd"
+          />
+        </svg>
+      </button>
+      <button
+        className="c7"
+        onClick={[Function]}
+        type="button"
+      >
+        <div
           className="c8"
-          onClick={[Function]}
-          type="button"
         >
-          <div
-            className="c9"
-          >
-            increase number by 
-            1
-          </div>
-          <svg
-            aria-hidden="true"
-            className="c10"
-            focusable="false"
-            preserveAspectRatio="xMidYMid meet"
-            role="presentation"
-            size={3}
-            viewBox="0 0 24 24"
-          >
-            <path
-              d="M13 0v11h11v2H13v11h-2V12.999L0 13v-2l11-.001V0h2z"
-              fillRule="evenodd"
-            />
-          </svg>
-        </button>
-      </div>
+          increase number by 
+          1
+        </div>
+        <svg
+          aria-hidden="true"
+          className="c9"
+          focusable="false"
+          preserveAspectRatio="xMidYMid meet"
+          role="presentation"
+          size={3}
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M13 0v11h11v2H13v11h-2V12.999L0 13v-2l11-.001V0h2z"
+            fillRule="evenodd"
+          />
+        </svg>
+      </button>
     </div>
   </span>
 </div>
@@ -1341,14 +1474,6 @@ exports[`Storyshots Molecules | Input / Number With auto focus 1`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-}
-
-.c6 {
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -1359,7 +1484,7 @@ exports[`Storyshots Molecules | Input / Number With auto focus 1`] = `
   flex-grow: 1;
 }
 
-.c9 {
+.c8 {
   position: absolute;
   height: 1px;
   width: 1px;
@@ -1369,13 +1494,12 @@ exports[`Storyshots Molecules | Input / Number With auto focus 1`] = `
 }
 
 .c1 {
-  width: 100%;
-  overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  cursor: pointer;
 }
 
-.c10 {
+.c9 {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -1413,20 +1537,16 @@ exports[`Storyshots Molecules | Input / Number With auto focus 1`] = `
 }
 
 .c4 {
-  position: relative;
-  background-color: #ffffff;
-  height: 40px;
   box-shadow: 0 1px 3px rgba(0,0,0,0.03);
-  box-sizing: border-box;
 }
 
-.c8 {
+.c7 {
   width: 40px;
+  height: 40px;
   background-color: #FFFFFF;
   outline: none;
   border: 1px solid #BCBCB6;
   position: relative;
-  height: 100%;
   padding: 0;
   cursor: pointer;
   box-sizing: border-box;
@@ -1447,48 +1567,6 @@ exports[`Storyshots Molecules | Input / Number With auto focus 1`] = `
   flex: 1 0 auto;
 }
 
-.c8:hover {
-  border-color: #4B4B46;
-  z-index: 2;
-}
-
-.c8:focus {
-  border-color: #0046FF;
-  z-index: 3;
-}
-
-.c8:first-of-type {
-  -webkit-order: -1;
-  -ms-flex-order: -1;
-  order: -1;
-}
-
-.c8:active:enabled {
-  background-color: #0046FF;
-}
-
-.c8:active:enabled svg {
-  fill: #FFFFFF;
-}
-
-.c7 {
-  font-family: inherit;
-  font-size: 100%;
-  line-height: 1.15;
-  margin: 0;
-  overflow: visible;
-  background-color: #FFFFFF;
-  outline: none;
-  border: 1px solid #BCBCB6;
-  position: relative;
-  padding: 8px;
-  width: 100%;
-  height: 100%;
-  margin: 0 -1px;
-  box-sizing: border-box;
-  z-index: 1;
-}
-
 .c7:hover {
   border-color: #4B4B46;
   z-index: 2;
@@ -1499,14 +1577,47 @@ exports[`Storyshots Molecules | Input / Number With auto focus 1`] = `
   z-index: 3;
 }
 
-.c7::-webkit-outer-spin-button,
-.c7::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
+.c7:first-of-type {
+  -webkit-order: -1;
+  -ms-flex-order: -1;
+  order: -1;
 }
 
-.c7[type='number'] {
-  -moz-appearance: textfield;
+.c7:active:enabled {
+  background-color: #0046FF;
+}
+
+.c7:active:enabled svg {
+  fill: #FFFFFF;
+}
+
+.c6 {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  overflow: visible;
+  background-color: #FFFFFF;
+  outline: none;
+  border: 1px solid #BCBCB6;
+  position: relative;
+  height: 40px;
+  width: 100%;
+  padding: 8px;
+  margin: 0 -1px;
+  text-align: center;
+  box-sizing: border-box;
+  z-index: 1;
+}
+
+.c6:hover {
+  border-color: #4B4B46;
+  z-index: 2;
+}
+
+.c6:focus {
+  border-color: #0046FF;
+  z-index: 3;
 }
 
 <div
@@ -1515,13 +1626,12 @@ exports[`Storyshots Molecules | Input / Number With auto focus 1`] = `
   <label
     className="c1"
     hidden={false}
-    htmlFor="insert-unique-id"
+    htmlFor="insert-matching-unique-id"
   >
     <span
       className="c2"
     >
-      Label
-      
+      Label 
     </span>
   </label>
   <span
@@ -1530,73 +1640,69 @@ exports[`Storyshots Molecules | Input / Number With auto focus 1`] = `
     <div
       className="c4 c5"
     >
-      <div
+      <input
+        autoFocus={true}
         className="c6"
+        inputMode="decimal"
+        min={0}
+        onChange={[Function]}
+        onKeyDown={[Function]}
+        step="0.25"
+        type="text"
+        value="152.25"
+      />
+      <button
+        className="c7"
+        onClick={[Function]}
+        type="button"
       >
-        <input
-          autoFocus={true}
-          className="c7"
-          id="insert-unique-id"
-          min={0}
-          onChange={[Function]}
-          onKeyDown={[Function]}
-          step="0.25"
-          type="number"
-          value="152.25"
-        />
-        <button
+        <div
           className="c8"
-          onClick={[Function]}
-          type="button"
         >
-          <div
-            className="c9"
-          >
-            decrease number by 
-            0.25
-          </div>
-          <svg
-            aria-hidden="true"
-            className="c10"
-            focusable="false"
-            preserveAspectRatio="xMidYMid meet"
-            role="presentation"
-            size={3}
-            viewBox="0 0 24 24"
-          >
-            <path
-              d="M24 11v2H0v-2z"
-              fillRule="evenodd"
-            />
-          </svg>
-        </button>
-        <button
+          decrease number by 
+          0.25
+        </div>
+        <svg
+          aria-hidden="true"
+          className="c9"
+          focusable="false"
+          preserveAspectRatio="xMidYMid meet"
+          role="presentation"
+          size={3}
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M24 11v2H0v-2z"
+            fillRule="evenodd"
+          />
+        </svg>
+      </button>
+      <button
+        className="c7"
+        onClick={[Function]}
+        type="button"
+      >
+        <div
           className="c8"
-          onClick={[Function]}
-          type="button"
         >
-          <div
-            className="c9"
-          >
-            increase number by 
-            0.25
-          </div>
-          <svg
-            aria-hidden="true"
-            className="c10"
-            focusable="false"
-            preserveAspectRatio="xMidYMid meet"
-            role="presentation"
-            size={3}
-            viewBox="0 0 24 24"
-          >
-            <path
-              d="M13 0v11h11v2H13v11h-2V12.999L0 13v-2l11-.001V0h2z"
-              fillRule="evenodd"
-            />
-          </svg>
-        </button>
-      </div>
+          increase number by 
+          0.25
+        </div>
+        <svg
+          aria-hidden="true"
+          className="c9"
+          focusable="false"
+          preserveAspectRatio="xMidYMid meet"
+          role="presentation"
+          size={3}
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M13 0v11h11v2H13v11h-2V12.999L0 13v-2l11-.001V0h2z"
+            fillRule="evenodd"
+          />
+        </svg>
+      </button>
     </div>
   </span>
 </div>
@@ -1609,14 +1715,6 @@ exports[`Storyshots Molecules | Input / Number With default value (Uncontrolled 
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-}
-
-.c6 {
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -1627,7 +1725,7 @@ exports[`Storyshots Molecules | Input / Number With default value (Uncontrolled 
   flex-grow: 1;
 }
 
-.c9 {
+.c8 {
   position: absolute;
   height: 1px;
   width: 1px;
@@ -1637,13 +1735,12 @@ exports[`Storyshots Molecules | Input / Number With default value (Uncontrolled 
 }
 
 .c1 {
-  width: 100%;
-  overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  cursor: pointer;
 }
 
-.c10 {
+.c9 {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -1681,20 +1778,16 @@ exports[`Storyshots Molecules | Input / Number With default value (Uncontrolled 
 }
 
 .c4 {
-  position: relative;
-  background-color: #ffffff;
-  height: 40px;
   box-shadow: 0 1px 3px rgba(0,0,0,0.03);
-  box-sizing: border-box;
 }
 
-.c8 {
+.c7 {
   width: 40px;
+  height: 40px;
   background-color: #FFFFFF;
   outline: none;
   border: 1px solid #BCBCB6;
   position: relative;
-  height: 100%;
   padding: 0;
   cursor: pointer;
   box-sizing: border-box;
@@ -1715,48 +1808,6 @@ exports[`Storyshots Molecules | Input / Number With default value (Uncontrolled 
   flex: 1 0 auto;
 }
 
-.c8:hover {
-  border-color: #4B4B46;
-  z-index: 2;
-}
-
-.c8:focus {
-  border-color: #0046FF;
-  z-index: 3;
-}
-
-.c8:first-of-type {
-  -webkit-order: -1;
-  -ms-flex-order: -1;
-  order: -1;
-}
-
-.c8:active:enabled {
-  background-color: #0046FF;
-}
-
-.c8:active:enabled svg {
-  fill: #FFFFFF;
-}
-
-.c7 {
-  font-family: inherit;
-  font-size: 100%;
-  line-height: 1.15;
-  margin: 0;
-  overflow: visible;
-  background-color: #FFFFFF;
-  outline: none;
-  border: 1px solid #BCBCB6;
-  position: relative;
-  padding: 8px;
-  width: 100%;
-  height: 100%;
-  margin: 0 -1px;
-  box-sizing: border-box;
-  z-index: 1;
-}
-
 .c7:hover {
   border-color: #4B4B46;
   z-index: 2;
@@ -1767,14 +1818,47 @@ exports[`Storyshots Molecules | Input / Number With default value (Uncontrolled 
   z-index: 3;
 }
 
-.c7::-webkit-outer-spin-button,
-.c7::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
+.c7:first-of-type {
+  -webkit-order: -1;
+  -ms-flex-order: -1;
+  order: -1;
 }
 
-.c7[type='number'] {
-  -moz-appearance: textfield;
+.c7:active:enabled {
+  background-color: #0046FF;
+}
+
+.c7:active:enabled svg {
+  fill: #FFFFFF;
+}
+
+.c6 {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  overflow: visible;
+  background-color: #FFFFFF;
+  outline: none;
+  border: 1px solid #BCBCB6;
+  position: relative;
+  height: 40px;
+  width: 100%;
+  padding: 8px;
+  margin: 0 -1px;
+  text-align: center;
+  box-sizing: border-box;
+  z-index: 1;
+}
+
+.c6:hover {
+  border-color: #4B4B46;
+  z-index: 2;
+}
+
+.c6:focus {
+  border-color: #0046FF;
+  z-index: 3;
 }
 
 <div
@@ -1783,13 +1867,12 @@ exports[`Storyshots Molecules | Input / Number With default value (Uncontrolled 
   <label
     className="c1"
     hidden={false}
-    htmlFor="insert-unique-id"
+    htmlFor="insert-matching-unique-id"
   >
     <span
       className="c2"
     >
-      Label
-      
+      Label 
     </span>
   </label>
   <span
@@ -1798,72 +1881,68 @@ exports[`Storyshots Molecules | Input / Number With default value (Uncontrolled 
     <div
       className="c4 c5"
     >
-      <div
+      <input
         className="c6"
+        inputMode="decimal"
+        min={0}
+        onChange={[Function]}
+        onKeyDown={[Function]}
+        step="0.1"
+        type="text"
+        value="15.2"
+      />
+      <button
+        className="c7"
+        onClick={[Function]}
+        type="button"
       >
-        <input
-          className="c7"
-          id="insert-unique-id"
-          min={0}
-          onChange={[Function]}
-          onKeyDown={[Function]}
-          step="0.1"
-          type="number"
-          value="15.2"
-        />
-        <button
+        <div
           className="c8"
-          onClick={[Function]}
-          type="button"
         >
-          <div
-            className="c9"
-          >
-            decrease number by 
-            0.1
-          </div>
-          <svg
-            aria-hidden="true"
-            className="c10"
-            focusable="false"
-            preserveAspectRatio="xMidYMid meet"
-            role="presentation"
-            size={3}
-            viewBox="0 0 24 24"
-          >
-            <path
-              d="M24 11v2H0v-2z"
-              fillRule="evenodd"
-            />
-          </svg>
-        </button>
-        <button
+          decrease number by 
+          0.1
+        </div>
+        <svg
+          aria-hidden="true"
+          className="c9"
+          focusable="false"
+          preserveAspectRatio="xMidYMid meet"
+          role="presentation"
+          size={3}
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M24 11v2H0v-2z"
+            fillRule="evenodd"
+          />
+        </svg>
+      </button>
+      <button
+        className="c7"
+        onClick={[Function]}
+        type="button"
+      >
+        <div
           className="c8"
-          onClick={[Function]}
-          type="button"
         >
-          <div
-            className="c9"
-          >
-            increase number by 
-            0.1
-          </div>
-          <svg
-            aria-hidden="true"
-            className="c10"
-            focusable="false"
-            preserveAspectRatio="xMidYMid meet"
-            role="presentation"
-            size={3}
-            viewBox="0 0 24 24"
-          >
-            <path
-              d="M13 0v11h11v2H13v11h-2V12.999L0 13v-2l11-.001V0h2z"
-              fillRule="evenodd"
-            />
-          </svg>
-        </button>
-      </div>
+          increase number by 
+          0.1
+        </div>
+        <svg
+          aria-hidden="true"
+          className="c9"
+          focusable="false"
+          preserveAspectRatio="xMidYMid meet"
+          role="presentation"
+          size={3}
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M13 0v11h11v2H13v11h-2V12.999L0 13v-2l11-.001V0h2z"
+            fillRule="evenodd"
+          />
+        </svg>
+      </button>
     </div>
   </span>
 </div>
@@ -1871,14 +1950,6 @@ exports[`Storyshots Molecules | Input / Number With default value (Uncontrolled 
 
 exports[`Storyshots Molecules | Input / Number With error if value is less than 1 1`] = `
 .c5 {
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.c6 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -1894,7 +1965,7 @@ exports[`Storyshots Molecules | Input / Number With error if value is less than 
   flex-grow: 1;
 }
 
-.c9 {
+.c8 {
   position: absolute;
   height: 1px;
   width: 1px;
@@ -1904,13 +1975,12 @@ exports[`Storyshots Molecules | Input / Number With error if value is less than 
 }
 
 .c1 {
-  width: 100%;
-  overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  cursor: pointer;
 }
 
-.c10 {
+.c9 {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -1942,7 +2012,7 @@ exports[`Storyshots Molecules | Input / Number With error if value is less than 
   line-height: 1.4285714285714286;
 }
 
-.c11 {
+.c10 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #FF1900;
   margin: 0;
@@ -1957,20 +2027,16 @@ exports[`Storyshots Molecules | Input / Number With error if value is less than 
 }
 
 .c4 {
-  position: relative;
-  background-color: #ffffff;
-  height: 40px;
   box-shadow: 0 1px 3px rgba(0,0,0,0.03);
-  box-sizing: border-box;
 }
 
-.c8 {
+.c7 {
   width: 40px;
+  height: 40px;
   background-color: #FFFFFF;
   outline: none;
   border: 1px solid #BCBCB6;
   position: relative;
-  height: 100%;
   padding: 0;
   cursor: pointer;
   box-sizing: border-box;
@@ -1991,48 +2057,6 @@ exports[`Storyshots Molecules | Input / Number With error if value is less than 
   flex: 1 0 auto;
 }
 
-.c8:hover {
-  border-color: #4B4B46;
-  z-index: 2;
-}
-
-.c8:focus {
-  border-color: #0046FF;
-  z-index: 3;
-}
-
-.c8:first-of-type {
-  -webkit-order: -1;
-  -ms-flex-order: -1;
-  order: -1;
-}
-
-.c8:active:enabled {
-  background-color: #0046FF;
-}
-
-.c8:active:enabled svg {
-  fill: #FFFFFF;
-}
-
-.c7 {
-  font-family: inherit;
-  font-size: 100%;
-  line-height: 1.15;
-  margin: 0;
-  overflow: visible;
-  background-color: #FFFFFF;
-  outline: none;
-  border: 1px solid #FF1900;
-  position: relative;
-  padding: 8px;
-  width: 100%;
-  height: 100%;
-  margin: 0 -1px;
-  box-sizing: border-box;
-  z-index: 1;
-}
-
 .c7:hover {
   border-color: #4B4B46;
   z-index: 2;
@@ -2043,14 +2067,47 @@ exports[`Storyshots Molecules | Input / Number With error if value is less than 
   z-index: 3;
 }
 
-.c7::-webkit-outer-spin-button,
-.c7::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
+.c7:first-of-type {
+  -webkit-order: -1;
+  -ms-flex-order: -1;
+  order: -1;
 }
 
-.c7[type='number'] {
-  -moz-appearance: textfield;
+.c7:active:enabled {
+  background-color: #0046FF;
+}
+
+.c7:active:enabled svg {
+  fill: #FFFFFF;
+}
+
+.c6 {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  overflow: visible;
+  background-color: #FFFFFF;
+  outline: none;
+  border: 1px solid #FF1900;
+  position: relative;
+  height: 40px;
+  width: 100%;
+  padding: 8px;
+  margin: 0 -1px;
+  text-align: center;
+  box-sizing: border-box;
+  z-index: 1;
+}
+
+.c6:hover {
+  border-color: #4B4B46;
+  z-index: 2;
+}
+
+.c6:focus {
+  border-color: #0046FF;
+  z-index: 3;
 }
 
 <div
@@ -2059,13 +2116,12 @@ exports[`Storyshots Molecules | Input / Number With error if value is less than 
   <label
     className="c1"
     hidden={false}
-    htmlFor="insert-unique-id"
+    htmlFor="insert-matching-unique-id"
   >
     <span
       className="c2"
     >
-      Label
-      
+      Label 
     </span>
   </label>
   <span
@@ -2074,81 +2130,77 @@ exports[`Storyshots Molecules | Input / Number With error if value is less than 
     <div
       className="c4 c5"
     >
-      <div
+      <input
+        aria-invalid={true}
         className="c6"
+        inputMode="decimal"
+        min={0}
+        onChange={[Function]}
+        onKeyDown={[Function]}
+        step="1"
+        type="text"
+        value="0"
+      />
+      <button
+        className="c7"
+        onClick={[Function]}
+        type="button"
       >
-        <input
-          aria-invalid={true}
-          className="c7"
-          id="insert-unique-id"
-          min={0}
-          onChange={[Function]}
-          onKeyDown={[Function]}
-          step="1"
-          type="number"
-          value="0"
-        />
-        <button
+        <div
           className="c8"
-          onClick={[Function]}
-          type="button"
         >
-          <div
-            className="c9"
-          >
-            decrease number by 
-            1
-          </div>
-          <svg
-            aria-hidden="true"
-            className="c10"
-            focusable="false"
-            preserveAspectRatio="xMidYMid meet"
-            role="presentation"
-            size={3}
-            viewBox="0 0 24 24"
-          >
-            <path
-              d="M24 11v2H0v-2z"
-              fillRule="evenodd"
-            />
-          </svg>
-        </button>
-        <button
+          decrease number by 
+          1
+        </div>
+        <svg
+          aria-hidden="true"
+          className="c9"
+          focusable="false"
+          preserveAspectRatio="xMidYMid meet"
+          role="presentation"
+          size={3}
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M24 11v2H0v-2z"
+            fillRule="evenodd"
+          />
+        </svg>
+      </button>
+      <button
+        className="c7"
+        onClick={[Function]}
+        type="button"
+      >
+        <div
           className="c8"
-          onClick={[Function]}
-          type="button"
         >
-          <div
-            className="c9"
-          >
-            increase number by 
-            1
-          </div>
-          <svg
-            aria-hidden="true"
-            className="c10"
-            focusable="false"
-            preserveAspectRatio="xMidYMid meet"
-            role="presentation"
-            size={3}
-            viewBox="0 0 24 24"
-          >
-            <path
-              d="M13 0v11h11v2H13v11h-2V12.999L0 13v-2l11-.001V0h2z"
-              fillRule="evenodd"
-            />
-          </svg>
-        </button>
-      </div>
+          increase number by 
+          1
+        </div>
+        <svg
+          aria-hidden="true"
+          className="c9"
+          focusable="false"
+          preserveAspectRatio="xMidYMid meet"
+          role="presentation"
+          size={3}
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M13 0v11h11v2H13v11h-2V12.999L0 13v-2l11-.001V0h2z"
+            fillRule="evenodd"
+          />
+        </svg>
+      </button>
     </div>
   </span>
   <div>
     <span
-      className="c11"
+      className="c10"
     >
       <div
-        className="c9"
+        className="c8"
       >
         Error: 
       </div>
@@ -2165,14 +2217,6 @@ exports[`Storyshots Molecules | Input / Number With extra info and error 1`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-}
-
-.c6 {
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -2183,7 +2227,7 @@ exports[`Storyshots Molecules | Input / Number With extra info and error 1`] = `
   flex-grow: 1;
 }
 
-.c9 {
+.c8 {
   position: absolute;
   height: 1px;
   width: 1px;
@@ -2193,13 +2237,12 @@ exports[`Storyshots Molecules | Input / Number With extra info and error 1`] = `
 }
 
 .c1 {
-  width: 100%;
-  overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  cursor: pointer;
 }
 
-.c10 {
+.c9 {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -2231,7 +2274,7 @@ exports[`Storyshots Molecules | Input / Number With extra info and error 1`] = `
   line-height: 1.4285714285714286;
 }
 
-.c11 {
+.c10 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #FF1900;
   margin: 0;
@@ -2246,20 +2289,16 @@ exports[`Storyshots Molecules | Input / Number With extra info and error 1`] = `
 }
 
 .c4 {
-  position: relative;
-  background-color: #ffffff;
-  height: 40px;
   box-shadow: 0 1px 3px rgba(0,0,0,0.03);
-  box-sizing: border-box;
 }
 
-.c8 {
+.c7 {
   width: 40px;
+  height: 40px;
   background-color: #FFFFFF;
   outline: none;
   border: 1px solid #BCBCB6;
   position: relative;
-  height: 100%;
   padding: 0;
   cursor: pointer;
   box-sizing: border-box;
@@ -2280,48 +2319,6 @@ exports[`Storyshots Molecules | Input / Number With extra info and error 1`] = `
   flex: 1 0 auto;
 }
 
-.c8:hover {
-  border-color: #4B4B46;
-  z-index: 2;
-}
-
-.c8:focus {
-  border-color: #0046FF;
-  z-index: 3;
-}
-
-.c8:first-of-type {
-  -webkit-order: -1;
-  -ms-flex-order: -1;
-  order: -1;
-}
-
-.c8:active:enabled {
-  background-color: #0046FF;
-}
-
-.c8:active:enabled svg {
-  fill: #FFFFFF;
-}
-
-.c7 {
-  font-family: inherit;
-  font-size: 100%;
-  line-height: 1.15;
-  margin: 0;
-  overflow: visible;
-  background-color: #FFFFFF;
-  outline: none;
-  border: 1px solid #FF1900;
-  position: relative;
-  padding: 8px;
-  width: 100%;
-  height: 100%;
-  margin: 0 -1px;
-  box-sizing: border-box;
-  z-index: 1;
-}
-
 .c7:hover {
   border-color: #4B4B46;
   z-index: 2;
@@ -2332,14 +2329,47 @@ exports[`Storyshots Molecules | Input / Number With extra info and error 1`] = `
   z-index: 3;
 }
 
-.c7::-webkit-outer-spin-button,
-.c7::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
+.c7:first-of-type {
+  -webkit-order: -1;
+  -ms-flex-order: -1;
+  order: -1;
 }
 
-.c7[type='number'] {
-  -moz-appearance: textfield;
+.c7:active:enabled {
+  background-color: #0046FF;
+}
+
+.c7:active:enabled svg {
+  fill: #FFFFFF;
+}
+
+.c6 {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  overflow: visible;
+  background-color: #FFFFFF;
+  outline: none;
+  border: 1px solid #FF1900;
+  position: relative;
+  height: 40px;
+  width: 100%;
+  padding: 8px;
+  margin: 0 -1px;
+  text-align: center;
+  box-sizing: border-box;
+  z-index: 1;
+}
+
+.c6:hover {
+  border-color: #4B4B46;
+  z-index: 2;
+}
+
+.c6:focus {
+  border-color: #0046FF;
+  z-index: 3;
 }
 
 <div
@@ -2348,13 +2378,12 @@ exports[`Storyshots Molecules | Input / Number With extra info and error 1`] = `
   <label
     className="c1"
     hidden={false}
-    htmlFor="insert-unique-id"
+    htmlFor="insert-matching-unique-id"
   >
     <span
       className="c2"
     >
-      Label
-      
+      Label 
     </span>
   </label>
   <span
@@ -2363,81 +2392,77 @@ exports[`Storyshots Molecules | Input / Number With extra info and error 1`] = `
     <div
       className="c4 c5"
     >
-      <div
+      <input
+        aria-invalid={true}
         className="c6"
+        inputMode="decimal"
+        min={0}
+        onChange={[Function]}
+        onKeyDown={[Function]}
+        step={1}
+        type="text"
+        value="0"
+      />
+      <button
+        className="c7"
+        onClick={[Function]}
+        type="button"
       >
-        <input
-          aria-invalid={true}
-          className="c7"
-          id="insert-unique-id"
-          min={0}
-          onChange={[Function]}
-          onKeyDown={[Function]}
-          step={1}
-          type="number"
-          value="0"
-        />
-        <button
+        <div
           className="c8"
-          onClick={[Function]}
-          type="button"
         >
-          <div
-            className="c9"
-          >
-            decrease number by 
-            1
-          </div>
-          <svg
-            aria-hidden="true"
-            className="c10"
-            focusable="false"
-            preserveAspectRatio="xMidYMid meet"
-            role="presentation"
-            size={3}
-            viewBox="0 0 24 24"
-          >
-            <path
-              d="M24 11v2H0v-2z"
-              fillRule="evenodd"
-            />
-          </svg>
-        </button>
-        <button
+          decrease number by 
+          1
+        </div>
+        <svg
+          aria-hidden="true"
+          className="c9"
+          focusable="false"
+          preserveAspectRatio="xMidYMid meet"
+          role="presentation"
+          size={3}
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M24 11v2H0v-2z"
+            fillRule="evenodd"
+          />
+        </svg>
+      </button>
+      <button
+        className="c7"
+        onClick={[Function]}
+        type="button"
+      >
+        <div
           className="c8"
-          onClick={[Function]}
-          type="button"
         >
-          <div
-            className="c9"
-          >
-            increase number by 
-            1
-          </div>
-          <svg
-            aria-hidden="true"
-            className="c10"
-            focusable="false"
-            preserveAspectRatio="xMidYMid meet"
-            role="presentation"
-            size={3}
-            viewBox="0 0 24 24"
-          >
-            <path
-              d="M13 0v11h11v2H13v11h-2V12.999L0 13v-2l11-.001V0h2z"
-              fillRule="evenodd"
-            />
-          </svg>
-        </button>
-      </div>
+          increase number by 
+          1
+        </div>
+        <svg
+          aria-hidden="true"
+          className="c9"
+          focusable="false"
+          preserveAspectRatio="xMidYMid meet"
+          role="presentation"
+          size={3}
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M13 0v11h11v2H13v11h-2V12.999L0 13v-2l11-.001V0h2z"
+            fillRule="evenodd"
+          />
+        </svg>
+      </button>
     </div>
   </span>
   <div>
     <span
-      className="c11"
+      className="c10"
     >
       <div
-        className="c9"
+        className="c8"
       >
         Error: 
       </div>
@@ -2454,14 +2479,6 @@ exports[`Storyshots Molecules | Input / Number With extra info below 1`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-}
-
-.c6 {
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -2472,7 +2489,7 @@ exports[`Storyshots Molecules | Input / Number With extra info below 1`] = `
   flex-grow: 1;
 }
 
-.c9 {
+.c8 {
   position: absolute;
   height: 1px;
   width: 1px;
@@ -2482,13 +2499,12 @@ exports[`Storyshots Molecules | Input / Number With extra info below 1`] = `
 }
 
 .c1 {
-  width: 100%;
-  overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  cursor: pointer;
 }
 
-.c10 {
+.c9 {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -2520,7 +2536,7 @@ exports[`Storyshots Molecules | Input / Number With extra info below 1`] = `
   line-height: 1.4285714285714286;
 }
 
-.c11 {
+.c10 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #6E6E69;
   margin: 0;
@@ -2535,20 +2551,16 @@ exports[`Storyshots Molecules | Input / Number With extra info below 1`] = `
 }
 
 .c4 {
-  position: relative;
-  background-color: #ffffff;
-  height: 40px;
   box-shadow: 0 1px 3px rgba(0,0,0,0.03);
-  box-sizing: border-box;
 }
 
-.c8 {
+.c7 {
   width: 40px;
+  height: 40px;
   background-color: #FFFFFF;
   outline: none;
   border: 1px solid #BCBCB6;
   position: relative;
-  height: 100%;
   padding: 0;
   cursor: pointer;
   box-sizing: border-box;
@@ -2569,48 +2581,6 @@ exports[`Storyshots Molecules | Input / Number With extra info below 1`] = `
   flex: 1 0 auto;
 }
 
-.c8:hover {
-  border-color: #4B4B46;
-  z-index: 2;
-}
-
-.c8:focus {
-  border-color: #0046FF;
-  z-index: 3;
-}
-
-.c8:first-of-type {
-  -webkit-order: -1;
-  -ms-flex-order: -1;
-  order: -1;
-}
-
-.c8:active:enabled {
-  background-color: #0046FF;
-}
-
-.c8:active:enabled svg {
-  fill: #FFFFFF;
-}
-
-.c7 {
-  font-family: inherit;
-  font-size: 100%;
-  line-height: 1.15;
-  margin: 0;
-  overflow: visible;
-  background-color: #FFFFFF;
-  outline: none;
-  border: 1px solid #BCBCB6;
-  position: relative;
-  padding: 8px;
-  width: 100%;
-  height: 100%;
-  margin: 0 -1px;
-  box-sizing: border-box;
-  z-index: 1;
-}
-
 .c7:hover {
   border-color: #4B4B46;
   z-index: 2;
@@ -2621,14 +2591,47 @@ exports[`Storyshots Molecules | Input / Number With extra info below 1`] = `
   z-index: 3;
 }
 
-.c7::-webkit-outer-spin-button,
-.c7::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
+.c7:first-of-type {
+  -webkit-order: -1;
+  -ms-flex-order: -1;
+  order: -1;
 }
 
-.c7[type='number'] {
-  -moz-appearance: textfield;
+.c7:active:enabled {
+  background-color: #0046FF;
+}
+
+.c7:active:enabled svg {
+  fill: #FFFFFF;
+}
+
+.c6 {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  overflow: visible;
+  background-color: #FFFFFF;
+  outline: none;
+  border: 1px solid #BCBCB6;
+  position: relative;
+  height: 40px;
+  width: 100%;
+  padding: 8px;
+  margin: 0 -1px;
+  text-align: center;
+  box-sizing: border-box;
+  z-index: 1;
+}
+
+.c6:hover {
+  border-color: #4B4B46;
+  z-index: 2;
+}
+
+.c6:focus {
+  border-color: #0046FF;
+  z-index: 3;
 }
 
 <div
@@ -2637,13 +2640,12 @@ exports[`Storyshots Molecules | Input / Number With extra info below 1`] = `
   <label
     className="c1"
     hidden={false}
-    htmlFor="insert-unique-id"
+    htmlFor="insert-matching-unique-id"
   >
     <span
       className="c2"
     >
-      Label
-      
+      Label 
     </span>
   </label>
   <span
@@ -2652,77 +2654,73 @@ exports[`Storyshots Molecules | Input / Number With extra info below 1`] = `
     <div
       className="c4 c5"
     >
-      <div
+      <input
         className="c6"
+        inputMode="decimal"
+        min={0}
+        onChange={[Function]}
+        onKeyDown={[Function]}
+        step={1}
+        type="text"
+        value="1"
+      />
+      <button
+        className="c7"
+        onClick={[Function]}
+        type="button"
       >
-        <input
-          className="c7"
-          id="insert-unique-id"
-          min={0}
-          onChange={[Function]}
-          onKeyDown={[Function]}
-          step={1}
-          type="number"
-          value="1"
-        />
-        <button
+        <div
           className="c8"
-          onClick={[Function]}
-          type="button"
         >
-          <div
-            className="c9"
-          >
-            decrease number by 
-            1
-          </div>
-          <svg
-            aria-hidden="true"
-            className="c10"
-            focusable="false"
-            preserveAspectRatio="xMidYMid meet"
-            role="presentation"
-            size={3}
-            viewBox="0 0 24 24"
-          >
-            <path
-              d="M24 11v2H0v-2z"
-              fillRule="evenodd"
-            />
-          </svg>
-        </button>
-        <button
+          decrease number by 
+          1
+        </div>
+        <svg
+          aria-hidden="true"
+          className="c9"
+          focusable="false"
+          preserveAspectRatio="xMidYMid meet"
+          role="presentation"
+          size={3}
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M24 11v2H0v-2z"
+            fillRule="evenodd"
+          />
+        </svg>
+      </button>
+      <button
+        className="c7"
+        onClick={[Function]}
+        type="button"
+      >
+        <div
           className="c8"
-          onClick={[Function]}
-          type="button"
         >
-          <div
-            className="c9"
-          >
-            increase number by 
-            1
-          </div>
-          <svg
-            aria-hidden="true"
-            className="c10"
-            focusable="false"
-            preserveAspectRatio="xMidYMid meet"
-            role="presentation"
-            size={3}
-            viewBox="0 0 24 24"
-          >
-            <path
-              d="M13 0v11h11v2H13v11h-2V12.999L0 13v-2l11-.001V0h2z"
-              fillRule="evenodd"
-            />
-          </svg>
-        </button>
-      </div>
+          increase number by 
+          1
+        </div>
+        <svg
+          aria-hidden="true"
+          className="c9"
+          focusable="false"
+          preserveAspectRatio="xMidYMid meet"
+          role="presentation"
+          size={3}
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M13 0v11h11v2H13v11h-2V12.999L0 13v-2l11-.001V0h2z"
+            fillRule="evenodd"
+          />
+        </svg>
+      </button>
     </div>
   </span>
   <div>
     <span
-      className="c11"
+      className="c10"
     >
       Use wisely this space
     </span>
@@ -2737,14 +2735,6 @@ exports[`Storyshots Molecules | Input / Number With hidden label 1`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-}
-
-.c6 {
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -2755,7 +2745,7 @@ exports[`Storyshots Molecules | Input / Number With hidden label 1`] = `
   flex-grow: 1;
 }
 
-.c9 {
+.c8 {
   position: absolute;
   height: 1px;
   width: 1px;
@@ -2771,13 +2761,12 @@ exports[`Storyshots Molecules | Input / Number With hidden label 1`] = `
   overflow: hidden;
   -webkit-clip: rect(1px,1px,1px,1px);
   clip: rect(1px,1px,1px,1px);
-  width: 100%;
-  overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  cursor: pointer;
 }
 
-.c10 {
+.c9 {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -2815,20 +2804,16 @@ exports[`Storyshots Molecules | Input / Number With hidden label 1`] = `
 }
 
 .c4 {
-  position: relative;
-  background-color: #ffffff;
-  height: 40px;
   box-shadow: 0 1px 3px rgba(0,0,0,0.03);
-  box-sizing: border-box;
 }
 
-.c8 {
+.c7 {
   width: 40px;
+  height: 40px;
   background-color: #FFFFFF;
   outline: none;
   border: 1px solid #BCBCB6;
   position: relative;
-  height: 100%;
   padding: 0;
   cursor: pointer;
   box-sizing: border-box;
@@ -2849,48 +2834,6 @@ exports[`Storyshots Molecules | Input / Number With hidden label 1`] = `
   flex: 1 0 auto;
 }
 
-.c8:hover {
-  border-color: #4B4B46;
-  z-index: 2;
-}
-
-.c8:focus {
-  border-color: #0046FF;
-  z-index: 3;
-}
-
-.c8:first-of-type {
-  -webkit-order: -1;
-  -ms-flex-order: -1;
-  order: -1;
-}
-
-.c8:active:enabled {
-  background-color: #0046FF;
-}
-
-.c8:active:enabled svg {
-  fill: #FFFFFF;
-}
-
-.c7 {
-  font-family: inherit;
-  font-size: 100%;
-  line-height: 1.15;
-  margin: 0;
-  overflow: visible;
-  background-color: #FFFFFF;
-  outline: none;
-  border: 1px solid #BCBCB6;
-  position: relative;
-  padding: 8px;
-  width: 100%;
-  height: 100%;
-  margin: 0 -1px;
-  box-sizing: border-box;
-  z-index: 1;
-}
-
 .c7:hover {
   border-color: #4B4B46;
   z-index: 2;
@@ -2901,14 +2844,47 @@ exports[`Storyshots Molecules | Input / Number With hidden label 1`] = `
   z-index: 3;
 }
 
-.c7::-webkit-outer-spin-button,
-.c7::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
+.c7:first-of-type {
+  -webkit-order: -1;
+  -ms-flex-order: -1;
+  order: -1;
 }
 
-.c7[type='number'] {
-  -moz-appearance: textfield;
+.c7:active:enabled {
+  background-color: #0046FF;
+}
+
+.c7:active:enabled svg {
+  fill: #FFFFFF;
+}
+
+.c6 {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  overflow: visible;
+  background-color: #FFFFFF;
+  outline: none;
+  border: 1px solid #BCBCB6;
+  position: relative;
+  height: 40px;
+  width: 100%;
+  padding: 8px;
+  margin: 0 -1px;
+  text-align: center;
+  box-sizing: border-box;
+  z-index: 1;
+}
+
+.c6:hover {
+  border-color: #4B4B46;
+  z-index: 2;
+}
+
+.c6:focus {
+  border-color: #0046FF;
+  z-index: 3;
 }
 
 <div
@@ -2917,13 +2893,12 @@ exports[`Storyshots Molecules | Input / Number With hidden label 1`] = `
   <label
     className="c1"
     hidden={true}
-    htmlFor="insert-unique-id"
+    htmlFor="insert-matching-unique-id"
   >
     <span
       className="c2"
     >
-      Label
-      
+      Label 
     </span>
   </label>
   <span
@@ -2932,72 +2907,68 @@ exports[`Storyshots Molecules | Input / Number With hidden label 1`] = `
     <div
       className="c4 c5"
     >
-      <div
+      <input
         className="c6"
+        inputMode="decimal"
+        min={0}
+        onChange={[Function]}
+        onKeyDown={[Function]}
+        step={1}
+        type="text"
+        value="1"
+      />
+      <button
+        className="c7"
+        onClick={[Function]}
+        type="button"
       >
-        <input
-          className="c7"
-          id="insert-unique-id"
-          min={0}
-          onChange={[Function]}
-          onKeyDown={[Function]}
-          step={1}
-          type="number"
-          value="1"
-        />
-        <button
+        <div
           className="c8"
-          onClick={[Function]}
-          type="button"
         >
-          <div
-            className="c9"
-          >
-            decrease number by 
-            1
-          </div>
-          <svg
-            aria-hidden="true"
-            className="c10"
-            focusable="false"
-            preserveAspectRatio="xMidYMid meet"
-            role="presentation"
-            size={3}
-            viewBox="0 0 24 24"
-          >
-            <path
-              d="M24 11v2H0v-2z"
-              fillRule="evenodd"
-            />
-          </svg>
-        </button>
-        <button
+          decrease number by 
+          1
+        </div>
+        <svg
+          aria-hidden="true"
+          className="c9"
+          focusable="false"
+          preserveAspectRatio="xMidYMid meet"
+          role="presentation"
+          size={3}
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M24 11v2H0v-2z"
+            fillRule="evenodd"
+          />
+        </svg>
+      </button>
+      <button
+        className="c7"
+        onClick={[Function]}
+        type="button"
+      >
+        <div
           className="c8"
-          onClick={[Function]}
-          type="button"
         >
-          <div
-            className="c9"
-          >
-            increase number by 
-            1
-          </div>
-          <svg
-            aria-hidden="true"
-            className="c10"
-            focusable="false"
-            preserveAspectRatio="xMidYMid meet"
-            role="presentation"
-            size={3}
-            viewBox="0 0 24 24"
-          >
-            <path
-              d="M13 0v11h11v2H13v11h-2V12.999L0 13v-2l11-.001V0h2z"
-              fillRule="evenodd"
-            />
-          </svg>
-        </button>
-      </div>
+          increase number by 
+          1
+        </div>
+        <svg
+          aria-hidden="true"
+          className="c9"
+          focusable="false"
+          preserveAspectRatio="xMidYMid meet"
+          role="presentation"
+          size={3}
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M13 0v11h11v2H13v11h-2V12.999L0 13v-2l11-.001V0h2z"
+            fillRule="evenodd"
+          />
+        </svg>
+      </button>
     </div>
   </span>
 </div>
@@ -3010,14 +2981,6 @@ exports[`Storyshots Molecules | Input / Number With max and min 1`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-}
-
-.c6 {
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -3028,7 +2991,7 @@ exports[`Storyshots Molecules | Input / Number With max and min 1`] = `
   flex-grow: 1;
 }
 
-.c9 {
+.c8 {
   position: absolute;
   height: 1px;
   width: 1px;
@@ -3038,13 +3001,12 @@ exports[`Storyshots Molecules | Input / Number With max and min 1`] = `
 }
 
 .c1 {
-  width: 100%;
-  overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  cursor: pointer;
 }
 
-.c10 {
+.c9 {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -3082,20 +3044,16 @@ exports[`Storyshots Molecules | Input / Number With max and min 1`] = `
 }
 
 .c4 {
-  position: relative;
-  background-color: #ffffff;
-  height: 40px;
   box-shadow: 0 1px 3px rgba(0,0,0,0.03);
-  box-sizing: border-box;
 }
 
-.c8 {
+.c7 {
   width: 40px;
+  height: 40px;
   background-color: #FFFFFF;
   outline: none;
   border: 1px solid #BCBCB6;
   position: relative;
-  height: 100%;
   padding: 0;
   cursor: pointer;
   box-sizing: border-box;
@@ -3116,48 +3074,6 @@ exports[`Storyshots Molecules | Input / Number With max and min 1`] = `
   flex: 1 0 auto;
 }
 
-.c8:hover {
-  border-color: #4B4B46;
-  z-index: 2;
-}
-
-.c8:focus {
-  border-color: #0046FF;
-  z-index: 3;
-}
-
-.c8:first-of-type {
-  -webkit-order: -1;
-  -ms-flex-order: -1;
-  order: -1;
-}
-
-.c8:active:enabled {
-  background-color: #0046FF;
-}
-
-.c8:active:enabled svg {
-  fill: #FFFFFF;
-}
-
-.c7 {
-  font-family: inherit;
-  font-size: 100%;
-  line-height: 1.15;
-  margin: 0;
-  overflow: visible;
-  background-color: #FFFFFF;
-  outline: none;
-  border: 1px solid #BCBCB6;
-  position: relative;
-  padding: 8px;
-  width: 100%;
-  height: 100%;
-  margin: 0 -1px;
-  box-sizing: border-box;
-  z-index: 1;
-}
-
 .c7:hover {
   border-color: #4B4B46;
   z-index: 2;
@@ -3168,14 +3084,47 @@ exports[`Storyshots Molecules | Input / Number With max and min 1`] = `
   z-index: 3;
 }
 
-.c7::-webkit-outer-spin-button,
-.c7::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
+.c7:first-of-type {
+  -webkit-order: -1;
+  -ms-flex-order: -1;
+  order: -1;
 }
 
-.c7[type='number'] {
-  -moz-appearance: textfield;
+.c7:active:enabled {
+  background-color: #0046FF;
+}
+
+.c7:active:enabled svg {
+  fill: #FFFFFF;
+}
+
+.c6 {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  overflow: visible;
+  background-color: #FFFFFF;
+  outline: none;
+  border: 1px solid #BCBCB6;
+  position: relative;
+  height: 40px;
+  width: 100%;
+  padding: 8px;
+  margin: 0 -1px;
+  text-align: center;
+  box-sizing: border-box;
+  z-index: 1;
+}
+
+.c6:hover {
+  border-color: #4B4B46;
+  z-index: 2;
+}
+
+.c6:focus {
+  border-color: #0046FF;
+  z-index: 3;
 }
 
 <div
@@ -3184,13 +3133,12 @@ exports[`Storyshots Molecules | Input / Number With max and min 1`] = `
   <label
     className="c1"
     hidden={false}
-    htmlFor="insert-unique-id"
+    htmlFor="insert-matching-unique-id"
   >
     <span
       className="c2"
     >
-      Label
-      
+      Label 
     </span>
   </label>
   <span
@@ -3199,73 +3147,69 @@ exports[`Storyshots Molecules | Input / Number With max and min 1`] = `
     <div
       className="c4 c5"
     >
-      <div
+      <input
         className="c6"
+        inputMode="decimal"
+        max="20"
+        min="10"
+        onChange={[Function]}
+        onKeyDown={[Function]}
+        step={1}
+        type="text"
+        value="12"
+      />
+      <button
+        className="c7"
+        onClick={[Function]}
+        type="button"
       >
-        <input
-          className="c7"
-          id="insert-unique-id"
-          max="20"
-          min="10"
-          onChange={[Function]}
-          onKeyDown={[Function]}
-          step={1}
-          type="number"
-          value="12"
-        />
-        <button
+        <div
           className="c8"
-          onClick={[Function]}
-          type="button"
         >
-          <div
-            className="c9"
-          >
-            decrease number by 
-            1
-          </div>
-          <svg
-            aria-hidden="true"
-            className="c10"
-            focusable="false"
-            preserveAspectRatio="xMidYMid meet"
-            role="presentation"
-            size={3}
-            viewBox="0 0 24 24"
-          >
-            <path
-              d="M24 11v2H0v-2z"
-              fillRule="evenodd"
-            />
-          </svg>
-        </button>
-        <button
+          decrease number by 
+          1
+        </div>
+        <svg
+          aria-hidden="true"
+          className="c9"
+          focusable="false"
+          preserveAspectRatio="xMidYMid meet"
+          role="presentation"
+          size={3}
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M24 11v2H0v-2z"
+            fillRule="evenodd"
+          />
+        </svg>
+      </button>
+      <button
+        className="c7"
+        onClick={[Function]}
+        type="button"
+      >
+        <div
           className="c8"
-          onClick={[Function]}
-          type="button"
         >
-          <div
-            className="c9"
-          >
-            increase number by 
-            1
-          </div>
-          <svg
-            aria-hidden="true"
-            className="c10"
-            focusable="false"
-            preserveAspectRatio="xMidYMid meet"
-            role="presentation"
-            size={3}
-            viewBox="0 0 24 24"
-          >
-            <path
-              d="M13 0v11h11v2H13v11h-2V12.999L0 13v-2l11-.001V0h2z"
-              fillRule="evenodd"
-            />
-          </svg>
-        </button>
-      </div>
+          increase number by 
+          1
+        </div>
+        <svg
+          aria-hidden="true"
+          className="c9"
+          focusable="false"
+          preserveAspectRatio="xMidYMid meet"
+          role="presentation"
+          size={3}
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M13 0v11h11v2H13v11h-2V12.999L0 13v-2l11-.001V0h2z"
+            fillRule="evenodd"
+          />
+        </svg>
+      </button>
     </div>
   </span>
 </div>
@@ -3273,14 +3217,6 @@ exports[`Storyshots Molecules | Input / Number With max and min 1`] = `
 
 exports[`Storyshots Molecules | Input / Number With no steppers 1`] = `
 .c5 {
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.c6 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -3297,10 +3233,9 @@ exports[`Storyshots Molecules | Input / Number With no steppers 1`] = `
 }
 
 .c1 {
-  width: 100%;
-  overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  cursor: pointer;
 }
 
 .c2 {
@@ -3327,14 +3262,10 @@ exports[`Storyshots Molecules | Input / Number With no steppers 1`] = `
 }
 
 .c4 {
-  position: relative;
-  background-color: #ffffff;
-  height: 40px;
   box-shadow: 0 1px 3px rgba(0,0,0,0.03);
-  box-sizing: border-box;
 }
 
-.c7 {
+.c6 {
   font-family: inherit;
   font-size: 100%;
   line-height: 1.15;
@@ -3344,32 +3275,23 @@ exports[`Storyshots Molecules | Input / Number With no steppers 1`] = `
   outline: none;
   border: 1px solid #BCBCB6;
   position: relative;
-  padding: 8px;
+  height: 40px;
   width: 100%;
-  height: 100%;
+  padding: 8px;
   margin: 0 -1px;
+  text-align: center;
   box-sizing: border-box;
   z-index: 1;
 }
 
-.c7:hover {
+.c6:hover {
   border-color: #4B4B46;
   z-index: 2;
 }
 
-.c7:focus {
+.c6:focus {
   border-color: #0046FF;
   z-index: 3;
-}
-
-.c7::-webkit-outer-spin-button,
-.c7::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
-}
-
-.c7[type='number'] {
-  -moz-appearance: textfield;
 }
 
 <div
@@ -3378,13 +3300,12 @@ exports[`Storyshots Molecules | Input / Number With no steppers 1`] = `
   <label
     className="c1"
     hidden={false}
-    htmlFor="insert-unique-id"
+    htmlFor="insert-matching-unique-id"
   >
     <span
       className="c2"
     >
-      Label
-      
+      Label 
     </span>
   </label>
   <span
@@ -3393,20 +3314,16 @@ exports[`Storyshots Molecules | Input / Number With no steppers 1`] = `
     <div
       className="c4 c5"
     >
-      <div
+      <input
         className="c6"
-      >
-        <input
-          className="c7"
-          id="insert-unique-id"
-          min={0}
-          onChange={[Function]}
-          onKeyDown={[Function]}
-          step={1}
-          type="number"
-          value="1"
-        />
-      </div>
+        inputMode="decimal"
+        min={0}
+        onChange={[Function]}
+        onKeyDown={[Function]}
+        step={1}
+        type="text"
+        value="1"
+      />
     </div>
   </span>
 </div>
@@ -3449,14 +3366,6 @@ Array [
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-}
-
-.c9 {
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -3467,7 +3376,7 @@ Array [
   flex-grow: 1;
 }
 
-.c12 {
+.c11 {
   position: absolute;
   height: 1px;
   width: 1px;
@@ -3477,13 +3386,12 @@ Array [
 }
 
 .c4 {
-  width: 100%;
-  overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  cursor: pointer;
 }
 
-.c13 {
+.c12 {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -3515,7 +3423,7 @@ Array [
   line-height: 1.4285714285714286;
 }
 
-.c15 {
+.c14 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #FF1900;
   margin: 0;
@@ -3530,20 +3438,16 @@ Array [
 }
 
 .c7 {
-  position: relative;
-  background-color: #ffffff;
-  height: 32px;
   box-shadow: 0 1px 3px rgba(0,0,0,0.03);
-  box-sizing: border-box;
 }
 
-.c11 {
+.c10 {
   width: 32px;
+  height: 32px;
   background-color: #FFFFFF;
   outline: none;
   border: 1px solid #BCBCB6;
   position: relative;
-  height: 100%;
   padding: 0;
   cursor: pointer;
   box-sizing: border-box;
@@ -3564,48 +3468,6 @@ Array [
   flex: 1 0 auto;
 }
 
-.c11:hover {
-  border-color: #4B4B46;
-  z-index: 2;
-}
-
-.c11:focus {
-  border-color: #0046FF;
-  z-index: 3;
-}
-
-.c11:first-of-type {
-  -webkit-order: -1;
-  -ms-flex-order: -1;
-  order: -1;
-}
-
-.c11:active:enabled {
-  background-color: #0046FF;
-}
-
-.c11:active:enabled svg {
-  fill: #FFFFFF;
-}
-
-.c10 {
-  font-family: inherit;
-  font-size: 100%;
-  line-height: 1.15;
-  margin: 0;
-  overflow: visible;
-  background-color: #FFFFFF;
-  outline: none;
-  border: 1px solid #BCBCB6;
-  position: relative;
-  padding: 8px;
-  width: 100%;
-  height: 100%;
-  margin: 0 -1px;
-  box-sizing: border-box;
-  z-index: 1;
-}
-
 .c10:hover {
   border-color: #4B4B46;
   z-index: 2;
@@ -3616,17 +3478,50 @@ Array [
   z-index: 3;
 }
 
-.c10::-webkit-outer-spin-button,
-.c10::-webkit-inner-spin-button {
-  -webkit-appearance: none;
+.c10:first-of-type {
+  -webkit-order: -1;
+  -ms-flex-order: -1;
+  order: -1;
+}
+
+.c10:active:enabled {
+  background-color: #0046FF;
+}
+
+.c10:active:enabled svg {
+  fill: #FFFFFF;
+}
+
+.c9 {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
   margin: 0;
+  overflow: visible;
+  background-color: #FFFFFF;
+  outline: none;
+  border: 1px solid #BCBCB6;
+  position: relative;
+  height: 32px;
+  width: 100%;
+  padding: 8px;
+  margin: 0 -1px;
+  text-align: center;
+  box-sizing: border-box;
+  z-index: 1;
 }
 
-.c10[type='number'] {
-  -moz-appearance: textfield;
+.c9:hover {
+  border-color: #4B4B46;
+  z-index: 2;
 }
 
-.c14 {
+.c9:focus {
+  border-color: #0046FF;
+  z-index: 3;
+}
+
+.c13 {
   font-family: inherit;
   font-size: 100%;
   line-height: 1.15;
@@ -3636,32 +3531,23 @@ Array [
   outline: none;
   border: 1px solid #FF1900;
   position: relative;
-  padding: 8px;
+  height: 32px;
   width: 100%;
-  height: 100%;
+  padding: 8px;
   margin: 0 -1px;
+  text-align: center;
   box-sizing: border-box;
   z-index: 1;
 }
 
-.c14:hover {
+.c13:hover {
   border-color: #4B4B46;
   z-index: 2;
 }
 
-.c14:focus {
+.c13:focus {
   border-color: #0046FF;
   z-index: 3;
-}
-
-.c14::-webkit-outer-spin-button,
-.c14::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
-}
-
-.c14[type='number'] {
-  -moz-appearance: textfield;
 }
 
 .c0 {
@@ -3741,13 +3627,12 @@ Array [
           <label
             className="c4"
             hidden={false}
-            htmlFor="insert-unique-id"
+            htmlFor="insert-matching-unique-id"
           >
             <span
               className="c5"
             >
-              Label
-              
+              Label 
             </span>
           </label>
           <span
@@ -3756,74 +3641,70 @@ Array [
             <div
               className="c7 c8"
             >
-              <div
+              <input
                 className="c9"
+                inputMode="decimal"
+                min={0}
+                onChange={[Function]}
+                onKeyDown={[Function]}
+                step={1}
+                type="text"
+                value="1"
+              />
+              <button
+                className="c10"
+                onClick={[Function]}
+                size="s"
+                type="button"
               >
-                <input
-                  className="c10"
-                  id="insert-unique-id"
-                  min={0}
-                  onChange={[Function]}
-                  onKeyDown={[Function]}
-                  step={1}
-                  type="number"
-                  value="1"
-                />
-                <button
+                <div
                   className="c11"
-                  onClick={[Function]}
-                  size="s"
-                  type="button"
                 >
-                  <div
-                    className="c12"
-                  >
-                    decrease number by 
-                    1
-                  </div>
-                  <svg
-                    aria-hidden="true"
-                    className="c13"
-                    focusable="false"
-                    preserveAspectRatio="xMidYMid meet"
-                    role="presentation"
-                    size={3}
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      d="M24 11v2H0v-2z"
-                      fillRule="evenodd"
-                    />
-                  </svg>
-                </button>
-                <button
+                  decrease number by 
+                  1
+                </div>
+                <svg
+                  aria-hidden="true"
+                  className="c12"
+                  focusable="false"
+                  preserveAspectRatio="xMidYMid meet"
+                  role="presentation"
+                  size={3}
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M24 11v2H0v-2z"
+                    fillRule="evenodd"
+                  />
+                </svg>
+              </button>
+              <button
+                className="c10"
+                onClick={[Function]}
+                size="s"
+                type="button"
+              >
+                <div
                   className="c11"
-                  onClick={[Function]}
-                  size="s"
-                  type="button"
                 >
-                  <div
-                    className="c12"
-                  >
-                    increase number by 
-                    1
-                  </div>
-                  <svg
-                    aria-hidden="true"
-                    className="c13"
-                    focusable="false"
-                    preserveAspectRatio="xMidYMid meet"
-                    role="presentation"
-                    size={3}
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      d="M13 0v11h11v2H13v11h-2V12.999L0 13v-2l11-.001V0h2z"
-                      fillRule="evenodd"
-                    />
-                  </svg>
-                </button>
-              </div>
+                  increase number by 
+                  1
+                </div>
+                <svg
+                  aria-hidden="true"
+                  className="c12"
+                  focusable="false"
+                  preserveAspectRatio="xMidYMid meet"
+                  role="presentation"
+                  size={3}
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M13 0v11h11v2H13v11h-2V12.999L0 13v-2l11-.001V0h2z"
+                    fillRule="evenodd"
+                  />
+                </svg>
+              </button>
             </div>
           </span>
         </div>
@@ -3845,13 +3726,12 @@ Array [
           <label
             className="c4"
             hidden={false}
-            htmlFor="insert-unique-id"
+            htmlFor="insert-matching-unique-id"
           >
             <span
               className="c5"
             >
-              Label
-              
+              Label 
             </span>
           </label>
           <span
@@ -3860,20 +3740,16 @@ Array [
             <div
               className="c7 c8"
             >
-              <div
+              <input
                 className="c9"
-              >
-                <input
-                  className="c10"
-                  id="insert-unique-id"
-                  min={0}
-                  onChange={[Function]}
-                  onKeyDown={[Function]}
-                  step={1}
-                  type="number"
-                  value="1"
-                />
-              </div>
+                inputMode="decimal"
+                min={0}
+                onChange={[Function]}
+                onKeyDown={[Function]}
+                step={1}
+                type="text"
+                value="1"
+              />
             </div>
           </span>
         </div>
@@ -3895,13 +3771,12 @@ Array [
           <label
             className="c4"
             hidden={false}
-            htmlFor="insert-unique-id"
+            htmlFor="insert-matching-unique-id"
           >
             <span
               className="c5"
             >
-              Label
-              
+              Label 
             </span>
           </label>
           <span
@@ -3910,83 +3785,79 @@ Array [
             <div
               className="c7 c8"
             >
-              <div
-                className="c9"
+              <input
+                aria-invalid={true}
+                className="c13"
+                inputMode="decimal"
+                min={0}
+                onChange={[Function]}
+                onKeyDown={[Function]}
+                step={1}
+                type="text"
+                value="1"
+              />
+              <button
+                className="c10"
+                onClick={[Function]}
+                size="s"
+                type="button"
               >
-                <input
-                  aria-invalid={true}
-                  className="c14"
-                  id="insert-unique-id"
-                  min={0}
-                  onChange={[Function]}
-                  onKeyDown={[Function]}
-                  step={1}
-                  type="number"
-                  value="1"
-                />
-                <button
+                <div
                   className="c11"
-                  onClick={[Function]}
-                  size="s"
-                  type="button"
                 >
-                  <div
-                    className="c12"
-                  >
-                    decrease number by 
-                    1
-                  </div>
-                  <svg
-                    aria-hidden="true"
-                    className="c13"
-                    focusable="false"
-                    preserveAspectRatio="xMidYMid meet"
-                    role="presentation"
-                    size={3}
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      d="M24 11v2H0v-2z"
-                      fillRule="evenodd"
-                    />
-                  </svg>
-                </button>
-                <button
+                  decrease number by 
+                  1
+                </div>
+                <svg
+                  aria-hidden="true"
+                  className="c12"
+                  focusable="false"
+                  preserveAspectRatio="xMidYMid meet"
+                  role="presentation"
+                  size={3}
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M24 11v2H0v-2z"
+                    fillRule="evenodd"
+                  />
+                </svg>
+              </button>
+              <button
+                className="c10"
+                onClick={[Function]}
+                size="s"
+                type="button"
+              >
+                <div
                   className="c11"
-                  onClick={[Function]}
-                  size="s"
-                  type="button"
                 >
-                  <div
-                    className="c12"
-                  >
-                    increase number by 
-                    1
-                  </div>
-                  <svg
-                    aria-hidden="true"
-                    className="c13"
-                    focusable="false"
-                    preserveAspectRatio="xMidYMid meet"
-                    role="presentation"
-                    size={3}
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      d="M13 0v11h11v2H13v11h-2V12.999L0 13v-2l11-.001V0h2z"
-                      fillRule="evenodd"
-                    />
-                  </svg>
-                </button>
-              </div>
+                  increase number by 
+                  1
+                </div>
+                <svg
+                  aria-hidden="true"
+                  className="c12"
+                  focusable="false"
+                  preserveAspectRatio="xMidYMid meet"
+                  role="presentation"
+                  size={3}
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M13 0v11h11v2H13v11h-2V12.999L0 13v-2l11-.001V0h2z"
+                    fillRule="evenodd"
+                  />
+                </svg>
+              </button>
             </div>
           </span>
           <div>
             <span
-              className="c15"
+              className="c14"
             >
               <div
-                className="c12"
+                className="c11"
               >
                 Error: 
               </div>
@@ -4014,14 +3885,6 @@ exports[`Storyshots Molecules | Input / Number With success 1`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-}
-
-.c6 {
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -4032,7 +3895,7 @@ exports[`Storyshots Molecules | Input / Number With success 1`] = `
   flex-grow: 1;
 }
 
-.c9 {
+.c8 {
   position: absolute;
   height: 1px;
   width: 1px;
@@ -4042,13 +3905,12 @@ exports[`Storyshots Molecules | Input / Number With success 1`] = `
 }
 
 .c1 {
-  width: 100%;
-  overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  cursor: pointer;
 }
 
-.c10 {
+.c9 {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -4086,20 +3948,16 @@ exports[`Storyshots Molecules | Input / Number With success 1`] = `
 }
 
 .c4 {
-  position: relative;
-  background-color: #ffffff;
-  height: 40px;
   box-shadow: 0 1px 3px rgba(0,0,0,0.03);
-  box-sizing: border-box;
 }
 
-.c8 {
+.c7 {
   width: 40px;
+  height: 40px;
   background-color: #FFFFFF;
   outline: none;
   border: 1px solid #BCBCB6;
   position: relative;
-  height: 100%;
   padding: 0;
   cursor: pointer;
   box-sizing: border-box;
@@ -4120,31 +3978,31 @@ exports[`Storyshots Molecules | Input / Number With success 1`] = `
   flex: 1 0 auto;
 }
 
-.c8:hover {
+.c7:hover {
   border-color: #4B4B46;
   z-index: 2;
 }
 
-.c8:focus {
+.c7:focus {
   border-color: #0046FF;
   z-index: 3;
 }
 
-.c8:first-of-type {
+.c7:first-of-type {
   -webkit-order: -1;
   -ms-flex-order: -1;
   order: -1;
 }
 
-.c8:active:enabled {
+.c7:active:enabled {
   background-color: #0046FF;
 }
 
-.c8:active:enabled svg {
+.c7:active:enabled svg {
   fill: #FFFFFF;
 }
 
-.c7 {
+.c6 {
   font-family: inherit;
   font-size: 100%;
   line-height: 1.15;
@@ -4154,32 +4012,23 @@ exports[`Storyshots Molecules | Input / Number With success 1`] = `
   outline: none;
   border: 1px solid #00D200;
   position: relative;
-  padding: 8px;
+  height: 40px;
   width: 100%;
-  height: 100%;
+  padding: 8px;
   margin: 0 -1px;
+  text-align: center;
   box-sizing: border-box;
   z-index: 1;
 }
 
-.c7:hover {
+.c6:hover {
   border-color: #4B4B46;
   z-index: 2;
 }
 
-.c7:focus {
+.c6:focus {
   border-color: #0046FF;
   z-index: 3;
-}
-
-.c7::-webkit-outer-spin-button,
-.c7::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
-}
-
-.c7[type='number'] {
-  -moz-appearance: textfield;
 }
 
 <div
@@ -4188,13 +4037,12 @@ exports[`Storyshots Molecules | Input / Number With success 1`] = `
   <label
     className="c1"
     hidden={false}
-    htmlFor="insert-unique-id"
+    htmlFor="insert-matching-unique-id"
   >
     <span
       className="c2"
     >
-      Label
-      
+      Label 
     </span>
   </label>
   <span
@@ -4203,89 +4051,76 @@ exports[`Storyshots Molecules | Input / Number With success 1`] = `
     <div
       className="c4 c5"
     >
-      <div
+      <input
         className="c6"
+        inputMode="decimal"
+        min={0}
+        onChange={[Function]}
+        onKeyDown={[Function]}
+        step={1}
+        success={true}
+        type="text"
+        value="1"
+      />
+      <button
+        className="c7"
+        onClick={[Function]}
+        type="button"
       >
-        <input
-          className="c7"
-          id="insert-unique-id"
-          min={0}
-          onChange={[Function]}
-          onKeyDown={[Function]}
-          step={1}
-          success={true}
-          type="number"
-          value="1"
-        />
-        <button
+        <div
           className="c8"
-          onClick={[Function]}
-          type="button"
         >
-          <div
-            className="c9"
-          >
-            decrease number by 
-            1
-          </div>
-          <svg
-            aria-hidden="true"
-            className="c10"
-            focusable="false"
-            preserveAspectRatio="xMidYMid meet"
-            role="presentation"
-            size={3}
-            viewBox="0 0 24 24"
-          >
-            <path
-              d="M24 11v2H0v-2z"
-              fillRule="evenodd"
-            />
-          </svg>
-        </button>
-        <button
+          decrease number by 
+          1
+        </div>
+        <svg
+          aria-hidden="true"
+          className="c9"
+          focusable="false"
+          preserveAspectRatio="xMidYMid meet"
+          role="presentation"
+          size={3}
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M24 11v2H0v-2z"
+            fillRule="evenodd"
+          />
+        </svg>
+      </button>
+      <button
+        className="c7"
+        onClick={[Function]}
+        type="button"
+      >
+        <div
           className="c8"
-          onClick={[Function]}
-          type="button"
         >
-          <div
-            className="c9"
-          >
-            increase number by 
-            1
-          </div>
-          <svg
-            aria-hidden="true"
-            className="c10"
-            focusable="false"
-            preserveAspectRatio="xMidYMid meet"
-            role="presentation"
-            size={3}
-            viewBox="0 0 24 24"
-          >
-            <path
-              d="M13 0v11h11v2H13v11h-2V12.999L0 13v-2l11-.001V0h2z"
-              fillRule="evenodd"
-            />
-          </svg>
-        </button>
-      </div>
+          increase number by 
+          1
+        </div>
+        <svg
+          aria-hidden="true"
+          className="c9"
+          focusable="false"
+          preserveAspectRatio="xMidYMid meet"
+          role="presentation"
+          size={3}
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M13 0v11h11v2H13v11h-2V12.999L0 13v-2l11-.001V0h2z"
+            fillRule="evenodd"
+          />
+        </svg>
+      </button>
     </div>
   </span>
 </div>
 `;
 
 exports[`Storyshots Molecules | Input / Number With value (Controlled behaviour) 1`] = `
-Array [
-  .c5 {
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.c6 {
+.c5 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -4301,7 +4136,7 @@ Array [
   flex-grow: 1;
 }
 
-.c9 {
+.c8 {
   position: absolute;
   height: 1px;
   width: 1px;
@@ -4311,13 +4146,12 @@ Array [
 }
 
 .c1 {
-  width: 100%;
-  overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  cursor: pointer;
 }
 
-.c10 {
+.c9 {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -4355,20 +4189,16 @@ Array [
 }
 
 .c4 {
-  position: relative;
-  background-color: #ffffff;
-  height: 40px;
   box-shadow: 0 1px 3px rgba(0,0,0,0.03);
-  box-sizing: border-box;
 }
 
-.c8 {
+.c7 {
   width: 40px;
+  height: 40px;
   background-color: #FFFFFF;
   outline: none;
   border: 1px solid #BCBCB6;
   position: relative;
-  height: 100%;
   padding: 0;
   cursor: pointer;
   box-sizing: border-box;
@@ -4389,48 +4219,6 @@ Array [
   flex: 1 0 auto;
 }
 
-.c8:hover {
-  border-color: #4B4B46;
-  z-index: 2;
-}
-
-.c8:focus {
-  border-color: #0046FF;
-  z-index: 3;
-}
-
-.c8:first-of-type {
-  -webkit-order: -1;
-  -ms-flex-order: -1;
-  order: -1;
-}
-
-.c8:active:enabled {
-  background-color: #0046FF;
-}
-
-.c8:active:enabled svg {
-  fill: #FFFFFF;
-}
-
-.c7 {
-  font-family: inherit;
-  font-size: 100%;
-  line-height: 1.15;
-  margin: 0;
-  overflow: visible;
-  background-color: #FFFFFF;
-  outline: none;
-  border: 1px solid #BCBCB6;
-  position: relative;
-  padding: 8px;
-  width: 100%;
-  height: 100%;
-  margin: 0 -1px;
-  box-sizing: border-box;
-  z-index: 1;
-}
-
 .c7:hover {
   border-color: #4B4B46;
   z-index: 2;
@@ -4441,117 +4229,144 @@ Array [
   z-index: 3;
 }
 
-.c7::-webkit-outer-spin-button,
-.c7::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
+.c7:first-of-type {
+  -webkit-order: -1;
+  -ms-flex-order: -1;
+  order: -1;
 }
 
-.c7[type='number'] {
-  -moz-appearance: textfield;
+.c7:active:enabled {
+  background-color: #0046FF;
+}
+
+.c7:active:enabled svg {
+  fill: #FFFFFF;
+}
+
+.c6 {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  overflow: visible;
+  background-color: #FFFFFF;
+  outline: none;
+  border: 1px solid #BCBCB6;
+  position: relative;
+  height: 40px;
+  width: 100%;
+  padding: 8px;
+  margin: 0 -1px;
+  text-align: center;
+  box-sizing: border-box;
+  z-index: 1;
+}
+
+.c6:hover {
+  border-color: #4B4B46;
+  z-index: 2;
+}
+
+.c6:focus {
+  border-color: #0046FF;
+  z-index: 3;
 }
 
 <div
-    className="c0"
+  className="c0"
+>
+  <label
+    className="c1"
+    hidden={false}
+    htmlFor="insert-matching-unique-id"
   >
-    <label
-      className="c1"
-      hidden={false}
-      htmlFor="insert-unique-id"
-    >
-      <span
-        className="c2"
-      >
-        Label
-        
-      </span>
-    </label>
     <span
-      className="c3"
+      className="c2"
     >
-      <div
-        className="c4 c5"
+      Label 
+    </span>
+  </label>
+  <span
+    className="c3"
+  >
+    <div
+      className="c4 c5"
+    >
+      <input
+        className="c6"
+        inputMode="decimal"
+        min={0}
+        onChange={[Function]}
+        onKeyDown={[Function]}
+        step={1}
+        type="text"
+        value="10"
+      />
+      <button
+        className="c7"
+        onClick={[Function]}
+        type="button"
       >
         <div
-          className="c6"
+          className="c8"
         >
-          <input
-            className="c7"
-            id="insert-unique-id"
-            min={0}
-            onChange={[Function]}
-            onKeyDown={[Function]}
-            step={1}
-            type="number"
-            value="10"
-          />
-          <button
-            className="c8"
-            onClick={[Function]}
-            type="button"
-          >
-            <div
-              className="c9"
-            >
-              decrease number by 
-              1
-            </div>
-            <svg
-              aria-hidden="true"
-              className="c10"
-              focusable="false"
-              preserveAspectRatio="xMidYMid meet"
-              role="presentation"
-              size={3}
-              viewBox="0 0 24 24"
-            >
-              <path
-                d="M24 11v2H0v-2z"
-                fillRule="evenodd"
-              />
-            </svg>
-          </button>
-          <button
-            className="c8"
-            onClick={[Function]}
-            type="button"
-          >
-            <div
-              className="c9"
-            >
-              increase number by 
-              1
-            </div>
-            <svg
-              aria-hidden="true"
-              className="c10"
-              focusable="false"
-              preserveAspectRatio="xMidYMid meet"
-              role="presentation"
-              size={3}
-              viewBox="0 0 24 24"
-            >
-              <path
-                d="M13 0v11h11v2H13v11h-2V12.999L0 13v-2l11-.001V0h2z"
-                fillRule="evenodd"
-              />
-            </svg>
-          </button>
+          decrease number by 
+          1
         </div>
-      </div>
-    </span>
-  </div>,
+        <svg
+          aria-hidden="true"
+          className="c9"
+          focusable="false"
+          preserveAspectRatio="xMidYMid meet"
+          role="presentation"
+          size={3}
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M24 11v2H0v-2z"
+            fillRule="evenodd"
+          />
+        </svg>
+      </button>
+      <button
+        className="c7"
+        onClick={[Function]}
+        type="button"
+      >
+        <div
+          className="c8"
+        >
+          increase number by 
+          1
+        </div>
+        <svg
+          aria-hidden="true"
+          className="c9"
+          focusable="false"
+          preserveAspectRatio="xMidYMid meet"
+          role="presentation"
+          size={3}
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M13 0v11h11v2H13v11h-2V12.999L0 13v-2l11-.001V0h2z"
+            fillRule="evenodd"
+          />
+        </svg>
+      </button>
+    </div>
+  </span>
   <button
     onClick={[Function]}
     type="button"
   >
     Decrease
-  </button>,
+  </button>
   <button
     onClick={[Function]}
     type="button"
   >
     Increase
-  </button>,
-]
+  </button>
+</div>
 `;
