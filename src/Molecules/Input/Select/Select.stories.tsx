@@ -164,30 +164,33 @@ storiesOf('Molecules | Input / Select', module)
     );
   })
   .add('Accessible from document.forms', () => {
-    const FORM_NAME = 'testForm';
-    const SELECT_NAME = 'mySelect';
+    const Inner = () => {
+      const FORM_NAME = 'testForm';
+      const SELECT_NAME = 'mySelect';
 
-    // @ts-ignore
-    const [_, forceUpdate] = React.useState([] as any[]); // eslint-disable-line @typescript-eslint/no-unused-vars
+      // @ts-ignore
+      const [_, forceUpdate] = React.useState([] as any[]); // eslint-disable-line @typescript-eslint/no-unused-vars
 
-    return (
-      <form name={FORM_NAME}>
-        <Input.Select
-          reducer={loggingReducer}
-          options={accountOptions}
-          name={SELECT_NAME}
-          label="User account"
-          placeholder="Select account"
-          // Every time the value updates
-          // The story gonna rerender
-          // So we have fresh stuff from document.forms
-          onChange={forceUpdate}
-        />
-        <br />
-        Value in form: &quot;
-        {R.path(['forms', FORM_NAME, 'elements', SELECT_NAME, 'value'])(document)}&quot;
-      </form>
-    );
+      return (
+        <form name={FORM_NAME}>
+          <Input.Select
+            reducer={loggingReducer}
+            options={accountOptions}
+            name={SELECT_NAME}
+            label="User account"
+            placeholder="Select account"
+            // Every time the value updates
+            // The story gonna rerender
+            // So we have fresh stuff from document.forms
+            onChange={forceUpdate}
+          />
+          <br />
+          Value in form: &quot;
+          {R.path(['forms', FORM_NAME, 'elements', SELECT_NAME, 'value'])(document)}&quot;
+        </form>
+      );
+    };
+    return <Inner />;
   })
   .add('Controlled', () => {
     const Component = () => {

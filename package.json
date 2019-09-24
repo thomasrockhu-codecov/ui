@@ -152,5 +152,9 @@
     "stylelint-processor-styled-components": "1.7.0",
     "typescript": "3.3.4000",
     "webpack": "4.32.0"
+  },
+  "resolutions": {
+    "react": "16.8.6",
+    "react-dom": "16.8.6"
   }
 }
