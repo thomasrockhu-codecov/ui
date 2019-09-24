@@ -42,7 +42,6 @@ const accountOptions = [
 const StyledBox: React.FC<any> = styled(Box)`
   cursor: pointer;
   background: ${p => p.theme.color.card};
-  outline: none;
 
   &:hover {
     background: ${p => p.theme.color.background};

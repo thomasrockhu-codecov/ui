@@ -41,9 +41,8 @@ const StyledButton = styled(NormalizedElements.Button)<LinkProps>`
   ${p => getSharedStyle(p)}
   /* resetting button styles */
   border: none;
-  margin: 0;
-  padding: 0;
-  width: auto;
+
+  border-radius: 0;
   overflow: visible;
 
   background: transparent;

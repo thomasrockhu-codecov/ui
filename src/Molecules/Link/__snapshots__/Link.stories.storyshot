@@ -135,9 +135,7 @@ exports[`Storyshots Molecules | Link With disabled prop results in a disabled bu
   padding: 0;
   color: #A0A09B;
   border: none;
-  margin: 0;
-  padding: 0;
-  width: auto;
+  border-radius: 0;
   overflow: visible;
   background: transparent;
   -webkit-font-smoothing: inherit;
@@ -244,9 +242,7 @@ exports[`Storyshots Molecules | Link Without to prop results in a button looking
   padding: 0;
   color: #0046FF;
   border: none;
-  margin: 0;
-  padding: 0;
-  width: auto;
+  border-radius: 0;
   overflow: visible;
   background: transparent;
   -webkit-font-smoothing: inherit;

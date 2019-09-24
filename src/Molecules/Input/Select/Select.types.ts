@@ -48,7 +48,7 @@ export type OptionBase = {
   disabled?: boolean;
 };
 
-export type Option = OptionBase & {};
+export type Option = OptionBase & Record<any, any>;
 
 export type SelectState = {
   open: boolean;

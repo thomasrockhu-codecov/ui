@@ -51,7 +51,7 @@ const triangleCss = css`
   }
 `;
 
-const StyledList = styled(UIList as any)`
+const StyledList = styled(UIList)<any>`
   display: flex;
   flex-direction: column;
   list-style: none;
@@ -59,9 +59,9 @@ const StyledList = styled(UIList as any)`
   top: 10px;
   border: 1px solid #ebebe8;
   background-color: #ffffff;
-  padding-top: 8px;
-  padding-bottom: 8px;
-  box-shadow: 0 2px 4px 0 rgba(40, 40, 35, 0.15);
+  padding-top: ${p => p.theme.spacing.unit(2)}px;
+  padding-bottom: ${p => p.theme.spacing.unit(2)}px;
+  box-shadow: 0 2px 4px 0 ${p => p.theme.color.shadowCard};
   ${triangleCss}
 `;
 
