@@ -33,36 +33,32 @@ export const FormField: React.FC<Props> = React.forwardRef(
   ) => {
     const labelText = `${label} ${required ? '*' : ''}`;
 
-    const Field = () => {
-      if (group) {
-        return (
-          <Fieldset>
-            <Legend styleType="label">{labelText}</Legend>
-            {children}
-          </Fieldset>
-        );
-      }
+    let field = (
+      <FormLabel hideLabel={hideLabel}>
+        {labelText}
+        {children}
+      </FormLabel>
+    );
 
-      if (fieldId || forId) {
-        return (
-          <>
-            <FormLabel hideLabel={hideLabel} forId={fieldId || forId}>
-              {labelText}
-            </FormLabel>
-            {children}
-          </>
-        );
-      }
+    if (group) {
+      field = (
+        <Fieldset>
+          <Legend styleType="label">{labelText}</Legend>
+          {children}
+        </Fieldset>
+      );
+    }
 
-      return (
+    if (fieldId || forId) {
+      field = (
         <>
-          <FormLabel hideLabel={hideLabel}>
+          <FormLabel hideLabel={hideLabel} forId={fieldId || forId}>
             {labelText}
-            {children}
           </FormLabel>
+          {children}
         </>
       );
-    };
+    }
 
     if (forId) {
       assert(false, `FormField: the prop forId is deprecated, please use fieldId instead.`, {
@@ -71,8 +67,8 @@ export const FormField: React.FC<Props> = React.forwardRef(
     }
 
     return (
-      <Wrapper width={width} className={className} ref={ref}>
-        <Field />
+      <Wrapper width={width} ref={ref} className={className}>
+        {field}
         <AnimatePresence>
           {hasError(error) ? (
             <BottomWrapper
