@@ -1,3 +1,10 @@
+## [1.45.3](https://github.com/nordnet/ui/compare/v1.45.2...v1.45.3) (2019-09-24)
+
+
+### Bug Fixes
+
+* modal overflow ([26ea656](https://github.com/nordnet/ui/commit/26ea656))
+
 ## [1.45.2](https://github.com/nordnet/ui/compare/v1.45.1...v1.45.2) (2019-09-23)
 
 
