@@ -3885,11 +3885,8 @@ Array [
   padding: 0;
   color: #0046FF;
   border: none;
-  border-radius: 0;
-  overflow: visible;
   background: transparent;
-  -webkit-font-smoothing: inherit;
-  -moz-osx-font-smoothing: inherit;
+  overflow: visible;
   -webkit-appearance: none !important;
   cursor: pointer;
   font-weight: inherit;

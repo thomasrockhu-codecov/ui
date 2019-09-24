@@ -41,18 +41,9 @@ const StyledButton = styled(NormalizedElements.Button)<LinkProps>`
   ${p => getSharedStyle(p)}
   /* resetting button styles */
   border: none;
-
-  border-radius: 0;
+  background: transparent;
   overflow: visible;
 
-  background: transparent;
-
-  /* Corrects font smoothing for webkit */
-  -webkit-font-smoothing: inherit;
-  -moz-osx-font-smoothing: inherit;
-
-  /* Corrects inability to style clickable input types in iOS */
-  /* stylelint-disable-next-line property-no-vendor-prefix */
   -webkit-appearance: none !important;
   /* resetting button styles end */
 
