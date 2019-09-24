@@ -1,3 +1,18 @@
+## [1.45.5](https://github.com/nordnet/ui/compare/v1.45.4...v1.45.5) (2019-09-24)
+
+
+### Bug Fixes
+
+* 🐛 add generation savings colors ([c394886](https://github.com/nordnet/ui/commit/c394886))
+* add deprecation messages ([4347781](https://github.com/nordnet/ui/commit/4347781))
+* change field id to just id ([b88bd3b](https://github.com/nordnet/ui/commit/b88bd3b))
+* clean form field props ([a018076](https://github.com/nordnet/ui/commit/a018076))
+* deprecate forid ([7525265](https://github.com/nordnet/ui/commit/7525265))
+* error state ([933a6ef](https://github.com/nordnet/ui/commit/933a6ef))
+* merge master ([b509ca6](https://github.com/nordnet/ui/commit/b509ca6))
+* omit success in final output ([271ba12](https://github.com/nordnet/ui/commit/271ba12))
+* refactor input text to use refactored form field ([9f8f1c6](https://github.com/nordnet/ui/commit/9f8f1c6))
+
 ## [1.45.4](https://github.com/nordnet/ui/compare/v1.45.3...v1.45.4) (2019-09-24)
 
 
