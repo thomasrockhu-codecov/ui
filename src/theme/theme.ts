@@ -157,6 +157,10 @@ export const createTheme = (config: ThemeConfig = {}): Theme => {
       flagBorder: rawColor.gray6,
       inputBorderError: rawColor.negative,
       inputBorderSuccess: rawColor.positive,
+      generationSavingsTimelineColor1: rawColor.complementaryGreen1,
+      generationSavingsTimelineColor2: rawColor.complementaryPink1,
+      generationSavingsTimelineColor3: rawColor.brandBlue,
+      generationSavingsTimelineColor4: rawColor.complementaryBlue1,
     },
     media: {
       between: (s1, s2) => {
