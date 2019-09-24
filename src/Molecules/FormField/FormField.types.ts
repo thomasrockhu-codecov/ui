@@ -7,10 +7,10 @@ export type Props = {
   className?: string;
   error?: string;
   extraInfo?: string;
+  fieldId?: string;
   forId?: string;
   group?: boolean;
-  showRequired?: boolean;
-  size?: 's';
+  required?: boolean;
 
   /**
    * You need to specify width

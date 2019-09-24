@@ -2,8 +2,8 @@ import React from 'react';
 import styled from 'styled-components';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Props } from './FormField.types';
-
 import { VisuallyHidden, FormLabel, Typography, Fieldset, Legend } from '../..';
+import { assert } from '../../common/utils';
 
 const hasError = (error?: Props['error']) => error && error !== '';
 
@@ -19,33 +19,52 @@ export const FormField: React.FC<Props> = ({
   className,
   error,
   extraInfo,
+  fieldId,
   forId,
   group,
   hideLabel,
   label,
-  showRequired = false,
+  required = false,
   width,
 }) => {
-  const labelText = `${label} ${showRequired ? '*' : ''}`;
+  const labelText = `${label} ${required ? '*' : ''}`;
 
-  const Field = () =>
-    group ? (
+  let field = (
+    <FormLabel hideLabel={hideLabel}>
+      {labelText}
+      {children}
+    </FormLabel>
+  );
+
+  if (group) {
+    field = (
       <Fieldset>
         <Legend styleType="label">{labelText}</Legend>
         {children}
       </Fieldset>
-    ) : (
+    );
+  }
+
+  if (fieldId || forId) {
+    field = (
       <>
-        <FormLabel hideLabel={hideLabel} forId={forId}>
+        <FormLabel hideLabel={hideLabel} forId={fieldId || forId}>
           {labelText}
         </FormLabel>
         {children}
       </>
     );
+  }
+
+  if (forId) {
+    assert(false, `FormField: the prop forId is deprecated, please use fieldId instead.`, {
+      level: 'warn',
+    });
+  }
 
   return (
     <Wrapper width={width} className={className}>
-      <Field />
+      {field}
       <AnimatePresence>
         {hasError(error) ? (
           <BottomWrapper
