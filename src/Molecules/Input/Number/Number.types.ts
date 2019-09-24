@@ -7,8 +7,8 @@ export type Props = {
   disabled?: boolean;
   error?: string;
   extraInfo?: string;
-  fieldId: string;
   hideLabel?: boolean;
+  id: string;
   /** inputMode:
    * none
      No virtual keyboard;
@@ -30,11 +30,11 @@ export type Props = {
   name?: string;
   noSteppers?: boolean;
   required?: boolean;
-  showRequired?: boolean;
   size?: 's';
   step?: string | number;
   success?: boolean;
   value?: string | number;
+  visuallyEmphasiseRequired?: boolean;
   width?: string | number;
 
   onStepUp?: () => void;

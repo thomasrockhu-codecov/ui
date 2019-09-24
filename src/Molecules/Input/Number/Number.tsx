@@ -123,7 +123,7 @@ const NumberInput: NumberComponent & {
     defaultValue = 1,
     disabled,
     error,
-    fieldId,
+    id,
     intl,
     max,
     min = 0,
@@ -144,6 +144,7 @@ const NumberInput: NumberComponent & {
     inputMode = 'decimal',
     success,
     value: controlledValueRaw,
+    visuallyEmphasiseRequired,
   } = props;
   const [internalValue, setInternalValue] = useState(getNumberAsString(defaultValue));
   const handleValueChange = (val: string) => {
@@ -218,10 +219,9 @@ const NumberInput: NumberComponent & {
 
   return (
     <FormField
-      {...R.pick(
-        ['error', 'extraInfo', 'fieldId', 'hideLabel', 'label', 'showRequired', 'width'],
-        props,
-      )}
+      {...R.pick(['error', 'extraInfo', 'hideLabel', 'label', 'width'], props)}
+      required={visuallyEmphasiseRequired}
+      fieldId={id}
     >
       <Typography type="secondary" color={t => t.color.text}>
         <Wrapper container item grow={1} alignItems="center">
@@ -229,7 +229,7 @@ const NumberInput: NumberComponent & {
             {...{
               autoFocus,
               disabled,
-              id: fieldId,
+              id,
               error,
               max,
               min,
