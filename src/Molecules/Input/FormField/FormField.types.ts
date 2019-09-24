@@ -12,6 +12,7 @@ export type Props = {
   group?: boolean;
   required?: boolean;
 
+  ref?: React.Ref<HTMLDivElement>;
   /**
    * You need to specify width
    * (better in pixels), because
