@@ -3,13 +3,14 @@ import { injectIntl } from 'react-intl';
 import styled, { css } from 'styled-components';
 import * as R from 'ramda';
 import { Props, NumberComponent } from './Number.types';
-import { Flexbox, VisuallyHidden, Icon, Typography, FormField } from '../../..';
+import { Flexbox, VisuallyHidden, Icon, Typography } from '../../..';
+import { FormField } from '../FormField';
 import NormalizedElements from '../../../common/NormalizedElements';
 import { getStringAsNumber, getNumberAsString } from './utils';
-import { isNumber, isString, assert } from '../../../common/utils';
+import { isNumber, isString } from '../../../common/utils';
 import adjustValue from './adjustValue';
 
-const deprecatedErrorPresent = (error?: Props['error']) => error && error !== '';
+const hasError = (error?: Props['error']) => error && error !== '';
 const removeNonNumberCharacters = R.replace(/[^0-9\-.,]+/, '');
 
 const width = css<Pick<Props, 'size'>>`
@@ -44,11 +45,11 @@ const focusBorderStyles = css`
   }
 `;
 
-const borderStyles = css<Pick<Props, 'error' | 'hasError' | 'success'>>`
+const borderStyles = css<Pick<Props, 'error' | 'success'>>`
   outline: none;
   border: 1px solid
     ${p => {
-      if (p.hasError || deprecatedErrorPresent(p.error)) return p.theme.color.inputBorderError;
+      if (hasError(p.error)) return p.theme.color.inputBorderError;
       if (p.success) return p.theme.color.inputBorderSuccess;
       return p.theme.color.inputBorder;
     }};
@@ -123,9 +124,7 @@ const NumberInput: NumberComponent & {
     disabled,
     error,
     fieldId,
-    hasError,
     intl,
-    label,
     max,
     min = 0,
     name,
@@ -217,129 +216,57 @@ const NumberInput: NumberComponent & {
     }
   };
 
-  // TODO: remove the line below when the depricated label prop is removed
-  const inputHasError = label ? hasError : hasError || deprecatedErrorPresent(error);
-
-  const InputNumber = (
-    <Typography type="secondary" color={t => t.color.text}>
-      <Wrapper container item grow={1} alignItems="center">
-        <Input
-          {...{
-            autoFocus,
-            disabled,
-            hasError,
-            id: fieldId,
-            max,
-            min,
-            name,
-            onBlur,
-            onChange: onChangeHandler,
-            onClick,
-            onFocus,
-            onKeyDown: onKeyDownHandler,
-            onKeyPress,
-            onKeyUp,
-            ref: inputRef,
-            required,
-            size,
-            step,
-            success,
-            value: removeNonNumberCharacters(value),
-            inputMode,
-          }}
-          {...(inputHasError ? { 'aria-invalid': true } : {})}
-        />
-        {!noSteppers && (
-          <>
-            <Stepper onClick={() => onStepHandler(false)} size={size} disabled={disabled}>
-              <VisuallyHidden>decrease number by {step}</VisuallyHidden>
-              <Icon.Minus size={3} />
-            </Stepper>
-            <Stepper onClick={() => onStepHandler(true)} size={size} disabled={disabled}>
-              <VisuallyHidden>increase number by {step}</VisuallyHidden>
-              <Icon.Plus size={3} />
-            </Stepper>
-          </>
-        )}
-      </Wrapper>
-    </Typography>
+  return (
+    <FormField
+      {...R.pick(
+        ['error', 'extraInfo', 'fieldId', 'hideLabel', 'label', 'showRequired', 'width'],
+        props,
+      )}
+    >
+      <Typography type="secondary" color={t => t.color.text}>
+        <Wrapper container item grow={1} alignItems="center">
+          <Input
+            {...{
+              autoFocus,
+              disabled,
+              id: fieldId,
+              error,
+              max,
+              min,
+              name,
+              onBlur,
+              onChange: onChangeHandler,
+              onClick,
+              onFocus,
+              onKeyDown: onKeyDownHandler,
+              onKeyPress,
+              onKeyUp,
+              ref: inputRef,
+              required,
+              size,
+              step,
+              success,
+              value: removeNonNumberCharacters(value),
+              inputMode,
+            }}
+            {...(hasError(error) ? { 'aria-invalid': true } : {})}
+          />
+          {!noSteppers && (
+            <>
+              <Stepper onClick={() => onStepHandler(false)} size={size} disabled={disabled}>
+                <VisuallyHidden>decrease number by {step}</VisuallyHidden>
+                <Icon.Minus size={3} />
+              </Stepper>
+              <Stepper onClick={() => onStepHandler(true)} size={size} disabled={disabled}>
+                <VisuallyHidden>increase number by {step}</VisuallyHidden>
+                <Icon.Plus size={3} />
+              </Stepper>
+            </>
+          )}
+        </Wrapper>
+      </Typography>
+    </FormField>
   );
-
-  if (props.hideLabel) {
-    assert(
-      false,
-      `Input.Number: (Deprecated usage) Please wrap component in FormField and pass that the hideLabel prop instead.`,
-      {
-        level: 'warn',
-      },
-    );
-  }
-
-  if (error) {
-    assert(
-      false,
-      `Input.Number: (Deprecated usage) Please wrap component in FormField and pass that the error prop instead.`,
-      {
-        level: 'warn',
-      },
-    );
-  }
-
-  if (props.extraInfo) {
-    assert(
-      false,
-      `Input.Number: (Deprecated usage) Please wrap component in FormField and pass that the extraInfo prop instead.`,
-      {
-        level: 'warn',
-      },
-    );
-  }
-
-  if (props.fullWidth) {
-    assert(
-      false,
-      `Input.Number: (Deprecated usage) Please wrap component in FormField and pass that the fullWidth prop instead.`,
-      {
-        level: 'warn',
-      },
-    );
-  }
-
-  if (props.width) {
-    assert(
-      false,
-      `Input.Number: (Deprecated usage) Please wrap component in FormField and pass that the width prop instead.`,
-      {
-        level: 'warn',
-      },
-    );
-  }
-
-  if (label && isString(label)) {
-    assert(
-      false,
-      `Input.Number: (Deprecated usage) Please wrap component in FormField and pass that the label prop instead.`,
-      {
-        level: 'warn',
-      },
-    );
-
-    assert(
-      !fieldId,
-      `Input.Number: (Deprecated usage) You forgot to specify fieldId, your label is not linked to your input.`,
-      {
-        level: 'warn',
-      },
-    );
-
-    return (
-      <FormField {...props} label={label}>
-        {InputNumber}
-      </FormField>
-    );
-  }
-
-  return InputNumber;
 };
 
 NumberInput.components = components;

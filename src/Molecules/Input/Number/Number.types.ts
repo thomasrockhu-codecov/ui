@@ -1,29 +1,14 @@
 import { InjectedIntlProps, InjectedIntl } from 'react-intl';
 
 export type Props = {
-  /** @deprecated wrap Input in FormField and give that this prop */
-  label?: string;
-  /** @deprecated wrap Input in FormField and give that this prop */
-  hideLabel?: boolean;
-  /** @deprecated wrap Input in FormField and give that this prop */
-  error?: string;
-  /** @deprecated wrap Input in FormField and give that this prop */
-  extraInfo?: string;
-  /** @deprecated wrap Input in FormField and give that this prop.
-   * Also match it to the new id prop of this component. */
-  fieldId?: string;
-  /** @deprecated wrap Input in FormField and give that this prop */
-  fullWidth?: boolean;
-  /** @deprecated wrap Input in FormField and give that this prop */
-  width?: string | number;
-
   autoFocus?: boolean;
   className?: string;
   defaultValue?: string | number;
   disabled?: boolean;
-  hasError?: boolean;
-  id?: string;
-
+  error?: string;
+  extraInfo?: string;
+  fieldId: string;
+  hideLabel?: boolean;
   /** inputMode:
    * none
      No virtual keyboard;
@@ -39,15 +24,18 @@ export type Props = {
       Devices may or may not show a minus key.
    */
   inputMode?: 'none' | 'numeric' | 'decimal';
+  label: string;
   max?: string | number;
   min?: string | number;
   name?: string;
   noSteppers?: boolean;
   required?: boolean;
+  showRequired?: boolean;
   size?: 's';
   step?: string | number;
   success?: boolean;
   value?: string | number;
+  width?: string | number;
 
   onStepUp?: () => void;
   onStepDown?: () => void;
