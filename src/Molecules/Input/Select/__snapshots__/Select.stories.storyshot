@@ -27,7 +27,7 @@ Array [
       value="3"
     />
   </select>,
-  .c8 {
+  .c9 {
   padding-left: 8px;
   padding-right: 8px;
 }
@@ -44,7 +44,7 @@ Array [
   align-items: center;
 }
 
-.c5 {
+.c6 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -59,7 +59,7 @@ Array [
   justify-content: center;
 }
 
-.c9 {
+.c10 {
   position: absolute;
   height: 1px;
   width: 1px;
@@ -74,7 +74,7 @@ Array [
   cursor: pointer;
 }
 
-.c11 {
+.c12 {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -97,7 +97,7 @@ Array [
   line-height: 1.4285714285714286;
 }
 
-.c6 {
+.c7 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
   margin: 0;
@@ -111,7 +111,7 @@ Array [
   display: inline-block;
 }
 
-.c7 {
+.c8 {
   font-family: inherit;
   font-size: 100%;
   line-height: 1.15;
@@ -137,29 +137,29 @@ Array [
   text-align: initial;
 }
 
-.c7,
-.c7[type='button'],
-.c7[type='reset'],
-.c7[type='submit'] {
+.c8,
+.c8[type='button'],
+.c8[type='reset'],
+.c8[type='submit'] {
   -webkit-appearance: button;
 }
 
-.c7::-moz-focus-inner,
-.c7[type='button']::-moz-focus-inner,
-.c7[type='reset']::-moz-focus-inner,
-.c7[type='submit']::-moz-focus-inner {
+.c8::-moz-focus-inner,
+.c8[type='button']::-moz-focus-inner,
+.c8[type='reset']::-moz-focus-inner,
+.c8[type='submit']::-moz-focus-inner {
   border-style: none;
   padding: 0;
 }
 
-.c7:-moz-focusring,
-.c7[type='button']:-moz-focusring,
-.c7[type='reset']:-moz-focusring,
-.c7[type='submit']:-moz-focusring {
+.c8:-moz-focusring,
+.c8[type='button']:-moz-focusring,
+.c8[type='reset']:-moz-focusring,
+.c8[type='submit']:-moz-focusring {
   outline: 1px dotted ButtonText;
 }
 
-.c10 {
+.c11 {
   -webkit-transform: translateY(-50%) rotate(0);
   -ms-transform: translateY(-50%) rotate(0);
   transform: translateY(-50%) rotate(0);
@@ -180,6 +180,26 @@ Array [
   position: relative;
   display: inline-block;
   width: initial;
+}
+
+.c5 {
+  height: 40px;
+  outline: none;
+  border: 1px solid #BCBCB6;
+  position: relative;
+  position: relative;
+}
+
+.c5:hover {
+  border-color: #4B4B46;
+}
+
+.c5:focus-within {
+  border-color: #0046FF;
+}
+
+.c5.focus-within {
+  border-color: #0046FF;
 }
 
 <div
@@ -204,55 +224,63 @@ Array [
             User account 
             <div
               className="c5"
+              label="User account"
+              onChange={[Function]}
+              placeholder="Select account"
+              width="300px"
             >
-              <span
+              <div
                 className="c6"
               >
-                <button
-                  absolutePositioning={true}
-                  aria-expanded="false"
-                  aria-haspopup="listbox"
+                <span
                   className="c7"
-                  form=""
-                  onClick={[Function]}
-                  tabIndex={0}
-                  type="button"
                 >
-                  <div
-                    aria-hidden="true"
-                    style={
-                      Object {
-                        "flex": 1,
-                      }
-                    }
+                  <button
+                    absolutePositioning={true}
+                    aria-expanded="false"
+                    aria-haspopup="listbox"
+                    className="c8"
+                    form=""
+                    onClick={[Function]}
+                    tabIndex={0}
+                    type="button"
                   >
                     <div
-                      className="c8"
+                      aria-hidden="true"
+                      style={
+                        Object {
+                          "flex": 1,
+                        }
+                      }
                     >
-                      Select account
+                      <div
+                        className="c9"
+                      >
+                        Select account
+                      </div>
                     </div>
+                  </button>
+                  <div
+                    className="c10"
+                  >
+                    Select account
                   </div>
-                </button>
-                <div
-                  className="c9"
-                >
-                  Select account
-                </div>
-              </span>
+                </span>
+              </div>
+              <svg
+                aria-hidden="true"
+                className="c11 c12"
+                focusable="false"
+                preserveAspectRatio="xMidYMid meet"
+                role="presentation"
+                size={5}
+                viewBox="0 0 24 24"
+              >
+                <polygon
+                  points="19.969 4 24 8.027 12 20 0 8.027 4.031 4 12 11.952"
+                />
+              </svg>
             </div>
-            <svg
-              aria-hidden="true"
-              className="c10 c11"
-              focusable="false"
-              preserveAspectRatio="xMidYMid meet"
-              role="presentation"
-              size={5}
-              viewBox="0 0 24 24"
-            >
-              <polygon
-                points="19.969 4 24 8.027 12 20 0 8.027 4.031 4 12 11.952"
-              />
-            </svg>
           </span>
         </label>
       </div>
@@ -262,12 +290,332 @@ Array [
 `;
 
 exports[`Storyshots Molecules | Input / Select Accessible from document.forms 1`] = `
-.c9 {
+.c10 {
   padding-left: 8px;
   padding-right: 8px;
 }
 
 .c2 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c7 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.c11 {
+  position: absolute;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  -webkit-clip: rect(1px,1px,1px,1px);
+  clip: rect(1px,1px,1px,1px);
+}
+
+.c4 {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.c13 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 20px;
+  height: 20px;
+  fill: #282823;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
+}
+
+.c5 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #6E6E69;
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c8 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c3 {
+  width: 200px;
+  display: inline-block;
+}
+
+.c9 {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  overflow: visible;
+  text-transform: none;
+  background: transparent;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  border: 0;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  outline: 0;
+  padding: 0;
+  text-align: initial;
+}
+
+.c9,
+.c9[type='button'],
+.c9[type='reset'],
+.c9[type='submit'] {
+  -webkit-appearance: button;
+}
+
+.c9::-moz-focus-inner,
+.c9[type='button']::-moz-focus-inner,
+.c9[type='reset']::-moz-focus-inner,
+.c9[type='submit']::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+.c9:-moz-focusring,
+.c9[type='button']:-moz-focusring,
+.c9[type='reset']:-moz-focusring,
+.c9[type='submit']:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+.c12 {
+  -webkit-transform: translateY(-50%) rotate(0);
+  -ms-transform: translateY(-50%) rotate(0);
+  transform: translateY(-50%) rotate(0);
+  -webkit-transform-origin: center center;
+  -ms-transform-origin: center center;
+  transform-origin: center center;
+  -webkit-transition: -webkit-transform 0.16s ease-out;
+  -webkit-transition: transform 0.16s ease-out;
+  transition: transform 0.16s ease-out;
+  position: absolute;
+  height: 8px;
+  top: 50%;
+  right: 4px;
+  pointer-events: none;
+}
+
+.c1 {
+  position: relative;
+  display: inline-block;
+  width: initial;
+}
+
+.c6 {
+  height: 40px;
+  outline: none;
+  border: 1px solid #BCBCB6;
+  position: relative;
+  position: relative;
+}
+
+.c6:hover {
+  border-color: #4B4B46;
+}
+
+.c6:focus-within {
+  border-color: #0046FF;
+}
+
+.c6.focus-within {
+  border-color: #0046FF;
+}
+
+.c0 {
+  display: none;
+}
+
+<form
+  name="testForm"
+>
+  <select
+    className="c0"
+    name="mySelect"
+  >
+    <option
+      label="Select account"
+      selected={true}
+      value=""
+    />
+    <option
+      label="First account"
+      value="1"
+    />
+    <option
+      label="Second acc 2"
+      value="2"
+    />
+    <option
+      label="Third 3"
+      value="3"
+    />
+  </select>
+  <div
+    className="c1"
+    onBlur={[Function]}
+    onFocus={[Function]}
+  >
+    <div
+      className="c2"
+    >
+      <div
+        className="c3"
+      >
+        <label
+          className="c4"
+          hidden={false}
+        >
+          <span
+            className="c5"
+          >
+            User account 
+            <div
+              className="c6"
+              label="User account"
+              name="mySelect"
+              onChange={[Function]}
+              placeholder="Select account"
+            >
+              <div
+                className="c7"
+              >
+                <span
+                  className="c8"
+                >
+                  <button
+                    absolutePositioning={true}
+                    aria-expanded="false"
+                    aria-haspopup="listbox"
+                    className="c9"
+                    form=""
+                    onClick={[Function]}
+                    tabIndex={0}
+                    type="button"
+                  >
+                    <div
+                      aria-hidden="true"
+                      style={
+                        Object {
+                          "flex": 1,
+                        }
+                      }
+                    >
+                      <div
+                        className="c10"
+                      >
+                        Select account
+                      </div>
+                    </div>
+                  </button>
+                  <div
+                    className="c11"
+                  >
+                    Select account
+                  </div>
+                </span>
+              </div>
+              <svg
+                aria-hidden="true"
+                className="c12 c13"
+                focusable="false"
+                preserveAspectRatio="xMidYMid meet"
+                role="presentation"
+                size={5}
+                viewBox="0 0 24 24"
+              >
+                <polygon
+                  points="19.969 4 24 8.027 12 20 0 8.027 4.031 4 12 11.952"
+                />
+              </svg>
+            </div>
+          </span>
+        </label>
+      </div>
+    </div>
+  </div>
+  <br />
+  Value in form: "
+  "
+</form>
+`;
+
+exports[`Storyshots Molecules | Input / Select Controlled 1`] = `
+Array [
+  .c0 {
+  display: none;
+}
+
+<select
+    className="c0"
+  >
+    <option
+      label="Select me"
+      selected={true}
+      value=""
+    />
+    <option
+      label="1"
+      value={1}
+    />
+    <option
+      label="2"
+      value={2}
+    />
+    <option
+      label="3"
+      value={3}
+    />
+  </select>,
+  .c9 {
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+.c1 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -303,7 +651,7 @@ exports[`Storyshots Molecules | Input / Select Accessible from document.forms 1`
   clip: rect(1px,1px,1px,1px);
 }
 
-.c4 {
+.c3 {
   text-overflow: ellipsis;
   white-space: nowrap;
   cursor: pointer;
@@ -323,7 +671,7 @@ exports[`Storyshots Molecules | Input / Select Accessible from document.forms 1`
   display: block;
 }
 
-.c5 {
+.c4 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #6E6E69;
   margin: 0;
@@ -341,7 +689,7 @@ exports[`Storyshots Molecules | Input / Select Accessible from document.forms 1`
   line-height: 1.4285714285714286;
 }
 
-.c3 {
+.c2 {
   width: 200px;
   display: inline-block;
 }
@@ -411,302 +759,30 @@ exports[`Storyshots Molecules | Input / Select Accessible from document.forms 1`
   pointer-events: none;
 }
 
-.c1 {
+.c0 {
   position: relative;
   display: inline-block;
   width: initial;
-}
-
-.c0 {
-  display: none;
-}
-
-<form
-  name="testForm"
->
-  <select
-    className="c0"
-    name="mySelect"
-  >
-    <option
-      label="Select account"
-      selected={true}
-      value=""
-    />
-    <option
-      label="First account"
-      value="1"
-    />
-    <option
-      label="Second acc 2"
-      value="2"
-    />
-    <option
-      label="Third 3"
-      value="3"
-    />
-  </select>
-  <div
-    className="c1"
-    onBlur={[Function]}
-    onFocus={[Function]}
-  >
-    <div
-      className="c2"
-    >
-      <div
-        className="c3"
-      >
-        <label
-          className="c4"
-          hidden={false}
-        >
-          <span
-            className="c5"
-          >
-            User account 
-            <div
-              className="c6"
-            >
-              <span
-                className="c7"
-              >
-                <button
-                  absolutePositioning={true}
-                  aria-expanded="false"
-                  aria-haspopup="listbox"
-                  className="c8"
-                  form=""
-                  onClick={[Function]}
-                  tabIndex={0}
-                  type="button"
-                >
-                  <div
-                    aria-hidden="true"
-                    style={
-                      Object {
-                        "flex": 1,
-                      }
-                    }
-                  >
-                    <div
-                      className="c9"
-                    >
-                      Select account
-                    </div>
-                  </div>
-                </button>
-                <div
-                  className="c10"
-                >
-                  Select account
-                </div>
-              </span>
-            </div>
-            <svg
-              aria-hidden="true"
-              className="c11 c12"
-              focusable="false"
-              preserveAspectRatio="xMidYMid meet"
-              role="presentation"
-              size={5}
-              viewBox="0 0 24 24"
-            >
-              <polygon
-                points="19.969 4 24 8.027 12 20 0 8.027 4.031 4 12 11.952"
-              />
-            </svg>
-          </span>
-        </label>
-      </div>
-    </div>
-  </div>
-  <br />
-  Value in form: "
-  "
-</form>
-`;
-
-exports[`Storyshots Molecules | Input / Select Controlled 1`] = `
-Array [
-  .c0 {
-  display: none;
-}
-
-<select
-    className="c0"
-  >
-    <option
-      label="Select me"
-      selected={true}
-      value=""
-    />
-    <option
-      label="1"
-      value={1}
-    />
-    <option
-      label="2"
-      value={2}
-    />
-    <option
-      label="3"
-      value={3}
-    />
-  </select>,
-  .c8 {
-  padding-left: 8px;
-  padding-right: 8px;
-}
-
-.c1 {
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
 }
 
 .c5 {
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-}
-
-.c9 {
-  position: absolute;
-  height: 1px;
-  width: 1px;
-  overflow: hidden;
-  -webkit-clip: rect(1px,1px,1px,1px);
-  clip: rect(1px,1px,1px,1px);
-}
-
-.c3 {
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  cursor: pointer;
-}
-
-.c11 {
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  width: 20px;
-  height: 20px;
-  fill: #282823;
-  -webkit-flex-shrink: 0;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
-  display: block;
-}
-
-.c4 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #6E6E69;
-  margin: 0;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
-}
-
-.c6 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #282823;
-  margin: 0;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
-}
-
-.c2 {
-  width: 200px;
-  display: inline-block;
-}
-
-.c7 {
-  font-family: inherit;
-  font-size: 100%;
-  line-height: 1.15;
-  margin: 0;
-  overflow: visible;
-  text-transform: none;
-  background: transparent;
-  width: 100%;
-  height: 100%;
-  cursor: pointer;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  border: 0;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  outline: 0;
-  padding: 0;
-  text-align: initial;
-}
-
-.c7,
-.c7[type='button'],
-.c7[type='reset'],
-.c7[type='submit'] {
-  -webkit-appearance: button;
-}
-
-.c7::-moz-focus-inner,
-.c7[type='button']::-moz-focus-inner,
-.c7[type='reset']::-moz-focus-inner,
-.c7[type='submit']::-moz-focus-inner {
-  border-style: none;
-  padding: 0;
-}
-
-.c7:-moz-focusring,
-.c7[type='button']:-moz-focusring,
-.c7[type='reset']:-moz-focusring,
-.c7[type='submit']:-moz-focusring {
-  outline: 1px dotted ButtonText;
-}
-
-.c10 {
-  -webkit-transform: translateY(-50%) rotate(0);
-  -ms-transform: translateY(-50%) rotate(0);
-  transform: translateY(-50%) rotate(0);
-  -webkit-transform-origin: center center;
-  -ms-transform-origin: center center;
-  transform-origin: center center;
-  -webkit-transition: -webkit-transform 0.16s ease-out;
-  -webkit-transition: transform 0.16s ease-out;
-  transition: transform 0.16s ease-out;
-  position: absolute;
-  height: 8px;
-  top: 50%;
-  right: 4px;
-  pointer-events: none;
-}
-
-.c0 {
+  height: 40px;
+  outline: none;
+  border: 1px solid #BCBCB6;
   position: relative;
-  display: inline-block;
-  width: initial;
+  position: relative;
+}
+
+.c5:hover {
+  border-color: #4B4B46;
+}
+
+.c5:focus-within {
+  border-color: #0046FF;
+}
+
+.c5.focus-within {
+  border-color: #0046FF;
 }
 
 <div
@@ -730,55 +806,63 @@ Array [
             Can select only #2 
             <div
               className="c5"
+              label="Can select only #2"
+              onChange={[Function]}
+              placeholder="Select me"
+              value={Array []}
             >
-              <span
+              <div
                 className="c6"
               >
-                <button
-                  absolutePositioning={true}
-                  aria-expanded="false"
-                  aria-haspopup="listbox"
+                <span
                   className="c7"
-                  form=""
-                  onClick={[Function]}
-                  tabIndex={0}
-                  type="button"
                 >
-                  <div
-                    aria-hidden="true"
-                    style={
-                      Object {
-                        "flex": 1,
-                      }
-                    }
+                  <button
+                    absolutePositioning={true}
+                    aria-expanded="false"
+                    aria-haspopup="listbox"
+                    className="c8"
+                    form=""
+                    onClick={[Function]}
+                    tabIndex={0}
+                    type="button"
                   >
                     <div
-                      className="c8"
+                      aria-hidden="true"
+                      style={
+                        Object {
+                          "flex": 1,
+                        }
+                      }
                     >
-                      Select me
+                      <div
+                        className="c9"
+                      >
+                        Select me
+                      </div>
                     </div>
+                  </button>
+                  <div
+                    className="c10"
+                  >
+                    Select me
                   </div>
-                </button>
-                <div
-                  className="c9"
-                >
-                  Select me
-                </div>
-              </span>
+                </span>
+              </div>
+              <svg
+                aria-hidden="true"
+                className="c11 c12"
+                focusable="false"
+                preserveAspectRatio="xMidYMid meet"
+                role="presentation"
+                size={5}
+                viewBox="0 0 24 24"
+              >
+                <polygon
+                  points="19.969 4 24 8.027 12 20 0 8.027 4.031 4 12 11.952"
+                />
+              </svg>
             </div>
-            <svg
-              aria-hidden="true"
-              className="c10 c11"
-              focusable="false"
-              preserveAspectRatio="xMidYMid meet"
-              role="presentation"
-              size={5}
-              viewBox="0 0 24 24"
-            >
-              <polygon
-                points="19.969 4 24 8.027 12 20 0 8.027 4.031 4 12 11.952"
-              />
-            </svg>
           </span>
         </label>
       </div>
@@ -905,7 +989,7 @@ Array [
       value="3"
     />
   </select>,
-  .c8 {
+  .c9 {
   padding-left: 8px;
   padding-right: 8px;
 }
@@ -922,7 +1006,7 @@ Array [
   align-items: center;
 }
 
-.c5 {
+.c6 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -937,7 +1021,7 @@ Array [
   justify-content: center;
 }
 
-.c9 {
+.c10 {
   position: absolute;
   height: 1px;
   width: 1px;
@@ -952,7 +1036,7 @@ Array [
   cursor: pointer;
 }
 
-.c11 {
+.c12 {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -975,7 +1059,7 @@ Array [
   line-height: 1.4285714285714286;
 }
 
-.c6 {
+.c7 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
   margin: 0;
@@ -989,7 +1073,7 @@ Array [
   display: inline-block;
 }
 
-.c7 {
+.c8 {
   font-family: inherit;
   font-size: 100%;
   line-height: 1.15;
@@ -1015,29 +1099,29 @@ Array [
   text-align: initial;
 }
 
-.c7,
-.c7[type='button'],
-.c7[type='reset'],
-.c7[type='submit'] {
+.c8,
+.c8[type='button'],
+.c8[type='reset'],
+.c8[type='submit'] {
   -webkit-appearance: button;
 }
 
-.c7::-moz-focus-inner,
-.c7[type='button']::-moz-focus-inner,
-.c7[type='reset']::-moz-focus-inner,
-.c7[type='submit']::-moz-focus-inner {
+.c8::-moz-focus-inner,
+.c8[type='button']::-moz-focus-inner,
+.c8[type='reset']::-moz-focus-inner,
+.c8[type='submit']::-moz-focus-inner {
   border-style: none;
   padding: 0;
 }
 
-.c7:-moz-focusring,
-.c7[type='button']:-moz-focusring,
-.c7[type='reset']:-moz-focusring,
-.c7[type='submit']:-moz-focusring {
+.c8:-moz-focusring,
+.c8[type='button']:-moz-focusring,
+.c8[type='reset']:-moz-focusring,
+.c8[type='submit']:-moz-focusring {
   outline: 1px dotted ButtonText;
 }
 
-.c10 {
+.c11 {
   -webkit-transform: translateY(-50%) rotate(0);
   -ms-transform: translateY(-50%) rotate(0);
   transform: translateY(-50%) rotate(0);
@@ -1058,6 +1142,26 @@ Array [
   position: relative;
   display: inline-block;
   width: initial;
+}
+
+.c5 {
+  height: 40px;
+  outline: none;
+  border: 1px solid #BCBCB6;
+  position: relative;
+  position: relative;
+}
+
+.c5:hover {
+  border-color: #4B4B46;
+}
+
+.c5:focus-within {
+  border-color: #0046FF;
+}
+
+.c5.focus-within {
+  border-color: #0046FF;
 }
 
 <div
@@ -1081,55 +1185,62 @@ Array [
             Open me 
             <div
               className="c5"
+              label="Open me"
+              onChange={[Function]}
+              placeholder="Select account"
             >
-              <span
+              <div
                 className="c6"
               >
-                <button
-                  absolutePositioning={true}
-                  aria-expanded="false"
-                  aria-haspopup="listbox"
+                <span
                   className="c7"
-                  form=""
-                  onClick={[Function]}
-                  tabIndex={0}
-                  type="button"
                 >
-                  <div
-                    aria-hidden="true"
-                    style={
-                      Object {
-                        "flex": 1,
-                      }
-                    }
+                  <button
+                    absolutePositioning={true}
+                    aria-expanded="false"
+                    aria-haspopup="listbox"
+                    className="c8"
+                    form=""
+                    onClick={[Function]}
+                    tabIndex={0}
+                    type="button"
                   >
                     <div
-                      className="c8"
+                      aria-hidden="true"
+                      style={
+                        Object {
+                          "flex": 1,
+                        }
+                      }
                     >
-                      Select account
+                      <div
+                        className="c9"
+                      >
+                        Select account
+                      </div>
                     </div>
+                  </button>
+                  <div
+                    className="c10"
+                  >
+                    Select account
                   </div>
-                </button>
-                <div
-                  className="c9"
-                >
-                  Select account
-                </div>
-              </span>
+                </span>
+              </div>
+              <svg
+                aria-hidden="true"
+                className="c11 c12"
+                focusable="false"
+                preserveAspectRatio="xMidYMid meet"
+                role="presentation"
+                size={5}
+                viewBox="0 0 24 24"
+              >
+                <polygon
+                  points="19.969 4 24 8.027 12 20 0 8.027 4.031 4 12 11.952"
+                />
+              </svg>
             </div>
-            <svg
-              aria-hidden="true"
-              className="c10 c11"
-              focusable="false"
-              preserveAspectRatio="xMidYMid meet"
-              role="presentation"
-              size={5}
-              viewBox="0 0 24 24"
-            >
-              <polygon
-                points="19.969 4 24 8.027 12 20 0 8.027 4.031 4 12 11.952"
-              />
-            </svg>
           </span>
         </label>
       </div>
@@ -1165,7 +1276,7 @@ Array [
       value="3"
     />
   </select>,
-  .c9 {
+  .c10 {
   padding-left: 8px;
   padding-right: 32px;
 }
@@ -1182,7 +1293,7 @@ Array [
   align-items: center;
 }
 
-.c5 {
+.c6 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -1197,7 +1308,7 @@ Array [
   justify-content: center;
 }
 
-.c10 {
+.c11 {
   position: absolute;
   height: 1px;
   width: 1px;
@@ -1212,7 +1323,7 @@ Array [
   cursor: pointer;
 }
 
-.c12 {
+.c13 {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -1235,7 +1346,7 @@ Array [
   line-height: 1.4285714285714286;
 }
 
-.c6 {
+.c7 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
   margin: 0;
@@ -1249,7 +1360,7 @@ Array [
   display: inline-block;
 }
 
-.c7 {
+.c8 {
   font-family: inherit;
   font-size: 100%;
   line-height: 1.15;
@@ -1275,29 +1386,29 @@ Array [
   text-align: initial;
 }
 
-.c7,
-.c7[type='button'],
-.c7[type='reset'],
-.c7[type='submit'] {
+.c8,
+.c8[type='button'],
+.c8[type='reset'],
+.c8[type='submit'] {
   -webkit-appearance: button;
 }
 
-.c7::-moz-focus-inner,
-.c7[type='button']::-moz-focus-inner,
-.c7[type='reset']::-moz-focus-inner,
-.c7[type='submit']::-moz-focus-inner {
+.c8::-moz-focus-inner,
+.c8[type='button']::-moz-focus-inner,
+.c8[type='reset']::-moz-focus-inner,
+.c8[type='submit']::-moz-focus-inner {
   border-style: none;
   padding: 0;
 }
 
-.c7:-moz-focusring,
-.c7[type='button']:-moz-focusring,
-.c7[type='reset']:-moz-focusring,
-.c7[type='submit']:-moz-focusring {
+.c8:-moz-focusring,
+.c8[type='button']:-moz-focusring,
+.c8[type='reset']:-moz-focusring,
+.c8[type='submit']:-moz-focusring {
   outline: 1px dotted ButtonText;
 }
 
-.c11 {
+.c12 {
   -webkit-transform: translateY(-50%) rotate(0);
   -ms-transform: translateY(-50%) rotate(0);
   transform: translateY(-50%) rotate(0);
@@ -1320,7 +1431,27 @@ Array [
   width: initial;
 }
 
-.c8 {
+.c5 {
+  height: 40px;
+  outline: none;
+  border: 1px solid #BCBCB6;
+  position: relative;
+  position: relative;
+}
+
+.c5:hover {
+  border-color: #4B4B46;
+}
+
+.c5:focus-within {
+  border-color: #0046FF;
+}
+
+.c5.focus-within {
+  border-color: #0046FF;
+}
+
+.c9 {
   -webkit-box-flex: 1;
   -webkit-flex-grow: 1;
   -ms-flex-positive: 1;
@@ -1352,55 +1483,62 @@ Array [
             User account 
             <div
               className="c5"
+              label="User account"
+              onChange={[Function]}
+              placeholder="Select account"
             >
-              <span
+              <div
                 className="c6"
               >
-                <button
-                  absolutePositioning={true}
-                  aria-expanded="false"
-                  aria-haspopup="listbox"
+                <span
                   className="c7"
-                  form=""
-                  onClick={[Function]}
-                  tabIndex={0}
-                  type="button"
                 >
-                  <div
-                    aria-hidden="true"
-                    style={
-                      Object {
-                        "flex": 1,
-                      }
-                    }
+                  <button
+                    absolutePositioning={true}
+                    aria-expanded="false"
+                    aria-haspopup="listbox"
+                    className="c8"
+                    form=""
+                    onClick={[Function]}
+                    tabIndex={0}
+                    type="button"
                   >
                     <div
-                      className="c8 c9"
+                      aria-hidden="true"
+                      style={
+                        Object {
+                          "flex": 1,
+                        }
+                      }
                     >
-                      Select account
+                      <div
+                        className="c9 c10"
+                      >
+                        Select account
+                      </div>
                     </div>
+                  </button>
+                  <div
+                    className="c11"
+                  >
+                    Select account
                   </div>
-                </button>
-                <div
-                  className="c10"
-                >
-                  Select account
-                </div>
-              </span>
+                </span>
+              </div>
+              <svg
+                aria-hidden="true"
+                className="c12 c13"
+                focusable="false"
+                preserveAspectRatio="xMidYMid meet"
+                role="presentation"
+                size={5}
+                viewBox="0 0 24 24"
+              >
+                <polygon
+                  points="19.969 4 24 8.027 12 20 0 8.027 4.031 4 12 11.952"
+                />
+              </svg>
             </div>
-            <svg
-              aria-hidden="true"
-              className="c11 c12"
-              focusable="false"
-              preserveAspectRatio="xMidYMid meet"
-              role="presentation"
-              size={5}
-              viewBox="0 0 24 24"
-            >
-              <polygon
-                points="19.969 4 24 8.027 12 20 0 8.027 4.031 4 12 11.952"
-              />
-            </svg>
           </span>
         </label>
       </div>
@@ -1436,7 +1574,7 @@ Array [
       value="3"
     />
   </select>,
-  .c9 {
+  .c10 {
   padding-left: 8px;
   padding-right: 32px;
 }
@@ -1453,7 +1591,7 @@ Array [
   align-items: center;
 }
 
-.c5 {
+.c6 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -1468,7 +1606,7 @@ Array [
   justify-content: center;
 }
 
-.c10 {
+.c11 {
   position: absolute;
   height: 1px;
   width: 1px;
@@ -1483,7 +1621,7 @@ Array [
   cursor: pointer;
 }
 
-.c12 {
+.c13 {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -1506,7 +1644,7 @@ Array [
   line-height: 1.4285714285714286;
 }
 
-.c6 {
+.c7 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
   margin: 0;
@@ -1520,7 +1658,7 @@ Array [
   display: inline-block;
 }
 
-.c7 {
+.c8 {
   font-family: inherit;
   font-size: 100%;
   line-height: 1.15;
@@ -1546,29 +1684,29 @@ Array [
   text-align: initial;
 }
 
-.c7,
-.c7[type='button'],
-.c7[type='reset'],
-.c7[type='submit'] {
+.c8,
+.c8[type='button'],
+.c8[type='reset'],
+.c8[type='submit'] {
   -webkit-appearance: button;
 }
 
-.c7::-moz-focus-inner,
-.c7[type='button']::-moz-focus-inner,
-.c7[type='reset']::-moz-focus-inner,
-.c7[type='submit']::-moz-focus-inner {
+.c8::-moz-focus-inner,
+.c8[type='button']::-moz-focus-inner,
+.c8[type='reset']::-moz-focus-inner,
+.c8[type='submit']::-moz-focus-inner {
   border-style: none;
   padding: 0;
 }
 
-.c7:-moz-focusring,
-.c7[type='button']:-moz-focusring,
-.c7[type='reset']:-moz-focusring,
-.c7[type='submit']:-moz-focusring {
+.c8:-moz-focusring,
+.c8[type='button']:-moz-focusring,
+.c8[type='reset']:-moz-focusring,
+.c8[type='submit']:-moz-focusring {
   outline: 1px dotted ButtonText;
 }
 
-.c11 {
+.c12 {
   -webkit-transform: translateY(-50%) rotate(0);
   -ms-transform: translateY(-50%) rotate(0);
   transform: translateY(-50%) rotate(0);
@@ -1591,7 +1729,27 @@ Array [
   width: initial;
 }
 
-.c8 {
+.c5 {
+  height: 40px;
+  outline: none;
+  border: 1px solid #BCBCB6;
+  position: relative;
+  position: relative;
+}
+
+.c5:hover {
+  border-color: #4B4B46;
+}
+
+.c5:focus-within {
+  border-color: #0046FF;
+}
+
+.c5.focus-within {
+  border-color: #0046FF;
+}
+
+.c9 {
   -webkit-box-flex: 1;
   -webkit-flex-grow: 1;
   -ms-flex-positive: 1;
@@ -1623,55 +1781,62 @@ Array [
             Select something 
             <div
               className="c5"
+              label="Select something"
+              onChange={[Function]}
+              placeholder="Select account"
             >
-              <span
+              <div
                 className="c6"
               >
-                <button
-                  absolutePositioning={true}
-                  aria-expanded="false"
-                  aria-haspopup="listbox"
+                <span
                   className="c7"
-                  form=""
-                  onClick={[Function]}
-                  tabIndex={0}
-                  type="button"
                 >
-                  <div
-                    aria-hidden="true"
-                    style={
-                      Object {
-                        "flex": 1,
-                      }
-                    }
+                  <button
+                    absolutePositioning={true}
+                    aria-expanded="false"
+                    aria-haspopup="listbox"
+                    className="c8"
+                    form=""
+                    onClick={[Function]}
+                    tabIndex={0}
+                    type="button"
                   >
                     <div
-                      className="c8 c9"
+                      aria-hidden="true"
+                      style={
+                        Object {
+                          "flex": 1,
+                        }
+                      }
                     >
-                      Select account
+                      <div
+                        className="c9 c10"
+                      >
+                        Select account
+                      </div>
                     </div>
+                  </button>
+                  <div
+                    className="c11"
+                  >
+                    Select account
                   </div>
-                </button>
-                <div
-                  className="c10"
-                >
-                  Select account
-                </div>
-              </span>
+                </span>
+              </div>
+              <svg
+                aria-hidden="true"
+                className="c12 c13"
+                focusable="false"
+                preserveAspectRatio="xMidYMid meet"
+                role="presentation"
+                size={5}
+                viewBox="0 0 24 24"
+              >
+                <polygon
+                  points="19.969 4 24 8.027 12 20 0 8.027 4.031 4 12 11.952"
+                />
+              </svg>
             </div>
-            <svg
-              aria-hidden="true"
-              className="c11 c12"
-              focusable="false"
-              preserveAspectRatio="xMidYMid meet"
-              role="presentation"
-              size={5}
-              viewBox="0 0 24 24"
-            >
-              <polygon
-                points="19.969 4 24 8.027 12 20 0 8.027 4.031 4 12 11.952"
-              />
-            </svg>
           </span>
         </label>
       </div>
@@ -1707,7 +1872,7 @@ Array [
       value="3"
     />
   </select>,
-  .c8 {
+  .c9 {
   padding-left: 8px;
   padding-right: 8px;
 }
@@ -1724,7 +1889,7 @@ Array [
   align-items: center;
 }
 
-.c5 {
+.c6 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -1739,7 +1904,7 @@ Array [
   justify-content: center;
 }
 
-.c9 {
+.c10 {
   position: absolute;
   height: 1px;
   width: 1px;
@@ -1754,7 +1919,7 @@ Array [
   cursor: pointer;
 }
 
-.c11 {
+.c12 {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -1777,7 +1942,7 @@ Array [
   line-height: 1.4285714285714286;
 }
 
-.c6 {
+.c7 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
   margin: 0;
@@ -1791,7 +1956,7 @@ Array [
   display: inline-block;
 }
 
-.c7 {
+.c8 {
   font-family: inherit;
   font-size: 100%;
   line-height: 1.15;
@@ -1817,29 +1982,29 @@ Array [
   text-align: initial;
 }
 
-.c7,
-.c7[type='button'],
-.c7[type='reset'],
-.c7[type='submit'] {
+.c8,
+.c8[type='button'],
+.c8[type='reset'],
+.c8[type='submit'] {
   -webkit-appearance: button;
 }
 
-.c7::-moz-focus-inner,
-.c7[type='button']::-moz-focus-inner,
-.c7[type='reset']::-moz-focus-inner,
-.c7[type='submit']::-moz-focus-inner {
+.c8::-moz-focus-inner,
+.c8[type='button']::-moz-focus-inner,
+.c8[type='reset']::-moz-focus-inner,
+.c8[type='submit']::-moz-focus-inner {
   border-style: none;
   padding: 0;
 }
 
-.c7:-moz-focusring,
-.c7[type='button']:-moz-focusring,
-.c7[type='reset']:-moz-focusring,
-.c7[type='submit']:-moz-focusring {
+.c8:-moz-focusring,
+.c8[type='button']:-moz-focusring,
+.c8[type='reset']:-moz-focusring,
+.c8[type='submit']:-moz-focusring {
   outline: 1px dotted ButtonText;
 }
 
-.c10 {
+.c11 {
   -webkit-transform: translateY(-50%) rotate(0);
   -ms-transform: translateY(-50%) rotate(0);
   transform: translateY(-50%) rotate(0);
@@ -1860,6 +2025,26 @@ Array [
   position: relative;
   display: inline-block;
   width: initial;
+}
+
+.c5 {
+  height: 40px;
+  outline: none;
+  border: 1px solid #BCBCB6;
+  position: relative;
+  position: relative;
+}
+
+.c5:hover {
+  border-color: #4B4B46;
+}
+
+.c5:focus-within {
+  border-color: #0046FF;
+}
+
+.c5.focus-within {
+  border-color: #0046FF;
 }
 
 <div
@@ -1883,55 +2068,62 @@ Array [
             User account 
             <div
               className="c5"
+              label="User account"
+              onChange={[Function]}
+              placeholder="Select account"
             >
-              <span
+              <div
                 className="c6"
               >
-                <button
-                  absolutePositioning={true}
-                  aria-expanded="false"
-                  aria-haspopup="listbox"
+                <span
                   className="c7"
-                  form=""
-                  onClick={[Function]}
-                  tabIndex={0}
-                  type="button"
                 >
-                  <div
-                    aria-hidden="true"
-                    style={
-                      Object {
-                        "flex": 1,
-                      }
-                    }
+                  <button
+                    absolutePositioning={true}
+                    aria-expanded="false"
+                    aria-haspopup="listbox"
+                    className="c8"
+                    form=""
+                    onClick={[Function]}
+                    tabIndex={0}
+                    type="button"
                   >
                     <div
-                      className="c8"
+                      aria-hidden="true"
+                      style={
+                        Object {
+                          "flex": 1,
+                        }
+                      }
                     >
-                      Select account
+                      <div
+                        className="c9"
+                      >
+                        Select account
+                      </div>
                     </div>
+                  </button>
+                  <div
+                    className="c10"
+                  >
+                    Select account
                   </div>
-                </button>
-                <div
-                  className="c9"
-                >
-                  Select account
-                </div>
-              </span>
+                </span>
+              </div>
+              <svg
+                aria-hidden="true"
+                className="c11 c12"
+                focusable="false"
+                preserveAspectRatio="xMidYMid meet"
+                role="presentation"
+                size={5}
+                viewBox="0 0 24 24"
+              >
+                <polygon
+                  points="19.969 4 24 8.027 12 20 0 8.027 4.031 4 12 11.952"
+                />
+              </svg>
             </div>
-            <svg
-              aria-hidden="true"
-              className="c10 c11"
-              focusable="false"
-              preserveAspectRatio="xMidYMid meet"
-              role="presentation"
-              size={5}
-              viewBox="0 0 24 24"
-            >
-              <polygon
-                points="19.969 4 24 8.027 12 20 0 8.027 4.031 4 12 11.952"
-              />
-            </svg>
           </span>
         </label>
       </div>
@@ -1941,7 +2133,7 @@ Array [
 `;
 
 exports[`Storyshots Molecules | Input / Select Default variations 1`] = `
-.c12 {
+.c13 {
   padding-left: 8px;
   padding-right: 8px;
 }
@@ -1958,7 +2150,7 @@ exports[`Storyshots Molecules | Input / Select Default variations 1`] = `
   align-items: center;
 }
 
-.c9 {
+.c10 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -1973,7 +2165,7 @@ exports[`Storyshots Molecules | Input / Select Default variations 1`] = `
   justify-content: center;
 }
 
-.c13 {
+.c14 {
   position: absolute;
   height: 1px;
   width: 1px;
@@ -1988,7 +2180,7 @@ exports[`Storyshots Molecules | Input / Select Default variations 1`] = `
   cursor: pointer;
 }
 
-.c15 {
+.c16 {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -2011,7 +2203,7 @@ exports[`Storyshots Molecules | Input / Select Default variations 1`] = `
   line-height: 1.4285714285714286;
 }
 
-.c10 {
+.c11 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
   margin: 0;
@@ -2020,7 +2212,7 @@ exports[`Storyshots Molecules | Input / Select Default variations 1`] = `
   line-height: 1.4285714285714286;
 }
 
-.c17 {
+.c19 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #FF1900;
   margin: 0;
@@ -2029,7 +2221,7 @@ exports[`Storyshots Molecules | Input / Select Default variations 1`] = `
   line-height: 1.3333333333333333;
 }
 
-.c18 {
+.c21 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #6E6E69;
   margin: 0;
@@ -2043,7 +2235,7 @@ exports[`Storyshots Molecules | Input / Select Default variations 1`] = `
   display: inline-block;
 }
 
-.c16 {
+.c18 {
   font-family: inherit;
   font-size: 100%;
   line-height: 1.15;
@@ -2069,29 +2261,29 @@ exports[`Storyshots Molecules | Input / Select Default variations 1`] = `
   text-align: initial;
 }
 
-.c16,
-.c16[type='button'],
-.c16[type='reset'],
-.c16[type='submit'] {
+.c18,
+.c18[type='button'],
+.c18[type='reset'],
+.c18[type='submit'] {
   -webkit-appearance: button;
 }
 
-.c16::-moz-focus-inner,
-.c16[type='button']::-moz-focus-inner,
-.c16[type='reset']::-moz-focus-inner,
-.c16[type='submit']::-moz-focus-inner {
+.c18::-moz-focus-inner,
+.c18[type='button']::-moz-focus-inner,
+.c18[type='reset']::-moz-focus-inner,
+.c18[type='submit']::-moz-focus-inner {
   border-style: none;
   padding: 0;
 }
 
-.c16:-moz-focusring,
-.c16[type='button']:-moz-focusring,
-.c16[type='reset']:-moz-focusring,
-.c16[type='submit']:-moz-focusring {
+.c18:-moz-focusring,
+.c18[type='button']:-moz-focusring,
+.c18[type='reset']:-moz-focusring,
+.c18[type='submit']:-moz-focusring {
   outline: 1px dotted ButtonText;
 }
 
-.c11 {
+.c12 {
   font-family: inherit;
   font-size: 100%;
   line-height: 1.15;
@@ -2117,29 +2309,29 @@ exports[`Storyshots Molecules | Input / Select Default variations 1`] = `
   text-align: initial;
 }
 
-.c11,
-.c11[type='button'],
-.c11[type='reset'],
-.c11[type='submit'] {
+.c12,
+.c12[type='button'],
+.c12[type='reset'],
+.c12[type='submit'] {
   -webkit-appearance: button;
 }
 
-.c11::-moz-focus-inner,
-.c11[type='button']::-moz-focus-inner,
-.c11[type='reset']::-moz-focus-inner,
-.c11[type='submit']::-moz-focus-inner {
+.c12::-moz-focus-inner,
+.c12[type='button']::-moz-focus-inner,
+.c12[type='reset']::-moz-focus-inner,
+.c12[type='submit']::-moz-focus-inner {
   border-style: none;
   padding: 0;
 }
 
-.c11:-moz-focusring,
-.c11[type='button']:-moz-focusring,
-.c11[type='reset']:-moz-focusring,
-.c11[type='submit']:-moz-focusring {
+.c12:-moz-focusring,
+.c12[type='button']:-moz-focusring,
+.c12[type='reset']:-moz-focusring,
+.c12[type='submit']:-moz-focusring {
   outline: 1px dotted ButtonText;
 }
 
-.c14 {
+.c15 {
   -webkit-transform: translateY(-50%) rotate(0);
   -ms-transform: translateY(-50%) rotate(0);
   transform: translateY(-50%) rotate(0);
@@ -2160,6 +2352,82 @@ exports[`Storyshots Molecules | Input / Select Default variations 1`] = `
   position: relative;
   display: inline-block;
   width: initial;
+}
+
+.c20 {
+  height: 40px;
+  outline: none;
+  border: 1px solid #BCBCB6;
+  position: relative;
+  position: relative;
+}
+
+.c20:hover {
+  border-color: #4B4B46;
+}
+
+.c20:focus-within {
+  border-color: #0046FF;
+}
+
+.c20.focus-within {
+  border-color: #0046FF;
+}
+
+.c9 {
+  height: 40px;
+  outline: none;
+  border: 1px solid #BCBCB6;
+  position: relative;
+  position: relative;
+}
+
+.c9:focus-within {
+  border-color: #0046FF;
+}
+
+.c9.focus-within {
+  border-color: #0046FF;
+}
+
+.c17 {
+  height: 40px;
+  outline: none;
+  border: 1px solid #FF1900;
+  position: relative;
+  position: relative;
+}
+
+.c17:hover {
+  border-color: #4B4B46;
+}
+
+.c17:focus-within {
+  border-color: #0046FF;
+}
+
+.c17.focus-within {
+  border-color: #0046FF;
+}
+
+.c22 {
+  height: 40px;
+  outline: none;
+  border: 1px solid #00D200;
+  position: relative;
+  position: relative;
+}
+
+.c22:hover {
+  border-color: #4B4B46;
+}
+
+.c22:focus-within {
+  border-color: #0046FF;
+}
+
+.c22.focus-within {
+  border-color: #0046FF;
 }
 
 .c3 {
@@ -2280,56 +2548,63 @@ exports[`Storyshots Molecules | Input / Select Default variations 1`] = `
                 User account 
                 <div
                   className="c9"
+                  disabled={true}
+                  label="User account"
+                  placeholder="Select account"
                 >
-                  <span
+                  <div
                     className="c10"
                   >
-                    <button
-                      absolutePositioning={true}
-                      aria-expanded="false"
-                      aria-haspopup="listbox"
+                    <span
                       className="c11"
-                      disabled={true}
-                      form=""
-                      onClick={[Function]}
-                      tabIndex={0}
-                      type="button"
                     >
-                      <div
-                        aria-hidden="true"
-                        style={
-                          Object {
-                            "flex": 1,
-                          }
-                        }
+                      <button
+                        absolutePositioning={true}
+                        aria-expanded="false"
+                        aria-haspopup="listbox"
+                        className="c12"
+                        disabled={true}
+                        form=""
+                        onClick={[Function]}
+                        tabIndex={0}
+                        type="button"
                       >
                         <div
-                          className="c12"
+                          aria-hidden="true"
+                          style={
+                            Object {
+                              "flex": 1,
+                            }
+                          }
                         >
-                          Select account
+                          <div
+                            className="c13"
+                          >
+                            Select account
+                          </div>
                         </div>
+                      </button>
+                      <div
+                        className="c14"
+                      >
+                        Select account
                       </div>
-                    </button>
-                    <div
-                      className="c13"
-                    >
-                      Select account
-                    </div>
-                  </span>
+                    </span>
+                  </div>
+                  <svg
+                    aria-hidden="true"
+                    className="c15 c16"
+                    focusable="false"
+                    preserveAspectRatio="xMidYMid meet"
+                    role="presentation"
+                    size={5}
+                    viewBox="0 0 24 24"
+                  >
+                    <polygon
+                      points="19.969 4 24 8.027 12 20 0 8.027 4.031 4 12 11.952"
+                    />
+                  </svg>
                 </div>
-                <svg
-                  aria-hidden="true"
-                  className="c14 c15"
-                  focusable="false"
-                  preserveAspectRatio="xMidYMid meet"
-                  role="presentation"
-                  size={5}
-                  viewBox="0 0 24 24"
-                >
-                  <polygon
-                    points="19.969 4 24 8.027 12 20 0 8.027 4.031 4 12 11.952"
-                  />
-                </svg>
               </span>
             </label>
           </div>
@@ -2388,64 +2663,70 @@ exports[`Storyshots Molecules | Input / Select Default variations 1`] = `
               >
                 User account 
                 <div
-                  className="c9"
+                  className="c17"
+                  label="User account"
+                  placeholder="Select account"
                 >
-                  <span
+                  <div
                     className="c10"
                   >
-                    <button
-                      absolutePositioning={true}
-                      aria-expanded="false"
-                      aria-haspopup="listbox"
-                      className="c16"
-                      form=""
-                      onClick={[Function]}
-                      tabIndex={0}
-                      type="button"
+                    <span
+                      className="c11"
                     >
-                      <div
-                        aria-hidden="true"
-                        style={
-                          Object {
-                            "flex": 1,
-                          }
-                        }
+                      <button
+                        absolutePositioning={true}
+                        aria-expanded="false"
+                        aria-haspopup="listbox"
+                        className="c18"
+                        form=""
+                        onClick={[Function]}
+                        tabIndex={0}
+                        type="button"
                       >
                         <div
-                          className="c12"
+                          aria-hidden="true"
+                          style={
+                            Object {
+                              "flex": 1,
+                            }
+                          }
                         >
-                          Select account
+                          <div
+                            className="c13"
+                          >
+                            Select account
+                          </div>
                         </div>
+                      </button>
+                      <div
+                        className="c14"
+                      >
+                        Select account
                       </div>
-                    </button>
-                    <div
-                      className="c13"
-                    >
-                      Select account
-                    </div>
-                  </span>
+                    </span>
+                  </div>
+                  <svg
+                    aria-hidden="true"
+                    className="c15 c16"
+                    focusable="false"
+                    preserveAspectRatio="xMidYMid meet"
+                    role="presentation"
+                    size={5}
+                    viewBox="0 0 24 24"
+                  >
+                    <polygon
+                      points="19.969 4 24 8.027 12 20 0 8.027 4.031 4 12 11.952"
+                    />
+                  </svg>
                 </div>
-                <svg
-                  aria-hidden="true"
-                  className="c14 c15"
-                  focusable="false"
-                  preserveAspectRatio="xMidYMid meet"
-                  role="presentation"
-                  size={5}
-                  viewBox="0 0 24 24"
-                >
-                  <polygon
-                    points="19.969 4 24 8.027 12 20 0 8.027 4.031 4 12 11.952"
-                  />
-                </svg>
               </span>
             </label>
             <div>
               <span
-                className="c17"
+                className="c19"
               >
                 <div
-                  className="c13"
+                  className="c14"
                 >
                   Error: 
                 </div>
@@ -2508,61 +2789,67 @@ exports[`Storyshots Molecules | Input / Select Default variations 1`] = `
               >
                 User account 
                 <div
-                  className="c9"
+                  className="c20"
+                  label="User account"
+                  placeholder="Select account"
                 >
-                  <span
+                  <div
                     className="c10"
                   >
-                    <button
-                      absolutePositioning={true}
-                      aria-expanded="false"
-                      aria-haspopup="listbox"
-                      className="c16"
-                      form=""
-                      onClick={[Function]}
-                      tabIndex={0}
-                      type="button"
+                    <span
+                      className="c11"
                     >
-                      <div
-                        aria-hidden="true"
-                        style={
-                          Object {
-                            "flex": 1,
-                          }
-                        }
+                      <button
+                        absolutePositioning={true}
+                        aria-expanded="false"
+                        aria-haspopup="listbox"
+                        className="c18"
+                        form=""
+                        onClick={[Function]}
+                        tabIndex={0}
+                        type="button"
                       >
                         <div
-                          className="c12"
+                          aria-hidden="true"
+                          style={
+                            Object {
+                              "flex": 1,
+                            }
+                          }
                         >
-                          Select account
+                          <div
+                            className="c13"
+                          >
+                            Select account
+                          </div>
                         </div>
+                      </button>
+                      <div
+                        className="c14"
+                      >
+                        Select account
                       </div>
-                    </button>
-                    <div
-                      className="c13"
-                    >
-                      Select account
-                    </div>
-                  </span>
+                    </span>
+                  </div>
+                  <svg
+                    aria-hidden="true"
+                    className="c15 c16"
+                    focusable="false"
+                    preserveAspectRatio="xMidYMid meet"
+                    role="presentation"
+                    size={5}
+                    viewBox="0 0 24 24"
+                  >
+                    <polygon
+                      points="19.969 4 24 8.027 12 20 0 8.027 4.031 4 12 11.952"
+                    />
+                  </svg>
                 </div>
-                <svg
-                  aria-hidden="true"
-                  className="c14 c15"
-                  focusable="false"
-                  preserveAspectRatio="xMidYMid meet"
-                  role="presentation"
-                  size={5}
-                  viewBox="0 0 24 24"
-                >
-                  <polygon
-                    points="19.969 4 24 8.027 12 20 0 8.027 4.031 4 12 11.952"
-                  />
-                </svg>
               </span>
             </label>
             <div>
               <span
-                className="c18"
+                className="c21"
               >
                 Some extra info
               </span>
@@ -2623,56 +2910,62 @@ exports[`Storyshots Molecules | Input / Select Default variations 1`] = `
               >
                 User account 
                 <div
-                  className="c9"
+                  className="c22"
+                  label="User account"
+                  placeholder="Select account"
                 >
-                  <span
+                  <div
                     className="c10"
                   >
-                    <button
-                      absolutePositioning={true}
-                      aria-expanded="false"
-                      aria-haspopup="listbox"
-                      className="c16"
-                      form=""
-                      onClick={[Function]}
-                      tabIndex={0}
-                      type="button"
+                    <span
+                      className="c11"
                     >
-                      <div
-                        aria-hidden="true"
-                        style={
-                          Object {
-                            "flex": 1,
-                          }
-                        }
+                      <button
+                        absolutePositioning={true}
+                        aria-expanded="false"
+                        aria-haspopup="listbox"
+                        className="c18"
+                        form=""
+                        onClick={[Function]}
+                        tabIndex={0}
+                        type="button"
                       >
                         <div
-                          className="c12"
+                          aria-hidden="true"
+                          style={
+                            Object {
+                              "flex": 1,
+                            }
+                          }
                         >
-                          Select account
+                          <div
+                            className="c13"
+                          >
+                            Select account
+                          </div>
                         </div>
+                      </button>
+                      <div
+                        className="c14"
+                      >
+                        Select account
                       </div>
-                    </button>
-                    <div
-                      className="c13"
-                    >
-                      Select account
-                    </div>
-                  </span>
+                    </span>
+                  </div>
+                  <svg
+                    aria-hidden="true"
+                    className="c15 c16"
+                    focusable="false"
+                    preserveAspectRatio="xMidYMid meet"
+                    role="presentation"
+                    size={5}
+                    viewBox="0 0 24 24"
+                  >
+                    <polygon
+                      points="19.969 4 24 8.027 12 20 0 8.027 4.031 4 12 11.952"
+                    />
+                  </svg>
                 </div>
-                <svg
-                  aria-hidden="true"
-                  className="c14 c15"
-                  focusable="false"
-                  preserveAspectRatio="xMidYMid meet"
-                  role="presentation"
-                  size={5}
-                  viewBox="0 0 24 24"
-                >
-                  <polygon
-                    points="19.969 4 24 8.027 12 20 0 8.027 4.031 4 12 11.952"
-                  />
-                </svg>
               </span>
             </label>
           </div>
@@ -2710,7 +3003,7 @@ Array [
       value="3"
     />
   </select>,
-  .c8 {
+  .c9 {
   padding-left: 8px;
   padding-right: 8px;
 }
@@ -2727,7 +3020,7 @@ Array [
   align-items: center;
 }
 
-.c5 {
+.c6 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -2742,7 +3035,7 @@ Array [
   justify-content: center;
 }
 
-.c9 {
+.c10 {
   position: absolute;
   height: 1px;
   width: 1px;
@@ -2757,7 +3050,7 @@ Array [
   cursor: pointer;
 }
 
-.c11 {
+.c12 {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -2780,7 +3073,7 @@ Array [
   line-height: 1.4285714285714286;
 }
 
-.c6 {
+.c7 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
   margin: 0;
@@ -2794,7 +3087,7 @@ Array [
   display: inline-block;
 }
 
-.c7 {
+.c8 {
   font-family: inherit;
   font-size: 100%;
   line-height: 1.15;
@@ -2820,29 +3113,29 @@ Array [
   text-align: initial;
 }
 
-.c7,
-.c7[type='button'],
-.c7[type='reset'],
-.c7[type='submit'] {
+.c8,
+.c8[type='button'],
+.c8[type='reset'],
+.c8[type='submit'] {
   -webkit-appearance: button;
 }
 
-.c7::-moz-focus-inner,
-.c7[type='button']::-moz-focus-inner,
-.c7[type='reset']::-moz-focus-inner,
-.c7[type='submit']::-moz-focus-inner {
+.c8::-moz-focus-inner,
+.c8[type='button']::-moz-focus-inner,
+.c8[type='reset']::-moz-focus-inner,
+.c8[type='submit']::-moz-focus-inner {
   border-style: none;
   padding: 0;
 }
 
-.c7:-moz-focusring,
-.c7[type='button']:-moz-focusring,
-.c7[type='reset']:-moz-focusring,
-.c7[type='submit']:-moz-focusring {
+.c8:-moz-focusring,
+.c8[type='button']:-moz-focusring,
+.c8[type='reset']:-moz-focusring,
+.c8[type='submit']:-moz-focusring {
   outline: 1px dotted ButtonText;
 }
 
-.c10 {
+.c11 {
   -webkit-transform: translateY(-50%) rotate(0);
   -ms-transform: translateY(-50%) rotate(0);
   transform: translateY(-50%) rotate(0);
@@ -2863,6 +3156,26 @@ Array [
   position: relative;
   display: inline-block;
   width: 100%;
+}
+
+.c5 {
+  height: 40px;
+  outline: none;
+  border: 1px solid #BCBCB6;
+  position: relative;
+  position: relative;
+}
+
+.c5:hover {
+  border-color: #4B4B46;
+}
+
+.c5:focus-within {
+  border-color: #0046FF;
+}
+
+.c5.focus-within {
+  border-color: #0046FF;
 }
 
 <div
@@ -2887,55 +3200,62 @@ Array [
             User account 
             <div
               className="c5"
+              label="User account"
+              onChange={[Function]}
+              placeholder="Select account"
             >
-              <span
+              <div
                 className="c6"
               >
-                <button
-                  absolutePositioning={true}
-                  aria-expanded="false"
-                  aria-haspopup="listbox"
+                <span
                   className="c7"
-                  form=""
-                  onClick={[Function]}
-                  tabIndex={0}
-                  type="button"
                 >
-                  <div
-                    aria-hidden="true"
-                    style={
-                      Object {
-                        "flex": 1,
-                      }
-                    }
+                  <button
+                    absolutePositioning={true}
+                    aria-expanded="false"
+                    aria-haspopup="listbox"
+                    className="c8"
+                    form=""
+                    onClick={[Function]}
+                    tabIndex={0}
+                    type="button"
                   >
                     <div
-                      className="c8"
+                      aria-hidden="true"
+                      style={
+                        Object {
+                          "flex": 1,
+                        }
+                      }
                     >
-                      Select account
+                      <div
+                        className="c9"
+                      >
+                        Select account
+                      </div>
                     </div>
+                  </button>
+                  <div
+                    className="c10"
+                  >
+                    Select account
                   </div>
-                </button>
-                <div
-                  className="c9"
-                >
-                  Select account
-                </div>
-              </span>
+                </span>
+              </div>
+              <svg
+                aria-hidden="true"
+                className="c11 c12"
+                focusable="false"
+                preserveAspectRatio="xMidYMid meet"
+                role="presentation"
+                size={5}
+                viewBox="0 0 24 24"
+              >
+                <polygon
+                  points="19.969 4 24 8.027 12 20 0 8.027 4.031 4 12 11.952"
+                />
+              </svg>
             </div>
-            <svg
-              aria-hidden="true"
-              className="c10 c11"
-              focusable="false"
-              preserveAspectRatio="xMidYMid meet"
-              role="presentation"
-              size={5}
-              viewBox="0 0 24 24"
-            >
-              <polygon
-                points="19.969 4 24 8.027 12 20 0 8.027 4.031 4 12 11.952"
-              />
-            </svg>
           </span>
         </label>
       </div>
@@ -3250,7 +3570,7 @@ Array [
 `;
 
 exports[`Storyshots Molecules | Input / Select Size = \`s\` variations 1`] = `
-.c12 {
+.c13 {
   padding-left: 8px;
   padding-right: 8px;
 }
@@ -3267,7 +3587,7 @@ exports[`Storyshots Molecules | Input / Select Size = \`s\` variations 1`] = `
   align-items: center;
 }
 
-.c9 {
+.c10 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -3282,7 +3602,7 @@ exports[`Storyshots Molecules | Input / Select Size = \`s\` variations 1`] = `
   justify-content: center;
 }
 
-.c13 {
+.c14 {
   position: absolute;
   height: 1px;
   width: 1px;
@@ -3297,7 +3617,7 @@ exports[`Storyshots Molecules | Input / Select Size = \`s\` variations 1`] = `
   cursor: pointer;
 }
 
-.c15 {
+.c16 {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -3320,7 +3640,7 @@ exports[`Storyshots Molecules | Input / Select Size = \`s\` variations 1`] = `
   line-height: 1.4285714285714286;
 }
 
-.c10 {
+.c11 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
   margin: 0;
@@ -3329,7 +3649,7 @@ exports[`Storyshots Molecules | Input / Select Size = \`s\` variations 1`] = `
   line-height: 1.4285714285714286;
 }
 
-.c17 {
+.c19 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #FF1900;
   margin: 0;
@@ -3338,7 +3658,7 @@ exports[`Storyshots Molecules | Input / Select Size = \`s\` variations 1`] = `
   line-height: 1.3333333333333333;
 }
 
-.c18 {
+.c21 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #6E6E69;
   margin: 0;
@@ -3352,7 +3672,7 @@ exports[`Storyshots Molecules | Input / Select Size = \`s\` variations 1`] = `
   display: inline-block;
 }
 
-.c16 {
+.c18 {
   font-family: inherit;
   font-size: 100%;
   line-height: 1.15;
@@ -3378,29 +3698,29 @@ exports[`Storyshots Molecules | Input / Select Size = \`s\` variations 1`] = `
   text-align: initial;
 }
 
-.c16,
-.c16[type='button'],
-.c16[type='reset'],
-.c16[type='submit'] {
+.c18,
+.c18[type='button'],
+.c18[type='reset'],
+.c18[type='submit'] {
   -webkit-appearance: button;
 }
 
-.c16::-moz-focus-inner,
-.c16[type='button']::-moz-focus-inner,
-.c16[type='reset']::-moz-focus-inner,
-.c16[type='submit']::-moz-focus-inner {
+.c18::-moz-focus-inner,
+.c18[type='button']::-moz-focus-inner,
+.c18[type='reset']::-moz-focus-inner,
+.c18[type='submit']::-moz-focus-inner {
   border-style: none;
   padding: 0;
 }
 
-.c16:-moz-focusring,
-.c16[type='button']:-moz-focusring,
-.c16[type='reset']:-moz-focusring,
-.c16[type='submit']:-moz-focusring {
+.c18:-moz-focusring,
+.c18[type='button']:-moz-focusring,
+.c18[type='reset']:-moz-focusring,
+.c18[type='submit']:-moz-focusring {
   outline: 1px dotted ButtonText;
 }
 
-.c11 {
+.c12 {
   font-family: inherit;
   font-size: 100%;
   line-height: 1.15;
@@ -3426,29 +3746,29 @@ exports[`Storyshots Molecules | Input / Select Size = \`s\` variations 1`] = `
   text-align: initial;
 }
 
-.c11,
-.c11[type='button'],
-.c11[type='reset'],
-.c11[type='submit'] {
+.c12,
+.c12[type='button'],
+.c12[type='reset'],
+.c12[type='submit'] {
   -webkit-appearance: button;
 }
 
-.c11::-moz-focus-inner,
-.c11[type='button']::-moz-focus-inner,
-.c11[type='reset']::-moz-focus-inner,
-.c11[type='submit']::-moz-focus-inner {
+.c12::-moz-focus-inner,
+.c12[type='button']::-moz-focus-inner,
+.c12[type='reset']::-moz-focus-inner,
+.c12[type='submit']::-moz-focus-inner {
   border-style: none;
   padding: 0;
 }
 
-.c11:-moz-focusring,
-.c11[type='button']:-moz-focusring,
-.c11[type='reset']:-moz-focusring,
-.c11[type='submit']:-moz-focusring {
+.c12:-moz-focusring,
+.c12[type='button']:-moz-focusring,
+.c12[type='reset']:-moz-focusring,
+.c12[type='submit']:-moz-focusring {
   outline: 1px dotted ButtonText;
 }
 
-.c14 {
+.c15 {
   -webkit-transform: translateY(-50%) rotate(0);
   -ms-transform: translateY(-50%) rotate(0);
   transform: translateY(-50%) rotate(0);
@@ -3469,6 +3789,82 @@ exports[`Storyshots Molecules | Input / Select Size = \`s\` variations 1`] = `
   position: relative;
   display: inline-block;
   width: initial;
+}
+
+.c9 {
+  height: 32px;
+  outline: none;
+  border: 1px solid #BCBCB6;
+  position: relative;
+  position: relative;
+}
+
+.c9:focus-within {
+  border-color: #0046FF;
+}
+
+.c9.focus-within {
+  border-color: #0046FF;
+}
+
+.c17 {
+  height: 32px;
+  outline: none;
+  border: 1px solid #FF1900;
+  position: relative;
+  position: relative;
+}
+
+.c17:hover {
+  border-color: #4B4B46;
+}
+
+.c17:focus-within {
+  border-color: #0046FF;
+}
+
+.c17.focus-within {
+  border-color: #0046FF;
+}
+
+.c20 {
+  height: 32px;
+  outline: none;
+  border: 1px solid #BCBCB6;
+  position: relative;
+  position: relative;
+}
+
+.c20:hover {
+  border-color: #4B4B46;
+}
+
+.c20:focus-within {
+  border-color: #0046FF;
+}
+
+.c20.focus-within {
+  border-color: #0046FF;
+}
+
+.c22 {
+  height: 32px;
+  outline: none;
+  border: 1px solid #00D200;
+  position: relative;
+  position: relative;
+}
+
+.c22:hover {
+  border-color: #4B4B46;
+}
+
+.c22:focus-within {
+  border-color: #0046FF;
+}
+
+.c22.focus-within {
+  border-color: #0046FF;
 }
 
 .c3 {
@@ -3589,56 +3985,64 @@ exports[`Storyshots Molecules | Input / Select Size = \`s\` variations 1`] = `
                 User account 
                 <div
                   className="c9"
+                  disabled={true}
+                  label="User account"
+                  placeholder="Select account"
+                  size="s"
                 >
-                  <span
+                  <div
                     className="c10"
                   >
-                    <button
-                      absolutePositioning={true}
-                      aria-expanded="false"
-                      aria-haspopup="listbox"
+                    <span
                       className="c11"
-                      disabled={true}
-                      form=""
-                      onClick={[Function]}
-                      tabIndex={0}
-                      type="button"
                     >
-                      <div
-                        aria-hidden="true"
-                        style={
-                          Object {
-                            "flex": 1,
-                          }
-                        }
+                      <button
+                        absolutePositioning={true}
+                        aria-expanded="false"
+                        aria-haspopup="listbox"
+                        className="c12"
+                        disabled={true}
+                        form=""
+                        onClick={[Function]}
+                        tabIndex={0}
+                        type="button"
                       >
                         <div
-                          className="c12"
+                          aria-hidden="true"
+                          style={
+                            Object {
+                              "flex": 1,
+                            }
+                          }
                         >
-                          Select account
+                          <div
+                            className="c13"
+                          >
+                            Select account
+                          </div>
                         </div>
+                      </button>
+                      <div
+                        className="c14"
+                      >
+                        Select account
                       </div>
-                    </button>
-                    <div
-                      className="c13"
-                    >
-                      Select account
-                    </div>
-                  </span>
+                    </span>
+                  </div>
+                  <svg
+                    aria-hidden="true"
+                    className="c15 c16"
+                    focusable="false"
+                    preserveAspectRatio="xMidYMid meet"
+                    role="presentation"
+                    size={5}
+                    viewBox="0 0 24 24"
+                  >
+                    <polygon
+                      points="19.969 4 24 8.027 12 20 0 8.027 4.031 4 12 11.952"
+                    />
+                  </svg>
                 </div>
-                <svg
-                  aria-hidden="true"
-                  className="c14 c15"
-                  focusable="false"
-                  preserveAspectRatio="xMidYMid meet"
-                  role="presentation"
-                  size={5}
-                  viewBox="0 0 24 24"
-                >
-                  <polygon
-                    points="19.969 4 24 8.027 12 20 0 8.027 4.031 4 12 11.952"
-                  />
-                </svg>
               </span>
             </label>
           </div>
@@ -3697,64 +4101,71 @@ exports[`Storyshots Molecules | Input / Select Size = \`s\` variations 1`] = `
               >
                 User account 
                 <div
-                  className="c9"
+                  className="c17"
+                  label="User account"
+                  placeholder="Select account"
+                  size="s"
                 >
-                  <span
+                  <div
                     className="c10"
                   >
-                    <button
-                      absolutePositioning={true}
-                      aria-expanded="false"
-                      aria-haspopup="listbox"
-                      className="c16"
-                      form=""
-                      onClick={[Function]}
-                      tabIndex={0}
-                      type="button"
+                    <span
+                      className="c11"
                     >
-                      <div
-                        aria-hidden="true"
-                        style={
-                          Object {
-                            "flex": 1,
-                          }
-                        }
+                      <button
+                        absolutePositioning={true}
+                        aria-expanded="false"
+                        aria-haspopup="listbox"
+                        className="c18"
+                        form=""
+                        onClick={[Function]}
+                        tabIndex={0}
+                        type="button"
                       >
                         <div
-                          className="c12"
+                          aria-hidden="true"
+                          style={
+                            Object {
+                              "flex": 1,
+                            }
+                          }
                         >
-                          Select account
+                          <div
+                            className="c13"
+                          >
+                            Select account
+                          </div>
                         </div>
+                      </button>
+                      <div
+                        className="c14"
+                      >
+                        Select account
                       </div>
-                    </button>
-                    <div
-                      className="c13"
-                    >
-                      Select account
-                    </div>
-                  </span>
+                    </span>
+                  </div>
+                  <svg
+                    aria-hidden="true"
+                    className="c15 c16"
+                    focusable="false"
+                    preserveAspectRatio="xMidYMid meet"
+                    role="presentation"
+                    size={5}
+                    viewBox="0 0 24 24"
+                  >
+                    <polygon
+                      points="19.969 4 24 8.027 12 20 0 8.027 4.031 4 12 11.952"
+                    />
+                  </svg>
                 </div>
-                <svg
-                  aria-hidden="true"
-                  className="c14 c15"
-                  focusable="false"
-                  preserveAspectRatio="xMidYMid meet"
-                  role="presentation"
-                  size={5}
-                  viewBox="0 0 24 24"
-                >
-                  <polygon
-                    points="19.969 4 24 8.027 12 20 0 8.027 4.031 4 12 11.952"
-                  />
-                </svg>
               </span>
             </label>
             <div>
               <span
-                className="c17"
+                className="c19"
               >
                 <div
-                  className="c13"
+                  className="c14"
                 >
                   Error: 
                 </div>
@@ -3817,61 +4228,68 @@ exports[`Storyshots Molecules | Input / Select Size = \`s\` variations 1`] = `
               >
                 User account 
                 <div
-                  className="c9"
+                  className="c20"
+                  label="User account"
+                  placeholder="Select account"
+                  size="s"
                 >
-                  <span
+                  <div
                     className="c10"
                   >
-                    <button
-                      absolutePositioning={true}
-                      aria-expanded="false"
-                      aria-haspopup="listbox"
-                      className="c16"
-                      form=""
-                      onClick={[Function]}
-                      tabIndex={0}
-                      type="button"
+                    <span
+                      className="c11"
                     >
-                      <div
-                        aria-hidden="true"
-                        style={
-                          Object {
-                            "flex": 1,
-                          }
-                        }
+                      <button
+                        absolutePositioning={true}
+                        aria-expanded="false"
+                        aria-haspopup="listbox"
+                        className="c18"
+                        form=""
+                        onClick={[Function]}
+                        tabIndex={0}
+                        type="button"
                       >
                         <div
-                          className="c12"
+                          aria-hidden="true"
+                          style={
+                            Object {
+                              "flex": 1,
+                            }
+                          }
                         >
-                          Select account
+                          <div
+                            className="c13"
+                          >
+                            Select account
+                          </div>
                         </div>
+                      </button>
+                      <div
+                        className="c14"
+                      >
+                        Select account
                       </div>
-                    </button>
-                    <div
-                      className="c13"
-                    >
-                      Select account
-                    </div>
-                  </span>
+                    </span>
+                  </div>
+                  <svg
+                    aria-hidden="true"
+                    className="c15 c16"
+                    focusable="false"
+                    preserveAspectRatio="xMidYMid meet"
+                    role="presentation"
+                    size={5}
+                    viewBox="0 0 24 24"
+                  >
+                    <polygon
+                      points="19.969 4 24 8.027 12 20 0 8.027 4.031 4 12 11.952"
+                    />
+                  </svg>
                 </div>
-                <svg
-                  aria-hidden="true"
-                  className="c14 c15"
-                  focusable="false"
-                  preserveAspectRatio="xMidYMid meet"
-                  role="presentation"
-                  size={5}
-                  viewBox="0 0 24 24"
-                >
-                  <polygon
-                    points="19.969 4 24 8.027 12 20 0 8.027 4.031 4 12 11.952"
-                  />
-                </svg>
               </span>
             </label>
             <div>
               <span
-                className="c18"
+                className="c21"
               >
                 Some extra info
               </span>
@@ -3932,56 +4350,63 @@ exports[`Storyshots Molecules | Input / Select Size = \`s\` variations 1`] = `
               >
                 User account 
                 <div
-                  className="c9"
+                  className="c22"
+                  label="User account"
+                  placeholder="Select account"
+                  size="s"
                 >
-                  <span
+                  <div
                     className="c10"
                   >
-                    <button
-                      absolutePositioning={true}
-                      aria-expanded="false"
-                      aria-haspopup="listbox"
-                      className="c16"
-                      form=""
-                      onClick={[Function]}
-                      tabIndex={0}
-                      type="button"
+                    <span
+                      className="c11"
                     >
-                      <div
-                        aria-hidden="true"
-                        style={
-                          Object {
-                            "flex": 1,
-                          }
-                        }
+                      <button
+                        absolutePositioning={true}
+                        aria-expanded="false"
+                        aria-haspopup="listbox"
+                        className="c18"
+                        form=""
+                        onClick={[Function]}
+                        tabIndex={0}
+                        type="button"
                       >
                         <div
-                          className="c12"
+                          aria-hidden="true"
+                          style={
+                            Object {
+                              "flex": 1,
+                            }
+                          }
                         >
-                          Select account
+                          <div
+                            className="c13"
+                          >
+                            Select account
+                          </div>
                         </div>
+                      </button>
+                      <div
+                        className="c14"
+                      >
+                        Select account
                       </div>
-                    </button>
-                    <div
-                      className="c13"
-                    >
-                      Select account
-                    </div>
-                  </span>
+                    </span>
+                  </div>
+                  <svg
+                    aria-hidden="true"
+                    className="c15 c16"
+                    focusable="false"
+                    preserveAspectRatio="xMidYMid meet"
+                    role="presentation"
+                    size={5}
+                    viewBox="0 0 24 24"
+                  >
+                    <polygon
+                      points="19.969 4 24 8.027 12 20 0 8.027 4.031 4 12 11.952"
+                    />
+                  </svg>
                 </div>
-                <svg
-                  aria-hidden="true"
-                  className="c14 c15"
-                  focusable="false"
-                  preserveAspectRatio="xMidYMid meet"
-                  role="presentation"
-                  size={5}
-                  viewBox="0 0 24 24"
-                >
-                  <polygon
-                    points="19.969 4 24 8.027 12 20 0 8.027 4.031 4 12 11.952"
-                  />
-                </svg>
               </span>
             </label>
           </div>
@@ -4019,7 +4444,7 @@ Array [
       value="3"
     />
   </select>,
-  .c9 {
+  .c10 {
   padding-left: 8px;
   padding-right: 32px;
 }
@@ -4036,7 +4461,7 @@ Array [
   align-items: center;
 }
 
-.c5 {
+.c6 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -4051,7 +4476,7 @@ Array [
   justify-content: center;
 }
 
-.c10 {
+.c11 {
   position: absolute;
   height: 1px;
   width: 1px;
@@ -4066,7 +4491,7 @@ Array [
   cursor: pointer;
 }
 
-.c12 {
+.c13 {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -4089,7 +4514,7 @@ Array [
   line-height: 1.4285714285714286;
 }
 
-.c6 {
+.c7 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
   margin: 0;
@@ -4103,7 +4528,7 @@ Array [
   display: inline-block;
 }
 
-.c7 {
+.c8 {
   font-family: inherit;
   font-size: 100%;
   line-height: 1.15;
@@ -4129,29 +4554,29 @@ Array [
   text-align: initial;
 }
 
-.c7,
-.c7[type='button'],
-.c7[type='reset'],
-.c7[type='submit'] {
+.c8,
+.c8[type='button'],
+.c8[type='reset'],
+.c8[type='submit'] {
   -webkit-appearance: button;
 }
 
-.c7::-moz-focus-inner,
-.c7[type='button']::-moz-focus-inner,
-.c7[type='reset']::-moz-focus-inner,
-.c7[type='submit']::-moz-focus-inner {
+.c8::-moz-focus-inner,
+.c8[type='button']::-moz-focus-inner,
+.c8[type='reset']::-moz-focus-inner,
+.c8[type='submit']::-moz-focus-inner {
   border-style: none;
   padding: 0;
 }
 
-.c7:-moz-focusring,
-.c7[type='button']:-moz-focusring,
-.c7[type='reset']:-moz-focusring,
-.c7[type='submit']:-moz-focusring {
+.c8:-moz-focusring,
+.c8[type='button']:-moz-focusring,
+.c8[type='reset']:-moz-focusring,
+.c8[type='submit']:-moz-focusring {
   outline: 1px dotted ButtonText;
 }
 
-.c11 {
+.c12 {
   -webkit-transform: translateY(-50%) rotate(0);
   -ms-transform: translateY(-50%) rotate(0);
   transform: translateY(-50%) rotate(0);
@@ -4174,7 +4599,27 @@ Array [
   width: initial;
 }
 
-.c8 {
+.c5 {
+  height: 40px;
+  outline: none;
+  border: 1px solid #BCBCB6;
+  position: relative;
+  position: relative;
+}
+
+.c5:hover {
+  border-color: #4B4B46;
+}
+
+.c5:focus-within {
+  border-color: #0046FF;
+}
+
+.c5.focus-within {
+  border-color: #0046FF;
+}
+
+.c9 {
   -webkit-box-flex: 1;
   -webkit-flex-grow: 1;
   -ms-flex-positive: 1;
@@ -4206,55 +4651,62 @@ Array [
             User account 
             <div
               className="c5"
+              label="User account"
+              onChange={[Function]}
+              placeholder="Select account"
             >
-              <span
+              <div
                 className="c6"
               >
-                <button
-                  absolutePositioning={true}
-                  aria-expanded="false"
-                  aria-haspopup="listbox"
+                <span
                   className="c7"
-                  form=""
-                  onClick={[Function]}
-                  tabIndex={0}
-                  type="button"
                 >
-                  <div
-                    aria-hidden="true"
-                    style={
-                      Object {
-                        "flex": 1,
-                      }
-                    }
+                  <button
+                    absolutePositioning={true}
+                    aria-expanded="false"
+                    aria-haspopup="listbox"
+                    className="c8"
+                    form=""
+                    onClick={[Function]}
+                    tabIndex={0}
+                    type="button"
                   >
                     <div
-                      className="c8 c9"
+                      aria-hidden="true"
+                      style={
+                        Object {
+                          "flex": 1,
+                        }
+                      }
                     >
-                      Select account
+                      <div
+                        className="c9 c10"
+                      >
+                        Select account
+                      </div>
                     </div>
+                  </button>
+                  <div
+                    className="c11"
+                  >
+                    Select account
                   </div>
-                </button>
-                <div
-                  className="c10"
-                >
-                  Select account
-                </div>
-              </span>
+                </span>
+              </div>
+              <svg
+                aria-hidden="true"
+                className="c12 c13"
+                focusable="false"
+                preserveAspectRatio="xMidYMid meet"
+                role="presentation"
+                size={5}
+                viewBox="0 0 24 24"
+              >
+                <polygon
+                  points="19.969 4 24 8.027 12 20 0 8.027 4.031 4 12 11.952"
+                />
+              </svg>
             </div>
-            <svg
-              aria-hidden="true"
-              className="c11 c12"
-              focusable="false"
-              preserveAspectRatio="xMidYMid meet"
-              role="presentation"
-              size={5}
-              viewBox="0 0 24 24"
-            >
-              <polygon
-                points="19.969 4 24 8.027 12 20 0 8.027 4.031 4 12 11.952"
-              />
-            </svg>
           </span>
         </label>
       </div>
