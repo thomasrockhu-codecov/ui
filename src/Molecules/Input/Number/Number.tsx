@@ -7,7 +7,7 @@ import { Flexbox, VisuallyHidden, Icon, Typography } from '../../..';
 import { FormField } from '../FormField';
 import NormalizedElements from '../../../common/NormalizedElements';
 import { getStringAsNumber, getNumberAsString } from './utils';
-import { isNumber, isString } from '../../../common/utils';
+import { isNumber, isString, assert } from '../../../common/utils';
 import adjustValue from './adjustValue';
 
 const hasError = (error?: Props['error']) => error && error !== '';
@@ -216,6 +216,22 @@ const NumberInput: NumberComponent & {
       onKeyDown(e);
     }
   };
+
+  if (props.fieldId) {
+    assert(false, `Input.Number: The prop fieldId is deprecated, please use id instead`, {
+      level: 'warn',
+    });
+  }
+
+  if (props.hasError) {
+    assert(
+      false,
+      `Input.Number: The prop hasError is deprecated and not needed. The error prop is enough.`,
+      {
+        level: 'warn',
+      },
+    );
+  }
 
   return (
     <FormField

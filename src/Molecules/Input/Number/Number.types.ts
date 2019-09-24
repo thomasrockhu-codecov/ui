@@ -7,6 +7,10 @@ export type Props = {
   disabled?: boolean;
   error?: string;
   extraInfo?: string;
+  /** @deprecated use id instead. */
+  fieldId?: string;
+  /** @deprecated is now handled internally when error prop is present */
+  hasError?: boolean;
   hideLabel?: boolean;
   id: string;
   /** inputMode:
