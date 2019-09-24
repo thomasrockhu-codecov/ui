@@ -43,7 +43,7 @@ export type Props = {
 };
 
 export type OptionBase = {
-  label: React.ReactNode;
+  label: string;
   value: any;
   disabled?: boolean;
 };

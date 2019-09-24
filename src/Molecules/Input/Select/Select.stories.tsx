@@ -1,4 +1,6 @@
 import React from 'react';
+import R from 'ramda';
+
 import { action } from '@storybook/addon-actions';
 import { storiesOf } from '@storybook/react';
 import styled from 'styled-components';
@@ -161,11 +163,36 @@ storiesOf('Molecules | Input / Select', module)
       />
     );
   })
-  .add('Accessible from document.forms', () => {})
+  .add('Accessible from document.forms', () => {
+    const FORM_NAME = 'testForm';
+    const SELECT_NAME = 'mySelect';
+
+    // @ts-ignore
+    const [_, forceUpdate] = React.useState([] as any[]); // eslint-disable-line @typescript-eslint/no-unused-vars
+
+    return (
+      <form name={FORM_NAME}>
+        <Input.Select
+          reducer={loggingReducer}
+          options={accountOptions}
+          name={SELECT_NAME}
+          label="User account"
+          placeholder="Select account"
+          // Every time the value updates
+          // The story gonna rerender
+          // So we have fresh stuff from document.forms
+          onChange={forceUpdate}
+        />
+        <br />
+        Value in form: &quot;
+        {R.path(['forms', FORM_NAME, 'elements', SELECT_NAME, 'value'])(document)}&quot;
+      </form>
+    );
+  })
   .add('Controlled', () => {
     const Component = () => {
       const localOptions = React.useMemo(
-        () => [{ value: 1, label: 1 }, { value: 2, label: 2 }, { value: 3, label: 3 }],
+        () => [{ value: 1, label: '1' }, { value: 2, label: '2' }, { value: 3, label: '3' }],
         [],
       );
       const [selectedValue, setSelectedValue] = React.useState<Array<any>>([]);

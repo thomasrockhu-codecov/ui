@@ -71,6 +71,9 @@ export const SelectedValueWrapper = React.forwardRef<any, any>(
       <Flexbox container direction="column" justifyContent="center">
         <Typography type="secondary">
           <StyledA11yButton
+            type="button"
+            /** need to exclude this button from document.forms */
+            form=""
             absolutePositioning={!noFormField}
             ref={ref}
             aria-haspopup="listbox"
@@ -123,6 +126,7 @@ export const ListItemWrapper = React.forwardRef<
       onBlur={handleBlur}
       onKeyDown={props.onKeyDown}
       onClick={handleClick}
+      aria-selected={props.selected}
     >
       <Component ref={innerRef} index={props.index} />
     </StyledListItemWrapper>

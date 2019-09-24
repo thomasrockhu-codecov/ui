@@ -58,6 +58,11 @@ const FormFieldOrFragment = React.forwardRef<HTMLDivElement, any>(
   ),
 );
 FormFieldOrFragment.displayName = 'FormFieldOrFragment';
+
+const HiddenSelect = styled.select`
+  display: none;
+`;
+
 const Select = (props: Props) => {
   const {
     placeholder,
@@ -179,47 +184,69 @@ const Select = (props: Props) => {
   }
 
   return (
-    <SelectStateContext.Provider value={[state, dispatch]}>
-      <FormFieldOrFragment
-        noFormField={noFormField}
-        {...props}
-        ref={inputWrapperRef}
-        disabled={disabled}
-        open={open}
-        onFocus={handleFocus}
-        onBlur={handleBlur}
-        fullWidth={fullWidth}
-      >
-        <SelectedValueWrapper
-          state={state}
-          ref={buttonRef}
-          open={open}
-          disabled={disabled}
-          noFormField={noFormField}
-          placeholder={placeholder}
-          dispatch={dispatch}
-          component={SelectedValue}
-          options={options}
-        />
-        {open && (
-          <ListWrapper ref={customSelectListRef} key={3} component={List} noFormField={noFormField}>
-            {options.map((x: any, index: number) => (
-              <ListItemWrapper
-                key={x.value}
-                aria-selected={value.includes(x)}
-                index={index}
-                onKeyDown={handleListItemKeyDown}
-                ref={x.disabled ? noop : setRef(counter.next().value)}
-                option={x}
-                selected={value.includes(x)}
-                onClick={handleClickListItem}
-                component={ListItem}
-              />
-            ))}
-          </ListWrapper>
+    <>
+      <HiddenSelect name={props.name} disabled={props.disabled}>
+        {props.placeholder && (
+          <option
+            label={props.placeholder}
+            value=""
+            {...(value.length === 0 ? { selected: true } : {})}
+          />
         )}
-      </FormFieldOrFragment>
-    </SelectStateContext.Provider>
+        {props.options.map(x => (
+          <option
+            label={x.label}
+            value={x.value}
+            {...(value.includes(x) ? { selected: true } : {})}
+          />
+        ))}
+      </HiddenSelect>
+      <SelectStateContext.Provider value={[state, dispatch]}>
+        <FormFieldOrFragment
+          noFormField={noFormField}
+          {...props}
+          ref={inputWrapperRef}
+          disabled={disabled}
+          open={open}
+          onFocus={handleFocus}
+          onBlur={handleBlur}
+          fullWidth={fullWidth}
+        >
+          <SelectedValueWrapper
+            state={state}
+            ref={buttonRef}
+            open={open}
+            disabled={disabled}
+            noFormField={noFormField}
+            placeholder={placeholder}
+            dispatch={dispatch}
+            component={SelectedValue}
+            options={options}
+          />
+          {open && (
+            <ListWrapper
+              ref={customSelectListRef}
+              key={3}
+              component={List}
+              noFormField={noFormField}
+            >
+              {options.map((x: any, index: number) => (
+                <ListItemWrapper
+                  key={x.value}
+                  index={index}
+                  onKeyDown={handleListItemKeyDown}
+                  ref={x.disabled ? noop : setRef(counter.next().value)}
+                  option={x}
+                  selected={value.includes(x)}
+                  onClick={handleClickListItem}
+                  component={ListItem}
+                />
+              ))}
+            </ListWrapper>
+          )}
+        </FormFieldOrFragment>
+      </SelectStateContext.Provider>
+    </>
   );
 };
 
