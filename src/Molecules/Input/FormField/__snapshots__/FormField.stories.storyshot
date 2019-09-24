@@ -1,48 +1,15 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Storyshots Molecules | Input / FormField Default 1`] = `
+.c1 {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
 .c2 {
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-}
-
-.c5 {
-  box-sizing: border-box;
-  -webkit-align-self: stretch;
-  -ms-flex-item-align: stretch;
-  align-self: stretch;
-}
-
-.c8 {
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.c4 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #6E6E69;
-  margin: 0;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
-}
-
-.c6 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #282823;
   margin: 0;
   font-weight: 400;
   font-size: 14px;
@@ -54,126 +21,40 @@ exports[`Storyshots Molecules | Input / FormField Default 1`] = `
   display: inline-block;
 }
 
-.c1 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  width: 100%;
-}
-
-.c7 {
-  position: relative;
-  height: 40px;
-  box-sizing: border-box;
-  border: 1px solid #BCBCB6;
-  background-color: #ffffff;
-  box-shadow: 0 1px 3px rgba(0,0,0,0.03);
-  font: inherit;
-  font-size: inherit;
-  line-height: inherit;
-  color: inherit;
-}
-
-.c7:focus-within {
-  border-color: #0046FF;
-}
-
-.c7.focus-within {
-  border-color: #0046FF;
-}
-
-.c7:hover:not(:focus-within) {
-  border-color: #4B4B46;
-}
-
-.c3 {
-  width: 100%;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-}
-
 <div
   className="c0"
 >
-  <label>
-    <div
-      className="c1 c2"
+  <label
+    className="c1"
+    hidden={false}
+    htmlFor="unique-id-1"
+  >
+    <span
+      className="c2"
     >
-      <span
-        className="c3 c4"
-      >
-        Label
-        
-      </span>
-      <div
-        className="c5"
-      >
-        <div
-          className="c6"
-          color={[Function]}
-          type="secondary"
-        >
-          <div
-            className="c7 c8"
-          >
-            <div
-              style={
-                Object {
-                  "background": "aqua",
-                  "width": "100%",
-                }
-              }
-            >
-              Pass in any children you want
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+      Label 
+    </span>
   </label>
+  <div
+    style={
+      Object {
+        "background": "aqua",
+      }
+    }
+  >
+    Pass in any children you want
+  </div>
 </div>
 `;
 
 exports[`Storyshots Molecules | Input / FormField Docs 1`] = `
 <p>
-  This is a helper component, you are probably looking for something else
+  This component provides a label including the required look of the label. It also provides the displaying of error message and additional information.
 </p>
 `;
 
 exports[`Storyshots Molecules | Input / FormField Error 1`] = `
-.c2 {
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-}
-
-.c5 {
-  box-sizing: border-box;
-  -webkit-align-self: stretch;
-  -ms-flex-item-align: stretch;
-  align-self: stretch;
-}
-
-.c8 {
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.c11 {
+.c4 {
   position: absolute;
   height: 1px;
   width: 1px;
@@ -182,7 +63,13 @@ exports[`Storyshots Molecules | Input / FormField Error 1`] = `
   clip: rect(1px,1px,1px,1px);
 }
 
-.c4 {
+.c1 {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.c2 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #6E6E69;
   margin: 0;
@@ -191,16 +78,7 @@ exports[`Storyshots Molecules | Input / FormField Error 1`] = `
   line-height: 1.4285714285714286;
 }
 
-.c6 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #282823;
-  margin: 0;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
-}
-
-.c10 {
+.c3 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #FF1900;
   margin: 0;
@@ -214,137 +92,52 @@ exports[`Storyshots Molecules | Input / FormField Error 1`] = `
   display: inline-block;
 }
 
-.c9 {
-  line-height: 17px;
-  display: inline-block;
-}
-
-.c1 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  width: 100%;
-}
-
-.c7 {
-  position: relative;
-  height: 40px;
-  box-sizing: border-box;
-  border: 1px solid #FF1900;
-  background-color: #ffffff;
-  box-shadow: 0 1px 3px rgba(0,0,0,0.03);
-  font: inherit;
-  font-size: inherit;
-  line-height: inherit;
-  color: inherit;
-}
-
-.c7:focus-within {
-  border-color: #0046FF;
-}
-
-.c7.focus-within {
-  border-color: #0046FF;
-}
-
-.c7:hover:not(:focus-within) {
-  border-color: #4B4B46;
-}
-
-.c3 {
-  width: 100%;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-}
-
 <div
   className="c0"
 >
-  <label>
-    <div
-      className="c1 c2"
-    >
-      <span
-        className="c3 c4"
-      >
-        Label
-        
-      </span>
-      <div
-        className="c5"
-      >
-        <div
-          className="c6"
-          color={[Function]}
-          type="secondary"
-        >
-          <div
-            className="c7 c8"
-          >
-            <div
-              style={
-                Object {
-                  "background": "aqua",
-                  "width": "100%",
-                }
-              }
-            >
-              Pass in any children you want
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </label>
-  <span>
+  <label
+    className="c1"
+    hidden={false}
+    htmlFor="unique-id-2"
+  >
     <span
-      className="c9 c10"
+      className="c2"
+    >
+      Label 
+    </span>
+  </label>
+  <div
+    style={
+      Object {
+        "background": "aqua",
+      }
+    }
+  >
+    Pass in any children you want
+  </div>
+  <div>
+    <span
+      className="c3"
     >
       <div
-        className="c11"
+        className="c4"
       >
         Error: 
       </div>
       error
     </span>
-  </span>
+  </div>
 </div>
 `;
 
 exports[`Storyshots Molecules | Input / FormField Extra info 1`] = `
+.c1 {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
 .c2 {
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-}
-
-.c5 {
-  box-sizing: border-box;
-  -webkit-align-self: stretch;
-  -ms-flex-item-align: stretch;
-  align-self: stretch;
-}
-
-.c8 {
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.c4 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #6E6E69;
   margin: 0;
@@ -353,16 +146,7 @@ exports[`Storyshots Molecules | Input / FormField Extra info 1`] = `
   line-height: 1.4285714285714286;
 }
 
-.c6 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #282823;
-  margin: 0;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
-}
-
-.c10 {
+.c3 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #6E6E69;
   margin: 0;
@@ -376,143 +160,49 @@ exports[`Storyshots Molecules | Input / FormField Extra info 1`] = `
   display: inline-block;
 }
 
-.c9 {
-  line-height: 17px;
-  display: inline-block;
-}
-
-.c1 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  width: 100%;
-}
-
-.c7 {
-  position: relative;
-  height: 40px;
-  box-sizing: border-box;
-  border: 1px solid #BCBCB6;
-  background-color: #ffffff;
-  box-shadow: 0 1px 3px rgba(0,0,0,0.03);
-  font: inherit;
-  font-size: inherit;
-  line-height: inherit;
-  color: inherit;
-}
-
-.c7:focus-within {
-  border-color: #0046FF;
-}
-
-.c7.focus-within {
-  border-color: #0046FF;
-}
-
-.c7:hover:not(:focus-within) {
-  border-color: #4B4B46;
-}
-
-.c3 {
-  width: 100%;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-}
-
 <div
   className="c0"
 >
-  <label>
-    <div
-      className="c1 c2"
-    >
-      <span
-        className="c3 c4"
-      >
-        Label
-        
-      </span>
-      <div
-        className="c5"
-      >
-        <div
-          className="c6"
-          color={[Function]}
-          type="secondary"
-        >
-          <div
-            className="c7 c8"
-          >
-            <div
-              style={
-                Object {
-                  "background": "aqua",
-                  "width": "100%",
-                }
-              }
-            >
-              Pass in any children you want
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </label>
-  <span>
+  <label
+    className="c1"
+    hidden={false}
+    htmlFor="unique-id-2"
+  >
     <span
-      className="c9 c10"
+      className="c2"
+    >
+      Label 
+    </span>
+  </label>
+  <div
+    style={
+      Object {
+        "background": "aqua",
+      }
+    }
+  >
+    Pass in any children you want
+  </div>
+  <div>
+    <span
+      className="c3"
     >
       Some extra info
     </span>
-  </span>
+  </div>
 </div>
 `;
 
 exports[`Storyshots Molecules | Input / FormField Required 1`] = `
+.c1 {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
 .c2 {
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-}
-
-.c5 {
-  box-sizing: border-box;
-  -webkit-align-self: stretch;
-  -ms-flex-item-align: stretch;
-  align-self: stretch;
-}
-
-.c8 {
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.c4 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #6E6E69;
-  margin: 0;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
-}
-
-.c6 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #282823;
   margin: 0;
   font-weight: 400;
   font-size: 14px;
@@ -524,83 +214,138 @@ exports[`Storyshots Molecules | Input / FormField Required 1`] = `
   display: inline-block;
 }
 
-.c1 {
+<div
+  className="c0"
+>
+  <label
+    className="c1"
+    hidden={false}
+    htmlFor="unique-id-1"
+  >
+    <span
+      className="c2"
+    >
+      Label *
+    </span>
+  </label>
+  <div
+    style={
+      Object {
+        "background": "aqua",
+      }
+    }
+  >
+    Pass in any children you want
+  </div>
+</div>
+`;
+
+exports[`Storyshots Molecules | Input / FormField With group of items 1`] = `
+.c6 {
+  box-sizing: border-box;
+}
+
+.c5 {
+  box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  width: 100%;
+  margin-left: -10px;
+  margin-right: -10px;
 }
 
-.c7 {
-  position: relative;
-  height: 40px;
-  box-sizing: border-box;
-  border: 1px solid #BCBCB6;
-  background-color: #ffffff;
-  box-shadow: 0 1px 3px rgba(0,0,0,0.03);
-  font: inherit;
-  font-size: inherit;
-  line-height: inherit;
-  color: inherit;
+.c5 > * {
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
-.c7:focus-within {
-  border-color: #0046FF;
+.c5 > *:not(:first-child) {
+  padding-top: 0;
 }
 
-.c7.focus-within {
-  border-color: #0046FF;
-}
-
-.c7:hover:not(:focus-within) {
-  border-color: #4B4B46;
+.c2 {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  cursor: pointer;
 }
 
 .c3 {
-  width: 100%;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
+  box-sizing: border-box;
+  color: inherit;
+  display: table;
+  max-width: 100%;
+  padding: 0;
+  white-space: normal;
+  cursor: auto;
+}
+
+.c4 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #6E6E69;
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c1 {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+.c0 {
+  width: 200px;
+  display: inline-block;
 }
 
 <div
   className="c0"
 >
-  <label>
-    <div
-      className="c1 c2"
+  <fieldset
+    className="c1"
+  >
+    <legend
+      className="c2 c3"
+      hidden={false}
     >
       <span
-        className="c3 c4"
+        className="c4"
       >
-        Label
-         *
+        Caption to a group of items 
       </span>
+    </legend>
+    <div
+      className="c5"
+    >
       <div
-        className="c5"
+        className="c6"
       >
         <div
-          className="c6"
-          color={[Function]}
-          type="secondary"
+          style={
+            Object {
+              "background": "aqua",
+            }
+          }
         >
-          <div
-            className="c7 c8"
-          >
-            <div
-              style={
-                Object {
-                  "background": "aqua",
-                }
-              }
-            >
-              Pass in any children you want
-            </div>
-          </div>
+          Pass in any children you want
+        </div>
+      </div>
+      <div
+        className="c6"
+      >
+        <div
+          style={
+            Object {
+              "background": "aqua",
+            }
+          }
+        >
+          Pass in any children you want
         </div>
       </div>
     </div>
-  </label>
+  </fieldset>
 </div>
 `;

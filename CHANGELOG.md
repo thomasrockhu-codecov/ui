@@ -1,3 +1,20 @@
+## [1.45.4](https://github.com/nordnet/ui/compare/v1.45.3...v1.45.4) (2019-09-24)
+
+
+### Bug Fixes
+
+* clean form field props ([407d295](https://github.com/nordnet/ui/commit/407d295))
+* deprecate forid ([566e879](https://github.com/nordnet/ui/commit/566e879))
+* handle required field with star ([ea68f53](https://github.com/nordnet/ui/commit/ea68f53))
+* refactor input text to use refactored form field ([edabc83](https://github.com/nordnet/ui/commit/edabc83))
+
+## [1.45.3](https://github.com/nordnet/ui/compare/v1.45.2...v1.45.3) (2019-09-24)
+
+
+### Bug Fixes
+
+* modal overflow ([26ea656](https://github.com/nordnet/ui/commit/26ea656))
+
 ## [1.45.2](https://github.com/nordnet/ui/compare/v1.45.1...v1.45.2) (2019-09-23)
 
 
