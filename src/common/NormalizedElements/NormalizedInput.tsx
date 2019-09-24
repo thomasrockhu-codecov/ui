@@ -18,6 +18,7 @@ const CleanInput = React.forwardRef((props: any, ref: React.Ref<HTMLInputElement
         'rightAddon',
         'size',
         'sizeProp',
+        'success',
       ],
       props,
     )}
