@@ -17,13 +17,13 @@ export type StyledChildProps = {
 export type BaseProps = {
   className?: string;
   title?: string;
-  viewBox?: string;
   /** @deprecated use fill instead */
   color?: ColorFn;
   fill?: ColorFn;
   /** unit-based */
   size?: number;
   inline?: boolean;
+  viewBox?: string;
 };
 
 export type ChildProps = {

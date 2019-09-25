@@ -1,3 +1,4 @@
+import { AddWithCircle } from './components/AddWithCircle';
 import { Archive } from './components/Archive';
 import { ArrowRight } from './components/ArrowRight';
 import { Attachement } from './components/Attachement';
@@ -36,6 +37,7 @@ import { WarningTriangle } from './components/WarningTriangle';
 import { Rtmt } from './components/Rtmt';
 
 export default {
+  AddWithCircle,
   Archive,
   ArrowRight,
   Attachement,

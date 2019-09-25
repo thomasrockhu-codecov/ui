@@ -121,6 +121,7 @@ export const createTheme = (config: ThemeConfig = {}): Theme => {
       disabledBackground: rawColor.gray6,
       divider: rawColor.gray6,
       label: rawColor.gray2,
+      selectOptionBackground: rawColor.white,
       modalBackdrop: Color(rawColor.gray2)
         .alpha(0.63)
         .rgb()
