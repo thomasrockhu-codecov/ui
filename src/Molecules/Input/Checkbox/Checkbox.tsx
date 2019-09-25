@@ -1,21 +1,42 @@
 import React from 'react';
 import styled from 'styled-components';
+import * as R from 'ramda';
 import { FormLabel, Icon, Flexbox, Typography } from '../../..';
-import { CheckboxComponent } from './Checkbox.types';
+import { CheckboxComponent, Props, InternalInputProps } from './Checkbox.types';
+import { isString } from '../../../common/utils';
 
 const CHECKBOX_SIZE = 5;
+const hasError = (error?: Props['error']) => isString(error) && error !== '';
 
-const StyledFormLabel = styled(FormLabel)`
-  position: relative;
-`;
+const CleanInput = React.forwardRef((props: any, ref: React.Ref<HTMLInputElement>) => (
+  <input ref={ref} {...R.omit(['hasError'], props)} />
+));
 
 const CheckmarkBox = styled(Flexbox)`
   width: ${p => p.theme.spacing.unit(CHECKBOX_SIZE)}px;
   height: ${p => p.theme.spacing.unit(CHECKBOX_SIZE)}px;
   border: 1px solid ${p => p.theme.color.inputBorder};
+  position: relative;
+
+  &::before {
+    content: '';
+    display: block;
+    padding: 2px;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+  }
 `;
 
-const Input = styled.input`
+const StyledFormLabel = styled(FormLabel)`
+  position: relative;
+
+  &:hover ${CheckmarkBox} {
+    border-color: ${p => p.theme.color.inputBorderHover};
+  }
+`;
+
+const Input = styled(CleanInput).attrs({ type: 'checkbox' })<InternalInputProps>`
   position: absolute;
   opacity: 0;
   height: 0;
@@ -36,12 +57,20 @@ const Input = styled.input`
     background: ${p => p.theme.color.disabledBackground};
   }
 
-  &:focus + ${CheckmarkBox} {
-    border-color: ${p => p.theme.color.cta};
-  }
+  ${p =>
+    p.hasError
+      ? `
+    & + ${CheckmarkBox} {
+      &::before {
+        border: 1px solid ${p.theme.color.inputBorderError};
+      }
+    }`
+      : ''}
 
-  &:checked:focus + ${CheckmarkBox} {
-    outline: 5px auto ${p => p.theme.color.cta};
+  &:focus + ${CheckmarkBox} {
+    &::before {
+      border: 1px solid ${p => p.theme.color.cta};
+    }
   }
 `;
 
@@ -56,6 +85,7 @@ const Checkbox: CheckboxComponent = props => {
     checked,
     defaultChecked,
     disabled,
+    error,
     label,
     name,
     onBlur,
@@ -73,11 +103,11 @@ const Checkbox: CheckboxComponent = props => {
       <Flexbox container>
         <Input
           {...{
-            type: 'checkbox',
             autoFocus,
             checked,
             defaultChecked,
             disabled,
+            hasError: hasError(error),
             name,
             onBlur,
             onChange,

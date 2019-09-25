@@ -41,6 +41,25 @@ storiesOf('Molecules | Input / Checkbox', module)
     };
     return <Component />;
   })
+  .add('Required', () => <Input.Checkbox name="example" value="green" label="Green" required />)
+  .add('With an error if not checked', () => {
+    const Component = () => {
+      const [checked, setChecked] = React.useState(false);
+      const toggleCheckbox = () => setChecked(!checked);
+
+      return (
+        <Input.Checkbox
+          name="example"
+          value="green"
+          label="Green"
+          required
+          onChange={toggleCheckbox}
+          {...(!checked ? { error: 'This field is required' } : {})}
+        />
+      );
+    };
+    return <Component />;
+  })
   .add('In a group', () => (
     <Fieldset>
       <Legend styleType="label">Colors</Legend>
@@ -51,7 +70,6 @@ storiesOf('Molecules | Input / Checkbox', module)
       </Flexbox>
     </Fieldset>
   ))
-  .add('Required', () => <Input.Checkbox name="example" value="green" label="Green" required />)
   .add('Disabled', () => (
     <Display
       title="Disabled"

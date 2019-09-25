@@ -19,4 +19,8 @@ export type Props = {
   onKeyUp?: React.KeyboardEventHandler<HTMLInputElement>;
 };
 
+export type InternalInputProps = {
+  hasError?: boolean;
+};
+
 export type CheckboxComponent = React.FC<Props>;
