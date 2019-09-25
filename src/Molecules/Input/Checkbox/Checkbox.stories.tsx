@@ -41,7 +41,29 @@ storiesOf('Molecules | Input / Checkbox', module)
     };
     return <Component />;
   })
-  .add('Required', () => <Input.Checkbox name="example" value="green" label="Green" required />)
+  .add('Required', () => (
+    <Display
+      title="Required"
+      items={[
+        {
+          component: <Input.Checkbox name="example" value="green" label="Green" required />,
+          title: 'Default (without star)',
+        },
+        {
+          component: (
+            <Input.Checkbox
+              name="example"
+              value="green"
+              label="Green"
+              required
+              visuallyEmphasiseRequired
+            />
+          ),
+          title: 'With star',
+        },
+      ]}
+    />
+  ))
   .add('With an error if not checked', () => {
     const Component = () => {
       const [checked, setChecked] = React.useState(false);
@@ -69,15 +91,51 @@ storiesOf('Molecules | Input / Checkbox', module)
       </Flexbox>
     </FormField>
   ))
-  .add('In a group with error', () => (
-    <FormField label="Colors" error="asd" group>
-      <Flexbox container gutter={5}>
-        <Input.Checkbox name="example" value="green" label="Green" />
-        <Input.Checkbox name="example" value="blue" label="Blue" />
-        <Input.Checkbox name="example" value="yellow" label="Yellow" />
-      </Flexbox>
-    </FormField>
-  ))
+  .add('In a group with error', () => {
+    const Component = () => {
+      const [oneChecked, setOneChecked] = React.useState(false);
+      const [twoChecked, setTwoChecked] = React.useState(false);
+      const [threeChecked, setThreeChecked] = React.useState(false);
+      const hasGroupError = !oneChecked && !twoChecked && !threeChecked;
+
+      return (
+        <FormField
+          label="Colors"
+          group
+          required
+          {...(hasGroupError ? { error: 'This field is required' } : {})}
+        >
+          <Flexbox container gutter={5}>
+            <Input.Checkbox
+              name="example"
+              value="green"
+              label="Green"
+              hasError={hasGroupError}
+              onChange={() => setOneChecked(!oneChecked)}
+              required
+            />
+            <Input.Checkbox
+              name="example"
+              value="blue"
+              label="Blue"
+              hasError={hasGroupError}
+              onChange={() => setTwoChecked(!twoChecked)}
+              required
+            />
+            <Input.Checkbox
+              name="example"
+              value="yellow"
+              label="Yellow"
+              hasError={hasGroupError}
+              onChange={() => setThreeChecked(!threeChecked)}
+              required
+            />
+          </Flexbox>
+        </FormField>
+      );
+    };
+    return <Component />;
+  })
   .add('Disabled', () => (
     <Display
       title="Disabled"

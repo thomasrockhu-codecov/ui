@@ -6,7 +6,7 @@ import { CheckboxComponent, Props, InternalInputProps } from './Checkbox.types';
 import { isString } from '../../../common/utils';
 
 const CHECKBOX_SIZE = 5;
-const hasError = (error?: Props['error']) => isString(error) && error !== '';
+const checkIfHasError = (error?: Props['error']) => isString(error) && error !== '';
 
 const CleanInput = React.forwardRef((props: any, ref: React.Ref<HTMLInputElement>) => (
   <input ref={ref} {...R.omit(['hasError'], props)} />
@@ -81,11 +81,12 @@ const Label = styled(Typography)`
 const Checkbox: CheckboxComponent = props => {
   const {
     autoFocus,
-    className,
     checked,
+    className,
     defaultChecked,
     disabled,
     error,
+    hasError,
     label,
     name,
     onBlur,
@@ -95,11 +96,14 @@ const Checkbox: CheckboxComponent = props => {
     onKeyDown,
     onKeyPress,
     onKeyUp,
+    required,
     value,
+    visuallyEmphasiseRequired,
+    width,
   } = props;
 
   return (
-    <FormField {...{ error }}>
+    <FormField {...{ error }} width={width || 'auto'}>
       <StyledFormLabel className={className}>
         <Flexbox container>
           <Input
@@ -108,7 +112,7 @@ const Checkbox: CheckboxComponent = props => {
               checked,
               defaultChecked,
               disabled,
-              hasError: hasError(error),
+              hasError: hasError || checkIfHasError(error),
               name,
               onBlur,
               onChange,
@@ -117,6 +121,7 @@ const Checkbox: CheckboxComponent = props => {
               onKeyDown,
               onKeyPress,
               onKeyUp,
+              required,
               value,
             }}
           />
@@ -124,7 +129,7 @@ const Checkbox: CheckboxComponent = props => {
             <Icon.CheckMark size={3} color={t => t.color.backgroundInput} />
           </CheckmarkBox>
           <Label type="secondary" color={t => (disabled ? t.color.disabledText : t.color.text)}>
-            {label}
+            {visuallyEmphasiseRequired ? `${label} *` : label}
           </Label>
         </Flexbox>
       </StyledFormLabel>

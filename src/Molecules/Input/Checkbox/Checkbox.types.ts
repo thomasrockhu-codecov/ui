@@ -5,10 +5,13 @@ export type Props = {
   defaultChecked?: boolean;
   disabled?: boolean;
   error?: string;
+  hasError?: boolean;
   label: string;
   name?: string;
   required?: boolean;
   value?: string;
+  visuallyEmphasiseRequired?: boolean;
+  width?: string | number;
 
   onBlur?: React.FocusEventHandler<HTMLInputElement>;
   onChange?: React.ChangeEventHandler<HTMLInputElement>;
