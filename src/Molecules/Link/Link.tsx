@@ -44,7 +44,7 @@ const StyledButton = styled(NormalizedElements.Button)<LinkProps>`
   background: transparent;
   overflow: visible;
 
-  -webkit-appearance: none !important;
+  -webkit-appearance: none !important; /* stylelint-disable-line property-no-vendor-prefix */
   /* resetting button styles end */
 
   cursor: ${p => (p.disabled ? 'not-allowed' : 'pointer')};
