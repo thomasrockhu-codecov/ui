@@ -12,6 +12,8 @@ export type LinkProps = {
   external?: boolean;
   rel?: string;
   disabled?: boolean;
+  as?: any;
+  ref?: React.Ref<any>;
 };
 
 export type LinkComponent = React.FunctionComponent<LinkProps>;
