@@ -1,7 +1,7 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 import { actions } from '@storybook/addon-actions';
-import { Input, Fieldset, Legend, Flexbox } from '../../..';
+import { Input, Flexbox, FormField } from '../../..';
 import { Display } from '../../../common/Display';
 
 const handlers = actions(
@@ -61,14 +61,22 @@ storiesOf('Molecules | Input / Checkbox', module)
     return <Component />;
   })
   .add('In a group', () => (
-    <Fieldset>
-      <Legend styleType="label">Colors</Legend>
+    <FormField label="Colors" group>
       <Flexbox container gutter={5}>
         <Input.Checkbox name="example" value="green" label="Green" />
         <Input.Checkbox name="example" value="blue" label="Blue" />
         <Input.Checkbox name="example" value="yellow" label="Yellow" />
       </Flexbox>
-    </Fieldset>
+    </FormField>
+  ))
+  .add('In a group with error', () => (
+    <FormField label="Colors" error="asd" group>
+      <Flexbox container gutter={5}>
+        <Input.Checkbox name="example" value="green" label="Green" />
+        <Input.Checkbox name="example" value="blue" label="Blue" />
+        <Input.Checkbox name="example" value="yellow" label="Yellow" />
+      </Flexbox>
+    </FormField>
   ))
   .add('Disabled', () => (
     <Display

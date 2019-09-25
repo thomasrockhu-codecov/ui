@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Storyshots Molecules | Fieldset Default 1`] = `
-.c6 {
+.c7 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -9,7 +9,7 @@ exports[`Storyshots Molecules | Fieldset Default 1`] = `
   display: flex;
 }
 
-.c10 {
+.c11 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -25,13 +25,13 @@ exports[`Storyshots Molecules | Fieldset Default 1`] = `
   align-items: center;
 }
 
-.c4 {
+.c5 {
   text-overflow: ellipsis;
   white-space: nowrap;
   cursor: pointer;
 }
 
-.c11 {
+.c12 {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -55,7 +55,7 @@ exports[`Storyshots Molecules | Fieldset Default 1`] = `
   margin: 0 0 16px 0;
 }
 
-.c5 {
+.c6 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #6E6E69;
   margin: 0;
@@ -73,7 +73,7 @@ exports[`Storyshots Molecules | Fieldset Default 1`] = `
   line-height: 1.3333333333333333;
 }
 
-.c13 {
+.c14 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
   margin: 0;
@@ -89,16 +89,35 @@ exports[`Storyshots Molecules | Fieldset Default 1`] = `
 }
 
 .c3 {
-  position: relative;
+  width: 200px;
+  display: inline-block;
 }
 
-.c9 {
+.c10 {
   width: 20px;
   height: 20px;
   border: 1px solid #BCBCB6;
+  position: relative;
 }
 
-.c7 {
+.c10::before {
+  content: '';
+  display: block;
+  padding: 2px;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+.c4 {
+  position: relative;
+}
+
+.c4:hover .c9 {
+  border-color: #4B4B46;
+}
+
+.c8 {
   position: absolute;
   opacity: 0;
   height: 0;
@@ -106,29 +125,25 @@ exports[`Storyshots Molecules | Fieldset Default 1`] = `
   cursor: pointer;
 }
 
-.c7:checked + .c8 {
+.c8:checked + .c9 {
   border-color: #0046FF;
   background: #0046FF;
 }
 
-.c7[disabled] + .c8 {
+.c8[disabled] + .c9 {
   border-color: #EBEBE8;
 }
 
-.c7:checked[disabled] + .c8 {
+.c8:checked[disabled] + .c9 {
   border-color: #EBEBE8;
   background: #EBEBE8;
 }
 
-.c7:focus + .c8 {
-  border-color: #0046FF;
+.c8:focus + .c9::before {
+  border: 1px solid #0046FF;
 }
 
-.c7:checked:focus + .c8 {
-  outline: 5px auto #0046FF;
-}
-
-.c12 {
+.c13 {
   padding-left: 8px;
 }
 
@@ -151,129 +166,141 @@ exports[`Storyshots Molecules | Fieldset Default 1`] = `
       Colors
     </span>
   </legend>
-  <label
-    className="c3 c4"
-    hidden={false}
+  <div
+    className="c3"
   >
-    <span
-      className="c5"
+    <label
+      className="c4 c5"
+      hidden={false}
     >
-      <div
+      <span
         className="c6"
       >
-        <input
-          className="c7"
-          name="example"
-          type="checkbox"
-          value="green"
-        />
         <div
-          className="c8 c9 c10"
+          className="c7"
         >
-          <svg
-            aria-hidden="true"
-            className="c11"
-            focusable="false"
-            preserveAspectRatio="xMidYMid meet"
-            role="presentation"
-            size={3}
-            viewBox="0 0 24 24"
+          <input
+            className="c8"
+            name="example"
+            type="checkbox"
+            value="green"
+          />
+          <div
+            className="c9 c10 c11"
           >
-            <path
-              d="M8.76083729 16.4144594L2.20525972 9.86336213 0 12.2093109 8.79670106 21 24 5.30897552 21.7583339 3z"
-            />
-          </svg>
+            <svg
+              aria-hidden="true"
+              className="c12"
+              focusable="false"
+              preserveAspectRatio="xMidYMid meet"
+              role="presentation"
+              size={3}
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M8.76083729 16.4144594L2.20525972 9.86336213 0 12.2093109 8.79670106 21 24 5.30897552 21.7583339 3z"
+              />
+            </svg>
+          </div>
+          <span
+            className="c13 c14"
+          >
+            Green
+          </span>
         </div>
-        <span
-          className="c12 c13"
-        >
-          Green
-        </span>
-      </div>
-    </span>
-  </label>
-  <label
-    className="c3 c4"
-    hidden={false}
+      </span>
+    </label>
+  </div>
+  <div
+    className="c3"
   >
-    <span
-      className="c5"
+    <label
+      className="c4 c5"
+      hidden={false}
     >
-      <div
+      <span
         className="c6"
       >
-        <input
-          className="c7"
-          name="example"
-          type="checkbox"
-          value="blue"
-        />
         <div
-          className="c8 c9 c10"
+          className="c7"
         >
-          <svg
-            aria-hidden="true"
-            className="c11"
-            focusable="false"
-            preserveAspectRatio="xMidYMid meet"
-            role="presentation"
-            size={3}
-            viewBox="0 0 24 24"
+          <input
+            className="c8"
+            name="example"
+            type="checkbox"
+            value="blue"
+          />
+          <div
+            className="c9 c10 c11"
           >
-            <path
-              d="M8.76083729 16.4144594L2.20525972 9.86336213 0 12.2093109 8.79670106 21 24 5.30897552 21.7583339 3z"
-            />
-          </svg>
+            <svg
+              aria-hidden="true"
+              className="c12"
+              focusable="false"
+              preserveAspectRatio="xMidYMid meet"
+              role="presentation"
+              size={3}
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M8.76083729 16.4144594L2.20525972 9.86336213 0 12.2093109 8.79670106 21 24 5.30897552 21.7583339 3z"
+              />
+            </svg>
+          </div>
+          <span
+            className="c13 c14"
+          >
+            Blue
+          </span>
         </div>
-        <span
-          className="c12 c13"
-        >
-          Blue
-        </span>
-      </div>
-    </span>
-  </label>
-  <label
-    className="c3 c4"
-    hidden={false}
+      </span>
+    </label>
+  </div>
+  <div
+    className="c3"
   >
-    <span
-      className="c5"
+    <label
+      className="c4 c5"
+      hidden={false}
     >
-      <div
+      <span
         className="c6"
       >
-        <input
-          className="c7"
-          name="example"
-          type="checkbox"
-          value="yellow"
-        />
         <div
-          className="c8 c9 c10"
+          className="c7"
         >
-          <svg
-            aria-hidden="true"
-            className="c11"
-            focusable="false"
-            preserveAspectRatio="xMidYMid meet"
-            role="presentation"
-            size={3}
-            viewBox="0 0 24 24"
+          <input
+            className="c8"
+            name="example"
+            type="checkbox"
+            value="yellow"
+          />
+          <div
+            className="c9 c10 c11"
           >
-            <path
-              d="M8.76083729 16.4144594L2.20525972 9.86336213 0 12.2093109 8.79670106 21 24 5.30897552 21.7583339 3z"
-            />
-          </svg>
+            <svg
+              aria-hidden="true"
+              className="c12"
+              focusable="false"
+              preserveAspectRatio="xMidYMid meet"
+              role="presentation"
+              size={3}
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M8.76083729 16.4144594L2.20525972 9.86336213 0 12.2093109 8.79670106 21 24 5.30897552 21.7583339 3z"
+              />
+            </svg>
+          </div>
+          <span
+            className="c13 c14"
+          >
+            Yellow
+          </span>
         </div>
-        <span
-          className="c12 c13"
-        >
-          Yellow
-        </span>
-      </div>
-    </span>
-  </label>
+      </span>
+    </label>
+  </div>
 </fieldset>
 `;
 

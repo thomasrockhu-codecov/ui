@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import * as R from 'ramda';
-import { FormLabel, Icon, Flexbox, Typography } from '../../..';
+import { FormLabel, Icon, Flexbox, Typography, FormField } from '../../..';
 import { CheckboxComponent, Props, InternalInputProps } from './Checkbox.types';
 import { isString } from '../../../common/utils';
 
@@ -99,34 +99,36 @@ const Checkbox: CheckboxComponent = props => {
   } = props;
 
   return (
-    <StyledFormLabel className={className}>
-      <Flexbox container>
-        <Input
-          {...{
-            autoFocus,
-            checked,
-            defaultChecked,
-            disabled,
-            hasError: hasError(error),
-            name,
-            onBlur,
-            onChange,
-            onClick,
-            onFocus,
-            onKeyDown,
-            onKeyPress,
-            onKeyUp,
-            value,
-          }}
-        />
-        <CheckmarkBox container alignItems="center" justifyContent="center">
-          <Icon.CheckMark size={3} color={t => t.color.backgroundInput} />
-        </CheckmarkBox>
-        <Label type="secondary" color={t => (disabled ? t.color.disabledText : t.color.text)}>
-          {label}
-        </Label>
-      </Flexbox>
-    </StyledFormLabel>
+    <FormField {...{ error }}>
+      <StyledFormLabel className={className}>
+        <Flexbox container>
+          <Input
+            {...{
+              autoFocus,
+              checked,
+              defaultChecked,
+              disabled,
+              hasError: hasError(error),
+              name,
+              onBlur,
+              onChange,
+              onClick,
+              onFocus,
+              onKeyDown,
+              onKeyPress,
+              onKeyUp,
+              value,
+            }}
+          />
+          <CheckmarkBox container alignItems="center" justifyContent="center">
+            <Icon.CheckMark size={3} color={t => t.color.backgroundInput} />
+          </CheckmarkBox>
+          <Label type="secondary" color={t => (disabled ? t.color.disabledText : t.color.text)}>
+            {label}
+          </Label>
+        </Flexbox>
+      </StyledFormLabel>
+    </FormField>
   );
 };
 

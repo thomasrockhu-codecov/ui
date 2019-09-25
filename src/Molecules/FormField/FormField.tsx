@@ -27,33 +27,34 @@ export const FormField: React.FC<Props> = ({
   required = false,
   width,
 }) => {
-  const labelText = `${label} ${required ? '*' : ''}`;
+  const labelText = label && `${label} ${required ? '*' : ''}`;
+  let field;
 
-  let field = (
-    <FormLabel hideLabel={hideLabel}>
-      {labelText}
-      {children}
-    </FormLabel>
-  );
-
-  if (group) {
+  if (label) {
     field = (
-      <Fieldset>
-        <Legend styleType="label">{labelText}</Legend>
+      <FormLabel hideLabel={hideLabel}>
+        {labelText}
         {children}
-      </Fieldset>
+      </FormLabel>
     );
-  }
 
-  if (fieldId || forId) {
-    field = (
-      <>
-        <FormLabel hideLabel={hideLabel} forId={fieldId || forId}>
-          {labelText}
-        </FormLabel>
-        {children}
-      </>
-    );
+    if (group) {
+      field = (
+        <Fieldset>
+          <Legend styleType="label">{labelText}</Legend>
+          {children}
+        </Fieldset>
+      );
+    } else if (fieldId || forId) {
+      field = (
+        <>
+          <FormLabel hideLabel={hideLabel} forId={fieldId || forId}>
+            {labelText}
+          </FormLabel>
+          {children}
+        </>
+      );
+    }
   }
 
   if (forId) {
@@ -64,7 +65,7 @@ export const FormField: React.FC<Props> = ({
 
   return (
     <Wrapper width={width} className={className}>
-      {field}
+      {label ? field : children}
       <AnimatePresence>
         {hasError(error) ? (
           <BottomWrapper
