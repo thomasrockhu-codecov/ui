@@ -9,6 +9,7 @@ export type Props = {
   /** @deprecated use fieldId */
   forId?: string;
   group?: boolean;
+  ref?: React.Ref<HTMLDivElement>;
   required?: boolean;
   /** @deprecated use required */
   showRequired?: boolean;
