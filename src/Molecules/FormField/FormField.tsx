@@ -25,9 +25,10 @@ export const FormField: React.FC<Props> = ({
   hideLabel,
   label,
   required = false,
+  showRequired = false,
   width,
 }) => {
-  const labelText = label && `${label} ${required ? '*' : ''}`;
+  const labelText = label && `${label} ${required || showRequired ? '*' : ''}`;
   let field;
 
   if (label) {
@@ -59,6 +60,11 @@ export const FormField: React.FC<Props> = ({
 
   if (forId) {
     assert(false, `FormField: the prop forId is deprecated, please use fieldId instead.`, {
+      level: 'warn',
+    });
+  }
+  if (showRequired) {
+    assert(false, `FormField: the prop showRequired is deprecated, please use required instead.`, {
       level: 'warn',
     });
   }
