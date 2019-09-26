@@ -1,7 +1,6 @@
 import React from 'react';
 import styled, { css } from 'styled-components';
-import { Icon, Flexbox } from '../../..';
-import { FormField } from '../FormField';
+import { Icon, Flexbox, FormField } from '../../..';
 
 import { usePrevious, useOnClickOutside } from '../../../common/Hooks';
 import { useKeyboardNavigation } from './useKeyboardNavigation';

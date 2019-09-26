@@ -5,10 +5,13 @@ export type Props = {
   defaultChecked?: boolean;
   disabled?: boolean;
   error?: string;
+  hasError?: boolean;
   label: string;
   name?: string;
   required?: boolean;
   value?: string;
+  visuallyEmphasiseRequired?: boolean;
+  width?: string | number;
 
   onBlur?: React.FocusEventHandler<HTMLInputElement>;
   onChange?: React.ChangeEventHandler<HTMLInputElement>;
@@ -17,6 +20,10 @@ export type Props = {
   onKeyDown?: React.KeyboardEventHandler<HTMLInputElement>;
   onKeyPress?: React.KeyboardEventHandler<HTMLInputElement>;
   onKeyUp?: React.KeyboardEventHandler<HTMLInputElement>;
+};
+
+export type InternalInputProps = {
+  hasError?: boolean;
 };
 
 export type CheckboxComponent = React.FC<Props>;

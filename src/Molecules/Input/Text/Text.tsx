@@ -2,9 +2,8 @@ import React from 'react';
 import styled, { css } from 'styled-components';
 import * as R from 'ramda';
 import { Props } from './Text.types';
-import { Flexbox, Typography } from '../../..';
+import { Flexbox, Typography, FormField } from '../../..';
 import NormalizedElements from '../../../common/NormalizedElements';
-import { FormField } from '../FormField';
 
 const hasError = (error?: Props['error']) => error && error !== '';
 

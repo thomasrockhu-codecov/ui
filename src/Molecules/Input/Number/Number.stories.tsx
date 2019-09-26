@@ -57,15 +57,28 @@ storiesOf('Molecules | Input / Number', module)
     <Input.Number id="insert-unique-id" label="Label" defaultValue="12" min="10" max="20" />
   ))
   .add('Required', () => (
-    <Input.Number id="insert-unique-id" label="Label" defaultValue="91" required />
-  ))
-  .add('Required with star', () => (
-    <Input.Number
-      id="insert-unique-id"
-      label="Label"
-      defaultValue="91"
-      required
-      visuallyEmphasiseRequired
+    <Display
+      title="Required"
+      items={[
+        {
+          component: (
+            <Input.Number id="insert-unique-id" label="Label" defaultValue="91" required />
+          ),
+          title: 'Default (without star)',
+        },
+        {
+          component: (
+            <Input.Number
+              id="insert-unique-id"
+              label="Label"
+              defaultValue="91"
+              required
+              visuallyEmphasiseRequired
+            />
+          ),
+          title: 'With star',
+        },
+      ]}
     />
   ))
   .add('Disabled', () => (
