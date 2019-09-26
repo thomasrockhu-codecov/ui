@@ -17,6 +17,7 @@ const CheckmarkBox = styled(Flexbox)`
   height: ${p => p.theme.spacing.unit(CHECKBOX_SIZE)}px;
   border: 1px solid ${p => p.theme.color.inputBorder};
   position: relative;
+  flex-shrink: 0;
 
   &::before {
     content: '';
@@ -76,6 +77,7 @@ const Input = styled(CleanInput).attrs({ type: 'checkbox' })<InternalInputProps>
 
 const Label = styled(Typography)`
   padding-left: ${p => p.theme.spacing.unit(2)}px;
+  white-space: initial;
 `;
 
 const Checkbox: CheckboxComponent = props => {
@@ -105,7 +107,7 @@ const Checkbox: CheckboxComponent = props => {
   return (
     <FormField {...{ error }} width={width || 'auto'}>
       <StyledFormLabel className={className}>
-        <Flexbox container>
+        <Flexbox container alignItems="center">
           <Input
             {...{
               autoFocus,
