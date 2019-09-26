@@ -1,3 +1,10 @@
+## [1.47.2](https://github.com/nordnet/ui/compare/v1.47.1...v1.47.2) (2019-09-26)
+
+
+### Bug Fixes
+
+* make text wrap if long ([d28be5c](https://github.com/nordnet/ui/commit/d28be5c))
+
 ## [1.47.1](https://github.com/nordnet/ui/compare/v1.47.0...v1.47.1) (2019-09-26)
 
 
