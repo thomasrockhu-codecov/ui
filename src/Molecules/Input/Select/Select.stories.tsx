@@ -168,7 +168,7 @@ storiesOf('Molecules | Input / Select', module)
       const SELECT_NAME = 'mySelect';
 
       // @ts-ignore
-      const [_, forceUpdate] = React.useState<any[]>([]); // eslint-disable-line @typescript-eslint/no-unused-vars
+      const [_, forceUpdate] = React.useState([]); // eslint-disable-line @typescript-eslint/no-unused-vars
 
       return (
         <form name={FORM_NAME}>
@@ -181,6 +181,7 @@ storiesOf('Molecules | Input / Select', module)
             // Every time the value updates
             // The story gonna rerender
             // So we have fresh stuff from document.forms
+            // @ts-ignore
             onChange={forceUpdate}
           />
           <br />
