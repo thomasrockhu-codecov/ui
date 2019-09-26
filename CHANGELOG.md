@@ -1,3 +1,22 @@
+# [1.47.0](https://github.com/nordnet/ui/compare/v1.46.0...v1.47.0) (2019-09-26)
+
+
+### Bug Fixes
+
+* colors and borders ([0ec9f0d](https://github.com/nordnet/ui/commit/0ec9f0d))
+* deprecate old props ([cde8550](https://github.com/nordnet/ui/commit/cde8550))
+* merge fix ([2f9431a](https://github.com/nordnet/ui/commit/2f9431a))
+* merge master ([761fa96](https://github.com/nordnet/ui/commit/761fa96))
+* refactor stories of required ([25023b1](https://github.com/nordnet/ui/commit/25023b1))
+* remove internal form field ([8b14e49](https://github.com/nordnet/ui/commit/8b14e49))
+* remove star from required by defaut ([fb76e7a](https://github.com/nordnet/ui/commit/fb76e7a))
+
+
+### Features
+
+* add with error and required props ([8992488](https://github.com/nordnet/ui/commit/8992488))
+* wrap with form field ([3f08b98](https://github.com/nordnet/ui/commit/3f08b98))
+
 # [1.46.0](https://github.com/nordnet/ui/compare/v1.45.5...v1.46.0) (2019-09-25)
 
 
