@@ -1,3 +1,43 @@
+# [1.46.0](https://github.com/nordnet/ui/compare/v1.45.5...v1.46.0) (2019-09-25)
+
+
+### Bug Fixes
+
+* adapt to the new formField ([83c817b](https://github.com/nordnet/ui/commit/83c817b))
+* add color for selectoptionbackground ([36ebc70](https://github.com/nordnet/ui/commit/36ebc70))
+* avatar flex ([6d16ac3](https://github.com/nordnet/ui/commit/6d16ac3))
+* avatar size S adjustment ([db8041c](https://github.com/nordnet/ui/commit/db8041c))
+* button-ish link styles resetting ([76dc10f](https://github.com/nordnet/ui/commit/76dc10f))
+* icons ([9c70c66](https://github.com/nordnet/ui/commit/9c70c66))
+* pr edits ([e15d088](https://github.com/nordnet/ui/commit/e15d088))
+* remove unnesessary styles from link ([bdb45f5](https://github.com/nordnet/ui/commit/bdb45f5))
+* revert normalizedButton, gen storyshots ([e89e521](https://github.com/nordnet/ui/commit/e89e521))
+* storyshots ([11f0a23](https://github.com/nordnet/ui/commit/11f0a23))
+* stylelint ([2a47c5a](https://github.com/nordnet/ui/commit/2a47c5a))
+* stylelint ([5fc06ac](https://github.com/nordnet/ui/commit/5fc06ac))
+* tests ([e9cbdfd](https://github.com/nordnet/ui/commit/e9cbdfd))
+* types ([45489ef](https://github.com/nordnet/ui/commit/45489ef))
+* types and tests ([7691848](https://github.com/nordnet/ui/commit/7691848))
+
+
+### Features
+
+* add checkmark icon ([d63141b](https://github.com/nordnet/ui/commit/d63141b))
+* add fullWidth support ([a227fe7](https://github.com/nordnet/ui/commit/a227fe7))
+* add singleSelectList ([cf25974](https://github.com/nordnet/ui/commit/cf25974))
+* deprecate old select ([80f1b13](https://github.com/nordnet/ui/commit/80f1b13))
+* focus handlers ([f9f88dc](https://github.com/nordnet/ui/commit/f9f88dc))
+* formField forwardRef and error state focus state ([fa4d5c7](https://github.com/nordnet/ui/commit/fa4d5c7))
+* forwardRefs, size for avatar, normallizedButton no padding ([8062898](https://github.com/nordnet/ui/commit/8062898))
+* hidden select ([963c920](https://github.com/nordnet/ui/commit/963c920))
+* hookz ([a230723](https://github.com/nordnet/ui/commit/a230723))
+* icon improvements, add checkmark, addwithCircle ([7152156](https://github.com/nordnet/ui/commit/7152156))
+* more adjustments ([2ea0bce](https://github.com/nordnet/ui/commit/2ea0bce))
+* pr edits ([96c5ecf](https://github.com/nordnet/ui/commit/96c5ecf))
+* remove provider, add disabled state ([c895977](https://github.com/nordnet/ui/commit/c895977))
+* select refactoring ([7b90286](https://github.com/nordnet/ui/commit/7b90286))
+* wip lets start with review of select ([1225942](https://github.com/nordnet/ui/commit/1225942))
+
 ## [1.45.5](https://github.com/nordnet/ui/compare/v1.45.4...v1.45.5) (2019-09-24)
 
 
