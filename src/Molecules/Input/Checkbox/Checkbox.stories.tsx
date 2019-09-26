@@ -102,7 +102,6 @@ storiesOf('Molecules | Input / Checkbox', module)
         <FormField
           label="Colors"
           group
-          required
           {...(hasGroupError ? { error: 'This field is required' } : {})}
         >
           <Flexbox container gutter={5}>
