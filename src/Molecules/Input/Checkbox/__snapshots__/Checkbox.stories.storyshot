@@ -1,14 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Storyshots Molecules | Input / Checkbox Default 1`] = `
-.c4 {
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-}
-
 .c8 {
   box-sizing: border-box;
   display: -webkit-box;
@@ -19,6 +11,18 @@ exports[`Storyshots Molecules | Input / Checkbox Default 1`] = `
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c4 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -73,6 +77,9 @@ exports[`Storyshots Molecules | Input / Checkbox Default 1`] = `
   height: 20px;
   border: 1px solid #BCBCB6;
   position: relative;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
 }
 
 .c7::before {
@@ -120,6 +127,7 @@ exports[`Storyshots Molecules | Input / Checkbox Default 1`] = `
 
 .c10 {
   padding-left: 8px;
+  white-space: initial;
 }
 
 <div
@@ -201,15 +209,7 @@ Array [
       Disabled
     </span>
   </div>,
-  .c7 {
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.c11 {
+  .c11 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -219,6 +219,18 @@ Array [
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c7 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -273,6 +285,9 @@ Array [
   height: 20px;
   border: 1px solid #BCBCB6;
   position: relative;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
 }
 
 .c10::before {
@@ -342,6 +357,7 @@ Array [
 
 .c13 {
   padding-left: 8px;
+  white-space: initial;
 }
 
 .c0 {
@@ -536,14 +552,6 @@ Array [
 `;
 
 exports[`Storyshots Molecules | Input / Checkbox In a group 1`] = `
-.c8 {
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-}
-
 .c5 {
   box-sizing: border-box;
   display: -webkit-box;
@@ -573,6 +581,18 @@ exports[`Storyshots Molecules | Input / Checkbox In a group 1`] = `
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c8 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -648,6 +668,9 @@ exports[`Storyshots Molecules | Input / Checkbox In a group 1`] = `
   height: 20px;
   border: 1px solid #BCBCB6;
   position: relative;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
 }
 
 .c11::before {
@@ -717,6 +740,7 @@ exports[`Storyshots Molecules | Input / Checkbox In a group 1`] = `
 
 .c14 {
   padding-left: 8px;
+  white-space: initial;
 }
 
 <div
@@ -882,14 +906,6 @@ exports[`Storyshots Molecules | Input / Checkbox In a group 1`] = `
 `;
 
 exports[`Storyshots Molecules | Input / Checkbox In a group with error 1`] = `
-.c8 {
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-}
-
 .c5 {
   box-sizing: border-box;
   display: -webkit-box;
@@ -919,6 +935,18 @@ exports[`Storyshots Molecules | Input / Checkbox In a group with error 1`] = `
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c8 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -1012,6 +1040,9 @@ exports[`Storyshots Molecules | Input / Checkbox In a group with error 1`] = `
   height: 20px;
   border: 1px solid #BCBCB6;
   position: relative;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
 }
 
 .c11::before {
@@ -1081,6 +1112,7 @@ exports[`Storyshots Molecules | Input / Checkbox In a group with error 1`] = `
 
 .c14 {
   padding-left: 8px;
+  white-space: initial;
 }
 
 <div
@@ -1294,15 +1326,7 @@ Array [
       Required
     </span>
   </div>,
-  .c7 {
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.c11 {
+  .c11 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -1312,6 +1336,18 @@ Array [
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c7 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -1366,6 +1402,9 @@ Array [
   height: 20px;
   border: 1px solid #BCBCB6;
   position: relative;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
 }
 
 .c10::before {
@@ -1413,6 +1452,7 @@ Array [
 
 .c13 {
   padding-left: 8px;
+  white-space: initial;
 }
 
 .c0 {
@@ -1606,14 +1646,6 @@ Array [
 `;
 
 exports[`Storyshots Molecules | Input / Checkbox With all actions 1`] = `
-.c4 {
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-}
-
 .c8 {
   box-sizing: border-box;
   display: -webkit-box;
@@ -1624,6 +1656,18 @@ exports[`Storyshots Molecules | Input / Checkbox With all actions 1`] = `
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c4 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -1678,6 +1722,9 @@ exports[`Storyshots Molecules | Input / Checkbox With all actions 1`] = `
   height: 20px;
   border: 1px solid #BCBCB6;
   position: relative;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
 }
 
 .c7::before {
@@ -1747,6 +1794,7 @@ exports[`Storyshots Molecules | Input / Checkbox With all actions 1`] = `
 
 .c10 {
   padding-left: 8px;
+  white-space: initial;
 }
 
 <div
@@ -1805,14 +1853,6 @@ exports[`Storyshots Molecules | Input / Checkbox With all actions 1`] = `
 `;
 
 exports[`Storyshots Molecules | Input / Checkbox With an error if not checked 1`] = `
-.c4 {
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-}
-
 .c8 {
   box-sizing: border-box;
   display: -webkit-box;
@@ -1823,6 +1863,18 @@ exports[`Storyshots Molecules | Input / Checkbox With an error if not checked 1`
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c4 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -1895,6 +1947,9 @@ exports[`Storyshots Molecules | Input / Checkbox With an error if not checked 1`
   height: 20px;
   border: 1px solid #BCBCB6;
   position: relative;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
 }
 
 .c7::before {
@@ -1964,6 +2019,7 @@ exports[`Storyshots Molecules | Input / Checkbox With an error if not checked 1`
 
 .c10 {
   padding-left: 8px;
+  white-space: initial;
 }
 
 <div
@@ -2029,14 +2085,6 @@ exports[`Storyshots Molecules | Input / Checkbox With an error if not checked 1`
 `;
 
 exports[`Storyshots Molecules | Input / Checkbox With auto focus 1`] = `
-.c4 {
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-}
-
 .c8 {
   box-sizing: border-box;
   display: -webkit-box;
@@ -2047,6 +2095,18 @@ exports[`Storyshots Molecules | Input / Checkbox With auto focus 1`] = `
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c4 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -2101,6 +2161,9 @@ exports[`Storyshots Molecules | Input / Checkbox With auto focus 1`] = `
   height: 20px;
   border: 1px solid #BCBCB6;
   position: relative;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
 }
 
 .c7::before {
@@ -2170,6 +2233,7 @@ exports[`Storyshots Molecules | Input / Checkbox With auto focus 1`] = `
 
 .c10 {
   padding-left: 8px;
+  white-space: initial;
 }
 
 <div
@@ -2223,15 +2287,7 @@ exports[`Storyshots Molecules | Input / Checkbox With auto focus 1`] = `
 
 exports[`Storyshots Molecules | Input / Checkbox With checked (Controlled behaviour) 1`] = `
 Array [
-  .c4 {
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.c8 {
+  .c8 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -2241,6 +2297,18 @@ Array [
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c4 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -2295,6 +2363,9 @@ Array [
   height: 20px;
   border: 1px solid #BCBCB6;
   position: relative;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
 }
 
 .c7::before {
@@ -2342,6 +2413,7 @@ Array [
 
 .c10 {
   padding-left: 8px;
+  white-space: initial;
 }
 
 <div
@@ -2402,14 +2474,6 @@ Array [
 `;
 
 exports[`Storyshots Molecules | Input / Checkbox With default checked 1`] = `
-.c4 {
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-}
-
 .c8 {
   box-sizing: border-box;
   display: -webkit-box;
@@ -2420,6 +2484,18 @@ exports[`Storyshots Molecules | Input / Checkbox With default checked 1`] = `
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c4 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -2474,6 +2550,9 @@ exports[`Storyshots Molecules | Input / Checkbox With default checked 1`] = `
   height: 20px;
   border: 1px solid #BCBCB6;
   position: relative;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
 }
 
 .c7::before {
@@ -2521,6 +2600,7 @@ exports[`Storyshots Molecules | Input / Checkbox With default checked 1`] = `
 
 .c10 {
   padding-left: 8px;
+  white-space: initial;
 }
 
 <div
