@@ -1,3 +1,11 @@
+## [1.47.1](https://github.com/nordnet/ui/compare/v1.47.0...v1.47.1) (2019-09-26)
+
+
+### Bug Fixes
+
+* one more attempt to fix storysource ([8b18796](https://github.com/nordnet/ui/commit/8b18796))
+* storysource ([e53071b](https://github.com/nordnet/ui/commit/e53071b))
+
 # [1.47.0](https://github.com/nordnet/ui/compare/v1.46.0...v1.47.0) (2019-09-26)
 
 
