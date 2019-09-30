@@ -24,15 +24,22 @@ const Circle = styled.div`
   &::after {
     content: '';
     display: block;
-    width: 100%;
-    height: 100%;
     position: absolute;
+    top: 50%;
+    left: 50%;
     border-radius: 50%;
+    transform: translate(-50%, -50%);
   }
 
   &::before {
+    width: 100%;
+    height: 100%;
     padding: 2px;
-    transform: translate(-3px, -3px);
+  }
+
+  &::after {
+    width: ${p => p.theme.spacing.unit(RADIO_SIZE - 2)}px;
+    height: ${p => p.theme.spacing.unit(RADIO_SIZE - 2)}px;
   }
 `;
 
