@@ -4524,7 +4524,7 @@ Array [
 }
 
 .c2 {
-  width: 200px;
+  width: 300px;
   display: inline-block;
 }
 
@@ -4640,6 +4640,7 @@ Array [
     >
       <div
         className="c2"
+        width="300px"
       >
         <label
           className="c3"
@@ -4654,6 +4655,7 @@ Array [
               label="User account"
               onChange={[Function]}
               placeholder="Select account"
+              width="300px"
             >
               <div
                 className="c6"

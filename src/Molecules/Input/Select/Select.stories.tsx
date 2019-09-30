@@ -20,21 +20,21 @@ const accountOptions = [
     label: 'First account',
     value: '1',
     symbol: 'AF',
-    accno: 123,
+    accno: '123',
     amount: { value: 212, currency: 'SEK' },
   },
   {
     label: 'Second acc 2',
     value: '2',
     symbol: '-',
-    accno: 123,
+    accno: '123',
     amount: { value: 111, currency: 'SEK' },
   },
   {
     label: 'Third 3',
     value: '3',
     symbol: 'ISK',
-    accno: 123,
+    accno: '123',
     amount: { value: 1, currency: 'DKK' },
   },
 ];
@@ -496,12 +496,48 @@ storiesOf('Molecules | Input / Select', module)
       );
     };
 
+    const MultiSelectListItem = ({ index }: any, ref: any) => {
+      const [state] = useSelectReducer();
+      const option = state.options[index];
+      const selected = state.value.includes(option);
+
+      return (
+        <StyledBox px={2} py={1} ref={ref} tabIndex={0}>
+          <Flexbox container alignItems="center" gutter={3}>
+            <Flexbox item container alignItems="center">
+              {/** TODO: revisit a11y here */}
+              <Input.Checkbox name="example" label="" checked={selected} />
+            </Flexbox>
+            <Flexbox item container justifyContent="space-between" alignItems="center" gutter={4}>
+              <Flexbox item container direction="column" grow={1}>
+                <Flexbox item>
+                  <Typography type="secondary" color={t => t.color.text} weight="bold">
+                    {option.label}
+                  </Typography>
+                  <Typography type="tertiary" color={t => t.color.text}>
+                    {' '}
+                    <span aria-hidden>&#183;</span> {option.accno}
+                  </Typography>
+                </Flexbox>
+                <Flexbox item>
+                  <Typography type="caption" color={t => t.color.text}>
+                    <Number value={option.amount.value} currency={option.amount.currency} />
+                  </Typography>
+                </Flexbox>
+              </Flexbox>
+            </Flexbox>
+          </Flexbox>
+        </StyledBox>
+      );
+    };
+
     return (
       <Input.Select
         reducer={multiselectReducer}
         options={accountOptions}
-        components={{ SelectedValue: MultiSelectValue }}
+        components={{ SelectedValue: MultiSelectValue, ListItem: MultiSelectListItem }}
         label="User account"
+        width="300px"
         placeholder="Select account"
         onChange={action('change')}
       />

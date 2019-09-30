@@ -156,21 +156,23 @@ const Select = (props: Props) => {
   );
 
   const { open, value } = state;
-
   const buttonRef = React.useRef<HTMLButtonElement>(null);
   const customSelectListRef = React.useRef<HTMLDivElement>(null);
 
-  const { setRef, onKeyDown: handleListItemKeyDown, itemsRefs } = useKeyboardNavigation({
-    itemsLength: options.filter(x => !x.disabled).length,
-    onEscape: () => {
-      dispatch({ type: defaultActionTypes['Select.Close'] });
-      if (buttonRef.current) {
-        buttonRef.current.focus();
-      }
+  const { setRef, onKeyDown: handleListItemKeyDown, itemsRefs } = useKeyboardNavigation(
+    {
+      itemsLength: options.filter(x => !x.disabled).length,
+      onEscape: () => {
+        dispatch({ type: defaultActionTypes['Select.Close'] });
+        if (buttonRef.current) {
+          buttonRef.current.focus();
+        }
+      },
     },
-  });
+    [options],
+  );
 
-  React.useLayoutEffect(() => {
+  React.useEffect(() => {
     if (autoFocusFirstOption) {
       if (itemsRefs.length > 0 && itemsRefs.every(i => Boolean(i))) {
         itemsRefs[0].focus();
