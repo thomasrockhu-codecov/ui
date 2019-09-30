@@ -1,3 +1,10 @@
+## [1.47.3](https://github.com/nordnet/ui/compare/v1.47.2...v1.47.3) (2019-09-30)
+
+
+### Bug Fixes
+
+* add gutter to button in group examples ([edfddd7](https://github.com/nordnet/ui/commit/edfddd7))
+
 ## [1.47.2](https://github.com/nordnet/ui/compare/v1.47.1...v1.47.2) (2019-09-26)
 
 
