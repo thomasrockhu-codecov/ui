@@ -216,13 +216,13 @@ const Select = (props: Props) => {
   const isFocused = React.useRef(false);
 
   const handleBlur = (e: React.FocusEvent) => {
-    if (!onBlur) return;
     if (
       inputWrapperRef.current &&
       !inputWrapperRef.current.contains((e.relatedTarget as unknown) as Node)
     ) {
-      onBlur(e);
+      if (onBlur) onBlur(e);
       isFocused.current = false;
+      dispatch({ type: defaultActionTypes['Select.Close'] });
     }
   };
   const handleFocus = (e: React.FocusEvent) => {
@@ -285,6 +285,7 @@ const Select = (props: Props) => {
               key={3}
               component={List}
               noFormField={noFormField}
+              onBlur={() => dispatch({ type: defaultActionTypes['Select.Close'] })}
             >
               {options.map((x: any, index: number) => (
                 <ListItemWrapper

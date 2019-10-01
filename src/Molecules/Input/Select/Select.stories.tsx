@@ -134,6 +134,30 @@ storiesOf('Molecules | Input / Select', module)
       />
     );
   })
+  .add('Two', () => {
+    return (
+      <>
+        <Input.Select
+          reducer={loggingReducer}
+          options={accountOptions}
+          label="User account"
+          placeholder="Select account"
+          onChange={action('change')}
+          onBlur={action('blur')}
+          onFocus={action('focus')}
+        />
+        <Input.Select
+          reducer={loggingReducer}
+          options={accountOptions}
+          label="User account"
+          placeholder="Select account"
+          onChange={action('change')}
+          onBlur={action('blur')}
+          onFocus={action('focus')}
+        />
+      </>
+    );
+  })
   .add('Full width', () => {
     return (
       <Input.Select
