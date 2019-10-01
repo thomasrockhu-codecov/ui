@@ -155,6 +155,17 @@ const Select = (props: Props) => {
     [_state, options, placeholder, isControlledMode, valueFromProps, reducer],
   );
 
+  // And defer the real update
+  React.useEffect(() => {
+    dispatch({
+      type: defaultActionTypes['Select.SyncState'],
+      payload: {
+        options,
+        placeholder,
+        value: isControlledMode ? valueFromProps : _state.value,
+      },
+    });
+  }, [options, placeholder, isControlledMode, valueFromProps, dispatch]);
   const { open, value } = state;
   const buttonRef = React.useRef<HTMLButtonElement>(null);
   const customSelectListRef = React.useRef<HTMLDivElement>(null);
