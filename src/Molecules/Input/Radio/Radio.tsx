@@ -59,7 +59,6 @@ const Input = styled(CleanInput).attrs({ type: 'radio' })<InternalInputProps>`
   cursor: pointer;
 
   &:checked + ${Circle} {
-    border-color: ${p => p.theme.color.cta};
     &::after {background: ${p => p.theme.color.cta};}
   }
 

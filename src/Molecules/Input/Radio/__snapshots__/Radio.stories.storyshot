@@ -93,10 +93,6 @@ exports[`Storyshots Molecules | Input / Radio Default 1`] = `
   cursor: pointer;
 }
 
-.c5:checked + .c6 {
-  border-color: #0046FF;
-}
-
 .c5:checked + .c6::after {
   background: #0046FF;
 }
@@ -279,10 +275,6 @@ Array [
   cursor: pointer;
 }
 
-.c8:checked + .c9 {
-  border-color: #0046FF;
-}
-
 .c8:checked + .c9::after {
   background: #0046FF;
 }
@@ -301,10 +293,6 @@ Array [
 
 .c8:focus + .c9::before {
   border: 1px solid #0046FF;
-}
-
-.c13:checked + .c9 {
-  border-color: #0046FF;
 }
 
 .c13:checked + .c9::after {
@@ -632,10 +620,6 @@ exports[`Storyshots Molecules | Input / Radio In a group 1`] = `
   cursor: pointer;
 }
 
-.c9:checked + .c10 {
-  border-color: #0046FF;
-}
-
 .c9:checked + .c10::after {
   background: #0046FF;
 }
@@ -654,10 +638,6 @@ exports[`Storyshots Molecules | Input / Radio In a group 1`] = `
 
 .c9:focus + .c10::before {
   border: 1px solid #0046FF;
-}
-
-.c14:checked + .c10 {
-  border-color: #0046FF;
 }
 
 .c14:checked + .c10::after {
@@ -952,10 +932,6 @@ exports[`Storyshots Molecules | Input / Radio In a group with error 1`] = `
   border-color: #4B4B46;
 }
 
-.c16:checked + .c10 {
-  border-color: #0046FF;
-}
-
 .c16:checked + .c10::after {
   background: #0046FF;
 }
@@ -982,10 +958,6 @@ exports[`Storyshots Molecules | Input / Radio In a group with error 1`] = `
   height: 0;
   width: 0;
   cursor: pointer;
-}
-
-.c9:checked + .c10 {
-  border-color: #0046FF;
 }
 
 .c9:checked + .c10::after {
@@ -1278,10 +1250,6 @@ Array [
   cursor: pointer;
 }
 
-.c8:checked + .c9 {
-  border-color: #0046FF;
-}
-
 .c8:checked + .c9::after {
   background: #0046FF;
 }
@@ -1562,10 +1530,6 @@ exports[`Storyshots Molecules | Input / Radio With all actions 1`] = `
   cursor: pointer;
 }
 
-.c5:checked + .c6 {
-  border-color: #0046FF;
-}
-
 .c5:checked + .c6::after {
   background: #0046FF;
 }
@@ -1584,10 +1548,6 @@ exports[`Storyshots Molecules | Input / Radio With all actions 1`] = `
 
 .c5:focus + .c6::before {
   border: 1px solid #0046FF;
-}
-
-.c10:checked + .c6 {
-  border-color: #0046FF;
 }
 
 .c10:checked + .c6::after {
@@ -1763,10 +1723,6 @@ exports[`Storyshots Molecules | Input / Radio With an error if not checked 1`] =
   border-color: #4B4B46;
 }
 
-.c12:checked + .c6 {
-  border-color: #0046FF;
-}
-
 .c12:checked + .c6::after {
   background: #0046FF;
 }
@@ -1793,10 +1749,6 @@ exports[`Storyshots Molecules | Input / Radio With an error if not checked 1`] =
   height: 0;
   width: 0;
   cursor: pointer;
-}
-
-.c5:checked + .c6 {
-  border-color: #0046FF;
 }
 
 .c5:checked + .c6::after {
@@ -1969,10 +1921,6 @@ exports[`Storyshots Molecules | Input / Radio With auto focus 1`] = `
   cursor: pointer;
 }
 
-.c5:checked + .c6 {
-  border-color: #0046FF;
-}
-
 .c5:checked + .c6::after {
   background: #0046FF;
 }
@@ -1991,10 +1939,6 @@ exports[`Storyshots Molecules | Input / Radio With auto focus 1`] = `
 
 .c5:focus + .c6::before {
   border: 1px solid #0046FF;
-}
-
-.c10:checked + .c6 {
-  border-color: #0046FF;
 }
 
 .c10:checked + .c6::after {
@@ -2153,10 +2097,6 @@ Array [
   height: 0;
   width: 0;
   cursor: pointer;
-}
-
-.c5:checked + .c6 {
-  border-color: #0046FF;
 }
 
 .c5:checked + .c6::after {
@@ -2318,10 +2258,6 @@ exports[`Storyshots Molecules | Input / Radio With default checked 1`] = `
   height: 0;
   width: 0;
   cursor: pointer;
-}
-
-.c5:checked + .c6 {
-  border-color: #0046FF;
 }
 
 .c5:checked + .c6::after {
