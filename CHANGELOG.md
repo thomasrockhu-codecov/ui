@@ -1,3 +1,10 @@
+## [1.47.4-beta.1](https://github.com/nordnet/ui/compare/v1.47.3...v1.47.4-beta.1@beta) (2019-10-01)
+
+
+### Bug Fixes
+
+* slim breakpoints ([5dbf187](https://github.com/nordnet/ui/commit/5dbf187))
+
 ## [1.47.3](https://github.com/nordnet/ui/compare/v1.47.2...v1.47.3) (2019-09-30)
 
 
