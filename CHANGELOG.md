@@ -1,3 +1,10 @@
+## [1.49.1](https://github.com/nordnet/ui/compare/v1.49.0...v1.49.1) (2019-10-03)
+
+
+### Bug Fixes
+
+* remove generators ([0569072](https://github.com/nordnet/ui/commit/0569072))
+
 # [1.49.0](https://github.com/nordnet/ui/compare/v1.48.0...v1.49.0) (2019-10-03)
 
 
