@@ -1,3 +1,18 @@
+# [1.49.0](https://github.com/nordnet/ui/compare/v1.48.0...v1.49.0) (2019-10-03)
+
+
+### Bug Fixes
+
+* merge master ([536c156](https://github.com/nordnet/ui/commit/536c156))
+* remove blue border ([8f083c9](https://github.com/nordnet/ui/commit/8f083c9))
+
+
+### Features
+
+* create radio base ([64dbda9](https://github.com/nordnet/ui/commit/64dbda9))
+* create textarea ([a882ab2](https://github.com/nordnet/ui/commit/a882ab2))
+* style the different states ([563c93d](https://github.com/nordnet/ui/commit/563c93d))
+
 # [1.48.0](https://github.com/nordnet/ui/compare/v1.47.4...v1.48.0) (2019-10-03)
 
 
