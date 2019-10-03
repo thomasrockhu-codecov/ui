@@ -1,11 +1,11 @@
 import React from 'react';
 import styled from 'styled-components';
-import { IconBase } from '../IconBase';
+import { IconBase, getColor } from '../IconBase';
 import { ChildProps, StyledChildProps } from '../IconBase.types';
 
 const StyledCircle = styled.circle<StyledChildProps>`
   ${p => {
-    const strokeColor = p.strokeColorFn ? p.strokeColorFn(p.theme) : p.theme.color.svgStroke;
+    const strokeColor = getColor(p.theme, p.theme.color.svgStroke, p.strokeColorFn);
     return `stroke: ${strokeColor};`;
   }}
 `;
