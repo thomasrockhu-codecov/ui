@@ -1,3 +1,19 @@
+# [1.48.0](https://github.com/nordnet/ui/compare/v1.47.4...v1.48.0) (2019-10-03)
+
+
+### Bug Fixes
+
+* change breakpoints and paddings ([834e97a](https://github.com/nordnet/ui/commit/834e97a))
+* change breakpoints and paddings ([6cb787b](https://github.com/nordnet/ui/commit/6cb787b))
+* slim breakpoints ([5dbf187](https://github.com/nordnet/ui/commit/5dbf187))
+* tighten breakpoints further ([54419c3](https://github.com/nordnet/ui/commit/54419c3))
+* typo ([950b4b8](https://github.com/nordnet/ui/commit/950b4b8))
+
+
+### Features
+
+* update grid ([98737fa](https://github.com/nordnet/ui/commit/98737fa))
+
 ## [1.47.4-beta.4](https://github.com/nordnet/ui/compare/v1.47.4-beta.3@beta...v1.47.4-beta.4@beta) (2019-10-02)
 
 
