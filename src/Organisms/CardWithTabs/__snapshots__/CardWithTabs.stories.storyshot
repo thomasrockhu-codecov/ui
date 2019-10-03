@@ -169,7 +169,7 @@ Array [
   padding-bottom: 8px;
 }
 
-@media (min-width:768px) {
+@media (min-width:760px) {
   .c4 {
     font-size: 20px;
     line-height: 1.2;
@@ -437,7 +437,7 @@ exports[`Storyshots Organisms | CardWithTabs Integration: with Typography and ex
   color: red;
 }
 
-@media (min-width:768px) {
+@media (min-width:760px) {
   .c4 {
     font-size: 20px;
     line-height: 1.2;
@@ -701,7 +701,7 @@ exports[`Storyshots Organisms | CardWithTabs with initialActiveTabIndex 1`] = `
   padding-bottom: 8px;
 }
 
-@media (min-width:768px) {
+@media (min-width:760px) {
   .c4 {
     font-size: 20px;
     line-height: 1.2;
