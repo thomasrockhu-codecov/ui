@@ -27,6 +27,14 @@
 
 * slim breakpoints ([5dbf187](https://github.com/nordnet/ui/commit/5dbf187))
 
+## [1.47.4](https://github.com/nordnet/ui/compare/v1.47.3...v1.47.4) (2019-10-01)
+
+
+### Bug Fixes
+
+* hideLabel Input.Text ([4026034](https://github.com/nordnet/ui/commit/4026034))
+* less padding bottom on cardwithtabs ([7ccaf2c](https://github.com/nordnet/ui/commit/7ccaf2c))
+
 ## [1.47.3](https://github.com/nordnet/ui/compare/v1.47.2...v1.47.3) (2019-09-30)
 
 
