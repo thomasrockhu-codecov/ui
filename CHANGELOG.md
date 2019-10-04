@@ -1,3 +1,13 @@
+## [1.50.3](https://github.com/nordnet/ui/compare/v1.50.2...v1.50.3) (2019-10-04)
+
+
+### Bug Fixes
+
+* checkbox ([fdfbdb4](https://github.com/nordnet/ui/commit/fdfbdb4))
+* display mode ([0845451](https://github.com/nordnet/ui/commit/0845451))
+* dont nudge on click in ie11 ([2491793](https://github.com/nordnet/ui/commit/2491793))
+* snapshots ([e33b21c](https://github.com/nordnet/ui/commit/e33b21c))
+
 ## [1.50.2](https://github.com/nordnet/ui/compare/v1.50.1...v1.50.2) (2019-10-04)
 
 
