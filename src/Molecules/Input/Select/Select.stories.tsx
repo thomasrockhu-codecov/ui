@@ -54,6 +54,7 @@ const StyledBox: React.FC<any> = styled(Box)`
 const FlexedBox = styled(Box)<any>`
   flex-grow: 1;
   display: flex;
+  align-items: center;
 `;
 
 const AccountValue = () => {

@@ -1,6 +1,6 @@
 import * as React from 'react';
 import R from 'ramda';
-
+import styled from 'styled-components';
 import { Box } from '../../..';
 import {
   OptionList as DefaultList,
@@ -26,6 +26,13 @@ const getLabelOrPlaceholder = <T extends OptionBase>({
   return selectedOptionLabel;
 };
 
+const StyledFlexedBox = styled(Box)`
+  flex-grow: 1;
+
+  display: flex;
+
+  align-items: center;
+`;
 // FIXME
 // Need to upgrade to ts@3.5+
 // Then it can be written as
@@ -73,7 +80,7 @@ export const defaultComponents = {
   List: DefaultList,
   SelectedValue: () => {
     const [state] = useSelectReducer();
-    return <Box px={2}>{getLabelOrPlaceholder(state)}</Box>;
+    return <StyledFlexedBox px={2}>{getLabelOrPlaceholder(state)}</StyledFlexedBox>;
   },
 };
 
