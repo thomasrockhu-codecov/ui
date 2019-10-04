@@ -42,7 +42,7 @@ exports[`Storyshots Molecules | Input / Checkbox Default 1`] = `
   user-select: none;
   width: 12px;
   height: 12px;
-  fill: #FFFFFF;
+  fill: transparent;
   -webkit-flex-shrink: 0;
   -ms-flex-negative: 0;
   flex-shrink: 0;
@@ -243,6 +243,20 @@ Array [
   cursor: pointer;
 }
 
+.c15 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 12px;
+  height: 12px;
+  fill: transparent;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
+}
+
 .c12 {
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -333,25 +347,25 @@ Array [
   border: 1px solid #0046FF;
 }
 
-.c15:checked + .c9 {
+.c16:checked + .c9 {
   border-color: #0046FF;
   background: #0046FF;
 }
 
-.c15[disabled] + .c9 {
+.c16[disabled] + .c9 {
   border-color: #EBEBE8;
 }
 
-.c15:checked[disabled] + .c9 {
+.c16:checked[disabled] + .c9 {
   border-color: #EBEBE8;
   background: #EBEBE8;
 }
 
-.c15 + .c9::before {
+.c16 + .c9::before {
   border: 1px solid #FF1900;
 }
 
-.c15:focus + .c9::before {
+.c16:focus + .c9::before {
   border: 1px solid #0046FF;
 }
 
@@ -517,7 +531,7 @@ Array [
                 >
                   <svg
                     aria-hidden="true"
-                    className="c12"
+                    className="c15"
                     focusable="false"
                     preserveAspectRatio="xMidYMid meet"
                     role="presentation"
@@ -612,7 +626,7 @@ exports[`Storyshots Molecules | Input / Checkbox In a group 1`] = `
   user-select: none;
   width: 12px;
   height: 12px;
-  fill: #FFFFFF;
+  fill: transparent;
   -webkit-flex-shrink: 0;
   -ms-flex-negative: 0;
   flex-shrink: 0;
@@ -975,7 +989,7 @@ exports[`Storyshots Molecules | Input / Checkbox In a group with error 1`] = `
   user-select: none;
   width: 12px;
   height: 12px;
-  fill: #FFFFFF;
+  fill: transparent;
   -webkit-flex-shrink: 0;
   -ms-flex-negative: 0;
   flex-shrink: 0;
@@ -1367,7 +1381,7 @@ Array [
   user-select: none;
   width: 12px;
   height: 12px;
-  fill: #FFFFFF;
+  fill: transparent;
   -webkit-flex-shrink: 0;
   -ms-flex-negative: 0;
   flex-shrink: 0;
@@ -1687,7 +1701,7 @@ exports[`Storyshots Molecules | Input / Checkbox With all actions 1`] = `
   user-select: none;
   width: 12px;
   height: 12px;
-  fill: #FFFFFF;
+  fill: transparent;
   -webkit-flex-shrink: 0;
   -ms-flex-negative: 0;
   flex-shrink: 0;
@@ -1903,7 +1917,7 @@ exports[`Storyshots Molecules | Input / Checkbox With an error if not checked 1`
   user-select: none;
   width: 12px;
   height: 12px;
-  fill: #FFFFFF;
+  fill: transparent;
   -webkit-flex-shrink: 0;
   -ms-flex-negative: 0;
   flex-shrink: 0;
@@ -2126,7 +2140,7 @@ exports[`Storyshots Molecules | Input / Checkbox With auto focus 1`] = `
   user-select: none;
   width: 12px;
   height: 12px;
-  fill: #FFFFFF;
+  fill: transparent;
   -webkit-flex-shrink: 0;
   -ms-flex-negative: 0;
   flex-shrink: 0;
@@ -2328,7 +2342,7 @@ Array [
   user-select: none;
   width: 12px;
   height: 12px;
-  fill: #FFFFFF;
+  fill: transparent;
   -webkit-flex-shrink: 0;
   -ms-flex-negative: 0;
   flex-shrink: 0;

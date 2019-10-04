@@ -128,7 +128,10 @@ const Checkbox: CheckboxComponent = props => {
             }}
           />
           <CheckmarkBox container alignItems="center" justifyContent="center">
-            <Icon.CheckMark size={3} color={t => t.color.backgroundInput} />
+            <Icon.CheckMark
+              size={3}
+              color={defaultChecked || checked ? t => t.color.backgroundInput : 'transparent'}
+            />
           </CheckmarkBox>
           <Label type="secondary" color={t => (disabled ? t.color.disabledText : t.color.text)}>
             {visuallyEmphasiseRequired ? `${label} *` : label}

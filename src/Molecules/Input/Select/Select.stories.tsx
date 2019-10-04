@@ -20,21 +20,21 @@ const accountOptions = [
     label: 'First account',
     value: '1',
     symbol: 'AF',
-    accno: 123,
+    accno: '123',
     amount: { value: 212, currency: 'SEK' },
   },
   {
     label: 'Second acc 2',
     value: '2',
     symbol: '-',
-    accno: 123,
+    accno: '123',
     amount: { value: 111, currency: 'SEK' },
   },
   {
     label: 'Third 3',
     value: '3',
     symbol: 'ISK',
-    accno: 123,
+    accno: '123',
     amount: { value: 1, currency: 'DKK' },
   },
 ];
@@ -132,6 +132,30 @@ storiesOf('Molecules | Input / Select', module)
         onBlur={action('blur')}
         onFocus={action('focus')}
       />
+    );
+  })
+  .add('Two', () => {
+    return (
+      <>
+        <Input.Select
+          reducer={loggingReducer}
+          options={accountOptions}
+          label="User account"
+          placeholder="Select account"
+          onChange={action('change')}
+          onBlur={action('blur')}
+          onFocus={action('focus')}
+        />
+        <Input.Select
+          reducer={loggingReducer}
+          options={accountOptions}
+          label="User account"
+          placeholder="Select account"
+          onChange={action('change')}
+          onBlur={action('blur')}
+          onFocus={action('focus')}
+        />
+      </>
     );
   })
   .add('Full width', () => {
@@ -470,7 +494,7 @@ storiesOf('Molecules | Input / Select', module)
     };
     return <Component />;
   })
-  .add(`🚧 Multiselect (WIP, don't use for now)`, () => {
+  .add(`Multiselect`, () => {
     const multiselectReducer = (state: SelectState, incomingAction: Action) => {
       if (incomingAction.type === actionTypes['Select.SelectValue']) {
         return {
@@ -496,12 +520,143 @@ storiesOf('Molecules | Input / Select', module)
       );
     };
 
+    const MultiSelectListItem = ({ index }: any, ref: any) => {
+      const [state] = useSelectReducer();
+      const option = state.options[index];
+      const selected = state.value.includes(option);
+
+      return (
+        <StyledBox px={2} py={1} ref={ref} tabIndex={0}>
+          <Flexbox container alignItems="center" gutter={3}>
+            <Flexbox item container alignItems="center">
+              {/** TODO: revisit a11y here */}
+              <Input.Checkbox name="example" label="" checked={selected} />
+            </Flexbox>
+            <Flexbox item container justifyContent="space-between" alignItems="center" gutter={4}>
+              <Flexbox item container direction="column" grow={1}>
+                <Flexbox item>
+                  <Typography type="secondary" color={t => t.color.text} weight="bold">
+                    {option.label}
+                  </Typography>
+                  <Typography type="tertiary" color={t => t.color.text}>
+                    {' '}
+                    <span aria-hidden>&#183;</span> {option.accno}
+                  </Typography>
+                </Flexbox>
+                <Flexbox item>
+                  <Typography type="caption" color={t => t.color.text}>
+                    <Number value={option.amount.value} currency={option.amount.currency} />
+                  </Typography>
+                </Flexbox>
+              </Flexbox>
+            </Flexbox>
+          </Flexbox>
+        </StyledBox>
+      );
+    };
+
     return (
       <Input.Select
         reducer={multiselectReducer}
         options={accountOptions}
-        components={{ SelectedValue: MultiSelectValue }}
+        components={{ SelectedValue: MultiSelectValue, ListItem: MultiSelectListItem }}
         label="User account"
+        width="300px"
+        placeholder="Select account"
+        onChange={action('change')}
+      />
+    );
+  })
+  .add('Multiselect with select all', () => {
+    // Reducer will handle selection/deselection part + select all
+    const multiselectReducer = (state: SelectState, incomingAction: Action) => {
+      if (incomingAction.type === actionTypes['Select.SelectValue']) {
+        if (incomingAction.payload && incomingAction.payload.selectAll) {
+          return { ...state, value: state.options };
+        }
+        return {
+          ...state,
+          value: [...state.value, incomingAction.payload],
+        };
+      }
+      if (incomingAction.type === 'Select.DeselectValue') {
+        if (incomingAction.payload && incomingAction.payload.selectAll) {
+          return { ...state, value: [] };
+        }
+        return {
+          ...state,
+          value: state.value.filter(x => !Object.is(x, incomingAction.payload) && !x.selectAll),
+        };
+      }
+      return Input.Select.defaults.reducer(state, incomingAction);
+    };
+
+    // SelectedValue
+    // Would be different for different use-cases
+    const MultiSelectValue = (_: any, ref: React.Ref<any>) => {
+      const [state] = useSelectReducer();
+      return (
+        <FlexedBox px={2} pr={8} ref={ref}>
+          {state.value.length === 0 ? state.placeholder : `Selected (${state.value.length})`}
+        </FlexedBox>
+      );
+    };
+
+    // prettier-ignore
+    const StyledBoxWithBorder = styled(StyledBox)`
+    ${p => !p.selectAll ? "" : `
+      border-bottom: 1px solid ${p.theme.color.divider};
+      padding-bottom: ${p.theme.spacing.unit(2)}px;
+      padding-top: ${p.theme.spacing.unit(2)}px;
+      `}
+    `;
+
+    const MultiSelectListItem = ({ index }: any, ref: any) => {
+      const [state] = useSelectReducer();
+      const option = state.options[index];
+      const selected = state.value.includes(option);
+
+      return (
+        <StyledBoxWithBorder px={2} py={1} ref={ref} tabIndex={0} selectAll={option.selectAll}>
+          <Flexbox container alignItems="center" gutter={3}>
+            <Flexbox item container alignItems="center">
+              {/** TODO: revisit a11y here */}
+              <Input.Checkbox name="example" label="" checked={selected} width="20px" />
+            </Flexbox>
+            <Flexbox item container justifyContent="space-between" alignItems="center">
+              <Flexbox item container direction="column" grow={1}>
+                <Flexbox item>
+                  <Typography type="secondary" color={t => t.color.text} weight="bold">
+                    {option.label}
+                  </Typography>
+                  {!option.selectAll && (
+                    <Typography type="tertiary" color={t => t.color.text}>
+                      {' '}
+                      <span aria-hidden>&#183;</span> {option.accno}
+                    </Typography>
+                  )}
+                </Flexbox>
+                {!option.selectAll && (
+                  <Flexbox item>
+                    <Typography type="caption" color={t => t.color.text}>
+                      <Number value={option.amount.value} currency={option.amount.currency} />
+                    </Typography>
+                  </Flexbox>
+                )}
+              </Flexbox>
+            </Flexbox>
+          </Flexbox>
+        </StyledBoxWithBorder>
+      );
+    };
+
+    return (
+      <Input.Select
+        reducer={multiselectReducer}
+        options={[{ label: 'Select All', value: 'ALL', selectAll: true }, ...accountOptions]}
+        components={{ SelectedValue: MultiSelectValue, ListItem: MultiSelectListItem }}
+        label="User account"
+        width="300px"
         placeholder="Select account"
         onChange={action('change')}
       />

@@ -107,7 +107,7 @@ const StyledOption = styled.div<Pick<OptionProps, 'selected' | 'disabled'>>`
 
 export const Option = React.forwardRef<HTMLDivElement, OptionProps>(
   ({ label, disabled, selected }, ref) => (
-    <StyledOption ref={ref} selected={selected} disabled={disabled} tabIndex={disabled ? -1 : 0}>
+    <StyledOption ref={ref} selected={selected} disabled={disabled} tabIndex={-1}>
       <Typography type="tertiary" color="inherit">
         <FullHeightFlexbox justifyContent="space-between" container>
           <Flexbox item container alignItems="center">
