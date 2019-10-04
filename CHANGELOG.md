@@ -1,3 +1,11 @@
+## [1.47.4-beta.5](https://github.com/nordnet/ui/compare/v1.47.4-beta.4@beta...v1.47.4-beta.5@beta) (2019-10-04)
+
+
+### Features
+
+* add tracking context ([7f117b2](https://github.com/nordnet/ui/commit/7f117b2))
+* add tracking to button and link ([af203fb](https://github.com/nordnet/ui/commit/af203fb))
+
 ## [1.47.4-beta.4](https://github.com/nordnet/ui/compare/v1.47.4-beta.3@beta...v1.47.4-beta.4@beta) (2019-10-02)
 
 
