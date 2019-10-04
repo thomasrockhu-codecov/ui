@@ -137,6 +137,10 @@ exports[`Storyshots Molecules | Fieldset Default 1`] = `
   background: #0046FF;
 }
 
+.c8:checked + .c9 svg {
+  fill: #FFFFFF;
+}
+
 .c8[disabled] + .c9 {
   border-color: #EBEBE8;
 }
