@@ -25,7 +25,6 @@ export const getColor = (
         )}.`,
       );
     }
-    return colorFnOrColor;
   }
   return defaultColor;
 };

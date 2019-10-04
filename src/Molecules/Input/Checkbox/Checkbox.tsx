@@ -47,8 +47,12 @@ const Input = styled(CleanInput).attrs({ type: 'checkbox' })<InternalInputProps>
   &:checked + ${CheckmarkBox} {
     border-color: ${p => p.theme.color.cta};
     background: ${p => p.theme.color.cta};
-  }
 
+    svg {
+      fill: ${p => p.theme.color.backgroundInput}
+    }
+  }
+  
   &[disabled] + ${CheckmarkBox} {
     border-color: ${p => p.theme.color.disabledBackground};
   }
@@ -128,10 +132,7 @@ const Checkbox: CheckboxComponent = props => {
             }}
           />
           <CheckmarkBox container alignItems="center" justifyContent="center">
-            <Icon.CheckMark
-              size={3}
-              color={defaultChecked || checked ? t => t.color.backgroundInput : 'transparent'}
-            />
+            <Icon.CheckMark size={3} color="transparent" />
           </CheckmarkBox>
           <Label type="secondary" color={t => (disabled ? t.color.disabledText : t.color.text)}>
             {visuallyEmphasiseRequired ? `${label} *` : label}
