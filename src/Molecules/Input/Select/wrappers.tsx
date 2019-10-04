@@ -105,6 +105,7 @@ export const ListItemWrapper = React.forwardRef<
     onClick: (params: { selected: boolean; option: Option }, e: React.MouseEvent) => void;
   }
 >((props, outerRef) => {
+  console.log({ component: props.component });
   const ref = React.useRef<HTMLLIElement>(null);
   const innerRef = React.useRef<HTMLElement>(null);
   const handleFocus = React.useCallback(() => innerRef.current && innerRef.current!.focus(), []);

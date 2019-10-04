@@ -6,6 +6,7 @@ import {
   OptionList as DefaultList,
   Option as DefaultListItem,
 } from './SingleSelectList/SingleSelectList';
+import { Option as DefaultMultiselectListItem } from './MultiSelectList/MultiSelectList';
 
 import { useSelectReducer } from './context';
 
@@ -54,6 +55,21 @@ export const defaultComponents = {
       />
     );
   }),
+  MultiSelectListItem: React.forwardRef<HTMLDivElement, { index: number }>(({ index }, ref) => {
+    const [state] = useSelectReducer();
+    const option = state.options[index];
+    const selected = state.value.includes(option);
+
+    return (
+      <DefaultMultiselectListItem
+        ref={ref}
+        selected={selected}
+        disabled={option.disabled}
+        label={option.label}
+        value={option.value}
+      />
+    );
+  }),
   List: DefaultList,
   SelectedValue: () => {
     const [state] = useSelectReducer();
@@ -67,7 +83,11 @@ export const useComponentsWithDefaults = (components: any = {}) => {
       // @ts-ignore
       R.pipe(
         // @ts-ignore
-        R.map(React.forwardRef),
+        R.map(componentRefFn =>
+          typeof componentRefFn !== 'function'
+            ? componentRefFn
+            : React.forwardRef(componentRefFn as any),
+        ),
         R.mergeRight(defaultComponents),
       )(components),
     [components],
