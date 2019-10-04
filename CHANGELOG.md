@@ -1,3 +1,17 @@
+# [1.50.0](https://github.com/nordnet/ui/compare/v1.49.1...v1.50.0) (2019-10-04)
+
+
+### Bug Fixes
+
+* tabbing out closes the select ([af9dceb](https://github.com/nordnet/ui/commit/af9dceb))
+
+
+### Features
+
+* added select all example ([c31dd51](https://github.com/nordnet/ui/commit/c31dd51))
+* allow to use predefined string colors ([b4a027f](https://github.com/nordnet/ui/commit/b4a027f))
+* completed multi account select ([8bcebd2](https://github.com/nordnet/ui/commit/8bcebd2))
+
 ## [1.49.1](https://github.com/nordnet/ui/compare/v1.49.0...v1.49.1) (2019-10-03)
 
 
