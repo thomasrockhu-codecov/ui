@@ -1,3 +1,10 @@
+## [1.50.1](https://github.com/nordnet/ui/compare/v1.50.0...v1.50.1) (2019-10-04)
+
+
+### Bug Fixes
+
+* add solid circle to icons ([8b03127](https://github.com/nordnet/ui/commit/8b03127))
+
 # [1.50.0](https://github.com/nordnet/ui/compare/v1.49.1...v1.50.0) (2019-10-04)
 
 
