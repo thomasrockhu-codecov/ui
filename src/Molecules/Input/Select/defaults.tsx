@@ -1,11 +1,12 @@
 import * as React from 'react';
 import R from 'ramda';
-
+import styled from 'styled-components';
 import { Box } from '../../..';
 import {
   OptionList as DefaultList,
   Option as DefaultListItem,
 } from './SingleSelectList/SingleSelectList';
+import { Option as DefaultMultiselectListItem } from './MultiSelectList/MultiSelectList';
 
 import { useSelectReducer } from './context';
 
@@ -25,6 +26,13 @@ const getLabelOrPlaceholder = <T extends OptionBase>({
   return selectedOptionLabel;
 };
 
+const StyledFlexedBox = styled(Box)`
+  flex-grow: 1;
+
+  display: flex;
+
+  align-items: center;
+`;
 // FIXME
 // Need to upgrade to ts@3.5+
 // Then it can be written as
@@ -54,10 +62,25 @@ export const defaultComponents = {
       />
     );
   }),
+  MultiSelectListItem: React.forwardRef<HTMLDivElement, { index: number }>(({ index }, ref) => {
+    const [state] = useSelectReducer();
+    const option = state.options[index];
+    const selected = state.value.includes(option);
+
+    return (
+      <DefaultMultiselectListItem
+        ref={ref}
+        selected={selected}
+        disabled={option.disabled}
+        label={option.label}
+        value={option.value}
+      />
+    );
+  }),
   List: DefaultList,
   SelectedValue: () => {
     const [state] = useSelectReducer();
-    return <Box px={2}>{getLabelOrPlaceholder(state)}</Box>;
+    return <StyledFlexedBox px={2}>{getLabelOrPlaceholder(state)}</StyledFlexedBox>;
   },
 };
 
@@ -67,7 +90,11 @@ export const useComponentsWithDefaults = (components: any = {}) => {
       // @ts-ignore
       R.pipe(
         // @ts-ignore
-        R.map(React.forwardRef),
+        R.map(componentRefFn =>
+          typeof componentRefFn !== 'function'
+            ? componentRefFn
+            : React.forwardRef(componentRefFn as any),
+        ),
         R.mergeRight(defaultComponents),
       )(components),
     [components],

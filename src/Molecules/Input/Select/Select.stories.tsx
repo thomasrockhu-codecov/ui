@@ -54,6 +54,7 @@ const StyledBox: React.FC<any> = styled(Box)`
 const FlexedBox = styled(Box)<any>`
   flex-grow: 1;
   display: flex;
+  align-items: center;
 `;
 
 const AccountValue = () => {
@@ -494,7 +495,48 @@ storiesOf('Molecules | Input / Select', module)
     };
     return <Component />;
   })
-  .add(`Multiselect`, () => {
+  .add('Multiselect', () => {
+    const multiselectReducer = (state: SelectState, incomingAction: Action) => {
+      if (incomingAction.type === actionTypes['Select.SelectValue']) {
+        return {
+          ...state,
+          value: [...state.value, incomingAction.payload],
+        };
+      }
+      if (incomingAction.type === 'Select.DeselectValue') {
+        return {
+          ...state,
+          value: state.value.filter(x => !Object.is(x, incomingAction.payload)),
+        };
+      }
+      return Input.Select.defaults.reducer(state, incomingAction);
+    };
+
+    const MultiSelectValue = (_: any, ref: React.Ref<any>) => {
+      const [state] = useSelectReducer();
+      return (
+        <FlexedBox px={2} pr={8} ref={ref}>
+          {state.value.length === 0 ? state.placeholder : `Selected (${state.value.length})`}
+        </FlexedBox>
+      );
+    };
+
+    return (
+      <Input.Select
+        reducer={multiselectReducer}
+        options={accountOptions}
+        components={{
+          SelectedValue: MultiSelectValue,
+          ListItem: Input.Select.defaults.components.MultiSelectListItem,
+        }}
+        label="User account"
+        width="300px"
+        placeholder="Select account"
+        onChange={action('change')}
+      />
+    );
+  })
+  .add('Multiselect account', () => {
     const multiselectReducer = (state: SelectState, incomingAction: Action) => {
       if (incomingAction.type === actionTypes['Select.SelectValue']) {
         return {
@@ -526,29 +568,25 @@ storiesOf('Molecules | Input / Select', module)
       const selected = state.value.includes(option);
 
       return (
-        <StyledBox px={2} py={1} ref={ref} tabIndex={0}>
-          <Flexbox container alignItems="center" gutter={3}>
+        <StyledBox px={3} py={1} ref={ref} tabIndex={0}>
+          <Flexbox container alignItems="center" gutter={0} height={9}>
             <Flexbox item container alignItems="center">
               {/** TODO: revisit a11y here */}
               <Input.Checkbox name="example" label="" checked={selected} />
             </Flexbox>
-            <Flexbox item container justifyContent="space-between" alignItems="center" gutter={4}>
-              <Flexbox item container direction="column" grow={1}>
-                <Flexbox item>
-                  <Typography type="secondary" color={t => t.color.text} weight="bold">
-                    {option.label}
-                  </Typography>
-                  <Typography type="tertiary" color={t => t.color.text}>
-                    {' '}
-                    <span aria-hidden>&#183;</span> {option.accno}
-                  </Typography>
-                </Flexbox>
-                <Flexbox item>
-                  <Typography type="caption" color={t => t.color.text}>
-                    <Number value={option.amount.value} currency={option.amount.currency} />
-                  </Typography>
-                </Flexbox>
+            <Flexbox item container direction="column" grow={1} gutter={0}>
+              <Flexbox item>
+                <Typography type="secondary" color={t => t.color.text} weight="bold">
+                  {option.label}
+                </Typography>
+                <Typography type="tertiary" color={t => t.color.text}>
+                  {' '}
+                  <span aria-hidden>&#183;</span> {option.accno}
+                </Typography>
               </Flexbox>
+              <Typography type="caption" color={t => t.color.text}>
+                <Number value={option.amount.value} currency={option.amount.currency} />
+              </Typography>
             </Flexbox>
           </Flexbox>
         </StyledBox>
@@ -567,7 +605,7 @@ storiesOf('Molecules | Input / Select', module)
       />
     );
   })
-  .add('Multiselect with select all', () => {
+  .add('Multiselect account with select all', () => {
     // Reducer will handle selection/deselection part + select all
     const multiselectReducer = (state: SelectState, incomingAction: Action) => {
       if (incomingAction.type === actionTypes['Select.SelectValue']) {
@@ -606,8 +644,6 @@ storiesOf('Molecules | Input / Select', module)
     const StyledBoxWithBorder = styled(StyledBox)`
     ${p => !p.selectAll ? "" : `
       border-bottom: 1px solid ${p.theme.color.divider};
-      padding-bottom: ${p.theme.spacing.unit(2)}px;
-      padding-top: ${p.theme.spacing.unit(2)}px;
       `}
     `;
 
@@ -617,33 +653,29 @@ storiesOf('Molecules | Input / Select', module)
       const selected = state.value.includes(option);
 
       return (
-        <StyledBoxWithBorder px={2} py={1} ref={ref} tabIndex={0} selectAll={option.selectAll}>
-          <Flexbox container alignItems="center" gutter={3}>
+        <StyledBoxWithBorder px={3} py={1} ref={ref} tabIndex={0} selectAll={option.selectAll}>
+          <Flexbox container alignItems="center" gutter={0} height={9}>
             <Flexbox item container alignItems="center">
               {/** TODO: revisit a11y here */}
-              <Input.Checkbox name="example" label="" checked={selected} width="20px" />
+              <Input.Checkbox name="example" label="" checked={selected} />
             </Flexbox>
-            <Flexbox item container justifyContent="space-between" alignItems="center">
-              <Flexbox item container direction="column" grow={1}>
-                <Flexbox item>
-                  <Typography type="secondary" color={t => t.color.text} weight="bold">
-                    {option.label}
-                  </Typography>
-                  {!option.selectAll && (
-                    <Typography type="tertiary" color={t => t.color.text}>
-                      {' '}
-                      <span aria-hidden>&#183;</span> {option.accno}
-                    </Typography>
-                  )}
-                </Flexbox>
+            <Flexbox item container direction="column" grow={1} gutter={0}>
+              <Flexbox item>
+                <Typography type="secondary" color={t => t.color.text} weight="bold">
+                  {option.label}
+                </Typography>
                 {!option.selectAll && (
-                  <Flexbox item>
-                    <Typography type="caption" color={t => t.color.text}>
-                      <Number value={option.amount.value} currency={option.amount.currency} />
-                    </Typography>
-                  </Flexbox>
+                  <Typography type="tertiary" color={t => t.color.text}>
+                    {' '}
+                    <span aria-hidden>&#183;</span> {option.accno}
+                  </Typography>
                 )}
               </Flexbox>
+              {!option.selectAll && (
+                <Typography type="caption" color={t => t.color.text}>
+                  <Number value={option.amount.value} currency={option.amount.currency} />
+                </Typography>
+              )}
             </Flexbox>
           </Flexbox>
         </StyledBoxWithBorder>

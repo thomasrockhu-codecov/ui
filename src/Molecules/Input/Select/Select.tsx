@@ -296,7 +296,7 @@ const Select = (props: Props) => {
                   option={x}
                   selected={value.includes(x)}
                   onClick={handleClickListItem}
-                  component={ListItem}
+                  component={ListItem as any}
                 />
               ))}
             </ListWrapper>

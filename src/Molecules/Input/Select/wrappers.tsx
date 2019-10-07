@@ -82,9 +82,9 @@ export const SelectedValueWrapper = React.forwardRef<any, any>(
             disabled={disabled}
             tabIndex={0}
           >
-            <div style={{ flex: 1 }} aria-hidden="true">
+            <Flexbox grow={1} container item aria-hidden="true">
               <Component />
-            </div>
+            </Flexbox>
           </StyledA11yButton>
           <VisuallyHidden>{placeholder}</VisuallyHidden>
           {state.value.length > 0 && <VisuallyHidden>{screenReaderText}</VisuallyHidden>}
@@ -105,6 +105,7 @@ export const ListItemWrapper = React.forwardRef<
     onClick: (params: { selected: boolean; option: Option }, e: React.MouseEvent) => void;
   }
 >((props, outerRef) => {
+  console.log({ component: props.component });
   const ref = React.useRef<HTMLLIElement>(null);
   const innerRef = React.useRef<HTMLElement>(null);
   const handleFocus = React.useCallback(() => innerRef.current && innerRef.current!.focus(), []);
