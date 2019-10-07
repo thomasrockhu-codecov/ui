@@ -1,3 +1,11 @@
+# [1.52.0](https://github.com/nordnet/ui/compare/v1.51.1...v1.52.0) (2019-10-07)
+
+
+### Features
+
+* expose missing components ([521a809](https://github.com/nordnet/ui/commit/521a809))
+* support addons for input number ([96772d5](https://github.com/nordnet/ui/commit/96772d5))
+
 ## [1.51.1](https://github.com/nordnet/ui/compare/v1.51.0...v1.51.1) (2019-10-07)
 
 
