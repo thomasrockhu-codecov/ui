@@ -1,3 +1,10 @@
+## [1.51.1](https://github.com/nordnet/ui/compare/v1.51.0...v1.51.1) (2019-10-07)
+
+
+### Bug Fixes
+
+* icon color currentColor ([e1a9065](https://github.com/nordnet/ui/commit/e1a9065))
+
 # [1.51.0](https://github.com/nordnet/ui/compare/v1.50.3...v1.51.0) (2019-10-07)
 
 
