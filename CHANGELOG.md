@@ -1,3 +1,16 @@
+# [1.51.0](https://github.com/nordnet/ui/compare/v1.50.3...v1.51.0) (2019-10-07)
+
+
+### Bug Fixes
+
+* console.log ([2006e9c](https://github.com/nordnet/ui/commit/2006e9c))
+* firefox vertical align ([8406695](https://github.com/nordnet/ui/commit/8406695))
+
+
+### Features
+
+* add proper multiselect renderers ([971d73e](https://github.com/nordnet/ui/commit/971d73e))
+
 ## [1.50.3](https://github.com/nordnet/ui/compare/v1.50.2...v1.50.3) (2019-10-04)
 
 
