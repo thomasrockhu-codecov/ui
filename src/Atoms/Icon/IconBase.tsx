@@ -3,7 +3,7 @@ import styled, { DefaultTheme } from 'styled-components';
 import { InternalProps, StyledIconBaseProps, ColorFn } from './IconBase.types';
 import { assert } from '../../common/utils';
 
-const ALLOWED_COLOR_STRINGS = ['transparent', 'inherit', 'currentValue'];
+const ALLOWED_COLOR_STRINGS = ['transparent', 'inherit', 'currentColor'];
 export const getColor = (
   theme: DefaultTheme,
   defaultColor: string,
