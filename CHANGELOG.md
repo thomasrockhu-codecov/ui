@@ -1,3 +1,10 @@
+## [1.53.3](https://github.com/nordnet/ui/compare/v1.53.2...v1.53.3) (2019-10-08)
+
+
+### Bug Fixes
+
+* z-index ([fc42538](https://github.com/nordnet/ui/commit/fc42538))
+
 ## [1.53.2](https://github.com/nordnet/ui/compare/v1.53.1...v1.53.2) (2019-10-08)
 
 
