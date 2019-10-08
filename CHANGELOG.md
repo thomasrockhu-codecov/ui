@@ -1,3 +1,11 @@
+## [1.53.4](https://github.com/nordnet/ui/compare/v1.53.3...v1.53.4) (2019-10-08)
+
+
+### Bug Fixes
+
+* add background colors for order depth ([56fbd48](https://github.com/nordnet/ui/commit/56fbd48))
+* remove redundant background ([795c7ea](https://github.com/nordnet/ui/commit/795c7ea))
+
 ## [1.53.3](https://github.com/nordnet/ui/compare/v1.53.2...v1.53.3) (2019-10-08)
 
 
