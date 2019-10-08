@@ -1,3 +1,11 @@
+## [1.53.1](https://github.com/nordnet/ui/compare/v1.53.0...v1.53.1) (2019-10-08)
+
+
+### Bug Fixes
+
+* remove pr error ([df152f8](https://github.com/nordnet/ui/commit/df152f8))
+* support full width for select ([9be9521](https://github.com/nordnet/ui/commit/9be9521))
+
 # [1.53.0](https://github.com/nordnet/ui/compare/v1.52.0...v1.53.0) (2019-10-08)
 
 
