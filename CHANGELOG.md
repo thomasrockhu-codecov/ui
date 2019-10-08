@@ -1,3 +1,10 @@
+## [1.53.2](https://github.com/nordnet/ui/compare/v1.53.1...v1.53.2) (2019-10-08)
+
+
+### Bug Fixes
+
+* add classname prop to labeledvalue ([8d1e6cb](https://github.com/nordnet/ui/commit/8d1e6cb))
+
 ## [1.53.1](https://github.com/nordnet/ui/compare/v1.53.0...v1.53.1) (2019-10-08)
 
 
