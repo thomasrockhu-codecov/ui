@@ -3245,7 +3245,7 @@ Array [
 }
 
 .c2 {
-  width: 200px;
+  width: 100%;
   display: inline-block;
 }
 
@@ -3366,6 +3366,7 @@ Array [
     >
       <div
         className="c2"
+        width="100%"
       >
         <label
           className="c3"
