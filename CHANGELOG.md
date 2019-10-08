@@ -1,3 +1,15 @@
+# [1.53.0](https://github.com/nordnet/ui/compare/v1.52.0...v1.53.0) (2019-10-08)
+
+
+### Bug Fixes
+
+* remove carets from newly added bumps ([4487209](https://github.com/nordnet/ui/commit/4487209))
+
+
+### Features
+
+* bump react and react-router deps ([d3d2de4](https://github.com/nordnet/ui/commit/d3d2de4))
+
 # [1.52.0](https://github.com/nordnet/ui/compare/v1.51.1...v1.52.0) (2019-10-07)
 
 
