@@ -1,3 +1,15 @@
+# [1.55.0](https://github.com/nordnet/ui/compare/v1.54.0...v1.55.0) (2019-10-10)
+
+
+### Bug Fixes
+
+* 🐛 use same left-padding as input.text ([7632a04](https://github.com/nordnet/ui/commit/7632a04))
+
+
+### Features
+
+* 🎸 left align number when no steppers for input.number ([3c802ca](https://github.com/nordnet/ui/commit/3c802ca))
+
 # [1.54.0](https://github.com/nordnet/ui/compare/v1.53.4...v1.54.0) (2019-10-10)
 
 
