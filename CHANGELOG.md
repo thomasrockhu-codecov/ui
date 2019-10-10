@@ -1,3 +1,10 @@
+# [1.54.0](https://github.com/nordnet/ui/compare/v1.53.4...v1.54.0) (2019-10-10)
+
+
+### Features
+
+* add Pending icon ([6d0045d](https://github.com/nordnet/ui/commit/6d0045d))
+
 ## [1.53.4](https://github.com/nordnet/ui/compare/v1.53.3...v1.53.4) (2019-10-08)
 
 
