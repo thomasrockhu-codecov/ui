@@ -1,78 +1,87 @@
 import React from 'react';
 import styled from 'styled-components';
 import * as R from 'ramda';
-import { FormLabel, Icon, Flexbox, Typography, FormField } from '../../..';
-import { CheckboxComponent, Props, InternalInputProps } from './Checkbox.types';
+import { FormLabel, Flexbox, Typography, FormField } from '../../..';
+import { RadioComponent, Props, InternalInputProps } from './Radio.types';
 import { isString } from '../../../common/utils';
 
-const CHECKBOX_SIZE = 5;
+const RADIO_SIZE = 5;
 const checkIfHasError = (error?: Props['error']) => isString(error) && error !== '';
 
 const CleanInput = React.forwardRef((props: any, ref: React.Ref<HTMLInputElement>) => (
   <input ref={ref} {...R.omit(['hasError'], props)} />
 ));
 
-const CheckmarkBox = styled(Flexbox)`
-  width: ${p => p.theme.spacing.unit(CHECKBOX_SIZE)}px;
-  height: ${p => p.theme.spacing.unit(CHECKBOX_SIZE)}px;
+const Circle = styled.div`
+  width: ${p => p.theme.spacing.unit(RADIO_SIZE)}px;
+  height: ${p => p.theme.spacing.unit(RADIO_SIZE)}px;
   border: 1px solid ${p => p.theme.color.inputBorder};
   position: relative;
+  border-radius: 50%;
   flex-shrink: 0;
 
-  &::before {
+  &::before,
+  &::after {
     content: '';
     display: block;
-    padding: 2px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  &::before {
     width: 100%;
     height: 100%;
-    position: absolute;
+    padding: 2px;
+  }
+
+  &::after {
+    width: ${p => p.theme.spacing.unit(RADIO_SIZE - 2)}px;
+    height: ${p => p.theme.spacing.unit(RADIO_SIZE - 2)}px;
   }
 `;
 
 const StyledFormLabel = styled(FormLabel)`
   position: relative;
 
-  &:hover ${CheckmarkBox} {
+  &:hover ${Circle} {
     border-color: ${p => p.theme.color.inputBorderHover};
   }
 `;
 
-const Input = styled(CleanInput).attrs({ type: 'checkbox' })<InternalInputProps>`
+const Input = styled(CleanInput).attrs({ type: 'radio' })<InternalInputProps>`
   position: absolute;
   opacity: 0;
   height: 0;
   width: 0;
   cursor: pointer;
 
-  &:checked + ${CheckmarkBox} {
-    border-color: ${p => p.theme.color.cta};
-    background: ${p => p.theme.color.cta};
-
-    svg {
-      fill: ${p => p.theme.color.backgroundInput}
-    }
+  &:checked + ${Circle} {
+    &::after {background: ${p => p.theme.color.cta};}
   }
-  
-  &[disabled] + ${CheckmarkBox} {
+
+  &[disabled] + ${Circle} {
     border-color: ${p => p.theme.color.disabledBackground};
   }
 
-  &:checked[disabled] + ${CheckmarkBox} {
+  &:checked[disabled] + ${Circle} {
     border-color: ${p => p.theme.color.disabledBackground};
-    background: ${p => p.theme.color.disabledBackground};
+    &::after {background: ${p => p.theme.color.disabledBackground};}
   }
 
   ${p =>
     p.hasError
       ? `
-    & + ${CheckmarkBox} {
+    & + ${Circle} {
       &::before {
         border: 1px solid ${p.theme.color.inputBorderError};
       }
     }`
       : ''}
 
-  &:focus + ${CheckmarkBox} {
+  &:focus + ${Circle} {
     &::before {
       border: 1px solid ${p => p.theme.color.cta};
     }
@@ -84,7 +93,7 @@ const Label = styled(Typography)`
   white-space: initial;
 `;
 
-const Checkbox: CheckboxComponent = props => {
+const Radio: RadioComponent = props => {
   const {
     autoFocus,
     checked,
@@ -131,9 +140,7 @@ const Checkbox: CheckboxComponent = props => {
               value,
             }}
           />
-          <CheckmarkBox container alignItems="center" justifyContent="center">
-            <Icon.CheckMark size={3} color="transparent" />
-          </CheckmarkBox>
+          <Circle />
           <Label type="secondary" color={t => (disabled ? t.color.disabledText : t.color.text)}>
             {visuallyEmphasiseRequired ? `${label} *` : label}
           </Label>
@@ -143,4 +150,4 @@ const Checkbox: CheckboxComponent = props => {
   );
 };
 
-export default Checkbox;
+export default Radio;

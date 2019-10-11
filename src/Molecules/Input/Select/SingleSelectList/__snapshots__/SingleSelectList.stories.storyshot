@@ -1,18 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Storyshots Molecules | Input / Select / SingleSelectList Item default 1`] = `
-.c3 {
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-}
-
 .c4 {
   box-sizing: border-box;
   display: -webkit-box;
@@ -23,6 +11,18 @@ exports[`Storyshots Molecules | Input / Select / SingleSelectList Item default 1
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+}
+
+.c3 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
 }
 
 .c1 {
@@ -59,7 +59,7 @@ exports[`Storyshots Molecules | Input / Select / SingleSelectList Item default 1
 
 <div
   className="c0"
-  tabIndex={0}
+  tabIndex={-1}
 >
   <span
     className="c1"
@@ -78,18 +78,6 @@ exports[`Storyshots Molecules | Input / Select / SingleSelectList Item default 1
 `;
 
 exports[`Storyshots Molecules | Input / Select / SingleSelectList Item disabled 1`] = `
-.c3 {
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-}
-
 .c4 {
   box-sizing: border-box;
   display: -webkit-box;
@@ -100,6 +88,18 @@ exports[`Storyshots Molecules | Input / Select / SingleSelectList Item disabled 
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+}
+
+.c3 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
 }
 
 .c1 {
@@ -154,18 +154,6 @@ exports[`Storyshots Molecules | Input / Select / SingleSelectList Item selected 
   padding-left: 8px;
 }
 
-.c3 {
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-}
-
 .c4 {
   box-sizing: border-box;
   display: -webkit-box;
@@ -176,6 +164,18 @@ exports[`Storyshots Molecules | Input / Select / SingleSelectList Item selected 
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+}
+
+.c3 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
 }
 
 .c6 {
@@ -227,7 +227,7 @@ exports[`Storyshots Molecules | Input / Select / SingleSelectList Item selected 
 <div
   className="c0"
   selected={true}
-  tabIndex={0}
+  tabIndex={-1}
 >
   <span
     className="c1"
@@ -271,18 +271,6 @@ exports[`Storyshots Molecules | Input / Select / SingleSelectList List with diff
   padding-left: 8px;
 }
 
-.c8 {
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-}
-
 .c9 {
   box-sizing: border-box;
   display: -webkit-box;
@@ -293,6 +281,18 @@ exports[`Storyshots Molecules | Input / Select / SingleSelectList List with diff
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+}
+
+.c8 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
 }
 
 .c12 {
@@ -600,7 +600,7 @@ exports[`Storyshots Molecules | Input / Select / SingleSelectList List with diff
       >
         <div
           className="c5"
-          tabIndex={0}
+          tabIndex={-1}
         >
           <span
             className="c6"
@@ -619,7 +619,7 @@ exports[`Storyshots Molecules | Input / Select / SingleSelectList List with diff
         <div
           className="c10"
           selected={true}
-          tabIndex={0}
+          tabIndex={-1}
         >
           <span
             className="c6"
@@ -658,7 +658,7 @@ exports[`Storyshots Molecules | Input / Select / SingleSelectList List with diff
         </div>
         <div
           className="c5"
-          tabIndex={0}
+          tabIndex={-1}
         >
           <span
             className="c6"
@@ -712,7 +712,7 @@ exports[`Storyshots Molecules | Input / Select / SingleSelectList List with diff
       >
         <div
           className="c5"
-          tabIndex={0}
+          tabIndex={-1}
         >
           <span
             className="c6"
@@ -731,7 +731,7 @@ exports[`Storyshots Molecules | Input / Select / SingleSelectList List with diff
         <div
           className="c10"
           selected={true}
-          tabIndex={0}
+          tabIndex={-1}
         >
           <span
             className="c6"
@@ -770,7 +770,7 @@ exports[`Storyshots Molecules | Input / Select / SingleSelectList List with diff
         </div>
         <div
           className="c5"
-          tabIndex={0}
+          tabIndex={-1}
         >
           <span
             className="c6"
@@ -824,7 +824,7 @@ exports[`Storyshots Molecules | Input / Select / SingleSelectList List with diff
       >
         <div
           className="c5"
-          tabIndex={0}
+          tabIndex={-1}
         >
           <span
             className="c6"
@@ -843,7 +843,7 @@ exports[`Storyshots Molecules | Input / Select / SingleSelectList List with diff
         <div
           className="c10"
           selected={true}
-          tabIndex={0}
+          tabIndex={-1}
         >
           <span
             className="c6"
@@ -882,7 +882,7 @@ exports[`Storyshots Molecules | Input / Select / SingleSelectList List with diff
         </div>
         <div
           className="c5"
-          tabIndex={0}
+          tabIndex={-1}
         >
           <span
             className="c6"

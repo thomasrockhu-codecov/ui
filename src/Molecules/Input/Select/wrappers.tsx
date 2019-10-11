@@ -36,7 +36,7 @@ const StyledListWrapper = styled.div<any>`
   height: 100%;
   position: absolute;
   top: 100%;
-  z-index: 1;
+  z-index: 4;
 `;
 
 export const ListWrapper = React.forwardRef<HTMLDivElement, any>(
@@ -82,9 +82,9 @@ export const SelectedValueWrapper = React.forwardRef<any, any>(
             disabled={disabled}
             tabIndex={0}
           >
-            <div style={{ flex: 1 }} aria-hidden="true">
+            <Flexbox grow={1} container item aria-hidden="true">
               <Component />
-            </div>
+            </Flexbox>
           </StyledA11yButton>
           <VisuallyHidden>{placeholder}</VisuallyHidden>
           {state.value.length > 0 && <VisuallyHidden>{screenReaderText}</VisuallyHidden>}

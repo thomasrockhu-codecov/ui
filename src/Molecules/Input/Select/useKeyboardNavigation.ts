@@ -1,15 +1,16 @@
+import * as React from 'react';
+
 type UseKeyboardNavigationArgs = {
   itemsLength: number;
   onChange?: (n: number) => void;
   onEscape: () => void;
 };
 
-export const useKeyboardNavigation = ({
-  itemsLength,
-  onChange = (_: number) => null,
-  onEscape = () => null,
-}: UseKeyboardNavigationArgs) => {
-  const itemsRefs: HTMLElement[] = [];
+export const useKeyboardNavigation = (
+  { itemsLength, onChange = (_: number) => null, onEscape = () => null }: UseKeyboardNavigationArgs,
+  deps: any[],
+) => {
+  const itemsRefs: HTMLElement[] = React.useMemo(() => [], deps);
   const getActive = () =>
     Object.values(itemsRefs).findIndex(item => item === document.activeElement);
 

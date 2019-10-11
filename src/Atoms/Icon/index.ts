@@ -29,12 +29,14 @@ import { Printer } from './components/Printer';
 import { Minus } from './components/Minus';
 import { Questionmark } from './components/Questionmark';
 import { Search } from './components/Search';
+import { SolidCircle } from './components/Circle';
 import { Star } from './components/Star';
 import { Star24 } from './components/Star24';
 import { ThreeDots } from './components/ThreeDots';
 import { Trash } from './components/Trash';
 import { WarningTriangle } from './components/WarningTriangle';
 import { Rtmt } from './components/Rtmt';
+import { Pending } from './components/Pending';
 
 export default {
   AddWithCircle,
@@ -62,12 +64,14 @@ export default {
   Import,
   InfoCircle,
   Pen,
+  Pending,
   Plus,
   PlusWithCircle,
   Printer,
   Minus,
   Questionmark,
   Search,
+  SolidCircle,
   Star,
   Star24,
   ThreeDots,

@@ -1,22 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Storyshots Molecules | Input / Checkbox Default 1`] = `
-.c8 {
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
+exports[`Storyshots Molecules | Input / Radio Default 1`] = `
 .c4 {
   box-sizing: border-box;
   display: -webkit-box;
@@ -35,20 +19,6 @@ exports[`Storyshots Molecules | Input / Checkbox Default 1`] = `
   cursor: pointer;
 }
 
-.c9 {
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  width: 12px;
-  height: 12px;
-  fill: transparent;
-  -webkit-flex-shrink: 0;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
-  display: block;
-}
-
 .c3 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #6E6E69;
@@ -58,7 +28,7 @@ exports[`Storyshots Molecules | Input / Checkbox Default 1`] = `
   line-height: 1.4285714285714286;
 }
 
-.c11 {
+.c9 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
   margin: 0;
@@ -77,18 +47,34 @@ exports[`Storyshots Molecules | Input / Checkbox Default 1`] = `
   height: 20px;
   border: 1px solid #BCBCB6;
   position: relative;
+  border-radius: 50%;
   -webkit-flex-shrink: 0;
   -ms-flex-negative: 0;
   flex-shrink: 0;
 }
 
-.c7::before {
+.c7::before,
+.c7::after {
   content: '';
   display: block;
-  padding: 2px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  border-radius: 50%;
+  -webkit-transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+}
+
+.c7::before {
   width: 100%;
   height: 100%;
-  position: absolute;
+  padding: 2px;
+}
+
+.c7::after {
+  width: 12px;
+  height: 12px;
 }
 
 .c1 {
@@ -107,13 +93,8 @@ exports[`Storyshots Molecules | Input / Checkbox Default 1`] = `
   cursor: pointer;
 }
 
-.c5:checked + .c6 {
-  border-color: #0046FF;
+.c5:checked + .c6::after {
   background: #0046FF;
-}
-
-.c5:checked + .c6 svg {
-  fill: #FFFFFF;
 }
 
 .c5[disabled] + .c6 {
@@ -122,6 +103,9 @@ exports[`Storyshots Molecules | Input / Checkbox Default 1`] = `
 
 .c5:checked[disabled] + .c6 {
   border-color: #EBEBE8;
+}
+
+.c5:checked[disabled] + .c6::after {
   background: #EBEBE8;
 }
 
@@ -129,7 +113,7 @@ exports[`Storyshots Molecules | Input / Checkbox Default 1`] = `
   border: 1px solid #0046FF;
 }
 
-.c10 {
+.c8 {
   padding-left: 8px;
   white-space: initial;
 }
@@ -151,28 +135,14 @@ exports[`Storyshots Molecules | Input / Checkbox Default 1`] = `
         <input
           className="c5"
           name="example"
-          type="checkbox"
+          type="radio"
           value="green"
         />
         <div
-          className="c6 c7 c8"
-        >
-          <svg
-            aria-hidden="true"
-            className="c9"
-            focusable="false"
-            preserveAspectRatio="xMidYMid meet"
-            role="presentation"
-            size={3}
-            viewBox="0 0 24 24"
-          >
-            <path
-              d="M8.76083729 16.4144594L2.20525972 9.86336213 0 12.2093109 8.79670106 21 24 5.30897552 21.7583339 3z"
-            />
-          </svg>
-        </div>
+          className="c6 c7"
+        />
         <span
-          className="c10 c11"
+          className="c8 c9"
         >
           Green
         </span>
@@ -182,7 +152,7 @@ exports[`Storyshots Molecules | Input / Checkbox Default 1`] = `
 </div>
 `;
 
-exports[`Storyshots Molecules | Input / Checkbox Disabled 1`] = `
+exports[`Storyshots Molecules | Input / Radio Disabled 1`] = `
 Array [
   .c0 {
   margin-bottom: 16px;
@@ -213,23 +183,7 @@ Array [
       Disabled
     </span>
   </div>,
-  .c11 {
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.c7 {
+  .c7 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -247,20 +201,6 @@ Array [
   cursor: pointer;
 }
 
-.c12 {
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  width: 12px;
-  height: 12px;
-  fill: transparent;
-  -webkit-flex-shrink: 0;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
-  display: block;
-}
-
 .c6 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #6E6E69;
@@ -270,7 +210,7 @@ Array [
   line-height: 1.4285714285714286;
 }
 
-.c14 {
+.c12 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #A0A09B;
   margin: 0;
@@ -289,18 +229,34 @@ Array [
   height: 20px;
   border: 1px solid #BCBCB6;
   position: relative;
+  border-radius: 50%;
   -webkit-flex-shrink: 0;
   -ms-flex-negative: 0;
   flex-shrink: 0;
 }
 
-.c10::before {
+.c10::before,
+.c10::after {
   content: '';
   display: block;
-  padding: 2px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  border-radius: 50%;
+  -webkit-transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+}
+
+.c10::before {
   width: 100%;
   height: 100%;
-  position: absolute;
+  padding: 2px;
+}
+
+.c10::after {
+  width: 12px;
+  height: 12px;
 }
 
 .c4 {
@@ -319,13 +275,8 @@ Array [
   cursor: pointer;
 }
 
-.c8:checked + .c9 {
-  border-color: #0046FF;
+.c8:checked + .c9::after {
   background: #0046FF;
-}
-
-.c8:checked + .c9 svg {
-  fill: #FFFFFF;
 }
 
 .c8[disabled] + .c9 {
@@ -334,6 +285,9 @@ Array [
 
 .c8:checked[disabled] + .c9 {
   border-color: #EBEBE8;
+}
+
+.c8:checked[disabled] + .c9::after {
   background: #EBEBE8;
 }
 
@@ -341,33 +295,31 @@ Array [
   border: 1px solid #0046FF;
 }
 
-.c15:checked + .c9 {
-  border-color: #0046FF;
+.c13:checked + .c9::after {
   background: #0046FF;
 }
 
-.c15:checked + .c9 svg {
-  fill: #FFFFFF;
-}
-
-.c15[disabled] + .c9 {
+.c13[disabled] + .c9 {
   border-color: #EBEBE8;
 }
 
-.c15:checked[disabled] + .c9 {
+.c13:checked[disabled] + .c9 {
   border-color: #EBEBE8;
+}
+
+.c13:checked[disabled] + .c9::after {
   background: #EBEBE8;
 }
 
-.c15 + .c9::before {
+.c13 + .c9::before {
   border: 1px solid #FF1900;
 }
 
-.c15:focus + .c9::before {
+.c13:focus + .c9::before {
   border: 1px solid #0046FF;
 }
 
-.c13 {
+.c11 {
   padding-left: 8px;
   white-space: initial;
 }
@@ -462,28 +414,14 @@ Array [
                   defaultChecked={true}
                   disabled={true}
                   name="example"
-                  type="checkbox"
+                  type="radio"
                   value="green"
                 />
                 <div
-                  className="c9 c10 c11"
-                >
-                  <svg
-                    aria-hidden="true"
-                    className="c12"
-                    focusable="false"
-                    preserveAspectRatio="xMidYMid meet"
-                    role="presentation"
-                    size={3}
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      d="M8.76083729 16.4144594L2.20525972 9.86336213 0 12.2093109 8.79670106 21 24 5.30897552 21.7583339 3z"
-                    />
-                  </svg>
-                </div>
+                  className="c9 c10"
+                />
                 <span
-                  className="c13 c14"
+                  className="c11 c12"
                 >
                   Green
                 </span>
@@ -521,28 +459,14 @@ Array [
                   className="c8"
                   disabled={true}
                   name="example"
-                  type="checkbox"
+                  type="radio"
                   value="blue"
                 />
                 <div
-                  className="c9 c10 c11"
-                >
-                  <svg
-                    aria-hidden="true"
-                    className="c12"
-                    focusable="false"
-                    preserveAspectRatio="xMidYMid meet"
-                    role="presentation"
-                    size={3}
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      d="M8.76083729 16.4144594L2.20525972 9.86336213 0 12.2093109 8.79670106 21 24 5.30897552 21.7583339 3z"
-                    />
-                  </svg>
-                </div>
+                  className="c9 c10"
+                />
                 <span
-                  className="c13 c14"
+                  className="c11 c12"
                 >
                   Blue
                 </span>
@@ -563,7 +487,7 @@ Array [
 ]
 `;
 
-exports[`Storyshots Molecules | Input / Checkbox In a group 1`] = `
+exports[`Storyshots Molecules | Input / Radio In a group 1`] = `
 .c5 {
   box-sizing: border-box;
   display: -webkit-box;
@@ -583,22 +507,6 @@ exports[`Storyshots Molecules | Input / Checkbox In a group 1`] = `
   padding-top: 0;
 }
 
-.c12 {
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
 .c8 {
   box-sizing: border-box;
   display: -webkit-box;
@@ -615,20 +523,6 @@ exports[`Storyshots Molecules | Input / Checkbox In a group 1`] = `
   text-overflow: ellipsis;
   white-space: nowrap;
   cursor: pointer;
-}
-
-.c13 {
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  width: 12px;
-  height: 12px;
-  fill: transparent;
-  -webkit-flex-shrink: 0;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
-  display: block;
 }
 
 .c3 {
@@ -650,7 +544,7 @@ exports[`Storyshots Molecules | Input / Checkbox In a group 1`] = `
   line-height: 1.4285714285714286;
 }
 
-.c15 {
+.c13 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
   margin: 0;
@@ -680,18 +574,34 @@ exports[`Storyshots Molecules | Input / Checkbox In a group 1`] = `
   height: 20px;
   border: 1px solid #BCBCB6;
   position: relative;
+  border-radius: 50%;
   -webkit-flex-shrink: 0;
   -ms-flex-negative: 0;
   flex-shrink: 0;
 }
 
-.c11::before {
+.c11::before,
+.c11::after {
   content: '';
   display: block;
-  padding: 2px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  border-radius: 50%;
+  -webkit-transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+}
+
+.c11::before {
   width: 100%;
   height: 100%;
-  position: absolute;
+  padding: 2px;
+}
+
+.c11::after {
+  width: 12px;
+  height: 12px;
 }
 
 .c7 {
@@ -710,13 +620,8 @@ exports[`Storyshots Molecules | Input / Checkbox In a group 1`] = `
   cursor: pointer;
 }
 
-.c9:checked + .c10 {
-  border-color: #0046FF;
+.c9:checked + .c10::after {
   background: #0046FF;
-}
-
-.c9:checked + .c10 svg {
-  fill: #FFFFFF;
 }
 
 .c9[disabled] + .c10 {
@@ -725,6 +630,9 @@ exports[`Storyshots Molecules | Input / Checkbox In a group 1`] = `
 
 .c9:checked[disabled] + .c10 {
   border-color: #EBEBE8;
+}
+
+.c9:checked[disabled] + .c10::after {
   background: #EBEBE8;
 }
 
@@ -732,33 +640,31 @@ exports[`Storyshots Molecules | Input / Checkbox In a group 1`] = `
   border: 1px solid #0046FF;
 }
 
-.c16:checked + .c10 {
-  border-color: #0046FF;
+.c14:checked + .c10::after {
   background: #0046FF;
 }
 
-.c16:checked + .c10 svg {
-  fill: #FFFFFF;
-}
-
-.c16[disabled] + .c10 {
+.c14[disabled] + .c10 {
   border-color: #EBEBE8;
 }
 
-.c16:checked[disabled] + .c10 {
+.c14:checked[disabled] + .c10 {
   border-color: #EBEBE8;
+}
+
+.c14:checked[disabled] + .c10::after {
   background: #EBEBE8;
 }
 
-.c16 + .c10::before {
+.c14 + .c10::before {
   border: 1px solid #FF1900;
 }
 
-.c16:focus + .c10::before {
+.c14:focus + .c10::before {
   border: 1px solid #0046FF;
 }
 
-.c14 {
+.c12 {
   padding-left: 8px;
   white-space: initial;
 }
@@ -799,28 +705,14 @@ exports[`Storyshots Molecules | Input / Checkbox In a group 1`] = `
               <input
                 className="c9"
                 name="example"
-                type="checkbox"
+                type="radio"
                 value="green"
               />
               <div
-                className="c10 c11 c12"
-              >
-                <svg
-                  aria-hidden="true"
-                  className="c13"
-                  focusable="false"
-                  preserveAspectRatio="xMidYMid meet"
-                  role="presentation"
-                  size={3}
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    d="M8.76083729 16.4144594L2.20525972 9.86336213 0 12.2093109 8.79670106 21 24 5.30897552 21.7583339 3z"
-                  />
-                </svg>
-              </div>
+                className="c10 c11"
+              />
               <span
-                className="c14 c15"
+                className="c12 c13"
               >
                 Green
               </span>
@@ -845,28 +737,14 @@ exports[`Storyshots Molecules | Input / Checkbox In a group 1`] = `
               <input
                 className="c9"
                 name="example"
-                type="checkbox"
+                type="radio"
                 value="blue"
               />
               <div
-                className="c10 c11 c12"
-              >
-                <svg
-                  aria-hidden="true"
-                  className="c13"
-                  focusable="false"
-                  preserveAspectRatio="xMidYMid meet"
-                  role="presentation"
-                  size={3}
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    d="M8.76083729 16.4144594L2.20525972 9.86336213 0 12.2093109 8.79670106 21 24 5.30897552 21.7583339 3z"
-                  />
-                </svg>
-              </div>
+                className="c10 c11"
+              />
               <span
-                className="c14 c15"
+                className="c12 c13"
               >
                 Blue
               </span>
@@ -891,28 +769,14 @@ exports[`Storyshots Molecules | Input / Checkbox In a group 1`] = `
               <input
                 className="c9"
                 name="example"
-                type="checkbox"
+                type="radio"
                 value="yellow"
               />
               <div
-                className="c10 c11 c12"
-              >
-                <svg
-                  aria-hidden="true"
-                  className="c13"
-                  focusable="false"
-                  preserveAspectRatio="xMidYMid meet"
-                  role="presentation"
-                  size={3}
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    d="M8.76083729 16.4144594L2.20525972 9.86336213 0 12.2093109 8.79670106 21 24 5.30897552 21.7583339 3z"
-                  />
-                </svg>
-              </div>
+                className="c10 c11"
+              />
               <span
-                className="c14 c15"
+                className="c12 c13"
               >
                 Yellow
               </span>
@@ -925,7 +789,7 @@ exports[`Storyshots Molecules | Input / Checkbox In a group 1`] = `
 </div>
 `;
 
-exports[`Storyshots Molecules | Input / Checkbox In a group with error 1`] = `
+exports[`Storyshots Molecules | Input / Radio In a group with error 1`] = `
 .c5 {
   box-sizing: border-box;
   display: -webkit-box;
@@ -945,22 +809,6 @@ exports[`Storyshots Molecules | Input / Checkbox In a group with error 1`] = `
   padding-top: 0;
 }
 
-.c12 {
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
 .c8 {
   box-sizing: border-box;
   display: -webkit-box;
@@ -973,7 +821,7 @@ exports[`Storyshots Molecules | Input / Checkbox In a group with error 1`] = `
   align-items: center;
 }
 
-.c17 {
+.c15 {
   position: absolute;
   height: 1px;
   width: 1px;
@@ -986,20 +834,6 @@ exports[`Storyshots Molecules | Input / Checkbox In a group with error 1`] = `
   text-overflow: ellipsis;
   white-space: nowrap;
   cursor: pointer;
-}
-
-.c13 {
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  width: 12px;
-  height: 12px;
-  fill: transparent;
-  -webkit-flex-shrink: 0;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
-  display: block;
 }
 
 .c3 {
@@ -1021,7 +855,7 @@ exports[`Storyshots Molecules | Input / Checkbox In a group with error 1`] = `
   line-height: 1.4285714285714286;
 }
 
-.c15 {
+.c13 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
   margin: 0;
@@ -1030,7 +864,7 @@ exports[`Storyshots Molecules | Input / Checkbox In a group with error 1`] = `
   line-height: 1.4285714285714286;
 }
 
-.c16 {
+.c14 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #FF1900;
   margin: 0;
@@ -1060,18 +894,34 @@ exports[`Storyshots Molecules | Input / Checkbox In a group with error 1`] = `
   height: 20px;
   border: 1px solid #BCBCB6;
   position: relative;
+  border-radius: 50%;
   -webkit-flex-shrink: 0;
   -ms-flex-negative: 0;
   flex-shrink: 0;
 }
 
-.c11::before {
+.c11::before,
+.c11::after {
   content: '';
   display: block;
-  padding: 2px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  border-radius: 50%;
+  -webkit-transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+}
+
+.c11::before {
   width: 100%;
   height: 100%;
-  position: absolute;
+  padding: 2px;
+}
+
+.c11::after {
+  width: 12px;
+  height: 12px;
 }
 
 .c7 {
@@ -1082,25 +932,23 @@ exports[`Storyshots Molecules | Input / Checkbox In a group with error 1`] = `
   border-color: #4B4B46;
 }
 
-.c18:checked + .c10 {
-  border-color: #0046FF;
+.c16:checked + .c10::after {
   background: #0046FF;
 }
 
-.c18:checked + .c10 svg {
-  fill: #FFFFFF;
-}
-
-.c18[disabled] + .c10 {
+.c16[disabled] + .c10 {
   border-color: #EBEBE8;
 }
 
-.c18:checked[disabled] + .c10 {
+.c16:checked[disabled] + .c10 {
   border-color: #EBEBE8;
+}
+
+.c16:checked[disabled] + .c10::after {
   background: #EBEBE8;
 }
 
-.c18:focus + .c10::before {
+.c16:focus + .c10::before {
   border: 1px solid #0046FF;
 }
 
@@ -1112,13 +960,8 @@ exports[`Storyshots Molecules | Input / Checkbox In a group with error 1`] = `
   cursor: pointer;
 }
 
-.c9:checked + .c10 {
-  border-color: #0046FF;
+.c9:checked + .c10::after {
   background: #0046FF;
-}
-
-.c9:checked + .c10 svg {
-  fill: #FFFFFF;
 }
 
 .c9[disabled] + .c10 {
@@ -1127,6 +970,9 @@ exports[`Storyshots Molecules | Input / Checkbox In a group with error 1`] = `
 
 .c9:checked[disabled] + .c10 {
   border-color: #EBEBE8;
+}
+
+.c9:checked[disabled] + .c10::after {
   background: #EBEBE8;
 }
 
@@ -1138,7 +984,7 @@ exports[`Storyshots Molecules | Input / Checkbox In a group with error 1`] = `
   border: 1px solid #0046FF;
 }
 
-.c14 {
+.c12 {
   padding-left: 8px;
   white-space: initial;
 }
@@ -1181,28 +1027,14 @@ exports[`Storyshots Molecules | Input / Checkbox In a group with error 1`] = `
                 name="example"
                 onChange={[Function]}
                 required={true}
-                type="checkbox"
+                type="radio"
                 value="green"
               />
               <div
-                className="c10 c11 c12"
-              >
-                <svg
-                  aria-hidden="true"
-                  className="c13"
-                  focusable="false"
-                  preserveAspectRatio="xMidYMid meet"
-                  role="presentation"
-                  size={3}
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    d="M8.76083729 16.4144594L2.20525972 9.86336213 0 12.2093109 8.79670106 21 24 5.30897552 21.7583339 3z"
-                  />
-                </svg>
-              </div>
+                className="c10 c11"
+              />
               <span
-                className="c14 c15"
+                className="c12 c13"
               >
                 Green
               </span>
@@ -1229,28 +1061,14 @@ exports[`Storyshots Molecules | Input / Checkbox In a group with error 1`] = `
                 name="example"
                 onChange={[Function]}
                 required={true}
-                type="checkbox"
+                type="radio"
                 value="blue"
               />
               <div
-                className="c10 c11 c12"
-              >
-                <svg
-                  aria-hidden="true"
-                  className="c13"
-                  focusable="false"
-                  preserveAspectRatio="xMidYMid meet"
-                  role="presentation"
-                  size={3}
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    d="M8.76083729 16.4144594L2.20525972 9.86336213 0 12.2093109 8.79670106 21 24 5.30897552 21.7583339 3z"
-                  />
-                </svg>
-              </div>
+                className="c10 c11"
+              />
               <span
-                className="c14 c15"
+                className="c12 c13"
               >
                 Blue
               </span>
@@ -1277,28 +1095,14 @@ exports[`Storyshots Molecules | Input / Checkbox In a group with error 1`] = `
                 name="example"
                 onChange={[Function]}
                 required={true}
-                type="checkbox"
+                type="radio"
                 value="yellow"
               />
               <div
-                className="c10 c11 c12"
-              >
-                <svg
-                  aria-hidden="true"
-                  className="c13"
-                  focusable="false"
-                  preserveAspectRatio="xMidYMid meet"
-                  role="presentation"
-                  size={3}
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    d="M8.76083729 16.4144594L2.20525972 9.86336213 0 12.2093109 8.79670106 21 24 5.30897552 21.7583339 3z"
-                  />
-                </svg>
-              </div>
+                className="c10 c11"
+              />
               <span
-                className="c14 c15"
+                className="c12 c13"
               >
                 Yellow
               </span>
@@ -1310,10 +1114,10 @@ exports[`Storyshots Molecules | Input / Checkbox In a group with error 1`] = `
   </fieldset>
   <div>
     <span
-      className="c16"
+      className="c14"
     >
       <div
-        className="c17"
+        className="c15"
       >
         Error: 
       </div>
@@ -1323,7 +1127,7 @@ exports[`Storyshots Molecules | Input / Checkbox In a group with error 1`] = `
 </div>
 `;
 
-exports[`Storyshots Molecules | Input / Checkbox Required 1`] = `
+exports[`Storyshots Molecules | Input / Radio Required 1`] = `
 Array [
   .c0 {
   margin-bottom: 16px;
@@ -1354,23 +1158,7 @@ Array [
       Required
     </span>
   </div>,
-  .c11 {
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.c7 {
+  .c7 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -1388,20 +1176,6 @@ Array [
   cursor: pointer;
 }
 
-.c12 {
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  width: 12px;
-  height: 12px;
-  fill: transparent;
-  -webkit-flex-shrink: 0;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
-  display: block;
-}
-
 .c6 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #6E6E69;
@@ -1411,7 +1185,7 @@ Array [
   line-height: 1.4285714285714286;
 }
 
-.c14 {
+.c12 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
   margin: 0;
@@ -1430,18 +1204,34 @@ Array [
   height: 20px;
   border: 1px solid #BCBCB6;
   position: relative;
+  border-radius: 50%;
   -webkit-flex-shrink: 0;
   -ms-flex-negative: 0;
   flex-shrink: 0;
 }
 
-.c10::before {
+.c10::before,
+.c10::after {
   content: '';
   display: block;
-  padding: 2px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  border-radius: 50%;
+  -webkit-transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+}
+
+.c10::before {
   width: 100%;
   height: 100%;
-  position: absolute;
+  padding: 2px;
+}
+
+.c10::after {
+  width: 12px;
+  height: 12px;
 }
 
 .c4 {
@@ -1460,13 +1250,8 @@ Array [
   cursor: pointer;
 }
 
-.c8:checked + .c9 {
-  border-color: #0046FF;
+.c8:checked + .c9::after {
   background: #0046FF;
-}
-
-.c8:checked + .c9 svg {
-  fill: #FFFFFF;
 }
 
 .c8[disabled] + .c9 {
@@ -1475,6 +1260,9 @@ Array [
 
 .c8:checked[disabled] + .c9 {
   border-color: #EBEBE8;
+}
+
+.c8:checked[disabled] + .c9::after {
   background: #EBEBE8;
 }
 
@@ -1482,7 +1270,7 @@ Array [
   border: 1px solid #0046FF;
 }
 
-.c13 {
+.c11 {
   padding-left: 8px;
   white-space: initial;
 }
@@ -1576,28 +1364,14 @@ Array [
                   className="c8"
                   name="example"
                   required={true}
-                  type="checkbox"
+                  type="radio"
                   value="green"
                 />
                 <div
-                  className="c9 c10 c11"
-                >
-                  <svg
-                    aria-hidden="true"
-                    className="c12"
-                    focusable="false"
-                    preserveAspectRatio="xMidYMid meet"
-                    role="presentation"
-                    size={3}
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      d="M8.76083729 16.4144594L2.20525972 9.86336213 0 12.2093109 8.79670106 21 24 5.30897552 21.7583339 3z"
-                    />
-                  </svg>
-                </div>
+                  className="c9 c10"
+                />
                 <span
-                  className="c13 c14"
+                  className="c11 c12"
                 >
                   Green
                 </span>
@@ -1635,28 +1409,14 @@ Array [
                   className="c8"
                   name="example"
                   required={true}
-                  type="checkbox"
+                  type="radio"
                   value="green"
                 />
                 <div
-                  className="c9 c10 c11"
-                >
-                  <svg
-                    aria-hidden="true"
-                    className="c12"
-                    focusable="false"
-                    preserveAspectRatio="xMidYMid meet"
-                    role="presentation"
-                    size={3}
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      d="M8.76083729 16.4144594L2.20525972 9.86336213 0 12.2093109 8.79670106 21 24 5.30897552 21.7583339 3z"
-                    />
-                  </svg>
-                </div>
+                  className="c9 c10"
+                />
                 <span
-                  className="c13 c14"
+                  className="c11 c12"
                 >
                   Green *
                 </span>
@@ -1677,23 +1437,7 @@ Array [
 ]
 `;
 
-exports[`Storyshots Molecules | Input / Checkbox With all actions 1`] = `
-.c8 {
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
+exports[`Storyshots Molecules | Input / Radio With all actions 1`] = `
 .c4 {
   box-sizing: border-box;
   display: -webkit-box;
@@ -1712,20 +1456,6 @@ exports[`Storyshots Molecules | Input / Checkbox With all actions 1`] = `
   cursor: pointer;
 }
 
-.c9 {
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  width: 12px;
-  height: 12px;
-  fill: transparent;
-  -webkit-flex-shrink: 0;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
-  display: block;
-}
-
 .c3 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #6E6E69;
@@ -1735,7 +1465,7 @@ exports[`Storyshots Molecules | Input / Checkbox With all actions 1`] = `
   line-height: 1.4285714285714286;
 }
 
-.c11 {
+.c9 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
   margin: 0;
@@ -1754,18 +1484,34 @@ exports[`Storyshots Molecules | Input / Checkbox With all actions 1`] = `
   height: 20px;
   border: 1px solid #BCBCB6;
   position: relative;
+  border-radius: 50%;
   -webkit-flex-shrink: 0;
   -ms-flex-negative: 0;
   flex-shrink: 0;
 }
 
-.c7::before {
+.c7::before,
+.c7::after {
   content: '';
   display: block;
-  padding: 2px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  border-radius: 50%;
+  -webkit-transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+}
+
+.c7::before {
   width: 100%;
   height: 100%;
-  position: absolute;
+  padding: 2px;
+}
+
+.c7::after {
+  width: 12px;
+  height: 12px;
 }
 
 .c1 {
@@ -1784,13 +1530,8 @@ exports[`Storyshots Molecules | Input / Checkbox With all actions 1`] = `
   cursor: pointer;
 }
 
-.c5:checked + .c6 {
-  border-color: #0046FF;
+.c5:checked + .c6::after {
   background: #0046FF;
-}
-
-.c5:checked + .c6 svg {
-  fill: #FFFFFF;
 }
 
 .c5[disabled] + .c6 {
@@ -1799,6 +1540,9 @@ exports[`Storyshots Molecules | Input / Checkbox With all actions 1`] = `
 
 .c5:checked[disabled] + .c6 {
   border-color: #EBEBE8;
+}
+
+.c5:checked[disabled] + .c6::after {
   background: #EBEBE8;
 }
 
@@ -1806,33 +1550,31 @@ exports[`Storyshots Molecules | Input / Checkbox With all actions 1`] = `
   border: 1px solid #0046FF;
 }
 
-.c12:checked + .c6 {
-  border-color: #0046FF;
+.c10:checked + .c6::after {
   background: #0046FF;
 }
 
-.c12:checked + .c6 svg {
-  fill: #FFFFFF;
-}
-
-.c12[disabled] + .c6 {
+.c10[disabled] + .c6 {
   border-color: #EBEBE8;
 }
 
-.c12:checked[disabled] + .c6 {
+.c10:checked[disabled] + .c6 {
   border-color: #EBEBE8;
+}
+
+.c10:checked[disabled] + .c6::after {
   background: #EBEBE8;
 }
 
-.c12 + .c6::before {
+.c10 + .c6::before {
   border: 1px solid #FF1900;
 }
 
-.c12:focus + .c6::before {
+.c10:focus + .c6::before {
   border: 1px solid #0046FF;
 }
 
-.c10 {
+.c8 {
   padding-left: 8px;
   white-space: initial;
 }
@@ -1861,28 +1603,14 @@ exports[`Storyshots Molecules | Input / Checkbox With all actions 1`] = `
           onKeyDown={[Function]}
           onKeyPress={[Function]}
           onKeyUp={[Function]}
-          type="checkbox"
+          type="radio"
           value="green"
         />
         <div
-          className="c6 c7 c8"
-        >
-          <svg
-            aria-hidden="true"
-            className="c9"
-            focusable="false"
-            preserveAspectRatio="xMidYMid meet"
-            role="presentation"
-            size={3}
-            viewBox="0 0 24 24"
-          >
-            <path
-              d="M8.76083729 16.4144594L2.20525972 9.86336213 0 12.2093109 8.79670106 21 24 5.30897552 21.7583339 3z"
-            />
-          </svg>
-        </div>
+          className="c6 c7"
+        />
         <span
-          className="c10 c11"
+          className="c8 c9"
         >
           Green
         </span>
@@ -1892,23 +1620,7 @@ exports[`Storyshots Molecules | Input / Checkbox With all actions 1`] = `
 </div>
 `;
 
-exports[`Storyshots Molecules | Input / Checkbox With an error if not checked 1`] = `
-.c8 {
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
+exports[`Storyshots Molecules | Input / Radio With an error if not checked 1`] = `
 .c4 {
   box-sizing: border-box;
   display: -webkit-box;
@@ -1921,7 +1633,7 @@ exports[`Storyshots Molecules | Input / Checkbox With an error if not checked 1`
   align-items: center;
 }
 
-.c13 {
+.c11 {
   position: absolute;
   height: 1px;
   width: 1px;
@@ -1936,20 +1648,6 @@ exports[`Storyshots Molecules | Input / Checkbox With an error if not checked 1`
   cursor: pointer;
 }
 
-.c9 {
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  width: 12px;
-  height: 12px;
-  fill: transparent;
-  -webkit-flex-shrink: 0;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
-  display: block;
-}
-
 .c3 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #6E6E69;
@@ -1959,7 +1657,7 @@ exports[`Storyshots Molecules | Input / Checkbox With an error if not checked 1`
   line-height: 1.4285714285714286;
 }
 
-.c11 {
+.c9 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
   margin: 0;
@@ -1968,7 +1666,7 @@ exports[`Storyshots Molecules | Input / Checkbox With an error if not checked 1`
   line-height: 1.4285714285714286;
 }
 
-.c12 {
+.c10 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #FF1900;
   margin: 0;
@@ -1987,18 +1685,34 @@ exports[`Storyshots Molecules | Input / Checkbox With an error if not checked 1`
   height: 20px;
   border: 1px solid #BCBCB6;
   position: relative;
+  border-radius: 50%;
   -webkit-flex-shrink: 0;
   -ms-flex-negative: 0;
   flex-shrink: 0;
 }
 
-.c7::before {
+.c7::before,
+.c7::after {
   content: '';
   display: block;
-  padding: 2px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  border-radius: 50%;
+  -webkit-transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+}
+
+.c7::before {
   width: 100%;
   height: 100%;
-  position: absolute;
+  padding: 2px;
+}
+
+.c7::after {
+  width: 12px;
+  height: 12px;
 }
 
 .c1 {
@@ -2009,25 +1723,23 @@ exports[`Storyshots Molecules | Input / Checkbox With an error if not checked 1`
   border-color: #4B4B46;
 }
 
-.c14:checked + .c6 {
-  border-color: #0046FF;
+.c12:checked + .c6::after {
   background: #0046FF;
 }
 
-.c14:checked + .c6 svg {
-  fill: #FFFFFF;
-}
-
-.c14[disabled] + .c6 {
+.c12[disabled] + .c6 {
   border-color: #EBEBE8;
 }
 
-.c14:checked[disabled] + .c6 {
+.c12:checked[disabled] + .c6 {
   border-color: #EBEBE8;
+}
+
+.c12:checked[disabled] + .c6::after {
   background: #EBEBE8;
 }
 
-.c14:focus + .c6::before {
+.c12:focus + .c6::before {
   border: 1px solid #0046FF;
 }
 
@@ -2039,13 +1751,8 @@ exports[`Storyshots Molecules | Input / Checkbox With an error if not checked 1`
   cursor: pointer;
 }
 
-.c5:checked + .c6 {
-  border-color: #0046FF;
+.c5:checked + .c6::after {
   background: #0046FF;
-}
-
-.c5:checked + .c6 svg {
-  fill: #FFFFFF;
 }
 
 .c5[disabled] + .c6 {
@@ -2054,6 +1761,9 @@ exports[`Storyshots Molecules | Input / Checkbox With an error if not checked 1`
 
 .c5:checked[disabled] + .c6 {
   border-color: #EBEBE8;
+}
+
+.c5:checked[disabled] + .c6::after {
   background: #EBEBE8;
 }
 
@@ -2065,7 +1775,7 @@ exports[`Storyshots Molecules | Input / Checkbox With an error if not checked 1`
   border: 1px solid #0046FF;
 }
 
-.c10 {
+.c8 {
   padding-left: 8px;
   white-space: initial;
 }
@@ -2089,28 +1799,14 @@ exports[`Storyshots Molecules | Input / Checkbox With an error if not checked 1`
           name="example"
           onChange={[Function]}
           required={true}
-          type="checkbox"
+          type="radio"
           value="green"
         />
         <div
-          className="c6 c7 c8"
-        >
-          <svg
-            aria-hidden="true"
-            className="c9"
-            focusable="false"
-            preserveAspectRatio="xMidYMid meet"
-            role="presentation"
-            size={3}
-            viewBox="0 0 24 24"
-          >
-            <path
-              d="M8.76083729 16.4144594L2.20525972 9.86336213 0 12.2093109 8.79670106 21 24 5.30897552 21.7583339 3z"
-            />
-          </svg>
-        </div>
+          className="c6 c7"
+        />
         <span
-          className="c10 c11"
+          className="c8 c9"
         >
           Green
         </span>
@@ -2119,10 +1815,10 @@ exports[`Storyshots Molecules | Input / Checkbox With an error if not checked 1`
   </label>
   <div>
     <span
-      className="c12"
+      className="c10"
     >
       <div
-        className="c13"
+        className="c11"
       >
         Error: 
       </div>
@@ -2132,23 +1828,7 @@ exports[`Storyshots Molecules | Input / Checkbox With an error if not checked 1`
 </div>
 `;
 
-exports[`Storyshots Molecules | Input / Checkbox With auto focus 1`] = `
-.c8 {
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
+exports[`Storyshots Molecules | Input / Radio With auto focus 1`] = `
 .c4 {
   box-sizing: border-box;
   display: -webkit-box;
@@ -2167,20 +1847,6 @@ exports[`Storyshots Molecules | Input / Checkbox With auto focus 1`] = `
   cursor: pointer;
 }
 
-.c9 {
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  width: 12px;
-  height: 12px;
-  fill: transparent;
-  -webkit-flex-shrink: 0;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
-  display: block;
-}
-
 .c3 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #6E6E69;
@@ -2190,7 +1856,7 @@ exports[`Storyshots Molecules | Input / Checkbox With auto focus 1`] = `
   line-height: 1.4285714285714286;
 }
 
-.c11 {
+.c9 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
   margin: 0;
@@ -2209,18 +1875,34 @@ exports[`Storyshots Molecules | Input / Checkbox With auto focus 1`] = `
   height: 20px;
   border: 1px solid #BCBCB6;
   position: relative;
+  border-radius: 50%;
   -webkit-flex-shrink: 0;
   -ms-flex-negative: 0;
   flex-shrink: 0;
 }
 
-.c7::before {
+.c7::before,
+.c7::after {
   content: '';
   display: block;
-  padding: 2px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  border-radius: 50%;
+  -webkit-transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+}
+
+.c7::before {
   width: 100%;
   height: 100%;
-  position: absolute;
+  padding: 2px;
+}
+
+.c7::after {
+  width: 12px;
+  height: 12px;
 }
 
 .c1 {
@@ -2239,13 +1921,8 @@ exports[`Storyshots Molecules | Input / Checkbox With auto focus 1`] = `
   cursor: pointer;
 }
 
-.c5:checked + .c6 {
-  border-color: #0046FF;
+.c5:checked + .c6::after {
   background: #0046FF;
-}
-
-.c5:checked + .c6 svg {
-  fill: #FFFFFF;
 }
 
 .c5[disabled] + .c6 {
@@ -2254,6 +1931,9 @@ exports[`Storyshots Molecules | Input / Checkbox With auto focus 1`] = `
 
 .c5:checked[disabled] + .c6 {
   border-color: #EBEBE8;
+}
+
+.c5:checked[disabled] + .c6::after {
   background: #EBEBE8;
 }
 
@@ -2261,33 +1941,31 @@ exports[`Storyshots Molecules | Input / Checkbox With auto focus 1`] = `
   border: 1px solid #0046FF;
 }
 
-.c12:checked + .c6 {
-  border-color: #0046FF;
+.c10:checked + .c6::after {
   background: #0046FF;
 }
 
-.c12:checked + .c6 svg {
-  fill: #FFFFFF;
-}
-
-.c12[disabled] + .c6 {
+.c10[disabled] + .c6 {
   border-color: #EBEBE8;
 }
 
-.c12:checked[disabled] + .c6 {
+.c10:checked[disabled] + .c6 {
   border-color: #EBEBE8;
+}
+
+.c10:checked[disabled] + .c6::after {
   background: #EBEBE8;
 }
 
-.c12 + .c6::before {
+.c10 + .c6::before {
   border: 1px solid #FF1900;
 }
 
-.c12:focus + .c6::before {
+.c10:focus + .c6::before {
   border: 1px solid #0046FF;
 }
 
-.c10 {
+.c8 {
   padding-left: 8px;
   white-space: initial;
 }
@@ -2310,28 +1988,14 @@ exports[`Storyshots Molecules | Input / Checkbox With auto focus 1`] = `
           autoFocus={true}
           className="c5"
           name="example"
-          type="checkbox"
+          type="radio"
           value="green"
         />
         <div
-          className="c6 c7 c8"
-        >
-          <svg
-            aria-hidden="true"
-            className="c9"
-            focusable="false"
-            preserveAspectRatio="xMidYMid meet"
-            role="presentation"
-            size={3}
-            viewBox="0 0 24 24"
-          >
-            <path
-              d="M8.76083729 16.4144594L2.20525972 9.86336213 0 12.2093109 8.79670106 21 24 5.30897552 21.7583339 3z"
-            />
-          </svg>
-        </div>
+          className="c6 c7"
+        />
         <span
-          className="c10 c11"
+          className="c8 c9"
         >
           Green
         </span>
@@ -2341,25 +2005,9 @@ exports[`Storyshots Molecules | Input / Checkbox With auto focus 1`] = `
 </div>
 `;
 
-exports[`Storyshots Molecules | Input / Checkbox With checked (Controlled behaviour) 1`] = `
+exports[`Storyshots Molecules | Input / Radio With checked (Controlled behaviour) 1`] = `
 Array [
-  .c8 {
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.c4 {
+  .c4 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -2377,20 +2025,6 @@ Array [
   cursor: pointer;
 }
 
-.c9 {
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  width: 12px;
-  height: 12px;
-  fill: transparent;
-  -webkit-flex-shrink: 0;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
-  display: block;
-}
-
 .c3 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #6E6E69;
@@ -2400,7 +2034,7 @@ Array [
   line-height: 1.4285714285714286;
 }
 
-.c11 {
+.c9 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
   margin: 0;
@@ -2419,18 +2053,34 @@ Array [
   height: 20px;
   border: 1px solid #BCBCB6;
   position: relative;
+  border-radius: 50%;
   -webkit-flex-shrink: 0;
   -ms-flex-negative: 0;
   flex-shrink: 0;
 }
 
-.c7::before {
+.c7::before,
+.c7::after {
   content: '';
   display: block;
-  padding: 2px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  border-radius: 50%;
+  -webkit-transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+}
+
+.c7::before {
   width: 100%;
   height: 100%;
-  position: absolute;
+  padding: 2px;
+}
+
+.c7::after {
+  width: 12px;
+  height: 12px;
 }
 
 .c1 {
@@ -2449,13 +2099,8 @@ Array [
   cursor: pointer;
 }
 
-.c5:checked + .c6 {
-  border-color: #0046FF;
+.c5:checked + .c6::after {
   background: #0046FF;
-}
-
-.c5:checked + .c6 svg {
-  fill: #FFFFFF;
 }
 
 .c5[disabled] + .c6 {
@@ -2464,6 +2109,9 @@ Array [
 
 .c5:checked[disabled] + .c6 {
   border-color: #EBEBE8;
+}
+
+.c5:checked[disabled] + .c6::after {
   background: #EBEBE8;
 }
 
@@ -2471,7 +2119,7 @@ Array [
   border: 1px solid #0046FF;
 }
 
-.c10 {
+.c8 {
   padding-left: 8px;
   white-space: initial;
 }
@@ -2495,28 +2143,14 @@ Array [
             className="c5"
             name="example"
             onChange={[Function]}
-            type="checkbox"
+            type="radio"
             value="green"
           />
           <div
-            className="c6 c7 c8"
-          >
-            <svg
-              aria-hidden="true"
-              className="c9"
-              focusable="false"
-              preserveAspectRatio="xMidYMid meet"
-              role="presentation"
-              size={3}
-              viewBox="0 0 24 24"
-            >
-              <path
-                d="M8.76083729 16.4144594L2.20525972 9.86336213 0 12.2093109 8.79670106 21 24 5.30897552 21.7583339 3z"
-              />
-            </svg>
-          </div>
+            className="c6 c7"
+          />
           <span
-            className="c10 c11"
+            className="c8 c9"
           >
             Green
           </span>
@@ -2533,23 +2167,7 @@ Array [
 ]
 `;
 
-exports[`Storyshots Molecules | Input / Checkbox With default checked 1`] = `
-.c8 {
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
+exports[`Storyshots Molecules | Input / Radio With default checked 1`] = `
 .c4 {
   box-sizing: border-box;
   display: -webkit-box;
@@ -2568,20 +2186,6 @@ exports[`Storyshots Molecules | Input / Checkbox With default checked 1`] = `
   cursor: pointer;
 }
 
-.c9 {
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  width: 12px;
-  height: 12px;
-  fill: transparent;
-  -webkit-flex-shrink: 0;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
-  display: block;
-}
-
 .c3 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #6E6E69;
@@ -2591,7 +2195,7 @@ exports[`Storyshots Molecules | Input / Checkbox With default checked 1`] = `
   line-height: 1.4285714285714286;
 }
 
-.c11 {
+.c9 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
   margin: 0;
@@ -2610,18 +2214,34 @@ exports[`Storyshots Molecules | Input / Checkbox With default checked 1`] = `
   height: 20px;
   border: 1px solid #BCBCB6;
   position: relative;
+  border-radius: 50%;
   -webkit-flex-shrink: 0;
   -ms-flex-negative: 0;
   flex-shrink: 0;
 }
 
-.c7::before {
+.c7::before,
+.c7::after {
   content: '';
   display: block;
-  padding: 2px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  border-radius: 50%;
+  -webkit-transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+}
+
+.c7::before {
   width: 100%;
   height: 100%;
-  position: absolute;
+  padding: 2px;
+}
+
+.c7::after {
+  width: 12px;
+  height: 12px;
 }
 
 .c1 {
@@ -2640,13 +2260,8 @@ exports[`Storyshots Molecules | Input / Checkbox With default checked 1`] = `
   cursor: pointer;
 }
 
-.c5:checked + .c6 {
-  border-color: #0046FF;
+.c5:checked + .c6::after {
   background: #0046FF;
-}
-
-.c5:checked + .c6 svg {
-  fill: #FFFFFF;
 }
 
 .c5[disabled] + .c6 {
@@ -2655,6 +2270,9 @@ exports[`Storyshots Molecules | Input / Checkbox With default checked 1`] = `
 
 .c5:checked[disabled] + .c6 {
   border-color: #EBEBE8;
+}
+
+.c5:checked[disabled] + .c6::after {
   background: #EBEBE8;
 }
 
@@ -2662,7 +2280,7 @@ exports[`Storyshots Molecules | Input / Checkbox With default checked 1`] = `
   border: 1px solid #0046FF;
 }
 
-.c10 {
+.c8 {
   padding-left: 8px;
   white-space: initial;
 }
@@ -2685,28 +2303,14 @@ exports[`Storyshots Molecules | Input / Checkbox With default checked 1`] = `
           className="c5"
           defaultChecked={true}
           name="example"
-          type="checkbox"
+          type="radio"
           value="green"
         />
         <div
-          className="c6 c7 c8"
-        >
-          <svg
-            aria-hidden="true"
-            className="c9"
-            focusable="false"
-            preserveAspectRatio="xMidYMid meet"
-            role="presentation"
-            size={3}
-            viewBox="0 0 24 24"
-          >
-            <path
-              d="M8.76083729 16.4144594L2.20525972 9.86336213 0 12.2093109 8.79670106 21 24 5.30897552 21.7583339 3z"
-            />
-          </svg>
-        </div>
+          className="c6 c7"
+        />
         <span
-          className="c10 c11"
+          className="c8 c9"
         >
           Green
         </span>
