@@ -1,3 +1,10 @@
+## [1.47.4-beta.6](https://github.com/nordnet/ui/compare/v1.47.4-beta.5@beta...v1.47.4-beta.6@beta) (2019-10-11)
+
+
+### Bug Fixes
+
+* add tracking to both link types ([c42c179](https://github.com/nordnet/ui/commit/c42c179))
+
 ## [1.47.4-beta.5](https://github.com/nordnet/ui/compare/v1.47.4-beta.4@beta...v1.47.4-beta.5@beta) (2019-10-04)
 
 
