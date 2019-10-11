@@ -1,5 +1,20 @@
 <a name="1.9.0"></a>
 
+## [1.47.4-beta.6](https://github.com/nordnet/ui/compare/v1.47.4-beta.5@beta...v1.47.4-beta.6@beta) (2019-10-04)
+
+### Bug Fixes
+
+- add tracking to both link types ([c42c179](https://github.com/nordnet/ui/commit/c42c179))
+
+## [1.47.4-beta.5](https://github.com/nordnet/ui/compare/v1.47.4-beta.4@beta...v1.47.4-beta.5@beta) (2019-10-04)
+
+### Features
+
+- add tracking context ([7f117b2](https://github.com/nordnet/ui/commit/7f117b2))
+- add tracking to button and link ([af203fb](https://github.com/nordnet/ui/commit/af203fb))
+
+## [1.47.4-beta.4](https://github.com/nordnet/ui/compare/v1.47.4-beta.3@beta...v1.47.4-beta.4@beta) (2019-10-02)
+
 # [1.9.0](https://scm.prod.nordnet.se/projects/SHELL/repos/analytics/compare/diff?targetBranch=refs%2Ftags%2Fv1.8.0&sourceBranch=refs%2Ftags%2Fv1.9.0) (2019-01-31)
 
 ### Bug Fixes
