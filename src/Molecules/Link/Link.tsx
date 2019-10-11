@@ -91,7 +91,7 @@ export const Link: LinkComponent = React.forwardRef<any, LinkProps>((props, ref)
     <StyledLink
       ref={ref}
       className={className}
-      onClick={onClick}
+      onClick={trackClick}
       {...destinationProp}
       target={target}
       rel={rel}
