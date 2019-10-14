@@ -1,4 +1,5 @@
 const path = require('path');
+const tsConfig = require('../tsconfig.json');
 
 module.exports = ({ config, mode }) => {
   config.entry.unshift(require.resolve('core-js/es/weak-set'));
@@ -10,10 +11,20 @@ module.exports = ({ config, mode }) => {
   });
   config.module.rules.push({
     test: /\.(ts|tsx)$/,
-    loader: require.resolve('babel-loader'),
-    options: {
-      presets: [['react-app', { flow: false, typescript: true }]],
-    },
+    loaders: [
+      {
+        loader: 'babel-loader',
+        options: {
+          presets: [['react-app', { flow: false, typescript: true }]],
+        },
+      },
+      {
+        loader: 'react-docgen-typescript-loader',
+        // For some reason loader doesn't like moduleResolution field
+        // @hack
+        options: { compilerOptions: { ...tsConfig.compilerOptions, moduleResolution: undefined } },
+      },
+    ],
   });
   config.module.rules.push({
     test: /\.jsx?$/,
