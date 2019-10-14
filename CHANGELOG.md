@@ -1,3 +1,15 @@
+# [1.56.0](https://github.com/nordnet/ui/compare/v1.55.0...v1.56.0) (2019-10-14)
+
+
+### Bug Fixes
+
+* moduleResolution ([1861d0d](https://github.com/nordnet/ui/commit/1861d0d))
+
+
+### Features
+
+* docs ([67b4077](https://github.com/nordnet/ui/commit/67b4077))
+
 # [1.55.0](https://github.com/nordnet/ui/compare/v1.54.0...v1.55.0) (2019-10-10)
 
 
