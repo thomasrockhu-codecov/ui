@@ -124,38 +124,14 @@ const AccountListItem = ({ index }: any, ref: any) => {
 storiesOf('Molecules | Input / Select', module)
   .add('Default', () => {
     return (
-      <Input.Select
-        reducer={loggingReducer}
-        options={accountOptions}
-        label="User account"
-        placeholder="Select account"
-        onChange={action('change')}
-        onBlur={action('blur')}
-        onFocus={action('focus')}
-      />
+      <Input.Select options={accountOptions} label="User account" placeholder="Select account" />
     );
   })
   .add('Two', () => {
     return (
       <>
-        <Input.Select
-          reducer={loggingReducer}
-          options={accountOptions}
-          label="User account"
-          placeholder="Select account"
-          onChange={action('change')}
-          onBlur={action('blur')}
-          onFocus={action('focus')}
-        />
-        <Input.Select
-          reducer={loggingReducer}
-          options={accountOptions}
-          label="User account"
-          placeholder="Select account"
-          onChange={action('change')}
-          onBlur={action('blur')}
-          onFocus={action('focus')}
-        />
+        <Input.Select options={accountOptions} label="User account" placeholder="Select account" />
+        <Input.Select options={accountOptions} label="User account" placeholder="Select account" />
       </>
     );
   })

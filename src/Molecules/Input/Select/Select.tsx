@@ -166,6 +166,7 @@ const Select = (props: Props) => {
       },
     });
   }, [options, placeholder, isControlledMode, valueFromProps, dispatch]);
+
   const { open, value } = state;
   const buttonRef = React.useRef<HTMLButtonElement>(null);
   const customSelectListRef = React.useRef<HTMLDivElement>(null);
@@ -216,15 +217,21 @@ const Select = (props: Props) => {
   const isFocused = React.useRef(false);
 
   const handleBlur = (e: React.FocusEvent) => {
-    if (
-      inputWrapperRef.current &&
-      !inputWrapperRef.current.contains((e.relatedTarget as unknown) as Node)
-    ) {
+    let target: Node = e.relatedTarget as any;
+
+    if (target === null) {
+      // IE11
+      target = document.activeElement as any;
+    }
+
+    if (inputWrapperRef.current && !inputWrapperRef.current.contains(target)) {
       if (onBlur) onBlur(e);
       isFocused.current = false;
       dispatch({ type: defaultActionTypes['Select.Close'] });
     }
+    return true;
   };
+
   const handleFocus = (e: React.FocusEvent) => {
     if (!onFocus) return;
     if (inputWrapperRef.current && inputWrapperRef.current.contains(document.activeElement)) {
@@ -234,6 +241,7 @@ const Select = (props: Props) => {
       }
     }
   };
+  const contextValue = React.useMemo(() => [state, dispatch], [state, dispatch]);
 
   if (!state.initialized) {
     return null;
@@ -257,7 +265,7 @@ const Select = (props: Props) => {
           />
         ))}
       </HiddenSelect>
-      <SelectStateContext.Provider value={[state, dispatch]}>
+      <SelectStateContext.Provider value={contextValue}>
         <FormFieldOrFragment
           noFormField={noFormField}
           {...props}
