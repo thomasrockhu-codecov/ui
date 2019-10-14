@@ -241,7 +241,10 @@ const Select = (props: Props) => {
       }
     }
   };
-  const contextValue = React.useMemo(() => [state, dispatch], [state, dispatch]);
+  const contextValue = React.useMemo(() => [state, dispatch] as [typeof state, typeof dispatch], [
+    state,
+    dispatch,
+  ]);
 
   if (!state.initialized) {
     return null;
