@@ -1,17 +1,184 @@
+<a name="1.9.0"></a>
+
 ## [1.47.4-beta.6](https://github.com/nordnet/ui/compare/v1.47.4-beta.5@beta...v1.47.4-beta.6@beta) (2019-10-11)
+
+### Bug Fixes
+
+- add tracking to both link types ([c42c179](https://github.com/nordnet/ui/commit/c42c179))
+
+## [1.47.4-beta.5](https://github.com/nordnet/ui/compare/v1.47.4-beta.4@beta...v1.47.4-beta.5@beta) (2019-10-04)
+
+### Features
+
+- add tracking context ([7f117b2](https://github.com/nordnet/ui/commit/7f117b2))
+- add tracking to button and link ([af203fb](https://github.com/nordnet/ui/commit/af203fb))
+
+## [1.47.4-beta.4](https://github.com/nordnet/ui/compare/v1.47.4-beta.3@beta...v1.47.4-beta.4@beta) (2019-10-02)
+
+# [1.55.0](https://github.com/nordnet/ui/compare/v1.54.0...v1.55.0) (2019-10-10)
 
 
 ### Bug Fixes
 
-* add tracking to both link types ([c42c179](https://github.com/nordnet/ui/commit/c42c179))
-
-## [1.47.4-beta.5](https://github.com/nordnet/ui/compare/v1.47.4-beta.4@beta...v1.47.4-beta.5@beta) (2019-10-04)
+* 🐛 use same left-padding as input.text ([7632a04](https://github.com/nordnet/ui/commit/7632a04))
 
 
 ### Features
 
-* add tracking context ([7f117b2](https://github.com/nordnet/ui/commit/7f117b2))
-* add tracking to button and link ([af203fb](https://github.com/nordnet/ui/commit/af203fb))
+* 🎸 left align number when no steppers for input.number ([3c802ca](https://github.com/nordnet/ui/commit/3c802ca))
+
+# [1.54.0](https://github.com/nordnet/ui/compare/v1.53.4...v1.54.0) (2019-10-10)
+
+
+### Features
+
+* add Pending icon ([6d0045d](https://github.com/nordnet/ui/commit/6d0045d))
+
+## [1.53.4](https://github.com/nordnet/ui/compare/v1.53.3...v1.53.4) (2019-10-08)
+
+
+### Bug Fixes
+
+* add background colors for order depth ([56fbd48](https://github.com/nordnet/ui/commit/56fbd48))
+* remove redundant background ([795c7ea](https://github.com/nordnet/ui/commit/795c7ea))
+
+## [1.53.3](https://github.com/nordnet/ui/compare/v1.53.2...v1.53.3) (2019-10-08)
+
+
+### Bug Fixes
+
+* z-index ([fc42538](https://github.com/nordnet/ui/commit/fc42538))
+
+## [1.53.2](https://github.com/nordnet/ui/compare/v1.53.1...v1.53.2) (2019-10-08)
+
+
+### Bug Fixes
+
+* add classname prop to labeledvalue ([8d1e6cb](https://github.com/nordnet/ui/commit/8d1e6cb))
+
+## [1.53.1](https://github.com/nordnet/ui/compare/v1.53.0...v1.53.1) (2019-10-08)
+
+
+### Bug Fixes
+
+* remove pr error ([df152f8](https://github.com/nordnet/ui/commit/df152f8))
+* support full width for select ([9be9521](https://github.com/nordnet/ui/commit/9be9521))
+
+# [1.53.0](https://github.com/nordnet/ui/compare/v1.52.0...v1.53.0) (2019-10-08)
+
+
+### Bug Fixes
+
+* remove carets from newly added bumps ([4487209](https://github.com/nordnet/ui/commit/4487209))
+
+
+### Features
+
+* bump react and react-router deps ([d3d2de4](https://github.com/nordnet/ui/commit/d3d2de4))
+
+# [1.52.0](https://github.com/nordnet/ui/compare/v1.51.1...v1.52.0) (2019-10-07)
+
+
+### Features
+
+* expose missing components ([521a809](https://github.com/nordnet/ui/commit/521a809))
+* support addons for input number ([96772d5](https://github.com/nordnet/ui/commit/96772d5))
+
+## [1.51.1](https://github.com/nordnet/ui/compare/v1.51.0...v1.51.1) (2019-10-07)
+
+
+### Bug Fixes
+
+* icon color currentColor ([e1a9065](https://github.com/nordnet/ui/commit/e1a9065))
+
+# [1.51.0](https://github.com/nordnet/ui/compare/v1.50.3...v1.51.0) (2019-10-07)
+
+
+### Bug Fixes
+
+* console.log ([2006e9c](https://github.com/nordnet/ui/commit/2006e9c))
+* firefox vertical align ([8406695](https://github.com/nordnet/ui/commit/8406695))
+
+
+### Features
+
+* add proper multiselect renderers ([971d73e](https://github.com/nordnet/ui/commit/971d73e))
+
+## [1.50.3](https://github.com/nordnet/ui/compare/v1.50.2...v1.50.3) (2019-10-04)
+
+
+### Bug Fixes
+
+* checkbox ([fdfbdb4](https://github.com/nordnet/ui/commit/fdfbdb4))
+* display mode ([0845451](https://github.com/nordnet/ui/commit/0845451))
+* dont nudge on click in ie11 ([2491793](https://github.com/nordnet/ui/commit/2491793))
+* snapshots ([e33b21c](https://github.com/nordnet/ui/commit/e33b21c))
+
+## [1.50.2](https://github.com/nordnet/ui/compare/v1.50.1...v1.50.2) (2019-10-04)
+
+
+### Bug Fixes
+
+* ie11 storybook ([39a4146](https://github.com/nordnet/ui/commit/39a4146))
+
+## [1.50.1](https://github.com/nordnet/ui/compare/v1.50.0...v1.50.1) (2019-10-04)
+
+
+### Bug Fixes
+
+* add solid circle to icons ([8b03127](https://github.com/nordnet/ui/commit/8b03127))
+
+# [1.50.0](https://github.com/nordnet/ui/compare/v1.49.1...v1.50.0) (2019-10-04)
+
+
+### Bug Fixes
+
+* tabbing out closes the select ([af9dceb](https://github.com/nordnet/ui/commit/af9dceb))
+
+
+### Features
+
+* added select all example ([c31dd51](https://github.com/nordnet/ui/commit/c31dd51))
+* allow to use predefined string colors ([b4a027f](https://github.com/nordnet/ui/commit/b4a027f))
+* completed multi account select ([8bcebd2](https://github.com/nordnet/ui/commit/8bcebd2))
+
+## [1.49.1](https://github.com/nordnet/ui/compare/v1.49.0...v1.49.1) (2019-10-03)
+
+
+### Bug Fixes
+
+* remove generators ([0569072](https://github.com/nordnet/ui/commit/0569072))
+
+# [1.49.0](https://github.com/nordnet/ui/compare/v1.48.0...v1.49.0) (2019-10-03)
+
+
+### Bug Fixes
+
+* merge master ([536c156](https://github.com/nordnet/ui/commit/536c156))
+* remove blue border ([8f083c9](https://github.com/nordnet/ui/commit/8f083c9))
+
+
+### Features
+
+* create radio base ([64dbda9](https://github.com/nordnet/ui/commit/64dbda9))
+* create textarea ([a882ab2](https://github.com/nordnet/ui/commit/a882ab2))
+* style the different states ([563c93d](https://github.com/nordnet/ui/commit/563c93d))
+
+# [1.48.0](https://github.com/nordnet/ui/compare/v1.47.4...v1.48.0) (2019-10-03)
+
+
+### Bug Fixes
+
+* change breakpoints and paddings ([834e97a](https://github.com/nordnet/ui/commit/834e97a))
+* change breakpoints and paddings ([6cb787b](https://github.com/nordnet/ui/commit/6cb787b))
+* slim breakpoints ([5dbf187](https://github.com/nordnet/ui/commit/5dbf187))
+* tighten breakpoints further ([54419c3](https://github.com/nordnet/ui/commit/54419c3))
+* typo ([950b4b8](https://github.com/nordnet/ui/commit/950b4b8))
+
+
+### Features
+
+* update grid ([98737fa](https://github.com/nordnet/ui/commit/98737fa))
 
 ## [1.47.4-beta.4](https://github.com/nordnet/ui/compare/v1.47.4-beta.3@beta...v1.47.4-beta.4@beta) (2019-10-02)
 
@@ -41,6 +208,14 @@
 ### Bug Fixes
 
 * slim breakpoints ([5dbf187](https://github.com/nordnet/ui/commit/5dbf187))
+
+## [1.47.4](https://github.com/nordnet/ui/compare/v1.47.3...v1.47.4) (2019-10-01)
+
+
+### Bug Fixes
+
+* hideLabel Input.Text ([4026034](https://github.com/nordnet/ui/commit/4026034))
+* less padding bottom on cardwithtabs ([7ccaf2c](https://github.com/nordnet/ui/commit/7ccaf2c))
 
 ## [1.47.3](https://github.com/nordnet/ui/compare/v1.47.2...v1.47.3) (2019-09-30)
 

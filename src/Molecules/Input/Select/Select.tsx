@@ -89,7 +89,7 @@ const FormFieldOrFragment = React.forwardRef<HTMLDivElement, any>(
         {noFormField ? (
           children
         ) : (
-          <FormField {...props} ref={ref}>
+          <FormField {...props} {...(fullWidth ? { width: '100%' } : {})} ref={ref}>
             <SelectWrapper {...props}>
               {children}
               <Chevron open={open} />
@@ -155,22 +155,35 @@ const Select = (props: Props) => {
     [_state, options, placeholder, isControlledMode, valueFromProps, reducer],
   );
 
+  // And defer the real update
+  React.useEffect(() => {
+    dispatch({
+      type: defaultActionTypes['Select.SyncState'],
+      payload: {
+        options,
+        placeholder,
+        value: isControlledMode ? valueFromProps : _state.value,
+      },
+    });
+  }, [options, placeholder, isControlledMode, valueFromProps, dispatch]);
   const { open, value } = state;
-
   const buttonRef = React.useRef<HTMLButtonElement>(null);
   const customSelectListRef = React.useRef<HTMLDivElement>(null);
 
-  const { setRef, onKeyDown: handleListItemKeyDown, itemsRefs } = useKeyboardNavigation({
-    itemsLength: options.filter(x => !x.disabled).length,
-    onEscape: () => {
-      dispatch({ type: defaultActionTypes['Select.Close'] });
-      if (buttonRef.current) {
-        buttonRef.current.focus();
-      }
+  const { setRef, onKeyDown: handleListItemKeyDown, itemsRefs } = useKeyboardNavigation(
+    {
+      itemsLength: options.filter(x => !x.disabled).length,
+      onEscape: () => {
+        dispatch({ type: defaultActionTypes['Select.Close'] });
+        if (buttonRef.current) {
+          buttonRef.current.focus();
+        }
+      },
     },
-  });
+    [options],
+  );
 
-  React.useLayoutEffect(() => {
+  React.useEffect(() => {
     if (autoFocusFirstOption) {
       if (itemsRefs.length > 0 && itemsRefs.every(i => Boolean(i))) {
         itemsRefs[0].focus();
@@ -203,13 +216,13 @@ const Select = (props: Props) => {
   const isFocused = React.useRef(false);
 
   const handleBlur = (e: React.FocusEvent) => {
-    if (!onBlur) return;
     if (
       inputWrapperRef.current &&
       !inputWrapperRef.current.contains((e.relatedTarget as unknown) as Node)
     ) {
-      onBlur(e);
+      if (onBlur) onBlur(e);
       isFocused.current = false;
+      dispatch({ type: defaultActionTypes['Select.Close'] });
     }
   };
   const handleFocus = (e: React.FocusEvent) => {
@@ -272,6 +285,7 @@ const Select = (props: Props) => {
               key={3}
               component={List}
               noFormField={noFormField}
+              onBlur={() => dispatch({ type: defaultActionTypes['Select.Close'] })}
             >
               {options.map((x: any, index: number) => (
                 <ListItemWrapper
@@ -282,7 +296,7 @@ const Select = (props: Props) => {
                   option={x}
                   selected={value.includes(x)}
                   onClick={handleClickListItem}
-                  component={ListItem}
+                  component={ListItem as any}
                 />
               ))}
             </ListWrapper>

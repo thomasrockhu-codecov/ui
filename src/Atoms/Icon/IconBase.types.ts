@@ -1,25 +1,25 @@
 import { Theme } from '../../theme/theme.types';
 
-type ColorFn = (t: Theme) => Values<Theme['color']>;
+export type ColorFn = (t: Theme) => Values<Theme['color']>;
 type Values<ObjectType> = ObjectType extends Record<any, infer K> ? K : never; // can move it to util types
 
 export type StyledIconBaseProps = {
-  colorFn?: ColorFn;
+  colorFn?: ColorFn | string;
   /** unit-based */
   size?: number;
   inline?: boolean;
 };
 
 export type StyledChildProps = {
-  strokeColorFn?: ColorFn;
+  strokeColorFn?: ColorFn | string;
 };
 
 export type BaseProps = {
   className?: string;
   title?: string;
   /** @deprecated use fill instead */
-  color?: ColorFn;
-  fill?: ColorFn;
+  color?: ColorFn | string;
+  fill?: ColorFn | string;
   /** unit-based */
   size?: number;
   inline?: boolean;
@@ -27,7 +27,7 @@ export type BaseProps = {
 };
 
 export type ChildProps = {
-  stroke?: ColorFn;
+  stroke?: ColorFn | string;
 } & BaseProps;
 
 export type InternalProps = BaseProps & {

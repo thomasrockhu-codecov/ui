@@ -1,11 +1,38 @@
 import React from 'react';
-import styled from 'styled-components';
-import { InternalProps, StyledIconBaseProps } from './IconBase.types';
+import styled, { DefaultTheme } from 'styled-components';
+import { InternalProps, StyledIconBaseProps, ColorFn } from './IconBase.types';
+import { assert } from '../../common/utils';
+
+const ALLOWED_COLOR_STRINGS = ['transparent', 'inherit', 'currentColor'];
+export const getColor = (
+  theme: DefaultTheme,
+  defaultColor: string,
+  colorFnOrColor?: ColorFn | string,
+) => {
+  if (typeof colorFnOrColor !== 'undefined') {
+    if (typeof colorFnOrColor === 'function') {
+      return colorFnOrColor(theme);
+    }
+
+    if (typeof colorFnOrColor === 'string') {
+      if (ALLOWED_COLOR_STRINGS.includes(colorFnOrColor)) {
+        return colorFnOrColor;
+      }
+      assert(
+        ALLOWED_COLOR_STRINGS.includes(colorFnOrColor),
+        `Incorrect string value for color, use t => t.color.<some color> instead. Allowed string values are: ${ALLOWED_COLOR_STRINGS.join(
+          ', ',
+        )}.`,
+      );
+    }
+  }
+  return defaultColor;
+};
 
 const StyledIconBase = styled.svg<StyledIconBaseProps>`
   ${p => {
     const size = p.size || 5;
-    const fill = p.colorFn ? p.colorFn(p.theme) : p.theme.color.svgFill;
+    const fill = getColor(p.theme, p.theme.color.svgFill, p.colorFn);
 
     return `
       user-select: none;

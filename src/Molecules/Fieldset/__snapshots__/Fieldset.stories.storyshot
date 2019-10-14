@@ -42,7 +42,7 @@ exports[`Storyshots Molecules | Fieldset Default 1`] = `
   user-select: none;
   width: 12px;
   height: 12px;
-  fill: #FFFFFF;
+  fill: transparent;
   -webkit-flex-shrink: 0;
   -ms-flex-negative: 0;
   flex-shrink: 0;
@@ -135,6 +135,10 @@ exports[`Storyshots Molecules | Fieldset Default 1`] = `
 .c8:checked + .c9 {
   border-color: #0046FF;
   background: #0046FF;
+}
+
+.c8:checked + .c9 svg {
+  fill: #FFFFFF;
 }
 
 .c8[disabled] + .c9 {

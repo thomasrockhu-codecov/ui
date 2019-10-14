@@ -2,9 +2,8 @@ import React from 'react';
 import styled from 'styled-components';
 import R from 'ramda';
 
-const CleanInput = React.forwardRef((props: any, ref: React.Ref<HTMLInputElement>) => (
-  // eslint-disable-next-line react/button-has-type
-  <input
+const CleanTextarea = React.forwardRef((props: any, ref: React.Ref<HTMLTextAreaElement>) => (
+  <textarea
     ref={ref}
     {...R.omit(
       [
@@ -14,12 +13,9 @@ const CleanInput = React.forwardRef((props: any, ref: React.Ref<HTMLInputElement
         'error',
         'fullWidth',
         'hasError',
-        'leftAddon',
-        'rightAddon',
         'size',
         'sizeProp',
         'success',
-        'showSteppers',
       ],
       props,
     )}
@@ -27,10 +23,10 @@ const CleanInput = React.forwardRef((props: any, ref: React.Ref<HTMLInputElement
 ));
 
 /** From Normalize.css v8.0.1 */
-export const Input = styled(CleanInput)`
+export const Textarea = styled(CleanTextarea)`
   font-family: inherit;
   font-size: 100%;
   line-height: 1.15;
   margin: 0;
-  overflow: visible;
+  overflow: auto;
 `;

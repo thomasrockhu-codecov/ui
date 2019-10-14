@@ -41,7 +41,7 @@ exports[`Storyshots Molecules | Switch Controlled behaviour 1`] = `
   display: inline-block;
 }
 
-.c6 {
+.c7 {
   background: white;
   display: block;
   height: 24px;
@@ -59,7 +59,7 @@ exports[`Storyshots Molecules | Switch Controlled behaviour 1`] = `
   transition: transform 0.2s cubic-bezier(0.18,0.9,0.35,1.15);
 }
 
-.c8 {
+.c9 {
   display: block;
   height: 16px;
   width: 40px;
@@ -70,6 +70,10 @@ exports[`Storyshots Molecules | Switch Controlled behaviour 1`] = `
   transition: background-color 0.2s ease-out;
 }
 
+.c5 {
+  position: relative;
+}
+
 .c4 {
   font-family: inherit;
   font-size: 100%;
@@ -78,7 +82,6 @@ exports[`Storyshots Molecules | Switch Controlled behaviour 1`] = `
   overflow: visible;
   text-transform: none;
   display: block;
-  position: relative;
   background: none;
   padding: 0;
   border: 0;
@@ -106,21 +109,21 @@ exports[`Storyshots Molecules | Switch Controlled behaviour 1`] = `
   outline: 1px dotted ButtonText;
 }
 
-.c4[aria-checked='true'] .c7 {
+.c4[aria-checked='true'] .c8 {
   background-color: #0046FF;
 }
 
-.c4[aria-checked='true'] .c5 {
+.c4[aria-checked='true'] .c6 {
   -webkit-transform: translate(16px);
   -ms-transform: translate(16px);
   transform: translate(16px);
 }
 
-.c4[disabled] .c7 {
+.c4[disabled] .c8 {
   background-color: #EBEBE8;
 }
 
-.c4[disabled] .c5 {
+.c4[disabled] .c6 {
   border: 1px solid #EBEBE8;
 }
 
@@ -149,12 +152,16 @@ exports[`Storyshots Molecules | Switch Controlled behaviour 1`] = `
         role="switch"
         type="button"
       >
-        <span
-          className="c5 c6"
-        />
-        <span
-          className="c7 c8"
-        />
+        <div
+          className="c5"
+        >
+          <span
+            className="c6 c7"
+          />
+          <span
+            className="c8 c9"
+          />
+        </div>
       </button>
     </span>
   </span>
@@ -202,7 +209,7 @@ exports[`Storyshots Molecules | Switch Default Off 1`] = `
   display: inline-block;
 }
 
-.c6 {
+.c7 {
   background: white;
   display: block;
   height: 24px;
@@ -220,7 +227,7 @@ exports[`Storyshots Molecules | Switch Default Off 1`] = `
   transition: transform 0.2s cubic-bezier(0.18,0.9,0.35,1.15);
 }
 
-.c8 {
+.c9 {
   display: block;
   height: 16px;
   width: 40px;
@@ -231,6 +238,10 @@ exports[`Storyshots Molecules | Switch Default Off 1`] = `
   transition: background-color 0.2s ease-out;
 }
 
+.c5 {
+  position: relative;
+}
+
 .c4 {
   font-family: inherit;
   font-size: 100%;
@@ -239,7 +250,6 @@ exports[`Storyshots Molecules | Switch Default Off 1`] = `
   overflow: visible;
   text-transform: none;
   display: block;
-  position: relative;
   background: none;
   padding: 0;
   border: 0;
@@ -267,21 +277,21 @@ exports[`Storyshots Molecules | Switch Default Off 1`] = `
   outline: 1px dotted ButtonText;
 }
 
-.c4[aria-checked='true'] .c7 {
+.c4[aria-checked='true'] .c8 {
   background-color: #0046FF;
 }
 
-.c4[aria-checked='true'] .c5 {
+.c4[aria-checked='true'] .c6 {
   -webkit-transform: translate(16px);
   -ms-transform: translate(16px);
   transform: translate(16px);
 }
 
-.c4[disabled] .c7 {
+.c4[disabled] .c8 {
   background-color: #EBEBE8;
 }
 
-.c4[disabled] .c5 {
+.c4[disabled] .c6 {
   border: 1px solid #EBEBE8;
 }
 
@@ -310,12 +320,16 @@ exports[`Storyshots Molecules | Switch Default Off 1`] = `
         role="switch"
         type="button"
       >
-        <span
-          className="c5 c6"
-        />
-        <span
-          className="c7 c8"
-        />
+        <div
+          className="c5"
+        >
+          <span
+            className="c6 c7"
+          />
+          <span
+            className="c8 c9"
+          />
+        </div>
       </button>
     </span>
   </span>
@@ -363,7 +377,7 @@ exports[`Storyshots Molecules | Switch Default On 1`] = `
   display: inline-block;
 }
 
-.c6 {
+.c7 {
   background: white;
   display: block;
   height: 24px;
@@ -381,7 +395,7 @@ exports[`Storyshots Molecules | Switch Default On 1`] = `
   transition: transform 0.2s cubic-bezier(0.18,0.9,0.35,1.15);
 }
 
-.c8 {
+.c9 {
   display: block;
   height: 16px;
   width: 40px;
@@ -392,6 +406,10 @@ exports[`Storyshots Molecules | Switch Default On 1`] = `
   transition: background-color 0.2s ease-out;
 }
 
+.c5 {
+  position: relative;
+}
+
 .c4 {
   font-family: inherit;
   font-size: 100%;
@@ -400,7 +418,6 @@ exports[`Storyshots Molecules | Switch Default On 1`] = `
   overflow: visible;
   text-transform: none;
   display: block;
-  position: relative;
   background: none;
   padding: 0;
   border: 0;
@@ -428,21 +445,21 @@ exports[`Storyshots Molecules | Switch Default On 1`] = `
   outline: 1px dotted ButtonText;
 }
 
-.c4[aria-checked='true'] .c7 {
+.c4[aria-checked='true'] .c8 {
   background-color: #0046FF;
 }
 
-.c4[aria-checked='true'] .c5 {
+.c4[aria-checked='true'] .c6 {
   -webkit-transform: translate(16px);
   -ms-transform: translate(16px);
   transform: translate(16px);
 }
 
-.c4[disabled] .c7 {
+.c4[disabled] .c8 {
   background-color: #EBEBE8;
 }
 
-.c4[disabled] .c5 {
+.c4[disabled] .c6 {
   border: 1px solid #EBEBE8;
 }
 
@@ -471,12 +488,16 @@ exports[`Storyshots Molecules | Switch Default On 1`] = `
         role="switch"
         type="button"
       >
-        <span
-          className="c5 c6"
-        />
-        <span
-          className="c7 c8"
-        />
+        <div
+          className="c5"
+        >
+          <span
+            className="c6 c7"
+          />
+          <span
+            className="c8 c9"
+          />
+        </div>
       </button>
     </span>
   </span>
@@ -524,7 +545,7 @@ exports[`Storyshots Molecules | Switch Disabled 1`] = `
   display: inline-block;
 }
 
-.c6 {
+.c7 {
   background: white;
   display: block;
   height: 24px;
@@ -542,7 +563,7 @@ exports[`Storyshots Molecules | Switch Disabled 1`] = `
   transition: transform 0.2s cubic-bezier(0.18,0.9,0.35,1.15);
 }
 
-.c8 {
+.c9 {
   display: block;
   height: 16px;
   width: 40px;
@@ -553,6 +574,10 @@ exports[`Storyshots Molecules | Switch Disabled 1`] = `
   transition: background-color 0.2s ease-out;
 }
 
+.c5 {
+  position: relative;
+}
+
 .c4 {
   font-family: inherit;
   font-size: 100%;
@@ -561,7 +586,6 @@ exports[`Storyshots Molecules | Switch Disabled 1`] = `
   overflow: visible;
   text-transform: none;
   display: block;
-  position: relative;
   background: none;
   padding: 0;
   border: 0;
@@ -589,21 +613,21 @@ exports[`Storyshots Molecules | Switch Disabled 1`] = `
   outline: 1px dotted ButtonText;
 }
 
-.c4[aria-checked='true'] .c7 {
+.c4[aria-checked='true'] .c8 {
   background-color: #0046FF;
 }
 
-.c4[aria-checked='true'] .c5 {
+.c4[aria-checked='true'] .c6 {
   -webkit-transform: translate(16px);
   -ms-transform: translate(16px);
   transform: translate(16px);
 }
 
-.c4[disabled] .c7 {
+.c4[disabled] .c8 {
   background-color: #EBEBE8;
 }
 
-.c4[disabled] .c5 {
+.c4[disabled] .c6 {
   border: 1px solid #EBEBE8;
 }
 
@@ -633,12 +657,16 @@ exports[`Storyshots Molecules | Switch Disabled 1`] = `
         role="switch"
         type="button"
       >
-        <span
-          className="c5 c6"
-        />
-        <span
-          className="c7 c8"
-        />
+        <div
+          className="c5"
+        >
+          <span
+            className="c6 c7"
+          />
+          <span
+            className="c8 c9"
+          />
+        </div>
       </button>
     </span>
   </span>
@@ -686,7 +714,7 @@ exports[`Storyshots Molecules | Switch With Label prop as ReactNode 1`] = `
   display: inline-block;
 }
 
-.c6 {
+.c7 {
   background: white;
   display: block;
   height: 24px;
@@ -704,7 +732,7 @@ exports[`Storyshots Molecules | Switch With Label prop as ReactNode 1`] = `
   transition: transform 0.2s cubic-bezier(0.18,0.9,0.35,1.15);
 }
 
-.c8 {
+.c9 {
   display: block;
   height: 16px;
   width: 40px;
@@ -715,6 +743,10 @@ exports[`Storyshots Molecules | Switch With Label prop as ReactNode 1`] = `
   transition: background-color 0.2s ease-out;
 }
 
+.c5 {
+  position: relative;
+}
+
 .c4 {
   font-family: inherit;
   font-size: 100%;
@@ -723,7 +755,6 @@ exports[`Storyshots Molecules | Switch With Label prop as ReactNode 1`] = `
   overflow: visible;
   text-transform: none;
   display: block;
-  position: relative;
   background: none;
   padding: 0;
   border: 0;
@@ -751,21 +782,21 @@ exports[`Storyshots Molecules | Switch With Label prop as ReactNode 1`] = `
   outline: 1px dotted ButtonText;
 }
 
-.c4[aria-checked='true'] .c7 {
+.c4[aria-checked='true'] .c8 {
   background-color: #0046FF;
 }
 
-.c4[aria-checked='true'] .c5 {
+.c4[aria-checked='true'] .c6 {
   -webkit-transform: translate(16px);
   -ms-transform: translate(16px);
   transform: translate(16px);
 }
 
-.c4[disabled] .c7 {
+.c4[disabled] .c8 {
   background-color: #EBEBE8;
 }
 
-.c4[disabled] .c5 {
+.c4[disabled] .c6 {
   border: 1px solid #EBEBE8;
 }
 
@@ -794,12 +825,16 @@ exports[`Storyshots Molecules | Switch With Label prop as ReactNode 1`] = `
         role="switch"
         type="button"
       >
-        <span
-          className="c5 c6"
-        />
-        <span
-          className="c7 c8"
-        />
+        <div
+          className="c5"
+        >
+          <span
+            className="c6 c7"
+          />
+          <span
+            className="c8 c9"
+          />
+        </div>
       </button>
     </span>
   </span>
@@ -856,7 +891,7 @@ exports[`Storyshots Molecules | Switch With hidden label 1`] = `
   display: inline-block;
 }
 
-.c7 {
+.c8 {
   background: white;
   display: block;
   height: 24px;
@@ -874,7 +909,7 @@ exports[`Storyshots Molecules | Switch With hidden label 1`] = `
   transition: transform 0.2s cubic-bezier(0.18,0.9,0.35,1.15);
 }
 
-.c9 {
+.c10 {
   display: block;
   height: 16px;
   width: 40px;
@@ -885,6 +920,10 @@ exports[`Storyshots Molecules | Switch With hidden label 1`] = `
   transition: background-color 0.2s ease-out;
 }
 
+.c6 {
+  position: relative;
+}
+
 .c5 {
   font-family: inherit;
   font-size: 100%;
@@ -893,7 +932,6 @@ exports[`Storyshots Molecules | Switch With hidden label 1`] = `
   overflow: visible;
   text-transform: none;
   display: block;
-  position: relative;
   background: none;
   padding: 0;
   border: 0;
@@ -921,21 +959,21 @@ exports[`Storyshots Molecules | Switch With hidden label 1`] = `
   outline: 1px dotted ButtonText;
 }
 
-.c5[aria-checked='true'] .c8 {
+.c5[aria-checked='true'] .c9 {
   background-color: #0046FF;
 }
 
-.c5[aria-checked='true'] .c6 {
+.c5[aria-checked='true'] .c7 {
   -webkit-transform: translate(16px);
   -ms-transform: translate(16px);
   transform: translate(16px);
 }
 
-.c5[disabled] .c8 {
+.c5[disabled] .c9 {
   background-color: #EBEBE8;
 }
 
-.c5[disabled] .c6 {
+.c5[disabled] .c7 {
   border: 1px solid #EBEBE8;
 }
 
@@ -968,12 +1006,16 @@ exports[`Storyshots Molecules | Switch With hidden label 1`] = `
         role="switch"
         type="button"
       >
-        <span
-          className="c6 c7"
-        />
-        <span
-          className="c8 c9"
-        />
+        <div
+          className="c6"
+        >
+          <span
+            className="c7 c8"
+          />
+          <span
+            className="c9 c10"
+          />
+        </div>
       </button>
     </span>
   </span>

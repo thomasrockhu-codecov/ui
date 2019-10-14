@@ -1,6 +1,6 @@
 import * as React from 'react';
 import styled, { css } from 'styled-components';
-import { Flexbox, Typography, Icon, List as UIList, Box } from '../../../..';
+import { Flexbox, Typography, List as UIList, Input } from '../../../..';
 
 const TRIANGLE_SIZE = 10;
 type ListProps = {
@@ -108,20 +108,21 @@ const StyledOption = styled.div<Pick<OptionProps, 'selected' | 'disabled'>>`
 export const Option = React.forwardRef<HTMLDivElement, OptionProps>(
   ({ label, disabled, selected }, ref) => (
     <StyledOption ref={ref} selected={selected} disabled={disabled} tabIndex={-1}>
-      <Typography type="tertiary" color="inherit">
-        <FullHeightFlexbox justifyContent="space-between" container>
-          <Flexbox item container alignItems="center">
-            {label}
-          </Flexbox>
-          {selected && (
-            <Flexbox item container alignItems="center">
-              <Box pl={2}>
-                <Icon.CheckMark color={t => t.color.cta} />
-              </Box>
+      <FullHeightFlexbox container alignItems="center" gutter={2}>
+        <Flexbox item container alignItems="center">
+          {/** TODO: revisit a11y here */}
+          <Input.Checkbox name="example" label="" checked={selected} width="20px" />
+        </Flexbox>
+        <Flexbox item container justifyContent="space-between" alignItems="center">
+          <Flexbox item container direction="column" grow={1}>
+            <Flexbox item>
+              <Typography type="secondary" color={t => t.color.text}>
+                {label}
+              </Typography>
             </Flexbox>
-          )}
-        </FullHeightFlexbox>
-      </Typography>
+          </Flexbox>
+        </Flexbox>
+      </FullHeightFlexbox>
     </StyledOption>
   ),
 );
