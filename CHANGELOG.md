@@ -1,3 +1,19 @@
+# [1.56.0-beta.1](https://github.com/nordnet/ui/compare/v1.55.0...v1.56.0-beta.1@beta) (2019-10-14)
+
+
+### Bug Fixes
+
+* 🐛 another merge fix ([a4b9a83](https://github.com/nordnet/ui/commit/a4b9a83))
+* 🐛 fix merge fail ([433bd8d](https://github.com/nordnet/ui/commit/433bd8d))
+* 🐛 merge changelog ([327375f](https://github.com/nordnet/ui/commit/327375f))
+* add tracking to both link types ([c42c179](https://github.com/nordnet/ui/commit/c42c179))
+
+
+### Features
+
+* add tracking context ([7f117b2](https://github.com/nordnet/ui/commit/7f117b2))
+* add tracking to button and link ([af203fb](https://github.com/nordnet/ui/commit/af203fb))
+
 <a name="1.9.0"></a>
 
 ## [1.47.4-beta.6](https://github.com/nordnet/ui/compare/v1.47.4-beta.5@beta...v1.47.4-beta.6@beta) (2019-10-11)
