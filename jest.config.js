@@ -7,4 +7,8 @@ module.exports = {
   moduleNameMapper: {
     '\\.(md)$': '<rootDir>/src/mdMock.ts',
   },
+  transform: {
+    '^.+\\.stories\\.tsx?$': '@storybook/addon-storyshots/injectFileName',
+    '^.+\\.tsx?$': 'babel-jest',
+  },
 };

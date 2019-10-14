@@ -1,4 +1,3 @@
-import { storiesOf } from '@storybook/react';
 import React from 'react';
 import styled from 'styled-components';
 import MD from 'react-markdown';
@@ -22,75 +21,94 @@ const ColorWithValue: React.FC<{ color: string }> = ({ color }) => (
     <div>{color}</div>
   </>
 );
-storiesOf('Theme', module)
-  .add('Documentation', () => <MD source={colorDocs} />)
-  .add('Colors (semantic)', () => {
-    const a11yTheme = createTheme({ a11yColors: true });
-    return (
-      <Table>
-        <Thead>
-          <Tr>
-            <Th>Name</Th>
-            <Th>Default</Th>
-            <Th>A11y</Th>
-          </Tr>
-        </Thead>
-        <Tbody>
-          {Object.keys(theme.color).map(title => (
-            <Tr key={`theme-${title}`}>
-              <Td>{title}</Td>
-              <Td>
-                <ColorWithValue color={theme.color[title]} />
-              </Td>
-              <Td>
-                <ColorWithValue color={a11yTheme.color[title]} />
-              </Td>
-            </Tr>
-          ))}
-        </Tbody>
-      </Table>
-    );
-  })
-  .add('Colors (palette)', () => {
-    return (
-      <>
-        {/* eslint-disable-next-line jsx-a11y/accessible-emoji */}
-        <h1>⚠️ Internal object, use colors (semantic)</h1>
-        <Display
-          items={Object.entries(rawColor).map(([title, color]) => ({
-            title,
-            component: (
-              <>
-                <Color color={color} />
-                <div>{color}</div>
-              </>
-            ),
-          }))}
-        />
-      </>
-    );
-  })
-  .add('Screen sizes', () => (
+
+export default {
+  title: 'Theme',
+};
+
+export const documentation = () => <MD source={colorDocs} />;
+
+export const colorsSemantic = () => {
+  const a11yTheme = createTheme({ a11yColors: true });
+  return (
     <Table>
       <Thead>
         <Tr>
           <Th>Name</Th>
-          <Th>Size</Th>
-          <Th>Offset</Th>
+          <Th>Default</Th>
+          <Th>A11y</Th>
         </Tr>
       </Thead>
       <Tbody>
-        {Object.entries(theme.breakpoints).map(([title, breakpoint]) => (
-          <Tr key={`breakpoints-${title}`}>
+        {Object.keys(theme.color).map(title => (
+          <Tr key={`theme-${title}`}>
             <Td>{title}</Td>
             <Td>
-              <pre>{propOr('', 'size', breakpoint)}</pre>
+              <ColorWithValue color={theme.color[title]} />
             </Td>
             <Td>
-              <pre>{propOr(0, 'offset', breakpoint)} units</pre>
+              <ColorWithValue color={a11yTheme.color[title]} />
             </Td>
           </Tr>
         ))}
       </Tbody>
     </Table>
-  ));
+  );
+};
+
+colorsSemantic.story = {
+  name: 'Colors (semantic)',
+};
+
+export const colorsPalette = () => {
+  return (
+    <>
+      {/* eslint-disable-next-line jsx-a11y/accessible-emoji */}
+      <h1>⚠️ Internal object, use colors (semantic)</h1>
+      <Display
+        items={Object.entries(rawColor).map(([title, color]) => ({
+          title,
+          component: (
+            <>
+              <Color color={color} />
+              <div>{color}</div>
+            </>
+          ),
+        }))}
+      />
+    </>
+  );
+};
+
+colorsPalette.story = {
+  name: 'Colors (palette)',
+};
+
+export const screenSizes = () => (
+  <Table>
+    <Thead>
+      <Tr>
+        <Th>Name</Th>
+        <Th>Size</Th>
+        <Th>Offset</Th>
+      </Tr>
+    </Thead>
+    <Tbody>
+      {Object.entries(theme.breakpoints).map(([title, breakpoint]) => (
+        <Tr key={`breakpoints-${title}`}>
+          <Td>{title}</Td>
+          <Td>
+            <pre>{propOr('', 'size', breakpoint)}</pre>
+          </Td>
+          <Td>
+            <pre>{propOr(0, 'offset', breakpoint)} units</pre>
+          </Td>
+        </Tr>
+      ))}
+    </Tbody>
+  </Table>
+);
+
+screenSizes.story = {
+  name: 'Screen sizes',
+};

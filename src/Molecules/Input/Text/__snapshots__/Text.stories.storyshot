@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Storyshots Molecules | Input / Text Actions 1`] = `
+exports[`Storyshots Molecules | Input / Text Actions Story 1`] = `
 Array [
   <p>
     Actions are a bit laggy because of the @storybook/addon-actions. Prod performance is not affected.
@@ -134,7 +134,7 @@ Array [
 ]
 `;
 
-exports[`Storyshots Molecules | Input / Text Both addons 1`] = `
+exports[`Storyshots Molecules | Input / Text Both Addons 1`] = `
 .c7 {
   box-sizing: border-box;
   display: -webkit-box;
@@ -333,7 +333,7 @@ exports[`Storyshots Molecules | Input / Text Both addons 1`] = `
 </div>
 `;
 
-exports[`Storyshots Molecules | Input / Text Default 1`] = `
+exports[`Storyshots Molecules | Input / Text Default Story 1`] = `
 .c1 {
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -455,7 +455,7 @@ exports[`Storyshots Molecules | Input / Text Default 1`] = `
 </div>
 `;
 
-exports[`Storyshots Molecules | Input / Text Disabled +addon 1`] = `
+exports[`Storyshots Molecules | Input / Text Disabled Addon 1`] = `
 .c7 {
   box-sizing: border-box;
   display: -webkit-box;
@@ -651,7 +651,7 @@ exports[`Storyshots Molecules | Input / Text Disabled +addon 1`] = `
 </div>
 `;
 
-exports[`Storyshots Molecules | Input / Text Disabled 1`] = `
+exports[`Storyshots Molecules | Input / Text Disabled Story 1`] = `
 .c1 {
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -770,7 +770,7 @@ exports[`Storyshots Molecules | Input / Text Disabled 1`] = `
 </div>
 `;
 
-exports[`Storyshots Molecules | Input / Text Edge cases 1`] = `
+exports[`Storyshots Molecules | Input / Text Edge Cases 1`] = `
 .c4 {
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -1028,7 +1028,7 @@ exports[`Storyshots Molecules | Input / Text Edge cases 1`] = `
 </div>
 `;
 
-exports[`Storyshots Molecules | Input / Text Error if empty text 1`] = `
+exports[`Storyshots Molecules | Input / Text Error If Empty Text 1`] = `
 .c7 {
   position: absolute;
   height: 1px;
@@ -1182,7 +1182,7 @@ exports[`Storyshots Molecules | Input / Text Error if empty text 1`] = `
 </div>
 `;
 
-exports[`Storyshots Molecules | Input / Text Extra info below 1`] = `
+exports[`Storyshots Molecules | Input / Text Extra Info Below 1`] = `
 .c1 {
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -1320,7 +1320,7 @@ exports[`Storyshots Molecules | Input / Text Extra info below 1`] = `
 </div>
 `;
 
-exports[`Storyshots Molecules | Input / Text Extra info with error 1`] = `
+exports[`Storyshots Molecules | Input / Text Extra Info With Error 1`] = `
 .c7 {
   position: absolute;
   height: 1px;
@@ -1474,7 +1474,7 @@ exports[`Storyshots Molecules | Input / Text Extra info with error 1`] = `
 </div>
 `;
 
-exports[`Storyshots Molecules | Input / Text Full width 1`] = `
+exports[`Storyshots Molecules | Input / Text Full Width Story 1`] = `
 Array [
   .c0 {
   margin-bottom: 16px;
@@ -1984,7 +1984,7 @@ Array [
 ]
 `;
 
-exports[`Storyshots Molecules | Input / Text Hidden label 1`] = `
+exports[`Storyshots Molecules | Input / Text Hidden Label 1`] = `
 .c3 {
   position: absolute;
   height: 1px;
@@ -2119,7 +2119,7 @@ exports[`Storyshots Molecules | Input / Text Hidden label 1`] = `
 </div>
 `;
 
-exports[`Storyshots Molecules | Input / Text Left addon 1`] = `
+exports[`Storyshots Molecules | Input / Text Left Addon Story 1`] = `
 .c7 {
   box-sizing: border-box;
   display: -webkit-box;
@@ -2301,7 +2301,7 @@ exports[`Storyshots Molecules | Input / Text Left addon 1`] = `
 </div>
 `;
 
-exports[`Storyshots Molecules | Input / Text Required 1`] = `
+exports[`Storyshots Molecules | Input / Text Required Story 1`] = `
 Array [
   .c0 {
   margin-bottom: 16px;
@@ -2576,7 +2576,7 @@ Array [
 ]
 `;
 
-exports[`Storyshots Molecules | Input / Text Right addon 1`] = `
+exports[`Storyshots Molecules | Input / Text Right Addon Story 1`] = `
 .c7 {
   box-sizing: border-box;
   display: -webkit-box;
@@ -2731,7 +2731,7 @@ exports[`Storyshots Molecules | Input / Text Right addon 1`] = `
 </div>
 `;
 
-exports[`Storyshots Molecules | Input / Text Simple login form 1`] = `
+exports[`Storyshots Molecules | Input / Text Simple Login Form 1`] = `
 .c0 {
   box-sizing: border-box;
   display: -webkit-box;
@@ -3838,7 +3838,7 @@ Array [
 ]
 `;
 
-exports[`Storyshots Molecules | Input / Text Success 1`] = `
+exports[`Storyshots Molecules | Input / Text Success Story 1`] = `
 .c1 {
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -3960,7 +3960,7 @@ exports[`Storyshots Molecules | Input / Text Success 1`] = `
 </div>
 `;
 
-exports[`Storyshots Molecules | Input / Text With auto focus 1`] = `
+exports[`Storyshots Molecules | Input / Text With Auto Focus 1`] = `
 .c1 {
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -4083,7 +4083,7 @@ exports[`Storyshots Molecules | Input / Text With auto focus 1`] = `
 </div>
 `;
 
-exports[`Storyshots Molecules | Input / Text With default value (Uncontrolled behaviour) 1`] = `
+exports[`Storyshots Molecules | Input / Text With Default Value Uncontrolled Behaviour 1`] = `
 .c1 {
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -4206,7 +4206,7 @@ exports[`Storyshots Molecules | Input / Text With default value (Uncontrolled be
 </div>
 `;
 
-exports[`Storyshots Molecules | Input / Text With value (Controlled behaviour) 1`] = `
+exports[`Storyshots Molecules | Input / Text With Value Controlled Behaviour 1`] = `
 .c1 {
   text-overflow: ellipsis;
   white-space: nowrap;

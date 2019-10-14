@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Storyshots Molecules | CardWithTitle CardWithTitle as article (most CardWithTitle should be article) 1`] = `
+exports[`Storyshots Molecules | CardWithTitle Card With Title As Article Most Card With Title Should Be Article 1`] = `
 .c0 {
   background: #FFFFFF;
   box-shadow: 0 2px 2px 0 rgba(0,0,0,0.03);
@@ -22,7 +22,7 @@ exports[`Storyshots Molecules | CardWithTitle CardWithTitle as article (most Car
 </article>
 `;
 
-exports[`Storyshots Molecules | CardWithTitle CardWithTitle as section 1`] = `
+exports[`Storyshots Molecules | CardWithTitle Card With Title As Section 1`] = `
 .c0 {
   background: #FFFFFF;
   box-shadow: 0 2px 2px 0 rgba(0,0,0,0.03);
@@ -44,7 +44,7 @@ exports[`Storyshots Molecules | CardWithTitle CardWithTitle as section 1`] = `
 </section>
 `;
 
-exports[`Storyshots Molecules | CardWithTitle Default 1`] = `
+exports[`Storyshots Molecules | CardWithTitle Default Story 1`] = `
 .c0 {
   background: #FFFFFF;
   box-shadow: 0 2px 2px 0 rgba(0,0,0,0.03);
@@ -66,7 +66,7 @@ exports[`Storyshots Molecules | CardWithTitle Default 1`] = `
 </div>
 `;
 
-exports[`Storyshots Molecules | CardWithTitle Integration: CardWithTitle with custom component as title 1`] = `
+exports[`Storyshots Molecules | CardWithTitle Integration Card With Title With Custom Component As Title 1`] = `
 .c0 {
   background: #FFFFFF;
   box-shadow: 0 2px 2px 0 rgba(0,0,0,0.03);

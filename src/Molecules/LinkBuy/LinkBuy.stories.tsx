@@ -1,35 +1,51 @@
 import React from 'react';
-import { storiesOf } from '@storybook/react';
 import { BrowserRouter } from 'react-router-dom';
 import { Typography, LinkBuy } from '../..';
 
-storiesOf('Molecules | LinkBuy', module)
-  .add('LinkBuy', () => {
-    return (
-      <BrowserRouter>
-        <Typography type="primary">
-          <LinkBuy to="somewhere">Buy</LinkBuy>
-        </Typography>
-      </BrowserRouter>
-    );
-  })
-  .add('LinkBuy disabled', () => {
-    return (
-      <BrowserRouter>
-        <Typography type="primary">
-          <LinkBuy disabled>Buy</LinkBuy>
-        </Typography>
-      </BrowserRouter>
-    );
-  })
-  .add('LinkBuy with rel as nofollow', () => {
-    return (
-      <BrowserRouter>
-        <Typography type="primary">
-          <LinkBuy to="somewhere" rel="nofollow">
-            Buy
-          </LinkBuy>
-        </Typography>
-      </BrowserRouter>
-    );
-  });
+export default {
+  title: 'Molecules | LinkBuy',
+};
+
+export const linkBuy = () => {
+  return (
+    <BrowserRouter>
+      <Typography type="primary">
+        <LinkBuy to="somewhere">Buy</LinkBuy>
+      </Typography>
+    </BrowserRouter>
+  );
+};
+
+linkBuy.story = {
+  name: 'LinkBuy',
+};
+
+export const linkBuyDisabled = () => {
+  return (
+    <BrowserRouter>
+      <Typography type="primary">
+        <LinkBuy disabled>Buy</LinkBuy>
+      </Typography>
+    </BrowserRouter>
+  );
+};
+
+linkBuyDisabled.story = {
+  name: 'LinkBuy disabled',
+};
+
+export const linkBuyWithRelAsNofollow = () => {
+  return (
+    <BrowserRouter>
+      <Typography type="primary">
+        <LinkBuy to="somewhere" rel="nofollow">
+          Buy
+        </LinkBuy>
+      </Typography>
+    </BrowserRouter>
+  );
+};
+
+linkBuyWithRelAsNofollow.story = {
+  name: 'LinkBuy with rel as nofollow',
+};

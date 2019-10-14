@@ -1,26 +1,42 @@
 import React from 'react';
-import { storiesOf } from '@storybook/react';
 
 import { FormLabel } from '../..';
 
-storiesOf('Atoms | FormLabel', module)
-  .add('Default', () => (
-    <>
-      <FormLabel forId="unique-id">Username</FormLabel>
-      <input type="text" id="unique-id" />
-    </>
-  ))
-  .add('With hidden label', () => (
-    <>
-      <FormLabel forId="unique-id-2" hideLabel>
-        Username
-      </FormLabel>
-      <input type="text" id="unique-id-2" />
-    </>
-  ))
-  .add('As a wrapper', () => (
-    <FormLabel>
+export default {
+  title: 'Atoms | FormLabel',
+};
+
+export const defaultStory = () => (
+  <>
+    <FormLabel forId="unique-id">Username</FormLabel>
+    <input type="text" id="unique-id" />
+  </>
+);
+
+defaultStory.story = {
+  name: 'Default',
+};
+
+export const withHiddenLabel = () => (
+  <>
+    <FormLabel forId="unique-id-2" hideLabel>
       Username
-      <input type="text" />
     </FormLabel>
-  ));
+    <input type="text" id="unique-id-2" />
+  </>
+);
+
+withHiddenLabel.story = {
+  name: 'With hidden label',
+};
+
+export const asAWrapper = () => (
+  <FormLabel>
+    Username
+    <input type="text" />
+  </FormLabel>
+);
+
+asAWrapper.story = {
+  name: 'As a wrapper',
+};
