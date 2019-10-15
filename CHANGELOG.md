@@ -1,3 +1,10 @@
+## [1.58.1](https://github.com/nordnet/ui/compare/v1.58.0...v1.58.1) (2019-10-15)
+
+
+### Bug Fixes
+
+* ie11 input.select ([84e4dc5](https://github.com/nordnet/ui/commit/84e4dc5))
+
 # [1.58.0](https://github.com/nordnet/ui/compare/v1.57.0...v1.58.0) (2019-10-15)
 
 
