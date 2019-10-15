@@ -1,3 +1,16 @@
+# [1.58.0](https://github.com/nordnet/ui/compare/v1.57.0...v1.58.0) (2019-10-15)
+
+
+### Bug Fixes
+
+* move addon to dev dependency ([2a52f73](https://github.com/nordnet/ui/commit/2a52f73))
+* types ([a316c8a](https://github.com/nordnet/ui/commit/a316c8a))
+
+
+### Features
+
+* switched to storybooks csf ([75a8fa3](https://github.com/nordnet/ui/commit/75a8fa3))
+
 # [1.57.0](https://github.com/nordnet/ui/compare/v1.56.0...v1.57.0) (2019-10-14)
 
 
