@@ -1,6 +1,5 @@
 import React from 'react';
 import Color from 'color';
-import { storiesOf } from '@storybook/react';
 import styled from 'styled-components';
 import { Box, Typography } from '../..';
 
@@ -33,33 +32,57 @@ const text = (
   </StyledBox>
 );
 
-storiesOf('Atoms | Box', module)
-  .addDecorator(withOuter)
-  .addParameters({
+export default {
+  title: 'Atoms | Box',
+  decorators: [withOuter],
+
+  parameters: {
     component: Box,
-  })
-  .add('Margin', () => <Box m={4}>{text}</Box>)
-  .add('Margin and different margin Y-axis', () => (
-    <Box m={8} my={4}>
+  },
+};
+
+export const margin = () => <Box m={4}>{text}</Box>;
+
+export const marginAndDifferentMarginYAxis = () => (
+  <Box m={8} my={4}>
+    {text}
+  </Box>
+);
+
+marginAndDifferentMarginYAxis.story = {
+  name: 'Margin and different margin Y-axis',
+};
+
+export const padding = () => (
+  <Outer>
+    <Box p={8}>{text}</Box>
+  </Outer>
+);
+
+padding.story = {
+  name: 'Padding ',
+};
+
+export const paddingAndDifferentXAxisAndLeft = () => (
+  <Outer>
+    <Box p={8} px={4} pl={0}>
       {text}
     </Box>
-  ))
-  .add('Padding ', () => (
-    <Outer>
-      <Box p={8}>{text}</Box>
-    </Outer>
-  ))
-  .add('Padding and different X-axis and left ', () => (
-    <Outer>
-      <Box p={8} px={4} pl={0}>
-        {text}
-      </Box>
-    </Outer>
-  ))
-  .add('Different padding for different screen sizes ', () => (
-    <Outer>
-      <Box p={0} sm={{ p: 4 }}>
-        {text}
-      </Box>
-    </Outer>
-  ));
+  </Outer>
+);
+
+paddingAndDifferentXAxisAndLeft.story = {
+  name: 'Padding and different X-axis and left ',
+};
+
+export const differentPaddingForDifferentScreenSizes = () => (
+  <Outer>
+    <Box p={0} sm={{ p: 4 }}>
+      {text}
+    </Box>
+  </Outer>
+);
+
+differentPaddingForDifferentScreenSizes.story = {
+  name: 'Different padding for different screen sizes ',
+};

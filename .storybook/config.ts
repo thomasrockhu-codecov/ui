@@ -27,7 +27,7 @@ addLocaleData(fiLocaleData);
 const req = require.context('../src', true, /.stories.tsx$/);
 
 function loadStories() {
-  req.keys().forEach(req);
+  return req.keys().map(req);
 }
 
 addDecorator(withA11y);

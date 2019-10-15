@@ -1,5 +1,4 @@
 import React from 'react';
-import { storiesOf } from '@storybook/react';
 import { actions } from '@storybook/addon-actions';
 import { Input, Icon, Flexbox, Button } from '../../..';
 import { Display } from '../../../common/Display';
@@ -15,221 +14,311 @@ const handlers = actions(
   'onChange',
 );
 
-storiesOf('Molecules | Input / Text', module)
-  .add('Default', () => <Input.Text label="Label" placeholder="Placeholder" />)
-  .add('With value (Controlled behaviour)', () => (
-    <Input.Text label="Label" placeholder="Placeholder" value="Some predefined text" />
-  ))
-  .add('With default value (Uncontrolled behaviour)', () => (
-    <Input.Text label="Label" placeholder="Placeholder" defaultValue="Some predefined text" />
-  ))
-  .add('Error if empty text', () => {
-    const Component = () => {
-      const [value, setValue] = React.useState('');
+export default {
+  title: 'Molecules | Input / Text',
+};
 
-      return (
-        <Input.Text
-          label="My awesome text field"
-          placeholder="This is a placeholder"
-          onChange={e => setValue(e.target.value)}
-          {...(value === '' ? { error: 'Something went wrong' } : {})}
-        />
-      );
-    };
-    return <Component />;
-  })
-  .add('Success', () => <Input.Text label="Label" placeholder="Placeholder" success />)
-  .add('Disabled', () => <Input.Text label="Label" placeholder="Placeholder" disabled />)
-  .add('Disabled +addon', () => (
-    <Input.Text
-      label="Label"
-      placeholder="Placeholder"
-      disabled
-      leftAddon={<Icon.Bolt size={4} />}
-      rightAddon="SEK"
-    />
-  ))
-  .add('With auto focus', () => <Input.Text label="Label" placeholder="Placeholder" autoFocus />)
-  .add('Required', () => (
-    <Display
-      title="Required"
-      items={[
-        {
-          component: <Input.Text label="Label" placeholder="Placeholder" required />,
-          title: 'Default (without star)',
-        },
-        {
-          component: (
-            <Input.Text
-              label="Label"
-              placeholder="Placeholder"
-              required
-              visuallyEmphasiseRequired
-            />
-          ),
-          title: 'With star',
-        },
-      ]}
-    />
-  ))
-  .add('Actions', () => (
-    <>
-      <p>
-        Actions are a bit laggy because of the @storybook/addon-actions. Prod performance is not
-        affected.
-      </p>
-      <Input.Text label="Label" placeholder="Placeholder" {...handlers} />
-    </>
-  ))
-  .add('Extra info below', () => (
-    <Input.Text label="Label" placeholder="Placeholder" extraInfo="Use wisely this space" />
-  ))
-  .add('Extra info with error', () => {
-    const Component = () => {
-      const [value, setValue] = React.useState('');
+export const defaultStory = () => <Input.Text label="Label" placeholder="Placeholder" />;
 
-      return (
-        <Input.Text
-          label="My awesome text field"
-          placeholder="This is a placeholder"
-          extraInfo="Use wisely this space"
-          onChange={e => setValue(e.target.value)}
-          {...(value === '' ? { error: 'Enter text' } : {})}
-        />
-      );
-    };
-    return <Component />;
-  })
+defaultStory.story = {
+  name: 'Default',
+};
 
-  .add('Edge cases', () => (
-    <Display
-      items={[
-        {
-          component: (
-            <Input.Text
-              label="Too long label, goes into ellipsis. Consider smaller label or bigger input"
-              placeholder="If placeholder goes too long though, it probably should be truncated into ellipsis, right?"
-              extraInfo="This is much neccessary info wow"
-            />
-          ),
-          title: 'Long values',
-        },
-        {
-          component: (
-            <Input.Text
-              label="Small label"
-              placeholder=""
-              extraInfo="Big extra fat extraInfo that will wrap over many lines. Be careful with this pattern, use it only with small texts!"
-            />
-          ),
-          title: 'Long extraInfo',
-        },
-      ]}
-    />
-  ))
-  .add('Full width', () => (
-    <Display
-      title="Full width inputs"
-      items={[
-        {
-          component: <Input.Text label="Label" width="100%" placeholder="Placeholder" />,
-          title: 'Default',
-        },
-        {
-          component: (
-            <Input.Text
-              label="Label"
-              width="100%"
-              placeholder="Placeholder"
-              leftAddon={<Icon.Bolt size={4} />}
-            />
-          ),
-          title: 'Left addon',
-        },
-        {
-          component: (
-            <Input.Text label="Label" width="100%" placeholder="Placeholder" rightAddon="SEK" />
-          ),
-          title: 'Right addon',
-        },
-      ]}
-    />
-  ))
-  .add('Left addon', () => (
-    <Input.Text label="Label" placeholder="Placeholder" leftAddon={<Icon.Bolt size={4} />} />
-  ))
-  .add('Right addon', () => <Input.Text label="Label" placeholder="Placeholder" rightAddon="SEK" />)
-  .add('Both addons', () => (
-    <Input.Text
-      label="Label"
-      placeholder="Placeholder"
-      leftAddon={<Icon.Bolt size={4} />}
-      rightAddon="SEK"
-    />
-  ))
-  .add('Hidden label', () => <Input.Text label="Label" placeholder="Placeholder" hideLabel />)
+export const withValueControlledBehaviour = () => (
+  <Input.Text label="Label" placeholder="Placeholder" value="Some predefined text" />
+);
 
-  .add('Simple login form', () => (
-    <Flexbox container direction="column" gutter={4}>
-      <Flexbox item container gutter={4}>
-        <Flexbox item basis="50%">
+withValueControlledBehaviour.story = {
+  name: 'With value (Controlled behaviour)',
+};
+
+export const withDefaultValueUncontrolledBehaviour = () => (
+  <Input.Text label="Label" placeholder="Placeholder" defaultValue="Some predefined text" />
+);
+
+withDefaultValueUncontrolledBehaviour.story = {
+  name: 'With default value (Uncontrolled behaviour)',
+};
+
+export const errorIfEmptyText = () => {
+  const Component = () => {
+    const [value, setValue] = React.useState('');
+
+    return (
+      <Input.Text
+        label="My awesome text field"
+        placeholder="This is a placeholder"
+        onChange={e => setValue(e.target.value)}
+        {...(value === '' ? { error: 'Something went wrong' } : {})}
+      />
+    );
+  };
+  return <Component />;
+};
+
+errorIfEmptyText.story = {
+  name: 'Error if empty text',
+};
+
+export const successStory = () => <Input.Text label="Label" placeholder="Placeholder" success />;
+
+successStory.story = {
+  name: 'Success',
+};
+
+export const disabledStory = () => <Input.Text label="Label" placeholder="Placeholder" disabled />;
+
+disabledStory.story = {
+  name: 'Disabled',
+};
+
+export const disabledAddon = () => (
+  <Input.Text
+    label="Label"
+    placeholder="Placeholder"
+    disabled
+    leftAddon={<Icon.Bolt size={4} />}
+    rightAddon="SEK"
+  />
+);
+
+disabledAddon.story = {
+  name: 'Disabled +addon',
+};
+
+export const withAutoFocus = () => <Input.Text label="Label" placeholder="Placeholder" autoFocus />;
+
+withAutoFocus.story = {
+  name: 'With auto focus',
+};
+
+export const requiredStory = () => (
+  <Display
+    title="Required"
+    items={[
+      {
+        component: <Input.Text label="Label" placeholder="Placeholder" required />,
+        title: 'Default (without star)',
+      },
+      {
+        component: (
+          <Input.Text label="Label" placeholder="Placeholder" required visuallyEmphasiseRequired />
+        ),
+        title: 'With star',
+      },
+    ]}
+  />
+);
+
+requiredStory.story = {
+  name: 'Required',
+};
+
+export const actionsStory = () => (
+  <>
+    <p>
+      Actions are a bit laggy because of the @storybook/addon-actions. Prod performance is not
+      affected.
+    </p>
+    <Input.Text label="Label" placeholder="Placeholder" {...handlers} />
+  </>
+);
+
+actionsStory.story = {
+  name: 'Actions',
+};
+
+export const extraInfoBelow = () => (
+  <Input.Text label="Label" placeholder="Placeholder" extraInfo="Use wisely this space" />
+);
+
+extraInfoBelow.story = {
+  name: 'Extra info below',
+};
+
+export const extraInfoWithError = () => {
+  const Component = () => {
+    const [value, setValue] = React.useState('');
+
+    return (
+      <Input.Text
+        label="My awesome text field"
+        placeholder="This is a placeholder"
+        extraInfo="Use wisely this space"
+        onChange={e => setValue(e.target.value)}
+        {...(value === '' ? { error: 'Enter text' } : {})}
+      />
+    );
+  };
+  return <Component />;
+};
+
+extraInfoWithError.story = {
+  name: 'Extra info with error',
+};
+
+export const edgeCases = () => (
+  <Display
+    items={[
+      {
+        component: (
           <Input.Text
-            width="100%"
-            label="Username"
-            placeholder="Username"
-            extraInfo="Please provide your username (worst UX right here)"
+            label="Too long label, goes into ellipsis. Consider smaller label or bigger input"
+            placeholder="If placeholder goes too long though, it probably should be truncated into ellipsis, right?"
+            extraInfo="This is much neccessary info wow"
           />
-        </Flexbox>
-        <Flexbox item basis="50%">
-          <Input.Text width="100%" label="Password" placeholder="Password" error="Simple error" />
-        </Flexbox>
+        ),
+        title: 'Long values',
+      },
+      {
+        component: (
+          <Input.Text
+            label="Small label"
+            placeholder=""
+            extraInfo="Big extra fat extraInfo that will wrap over many lines. Be careful with this pattern, use it only with small texts!"
+          />
+        ),
+        title: 'Long extraInfo',
+      },
+    ]}
+  />
+);
+
+edgeCases.story = {
+  name: 'Edge cases',
+};
+
+export const fullWidthStory = () => (
+  <Display
+    title="Full width inputs"
+    items={[
+      {
+        component: <Input.Text label="Label" width="100%" placeholder="Placeholder" />,
+        title: 'Default',
+      },
+      {
+        component: (
+          <Input.Text
+            label="Label"
+            width="100%"
+            placeholder="Placeholder"
+            leftAddon={<Icon.Bolt size={4} />}
+          />
+        ),
+        title: 'Left addon',
+      },
+      {
+        component: (
+          <Input.Text label="Label" width="100%" placeholder="Placeholder" rightAddon="SEK" />
+        ),
+        title: 'Right addon',
+      },
+    ]}
+  />
+);
+
+fullWidthStory.story = {
+  name: 'Full width',
+};
+
+export const leftAddonStory = () => (
+  <Input.Text label="Label" placeholder="Placeholder" leftAddon={<Icon.Bolt size={4} />} />
+);
+
+leftAddonStory.story = {
+  name: 'Left addon',
+};
+
+export const rightAddonStory = () => (
+  <Input.Text label="Label" placeholder="Placeholder" rightAddon="SEK" />
+);
+
+rightAddonStory.story = {
+  name: 'Right addon',
+};
+
+export const bothAddons = () => (
+  <Input.Text
+    label="Label"
+    placeholder="Placeholder"
+    leftAddon={<Icon.Bolt size={4} />}
+    rightAddon="SEK"
+  />
+);
+
+bothAddons.story = {
+  name: 'Both addons',
+};
+
+export const hiddenLabel = () => <Input.Text label="Label" placeholder="Placeholder" hideLabel />;
+
+hiddenLabel.story = {
+  name: 'Hidden label',
+};
+
+export const simpleLoginForm = () => (
+  <Flexbox container direction="column" gutter={4}>
+    <Flexbox item container gutter={4}>
+      <Flexbox item basis="50%">
+        <Input.Text
+          width="100%"
+          label="Username"
+          placeholder="Username"
+          extraInfo="Please provide your username (worst UX right here)"
+        />
       </Flexbox>
-      <Flexbox item container justifyContent="flex-end" grow={1}>
-        <Button fullWidth>Login</Button>
+      <Flexbox item basis="50%">
+        <Input.Text width="100%" label="Password" placeholder="Password" error="Simple error" />
       </Flexbox>
     </Flexbox>
-  ))
+    <Flexbox item container justifyContent="flex-end" grow={1}>
+      <Button fullWidth>Login</Button>
+    </Flexbox>
+  </Flexbox>
+);
 
-  .add('Small', () => (
-    <Display
-      title={`Size = "s"`}
-      items={[
-        {
-          component: <Input.Text label="Label" size="s" placeholder="Placeholder" />,
-          title: 'Default',
-        },
-        {
-          component: <Input.Text label="Label" size="s" width="100%" placeholder="Placeholder" />,
-          title: 'Full width',
-        },
-        {
-          component: (
-            <Input.Text
-              label="Label"
-              size="s"
-              placeholder="Placeholder"
-              error="Some error text that will wrap itself over couple of lines"
-            />
-          ),
-          title: 'Error',
-        },
-        {
-          component: (
-            <Input.Text
-              label="Label"
-              size="s"
-              placeholder="Placeholder"
-              leftAddon={<Icon.Bolt size={4} />}
-            />
-          ),
-          title: 'Left addon',
-        },
-        {
-          component: (
-            <Input.Text label="Label" size="s" placeholder="Placeholder" rightAddon="SEK" />
-          ),
-          title: 'Right addon',
-        },
-      ]}
-    />
-  ));
+simpleLoginForm.story = {
+  name: 'Simple login form',
+};
+
+export const small = () => (
+  <Display
+    title={`Size = "s"`}
+    items={[
+      {
+        component: <Input.Text label="Label" size="s" placeholder="Placeholder" />,
+        title: 'Default',
+      },
+      {
+        component: <Input.Text label="Label" size="s" width="100%" placeholder="Placeholder" />,
+        title: 'Full width',
+      },
+      {
+        component: (
+          <Input.Text
+            label="Label"
+            size="s"
+            placeholder="Placeholder"
+            error="Some error text that will wrap itself over couple of lines"
+          />
+        ),
+        title: 'Error',
+      },
+      {
+        component: (
+          <Input.Text
+            label="Label"
+            size="s"
+            placeholder="Placeholder"
+            leftAddon={<Icon.Bolt size={4} />}
+          />
+        ),
+        title: 'Left addon',
+      },
+      {
+        component: <Input.Text label="Label" size="s" placeholder="Placeholder" rightAddon="SEK" />,
+        title: 'Right addon',
+      },
+    ]}
+  />
+);

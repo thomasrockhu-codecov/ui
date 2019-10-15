@@ -1,4 +1,3 @@
-import { storiesOf } from '@storybook/react';
 import MD from 'react-markdown';
 import React from 'react';
 import docs from './Display.md';
@@ -6,7 +5,11 @@ import docs from './Display.md';
 // components not from top level index file
 import { Display } from '.';
 
-storiesOf('Display', module).add('Documentation', () => {
+export default {
+  title: 'Display',
+};
+
+export const documentation = () => {
   return (
     <>
       <MD source={docs} />
@@ -41,4 +44,4 @@ storiesOf('Display', module).add('Documentation', () => {
       />
     </>
   );
-});
+};
