@@ -59,7 +59,6 @@
     }
   },
   "dependencies": {
-    "@storybook/addon-docs": "^5.2.3",
     "color": "^3.1.1",
     "focus-within-polyfill": "^5.0.4",
     "framer-motion": "^1.6.2",
@@ -92,6 +91,7 @@
     "@semantic-release/git": "7.1.0-beta.3",
     "@storybook/addon-a11y": "5.2.1",
     "@storybook/addon-actions": "5.2.1",
+    "@storybook/addon-docs": "^5.2.3",
     "@storybook/addon-knobs": "5.2.1",
     "@storybook/addon-links": "5.2.1",
     "@storybook/addon-storyshots": "5.2.1",
