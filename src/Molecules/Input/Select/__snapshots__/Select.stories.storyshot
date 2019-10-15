@@ -231,8 +231,6 @@ Array [
 
 <div
     className="c0"
-    onBlur={[Function]}
-    onFocus={[Function]}
   >
     <div
       className="c1"
@@ -252,7 +250,9 @@ Array [
             <div
               className="c5"
               label="User account"
+              onBlur={[Function]}
               onChange={[Function]}
+              onFocus={[Function]}
               placeholder="Select account"
               width="300px"
             >
@@ -546,8 +546,6 @@ exports[`Storyshots Molecules | Input / Select Accessible From Document Forms 1`
   </select>
   <div
     className="c1"
-    onBlur={[Function]}
-    onFocus={[Function]}
   >
     <div
       className="c2"
@@ -567,7 +565,9 @@ exports[`Storyshots Molecules | Input / Select Accessible From Document Forms 1`
               className="c6"
               label="User account"
               name="mySelect"
+              onBlur={[Function]}
               onChange={[Function]}
+              onFocus={[Function]}
               placeholder="Select account"
             >
               <div
@@ -860,8 +860,6 @@ Array [
 
 <div
     className="c0"
-    onBlur={[Function]}
-    onFocus={[Function]}
   >
     <div
       className="c1"
@@ -880,7 +878,9 @@ Array [
             <div
               className="c5"
               label="Can select only #2"
+              onBlur={[Function]}
               onChange={[Function]}
+              onFocus={[Function]}
               placeholder="Select me"
               value={Array []}
             >
@@ -1262,8 +1262,6 @@ Array [
 
 <div
     className="c0"
-    onBlur={[Function]}
-    onFocus={[Function]}
   >
     <div
       className="c1"
@@ -1282,7 +1280,9 @@ Array [
             <div
               className="c5"
               label="Open me"
+              onBlur={[Function]}
               onChange={[Function]}
+              onFocus={[Function]}
               placeholder="Select account"
             >
               <div
@@ -1572,8 +1572,6 @@ Array [
 
 <div
     className="c0"
-    onBlur={[Function]}
-    onFocus={[Function]}
   >
     <div
       className="c1"
@@ -1592,7 +1590,9 @@ Array [
             <div
               className="c5"
               label="User account"
+              onBlur={[Function]}
               onChange={[Function]}
+              onFocus={[Function]}
               placeholder="Select account"
             >
               <div
@@ -1882,8 +1882,6 @@ Array [
 
 <div
     className="c0"
-    onBlur={[Function]}
-    onFocus={[Function]}
   >
     <div
       className="c1"
@@ -1902,7 +1900,9 @@ Array [
             <div
               className="c5"
               label="Select something"
+              onBlur={[Function]}
               onChange={[Function]}
+              onFocus={[Function]}
               placeholder="Select account"
             >
               <div
@@ -2192,8 +2192,6 @@ Array [
 
 <div
     className="c0"
-    onBlur={[Function]}
-    onFocus={[Function]}
   >
     <div
       className="c1"
@@ -2212,6 +2210,8 @@ Array [
             <div
               className="c5"
               label="User account"
+              onBlur={[Function]}
+              onFocus={[Function]}
               placeholder="Select account"
             >
               <div
@@ -2694,8 +2694,6 @@ exports[`Storyshots Molecules | Input / Select Default Variations 1`] = `
       </select>
       <div
         className="c4"
-        onBlur={[Function]}
-        onFocus={[Function]}
       >
         <div
           className="c5"
@@ -2715,6 +2713,8 @@ exports[`Storyshots Molecules | Input / Select Default Variations 1`] = `
                   className="c9"
                   disabled={true}
                   label="User account"
+                  onBlur={[Function]}
+                  onFocus={[Function]}
                   placeholder="Select account"
                 >
                   <div
@@ -2806,8 +2806,6 @@ exports[`Storyshots Molecules | Input / Select Default Variations 1`] = `
       </select>
       <div
         className="c4"
-        onBlur={[Function]}
-        onFocus={[Function]}
       >
         <div
           className="c5"
@@ -2826,6 +2824,8 @@ exports[`Storyshots Molecules | Input / Select Default Variations 1`] = `
                 <div
                   className="c19"
                   label="User account"
+                  onBlur={[Function]}
+                  onFocus={[Function]}
                   placeholder="Select account"
                 >
                   <div
@@ -2928,8 +2928,6 @@ exports[`Storyshots Molecules | Input / Select Default Variations 1`] = `
       </select>
       <div
         className="c4"
-        onBlur={[Function]}
-        onFocus={[Function]}
       >
         <div
           className="c5"
@@ -2948,6 +2946,8 @@ exports[`Storyshots Molecules | Input / Select Default Variations 1`] = `
                 <div
                   className="c22"
                   label="User account"
+                  onBlur={[Function]}
+                  onFocus={[Function]}
                   placeholder="Select account"
                 >
                   <div
@@ -3045,8 +3045,6 @@ exports[`Storyshots Molecules | Input / Select Default Variations 1`] = `
       </select>
       <div
         className="c4"
-        onBlur={[Function]}
-        onFocus={[Function]}
       >
         <div
           className="c5"
@@ -3065,6 +3063,8 @@ exports[`Storyshots Molecules | Input / Select Default Variations 1`] = `
                 <div
                   className="c24"
                   label="User account"
+                  onBlur={[Function]}
+                  onFocus={[Function]}
                   placeholder="Select account"
                 >
                   <div
@@ -3356,8 +3356,6 @@ Array [
 
 <div
     className="c0"
-    onBlur={[Function]}
-    onFocus={[Function]}
   >
     <div
       className="c1"
@@ -3378,7 +3376,9 @@ Array [
             <div
               className="c5"
               label="User account"
+              onBlur={[Function]}
               onChange={[Function]}
+              onFocus={[Function]}
               placeholder="Select account"
             >
               <div
@@ -3688,11 +3688,11 @@ Array [
 
 <div
     className="c0"
-    onBlur={[Function]}
-    onFocus={[Function]}
   >
     <div
       className="c1"
+      onBlur={[Function]}
+      onFocus={[Function]}
     >
       <div
         className="c2"
@@ -3982,8 +3982,6 @@ Array [
 
 <div
     className="c0"
-    onBlur={[Function]}
-    onFocus={[Function]}
   >
     <div
       className="c1"
@@ -4003,7 +4001,9 @@ Array [
             <div
               className="c5"
               label="User account"
+              onBlur={[Function]}
               onChange={[Function]}
+              onFocus={[Function]}
               placeholder="Select account"
               width="300px"
             >
@@ -4294,8 +4294,6 @@ Array [
 
 <div
     className="c0"
-    onBlur={[Function]}
-    onFocus={[Function]}
   >
     <div
       className="c1"
@@ -4315,7 +4313,9 @@ Array [
             <div
               className="c5"
               label="User account"
+              onBlur={[Function]}
               onChange={[Function]}
+              onFocus={[Function]}
               placeholder="Select account"
               width="300px"
             >
@@ -4610,8 +4610,6 @@ Array [
 
 <div
     className="c0"
-    onBlur={[Function]}
-    onFocus={[Function]}
   >
     <div
       className="c1"
@@ -4631,7 +4629,9 @@ Array [
             <div
               className="c5"
               label="User account"
+              onBlur={[Function]}
               onChange={[Function]}
+              onFocus={[Function]}
               placeholder="Select account"
               width="300px"
             >
@@ -5115,8 +5115,6 @@ exports[`Storyshots Molecules | Input / Select Size S Variations 1`] = `
       </select>
       <div
         className="c4"
-        onBlur={[Function]}
-        onFocus={[Function]}
       >
         <div
           className="c5"
@@ -5136,6 +5134,8 @@ exports[`Storyshots Molecules | Input / Select Size S Variations 1`] = `
                   className="c9"
                   disabled={true}
                   label="User account"
+                  onBlur={[Function]}
+                  onFocus={[Function]}
                   placeholder="Select account"
                   size="s"
                 >
@@ -5228,8 +5228,6 @@ exports[`Storyshots Molecules | Input / Select Size S Variations 1`] = `
       </select>
       <div
         className="c4"
-        onBlur={[Function]}
-        onFocus={[Function]}
       >
         <div
           className="c5"
@@ -5248,6 +5246,8 @@ exports[`Storyshots Molecules | Input / Select Size S Variations 1`] = `
                 <div
                   className="c19"
                   label="User account"
+                  onBlur={[Function]}
+                  onFocus={[Function]}
                   placeholder="Select account"
                   size="s"
                 >
@@ -5351,8 +5351,6 @@ exports[`Storyshots Molecules | Input / Select Size S Variations 1`] = `
       </select>
       <div
         className="c4"
-        onBlur={[Function]}
-        onFocus={[Function]}
       >
         <div
           className="c5"
@@ -5371,6 +5369,8 @@ exports[`Storyshots Molecules | Input / Select Size S Variations 1`] = `
                 <div
                   className="c22"
                   label="User account"
+                  onBlur={[Function]}
+                  onFocus={[Function]}
                   placeholder="Select account"
                   size="s"
                 >
@@ -5469,8 +5469,6 @@ exports[`Storyshots Molecules | Input / Select Size S Variations 1`] = `
       </select>
       <div
         className="c4"
-        onBlur={[Function]}
-        onFocus={[Function]}
       >
         <div
           className="c5"
@@ -5489,6 +5487,8 @@ exports[`Storyshots Molecules | Input / Select Size S Variations 1`] = `
                 <div
                   className="c24"
                   label="User account"
+                  onBlur={[Function]}
+                  onFocus={[Function]}
                   placeholder="Select account"
                   size="s"
                 >
@@ -5781,8 +5781,6 @@ Array [
 
 <div
     className="c0"
-    onBlur={[Function]}
-    onFocus={[Function]}
   >
     <div
       className="c1"
@@ -5801,6 +5799,8 @@ Array [
             <div
               className="c5"
               label="User account"
+              onBlur={[Function]}
+              onFocus={[Function]}
               placeholder="Select account"
             >
               <div
@@ -6085,8 +6085,6 @@ Array [
 
 <div
     className="c0"
-    onBlur={[Function]}
-    onFocus={[Function]}
   >
     <div
       className="c1"
@@ -6105,6 +6103,8 @@ Array [
             <div
               className="c5"
               label="User account"
+              onBlur={[Function]}
+              onFocus={[Function]}
               placeholder="Select account"
             >
               <div

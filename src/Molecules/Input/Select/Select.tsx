@@ -79,18 +79,18 @@ const SelectWrapper = styled.div`
 `;
 const FormFieldOrFragment = React.forwardRef<HTMLDivElement, any>(
   ({ children, noFormField, open, onFocus, onBlur, fullWidth, ...props }, ref) => (
-    <StyledRelativeDiv
-      {...(noFormField ? { ref } : {})}
-      onBlur={onBlur}
-      onFocus={onFocus}
-      fullWidth={fullWidth}
-    >
-      <Flexbox container alignItems="center" {...(fullWidth ? { width: '100%' } : {})}>
+    <StyledRelativeDiv {...(noFormField ? { ref } : {})} fullWidth={fullWidth}>
+      <Flexbox
+        {...(noFormField ? { onBlur, onFocus } : {})}
+        container
+        alignItems="center"
+        {...(fullWidth ? { width: '100%' } : {})}
+      >
         {noFormField ? (
           children
         ) : (
           <FormField {...props} {...(fullWidth ? { width: '100%' } : {})} ref={ref}>
-            <SelectWrapper {...props}>
+            <SelectWrapper onBlur={onBlur} onFocus={onFocus} {...props}>
               {children}
               <Chevron open={open} />
             </SelectWrapper>
@@ -217,19 +217,13 @@ const Select = (props: Props) => {
   const isFocused = React.useRef(false);
 
   const handleBlur = (e: React.FocusEvent) => {
-    let target: Node = e.relatedTarget as any;
+    const target: Node = e.relatedTarget as any;
 
-    if (target === null) {
-      // IE11
-      target = document.activeElement as any;
-    }
-
-    if (inputWrapperRef.current && !inputWrapperRef.current.contains(target)) {
+    if (inputWrapperRef.current && target && !inputWrapperRef.current.contains(target)) {
       if (onBlur) onBlur(e);
       isFocused.current = false;
       dispatch({ type: defaultActionTypes['Select.Close'] });
     }
-    return true;
   };
 
   const handleFocus = (e: React.FocusEvent) => {
@@ -291,13 +285,7 @@ const Select = (props: Props) => {
             options={options}
           />
           {open && (
-            <ListWrapper
-              ref={customSelectListRef}
-              key={3}
-              component={List}
-              noFormField={noFormField}
-              onBlur={() => dispatch({ type: defaultActionTypes['Select.Close'] })}
-            >
+            <ListWrapper ref={customSelectListRef} component={List} noFormField={noFormField}>
               {options.map((x: any, index: number) => (
                 <ListItemWrapper
                   key={x.value}
