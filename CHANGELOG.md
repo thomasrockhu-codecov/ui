@@ -1,3 +1,10 @@
+# [1.59.0](https://github.com/nordnet/ui/compare/v1.58.1...v1.59.0) (2019-10-15)
+
+
+### Features
+
+* add ellipsis to th and scope attribute ([2681c17](https://github.com/nordnet/ui/commit/2681c17))
+
 ## [1.58.1](https://github.com/nordnet/ui/compare/v1.58.0...v1.58.1) (2019-10-15)
 
 
