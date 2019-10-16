@@ -107,6 +107,8 @@ export type Theme = {
     shadowInput: string;
     /** 5 percent of black */
     shadowSwitch: string;
+    /** complementaryGreen1 */
+    shareville: string;
     /** black */
     spinnerBlack: RawColor['black'];
     /** white */

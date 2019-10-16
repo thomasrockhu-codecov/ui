@@ -146,6 +146,13 @@ Array [
   border: 1px solid #eee;
 }
 
+.c9 {
+  width: 56px;
+  height: 56px;
+  background-color: #3A913F;
+  border: 1px solid #eee;
+}
+
 .c15 {
   width: 56px;
   height: 56px;
@@ -178,13 +185,6 @@ Array [
   width: 56px;
   height: 56px;
   background-color: #4B4B46;
-  border: 1px solid #eee;
-}
-
-.c9 {
-  width: 56px;
-  height: 56px;
-  background-color: #3A913F;
   border: 1px solid #eee;
 }
 
@@ -1016,42 +1016,42 @@ exports[`Storyshots Theme Colors Semantic 1`] = `
 .c21 {
   width: 56px;
   height: 56px;
-  background-color: #000000;
+  background-color: #3A913F;
   border: 1px solid #eee;
 }
 
 .c22 {
   width: 56px;
   height: 56px;
-  background-color: #FFCF00;
+  background-color: #000000;
   border: 1px solid #eee;
 }
 
 .c23 {
   width: 56px;
   height: 56px;
-  background-color: #C15700;
+  background-color: #FFCF00;
   border: 1px solid #eee;
 }
 
 .c24 {
   width: 56px;
   height: 56px;
-  background-color: #BCBCB6;
+  background-color: #C15700;
   border: 1px solid #eee;
 }
 
 .c25 {
   width: 56px;
   height: 56px;
-  background-color: #4B4B46;
+  background-color: #BCBCB6;
   border: 1px solid #eee;
 }
 
 .c26 {
   width: 56px;
   height: 56px;
-  background-color: #3A913F;
+  background-color: #4B4B46;
   border: 1px solid #eee;
 }
 
@@ -1866,13 +1866,44 @@ exports[`Storyshots Theme Colors Semantic 1`] = `
       <td
         className="c5"
       >
-        spinnerBlack
+        shareville
       </td>
       <td
         className="c5"
       >
         <div
           className="c21"
+          color="#3A913F"
+        />
+        <div>
+          #3A913F
+        </div>
+      </td>
+      <td
+        className="c5"
+      >
+        <div
+          className="c21"
+          color="#3A913F"
+        />
+        <div>
+          #3A913F
+        </div>
+      </td>
+    </tr>
+    <tr
+      className="c2"
+    >
+      <td
+        className="c5"
+      >
+        spinnerBlack
+      </td>
+      <td
+        className="c5"
+      >
+        <div
+          className="c22"
           color="#000000"
         />
         <div>
@@ -1883,7 +1914,7 @@ exports[`Storyshots Theme Colors Semantic 1`] = `
         className="c5"
       >
         <div
-          className="c21"
+          className="c22"
           color="#000000"
         />
         <div>
@@ -2058,7 +2089,7 @@ exports[`Storyshots Theme Colors Semantic 1`] = `
         className="c5"
       >
         <div
-          className="c22"
+          className="c23"
           color="#FFCF00"
         />
         <div>
@@ -2069,7 +2100,7 @@ exports[`Storyshots Theme Colors Semantic 1`] = `
         className="c5"
       >
         <div
-          className="c23"
+          className="c24"
           color="#C15700"
         />
         <div>
@@ -2089,7 +2120,7 @@ exports[`Storyshots Theme Colors Semantic 1`] = `
         className="c5"
       >
         <div
-          className="c24"
+          className="c25"
           color="#BCBCB6"
         />
         <div>
@@ -2100,7 +2131,7 @@ exports[`Storyshots Theme Colors Semantic 1`] = `
         className="c5"
       >
         <div
-          className="c24"
+          className="c25"
           color="#BCBCB6"
         />
         <div>
@@ -2120,7 +2151,7 @@ exports[`Storyshots Theme Colors Semantic 1`] = `
         className="c5"
       >
         <div
-          className="c25"
+          className="c26"
           color="#4B4B46"
         />
         <div>
@@ -2131,7 +2162,7 @@ exports[`Storyshots Theme Colors Semantic 1`] = `
         className="c5"
       >
         <div
-          className="c25"
+          className="c26"
           color="#4B4B46"
         />
         <div>
@@ -2244,7 +2275,7 @@ exports[`Storyshots Theme Colors Semantic 1`] = `
         className="c5"
       >
         <div
-          className="c26"
+          className="c21"
           color="#3A913F"
         />
         <div>
@@ -2255,7 +2286,7 @@ exports[`Storyshots Theme Colors Semantic 1`] = `
         className="c5"
       >
         <div
-          className="c26"
+          className="c21"
           color="#3A913F"
         />
         <div>

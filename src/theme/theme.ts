@@ -146,6 +146,7 @@ export const createTheme = (config: ThemeConfig = {}): Theme => {
         .alpha(0.05)
         .rgb()
         .string(),
+      shareville: rawColor.complementaryGreen1,
       spinnerBlack: rawColor.black,
       spinnerWhite: rawColor.white,
       svgFill: rawColor.gray0,
