@@ -1,3 +1,15 @@
+# [1.60.0](https://github.com/nordnet/ui/compare/v1.59.0...v1.60.0) (2019-10-16)
+
+
+### Bug Fixes
+
+* add color for streaming bolt icon ([271edac](https://github.com/nordnet/ui/commit/271edac))
+
+
+### Features
+
+* add shareville color ([e7cea1a](https://github.com/nordnet/ui/commit/e7cea1a))
+
 # [1.59.0](https://github.com/nordnet/ui/compare/v1.58.1...v1.59.0) (2019-10-15)
 
 
