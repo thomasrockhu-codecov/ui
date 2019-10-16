@@ -111,6 +111,8 @@ export type Theme = {
     spinnerBlack: RawColor['black'];
     /** white */
     spinnerWhite: RawColor['white'];
+    /** index */
+    streamingBolt: RawColor['index'];
     /** gray0 */
     svgFill: RawColor['gray0'];
     /** gray2 */
