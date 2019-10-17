@@ -1,3 +1,10 @@
+# [1.61.0](https://github.com/nordnet/ui/compare/v1.60.0...v1.61.0) (2019-10-17)
+
+
+### Features
+
+* add minimize and maximize icons ([6b0d53e](https://github.com/nordnet/ui/commit/6b0d53e))
+
 # [1.60.0](https://github.com/nordnet/ui/compare/v1.59.0...v1.60.0) (2019-10-16)
 
 
