@@ -1,3 +1,10 @@
+## [1.61.1](https://github.com/nordnet/ui/compare/v1.61.0...v1.61.1) (2019-10-17)
+
+
+### Bug Fixes
+
+* color for order depth animation ([a8bb17f](https://github.com/nordnet/ui/commit/a8bb17f))
+
 # [1.61.0](https://github.com/nordnet/ui/compare/v1.60.0...v1.61.0) (2019-10-17)
 
 
