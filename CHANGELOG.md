@@ -1,3 +1,10 @@
+## [1.61.3](https://github.com/nordnet/ui/compare/v1.61.2...v1.61.3) (2019-10-18)
+
+
+### Bug Fixes
+
+* size prop ([80c4cf8](https://github.com/nordnet/ui/commit/80c4cf8))
+
 ## [1.61.2](https://github.com/nordnet/ui/compare/v1.61.1...v1.61.2) (2019-10-18)
 
 
