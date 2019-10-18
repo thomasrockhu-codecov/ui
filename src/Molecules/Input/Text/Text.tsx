@@ -56,9 +56,7 @@ export const placeholderNormalizaion = css`
   }
 `;
 
-const Input = styled(NormalizedElements.Input).attrs({ type: 'text' })<
-  Partial<Props> & { sizeProp: Props['size'] }
->`
+const Input = styled(NormalizedElements.Input).attrs({ type: 'text' })<Partial<Props>>`
   border: 0;
   width: 100%;
   padding: ${p => p.theme.spacing.unit(2)}px;
@@ -158,7 +156,7 @@ export const Text: React.FC<Props> & {
               placeholder,
               required,
               rightAddon,
-              sizeProp: size,
+              size,
               success,
               value,
             }}
