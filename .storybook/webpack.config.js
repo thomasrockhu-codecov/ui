@@ -31,6 +31,23 @@ module.exports = ({ config, mode }) => {
     loader: require.resolve('babel-loader'),
     include: [path.resolve(__dirname, '..', 'node_modules', 'use-ssr')],
   });
-  config.resolve.extensions.push('.ts', '.tsx', '.d.ts', '.md');
+
+  config.module.rules.push({
+    test: /(?<!stories)\.mdx/,
+    use: [
+      {
+        loader: 'babel-loader',
+        // may or may not need this line depending on your app's setup
+        options: {
+          plugins: ['@babel/plugin-transform-react-jsx'],
+        },
+      },
+      {
+        loader: '@mdx-js/loader',
+      },
+    ],
+  });
+
+  config.resolve.extensions.push('.ts', '.tsx', '.d.ts', '.md', '.mdx');
   return config;
 };

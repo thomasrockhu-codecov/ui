@@ -1,8 +1,8 @@
 import { configure, addDecorator, addParameters } from '@storybook/react';
 import { withA11y } from '@storybook/addon-a11y';
 import { setIntlConfig, withIntl } from 'storybook-addon-intl';
-import { DocsPage, DocsContainer } from '@storybook/addon-docs/blocks';
-import { ThemeDecorator } from './ThemeDecorator';
+import { DocsPage } from '@storybook/addon-docs/blocks';
+import { ThemeDecorator, DocsWrapper } from './ThemeDecorator';
 // Load the locale data for all your defined locales
 import { addLocaleData } from 'react-intl';
 import enLocaleData from 'react-intl/locale-data/en';
@@ -13,7 +13,7 @@ import fiLocaleData from 'react-intl/locale-data/fi';
 
 addParameters({
   docs: {
-    container: DocsContainer,
+    container: DocsWrapper,
     page: DocsPage,
   },
 });

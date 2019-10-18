@@ -6,6 +6,7 @@ import styled from 'styled-components';
 import { Input, Avatar, Flexbox, Number, Typography, Box, Link, Icon, Button } from '../../..';
 import { Display } from '../../../common/Display';
 import { SelectState, Action } from './Select.types';
+import mdx from './Select.mdx';
 
 const loggingReducer = (state: SelectState, incomingAction: Action) => {
   action(incomingAction.type)(incomingAction.payload);
@@ -120,8 +121,14 @@ const AccountListItem = ({ index }: any, ref: any) => {
   );
 };
 
+console.log(mdx);
 export default {
   title: 'Molecules | Input / Select',
+  parameters: {
+    docs: {
+      page: mdx,
+    },
+  },
 };
 
 export const defaultStory = () => {

@@ -1,0 +1,120 @@
+import { Meta, Story, Preview, Props } from '@storybook/addon-docs/blocks';
+import { Input, Flexbox, Icon, Typography } from '../../..';
+import Renderers from './Renderers.png';
+
+<Meta component={Input.Select} />
+
+# Input.Select
+
+<Props height={200} of={Input.Select} />
+
+## General Info
+
+There is so much in place when talking about Select component aka Dropdown.
+So much different use-cases, different visuals, different behaviours.
+
+### User stories:
+
+1. When user clicks (or using the keyboard) on some trigger area, some list of items appears
+1. When user clicks outside, list hides
+1. When user hovers/changing focus on items in list, they appears focused
+1. When user presses up/down, the next/previous list item gets highlighted/focused
+1. When user clicks an item in the list, different things can happen:
+   - If the item was selected and this is single select component, do nothing
+   - If the item was selected and this is multi select component, unselect the item
+   - If the item was not selected before and this is single select component, select the item, close the Dropdown
+   - If the item was not selected before and this is multi select component, select the item
+
+### Contexts (where the component can live):
+
+1. Inside a form
+1. Standalone component
+
+> One component simply can't deal with all that complexity. Or can it?
+
+## Architecture
+
+1. OnChange and value
+1. Customizable reducer (inner behavior)
+1. Customizable renderers (visuals)
+
+### OnChange and value
+
+**value** of the Input.Select is _always_ an array of objects, which corresponds to the `options` you provided to the component. The onChange will be called with the new **value**, again, an array of selected options.
+This allows to have the same api for multi- and single- selects.
+
+### Behavior:
+
+To be able to manage that complexity, the **reducer** pattern is used in this component.
+Everything is managed through 1 reducer, which is available through `Input.Select.defaults.reducer`.
+Also, default **initialState** is available through `Input.Select.defaults.initialState`.
+
+You can easily redefine this reducer, for example to do multiselect:
+
+<Preview>
+  <Story height={400} id="molecules-input-select--multiselect" />
+</Preview>
+
+### Renderers:
+
+<Typography type="primary">
+  <Flexbox container>
+    <Flexbox item>
+      <img src={Renderers} />
+    </Flexbox>
+    <Flexbox item container>
+      <Flexbox container direction="column">
+        <Flexbox item container alignItems="center" gutter={2}>
+          <Icon.SolidCircle color={t => 'rgb(255,147,1)'} /> FormField
+        </Flexbox>
+        <Flexbox item container alignItems="center" gutter={2}>
+          <Icon.SolidCircle color={t => 'rgb(25,25,255)'} /> SelectedValue
+        </Flexbox>
+        <Flexbox item container alignItems="center" gutter={2}>
+          <Icon.SolidCircle color={t => 'rgb(255,25,1)'} /> List
+        </Flexbox>
+        <Flexbox item container alignItems="center" gutter={2}>
+          <Icon.SolidCircle color={t => 'rgb(25,100,25)'} /> ListItem
+        </Flexbox>
+      </Flexbox>
+    </Flexbox>
+  </Flexbox>
+</Typography>
+
+You can redefine `SelectedValue`, `List` and `ListItem` renderers using `components` prop.
+
+Every renderer has type:
+
+```typescript
+(props, ref) => JSX.Element;
+```
+
+⚠️ You **must** assign ref to the corresponding node, otherwise you will lose focusing feature
+
+Example:
+
+```jsx
+const ListItemRenderer = React.useCallback(
+  (props, ref) => (
+    <div ref={ref} tabIndex={-1}>
+      Hey there {props.index}
+    </div>
+  ),
+  [],
+);
+```
+
+```jsx
+<Input.Select
+  components={{
+    ListItem: ListItemRenderer,
+  }}
+  options={[{ label: '1', value: 1 }, { label: '2', value: 2 }]}
+/>
+```
+
+You can also _hide_ **FormField** with `noFormField` prop, but then you need to redefine **SelectedValue** renderer
+
+<Preview>
+  <Story height={400} id="molecules-input-select--link-with-dropdown-and-search-box" />
+</Preview>
