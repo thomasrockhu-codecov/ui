@@ -1,3 +1,10 @@
+## [1.61.2](https://github.com/nordnet/ui/compare/v1.61.1...v1.61.2) (2019-10-18)
+
+
+### Bug Fixes
+
+* mdx module declaration ([940aef9](https://github.com/nordnet/ui/commit/940aef9))
+
 ## [1.61.1](https://github.com/nordnet/ui/compare/v1.61.0...v1.61.1) (2019-10-17)
 
 
