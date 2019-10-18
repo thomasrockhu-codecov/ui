@@ -4,6 +4,9 @@ import { FormLabel } from '../..';
 
 export default {
   title: 'Atoms | FormLabel',
+  parameters: {
+    component: FormLabel,
+  },
 };
 
 export const defaultStory = () => (

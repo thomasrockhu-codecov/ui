@@ -1,7 +1,5 @@
 import React from 'react';
 import styled from 'styled-components';
-import MD from 'react-markdown';
-import docs from './Separator.md';
 
 import { Separator } from '../..';
 
@@ -13,9 +11,10 @@ const Container = ({ children }: any) => <StyledContainer>{children}</StyledCont
 
 export default {
   title: 'Atoms | Separator',
+  parameters: {
+    component: Separator,
+  },
 };
-
-export const documentation = () => <MD source={docs} />;
 
 export const separatorDefault = () => (
   <Container>

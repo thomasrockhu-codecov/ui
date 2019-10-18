@@ -121,7 +121,6 @@ const AccountListItem = ({ index }: any, ref: any) => {
   );
 };
 
-console.log(mdx);
 export default {
   title: 'Molecules | Input / Select',
   parameters: {

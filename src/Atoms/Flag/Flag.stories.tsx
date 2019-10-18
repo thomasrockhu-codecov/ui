@@ -6,6 +6,9 @@ import { Display } from '../../common/Display';
 
 export default {
   title: 'Atoms | Flag',
+  parameters: {
+    component: Flag,
+  },
 };
 
 export const defaultUse = () => <Flag country="SE" />;

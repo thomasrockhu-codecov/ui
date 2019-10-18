@@ -140,22 +140,13 @@ exports[`Storyshots Molecules | Number Integration With Different Typographies 1
   line-height: 1.4285714285714286;
 }
 
-.c5 {
+.c10 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
   margin: 0;
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 1.3333333333333333;
-}
-
-.c6 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #282823;
-  margin: 0;
-  font-weight: 400;
-  font-size: 10px;
-  line-height: 1.6;
+  font-weight: 800;
+  font-size: 46px;
+  line-height: 1.0434782608695652;
 }
 
 .c7 {
@@ -185,13 +176,22 @@ exports[`Storyshots Molecules | Number Integration With Different Typographies 1
   line-height: 1.3333333333333333;
 }
 
-.c10 {
+.c5 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
   margin: 0;
-  font-weight: 800;
-  font-size: 46px;
-  line-height: 1.0434782608695652;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.3333333333333333;
+}
+
+.c6 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 1.6;
 }
 
 .c0 {
@@ -252,6 +252,13 @@ exports[`Storyshots Molecules | Number Integration With Different Typographies 1
 }
 
 @media (min-width:760px) {
+  .c10 {
+    font-size: 48px;
+    line-height: 1.0833333333333333;
+  }
+}
+
+@media (min-width:760px) {
   .c7 {
     font-size: 28px;
     line-height: 1.1428571428571428;
@@ -269,13 +276,6 @@ exports[`Storyshots Molecules | Number Integration With Different Typographies 1
   .c9 {
     font-size: 20px;
     line-height: 1.2;
-  }
-}
-
-@media (min-width:760px) {
-  .c10 {
-    font-size: 48px;
-    line-height: 1.0833333333333333;
   }
 }
 

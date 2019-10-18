@@ -13,6 +13,9 @@ const Content = ({ children }: any) => <StyledContent>{children}</StyledContent>
 
 export default {
   title: 'Atoms | Flexbox',
+  parameters: {
+    component: Flexbox,
+  },
 };
 
 export const defaultStory = () => (

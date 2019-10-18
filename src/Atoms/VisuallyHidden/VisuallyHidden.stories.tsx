@@ -4,6 +4,9 @@ import { VisuallyHidden } from '../..';
 
 export default {
   title: 'Atoms | VisuallyHidden',
+  parameters: {
+    component: VisuallyHidden,
+  },
 };
 export const visuallyHiddenLabel = () => (
   <>

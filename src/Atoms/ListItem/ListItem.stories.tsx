@@ -3,6 +3,9 @@ import { ListItem } from '../..';
 
 export default {
   title: 'Atoms | ListItem',
+  parameters: {
+    component: ListItem,
+  },
 };
 
 export const basicListItem = () => (

@@ -1,13 +1,27 @@
 /* eslint-disable react/no-unescaped-entities */
 import React from 'react';
 
-import { Typography } from '../..';
+import { Typography, Flexbox } from '../..';
 import { Display } from '../../common/Display';
 
 export default {
   title: 'Atoms | Typography',
+  parameters: {
+    component: Typography,
+  },
 };
-
+export const all = () => (
+  <Flexbox container direction="column">
+    <Typography type="hero">Hero 48/52px extrabold (46/48px mobile)</Typography>
+    <Typography type="title1">Title1 28/32px extrabold (24/28px mobile)</Typography>
+    <Typography type="title2">Title2 24/28px extrabold (20/24px mobile)</Typography>
+    <Typography type="title3">Title3 20/24px extrabold (18/24px mobile)</Typography>
+    <Typography type="primary">Primary 16/24px regular</Typography>
+    <Typography type="secondary">Secondary 14/20px regular</Typography>
+    <Typography type="tertiary">Tertiary 12/16px regular</Typography>
+    <Typography type="caption">Caption 10/16px regular</Typography>
+  </Flexbox>
+);
 export const primary = () => (
   <Display
     items={[

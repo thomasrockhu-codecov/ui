@@ -3,6 +3,9 @@ import { Time } from '../..';
 
 export default {
   title: 'Atoms | Time',
+  parameters: {
+    component: Time,
+  },
 };
 
 export const time = () => {

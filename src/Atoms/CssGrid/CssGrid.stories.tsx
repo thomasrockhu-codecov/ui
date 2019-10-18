@@ -1,23 +1,15 @@
 import React from 'react';
 import styled from 'styled-components';
 import { action } from '@storybook/addon-actions';
-import MD from 'react-markdown';
-import docs from './CssGrid.md';
+import docs from './CssGrid.mdx';
 
-import { CssGrid as Grid, Typography } from '../..';
+import { CssGrid as Grid } from '../..';
 
 const StyledContent = styled.div`
   box-sizing: border-box;
   border: 1px solid black;
   background-color: #eee;
   height: 100%;
-`;
-
-const StyledMarkdownContainer = styled.div`
-  img {
-    display: block;
-    max-width: 600px;
-  }
 `;
 
 const Content = ({ children }: any) => <StyledContent>{children}</StyledContent>;
@@ -38,15 +30,13 @@ const ComponentThatLogsRender: React.FC<any> = ({ children }) => {
 
 export default {
   title: 'Atoms | CssGrid',
-};
 
-export const documentation = () => (
-  <StyledMarkdownContainer>
-    <Typography>
-      <MD source={docs} />
-    </Typography>
-  </StyledMarkdownContainer>
-);
+  parameters: {
+    docs: {
+      page: docs,
+    },
+  },
+};
 
 export const simpleCssGrid = () => (
   <Grid.Container
