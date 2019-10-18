@@ -38,14 +38,6 @@ export default {
   },
 };
 
-// export const documentation = () => (
-//   <StyledMarkdownContainer>
-//     <Typography>
-//       <MD source={docs} />
-//     </Typography>
-//   </StyledMarkdownContainer>
-// );
-
 export const simpleCssGrid = () => (
   <Grid.Container
     // prettier-ignore
