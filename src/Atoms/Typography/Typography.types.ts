@@ -52,8 +52,6 @@ export type Props = {
   color?: 'inherit' | ColorFn;
   weight?: string;
   'aria-hidden'?: boolean;
-  type?: Types;
-  lineHeight?: 'inherit';
   /**
    * primary has font-weight: regular, font-size: 16px (mobile) and 16px (desktop)
    * secondary has font-weight: regular, font-size: 14px (mobile) and 14px (desktop)
@@ -64,6 +62,8 @@ export type Props = {
    * title2 has font-weight: extrabold, font-size: 20px (mobile) and 24px (desktop)
    * title3 has font-weight: extrabold, font-size: 18px (mobile) and 20px (desktop)
    */
+  type?: Types;
+  lineHeight?: 'inherit';
   children: React.ReactNode;
 };
 

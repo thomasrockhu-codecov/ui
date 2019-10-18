@@ -3,6 +3,9 @@ import { Legend } from '../..';
 
 export default {
   title: 'Atoms | Legend',
+  parameters: {
+    component: Legend,
+  },
 };
 
 export const docs = () => <p>The Legend component defines a caption for the Fieldset component.</p>;

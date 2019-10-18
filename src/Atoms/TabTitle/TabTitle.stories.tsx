@@ -8,6 +8,9 @@ const Container = styled.div`
 
 export default {
   title: 'Atoms | TabTitle',
+  parameters: {
+    component: TabTitle,
+  },
 };
 
 export const defaultStory = () => (

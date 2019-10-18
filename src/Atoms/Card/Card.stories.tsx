@@ -16,6 +16,10 @@ const Content: React.FC<Props> = ({ children }) => <StyledContent>{children}</St
 
 export default {
   title: 'Atoms | Card',
+
+  parameters: {
+    component: Card,
+  },
 };
 
 export const basicCard = () => (

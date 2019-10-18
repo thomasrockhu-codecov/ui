@@ -4,6 +4,9 @@ import { Media } from '../..';
 
 export default {
   title: 'Atoms | Media',
+  parameters: {
+    component: Media,
+  },
 };
 
 export const basicUsage = () => {

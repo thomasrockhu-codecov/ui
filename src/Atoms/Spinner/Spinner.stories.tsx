@@ -7,6 +7,9 @@ import { Spinner, Typography } from '../..';
 
 export default {
   title: 'Atoms | Spinner',
+  parameters: {
+    component: Spinner,
+  },
 };
 
 export const documentation = () => (

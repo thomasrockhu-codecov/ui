@@ -4,6 +4,9 @@ import { List } from '../..';
 
 export default {
   title: 'Atoms | List',
+  parameters: {
+    component: List,
+  },
 };
 
 export const basicUnorderedList = () => (

@@ -3,6 +3,9 @@ import { Typography, Portal } from '../..';
 
 export default {
   title: 'Atoms | Portal',
+  parameters: {
+    component: Portal,
+  },
 };
 
 export const defaultStory = () => (

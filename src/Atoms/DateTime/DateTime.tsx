@@ -22,10 +22,11 @@ const DateTime: DateTimeComponent = ({ intl, value, onlyDate, invalidValue = '-'
   if (isValidDateTimeNumber(value)) {
     const options = onlyDate ? dateOptions : dateTimeOptions;
 
-    return <time>{intl.formatDate(value, options)}</time>;
+    return <time>{intl!.formatDate(value, options)}</time>;
   }
 
   return <>{invalidValue}</>;
 };
 
-export default injectIntl(DateTime);
+const Injected = (injectIntl(DateTime as any) as any) as DateTimeComponent;
+export default Injected;
