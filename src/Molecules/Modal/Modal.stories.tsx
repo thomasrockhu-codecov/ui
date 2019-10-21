@@ -85,7 +85,7 @@ export const footerStory = () => {
     const footer = (
       <div>
         <Typography type="primary" as="p">
-          This is a modal which is a ReactNode, which could e.g. contain a button
+          This is a footer which is a ReactNode, which could e.g. contain a button or only text
         </Typography>
         <button type="button" onClick={() => {}}>
           Button
