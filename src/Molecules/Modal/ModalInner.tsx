@@ -48,6 +48,10 @@ const Button = styled(NormalizedElements.Button)`
   cursor: pointer;
 `;
 
+const Footer = styled(Flexbox)`
+  padding-top: 16px;
+`;
+
 const RightAlignedFlex = styled(Flexbox)`
   margin-left: auto;
 `;
@@ -60,7 +64,13 @@ export const Content = styled.div`
   overflow-x: hidden;
 `;
 
-export const ModalInner: React.FC<InnerProps> = ({ children, className, title, onClose }) => {
+export const ModalInner: React.FC<InnerProps> = ({
+  children,
+  className,
+  title,
+  onClose,
+  footer,
+}) => {
   const [show, setShow] = useState(false);
   const escapePress = useKeyPress('Escape');
   const animationProps = {
@@ -119,6 +129,7 @@ export const ModalInner: React.FC<InnerProps> = ({ children, className, title, o
                 </Flexbox>
               </Box>
               <Content>{children}</Content>
+              {footer && <Footer container>{footer}</Footer>}
             </Dialog>
           </Backdrop>
         </RemoveScroll>
