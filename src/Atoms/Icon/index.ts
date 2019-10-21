@@ -31,6 +31,7 @@ import { Printer } from './components/Printer';
 import { Minus } from './components/Minus';
 import { Questionmark } from './components/Questionmark';
 import { Search } from './components/Search';
+import { SharevilleLogo } from './components/SharevilleLogo';
 import { SolidCircle } from './components/Circle';
 import { Star } from './components/Star';
 import { Star24 } from './components/Star24';
@@ -75,6 +76,7 @@ export default {
   Minus,
   Questionmark,
   Search,
+  SharevilleLogo,
   SolidCircle,
   Star,
   Star24,
