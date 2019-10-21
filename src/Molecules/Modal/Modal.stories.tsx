@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
-import { Modal, Typography, Box } from '../..';
+import { Modal, Typography, Box, Button } from '../..';
 
 const ScrollMaker = styled.div`
   background-image: linear-gradient(${p => p.theme.color.positive}, ${p => p.theme.color.negative});
@@ -87,9 +87,9 @@ export const footerStory = () => {
         <Typography type="primary" as="p">
           This is a footer which is a ReactNode, which could e.g. contain a button or only text
         </Typography>
-        <button type="button" onClick={() => {}}>
+        <Button variant="primary" onClick={() => {}}>
           Button
-        </button>
+        </Button>
       </div>
     );
 
@@ -133,7 +133,7 @@ export const footerStory = () => {
 };
 
 footerStory.story = {
-  name: 'With a footer',
+  name: 'Integration: Modal with a footer and Button',
 };
 
 export const withoutHeader = () => {

@@ -48,10 +48,6 @@ const Button = styled(NormalizedElements.Button)`
   cursor: pointer;
 `;
 
-const Footer = styled(Flexbox)`
-  padding-top: 16px;
-`;
-
 const RightAlignedFlex = styled(Flexbox)`
   margin-left: auto;
 `;
@@ -129,7 +125,11 @@ export const ModalInner: React.FC<InnerProps> = ({
                 </Flexbox>
               </Box>
               <Content>{children}</Content>
-              {footer && <Footer container>{footer}</Footer>}
+              {footer && (
+                <Box pt={4} p="1px" m="-1px">
+                  {footer}
+                </Box>
+              )}
             </Dialog>
           </Backdrop>
         </RemoveScroll>
