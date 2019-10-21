@@ -60,7 +60,13 @@ export const Content = styled.div`
   overflow-x: hidden;
 `;
 
-export const ModalInner: React.FC<InnerProps> = ({ children, className, title, onClose }) => {
+export const ModalInner: React.FC<InnerProps> = ({
+  children,
+  className,
+  title,
+  onClose,
+  footer,
+}) => {
   const [show, setShow] = useState(false);
   const escapePress = useKeyPress('Escape');
   const animationProps = {
@@ -119,6 +125,11 @@ export const ModalInner: React.FC<InnerProps> = ({ children, className, title, o
                 </Flexbox>
               </Box>
               <Content>{children}</Content>
+              {footer && (
+                <Box pt={4} p="1px" m="-1px">
+                  {footer}
+                </Box>
+              )}
             </Dialog>
           </Backdrop>
         </RemoveScroll>
