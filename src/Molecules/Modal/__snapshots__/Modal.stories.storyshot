@@ -326,12 +326,10 @@ exports[`Storyshots Molecules | Modal Footer Story 1`] = `
   margin-bottom: 8px;
 }
 
-.c13 {
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
+.c12 {
+  margin: -1px;
+  padding: 1px;
+  padding-top: 16px;
 }
 
 .c5 {
@@ -398,6 +396,86 @@ exports[`Storyshots Molecules | Modal Footer Story 1`] = `
   line-height: 1.2;
 }
 
+.c14 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: inherit;
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c13 {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  overflow: visible;
+  text-transform: none;
+  background-color: #0046FF;
+  padding: 4px 12px;
+  min-height: 32px;
+  color: #FFFFFF;
+  position: relative;
+  box-sizing: border-box;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  border: none;
+  border-radius: 0;
+  cursor: pointer;
+}
+
+.c13,
+.c13[type='button'],
+.c13[type='reset'],
+.c13[type='submit'] {
+  -webkit-appearance: button;
+}
+
+.c13::-moz-focus-inner,
+.c13[type='button']::-moz-focus-inner,
+.c13[type='reset']::-moz-focus-inner,
+.c13[type='submit']::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+.c13:-moz-focusring,
+.c13[type='button']:-moz-focusring,
+.c13[type='reset']:-moz-focusring,
+.c13[type='submit']:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+.c13:hover {
+  background-color: hsl(223.5,100%,45%);
+}
+
+.c13:active {
+  background-color: hsl(223.5,100%,40%);
+}
+
+.c13::before {
+  content: '';
+  display: block;
+  border: 2px solid transparent;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: calc(100% - 4px);
+  height: calc(100% - 4px);
+}
+
 .c1 {
   position: fixed;
   top: 0;
@@ -445,10 +523,6 @@ exports[`Storyshots Molecules | Modal Footer Story 1`] = `
 .c8[type='reset']:-moz-focusring,
 .c8[type='submit']:-moz-focusring {
   outline: 1px dotted ButtonText;
-}
-
-.c12 {
-  padding-top: 16px;
 }
 
 .c7 {
@@ -632,7 +706,7 @@ exports[`Storyshots Molecules | Modal Footer Story 1`] = `
               </p>
             </div>
             <div
-              className="c12 c13"
+              className="c12"
             >
               <div>
                 <p
@@ -642,10 +716,16 @@ exports[`Storyshots Molecules | Modal Footer Story 1`] = `
                   This is a footer which is a ReactNode, which could e.g. contain a button or only text
                 </p>
                 <button
+                  className="c13"
                   onClick={[Function]}
                   type="button"
+                  variant="primary"
                 >
-                  Button
+                  <span
+                    className="c14"
+                  >
+                    Button
+                  </span>
                 </button>
               </div>
             </div>
