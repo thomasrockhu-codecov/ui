@@ -1,3 +1,15 @@
+# [1.62.0](https://github.com/nordnet/ui/compare/v1.61.3...v1.62.0) (2019-10-21)
+
+
+### Bug Fixes
+
+* 🐛 makes footer a Box instead and onFocus visible ([587003a](https://github.com/nordnet/ui/commit/587003a))
+
+
+### Features
+
+* 🎸 adds new optional 'footer' prop to Modal ([5e0a614](https://github.com/nordnet/ui/commit/5e0a614))
+
 ## [1.61.3](https://github.com/nordnet/ui/compare/v1.61.2...v1.61.3) (2019-10-18)
 
 
