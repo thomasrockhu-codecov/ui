@@ -639,7 +639,7 @@ exports[`Storyshots Molecules | Modal Footer Story 1`] = `
                   className="c11"
                   type="primary"
                 >
-                  This is a modal which is a ReactNode, which could e.g. contain a button
+                  This is a footer which is a ReactNode, which could e.g. contain a button or only text
                 </p>
                 <button
                   onClick={[Function]}
