@@ -15,6 +15,9 @@ const handlers = actions(
 
 export default {
   title: 'Molecules | Input / Checkbox',
+  parameters: {
+    component: Input.Checkbox,
+  },
 };
 
 export const defaultStory = () => <Input.Checkbox name="example" value="green" label="Green" />;

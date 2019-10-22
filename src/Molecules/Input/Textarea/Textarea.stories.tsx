@@ -16,6 +16,9 @@ const handlers = actions(
 
 export default {
   title: 'Molecules | Input / Textarea',
+  parameters: {
+    component: Input.Textarea,
+  },
 };
 
 export const defaultStory = () => <Input.Textarea label="Label" placeholder="Placeholder" />;

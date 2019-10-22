@@ -13,6 +13,9 @@ const ScrollMaker = styled.div`
 
 export default {
   title: 'Molecules | Modal',
+  parameters: {
+    component: Modal,
+  },
 };
 
 export const defaultStory = () => {

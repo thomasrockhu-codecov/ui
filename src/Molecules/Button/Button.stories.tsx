@@ -9,6 +9,9 @@ import { Display } from '../../common/Display';
 
 export default {
   title: 'Molecules | Button',
+  parameters: {
+    component: Button,
+  },
 };
 
 export const documentation = () => (

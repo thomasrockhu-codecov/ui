@@ -3,9 +3,15 @@ import { Route, Redirect } from 'react-router';
 import { HashRouter } from 'react-router-dom';
 import { action } from '@storybook/addon-actions';
 import { TabsNav, Separator, Flexbox, Box } from '../..';
+import docs from './TabsNav.mdx';
 
 export default {
   title: 'Molecules | TabsNav',
+  parameters: {
+    docs: {
+      page: docs,
+    },
+  },
 };
 
 export const integrationWithReactRouter = () => (

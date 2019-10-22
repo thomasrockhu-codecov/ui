@@ -9,6 +9,9 @@ const ItemContainer: React.FunctionComponent = ({ children }) => (
 
 export default {
   title: 'Molecules | ListWithTitles',
+  parameters: {
+    component: ListWithTitles,
+  },
 };
 
 export const integrationListWithTitlesWithLeftAndRightTitles = () => {

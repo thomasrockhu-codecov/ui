@@ -5,6 +5,9 @@ import { Switch, Typography } from '../..';
 
 export default {
   title: 'Molecules | Switch',
+  parameters: {
+    component: Switch,
+  },
 };
 
 export const defaultOff = () => <Switch label="Notify me by email" onClick={action('clicked')} />;

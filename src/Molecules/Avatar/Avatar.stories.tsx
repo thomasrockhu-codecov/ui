@@ -10,6 +10,9 @@ export const basicUsage = () => <Avatar>ASK</Avatar>;
 
 basicUsage.story = {
   name: 'Basic usage',
+  parameters: {
+    component: Avatar,
+  },
 };
 
 export const differentSizes = () => (

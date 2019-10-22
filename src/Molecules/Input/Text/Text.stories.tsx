@@ -16,6 +16,9 @@ const handlers = actions(
 
 export default {
   title: 'Molecules | Input / Text',
+  parameters: {
+    component: Input.Text,
+  },
 };
 
 export const defaultStory = () => <Input.Text label="Label" placeholder="Placeholder" />;

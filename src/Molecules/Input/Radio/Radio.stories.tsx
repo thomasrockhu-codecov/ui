@@ -15,6 +15,9 @@ const handlers = actions(
 
 export default {
   title: 'Molecules | Input / Radio',
+  parameters: {
+    component: Input.Radio,
+  },
 };
 
 export const defaultStory = () => <Input.Radio name="example" value="green" label="Green" />;

@@ -6,6 +6,9 @@ import { PageWrapper, Typography, Box } from '../..';
 
 export default {
   title: 'Molecules | PageWrapper',
+  parameters: {
+    component: PageWrapper,
+  },
 };
 
 export const documentation = () => (
