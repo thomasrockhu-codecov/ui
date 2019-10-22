@@ -294,7 +294,7 @@ const Select = (props: Props) => {
                   ref={x.disabled ? noop : setRef(counter.next().value)}
                   option={x}
                   selected={value.includes(x)}
-                  onClick={handleClickListItem}
+                  onClick={x.disabled ? noop : handleClickListItem}
                   component={ListItem as any}
                 />
               ))}

@@ -2,6 +2,7 @@ export type InnerProps = {
   className?: string;
   onClose?: Function;
   title?: string;
+  footer?: React.ReactNode;
 };
 
 export type DialogProps = {
