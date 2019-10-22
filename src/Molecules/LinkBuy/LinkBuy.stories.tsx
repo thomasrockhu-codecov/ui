@@ -4,6 +4,9 @@ import { Typography, LinkBuy } from '../..';
 
 export default {
   title: 'Molecules | LinkBuy',
+  parameters: {
+    component: LinkBuy,
+  },
 };
 
 export const linkBuy = () => {

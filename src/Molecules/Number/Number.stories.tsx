@@ -8,6 +8,9 @@ import { TYPOGRAPHY_TYPES } from '../../Atoms/Typography/Typography';
 
 export default {
   title: 'Molecules | Number',
+  parameters: {
+    component: Number,
+  },
 };
 
 export const documentation = () => (

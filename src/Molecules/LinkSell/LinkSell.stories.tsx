@@ -4,6 +4,9 @@ import { Typography, LinkSell } from '../..';
 
 export default {
   title: 'Molecules | LinkSell',
+  parameters: {
+    component: LinkSell,
+  },
 };
 
 export const linkSell = () => {

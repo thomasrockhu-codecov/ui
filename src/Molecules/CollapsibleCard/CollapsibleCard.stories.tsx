@@ -22,6 +22,9 @@ const ExampleWithOnClick = () => {
 
 export default {
   title: 'Molecules | CollapsibleCard',
+  parameters: {
+    component: CollapsibleCard,
+  },
 };
 
 export const defaultStory = () => {

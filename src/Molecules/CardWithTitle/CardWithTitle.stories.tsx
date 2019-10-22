@@ -12,6 +12,9 @@ const SpaceInside = styled.div`
 
 export default {
   title: 'Molecules | CardWithTitle',
+  parameters: {
+    component: CardWithTitle,
+  },
 };
 
 export const documentation = () => <MD source={docs} />;

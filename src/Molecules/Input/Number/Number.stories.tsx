@@ -17,6 +17,9 @@ const handlers = actions(
 
 export default {
   title: 'Molecules | Input / Number',
+  parameters: {
+    component: Input.Number,
+  },
 };
 
 export const defaultStory = () => (

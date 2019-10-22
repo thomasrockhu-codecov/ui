@@ -6,6 +6,9 @@ import { Display } from '../../common/Display';
 
 export default {
   title: 'Molecules | FeedbackBanner',
+  parameters: {
+    component: FeedbackBanner,
+  },
 };
 
 export const defaultUsage = () => (

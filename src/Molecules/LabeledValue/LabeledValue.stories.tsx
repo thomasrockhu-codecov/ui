@@ -10,6 +10,9 @@ export const defaultStory = () => <LabeledValue label="Label">Value</LabeledValu
 
 defaultStory.story = {
   name: 'Default',
+  parameters: {
+    component: LabeledValue,
+  },
 };
 
 export const integrationLabeledValueSecondaryCurrency = () => (

@@ -3,6 +3,9 @@ import { Flexbox, FormField } from '../..';
 
 export default {
   title: 'Molecules | FormField',
+  parameters: {
+    component: FormField,
+  },
 };
 
 export const docs = () => (

@@ -3,6 +3,9 @@ import { PageHeaderCard, Flexbox, Button, Box, Typography } from '../..';
 
 export default {
   title: 'Molecules | PageHeader',
+  parameters: {
+    component: PageHeaderCard,
+  },
 };
 
 export const regularPageHeader = () => <PageHeaderCard title="Your darkest loaves" />;

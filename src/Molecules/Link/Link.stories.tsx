@@ -5,6 +5,9 @@ import { Link, Typography } from '../..';
 
 export default {
   title: 'Molecules | Link',
+  parameters: {
+    component: Link,
+  },
 };
 
 export const defaultUsage = () => (
