@@ -1,3 +1,10 @@
+## [1.62.1](https://github.com/nordnet/ui/compare/v1.62.0...v1.62.1) (2019-10-22)
+
+
+### Bug Fixes
+
+* do not run onclick if item disabled ([8427875](https://github.com/nordnet/ui/commit/8427875))
+
 # [1.62.0](https://github.com/nordnet/ui/compare/v1.61.3...v1.62.0) (2019-10-21)
 
 
