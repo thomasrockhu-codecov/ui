@@ -1339,6 +1339,166 @@ Array [
     }
   >
     <svg
+      aria-hidden="false"
+      className="c0"
+      focusable="false"
+      preserveAspectRatio="xMidYMid meet"
+      role="img"
+      size={5}
+      viewBox="0 0 166.54 203.5"
+    >
+      <defs>
+        <linearGradient
+          gradientTransform="matrix(1 -.03 -.03 -1 -184.76 221.53)"
+          gradientUnits="userSpaceOnUse"
+          id="linear-gradient-shareville-logo"
+          x1="369.57"
+          x2="197.13"
+          y1="38.34"
+          y2="222.06"
+        >
+          <stop
+            offset=".34"
+            stopColor="#008c44"
+          />
+          <stop
+            offset=".49"
+            stopColor="#3aa34a"
+          />
+          <stop
+            offset=".65"
+            stopColor="#6db84e"
+          />
+          <stop
+            offset=".79"
+            stopColor="#92c752"
+          />
+          <stop
+            offset=".9"
+            stopColor="#a9d054"
+          />
+          <stop
+            offset=".97"
+            stopColor="#b1d355"
+          />
+        </linearGradient>
+        <linearGradient
+          gradientTransform="matrix(1 0 0 -1 -196.51 227.12)"
+          gradientUnits="userSpaceOnUse"
+          id="linear-gradient-shareville-logo-2"
+          x1="354.93"
+          x2="238.52"
+          y1="65.65"
+          y2="182.06"
+        >
+          <stop
+            offset=".02"
+            stopColor="#008c44"
+          />
+          <stop
+            offset=".09"
+            stopColor="#289c48"
+          />
+          <stop
+            offset=".17"
+            stopColor="#4dab4b"
+          />
+          <stop
+            offset=".26"
+            stopColor="#6cb74e"
+          />
+          <stop
+            offset=".35"
+            stopColor="#85c151"
+          />
+          <stop
+            offset=".46"
+            stopColor="#99c953"
+          />
+          <stop
+            offset=".58"
+            stopColor="#a7cf54"
+          />
+          <stop
+            offset=".73"
+            stopColor="#afd255"
+          />
+          <stop
+            offset="1"
+            stopColor="#b1d355"
+          />
+        </linearGradient>
+        <linearGradient
+          gradientTransform="matrix(.98 .2 .2 -.98 -270.31 252.11)"
+          gradientUnits="userSpaceOnUse"
+          id="linear-gradient-shareville-logo-3"
+          x1="385.8"
+          x2="318.7"
+          y1="177.34"
+          y2="221.13"
+        >
+          <stop
+            offset=".15"
+            stopColor="#b1d355"
+          />
+          <stop
+            offset=".25"
+            stopColor="#b7d662"
+          />
+          <stop
+            offset=".46"
+            stopColor="#c7e086"
+          />
+          <stop
+            offset=".73"
+            stopColor="#e2eebf"
+          />
+          <stop
+            offset="1"
+            stopColor="#fff"
+          />
+        </linearGradient>
+      </defs>
+      <path
+        d="M88.37 62.66c-.43.22 13.71-17.07 6.24-39.83C90.35 9.94 79.66 0 79.66 0L10.72 69c-32.13 32.73 13 103.61 67.44 71.85.44-.23-13.69 17.06-6.23 39.82 4.26 12.9 15 22.83 15 22.83l68.92-69c32.09-32.72-13.06-103.6-67.48-71.84z"
+        fill="url(#linear-gradient-shareville-logo)"
+      />
+      <path
+        d="M89.06 98.06c-.25.09 8.77-8.58 6.13-21.74-1.5-7.47-6.78-13.7-6.78-13.7l-40.2 35.5c-20 17.78-1.37 55.52 30 42.76.26-.09-12.91 17.5 6.14 35.92l38.37-37.12c19-18.35-2.61-55.76-33.66-41.62z"
+        fill="url(#linear-gradient-shareville-logo-2)"
+      />
+      <path
+        d="M87.07 117.8a14.37 14.37 0 0 0 4.86-11.68 19.52 19.52 0 0 0-2.87-8.06l-24.19 19.21c-10.38 7.12-3.56 28.17 13.29 23.58.16 0-7 10 2.44 19.8l22.32-21.3c10.66-8.74.34-29.67-15.85-21.55z"
+        fill="url(#linear-gradient-shareville-logo-3)"
+      />
+      <title>
+        Shareville
+      </title>
+    </svg>
+  </div>,
+  .c0 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 20px;
+  height: 20px;
+  fill: #0046FF;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
+}
+
+<div
+    style={
+      Object {
+        "display": "inline-block",
+        "outline": "1px dashed #bbb",
+      }
+    }
+  >
+    <svg
       aria-hidden="true"
       className="c0"
       focusable="false"
@@ -2917,6 +3077,164 @@ exports[`Storyshots Atoms | Icon Available Icons 1`] = `
             d="M15.0952,15.3296 L10.3408,10.1424 C11.412,9.0216 12.0008,7.556 12.0008,6 C12.0008,4.3976 11.3768,2.8904 10.2432,1.7576 C9.1096,0.6248 7.6032,-8.8817842e-16 6.0008,-8.8817842e-16 C4.3984,-8.8817842e-16 2.8912,0.624 1.7584,1.7576 C0.6256,2.8912 0.0008,4.3976 0.0008,6 C0.0008,7.6024 0.6248,9.1096 1.7584,10.2424 C2.892,11.3752 4.3984,12 6.0008,12 C7.3816,12 8.6904,11.5368 9.7512,10.684 L14.5056,15.8704 C14.5848,15.9568 14.692,16 14.8008,16 C14.8976,16 14.9944,15.9656 15.0712,15.8952 C15.2344,15.7456 15.2448,15.4928 15.096,15.3304 L15.0952,15.3296 Z M0.8,6 C0.8,3.1328 3.1328,0.8 6,0.8 C8.8672,0.8 11.2,3.1328 11.2,6 C11.2,8.8672 8.8672,11.2 6,11.2 C3.1328,11.2 0.8,8.8672 0.8,6 Z"
             transform="scale(1.45) translate(0.5,0.5)"
           />
+        </svg>
+      </div>
+    </div>
+  </div>
+  <div
+    className="c1"
+    direction="row"
+  >
+    <div
+      className="c2"
+    >
+      SharevilleLogo
+    </div>
+    <div>
+      <div
+        style={
+          Object {
+            "display": "inline-block",
+            "outline": "1px dashed #bbb",
+          }
+        }
+      >
+        <svg
+          aria-hidden="false"
+          className="c3"
+          focusable="false"
+          preserveAspectRatio="xMidYMid meet"
+          role="img"
+          size={5}
+          viewBox="0 0 166.54 203.5"
+        >
+          <defs>
+            <linearGradient
+              gradientTransform="matrix(1 -.03 -.03 -1 -184.76 221.53)"
+              gradientUnits="userSpaceOnUse"
+              id="linear-gradient-shareville-logo"
+              x1="369.57"
+              x2="197.13"
+              y1="38.34"
+              y2="222.06"
+            >
+              <stop
+                offset=".34"
+                stopColor="#008c44"
+              />
+              <stop
+                offset=".49"
+                stopColor="#3aa34a"
+              />
+              <stop
+                offset=".65"
+                stopColor="#6db84e"
+              />
+              <stop
+                offset=".79"
+                stopColor="#92c752"
+              />
+              <stop
+                offset=".9"
+                stopColor="#a9d054"
+              />
+              <stop
+                offset=".97"
+                stopColor="#b1d355"
+              />
+            </linearGradient>
+            <linearGradient
+              gradientTransform="matrix(1 0 0 -1 -196.51 227.12)"
+              gradientUnits="userSpaceOnUse"
+              id="linear-gradient-shareville-logo-2"
+              x1="354.93"
+              x2="238.52"
+              y1="65.65"
+              y2="182.06"
+            >
+              <stop
+                offset=".02"
+                stopColor="#008c44"
+              />
+              <stop
+                offset=".09"
+                stopColor="#289c48"
+              />
+              <stop
+                offset=".17"
+                stopColor="#4dab4b"
+              />
+              <stop
+                offset=".26"
+                stopColor="#6cb74e"
+              />
+              <stop
+                offset=".35"
+                stopColor="#85c151"
+              />
+              <stop
+                offset=".46"
+                stopColor="#99c953"
+              />
+              <stop
+                offset=".58"
+                stopColor="#a7cf54"
+              />
+              <stop
+                offset=".73"
+                stopColor="#afd255"
+              />
+              <stop
+                offset="1"
+                stopColor="#b1d355"
+              />
+            </linearGradient>
+            <linearGradient
+              gradientTransform="matrix(.98 .2 .2 -.98 -270.31 252.11)"
+              gradientUnits="userSpaceOnUse"
+              id="linear-gradient-shareville-logo-3"
+              x1="385.8"
+              x2="318.7"
+              y1="177.34"
+              y2="221.13"
+            >
+              <stop
+                offset=".15"
+                stopColor="#b1d355"
+              />
+              <stop
+                offset=".25"
+                stopColor="#b7d662"
+              />
+              <stop
+                offset=".46"
+                stopColor="#c7e086"
+              />
+              <stop
+                offset=".73"
+                stopColor="#e2eebf"
+              />
+              <stop
+                offset="1"
+                stopColor="#fff"
+              />
+            </linearGradient>
+          </defs>
+          <path
+            d="M88.37 62.66c-.43.22 13.71-17.07 6.24-39.83C90.35 9.94 79.66 0 79.66 0L10.72 69c-32.13 32.73 13 103.61 67.44 71.85.44-.23-13.69 17.06-6.23 39.82 4.26 12.9 15 22.83 15 22.83l68.92-69c32.09-32.72-13.06-103.6-67.48-71.84z"
+            fill="url(#linear-gradient-shareville-logo)"
+          />
+          <path
+            d="M89.06 98.06c-.25.09 8.77-8.58 6.13-21.74-1.5-7.47-6.78-13.7-6.78-13.7l-40.2 35.5c-20 17.78-1.37 55.52 30 42.76.26-.09-12.91 17.5 6.14 35.92l38.37-37.12c19-18.35-2.61-55.76-33.66-41.62z"
+            fill="url(#linear-gradient-shareville-logo-2)"
+          />
+          <path
+            d="M87.07 117.8a14.37 14.37 0 0 0 4.86-11.68 19.52 19.52 0 0 0-2.87-8.06l-24.19 19.21c-10.38 7.12-3.56 28.17 13.29 23.58.16 0-7 10 2.44 19.8l22.32-21.3c10.66-8.74.34-29.67-15.85-21.55z"
+            fill="url(#linear-gradient-shareville-logo-3)"
+          />
+          <title>
+            Shareville
+          </title>
         </svg>
       </div>
     </div>
