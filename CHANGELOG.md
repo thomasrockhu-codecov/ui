@@ -1,3 +1,17 @@
+# [1.63.0](https://github.com/nordnet/ui/compare/v1.62.1...v1.63.0) (2019-10-23)
+
+
+### Bug Fixes
+
+* 🐛 shareville chrome id bug ([d46a011](https://github.com/nordnet/ui/commit/d46a011))
+* contain tab contents ([8a02ad3](https://github.com/nordnet/ui/commit/8a02ad3))
+* remove overflow rule ([4e524c8](https://github.com/nordnet/ui/commit/4e524c8))
+
+
+### Features
+
+* add shareville logo ([a7d54d0](https://github.com/nordnet/ui/commit/a7d54d0))
+
 ## [1.62.1](https://github.com/nordnet/ui/compare/v1.62.0...v1.62.1) (2019-10-22)
 
 
