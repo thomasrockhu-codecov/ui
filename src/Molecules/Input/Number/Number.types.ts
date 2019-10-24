@@ -34,6 +34,7 @@ export type Props = {
   min?: string | number;
   name?: string;
   noSteppers?: boolean;
+  placeholder?: string;
   required?: boolean;
   rightAddon?: React.ReactNode;
   size?: 's';

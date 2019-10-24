@@ -154,6 +154,38 @@ exports[`Storyshots Molecules | Input / Number Default 1`] = `
   z-index: 3;
 }
 
+.c6::-moz-placeholder,
+.c6:-ms-input-placeholder,
+.c6::-webkit-input-placeholder {
+  height: inherit;
+  line-height: inherit;
+  color: #6E6E69;
+}
+
+.c6::-moz-placeholder,
+.c6:-ms-input-placeholder,
+.c6::-moz-placeholder {
+  height: inherit;
+  line-height: inherit;
+  color: #6E6E69;
+}
+
+.c6::-moz-placeholder,
+.c6:-ms-input-placeholder,
+.c6:-ms-input-placeholder {
+  height: inherit;
+  line-height: inherit;
+  color: #6E6E69;
+}
+
+.c6::-moz-placeholder,
+.c6:-ms-input-placeholder,
+.c6::placeholder {
+  height: inherit;
+  line-height: inherit;
+  color: #6E6E69;
+}
+
 <div
   className="c0"
 >
@@ -384,6 +416,38 @@ exports[`Storyshots Molecules | Input / Number Disabled 1`] = `
 .c6:focus {
   border-color: #0046FF;
   z-index: 3;
+}
+
+.c6::-moz-placeholder,
+.c6:-ms-input-placeholder,
+.c6::-webkit-input-placeholder {
+  height: inherit;
+  line-height: inherit;
+  color: #6E6E69;
+}
+
+.c6::-moz-placeholder,
+.c6:-ms-input-placeholder,
+.c6::-moz-placeholder {
+  height: inherit;
+  line-height: inherit;
+  color: #6E6E69;
+}
+
+.c6::-moz-placeholder,
+.c6:-ms-input-placeholder,
+.c6:-ms-input-placeholder {
+  height: inherit;
+  line-height: inherit;
+  color: #6E6E69;
+}
+
+.c6::-moz-placeholder,
+.c6:-ms-input-placeholder,
+.c6::placeholder {
+  height: inherit;
+  line-height: inherit;
+  color: #6E6E69;
 }
 
 <div
@@ -659,6 +723,38 @@ Array [
 .c9:focus {
   border-color: #0046FF;
   z-index: 3;
+}
+
+.c9::-moz-placeholder,
+.c9:-ms-input-placeholder,
+.c9::-webkit-input-placeholder {
+  height: inherit;
+  line-height: inherit;
+  color: #6E6E69;
+}
+
+.c9::-moz-placeholder,
+.c9:-ms-input-placeholder,
+.c9::-moz-placeholder {
+  height: inherit;
+  line-height: inherit;
+  color: #6E6E69;
+}
+
+.c9::-moz-placeholder,
+.c9:-ms-input-placeholder,
+.c9:-ms-input-placeholder {
+  height: inherit;
+  line-height: inherit;
+  color: #6E6E69;
+}
+
+.c9::-moz-placeholder,
+.c9:-ms-input-placeholder,
+.c9::placeholder {
+  height: inherit;
+  line-height: inherit;
+  color: #6E6E69;
 }
 
 .c0 {
@@ -1085,6 +1181,38 @@ exports[`Storyshots Molecules | Input / Number With a smaller step 1`] = `
   z-index: 3;
 }
 
+.c6::-moz-placeholder,
+.c6:-ms-input-placeholder,
+.c6::-webkit-input-placeholder {
+  height: inherit;
+  line-height: inherit;
+  color: #6E6E69;
+}
+
+.c6::-moz-placeholder,
+.c6:-ms-input-placeholder,
+.c6::-moz-placeholder {
+  height: inherit;
+  line-height: inherit;
+  color: #6E6E69;
+}
+
+.c6::-moz-placeholder,
+.c6:-ms-input-placeholder,
+.c6:-ms-input-placeholder {
+  height: inherit;
+  line-height: inherit;
+  color: #6E6E69;
+}
+
+.c6::-moz-placeholder,
+.c6:-ms-input-placeholder,
+.c6::placeholder {
+  height: inherit;
+  line-height: inherit;
+  color: #6E6E69;
+}
+
 <div
   className="c0"
 >
@@ -1325,6 +1453,38 @@ exports[`Storyshots Molecules | Input / Number With all actions 1`] = `
 .c6:focus {
   border-color: #0046FF;
   z-index: 3;
+}
+
+.c6::-moz-placeholder,
+.c6:-ms-input-placeholder,
+.c6::-webkit-input-placeholder {
+  height: inherit;
+  line-height: inherit;
+  color: #6E6E69;
+}
+
+.c6::-moz-placeholder,
+.c6:-ms-input-placeholder,
+.c6::-moz-placeholder {
+  height: inherit;
+  line-height: inherit;
+  color: #6E6E69;
+}
+
+.c6::-moz-placeholder,
+.c6:-ms-input-placeholder,
+.c6:-ms-input-placeholder {
+  height: inherit;
+  line-height: inherit;
+  color: #6E6E69;
+}
+
+.c6::-moz-placeholder,
+.c6:-ms-input-placeholder,
+.c6::placeholder {
+  height: inherit;
+  line-height: inherit;
+  color: #6E6E69;
 }
 
 <div
@@ -1574,6 +1734,38 @@ exports[`Storyshots Molecules | Input / Number With auto focus 1`] = `
   z-index: 3;
 }
 
+.c6::-moz-placeholder,
+.c6:-ms-input-placeholder,
+.c6::-webkit-input-placeholder {
+  height: inherit;
+  line-height: inherit;
+  color: #6E6E69;
+}
+
+.c6::-moz-placeholder,
+.c6:-ms-input-placeholder,
+.c6::-moz-placeholder {
+  height: inherit;
+  line-height: inherit;
+  color: #6E6E69;
+}
+
+.c6::-moz-placeholder,
+.c6:-ms-input-placeholder,
+.c6:-ms-input-placeholder {
+  height: inherit;
+  line-height: inherit;
+  color: #6E6E69;
+}
+
+.c6::-moz-placeholder,
+.c6:-ms-input-placeholder,
+.c6::placeholder {
+  height: inherit;
+  line-height: inherit;
+  color: #6E6E69;
+}
+
 <div
   className="c0"
 >
@@ -1790,6 +1982,38 @@ exports[`Storyshots Molecules | Input / Number With both addons 1`] = `
   z-index: 3;
 }
 
+.c6::-moz-placeholder,
+.c6:-ms-input-placeholder,
+.c6::-webkit-input-placeholder {
+  height: inherit;
+  line-height: inherit;
+  color: #6E6E69;
+}
+
+.c6::-moz-placeholder,
+.c6:-ms-input-placeholder,
+.c6::-moz-placeholder {
+  height: inherit;
+  line-height: inherit;
+  color: #6E6E69;
+}
+
+.c6::-moz-placeholder,
+.c6:-ms-input-placeholder,
+.c6:-ms-input-placeholder {
+  height: inherit;
+  line-height: inherit;
+  color: #6E6E69;
+}
+
+.c6::-moz-placeholder,
+.c6:-ms-input-placeholder,
+.c6::placeholder {
+  height: inherit;
+  line-height: inherit;
+  color: #6E6E69;
+}
+
 <div
   className="c0"
 >
@@ -2003,6 +2227,38 @@ exports[`Storyshots Molecules | Input / Number With default value (Uncontrolled 
 .c6:focus {
   border-color: #0046FF;
   z-index: 3;
+}
+
+.c6::-moz-placeholder,
+.c6:-ms-input-placeholder,
+.c6::-webkit-input-placeholder {
+  height: inherit;
+  line-height: inherit;
+  color: #6E6E69;
+}
+
+.c6::-moz-placeholder,
+.c6:-ms-input-placeholder,
+.c6::-moz-placeholder {
+  height: inherit;
+  line-height: inherit;
+  color: #6E6E69;
+}
+
+.c6::-moz-placeholder,
+.c6:-ms-input-placeholder,
+.c6:-ms-input-placeholder {
+  height: inherit;
+  line-height: inherit;
+  color: #6E6E69;
+}
+
+.c6::-moz-placeholder,
+.c6:-ms-input-placeholder,
+.c6::placeholder {
+  height: inherit;
+  line-height: inherit;
+  color: #6E6E69;
 }
 
 <div
@@ -2254,6 +2510,38 @@ exports[`Storyshots Molecules | Input / Number With error if value is less than 
 .c6:focus {
   border-color: #0046FF;
   z-index: 3;
+}
+
+.c6::-moz-placeholder,
+.c6:-ms-input-placeholder,
+.c6::-webkit-input-placeholder {
+  height: inherit;
+  line-height: inherit;
+  color: #6E6E69;
+}
+
+.c6::-moz-placeholder,
+.c6:-ms-input-placeholder,
+.c6::-moz-placeholder {
+  height: inherit;
+  line-height: inherit;
+  color: #6E6E69;
+}
+
+.c6::-moz-placeholder,
+.c6:-ms-input-placeholder,
+.c6:-ms-input-placeholder {
+  height: inherit;
+  line-height: inherit;
+  color: #6E6E69;
+}
+
+.c6::-moz-placeholder,
+.c6:-ms-input-placeholder,
+.c6::placeholder {
+  height: inherit;
+  line-height: inherit;
+  color: #6E6E69;
 }
 
 <div
@@ -2520,6 +2808,38 @@ exports[`Storyshots Molecules | Input / Number With extra info and error 1`] = `
   z-index: 3;
 }
 
+.c6::-moz-placeholder,
+.c6:-ms-input-placeholder,
+.c6::-webkit-input-placeholder {
+  height: inherit;
+  line-height: inherit;
+  color: #6E6E69;
+}
+
+.c6::-moz-placeholder,
+.c6:-ms-input-placeholder,
+.c6::-moz-placeholder {
+  height: inherit;
+  line-height: inherit;
+  color: #6E6E69;
+}
+
+.c6::-moz-placeholder,
+.c6:-ms-input-placeholder,
+.c6:-ms-input-placeholder {
+  height: inherit;
+  line-height: inherit;
+  color: #6E6E69;
+}
+
+.c6::-moz-placeholder,
+.c6:-ms-input-placeholder,
+.c6::placeholder {
+  height: inherit;
+  line-height: inherit;
+  color: #6E6E69;
+}
+
 <div
   className="c0"
 >
@@ -2784,6 +3104,38 @@ exports[`Storyshots Molecules | Input / Number With extra info below 1`] = `
   z-index: 3;
 }
 
+.c6::-moz-placeholder,
+.c6:-ms-input-placeholder,
+.c6::-webkit-input-placeholder {
+  height: inherit;
+  line-height: inherit;
+  color: #6E6E69;
+}
+
+.c6::-moz-placeholder,
+.c6:-ms-input-placeholder,
+.c6::-moz-placeholder {
+  height: inherit;
+  line-height: inherit;
+  color: #6E6E69;
+}
+
+.c6::-moz-placeholder,
+.c6:-ms-input-placeholder,
+.c6:-ms-input-placeholder {
+  height: inherit;
+  line-height: inherit;
+  color: #6E6E69;
+}
+
+.c6::-moz-placeholder,
+.c6:-ms-input-placeholder,
+.c6::placeholder {
+  height: inherit;
+  line-height: inherit;
+  color: #6E6E69;
+}
+
 <div
   className="c0"
 >
@@ -3039,6 +3391,38 @@ exports[`Storyshots Molecules | Input / Number With hidden label 1`] = `
   z-index: 3;
 }
 
+.c6::-moz-placeholder,
+.c6:-ms-input-placeholder,
+.c6::-webkit-input-placeholder {
+  height: inherit;
+  line-height: inherit;
+  color: #6E6E69;
+}
+
+.c6::-moz-placeholder,
+.c6:-ms-input-placeholder,
+.c6::-moz-placeholder {
+  height: inherit;
+  line-height: inherit;
+  color: #6E6E69;
+}
+
+.c6::-moz-placeholder,
+.c6:-ms-input-placeholder,
+.c6:-ms-input-placeholder {
+  height: inherit;
+  line-height: inherit;
+  color: #6E6E69;
+}
+
+.c6::-moz-placeholder,
+.c6:-ms-input-placeholder,
+.c6::placeholder {
+  height: inherit;
+  line-height: inherit;
+  color: #6E6E69;
+}
+
 <div
   className="c0"
 >
@@ -3244,6 +3628,38 @@ exports[`Storyshots Molecules | Input / Number With left addon 1`] = `
 .c6:focus {
   border-color: #0046FF;
   z-index: 3;
+}
+
+.c6::-moz-placeholder,
+.c6:-ms-input-placeholder,
+.c6::-webkit-input-placeholder {
+  height: inherit;
+  line-height: inherit;
+  color: #6E6E69;
+}
+
+.c6::-moz-placeholder,
+.c6:-ms-input-placeholder,
+.c6::-moz-placeholder {
+  height: inherit;
+  line-height: inherit;
+  color: #6E6E69;
+}
+
+.c6::-moz-placeholder,
+.c6:-ms-input-placeholder,
+.c6:-ms-input-placeholder {
+  height: inherit;
+  line-height: inherit;
+  color: #6E6E69;
+}
+
+.c6::-moz-placeholder,
+.c6:-ms-input-placeholder,
+.c6::placeholder {
+  height: inherit;
+  line-height: inherit;
+  color: #6E6E69;
 }
 
 <div
@@ -3455,6 +3871,38 @@ exports[`Storyshots Molecules | Input / Number With max and min 1`] = `
   z-index: 3;
 }
 
+.c6::-moz-placeholder,
+.c6:-ms-input-placeholder,
+.c6::-webkit-input-placeholder {
+  height: inherit;
+  line-height: inherit;
+  color: #6E6E69;
+}
+
+.c6::-moz-placeholder,
+.c6:-ms-input-placeholder,
+.c6::-moz-placeholder {
+  height: inherit;
+  line-height: inherit;
+  color: #6E6E69;
+}
+
+.c6::-moz-placeholder,
+.c6:-ms-input-placeholder,
+.c6:-ms-input-placeholder {
+  height: inherit;
+  line-height: inherit;
+  color: #6E6E69;
+}
+
+.c6::-moz-placeholder,
+.c6:-ms-input-placeholder,
+.c6::placeholder {
+  height: inherit;
+  line-height: inherit;
+  color: #6E6E69;
+}
+
 <div
   className="c0"
 >
@@ -3624,6 +4072,38 @@ exports[`Storyshots Molecules | Input / Number With no steppers 1`] = `
   z-index: 3;
 }
 
+.c6::-moz-placeholder,
+.c6:-ms-input-placeholder,
+.c6::-webkit-input-placeholder {
+  height: inherit;
+  line-height: inherit;
+  color: #6E6E69;
+}
+
+.c6::-moz-placeholder,
+.c6:-ms-input-placeholder,
+.c6::-moz-placeholder {
+  height: inherit;
+  line-height: inherit;
+  color: #6E6E69;
+}
+
+.c6::-moz-placeholder,
+.c6:-ms-input-placeholder,
+.c6:-ms-input-placeholder {
+  height: inherit;
+  line-height: inherit;
+  color: #6E6E69;
+}
+
+.c6::-moz-placeholder,
+.c6:-ms-input-placeholder,
+.c6::placeholder {
+  height: inherit;
+  line-height: inherit;
+  color: #6E6E69;
+}
+
 <div
   className="c0"
 >
@@ -3654,6 +4134,155 @@ exports[`Storyshots Molecules | Input / Number With no steppers 1`] = `
         step={1}
         type="text"
         value="1"
+      />
+    </div>
+  </span>
+</div>
+`;
+
+exports[`Storyshots Molecules | Input / Number With placeholder 1`] = `
+.c5 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+}
+
+.c1 {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.c2 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #6E6E69;
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c3 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c0 {
+  width: 200px;
+  display: inline-block;
+}
+
+.c4 {
+  position: relative;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.03);
+}
+
+.c6 {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  overflow: visible;
+  background-color: #FFFFFF;
+  outline: none;
+  border: 1px solid #BCBCB6;
+  position: relative;
+  height: 40px;
+  width: 100%;
+  text-align: left;
+  box-sizing: border-box;
+  padding: 8px;
+  margin: 0 -1px;
+  z-index: 1;
+}
+
+.c6:hover {
+  border-color: #4B4B46;
+  z-index: 2;
+}
+
+.c6:focus {
+  border-color: #0046FF;
+  z-index: 3;
+}
+
+.c6::-moz-placeholder,
+.c6:-ms-input-placeholder,
+.c6::-webkit-input-placeholder {
+  height: inherit;
+  line-height: inherit;
+  color: #6E6E69;
+}
+
+.c6::-moz-placeholder,
+.c6:-ms-input-placeholder,
+.c6::-moz-placeholder {
+  height: inherit;
+  line-height: inherit;
+  color: #6E6E69;
+}
+
+.c6::-moz-placeholder,
+.c6:-ms-input-placeholder,
+.c6:-ms-input-placeholder {
+  height: inherit;
+  line-height: inherit;
+  color: #6E6E69;
+}
+
+.c6::-moz-placeholder,
+.c6:-ms-input-placeholder,
+.c6::placeholder {
+  height: inherit;
+  line-height: inherit;
+  color: #6E6E69;
+}
+
+<div
+  className="c0"
+>
+  <label
+    className="c1"
+    hidden={false}
+    htmlFor="insert-unique-id"
+  >
+    <span
+      className="c2"
+    >
+      Label 
+    </span>
+  </label>
+  <span
+    className="c3"
+  >
+    <div
+      className="c4 c5"
+    >
+      <input
+        className="c6"
+        id="insert-unique-id"
+        inputMode="decimal"
+        min={0}
+        onChange={[Function]}
+        onKeyDown={[Function]}
+        placeholder="A placeholder"
+        step={1}
+        type="text"
+        value=""
       />
     </div>
   </span>
@@ -3763,6 +4392,38 @@ exports[`Storyshots Molecules | Input / Number With right addon 1`] = `
 .c6:focus {
   border-color: #0046FF;
   z-index: 3;
+}
+
+.c6::-moz-placeholder,
+.c6:-ms-input-placeholder,
+.c6::-webkit-input-placeholder {
+  height: inherit;
+  line-height: inherit;
+  color: #6E6E69;
+}
+
+.c6::-moz-placeholder,
+.c6:-ms-input-placeholder,
+.c6::-moz-placeholder {
+  height: inherit;
+  line-height: inherit;
+  color: #6E6E69;
+}
+
+.c6::-moz-placeholder,
+.c6:-ms-input-placeholder,
+.c6:-ms-input-placeholder {
+  height: inherit;
+  line-height: inherit;
+  color: #6E6E69;
+}
+
+.c6::-moz-placeholder,
+.c6:-ms-input-placeholder,
+.c6::placeholder {
+  height: inherit;
+  line-height: inherit;
+  color: #6E6E69;
 }
 
 <div
@@ -4000,6 +4661,38 @@ Array [
   z-index: 3;
 }
 
+.c9::-moz-placeholder,
+.c9:-ms-input-placeholder,
+.c9::-webkit-input-placeholder {
+  height: inherit;
+  line-height: inherit;
+  color: #6E6E69;
+}
+
+.c9::-moz-placeholder,
+.c9:-ms-input-placeholder,
+.c9::-moz-placeholder {
+  height: inherit;
+  line-height: inherit;
+  color: #6E6E69;
+}
+
+.c9::-moz-placeholder,
+.c9:-ms-input-placeholder,
+.c9:-ms-input-placeholder {
+  height: inherit;
+  line-height: inherit;
+  color: #6E6E69;
+}
+
+.c9::-moz-placeholder,
+.c9:-ms-input-placeholder,
+.c9::placeholder {
+  height: inherit;
+  line-height: inherit;
+  color: #6E6E69;
+}
+
 .c13 {
   font-family: inherit;
   font-size: 100%;
@@ -4029,6 +4722,38 @@ Array [
   z-index: 3;
 }
 
+.c13::-moz-placeholder,
+.c13:-ms-input-placeholder,
+.c13::-webkit-input-placeholder {
+  height: inherit;
+  line-height: inherit;
+  color: #6E6E69;
+}
+
+.c13::-moz-placeholder,
+.c13:-ms-input-placeholder,
+.c13::-moz-placeholder {
+  height: inherit;
+  line-height: inherit;
+  color: #6E6E69;
+}
+
+.c13::-moz-placeholder,
+.c13:-ms-input-placeholder,
+.c13:-ms-input-placeholder {
+  height: inherit;
+  line-height: inherit;
+  color: #6E6E69;
+}
+
+.c13::-moz-placeholder,
+.c13:-ms-input-placeholder,
+.c13::placeholder {
+  height: inherit;
+  line-height: inherit;
+  color: #6E6E69;
+}
+
 .c14 {
   font-family: inherit;
   font-size: 100%;
@@ -4056,6 +4781,38 @@ Array [
 .c14:focus {
   border-color: #0046FF;
   z-index: 3;
+}
+
+.c14::-moz-placeholder,
+.c14:-ms-input-placeholder,
+.c14::-webkit-input-placeholder {
+  height: inherit;
+  line-height: inherit;
+  color: #6E6E69;
+}
+
+.c14::-moz-placeholder,
+.c14:-ms-input-placeholder,
+.c14::-moz-placeholder {
+  height: inherit;
+  line-height: inherit;
+  color: #6E6E69;
+}
+
+.c14::-moz-placeholder,
+.c14:-ms-input-placeholder,
+.c14:-ms-input-placeholder {
+  height: inherit;
+  line-height: inherit;
+  color: #6E6E69;
+}
+
+.c14::-moz-placeholder,
+.c14:-ms-input-placeholder,
+.c14::placeholder {
+  height: inherit;
+  line-height: inherit;
+  color: #6E6E69;
 }
 
 .c0 {
@@ -4543,6 +5300,38 @@ exports[`Storyshots Molecules | Input / Number With success 1`] = `
   z-index: 3;
 }
 
+.c6::-moz-placeholder,
+.c6:-ms-input-placeholder,
+.c6::-webkit-input-placeholder {
+  height: inherit;
+  line-height: inherit;
+  color: #6E6E69;
+}
+
+.c6::-moz-placeholder,
+.c6:-ms-input-placeholder,
+.c6::-moz-placeholder {
+  height: inherit;
+  line-height: inherit;
+  color: #6E6E69;
+}
+
+.c6::-moz-placeholder,
+.c6:-ms-input-placeholder,
+.c6:-ms-input-placeholder {
+  height: inherit;
+  line-height: inherit;
+  color: #6E6E69;
+}
+
+.c6::-moz-placeholder,
+.c6:-ms-input-placeholder,
+.c6::placeholder {
+  height: inherit;
+  line-height: inherit;
+  color: #6E6E69;
+}
+
 <div
   className="c0"
 >
@@ -4784,6 +5573,38 @@ Array [
 .c6:focus {
   border-color: #0046FF;
   z-index: 3;
+}
+
+.c6::-moz-placeholder,
+.c6:-ms-input-placeholder,
+.c6::-webkit-input-placeholder {
+  height: inherit;
+  line-height: inherit;
+  color: #6E6E69;
+}
+
+.c6::-moz-placeholder,
+.c6:-ms-input-placeholder,
+.c6::-moz-placeholder {
+  height: inherit;
+  line-height: inherit;
+  color: #6E6E69;
+}
+
+.c6::-moz-placeholder,
+.c6:-ms-input-placeholder,
+.c6:-ms-input-placeholder {
+  height: inherit;
+  line-height: inherit;
+  color: #6E6E69;
+}
+
+.c6::-moz-placeholder,
+.c6:-ms-input-placeholder,
+.c6::placeholder {
+  height: inherit;
+  line-height: inherit;
+  color: #6E6E69;
 }
 
 <div

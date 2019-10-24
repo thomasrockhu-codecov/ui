@@ -8,6 +8,7 @@ import NormalizedElements from '../../../common/NormalizedElements';
 import { getStringAsNumber, getNumberAsString } from './utils';
 import { isNumber, isString, isUndefined, assert } from '../../../common/utils';
 import adjustValue from './adjustValue';
+import { placeholderNormalizaion } from '../Text/Text';
 
 const hasError = (error?: Props['error']) => error && error !== '';
 const removeNonNumberCharacters = R.replace(/[^0-9\-.,]+/, '');
@@ -101,6 +102,7 @@ const Input = styled(NormalizedElements.Input).attrs({ type: 'text' })<Partial<P
   ${background}
   ${borderStyles}
   ${height}
+  ${placeholderNormalizaion}
   width: 100%;
   text-align: ${p => (p.showSteppers ? 'center' : 'left')};
   box-sizing: border-box;
@@ -161,6 +163,7 @@ const NumberInput: NumberComponent & {
     onKeyUp,
     onStepDown,
     onStepUp,
+    placeholder,
     rightAddon,
     required,
     size,
@@ -283,6 +286,7 @@ const NumberInput: NumberComponent & {
               onKeyDown: onKeyDownHandler,
               onKeyPress,
               onKeyUp,
+              placeholder,
               ref: inputRef,
               rightAddon,
               required,

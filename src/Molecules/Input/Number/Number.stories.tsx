@@ -171,4 +171,13 @@ storiesOf('Molecules | Input / Number', module)
         },
       ]}
     />
+  ))
+  .add('With placeholder', () => (
+    <Input.Number
+      id="insert-unique-id"
+      label="Label"
+      placeholder="A placeholder"
+      defaultValue=""
+      noSteppers
+    />
   ));
