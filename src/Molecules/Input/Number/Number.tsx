@@ -326,7 +326,7 @@ const NumberInput: NumberComponent & {
     </FormField>
   );
 };
-
 NumberInput.components = components;
-
-export default injectIntl(NumberInput);
+export const Number: React.FC<Props> & {
+  components: typeof components;
+} = injectIntl(NumberInput) as any;

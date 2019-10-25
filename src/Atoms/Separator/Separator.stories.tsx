@@ -1,8 +1,5 @@
 import React from 'react';
-import { storiesOf } from '@storybook/react';
 import styled from 'styled-components';
-import MD from 'react-markdown';
-import docs from './Separator.md';
 
 import { Separator } from '../..';
 
@@ -12,22 +9,41 @@ const StyledContainer = styled.div`
 `;
 const Container = ({ children }: any) => <StyledContainer>{children}</StyledContainer>;
 
-storiesOf('Atoms | Separator', module)
-  .add('Documentation', () => <MD source={docs} />)
-  .add('Separator default', () => (
-    <Container>
-      <Separator />
-    </Container>
-  ))
-  .add('Separators with different color', () => (
-    <Container>
-      <Separator color={t => t.color.negative} />
-      <br />
-      <Separator color={t => t.color.backgroundDark} />
-    </Container>
-  ))
-  .add('Separator vertical', () => (
-    <Container>
-      <Separator vertical />
-    </Container>
-  ));
+export default {
+  title: 'Atoms | Separator',
+  parameters: {
+    component: Separator,
+  },
+};
+
+export const separatorDefault = () => (
+  <Container>
+    <Separator />
+  </Container>
+);
+
+separatorDefault.story = {
+  name: 'Separator default',
+};
+
+export const separatorsWithDifferentColor = () => (
+  <Container>
+    <Separator color={t => t.color.negative} />
+    <br />
+    <Separator color={t => t.color.backgroundDark} />
+  </Container>
+);
+
+separatorsWithDifferentColor.story = {
+  name: 'Separators with different color',
+};
+
+export const separatorVertical = () => (
+  <Container>
+    <Separator vertical />
+  </Container>
+);
+
+separatorVertical.story = {
+  name: 'Separator vertical',
+};

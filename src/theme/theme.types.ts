@@ -107,10 +107,14 @@ export type Theme = {
     shadowInput: string;
     /** 5 percent of black */
     shadowSwitch: string;
+    /** complementaryGreen1 */
+    shareville: string;
     /** black */
     spinnerBlack: RawColor['black'];
     /** white */
     spinnerWhite: RawColor['white'];
+    /** index */
+    streamingBolt: RawColor['index'];
     /** gray0 */
     svgFill: RawColor['gray0'];
     /** gray2 */
@@ -137,6 +141,8 @@ export type Theme = {
     generationSavingsTimelineColor4: RawColor['complementaryBlue1'];
     /** gray6 */
     orderDepthBackground: RawColor['gray6'];
+    /** gray5 */
+    orderDepthDarkBackground: RawColor['gray5'];
   };
 
   spacing: {

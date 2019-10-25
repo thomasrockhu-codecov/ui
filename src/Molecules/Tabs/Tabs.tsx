@@ -5,12 +5,12 @@ import NormalizedElements from '../../common/NormalizedElements/index';
 import { assert } from '../../common/utils';
 import { useKeyboardNavigation } from './useKeyboardNavigation';
 
-import { ContainerComponent, ItemComponent, TitleComponent, ItemProps } from './Tabs.types';
+import { ContainerComponent, TitleComponent, ItemProps } from './Tabs.types';
 
-const Item: ItemComponent = ({ children }) => {
+export const Item: React.FC<ItemProps> = ({ children }) => {
   return <>{children}</>;
 };
-Item.displayName = 'Tabs.Content';
+(Item as any).displayName = 'Tabs.Content';
 
 const StyledButton = styled(NormalizedElements.Button)`
   background: none;
@@ -61,6 +61,10 @@ const StyledUl = styled.ul`
   margin-bottom: 0;
 `;
 
+const Content = styled.section`
+  height: 100%;
+`;
+
 const isItemOrUndefined = (x: any): x is { type: typeof Item; props: ItemProps } => {
   if (x == null || typeof x === 'undefined') {
     return true;
@@ -69,7 +73,7 @@ const isItemOrUndefined = (x: any): x is { type: typeof Item; props: ItemProps }
   return typeof x === 'object' && Object.hasOwnProperty.call(x, 'type'); // FIXME: && x.type === Item;
 };
 
-const Tabs: ContainerComponent = ({
+export const Tabs: ContainerComponent = ({
   children,
   initialActiveTabIndex = 0,
   activeTabIndex,
@@ -120,14 +124,14 @@ const Tabs: ContainerComponent = ({
 
       if (isActive) {
         contents = (
-          <section
+          <Content
             id={`tabs-tabpanel-${i}`}
             role="tabpanel"
             aria-labelledby={`tabs-tab-${i}`}
             hidden={!isActive}
           >
             {c}
-          </section>
+          </Content>
         );
       }
     }
@@ -147,11 +151,9 @@ const Tabs: ContainerComponent = ({
       </Flexbox>
       <Separator />
 
-      <div>{contents}</div>
+      {contents}
     </>
   );
 };
 Tabs.displayName = 'Tabs';
 Tabs.Tab = Item;
-
-export default Tabs;

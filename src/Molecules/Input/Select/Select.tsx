@@ -79,18 +79,18 @@ const SelectWrapper = styled.div`
 `;
 const FormFieldOrFragment = React.forwardRef<HTMLDivElement, any>(
   ({ children, noFormField, open, onFocus, onBlur, fullWidth, ...props }, ref) => (
-    <StyledRelativeDiv
-      {...(noFormField ? { ref } : {})}
-      onBlur={onBlur}
-      onFocus={onFocus}
-      fullWidth={fullWidth}
-    >
-      <Flexbox container alignItems="center" {...(fullWidth ? { width: '100%' } : {})}>
+    <StyledRelativeDiv {...(noFormField ? { ref } : {})} fullWidth={fullWidth}>
+      <Flexbox
+        {...(noFormField ? { onBlur, onFocus } : {})}
+        container
+        alignItems="center"
+        {...(fullWidth ? { width: '100%' } : {})}
+      >
         {noFormField ? (
           children
         ) : (
           <FormField {...props} {...(fullWidth ? { width: '100%' } : {})} ref={ref}>
-            <SelectWrapper {...props}>
+            <SelectWrapper onBlur={onBlur} onFocus={onFocus} {...props}>
               {children}
               <Chevron open={open} />
             </SelectWrapper>
@@ -166,6 +166,7 @@ const Select = (props: Props) => {
       },
     });
   }, [options, placeholder, isControlledMode, valueFromProps, dispatch]);
+
   const { open, value } = state;
   const buttonRef = React.useRef<HTMLButtonElement>(null);
   const customSelectListRef = React.useRef<HTMLDivElement>(null);
@@ -216,15 +217,15 @@ const Select = (props: Props) => {
   const isFocused = React.useRef(false);
 
   const handleBlur = (e: React.FocusEvent) => {
-    if (
-      inputWrapperRef.current &&
-      !inputWrapperRef.current.contains((e.relatedTarget as unknown) as Node)
-    ) {
+    const target: Node = e.relatedTarget as any;
+
+    if (inputWrapperRef.current && target && !inputWrapperRef.current.contains(target)) {
       if (onBlur) onBlur(e);
       isFocused.current = false;
       dispatch({ type: defaultActionTypes['Select.Close'] });
     }
   };
+
   const handleFocus = (e: React.FocusEvent) => {
     if (!onFocus) return;
     if (inputWrapperRef.current && inputWrapperRef.current.contains(document.activeElement)) {
@@ -234,6 +235,10 @@ const Select = (props: Props) => {
       }
     }
   };
+  const contextValue = React.useMemo(() => [state, dispatch] as [typeof state, typeof dispatch], [
+    state,
+    dispatch,
+  ]);
 
   if (!state.initialized) {
     return null;
@@ -257,7 +262,7 @@ const Select = (props: Props) => {
           />
         ))}
       </HiddenSelect>
-      <SelectStateContext.Provider value={[state, dispatch]}>
+      <SelectStateContext.Provider value={contextValue}>
         <FormFieldOrFragment
           noFormField={noFormField}
           {...props}
@@ -280,13 +285,7 @@ const Select = (props: Props) => {
             options={options}
           />
           {open && (
-            <ListWrapper
-              ref={customSelectListRef}
-              key={3}
-              component={List}
-              noFormField={noFormField}
-              onBlur={() => dispatch({ type: defaultActionTypes['Select.Close'] })}
-            >
+            <ListWrapper ref={customSelectListRef} component={List} noFormField={noFormField}>
               {options.map((x: any, index: number) => (
                 <ListItemWrapper
                   key={x.value}
@@ -295,7 +294,7 @@ const Select = (props: Props) => {
                   ref={x.disabled ? noop : setRef(counter.next().value)}
                   option={x}
                   selected={value.includes(x)}
-                  onClick={handleClickListItem}
+                  onClick={x.disabled ? noop : handleClickListItem}
                   component={ListItem as any}
                 />
               ))}

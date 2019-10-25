@@ -11,7 +11,7 @@
     "noEmit": false,
     "strict": true,
     "moduleResolution": "node",
-    "types": ["./src/common/injectTheme", "./src/common/allowMd"],
+    "types": ["./src/common/injectTheme", "./src/common/allowMd", "node"],
     "allowSyntheticDefaultImports": true,
     "esModuleInterop": true,
 

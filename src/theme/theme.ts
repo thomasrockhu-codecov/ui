@@ -146,8 +146,10 @@ export const createTheme = (config: ThemeConfig = {}): Theme => {
         .alpha(0.05)
         .rgb()
         .string(),
+      shareville: rawColor.complementaryGreen1,
       spinnerBlack: rawColor.black,
       spinnerWhite: rawColor.white,
+      streamingBolt: rawColor.index,
       svgFill: rawColor.gray0,
       svgStroke: rawColor.gray2,
       text: rawColor.gray0,
@@ -163,6 +165,7 @@ export const createTheme = (config: ThemeConfig = {}): Theme => {
       generationSavingsTimelineColor3: rawColor.brandBlue,
       generationSavingsTimelineColor4: rawColor.complementaryBlue1,
       orderDepthBackground: rawColor.gray6,
+      orderDepthDarkBackground: rawColor.gray5,
     },
     media: {
       between: (s1, s2) => {

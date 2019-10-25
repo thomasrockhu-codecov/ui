@@ -22,6 +22,8 @@ import { Flag } from './components/Flag';
 import { Globe } from './components/Globe';
 import { Import } from './components/Import';
 import { InfoCircle } from './components/InfoCircle';
+import { Maximize } from './components/Maximize';
+import { Minimize } from './components/Minimize';
 import { Pen } from './components/Pen';
 import { Plus } from './components/Plus';
 import { PlusWithCircle } from './components/PlusWithCircle';
@@ -29,6 +31,7 @@ import { Printer } from './components/Printer';
 import { Minus } from './components/Minus';
 import { Questionmark } from './components/Questionmark';
 import { Search } from './components/Search';
+import { SharevilleLogo } from './components/SharevilleLogo';
 import { SolidCircle } from './components/Circle';
 import { Star } from './components/Star';
 import { Star24 } from './components/Star24';
@@ -63,6 +66,8 @@ export default {
   Globe,
   Import,
   InfoCircle,
+  Maximize,
+  Minimize,
   Pen,
   Pending,
   Plus,
@@ -71,6 +76,7 @@ export default {
   Minus,
   Questionmark,
   Search,
+  SharevilleLogo,
   SolidCircle,
   Star,
   Star24,

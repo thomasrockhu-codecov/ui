@@ -267,7 +267,7 @@ const RawCssGridItem = styled.div<ItemProps>`
   ${({ place }) => (place ? `place-self: ${place};` : '')}
 `;
 
-const CssGridItem: React.FC<ItemProps> = ({ align, area, children, justify, place }) => (
+export const CssGridItem: React.FC<ItemProps> = ({ align, area, children, justify, place }) => (
   <RawCssGridItem {...{ align, area, children, justify, place }} />
 );
 CssGridItem.displayName = 'CssGrid.Item';
@@ -355,7 +355,7 @@ const RawCSSGridContainer: React.FC<Props & { theme: Theme }> = ({ theme, childr
 
   return <StyledDiv {...props}>{renderedChildren}</StyledDiv>;
 };
-const CssGridContainer = withTheme(RawCSSGridContainer);
+export const CssGridContainer = withTheme(RawCSSGridContainer);
 CssGridContainer.displayName = 'CssGrid.Container';
 
 export const CssGrid = { Container: CssGridContainer, Item: CssGridItem };

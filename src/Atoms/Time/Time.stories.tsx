@@ -1,14 +1,33 @@
-import { storiesOf } from '@storybook/react';
 import React from 'react';
 import { Time } from '../..';
 
-storiesOf('Atoms | Time', module)
-  .add('Time ', () => {
-    return <Time value={1554824654} />;
-  })
-  .add('Invalid value', () => {
-    return <Time value={null} />;
-  })
-  .add('Uses custom symbol for invalid value', () => {
-    return <Time value={null} invalidValue="X" />;
-  });
+export default {
+  title: 'Atoms | Time',
+  parameters: {
+    component: Time,
+  },
+};
+
+export const time = () => {
+  return <Time value={1554824654} />;
+};
+
+time.story = {
+  name: 'Time ',
+};
+
+export const invalidValueStory = () => {
+  return <Time value={null} />;
+};
+
+invalidValueStory.story = {
+  name: 'Invalid value',
+};
+
+export const usesCustomSymbolForInvalidValue = () => {
+  return <Time value={null} invalidValue="X" />;
+};
+
+usesCustomSymbolForInvalidValue.story = {
+  name: 'Uses custom symbol for invalid value',
+};

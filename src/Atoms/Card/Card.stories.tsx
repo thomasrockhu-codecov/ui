@@ -1,5 +1,4 @@
 import React from 'react';
-import { storiesOf } from '@storybook/react';
 import styled from 'styled-components';
 import { Props } from './Card.types';
 
@@ -15,31 +14,43 @@ const StyledContent = styled.div`
 
 const Content: React.FC<Props> = ({ children }) => <StyledContent>{children}</StyledContent>;
 
-storiesOf('Atoms | Card', module)
-  .add('Basic Card', () => (
-    <Card>
-      <Content>A Card as a div containing content</Content>
-    </Card>
-  ))
-  .add('Card rendered with different html tags', () => (
-    <Display
-      items={[
-        {
-          title: 'Section',
-          component: (
-            <Card as="section">
-              <Content>A Card as a section containing content</Content>
-            </Card>
-          ),
-        },
-        {
-          title: 'Article',
-          component: (
-            <Card as="article">
-              <Content>A Card as a article containing content</Content>
-            </Card>
-          ),
-        },
-      ]}
-    />
-  ));
+export default {
+  title: 'Atoms | Card',
+
+  parameters: {
+    component: Card,
+  },
+};
+
+export const basicCard = () => (
+  <Card>
+    <Content>A Card as a div containing content</Content>
+  </Card>
+);
+
+export const cardRenderedWithDifferentHtmlTags = () => (
+  <Display
+    items={[
+      {
+        title: 'Section',
+        component: (
+          <Card as="section">
+            <Content>A Card as a section containing content</Content>
+          </Card>
+        ),
+      },
+      {
+        title: 'Article',
+        component: (
+          <Card as="article">
+            <Content>A Card as a article containing content</Content>
+          </Card>
+        ),
+      },
+    ]}
+  />
+);
+
+cardRenderedWithDifferentHtmlTags.story = {
+  name: 'Card rendered with different html tags',
+};

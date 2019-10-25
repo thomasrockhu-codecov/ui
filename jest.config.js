@@ -5,6 +5,10 @@ module.exports = {
   testEnvironment: 'jest-environment-jsdom-fourteen',
   moduleFileExtensions: ['js', 'ts', 'tsx', 'json', 'md'],
   moduleNameMapper: {
-    '\\.(md)$': '<rootDir>/src/mdMock.ts',
+    '\\.(mdx?)$': '<rootDir>/src/mdMock.ts',
+  },
+  transform: {
+    '^.+\\.stories\\.tsx?$': '@storybook/addon-storyshots/injectFileName',
+    '^.+\\.tsx?$': 'babel-jest',
   },
 };
