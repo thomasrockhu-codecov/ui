@@ -1,3 +1,10 @@
+## [1.63.1](https://github.com/nordnet/ui/compare/v1.63.0...v1.63.1) (2019-10-25)
+
+
+### Bug Fixes
+
+* 🐛 FeedbackBanner text no longer overflows in IE ([4a3f7d1](https://github.com/nordnet/ui/commit/4a3f7d1))
+
 # [1.63.0](https://github.com/nordnet/ui/compare/v1.62.1...v1.63.0) (2019-10-23)
 
 
