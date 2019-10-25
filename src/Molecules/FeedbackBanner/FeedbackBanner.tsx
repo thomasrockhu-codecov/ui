@@ -46,20 +46,24 @@ const StyledContainer = styled.div<FeedbackBannerProps>`
   box-sizing: border-box;
 `;
 
+const TextFlexbox = styled(Flexbox)`
+  width: 100%;
+`;
+
 export const FeedbackBanner: FeedbackBannerComponent = props => {
   const { variant, title, children, className } = props;
   return (
     <StyledContainer className={className} variant={variant}>
       <Flexbox container direction="row" alignItems="center" gutter={3}>
         <span>{getIcon(variant)}</span>
-        <Flexbox container item direction="column">
+        <TextFlexbox container item direction="column">
           {title && (
             <Typography type="secondary" weight="bold">
               {title}
             </Typography>
           )}
           <Typography type="secondary">{children}</Typography>
-        </Flexbox>
+        </TextFlexbox>
       </Flexbox>
     </StyledContainer>
   );
