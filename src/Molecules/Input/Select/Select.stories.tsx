@@ -2,18 +2,263 @@ import React from 'react';
 import R from 'ramda';
 
 import { action } from '@storybook/addon-actions';
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 import { Input, Avatar, Flexbox, Number, Typography, Box, Link, Icon, Button } from '../../..';
 import { Display } from '../../../common/Display';
 import { SelectState, Action } from './Select.types';
 import mdx from './Select.mdx';
+import { SelectMachine } from './machine';
+import { useMachine } from '@xstate/react';
 
-const loggingReducer = (state: SelectState, incomingAction: Action) => {
-  action(incomingAction.type)(incomingAction.payload);
-  return Input.Select.defaults.reducer(state, incomingAction);
-};
+import { Option, OptionList } from './SingleSelectList/SingleSelectList';
+import FormField from '../../../Molecules/FormField';
+import NormalizedElements from '../../../common/NormalizedElements';
 
-const actionTypes = Input.Select.defaults.actionTypes;
+// const Chevron = styled(Icon.ChevronDown)<{ open: boolean }>`
+//   transform: translateY(-50%) ${p => (p.open ? 'rotate(180deg)' : 'rotate(0)')};
+//   transform-origin: center center;
+//   transition: transform 0.16s ease-out;
+//   position: absolute;
+//   height: ${p => p.theme.spacing.unit(2)}px;
+//   top: 50%;
+//   right: ${p => p.theme.spacing.unit(1)}px;
+//   pointer-events: none;
+// `;
+
+// const StyledRelativeDiv = styled.div<any>`
+//   position: relative;
+//   display: inline-block;
+//   width: ${p => (p.fullWidth ? '100%' : 'initial')};
+// `;
+
+// const height = css<Pick<Props, 'size'>>`
+//   height: ${p => (p.size === 's' ? p.theme.spacing.unit(8) : p.theme.spacing.unit(10))}px;
+// `;
+
+// const hoverBorderStyles = css<Pick<Props, 'disabled'>>`
+//   ${p =>
+//     p.disabled
+//       ? ''
+//       : `
+//       &:hover {
+//         border-color: ${p.theme.color.inputBorderHover};
+//       }
+// `}
+// `;
+
+// const focusBorderStyles = css`
+//   &:focus-within {
+//     border-color: ${p => p.theme.color.borderActive};
+//   }
+//   &.focus-within {
+//     border-color: ${p => p.theme.color.borderActive};
+//   }
+// `;
+// const hasError = (error?: Props['error']) => error && error !== '';
+// const borderStyles = css<Pick<Props, 'error' | 'success'>>`
+//   outline: none;
+//   border: 1px solid
+//     ${p => {
+//       if (hasError(p.error)) return p.theme.color.inputBorderError;
+//       if (p.success) return p.theme.color.inputBorderSuccess;
+//       return p.theme.color.inputBorder;
+//     }};
+//   position: relative;
+//   ${hoverBorderStyles}
+//   ${focusBorderStyles}
+// `;
+
+// const SelectWrapper = styled(NormalizedElements.Button).attrs({ type: 'button' })`
+//   ${height}
+//   ${borderStyles}
+//   position:relative;
+// `;
+
+// const TheSelect = ({ options }) => {
+//   const [current, send] = useMachine(
+//     SelectMachine.withContext({
+//       error: false,
+//       success: false,
+//       options: options,
+//       selectedItems: [],
+//       disabled: false,
+//       open: false,
+//       itemFocusIdx: null,
+//     }),
+//   );
+
+//   React.useEffect(() => {
+//     send({ type: 'SYNC', payload: { options } });
+//   }, [options, send]);
+
+//   const handleClick = option => () => {
+//     const isSelected = current.context.selectedItems.includes(option);
+//     const type = isSelected ? 'DESELECT_ITEM' : 'SELECT_ITEM';
+//     console.log({ isSelected, type, option });
+//     send({ type, payload: option });
+//   };
+//   const handleKeyDown = e => {
+//     console.log(e.key);
+//     if (e.key === 'ArrowDown') {
+//       send({ type: 'FOCUS_NEXT_ITEM' });
+//       e.preventDefault();
+//       return false;
+//     }
+//     if (e.key === 'ArrowUp') {
+//       send({ type: 'FOCUS_PREV_ITEM' });
+//       e.preventDefault();
+//       return false;
+//     }
+//     if (e.key === 'Tab') {
+//       e.preventDefault();
+//       send({ type: 'BLUR' });
+//       return false;
+//     }
+//     if (e.key === ' ') {
+//       send({ type: 'SELECT_FOCUSED_ITEM' });
+//       e.preventDefault();
+//       return false;
+//     }
+//     if (e.key === 'Enter') {
+//       send({ type: 'SELECT_FOCUSED_ITEM' });
+//       e.preventDefault();
+//       return false;
+//     }
+//   };
+//   const isOpen = current.matches({ open: 'on' });
+
+//   const isFirstRender = React.useRef(true);
+//   const buttonRef = React.useRef(null);
+//   const itemRefs = React.useMemo(() => [], []);
+
+//   React.useLayoutEffect(() => {
+//     if (isOpen) {
+//       send({ type: 'FOCUS' });
+//     } else if (!isFirstRender.current) {
+//       buttonRef.current.focus();
+//     }
+//   }, [isOpen, send]);
+
+//   const setItemRef = index => ref => {
+//     if (ref) itemRefs[index] = ref;
+//   };
+
+//   React.useEffect(() => {
+//     if (current.matches('interaction.enabled.active.focus.listItem.anyItemFocused')) {
+//       itemRefs[current.context.itemFocusIdx].focus();
+//     }
+//   }, [current]);
+
+//   React.useEffect(() => {
+//     isFirstRender.current = false;
+//   }, []);
+
+//   const label =
+//     current.context.selectedItems.length > 0
+//       ? current.context.selectedItems[0].label
+//       : 'Nothing yet';
+//   return (
+//     <div>
+//       <FormField width="100%" label="Hit me">
+//         <SelectWrapper ref={buttonRef} onClick={() => send({ type: 'TOGGLE' })}>
+//           {label}
+//           <Chevron open={isOpen} />
+//         </SelectWrapper>
+//       </FormField>
+//       {isOpen && (
+//         <OptionList
+//           onFocus={() => send({ type: 'FOCUS' })}
+//           onBlur={() => send({ type: 'BLUR' })}
+//           onKeyDown={handleKeyDown}
+//         >
+//           {current.context.options.map((option, idx) => {
+//             const focused = idx === current.context.itemFocusIdx;
+//             return (
+//               <Option
+//                 label={option.label}
+//                 value={option.value}
+//                 focused={focused}
+//                 key={option.value}
+//                 ref={setItemRef(idx)}
+//                 selected={current.context.selectedItems.includes(option)}
+//                 onClick={handleClick(option)}
+//               />
+//             );
+//           })}
+//         </OptionList>
+//       )}
+//     </div>
+//   );
+// };
+
+// const machineStory = () => {
+//   const [options, setOptions] = React.useState(() => [
+//     { value: 1, label: '1' },
+//     { value: 2, label: '2' },
+//     { value: 3, label: '3' },
+//   ]);
+//   return (
+//     <>
+//       <button onClick={() => setOptions(options.slice(0, -1))}>Remove one</button>
+//       <pre>{JSON.stringify(options)}</pre>
+//       <TheSelect options={options} />
+//       <TheSelect options={options} />
+//     </>
+//   );
+// };
+export const defaultStory = () => (
+  <Input.Select
+    id="input-1"
+    options={[{ value: 1, label: '1' }, { value: 2, label: '2' }, { value: 3, label: '3' }]}
+    label="Label"
+    placeholder="Placeholder"
+  />
+);
+
+export const overflowStory = () => (
+  <Input.Select
+    id="input-1"
+    options={new Array(100).fill(null).map((_, i) => ({
+      value: i,
+      label: `${i}${i}${i}${i}${i}${i}${i}${i}${i}${i}${i}${i}${i}${i}${i}${i}${i}${i}${i}${i}`,
+    }))}
+    label="LabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabel"
+    placeholder="PlaceholderPlaceholderPlaceholderPlaceholderPlaceholderPlaceholderPlaceholderPlaceholderPlaceholderPlaceholderPlaceholderPlaceholderPlaceholder"
+  />
+);
+export const searchStory = () => (
+  <Input.Select
+    id="input-1"
+    options={[
+      { value: 1, label: 'Abba' },
+      { value: 2, label: 'Btoiwent' },
+      { value: 3, label: 'Crtetyrh' },
+      { value: 4, label: 'Dositenyoe' },
+      { value: 5, label: 'Dasitenyoe' },
+      { value: 6, label: 'Xfoteibnyo' },
+      { value: 7, label: '3125236' },
+    ]}
+    label="Label"
+    placeholder="Placeholder"
+  />
+);
+export const two = () => (
+  <>
+    <Input.Select
+      id="input-1"
+      options={[{ value: 1, label: '1' }, { value: 2, label: '2' }, { value: 3, label: '3' }]}
+      label="Label"
+      placeholder="Placeholder"
+    />
+    <Input.Select
+      id="input-2"
+      options={[{ value: 1, label: '1' }, { value: 2, label: '2' }, { value: 3, label: '3' }]}
+      label="Label"
+      placeholder="Placeholder"
+    />
+  </>
+);
+
 const useSelectReducer = Input.Select.useSelectReducer;
 const accountOptions = [
   {
@@ -38,6 +283,140 @@ const accountOptions = [
     amount: { value: 1, currency: 'DKK' },
   },
 ];
+
+export const onChangeStory = () => {
+  const [value, setValue] = React.useState(() => [accountOptions[1]]);
+  return (
+    <Input.Select
+      id="onchange-select"
+      options={accountOptions}
+      value={value}
+      onChange={setValue}
+      label="User account"
+      placeholder="Select account"
+    />
+  );
+};
+export const defaultVariations = () => {
+  return (
+    <Display
+      items={[
+        {
+          title: 'Disabled',
+          component: (
+            <Input.Select
+              id="disabled-select"
+              options={accountOptions}
+              label="User account"
+              disabled
+              placeholder="Select account"
+            />
+          ),
+        },
+        {
+          title: 'Error',
+          component: (
+            <Input.Select
+              options={accountOptions}
+              id="error-select"
+              label="User account"
+              error="Some error"
+              placeholder="Select account"
+            />
+          ),
+        },
+        {
+          title: 'Info',
+          component: (
+            <Input.Select
+              options={accountOptions}
+              id="info-select"
+              label="User account"
+              extraInfo="Some extra info"
+              placeholder="Select account"
+            />
+          ),
+        },
+        {
+          title: 'Success',
+          component: (
+            <Input.Select
+              id="success-select"
+              options={accountOptions}
+              label="User account"
+              success
+              placeholder="Select account"
+            />
+          ),
+        },
+      ]}
+    />
+  );
+};
+
+defaultVariations.story = {
+  name: 'Default variations',
+};
+export const sizeS = () => {
+  return (
+    <Display
+      items={[
+        {
+          title: 'Disabled',
+          component: (
+            <Input.Select
+              size="s"
+              id="disabled-select"
+              options={accountOptions}
+              label="User account"
+              disabled
+              placeholder="Select account"
+            />
+          ),
+        },
+        {
+          title: 'Error',
+          component: (
+            <Input.Select
+              size="s"
+              id="error-select"
+              options={accountOptions}
+              label="User account"
+              error="Some error"
+              placeholder="Select account"
+            />
+          ),
+        },
+        {
+          title: 'Info',
+          component: (
+            <Input.Select
+              size="s"
+              id="info-select"
+              options={accountOptions}
+              label="User account"
+              extraInfo="Some extra info"
+              placeholder="Select account"
+            />
+          ),
+        },
+        {
+          title: 'Success',
+          component: (
+            <Input.Select
+              size="s"
+              id="success-select"
+              options={accountOptions}
+              label="User account"
+              success
+              placeholder="Select account"
+            />
+          ),
+        },
+      ]}
+    />
+  );
+};
 
 const StyledBox: React.FC<any> = styled(Box)`
   cursor: pointer;
@@ -128,613 +507,4 @@ export default {
       page: mdx,
     },
   },
-};
-
-export const defaultStory = () => {
-  return (
-    <Input.Select options={accountOptions} label="User account" placeholder="Select account" />
-  );
-};
-
-defaultStory.story = {
-  name: 'Default',
-};
-
-export const two = () => {
-  return (
-    <>
-      <Input.Select options={accountOptions} label="User account" placeholder="Select account" />
-      <Input.Select options={accountOptions} label="User account" placeholder="Select account" />
-    </>
-  );
-};
-
-export const fullWidthStory = () => {
-  return (
-    <Input.Select
-      reducer={loggingReducer}
-      options={accountOptions}
-      label="User account"
-      placeholder="Select account"
-      onChange={action('change')}
-      onBlur={action('blur')}
-      onFocus={action('focus')}
-      fullWidth
-    />
-  );
-};
-
-fullWidthStory.story = {
-  name: 'Full width',
-};
-
-// eslint-disable-next-line no-underscore-dangle
-export const _300PxWidth = () => {
-  return (
-    <Input.Select
-      reducer={loggingReducer}
-      options={accountOptions}
-      label="User account"
-      placeholder="Select account"
-      onChange={action('change')}
-      onBlur={action('blur')}
-      onFocus={action('focus')}
-      width="300px"
-    />
-  );
-};
-
-_300PxWidth.story = {
-  name: '300px width',
-};
-
-export const accessibleFromDocumentForms = () => {
-  const Inner = () => {
-    const FORM_NAME = 'testForm';
-    const SELECT_NAME = 'mySelect';
-
-    // @ts-ignore
-    const [_, forceUpdate] = React.useState([]); // eslint-disable-line @typescript-eslint/no-unused-vars
-
-    return (
-      <form name={FORM_NAME}>
-        <Input.Select
-          reducer={loggingReducer}
-          options={accountOptions}
-          name={SELECT_NAME}
-          label="User account"
-          placeholder="Select account"
-          // Every time the value updates
-          // The story gonna rerender
-          // So we have fresh stuff from document.forms
-          // @ts-ignore
-          onChange={forceUpdate}
-        />
-        <br />
-        Value in form: &quot;
-        {R.path(['forms', FORM_NAME, 'elements', SELECT_NAME, 'value'])(document)}&quot;
-      </form>
-    );
-  };
-  return <Inner />;
-};
-
-accessibleFromDocumentForms.story = {
-  name: 'Accessible from document.forms',
-};
-
-export const controlled = () => {
-  const Component = () => {
-    const localOptions = React.useMemo(
-      () => [{ value: 1, label: '1' }, { value: 2, label: '2' }, { value: 3, label: '3' }],
-      [],
-    );
-    const [selectedValue, setSelectedValue] = React.useState<Array<any>>([]);
-
-    // Going to allow
-    // only selection of
-    // { value: 2, label: 2 } option
-    const handleChange = (newValue: any[]) => {
-      if (newValue.includes(localOptions[1])) {
-        setSelectedValue(newValue);
-      }
-    };
-
-    return (
-      <>
-        <Input.Select
-          reducer={loggingReducer}
-          options={localOptions}
-          value={selectedValue}
-          label="Can select only #2"
-          placeholder="Select me"
-          onChange={handleChange}
-        />
-        <Button onClick={() => setSelectedValue([localOptions[0]])}>Select 1st</Button>
-      </>
-    );
-  };
-  return <Component />;
-};
-
-export const defaultVariations = () => {
-  return (
-    <Display
-      items={[
-        {
-          title: 'Disabled',
-          component: (
-            <Input.Select
-              options={accountOptions}
-              label="User account"
-              disabled
-              placeholder="Select account"
-            />
-          ),
-        },
-        {
-          title: 'Error',
-          component: (
-            <Input.Select
-              options={accountOptions}
-              label="User account"
-              error="Some error"
-              placeholder="Select account"
-            />
-          ),
-        },
-        {
-          title: 'Info',
-          component: (
-            <Input.Select
-              options={accountOptions}
-              label="User account"
-              extraInfo="Some extra info"
-              placeholder="Select account"
-            />
-          ),
-        },
-        {
-          title: 'Success',
-          component: (
-            <Input.Select
-              options={accountOptions}
-              label="User account"
-              success
-              placeholder="Select account"
-            />
-          ),
-        },
-      ]}
-    />
-  );
-};
-
-defaultVariations.story = {
-  name: 'Default variations',
-};
-
-export const sizeSVariations = () => {
-  return (
-    <Display
-      items={[
-        {
-          title: 'Disabled',
-          component: (
-            <Input.Select
-              options={accountOptions}
-              label="User account"
-              size="s"
-              disabled
-              placeholder="Select account"
-            />
-          ),
-        },
-        {
-          title: 'Error',
-          component: (
-            <Input.Select
-              options={accountOptions}
-              size="s"
-              label="User account"
-              error="Some error"
-              placeholder="Select account"
-            />
-          ),
-        },
-        {
-          title: 'Info',
-          component: (
-            <Input.Select
-              options={accountOptions}
-              label="User account"
-              size="s"
-              extraInfo="Some extra info"
-              placeholder="Select account"
-            />
-          ),
-        },
-        {
-          title: 'Success',
-          component: (
-            <Input.Select
-              options={accountOptions}
-              label="User account"
-              size="s"
-              success
-              placeholder="Select account"
-            />
-          ),
-        },
-      ]}
-    />
-  );
-};
-
-sizeSVariations.story = {
-  name: 'Size = `s` variations',
-};
-
-export const customListItemRenderer = () => {
-  return (
-    <>
-      <Input.Select
-        components={{ ListItem: AccountListItem }}
-        options={accountOptions}
-        label="Open me"
-        placeholder="Select account"
-        onChange={action('change1')}
-      />
-    </>
-  );
-};
-
-customListItemRenderer.story = {
-  name: 'Custom ListItem renderer',
-};
-
-export const customSelectedValueRenderer = () => {
-  return (
-    <Input.Select
-      components={{
-        SelectedValue: AccountValue,
-      }}
-      options={accountOptions}
-      label="Select something"
-      placeholder="Select account"
-      onChange={action('change')}
-    />
-  );
-};
-
-customSelectedValueRenderer.story = {
-  name: 'Custom SelectedValue renderer',
-};
-
-export const customSelectedValueAndListItemRenderer = () => {
-  return (
-    <Input.Select
-      components={{
-        SelectedValue: AccountValue,
-        ListItem: AccountListItem,
-      }}
-      options={accountOptions}
-      label="User account"
-      onChange={action('value changed')}
-      placeholder="Select account"
-    />
-  );
-};
-
-customSelectedValueAndListItemRenderer.story = {
-  name: 'Custom SelectedValue and ListItem renderer',
-};
-
-export const linkWithDropdownAndSearchBox = () => {
-  type SearchContextType = [string, (x: string) => void];
-  const SearchContext = React.createContext<SearchContextType>(['', (_: string) => {}]);
-  const Component = () => {
-    const [filterQuery, setFilterQuery] = React.useState('');
-
-    const customComponents = React.useMemo(
-      () => ({
-        List: ({ children }: any) => {
-          const [filterQueryInner, setFilterQueryInner] = React.useContext(SearchContext);
-          const handleChange = React.useCallback(e => setFilterQueryInner(e.target.value), [
-            setFilterQueryInner,
-          ]);
-          React.useEffect(() => () => setFilterQueryInner(''), []);
-          return (
-            <Input.Select.defaults.components.List position="left">
-              <Box px={2} mb={2}>
-                <Input.Text
-                  leftAddon={<Icon.Search />}
-                  label="Filter"
-                  autoFocus
-                  key={2}
-                  value={filterQueryInner}
-                  onChange={handleChange}
-                />
-              </Box>
-              {children}
-            </Input.Select.defaults.components.List>
-          );
-        },
-
-        SelectedValue: (_: any, ref: React.Ref<any>) => {
-          const [state] = useSelectReducer();
-
-          return (
-            <Link ref={ref} as="div">
-              <Flexbox container alignItems="center" gutter={2}>
-                <Icon.AddWithCircle inline color={t => t.color.cta} />
-                {state.placeholder}
-              </Flexbox>
-            </Link>
-          );
-        },
-      }),
-      [],
-    );
-
-    const hugeOptionsList = React.useMemo(
-      () =>
-        accountOptions
-          .concat(
-            accountOptions.map(x => ({
-              ...x,
-              value: x.value + Math.random(),
-              label: x.label + Math.random(),
-            })),
-          )
-          .concat(
-            accountOptions.map(x => ({
-              ...x,
-              value: x.value + Math.random(),
-              label: x.label + Math.random(),
-            })),
-          )
-          .concat(
-            accountOptions.map(x => ({
-              ...x,
-              value: x.value + Math.random(),
-              label: x.label + Math.random(),
-            })),
-          ),
-      [accountOptions],
-    );
-
-    const filteredOptions = hugeOptionsList.filter(x =>
-      x.label.toLowerCase().includes(filterQuery.toLowerCase()),
-    );
-
-    return (
-      <SearchContext.Provider value={[filterQuery, setFilterQuery]}>
-        <Input.Select
-          options={filteredOptions}
-          label="User account"
-          autoFocusFirstOption={false}
-          placeholder="Select account"
-          noFormField
-          components={customComponents}
-          onChange={action('change')}
-        />
-      </SearchContext.Provider>
-    );
-  };
-  return <Component />;
-};
-
-linkWithDropdownAndSearchBox.story = {
-  name: 'Link with dropdown and search box',
-};
-
-export const multiselect = () => {
-  const multiselectReducer = (state: SelectState, incomingAction: Action) => {
-    if (incomingAction.type === actionTypes['Select.SelectValue']) {
-      return {
-        ...state,
-        value: [...state.value, incomingAction.payload],
-      };
-    }
-    if (incomingAction.type === 'Select.DeselectValue') {
-      return {
-        ...state,
-        value: state.value.filter(x => !Object.is(x, incomingAction.payload)),
-      };
-    }
-    return Input.Select.defaults.reducer(state, incomingAction);
-  };
-
-  const MultiSelectValue = (_: any, ref: React.Ref<any>) => {
-    const [state] = useSelectReducer();
-    return (
-      <FlexedBox px={2} pr={8} ref={ref}>
-        {state.value.length === 0 ? state.placeholder : `Selected (${state.value.length})`}
-      </FlexedBox>
-    );
-  };
-
-  return (
-    <Input.Select
-      reducer={multiselectReducer}
-      options={accountOptions}
-      components={{
-        SelectedValue: MultiSelectValue,
-        ListItem: Input.Select.defaults.components.MultiSelectListItem,
-      }}
-      label="User account"
-      width="300px"
-      placeholder="Select account"
-      onChange={action('change')}
-    />
-  );
-};
-
-export const multiselectAccount = () => {
-  const multiselectReducer = (state: SelectState, incomingAction: Action) => {
-    if (incomingAction.type === actionTypes['Select.SelectValue']) {
-      return {
-        ...state,
-        value: [...state.value, incomingAction.payload],
-      };
-    }
-    if (incomingAction.type === 'Select.DeselectValue') {
-      return {
-        ...state,
-        value: state.value.filter(x => !Object.is(x, incomingAction.payload)),
-      };
-    }
-    return Input.Select.defaults.reducer(state, incomingAction);
-  };
-
-  const MultiSelectValue = (_: any, ref: React.Ref<any>) => {
-    const [state] = useSelectReducer();
-    return (
-      <FlexedBox px={2} pr={8} ref={ref}>
-        {state.value.length === 0 ? state.placeholder : `Selected (${state.value.length})`}
-      </FlexedBox>
-    );
-  };
-
-  const MultiSelectListItem = ({ index }: any, ref: any) => {
-    const [state] = useSelectReducer();
-    const option = state.options[index];
-    const selected = state.value.includes(option);
-
-    return (
-      <StyledBox px={3} py={1} ref={ref} tabIndex={0}>
-        <Flexbox container alignItems="center" gutter={0} height={9}>
-          <Flexbox item container alignItems="center">
-            {/** TODO: revisit a11y here */}
-            <Input.Checkbox name="example" label="" checked={selected} />
-          </Flexbox>
-          <Flexbox item container direction="column" grow={1} gutter={0}>
-            <Flexbox item>
-              <Typography type="secondary" color={t => t.color.text} weight="bold">
-                {option.label}
-              </Typography>
-              <Typography type="tertiary" color={t => t.color.text}>
-                {' '}
-                <span aria-hidden>&#183;</span> {option.accno}
-              </Typography>
-            </Flexbox>
-            <Typography type="caption" color={t => t.color.text}>
-              <Number value={option.amount.value} currency={option.amount.currency} />
-            </Typography>
-          </Flexbox>
-        </Flexbox>
-      </StyledBox>
-    );
-  };
-
-  return (
-    <Input.Select
-      reducer={multiselectReducer}
-      options={accountOptions}
-      components={{ SelectedValue: MultiSelectValue, ListItem: MultiSelectListItem }}
-      label="User account"
-      width="300px"
-      placeholder="Select account"
-      onChange={action('change')}
-    />
-  );
-};
-
-multiselectAccount.story = {
-  name: 'Multiselect account',
-};
-
-export const multiselectAccountWithSelectAll = () => {
-  // Reducer will handle selection/deselection part + select all
-  const multiselectReducer = (state: SelectState, incomingAction: Action) => {
-    if (incomingAction.type === actionTypes['Select.SelectValue']) {
-      if (incomingAction.payload && incomingAction.payload.selectAll) {
-        return { ...state, value: state.options };
-      }
-      return {
-        ...state,
-        value: [...state.value, incomingAction.payload],
-      };
-    }
-    if (incomingAction.type === 'Select.DeselectValue') {
-      if (incomingAction.payload && incomingAction.payload.selectAll) {
-        return { ...state, value: [] };
-      }
-      return {
-        ...state,
-        value: state.value.filter(x => !Object.is(x, incomingAction.payload) && !x.selectAll),
-      };
-    }
-    return Input.Select.defaults.reducer(state, incomingAction);
-  };
-
-  // SelectedValue
-  // Would be different for different use-cases
-  const MultiSelectValue = (_: any, ref: React.Ref<any>) => {
-    const [state] = useSelectReducer();
-    return (
-      <FlexedBox px={2} pr={8} ref={ref}>
-        {state.value.length === 0 ? state.placeholder : `Selected (${state.value.length})`}
-      </FlexedBox>
-    );
-  };
-
-  // prettier-ignore
-  const StyledBoxWithBorder = styled(StyledBox)`
-    ${p => !p.selectAll ? "" : `
-      border-bottom: 1px solid ${p.theme.color.divider};
-      `}
-    `;
-
-  const MultiSelectListItem = ({ index }: any, ref: any) => {
-    const [state] = useSelectReducer();
-    const option = state.options[index];
-    const selected = state.value.includes(option);
-
-    return (
-      <StyledBoxWithBorder px={3} py={1} ref={ref} tabIndex={0} selectAll={option.selectAll}>
-        <Flexbox container alignItems="center" gutter={0} height={9}>
-          <Flexbox item container alignItems="center">
-            {/** TODO: revisit a11y here */}
-            <Input.Checkbox name="example" label="" checked={selected} />
-          </Flexbox>
-          <Flexbox item container direction="column" grow={1} gutter={0}>
-            <Flexbox item>
-              <Typography type="secondary" color={t => t.color.text} weight="bold">
-                {option.label}
-              </Typography>
-              {!option.selectAll && (
-                <Typography type="tertiary" color={t => t.color.text}>
-                  {' '}
-                  <span aria-hidden>&#183;</span> {option.accno}
-                </Typography>
-              )}
-            </Flexbox>
-            {!option.selectAll && (
-              <Typography type="caption" color={t => t.color.text}>
-                <Number value={option.amount.value} currency={option.amount.currency} />
-              </Typography>
-            )}
-          </Flexbox>
-        </Flexbox>
-      </StyledBoxWithBorder>
-    );
-  };
-
-  return (
-    <Input.Select
-      reducer={multiselectReducer}
-      options={[{ label: 'Select All', value: 'ALL', selectAll: true }, ...accountOptions]}
-      components={{ SelectedValue: MultiSelectValue, ListItem: MultiSelectListItem }}
-      label="User account"
-      width="300px"
-      placeholder="Select account"
-      onChange={action('change')}
-    />
-  );
-};
-
-multiselectAccountWithSelectAll.story = {
-  name: 'Multiselect account with select all',
 };

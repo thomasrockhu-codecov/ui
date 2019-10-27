@@ -1,22 +1,18 @@
 import React from 'react';
+import { useMachine } from '@xstate/react';
 import styled, { css } from 'styled-components';
 import { Icon, Flexbox, FormField } from '../../..';
 
-import { usePrevious, useOnClickOutside } from '../../../common/Hooks';
-import { useKeyboardNavigation } from './useKeyboardNavigation';
+import { useOnClickOutside } from '../../../common/Hooks';
 
-import { noop, createCounter } from './utils';
+import { noop } from './utils';
 
 import { ListItemWrapper, ListWrapper, SelectedValueWrapper } from './wrappers';
 import { useSelectReducer, SelectStateContext } from './context';
-import {
-  useComponentsWithDefaults,
-  defaultComponents,
-  defaultActionTypes,
-  defaultSelectReducer,
-  defaultSelectInitialState,
-} from './defaults';
-import { Props, Option } from './Select.types';
+import { useComponentsWithDefaults, defaultComponents, defaultActionTypes } from './defaults';
+import { SelectMachine } from './machine';
+import { searchMachine } from './searchMachine';
+import { Props } from './Select.types';
 
 const Chevron = styled(Icon.ChevronDown)<{ open: boolean }>`
   transform: translateY(-50%) ${p => (p.open ? 'rotate(180deg)' : 'rotate(0)')};
@@ -78,7 +74,7 @@ const SelectWrapper = styled.div`
   position:relative;
 `;
 const FormFieldOrFragment = React.forwardRef<HTMLDivElement, any>(
-  ({ children, noFormField, open, onFocus, onBlur, fullWidth, ...props }, ref) => (
+  ({ children, noFormField, open, onFocus, onBlur, fullWidth, id, size, ...props }, ref) => (
     <StyledRelativeDiv {...(noFormField ? { ref } : {})} fullWidth={fullWidth}>
       <Flexbox
         {...(noFormField ? { onBlur, onFocus } : {})}
@@ -89,8 +85,14 @@ const FormFieldOrFragment = React.forwardRef<HTMLDivElement, any>(
         {noFormField ? (
           children
         ) : (
-          <FormField {...props} {...(fullWidth ? { width: '100%' } : {})} ref={ref}>
-            <SelectWrapper onBlur={onBlur} onFocus={onFocus} {...props}>
+          <FormField
+            id={`label-for-${id}`}
+            fieldId={id}
+            {...props}
+            {...(fullWidth ? { width: '100%' } : {})}
+            ref={ref}
+          >
+            <SelectWrapper onBlur={onBlur} onFocus={onFocus} size={size} {...props}>
               {children}
               <Chevron open={open} />
             </SelectWrapper>
@@ -102,9 +104,9 @@ const FormFieldOrFragment = React.forwardRef<HTMLDivElement, any>(
 );
 FormFieldOrFragment.displayName = 'FormFieldOrFragment';
 
-const HiddenSelect = styled.select`
-  display: none;
-`;
+// const HiddenSelect = styled.select`
+//   display: none;
+// `;
 
 const Select = (props: Props) => {
   const {
@@ -112,141 +114,156 @@ const Select = (props: Props) => {
     value: valueFromProps,
     onChange: onChangeFromProps,
     onFocus,
+    label,
     onBlur,
+    size,
     options,
     components,
     noFormField,
-    reducer = defaultSelectReducer,
-    initialState = defaultSelectInitialState,
+    reducer,
+    initialState,
     disabled,
     autoFocusFirstOption = true,
     fullWidth,
+    id,
   } = props;
 
-  const isControlledMode = typeof valueFromProps !== 'undefined';
-  const [_state, dispatch] = React.useReducer(
-    reducer as typeof defaultSelectReducer,
-    initialState as typeof defaultSelectInitialState,
+  const machineHandlers = useMachine(
+    SelectMachine.withContext({
+      error: props.error,
+      success: props.success,
+      options,
+      selectedItems: [],
+      disabled,
+      open: false,
+      itemFocusIdx: null,
+      placeholder,
+      searchQuery: '',
+      extraInfo: props.extraInfo,
+    }),
   );
-  const previousState = usePrevious(_state);
+  const [current, send] = machineHandlers;
+
+  const [searchMachineState, searchMachineSend] = useMachine(searchMachine);
+
+  React.useEffect(() => {
+    if (searchMachineState.matches('search')) {
+      searchMachineSend({ type: 'SEARCHED' });
+      send({ type: 'SEARCH', payload: searchMachineState.context.searchQuery });
+    }
+  }, [searchMachineState]);
+
+  // React.useEffect(() => {
+  //   send({
+  //     type: 'SYNC',
+  //     payload: {
+  //       options,
+  //       placeholder,
+  //       error: props.error,
+  //       success: props.success,
+  //       disabled: props.disabled,
+  //       extraInfo: props.extraInfo,
+  //     },
+  //   });
+  // }, [options, send, placeholder, props.error, props.success, props.disabled, props.extraInfo]);
+
+  const handleClickListItem = option => () => {
+    const isSelected = current.context.selectedItems.includes(option);
+    const type = isSelected ? 'DESELECT_ITEM' : 'SELECT_ITEM';
+    send({ type, payload: option });
+  };
+
+  let accumulatedArrowActions = React.useRef([]);
+  let currentFrameId = React.useRef(null);
+  let currentTimeoutId = React.useRef(null);
+
+  const sendBatched = actionType => {
+    accumulatedArrowActions.current.push({ type: actionType });
+    if (currentTimeoutId.current) clearTimeout(currentTimeoutId.current);
+    currentTimeoutId.current = setTimeout(() => {
+      currentTimeoutId.current = null;
+      // Sending array of actions enables batching
+      const actions = [...accumulatedArrowActions.current];
+      accumulatedArrowActions.current = [];
+      send(actions);
+    }, 0);
+  };
+  const handleKeyDown = e => {
+    if (e.key === 'ArrowDown') {
+      sendBatched('FOCUS_NEXT_ITEM');
+      e.preventDefault();
+      return false;
+    }
+    if (e.key === 'ArrowUp') {
+      sendBatched('FOCUS_PREV_ITEM');
+      e.preventDefault();
+      return false;
+    }
+    if (e.key === 'Tab') {
+      e.preventDefault();
+      send({ type: 'BLUR' });
+      return false;
+    }
+    if (e.key === ' ') {
+      send({ type: 'SELECT_FOCUSED_ITEM' });
+      e.preventDefault();
+      return false;
+    }
+    if (e.key === 'Enter') {
+      send({ type: 'SELECT_FOCUSED_ITEM' });
+      e.preventDefault();
+      return false;
+    }
+    e.preventDefault();
+    searchMachineSend({ type: 'CHANGE', payload: e.key });
+    return false;
+  };
+  const isOpen = current.matches({ open: 'on' });
+
+  const isFirstRender = React.useRef(true);
+  const buttonRef = React.useRef(null);
+  const itemRefs = React.useMemo(() => [], []);
+  const listRef = React.useRef(null);
+  const formFieldRef = React.useRef(null);
+
+  React.useLayoutEffect(() => {
+    if (isOpen) {
+      send({ type: 'FOCUS' });
+    } else if (!isFirstRender.current) {
+      buttonRef.current.focus();
+    }
+  }, [isOpen]);
+
+  const setItemRef = index => ref => {
+    if (ref) itemRefs[index] = ref;
+  };
+
+  React.useEffect(() => {
+    if (current.matches('interaction.enabled.active.focus.listItem.anyItemFocused')) {
+      itemRefs[current.context.itemFocusIdx].focus();
+    }
+  }, [current]);
+
+  React.useEffect(() => {
+    isFirstRender.current = false;
+  }, []);
+
   const { ListItem, List, SelectedValue } = useComponentsWithDefaults(components);
 
-  const stateValueHasChanged = previousState && !Object.is(previousState.value, _state.value);
-  const valueUpdatedInControlledMode =
-    isControlledMode && stateValueHasChanged && _state.value !== valueFromProps;
-  const valueUpdatedInUncontrolledMode = !isControlledMode && previousState && stateValueHasChanged;
+  useOnClickOutside([listRef, formFieldRef], () => send({ type: 'BLUR' }));
 
-  if (onChangeFromProps && (valueUpdatedInUncontrolledMode || valueUpdatedInControlledMode)) {
-    onChangeFromProps(_state.value);
-  }
-
-  // Adjusting state for possible
-  // changes from props
-  const state = React.useMemo(
-    () =>
-      reducer(_state, {
-        type: defaultActionTypes['Select.SyncState'],
-        payload: {
-          options,
-          placeholder,
-          value: isControlledMode ? valueFromProps : _state.value,
-        },
-      }),
-    [_state, options, placeholder, isControlledMode, valueFromProps, reducer],
-  );
-
-  // And defer the real update
-  React.useEffect(() => {
-    dispatch({
-      type: defaultActionTypes['Select.SyncState'],
-      payload: {
-        options,
-        placeholder,
-        value: isControlledMode ? valueFromProps : _state.value,
-      },
-    });
-  }, [options, placeholder, isControlledMode, valueFromProps, dispatch]);
-
-  const { open, value } = state;
-  const buttonRef = React.useRef<HTMLButtonElement>(null);
-  const customSelectListRef = React.useRef<HTMLDivElement>(null);
-
-  const { setRef, onKeyDown: handleListItemKeyDown, itemsRefs } = useKeyboardNavigation(
-    {
-      itemsLength: options.filter(x => !x.disabled).length,
-      onEscape: () => {
-        dispatch({ type: defaultActionTypes['Select.Close'] });
-        if (buttonRef.current) {
-          buttonRef.current.focus();
-        }
-      },
-    },
-    [options],
-  );
-
-  React.useEffect(() => {
-    if (autoFocusFirstOption) {
-      if (itemsRefs.length > 0 && itemsRefs.every(i => Boolean(i))) {
-        itemsRefs[0].focus();
-      }
-    }
-  }, [open, autoFocusFirstOption, itemsRefs]);
-
-  const inputWrapperRef = React.useRef<HTMLDivElement>(null);
-  useOnClickOutside([customSelectListRef, inputWrapperRef], () =>
-    dispatch({ type: defaultActionTypes['Select.Close'] }),
-  );
-
-  const handleClickListItem = (
-    { selected, option }: { selected: boolean; option: Option },
-    e: React.MouseEvent,
-  ) => {
-    const action = {
-      type: selected
-        ? defaultActionTypes['Select.DeselectValue']
-        : defaultActionTypes['Select.SelectValue'],
-      payload: option,
-    };
-
-    dispatch(action);
-    e.preventDefault();
-  };
-
-  const counter = createCounter();
+  // const counter = createCounter();
   // Not using isFocused in state, hence ref
-  const isFocused = React.useRef(false);
+  // const isFocused = React.useRef(false);
 
-  const handleBlur = (e: React.FocusEvent) => {
-    const target: Node = e.relatedTarget as any;
-
-    if (inputWrapperRef.current && target && !inputWrapperRef.current.contains(target)) {
-      if (onBlur) onBlur(e);
-      isFocused.current = false;
-      dispatch({ type: defaultActionTypes['Select.Close'] });
-    }
-  };
-
-  const handleFocus = (e: React.FocusEvent) => {
-    if (!onFocus) return;
-    if (inputWrapperRef.current && inputWrapperRef.current.contains(document.activeElement)) {
-      if (!isFocused.current) {
-        onFocus(e);
-        isFocused.current = true;
-      }
-    }
-  };
-  const contextValue = React.useMemo(() => [state, dispatch] as [typeof state, typeof dispatch], [
-    state,
-    dispatch,
-  ]);
-
-  if (!state.initialized) {
-    return null;
-  }
-
+  const isDisabled = current.matches('interaction.disabled');
+  const hasError = current.matches('correctness.error');
+  const error = current.context.error;
+  const success = current.context.success;
+  const extraInfo = current.context.extraInfo;
   return (
     <>
-      <HiddenSelect name={props.name} disabled={props.disabled}>
+      {/* <HiddenSelect name={props.name} disabled={props.disabled}>
         {props.placeholder && (
           <option
             label={props.placeholder}
@@ -261,40 +278,47 @@ const Select = (props: Props) => {
             {...(value.includes(x) ? { selected: true } : {})}
           />
         ))}
-      </HiddenSelect>
-      <SelectStateContext.Provider value={contextValue}>
+      </HiddenSelect> */}
+      <SelectStateContext.Provider value={machineHandlers}>
         <FormFieldOrFragment
+          label={label}
           noFormField={noFormField}
-          {...props}
-          ref={inputWrapperRef}
+          ref={formFieldRef}
           disabled={disabled}
-          open={open}
-          onFocus={handleFocus}
-          onBlur={handleBlur}
+          open={isOpen}
           fullWidth={fullWidth}
+          error={error}
+          success={success}
+          extraInfo={extraInfo}
+          id={id}
+          size={size}
         >
           <SelectedValueWrapper
-            state={state}
             ref={buttonRef}
-            open={open}
+            open={isOpen}
+            label={label}
             disabled={disabled}
             noFormField={noFormField}
             placeholder={placeholder}
-            dispatch={dispatch}
             component={SelectedValue}
             options={options}
+            state={current}
+            id={id}
           />
-          {open && (
-            <ListWrapper ref={customSelectListRef} component={List} noFormField={noFormField}>
+          {isOpen && (
+            <ListWrapper
+              component={List}
+              noFormField={noFormField}
+              onKeyDown={handleKeyDown}
+              ref={listRef}
+            >
               {options.map((x: any, index: number) => (
                 <ListItemWrapper
                   key={x.value}
                   index={index}
-                  onKeyDown={handleListItemKeyDown}
-                  ref={x.disabled ? noop : setRef(counter.next().value)}
+                  ref={setItemRef(index)}
                   option={x}
-                  selected={value.includes(x)}
-                  onClick={x.disabled ? noop : handleClickListItem}
+                  onClick={x.disabled ? noop : handleClickListItem(x)}
                   component={ListItem as any}
                 />
               ))}
@@ -306,15 +330,6 @@ const Select = (props: Props) => {
   );
 };
 
-const defaults = {
-  actionTypes: defaultActionTypes,
-  reducer: defaultSelectReducer,
-  initialState: defaultSelectInitialState,
-  components: defaultComponents,
-};
-
 Select.useSelectReducer = useSelectReducer;
-
-Select.defaults = defaults;
 
 export { Select };

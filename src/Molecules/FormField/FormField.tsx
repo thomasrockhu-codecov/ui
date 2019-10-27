@@ -25,6 +25,7 @@ export const FormField: React.FC<Props> = React.forwardRef(
       group,
       hideLabel,
       label,
+      id,
       required = false,
       showRequired = false,
       width,
@@ -52,7 +53,7 @@ export const FormField: React.FC<Props> = React.forwardRef(
       } else if (fieldId || forId) {
         field = (
           <>
-            <FormLabel hideLabel={hideLabel} forId={fieldId || forId}>
+            <FormLabel hideLabel={hideLabel} id={id} forId={fieldId || forId}>
               {labelText}
             </FormLabel>
             {children}

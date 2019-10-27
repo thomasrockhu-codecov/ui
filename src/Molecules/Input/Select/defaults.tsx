@@ -12,22 +12,21 @@ import { useSelectReducer } from './context';
 
 import { SelectState, Action, ActionTypes, OptionBase } from './Select.types';
 
-const getLabelOrPlaceholder = <T extends OptionBase>({
-  value,
-  placeholder,
-}: {
-  options: T[];
-  value: any[];
-  placeholder: React.ReactNode;
-}) => {
-  if (value.length === 0) return placeholder;
+const getLabelOrPlaceholder = <T extends OptionBase>(state: any) => {
+  if (state.context.selectedItems.length === 0) return state.context.placeholder;
 
-  const selectedOptionLabel = R.pathOr('', [0, 'label'], value);
+  const selectedOptionLabel = R.pathOr('', [0, 'label'], state.context.selectedItems);
   return selectedOptionLabel;
 };
 
+const EllipsizingText = styled.span`
+  width: 100%;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+`;
 const StyledFlexedBox = styled(Box)`
-  flex-grow: 1;
+  width: ${p => `calc(100% - ${p.theme.spacing.unit(6)}px)`};
 
   display: flex;
 
@@ -49,8 +48,9 @@ export const defaultActionTypes: Record<ActionTypes, ActionTypes> = {
 export const defaultComponents = {
   ListItem: React.forwardRef<HTMLDivElement, { index: number }>(({ index }, ref) => {
     const [state] = useSelectReducer();
-    const option = state.options[index];
-    const selected = state.value.includes(option);
+    const option = state.context.options[index];
+    const selected = state.context.selectedItems.includes(option);
+    const focused = state.context.itemFocusIdx === index;
 
     return (
       <DefaultListItem
@@ -59,13 +59,14 @@ export const defaultComponents = {
         disabled={option.disabled}
         label={option.label}
         value={option.value}
+        focused={focused}
       />
     );
   }),
   MultiSelectListItem: React.forwardRef<HTMLDivElement, { index: number }>(({ index }, ref) => {
     const [state] = useSelectReducer();
-    const option = state.options[index];
-    const selected = state.value.includes(option);
+    const option = state.context.options[index];
+    const selected = state.context.selectedItems.includes(option);
 
     return (
       <DefaultMultiselectListItem
@@ -80,7 +81,11 @@ export const defaultComponents = {
   List: DefaultList,
   SelectedValue: () => {
     const [state] = useSelectReducer();
-    return <StyledFlexedBox px={2}>{getLabelOrPlaceholder(state)}</StyledFlexedBox>;
+    return (
+      <StyledFlexedBox px={2}>
+        <EllipsizingText>{getLabelOrPlaceholder(state)}</EllipsizingText>
+      </StyledFlexedBox>
+    );
   },
 };
 
@@ -99,35 +104,4 @@ export const useComponentsWithDefaults = (components: any = {}) => {
       )(components),
     [components],
   );
-};
-
-export const defaultSelectInitialState: SelectState = {
-  open: false,
-  value: [],
-  options: [],
-  placeholder: '',
-  initialized: false,
-};
-
-export const defaultSelectReducer = (state: SelectState, action: Action): SelectState => {
-  switch (action.type) {
-    case defaultActionTypes['Select.Open']:
-      return { ...state, open: true };
-
-    case defaultActionTypes['Select.Toggle']:
-      return { ...state, open: !state.open };
-
-    case defaultActionTypes['Select.Close']:
-      return { ...state, open: false };
-
-    case defaultActionTypes['Select.DeselectValue']:
-    case defaultActionTypes['Select.SelectValue']:
-      return { ...state, open: false, value: [action.payload] };
-
-    case defaultActionTypes['Select.SyncState']:
-      return { ...state, ...action.payload, initialized: true };
-
-    default:
-      return state;
-  }
 };

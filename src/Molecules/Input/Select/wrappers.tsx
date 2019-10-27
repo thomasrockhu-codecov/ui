@@ -3,8 +3,8 @@ import R from 'ramda';
 import styled from 'styled-components';
 import { Typography, Flexbox, VisuallyHidden } from '../../..';
 import NormalizedElements from '../../../common/NormalizedElements';
-import { defaultActionTypes } from './defaults';
 import { Option } from './Select.types';
+import { useSelectReducer } from './context';
 
 const StyledA11yButton = styled(NormalizedElements.Button)`
   background: ${p => (p.disabled ? p.theme.color.disabledBackground : 'transparent')};
@@ -40,9 +40,15 @@ const StyledListWrapper = styled.div<any>`
 `;
 
 export const ListWrapper = React.forwardRef<HTMLDivElement, any>(
-  ({ component: Component, children, noFormField }, ref) => {
+  ({ component: Component, children, noFormField, onKeyDown, onFocus, onBlur }, ref) => {
     return (
-      <StyledListWrapper ref={ref} noFormField={noFormField}>
+      <StyledListWrapper
+        ref={ref}
+        noFormField={noFormField}
+        onKeyDown={onKeyDown}
+        onFocus={onFocus}
+        onBlur={onBlur}
+      >
         <Component position={noFormField ? 'left' : 'right'}>{children}</Component>
       </StyledListWrapper>
     );
@@ -51,26 +57,33 @@ export const ListWrapper = React.forwardRef<HTMLDivElement, any>(
 
 const StyledListItemWrapper = styled.li`
   width: 100%;
-  height: 100%;
+  outline: none;
 `;
 
 type ListItemComponent = React.ComponentType<{ index: number; ref: React.Ref<HTMLElement> }>;
+const FullWidthFlexbox = styled(Flexbox)`
+  width: 100%;
+`;
 
 export const SelectedValueWrapper = React.forwardRef<any, any>(
-  ({ placeholder, dispatch, open, component: Component, state, noFormField, disabled }, ref) => {
+  ({ placeholder, open, component: Component, noFormField, disabled, id, label }, ref) => {
+    const [state, send] = useSelectReducer();
+    const value = state.context.selectedItems;
+    const screenReaderTextSelection =
+      value.length === 1 ? R.pathOr('', [0, 'label'], value) : `${value.length} items`;
     const screenReaderText =
-      state.value.length === 1
-        ? R.pathOr('', [0, 'label'], state.value)
-        : `${state.value.length} items`;
+      value.length > 0 ? `${label}: ${screenReaderTextSelection}` : `${label}: ${placeholder}`;
 
-    const handleClick = React.useCallback(
-      () => dispatch({ type: defaultActionTypes['Select.Toggle'] }),
-      [dispatch],
-    );
+    const handleClick = e => {
+      e.preventDefault();
+      send({ type: 'TOGGLE' });
+    };
+
     return (
       <Flexbox container direction="column" justifyContent="center">
         <Typography type="secondary">
           <StyledA11yButton
+            id={id}
             type="button"
             /** need to exclude this button from document.forms */
             form=""
@@ -81,13 +94,13 @@ export const SelectedValueWrapper = React.forwardRef<any, any>(
             onClick={handleClick}
             disabled={disabled}
             tabIndex={0}
+            aria-label={screenReaderText}
+            aria-describedby={`label-for-${id}`}
           >
-            <Flexbox grow={1} container item aria-hidden="true">
+            <FullWidthFlexbox container item aria-hidden="true">
               <Component />
-            </Flexbox>
+            </FullWidthFlexbox>
           </StyledA11yButton>
-          <VisuallyHidden>{placeholder}</VisuallyHidden>
-          {state.value.length > 0 && <VisuallyHidden>{screenReaderText}</VisuallyHidden>}
         </Typography>
       </Flexbox>
     );
@@ -101,34 +114,29 @@ export const ListItemWrapper = React.forwardRef<
     option: Option;
     index: number;
     onKeyDown: React.KeyboardEventHandler;
-    selected: boolean;
     onClick: (params: { selected: boolean; option: Option }, e: React.MouseEvent) => void;
   }
 >((props, outerRef) => {
-  const ref = React.useRef<HTMLLIElement>(null);
-  const innerRef = React.useRef<HTMLElement>(null);
-  const handleFocus = React.useCallback(() => innerRef.current && innerRef.current!.focus(), []);
-  const handleBlur = React.useCallback(() => innerRef.current && innerRef.current!.blur(), []);
+  const [current] = useSelectReducer();
+  const selected = current.context.selectedItems.includes(props.option);
   const handleClick = React.useCallback(
-    e => props.onClick({ selected: props.selected, option: props.option }, e),
-    [props.onClick, props.option, props.selected], // eslint-disable-line react-hooks/exhaustive-deps
+    e => props.onClick({ selected, option: props.option }, e),
+    [props.onClick, props.option, selected], // eslint-disable-line react-hooks/exhaustive-deps
   );
 
   // Passing ref through to the Component
-  React.useImperativeHandle(outerRef, () => innerRef.current);
+  // React.useImperativeHandle(outerRef, () => innerRef.current);
 
   const Component = props.component;
   return (
     <StyledListItemWrapper
-      ref={ref}
+      ref={outerRef}
       role="option"
-      onFocus={handleFocus}
-      onBlur={handleBlur}
-      onKeyDown={props.onKeyDown}
       onClick={handleClick}
-      aria-selected={props.selected}
+      aria-selected={selected}
+      tabIndex={0}
     >
-      <Component ref={innerRef} index={props.index} />
+      <Component index={props.index} />
     </StyledListItemWrapper>
   );
 });
