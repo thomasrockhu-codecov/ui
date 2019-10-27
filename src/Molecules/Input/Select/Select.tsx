@@ -128,12 +128,13 @@ const Select = (props: Props) => {
     id,
   } = props;
 
+  const isFirstRender = React.useRef(true);
   const machineHandlers = useMachine(
     SelectMachine.withContext({
       error: props.error,
       success: props.success,
       options,
-      selectedItems: [],
+      selectedItems: props.value || [],
       disabled,
       open: false,
       itemFocusIdx: null,
@@ -143,8 +144,39 @@ const Select = (props: Props) => {
     }),
   );
   const [current, send] = machineHandlers;
+  React.useEffect(() => {
+    if (isFirstRender.current) return;
+    if (current.matches({ selection: 'changeUncommitted' })) {
+      if (props.onChange) props.onChange(current.context.selectedItems);
+      send('CHANGE_COMMIT');
+    }
+  }, [current, props.onChange]);
 
   const [searchMachineState, searchMachineSend] = useMachine(searchMachine);
+
+  React.useEffect(() => {
+    send({
+      type: 'SYNC',
+      payload: {
+        options: props.options,
+        placeholder,
+        error: props.error,
+        selectedItems: props.value || [],
+        success: props.success,
+        disabled: props.disabled,
+        extraInfo: props.extraInfo,
+      },
+    });
+  }, [
+    props.options,
+    send,
+    placeholder,
+    props.error,
+    props.success,
+    props.disabled,
+    props.extraInfo,
+    props.value,
+  ]);
 
   React.useEffect(() => {
     if (searchMachineState.matches('search')) {
@@ -152,20 +184,6 @@ const Select = (props: Props) => {
       send({ type: 'SEARCH', payload: searchMachineState.context.searchQuery });
     }
   }, [searchMachineState]);
-
-  // React.useEffect(() => {
-  //   send({
-  //     type: 'SYNC',
-  //     payload: {
-  //       options,
-  //       placeholder,
-  //       error: props.error,
-  //       success: props.success,
-  //       disabled: props.disabled,
-  //       extraInfo: props.extraInfo,
-  //     },
-  //   });
-  // }, [options, send, placeholder, props.error, props.success, props.disabled, props.extraInfo]);
 
   const handleClickListItem = option => () => {
     const isSelected = current.context.selectedItems.includes(option);
@@ -220,7 +238,6 @@ const Select = (props: Props) => {
   };
   const isOpen = current.matches({ open: 'on' });
 
-  const isFirstRender = React.useRef(true);
   const buttonRef = React.useRef(null);
   const itemRefs = React.useMemo(() => [], []);
   const listRef = React.useRef(null);
@@ -284,7 +301,7 @@ const Select = (props: Props) => {
           label={label}
           noFormField={noFormField}
           ref={formFieldRef}
-          disabled={disabled}
+          disabled={isDisabled}
           open={isOpen}
           fullWidth={fullWidth}
           error={error}
@@ -297,7 +314,7 @@ const Select = (props: Props) => {
             ref={buttonRef}
             open={isOpen}
             label={label}
-            disabled={disabled}
+            disabled={isDisabled}
             noFormField={noFormField}
             placeholder={placeholder}
             component={SelectedValue}

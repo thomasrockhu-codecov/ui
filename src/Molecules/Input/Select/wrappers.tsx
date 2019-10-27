@@ -33,10 +33,13 @@ const StyledA11yButton = styled(NormalizedElements.Button)`
 
 const StyledListWrapper = styled.div<any>`
   width: ${p => (p.noFormField ? 'auto' : '100%')};
-  height: 100%;
   position: absolute;
   top: 100%;
   z-index: 4;
+  margin: -4px;
+  padding: 4px;
+  overflow: hidden;
+  padding-bottom: 16px;
 `;
 
 export const ListWrapper = React.forwardRef<HTMLDivElement, any>(
@@ -119,6 +122,7 @@ export const ListItemWrapper = React.forwardRef<
 >((props, outerRef) => {
   const [current] = useSelectReducer();
   const selected = current.context.selectedItems.includes(props.option);
+  const disabled = props.option.disabled;
   const handleClick = React.useCallback(
     e => props.onClick({ selected, option: props.option }, e),
     [props.onClick, props.option, selected], // eslint-disable-line react-hooks/exhaustive-deps
@@ -134,6 +138,7 @@ export const ListItemWrapper = React.forwardRef<
       role="option"
       onClick={handleClick}
       aria-selected={selected}
+      aria-disabled={disabled}
       tabIndex={0}
     >
       <Component index={props.index} />

@@ -284,19 +284,57 @@ const accountOptions = [
   },
 ];
 
-export const onChangeStory = () => {
-  const [value, setValue] = React.useState(() => [accountOptions[1]]);
+export const disabledItems = () => {
   return (
     <Input.Select
       id="onchange-select"
-      options={accountOptions}
-      value={value}
-      onChange={setValue}
+      options={accountOptions.map((acc, i) => (i === 1 ? { ...acc, disabled: true } : acc))}
       label="User account"
       placeholder="Select account"
     />
   );
 };
+
+export const changesFromProps = () => {
+  const [accs, setAccs] = React.useState(accountOptions);
+  const [value, setValue] = React.useState([]);
+  const removeAcc = () => setAccs(accs.slice(0, -1));
+  const selectFirst = () => setValue([accountOptions[0]]);
+  return (
+    <>
+      <button onClick={removeAcc}>Delete</button>
+      <button onClick={selectFirst}>Select first</button>
+      <pre>{JSON.stringify(accs, null, 2)}</pre>
+      <Input.Select
+        id="onchange-select"
+        value={value}
+        onChange={setValue}
+        options={accs}
+        label="User account"
+        placeholder="Select account"
+      />
+    </>
+  );
+};
+
+export const controlledBehaviour = () => {
+  const [value, setValue] = React.useState(() => [accountOptions[1]]);
+  const onChange = newValue => setValue(newValue);
+  return (
+    <Input.Select
+      id="onchange-select"
+      options={accountOptions}
+      value={value}
+      onChange={onChange}
+      label="User account"
+      placeholder="Select account"
+    />
+  );
+};
+controlledBehaviour.story = {
+  name: 'Controlled behaviour',
+};
+
 export const defaultVariations = () => {
   return (
     <Display

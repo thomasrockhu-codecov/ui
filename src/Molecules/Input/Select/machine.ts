@@ -33,10 +33,12 @@ export const SelectMachine = Machine({
         },
         SELECT_ITEM: {
           actions: assign({ open: false }),
+          cond: (ctx, e) => !e.payload.disabled,
           target: '.unknown',
         },
         DESELECT_ITEM: {
           actions: assign({ open: false }),
+          cond: (ctx, e) => !e.payload.disabled,
           target: '.unknown',
         },
       },
@@ -67,12 +69,13 @@ export const SelectMachine = Machine({
       initial: 'unknown',
       on: {
         SELECT_ITEM: {
-          target: '.unknown',
+          target: '.changeUncommitted',
           actions: [
             assign({
               selectedItems: ({ selectedItems }, { payload }) => (selectedItems = [payload]), // single-select
             }),
           ],
+          cond: (ctx, e) => !e.payload.disabled,
           in: '#inputSelect.interaction.enabled',
         },
         SELECT_FOCUSED_ITEM: {
@@ -99,10 +102,27 @@ export const SelectMachine = Machine({
       states: {
         unknown: {
           on: {
-            '': [{ target: 'on', cond: ctx => ctx.selectedItems.length > 0 }, { target: 'off' }],
+            '': [
+              {
+                target: 'incorrectSelection',
+                cond: ctx => ctx.selectedItems.some(x => !ctx.options.includes(x)),
+              },
+              { target: 'on', cond: ctx => ctx.selectedItems.length > 0 },
+              { target: 'off' },
+            ],
           },
         },
-
+        changeUncommitted: {
+          on: { CHANGE_COMMIT: 'unknown' },
+        },
+        incorrectSelection: {
+          on: {
+            '': {
+              target: 'unknown',
+              actions: assign({ selectedItems: [] }),
+            },
+          },
+        },
         on: {},
         off: {},
       },
@@ -131,7 +151,14 @@ export const SelectMachine = Machine({
       states: {
         unknown: {
           on: {
-            '': [{ target: 'disabled', cond: ctx => ctx.disabled }, { target: 'enabled' }],
+            '': [
+              { target: 'disabled', cond: ctx => ctx.disabled },
+              {
+                target: 'disabled',
+                cond: ctx => ctx.options.length === 0,
+              },
+              { target: 'enabled' },
+            ],
           },
         },
         disabled: {},
@@ -190,7 +217,9 @@ export const SelectMachine = Machine({
                                         .toLowerCase()
                                         .startsWith(ctx.searchQuery.toLowerCase()),
                                     );
-                                    return newIdx !== -1 ? newIdx : ctx.itemFocusIdx;
+                                    return newIdx !== -1 && !ctx.options[newIdx].disabled
+                                      ? newIdx
+                                      : ctx.itemFocusIdx;
                                   },
                                 }),
                                 cond: ctx => ctx.searchQuery !== '',

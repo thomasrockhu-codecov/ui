@@ -57,7 +57,7 @@ const fadeCss = css`
     content: '';
     position: absolute;
     pointer-events: none;
-    top: 234px;
+    bottom: calc(100% - 240px - 20px);
     left: 1px;
     height: 30px;
     width: 100%;
@@ -90,7 +90,6 @@ const OverflowScroll = styled.div`
 `;
 
 const FullHeightFlexboxWithFade = styled.div`
-  height: 100%;
   margin: 0 1px;
   ${fadeCss}
 `;
@@ -106,7 +105,6 @@ type OptionProps = { selected?: boolean; disabled?: boolean; label: React.ReactN
 const StyledOption = styled(Typography)`
   display: flex;
   align-items: center;
-  margin: 0 1px;
   padding-right: ${p => p.theme.spacing.unit(3)}px;
   padding-left: ${p => p.theme.spacing.unit(3)}px;
   padding-top:${p => p.theme.spacing.unit(1)}px;
