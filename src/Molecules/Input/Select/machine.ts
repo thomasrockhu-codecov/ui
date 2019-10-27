@@ -50,20 +50,23 @@ export const SelectMachine = Machine({
               {
                 target: 'on',
                 cond: ctx => ctx.open,
-                actions: assign({
-                  itemFocusIdx: ctx =>
-                    ctx.selectedItems.length > 0
-                      ? ctx.options.findIndex(
-                          x => x === ctx.selectedItems[ctx.selectedItems.length - 1],
-                        )
-                      : ctx.itemFocusIdx,
-                }),
               },
               { target: 'off' },
             ],
           },
         },
-        on: {},
+        on: {
+          entry: {
+            actions: assign({
+              itemFocusIdx: ctx =>
+                ctx.selectedItems.length > 0
+                  ? ctx.options.findIndex(
+                      x => x === ctx.selectedItems[ctx.selectedItems.length - 1],
+                    )
+                  : ctx.itemFocusIdx,
+            }),
+          },
+        },
         off: {},
       },
     },
@@ -75,8 +78,15 @@ export const SelectMachine = Machine({
           target: '.changeUncommitted',
           actions: [
             assign({
-              selectedItems: (ctx, { payload }) =>
-                ctx.multiselect ? ctx.selectedItems.concat(payload) : [payload],
+              selectedItems: (ctx, { payload }) => {
+                if (ctx.multiselect) {
+                  if (payload.all) {
+                    return ctx.options;
+                  }
+                  return ctx.selectedItems.concat(payload);
+                }
+                return [payload];
+              },
             }),
           ],
           cond: (ctx, e) => !e.payload.disabled,
@@ -96,8 +106,12 @@ export const SelectMachine = Machine({
           target: '.unknown',
           actions: [
             assign({
-              selectedItems: ({ selectedItems }, { payload }) =>
-                selectedItems.filter(x => x !== payload),
+              selectedItems: ({ selectedItems }, { payload }) => {
+                if (payload.all) {
+                  return [];
+                }
+                return selectedItems.filter(x => x !== payload);
+              },
             }),
           ],
           cond: ctx => !!ctx.multiselect,
