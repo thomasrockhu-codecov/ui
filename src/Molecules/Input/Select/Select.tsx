@@ -8,7 +8,7 @@ import { useOnClickOutside } from '../../../common/Hooks';
 import { noop } from './utils';
 
 import { ListItemWrapper, ListWrapper, SelectedValueWrapper } from './wrappers';
-import { useSelectReducer, SelectStateContext } from './context';
+import { useSelectMachineFromContext, SelectStateContext } from './context';
 import { useComponentsWithDefaults, defaultComponents, defaultActionTypes } from './defaults';
 import { SelectMachine } from './machine';
 import { searchMachine } from './searchMachine';
@@ -141,9 +141,11 @@ const Select = (props: Props) => {
       placeholder,
       searchQuery: '',
       extraInfo: props.extraInfo,
+      multiselect: props.multiselect || false,
     }),
   );
   const [current, send] = machineHandlers;
+  console.log(current.value, current.actions);
   React.useEffect(() => {
     if (isFirstRender.current) return;
     if (current.matches({ selection: 'changeUncommitted' })) {
@@ -165,6 +167,7 @@ const Select = (props: Props) => {
         success: props.success,
         disabled: props.disabled,
         extraInfo: props.extraInfo,
+        multiselect: props.multiselect,
       },
     });
   }, [
@@ -176,6 +179,7 @@ const Select = (props: Props) => {
     props.disabled,
     props.extraInfo,
     props.value,
+    props.multiselect,
   ]);
 
   React.useEffect(() => {
@@ -222,6 +226,11 @@ const Select = (props: Props) => {
       send({ type: 'BLUR' });
       return false;
     }
+    if (e.key === 'Escape') {
+      e.preventDefault();
+      send({ type: 'BLUR' });
+      return false;
+    }
     if (e.key === ' ') {
       send({ type: 'SELECT_FOCUSED_ITEM' });
       e.preventDefault();
@@ -245,6 +254,7 @@ const Select = (props: Props) => {
 
   React.useLayoutEffect(() => {
     if (isOpen) {
+      console.log('FOUS');
       send({ type: 'FOCUS' });
     } else if (!isFirstRender.current) {
       buttonRef.current.focus();
@@ -265,7 +275,9 @@ const Select = (props: Props) => {
     isFirstRender.current = false;
   }, []);
 
-  const { ListItem, List, SelectedValue } = useComponentsWithDefaults(components);
+  const { ListItem, List, SelectedValue } = useComponentsWithDefaults(components, {
+    multiselect: current.context.multiselect,
+  });
 
   useOnClickOutside([listRef, formFieldRef], () => send({ type: 'BLUR' }));
 
@@ -347,6 +359,6 @@ const Select = (props: Props) => {
   );
 };
 
-Select.useSelectReducer = useSelectReducer;
+Select.useSelectMachineFromContext = useSelectMachineFromContext;
 
 export { Select };

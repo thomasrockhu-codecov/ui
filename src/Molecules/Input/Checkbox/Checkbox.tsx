@@ -77,6 +77,15 @@ const Input = styled(CleanInput).attrs({ type: 'checkbox' })<InternalInputProps>
       border: 1px solid ${p => p.theme.color.cta};
     }
   }
+  ${p =>
+    !p.visuallyFocused
+      ? ''
+      : `& + ${CheckmarkBox} {
+    &::before {
+      border: 1px solid ${p.theme.color.cta};
+    }
+  }
+  `}
 `;
 
 const Label = styled(Typography)`
@@ -105,6 +114,7 @@ const Checkbox: CheckboxComponent = props => {
     required,
     value,
     visuallyEmphasiseRequired,
+    visuallyFocused,
     width,
   } = props;
 
@@ -129,6 +139,7 @@ const Checkbox: CheckboxComponent = props => {
               onKeyUp,
               required,
               value,
+              visuallyFocused,
             }}
           />
           <CheckmarkBox container alignItems="center" justifyContent="center">

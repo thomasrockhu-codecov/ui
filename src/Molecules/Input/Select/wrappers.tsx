@@ -1,10 +1,10 @@
 import * as React from 'react';
 import R from 'ramda';
 import styled from 'styled-components';
-import { Typography, Flexbox, VisuallyHidden } from '../../..';
+import { Typography, Flexbox } from '../../..';
 import NormalizedElements from '../../../common/NormalizedElements';
 import { Option } from './Select.types';
-import { useSelectReducer } from './context';
+import { useSelectMachineFromContext } from './context';
 
 const StyledA11yButton = styled(NormalizedElements.Button)`
   background: ${p => (p.disabled ? p.theme.color.disabledBackground : 'transparent')};
@@ -70,7 +70,7 @@ const FullWidthFlexbox = styled(Flexbox)`
 
 export const SelectedValueWrapper = React.forwardRef<any, any>(
   ({ placeholder, open, component: Component, noFormField, disabled, id, label }, ref) => {
-    const [state, send] = useSelectReducer();
+    const [state, send] = useSelectMachineFromContext();
     const value = state.context.selectedItems;
     const screenReaderTextSelection =
       value.length === 1 ? R.pathOr('', [0, 'label'], value) : `${value.length} items`;
@@ -98,7 +98,6 @@ export const SelectedValueWrapper = React.forwardRef<any, any>(
             disabled={disabled}
             tabIndex={0}
             aria-label={screenReaderText}
-            aria-describedby={`label-for-${id}`}
           >
             <FullWidthFlexbox container item aria-hidden="true">
               <Component />
@@ -120,7 +119,7 @@ export const ListItemWrapper = React.forwardRef<
     onClick: (params: { selected: boolean; option: Option }, e: React.MouseEvent) => void;
   }
 >((props, outerRef) => {
-  const [current] = useSelectReducer();
+  const [current] = useSelectMachineFromContext();
   const selected = current.context.selectedItems.includes(props.option);
   const disabled = props.option.disabled;
   const handleClick = React.useCallback(

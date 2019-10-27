@@ -81,7 +81,6 @@ const StyledOption = styled.div<Pick<OptionProps, 'selected' | 'disabled'>>`
   padding-left: ${p => p.theme.spacing.unit(2)}px;
   color: ${p => (p.selected ? p.theme.color.cta : p.theme.color.inputBorderHover)};
   height: ${p => p.theme.spacing.unit(6)}px;
-  outline: none;
 
   white-space: nowrap;
   background: ${p =>
@@ -97,21 +96,25 @@ const StyledOption = styled.div<Pick<OptionProps, 'selected' | 'disabled'>>`
           background: ${p.theme.color.background};
         }
 
-        &:focus {
-          background: ${p.theme.color.background};
-        }
+       
 
        
       `}
 `;
 
 export const Option = React.forwardRef<HTMLDivElement, OptionProps>(
-  ({ label, disabled, selected }, ref) => (
-    <StyledOption ref={ref} selected={selected} disabled={disabled} tabIndex={-1}>
+  ({ label, disabled, selected, focused }, ref) => (
+    <StyledOption ref={ref} selected={selected} disabled={disabled}>
       <FullHeightFlexbox container alignItems="center" gutter={2}>
         <Flexbox item container alignItems="center">
           {/** TODO: revisit a11y here */}
-          <Input.Checkbox name="example" label="" checked={selected} width="20px" />
+          <Input.Checkbox
+            name="example"
+            label=""
+            checked={selected}
+            visuallyFocused={focused}
+            width="20px"
+          />
         </Flexbox>
         <Flexbox item container justifyContent="space-between" alignItems="center">
           <Flexbox item container direction="column" grow={1}>

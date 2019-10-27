@@ -1,18 +1,93 @@
+/** eslint-disable react-hooks/rules-of-hooks */
 import React from 'react';
-import R from 'ramda';
-
-import { action } from '@storybook/addon-actions';
-import styled, { css } from 'styled-components';
-import { Input, Avatar, Flexbox, Number, Typography, Box, Link, Icon, Button } from '../../..';
+import styled from 'styled-components';
+import { Input, Avatar, Flexbox, Number, Typography, Box, Icon } from '../../..';
 import { Display } from '../../../common/Display';
-import { SelectState, Action } from './Select.types';
 import mdx from './Select.mdx';
-import { SelectMachine } from './machine';
-import { useMachine } from '@xstate/react';
 
-import { Option, OptionList } from './SingleSelectList/SingleSelectList';
-import FormField from '../../../Molecules/FormField';
-import NormalizedElements from '../../../common/NormalizedElements';
+const FlexedBox = styled(Box)<any>`
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+`;
+
+const AccountValue = () => {
+  const [state] = useSelectMachineFromContext();
+
+  const selectedOption =
+    state.context.selectedItems.length === 0 ? null : state.context.selectedItems[0];
+
+  return (
+    <FlexedBox px={2} pr={8}>
+      {!selectedOption ? (
+        state.context.placeholder
+      ) : (
+        <Flexbox container item justifyContent="space-between" gutter={2} grow={1}>
+          <Flexbox item container alignItems="center" basis="32px" grow={0}>
+            <Avatar size="s">{selectedOption.symbol}</Avatar>
+          </Flexbox>
+          <Flexbox item container alignItems="center" grow={1}>
+            <Typography type="tertiary" weight="bold" color={t => t.color.text}>
+              {selectedOption.label}
+            </Typography>
+            <Typography type="tertiary">
+              <span aria-hidden="true">&nbsp;&#8231;&nbsp;</span>
+              {selectedOption.accno}
+            </Typography>
+          </Flexbox>
+        </Flexbox>
+      )}
+    </FlexedBox>
+  );
+};
+
+const StyledBox = styled(Box)<{ focused: boolean }>`
+  cursor: pointer;
+  background: ${p => p.theme.color.card};
+  ${p => (p.focused ? `outline: 1px solid ${p.theme.color.cta};` : '')}
+  &:hover {
+    background: ${p => p.theme.color.background};
+  }
+  &:focus {
+    background: ${p => p.theme.color.background};
+  }
+`;
+
+const AccountListItem = ({ index }: any, ref) => {
+  const [state] = useSelectMachineFromContext();
+  const option = state.context.options[index];
+  const selected = state.context.selectedItems.includes(option);
+  const focused = state.context.itemFocusIdx === index;
+  console.log({ focused });
+  return (
+    <StyledBox px={2} py={1} focused={focused} ref={ref}>
+      <Flexbox container justifyContent="space-between" gutter={4}>
+        <Flexbox item container alignItems="center" basis="32px" grow={0}>
+          <Avatar>{option.symbol}</Avatar>
+        </Flexbox>
+        <Flexbox item container direction="column" grow={1}>
+          <Flexbox item>
+            <Typography type="secondary" color={t => t.color.text}>
+              {option.label}
+            </Typography>
+          </Flexbox>
+          <Flexbox item>
+            <Typography type="caption" color={t => t.color.text}>
+              <Number value={option.amount.value} currency={option.amount.currency} />
+            </Typography>
+          </Flexbox>
+        </Flexbox>
+        {selected && (
+          <Flexbox item container alignItems="center">
+            <Box pl={2}>
+              <Icon.CheckMark color={t => t.color.cta} />
+            </Box>
+          </Flexbox>
+        )}
+      </Flexbox>
+    </StyledBox>
+  );
+};
 
 // const Chevron = styled(Icon.ChevronDown)<{ open: boolean }>`
 //   transform: translateY(-50%) ${p => (p.open ? 'rotate(180deg)' : 'rotate(0)')};
@@ -259,7 +334,7 @@ export const two = () => (
   </>
 );
 
-const useSelectReducer = Input.Select.useSelectReducer;
+const useSelectMachineFromContext = Input.Select.useSelectMachineFromContext;
 const accountOptions = [
   {
     label: 'First account',
@@ -289,6 +364,36 @@ export const disabledItems = () => {
     <Input.Select
       id="onchange-select"
       options={accountOptions.map((acc, i) => (i === 1 ? { ...acc, disabled: true } : acc))}
+      label="User account"
+      placeholder="Select account"
+    />
+  );
+};
+
+export const customRenderers = () => {
+  return (
+    <Input.Select
+      id="custom-renderers-select"
+      options={accountOptions}
+      components={{
+        ListItem: AccountListItem,
+        SelectedValue: AccountValue,
+      }}
+      label="User account"
+      placeholder="Select account"
+    />
+  );
+};
+
+export const multiselect = () => {
+  const [value, setValue] = React.useState<any[]>([]);
+  return (
+    <Input.Select
+      id="custom-renderers-select"
+      options={accountOptions}
+      value={value}
+      onChange={setValue}
+      multiselect
       label="User account"
       placeholder="Select account"
     />
@@ -453,88 +558,6 @@ export const sizeS = () => {
         },
       ]}
     />
-  );
-};
-
-const StyledBox: React.FC<any> = styled(Box)`
-  cursor: pointer;
-  background: ${p => p.theme.color.card};
-  outline: none;
-  &:hover {
-    background: ${p => p.theme.color.background};
-  }
-  &:focus {
-    background: ${p => p.theme.color.background};
-  }
-`;
-
-const FlexedBox = styled(Box)<any>`
-  flex-grow: 1;
-  display: flex;
-  align-items: center;
-`;
-
-const AccountValue = () => {
-  const [state] = useSelectReducer();
-
-  const selectedOption = state.value.length === 0 ? null : state.value[0];
-
-  return (
-    <FlexedBox px={2} pr={8}>
-      {!selectedOption ? (
-        state.placeholder
-      ) : (
-        <Flexbox container item justifyContent="space-between" gutter={2} grow={1}>
-          <Flexbox item container alignItems="center" basis="32px" grow={0}>
-            <Avatar size="s">{selectedOption.symbol}</Avatar>
-          </Flexbox>
-          <Flexbox item container alignItems="center" grow={1}>
-            <Typography type="tertiary" weight="bold" color={t => t.color.text}>
-              {selectedOption.label}
-            </Typography>
-            <Typography type="tertiary">
-              <span aria-hidden="true">&nbsp;&#8231;&nbsp;</span>
-              {selectedOption.accno}
-            </Typography>
-          </Flexbox>
-        </Flexbox>
-      )}
-    </FlexedBox>
-  );
-};
-
-const AccountListItem = ({ index }: any, ref: any) => {
-  const [state] = useSelectReducer();
-  const option = state.options[index];
-  const selected = state.value.includes(option);
-
-  return (
-    <StyledBox px={2} py={1} ref={ref} tabIndex={0}>
-      <Flexbox container justifyContent="space-between" gutter={4}>
-        <Flexbox item container alignItems="center" basis="32px" grow={0}>
-          <Avatar>{option.symbol}</Avatar>
-        </Flexbox>
-        <Flexbox item container direction="column" grow={1}>
-          <Flexbox item>
-            <Typography type="secondary" color={t => t.color.text}>
-              {option.label}
-            </Typography>
-          </Flexbox>
-          <Flexbox item>
-            <Typography type="caption" color={t => t.color.text}>
-              <Number value={option.amount.value} currency={option.amount.currency} />
-            </Typography>
-          </Flexbox>
-        </Flexbox>
-        {selected && (
-          <Flexbox item container alignItems="center">
-            <Box pl={2}>
-              <Icon.CheckMark color={t => t.color.cta} />
-            </Box>
-          </Flexbox>
-        )}
-      </Flexbox>
-    </StyledBox>
   );
 };
 

@@ -6,13 +6,14 @@ export const SelectMachine = Machine({
   context: {
     error: true,
     success: false,
-    options: [],
-    selectedItems: [],
+    options: [] as Array<any>,
+    selectedItems: [] as Array<any>,
     disabled: false,
     open: true,
     itemFocusIdx: null,
     searchQuery: '',
     extraInfo: '',
+    multiselect: false,
   },
   on: {
     SYNC: {
@@ -32,12 +33,12 @@ export const SelectMachine = Machine({
           target: '.unknown',
         },
         SELECT_ITEM: {
-          actions: assign({ open: false }),
+          actions: assign({ open: ctx => (ctx.multiselect ? ctx.open : false) }),
           cond: (ctx, e) => !e.payload.disabled,
           target: '.unknown',
         },
         DESELECT_ITEM: {
-          actions: assign({ open: false }),
+          actions: assign({ open: ctx => (ctx.multiselect ? ctx.open : false) }),
           cond: (ctx, e) => !e.payload.disabled,
           target: '.unknown',
         },
@@ -52,7 +53,9 @@ export const SelectMachine = Machine({
                 actions: assign({
                   itemFocusIdx: ctx =>
                     ctx.selectedItems.length > 0
-                      ? ctx.options.findIndex(x => x === ctx.selectedItems[0])
+                      ? ctx.options.findIndex(
+                          x => x === ctx.selectedItems[ctx.selectedItems.length - 1],
+                        )
                       : ctx.itemFocusIdx,
                 }),
               },
@@ -72,7 +75,8 @@ export const SelectMachine = Machine({
           target: '.changeUncommitted',
           actions: [
             assign({
-              selectedItems: ({ selectedItems }, { payload }) => (selectedItems = [payload]), // single-select
+              selectedItems: (ctx, { payload }) =>
+                ctx.multiselect ? ctx.selectedItems.concat(payload) : [payload],
             }),
           ],
           cond: (ctx, e) => !e.payload.disabled,
@@ -90,12 +94,13 @@ export const SelectMachine = Machine({
         },
         DESELECT_ITEM: {
           target: '.unknown',
-          //   actions: [
-          //     assign({
-          //       selectedItems: ({ selectedItems }, { payload }) =>
-          //         selectedItems.filter(x => x !== payload),
-          //     }),
-          //   ],
+          actions: [
+            assign({
+              selectedItems: ({ selectedItems }, { payload }) =>
+                selectedItems.filter(x => x !== payload),
+            }),
+          ],
+          cond: ctx => !!ctx.multiselect,
           in: '#inputSelect.interaction.enabled',
         },
       },
@@ -169,8 +174,16 @@ export const SelectMachine = Machine({
             FOCUS: '.active.focus.unknown',
             BLUR: '.active.focus.off',
           },
-          initial: 'idle',
+          initial: 'unknown',
           states: {
+            unknown: {
+              on: {
+                '': {
+                  target: 'active.focus',
+                  cond: ctx => ctx.itemFocusIdx !== null,
+                },
+              },
+            },
             idle: {},
             active: {
               type: 'parallel',

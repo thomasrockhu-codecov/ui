@@ -8,9 +8,9 @@ import {
 } from './SingleSelectList/SingleSelectList';
 import { Option as DefaultMultiselectListItem } from './MultiSelectList/MultiSelectList';
 
-import { useSelectReducer } from './context';
+import { useSelectMachineFromContext } from './context';
 
-import { SelectState, Action, ActionTypes, OptionBase } from './Select.types';
+import { ActionTypes, OptionBase } from './Select.types';
 
 const getLabelOrPlaceholder = <T extends OptionBase>(state: any) => {
   if (state.context.selectedItems.length === 0) return state.context.placeholder;
@@ -47,7 +47,7 @@ export const defaultActionTypes: Record<ActionTypes, ActionTypes> = {
 
 export const defaultComponents = {
   ListItem: React.forwardRef<HTMLDivElement, { index: number }>(({ index }, ref) => {
-    const [state] = useSelectReducer();
+    const [state] = useSelectMachineFromContext();
     const option = state.context.options[index];
     const selected = state.context.selectedItems.includes(option);
     const focused = state.context.itemFocusIdx === index;
@@ -63,24 +63,10 @@ export const defaultComponents = {
       />
     );
   }),
-  MultiSelectListItem: React.forwardRef<HTMLDivElement, { index: number }>(({ index }, ref) => {
-    const [state] = useSelectReducer();
-    const option = state.context.options[index];
-    const selected = state.context.selectedItems.includes(option);
 
-    return (
-      <DefaultMultiselectListItem
-        ref={ref}
-        selected={selected}
-        disabled={option.disabled}
-        label={option.label}
-        value={option.value}
-      />
-    );
-  }),
   List: DefaultList,
   SelectedValue: () => {
-    const [state] = useSelectReducer();
+    const [state] = useSelectMachineFromContext();
     return (
       <StyledFlexedBox px={2}>
         <EllipsizingText>{getLabelOrPlaceholder(state)}</EllipsizingText>
@@ -89,7 +75,40 @@ export const defaultComponents = {
   },
 };
 
-export const useComponentsWithDefaults = (components: any = {}) => {
+export const defaultComponentsMultiselect = {
+  ListItem: React.forwardRef<HTMLDivElement, { index: number }>(({ index }, ref) => {
+    const [state] = useSelectMachineFromContext();
+    const option = state.context.options[index];
+    const selected = state.context.selectedItems.includes(option);
+    const focused = state.context.itemFocusIdx === index;
+
+    return (
+      <DefaultMultiselectListItem
+        ref={ref}
+        selected={selected}
+        disabled={option.disabled}
+        label={option.label}
+        value={option.value}
+        focused={focused}
+      />
+    );
+  }),
+
+  List: DefaultList,
+  SelectedValue: () => {
+    const [state] = useSelectMachineFromContext();
+    return (
+      <StyledFlexedBox px={2}>
+        <EllipsizingText>{getLabelOrPlaceholder(state)}</EllipsizingText>
+      </StyledFlexedBox>
+    );
+  },
+};
+
+export const useComponentsWithDefaults = (
+  components: any = {},
+  options: { multiselect: boolean } = { multiselect: false },
+) => {
   return React.useMemo(
     () =>
       // @ts-ignore
@@ -100,8 +119,8 @@ export const useComponentsWithDefaults = (components: any = {}) => {
             ? componentRefFn
             : React.forwardRef(componentRefFn as any),
         ),
-        R.mergeRight(defaultComponents),
+        R.mergeRight(options.multiselect ? defaultComponentsMultiselect : defaultComponents),
       )(components),
-    [components],
+    [components, options.multiselect],
   );
 };

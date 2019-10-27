@@ -10,6 +10,11 @@ export type ComponentTypes = 'ListItem' | 'List' | 'SelectedValue';
 export type Action = { type: ActionTypes; payload?: any };
 
 export type Props = {
+  /**
+   * Required for proper functioning
+   * If omitted will lead to buggy onClick
+   */
+  id: string;
   options: Option[];
   value?: any;
   error?: React.ReactNode;
@@ -40,6 +45,8 @@ export type Props = {
   noFormField?: boolean;
   /** focus first option on open */
   autoFocusFirstOption?: boolean;
+
+  multiselect?: boolean;
 };
 
 export type OptionBase = {

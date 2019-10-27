@@ -52,17 +52,16 @@ const triangleCss = css`
 `;
 
 const fadeCss = css`
-  position: relative;
   &:after {
     content: '';
     position: absolute;
     pointer-events: none;
-    bottom: calc(100% - 240px - 20px);
-    left: 1px;
-    height: 30px;
+    bottom: calc(100% - 240px - 30px);
+    left: 6px;
+    height: 20px;
     width: 100%;
     background: linear-gradient(to bottom, rgba(255, 255, 255, 0), #fff);
-    width: calc(100% - 2px);
+    width: calc(100% - 12px);
   }
 `;
 const StyledList = styled(UIList)<any>`
@@ -93,16 +92,25 @@ const FullHeightFlexboxWithFade = styled.div`
   margin: 0 1px;
   ${fadeCss}
 `;
-export const OptionList: React.FC<ListProps> = ({ children, position, onKeyDown }) => (
+
+export const OptionList: React.FC<ListProps> = ({ children, position }) => (
   <FullHeightFlexboxWithFade>
-    <StyledList role="listbox" position={position} onKeyDown={onKeyDown}>
+    <StyledList role="listbox" position={position}>
       <OverflowScroll>{children}</OverflowScroll>
     </StyledList>
   </FullHeightFlexboxWithFade>
 );
 
-type OptionProps = { selected?: boolean; disabled?: boolean; label: React.ReactNode; value: any };
-const StyledOption = styled(Typography)`
+type OptionProps = {
+  focused?: boolean;
+  selected?: boolean;
+  disabled?: boolean;
+  label: React.ReactNode;
+  value: any;
+  ref: React.Ref<HTMLLIElement>;
+};
+
+const StyledOption = styled(Typography)<OptionProps>`
   display: flex;
   align-items: center;
   padding-right: ${p => p.theme.spacing.unit(3)}px;

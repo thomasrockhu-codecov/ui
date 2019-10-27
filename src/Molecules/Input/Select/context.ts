@@ -1,6 +1,10 @@
 import * as React from 'react';
-import { Action } from './Select.types';
+import { useMachine } from '@xstate/react';
+import { SelectMachine } from './machine';
 
-export const SelectStateContext = React.createContext<[any, (action: Action) => void] | null>(null);
+const typehack = () => useMachine(SelectMachine); // eslint-disable-line react-hooks/rules-of-hooks
+export const SelectStateContext = React.createContext<ReturnType<typeof typehack> | undefined>(
+  undefined,
+);
 
-export const useSelectReducer = () => React.useContext(SelectStateContext)!;
+export const useSelectMachineFromContext = () => React.useContext(SelectStateContext)!;
