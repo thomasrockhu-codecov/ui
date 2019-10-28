@@ -1,13 +1,17 @@
 import React from 'react';
 import { useMachine } from '@xstate/react';
-import styled, { css } from 'styled-components';
-import { Icon, Flexbox, FormField } from '../../..';
+import styled from 'styled-components';
 
 import { useOnClickOutside } from '../../../common/Hooks';
 
 import { noop } from './utils';
 
-import { ListItemWrapper, ListWrapper, SelectedValueWrapper } from './wrappers';
+import {
+  ListItemWrapper,
+  ListWrapper,
+  SelectedValueWrapper,
+  FormFieldOrFragment,
+} from './wrappers';
 import { useSelectMachineFromContext, SelectStateContext } from './context';
 import { useComponentsWithDefaults } from './defaults';
 import { SelectMachine } from './machine';
@@ -16,9 +20,11 @@ import { Props } from './Select.types';
 
 import { assert } from '../../../common/utils';
 
+/* eslint-disable spaced-comment */
 const HiddenSelect = styled.select`
   display: none;
 `;
+
 const keyActionMap = {
   ArrowDown: 'FOCUS_NEXT_ITEM',
   ArrowUp: 'FOCUS_PREV_ITEM',
@@ -29,134 +35,126 @@ const keyActionMap = {
 };
 keyActionMap.keys = Object.keys(keyActionMap);
 
-const Chevron = styled(Icon.ChevronDown)<{ open: boolean }>`
-  transform: translateY(-50%) ${p => (p.open ? 'rotate(180deg)' : 'rotate(0)')};
-  transform-origin: center center;
-  transition: transform 0.16s ease-out;
-  position: absolute;
-  height: ${p => p.theme.spacing.unit(2)}px;
-  top: 50%;
-  right: ${p => p.theme.spacing.unit(1)}px;
-  pointer-events: none;
-`;
-
-const StyledRelativeDiv = styled.div<any>`
-  position: relative;
-  display: inline-block;
-  width: ${p => (p.fullWidth ? '100%' : 'initial')};
-`;
-
-const height = css<Pick<Props, 'size'>>`
-  height: ${p => (p.size === 's' ? p.theme.spacing.unit(8) : p.theme.spacing.unit(10))}px;
-`;
-
-const hoverBorderStyles = css<Pick<Props, 'disabled'>>`
-  ${p =>
-    p.disabled
-      ? ''
-      : `
-      &:hover {
-        border-color: ${p.theme.color.inputBorderHover};
-      }
-`}
-`;
-
-const focusBorderStyles = css`
-  &:focus-within {
-    border-color: ${p => p.theme.color.borderActive};
-  }
-  &.focus-within {
-    border-color: ${p => p.theme.color.borderActive};
-  }
-`;
-const hasError = (error?: Props['error']) => error && error !== '';
-const borderStyles = css<Pick<Props, 'error' | 'success'>>`
-  outline: none;
-  border: 1px solid
-    ${p => {
-      if (hasError(p.error)) return p.theme.color.inputBorderError;
-      if (p.success) return p.theme.color.inputBorderSuccess;
-      return p.theme.color.inputBorder;
-    }};
-  position: relative;
-  ${hoverBorderStyles}
-  ${focusBorderStyles}
-`;
-
-const SelectWrapper = styled.div`
-  ${height}
-  ${borderStyles}
-  position:relative;
-`;
-const FormFieldOrFragment = React.forwardRef<HTMLDivElement, any>(
-  ({ children, noFormField, open, onFocus, onBlur, fullWidth, id, size, ...props }, ref) => (
-    <StyledRelativeDiv {...(noFormField ? { ref } : {})} fullWidth={fullWidth}>
-      <Flexbox
-        {...(noFormField ? { onBlur, onFocus } : {})}
-        container
-        alignItems="center"
-        {...(fullWidth ? { width: '100%' } : {})}
-      >
-        {noFormField ? (
-          children
-        ) : (
-          <FormField
-            id={`label-for-${id}`}
-            fieldId={id}
-            {...props}
-            {...(fullWidth ? { width: '100%' } : {})}
-            ref={ref}
-          >
-            <SelectWrapper onBlur={onBlur} onFocus={onFocus} size={size} {...props}>
-              {children}
-              <Chevron open={open} />
-            </SelectWrapper>
-          </FormField>
-        )}
-      </Flexbox>
-    </StyledRelativeDiv>
-  ),
-);
-FormFieldOrFragment.displayName = 'FormFieldOrFragment';
-
-const useAutofocus = (ref: React.RefObject<any>, enable: boolean) => {
+const useAutofocus = (ref: React.RefObject<any>, enable?: boolean) => {
   React.useEffect(() => {
     if (enable && ref && ref.current) ref.current.focus();
   }, [enable]);
 };
-const useDebounce = (fn, ms) => {
-  const timeoutId = React.useRef(null);
-  return (...args) => {
-    if (timeoutId.current) {
-      clearTimeout(timeoutId.current);
+
+const useFocusFromMachine = (machineState, buttonRef, itemRefs) => {
+  React.useEffect(() => {
+    if (
+      machineState.matches('interaction.enabled.active.focus.listItem.anyItemFocused') &&
+      machineState.matches({ open: 'on' })
+    ) {
+      if (itemRefs[machineState.context.itemFocusIdx])
+        itemRefs[machineState.context.itemFocusIdx].focus();
+    } else if (machineState.matches('interaction.enabled.active.focus')) {
+      if (buttonRef.current) buttonRef.current.focus();
     }
-    timeoutId.current = setTimeout(() => fn(...args), ms);
-  };
-};
-const useRequestAnimationFrame = fn => {
-  const frameId = React.useRef(null);
-  return (...args) => {
-    if (frameId.current) {
-      cancelAnimationFrame(frameId.current);
-    }
-    frameId.current = requestAnimationFrame(() => fn(...args));
-  };
+  }, [machineState]);
 };
 
-const Select = (props: Props) => {
-  // Todo remove the whole destructuting
-  const { size, options, components, noFormField, disabled, fullWidth, id } = props;
-
-  assert(Boolean(props.id), 'Input.Select: Provide an id.');
+const useIsFirstRender = () => {
   const isFirstRender = React.useRef(true);
+  React.useEffect(() => {
+    isFirstRender.current = false;
+  }, []);
+  return isFirstRender.current;
+};
+
+const useBatchedSend = (send: Function) => {
+  const accumulatedArrowActions = React.useRef([] as any[]);
+  const currentTimeoutId = React.useRef<NodeJS.Timeout | null>(null);
+
+  return React.useCallback(
+    (actionTypes: any[]) => {
+      accumulatedArrowActions.current.push(...actionTypes);
+      if (currentTimeoutId.current) clearTimeout(currentTimeoutId.current);
+      currentTimeoutId.current = setTimeout(() => {
+        currentTimeoutId.current = null;
+        // Sending array of actions enables batching
+        const actions = [...accumulatedArrowActions.current];
+        accumulatedArrowActions.current = [];
+        send(actions);
+      }, 0);
+    },
+    [send],
+  );
+};
+
+const useSyncTwoMachines = (mainMachineSend, searchMachineState, searchMachineSend) => {
+  React.useEffect(() => {
+    if (searchMachineState.matches('search')) {
+      searchMachineSend({ type: 'SEARCHED' });
+      mainMachineSend({ type: 'SEARCH', payload: searchMachineState.context.searchQuery });
+    }
+  }, [searchMachineState]);
+};
+
+const useSyncPropsWithMachine = (propsToSync, deps) => {
+  const send = deps[0];
+
+  React.useEffect(() => {
+    send({
+      type: 'SYNC',
+      payload: propsToSync,
+    });
+  }, deps);
+};
+
+const useMultiRef = () => {
+  const itemRefs = React.useMemo(() => [], []);
+  const setItemRef = React.useCallback(
+    index => ref => {
+      if (ref) itemRefs[index] = ref;
+    },
+    [],
+  );
+  return [itemRefs, setItemRef];
+};
+
+const useDelegateKeyDownToMachine = (send, searchMachineSend) => {
+  const sendBatched = useBatchedSend(send);
+
+  return React.useCallback(
+    e => {
+      if (keyActionMap.keys.includes(e.key)) {
+        sendBatched(['KEY_PRESS', keyActionMap[e.key]]);
+        e.preventDefault();
+        return false;
+      }
+      searchMachineSend({ type: 'CHANGE', payload: e.key });
+      send(['KEY_PRESS']);
+    },
+    [searchMachineSend, sendBatched],
+  );
+};
+const usePropagateChangesThroughOnChange = (machineState, send, onChange, isFirstRender) => {
+  React.useEffect(() => {
+    // Don't want to grab first onChange
+    // Why is it happenning though 🤔
+    if (isFirstRender) return;
+    if (machineState.matches({ selection: 'changeUncommitted' })) {
+      if (onChange) onChange(machineState.context.selectedItems);
+      send('CHANGE_COMMIT');
+    }
+  }, [machineState, onChange]);
+};
+const Select = (props: Props) => {
+  assert(Boolean(props.id), `Input.Select: "id" is required.`);
+
+  const isFirstRender = useIsFirstRender();
+
+  /******      Machine instantiation      ******/
   const machineHandlers = useMachine(
     SelectMachine.withContext({
       label: props.label,
       error: props.error,
       success: props.success,
-      options,
+      options: props.options,
       selectedItems: props.value || [],
-      disabled,
+      disabled: props.disabled,
       open: false,
       itemFocusIdx: null,
       placeholder: props.placeholder,
@@ -166,196 +164,133 @@ const Select = (props: Props) => {
       lastNavigationType: null,
     }),
   );
-  const [current, send] = machineHandlers;
-
-  React.useEffect(() => {
-    if (isFirstRender.current) return;
-    if (current.matches({ selection: 'changeUncommitted' })) {
-      if (props.onChange) props.onChange(current.context.selectedItems);
-      send('CHANGE_COMMIT');
-    }
-  }, [current, props.onChange]);
-
-  console.log('navtype:', current.context.lastNavigationType);
+  const [machineState, send] = machineHandlers;
   const [searchMachineState, searchMachineSend] = useMachine(searchMachine);
 
-  React.useEffect(() => {
-    send({
-      type: 'SYNC',
-      payload: {
-        label: props.label,
-        options: props.options,
-        placeholder: props.placeholder,
-        error: props.error,
-        selectedItems: props.value || [],
-        success: props.success,
-        disabled: props.disabled,
-        extraInfo: props.extraInfo,
-        multiselect: props.multiselect,
-      },
-    });
-  }, [
-    props.label,
-    props.options,
-    send,
-    props.placeholder,
-    props.error,
-    props.success,
-    props.disabled,
-    props.extraInfo,
-    props.value,
-    props.multiselect,
-  ]);
+  /******      Machine syncing      ******/
+  usePropagateChangesThroughOnChange(machineState, send, props.onChange, isFirstRender);
+  useSyncTwoMachines(send, searchMachineState, searchMachineSend);
+  useSyncPropsWithMachine(
+    {
+      label: props.label,
+      options: props.options,
+      placeholder: props.placeholder,
+      error: props.error,
+      selectedItems: props.value || [],
+      success: props.success,
+      disabled: props.disabled,
+      extraInfo: props.extraInfo,
+      multiselect: props.multiselect,
+    },
+    [
+      send,
+      props.label,
+      props.options,
+      props.placeholder,
+      props.error,
+      props.success,
+      props.disabled,
+      props.extraInfo,
+      props.value,
+      props.multiselect,
+    ],
+  );
 
-  React.useEffect(() => {
-    if (searchMachineState.matches('search')) {
-      searchMachineSend({ type: 'SEARCHED' });
-      send({ type: 'SEARCH', payload: searchMachineState.context.searchQuery });
-    }
-  }, [searchMachineState]);
-
+  /******      Handlers      ******/
   const handleClickListItem = option => e => {
-    const isSelected = current.context.selectedItems.includes(option);
-    const type = isSelected ? 'DESELECT_ITEM' : 'SELECT_ITEM';
     e.preventDefault();
-    send({ type, payload: option });
+    send({ type: 'ITEM_CLICK', payload: option });
     return false;
   };
 
-  let accumulatedArrowActions = React.useRef([]);
-  let currentFrameId = React.useRef(null);
-  let currentTimeoutId = React.useRef(null);
+  const handleKeyDown = useDelegateKeyDownToMachine(send, searchMachineSend);
 
-  const sendBatched = actionTypes => {
-    accumulatedArrowActions.current.push(...actionTypes);
-    if (currentTimeoutId.current) clearTimeout(currentTimeoutId.current);
-    currentTimeoutId.current = setTimeout(() => {
-      currentTimeoutId.current = null;
-      // Sending array of actions enables batching
-      const actions = [...accumulatedArrowActions.current];
-      accumulatedArrowActions.current = [];
-      send(actions);
-    }, 0);
-  };
+  const isKeyboardNavigation = machineState.matches(
+    'interaction.enabled.active.navigation.keyboard',
+  );
 
-  const handleKeyDown = e => {
-    if (keyActionMap.keys.includes(e.key)) {
-      sendBatched(['KEY_PRESS', keyActionMap[e.key]]);
-      e.preventDefault();
-      return false;
-    }
-    searchMachineSend({ type: 'CHANGE', payload: e.key });
-    send(['KEY_PRESS']);
-  };
-
-  const isOpen = current.matches({ open: 'on' });
-
-  const buttonRef = React.useRef(null);
-  const itemRefs = React.useMemo(() => [], []);
-  const listRef = React.useRef(null);
-  const formFieldRef = React.useRef(null);
-
-  useAutofocus(buttonRef, props.autoFocus);
-
-  const isKeyboardNavigation = current.matches('interaction.enabled.active.navigation.keyboard');
-  const handleMouseMove = () => {
+  const handleMouseMove = React.useCallback(() => {
     if (isKeyboardNavigation) {
       send('MOUSE_MOVE');
     }
-  };
-  React.useLayoutEffect(() => {
-    if (isOpen) {
-      send({ type: 'FOCUS' });
-    } else if (!isFirstRender.current) {
-      buttonRef.current.focus();
-    }
-  }, [isOpen]);
+  }, [isKeyboardNavigation]);
 
-  const setItemRef = index => ref => {
-    if (ref) itemRefs[index] = ref;
-  };
+  /******      Refs      ******/
+  const buttonRef = React.useRef(null);
+  const [itemRefs, setItemRef] = useMultiRef();
+  const listRef = React.useRef(null);
+  const formFieldRef = React.useRef(null);
 
-  React.useEffect(() => {
-    if (current.matches('interaction.enabled.active.focus.listItem.anyItemFocused')) {
-      itemRefs[current.context.itemFocusIdx].focus();
-    }
-  }, [current]);
-
-  React.useEffect(() => {
-    isFirstRender.current = false;
-  }, []);
-
-  const { ListItem, List, SelectedValue } = useComponentsWithDefaults(components, {
-    multiselect: current.context.multiselect,
-  });
-
+  /******      Focus management      ******/
+  useAutofocus(buttonRef, props.autoFocus);
+  useFocusFromMachine(machineState, buttonRef, itemRefs);
   useOnClickOutside([listRef, formFieldRef], () => send({ type: 'BLUR' }));
 
-  // const handleMouseHover = useRequestAnimationFrame(newIdx =>
-  //   send({ type: 'ITEM_HOVERED', payload: newIdx }),
-  // );
-  // const counter = createCounter();
-  // Not using isFocused in state, hence ref
-  // const isFocused = React.useRef(false);
+  /******      Renderers      ******/
+  const { ListItem, List, SelectedValue } = useComponentsWithDefaults(props.components, {
+    multiselect: machineState.context.multiselect,
+  });
 
-  const isDisabled = current.matches('interaction.disabled');
-  const hasError = current.matches('correctness.error');
-  const error = current.context.error;
-  const success = current.context.success;
-  const extraInfo = current.context.extraInfo;
+  /******      Values from machine      ******/
+  const isOpen = machineState.context.open;
+  const isDisabled = machineState.context.disabled;
+  const error = machineState.context.error;
+  const success = machineState.context.success;
+  const extraInfo = machineState.context.extraInfo;
+
   return (
     <>
-      <HiddenSelect name={props.name} disabled={current.context.disabled} aria-hidden="true">
-        {current.context.placeholder && (
+      <HiddenSelect name={props.name} disabled={machineState.context.disabled} aria-hidden="true">
+        {machineState.context.placeholder && (
           <option
-            label={current.context.placeholder}
+            label={machineState.context.placeholder}
             value=""
-            {...(current.context.selectedItems.length === 0 ? { selected: true } : {})}
+            {...(machineState.context.selectedItems.length === 0 ? { selected: true } : {})}
           />
         )}
-        {current.context.options.map(x => (
+        {machineState.context.options.map(x => (
           <option
             label={x.label}
             value={x.value}
-            {...(current.context.selectedItems.includes(x) ? { selected: true } : {})}
+            {...(machineState.context.selectedItems.includes(x) ? { selected: true } : {})}
           />
         ))}
       </HiddenSelect>
       <SelectStateContext.Provider value={machineHandlers}>
         <FormFieldOrFragment
-          label={current.context.label}
-          noFormField={noFormField}
+          label={machineState.context.label}
+          noFormField={props.noFormField}
           ref={formFieldRef}
           disabled={isDisabled}
           open={isOpen}
-          fullWidth={fullWidth}
+          fullWidth={props.fullWidth}
           error={error}
           success={success}
           extraInfo={extraInfo}
-          id={id}
-          size={size}
+          id={props.id}
+          size={props.size}
         >
           <SelectedValueWrapper
             ref={buttonRef}
             open={isOpen}
-            label={current.context.label}
+            label={machineState.context.label}
             disabled={isDisabled}
-            noFormField={noFormField}
-            placeholder={current.context.placeholder}
+            noFormField={props.noFormField}
+            placeholder={machineState.context.placeholder}
             component={SelectedValue}
-            options={options}
-            state={current}
-            id={id}
+            options={machineState.context.options}
+            state={machineState}
+            id={props.id}
           />
           {isOpen && (
             <ListWrapper
               component={List}
-              noFormField={noFormField}
+              noFormField={props.noFormField}
               onKeyDown={handleKeyDown}
               onMouseMove={handleMouseMove}
               ref={listRef}
             >
-              {options.map((x: any, index: number) => (
+              {machineState.context.options.map((x: any, index: number) => (
                 <ListItemWrapper
                   key={x.value}
                   isKeyboardNavigation={isKeyboardNavigation}
@@ -363,8 +298,7 @@ const Select = (props: Props) => {
                   ref={setItemRef(index)}
                   option={x}
                   onClick={x.disabled ? noop : handleClickListItem(x)}
-                  component={ListItem as any}
-                  // onMouseEnter={handleMouseHover}
+                  component={ListItem}
                 />
               ))}
             </ListWrapper>

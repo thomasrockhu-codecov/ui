@@ -26,8 +26,16 @@ export const SelectMachine = Machine({
     open: {
       initial: 'unknown',
       on: {
+        OPEN: {
+          actions: assign({
+            itemFocusIdx: ctx =>
+              ctx.selectedItems.length > 0
+                ? ctx.options.findIndex(x => x === ctx.selectedItems[0])
+                : ctx.itemFocusIdx,
+          }),
+        },
         TOGGLE: {
-          actions: assign({ open: ctx => !ctx.open }),
+          actions: [assign({ open: ctx => !ctx.open }), send(ctx => (ctx.open ? 'OPEN' : 'CLOSE'))],
           target: '.unknown',
         },
         BLUR: {
@@ -53,22 +61,16 @@ export const SelectMachine = Machine({
                 target: 'on',
                 cond: ctx => ctx.open,
               },
-              { target: 'off' },
+              {
+                target: ['off', '#inputSelect.interaction.unknown'],
+                actions: assign({
+                  lastNavigationType: 'keyboard',
+                }),
+              },
             ],
           },
         },
-        on: {
-          on: {
-            FOCUS: {
-              actions: assign({
-                itemFocusIdx: ctx =>
-                  ctx.selectedItems.length > 0
-                    ? ctx.options.findIndex(x => x === ctx.selectedItems[0])
-                    : ctx.itemFocusIdx,
-              }),
-            },
-          },
-        },
+        on: {},
         off: {},
       },
     },
@@ -198,7 +200,18 @@ export const SelectMachine = Machine({
             HOVER_ON: '.active.hover.on',
             HOVER_OFF: '.active.hover.off',
             FOCUS: '.active.focus.unknown',
+            OPEN: '.active.focus.unknown',
             BLUR: '.active.focus.off',
+            ITEM_CLICK: {
+              actions: send((ctx, event) => {
+                const isSelected = ctx.selectedItems.includes(event.payload);
+                const type = isSelected ? 'DESELECT_ITEM' : 'SELECT_ITEM';
+                return {
+                  type,
+                  payload: event.payload,
+                };
+              }),
+            },
             ITEM_HOVERED: {
               actions: assign({ itemFocusIdx: (ctx, e) => e.payload }),
             },
@@ -207,10 +220,12 @@ export const SelectMachine = Machine({
           states: {
             unknown: {
               on: {
-                '': {
-                  target: 'active.focus',
-                  cond: ctx => ctx.itemFocusIdx !== null,
-                },
+                '': [
+                  {
+                    target: 'active.focus',
+                    cond: ctx => ctx.itemFocusIdx !== null,
+                  },
+                ],
               },
             },
             idle: {},
@@ -233,7 +248,9 @@ export const SelectMachine = Machine({
                       on: {
                         MOUSE_MOVE: {
                           target: 'mouse',
-                          actions: assign({ lastNavigationType: () => 'mouse' }),
+                          actions: assign({
+                            lastNavigationType: () => 'mouse',
+                          }),
                         },
                       },
                     },
@@ -241,7 +258,9 @@ export const SelectMachine = Machine({
                       on: {
                         KEY_PRESS: {
                           target: 'keyboard',
-                          actions: assign({ lastNavigationType: () => 'keyboard' }),
+                          actions: assign({
+                            lastNavigationType: () => 'keyboard',
+                          }),
                         },
                       },
                     },
@@ -253,10 +272,7 @@ export const SelectMachine = Machine({
                     off: {},
                     unknown: {
                       on: {
-                        '': [
-                          { target: 'button', in: '#inputSelect.open.off' },
-                          { target: 'listItem' },
-                        ],
+                        '': [{ target: 'button', cond: ctx => !ctx.open }, { target: 'listItem' }],
                       },
                     },
                     button: {},
