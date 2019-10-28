@@ -1,11 +1,12 @@
 /** eslint-disable react-hooks/rules-of-hooks */
 import React from 'react';
+import R from 'ramda';
 import styled from 'styled-components';
 import { Input, Avatar, Flexbox, Number, Typography, Box, Icon } from '../../..';
 import { Display } from '../../../common/Display';
 import mdx from './Select.mdx';
 
-const FlexedBox = styled(Box)<any>`
+const FlexedBox = styled(Box)`
   flex-grow: 1;
   display: flex;
   align-items: center;
@@ -43,14 +44,7 @@ const AccountValue = () => {
 
 const StyledBox = styled(Box)<{ focused: boolean }>`
   cursor: pointer;
-  background: ${p => p.theme.color.card};
-  ${p => (p.focused ? `outline: 1px solid ${p.theme.color.cta};` : '')}
-  &:hover {
-    background: ${p => p.theme.color.background};
-  }
-  &:focus {
-    background: ${p => p.theme.color.background};
-  }
+  background: ${p => (p.focused ? p.theme.color.background : p.theme.color.card)};
 `;
 
 const AccountListItem = ({ index }: any, ref) => {
@@ -58,7 +52,6 @@ const AccountListItem = ({ index }: any, ref) => {
   const option = state.context.options[index];
   const selected = state.context.selectedItems.includes(option);
   const focused = state.context.itemFocusIdx === index;
-  console.log({ focused });
   return (
     <StyledBox px={2} py={1} focused={focused} ref={ref}>
       <Flexbox container justifyContent="space-between" gutter={4}>
@@ -89,198 +82,6 @@ const AccountListItem = ({ index }: any, ref) => {
   );
 };
 
-// const Chevron = styled(Icon.ChevronDown)<{ open: boolean }>`
-//   transform: translateY(-50%) ${p => (p.open ? 'rotate(180deg)' : 'rotate(0)')};
-//   transform-origin: center center;
-//   transition: transform 0.16s ease-out;
-//   position: absolute;
-//   height: ${p => p.theme.spacing.unit(2)}px;
-//   top: 50%;
-//   right: ${p => p.theme.spacing.unit(1)}px;
-//   pointer-events: none;
-// `;
-
-// const StyledRelativeDiv = styled.div<any>`
-//   position: relative;
-//   display: inline-block;
-//   width: ${p => (p.fullWidth ? '100%' : 'initial')};
-// `;
-
-// const height = css<Pick<Props, 'size'>>`
-//   height: ${p => (p.size === 's' ? p.theme.spacing.unit(8) : p.theme.spacing.unit(10))}px;
-// `;
-
-// const hoverBorderStyles = css<Pick<Props, 'disabled'>>`
-//   ${p =>
-//     p.disabled
-//       ? ''
-//       : `
-//       &:hover {
-//         border-color: ${p.theme.color.inputBorderHover};
-//       }
-// `}
-// `;
-
-// const focusBorderStyles = css`
-//   &:focus-within {
-//     border-color: ${p => p.theme.color.borderActive};
-//   }
-//   &.focus-within {
-//     border-color: ${p => p.theme.color.borderActive};
-//   }
-// `;
-// const hasError = (error?: Props['error']) => error && error !== '';
-// const borderStyles = css<Pick<Props, 'error' | 'success'>>`
-//   outline: none;
-//   border: 1px solid
-//     ${p => {
-//       if (hasError(p.error)) return p.theme.color.inputBorderError;
-//       if (p.success) return p.theme.color.inputBorderSuccess;
-//       return p.theme.color.inputBorder;
-//     }};
-//   position: relative;
-//   ${hoverBorderStyles}
-//   ${focusBorderStyles}
-// `;
-
-// const SelectWrapper = styled(NormalizedElements.Button).attrs({ type: 'button' })`
-//   ${height}
-//   ${borderStyles}
-//   position:relative;
-// `;
-
-// const TheSelect = ({ options }) => {
-//   const [current, send] = useMachine(
-//     SelectMachine.withContext({
-//       error: false,
-//       success: false,
-//       options: options,
-//       selectedItems: [],
-//       disabled: false,
-//       open: false,
-//       itemFocusIdx: null,
-//     }),
-//   );
-
-//   React.useEffect(() => {
-//     send({ type: 'SYNC', payload: { options } });
-//   }, [options, send]);
-
-//   const handleClick = option => () => {
-//     const isSelected = current.context.selectedItems.includes(option);
-//     const type = isSelected ? 'DESELECT_ITEM' : 'SELECT_ITEM';
-//     console.log({ isSelected, type, option });
-//     send({ type, payload: option });
-//   };
-//   const handleKeyDown = e => {
-//     console.log(e.key);
-//     if (e.key === 'ArrowDown') {
-//       send({ type: 'FOCUS_NEXT_ITEM' });
-//       e.preventDefault();
-//       return false;
-//     }
-//     if (e.key === 'ArrowUp') {
-//       send({ type: 'FOCUS_PREV_ITEM' });
-//       e.preventDefault();
-//       return false;
-//     }
-//     if (e.key === 'Tab') {
-//       e.preventDefault();
-//       send({ type: 'BLUR' });
-//       return false;
-//     }
-//     if (e.key === ' ') {
-//       send({ type: 'SELECT_FOCUSED_ITEM' });
-//       e.preventDefault();
-//       return false;
-//     }
-//     if (e.key === 'Enter') {
-//       send({ type: 'SELECT_FOCUSED_ITEM' });
-//       e.preventDefault();
-//       return false;
-//     }
-//   };
-//   const isOpen = current.matches({ open: 'on' });
-
-//   const isFirstRender = React.useRef(true);
-//   const buttonRef = React.useRef(null);
-//   const itemRefs = React.useMemo(() => [], []);
-
-//   React.useLayoutEffect(() => {
-//     if (isOpen) {
-//       send({ type: 'FOCUS' });
-//     } else if (!isFirstRender.current) {
-//       buttonRef.current.focus();
-//     }
-//   }, [isOpen, send]);
-
-//   const setItemRef = index => ref => {
-//     if (ref) itemRefs[index] = ref;
-//   };
-
-//   React.useEffect(() => {
-//     if (current.matches('interaction.enabled.active.focus.listItem.anyItemFocused')) {
-//       itemRefs[current.context.itemFocusIdx].focus();
-//     }
-//   }, [current]);
-
-//   React.useEffect(() => {
-//     isFirstRender.current = false;
-//   }, []);
-
-//   const label =
-//     current.context.selectedItems.length > 0
-//       ? current.context.selectedItems[0].label
-//       : 'Nothing yet';
-//   return (
-//     <div>
-//       <FormField width="100%" label="Hit me">
-//         <SelectWrapper ref={buttonRef} onClick={() => send({ type: 'TOGGLE' })}>
-//           {label}
-//           <Chevron open={isOpen} />
-//         </SelectWrapper>
-//       </FormField>
-//       {isOpen && (
-//         <OptionList
-//           onFocus={() => send({ type: 'FOCUS' })}
-//           onBlur={() => send({ type: 'BLUR' })}
-//           onKeyDown={handleKeyDown}
-//         >
-//           {current.context.options.map((option, idx) => {
-//             const focused = idx === current.context.itemFocusIdx;
-//             return (
-//               <Option
-//                 label={option.label}
-//                 value={option.value}
-//                 focused={focused}
-//                 key={option.value}
-//                 ref={setItemRef(idx)}
-//                 selected={current.context.selectedItems.includes(option)}
-//                 onClick={handleClick(option)}
-//               />
-//             );
-//           })}
-//         </OptionList>
-//       )}
-//     </div>
-//   );
-// };
-
-// const machineStory = () => {
-//   const [options, setOptions] = React.useState(() => [
-//     { value: 1, label: '1' },
-//     { value: 2, label: '2' },
-//     { value: 3, label: '3' },
-//   ]);
-//   return (
-//     <>
-//       <button onClick={() => setOptions(options.slice(0, -1))}>Remove one</button>
-//       <pre>{JSON.stringify(options)}</pre>
-//       <TheSelect options={options} />
-//       <TheSelect options={options} />
-//     </>
-//   );
-// };
 export const defaultStory = () => (
   <Input.Select
     id="input-1"
@@ -289,7 +90,6 @@ export const defaultStory = () => (
     placeholder="Placeholder"
   />
 );
-
 export const overflowStory = () => (
   <Input.Select
     id="input-1"
@@ -301,6 +101,7 @@ export const overflowStory = () => (
     placeholder="PlaceholderPlaceholderPlaceholderPlaceholderPlaceholderPlaceholderPlaceholderPlaceholderPlaceholderPlaceholderPlaceholderPlaceholderPlaceholder"
   />
 );
+
 export const searchStory = () => (
   <Input.Select
     id="input-1"
@@ -317,6 +118,7 @@ export const searchStory = () => (
     placeholder="Placeholder"
   />
 );
+
 export const two = () => (
   <>
     <Input.Select
@@ -359,6 +161,26 @@ const accountOptions = [
   },
 ];
 
+export const fullWidth = () => (
+  <Input.Select
+    id="onchange-select"
+    fullWidth
+    options={accountOptions}
+    label="User account"
+    placeholder="Select account"
+  />
+);
+
+export const autoFocus = () => (
+  <Input.Select
+    id="onchange-select"
+    autoFocus
+    options={accountOptions}
+    label="User account"
+    placeholder="Select account"
+  />
+);
+
 export const disabledItems = () => {
   return (
     <Input.Select
@@ -386,11 +208,34 @@ export const customRenderers = () => {
 };
 
 export const multiselect = () => {
-  const [value, setValue] = React.useState<any[]>([]);
+  const [value, setValue] = React.useState([]);
   return (
     <Input.Select
       id="custom-renderers-select"
       options={accountOptions}
+      value={value}
+      onChange={setValue}
+      multiselect
+      label="User account"
+      placeholder="Select account"
+    />
+  );
+};
+
+const accountOptionsAndSelectAll = [
+  {
+    label: 'Select All',
+    value: undefined,
+    all: true,
+  },
+].concat(accountOptions);
+
+export const multiselectSelectAll = () => {
+  const [value, setValue] = React.useState([]);
+  return (
+    <Input.Select
+      id="multiwithall-select"
+      options={accountOptionsAndSelectAll}
       value={value}
       onChange={setValue}
       multiselect
@@ -419,6 +264,34 @@ export const changesFromProps = () => {
         placeholder="Select account"
       />
     </>
+  );
+};
+
+export const accessibleFromDocumentForms = () => {
+  const FORM_NAME = 'testForm';
+  const SELECT_NAME = 'mySelect';
+
+  // @ts-ignore
+  const [_, forceUpdate] = React.useState([]); // eslint-disable-line @typescript-eslint/no-unused-vars
+
+  return (
+    <form name={FORM_NAME}>
+      <Input.Select
+        id="forms-input-test"
+        options={accountOptions}
+        name={SELECT_NAME}
+        label="User account"
+        placeholder="Select account"
+        // Every time the value updates
+        // The story gonna rerender
+        // So we have fresh stuff from document.forms
+        // @ts-ignore
+        onChange={forceUpdate}
+      />
+      <br />
+      Value in form: &quot;
+      {R.path(['forms', FORM_NAME, 'elements', SELECT_NAME, 'value'])(document)}&quot;
+    </form>
   );
 };
 

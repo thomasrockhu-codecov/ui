@@ -43,13 +43,31 @@ const StyledListWrapper = styled.div<any>`
 `;
 
 export const ListWrapper = React.forwardRef<HTMLDivElement, any>(
-  ({ component: Component, children, noFormField, onKeyDown, onFocus, onBlur }, ref) => {
+  (
+    { component: Component, children, noFormField, onKeyDown, onFocus, onBlur, onHoverNewItem },
+    ref,
+  ) => {
+    const [prevElem, setPrevElem] = React.useState(null);
+    // const handleHover = e => {
+    //   const elem = [...document.elementsFromPoint(e.clientX, e.clientY)].find(
+    //     x => x.tagName === 'LI',
+    //   );
+    //   if (prevElem !== elem && elem) {
+    //     onHoverNewItem(elem);
+    //     setPrevElem(elem);
+    //   }
+
+    //   // if (props.onMouseEnter) {
+    //   //   props.onMouseEnter(props.index);
+    //   // }
+    // };
     return (
       <StyledListWrapper
         ref={ref}
         noFormField={noFormField}
         onKeyDown={onKeyDown}
         onFocus={onFocus}
+        // onMouseOver={handleHover}
         onBlur={onBlur}
       >
         <Component position={noFormField ? 'left' : 'right'}>{children}</Component>
@@ -116,26 +134,27 @@ export const ListItemWrapper = React.forwardRef<
     option: Option;
     index: number;
     onKeyDown: React.KeyboardEventHandler;
+    onMouseEnter: (index: number) => void;
     onClick: (params: { selected: boolean; option: Option }, e: React.MouseEvent) => void;
   }
->((props, outerRef) => {
+>((props, ref) => {
   const [current] = useSelectMachineFromContext();
   const selected = current.context.selectedItems.includes(props.option);
   const disabled = props.option.disabled;
-  const handleClick = React.useCallback(
-    e => props.onClick({ selected, option: props.option }, e),
-    [props.onClick, props.option, selected], // eslint-disable-line react-hooks/exhaustive-deps
-  );
-
-  // Passing ref through to the Component
-  // React.useImperativeHandle(outerRef, () => innerRef.current);
 
   const Component = props.component;
+  const handleHover = () => {
+    if (props.onMouseEnter) {
+      props.onMouseEnter(props.index);
+    }
+  };
+
   return (
     <StyledListItemWrapper
-      ref={outerRef}
+      ref={ref}
       role="option"
-      onClick={handleClick}
+      onClick={props.onClick}
+      onMouseEnter={handleHover}
       aria-selected={selected}
       aria-disabled={disabled}
       tabIndex={0}

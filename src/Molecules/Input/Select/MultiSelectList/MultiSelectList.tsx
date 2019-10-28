@@ -1,6 +1,9 @@
 import * as React from 'react';
 import styled, { css } from 'styled-components';
-import { Flexbox, Typography, List as UIList, Input } from '../../../..';
+import { Flexbox, Typography, List as UIList } from '../../../..';
+// Need to import it directly
+// Otherwise causes circular deps problems
+import { Checkbox } from '../../Checkbox';
 
 const TRIANGLE_SIZE = 10;
 type ListProps = {
@@ -75,16 +78,33 @@ const FullHeightFlexbox = styled(Flexbox)`
   height: 100%;
 `;
 
-type OptionProps = { selected?: boolean; disabled?: boolean; label: React.ReactNode; value: any };
-const StyledOption = styled.div<Pick<OptionProps, 'selected' | 'disabled'>>`
+type OptionProps = {
+  selected?: boolean;
+  disabled?: boolean;
+  label: React.ReactNode;
+  value: any;
+  focused?: boolean;
+  selectAll?: boolean;
+};
+const StyledOption = styled.div<Partial<OptionProps>>`
+${p =>
+  !p.selectAll
+    ? ''
+    : `
+border-bottom: 1px solid ${p.theme.color.divider};
+margin-bottom: ${p.theme.spacing.unit(2)}px;
+`}
   padding-right: ${p => p.theme.spacing.unit(2)}px;
   padding-left: ${p => p.theme.spacing.unit(2)}px;
   color: ${p => (p.selected ? p.theme.color.cta : p.theme.color.inputBorderHover)};
-  height: ${p => p.theme.spacing.unit(6)}px;
+  height: ${p => p.theme.spacing.unit(7)}px;
 
   white-space: nowrap;
-  background: ${p =>
-    p.disabled ? p.theme.color.disabledBackground : p.theme.color.selectOptionBackground};
+  background: ${p => {
+    if (p.disabled) return p.theme.color.disabledBackground;
+    if (p.focused) return p.theme.color.background;
+    return p.theme.color.selectOptionBackground;
+  }};
   cursor: pointer;
   ${p =>
     p.disabled
@@ -102,18 +122,32 @@ const StyledOption = styled.div<Pick<OptionProps, 'selected' | 'disabled'>>`
       `}
 `;
 
+const Checkbox16px = styled(Checkbox)`
+  ${Checkbox.components.CheckmarkBox} {
+    width: 16px;
+    height: 16px;
+  }
+`;
+
 export const Option = React.forwardRef<HTMLDivElement, OptionProps>(
-  ({ label, disabled, selected, focused }, ref) => (
-    <StyledOption ref={ref} selected={selected} disabled={disabled}>
+  ({ label, disabled, selected, focused, selectAll }, ref) => (
+    <StyledOption
+      ref={ref}
+      selected={selected}
+      disabled={disabled}
+      selectAll={selectAll}
+      focused={focused}
+    >
       <FullHeightFlexbox container alignItems="center" gutter={2}>
         <Flexbox item container alignItems="center">
           {/** TODO: revisit a11y here */}
-          <Input.Checkbox
+          <Checkbox16px
+            width="16px"
             name="example"
             label=""
             checked={selected}
+            readOnly
             visuallyFocused={focused}
-            width="20px"
           />
         </Flexbox>
         <Flexbox item container justifyContent="space-between" alignItems="center">

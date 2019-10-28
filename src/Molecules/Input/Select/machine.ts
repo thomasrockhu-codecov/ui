@@ -14,6 +14,7 @@ export const SelectMachine = Machine({
     searchQuery: '',
     extraInfo: '',
     multiselect: false,
+    label: '',
   },
   on: {
     SYNC: {
@@ -56,15 +57,15 @@ export const SelectMachine = Machine({
           },
         },
         on: {
-          entry: {
-            actions: assign({
-              itemFocusIdx: ctx =>
-                ctx.selectedItems.length > 0
-                  ? ctx.options.findIndex(
-                      x => x === ctx.selectedItems[ctx.selectedItems.length - 1],
-                    )
-                  : ctx.itemFocusIdx,
-            }),
+          on: {
+            FOCUS: {
+              actions: assign({
+                itemFocusIdx: ctx =>
+                  ctx.selectedItems.length > 0
+                    ? ctx.options.findIndex(x => x === ctx.selectedItems[0])
+                    : ctx.itemFocusIdx,
+              }),
+            },
           },
         },
         off: {},
@@ -83,7 +84,13 @@ export const SelectMachine = Machine({
                   if (payload.all) {
                     return ctx.options;
                   }
-                  return ctx.selectedItems.concat(payload);
+                  let newSelectedItems = ctx.selectedItems.concat(payload);
+                  const selectAllOption = ctx.options.find(x => x.all);
+                  if (selectAllOption && newSelectedItems.length === ctx.options.length - 1) {
+                    // Maybe filtering for disabled?
+                    newSelectedItems = newSelectedItems.concat(selectAllOption);
+                  }
+                  return newSelectedItems;
                 }
                 return [payload];
               },
@@ -106,11 +113,15 @@ export const SelectMachine = Machine({
           target: '.unknown',
           actions: [
             assign({
-              selectedItems: ({ selectedItems }, { payload }) => {
+              selectedItems: (ctx, { payload }) => {
                 if (payload.all) {
                   return [];
                 }
-                return selectedItems.filter(x => x !== payload);
+                let predicate = x => x !== payload;
+                if (ctx.options.some(x => x.all)) {
+                  predicate = x => !x.all && x !== payload;
+                }
+                return ctx.selectedItems.filter(predicate);
               },
             }),
           ],
@@ -187,6 +198,9 @@ export const SelectMachine = Machine({
             HOVER_OFF: '.active.hover.off',
             FOCUS: '.active.focus.unknown',
             BLUR: '.active.focus.off',
+            ITEM_HOVERED: {
+              actions: assign({ itemFocusIdx: (ctx, e) => e.payload }),
+            },
           },
           initial: 'unknown',
           states: {

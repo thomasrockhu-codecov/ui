@@ -18,6 +18,7 @@ export type Props = {
    * Use this for controlled focus
    */
   visuallyFocused?: boolean;
+  readOnly?: boolean;
   onBlur?: React.FocusEventHandler<HTMLInputElement>;
   onChange?: React.ChangeEventHandler<HTMLInputElement>;
   onClick?: React.MouseEventHandler<HTMLInputElement>;

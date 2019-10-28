@@ -93,7 +93,12 @@ const Label = styled(Typography)`
   white-space: initial;
 `;
 
-const Checkbox: CheckboxComponent = props => {
+const components = {
+  Label,
+  CheckmarkBox,
+};
+
+const Checkbox: CheckboxComponent & { components: typeof components } = props => {
   const {
     autoFocus,
     checked,
@@ -116,6 +121,7 @@ const Checkbox: CheckboxComponent = props => {
     visuallyEmphasiseRequired,
     visuallyFocused,
     width,
+    readOnly,
   } = props;
 
   return (
@@ -137,6 +143,7 @@ const Checkbox: CheckboxComponent = props => {
               onKeyDown,
               onKeyPress,
               onKeyUp,
+              readOnly,
               required,
               value,
               visuallyFocused,
@@ -153,5 +160,7 @@ const Checkbox: CheckboxComponent = props => {
     </FormField>
   );
 };
+
+Checkbox.components = components;
 
 export default Checkbox;

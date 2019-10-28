@@ -126,11 +126,11 @@ const StyledOption = styled(Typography)<OptionProps>`
     p.focused
       ? `
     transform: translateZ(0);
-    outline: 1px solid ${p.theme.color.cta};
   `
       : ''}
   background: ${p => {
     if (p.disabled) return p.theme.color.disabledBackground;
+    if (p.focused) return p.theme.color.background;
     return p.theme.color.selectOptionBackground;
   }};
   cursor: pointer;
@@ -140,16 +140,7 @@ const StyledOption = styled(Typography)<OptionProps>`
         color: ${p.theme.color.disabledText}
         pointer-events: none;
       `
-      : ` &:hover {
-          background: ${p.theme.color.background};
-        }
-
-        &:focus {
-          background: ${p.theme.color.background};
-        }
-
-       
-      `}
+      : ''}
 `;
 
 const EllipsizingText = styled.span`

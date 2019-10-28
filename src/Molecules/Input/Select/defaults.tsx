@@ -10,7 +10,8 @@ import { Option as DefaultMultiselectListItem } from './MultiSelectList/MultiSel
 
 import { useSelectMachineFromContext } from './context';
 
-import { ActionTypes, OptionBase } from './Select.types';
+import { OptionBase } from './Select.types';
+import { assert } from '../../../common/utils';
 
 const getLabelOrPlaceholder = <T extends OptionBase>(state: any) => {
   if (state.context.selectedItems.length === 0) return state.context.placeholder;
@@ -32,18 +33,6 @@ const StyledFlexedBox = styled(Box)`
 
   align-items: center;
 `;
-// FIXME
-// Need to upgrade to ts@3.5+
-// Then it can be written as
-// ActionTypes = {} as const
-export const defaultActionTypes: Record<ActionTypes, ActionTypes> = {
-  'Select.Open': 'Select.Open' as 'Select.Open',
-  'Select.Close': 'Select.Close' as 'Select.Close',
-  'Select.Toggle': 'Select.Toggle' as 'Select.Toggle',
-  'Select.SelectValue': 'Select.SelectValue' as 'Select.SelectValue',
-  'Select.DeselectValue': 'Select.DeselectValue' as 'Select.DeselectValue',
-  'Select.SyncState': 'Select.SyncState' as 'Select.SyncState',
-};
 
 export const defaultComponents = {
   ListItem: React.forwardRef<HTMLDivElement, { index: number }>(({ index }, ref) => {
@@ -81,6 +70,7 @@ export const defaultComponentsMultiselect = {
     const option = state.context.options[index];
     const selected = state.context.selectedItems.includes(option);
     const focused = state.context.itemFocusIdx === index;
+    const selectAll = option.all;
 
     return (
       <DefaultMultiselectListItem
@@ -90,6 +80,7 @@ export const defaultComponentsMultiselect = {
         label={option.label}
         value={option.value}
         focused={focused}
+        selectAll={selectAll}
       />
     );
   }),
@@ -97,6 +88,14 @@ export const defaultComponentsMultiselect = {
   List: DefaultList,
   SelectedValue: () => {
     const [state] = useSelectMachineFromContext();
+    React.useEffect(() => {
+      assert(
+        false,
+        'Input.Select: You probably want to redefine SelectedValue message for your case.',
+        { level: 'warn' },
+      );
+    }, []);
+
     return (
       <StyledFlexedBox px={2}>
         <EllipsizingText>{getLabelOrPlaceholder(state)}</EllipsizingText>

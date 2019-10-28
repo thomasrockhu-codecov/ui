@@ -43,8 +43,10 @@ export type Props = {
    * e.g. a link with dropdown
    */
   noFormField?: boolean;
-  /** focus first option on open */
-  autoFocusFirstOption?: boolean;
+  /**
+   * Auto focus this field on mount
+   */
+  autoFocus?: boolean;
 
   multiselect?: boolean;
 };
