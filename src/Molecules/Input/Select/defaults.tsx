@@ -35,23 +35,25 @@ const StyledFlexedBox = styled(Box)`
 `;
 
 export const defaultComponents = {
-  ListItem: React.forwardRef<HTMLDivElement, { index: number }>(({ index }, ref) => {
-    const [state] = useSelectMachineFromContext();
-    const option = state.context.options[index];
-    const selected = state.context.selectedItems.includes(option);
-    const focused = state.context.itemFocusIdx === index;
-
-    return (
-      <DefaultListItem
-        ref={ref}
-        selected={selected}
-        disabled={option.disabled}
-        label={option.label}
-        value={option.value}
-        focused={focused}
-      />
-    );
-  }),
+  ListItem: React.forwardRef<HTMLDivElement, { index: number }>(
+    ({ index, isKeyboardNavigation }, ref) => {
+      const [state] = useSelectMachineFromContext();
+      const option = state.context.options[index];
+      const selected = state.context.selectedItems.includes(option);
+      const focused = state.context.itemFocusIdx === index;
+      return (
+        <DefaultListItem
+          ref={ref}
+          selected={selected}
+          disabled={option.disabled}
+          label={option.label}
+          value={option.value}
+          focused={focused}
+          isKeyboardNavigation={isKeyboardNavigation}
+        />
+      );
+    },
+  ),
 
   List: DefaultList,
   SelectedValue: () => {
@@ -65,25 +67,28 @@ export const defaultComponents = {
 };
 
 export const defaultComponentsMultiselect = {
-  ListItem: React.forwardRef<HTMLDivElement, { index: number }>(({ index }, ref) => {
-    const [state] = useSelectMachineFromContext();
-    const option = state.context.options[index];
-    const selected = state.context.selectedItems.includes(option);
-    const focused = state.context.itemFocusIdx === index;
-    const selectAll = option.all;
+  ListItem: React.forwardRef<HTMLDivElement, { index: number }>(
+    ({ index, isKeyboardNavigation }, ref) => {
+      const [state] = useSelectMachineFromContext();
+      const option = state.context.options[index];
+      const selected = state.context.selectedItems.includes(option);
+      const focused = state.context.itemFocusIdx === index;
+      const selectAll = option.all;
 
-    return (
-      <DefaultMultiselectListItem
-        ref={ref}
-        selected={selected}
-        disabled={option.disabled}
-        label={option.label}
-        value={option.value}
-        focused={focused}
-        selectAll={selectAll}
-      />
-    );
-  }),
+      return (
+        <DefaultMultiselectListItem
+          ref={ref}
+          selected={selected}
+          disabled={option.disabled}
+          label={option.label}
+          value={option.value}
+          focused={focused}
+          selectAll={selectAll}
+          isKeyboardNavigation={isKeyboardNavigation}
+        />
+      );
+    },
+  ),
 
   List: DefaultList,
   SelectedValue: () => {

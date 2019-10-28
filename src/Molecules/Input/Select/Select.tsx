@@ -163,6 +163,7 @@ const Select = (props: Props) => {
       searchQuery: '',
       extraInfo: props.extraInfo,
       multiselect: props.multiselect || false,
+      lastNavigationType: null,
     }),
   );
   const [current, send] = machineHandlers;
@@ -175,6 +176,7 @@ const Select = (props: Props) => {
     }
   }, [current, props.onChange]);
 
+  console.log('navtype:', current.context.lastNavigationType);
   const [searchMachineState, searchMachineSend] = useMachine(searchMachine);
 
   React.useEffect(() => {
@@ -224,8 +226,8 @@ const Select = (props: Props) => {
   let currentFrameId = React.useRef(null);
   let currentTimeoutId = React.useRef(null);
 
-  const sendBatched = actionType => {
-    accumulatedArrowActions.current.push({ type: actionType });
+  const sendBatched = actionTypes => {
+    accumulatedArrowActions.current.push(...actionTypes);
     if (currentTimeoutId.current) clearTimeout(currentTimeoutId.current);
     currentTimeoutId.current = setTimeout(() => {
       currentTimeoutId.current = null;
@@ -238,11 +240,12 @@ const Select = (props: Props) => {
 
   const handleKeyDown = e => {
     if (keyActionMap.keys.includes(e.key)) {
-      sendBatched(keyActionMap[e.key]);
+      sendBatched(['KEY_PRESS', keyActionMap[e.key]]);
       e.preventDefault();
       return false;
     }
     searchMachineSend({ type: 'CHANGE', payload: e.key });
+    send(['KEY_PRESS']);
   };
 
   const isOpen = current.matches({ open: 'on' });
@@ -254,6 +257,12 @@ const Select = (props: Props) => {
 
   useAutofocus(buttonRef, props.autoFocus);
 
+  const isKeyboardNavigation = current.matches('interaction.enabled.active.navigation.keyboard');
+  const handleMouseMove = () => {
+    if (isKeyboardNavigation) {
+      send('MOUSE_MOVE');
+    }
+  };
   React.useLayoutEffect(() => {
     if (isOpen) {
       send({ type: 'FOCUS' });
@@ -282,9 +291,9 @@ const Select = (props: Props) => {
 
   useOnClickOutside([listRef, formFieldRef], () => send({ type: 'BLUR' }));
 
-  const handleMouseHover = useRequestAnimationFrame(newIdx =>
-    send({ type: 'ITEM_HOVERED', payload: newIdx }),
-  );
+  // const handleMouseHover = useRequestAnimationFrame(newIdx =>
+  //   send({ type: 'ITEM_HOVERED', payload: newIdx }),
+  // );
   // const counter = createCounter();
   // Not using isFocused in state, hence ref
   // const isFocused = React.useRef(false);
@@ -343,17 +352,19 @@ const Select = (props: Props) => {
               component={List}
               noFormField={noFormField}
               onKeyDown={handleKeyDown}
+              onMouseMove={handleMouseMove}
               ref={listRef}
             >
               {options.map((x: any, index: number) => (
                 <ListItemWrapper
                   key={x.value}
+                  isKeyboardNavigation={isKeyboardNavigation}
                   index={index}
                   ref={setItemRef(index)}
                   option={x}
                   onClick={x.disabled ? noop : handleClickListItem(x)}
                   component={ListItem as any}
-                  onMouseEnter={handleMouseHover}
+                  // onMouseEnter={handleMouseHover}
                 />
               ))}
             </ListWrapper>

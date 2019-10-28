@@ -110,6 +110,16 @@ type OptionProps = {
   ref: React.Ref<HTMLLIElement>;
 };
 
+const hoverIfNotKeyboardNav = css`
+  ${p =>
+    p.isKeyboardNavigation
+      ? ''
+      : `
+&:hover { 
+  background: ${p.theme.color.background};
+}
+`}
+`;
 const StyledOption = styled(Typography)<OptionProps>`
   display: flex;
   align-items: center;
@@ -130,9 +140,10 @@ const StyledOption = styled(Typography)<OptionProps>`
       : ''}
   background: ${p => {
     if (p.disabled) return p.theme.color.disabledBackground;
-    if (p.focused) return p.theme.color.background;
+    if (p.focused && p.isKeyboardNavigation) return p.theme.color.background;
     return p.theme.color.selectOptionBackground;
   }};
+  ${hoverIfNotKeyboardNav}
   cursor: pointer;
   ${p =>
     p.disabled
@@ -140,7 +151,7 @@ const StyledOption = styled(Typography)<OptionProps>`
         color: ${p.theme.color.disabledText}
         pointer-events: none;
       `
-      : ''}
+      : ``}
 `;
 
 const EllipsizingText = styled.span`
@@ -149,8 +160,9 @@ const EllipsizingText = styled.span`
   white-space: nowrap;
   overflow: hidden;
 `;
+
 export const Option = React.forwardRef<HTMLDivElement, OptionProps>(
-  ({ label, disabled, selected, focused, onClick }, ref) => (
+  ({ label, disabled, selected, focused, onClick, isKeyboardNavigation }, ref) => (
     <StyledOption
       ref={ref}
       selected={selected}
@@ -159,6 +171,7 @@ export const Option = React.forwardRef<HTMLDivElement, OptionProps>(
       onClick={onClick}
       type="secondary"
       color="inherit"
+      isKeyboardNavigation={isKeyboardNavigation}
     >
       <EllipsizingText>{label}</EllipsizingText>
       {selected && (

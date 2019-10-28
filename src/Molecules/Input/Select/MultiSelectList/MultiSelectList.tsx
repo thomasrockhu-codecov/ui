@@ -86,6 +86,21 @@ type OptionProps = {
   focused?: boolean;
   selectAll?: boolean;
 };
+
+const hoverIfNotKeyboardNav = css`
+  ${p =>
+    p.isKeyboardNavigation
+      ? ''
+      : `
+&:hover { 
+  background: ${p.theme.color.background};
+  ${Checkbox.components.CheckmarkBox} {
+    outline: 1px solid ${p.theme.color.cta};
+  }
+}
+`}
+`;
+
 const StyledOption = styled.div<Partial<OptionProps>>`
 ${p =>
   !p.selectAll
@@ -102,24 +117,18 @@ margin-bottom: ${p.theme.spacing.unit(2)}px;
   white-space: nowrap;
   background: ${p => {
     if (p.disabled) return p.theme.color.disabledBackground;
-    if (p.focused) return p.theme.color.background;
+    if (p.focused && p.isKeyboardNavigation) return p.theme.color.background;
     return p.theme.color.selectOptionBackground;
   }};
   cursor: pointer;
+  ${hoverIfNotKeyboardNav}
   ${p =>
     p.disabled
       ? `
         color: ${p.theme.color.disabledText}
         pointer-events: none;
       `
-      : ` &:hover {
-          background: ${p.theme.color.background};
-        }
-
-       
-
-       
-      `}
+      : ``}
 `;
 
 const Checkbox16px = styled(Checkbox)`
@@ -130,13 +139,14 @@ const Checkbox16px = styled(Checkbox)`
 `;
 
 export const Option = React.forwardRef<HTMLDivElement, OptionProps>(
-  ({ label, disabled, selected, focused, selectAll }, ref) => (
+  ({ label, disabled, selected, focused, selectAll, isKeyboardNavigation }, ref) => (
     <StyledOption
       ref={ref}
       selected={selected}
       disabled={disabled}
       selectAll={selectAll}
-      focused={focused}
+      focused={isKeyboardNavigation ? focused : false}
+      isKeyboardNavigation={isKeyboardNavigation}
     >
       <FullHeightFlexbox container alignItems="center" gutter={2}>
         <Flexbox item container alignItems="center">
@@ -147,7 +157,7 @@ export const Option = React.forwardRef<HTMLDivElement, OptionProps>(
             label=""
             checked={selected}
             readOnly
-            visuallyFocused={focused}
+            visuallyFocused={isKeyboardNavigation ? focused : false}
           />
         </Flexbox>
         <Flexbox item container justifyContent="space-between" alignItems="center">

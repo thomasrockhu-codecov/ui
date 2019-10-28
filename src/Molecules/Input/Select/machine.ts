@@ -15,6 +15,7 @@ export const SelectMachine = Machine({
     extraInfo: '',
     multiselect: false,
     label: '',
+    lastNavigationType: null,
   },
   on: {
     SYNC: {
@@ -217,6 +218,35 @@ export const SelectMachine = Machine({
               type: 'parallel',
 
               states: {
+                navigation: {
+                  initial: 'unknown',
+                  states: {
+                    unknown: {
+                      on: {
+                        '': [
+                          { target: 'mouse', cond: ctx => ctx.lastNavigationType === 'mouse' },
+                          { target: 'keyboard' },
+                        ],
+                      },
+                    },
+                    keyboard: {
+                      on: {
+                        MOUSE_MOVE: {
+                          target: 'mouse',
+                          actions: assign({ lastNavigationType: () => 'mouse' }),
+                        },
+                      },
+                    },
+                    mouse: {
+                      on: {
+                        KEY_PRESS: {
+                          target: 'keyboard',
+                          actions: assign({ lastNavigationType: () => 'keyboard' }),
+                        },
+                      },
+                    },
+                  },
+                },
                 focus: {
                   initial: 'unknown',
                   states: {

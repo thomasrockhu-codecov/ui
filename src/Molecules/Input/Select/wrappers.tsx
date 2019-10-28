@@ -44,7 +44,7 @@ const StyledListWrapper = styled.div<any>`
 
 export const ListWrapper = React.forwardRef<HTMLDivElement, any>(
   (
-    { component: Component, children, noFormField, onKeyDown, onFocus, onBlur, onHoverNewItem },
+    { component: Component, children, noFormField, onKeyDown, onFocus, onBlur, onMouseMove },
     ref,
   ) => {
     const [prevElem, setPrevElem] = React.useState(null);
@@ -67,7 +67,7 @@ export const ListWrapper = React.forwardRef<HTMLDivElement, any>(
         noFormField={noFormField}
         onKeyDown={onKeyDown}
         onFocus={onFocus}
-        // onMouseOver={handleHover}
+        onMouseMove={onMouseMove}
         onBlur={onBlur}
       >
         <Component position={noFormField ? 'left' : 'right'}>{children}</Component>
@@ -143,23 +143,16 @@ export const ListItemWrapper = React.forwardRef<
   const disabled = props.option.disabled;
 
   const Component = props.component;
-  const handleHover = () => {
-    if (props.onMouseEnter) {
-      props.onMouseEnter(props.index);
-    }
-  };
-
   return (
     <StyledListItemWrapper
       ref={ref}
       role="option"
       onClick={props.onClick}
-      onMouseEnter={handleHover}
       aria-selected={selected}
       aria-disabled={disabled}
       tabIndex={0}
     >
-      <Component index={props.index} />
+      <Component index={props.index} isKeyboardNavigation={props.isKeyboardNavigation} />
     </StyledListItemWrapper>
   );
 });
