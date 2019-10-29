@@ -16,6 +16,19 @@ ReactDOM.createPortal = node => React.createElement('portal-dummy', null, node);
 
 Math.random = () => 0.421;
 
+/* eslint-disable */
+// @ts-ignore
+global.IntersectionObserver = class IntersectionObserver {
+  observe() {
+    return null;
+  }
+
+  unobserve() {
+    return null;
+  }
+};
+/* eslint-enable */
+
 initStoryshots({
   test: multiSnapshotWithOptions({}),
   storyNameRegex: /^(?!(Documentation|Experimental)).*$/,

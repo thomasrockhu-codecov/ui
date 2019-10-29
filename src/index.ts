@@ -46,6 +46,7 @@ import TabsNav from './Molecules/TabsNav';
 /** Organisms */
 import CardWithTabs from './Organisms/CardWithTabs';
 import Development from './Organisms/Development';
+import ScrollableCard from './Organisms/ScrollableCard';
 
 /** Hooks */
 import { useKeyPress } from './common/Hooks';
@@ -88,6 +89,7 @@ export {
   PageHeaderCard,
   PageWrapper,
   Portal,
+  ScrollableCard,
   /** @deprecated */ Select,
   Separator,
   Spinner,
