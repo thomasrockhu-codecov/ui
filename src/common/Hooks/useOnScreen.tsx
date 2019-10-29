@@ -1,7 +1,6 @@
 import { useState, useEffect } from 'react';
 
 const useOnScreen = (ref: React.RefObject<any>, rootMargin: string = '0px') => {
-  // State and setter for storing whether element is visible
   const [isIntersecting, setIntersecting] = useState(false);
 
   useEffect(() => {
@@ -14,7 +13,6 @@ const useOnScreen = (ref: React.RefObject<any>, rootMargin: string = '0px') => {
 
     const observer = new IntersectionObserver(
       ([entry]) => {
-        // Update our state when observer callback fires
         setIntersecting(entry.isIntersecting);
       },
       {
@@ -30,7 +28,7 @@ const useOnScreen = (ref: React.RefObject<any>, rootMargin: string = '0px') => {
     return () => {
       observer.unobserve(currentRef);
     };
-  }, [ref, rootMargin]); // Empty array ensures that effect gis only run on mount and unmount
+  }, [ref, rootMargin]);
 
   return isIntersecting;
 };
