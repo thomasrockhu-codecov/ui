@@ -5,6 +5,13 @@ const useOnScreen = (ref: React.RefObject<any>, rootMargin: string = '0px') => {
   const [isIntersecting, setIntersecting] = useState(false);
 
   useEffect(() => {
+    if (!('IntersectionObserver' in window)) {
+      console.log('running useOnScreen');
+      return () => null;
+    }
+
+    console.log('running useOnScreen');
+
     const observer = new IntersectionObserver(
       ([entry]) => {
         // Update our state when observer callback fires
@@ -14,13 +21,16 @@ const useOnScreen = (ref: React.RefObject<any>, rootMargin: string = '0px') => {
         rootMargin,
       },
     );
-    if (ref.current) {
-      observer.observe(ref.current);
+
+    const currentRef = ref.current;
+
+    if (currentRef) {
+      observer.observe(currentRef);
     }
     return () => {
-      observer.unobserve(ref.current);
+      observer.unobserve(currentRef);
     };
-  }, [ref, rootMargin]); // Empty array ensures that effect is only run on mount and unmount
+  }, [ref, rootMargin]); // Empty array ensures that effect gis only run on mount and unmount
 
   return isIntersecting;
 };
