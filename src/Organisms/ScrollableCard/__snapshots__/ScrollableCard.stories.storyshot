@@ -43,6 +43,7 @@ exports[`Storyshots Organisms | ScrollableCard Default Story 1`] = `
   position: absolute;
   bottom: 0;
   right: 0;
+  background: red;
   pointer-events: none;
 }
 
@@ -200,6 +201,7 @@ exports[`Storyshots Organisms | ScrollableCard With Height Contained 1`] = `
   position: absolute;
   bottom: 0;
   right: 0;
+  background: red;
   pointer-events: none;
 }
 
