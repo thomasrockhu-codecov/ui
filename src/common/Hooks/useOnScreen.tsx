@@ -4,12 +4,12 @@ const useOnScreen = (ref: React.RefObject<any>, rootMargin: string = '0px') => {
   const [isIntersecting, setIntersecting] = useState(false);
 
   useEffect(() => {
-    if (!('IntersectionObserver' in window)) {
-      console.log('running useOnScreen');
+    if (typeof IntersectionObserver === 'undefined') {
+      console.log('IntersectionObserver undefined');
       return () => null;
     }
 
-    console.log('running useOnScreen');
+    console.log('IntersectionObserver found');
 
     const observer = new IntersectionObserver(
       ([entry]) => {
