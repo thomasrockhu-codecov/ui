@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 
-const useOnScreen = (ref: React.Ref<any>, rootMargin: string = '0px') => {
+const useOnScreen = (ref: React.RefObject<any>, rootMargin: string = '0px') => {
   // State and setter for storing whether element is visible
   const [isIntersecting, setIntersecting] = useState(false);
 
