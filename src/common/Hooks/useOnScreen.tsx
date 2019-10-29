@@ -5,11 +5,9 @@ const useOnScreen = (ref: React.RefObject<any>, rootMargin: string = '0px') => {
 
   useEffect(() => {
     if (typeof IntersectionObserver === 'undefined') {
-      console.log('IntersectionObserver undefined');
+      // IE11
       return () => null;
     }
-
-    console.log('IntersectionObserver found');
 
     const observer = new IntersectionObserver(
       ([entry]) => {

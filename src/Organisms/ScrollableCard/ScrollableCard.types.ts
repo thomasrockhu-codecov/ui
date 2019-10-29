@@ -2,6 +2,7 @@ import { Props as CardWithTitleProps } from '../../Molecules/CardWithTitle/CardW
 
 export type InternalProps = {
   bottomOfContentOnScreen?: boolean;
+  hasScrollbar?: boolean;
 };
 
 export type Props = CardWithTitleProps;
