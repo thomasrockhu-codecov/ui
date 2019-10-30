@@ -49,3 +49,13 @@ export const withHeightContainedByParent = () => (
 withHeightContainedByParent.story = {
   name: 'With height contained by parent',
 };
+
+export const withHeightOfFadeChanged = () => (
+  <ContainingParent>
+    <FadedScroll fadeHeight={5}>{content}</FadedScroll>
+  </ContainingParent>
+);
+
+withHeightOfFadeChanged.story = {
+  name: 'With height of fade changed',
+};

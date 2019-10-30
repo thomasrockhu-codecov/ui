@@ -4,7 +4,7 @@ import { useOnScreen } from '../../common/Hooks';
 import { Component, InternalProps, Props } from './FadedScroll.types';
 import { getValueFromNumberOrString } from '../../common/utils';
 
-const Outer = styled.div<Pick<InternalProps, 'intersectionOnScreen'>>`
+const Outer = styled.div<Pick<InternalProps, 'intersectionOnScreen'> & Pick<Props, 'fadeHeight'>>`
   position: relative;
   height: 100%;
 
@@ -12,7 +12,7 @@ const Outer = styled.div<Pick<InternalProps, 'intersectionOnScreen'>>`
     content: '';
     display: block;
     width: 100%;
-    height: ${p => p.theme.spacing.unit(13)}px;
+    height: ${p => getValueFromNumberOrString(p.fadeHeight!, p.theme)};
     position: absolute;
     left: 0;
     bottom: 0;
@@ -47,13 +47,18 @@ const Intersection = styled.div`
   pointer-events: none;
 `;
 
-export const FadedScroll: Component = ({ children, maxHeightDesktop, ...rest }) => {
+export const FadedScroll: Component = ({
+  children,
+  fadeHeight = 13,
+  maxHeightDesktop,
+  ...rest
+}) => {
   const contentRef = useRef<HTMLDivElement | null>(null);
   const intersectionRef = useRef<HTMLDivElement | null>(null);
   const intersectionOnScreen = useOnScreen(intersectionRef);
 
   return (
-    <Outer intersectionOnScreen={intersectionOnScreen}>
+    <Outer fadeHeight={fadeHeight} intersectionOnScreen={intersectionOnScreen}>
       <Inner maxHeightDesktop={maxHeightDesktop} {...rest}>
         <Content ref={contentRef}>
           {children}
