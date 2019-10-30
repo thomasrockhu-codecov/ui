@@ -5,7 +5,8 @@ import { Flexbox, Typography, List as UIList } from '../../../..';
 // Otherwise causes circular deps problems
 import { Checkbox } from '../../Checkbox';
 
-const TRIANGLE_SIZE = 10;
+const TRIANGLE_SIZE = 6;
+
 type ListProps = {
   /**
    * @default 'right'
@@ -43,7 +44,7 @@ const triangleCss = css`
     ${commonTriangleCss}
   top: -${TRIANGLE_SIZE}px;
     border-bottom: ${TRIANGLE_SIZE}px solid;
-    border-bottom-color: #ebebe8;
+    border-bottom-color: #bcbcb6;
   }
   &:after {
     ${leftAndRightCss}
@@ -60,7 +61,7 @@ const StyledList = styled(UIList)<any>`
   list-style: none;
   position: relative;
   top: 10px;
-  border: 1px solid #ebebe8;
+  border: 1px solid #bcbcb6;
   background-color: #ffffff;
   padding-top: ${p => p.theme.spacing.unit(2)}px;
   padding-bottom: ${p => p.theme.spacing.unit(2)}px;
@@ -68,10 +69,39 @@ const StyledList = styled(UIList)<any>`
   ${triangleCss}
 `;
 
-export const OptionList: React.FC<ListProps> = ({ children, position }) => (
-  <StyledList role="listbox" position={position}>
-    {children}
-  </StyledList>
+const OverflowScroll = styled.div`
+  overflow-y: auto;
+  width: 100%;
+  height: 100%;
+  /* helps with outline */
+  padding: 1px;
+  margin: -1px;
+`;
+const fadeCss = css`
+  &:after {
+    content: '';
+    position: absolute;
+    pointer-events: none;
+    bottom: calc(100% - 240px - 30px);
+    left: 6px;
+    height: 20px;
+    width: 100%;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0), #fff);
+    width: calc(100% - 12px);
+  }
+`;
+const FullHeightFlexboxWithFade = styled.div`
+  margin: 0 1px;
+  ${fadeCss}
+`;
+
+export const OptionList: React.FC<ListProps> = ({ children, position, searchComponent }) => (
+  <FullHeightFlexboxWithFade>
+    <StyledList role="listbox" position={position} aria-multiselectable="true" tabIndex={0}>
+      {searchComponent}
+      <OverflowScroll>{children}</OverflowScroll>
+    </StyledList>
+  </FullHeightFlexboxWithFade>
 );
 
 const FullHeightFlexbox = styled(Flexbox)`

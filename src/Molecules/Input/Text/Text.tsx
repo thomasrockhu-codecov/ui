@@ -95,6 +95,8 @@ const components = {
   AddonBox,
 };
 
+const getAriaProps = R.pickBy((val, key) => key.startsWith('aria-'));
+
 export const Text: React.FC<Props> & {
   /**
    * This will allow you to customize
@@ -107,7 +109,7 @@ export const Text: React.FC<Props> & {
    * `
    * */
   components: typeof components;
-} = props => {
+} = React.forwardRef((props, ref) => {
   const {
     autoFocus,
     defaultValue,
@@ -129,11 +131,12 @@ export const Text: React.FC<Props> & {
     success,
     value,
     visuallyEmphasiseRequired,
+    className,
   } = props;
 
   return (
     <FormField
-      {...R.pick(['error', 'extraInfo', 'hideLabel', 'label', 'width'], props)}
+      {...R.pick(['error', 'extraInfo', 'hideLabel', 'label', 'width', 'className'], props)}
       required={visuallyEmphasiseRequired}
     >
       <Typography type="secondary" color={t => t.color.text}>
@@ -159,7 +162,9 @@ export const Text: React.FC<Props> & {
               size,
               success,
               value,
+              ref,
             }}
+            {...getAriaProps(props)}
             {...(hasError(error) ? { 'aria-invalid': true } : {})}
           />
           {leftAddon && (
@@ -176,5 +181,5 @@ export const Text: React.FC<Props> & {
       </Typography>
     </FormField>
   );
-};
+});
 Text.components = components;

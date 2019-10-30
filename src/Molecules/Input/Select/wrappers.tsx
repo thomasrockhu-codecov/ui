@@ -32,7 +32,7 @@ const StyledA11yButton = styled(NormalizedElements.Button)`
 `;
 
 const StyledListWrapper = styled.div<any>`
-  width: ${p => (p.noFormField ? 'auto' : '100%')};
+  width: ${p => (p.noFormField ? (p.width ? p.width : 'auto') : '100%')};
   position: absolute;
   top: 100%;
   z-index: 4;
@@ -44,23 +44,19 @@ const StyledListWrapper = styled.div<any>`
 
 export const ListWrapper = React.forwardRef<HTMLDivElement, any>(
   (
-    { component: Component, children, noFormField, onKeyDown, onFocus, onBlur, onMouseMove },
+    {
+      component: Component,
+      children,
+      noFormField,
+      onKeyDown,
+      onFocus,
+      onBlur,
+      onMouseMove,
+      searchComponent,
+      width,
+    },
     ref,
   ) => {
-    const [prevElem, setPrevElem] = React.useState(null);
-    // const handleHover = e => {
-    //   const elem = [...document.elementsFromPoint(e.clientX, e.clientY)].find(
-    //     x => x.tagName === 'LI',
-    //   );
-    //   if (prevElem !== elem && elem) {
-    //     onHoverNewItem(elem);
-    //     setPrevElem(elem);
-    //   }
-
-    //   // if (props.onMouseEnter) {
-    //   //   props.onMouseEnter(props.index);
-    //   // }
-    // };
     return (
       <StyledListWrapper
         ref={ref}
@@ -69,8 +65,11 @@ export const ListWrapper = React.forwardRef<HTMLDivElement, any>(
         onFocus={onFocus}
         onMouseMove={onMouseMove}
         onBlur={onBlur}
+        width={width}
       >
-        <Component position={noFormField ? 'left' : 'right'}>{children}</Component>
+        <Component searchComponent={searchComponent} position={noFormField ? 'left' : 'right'}>
+          {children}
+        </Component>
       </StyledListWrapper>
     );
   },
@@ -134,22 +133,25 @@ export const ListItemWrapper = React.forwardRef<
     option: Option;
     index: number;
     onKeyDown: React.KeyboardEventHandler;
-    onMouseEnter: (index: number) => void;
     onClick: (params: { selected: boolean; option: Option }, e: React.MouseEvent) => void;
+    id: string;
   }
 >((props, ref) => {
   const [current] = useSelectMachineFromContext();
-  const selected = current.context.selectedItems.includes(props.option);
+  const selected =
+    current.context.selectedItems.includes(props.option) ||
+    current.context.selectedItems.some(x => x.value === props.value);
   const disabled = props.option.disabled;
 
   const Component = props.component;
   return (
     <StyledListItemWrapper
       ref={ref}
-      role="option"
       onClick={props.onClick}
+      role="option"
       aria-selected={selected}
       aria-disabled={disabled}
+      id={`${props.id}-option-${props.index}`}
       tabIndex={0}
     >
       <Component index={props.index} isKeyboardNavigation={props.isKeyboardNavigation} />
@@ -220,7 +222,7 @@ const SelectWrapper = styled.div`
 `;
 export const FormFieldOrFragment = React.forwardRef<HTMLDivElement, any>(
   ({ children, noFormField, open, onFocus, onBlur, fullWidth, id, size, ...props }, ref) => (
-    <StyledRelativeDiv {...(noFormField ? { ref } : {})} fullWidth={fullWidth}>
+    <StyledRelativeDiv {...(noFormField ? { ref } : {})} fullWidth={fullWidth} width={props.width}>
       <Flexbox
         {...(noFormField ? { onBlur, onFocus } : {})}
         container
@@ -230,13 +232,7 @@ export const FormFieldOrFragment = React.forwardRef<HTMLDivElement, any>(
         {noFormField ? (
           children
         ) : (
-          <FormField
-            id={`label-for-${id}`}
-            fieldId={id}
-            {...props}
-            {...(fullWidth ? { width: '100%' } : {})}
-            ref={ref}
-          >
+          <FormField fieldId={id} {...props} {...(fullWidth ? { width: '100%' } : {})} ref={ref}>
             <SelectWrapper onBlur={onBlur} onFocus={onFocus} size={size} {...props}>
               {children}
               <Chevron open={open} />

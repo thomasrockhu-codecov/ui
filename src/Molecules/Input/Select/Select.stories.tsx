@@ -1,8 +1,9 @@
 /** eslint-disable react-hooks/rules-of-hooks */
 import React from 'react';
+import { action } from '@storybook/addon-actions';
 import R from 'ramda';
 import styled from 'styled-components';
-import { Input, Avatar, Flexbox, Number, Typography, Box, Icon } from '../../..';
+import { Input, Avatar, Flexbox, Number, Typography, Box, Icon, Link } from '../../..';
 import { Display } from '../../../common/Display';
 import mdx from './Select.mdx';
 
@@ -185,7 +186,9 @@ export const disabledItems = () => {
   return (
     <Input.Select
       id="onchange-select"
-      options={accountOptions.map((acc, i) => (i === 1 ? { ...acc, disabled: true } : acc))}
+      options={accountOptions.map((acc, i) =>
+        i === 1 || i === 2 ? { ...acc, disabled: true } : acc,
+      )}
       label="User account"
       placeholder="Select account"
     />
@@ -203,6 +206,19 @@ export const customRenderers = () => {
       }}
       label="User account"
       placeholder="Select account"
+    />
+  );
+};
+
+export const onBlurAndOnFocus = () => {
+  return (
+    <Input.Select
+      id="custom-renderers-select"
+      options={accountOptions}
+      label="User account"
+      placeholder="Select account"
+      onBlur={action('blur')}
+      onFocus={action('focus')}
     />
   );
 };
@@ -430,6 +446,72 @@ export const sizeS = () => {
           ),
         },
       ]}
+    />
+  );
+};
+
+export const linkWithDropdownAndSearchBox = () => {
+  const [filterQuery, setFilterQuery] = React.useState('');
+
+  const customComponents = React.useMemo(
+    () => ({
+      SelectedValue: (_: any, ref: React.Ref<any>) => {
+        const [state] = useSelectMachineFromContext();
+
+        return (
+          <Link ref={ref} as="div">
+            <Flexbox container alignItems="center" gutter={2}>
+              <Icon.AddWithCircle inline color={t => t.color.cta} />
+              {state.context.placeholder}
+            </Flexbox>
+          </Link>
+        );
+      },
+    }),
+    [],
+  );
+
+  const [value, setValue] = React.useState(() => []);
+  const hugeOptionsList = React.useMemo(
+    () =>
+      accountOptions
+        .concat(
+          accountOptions.map(x => ({
+            ...x,
+            value: x.value + Math.random(),
+            label: x.label + Math.random(),
+          })),
+        )
+        .concat(
+          accountOptions.map(x => ({
+            ...x,
+            value: x.value + Math.random(),
+            label: x.label + Math.random(),
+          })),
+        )
+        .concat(
+          accountOptions.map(x => ({
+            ...x,
+            value: x.value + Math.random(),
+            label: x.label + Math.random(),
+          })),
+        ),
+    [accountOptions],
+  );
+
+  return (
+    <Input.Select
+      options={hugeOptionsList}
+      label="User account"
+      id="input-select-search-inside"
+      autoFocusFirstOption={false}
+      placeholder="Select account"
+      noFormField
+      showSearch
+      value={value}
+      components={customComponents}
+      onChange={setValue}
+      width="350px"
     />
   );
 };

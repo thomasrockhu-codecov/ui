@@ -48,6 +48,11 @@ export type Props = {
    */
   autoFocus?: boolean;
 
+  /**
+   * Show search input before items
+   */
+  showSearch?: boolean;
+
   multiselect?: boolean;
 };
 

@@ -1,5 +1,9 @@
 import { Machine, send, assign } from 'xstate';
 
+const isEqualOptions = (a, b) => a === b || a.value === b.value;
+const includesOption = (arr, option) =>
+  arr.includes(option) || arr.some(x => x.value === option.value);
+
 export const SelectMachine = Machine({
   id: 'inputSelect',
   type: 'parallel',
@@ -16,6 +20,9 @@ export const SelectMachine = Machine({
     multiselect: false,
     label: '',
     lastNavigationType: null,
+    showSearch: false,
+    visibleOptions: [] as Array<any>,
+    id: 'id-from-props',
   },
   on: {
     SYNC: {
@@ -30,8 +37,13 @@ export const SelectMachine = Machine({
           actions: assign({
             itemFocusIdx: ctx =>
               ctx.selectedItems.length > 0
-                ? ctx.options.findIndex(x => x === ctx.selectedItems[0])
-                : ctx.itemFocusIdx,
+                ? ctx.options.findIndex(x => isEqualOptions(x, ctx.selectedItems[0]))
+                : 0,
+          }),
+        },
+        CLOSE: {
+          actions: assign({
+            lastNavigationType: () => 'keyboard',
           }),
         },
         TOGGLE: {
@@ -39,16 +51,22 @@ export const SelectMachine = Machine({
           target: '.unknown',
         },
         BLUR: {
-          actions: assign({ open: false }),
+          actions: [assign({ open: false }), send('CLOSE')],
           target: '.unknown',
         },
         SELECT_ITEM: {
-          actions: assign({ open: ctx => (ctx.multiselect ? ctx.open : false) }),
+          actions: [
+            assign({ open: ctx => (ctx.multiselect ? ctx.open : false) }),
+            send(ctx => (ctx.multiselect ? '' : 'CLOSE')),
+          ],
           cond: (ctx, e) => !e.payload.disabled,
           target: '.unknown',
         },
         DESELECT_ITEM: {
-          actions: assign({ open: ctx => (ctx.multiselect ? ctx.open : false) }),
+          actions: [
+            assign({ open: ctx => (ctx.multiselect ? ctx.open : false) }),
+            send(ctx => (ctx.multiselect ? '' : 'CLOSE')),
+          ],
           cond: (ctx, e) => !e.payload.disabled,
           target: '.unknown',
         },
@@ -62,10 +80,7 @@ export const SelectMachine = Machine({
                 cond: ctx => ctx.open,
               },
               {
-                target: ['off', '#inputSelect.interaction.unknown'],
-                actions: assign({
-                  lastNavigationType: 'keyboard',
-                }),
+                target: 'off',
               },
             ],
           },
@@ -105,9 +120,11 @@ export const SelectMachine = Machine({
         SELECT_FOCUSED_ITEM: {
           target: '.unknown',
           actions: [
-            send(({ selectedItems, options, itemFocusIdx }) => ({
-              type: selectedItems.includes(options[itemFocusIdx]) ? 'DESELECT_ITEM' : 'SELECT_ITEM',
-              payload: options[itemFocusIdx],
+            send(({ selectedItems, visibleOptions, itemFocusIdx }) => ({
+              type: includesOption(selectedItems, visibleOptions[itemFocusIdx])
+                ? 'DESELECT_ITEM'
+                : 'SELECT_ITEM',
+              payload: visibleOptions[itemFocusIdx],
             })), // single-select
           ],
           in: '#inputSelect.interaction.enabled.active.focus.listItem.anyItemFocused',
@@ -138,7 +155,7 @@ export const SelectMachine = Machine({
             '': [
               {
                 target: 'incorrectSelection',
-                cond: ctx => ctx.selectedItems.some(x => !ctx.options.includes(x)),
+                cond: ctx => ctx.selectedItems.some(x => !includesOption(ctx.options, x)),
               },
               { target: 'on', cond: ctx => ctx.selectedItems.length > 0 },
               { target: 'off' },
@@ -201,19 +218,19 @@ export const SelectMachine = Machine({
             HOVER_OFF: '.active.hover.off',
             FOCUS: '.active.focus.unknown',
             OPEN: '.active.focus.unknown',
-            BLUR: '.active.focus.off',
+            SELECT_ITEM: {
+              target: '.active.focus.button',
+            },
+            BLUR: '.idle',
             ITEM_CLICK: {
               actions: send((ctx, event) => {
-                const isSelected = ctx.selectedItems.includes(event.payload);
+                const isSelected = includesOption(ctx.selectedItems, event.payload);
                 const type = isSelected ? 'DESELECT_ITEM' : 'SELECT_ITEM';
                 return {
                   type,
                   payload: event.payload,
                 };
               }),
-            },
-            ITEM_HOVERED: {
-              actions: assign({ itemFocusIdx: (ctx, e) => e.payload }),
             },
           },
           initial: 'unknown',
@@ -234,6 +251,9 @@ export const SelectMachine = Machine({
 
               states: {
                 navigation: {
+                  on: {
+                    CLOSE: '.unknown',
+                  },
                   initial: 'unknown',
                   states: {
                     unknown: {
@@ -268,6 +288,11 @@ export const SelectMachine = Machine({
                 },
                 focus: {
                   initial: 'unknown',
+                  on: {
+                    CLOSE: {
+                      target: '.button',
+                    },
+                  },
                   states: {
                     off: {},
                     unknown: {
@@ -280,13 +305,8 @@ export const SelectMachine = Machine({
                       id: 'listItemFocus',
                       initial: 'unknown',
                       on: {
-                        SEARCH: {
+                        SEARCH_QUERY_UPDATE: {
                           target: '.unknown',
-                          actions: [
-                            assign({
-                              searchQuery: (ctx, e) => e.payload,
-                            }),
-                          ],
                         },
                       },
 
@@ -296,19 +316,7 @@ export const SelectMachine = Machine({
                             '': [
                               {
                                 target: 'anyItemFocused',
-                                actions: assign({
-                                  searchQuery: '',
-                                  itemFocusIdx: ctx => {
-                                    const newIdx = ctx.options.findIndex(x =>
-                                      x.label
-                                        .toLowerCase()
-                                        .startsWith(ctx.searchQuery.toLowerCase()),
-                                    );
-                                    return newIdx !== -1 && !ctx.options[newIdx].disabled
-                                      ? newIdx
-                                      : ctx.itemFocusIdx;
-                                  },
-                                }),
+
                                 cond: ctx => ctx.searchQuery !== '',
                               },
                               {
@@ -325,7 +333,8 @@ export const SelectMachine = Machine({
                             FOCUS_NEXT_ITEM: {
                               target: 'anyItemFocused',
                               actions: assign({
-                                itemFocusIdx: ctx => (ctx.itemFocusIdx + 1) % ctx.options.length,
+                                itemFocusIdx: ctx =>
+                                  (ctx.itemFocusIdx + 1) % ctx.visibleOptions.length,
                               }),
                             },
 
@@ -335,7 +344,7 @@ export const SelectMachine = Machine({
                                 itemFocusIdx: ctx =>
                                   ctx.itemFocusIdx - 1 >= 0
                                     ? ctx.itemFocusIdx - 1
-                                    : ctx.options.length - 1,
+                                    : ctx.visibleOptions.length - 1,
                               }),
                             },
                           },
@@ -345,7 +354,7 @@ export const SelectMachine = Machine({
                             '': {
                               target: '#listItemFocus.unknown',
                               actions: assign({
-                                itemFocusIdx: ctx => (ctx.options.length > 0 ? 0 : null),
+                                itemFocusIdx: ctx => (ctx.visibleOptions.length > 0 ? 0 : null),
                               }),
                             },
                           },
@@ -360,6 +369,115 @@ export const SelectMachine = Machine({
                     on: {},
                     off: {},
                   },
+                },
+              },
+            },
+          },
+        },
+      },
+    },
+    search: {
+      initial: 'unknown',
+      on: {
+        CLOSE: {
+          target: '.unknown',
+          actions: assign({
+            searchQuery: '',
+            visibleOptions: ctx => ctx.options,
+          }),
+        },
+      },
+      states: {
+        unknown: {
+          on: {
+            '': [
+              { target: 'explicit', cond: ctx => Boolean(ctx.showSearch) },
+              { target: 'implicit' },
+            ],
+          },
+        },
+        explicit: {
+          on: {
+            SYNC: {
+              actions: assign({
+                visibleOptions: (ctx, event) => {
+                  // if (event.payload.options && ctx.options !== event.payload.options)
+                  //   return event.payload.options.filter(x =>
+                  //     x.label.toLowerCase().includes(ctx.searchQuery.toLowerCase()),
+                  //   );
+                  return ctx.visibleOptions;
+                },
+              }),
+            },
+            SEARCH_QUERY_UPDATE: {
+              actions: [
+                assign({
+                  searchQuery: (ctx, e) => e.payload,
+                  itemFocusIdx: 0,
+                }),
+                send('SEARCH'),
+              ],
+            },
+            SEARCH: {
+              in: '#inputSelect.interaction.enabled',
+              actions: assign({
+                visibleOptions: ctx => {
+                  const newOptions = ctx.options.filter(x =>
+                    x.label.toLowerCase().includes(ctx.searchQuery.toLowerCase()),
+                  );
+                  return newOptions;
+                },
+              }),
+            },
+          },
+        },
+        implicit: {
+          id: 'implicitSearch',
+          initial: 'idle',
+          on: {},
+          states: {
+            idle: {
+              on: {
+                SEARCH_QUERY_UPDATE: {
+                  target: 'processInput',
+                  actions: assign({ searchQuery: (_, e) => e.payload }),
+                },
+              },
+            },
+            resetTimeout: {
+              on: {
+                '': 'processInput',
+              },
+            },
+
+            processInput: {
+              after: {
+                200: 'search',
+              },
+              on: {
+                SEARCH_QUERY_UPDATE: {
+                  target: 'resetTimeout',
+                  actions: assign({ searchQuery: (ctx, e) => e.payload }),
+                },
+              },
+            },
+
+            search: {
+              on: {
+                '': {
+                  target: 'idle',
+                  in: '#inputSelect.interaction.enabled',
+                  actions: assign({
+                    searchQuery: '',
+                    itemFocusIdx: ctx => {
+                      const newIdx = ctx.options.findIndex(x =>
+                        x.label.toLowerCase().startsWith(ctx.searchQuery.toLowerCase()),
+                      );
+                      return newIdx !== -1 && !ctx.options[newIdx].disabled
+                        ? newIdx
+                        : ctx.itemFocusIdx;
+                    },
+                  }),
                 },
               },
             },

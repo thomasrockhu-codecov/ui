@@ -1,17 +1,22 @@
 import * as React from 'react';
 import R from 'ramda';
 import styled from 'styled-components';
-import { Box } from '../../..';
+import { Box, Icon } from '../../..';
 import {
   OptionList as DefaultList,
   Option as DefaultListItem,
 } from './SingleSelectList/SingleSelectList';
-import { Option as DefaultMultiselectListItem } from './MultiSelectList/MultiSelectList';
+import {
+  Option as DefaultMultiselectListItem,
+  OptionList as DefaultMultiselectList,
+} from './MultiSelectList/MultiSelectList';
 
 import { useSelectMachineFromContext } from './context';
 
 import { OptionBase } from './Select.types';
 import { assert } from '../../../common/utils';
+import { Text } from '../Text';
+import { visuallyHiddenCss } from '../../../Atoms/VisuallyHidden';
 
 const getLabelOrPlaceholder = <T extends OptionBase>(state: any) => {
   if (state.context.selectedItems.length === 0) return state.context.placeholder;
@@ -34,11 +39,42 @@ const StyledFlexedBox = styled(Box)`
   align-items: center;
 `;
 
+const StyledInputText = styled(Text)`
+  ${p => (p.hidden ? `${visuallyHiddenCss}` : '')}
+`;
+const Search = React.forwardRef((_, ref) => {
+  const [state, send] = useSelectMachineFromContext();
+  const searchQuery = state.context.searchQuery;
+  const showSearch = state.context.showSearch;
+  const itemFocusIdx = state.context.itemFocusIdx;
+  const id = state.context.id;
+  const hidden = !showSearch;
+  const handleChange = e => send({ type: 'SEARCH_QUERY_UPDATE', payload: e.target.value });
+
+  return (
+    <Box px={3} my={hidden ? 0 : 2} mb={hidden ? 0 : 1}>
+      <StyledInputText
+        leftAddon={<Icon.Search size={4} />}
+        label="Search"
+        ref={ref}
+        size="s"
+        hideLabel
+        aria-activedescendant={`${id}-option-${itemFocusIdx}`}
+        width="100%"
+        hidden={hidden}
+        value={searchQuery}
+        onChange={handleChange}
+        id={`${id}-search`}
+      />
+    </Box>
+  );
+});
 export const defaultComponents = {
+  Search,
   ListItem: React.forwardRef<HTMLDivElement, { index: number }>(
     ({ index, isKeyboardNavigation }, ref) => {
       const [state] = useSelectMachineFromContext();
-      const option = state.context.options[index];
+      const option = state.context.visibleOptions[index];
       const selected = state.context.selectedItems.includes(option);
       const focused = state.context.itemFocusIdx === index;
       return (
@@ -67,10 +103,11 @@ export const defaultComponents = {
 };
 
 export const defaultComponentsMultiselect = {
+  Search,
   ListItem: React.forwardRef<HTMLDivElement, { index: number }>(
     ({ index, isKeyboardNavigation }, ref) => {
       const [state] = useSelectMachineFromContext();
-      const option = state.context.options[index];
+      const option = state.context.visibleOptions[index];
       const selected = state.context.selectedItems.includes(option);
       const focused = state.context.itemFocusIdx === index;
       const selectAll = option.all;
@@ -90,7 +127,7 @@ export const defaultComponentsMultiselect = {
     },
   ),
 
-  List: DefaultList,
+  List: DefaultMultiselectList,
   SelectedValue: () => {
     const [state] = useSelectMachineFromContext();
     React.useEffect(() => {

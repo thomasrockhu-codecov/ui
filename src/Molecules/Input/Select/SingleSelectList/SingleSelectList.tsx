@@ -2,7 +2,7 @@ import * as React from 'react';
 import styled, { css } from 'styled-components';
 import { Flexbox, Typography, Icon, List as UIList, Box } from '../../../..';
 
-const TRIANGLE_SIZE = 10;
+const TRIANGLE_SIZE = 6;
 type ListProps = {
   /**
    * @default 'right'
@@ -40,7 +40,7 @@ const triangleCss = css`
     ${commonTriangleCss}
   top: -${TRIANGLE_SIZE}px;
     border-bottom: ${TRIANGLE_SIZE}px solid;
-    border-bottom-color: #ebebe8;
+    border-bottom-color: #bcbcb6;
   }
   &:after {
     ${leftAndRightCss}
@@ -70,7 +70,7 @@ const StyledList = styled(UIList)<any>`
   list-style: none;
   position: relative;
   top: 10px;
-  border: 1px solid #ebebe8;
+  border: 1px solid #bcbcb6;
   background-color: #ffffff;
   padding-top: ${p => p.theme.spacing.unit(2)}px;
   padding-bottom: ${p => p.theme.spacing.unit(2)}px;
@@ -93,9 +93,10 @@ const FullHeightFlexboxWithFade = styled.div`
   ${fadeCss}
 `;
 
-export const OptionList: React.FC<ListProps> = ({ children, position }) => (
+export const OptionList: React.FC<ListProps> = ({ children, position, searchComponent }) => (
   <FullHeightFlexboxWithFade>
     <StyledList role="listbox" position={position}>
+      {searchComponent}
       <OverflowScroll>{children}</OverflowScroll>
     </StyledList>
   </FullHeightFlexboxWithFade>
@@ -139,7 +140,7 @@ const StyledOption = styled(Typography)<OptionProps>`
   `
       : ''}
   background: ${p => {
-    if (p.disabled) return p.theme.color.disabledBackground;
+    // if (p.disabled) return p.theme.color.disabledBackground;
     if (p.focused && p.isKeyboardNavigation) return p.theme.color.background;
     return p.theme.color.selectOptionBackground;
   }};
