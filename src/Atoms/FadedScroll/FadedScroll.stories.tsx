@@ -1,20 +1,20 @@
 import React from 'react';
 import styled from 'styled-components';
-import { Box, ScrollableCard, List, ListItem } from '../..';
-import mdx from './ScrollableCard.mdx';
+import { FadedScroll, List, ListItem } from '../..';
+import mdx from './FadedScroll.mdx';
 
 export default {
-  title: 'Organisms | ScrollableCard',
+  title: 'Atoms | FadedScroll',
   parameters: {
-    component: ScrollableCard,
+    component: FadedScroll,
     docs: {
       page: mdx,
     },
   },
 };
 
-const Contained = styled.div`
-  height: 250px;
+const ContainingParent = styled.div`
+  height: 200px;
 `;
 
 const StyledListItem = styled(ListItem)`
@@ -34,24 +34,18 @@ const content = (
   </List>
 );
 
-export const defaultStory = () => (
-  <ScrollableCard title="Title">
-    <Box px={4}>{content}</Box>
-  </ScrollableCard>
-);
+export const defaultStory = () => <FadedScroll maxHeightDesktop={40}>{content}</FadedScroll>;
 
 defaultStory.story = {
   name: 'Default',
 };
 
-export const withHeightContained = () => (
-  <Contained>
-    <ScrollableCard title="Height contained">
-      <Box px={4}>{content}</Box>
-    </ScrollableCard>
-  </Contained>
+export const withHeightContainedByParent = () => (
+  <ContainingParent>
+    <FadedScroll>{content}</FadedScroll>
+  </ContainingParent>
 );
 
-withHeightContained.story = {
-  name: 'Height contained',
+withHeightContainedByParent.story = {
+  name: 'With height contained by parent',
 };
