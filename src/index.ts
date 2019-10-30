@@ -4,6 +4,7 @@ import Box from './Atoms/Box';
 import Card from './Atoms/Card';
 import CssGrid from './Atoms/CssGrid';
 import DateTime from './Atoms/DateTime';
+import FadedScroll from './Atoms/FadedScroll';
 import Flag from './Atoms/Flag';
 import Flexbox from './Atoms/Flexbox';
 import FormLabel from './Atoms/FormLabel';
@@ -46,7 +47,6 @@ import TabsNav from './Molecules/TabsNav';
 /** Organisms */
 import CardWithTabs from './Organisms/CardWithTabs';
 import Development from './Organisms/Development';
-import ScrollableCard from './Organisms/ScrollableCard';
 
 /** Hooks */
 import { useKeyPress } from './common/Hooks';
@@ -67,6 +67,7 @@ export {
   CssGrid,
   DateTime,
   Development,
+  FadedScroll,
   FeedbackBanner,
   Fieldset,
   Flag,
@@ -89,7 +90,6 @@ export {
   PageHeaderCard,
   PageWrapper,
   Portal,
-  ScrollableCard,
   /** @deprecated */ Select,
   Separator,
   Spinner,

@@ -1,0 +1,243 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Atoms | FadedScroll Default Story 1`] = `
+.c0 {
+  position: relative;
+  height: 100%;
+}
+
+.c0::after {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 52px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  pointer-events: none;
+  background: rgb(255,255,255);
+  background: linear-gradient(0deg,rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%);
+  opacity: 1;
+  -webkit-transition: 0.3s opacity ease-out;
+  transition: 0.3s opacity ease-out;
+}
+
+.c2 {
+  position: relative;
+}
+
+.c6 {
+  height: 4px;
+  width: 4px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  pointer-events: none;
+}
+
+.c3 {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.c5 {
+  display: block;
+}
+
+.c4 {
+  padding: 8px;
+}
+
+@media (min-width:976px) {
+  .c1 {
+    max-height: 160px;
+    overflow-y: auto;
+  }
+}
+
+<div
+  className="c0"
+>
+  <div
+    className="c1"
+  >
+    <div
+      className="c2"
+    >
+      <ul
+        className="c3"
+      >
+        <li
+          className="c4 c5"
+        >
+          Lorem ipsum dolor sit amet
+        </li>
+        <li
+          className="c4 c5"
+        >
+          Sed consequat erat lacinia
+        </li>
+        <li
+          className="c4 c5"
+        >
+          Class aptent taciti sociosqu
+        </li>
+        <li
+          className="c4 c5"
+        >
+          Aliquam bibendum tortor dui
+        </li>
+        <li
+          className="c4 c5"
+        >
+          Quisque ac ullamcorper eros
+        </li>
+        <li
+          className="c4 c5"
+        >
+          Etiam urna elit, mollis vel arcu id
+        </li>
+        <li
+          className="c4 c5"
+        >
+          Sed consequat erat lacinia
+        </li>
+        <li
+          className="c4 c5"
+        >
+          Aliquam bibendum tortor dui
+        </li>
+      </ul>
+      <div
+        className="c6"
+      />
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Atoms | FadedScroll With Height Contained By Parent 1`] = `
+.c1 {
+  position: relative;
+  height: 100%;
+}
+
+.c1::after {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 52px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  pointer-events: none;
+  background: rgb(255,255,255);
+  background: linear-gradient(0deg,rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%);
+  opacity: 1;
+  -webkit-transition: 0.3s opacity ease-out;
+  transition: 0.3s opacity ease-out;
+}
+
+.c3 {
+  position: relative;
+}
+
+.c7 {
+  height: 4px;
+  width: 4px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  pointer-events: none;
+}
+
+.c4 {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.c6 {
+  display: block;
+}
+
+.c0 {
+  height: 200px;
+}
+
+.c5 {
+  padding: 8px;
+}
+
+@media (min-width:976px) {
+  .c2 {
+    max-height: 100%;
+    overflow-y: auto;
+  }
+}
+
+<div
+  className="c0"
+>
+  <div
+    className="c1"
+  >
+    <div
+      className="c2"
+    >
+      <div
+        className="c3"
+      >
+        <ul
+          className="c4"
+        >
+          <li
+            className="c5 c6"
+          >
+            Lorem ipsum dolor sit amet
+          </li>
+          <li
+            className="c5 c6"
+          >
+            Sed consequat erat lacinia
+          </li>
+          <li
+            className="c5 c6"
+          >
+            Class aptent taciti sociosqu
+          </li>
+          <li
+            className="c5 c6"
+          >
+            Aliquam bibendum tortor dui
+          </li>
+          <li
+            className="c5 c6"
+          >
+            Quisque ac ullamcorper eros
+          </li>
+          <li
+            className="c5 c6"
+          >
+            Etiam urna elit, mollis vel arcu id
+          </li>
+          <li
+            className="c5 c6"
+          >
+            Sed consequat erat lacinia
+          </li>
+          <li
+            className="c5 c6"
+          >
+            Aliquam bibendum tortor dui
+          </li>
+        </ul>
+        <div
+          className="c7"
+        />
+      </div>
+    </div>
+  </div>
+</div>
+`;
