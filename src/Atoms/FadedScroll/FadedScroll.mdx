@@ -3,11 +3,12 @@ import { FadedScroll } from './FadedScroll.tsx';
 
 # FadedScroll
 
-This component is a extions of CardWithTitle
+This component provides a faded look to the bottom of a vertically scrollable element.
 
 ## Usage
 
-A vertical scrollbar will be present if height is set on either this component or a parent element while also the content (children prop) is higher than the set height.
+This component is only intended to give an effect on screen sizes larger than 'md'. We try to not have scrollbars in mobile.
+You can provide a maxHeightDesktop to the component or let this component take all available space of parent and if the content exceeds that hight then show the scrollbar.
 
 ## Props
 
