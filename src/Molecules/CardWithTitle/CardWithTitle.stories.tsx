@@ -40,9 +40,9 @@ const StyledCardWithTitle = styled(CardWithTitle)`
 
 const RequiredContainer = styled.div`
   height: 100%;
-  padding-bottom: ${p => p.theme.spacing.unit(5)}px;
   min-height: 0; /* Firefox */
   flex-grow: 1;
+  padding-bottom: ${p => p.theme.spacing.unit(5)}px;
 `;
 
 export default {
