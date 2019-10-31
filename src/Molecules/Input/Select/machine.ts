@@ -83,25 +83,7 @@ export const SelectMachine = Machine(
         on: {
           SELECT_ITEM: {
             target: '.changeUncommitted',
-            actions: [
-              assign({
-                selectedItems: (ctx, { payload }) => {
-                  if (ctx.multiselect) {
-                    if (payload.all) {
-                      return ctx.options;
-                    }
-                    let newSelectedItems = ctx.selectedItems.concat(payload);
-                    const selectAllOption = ctx.options.find(x => x.all);
-                    if (selectAllOption && newSelectedItems.length === ctx.options.length - 1) {
-                      // Maybe filtering for disabled?
-                      newSelectedItems = newSelectedItems.concat(selectAllOption);
-                    }
-                    return newSelectedItems;
-                  }
-                  return [payload];
-                },
-              }),
-            ],
+            actions: 'updateSelectedItems',
             cond: (ctx, e) => !e.payload.disabled,
             in: '#inputSelect.interaction.enabled',
           },
@@ -493,6 +475,23 @@ export const SelectMachine = Machine(
       }),
       setNavTypeKeyboard: assign({
         lastNavigationType: () => 'keyboard',
+      }),
+      updateSelectedItems: assign({
+        selectedItems: (ctx, e) => {
+          if (ctx.multiselect) {
+            const activeOptions = ctx.options.filter(x => !x.disabled);
+            if (e.payload.all) {
+              return activeOptions;
+            }
+            let newSelectedItems = ctx.selectedItems.concat(e.payload);
+            const selectAllOption = ctx.options.find(x => x.all);
+            if (selectAllOption && newSelectedItems.length === activeOptions.length - 1) {
+              newSelectedItems = newSelectedItems.concat(selectAllOption);
+            }
+            return newSelectedItems;
+          }
+          return [e.payload];
+        },
       }),
     },
   },

@@ -244,7 +244,9 @@ const accountOptionsAndSelectAll = [
     value: undefined,
     all: true,
   },
-].concat(accountOptions);
+]
+  .concat(accountOptions)
+  .concat({ label: 'Disabled', value: 'Doesnt matter', disabled: true });
 
 export const multiselectSelectAll = () => {
   const [value, setValue] = React.useState([]);

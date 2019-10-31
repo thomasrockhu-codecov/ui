@@ -119,7 +119,7 @@ type OptionProps = {
 
 const hoverIfNotKeyboardNav = css`
   ${p =>
-    p.isKeyboardNavigation
+    p.disabled || p.isKeyboardNavigation
       ? ''
       : `
 &:hover { 
@@ -141,12 +141,11 @@ margin-bottom: ${p.theme.spacing.unit(2)}px;
 `}
   padding-right: ${p => p.theme.spacing.unit(2)}px;
   padding-left: ${p => p.theme.spacing.unit(2)}px;
-  color: ${p => (p.selected ? p.theme.color.cta : p.theme.color.inputBorderHover)};
+
   height: ${p => p.theme.spacing.unit(7)}px;
 
   white-space: nowrap;
   background: ${p => {
-    if (p.disabled) return p.theme.color.disabledBackground;
     if (p.focused && p.isKeyboardNavigation) return p.theme.color.background;
     return p.theme.color.selectOptionBackground;
   }};
@@ -187,13 +186,16 @@ export const Option = React.forwardRef<HTMLDivElement, OptionProps>(
             label=""
             checked={selected}
             readOnly
-            visuallyFocused={isKeyboardNavigation ? focused : false}
+            visuallyFocused={!disabled && isKeyboardNavigation ? focused : false}
           />
         </Flexbox>
         <Flexbox item container justifyContent="space-between" alignItems="center">
           <Flexbox item container direction="column" grow={1}>
             <Flexbox item>
-              <Typography type="secondary" color={t => t.color.text}>
+              <Typography
+                type="secondary"
+                color={disabled ? t => t.color.disabledText : t => t.color.text}
+              >
                 {label}
               </Typography>
             </Flexbox>
