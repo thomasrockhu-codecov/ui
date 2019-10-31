@@ -81,6 +81,7 @@ const keyActionMap = {
   Escape: 'TOGGLE',
   ' ': 'SELECT_FOCUSED_ITEM',
   Enter: 'SELECT_FOCUSED_ITEM',
+  Tab: '',
 };
 keyActionMap.keys = Object.keys(keyActionMap);
 
