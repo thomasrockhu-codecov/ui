@@ -14,7 +14,8 @@ export const useFocusFromMachine = (machineState, buttonRef, itemRefs, searchRef
     ) {
       if (searchRef.current) {
         searchRef.current.focus();
-        itemRefs[machineState.context.itemFocusIdx].scrollIntoView({ block: 'nearest' });
+        if (itemRefs[machineState.context.itemFocusIdx])
+          itemRefs[machineState.context.itemFocusIdx].scrollIntoView({ block: 'nearest' });
       }
     } else if (machineState.matches('interaction.enabled.active.focus.button')) {
       if (buttonRef.current) buttonRef.current.focus();
