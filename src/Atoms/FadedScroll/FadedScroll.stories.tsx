@@ -13,8 +13,10 @@ export default {
   },
 };
 
-const ContainingParent = styled.div`
-  height: 200px;
+const ParentWithHeight = styled.div`
+  ${p => p.theme.media.greaterThan(p.theme.breakpoints.md)} {
+    height: 200px;
+  }
 `;
 
 const StyledListItem = styled(ListItem)`
@@ -34,28 +36,38 @@ const content = (
   </List>
 );
 
-export const defaultStory = () => <FadedScroll maxHeightDesktop={40}>{content}</FadedScroll>;
+export const defaultStory = () => <FadedScroll maxHeight={40}>{content}</FadedScroll>;
 
 defaultStory.story = {
-  name: 'Default',
+  name: 'Default, using maxHeight prop',
 };
 
-export const withHeightContainedByParent = () => (
-  <ContainingParent>
+export const withHeightDeclaredByParent = () => (
+  <ParentWithHeight>
     <FadedScroll>{content}</FadedScroll>
-  </ContainingParent>
+  </ParentWithHeight>
 );
 
-withHeightContainedByParent.story = {
-  name: 'With height contained by parent',
+withHeightDeclaredByParent.story = {
+  name: 'With height declared by parent',
 };
 
 export const withHeightOfFadeChanged = () => (
-  <ContainingParent>
-    <FadedScroll fadeHeight={5}>{content}</FadedScroll>
-  </ContainingParent>
+  <FadedScroll fadeHeight={5} maxHeight="200px">
+    {content}
+  </FadedScroll>
 );
 
 withHeightOfFadeChanged.story = {
   name: 'With height of fade changed',
+};
+
+export const withMobileFadeEnabled = () => (
+  <div style={{ height: '200px' }}>
+    <FadedScroll enableMobileFade>{content}</FadedScroll>
+  </div>
+);
+
+withMobileFadeEnabled.story = {
+  name: 'With mobile fade enabled',
 };

@@ -7,8 +7,11 @@ This component provides a faded look to the bottom of a vertically scrollable el
 
 ## Usage
 
-This component is only intended to give an effect on screen sizes larger than 'md'. We try to not have scrollbars in mobile.
-You can provide a maxHeightDesktop to the component or let this component take all available space of parent and if the content exceeds that hight then show the scrollbar.
+This component is mainly intended to give an effect on screen sizes larger than 'md'.
+We try to not have scrollbars in mobile. The reason being the user experience when the page also have a scrollbar making it harder to navigate with multiple scrollbars.
+In some rare cases you still might need this effect on mobile screen sizes like in the modal component where to body scroll is locked. In cases like that you can use the `enableMobileFade` prop.
+
+You can provide a maxHeight to the component or let this component take all available space of parent and if the content exceeds that hight then the scrollbar will appear.
 
 ## Props
 

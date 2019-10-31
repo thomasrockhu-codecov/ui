@@ -1,10 +1,22 @@
 import React, { useRef } from 'react';
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 import { useOnScreen } from '../../common/Hooks';
 import { Component, InternalProps, Props } from './FadedScroll.types';
 import { getValueFromNumberOrString } from '../../common/utils';
 
-const Outer = styled.div<Pick<InternalProps, 'intersectionOnScreen'> & Pick<Props, 'fadeHeight'>>`
+const scroll = css<Pick<Props, 'maxHeight'>>`
+  max-height: ${p =>
+    p.maxHeight ? ` ${getValueFromNumberOrString(p.maxHeight, p.theme)}` : '100%'};
+  overflow-y: auto;
+`;
+
+const desktopsScroll = css<Pick<Props, 'maxHeight'>>`
+  ${p => p.theme.media.greaterThan(p.theme.breakpoints.md)} {
+    ${scroll}
+  }
+`;
+
+const Outer = styled.div<Pick<InternalProps, 'intersectionOnScreen'> & Props>`
   position: relative;
   height: 100%;
 
@@ -26,12 +38,8 @@ const Outer = styled.div<Pick<InternalProps, 'intersectionOnScreen'> & Pick<Prop
   }
 `;
 
-const Inner = styled.div<Pick<Props, 'maxHeightDesktop'>>`
-  ${p => p.theme.media.greaterThan(p.theme.breakpoints.md)} {
-    max-height: ${p =>
-      p.maxHeightDesktop ? ` ${getValueFromNumberOrString(p.maxHeightDesktop, p.theme)}` : '100%'};
-    overflow-y: auto;
-  }
+const Inner = styled.div<Props>`
+  ${p => (p.enableMobileFade ? scroll : desktopsScroll)}
 `;
 
 const Content = styled.div`
@@ -49,8 +57,9 @@ const Intersection = styled.div`
 
 export const FadedScroll: Component = ({
   children,
+  enableMobileFade = false,
   fadeHeight = 13,
-  maxHeightDesktop,
+  maxHeight,
   ...rest
 }) => {
   const contentRef = useRef<HTMLDivElement | null>(null);
@@ -59,7 +68,7 @@ export const FadedScroll: Component = ({
 
   return (
     <Outer fadeHeight={fadeHeight} intersectionOnScreen={intersectionOnScreen}>
-      <Inner maxHeightDesktop={maxHeightDesktop} {...rest}>
+      <Inner enableMobileFade={enableMobileFade} maxHeight={maxHeight} {...rest}>
         <Content ref={contentRef}>
           {children}
           <Intersection ref={intersectionRef} />
