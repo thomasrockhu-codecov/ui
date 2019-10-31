@@ -163,7 +163,7 @@ const NumberInput: NumberComponent & {
     onKeyUp,
     onStepDown,
     onStepUp,
-    placeholder,
+    placeholder: placeholderRaw,
     rightAddon,
     required,
     size,
@@ -175,6 +175,8 @@ const NumberInput: NumberComponent & {
   } = props;
   const [internalValue, setInternalValue] = useState(getNumberAsString(defaultValue));
   const showSteppers = noSteppers !== true && isUndefined(leftAddon) && isUndefined(rightAddon);
+  const placeholder = showSteppers ? undefined : placeholderRaw;
+
   const handleValueChange = (val: string) => {
     setInternalValue(val);
 
