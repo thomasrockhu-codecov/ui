@@ -129,18 +129,16 @@ export const defaultComponentsMultiselect = {
 
   List: DefaultMultiselectList,
   SelectedValue: () => {
-    const [state] = useSelectMachineFromContext();
     React.useEffect(() => {
       assert(
         false,
-        'Input.Select: You probably want to redefine SelectedValue message for your case.',
-        { level: 'warn' },
+        'Input.Select: You probably want to redefine default SelectedValue message for your case.',
       );
     }, []);
 
     return (
       <StyledFlexedBox px={2}>
-        <EllipsizingText>{getLabelOrPlaceholder(state)}</EllipsizingText>
+        <EllipsizingText>Put logic for how to present multiple selection here</EllipsizingText>
       </StyledFlexedBox>
     );
   },

@@ -76,19 +76,18 @@ export const useMultiRef = () => {
   return [itemRefs, setItemRef];
 };
 
-const keyActionMap = {
-  ArrowDown: 'FOCUS_NEXT_ITEM',
-  ArrowUp: 'FOCUS_PREV_ITEM',
-  Escape: 'TOGGLE',
-  ' ': 'SELECT_FOCUSED_ITEM',
-  Enter: 'SELECT_FOCUSED_ITEM',
-  Tab: '',
-};
-keyActionMap.keys = Object.keys(keyActionMap);
-
-export const useDelegateKeyDownToMachine = send => {
+export const useDelegateKeyDownToMachine = (send, selectOnSpace) => {
   const sendBatched = useBatchedSend(send);
 
+  const keyActionMap = {
+    ArrowDown: 'FOCUS_NEXT_ITEM',
+    ArrowUp: 'FOCUS_PREV_ITEM',
+    Escape: 'TOGGLE',
+    Enter: 'SELECT_FOCUSED_ITEM',
+    Tab: '',
+    ...(selectOnSpace ? { [' ']: 'SELECT_FOCUSED_ITEM' } : {}),
+  };
+  keyActionMap.keys = Object.keys(keyActionMap);
   return React.useCallback(
     e => {
       if (keyActionMap.keys.includes(e.key)) {

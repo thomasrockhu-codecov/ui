@@ -6,6 +6,8 @@ import styled from 'styled-components';
 import { Input, Avatar, Flexbox, Number, Typography, Box, Icon, Link } from '../../..';
 import { Display } from '../../../common/Display';
 import mdx from './Select.mdx';
+/* eslint-disable react-hooks/rules-of-hooks */
+const useSelectMachineFromContext = Input.Select.useSelectMachineFromContext;
 
 const FlexedBox = styled(Box)`
   flex-grow: 1;
@@ -137,7 +139,6 @@ export const two = () => (
   </>
 );
 
-const useSelectMachineFromContext = Input.Select.useSelectMachineFromContext;
 const accountOptions = [
   {
     label: 'First account',
@@ -225,12 +226,30 @@ export const onBlurAndOnFocus = () => {
 
 export const multiselect = () => {
   const [value, setValue] = React.useState([]);
+
+  // This component you need to redefine for your particular case
+  // Consider translations and a11y!
+  const CustomSelectedValue = React.useMemo(
+    () => () => {
+      const [machineState] = useSelectMachineFromContext();
+      const selectedCount = machineState.context.selectedItems.length;
+      return (
+        <Box px={2}>
+          <Typography type="secondary">
+            {selectedCount === 0 ? machineState.context.placeholder : `${selectedCount} selected`}
+          </Typography>
+        </Box>
+      );
+    },
+    [],
+  );
   return (
     <Input.Select
       id="custom-renderers-select"
       options={accountOptions}
       value={value}
       onChange={setValue}
+      components={{ SelectedValue: CustomSelectedValue }}
       multiselect
       label="User account"
       placeholder="Select account"
@@ -250,12 +269,37 @@ const accountOptionsAndSelectAll = [
 
 export const multiselectSelectAll = () => {
   const [value, setValue] = React.useState([]);
+
+  // This component you need to redefine for your particular case
+  // Consider translations and a11y!
+  const CustomSelectedValue = React.useMemo(
+    () => () => {
+      const [machineState] = useSelectMachineFromContext();
+      const selectedCount = machineState.context.selectedItems.length;
+      const allSelected = machineState.context.selectedItems.some(x => x.all);
+      return (
+        <Box px={2}>
+          <Typography type="secondary">
+            {allSelected
+              ? 'All selected'
+              : selectedCount === 0
+              ? machineState.context.placeholder
+              : `${selectedCount} selected`}
+          </Typography>
+        </Box>
+      );
+    },
+    [],
+  );
   return (
     <Input.Select
       id="multiwithall-select"
       options={accountOptionsAndSelectAll}
       value={value}
       onChange={setValue}
+      components={{
+        SelectedValue: CustomSelectedValue,
+      }}
       multiselect
       label="User account"
       placeholder="Select account"

@@ -4,8 +4,6 @@ import styled from 'styled-components';
 
 import { useOnClickOutside } from '../../../common/Hooks';
 
-import { noop } from './utils';
-
 import {
   ListItemWrapper,
   ListWrapper,
@@ -38,6 +36,7 @@ import {
 const HiddenSelect = styled.select`
   display: none;
 `;
+const noop = () => {};
 
 const Select = (props: Props) => {
   assert(Boolean(props.id), `Input.Select: "id" is required.`);
@@ -106,7 +105,7 @@ const Select = (props: Props) => {
     return false;
   };
 
-  const handleKeyDown = useDelegateKeyDownToMachine(send);
+  const handleKeyDown = useDelegateKeyDownToMachine(send, !props.showSearch);
 
   const isKeyboardNavigation = machineState.matches(
     'interaction.enabled.active.navigation.keyboard',
