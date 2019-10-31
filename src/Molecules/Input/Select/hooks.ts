@@ -9,7 +9,7 @@ export const useAutofocus = (ref: React.RefObject<any>, enable?: boolean) => {
 export const useFocusFromMachine = (machineState, buttonRef, itemRefs, searchRef) => {
   React.useEffect(() => {
     if (
-      machineState.matches('interaction.enabled.active.focus.listItem.anyItemFocused') &&
+      machineState.matches('interaction.enabled.active.focus.listItem') &&
       machineState.matches({ open: 'on' })
     ) {
       if (searchRef.current) {

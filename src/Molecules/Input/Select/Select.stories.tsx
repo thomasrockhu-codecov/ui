@@ -266,16 +266,20 @@ export const multiselectSelectAll = () => {
 export const changesFromProps = () => {
   const [accs, setAccs] = React.useState(accountOptions);
   const [value, setValue] = React.useState([]);
+  const [disabled, setDisabled] = React.useState(false);
   const removeAcc = () => setAccs(accs.slice(0, -1));
   const selectFirst = () => setValue([accountOptions[0]]);
   return (
     <>
       <button onClick={removeAcc}>Delete</button>
       <button onClick={selectFirst}>Select first</button>
+      <button onClick={() => setDisabled(true)}>Disable</button>
+      <button onClick={() => setDisabled(false)}>Enable</button>
       <pre>{JSON.stringify(accs, null, 2)}</pre>
       <Input.Select
         id="onchange-select"
         value={value}
+        disabled={disabled}
         onChange={setValue}
         options={accs}
         label="User account"
