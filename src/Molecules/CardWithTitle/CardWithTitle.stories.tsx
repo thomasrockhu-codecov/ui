@@ -129,7 +129,7 @@ export const cardWithTitleWithFadedScroll = () => {
   return (
     <CardWithTitle title={CustomTitle} scrollable>
       <Box pb={5}>
-        <FadedScroll maxHeightDesktop={40}>
+        <FadedScroll maxHeight={40}>
           <Box px={5}>
             <MockedContent />
           </Box>
