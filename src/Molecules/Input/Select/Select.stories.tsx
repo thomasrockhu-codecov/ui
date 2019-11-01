@@ -48,23 +48,41 @@ const AccountValue = () => {
 const StyledBox = styled(Box)<{ focused: boolean }>`
   cursor: pointer;
   background: ${p => (p.focused ? p.theme.color.background : p.theme.color.card)};
+  ${p =>
+    !p.isKeyboardNavigation
+      ? `
+  &: hover {
+    background: ${p.theme.color.background};
+    }
+  `
+      : ''}
 `;
 
-const AccountListItem = ({ index }: any, ref) => {
+const AccountListItem = ({ index, isKeyboardNavigation }: any, ref) => {
   const [state] = useSelectMachineFromContext();
   const option = state.context.options[index];
   const selected = state.context.selectedItems.includes(option);
-  const focused = state.context.itemFocusIdx === index;
+  const focused = isKeyboardNavigation && state.context.itemFocusIdx === index;
   return (
-    <StyledBox px={2} py={1} focused={focused} ref={ref}>
+    <StyledBox
+      px={2}
+      py={1}
+      focused={focused}
+      isKeyboardNavigation={isKeyboardNavigation}
+      ref={ref}
+    >
       <Flexbox container justifyContent="space-between" gutter={4}>
         <Flexbox item container alignItems="center" basis="32px" grow={0}>
-          <Avatar>{option.symbol}</Avatar>
+          <Avatar size="s">{option.symbol}</Avatar>
         </Flexbox>
         <Flexbox item container direction="column" grow={1}>
           <Flexbox item>
-            <Typography type="secondary" color={t => t.color.text}>
+            <Typography type="tertiary" weight="bold" color={t => t.color.text}>
               {option.label}
+            </Typography>
+            <Typography type="tertiary">
+              <span aria-hidden="true">&nbsp;&#8231;&nbsp;</span>
+              {option.accno}
             </Typography>
           </Flexbox>
           <Flexbox item>
@@ -76,7 +94,7 @@ const AccountListItem = ({ index }: any, ref) => {
         {selected && (
           <Flexbox item container alignItems="center">
             <Box pl={2}>
-              <Icon.CheckMark color={t => t.color.cta} />
+              <Icon.CheckMark color={t => t.color.cta} size={4} />
             </Box>
           </Flexbox>
         )}
@@ -112,11 +130,11 @@ export const preselectedOptions = () => {
     const [machineState] = useSelectMachineFromContext();
     const selectedCount = machineState.context.selectedItems.length;
     return (
-      <Box px={2}>
+      <FlexedBox px={2}>
         <Typography type="secondary">
           {selectedCount === 0 ? machineState.context.placeholder : `${selectedCount} selected`}
         </Typography>
-      </Box>
+      </FlexedBox>
     );
   }, []);
 
@@ -139,6 +157,34 @@ export const preselectedOptions = () => {
     />
   );
 };
+
+export const multiSelectUncontrolled = () => {
+  // This component you need to redefine for your particular case
+  // Consider translations and a11y!
+  const CustomSelectedValue = React.useCallback(() => {
+    const [machineState] = useSelectMachineFromContext();
+    const selectedCount = machineState.context.selectedItems.length;
+    return (
+      <FlexedBox px={2}>
+        <Typography type="secondary">
+          {selectedCount === 0 ? machineState.context.placeholder : `${selectedCount} selected`}
+        </Typography>
+      </FlexedBox>
+    );
+  }, []);
+
+  return (
+    <Input.Select
+      id="input-1"
+      options={accountOptions}
+      components={{ SelectedValue: CustomSelectedValue }}
+      multiselect
+      label="Label"
+      placeholder="Placeholder"
+    />
+  );
+};
+
 export const searchStory = () => (
   <Input.Select
     id="input-1"
@@ -268,11 +314,11 @@ export const multiselect = () => {
       const [machineState] = useSelectMachineFromContext();
       const selectedCount = machineState.context.selectedItems.length;
       return (
-        <Box px={2}>
+        <FlexedBox px={2}>
           <Typography type="secondary">
             {selectedCount === 0 ? machineState.context.placeholder : `${selectedCount} selected`}
           </Typography>
-        </Box>
+        </FlexedBox>
       );
     },
     [],
@@ -312,7 +358,7 @@ export const multiselectSelectAll = () => {
       const selectedCount = machineState.context.selectedItems.length;
       const allSelected = machineState.context.selectedItems.some(x => x.all);
       return (
-        <Box px={2}>
+        <FlexedBox px={2}>
           <Typography type="secondary">
             {allSelected
               ? 'All selected'
@@ -320,7 +366,7 @@ export const multiselectSelectAll = () => {
               ? machineState.context.placeholder
               : `${selectedCount} selected`}
           </Typography>
-        </Box>
+        </FlexedBox>
       );
     },
     [],
@@ -347,12 +393,15 @@ export const changesFromProps = () => {
   const [disabled, setDisabled] = React.useState(false);
   const removeAcc = () => setAccs(accs.slice(0, -1));
   const selectFirst = () => setValue([accountOptions[0]]);
+
+  console.log('value in story:', value);
   return (
     <>
       <button onClick={removeAcc}>Delete</button>
       <button onClick={selectFirst}>Select first</button>
       <button onClick={() => setDisabled(true)}>Disable</button>
       <button onClick={() => setDisabled(false)}>Enable</button>
+      <pre>{JSON.stringify(value, null, 2)}</pre>
       <pre>{JSON.stringify(accs, null, 2)}</pre>
       <Input.Select
         id="onchange-select"
@@ -535,8 +584,6 @@ export const sizeS = () => {
 };
 
 export const linkWithDropdownAndSearchBox = () => {
-  const [filterQuery, setFilterQuery] = React.useState('');
-
   const customComponents = React.useMemo(
     () => ({
       SelectedValue: (_: any, ref: React.Ref<any>) => {
@@ -555,7 +602,7 @@ export const linkWithDropdownAndSearchBox = () => {
     [],
   );
 
-  const [value, setValue] = React.useState(() => []);
+  const [value, setValue] = React.useState([]);
   const hugeOptionsList = React.useMemo(
     () =>
       accountOptions
@@ -594,7 +641,7 @@ export const linkWithDropdownAndSearchBox = () => {
       showSearch
       value={value}
       components={customComponents}
-      onChange={setValue}
+      onChange={newVal => action('change')(newVal) && setValue(newVal)}
       width="350px"
     />
   );

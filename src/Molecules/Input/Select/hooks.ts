@@ -55,7 +55,6 @@ export const useBatchedSend = (send: Function) => {
 
 export const useSyncPropsWithMachine = (propsToSync: Partial<Props>, deps: Array<any>) => {
   const send = deps[0];
-
   React.useEffect(() => {
     send({
       type: 'SYNC',
@@ -75,7 +74,7 @@ export const useMultiRef = () => {
   return [itemRefs, setItemRef];
 };
 
-export const useDelegateKeyDownToMachine = (send, selectOnSpace) => {
+export const useDelegateKeyDownToMachine = (send: Function, selectOnSpace: boolean) => {
   const sendBatched = useBatchedSend(send);
 
   const keyActionMap = new Map([
@@ -90,30 +89,31 @@ export const useDelegateKeyDownToMachine = (send, selectOnSpace) => {
     keyActionMap.set(' ', 'SELECT_FOCUSED_ITEM');
   }
 
-  return React.useCallback(
-    (e: React.KeyboardEvent) => {
-      if (keyActionMap.has(e.key)) {
-        sendBatched(['KEY_PRESS', keyActionMap.get(e.key)]);
-        e.preventDefault();
-        return false;
-      }
-      send(['KEY_PRESS']);
-      return undefined;
-    },
-    [sendBatched],
-  );
+  return (e: React.KeyboardEvent) => {
+    if (keyActionMap.has(e.key)) {
+      sendBatched(['KEY_PRESS', keyActionMap.get(e.key)]);
+      e.preventDefault();
+      return false;
+    }
+    sendBatched(['KEY_PRESS']);
+    return undefined;
+  };
 };
 
 export const usePropagateChangesThroughOnChange = (machineState, send, onChange, isFirstRender) => {
+  const isChangeUncommitted =
+    machineState.matches('selection.controlled.changeUncommitted') ||
+    machineState.matches('selection.uncontrolled.changeUncommitted');
+
   React.useEffect(() => {
     // Don't want to grab first onChange
     // Why is it happenning though 🤔
     if (isFirstRender) return;
-    if (machineState.matches({ selection: 'changeUncommitted' })) {
-      if (onChange) onChange(machineState.context.selectedItems);
+    if (isChangeUncommitted) {
+      if (onChange) onChange(machineState.context.uncommitedSelectedItems);
       send('CHANGE_COMMIT');
     }
-  }, [machineState, onChange]);
+  }, [isChangeUncommitted, onChange]);
 };
 
 export const useOnBlurAndOnFocus = (

@@ -40,6 +40,10 @@ const noop = () => {};
 
 const Select = (props: Props) => {
   assert(Boolean(props.id), `Input.Select: "id" is required.`);
+  assert(
+    typeof props.value !== 'undefined' ? typeof props.onChange !== 'undefined' : true,
+    `Input.Select: You can't use 'value' prop without onChange. It makes sense only if you want a readonly Input.Select, which is really weird. Don't do that.`,
+  );
 
   const isFirstRender = useIsFirstRender();
 
@@ -50,7 +54,7 @@ const Select = (props: Props) => {
       error: props.error,
       success: props.success,
       options: props.options,
-      selectedItems: props.value || [],
+      selectedItems: [],
       disabled: props.disabled,
       open: false,
       itemFocusIdx: null,
@@ -62,10 +66,12 @@ const Select = (props: Props) => {
       visibleOptions: props.options,
       showSearch: props.showSearch || false,
       id: props.id,
+      valueFromProps: props.value,
+      uncommitedSelectedItems: [],
     }),
   );
   const [machineState, send] = machineHandlers;
-
+  console.log(machineState.value, machineState.context.valueFromProps, machineState.actions);
   /******      Machine syncing      ******/
   usePropagateChangesThroughOnChange(machineState, send, props.onChange, isFirstRender);
   useSyncPropsWithMachine(
@@ -74,7 +80,8 @@ const Select = (props: Props) => {
       options: props.options,
       placeholder: props.placeholder,
       error: props.error,
-      selectedItems: props.value || [],
+      // selectedItems: [],
+      valueFromProps: props.value,
       success: props.success,
       disabled: props.disabled,
       extraInfo: props.extraInfo,

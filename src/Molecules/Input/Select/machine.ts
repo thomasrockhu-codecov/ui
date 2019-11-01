@@ -24,10 +24,13 @@ export const SelectMachine = Machine(
       showSearch: false,
       visibleOptions: [] as Array<any>,
       id: 'id-from-props',
+      valueFromProps: [] as Array<any>,
+      uncommitedSelectedItems: [] as Array<any>,
     },
     on: {
       SYNC: {
         actions: 'syncProps',
+        target: 'selection.unknown',
       },
     },
     states: {
@@ -74,7 +77,118 @@ export const SelectMachine = Machine(
           },
         },
       },
-
+      selection: {
+        initial: 'unknown',
+        states: {
+          unknown: {
+            on: {
+              '': [
+                {
+                  target: 'controlled',
+                  actions: 'forceValueFromProps',
+                  cond: ctx => !!ctx.valueFromProps,
+                },
+                { target: 'uncontrolled' },
+              ],
+            },
+          },
+          controlled: {
+            initial: 'unknown',
+            on: {
+              SELECT_ITEM: {
+                target: '.changeUncommitted',
+                actions: 'updateUncommittedItems',
+                cond: (_, e) => !e.payload.disabled,
+              },
+              SELECT_FOCUSED_ITEM: {
+                target: '.unknown',
+                actions: 'sendSelectOrDeselectVisibleFocusedOption',
+              },
+              DESELECT_ITEM: {
+                target: '.unknown',
+                actions: 'deselectOption',
+                cond: ctx => !!ctx.multiselect,
+              },
+            },
+            states: {
+              unknown: {
+                on: {
+                  '': [
+                    {
+                      target: 'incorrectSelection',
+                      cond: ctx => ctx.selectedItems.some(x => !includesOption(ctx.options, x)),
+                    },
+                    {
+                      target: 'on',
+                      cond: ctx => ctx.valueFromProps.length > 0,
+                    },
+                    { target: 'off' },
+                  ],
+                },
+              },
+              on: {},
+              off: {},
+              changeUncommitted: {
+                on: { CHANGE_COMMIT: { target: 'unknown', actions: 'commitSelectedItems' } },
+              },
+              incorrectSelection: {
+                on: {
+                  '': {
+                    target: 'off',
+                    actions: 'resetSelection',
+                  },
+                },
+              },
+            },
+          },
+          uncontrolled: {
+            initial: 'unknown',
+            on: {
+              SELECT_ITEM: {
+                target: '.changeUncommitted',
+                actions: 'updateUncommittedItems',
+                cond: (_, e) => !e.payload.disabled,
+              },
+              SELECT_FOCUSED_ITEM: {
+                target: '.unknown',
+                actions: 'sendSelectOrDeselectVisibleFocusedOption',
+              },
+              DESELECT_ITEM: {
+                target: '.unknown',
+                actions: 'deselectOption',
+                cond: ctx => !!ctx.multiselect,
+              },
+            },
+            states: {
+              unknown: {
+                on: {
+                  '': [
+                    {
+                      target: 'incorrectSelection',
+                      cond: ctx => ctx.selectedItems.some(x => !includesOption(ctx.options, x)),
+                    },
+                    { target: 'on', cond: ctx => ctx.selectedItems.length > 0 },
+                    { target: 'off' },
+                  ],
+                },
+              },
+              on: {},
+              off: {},
+              changeUncommitted: {
+                on: { CHANGE_COMMIT: { target: 'unknown', actions: 'commitSelectedItems' } },
+              },
+              incorrectSelection: {
+                on: {
+                  '': {
+                    target: 'off',
+                    actions: 'resetSelection',
+                  },
+                },
+              },
+            },
+          },
+        },
+      },
       correctness: {
         initial: 'unknown',
 
@@ -119,8 +233,14 @@ export const SelectMachine = Machine(
                 actions: 'selectOrDeselect',
               },
             },
-            initial: 'idle',
+            initial: 'unknown',
             states: {
+              unknown: {
+                on: {
+                  '': [{ target: 'active', cond: ctx => Boolean(ctx.open) }, { target: 'idle' }],
+                },
+              },
+
               idle: {
                 on: {
                   FOCUS: 'active.focus.unknown',
@@ -198,53 +318,7 @@ export const SelectMachine = Machine(
                       },
                     },
                   },
-                  selection: {
-                    initial: 'unknown',
-                    on: {
-                      SELECT_ITEM: {
-                        target: '.changeUncommitted',
-                        actions: 'updateSelectedItems',
-                        cond: (_, e) => !e.payload.disabled,
-                      },
-                      SELECT_FOCUSED_ITEM: {
-                        target: '.unknown',
-                        actions: 'sendSelectOrDeselectVisibleFocusedOption',
-                      },
-                      DESELECT_ITEM: {
-                        target: '.unknown',
-                        actions: 'deselectOption',
-                        cond: ctx => !!ctx.multiselect,
-                      },
-                    },
-                    states: {
-                      unknown: {
-                        on: {
-                          '': [
-                            {
-                              target: 'incorrectSelection',
-                              cond: ctx =>
-                                ctx.selectedItems.some(x => !includesOption(ctx.options, x)),
-                            },
-                            { target: 'on', cond: ctx => ctx.selectedItems.length > 0 },
-                            { target: 'off' },
-                          ],
-                        },
-                      },
-                      changeUncommitted: {
-                        on: { CHANGE_COMMIT: 'unknown' },
-                      },
-                      incorrectSelection: {
-                        on: {
-                          '': {
-                            target: 'off',
-                            actions: 'resetSelection',
-                          },
-                        },
-                      },
-                      on: {},
-                      off: {},
-                    },
-                  },
+
                   navigation: {
                     on: {
                       CLOSE: {
@@ -330,6 +404,7 @@ export const SelectMachine = Machine(
       syncProps: assign((ctx, e) => ({
         ...ctx,
         ...e.payload,
+        valueFromProps: e.payload.valueFromProps,
         visibleOptions: e.payload.options !== ctx.options ? e.payload.options : ctx.visibleOptions,
       })),
       restoreFocusOrFocusFirst: assign({
@@ -395,8 +470,9 @@ export const SelectMachine = Machine(
           return newOptions;
         },
       }),
-      updateSelectedItems: assign({
-        selectedItems: (ctx, e) => {
+
+      updateUncommittedItems: assign({
+        uncommitedSelectedItems: (ctx, e) => {
           if (ctx.multiselect) {
             const activeOptions = ctx.options.filter(x => !x.disabled);
             if (e.payload.all) {
@@ -412,6 +488,11 @@ export const SelectMachine = Machine(
           return [e.payload];
         },
       }),
+
+      commitSelectedItems: assign({
+        selectedItems: ctx => ctx.uncommitedSelectedItems,
+      }),
+      forceValueFromProps: assign({ selectedItems: ctx => ctx.valueFromProps }),
     },
   },
 );
