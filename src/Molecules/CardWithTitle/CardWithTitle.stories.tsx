@@ -127,7 +127,7 @@ export const cardWithTitleWithFadedScroll = () => {
   );
 
   return (
-    <CardWithTitle title={CustomTitle} scrollable>
+    <CardWithTitle title={CustomTitle} supportFadedScroll>
       <Box pb={5}>
         <FadedScroll maxHeight={40}>
           <Box px={5}>
@@ -151,7 +151,7 @@ export const scrollableHeightContainedFromOutside = () => {
   );
 
   return (
-    <StyledCardWithTitle title={CustomTitle} scrollable>
+    <StyledCardWithTitle title={CustomTitle} supportFadedScroll>
       <RequiredContainer>
         <FadedScroll>
           <Box px={5}>
