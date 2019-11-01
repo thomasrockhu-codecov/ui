@@ -31,10 +31,18 @@ const StyledA11yButton = styled(NormalizedElements.Button)`
   `}
 `;
 
+const getWidth = (p: any) => {
+  if (p.width) return p.width;
+  if (p.noFormField) {
+    return 'auto';
+  }
+  return 'calc(100% + 2px)'; // adjusting for border
+};
 const StyledListWrapper = styled.div<any>`
-  width: ${p => (p.noFormField ? (p.width ? p.width : 'auto') : '100%')};
+  width: ${getWidth};
   position: absolute;
   top: 100%;
+  left: -1px; /* adjusting for border */
   z-index: 4;
   margin: -4px;
   padding: 4px;

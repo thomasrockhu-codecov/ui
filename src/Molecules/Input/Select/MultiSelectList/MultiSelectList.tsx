@@ -29,7 +29,6 @@ const leftAndRightCss = css<Pick<ListProps, 'position'>>`
 
 const commonTriangleCss = css<any>`
   position: absolute;
-  margin-left: -${TRIANGLE_SIZE}px;
   width: 0;
   height: 0;
   content: '';
@@ -49,7 +48,7 @@ const triangleCss = css`
   &:after {
     ${leftAndRightCss}
     ${commonTriangleCss}
-  top: -${TRIANGLE_SIZE - 2}px;
+  top: -${TRIANGLE_SIZE - 1}px;
     border-bottom: ${TRIANGLE_SIZE}px solid;
     border-bottom-color: #ffffff;
   }
@@ -91,7 +90,6 @@ const fadeCss = css`
   }
 `;
 const FullHeightFlexboxWithFade = styled.div`
-  margin: 0 1px;
   ${fadeCss}
 `;
 
