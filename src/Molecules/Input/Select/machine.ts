@@ -38,7 +38,7 @@ export const SelectMachine = Machine(
             target: '.on',
             actions: 'restoreFocusOrFocusFirst',
           },
-          CLOSE: '.off',
+          CLOSE: { target: '.off', actions: 'cleanSearch' },
           TOGGLE: [{ actions: send('CLOSE'), cond: ctx => ctx.open }, { actions: send('OPEN') }],
           BLUR: {
             actions: send('CLOSE'),
@@ -134,11 +134,7 @@ export const SelectMachine = Machine(
                 states: {
                   search: {
                     initial: 'unknown',
-                    on: {
-                      CLOSE: {
-                        actions: 'cleanSearch',
-                      },
-                    },
+
                     states: {
                       unknown: {
                         on: {

@@ -1,12 +1,14 @@
 import * as React from 'react';
+import { Props } from './Select.types';
 
 export const useAutofocus = (ref: React.RefObject<any>, enable?: boolean) => {
   React.useEffect(() => {
     if (enable && ref && ref.current) ref.current.focus();
-  }, [enable]);
+  }, [enable, ref]);
 };
 
 export const useFocusFromMachine = (machineState, buttonRef, itemRefs, searchRef) => {
+  const isInButtonFocusState = machineState.matches('interaction.enabled.active.focus.button');
   React.useEffect(() => {
     if (
       machineState.matches('interaction.enabled.active.focus.listItem') &&
@@ -17,13 +19,10 @@ export const useFocusFromMachine = (machineState, buttonRef, itemRefs, searchRef
         if (itemRefs[machineState.context.itemFocusIdx])
           itemRefs[machineState.context.itemFocusIdx].scrollIntoView({ block: 'nearest' });
       }
-    } else if (machineState.matches('interaction.enabled.active.focus.button')) {
+    } else if (isInButtonFocusState) {
       if (buttonRef.current) buttonRef.current.focus();
     }
-  }, [
-    machineState.context.itemFocusIdx,
-    machineState.matches('interaction.enabled.active.focus.button'),
-  ]);
+  }, [machineState.context.itemFocusIdx, isInButtonFocusState]); // eslint-disable-line react-hooks/exhaustive-deps
 };
 
 export const useIsFirstRender = () => {
@@ -54,7 +53,7 @@ export const useBatchedSend = (send: Function) => {
   );
 };
 
-export const useSyncPropsWithMachine = (propsToSync, deps) => {
+export const useSyncPropsWithMachine = (propsToSync: Partial<Props>, deps: Array<any>) => {
   const send = deps[0];
 
   React.useEffect(() => {
@@ -62,13 +61,13 @@ export const useSyncPropsWithMachine = (propsToSync, deps) => {
       type: 'SYNC',
       payload: propsToSync,
     });
-  }, deps);
+  }, deps); // eslint-disable-line react-hooks/exhaustive-deps
 };
 
 export const useMultiRef = () => {
-  const itemRefs = React.useMemo(() => [], []);
+  const itemRefs = React.useMemo(() => [] as Array<React.RefObject<any>>, []);
   const setItemRef = React.useCallback(
-    index => ref => {
+    (index: number) => (ref: React.RefObject<any>) => {
       if (ref) itemRefs[index] = ref;
     },
     [],
@@ -79,23 +78,27 @@ export const useMultiRef = () => {
 export const useDelegateKeyDownToMachine = (send, selectOnSpace) => {
   const sendBatched = useBatchedSend(send);
 
-  const keyActionMap = {
-    ArrowDown: 'FOCUS_NEXT_ITEM',
-    ArrowUp: 'FOCUS_PREV_ITEM',
-    Escape: 'TOGGLE',
-    Enter: 'SELECT_FOCUSED_ITEM',
-    Tab: '',
-    ...(selectOnSpace ? { [' ']: 'SELECT_FOCUSED_ITEM' } : {}),
-  };
-  keyActionMap.keys = Object.keys(keyActionMap);
+  const keyActionMap = new Map([
+    ['ArrowDown', 'FOCUS_NEXT_ITEM'],
+    ['ArrowUp', 'FOCUS_PREV_ITEM'],
+    ['Escape', 'TOGGLE'],
+    ['Enter', 'SELECT_FOCUSED_ITEM'],
+    ['Tab', ''],
+  ]);
+
+  if (selectOnSpace) {
+    keyActionMap.set(' ', 'SELECT_FOCUSED_ITEM');
+  }
+
   return React.useCallback(
-    e => {
-      if (keyActionMap.keys.includes(e.key)) {
-        sendBatched(['KEY_PRESS', keyActionMap[e.key]]);
+    (e: React.KeyboardEvent) => {
+      if (keyActionMap.has(e.key)) {
+        sendBatched(['KEY_PRESS', keyActionMap.get(e.key)]);
         e.preventDefault();
         return false;
       }
       send(['KEY_PRESS']);
+      return undefined;
     },
     [sendBatched],
   );
