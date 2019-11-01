@@ -134,6 +134,7 @@ const Select = (props: Props) => {
     props.onBlur,
     props.onFocus,
     formFieldRef,
+    isFirstRender,
   );
 
   /******      Renderers      ******/

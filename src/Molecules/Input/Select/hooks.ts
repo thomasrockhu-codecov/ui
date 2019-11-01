@@ -113,10 +113,17 @@ export const usePropagateChangesThroughOnChange = (machineState, send, onChange,
   }, [machineState, onChange]);
 };
 
-export const useOnBlurAndOnFocus = (machineState, send, onBlur, onFocus, wrapperRef) => {
+export const useOnBlurAndOnFocus = (
+  machineState,
+  send,
+  onBlur,
+  onFocus,
+  wrapperRef,
+  isFirstRender,
+) => {
   const isPassive = machineState.matches('interaction.enabled.idle');
   React.useEffect(() => {
-    if (isPassive && onBlur) onBlur();
+    if (!isFirstRender && isPassive && onBlur) onBlur();
   }, [isPassive]);
 
   const isActive = machineState.matches('interaction.enabled.active');

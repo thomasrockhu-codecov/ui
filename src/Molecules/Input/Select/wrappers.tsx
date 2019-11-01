@@ -148,7 +148,7 @@ export const ListItemWrapper = React.forwardRef<
   const [current] = useSelectMachineFromContext();
   const selected =
     current.context.selectedItems.includes(props.option) ||
-    current.context.selectedItems.some(x => x.value === props.value);
+    current.context.selectedItems.some(x => x.value === props.option.value);
   const disabled = props.option.disabled;
 
   const Component = props.component;

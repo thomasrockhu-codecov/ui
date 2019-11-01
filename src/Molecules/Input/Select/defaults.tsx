@@ -75,7 +75,9 @@ export const defaultComponents = {
     ({ index, isKeyboardNavigation }, ref) => {
       const [state] = useSelectMachineFromContext();
       const option = state.context.visibleOptions[index];
-      const selected = state.context.selectedItems.includes(option);
+      const selected =
+        state.context.selectedItems.includes(option) ||
+        state.context.selectedItems.some(x => x.value === option.value);
       const focused = state.context.itemFocusIdx === index;
       return (
         <DefaultListItem
@@ -108,7 +110,9 @@ export const defaultComponentsMultiselect = {
     ({ index, isKeyboardNavigation }, ref) => {
       const [state] = useSelectMachineFromContext();
       const option = state.context.visibleOptions[index];
-      const selected = state.context.selectedItems.includes(option);
+      const selected =
+        state.context.selectedItems.includes(option) ||
+        state.context.selectedItems.some(x => x.value === option.value);
       const focused = state.context.itemFocusIdx === index;
       const selectAll = option.all;
 

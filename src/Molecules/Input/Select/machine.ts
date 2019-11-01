@@ -366,6 +366,7 @@ export const SelectMachine = Machine(
       selectOrDeselect: send((ctx, event) => {
         const isSelected = includesOption(ctx.selectedItems, event.payload);
         const type = isSelected ? 'DESELECT_ITEM' : 'SELECT_ITEM';
+
         return {
           type,
           payload: event.payload,
@@ -383,9 +384,9 @@ export const SelectMachine = Machine(
           if (payload.all) {
             return [];
           }
-          let predicate = x => x !== payload;
+          let predicate = x => !isEqualOptions(x, payload);
           if (ctx.options.some(x => x.all)) {
-            predicate = x => !x.all && x !== payload;
+            predicate = x => !x.all && !isEqualOptions(x, payload);
           }
           return ctx.selectedItems.filter(predicate);
         },

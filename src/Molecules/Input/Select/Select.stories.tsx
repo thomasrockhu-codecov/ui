@@ -105,6 +105,40 @@ export const overflowStory = () => (
   />
 );
 
+export const preselectedOptions = () => {
+  // This component you need to redefine for your particular case
+  // Consider translations and a11y!
+  const CustomSelectedValue = React.useCallback(() => {
+    const [machineState] = useSelectMachineFromContext();
+    const selectedCount = machineState.context.selectedItems.length;
+    return (
+      <Box px={2}>
+        <Typography type="secondary">
+          {selectedCount === 0 ? machineState.context.placeholder : `${selectedCount} selected`}
+        </Typography>
+      </Box>
+    );
+  }, []);
+
+  const [values, setValues] = React.useState([
+    // Non-referentially equal options
+    { ...accountOptions[1] },
+    { ...accountOptions[2] },
+  ]);
+
+  return (
+    <Input.Select
+      id="input-1"
+      options={accountOptions}
+      value={values}
+      onChange={setValues}
+      components={{ SelectedValue: CustomSelectedValue }}
+      multiselect
+      label="Label"
+      placeholder="Placeholder"
+    />
+  );
+};
 export const searchStory = () => (
   <Input.Select
     id="input-1"
