@@ -8,10 +8,10 @@ const StyledHeader = styled.header`
   padding: ${({ theme }) => theme.spacing.unit(5)}px;
 `;
 
-type ScrollableProp = Pick<Props, 'scrollable'>;
-const StyledCard = styled(Card)<ScrollableProp>`
+type FadedScrollProp = Pick<Props, 'supportFadedScroll'>;
+const StyledCard = styled(Card)<FadedScrollProp>`
   ${p =>
-    p.scrollable &&
+    p.supportFadedScroll &&
     `
 ${p.theme.media.greaterThan(p.theme.breakpoints.md)} {
 display: flex;
@@ -37,10 +37,10 @@ export const CardWithTitle: CardWithTitleComponent & {
    * */
   components: typeof components;
 } = props => {
-  const { title, children, scrollable } = props;
+  const { title, children, supportFadedScroll } = props;
 
   return (
-    <StyledCard scrollable={scrollable} {...omitProps(props)}>
+    <StyledCard supportFadedScroll={supportFadedScroll} {...omitProps(props)}>
       <StyledHeader>{title}</StyledHeader>
       {children}
     </StyledCard>
