@@ -15,7 +15,7 @@ export default {
 
 const ParentWithHeight = styled.div`
   ${p => p.theme.media.greaterThan(p.theme.breakpoints.md)} {
-    height: 200px;
+    height: 220px;
   }
 `;
 
@@ -53,7 +53,7 @@ withHeightDeclaredByParent.story = {
 };
 
 export const withHeightOfFadeChanged = () => (
-  <FadedScroll fadeHeight={5} maxHeight="200px">
+  <FadedScroll fadeHeight={5} maxHeight="220px">
     {content}
   </FadedScroll>
 );
@@ -63,7 +63,7 @@ withHeightOfFadeChanged.story = {
 };
 
 export const withMobileFadeEnabled = () => (
-  <div style={{ height: '200px' }}>
+  <div style={{ height: '220px' }}>
     <FadedScroll enableMobileFade>{content}</FadedScroll>
   </div>
 );
