@@ -3,6 +3,7 @@ export type InternalProps = {
 };
 
 export type Props = {
+  className?: string;
   /** You can provide a maxHeight to the component or let this component take all available space of parent and if the content exceeds that height then the scrollbar will appear.
    */
   maxHeight?: string | number;

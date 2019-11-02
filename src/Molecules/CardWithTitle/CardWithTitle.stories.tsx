@@ -32,17 +32,10 @@ const MockedContent = () => {
   );
 };
 
-const StyledCardWithTitle = styled(CardWithTitle)`
+const HeightOnCardWithTitle = styled(CardWithTitle)`
   ${p => p.theme.media.greaterThan(p.theme.breakpoints.md)} {
     height: 250px;
   }
-`;
-
-const RequiredContainer = styled.div`
-  height: 100%;
-  min-height: 0; /* Firefox */
-  flex-grow: 1;
-  padding-bottom: ${p => p.theme.spacing.unit(5)}px;
 `;
 
 export default {
@@ -127,14 +120,12 @@ export const cardWithTitleWithFadedScroll = () => {
   );
 
   return (
-    <CardWithTitle title={CustomTitle} supportFadedScroll>
-      <Box pb={5}>
-        <FadedScroll maxHeight={40}>
-          <Box px={5}>
-            <MockedContent />
-          </Box>
-        </FadedScroll>
-      </Box>
+    <CardWithTitle title={CustomTitle}>
+      <FadedScroll maxHeight={50}>
+        <Box px={5}>
+          <MockedContent />
+        </Box>
+      </FadedScroll>
     </CardWithTitle>
   );
 };
@@ -151,15 +142,13 @@ export const scrollableHeightContainedFromOutside = () => {
   );
 
   return (
-    <StyledCardWithTitle title={CustomTitle} supportFadedScroll>
-      <RequiredContainer>
-        <FadedScroll>
-          <Box px={5}>
-            <MockedContent />
-          </Box>
-        </FadedScroll>
-      </RequiredContainer>
-    </StyledCardWithTitle>
+    <HeightOnCardWithTitle title={CustomTitle}>
+      <FadedScroll>
+        <Box px={5}>
+          <MockedContent />
+        </Box>
+      </FadedScroll>
+    </HeightOnCardWithTitle>
   );
 };
 

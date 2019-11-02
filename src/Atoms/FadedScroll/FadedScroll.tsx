@@ -16,7 +16,15 @@ const desktopsScroll = css<Pick<Props, 'maxHeight'>>`
   }
 `;
 
-const Outer = styled.div<Pick<InternalProps, 'intersectionOnScreen'> & Props>`
+const Container = styled.div`
+  height: 100%;
+  min-height: 0; /* Firefox */
+  flex-grow: 1;
+  box-sizing: border-box;
+  padding-bottom: ${p => p.theme.spacing.unit(5)}px;
+`;
+
+const Fade = styled.div<Pick<InternalProps, 'intersectionOnScreen'> & Props>`
   position: relative;
   height: 100%;
 
@@ -38,7 +46,7 @@ const Outer = styled.div<Pick<InternalProps, 'intersectionOnScreen'> & Props>`
   }
 `;
 
-const Inner = styled.div<Props>`
+const Scroll = styled.div<Props>`
   ${p => (p.enableMobileFade ? scroll : desktopsScroll)}
 `;
 
@@ -57,23 +65,27 @@ const Intersection = styled.div`
 
 export const FadedScroll: Component = ({
   children,
+  className,
   enableMobileFade = false,
   fadeHeight = 13,
   maxHeight,
-  ...rest
 }) => {
   const contentRef = useRef<HTMLDivElement | null>(null);
   const intersectionRef = useRef<HTMLDivElement | null>(null);
   const intersectionOnScreen = useOnScreen(intersectionRef);
 
   return (
-    <Outer fadeHeight={fadeHeight} intersectionOnScreen={intersectionOnScreen}>
-      <Inner enableMobileFade={enableMobileFade} maxHeight={maxHeight} {...rest}>
-        <Content ref={contentRef}>
-          {children}
-          <Intersection ref={intersectionRef} />
-        </Content>
-      </Inner>
-    </Outer>
+    <Container className={className}>
+      <Fade fadeHeight={fadeHeight} intersectionOnScreen={intersectionOnScreen}>
+        <Scroll enableMobileFade={enableMobileFade} maxHeight={maxHeight}>
+          <Content ref={contentRef}>
+            {children}
+            <Intersection ref={intersectionRef} />
+          </Content>
+        </Scroll>
+      </Fade>
+    </Container>
   );
 };
+
+FadedScroll.displayName = 'FadedScroll';
