@@ -63,13 +63,25 @@ const Intersection = styled.div`
   pointer-events: none;
 `;
 
-export const FadedScroll: Component = ({
-  children,
-  className,
-  enableMobileFade = false,
-  fadeHeight = 13,
-  maxHeight,
-}) => {
+const components = {
+  Fade,
+  Scroll,
+  Content,
+};
+
+export const FadedScroll: Component & {
+  /**
+   * This will allow you to customize
+   * inner parts with styled-components
+   * @example
+   * const StyledFadedScroll = styled(FadedScroll)`
+   *  ${FadedScroll.components.Content} {
+   *    color: pink;
+   * }
+   * `
+   * */
+  components: typeof components;
+} = ({ children, className, enableMobileFade = false, fadeHeight = 13, maxHeight }) => {
   const contentRef = useRef<HTMLDivElement | null>(null);
   const intersectionRef = useRef<HTMLDivElement | null>(null);
   const intersectionOnScreen = useOnScreen(intersectionRef);
@@ -88,4 +100,5 @@ export const FadedScroll: Component = ({
   );
 };
 
+FadedScroll.components = components;
 FadedScroll.displayName = 'FadedScroll';
