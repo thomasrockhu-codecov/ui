@@ -1,3 +1,17 @@
+# [1.66.0](https://github.com/nordnet/ui/compare/v1.65.0...v1.66.0) (2019-11-04)
+
+
+### Bug Fixes
+
+* build ([6de79a4](https://github.com/nordnet/ui/commit/6de79a4))
+* remove fade in mobile if enablemobilefade prop is undefined ([562e2b9](https://github.com/nordnet/ui/commit/562e2b9))
+
+
+### Features
+
+* 🎸 add placeholder to Input.Number ([adf156f](https://github.com/nordnet/ui/commit/adf156f))
+* 🎸 only show placeholder when no steppers for Input.Number ([b81c4e9](https://github.com/nordnet/ui/commit/b81c4e9))
+
 # [1.65.0](https://github.com/nordnet/ui/compare/v1.64.0...v1.65.0) (2019-11-04)
 
 
