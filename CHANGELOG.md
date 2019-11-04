@@ -1,3 +1,10 @@
+# [1.64.0](https://github.com/nordnet/ui/compare/v1.63.1...v1.64.0) (2019-11-04)
+
+
+### Features
+
+* 🎸 updated plus and minus icons ([093bf8b](https://github.com/nordnet/ui/commit/093bf8b))
+
 ## [1.63.1](https://github.com/nordnet/ui/compare/v1.63.0...v1.63.1) (2019-10-25)
 
 
