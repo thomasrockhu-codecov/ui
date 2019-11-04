@@ -112,7 +112,7 @@ integrationCardWithTitleWithCustomComponentAsTitle.story = {
   name: 'Integration: CardWithTitle with custom component as title',
 };
 
-export const cardWithTitleWithFadedScroll = () => {
+export const integrationWithFadedScroll = () => {
   const CustomTitle = (
     <Typography type="title3" as="h2">
       Konton
@@ -130,11 +130,11 @@ export const cardWithTitleWithFadedScroll = () => {
   );
 };
 
-cardWithTitleWithFadedScroll.story = {
-  name: 'Integration: FadedScroll',
+integrationWithFadedScroll.story = {
+  name: 'Integration: with FadedScroll',
 };
 
-export const scrollableHeightContainedFromOutside = () => {
+export const integrationFadedScrollWithHeightFromParent = () => {
   const CustomTitle = (
     <Typography type="title3" as="h2">
       Konton
@@ -152,6 +152,7 @@ export const scrollableHeightContainedFromOutside = () => {
   );
 };
 
-scrollableHeightContainedFromOutside.story = {
-  name: 'Integration: FadedScroll of content with height being whatever is available',
+integrationFadedScrollWithHeightFromParent.story = {
+  name:
+    'Integration: with FadedScroll of content and height being whatever is available left of parents height.',
 };
