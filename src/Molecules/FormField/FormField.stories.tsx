@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { Flexbox, FormField } from '../..';
+import { Flexbox, FormField, Icon } from '../..';
 
 export default {
   title: 'Molecules | FormField',
@@ -70,4 +70,18 @@ export const extraInfoStory = () => (
 
 extraInfoStory.story = {
   name: 'Extra info',
+};
+
+export const withAddon = () => (
+  <FormField
+    label="Label"
+    labelAddon={<Icon.Questionmark title="Tooltip content" size={4} />}
+    fieldId="unique-id-1"
+  >
+    <div style={{ background: 'aqua' }}>Pass in any children you want</div>
+  </FormField>
+);
+
+withAddon.story = {
+  name: 'With tooltip as label addon',
 };

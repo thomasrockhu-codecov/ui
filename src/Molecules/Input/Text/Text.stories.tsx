@@ -325,3 +325,15 @@ export const small = () => (
     ]}
   />
 );
+
+export const withLabelAddon = () => (
+  <Input.Text
+    label="Label"
+    labelAddon={<Icon.Questionmark title="Tooltip content" size={4} />}
+    placeholder="Placeholder"
+  />
+);
+
+withLabelAddon.story = {
+  name: 'With tooltip as label addon',
+};

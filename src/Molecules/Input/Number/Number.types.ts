@@ -29,6 +29,7 @@ export type Props = {
    */
   inputMode?: 'none' | 'numeric' | 'decimal';
   label: string;
+  labelAddon?: React.ReactNode;
   leftAddon?: React.ReactNode;
   max?: string | number;
   min?: string | number;

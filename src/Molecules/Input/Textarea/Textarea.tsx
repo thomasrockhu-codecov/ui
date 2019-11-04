@@ -96,7 +96,7 @@ export const Textarea: React.FC<Props> & {
 
   return (
     <FormField
-      {...R.pick(['error', 'extraInfo', 'hideLabel', 'label', 'width'], props)}
+      {...R.pick(['error', 'extraInfo', 'hideLabel', 'label', 'labelAddon', 'width'], props)}
       required={visuallyEmphasiseRequired}
     >
       <div>

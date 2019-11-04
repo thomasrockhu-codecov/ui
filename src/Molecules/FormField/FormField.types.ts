@@ -1,3 +1,7 @@
+export type LabelAddonProp = {
+  labelAddon?: React.ReactNode;
+};
+
 export type Props = {
   label?: string;
   hideLabel?: boolean;
@@ -22,4 +26,4 @@ export type Props = {
    * underneath
    */
   width?: string | number;
-};
+} & LabelAddonProp;
