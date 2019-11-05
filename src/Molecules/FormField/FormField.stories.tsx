@@ -71,3 +71,13 @@ export const extraInfoStory = () => (
 extraInfoStory.story = {
   name: 'Extra info',
 };
+
+export const withLabelTooltip = () => (
+  <FormField label="Label" labelTooltip="Tooltip content" fieldId="unique-id-1">
+    <div style={{ background: 'aqua' }}>Pass in any children you want</div>
+  </FormField>
+);
+
+withLabelTooltip.story = {
+  name: 'With label tooltip',
+};

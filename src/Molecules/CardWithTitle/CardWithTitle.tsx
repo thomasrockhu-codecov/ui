@@ -8,6 +8,12 @@ const StyledHeader = styled.header`
   padding: ${({ theme }) => theme.spacing.unit(5)}px;
 `;
 
+const StyledCard = styled(Card)`
+  display: flex;
+  flex-direction: column;
+  max-height: 100%;
+`;
+
 const omitProps = R.omit(['children', 'title']);
 
 const components = { StyledHeader };
@@ -28,10 +34,10 @@ export const CardWithTitle: CardWithTitleComponent & {
   const { title, children } = props;
 
   return (
-    <Card {...omitProps(props)}>
+    <StyledCard {...omitProps(props)}>
       <StyledHeader>{title}</StyledHeader>
       {children}
-    </Card>
+    </StyledCard>
   );
 };
 

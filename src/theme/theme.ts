@@ -109,6 +109,7 @@ export const createTheme = (config: ThemeConfig = {}): Theme => {
     color: {
       backgroundInput: rawColor.white,
       background: rawColor.gray7,
+      backgroundBlack: rawColor.black,
       backgroundDark: rawColor.gray0,
       buttonSecondaryBackground: rawColor.white,
       buttonText: rawColor.white,

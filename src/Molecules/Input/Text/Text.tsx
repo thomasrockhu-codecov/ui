@@ -124,7 +124,10 @@ const TextComponent = React.forwardRef<HTMLInputElement, Props>((props, ref) => 
 
   return (
     <FormField
-      {...R.pick(['error', 'extraInfo', 'hideLabel', 'label', 'width', 'className'], props)}
+      {...R.pick(
+        ['error', 'extraInfo', 'hideLabel', 'label', 'labelTooltip', 'className', 'width'],
+        props,
+      )}
       required={visuallyEmphasiseRequired}
     >
       <Typography type="secondary" color={t => t.color.text}>

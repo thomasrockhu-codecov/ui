@@ -1,5 +1,6 @@
 import * as R from 'ramda';
 import React from 'react';
+import { Theme } from '../theme/theme.types';
 
 export const assert = (
   expression: boolean,
@@ -59,3 +60,11 @@ const isInvalid = R.anyPass([
 ]);
 
 export const isValidDateTimeNumber = R.complement(isInvalid) as (x: any) => x is number;
+
+export const getValueFromNumberOrString = (value: number | string, theme: Theme) => {
+  if (value && theme) {
+    return `${isNumber(value) ? `${theme.spacing.unit(value)}px` : value}`;
+  }
+
+  return null;
+};

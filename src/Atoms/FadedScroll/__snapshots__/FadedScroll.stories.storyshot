@@ -1,0 +1,569 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Atoms | FadedScroll Default Story 1`] = `
+.c0 {
+  height: 100%;
+  min-height: 0;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  box-sizing: border-box;
+  padding-bottom: 20px;
+}
+
+.c1 {
+  height: 100%;
+}
+
+.c3 {
+  position: relative;
+}
+
+.c7 {
+  height: 4px;
+  width: 4px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  pointer-events: none;
+}
+
+.c4 {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.c6 {
+  display: block;
+}
+
+.c5 {
+  padding: 8px;
+}
+
+@media (min-width:976px) {
+  .c1 {
+    position: relative;
+    height: 100%;
+  }
+
+  .c1::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 52px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    pointer-events: none;
+    background: rgb(255,255,255);
+    background: linear-gradient(0deg,rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%);
+    opacity: 1;
+    -webkit-transition: 0.3s opacity ease-out;
+    transition: 0.3s opacity ease-out;
+  }
+}
+
+@media (min-width:976px) {
+  .c2 {
+    max-height: 160px;
+    overflow-y: auto;
+  }
+}
+
+<div
+  className="c0"
+>
+  <div
+    className="c1"
+  >
+    <div
+      className="c2"
+    >
+      <div
+        className="c3"
+      >
+        <ul
+          className="c4"
+        >
+          <li
+            className="c5 c6"
+          >
+            Lorem ipsum dolor sit amet
+          </li>
+          <li
+            className="c5 c6"
+          >
+            Sed consequat erat lacinia
+          </li>
+          <li
+            className="c5 c6"
+          >
+            Class aptent taciti sociosqu
+          </li>
+          <li
+            className="c5 c6"
+          >
+            Aliquam bibendum tortor dui
+          </li>
+          <li
+            className="c5 c6"
+          >
+            Quisque ac ullamcorper eros
+          </li>
+          <li
+            className="c5 c6"
+          >
+            Etiam urna elit, mollis vel arcu id
+          </li>
+          <li
+            className="c5 c6"
+          >
+            Sed consequat erat lacinia
+          </li>
+          <li
+            className="c5 c6"
+          >
+            Aliquam bibendum tortor dui
+          </li>
+        </ul>
+        <div
+          className="c7"
+        />
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Atoms | FadedScroll With Height Declared By Parent 1`] = `
+.c1 {
+  height: 100%;
+  min-height: 0;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  box-sizing: border-box;
+  padding-bottom: 20px;
+}
+
+.c2 {
+  height: 100%;
+}
+
+.c4 {
+  position: relative;
+}
+
+.c8 {
+  height: 4px;
+  width: 4px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  pointer-events: none;
+}
+
+.c5 {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.c7 {
+  display: block;
+}
+
+.c6 {
+  padding: 8px;
+}
+
+@media (min-width:976px) {
+  .c2 {
+    position: relative;
+    height: 100%;
+  }
+
+  .c2::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 52px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    pointer-events: none;
+    background: rgb(255,255,255);
+    background: linear-gradient(0deg,rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%);
+    opacity: 1;
+    -webkit-transition: 0.3s opacity ease-out;
+    transition: 0.3s opacity ease-out;
+  }
+}
+
+@media (min-width:976px) {
+  .c3 {
+    max-height: 100%;
+    overflow-y: auto;
+  }
+}
+
+@media (min-width:976px) {
+  .c0 {
+    height: 220px;
+  }
+}
+
+<div
+  className="c0"
+>
+  <div
+    className="c1"
+  >
+    <div
+      className="c2"
+    >
+      <div
+        className="c3"
+      >
+        <div
+          className="c4"
+        >
+          <ul
+            className="c5"
+          >
+            <li
+              className="c6 c7"
+            >
+              Lorem ipsum dolor sit amet
+            </li>
+            <li
+              className="c6 c7"
+            >
+              Sed consequat erat lacinia
+            </li>
+            <li
+              className="c6 c7"
+            >
+              Class aptent taciti sociosqu
+            </li>
+            <li
+              className="c6 c7"
+            >
+              Aliquam bibendum tortor dui
+            </li>
+            <li
+              className="c6 c7"
+            >
+              Quisque ac ullamcorper eros
+            </li>
+            <li
+              className="c6 c7"
+            >
+              Etiam urna elit, mollis vel arcu id
+            </li>
+            <li
+              className="c6 c7"
+            >
+              Sed consequat erat lacinia
+            </li>
+            <li
+              className="c6 c7"
+            >
+              Aliquam bibendum tortor dui
+            </li>
+          </ul>
+          <div
+            className="c8"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Atoms | FadedScroll With Height Of Fade Changed 1`] = `
+.c0 {
+  height: 100%;
+  min-height: 0;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  box-sizing: border-box;
+  padding-bottom: 20px;
+}
+
+.c1 {
+  height: 100%;
+}
+
+.c3 {
+  position: relative;
+}
+
+.c7 {
+  height: 4px;
+  width: 4px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  pointer-events: none;
+}
+
+.c4 {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.c6 {
+  display: block;
+}
+
+.c5 {
+  padding: 8px;
+}
+
+@media (min-width:976px) {
+  .c1 {
+    position: relative;
+    height: 100%;
+  }
+
+  .c1::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 20px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    pointer-events: none;
+    background: rgb(255,255,255);
+    background: linear-gradient(0deg,rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%);
+    opacity: 1;
+    -webkit-transition: 0.3s opacity ease-out;
+    transition: 0.3s opacity ease-out;
+  }
+}
+
+@media (min-width:976px) {
+  .c2 {
+    max-height: 220px;
+    overflow-y: auto;
+  }
+}
+
+<div
+  className="c0"
+>
+  <div
+    className="c1"
+  >
+    <div
+      className="c2"
+    >
+      <div
+        className="c3"
+      >
+        <ul
+          className="c4"
+        >
+          <li
+            className="c5 c6"
+          >
+            Lorem ipsum dolor sit amet
+          </li>
+          <li
+            className="c5 c6"
+          >
+            Sed consequat erat lacinia
+          </li>
+          <li
+            className="c5 c6"
+          >
+            Class aptent taciti sociosqu
+          </li>
+          <li
+            className="c5 c6"
+          >
+            Aliquam bibendum tortor dui
+          </li>
+          <li
+            className="c5 c6"
+          >
+            Quisque ac ullamcorper eros
+          </li>
+          <li
+            className="c5 c6"
+          >
+            Etiam urna elit, mollis vel arcu id
+          </li>
+          <li
+            className="c5 c6"
+          >
+            Sed consequat erat lacinia
+          </li>
+          <li
+            className="c5 c6"
+          >
+            Aliquam bibendum tortor dui
+          </li>
+        </ul>
+        <div
+          className="c7"
+        />
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Atoms | FadedScroll With Mobile Fade Enabled 1`] = `
+.c0 {
+  height: 100%;
+  min-height: 0;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  box-sizing: border-box;
+  padding-bottom: 20px;
+}
+
+.c1 {
+  height: 100%;
+}
+
+.c2 {
+  max-height: 100%;
+  overflow-y: auto;
+}
+
+.c3 {
+  position: relative;
+}
+
+.c7 {
+  height: 4px;
+  width: 4px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  pointer-events: none;
+}
+
+.c4 {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.c6 {
+  display: block;
+}
+
+.c5 {
+  padding: 8px;
+}
+
+@media (min-width:976px) {
+  .c1 {
+    position: relative;
+    height: 100%;
+  }
+
+  .c1::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 52px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    pointer-events: none;
+    background: rgb(255,255,255);
+    background: linear-gradient(0deg,rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%);
+    opacity: 1;
+    -webkit-transition: 0.3s opacity ease-out;
+    transition: 0.3s opacity ease-out;
+  }
+}
+
+<div
+  style={
+    Object {
+      "height": "220px",
+    }
+  }
+>
+  <div
+    className="c0"
+  >
+    <div
+      className="c1"
+    >
+      <div
+        className="c2"
+      >
+        <div
+          className="c3"
+        >
+          <ul
+            className="c4"
+          >
+            <li
+              className="c5 c6"
+            >
+              Lorem ipsum dolor sit amet
+            </li>
+            <li
+              className="c5 c6"
+            >
+              Sed consequat erat lacinia
+            </li>
+            <li
+              className="c5 c6"
+            >
+              Class aptent taciti sociosqu
+            </li>
+            <li
+              className="c5 c6"
+            >
+              Aliquam bibendum tortor dui
+            </li>
+            <li
+              className="c5 c6"
+            >
+              Quisque ac ullamcorper eros
+            </li>
+            <li
+              className="c5 c6"
+            >
+              Etiam urna elit, mollis vel arcu id
+            </li>
+            <li
+              className="c5 c6"
+            >
+              Sed consequat erat lacinia
+            </li>
+            <li
+              className="c5 c6"
+            >
+              Aliquam bibendum tortor dui
+            </li>
+          </ul>
+          <div
+            className="c7"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
