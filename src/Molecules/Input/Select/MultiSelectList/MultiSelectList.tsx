@@ -12,6 +12,7 @@ type ListProps = {
    * @default 'right'
    */
   position?: 'left' | 'center' | 'right';
+  searchComponent?: React.ReactNode;
 };
 const leftAndRightCss = css<Pick<ListProps, 'position'>>`
   ${p => {
@@ -84,7 +85,6 @@ const fadeCss = css`
     bottom: calc(100% - 240px - 30px);
     left: 6px;
     height: 20px;
-    width: 100%;
     background: linear-gradient(to bottom, rgba(255, 255, 255, 0), #fff);
     width: calc(100% - 12px);
   }
@@ -93,7 +93,7 @@ const FullHeightFlexboxWithFade = styled.div`
   ${fadeCss}
 `;
 
-export const OptionList: React.FC<ListProps> = ({ children, position, searchComponent }) => (
+export const OptionList: React.FC<ListProps> = ({ children, position, searchComponent = null }) => (
   <FullHeightFlexboxWithFade>
     <StyledList role="listbox" position={position} aria-multiselectable="true" tabIndex={0}>
       {searchComponent}
@@ -113,9 +113,10 @@ type OptionProps = {
   value: any;
   focused?: boolean;
   selectAll?: boolean;
+  isKeyboardNavigation?: boolean;
 };
 
-const hoverIfNotKeyboardNav = css`
+const hoverIfNotKeyboardNav = css<{ disabled?: boolean; isKeyboardNavigation?: boolean }>`
   ${p =>
     p.disabled || p.isKeyboardNavigation
       ? ''

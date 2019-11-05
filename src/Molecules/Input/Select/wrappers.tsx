@@ -94,7 +94,7 @@ const StyledListItemWrapper = styled.li`
   outline: none;
 `;
 
-type ListItemComponent = React.ComponentType<{ index: number; ref: React.Ref<HTMLElement> }>;
+type ListItemComponent = React.ComponentType<{ index: number }>;
 const FullWidthFlexbox = styled(Flexbox)`
   width: 100%;
 `;
@@ -120,7 +120,7 @@ export const SelectedValueWrapper = React.forwardRef<any, any>(
     const screenReaderText =
       value.length > 0 ? `${label}: ${screenReaderTextSelection}` : `${label}: ${placeholder}`;
 
-    const handleClick = e => {
+    const handleClick: React.MouseEventHandler = e => {
       e.preventDefault();
       send({ type: 'TOGGLE' });
     };
@@ -154,13 +154,12 @@ export const SelectedValueWrapper = React.forwardRef<any, any>(
 );
 
 export const ListItemWrapper = React.forwardRef<
-  HTMLElement | null,
+  HTMLLIElement,
   {
     component: ListItemComponent;
     option: Option;
     index: number;
-    onKeyDown: React.KeyboardEventHandler;
-    onClick: (params: { selected: boolean; option: Option }, e: React.MouseEvent) => void;
+    onClick: React.MouseEventHandler;
     id: string;
   }
 >((props, ref) => {
@@ -181,7 +180,7 @@ export const ListItemWrapper = React.forwardRef<
       id={`${props.id}-option-${props.index}`}
       tabIndex={0}
     >
-      <Component index={props.index} isKeyboardNavigation={props.isKeyboardNavigation} />
+      <Component index={props.index} />
     </StyledListItemWrapper>
   );
 });

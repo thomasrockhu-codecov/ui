@@ -98,19 +98,7 @@ const components = {
 const getAriaProps = R.pickBy((val, key) => key.startsWith('aria-'));
 const getDataProps = R.pickBy((val, key) => key.startsWith('data-'));
 
-export const Text: React.FC<Props> & {
-  /**
-   * This will allow you to customize
-   * inner parts with styled-components
-   * @example
-   * const CustomText = styled(Input.Text)`
-   *  ${Input.Text.components.Input} {
-   *    color: pink;
-   * }
-   * `
-   * */
-  components: typeof components;
-} = React.forwardRef((props, ref) => {
+const TextComponent = React.forwardRef<HTMLInputElement, Props>((props, ref) => {
   const {
     autoFocus,
     defaultValue,
@@ -132,7 +120,6 @@ export const Text: React.FC<Props> & {
     success,
     value,
     visuallyEmphasiseRequired,
-    className,
   } = props;
 
   return (
@@ -184,4 +171,6 @@ export const Text: React.FC<Props> & {
     </FormField>
   );
 });
+
+export const Text: typeof TextComponent & { components?: typeof components } = TextComponent;
 Text.components = components;

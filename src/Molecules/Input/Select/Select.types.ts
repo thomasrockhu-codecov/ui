@@ -1,3 +1,5 @@
+import { SYMBOL_ALL } from './constants';
+
 export type ActionTypes =
   | 'Select.Open'
   | 'Select.Close'
@@ -6,7 +8,7 @@ export type ActionTypes =
   | 'Select.DeselectValue'
   | 'Select.SyncState';
 
-export type ComponentTypes = 'ListItem' | 'List' | 'SelectedValue';
+export type ComponentTypes = 'ListItem' | 'List' | 'SelectedValue' | 'Search';
 export type Action = { type: ActionTypes; payload?: any };
 
 export type Props = {
@@ -17,12 +19,12 @@ export type Props = {
   id: string;
   options: Option[];
   value?: any;
-  error?: React.ReactNode;
-  extraInfo?: React.ReactNode;
+  error?: string;
+  extraInfo?: string;
   success?: boolean;
   hideLabel?: boolean;
   placeholder?: string;
-  label: React.ReactNode;
+  label: string;
   name?: string;
   size?: 's' | 'm';
   disabled?: boolean;
@@ -32,9 +34,7 @@ export type Props = {
   fullWidth?: boolean;
   width?: string;
   className?: string;
-  components?: Partial<
-    Record<ComponentTypes, (props: any, ref: React.Ref<any>) => React.ReactNode>
-  >;
+  components?: Partial<Record<ComponentTypes, React.ComponentType<any>>>;
   reducer?: (state: SelectState, action: Action) => SelectState;
   initialState?: any;
   /** use this flag if you
@@ -57,12 +57,14 @@ export type Props = {
 };
 
 export type OptionBase = {
+  [K: string]: any;
   label: string;
   value: any;
   disabled?: boolean;
+  [SYMBOL_ALL]?: boolean;
 };
 
-export type Option = OptionBase & Record<any, any>;
+export type Option = OptionBase;
 
 export type SelectState = {
   open: boolean;

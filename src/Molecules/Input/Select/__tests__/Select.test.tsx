@@ -104,7 +104,11 @@ test('Multiselect without custom components and with select all', async () => {
             const [state] = useSelectMachineFromContext();
             return (
               <div ref={ref} data-testid="custom-selected-value">
-                {state.context.selectedItems.length} items
+                {
+                  // @ts-ignore
+                  state.context.selectedItems.length
+                }{' '}
+                items
               </div>
             );
           },
@@ -123,7 +127,6 @@ test('Multiselect without custom components and with select all', async () => {
   // After click component becomes open
   // And search field inside is focused
   const list = getByTestId('input-select-list');
-  const searchInput = getByTestId('search-input-select');
 
   const option3Label = `${testMessage}2`;
   const option2Label = `${testMessage}1`;
@@ -202,7 +205,7 @@ test('Autofocus', () => {
   const handleBlur = jest.fn();
   const handleFocus = jest.fn();
 
-  const { queryByText, getByLabelText, getByTestId, getByText, queryByTestId, rerender } = render(
+  const { getByTestId, rerender } = render(
     <ThemeProvider theme={theme}>
       <>
         <Select
@@ -252,7 +255,7 @@ test('onBlur, onChange, onFocus', async () => {
   const handleFocus = jest.fn();
   const handleChange = jest.fn();
 
-  const { queryByText, getByLabelText, getByTestId, getByText, queryByTestId } = render(
+  const { getByTestId, getByText } = render(
     <ThemeProvider theme={theme}>
       <>
         <Select
@@ -266,13 +269,12 @@ test('onBlur, onChange, onFocus', async () => {
           label="Label"
           placeholder="Placeholder"
         />
-        <div tabIndex={0} data-testid="other-tabbable">
-          Other tabbable div
-        </div>
+        <button type="button" tabIndex={0} data-testid="other-tabbable">
+          Other tabbable button
+        </button>
       </>
     </ThemeProvider>,
   );
-  const formField = getByLabelText('Label');
 
   // Nothing gets triggered before actual interaction
   expect(handleBlur).not.toHaveBeenCalled();

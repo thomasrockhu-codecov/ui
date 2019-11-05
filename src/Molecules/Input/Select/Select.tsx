@@ -16,7 +16,7 @@ import {
   defaultComponents,
   defaultComponentsMultiselect,
 } from './defaults';
-import { SelectMachine } from './machine';
+import { SelectMachine, Context, OptionLike } from './machine';
 import { Props } from './Select.types';
 
 import { assert } from '../../../common/utils';
@@ -31,6 +31,7 @@ import {
   useSyncPropsWithMachine,
   useOnBlurAndOnFocus,
 } from './hooks';
+import { SYMBOL_ALL } from './constants';
 
 /* eslint-disable spaced-comment */
 const HiddenSelect = styled.select`
@@ -54,19 +55,19 @@ const Select = (props: Props) => {
   const isFirstRender = useIsFirstRender();
 
   /******      Machine instantiation      ******/
-  const machineHandlers = useMachine(
+  const machineHandlers = useMachine<Context, any>(
     SelectMachine.withContext({
       label: props.label,
-      error: props.error,
-      success: props.success,
+      error: props.error || '',
+      success: props.success || false,
       options: props.options,
       selectedItems: [],
-      disabled: props.disabled,
+      disabled: props.disabled || false,
       open: false,
       itemFocusIdx: null,
-      placeholder: props.placeholder,
+      placeholder: props.placeholder || '',
       searchQuery: '',
-      extraInfo: props.extraInfo,
+      extraInfo: props.extraInfo || '',
       multiselect: props.multiselect || false,
       lastNavigationType: null,
       visibleOptions: props.options,
@@ -86,7 +87,6 @@ const Select = (props: Props) => {
       options: props.options,
       placeholder: props.placeholder,
       error: props.error,
-      // selectedItems: [],
       valueFromProps: props.value,
       success: props.success,
       disabled: props.disabled,
@@ -112,7 +112,7 @@ const Select = (props: Props) => {
   );
 
   /******      Handlers      ******/
-  const handleClickListItem = option => e => {
+  const handleClickListItem = (option: OptionLike) => (e: React.MouseEvent) => {
     e.preventDefault();
     send({ type: 'ITEM_CLICK', payload: option });
     return false;
@@ -236,9 +236,8 @@ const Select = (props: Props) => {
               {options.map((x: any, index: number) => (
                 <ListItemWrapper
                   key={x.value}
-                  isKeyboardNavigation={isKeyboardNavigation}
                   index={index}
-                  ref={setItemRef(index)}
+                  ref={setItemRef(index) as any}
                   option={x}
                   id={props.id}
                   onClick={x.disabled ? noop : handleClickListItem(x)}
@@ -254,6 +253,7 @@ const Select = (props: Props) => {
 };
 
 Select.useSelectMachineFromContext = useSelectMachineFromContext;
+Select.SYMBOL_ALL = SYMBOL_ALL;
 Select.defaults = {
   components: defaultComponents,
   componentsMultiselect: defaultComponentsMultiselect,

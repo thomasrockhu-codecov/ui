@@ -17,6 +17,7 @@ import { OptionBase } from './Select.types';
 import { assert } from '../../../common/utils';
 import { Text } from '../Text';
 import { visuallyHiddenCss } from '../../../Atoms/VisuallyHidden';
+import { SYMBOL_ALL } from './constants';
 
 const getLabelOrPlaceholder = <T extends OptionBase>(state: any) => {
   if (state.context.selectedItems.length === 0) return state.context.placeholder;
@@ -39,17 +40,19 @@ const StyledFlexedBox = styled(Box)`
   align-items: center;
 `;
 
-const StyledInputText = styled(Text)`
+const StyledInputText = styled(Text)<{ hidden?: boolean; ref?: React.Ref<HTMLInputElement> }>`
   ${p => (p.hidden ? `${visuallyHiddenCss}` : '')}
 `;
-const Search = React.forwardRef((_, ref) => {
+
+const Search = React.forwardRef((_, ref: React.Ref<HTMLInputElement>) => {
   const [state, send] = useSelectMachineFromContext();
   const searchQuery = state.context.searchQuery;
   const showSearch = state.context.showSearch;
   const itemFocusIdx = state.context.itemFocusIdx;
   const id = state.context.id;
   const hidden = !showSearch;
-  const handleChange = e => send({ type: 'SEARCH_QUERY_UPDATE', payload: e.target.value });
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement>) =>
+    send({ type: 'SEARCH_QUERY_UPDATE', payload: e.target.value });
 
   return (
     <Box px={3} my={hidden ? 0 : 2} mb={hidden ? 0 : 1}>
@@ -65,34 +68,34 @@ const Search = React.forwardRef((_, ref) => {
         hidden={hidden}
         value={searchQuery}
         onChange={handleChange}
-        id={`${id}-search`}
       />
     </Box>
   );
 });
 export const defaultComponents = {
   Search,
-  ListItem: React.forwardRef<HTMLDivElement, { index: number }>(
-    ({ index, isKeyboardNavigation }, ref) => {
-      const [state] = useSelectMachineFromContext();
-      const option = state.context.visibleOptions[index];
-      const selected =
-        state.context.selectedItems.includes(option) ||
-        state.context.selectedItems.some(x => x.value === option.value);
-      const focused = state.context.itemFocusIdx === index;
-      return (
-        <DefaultListItem
-          ref={ref}
-          selected={selected}
-          disabled={option.disabled}
-          label={option.label}
-          value={option.value}
-          focused={focused}
-          isKeyboardNavigation={isKeyboardNavigation}
-        />
-      );
-    },
-  ),
+  ListItem: ({ index }: { index: number }) => {
+    const [state] = useSelectMachineFromContext();
+    const option = state.context.visibleOptions[index];
+    const isKeyboardNavigation = state.matches('interaction.enabled.active.navigation.keyboard');
+
+    const selected =
+      state.context.selectedItems.includes(option) ||
+      state.context.selectedItems.some(x => x.value === option.value);
+
+    const focused = state.context.itemFocusIdx === index;
+
+    return (
+      <DefaultListItem
+        selected={selected}
+        disabled={option.disabled}
+        label={option.label}
+        value={option.value}
+        focused={focused}
+        isKeyboardNavigation={isKeyboardNavigation}
+      />
+    );
+  },
 
   List: DefaultList,
   SelectedValue: () => {
@@ -107,30 +110,28 @@ export const defaultComponents = {
 
 export const defaultComponentsMultiselect = {
   Search,
-  ListItem: React.forwardRef<HTMLDivElement, { index: number }>(
-    ({ index, isKeyboardNavigation }, ref) => {
-      const [state] = useSelectMachineFromContext();
-      const option = state.context.visibleOptions[index];
-      const selected =
-        state.context.selectedItems.includes(option) ||
-        state.context.selectedItems.some(x => x.value === option.value);
-      const focused = state.context.itemFocusIdx === index;
-      const selectAll = option.all;
+  ListItem: ({ index }: { index: number }) => {
+    const [state] = useSelectMachineFromContext();
+    const isKeyboardNavigation = state.matches('interaction.enabled.active.navigation.keyboard');
+    const option = state.context.visibleOptions[index];
+    const selected =
+      state.context.selectedItems.includes(option) ||
+      state.context.selectedItems.some(x => x.value === option.value);
+    const focused = state.context.itemFocusIdx === index;
+    const selectAll = option[SYMBOL_ALL];
 
-      return (
-        <DefaultMultiselectListItem
-          ref={ref}
-          selected={selected}
-          disabled={option.disabled}
-          label={option.label}
-          value={option.value}
-          focused={focused}
-          selectAll={selectAll}
-          isKeyboardNavigation={isKeyboardNavigation}
-        />
-      );
-    },
-  ),
+    return (
+      <DefaultMultiselectListItem
+        selected={selected}
+        disabled={option.disabled}
+        label={option.label}
+        value={option.value}
+        focused={focused}
+        selectAll={selectAll}
+        isKeyboardNavigation={isKeyboardNavigation}
+      />
+    );
+  },
 
   List: DefaultMultiselectList,
   SelectedValue: () => {

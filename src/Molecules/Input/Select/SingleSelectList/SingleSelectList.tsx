@@ -8,6 +8,7 @@ type ListProps = {
    * @default 'right'
    */
   position?: 'left' | 'center' | 'right';
+  searchComponent?: React.ReactNode;
 };
 const leftAndRightCss = css<Pick<ListProps, 'position'>>`
   ${p => {
@@ -57,7 +58,6 @@ const fadeCss = css`
     bottom: calc(100% - 240px - 30px);
     left: 6px;
     height: 20px;
-    width: 100%;
     background: linear-gradient(to bottom, rgba(255, 255, 255, 0), #fff);
     width: calc(100% - 12px);
   }
@@ -90,7 +90,7 @@ const FullHeightFlexboxWithFade = styled.div`
   ${fadeCss}
 `;
 
-export const OptionList: React.FC<ListProps> = ({ children, position, searchComponent }) => (
+export const OptionList: React.FC<ListProps> = ({ children, position, searchComponent = null }) => (
   <FullHeightFlexboxWithFade>
     <StyledList role="listbox" position={position}>
       {searchComponent}
@@ -105,10 +105,12 @@ type OptionProps = {
   disabled?: boolean;
   label: React.ReactNode;
   value: any;
-  ref: React.Ref<HTMLLIElement>;
+  isKeyboardNavigation?: boolean;
+  ref?: React.Ref<HTMLLIElement>;
+  onClick?: React.MouseEventHandler<HTMLLIElement>;
 };
 
-const hoverIfNotKeyboardNav = css`
+const hoverIfNotKeyboardNav = css<{ isKeyboardNavigation?: boolean }>`
   ${p =>
     p.isKeyboardNavigation
       ? ''
@@ -118,7 +120,7 @@ const hoverIfNotKeyboardNav = css`
 }
 `}
 `;
-const StyledOption = styled(Typography)<OptionProps>`
+const StyledOption = styled(Typography)<Partial<OptionProps>>`
   display: flex;
   align-items: center;
   padding-right: ${p => p.theme.spacing.unit(3)}px;
@@ -159,7 +161,7 @@ const EllipsizingText = styled.span`
   overflow: hidden;
 `;
 
-export const Option = React.forwardRef<HTMLDivElement, OptionProps>(
+export const Option = React.forwardRef<HTMLLIElement, OptionProps>(
   ({ label, disabled, selected, focused, onClick, isKeyboardNavigation }, ref) => (
     <StyledOption
       ref={ref}

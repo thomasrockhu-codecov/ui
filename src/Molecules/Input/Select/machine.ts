@@ -1,15 +1,41 @@
 import { Machine, send, assign } from 'xstate';
 
-const isEqualOptions = (a, b) => a === b || a.value === b.value;
-const includesOption = (arr, option) =>
+export type OptionLike = {
+  [k: string]: any;
+  value: any;
+  label: string;
+};
+const isEqualOptions = (a: OptionLike, b: OptionLike) => a === b || a.value === b.value;
+const includesOption = (arr: OptionLike[], option: OptionLike) =>
   arr.includes(option) || arr.some(x => x.value === option.value);
 
-export const SelectMachine = Machine(
+export type Context = {
+  error: string;
+  success: boolean;
+  options: Array<any>;
+  selectedItems: Array<any>;
+  disabled: boolean;
+  open: boolean;
+  placeholder: string;
+  itemFocusIdx: number | null;
+  searchQuery: string;
+  extraInfo: string;
+  multiselect: boolean;
+  label: string;
+  lastNavigationType: null | string;
+  showSearch: boolean;
+  visibleOptions: Array<any>;
+  id: string;
+  valueFromProps: Array<any>;
+  uncommitedSelectedItems: Array<any>;
+};
+
+export const SelectMachine = Machine<Context>(
   {
     id: 'inputSelect',
     type: 'parallel',
     context: {
-      error: true,
+      error: '',
       success: false,
       options: [] as Array<any>,
       selectedItems: [] as Array<any>,
@@ -21,6 +47,7 @@ export const SelectMachine = Machine(
       multiselect: false,
       label: '',
       lastNavigationType: null,
+      placeholder: '',
       showSearch: false,
       visibleOptions: [] as Array<any>,
       id: 'id-from-props',
@@ -196,7 +223,7 @@ export const SelectMachine = Machine(
           unknown: {
             on: {
               '': [
-                { target: 'error', cond: ctx => ctx.error },
+                { target: 'error', cond: ctx => ctx.error !== '' },
                 { target: 'success', cond: ctx => ctx.success },
                 { target: 'neutral' },
               ],
@@ -391,29 +418,28 @@ export const SelectMachine = Machine(
       },
     },
   },
-  // @ts-ignore
   {
     actions: {
-      updateSearch: assign({
+      updateSearch: assign<Context>({
         searchQuery: (_, e) => e.payload,
       }),
-      cleanSearch: assign({
+      cleanSearch: assign<Context>({
         searchQuery: '',
         visibleOptions: ctx => ctx.options,
       }),
-      syncProps: assign((ctx, e) => ({
+      syncProps: assign<Context>((ctx, e) => ({
         ...ctx,
         ...e.payload,
         valueFromProps: e.payload.valueFromProps,
         visibleOptions: e.payload.options !== ctx.options ? e.payload.options : ctx.visibleOptions,
       })),
-      restoreFocusOrFocusFirst: assign({
+      restoreFocusOrFocusFirst: assign<Context>({
         itemFocusIdx: ctx =>
           ctx.selectedItems.length > 0
             ? ctx.visibleOptions.findIndex(x => isEqualOptions(x, ctx.selectedItems[0]))
             : 0,
       }),
-      setFocusToSearchedOption: assign({
+      setFocusToSearchedOption: assign<Context>({
         itemFocusIdx: ctx => {
           const newIdx = ctx.options.findIndex(x =>
             x.label.toLowerCase().startsWith(ctx.searchQuery.toLowerCase()),
@@ -421,20 +447,23 @@ export const SelectMachine = Machine(
           return newIdx !== -1 && !ctx.options[newIdx].disabled ? newIdx : ctx.itemFocusIdx;
         },
       }),
-      setNextFocusedItem: assign({
-        itemFocusIdx: ctx => (ctx.itemFocusIdx + 1) % ctx.visibleOptions.length,
-      }),
-      setPrevFocusedItem: assign({
+      setNextFocusedItem: assign<Context>({
         itemFocusIdx: ctx =>
-          ctx.itemFocusIdx - 1 >= 0 ? ctx.itemFocusIdx - 1 : ctx.visibleOptions.length - 1,
+          ctx.itemFocusIdx !== null ? (ctx.itemFocusIdx + 1) % ctx.visibleOptions.length : 0,
       }),
-      setNavTypeKeyboard: assign({
-        lastNavigationType: () => 'keyboard',
+      setPrevFocusedItem: assign<Context>({
+        itemFocusIdx: ctx =>
+          ctx.itemFocusIdx !== null && ctx.itemFocusIdx - 1 >= 0
+            ? ctx.itemFocusIdx - 1
+            : ctx.visibleOptions.length - 1,
       }),
-      setNavTypeMouse: assign({
+      setNavTypeKeyboard: assign<Context>({
+        lastNavigationType: 'keyboard',
+      }),
+      setNavTypeMouse: assign<Context>({
         lastNavigationType: 'mouse',
       }),
-      selectOrDeselect: send((ctx, event) => {
+      selectOrDeselect: send((ctx: Context, event: any) => {
         const isSelected = includesOption(ctx.selectedItems, event.payload);
         const type = isSelected ? 'DESELECT_ITEM' : 'SELECT_ITEM';
 
@@ -443,26 +472,30 @@ export const SelectMachine = Machine(
           payload: event.payload,
         };
       }),
-      sendSelectOrDeselectVisibleFocusedOption: send(ctx => ({
-        type: includesOption(ctx.selectedItems, ctx.visibleOptions[ctx.itemFocusIdx])
-          ? 'DESELECT_ITEM'
-          : 'SELECT_ITEM',
-        payload: ctx.visibleOptions[ctx.itemFocusIdx],
-      })),
-      resetSelection: assign({ selectedItems: [] }),
-      deselectOption: assign({
+      sendSelectOrDeselectVisibleFocusedOption: send((ctx: Context) =>
+        ctx.itemFocusIdx === null
+          ? ''
+          : {
+              type: includesOption(ctx.selectedItems, ctx.visibleOptions[ctx.itemFocusIdx])
+                ? 'DESELECT_ITEM'
+                : 'SELECT_ITEM',
+              payload: ctx.visibleOptions[ctx.itemFocusIdx],
+            },
+      ),
+      resetSelection: assign<Context>({ selectedItems: [] }),
+      deselectOption: assign<Context>({
         selectedItems: (ctx, { payload }) => {
           if (payload.all) {
             return [];
           }
-          let predicate = x => !isEqualOptions(x, payload);
+          let predicate = (x: OptionLike) => !isEqualOptions(x, payload);
           if (ctx.options.some(x => x.all)) {
             predicate = x => !x.all && !isEqualOptions(x, payload);
           }
           return ctx.selectedItems.filter(predicate);
         },
       }),
-      updateVisibleOptions: assign({
+      updateVisibleOptions: assign<Context>({
         visibleOptions: (ctx, e) => {
           const newOptions = ctx.options.filter(x =>
             x.label.toLowerCase().includes(e.payload.toLowerCase()),
@@ -471,7 +504,7 @@ export const SelectMachine = Machine(
         },
       }),
 
-      updateUncommittedItems: assign({
+      updateUncommittedItems: assign<Context>({
         uncommitedSelectedItems: (ctx, e) => {
           if (ctx.multiselect) {
             const activeOptions = ctx.options.filter(x => !x.disabled);
@@ -489,10 +522,10 @@ export const SelectMachine = Machine(
         },
       }),
 
-      commitSelectedItems: assign({
+      commitSelectedItems: assign<Context>({
         selectedItems: ctx => ctx.uncommitedSelectedItems,
       }),
-      forceValueFromProps: assign({ selectedItems: ctx => ctx.valueFromProps }),
-    },
+      forceValueFromProps: assign<Context>({ selectedItems: ctx => ctx.valueFromProps }),
+    } as any,
   },
 );

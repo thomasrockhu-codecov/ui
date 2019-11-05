@@ -1,5 +1,6 @@
 import * as React from 'react';
-import { Props } from './Select.types';
+import { ContextType } from './context';
+import { Context } from './machine';
 
 export const useAutofocus = (ref: React.RefObject<any>, enable?: boolean) => {
   React.useEffect(() => {
@@ -7,7 +8,12 @@ export const useAutofocus = (ref: React.RefObject<any>, enable?: boolean) => {
   }, [enable, ref]);
 };
 
-export const useFocusFromMachine = (machineState, buttonRef, itemRefs, searchRef) => {
+export const useFocusFromMachine = (
+  machineState: ContextType[0],
+  buttonRef: React.RefObject<HTMLButtonElement>,
+  itemRefs: Array<HTMLElement>,
+  searchRef: React.RefObject<HTMLInputElement>,
+) => {
   const isInButtonFocusState = machineState.matches('interaction.enabled.active.focus.button');
   React.useEffect(() => {
     if (
@@ -17,6 +23,7 @@ export const useFocusFromMachine = (machineState, buttonRef, itemRefs, searchRef
       if (searchRef.current) {
         searchRef.current.focus();
         if (
+          machineState.context.itemFocusIdx &&
           itemRefs[machineState.context.itemFocusIdx] &&
           itemRefs[machineState.context.itemFocusIdx].scrollIntoView
         )
@@ -56,7 +63,7 @@ export const useBatchedSend = (send: Function) => {
   );
 };
 
-export const useSyncPropsWithMachine = (propsToSync: Partial<Props>, deps: Array<any>) => {
+export const useSyncPropsWithMachine = (propsToSync: Partial<Context>, deps: Array<any>) => {
   const send = deps[0];
   React.useEffect(() => {
     send({
@@ -67,14 +74,14 @@ export const useSyncPropsWithMachine = (propsToSync: Partial<Props>, deps: Array
 };
 
 export const useMultiRef = () => {
-  const itemRefs = React.useMemo(() => [] as Array<React.RefObject<any>>, []);
+  const itemRefs = React.useMemo(() => [] as Array<HTMLElement>, []);
   const setItemRef = React.useCallback(
-    (index: number) => (ref: React.RefObject<any>) => {
+    (index: number) => (ref: HTMLElement) => {
       if (ref) itemRefs[index] = ref;
     },
     [],
   );
-  return [itemRefs, setItemRef];
+  return [itemRefs, setItemRef] as [typeof itemRefs, typeof setItemRef];
 };
 
 export const useDelegateKeyDownToMachine = (send: Function, selectOnSpace: boolean) => {
@@ -103,7 +110,12 @@ export const useDelegateKeyDownToMachine = (send: Function, selectOnSpace: boole
   };
 };
 
-export const usePropagateChangesThroughOnChange = (machineState, send, onChange, isFirstRender) => {
+export const usePropagateChangesThroughOnChange = (
+  machineState: ContextType[0],
+  send: ContextType[1],
+  onChange?: Function,
+  isFirstRender?: boolean,
+) => {
   const isChangeUncommitted =
     machineState.matches('selection.controlled.changeUncommitted') ||
     machineState.matches('selection.uncontrolled.changeUncommitted');
@@ -120,32 +132,32 @@ export const usePropagateChangesThroughOnChange = (machineState, send, onChange,
 };
 
 export const useOnBlurAndOnFocus = (
-  machineState,
-  send,
-  onBlur,
-  onFocus,
-  wrapperRef,
-  isFirstRender,
+  machineState: ContextType[0],
+  send: ContextType[1],
+  onBlur: Function | undefined,
+  onFocus: Function | undefined,
+  wrapperRef: React.RefObject<any>,
+  isFirstRender: boolean,
 ) => {
   const isPassive = machineState.matches('interaction.enabled.idle');
   React.useEffect(() => {
     if (!isFirstRender && isPassive && onBlur) onBlur();
-  }, [isPassive]);
+  }, [isPassive]); // eslint-disable-line react-hooks/exhaustive-deps
 
   const isActive = machineState.matches('interaction.enabled.active');
   React.useEffect(() => {
     if (isActive && onFocus) onFocus();
-  }, [isActive]);
+  }, [isActive]); // eslint-disable-line react-hooks/exhaustive-deps
 
   const handleFocus = React.useCallback(
-    e => {
+    _ => {
       send('FOCUS');
     },
     [send],
   );
 
   const handleBlur = React.useCallback(
-    e => {
+    _ => {
       setTimeout(() => {
         // Need setTimeout for activeElement to be correct
         if (wrapperRef.current && !wrapperRef.current.contains(document.activeElement)) {
@@ -153,7 +165,7 @@ export const useOnBlurAndOnFocus = (
         }
       }, 1);
     },
-    [send],
+    [send, wrapperRef],
   );
 
   return { handleFocus, handleBlur };

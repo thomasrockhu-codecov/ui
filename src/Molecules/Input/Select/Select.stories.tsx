@@ -15,6 +15,30 @@ const FlexedBox = styled(Box)`
   align-items: center;
 `;
 
+const accountOptions = [
+  {
+    label: 'First account',
+    value: '1',
+    symbol: 'AF',
+    accno: '123',
+    amount: { value: 212, currency: 'SEK' },
+  },
+  {
+    label: 'Second acc 2',
+    value: '2',
+    symbol: '-',
+    accno: '123',
+    amount: { value: 111, currency: 'SEK' },
+  },
+  {
+    label: 'Third 3',
+    value: '3',
+    symbol: 'ISK',
+    accno: '123',
+    amount: { value: 1, currency: 'DKK' },
+  },
+];
+
 const AccountValue = () => {
   const [state] = useSelectMachineFromContext();
 
@@ -45,7 +69,7 @@ const AccountValue = () => {
   );
 };
 
-const StyledBox = styled(Box)<{ focused: boolean }>`
+const StyledBox = styled(Box)<{ focused: boolean; isKeyboardNavigation: boolean }>`
   cursor: pointer;
   background: ${p => (p.focused ? p.theme.color.background : p.theme.color.card)};
   ${p =>
@@ -58,19 +82,14 @@ const StyledBox = styled(Box)<{ focused: boolean }>`
       : ''}
 `;
 
-const AccountListItem = ({ index, isKeyboardNavigation }: any, ref) => {
+const AccountListItem = ({ index }: { index: number }) => {
   const [state] = useSelectMachineFromContext();
   const option = state.context.options[index];
+  const isKeyboardNavigation = state.matches('interaction.enabled.active.navigation.keyboard');
   const selected = state.context.selectedItems.includes(option);
   const focused = isKeyboardNavigation && state.context.itemFocusIdx === index;
   return (
-    <StyledBox
-      px={2}
-      py={1}
-      focused={focused}
-      isKeyboardNavigation={isKeyboardNavigation}
-      ref={ref}
-    >
+    <StyledBox px={2} py={1} focused={focused} isKeyboardNavigation={isKeyboardNavigation}>
       <Flexbox container justifyContent="space-between" gutter={4}>
         <Flexbox item container alignItems="center" basis="32px" grow={0}>
           <Avatar size="s">{option.symbol}</Avatar>
@@ -149,6 +168,7 @@ export const preselectedOptions = () => {
       id="input-1"
       options={accountOptions}
       value={values}
+      // @ts-ignore
       onChange={setValues}
       components={{ SelectedValue: CustomSelectedValue }}
       multiselect
@@ -218,30 +238,6 @@ export const two = () => (
     />
   </>
 );
-
-const accountOptions = [
-  {
-    label: 'First account',
-    value: '1',
-    symbol: 'AF',
-    accno: '123',
-    amount: { value: 212, currency: 'SEK' },
-  },
-  {
-    label: 'Second acc 2',
-    value: '2',
-    symbol: '-',
-    accno: '123',
-    amount: { value: 111, currency: 'SEK' },
-  },
-  {
-    label: 'Third 3',
-    value: '3',
-    symbol: 'ISK',
-    accno: '123',
-    amount: { value: 1, currency: 'DKK' },
-  },
-];
 
 export const fullWidth = () => (
   <Input.Select
@@ -328,6 +324,7 @@ export const multiselect = () => {
       id="custom-renderers-select"
       options={accountOptions}
       value={value}
+      // @ts-ignore
       onChange={setValue}
       components={{ SelectedValue: CustomSelectedValue }}
       multiselect
@@ -341,9 +338,10 @@ const accountOptionsAndSelectAll = [
   {
     label: 'Select All',
     value: undefined,
-    all: true,
+    [Input.Select.SYMBOL_ALL]: true,
   },
 ]
+  // @ts-ignore
   .concat(accountOptions)
   .concat({ label: 'Disabled', value: 'Doesnt matter', disabled: true });
 
@@ -352,30 +350,30 @@ export const multiselectSelectAll = () => {
 
   // This component you need to redefine for your particular case
   // Consider translations and a11y!
-  const CustomSelectedValue = React.useMemo(
-    () => () => {
-      const [machineState] = useSelectMachineFromContext();
-      const selectedCount = machineState.context.selectedItems.length;
-      const allSelected = machineState.context.selectedItems.some(x => x.all);
-      return (
-        <FlexedBox px={2}>
-          <Typography type="secondary">
-            {allSelected
-              ? 'All selected'
-              : selectedCount === 0
-              ? machineState.context.placeholder
-              : `${selectedCount} selected`}
-          </Typography>
-        </FlexedBox>
-      );
-    },
-    [],
-  );
+  const CustomSelectedValue = React.useCallback(() => {
+    const [machineState] = useSelectMachineFromContext();
+    const selectedCount = machineState.context.selectedItems.length;
+    const allSelected = machineState.context.selectedItems.some(x => x[Input.Select.SYMBOL_ALL]);
+    let label;
+    if (allSelected) {
+      label = 'All selected';
+    } else if (selectedCount === 0) {
+      label = machineState.context.placeholder;
+    } else {
+      label = `${selectedCount} selected`;
+    }
+    return (
+      <FlexedBox px={2}>
+        <Typography type="secondary">{label}</Typography>
+      </FlexedBox>
+    );
+  }, []);
   return (
     <Input.Select
       id="multiwithall-select"
       options={accountOptionsAndSelectAll}
       value={value}
+      // @ts-ignore
       onChange={setValue}
       components={{
         SelectedValue: CustomSelectedValue,
@@ -392,21 +390,30 @@ export const changesFromProps = () => {
   const [value, setValue] = React.useState([]);
   const [disabled, setDisabled] = React.useState(false);
   const removeAcc = () => setAccs(accs.slice(0, -1));
+  // @ts-ignore
   const selectFirst = () => setValue([accountOptions[0]]);
 
-  console.log('value in story:', value);
   return (
     <>
-      <button onClick={removeAcc}>Delete</button>
-      <button onClick={selectFirst}>Select first</button>
-      <button onClick={() => setDisabled(true)}>Disable</button>
-      <button onClick={() => setDisabled(false)}>Enable</button>
+      <button type="button" onClick={removeAcc}>
+        Delete
+      </button>
+      <button type="button" onClick={selectFirst}>
+        Select first
+      </button>
+      <button type="button" onClick={() => setDisabled(true)}>
+        Disable
+      </button>
+      <button type="button" onClick={() => setDisabled(false)}>
+        Enable
+      </button>
       <pre>{JSON.stringify(value, null, 2)}</pre>
       <pre>{JSON.stringify(accs, null, 2)}</pre>
       <Input.Select
         id="onchange-select"
         value={value}
         disabled={disabled}
+        // @ts-ignore
         onChange={setValue}
         options={accs}
         label="User account"
@@ -446,13 +453,13 @@ export const accessibleFromDocumentForms = () => {
 
 export const controlledBehaviour = () => {
   const [value, setValue] = React.useState(() => [accountOptions[1]]);
-  const onChange = newValue => setValue(newValue);
   return (
     <Input.Select
       id="onchange-select"
       options={accountOptions}
       value={value}
-      onChange={onChange}
+      // @ts-ignore
+      onChange={setValue}
       label="User account"
       placeholder="Select account"
     />
@@ -586,7 +593,8 @@ export const sizeS = () => {
 export const linkWithDropdownAndSearchBox = () => {
   const customComponents = React.useMemo(
     () => ({
-      SelectedValue: (_: any, ref: React.Ref<any>) => {
+      // @ts-ignore
+      SelectedValue: (_, ref) => {
         const [state] = useSelectMachineFromContext();
 
         return (
@@ -630,18 +638,23 @@ export const linkWithDropdownAndSearchBox = () => {
     [accountOptions],
   );
 
+  // @ts-ignore
+  const handleChange = newVal => {
+    action('change')(newVal);
+    setValue(newVal);
+  };
+
   return (
     <Input.Select
       options={hugeOptionsList}
       label="User account"
       id="input-select-search-inside"
-      autoFocusFirstOption={false}
       placeholder="Select account"
       noFormField
       showSearch
       value={value}
       components={customComponents}
-      onChange={newVal => action('change')(newVal) && setValue(newVal)}
+      onChange={handleChange}
       width="350px"
     />
   );
