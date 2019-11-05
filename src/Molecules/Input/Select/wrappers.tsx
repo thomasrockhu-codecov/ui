@@ -6,7 +6,11 @@ import NormalizedElements from '../../../common/NormalizedElements';
 import { Option, Props } from './Select.types';
 import { useSelectMachineFromContext } from './context';
 
-const StyledA11yButton = styled(NormalizedElements.Button)`
+const CleanNormalizedButton = React.forwardRef((props: any, ref: React.Ref<any>) => (
+  <NormalizedElements.Button {...R.omit(['absolutePositioning'], props)} ref={ref} />
+));
+
+const StyledA11yButton = styled(CleanNormalizedButton)`
   background: ${p => (p.disabled ? p.theme.color.disabledBackground : 'transparent')};
   width: 100%;
   height: 100%;
@@ -62,12 +66,14 @@ export const ListWrapper = React.forwardRef<HTMLDivElement, any>(
       onMouseMove,
       searchComponent,
       width,
+      'data-testid': dataTestId,
     },
     ref,
   ) => {
     return (
       <StyledListWrapper
         ref={ref}
+        data-testid={dataTestId}
         noFormField={noFormField}
         onKeyDown={onKeyDown}
         onFocus={onFocus}
@@ -94,7 +100,19 @@ const FullWidthFlexbox = styled(Flexbox)`
 `;
 
 export const SelectedValueWrapper = React.forwardRef<any, any>(
-  ({ placeholder, open, component: Component, noFormField, disabled, id, label }, ref) => {
+  (
+    {
+      placeholder,
+      open,
+      component: Component,
+      noFormField,
+      disabled,
+      id,
+      label,
+      'data-testid': dataTestId,
+    },
+    ref,
+  ) => {
     const [state, send] = useSelectMachineFromContext();
     const value = state.context.selectedItems;
     const screenReaderTextSelection =
@@ -123,6 +141,7 @@ export const SelectedValueWrapper = React.forwardRef<any, any>(
             disabled={disabled}
             tabIndex={0}
             aria-label={screenReaderText}
+            data-testid={dataTestId}
           >
             <FullWidthFlexbox container item aria-hidden="true">
               <Component />
@@ -241,7 +260,7 @@ export const FormFieldOrFragment = React.forwardRef<HTMLDivElement, any>(
           children
         ) : (
           <FormField fieldId={id} {...props} {...(fullWidth ? { width: '100%' } : {})} ref={ref}>
-            <SelectWrapper onBlur={onBlur} onFocus={onFocus} size={size} {...props}>
+            <SelectWrapper onBlur={onBlur} onFocus={onFocus} size={size} {...props} tabIndex={0}>
               {children}
               <Chevron open={open} />
             </SelectWrapper>

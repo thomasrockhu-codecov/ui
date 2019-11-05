@@ -57,6 +57,7 @@ const Search = React.forwardRef((_, ref) => {
         leftAddon={<Icon.Search size={4} />}
         label="Search"
         ref={ref}
+        data-testid="search-input-select"
         size="s"
         hideLabel
         aria-activedescendant={`${id}-option-${itemFocusIdx}`}

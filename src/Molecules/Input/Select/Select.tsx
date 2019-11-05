@@ -38,6 +38,12 @@ const HiddenSelect = styled.select`
 `;
 const noop = () => {};
 
+const getValuesForNativeSelect = (selectedItems: { value: any }[], isMultiselect: boolean) => {
+  if (isMultiselect) {
+    return selectedItems.map(x => x.value);
+  }
+  return selectedItems.length > 0 ? selectedItems[0].value : undefined;
+};
 const Select = (props: Props) => {
   assert(Boolean(props.id), `Input.Select: "id" is required.`);
   assert(
@@ -71,7 +77,7 @@ const Select = (props: Props) => {
     }),
   );
   const [machineState, send] = machineHandlers;
-  console.log(machineState.value, machineState.context.valueFromProps, machineState.actions);
+
   /******      Machine syncing      ******/
   usePropagateChangesThroughOnChange(machineState, send, props.onChange, isFirstRender);
   useSyncPropsWithMachine(
@@ -167,7 +173,8 @@ const Select = (props: Props) => {
         name={props.name}
         disabled={isDisabled}
         aria-hidden="true"
-        {...(multiselect ? { multiple: 'true' } : {})}
+        {...(multiselect ? { multiple: true } : {})}
+        value={getValuesForNativeSelect(selectedItems, multiselect)}
       >
         {placeholder && (
           <option
@@ -180,6 +187,7 @@ const Select = (props: Props) => {
           <option
             label={x.label}
             value={x.value}
+            key={`${x.label}${x.value}`}
             {...(selectedItems.includes(x) ? { selected: true } : {})}
           />
         ))}
@@ -203,6 +211,7 @@ const Select = (props: Props) => {
         >
           <SelectedValueWrapper
             ref={buttonRef}
+            data-testid="input-select-button"
             open={isOpen}
             label={label}
             disabled={isDisabled}
@@ -220,6 +229,7 @@ const Select = (props: Props) => {
               onKeyDown={handleKeyDown}
               onMouseMove={handleMouseMove}
               ref={listRef}
+              data-testid="input-select-list"
               searchComponent={<Search ref={searchRef} />}
               width={props.width}
             >

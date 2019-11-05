@@ -16,7 +16,10 @@ export const useFocusFromMachine = (machineState, buttonRef, itemRefs, searchRef
     ) {
       if (searchRef.current) {
         searchRef.current.focus();
-        if (itemRefs[machineState.context.itemFocusIdx])
+        if (
+          itemRefs[machineState.context.itemFocusIdx] &&
+          itemRefs[machineState.context.itemFocusIdx].scrollIntoView
+        )
           itemRefs[machineState.context.itemFocusIdx].scrollIntoView({ block: 'nearest' });
       }
     } else if (isInButtonFocusState) {
@@ -148,7 +151,7 @@ export const useOnBlurAndOnFocus = (
         if (wrapperRef.current && !wrapperRef.current.contains(document.activeElement)) {
           send('BLUR');
         }
-      }, 0);
+      }, 1);
     },
     [send],
   );
