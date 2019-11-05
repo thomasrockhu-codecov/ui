@@ -1,3 +1,17 @@
+# [1.68.0](https://github.com/nordnet/ui/compare/v1.67.0...v1.68.0) (2019-11-05)
+
+
+### Bug Fixes
+
+* bake in icon and just pass string to tooltip ([5a83484](https://github.com/nordnet/ui/commit/5a83484))
+* merge master ([e8af565](https://github.com/nordnet/ui/commit/e8af565))
+
+
+### Features
+
+* 🎸 add background black color ([905a9f5](https://github.com/nordnet/ui/commit/905a9f5))
+* add support to pass addon to label ([75aabd7](https://github.com/nordnet/ui/commit/75aabd7))
+
 # [1.67.0](https://github.com/nordnet/ui/compare/v1.66.0...v1.67.0) (2019-11-05)
 
 
