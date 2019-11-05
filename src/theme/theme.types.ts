@@ -59,6 +59,8 @@ export type Theme = {
     backgroundInput: RawColor['white'];
     /** gray7 */
     background: RawColor['gray7'];
+    /** black */
+    backgroundBlack: RawColor['black'];
     /** gray0 */
     text: RawColor['gray0'];
     /** white */
