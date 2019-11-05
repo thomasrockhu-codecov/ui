@@ -1,8 +1,16 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Storyshots Molecules | Input / Select / SingleSelectList Item Default 1`] = `
-.c4 {
-  box-sizing: border-box;
+.c1 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: inherit;
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c0 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -11,36 +19,10 @@ exports[`Storyshots Molecules | Input / Select / SingleSelectList Item Default 1
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-}
-
-.c3 {
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-}
-
-.c1 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: inherit;
-  margin: 0;
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 1.3333333333333333;
-}
-
-.c2 {
-  height: 100%;
-}
-
-.c0 {
-  padding-right: 8px;
-  padding-left: 8px;
+  padding-right: 12px;
+  padding-left: 12px;
+  padding-top: 4px;
+  padding-bottom: 4px;
   color: #4B4B46;
   height: 24px;
   outline: none;
@@ -53,108 +35,85 @@ exports[`Storyshots Molecules | Input / Select / SingleSelectList Item Default 1
   background: #F5F5F5;
 }
 
-.c0:focus {
-  background: #F5F5F5;
+.c2 {
+  width: 100%;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
 }
 
-<div
-  className="c0"
-  tabIndex={-1}
+<span
+  className="c0 c1"
 >
   <span
-    className="c1"
+    className="c2"
   >
-    <div
-      className="c2 c3"
-    >
-      <div
-        className="c4"
-      >
-        First
-      </div>
-    </div>
+    First
   </span>
-</div>
+</span>
 `;
 
 exports[`Storyshots Molecules | Input / Select / SingleSelectList Item Disabled 1`] = `
-.c4 {
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.c3 {
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-}
-
 .c1 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: inherit;
   margin: 0;
   font-weight: 400;
-  font-size: 12px;
-  line-height: 1.3333333333333333;
-}
-
-.c2 {
-  height: 100%;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
 }
 
 .c0 {
-  padding-right: 8px;
-  padding-left: 8px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding-right: 12px;
+  padding-left: 12px;
+  padding-top: 4px;
+  padding-bottom: 4px;
   color: #4B4B46;
   height: 24px;
   outline: none;
   white-space: nowrap;
-  background: #EBEBE8;
+  background: #FFFFFF;
   cursor: pointer;
   color: #A0A09B;
   pointer-events: none;
 }
 
-<div
-  className="c0"
-  disabled={true}
-  tabIndex={-1}
+.c0:hover {
+  background: #F5F5F5;
+}
+
+.c2 {
+  width: 100%;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+<span
+  className="c0 c1"
 >
   <span
-    className="c1"
+    className="c2"
   >
-    <div
-      className="c2 c3"
-    >
-      <div
-        className="c4"
-      >
-        First
-      </div>
-    </div>
+    First
   </span>
-</div>
+</span>
 `;
 
 exports[`Storyshots Molecules | Input / Select / SingleSelectList Item Selected 1`] = `
-.c5 {
+.c4 {
   padding-left: 8px;
 }
 
-.c4 {
+.c3 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -166,25 +125,13 @@ exports[`Storyshots Molecules | Input / Select / SingleSelectList Item Selected 
   align-items: center;
 }
 
-.c3 {
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-}
-
-.c6 {
+.c5 {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  width: 20px;
-  height: 20px;
+  width: 16px;
+  height: 16px;
   fill: #0046FF;
   -webkit-flex-shrink: 0;
   -ms-flex-negative: 0;
@@ -197,17 +144,23 @@ exports[`Storyshots Molecules | Input / Select / SingleSelectList Item Selected 
   color: inherit;
   margin: 0;
   font-weight: 400;
-  font-size: 12px;
-  line-height: 1.3333333333333333;
-}
-
-.c2 {
-  height: 100%;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
 }
 
 .c0 {
-  padding-right: 8px;
-  padding-left: 8px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding-right: 12px;
+  padding-left: 12px;
+  padding-top: 4px;
+  padding-bottom: 4px;
   color: #0046FF;
   height: 24px;
   outline: none;
@@ -220,58 +173,51 @@ exports[`Storyshots Molecules | Input / Select / SingleSelectList Item Selected 
   background: #F5F5F5;
 }
 
-.c0:focus {
-  background: #F5F5F5;
+.c2 {
+  width: 100%;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
 }
 
-<div
-  className="c0"
-  selected={true}
-  tabIndex={-1}
+<span
+  className="c0 c1"
 >
   <span
-    className="c1"
+    className="c2"
+  >
+    First
+  </span>
+  <div
+    className="c3"
   >
     <div
-      className="c2 c3"
+      className="c4"
     >
-      <div
-        className="c4"
+      <svg
+        aria-hidden="true"
+        className="c5"
+        focusable="false"
+        preserveAspectRatio="xMidYMid meet"
+        role="presentation"
+        size={4}
+        viewBox="0 0 24 24"
       >
-        First
-      </div>
-      <div
-        className="c4"
-      >
-        <div
-          className="c5"
-        >
-          <svg
-            aria-hidden="true"
-            className="c6"
-            focusable="false"
-            preserveAspectRatio="xMidYMid meet"
-            role="presentation"
-            size={5}
-            viewBox="0 0 24 24"
-          >
-            <path
-              d="M8.76083729 16.4144594L2.20525972 9.86336213 0 12.2093109 8.79670106 21 24 5.30897552 21.7583339 3z"
-            />
-          </svg>
-        </div>
-      </div>
+        <path
+          d="M8.76083729 16.4144594L2.20525972 9.86336213 0 12.2093109 8.79670106 21 24 5.30897552 21.7583339 3z"
+        />
+      </svg>
     </div>
-  </span>
-</div>
+  </div>
+</span>
 `;
 
 exports[`Storyshots Molecules | Input / Select / SingleSelectList List With Different Arrow Positions 1`] = `
-.c11 {
+.c12 {
   padding-left: 8px;
 }
 
-.c9 {
+.c11 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -283,25 +229,13 @@ exports[`Storyshots Molecules | Input / Select / SingleSelectList List With Diff
   align-items: center;
 }
 
-.c8 {
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-}
-
-.c12 {
+.c13 {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  width: 20px;
-  height: 20px;
+  width: 16px;
+  height: 16px;
   fill: #0046FF;
   -webkit-flex-shrink: 0;
   -ms-flex-negative: 0;
@@ -309,22 +243,22 @@ exports[`Storyshots Molecules | Input / Select / SingleSelectList List With Diff
   display: block;
 }
 
-.c4 {
+.c5 {
   list-style-type: none;
   margin: 0;
   padding: 0;
 }
 
-.c6 {
+.c8 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: inherit;
   margin: 0;
   font-weight: 400;
-  font-size: 12px;
-  line-height: 1.3333333333333333;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
 }
 
-.c3 {
+.c4 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -335,88 +269,39 @@ exports[`Storyshots Molecules | Input / Select / SingleSelectList List With Diff
   list-style: none;
   position: relative;
   top: 10px;
-  border: 1px solid #ebebe8;
+  border: 1px solid #bcbcb6;
   background-color: #ffffff;
   padding-top: 8px;
   padding-bottom: 8px;
-  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.03);
+  box-shadow: 0 2px 4px 0 rgba(40,40,35,0.15);
+  max-height: 240px;
 }
 
-.c3:before {
+.c4:before {
   right: 20px;
   position: absolute;
-  margin-left: -10px;
   width: 0;
   height: 0;
   content: '';
   speak: none;
-  border-left: 10px solid transparent;
-  border-right: 10px solid transparent;
-  top: -10px;
-  border-bottom: 10px solid;
-  border-bottom-color: #ebebe8;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  top: -6px;
+  border-bottom: 6px solid;
+  border-bottom-color: #bcbcb6;
 }
 
-.c3:after {
+.c4:after {
   right: 20px;
   position: absolute;
-  margin-left: -10px;
   width: 0;
   height: 0;
   content: '';
   speak: none;
-  border-left: 10px solid transparent;
-  border-right: 10px solid transparent;
-  top: -8px;
-  border-bottom: 10px solid;
-  border-bottom-color: #ffffff;
-}
-
-.c14 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  list-style: none;
-  position: relative;
-  top: 10px;
-  border: 1px solid #ebebe8;
-  background-color: #ffffff;
-  padding-top: 8px;
-  padding-bottom: 8px;
-  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.03);
-}
-
-.c14:before {
-  left: 20px;
-  position: absolute;
-  margin-left: -10px;
-  width: 0;
-  height: 0;
-  content: '';
-  speak: none;
-  border-left: 10px solid transparent;
-  border-right: 10px solid transparent;
-  top: -10px;
-  border-bottom: 10px solid;
-  border-bottom-color: #ebebe8;
-}
-
-.c14:after {
-  left: 20px;
-  position: absolute;
-  margin-left: -10px;
-  width: 0;
-  height: 0;
-  content: '';
-  speak: none;
-  border-left: 10px solid transparent;
-  border-right: 10px solid transparent;
-  top: -8px;
-  border-bottom: 10px solid;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  top: -5px;
+  border-bottom: 6px solid;
   border-bottom-color: #ffffff;
 }
 
@@ -431,50 +316,121 @@ exports[`Storyshots Molecules | Input / Select / SingleSelectList List With Diff
   list-style: none;
   position: relative;
   top: 10px;
-  border: 1px solid #ebebe8;
+  border: 1px solid #bcbcb6;
   background-color: #ffffff;
   padding-top: 8px;
   padding-bottom: 8px;
-  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.03);
+  box-shadow: 0 2px 4px 0 rgba(40,40,35,0.15);
+  max-height: 240px;
 }
 
 .c15:before {
-  left: 50%;
+  left: 20px;
   position: absolute;
-  margin-left: -10px;
   width: 0;
   height: 0;
   content: '';
   speak: none;
-  border-left: 10px solid transparent;
-  border-right: 10px solid transparent;
-  top: -10px;
-  border-bottom: 10px solid;
-  border-bottom-color: #ebebe8;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  top: -6px;
+  border-bottom: 6px solid;
+  border-bottom-color: #bcbcb6;
 }
 
 .c15:after {
-  left: 50%;
+  left: 20px;
   position: absolute;
-  margin-left: -10px;
   width: 0;
   height: 0;
   content: '';
   speak: none;
-  border-left: 10px solid transparent;
-  border-right: 10px solid transparent;
-  top: -8px;
-  border-bottom: 10px solid;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  top: -5px;
+  border-bottom: 6px solid;
   border-bottom-color: #ffffff;
 }
 
-.c7 {
-  height: 100%;
+.c16 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  list-style: none;
+  position: relative;
+  top: 10px;
+  border: 1px solid #bcbcb6;
+  background-color: #ffffff;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  box-shadow: 0 2px 4px 0 rgba(40,40,35,0.15);
+  max-height: 240px;
 }
 
-.c5 {
-  padding-right: 8px;
-  padding-left: 8px;
+.c16:before {
+  left: 50%;
+  position: absolute;
+  width: 0;
+  height: 0;
+  content: '';
+  speak: none;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  top: -6px;
+  border-bottom: 6px solid;
+  border-bottom-color: #bcbcb6;
+}
+
+.c16:after {
+  left: 50%;
+  position: absolute;
+  width: 0;
+  height: 0;
+  content: '';
+  speak: none;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  top: -5px;
+  border-bottom: 6px solid;
+  border-bottom-color: #ffffff;
+}
+
+.c6 {
+  overflow-y: auto;
+  width: 100%;
+  height: 100%;
+  padding: 1px;
+  margin: -1px;
+}
+
+.c3:after {
+  content: '';
+  position: absolute;
+  pointer-events: none;
+  bottom: calc(100% - 240px - 30px);
+  left: 6px;
+  height: 20px;
+  background: linear-gradient(to bottom,rgba(255,255,255,0),#fff);
+  width: calc(100% - 12px);
+}
+
+.c7 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding-right: 12px;
+  padding-left: 12px;
+  padding-top: 4px;
+  padding-bottom: 4px;
   color: #4B4B46;
   height: 24px;
   outline: none;
@@ -483,17 +439,23 @@ exports[`Storyshots Molecules | Input / Select / SingleSelectList List With Diff
   cursor: pointer;
 }
 
-.c5:hover {
-  background: #F5F5F5;
-}
-
-.c5:focus {
+.c7:hover {
   background: #F5F5F5;
 }
 
 .c10 {
-  padding-right: 8px;
-  padding-left: 8px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding-right: 12px;
+  padding-left: 12px;
+  padding-top: 4px;
+  padding-bottom: 4px;
   color: #0046FF;
   height: 24px;
   outline: none;
@@ -506,21 +468,38 @@ exports[`Storyshots Molecules | Input / Select / SingleSelectList List With Diff
   background: #F5F5F5;
 }
 
-.c10:focus {
-  background: #F5F5F5;
-}
-
-.c13 {
-  padding-right: 8px;
-  padding-left: 8px;
+.c14 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding-right: 12px;
+  padding-left: 12px;
+  padding-top: 4px;
+  padding-bottom: 4px;
   color: #4B4B46;
   height: 24px;
   outline: none;
   white-space: nowrap;
-  background: #EBEBE8;
+  background: #FFFFFF;
   cursor: pointer;
   color: #A0A09B;
   pointer-events: none;
+}
+
+.c14:hover {
+  background: #F5F5F5;
+}
+
+.c9 {
+  width: 100%;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
 }
 
 .c0 {
@@ -594,57 +573,46 @@ exports[`Storyshots Molecules | Input / Select / SingleSelectList List With Diff
       Default (right)
     </div>
     <div>
-      <ul
-        className="c3 c4"
-        role="listbox"
+      <div
+        className="c3"
       >
-        <div
-          className="c5"
-          tabIndex={-1}
+        <ul
+          className="c4 c5"
+          role="listbox"
         >
-          <span
+          <div
             className="c6"
           >
-            <div
+            <span
               className="c7 c8"
             >
-              <div
+              <span
                 className="c9"
               >
                 Default?
-              </div>
-            </div>
-          </span>
-        </div>
-        <div
-          className="c10"
-          selected={true}
-          tabIndex={-1}
-        >
-          <span
-            className="c6"
-          >
-            <div
-              className="c7 c8"
+              </span>
+            </span>
+            <span
+              className="c10 c8"
             >
-              <div
+              <span
                 className="c9"
               >
                 First
-              </div>
+              </span>
               <div
-                className="c9"
+                className="c11"
               >
                 <div
-                  className="c11"
+                  className="c12"
                 >
                   <svg
                     aria-hidden="true"
-                    className="c12"
+                    className="c13"
                     focusable="false"
                     preserveAspectRatio="xMidYMid meet"
                     role="presentation"
-                    size={5}
+                    size={4}
                     viewBox="0 0 24 24"
                   >
                     <path
@@ -653,47 +621,28 @@ exports[`Storyshots Molecules | Input / Select / SingleSelectList List With Diff
                   </svg>
                 </div>
               </div>
-            </div>
-          </span>
-        </div>
-        <div
-          className="c5"
-          tabIndex={-1}
-        >
-          <span
-            className="c6"
-          >
-            <div
+            </span>
+            <span
               className="c7 c8"
             >
-              <div
+              <span
                 className="c9"
               >
                 Second
-              </div>
-            </div>
-          </span>
-        </div>
-        <div
-          className="c13"
-          disabled={true}
-          tabIndex={-1}
-        >
-          <span
-            className="c6"
-          >
-            <div
-              className="c7 c8"
+              </span>
+            </span>
+            <span
+              className="c14 c8"
             >
-              <div
+              <span
                 className="c9"
               >
                 Disabled
-              </div>
-            </div>
-          </span>
-        </div>
-      </ul>
+              </span>
+            </span>
+          </div>
+        </ul>
+      </div>
     </div>
   </div>
   <div
@@ -706,57 +655,46 @@ exports[`Storyshots Molecules | Input / Select / SingleSelectList List With Diff
       Left
     </div>
     <div>
-      <ul
-        className="c14 c4"
-        role="listbox"
+      <div
+        className="c3"
       >
-        <div
-          className="c5"
-          tabIndex={-1}
+        <ul
+          className="c15 c5"
+          role="listbox"
         >
-          <span
+          <div
             className="c6"
           >
-            <div
+            <span
               className="c7 c8"
             >
-              <div
+              <span
                 className="c9"
               >
                 Default?
-              </div>
-            </div>
-          </span>
-        </div>
-        <div
-          className="c10"
-          selected={true}
-          tabIndex={-1}
-        >
-          <span
-            className="c6"
-          >
-            <div
-              className="c7 c8"
+              </span>
+            </span>
+            <span
+              className="c10 c8"
             >
-              <div
+              <span
                 className="c9"
               >
                 First
-              </div>
+              </span>
               <div
-                className="c9"
+                className="c11"
               >
                 <div
-                  className="c11"
+                  className="c12"
                 >
                   <svg
                     aria-hidden="true"
-                    className="c12"
+                    className="c13"
                     focusable="false"
                     preserveAspectRatio="xMidYMid meet"
                     role="presentation"
-                    size={5}
+                    size={4}
                     viewBox="0 0 24 24"
                   >
                     <path
@@ -765,47 +703,28 @@ exports[`Storyshots Molecules | Input / Select / SingleSelectList List With Diff
                   </svg>
                 </div>
               </div>
-            </div>
-          </span>
-        </div>
-        <div
-          className="c5"
-          tabIndex={-1}
-        >
-          <span
-            className="c6"
-          >
-            <div
+            </span>
+            <span
               className="c7 c8"
             >
-              <div
+              <span
                 className="c9"
               >
                 Second
-              </div>
-            </div>
-          </span>
-        </div>
-        <div
-          className="c13"
-          disabled={true}
-          tabIndex={-1}
-        >
-          <span
-            className="c6"
-          >
-            <div
-              className="c7 c8"
+              </span>
+            </span>
+            <span
+              className="c14 c8"
             >
-              <div
+              <span
                 className="c9"
               >
                 Disabled
-              </div>
-            </div>
-          </span>
-        </div>
-      </ul>
+              </span>
+            </span>
+          </div>
+        </ul>
+      </div>
     </div>
   </div>
   <div
@@ -818,57 +737,46 @@ exports[`Storyshots Molecules | Input / Select / SingleSelectList List With Diff
       Center
     </div>
     <div>
-      <ul
-        className="c15 c4"
-        role="listbox"
+      <div
+        className="c3"
       >
-        <div
-          className="c5"
-          tabIndex={-1}
+        <ul
+          className="c16 c5"
+          role="listbox"
         >
-          <span
+          <div
             className="c6"
           >
-            <div
+            <span
               className="c7 c8"
             >
-              <div
+              <span
                 className="c9"
               >
                 Default?
-              </div>
-            </div>
-          </span>
-        </div>
-        <div
-          className="c10"
-          selected={true}
-          tabIndex={-1}
-        >
-          <span
-            className="c6"
-          >
-            <div
-              className="c7 c8"
+              </span>
+            </span>
+            <span
+              className="c10 c8"
             >
-              <div
+              <span
                 className="c9"
               >
                 First
-              </div>
+              </span>
               <div
-                className="c9"
+                className="c11"
               >
                 <div
-                  className="c11"
+                  className="c12"
                 >
                   <svg
                     aria-hidden="true"
-                    className="c12"
+                    className="c13"
                     focusable="false"
                     preserveAspectRatio="xMidYMid meet"
                     role="presentation"
-                    size={5}
+                    size={4}
                     viewBox="0 0 24 24"
                   >
                     <path
@@ -877,47 +785,28 @@ exports[`Storyshots Molecules | Input / Select / SingleSelectList List With Diff
                   </svg>
                 </div>
               </div>
-            </div>
-          </span>
-        </div>
-        <div
-          className="c5"
-          tabIndex={-1}
-        >
-          <span
-            className="c6"
-          >
-            <div
+            </span>
+            <span
               className="c7 c8"
             >
-              <div
+              <span
                 className="c9"
               >
                 Second
-              </div>
-            </div>
-          </span>
-        </div>
-        <div
-          className="c13"
-          disabled={true}
-          tabIndex={-1}
-        >
-          <span
-            className="c6"
-          >
-            <div
-              className="c7 c8"
+              </span>
+            </span>
+            <span
+              className="c14 c8"
             >
-              <div
+              <span
                 className="c9"
               >
                 Disabled
-              </div>
-            </div>
-          </span>
-        </div>
-      </ul>
+              </span>
+            </span>
+          </div>
+        </ul>
+      </div>
     </div>
   </div>
 </div>

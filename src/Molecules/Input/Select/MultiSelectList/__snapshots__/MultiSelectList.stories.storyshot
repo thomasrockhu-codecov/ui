@@ -1,11 +1,11 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Storyshots Molecules | Input / Select / MultiSelectList Item Default 1`] = `
-.c18 {
+.c19 {
   box-sizing: border-box;
 }
 
-.c12 {
+.c13 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -21,7 +21,7 @@ exports[`Storyshots Molecules | Input / Select / MultiSelectList Item Default 1`
   align-items: center;
 }
 
-.c8 {
+.c9 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -68,7 +68,7 @@ exports[`Storyshots Molecules | Input / Select / MultiSelectList Item Default 1`
   align-items: center;
 }
 
-.c16 {
+.c17 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -84,7 +84,7 @@ exports[`Storyshots Molecules | Input / Select / MultiSelectList Item Default 1`
   align-items: center;
 }
 
-.c17 {
+.c18 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -99,13 +99,13 @@ exports[`Storyshots Molecules | Input / Select / MultiSelectList Item Default 1`
   flex-grow: 1;
 }
 
-.c6 {
+.c7 {
   text-overflow: ellipsis;
   white-space: nowrap;
   cursor: pointer;
 }
 
-.c13 {
+.c14 {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -119,7 +119,7 @@ exports[`Storyshots Molecules | Input / Select / MultiSelectList Item Default 1`
   display: block;
 }
 
-.c7 {
+.c8 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #6E6E69;
   margin: 0;
@@ -128,7 +128,7 @@ exports[`Storyshots Molecules | Input / Select / MultiSelectList Item Default 1`
   line-height: 1.4285714285714286;
 }
 
-.c15 {
+.c16 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
   margin: 0;
@@ -138,34 +138,11 @@ exports[`Storyshots Molecules | Input / Select / MultiSelectList Item Default 1`
 }
 
 .c4 {
-  width: 20px;
+  width: 16px;
   display: inline-block;
 }
 
-.c1 {
-  height: 100%;
-}
-
-.c0 {
-  padding-right: 8px;
-  padding-left: 8px;
-  color: #4B4B46;
-  height: 24px;
-  outline: none;
-  white-space: nowrap;
-  background: #FFFFFF;
-  cursor: pointer;
-}
-
-.c0:hover {
-  background: #F5F5F5;
-}
-
-.c0:focus {
-  background: #F5F5F5;
-}
-
-.c11 {
+.c12 {
   width: 20px;
   height: 20px;
   border: 1px solid #BCBCB6;
@@ -175,7 +152,7 @@ exports[`Storyshots Molecules | Input / Select / MultiSelectList Item Default 1`
   flex-shrink: 0;
 }
 
-.c11::before {
+.c12::before {
   content: '';
   display: block;
   padding: 2px;
@@ -184,15 +161,15 @@ exports[`Storyshots Molecules | Input / Select / MultiSelectList Item Default 1`
   position: absolute;
 }
 
-.c5 {
+.c6 {
   position: relative;
 }
 
-.c5:hover .c10 {
+.c6:hover .c11 {
   border-color: #4B4B46;
 }
 
-.c9 {
+.c10 {
   position: absolute;
   opacity: 0;
   height: 0;
@@ -200,62 +177,87 @@ exports[`Storyshots Molecules | Input / Select / MultiSelectList Item Default 1`
   cursor: pointer;
 }
 
-.c9:checked + .c10 {
+.c10:checked + .c11 {
   border-color: #0046FF;
   background: #0046FF;
 }
 
-.c9:checked + .c10 svg {
+.c10:checked + .c11 svg {
   fill: #FFFFFF;
 }
 
-.c9[disabled] + .c10 {
+.c10[disabled] + .c11 {
   border-color: #EBEBE8;
 }
 
-.c9:checked[disabled] + .c10 {
+.c10:checked[disabled] + .c11 {
   border-color: #EBEBE8;
   background: #EBEBE8;
 }
 
-.c9:focus + .c10::before {
+.c10:focus + .c11::before {
   border: 1px solid #0046FF;
 }
 
-.c19:checked + .c10 {
+.c20:checked + .c11 {
   border-color: #0046FF;
   background: #0046FF;
 }
 
-.c19:checked + .c10 svg {
+.c20:checked + .c11 svg {
   fill: #FFFFFF;
 }
 
-.c19[disabled] + .c10 {
+.c20[disabled] + .c11 {
   border-color: #EBEBE8;
 }
 
-.c19:checked[disabled] + .c10 {
+.c20:checked[disabled] + .c11 {
   border-color: #EBEBE8;
   background: #EBEBE8;
 }
 
-.c19 + .c10::before {
+.c20 + .c11::before {
   border: 1px solid #FF1900;
 }
 
-.c19:focus + .c10::before {
+.c20:focus + .c11::before {
   border: 1px solid #0046FF;
 }
 
-.c14 {
+.c15 {
   padding-left: 8px;
   white-space: initial;
 }
 
+.c1 {
+  height: 100%;
+}
+
+.c0 {
+  padding-right: 8px;
+  padding-left: 8px;
+  height: 28px;
+  white-space: nowrap;
+  background: #FFFFFF;
+  cursor: pointer;
+}
+
+.c0:hover {
+  background: #F5F5F5;
+}
+
+.c0:hover .c11 {
+  outline: 1px solid #0046FF;
+}
+
+.c5 .c11 {
+  width: 16px;
+  height: 16px;
+}
+
 <div
   className="c0"
-  tabIndex={-1}
 >
   <div
     className="c1 c2"
@@ -265,29 +267,30 @@ exports[`Storyshots Molecules | Input / Select / MultiSelectList Item Default 1`
     >
       <div
         className="c4"
-        width="20px"
+        width="16px"
       >
         <label
-          className="c5 c6"
+          className="c5 c6 c7"
           hidden={false}
         >
           <span
-            className="c7"
+            className="c8"
           >
             <div
-              className="c8"
+              className="c9"
             >
               <input
-                className="c9"
+                className="c10"
                 name="example"
+                readOnly={true}
                 type="checkbox"
               />
               <div
-                className="c10 c11 c12"
+                className="c11 c12 c13"
               >
                 <svg
                   aria-hidden="true"
-                  className="c13"
+                  className="c14"
                   focusable="false"
                   preserveAspectRatio="xMidYMid meet"
                   role="presentation"
@@ -300,7 +303,7 @@ exports[`Storyshots Molecules | Input / Select / MultiSelectList Item Default 1`
                 </svg>
               </div>
               <span
-                className="c14 c15"
+                className="c15 c16"
               >
                 
               </span>
@@ -310,16 +313,16 @@ exports[`Storyshots Molecules | Input / Select / MultiSelectList Item Default 1`
       </div>
     </div>
     <div
-      className="c16"
+      className="c17"
     >
       <div
-        className="c17"
+        className="c18"
       >
         <div
-          className="c18"
+          className="c19"
         >
           <span
-            className="c15"
+            className="c16"
           >
             First
           </span>
@@ -331,11 +334,11 @@ exports[`Storyshots Molecules | Input / Select / MultiSelectList Item Default 1`
 `;
 
 exports[`Storyshots Molecules | Input / Select / MultiSelectList Item Disabled 1`] = `
-.c18 {
+.c19 {
   box-sizing: border-box;
 }
 
-.c12 {
+.c13 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -351,7 +354,7 @@ exports[`Storyshots Molecules | Input / Select / MultiSelectList Item Disabled 1
   align-items: center;
 }
 
-.c8 {
+.c9 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -398,7 +401,7 @@ exports[`Storyshots Molecules | Input / Select / MultiSelectList Item Disabled 1
   align-items: center;
 }
 
-.c16 {
+.c17 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -414,7 +417,7 @@ exports[`Storyshots Molecules | Input / Select / MultiSelectList Item Disabled 1
   align-items: center;
 }
 
-.c17 {
+.c18 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -429,13 +432,13 @@ exports[`Storyshots Molecules | Input / Select / MultiSelectList Item Disabled 1
   flex-grow: 1;
 }
 
-.c6 {
+.c7 {
   text-overflow: ellipsis;
   white-space: nowrap;
   cursor: pointer;
 }
 
-.c13 {
+.c14 {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -449,7 +452,7 @@ exports[`Storyshots Molecules | Input / Select / MultiSelectList Item Disabled 1
   display: block;
 }
 
-.c7 {
+.c8 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #6E6E69;
   margin: 0;
@@ -458,7 +461,7 @@ exports[`Storyshots Molecules | Input / Select / MultiSelectList Item Disabled 1
   line-height: 1.4285714285714286;
 }
 
-.c15 {
+.c16 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
   margin: 0;
@@ -467,29 +470,21 @@ exports[`Storyshots Molecules | Input / Select / MultiSelectList Item Disabled 1
   line-height: 1.4285714285714286;
 }
 
+.c20 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #A0A09B;
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
 .c4 {
-  width: 20px;
+  width: 16px;
   display: inline-block;
 }
 
-.c1 {
-  height: 100%;
-}
-
-.c0 {
-  padding-right: 8px;
-  padding-left: 8px;
-  color: #4B4B46;
-  height: 24px;
-  outline: none;
-  white-space: nowrap;
-  background: #EBEBE8;
-  cursor: pointer;
-  color: #A0A09B;
-  pointer-events: none;
-}
-
-.c11 {
+.c12 {
   width: 20px;
   height: 20px;
   border: 1px solid #BCBCB6;
@@ -499,7 +494,7 @@ exports[`Storyshots Molecules | Input / Select / MultiSelectList Item Disabled 1
   flex-shrink: 0;
 }
 
-.c11::before {
+.c12::before {
   content: '';
   display: block;
   padding: 2px;
@@ -508,15 +503,15 @@ exports[`Storyshots Molecules | Input / Select / MultiSelectList Item Disabled 1
   position: absolute;
 }
 
-.c5 {
+.c6 {
   position: relative;
 }
 
-.c5:hover .c10 {
+.c6:hover .c11 {
   border-color: #4B4B46;
 }
 
-.c9 {
+.c10 {
   position: absolute;
   opacity: 0;
   height: 0;
@@ -524,63 +519,86 @@ exports[`Storyshots Molecules | Input / Select / MultiSelectList Item Disabled 1
   cursor: pointer;
 }
 
-.c9:checked + .c10 {
+.c10:checked + .c11 {
   border-color: #0046FF;
   background: #0046FF;
 }
 
-.c9:checked + .c10 svg {
+.c10:checked + .c11 svg {
   fill: #FFFFFF;
 }
 
-.c9[disabled] + .c10 {
+.c10[disabled] + .c11 {
   border-color: #EBEBE8;
 }
 
-.c9:checked[disabled] + .c10 {
+.c10:checked[disabled] + .c11 {
   border-color: #EBEBE8;
   background: #EBEBE8;
 }
 
-.c9:focus + .c10::before {
+.c10:focus + .c11::before {
   border: 1px solid #0046FF;
 }
 
-.c19:checked + .c10 {
+.c21:checked + .c11 {
   border-color: #0046FF;
   background: #0046FF;
 }
 
-.c19:checked + .c10 svg {
+.c21:checked + .c11 svg {
   fill: #FFFFFF;
 }
 
-.c19[disabled] + .c10 {
+.c21[disabled] + .c11 {
   border-color: #EBEBE8;
 }
 
-.c19:checked[disabled] + .c10 {
+.c21:checked[disabled] + .c11 {
   border-color: #EBEBE8;
   background: #EBEBE8;
 }
 
-.c19 + .c10::before {
+.c21 + .c11::before {
   border: 1px solid #FF1900;
 }
 
-.c19:focus + .c10::before {
+.c21:focus + .c11::before {
   border: 1px solid #0046FF;
 }
 
-.c14 {
+.c15 {
   padding-left: 8px;
   white-space: initial;
+}
+
+.c1 {
+  height: 100%;
+}
+
+.c22:hover .c11 {
+  outline: 1px solid #0046FF;
+}
+
+.c0 {
+  padding-right: 8px;
+  padding-left: 8px;
+  height: 28px;
+  white-space: nowrap;
+  background: #FFFFFF;
+  cursor: pointer;
+  color: #A0A09B;
+  pointer-events: none;
+}
+
+.c5 .c11 {
+  width: 16px;
+  height: 16px;
 }
 
 <div
   className="c0"
   disabled={true}
-  tabIndex={-1}
 >
   <div
     className="c1 c2"
@@ -590,29 +608,30 @@ exports[`Storyshots Molecules | Input / Select / MultiSelectList Item Disabled 1
     >
       <div
         className="c4"
-        width="20px"
+        width="16px"
       >
         <label
-          className="c5 c6"
+          className="c5 c6 c7"
           hidden={false}
         >
           <span
-            className="c7"
+            className="c8"
           >
             <div
-              className="c8"
+              className="c9"
             >
               <input
-                className="c9"
+                className="c10"
                 name="example"
+                readOnly={true}
                 type="checkbox"
               />
               <div
-                className="c10 c11 c12"
+                className="c11 c12 c13"
               >
                 <svg
                   aria-hidden="true"
-                  className="c13"
+                  className="c14"
                   focusable="false"
                   preserveAspectRatio="xMidYMid meet"
                   role="presentation"
@@ -625,7 +644,7 @@ exports[`Storyshots Molecules | Input / Select / MultiSelectList Item Disabled 1
                 </svg>
               </div>
               <span
-                className="c14 c15"
+                className="c15 c16"
               >
                 
               </span>
@@ -635,16 +654,16 @@ exports[`Storyshots Molecules | Input / Select / MultiSelectList Item Disabled 1
       </div>
     </div>
     <div
-      className="c16"
+      className="c17"
     >
       <div
-        className="c17"
+        className="c18"
       >
         <div
-          className="c18"
+          className="c19"
         >
           <span
-            className="c15"
+            className="c20"
           >
             First
           </span>
@@ -656,11 +675,11 @@ exports[`Storyshots Molecules | Input / Select / MultiSelectList Item Disabled 1
 `;
 
 exports[`Storyshots Molecules | Input / Select / MultiSelectList Item Selected 1`] = `
-.c18 {
+.c19 {
   box-sizing: border-box;
 }
 
-.c12 {
+.c13 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -676,7 +695,7 @@ exports[`Storyshots Molecules | Input / Select / MultiSelectList Item Selected 1
   align-items: center;
 }
 
-.c8 {
+.c9 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -723,7 +742,7 @@ exports[`Storyshots Molecules | Input / Select / MultiSelectList Item Selected 1
   align-items: center;
 }
 
-.c16 {
+.c17 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -739,7 +758,7 @@ exports[`Storyshots Molecules | Input / Select / MultiSelectList Item Selected 1
   align-items: center;
 }
 
-.c17 {
+.c18 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -754,13 +773,13 @@ exports[`Storyshots Molecules | Input / Select / MultiSelectList Item Selected 1
   flex-grow: 1;
 }
 
-.c6 {
+.c7 {
   text-overflow: ellipsis;
   white-space: nowrap;
   cursor: pointer;
 }
 
-.c13 {
+.c14 {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -774,7 +793,7 @@ exports[`Storyshots Molecules | Input / Select / MultiSelectList Item Selected 1
   display: block;
 }
 
-.c7 {
+.c8 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #6E6E69;
   margin: 0;
@@ -783,7 +802,7 @@ exports[`Storyshots Molecules | Input / Select / MultiSelectList Item Selected 1
   line-height: 1.4285714285714286;
 }
 
-.c15 {
+.c16 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
   margin: 0;
@@ -793,34 +812,11 @@ exports[`Storyshots Molecules | Input / Select / MultiSelectList Item Selected 1
 }
 
 .c4 {
-  width: 20px;
+  width: 16px;
   display: inline-block;
 }
 
-.c1 {
-  height: 100%;
-}
-
-.c0 {
-  padding-right: 8px;
-  padding-left: 8px;
-  color: #0046FF;
-  height: 24px;
-  outline: none;
-  white-space: nowrap;
-  background: #FFFFFF;
-  cursor: pointer;
-}
-
-.c0:hover {
-  background: #F5F5F5;
-}
-
-.c0:focus {
-  background: #F5F5F5;
-}
-
-.c11 {
+.c12 {
   width: 20px;
   height: 20px;
   border: 1px solid #BCBCB6;
@@ -830,7 +826,7 @@ exports[`Storyshots Molecules | Input / Select / MultiSelectList Item Selected 1
   flex-shrink: 0;
 }
 
-.c11::before {
+.c12::before {
   content: '';
   display: block;
   padding: 2px;
@@ -839,15 +835,15 @@ exports[`Storyshots Molecules | Input / Select / MultiSelectList Item Selected 1
   position: absolute;
 }
 
-.c5 {
+.c6 {
   position: relative;
 }
 
-.c5:hover .c10 {
+.c6:hover .c11 {
   border-color: #4B4B46;
 }
 
-.c9 {
+.c10 {
   position: absolute;
   opacity: 0;
   height: 0;
@@ -855,63 +851,88 @@ exports[`Storyshots Molecules | Input / Select / MultiSelectList Item Selected 1
   cursor: pointer;
 }
 
-.c9:checked + .c10 {
+.c10:checked + .c11 {
   border-color: #0046FF;
   background: #0046FF;
 }
 
-.c9:checked + .c10 svg {
+.c10:checked + .c11 svg {
   fill: #FFFFFF;
 }
 
-.c9[disabled] + .c10 {
+.c10[disabled] + .c11 {
   border-color: #EBEBE8;
 }
 
-.c9:checked[disabled] + .c10 {
+.c10:checked[disabled] + .c11 {
   border-color: #EBEBE8;
   background: #EBEBE8;
 }
 
-.c9:focus + .c10::before {
+.c10:focus + .c11::before {
   border: 1px solid #0046FF;
 }
 
-.c19:checked + .c10 {
+.c20:checked + .c11 {
   border-color: #0046FF;
   background: #0046FF;
 }
 
-.c19:checked + .c10 svg {
+.c20:checked + .c11 svg {
   fill: #FFFFFF;
 }
 
-.c19[disabled] + .c10 {
+.c20[disabled] + .c11 {
   border-color: #EBEBE8;
 }
 
-.c19:checked[disabled] + .c10 {
+.c20:checked[disabled] + .c11 {
   border-color: #EBEBE8;
   background: #EBEBE8;
 }
 
-.c19 + .c10::before {
+.c20 + .c11::before {
   border: 1px solid #FF1900;
 }
 
-.c19:focus + .c10::before {
+.c20:focus + .c11::before {
   border: 1px solid #0046FF;
 }
 
-.c14 {
+.c15 {
   padding-left: 8px;
   white-space: initial;
+}
+
+.c1 {
+  height: 100%;
+}
+
+.c0 {
+  padding-right: 8px;
+  padding-left: 8px;
+  height: 28px;
+  white-space: nowrap;
+  background: #FFFFFF;
+  cursor: pointer;
+}
+
+.c0:hover {
+  background: #F5F5F5;
+}
+
+.c0:hover .c11 {
+  outline: 1px solid #0046FF;
+}
+
+.c5 .c11 {
+  width: 16px;
+  height: 16px;
 }
 
 <div
   className="c0"
   selected={true}
-  tabIndex={-1}
 >
   <div
     className="c1 c2"
@@ -921,30 +942,31 @@ exports[`Storyshots Molecules | Input / Select / MultiSelectList Item Selected 1
     >
       <div
         className="c4"
-        width="20px"
+        width="16px"
       >
         <label
-          className="c5 c6"
+          className="c5 c6 c7"
           hidden={false}
         >
           <span
-            className="c7"
+            className="c8"
           >
             <div
-              className="c8"
+              className="c9"
             >
               <input
                 checked={true}
-                className="c9"
+                className="c10"
                 name="example"
+                readOnly={true}
                 type="checkbox"
               />
               <div
-                className="c10 c11 c12"
+                className="c11 c12 c13"
               >
                 <svg
                   aria-hidden="true"
-                  className="c13"
+                  className="c14"
                   focusable="false"
                   preserveAspectRatio="xMidYMid meet"
                   role="presentation"
@@ -957,7 +979,7 @@ exports[`Storyshots Molecules | Input / Select / MultiSelectList Item Selected 1
                 </svg>
               </div>
               <span
-                className="c14 c15"
+                className="c15 c16"
               >
                 
               </span>
@@ -967,16 +989,16 @@ exports[`Storyshots Molecules | Input / Select / MultiSelectList Item Selected 1
       </div>
     </div>
     <div
-      className="c16"
+      className="c17"
     >
       <div
-        className="c17"
+        className="c18"
       >
         <div
-          className="c18"
+          className="c19"
         >
           <span
-            className="c15"
+            className="c16"
           >
             First
           </span>
@@ -988,11 +1010,11 @@ exports[`Storyshots Molecules | Input / Select / MultiSelectList Item Selected 1
 `;
 
 exports[`Storyshots Molecules | Input / Select / MultiSelectList List With Different Arrow Positions 1`] = `
-.c23 {
+.c26 {
   box-sizing: border-box;
 }
 
-.c17 {
+.c20 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -1008,7 +1030,7 @@ exports[`Storyshots Molecules | Input / Select / MultiSelectList List With Diffe
   align-items: center;
 }
 
-.c13 {
+.c16 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -1020,7 +1042,7 @@ exports[`Storyshots Molecules | Input / Select / MultiSelectList List With Diffe
   align-items: center;
 }
 
-.c7 {
+.c9 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -1034,16 +1056,16 @@ exports[`Storyshots Molecules | Input / Select / MultiSelectList List With Diffe
   margin-right: -4px;
 }
 
-.c7 > * {
+.c9 > * {
   padding-left: 4px;
   padding-right: 4px;
 }
 
-.c7 > *:not(:first-child) {
+.c9 > *:not(:first-child) {
   padding-top: 0;
 }
 
-.c8 {
+.c10 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -1055,7 +1077,7 @@ exports[`Storyshots Molecules | Input / Select / MultiSelectList List With Diffe
   align-items: center;
 }
 
-.c21 {
+.c24 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -1071,7 +1093,7 @@ exports[`Storyshots Molecules | Input / Select / MultiSelectList List With Diffe
   align-items: center;
 }
 
-.c22 {
+.c25 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -1086,13 +1108,13 @@ exports[`Storyshots Molecules | Input / Select / MultiSelectList List With Diffe
   flex-grow: 1;
 }
 
-.c11 {
+.c14 {
   text-overflow: ellipsis;
   white-space: nowrap;
   cursor: pointer;
 }
 
-.c18 {
+.c21 {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -1106,13 +1128,13 @@ exports[`Storyshots Molecules | Input / Select / MultiSelectList List With Diffe
   display: block;
 }
 
-.c4 {
+.c5 {
   list-style-type: none;
   margin: 0;
   padding: 0;
 }
 
-.c12 {
+.c15 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #6E6E69;
   margin: 0;
@@ -1121,7 +1143,7 @@ exports[`Storyshots Molecules | Input / Select / MultiSelectList List With Diffe
   line-height: 1.4285714285714286;
 }
 
-.c20 {
+.c23 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
   margin: 0;
@@ -1130,211 +1152,21 @@ exports[`Storyshots Molecules | Input / Select / MultiSelectList List With Diffe
   line-height: 1.4285714285714286;
 }
 
-.c9 {
-  width: 20px;
+.c28 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #A0A09B;
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c11 {
+  width: 16px;
   display: inline-block;
 }
 
-.c3 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  list-style: none;
-  position: relative;
-  top: 10px;
-  border: 1px solid #ebebe8;
-  background-color: #ffffff;
-  padding-top: 8px;
-  padding-bottom: 8px;
-  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.03);
-}
-
-.c3:before {
-  right: 20px;
-  position: absolute;
-  margin-left: -10px;
-  width: 0;
-  height: 0;
-  content: '';
-  speak: none;
-  border-left: 10px solid transparent;
-  border-right: 10px solid transparent;
-  top: -10px;
-  border-bottom: 10px solid;
-  border-bottom-color: #ebebe8;
-}
-
-.c3:after {
-  right: 20px;
-  position: absolute;
-  margin-left: -10px;
-  width: 0;
-  height: 0;
-  content: '';
-  speak: none;
-  border-left: 10px solid transparent;
-  border-right: 10px solid transparent;
-  top: -8px;
-  border-bottom: 10px solid;
-  border-bottom-color: #ffffff;
-}
-
-.c26 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  list-style: none;
-  position: relative;
-  top: 10px;
-  border: 1px solid #ebebe8;
-  background-color: #ffffff;
-  padding-top: 8px;
-  padding-bottom: 8px;
-  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.03);
-}
-
-.c26:before {
-  left: 20px;
-  position: absolute;
-  margin-left: -10px;
-  width: 0;
-  height: 0;
-  content: '';
-  speak: none;
-  border-left: 10px solid transparent;
-  border-right: 10px solid transparent;
-  top: -10px;
-  border-bottom: 10px solid;
-  border-bottom-color: #ebebe8;
-}
-
-.c26:after {
-  left: 20px;
-  position: absolute;
-  margin-left: -10px;
-  width: 0;
-  height: 0;
-  content: '';
-  speak: none;
-  border-left: 10px solid transparent;
-  border-right: 10px solid transparent;
-  top: -8px;
-  border-bottom: 10px solid;
-  border-bottom-color: #ffffff;
-}
-
-.c27 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  list-style: none;
-  position: relative;
-  top: 10px;
-  border: 1px solid #ebebe8;
-  background-color: #ffffff;
-  padding-top: 8px;
-  padding-bottom: 8px;
-  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.03);
-}
-
-.c27:before {
-  left: 50%;
-  position: absolute;
-  margin-left: -10px;
-  width: 0;
-  height: 0;
-  content: '';
-  speak: none;
-  border-left: 10px solid transparent;
-  border-right: 10px solid transparent;
-  top: -10px;
-  border-bottom: 10px solid;
-  border-bottom-color: #ebebe8;
-}
-
-.c27:after {
-  left: 50%;
-  position: absolute;
-  margin-left: -10px;
-  width: 0;
-  height: 0;
-  content: '';
-  speak: none;
-  border-left: 10px solid transparent;
-  border-right: 10px solid transparent;
-  top: -8px;
-  border-bottom: 10px solid;
-  border-bottom-color: #ffffff;
-}
-
-.c6 {
-  height: 100%;
-}
-
-.c5 {
-  padding-right: 8px;
-  padding-left: 8px;
-  color: #4B4B46;
-  height: 24px;
-  outline: none;
-  white-space: nowrap;
-  background: #FFFFFF;
-  cursor: pointer;
-}
-
-.c5:hover {
-  background: #F5F5F5;
-}
-
-.c5:focus {
-  background: #F5F5F5;
-}
-
-.c24 {
-  padding-right: 8px;
-  padding-left: 8px;
-  color: #0046FF;
-  height: 24px;
-  outline: none;
-  white-space: nowrap;
-  background: #FFFFFF;
-  cursor: pointer;
-}
-
-.c24:hover {
-  background: #F5F5F5;
-}
-
-.c24:focus {
-  background: #F5F5F5;
-}
-
-.c25 {
-  padding-right: 8px;
-  padding-left: 8px;
-  color: #4B4B46;
-  height: 24px;
-  outline: none;
-  white-space: nowrap;
-  background: #EBEBE8;
-  cursor: pointer;
-  color: #A0A09B;
-  pointer-events: none;
-}
-
-.c16 {
+.c19 {
   width: 20px;
   height: 20px;
   border: 1px solid #BCBCB6;
@@ -1344,7 +1176,7 @@ exports[`Storyshots Molecules | Input / Select / MultiSelectList List With Diffe
   flex-shrink: 0;
 }
 
-.c16::before {
+.c19::before {
   content: '';
   display: block;
   padding: 2px;
@@ -1353,15 +1185,15 @@ exports[`Storyshots Molecules | Input / Select / MultiSelectList List With Diffe
   position: absolute;
 }
 
-.c10 {
+.c13 {
   position: relative;
 }
 
-.c10:hover .c15 {
+.c13:hover .c18 {
   border-color: #4B4B46;
 }
 
-.c14 {
+.c17 {
   position: absolute;
   opacity: 0;
   height: 0;
@@ -1369,57 +1201,251 @@ exports[`Storyshots Molecules | Input / Select / MultiSelectList List With Diffe
   cursor: pointer;
 }
 
-.c14:checked + .c15 {
+.c17:checked + .c18 {
   border-color: #0046FF;
   background: #0046FF;
 }
 
-.c14:checked + .c15 svg {
+.c17:checked + .c18 svg {
   fill: #FFFFFF;
 }
 
-.c14[disabled] + .c15 {
+.c17[disabled] + .c18 {
   border-color: #EBEBE8;
 }
 
-.c14:checked[disabled] + .c15 {
+.c17:checked[disabled] + .c18 {
   border-color: #EBEBE8;
   background: #EBEBE8;
 }
 
-.c14:focus + .c15::before {
+.c17:focus + .c18::before {
   border: 1px solid #0046FF;
 }
 
-.c28:checked + .c15 {
+.c31:checked + .c18 {
   border-color: #0046FF;
   background: #0046FF;
 }
 
-.c28:checked + .c15 svg {
+.c31:checked + .c18 svg {
   fill: #FFFFFF;
 }
 
-.c28[disabled] + .c15 {
+.c31[disabled] + .c18 {
   border-color: #EBEBE8;
 }
 
-.c28:checked[disabled] + .c15 {
+.c31:checked[disabled] + .c18 {
   border-color: #EBEBE8;
   background: #EBEBE8;
 }
 
-.c28 + .c15::before {
+.c31 + .c18::before {
   border: 1px solid #FF1900;
 }
 
-.c28:focus + .c15::before {
+.c31:focus + .c18::before {
   border: 1px solid #0046FF;
 }
 
-.c19 {
+.c22 {
   padding-left: 8px;
   white-space: initial;
+}
+
+.c4 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  list-style: none;
+  position: relative;
+  top: 10px;
+  border: 1px solid #bcbcb6;
+  background-color: #ffffff;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.03);
+}
+
+.c4:before {
+  right: 20px;
+  position: absolute;
+  width: 0;
+  height: 0;
+  content: '';
+  speak: none;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  top: -6px;
+  border-bottom: 6px solid;
+  border-bottom-color: #bcbcb6;
+}
+
+.c4:after {
+  right: 20px;
+  position: absolute;
+  width: 0;
+  height: 0;
+  content: '';
+  speak: none;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  top: -5px;
+  border-bottom: 6px solid;
+  border-bottom-color: #ffffff;
+}
+
+.c29 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  list-style: none;
+  position: relative;
+  top: 10px;
+  border: 1px solid #bcbcb6;
+  background-color: #ffffff;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.03);
+}
+
+.c29:before {
+  left: 20px;
+  position: absolute;
+  width: 0;
+  height: 0;
+  content: '';
+  speak: none;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  top: -6px;
+  border-bottom: 6px solid;
+  border-bottom-color: #bcbcb6;
+}
+
+.c29:after {
+  left: 20px;
+  position: absolute;
+  width: 0;
+  height: 0;
+  content: '';
+  speak: none;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  top: -5px;
+  border-bottom: 6px solid;
+  border-bottom-color: #ffffff;
+}
+
+.c30 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  list-style: none;
+  position: relative;
+  top: 10px;
+  border: 1px solid #bcbcb6;
+  background-color: #ffffff;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.03);
+}
+
+.c30:before {
+  left: 50%;
+  position: absolute;
+  width: 0;
+  height: 0;
+  content: '';
+  speak: none;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  top: -6px;
+  border-bottom: 6px solid;
+  border-bottom-color: #bcbcb6;
+}
+
+.c30:after {
+  left: 50%;
+  position: absolute;
+  width: 0;
+  height: 0;
+  content: '';
+  speak: none;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  top: -5px;
+  border-bottom: 6px solid;
+  border-bottom-color: #ffffff;
+}
+
+.c6 {
+  overflow-y: auto;
+  width: 100%;
+  height: 100%;
+  padding: 1px;
+  margin: -1px;
+}
+
+.c3:after {
+  content: '';
+  position: absolute;
+  pointer-events: none;
+  bottom: calc(100% - 240px - 30px);
+  left: 6px;
+  height: 20px;
+  background: linear-gradient(to bottom,rgba(255,255,255,0),#fff);
+  width: calc(100% - 12px);
+}
+
+.c8 {
+  height: 100%;
+}
+
+.c7 {
+  padding-right: 8px;
+  padding-left: 8px;
+  height: 28px;
+  white-space: nowrap;
+  background: #FFFFFF;
+  cursor: pointer;
+}
+
+.c7:hover {
+  background: #F5F5F5;
+}
+
+.c7:hover .c18 {
+  outline: 1px solid #0046FF;
+}
+
+.c27 {
+  padding-right: 8px;
+  padding-left: 8px;
+  height: 28px;
+  white-space: nowrap;
+  background: #FFFFFF;
+  cursor: pointer;
+  color: #A0A09B;
+  pointer-events: none;
+}
+
+.c12 .c18 {
+  width: 16px;
+  height: 16px;
 }
 
 .c0 {
@@ -1493,314 +1519,324 @@ exports[`Storyshots Molecules | Input / Select / MultiSelectList List With Diffe
       Default (right)
     </div>
     <div>
-      <ul
-        className="c3 c4"
-        role="listbox"
+      <div
+        className="c3"
       >
-        <div
-          className="c5"
-          tabIndex={-1}
+        <ul
+          aria-multiselectable="true"
+          className="c4 c5"
+          role="listbox"
+          tabIndex={0}
         >
           <div
-            className="c6 c7"
+            className="c6"
           >
             <div
-              className="c8"
+              className="c7"
             >
               <div
-                className="c9"
-                width="20px"
+                className="c8 c9"
               >
-                <label
-                  className="c10 c11"
-                  hidden={false}
+                <div
+                  className="c10"
                 >
-                  <span
-                    className="c12"
+                  <div
+                    className="c11"
+                    width="16px"
+                  >
+                    <label
+                      className="c12 c13 c14"
+                      hidden={false}
+                    >
+                      <span
+                        className="c15"
+                      >
+                        <div
+                          className="c16"
+                        >
+                          <input
+                            className="c17"
+                            name="example"
+                            readOnly={true}
+                            type="checkbox"
+                          />
+                          <div
+                            className="c18 c19 c20"
+                          >
+                            <svg
+                              aria-hidden="true"
+                              className="c21"
+                              focusable="false"
+                              preserveAspectRatio="xMidYMid meet"
+                              role="presentation"
+                              size={3}
+                              viewBox="0 0 24 24"
+                            >
+                              <path
+                                d="M8.76083729 16.4144594L2.20525972 9.86336213 0 12.2093109 8.79670106 21 24 5.30897552 21.7583339 3z"
+                              />
+                            </svg>
+                          </div>
+                          <span
+                            className="c22 c23"
+                          >
+                            
+                          </span>
+                        </div>
+                      </span>
+                    </label>
+                  </div>
+                </div>
+                <div
+                  className="c24"
+                >
+                  <div
+                    className="c25"
                   >
                     <div
-                      className="c13"
+                      className="c26"
                     >
-                      <input
-                        className="c14"
-                        name="example"
-                        type="checkbox"
-                      />
-                      <div
-                        className="c15 c16 c17"
-                      >
-                        <svg
-                          aria-hidden="true"
-                          className="c18"
-                          focusable="false"
-                          preserveAspectRatio="xMidYMid meet"
-                          role="presentation"
-                          size={3}
-                          viewBox="0 0 24 24"
-                        >
-                          <path
-                            d="M8.76083729 16.4144594L2.20525972 9.86336213 0 12.2093109 8.79670106 21 24 5.30897552 21.7583339 3z"
-                          />
-                        </svg>
-                      </div>
                       <span
-                        className="c19 c20"
+                        className="c23"
                       >
-                        
+                        Default?
                       </span>
                     </div>
-                  </span>
-                </label>
+                  </div>
+                </div>
               </div>
             </div>
             <div
-              className="c21"
+              className="c7"
+              selected={true}
             >
               <div
-                className="c22"
+                className="c8 c9"
               >
                 <div
-                  className="c23"
+                  className="c10"
                 >
-                  <span
-                    className="c20"
+                  <div
+                    className="c11"
+                    width="16px"
                   >
-                    Default?
-                  </span>
+                    <label
+                      className="c12 c13 c14"
+                      hidden={false}
+                    >
+                      <span
+                        className="c15"
+                      >
+                        <div
+                          className="c16"
+                        >
+                          <input
+                            checked={true}
+                            className="c17"
+                            name="example"
+                            readOnly={true}
+                            type="checkbox"
+                          />
+                          <div
+                            className="c18 c19 c20"
+                          >
+                            <svg
+                              aria-hidden="true"
+                              className="c21"
+                              focusable="false"
+                              preserveAspectRatio="xMidYMid meet"
+                              role="presentation"
+                              size={3}
+                              viewBox="0 0 24 24"
+                            >
+                              <path
+                                d="M8.76083729 16.4144594L2.20525972 9.86336213 0 12.2093109 8.79670106 21 24 5.30897552 21.7583339 3z"
+                              />
+                            </svg>
+                          </div>
+                          <span
+                            className="c22 c23"
+                          >
+                            
+                          </span>
+                        </div>
+                      </span>
+                    </label>
+                  </div>
+                </div>
+                <div
+                  className="c24"
+                >
+                  <div
+                    className="c25"
+                  >
+                    <div
+                      className="c26"
+                    >
+                      <span
+                        className="c23"
+                      >
+                        First
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              className="c7"
+            >
+              <div
+                className="c8 c9"
+              >
+                <div
+                  className="c10"
+                >
+                  <div
+                    className="c11"
+                    width="16px"
+                  >
+                    <label
+                      className="c12 c13 c14"
+                      hidden={false}
+                    >
+                      <span
+                        className="c15"
+                      >
+                        <div
+                          className="c16"
+                        >
+                          <input
+                            className="c17"
+                            name="example"
+                            readOnly={true}
+                            type="checkbox"
+                          />
+                          <div
+                            className="c18 c19 c20"
+                          >
+                            <svg
+                              aria-hidden="true"
+                              className="c21"
+                              focusable="false"
+                              preserveAspectRatio="xMidYMid meet"
+                              role="presentation"
+                              size={3}
+                              viewBox="0 0 24 24"
+                            >
+                              <path
+                                d="M8.76083729 16.4144594L2.20525972 9.86336213 0 12.2093109 8.79670106 21 24 5.30897552 21.7583339 3z"
+                              />
+                            </svg>
+                          </div>
+                          <span
+                            className="c22 c23"
+                          >
+                            
+                          </span>
+                        </div>
+                      </span>
+                    </label>
+                  </div>
+                </div>
+                <div
+                  className="c24"
+                >
+                  <div
+                    className="c25"
+                  >
+                    <div
+                      className="c26"
+                    >
+                      <span
+                        className="c23"
+                      >
+                        Second
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              className="c27"
+              disabled={true}
+            >
+              <div
+                className="c8 c9"
+              >
+                <div
+                  className="c10"
+                >
+                  <div
+                    className="c11"
+                    width="16px"
+                  >
+                    <label
+                      className="c12 c13 c14"
+                      hidden={false}
+                    >
+                      <span
+                        className="c15"
+                      >
+                        <div
+                          className="c16"
+                        >
+                          <input
+                            className="c17"
+                            name="example"
+                            readOnly={true}
+                            type="checkbox"
+                          />
+                          <div
+                            className="c18 c19 c20"
+                          >
+                            <svg
+                              aria-hidden="true"
+                              className="c21"
+                              focusable="false"
+                              preserveAspectRatio="xMidYMid meet"
+                              role="presentation"
+                              size={3}
+                              viewBox="0 0 24 24"
+                            >
+                              <path
+                                d="M8.76083729 16.4144594L2.20525972 9.86336213 0 12.2093109 8.79670106 21 24 5.30897552 21.7583339 3z"
+                              />
+                            </svg>
+                          </div>
+                          <span
+                            className="c22 c23"
+                          >
+                            
+                          </span>
+                        </div>
+                      </span>
+                    </label>
+                  </div>
+                </div>
+                <div
+                  className="c24"
+                >
+                  <div
+                    className="c25"
+                  >
+                    <div
+                      className="c26"
+                    >
+                      <span
+                        className="c28"
+                      >
+                        Disabled
+                      </span>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-        <div
-          className="c24"
-          selected={true}
-          tabIndex={-1}
-        >
-          <div
-            className="c6 c7"
-          >
-            <div
-              className="c8"
-            >
-              <div
-                className="c9"
-                width="20px"
-              >
-                <label
-                  className="c10 c11"
-                  hidden={false}
-                >
-                  <span
-                    className="c12"
-                  >
-                    <div
-                      className="c13"
-                    >
-                      <input
-                        checked={true}
-                        className="c14"
-                        name="example"
-                        type="checkbox"
-                      />
-                      <div
-                        className="c15 c16 c17"
-                      >
-                        <svg
-                          aria-hidden="true"
-                          className="c18"
-                          focusable="false"
-                          preserveAspectRatio="xMidYMid meet"
-                          role="presentation"
-                          size={3}
-                          viewBox="0 0 24 24"
-                        >
-                          <path
-                            d="M8.76083729 16.4144594L2.20525972 9.86336213 0 12.2093109 8.79670106 21 24 5.30897552 21.7583339 3z"
-                          />
-                        </svg>
-                      </div>
-                      <span
-                        className="c19 c20"
-                      >
-                        
-                      </span>
-                    </div>
-                  </span>
-                </label>
-              </div>
-            </div>
-            <div
-              className="c21"
-            >
-              <div
-                className="c22"
-              >
-                <div
-                  className="c23"
-                >
-                  <span
-                    className="c20"
-                  >
-                    First
-                  </span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div
-          className="c5"
-          tabIndex={-1}
-        >
-          <div
-            className="c6 c7"
-          >
-            <div
-              className="c8"
-            >
-              <div
-                className="c9"
-                width="20px"
-              >
-                <label
-                  className="c10 c11"
-                  hidden={false}
-                >
-                  <span
-                    className="c12"
-                  >
-                    <div
-                      className="c13"
-                    >
-                      <input
-                        className="c14"
-                        name="example"
-                        type="checkbox"
-                      />
-                      <div
-                        className="c15 c16 c17"
-                      >
-                        <svg
-                          aria-hidden="true"
-                          className="c18"
-                          focusable="false"
-                          preserveAspectRatio="xMidYMid meet"
-                          role="presentation"
-                          size={3}
-                          viewBox="0 0 24 24"
-                        >
-                          <path
-                            d="M8.76083729 16.4144594L2.20525972 9.86336213 0 12.2093109 8.79670106 21 24 5.30897552 21.7583339 3z"
-                          />
-                        </svg>
-                      </div>
-                      <span
-                        className="c19 c20"
-                      >
-                        
-                      </span>
-                    </div>
-                  </span>
-                </label>
-              </div>
-            </div>
-            <div
-              className="c21"
-            >
-              <div
-                className="c22"
-              >
-                <div
-                  className="c23"
-                >
-                  <span
-                    className="c20"
-                  >
-                    Second
-                  </span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div
-          className="c25"
-          disabled={true}
-          tabIndex={-1}
-        >
-          <div
-            className="c6 c7"
-          >
-            <div
-              className="c8"
-            >
-              <div
-                className="c9"
-                width="20px"
-              >
-                <label
-                  className="c10 c11"
-                  hidden={false}
-                >
-                  <span
-                    className="c12"
-                  >
-                    <div
-                      className="c13"
-                    >
-                      <input
-                        className="c14"
-                        name="example"
-                        type="checkbox"
-                      />
-                      <div
-                        className="c15 c16 c17"
-                      >
-                        <svg
-                          aria-hidden="true"
-                          className="c18"
-                          focusable="false"
-                          preserveAspectRatio="xMidYMid meet"
-                          role="presentation"
-                          size={3}
-                          viewBox="0 0 24 24"
-                        >
-                          <path
-                            d="M8.76083729 16.4144594L2.20525972 9.86336213 0 12.2093109 8.79670106 21 24 5.30897552 21.7583339 3z"
-                          />
-                        </svg>
-                      </div>
-                      <span
-                        className="c19 c20"
-                      >
-                        
-                      </span>
-                    </div>
-                  </span>
-                </label>
-              </div>
-            </div>
-            <div
-              className="c21"
-            >
-              <div
-                className="c22"
-              >
-                <div
-                  className="c23"
-                >
-                  <span
-                    className="c20"
-                  >
-                    Disabled
-                  </span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </ul>
+        </ul>
+      </div>
     </div>
   </div>
   <div
@@ -1813,314 +1849,324 @@ exports[`Storyshots Molecules | Input / Select / MultiSelectList List With Diffe
       Left
     </div>
     <div>
-      <ul
-        className="c26 c4"
-        role="listbox"
+      <div
+        className="c3"
       >
-        <div
-          className="c5"
-          tabIndex={-1}
+        <ul
+          aria-multiselectable="true"
+          className="c29 c5"
+          role="listbox"
+          tabIndex={0}
         >
           <div
-            className="c6 c7"
+            className="c6"
           >
             <div
-              className="c8"
+              className="c7"
             >
               <div
-                className="c9"
-                width="20px"
+                className="c8 c9"
               >
-                <label
-                  className="c10 c11"
-                  hidden={false}
+                <div
+                  className="c10"
                 >
-                  <span
-                    className="c12"
+                  <div
+                    className="c11"
+                    width="16px"
+                  >
+                    <label
+                      className="c12 c13 c14"
+                      hidden={false}
+                    >
+                      <span
+                        className="c15"
+                      >
+                        <div
+                          className="c16"
+                        >
+                          <input
+                            className="c17"
+                            name="example"
+                            readOnly={true}
+                            type="checkbox"
+                          />
+                          <div
+                            className="c18 c19 c20"
+                          >
+                            <svg
+                              aria-hidden="true"
+                              className="c21"
+                              focusable="false"
+                              preserveAspectRatio="xMidYMid meet"
+                              role="presentation"
+                              size={3}
+                              viewBox="0 0 24 24"
+                            >
+                              <path
+                                d="M8.76083729 16.4144594L2.20525972 9.86336213 0 12.2093109 8.79670106 21 24 5.30897552 21.7583339 3z"
+                              />
+                            </svg>
+                          </div>
+                          <span
+                            className="c22 c23"
+                          >
+                            
+                          </span>
+                        </div>
+                      </span>
+                    </label>
+                  </div>
+                </div>
+                <div
+                  className="c24"
+                >
+                  <div
+                    className="c25"
                   >
                     <div
-                      className="c13"
+                      className="c26"
                     >
-                      <input
-                        className="c14"
-                        name="example"
-                        type="checkbox"
-                      />
-                      <div
-                        className="c15 c16 c17"
-                      >
-                        <svg
-                          aria-hidden="true"
-                          className="c18"
-                          focusable="false"
-                          preserveAspectRatio="xMidYMid meet"
-                          role="presentation"
-                          size={3}
-                          viewBox="0 0 24 24"
-                        >
-                          <path
-                            d="M8.76083729 16.4144594L2.20525972 9.86336213 0 12.2093109 8.79670106 21 24 5.30897552 21.7583339 3z"
-                          />
-                        </svg>
-                      </div>
                       <span
-                        className="c19 c20"
+                        className="c23"
                       >
-                        
+                        Default?
                       </span>
                     </div>
-                  </span>
-                </label>
+                  </div>
+                </div>
               </div>
             </div>
             <div
-              className="c21"
+              className="c7"
+              selected={true}
             >
               <div
-                className="c22"
+                className="c8 c9"
               >
                 <div
-                  className="c23"
+                  className="c10"
                 >
-                  <span
-                    className="c20"
+                  <div
+                    className="c11"
+                    width="16px"
                   >
-                    Default?
-                  </span>
+                    <label
+                      className="c12 c13 c14"
+                      hidden={false}
+                    >
+                      <span
+                        className="c15"
+                      >
+                        <div
+                          className="c16"
+                        >
+                          <input
+                            checked={true}
+                            className="c17"
+                            name="example"
+                            readOnly={true}
+                            type="checkbox"
+                          />
+                          <div
+                            className="c18 c19 c20"
+                          >
+                            <svg
+                              aria-hidden="true"
+                              className="c21"
+                              focusable="false"
+                              preserveAspectRatio="xMidYMid meet"
+                              role="presentation"
+                              size={3}
+                              viewBox="0 0 24 24"
+                            >
+                              <path
+                                d="M8.76083729 16.4144594L2.20525972 9.86336213 0 12.2093109 8.79670106 21 24 5.30897552 21.7583339 3z"
+                              />
+                            </svg>
+                          </div>
+                          <span
+                            className="c22 c23"
+                          >
+                            
+                          </span>
+                        </div>
+                      </span>
+                    </label>
+                  </div>
+                </div>
+                <div
+                  className="c24"
+                >
+                  <div
+                    className="c25"
+                  >
+                    <div
+                      className="c26"
+                    >
+                      <span
+                        className="c23"
+                      >
+                        First
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              className="c7"
+            >
+              <div
+                className="c8 c9"
+              >
+                <div
+                  className="c10"
+                >
+                  <div
+                    className="c11"
+                    width="16px"
+                  >
+                    <label
+                      className="c12 c13 c14"
+                      hidden={false}
+                    >
+                      <span
+                        className="c15"
+                      >
+                        <div
+                          className="c16"
+                        >
+                          <input
+                            className="c17"
+                            name="example"
+                            readOnly={true}
+                            type="checkbox"
+                          />
+                          <div
+                            className="c18 c19 c20"
+                          >
+                            <svg
+                              aria-hidden="true"
+                              className="c21"
+                              focusable="false"
+                              preserveAspectRatio="xMidYMid meet"
+                              role="presentation"
+                              size={3}
+                              viewBox="0 0 24 24"
+                            >
+                              <path
+                                d="M8.76083729 16.4144594L2.20525972 9.86336213 0 12.2093109 8.79670106 21 24 5.30897552 21.7583339 3z"
+                              />
+                            </svg>
+                          </div>
+                          <span
+                            className="c22 c23"
+                          >
+                            
+                          </span>
+                        </div>
+                      </span>
+                    </label>
+                  </div>
+                </div>
+                <div
+                  className="c24"
+                >
+                  <div
+                    className="c25"
+                  >
+                    <div
+                      className="c26"
+                    >
+                      <span
+                        className="c23"
+                      >
+                        Second
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              className="c27"
+              disabled={true}
+            >
+              <div
+                className="c8 c9"
+              >
+                <div
+                  className="c10"
+                >
+                  <div
+                    className="c11"
+                    width="16px"
+                  >
+                    <label
+                      className="c12 c13 c14"
+                      hidden={false}
+                    >
+                      <span
+                        className="c15"
+                      >
+                        <div
+                          className="c16"
+                        >
+                          <input
+                            className="c17"
+                            name="example"
+                            readOnly={true}
+                            type="checkbox"
+                          />
+                          <div
+                            className="c18 c19 c20"
+                          >
+                            <svg
+                              aria-hidden="true"
+                              className="c21"
+                              focusable="false"
+                              preserveAspectRatio="xMidYMid meet"
+                              role="presentation"
+                              size={3}
+                              viewBox="0 0 24 24"
+                            >
+                              <path
+                                d="M8.76083729 16.4144594L2.20525972 9.86336213 0 12.2093109 8.79670106 21 24 5.30897552 21.7583339 3z"
+                              />
+                            </svg>
+                          </div>
+                          <span
+                            className="c22 c23"
+                          >
+                            
+                          </span>
+                        </div>
+                      </span>
+                    </label>
+                  </div>
+                </div>
+                <div
+                  className="c24"
+                >
+                  <div
+                    className="c25"
+                  >
+                    <div
+                      className="c26"
+                    >
+                      <span
+                        className="c28"
+                      >
+                        Disabled
+                      </span>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-        <div
-          className="c24"
-          selected={true}
-          tabIndex={-1}
-        >
-          <div
-            className="c6 c7"
-          >
-            <div
-              className="c8"
-            >
-              <div
-                className="c9"
-                width="20px"
-              >
-                <label
-                  className="c10 c11"
-                  hidden={false}
-                >
-                  <span
-                    className="c12"
-                  >
-                    <div
-                      className="c13"
-                    >
-                      <input
-                        checked={true}
-                        className="c14"
-                        name="example"
-                        type="checkbox"
-                      />
-                      <div
-                        className="c15 c16 c17"
-                      >
-                        <svg
-                          aria-hidden="true"
-                          className="c18"
-                          focusable="false"
-                          preserveAspectRatio="xMidYMid meet"
-                          role="presentation"
-                          size={3}
-                          viewBox="0 0 24 24"
-                        >
-                          <path
-                            d="M8.76083729 16.4144594L2.20525972 9.86336213 0 12.2093109 8.79670106 21 24 5.30897552 21.7583339 3z"
-                          />
-                        </svg>
-                      </div>
-                      <span
-                        className="c19 c20"
-                      >
-                        
-                      </span>
-                    </div>
-                  </span>
-                </label>
-              </div>
-            </div>
-            <div
-              className="c21"
-            >
-              <div
-                className="c22"
-              >
-                <div
-                  className="c23"
-                >
-                  <span
-                    className="c20"
-                  >
-                    First
-                  </span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div
-          className="c5"
-          tabIndex={-1}
-        >
-          <div
-            className="c6 c7"
-          >
-            <div
-              className="c8"
-            >
-              <div
-                className="c9"
-                width="20px"
-              >
-                <label
-                  className="c10 c11"
-                  hidden={false}
-                >
-                  <span
-                    className="c12"
-                  >
-                    <div
-                      className="c13"
-                    >
-                      <input
-                        className="c14"
-                        name="example"
-                        type="checkbox"
-                      />
-                      <div
-                        className="c15 c16 c17"
-                      >
-                        <svg
-                          aria-hidden="true"
-                          className="c18"
-                          focusable="false"
-                          preserveAspectRatio="xMidYMid meet"
-                          role="presentation"
-                          size={3}
-                          viewBox="0 0 24 24"
-                        >
-                          <path
-                            d="M8.76083729 16.4144594L2.20525972 9.86336213 0 12.2093109 8.79670106 21 24 5.30897552 21.7583339 3z"
-                          />
-                        </svg>
-                      </div>
-                      <span
-                        className="c19 c20"
-                      >
-                        
-                      </span>
-                    </div>
-                  </span>
-                </label>
-              </div>
-            </div>
-            <div
-              className="c21"
-            >
-              <div
-                className="c22"
-              >
-                <div
-                  className="c23"
-                >
-                  <span
-                    className="c20"
-                  >
-                    Second
-                  </span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div
-          className="c25"
-          disabled={true}
-          tabIndex={-1}
-        >
-          <div
-            className="c6 c7"
-          >
-            <div
-              className="c8"
-            >
-              <div
-                className="c9"
-                width="20px"
-              >
-                <label
-                  className="c10 c11"
-                  hidden={false}
-                >
-                  <span
-                    className="c12"
-                  >
-                    <div
-                      className="c13"
-                    >
-                      <input
-                        className="c14"
-                        name="example"
-                        type="checkbox"
-                      />
-                      <div
-                        className="c15 c16 c17"
-                      >
-                        <svg
-                          aria-hidden="true"
-                          className="c18"
-                          focusable="false"
-                          preserveAspectRatio="xMidYMid meet"
-                          role="presentation"
-                          size={3}
-                          viewBox="0 0 24 24"
-                        >
-                          <path
-                            d="M8.76083729 16.4144594L2.20525972 9.86336213 0 12.2093109 8.79670106 21 24 5.30897552 21.7583339 3z"
-                          />
-                        </svg>
-                      </div>
-                      <span
-                        className="c19 c20"
-                      >
-                        
-                      </span>
-                    </div>
-                  </span>
-                </label>
-              </div>
-            </div>
-            <div
-              className="c21"
-            >
-              <div
-                className="c22"
-              >
-                <div
-                  className="c23"
-                >
-                  <span
-                    className="c20"
-                  >
-                    Disabled
-                  </span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </ul>
+        </ul>
+      </div>
     </div>
   </div>
   <div
@@ -2133,314 +2179,324 @@ exports[`Storyshots Molecules | Input / Select / MultiSelectList List With Diffe
       Center
     </div>
     <div>
-      <ul
-        className="c27 c4"
-        role="listbox"
+      <div
+        className="c3"
       >
-        <div
-          className="c5"
-          tabIndex={-1}
+        <ul
+          aria-multiselectable="true"
+          className="c30 c5"
+          role="listbox"
+          tabIndex={0}
         >
           <div
-            className="c6 c7"
+            className="c6"
           >
             <div
-              className="c8"
+              className="c7"
             >
               <div
-                className="c9"
-                width="20px"
+                className="c8 c9"
               >
-                <label
-                  className="c10 c11"
-                  hidden={false}
+                <div
+                  className="c10"
                 >
-                  <span
-                    className="c12"
+                  <div
+                    className="c11"
+                    width="16px"
+                  >
+                    <label
+                      className="c12 c13 c14"
+                      hidden={false}
+                    >
+                      <span
+                        className="c15"
+                      >
+                        <div
+                          className="c16"
+                        >
+                          <input
+                            className="c17"
+                            name="example"
+                            readOnly={true}
+                            type="checkbox"
+                          />
+                          <div
+                            className="c18 c19 c20"
+                          >
+                            <svg
+                              aria-hidden="true"
+                              className="c21"
+                              focusable="false"
+                              preserveAspectRatio="xMidYMid meet"
+                              role="presentation"
+                              size={3}
+                              viewBox="0 0 24 24"
+                            >
+                              <path
+                                d="M8.76083729 16.4144594L2.20525972 9.86336213 0 12.2093109 8.79670106 21 24 5.30897552 21.7583339 3z"
+                              />
+                            </svg>
+                          </div>
+                          <span
+                            className="c22 c23"
+                          >
+                            
+                          </span>
+                        </div>
+                      </span>
+                    </label>
+                  </div>
+                </div>
+                <div
+                  className="c24"
+                >
+                  <div
+                    className="c25"
                   >
                     <div
-                      className="c13"
+                      className="c26"
                     >
-                      <input
-                        className="c14"
-                        name="example"
-                        type="checkbox"
-                      />
-                      <div
-                        className="c15 c16 c17"
-                      >
-                        <svg
-                          aria-hidden="true"
-                          className="c18"
-                          focusable="false"
-                          preserveAspectRatio="xMidYMid meet"
-                          role="presentation"
-                          size={3}
-                          viewBox="0 0 24 24"
-                        >
-                          <path
-                            d="M8.76083729 16.4144594L2.20525972 9.86336213 0 12.2093109 8.79670106 21 24 5.30897552 21.7583339 3z"
-                          />
-                        </svg>
-                      </div>
                       <span
-                        className="c19 c20"
+                        className="c23"
                       >
-                        
+                        Default?
                       </span>
                     </div>
-                  </span>
-                </label>
+                  </div>
+                </div>
               </div>
             </div>
             <div
-              className="c21"
+              className="c7"
+              selected={true}
             >
               <div
-                className="c22"
+                className="c8 c9"
               >
                 <div
-                  className="c23"
+                  className="c10"
                 >
-                  <span
-                    className="c20"
+                  <div
+                    className="c11"
+                    width="16px"
                   >
-                    Default?
-                  </span>
+                    <label
+                      className="c12 c13 c14"
+                      hidden={false}
+                    >
+                      <span
+                        className="c15"
+                      >
+                        <div
+                          className="c16"
+                        >
+                          <input
+                            checked={true}
+                            className="c17"
+                            name="example"
+                            readOnly={true}
+                            type="checkbox"
+                          />
+                          <div
+                            className="c18 c19 c20"
+                          >
+                            <svg
+                              aria-hidden="true"
+                              className="c21"
+                              focusable="false"
+                              preserveAspectRatio="xMidYMid meet"
+                              role="presentation"
+                              size={3}
+                              viewBox="0 0 24 24"
+                            >
+                              <path
+                                d="M8.76083729 16.4144594L2.20525972 9.86336213 0 12.2093109 8.79670106 21 24 5.30897552 21.7583339 3z"
+                              />
+                            </svg>
+                          </div>
+                          <span
+                            className="c22 c23"
+                          >
+                            
+                          </span>
+                        </div>
+                      </span>
+                    </label>
+                  </div>
+                </div>
+                <div
+                  className="c24"
+                >
+                  <div
+                    className="c25"
+                  >
+                    <div
+                      className="c26"
+                    >
+                      <span
+                        className="c23"
+                      >
+                        First
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              className="c7"
+            >
+              <div
+                className="c8 c9"
+              >
+                <div
+                  className="c10"
+                >
+                  <div
+                    className="c11"
+                    width="16px"
+                  >
+                    <label
+                      className="c12 c13 c14"
+                      hidden={false}
+                    >
+                      <span
+                        className="c15"
+                      >
+                        <div
+                          className="c16"
+                        >
+                          <input
+                            className="c17"
+                            name="example"
+                            readOnly={true}
+                            type="checkbox"
+                          />
+                          <div
+                            className="c18 c19 c20"
+                          >
+                            <svg
+                              aria-hidden="true"
+                              className="c21"
+                              focusable="false"
+                              preserveAspectRatio="xMidYMid meet"
+                              role="presentation"
+                              size={3}
+                              viewBox="0 0 24 24"
+                            >
+                              <path
+                                d="M8.76083729 16.4144594L2.20525972 9.86336213 0 12.2093109 8.79670106 21 24 5.30897552 21.7583339 3z"
+                              />
+                            </svg>
+                          </div>
+                          <span
+                            className="c22 c23"
+                          >
+                            
+                          </span>
+                        </div>
+                      </span>
+                    </label>
+                  </div>
+                </div>
+                <div
+                  className="c24"
+                >
+                  <div
+                    className="c25"
+                  >
+                    <div
+                      className="c26"
+                    >
+                      <span
+                        className="c23"
+                      >
+                        Second
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              className="c27"
+              disabled={true}
+            >
+              <div
+                className="c8 c9"
+              >
+                <div
+                  className="c10"
+                >
+                  <div
+                    className="c11"
+                    width="16px"
+                  >
+                    <label
+                      className="c12 c13 c14"
+                      hidden={false}
+                    >
+                      <span
+                        className="c15"
+                      >
+                        <div
+                          className="c16"
+                        >
+                          <input
+                            className="c17"
+                            name="example"
+                            readOnly={true}
+                            type="checkbox"
+                          />
+                          <div
+                            className="c18 c19 c20"
+                          >
+                            <svg
+                              aria-hidden="true"
+                              className="c21"
+                              focusable="false"
+                              preserveAspectRatio="xMidYMid meet"
+                              role="presentation"
+                              size={3}
+                              viewBox="0 0 24 24"
+                            >
+                              <path
+                                d="M8.76083729 16.4144594L2.20525972 9.86336213 0 12.2093109 8.79670106 21 24 5.30897552 21.7583339 3z"
+                              />
+                            </svg>
+                          </div>
+                          <span
+                            className="c22 c23"
+                          >
+                            
+                          </span>
+                        </div>
+                      </span>
+                    </label>
+                  </div>
+                </div>
+                <div
+                  className="c24"
+                >
+                  <div
+                    className="c25"
+                  >
+                    <div
+                      className="c26"
+                    >
+                      <span
+                        className="c28"
+                      >
+                        Disabled
+                      </span>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-        <div
-          className="c24"
-          selected={true}
-          tabIndex={-1}
-        >
-          <div
-            className="c6 c7"
-          >
-            <div
-              className="c8"
-            >
-              <div
-                className="c9"
-                width="20px"
-              >
-                <label
-                  className="c10 c11"
-                  hidden={false}
-                >
-                  <span
-                    className="c12"
-                  >
-                    <div
-                      className="c13"
-                    >
-                      <input
-                        checked={true}
-                        className="c14"
-                        name="example"
-                        type="checkbox"
-                      />
-                      <div
-                        className="c15 c16 c17"
-                      >
-                        <svg
-                          aria-hidden="true"
-                          className="c18"
-                          focusable="false"
-                          preserveAspectRatio="xMidYMid meet"
-                          role="presentation"
-                          size={3}
-                          viewBox="0 0 24 24"
-                        >
-                          <path
-                            d="M8.76083729 16.4144594L2.20525972 9.86336213 0 12.2093109 8.79670106 21 24 5.30897552 21.7583339 3z"
-                          />
-                        </svg>
-                      </div>
-                      <span
-                        className="c19 c20"
-                      >
-                        
-                      </span>
-                    </div>
-                  </span>
-                </label>
-              </div>
-            </div>
-            <div
-              className="c21"
-            >
-              <div
-                className="c22"
-              >
-                <div
-                  className="c23"
-                >
-                  <span
-                    className="c20"
-                  >
-                    First
-                  </span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div
-          className="c5"
-          tabIndex={-1}
-        >
-          <div
-            className="c6 c7"
-          >
-            <div
-              className="c8"
-            >
-              <div
-                className="c9"
-                width="20px"
-              >
-                <label
-                  className="c10 c11"
-                  hidden={false}
-                >
-                  <span
-                    className="c12"
-                  >
-                    <div
-                      className="c13"
-                    >
-                      <input
-                        className="c14"
-                        name="example"
-                        type="checkbox"
-                      />
-                      <div
-                        className="c15 c16 c17"
-                      >
-                        <svg
-                          aria-hidden="true"
-                          className="c18"
-                          focusable="false"
-                          preserveAspectRatio="xMidYMid meet"
-                          role="presentation"
-                          size={3}
-                          viewBox="0 0 24 24"
-                        >
-                          <path
-                            d="M8.76083729 16.4144594L2.20525972 9.86336213 0 12.2093109 8.79670106 21 24 5.30897552 21.7583339 3z"
-                          />
-                        </svg>
-                      </div>
-                      <span
-                        className="c19 c20"
-                      >
-                        
-                      </span>
-                    </div>
-                  </span>
-                </label>
-              </div>
-            </div>
-            <div
-              className="c21"
-            >
-              <div
-                className="c22"
-              >
-                <div
-                  className="c23"
-                >
-                  <span
-                    className="c20"
-                  >
-                    Second
-                  </span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div
-          className="c25"
-          disabled={true}
-          tabIndex={-1}
-        >
-          <div
-            className="c6 c7"
-          >
-            <div
-              className="c8"
-            >
-              <div
-                className="c9"
-                width="20px"
-              >
-                <label
-                  className="c10 c11"
-                  hidden={false}
-                >
-                  <span
-                    className="c12"
-                  >
-                    <div
-                      className="c13"
-                    >
-                      <input
-                        className="c14"
-                        name="example"
-                        type="checkbox"
-                      />
-                      <div
-                        className="c15 c16 c17"
-                      >
-                        <svg
-                          aria-hidden="true"
-                          className="c18"
-                          focusable="false"
-                          preserveAspectRatio="xMidYMid meet"
-                          role="presentation"
-                          size={3}
-                          viewBox="0 0 24 24"
-                        >
-                          <path
-                            d="M8.76083729 16.4144594L2.20525972 9.86336213 0 12.2093109 8.79670106 21 24 5.30897552 21.7583339 3z"
-                          />
-                        </svg>
-                      </div>
-                      <span
-                        className="c19 c20"
-                      >
-                        
-                      </span>
-                    </div>
-                  </span>
-                </label>
-              </div>
-            </div>
-            <div
-              className="c21"
-            >
-              <div
-                className="c22"
-              >
-                <div
-                  className="c23"
-                >
-                  <span
-                    className="c20"
-                  >
-                    Disabled
-                  </span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </ul>
+        </ul>
+      </div>
     </div>
   </div>
 </div>
