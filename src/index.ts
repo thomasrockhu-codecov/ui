@@ -4,6 +4,7 @@ import Box from './Atoms/Box';
 import Card from './Atoms/Card';
 import CssGrid from './Atoms/CssGrid';
 import DateTime from './Atoms/DateTime';
+import FadedScroll from './Atoms/FadedScroll';
 import Flag from './Atoms/Flag';
 import Flexbox from './Atoms/Flexbox';
 import FormLabel from './Atoms/FormLabel';
@@ -66,6 +67,7 @@ export {
   CssGrid,
   DateTime,
   Development,
+  FadedScroll,
   FeedbackBanner,
   Fieldset,
   Flag,

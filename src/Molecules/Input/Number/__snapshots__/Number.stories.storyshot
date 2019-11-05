@@ -166,6 +166,38 @@ exports[`Storyshots Molecules | Input / Number Default Story 1`] = `
   z-index: 3;
 }
 
+.c7::-moz-placeholder,
+.c7:-ms-input-placeholder,
+.c7::-webkit-input-placeholder {
+  height: inherit;
+  line-height: inherit;
+  color: #6E6E69;
+}
+
+.c7::-moz-placeholder,
+.c7:-ms-input-placeholder,
+.c7::-moz-placeholder {
+  height: inherit;
+  line-height: inherit;
+  color: #6E6E69;
+}
+
+.c7::-moz-placeholder,
+.c7:-ms-input-placeholder,
+.c7:-ms-input-placeholder {
+  height: inherit;
+  line-height: inherit;
+  color: #6E6E69;
+}
+
+.c7::-moz-placeholder,
+.c7:-ms-input-placeholder,
+.c7::placeholder {
+  height: inherit;
+  line-height: inherit;
+  color: #6E6E69;
+}
+
 <div
   className="c0"
 >
@@ -219,7 +251,7 @@ exports[`Storyshots Molecules | Input / Number Default Story 1`] = `
           preserveAspectRatio="xMidYMid meet"
           role="presentation"
           size={3}
-          viewBox="0 0 24 24"
+          viewBox="0 0 12 2"
         >
           <path
             d="M12.166 0v2h-12V0z"
@@ -245,7 +277,7 @@ exports[`Storyshots Molecules | Input / Number Default Story 1`] = `
           preserveAspectRatio="xMidYMid meet"
           role="presentation"
           size={3}
-          viewBox="0 0 24 24"
+          viewBox="0 0 12 12"
         >
           <path
             d="M7.166 0v5h5v2h-5v5h-2V6.999L.166 7V5l5-.001V0h2z"
@@ -414,6 +446,38 @@ exports[`Storyshots Molecules | Input / Number Disabled Story 1`] = `
   z-index: 3;
 }
 
+.c7::-moz-placeholder,
+.c7:-ms-input-placeholder,
+.c7::-webkit-input-placeholder {
+  height: inherit;
+  line-height: inherit;
+  color: #6E6E69;
+}
+
+.c7::-moz-placeholder,
+.c7:-ms-input-placeholder,
+.c7::-moz-placeholder {
+  height: inherit;
+  line-height: inherit;
+  color: #6E6E69;
+}
+
+.c7::-moz-placeholder,
+.c7:-ms-input-placeholder,
+.c7:-ms-input-placeholder {
+  height: inherit;
+  line-height: inherit;
+  color: #6E6E69;
+}
+
+.c7::-moz-placeholder,
+.c7:-ms-input-placeholder,
+.c7::placeholder {
+  height: inherit;
+  line-height: inherit;
+  color: #6E6E69;
+}
+
 <div
   className="c0"
 >
@@ -469,7 +533,7 @@ exports[`Storyshots Molecules | Input / Number Disabled Story 1`] = `
           preserveAspectRatio="xMidYMid meet"
           role="presentation"
           size={3}
-          viewBox="0 0 24 24"
+          viewBox="0 0 12 2"
         >
           <path
             d="M12.166 0v2h-12V0z"
@@ -496,7 +560,7 @@ exports[`Storyshots Molecules | Input / Number Disabled Story 1`] = `
           preserveAspectRatio="xMidYMid meet"
           role="presentation"
           size={3}
-          viewBox="0 0 24 24"
+          viewBox="0 0 12 12"
         >
           <path
             d="M7.166 0v5h5v2h-5v5h-2V6.999L.166 7V5l5-.001V0h2z"
@@ -705,6 +769,38 @@ Array [
   z-index: 3;
 }
 
+.c10::-moz-placeholder,
+.c10:-ms-input-placeholder,
+.c10::-webkit-input-placeholder {
+  height: inherit;
+  line-height: inherit;
+  color: #6E6E69;
+}
+
+.c10::-moz-placeholder,
+.c10:-ms-input-placeholder,
+.c10::-moz-placeholder {
+  height: inherit;
+  line-height: inherit;
+  color: #6E6E69;
+}
+
+.c10::-moz-placeholder,
+.c10:-ms-input-placeholder,
+.c10:-ms-input-placeholder {
+  height: inherit;
+  line-height: inherit;
+  color: #6E6E69;
+}
+
+.c10::-moz-placeholder,
+.c10:-ms-input-placeholder,
+.c10::placeholder {
+  height: inherit;
+  line-height: inherit;
+  color: #6E6E69;
+}
+
 .c0 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -830,7 +926,7 @@ Array [
                   preserveAspectRatio="xMidYMid meet"
                   role="presentation"
                   size={3}
-                  viewBox="0 0 24 24"
+                  viewBox="0 0 12 2"
                 >
                   <path
                     d="M12.166 0v2h-12V0z"
@@ -856,7 +952,7 @@ Array [
                   preserveAspectRatio="xMidYMid meet"
                   role="presentation"
                   size={3}
-                  viewBox="0 0 24 24"
+                  viewBox="0 0 12 12"
                 >
                   <path
                     d="M7.166 0v5h5v2h-5v5h-2V6.999L.166 7V5l5-.001V0h2z"
@@ -933,7 +1029,7 @@ Array [
                   preserveAspectRatio="xMidYMid meet"
                   role="presentation"
                   size={3}
-                  viewBox="0 0 24 24"
+                  viewBox="0 0 12 2"
                 >
                   <path
                     d="M12.166 0v2h-12V0z"
@@ -959,7 +1055,7 @@ Array [
                   preserveAspectRatio="xMidYMid meet"
                   role="presentation"
                   size={3}
-                  viewBox="0 0 24 24"
+                  viewBox="0 0 12 12"
                 >
                   <path
                     d="M7.166 0v5h5v2h-5v5h-2V6.999L.166 7V5l5-.001V0h2z"
@@ -1149,6 +1245,38 @@ exports[`Storyshots Molecules | Input / Number With A Smaller Step 1`] = `
   z-index: 3;
 }
 
+.c7::-moz-placeholder,
+.c7:-ms-input-placeholder,
+.c7::-webkit-input-placeholder {
+  height: inherit;
+  line-height: inherit;
+  color: #6E6E69;
+}
+
+.c7::-moz-placeholder,
+.c7:-ms-input-placeholder,
+.c7::-moz-placeholder {
+  height: inherit;
+  line-height: inherit;
+  color: #6E6E69;
+}
+
+.c7::-moz-placeholder,
+.c7:-ms-input-placeholder,
+.c7:-ms-input-placeholder {
+  height: inherit;
+  line-height: inherit;
+  color: #6E6E69;
+}
+
+.c7::-moz-placeholder,
+.c7:-ms-input-placeholder,
+.c7::placeholder {
+  height: inherit;
+  line-height: inherit;
+  color: #6E6E69;
+}
+
 <div
   className="c0"
 >
@@ -1202,7 +1330,7 @@ exports[`Storyshots Molecules | Input / Number With A Smaller Step 1`] = `
           preserveAspectRatio="xMidYMid meet"
           role="presentation"
           size={3}
-          viewBox="0 0 24 24"
+          viewBox="0 0 12 2"
         >
           <path
             d="M12.166 0v2h-12V0z"
@@ -1228,7 +1356,7 @@ exports[`Storyshots Molecules | Input / Number With A Smaller Step 1`] = `
           preserveAspectRatio="xMidYMid meet"
           role="presentation"
           size={3}
-          viewBox="0 0 24 24"
+          viewBox="0 0 12 12"
         >
           <path
             d="M7.166 0v5h5v2h-5v5h-2V6.999L.166 7V5l5-.001V0h2z"
@@ -1407,6 +1535,38 @@ exports[`Storyshots Molecules | Input / Number With All Actions 1`] = `
   z-index: 3;
 }
 
+.c7::-moz-placeholder,
+.c7:-ms-input-placeholder,
+.c7::-webkit-input-placeholder {
+  height: inherit;
+  line-height: inherit;
+  color: #6E6E69;
+}
+
+.c7::-moz-placeholder,
+.c7:-ms-input-placeholder,
+.c7::-moz-placeholder {
+  height: inherit;
+  line-height: inherit;
+  color: #6E6E69;
+}
+
+.c7::-moz-placeholder,
+.c7:-ms-input-placeholder,
+.c7:-ms-input-placeholder {
+  height: inherit;
+  line-height: inherit;
+  color: #6E6E69;
+}
+
+.c7::-moz-placeholder,
+.c7:-ms-input-placeholder,
+.c7::placeholder {
+  height: inherit;
+  line-height: inherit;
+  color: #6E6E69;
+}
+
 <div
   className="c0"
 >
@@ -1465,7 +1625,7 @@ exports[`Storyshots Molecules | Input / Number With All Actions 1`] = `
           preserveAspectRatio="xMidYMid meet"
           role="presentation"
           size={3}
-          viewBox="0 0 24 24"
+          viewBox="0 0 12 2"
         >
           <path
             d="M12.166 0v2h-12V0z"
@@ -1491,7 +1651,7 @@ exports[`Storyshots Molecules | Input / Number With All Actions 1`] = `
           preserveAspectRatio="xMidYMid meet"
           role="presentation"
           size={3}
-          viewBox="0 0 24 24"
+          viewBox="0 0 12 12"
         >
           <path
             d="M7.166 0v5h5v2h-5v5h-2V6.999L.166 7V5l5-.001V0h2z"
@@ -1670,6 +1830,38 @@ exports[`Storyshots Molecules | Input / Number With Auto Focus 1`] = `
   z-index: 3;
 }
 
+.c7::-moz-placeholder,
+.c7:-ms-input-placeholder,
+.c7::-webkit-input-placeholder {
+  height: inherit;
+  line-height: inherit;
+  color: #6E6E69;
+}
+
+.c7::-moz-placeholder,
+.c7:-ms-input-placeholder,
+.c7::-moz-placeholder {
+  height: inherit;
+  line-height: inherit;
+  color: #6E6E69;
+}
+
+.c7::-moz-placeholder,
+.c7:-ms-input-placeholder,
+.c7:-ms-input-placeholder {
+  height: inherit;
+  line-height: inherit;
+  color: #6E6E69;
+}
+
+.c7::-moz-placeholder,
+.c7:-ms-input-placeholder,
+.c7::placeholder {
+  height: inherit;
+  line-height: inherit;
+  color: #6E6E69;
+}
+
 <div
   className="c0"
 >
@@ -1724,7 +1916,7 @@ exports[`Storyshots Molecules | Input / Number With Auto Focus 1`] = `
           preserveAspectRatio="xMidYMid meet"
           role="presentation"
           size={3}
-          viewBox="0 0 24 24"
+          viewBox="0 0 12 2"
         >
           <path
             d="M12.166 0v2h-12V0z"
@@ -1750,7 +1942,7 @@ exports[`Storyshots Molecules | Input / Number With Auto Focus 1`] = `
           preserveAspectRatio="xMidYMid meet"
           role="presentation"
           size={3}
-          viewBox="0 0 24 24"
+          viewBox="0 0 12 12"
         >
           <path
             d="M7.166 0v5h5v2h-5v5h-2V6.999L.166 7V5l5-.001V0h2z"
@@ -1900,6 +2092,38 @@ exports[`Storyshots Molecules | Input / Number With Both Addons 1`] = `
 .c7:focus {
   border-color: #0046FF;
   z-index: 3;
+}
+
+.c7::-moz-placeholder,
+.c7:-ms-input-placeholder,
+.c7::-webkit-input-placeholder {
+  height: inherit;
+  line-height: inherit;
+  color: #6E6E69;
+}
+
+.c7::-moz-placeholder,
+.c7:-ms-input-placeholder,
+.c7::-moz-placeholder {
+  height: inherit;
+  line-height: inherit;
+  color: #6E6E69;
+}
+
+.c7::-moz-placeholder,
+.c7:-ms-input-placeholder,
+.c7:-ms-input-placeholder {
+  height: inherit;
+  line-height: inherit;
+  color: #6E6E69;
+}
+
+.c7::-moz-placeholder,
+.c7:-ms-input-placeholder,
+.c7::placeholder {
+  height: inherit;
+  line-height: inherit;
+  color: #6E6E69;
 }
 
 <div
@@ -2133,6 +2357,38 @@ exports[`Storyshots Molecules | Input / Number With Default Value Uncontrolled B
   z-index: 3;
 }
 
+.c7::-moz-placeholder,
+.c7:-ms-input-placeholder,
+.c7::-webkit-input-placeholder {
+  height: inherit;
+  line-height: inherit;
+  color: #6E6E69;
+}
+
+.c7::-moz-placeholder,
+.c7:-ms-input-placeholder,
+.c7::-moz-placeholder {
+  height: inherit;
+  line-height: inherit;
+  color: #6E6E69;
+}
+
+.c7::-moz-placeholder,
+.c7:-ms-input-placeholder,
+.c7:-ms-input-placeholder {
+  height: inherit;
+  line-height: inherit;
+  color: #6E6E69;
+}
+
+.c7::-moz-placeholder,
+.c7:-ms-input-placeholder,
+.c7::placeholder {
+  height: inherit;
+  line-height: inherit;
+  color: #6E6E69;
+}
+
 <div
   className="c0"
 >
@@ -2186,7 +2442,7 @@ exports[`Storyshots Molecules | Input / Number With Default Value Uncontrolled B
           preserveAspectRatio="xMidYMid meet"
           role="presentation"
           size={3}
-          viewBox="0 0 24 24"
+          viewBox="0 0 12 2"
         >
           <path
             d="M12.166 0v2h-12V0z"
@@ -2212,7 +2468,7 @@ exports[`Storyshots Molecules | Input / Number With Default Value Uncontrolled B
           preserveAspectRatio="xMidYMid meet"
           role="presentation"
           size={3}
-          viewBox="0 0 24 24"
+          viewBox="0 0 12 12"
         >
           <path
             d="M7.166 0v5h5v2h-5v5h-2V6.999L.166 7V5l5-.001V0h2z"
@@ -2400,6 +2656,38 @@ exports[`Storyshots Molecules | Input / Number With Error If Value Is Less Than 
   z-index: 3;
 }
 
+.c7::-moz-placeholder,
+.c7:-ms-input-placeholder,
+.c7::-webkit-input-placeholder {
+  height: inherit;
+  line-height: inherit;
+  color: #6E6E69;
+}
+
+.c7::-moz-placeholder,
+.c7:-ms-input-placeholder,
+.c7::-moz-placeholder {
+  height: inherit;
+  line-height: inherit;
+  color: #6E6E69;
+}
+
+.c7::-moz-placeholder,
+.c7:-ms-input-placeholder,
+.c7:-ms-input-placeholder {
+  height: inherit;
+  line-height: inherit;
+  color: #6E6E69;
+}
+
+.c7::-moz-placeholder,
+.c7:-ms-input-placeholder,
+.c7::placeholder {
+  height: inherit;
+  line-height: inherit;
+  color: #6E6E69;
+}
+
 <div
   className="c0"
 >
@@ -2454,7 +2742,7 @@ exports[`Storyshots Molecules | Input / Number With Error If Value Is Less Than 
           preserveAspectRatio="xMidYMid meet"
           role="presentation"
           size={3}
-          viewBox="0 0 24 24"
+          viewBox="0 0 12 2"
         >
           <path
             d="M12.166 0v2h-12V0z"
@@ -2480,7 +2768,7 @@ exports[`Storyshots Molecules | Input / Number With Error If Value Is Less Than 
           preserveAspectRatio="xMidYMid meet"
           role="presentation"
           size={3}
-          viewBox="0 0 24 24"
+          viewBox="0 0 12 12"
         >
           <path
             d="M7.166 0v5h5v2h-5v5h-2V6.999L.166 7V5l5-.001V0h2z"
@@ -2680,6 +2968,38 @@ exports[`Storyshots Molecules | Input / Number With Extra Info And Error 1`] = `
   z-index: 3;
 }
 
+.c7::-moz-placeholder,
+.c7:-ms-input-placeholder,
+.c7::-webkit-input-placeholder {
+  height: inherit;
+  line-height: inherit;
+  color: #6E6E69;
+}
+
+.c7::-moz-placeholder,
+.c7:-ms-input-placeholder,
+.c7::-moz-placeholder {
+  height: inherit;
+  line-height: inherit;
+  color: #6E6E69;
+}
+
+.c7::-moz-placeholder,
+.c7:-ms-input-placeholder,
+.c7:-ms-input-placeholder {
+  height: inherit;
+  line-height: inherit;
+  color: #6E6E69;
+}
+
+.c7::-moz-placeholder,
+.c7:-ms-input-placeholder,
+.c7::placeholder {
+  height: inherit;
+  line-height: inherit;
+  color: #6E6E69;
+}
+
 <div
   className="c0"
 >
@@ -2734,7 +3054,7 @@ exports[`Storyshots Molecules | Input / Number With Extra Info And Error 1`] = `
           preserveAspectRatio="xMidYMid meet"
           role="presentation"
           size={3}
-          viewBox="0 0 24 24"
+          viewBox="0 0 12 2"
         >
           <path
             d="M12.166 0v2h-12V0z"
@@ -2760,7 +3080,7 @@ exports[`Storyshots Molecules | Input / Number With Extra Info And Error 1`] = `
           preserveAspectRatio="xMidYMid meet"
           role="presentation"
           size={3}
-          viewBox="0 0 24 24"
+          viewBox="0 0 12 12"
         >
           <path
             d="M7.166 0v5h5v2h-5v5h-2V6.999L.166 7V5l5-.001V0h2z"
@@ -2960,6 +3280,38 @@ exports[`Storyshots Molecules | Input / Number With Extra Info Below 1`] = `
   z-index: 3;
 }
 
+.c7::-moz-placeholder,
+.c7:-ms-input-placeholder,
+.c7::-webkit-input-placeholder {
+  height: inherit;
+  line-height: inherit;
+  color: #6E6E69;
+}
+
+.c7::-moz-placeholder,
+.c7:-ms-input-placeholder,
+.c7::-moz-placeholder {
+  height: inherit;
+  line-height: inherit;
+  color: #6E6E69;
+}
+
+.c7::-moz-placeholder,
+.c7:-ms-input-placeholder,
+.c7:-ms-input-placeholder {
+  height: inherit;
+  line-height: inherit;
+  color: #6E6E69;
+}
+
+.c7::-moz-placeholder,
+.c7:-ms-input-placeholder,
+.c7::placeholder {
+  height: inherit;
+  line-height: inherit;
+  color: #6E6E69;
+}
+
 <div
   className="c0"
 >
@@ -3013,7 +3365,7 @@ exports[`Storyshots Molecules | Input / Number With Extra Info Below 1`] = `
           preserveAspectRatio="xMidYMid meet"
           role="presentation"
           size={3}
-          viewBox="0 0 24 24"
+          viewBox="0 0 12 2"
         >
           <path
             d="M12.166 0v2h-12V0z"
@@ -3039,7 +3391,7 @@ exports[`Storyshots Molecules | Input / Number With Extra Info Below 1`] = `
           preserveAspectRatio="xMidYMid meet"
           role="presentation"
           size={3}
-          viewBox="0 0 24 24"
+          viewBox="0 0 12 12"
         >
           <path
             d="M7.166 0v5h5v2h-5v5h-2V6.999L.166 7V5l5-.001V0h2z"
@@ -3231,6 +3583,38 @@ exports[`Storyshots Molecules | Input / Number With Hidden Label 1`] = `
   z-index: 3;
 }
 
+.c7::-moz-placeholder,
+.c7:-ms-input-placeholder,
+.c7::-webkit-input-placeholder {
+  height: inherit;
+  line-height: inherit;
+  color: #6E6E69;
+}
+
+.c7::-moz-placeholder,
+.c7:-ms-input-placeholder,
+.c7::-moz-placeholder {
+  height: inherit;
+  line-height: inherit;
+  color: #6E6E69;
+}
+
+.c7::-moz-placeholder,
+.c7:-ms-input-placeholder,
+.c7:-ms-input-placeholder {
+  height: inherit;
+  line-height: inherit;
+  color: #6E6E69;
+}
+
+.c7::-moz-placeholder,
+.c7:-ms-input-placeholder,
+.c7::placeholder {
+  height: inherit;
+  line-height: inherit;
+  color: #6E6E69;
+}
+
 <div
   className="c0"
 >
@@ -3284,7 +3668,7 @@ exports[`Storyshots Molecules | Input / Number With Hidden Label 1`] = `
           preserveAspectRatio="xMidYMid meet"
           role="presentation"
           size={3}
-          viewBox="0 0 24 24"
+          viewBox="0 0 12 2"
         >
           <path
             d="M12.166 0v2h-12V0z"
@@ -3310,7 +3694,7 @@ exports[`Storyshots Molecules | Input / Number With Hidden Label 1`] = `
           preserveAspectRatio="xMidYMid meet"
           role="presentation"
           size={3}
-          viewBox="0 0 24 24"
+          viewBox="0 0 12 12"
         >
           <path
             d="M7.166 0v5h5v2h-5v5h-2V6.999L.166 7V5l5-.001V0h2z"
@@ -3511,6 +3895,38 @@ exports[`Storyshots Molecules | Input / Number With Label Addon 1`] = `
   z-index: 3;
 }
 
+.c10::-moz-placeholder,
+.c10:-ms-input-placeholder,
+.c10::-webkit-input-placeholder {
+  height: inherit;
+  line-height: inherit;
+  color: #6E6E69;
+}
+
+.c10::-moz-placeholder,
+.c10:-ms-input-placeholder,
+.c10::-moz-placeholder {
+  height: inherit;
+  line-height: inherit;
+  color: #6E6E69;
+}
+
+.c10::-moz-placeholder,
+.c10:-ms-input-placeholder,
+.c10:-ms-input-placeholder {
+  height: inherit;
+  line-height: inherit;
+  color: #6E6E69;
+}
+
+.c10::-moz-placeholder,
+.c10:-ms-input-placeholder,
+.c10::placeholder {
+  height: inherit;
+  line-height: inherit;
+  color: #6E6E69;
+}
+
 <div
   className="c0"
 >
@@ -3597,7 +4013,7 @@ exports[`Storyshots Molecules | Input / Number With Label Addon 1`] = `
           preserveAspectRatio="xMidYMid meet"
           role="presentation"
           size={3}
-          viewBox="0 0 24 24"
+          viewBox="0 0 12 2"
         >
           <path
             d="M12.166 0v2h-12V0z"
@@ -3623,7 +4039,7 @@ exports[`Storyshots Molecules | Input / Number With Label Addon 1`] = `
           preserveAspectRatio="xMidYMid meet"
           role="presentation"
           size={3}
-          viewBox="0 0 24 24"
+          viewBox="0 0 12 12"
         >
           <path
             d="M7.166 0v5h5v2h-5v5h-2V6.999L.166 7V5l5-.001V0h2z"
@@ -3765,6 +4181,38 @@ exports[`Storyshots Molecules | Input / Number With Left Addon 1`] = `
 .c7:focus {
   border-color: #0046FF;
   z-index: 3;
+}
+
+.c7::-moz-placeholder,
+.c7:-ms-input-placeholder,
+.c7::-webkit-input-placeholder {
+  height: inherit;
+  line-height: inherit;
+  color: #6E6E69;
+}
+
+.c7::-moz-placeholder,
+.c7:-ms-input-placeholder,
+.c7::-moz-placeholder {
+  height: inherit;
+  line-height: inherit;
+  color: #6E6E69;
+}
+
+.c7::-moz-placeholder,
+.c7:-ms-input-placeholder,
+.c7:-ms-input-placeholder {
+  height: inherit;
+  line-height: inherit;
+  color: #6E6E69;
+}
+
+.c7::-moz-placeholder,
+.c7:-ms-input-placeholder,
+.c7::placeholder {
+  height: inherit;
+  line-height: inherit;
+  color: #6E6E69;
 }
 
 <div
@@ -3992,6 +4440,38 @@ exports[`Storyshots Molecules | Input / Number With Max And Min 1`] = `
   z-index: 3;
 }
 
+.c7::-moz-placeholder,
+.c7:-ms-input-placeholder,
+.c7::-webkit-input-placeholder {
+  height: inherit;
+  line-height: inherit;
+  color: #6E6E69;
+}
+
+.c7::-moz-placeholder,
+.c7:-ms-input-placeholder,
+.c7::-moz-placeholder {
+  height: inherit;
+  line-height: inherit;
+  color: #6E6E69;
+}
+
+.c7::-moz-placeholder,
+.c7:-ms-input-placeholder,
+.c7:-ms-input-placeholder {
+  height: inherit;
+  line-height: inherit;
+  color: #6E6E69;
+}
+
+.c7::-moz-placeholder,
+.c7:-ms-input-placeholder,
+.c7::placeholder {
+  height: inherit;
+  line-height: inherit;
+  color: #6E6E69;
+}
+
 <div
   className="c0"
 >
@@ -4046,7 +4526,7 @@ exports[`Storyshots Molecules | Input / Number With Max And Min 1`] = `
           preserveAspectRatio="xMidYMid meet"
           role="presentation"
           size={3}
-          viewBox="0 0 24 24"
+          viewBox="0 0 12 2"
         >
           <path
             d="M12.166 0v2h-12V0z"
@@ -4072,7 +4552,7 @@ exports[`Storyshots Molecules | Input / Number With Max And Min 1`] = `
           preserveAspectRatio="xMidYMid meet"
           role="presentation"
           size={3}
-          viewBox="0 0 24 24"
+          viewBox="0 0 12 12"
         >
           <path
             d="M7.166 0v5h5v2h-5v5h-2V6.999L.166 7V5l5-.001V0h2z"
@@ -4177,6 +4657,38 @@ exports[`Storyshots Molecules | Input / Number With No Steppers 1`] = `
   z-index: 3;
 }
 
+.c7::-moz-placeholder,
+.c7:-ms-input-placeholder,
+.c7::-webkit-input-placeholder {
+  height: inherit;
+  line-height: inherit;
+  color: #6E6E69;
+}
+
+.c7::-moz-placeholder,
+.c7:-ms-input-placeholder,
+.c7::-moz-placeholder {
+  height: inherit;
+  line-height: inherit;
+  color: #6E6E69;
+}
+
+.c7::-moz-placeholder,
+.c7:-ms-input-placeholder,
+.c7:-ms-input-placeholder {
+  height: inherit;
+  line-height: inherit;
+  color: #6E6E69;
+}
+
+.c7::-moz-placeholder,
+.c7:-ms-input-placeholder,
+.c7::placeholder {
+  height: inherit;
+  line-height: inherit;
+  color: #6E6E69;
+}
+
 <div
   className="c0"
 >
@@ -4215,6 +4727,817 @@ exports[`Storyshots Molecules | Input / Number With No Steppers 1`] = `
     </div>
   </span>
 </div>
+`;
+
+exports[`Storyshots Molecules | Input / Number With Placeholder 1`] = `
+Array [
+  .c0 {
+  margin-bottom: 16px;
+}
+
+.c1 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 800;
+  font-size: 24px;
+  line-height: 1.1666666666666667;
+}
+
+@media (min-width:760px) {
+  .c1 {
+    font-size: 28px;
+    line-height: 1.1428571428571428;
+  }
+}
+
+<div
+    className="c0"
+  >
+    <span
+      className="c1"
+    >
+      Placeholders
+    </span>
+  </div>,
+  .c13 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c4 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c9 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+}
+
+.c19 {
+  position: absolute;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  -webkit-clip: rect(1px,1px,1px,1px);
+  clip: rect(1px,1px,1px,1px);
+}
+
+.c5 {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.c16 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 16px;
+  height: 16px;
+  fill: #282823;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
+}
+
+.c20 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 12px;
+  height: 12px;
+  fill: #282823;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
+}
+
+.c6 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #6E6E69;
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c7 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c3 {
+  width: 200px;
+  display: inline-block;
+}
+
+.c8 {
+  position: relative;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.03);
+}
+
+.c15 {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  z-index: 3;
+  left: 8px;
+}
+
+.c12 {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  z-index: 3;
+  right: 8px;
+}
+
+.c18 {
+  width: 40px;
+  height: 40px;
+  background-color: #FFFFFF;
+  outline: none;
+  border: 1px solid #BCBCB6;
+  position: relative;
+  padding: 0;
+  cursor: pointer;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-flex: 1 0 auto;
+  -ms-flex: 1 0 auto;
+  flex: 1 0 auto;
+}
+
+.c18:hover {
+  border-color: #4B4B46;
+  z-index: 2;
+}
+
+.c18:focus {
+  border-color: #0046FF;
+  z-index: 3;
+}
+
+.c18:first-of-type {
+  -webkit-order: -1;
+  -ms-flex-order: -1;
+  order: -1;
+}
+
+.c18:active:enabled {
+  background-color: #0046FF;
+}
+
+.c18:active:enabled svg {
+  fill: #FFFFFF;
+}
+
+.c17 {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  overflow: visible;
+  background-color: #FFFFFF;
+  outline: none;
+  border: 1px solid #BCBCB6;
+  position: relative;
+  height: 40px;
+  width: 100%;
+  text-align: center;
+  box-sizing: border-box;
+  padding: 8px;
+  margin: 0 -1px;
+  z-index: 1;
+}
+
+.c17:hover {
+  border-color: #4B4B46;
+  z-index: 2;
+}
+
+.c17:focus {
+  border-color: #0046FF;
+  z-index: 3;
+}
+
+.c17::-moz-placeholder,
+.c17:-ms-input-placeholder,
+.c17::-webkit-input-placeholder {
+  height: inherit;
+  line-height: inherit;
+  color: #6E6E69;
+}
+
+.c17::-moz-placeholder,
+.c17:-ms-input-placeholder,
+.c17::-moz-placeholder {
+  height: inherit;
+  line-height: inherit;
+  color: #6E6E69;
+}
+
+.c17::-moz-placeholder,
+.c17:-ms-input-placeholder,
+.c17:-ms-input-placeholder {
+  height: inherit;
+  line-height: inherit;
+  color: #6E6E69;
+}
+
+.c17::-moz-placeholder,
+.c17:-ms-input-placeholder,
+.c17::placeholder {
+  height: inherit;
+  line-height: inherit;
+  color: #6E6E69;
+}
+
+.c10 {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  overflow: visible;
+  background-color: #FFFFFF;
+  outline: none;
+  border: 1px solid #BCBCB6;
+  position: relative;
+  height: 40px;
+  width: 100%;
+  text-align: left;
+  box-sizing: border-box;
+  padding: 8px;
+  margin: 0 -1px;
+  z-index: 1;
+}
+
+.c10:hover {
+  border-color: #4B4B46;
+  z-index: 2;
+}
+
+.c10:focus {
+  border-color: #0046FF;
+  z-index: 3;
+}
+
+.c10::-moz-placeholder,
+.c10:-ms-input-placeholder,
+.c10::-webkit-input-placeholder {
+  height: inherit;
+  line-height: inherit;
+  color: #6E6E69;
+}
+
+.c10::-moz-placeholder,
+.c10:-ms-input-placeholder,
+.c10::-moz-placeholder {
+  height: inherit;
+  line-height: inherit;
+  color: #6E6E69;
+}
+
+.c10::-moz-placeholder,
+.c10:-ms-input-placeholder,
+.c10:-ms-input-placeholder {
+  height: inherit;
+  line-height: inherit;
+  color: #6E6E69;
+}
+
+.c10::-moz-placeholder,
+.c10:-ms-input-placeholder,
+.c10::placeholder {
+  height: inherit;
+  line-height: inherit;
+  color: #6E6E69;
+}
+
+.c14 {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  overflow: visible;
+  background-color: #FFFFFF;
+  outline: none;
+  border: 1px solid #BCBCB6;
+  position: relative;
+  height: 40px;
+  width: 100%;
+  text-align: left;
+  box-sizing: border-box;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 32px;
+  padding-right: 8px;
+}
+
+.c14:hover {
+  border-color: #4B4B46;
+  z-index: 2;
+}
+
+.c14:focus {
+  border-color: #0046FF;
+  z-index: 3;
+}
+
+.c14::-moz-placeholder,
+.c14:-ms-input-placeholder,
+.c14::-webkit-input-placeholder {
+  height: inherit;
+  line-height: inherit;
+  color: #6E6E69;
+}
+
+.c14::-moz-placeholder,
+.c14:-ms-input-placeholder,
+.c14::-moz-placeholder {
+  height: inherit;
+  line-height: inherit;
+  color: #6E6E69;
+}
+
+.c14::-moz-placeholder,
+.c14:-ms-input-placeholder,
+.c14:-ms-input-placeholder {
+  height: inherit;
+  line-height: inherit;
+  color: #6E6E69;
+}
+
+.c14::-moz-placeholder,
+.c14:-ms-input-placeholder,
+.c14::placeholder {
+  height: inherit;
+  line-height: inherit;
+  color: #6E6E69;
+}
+
+.c11 {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  overflow: visible;
+  background-color: #FFFFFF;
+  outline: none;
+  border: 1px solid #BCBCB6;
+  position: relative;
+  height: 40px;
+  width: 100%;
+  text-align: left;
+  box-sizing: border-box;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 8px;
+  padding-right: 40px;
+}
+
+.c11:hover {
+  border-color: #4B4B46;
+  z-index: 2;
+}
+
+.c11:focus {
+  border-color: #0046FF;
+  z-index: 3;
+}
+
+.c11::-moz-placeholder,
+.c11:-ms-input-placeholder,
+.c11::-webkit-input-placeholder {
+  height: inherit;
+  line-height: inherit;
+  color: #6E6E69;
+}
+
+.c11::-moz-placeholder,
+.c11:-ms-input-placeholder,
+.c11::-moz-placeholder {
+  height: inherit;
+  line-height: inherit;
+  color: #6E6E69;
+}
+
+.c11::-moz-placeholder,
+.c11:-ms-input-placeholder,
+.c11:-ms-input-placeholder {
+  height: inherit;
+  line-height: inherit;
+  color: #6E6E69;
+}
+
+.c11::-moz-placeholder,
+.c11:-ms-input-placeholder,
+.c11::placeholder {
+  height: inherit;
+  line-height: inherit;
+  color: #6E6E69;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  border: 0px;
+}
+
+.c0 > * {
+  padding: 0px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  border: 1px solid #eee;
+}
+
+.c1 > * {
+  padding: 20px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.c2 {
+  border-right: 1px solid #eee;
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+}
+
+<div
+    className="c0"
+    direction="column"
+  >
+    <div
+      className="c1"
+      direction="row"
+    >
+      <div
+        className="c2"
+      >
+        Default
+      </div>
+      <div>
+        <div
+          className="c3"
+        >
+          <div
+            className="c4"
+          >
+            <label
+              className="c5"
+              hidden={false}
+              htmlFor="insert-unique-id"
+            >
+              <span
+                className="c6"
+              >
+                Label 
+              </span>
+            </label>
+          </div>
+          <span
+            className="c7"
+          >
+            <div
+              className="c8 c9"
+            >
+              <input
+                className="c10"
+                id="insert-unique-id"
+                inputMode="decimal"
+                min={0}
+                onChange={[Function]}
+                onKeyDown={[Function]}
+                placeholder="A placeholder"
+                step={1}
+                type="text"
+                value=""
+              />
+            </div>
+          </span>
+        </div>
+      </div>
+    </div>
+    <div
+      className="c1"
+      direction="row"
+    >
+      <div
+        className="c2"
+      >
+        With right addon
+      </div>
+      <div>
+        <div
+          className="c3"
+        >
+          <div
+            className="c4"
+          >
+            <label
+              className="c5"
+              hidden={false}
+              htmlFor="insert-unique-id"
+            >
+              <span
+                className="c6"
+              >
+                Label 
+              </span>
+            </label>
+          </div>
+          <span
+            className="c7"
+          >
+            <div
+              className="c8 c9"
+            >
+              <input
+                className="c11"
+                id="insert-unique-id"
+                inputMode="decimal"
+                min={0}
+                onChange={[Function]}
+                onKeyDown={[Function]}
+                placeholder="A placeholder"
+                step={1}
+                type="text"
+                value=""
+              />
+              <div
+                className="c12 c13"
+                position="right"
+              >
+                EUR
+              </div>
+            </div>
+          </span>
+        </div>
+      </div>
+    </div>
+    <div
+      className="c1"
+      direction="row"
+    >
+      <div
+        className="c2"
+      >
+        With left addon
+      </div>
+      <div>
+        <div
+          className="c3"
+        >
+          <div
+            className="c4"
+          >
+            <label
+              className="c5"
+              hidden={false}
+              htmlFor="insert-unique-id"
+            >
+              <span
+                className="c6"
+              >
+                Label 
+              </span>
+            </label>
+          </div>
+          <span
+            className="c7"
+          >
+            <div
+              className="c8 c9"
+            >
+              <input
+                className="c14"
+                id="insert-unique-id"
+                inputMode="decimal"
+                min={0}
+                onChange={[Function]}
+                onKeyDown={[Function]}
+                placeholder="A placeholder"
+                step={1}
+                type="text"
+                value=""
+              />
+              <div
+                className="c15 c13"
+                position="left"
+              >
+                <svg
+                  aria-hidden="true"
+                  className="c16"
+                  focusable="false"
+                  preserveAspectRatio="xMidYMid meet"
+                  role="presentation"
+                  size={4}
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M15 0L3 13.5h7.5L9 24l12-13.5h-7.5z"
+                    id="a"
+                  />
+                </svg>
+              </div>
+            </div>
+          </span>
+        </div>
+      </div>
+    </div>
+    <div
+      className="c1"
+      direction="row"
+    >
+      <div
+        className="c2"
+      >
+        With steppers (placeholder removed)
+      </div>
+      <div>
+        <div
+          className="c3"
+        >
+          <div
+            className="c4"
+          >
+            <label
+              className="c5"
+              hidden={false}
+              htmlFor="insert-unique-id"
+            >
+              <span
+                className="c6"
+              >
+                Label 
+              </span>
+            </label>
+          </div>
+          <span
+            className="c7"
+          >
+            <div
+              className="c8 c9"
+            >
+              <input
+                className="c17"
+                id="insert-unique-id"
+                inputMode="decimal"
+                min={0}
+                onChange={[Function]}
+                onKeyDown={[Function]}
+                step={1}
+                type="text"
+                value=""
+              />
+              <button
+                className="c18"
+                onClick={[Function]}
+                type="button"
+              >
+                <div
+                  className="c19"
+                >
+                  decrease number by 
+                  1
+                </div>
+                <svg
+                  aria-hidden="true"
+                  className="c20"
+                  focusable="false"
+                  preserveAspectRatio="xMidYMid meet"
+                  role="presentation"
+                  size={3}
+                  viewBox="0 0 12 2"
+                >
+                  <path
+                    d="M12.166 0v2h-12V0z"
+                    fillRule="evenodd"
+                  />
+                </svg>
+              </button>
+              <button
+                className="c18"
+                onClick={[Function]}
+                type="button"
+              >
+                <div
+                  className="c19"
+                >
+                  increase number by 
+                  1
+                </div>
+                <svg
+                  aria-hidden="true"
+                  className="c20"
+                  focusable="false"
+                  preserveAspectRatio="xMidYMid meet"
+                  role="presentation"
+                  size={3}
+                  viewBox="0 0 12 12"
+                >
+                  <path
+                    d="M7.166 0v5h5v2h-5v5h-2V6.999L.166 7V5l5-.001V0h2z"
+                    fillRule="evenodd"
+                  />
+                </svg>
+              </button>
+            </div>
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>,
+  .c0 {
+  margin-bottom: 32px;
+}
+
+<div
+    className="c0"
+  />,
+]
 `;
 
 exports[`Storyshots Molecules | Input / Number With Right Addon 1`] = `
@@ -4332,6 +5655,38 @@ exports[`Storyshots Molecules | Input / Number With Right Addon 1`] = `
 .c7:focus {
   border-color: #0046FF;
   z-index: 3;
+}
+
+.c7::-moz-placeholder,
+.c7:-ms-input-placeholder,
+.c7::-webkit-input-placeholder {
+  height: inherit;
+  line-height: inherit;
+  color: #6E6E69;
+}
+
+.c7::-moz-placeholder,
+.c7:-ms-input-placeholder,
+.c7::-moz-placeholder {
+  height: inherit;
+  line-height: inherit;
+  color: #6E6E69;
+}
+
+.c7::-moz-placeholder,
+.c7:-ms-input-placeholder,
+.c7:-ms-input-placeholder {
+  height: inherit;
+  line-height: inherit;
+  color: #6E6E69;
+}
+
+.c7::-moz-placeholder,
+.c7:-ms-input-placeholder,
+.c7::placeholder {
+  height: inherit;
+  line-height: inherit;
+  color: #6E6E69;
 }
 
 <div
@@ -4585,6 +5940,38 @@ Array [
   z-index: 3;
 }
 
+.c10::-moz-placeholder,
+.c10:-ms-input-placeholder,
+.c10::-webkit-input-placeholder {
+  height: inherit;
+  line-height: inherit;
+  color: #6E6E69;
+}
+
+.c10::-moz-placeholder,
+.c10:-ms-input-placeholder,
+.c10::-moz-placeholder {
+  height: inherit;
+  line-height: inherit;
+  color: #6E6E69;
+}
+
+.c10::-moz-placeholder,
+.c10:-ms-input-placeholder,
+.c10:-ms-input-placeholder {
+  height: inherit;
+  line-height: inherit;
+  color: #6E6E69;
+}
+
+.c10::-moz-placeholder,
+.c10:-ms-input-placeholder,
+.c10::placeholder {
+  height: inherit;
+  line-height: inherit;
+  color: #6E6E69;
+}
+
 .c14 {
   font-family: inherit;
   font-size: 100%;
@@ -4614,6 +6001,38 @@ Array [
   z-index: 3;
 }
 
+.c14::-moz-placeholder,
+.c14:-ms-input-placeholder,
+.c14::-webkit-input-placeholder {
+  height: inherit;
+  line-height: inherit;
+  color: #6E6E69;
+}
+
+.c14::-moz-placeholder,
+.c14:-ms-input-placeholder,
+.c14::-moz-placeholder {
+  height: inherit;
+  line-height: inherit;
+  color: #6E6E69;
+}
+
+.c14::-moz-placeholder,
+.c14:-ms-input-placeholder,
+.c14:-ms-input-placeholder {
+  height: inherit;
+  line-height: inherit;
+  color: #6E6E69;
+}
+
+.c14::-moz-placeholder,
+.c14:-ms-input-placeholder,
+.c14::placeholder {
+  height: inherit;
+  line-height: inherit;
+  color: #6E6E69;
+}
+
 .c15 {
   font-family: inherit;
   font-size: 100%;
@@ -4641,6 +6060,38 @@ Array [
 .c15:focus {
   border-color: #0046FF;
   z-index: 3;
+}
+
+.c15::-moz-placeholder,
+.c15:-ms-input-placeholder,
+.c15::-webkit-input-placeholder {
+  height: inherit;
+  line-height: inherit;
+  color: #6E6E69;
+}
+
+.c15::-moz-placeholder,
+.c15:-ms-input-placeholder,
+.c15::-moz-placeholder {
+  height: inherit;
+  line-height: inherit;
+  color: #6E6E69;
+}
+
+.c15::-moz-placeholder,
+.c15:-ms-input-placeholder,
+.c15:-ms-input-placeholder {
+  height: inherit;
+  line-height: inherit;
+  color: #6E6E69;
+}
+
+.c15::-moz-placeholder,
+.c15:-ms-input-placeholder,
+.c15::placeholder {
+  height: inherit;
+  line-height: inherit;
+  color: #6E6E69;
 }
 
 .c0 {
@@ -4768,7 +6219,7 @@ Array [
                   preserveAspectRatio="xMidYMid meet"
                   role="presentation"
                   size={3}
-                  viewBox="0 0 24 24"
+                  viewBox="0 0 12 2"
                 >
                   <path
                     d="M12.166 0v2h-12V0z"
@@ -4795,7 +6246,7 @@ Array [
                   preserveAspectRatio="xMidYMid meet"
                   role="presentation"
                   size={3}
-                  viewBox="0 0 24 24"
+                  viewBox="0 0 12 12"
                 >
                   <path
                     d="M7.166 0v5h5v2h-5v5h-2V6.999L.166 7V5l5-.001V0h2z"
@@ -4923,7 +6374,7 @@ Array [
                   preserveAspectRatio="xMidYMid meet"
                   role="presentation"
                   size={3}
-                  viewBox="0 0 24 24"
+                  viewBox="0 0 12 2"
                 >
                   <path
                     d="M12.166 0v2h-12V0z"
@@ -4950,7 +6401,7 @@ Array [
                   preserveAspectRatio="xMidYMid meet"
                   role="presentation"
                   size={3}
-                  viewBox="0 0 24 24"
+                  viewBox="0 0 12 12"
                 >
                   <path
                     d="M7.166 0v5h5v2h-5v5h-2V6.999L.166 7V5l5-.001V0h2z"
@@ -5152,6 +6603,38 @@ exports[`Storyshots Molecules | Input / Number With Success 1`] = `
   z-index: 3;
 }
 
+.c7::-moz-placeholder,
+.c7:-ms-input-placeholder,
+.c7::-webkit-input-placeholder {
+  height: inherit;
+  line-height: inherit;
+  color: #6E6E69;
+}
+
+.c7::-moz-placeholder,
+.c7:-ms-input-placeholder,
+.c7::-moz-placeholder {
+  height: inherit;
+  line-height: inherit;
+  color: #6E6E69;
+}
+
+.c7::-moz-placeholder,
+.c7:-ms-input-placeholder,
+.c7:-ms-input-placeholder {
+  height: inherit;
+  line-height: inherit;
+  color: #6E6E69;
+}
+
+.c7::-moz-placeholder,
+.c7:-ms-input-placeholder,
+.c7::placeholder {
+  height: inherit;
+  line-height: inherit;
+  color: #6E6E69;
+}
+
 <div
   className="c0"
 >
@@ -5205,7 +6688,7 @@ exports[`Storyshots Molecules | Input / Number With Success 1`] = `
           preserveAspectRatio="xMidYMid meet"
           role="presentation"
           size={3}
-          viewBox="0 0 24 24"
+          viewBox="0 0 12 2"
         >
           <path
             d="M12.166 0v2h-12V0z"
@@ -5231,7 +6714,7 @@ exports[`Storyshots Molecules | Input / Number With Success 1`] = `
           preserveAspectRatio="xMidYMid meet"
           role="presentation"
           size={3}
-          viewBox="0 0 24 24"
+          viewBox="0 0 12 12"
         >
           <path
             d="M7.166 0v5h5v2h-5v5h-2V6.999L.166 7V5l5-.001V0h2z"
@@ -5411,6 +6894,38 @@ Array [
   z-index: 3;
 }
 
+.c7::-moz-placeholder,
+.c7:-ms-input-placeholder,
+.c7::-webkit-input-placeholder {
+  height: inherit;
+  line-height: inherit;
+  color: #6E6E69;
+}
+
+.c7::-moz-placeholder,
+.c7:-ms-input-placeholder,
+.c7::-moz-placeholder {
+  height: inherit;
+  line-height: inherit;
+  color: #6E6E69;
+}
+
+.c7::-moz-placeholder,
+.c7:-ms-input-placeholder,
+.c7:-ms-input-placeholder {
+  height: inherit;
+  line-height: inherit;
+  color: #6E6E69;
+}
+
+.c7::-moz-placeholder,
+.c7:-ms-input-placeholder,
+.c7::placeholder {
+  height: inherit;
+  line-height: inherit;
+  color: #6E6E69;
+}
+
 <div
     className="c0"
   >
@@ -5464,7 +6979,7 @@ Array [
             preserveAspectRatio="xMidYMid meet"
             role="presentation"
             size={3}
-            viewBox="0 0 24 24"
+            viewBox="0 0 12 2"
           >
             <path
               d="M12.166 0v2h-12V0z"
@@ -5490,7 +7005,7 @@ Array [
             preserveAspectRatio="xMidYMid meet"
             role="presentation"
             size={3}
-            viewBox="0 0 24 24"
+            viewBox="0 0 12 12"
           >
             <path
               d="M7.166 0v5h5v2h-5v5h-2V6.999L.166 7V5l5-.001V0h2z"
