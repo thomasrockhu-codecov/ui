@@ -111,6 +111,8 @@ export const createTheme = (config: ThemeConfig = {}): Theme => {
       background: rawColor.gray7,
       backgroundBlack: rawColor.black,
       backgroundDark: rawColor.gray0,
+      bubbleBackground: rawColor.white,
+      bubbleBorder: rawColor.gray4,
       buttonSecondaryBackground: rawColor.white,
       buttonText: rawColor.white,
       buy: a11yColors ? rawColor.a11yCta : rawColor.cta,

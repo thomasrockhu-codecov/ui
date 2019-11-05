@@ -73,6 +73,10 @@ export type Theme = {
     buttonText: RawColor['white'];
     /** cta */
     borderActive: RawColor['cta'] | RawColor['a11yCta'];
+    /** white */
+    bubbleBackground: RawColor['white'];
+    /** gray4 */
+    bubbleBorder: RawColor['gray4'];
     /** negative */
     sell: RawColor['negative'] | RawColor['a11yNegative'];
     /** cta */

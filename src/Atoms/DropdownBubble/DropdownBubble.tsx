@@ -33,22 +33,22 @@ const triangleCss = css`
     ${commonTriangleCss}
   top: -${TRIANGLE_SIZE}px;
     border-bottom: ${TRIANGLE_SIZE}px solid;
-    border-bottom-color: #bcbcb6;
+    border-bottom-color: ${p => p.theme.color.bubbleBorder};
   }
   &:after {
     ${leftAndRightCss}
     ${commonTriangleCss}
   top: -${TRIANGLE_SIZE - 1}px;
     border-bottom: ${TRIANGLE_SIZE}px solid;
-    border-bottom-color: #ffffff;
+    border-bottom-color: ${p => p.theme.color.bubbleBackground};
   }
 `;
 
 export const DropdownBubble = styled.div<Props>`
   position: relative;
   top: 10px;
-  border: 1px solid #bcbcb6;
-  background-color: #ffffff;
+  border: 1px solid ${p => p.theme.color.bubbleBorder};
+  background-color: ${p => p.theme.color.bubbleBackground};
   box-shadow: 0 2px 4px 0 rgba(40, 40, 35, 0.15);
   ${triangleCss}
 `;
