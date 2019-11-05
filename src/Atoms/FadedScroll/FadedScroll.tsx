@@ -100,7 +100,11 @@ export const FadedScroll: Component & {
 
   return (
     <Container className={className}>
-      <Fade fadeHeight={fadeHeight} intersectionOnScreen={intersectionOnScreen}>
+      <Fade
+        fadeHeight={fadeHeight}
+        enableMobileFade={enableMobileFade}
+        intersectionOnScreen={intersectionOnScreen}
+      >
         <Scroll enableMobileFade={enableMobileFade} maxHeight={maxHeight}>
           <Content ref={contentRef}>
             {children}

@@ -33,7 +33,10 @@ export const listWithDifferentArrowPositions = () => (
             <Option value={-1} label="Default?" />
             <Option value={0} label="First" selected />
             <Option value={2} label="Second" />
-            <Option value={3} label="Disabled" disabled />
+            {new Array(10).fill(null).map((_, i) => (
+              // eslint-disable-next-line react/no-array-index-key
+              <Option key={i} value={i + 3} label="Disabled" disabled />
+            ))}
           </OptionList>
         ),
         title: 'Default (right)',
@@ -44,8 +47,10 @@ export const listWithDifferentArrowPositions = () => (
           <OptionList position="left">
             <Option value={-1} label="Default?" />
             <Option value={0} label="First" selected />
-            <Option value={2} label="Second" />
-            <Option value={3} label="Disabled" disabled />
+            {new Array(10).fill(null).map((_, i) => (
+              // eslint-disable-next-line react/no-array-index-key
+              <Option key={i} value={i + 2} label="Disabled" disabled />
+            ))}
           </OptionList>
         ),
         title: 'Left',
@@ -56,7 +61,10 @@ export const listWithDifferentArrowPositions = () => (
             <Option value={-1} label="Default?" />
             <Option value={0} label="First" selected />
             <Option value={2} label="Second" />
-            <Option value={3} label="Disabled" disabled />
+            {new Array(10).fill(null).map((_, i) => (
+              // eslint-disable-next-line react/no-array-index-key
+              <Option key={i} value={i + 3} label="Disabled" disabled />
+            ))}
           </OptionList>
         ),
         title: 'Center',

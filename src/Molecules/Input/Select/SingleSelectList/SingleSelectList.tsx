@@ -1,8 +1,15 @@
 import * as React from 'react';
 import styled, { css } from 'styled-components';
-import { Flexbox, Typography, Icon, List as UIList, Box } from '../../../..';
+import {
+  Flexbox,
+  Typography,
+  Icon,
+  List as UIList,
+  Box,
+  FadedScroll,
+  DropdownBubble,
+} from '../../../..';
 
-const TRIANGLE_SIZE = 6;
 type ListProps = {
   /**
    * @default 'right'
@@ -10,93 +17,26 @@ type ListProps = {
   position?: 'left' | 'center' | 'right';
   searchComponent?: React.ReactNode;
 };
-const leftAndRightCss = css<Pick<ListProps, 'position'>>`
-  ${p => {
-    switch (p.position) {
-      case 'left':
-        return 'left: 20px;';
-      case 'center':
-        return 'left: 50%;';
-      case 'right':
-      default:
-        return 'right: 20px;';
-    }
-  }}
-`;
 
-const commonTriangleCss = css<any>`
-  position: absolute;
-  width: 0;
-  height: 0;
-  content: '';
-  speak: none;
-  border-left: ${TRIANGLE_SIZE}px solid transparent;
-  border-right: ${TRIANGLE_SIZE}px solid transparent;
-`;
-
-const triangleCss = css`
-  &:before {
-    ${leftAndRightCss}
-    ${commonTriangleCss}
-  top: -${TRIANGLE_SIZE}px;
-    border-bottom: ${TRIANGLE_SIZE}px solid;
-    border-bottom-color: #bcbcb6;
-  }
-  &:after {
-    ${leftAndRightCss}
-    ${commonTriangleCss}
-  top: -${TRIANGLE_SIZE - 1}px;
-    border-bottom: ${TRIANGLE_SIZE}px solid;
-    border-bottom-color: #ffffff;
-  }
-`;
-const fadeCss = css`
-  &:after {
-    content: '';
-    position: absolute;
-    pointer-events: none;
-    bottom: calc(100% - 240px - 30px);
-    left: 6px;
-    height: 20px;
-    background: linear-gradient(to bottom, rgba(255, 255, 255, 0), #fff);
-    width: calc(100% - 12px);
-  }
-`;
 const StyledList = styled(UIList)<any>`
   display: flex;
   flex-direction: column;
   list-style: none;
-  position: relative;
-  top: 10px;
-  border: 1px solid #bcbcb6;
-  background-color: #ffffff;
-  padding-top: ${p => p.theme.spacing.unit(2)}px;
-  padding-bottom: ${p => p.theme.spacing.unit(2)}px;
-  box-shadow: 0 2px 4px 0 rgba(40, 40, 35, 0.15);
-  max-height: 240px;
-  ${triangleCss}
 `;
 
-const OverflowScroll = styled.div`
-  overflow-y: auto;
-  width: 100%;
-  height: 100%;
-  /* helps with outline */
-  padding: 1px;
-  margin: -1px;
-`;
-
-const FullHeightFlexboxWithFade = styled.div`
-  ${fadeCss}
+const FadedScrollWithoutPaddingBottom = styled(FadedScroll)`
+  padding-bottom: 0;
 `;
 
 export const OptionList: React.FC<ListProps> = ({ children, position, searchComponent = null }) => (
-  <FullHeightFlexboxWithFade>
-    <StyledList role="listbox" position={position}>
+  <DropdownBubble position={position}>
+    <Box py={2}>
       {searchComponent}
-      <OverflowScroll>{children}</OverflowScroll>
-    </StyledList>
-  </FullHeightFlexboxWithFade>
+      <FadedScrollWithoutPaddingBottom maxHeight="240px" enableMobileFade fadeHeight={8}>
+        <StyledList role="listbox">{children}</StyledList>
+      </FadedScrollWithoutPaddingBottom>
+    </Box>
+  </DropdownBubble>
 );
 
 type OptionProps = {
@@ -106,7 +46,6 @@ type OptionProps = {
   label: React.ReactNode;
   value: any;
   isKeyboardNavigation?: boolean;
-  ref?: React.Ref<HTMLLIElement>;
   onClick?: React.MouseEventHandler<HTMLLIElement>;
 };
 
@@ -127,7 +66,7 @@ const StyledOption = styled(Typography)<Partial<OptionProps>>`
   padding-left: ${p => p.theme.spacing.unit(3)}px;
   padding-top:${p => p.theme.spacing.unit(1)}px;
   padding-bottom:${p => p.theme.spacing.unit(1)}px;
-  color: ${p => (p.selected ? p.theme.color.cta : p.theme.color.inputBorderHover)};
+  color: ${p => (p.selected ? p.theme.color.cta : p.theme.color.text)};
   height: ${p => p.theme.spacing.unit(6)}px;
   outline: none;
 
@@ -139,7 +78,6 @@ const StyledOption = styled(Typography)<Partial<OptionProps>>`
   `
       : ''}
   background: ${p => {
-    // if (p.disabled) return p.theme.color.disabledBackground;
     if (p.focused && p.isKeyboardNavigation) return p.theme.color.background;
     return p.theme.color.selectOptionBackground;
   }};
@@ -161,26 +99,30 @@ const EllipsizingText = styled.span`
   overflow: hidden;
 `;
 
-export const Option = React.forwardRef<HTMLLIElement, OptionProps>(
-  ({ label, disabled, selected, focused, onClick, isKeyboardNavigation }, ref) => (
-    <StyledOption
-      ref={ref}
-      selected={selected}
-      disabled={disabled}
-      focused={focused}
-      onClick={onClick}
-      type="secondary"
-      color="inherit"
-      isKeyboardNavigation={isKeyboardNavigation}
-    >
-      <EllipsizingText>{label}</EllipsizingText>
-      {selected && (
-        <Flexbox item container alignItems="center">
-          <Box pl={2}>
-            <Icon.CheckMark size={4} color={t => t.color.cta} />
-          </Box>
-        </Flexbox>
-      )}
-    </StyledOption>
-  ),
+export const Option: React.FC<OptionProps> = ({
+  label,
+  disabled,
+  selected,
+  focused,
+  onClick,
+  isKeyboardNavigation,
+}) => (
+  <StyledOption
+    selected={selected}
+    disabled={disabled}
+    focused={focused}
+    onClick={onClick}
+    type="secondary"
+    color="inherit"
+    isKeyboardNavigation={isKeyboardNavigation}
+  >
+    <EllipsizingText>{label}</EllipsizingText>
+    {selected && (
+      <Flexbox item container alignItems="center">
+        <Box pl={2}>
+          <Icon.CheckMark size={4} color={t => t.color.cta} />
+        </Box>
+      </Flexbox>
+    )}
+  </StyledOption>
 );
