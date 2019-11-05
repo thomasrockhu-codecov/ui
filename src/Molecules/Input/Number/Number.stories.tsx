@@ -267,17 +267,17 @@ withSizeSmall.story = {
   name: 'With size small',
 };
 
-export const withLabelAddon = () => (
+export const withLabelTooltip = () => (
   <Input.Number
     id="insert-unique-id"
     label="Label"
-    labelAddon={<Icon.Questionmark title="Tooltip content" size={4} />}
+    labelTooltip="Tooltip content"
     onChange={action('onChange')}
   />
 );
 
-withLabelAddon.story = {
-  name: 'With tooltip as label addon',
+withLabelTooltip.story = {
+  name: 'With label tooltip',
 };
 
 export const withPlaceholder = () => (

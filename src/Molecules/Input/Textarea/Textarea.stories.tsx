@@ -1,6 +1,6 @@
 import React from 'react';
 import { actions } from '@storybook/addon-actions';
-import { Input, Icon } from '../../..';
+import { Input } from '../../..';
 import { Display } from '../../../common/Display';
 
 // A bit laggy for now, let's optimize later
@@ -212,14 +212,10 @@ hiddenLabel.story = {
   name: 'Hidden label',
 };
 
-export const withLabelAddon = () => (
-  <Input.Textarea
-    label="Label"
-    labelAddon={<Icon.Questionmark title="Tooltip content" size={4} />}
-    placeholder="Placeholder"
-  />
+export const withLabelTooltip = () => (
+  <Input.Textarea label="Label" labelTooltip="Tooltip content" placeholder="Placeholder" />
 );
 
-withLabelAddon.story = {
+withLabelTooltip.story = {
   name: 'With tooltip as label addon',
 };

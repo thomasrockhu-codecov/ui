@@ -4,7 +4,7 @@ export type Props = {
   label: string;
   /** But you can hide it visually */
   hideLabel?: boolean;
-  labelAddon?: React.ReactNode;
+  labelTooltip?: string;
   autoFocus?: boolean;
   name?: string;
   error?: string;

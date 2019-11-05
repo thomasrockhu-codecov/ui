@@ -265,7 +265,7 @@ const NumberInput: NumberComponent & {
 
   return (
     <FormField
-      {...R.pick(['error', 'extraInfo', 'hideLabel', 'label', 'labelAddon', 'width'], props)}
+      {...R.pick(['error', 'extraInfo', 'hideLabel', 'label', 'labelTooltip', 'width'], props)}
       required={visuallyEmphasiseRequired}
       fieldId={id}
     >

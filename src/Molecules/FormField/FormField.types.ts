@@ -1,5 +1,5 @@
 export type LabelAddonProp = {
-  labelAddon?: React.ReactNode;
+  labelTooltip?: string;
 };
 
 export type Props = {
