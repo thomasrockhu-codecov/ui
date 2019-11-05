@@ -1,6 +1,6 @@
 import React from 'react';
-import { actions, action } from '@storybook/addon-actions';
-import { Input, Icon } from '../../..';
+import { action, actions } from '@storybook/addon-actions';
+import { Icon, Input } from '../../..';
 import { Display } from '../../../common/Display';
 
 const handlers = actions(
@@ -265,4 +265,63 @@ export const withSizeSmall = () => (
 
 withSizeSmall.story = {
   name: 'With size small',
+};
+
+export const withPlaceholder = () => (
+  <Display
+    title="Placeholders"
+    items={[
+      {
+        title: 'Default',
+        component: (
+          <Input.Number
+            id="insert-unique-id"
+            label="Label"
+            placeholder="A placeholder"
+            defaultValue=""
+            noSteppers
+          />
+        ),
+      },
+      {
+        title: 'With right addon',
+        component: (
+          <Input.Number
+            id="insert-unique-id"
+            label="Label"
+            placeholder="A placeholder"
+            defaultValue=""
+            rightAddon="EUR"
+          />
+        ),
+      },
+      {
+        title: 'With left addon',
+        component: (
+          <Input.Number
+            id="insert-unique-id"
+            label="Label"
+            placeholder="A placeholder"
+            defaultValue=""
+            leftAddon={<Icon.Bolt size={4} />}
+          />
+        ),
+      },
+      {
+        title: 'With steppers (placeholder removed)',
+        component: (
+          <Input.Number
+            id="insert-unique-id"
+            label="Label"
+            placeholder="A placeholder"
+            defaultValue=""
+          />
+        ),
+      },
+    ]}
+  />
+);
+
+withPlaceholder.story = {
+  name: 'With placeholder',
 };
