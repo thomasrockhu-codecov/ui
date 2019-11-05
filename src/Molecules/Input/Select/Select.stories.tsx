@@ -69,7 +69,8 @@ const AccountValue = () => {
   );
 };
 
-const StyledBox = styled(Box)<{ focused: boolean; isKeyboardNavigation: boolean }>`
+// @ts-ignore
+const StyledBox = styled(Box)`
   cursor: pointer;
   background: ${p => (p.focused ? p.theme.color.background : p.theme.color.card)};
   ${p =>
@@ -81,8 +82,8 @@ const StyledBox = styled(Box)<{ focused: boolean; isKeyboardNavigation: boolean 
   `
       : ''}
 `;
-
-const AccountListItem = ({ index }: { index: number }) => {
+// @ts-ignore
+const AccountListItem = ({ index }) => {
   const [state] = useSelectMachineFromContext();
   const option = state.context.options[index];
   const isKeyboardNavigation = state.matches('interaction.enabled.active.navigation.keyboard');
@@ -142,68 +143,70 @@ export const overflowStory = () => (
   />
 );
 
-export const preselectedOptions = () => {
-  // This component you need to redefine for your particular case
-  // Consider translations and a11y!
-  const CustomSelectedValue = React.useCallback(() => {
-    const [machineState] = useSelectMachineFromContext();
-    const selectedCount = machineState.context.selectedItems.length;
+export const preselectedOptions = () =>
+  React.createElement(() => {
+    // This component you need to redefine for your particular case
+    // Consider translations and a11y!
+    const CustomSelectedValue = React.useCallback(() => {
+      const [machineState] = useSelectMachineFromContext();
+      const selectedCount = machineState.context.selectedItems.length;
+      return (
+        <FlexedBox px={2}>
+          <Typography type="secondary">
+            {selectedCount === 0 ? machineState.context.placeholder : `${selectedCount} selected`}
+          </Typography>
+        </FlexedBox>
+      );
+    }, []);
+
+    const [values, setValues] = React.useState([
+      // Non-referentially equal options
+      { ...accountOptions[1] },
+      { ...accountOptions[2] },
+    ]);
+
     return (
-      <FlexedBox px={2}>
-        <Typography type="secondary">
-          {selectedCount === 0 ? machineState.context.placeholder : `${selectedCount} selected`}
-        </Typography>
-      </FlexedBox>
+      <Input.Select
+        id="input-1"
+        options={accountOptions}
+        value={values}
+        // @ts-ignore
+        onChange={setValues}
+        components={{ SelectedValue: CustomSelectedValue }}
+        multiselect
+        label="Label"
+        placeholder="Placeholder"
+      />
     );
-  }, []);
+  });
 
-  const [values, setValues] = React.useState([
-    // Non-referentially equal options
-    { ...accountOptions[1] },
-    { ...accountOptions[2] },
-  ]);
+export const multiSelectUncontrolled = () =>
+  React.createElement(() => {
+    // This component you need to redefine for your particular case
+    // Consider translations and a11y!
+    const CustomSelectedValue = React.useCallback(() => {
+      const [machineState] = useSelectMachineFromContext();
+      const selectedCount = machineState.context.selectedItems.length;
+      return (
+        <FlexedBox px={2}>
+          <Typography type="secondary">
+            {selectedCount === 0 ? machineState.context.placeholder : `${selectedCount} selected`}
+          </Typography>
+        </FlexedBox>
+      );
+    }, []);
 
-  return (
-    <Input.Select
-      id="input-1"
-      options={accountOptions}
-      value={values}
-      // @ts-ignore
-      onChange={setValues}
-      components={{ SelectedValue: CustomSelectedValue }}
-      multiselect
-      label="Label"
-      placeholder="Placeholder"
-    />
-  );
-};
-
-export const multiSelectUncontrolled = () => {
-  // This component you need to redefine for your particular case
-  // Consider translations and a11y!
-  const CustomSelectedValue = React.useCallback(() => {
-    const [machineState] = useSelectMachineFromContext();
-    const selectedCount = machineState.context.selectedItems.length;
     return (
-      <FlexedBox px={2}>
-        <Typography type="secondary">
-          {selectedCount === 0 ? machineState.context.placeholder : `${selectedCount} selected`}
-        </Typography>
-      </FlexedBox>
+      <Input.Select
+        id="input-1"
+        options={accountOptions}
+        components={{ SelectedValue: CustomSelectedValue }}
+        multiselect
+        label="Label"
+        placeholder="Placeholder"
+      />
     );
-  }, []);
-
-  return (
-    <Input.Select
-      id="input-1"
-      options={accountOptions}
-      components={{ SelectedValue: CustomSelectedValue }}
-      multiselect
-      label="Label"
-      placeholder="Placeholder"
-    />
-  );
-};
+  });
 
 export const searchStory = () => (
   <Input.Select
@@ -300,39 +303,40 @@ export const onBlurAndOnFocus = () => {
   );
 };
 
-export const multiselect = () => {
-  const [value, setValue] = React.useState([]);
+export const multiselect = () =>
+  React.createElement(() => {
+    const [value, setValue] = React.useState([]);
 
-  // This component you need to redefine for your particular case
-  // Consider translations and a11y!
-  const CustomSelectedValue = React.useMemo(
-    () => () => {
-      const [machineState] = useSelectMachineFromContext();
-      const selectedCount = machineState.context.selectedItems.length;
-      return (
-        <FlexedBox px={2}>
-          <Typography type="secondary">
-            {selectedCount === 0 ? machineState.context.placeholder : `${selectedCount} selected`}
-          </Typography>
-        </FlexedBox>
-      );
-    },
-    [],
-  );
-  return (
-    <Input.Select
-      id="custom-renderers-select"
-      options={accountOptions}
-      value={value}
-      // @ts-ignore
-      onChange={setValue}
-      components={{ SelectedValue: CustomSelectedValue }}
-      multiselect
-      label="User account"
-      placeholder="Select account"
-    />
-  );
-};
+    // This component you need to redefine for your particular case
+    // Consider translations and a11y!
+    const CustomSelectedValue = React.useMemo(
+      () => () => {
+        const [machineState] = useSelectMachineFromContext();
+        const selectedCount = machineState.context.selectedItems.length;
+        return (
+          <FlexedBox px={2}>
+            <Typography type="secondary">
+              {selectedCount === 0 ? machineState.context.placeholder : `${selectedCount} selected`}
+            </Typography>
+          </FlexedBox>
+        );
+      },
+      [],
+    );
+    return (
+      <Input.Select
+        id="custom-renderers-select"
+        options={accountOptions}
+        value={value}
+        // @ts-ignore
+        onChange={setValue}
+        components={{ SelectedValue: CustomSelectedValue }}
+        multiselect
+        label="User account"
+        placeholder="Select account"
+      />
+    );
+  });
 
 const accountOptionsAndSelectAll = [
   {
@@ -345,126 +349,130 @@ const accountOptionsAndSelectAll = [
   .concat(accountOptions)
   .concat({ label: 'Disabled', value: 'Doesnt matter', disabled: true });
 
-export const multiselectSelectAll = () => {
-  const [value, setValue] = React.useState([]);
+export const multiselectSelectAll = () =>
+  React.createElement(() => {
+    const [value, setValue] = React.useState([]);
 
-  // This component you need to redefine for your particular case
-  // Consider translations and a11y!
-  const CustomSelectedValue = React.useCallback(() => {
-    const [machineState] = useSelectMachineFromContext();
-    const selectedCount = machineState.context.selectedItems.length;
-    const allSelected = machineState.context.selectedItems.some(x => x[Input.Select.SYMBOL_ALL]);
-    let label;
-    if (allSelected) {
-      label = 'All selected';
-    } else if (selectedCount === 0) {
-      label = machineState.context.placeholder;
-    } else {
-      label = `${selectedCount} selected`;
-    }
+    // This component you need to redefine for your particular case
+    // Consider translations and a11y!
+    const CustomSelectedValue = React.useCallback(() => {
+      const [machineState] = useSelectMachineFromContext();
+      const selectedCount = machineState.context.selectedItems.length;
+      const allSelected = machineState.context.selectedItems.some(x => x[Input.Select.SYMBOL_ALL]);
+      let label;
+      if (allSelected) {
+        label = 'All selected';
+      } else if (selectedCount === 0) {
+        label = machineState.context.placeholder;
+      } else {
+        label = `${selectedCount} selected`;
+      }
+      return (
+        <FlexedBox px={2}>
+          <Typography type="secondary">{label}</Typography>
+        </FlexedBox>
+      );
+    }, []);
     return (
-      <FlexedBox px={2}>
-        <Typography type="secondary">{label}</Typography>
-      </FlexedBox>
-    );
-  }, []);
-  return (
-    <Input.Select
-      id="multiwithall-select"
-      options={accountOptionsAndSelectAll}
-      value={value}
-      // @ts-ignore
-      onChange={setValue}
-      components={{
-        SelectedValue: CustomSelectedValue,
-      }}
-      multiselect
-      label="User account"
-      placeholder="Select account"
-    />
-  );
-};
-
-export const changesFromProps = () => {
-  const [accs, setAccs] = React.useState(accountOptions);
-  const [value, setValue] = React.useState([]);
-  const [disabled, setDisabled] = React.useState(false);
-  const removeAcc = () => setAccs(accs.slice(0, -1));
-  // @ts-ignore
-  const selectFirst = () => setValue([accountOptions[0]]);
-
-  return (
-    <>
-      <button type="button" onClick={removeAcc}>
-        Delete
-      </button>
-      <button type="button" onClick={selectFirst}>
-        Select first
-      </button>
-      <button type="button" onClick={() => setDisabled(true)}>
-        Disable
-      </button>
-      <button type="button" onClick={() => setDisabled(false)}>
-        Enable
-      </button>
-      <pre>{JSON.stringify(value, null, 2)}</pre>
-      <pre>{JSON.stringify(accs, null, 2)}</pre>
       <Input.Select
-        id="onchange-select"
+        id="multiwithall-select"
+        options={accountOptionsAndSelectAll}
         value={value}
-        disabled={disabled}
         // @ts-ignore
         onChange={setValue}
-        options={accs}
+        components={{
+          SelectedValue: CustomSelectedValue,
+        }}
+        multiselect
         label="User account"
         placeholder="Select account"
       />
-    </>
-  );
-};
+    );
+  });
 
-export const accessibleFromDocumentForms = () => {
-  const FORM_NAME = 'testForm';
-  const SELECT_NAME = 'mySelect';
+export const changesFromProps = () =>
+  React.createElement(() => {
+    const [accs, setAccs] = React.useState(accountOptions);
+    const [value, setValue] = React.useState([]);
+    const [disabled, setDisabled] = React.useState(false);
+    const removeAcc = () => setAccs(accs.slice(0, -1));
+    // @ts-ignore
+    const selectFirst = () => setValue([accountOptions[0]]);
 
-  // @ts-ignore
-  const [_, forceUpdate] = React.useState([]); // eslint-disable-line @typescript-eslint/no-unused-vars
+    return (
+      <>
+        <button type="button" onClick={removeAcc}>
+          Delete
+        </button>
+        <button type="button" onClick={selectFirst}>
+          Select first
+        </button>
+        <button type="button" onClick={() => setDisabled(true)}>
+          Disable
+        </button>
+        <button type="button" onClick={() => setDisabled(false)}>
+          Enable
+        </button>
+        <pre>{JSON.stringify(value, null, 2)}</pre>
+        <pre>{JSON.stringify(accs, null, 2)}</pre>
+        <Input.Select
+          id="onchange-select"
+          value={value}
+          disabled={disabled}
+          // @ts-ignore
+          onChange={setValue}
+          options={accs}
+          label="User account"
+          placeholder="Select account"
+        />
+      </>
+    );
+  });
 
-  return (
-    <form name={FORM_NAME}>
+export const accessibleFromDocumentForms = () =>
+  React.createElement(() => {
+    const FORM_NAME = 'testForm';
+    const SELECT_NAME = 'mySelect';
+
+    // @ts-ignore
+    const [_, forceUpdate] = React.useState([]); // eslint-disable-line @typescript-eslint/no-unused-vars
+
+    return (
+      <form name={FORM_NAME}>
+        <Input.Select
+          id="forms-input-test"
+          options={accountOptions}
+          name={SELECT_NAME}
+          label="User account"
+          placeholder="Select account"
+          // Every time the value updates
+          // The story gonna rerender
+          // So we have fresh stuff from document.forms
+          // @ts-ignore
+          onChange={forceUpdate}
+        />
+        <br />
+        Value in form: &quot;
+        {R.path(['forms', FORM_NAME, 'elements', SELECT_NAME, 'value'])(document)}&quot;
+      </form>
+    );
+  });
+
+export const controlledBehaviour = () =>
+  React.createElement(() => {
+    const [value, setValue] = React.useState(() => [accountOptions[1]]);
+    return (
       <Input.Select
-        id="forms-input-test"
+        id="onchange-select"
         options={accountOptions}
-        name={SELECT_NAME}
+        value={value}
+        // @ts-ignore
+        onChange={setValue}
         label="User account"
         placeholder="Select account"
-        // Every time the value updates
-        // The story gonna rerender
-        // So we have fresh stuff from document.forms
-        // @ts-ignore
-        onChange={forceUpdate}
       />
-      <br />
-      Value in form: &quot;
-      {R.path(['forms', FORM_NAME, 'elements', SELECT_NAME, 'value'])(document)}&quot;
-    </form>
-  );
-};
-
-export const controlledBehaviour = () => {
-  const [value, setValue] = React.useState(() => [accountOptions[1]]);
-  return (
-    <Input.Select
-      id="onchange-select"
-      options={accountOptions}
-      value={value}
-      // @ts-ignore
-      onChange={setValue}
-      label="User account"
-      placeholder="Select account"
-    />
-  );
-};
+    );
+  });
 controlledBehaviour.story = {
   name: 'Controlled behaviour',
 };
@@ -590,75 +598,76 @@ export const sizeS = () => {
   );
 };
 
-export const linkWithDropdownAndSearchBox = () => {
-  const customComponents = React.useMemo(
-    () => ({
-      // @ts-ignore
-      SelectedValue: (_, ref) => {
-        const [state] = useSelectMachineFromContext();
+export const linkWithDropdownAndSearchBox = () =>
+  React.createElement(() => {
+    const customComponents = React.useMemo(
+      () => ({
+        // @ts-ignore
+        SelectedValue: (_, ref) => {
+          const [state] = useSelectMachineFromContext();
 
-        return (
-          <Link ref={ref} as="div">
-            <Flexbox container alignItems="center" gutter={2}>
-              <Icon.AddWithCircle inline color={t => t.color.cta} />
-              {state.context.placeholder}
-            </Flexbox>
-          </Link>
-        );
-      },
-    }),
-    [],
-  );
+          return (
+            <Link ref={ref} as="div">
+              <Flexbox container alignItems="center" gutter={2}>
+                <Icon.AddWithCircle inline color={t => t.color.cta} />
+                {state.context.placeholder}
+              </Flexbox>
+            </Link>
+          );
+        },
+      }),
+      [],
+    );
 
-  const [value, setValue] = React.useState([]);
-  const hugeOptionsList = React.useMemo(
-    () =>
-      accountOptions
-        .concat(
-          accountOptions.map(x => ({
-            ...x,
-            value: x.value + Math.random(),
-            label: x.label + Math.random(),
-          })),
-        )
-        .concat(
-          accountOptions.map(x => ({
-            ...x,
-            value: x.value + Math.random(),
-            label: x.label + Math.random(),
-          })),
-        )
-        .concat(
-          accountOptions.map(x => ({
-            ...x,
-            value: x.value + Math.random(),
-            label: x.label + Math.random(),
-          })),
-        ),
-    [accountOptions],
-  );
+    const [value, setValue] = React.useState([]);
+    const hugeOptionsList = React.useMemo(
+      () =>
+        accountOptions
+          .concat(
+            accountOptions.map(x => ({
+              ...x,
+              value: x.value + Math.random(),
+              label: x.label + Math.random(),
+            })),
+          )
+          .concat(
+            accountOptions.map(x => ({
+              ...x,
+              value: x.value + Math.random(),
+              label: x.label + Math.random(),
+            })),
+          )
+          .concat(
+            accountOptions.map(x => ({
+              ...x,
+              value: x.value + Math.random(),
+              label: x.label + Math.random(),
+            })),
+          ),
+      [accountOptions],
+    );
 
-  // @ts-ignore
-  const handleChange = newVal => {
-    action('change')(newVal);
-    setValue(newVal);
-  };
+    // @ts-ignore
+    const handleChange = newVal => {
+      action('change')(newVal);
+      setValue(newVal);
+    };
 
-  return (
-    <Input.Select
-      options={hugeOptionsList}
-      label="User account"
-      id="input-select-search-inside"
-      placeholder="Select account"
-      noFormField
-      showSearch
-      value={value}
-      components={customComponents}
-      onChange={handleChange}
-      width="350px"
-    />
-  );
-};
+    return (
+      <Input.Select
+        options={hugeOptionsList}
+        label="User account"
+        id="input-select-search-inside"
+        placeholder="Select account"
+        noFormField
+        showSearch
+        value={value}
+        components={customComponents}
+        onChange={handleChange}
+        width="350px"
+      />
+    );
+  });
 
 export default {
   title: 'Molecules | Input / Select',

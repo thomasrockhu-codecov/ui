@@ -95,7 +95,7 @@ test('Multiselect without custom components and with select all', async () => {
     <ThemeProvider theme={theme}>
       <Select
         id={INPUT_ID}
-        options={[{ label: selectAllLabel, value: null, all: true } as any].concat(
+        options={[{ label: selectAllLabel, value: null, [Select.SYMBOL_ALL]: true } as any].concat(
           new Array(3).fill(null).map((_, i) => ({ label: `${testMessage}${i}`, value: i })),
         )}
         multiselect

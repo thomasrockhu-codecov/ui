@@ -1,4 +1,5 @@
 import { Machine, send, assign } from 'xstate';
+import { SYMBOL_ALL } from './constants';
 
 export type OptionLike = {
   [k: string]: any;
@@ -485,12 +486,13 @@ export const SelectMachine = Machine<Context>(
       resetSelection: assign<Context>({ selectedItems: [] }),
       deselectOption: assign<Context>({
         selectedItems: (ctx, { payload }) => {
-          if (payload.all) {
+          if (payload[SYMBOL_ALL]) {
             return [];
           }
           let predicate = (x: OptionLike) => !isEqualOptions(x, payload);
-          if (ctx.options.some(x => x.all)) {
-            predicate = x => !x.all && !isEqualOptions(x, payload);
+          if (ctx.options.some(x => x[SYMBOL_ALL])) {
+            // @ts-ignore
+            predicate = (x: OptionLike) => !x[SYMBOL_ALL] && !isEqualOptions(x, payload);
           }
           return ctx.selectedItems.filter(predicate);
         },
@@ -508,11 +510,11 @@ export const SelectMachine = Machine<Context>(
         uncommitedSelectedItems: (ctx, e) => {
           if (ctx.multiselect) {
             const activeOptions = ctx.options.filter(x => !x.disabled);
-            if (e.payload.all) {
+            if (e.payload[SYMBOL_ALL]) {
               return activeOptions;
             }
             let newSelectedItems = ctx.selectedItems.concat(e.payload);
-            const selectAllOption = ctx.options.find(x => x.all);
+            const selectAllOption = ctx.options.find(x => x[SYMBOL_ALL]);
             if (selectAllOption && newSelectedItems.length === activeOptions.length - 1) {
               newSelectedItems = newSelectedItems.concat(selectAllOption);
             }
