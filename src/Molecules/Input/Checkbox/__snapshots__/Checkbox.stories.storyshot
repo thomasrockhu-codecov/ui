@@ -564,7 +564,7 @@ Array [
 `;
 
 exports[`Storyshots Molecules | Input / Checkbox In A Group 1`] = `
-.c5 {
+.c6 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -574,12 +574,12 @@ exports[`Storyshots Molecules | Input / Checkbox In A Group 1`] = `
   margin-right: -10px;
 }
 
-.c5 > * {
+.c6 > * {
   padding-left: 10px;
   padding-right: 10px;
 }
 
-.c5 > *:not(:first-child) {
+.c6 > *:not(:first-child) {
   padding-top: 0;
 }
 
@@ -599,7 +599,7 @@ exports[`Storyshots Molecules | Input / Checkbox In A Group 1`] = `
   align-items: center;
 }
 
-.c8 {
+.c2 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -611,7 +611,7 @@ exports[`Storyshots Molecules | Input / Checkbox In A Group 1`] = `
   align-items: center;
 }
 
-.c2 {
+.c3 {
   text-overflow: ellipsis;
   white-space: nowrap;
   cursor: pointer;
@@ -631,7 +631,7 @@ exports[`Storyshots Molecules | Input / Checkbox In A Group 1`] = `
   display: block;
 }
 
-.c3 {
+.c4 {
   box-sizing: border-box;
   color: inherit;
   display: table;
@@ -641,7 +641,7 @@ exports[`Storyshots Molecules | Input / Checkbox In A Group 1`] = `
   cursor: auto;
 }
 
-.c4 {
+.c5 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #6E6E69;
   margin: 0;
@@ -665,7 +665,7 @@ exports[`Storyshots Molecules | Input / Checkbox In A Group 1`] = `
   border: 0;
 }
 
-.c6 {
+.c7 {
   width: auto;
   display: inline-block;
 }
@@ -694,11 +694,11 @@ exports[`Storyshots Molecules | Input / Checkbox In A Group 1`] = `
   position: absolute;
 }
 
-.c7 {
+.c8 {
   position: relative;
 }
 
-.c7:hover .c10 {
+.c8:hover .c10 {
   border-color: #4B4B46;
 }
 
@@ -769,32 +769,36 @@ exports[`Storyshots Molecules | Input / Checkbox In A Group 1`] = `
   <fieldset
     className="c1"
   >
-    <legend
-      className="c2 c3"
-      hidden={false}
-    >
-      <span
-        className="c4"
-      >
-        Colors 
-      </span>
-    </legend>
     <div
-      className="c5"
+      className="c2"
+    >
+      <legend
+        className="c3 c4"
+        hidden={false}
+      >
+        <span
+          className="c5"
+        >
+          Colors 
+        </span>
+      </legend>
+    </div>
+    <div
+      className="c6"
     >
       <div
-        className="c6"
+        className="c7"
         width="auto"
       >
         <label
-          className="c7 c2"
+          className="c8 c3"
           hidden={false}
         >
           <span
-            className="c4"
+            className="c5"
           >
             <div
-              className="c8"
+              className="c2"
             >
               <input
                 className="c9"
@@ -829,18 +833,18 @@ exports[`Storyshots Molecules | Input / Checkbox In A Group 1`] = `
         </label>
       </div>
       <div
-        className="c6"
+        className="c7"
         width="auto"
       >
         <label
-          className="c7 c2"
+          className="c8 c3"
           hidden={false}
         >
           <span
-            className="c4"
+            className="c5"
           >
             <div
-              className="c8"
+              className="c2"
             >
               <input
                 className="c9"
@@ -875,18 +879,18 @@ exports[`Storyshots Molecules | Input / Checkbox In A Group 1`] = `
         </label>
       </div>
       <div
-        className="c6"
+        className="c7"
         width="auto"
       >
         <label
-          className="c7 c2"
+          className="c8 c3"
           hidden={false}
         >
           <span
-            className="c4"
+            className="c5"
           >
             <div
-              className="c8"
+              className="c2"
             >
               <input
                 className="c9"
@@ -926,7 +930,7 @@ exports[`Storyshots Molecules | Input / Checkbox In A Group 1`] = `
 `;
 
 exports[`Storyshots Molecules | Input / Checkbox In A Group With Error 1`] = `
-.c5 {
+.c6 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -936,12 +940,12 @@ exports[`Storyshots Molecules | Input / Checkbox In A Group With Error 1`] = `
   margin-right: -10px;
 }
 
-.c5 > * {
+.c6 > * {
   padding-left: 10px;
   padding-right: 10px;
 }
 
-.c5 > *:not(:first-child) {
+.c6 > *:not(:first-child) {
   padding-top: 0;
 }
 
@@ -961,7 +965,7 @@ exports[`Storyshots Molecules | Input / Checkbox In A Group With Error 1`] = `
   align-items: center;
 }
 
-.c8 {
+.c2 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -982,7 +986,7 @@ exports[`Storyshots Molecules | Input / Checkbox In A Group With Error 1`] = `
   clip: rect(1px,1px,1px,1px);
 }
 
-.c2 {
+.c3 {
   text-overflow: ellipsis;
   white-space: nowrap;
   cursor: pointer;
@@ -1002,7 +1006,7 @@ exports[`Storyshots Molecules | Input / Checkbox In A Group With Error 1`] = `
   display: block;
 }
 
-.c3 {
+.c4 {
   box-sizing: border-box;
   color: inherit;
   display: table;
@@ -1012,7 +1016,7 @@ exports[`Storyshots Molecules | Input / Checkbox In A Group With Error 1`] = `
   cursor: auto;
 }
 
-.c4 {
+.c5 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #6E6E69;
   margin: 0;
@@ -1045,7 +1049,7 @@ exports[`Storyshots Molecules | Input / Checkbox In A Group With Error 1`] = `
   border: 0;
 }
 
-.c6 {
+.c7 {
   width: auto;
   display: inline-block;
 }
@@ -1074,11 +1078,11 @@ exports[`Storyshots Molecules | Input / Checkbox In A Group With Error 1`] = `
   position: absolute;
 }
 
-.c7 {
+.c8 {
   position: relative;
 }
 
-.c7:hover .c10 {
+.c8:hover .c10 {
   border-color: #4B4B46;
 }
 
@@ -1149,32 +1153,36 @@ exports[`Storyshots Molecules | Input / Checkbox In A Group With Error 1`] = `
   <fieldset
     className="c1"
   >
-    <legend
-      className="c2 c3"
-      hidden={false}
-    >
-      <span
-        className="c4"
-      >
-        Colors 
-      </span>
-    </legend>
     <div
-      className="c5"
+      className="c2"
+    >
+      <legend
+        className="c3 c4"
+        hidden={false}
+      >
+        <span
+          className="c5"
+        >
+          Colors 
+        </span>
+      </legend>
+    </div>
+    <div
+      className="c6"
     >
       <div
-        className="c6"
+        className="c7"
         width="auto"
       >
         <label
-          className="c7 c2"
+          className="c8 c3"
           hidden={false}
         >
           <span
-            className="c4"
+            className="c5"
           >
             <div
-              className="c8"
+              className="c2"
             >
               <input
                 className="c9"
@@ -1211,18 +1219,18 @@ exports[`Storyshots Molecules | Input / Checkbox In A Group With Error 1`] = `
         </label>
       </div>
       <div
-        className="c6"
+        className="c7"
         width="auto"
       >
         <label
-          className="c7 c2"
+          className="c8 c3"
           hidden={false}
         >
           <span
-            className="c4"
+            className="c5"
           >
             <div
-              className="c8"
+              className="c2"
             >
               <input
                 className="c9"
@@ -1259,18 +1267,18 @@ exports[`Storyshots Molecules | Input / Checkbox In A Group With Error 1`] = `
         </label>
       </div>
       <div
-        className="c6"
+        className="c7"
         width="auto"
       >
         <label
-          className="c7 c2"
+          className="c8 c3"
           hidden={false}
         >
           <span
-            className="c4"
+            className="c5"
           >
             <div
-              className="c8"
+              className="c2"
             >
               <input
                 className="c9"

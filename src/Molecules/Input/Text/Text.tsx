@@ -133,7 +133,7 @@ export const Text: React.FC<Props> & {
 
   return (
     <FormField
-      {...R.pick(['error', 'extraInfo', 'hideLabel', 'label', 'width'], props)}
+      {...R.pick(['error', 'extraInfo', 'hideLabel', 'label', 'labelTooltip', 'width'], props)}
       required={visuallyEmphasiseRequired}
     >
       <Typography type="secondary" color={t => t.color.text}>
