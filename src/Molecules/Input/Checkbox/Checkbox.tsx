@@ -9,7 +9,7 @@ const CHECKBOX_SIZE = 5;
 const checkIfHasError = (error?: Props['error']) => isString(error) && error !== '';
 
 const CleanInput = React.forwardRef((props: any, ref: React.Ref<HTMLInputElement>) => (
-  <input ref={ref} {...R.omit(['hasError'], props)} />
+  <input ref={ref} {...R.omit(['hasError', 'visuallyFocused'], props)} />
 ));
 
 const CheckmarkBox = styled(Flexbox)`

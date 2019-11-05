@@ -96,6 +96,7 @@ const components = {
 };
 
 const getAriaProps = R.pickBy((val, key) => key.startsWith('aria-'));
+const getDataProps = R.pickBy((val, key) => key.startsWith('data-'));
 
 export const Text: React.FC<Props> & {
   /**
@@ -165,6 +166,7 @@ export const Text: React.FC<Props> & {
               ref,
             }}
             {...getAriaProps(props)}
+            {...getDataProps(props)}
             {...(hasError(error) ? { 'aria-invalid': true } : {})}
           />
           {leftAddon && (
