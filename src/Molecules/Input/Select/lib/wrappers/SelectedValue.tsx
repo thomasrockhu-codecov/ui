@@ -20,7 +20,9 @@ const StyledA11yButton = styled(CleanNormalizedButton)`
 
   display: flex;
   border: 0;
-
+  &:active {
+    color: inherit;
+  }
   ${p =>
     !p.absolutePositioning
       ? ''

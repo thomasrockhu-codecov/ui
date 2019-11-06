@@ -16,6 +16,7 @@ const EllipsizingText = styled.span`
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
+  text-align: left;
 `;
 
 const StyledFlexedBox = styled(Box)`

@@ -167,11 +167,16 @@ exports[`Storyshots Molecules | Input / Select Accessible From Document Forms 1`
   text-align: initial;
 }
 
+.c8:active {
+  color: inherit;
+}
+
 .c14 {
   width: 100%;
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
+  text-align: left;
 }
 
 .c12 {
@@ -500,11 +505,16 @@ Array [
   text-align: initial;
 }
 
+.c7:active {
+  color: inherit;
+}
+
 .c13 {
   width: 100%;
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
+  text-align: left;
 }
 
 .c11 {
@@ -860,11 +870,16 @@ Array [
   text-align: initial;
 }
 
+.c7:active {
+  color: inherit;
+}
+
 .c13 {
   width: 100%;
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
+  text-align: left;
 }
 
 .c11 {
@@ -1160,11 +1175,16 @@ Array [
   text-align: initial;
 }
 
+.c7:active {
+  color: inherit;
+}
+
 .c13 {
   width: 100%;
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
+  text-align: left;
 }
 
 .c11 {
@@ -1459,6 +1479,10 @@ Array [
   text-align: initial;
 }
 
+.c7:active {
+  color: inherit;
+}
+
 .c11 {
   -webkit-box-flex: 1;
   -webkit-flex-grow: 1;
@@ -1750,11 +1774,16 @@ Array [
   text-align: initial;
 }
 
+.c7:active {
+  color: inherit;
+}
+
 .c13 {
   width: 100%;
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
+  text-align: left;
 }
 
 .c11 {
@@ -2104,6 +2133,10 @@ exports[`Storyshots Molecules | Input / Select Default Variations 1`] = `
   text-align: initial;
 }
 
+.c21:active {
+  color: inherit;
+}
+
 .c11 {
   background: #EBEBE8;
   width: 100%;
@@ -2124,11 +2157,16 @@ exports[`Storyshots Molecules | Input / Select Default Variations 1`] = `
   text-align: initial;
 }
 
+.c11:active {
+  color: inherit;
+}
+
 .c17 {
   width: 100%;
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
+  text-align: left;
 }
 
 .c15 {
@@ -2891,11 +2929,16 @@ Array [
   text-align: initial;
 }
 
+.c7:active {
+  color: inherit;
+}
+
 .c13 {
   width: 100%;
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
+  text-align: left;
 }
 
 .c11 {
@@ -3190,11 +3233,16 @@ Array [
   text-align: initial;
 }
 
+.c7:active {
+  color: inherit;
+}
+
 .c13 {
   width: 100%;
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
+  text-align: left;
 }
 
 .c11 {
@@ -3479,6 +3527,10 @@ Array [
   display: -ms-flexbox;
   display: flex;
   border: 0;
+}
+
+.c3:active {
+  color: inherit;
 }
 
 .c7 {
@@ -3783,6 +3835,10 @@ Array [
   text-align: initial;
 }
 
+.c7:active {
+  color: inherit;
+}
+
 .c11 {
   -webkit-box-flex: 1;
   -webkit-flex-grow: 1;
@@ -4078,6 +4134,10 @@ Array [
   outline: 0;
   padding: 0;
   text-align: initial;
+}
+
+.c7:active {
+  color: inherit;
 }
 
 .c11 {
@@ -4384,6 +4444,10 @@ Array [
   text-align: initial;
 }
 
+.c7:active {
+  color: inherit;
+}
+
 .c11 {
   -webkit-box-flex: 1;
   -webkit-flex-grow: 1;
@@ -4679,11 +4743,16 @@ Array [
   text-align: initial;
 }
 
+.c7:active {
+  color: inherit;
+}
+
 .c13 {
   width: 100%;
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
+  text-align: left;
 }
 
 .c11 {
@@ -5366,11 +5435,16 @@ Array [
   text-align: initial;
 }
 
+.c7:active {
+  color: inherit;
+}
+
 .c13 {
   width: 100%;
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
+  text-align: left;
 }
 
 .c11 {
@@ -5670,6 +5744,10 @@ Array [
   outline: 0;
   padding: 0;
   text-align: initial;
+}
+
+.c7:active {
+  color: inherit;
 }
 
 .c11 {
@@ -5983,11 +6061,16 @@ Array [
   text-align: initial;
 }
 
+.c7:active {
+  color: inherit;
+}
+
 .c13 {
   width: 100%;
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
+  text-align: left;
 }
 
 .c11 {
@@ -6337,6 +6420,10 @@ exports[`Storyshots Molecules | Input / Select Size S 1`] = `
   text-align: initial;
 }
 
+.c21:active {
+  color: inherit;
+}
+
 .c11 {
   background: #EBEBE8;
   width: 100%;
@@ -6357,11 +6444,16 @@ exports[`Storyshots Molecules | Input / Select Size S 1`] = `
   text-align: initial;
 }
 
+.c11:active {
+  color: inherit;
+}
+
 .c17 {
   width: 100%;
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
+  text-align: left;
 }
 
 .c15 {
@@ -7128,11 +7220,16 @@ Array [
   text-align: initial;
 }
 
+.c7:active {
+  color: inherit;
+}
+
 .c13 {
   width: 100%;
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
+  text-align: left;
 }
 
 .c11 {
@@ -7422,11 +7519,16 @@ Array [
   text-align: initial;
 }
 
+.c7:active {
+  color: inherit;
+}
+
 .c13 {
   width: 100%;
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
+  text-align: left;
 }
 
 .c11 {
