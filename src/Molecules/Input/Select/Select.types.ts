@@ -1,15 +1,6 @@
-import { SYMBOL_ALL } from './constants';
-
-export type ActionTypes =
-  | 'Select.Open'
-  | 'Select.Close'
-  | 'Select.Toggle'
-  | 'Select.SelectValue'
-  | 'Select.DeselectValue'
-  | 'Select.SyncState';
+import { SYMBOL_ALL } from './lib/constants';
 
 export type ComponentTypes = 'ListItem' | 'List' | 'SelectedValue' | 'Search';
-export type Action = { type: ActionTypes; payload?: any };
 
 export type Props = {
   /**
@@ -26,6 +17,9 @@ export type Props = {
   placeholder?: string;
   label: string;
   name?: string;
+  /**
+   * @default 'm'
+   */
   size?: 's' | 'm';
   disabled?: boolean;
   onChange?: (newValue: Option[]) => void;
@@ -35,8 +29,6 @@ export type Props = {
   width?: string;
   className?: string;
   components?: Partial<Record<ComponentTypes, React.ComponentType<any>>>;
-  reducer?: (state: SelectState, action: Action) => SelectState;
-  initialState?: any;
   /** use this flag if you
    * are using dropdown not
    * within form
@@ -56,20 +48,10 @@ export type Props = {
   multiselect?: boolean;
 };
 
-export type OptionBase = {
+export type Option = {
   [K: string]: any;
   label: string;
   value: any;
   disabled?: boolean;
   [SYMBOL_ALL]?: boolean;
-};
-
-export type Option = OptionBase;
-
-export type SelectState = {
-  open: boolean;
-  initialized: boolean;
-  options: Array<Option>;
-  placeholder: React.ReactNode;
-  value: Array<Option>;
 };

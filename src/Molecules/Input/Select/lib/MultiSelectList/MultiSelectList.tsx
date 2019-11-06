@@ -1,9 +1,16 @@
 import * as React from 'react';
 import styled, { css } from 'styled-components';
-import { Flexbox, Typography, List as UIList, FadedScroll, DropdownBubble, Box } from '../../../..';
+import {
+  Flexbox,
+  Typography,
+  List as UIList,
+  FadedScroll,
+  DropdownBubble,
+  Box,
+} from '../../../../..';
 // Need to import it directly
 // Otherwise causes circular deps problems
-import { Checkbox } from '../../Checkbox';
+import { Checkbox } from '../../../Checkbox';
 
 type ListProps = {
   /**
@@ -56,7 +63,9 @@ const hoverIfNotKeyboardNav = css<{ disabled?: boolean; isKeyboardNavigation?: b
 &:hover { 
   background: ${p.theme.color.background};
   ${Checkbox.components.CheckmarkBox} {
-    outline: 1px solid ${p.theme.color.cta};
+    &::before {
+      border: 1px solid ${p.theme.color.cta};
+    }
   }
 }
 `}

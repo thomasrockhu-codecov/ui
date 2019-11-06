@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { ContextType } from './context';
-import { Context } from './machine';
+import { Context } from '../machine';
 
 export const useAutofocus = (ref: React.RefObject<any>, enable?: boolean) => {
   React.useEffect(() => {

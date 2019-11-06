@@ -1,9 +1,9 @@
 import * as React from 'react';
-import { OptionList, Option } from './MultiSelectList';
-import { Display } from '../../../../common/Display';
+import { OptionList, Option } from './SingleSelectList';
+import { Display } from '../../../../../common/Display';
 
 export default {
-  title: 'Molecules | Input / Select / MultiSelectList',
+  title: 'Molecules | Input / Select / SingleSelectList',
 };
 
 export const itemDefault = () => <Option value={0} label="First" />;
@@ -33,10 +33,7 @@ export const listWithDifferentArrowPositions = () => (
             <Option value={-1} label="Default?" />
             <Option value={0} label="First" selected />
             <Option value={2} label="Second" />
-            {new Array(10).fill(null).map((_, i) => (
-              // eslint-disable-next-line react/no-array-index-key
-              <Option key={i} value={i + 3} label="Disabled" disabled />
-            ))}
+            <Option value={3} label="Disabled" disabled />
           </OptionList>
         ),
         title: 'Default (right)',
@@ -47,10 +44,8 @@ export const listWithDifferentArrowPositions = () => (
           <OptionList position="left">
             <Option value={-1} label="Default?" />
             <Option value={0} label="First" selected />
-            {new Array(10).fill(null).map((_, i) => (
-              // eslint-disable-next-line react/no-array-index-key
-              <Option key={i} value={i + 2} label="Disabled" disabled />
-            ))}
+            <Option value={2} label="Second" />
+            <Option value={3} label="Disabled" disabled />
           </OptionList>
         ),
         title: 'Left',
@@ -61,10 +56,7 @@ export const listWithDifferentArrowPositions = () => (
             <Option value={-1} label="Default?" />
             <Option value={0} label="First" selected />
             <Option value={2} label="Second" />
-            {new Array(10).fill(null).map((_, i) => (
-              // eslint-disable-next-line react/no-array-index-key
-              <Option key={i} value={i + 3} label="Disabled" disabled />
-            ))}
+            <Option value={3} label="Disabled" disabled />
           </OptionList>
         ),
         title: 'Center',

@@ -1,5 +1,5 @@
 import { Machine, send, assign } from 'xstate';
-import { SYMBOL_ALL } from './constants';
+import { SYMBOL_ALL } from './lib/constants';
 
 export type OptionLike = {
   [k: string]: any;

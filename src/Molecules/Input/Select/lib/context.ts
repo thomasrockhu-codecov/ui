@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { useMachine } from '@xstate/react';
-import { SelectMachine } from './machine';
+import { SelectMachine } from '../machine';
 
 const typehack = () => useMachine(SelectMachine); // eslint-disable-line react-hooks/rules-of-hooks
 export type ContextType = ReturnType<typeof typehack>;

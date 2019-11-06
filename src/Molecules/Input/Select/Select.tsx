@@ -9,13 +9,13 @@ import {
   ListWrapper,
   SelectedValueWrapper,
   FormFieldOrFragment,
-} from './wrappers';
-import { useSelectMachineFromContext, SelectStateContext } from './context';
+} from './lib/wrappers';
+import { useSelectMachineFromContext, SelectStateContext } from './lib/context';
 import {
   useComponentsWithDefaults,
   defaultComponents,
   defaultComponentsMultiselect,
-} from './defaults';
+} from './lib/defaults';
 import { SelectMachine, Context, OptionLike } from './machine';
 import { Props } from './Select.types';
 
@@ -30,8 +30,8 @@ import {
   usePropagateChangesThroughOnChange,
   useSyncPropsWithMachine,
   useOnBlurAndOnFocus,
-} from './hooks';
-import { SYMBOL_ALL } from './constants';
+} from './lib/hooks';
+import { SYMBOL_ALL } from './lib/constants';
 
 /* eslint-disable spaced-comment */
 const HiddenSelect = styled.select`
@@ -175,21 +175,11 @@ const Select = (props: Props) => {
         aria-hidden="true"
         {...(multiselect ? { multiple: true } : {})}
         value={getValuesForNativeSelect(selectedItems, multiselect)}
+        onChange={noop}
       >
-        {placeholder && (
-          <option
-            label={placeholder}
-            value=""
-            {...(selectedItems.length === 0 ? { selected: true } : {})}
-          />
-        )}
+        {placeholder && <option label={placeholder} value="" />}
         {options.map(x => (
-          <option
-            label={x.label}
-            value={x.value}
-            key={`${x.label}${x.value}`}
-            {...(selectedItems.includes(x) ? { selected: true } : {})}
-          />
+          <option label={x.label} value={x.value} key={`${x.label}${x.value}`} />
         ))}
       </HiddenSelect>
       <SelectStateContext.Provider value={machineHandlers}>

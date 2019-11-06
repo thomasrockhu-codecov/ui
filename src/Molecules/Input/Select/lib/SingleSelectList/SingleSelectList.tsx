@@ -8,7 +8,7 @@ import {
   Box,
   FadedScroll,
   DropdownBubble,
-} from '../../../..';
+} from '../../../../..';
 
 type ListProps = {
   /**

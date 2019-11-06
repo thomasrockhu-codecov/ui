@@ -11,7 +11,7 @@ import { ThemeProvider } from 'styled-components';
 import '@testing-library/jest-dom/extend-expect';
 import { Select } from '../Select';
 import { createTheme } from '../../../../theme';
-import { useSelectMachineFromContext } from '../context';
+import { useSelectMachineFromContext } from '../lib/context';
 
 const theme = createTheme();
 afterEach(cleanup);
@@ -47,7 +47,7 @@ test('Single select without custom components', async () => {
   // After click component becomes open
   // And search field inside is focused
   const list = getByTestId('input-select-list');
-  const searchInput = getByTestId('search-input-select');
+  const searchInput = getByTestId('input-select-search-field');
 
   expect(document.activeElement).toBe(searchInput);
 
@@ -80,7 +80,7 @@ test('Single select without custom components', async () => {
   fireEvent.click(preselectedOption);
 
   // Selected item => dropdown in collapsed state
-  const searchInput2 = queryByTestId('search-input-select');
+  const searchInput2 = queryByTestId('input-select-search-field');
   expect(searchInput2).toBeNull();
 
   // Label of option should appear inside button
@@ -135,7 +135,7 @@ test('Multiselect without custom components and with select all', async () => {
   fireEvent.click(option3);
 
   // Selected item => dropdown NOT in collapsed state, because multiselect
-  const searchInput2 = queryByTestId('search-input-select');
+  const searchInput2 = queryByTestId('input-select-search-field');
   expect(searchInput2).not.toBeNull();
 
   const option2 = getByText(option2Label);
@@ -154,7 +154,7 @@ test('Multiselect without custom components and with select all', async () => {
   // Press ESC => collapsed state, button in focus
   fireEvent.keyDown(list, { key: 'Escape' });
   await waitForDomChange({ container: list });
-  const searchInput3 = queryByTestId('search-input-select');
+  const searchInput3 = queryByTestId('input-select-search-field');
   expect(searchInput3).toBeNull();
   expect(document.activeElement).toBe(button);
 });
