@@ -504,11 +504,12 @@ exports[`Storyshots Organisms | CardWithTabs Integration With Faded Scroll 1`] =
     left: 0;
     bottom: 0;
     pointer-events: none;
-    background: rgb(255,255,255);
-    background: linear-gradient(0deg,rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%);
-    opacity: 1;
+    background: transparent;
+    background: linear-gradient(0deg,#ffffffff 0%,#ffffff00 100%);
+    opacity: 0;
     -webkit-transition: 0.3s opacity ease-out;
     transition: 0.3s opacity ease-out;
+    opacity: 1;
   }
 }
 
@@ -876,11 +877,12 @@ exports[`Storyshots Organisms | CardWithTabs Integration With Faded Scroll With 
     left: 0;
     bottom: 0;
     pointer-events: none;
-    background: rgb(255,255,255);
-    background: linear-gradient(0deg,rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%);
-    opacity: 1;
+    background: transparent;
+    background: linear-gradient(0deg,#ffffffff 0%,#ffffff00 100%);
+    opacity: 0;
     -webkit-transition: 0.3s opacity ease-out;
     transition: 0.3s opacity ease-out;
+    opacity: 1;
   }
 }
 
