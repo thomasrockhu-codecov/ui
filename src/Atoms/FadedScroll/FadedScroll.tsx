@@ -29,12 +29,12 @@ const fade = css<Pick<InternalProps, 'intersectionOnScreen'> & Props>`
     left: 0;
     bottom: 0;
     pointer-events: none;
-    background: rgb(255, 255, 255);
-    background: linear-gradient(0deg, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 100%);
-    opacity: 1;
+    background: transparent;
+    background: linear-gradient(0deg, #ffffffff 0%, #ffffff00 100%);
+    opacity: 0;
     transition: 0.3s opacity ease-out;
 
-    ${p => p.intersectionOnScreen && `opacity: 0;`}
+    ${p => !p.intersectionOnScreen && `opacity: 1;`}
   }
 `;
 
@@ -52,7 +52,7 @@ const Container = styled.div`
   padding-bottom: ${p => p.theme.spacing.unit(5)}px;
 `;
 
-const Fade = styled.div<Pick<InternalProps, 'intersectionOnScreen'> & Props>`
+const Fade = styled.div<InternalProps & Props>`
   height: 100%;
 
   ${p => (p.enableMobileFade ? fade : desktopFade)}
