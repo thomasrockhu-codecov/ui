@@ -72,8 +72,11 @@ const AccountValue = () => {
 // @ts-ignore
 const StyledBox = styled(Box)`
   cursor: pointer;
-  background: ${p => (p.focused ? p.theme.color.background : p.theme.color.card)};
+  background: ${p =>
+    // @ts-ignore
+    p.focused ? p.theme.color.background : p.theme.color.card};
   ${p =>
+    // @ts-ignore
     !p.isKeyboardNavigation
       ? `
   &: hover {
@@ -90,6 +93,7 @@ const AccountListItem = ({ index }) => {
   const selected = state.context.selectedItems.includes(option);
   const focused = isKeyboardNavigation && state.context.itemFocusIdx === index;
   return (
+    // @ts-ignore
     <StyledBox px={2} py={1} focused={focused} isKeyboardNavigation={isKeyboardNavigation}>
       <Flexbox container justifyContent="space-between" gutter={4}>
         <Flexbox item container alignItems="center" basis="32px" grow={0}>
