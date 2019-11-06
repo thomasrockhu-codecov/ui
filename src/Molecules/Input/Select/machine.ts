@@ -98,11 +98,11 @@ export const SelectMachine = Machine<Context>(
           },
           [ACTION_TYPES.SELECT_ITEM]: {
             actions: send(ACTION_TYPES.CLOSE),
-            cond: (ctx, e) => !e.payload.disabled && !ctx.multiselect,
+            cond: (ctx, e) => e.payload && !e.payload.disabled && !ctx.multiselect,
           },
           [ACTION_TYPES.DESELECT_ITEM]: {
             actions: send(ACTION_TYPES.CLOSE),
-            cond: (ctx, e) => !e.payload.disabled && !ctx.multiselect,
+            cond: (ctx, e) => e.payload && !e.payload.disabled && !ctx.multiselect,
           },
         },
         states: {
@@ -148,7 +148,7 @@ export const SelectMachine = Machine<Context>(
               [ACTION_TYPES.SELECT_ITEM]: {
                 target: '.changeUncommitted',
                 actions: ['updateUncommittedItems', 'track'],
-                cond: (_, e) => !e.payload.disabled,
+                cond: (_, e) => e.payload && !e.payload.disabled,
               },
               [ACTION_TYPES.SELECT_FOCUSED_ITEM]: {
                 target: '.unknown',
@@ -202,7 +202,7 @@ export const SelectMachine = Machine<Context>(
               [ACTION_TYPES.SELECT_ITEM]: {
                 target: '.changeUncommitted',
                 actions: ['updateUncommittedItems', 'track'],
-                cond: (_, e) => !e.payload.disabled,
+                cond: (_, e) => e.payload && !e.payload.disabled,
               },
               [ACTION_TYPES.SELECT_FOCUSED_ITEM]: {
                 target: '.unknown',

@@ -16,6 +16,7 @@ import {
 } from '../../..';
 import { Display } from '../../../common/Display';
 import mdx from './Select.mdx';
+
 /* eslint-disable react-hooks/rules-of-hooks */
 const useSelectMachineFromContext = Input.Select.useSelectMachineFromContext;
 
@@ -631,19 +632,25 @@ export const sizeS = () => {
   );
 };
 
-export const linkWithDropdownAndSearchBox = () =>
+export const linkWithDropdownAndSearchBoxSecondary = () =>
   React.createElement(() => {
     const customComponents = React.useMemo(
       () => ({
         // @ts-ignore
-        SelectedValue: (_, ref) => {
+        SelectedValue: () => {
           const [state] = useSelectMachineFromContext();
 
           return (
-            <Link ref={ref} as="div">
-              <Flexbox container alignItems="center" gutter={2}>
-                <Icon.AddWithCircle inline color={t => t.color.cta} />
-                {state.context.placeholder}
+            <Link as="div">
+              <Flexbox container alignItems="center" gutter={1}>
+                <Flexbox item container alignItems="center">
+                  <Icon.AddWithCircle inline color={t => t.color.text} size={3.5} />
+                </Flexbox>
+                <Flexbox item>
+                  <Typography type="secondary" color={t => t.color.text}>
+                    {state.context.placeholder}
+                  </Typography>
+                </Flexbox>
               </Flexbox>
             </Link>
           );
@@ -697,7 +704,84 @@ export const linkWithDropdownAndSearchBox = () =>
         value={value}
         components={customComponents}
         onChange={handleChange}
-        width="350px"
+        width="150px"
+      />
+    );
+  });
+
+export const linkWithDropdownAndSearchBoxTertiary = () =>
+  React.createElement(() => {
+    const customComponents = React.useMemo(
+      () => ({
+        // @ts-ignore
+        SelectedValue: () => {
+          const [state] = useSelectMachineFromContext();
+
+          return (
+            <Link as="div">
+              <Flexbox container alignItems="center" gutter={1}>
+                <Flexbox item container alignItems="center">
+                  <Icon.AddWithCircle inline color={t => t.color.text} size={3} />
+                </Flexbox>
+                <Flexbox item>
+                  <Typography type="tertiary" color={t => t.color.text}>
+                    {state.context.placeholder}
+                  </Typography>
+                </Flexbox>
+              </Flexbox>
+            </Link>
+          );
+        },
+      }),
+      [],
+    );
+
+    const [value, setValue] = React.useState([]);
+    const hugeOptionsList = React.useMemo(
+      () =>
+        accountOptions
+          .concat(
+            accountOptions.map(x => ({
+              ...x,
+              value: x.value + Math.random(),
+              label: x.label + Math.random(),
+            })),
+          )
+          .concat(
+            accountOptions.map(x => ({
+              ...x,
+              value: x.value + Math.random(),
+              label: x.label + Math.random(),
+            })),
+          )
+          .concat(
+            accountOptions.map(x => ({
+              ...x,
+              value: x.value + Math.random(),
+              label: x.label + Math.random(),
+            })),
+          ),
+      [accountOptions],
+    );
+
+    // @ts-ignore
+    const handleChange = newVal => {
+      action('change')(newVal);
+      setValue(newVal);
+    };
+
+    return (
+      <Input.Select
+        options={hugeOptionsList}
+        label="User account"
+        id="input-select-search-inside"
+        placeholder="Select account"
+        noFormField
+        showSearch
+        value={value}
+        components={customComponents}
+        onChange={handleChange}
+        width="250px"
       />
     );
   });

@@ -33,6 +33,18 @@ exports[`Storyshots Molecules | Input / Select / MultiSelectList Item Default 1`
   align-items: center;
 }
 
+.c3 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
 .c2 {
   box-sizing: border-box;
   display: -webkit-box;
@@ -54,18 +66,6 @@ exports[`Storyshots Molecules | Input / Select / MultiSelectList Item Default 1`
 
 .c2 > *:not(:first-child) {
   padding-top: 0;
-}
-
-.c3 {
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
 }
 
 .c17 {
@@ -366,6 +366,18 @@ exports[`Storyshots Molecules | Input / Select / MultiSelectList Item Disabled 1
   align-items: center;
 }
 
+.c3 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
 .c2 {
   box-sizing: border-box;
   display: -webkit-box;
@@ -387,18 +399,6 @@ exports[`Storyshots Molecules | Input / Select / MultiSelectList Item Disabled 1
 
 .c2 > *:not(:first-child) {
   padding-top: 0;
-}
-
-.c3 {
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
 }
 
 .c17 {
@@ -707,6 +707,18 @@ exports[`Storyshots Molecules | Input / Select / MultiSelectList Item Selected 1
   align-items: center;
 }
 
+.c3 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
 .c2 {
   box-sizing: border-box;
   display: -webkit-box;
@@ -728,18 +740,6 @@ exports[`Storyshots Molecules | Input / Select / MultiSelectList Item Selected 1
 
 .c2 > *:not(:first-child) {
   padding-top: 0;
-}
-
-.c3 {
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
 }
 
 .c17 {
@@ -1207,6 +1207,18 @@ exports[`Storyshots Molecules | Input / Select / MultiSelectList List With Diffe
   align-items: center;
 }
 
+.c15 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
 .c14 {
   box-sizing: border-box;
   display: -webkit-box;
@@ -1228,18 +1240,6 @@ exports[`Storyshots Molecules | Input / Select / MultiSelectList List With Diffe
 
 .c14 > *:not(:first-child) {
   padding-top: 0;
-}
-
-.c15 {
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
 }
 
 .c29 {
