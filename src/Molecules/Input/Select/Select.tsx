@@ -188,6 +188,7 @@ const Select = (props: Props) => {
       <SelectStateContext.Provider value={machineHandlers}>
         <FormFieldOrFragment
           label={label}
+          hideLabel={props.hideLabel}
           noFormField={props.noFormField}
           ref={formFieldRef}
           disabled={isDisabled}

@@ -77,10 +77,10 @@ ${p =>
     ? ''
     : `
 border-bottom: 1px solid ${p.theme.color.divider};
-margin-bottom: ${p.theme.spacing.unit(2)}px;
+box-sizing: border-box;
 `}
-  padding-right: ${p => p.theme.spacing.unit(2)}px;
-  padding-left: ${p => p.theme.spacing.unit(2)}px;
+  padding-right: ${p => p.theme.spacing.unit(3)}px;
+  padding-left: ${p => p.theme.spacing.unit(3)}px;
 
   height: ${p => p.theme.spacing.unit(7)}px;
 

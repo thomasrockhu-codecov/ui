@@ -145,6 +145,16 @@ export const defaultStory = () => (
     placeholder="Placeholder"
   />
 );
+
+export const hideLabel = () => (
+  <Input.Select
+    id="input-1"
+    options={[{ value: 1, label: '1' }, { value: 2, label: '2' }, { value: 3, label: '3' }]}
+    label="Label"
+    hideLabel
+    placeholder="Placeholder"
+  />
+);
 export const overflowStory = () => (
   <Input.Select
     id="input-1"
