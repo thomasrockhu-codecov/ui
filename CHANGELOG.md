@@ -1,3 +1,10 @@
+## [1.68.1](https://github.com/nordnet/ui/compare/v1.68.0...v1.68.1) (2019-11-06)
+
+
+### Bug Fixes
+
+* dont show fade in ie11 ([2d1e884](https://github.com/nordnet/ui/commit/2d1e884))
+
 # [1.68.0](https://github.com/nordnet/ui/compare/v1.67.0...v1.68.0) (2019-11-05)
 
 
