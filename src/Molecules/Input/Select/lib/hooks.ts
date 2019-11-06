@@ -23,11 +23,12 @@ export const useFocusFromMachine = (
       if (searchRef.current) {
         searchRef.current.focus();
         if (
-          machineState.context.itemFocusIdx &&
+          machineState.context.itemFocusIdx !== null &&
           itemRefs[machineState.context.itemFocusIdx] &&
           itemRefs[machineState.context.itemFocusIdx].scrollIntoView
-        )
-          itemRefs[machineState.context.itemFocusIdx].scrollIntoView({ block: 'nearest' });
+        ) {
+          itemRefs[machineState.context.itemFocusIdx!].scrollIntoView({ block: 'nearest' });
+        }
       }
     } else if (isInButtonFocusState) {
       if (buttonRef.current) buttonRef.current.focus();
