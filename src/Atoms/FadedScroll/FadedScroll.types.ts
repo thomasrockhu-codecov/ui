@@ -1,5 +1,6 @@
 export type InternalProps = {
-  intersectionOnScreen?: boolean;
+  intersectionTopOnScreen?: boolean | null;
+  intersectionBottomOnScreen?: boolean | null;
 };
 
 export type Props = {
@@ -13,6 +14,7 @@ export type Props = {
    * @default false
    */
   enableMobileFade?: boolean;
+  disableTopFade?: boolean;
 };
 
 export type Component = React.FC<Props>;

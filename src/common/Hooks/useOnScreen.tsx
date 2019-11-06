@@ -6,11 +6,10 @@ import { useState, useEffect } from 'react';
  * The hook will return true or false depending on if the ref is visible on the screen or not.
  */
 const useOnScreen = (ref: React.RefObject<any>, rootMargin: string = '0px') => {
-  const [isIntersecting, setIntersecting] = useState(false);
+  const [isIntersecting, setIntersecting] = useState<boolean | null>(null);
 
   useEffect(() => {
-    if (typeof IntersectionObserver === 'undefined') {
-      // IE11
+    if (!ref.current || typeof IntersectionObserver === 'undefined') {
       return () => null;
     }
 

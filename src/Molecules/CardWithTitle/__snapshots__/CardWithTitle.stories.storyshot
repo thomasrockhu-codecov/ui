@@ -280,15 +280,15 @@ exports[`Storyshots Molecules | CardWithTitle Integration Faded Scroll With Heig
   -webkit-flex-grow: 1;
   -ms-flex-positive: 1;
   flex-grow: 1;
-  box-sizing: border-box;
-  padding-bottom: 20px;
+  -webkit-flex-shrink: 1;
+  -ms-flex-negative: 1;
+  flex-shrink: 1;
+  -webkit-flex-basis: auto;
+  -ms-flex-preferred-size: auto;
+  flex-basis: auto;
 }
 
-.c6 {
-  height: 100%;
-}
-
-.c8 {
+.c7 {
   position: relative;
 }
 
@@ -296,9 +296,18 @@ exports[`Storyshots Molecules | CardWithTitle Integration Faded Scroll With Heig
   height: 4px;
   width: 4px;
   position: absolute;
-  bottom: 0;
   right: 0;
   pointer-events: none;
+  bottom: 0;
+}
+
+.c8 {
+  height: 4px;
+  width: 4px;
+  position: absolute;
+  right: 0;
+  pointer-events: none;
+  top: 0;
 }
 
 .c4 {
@@ -331,32 +340,54 @@ exports[`Storyshots Molecules | CardWithTitle Integration Faded Scroll With Heig
 }
 
 @media (min-width:976px) {
-  .c6 {
+  .c5 {
     position: relative;
-    height: 100%;
   }
 
-  .c6::after {
+  .c5::before {
     content: '';
     display: block;
     width: 100%;
     height: 52px;
     position: absolute;
     left: 0;
-    bottom: 0;
     pointer-events: none;
     background: transparent;
-    background: linear-gradient(0deg,#ffffffff 0%,#ffffff00 100%);
+    z-index: 1;
     opacity: 0;
     -webkit-transition: 0.3s opacity ease-out;
     transition: 0.3s opacity ease-out;
-    opacity: 1;
+    top: 0;
+    background: linear-gradient(0deg,#ffffff00 0%,#00ffffff 100%);
   }
 }
 
 @media (min-width:976px) {
-  .c7 {
-    max-height: 100%;
+  .c5 {
+    position: relative;
+  }
+
+  .c5::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 52px;
+    position: absolute;
+    left: 0;
+    pointer-events: none;
+    background: transparent;
+    z-index: 1;
+    opacity: 0;
+    -webkit-transition: 0.3s opacity ease-out;
+    transition: 0.3s opacity ease-out;
+    bottom: 0;
+    background: linear-gradient(0deg,#fff00fff 0%,#ffffff00 100%);
+  }
+}
+
+@media (min-width:976px) {
+  .c6 {
+    height: 100%;
     overflow-y: auto;
   }
 }
@@ -398,20 +429,19 @@ exports[`Storyshots Molecules | CardWithTitle Integration Faded Scroll With Heig
       >
         <div
           className="c8"
+        />
+        <div
+          className="c9"
         >
-          <div
-            className="c9"
+          <span
+            className="c10"
           >
-            <span
-              className="c10"
-            >
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ac lectus aliquam, scelerisque est eget, lobortis massa. Praesent in pretium orci. Phasellus est sapien, maximus at nulla ac, condimentum dictum ante. Sed consequat erat lacinia, molestie augue vitae, efficitur purus. In venenatis elit nec tortor condimentum, sit amet elementum magna fermentum. Phasellus dictum non augue vitae pellentesque. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Praesent rutrum egestas sollicitudin. Cras semper, mi vitae vulputate aliquam, tortor ante maximus libero, vitae maximus velit dui quis augue. Aenean condimentum molestie ante, nec rhoncus nunc aliquet non. Aliquam bibendum tortor dui, eget porttitor nibh fermentum eu. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Suspendisse nec magna lectus. Fusce posuere nisi vel purus faucibus sodales. Quisque ac ullamcorper eros, sed lobortis risus. Sed eu magna mi. Vestibulum accumsan porta velit. Donec ligula arcu, cursus eu nisl vel, molestie pretium neque. Etiam urna elit, mollis vel arcu id, vulputate mattis nisi. Fusce eget odio id ipsum consectetur feugiat vitae ut tortor. Aliquam non tempor nibh, scelerisque placerat eros. Nulla facilisi.
-            </span>
-          </div>
-          <div
-            className="c11"
-          />
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ac lectus aliquam, scelerisque est eget, lobortis massa. Praesent in pretium orci. Phasellus est sapien, maximus at nulla ac, condimentum dictum ante. Sed consequat erat lacinia, molestie augue vitae, efficitur purus. In venenatis elit nec tortor condimentum, sit amet elementum magna fermentum. Phasellus dictum non augue vitae pellentesque. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Praesent rutrum egestas sollicitudin. Cras semper, mi vitae vulputate aliquam, tortor ante maximus libero, vitae maximus velit dui quis augue. Aenean condimentum molestie ante, nec rhoncus nunc aliquet non. Aliquam bibendum tortor dui, eget porttitor nibh fermentum eu. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Suspendisse nec magna lectus. Fusce posuere nisi vel purus faucibus sodales. Quisque ac ullamcorper eros, sed lobortis risus. Sed eu magna mi. Vestibulum accumsan porta velit. Donec ligula arcu, cursus eu nisl vel, molestie pretium neque. Etiam urna elit, mollis vel arcu id, vulputate mattis nisi. Fusce eget odio id ipsum consectetur feugiat vitae ut tortor. Aliquam non tempor nibh, scelerisque placerat eros. Nulla facilisi.
+          </span>
         </div>
+        <div
+          className="c11"
+        />
       </div>
     </div>
   </div>
@@ -436,15 +466,15 @@ exports[`Storyshots Molecules | CardWithTitle Integration With Faded Scroll 1`] 
   -webkit-flex-grow: 1;
   -ms-flex-positive: 1;
   flex-grow: 1;
-  box-sizing: border-box;
-  padding-bottom: 20px;
+  -webkit-flex-shrink: 1;
+  -ms-flex-negative: 1;
+  flex-shrink: 1;
+  -webkit-flex-basis: auto;
+  -ms-flex-preferred-size: auto;
+  flex-basis: auto;
 }
 
-.c5 {
-  height: 100%;
-}
-
-.c7 {
+.c6 {
   position: relative;
 }
 
@@ -452,9 +482,18 @@ exports[`Storyshots Molecules | CardWithTitle Integration With Faded Scroll 1`] 
   height: 4px;
   width: 4px;
   position: absolute;
-  bottom: 0;
   right: 0;
   pointer-events: none;
+  bottom: 0;
+}
+
+.c7 {
+  height: 4px;
+  width: 4px;
+  position: absolute;
+  right: 0;
+  pointer-events: none;
+  top: 0;
 }
 
 .c3 {
@@ -487,31 +526,53 @@ exports[`Storyshots Molecules | CardWithTitle Integration With Faded Scroll 1`] 
 }
 
 @media (min-width:976px) {
-  .c5 {
+  .c4 {
     position: relative;
-    height: 100%;
   }
 
-  .c5::after {
+  .c4::before {
     content: '';
     display: block;
     width: 100%;
     height: 52px;
     position: absolute;
     left: 0;
-    bottom: 0;
     pointer-events: none;
     background: transparent;
-    background: linear-gradient(0deg,#ffffffff 0%,#ffffff00 100%);
+    z-index: 1;
     opacity: 0;
     -webkit-transition: 0.3s opacity ease-out;
     transition: 0.3s opacity ease-out;
-    opacity: 1;
+    top: 0;
+    background: linear-gradient(0deg,#ffffff00 0%,#00ffffff 100%);
   }
 }
 
 @media (min-width:976px) {
-  .c6 {
+  .c4 {
+    position: relative;
+  }
+
+  .c4::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 52px;
+    position: absolute;
+    left: 0;
+    pointer-events: none;
+    background: transparent;
+    z-index: 1;
+    opacity: 0;
+    -webkit-transition: 0.3s opacity ease-out;
+    transition: 0.3s opacity ease-out;
+    bottom: 0;
+    background: linear-gradient(0deg,#fff00fff 0%,#ffffff00 100%);
+  }
+}
+
+@media (min-width:976px) {
+  .c5 {
     max-height: 200px;
     overflow-y: auto;
   }
@@ -548,20 +609,19 @@ exports[`Storyshots Molecules | CardWithTitle Integration With Faded Scroll 1`] 
       >
         <div
           className="c7"
+        />
+        <div
+          className="c8"
         >
-          <div
-            className="c8"
+          <span
+            className="c9"
           >
-            <span
-              className="c9"
-            >
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ac lectus aliquam, scelerisque est eget, lobortis massa. Praesent in pretium orci. Phasellus est sapien, maximus at nulla ac, condimentum dictum ante. Sed consequat erat lacinia, molestie augue vitae, efficitur purus. In venenatis elit nec tortor condimentum, sit amet elementum magna fermentum. Phasellus dictum non augue vitae pellentesque. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Praesent rutrum egestas sollicitudin. Cras semper, mi vitae vulputate aliquam, tortor ante maximus libero, vitae maximus velit dui quis augue. Aenean condimentum molestie ante, nec rhoncus nunc aliquet non. Aliquam bibendum tortor dui, eget porttitor nibh fermentum eu. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Suspendisse nec magna lectus. Fusce posuere nisi vel purus faucibus sodales. Quisque ac ullamcorper eros, sed lobortis risus. Sed eu magna mi. Vestibulum accumsan porta velit. Donec ligula arcu, cursus eu nisl vel, molestie pretium neque. Etiam urna elit, mollis vel arcu id, vulputate mattis nisi. Fusce eget odio id ipsum consectetur feugiat vitae ut tortor. Aliquam non tempor nibh, scelerisque placerat eros. Nulla facilisi.
-            </span>
-          </div>
-          <div
-            className="c10"
-          />
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ac lectus aliquam, scelerisque est eget, lobortis massa. Praesent in pretium orci. Phasellus est sapien, maximus at nulla ac, condimentum dictum ante. Sed consequat erat lacinia, molestie augue vitae, efficitur purus. In venenatis elit nec tortor condimentum, sit amet elementum magna fermentum. Phasellus dictum non augue vitae pellentesque. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Praesent rutrum egestas sollicitudin. Cras semper, mi vitae vulputate aliquam, tortor ante maximus libero, vitae maximus velit dui quis augue. Aenean condimentum molestie ante, nec rhoncus nunc aliquet non. Aliquam bibendum tortor dui, eget porttitor nibh fermentum eu. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Suspendisse nec magna lectus. Fusce posuere nisi vel purus faucibus sodales. Quisque ac ullamcorper eros, sed lobortis risus. Sed eu magna mi. Vestibulum accumsan porta velit. Donec ligula arcu, cursus eu nisl vel, molestie pretium neque. Etiam urna elit, mollis vel arcu id, vulputate mattis nisi. Fusce eget odio id ipsum consectetur feugiat vitae ut tortor. Aliquam non tempor nibh, scelerisque placerat eros. Nulla facilisi.
+          </span>
         </div>
+        <div
+          className="c10"
+        />
       </div>
     </div>
   </div>
