@@ -1,5 +1,24 @@
-import { Machine, send, assign } from 'xstate';
+import { Machine, send, assign, actions } from 'xstate';
 import { SYMBOL_ALL } from './lib/constants';
+
+export const ACTION_TYPES = {
+  SYNC: 'SYNC',
+  OPEN: 'OPEN',
+  CLOSE: 'CLOSE',
+  TOGGLE: 'TOGGLE',
+  FOCUS: 'FOCUS',
+  BLUR: 'BLUR',
+  SELECT_FOCUSED_ITEM: 'SELECT_FOCUSED_ITEM',
+  SELECT_ITEM: 'SELECT_ITEM',
+  DESELECT_ITEM: 'DESELECT_ITEM',
+  CHANGE_COMMIT: 'CHANGE_COMMIT',
+  ITEM_CLICK: 'ITEM_CLICK',
+  SEARCH_QUERY_UPDATE: 'SEARCH_QUERY_UPDATE',
+  MOUSE_MOVE: 'MOUSE_MOVE',
+  KEY_PRESS: 'KEY_PRESS',
+  FOCUS_NEXT_ITEM: 'FOCUS_NEXT_ITEM',
+  FOCUS_PREV_ITEM: 'FOCUS_PREV_ITEM',
+};
 
 export type OptionLike = {
   [k: string]: any;
@@ -56,7 +75,7 @@ export const SelectMachine = Machine<Context>(
       uncommitedSelectedItems: [] as Array<any>,
     },
     on: {
-      SYNC: {
+      [ACTION_TYPES.SYNC]: {
         actions: 'syncProps',
         target: 'selection.unknown',
       },
@@ -65,21 +84,24 @@ export const SelectMachine = Machine<Context>(
       open: {
         initial: 'unknown',
         on: {
-          OPEN: {
+          [ACTION_TYPES.OPEN]: {
             target: '.on',
             actions: 'restoreFocusOrFocusFirst',
           },
-          CLOSE: { target: '.off', actions: 'cleanSearch' },
-          TOGGLE: [{ actions: send('CLOSE'), cond: ctx => ctx.open }, { actions: send('OPEN') }],
-          BLUR: {
-            actions: send('CLOSE'),
+          [ACTION_TYPES.CLOSE]: { target: '.off', actions: 'cleanSearch' },
+          [ACTION_TYPES.TOGGLE]: [
+            { actions: send(ACTION_TYPES.CLOSE), cond: ctx => ctx.open },
+            { actions: send(ACTION_TYPES.OPEN) },
+          ],
+          [ACTION_TYPES.BLUR]: {
+            actions: send(ACTION_TYPES.CLOSE),
           },
-          SELECT_ITEM: {
-            actions: send('CLOSE'),
+          [ACTION_TYPES.SELECT_ITEM]: {
+            actions: send(ACTION_TYPES.CLOSE),
             cond: (ctx, e) => !e.payload.disabled && !ctx.multiselect,
           },
-          DESELECT_ITEM: {
-            actions: send('CLOSE'),
+          [ACTION_TYPES.DESELECT_ITEM]: {
+            actions: send(ACTION_TYPES.CLOSE),
             cond: (ctx, e) => !e.payload.disabled && !ctx.multiselect,
           },
         },
@@ -123,18 +145,18 @@ export const SelectMachine = Machine<Context>(
           controlled: {
             initial: 'unknown',
             on: {
-              SELECT_ITEM: {
+              [ACTION_TYPES.SELECT_ITEM]: {
                 target: '.changeUncommitted',
-                actions: 'updateUncommittedItems',
+                actions: ['updateUncommittedItems', 'track'],
                 cond: (_, e) => !e.payload.disabled,
               },
-              SELECT_FOCUSED_ITEM: {
+              [ACTION_TYPES.SELECT_FOCUSED_ITEM]: {
                 target: '.unknown',
                 actions: 'sendSelectOrDeselectVisibleFocusedOption',
               },
-              DESELECT_ITEM: {
+              [ACTION_TYPES.DESELECT_ITEM]: {
                 target: '.unknown',
-                actions: 'deselectOption',
+                actions: ['deselectOption', 'track'],
                 cond: ctx => !!ctx.multiselect,
               },
             },
@@ -157,7 +179,12 @@ export const SelectMachine = Machine<Context>(
               on: {},
               off: {},
               changeUncommitted: {
-                on: { CHANGE_COMMIT: { target: 'unknown', actions: 'commitSelectedItems' } },
+                on: {
+                  [ACTION_TYPES.CHANGE_COMMIT]: {
+                    target: 'unknown',
+                    actions: 'commitSelectedItems',
+                  },
+                },
               },
               incorrectSelection: {
                 on: {
@@ -172,18 +199,18 @@ export const SelectMachine = Machine<Context>(
           uncontrolled: {
             initial: 'unknown',
             on: {
-              SELECT_ITEM: {
+              [ACTION_TYPES.SELECT_ITEM]: {
                 target: '.changeUncommitted',
-                actions: 'updateUncommittedItems',
+                actions: ['updateUncommittedItems', 'track'],
                 cond: (_, e) => !e.payload.disabled,
               },
-              SELECT_FOCUSED_ITEM: {
+              [ACTION_TYPES.SELECT_FOCUSED_ITEM]: {
                 target: '.unknown',
                 actions: 'sendSelectOrDeselectVisibleFocusedOption',
               },
-              DESELECT_ITEM: {
+              [ACTION_TYPES.DESELECT_ITEM]: {
                 target: '.unknown',
-                actions: 'deselectOption',
+                actions: ['deselectOption', 'track'],
                 cond: ctx => !!ctx.multiselect,
               },
             },
@@ -203,7 +230,12 @@ export const SelectMachine = Machine<Context>(
               on: {},
               off: {},
               changeUncommitted: {
-                on: { CHANGE_COMMIT: { target: 'unknown', actions: 'commitSelectedItems' } },
+                on: {
+                  [ACTION_TYPES.CHANGE_COMMIT]: {
+                    target: 'unknown',
+                    actions: 'commitSelectedItems',
+                  },
+                },
               },
               incorrectSelection: {
                 on: {
@@ -254,10 +286,10 @@ export const SelectMachine = Machine<Context>(
           disabled: {},
           enabled: {
             on: {
-              BLUR: '.idle',
-              FOCUS: '.active.focus.unknown',
-              OPEN: '.active.focus.unknown',
-              ITEM_CLICK: {
+              [ACTION_TYPES.BLUR]: '.idle',
+              [ACTION_TYPES.FOCUS]: '.active.focus.unknown',
+              [ACTION_TYPES.OPEN]: '.active.focus.unknown',
+              [ACTION_TYPES.ITEM_CLICK]: {
                 actions: 'selectOrDeselect',
               },
             },
@@ -271,13 +303,13 @@ export const SelectMachine = Machine<Context>(
 
               idle: {
                 on: {
-                  FOCUS: 'active.focus.unknown',
+                  [ACTION_TYPES.FOCUS]: 'active.focus.unknown',
                 },
               },
               active: {
                 type: 'parallel',
                 on: {
-                  BLUR: 'idle',
+                  [ACTION_TYPES.BLUR]: 'idle',
                 },
                 states: {
                   search: {
@@ -294,7 +326,7 @@ export const SelectMachine = Machine<Context>(
                       },
                       explicit: {
                         on: {
-                          SEARCH_QUERY_UPDATE: {
+                          [ACTION_TYPES.SEARCH_QUERY_UPDATE]: {
                             actions: [
                               'updateSearch',
                               'updateVisibleOptions',
@@ -309,7 +341,7 @@ export const SelectMachine = Machine<Context>(
                           idle: {
                             onEntry: 'cleanSearch',
                             on: {
-                              SEARCH_QUERY_UPDATE: {
+                              [ACTION_TYPES.SEARCH_QUERY_UPDATE]: {
                                 target: 'processInput',
                                 actions: 'updateSearch',
                               },
@@ -326,7 +358,7 @@ export const SelectMachine = Machine<Context>(
                               200: 'search',
                             },
                             on: {
-                              SEARCH_QUERY_UPDATE: {
+                              [ACTION_TYPES.SEARCH_QUERY_UPDATE]: {
                                 target: 'resetTimeout',
                                 actions: 'updateSearch',
                               },
@@ -349,7 +381,7 @@ export const SelectMachine = Machine<Context>(
 
                   navigation: {
                     on: {
-                      CLOSE: {
+                      [ACTION_TYPES.CLOSE]: {
                         actions: 'setNavTypeKeyboard',
                         target: '.keyboard',
                       },
@@ -366,7 +398,7 @@ export const SelectMachine = Machine<Context>(
                       },
                       keyboard: {
                         on: {
-                          MOUSE_MOVE: {
+                          [ACTION_TYPES.MOUSE_MOVE]: {
                             target: 'mouse',
                             actions: 'setNavTypeMouse',
                           },
@@ -374,7 +406,7 @@ export const SelectMachine = Machine<Context>(
                       },
                       mouse: {
                         on: {
-                          KEY_PRESS: {
+                          [ACTION_TYPES.KEY_PRESS]: {
                             target: 'keyboard',
                             actions: 'setNavTypeKeyboard',
                           },
@@ -385,7 +417,7 @@ export const SelectMachine = Machine<Context>(
                   focus: {
                     initial: 'unknown',
                     on: {
-                      CLOSE: {
+                      [ACTION_TYPES.CLOSE]: {
                         target: '.button',
                       },
                     },
@@ -401,10 +433,10 @@ export const SelectMachine = Machine<Context>(
                       button: {},
                       listItem: {
                         on: {
-                          FOCUS_NEXT_ITEM: {
+                          [ACTION_TYPES.FOCUS_NEXT_ITEM]: {
                             actions: 'setNextFocusedItem',
                           },
-                          FOCUS_PREV_ITEM: {
+                          [ACTION_TYPES.FOCUS_PREV_ITEM]: {
                             actions: 'setPrevFocusedItem',
                           },
                         },
@@ -466,7 +498,7 @@ export const SelectMachine = Machine<Context>(
       }),
       selectOrDeselect: send((ctx: Context, event: any) => {
         const isSelected = includesOption(ctx.selectedItems, event.payload);
-        const type = isSelected ? 'DESELECT_ITEM' : 'SELECT_ITEM';
+        const type = isSelected ? ACTION_TYPES.DESELECT_ITEM : ACTION_TYPES.SELECT_ITEM;
 
         return {
           type,
@@ -478,8 +510,8 @@ export const SelectMachine = Machine<Context>(
           ? ''
           : {
               type: includesOption(ctx.selectedItems, ctx.visibleOptions[ctx.itemFocusIdx])
-                ? 'DESELECT_ITEM'
-                : 'SELECT_ITEM',
+                ? ACTION_TYPES.DESELECT_ITEM
+                : ACTION_TYPES.SELECT_ITEM,
               payload: ctx.visibleOptions[ctx.itemFocusIdx],
             },
       ),
@@ -527,6 +559,7 @@ export const SelectMachine = Machine<Context>(
       commitSelectedItems: assign<Context>({
         selectedItems: ctx => ctx.uncommitedSelectedItems,
       }),
+      track: actions.log((ctx, e) => e),
       forceValueFromProps: assign<Context>({ selectedItems: ctx => ctx.valueFromProps }),
     } as any,
   },

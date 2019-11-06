@@ -43,6 +43,13 @@ export const useIsFirstRender = () => {
   return isFirstRender.current;
 };
 
+/**
+ *
+ * Batching actions together using setTimeout
+ * Storing all actions in array
+ * Then pass array to send function
+ * Which in turn, will batch them inside machine
+ */
 export const useBatchedSend = (send: Function) => {
   const accumulatedArrowActions = React.useRef([] as any[]);
   const currentTimeoutId = React.useRef<NodeJS.Timeout | null>(null);
@@ -50,7 +57,9 @@ export const useBatchedSend = (send: Function) => {
   return React.useCallback(
     (actionTypes: any[]) => {
       accumulatedArrowActions.current.push(...actionTypes);
+      // If previous send wasn't invoked, clear timeout and try one more time
       if (currentTimeoutId.current) clearTimeout(currentTimeoutId.current);
+      // Deferring send to next tick
       currentTimeoutId.current = setTimeout(() => {
         currentTimeoutId.current = null;
         // Sending array of actions enables batching

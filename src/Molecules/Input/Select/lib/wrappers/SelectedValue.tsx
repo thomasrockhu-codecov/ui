@@ -17,7 +17,7 @@ const StyledA11yButton = styled(CleanNormalizedButton)`
   width: 100%;
   height: 100%;
   cursor: ${p => (p.disabled ? 'not-allowed' : 'pointer')};
-
+  padding: 0;
   display: flex;
   border: 0;
   &:active {
@@ -33,8 +33,6 @@ const StyledA11yButton = styled(CleanNormalizedButton)`
       left: 0;
       right: 0;
       outline: 0;
-    
-      padding: 0;
       text-align: initial;
       `}
 `;

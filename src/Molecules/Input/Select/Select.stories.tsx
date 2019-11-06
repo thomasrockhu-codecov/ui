@@ -3,7 +3,17 @@ import React from 'react';
 import { action } from '@storybook/addon-actions';
 import R from 'ramda';
 import styled from 'styled-components';
-import { Input, Avatar, Flexbox, Number, Typography, Box, Icon, Link } from '../../..';
+import {
+  Input,
+  Avatar,
+  Flexbox,
+  Number,
+  Typography,
+  Box,
+  Icon,
+  Link,
+  TrackingContext,
+} from '../../..';
 import { Display } from '../../../common/Display';
 import mdx from './Select.mdx';
 /* eslint-disable react-hooks/rules-of-hooks */
@@ -211,7 +221,16 @@ export const multiSelectUncontrolled = () =>
       />
     );
   });
-
+export const tracking = () => (
+  <TrackingContext.Provider value={{ track: action('Tracking') }}>
+    <Input.Select
+      id="input-1"
+      options={[{ value: 1, label: '1' }, { value: 2, label: '2' }, { value: 3, label: '3' }]}
+      label="Label"
+      placeholder="Placeholder"
+    />
+  </TrackingContext.Provider>
+);
 export const searchStory = () => (
   <Input.Select
     id="input-1"

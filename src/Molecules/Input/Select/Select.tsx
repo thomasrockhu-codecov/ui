@@ -16,7 +16,7 @@ import {
   defaultComponents,
   defaultComponentsMultiselect,
 } from './lib/defaults';
-import { SelectMachine, Context, OptionLike } from './machine';
+import { SelectMachine, Context, OptionLike, ACTION_TYPES } from './machine';
 import { Props } from './Select.types';
 
 import { assert } from '../../../common/utils';
@@ -32,6 +32,7 @@ import {
   useOnBlurAndOnFocus,
 } from './lib/hooks';
 import { SYMBOL_ALL } from './lib/constants';
+import TrackingContext from '../../../common/tracking';
 
 /* eslint-disable spaced-comment */
 const HiddenSelect = styled.select`
@@ -52,11 +53,12 @@ const Select = (props: Props) => {
     `Input.Select: You can't use 'value' prop without onChange. It makes sense only if you want a readonly Input.Select, which is really weird. Don't do that.`,
   );
 
-  const isFirstRender = useIsFirstRender();
+  const trackContext = React.useContext(TrackingContext);
 
+  const isFirstRender = useIsFirstRender();
   /******      Machine instantiation      ******/
-  const machineHandlers = useMachine<Context, any>(
-    SelectMachine.withContext({
+  const machineHandlers = useMachine<Context, any>(SelectMachine, {
+    context: {
       label: props.label,
       error: props.error || '',
       success: props.success || false,
@@ -75,8 +77,9 @@ const Select = (props: Props) => {
       id: props.id,
       valueFromProps: props.value,
       uncommitedSelectedItems: [],
-    }),
-  );
+    },
+    logger: e => trackContext && trackContext.track('Input.Select', e, props),
+  });
   const [machineState, send] = machineHandlers;
 
   /******      Machine syncing      ******/
@@ -243,6 +246,7 @@ const Select = (props: Props) => {
 };
 
 Select.useSelectMachineFromContext = useSelectMachineFromContext;
+Select.ACTION_TYPES = ACTION_TYPES;
 Select.SYMBOL_ALL = SYMBOL_ALL;
 Select.defaults = {
   components: defaultComponents,

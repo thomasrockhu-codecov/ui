@@ -19,8 +19,11 @@ const EllipsizingText = styled.span`
   text-align: left;
 `;
 
+const CHEVRON_WIDTH = 20;
+const CHEVRON_OFFSET = 4;
+
 const StyledFlexedBox = styled(Box)`
-  width: ${p => `calc(100% - ${p.theme.spacing.unit(6)}px)`};
+  width: calc(100% - ${CHEVRON_WIDTH}px - ${CHEVRON_OFFSET}px);
   display: flex;
   align-items: center;
 `;
