@@ -21,6 +21,7 @@ export type ButtonProps = {
   to?: ReactRouterDomLinkProps['to'];
   rel?: string;
   colorFn?: ColorFn;
+  id?: string;
 };
 
 export type ButtonComponent = React.FC<ButtonProps>;

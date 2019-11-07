@@ -205,6 +205,7 @@ export const Button: ButtonComponent = props => {
     to,
     children,
     rel,
+    id,
     color,
   } = props;
   const toAndDisabledAreNotPresentTogether = !(to && disabled);
@@ -237,6 +238,7 @@ export const Button: ButtonComponent = props => {
         variant={variant}
         fullWidth={fullWidth}
         colorFn={color}
+        id={id}
       >
         <Typography type={size === 'l' ? 'primary' : 'secondary'} color="inherit">
           {children}
@@ -247,6 +249,7 @@ export const Button: ButtonComponent = props => {
 
   return (
     <StyledButton
+      id={id}
       className={className}
       disabled={disabled}
       onClick={trackClick}
