@@ -1,4 +1,4 @@
-import { Machine, send, assign, actions } from 'xstate';
+import { Machine, send, assign } from 'xstate';
 import { SYMBOL_ALL } from './lib/constants';
 
 export const ACTION_TYPES = {
@@ -147,7 +147,7 @@ export const SelectMachine = Machine<Context>(
             on: {
               [ACTION_TYPES.SELECT_ITEM]: {
                 target: '.changeUncommitted',
-                actions: ['updateUncommittedItems', 'track'],
+                actions: 'updateUncommittedItems',
                 cond: (_, e) => e.payload && !e.payload.disabled,
               },
               [ACTION_TYPES.SELECT_FOCUSED_ITEM]: {
@@ -156,7 +156,7 @@ export const SelectMachine = Machine<Context>(
               },
               [ACTION_TYPES.DESELECT_ITEM]: {
                 target: '.unknown',
-                actions: ['deselectOption', 'track'],
+                actions: 'deselectOption',
                 cond: ctx => !!ctx.multiselect,
               },
             },
@@ -201,7 +201,7 @@ export const SelectMachine = Machine<Context>(
             on: {
               [ACTION_TYPES.SELECT_ITEM]: {
                 target: '.changeUncommitted',
-                actions: ['updateUncommittedItems', 'track'],
+                actions: 'updateUncommittedItems',
                 cond: (_, e) => e.payload && !e.payload.disabled,
               },
               [ACTION_TYPES.SELECT_FOCUSED_ITEM]: {
@@ -210,7 +210,7 @@ export const SelectMachine = Machine<Context>(
               },
               [ACTION_TYPES.DESELECT_ITEM]: {
                 target: '.unknown',
-                actions: ['deselectOption', 'track'],
+                actions: 'deselectOption',
                 cond: ctx => !!ctx.multiselect,
               },
             },
@@ -559,7 +559,6 @@ export const SelectMachine = Machine<Context>(
       commitSelectedItems: assign<Context>({
         selectedItems: ctx => ctx.uncommitedSelectedItems,
       }),
-      track: actions.log((ctx, e) => e),
       forceValueFromProps: assign<Context>({ selectedItems: ctx => ctx.valueFromProps }),
     } as any,
   },

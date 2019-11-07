@@ -18,6 +18,12 @@ export type Props = {
   label: string;
   name?: string;
   /**
+   * Use this only if you understand what you are doing.
+   * 99% of the time you don't need this.
+   * Allows you to pass custom config to underlying machine.
+   */
+  machineConfig?: any;
+  /**
    * @default 'm'
    */
   size?: 's' | 'm';

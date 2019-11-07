@@ -233,7 +233,12 @@ export const multiSelectUncontrolled = () =>
     );
   });
 export const tracking = () => (
-  <TrackingContext.Provider value={{ track: action('Tracking') }}>
+  <TrackingContext.Provider
+    value={{
+      track: (componentName, e, props) =>
+        action('Tracking')(componentName, e.type, e.payload, props),
+    }}
+  >
     <Input.Select
       id="input-1"
       options={[{ value: 1, label: '1' }, { value: 2, label: '2' }, { value: 3, label: '3' }]}

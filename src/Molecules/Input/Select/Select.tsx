@@ -56,8 +56,11 @@ const Select = (props: Props) => {
   const trackContext = React.useContext(TrackingContext);
 
   const isFirstRender = useIsFirstRender();
+  const machine = props.machineConfig
+    ? SelectMachine.withConfig(props.machineConfig)
+    : SelectMachine;
   /******      Machine instantiation      ******/
-  const machineHandlers = useMachine<Context, any>(SelectMachine, {
+  const machineHandlers = useMachine<Context, any>(machine, {
     context: {
       label: props.label,
       error: props.error || '',
@@ -78,9 +81,17 @@ const Select = (props: Props) => {
       valueFromProps: props.value,
       uncommitedSelectedItems: [],
     },
-    logger: e => trackContext && trackContext.track('Input.Select', e, props),
   });
-  const [machineState, send] = machineHandlers;
+  const [machineState, send, service] = machineHandlers;
+
+  /******      Tracking      ******/
+  const currentPropsRef = React.useRef(props);
+  currentPropsRef.current = props;
+  React.useEffect(() => {
+    service.onEvent(
+      e => trackContext && trackContext.track('Input.Select', e, currentPropsRef.current),
+    );
+  }, []);
 
   /******      Machine syncing      ******/
   usePropagateChangesThroughOnChange(machineState, send, props.onChange, isFirstRender);
