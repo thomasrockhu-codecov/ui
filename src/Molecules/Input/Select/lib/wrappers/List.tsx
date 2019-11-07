@@ -32,6 +32,7 @@ export const ListWrapper = React.forwardRef<HTMLDivElement, any>(
       onBlur,
       onMouseMove,
       searchComponent,
+      actionsComponent,
       width,
       'data-testid': dataTestId,
     },
@@ -48,7 +49,11 @@ export const ListWrapper = React.forwardRef<HTMLDivElement, any>(
         onBlur={onBlur}
         width={width}
       >
-        <Component searchComponent={searchComponent} position={noFormField ? 'left' : 'right'}>
+        <Component
+          searchComponent={searchComponent}
+          actionsComponent={actionsComponent}
+          position={noFormField ? 'left' : 'right'}
+        >
           {children}
         </Component>
       </StyledListWrapper>

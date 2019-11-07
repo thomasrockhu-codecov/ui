@@ -36,7 +36,6 @@ export const ListItemWrapper = React.forwardRef<
       aria-selected={selected}
       aria-disabled={disabled}
       id={`${props.id}-option-${props.index}`}
-      tabIndex={0}
     >
       <Component index={props.index} />
     </StyledListItemWrapper>

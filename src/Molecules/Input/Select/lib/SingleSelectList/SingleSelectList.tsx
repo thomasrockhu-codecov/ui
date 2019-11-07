@@ -8,6 +8,7 @@ import {
   Box,
   FadedScroll,
   DropdownBubble,
+  Separator,
 } from '../../../../..';
 
 type ListProps = {
@@ -16,6 +17,7 @@ type ListProps = {
    */
   position?: 'left' | 'center' | 'right';
   searchComponent?: React.ReactNode;
+  actionsComponent?: React.ReactNode;
 };
 
 const StyledList = styled(UIList)<any>`
@@ -28,13 +30,24 @@ const FadedScrollWithoutPaddingBottom = styled(FadedScroll)`
   padding-bottom: 0;
 `;
 
-export const OptionList: React.FC<ListProps> = ({ children, position, searchComponent = null }) => (
+export const OptionList: React.FC<ListProps> = ({
+  children,
+  position,
+  searchComponent = null,
+  actionsComponent = null,
+}) => (
   <DropdownBubble position={position}>
     <Box py={2}>
       {searchComponent}
       <FadedScrollWithoutPaddingBottom maxHeight="240px" enableMobileFade fadeHeight={8}>
         <StyledList role="listbox">{children}</StyledList>
       </FadedScrollWithoutPaddingBottom>
+      {actionsComponent !== null && (
+        <>
+          <Separator />
+          <Box pt={1}>{actionsComponent}</Box>
+        </>
+      )}
     </Box>
   </DropdownBubble>
 );

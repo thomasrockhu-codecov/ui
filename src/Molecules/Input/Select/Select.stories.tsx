@@ -236,6 +236,7 @@ export const tracking = () => (
   <TrackingContext.Provider
     value={{
       track: (componentName, e, props) =>
+        // @ts-ignore
         action('Tracking')(componentName, e.type, e.payload, props),
     }}
   >
@@ -329,6 +330,38 @@ export const customRenderers = () => {
   );
 };
 
+export const actions = () => {
+  return (
+    <Input.Select
+      id="custom-renderers-select"
+      options={accountOptions}
+      actions={[
+        {
+          icon: <Icon.AddWithCircle size={4} color="currentColor" />,
+          label: 'Add more stuff to dropdown',
+          onSelect: action('Action triggered!'),
+        },
+        {
+          icon: <Icon.Archive size={4} color="currentColor" />,
+          label: 'Archive',
+          onSelect: action('Action Archive triggered!'),
+        },
+        {
+          label: 'No icon action',
+          onSelect: action('Action No icon triggered!'),
+        },
+        {
+          label: 'Disabled action',
+          onSelect: action('Should not appear!'),
+          disabled: true,
+        },
+      ]}
+      label="User account"
+      placeholder="Select account"
+    />
+  );
+};
+
 export const onBlurAndOnFocus = () => {
   return (
     <Input.Select
@@ -370,6 +403,53 @@ export const multiselect = () =>
         // @ts-ignore
         onChange={setValue}
         components={{ SelectedValue: CustomSelectedValue }}
+        multiselect
+        label="User account"
+        placeholder="Select account"
+      />
+    );
+  });
+
+export const multiselectActions = () =>
+  React.createElement(() => {
+    const [value, setValue] = React.useState([]);
+
+    // This component you need to redefine for your particular case
+    // Consider translations and a11y!
+    const CustomSelectedValue = React.useMemo(
+      () => () => {
+        const [machineState] = useSelectMachineFromContext();
+        const selectedCount = machineState.context.selectedItems.length;
+        return (
+          <FlexedBox px={2}>
+            <Typography type="secondary">
+              {selectedCount === 0 ? machineState.context.placeholder : `${selectedCount} selected`}
+            </Typography>
+          </FlexedBox>
+        );
+      },
+      [],
+    );
+    return (
+      <Input.Select
+        id="custom-renderers-select"
+        options={accountOptions}
+        value={value}
+        // @ts-ignore
+        onChange={setValue}
+        components={{ SelectedValue: CustomSelectedValue }}
+        actions={[
+          {
+            icon: <Icon.AddWithCircle size={4} color="currentColor" />,
+            label: 'Add more stuff to dropdown',
+            onSelect: action('Action add triggered!'),
+          },
+          {
+            icon: <Icon.Archive size={4} color="currentColor" />,
+            label: 'Archive',
+            onSelect: action('Action archive triggered!'),
+          },
+        ]}
         multiselect
         label="User account"
         placeholder="Select account"

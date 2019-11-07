@@ -1,6 +1,12 @@
 import { SYMBOL_ALL } from './lib/constants';
 
-export type ComponentTypes = 'ListItem' | 'List' | 'SelectedValue' | 'Search';
+export type ComponentTypes = 'ListItem' | 'List' | 'SelectedValue' | 'Search' | 'Action';
+export type Action = {
+  label: string;
+  icon?: React.ReactNode; // maybe keyof typeof Icon?
+  onSelect: () => void;
+  disabled?: boolean;
+};
 
 export type Props = {
   /**
@@ -52,6 +58,7 @@ export type Props = {
   showSearch?: boolean;
 
   multiselect?: boolean;
+  actions?: Array<Action>;
 };
 
 export type Option = {

@@ -7,6 +7,7 @@ import {
   FadedScroll,
   DropdownBubble,
   Box,
+  Separator,
 } from '../../../../..';
 // Need to import it directly
 // Otherwise causes circular deps problems
@@ -18,6 +19,7 @@ type ListProps = {
    */
   position?: 'left' | 'center' | 'right';
   searchComponent?: React.ReactNode;
+  actionsComponent?: React.ReactNode;
 };
 
 const StyledList = styled(UIList)<any>`
@@ -30,13 +32,24 @@ const FadedScrollWithoutPaddingBottom = styled(FadedScroll)`
   padding-bottom: 0;
 `;
 
-export const OptionList: React.FC<ListProps> = ({ children, position, searchComponent = null }) => (
+export const OptionList: React.FC<ListProps> = ({
+  children,
+  position,
+  searchComponent = null,
+  actionsComponent = null,
+}) => (
   <DropdownBubble position={position}>
     <Box py={2}>
       {searchComponent}
       <FadedScrollWithoutPaddingBottom maxHeight="200px" enableMobileFade fadeHeight={8}>
         <StyledList role="listbox">{children}</StyledList>
       </FadedScrollWithoutPaddingBottom>
+      {actionsComponent !== null && (
+        <>
+          <Separator />
+          <Box pt={2}>{actionsComponent}</Box>
+        </>
+      )}
     </Box>
   </DropdownBubble>
 );

@@ -87,6 +87,156 @@ test('Single select without custom components', async () => {
   expect(queryElementByText(button, option3Label)).not.toBeNull();
 });
 
+test('Multi select with actions (also disabled actions)', async () => {
+  const testMessage = 'Super unique label ';
+  const INPUT_ID = 'input-1';
+  const actions = [
+    { label: 'first action', onSelect: jest.fn() },
+    { label: 'second action', onSelect: jest.fn() },
+    { label: 'disabled action', onSelect: jest.fn(), disabled: true },
+  ];
+  const options = new Array(3)
+    .fill(null)
+    .map((_, i) => ({ label: `${testMessage}${i}`, value: i }));
+  const { getByLabelText, getByTestId, getByText, queryByTestId } = render(
+    <ThemeProvider theme={theme}>
+      <Select
+        id={INPUT_ID}
+        options={options}
+        actions={actions}
+        multiselect
+        label="Label"
+        placeholder="Placeholder"
+        components={{
+          SelectedValue: (_, ref) => {
+            const [state] = useSelectMachineFromContext();
+            return (
+              <div ref={ref} data-testid="custom-selected-value">
+                {
+                  // @ts-ignore
+                  state.context.selectedItems.length
+                }{' '}
+                items
+              </div>
+            );
+          },
+        }}
+      />
+    </ThemeProvider>,
+  );
+
+  const formField = getByLabelText('Label');
+
+  fireEvent.click(formField);
+
+  // After click component becomes open
+  // And search field inside is focused
+  const list = getByTestId('input-select-list');
+  const searchInput = getByTestId('input-select-search-field');
+
+  const getCurrentActiveDescendant = () =>
+    searchInput.attributes.getNamedItem('aria-activedescendant').value;
+
+  // active-descendant points to the first option
+  expect(getCurrentActiveDescendant()).toBe(`${INPUT_ID}-option-0`);
+
+  // After ArrowDown pressing, next one should be preselected
+  fireEvent.keyDown(list, { key: 'ArrowDown' });
+  await waitForDomChange({ container: list });
+
+  expect(getCurrentActiveDescendant()).toBe(`${INPUT_ID}-option-1`);
+
+  // After another double ArrowDown we should be on the 3rd ACTION
+  // Which is disabled
+  fireEvent.keyDown(list, { key: 'ArrowDown' });
+  fireEvent.keyDown(list, { key: 'ArrowDown' });
+  fireEvent.keyDown(list, { key: 'ArrowDown' });
+  fireEvent.keyDown(list, { key: 'ArrowDown' });
+  await waitForDomChange({ container: list });
+
+  expect(getCurrentActiveDescendant()).toBe(`${INPUT_ID}-action-2`);
+
+  const preselectedAction = getByText(actions[2].label);
+  expect(actions[2].onSelect).not.toBeCalled();
+  fireEvent.click(preselectedAction);
+  // Disabled => onSelect not called
+  expect(actions[2].onSelect).not.toBeCalled();
+
+  // Disabled => dont collapse after click
+  const searchInput2 = queryByTestId('input-select-search-field');
+  expect(searchInput2).not.toBeNull();
+
+  const preselectedAction2 = getByText(actions[0].label);
+  expect(actions[0].onSelect).not.toBeCalled();
+  fireEvent.click(preselectedAction2);
+  // This action is enabled => onSelect called
+  expect(actions[0].onSelect).toBeCalled();
+
+  // And dropdown collapsed
+  const searchInput3 = queryByTestId('input-select-search-field');
+  expect(searchInput3).toBeNull();
+});
+
+test('Single select with actions', async () => {
+  const testMessage = 'Super unique label ';
+  const INPUT_ID = 'input-1';
+  const actions = [
+    { label: 'first action', onSelect: jest.fn() },
+    { label: 'second action', onSelect: jest.fn() },
+  ];
+  const options = new Array(3)
+    .fill(null)
+    .map((_, i) => ({ label: `${testMessage}${i}`, value: i }));
+  const { getByLabelText, getByTestId, getByText, queryByTestId } = render(
+    <ThemeProvider theme={theme}>
+      <Select
+        id={INPUT_ID}
+        options={options}
+        actions={actions}
+        label="Label"
+        placeholder="Placeholder"
+      />
+    </ThemeProvider>,
+  );
+
+  const formField = getByLabelText('Label');
+
+  fireEvent.click(formField);
+
+  // After click component becomes open
+  // And search field inside is focused
+  const list = getByTestId('input-select-list');
+  const searchInput = getByTestId('input-select-search-field');
+
+  const getCurrentActiveDescendant = () =>
+    searchInput.attributes.getNamedItem('aria-activedescendant').value;
+
+  // active-descendant points to the first option
+  expect(getCurrentActiveDescendant()).toBe(`${INPUT_ID}-option-0`);
+
+  // After ArrowDown pressing, next one should be preselected
+  fireEvent.keyDown(list, { key: 'ArrowDown' });
+  await waitForDomChange({ container: list });
+
+  expect(getCurrentActiveDescendant()).toBe(`${INPUT_ID}-option-1`);
+
+  // After another double ArrowDown we should be on FIRST ACTION
+  fireEvent.keyDown(list, { key: 'ArrowDown' });
+  fireEvent.keyDown(list, { key: 'ArrowDown' });
+  await waitForDomChange({ container: list });
+
+  expect(getCurrentActiveDescendant()).toBe(`${INPUT_ID}-action-0`);
+
+  const preselectedAction = getByText(actions[0].label);
+  expect(actions[0].onSelect).not.toBeCalled();
+  fireEvent.click(preselectedAction);
+
+  // Selected item => dropdown in collapsed state
+  const searchInput2 = queryByTestId('input-select-search-field');
+  expect(searchInput2).toBeNull();
+  expect(actions[0].onSelect).toBeCalled();
+});
+
 test('Multiselect without custom components and with select all', async () => {
   const testMessage = 'Super unique label ';
   const selectAllLabel = `Select all`;

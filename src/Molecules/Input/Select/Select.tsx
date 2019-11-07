@@ -9,6 +9,8 @@ import {
   ListWrapper,
   SelectedValueWrapper,
   FormFieldOrFragment,
+  SearchWrapper,
+  ActionsWrapper,
 } from './lib/wrappers';
 import { useSelectMachineFromContext, SelectStateContext } from './lib/context';
 import {
@@ -17,7 +19,7 @@ import {
   defaultComponentsMultiselect,
 } from './lib/defaults';
 import { SelectMachine, Context, OptionLike, ACTION_TYPES } from './machine';
-import { Props } from './Select.types';
+import { Props, Action as ActionType } from './Select.types';
 
 import { assert } from '../../../common/utils';
 
@@ -46,6 +48,7 @@ const getValuesForNativeSelect = (selectedItems: { value: any }[], isMultiselect
   }
   return selectedItems.length > 0 ? selectedItems[0].value : undefined;
 };
+
 const Select = (props: Props) => {
   assert(Boolean(props.id), `Input.Select: "id" is required.`);
   assert(
@@ -80,6 +83,7 @@ const Select = (props: Props) => {
       id: props.id,
       valueFromProps: props.value,
       uncommitedSelectedItems: [],
+      actions: props.actions || [],
     },
   });
   const [machineState, send, service] = machineHandlers;
@@ -89,9 +93,9 @@ const Select = (props: Props) => {
   currentPropsRef.current = props;
   React.useEffect(() => {
     service.onEvent(
-      e => trackContext && trackContext.track('Input.Select', e, currentPropsRef.current),
+      e => trackContext && trackContext.track('Input.Select', e as any, currentPropsRef.current),
     );
-  }, []);
+  }, [trackContext, service]);
 
   /******      Machine syncing      ******/
   usePropagateChangesThroughOnChange(machineState, send, props.onChange, isFirstRender);
@@ -108,6 +112,7 @@ const Select = (props: Props) => {
       multiselect: props.multiselect,
       showSearch: props.showSearch || false,
       id: props.id,
+      actions: props.actions || [],
     },
     [
       send,
@@ -122,6 +127,7 @@ const Select = (props: Props) => {
       props.multiselect,
       props.showSearch,
       props.id,
+      props.actions,
     ],
   );
 
@@ -129,6 +135,12 @@ const Select = (props: Props) => {
   const handleClickListItem = (option: OptionLike) => (e: React.MouseEvent) => {
     e.preventDefault();
     send({ type: 'ITEM_CLICK', payload: option });
+    return false;
+  };
+
+  const handleClickActionItem = (action: ActionType) => (e: React.MouseEvent) => {
+    e.preventDefault();
+    send({ type: 'SELECT_ITEM', payload: action });
     return false;
   };
 
@@ -165,9 +177,12 @@ const Select = (props: Props) => {
   );
 
   /******      Renderers      ******/
-  const { ListItem, List, SelectedValue, Search } = useComponentsWithDefaults(props.components, {
-    multiselect: machineState.context.multiselect,
-  });
+  const { ListItem, List, SelectedValue, Search, Action } = useComponentsWithDefaults(
+    props.components,
+    {
+      multiselect: machineState.context.multiselect,
+    },
+  );
 
   /******      Values from machine      ******/
   const isOpen = machineState.context.open;
@@ -235,7 +250,12 @@ const Select = (props: Props) => {
               onMouseMove={handleMouseMove}
               ref={listRef}
               data-testid="input-select-list"
-              searchComponent={<Search ref={searchRef} />}
+              searchComponent={<SearchWrapper ref={searchRef} component={Search} />}
+              actionsComponent={
+                machineState.context.actions.length > 0 ? (
+                  <ActionsWrapper component={Action} onClickFactory={handleClickActionItem} />
+                ) : null
+              }
               width={props.width}
             >
               {options.map((x: any, index: number) => (

@@ -1,5 +1,6 @@
 import { Machine, send, assign } from 'xstate';
 import { SYMBOL_ALL } from './lib/constants';
+import { Action } from './Select.types';
 
 export const ACTION_TYPES = {
   SYNC: 'SYNC',
@@ -12,6 +13,7 @@ export const ACTION_TYPES = {
   SELECT_ITEM: 'SELECT_ITEM',
   DESELECT_ITEM: 'DESELECT_ITEM',
   CHANGE_COMMIT: 'CHANGE_COMMIT',
+  CHANGE_COMMIT_ABORT: 'CHANGE_COMMIT_ABORT',
   ITEM_CLICK: 'ITEM_CLICK',
   SEARCH_QUERY_UPDATE: 'SEARCH_QUERY_UPDATE',
   MOUSE_MOVE: 'MOUSE_MOVE',
@@ -27,7 +29,8 @@ export type OptionLike = {
 };
 const isEqualOptions = (a: OptionLike, b: OptionLike) => a === b || a.value === b.value;
 const includesOption = (arr: OptionLike[], option: OptionLike) =>
-  arr.includes(option) || arr.some(x => x.value === option.value);
+  typeof option !== 'undefined' &&
+  (arr.includes(option) || arr.some(x => x.value === option.value));
 
 export type Context = {
   error: string;
@@ -48,6 +51,7 @@ export type Context = {
   id: string;
   valueFromProps: Array<any>;
   uncommitedSelectedItems: Array<any>;
+  actions: Array<Action>;
 };
 
 export const SelectMachine = Machine<Context>(
@@ -60,6 +64,7 @@ export const SelectMachine = Machine<Context>(
       options: [] as Array<any>,
       selectedItems: [] as Array<any>,
       disabled: false,
+      actions: [],
       open: true,
       itemFocusIdx: null,
       searchQuery: '',
@@ -184,6 +189,10 @@ export const SelectMachine = Machine<Context>(
                     target: 'unknown',
                     actions: 'commitSelectedItems',
                   },
+                  [ACTION_TYPES.CHANGE_COMMIT_ABORT]: {
+                    target: 'unknown',
+                    actions: 'uncommitSelectedItems',
+                  },
                 },
               },
               incorrectSelection: {
@@ -234,6 +243,10 @@ export const SelectMachine = Machine<Context>(
                   [ACTION_TYPES.CHANGE_COMMIT]: {
                     target: 'unknown',
                     actions: 'commitSelectedItems',
+                  },
+                  [ACTION_TYPES.CHANGE_COMMIT_ABORT]: {
+                    target: 'unknown',
+                    actions: 'uncommitSelectedItems',
                   },
                 },
               },
@@ -481,14 +494,18 @@ export const SelectMachine = Machine<Context>(
         },
       }),
       setNextFocusedItem: assign<Context>({
-        itemFocusIdx: ctx =>
-          ctx.itemFocusIdx !== null ? (ctx.itemFocusIdx + 1) % ctx.visibleOptions.length : 0,
+        itemFocusIdx: ctx => {
+          const MAX_IDX = ctx.visibleOptions.length + ctx.actions.length;
+          return ctx.itemFocusIdx !== null ? (ctx.itemFocusIdx + 1) % MAX_IDX : 0;
+        },
       }),
       setPrevFocusedItem: assign<Context>({
-        itemFocusIdx: ctx =>
-          ctx.itemFocusIdx !== null && ctx.itemFocusIdx - 1 >= 0
+        itemFocusIdx: ctx => {
+          const MAX_IDX = ctx.visibleOptions.length + ctx.actions.length;
+          return ctx.itemFocusIdx !== null && ctx.itemFocusIdx - 1 >= 0
             ? ctx.itemFocusIdx - 1
-            : ctx.visibleOptions.length - 1,
+            : MAX_IDX - 1;
+        },
       }),
       setNavTypeKeyboard: assign<Context>({
         lastNavigationType: 'keyboard',
@@ -505,16 +522,16 @@ export const SelectMachine = Machine<Context>(
           payload: event.payload,
         };
       }),
-      sendSelectOrDeselectVisibleFocusedOption: send((ctx: Context) =>
-        ctx.itemFocusIdx === null
-          ? ''
-          : {
-              type: includesOption(ctx.selectedItems, ctx.visibleOptions[ctx.itemFocusIdx])
-                ? ACTION_TYPES.DESELECT_ITEM
-                : ACTION_TYPES.SELECT_ITEM,
-              payload: ctx.visibleOptions[ctx.itemFocusIdx],
-            },
-      ),
+      sendSelectOrDeselectVisibleFocusedOption: send((ctx: Context) => {
+        if (ctx.itemFocusIdx === null) return '';
+
+        return {
+          type: includesOption(ctx.selectedItems, ctx.visibleOptions[ctx.itemFocusIdx])
+            ? ACTION_TYPES.DESELECT_ITEM
+            : ACTION_TYPES.SELECT_ITEM,
+          payload: [...ctx.visibleOptions, ...ctx.actions][ctx.itemFocusIdx],
+        };
+      }),
       resetSelection: assign<Context>({ selectedItems: [] }),
       deselectOption: assign<Context>({
         selectedItems: (ctx, { payload }) => {
@@ -558,6 +575,10 @@ export const SelectMachine = Machine<Context>(
 
       commitSelectedItems: assign<Context>({
         selectedItems: ctx => ctx.uncommitedSelectedItems,
+        uncommitedSelectedItems: [],
+      }),
+      uncommitSelectedItems: assign<Context>({
+        uncommitedSelectedItems: [],
       }),
       forceValueFromProps: assign<Context>({ selectedItems: ctx => ctx.valueFromProps }),
     } as any,

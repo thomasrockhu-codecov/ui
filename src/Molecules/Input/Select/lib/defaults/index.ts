@@ -3,6 +3,7 @@ import R from 'ramda';
 import { ListItem } from './ListItem';
 import { OptionList } from '../SingleSelectList/SingleSelectList';
 import { Search } from './Search';
+import { Action } from './Action';
 import { SelectedValue } from './SelectedValue';
 
 import { ListItem as ListItemMultiple } from './ListItemMultiple';
@@ -14,6 +15,7 @@ export const defaultComponents = {
   List: OptionList,
   Search,
   SelectedValue,
+  Action,
 };
 
 export const defaultComponentsMultiselect = {
@@ -21,6 +23,7 @@ export const defaultComponentsMultiselect = {
   List: OptionListMultiple,
   Search,
   SelectedValue: SelectedValueMultiple,
+  Action,
 };
 
 export const useComponentsWithDefaults = (

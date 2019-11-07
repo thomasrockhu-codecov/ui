@@ -135,7 +135,18 @@ export const usePropagateChangesThroughOnChange = (
     // Why is it happenning though 🤔
     if (isFirstRender) return;
     if (isChangeUncommitted) {
-      if (onChange) onChange(machineState.context.uncommitedSelectedItems);
+      const changes = machineState.context.uncommitedSelectedItems;
+
+      const action = changes.find(x => typeof x.onSelect === 'function');
+      if (action) {
+        action.onSelect();
+        send(['CHANGE_COMMIT_ABORT', 'CLOSE']);
+        // Action shouldn't trigger the real onChange
+        return;
+      }
+
+      if (onChange) onChange(changes);
+
       send('CHANGE_COMMIT');
     }
   }, [isChangeUncommitted, onChange]);
