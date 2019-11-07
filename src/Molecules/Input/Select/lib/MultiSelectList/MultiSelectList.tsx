@@ -120,6 +120,18 @@ const Checkbox16px = styled(Checkbox)`
   }
 `;
 
+const FlexboxWidth = styled(Flexbox)`
+  /* FIXME: minus checkbox width and minus padding */
+  width: calc(100% - 16px - 12px);
+`;
+
+const EllipsizingText = styled(Typography)`
+  width: 100%;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+`;
+
 export const Option = React.forwardRef<HTMLDivElement, OptionProps>(
   ({ label, disabled, selected, focused, selectAll, isKeyboardNavigation }, ref) => (
     <StyledOption
@@ -142,18 +154,14 @@ export const Option = React.forwardRef<HTMLDivElement, OptionProps>(
             visuallyFocused={!disabled && isKeyboardNavigation ? focused : false}
           />
         </Flexbox>
-        <Flexbox item container justifyContent="space-between" alignItems="center">
-          <Flexbox item container direction="column" grow={1}>
-            <Flexbox item>
-              <Typography
-                type="secondary"
-                color={disabled ? t => t.color.disabledText : t => t.color.text}
-              >
-                {label}
-              </Typography>
-            </Flexbox>
-          </Flexbox>
-        </Flexbox>
+        <FlexboxWidth item container justifyContent="space-between" alignItems="center">
+          <EllipsizingText
+            type="secondary"
+            color={disabled ? t => t.color.disabledText : t => t.color.text}
+          >
+            {label}
+          </EllipsizingText>
+        </FlexboxWidth>
       </FullHeightFlexbox>
     </StyledOption>
   ),

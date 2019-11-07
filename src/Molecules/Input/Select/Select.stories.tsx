@@ -330,37 +330,42 @@ export const customRenderers = () => {
   );
 };
 
-export const actions = () => {
-  return (
-    <Input.Select
-      id="custom-renderers-select"
-      options={accountOptions}
-      actions={[
-        {
-          icon: <Icon.AddWithCircle size={4} color="currentColor" />,
-          label: 'Add more stuff to dropdown',
-          onSelect: action('Action triggered!'),
-        },
-        {
-          icon: <Icon.Archive size={4} color="currentColor" />,
-          label: 'Archive',
-          onSelect: action('Action Archive triggered!'),
-        },
-        {
-          label: 'No icon action',
-          onSelect: action('Action No icon triggered!'),
-        },
-        {
-          label: 'Disabled action',
-          onSelect: action('Should not appear!'),
-          disabled: true,
-        },
-      ]}
-      label="User account"
-      placeholder="Select account"
-    />
-  );
-};
+export const actions = () =>
+  React.createElement(() => {
+    const [value, setValue] = React.useState([]);
+    return (
+      <Input.Select
+        id="custom-renderers-select"
+        options={accountOptions}
+        value={value}
+        // @ts-ignore
+        onChange={setValue}
+        actions={[
+          {
+            icon: <Icon.AddWithCircle size={4} color="currentColor" />,
+            label: 'Add more stuff to dropdown',
+            onSelect: action('Action triggered!'),
+          },
+          {
+            icon: <Icon.Archive size={4} color="currentColor" />,
+            label: 'Archive',
+            onSelect: action('Action Archive triggered!'),
+          },
+          {
+            label: 'No icon action',
+            onSelect: action('Action No icon triggered!'),
+          },
+          {
+            label: 'Disabled action',
+            onSelect: action('Should not appear!'),
+            disabled: true,
+          },
+        ]}
+        label="User account"
+        placeholder="Select account"
+      />
+    );
+  });
 
 export const onBlurAndOnFocus = () => {
   return (
@@ -868,6 +873,92 @@ export const linkWithDropdownAndSearchBoxTertiary = () =>
         onChange={handleChange}
         width="250px"
       />
+    );
+  });
+
+export const linkWithDropdownAndSearchBoxMultiselect = () =>
+  React.createElement(() => {
+    const customComponents = React.useMemo(
+      () => ({
+        // @ts-ignore
+        SelectedValue: () => {
+          const [state] = useSelectMachineFromContext();
+
+          return (
+            <Link as="div">
+              <Flexbox container alignItems="center" gutter={1}>
+                <Flexbox item container alignItems="center">
+                  <Icon.AddWithCircle inline color={t => t.color.text} size={3} />
+                </Flexbox>
+                <Flexbox item>
+                  <Typography type="tertiary" color={t => t.color.text}>
+                    {state.context.placeholder}
+                  </Typography>
+                </Flexbox>
+              </Flexbox>
+            </Link>
+          );
+        },
+      }),
+      [],
+    );
+
+    const [value, setValue] = React.useState([]);
+    const hugeOptionsList = React.useMemo(
+      () =>
+        accountOptions
+          .concat(
+            accountOptions.map(x => ({
+              ...x,
+              value: x.value + Math.random(),
+              label: x.label + Math.random(),
+            })),
+          )
+          .concat(
+            accountOptions.map(x => ({
+              ...x,
+              value: x.value + Math.random(),
+              label: x.label + Math.random(),
+            })),
+          )
+          .concat(
+            accountOptions.map(x => ({
+              ...x,
+              value: x.value + Math.random(),
+              label: x.label + Math.random(),
+            })),
+          ),
+      [accountOptions],
+    );
+
+    // @ts-ignore
+    const handleChange = newVal => {
+      action('change')(newVal);
+      setValue(newVal);
+    };
+
+    return (
+      <TrackingContext.Provider
+        value={{
+          track: (componentName, e, props) =>
+            // @ts-ignore
+            action('Tracking')(componentName, e.type, e.payload, props),
+        }}
+      >
+        <Input.Select
+          options={hugeOptionsList}
+          label="User account"
+          id="input-select-search-inside"
+          placeholder="Select account"
+          noFormField
+          showSearch
+          multiselect
+          value={value}
+          components={customComponents}
+          onChange={handleChange}
+          width="250px"
+        />
+      </TrackingContext.Provider>
     );
   });
 

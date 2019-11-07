@@ -1,10 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Storyshots Molecules | Input / Select / MultiSelectList Item Default 1`] = `
-.c19 {
-  box-sizing: border-box;
-}
-
 .c13 {
   box-sizing: border-box;
   display: -webkit-box;
@@ -68,7 +64,7 @@ exports[`Storyshots Molecules | Input / Select / MultiSelectList Item Default 1`
   padding-top: 0;
 }
 
-.c17 {
+.c18 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -82,21 +78,6 @@ exports[`Storyshots Molecules | Input / Select / MultiSelectList Item Default 1`
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-}
-
-.c18 {
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-box-flex: 1;
-  -webkit-flex-grow: 1;
-  -ms-flex-positive: 1;
-  flex-grow: 1;
 }
 
 .c7 {
@@ -256,6 +237,17 @@ exports[`Storyshots Molecules | Input / Select / MultiSelectList Item Default 1`
   height: 16px;
 }
 
+.c17 {
+  width: calc(100% - 16px - 12px);
+}
+
+.c19 {
+  width: 100%;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
 <div
   className="c0"
 >
@@ -313,31 +305,19 @@ exports[`Storyshots Molecules | Input / Select / MultiSelectList Item Default 1`
       </div>
     </div>
     <div
-      className="c17"
+      className="c17 c18"
     >
-      <div
-        className="c18"
+      <span
+        className="c19 c16"
       >
-        <div
-          className="c19"
-        >
-          <span
-            className="c16"
-          >
-            First
-          </span>
-        </div>
-      </div>
+        First
+      </span>
     </div>
   </div>
 </div>
 `;
 
 exports[`Storyshots Molecules | Input / Select / MultiSelectList Item Disabled 1`] = `
-.c19 {
-  box-sizing: border-box;
-}
-
 .c13 {
   box-sizing: border-box;
   display: -webkit-box;
@@ -401,7 +381,7 @@ exports[`Storyshots Molecules | Input / Select / MultiSelectList Item Disabled 1
   padding-top: 0;
 }
 
-.c17 {
+.c18 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -415,21 +395,6 @@ exports[`Storyshots Molecules | Input / Select / MultiSelectList Item Disabled 1
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-}
-
-.c18 {
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-box-flex: 1;
-  -webkit-flex-grow: 1;
-  -ms-flex-positive: 1;
-  flex-grow: 1;
 }
 
 .c7 {
@@ -596,6 +561,17 @@ exports[`Storyshots Molecules | Input / Select / MultiSelectList Item Disabled 1
   height: 16px;
 }
 
+.c17 {
+  width: calc(100% - 16px - 12px);
+}
+
+.c19 {
+  width: 100%;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
 <div
   className="c0"
   disabled={true}
@@ -654,31 +630,19 @@ exports[`Storyshots Molecules | Input / Select / MultiSelectList Item Disabled 1
       </div>
     </div>
     <div
-      className="c17"
+      className="c17 c18"
     >
-      <div
-        className="c18"
+      <span
+        className="c19 c20"
       >
-        <div
-          className="c19"
-        >
-          <span
-            className="c20"
-          >
-            First
-          </span>
-        </div>
-      </div>
+        First
+      </span>
     </div>
   </div>
 </div>
 `;
 
 exports[`Storyshots Molecules | Input / Select / MultiSelectList Item Selected 1`] = `
-.c19 {
-  box-sizing: border-box;
-}
-
 .c13 {
   box-sizing: border-box;
   display: -webkit-box;
@@ -742,7 +706,7 @@ exports[`Storyshots Molecules | Input / Select / MultiSelectList Item Selected 1
   padding-top: 0;
 }
 
-.c17 {
+.c18 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -756,21 +720,6 @@ exports[`Storyshots Molecules | Input / Select / MultiSelectList Item Selected 1
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-}
-
-.c18 {
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-box-flex: 1;
-  -webkit-flex-grow: 1;
-  -ms-flex-positive: 1;
-  flex-grow: 1;
 }
 
 .c7 {
@@ -930,6 +879,17 @@ exports[`Storyshots Molecules | Input / Select / MultiSelectList Item Selected 1
   height: 16px;
 }
 
+.c17 {
+  width: calc(100% - 16px - 12px);
+}
+
+.c19 {
+  width: 100%;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
 <div
   className="c0"
   selected={true}
@@ -989,21 +949,13 @@ exports[`Storyshots Molecules | Input / Select / MultiSelectList Item Selected 1
       </div>
     </div>
     <div
-      className="c17"
+      className="c17 c18"
     >
-      <div
-        className="c18"
+      <span
+        className="c19 c16"
       >
-        <div
-          className="c19"
-        >
-          <span
-            className="c16"
-          >
-            First
-          </span>
-        </div>
-      </div>
+        First
+      </span>
     </div>
   </div>
 </div>
@@ -1175,10 +1127,6 @@ exports[`Storyshots Molecules | Input / Select / MultiSelectList List With Diffe
   pointer-events: none;
 }
 
-.c31 {
-  box-sizing: border-box;
-}
-
 .c25 {
   box-sizing: border-box;
   display: -webkit-box;
@@ -1242,7 +1190,7 @@ exports[`Storyshots Molecules | Input / Select / MultiSelectList List With Diffe
   padding-top: 0;
 }
 
-.c29 {
+.c30 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -1256,21 +1204,6 @@ exports[`Storyshots Molecules | Input / Select / MultiSelectList List With Diffe
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-}
-
-.c30 {
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-box-flex: 1;
-  -webkit-flex-grow: 1;
-  -ms-flex-positive: 1;
-  flex-grow: 1;
 }
 
 .c19 {
@@ -1471,6 +1404,17 @@ exports[`Storyshots Molecules | Input / Select / MultiSelectList List With Diffe
   height: 16px;
 }
 
+.c29 {
+  width: calc(100% - 16px - 12px);
+}
+
+.c31 {
+  width: 100%;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
 .c0 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -1621,21 +1565,13 @@ exports[`Storyshots Molecules | Input / Select / MultiSelectList List With Diffe
                           </div>
                         </div>
                         <div
-                          className="c29"
+                          className="c29 c30"
                         >
-                          <div
-                            className="c30"
+                          <span
+                            className="c31 c28"
                           >
-                            <div
-                              className="c31"
-                            >
-                              <span
-                                className="c28"
-                              >
-                                Default?
-                              </span>
-                            </div>
-                          </div>
+                            Default?
+                          </span>
                         </div>
                       </div>
                     </div>
@@ -1698,21 +1634,13 @@ exports[`Storyshots Molecules | Input / Select / MultiSelectList List With Diffe
                           </div>
                         </div>
                         <div
-                          className="c29"
+                          className="c29 c30"
                         >
-                          <div
-                            className="c30"
+                          <span
+                            className="c31 c28"
                           >
-                            <div
-                              className="c31"
-                            >
-                              <span
-                                className="c28"
-                              >
-                                First
-                              </span>
-                            </div>
-                          </div>
+                            First
+                          </span>
                         </div>
                       </div>
                     </div>
@@ -1773,21 +1701,13 @@ exports[`Storyshots Molecules | Input / Select / MultiSelectList List With Diffe
                           </div>
                         </div>
                         <div
-                          className="c29"
+                          className="c29 c30"
                         >
-                          <div
-                            className="c30"
+                          <span
+                            className="c31 c28"
                           >
-                            <div
-                              className="c31"
-                            >
-                              <span
-                                className="c28"
-                              >
-                                Second
-                              </span>
-                            </div>
-                          </div>
+                            SecondSecondSecondSecondSecondSecondSecondSecondSecondSecondSecondSecondSecondSecondSecond
+                          </span>
                         </div>
                       </div>
                     </div>
@@ -1849,21 +1769,13 @@ exports[`Storyshots Molecules | Input / Select / MultiSelectList List With Diffe
                           </div>
                         </div>
                         <div
-                          className="c29"
+                          className="c29 c30"
                         >
-                          <div
-                            className="c30"
+                          <span
+                            className="c31 c33"
                           >
-                            <div
-                              className="c31"
-                            >
-                              <span
-                                className="c33"
-                              >
-                                Disabled
-                              </span>
-                            </div>
-                          </div>
+                            Disabled
+                          </span>
                         </div>
                       </div>
                     </div>
@@ -1925,21 +1837,13 @@ exports[`Storyshots Molecules | Input / Select / MultiSelectList List With Diffe
                           </div>
                         </div>
                         <div
-                          className="c29"
+                          className="c29 c30"
                         >
-                          <div
-                            className="c30"
+                          <span
+                            className="c31 c33"
                           >
-                            <div
-                              className="c31"
-                            >
-                              <span
-                                className="c33"
-                              >
-                                Disabled
-                              </span>
-                            </div>
-                          </div>
+                            Disabled
+                          </span>
                         </div>
                       </div>
                     </div>
@@ -2001,21 +1905,13 @@ exports[`Storyshots Molecules | Input / Select / MultiSelectList List With Diffe
                           </div>
                         </div>
                         <div
-                          className="c29"
+                          className="c29 c30"
                         >
-                          <div
-                            className="c30"
+                          <span
+                            className="c31 c33"
                           >
-                            <div
-                              className="c31"
-                            >
-                              <span
-                                className="c33"
-                              >
-                                Disabled
-                              </span>
-                            </div>
-                          </div>
+                            Disabled
+                          </span>
                         </div>
                       </div>
                     </div>
@@ -2077,21 +1973,13 @@ exports[`Storyshots Molecules | Input / Select / MultiSelectList List With Diffe
                           </div>
                         </div>
                         <div
-                          className="c29"
+                          className="c29 c30"
                         >
-                          <div
-                            className="c30"
+                          <span
+                            className="c31 c33"
                           >
-                            <div
-                              className="c31"
-                            >
-                              <span
-                                className="c33"
-                              >
-                                Disabled
-                              </span>
-                            </div>
-                          </div>
+                            Disabled
+                          </span>
                         </div>
                       </div>
                     </div>
@@ -2153,21 +2041,13 @@ exports[`Storyshots Molecules | Input / Select / MultiSelectList List With Diffe
                           </div>
                         </div>
                         <div
-                          className="c29"
+                          className="c29 c30"
                         >
-                          <div
-                            className="c30"
+                          <span
+                            className="c31 c33"
                           >
-                            <div
-                              className="c31"
-                            >
-                              <span
-                                className="c33"
-                              >
-                                Disabled
-                              </span>
-                            </div>
-                          </div>
+                            Disabled
+                          </span>
                         </div>
                       </div>
                     </div>
@@ -2229,21 +2109,13 @@ exports[`Storyshots Molecules | Input / Select / MultiSelectList List With Diffe
                           </div>
                         </div>
                         <div
-                          className="c29"
+                          className="c29 c30"
                         >
-                          <div
-                            className="c30"
+                          <span
+                            className="c31 c33"
                           >
-                            <div
-                              className="c31"
-                            >
-                              <span
-                                className="c33"
-                              >
-                                Disabled
-                              </span>
-                            </div>
-                          </div>
+                            Disabled
+                          </span>
                         </div>
                       </div>
                     </div>
@@ -2305,21 +2177,13 @@ exports[`Storyshots Molecules | Input / Select / MultiSelectList List With Diffe
                           </div>
                         </div>
                         <div
-                          className="c29"
+                          className="c29 c30"
                         >
-                          <div
-                            className="c30"
+                          <span
+                            className="c31 c33"
                           >
-                            <div
-                              className="c31"
-                            >
-                              <span
-                                className="c33"
-                              >
-                                Disabled
-                              </span>
-                            </div>
-                          </div>
+                            Disabled
+                          </span>
                         </div>
                       </div>
                     </div>
@@ -2381,21 +2245,13 @@ exports[`Storyshots Molecules | Input / Select / MultiSelectList List With Diffe
                           </div>
                         </div>
                         <div
-                          className="c29"
+                          className="c29 c30"
                         >
-                          <div
-                            className="c30"
+                          <span
+                            className="c31 c33"
                           >
-                            <div
-                              className="c31"
-                            >
-                              <span
-                                className="c33"
-                              >
-                                Disabled
-                              </span>
-                            </div>
-                          </div>
+                            Disabled
+                          </span>
                         </div>
                       </div>
                     </div>
@@ -2457,21 +2313,13 @@ exports[`Storyshots Molecules | Input / Select / MultiSelectList List With Diffe
                           </div>
                         </div>
                         <div
-                          className="c29"
+                          className="c29 c30"
                         >
-                          <div
-                            className="c30"
+                          <span
+                            className="c31 c33"
                           >
-                            <div
-                              className="c31"
-                            >
-                              <span
-                                className="c33"
-                              >
-                                Disabled
-                              </span>
-                            </div>
-                          </div>
+                            Disabled
+                          </span>
                         </div>
                       </div>
                     </div>
@@ -2533,21 +2381,13 @@ exports[`Storyshots Molecules | Input / Select / MultiSelectList List With Diffe
                           </div>
                         </div>
                         <div
-                          className="c29"
+                          className="c29 c30"
                         >
-                          <div
-                            className="c30"
+                          <span
+                            className="c31 c33"
                           >
-                            <div
-                              className="c31"
-                            >
-                              <span
-                                className="c33"
-                              >
-                                Disabled
-                              </span>
-                            </div>
-                          </div>
+                            Disabled
+                          </span>
                         </div>
                       </div>
                     </div>
@@ -2652,21 +2492,13 @@ exports[`Storyshots Molecules | Input / Select / MultiSelectList List With Diffe
                           </div>
                         </div>
                         <div
-                          className="c29"
+                          className="c29 c30"
                         >
-                          <div
-                            className="c30"
+                          <span
+                            className="c31 c28"
                           >
-                            <div
-                              className="c31"
-                            >
-                              <span
-                                className="c28"
-                              >
-                                Default?
-                              </span>
-                            </div>
-                          </div>
+                            Default?
+                          </span>
                         </div>
                       </div>
                     </div>
@@ -2729,21 +2561,13 @@ exports[`Storyshots Molecules | Input / Select / MultiSelectList List With Diffe
                           </div>
                         </div>
                         <div
-                          className="c29"
+                          className="c29 c30"
                         >
-                          <div
-                            className="c30"
+                          <span
+                            className="c31 c28"
                           >
-                            <div
-                              className="c31"
-                            >
-                              <span
-                                className="c28"
-                              >
-                                First
-                              </span>
-                            </div>
-                          </div>
+                            First
+                          </span>
                         </div>
                       </div>
                     </div>
@@ -2805,21 +2629,13 @@ exports[`Storyshots Molecules | Input / Select / MultiSelectList List With Diffe
                           </div>
                         </div>
                         <div
-                          className="c29"
+                          className="c29 c30"
                         >
-                          <div
-                            className="c30"
+                          <span
+                            className="c31 c33"
                           >
-                            <div
-                              className="c31"
-                            >
-                              <span
-                                className="c33"
-                              >
-                                Disabled
-                              </span>
-                            </div>
-                          </div>
+                            Disabled
+                          </span>
                         </div>
                       </div>
                     </div>
@@ -2881,21 +2697,13 @@ exports[`Storyshots Molecules | Input / Select / MultiSelectList List With Diffe
                           </div>
                         </div>
                         <div
-                          className="c29"
+                          className="c29 c30"
                         >
-                          <div
-                            className="c30"
+                          <span
+                            className="c31 c33"
                           >
-                            <div
-                              className="c31"
-                            >
-                              <span
-                                className="c33"
-                              >
-                                Disabled
-                              </span>
-                            </div>
-                          </div>
+                            Disabled
+                          </span>
                         </div>
                       </div>
                     </div>
@@ -2957,21 +2765,13 @@ exports[`Storyshots Molecules | Input / Select / MultiSelectList List With Diffe
                           </div>
                         </div>
                         <div
-                          className="c29"
+                          className="c29 c30"
                         >
-                          <div
-                            className="c30"
+                          <span
+                            className="c31 c33"
                           >
-                            <div
-                              className="c31"
-                            >
-                              <span
-                                className="c33"
-                              >
-                                Disabled
-                              </span>
-                            </div>
-                          </div>
+                            Disabled
+                          </span>
                         </div>
                       </div>
                     </div>
@@ -3033,21 +2833,13 @@ exports[`Storyshots Molecules | Input / Select / MultiSelectList List With Diffe
                           </div>
                         </div>
                         <div
-                          className="c29"
+                          className="c29 c30"
                         >
-                          <div
-                            className="c30"
+                          <span
+                            className="c31 c33"
                           >
-                            <div
-                              className="c31"
-                            >
-                              <span
-                                className="c33"
-                              >
-                                Disabled
-                              </span>
-                            </div>
-                          </div>
+                            Disabled
+                          </span>
                         </div>
                       </div>
                     </div>
@@ -3109,21 +2901,13 @@ exports[`Storyshots Molecules | Input / Select / MultiSelectList List With Diffe
                           </div>
                         </div>
                         <div
-                          className="c29"
+                          className="c29 c30"
                         >
-                          <div
-                            className="c30"
+                          <span
+                            className="c31 c33"
                           >
-                            <div
-                              className="c31"
-                            >
-                              <span
-                                className="c33"
-                              >
-                                Disabled
-                              </span>
-                            </div>
-                          </div>
+                            Disabled
+                          </span>
                         </div>
                       </div>
                     </div>
@@ -3185,21 +2969,13 @@ exports[`Storyshots Molecules | Input / Select / MultiSelectList List With Diffe
                           </div>
                         </div>
                         <div
-                          className="c29"
+                          className="c29 c30"
                         >
-                          <div
-                            className="c30"
+                          <span
+                            className="c31 c33"
                           >
-                            <div
-                              className="c31"
-                            >
-                              <span
-                                className="c33"
-                              >
-                                Disabled
-                              </span>
-                            </div>
-                          </div>
+                            Disabled
+                          </span>
                         </div>
                       </div>
                     </div>
@@ -3261,21 +3037,13 @@ exports[`Storyshots Molecules | Input / Select / MultiSelectList List With Diffe
                           </div>
                         </div>
                         <div
-                          className="c29"
+                          className="c29 c30"
                         >
-                          <div
-                            className="c30"
+                          <span
+                            className="c31 c33"
                           >
-                            <div
-                              className="c31"
-                            >
-                              <span
-                                className="c33"
-                              >
-                                Disabled
-                              </span>
-                            </div>
-                          </div>
+                            Disabled
+                          </span>
                         </div>
                       </div>
                     </div>
@@ -3337,21 +3105,13 @@ exports[`Storyshots Molecules | Input / Select / MultiSelectList List With Diffe
                           </div>
                         </div>
                         <div
-                          className="c29"
+                          className="c29 c30"
                         >
-                          <div
-                            className="c30"
+                          <span
+                            className="c31 c33"
                           >
-                            <div
-                              className="c31"
-                            >
-                              <span
-                                className="c33"
-                              >
-                                Disabled
-                              </span>
-                            </div>
-                          </div>
+                            Disabled
+                          </span>
                         </div>
                       </div>
                     </div>
@@ -3413,21 +3173,13 @@ exports[`Storyshots Molecules | Input / Select / MultiSelectList List With Diffe
                           </div>
                         </div>
                         <div
-                          className="c29"
+                          className="c29 c30"
                         >
-                          <div
-                            className="c30"
+                          <span
+                            className="c31 c33"
                           >
-                            <div
-                              className="c31"
-                            >
-                              <span
-                                className="c33"
-                              >
-                                Disabled
-                              </span>
-                            </div>
-                          </div>
+                            Disabled
+                          </span>
                         </div>
                       </div>
                     </div>
@@ -3489,21 +3241,13 @@ exports[`Storyshots Molecules | Input / Select / MultiSelectList List With Diffe
                           </div>
                         </div>
                         <div
-                          className="c29"
+                          className="c29 c30"
                         >
-                          <div
-                            className="c30"
+                          <span
+                            className="c31 c33"
                           >
-                            <div
-                              className="c31"
-                            >
-                              <span
-                                className="c33"
-                              >
-                                Disabled
-                              </span>
-                            </div>
-                          </div>
+                            Disabled
+                          </span>
                         </div>
                       </div>
                     </div>
@@ -3608,21 +3352,13 @@ exports[`Storyshots Molecules | Input / Select / MultiSelectList List With Diffe
                           </div>
                         </div>
                         <div
-                          className="c29"
+                          className="c29 c30"
                         >
-                          <div
-                            className="c30"
+                          <span
+                            className="c31 c28"
                           >
-                            <div
-                              className="c31"
-                            >
-                              <span
-                                className="c28"
-                              >
-                                Default?
-                              </span>
-                            </div>
-                          </div>
+                            Default?
+                          </span>
                         </div>
                       </div>
                     </div>
@@ -3685,21 +3421,13 @@ exports[`Storyshots Molecules | Input / Select / MultiSelectList List With Diffe
                           </div>
                         </div>
                         <div
-                          className="c29"
+                          className="c29 c30"
                         >
-                          <div
-                            className="c30"
+                          <span
+                            className="c31 c28"
                           >
-                            <div
-                              className="c31"
-                            >
-                              <span
-                                className="c28"
-                              >
-                                First
-                              </span>
-                            </div>
-                          </div>
+                            First
+                          </span>
                         </div>
                       </div>
                     </div>
@@ -3760,21 +3488,13 @@ exports[`Storyshots Molecules | Input / Select / MultiSelectList List With Diffe
                           </div>
                         </div>
                         <div
-                          className="c29"
+                          className="c29 c30"
                         >
-                          <div
-                            className="c30"
+                          <span
+                            className="c31 c28"
                           >
-                            <div
-                              className="c31"
-                            >
-                              <span
-                                className="c28"
-                              >
-                                Second
-                              </span>
-                            </div>
-                          </div>
+                            Second
+                          </span>
                         </div>
                       </div>
                     </div>
@@ -3836,21 +3556,13 @@ exports[`Storyshots Molecules | Input / Select / MultiSelectList List With Diffe
                           </div>
                         </div>
                         <div
-                          className="c29"
+                          className="c29 c30"
                         >
-                          <div
-                            className="c30"
+                          <span
+                            className="c31 c33"
                           >
-                            <div
-                              className="c31"
-                            >
-                              <span
-                                className="c33"
-                              >
-                                Disabled
-                              </span>
-                            </div>
-                          </div>
+                            Disabled
+                          </span>
                         </div>
                       </div>
                     </div>
@@ -3912,21 +3624,13 @@ exports[`Storyshots Molecules | Input / Select / MultiSelectList List With Diffe
                           </div>
                         </div>
                         <div
-                          className="c29"
+                          className="c29 c30"
                         >
-                          <div
-                            className="c30"
+                          <span
+                            className="c31 c33"
                           >
-                            <div
-                              className="c31"
-                            >
-                              <span
-                                className="c33"
-                              >
-                                Disabled
-                              </span>
-                            </div>
-                          </div>
+                            Disabled
+                          </span>
                         </div>
                       </div>
                     </div>
@@ -3988,21 +3692,13 @@ exports[`Storyshots Molecules | Input / Select / MultiSelectList List With Diffe
                           </div>
                         </div>
                         <div
-                          className="c29"
+                          className="c29 c30"
                         >
-                          <div
-                            className="c30"
+                          <span
+                            className="c31 c33"
                           >
-                            <div
-                              className="c31"
-                            >
-                              <span
-                                className="c33"
-                              >
-                                Disabled
-                              </span>
-                            </div>
-                          </div>
+                            Disabled
+                          </span>
                         </div>
                       </div>
                     </div>
@@ -4064,21 +3760,13 @@ exports[`Storyshots Molecules | Input / Select / MultiSelectList List With Diffe
                           </div>
                         </div>
                         <div
-                          className="c29"
+                          className="c29 c30"
                         >
-                          <div
-                            className="c30"
+                          <span
+                            className="c31 c33"
                           >
-                            <div
-                              className="c31"
-                            >
-                              <span
-                                className="c33"
-                              >
-                                Disabled
-                              </span>
-                            </div>
-                          </div>
+                            Disabled
+                          </span>
                         </div>
                       </div>
                     </div>
@@ -4140,21 +3828,13 @@ exports[`Storyshots Molecules | Input / Select / MultiSelectList List With Diffe
                           </div>
                         </div>
                         <div
-                          className="c29"
+                          className="c29 c30"
                         >
-                          <div
-                            className="c30"
+                          <span
+                            className="c31 c33"
                           >
-                            <div
-                              className="c31"
-                            >
-                              <span
-                                className="c33"
-                              >
-                                Disabled
-                              </span>
-                            </div>
-                          </div>
+                            Disabled
+                          </span>
                         </div>
                       </div>
                     </div>
@@ -4216,21 +3896,13 @@ exports[`Storyshots Molecules | Input / Select / MultiSelectList List With Diffe
                           </div>
                         </div>
                         <div
-                          className="c29"
+                          className="c29 c30"
                         >
-                          <div
-                            className="c30"
+                          <span
+                            className="c31 c33"
                           >
-                            <div
-                              className="c31"
-                            >
-                              <span
-                                className="c33"
-                              >
-                                Disabled
-                              </span>
-                            </div>
-                          </div>
+                            Disabled
+                          </span>
                         </div>
                       </div>
                     </div>
@@ -4292,21 +3964,13 @@ exports[`Storyshots Molecules | Input / Select / MultiSelectList List With Diffe
                           </div>
                         </div>
                         <div
-                          className="c29"
+                          className="c29 c30"
                         >
-                          <div
-                            className="c30"
+                          <span
+                            className="c31 c33"
                           >
-                            <div
-                              className="c31"
-                            >
-                              <span
-                                className="c33"
-                              >
-                                Disabled
-                              </span>
-                            </div>
-                          </div>
+                            Disabled
+                          </span>
                         </div>
                       </div>
                     </div>
@@ -4368,21 +4032,13 @@ exports[`Storyshots Molecules | Input / Select / MultiSelectList List With Diffe
                           </div>
                         </div>
                         <div
-                          className="c29"
+                          className="c29 c30"
                         >
-                          <div
-                            className="c30"
+                          <span
+                            className="c31 c33"
                           >
-                            <div
-                              className="c31"
-                            >
-                              <span
-                                className="c33"
-                              >
-                                Disabled
-                              </span>
-                            </div>
-                          </div>
+                            Disabled
+                          </span>
                         </div>
                       </div>
                     </div>
@@ -4444,21 +4100,13 @@ exports[`Storyshots Molecules | Input / Select / MultiSelectList List With Diffe
                           </div>
                         </div>
                         <div
-                          className="c29"
+                          className="c29 c30"
                         >
-                          <div
-                            className="c30"
+                          <span
+                            className="c31 c33"
                           >
-                            <div
-                              className="c31"
-                            >
-                              <span
-                                className="c33"
-                              >
-                                Disabled
-                              </span>
-                            </div>
-                          </div>
+                            Disabled
+                          </span>
                         </div>
                       </div>
                     </div>
@@ -4520,21 +4168,13 @@ exports[`Storyshots Molecules | Input / Select / MultiSelectList List With Diffe
                           </div>
                         </div>
                         <div
-                          className="c29"
+                          className="c29 c30"
                         >
-                          <div
-                            className="c30"
+                          <span
+                            className="c31 c33"
                           >
-                            <div
-                              className="c31"
-                            >
-                              <span
-                                className="c33"
-                              >
-                                Disabled
-                              </span>
-                            </div>
-                          </div>
+                            Disabled
+                          </span>
                         </div>
                       </div>
                     </div>
