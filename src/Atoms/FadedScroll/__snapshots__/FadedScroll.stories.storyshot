@@ -2,7 +2,10 @@
 
 exports[`Storyshots Atoms | FadedScroll Default Story 1`] = `
 .c0 {
-  height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
   min-height: 0;
   -webkit-box-flex: 1;
   -webkit-flex-grow: 1;
@@ -71,7 +74,7 @@ exports[`Storyshots Atoms | FadedScroll Default Story 1`] = `
     -webkit-transition: 0.3s opacity ease-out;
     transition: 0.3s opacity ease-out;
     top: 0;
-    background: linear-gradient(0deg,#ffffff00 0%,#00ffffff 100%);
+    background: linear-gradient(0deg,#ffffff00 0%,#ffffffff 100%);
   }
 }
 
@@ -94,7 +97,7 @@ exports[`Storyshots Atoms | FadedScroll Default Story 1`] = `
     -webkit-transition: 0.3s opacity ease-out;
     transition: 0.3s opacity ease-out;
     bottom: 0;
-    background: linear-gradient(0deg,#fff00fff 0%,#ffffff00 100%);
+    background: linear-gradient(0deg,#ffffffff 0%,#ffffff00 100%);
   }
 }
 
@@ -169,9 +172,12 @@ exports[`Storyshots Atoms | FadedScroll Default Story 1`] = `
 </div>
 `;
 
-exports[`Storyshots Atoms | FadedScroll With Height Declared By Parent 1`] = `
+exports[`Storyshots Atoms | FadedScroll With Auto Height Of Scrollable Area 1`] = `
 .c1 {
-  height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
   min-height: 0;
   -webkit-box-flex: 1;
   -webkit-flex-grow: 1;
@@ -240,7 +246,7 @@ exports[`Storyshots Atoms | FadedScroll With Height Declared By Parent 1`] = `
     -webkit-transition: 0.3s opacity ease-out;
     transition: 0.3s opacity ease-out;
     top: 0;
-    background: linear-gradient(0deg,#ffffff00 0%,#00ffffff 100%);
+    background: linear-gradient(0deg,#ffffff00 0%,#ffffffff 100%);
   }
 }
 
@@ -263,13 +269,23 @@ exports[`Storyshots Atoms | FadedScroll With Height Declared By Parent 1`] = `
     -webkit-transition: 0.3s opacity ease-out;
     transition: 0.3s opacity ease-out;
     bottom: 0;
-    background: linear-gradient(0deg,#fff00fff 0%,#ffffff00 100%);
+    background: linear-gradient(0deg,#ffffffff 0%,#ffffff00 100%);
   }
 }
 
 @media (min-width:976px) {
   .c2 {
-    height: 100%;
+    min-height: 0;
+    -webkit-box-flex: 1;
+    -webkit-flex-grow: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    -webkit-flex-shrink: 1;
+    -ms-flex-negative: 1;
+    flex-shrink: 1;
+    -webkit-flex-basis: auto;
+    -ms-flex-preferred-size: auto;
+    flex-basis: auto;
     overflow-y: auto;
   }
 }
@@ -346,7 +362,10 @@ exports[`Storyshots Atoms | FadedScroll With Height Declared By Parent 1`] = `
 
 exports[`Storyshots Atoms | FadedScroll With Height Of Fade Changed 1`] = `
 .c0 {
-  height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
   min-height: 0;
   -webkit-box-flex: 1;
   -webkit-flex-grow: 1;
@@ -415,7 +434,7 @@ exports[`Storyshots Atoms | FadedScroll With Height Of Fade Changed 1`] = `
     -webkit-transition: 0.3s opacity ease-out;
     transition: 0.3s opacity ease-out;
     top: 0;
-    background: linear-gradient(0deg,#ffffff00 0%,#00ffffff 100%);
+    background: linear-gradient(0deg,#ffffff00 0%,#ffffffff 100%);
   }
 }
 
@@ -438,7 +457,7 @@ exports[`Storyshots Atoms | FadedScroll With Height Of Fade Changed 1`] = `
     -webkit-transition: 0.3s opacity ease-out;
     transition: 0.3s opacity ease-out;
     bottom: 0;
-    background: linear-gradient(0deg,#fff00fff 0%,#ffffff00 100%);
+    background: linear-gradient(0deg,#ffffffff 0%,#ffffff00 100%);
   }
 }
 
@@ -515,7 +534,10 @@ exports[`Storyshots Atoms | FadedScroll With Height Of Fade Changed 1`] = `
 
 exports[`Storyshots Atoms | FadedScroll With Mobile Fade Enabled 1`] = `
 .c1 {
-  height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
   min-height: 0;
   -webkit-box-flex: 1;
   -webkit-flex-grow: 1;
@@ -545,7 +567,7 @@ exports[`Storyshots Atoms | FadedScroll With Mobile Fade Enabled 1`] = `
   -webkit-transition: 0.3s opacity ease-out;
   transition: 0.3s opacity ease-out;
   top: 0;
-  background: linear-gradient(0deg,#ffffff00 0%,#00ffffff 100%);
+  background: linear-gradient(0deg,#ffffff00 0%,#ffffffff 100%);
 }
 
 .c1::after {
@@ -562,11 +584,21 @@ exports[`Storyshots Atoms | FadedScroll With Mobile Fade Enabled 1`] = `
   -webkit-transition: 0.3s opacity ease-out;
   transition: 0.3s opacity ease-out;
   bottom: 0;
-  background: linear-gradient(0deg,#fff00fff 0%,#ffffff00 100%);
+  background: linear-gradient(0deg,#ffffffff 0%,#ffffff00 100%);
 }
 
 .c2 {
-  height: 100%;
+  min-height: 0;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  -webkit-flex-shrink: 1;
+  -ms-flex-negative: 1;
+  flex-shrink: 1;
+  -webkit-flex-basis: auto;
+  -ms-flex-preferred-size: auto;
+  flex-basis: auto;
   overflow-y: auto;
 }
 
@@ -676,7 +708,10 @@ exports[`Storyshots Atoms | FadedScroll With Mobile Fade Enabled 1`] = `
 
 exports[`Storyshots Atoms | FadedScroll With Top Fade Disabled 1`] = `
 .c0 {
-  height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
   min-height: 0;
   -webkit-box-flex: 1;
   -webkit-flex-grow: 1;
@@ -736,7 +771,7 @@ exports[`Storyshots Atoms | FadedScroll With Top Fade Disabled 1`] = `
     -webkit-transition: 0.3s opacity ease-out;
     transition: 0.3s opacity ease-out;
     bottom: 0;
-    background: linear-gradient(0deg,#fff00fff 0%,#ffffff00 100%);
+    background: linear-gradient(0deg,#ffffffff 0%,#ffffff00 100%);
   }
 }
 

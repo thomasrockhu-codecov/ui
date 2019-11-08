@@ -2,7 +2,7 @@ import { css } from 'styled-components';
 import { InternalProps, Props } from './FadedScroll.types';
 import { getValueFromNumberOrString } from '../../common/utils';
 
-export const flexContainer = css`
+export const flexAutoHeight = css`
   min-height: 0; /* Firefox */
   flex-grow: 1;
   flex-shrink: 1;
@@ -13,7 +13,7 @@ export const scroll = css<Pick<Props, 'maxHeight'>>`
   ${p =>
     p.maxHeight
       ? `max-height: ${getValueFromNumberOrString(p.maxHeight, p.theme)};`
-      : 'height: 100%;'}
+      : flexAutoHeight}
   overflow-y: auto;
 `;
 
@@ -43,7 +43,7 @@ export const fadeTop = css<InternalProps & Props>`
   &::before {
     ${fade}
     top: 0;
-    background: linear-gradient(0deg, #ffffff00 0%, #00ffffff 100%);
+    background: linear-gradient(0deg, #ffffff00 0%, #ffffffff 100%);
     ${p => p.intersectionTopOnScreen === false && `opacity: 1;`}
   }
 `;
@@ -60,7 +60,7 @@ export const fadeBottom = css<InternalProps & Props>`
   &::after {
     ${fade}
     bottom: 0;
-    background: linear-gradient(0deg, #fff00fff 0%, #ffffff00 100%);
+    background: linear-gradient(0deg, #ffffffff 0%, #ffffff00 100%);
     ${p => p.intersectionBottomOnScreen === false && `opacity: 1;`}
   }
 `;

@@ -7,15 +7,14 @@ import {
   fadeBottomDesktop,
   fadeTop,
   fadeTopDesktop,
-  flexContainer,
+  flexAutoHeight,
   intersection,
   scroll,
   scrollDesktop,
 } from './FadedScroll.styles';
 
 const Container = styled.div<InternalProps & Props>`
-  height: 100%;
-  ${p => !p.maxHeight && flexContainer}
+  ${p => !p.maxHeight && `display: flex; ${flexAutoHeight}`}
   ${p => !p.disableTopFade && (p.enableMobileFade ? fadeTop : fadeTopDesktop)}
   ${p => (p.enableMobileFade ? fadeBottom : fadeBottomDesktop)}
 `;

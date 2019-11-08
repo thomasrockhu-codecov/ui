@@ -46,12 +46,12 @@ defaultStory.story = {
   name: 'Default, using maxHeight prop',
 };
 
-export const withHeightDeclaredByParent = () => (
+export const withAutoHeightOfScrollableArea = () => (
   <FadedScrollWithHeightDesktopOnly>{content}</FadedScrollWithHeightDesktopOnly>
 );
 
-withHeightDeclaredByParent.story = {
-  name: 'With height declared by parent',
+withAutoHeightOfScrollableArea.story = {
+  name: 'With height of scrollable area being whatever is available',
 };
 
 export const withHeightOfFadeChanged = () => (
