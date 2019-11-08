@@ -92,6 +92,7 @@ export const SelectMachine = Machine<Context>(
           [ACTION_TYPES.OPEN]: {
             target: '.on',
             actions: 'restoreFocusOrFocusFirst',
+            cond: ctx => ctx.actions.length > 0 || ctx.visibleOptions.length > 0,
           },
           [ACTION_TYPES.CLOSE]: { target: '.off', actions: 'cleanSearch' },
           [ACTION_TYPES.TOGGLE]: [
@@ -290,7 +291,7 @@ export const SelectMachine = Machine<Context>(
                 { target: 'disabled', cond: ctx => ctx.disabled },
                 {
                   target: 'disabled',
-                  cond: ctx => ctx.options.length === 0,
+                  cond: ctx => ctx.options.length === 0 && ctx.actions.length === 0,
                 },
                 { target: 'enabled' },
               ],

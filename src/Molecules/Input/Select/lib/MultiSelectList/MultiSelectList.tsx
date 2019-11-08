@@ -51,22 +51,25 @@ export const OptionList: React.FC<ListProps> = ({
   position,
   searchComponent = null,
   actionsComponent = null,
-}) => (
-  <DropdownBubble position={position}>
-    <StyledBox py={2}>
-      {searchComponent}
-      <FadedScrollWithoutPaddingBottom enableMobileFade fadeHeight={8}>
-        <StyledList role="listbox">{children}</StyledList>
-      </FadedScrollWithoutPaddingBottom>
-      {actionsComponent !== null && (
-        <>
-          <Separator />
-          <Box pt={2}>{actionsComponent}</Box>
-        </>
-      )}
-    </StyledBox>
-  </DropdownBubble>
-);
+}) => {
+  const areOptionsProvided = React.Children.count(children) > 0;
+  return (
+    <DropdownBubble position={position}>
+      <StyledBox py={2}>
+        {searchComponent}
+        <FadedScrollWithoutPaddingBottom enableMobileFade fadeHeight={8}>
+          <StyledList role="listbox">{children}</StyledList>
+        </FadedScrollWithoutPaddingBottom>
+        {actionsComponent !== null && (
+          <>
+            {areOptionsProvided && <Separator />}
+            <Box pt={areOptionsProvided ? 2 : 0}>{actionsComponent}</Box>
+          </>
+        )}
+      </StyledBox>
+    </DropdownBubble>
+  );
+};
 
 const FullHeightFlexbox = styled(Flexbox)`
   height: 100%;

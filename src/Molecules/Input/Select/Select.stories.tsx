@@ -366,6 +366,57 @@ export const actions = () =>
       />
     );
   });
+export const actionsAndEmptyOptionList = () =>
+  React.createElement(() => {
+    const [value, setValue] = React.useState([]);
+    return (
+      <Input.Select
+        id="custom-renderers-select"
+        options={[]}
+        value={value}
+        // @ts-ignore
+        onChange={setValue}
+        actions={[
+          {
+            icon: <Icon.AddWithCircle size={4} color="currentColor" />,
+            label: 'Add more stuff to dropdown',
+            onSelect: action('Action triggered!'),
+          },
+          {
+            icon: <Icon.Archive size={4} color="currentColor" />,
+            label: 'Archive',
+            onSelect: action('Action Archive triggered!'),
+          },
+          {
+            label: 'No icon action',
+            onSelect: action('Action No icon triggered!'),
+          },
+          {
+            label: 'Disabled action',
+            onSelect: action('Should not appear!'),
+            disabled: true,
+          },
+        ]}
+        label="User account"
+        placeholder="Select account"
+      />
+    );
+  });
+export const fullyEmpty = () =>
+  React.createElement(() => {
+    const [value, setValue] = React.useState([]);
+    return (
+      <Input.Select
+        id="custom-renderers-select"
+        options={[]}
+        value={value}
+        // @ts-ignore
+        onChange={setValue}
+        label="User account"
+        placeholder="Select account"
+      />
+    );
+  });
 
 export const onBlurAndOnFocus = () => {
   return (
