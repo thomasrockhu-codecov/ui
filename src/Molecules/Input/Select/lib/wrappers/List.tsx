@@ -10,7 +10,11 @@ const getWidth = (p: any) => {
 };
 
 const StyledListWrapper = styled.div<any>`
+  display: flex;
+  flex-direction: column;
   width: ${getWidth};
+  max-height: ${p =>
+    typeof p.maxHeight !== 'undefined' ? p.maxHeight : `${p.theme.spacing.unit(60)}px`};
   position: absolute;
   top: 100%;
   left: -1px; /* adjusting for border */
@@ -35,6 +39,7 @@ export const ListWrapper = React.forwardRef<HTMLDivElement, any>(
       actionsComponent,
       width,
       'data-testid': dataTestId,
+      maxHeight,
     },
     ref,
   ) => {
@@ -48,6 +53,7 @@ export const ListWrapper = React.forwardRef<HTMLDivElement, any>(
         onMouseMove={onMouseMove}
         onBlur={onBlur}
         width={width}
+        maxHeight={maxHeight}
       >
         <Component
           searchComponent={searchComponent}

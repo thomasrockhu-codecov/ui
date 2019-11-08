@@ -38,7 +38,16 @@ export type Props = {
   onFocus?: React.FocusEventHandler;
   onBlur?: React.FocusEventHandler;
   fullWidth?: boolean;
+  /**
+   * For a simple Input.Select
+   * width represents both FormField width and DropdownBubble width.
+   * If you pass noFormField, then it's gonna be used only for DropdownBubble
+   */
   width?: string;
+  /**
+   * Maximum height that list can be.
+   */
+  listMaxHeight?: string;
   className?: string;
   components?: Partial<Record<ComponentTypes, React.ComponentType<any>>>;
   /** use this flag if you

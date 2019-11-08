@@ -573,7 +573,7 @@ export const accessibleFromDocumentForms = () =>
           // The story gonna rerender
           // So we have fresh stuff from document.forms
           // @ts-ignore
-          onChange={forceUpdate}
+          onChange={() => setTimeout(() => forceUpdate({}), 10)}
         />
         <br />
         Value in form: &quot;
@@ -954,9 +954,16 @@ export const linkWithDropdownAndSearchBoxMultiselect = () =>
           showSearch
           multiselect
           value={value}
+          width="300px"
+          listMaxHeight="400px"
           components={customComponents}
           onChange={handleChange}
-          width="250px"
+          actions={[
+            {
+              label: 'Action',
+              onSelect: action('Action triggered'),
+            },
+          ]}
         />
       </TrackingContext.Provider>
     );

@@ -3,6 +3,15 @@
 exports[`Storyshots Atoms | DropdownBubble Default Story 1`] = `
 .c0 {
   position: relative;
+  height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  min-height: 0;
   top: 10px;
   border: 1px solid #BCBCB6;
   background-color: #FFFFFF;
@@ -67,6 +76,15 @@ exports[`Storyshots Atoms | DropdownBubble Default Story 1`] = `
 exports[`Storyshots Atoms | DropdownBubble Different Triangle Position 1`] = `
 .c5 {
   position: relative;
+  height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  min-height: 0;
   top: 10px;
   border: 1px solid #BCBCB6;
   background-color: #FFFFFF;
@@ -103,6 +121,15 @@ exports[`Storyshots Atoms | DropdownBubble Different Triangle Position 1`] = `
 
 .c3 {
   position: relative;
+  height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  min-height: 0;
   top: 10px;
   border: 1px solid #BCBCB6;
   background-color: #FFFFFF;
@@ -139,6 +166,15 @@ exports[`Storyshots Atoms | DropdownBubble Different Triangle Position 1`] = `
 
 .c6 {
   position: relative;
+  height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  min-height: 0;
   top: 10px;
   border: 1px solid #BCBCB6;
   background-color: #FFFFFF;

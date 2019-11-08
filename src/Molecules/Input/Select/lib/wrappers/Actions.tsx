@@ -9,6 +9,9 @@ const getFocusedActionIdx = (optionsCount: number, currentIdx: number | null) =>
 const StyledList = styled(List)<any>`
   list-style: none;
 `;
+const StyledLi = styled.li`
+  outline: none;
+`;
 
 export const ActionsWrapper: React.FC<{
   onClickFactory: (action: any) => (event: React.MouseEvent) => void;
@@ -38,13 +41,16 @@ export const ActionsWrapper: React.FC<{
       {actions.map((a, index) => (
         // Because it has keyboard navigation from Input.Select itself
         // eslint-disable-next-line jsx-a11y/click-events-have-key-events
-        <li
+        <StyledLi
           key={a.label}
           role="menuitem"
           onClick={handleClick(index)}
           id={`${id}-action-${index}`}
           aria-disabled={a.disabled}
           aria-label={a.label}
+          // This tabIndex needed for focus and blur
+          // during onClick to behave correctly
+          tabIndex={0}
         >
           <Component
             label={a.label}
@@ -54,7 +60,7 @@ export const ActionsWrapper: React.FC<{
             isKeyboardNavigation={isKeyboardNavigation}
             disabled={a.disabled}
           />
-        </li>
+        </StyledLi>
       ))}
     </StyledList>
   );

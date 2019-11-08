@@ -28,6 +28,20 @@ const StyledList = styled(UIList)<any>`
 
 const FadedScrollWithoutPaddingBottom = styled(FadedScroll)`
   padding-bottom: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 0;
+  ${FadedScroll.components.Fade} {
+    min-height: 0;
+    display: flex;
+    flex-direction: column;
+  }
+`;
+
+const StyledBox = styled(Box)`
+  min-height: 0;
+  display: flex;
+  flex-direction: column;
 `;
 
 export const OptionList: React.FC<ListProps> = ({
@@ -37,9 +51,9 @@ export const OptionList: React.FC<ListProps> = ({
   actionsComponent = null,
 }) => (
   <DropdownBubble position={position}>
-    <Box py={2}>
+    <StyledBox py={2}>
       {searchComponent}
-      <FadedScrollWithoutPaddingBottom maxHeight="240px" enableMobileFade fadeHeight={8}>
+      <FadedScrollWithoutPaddingBottom enableMobileFade fadeHeight={8}>
         <StyledList role="listbox">{children}</StyledList>
       </FadedScrollWithoutPaddingBottom>
       {actionsComponent !== null && (
@@ -48,7 +62,7 @@ export const OptionList: React.FC<ListProps> = ({
           <Box pt={1}>{actionsComponent}</Box>
         </>
       )}
-    </Box>
+    </StyledBox>
   </DropdownBubble>
 );
 

@@ -279,7 +279,7 @@ Array [
 `;
 
 exports[`Storyshots Organisms | CardWithTabs Integration With Faded Scroll 1`] = `
-.c21 {
+.c22 {
   padding-left: 20px;
   padding-top: 16px;
   padding-right: 20px;
@@ -301,15 +301,15 @@ exports[`Storyshots Organisms | CardWithTabs Integration With Faded Scroll 1`] =
   padding-bottom: 20px;
 }
 
-.c18 {
+.c19 {
   height: 100%;
 }
 
-.c20 {
+.c21 {
   position: relative;
 }
 
-.c22 {
+.c23 {
   height: 4px;
   width: 4px;
   position: absolute;
@@ -429,6 +429,28 @@ exports[`Storyshots Organisms | CardWithTabs Integration With Faded Scroll 1`] =
   max-height: 100%;
 }
 
+.c24 .c18 {
+  min-height: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.c25 .c18 {
+  min-height: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
 .c11 {
   font-family: inherit;
   font-size: 100%;
@@ -490,12 +512,12 @@ exports[`Storyshots Organisms | CardWithTabs Integration With Faded Scroll 1`] =
 }
 
 @media (min-width:976px) {
-  .c18 {
+  .c19 {
     position: relative;
     height: 100%;
   }
 
-  .c18::after {
+  .c19::after {
     content: '';
     display: block;
     width: 100%;
@@ -514,7 +536,7 @@ exports[`Storyshots Organisms | CardWithTabs Integration With Faded Scroll 1`] =
 }
 
 @media (min-width:976px) {
-  .c19 {
+  .c20 {
     max-height: 80px;
     overflow-y: auto;
   }
@@ -612,16 +634,16 @@ exports[`Storyshots Organisms | CardWithTabs Integration With Faded Scroll 1`] =
       className="c17"
     >
       <div
-        className="c18"
+        className="c18 c19"
       >
         <div
-          className="c19"
+          className="c20"
         >
           <div
-            className="c20"
+            className="c21"
           >
             <div
-              className="c21"
+              className="c22"
             >
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam dictum nulla tincidunt
 interdum ornare. Duis blandit nibh nec dui varius lobortis. Sed viverra, metus quis
@@ -641,7 +663,7 @@ In eleifend a risus at pulvinar. Donec ultricies justo et ligula venenatis, sed 
 nunc dignissim.
             </div>
             <div
-              className="c22"
+              className="c23"
             />
           </div>
         </div>
@@ -652,7 +674,7 @@ nunc dignissim.
 `;
 
 exports[`Storyshots Organisms | CardWithTabs Integration With Faded Scroll With Height From Parent 1`] = `
-.c22 {
+.c23 {
   padding-left: 20px;
   padding-top: 16px;
   padding-right: 20px;
@@ -674,15 +696,15 @@ exports[`Storyshots Organisms | CardWithTabs Integration With Faded Scroll With 
   padding-bottom: 20px;
 }
 
-.c19 {
+.c20 {
   height: 100%;
 }
 
-.c21 {
+.c22 {
   position: relative;
 }
 
-.c23 {
+.c24 {
   height: 4px;
   width: 4px;
   position: absolute;
@@ -802,6 +824,28 @@ exports[`Storyshots Organisms | CardWithTabs Integration With Faded Scroll With 
   max-height: 100%;
 }
 
+.c25 .c19 {
+  min-height: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.c26 .c19 {
+  min-height: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
 .c12 {
   font-family: inherit;
   font-size: 100%;
@@ -863,12 +907,12 @@ exports[`Storyshots Organisms | CardWithTabs Integration With Faded Scroll With 
 }
 
 @media (min-width:976px) {
-  .c19 {
+  .c20 {
     position: relative;
     height: 100%;
   }
 
-  .c19::after {
+  .c20::after {
     content: '';
     display: block;
     width: 100%;
@@ -887,7 +931,7 @@ exports[`Storyshots Organisms | CardWithTabs Integration With Faded Scroll With 
 }
 
 @media (min-width:976px) {
-  .c20 {
+  .c21 {
     max-height: 100%;
     overflow-y: auto;
   }
@@ -991,16 +1035,16 @@ exports[`Storyshots Organisms | CardWithTabs Integration With Faded Scroll With 
       className="c18"
     >
       <div
-        className="c19"
+        className="c19 c20"
       >
         <div
-          className="c20"
+          className="c21"
         >
           <div
-            className="c21"
+            className="c22"
           >
             <div
-              className="c22"
+              className="c23"
             >
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam dictum nulla tincidunt
 interdum ornare. Duis blandit nibh nec dui varius lobortis. Sed viverra, metus quis
@@ -1020,7 +1064,7 @@ In eleifend a risus at pulvinar. Donec ultricies justo et ligula venenatis, sed 
 nunc dignissim.
             </div>
             <div
-              className="c23"
+              className="c24"
             />
           </div>
         </div>

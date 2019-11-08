@@ -2,9 +2,9 @@ import * as React from 'react';
 import styled, { css } from 'styled-components';
 import { Box, Typography, Flexbox } from '../../../../..';
 
-const hoverIfNotKeyboardNav = css<{ isKeyboardNavigation?: boolean }>`
+const hoverIfNotKeyboardNav = css<{ isKeyboardNavigation?: boolean; disabled?: boolean }>`
   ${p =>
-    p.isKeyboardNavigation
+    p.disabled || p.isKeyboardNavigation
       ? ''
       : `
 &:hover { 
@@ -13,7 +13,7 @@ background: ${p.theme.color.background};
 `}
 `;
 const StyledBoxWithBorder = styled(Box)<any>`
-  cursor: pointer;
+  cursor: ${p => (p.disabled ? 'not-allowed' : 'pointer')};
   min-width: ${p => p.theme.spacing.unit(35)}px;
   ${p =>
     p.focused && p.isKeyboardNavigation

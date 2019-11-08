@@ -30,6 +30,20 @@ const StyledList = styled(UIList)<any>`
 
 const FadedScrollWithoutPaddingBottom = styled(FadedScroll)`
   padding-bottom: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 0;
+  ${FadedScroll.components.Fade} {
+    min-height: 0;
+    display: flex;
+    flex-direction: column;
+  }
+`;
+
+const StyledBox = styled(Box)`
+  min-height: 0;
+  display: flex;
+  flex-direction: column;
 `;
 
 export const OptionList: React.FC<ListProps> = ({
@@ -39,9 +53,9 @@ export const OptionList: React.FC<ListProps> = ({
   actionsComponent = null,
 }) => (
   <DropdownBubble position={position}>
-    <Box py={2}>
+    <StyledBox py={2}>
       {searchComponent}
-      <FadedScrollWithoutPaddingBottom maxHeight="200px" enableMobileFade fadeHeight={8}>
+      <FadedScrollWithoutPaddingBottom enableMobileFade fadeHeight={8}>
         <StyledList role="listbox">{children}</StyledList>
       </FadedScrollWithoutPaddingBottom>
       {actionsComponent !== null && (
@@ -50,7 +64,7 @@ export const OptionList: React.FC<ListProps> = ({
           <Box pt={2}>{actionsComponent}</Box>
         </>
       )}
-    </Box>
+    </StyledBox>
   </DropdownBubble>
 );
 
@@ -122,7 +136,8 @@ const Checkbox16px = styled(Checkbox)`
 
 const FlexboxWidth = styled(Flexbox)`
   /* FIXME: minus checkbox width and minus padding */
-  width: calc(100% - 16px - 12px);
+  flex: 1 1 100%;
+  min-width: 0;
 `;
 
 const EllipsizingText = styled(Typography)`
@@ -143,7 +158,7 @@ export const Option = React.forwardRef<HTMLDivElement, OptionProps>(
       isKeyboardNavigation={isKeyboardNavigation}
     >
       <FullHeightFlexbox container alignItems="center" gutter={2}>
-        <Flexbox item container alignItems="center">
+        <Flexbox item container alignItems="center" flex="0 0 auto">
           {/** TODO: revisit a11y here */}
           <Checkbox16px
             width="16px"

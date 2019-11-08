@@ -256,6 +256,7 @@ const Select = (props: Props) => {
                   <ActionsWrapper component={Action} onClickFactory={handleClickActionItem} />
                 ) : null
               }
+              maxHeight={props.listMaxHeight}
               width={props.width}
             >
               {options.map((x: any, index: number) => (
