@@ -217,7 +217,7 @@ const StyledDiv = styled.div<Props>`
           size,
         }) || '';
       const baseStyles = `
-          ${height ? `height: ${height};` : ''};
+          ${height ? `height: ${height};` : ''}
           ${areas ? `grid-template-areas: ${formatAreas(areas)};` : ''}
           ${templateRowsStyles}
           ${templateColumnStyles}
@@ -238,7 +238,7 @@ const StyledDiv = styled.div<Props>`
             ${props.theme.media.greaterThan(props.theme.breakpoints[size])} {
               ${baseStyles}
             }
-          `
+          `.join(' ')
         : css`
             ${baseStyles}
           `;
