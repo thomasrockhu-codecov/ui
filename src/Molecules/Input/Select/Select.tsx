@@ -95,10 +95,23 @@ const Select = (props: Props) => {
     );
   }, [trackContext, service]);
 
+  React.useEffect(() => {
+    if (!props.onSearchQueryChange) return;
+    const listener = (e: { type: string; payload: string }) =>
+      e.type === ACTION_TYPES.SEARCH_QUERY_UPDATE && props.onSearchQueryChange!(e);
+
+    service.onEvent(listener as any);
+    // eslint-disable-next-line consistent-return
+    return () => {
+      service.off(listener);
+    };
+  }, [service, props.onSearchQueryChange]);
+
   /******      Machine syncing      ******/
   usePropagateChangesThroughOnChange(machineState, send, props.onChange, isFirstRender);
   useSyncPropsWithMachine(
     {
+      searchQuery: props.searchQuery || machineState.context.searchQuery,
       label: props.label,
       options: props.options,
       placeholder: props.placeholder,
@@ -126,6 +139,7 @@ const Select = (props: Props) => {
       props.showSearch,
       props.id,
       props.actions,
+      props.searchQuery,
     ],
   );
 

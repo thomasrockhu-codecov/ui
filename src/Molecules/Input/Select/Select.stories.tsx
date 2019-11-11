@@ -567,9 +567,11 @@ export const multiselectSelectAll = () =>
 
 export const changesFromProps = () =>
   React.createElement(() => {
+    const [searchQuery, setSearchQuery] = React.useState('');
     const [accs, setAccs] = React.useState(accountOptions);
     const [value, setValue] = React.useState([]);
     const [disabled, setDisabled] = React.useState(false);
+
     const removeAcc = () => setAccs(accs.slice(0, -1));
     // @ts-ignore
     const selectFirst = () => setValue([accountOptions[0]]);
@@ -579,6 +581,7 @@ export const changesFromProps = () =>
         <button type="button" onClick={removeAcc}>
           Delete
         </button>
+
         <button type="button" onClick={selectFirst}>
           Select first
         </button>
@@ -598,6 +601,12 @@ export const changesFromProps = () =>
           onChange={setValue}
           options={accs}
           label="User account"
+          showSearch
+          searchQuery={searchQuery}
+          onSearchQueryChange={({ payload }) => {
+            action('search')(payload);
+            setSearchQuery(payload);
+          }}
           placeholder="Select account"
         />
       </>
@@ -1108,6 +1117,17 @@ export const listPositionedToTheLeft = () =>
     );
   });
 
+export const onSearchQueryChange = () => (
+  <Input.Select
+    id="success-select"
+    options={accountOptions}
+    label="User account"
+    success
+    showSearch
+    onSearchQueryChange={action('search query change')}
+    placeholder="Select account"
+  />
+);
 export default {
   title: 'Molecules | Input / Select',
   parameters: {

@@ -19,7 +19,6 @@ const getStylesForPosition = (listPosition: string) => {
 };
 
 const StyledListWrapper = styled.div<any>`
-  padding-bottom: 16px;
   transform: translate3d(0, 0, 0);
   position: absolute;
   top: 100%;

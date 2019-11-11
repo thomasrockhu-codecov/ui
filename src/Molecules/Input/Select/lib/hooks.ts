@@ -162,12 +162,12 @@ export const useOnBlurAndOnFocus = (
 ) => {
   const isPassive = machineState.matches('interaction.enabled.idle');
   React.useEffect(() => {
-    if (!isFirstRender && isPassive && onBlur) onBlur();
+    if (!isFirstRender && isPassive && onBlur) onBlur({ target: wrapperRef.current });
   }, [isPassive]); // eslint-disable-line react-hooks/exhaustive-deps
 
   const isActive = machineState.matches('interaction.enabled.active');
   React.useEffect(() => {
-    if (isActive && onFocus) onFocus();
+    if (isActive && onFocus) onFocus({ target: wrapperRef.current });
   }, [isActive]); // eslint-disable-line react-hooks/exhaustive-deps
 
   const handleFocus = React.useCallback(

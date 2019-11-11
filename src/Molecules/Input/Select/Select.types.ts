@@ -71,6 +71,16 @@ export type Props = {
   showSearch?: boolean;
   multiselect?: boolean;
   actions?: Array<Action>;
+  /**
+   * Controlled mode for search field
+   * Use with showSearch only
+   */
+  searchQuery?: string;
+  /**
+   * Controlled mode for search field
+   * Use with showSearch only
+   */
+  onSearchQueryChange?: (e: { type: string; payload: string }) => void;
 };
 
 export type Option = {
