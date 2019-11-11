@@ -1,113 +1,79 @@
 import React, { useRef } from 'react';
-import styled, { css } from 'styled-components';
+import styled from 'styled-components';
 import { useOnScreen } from '../../common/Hooks';
 import { Component, InternalProps, Props } from './FadedScroll.types';
-import { getValueFromNumberOrString } from '../../common/utils';
+import {
+  fadeBottomStyles,
+  fadeBottomDesktopStyles,
+  fadeTopStyles,
+  fadeTopDesktopStyles,
+  flexAutoHeightStyles,
+  intersectionStyles,
+  scrollStyles,
+  scrollDesktopStyles,
+} from './FadedScroll.styles';
 
-const scroll = css<Pick<Props, 'maxHeight'>>`
-  max-height: ${p =>
-    p.maxHeight ? ` ${getValueFromNumberOrString(p.maxHeight, p.theme)}` : '100%'};
-  overflow-y: auto;
+const Container = styled.div<InternalProps & Props>`
+  ${p => !p.maxHeight && `display: flex; ${flexAutoHeightStyles}`}
+  ${p => !p.disableTopFade && (p.enableMobileFade ? fadeTopStyles : fadeTopDesktopStyles)}
+  ${p => (p.enableMobileFade ? fadeBottomStyles : fadeBottomDesktopStyles)}
 `;
 
-const desktopScroll = css<Pick<Props, 'maxHeight'>>`
-  ${p => p.theme.media.greaterThan(p.theme.breakpoints.md)} {
-    ${scroll}
-  }
-`;
-
-const fade = css<Pick<InternalProps, 'intersectionOnScreen'> & Props>`
-  position: relative;
-  height: 100%;
-
-  &::after {
-    content: '';
-    display: block;
-    width: 100%;
-    height: ${p => getValueFromNumberOrString(p.fadeHeight!, p.theme)};
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    pointer-events: none;
-    background: transparent;
-    background: linear-gradient(0deg, #ffffffff 0%, #ffffff00 100%);
-    opacity: 0;
-    transition: 0.3s opacity ease-out;
-
-    ${p => !p.intersectionOnScreen && `opacity: 1;`}
-  }
-`;
-
-const desktopFade = css`
-  ${p => p.theme.media.greaterThan(p.theme.breakpoints.md)} {
-    ${fade}
-  }
-`;
-
-const Container = styled.div`
-  height: 100%;
-  min-height: 0; /* Firefox */
-  flex-grow: 1;
-  box-sizing: border-box;
-  padding-bottom: ${p => p.theme.spacing.unit(5)}px;
-`;
-
-const Fade = styled.div<InternalProps & Props>`
-  height: 100%;
-
-  ${p => (p.enableMobileFade ? fade : desktopFade)}
-`;
-
-const Scroll = styled.div<Props>`
-  ${p => (p.enableMobileFade ? scroll : desktopScroll)}
+const Scroller = styled.div<Props>`
+  ${p => (p.enableMobileFade ? scrollStyles : scrollDesktopStyles)}
 `;
 
 const Content = styled.div`
   position: relative;
 `;
 
-const Intersection = styled.div`
-  height: ${p => p.theme.spacing.unit(1)}px;
-  width: ${p => p.theme.spacing.unit(1)}px;
-  position: absolute;
+const IntersectionBottom = styled.div`
+  ${intersectionStyles}
   bottom: 0;
-  right: 0;
-  pointer-events: none;
+`;
+
+const IntersectionTop = styled.div<Props>`
+  ${intersectionStyles}
+  top: 0;
 `;
 
 const components = {
-  Fade,
-  Scroll,
+  Scroller,
   Content,
 };
 
 export const FadedScroll: Component & {
-  /**
-   * This will allow you to customize
-   * inner parts with styled-components
-   * @example
-   * const StyledFadedScroll = styled(FadedScroll)`
-   *  ${FadedScroll.components.Content} {
-   *    color: pink;
-   * }
-   * `
-   * */
   components: typeof components;
-} = ({ children, className, enableMobileFade = false, fadeHeight = 13, maxHeight }) => {
+} = ({
+  children,
+  className,
+  disableTopFade,
+  enableMobileFade = false,
+  fadeHeight = 13,
+  maxHeight,
+}) => {
   const contentRef = useRef<HTMLDivElement | null>(null);
-  const intersectionRef = useRef<HTMLDivElement | null>(null);
-  const intersectionOnScreen = useOnScreen(intersectionRef);
+  const intersectionTopRef = useRef<HTMLDivElement | null>(null);
+  const intersectionBottomRef = useRef<HTMLDivElement | null>(null);
+  const intersectionTopOnScreen = useOnScreen(intersectionTopRef);
+  const intersectionBottomOnScreen = useOnScreen(intersectionBottomRef);
 
   return (
-    <Container className={className}>
-      <Fade fadeHeight={fadeHeight} intersectionOnScreen={intersectionOnScreen}>
-        <Scroll enableMobileFade={enableMobileFade} maxHeight={maxHeight}>
-          <Content ref={contentRef}>
-            {children}
-            <Intersection ref={intersectionRef} />
-          </Content>
-        </Scroll>
-      </Fade>
+    <Container
+      className={className}
+      disableTopFade={disableTopFade}
+      enableMobileFade={enableMobileFade}
+      fadeHeight={fadeHeight}
+      intersectionTopOnScreen={intersectionTopOnScreen}
+      intersectionBottomOnScreen={intersectionBottomOnScreen}
+    >
+      <Scroller enableMobileFade={enableMobileFade} maxHeight={maxHeight}>
+        <Content ref={contentRef}>
+          {!disableTopFade && <IntersectionTop ref={intersectionTopRef} />}
+          {children}
+          <IntersectionBottom ref={intersectionBottomRef} />
+        </Content>
+      </Scroller>
     </Container>
   );
 };

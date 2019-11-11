@@ -267,6 +267,19 @@ withSizeSmall.story = {
   name: 'With size small',
 };
 
+export const withLabelTooltip = () => (
+  <Input.Number
+    id="insert-unique-id"
+    label="Label"
+    labelTooltip="Tooltip content"
+    onChange={action('onChange')}
+  />
+);
+
+withLabelTooltip.story = {
+  name: 'With label tooltip',
+};
+
 export const withPlaceholder = () => (
   <Display
     title="Placeholders"

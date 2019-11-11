@@ -291,21 +291,24 @@ exports[`Storyshots Organisms | CardWithTabs Integration With Faded Scroll 1`] =
 }
 
 .c17 {
-  height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
   min-height: 0;
   -webkit-box-flex: 1;
   -webkit-flex-grow: 1;
   -ms-flex-positive: 1;
   flex-grow: 1;
-  box-sizing: border-box;
-  padding-bottom: 20px;
+  -webkit-flex-shrink: 1;
+  -ms-flex-negative: 1;
+  flex-shrink: 1;
+  -webkit-flex-basis: auto;
+  -ms-flex-preferred-size: auto;
+  flex-basis: auto;
 }
 
-.c18 {
-  height: 100%;
-}
-
-.c20 {
+.c19 {
   position: relative;
 }
 
@@ -313,9 +316,18 @@ exports[`Storyshots Organisms | CardWithTabs Integration With Faded Scroll 1`] =
   height: 4px;
   width: 4px;
   position: absolute;
-  bottom: 0;
   right: 0;
   pointer-events: none;
+  bottom: 0;
+}
+
+.c20 {
+  height: 4px;
+  width: 4px;
+  position: absolute;
+  right: 0;
+  pointer-events: none;
+  top: 0;
 }
 
 .c9 {
@@ -490,31 +502,53 @@ exports[`Storyshots Organisms | CardWithTabs Integration With Faded Scroll 1`] =
 }
 
 @media (min-width:976px) {
-  .c18 {
+  .c17 {
     position: relative;
-    height: 100%;
   }
 
-  .c18::after {
+  .c17::before {
     content: '';
     display: block;
     width: 100%;
     height: 52px;
     position: absolute;
     left: 0;
-    bottom: 0;
     pointer-events: none;
     background: transparent;
-    background: linear-gradient(0deg,#ffffffff 0%,#ffffff00 100%);
+    z-index: 1;
     opacity: 0;
     -webkit-transition: 0.3s opacity ease-out;
     transition: 0.3s opacity ease-out;
-    opacity: 1;
+    top: 0;
+    background: linear-gradient(0deg,#ffffff00 0%,#ffffffff 100%);
   }
 }
 
 @media (min-width:976px) {
-  .c19 {
+  .c17 {
+    position: relative;
+  }
+
+  .c17::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 52px;
+    position: absolute;
+    left: 0;
+    pointer-events: none;
+    background: transparent;
+    z-index: 1;
+    opacity: 0;
+    -webkit-transition: 0.3s opacity ease-out;
+    transition: 0.3s opacity ease-out;
+    bottom: 0;
+    background: linear-gradient(0deg,#ffffffff 0%,#ffffff00 100%);
+  }
+}
+
+@media (min-width:976px) {
+  .c18 {
     max-height: 80px;
     overflow-y: auto;
   }
@@ -619,11 +653,11 @@ exports[`Storyshots Organisms | CardWithTabs Integration With Faded Scroll 1`] =
         >
           <div
             className="c20"
+          />
+          <div
+            className="c21"
           >
-            <div
-              className="c21"
-            >
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam dictum nulla tincidunt
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam dictum nulla tincidunt
 interdum ornare. Duis blandit nibh nec dui varius lobortis. Sed viverra, metus quis
 vulputate accumsan, eros lacus semper nisl, in commodo risus lacus ut libero. Aliquam augue
 quam, sollicitudin quis lectus quis, viverra gravida nibh. Quisque vel mi non tortor
@@ -639,11 +673,10 @@ egestas porttitor tempor. In at dui tellus. Praesent at lorem metus. Quisque ult
 nulla sed pulvinar volutpat, libero enim auctor erat, nec consectetur purus lacus sed orci.
 In eleifend a risus at pulvinar. Donec ultricies justo et ligula venenatis, sed ultrices
 nunc dignissim.
-            </div>
-            <div
-              className="c22"
-            />
           </div>
+          <div
+            className="c22"
+          />
         </div>
       </div>
     </div>
@@ -664,21 +697,24 @@ exports[`Storyshots Organisms | CardWithTabs Integration With Faded Scroll With 
 }
 
 .c18 {
-  height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
   min-height: 0;
   -webkit-box-flex: 1;
   -webkit-flex-grow: 1;
   -ms-flex-positive: 1;
   flex-grow: 1;
-  box-sizing: border-box;
-  padding-bottom: 20px;
+  -webkit-flex-shrink: 1;
+  -ms-flex-negative: 1;
+  flex-shrink: 1;
+  -webkit-flex-basis: auto;
+  -ms-flex-preferred-size: auto;
+  flex-basis: auto;
 }
 
-.c19 {
-  height: 100%;
-}
-
-.c21 {
+.c20 {
   position: relative;
 }
 
@@ -686,9 +722,18 @@ exports[`Storyshots Organisms | CardWithTabs Integration With Faded Scroll With 
   height: 4px;
   width: 4px;
   position: absolute;
-  bottom: 0;
   right: 0;
   pointer-events: none;
+  bottom: 0;
+}
+
+.c21 {
+  height: 4px;
+  width: 4px;
+  position: absolute;
+  right: 0;
+  pointer-events: none;
+  top: 0;
 }
 
 .c10 {
@@ -863,32 +908,64 @@ exports[`Storyshots Organisms | CardWithTabs Integration With Faded Scroll With 
 }
 
 @media (min-width:976px) {
-  .c19 {
+  .c18 {
     position: relative;
-    height: 100%;
   }
 
-  .c19::after {
+  .c18::before {
     content: '';
     display: block;
     width: 100%;
     height: 52px;
     position: absolute;
     left: 0;
-    bottom: 0;
     pointer-events: none;
     background: transparent;
-    background: linear-gradient(0deg,#ffffffff 0%,#ffffff00 100%);
+    z-index: 1;
     opacity: 0;
     -webkit-transition: 0.3s opacity ease-out;
     transition: 0.3s opacity ease-out;
-    opacity: 1;
+    top: 0;
+    background: linear-gradient(0deg,#ffffff00 0%,#ffffffff 100%);
   }
 }
 
 @media (min-width:976px) {
-  .c20 {
-    max-height: 100%;
+  .c18 {
+    position: relative;
+  }
+
+  .c18::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 52px;
+    position: absolute;
+    left: 0;
+    pointer-events: none;
+    background: transparent;
+    z-index: 1;
+    opacity: 0;
+    -webkit-transition: 0.3s opacity ease-out;
+    transition: 0.3s opacity ease-out;
+    bottom: 0;
+    background: linear-gradient(0deg,#ffffffff 0%,#ffffff00 100%);
+  }
+}
+
+@media (min-width:976px) {
+  .c19 {
+    min-height: 0;
+    -webkit-box-flex: 1;
+    -webkit-flex-grow: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    -webkit-flex-shrink: 1;
+    -ms-flex-negative: 1;
+    flex-shrink: 1;
+    -webkit-flex-basis: auto;
+    -ms-flex-preferred-size: auto;
+    flex-basis: auto;
     overflow-y: auto;
   }
 }
@@ -998,11 +1075,11 @@ exports[`Storyshots Organisms | CardWithTabs Integration With Faded Scroll With 
         >
           <div
             className="c21"
+          />
+          <div
+            className="c22"
           >
-            <div
-              className="c22"
-            >
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam dictum nulla tincidunt
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam dictum nulla tincidunt
 interdum ornare. Duis blandit nibh nec dui varius lobortis. Sed viverra, metus quis
 vulputate accumsan, eros lacus semper nisl, in commodo risus lacus ut libero. Aliquam augue
 quam, sollicitudin quis lectus quis, viverra gravida nibh. Quisque vel mi non tortor
@@ -1018,11 +1095,10 @@ egestas porttitor tempor. In at dui tellus. Praesent at lorem metus. Quisque ult
 nulla sed pulvinar volutpat, libero enim auctor erat, nec consectetur purus lacus sed orci.
 In eleifend a risus at pulvinar. Donec ultricies justo et ligula venenatis, sed ultrices
 nunc dignissim.
-            </div>
-            <div
-              className="c23"
-            />
           </div>
+          <div
+            className="c23"
+          />
         </div>
       </div>
     </div>

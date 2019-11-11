@@ -59,6 +59,8 @@ export type Theme = {
     backgroundInput: RawColor['white'];
     /** gray7 */
     background: RawColor['gray7'];
+    /** black */
+    backgroundBlack: RawColor['black'];
     /** gray0 */
     text: RawColor['gray0'];
     /** white */
@@ -143,6 +145,8 @@ export type Theme = {
     orderDepthBackground: RawColor['gray6'];
     /** gray5 */
     orderDepthDarkBackground: RawColor['gray5'];
+    /** complementaryBlue2 */
+    loanRatesGraphColor2: RawColor['complementaryBlue2'];
   };
 
   spacing: {

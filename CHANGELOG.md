@@ -1,3 +1,79 @@
+## [1.69.1](https://github.com/nordnet/ui/compare/v1.69.0...v1.69.1) (2019-11-11)
+
+
+### Bug Fixes
+
+* ckean up ([8ac2ae8](https://github.com/nordnet/ui/commit/8ac2ae8))
+* merge master ([ff3ee69](https://github.com/nordnet/ui/commit/ff3ee69))
+* rename styles exports ([765a0f0](https://github.com/nordnet/ui/commit/765a0f0))
+
+# [1.69.0](https://github.com/nordnet/ui/compare/v1.68.2...v1.69.0) (2019-11-11)
+
+
+### Features
+
+* exposed complementaryBlue2 color in theme ([0d6b755](https://github.com/nordnet/ui/commit/0d6b755))
+
+## [1.68.2](https://github.com/nordnet/ui/compare/v1.68.1...v1.68.2) (2019-11-08)
+
+
+### Bug Fixes
+
+* add tests ([7c58e22](https://github.com/nordnet/ui/commit/7c58e22))
+* focus style position ie11 ([6146a16](https://github.com/nordnet/ui/commit/6146a16))
+* make css grid minmax work in ie11 ([528b352](https://github.com/nordnet/ui/commit/528b352))
+
+## [1.68.1](https://github.com/nordnet/ui/compare/v1.68.0...v1.68.1) (2019-11-06)
+
+
+### Bug Fixes
+
+* dont show fade in ie11 ([2d1e884](https://github.com/nordnet/ui/commit/2d1e884))
+
+# [1.68.0](https://github.com/nordnet/ui/compare/v1.67.0...v1.68.0) (2019-11-05)
+
+
+### Bug Fixes
+
+* bake in icon and just pass string to tooltip ([5a83484](https://github.com/nordnet/ui/commit/5a83484))
+* merge master ([e8af565](https://github.com/nordnet/ui/commit/e8af565))
+
+
+### Features
+
+* 🎸 add background black color ([905a9f5](https://github.com/nordnet/ui/commit/905a9f5))
+* add support to pass addon to label ([75aabd7](https://github.com/nordnet/ui/commit/75aabd7))
+
+# [1.67.0](https://github.com/nordnet/ui/compare/v1.66.0...v1.67.0) (2019-11-05)
+
+
+### Bug Fixes
+
+* 🐛 add viewbox to plus and minus icons ([2e50ec2](https://github.com/nordnet/ui/commit/2e50ec2))
+* adjust  console log messages ([1a4e767](https://github.com/nordnet/ui/commit/1a4e767))
+* clean up ([4b7456c](https://github.com/nordnet/ui/commit/4b7456c))
+* dont show fade by default ([fe1f364](https://github.com/nordnet/ui/commit/fe1f364))
+* ie11 ([f9cc115](https://github.com/nordnet/ui/commit/f9cc115))
+* merge master ([16d75e3](https://github.com/nordnet/ui/commit/16d75e3))
+* merge master ([c6daad7](https://github.com/nordnet/ui/commit/c6daad7))
+* minus viewbox ([6d7fd91](https://github.com/nordnet/ui/commit/6d7fd91))
+* pr fixes ([01ef4e3](https://github.com/nordnet/ui/commit/01ef4e3))
+* simplify ([aee688f](https://github.com/nordnet/ui/commit/aee688f))
+* typos ([10232d8](https://github.com/nordnet/ui/commit/10232d8))
+* **icon.plus:** viewbox ([0b6e234](https://github.com/nordnet/ui/commit/0b6e234))
+* update docs and pr fixes ([7a1aced](https://github.com/nordnet/ui/commit/7a1aced))
+* update mdx of fadedscroll ([68683f2](https://github.com/nordnet/ui/commit/68683f2))
+* update types of useonscreen hook ([e330420](https://github.com/nordnet/ui/commit/e330420))
+
+
+### Features
+
+* add fadedscroll stories to cardwithtabs ([9edeeea](https://github.com/nordnet/ui/commit/9edeeea))
+* add fadeheight prop ([530217c](https://github.com/nordnet/ui/commit/530217c))
+* create fadedscroll component ([8af8b2b](https://github.com/nordnet/ui/commit/8af8b2b))
+* create scrollable card ([626ab7b](https://github.com/nordnet/ui/commit/626ab7b))
+* expose components of fadedscroll ([2f062a2](https://github.com/nordnet/ui/commit/2f062a2))
+
 # [1.66.0](https://github.com/nordnet/ui/compare/v1.65.0...v1.66.0) (2019-11-04)
 
 
