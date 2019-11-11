@@ -23,12 +23,7 @@ export type Props = {
   placeholder?: string;
   label: string;
   name?: string;
-  /**
-   * Use this only if you understand what you are doing.
-   * 99% of the time you don't need this.
-   * Allows you to pass custom config to underlying machine.
-   */
-  machineConfig?: any;
+
   /**
    * @default 'm'
    */
@@ -48,9 +43,18 @@ export type Props = {
    * Maximum height that list can be.
    */
   listMaxHeight?: string;
+  /**
+   * @default 'right'
+   * Corresponds to where list should be related to SelectedValue component.
+   * 'left' means list gonna be to the left-bottom from SelectedValue.
+   * Makes sense only if noFormField is 'true'
+   */
+  listPosition?: 'left' | 'right';
   className?: string;
   components?: Partial<Record<ComponentTypes, React.ComponentType<any>>>;
-  /** use this flag if you
+  /**
+   * Removes FormField styles from SelectedValue wrapper.
+   * Use this flag if you
    * are using dropdown not
    * within form
    * e.g. a link with dropdown
@@ -65,7 +69,6 @@ export type Props = {
    * Show search input before items
    */
   showSearch?: boolean;
-
   multiselect?: boolean;
   actions?: Array<Action>;
 };

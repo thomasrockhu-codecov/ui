@@ -1,18 +1,17 @@
 import React from 'react';
 import R from 'ramda';
 import { ListItem } from './ListItem';
-import { OptionList } from '../SingleSelectList/SingleSelectList';
 import { Search } from './Search';
 import { Action } from './Action';
 import { SelectedValue } from './SelectedValue';
 
 import { ListItem as ListItemMultiple } from './ListItemMultiple';
 import { SelectedValue as SelectedValueMultiple } from './SelectedValueMultiple';
-import { OptionList as OptionListMultiple } from '../MultiSelectList/MultiSelectList';
+import { List } from './List';
 
 export const defaultComponents = {
   ListItem,
-  List: OptionList,
+  List,
   Search,
   SelectedValue,
   Action,
@@ -20,7 +19,7 @@ export const defaultComponents = {
 
 export const defaultComponentsMultiselect = {
   ListItem: ListItemMultiple,
-  List: OptionListMultiple,
+  List,
   Search,
   SelectedValue: SelectedValueMultiple,
   Action,
