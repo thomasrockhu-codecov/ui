@@ -12,12 +12,11 @@ import {
 } from '../../../../..';
 
 type ListProps = {
-  /**
-   * @default 'right'
-   */
-  position?: 'left' | 'center' | 'right';
   searchComponent?: React.ReactNode;
   actionsComponent?: React.ReactNode;
+  maxHeight?: string;
+  noFormField?: boolean;
+  listPosition?: string;
 };
 
 const StyledList = styled(UIList)<any>`
@@ -27,33 +26,56 @@ const StyledList = styled(UIList)<any>`
 `;
 
 const FadedScrollWithoutPaddingBottom = styled(FadedScroll)`
-  padding-bottom: 0;
+  height: 100%;
+`;
+
+/**
+ * This thing fixes IE11 flex overflow.
+ * Don't ask me
+ * https://jsfiddle.net/gktpsyv5/
+ */
+const IE11Wrapper = styled.div`
+  display: flex;
+  flex-direction: row;
+`;
+
+const StyledDropdownBubble = styled(DropdownBubble)`
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  width: 100%;
+
+  padding-top: 8px;
+  padding-bottom: 8px;
   display: flex;
   flex-direction: column;
-  min-height: 0;
-  ${FadedScroll.components.Fade} {
-    min-height: 0;
-    display: flex;
-    flex-direction: column;
+`;
+
+const getTrianglePosition = (position: string | undefined) => {
+  switch (position) {
+    case 'left':
+      return 'right';
+    case 'bottom':
+      return 'center';
+    default:
+      return 'left';
   }
-`;
-
-const StyledBox = styled(Box)`
-  min-height: 0;
-  display: flex;
-  flex-direction: column;
-`;
-
+};
 export const OptionList: React.FC<ListProps> = ({
   children,
-  position,
   searchComponent = null,
   actionsComponent = null,
+  maxHeight,
+  noFormField,
+  listPosition,
 }) => {
   const areOptionsProvided = React.Children.count(children) > 0;
   return (
-    <DropdownBubble position={position}>
-      <StyledBox py={2}>
+    <IE11Wrapper>
+      <StyledDropdownBubble
+        position={noFormField ? getTrianglePosition(listPosition) : 'right'}
+        maxHeight={maxHeight || '240px'}
+      >
         {searchComponent}
         <FadedScrollWithoutPaddingBottom enableMobileFade fadeHeight={8}>
           <StyledList role="listbox">{children}</StyledList>
@@ -64,8 +86,8 @@ export const OptionList: React.FC<ListProps> = ({
             <Box pt={areOptionsProvided ? 1 : 0}>{actionsComponent}</Box>
           </>
         )}
-      </StyledBox>
-    </DropdownBubble>
+      </StyledDropdownBubble>
+    </IE11Wrapper>
   );
 };
 

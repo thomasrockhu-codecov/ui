@@ -1020,6 +1020,94 @@ export const linkWithDropdownAndSearchBoxMultiselect = () =>
     );
   });
 
+export const listPositionedToTheLeft = () =>
+  React.createElement(() => {
+    const customComponents = React.useMemo(
+      () => ({
+        // @ts-ignore
+        SelectedValue: () => {
+          const [state] = useSelectMachineFromContext();
+
+          return (
+            <Link as="div">
+              <Flexbox container alignItems="center" gutter={1}>
+                <Flexbox item container alignItems="center">
+                  <Icon.AddWithCircle inline color={t => t.color.text} size={3} />
+                </Flexbox>
+                <Flexbox item>
+                  <Typography type="tertiary" color={t => t.color.text}>
+                    {state.context.placeholder}
+                  </Typography>
+                </Flexbox>
+              </Flexbox>
+            </Link>
+          );
+        },
+      }),
+      [],
+    );
+
+    const [value, setValue] = React.useState([]);
+    const hugeOptionsList = React.useMemo(
+      () =>
+        accountOptions
+          .concat(
+            accountOptions.map(x => ({
+              ...x,
+              value: x.value + Math.random(),
+              label: x.label + Math.random(),
+            })),
+          )
+          .concat(
+            accountOptions.map(x => ({
+              ...x,
+              value: x.value + Math.random(),
+              label: x.label + Math.random(),
+            })),
+          )
+          .concat(
+            accountOptions.map(x => ({
+              ...x,
+              value: x.value + Math.random(),
+              label: x.label + Math.random(),
+            })),
+          ),
+      [accountOptions],
+    );
+
+    // @ts-ignore
+    const handleChange = newVal => {
+      action('change')(newVal);
+      setValue(newVal);
+    };
+
+    return (
+      <Flexbox container justifyContent="flex-end">
+        <Input.Select
+          options={hugeOptionsList}
+          label="User account"
+          id="input-select-search-inside"
+          placeholder="Select account"
+          noFormField
+          showSearch
+          multiselect
+          value={value}
+          width="300px"
+          listPosition="left"
+          listMaxHeight="400px"
+          components={customComponents}
+          onChange={handleChange}
+          actions={[
+            {
+              label: 'Action',
+              onSelect: action('Action triggered'),
+            },
+          ]}
+        />
+      </Flexbox>
+    );
+  });
+
 export default {
   title: 'Molecules | Input / Select',
   parameters: {

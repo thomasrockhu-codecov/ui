@@ -59,11 +59,9 @@ const Select = (props: Props) => {
   const trackContext = React.useContext(TrackingContext);
 
   const isFirstRender = useIsFirstRender();
-  const machine = props.machineConfig
-    ? SelectMachine.withConfig(props.machineConfig)
-    : SelectMachine;
+
   /******      Machine instantiation      ******/
-  const machineHandlers = useMachine<Context, any>(machine, {
+  const machineHandlers = useMachine<Context, any>(SelectMachine, {
     context: {
       label: props.label,
       error: props.error || '',
@@ -251,6 +249,7 @@ const Select = (props: Props) => {
               ref={listRef}
               data-testid="input-select-list"
               searchComponent={<SearchWrapper ref={searchRef} component={Search} />}
+              listPosition={props.listPosition}
               actionsComponent={
                 machineState.context.actions.length > 0 ? (
                   <ActionsWrapper component={Action} onClickFactory={handleClickActionItem} />

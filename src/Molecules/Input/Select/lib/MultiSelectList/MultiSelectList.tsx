@@ -14,12 +14,11 @@ import {
 import { Checkbox } from '../../../Checkbox';
 
 type ListProps = {
-  /**
-   * @default 'right'
-   */
-  position?: 'left' | 'center' | 'right';
+  listPosition?: string;
   searchComponent?: React.ReactNode;
   actionsComponent?: React.ReactNode;
+  maxHeight?: string;
+  noFormField?: boolean;
 };
 
 const StyledList = styled(UIList)<any>`
@@ -29,33 +28,57 @@ const StyledList = styled(UIList)<any>`
 `;
 
 const FadedScrollWithoutPaddingBottom = styled(FadedScroll)`
-  padding-bottom: 0;
-  display: flex;
-  flex-direction: column;
-  min-height: 0;
-  ${FadedScroll.components.Fade} {
-    min-height: 0;
-    display: flex;
-    flex-direction: column;
-  }
+  height: 100%;
 `;
 
-const StyledBox = styled(Box)`
-  min-height: 0;
+/**
+ * This thing fixes IE11 flex overflow.
+ * Don't ask me
+ * https://jsfiddle.net/gktpsyv5/
+ */
+const IE11Wrapper = styled.div`
+  display: flex;
+  flex-direction: row;
+`;
+
+const StyledDropdownBubble = styled(DropdownBubble)`
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  width: 100%;
+
+  padding-top: 8px;
+  padding-bottom: 8px;
   display: flex;
   flex-direction: column;
 `;
+
+const getTrianglePosition = (position: string | undefined) => {
+  switch (position) {
+    case 'left':
+      return 'right';
+    case 'bottom':
+      return 'center';
+    default:
+      return 'left';
+  }
+};
 
 export const OptionList: React.FC<ListProps> = ({
   children,
-  position,
   searchComponent = null,
   actionsComponent = null,
+  maxHeight,
+  listPosition,
+  noFormField,
 }) => {
   const areOptionsProvided = React.Children.count(children) > 0;
   return (
-    <DropdownBubble position={position}>
-      <StyledBox py={2}>
+    <IE11Wrapper>
+      <StyledDropdownBubble
+        position={noFormField ? getTrianglePosition(listPosition) : 'right'}
+        maxHeight={maxHeight || '240px'}
+      >
         {searchComponent}
         <FadedScrollWithoutPaddingBottom enableMobileFade fadeHeight={8}>
           <StyledList role="listbox">{children}</StyledList>
@@ -63,11 +86,11 @@ export const OptionList: React.FC<ListProps> = ({
         {actionsComponent !== null && (
           <>
             {areOptionsProvided && <Separator />}
-            <Box pt={areOptionsProvided ? 2 : 0}>{actionsComponent}</Box>
+            <Box pt={areOptionsProvided ? 1 : 0}>{actionsComponent}</Box>
           </>
         )}
-      </StyledBox>
-    </DropdownBubble>
+      </StyledDropdownBubble>
+    </IE11Wrapper>
   );
 };
 
@@ -92,7 +115,7 @@ const hoverIfNotKeyboardNav = css<{ disabled?: boolean; isKeyboardNavigation?: b
       : `
 &:hover { 
   background: ${p.theme.color.background};
-  ${Checkbox.components.CheckmarkBox} {
+  input + ${Checkbox.components.CheckmarkBox} {
     &::before {
       border: 1px solid ${p.theme.color.cta};
     }

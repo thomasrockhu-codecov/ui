@@ -9,22 +9,26 @@ const getWidth = (p: any) => {
   return 'calc(100% + 2px)'; // adjusting for border
 };
 
+const getStylesForPosition = (listPosition: string) => {
+  switch (listPosition) {
+    case 'left':
+      return `right: -1px;`;
+    default:
+      return `left: -1px;`;
+  }
+};
+
 const StyledListWrapper = styled.div<any>`
-  display: flex;
-  flex-direction: column;
-  width: ${getWidth};
-  max-height: ${p =>
-    typeof p.maxHeight !== 'undefined' ? p.maxHeight : `${p.theme.spacing.unit(60)}px`};
+  padding-bottom: 16px;
+  transform: translate3d(0, 0, 0);
   position: absolute;
   top: 100%;
-  left: -1px; /* adjusting for border */
+  ${p => getStylesForPosition(p.listPosition)}
   z-index: 4;
   margin: -4px;
   padding: 4px;
-  overflow: hidden;
-  padding-bottom: 16px;
+  width: ${getWidth};
 `;
-
 export const ListWrapper = React.forwardRef<HTMLDivElement, any>(
   (
     {
@@ -40,6 +44,7 @@ export const ListWrapper = React.forwardRef<HTMLDivElement, any>(
       width,
       'data-testid': dataTestId,
       maxHeight,
+      listPosition,
     },
     ref,
   ) => {
@@ -53,12 +58,14 @@ export const ListWrapper = React.forwardRef<HTMLDivElement, any>(
         onMouseMove={onMouseMove}
         onBlur={onBlur}
         width={width}
-        maxHeight={maxHeight}
+        listPosition={listPosition}
       >
         <Component
           searchComponent={searchComponent}
           actionsComponent={actionsComponent}
-          position={noFormField ? 'left' : 'right'}
+          maxHeight={maxHeight}
+          listPosition={listPosition}
+          noFormField={noFormField}
         >
           {children}
         </Component>

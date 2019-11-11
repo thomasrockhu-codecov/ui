@@ -47,11 +47,12 @@ const triangleCss = css`
 
 export const DropdownBubble = styled.div<Props>`
   position: relative;
-  height: 100%;
+  ${p => (p.maxHeight ? `max-height: ${p.maxHeight};` : '')}
+
   display: flex;
   flex-direction: column;
   min-height: 0;
-  top: ${TOP_OFFSET}px;
+  transform: translateY(${TOP_OFFSET}px);
   border: 1px solid ${p => p.theme.color.bubbleBorder};
   background-color: ${p => p.theme.color.bubbleBackground};
   box-shadow: 0 2px 4px 0 rgba(40, 40, 35, 0.15);
