@@ -143,6 +143,11 @@ exports[`Storyshots Molecules | Input / Select / MultiSelectList Item Default 1`
   width: 100%;
   height: 100%;
   position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
 }
 
 .c6 {
@@ -475,6 +480,11 @@ exports[`Storyshots Molecules | Input / Select / MultiSelectList Item Disabled 1
   width: 100%;
   height: 100%;
   position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
 }
 
 .c6 {
@@ -797,6 +807,11 @@ exports[`Storyshots Molecules | Input / Select / MultiSelectList Item Selected 1
   width: 100%;
   height: 100%;
   position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
 }
 
 .c6 {

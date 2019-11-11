@@ -1,3 +1,28 @@
+## [1.69.1](https://github.com/nordnet/ui/compare/v1.69.0...v1.69.1) (2019-11-11)
+
+
+### Bug Fixes
+
+* ckean up ([8ac2ae8](https://github.com/nordnet/ui/commit/8ac2ae8))
+* merge master ([ff3ee69](https://github.com/nordnet/ui/commit/ff3ee69))
+* rename styles exports ([765a0f0](https://github.com/nordnet/ui/commit/765a0f0))
+
+# [1.69.0](https://github.com/nordnet/ui/compare/v1.68.2...v1.69.0) (2019-11-11)
+
+
+### Features
+
+* exposed complementaryBlue2 color in theme ([0d6b755](https://github.com/nordnet/ui/commit/0d6b755))
+
+## [1.68.2](https://github.com/nordnet/ui/compare/v1.68.1...v1.68.2) (2019-11-08)
+
+
+### Bug Fixes
+
+* add tests ([7c58e22](https://github.com/nordnet/ui/commit/7c58e22))
+* focus style position ie11 ([6146a16](https://github.com/nordnet/ui/commit/6146a16))
+* make css grid minmax work in ie11 ([528b352](https://github.com/nordnet/ui/commit/528b352))
+
 ## [1.68.1](https://github.com/nordnet/ui/compare/v1.68.0...v1.68.1) (2019-11-06)
 
 
