@@ -1,3 +1,12 @@
+## [1.69.1](https://github.com/nordnet/ui/compare/v1.69.0...v1.69.1) (2019-11-11)
+
+
+### Bug Fixes
+
+* ckean up ([8ac2ae8](https://github.com/nordnet/ui/commit/8ac2ae8))
+* merge master ([ff3ee69](https://github.com/nordnet/ui/commit/ff3ee69))
+* rename styles exports ([765a0f0](https://github.com/nordnet/ui/commit/765a0f0))
+
 # [1.69.0](https://github.com/nordnet/ui/compare/v1.68.2...v1.69.0) (2019-11-11)
 
 
