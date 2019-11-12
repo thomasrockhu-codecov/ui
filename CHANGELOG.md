@@ -1,3 +1,15 @@
+# [2.0.0](https://github.com/nordnet/ui/compare/v1.70.0...v2.0.0) (2019-11-12)
+
+
+### Bug Fixes
+
+* 🐛 bump major ([7cda870](https://github.com/nordnet/ui/commit/7cda870))
+
+
+### BREAKING CHANGES
+
+* 🧨 Input.Select breaking changes, check docs
+
 # [1.70.0](https://github.com/nordnet/ui/compare/v1.69.2...v1.70.0) (2019-11-12)
 
 
