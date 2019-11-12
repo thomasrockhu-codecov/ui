@@ -1,3 +1,44 @@
+# [1.70.0](https://github.com/nordnet/ui/compare/v1.69.2...v1.70.0) (2019-11-12)
+
+
+### Bug Fixes
+
+* **input:** props cleanup ([67c9d39](https://github.com/nordnet/ui/commit/67c9d39))
+* **input.select:** symbol for all, tests, snapshots ([4036135](https://github.com/nordnet/ui/commit/4036135))
+* **input.select:** types ([bf523fc](https://github.com/nordnet/ui/commit/bf523fc))
+* **select:** controlled and uncontrolled behaviour ([5bfc780](https://github.com/nordnet/ui/commit/5bfc780))
+* **select:** design adjustments, hideLabel prop ([2b681e2](https://github.com/nordnet/ui/commit/2b681e2))
+* **select:** design refinements ([249f234](https://github.com/nordnet/ui/commit/249f234))
+* **select:** ie11 bugs vertical overflow ([3e317c5](https://github.com/nordnet/ui/commit/3e317c5))
+* **select:** ie11, safari visuals, remove data-testid from build ([4609ba5](https://github.com/nordnet/ui/commit/4609ba5))
+* **select:** keyboard navigation when no visible items bug ([c388fca](https://github.com/nordnet/ui/commit/c388fca))
+* **select:** multiselect leave focus after selection ([80ab480](https://github.com/nordnet/ui/commit/80ab480))
+* **select:** not scrolling to 0th item ([a2387f9](https://github.com/nordnet/ui/commit/a2387f9))
+* **select:** onBlur triggered when click multiselect, ellipsis multiselect ([5e3e427](https://github.com/nordnet/ui/commit/5e3e427))
+* **select:** search clear onClose ([aa82792](https://github.com/nordnet/ui/commit/aa82792))
+* **select:** selectAll option shouldnt select disabled options ([6a19cbb](https://github.com/nordnet/ui/commit/6a19cbb))
+* **select:** types ([33b6fcc](https://github.com/nordnet/ui/commit/33b6fcc))
+* **select:** types, move list to separate renderer ([697aa4a](https://github.com/nordnet/ui/commit/697aa4a))
+* **select:** value comparison for defaults ([c1f13ee](https://github.com/nordnet/ui/commit/c1f13ee))
+
+
+### Features
+
+* **button:** add id prop ([2fd5f37](https://github.com/nordnet/ui/commit/2fd5f37))
+* **icon.search:** new icon ([63ae47a](https://github.com/nordnet/ui/commit/63ae47a))
+* **select:** add actions prop ([4947780](https://github.com/nordnet/ui/commit/4947780))
+* **select:** empty states ([17cf057](https://github.com/nordnet/ui/commit/17cf057))
+* **select:** event onblur, onfocus, controlled search ([6acb40f](https://github.com/nordnet/ui/commit/6acb40f))
+* **select:** listMaxHeight prop, cleanup ([f5213c8](https://github.com/nordnet/ui/commit/f5213c8))
+* **select:** search -> machine, showSearch prop, changes in renderers ([34e41f2](https://github.com/nordnet/ui/commit/34e41f2))
+* tracking redone, custom config for machine ([da85766](https://github.com/nordnet/ui/commit/da85766))
+* **select:** tracking and actionTypes export ([ee93ee1](https://github.com/nordnet/ui/commit/ee93ee1))
+* **select:** wip disabled items, onChange, a11y, better fade ([53a3c25](https://github.com/nordnet/ui/commit/53a3c25))
+* **select:** wip experimenting with hover/focus ([de23300](https://github.com/nordnet/ui/commit/de23300))
+* **select:** wip experiments with hover, select all ([62d37b8](https://github.com/nordnet/ui/commit/62d37b8))
+* **select:** wip multiselect, custom renderers, cleanup ([d0c008f](https://github.com/nordnet/ui/commit/d0c008f))
+* **wip:** rework on input select, statecharts ([968a6b8](https://github.com/nordnet/ui/commit/968a6b8))
+
 ## [1.69.2](https://github.com/nordnet/ui/compare/v1.69.1...v1.69.2) (2019-11-11)
 
 
