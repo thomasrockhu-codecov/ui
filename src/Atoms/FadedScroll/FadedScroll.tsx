@@ -14,7 +14,7 @@ import {
 } from './FadedScroll.styles';
 
 const Container = styled.div<InternalProps & Props>`
-  ${p => !p.maxHeight && `display: flex; ${flexAutoHeightStyles}`}
+  ${p => !p.maxHeight && `display: flex; height: 100%; ${flexAutoHeightStyles}`}
   ${p => !p.disableTopFade && (p.enableMobileFade ? fadeTopStyles : fadeTopDesktopStyles)}
   ${p => (p.enableMobileFade ? fadeBottomStyles : fadeBottomDesktopStyles)}
 `;

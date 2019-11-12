@@ -1,3 +1,12 @@
+## [1.69.2](https://github.com/nordnet/ui/compare/v1.69.1...v1.69.2) (2019-11-11)
+
+
+### Bug Fixes
+
+* dont show fade in ie11 ([25e6662](https://github.com/nordnet/ui/commit/25e6662))
+* ie11 contain height ([eaf90c8](https://github.com/nordnet/ui/commit/eaf90c8))
+* merge master ([b7c2d87](https://github.com/nordnet/ui/commit/b7c2d87))
+
 ## [1.69.1](https://github.com/nordnet/ui/compare/v1.69.0...v1.69.1) (2019-11-11)
 
 
