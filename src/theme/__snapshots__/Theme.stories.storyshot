@@ -90,6 +90,13 @@ Array [
   border: 1px solid #eee;
 }
 
+.c20 {
+  width: 56px;
+  height: 56px;
+  background-color: #BCBCB6;
+  border: 1px solid #eee;
+}
+
 .c25 {
   width: 56px;
   height: 56px;
@@ -171,13 +178,6 @@ Array [
   width: 56px;
   height: 56px;
   background-color: #C15700;
-  border: 1px solid #eee;
-}
-
-.c20 {
-  width: 56px;
-  height: 56px;
-  background-color: #BCBCB6;
   border: 1px solid #eee;
 }
 
@@ -939,112 +939,112 @@ exports[`Storyshots Theme Colors Semantic 1`] = `
 .c10 {
   width: 56px;
   height: 56px;
-  background-color: #0046FF;
+  background-color: #BCBCB6;
   border: 1px solid #eee;
 }
 
 .c11 {
   width: 56px;
   height: 56px;
-  background-color: #2D67FF;
+  background-color: #0046FF;
   border: 1px solid #eee;
 }
 
 .c12 {
   width: 56px;
   height: 56px;
-  background-color: #A0A09B;
+  background-color: #2D67FF;
   border: 1px solid #eee;
 }
 
 .c13 {
   width: 56px;
   height: 56px;
-  background-color: #EBEBE8;
+  background-color: #A0A09B;
   border: 1px solid #eee;
 }
 
 .c14 {
   width: 56px;
   height: 56px;
-  background-color: #6E6E69;
+  background-color: #EBEBE8;
   border: 1px solid #eee;
 }
 
 .c15 {
   width: 56px;
   height: 56px;
-  background-color: rgba(110,110,105,0.63);
+  background-color: #6E6E69;
   border: 1px solid #eee;
 }
 
 .c16 {
   width: 56px;
   height: 56px;
-  background-color: #FF1900;
+  background-color: rgba(110,110,105,0.63);
   border: 1px solid #eee;
 }
 
 .c17 {
   width: 56px;
   height: 56px;
-  background-color: #E81700;
+  background-color: #FF1900;
   border: 1px solid #eee;
 }
 
 .c18 {
   width: 56px;
   height: 56px;
-  background-color: #00D200;
+  background-color: #E81700;
   border: 1px solid #eee;
 }
 
 .c19 {
   width: 56px;
   height: 56px;
-  background-color: #008A00;
+  background-color: #00D200;
   border: 1px solid #eee;
 }
 
 .c20 {
   width: 56px;
   height: 56px;
-  background-color: rgba(0,0,0,0.03);
+  background-color: #008A00;
   border: 1px solid #eee;
 }
 
 .c21 {
   width: 56px;
   height: 56px;
-  background-color: rgba(0,0,0,0.05);
+  background-color: rgba(0,0,0,0.03);
   border: 1px solid #eee;
 }
 
 .c22 {
   width: 56px;
   height: 56px;
-  background-color: #3A913F;
+  background-color: rgba(0,0,0,0.05);
   border: 1px solid #eee;
 }
 
 .c23 {
   width: 56px;
   height: 56px;
-  background-color: #FFCF00;
+  background-color: #3A913F;
   border: 1px solid #eee;
 }
 
 .c24 {
   width: 56px;
   height: 56px;
-  background-color: #C15700;
+  background-color: #FFCF00;
   border: 1px solid #eee;
 }
 
 .c25 {
   width: 56px;
   height: 56px;
-  background-color: #BCBCB6;
+  background-color: #C15700;
   border: 1px solid #eee;
 }
 
@@ -1260,6 +1260,68 @@ exports[`Storyshots Theme Colors Semantic 1`] = `
       <td
         className="c5"
       >
+        bubbleBackground
+      </td>
+      <td
+        className="c5"
+      >
+        <div
+          className="c6"
+          color="#FFFFFF"
+        />
+        <div>
+          #FFFFFF
+        </div>
+      </td>
+      <td
+        className="c5"
+      >
+        <div
+          className="c6"
+          color="#FFFFFF"
+        />
+        <div>
+          #FFFFFF
+        </div>
+      </td>
+    </tr>
+    <tr
+      className="c2"
+    >
+      <td
+        className="c5"
+      >
+        bubbleBorder
+      </td>
+      <td
+        className="c5"
+      >
+        <div
+          className="c10"
+          color="#BCBCB6"
+        />
+        <div>
+          #BCBCB6
+        </div>
+      </td>
+      <td
+        className="c5"
+      >
+        <div
+          className="c10"
+          color="#BCBCB6"
+        />
+        <div>
+          #BCBCB6
+        </div>
+      </td>
+    </tr>
+    <tr
+      className="c2"
+    >
+      <td
+        className="c5"
+      >
         buttonSecondaryBackground
       </td>
       <td
@@ -1328,7 +1390,7 @@ exports[`Storyshots Theme Colors Semantic 1`] = `
         className="c5"
       >
         <div
-          className="c10"
+          className="c11"
           color="#0046FF"
         />
         <div>
@@ -1339,7 +1401,7 @@ exports[`Storyshots Theme Colors Semantic 1`] = `
         className="c5"
       >
         <div
-          className="c11"
+          className="c12"
           color="#2D67FF"
         />
         <div>
@@ -1359,7 +1421,7 @@ exports[`Storyshots Theme Colors Semantic 1`] = `
         className="c5"
       >
         <div
-          className="c10"
+          className="c11"
           color="#0046FF"
         />
         <div>
@@ -1370,7 +1432,7 @@ exports[`Storyshots Theme Colors Semantic 1`] = `
         className="c5"
       >
         <div
-          className="c11"
+          className="c12"
           color="#2D67FF"
         />
         <div>
@@ -1421,7 +1483,7 @@ exports[`Storyshots Theme Colors Semantic 1`] = `
         className="c5"
       >
         <div
-          className="c10"
+          className="c11"
           color="#0046FF"
         />
         <div>
@@ -1432,7 +1494,7 @@ exports[`Storyshots Theme Colors Semantic 1`] = `
         className="c5"
       >
         <div
-          className="c11"
+          className="c12"
           color="#2D67FF"
         />
         <div>
@@ -1452,7 +1514,7 @@ exports[`Storyshots Theme Colors Semantic 1`] = `
         className="c5"
       >
         <div
-          className="c12"
+          className="c13"
           color="#A0A09B"
         />
         <div>
@@ -1463,7 +1525,7 @@ exports[`Storyshots Theme Colors Semantic 1`] = `
         className="c5"
       >
         <div
-          className="c12"
+          className="c13"
           color="#A0A09B"
         />
         <div>
@@ -1483,7 +1545,7 @@ exports[`Storyshots Theme Colors Semantic 1`] = `
         className="c5"
       >
         <div
-          className="c12"
+          className="c13"
           color="#A0A09B"
         />
         <div>
@@ -1494,7 +1556,7 @@ exports[`Storyshots Theme Colors Semantic 1`] = `
         className="c5"
       >
         <div
-          className="c12"
+          className="c13"
           color="#A0A09B"
         />
         <div>
@@ -1514,7 +1576,7 @@ exports[`Storyshots Theme Colors Semantic 1`] = `
         className="c5"
       >
         <div
-          className="c13"
+          className="c14"
           color="#EBEBE8"
         />
         <div>
@@ -1525,7 +1587,7 @@ exports[`Storyshots Theme Colors Semantic 1`] = `
         className="c5"
       >
         <div
-          className="c13"
+          className="c14"
           color="#EBEBE8"
         />
         <div>
@@ -1545,7 +1607,7 @@ exports[`Storyshots Theme Colors Semantic 1`] = `
         className="c5"
       >
         <div
-          className="c13"
+          className="c14"
           color="#EBEBE8"
         />
         <div>
@@ -1556,7 +1618,7 @@ exports[`Storyshots Theme Colors Semantic 1`] = `
         className="c5"
       >
         <div
-          className="c13"
+          className="c14"
           color="#EBEBE8"
         />
         <div>
@@ -1576,7 +1638,7 @@ exports[`Storyshots Theme Colors Semantic 1`] = `
         className="c5"
       >
         <div
-          className="c14"
+          className="c15"
           color="#6E6E69"
         />
         <div>
@@ -1587,7 +1649,7 @@ exports[`Storyshots Theme Colors Semantic 1`] = `
         className="c5"
       >
         <div
-          className="c14"
+          className="c15"
           color="#6E6E69"
         />
         <div>
@@ -1638,7 +1700,7 @@ exports[`Storyshots Theme Colors Semantic 1`] = `
         className="c5"
       >
         <div
-          className="c15"
+          className="c16"
           color="rgba(110, 110, 105, 0.63)"
         />
         <div>
@@ -1649,7 +1711,7 @@ exports[`Storyshots Theme Colors Semantic 1`] = `
         className="c5"
       >
         <div
-          className="c15"
+          className="c16"
           color="rgba(110, 110, 105, 0.63)"
         />
         <div>
@@ -1700,7 +1762,7 @@ exports[`Storyshots Theme Colors Semantic 1`] = `
         className="c5"
       >
         <div
-          className="c16"
+          className="c17"
           color="#FF1900"
         />
         <div>
@@ -1711,7 +1773,7 @@ exports[`Storyshots Theme Colors Semantic 1`] = `
         className="c5"
       >
         <div
-          className="c17"
+          className="c18"
           color="#E81700"
         />
         <div>
@@ -1731,7 +1793,7 @@ exports[`Storyshots Theme Colors Semantic 1`] = `
         className="c5"
       >
         <div
-          className="c18"
+          className="c19"
           color="#00D200"
         />
         <div>
@@ -1742,7 +1804,7 @@ exports[`Storyshots Theme Colors Semantic 1`] = `
         className="c5"
       >
         <div
-          className="c19"
+          className="c20"
           color="#008A00"
         />
         <div>
@@ -1762,7 +1824,7 @@ exports[`Storyshots Theme Colors Semantic 1`] = `
         className="c5"
       >
         <div
-          className="c16"
+          className="c17"
           color="#FF1900"
         />
         <div>
@@ -1773,7 +1835,7 @@ exports[`Storyshots Theme Colors Semantic 1`] = `
         className="c5"
       >
         <div
-          className="c17"
+          className="c18"
           color="#E81700"
         />
         <div>
@@ -1793,7 +1855,7 @@ exports[`Storyshots Theme Colors Semantic 1`] = `
         className="c5"
       >
         <div
-          className="c20"
+          className="c21"
           color="rgba(0, 0, 0, 0.03)"
         />
         <div>
@@ -1804,7 +1866,7 @@ exports[`Storyshots Theme Colors Semantic 1`] = `
         className="c5"
       >
         <div
-          className="c20"
+          className="c21"
           color="rgba(0, 0, 0, 0.03)"
         />
         <div>
@@ -1824,7 +1886,7 @@ exports[`Storyshots Theme Colors Semantic 1`] = `
         className="c5"
       >
         <div
-          className="c21"
+          className="c22"
           color="rgba(0, 0, 0, 0.05)"
         />
         <div>
@@ -1835,7 +1897,7 @@ exports[`Storyshots Theme Colors Semantic 1`] = `
         className="c5"
       >
         <div
-          className="c21"
+          className="c22"
           color="rgba(0, 0, 0, 0.05)"
         />
         <div>
@@ -1855,7 +1917,7 @@ exports[`Storyshots Theme Colors Semantic 1`] = `
         className="c5"
       >
         <div
-          className="c20"
+          className="c21"
           color="rgba(0, 0, 0, 0.03)"
         />
         <div>
@@ -1866,7 +1928,7 @@ exports[`Storyshots Theme Colors Semantic 1`] = `
         className="c5"
       >
         <div
-          className="c20"
+          className="c21"
           color="rgba(0, 0, 0, 0.03)"
         />
         <div>
@@ -1886,7 +1948,7 @@ exports[`Storyshots Theme Colors Semantic 1`] = `
         className="c5"
       >
         <div
-          className="c21"
+          className="c22"
           color="rgba(0, 0, 0, 0.05)"
         />
         <div>
@@ -1897,7 +1959,7 @@ exports[`Storyshots Theme Colors Semantic 1`] = `
         className="c5"
       >
         <div
-          className="c21"
+          className="c22"
           color="rgba(0, 0, 0, 0.05)"
         />
         <div>
@@ -1917,7 +1979,7 @@ exports[`Storyshots Theme Colors Semantic 1`] = `
         className="c5"
       >
         <div
-          className="c22"
+          className="c23"
           color="#3A913F"
         />
         <div>
@@ -1928,7 +1990,7 @@ exports[`Storyshots Theme Colors Semantic 1`] = `
         className="c5"
       >
         <div
-          className="c22"
+          className="c23"
           color="#3A913F"
         />
         <div>
@@ -2010,7 +2072,7 @@ exports[`Storyshots Theme Colors Semantic 1`] = `
         className="c5"
       >
         <div
-          className="c23"
+          className="c24"
           color="#FFCF00"
         />
         <div>
@@ -2021,7 +2083,7 @@ exports[`Storyshots Theme Colors Semantic 1`] = `
         className="c5"
       >
         <div
-          className="c23"
+          className="c24"
           color="#FFCF00"
         />
         <div>
@@ -2072,7 +2134,7 @@ exports[`Storyshots Theme Colors Semantic 1`] = `
         className="c5"
       >
         <div
-          className="c14"
+          className="c15"
           color="#6E6E69"
         />
         <div>
@@ -2083,7 +2145,7 @@ exports[`Storyshots Theme Colors Semantic 1`] = `
         className="c5"
       >
         <div
-          className="c14"
+          className="c15"
           color="#6E6E69"
         />
         <div>
@@ -2165,7 +2227,7 @@ exports[`Storyshots Theme Colors Semantic 1`] = `
         className="c5"
       >
         <div
-          className="c23"
+          className="c24"
           color="#FFCF00"
         />
         <div>
@@ -2176,7 +2238,7 @@ exports[`Storyshots Theme Colors Semantic 1`] = `
         className="c5"
       >
         <div
-          className="c24"
+          className="c25"
           color="#C15700"
         />
         <div>
@@ -2196,7 +2258,7 @@ exports[`Storyshots Theme Colors Semantic 1`] = `
         className="c5"
       >
         <div
-          className="c25"
+          className="c10"
           color="#BCBCB6"
         />
         <div>
@@ -2207,7 +2269,7 @@ exports[`Storyshots Theme Colors Semantic 1`] = `
         className="c5"
       >
         <div
-          className="c25"
+          className="c10"
           color="#BCBCB6"
         />
         <div>
@@ -2258,7 +2320,7 @@ exports[`Storyshots Theme Colors Semantic 1`] = `
         className="c5"
       >
         <div
-          className="c13"
+          className="c14"
           color="#EBEBE8"
         />
         <div>
@@ -2269,7 +2331,7 @@ exports[`Storyshots Theme Colors Semantic 1`] = `
         className="c5"
       >
         <div
-          className="c13"
+          className="c14"
           color="#EBEBE8"
         />
         <div>
@@ -2289,7 +2351,7 @@ exports[`Storyshots Theme Colors Semantic 1`] = `
         className="c5"
       >
         <div
-          className="c16"
+          className="c17"
           color="#FF1900"
         />
         <div>
@@ -2300,7 +2362,7 @@ exports[`Storyshots Theme Colors Semantic 1`] = `
         className="c5"
       >
         <div
-          className="c16"
+          className="c17"
           color="#FF1900"
         />
         <div>
@@ -2320,7 +2382,7 @@ exports[`Storyshots Theme Colors Semantic 1`] = `
         className="c5"
       >
         <div
-          className="c18"
+          className="c19"
           color="#00D200"
         />
         <div>
@@ -2331,7 +2393,7 @@ exports[`Storyshots Theme Colors Semantic 1`] = `
         className="c5"
       >
         <div
-          className="c18"
+          className="c19"
           color="#00D200"
         />
         <div>
@@ -2351,7 +2413,7 @@ exports[`Storyshots Theme Colors Semantic 1`] = `
         className="c5"
       >
         <div
-          className="c22"
+          className="c23"
           color="#3A913F"
         />
         <div>
@@ -2362,7 +2424,7 @@ exports[`Storyshots Theme Colors Semantic 1`] = `
         className="c5"
       >
         <div
-          className="c22"
+          className="c23"
           color="#3A913F"
         />
         <div>
@@ -2475,7 +2537,7 @@ exports[`Storyshots Theme Colors Semantic 1`] = `
         className="c5"
       >
         <div
-          className="c13"
+          className="c14"
           color="#EBEBE8"
         />
         <div>
@@ -2486,7 +2548,7 @@ exports[`Storyshots Theme Colors Semantic 1`] = `
         className="c5"
       >
         <div
-          className="c13"
+          className="c14"
           color="#EBEBE8"
         />
         <div>

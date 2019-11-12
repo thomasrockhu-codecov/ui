@@ -13,6 +13,12 @@ export type Props = {
   visuallyEmphasiseRequired?: boolean;
   width?: string | number;
 
+  /**
+   * To get a visuals of a focused state
+   * Use this for controlled focus
+   */
+  visuallyFocused?: boolean;
+  readOnly?: boolean;
   onBlur?: React.FocusEventHandler<HTMLInputElement>;
   onChange?: React.ChangeEventHandler<HTMLInputElement>;
   onClick?: React.MouseEventHandler<HTMLInputElement>;

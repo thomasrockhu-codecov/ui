@@ -9,7 +9,7 @@ const CHECKBOX_SIZE = 5;
 const checkIfHasError = (error?: Props['error']) => isString(error) && error !== '';
 
 const CleanInput = React.forwardRef((props: any, ref: React.Ref<HTMLInputElement>) => (
-  <input ref={ref} {...R.omit(['hasError'], props)} />
+  <input ref={ref} {...R.omit(['hasError', 'visuallyFocused'], props)} />
 ));
 
 const CheckmarkBox = styled(Flexbox)`
@@ -80,6 +80,15 @@ const Input = styled(CleanInput).attrs({ type: 'checkbox' })<InternalInputProps>
       border: 1px solid ${p => p.theme.color.cta};
     }
   }
+  ${p =>
+    !p.visuallyFocused
+      ? ''
+      : `& + ${CheckmarkBox} {
+    &::before {
+      border: 1px solid ${p.theme.color.cta};
+    }
+  }
+  `}
 `;
 
 const Label = styled(Typography)`
@@ -87,7 +96,12 @@ const Label = styled(Typography)`
   white-space: initial;
 `;
 
-const Checkbox: CheckboxComponent = props => {
+const components = {
+  Label,
+  CheckmarkBox,
+};
+
+const Checkbox: CheckboxComponent & { components: typeof components } = props => {
   const {
     autoFocus,
     checked,
@@ -108,7 +122,9 @@ const Checkbox: CheckboxComponent = props => {
     required,
     value,
     visuallyEmphasiseRequired,
+    visuallyFocused,
     width,
+    readOnly,
   } = props;
 
   return (
@@ -130,8 +146,10 @@ const Checkbox: CheckboxComponent = props => {
               onKeyDown,
               onKeyPress,
               onKeyUp,
+              readOnly,
               required,
               value,
+              visuallyFocused,
             }}
           />
           <CheckmarkBox container alignItems="center" justifyContent="center">
@@ -145,5 +163,7 @@ const Checkbox: CheckboxComponent = props => {
     </FormField>
   );
 };
+
+Checkbox.components = components;
 
 export default Checkbox;
