@@ -69,6 +69,8 @@ export type Theme = {
     label: RawColor['gray2'];
     /** cta */
     buy: RawColor['cta'] | RawColor['a11yCta'];
+    /** 3 percent darker cta */
+    buyActive: string;
     /** white */
     buttonText: RawColor['white'];
     /** cta */
@@ -79,6 +81,8 @@ export type Theme = {
     bubbleBorder: RawColor['gray4'];
     /** negative */
     sell: RawColor['negative'] | RawColor['a11yNegative'];
+    /** 3 percent darker negative */
+    sellActive: string;
     /** cta */
     cta: RawColor['cta'] | RawColor['a11yCta'];
     /** positive */

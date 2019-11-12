@@ -116,6 +116,13 @@ export const createTheme = (config: ThemeConfig = {}): Theme => {
       buttonSecondaryBackground: rawColor.white,
       buttonText: rawColor.white,
       buy: a11yColors ? rawColor.a11yCta : rawColor.cta,
+      buyActive: a11yColors
+        ? Color(rawColor.a11yCta)
+            .darken(0.3)
+            .string()
+        : Color(rawColor.cta)
+            .darken(0.3)
+            .string(),
       borderActive: a11yColors ? rawColor.a11yCta : rawColor.cta,
       card: rawColor.white,
       cta: a11yColors ? rawColor.a11yCta : rawColor.cta,
@@ -133,6 +140,13 @@ export const createTheme = (config: ThemeConfig = {}): Theme => {
       negative: a11yColors ? rawColor.a11yNegative : rawColor.negative,
       positive: a11yColors ? rawColor.a11yPositive : rawColor.positive,
       sell: a11yColors ? rawColor.a11yNegative : rawColor.negative,
+      sellActive: a11yColors
+        ? Color(rawColor.a11yNegative)
+            .darken(0.3)
+            .string()
+        : Color(rawColor.negative)
+            .darken(0.3)
+            .string(),
       shadowCard: Color(rawColor.black)
         .alpha(0.03)
         .rgb()

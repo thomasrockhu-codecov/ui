@@ -35,6 +35,10 @@ exports[`Storyshots Molecules | LinkSell Link Sell 1`] = `
   background-color: #FF1900;
 }
 
+.c0:active {
+  background-color: hsl(5.899999999999977,100%,35%);
+}
+
 <a
   className="c0 c1"
   href="/somewhere"
@@ -113,6 +117,10 @@ exports[`Storyshots Molecules | LinkSell Link Sell With Rel As Nofollow 1`] = `
   text-decoration: none;
   color: #FFFFFF;
   background-color: #FF1900;
+}
+
+.c0:active {
+  background-color: hsl(5.899999999999977,100%,35%);
 }
 
 <a

@@ -17,6 +17,10 @@ const StyledLink = styled(Link)<Props>`
       background-color: ${p.theme.color.sell};
     `}
   }
+
+  &:active {
+    ${p => !p.disabled && `background-color: ${p.theme.color.sellActive};`}
+  }
 `;
 
 export const LinkSell: LinkSellComponent = ({

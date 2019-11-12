@@ -17,6 +17,10 @@ const StyledLink = styled(Link)<Props>`
       background-color: ${p.theme.color.buy};
     `}
   }
+
+  &:active {
+    ${p => !p.disabled && `background-color: ${p.theme.color.buyActive};`}
+  }
 `;
 
 export const LinkBuy: LinkBuyComponent = ({
