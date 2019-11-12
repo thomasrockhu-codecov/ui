@@ -1,16 +1,16 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Storyshots Molecules | LinkSell Link Sell 1`] = `
-.c0 {
+.c2 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #282823;
+  color: inherit;
   margin: 0;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.5;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
 }
 
-.c2 {
+.c1 {
   display: inline;
   padding: 0;
   color: #0046FF;
@@ -18,62 +18,62 @@ exports[`Storyshots Molecules | LinkSell Link Sell 1`] = `
   text-decoration: none;
 }
 
-.c2:hover {
+.c1:hover {
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 
-.c1 {
+.c0 {
   color: #FF1900;
-  padding: 4px;
+  padding: 2px 4px;
 }
 
-.c1:hover {
+.c0:hover {
   -webkit-text-decoration: none;
   text-decoration: none;
   color: #FFFFFF;
   background-color: #FF1900;
 }
 
-<span
-  className="c0"
+<a
+  className="c0 c1"
+  href="/somewhere"
+  onClick={[Function]}
 >
-  <a
-    className="c1 c2"
-    href="/somewhere"
-    onClick={[Function]}
+  <span
+    className="c2"
   >
     Sell
-  </a>
-</span>
+  </span>
+</a>
 `;
 
 exports[`Storyshots Molecules | LinkSell Link Sell Disabled 1`] = `
-.c0 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #282823;
-  margin: 0;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.5;
-}
-
 .c1 {
-  color: #A0A09B;
-  padding: 4px;
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: inherit;
+  margin: 0;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
 }
 
-.c1:hover {
+.c0 {
+  color: #A0A09B;
+  padding: 2px 4px;
+}
+
+.c0:hover {
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
 <span
   className="c0"
+  disabled={true}
 >
   <span
     className="c1"
-    disabled={true}
   >
     Sell
   </span>
@@ -81,16 +81,16 @@ exports[`Storyshots Molecules | LinkSell Link Sell Disabled 1`] = `
 `;
 
 exports[`Storyshots Molecules | LinkSell Link Sell With Rel As Nofollow 1`] = `
-.c0 {
+.c2 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #282823;
+  color: inherit;
   margin: 0;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.5;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
 }
 
-.c2 {
+.c1 {
   display: inline;
   padding: 0;
   color: #0046FF;
@@ -98,33 +98,33 @@ exports[`Storyshots Molecules | LinkSell Link Sell With Rel As Nofollow 1`] = `
   text-decoration: none;
 }
 
-.c2:hover {
+.c1:hover {
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 
-.c1 {
+.c0 {
   color: #FF1900;
-  padding: 4px;
+  padding: 2px 4px;
 }
 
-.c1:hover {
+.c0:hover {
   -webkit-text-decoration: none;
   text-decoration: none;
   color: #FFFFFF;
   background-color: #FF1900;
 }
 
-<span
-  className="c0"
+<a
+  className="c0 c1"
+  href="/somewhere"
+  onClick={[Function]}
+  rel="nofollow"
 >
-  <a
-    className="c1 c2"
-    href="/somewhere"
-    onClick={[Function]}
-    rel="nofollow"
+  <span
+    className="c2"
   >
     Sell
-  </a>
-</span>
+  </span>
+</a>
 `;

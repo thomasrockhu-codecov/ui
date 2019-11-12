@@ -1,30 +1,45 @@
 import React from 'react';
 import styled from 'styled-components';
-import Link from '../Link';
+import { Link, Typography } from '../..';
 import { LinkSellComponent, Props } from './LinkSell.types';
 
+// TODO: change the 0.5 unit padding top when line-height is divisible by the unit (4px)
 // prettier-ignore
 const StyledLink = styled(Link)<Props>`
   color: ${p => (p.disabled ? p.theme.color.disabled : p.theme.color.sell)};
+  padding: ${p => p.theme.spacing.unit(0.5)}px ${p => p.theme.spacing.unit(1)}px;
+
   &:hover {
     text-decoration: none;
-    ${p => p.disabled ? '' :
-      `color: ${p.theme.color.buttonText};
-       background-color: ${p.theme.color.sell};`}
+
+    ${p => !p.disabled && `
+      color: ${p.theme.color.buttonText};
+      background-color: ${p.theme.color.sell};
+    `}
   }
-  padding: ${p => p.theme.spacing.unit(1)}px;
 `;
 
-export const LinkSell: LinkSellComponent = props => (
+export const LinkSell: LinkSellComponent = ({
+  className,
+  children,
+  disabled,
+  onClick,
+  target,
+  to,
+  rel,
+}) => (
   <StyledLink
-    {...(props.disabled ? { as: 'span' as 'span' } : {})}
-    disabled={props.disabled}
-    onClick={props.onClick}
-    to={props.to}
-    target={props.target}
-    rel={props.rel}
+    {...(disabled ? { as: 'span' as 'span' } : {})}
+    className={className}
+    disabled={disabled}
+    onClick={onClick}
+    to={to}
+    target={target}
+    rel={rel}
   >
-    {props.children}
+    <Typography type="secondary" weight="bold" color="inherit">
+      {children}
+    </Typography>
   </StyledLink>
 );
 
