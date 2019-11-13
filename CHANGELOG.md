@@ -1,3 +1,11 @@
+## [2.1.1](https://github.com/nordnet/ui/compare/v2.1.0...v2.1.1) (2019-11-13)
+
+
+### Bug Fixes
+
+* add active state ([c28d0f5](https://github.com/nordnet/ui/commit/c28d0f5))
+* sync buy and sell buttons ([1289166](https://github.com/nordnet/ui/commit/1289166))
+
 # [2.1.0](https://github.com/nordnet/ui/compare/v2.0.3...v2.1.0) (2019-11-13)
 
 
