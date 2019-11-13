@@ -559,7 +559,6 @@ export const SelectMachine = Machine<Context>(
       updateUncommittedItems: assign<Context>({
         uncommitedSelectedItems: (ctx, e) => {
           if (ctx.multiselect) {
-            console.log(e.type);
             if (e.type === ACTION_TYPES.SELECT_ITEM) {
               const activeOptions = ctx.options.filter(x => !x.disabled);
               if (e.payload[SYMBOL_ALL]) {
