@@ -207,6 +207,7 @@ export const Button: ButtonComponent = props => {
     rel,
     id,
     color,
+    as,
   } = props;
   const toAndDisabledAreNotPresentTogether = !(to && disabled);
   const trackContext = useContext(TrackingContext);
@@ -239,6 +240,7 @@ export const Button: ButtonComponent = props => {
         fullWidth={fullWidth}
         colorFn={color}
         id={id}
+        as={as}
       >
         <Typography type={size === 'l' ? 'primary' : 'secondary'} color="inherit">
           {children}
@@ -258,6 +260,7 @@ export const Button: ButtonComponent = props => {
       variant={variant}
       fullWidth={fullWidth}
       colorFn={color}
+      as={as}
     >
       <Typography type={size === 'l' ? 'primary' : 'secondary'} color="inherit">
         {children}

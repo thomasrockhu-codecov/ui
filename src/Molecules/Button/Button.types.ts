@@ -22,6 +22,7 @@ export type ButtonProps = {
   rel?: string;
   colorFn?: ColorFn;
   id?: string;
+  as?: any;
 };
 
 export type ButtonComponent = React.FC<ButtonProps>;
