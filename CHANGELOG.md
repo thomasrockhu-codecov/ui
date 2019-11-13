@@ -1,3 +1,10 @@
+# [2.1.0](https://github.com/nordnet/ui/compare/v2.0.3...v2.1.0) (2019-11-13)
+
+
+### Features
+
+* add 'as' prop on button ([9ec3b12](https://github.com/nordnet/ui/commit/9ec3b12))
+
 ## [2.0.3](https://github.com/nordnet/ui/compare/v2.0.2...v2.0.3) (2019-11-13)
 
 
