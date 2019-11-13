@@ -1,3 +1,10 @@
+## [2.0.3](https://github.com/nordnet/ui/compare/v2.0.2...v2.0.3) (2019-11-13)
+
+
+### Bug Fixes
+
+* remove unnecessary code ([f7b1e6b](https://github.com/nordnet/ui/commit/f7b1e6b))
+
 ## [2.0.2](https://github.com/nordnet/ui/compare/v2.0.1...v2.0.2) (2019-11-13)
 
 
