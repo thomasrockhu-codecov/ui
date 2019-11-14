@@ -64,7 +64,6 @@ exports[`Storyshots Molecules | Link External Link With Its Default Values 1`] =
 >
   <a
     className="c1"
-    external={true}
     href="http://www.google.com"
     onClick={[Function]}
     rel="noopener noreferrer nofollow"
@@ -103,7 +102,6 @@ exports[`Storyshots Molecules | Link External Link With Rel And Target Overriden
 >
   <a
     className="c1"
-    external={true}
     href="http://www.google.com"
     onClick={[Function]}
     rel="nofollow"
@@ -142,7 +140,6 @@ exports[`Storyshots Molecules | Link With Black Color 1`] = `
 >
   <a
     className="c1"
-    external={true}
     href="http://www.google.com"
     onClick={[Function]}
     rel="noopener noreferrer nofollow"
@@ -249,7 +246,6 @@ exports[`Storyshots Molecules | Link With Inherited Color 1`] = `
 >
   <a
     className="c1"
-    external={true}
     href="http://www.google.com"
     onClick={[Function]}
     rel="noopener noreferrer nofollow"

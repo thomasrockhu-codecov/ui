@@ -37,7 +37,10 @@ const getSharedStyle = (props: ThemedStyledProps<LinkProps, Theme>) => {
 const CleanLink = React.forwardRef((props: LinkProps, ref) => {
   return props.external ? (
     // eslint-disable-next-line jsx-a11y/anchor-has-content
-    <a ref={ref} {...R.omit(['fullWidth', 'colorFn', 'color', 'display'], props) as any} />
+    <a
+      ref={ref}
+      {...R.omit(['fullWidth', 'colorFn', 'color', 'display', 'external'], props) as any}
+    />
   ) : (
     <RouterLink ref={ref} {...R.omit(['fullWidth', 'colorFn', 'color', 'display'], props) as any} />
   );
