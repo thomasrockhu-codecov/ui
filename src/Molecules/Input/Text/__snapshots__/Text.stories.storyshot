@@ -3108,10 +3108,6 @@ exports[`Storyshots Molecules | Input / Text Simple Login Form 1`] = `
   margin: 0;
   overflow: visible;
   text-transform: none;
-  background-color: #0046FF;
-  padding: 4px 12px;
-  min-height: 32px;
-  color: #FFFFFF;
   position: relative;
   box-sizing: border-box;
   -webkit-align-items: center;
@@ -3127,6 +3123,10 @@ exports[`Storyshots Molecules | Input / Text Simple Login Form 1`] = `
   display: -ms-flexbox;
   display: flex;
   width: 100%;
+  padding: 4px 12px;
+  min-height: 32px;
+  background-color: #0046FF;
+  color: #FFFFFF;
   border: none;
   border-radius: 0;
   cursor: pointer;
@@ -3154,23 +3154,23 @@ exports[`Storyshots Molecules | Input / Text Simple Login Form 1`] = `
   outline: 1px dotted ButtonText;
 }
 
+.c15::before {
+  content: '';
+  display: block;
+  position: absolute;
+  border: 2px solid transparent;
+  top: 0;
+  left: 0;
+  width: calc(100% - 4px);
+  height: calc(100% - 4px);
+}
+
 .c15:hover {
   background-color: hsl(223.5,100%,45%);
 }
 
 .c15:active {
   background-color: hsl(223.5,100%,40%);
-}
-
-.c15::before {
-  content: '';
-  display: block;
-  border: 2px solid transparent;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: calc(100% - 4px);
-  height: calc(100% - 4px);
 }
 
 .c3 {

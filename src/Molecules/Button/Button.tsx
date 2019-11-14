@@ -87,6 +87,7 @@ export const Button: ButtonComponent = props => {
   assert(
     sizeSmallNotWithNeutralVariant,
     'Button: Size small is only ment to be used together with neutral variant.',
+    { level: 'warn' },
   );
 
   assert(
