@@ -8,15 +8,25 @@ import { isUndefined } from '../../common/utils';
 import NormalizedElements from '../../common/NormalizedElements';
 import TrackingContext from '../../common/tracking';
 
+const getEnabledColor = (color: LinkProps['color'], theme: Theme): string => {
+  if (color === 'black') {
+    return theme.color.text;
+  }
+  if (color === 'inherit') {
+    return color;
+  }
+  return theme.color.cta;
+};
+
 const getSharedStyle = (props: ThemedStyledProps<LinkProps, Theme>) => {
-  const { theme, disabled, display = 'inline' } = props;
+  const { theme, disabled, display = 'inline', color } = props;
 
   // Need to switch to display: inline-block
   // But it will break pages, so need to do it through mutations
   return `
     display: ${display};
     padding: 0;
-    color: ${disabled ? theme.color.disabledText : theme.color.cta}
+    color: ${disabled ? theme.color.disabledText : getEnabledColor(color, theme)}
 
     &:hover {
       text-decoration: underline;
@@ -64,6 +74,7 @@ export const Link: LinkComponent = React.forwardRef<any, LinkProps>((props, ref)
     target = external ? '_blank' : undefined,
     rel = external ? 'noopener noreferrer nofollow' : undefined,
     as,
+    color,
   } = props;
   const destinationProp = external ? { href: to } : { to };
 
@@ -97,6 +108,7 @@ export const Link: LinkComponent = React.forwardRef<any, LinkProps>((props, ref)
       rel={rel}
       external={external}
       as={as}
+      color={color}
     >
       {children}
     </StyledLink>

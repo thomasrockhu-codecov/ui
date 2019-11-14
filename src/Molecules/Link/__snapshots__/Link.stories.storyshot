@@ -114,6 +114,45 @@ exports[`Storyshots Molecules | Link External Link With Rel And Target Overriden
 </span>
 `;
 
+exports[`Storyshots Molecules | Link With Black Color 1`] = `
+.c0 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.c1 {
+  display: inline;
+  padding: 0;
+  color: #282823;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c1:hover {
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+<span
+  className="c0"
+>
+  <a
+    className="c1"
+    external={true}
+    href="http://www.google.com"
+    onClick={[Function]}
+    rel="noopener noreferrer nofollow"
+    target="_blank"
+  >
+    Link
+  </a>
+</span>
+`;
+
 exports[`Storyshots Molecules | Link With Disabled Prop Results In A Disabled Button Looking Like A Link 1`] = `
 .c0 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
@@ -179,6 +218,45 @@ exports[`Storyshots Molecules | Link With Disabled Prop Results In A Disabled Bu
   >
     Link
   </button>
+</span>
+`;
+
+exports[`Storyshots Molecules | Link With Inherited Color 1`] = `
+.c0 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #AC135A;
+  margin: 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.c1 {
+  display: inline;
+  padding: 0;
+  color: inherit;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c1:hover {
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+<span
+  className="c0"
+>
+  <a
+    className="c1"
+    external={true}
+    href="http://www.google.com"
+    onClick={[Function]}
+    rel="noopener noreferrer nofollow"
+    target="_blank"
+  >
+    Link
+  </a>
 </span>
 `;
 

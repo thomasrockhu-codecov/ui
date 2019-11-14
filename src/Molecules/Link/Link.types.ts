@@ -6,6 +6,7 @@ export type LinkProps = {
   onClick?: (e: React.MouseEvent) => void;
   className?: string;
   display?: 'inline' | 'block' | 'inline-block' | 'flex' | 'inline-flex';
+  color?: 'blue' | 'black' | 'inherit';
   /** @default _self */
   target?: '_blank' | '_self';
   to?: ReactRouterDomLinkProps['to'];
