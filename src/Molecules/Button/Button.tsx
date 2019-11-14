@@ -67,7 +67,6 @@ export const Button: ButtonComponent = props => {
   } = props;
   const typeIsNotPresent = typeof type === 'undefined';
   const toAndDisabledAreNotPresentTogether = !(to && disabled);
-  const sizeSmallNotWithNeutralVariant = size === 's' && !isNeutral(variant);
   const trackContext = useContext(TrackingContext);
   const trackClick = (e: React.MouseEvent<Element, MouseEvent>) => {
     if (trackContext) trackContext.track('button', e, props);
@@ -77,18 +76,12 @@ export const Button: ButtonComponent = props => {
 
   const colorFromTheme = color && color(theme);
 
-  if ((colorFromTheme && isPrimary(variant)) || isSecondary(variant)) {
+  if (colorFromTheme && (isPrimary(variant) || isSecondary(variant))) {
     assert(
       colorFromTheme === theme.color.cta || colorFromTheme === theme.color.negative,
       'Button: color is incorrect, use only `t => t.color.cta` or `t => t.color.negative` for primary and secondary variant.',
     );
   }
-
-  assert(
-    sizeSmallNotWithNeutralVariant,
-    'Button: Size small is only ment to be used together with neutral variant.',
-    { level: 'warn' },
-  );
 
   assert(
     toAndDisabledAreNotPresentTogether,

@@ -8,7 +8,7 @@ export type ButtonProps = {
   /** @default primary */
   variant?: 'primary' | 'secondary' | 'neutral';
   /** @default m */
-  size?: 's' | 'm' | 'l';
+  size?: 'm' | 'l';
   /** @default false */
   fullWidth?: boolean;
   children: React.ReactChild | React.ReactChild[];
