@@ -1380,10 +1380,6 @@ exports[`Storyshots Molecules | Button Button With Different Variants 1`] = `
   margin: 0;
   overflow: visible;
   text-transform: none;
-  background-color: #0046FF;
-  padding: 4px 12px;
-  min-height: 32px;
-  color: #FFFFFF;
   position: relative;
   box-sizing: border-box;
   -webkit-align-items: center;
@@ -1398,6 +1394,10 @@ exports[`Storyshots Molecules | Button Button With Different Variants 1`] = `
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
+  padding: 4px 12px;
+  min-height: 32px;
+  background-color: #0046FF;
+  color: #FFFFFF;
   border: none;
   border-radius: 0;
   cursor: pointer;
@@ -1425,23 +1425,23 @@ exports[`Storyshots Molecules | Button Button With Different Variants 1`] = `
   outline: 1px dotted ButtonText;
 }
 
+.c3::before {
+  content: '';
+  display: block;
+  position: absolute;
+  border: 2px solid transparent;
+  top: 0;
+  left: 0;
+  width: calc(100% - 4px);
+  height: calc(100% - 4px);
+}
+
 .c3:hover {
   background-color: hsl(223.5,100%,45%);
 }
 
 .c3:active {
   background-color: hsl(223.5,100%,40%);
-}
-
-.c3::before {
-  content: '';
-  display: block;
-  border: 2px solid transparent;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: calc(100% - 4px);
-  height: calc(100% - 4px);
 }
 
 .c5 {
@@ -1451,10 +1451,6 @@ exports[`Storyshots Molecules | Button Button With Different Variants 1`] = `
   margin: 0;
   overflow: visible;
   text-transform: none;
-  background-color: #FFFFFF;
-  padding: 4px 12px;
-  min-height: 32px;
-  color: #0046FF;
   position: relative;
   box-sizing: border-box;
   -webkit-align-items: center;
@@ -1469,6 +1465,10 @@ exports[`Storyshots Molecules | Button Button With Different Variants 1`] = `
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
+  padding: 4px 12px;
+  min-height: 32px;
+  background-color: #FFFFFF;
+  color: #0046FF;
   border: none;
   border-radius: 0;
   cursor: pointer;
@@ -1496,24 +1496,31 @@ exports[`Storyshots Molecules | Button Button With Different Variants 1`] = `
   outline: 1px dotted ButtonText;
 }
 
-.c5:hover {
-  background-color: hsl(223.5,100%,45%);
-  color: #FFFFFF;
-}
-
-.c5:active {
-  background-color: hsl(223.5,100%,40%);
-}
-
 .c5::before {
   content: '';
   display: block;
-  border: 2px solid #0046FF;
   position: absolute;
+  border: 2px solid #0046FF;
   top: 0;
   left: 0;
   width: calc(100% - 4px);
   height: calc(100% - 4px);
+}
+
+.c5:hover {
+  color: hsl(223.5,100%,40%);
+}
+
+.c5:hover::before {
+  border-color: hsl(223.5,100%,40%);
+}
+
+.c5:active {
+  color: hsl(223.5,100%,35%);
+}
+
+.c5:active::before {
+  border-color: hsl(223.5,100%,35%);
 }
 
 .c6 {
@@ -1523,10 +1530,6 @@ exports[`Storyshots Molecules | Button Button With Different Variants 1`] = `
   margin: 0;
   overflow: visible;
   text-transform: none;
-  background-color: transparent;
-  padding: 0;
-  min-height: 32px;
-  color: #282823;
   position: relative;
   box-sizing: border-box;
   -webkit-align-items: center;
@@ -1541,6 +1544,10 @@ exports[`Storyshots Molecules | Button Button With Different Variants 1`] = `
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
+  min-height: 32px;
+  padding: 0;
+  background-color: transparent;
+  color: #282823;
   border: none;
   border-radius: 0;
   cursor: pointer;
@@ -1566,17 +1573,6 @@ exports[`Storyshots Molecules | Button Button With Different Variants 1`] = `
 .c6[type='reset']:-moz-focusring,
 .c6[type='submit']:-moz-focusring {
   outline: 1px dotted ButtonText;
-}
-
-.c6::before {
-  content: '';
-  display: block;
-  border: 2px solid transparent;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: calc(100% - 4px);
-  height: calc(100% - 4px);
 }
 
 .c0 {
@@ -1654,7 +1650,6 @@ exports[`Storyshots Molecules | Button Button With Different Variants 1`] = `
         className="c3"
         onClick={[Function]}
         type="button"
-        variant="primary"
       >
         <span
           className="c4"
@@ -1678,7 +1673,6 @@ exports[`Storyshots Molecules | Button Button With Different Variants 1`] = `
         className="c5"
         onClick={[Function]}
         type="button"
-        variant="secondary"
       >
         <span
           className="c4"
@@ -1702,7 +1696,6 @@ exports[`Storyshots Molecules | Button Button With Different Variants 1`] = `
         className="c6"
         onClick={[Function]}
         type="button"
-        variant="neutral"
       >
         <span
           className="c4"
@@ -2141,10 +2134,6 @@ exports[`Storyshots Molecules | Button Default Usage 1`] = `
   margin: 0;
   overflow: visible;
   text-transform: none;
-  background-color: #0046FF;
-  padding: 4px 12px;
-  min-height: 32px;
-  color: #FFFFFF;
   position: relative;
   box-sizing: border-box;
   -webkit-align-items: center;
@@ -2159,6 +2148,10 @@ exports[`Storyshots Molecules | Button Default Usage 1`] = `
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
+  padding: 4px 12px;
+  min-height: 32px;
+  background-color: #0046FF;
+  color: #FFFFFF;
   border: none;
   border-radius: 0;
   cursor: pointer;
@@ -2186,23 +2179,23 @@ exports[`Storyshots Molecules | Button Default Usage 1`] = `
   outline: 1px dotted ButtonText;
 }
 
+.c0::before {
+  content: '';
+  display: block;
+  position: absolute;
+  border: 2px solid transparent;
+  top: 0;
+  left: 0;
+  width: calc(100% - 4px);
+  height: calc(100% - 4px);
+}
+
 .c0:hover {
   background-color: hsl(223.5,100%,45%);
 }
 
 .c0:active {
   background-color: hsl(223.5,100%,40%);
-}
-
-.c0::before {
-  content: '';
-  display: block;
-  border: 2px solid transparent;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: calc(100% - 4px);
-  height: calc(100% - 4px);
 }
 
 <button
