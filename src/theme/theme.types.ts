@@ -159,6 +159,16 @@ export type Theme = {
     orderDepthDarkBackground: RawColor['gray5'];
     /** complementaryBlue2 */
     loanRatesGraphColor2: RawColor['complementaryBlue2'];
+    /** brandGreen */
+    menuAccent1: RawColor['brandGreen'];
+    /** brandTurquoise */
+    menuAccent2: RawColor['brandTurquoise'];
+    /** index */
+    menuAccent3: RawColor['index'];
+    /** brandPink */
+    menuAccent4: RawColor['brandPink'];
+    /** brandBlue */
+    menuAccent5: RawColor['brandBlue'];
   };
 
   spacing: {
