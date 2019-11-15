@@ -52,6 +52,20 @@ externalLinkWithItsDefaultValues.story = {
   name: 'External link with its default values',
 };
 
+export const cmsLinkWithItsDefaultValues = () => (
+  <BrowserRouter>
+    <Typography type="secondary" weight="bold">
+      <Link to="http://www.google.com" onClick={action('clicked')} cms>
+        Link
+      </Link>
+    </Typography>
+  </BrowserRouter>
+);
+
+cmsLinkWithItsDefaultValues.story = {
+  name: 'Cms link with its default values',
+};
+
 export const externalLinkWithRelAndTargetOverriden = () => (
   <BrowserRouter>
     <Typography type="secondary" weight="bold">

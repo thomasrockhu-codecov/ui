@@ -11,6 +11,7 @@ export type LinkProps = {
   target?: '_blank' | '_self';
   to?: ReactRouterDomLinkProps['to'];
   external?: boolean;
+  cms?: boolean;
   rel?: string;
   disabled?: boolean;
   as?: any;

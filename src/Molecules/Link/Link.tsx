@@ -35,11 +35,11 @@ const getSharedStyle = (props: ThemedStyledProps<LinkProps, Theme>) => {
 };
 
 const CleanLink = React.forwardRef((props: LinkProps, ref) => {
-  return props.external ? (
+  return props.external || props.cms ? (
     // eslint-disable-next-line jsx-a11y/anchor-has-content
     <a
       ref={ref}
-      {...R.omit(['fullWidth', 'colorFn', 'color', 'display', 'external'], props) as any}
+      {...R.omit(['fullWidth', 'colorFn', 'color', 'display', 'external', 'cms'], props) as any}
     />
   ) : (
     <RouterLink ref={ref} {...R.omit(['fullWidth', 'colorFn', 'color', 'display'], props) as any} />
@@ -74,12 +74,13 @@ export const Link: LinkComponent = React.forwardRef<any, LinkProps>((props, ref)
     className,
     onClick,
     external,
+    cms,
     target = external ? '_blank' : undefined,
     rel = external ? 'noopener noreferrer nofollow' : undefined,
     as,
     color,
   } = props;
-  const destinationProp = external ? { href: to } : { to };
+  const destinationProp = external || cms ? { href: to } : { to };
 
   const { track } = useContext(TrackingContext);
   const trackClick = (e: React.MouseEvent) => {
@@ -110,6 +111,7 @@ export const Link: LinkComponent = React.forwardRef<any, LinkProps>((props, ref)
       target={target}
       rel={rel}
       external={external}
+      cms={cms}
       as={as}
       color={color}
     >
