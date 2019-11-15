@@ -63,8 +63,9 @@ export const primaryStyles = css<ButtonProps>`
   ${getBorder('transparent')}
 
   ${p =>
-    !p.disabled &&
-    `
+    p.disabled
+      ? ''
+      : `
     &:hover {
       background-color: ${Color(p.theme.color.cta).darken(0.1)};
     }
@@ -88,8 +89,10 @@ export const secondaryStyles = css<ButtonProps>`
       color: ${p.disabled ? p.theme.color.disabledText : color || p.theme.color.cta};
       ${getBorder(p.disabled ? 'transparent' : color || p.theme.color.cta)}
 
-      ${!p.disabled &&
-        `
+      ${
+        p.disabled
+          ? ''
+          : `
         &:hover {
           color: ${color ? Color(color).darken(0.2) : Color(p.theme.color.cta).darken(0.2)};
     
@@ -109,7 +112,8 @@ export const secondaryStyles = css<ButtonProps>`
             };
           }
         }
-      `}
+      `
+      }
     `;
   }};
 `;

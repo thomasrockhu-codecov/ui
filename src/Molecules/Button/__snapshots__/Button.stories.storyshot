@@ -201,13 +201,84 @@ exports[`Storyshots Molecules | Button Button Primary With Size Modified 1`] = `
   line-height: 1.4285714285714286;
 }
 
-.c6 {
+.c7 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: inherit;
   margin: 0;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
+}
+
+.c5 {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  overflow: visible;
+  text-transform: none;
+  position: relative;
+  box-sizing: border-box;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  padding: 4px 12px;
+  min-height: 32px;
+  background-color: #0046FF;
+  color: #FFFFFF;
+  border: none;
+  border-radius: 0;
+  cursor: pointer;
+}
+
+.c5,
+.c5[type='button'],
+.c5[type='reset'],
+.c5[type='submit'] {
+  -webkit-appearance: button;
+}
+
+.c5::-moz-focus-inner,
+.c5[type='button']::-moz-focus-inner,
+.c5[type='reset']::-moz-focus-inner,
+.c5[type='submit']::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+.c5:-moz-focusring,
+.c5[type='button']:-moz-focusring,
+.c5[type='reset']:-moz-focusring,
+.c5[type='submit']:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+.c5::before {
+  content: '';
+  display: block;
+  position: absolute;
+  border: 2px solid transparent;
+  top: 0;
+  left: 0;
+  width: calc(100% - 4px);
+  height: calc(100% - 4px);
+}
+
+.c5:hover {
+  background-color: hsl(223.5,100%,45%);
+}
+
+.c5:active {
+  background-color: hsl(223.5,100%,40%);
 }
 
 .c3 {
@@ -231,8 +302,8 @@ exports[`Storyshots Molecules | Button Button Primary With Size Modified 1`] = `
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  padding: 4px 12px;
-  min-height: 32px;
+  padding: 0px 8px;
+  min-height: 24px;
   background-color: #0046FF;
   color: #FFFFFF;
   border: none;
@@ -281,7 +352,7 @@ exports[`Storyshots Molecules | Button Button Primary With Size Modified 1`] = `
   background-color: hsl(223.5,100%,40%);
 }
 
-.c5 {
+.c6 {
   font-family: inherit;
   font-size: 100%;
   line-height: 1.15;
@@ -311,29 +382,29 @@ exports[`Storyshots Molecules | Button Button Primary With Size Modified 1`] = `
   cursor: pointer;
 }
 
-.c5,
-.c5[type='button'],
-.c5[type='reset'],
-.c5[type='submit'] {
+.c6,
+.c6[type='button'],
+.c6[type='reset'],
+.c6[type='submit'] {
   -webkit-appearance: button;
 }
 
-.c5::-moz-focus-inner,
-.c5[type='button']::-moz-focus-inner,
-.c5[type='reset']::-moz-focus-inner,
-.c5[type='submit']::-moz-focus-inner {
+.c6::-moz-focus-inner,
+.c6[type='button']::-moz-focus-inner,
+.c6[type='reset']::-moz-focus-inner,
+.c6[type='submit']::-moz-focus-inner {
   border-style: none;
   padding: 0;
 }
 
-.c5:-moz-focusring,
-.c5[type='button']:-moz-focusring,
-.c5[type='reset']:-moz-focusring,
-.c5[type='submit']:-moz-focusring {
+.c6:-moz-focusring,
+.c6[type='button']:-moz-focusring,
+.c6[type='reset']:-moz-focusring,
+.c6[type='submit']:-moz-focusring {
   outline: 1px dotted ButtonText;
 }
 
-.c5::before {
+.c6::before {
   content: '';
   display: block;
   position: absolute;
@@ -344,11 +415,11 @@ exports[`Storyshots Molecules | Button Button Primary With Size Modified 1`] = `
   height: calc(100% - 4px);
 }
 
-.c5:hover {
+.c6:hover {
   background-color: hsl(223.5,100%,45%);
 }
 
-.c5:active {
+.c6:active {
   background-color: hsl(223.5,100%,40%);
 }
 
@@ -420,11 +491,34 @@ exports[`Storyshots Molecules | Button Button Primary With Size Modified 1`] = `
     <div
       className="c2"
     >
-      Medium
+      Small
     </div>
     <div>
       <button
         className="c3"
+        onClick={[Function]}
+        type="button"
+      >
+        <span
+          className="c4"
+        >
+          Small
+        </span>
+      </button>
+    </div>
+  </div>
+  <div
+    className="c1"
+    direction="column"
+  >
+    <div
+      className="c2"
+    >
+      Medium
+    </div>
+    <div>
+      <button
+        className="c5"
         onClick={[Function]}
         type="button"
       >
@@ -447,12 +541,12 @@ exports[`Storyshots Molecules | Button Button Primary With Size Modified 1`] = `
     </div>
     <div>
       <button
-        className="c5"
+        className="c6"
         onClick={[Function]}
         type="button"
       >
         <span
-          className="c6"
+          className="c7"
         >
           Large
         </span>
@@ -733,6 +827,395 @@ exports[`Storyshots Molecules | Button Button Secondary With Colors 1`] = `
           className="c4"
         >
           Button
+        </span>
+      </button>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Molecules | Button Button Secondary With Size Modified 1`] = `
+.c4 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: inherit;
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c7 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: inherit;
+  margin: 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.c5 {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  overflow: visible;
+  text-transform: none;
+  position: relative;
+  box-sizing: border-box;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  padding: 4px 12px;
+  min-height: 32px;
+  background-color: #FFFFFF;
+  color: #0046FF;
+  border: none;
+  border-radius: 0;
+  cursor: pointer;
+}
+
+.c5,
+.c5[type='button'],
+.c5[type='reset'],
+.c5[type='submit'] {
+  -webkit-appearance: button;
+}
+
+.c5::-moz-focus-inner,
+.c5[type='button']::-moz-focus-inner,
+.c5[type='reset']::-moz-focus-inner,
+.c5[type='submit']::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+.c5:-moz-focusring,
+.c5[type='button']:-moz-focusring,
+.c5[type='reset']:-moz-focusring,
+.c5[type='submit']:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+.c5::before {
+  content: '';
+  display: block;
+  position: absolute;
+  border: 2px solid #0046FF;
+  top: 0;
+  left: 0;
+  width: calc(100% - 4px);
+  height: calc(100% - 4px);
+}
+
+.c5:hover {
+  color: hsl(223.5,100%,40%);
+}
+
+.c5:hover::before {
+  border-color: hsl(223.5,100%,40%);
+}
+
+.c5:active {
+  color: hsl(223.5,100%,35%);
+}
+
+.c5:active::before {
+  border-color: hsl(223.5,100%,35%);
+}
+
+.c3 {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  overflow: visible;
+  text-transform: none;
+  position: relative;
+  box-sizing: border-box;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  padding: 0px 8px;
+  min-height: 24px;
+  background-color: #FFFFFF;
+  color: #0046FF;
+  border: none;
+  border-radius: 0;
+  cursor: pointer;
+}
+
+.c3,
+.c3[type='button'],
+.c3[type='reset'],
+.c3[type='submit'] {
+  -webkit-appearance: button;
+}
+
+.c3::-moz-focus-inner,
+.c3[type='button']::-moz-focus-inner,
+.c3[type='reset']::-moz-focus-inner,
+.c3[type='submit']::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+.c3:-moz-focusring,
+.c3[type='button']:-moz-focusring,
+.c3[type='reset']:-moz-focusring,
+.c3[type='submit']:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+.c3::before {
+  content: '';
+  display: block;
+  position: absolute;
+  border: 2px solid #0046FF;
+  top: 0;
+  left: 0;
+  width: calc(100% - 4px);
+  height: calc(100% - 4px);
+}
+
+.c3:hover {
+  color: hsl(223.5,100%,40%);
+}
+
+.c3:hover::before {
+  border-color: hsl(223.5,100%,40%);
+}
+
+.c3:active {
+  color: hsl(223.5,100%,35%);
+}
+
+.c3:active::before {
+  border-color: hsl(223.5,100%,35%);
+}
+
+.c6 {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  overflow: visible;
+  text-transform: none;
+  position: relative;
+  box-sizing: border-box;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  padding: 8px 16px;
+  min-height: 40px;
+  background-color: #FFFFFF;
+  color: #0046FF;
+  border: none;
+  border-radius: 0;
+  cursor: pointer;
+}
+
+.c6,
+.c6[type='button'],
+.c6[type='reset'],
+.c6[type='submit'] {
+  -webkit-appearance: button;
+}
+
+.c6::-moz-focus-inner,
+.c6[type='button']::-moz-focus-inner,
+.c6[type='reset']::-moz-focus-inner,
+.c6[type='submit']::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+.c6:-moz-focusring,
+.c6[type='button']:-moz-focusring,
+.c6[type='reset']:-moz-focusring,
+.c6[type='submit']:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+.c6::before {
+  content: '';
+  display: block;
+  position: absolute;
+  border: 2px solid #0046FF;
+  top: 0;
+  left: 0;
+  width: calc(100% - 4px);
+  height: calc(100% - 4px);
+}
+
+.c6:hover {
+  color: hsl(223.5,100%,40%);
+}
+
+.c6:hover::before {
+  border-color: hsl(223.5,100%,40%);
+}
+
+.c6:active {
+  color: hsl(223.5,100%,35%);
+}
+
+.c6:active::before {
+  border-color: hsl(223.5,100%,35%);
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  border: 0px;
+}
+
+.c0 > * {
+  padding: 0px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  border: 1px solid #eee;
+}
+
+.c1 > * {
+  padding: 20px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.c2 {
+  border-bottom: 1px solid #eee;
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+}
+
+<div
+  className="c0"
+  direction="row"
+>
+  <div
+    className="c1"
+    direction="column"
+  >
+    <div
+      className="c2"
+    >
+      Small
+    </div>
+    <div>
+      <button
+        className="c3"
+        onClick={[Function]}
+        type="button"
+      >
+        <span
+          className="c4"
+        >
+          Small
+        </span>
+      </button>
+    </div>
+  </div>
+  <div
+    className="c1"
+    direction="column"
+  >
+    <div
+      className="c2"
+    >
+      Medium
+    </div>
+    <div>
+      <button
+        className="c5"
+        onClick={[Function]}
+        type="button"
+      >
+        <span
+          className="c4"
+        >
+          Medium
+        </span>
+      </button>
+    </div>
+  </div>
+  <div
+    className="c1"
+    direction="column"
+  >
+    <div
+      className="c2"
+    >
+      Large
+    </div>
+    <div>
+      <button
+        className="c6"
+        onClick={[Function]}
+        type="button"
+      >
+        <span
+          className="c7"
+        >
+          Large
         </span>
       </button>
     </div>
@@ -1371,6 +1854,230 @@ exports[`Storyshots Molecules | Button Button With Type Modified 1`] = `
 </div>
 `;
 
+exports[`Storyshots Molecules | Button Buttons Composed In A Group 1`] = `
+.c0 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: -4px;
+  margin-right: -4px;
+}
+
+.c0 > * {
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+.c0 > *:not(:first-child) {
+  padding-top: 0;
+}
+
+.c1 {
+  box-sizing: border-box;
+  -webkit-flex: 1 1 50%;
+  -ms-flex: 1 1 50%;
+  flex: 1 1 50%;
+}
+
+.c3 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: inherit;
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c2 {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  overflow: visible;
+  text-transform: none;
+  position: relative;
+  box-sizing: border-box;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  padding: 4px 12px;
+  min-height: 32px;
+  background-color: #0046FF;
+  color: #FFFFFF;
+  border: none;
+  border-radius: 0;
+  cursor: pointer;
+}
+
+.c2,
+.c2[type='button'],
+.c2[type='reset'],
+.c2[type='submit'] {
+  -webkit-appearance: button;
+}
+
+.c2::-moz-focus-inner,
+.c2[type='button']::-moz-focus-inner,
+.c2[type='reset']::-moz-focus-inner,
+.c2[type='submit']::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+.c2:-moz-focusring,
+.c2[type='button']:-moz-focusring,
+.c2[type='reset']:-moz-focusring,
+.c2[type='submit']:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+.c2::before {
+  content: '';
+  display: block;
+  position: absolute;
+  border: 2px solid transparent;
+  top: 0;
+  left: 0;
+  width: calc(100% - 4px);
+  height: calc(100% - 4px);
+}
+
+.c2:hover {
+  background-color: hsl(223.5,100%,45%);
+}
+
+.c2:active {
+  background-color: hsl(223.5,100%,40%);
+}
+
+.c4 {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  overflow: visible;
+  text-transform: none;
+  position: relative;
+  box-sizing: border-box;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  padding: 4px 12px;
+  min-height: 32px;
+  background-color: #FFFFFF;
+  color: #0046FF;
+  border: none;
+  border-radius: 0;
+  cursor: pointer;
+}
+
+.c4,
+.c4[type='button'],
+.c4[type='reset'],
+.c4[type='submit'] {
+  -webkit-appearance: button;
+}
+
+.c4::-moz-focus-inner,
+.c4[type='button']::-moz-focus-inner,
+.c4[type='reset']::-moz-focus-inner,
+.c4[type='submit']::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+.c4:-moz-focusring,
+.c4[type='button']:-moz-focusring,
+.c4[type='reset']:-moz-focusring,
+.c4[type='submit']:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+.c4::before {
+  content: '';
+  display: block;
+  position: absolute;
+  border: 2px solid #0046FF;
+  top: 0;
+  left: 0;
+  width: calc(100% - 4px);
+  height: calc(100% - 4px);
+}
+
+.c4:hover {
+  color: hsl(223.5,100%,40%);
+}
+
+.c4:hover::before {
+  border-color: hsl(223.5,100%,40%);
+}
+
+.c4:active {
+  color: hsl(223.5,100%,35%);
+}
+
+.c4:active::before {
+  border-color: hsl(223.5,100%,35%);
+}
+
+<div
+  className="c0"
+>
+  <div
+    className="c1"
+  >
+    <button
+      className="c2"
+      onClick={[Function]}
+      type="submit"
+    >
+      <span
+        className="c3"
+      >
+        Submit
+      </span>
+    </button>
+  </div>
+  <div
+    className="c1"
+  >
+    <button
+      className="c4"
+      onClick={[Function]}
+      type="reset"
+    >
+      <span
+        className="c3"
+      >
+        Reset
+      </span>
+    </button>
+  </div>
+</div>
+`;
+
 exports[`Storyshots Molecules | Button Default Usage 1`] = `
 .c1 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
@@ -1463,6 +2170,632 @@ exports[`Storyshots Molecules | Button Default Usage 1`] = `
     Button
   </span>
 </button>
+`;
+
+exports[`Storyshots Molecules | Button Disabled Button With Different Variants 1`] = `
+.c4 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: inherit;
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c3 {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  overflow: visible;
+  text-transform: none;
+  position: relative;
+  box-sizing: border-box;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  padding: 4px 12px;
+  min-height: 32px;
+  background-color: #EBEBE8;
+  color: #A0A09B;
+  border: none;
+  border-radius: 0;
+  cursor: not-allowed;
+}
+
+.c3,
+.c3[type='button'],
+.c3[type='reset'],
+.c3[type='submit'] {
+  -webkit-appearance: button;
+}
+
+.c3::-moz-focus-inner,
+.c3[type='button']::-moz-focus-inner,
+.c3[type='reset']::-moz-focus-inner,
+.c3[type='submit']::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+.c3:-moz-focusring,
+.c3[type='button']:-moz-focusring,
+.c3[type='reset']:-moz-focusring,
+.c3[type='submit']:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+.c3::before {
+  content: '';
+  display: block;
+  position: absolute;
+  border: 2px solid transparent;
+  top: 0;
+  left: 0;
+  width: calc(100% - 4px);
+  height: calc(100% - 4px);
+}
+
+.c5 {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  overflow: visible;
+  text-transform: none;
+  position: relative;
+  box-sizing: border-box;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  padding: 4px 12px;
+  min-height: 32px;
+  background-color: #EBEBE8;
+  color: #A0A09B;
+  border: none;
+  border-radius: 0;
+  cursor: not-allowed;
+}
+
+.c5,
+.c5[type='button'],
+.c5[type='reset'],
+.c5[type='submit'] {
+  -webkit-appearance: button;
+}
+
+.c5::-moz-focus-inner,
+.c5[type='button']::-moz-focus-inner,
+.c5[type='reset']::-moz-focus-inner,
+.c5[type='submit']::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+.c5:-moz-focusring,
+.c5[type='button']:-moz-focusring,
+.c5[type='reset']:-moz-focusring,
+.c5[type='submit']:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+.c5::before {
+  content: '';
+  display: block;
+  position: absolute;
+  border: 2px solid transparent;
+  top: 0;
+  left: 0;
+  width: calc(100% - 4px);
+  height: calc(100% - 4px);
+}
+
+.c6 {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  overflow: visible;
+  text-transform: none;
+  position: relative;
+  box-sizing: border-box;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  min-height: 32px;
+  padding: 0;
+  background-color: transparent;
+  color: #282823;
+  border: none;
+  border-radius: 0;
+  cursor: not-allowed;
+}
+
+.c6,
+.c6[type='button'],
+.c6[type='reset'],
+.c6[type='submit'] {
+  -webkit-appearance: button;
+}
+
+.c6::-moz-focus-inner,
+.c6[type='button']::-moz-focus-inner,
+.c6[type='reset']::-moz-focus-inner,
+.c6[type='submit']::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+.c6:-moz-focusring,
+.c6[type='button']:-moz-focusring,
+.c6[type='reset']:-moz-focusring,
+.c6[type='submit']:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  border: 0px;
+}
+
+.c0 > * {
+  padding: 0px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  border: 1px solid #eee;
+}
+
+.c1 > * {
+  padding: 20px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.c2 {
+  border-bottom: 1px solid #eee;
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+}
+
+<div
+  className="c0"
+  direction="row"
+>
+  <div
+    className="c1"
+    direction="column"
+  >
+    <div
+      className="c2"
+    >
+      primary
+    </div>
+    <div>
+      <button
+        className="c3"
+        disabled={true}
+        onClick={[Function]}
+        type="button"
+      >
+        <span
+          className="c4"
+        >
+          Button
+        </span>
+      </button>
+    </div>
+  </div>
+  <div
+    className="c1"
+    direction="column"
+  >
+    <div
+      className="c2"
+    >
+      secondary
+    </div>
+    <div>
+      <button
+        className="c5"
+        disabled={true}
+        onClick={[Function]}
+        type="button"
+      >
+        <span
+          className="c4"
+        >
+          Button
+        </span>
+      </button>
+    </div>
+  </div>
+  <div
+    className="c1"
+    direction="column"
+  >
+    <div
+      className="c2"
+    >
+      neutral
+    </div>
+    <div>
+      <button
+        className="c6"
+        disabled={true}
+        onClick={[Function]}
+        type="button"
+      >
+        <span
+          className="c4"
+        >
+          Button
+        </span>
+      </button>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Molecules | Button Disabled Link Looking Like A Button 1`] = `
+.c1 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: inherit;
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c0 {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  overflow: visible;
+  text-transform: none;
+  position: relative;
+  box-sizing: border-box;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  padding: 4px 12px;
+  min-height: 32px;
+  background-color: #EBEBE8;
+  color: #A0A09B;
+  border: none;
+  border-radius: 0;
+  cursor: not-allowed;
+}
+
+.c0,
+.c0[type='button'],
+.c0[type='reset'],
+.c0[type='submit'] {
+  -webkit-appearance: button;
+}
+
+.c0::-moz-focus-inner,
+.c0[type='button']::-moz-focus-inner,
+.c0[type='reset']::-moz-focus-inner,
+.c0[type='submit']::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+.c0:-moz-focusring,
+.c0[type='button']:-moz-focusring,
+.c0[type='reset']:-moz-focusring,
+.c0[type='submit']:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+.c0::before {
+  content: '';
+  display: block;
+  position: absolute;
+  border: 2px solid transparent;
+  top: 0;
+  left: 0;
+  width: calc(100% - 4px);
+  height: calc(100% - 4px);
+}
+
+<button
+  className="c0"
+  disabled={true}
+  onClick={[Function]}
+  type="button"
+>
+  <span
+    className="c1"
+  >
+    Button
+  </span>
+</button>
+`;
+
+exports[`Storyshots Molecules | Button Link Looking Like A Button 1`] = `
+.c4 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: inherit;
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c3 {
+  position: relative;
+  box-sizing: border-box;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  padding: 4px 12px;
+  min-height: 32px;
+  background-color: #0046FF;
+  color: #FFFFFF;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c3::before {
+  content: '';
+  display: block;
+  position: absolute;
+  border: 2px solid transparent;
+  top: 0;
+  left: 0;
+  width: calc(100% - 4px);
+  height: calc(100% - 4px);
+}
+
+.c3:hover {
+  background-color: hsl(223.5,100%,45%);
+}
+
+.c3:active {
+  background-color: hsl(223.5,100%,40%);
+}
+
+.c5 {
+  position: relative;
+  box-sizing: border-box;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  padding: 4px 12px;
+  min-height: 32px;
+  background-color: #FFFFFF;
+  color: #0046FF;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c5::before {
+  content: '';
+  display: block;
+  position: absolute;
+  border: 2px solid #0046FF;
+  top: 0;
+  left: 0;
+  width: calc(100% - 4px);
+  height: calc(100% - 4px);
+}
+
+.c5:hover {
+  color: hsl(223.5,100%,40%);
+}
+
+.c5:hover::before {
+  border-color: hsl(223.5,100%,40%);
+}
+
+.c5:active {
+  color: hsl(223.5,100%,35%);
+}
+
+.c5:active::before {
+  border-color: hsl(223.5,100%,35%);
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  border: 0px;
+}
+
+.c0 > * {
+  padding: 0px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  border: 1px solid #eee;
+}
+
+.c1 > * {
+  padding: 20px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.c2 {
+  border-right: 1px solid #eee;
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+}
+
+<div
+  className="c0"
+  direction="column"
+>
+  <div
+    className="c1"
+    direction="row"
+  >
+    <div
+      className="c2"
+    >
+      Reset
+    </div>
+    <div>
+      <a
+        className="c3"
+        href="#/route1"
+        onClick={[Function]}
+        size="m"
+      >
+        <span
+          className="c4"
+        >
+          To Route1
+        </span>
+      </a>
+    </div>
+  </div>
+  <div
+    className="c1"
+    direction="row"
+  >
+    <div
+      className="c2"
+    >
+      Submit
+    </div>
+    <div>
+      <a
+        className="c5"
+        href="#/route2"
+        onClick={[Function]}
+        size="m"
+      >
+        <span
+          className="c4"
+        >
+          To Route2
+        </span>
+      </a>
+    </div>
+  </div>
+</div>
 `;
 
 exports[`Storyshots Molecules | Button Link Looking Like A Button That Is Full Width 1`] = `
@@ -2055,4 +3388,172 @@ Array [
     className="c0"
   />,
 ]
+`;
+
+exports[`Storyshots Molecules | Button Links Looking Like Buttons Composed In A Group 1`] = `
+.c0 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: -4px;
+  margin-right: -4px;
+}
+
+.c0 > * {
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+.c0 > *:not(:first-child) {
+  padding-top: 0;
+}
+
+.c1 {
+  box-sizing: border-box;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+
+.c3 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: inherit;
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c2 {
+  position: relative;
+  box-sizing: border-box;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  padding: 4px 12px;
+  min-height: 32px;
+  background-color: #0046FF;
+  color: #FFFFFF;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c2::before {
+  content: '';
+  display: block;
+  position: absolute;
+  border: 2px solid transparent;
+  top: 0;
+  left: 0;
+  width: calc(100% - 4px);
+  height: calc(100% - 4px);
+}
+
+.c2:hover {
+  background-color: hsl(223.5,100%,45%);
+}
+
+.c2:active {
+  background-color: hsl(223.5,100%,40%);
+}
+
+.c4 {
+  position: relative;
+  box-sizing: border-box;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  padding: 4px 12px;
+  min-height: 32px;
+  background-color: #FFFFFF;
+  color: #0046FF;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c4::before {
+  content: '';
+  display: block;
+  position: absolute;
+  border: 2px solid #0046FF;
+  top: 0;
+  left: 0;
+  width: calc(100% - 4px);
+  height: calc(100% - 4px);
+}
+
+.c4:hover {
+  color: hsl(223.5,100%,40%);
+}
+
+.c4:hover::before {
+  border-color: hsl(223.5,100%,40%);
+}
+
+.c4:active {
+  color: hsl(223.5,100%,35%);
+}
+
+.c4:active::before {
+  border-color: hsl(223.5,100%,35%);
+}
+
+<div
+  className="c0"
+>
+  <div
+    className="c1"
+  >
+    <a
+      className="c2"
+      href="#/route1"
+      onClick={[Function]}
+      size="m"
+    >
+      <span
+        className="c3"
+      >
+        Submit
+      </span>
+    </a>
+  </div>
+  <div
+    className="c1"
+  >
+    <a
+      className="c4"
+      href="#/route2"
+      onClick={[Function]}
+      size="m"
+    >
+      <span
+        className="c3"
+      >
+        Reset
+      </span>
+    </a>
+  </div>
+</div>
 `;
