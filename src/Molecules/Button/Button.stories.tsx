@@ -159,6 +159,14 @@ export const buttonPrimaryWithSizeModified = () => (
     horizontal
     items={[
       {
+        title: 'Small',
+        component: (
+          <Button size="s" onClick={action('clickSmall')}>
+            Small
+          </Button>
+        ),
+      },
+      {
         title: 'Medium',
         component: (
           <Button size="m" onClick={action('clickMedium')}>
@@ -186,6 +194,14 @@ export const buttonSecondaryWithSizeModified = () => (
   <Display
     horizontal
     items={[
+      {
+        title: 'Small',
+        component: (
+          <Button size="s" variant="secondary" onClick={action('clickSmall')}>
+            Small
+          </Button>
+        ),
+      },
       {
         title: 'Medium',
         component: (

@@ -3,6 +3,7 @@ import Color from 'color';
 import { ButtonProps } from './Button.types';
 
 const HEIGHT = {
+  s: 6,
   m: 8,
   l: 10,
 };

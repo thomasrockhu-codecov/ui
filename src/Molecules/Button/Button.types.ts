@@ -7,8 +7,10 @@ type ColorFn = (t: Theme) => Colors['cta'] | Colors['negative'];
 export type ButtonProps = {
   /** @default primary */
   variant?: 'primary' | 'secondary' | 'neutral';
-  /** @default m */
-  size?: 'm' | 'l';
+  /**
+   * @default m
+   * @deprecated s value is depreceted */
+  size?: 's' | 'm' | 'l';
   /** @default false */
   fullWidth?: boolean;
   children: React.ReactChild | React.ReactChild[];
