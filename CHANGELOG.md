@@ -1,3 +1,10 @@
+## [2.1.2](https://github.com/nordnet/ui/compare/v2.1.1...v2.1.2) (2019-11-15)
+
+
+### Bug Fixes
+
+* optionl prop to remove cross for closing modal ([d938f9e](https://github.com/nordnet/ui/commit/d938f9e))
+
 ## [2.1.1](https://github.com/nordnet/ui/compare/v2.1.0...v2.1.1) (2019-11-13)
 
 
