@@ -128,7 +128,7 @@ export const neutralStyles = css<ButtonProps>`
     const color = p.colorFn && p.colorFn(p.theme);
 
     return `
-      color: ${color || p.theme.color.text}
+      color: ${p.disabled ? p.theme.color.disabledText : color || p.theme.color.text}
     `;
   }};
 `;
