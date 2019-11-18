@@ -1,3 +1,10 @@
+# [2.2.0](https://github.com/nordnet/ui/compare/v2.1.2...v2.2.0) (2019-11-18)
+
+
+### Features
+
+* add semantics for comp pink 1 and 2 ([9dc2d0f](https://github.com/nordnet/ui/commit/9dc2d0f))
+
 ## [2.1.2](https://github.com/nordnet/ui/compare/v2.1.1...v2.1.2) (2019-11-15)
 
 
