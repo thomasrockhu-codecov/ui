@@ -85,6 +85,10 @@ export type Theme = {
     sellActive: string;
     /** cta */
     cta: RawColor['cta'] | RawColor['a11yCta'];
+    /** creditsPiePrimary */
+    creditsPiePrimary: RawColor['complementaryPink1'];
+    /** creditsPieSecondary */
+    creditsPieSecondary: RawColor['complementaryPink2'];
     /** positive */
     positive: RawColor['positive'] | RawColor['a11yPositive'];
     /** negative */
