@@ -237,12 +237,12 @@ const StyledDiv = styled.div<Props>`
         `;
 
       return size
-        ? css`
+        ? `
             ${props.theme.media.greaterThan(props.theme.breakpoints[size])} {
               ${baseStyles}
             }
-          `.join(' ')
-        : css`
+          `
+        : `
             ${baseStyles}
           `;
     };
