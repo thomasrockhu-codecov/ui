@@ -1,3 +1,10 @@
+## [2.2.2](https://github.com/nordnet/ui/compare/v2.2.1...v2.2.2) (2019-11-20)
+
+
+### Bug Fixes
+
+* **storybook:** addon-docs regression bug, using older version for now ([6cf7ee5](https://github.com/nordnet/ui/commit/6cf7ee5))
+
 ## [2.2.1](https://github.com/nordnet/ui/compare/v2.2.0...v2.2.1) (2019-11-20)
 
 
