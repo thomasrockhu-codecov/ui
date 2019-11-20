@@ -1,3 +1,11 @@
+## [2.2.1](https://github.com/nordnet/ui/compare/v2.2.0...v2.2.1) (2019-11-20)
+
+
+### Bug Fixes
+
+* 🐛 change height prop to work in media style props ([8a76e1f](https://github.com/nordnet/ui/commit/8a76e1f))
+* **cssgrid:** proper fix for comma join in media queries ([5c1cb21](https://github.com/nordnet/ui/commit/5c1cb21))
+
 # [2.2.0](https://github.com/nordnet/ui/compare/v2.1.2...v2.2.0) (2019-11-18)
 
 
