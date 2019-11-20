@@ -75,7 +75,7 @@ export const getRoundedValue = (
   if (typeof maximumDecimals !== 'undefined' || typeof minimumDecimals !== 'undefined')
     dec = getDecimalsFromMinMax(value, maximumDecimals, minimumDecimals);
   if (dec === null) return value;
-  return dec === 0 ? Math.round(value) : +Number(value).toPrecision(dec);
+  return +Number(value).toFixed(dec);
 };
 
 const TypographyWithInheritedWeight = styled(Typography)`
