@@ -95,19 +95,10 @@ const components = {
   AddonBox,
 };
 
-export const Text: React.FC<Props> & {
-  /**
-   * This will allow you to customize
-   * inner parts with styled-components
-   * @example
-   * const CustomText = styled(Input.Text)`
-   *  ${Input.Text.components.Input} {
-   *    color: pink;
-   * }
-   * `
-   * */
-  components: typeof components;
-} = props => {
+const getAriaProps = R.pickBy((val, key) => key.startsWith('aria-'));
+const getDataProps = R.pickBy((val, key) => key.startsWith('data-'));
+
+const TextComponent = React.forwardRef<HTMLInputElement, Props>((props, ref) => {
   const {
     autoFocus,
     defaultValue,
@@ -133,7 +124,10 @@ export const Text: React.FC<Props> & {
 
   return (
     <FormField
-      {...R.pick(['error', 'extraInfo', 'hideLabel', 'label', 'labelTooltip', 'width'], props)}
+      {...R.pick(
+        ['error', 'extraInfo', 'hideLabel', 'label', 'labelTooltip', 'className', 'width'],
+        props,
+      )}
       required={visuallyEmphasiseRequired}
     >
       <Typography type="secondary" color={t => t.color.text}>
@@ -159,7 +153,10 @@ export const Text: React.FC<Props> & {
               size,
               success,
               value,
+              ref,
             }}
+            {...getAriaProps(props)}
+            {...getDataProps(props)}
             {...(hasError(error) ? { 'aria-invalid': true } : {})}
           />
           {leftAddon && (
@@ -176,5 +173,7 @@ export const Text: React.FC<Props> & {
       </Typography>
     </FormField>
   );
-};
+});
+
+export const Text: typeof TextComponent & { components?: typeof components } = TextComponent;
 Text.components = components;

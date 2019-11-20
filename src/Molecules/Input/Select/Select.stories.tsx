@@ -1,20 +1,31 @@
+/** eslint-disable react-hooks/rules-of-hooks */
 import React from 'react';
-import R from 'ramda';
-
 import { action } from '@storybook/addon-actions';
+import R from 'ramda';
 import styled from 'styled-components';
-import { Input, Avatar, Flexbox, Number, Typography, Box, Link, Icon, Button } from '../../..';
+import {
+  Input,
+  Avatar,
+  Flexbox,
+  Number,
+  Typography,
+  Box,
+  Icon,
+  Link,
+  TrackingContext,
+} from '../../..';
 import { Display } from '../../../common/Display';
-import { SelectState, Action } from './Select.types';
 import mdx from './Select.mdx';
 
-const loggingReducer = (state: SelectState, incomingAction: Action) => {
-  action(incomingAction.type)(incomingAction.payload);
-  return Input.Select.defaults.reducer(state, incomingAction);
-};
+/* eslint-disable react-hooks/rules-of-hooks */
+const useSelectMachineFromContext = Input.Select.useSelectMachineFromContext;
 
-const actionTypes = Input.Select.defaults.actionTypes;
-const useSelectReducer = Input.Select.useSelectReducer;
+const FlexedBox = styled(Box)`
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+`;
+
 const accountOptions = [
   {
     label: 'First account',
@@ -39,33 +50,16 @@ const accountOptions = [
   },
 ];
 
-const StyledBox: React.FC<any> = styled(Box)`
-  cursor: pointer;
-  background: ${p => p.theme.color.card};
-  outline: none;
-  &:hover {
-    background: ${p => p.theme.color.background};
-  }
-  &:focus {
-    background: ${p => p.theme.color.background};
-  }
-`;
-
-const FlexedBox = styled(Box)<any>`
-  flex-grow: 1;
-  display: flex;
-  align-items: center;
-`;
-
 const AccountValue = () => {
-  const [state] = useSelectReducer();
+  const [state] = useSelectMachineFromContext();
 
-  const selectedOption = state.value.length === 0 ? null : state.value[0];
+  const selectedOption =
+    state.context.selectedItems.length === 0 ? null : state.context.selectedItems[0];
 
   return (
     <FlexedBox px={2} pr={8}>
       {!selectedOption ? (
-        state.placeholder
+        state.context.placeholder
       ) : (
         <Flexbox container item justifyContent="space-between" gutter={2} grow={1}>
           <Flexbox item container alignItems="center" basis="32px" grow={0}>
@@ -86,21 +80,44 @@ const AccountValue = () => {
   );
 };
 
-const AccountListItem = ({ index }: any, ref: any) => {
-  const [state] = useSelectReducer();
-  const option = state.options[index];
-  const selected = state.value.includes(option);
-
+// @ts-ignore
+const StyledBox = styled(Box)`
+  cursor: pointer;
+  background: ${p =>
+    // @ts-ignore
+    p.focused ? p.theme.color.background : p.theme.color.card};
+  ${p =>
+    // @ts-ignore
+    !p.isKeyboardNavigation
+      ? `
+  &: hover {
+    background: ${p.theme.color.background};
+    }
+  `
+      : ''}
+`;
+// @ts-ignore
+const AccountListItem = ({ index }) => {
+  const [state] = useSelectMachineFromContext();
+  const option = state.context.options[index];
+  const isKeyboardNavigation = state.matches('interaction.enabled.active.navigation.keyboard');
+  const selected = state.context.selectedItems.includes(option);
+  const focused = isKeyboardNavigation && state.context.itemFocusIdx === index;
   return (
-    <StyledBox px={2} py={1} ref={ref} tabIndex={0}>
+    // @ts-ignore
+    <StyledBox px={2} py={1} focused={focused} isKeyboardNavigation={isKeyboardNavigation}>
       <Flexbox container justifyContent="space-between" gutter={4}>
         <Flexbox item container alignItems="center" basis="32px" grow={0}>
-          <Avatar>{option.symbol}</Avatar>
+          <Avatar size="s">{option.symbol}</Avatar>
         </Flexbox>
         <Flexbox item container direction="column" grow={1}>
           <Flexbox item>
-            <Typography type="secondary" color={t => t.color.text}>
+            <Typography type="tertiary" weight="bold" color={t => t.color.text}>
               {option.label}
+            </Typography>
+            <Typography type="tertiary">
+              <span aria-hidden="true">&nbsp;&#8231;&nbsp;</span>
+              {option.accno}
             </Typography>
           </Flexbox>
           <Flexbox item>
@@ -112,7 +129,7 @@ const AccountListItem = ({ index }: any, ref: any) => {
         {selected && (
           <Flexbox item container alignItems="center">
             <Box pl={2}>
-              <Icon.CheckMark color={t => t.color.cta} />
+              <Icon.CheckMark color={t => t.color.cta} size={4} />
             </Box>
           </Flexbox>
         )}
@@ -121,75 +138,483 @@ const AccountListItem = ({ index }: any, ref: any) => {
   );
 };
 
-export default {
-  title: 'Molecules | Input / Select',
-  parameters: {
-    docs: {
-      page: mdx,
-    },
+export const defaultStory = () => (
+  <Input.Select
+    id="input-1"
+    options={[{ value: 1, label: '1' }, { value: 2, label: '2' }, { value: 3, label: '3' }]}
+    label="Label"
+    placeholder="Placeholder"
+  />
+);
+
+export const hideLabel = () => (
+  <Input.Select
+    id="input-1"
+    options={[{ value: 1, label: '1' }, { value: 2, label: '2' }, { value: 3, label: '3' }]}
+    label="Label"
+    hideLabel
+    placeholder="Placeholder"
+  />
+);
+export const overflowStory = () => (
+  <Input.Select
+    id="input-1"
+    options={new Array(100).fill(null).map((_, i) => ({
+      value: i,
+      label: `${i}${i}${i}${i}${i}${i}${i}${i}${i}${i}${i}${i}${i}${i}${i}${i}${i}${i}${i}${i}`,
+    }))}
+    label="LabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabel"
+    placeholder="PlaceholderPlaceholderPlaceholderPlaceholderPlaceholderPlaceholderPlaceholderPlaceholderPlaceholderPlaceholderPlaceholderPlaceholderPlaceholder"
+  />
+);
+
+export const preselectedOptions = () =>
+  React.createElement(() => {
+    // This component you need to redefine for your particular case
+    // Consider translations and a11y!
+    const CustomSelectedValue = React.useCallback(() => {
+      const [machineState] = useSelectMachineFromContext();
+      const selectedCount = machineState.context.selectedItems.length;
+      return (
+        <FlexedBox px={2}>
+          <Typography type="secondary">
+            {selectedCount === 0 ? machineState.context.placeholder : `${selectedCount} selected`}
+          </Typography>
+        </FlexedBox>
+      );
+    }, []);
+
+    const [values, setValues] = React.useState([
+      // Non-referentially equal options
+      { ...accountOptions[1] },
+      { ...accountOptions[2] },
+    ]);
+
+    return (
+      <Input.Select
+        id="input-1"
+        options={accountOptions}
+        value={values}
+        // @ts-ignore
+        onChange={setValues}
+        components={{ SelectedValue: CustomSelectedValue }}
+        multiselect
+        label="Label"
+        placeholder="Placeholder"
+      />
+    );
+  });
+
+export const multiSelectUncontrolled = () =>
+  React.createElement(() => {
+    // This component you need to redefine for your particular case
+    // Consider translations and a11y!
+    const CustomSelectedValue = React.useCallback(() => {
+      const [machineState] = useSelectMachineFromContext();
+      const selectedCount = machineState.context.selectedItems.length;
+      return (
+        <FlexedBox px={2}>
+          <Typography type="secondary">
+            {selectedCount === 0 ? machineState.context.placeholder : `${selectedCount} selected`}
+          </Typography>
+        </FlexedBox>
+      );
+    }, []);
+
+    return (
+      <Input.Select
+        id="input-1"
+        options={accountOptions}
+        components={{ SelectedValue: CustomSelectedValue }}
+        multiselect
+        label="Label"
+        placeholder="Placeholder"
+      />
+    );
+  });
+export const tracking = () => (
+  <TrackingContext.Provider
+    value={{
+      track: (componentName, e, props) =>
+        // @ts-ignore
+        action('Tracking')(componentName, e.type, e.payload, props),
+    }}
+  >
+    <Input.Select
+      id="input-1"
+      options={[{ value: 1, label: '1' }, { value: 2, label: '2' }, { value: 3, label: '3' }]}
+      label="Label"
+      placeholder="Placeholder"
+    />
+  </TrackingContext.Provider>
+);
+export const searchStory = () => (
+  <Input.Select
+    id="input-1"
+    options={[
+      { value: 1, label: 'Abba' },
+      { value: 2, label: 'Btoiwent' },
+      { value: 3, label: 'Crtetyrh' },
+      { value: 4, label: 'Dositenyoe' },
+      { value: 5, label: 'Dasitenyoe' },
+      { value: 6, label: 'Xfoteibnyo' },
+      { value: 7, label: '3125236' },
+    ]}
+    label="Label"
+    placeholder="Placeholder"
+  />
+);
+
+export const two = () => (
+  <>
+    <Input.Select
+      id="input-1"
+      options={[{ value: 1, label: '1' }, { value: 2, label: '2' }, { value: 3, label: '3' }]}
+      label="Label"
+      placeholder="Placeholder"
+    />
+    <Input.Select
+      id="input-2"
+      options={[{ value: 1, label: '1' }, { value: 2, label: '2' }, { value: 3, label: '3' }]}
+      label="Label"
+      placeholder="Placeholder"
+    />
+  </>
+);
+
+export const fullWidth = () => (
+  <Input.Select
+    id="onchange-select"
+    fullWidth
+    options={accountOptions}
+    label="User account"
+    placeholder="Select account"
+  />
+);
+
+export const autoFocus = () => (
+  <Input.Select
+    id="onchange-select"
+    autoFocus
+    options={accountOptions}
+    label="User account"
+    placeholder="Select account"
+  />
+);
+
+export const disabledItems = () => {
+  return (
+    <Input.Select
+      id="onchange-select"
+      options={accountOptions.map((acc, i) =>
+        i === 1 || i === 2 ? { ...acc, disabled: true } : acc,
+      )}
+      label="User account"
+      placeholder="Select account"
+    />
+  );
+};
+
+export const customRenderers = () => {
+  return (
+    <Input.Select
+      id="custom-renderers-select"
+      options={accountOptions}
+      components={{
+        ListItem: AccountListItem,
+        SelectedValue: AccountValue,
+      }}
+      label="User account"
+      placeholder="Select account"
+    />
+  );
+};
+
+export const actions = () =>
+  React.createElement(() => {
+    const [value, setValue] = React.useState([]);
+    return (
+      <Input.Select
+        id="custom-renderers-select"
+        options={accountOptions}
+        value={value}
+        // @ts-ignore
+        onChange={setValue}
+        actions={[
+          {
+            icon: <Icon.AddWithCircle size={4} color="currentColor" />,
+            label: 'Add more stuff to dropdown',
+            onSelect: action('Action triggered!'),
+          },
+          {
+            icon: <Icon.Archive size={4} color="currentColor" />,
+            label: 'Archive',
+            onSelect: action('Action Archive triggered!'),
+          },
+          {
+            label: 'No icon action',
+            onSelect: action('Action No icon triggered!'),
+          },
+          {
+            label: 'Disabled action',
+            onSelect: action('Should not appear!'),
+            disabled: true,
+          },
+        ]}
+        label="User account"
+        placeholder="Select account"
+      />
+    );
+  });
+export const actionsAndEmptyOptionList = () =>
+  React.createElement(() => {
+    const [value, setValue] = React.useState([]);
+    return (
+      <Input.Select
+        id="custom-renderers-select"
+        options={[]}
+        value={value}
+        // @ts-ignore
+        onChange={setValue}
+        actions={[
+          {
+            icon: <Icon.AddWithCircle size={4} color="currentColor" />,
+            label: 'Add more stuff to dropdown',
+            onSelect: action('Action triggered!'),
+          },
+          {
+            icon: <Icon.Archive size={4} color="currentColor" />,
+            label: 'Archive',
+            onSelect: action('Action Archive triggered!'),
+          },
+          {
+            label: 'No icon action',
+            onSelect: action('Action No icon triggered!'),
+          },
+          {
+            label: 'Disabled action',
+            onSelect: action('Should not appear!'),
+            disabled: true,
+          },
+        ]}
+        label="User account"
+        placeholder="Select account"
+      />
+    );
+  });
+export const fullyEmpty = () =>
+  React.createElement(() => {
+    const [value, setValue] = React.useState([]);
+    return (
+      <Input.Select
+        id="custom-renderers-select"
+        options={[]}
+        value={value}
+        // @ts-ignore
+        onChange={setValue}
+        label="User account"
+        placeholder="Select account"
+      />
+    );
+  });
+
+export const onBlurAndOnFocus = () => {
+  return (
+    <Input.Select
+      id="custom-renderers-select"
+      options={accountOptions}
+      label="User account"
+      placeholder="Select account"
+      onBlur={action('blur')}
+      onFocus={action('focus')}
+    />
+  );
+};
+
+export const multiselect = () =>
+  React.createElement(() => {
+    const [value, setValue] = React.useState([]);
+
+    // This component you need to redefine for your particular case
+    // Consider translations and a11y!
+    const CustomSelectedValue = React.useMemo(
+      () => () => {
+        const [machineState] = useSelectMachineFromContext();
+        const selectedCount = machineState.context.selectedItems.length;
+        return (
+          <FlexedBox px={2}>
+            <Typography type="secondary">
+              {selectedCount === 0 ? machineState.context.placeholder : `${selectedCount} selected`}
+            </Typography>
+          </FlexedBox>
+        );
+      },
+      [],
+    );
+    return (
+      <Input.Select
+        id="custom-renderers-select"
+        options={accountOptions}
+        value={value}
+        // @ts-ignore
+        onChange={setValue}
+        components={{ SelectedValue: CustomSelectedValue }}
+        multiselect
+        label="User account"
+        placeholder="Select account"
+      />
+    );
+  });
+
+export const multiselectActions = () =>
+  React.createElement(() => {
+    const [value, setValue] = React.useState([]);
+
+    // This component you need to redefine for your particular case
+    // Consider translations and a11y!
+    const CustomSelectedValue = React.useMemo(
+      () => () => {
+        const [machineState] = useSelectMachineFromContext();
+        const selectedCount = machineState.context.selectedItems.length;
+        return (
+          <FlexedBox px={2}>
+            <Typography type="secondary">
+              {selectedCount === 0 ? machineState.context.placeholder : `${selectedCount} selected`}
+            </Typography>
+          </FlexedBox>
+        );
+      },
+      [],
+    );
+    return (
+      <Input.Select
+        id="custom-renderers-select"
+        options={accountOptions}
+        value={value}
+        // @ts-ignore
+        onChange={setValue}
+        components={{ SelectedValue: CustomSelectedValue }}
+        actions={[
+          {
+            icon: <Icon.AddWithCircle size={4} color="currentColor" />,
+            label: 'Add more stuff to dropdown',
+            onSelect: action('Action add triggered!'),
+          },
+          {
+            icon: <Icon.Archive size={4} color="currentColor" />,
+            label: 'Archive',
+            onSelect: action('Action archive triggered!'),
+          },
+        ]}
+        multiselect
+        label="User account"
+        placeholder="Select account"
+      />
+    );
+  });
+
+const accountOptionsAndSelectAll = [
+  {
+    label: 'Select All',
+    value: undefined,
+    [Input.Select.SYMBOL_ALL]: true,
   },
-};
+]
+  // @ts-ignore
+  .concat(accountOptions)
+  .concat({ label: 'Disabled', value: 'Doesnt matter', disabled: true });
 
-export const defaultStory = () => {
-  return (
-    <Input.Select options={accountOptions} label="User account" placeholder="Select account" />
-  );
-};
+export const multiselectSelectAll = () =>
+  React.createElement(() => {
+    const [value, setValue] = React.useState([]);
 
-defaultStory.story = {
-  name: 'Default',
-};
+    // This component you need to redefine for your particular case
+    // Consider translations and a11y!
+    const CustomSelectedValue = React.useCallback(() => {
+      const [machineState] = useSelectMachineFromContext();
+      const selectedCount = machineState.context.selectedItems.length;
+      const allSelected = machineState.context.selectedItems.some(x => x[Input.Select.SYMBOL_ALL]);
+      let label;
+      if (allSelected) {
+        label = 'All selected';
+      } else if (selectedCount === 0) {
+        label = machineState.context.placeholder;
+      } else {
+        label = `${selectedCount} selected`;
+      }
+      return (
+        <FlexedBox px={2}>
+          <Typography type="secondary">{label}</Typography>
+        </FlexedBox>
+      );
+    }, []);
+    return (
+      <Input.Select
+        id="multiwithall-select"
+        options={accountOptionsAndSelectAll}
+        value={value}
+        // @ts-ignore
+        onChange={setValue}
+        components={{
+          SelectedValue: CustomSelectedValue,
+        }}
+        multiselect
+        label="User account"
+        placeholder="Select account"
+      />
+    );
+  });
 
-export const two = () => {
-  return (
-    <>
-      <Input.Select options={accountOptions} label="User account" placeholder="Select account" />
-      <Input.Select options={accountOptions} label="User account" placeholder="Select account" />
-    </>
-  );
-};
+export const changesFromProps = () =>
+  React.createElement(() => {
+    const [searchQuery, setSearchQuery] = React.useState('');
+    const [accs, setAccs] = React.useState(accountOptions);
+    const [value, setValue] = React.useState([]);
+    const [disabled, setDisabled] = React.useState(false);
 
-export const fullWidthStory = () => {
-  return (
-    <Input.Select
-      reducer={loggingReducer}
-      options={accountOptions}
-      label="User account"
-      placeholder="Select account"
-      onChange={action('change')}
-      onBlur={action('blur')}
-      onFocus={action('focus')}
-      fullWidth
-    />
-  );
-};
+    const removeAcc = () => setAccs(accs.slice(0, -1));
+    // @ts-ignore
+    const selectFirst = () => setValue([accountOptions[0]]);
 
-fullWidthStory.story = {
-  name: 'Full width',
-};
+    return (
+      <>
+        <button type="button" onClick={removeAcc}>
+          Delete
+        </button>
 
-// eslint-disable-next-line no-underscore-dangle
-export const _300PxWidth = () => {
-  return (
-    <Input.Select
-      reducer={loggingReducer}
-      options={accountOptions}
-      label="User account"
-      placeholder="Select account"
-      onChange={action('change')}
-      onBlur={action('blur')}
-      onFocus={action('focus')}
-      width="300px"
-    />
-  );
-};
+        <button type="button" onClick={selectFirst}>
+          Select first
+        </button>
+        <button type="button" onClick={() => setDisabled(true)}>
+          Disable
+        </button>
+        <button type="button" onClick={() => setDisabled(false)}>
+          Enable
+        </button>
+        <pre>{JSON.stringify(value, null, 2)}</pre>
+        <pre>{JSON.stringify(accs, null, 2)}</pre>
+        <Input.Select
+          id="onchange-select"
+          value={value}
+          disabled={disabled}
+          // @ts-ignore
+          onChange={setValue}
+          options={accs}
+          label="User account"
+          showSearch
+          searchQuery={searchQuery}
+          onSearchQueryChange={({ payload }) => {
+            action('search')(payload);
+            setSearchQuery(payload);
+          }}
+          placeholder="Select account"
+        />
+      </>
+    );
+  });
 
-_300PxWidth.story = {
-  name: '300px width',
-};
-
-export const accessibleFromDocumentForms = () => {
-  const Inner = () => {
+export const accessibleFromDocumentForms = () =>
+  React.createElement(() => {
     const FORM_NAME = 'testForm';
     const SELECT_NAME = 'mySelect';
 
@@ -199,7 +624,7 @@ export const accessibleFromDocumentForms = () => {
     return (
       <form name={FORM_NAME}>
         <Input.Select
-          reducer={loggingReducer}
+          id="forms-input-test"
           options={accountOptions}
           name={SELECT_NAME}
           label="User account"
@@ -208,53 +633,32 @@ export const accessibleFromDocumentForms = () => {
           // The story gonna rerender
           // So we have fresh stuff from document.forms
           // @ts-ignore
-          onChange={forceUpdate}
+          onChange={() => setTimeout(() => forceUpdate({}), 10)}
         />
         <br />
         Value in form: &quot;
         {R.path(['forms', FORM_NAME, 'elements', SELECT_NAME, 'value'])(document)}&quot;
       </form>
     );
-  };
-  return <Inner />;
-};
+  });
 
-accessibleFromDocumentForms.story = {
-  name: 'Accessible from document.forms',
-};
-
-export const controlled = () => {
-  const Component = () => {
-    const localOptions = React.useMemo(
-      () => [{ value: 1, label: '1' }, { value: 2, label: '2' }, { value: 3, label: '3' }],
-      [],
-    );
-    const [selectedValue, setSelectedValue] = React.useState<Array<any>>([]);
-
-    // Going to allow
-    // only selection of
-    // { value: 2, label: 2 } option
-    const handleChange = (newValue: any[]) => {
-      if (newValue.includes(localOptions[1])) {
-        setSelectedValue(newValue);
-      }
-    };
-
+export const controlledBehaviour = () =>
+  React.createElement(() => {
+    const [value, setValue] = React.useState(() => [accountOptions[1]]);
     return (
-      <>
-        <Input.Select
-          reducer={loggingReducer}
-          options={localOptions}
-          value={selectedValue}
-          label="Can select only #2"
-          placeholder="Select me"
-          onChange={handleChange}
-        />
-        <Button onClick={() => setSelectedValue([localOptions[0]])}>Select 1st</Button>
-      </>
+      <Input.Select
+        id="onchange-select"
+        options={accountOptions}
+        value={value}
+        // @ts-ignore
+        onChange={setValue}
+        label="User account"
+        placeholder="Select account"
+      />
     );
-  };
-  return <Component />;
+  });
+controlledBehaviour.story = {
+  name: 'Controlled behaviour',
 };
 
 export const defaultVariations = () => {
@@ -265,6 +669,7 @@ export const defaultVariations = () => {
           title: 'Disabled',
           component: (
             <Input.Select
+              id="disabled-select"
               options={accountOptions}
               label="User account"
               disabled
@@ -277,6 +682,7 @@ export const defaultVariations = () => {
           component: (
             <Input.Select
               options={accountOptions}
+              id="error-select"
               label="User account"
               error="Some error"
               placeholder="Select account"
@@ -288,6 +694,7 @@ export const defaultVariations = () => {
           component: (
             <Input.Select
               options={accountOptions}
+              id="info-select"
               label="User account"
               extraInfo="Some extra info"
               placeholder="Select account"
@@ -298,6 +705,7 @@ export const defaultVariations = () => {
           title: 'Success',
           component: (
             <Input.Select
+              id="success-select"
               options={accountOptions}
               label="User account"
               success
@@ -313,8 +721,7 @@ export const defaultVariations = () => {
 defaultVariations.story = {
   name: 'Default variations',
 };
-
-export const sizeSVariations = () => {
+export const sizeS = () => {
   return (
     <Display
       items={[
@@ -322,9 +729,10 @@ export const sizeSVariations = () => {
           title: 'Disabled',
           component: (
             <Input.Select
+              size="s"
+              id="disabled-select"
               options={accountOptions}
               label="User account"
-              size="s"
               disabled
               placeholder="Select account"
             />
@@ -334,8 +742,9 @@ export const sizeSVariations = () => {
           title: 'Error',
           component: (
             <Input.Select
-              options={accountOptions}
               size="s"
+              id="error-select"
+              options={accountOptions}
               label="User account"
               error="Some error"
               placeholder="Select account"
@@ -346,9 +755,10 @@ export const sizeSVariations = () => {
           title: 'Info',
           component: (
             <Input.Select
+              size="s"
+              id="info-select"
               options={accountOptions}
               label="User account"
-              size="s"
               extraInfo="Some extra info"
               placeholder="Select account"
             />
@@ -358,9 +768,10 @@ export const sizeSVariations = () => {
           title: 'Success',
           component: (
             <Input.Select
+              size="s"
+              id="success-select"
               options={accountOptions}
               label="User account"
-              size="s"
               success
               placeholder="Select account"
             />
@@ -371,104 +782,25 @@ export const sizeSVariations = () => {
   );
 };
 
-sizeSVariations.story = {
-  name: 'Size = `s` variations',
-};
-
-export const customListItemRenderer = () => {
-  return (
-    <>
-      <Input.Select
-        components={{ ListItem: AccountListItem }}
-        options={accountOptions}
-        label="Open me"
-        placeholder="Select account"
-        onChange={action('change1')}
-      />
-    </>
-  );
-};
-
-customListItemRenderer.story = {
-  name: 'Custom ListItem renderer',
-};
-
-export const customSelectedValueRenderer = () => {
-  return (
-    <Input.Select
-      components={{
-        SelectedValue: AccountValue,
-      }}
-      options={accountOptions}
-      label="Select something"
-      placeholder="Select account"
-      onChange={action('change')}
-    />
-  );
-};
-
-customSelectedValueRenderer.story = {
-  name: 'Custom SelectedValue renderer',
-};
-
-export const customSelectedValueAndListItemRenderer = () => {
-  return (
-    <Input.Select
-      components={{
-        SelectedValue: AccountValue,
-        ListItem: AccountListItem,
-      }}
-      options={accountOptions}
-      label="User account"
-      onChange={action('value changed')}
-      placeholder="Select account"
-    />
-  );
-};
-
-customSelectedValueAndListItemRenderer.story = {
-  name: 'Custom SelectedValue and ListItem renderer',
-};
-
-export const linkWithDropdownAndSearchBox = () => {
-  type SearchContextType = [string, (x: string) => void];
-  const SearchContext = React.createContext<SearchContextType>(['', (_: string) => {}]);
-  const Component = () => {
-    const [filterQuery, setFilterQuery] = React.useState('');
-
+export const linkWithDropdownAndSearchBoxSecondary = () =>
+  React.createElement(() => {
     const customComponents = React.useMemo(
       () => ({
-        List: ({ children }: any) => {
-          const [filterQueryInner, setFilterQueryInner] = React.useContext(SearchContext);
-          const handleChange = React.useCallback(e => setFilterQueryInner(e.target.value), [
-            setFilterQueryInner,
-          ]);
-          React.useEffect(() => () => setFilterQueryInner(''), []);
-          return (
-            <Input.Select.defaults.components.List position="left">
-              <Box px={2} mb={2}>
-                <Input.Text
-                  leftAddon={<Icon.Search />}
-                  label="Filter"
-                  autoFocus
-                  key={2}
-                  value={filterQueryInner}
-                  onChange={handleChange}
-                />
-              </Box>
-              {children}
-            </Input.Select.defaults.components.List>
-          );
-        },
-
-        SelectedValue: (_: any, ref: React.Ref<any>) => {
-          const [state] = useSelectReducer();
+        // @ts-ignore
+        SelectedValue: () => {
+          const [state] = useSelectMachineFromContext();
 
           return (
-            <Link ref={ref} as="div">
-              <Flexbox container alignItems="center" gutter={2}>
-                <Icon.AddWithCircle inline color={t => t.color.cta} />
-                {state.placeholder}
+            <Link as="div">
+              <Flexbox container alignItems="center" gutter={1}>
+                <Flexbox item container alignItems="center">
+                  <Icon.AddWithCircle inline color={t => t.color.text} size={3.5} />
+                </Flexbox>
+                <Flexbox item>
+                  <Typography type="secondary" color={t => t.color.text}>
+                    {state.context.placeholder}
+                  </Typography>
+                </Flexbox>
               </Flexbox>
             </Link>
           );
@@ -477,6 +809,7 @@ export const linkWithDropdownAndSearchBox = () => {
       [],
     );
 
+    const [value, setValue] = React.useState([]);
     const hugeOptionsList = React.useMemo(
       () =>
         accountOptions
@@ -504,237 +837,352 @@ export const linkWithDropdownAndSearchBox = () => {
       [accountOptions],
     );
 
-    const filteredOptions = hugeOptionsList.filter(x =>
-      x.label.toLowerCase().includes(filterQuery.toLowerCase()),
-    );
+    // @ts-ignore
+    const handleChange = newVal => {
+      action('change')(newVal);
+      setValue(newVal);
+    };
 
     return (
-      <SearchContext.Provider value={[filterQuery, setFilterQuery]}>
+      <Input.Select
+        options={hugeOptionsList}
+        label="User account"
+        id="input-select-search-inside"
+        placeholder="Select account"
+        noFormField
+        showSearch
+        value={value}
+        components={customComponents}
+        onChange={handleChange}
+        width="150px"
+      />
+    );
+  });
+
+export const linkWithDropdownAndSearchBoxTertiary = () =>
+  React.createElement(() => {
+    const customComponents = React.useMemo(
+      () => ({
+        // @ts-ignore
+        SelectedValue: () => {
+          const [state] = useSelectMachineFromContext();
+
+          return (
+            <Link as="div">
+              <Flexbox container alignItems="center" gutter={1}>
+                <Flexbox item container alignItems="center">
+                  <Icon.AddWithCircle inline color={t => t.color.text} size={3} />
+                </Flexbox>
+                <Flexbox item>
+                  <Typography type="tertiary" color={t => t.color.text}>
+                    {state.context.placeholder}
+                  </Typography>
+                </Flexbox>
+              </Flexbox>
+            </Link>
+          );
+        },
+      }),
+      [],
+    );
+
+    const [value, setValue] = React.useState([]);
+    const hugeOptionsList = React.useMemo(
+      () =>
+        accountOptions
+          .concat(
+            accountOptions.map(x => ({
+              ...x,
+              value: x.value + Math.random(),
+              label: x.label + Math.random(),
+            })),
+          )
+          .concat(
+            accountOptions.map(x => ({
+              ...x,
+              value: x.value + Math.random(),
+              label: x.label + Math.random(),
+            })),
+          )
+          .concat(
+            accountOptions.map(x => ({
+              ...x,
+              value: x.value + Math.random(),
+              label: x.label + Math.random(),
+            })),
+          ),
+      [accountOptions],
+    );
+
+    // @ts-ignore
+    const handleChange = newVal => {
+      action('change')(newVal);
+      setValue(newVal);
+    };
+
+    return (
+      <Input.Select
+        options={hugeOptionsList}
+        label="User account"
+        id="input-select-search-inside"
+        placeholder="Select account"
+        noFormField
+        showSearch
+        value={value}
+        components={customComponents}
+        onChange={handleChange}
+        width="250px"
+      />
+    );
+  });
+
+export const linkWithDropdownAndSearchBoxMultiselect = () =>
+  React.createElement(() => {
+    const customComponents = React.useMemo(
+      () => ({
+        // @ts-ignore
+        SelectedValue: () => {
+          const [state] = useSelectMachineFromContext();
+
+          return (
+            <Link as="div">
+              <Flexbox container alignItems="center" gutter={1}>
+                <Flexbox item container alignItems="center">
+                  <Icon.AddWithCircle inline color={t => t.color.text} size={3} />
+                </Flexbox>
+                <Flexbox item>
+                  <Typography type="tertiary" color={t => t.color.text}>
+                    {state.context.placeholder}
+                  </Typography>
+                </Flexbox>
+              </Flexbox>
+            </Link>
+          );
+        },
+      }),
+      [],
+    );
+
+    const [value, setValue] = React.useState([]);
+    const hugeOptionsList = React.useMemo(
+      () =>
+        accountOptions
+          .concat(
+            accountOptions.map(x => ({
+              ...x,
+              value: x.value + Math.random(),
+              label: x.label + Math.random(),
+            })),
+          )
+          .concat(
+            accountOptions.map(x => ({
+              ...x,
+              value: x.value + Math.random(),
+              label: x.label + Math.random(),
+            })),
+          )
+          .concat(
+            accountOptions.map(x => ({
+              ...x,
+              value: x.value + Math.random(),
+              label: x.label + Math.random(),
+            })),
+          ),
+      [accountOptions],
+    );
+
+    // @ts-ignore
+    const handleChange = newVal => {
+      action('change')(newVal);
+      setValue(newVal);
+    };
+
+    return (
+      <TrackingContext.Provider
+        value={{
+          track: (componentName, e, props) =>
+            // @ts-ignore
+            action('Tracking')(componentName, e.type, e.payload, props),
+        }}
+      >
         <Input.Select
-          options={filteredOptions}
+          options={hugeOptionsList}
           label="User account"
-          autoFocusFirstOption={false}
+          id="input-select-search-inside"
           placeholder="Select account"
           noFormField
+          showSearch
+          multiselect
+          value={value}
+          width="300px"
+          listMaxHeight="400px"
           components={customComponents}
-          onChange={action('change')}
+          onChange={handleChange}
+          actions={[
+            {
+              label: 'Action',
+              onSelect: action('Action triggered'),
+            },
+          ]}
         />
-      </SearchContext.Provider>
+      </TrackingContext.Provider>
     );
-  };
-  return <Component />;
-};
+  });
 
-linkWithDropdownAndSearchBox.story = {
-  name: 'Link with dropdown and search box',
-};
+export const listPositionedToTheLeft = () =>
+  React.createElement(() => {
+    const customComponents = React.useMemo(
+      () => ({
+        // @ts-ignore
+        SelectedValue: () => {
+          const [state] = useSelectMachineFromContext();
 
-export const multiselect = () => {
-  const multiselectReducer = (state: SelectState, incomingAction: Action) => {
-    if (incomingAction.type === actionTypes['Select.SelectValue']) {
-      return {
-        ...state,
-        value: [...state.value, incomingAction.payload],
-      };
-    }
-    if (incomingAction.type === 'Select.DeselectValue') {
-      return {
-        ...state,
-        value: state.value.filter(x => !Object.is(x, incomingAction.payload)),
-      };
-    }
-    return Input.Select.defaults.reducer(state, incomingAction);
-  };
+          return (
+            <Link as="div">
+              <Flexbox container alignItems="center" gutter={1}>
+                <Flexbox item container alignItems="center">
+                  <Icon.AddWithCircle inline color={t => t.color.text} size={3} />
+                </Flexbox>
+                <Flexbox item>
+                  <Typography type="tertiary" color={t => t.color.text}>
+                    {state.context.placeholder}
+                  </Typography>
+                </Flexbox>
+              </Flexbox>
+            </Link>
+          );
+        },
+      }),
+      [],
+    );
 
-  const MultiSelectValue = (_: any, ref: React.Ref<any>) => {
-    const [state] = useSelectReducer();
+    const [value, setValue] = React.useState([]);
+    const hugeOptionsList = React.useMemo(
+      () =>
+        accountOptions
+          .concat(
+            accountOptions.map(x => ({
+              ...x,
+              value: x.value + Math.random(),
+              label: x.label + Math.random(),
+            })),
+          )
+          .concat(
+            accountOptions.map(x => ({
+              ...x,
+              value: x.value + Math.random(),
+              label: x.label + Math.random(),
+            })),
+          )
+          .concat(
+            accountOptions.map(x => ({
+              ...x,
+              value: x.value + Math.random(),
+              label: x.label + Math.random(),
+            })),
+          ),
+      [accountOptions],
+    );
+
+    // @ts-ignore
+    const handleChange = newVal => {
+      action('change')(newVal);
+      setValue(newVal);
+    };
+
     return (
-      <FlexedBox px={2} pr={8} ref={ref}>
-        {state.value.length === 0 ? state.placeholder : `Selected (${state.value.length})`}
-      </FlexedBox>
+      <Flexbox container justifyContent="flex-end">
+        <Input.Select
+          options={hugeOptionsList}
+          label="User account"
+          id="input-select-search-inside"
+          placeholder="Select account"
+          noFormField
+          showSearch
+          multiselect
+          value={value}
+          width="300px"
+          listPosition="left"
+          listMaxHeight="400px"
+          components={customComponents}
+          onChange={handleChange}
+          actions={[
+            {
+              label: 'Action',
+              onSelect: action('Action triggered'),
+            },
+          ]}
+        />
+      </Flexbox>
     );
-  };
+  });
 
-  return (
+export const onSearchQueryChange = () => (
+  <Input.Select
+    id="success-select"
+    options={accountOptions}
+    label="User account"
+    success
+    showSearch
+    onSearchQueryChange={action('search query change')}
+    placeholder="Select account"
+  />
+);
+export const focusWithoutScrolling = () => (
+  <>
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
     <Input.Select
-      reducer={multiselectReducer}
+      id="no-scroll-select"
       options={accountOptions}
-      components={{
-        SelectedValue: MultiSelectValue,
-        ListItem: Input.Select.defaults.components.MultiSelectListItem,
-      }}
       label="User account"
-      width="300px"
       placeholder="Select account"
-      onChange={action('change')}
     />
-  );
-};
-
-export const multiselectAccount = () => {
-  const multiselectReducer = (state: SelectState, incomingAction: Action) => {
-    if (incomingAction.type === actionTypes['Select.SelectValue']) {
-      return {
-        ...state,
-        value: [...state.value, incomingAction.payload],
-      };
-    }
-    if (incomingAction.type === 'Select.DeselectValue') {
-      return {
-        ...state,
-        value: state.value.filter(x => !Object.is(x, incomingAction.payload)),
-      };
-    }
-    return Input.Select.defaults.reducer(state, incomingAction);
-  };
-
-  const MultiSelectValue = (_: any, ref: React.Ref<any>) => {
-    const [state] = useSelectReducer();
-    return (
-      <FlexedBox px={2} pr={8} ref={ref}>
-        {state.value.length === 0 ? state.placeholder : `Selected (${state.value.length})`}
-      </FlexedBox>
-    );
-  };
-
-  const MultiSelectListItem = ({ index }: any, ref: any) => {
-    const [state] = useSelectReducer();
-    const option = state.options[index];
-    const selected = state.value.includes(option);
-
-    return (
-      <StyledBox px={3} py={1} ref={ref} tabIndex={0}>
-        <Flexbox container alignItems="center" gutter={0} height={9}>
-          <Flexbox item container alignItems="center">
-            {/** TODO: revisit a11y here */}
-            <Input.Checkbox name="example" label="" checked={selected} />
-          </Flexbox>
-          <Flexbox item container direction="column" grow={1} gutter={0}>
-            <Flexbox item>
-              <Typography type="secondary" color={t => t.color.text} weight="bold">
-                {option.label}
-              </Typography>
-              <Typography type="tertiary" color={t => t.color.text}>
-                {' '}
-                <span aria-hidden>&#183;</span> {option.accno}
-              </Typography>
-            </Flexbox>
-            <Typography type="caption" color={t => t.color.text}>
-              <Number value={option.amount.value} currency={option.amount.currency} />
-            </Typography>
-          </Flexbox>
-        </Flexbox>
-      </StyledBox>
-    );
-  };
-
-  return (
-    <Input.Select
-      reducer={multiselectReducer}
-      options={accountOptions}
-      components={{ SelectedValue: MultiSelectValue, ListItem: MultiSelectListItem }}
-      label="User account"
-      width="300px"
-      placeholder="Select account"
-      onChange={action('change')}
-    />
-  );
-};
-
-multiselectAccount.story = {
-  name: 'Multiselect account',
-};
-
-export const multiselectAccountWithSelectAll = () => {
-  // Reducer will handle selection/deselection part + select all
-  const multiselectReducer = (state: SelectState, incomingAction: Action) => {
-    if (incomingAction.type === actionTypes['Select.SelectValue']) {
-      if (incomingAction.payload && incomingAction.payload.selectAll) {
-        return { ...state, value: state.options };
-      }
-      return {
-        ...state,
-        value: [...state.value, incomingAction.payload],
-      };
-    }
-    if (incomingAction.type === 'Select.DeselectValue') {
-      if (incomingAction.payload && incomingAction.payload.selectAll) {
-        return { ...state, value: [] };
-      }
-      return {
-        ...state,
-        value: state.value.filter(x => !Object.is(x, incomingAction.payload) && !x.selectAll),
-      };
-    }
-    return Input.Select.defaults.reducer(state, incomingAction);
-  };
-
-  // SelectedValue
-  // Would be different for different use-cases
-  const MultiSelectValue = (_: any, ref: React.Ref<any>) => {
-    const [state] = useSelectReducer();
-    return (
-      <FlexedBox px={2} pr={8} ref={ref}>
-        {state.value.length === 0 ? state.placeholder : `Selected (${state.value.length})`}
-      </FlexedBox>
-    );
-  };
-
-  // prettier-ignore
-  const StyledBoxWithBorder = styled(StyledBox)`
-    ${p => !p.selectAll ? "" : `
-      border-bottom: 1px solid ${p.theme.color.divider};
-      `}
-    `;
-
-  const MultiSelectListItem = ({ index }: any, ref: any) => {
-    const [state] = useSelectReducer();
-    const option = state.options[index];
-    const selected = state.value.includes(option);
-
-    return (
-      <StyledBoxWithBorder px={3} py={1} ref={ref} tabIndex={0} selectAll={option.selectAll}>
-        <Flexbox container alignItems="center" gutter={0} height={9}>
-          <Flexbox item container alignItems="center">
-            {/** TODO: revisit a11y here */}
-            <Input.Checkbox name="example" label="" checked={selected} />
-          </Flexbox>
-          <Flexbox item container direction="column" grow={1} gutter={0}>
-            <Flexbox item>
-              <Typography type="secondary" color={t => t.color.text} weight="bold">
-                {option.label}
-              </Typography>
-              {!option.selectAll && (
-                <Typography type="tertiary" color={t => t.color.text}>
-                  {' '}
-                  <span aria-hidden>&#183;</span> {option.accno}
-                </Typography>
-              )}
-            </Flexbox>
-            {!option.selectAll && (
-              <Typography type="caption" color={t => t.color.text}>
-                <Number value={option.amount.value} currency={option.amount.currency} />
-              </Typography>
-            )}
-          </Flexbox>
-        </Flexbox>
-      </StyledBoxWithBorder>
-    );
-  };
-
-  return (
-    <Input.Select
-      reducer={multiselectReducer}
-      options={[{ label: 'Select All', value: 'ALL', selectAll: true }, ...accountOptions]}
-      components={{ SelectedValue: MultiSelectValue, ListItem: MultiSelectListItem }}
-      label="User account"
-      width="300px"
-      placeholder="Select account"
-      onChange={action('change')}
-    />
-  );
-};
-
-multiselectAccountWithSelectAll.story = {
-  name: 'Multiselect account with select all',
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+  </>
+);
+export default {
+  title: 'Molecules | Input / Select',
+  parameters: {
+    docs: {
+      page: mdx,
+    },
+  },
 };

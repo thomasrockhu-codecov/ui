@@ -69,14 +69,26 @@ export type Theme = {
     label: RawColor['gray2'];
     /** cta */
     buy: RawColor['cta'] | RawColor['a11yCta'];
+    /** 3 percent darker cta */
+    buyActive: string;
     /** white */
     buttonText: RawColor['white'];
     /** cta */
     borderActive: RawColor['cta'] | RawColor['a11yCta'];
+    /** white */
+    bubbleBackground: RawColor['white'];
+    /** gray4 */
+    bubbleBorder: RawColor['gray4'];
     /** negative */
     sell: RawColor['negative'] | RawColor['a11yNegative'];
+    /** 3 percent darker negative */
+    sellActive: string;
     /** cta */
     cta: RawColor['cta'] | RawColor['a11yCta'];
+    /** creditsPiePrimary */
+    creditsPiePrimary: RawColor['complementaryPink1'];
+    /** creditsPieSecondary */
+    creditsPieSecondary: RawColor['complementaryPink2'];
     /** positive */
     positive: RawColor['positive'] | RawColor['a11yPositive'];
     /** negative */
@@ -145,6 +157,8 @@ export type Theme = {
     orderDepthBackground: RawColor['gray6'];
     /** gray5 */
     orderDepthDarkBackground: RawColor['gray5'];
+    /** complementaryBlue2 */
+    loanRatesGraphColor2: RawColor['complementaryBlue2'];
   };
 
   spacing: {

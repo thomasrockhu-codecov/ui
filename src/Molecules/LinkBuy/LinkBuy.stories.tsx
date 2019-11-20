@@ -1,6 +1,6 @@
 import React from 'react';
 import { BrowserRouter } from 'react-router-dom';
-import { Typography, LinkBuy } from '../..';
+import { LinkBuy } from '../..';
 
 export default {
   title: 'Molecules | LinkBuy',
@@ -12,9 +12,7 @@ export default {
 export const linkBuy = () => {
   return (
     <BrowserRouter>
-      <Typography type="primary">
-        <LinkBuy to="somewhere">Buy</LinkBuy>
-      </Typography>
+      <LinkBuy to="somewhere">Buy</LinkBuy>
     </BrowserRouter>
   );
 };
@@ -26,9 +24,7 @@ linkBuy.story = {
 export const linkBuyDisabled = () => {
   return (
     <BrowserRouter>
-      <Typography type="primary">
-        <LinkBuy disabled>Buy</LinkBuy>
-      </Typography>
+      <LinkBuy disabled>Buy</LinkBuy>
     </BrowserRouter>
   );
 };
@@ -40,11 +36,9 @@ linkBuyDisabled.story = {
 export const linkBuyWithRelAsNofollow = () => {
   return (
     <BrowserRouter>
-      <Typography type="primary">
-        <LinkBuy to="somewhere" rel="nofollow">
-          Buy
-        </LinkBuy>
-      </Typography>
+      <LinkBuy to="somewhere" rel="nofollow">
+        Buy
+      </LinkBuy>
     </BrowserRouter>
   );
 };

@@ -3,6 +3,7 @@ export type InnerProps = {
   onClose?: Function;
   title?: string;
   footer?: React.ReactNode;
+  hideClose?: boolean;
 };
 
 export type DialogProps = {

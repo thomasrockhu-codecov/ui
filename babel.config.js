@@ -32,10 +32,18 @@ module.exports = api => {
   return {
     comments: false,
     presets,
-    plugins,
     env: {
+      production: {
+        plugins: [...plugins, ['react-remove-properties', { properties: ['data-testid'] }]],
+      },
+      esm: {
+        plugins: [...plugins, ['react-remove-properties', { properties: ['data-testid'] }]],
+      },
+      development: {
+        plugins,
+      },
       test: {
-        plugins: ['require-context-hook', '@babel/plugin-transform-runtime'],
+        plugins: [...plugins, 'require-context-hook', '@babel/plugin-transform-runtime'],
       },
     },
     ignore,

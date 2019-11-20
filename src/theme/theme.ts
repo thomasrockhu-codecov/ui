@@ -111,12 +111,23 @@ export const createTheme = (config: ThemeConfig = {}): Theme => {
       background: rawColor.gray7,
       backgroundBlack: rawColor.black,
       backgroundDark: rawColor.gray0,
+      bubbleBackground: rawColor.white,
+      bubbleBorder: rawColor.gray4,
       buttonSecondaryBackground: rawColor.white,
       buttonText: rawColor.white,
       buy: a11yColors ? rawColor.a11yCta : rawColor.cta,
+      buyActive: a11yColors
+        ? Color(rawColor.a11yCta)
+            .darken(0.3)
+            .string()
+        : Color(rawColor.cta)
+            .darken(0.3)
+            .string(),
       borderActive: a11yColors ? rawColor.a11yCta : rawColor.cta,
       card: rawColor.white,
       cta: a11yColors ? rawColor.a11yCta : rawColor.cta,
+      creditsPiePrimary: rawColor.complementaryPink1,
+      creditsPieSecondary: rawColor.complementaryPink2,
       /** @deprecated  */ disabled: rawColor.gray3,
       disabledText: rawColor.gray3,
       disabledBackground: rawColor.gray6,
@@ -131,6 +142,13 @@ export const createTheme = (config: ThemeConfig = {}): Theme => {
       negative: a11yColors ? rawColor.a11yNegative : rawColor.negative,
       positive: a11yColors ? rawColor.a11yPositive : rawColor.positive,
       sell: a11yColors ? rawColor.a11yNegative : rawColor.negative,
+      sellActive: a11yColors
+        ? Color(rawColor.a11yNegative)
+            .darken(0.3)
+            .string()
+        : Color(rawColor.negative)
+            .darken(0.3)
+            .string(),
       shadowCard: Color(rawColor.black)
         .alpha(0.03)
         .rgb()
@@ -167,6 +185,7 @@ export const createTheme = (config: ThemeConfig = {}): Theme => {
       generationSavingsTimelineColor4: rawColor.complementaryBlue1,
       orderDepthBackground: rawColor.gray6,
       orderDepthDarkBackground: rawColor.gray5,
+      loanRatesGraphColor2: rawColor.complementaryBlue2,
     },
     media: {
       between: (s1, s2) => {
