@@ -313,7 +313,7 @@ linkLookingLikeAButton.story = {
 
 export const linkLookingLikeAButtonThatIsFullWidth = () => (
   <HashRouter>
-    <Button to="www.google.com" onClick={action('clicked')} fullWidth>
+    <Button to="/overview" onClick={action('clicked')} fullWidth>
       Button
     </Button>
   </HashRouter>
@@ -346,7 +346,15 @@ linksLookingLikeButtonsComposedInAGroup.story = {
 
 export const linkLookingLikeAButtonWithRelAsNofollow = () => (
   <HashRouter>
-    <Button to="www.google.com" rel="nofollow" onClick={action('clicked')} fullWidth>
+    <Button to="/overview" rel="nofollow" onClick={action('clicked')} fullWidth>
+      Button
+    </Button>
+  </HashRouter>
+);
+
+export const externalLinkLookingLikeAButton = () => (
+  <HashRouter>
+    <Button to="//www.google.com" external rel="nofollow" onClick={action('clicked')} fullWidth>
       Button
     </Button>
   </HashRouter>
@@ -362,7 +370,7 @@ export const disabledLinkLookingLikeAButton = () => (
       fullWidth
       onClick={action('clicked')}
       size="m"
-      to="www.google.com"
+      to="/overview"
       variant="secondary"
       disabled
     >
@@ -384,7 +392,7 @@ export const linkLookingLikeAButtonWithWithColors = () => (
           {
             title: 't => t.color.cta',
             component: (
-              <Button to="www.google.com" color={t => t.color.cta} onClick={action('clicked')}>
+              <Button to="/overview" color={t => t.color.cta} onClick={action('clicked')}>
                 Button
               </Button>
             ),
@@ -392,7 +400,7 @@ export const linkLookingLikeAButtonWithWithColors = () => (
           {
             title: 't => t.color.negative',
             component: (
-              <Button to="www.google.com" color={t => t.color.negative} onClick={action('clicked')}>
+              <Button to="/overview" color={t => t.color.negative} onClick={action('clicked')}>
                 Button
               </Button>
             ),
@@ -407,7 +415,7 @@ export const linkLookingLikeAButtonWithWithColors = () => (
             component: (
               <Button
                 variant="secondary"
-                to="www.google.com"
+                to="/overview"
                 color={t => t.color.cta}
                 onClick={action('clicked')}
               >
@@ -420,7 +428,7 @@ export const linkLookingLikeAButtonWithWithColors = () => (
             component: (
               <Button
                 variant="secondary"
-                to="www.google.com"
+                to="/overview"
                 color={t => t.color.negative}
                 onClick={action('clicked')}
               >
