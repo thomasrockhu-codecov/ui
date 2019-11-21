@@ -1,3 +1,11 @@
+# [2.3.0](https://github.com/nordnet/ui/compare/v2.2.2...v2.3.0) (2019-11-21)
+
+
+### Features
+
+* **button:** align external link props with link component ([20ae338](https://github.com/nordnet/ui/commit/20ae338))
+* **button:** external link ([b9c5e97](https://github.com/nordnet/ui/commit/b9c5e97))
+
 ## [2.2.2](https://github.com/nordnet/ui/compare/v2.2.1...v2.2.2) (2019-11-20)
 
 
