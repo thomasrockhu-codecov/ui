@@ -208,6 +208,7 @@ export const Button: ButtonComponent = props => {
     id,
     color,
     as,
+    external,
   } = props;
   const toAndDisabledAreNotPresentTogether = !(to && disabled);
   const trackContext = useContext(TrackingContext);
@@ -232,7 +233,6 @@ export const Button: ButtonComponent = props => {
     return (
       <StyledLink
         className={className}
-        to={to}
         rel={rel}
         onClick={trackClick}
         size={size}
@@ -240,7 +240,13 @@ export const Button: ButtonComponent = props => {
         fullWidth={fullWidth}
         colorFn={color}
         id={id}
-        as={as}
+        {...(external
+          ? // TODO: unify these parts with link
+            { as: 'a' as 'a', href: to, target: '_blank', rel: 'noopener noreferrer nofollow' }
+          : {
+              to,
+              as,
+            })}
       >
         <Typography type={size === 'l' ? 'primary' : 'secondary'} color="inherit">
           {children}
@@ -248,7 +254,11 @@ export const Button: ButtonComponent = props => {
       </StyledLink>
     );
   }
-
+  assert(
+    Boolean(external),
+    'You have `external` prop on what appears to be Button component. This prop will be omitted. ',
+    { level: 'warn' },
+  );
   return (
     <StyledButton
       id={id}
