@@ -877,6 +877,43 @@ Array [
       viewBox="0 0 24 24"
     >
       <path
+        d="M0 0h26v2H0V0zm0 16h26v2H0v-2zm0-8h26v2H0V8z"
+        fillRule="evenodd"
+      />
+    </svg>
+  </div>,
+  .c0 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 20px;
+  height: 20px;
+  fill: #0046FF;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
+}
+
+<div
+    style={
+      Object {
+        "display": "inline-block",
+        "outline": "1px dashed #bbb",
+      }
+    }
+  >
+    <svg
+      aria-hidden="true"
+      className="c0"
+      focusable="false"
+      preserveAspectRatio="xMidYMid meet"
+      role="presentation"
+      size={5}
+      viewBox="0 0 24 24"
+    >
+      <path
         d="M0 22h24v2H0v-2zM12.836 0v15.338l6.333-6.383v3.326l-7.5 7.557-7.5-7.558V8.955l6.334 6.382V0h2.333z"
         fillRule="evenodd"
       />
@@ -2664,6 +2701,41 @@ exports[`Storyshots Atoms | Icon Available Icons 1`] = `
           <title>
             All countries
           </title>
+        </svg>
+      </div>
+    </div>
+  </div>
+  <div
+    className="c1"
+    direction="row"
+  >
+    <div
+      className="c2"
+    >
+      Hamburger
+    </div>
+    <div>
+      <div
+        style={
+          Object {
+            "display": "inline-block",
+            "outline": "1px dashed #bbb",
+          }
+        }
+      >
+        <svg
+          aria-hidden="true"
+          className="c3"
+          focusable="false"
+          preserveAspectRatio="xMidYMid meet"
+          role="presentation"
+          size={5}
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M0 0h26v2H0V0zm0 16h26v2H0v-2zm0-8h26v2H0V8z"
+            fillRule="evenodd"
+          />
         </svg>
       </div>
     </div>
