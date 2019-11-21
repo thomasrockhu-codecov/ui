@@ -241,7 +241,8 @@ export const Button: ButtonComponent = props => {
         colorFn={color}
         id={id}
         {...(external
-          ? { as: 'a' as 'a', href: to }
+          ? // TODO: unify these parts with link
+            { as: 'a' as 'a', href: to, target: '_blank', rel: 'noopener noreferrer nofollow' }
           : {
               to,
               as,

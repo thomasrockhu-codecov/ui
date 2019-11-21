@@ -2639,7 +2639,8 @@ exports[`Storyshots Molecules | Button External Link Looking Like A Button 1`] =
   className="c0"
   href="//www.google.com"
   onClick={[Function]}
-  rel="nofollow"
+  rel="noopener noreferrer nofollow"
+  target="_blank"
 >
   <span
     className="c1"
