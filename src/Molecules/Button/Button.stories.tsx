@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { action } from '@storybook/addon-actions';
 import { HashRouter } from 'react-router-dom';
 import MD from 'react-markdown';
@@ -221,6 +221,161 @@ export const buttonWithSizeModified = () => (
 
 buttonWithSizeModified.story = {
   name: 'Button with size modified',
+};
+
+export const buttonWithLoadingState = () => {
+  const LoadingExample = () => {
+    const [loading, setLoading] = useState(true);
+    const toggleLoading = () => setLoading(!loading);
+
+    return (
+      <>
+        <Display
+          title="Primary"
+          horizontal
+          items={[
+            {
+              title: 'Small',
+              component: (
+                <Button size="s" loading={loading}>
+                  Small
+                </Button>
+              ),
+            },
+            {
+              title: 'Medium',
+              component: (
+                <Button size="m" loading={loading}>
+                  Medium
+                </Button>
+              ),
+            },
+            {
+              title: 'Large',
+              component: (
+                <Button size="l" loading={loading}>
+                  Large
+                </Button>
+              ),
+            },
+          ]}
+        />
+        <Display
+          title="Primary with custom color"
+          horizontal
+          items={[
+            {
+              title: 'Small',
+              component: (
+                <Button size="s" color={t => t.color.negative} loading={loading}>
+                  Small
+                </Button>
+              ),
+            },
+            {
+              title: 'Medium',
+              component: (
+                <Button size="m" color={t => t.color.negative} loading={loading}>
+                  Medium
+                </Button>
+              ),
+            },
+            {
+              title: 'Large',
+              component: (
+                <Button size="l" color={t => t.color.negative} loading={loading}>
+                  Large
+                </Button>
+              ),
+            },
+          ]}
+        />
+        <Display
+          title="Secondary"
+          horizontal
+          items={[
+            {
+              title: 'Small',
+              component: (
+                <Button size="s" variant="secondary" loading={loading}>
+                  Small
+                </Button>
+              ),
+            },
+            {
+              title: 'Medium',
+              component: (
+                <Button size="m" variant="secondary" loading={loading}>
+                  Medium
+                </Button>
+              ),
+            },
+            {
+              title: 'Large',
+              component: (
+                <Button size="l" variant="secondary" loading={loading}>
+                  Large
+                </Button>
+              ),
+            },
+          ]}
+        />
+        <Display
+          title="Secondary with custom color"
+          horizontal
+          items={[
+            {
+              title: 'Small',
+              component: (
+                <Button
+                  size="s"
+                  variant="secondary"
+                  color={t => t.color.negative}
+                  loading={loading}
+                >
+                  Small
+                </Button>
+              ),
+            },
+            {
+              title: 'Medium',
+              component: (
+                <Button
+                  size="m"
+                  variant="secondary"
+                  color={t => t.color.negative}
+                  loading={loading}
+                >
+                  Medium
+                </Button>
+              ),
+            },
+            {
+              title: 'Large',
+              component: (
+                <Button
+                  size="l"
+                  variant="secondary"
+                  color={t => t.color.negative}
+                  loading={loading}
+                >
+                  Large
+                </Button>
+              ),
+            },
+          ]}
+        />
+        <button type="button" onClick={toggleLoading}>
+          toggle loading
+        </button>
+      </>
+    );
+  };
+  return <LoadingExample />;
+};
+
+buttonWithLoadingState.story = {
+  name: 'Button with loading state',
 };
 
 export const buttonWithTypeModified = () => (

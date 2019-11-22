@@ -720,10 +720,12 @@ exports[`Storyshots Molecules | Modal Footer Story 1`] = `
                   onClick={[Function]}
                   type="button"
                 >
-                  <span
-                    className="c14"
-                  >
-                    Button
+                  <span>
+                    <span
+                      className="c14"
+                    >
+                      Button
+                    </span>
                   </span>
                 </button>
               </div>

@@ -23,6 +23,8 @@ export type ButtonProps = {
   colorFn?: ColorFn;
   id?: string;
   as?: any;
+  /** @default false */
+  loading?: boolean;
 };
 
 export type ButtonComponent = React.FC<ButtonProps>;

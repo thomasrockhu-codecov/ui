@@ -3407,10 +3407,12 @@ exports[`Storyshots Molecules | Input / Text Simple Login Form 1`] = `
       onClick={[Function]}
       type="button"
     >
-      <span
-        className="c16"
-      >
-        Login
+      <span>
+        <span
+          className="c16"
+        >
+          Login
+        </span>
       </span>
     </button>
   </div>
