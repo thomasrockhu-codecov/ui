@@ -751,6 +751,213 @@ exports[`Storyshots Molecules | Modal Footer Story 1`] = `
 </div>
 `;
 
+exports[`Storyshots Molecules | Modal Hide Close 1`] = `
+.c3 {
+  margin-bottom: 8px;
+}
+
+.c5 {
+  box-sizing: border-box;
+}
+
+.c2 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c4 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: baseline;
+  -webkit-box-align: baseline;
+  -ms-flex-align: baseline;
+  align-items: baseline;
+}
+
+.c8 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.c6 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 1.2;
+}
+
+.c1 {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 2;
+}
+
+.c7 {
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.c0 {
+  background-image: linear-gradient(#00D200,#FF1900);
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 20px;
+  height: 200vh;
+}
+
+@media (min-width:760px) {
+  .c6 {
+    font-size: 24px;
+    line-height: 1.1666666666666667;
+  }
+}
+
+@media (min-width:760px) {
+  .c1 {
+    background-color: rgba(110,110,105,0.63);
+  }
+}
+
+@media (min-width:760px) {
+  .c7 {
+    max-height: 50vh;
+  }
+}
+
+<div>
+  <button
+    onClick={[Function]}
+    type="button"
+  >
+    Open modal
+  </button>
+  <div
+    className="c0"
+  />
+  <portal-dummy>
+    <div
+      data-focus-guard={true}
+      style={
+        Object {
+          "height": "0px",
+          "left": "1px",
+          "overflow": "hidden",
+          "padding": 0,
+          "position": "fixed",
+          "top": "1px",
+          "width": "1px",
+        }
+      }
+      tabIndex={0}
+    />
+    <div
+      data-focus-guard={true}
+      style={
+        Object {
+          "height": "0px",
+          "left": "1px",
+          "overflow": "hidden",
+          "padding": 0,
+          "position": "fixed",
+          "top": "1px",
+          "width": "1px",
+        }
+      }
+      tabIndex={1}
+    />
+    <div
+      data-focus-lock-disabled={false}
+      onBlur={[Function]}
+      onFocus={[Function]}
+    >
+      <div
+        onScrollCapture={[Function]}
+        onTouchMoveCapture={[Function]}
+        onWheelCapture={[Function]}
+      >
+        <div
+          className="c1 c2"
+        >
+          <div>
+            <div
+              className="c3"
+            >
+              <div
+                className="c4"
+              >
+                <div
+                  className="c5"
+                >
+                  <h2
+                    className="c6"
+                    type="title2"
+                  >
+                    Dialog information
+                  </h2>
+                </div>
+              </div>
+            </div>
+            <div
+              className="c7"
+            >
+              <div
+                className="c3"
+              >
+                <p
+                  className="c8"
+                  type="primary"
+                >
+                  The close button in the upper right corner is now hidden because the prop hideClose is true.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      data-focus-guard={true}
+      style={
+        Object {
+          "height": "0px",
+          "left": "1px",
+          "overflow": "hidden",
+          "padding": 0,
+          "position": "fixed",
+          "top": "1px",
+          "width": "1px",
+        }
+      }
+      tabIndex={0}
+    />
+  </portal-dummy>
+</div>
+`;
+
 exports[`Storyshots Molecules | Modal Uncontrolled Behavior 1`] = `
 .c3 {
   margin-bottom: 8px;

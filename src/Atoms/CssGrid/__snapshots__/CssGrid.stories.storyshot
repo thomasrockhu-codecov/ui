@@ -602,7 +602,7 @@ exports[`Storyshots Atoms | CssGrid Css Grid With Different Layouts For Differen
   height: 100%;
 }
 
-@media (min-width:760px), {
+@media (min-width:760px) {
   .c0 {
     grid-template-areas: "left top sidebar" "left content sidebar" "left content sidebar";
     grid-template-rows: auto 1fr 1fr;
@@ -904,7 +904,7 @@ exports[`Storyshots Atoms | CssGrid Shown On Md Hidden On Small Screens 1`] = `
   height: 100%;
 }
 
-@media (min-width:976px), {
+@media (min-width:976px) {
   .c0 {
     grid-template-areas: "left" "top" "content";
     grid-template-rows: auto auto;
@@ -1060,7 +1060,7 @@ exports[`Storyshots Atoms | CssGrid Shown On Small Screen Sizes Hidden On Md 1`]
   height: 100%;
 }
 
-@media (min-width:976px), {
+@media (min-width:976px) {
   .c0 {
     grid-template-areas: "left" "content";
     grid-template-rows: auto auto;
