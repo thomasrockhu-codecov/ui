@@ -19,6 +19,7 @@ export type ButtonProps = {
   /** @default button */
   type?: 'button' | 'reset' | 'submit';
   to?: ReactRouterDomLinkProps['to'];
+  external?: boolean;
   rel?: string;
   colorFn?: ColorFn;
   id?: string;

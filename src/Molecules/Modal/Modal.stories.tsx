@@ -235,3 +235,42 @@ export const uncontrolledBehavior = () => {
 uncontrolledBehavior.story = {
   name: 'Uncontrolled behavior',
 };
+
+export const hideClose = () => {
+  const Example = () => {
+    const [open, setOpen] = useState(true);
+
+    const onOpen = () => {
+      setOpen(true);
+    };
+
+    const onClose = () => {
+      setOpen(false);
+    };
+
+    const hideCloseButton = true;
+
+    return (
+      <div>
+        <button type="button" onClick={onOpen}>
+          Open modal
+        </button>
+        <ScrollMaker />
+        {/* ScrollMaker is just used to show how the Modal locks scrolling when open */}
+        <Modal onClose={onClose} title="Dialog information" open={open} hideClose={hideCloseButton}>
+          <Box mb={2}>
+            <Typography type="primary" as="p">
+              The close button in the upper right corner is now hidden because the prop hideClose is
+              true.
+            </Typography>
+          </Box>
+        </Modal>
+      </div>
+    );
+  };
+  return <Example />;
+};
+
+hideClose.story = {
+  name: 'Hide Close button',
+};

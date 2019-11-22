@@ -66,6 +66,7 @@ export const ModalInner: React.FC<InnerProps> = ({
   title,
   onClose,
   footer,
+  hideClose = false,
 }) => {
   const [show, setShow] = useState(false);
   const escapePress = useKeyPress('Escape');
@@ -117,11 +118,13 @@ export const ModalInner: React.FC<InnerProps> = ({
                       </Typography>
                     </Flexbox>
                   )}
-                  <RightAlignedFlex item>
-                    <Button type="button" onClick={onClose}>
-                      <Icon.Cross size={5} title="Close this dialog" />
-                    </Button>
-                  </RightAlignedFlex>
+                  {!hideClose && (
+                    <RightAlignedFlex item>
+                      <Button type="button" onClick={onClose}>
+                        <Icon.Cross size={5} title="Close this dialog" />
+                      </Button>
+                    </RightAlignedFlex>
+                  )}
                 </Flexbox>
               </Box>
               <Content>{children}</Content>

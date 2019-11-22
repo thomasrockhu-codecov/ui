@@ -126,6 +126,8 @@ export const createTheme = (config: ThemeConfig = {}): Theme => {
       borderActive: a11yColors ? rawColor.a11yCta : rawColor.cta,
       card: rawColor.white,
       cta: a11yColors ? rawColor.a11yCta : rawColor.cta,
+      creditsPiePrimary: rawColor.complementaryPink1,
+      creditsPieSecondary: rawColor.complementaryPink2,
       /** @deprecated  */ disabled: rawColor.gray3,
       disabledText: rawColor.gray3,
       disabledBackground: rawColor.gray6,

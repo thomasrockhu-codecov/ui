@@ -1,3 +1,40 @@
+# [2.3.0](https://github.com/nordnet/ui/compare/v2.2.2...v2.3.0) (2019-11-21)
+
+
+### Features
+
+* **button:** align external link props with link component ([20ae338](https://github.com/nordnet/ui/commit/20ae338))
+* **button:** external link ([b9c5e97](https://github.com/nordnet/ui/commit/b9c5e97))
+
+## [2.2.2](https://github.com/nordnet/ui/compare/v2.2.1...v2.2.2) (2019-11-20)
+
+
+### Bug Fixes
+
+* **storybook:** addon-docs regression bug, using older version for now ([6cf7ee5](https://github.com/nordnet/ui/commit/6cf7ee5))
+
+## [2.2.1](https://github.com/nordnet/ui/compare/v2.2.0...v2.2.1) (2019-11-20)
+
+
+### Bug Fixes
+
+* 🐛 change height prop to work in media style props ([8a76e1f](https://github.com/nordnet/ui/commit/8a76e1f))
+* **cssgrid:** proper fix for comma join in media queries ([5c1cb21](https://github.com/nordnet/ui/commit/5c1cb21))
+
+# [2.2.0](https://github.com/nordnet/ui/compare/v2.1.2...v2.2.0) (2019-11-18)
+
+
+### Features
+
+* add semantics for comp pink 1 and 2 ([9dc2d0f](https://github.com/nordnet/ui/commit/9dc2d0f))
+
+## [2.1.2](https://github.com/nordnet/ui/compare/v2.1.1...v2.1.2) (2019-11-15)
+
+
+### Bug Fixes
+
+* optionl prop to remove cross for closing modal ([d938f9e](https://github.com/nordnet/ui/commit/d938f9e))
+
 ## [2.1.1](https://github.com/nordnet/ui/compare/v2.1.0...v2.1.1) (2019-11-13)
 
 

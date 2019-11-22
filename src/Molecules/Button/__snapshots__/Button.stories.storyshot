@@ -5251,6 +5251,77 @@ exports[`Storyshots Molecules | Button Disabled Link Looking Like A Button 1`] =
 </button>
 `;
 
+exports[`Storyshots Molecules | Button External Link Looking Like A Button 1`] = `
+.c1 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: inherit;
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c0 {
+  position: relative;
+  box-sizing: border-box;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  padding: 4px 12px;
+  min-height: 32px;
+  background-color: #0046FF;
+  color: #FFFFFF;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c0::before {
+  content: '';
+  display: block;
+  position: absolute;
+  border: 2px solid transparent;
+  top: 0;
+  left: 0;
+  width: calc(100% - 4px);
+  height: calc(100% - 4px);
+}
+
+.c0:hover {
+  background-color: hsl(223.5,100%,45%);
+}
+
+.c0:active {
+  background-color: hsl(223.5,100%,40%);
+}
+
+<a
+  className="c0"
+  href="//www.google.com"
+  onClick={[Function]}
+  rel="noopener noreferrer nofollow"
+  size="m"
+  target="_blank"
+>
+  <span>
+    <span
+      className="c1"
+    >
+      Button
+    </span>
+  </span>
+</a>
+`;
+
 exports[`Storyshots Molecules | Button Link Looking Like A Button 1`] = `
 .c4 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
@@ -5524,7 +5595,7 @@ exports[`Storyshots Molecules | Button Link Looking Like A Button That Is Full W
 
 <a
   className="c0"
-  href="#/www.google.com"
+  href="#/overview"
   onClick={[Function]}
   size="m"
 >
@@ -5593,7 +5664,7 @@ exports[`Storyshots Molecules | Button Link Looking Like A Button With Rel As No
 
 <a
   className="c0"
-  href="#/www.google.com"
+  href="#/overview"
   onClick={[Function]}
   rel="nofollow"
   size="m"
@@ -5805,7 +5876,7 @@ Array [
       <div>
         <a
           className="c3"
-          href="#/www.google.com"
+          href="#/overview"
           onClick={[Function]}
           size="m"
         >
@@ -5831,7 +5902,7 @@ Array [
       <div>
         <a
           className="c5"
-          href="#/www.google.com"
+          href="#/overview"
           onClick={[Function]}
           size="m"
         >
@@ -6064,7 +6135,7 @@ Array [
       <div>
         <a
           className="c3"
-          href="#/www.google.com"
+          href="#/overview"
           onClick={[Function]}
           size="m"
         >
@@ -6090,7 +6161,7 @@ Array [
       <div>
         <a
           className="c5"
-          href="#/www.google.com"
+          href="#/overview"
           onClick={[Function]}
           size="m"
         >
