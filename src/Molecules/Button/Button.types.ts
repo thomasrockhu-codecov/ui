@@ -24,7 +24,6 @@ export type ButtonProps = {
   colorFn?: ColorFn;
   id?: string;
   as?: any;
-  /** @default false */
   loading?: boolean;
 };
 

@@ -64,7 +64,7 @@ export const Button: ButtonComponent = props => {
     id,
     color,
     as,
-    loading = false,
+    loading,
     external,
   } = props;
   const typeIsNotPresent = typeof type === 'undefined';
