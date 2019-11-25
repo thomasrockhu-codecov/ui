@@ -1,3 +1,10 @@
+## [2.4.1](https://github.com/nordnet/ui/compare/v2.4.0...v2.4.1) (2019-11-25)
+
+
+### Bug Fixes
+
+* **number:** getRoundedValue toPrecision -> toFixed ([cc636b3](https://github.com/nordnet/ui/commit/cc636b3))
+
 # [2.4.0](https://github.com/nordnet/ui/compare/v2.3.0...v2.4.0) (2019-11-25)
 
 
