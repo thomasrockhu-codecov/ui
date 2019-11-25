@@ -136,7 +136,7 @@ const getTypeStyles = (props: ThemedStyledProps<Props, Theme>) => {
 
   const getLineHeight = (mode: Exclude<FontProps, null>) => {
     if (lineHeight) {
-      return 'inherit';
+      return 'line-height: inherit';
     }
 
     return `${mode.lineHeight ? `line-height: ${mode.lineHeight / mode.size};` : ''}`;

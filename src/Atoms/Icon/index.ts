@@ -20,6 +20,7 @@ import { EyeWithPlusActive } from './components/EyeWithPlusActive';
 import { File } from './components/File';
 import { Flag } from './components/Flag';
 import { Globe } from './components/Globe';
+import { Hamburger } from './components/Hamburger';
 import { Import } from './components/Import';
 import { InfoCircle } from './components/InfoCircle';
 import { Maximize } from './components/Maximize';
@@ -64,6 +65,7 @@ export default {
   File,
   Flag,
   Globe,
+  Hamburger,
   Import,
   InfoCircle,
   Maximize,
