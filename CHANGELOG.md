@@ -1,3 +1,21 @@
+# [2.4.0](https://github.com/nordnet/ui/compare/v2.3.0...v2.4.0) (2019-11-25)
+
+
+### Bug Fixes
+
+* 🐛 fix viewbox for hamburger icon making it centered ([d2e0fbe](https://github.com/nordnet/ui/commit/d2e0fbe))
+* 🐛 omit certain props from icon svg ([b7a3a2d](https://github.com/nordnet/ui/commit/b7a3a2d))
+* 🐛 remove external prop from a tags ([fed596f](https://github.com/nordnet/ui/commit/fed596f))
+* lineHeight inherit now works as intended ([b01ade5](https://github.com/nordnet/ui/commit/b01ade5))
+
+
+### Features
+
+* 🎸 add cms prop to Link for generating cms links ([e90bb68](https://github.com/nordnet/ui/commit/e90bb68))
+* 🎸 Add color prop to Link ([4e34634](https://github.com/nordnet/ui/commit/4e34634))
+* 🎸 add hamburger icon ([208ac0c](https://github.com/nordnet/ui/commit/208ac0c))
+* 🎸 add menu colors ([f1ad0ac](https://github.com/nordnet/ui/commit/f1ad0ac))
+
 # [2.3.0](https://github.com/nordnet/ui/compare/v2.2.2...v2.3.0) (2019-11-21)
 
 
