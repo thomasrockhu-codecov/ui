@@ -161,14 +161,6 @@ export const buttonWithSizeModified = () => (
       horizontal
       items={[
         {
-          title: 'Small',
-          component: (
-            <Button size="s" onClick={action('clickSmall')}>
-              Small
-            </Button>
-          ),
-        },
-        {
           title: 'Medium',
           component: (
             <Button size="m" onClick={action('clickMedium')}>
@@ -190,14 +182,6 @@ export const buttonWithSizeModified = () => (
       title="Secondary"
       horizontal
       items={[
-        {
-          title: 'Small',
-          component: (
-            <Button size="s" variant="secondary" onClick={action('clickSmall')}>
-              Small
-            </Button>
-          ),
-        },
         {
           title: 'Medium',
           component: (
@@ -235,14 +219,6 @@ export const buttonWithLoadingState = () => {
           horizontal
           items={[
             {
-              title: 'Small',
-              component: (
-                <Button size="s" loading={loading}>
-                  Small
-                </Button>
-              ),
-            },
-            {
               title: 'Medium',
               component: (
                 <Button size="m" loading={loading}>
@@ -264,14 +240,6 @@ export const buttonWithLoadingState = () => {
           title="Primary with custom color"
           horizontal
           items={[
-            {
-              title: 'Small',
-              component: (
-                <Button size="s" color={t => t.color.negative} loading={loading}>
-                  Small
-                </Button>
-              ),
-            },
             {
               title: 'Medium',
               component: (
@@ -295,14 +263,6 @@ export const buttonWithLoadingState = () => {
           horizontal
           items={[
             {
-              title: 'Small',
-              component: (
-                <Button size="s" variant="secondary" loading={loading}>
-                  Small
-                </Button>
-              ),
-            },
-            {
               title: 'Medium',
               component: (
                 <Button size="m" variant="secondary" loading={loading}>
@@ -324,19 +284,6 @@ export const buttonWithLoadingState = () => {
           title="Secondary with custom color"
           horizontal
           items={[
-            {
-              title: 'Small',
-              component: (
-                <Button
-                  size="s"
-                  variant="secondary"
-                  color={t => t.color.negative}
-                  loading={loading}
-                >
-                  Small
-                </Button>
-              ),
-            },
             {
               title: 'Medium',
               component: (
@@ -504,6 +451,10 @@ export const linkLookingLikeAButtonWithRelAsNofollow = () => (
   </HashRouter>
 );
 
+linkLookingLikeAButtonWithRelAsNofollow.story = {
+  name: 'Link looking like a button with rel as nofollow',
+};
+
 export const externalLinkLookingLikeAButton = () => (
   <HashRouter>
     <Button to="//www.google.com" external rel="nofollow" onClick={action('clicked')} fullWidth>
@@ -512,8 +463,8 @@ export const externalLinkLookingLikeAButton = () => (
   </HashRouter>
 );
 
-linkLookingLikeAButtonWithRelAsNofollow.story = {
-  name: 'Link looking like a button with rel as nofollow',
+externalLinkLookingLikeAButton.story = {
+  name: 'External link looking like a button',
 };
 
 export const disabledLinkLookingLikeAButton = () => (

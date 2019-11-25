@@ -7,7 +7,10 @@ type ColorFn = (t: Theme) => Colors['cta'] | Colors['negative'];
 export type ButtonProps = {
   /** @default primary */
   variant?: 'primary' | 'secondary' | 'neutral';
-  /** @default m */
+  /**
+   * @default m
+   * @deprecated s
+   */
   size?: 's' | 'm' | 'l';
   /** @default false */
   fullWidth?: boolean;

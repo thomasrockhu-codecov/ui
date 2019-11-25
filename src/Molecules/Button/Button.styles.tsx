@@ -3,17 +3,14 @@ import Color from 'color';
 import { ButtonProps } from './Button.types';
 
 const HEIGHT = {
-  s: 6,
   m: 8,
   l: 10,
 };
 const PADDING_VERTICAL = {
-  s: 0,
   m: 1,
   l: 2,
 };
 const PADDING_HORIZONTAL = {
-  s: 2,
   m: 3,
   l: 4,
 };

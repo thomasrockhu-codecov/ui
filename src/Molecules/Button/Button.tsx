@@ -67,7 +67,7 @@ export const Button: ButtonComponent = props => {
     loading,
     external,
   } = props;
-  const typeIsNotPresent = typeof type === 'undefined';
+  const externalIsNotPresent = typeof external === 'undefined';
   const toAndDisabledAreNotPresentTogether = !(to && disabled);
   const trackContext = useContext(TrackingContext);
   const trackClick = (e: React.MouseEvent<Element, MouseEvent>) => {
@@ -86,18 +86,20 @@ export const Button: ButtonComponent = props => {
   }
 
   assert(
+    size === 'm' || size === 'l',
+    "Button: size 's' is deprecated, please use either 'm' or 'l'.",
+    {
+      level: 'warn',
+    },
+  );
+
+  assert(
     toAndDisabledAreNotPresentTogether,
     "You're using `to` prop together with `disabled` prop. `Disabled` prop won't be propagated to the dom node, because <a> element can't be disabled",
     { level: 'warn' },
   );
 
   if (to && !disabled) {
-    assert(
-      typeIsNotPresent,
-      "Button: You're using `type` prop together with `to` prop. Link dont have `type` that's why it's omitted",
-      { level: 'warn' },
-    );
-
     return (
       <StyledLink
         className={className}
@@ -123,7 +125,7 @@ export const Button: ButtonComponent = props => {
     );
   }
   assert(
-    Boolean(external),
+    externalIsNotPresent,
     'You have `external` prop on what appears to be Button component. This prop will be omitted. ',
     { level: 'warn' },
   );
