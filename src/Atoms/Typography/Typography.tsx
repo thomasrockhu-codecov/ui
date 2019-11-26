@@ -150,7 +150,7 @@ const getTypeStyles = (props: ThemedStyledProps<Props, Theme>) => {
   );
 
   return `
-    font-weight ${
+    font-weight: ${
       weight && allowedWeights.includes(weight) ? WEIGHTS[weight] : WEIGHTS[defaultWeight]
     };
     ${getFontSize(mobile)}
