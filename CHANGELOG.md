@@ -1,3 +1,10 @@
+## [2.5.1](https://github.com/nordnet/ui/compare/v2.5.0...v2.5.1) (2019-11-26)
+
+
+### Bug Fixes
+
+* **typography:** line-height and weight were broken in css ([a952eab](https://github.com/nordnet/ui/commit/a952eab))
+
 # [2.5.0](https://github.com/nordnet/ui/compare/v2.4.1...v2.5.0) (2019-11-26)
 
 
