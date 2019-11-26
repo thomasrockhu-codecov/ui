@@ -169,6 +169,36 @@ export type Theme = {
     menuAccent4: RawColor['brandPink'];
     /** brandBlue */
     menuAccent5: RawColor['brandBlue'];
+    /** brandBlue */
+    barChartColor1: RawColor['brandBlue'];
+    /** complementaryBlue2 */
+    barChartColor2: RawColor['complementaryBlue2'];
+    /** complementaryBlue1 */
+    barChartColor3: RawColor['complementaryBlue1'];
+    /** complementaryGreen1 */
+    barChartColor4: RawColor['complementaryGreen1'];
+    /** complementaryPink1 */
+    barChartColor5: RawColor['complementaryPink1'];
+    /** index */
+    barChartColor6: RawColor['index'];
+    /** complementaryGreen1 */
+    barChartColor7: RawColor['complementaryGreen1'];
+    /** brandGreen */
+    columnChartColor1: RawColor['brandGreen'];
+    /** complementaryGreen2 */
+    columnChartColor2: RawColor['complementaryGreen2'];
+    /** complementaryGreen1 */
+    columnChartColor3: RawColor['complementaryGreen1'];
+    /** complementaryTurquoise1 */
+    columnChartColor4: RawColor['complementaryTurquoise1'];
+    /** complementaryTurquoise2 */
+    columnChartColor5: RawColor['complementaryTurquoise2'];
+    /** complementaryPink2 */
+    pieChartColor1: RawColor['complementaryPink2'];
+    /** brandPink */
+    pieChartColor2: RawColor['brandPink'];
+    /** gray4 */
+    pieChartColor3: RawColor['gray4'];
   };
 
   spacing: {
