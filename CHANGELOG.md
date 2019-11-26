@@ -1,3 +1,10 @@
+# [2.5.0](https://github.com/nordnet/ui/compare/v2.4.1...v2.5.0) (2019-11-26)
+
+
+### Features
+
+* 🎸 add new colors to be used in charts ([bfddba4](https://github.com/nordnet/ui/commit/bfddba4))
+
 ## [2.4.1](https://github.com/nordnet/ui/compare/v2.4.0...v2.4.1) (2019-11-25)
 
 
