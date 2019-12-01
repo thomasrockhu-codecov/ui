@@ -2,7 +2,7 @@ import React, { useContext } from 'react';
 import R from 'ramda';
 import styled, { ThemeContext } from 'styled-components';
 import { Link as RouterLink } from 'react-router-dom';
-import { ButtonComponent, ButtonProps } from './Button.types';
+import { ButtonComponent, ButtonProps, InnerProps } from './Button.types';
 import { assert } from '../../common/utils';
 import NormalizedElements from '../../common/NormalizedElements';
 import { Typography } from '../..';
@@ -13,7 +13,7 @@ const isPrimary = (variant: ButtonProps['variant']) => variant === 'primary';
 const isSecondary = (variant: ButtonProps['variant']) => variant === 'secondary';
 const isNeutral = (variant: ButtonProps['variant']) => variant === 'neutral';
 
-const StyledButton = styled(NormalizedElements.Button)<ButtonProps>`
+const StyledButton = styled(NormalizedElements.Button)<InnerProps>`
   ${p => {
     if (isSecondary(p.variant)) {
       return secondaryStyles;
@@ -30,11 +30,11 @@ const StyledButton = styled(NormalizedElements.Button)<ButtonProps>`
   cursor: ${p => (p.disabled ? 'not-allowed' : 'pointer')};
 `;
 
-const CleanRouterLink = (props: ButtonProps) => (
+const CleanRouterLink = (props: InnerProps) => (
   <RouterLink {...R.omit(['fullWidth', 'colorFn', 'color', 'variant'], props) as any} />
 );
 
-const StyledLink = styled(CleanRouterLink)<ButtonProps>`
+const StyledLink = styled(CleanRouterLink)<InnerProps>`
   ${p => {
     if (isSecondary(p.variant)) {
       return secondaryStyles;

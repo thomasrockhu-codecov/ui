@@ -26,4 +26,9 @@ export type ButtonProps = {
   as?: any;
 };
 
+type Omit<T, K> = Pick<T, Exclude<keyof T, K>>;
+type ForceRequired<T, K extends keyof T> = Omit<T, K> & Required<Pick<T, K>>;
+
+export type InnerProps = ForceRequired<ButtonProps, 'size'>;
+
 export type ButtonComponent = React.FC<ButtonProps>;
