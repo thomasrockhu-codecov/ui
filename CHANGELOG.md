@@ -1,3 +1,18 @@
+# [2.7.0](https://github.com/nordnet/ui/compare/v2.6.1...v2.7.0) (2019-12-02)
+
+
+### Bug Fixes
+
+* clean up loading prop ([138d36f](https://github.com/nordnet/ui/commit/138d36f))
+* make bold ([eb7883e](https://github.com/nordnet/ui/commit/eb7883e))
+* merge master ([4af55d1](https://github.com/nordnet/ui/commit/4af55d1))
+* merge master ([0cb0e3d](https://github.com/nordnet/ui/commit/0cb0e3d))
+
+
+### Features
+
+* add color to loading state spinners ([741b885](https://github.com/nordnet/ui/commit/741b885))
+
 ## [2.6.1](https://github.com/nordnet/ui/compare/v2.6.0...v2.6.1) (2019-12-02)
 
 
