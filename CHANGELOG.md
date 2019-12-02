@@ -1,3 +1,67 @@
+## [2.6.1](https://github.com/nordnet/ui/compare/v2.6.0...v2.6.1) (2019-12-02)
+
+
+### Bug Fixes
+
+* add disabled state to neutral ([3883a5d](https://github.com/nordnet/ui/commit/3883a5d))
+* compiling error ([19f763e](https://github.com/nordnet/ui/commit/19f763e))
+* deprecate small size ([1cc97ca](https://github.com/nordnet/ui/commit/1cc97ca))
+* make bold ([fdea6e1](https://github.com/nordnet/ui/commit/fdea6e1))
+* merge master ([7f0400b](https://github.com/nordnet/ui/commit/7f0400b))
+* only warn when small is not used with neutral ([e93bc86](https://github.com/nordnet/ui/commit/e93bc86))
+* remove small size ([f95746d](https://github.com/nordnet/ui/commit/f95746d))
+* revert deprecation of small size for later pr ([3e2b6c3](https://github.com/nordnet/ui/commit/3e2b6c3))
+* sync button styles with design ([d32f2aa](https://github.com/nordnet/ui/commit/d32f2aa))
+* update padding function ([fc9ed87](https://github.com/nordnet/ui/commit/fc9ed87))
+* update snaps ([6d8649e](https://github.com/nordnet/ui/commit/6d8649e))
+* use innerprops ([29a530a](https://github.com/nordnet/ui/commit/29a530a))
+
+# [2.6.0](https://github.com/nordnet/ui/compare/v2.5.1...v2.6.0) (2019-12-02)
+
+
+### Features
+
+* added left/right chevron and calendar icons ([2d90602](https://github.com/nordnet/ui/commit/2d90602))
+
+## [2.5.1](https://github.com/nordnet/ui/compare/v2.5.0...v2.5.1) (2019-11-26)
+
+
+### Bug Fixes
+
+* **typography:** line-height and weight were broken in css ([a952eab](https://github.com/nordnet/ui/commit/a952eab))
+
+# [2.5.0](https://github.com/nordnet/ui/compare/v2.4.1...v2.5.0) (2019-11-26)
+
+
+### Features
+
+* 🎸 add new colors to be used in charts ([bfddba4](https://github.com/nordnet/ui/commit/bfddba4))
+
+## [2.4.1](https://github.com/nordnet/ui/compare/v2.4.0...v2.4.1) (2019-11-25)
+
+
+### Bug Fixes
+
+* **number:** getRoundedValue toPrecision -> toFixed ([cc636b3](https://github.com/nordnet/ui/commit/cc636b3))
+
+# [2.4.0](https://github.com/nordnet/ui/compare/v2.3.0...v2.4.0) (2019-11-25)
+
+
+### Bug Fixes
+
+* 🐛 fix viewbox for hamburger icon making it centered ([d2e0fbe](https://github.com/nordnet/ui/commit/d2e0fbe))
+* 🐛 omit certain props from icon svg ([b7a3a2d](https://github.com/nordnet/ui/commit/b7a3a2d))
+* 🐛 remove external prop from a tags ([fed596f](https://github.com/nordnet/ui/commit/fed596f))
+* lineHeight inherit now works as intended ([b01ade5](https://github.com/nordnet/ui/commit/b01ade5))
+
+
+### Features
+
+* 🎸 add cms prop to Link for generating cms links ([e90bb68](https://github.com/nordnet/ui/commit/e90bb68))
+* 🎸 Add color prop to Link ([4e34634](https://github.com/nordnet/ui/commit/4e34634))
+* 🎸 add hamburger icon ([208ac0c](https://github.com/nordnet/ui/commit/208ac0c))
+* 🎸 add menu colors ([f1ad0ac](https://github.com/nordnet/ui/commit/f1ad0ac))
+
 # [2.3.0](https://github.com/nordnet/ui/compare/v2.2.2...v2.3.0) (2019-11-21)
 
 

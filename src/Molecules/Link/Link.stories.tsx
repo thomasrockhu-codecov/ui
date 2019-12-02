@@ -52,6 +52,20 @@ externalLinkWithItsDefaultValues.story = {
   name: 'External link with its default values',
 };
 
+export const cmsLinkWithItsDefaultValues = () => (
+  <BrowserRouter>
+    <Typography type="secondary" weight="bold">
+      <Link to="http://www.google.com" onClick={action('clicked')} cms>
+        Link
+      </Link>
+    </Typography>
+  </BrowserRouter>
+);
+
+cmsLinkWithItsDefaultValues.story = {
+  name: 'Cms link with its default values',
+};
+
 export const externalLinkWithRelAndTargetOverriden = () => (
   <BrowserRouter>
     <Typography type="secondary" weight="bold">
@@ -96,4 +110,32 @@ export const withoutToPropResultsInAButtonLookingLikeALink = () => (
 
 withoutToPropResultsInAButtonLookingLikeALink.story = {
   name: 'Without to prop results in a button looking like a link',
+};
+
+export const withBlackColor = () => (
+  <BrowserRouter>
+    <Typography type="primary">
+      <Link color="black" to="http://www.google.com" external onClick={action('clicked')}>
+        Link
+      </Link>
+    </Typography>
+  </BrowserRouter>
+);
+
+withBlackColor.story = {
+  name: 'With black color',
+};
+
+export const withInheritedColor = () => (
+  <BrowserRouter>
+    <Typography type="primary" color={t => t.color.generationSavingsTimelineColor2}>
+      <Link color="inherit" to="http://www.google.com" external onClick={action('clicked')}>
+        Link
+      </Link>
+    </Typography>
+  </BrowserRouter>
+);
+
+withInheritedColor.story = {
+  name: 'With inherited color',
 };

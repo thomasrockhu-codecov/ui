@@ -1,6 +1,6 @@
 import { css } from 'styled-components';
 import Color from 'color';
-import { ButtonProps } from './Button.types';
+import { InnerProps } from './Button.types';
 
 const HEIGHT = {
   m: 8,
@@ -29,7 +29,7 @@ const getBorder = (color: string) => `
   }
 `;
 
-const shared = css<ButtonProps>`
+const shared = css<InnerProps>`
   position: relative;
   box-sizing: border-box;
   align-items: center;
@@ -37,21 +37,19 @@ const shared = css<ButtonProps>`
   ${p => (p.fullWidth ? `display: flex; width: 100%;` : `display: inline-flex;`)}
 `;
 
-const minHeight = css<ButtonProps>`
-  min-height: ${p => p.theme.spacing.unit(HEIGHT[p.size!])}px;
+const minHeight = css<InnerProps>`
+  min-height: ${p => p.theme.spacing.unit(HEIGHT[p.size])}px;
 `;
 
-const padding = css<ButtonProps>`
-  ${p => {
-    const unit = PADDING_HORIZONTAL[p.size!];
-
-    return `
-      padding: ${p.theme.spacing.unit(PADDING_VERTICAL[p.size!])}px ${p.theme.spacing.unit(unit)}px;
-    `;
-  }}
+const padding = css<InnerProps>`
+  ${p => `
+    padding:
+      ${p.theme.spacing.unit(PADDING_VERTICAL[p.size])}px
+      ${p.theme.spacing.unit(PADDING_HORIZONTAL[p.size])}px;
+  `}
 `;
 
-export const primaryStyles = css<ButtonProps>`
+export const primaryStyles = css<InnerProps>`
   ${shared}
   ${padding}
   ${minHeight}
@@ -81,7 +79,7 @@ export const primaryStyles = css<ButtonProps>`
   }}
 `;
 
-export const secondaryStyles = css<ButtonProps>`
+export const secondaryStyles = css<InnerProps>`
   ${shared}
   ${padding}
   ${minHeight}
@@ -121,7 +119,7 @@ export const secondaryStyles = css<ButtonProps>`
   }};
 `;
 
-export const neutralStyles = css<ButtonProps>`
+export const neutralStyles = css<InnerProps>`
   ${shared}
   ${minHeight}
   padding: 0;

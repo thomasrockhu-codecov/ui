@@ -33,7 +33,7 @@ export const ButtonContent: ButtonContentComponent = props => {
   const theme = useContext(ThemeContext);
 
   const content = (
-    <Typography type={size === 'l' ? 'primary' : 'secondary'} color="inherit">
+    <Typography type={size === 'l' ? 'primary' : 'secondary'} color="inherit" weight="bold">
       {children}
     </Typography>
   );
@@ -60,7 +60,7 @@ export const ButtonContent: ButtonContentComponent = props => {
             transition={{ duration: LOADING_ANIMATION_DURATION }}
           >
             <Spinner
-              id={`test-${variant}-${colorFn && colorFn(theme)}`} // TODO: replace with unique id
+              id={`spinner-${variant}-${size}-${colorFn && colorFn(theme)}`} // TODO: replace with unique id
               color={
                 variant === 'primary' ? t => t.color.buttonText : colorFn || (t => t.color.cta)
               }
