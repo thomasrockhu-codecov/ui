@@ -154,76 +154,73 @@ buttonSecondaryWithColors.story = {
   name: 'Button secondary with colors',
 };
 
-export const buttonPrimaryWithSizeModified = () => (
-  <Display
-    horizontal
-    items={[
-      {
-        title: 'Small',
-        component: (
-          <Button size="s" onClick={action('clickSmall')}>
-            Small
-          </Button>
-        ),
-      },
-      {
-        title: 'Medium',
-        component: (
-          <Button size="m" onClick={action('clickMedium')}>
-            Medium
-          </Button>
-        ),
-      },
-      {
-        title: 'Large',
-        component: (
-          <Button size="l" onClick={action('clickLarge')}>
-            Large
-          </Button>
-        ),
-      },
-    ]}
-  />
+export const buttonWithSizeModified = () => (
+  <>
+    <Display
+      title="Primary"
+      horizontal
+      items={[
+        {
+          title: 'Small',
+          component: (
+            <Button size="s" onClick={action('clickSmall')}>
+              Small
+            </Button>
+          ),
+        },
+        {
+          title: 'Medium',
+          component: (
+            <Button size="m" onClick={action('clickMedium')}>
+              Medium
+            </Button>
+          ),
+        },
+        {
+          title: 'Large',
+          component: (
+            <Button size="l" onClick={action('clickLarge')}>
+              Large
+            </Button>
+          ),
+        },
+      ]}
+    />
+    <Display
+      title="Secondary"
+      horizontal
+      items={[
+        {
+          title: 'Small',
+          component: (
+            <Button size="s" variant="secondary" onClick={action('clickSmall')}>
+              Small
+            </Button>
+          ),
+        },
+        {
+          title: 'Medium',
+          component: (
+            <Button size="m" variant="secondary" onClick={action('clickMedium')}>
+              Medium
+            </Button>
+          ),
+        },
+        {
+          title: 'Large',
+          component: (
+            <Button size="l" variant="secondary" onClick={action('clickLarge')}>
+              Large
+            </Button>
+          ),
+        },
+      ]}
+    />
+  </>
 );
 
-buttonPrimaryWithSizeModified.story = {
-  name: 'Button primary with size modified',
-};
-
-export const buttonSecondaryWithSizeModified = () => (
-  <Display
-    horizontal
-    items={[
-      {
-        title: 'Small',
-        component: (
-          <Button size="s" variant="secondary" onClick={action('clickSmall')}>
-            Small
-          </Button>
-        ),
-      },
-      {
-        title: 'Medium',
-        component: (
-          <Button size="m" variant="secondary" onClick={action('clickMedium')}>
-            Medium
-          </Button>
-        ),
-      },
-      {
-        title: 'Large',
-        component: (
-          <Button size="l" variant="secondary" onClick={action('clickLarge')}>
-            Large
-          </Button>
-        ),
-      },
-    ]}
-  />
-);
-
-buttonSecondaryWithSizeModified.story = {
-  name: 'Button secondary with size modified',
+buttonWithSizeModified.story = {
+  name: 'Button with size modified',
 };
 
 export const buttonWithTypeModified = () => (
