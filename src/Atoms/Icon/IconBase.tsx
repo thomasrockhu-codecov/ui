@@ -1,5 +1,6 @@
 import React from 'react';
 import styled, { DefaultTheme } from 'styled-components';
+import * as R from 'ramda';
 import { InternalProps, StyledIconBaseProps, ColorFn } from './IconBase.types';
 import { assert } from '../../common/utils';
 
@@ -29,7 +30,11 @@ export const getColor = (
   return defaultColor;
 };
 
-const StyledIconBase = styled.svg<StyledIconBaseProps>`
+const CleanSvg = React.forwardRef<SVGSVGElement, React.SVGProps<SVGSVGElement>>((props, ref) => (
+  <svg ref={ref} {...R.omit(['size', 'colorFn', 'inline'])(props)} />
+));
+
+const StyledIconBase = styled(CleanSvg)<StyledIconBaseProps>`
   ${p => {
     const size = p.size || 5;
     const fill = getColor(p.theme, p.theme.color.svgFill, p.colorFn);
