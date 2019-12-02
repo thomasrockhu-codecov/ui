@@ -1,3 +1,21 @@
+## [2.6.1](https://github.com/nordnet/ui/compare/v2.6.0...v2.6.1) (2019-12-02)
+
+
+### Bug Fixes
+
+* add disabled state to neutral ([3883a5d](https://github.com/nordnet/ui/commit/3883a5d))
+* compiling error ([19f763e](https://github.com/nordnet/ui/commit/19f763e))
+* deprecate small size ([1cc97ca](https://github.com/nordnet/ui/commit/1cc97ca))
+* make bold ([fdea6e1](https://github.com/nordnet/ui/commit/fdea6e1))
+* merge master ([7f0400b](https://github.com/nordnet/ui/commit/7f0400b))
+* only warn when small is not used with neutral ([e93bc86](https://github.com/nordnet/ui/commit/e93bc86))
+* remove small size ([f95746d](https://github.com/nordnet/ui/commit/f95746d))
+* revert deprecation of small size for later pr ([3e2b6c3](https://github.com/nordnet/ui/commit/3e2b6c3))
+* sync button styles with design ([d32f2aa](https://github.com/nordnet/ui/commit/d32f2aa))
+* update padding function ([fc9ed87](https://github.com/nordnet/ui/commit/fc9ed87))
+* update snaps ([6d8649e](https://github.com/nordnet/ui/commit/6d8649e))
+* use innerprops ([29a530a](https://github.com/nordnet/ui/commit/29a530a))
+
 # [2.6.0](https://github.com/nordnet/ui/compare/v2.5.1...v2.6.0) (2019-12-02)
 
 
