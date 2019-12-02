@@ -1,3 +1,10 @@
+# [2.6.0](https://github.com/nordnet/ui/compare/v2.5.1...v2.6.0) (2019-12-02)
+
+
+### Features
+
+* added left/right chevron and calendar icons ([2d90602](https://github.com/nordnet/ui/commit/2d90602))
+
 ## [2.5.1](https://github.com/nordnet/ui/compare/v2.5.0...v2.5.1) (2019-11-26)
 
 
