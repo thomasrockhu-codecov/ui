@@ -115,7 +115,7 @@ export const Button: ButtonComponent = props => {
               as,
             })}
       >
-        <Typography type={size === 'l' ? 'primary' : 'secondary'} color="inherit">
+        <Typography type={size === 'l' ? 'primary' : 'secondary'} color="inherit" weight="bold">
           {children}
         </Typography>
       </StyledLink>
@@ -139,7 +139,7 @@ export const Button: ButtonComponent = props => {
       colorFn={color}
       as={as}
     >
-      <Typography type={size === 'l' ? 'primary' : 'secondary'} color="inherit">
+      <Typography type={size === 'l' ? 'primary' : 'secondary'} color="inherit" weight="bold">
         {children}
       </Typography>
     </StyledButton>
