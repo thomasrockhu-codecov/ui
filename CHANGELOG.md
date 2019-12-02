@@ -1,3 +1,11 @@
+## [2.7.1](https://github.com/nordnet/ui/compare/v2.7.0...v2.7.1) (2019-12-02)
+
+
+### Bug Fixes
+
+* deprecate small size ([60ce3ed](https://github.com/nordnet/ui/commit/60ce3ed))
+* merge master ([03f35dd](https://github.com/nordnet/ui/commit/03f35dd))
+
 # [2.7.0](https://github.com/nordnet/ui/compare/v2.6.1...v2.7.0) (2019-12-02)
 
 
