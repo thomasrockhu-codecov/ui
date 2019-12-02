@@ -443,10 +443,12 @@ exports[`Storyshots Molecules | PageHeader Page Header With Children 1`] = `
                     onClick={[Function]}
                     type="button"
                   >
-                    <span
-                      className="c12"
-                    >
-                      Click here to recruit carl
+                    <span>
+                      <span
+                        className="c12"
+                      >
+                        Click here to recruit carl
+                      </span>
                     </span>
                   </button>
                 </div>

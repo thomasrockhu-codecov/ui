@@ -24,6 +24,7 @@ export type ButtonProps = {
   colorFn?: ColorFn;
   id?: string;
   as?: any;
+  loading?: boolean;
 };
 
 type Omit<T, K> = Pick<T, Exclude<keyof T, K>>;

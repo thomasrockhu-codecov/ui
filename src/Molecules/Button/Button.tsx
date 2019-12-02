@@ -5,8 +5,8 @@ import { Link as RouterLink } from 'react-router-dom';
 import { ButtonComponent, ButtonProps, InnerProps } from './Button.types';
 import { assert } from '../../common/utils';
 import NormalizedElements from '../../common/NormalizedElements';
-import { Typography } from '../..';
 import TrackingContext from '../../common/tracking';
+import ButtonContent from './ButtonContent';
 import { neutralStyles, primaryStyles, secondaryStyles } from './Button.styles';
 
 const isPrimary = (variant: ButtonProps['variant']) => variant === 'primary';
@@ -64,6 +64,7 @@ export const Button: ButtonComponent = props => {
     id,
     color,
     as,
+    loading,
     external,
   } = props;
   const typeIsNotPresent = typeof type === 'undefined';
@@ -115,9 +116,9 @@ export const Button: ButtonComponent = props => {
               as,
             })}
       >
-        <Typography type={size === 'l' ? 'primary' : 'secondary'} color="inherit" weight="bold">
+        <ButtonContent loading={loading} variant={variant} size={size} colorFn={color}>
           {children}
-        </Typography>
+        </ButtonContent>
       </StyledLink>
     );
   }
@@ -139,9 +140,9 @@ export const Button: ButtonComponent = props => {
       colorFn={color}
       as={as}
     >
-      <Typography type={size === 'l' ? 'primary' : 'secondary'} color="inherit" weight="bold">
+      <ButtonContent loading={loading} variant={variant} size={size} colorFn={color}>
         {children}
-      </Typography>
+      </ButtonContent>
     </StyledButton>
   );
 };

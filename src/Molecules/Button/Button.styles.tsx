@@ -56,21 +56,30 @@ export const primaryStyles = css<InnerProps>`
   ${shared}
   ${padding}
   ${minHeight}
-  background-color: ${p => (p.disabled ? p.theme.color.disabledBackground : p.theme.color.cta)};
+  background-color: ${p => {
+    const customColor = p.colorFn && p.colorFn(p.theme);
+    const background = customColor || p.theme.color.cta;
+
+    return p.disabled ? p.theme.color.disabledBackground : background;
+  }};
   color: ${p => (p.disabled ? p.theme.color.disabledText : p.theme.color.buttonText)};
   ${getBorder('transparent')}
 
-  ${p =>
-    p.disabled
+  ${p => {
+    const customColor = p.colorFn && p.colorFn(p.theme);
+    const background = customColor || p.theme.color.cta;
+
+    return p.disabled
       ? ''
       : `
     &:hover {
-      background-color: ${Color(p.theme.color.cta).darken(0.1)};
+      background-color: ${Color(background).darken(0.1)};
     }
     &:active {
-      background-color: ${Color(p.theme.color.cta).darken(0.2)};
+      background-color: ${Color(background).darken(0.2)};
     }
-  `}
+  `;
+  }}
 `;
 
 export const secondaryStyles = css<InnerProps>`
@@ -81,33 +90,30 @@ export const secondaryStyles = css<InnerProps>`
     p.disabled ? p.theme.color.disabledBackground : p.theme.color.buttonSecondaryBackground};
 
   ${p => {
-    const color = p.colorFn && p.colorFn(p.theme);
+    const customColor = p.colorFn && p.colorFn(p.theme);
+    const color = customColor || p.theme.color.cta;
 
     return `
-      color: ${p.disabled ? p.theme.color.disabledText : color || p.theme.color.cta};
-      ${getBorder(p.disabled ? 'transparent' : color || p.theme.color.cta)}
+      color: ${p.disabled ? p.theme.color.disabledText : customColor || p.theme.color.cta};
+      ${getBorder(p.disabled ? 'transparent' : color)}
 
       ${
         p.disabled
           ? ''
           : `
         &:hover {
-          color: ${color ? Color(color).darken(0.2) : Color(p.theme.color.cta).darken(0.2)};
+          color: ${Color(color).darken(0.2)};
     
           &::before {
-            border-color: ${
-              color ? Color(color).darken(0.2) : Color(p.theme.color.cta).darken(0.2)
-            };
+            border-color: ${Color(color).darken(0.2)};
           }
         }
     
         &:active {
-          color: ${color ? Color(color).darken(0.3) : Color(p.theme.color.cta).darken(0.3)};
+          color: ${Color(color).darken(0.3)};
     
           &::before {
-            border-color: ${
-              color ? Color(color).darken(0.3) : Color(p.theme.color.cta).darken(0.3)
-            };
+            border-color: ${Color(color).darken(0.3)};
           }
         }
       `
