@@ -8,15 +8,25 @@ import { isUndefined } from '../../common/utils';
 import NormalizedElements from '../../common/NormalizedElements';
 import TrackingContext from '../../common/tracking';
 
+const getEnabledColor = (color: LinkProps['color'], theme: Theme): string => {
+  if (color === 'black') {
+    return theme.color.text;
+  }
+  if (color === 'inherit') {
+    return color;
+  }
+  return theme.color.cta;
+};
+
 const getSharedStyle = (props: ThemedStyledProps<LinkProps, Theme>) => {
-  const { theme, disabled, display = 'inline' } = props;
+  const { theme, disabled, display = 'inline', color } = props;
 
   // Need to switch to display: inline-block
   // But it will break pages, so need to do it through mutations
   return `
     display: ${display};
     padding: 0;
-    color: ${disabled ? theme.color.disabledText : theme.color.cta}
+    color: ${disabled ? theme.color.disabledText : getEnabledColor(color, theme)}
 
     &:hover {
       text-decoration: underline;
@@ -25,9 +35,12 @@ const getSharedStyle = (props: ThemedStyledProps<LinkProps, Theme>) => {
 };
 
 const CleanLink = React.forwardRef((props: LinkProps, ref) => {
-  return props.external ? (
+  return props.external || props.cms ? (
     // eslint-disable-next-line jsx-a11y/anchor-has-content
-    <a ref={ref} {...R.omit(['fullWidth', 'colorFn', 'color', 'display'], props) as any} />
+    <a
+      ref={ref}
+      {...R.omit(['fullWidth', 'colorFn', 'color', 'display', 'external', 'cms'], props) as any}
+    />
   ) : (
     <RouterLink ref={ref} {...R.omit(['fullWidth', 'colorFn', 'color', 'display'], props) as any} />
   );
@@ -61,11 +74,13 @@ export const Link: LinkComponent = React.forwardRef<any, LinkProps>((props, ref)
     className,
     onClick,
     external,
+    cms,
     target = external ? '_blank' : undefined,
     rel = external ? 'noopener noreferrer nofollow' : undefined,
     as,
+    color,
   } = props;
-  const destinationProp = external ? { href: to } : { to };
+  const destinationProp = external || cms ? { href: to } : { to };
 
   const { track } = useContext(TrackingContext);
   const trackClick = (e: React.MouseEvent) => {
@@ -96,7 +111,9 @@ export const Link: LinkComponent = React.forwardRef<any, LinkProps>((props, ref)
       target={target}
       rel={rel}
       external={external}
+      cms={cms}
       as={as}
+      color={color}
     >
       {children}
     </StyledLink>

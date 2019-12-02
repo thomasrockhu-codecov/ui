@@ -1420,6 +1420,10 @@ exports[`Storyshots Organisms | Development Regression Infinity 1`] = `
 `;
 
 exports[`Storyshots Organisms | Development Regression Value Is Non Zero But Rounded Value Is 0 1`] = `
+.c4 {
+  color: #FF1900;
+}
+
 .c3 {
   color: #282823;
 }
@@ -1526,6 +1530,28 @@ exports[`Storyshots Organisms | Development Regression Value Is Non Zero But Rou
         />
         
         0
+      </span>
+    </div>
+  </div>
+  <div
+    className="c1"
+    direction="row"
+  >
+    <div
+      className="c2"
+    >
+      \`value = -1.3123 and decimals = 3\`
+    </div>
+    <div>
+      <span
+        className="c4"
+        value={-1.312}
+      >
+        <span
+          aria-hidden={true}
+        />
+        
+        -1.312
       </span>
     </div>
   </div>
