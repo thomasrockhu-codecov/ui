@@ -41,17 +41,15 @@ const shared = css<InnerProps>`
 `;
 
 const minHeight = css<InnerProps>`
-  min-height: ${p => p.theme.spacing.unit(HEIGHT[p.size!])}px;
+  min-height: ${p => p.theme.spacing.unit(HEIGHT[p.size])}px;
 `;
 
 const padding = css<InnerProps>`
-  ${p => {
-    const unit = PADDING_HORIZONTAL[p.size!];
-
-    return `
-      padding: ${p.theme.spacing.unit(PADDING_VERTICAL[p.size!])}px ${p.theme.spacing.unit(unit)}px;
-    `;
-  }}
+  ${p => `
+    padding:
+      ${p.theme.spacing.unit(PADDING_VERTICAL[p.size])}px
+      ${p.theme.spacing.unit(PADDING_HORIZONTAL[p.size])}px;
+  `}
 `;
 
 export const primaryStyles = css<InnerProps>`
