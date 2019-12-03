@@ -1,5 +1,41 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`Storyshots Molecules | Link Cms Link With Its Default Values 1`] = `
+.c0 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c1 {
+  display: inline;
+  padding: 0;
+  color: #0046FF;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c1:hover {
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+<span
+  className="c0"
+>
+  <a
+    className="c1"
+    href="http://www.google.com"
+    onClick={[Function]}
+  >
+    Link
+  </a>
+</span>
+`;
+
 exports[`Storyshots Molecules | Link Default Usage 1`] = `
 .c0 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
@@ -64,7 +100,6 @@ exports[`Storyshots Molecules | Link External Link With Its Default Values 1`] =
 >
   <a
     className="c1"
-    external={true}
     href="http://www.google.com"
     onClick={[Function]}
     rel="noopener noreferrer nofollow"
@@ -103,11 +138,48 @@ exports[`Storyshots Molecules | Link External Link With Rel And Target Overriden
 >
   <a
     className="c1"
-    external={true}
     href="http://www.google.com"
     onClick={[Function]}
     rel="nofollow"
     target="_self"
+  >
+    Link
+  </a>
+</span>
+`;
+
+exports[`Storyshots Molecules | Link With Black Color 1`] = `
+.c0 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.c1 {
+  display: inline;
+  padding: 0;
+  color: #282823;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c1:hover {
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+<span
+  className="c0"
+>
+  <a
+    className="c1"
+    href="http://www.google.com"
+    onClick={[Function]}
+    rel="noopener noreferrer nofollow"
+    target="_blank"
   >
     Link
   </a>
@@ -180,6 +252,44 @@ exports[`Storyshots Molecules | Link With Disabled Prop Results In A Disabled Bu
   >
     Link
   </button>
+</span>
+`;
+
+exports[`Storyshots Molecules | Link With Inherited Color 1`] = `
+.c0 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #AC135A;
+  margin: 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.c1 {
+  display: inline;
+  padding: 0;
+  color: inherit;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c1:hover {
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+<span
+  className="c0"
+>
+  <a
+    className="c1"
+    href="http://www.google.com"
+    onClick={[Function]}
+    rel="noopener noreferrer nofollow"
+    target="_blank"
+  >
+    Link
+  </a>
 </span>
 `;
 

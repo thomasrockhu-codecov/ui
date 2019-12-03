@@ -29,11 +29,13 @@ export type Props = {
    */
   inputMode?: 'none' | 'numeric' | 'decimal';
   label: string;
+  labelTooltip?: string;
   leftAddon?: React.ReactNode;
   max?: string | number;
   min?: string | number;
   name?: string;
   noSteppers?: boolean;
+  placeholder?: string;
   required?: boolean;
   rightAddon?: React.ReactNode;
   size?: 's';

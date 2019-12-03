@@ -4,6 +4,7 @@ export type Props = {
   label: string;
   /** But you can hide it visually */
   hideLabel?: boolean;
+  labelTooltip?: string;
   autoFocus?: boolean;
   name?: string;
   error?: string;

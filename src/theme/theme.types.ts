@@ -59,6 +59,8 @@ export type Theme = {
     backgroundInput: RawColor['white'];
     /** gray7 */
     background: RawColor['gray7'];
+    /** black */
+    backgroundBlack: RawColor['black'];
     /** gray0 */
     text: RawColor['gray0'];
     /** white */
@@ -67,14 +69,26 @@ export type Theme = {
     label: RawColor['gray2'];
     /** cta */
     buy: RawColor['cta'] | RawColor['a11yCta'];
+    /** 3 percent darker cta */
+    buyActive: string;
     /** white */
     buttonText: RawColor['white'];
     /** cta */
     borderActive: RawColor['cta'] | RawColor['a11yCta'];
+    /** white */
+    bubbleBackground: RawColor['white'];
+    /** gray4 */
+    bubbleBorder: RawColor['gray4'];
     /** negative */
     sell: RawColor['negative'] | RawColor['a11yNegative'];
+    /** 3 percent darker negative */
+    sellActive: string;
     /** cta */
     cta: RawColor['cta'] | RawColor['a11yCta'];
+    /** creditsPiePrimary */
+    creditsPiePrimary: RawColor['complementaryPink1'];
+    /** creditsPieSecondary */
+    creditsPieSecondary: RawColor['complementaryPink2'];
     /** positive */
     positive: RawColor['positive'] | RawColor['a11yPositive'];
     /** negative */
@@ -143,6 +157,48 @@ export type Theme = {
     orderDepthBackground: RawColor['gray6'];
     /** gray5 */
     orderDepthDarkBackground: RawColor['gray5'];
+    /** complementaryBlue2 */
+    loanRatesGraphColor2: RawColor['complementaryBlue2'];
+    /** brandGreen */
+    menuAccent1: RawColor['brandGreen'];
+    /** brandTurquoise */
+    menuAccent2: RawColor['brandTurquoise'];
+    /** index */
+    menuAccent3: RawColor['index'];
+    /** brandPink */
+    menuAccent4: RawColor['brandPink'];
+    /** brandBlue */
+    menuAccent5: RawColor['brandBlue'];
+    /** brandBlue */
+    barChartColor1: RawColor['brandBlue'];
+    /** complementaryBlue2 */
+    barChartColor2: RawColor['complementaryBlue2'];
+    /** complementaryBlue1 */
+    barChartColor3: RawColor['complementaryBlue1'];
+    /** complementaryGreen1 */
+    barChartColor4: RawColor['complementaryGreen1'];
+    /** complementaryPink1 */
+    barChartColor5: RawColor['complementaryPink1'];
+    /** index */
+    barChartColor6: RawColor['index'];
+    /** complementaryGreen1 */
+    barChartColor7: RawColor['complementaryGreen1'];
+    /** brandGreen */
+    columnChartColor1: RawColor['brandGreen'];
+    /** complementaryGreen2 */
+    columnChartColor2: RawColor['complementaryGreen2'];
+    /** complementaryGreen1 */
+    columnChartColor3: RawColor['complementaryGreen1'];
+    /** complementaryTurquoise1 */
+    columnChartColor4: RawColor['complementaryTurquoise1'];
+    /** complementaryTurquoise2 */
+    columnChartColor5: RawColor['complementaryTurquoise2'];
+    /** complementaryPink2 */
+    pieChartColor1: RawColor['complementaryPink2'];
+    /** brandPink */
+    pieChartColor2: RawColor['brandPink'];
+    /** gray4 */
+    pieChartColor3: RawColor['gray4'];
   };
 
   spacing: {

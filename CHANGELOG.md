@@ -1,3 +1,361 @@
+## [2.7.2](https://github.com/nordnet/ui/compare/v2.7.1...v2.7.2) (2019-12-02)
+
+
+### Bug Fixes
+
+* get new version ([8019271](https://github.com/nordnet/ui/commit/8019271))
+
+## [2.7.1](https://github.com/nordnet/ui/compare/v2.7.0...v2.7.1) (2019-12-02)
+
+
+### Bug Fixes
+
+* deprecate small size ([60ce3ed](https://github.com/nordnet/ui/commit/60ce3ed))
+* merge master ([03f35dd](https://github.com/nordnet/ui/commit/03f35dd))
+
+# [2.7.0](https://github.com/nordnet/ui/compare/v2.6.1...v2.7.0) (2019-12-02)
+
+
+### Bug Fixes
+
+* clean up loading prop ([138d36f](https://github.com/nordnet/ui/commit/138d36f))
+* make bold ([eb7883e](https://github.com/nordnet/ui/commit/eb7883e))
+* merge master ([4af55d1](https://github.com/nordnet/ui/commit/4af55d1))
+* merge master ([0cb0e3d](https://github.com/nordnet/ui/commit/0cb0e3d))
+
+
+### Features
+
+* add color to loading state spinners ([741b885](https://github.com/nordnet/ui/commit/741b885))
+
+## [2.6.1](https://github.com/nordnet/ui/compare/v2.6.0...v2.6.1) (2019-12-02)
+
+
+### Bug Fixes
+
+* add disabled state to neutral ([3883a5d](https://github.com/nordnet/ui/commit/3883a5d))
+* compiling error ([19f763e](https://github.com/nordnet/ui/commit/19f763e))
+* deprecate small size ([1cc97ca](https://github.com/nordnet/ui/commit/1cc97ca))
+* make bold ([fdea6e1](https://github.com/nordnet/ui/commit/fdea6e1))
+* merge master ([7f0400b](https://github.com/nordnet/ui/commit/7f0400b))
+* only warn when small is not used with neutral ([e93bc86](https://github.com/nordnet/ui/commit/e93bc86))
+* remove small size ([f95746d](https://github.com/nordnet/ui/commit/f95746d))
+* revert deprecation of small size for later pr ([3e2b6c3](https://github.com/nordnet/ui/commit/3e2b6c3))
+* sync button styles with design ([d32f2aa](https://github.com/nordnet/ui/commit/d32f2aa))
+* update padding function ([fc9ed87](https://github.com/nordnet/ui/commit/fc9ed87))
+* update snaps ([6d8649e](https://github.com/nordnet/ui/commit/6d8649e))
+* use innerprops ([29a530a](https://github.com/nordnet/ui/commit/29a530a))
+
+# [2.6.0](https://github.com/nordnet/ui/compare/v2.5.1...v2.6.0) (2019-12-02)
+
+
+### Features
+
+* added left/right chevron and calendar icons ([2d90602](https://github.com/nordnet/ui/commit/2d90602))
+
+## [2.5.1](https://github.com/nordnet/ui/compare/v2.5.0...v2.5.1) (2019-11-26)
+
+
+### Bug Fixes
+
+* **typography:** line-height and weight were broken in css ([a952eab](https://github.com/nordnet/ui/commit/a952eab))
+
+# [2.5.0](https://github.com/nordnet/ui/compare/v2.4.1...v2.5.0) (2019-11-26)
+
+
+### Features
+
+* 🎸 add new colors to be used in charts ([bfddba4](https://github.com/nordnet/ui/commit/bfddba4))
+
+## [2.4.1](https://github.com/nordnet/ui/compare/v2.4.0...v2.4.1) (2019-11-25)
+
+
+### Bug Fixes
+
+* **number:** getRoundedValue toPrecision -> toFixed ([cc636b3](https://github.com/nordnet/ui/commit/cc636b3))
+
+# [2.4.0](https://github.com/nordnet/ui/compare/v2.3.0...v2.4.0) (2019-11-25)
+
+
+### Bug Fixes
+
+* 🐛 fix viewbox for hamburger icon making it centered ([d2e0fbe](https://github.com/nordnet/ui/commit/d2e0fbe))
+* 🐛 omit certain props from icon svg ([b7a3a2d](https://github.com/nordnet/ui/commit/b7a3a2d))
+* 🐛 remove external prop from a tags ([fed596f](https://github.com/nordnet/ui/commit/fed596f))
+* lineHeight inherit now works as intended ([b01ade5](https://github.com/nordnet/ui/commit/b01ade5))
+
+
+### Features
+
+* 🎸 add cms prop to Link for generating cms links ([e90bb68](https://github.com/nordnet/ui/commit/e90bb68))
+* 🎸 Add color prop to Link ([4e34634](https://github.com/nordnet/ui/commit/4e34634))
+* 🎸 add hamburger icon ([208ac0c](https://github.com/nordnet/ui/commit/208ac0c))
+* 🎸 add menu colors ([f1ad0ac](https://github.com/nordnet/ui/commit/f1ad0ac))
+
+# [2.3.0](https://github.com/nordnet/ui/compare/v2.2.2...v2.3.0) (2019-11-21)
+
+
+### Features
+
+* **button:** align external link props with link component ([20ae338](https://github.com/nordnet/ui/commit/20ae338))
+* **button:** external link ([b9c5e97](https://github.com/nordnet/ui/commit/b9c5e97))
+
+## [2.2.2](https://github.com/nordnet/ui/compare/v2.2.1...v2.2.2) (2019-11-20)
+
+
+### Bug Fixes
+
+* **storybook:** addon-docs regression bug, using older version for now ([6cf7ee5](https://github.com/nordnet/ui/commit/6cf7ee5))
+
+## [2.2.1](https://github.com/nordnet/ui/compare/v2.2.0...v2.2.1) (2019-11-20)
+
+
+### Bug Fixes
+
+* 🐛 change height prop to work in media style props ([8a76e1f](https://github.com/nordnet/ui/commit/8a76e1f))
+* **cssgrid:** proper fix for comma join in media queries ([5c1cb21](https://github.com/nordnet/ui/commit/5c1cb21))
+
+# [2.2.0](https://github.com/nordnet/ui/compare/v2.1.2...v2.2.0) (2019-11-18)
+
+
+### Features
+
+* add semantics for comp pink 1 and 2 ([9dc2d0f](https://github.com/nordnet/ui/commit/9dc2d0f))
+
+## [2.1.2](https://github.com/nordnet/ui/compare/v2.1.1...v2.1.2) (2019-11-15)
+
+
+### Bug Fixes
+
+* optionl prop to remove cross for closing modal ([d938f9e](https://github.com/nordnet/ui/commit/d938f9e))
+
+## [2.1.1](https://github.com/nordnet/ui/compare/v2.1.0...v2.1.1) (2019-11-13)
+
+
+### Bug Fixes
+
+* add active state ([c28d0f5](https://github.com/nordnet/ui/commit/c28d0f5))
+* sync buy and sell buttons ([1289166](https://github.com/nordnet/ui/commit/1289166))
+
+# [2.1.0](https://github.com/nordnet/ui/compare/v2.0.3...v2.1.0) (2019-11-13)
+
+
+### Features
+
+* add 'as' prop on button ([9ec3b12](https://github.com/nordnet/ui/commit/9ec3b12))
+
+## [2.0.3](https://github.com/nordnet/ui/compare/v2.0.2...v2.0.3) (2019-11-13)
+
+
+### Bug Fixes
+
+* remove unnecessary code ([f7b1e6b](https://github.com/nordnet/ui/commit/f7b1e6b))
+
+## [2.0.2](https://github.com/nordnet/ui/compare/v2.0.1...v2.0.2) (2019-11-13)
+
+
+### Bug Fixes
+
+* let content be as wide as possible ([dbb3d86](https://github.com/nordnet/ui/commit/dbb3d86))
+
+## [2.0.1](https://github.com/nordnet/ui/compare/v2.0.0...v2.0.1) (2019-11-13)
+
+
+### Bug Fixes
+
+* deselect in multiselect onChange ([40efc03](https://github.com/nordnet/ui/commit/40efc03))
+* **select:** ie11 scroll-into-view ([c71af94](https://github.com/nordnet/ui/commit/c71af94))
+
+# [2.0.0](https://github.com/nordnet/ui/compare/v1.70.0...v2.0.0) (2019-11-12)
+
+
+### Bug Fixes
+
+* 🐛 bump major ([7cda870](https://github.com/nordnet/ui/commit/7cda870))
+
+
+### BREAKING CHANGES
+
+* 🧨 Input.Select breaking changes, check docs
+
+# [1.70.0](https://github.com/nordnet/ui/compare/v1.69.2...v1.70.0) (2019-11-12)
+
+
+### Bug Fixes
+
+* **input:** props cleanup ([67c9d39](https://github.com/nordnet/ui/commit/67c9d39))
+* **input.select:** symbol for all, tests, snapshots ([4036135](https://github.com/nordnet/ui/commit/4036135))
+* **input.select:** types ([bf523fc](https://github.com/nordnet/ui/commit/bf523fc))
+* **select:** controlled and uncontrolled behaviour ([5bfc780](https://github.com/nordnet/ui/commit/5bfc780))
+* **select:** design adjustments, hideLabel prop ([2b681e2](https://github.com/nordnet/ui/commit/2b681e2))
+* **select:** design refinements ([249f234](https://github.com/nordnet/ui/commit/249f234))
+* **select:** ie11 bugs vertical overflow ([3e317c5](https://github.com/nordnet/ui/commit/3e317c5))
+* **select:** ie11, safari visuals, remove data-testid from build ([4609ba5](https://github.com/nordnet/ui/commit/4609ba5))
+* **select:** keyboard navigation when no visible items bug ([c388fca](https://github.com/nordnet/ui/commit/c388fca))
+* **select:** multiselect leave focus after selection ([80ab480](https://github.com/nordnet/ui/commit/80ab480))
+* **select:** not scrolling to 0th item ([a2387f9](https://github.com/nordnet/ui/commit/a2387f9))
+* **select:** onBlur triggered when click multiselect, ellipsis multiselect ([5e3e427](https://github.com/nordnet/ui/commit/5e3e427))
+* **select:** search clear onClose ([aa82792](https://github.com/nordnet/ui/commit/aa82792))
+* **select:** selectAll option shouldnt select disabled options ([6a19cbb](https://github.com/nordnet/ui/commit/6a19cbb))
+* **select:** types ([33b6fcc](https://github.com/nordnet/ui/commit/33b6fcc))
+* **select:** types, move list to separate renderer ([697aa4a](https://github.com/nordnet/ui/commit/697aa4a))
+* **select:** value comparison for defaults ([c1f13ee](https://github.com/nordnet/ui/commit/c1f13ee))
+
+
+### Features
+
+* **button:** add id prop ([2fd5f37](https://github.com/nordnet/ui/commit/2fd5f37))
+* **icon.search:** new icon ([63ae47a](https://github.com/nordnet/ui/commit/63ae47a))
+* **select:** add actions prop ([4947780](https://github.com/nordnet/ui/commit/4947780))
+* **select:** empty states ([17cf057](https://github.com/nordnet/ui/commit/17cf057))
+* **select:** event onblur, onfocus, controlled search ([6acb40f](https://github.com/nordnet/ui/commit/6acb40f))
+* **select:** listMaxHeight prop, cleanup ([f5213c8](https://github.com/nordnet/ui/commit/f5213c8))
+* **select:** search -> machine, showSearch prop, changes in renderers ([34e41f2](https://github.com/nordnet/ui/commit/34e41f2))
+* tracking redone, custom config for machine ([da85766](https://github.com/nordnet/ui/commit/da85766))
+* **select:** tracking and actionTypes export ([ee93ee1](https://github.com/nordnet/ui/commit/ee93ee1))
+* **select:** wip disabled items, onChange, a11y, better fade ([53a3c25](https://github.com/nordnet/ui/commit/53a3c25))
+* **select:** wip experimenting with hover/focus ([de23300](https://github.com/nordnet/ui/commit/de23300))
+* **select:** wip experiments with hover, select all ([62d37b8](https://github.com/nordnet/ui/commit/62d37b8))
+* **select:** wip multiselect, custom renderers, cleanup ([d0c008f](https://github.com/nordnet/ui/commit/d0c008f))
+* **wip:** rework on input select, statecharts ([968a6b8](https://github.com/nordnet/ui/commit/968a6b8))
+
+## [1.69.2](https://github.com/nordnet/ui/compare/v1.69.1...v1.69.2) (2019-11-11)
+
+
+### Bug Fixes
+
+* dont show fade in ie11 ([25e6662](https://github.com/nordnet/ui/commit/25e6662))
+* ie11 contain height ([eaf90c8](https://github.com/nordnet/ui/commit/eaf90c8))
+* merge master ([b7c2d87](https://github.com/nordnet/ui/commit/b7c2d87))
+
+## [1.69.1](https://github.com/nordnet/ui/compare/v1.69.0...v1.69.1) (2019-11-11)
+
+
+### Bug Fixes
+
+* ckean up ([8ac2ae8](https://github.com/nordnet/ui/commit/8ac2ae8))
+* merge master ([ff3ee69](https://github.com/nordnet/ui/commit/ff3ee69))
+* rename styles exports ([765a0f0](https://github.com/nordnet/ui/commit/765a0f0))
+
+# [1.69.0](https://github.com/nordnet/ui/compare/v1.68.2...v1.69.0) (2019-11-11)
+
+
+### Features
+
+* exposed complementaryBlue2 color in theme ([0d6b755](https://github.com/nordnet/ui/commit/0d6b755))
+
+## [1.68.2](https://github.com/nordnet/ui/compare/v1.68.1...v1.68.2) (2019-11-08)
+
+
+### Bug Fixes
+
+* add tests ([7c58e22](https://github.com/nordnet/ui/commit/7c58e22))
+* focus style position ie11 ([6146a16](https://github.com/nordnet/ui/commit/6146a16))
+* make css grid minmax work in ie11 ([528b352](https://github.com/nordnet/ui/commit/528b352))
+
+## [1.68.1](https://github.com/nordnet/ui/compare/v1.68.0...v1.68.1) (2019-11-06)
+
+
+### Bug Fixes
+
+* dont show fade in ie11 ([2d1e884](https://github.com/nordnet/ui/commit/2d1e884))
+
+# [1.68.0](https://github.com/nordnet/ui/compare/v1.67.0...v1.68.0) (2019-11-05)
+
+
+### Bug Fixes
+
+* bake in icon and just pass string to tooltip ([5a83484](https://github.com/nordnet/ui/commit/5a83484))
+* merge master ([e8af565](https://github.com/nordnet/ui/commit/e8af565))
+
+
+### Features
+
+* 🎸 add background black color ([905a9f5](https://github.com/nordnet/ui/commit/905a9f5))
+* add support to pass addon to label ([75aabd7](https://github.com/nordnet/ui/commit/75aabd7))
+
+# [1.67.0](https://github.com/nordnet/ui/compare/v1.66.0...v1.67.0) (2019-11-05)
+
+
+### Bug Fixes
+
+* 🐛 add viewbox to plus and minus icons ([2e50ec2](https://github.com/nordnet/ui/commit/2e50ec2))
+* adjust  console log messages ([1a4e767](https://github.com/nordnet/ui/commit/1a4e767))
+* clean up ([4b7456c](https://github.com/nordnet/ui/commit/4b7456c))
+* dont show fade by default ([fe1f364](https://github.com/nordnet/ui/commit/fe1f364))
+* ie11 ([f9cc115](https://github.com/nordnet/ui/commit/f9cc115))
+* merge master ([16d75e3](https://github.com/nordnet/ui/commit/16d75e3))
+* merge master ([c6daad7](https://github.com/nordnet/ui/commit/c6daad7))
+* minus viewbox ([6d7fd91](https://github.com/nordnet/ui/commit/6d7fd91))
+* pr fixes ([01ef4e3](https://github.com/nordnet/ui/commit/01ef4e3))
+* simplify ([aee688f](https://github.com/nordnet/ui/commit/aee688f))
+* typos ([10232d8](https://github.com/nordnet/ui/commit/10232d8))
+* **icon.plus:** viewbox ([0b6e234](https://github.com/nordnet/ui/commit/0b6e234))
+* update docs and pr fixes ([7a1aced](https://github.com/nordnet/ui/commit/7a1aced))
+* update mdx of fadedscroll ([68683f2](https://github.com/nordnet/ui/commit/68683f2))
+* update types of useonscreen hook ([e330420](https://github.com/nordnet/ui/commit/e330420))
+
+
+### Features
+
+* add fadedscroll stories to cardwithtabs ([9edeeea](https://github.com/nordnet/ui/commit/9edeeea))
+* add fadeheight prop ([530217c](https://github.com/nordnet/ui/commit/530217c))
+* create fadedscroll component ([8af8b2b](https://github.com/nordnet/ui/commit/8af8b2b))
+* create scrollable card ([626ab7b](https://github.com/nordnet/ui/commit/626ab7b))
+* expose components of fadedscroll ([2f062a2](https://github.com/nordnet/ui/commit/2f062a2))
+
+# [1.66.0](https://github.com/nordnet/ui/compare/v1.65.0...v1.66.0) (2019-11-04)
+
+
+### Bug Fixes
+
+* build ([6de79a4](https://github.com/nordnet/ui/commit/6de79a4))
+* remove fade in mobile if enablemobilefade prop is undefined ([562e2b9](https://github.com/nordnet/ui/commit/562e2b9))
+
+
+### Features
+
+* 🎸 add placeholder to Input.Number ([adf156f](https://github.com/nordnet/ui/commit/adf156f))
+* 🎸 only show placeholder when no steppers for Input.Number ([b81c4e9](https://github.com/nordnet/ui/commit/b81c4e9))
+
+# [1.65.0](https://github.com/nordnet/ui/compare/v1.64.0...v1.65.0) (2019-11-04)
+
+
+### Bug Fixes
+
+* adjust  console log messages ([c340324](https://github.com/nordnet/ui/commit/c340324))
+* clean up ([f780777](https://github.com/nordnet/ui/commit/f780777))
+* dont show fade by default ([0e83ead](https://github.com/nordnet/ui/commit/0e83ead))
+* ie11 ([0e33faf](https://github.com/nordnet/ui/commit/0e33faf))
+* pr fixes ([fecd488](https://github.com/nordnet/ui/commit/fecd488))
+* simplify ([ea46197](https://github.com/nordnet/ui/commit/ea46197))
+* typos ([673e9e8](https://github.com/nordnet/ui/commit/673e9e8))
+* update docs and pr fixes ([418da12](https://github.com/nordnet/ui/commit/418da12))
+* update mdx of fadedscroll ([6d197d3](https://github.com/nordnet/ui/commit/6d197d3))
+* update types of useonscreen hook ([8c9de73](https://github.com/nordnet/ui/commit/8c9de73))
+
+
+### Features
+
+* add fadeheight prop ([3331fcb](https://github.com/nordnet/ui/commit/3331fcb))
+* create fadedscroll component ([deaf3bc](https://github.com/nordnet/ui/commit/deaf3bc))
+* create scrollable card ([201f28a](https://github.com/nordnet/ui/commit/201f28a))
+* expose components of fadedscroll ([f630ab8](https://github.com/nordnet/ui/commit/f630ab8))
+
+# [1.64.0](https://github.com/nordnet/ui/compare/v1.63.1...v1.64.0) (2019-11-04)
+
+
+### Features
+
+* 🎸 updated plus and minus icons ([093bf8b](https://github.com/nordnet/ui/commit/093bf8b))
+
+## [1.63.1](https://github.com/nordnet/ui/compare/v1.63.0...v1.63.1) (2019-10-25)
+
+
+### Bug Fixes
+
+* 🐛 FeedbackBanner text no longer overflows in IE ([4a3f7d1](https://github.com/nordnet/ui/commit/4a3f7d1))
+
 # [1.63.0](https://github.com/nordnet/ui/compare/v1.62.1...v1.63.0) (2019-10-23)
 
 

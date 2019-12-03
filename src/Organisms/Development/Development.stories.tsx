@@ -106,6 +106,10 @@ export const regressionValueIsNonZeroButRoundedValueIs0 = () => (
         component: <Development value={-0.3} decimals={0} />,
       },
       {
+        title: '`value = -1.3123 and decimals = 3`',
+        component: <Development value={-1.3123} decimals={3} />,
+      },
+      {
         title: '`value = -0.3 and maximumDecimals = 0`',
         component: <Development value={-0.3} maximumDecimals={0} />,
       },

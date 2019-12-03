@@ -1,0 +1,803 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Atoms | FadedScroll Default Story 1`] = `
+.c2 {
+  position: relative;
+}
+
+.c7 {
+  height: 4px;
+  width: 4px;
+  position: absolute;
+  right: 0;
+  pointer-events: none;
+  bottom: 0;
+}
+
+.c3 {
+  height: 4px;
+  width: 4px;
+  position: absolute;
+  right: 0;
+  pointer-events: none;
+  top: 0;
+}
+
+.c4 {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.c6 {
+  display: block;
+}
+
+.c5 {
+  padding: 8px;
+}
+
+@media (min-width:976px) {
+  .c0 {
+    position: relative;
+  }
+
+  .c0::before {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 52px;
+    position: absolute;
+    left: 0;
+    pointer-events: none;
+    background: transparent;
+    z-index: 1;
+    opacity: 0;
+    -webkit-transition: 0.3s opacity ease-out;
+    transition: 0.3s opacity ease-out;
+    top: 0;
+    background: linear-gradient(0deg,#ffffff00 0%,#ffffffff 100%);
+  }
+}
+
+@media (min-width:976px) {
+  .c0 {
+    position: relative;
+  }
+
+  .c0::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 52px;
+    position: absolute;
+    left: 0;
+    pointer-events: none;
+    background: transparent;
+    z-index: 1;
+    opacity: 0;
+    -webkit-transition: 0.3s opacity ease-out;
+    transition: 0.3s opacity ease-out;
+    bottom: 0;
+    background: linear-gradient(0deg,#ffffffff 0%,#ffffff00 100%);
+  }
+}
+
+@media (min-width:976px) {
+  .c1 {
+    max-height: 160px;
+    overflow-y: auto;
+  }
+}
+
+<div
+  className="c0"
+>
+  <div
+    className="c1"
+  >
+    <div
+      className="c2"
+    >
+      <div
+        className="c3"
+      />
+      <ul
+        className="c4"
+      >
+        <li
+          className="c5 c6"
+        >
+          Lorem ipsum dolor sit amet
+        </li>
+        <li
+          className="c5 c6"
+        >
+          Sed consequat erat lacinia
+        </li>
+        <li
+          className="c5 c6"
+        >
+          Class aptent taciti sociosqu
+        </li>
+        <li
+          className="c5 c6"
+        >
+          Aliquam bibendum tortor dui
+        </li>
+        <li
+          className="c5 c6"
+        >
+          Quisque ac ullamcorper eros
+        </li>
+        <li
+          className="c5 c6"
+        >
+          Etiam urna elit, mollis vel arcu id
+        </li>
+        <li
+          className="c5 c6"
+        >
+          Sed consequat erat lacinia
+        </li>
+        <li
+          className="c5 c6"
+        >
+          Aliquam bibendum tortor dui
+        </li>
+      </ul>
+      <div
+        className="c7"
+      />
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Atoms | FadedScroll With Auto Height Of Scrollable Area 1`] = `
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  min-height: 0;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  -webkit-flex-shrink: 1;
+  -ms-flex-negative: 1;
+  flex-shrink: 1;
+  -webkit-flex-basis: auto;
+  -ms-flex-preferred-size: auto;
+  flex-basis: auto;
+}
+
+.c2 {
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+}
+
+.c3 {
+  position: relative;
+}
+
+.c8 {
+  height: 4px;
+  width: 4px;
+  position: absolute;
+  right: 0;
+  pointer-events: none;
+  bottom: 0;
+}
+
+.c4 {
+  height: 4px;
+  width: 4px;
+  position: absolute;
+  right: 0;
+  pointer-events: none;
+  top: 0;
+}
+
+.c5 {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.c7 {
+  display: block;
+}
+
+.c6 {
+  padding: 8px;
+}
+
+@media (min-width:976px) {
+  .c1 {
+    position: relative;
+  }
+
+  .c1::before {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 52px;
+    position: absolute;
+    left: 0;
+    pointer-events: none;
+    background: transparent;
+    z-index: 1;
+    opacity: 0;
+    -webkit-transition: 0.3s opacity ease-out;
+    transition: 0.3s opacity ease-out;
+    top: 0;
+    background: linear-gradient(0deg,#ffffff00 0%,#ffffffff 100%);
+  }
+}
+
+@media (min-width:976px) {
+  .c1 {
+    position: relative;
+  }
+
+  .c1::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 52px;
+    position: absolute;
+    left: 0;
+    pointer-events: none;
+    background: transparent;
+    z-index: 1;
+    opacity: 0;
+    -webkit-transition: 0.3s opacity ease-out;
+    transition: 0.3s opacity ease-out;
+    bottom: 0;
+    background: linear-gradient(0deg,#ffffffff 0%,#ffffff00 100%);
+  }
+}
+
+@media (min-width:976px) {
+  .c2 {
+    min-height: 0;
+    -webkit-box-flex: 1;
+    -webkit-flex-grow: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    -webkit-flex-shrink: 1;
+    -ms-flex-negative: 1;
+    flex-shrink: 1;
+    -webkit-flex-basis: auto;
+    -ms-flex-preferred-size: auto;
+    flex-basis: auto;
+    overflow-y: auto;
+  }
+}
+
+@media (min-width:976px) {
+  .c0 {
+    height: 220px;
+  }
+}
+
+<div
+  className="c0 c1"
+>
+  <div
+    className="c2"
+  >
+    <div
+      className="c3"
+    >
+      <div
+        className="c4"
+      />
+      <ul
+        className="c5"
+      >
+        <li
+          className="c6 c7"
+        >
+          Lorem ipsum dolor sit amet
+        </li>
+        <li
+          className="c6 c7"
+        >
+          Sed consequat erat lacinia
+        </li>
+        <li
+          className="c6 c7"
+        >
+          Class aptent taciti sociosqu
+        </li>
+        <li
+          className="c6 c7"
+        >
+          Aliquam bibendum tortor dui
+        </li>
+        <li
+          className="c6 c7"
+        >
+          Quisque ac ullamcorper eros
+        </li>
+        <li
+          className="c6 c7"
+        >
+          Etiam urna elit, mollis vel arcu id
+        </li>
+        <li
+          className="c6 c7"
+        >
+          Sed consequat erat lacinia
+        </li>
+        <li
+          className="c6 c7"
+        >
+          Aliquam bibendum tortor dui
+        </li>
+      </ul>
+      <div
+        className="c8"
+      />
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Atoms | FadedScroll With Height Of Fade Changed 1`] = `
+.c2 {
+  position: relative;
+}
+
+.c7 {
+  height: 4px;
+  width: 4px;
+  position: absolute;
+  right: 0;
+  pointer-events: none;
+  bottom: 0;
+}
+
+.c3 {
+  height: 4px;
+  width: 4px;
+  position: absolute;
+  right: 0;
+  pointer-events: none;
+  top: 0;
+}
+
+.c4 {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.c6 {
+  display: block;
+}
+
+.c5 {
+  padding: 8px;
+}
+
+@media (min-width:976px) {
+  .c0 {
+    position: relative;
+  }
+
+  .c0::before {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 20px;
+    position: absolute;
+    left: 0;
+    pointer-events: none;
+    background: transparent;
+    z-index: 1;
+    opacity: 0;
+    -webkit-transition: 0.3s opacity ease-out;
+    transition: 0.3s opacity ease-out;
+    top: 0;
+    background: linear-gradient(0deg,#ffffff00 0%,#ffffffff 100%);
+  }
+}
+
+@media (min-width:976px) {
+  .c0 {
+    position: relative;
+  }
+
+  .c0::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 20px;
+    position: absolute;
+    left: 0;
+    pointer-events: none;
+    background: transparent;
+    z-index: 1;
+    opacity: 0;
+    -webkit-transition: 0.3s opacity ease-out;
+    transition: 0.3s opacity ease-out;
+    bottom: 0;
+    background: linear-gradient(0deg,#ffffffff 0%,#ffffff00 100%);
+  }
+}
+
+@media (min-width:976px) {
+  .c1 {
+    max-height: 180px;
+    overflow-y: auto;
+  }
+}
+
+<div
+  className="c0"
+>
+  <div
+    className="c1"
+  >
+    <div
+      className="c2"
+    >
+      <div
+        className="c3"
+      />
+      <ul
+        className="c4"
+      >
+        <li
+          className="c5 c6"
+        >
+          Lorem ipsum dolor sit amet
+        </li>
+        <li
+          className="c5 c6"
+        >
+          Sed consequat erat lacinia
+        </li>
+        <li
+          className="c5 c6"
+        >
+          Class aptent taciti sociosqu
+        </li>
+        <li
+          className="c5 c6"
+        >
+          Aliquam bibendum tortor dui
+        </li>
+        <li
+          className="c5 c6"
+        >
+          Quisque ac ullamcorper eros
+        </li>
+        <li
+          className="c5 c6"
+        >
+          Etiam urna elit, mollis vel arcu id
+        </li>
+        <li
+          className="c5 c6"
+        >
+          Sed consequat erat lacinia
+        </li>
+        <li
+          className="c5 c6"
+        >
+          Aliquam bibendum tortor dui
+        </li>
+      </ul>
+      <div
+        className="c7"
+      />
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Atoms | FadedScroll With Mobile Fade Enabled 1`] = `
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  min-height: 0;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  -webkit-flex-shrink: 1;
+  -ms-flex-negative: 1;
+  flex-shrink: 1;
+  -webkit-flex-basis: auto;
+  -ms-flex-preferred-size: auto;
+  flex-basis: auto;
+  position: relative;
+  position: relative;
+}
+
+.c1::before {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 52px;
+  position: absolute;
+  left: 0;
+  pointer-events: none;
+  background: transparent;
+  z-index: 1;
+  opacity: 0;
+  -webkit-transition: 0.3s opacity ease-out;
+  transition: 0.3s opacity ease-out;
+  top: 0;
+  background: linear-gradient(0deg,#ffffff00 0%,#ffffffff 100%);
+}
+
+.c1::after {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 52px;
+  position: absolute;
+  left: 0;
+  pointer-events: none;
+  background: transparent;
+  z-index: 1;
+  opacity: 0;
+  -webkit-transition: 0.3s opacity ease-out;
+  transition: 0.3s opacity ease-out;
+  bottom: 0;
+  background: linear-gradient(0deg,#ffffffff 0%,#ffffff00 100%);
+}
+
+.c2 {
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  min-height: 0;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  -webkit-flex-shrink: 1;
+  -ms-flex-negative: 1;
+  flex-shrink: 1;
+  -webkit-flex-basis: auto;
+  -ms-flex-preferred-size: auto;
+  flex-basis: auto;
+  overflow-y: auto;
+}
+
+.c3 {
+  position: relative;
+}
+
+.c8 {
+  height: 4px;
+  width: 4px;
+  position: absolute;
+  right: 0;
+  pointer-events: none;
+  bottom: 0;
+}
+
+.c4 {
+  height: 4px;
+  width: 4px;
+  position: absolute;
+  right: 0;
+  pointer-events: none;
+  top: 0;
+}
+
+.c5 {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.c7 {
+  display: block;
+}
+
+.c0 {
+  height: 220px;
+}
+
+.c6 {
+  padding: 8px;
+}
+
+<div
+  className="c0 c1"
+>
+  <div
+    className="c2"
+  >
+    <div
+      className="c3"
+    >
+      <div
+        className="c4"
+      />
+      <ul
+        className="c5"
+      >
+        <li
+          className="c6 c7"
+        >
+          Lorem ipsum dolor sit amet
+        </li>
+        <li
+          className="c6 c7"
+        >
+          Sed consequat erat lacinia
+        </li>
+        <li
+          className="c6 c7"
+        >
+          Class aptent taciti sociosqu
+        </li>
+        <li
+          className="c6 c7"
+        >
+          Aliquam bibendum tortor dui
+        </li>
+        <li
+          className="c6 c7"
+        >
+          Quisque ac ullamcorper eros
+        </li>
+        <li
+          className="c6 c7"
+        >
+          Etiam urna elit, mollis vel arcu id
+        </li>
+        <li
+          className="c6 c7"
+        >
+          Sed consequat erat lacinia
+        </li>
+        <li
+          className="c6 c7"
+        >
+          Aliquam bibendum tortor dui
+        </li>
+      </ul>
+      <div
+        className="c8"
+      />
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Atoms | FadedScroll With Top Fade Disabled 1`] = `
+.c2 {
+  position: relative;
+}
+
+.c6 {
+  height: 4px;
+  width: 4px;
+  position: absolute;
+  right: 0;
+  pointer-events: none;
+  bottom: 0;
+}
+
+.c3 {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.c5 {
+  display: block;
+}
+
+.c4 {
+  padding: 8px;
+}
+
+@media (min-width:976px) {
+  .c0 {
+    position: relative;
+  }
+
+  .c0::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 52px;
+    position: absolute;
+    left: 0;
+    pointer-events: none;
+    background: transparent;
+    z-index: 1;
+    opacity: 0;
+    -webkit-transition: 0.3s opacity ease-out;
+    transition: 0.3s opacity ease-out;
+    bottom: 0;
+    background: linear-gradient(0deg,#ffffffff 0%,#ffffff00 100%);
+  }
+}
+
+@media (min-width:976px) {
+  .c1 {
+    max-height: 180px;
+    overflow-y: auto;
+  }
+}
+
+<div
+  className="c0"
+>
+  <div
+    className="c1"
+  >
+    <div
+      className="c2"
+    >
+      <ul
+        className="c3"
+      >
+        <li
+          className="c4 c5"
+        >
+          Lorem ipsum dolor sit amet
+        </li>
+        <li
+          className="c4 c5"
+        >
+          Sed consequat erat lacinia
+        </li>
+        <li
+          className="c4 c5"
+        >
+          Class aptent taciti sociosqu
+        </li>
+        <li
+          className="c4 c5"
+        >
+          Aliquam bibendum tortor dui
+        </li>
+        <li
+          className="c4 c5"
+        >
+          Quisque ac ullamcorper eros
+        </li>
+        <li
+          className="c4 c5"
+        >
+          Etiam urna elit, mollis vel arcu id
+        </li>
+        <li
+          className="c4 c5"
+        >
+          Sed consequat erat lacinia
+        </li>
+        <li
+          className="c4 c5"
+        >
+          Aliquam bibendum tortor dui
+        </li>
+      </ul>
+      <div
+        className="c6"
+      />
+    </div>
+  </div>
+</div>
+`;

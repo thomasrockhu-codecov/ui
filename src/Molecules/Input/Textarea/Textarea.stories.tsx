@@ -211,3 +211,11 @@ export const hiddenLabel = () => (
 hiddenLabel.story = {
   name: 'Hidden label',
 };
+
+export const withLabelTooltip = () => (
+  <Input.Textarea label="Label" labelTooltip="Tooltip content" placeholder="Placeholder" />
+);
+
+withLabelTooltip.story = {
+  name: 'With tooltip as label addon',
+};

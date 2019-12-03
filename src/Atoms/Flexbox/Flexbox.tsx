@@ -99,6 +99,8 @@ const sanitizeProps = R.omit([
   'basis',
   'order',
   'justifyContent',
+  'width',
+  'flex',
 ]);
 const SanitizedDiv = React.forwardRef((props: Props, ref: React.Ref<HTMLDivElement>) => (
   <div {...sanitizeProps(props)} ref={ref} />

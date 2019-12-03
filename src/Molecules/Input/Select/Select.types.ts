@@ -1,59 +1,92 @@
-export type ActionTypes =
-  | 'Select.Open'
-  | 'Select.Close'
-  | 'Select.Toggle'
-  | 'Select.SelectValue'
-  | 'Select.DeselectValue'
-  | 'Select.SyncState';
+import { SYMBOL_ALL } from './lib/constants';
 
-export type ComponentTypes = 'ListItem' | 'List' | 'SelectedValue';
-export type Action = { type: ActionTypes; payload?: any };
+export type ComponentTypes = 'ListItem' | 'List' | 'SelectedValue' | 'Search' | 'Action';
+export type Action = {
+  label: string;
+  icon?: React.ReactNode; // maybe keyof typeof Icon?
+  onSelect: () => void;
+  disabled?: boolean;
+};
 
 export type Props = {
+  /**
+   * Required for proper functioning
+   * If omitted will lead to buggy onClick
+   */
+  id: string;
   options: Option[];
   value?: any;
-  error?: React.ReactNode;
-  extraInfo?: React.ReactNode;
+  error?: string;
+  extraInfo?: string;
   success?: boolean;
   hideLabel?: boolean;
   placeholder?: string;
-  label: React.ReactNode;
+  label: string;
   name?: string;
+
+  /**
+   * @default 'm'
+   */
   size?: 's' | 'm';
   disabled?: boolean;
   onChange?: (newValue: Option[]) => void;
   onFocus?: React.FocusEventHandler;
   onBlur?: React.FocusEventHandler;
   fullWidth?: boolean;
+  /**
+   * For a simple Input.Select
+   * width represents both FormField width and DropdownBubble width.
+   * If you pass noFormField, then it's gonna be used only for DropdownBubble
+   */
   width?: string;
+  /**
+   * Maximum height that list can be.
+   */
+  listMaxHeight?: string;
+  /**
+   * @default 'right'
+   * Corresponds to where list should be related to SelectedValue component.
+   * 'left' means list gonna be to the left-bottom from SelectedValue.
+   * Makes sense only if noFormField is 'true'
+   */
+  listPosition?: 'left' | 'right';
   className?: string;
-  components?: Partial<
-    Record<ComponentTypes, (props: any, ref: React.Ref<any>) => React.ReactNode>
-  >;
-  reducer?: (state: SelectState, action: Action) => SelectState;
-  initialState?: any;
-  /** use this flag if you
+  components?: Partial<Record<ComponentTypes, React.ComponentType<any>>>;
+  /**
+   * Removes FormField styles from SelectedValue wrapper.
+   * Use this flag if you
    * are using dropdown not
    * within form
    * e.g. a link with dropdown
    */
   noFormField?: boolean;
-  /** focus first option on open */
-  autoFocusFirstOption?: boolean;
+  /**
+   * Auto focus this field on mount
+   */
+  autoFocus?: boolean;
+
+  /**
+   * Show search input before items
+   */
+  showSearch?: boolean;
+  multiselect?: boolean;
+  actions?: Array<Action>;
+  /**
+   * Controlled mode for search field
+   * Use with showSearch only
+   */
+  searchQuery?: string;
+  /**
+   * Controlled mode for search field
+   * Use with showSearch only
+   */
+  onSearchQueryChange?: (e: { type: string; payload: string }) => void;
 };
 
-export type OptionBase = {
+export type Option = {
+  [K: string]: any;
   label: string;
   value: any;
   disabled?: boolean;
-};
-
-export type Option = OptionBase & Record<any, any>;
-
-export type SelectState = {
-  open: boolean;
-  initialized: boolean;
-  options: Array<Option>;
-  placeholder: React.ReactNode;
-  value: Array<Option>;
+  [SYMBOL_ALL]?: boolean;
 };

@@ -1,13 +1,19 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Storyshots Molecules | CardWithTitle Card With Title As Article Most Card With Title Should Be Article 1`] = `
-.c0 {
-  background: #FFFFFF;
-  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.03);
-}
-
 .c1 {
   padding: 20px;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  max-height: 100%;
 }
 
 <article
@@ -23,13 +29,19 @@ exports[`Storyshots Molecules | CardWithTitle Card With Title As Article Most Ca
 `;
 
 exports[`Storyshots Molecules | CardWithTitle Card With Title As Section 1`] = `
-.c0 {
-  background: #FFFFFF;
-  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.03);
-}
-
 .c1 {
   padding: 20px;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  max-height: 100%;
 }
 
 <section
@@ -45,20 +57,31 @@ exports[`Storyshots Molecules | CardWithTitle Card With Title As Section 1`] = `
 `;
 
 exports[`Storyshots Molecules | CardWithTitle Default Story 1`] = `
-.c0 {
+.c1 {
   background: #FFFFFF;
   box-shadow: 0 2px 2px 0 rgba(0,0,0,0.03);
 }
 
-.c1 {
+.c2 {
   padding: 20px;
 }
 
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  max-height: 100%;
+}
+
 <div
-  className="c0"
+  className="c0 c1"
 >
   <header
-    className="c1"
+    className="c2"
   >
     Konton
   </header>
@@ -67,16 +90,22 @@ exports[`Storyshots Molecules | CardWithTitle Default Story 1`] = `
 `;
 
 exports[`Storyshots Molecules | CardWithTitle Integration Card With Title With Custom Component As Title 1`] = `
-.c0 {
+.c10 {
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+}
+
+.c1 {
   background: #FFFFFF;
   box-shadow: 0 2px 2px 0 rgba(0,0,0,0.03);
 }
 
-.c3 {
+.c4 {
   box-sizing: border-box;
 }
 
-.c2 {
+.c3 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -95,7 +124,7 @@ exports[`Storyshots Molecules | CardWithTitle Integration Card With Title With C
   align-items: center;
 }
 
-.c8 {
+.c9 {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -110,7 +139,7 @@ exports[`Storyshots Molecules | CardWithTitle Integration Card With Title With C
   vertical-align: middle;
 }
 
-.c4 {
+.c5 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
   margin: 0;
@@ -119,7 +148,7 @@ exports[`Storyshots Molecules | CardWithTitle Integration Card With Title With C
   line-height: 1.3333333333333333;
 }
 
-.c6 {
+.c7 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
   margin: 0;
@@ -128,11 +157,22 @@ exports[`Storyshots Molecules | CardWithTitle Integration Card With Title With C
   line-height: 1.4285714285714286;
 }
 
-.c1 {
+.c2 {
   padding: 20px;
 }
 
-.c5 {
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  max-height: 100%;
+}
+
+.c6 {
   display: inline;
   padding: 0;
   color: #0046FF;
@@ -140,65 +180,65 @@ exports[`Storyshots Molecules | CardWithTitle Integration Card With Title With C
   text-decoration: none;
 }
 
-.c5:hover {
+.c6:hover {
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 
-.c9 {
-  padding: 20px;
+.c11 {
+  display: inline-block;
+  max-width: 400px;
 }
 
-.c7 {
+.c8 {
   padding-left: 4px;
 }
 
 @media (min-width:760px) {
-  .c4 {
+  .c5 {
     font-size: 20px;
     line-height: 1.2;
   }
 }
 
 <div
-  className="c0"
+  className="c0 c1"
 >
   <header
-    className="c1"
+    className="c2"
   >
     <div
-      className="c2"
+      className="c3"
     >
       <div
-        className="c3"
+        className="c4"
       >
         <h2
-          className="c4"
+          className="c5"
           type="title3"
         >
           Konton
         </h2>
       </div>
       <div
-        className="c3"
+        className="c4"
       >
         <a
-          className="c5"
+          className="c6"
           href="#/www.google.com"
           onClick={[Function]}
         >
           <span
-            className="c6"
+            className="c7"
           >
             Marknadsöversikt
           </span>
           <svg
             aria-hidden="true"
-            className="c7 c8"
+            className="c8 c9"
             focusable="false"
             preserveAspectRatio="xMidYMid meet"
             role="presentation"
-            size={3}
             viewBox="0 0 24 24"
           >
             <polygon
@@ -210,11 +250,385 @@ exports[`Storyshots Molecules | CardWithTitle Integration Card With Title With C
     </div>
   </header>
   <div
-    className="c9"
+    className="c10"
   >
-    A CardWithTitles with two titles. 
-    <br />
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ac lectus aliquam, scelerisque est eget, lobortis massa. Praesent in pretium orci. Phasellus est sapien, maximus at nulla ac, condimentum dictum ante. Sed consequat erat lacinia, molestie augue vitae, efficitur purus. In venenatis elit nec tortor condimentum, sit amet elementum magna fermentum. Phasellus dictum non augue vitae pellentesque. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Praesent rutrum egestas sollicitudin. Cras semper, mi vitae vulputate aliquam, tortor ante maximus libero, vitae maximus velit dui quis augue. Aenean condimentum molestie ante, nec rhoncus nunc aliquet non. Aliquam bibendum tortor dui, eget porttitor nibh fermentum eu. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Suspendisse nec magna lectus. Fusce posuere nisi vel purus faucibus sodales. Quisque ac ullamcorper eros, sed lobortis risus. Sed eu magna mi. Vestibulum accumsan porta velit. Donec ligula arcu, cursus eu nisl vel, molestie pretium neque. Etiam urna elit, mollis vel arcu id, vulputate mattis nisi. Fusce eget odio id ipsum consectetur feugiat vitae ut tortor. Aliquam non tempor nibh, scelerisque placerat eros. Nulla facilisi. Nunc tempor congue neque a cursus. Quisque tristique eros in fermentum feugiat.
+    <span
+      className="c11"
+    >
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ac lectus aliquam, scelerisque est eget, lobortis massa. Praesent in pretium orci. Phasellus est sapien, maximus at nulla ac, condimentum dictum ante. Sed consequat erat lacinia, molestie augue vitae, efficitur purus. In venenatis elit nec tortor condimentum, sit amet elementum magna fermentum. Phasellus dictum non augue vitae pellentesque. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Praesent rutrum egestas sollicitudin. Cras semper, mi vitae vulputate aliquam, tortor ante maximus libero, vitae maximus velit dui quis augue. Aenean condimentum molestie ante, nec rhoncus nunc aliquet non. Aliquam bibendum tortor dui, eget porttitor nibh fermentum eu. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Suspendisse nec magna lectus. Fusce posuere nisi vel purus faucibus sodales. Quisque ac ullamcorper eros, sed lobortis risus. Sed eu magna mi. Vestibulum accumsan porta velit. Donec ligula arcu, cursus eu nisl vel, molestie pretium neque. Etiam urna elit, mollis vel arcu id, vulputate mattis nisi. Fusce eget odio id ipsum consectetur feugiat vitae ut tortor. Aliquam non tempor nibh, scelerisque placerat eros. Nulla facilisi.
+    </span>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Molecules | CardWithTitle Integration Faded Scroll With Height From Parent 1`] = `
+.c9 {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.c2 {
+  background: #FFFFFF;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.03);
+}
+
+.c5 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  min-height: 0;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  -webkit-flex-shrink: 1;
+  -ms-flex-negative: 1;
+  flex-shrink: 1;
+  -webkit-flex-basis: auto;
+  -ms-flex-preferred-size: auto;
+  flex-basis: auto;
+}
+
+.c6 {
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+}
+
+.c7 {
+  position: relative;
+}
+
+.c11 {
+  height: 4px;
+  width: 4px;
+  position: absolute;
+  right: 0;
+  pointer-events: none;
+  bottom: 0;
+}
+
+.c8 {
+  height: 4px;
+  width: 4px;
+  position: absolute;
+  right: 0;
+  pointer-events: none;
+  top: 0;
+}
+
+.c4 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.3333333333333333;
+}
+
+.c3 {
+  padding: 20px;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  max-height: 100%;
+}
+
+.c10 {
+  display: inline-block;
+  max-width: 400px;
+}
+
+@media (min-width:976px) {
+  .c5 {
+    position: relative;
+  }
+
+  .c5::before {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 52px;
+    position: absolute;
+    left: 0;
+    pointer-events: none;
+    background: transparent;
+    z-index: 1;
+    opacity: 0;
+    -webkit-transition: 0.3s opacity ease-out;
+    transition: 0.3s opacity ease-out;
+    top: 0;
+    background: linear-gradient(0deg,#ffffff00 0%,#ffffffff 100%);
+  }
+}
+
+@media (min-width:976px) {
+  .c5 {
+    position: relative;
+  }
+
+  .c5::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 52px;
+    position: absolute;
+    left: 0;
+    pointer-events: none;
+    background: transparent;
+    z-index: 1;
+    opacity: 0;
+    -webkit-transition: 0.3s opacity ease-out;
+    transition: 0.3s opacity ease-out;
+    bottom: 0;
+    background: linear-gradient(0deg,#ffffffff 0%,#ffffff00 100%);
+  }
+}
+
+@media (min-width:976px) {
+  .c6 {
+    min-height: 0;
+    -webkit-box-flex: 1;
+    -webkit-flex-grow: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    -webkit-flex-shrink: 1;
+    -ms-flex-negative: 1;
+    flex-shrink: 1;
+    -webkit-flex-basis: auto;
+    -ms-flex-preferred-size: auto;
+    flex-basis: auto;
+    overflow-y: auto;
+  }
+}
+
+@media (min-width:760px) {
+  .c4 {
+    font-size: 20px;
+    line-height: 1.2;
+  }
+}
+
+@media (min-width:976px) {
+  .c0 {
+    height: 250px;
+  }
+}
+
+<div
+  className="c0 c1 c2"
+>
+  <header
+    className="c3"
+  >
+    <h2
+      className="c4"
+      type="title3"
+    >
+      Konton
+    </h2>
+  </header>
+  <div
+    className="c5"
+  >
+    <div
+      className="c6"
+    >
+      <div
+        className="c7"
+      >
+        <div
+          className="c8"
+        />
+        <div
+          className="c9"
+        >
+          <span
+            className="c10"
+          >
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ac lectus aliquam, scelerisque est eget, lobortis massa. Praesent in pretium orci. Phasellus est sapien, maximus at nulla ac, condimentum dictum ante. Sed consequat erat lacinia, molestie augue vitae, efficitur purus. In venenatis elit nec tortor condimentum, sit amet elementum magna fermentum. Phasellus dictum non augue vitae pellentesque. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Praesent rutrum egestas sollicitudin. Cras semper, mi vitae vulputate aliquam, tortor ante maximus libero, vitae maximus velit dui quis augue. Aenean condimentum molestie ante, nec rhoncus nunc aliquet non. Aliquam bibendum tortor dui, eget porttitor nibh fermentum eu. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Suspendisse nec magna lectus. Fusce posuere nisi vel purus faucibus sodales. Quisque ac ullamcorper eros, sed lobortis risus. Sed eu magna mi. Vestibulum accumsan porta velit. Donec ligula arcu, cursus eu nisl vel, molestie pretium neque. Etiam urna elit, mollis vel arcu id, vulputate mattis nisi. Fusce eget odio id ipsum consectetur feugiat vitae ut tortor. Aliquam non tempor nibh, scelerisque placerat eros. Nulla facilisi.
+          </span>
+        </div>
+        <div
+          className="c11"
+        />
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Molecules | CardWithTitle Integration With Faded Scroll 1`] = `
+.c8 {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.c1 {
+  background: #FFFFFF;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.03);
+}
+
+.c6 {
+  position: relative;
+}
+
+.c10 {
+  height: 4px;
+  width: 4px;
+  position: absolute;
+  right: 0;
+  pointer-events: none;
+  bottom: 0;
+}
+
+.c7 {
+  height: 4px;
+  width: 4px;
+  position: absolute;
+  right: 0;
+  pointer-events: none;
+  top: 0;
+}
+
+.c3 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.3333333333333333;
+}
+
+.c2 {
+  padding: 20px;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  max-height: 100%;
+}
+
+.c9 {
+  display: inline-block;
+  max-width: 400px;
+}
+
+@media (min-width:976px) {
+  .c4 {
+    position: relative;
+  }
+
+  .c4::before {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 52px;
+    position: absolute;
+    left: 0;
+    pointer-events: none;
+    background: transparent;
+    z-index: 1;
+    opacity: 0;
+    -webkit-transition: 0.3s opacity ease-out;
+    transition: 0.3s opacity ease-out;
+    top: 0;
+    background: linear-gradient(0deg,#ffffff00 0%,#ffffffff 100%);
+  }
+}
+
+@media (min-width:976px) {
+  .c4 {
+    position: relative;
+  }
+
+  .c4::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 52px;
+    position: absolute;
+    left: 0;
+    pointer-events: none;
+    background: transparent;
+    z-index: 1;
+    opacity: 0;
+    -webkit-transition: 0.3s opacity ease-out;
+    transition: 0.3s opacity ease-out;
+    bottom: 0;
+    background: linear-gradient(0deg,#ffffffff 0%,#ffffff00 100%);
+  }
+}
+
+@media (min-width:976px) {
+  .c5 {
+    max-height: 200px;
+    overflow-y: auto;
+  }
+}
+
+@media (min-width:760px) {
+  .c3 {
+    font-size: 20px;
+    line-height: 1.2;
+  }
+}
+
+<div
+  className="c0 c1"
+>
+  <header
+    className="c2"
+  >
+    <h2
+      className="c3"
+      type="title3"
+    >
+      Konton
+    </h2>
+  </header>
+  <div
+    className="c4"
+  >
+    <div
+      className="c5"
+    >
+      <div
+        className="c6"
+      >
+        <div
+          className="c7"
+        />
+        <div
+          className="c8"
+        >
+          <span
+            className="c9"
+          >
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ac lectus aliquam, scelerisque est eget, lobortis massa. Praesent in pretium orci. Phasellus est sapien, maximus at nulla ac, condimentum dictum ante. Sed consequat erat lacinia, molestie augue vitae, efficitur purus. In venenatis elit nec tortor condimentum, sit amet elementum magna fermentum. Phasellus dictum non augue vitae pellentesque. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Praesent rutrum egestas sollicitudin. Cras semper, mi vitae vulputate aliquam, tortor ante maximus libero, vitae maximus velit dui quis augue. Aenean condimentum molestie ante, nec rhoncus nunc aliquet non. Aliquam bibendum tortor dui, eget porttitor nibh fermentum eu. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Suspendisse nec magna lectus. Fusce posuere nisi vel purus faucibus sodales. Quisque ac ullamcorper eros, sed lobortis risus. Sed eu magna mi. Vestibulum accumsan porta velit. Donec ligula arcu, cursus eu nisl vel, molestie pretium neque. Etiam urna elit, mollis vel arcu id, vulputate mattis nisi. Fusce eget odio id ipsum consectetur feugiat vitae ut tortor. Aliquam non tempor nibh, scelerisque placerat eros. Nulla facilisi.
+          </span>
+        </div>
+        <div
+          className="c10"
+        />
+      </div>
+    </div>
   </div>
 </div>
 `;

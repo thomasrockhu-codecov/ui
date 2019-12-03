@@ -1,6 +1,6 @@
 import React from 'react';
 import { BrowserRouter } from 'react-router-dom';
-import { Typography, LinkSell } from '../..';
+import { LinkSell } from '../..';
 
 export default {
   title: 'Molecules | LinkSell',
@@ -12,9 +12,7 @@ export default {
 export const linkSell = () => {
   return (
     <BrowserRouter>
-      <Typography type="primary">
-        <LinkSell to="somewhere">Sell</LinkSell>
-      </Typography>
+      <LinkSell to="somewhere">Sell</LinkSell>
     </BrowserRouter>
   );
 };
@@ -26,9 +24,7 @@ linkSell.story = {
 export const linkSellDisabled = () => {
   return (
     <BrowserRouter>
-      <Typography type="primary">
-        <LinkSell disabled>Sell</LinkSell>
-      </Typography>
+      <LinkSell disabled>Sell</LinkSell>
     </BrowserRouter>
   );
 };
@@ -40,11 +36,9 @@ linkSellDisabled.story = {
 export const linkSellWithRelAsNofollow = () => {
   return (
     <BrowserRouter>
-      <Typography type="primary">
-        <LinkSell to="somewhere" rel="nofollow">
-          Sell
-        </LinkSell>
-      </Typography>
+      <LinkSell to="somewhere" rel="nofollow">
+        Sell
+      </LinkSell>
     </BrowserRouter>
   );
 };

@@ -4,8 +4,8 @@ import { BaseProps } from '../IconBase.types';
 
 export const Minus = (props: BaseProps) => {
   return (
-    <IconBase {...props}>
-      <path d="M24 11v2H0v-2z" fillRule="evenodd" />
+    <IconBase {...props} viewBox="0 0 12 2">
+      <path d="M12.166 0v2h-12V0z" fillRule="evenodd" />
     </IconBase>
   );
 };
