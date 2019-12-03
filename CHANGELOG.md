@@ -1,3 +1,10 @@
+## [2.7.3](https://github.com/nordnet/ui/compare/v2.7.2...v2.7.3) (2019-12-03)
+
+
+### Bug Fixes
+
+* add type to link that looks like button ([8d36c74](https://github.com/nordnet/ui/commit/8d36c74))
+
 ## [2.7.2](https://github.com/nordnet/ui/compare/v2.7.1...v2.7.2) (2019-12-02)
 
 
