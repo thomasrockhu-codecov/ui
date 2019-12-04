@@ -1,3 +1,10 @@
+## [2.7.4](https://github.com/nordnet/ui/compare/v2.7.3...v2.7.4) (2019-12-04)
+
+
+### Bug Fixes
+
+* omit size from button link ([3be80c9](https://github.com/nordnet/ui/commit/3be80c9))
+
 ## [2.7.3](https://github.com/nordnet/ui/compare/v2.7.2...v2.7.3) (2019-12-03)
 
 
