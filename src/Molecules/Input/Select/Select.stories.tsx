@@ -3,6 +3,8 @@ import React from 'react';
 import { action } from '@storybook/addon-actions';
 import R from 'ramda';
 import styled from 'styled-components';
+import { StateChart } from '@statecharts/xstate-viz';
+import { SelectMachine } from './machine';
 import {
   Input,
   Avatar,
@@ -1117,6 +1119,7 @@ export const listPositionedToTheLeft = () =>
     );
   });
 
+export const machine = () => <StateChart machine={SelectMachine} onSave={() => {}} />;
 export const onSearchQueryChange = () => (
   <Input.Select
     id="success-select"

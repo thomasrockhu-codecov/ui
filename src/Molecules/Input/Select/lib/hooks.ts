@@ -106,17 +106,17 @@ export const useMultiRef = () => {
 
 export const useDelegateKeyDownToMachine = (send: Function, selectOnSpace: boolean) => {
   const sendBatched = useBatchedSend(send);
-
+  const SPACE = ' ';
   const keyActionMap = new Map([
     ['ArrowDown', 'FOCUS_NEXT_ITEM'],
     ['ArrowUp', 'FOCUS_PREV_ITEM'],
-    ['Escape', 'TOGGLE'],
+    ['Escape', 'CLOSE'],
     ['Enter', 'SELECT_FOCUSED_ITEM'],
     ['Tab', ''],
   ]);
 
   if (selectOnSpace) {
-    keyActionMap.set(' ', 'SELECT_FOCUSED_ITEM');
+    keyActionMap.set(SPACE, 'SELECT_FOCUSED_ITEM');
   }
 
   return (e: React.KeyboardEvent) => {
