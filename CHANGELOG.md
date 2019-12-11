@@ -1,3 +1,10 @@
+## [2.8.1](https://github.com/nordnet/ui/compare/v2.8.0...v2.8.1) (2019-12-11)
+
+
+### Bug Fixes
+
+* hook off interpreter event ([22cb394](https://github.com/nordnet/ui/commit/22cb394))
+
 # [2.8.0](https://github.com/nordnet/ui/compare/v2.7.4...v2.8.0) (2019-12-06)
 
 
