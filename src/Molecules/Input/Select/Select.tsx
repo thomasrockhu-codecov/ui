@@ -90,9 +90,14 @@ const Select = (props: Props) => {
   const currentPropsRef = React.useRef(props);
   currentPropsRef.current = props;
   React.useEffect(() => {
-    service.onEvent(
-      e => trackContext && trackContext.track('Input.Select', e as any, currentPropsRef.current),
-    );
+    const listener = (e: any) =>
+      trackContext && trackContext.track('Input.Select', e as any, currentPropsRef.current);
+
+    service.onEvent(listener);
+
+    return () => {
+      service.off(listener);
+    };
   }, [trackContext, service]);
 
   React.useEffect(() => {
