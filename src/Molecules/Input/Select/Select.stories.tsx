@@ -1137,7 +1137,11 @@ export const listPositionedToTheLeft = () =>
     );
   });
 
-export const machine = () => <StateChart machine={SelectMachine} onSave={() => {}} />;
+export const DocumentationCore = () => <StateChart machine={SelectMachine} onSave={() => {}} />;
+DocumentationCore.story = {
+  name: 'Documentation: Core',
+};
+
 export const onSearchQueryChange = () => (
   <Input.Select
     id="success-select"
