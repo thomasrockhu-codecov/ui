@@ -1,3 +1,15 @@
+# [2.9.0](https://github.com/nordnet/ui/compare/v2.8.1...v2.9.0) (2019-12-13)
+
+
+### Bug Fixes
+
+* rename label ([5fd428c](https://github.com/nordnet/ui/commit/5fd428c))
+
+
+### Features
+
+* max length prop to text input ([dbf318e](https://github.com/nordnet/ui/commit/dbf318e))
+
 ## [2.8.1](https://github.com/nordnet/ui/compare/v2.8.0...v2.8.1) (2019-12-11)
 
 
