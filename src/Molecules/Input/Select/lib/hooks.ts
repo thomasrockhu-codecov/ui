@@ -168,17 +168,22 @@ export const useOnBlurAndOnFocus = (
   send: ContextType[1],
   onBlur: Function | undefined,
   onFocus: Function | undefined,
-  wrapperRef: React.RefObject<any>,
+  formFieldRef: React.RefObject<any>,
   isFirstRender: boolean,
+  selectRef: React.RefObject<any>,
 ) => {
   const isPassive = machineState.matches('interaction.enabled.idle');
   React.useEffect(() => {
-    if (!isFirstRender && isPassive && onBlur) onBlur({ target: wrapperRef.current });
+    // Using the real select ref here
+    // for the name and id to be on it
+    if (!isFirstRender && isPassive && onBlur) onBlur({ target: selectRef.current });
   }, [isPassive]); // eslint-disable-line react-hooks/exhaustive-deps
 
   const isActive = machineState.matches('interaction.enabled.active');
   React.useEffect(() => {
-    if (isActive && onFocus) onFocus({ target: wrapperRef.current });
+    // Using the real select ref here
+    // for the name and id to be on it
+    if (isActive && onFocus) onFocus({ target: selectRef.current });
   }, [isActive]); // eslint-disable-line react-hooks/exhaustive-deps
 
   const handleFocus = React.useCallback(
@@ -192,12 +197,14 @@ export const useOnBlurAndOnFocus = (
     _ => {
       setTimeout(() => {
         // Need setTimeout for activeElement to be correct
-        if (wrapperRef.current && !wrapperRef.current.contains(document.activeElement)) {
+        // Using formFieldRef to check if the blur event's target
+        // is within the whole component subtree
+        if (formFieldRef.current && !formFieldRef.current.contains(document.activeElement)) {
           send('BLUR');
         }
       }, 1);
     },
-    [send, wrapperRef],
+    [send, formFieldRef],
   );
 
   return { handleFocus, handleBlur };
