@@ -1,3 +1,16 @@
+# [2.10.0](https://github.com/nordnet/ui/compare/v2.9.0...v2.10.0) (2019-12-13)
+
+
+### Bug Fixes
+
+* **select:** close->toggle for now ([1ca6d87](https://github.com/nordnet/ui/commit/1ca6d87))
+* **select:** wrap in div, fix formik onblur,onfocus handlers ([768e779](https://github.com/nordnet/ui/commit/768e779))
+
+
+### Features
+
+* **select:** get rid of forward ref where its not needed) ([a78284a](https://github.com/nordnet/ui/commit/a78284a))
+
 # [2.9.0](https://github.com/nordnet/ui/compare/v2.8.1...v2.9.0) (2019-12-13)
 
 
