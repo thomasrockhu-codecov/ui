@@ -289,7 +289,7 @@ export const small = () => (
     title={`Size = "s"`}
     items={[
       {
-        component: <Input.Text label="Label" size="s" placeholder="Placeholder" />,
+        component: <Input.Text label="Label23" size="s" placeholder="Placeholder" />,
         title: 'Default',
       },
       {
@@ -332,4 +332,12 @@ export const withLabelTooltip = () => (
 
 withLabelTooltip.story = {
   name: 'With tooltip as label addon',
+};
+
+export const withMaxLength = () => (
+  <Input.Text maxLength={3} label="has max length" placeholder="Placeholder" />
+);
+
+withMaxLength.story = {
+  name: 'With maxLength',
 };
