@@ -178,6 +178,7 @@ const Select = (props: Props) => {
   const [itemRefs, setItemRef] = useMultiRef();
   const listRef = React.useRef(null);
   const formFieldRef = React.useRef(null);
+  const inputRef = React.useRef(null);
   const searchRef = React.useRef(null);
 
   /******      Focus management      ******/
@@ -191,6 +192,7 @@ const Select = (props: Props) => {
     props.onFocus,
     formFieldRef,
     isFirstRender,
+    inputRef,
   );
 
   /******      Renderers      ******/
@@ -214,10 +216,11 @@ const Select = (props: Props) => {
   const multiselect = machineState.context.multiselect;
 
   return (
-    <>
+    <div className={props.className}>
       <HiddenSelect
         name={props.name}
         disabled={isDisabled}
+        ref={inputRef}
         aria-hidden="true"
         {...(multiselect ? { multiple: true } : {})}
         value={getValuesForNativeSelect(selectedItems, multiselect)}
@@ -292,7 +295,7 @@ const Select = (props: Props) => {
           )}
         </FormFieldOrFragment>
       </SelectStateContext.Provider>
-    </>
+    </div>
   );
 };
 
