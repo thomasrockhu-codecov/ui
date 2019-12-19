@@ -63,7 +63,7 @@ exports[`Storyshots Molecules | Modal Default Story 1`] = `
   left: 0;
   height: 100%;
   width: 100%;
-  z-index: 2;
+  z-index: 500;
 }
 
 .c8 {
@@ -204,7 +204,7 @@ exports[`Storyshots Molecules | Modal Default Story 1`] = `
             >
               <h2
                 className="c4"
-                id="1val-ModalTitle"
+                id="3val-ModalTitle"
                 type="title2"
               >
                 Dialog information
@@ -449,7 +449,7 @@ exports[`Storyshots Molecules | Modal Footer Story 1`] = `
   left: 0;
   height: 100%;
   width: 100%;
-  z-index: 2;
+  z-index: 500;
 }
 
 .c11 {
@@ -590,7 +590,7 @@ exports[`Storyshots Molecules | Modal Footer Story 1`] = `
             >
               <h2
                 className="c4"
-                id="3val-ModalTitle"
+                id="5val-ModalTitle"
                 type="title2"
               >
                 Dialog information
@@ -756,7 +756,7 @@ exports[`Storyshots Molecules | Modal Hide Close 1`] = `
   left: 0;
   height: 100%;
   width: 100%;
-  z-index: 2;
+  z-index: 500;
 }
 
 .c3 {
@@ -858,7 +858,7 @@ exports[`Storyshots Molecules | Modal Hide Close 1`] = `
             >
               <h2
                 className="c4"
-                id="9val-ModalTitle"
+                id="11val-ModalTitle"
                 type="title2"
               >
                 Dialog information
@@ -964,7 +964,7 @@ exports[`Storyshots Molecules | Modal Uncontrolled Behavior 1`] = `
   left: 0;
   height: 100%;
   width: 100%;
-  z-index: 2;
+  z-index: 500;
 }
 
 .c8 {
@@ -1099,7 +1099,7 @@ exports[`Storyshots Molecules | Modal Uncontrolled Behavior 1`] = `
             >
               <h2
                 className="c4"
-                id="7val-ModalTitle"
+                id="9val-ModalTitle"
                 type="title2"
               >
                 Dialog information
@@ -1249,7 +1249,7 @@ exports[`Storyshots Molecules | Modal Without Header 1`] = `
   left: 0;
   height: 100%;
   width: 100%;
-  z-index: 2;
+  z-index: 500;
 }
 
 .c7 {

@@ -18,7 +18,7 @@ const Backdrop = styled(Flexbox)`
   left: 0;
   height: 100%;
   width: 100%;
-  z-index: 2;
+  z-index: ${({ theme }) => theme.zIndex.modal};
 
   ${({ theme }) => theme.media.greaterThan(theme.breakpoints.sm)} {
     background-color: ${({ theme }) => theme.color.modalBackdrop};
