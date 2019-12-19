@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import { useUIDSeed } from 'react-uid';
 import { RemoveScroll } from 'react-remove-scroll';
 import FocusLock from 'react-focus-lock';
 import styled from 'styled-components';
@@ -7,6 +8,9 @@ import { InnerProps, DialogProps } from './Modal.types';
 import NormalizedElements from '../../common/NormalizedElements';
 import { isFunction } from '../../common/utils';
 import { Flexbox, Typography, Icon, Box, useKeyPress } from '../..';
+
+const PADDING = 5;
+const CLOSE_ICON_SIZE = 5;
 
 const Backdrop = styled(Flexbox)`
   position: fixed;
@@ -23,9 +27,10 @@ const Backdrop = styled(Flexbox)`
 
 export const Dialog = styled(motion.div)<DialogProps>`
   box-sizing: border-box;
-  padding: ${({ theme }) => theme.spacing.unit(5)}px;
+  padding: ${({ theme }) => theme.spacing.unit(PADDING)}px;
   border: 0;
   background: ${({ theme }) => theme.color.card};
+  position: relative;
 
   ${({ theme }) => theme.media.lessThan(theme.breakpoints.sm)} {
     width: 100%;
@@ -39,17 +44,21 @@ export const Dialog = styled(motion.div)<DialogProps>`
   }
 `;
 
-const Button = styled(NormalizedElements.Button)`
-  display: flex;
+const CloseButton = styled(NormalizedElements.Button)`
+  display: block;
   background: none;
-  margin-left: ${p => p.theme.spacing.unit(4)}px;
   padding: 0;
   border: 0;
   cursor: pointer;
+  position: absolute;
+  top: ${p => p.theme.spacing.unit(PADDING)}px;
+  right: ${p => p.theme.spacing.unit(PADDING)}px;
 `;
 
-const RightAlignedFlex = styled(Flexbox)`
-  margin-left: auto;
+const Header = styled.div`
+  padding-bottom: ${p => p.theme.spacing.unit(2)}px;
+  padding-right: ${p => p.theme.spacing.unit(CLOSE_ICON_SIZE + 2)}px;
+  min-height: ${p => p.theme.spacing.unit(CLOSE_ICON_SIZE)}px;
 `;
 
 export const Content = styled.div`
@@ -85,6 +94,8 @@ export const ModalInner: React.FC<InnerProps> = ({
       stiffness: 200,
     },
   };
+  const seed = useUIDSeed();
+  const titleId = seed('ModalTitle');
 
   useEffect(() => {
     setShow(true); // Show is only used for animation
@@ -100,38 +111,27 @@ export const ModalInner: React.FC<InnerProps> = ({
 
   return (
     <>
-      <FocusLock>
+      <FocusLock autoFocus={false}>
         <RemoveScroll>
           <Backdrop className={className} container alignItems="center" justifyContent="center">
-            <Dialog
-              role="dialog"
-              show={show}
-              {...(title ? { 'aria-label': title } : {})} // TODO: move to aria-labeledby when SSR uid works
-              {...animationProps}
-            >
-              <Box mb={2}>
-                <Flexbox container alignItems="baseline">
-                  {title && (
-                    <Flexbox item>
-                      <Typography as="h2" type="title2">
-                        {title}
-                      </Typography>
-                    </Flexbox>
-                  )}
-                  {!hideClose && (
-                    <RightAlignedFlex item>
-                      <Button type="button" onClick={onClose}>
-                        <Icon.Cross size={5} title="Close this dialog" />
-                      </Button>
-                    </RightAlignedFlex>
-                  )}
-                </Flexbox>
-              </Box>
+            <Dialog role="dialog" show={show} aria-labelledby={titleId} {...animationProps}>
+              <Header>
+                {title && (
+                  <Typography id={titleId} as="h2" type="title2">
+                    {title}
+                  </Typography>
+                )}
+              </Header>
               <Content>{children}</Content>
               {footer && (
                 <Box pt={4} p="1px" m="-1px">
                   {footer}
                 </Box>
+              )}
+              {!hideClose && (
+                <CloseButton type="button" onClick={onClose}>
+                  <Icon.CrossThin size={5} title="Close this dialog" />
+                </CloseButton>
               )}
             </Dialog>
           </Backdrop>

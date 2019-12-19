@@ -183,11 +183,12 @@ const StyledTypography = styled(CleanSpan)<Props>`
 `;
 
 export const Typography: React.FC<Props> = React.forwardRef<HTMLElement, Props>((props, ref) => {
-  const { as, className, children, color, type, weight, lineHeight } = props;
+  const { as, className, children, color, id, type, weight, lineHeight } = props;
 
   return (
     <StyledTypography
       className={className}
+      id={id}
       as={as}
       color={color}
       type={type}
