@@ -4,7 +4,7 @@ import { RemoveScroll } from 'react-remove-scroll';
 import FocusLock from 'react-focus-lock';
 import styled from 'styled-components';
 import { motion } from 'framer-motion';
-import { InnerProps, DialogProps } from './Modal.types';
+import { DialogProps, Props } from './Modal.types';
 import NormalizedElements from '../../common/NormalizedElements';
 import { isFunction } from '../../common/utils';
 import { Flexbox, Typography, Icon, Box, useKeyPress } from '../..';
@@ -69,7 +69,8 @@ export const Content = styled.div`
   overflow-x: hidden;
 `;
 
-export const ModalInner: React.FC<InnerProps> = ({
+export const ModalInner: React.FC<Props> = ({
+  autoFocus = false,
   children,
   className,
   title,
@@ -111,7 +112,7 @@ export const ModalInner: React.FC<InnerProps> = ({
 
   return (
     <>
-      <FocusLock autoFocus={false}>
+      <FocusLock autoFocus={autoFocus}>
         <RemoveScroll>
           <Backdrop className={className} container alignItems="center" justifyContent="center">
             <Dialog role="dialog" show={show} aria-labelledby={titleId} {...animationProps}>

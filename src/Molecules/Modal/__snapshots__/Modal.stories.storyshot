@@ -1,12 +1,8 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Storyshots Molecules | Modal Default Story 1`] = `
-.c3 {
+.c6 {
   margin-bottom: 8px;
-}
-
-.c5 {
-  box-sizing: border-box;
 }
 
 .c2 {
@@ -25,18 +21,6 @@ exports[`Storyshots Molecules | Modal Default Story 1`] = `
   align-items: center;
 }
 
-.c4 {
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: baseline;
-  -webkit-box-align: baseline;
-  -ms-flex-align: baseline;
-  align-items: baseline;
-}
-
 .c9 {
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -51,7 +35,11 @@ exports[`Storyshots Molecules | Modal Default Story 1`] = `
   display: block;
 }
 
-.c11 {
+.c10 {
+  stroke: #6E6E69;
+}
+
+.c7 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
   margin: 0;
@@ -60,7 +48,7 @@ exports[`Storyshots Molecules | Modal Default Story 1`] = `
   line-height: 1.5;
 }
 
-.c6 {
+.c4 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
   margin: 0;
@@ -85,15 +73,14 @@ exports[`Storyshots Molecules | Modal Default Story 1`] = `
   margin: 0;
   overflow: visible;
   text-transform: none;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
+  display: block;
   background: none;
-  margin-left: 16px;
   padding: 0;
   border: 0;
   cursor: pointer;
+  position: absolute;
+  top: 20px;
+  right: 20px;
 }
 
 .c8,
@@ -118,11 +105,13 @@ exports[`Storyshots Molecules | Modal Default Story 1`] = `
   outline: 1px dotted ButtonText;
 }
 
-.c7 {
-  margin-left: auto;
+.c3 {
+  padding-bottom: 8px;
+  padding-right: 28px;
+  min-height: 20px;
 }
 
-.c10 {
+.c5 {
   overflow-y: auto;
   overflow-x: hidden;
 }
@@ -137,7 +126,7 @@ exports[`Storyshots Molecules | Modal Default Story 1`] = `
 }
 
 @media (min-width:760px) {
-  .c6 {
+  .c4 {
     font-size: 24px;
     line-height: 1.1666666666666667;
   }
@@ -150,7 +139,7 @@ exports[`Storyshots Molecules | Modal Default Story 1`] = `
 }
 
 @media (min-width:760px) {
-  .c10 {
+  .c5 {
     max-height: 50vh;
   }
 }
@@ -213,81 +202,49 @@ exports[`Storyshots Molecules | Modal Default Story 1`] = `
             <div
               className="c3"
             >
-              <div
+              <h2
                 className="c4"
+                id="1val-ModalTitle"
+                type="title2"
               >
-                <div
-                  className="c5"
-                >
-                  <h2
-                    className="c6"
-                    type="title2"
-                  >
-                    Dialog information
-                  </h2>
-                </div>
-                <div
-                  className="c7 c5"
-                >
-                  <button
-                    className="c8"
-                    onClick={[Function]}
-                    type="button"
-                  >
-                    <svg
-                      aria-hidden="false"
-                      className="c9"
-                      focusable="false"
-                      preserveAspectRatio="xMidYMid meet"
-                      role="img"
-                      viewBox="0 0 24 24"
-                    >
-                      <polygon
-                        points="15.739 12 24 20.062 19.969 24 12 16.223 4.031 24 0 20.062 8.261 12 0 3.938 4.031 0 12 7.777 19.969 0 24 3.938"
-                      />
-                      <title>
-                        Close this dialog
-                      </title>
-                    </svg>
-                  </button>
-                </div>
-              </div>
+                Dialog information
+              </h2>
             </div>
             <div
-              className="c10"
+              className="c5"
             >
               <div
-                className="c3"
+                className="c6"
               >
                 <p
-                  className="c11"
+                  className="c7"
                   type="primary"
                 >
                   Modals should be used with care as they are quite intrusive on the user experience and demand immediate attention (while also blocking all other actions on the site). Always consider if you can solve a problem in another way first before you choose to go with the modal.
                 </p>
               </div>
               <div
-                className="c3"
+                className="c6"
               >
                 <p
-                  className="c11"
+                  className="c7"
                   type="primary"
                 >
                   That being said they are a good tool if you need to grab the users attention, either to communicate something very important or make them take an action before proceeding.
                 </p>
               </div>
               <div
-                className="c3"
+                className="c6"
               >
                 <p
-                  className="c11"
+                  className="c7"
                   type="primary"
                 >
                   Nielsen/Norman has an excellent article about their usage here
                 </p>
               </div>
               <p
-                className="c11"
+                className="c7"
                 type="primary"
               >
                 <a
@@ -297,6 +254,29 @@ exports[`Storyshots Molecules | Modal Default Story 1`] = `
                 </a>
               </p>
             </div>
+            <button
+              className="c8"
+              onClick={[Function]}
+              type="button"
+            >
+              <svg
+                aria-hidden="false"
+                className="c9"
+                focusable="false"
+                preserveAspectRatio="xMidYMid meet"
+                role="img"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  className="c10"
+                  d="m 1 1 l 22 22 m -22 0 l 22 -22"
+                  strokeWidth={2}
+                />
+                <title>
+                  Close this dialog
+                </title>
+              </svg>
+            </button>
           </div>
         </div>
       </div>
@@ -321,18 +301,14 @@ exports[`Storyshots Molecules | Modal Default Story 1`] = `
 `;
 
 exports[`Storyshots Molecules | Modal Footer Story 1`] = `
-.c3 {
+.c6 {
   margin-bottom: 8px;
 }
 
-.c12 {
+.c8 {
   margin: -1px;
   padding: 1px;
   padding-top: 16px;
-}
-
-.c5 {
-  box-sizing: border-box;
 }
 
 .c2 {
@@ -351,19 +327,7 @@ exports[`Storyshots Molecules | Modal Footer Story 1`] = `
   align-items: center;
 }
 
-.c4 {
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: baseline;
-  -webkit-box-align: baseline;
-  -ms-flex-align: baseline;
-  align-items: baseline;
-}
-
-.c9 {
+.c12 {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -377,7 +341,11 @@ exports[`Storyshots Molecules | Modal Footer Story 1`] = `
   display: block;
 }
 
-.c11 {
+.c13 {
+  stroke: #6E6E69;
+}
+
+.c7 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
   margin: 0;
@@ -386,7 +354,7 @@ exports[`Storyshots Molecules | Modal Footer Story 1`] = `
   line-height: 1.5;
 }
 
-.c6 {
+.c4 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
   margin: 0;
@@ -395,7 +363,7 @@ exports[`Storyshots Molecules | Modal Footer Story 1`] = `
   line-height: 1.2;
 }
 
-.c14 {
+.c10 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: inherit;
   margin: 0;
@@ -404,7 +372,7 @@ exports[`Storyshots Molecules | Modal Footer Story 1`] = `
   line-height: 1.4285714285714286;
 }
 
-.c13 {
+.c9 {
   font-family: inherit;
   font-size: 100%;
   line-height: 1.15;
@@ -434,29 +402,29 @@ exports[`Storyshots Molecules | Modal Footer Story 1`] = `
   cursor: pointer;
 }
 
-.c13,
-.c13[type='button'],
-.c13[type='reset'],
-.c13[type='submit'] {
+.c9,
+.c9[type='button'],
+.c9[type='reset'],
+.c9[type='submit'] {
   -webkit-appearance: button;
 }
 
-.c13::-moz-focus-inner,
-.c13[type='button']::-moz-focus-inner,
-.c13[type='reset']::-moz-focus-inner,
-.c13[type='submit']::-moz-focus-inner {
+.c9::-moz-focus-inner,
+.c9[type='button']::-moz-focus-inner,
+.c9[type='reset']::-moz-focus-inner,
+.c9[type='submit']::-moz-focus-inner {
   border-style: none;
   padding: 0;
 }
 
-.c13:-moz-focusring,
-.c13[type='button']:-moz-focusring,
-.c13[type='reset']:-moz-focusring,
-.c13[type='submit']:-moz-focusring {
+.c9:-moz-focusring,
+.c9[type='button']:-moz-focusring,
+.c9[type='reset']:-moz-focusring,
+.c9[type='submit']:-moz-focusring {
   outline: 1px dotted ButtonText;
 }
 
-.c13::before {
+.c9::before {
   content: '';
   display: block;
   position: absolute;
@@ -467,11 +435,11 @@ exports[`Storyshots Molecules | Modal Footer Story 1`] = `
   height: calc(100% - 4px);
 }
 
-.c13:hover {
+.c9:hover {
   background-color: hsl(223.5,100%,45%);
 }
 
-.c13:active {
+.c9:active {
   background-color: hsl(223.5,100%,40%);
 }
 
@@ -484,51 +452,52 @@ exports[`Storyshots Molecules | Modal Footer Story 1`] = `
   z-index: 2;
 }
 
-.c8 {
+.c11 {
   font-family: inherit;
   font-size: 100%;
   line-height: 1.15;
   margin: 0;
   overflow: visible;
   text-transform: none;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
+  display: block;
   background: none;
-  margin-left: 16px;
   padding: 0;
   border: 0;
   cursor: pointer;
+  position: absolute;
+  top: 20px;
+  right: 20px;
 }
 
-.c8,
-.c8[type='button'],
-.c8[type='reset'],
-.c8[type='submit'] {
+.c11,
+.c11[type='button'],
+.c11[type='reset'],
+.c11[type='submit'] {
   -webkit-appearance: button;
 }
 
-.c8::-moz-focus-inner,
-.c8[type='button']::-moz-focus-inner,
-.c8[type='reset']::-moz-focus-inner,
-.c8[type='submit']::-moz-focus-inner {
+.c11::-moz-focus-inner,
+.c11[type='button']::-moz-focus-inner,
+.c11[type='reset']::-moz-focus-inner,
+.c11[type='submit']::-moz-focus-inner {
   border-style: none;
   padding: 0;
 }
 
-.c8:-moz-focusring,
-.c8[type='button']:-moz-focusring,
-.c8[type='reset']:-moz-focusring,
-.c8[type='submit']:-moz-focusring {
+.c11:-moz-focusring,
+.c11[type='button']:-moz-focusring,
+.c11[type='reset']:-moz-focusring,
+.c11[type='submit']:-moz-focusring {
   outline: 1px dotted ButtonText;
 }
 
-.c7 {
-  margin-left: auto;
+.c3 {
+  padding-bottom: 8px;
+  padding-right: 28px;
+  min-height: 20px;
 }
 
-.c10 {
+.c5 {
   overflow-y: auto;
   overflow-x: hidden;
 }
@@ -543,7 +512,7 @@ exports[`Storyshots Molecules | Modal Footer Story 1`] = `
 }
 
 @media (min-width:760px) {
-  .c6 {
+  .c4 {
     font-size: 24px;
     line-height: 1.1666666666666667;
   }
@@ -556,7 +525,7 @@ exports[`Storyshots Molecules | Modal Footer Story 1`] = `
 }
 
 @media (min-width:760px) {
-  .c10 {
+  .c5 {
     max-height: 50vh;
   }
 }
@@ -619,81 +588,49 @@ exports[`Storyshots Molecules | Modal Footer Story 1`] = `
             <div
               className="c3"
             >
-              <div
+              <h2
                 className="c4"
+                id="3val-ModalTitle"
+                type="title2"
               >
-                <div
-                  className="c5"
-                >
-                  <h2
-                    className="c6"
-                    type="title2"
-                  >
-                    Dialog information
-                  </h2>
-                </div>
-                <div
-                  className="c7 c5"
-                >
-                  <button
-                    className="c8"
-                    onClick={[Function]}
-                    type="button"
-                  >
-                    <svg
-                      aria-hidden="false"
-                      className="c9"
-                      focusable="false"
-                      preserveAspectRatio="xMidYMid meet"
-                      role="img"
-                      viewBox="0 0 24 24"
-                    >
-                      <polygon
-                        points="15.739 12 24 20.062 19.969 24 12 16.223 4.031 24 0 20.062 8.261 12 0 3.938 4.031 0 12 7.777 19.969 0 24 3.938"
-                      />
-                      <title>
-                        Close this dialog
-                      </title>
-                    </svg>
-                  </button>
-                </div>
-              </div>
+                Dialog information
+              </h2>
             </div>
             <div
-              className="c10"
+              className="c5"
             >
               <div
-                className="c3"
+                className="c6"
               >
                 <p
-                  className="c11"
+                  className="c7"
                   type="primary"
                 >
                   Modals should be used with care as they are quite intrusive on the user experience and demand immediate attention (while also blocking all other actions on the site). Always consider if you can solve a problem in another way first before you choose to go with the modal.
                 </p>
               </div>
               <div
-                className="c3"
+                className="c6"
               >
                 <p
-                  className="c11"
+                  className="c7"
                   type="primary"
                 >
                   That being said they are a good tool if you need to grab the users attention, either to communicate something very important or make them take an action before proceeding.
                 </p>
               </div>
               <div
-                className="c3"
+                className="c6"
               >
                 <p
-                  className="c11"
+                  className="c7"
                   type="primary"
                 >
                   Nielsen/Norman has an excellent article about their usage here
                 </p>
               </div>
               <p
-                className="c11"
+                className="c7"
                 type="primary"
               >
                 <a
@@ -704,23 +641,23 @@ exports[`Storyshots Molecules | Modal Footer Story 1`] = `
               </p>
             </div>
             <div
-              className="c12"
+              className="c8"
             >
               <div>
                 <p
-                  className="c11"
+                  className="c7"
                   type="primary"
                 >
                   This is a footer which is a ReactNode, which could e.g. contain a button or only text
                 </p>
                 <button
-                  className="c13"
+                  className="c9"
                   onClick={[Function]}
                   type="button"
                 >
                   <span>
                     <span
-                      className="c14"
+                      className="c10"
                     >
                       Button
                     </span>
@@ -728,6 +665,29 @@ exports[`Storyshots Molecules | Modal Footer Story 1`] = `
                 </button>
               </div>
             </div>
+            <button
+              className="c11"
+              onClick={[Function]}
+              type="button"
+            >
+              <svg
+                aria-hidden="false"
+                className="c12"
+                focusable="false"
+                preserveAspectRatio="xMidYMid meet"
+                role="img"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  className="c13"
+                  d="m 1 1 l 22 22 m -22 0 l 22 -22"
+                  strokeWidth={2}
+                />
+                <title>
+                  Close this dialog
+                </title>
+              </svg>
+            </button>
           </div>
         </div>
       </div>
@@ -752,12 +712,8 @@ exports[`Storyshots Molecules | Modal Footer Story 1`] = `
 `;
 
 exports[`Storyshots Molecules | Modal Hide Close 1`] = `
-.c3 {
+.c6 {
   margin-bottom: 8px;
-}
-
-.c5 {
-  box-sizing: border-box;
 }
 
 .c2 {
@@ -776,19 +732,7 @@ exports[`Storyshots Molecules | Modal Hide Close 1`] = `
   align-items: center;
 }
 
-.c4 {
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: baseline;
-  -webkit-box-align: baseline;
-  -ms-flex-align: baseline;
-  align-items: baseline;
-}
-
-.c8 {
+.c7 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
   margin: 0;
@@ -797,7 +741,7 @@ exports[`Storyshots Molecules | Modal Hide Close 1`] = `
   line-height: 1.5;
 }
 
-.c6 {
+.c4 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
   margin: 0;
@@ -815,7 +759,13 @@ exports[`Storyshots Molecules | Modal Hide Close 1`] = `
   z-index: 2;
 }
 
-.c7 {
+.c3 {
+  padding-bottom: 8px;
+  padding-right: 28px;
+  min-height: 20px;
+}
+
+.c5 {
   overflow-y: auto;
   overflow-x: hidden;
 }
@@ -830,7 +780,7 @@ exports[`Storyshots Molecules | Modal Hide Close 1`] = `
 }
 
 @media (min-width:760px) {
-  .c6 {
+  .c4 {
     font-size: 24px;
     line-height: 1.1666666666666667;
   }
@@ -843,7 +793,7 @@ exports[`Storyshots Molecules | Modal Hide Close 1`] = `
 }
 
 @media (min-width:760px) {
-  .c7 {
+  .c5 {
     max-height: 50vh;
   }
 }
@@ -906,29 +856,22 @@ exports[`Storyshots Molecules | Modal Hide Close 1`] = `
             <div
               className="c3"
             >
-              <div
+              <h2
                 className="c4"
+                id="9val-ModalTitle"
+                type="title2"
               >
-                <div
-                  className="c5"
-                >
-                  <h2
-                    className="c6"
-                    type="title2"
-                  >
-                    Dialog information
-                  </h2>
-                </div>
-              </div>
+                Dialog information
+              </h2>
             </div>
             <div
-              className="c7"
+              className="c5"
             >
               <div
-                className="c3"
+                className="c6"
               >
                 <p
-                  className="c8"
+                  className="c7"
                   type="primary"
                 >
                   The close button in the upper right corner is now hidden because the prop hideClose is true.
@@ -959,12 +902,8 @@ exports[`Storyshots Molecules | Modal Hide Close 1`] = `
 `;
 
 exports[`Storyshots Molecules | Modal Uncontrolled Behavior 1`] = `
-.c3 {
+.c6 {
   margin-bottom: 8px;
-}
-
-.c5 {
-  box-sizing: border-box;
 }
 
 .c2 {
@@ -983,18 +922,6 @@ exports[`Storyshots Molecules | Modal Uncontrolled Behavior 1`] = `
   align-items: center;
 }
 
-.c4 {
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: baseline;
-  -webkit-box-align: baseline;
-  -ms-flex-align: baseline;
-  align-items: baseline;
-}
-
 .c9 {
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -1009,7 +936,11 @@ exports[`Storyshots Molecules | Modal Uncontrolled Behavior 1`] = `
   display: block;
 }
 
-.c11 {
+.c10 {
+  stroke: #6E6E69;
+}
+
+.c7 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
   margin: 0;
@@ -1018,7 +949,7 @@ exports[`Storyshots Molecules | Modal Uncontrolled Behavior 1`] = `
   line-height: 1.5;
 }
 
-.c6 {
+.c4 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
   margin: 0;
@@ -1043,15 +974,14 @@ exports[`Storyshots Molecules | Modal Uncontrolled Behavior 1`] = `
   margin: 0;
   overflow: visible;
   text-transform: none;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
+  display: block;
   background: none;
-  margin-left: 16px;
   padding: 0;
   border: 0;
   cursor: pointer;
+  position: absolute;
+  top: 20px;
+  right: 20px;
 }
 
 .c8,
@@ -1076,11 +1006,13 @@ exports[`Storyshots Molecules | Modal Uncontrolled Behavior 1`] = `
   outline: 1px dotted ButtonText;
 }
 
-.c7 {
-  margin-left: auto;
+.c3 {
+  padding-bottom: 8px;
+  padding-right: 28px;
+  min-height: 20px;
 }
 
-.c10 {
+.c5 {
   overflow-y: auto;
   overflow-x: hidden;
 }
@@ -1095,7 +1027,7 @@ exports[`Storyshots Molecules | Modal Uncontrolled Behavior 1`] = `
 }
 
 @media (min-width:760px) {
-  .c6 {
+  .c4 {
     font-size: 24px;
     line-height: 1.1666666666666667;
   }
@@ -1108,7 +1040,7 @@ exports[`Storyshots Molecules | Modal Uncontrolled Behavior 1`] = `
 }
 
 @media (min-width:760px) {
-  .c10 {
+  .c5 {
     max-height: 50vh;
   }
 }
@@ -1165,81 +1097,49 @@ exports[`Storyshots Molecules | Modal Uncontrolled Behavior 1`] = `
             <div
               className="c3"
             >
-              <div
+              <h2
                 className="c4"
+                id="7val-ModalTitle"
+                type="title2"
               >
-                <div
-                  className="c5"
-                >
-                  <h2
-                    className="c6"
-                    type="title2"
-                  >
-                    Dialog information
-                  </h2>
-                </div>
-                <div
-                  className="c7 c5"
-                >
-                  <button
-                    className="c8"
-                    onClick={[Function]}
-                    type="button"
-                  >
-                    <svg
-                      aria-hidden="false"
-                      className="c9"
-                      focusable="false"
-                      preserveAspectRatio="xMidYMid meet"
-                      role="img"
-                      viewBox="0 0 24 24"
-                    >
-                      <polygon
-                        points="15.739 12 24 20.062 19.969 24 12 16.223 4.031 24 0 20.062 8.261 12 0 3.938 4.031 0 12 7.777 19.969 0 24 3.938"
-                      />
-                      <title>
-                        Close this dialog
-                      </title>
-                    </svg>
-                  </button>
-                </div>
-              </div>
+                Dialog information
+              </h2>
             </div>
             <div
-              className="c10"
+              className="c5"
             >
               <div
-                className="c3"
+                className="c6"
               >
                 <p
-                  className="c11"
+                  className="c7"
                   type="primary"
                 >
                   Modals should be used with care as they are quite intrusive on the user experience and demand immediate attention (while also blocking all other actions on the site). Always consider if you can solve a problem in another way first before you choose to go with the modal.
                 </p>
               </div>
               <div
-                className="c3"
+                className="c6"
               >
                 <p
-                  className="c11"
+                  className="c7"
                   type="primary"
                 >
                   That being said they are a good tool if you need to grab the users attention, either to communicate something very important or make them take an action before proceeding.
                 </p>
               </div>
               <div
-                className="c3"
+                className="c6"
               >
                 <p
-                  className="c11"
+                  className="c7"
                   type="primary"
                 >
                   Nielsen/Norman has an excellent article about their usage here
                 </p>
               </div>
               <p
-                className="c11"
+                className="c7"
                 type="primary"
               >
                 <a
@@ -1249,6 +1149,29 @@ exports[`Storyshots Molecules | Modal Uncontrolled Behavior 1`] = `
                 </a>
               </p>
             </div>
+            <button
+              className="c8"
+              onClick={[Function]}
+              type="button"
+            >
+              <svg
+                aria-hidden="false"
+                className="c9"
+                focusable="false"
+                preserveAspectRatio="xMidYMid meet"
+                role="img"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  className="c10"
+                  d="m 1 1 l 22 22 m -22 0 l 22 -22"
+                  strokeWidth={2}
+                />
+                <title>
+                  Close this dialog
+                </title>
+              </svg>
+            </button>
           </div>
         </div>
       </div>
@@ -1273,12 +1196,8 @@ exports[`Storyshots Molecules | Modal Uncontrolled Behavior 1`] = `
 `;
 
 exports[`Storyshots Molecules | Modal Without Header 1`] = `
-.c3 {
+.c5 {
   margin-bottom: 8px;
-}
-
-.c6 {
-  box-sizing: border-box;
 }
 
 .c2 {
@@ -1297,18 +1216,6 @@ exports[`Storyshots Molecules | Modal Without Header 1`] = `
   align-items: center;
 }
 
-.c4 {
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: baseline;
-  -webkit-box-align: baseline;
-  -ms-flex-align: baseline;
-  align-items: baseline;
-}
-
 .c8 {
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -1323,7 +1230,11 @@ exports[`Storyshots Molecules | Modal Without Header 1`] = `
   display: block;
 }
 
-.c10 {
+.c9 {
+  stroke: #6E6E69;
+}
+
+.c6 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
   margin: 0;
@@ -1348,15 +1259,14 @@ exports[`Storyshots Molecules | Modal Without Header 1`] = `
   margin: 0;
   overflow: visible;
   text-transform: none;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
+  display: block;
   background: none;
-  margin-left: 16px;
   padding: 0;
   border: 0;
   cursor: pointer;
+  position: absolute;
+  top: 20px;
+  right: 20px;
 }
 
 .c7,
@@ -1381,11 +1291,13 @@ exports[`Storyshots Molecules | Modal Without Header 1`] = `
   outline: 1px dotted ButtonText;
 }
 
-.c5 {
-  margin-left: auto;
+.c3 {
+  padding-bottom: 8px;
+  padding-right: 28px;
+  min-height: 20px;
 }
 
-.c9 {
+.c4 {
   overflow-y: auto;
   overflow-x: hidden;
 }
@@ -1406,7 +1318,7 @@ exports[`Storyshots Molecules | Modal Without Header 1`] = `
 }
 
 @media (min-width:760px) {
-  .c9 {
+  .c4 {
     max-height: 50vh;
   }
 }
@@ -1468,72 +1380,42 @@ exports[`Storyshots Molecules | Modal Without Header 1`] = `
           <div>
             <div
               className="c3"
-            >
-              <div
-                className="c4"
-              >
-                <div
-                  className="c5 c6"
-                >
-                  <button
-                    className="c7"
-                    onClick={[Function]}
-                    type="button"
-                  >
-                    <svg
-                      aria-hidden="false"
-                      className="c8"
-                      focusable="false"
-                      preserveAspectRatio="xMidYMid meet"
-                      role="img"
-                      viewBox="0 0 24 24"
-                    >
-                      <polygon
-                        points="15.739 12 24 20.062 19.969 24 12 16.223 4.031 24 0 20.062 8.261 12 0 3.938 4.031 0 12 7.777 19.969 0 24 3.938"
-                      />
-                      <title>
-                        Close this dialog
-                      </title>
-                    </svg>
-                  </button>
-                </div>
-              </div>
-            </div>
+            />
             <div
-              className="c9"
+              className="c4"
             >
               <div
-                className="c3"
+                className="c5"
               >
                 <p
-                  className="c10"
+                  className="c6"
                   type="primary"
                 >
                   Modals should be used with care as they are quite intrusive on the user experience and demand immediate attention (while also blocking all other actions on the site). Always consider if you can solve a problem in another way first before you choose to go with the modal.
                 </p>
               </div>
               <div
-                className="c3"
+                className="c5"
               >
                 <p
-                  className="c10"
+                  className="c6"
                   type="primary"
                 >
                   That being said they are a good tool if you need to grab the users attention, either to communicate something very important or make them take an action before proceeding.
                 </p>
               </div>
               <div
-                className="c3"
+                className="c5"
               >
                 <p
-                  className="c10"
+                  className="c6"
                   type="primary"
                 >
                   Nielsen/Norman has an excellent article about their usage here
                 </p>
               </div>
               <p
-                className="c10"
+                className="c6"
                 type="primary"
               >
                 <a
@@ -1543,6 +1425,29 @@ exports[`Storyshots Molecules | Modal Without Header 1`] = `
                 </a>
               </p>
             </div>
+            <button
+              className="c7"
+              onClick={[Function]}
+              type="button"
+            >
+              <svg
+                aria-hidden="false"
+                className="c8"
+                focusable="false"
+                preserveAspectRatio="xMidYMid meet"
+                role="img"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  className="c9"
+                  d="m 1 1 l 22 22 m -22 0 l 22 -22"
+                  strokeWidth={2}
+                />
+                <title>
+                  Close this dialog
+                </title>
+              </svg>
+            </button>
           </div>
         </div>
       </div>
