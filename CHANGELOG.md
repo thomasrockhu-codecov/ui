@@ -1,3 +1,17 @@
+# [2.12.0](https://github.com/nordnet/ui/compare/v2.11.0...v2.12.0) (2020-01-13)
+
+
+### Bug Fixes
+
+* attempt to update nodejs version https://zeit.co/docs/runtimes/?query=node.js#official-runtimes/node-js ([5c50ac1](https://github.com/nordnet/ui/commit/5c50ac1))
+* jsdocs comment for variant ([3b767ee](https://github.com/nordnet/ui/commit/3b767ee))
+* remove border-radius from text variant ([9a0df00](https://github.com/nordnet/ui/commit/9a0df00))
+
+
+### Features
+
+* add skeleton component ([35d1984](https://github.com/nordnet/ui/commit/35d1984))
+
 # [2.11.0](https://github.com/nordnet/ui/compare/v2.10.0...v2.11.0) (2019-12-19)
 
 
