@@ -1,3 +1,11 @@
+## [2.12.1](https://github.com/nordnet/ui/compare/v2.12.0...v2.12.1) (2020-01-15)
+
+
+### Bug Fixes
+
+* adds ref support for Button ([d5c4c3b](https://github.com/nordnet/ui/commit/d5c4c3b))
+* removes type from NormalizedButton ([3421028](https://github.com/nordnet/ui/commit/3421028))
+
 # [2.12.0](https://github.com/nordnet/ui/compare/v2.11.0...v2.12.0) (2020-01-13)
 
 
