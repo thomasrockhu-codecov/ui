@@ -1,3 +1,16 @@
+## [2.13.1](https://github.com/nordnet/ui/compare/v2.13.0...v2.13.1) (2020-01-16)
+
+
+### Bug Fixes
+
+* disable autofocus and put close button last in html ([ab82a79](https://github.com/nordnet/ui/commit/ab82a79))
+* dont render header if not necessary ([6f69634](https://github.com/nordnet/ui/commit/6f69634))
+* merge master ([531e30e](https://github.com/nordnet/ui/commit/531e30e))
+* no autofucs by default ([4c6ec67](https://github.com/nordnet/ui/commit/4c6ec67))
+* now build ([3ec0464](https://github.com/nordnet/ui/commit/3ec0464))
+* set node engine to v10 ([045023d](https://github.com/nordnet/ui/commit/045023d))
+* update snaps ([5fc2eca](https://github.com/nordnet/ui/commit/5fc2eca))
+
 # [2.13.0](https://github.com/nordnet/ui/compare/v2.12.1...v2.13.0) (2020-01-16)
 
 
