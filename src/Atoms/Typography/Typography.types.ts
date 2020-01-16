@@ -50,6 +50,7 @@ export type Props = {
   as?: keyof JSX.IntrinsicElements | React.ComponentType<any>;
   className?: string;
   color?: 'inherit' | ColorFn;
+  id?: string;
   weight?: string;
   'aria-hidden'?: boolean;
   /**

@@ -12,4 +12,6 @@ export type DialogProps = {
 
 export type Props = {
   open?: boolean;
+  /** @default false */
+  autoFocus?: boolean;
 } & InnerProps;

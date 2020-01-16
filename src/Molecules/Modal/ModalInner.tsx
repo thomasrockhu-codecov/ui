@@ -1,12 +1,16 @@
 import React, { useEffect, useState } from 'react';
+import { useUIDSeed } from 'react-uid';
 import { RemoveScroll } from 'react-remove-scroll';
 import FocusLock from 'react-focus-lock';
 import styled from 'styled-components';
 import { motion } from 'framer-motion';
-import { InnerProps, DialogProps } from './Modal.types';
+import { DialogProps, Props } from './Modal.types';
 import NormalizedElements from '../../common/NormalizedElements';
 import { isFunction } from '../../common/utils';
 import { Flexbox, Typography, Icon, Box, useKeyPress } from '../..';
+
+const PADDING = 5;
+const CLOSE_ICON_SIZE = 5;
 
 const Backdrop = styled(Flexbox)`
   position: fixed;
@@ -23,9 +27,10 @@ const Backdrop = styled(Flexbox)`
 
 export const Dialog = styled(motion.div)<DialogProps>`
   box-sizing: border-box;
-  padding: ${({ theme }) => theme.spacing.unit(5)}px;
+  padding: ${({ theme }) => theme.spacing.unit(PADDING)}px;
   border: 0;
   background: ${({ theme }) => theme.color.card};
+  position: relative;
 
   ${({ theme }) => theme.media.lessThan(theme.breakpoints.sm)} {
     width: 100%;
@@ -40,12 +45,20 @@ export const Dialog = styled(motion.div)<DialogProps>`
 `;
 
 const CloseButton = styled(NormalizedElements.Button)`
-  display: flex;
+  display: block;
   background: none;
-  margin-left: auto;
   padding: 0;
   border: 0;
   cursor: pointer;
+  position: absolute;
+  top: ${p => p.theme.spacing.unit(PADDING)}px;
+  right: ${p => p.theme.spacing.unit(PADDING)}px;
+`;
+
+const Header = styled.div`
+  padding-bottom: ${p => p.theme.spacing.unit(2)}px;
+  padding-right: ${p => p.theme.spacing.unit(CLOSE_ICON_SIZE + 2)}px;
+  min-height: ${p => p.theme.spacing.unit(CLOSE_ICON_SIZE)}px;
 `;
 
 export const Content = styled.div`
@@ -56,11 +69,8 @@ export const Content = styled.div`
   overflow-x: hidden;
 `;
 
-const H2 = styled.h2`
-  padding-right: ${p => p.theme.spacing.unit(4)}px;
-`;
-
-export const ModalInner: React.FC<InnerProps> = ({
+export const ModalInner: React.FC<Props> = ({
+  autoFocus = false,
   children,
   className,
   title,
@@ -85,6 +95,9 @@ export const ModalInner: React.FC<InnerProps> = ({
       stiffness: 200,
     },
   };
+  const seed = useUIDSeed();
+  const titleId = seed('ModalTitle');
+  const hasHeader = hideClose || title;
 
   useEffect(() => {
     setShow(true); // Show is only used for animation
@@ -100,34 +113,29 @@ export const ModalInner: React.FC<InnerProps> = ({
 
   return (
     <>
-      <FocusLock>
+      <FocusLock autoFocus={autoFocus}>
         <RemoveScroll>
           <Backdrop className={className} container alignItems="center" justifyContent="center">
-            <Dialog
-              role="dialog"
-              show={show}
-              {...(title ? { 'aria-label': title } : {})} // TODO: move to aria-labeledby when SSR uid works
-              {...animationProps}
-            >
-              <Box mb={2}>
-                <Flexbox container alignItems="baseline">
+            <Dialog role="dialog" show={show} aria-labelledby={titleId} {...animationProps}>
+              {hasHeader && (
+                <Header>
                   {title && (
-                    <Typography as={H2} type="title2">
+                    <Typography id={titleId} as="h2" type="title2">
                       {title}
                     </Typography>
                   )}
-                  {!hideClose && (
-                    <CloseButton type="button" onClick={onClose}>
-                      <Icon.CrossThin size={5} title="Close this dialog" />
-                    </CloseButton>
-                  )}
-                </Flexbox>
-              </Box>
+                </Header>
+              )}
               <Content>{children}</Content>
               {footer && (
                 <Box pt={4} p="1px" m="-1px">
                   {footer}
                 </Box>
+              )}
+              {!hideClose && (
+                <CloseButton type="button" onClick={onClose}>
+                  <Icon.CrossThin size={5} title="Close this dialog" />
+                </CloseButton>
               )}
             </Dialog>
           </Backdrop>
