@@ -9,7 +9,7 @@
   "sideEffects": false,
   "license": "MIT",
   "engines": {
-    "node": "10.18.1"
+    "node": ">=10"
   },
   "scripts": {
     "test": "jest",
