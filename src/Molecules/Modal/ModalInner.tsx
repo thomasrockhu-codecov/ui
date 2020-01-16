@@ -97,6 +97,7 @@ export const ModalInner: React.FC<Props> = ({
   };
   const seed = useUIDSeed();
   const titleId = seed('ModalTitle');
+  const hasHeader = hideClose || title;
 
   useEffect(() => {
     setShow(true); // Show is only used for animation
@@ -116,13 +117,15 @@ export const ModalInner: React.FC<Props> = ({
         <RemoveScroll>
           <Backdrop className={className} container alignItems="center" justifyContent="center">
             <Dialog role="dialog" show={show} aria-labelledby={titleId} {...animationProps}>
-              <Header>
-                {title && (
-                  <Typography id={titleId} as="h2" type="title2">
-                    {title}
-                  </Typography>
-                )}
-              </Header>
+              {hasHeader && (
+                <Header>
+                  {title && (
+                    <Typography id={titleId} as="h2" type="title2">
+                      {title}
+                    </Typography>
+                  )}
+                </Header>
+              )}
               <Content>{children}</Content>
               {footer && (
                 <Box pt={4} p="1px" m="-1px">
