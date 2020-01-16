@@ -1,3 +1,21 @@
+# [2.13.0](https://github.com/nordnet/ui/compare/v2.12.1...v2.13.0) (2020-01-16)
+
+
+### Bug Fixes
+
+* align center when placed right and left ([7162f2a](https://github.com/nordnet/ui/commit/7162f2a))
+* align on different positions ([0c4ad15](https://github.com/nordnet/ui/commit/0c4ad15))
+* drawer style adjustment and js improvement ([89a37bc](https://github.com/nordnet/ui/commit/89a37bc))
+* remove auto positioning ([3d63d09](https://github.com/nordnet/ui/commit/3d63d09))
+* save consts to file ([52dab71](https://github.com/nordnet/ui/commit/52dab71))
+* update snaps ([53d75fc](https://github.com/nordnet/ui/commit/53d75fc))
+
+
+### Features
+
+* add support for separated list ([cc7cdf2](https://github.com/nordnet/ui/commit/cc7cdf2))
+* create triangle component ([4846fc2](https://github.com/nordnet/ui/commit/4846fc2))
+
 ## [2.12.1](https://github.com/nordnet/ui/compare/v2.12.0...v2.12.1) (2020-01-15)
 
 
