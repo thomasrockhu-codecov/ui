@@ -1196,7 +1196,7 @@ exports[`Storyshots Molecules | Modal Uncontrolled Behavior 1`] = `
 `;
 
 exports[`Storyshots Molecules | Modal Without Header 1`] = `
-.c5 {
+.c4 {
   margin-bottom: 8px;
 }
 
@@ -1216,7 +1216,7 @@ exports[`Storyshots Molecules | Modal Without Header 1`] = `
   align-items: center;
 }
 
-.c8 {
+.c7 {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -1230,11 +1230,11 @@ exports[`Storyshots Molecules | Modal Without Header 1`] = `
   display: block;
 }
 
-.c9 {
+.c8 {
   stroke: #6E6E69;
 }
 
-.c6 {
+.c5 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
   margin: 0;
@@ -1252,7 +1252,7 @@ exports[`Storyshots Molecules | Modal Without Header 1`] = `
   z-index: 500;
 }
 
-.c7 {
+.c6 {
   font-family: inherit;
   font-size: 100%;
   line-height: 1.15;
@@ -1269,35 +1269,29 @@ exports[`Storyshots Molecules | Modal Without Header 1`] = `
   right: 20px;
 }
 
-.c7,
-.c7[type='button'],
-.c7[type='reset'],
-.c7[type='submit'] {
+.c6,
+.c6[type='button'],
+.c6[type='reset'],
+.c6[type='submit'] {
   -webkit-appearance: button;
 }
 
-.c7::-moz-focus-inner,
-.c7[type='button']::-moz-focus-inner,
-.c7[type='reset']::-moz-focus-inner,
-.c7[type='submit']::-moz-focus-inner {
+.c6::-moz-focus-inner,
+.c6[type='button']::-moz-focus-inner,
+.c6[type='reset']::-moz-focus-inner,
+.c6[type='submit']::-moz-focus-inner {
   border-style: none;
   padding: 0;
 }
 
-.c7:-moz-focusring,
-.c7[type='button']:-moz-focusring,
-.c7[type='reset']:-moz-focusring,
-.c7[type='submit']:-moz-focusring {
+.c6:-moz-focusring,
+.c6[type='button']:-moz-focusring,
+.c6[type='reset']:-moz-focusring,
+.c6[type='submit']:-moz-focusring {
   outline: 1px dotted ButtonText;
 }
 
 .c3 {
-  padding-bottom: 8px;
-  padding-right: 28px;
-  min-height: 20px;
-}
-
-.c4 {
   overflow-y: auto;
   overflow-x: hidden;
 }
@@ -1318,7 +1312,7 @@ exports[`Storyshots Molecules | Modal Without Header 1`] = `
 }
 
 @media (min-width:760px) {
-  .c4 {
+  .c3 {
     max-height: 50vh;
   }
 }
@@ -1380,42 +1374,39 @@ exports[`Storyshots Molecules | Modal Without Header 1`] = `
           <div>
             <div
               className="c3"
-            />
-            <div
-              className="c4"
             >
               <div
-                className="c5"
+                className="c4"
               >
                 <p
-                  className="c6"
+                  className="c5"
                   type="primary"
                 >
                   Modals should be used with care as they are quite intrusive on the user experience and demand immediate attention (while also blocking all other actions on the site). Always consider if you can solve a problem in another way first before you choose to go with the modal.
                 </p>
               </div>
               <div
-                className="c5"
+                className="c4"
               >
                 <p
-                  className="c6"
+                  className="c5"
                   type="primary"
                 >
                   That being said they are a good tool if you need to grab the users attention, either to communicate something very important or make them take an action before proceeding.
                 </p>
               </div>
               <div
-                className="c5"
+                className="c4"
               >
                 <p
-                  className="c6"
+                  className="c5"
                   type="primary"
                 >
                   Nielsen/Norman has an excellent article about their usage here
                 </p>
               </div>
               <p
-                className="c6"
+                className="c5"
                 type="primary"
               >
                 <a
@@ -1426,20 +1417,20 @@ exports[`Storyshots Molecules | Modal Without Header 1`] = `
               </p>
             </div>
             <button
-              className="c7"
+              className="c6"
               onClick={[Function]}
               type="button"
             >
               <svg
                 aria-hidden="false"
-                className="c8"
+                className="c7"
                 focusable="false"
                 preserveAspectRatio="xMidYMid meet"
                 role="img"
                 viewBox="0 0 24 24"
               >
                 <path
-                  className="c9"
+                  className="c8"
                   d="m 1 1 l 22 22 m -22 0 l 22 -22"
                   strokeWidth={2}
                 />
