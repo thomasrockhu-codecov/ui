@@ -30,11 +30,11 @@ exports[`Storyshots Atoms | FadedScroll Default Story 1`] = `
   padding: 0;
 }
 
-.c6 {
+.c5 {
   display: block;
 }
 
-.c5 {
+.c6 {
   padding: 8px;
 }
 
@@ -156,7 +156,7 @@ exports[`Storyshots Atoms | FadedScroll Default Story 1`] = `
 `;
 
 exports[`Storyshots Atoms | FadedScroll With Auto Height Of Scrollable Area 1`] = `
-.c1 {
+.c0 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -211,20 +211,20 @@ exports[`Storyshots Atoms | FadedScroll With Auto Height Of Scrollable Area 1`] 
   padding: 0;
 }
 
-.c7 {
+.c6 {
   display: block;
 }
 
-.c6 {
+.c7 {
   padding: 8px;
 }
 
 @media (min-width:976px) {
-  .c1 {
+  .c0 {
     position: relative;
   }
 
-  .c1::before {
+  .c0::before {
     content: '';
     display: block;
     width: 100%;
@@ -243,11 +243,11 @@ exports[`Storyshots Atoms | FadedScroll With Auto Height Of Scrollable Area 1`] 
 }
 
 @media (min-width:976px) {
-  .c1 {
+  .c0 {
     position: relative;
   }
 
-  .c1::after {
+  .c0::after {
     content: '';
     display: block;
     width: 100%;
@@ -283,7 +283,7 @@ exports[`Storyshots Atoms | FadedScroll With Auto Height Of Scrollable Area 1`] 
 }
 
 @media (min-width:976px) {
-  .c0 {
+  .c1 {
     height: 220px;
   }
 }
@@ -382,11 +382,11 @@ exports[`Storyshots Atoms | FadedScroll With Height Of Fade Changed 1`] = `
   padding: 0;
 }
 
-.c6 {
+.c5 {
   display: block;
 }
 
-.c5 {
+.c6 {
   padding: 8px;
 }
 
@@ -508,7 +508,7 @@ exports[`Storyshots Atoms | FadedScroll With Height Of Fade Changed 1`] = `
 `;
 
 exports[`Storyshots Atoms | FadedScroll With Mobile Fade Enabled 1`] = `
-.c1 {
+.c0 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -529,7 +529,7 @@ exports[`Storyshots Atoms | FadedScroll With Mobile Fade Enabled 1`] = `
   position: relative;
 }
 
-.c1::before {
+.c0::before {
   content: '';
   display: block;
   width: 100%;
@@ -546,7 +546,7 @@ exports[`Storyshots Atoms | FadedScroll With Mobile Fade Enabled 1`] = `
   background: linear-gradient(0deg,#ffffff00 0%,#ffffffff 100%);
 }
 
-.c1::after {
+.c0::after {
   content: '';
   display: block;
   width: 100%;
@@ -611,15 +611,15 @@ exports[`Storyshots Atoms | FadedScroll With Mobile Fade Enabled 1`] = `
   padding: 0;
 }
 
-.c7 {
+.c6 {
   display: block;
 }
 
-.c0 {
+.c1 {
   height: 220px;
 }
 
-.c6 {
+.c7 {
   padding: 8px;
 }
 
@@ -708,11 +708,11 @@ exports[`Storyshots Atoms | FadedScroll With Top Fade Disabled 1`] = `
   padding: 0;
 }
 
-.c5 {
+.c4 {
   display: block;
 }
 
-.c4 {
+.c5 {
   padding: 8px;
 }
 

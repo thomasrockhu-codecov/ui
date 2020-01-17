@@ -1,10 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Storyshots Molecules | ListWithTitles Integration List With Titles With Left And Right Titles 1`] = `
-.c2 {
-  box-sizing: border-box;
-}
-
 .c1 {
   box-sizing: border-box;
   display: -webkit-box;
@@ -15,6 +11,10 @@ exports[`Storyshots Molecules | ListWithTitles Integration List With Titles With
   -webkit-justify-content: space-between;
   -ms-flex-pack: justify;
   justify-content: space-between;
+}
+
+.c2 {
+  box-sizing: border-box;
 }
 
 .c4 {
@@ -103,10 +103,6 @@ exports[`Storyshots Molecules | ListWithTitles Integration List With Titles With
 `;
 
 exports[`Storyshots Molecules | ListWithTitles Integration List With Titles With Left Title 1`] = `
-.c2 {
-  box-sizing: border-box;
-}
-
 .c1 {
   box-sizing: border-box;
   display: -webkit-box;
@@ -117,6 +113,10 @@ exports[`Storyshots Molecules | ListWithTitles Integration List With Titles With
   -webkit-justify-content: space-between;
   -ms-flex-pack: justify;
   justify-content: space-between;
+}
+
+.c2 {
+  box-sizing: border-box;
 }
 
 .c4 {
@@ -260,10 +260,6 @@ exports[`Storyshots Molecules | ListWithTitles Integration List With Titles With
 `;
 
 exports[`Storyshots Molecules | ListWithTitles Integration List With Titles With Right Title 1`] = `
-.c2 {
-  box-sizing: border-box;
-}
-
 .c1 {
   box-sizing: border-box;
   display: -webkit-box;
@@ -274,6 +270,10 @@ exports[`Storyshots Molecules | ListWithTitles Integration List With Titles With
   -webkit-justify-content: space-between;
   -ms-flex-pack: justify;
   justify-content: space-between;
+}
+
+.c2 {
+  box-sizing: border-box;
 }
 
 .c4 {

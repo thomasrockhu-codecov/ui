@@ -2,19 +2,19 @@
 
 exports[`Storyshots Organisms | CardWithTabs Controlled Behaviour 1`] = `
 Array [
-  <button
+  @media (min-width:760px) {
+
+}
+
+<button
     onClick={[Function]}
     type="button"
   >
     Change state outside
   </button>,
-  .c2 {
+  .c0 {
   background: #FFFFFF;
   box-shadow: 0 2px 2px 0 rgba(0,0,0,0.03);
-}
-
-.c9 {
-  box-sizing: border-box;
 }
 
 .c7 {
@@ -39,23 +39,14 @@ Array [
   padding-top: 0;
 }
 
+.c9 {
+  box-sizing: border-box;
+}
+
 .c15 {
   width: 100%;
   height: 1px;
   background-color: #EBEBE8;
-}
-
-.c14 {
-  height: 32px;
-  position: relative;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
 }
 
 .c12 {
@@ -82,13 +73,17 @@ Array [
   left: 0;
 }
 
-.c13 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #282823;
-  margin: 0;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
+.c14 {
+  height: 32px;
+  position: relative;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .c5 {
@@ -105,6 +100,15 @@ Array [
   color: #282823;
   margin: 0;
   font-weight: 700;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c13 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 400;
   font-size: 14px;
   line-height: 1.4285714285714286;
 }
@@ -165,7 +169,7 @@ Array [
   outline: 1px dotted ButtonText;
 }
 
-.c8 {
+.c6 {
   list-style-type: none;
   padding: 0;
   margin-top: 0;
@@ -176,11 +180,11 @@ Array [
   height: 100%;
 }
 
-.c6 {
+.c8 {
   padding: 0 20px;
 }
 
-.c0 .c3 {
+.c2 .c3 {
   padding-bottom: 8px;
 }
 
@@ -218,7 +222,7 @@ Array [
         >
           <button
             aria-selected={true}
-            className="c11"
+            className="NormalizedButton__Button-ey7f5x-0 c11"
             id="tabs-tab-0"
             onClick={[Function]}
             onKeyDown={[Function]}
@@ -244,7 +248,7 @@ Array [
         >
           <button
             aria-selected={false}
-            className="c11"
+            className="NormalizedButton__Button-ey7f5x-0 c11"
             id="tabs-tab-1"
             onClick={[Function]}
             onKeyDown={[Function]}
@@ -285,7 +289,7 @@ exports[`Storyshots Organisms | CardWithTabs Integration With Faded Scroll 1`] =
   padding-right: 20px;
 }
 
-.c2 {
+.c0 {
   background: #FFFFFF;
   box-shadow: 0 2px 2px 0 rgba(0,0,0,0.03);
 }
@@ -313,10 +317,6 @@ exports[`Storyshots Organisms | CardWithTabs Integration With Faded Scroll 1`] =
   top: 0;
 }
 
-.c9 {
-  box-sizing: border-box;
-}
-
 .c7 {
   box-sizing: border-box;
   display: -webkit-box;
@@ -339,23 +339,14 @@ exports[`Storyshots Organisms | CardWithTabs Integration With Faded Scroll 1`] =
   padding-top: 0;
 }
 
+.c9 {
+  box-sizing: border-box;
+}
+
 .c15 {
   width: 100%;
   height: 1px;
   background-color: #EBEBE8;
-}
-
-.c14 {
-  height: 32px;
-  position: relative;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
 }
 
 .c12 {
@@ -382,13 +373,17 @@ exports[`Storyshots Organisms | CardWithTabs Integration With Faded Scroll 1`] =
   left: 0;
 }
 
-.c13 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #282823;
-  margin: 0;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
+.c14 {
+  height: 32px;
+  position: relative;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .c5 {
@@ -405,6 +400,15 @@ exports[`Storyshots Organisms | CardWithTabs Integration With Faded Scroll 1`] =
   color: #282823;
   margin: 0;
   font-weight: 700;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c13 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 400;
   font-size: 14px;
   line-height: 1.4285714285714286;
 }
@@ -465,7 +469,7 @@ exports[`Storyshots Organisms | CardWithTabs Integration With Faded Scroll 1`] =
   outline: 1px dotted ButtonText;
 }
 
-.c8 {
+.c6 {
   list-style-type: none;
   padding: 0;
   margin-top: 0;
@@ -476,11 +480,11 @@ exports[`Storyshots Organisms | CardWithTabs Integration With Faded Scroll 1`] =
   height: 100%;
 }
 
-.c6 {
+.c8 {
   padding: 0 20px;
 }
 
-.c0 .c3 {
+.c2 .c3 {
   padding-bottom: 8px;
 }
 
@@ -571,7 +575,7 @@ exports[`Storyshots Organisms | CardWithTabs Integration With Faded Scroll 1`] =
       >
         <button
           aria-selected={true}
-          className="c11"
+          className="NormalizedButton__Button-ey7f5x-0 c11"
           id="tabs-tab-0"
           onClick={[Function]}
           onKeyDown={[Function]}
@@ -597,7 +601,7 @@ exports[`Storyshots Organisms | CardWithTabs Integration With Faded Scroll 1`] =
       >
         <button
           aria-selected={false}
-          className="c11"
+          className="NormalizedButton__Button-ey7f5x-0 c11"
           id="tabs-tab-1"
           onClick={[Function]}
           onKeyDown={[Function]}
@@ -674,7 +678,7 @@ exports[`Storyshots Organisms | CardWithTabs Integration With Faded Scroll With 
   padding-right: 20px;
 }
 
-.c3 {
+.c0 {
   background: #FFFFFF;
   box-shadow: 0 2px 2px 0 rgba(0,0,0,0.03);
 }
@@ -728,10 +732,6 @@ exports[`Storyshots Organisms | CardWithTabs Integration With Faded Scroll With 
   top: 0;
 }
 
-.c10 {
-  box-sizing: border-box;
-}
-
 .c8 {
   box-sizing: border-box;
   display: -webkit-box;
@@ -754,23 +754,14 @@ exports[`Storyshots Organisms | CardWithTabs Integration With Faded Scroll With 
   padding-top: 0;
 }
 
+.c10 {
+  box-sizing: border-box;
+}
+
 .c16 {
   width: 100%;
   height: 1px;
   background-color: #EBEBE8;
-}
-
-.c15 {
-  height: 32px;
-  position: relative;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
 }
 
 .c13 {
@@ -797,13 +788,17 @@ exports[`Storyshots Organisms | CardWithTabs Integration With Faded Scroll With 
   left: 0;
 }
 
-.c14 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #282823;
-  margin: 0;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
+.c15 {
+  height: 32px;
+  position: relative;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .c6 {
@@ -824,11 +819,20 @@ exports[`Storyshots Organisms | CardWithTabs Integration With Faded Scroll With 
   line-height: 1.4285714285714286;
 }
 
+.c14 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
 .c5 {
   padding: 20px;
 }
 
-.c2 {
+.c1 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -880,7 +884,7 @@ exports[`Storyshots Organisms | CardWithTabs Integration With Faded Scroll With 
   outline: 1px dotted ButtonText;
 }
 
-.c9 {
+.c7 {
   list-style-type: none;
   padding: 0;
   margin-top: 0;
@@ -891,11 +895,11 @@ exports[`Storyshots Organisms | CardWithTabs Integration With Faded Scroll With 
   height: 100%;
 }
 
-.c7 {
+.c9 {
   padding: 0 20px;
 }
 
-.c1 .c4 {
+.c2 .c4 {
   padding-bottom: 8px;
 }
 
@@ -970,7 +974,7 @@ exports[`Storyshots Organisms | CardWithTabs Integration With Faded Scroll With 
 }
 
 @media (min-width:976px) {
-  .c0 {
+  .c3 {
     height: 200px;
   }
 }
@@ -1002,7 +1006,7 @@ exports[`Storyshots Organisms | CardWithTabs Integration With Faded Scroll With 
       >
         <button
           aria-selected={true}
-          className="c12"
+          className="NormalizedButton__Button-ey7f5x-0 c12"
           id="tabs-tab-0"
           onClick={[Function]}
           onKeyDown={[Function]}
@@ -1028,7 +1032,7 @@ exports[`Storyshots Organisms | CardWithTabs Integration With Faded Scroll With 
       >
         <button
           aria-selected={false}
-          className="c12"
+          className="NormalizedButton__Button-ey7f5x-0 c12"
           id="tabs-tab-1"
           onClick={[Function]}
           onKeyDown={[Function]}
@@ -1106,13 +1110,9 @@ exports[`Storyshots Organisms | CardWithTabs Integration With Typography And Ext
   padding-bottom: 20px;
 }
 
-.c2 {
+.c0 {
   background: #FFFFFF;
   box-shadow: 0 2px 2px 0 rgba(0,0,0,0.03);
-}
-
-.c9 {
-  box-sizing: border-box;
 }
 
 .c7 {
@@ -1137,23 +1137,14 @@ exports[`Storyshots Organisms | CardWithTabs Integration With Typography And Ext
   padding-top: 0;
 }
 
+.c9 {
+  box-sizing: border-box;
+}
+
 .c15 {
   width: 100%;
   height: 1px;
   background-color: #EBEBE8;
-}
-
-.c14 {
-  height: 32px;
-  position: relative;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
 }
 
 .c12 {
@@ -1180,13 +1171,17 @@ exports[`Storyshots Organisms | CardWithTabs Integration With Typography And Ext
   left: 0;
 }
 
-.c13 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #282823;
-  margin: 0;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
+.c14 {
+  height: 32px;
+  position: relative;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .c5 {
@@ -1203,6 +1198,15 @@ exports[`Storyshots Organisms | CardWithTabs Integration With Typography And Ext
   color: #282823;
   margin: 0;
   font-weight: 700;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c13 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 400;
   font-size: 14px;
   line-height: 1.4285714285714286;
 }
@@ -1263,7 +1267,7 @@ exports[`Storyshots Organisms | CardWithTabs Integration With Typography And Ext
   outline: 1px dotted ButtonText;
 }
 
-.c8 {
+.c6 {
   list-style-type: none;
   padding: 0;
   margin-top: 0;
@@ -1274,11 +1278,11 @@ exports[`Storyshots Organisms | CardWithTabs Integration With Typography And Ext
   height: 100%;
 }
 
-.c6 {
+.c8 {
   padding: 0 20px;
 }
 
-.c0 .c3 {
+.c2 .c3 {
   padding-bottom: 8px;
 }
 
@@ -1316,7 +1320,7 @@ exports[`Storyshots Organisms | CardWithTabs Integration With Typography And Ext
       >
         <button
           aria-selected={true}
-          className="c11"
+          className="NormalizedButton__Button-ey7f5x-0 c11"
           id="tabs-tab-0"
           onClick={[Function]}
           onKeyDown={[Function]}
@@ -1342,7 +1346,7 @@ exports[`Storyshots Organisms | CardWithTabs Integration With Typography And Ext
       >
         <button
           aria-selected={false}
-          className="c11"
+          className="NormalizedButton__Button-ey7f5x-0 c11"
           id="tabs-tab-1"
           onClick={[Function]}
           onKeyDown={[Function]}
@@ -1403,13 +1407,9 @@ nunc dignissim.
 `;
 
 exports[`Storyshots Organisms | CardWithTabs With Initial Active Tab Index 1`] = `
-.c2 {
+.c0 {
   background: #FFFFFF;
   box-shadow: 0 2px 2px 0 rgba(0,0,0,0.03);
-}
-
-.c9 {
-  box-sizing: border-box;
 }
 
 .c7 {
@@ -1432,6 +1432,10 @@ exports[`Storyshots Organisms | CardWithTabs With Initial Active Tab Index 1`] =
 
 .c7 > *:not(:first-child) {
   padding-top: 0;
+}
+
+.c9 {
+  box-sizing: border-box;
 }
 
 .c15 {
@@ -1477,15 +1481,6 @@ exports[`Storyshots Organisms | CardWithTabs With Initial Active Tab Index 1`] =
   left: 0;
 }
 
-.c10 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #282823;
-  margin: 0;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
-}
-
 .c5 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
@@ -1493,6 +1488,15 @@ exports[`Storyshots Organisms | CardWithTabs With Initial Active Tab Index 1`] =
   font-weight: 800;
   font-size: 18px;
   line-height: 1.3333333333333333;
+}
+
+.c10 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
 }
 
 .c13 {
@@ -1560,7 +1564,7 @@ exports[`Storyshots Organisms | CardWithTabs With Initial Active Tab Index 1`] =
   outline: 1px dotted ButtonText;
 }
 
-.c8 {
+.c6 {
   list-style-type: none;
   padding: 0;
   margin-top: 0;
@@ -1571,11 +1575,11 @@ exports[`Storyshots Organisms | CardWithTabs With Initial Active Tab Index 1`] =
   height: 100%;
 }
 
-.c6 {
+.c8 {
   padding: 0 20px;
 }
 
-.c0 .c3 {
+.c2 .c3 {
   padding-bottom: 8px;
 }
 
@@ -1613,7 +1617,7 @@ exports[`Storyshots Organisms | CardWithTabs With Initial Active Tab Index 1`] =
       >
         <button
           aria-selected={false}
-          className="c11"
+          className="NormalizedButton__Button-ey7f5x-0 c11"
           id="tabs-tab-0"
           onClick={[Function]}
           onKeyDown={[Function]}
@@ -1639,7 +1643,7 @@ exports[`Storyshots Organisms | CardWithTabs With Initial Active Tab Index 1`] =
       >
         <button
           aria-selected={true}
-          className="c11"
+          className="NormalizedButton__Button-ey7f5x-0 c11"
           id="tabs-tab-1"
           onClick={[Function]}
           onKeyDown={[Function]}

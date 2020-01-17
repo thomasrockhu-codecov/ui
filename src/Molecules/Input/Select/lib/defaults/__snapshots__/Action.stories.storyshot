@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Storyshots Molecules | Input / Select / Action All States 1`] = `
-.c4 {
+.c3 {
   padding-left: 12px;
   padding-top: 8px;
   padding-right: 12px;
@@ -63,12 +63,12 @@ exports[`Storyshots Molecules | Input / Select / Action All States 1`] = `
   line-height: 1.4285714285714286;
 }
 
-.c3 {
+.c4 {
   cursor: pointer;
   min-width: 140px;
 }
 
-.c3:hover {
+.c4:hover {
   background: #F5F5F5;
 }
 
@@ -203,7 +203,7 @@ exports[`Storyshots Molecules | Input / Select / Action All States 1`] = `
     </div>
     <div>
       <div
-        className="c9 c4"
+        className="c3 c9"
       >
         <span
           className="c5"
@@ -244,7 +244,7 @@ exports[`Storyshots Molecules | Input / Select / Action All States 1`] = `
     </div>
     <div>
       <div
-        className="c10 c4"
+        className="c3 c10"
         disabled={true}
       >
         <span
@@ -286,7 +286,7 @@ exports[`Storyshots Molecules | Input / Select / Action All States 1`] = `
     </div>
     <div>
       <div
-        className="c10 c4"
+        className="c3 c10"
         disabled={true}
       >
         <span

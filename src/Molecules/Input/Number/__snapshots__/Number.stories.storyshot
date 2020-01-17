@@ -13,7 +13,7 @@ exports[`Storyshots Molecules | Input / Number Default Story 1`] = `
   align-items: center;
 }
 
-.c6 {
+.c5 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -81,7 +81,7 @@ exports[`Storyshots Molecules | Input / Number Default Story 1`] = `
   display: inline-block;
 }
 
-.c5 {
+.c6 {
   position: relative;
   box-shadow: 0 1px 3px rgba(0,0,0,0.03);
 }
@@ -223,7 +223,7 @@ exports[`Storyshots Molecules | Input / Number Default Story 1`] = `
       className="c5 c6"
     >
       <input
-        className="c7"
+        className="NormalizedInput__Input-sc-1m4kmh9-0 c7"
         id="insert-unique-id"
         inputMode="decimal"
         min={0}
@@ -301,7 +301,7 @@ exports[`Storyshots Molecules | Input / Number Disabled Story 1`] = `
   align-items: center;
 }
 
-.c6 {
+.c5 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -369,7 +369,7 @@ exports[`Storyshots Molecules | Input / Number Disabled Story 1`] = `
   display: inline-block;
 }
 
-.c5 {
+.c6 {
   position: relative;
   box-shadow: 0 1px 3px rgba(0,0,0,0.03);
 }
@@ -501,7 +501,7 @@ exports[`Storyshots Molecules | Input / Number Disabled Story 1`] = `
       className="c5 c6"
     >
       <input
-        className="c7"
+        className="NormalizedInput__Input-sc-1m4kmh9-0 c7"
         disabled={true}
         id="insert-unique-id"
         inputMode="decimal"
@@ -612,7 +612,7 @@ Array [
   align-items: center;
 }
 
-.c9 {
+.c8 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -680,7 +680,7 @@ Array [
   display: inline-block;
 }
 
-.c8 {
+.c9 {
   position: relative;
   box-shadow: 0 1px 3px rgba(0,0,0,0.03);
 }
@@ -854,6 +854,10 @@ Array [
   align-self: center;
 }
 
+@media (min-width:760px) {
+
+}
+
 <div
     className="c0"
     direction="column"
@@ -893,7 +897,7 @@ Array [
               className="c8 c9"
             >
               <input
-                className="c10"
+                className="NormalizedInput__Input-sc-1m4kmh9-0 c10"
                 id="insert-unique-id"
                 inputMode="decimal"
                 min={0}
@@ -994,7 +998,7 @@ Array [
               className="c8 c9"
             >
               <input
-                className="c10"
+                className="NormalizedInput__Input-sc-1m4kmh9-0 c10"
                 id="insert-unique-id"
                 inputMode="decimal"
                 min={0}
@@ -1065,6 +1069,10 @@ Array [
   margin-bottom: 32px;
 }
 
+@media (min-width:760px) {
+
+}
+
 <div
     className="c0"
   />,
@@ -1084,7 +1092,7 @@ exports[`Storyshots Molecules | Input / Number With A Smaller Step 1`] = `
   align-items: center;
 }
 
-.c6 {
+.c5 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -1152,7 +1160,7 @@ exports[`Storyshots Molecules | Input / Number With A Smaller Step 1`] = `
   display: inline-block;
 }
 
-.c5 {
+.c6 {
   position: relative;
   box-shadow: 0 1px 3px rgba(0,0,0,0.03);
 }
@@ -1294,7 +1302,7 @@ exports[`Storyshots Molecules | Input / Number With A Smaller Step 1`] = `
       className="c5 c6"
     >
       <input
-        className="c7"
+        className="NormalizedInput__Input-sc-1m4kmh9-0 c7"
         id="insert-unique-id"
         inputMode="decimal"
         min={0}
@@ -1372,7 +1380,7 @@ exports[`Storyshots Molecules | Input / Number With All Actions 1`] = `
   align-items: center;
 }
 
-.c6 {
+.c5 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -1440,7 +1448,7 @@ exports[`Storyshots Molecules | Input / Number With All Actions 1`] = `
   display: inline-block;
 }
 
-.c5 {
+.c6 {
   position: relative;
   box-shadow: 0 1px 3px rgba(0,0,0,0.03);
 }
@@ -1582,7 +1590,7 @@ exports[`Storyshots Molecules | Input / Number With All Actions 1`] = `
       className="c5 c6"
     >
       <input
-        className="c7"
+        className="NormalizedInput__Input-sc-1m4kmh9-0 c7"
         id="insert-unique-id"
         inputMode="decimal"
         min={0}
@@ -1665,7 +1673,7 @@ exports[`Storyshots Molecules | Input / Number With Auto Focus 1`] = `
   align-items: center;
 }
 
-.c6 {
+.c5 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -1733,7 +1741,7 @@ exports[`Storyshots Molecules | Input / Number With Auto Focus 1`] = `
   display: inline-block;
 }
 
-.c5 {
+.c6 {
   position: relative;
   box-shadow: 0 1px 3px rgba(0,0,0,0.03);
 }
@@ -1876,7 +1884,7 @@ exports[`Storyshots Molecules | Input / Number With Auto Focus 1`] = `
     >
       <input
         autoFocus={true}
-        className="c7"
+        className="NormalizedInput__Input-sc-1m4kmh9-0 c7"
         id="insert-unique-id"
         inputMode="decimal"
         min={0}
@@ -1942,22 +1950,6 @@ exports[`Storyshots Molecules | Input / Number With Auto Focus 1`] = `
 `;
 
 exports[`Storyshots Molecules | Input / Number With Both Addons 1`] = `
-.c9 {
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
 .c1 {
   box-sizing: border-box;
   display: -webkit-box;
@@ -1970,7 +1962,7 @@ exports[`Storyshots Molecules | Input / Number With Both Addons 1`] = `
   align-items: center;
 }
 
-.c6 {
+.c5 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -1984,6 +1976,22 @@ exports[`Storyshots Molecules | Input / Number With Both Addons 1`] = `
   -webkit-flex-grow: 1;
   -ms-flex-positive: 1;
   flex-grow: 1;
+}
+
+.c8 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .c2 {
@@ -2029,12 +2037,12 @@ exports[`Storyshots Molecules | Input / Number With Both Addons 1`] = `
   display: inline-block;
 }
 
-.c5 {
+.c6 {
   position: relative;
   box-shadow: 0 1px 3px rgba(0,0,0,0.03);
 }
 
-.c8 {
+.c9 {
   position: absolute;
   top: 0;
   height: 100%;
@@ -2137,7 +2145,7 @@ exports[`Storyshots Molecules | Input / Number With Both Addons 1`] = `
       className="c5 c6"
     >
       <input
-        className="c7"
+        className="NormalizedInput__Input-sc-1m4kmh9-0 c7"
         id="insert-unique-id"
         inputMode="decimal"
         min={0}
@@ -2166,7 +2174,7 @@ exports[`Storyshots Molecules | Input / Number With Both Addons 1`] = `
         </svg>
       </div>
       <div
-        className="c11 c9"
+        className="c8 c11"
         position="right"
       >
         SEK
@@ -2189,7 +2197,7 @@ exports[`Storyshots Molecules | Input / Number With Default Value Uncontrolled B
   align-items: center;
 }
 
-.c6 {
+.c5 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -2257,7 +2265,7 @@ exports[`Storyshots Molecules | Input / Number With Default Value Uncontrolled B
   display: inline-block;
 }
 
-.c5 {
+.c6 {
   position: relative;
   box-shadow: 0 1px 3px rgba(0,0,0,0.03);
 }
@@ -2399,7 +2407,7 @@ exports[`Storyshots Molecules | Input / Number With Default Value Uncontrolled B
       className="c5 c6"
     >
       <input
-        className="c7"
+        className="NormalizedInput__Input-sc-1m4kmh9-0 c7"
         id="insert-unique-id"
         inputMode="decimal"
         min={0}
@@ -2477,7 +2485,7 @@ exports[`Storyshots Molecules | Input / Number With Error If Value Is Less Than 
   align-items: center;
 }
 
-.c6 {
+.c5 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -2554,7 +2562,7 @@ exports[`Storyshots Molecules | Input / Number With Error If Value Is Less Than 
   display: inline-block;
 }
 
-.c5 {
+.c6 {
   position: relative;
   box-shadow: 0 1px 3px rgba(0,0,0,0.03);
 }
@@ -2697,7 +2705,7 @@ exports[`Storyshots Molecules | Input / Number With Error If Value Is Less Than 
     >
       <input
         aria-invalid={true}
-        className="c7"
+        className="NormalizedInput__Input-sc-1m4kmh9-0 c7"
         id="insert-unique-id"
         inputMode="decimal"
         min={0}
@@ -2787,7 +2795,7 @@ exports[`Storyshots Molecules | Input / Number With Extra Info And Error 1`] = `
   align-items: center;
 }
 
-.c6 {
+.c5 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -2864,7 +2872,7 @@ exports[`Storyshots Molecules | Input / Number With Extra Info And Error 1`] = `
   display: inline-block;
 }
 
-.c5 {
+.c6 {
   position: relative;
   box-shadow: 0 1px 3px rgba(0,0,0,0.03);
 }
@@ -3007,7 +3015,7 @@ exports[`Storyshots Molecules | Input / Number With Extra Info And Error 1`] = `
     >
       <input
         aria-invalid={true}
-        className="c7"
+        className="NormalizedInput__Input-sc-1m4kmh9-0 c7"
         id="insert-unique-id"
         inputMode="decimal"
         min={0}
@@ -3097,7 +3105,7 @@ exports[`Storyshots Molecules | Input / Number With Extra Info Below 1`] = `
   align-items: center;
 }
 
-.c6 {
+.c5 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -3174,7 +3182,7 @@ exports[`Storyshots Molecules | Input / Number With Extra Info Below 1`] = `
   display: inline-block;
 }
 
-.c5 {
+.c6 {
   position: relative;
   box-shadow: 0 1px 3px rgba(0,0,0,0.03);
 }
@@ -3316,7 +3324,7 @@ exports[`Storyshots Molecules | Input / Number With Extra Info Below 1`] = `
       className="c5 c6"
     >
       <input
-        className="c7"
+        className="NormalizedInput__Input-sc-1m4kmh9-0 c7"
         id="insert-unique-id"
         inputMode="decimal"
         min={0}
@@ -3401,7 +3409,7 @@ exports[`Storyshots Molecules | Input / Number With Hidden Label 1`] = `
   align-items: center;
 }
 
-.c6 {
+.c5 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -3475,7 +3483,7 @@ exports[`Storyshots Molecules | Input / Number With Hidden Label 1`] = `
   display: inline-block;
 }
 
-.c5 {
+.c6 {
   position: relative;
   box-shadow: 0 1px 3px rgba(0,0,0,0.03);
 }
@@ -3617,7 +3625,7 @@ exports[`Storyshots Molecules | Input / Number With Hidden Label 1`] = `
       className="c5 c6"
     >
       <input
-        className="c7"
+        className="NormalizedInput__Input-sc-1m4kmh9-0 c7"
         id="insert-unique-id"
         inputMode="decimal"
         min={0}
@@ -3695,7 +3703,7 @@ exports[`Storyshots Molecules | Input / Number With Label Tooltip 1`] = `
   align-items: center;
 }
 
-.c9 {
+.c8 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -3726,7 +3734,7 @@ exports[`Storyshots Molecules | Input / Number With Label Tooltip 1`] = `
   cursor: pointer;
 }
 
-.c5 {
+.c4 {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -3781,11 +3789,11 @@ exports[`Storyshots Molecules | Input / Number With Label Tooltip 1`] = `
   display: inline-block;
 }
 
-.c4 {
+.c5 {
   margin-left: 4px;
 }
 
-.c8 {
+.c9 {
   position: relative;
   box-shadow: 0 1px 3px rgba(0,0,0,0.03);
 }
@@ -3955,7 +3963,7 @@ exports[`Storyshots Molecules | Input / Number With Label Tooltip 1`] = `
       className="c8 c9"
     >
       <input
-        className="c10"
+        className="NormalizedInput__Input-sc-1m4kmh9-0 c10"
         id="insert-unique-id"
         inputMode="decimal"
         min={0}
@@ -4021,22 +4029,6 @@ exports[`Storyshots Molecules | Input / Number With Label Tooltip 1`] = `
 `;
 
 exports[`Storyshots Molecules | Input / Number With Left Addon 1`] = `
-.c9 {
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
 .c1 {
   box-sizing: border-box;
   display: -webkit-box;
@@ -4049,7 +4041,7 @@ exports[`Storyshots Molecules | Input / Number With Left Addon 1`] = `
   align-items: center;
 }
 
-.c6 {
+.c5 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -4063,6 +4055,22 @@ exports[`Storyshots Molecules | Input / Number With Left Addon 1`] = `
   -webkit-flex-grow: 1;
   -ms-flex-positive: 1;
   flex-grow: 1;
+}
+
+.c8 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .c2 {
@@ -4108,12 +4116,12 @@ exports[`Storyshots Molecules | Input / Number With Left Addon 1`] = `
   display: inline-block;
 }
 
-.c5 {
+.c6 {
   position: relative;
   box-shadow: 0 1px 3px rgba(0,0,0,0.03);
 }
 
-.c8 {
+.c9 {
   position: absolute;
   top: 0;
   height: 100%;
@@ -4208,7 +4216,7 @@ exports[`Storyshots Molecules | Input / Number With Left Addon 1`] = `
       className="c5 c6"
     >
       <input
-        className="c7"
+        className="NormalizedInput__Input-sc-1m4kmh9-0 c7"
         id="insert-unique-id"
         inputMode="decimal"
         min={0}
@@ -4254,7 +4262,7 @@ exports[`Storyshots Molecules | Input / Number With Max And Min 1`] = `
   align-items: center;
 }
 
-.c6 {
+.c5 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -4322,7 +4330,7 @@ exports[`Storyshots Molecules | Input / Number With Max And Min 1`] = `
   display: inline-block;
 }
 
-.c5 {
+.c6 {
   position: relative;
   box-shadow: 0 1px 3px rgba(0,0,0,0.03);
 }
@@ -4464,7 +4472,7 @@ exports[`Storyshots Molecules | Input / Number With Max And Min 1`] = `
       className="c5 c6"
     >
       <input
-        className="c7"
+        className="NormalizedInput__Input-sc-1m4kmh9-0 c7"
         id="insert-unique-id"
         inputMode="decimal"
         max="20"
@@ -4543,7 +4551,7 @@ exports[`Storyshots Molecules | Input / Number With No Steppers 1`] = `
   align-items: center;
 }
 
-.c6 {
+.c5 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -4588,7 +4596,7 @@ exports[`Storyshots Molecules | Input / Number With No Steppers 1`] = `
   display: inline-block;
 }
 
-.c5 {
+.c6 {
   position: relative;
   box-shadow: 0 1px 3px rgba(0,0,0,0.03);
 }
@@ -4679,7 +4687,7 @@ exports[`Storyshots Molecules | Input / Number With No Steppers 1`] = `
       className="c5 c6"
     >
       <input
-        className="c7"
+        className="NormalizedInput__Input-sc-1m4kmh9-0 c7"
         id="insert-unique-id"
         inputMode="decimal"
         min={0}
@@ -4725,23 +4733,7 @@ Array [
       Placeholders
     </span>
   </div>,
-  .c13 {
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.c4 {
+  .c4 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -4753,7 +4745,7 @@ Array [
   align-items: center;
 }
 
-.c9 {
+.c8 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -4767,6 +4759,22 @@ Array [
   -webkit-flex-grow: 1;
   -ms-flex-positive: 1;
   flex-grow: 1;
+}
+
+.c12 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .c19 {
@@ -4835,9 +4843,17 @@ Array [
   display: inline-block;
 }
 
-.c8 {
+.c9 {
   position: relative;
   box-shadow: 0 1px 3px rgba(0,0,0,0.03);
+}
+
+.c13 {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  z-index: 3;
+  right: 8px;
 }
 
 .c15 {
@@ -4846,14 +4862,6 @@ Array [
   height: 100%;
   z-index: 3;
   left: 8px;
-}
-
-.c12 {
-  position: absolute;
-  top: 0;
-  height: 100%;
-  z-index: 3;
-  right: 8px;
 }
 
 .c18 {
@@ -4905,67 +4913,6 @@ Array [
 
 .c18:active:enabled svg {
   fill: #FFFFFF;
-}
-
-.c17 {
-  font-family: inherit;
-  font-size: 100%;
-  line-height: 1.15;
-  margin: 0;
-  overflow: visible;
-  background-color: #FFFFFF;
-  outline: none;
-  border: 1px solid #BCBCB6;
-  position: relative;
-  height: 40px;
-  width: 100%;
-  text-align: center;
-  box-sizing: border-box;
-  padding: 8px;
-  margin: 0 -1px;
-  z-index: 1;
-}
-
-.c17:hover {
-  border-color: #4B4B46;
-  z-index: 2;
-}
-
-.c17:focus {
-  border-color: #0046FF;
-  z-index: 3;
-}
-
-.c17::-moz-placeholder,
-.c17:-ms-input-placeholder,
-.c17::-webkit-input-placeholder {
-  height: inherit;
-  line-height: inherit;
-  color: #6E6E69;
-}
-
-.c17::-moz-placeholder,
-.c17:-ms-input-placeholder,
-.c17::-moz-placeholder {
-  height: inherit;
-  line-height: inherit;
-  color: #6E6E69;
-}
-
-.c17::-moz-placeholder,
-.c17:-ms-input-placeholder,
-.c17:-ms-input-placeholder {
-  height: inherit;
-  line-height: inherit;
-  color: #6E6E69;
-}
-
-.c17::-moz-placeholder,
-.c17:-ms-input-placeholder,
-.c17::placeholder {
-  height: inherit;
-  line-height: inherit;
-  color: #6E6E69;
 }
 
 .c10 {
@@ -5024,68 +4971,6 @@ Array [
 .c10::-moz-placeholder,
 .c10:-ms-input-placeholder,
 .c10::placeholder {
-  height: inherit;
-  line-height: inherit;
-  color: #6E6E69;
-}
-
-.c14 {
-  font-family: inherit;
-  font-size: 100%;
-  line-height: 1.15;
-  margin: 0;
-  overflow: visible;
-  background-color: #FFFFFF;
-  outline: none;
-  border: 1px solid #BCBCB6;
-  position: relative;
-  height: 40px;
-  width: 100%;
-  text-align: left;
-  box-sizing: border-box;
-  padding-top: 8px;
-  padding-bottom: 8px;
-  padding-left: 32px;
-  padding-right: 8px;
-}
-
-.c14:hover {
-  border-color: #4B4B46;
-  z-index: 2;
-}
-
-.c14:focus {
-  border-color: #0046FF;
-  z-index: 3;
-}
-
-.c14::-moz-placeholder,
-.c14:-ms-input-placeholder,
-.c14::-webkit-input-placeholder {
-  height: inherit;
-  line-height: inherit;
-  color: #6E6E69;
-}
-
-.c14::-moz-placeholder,
-.c14:-ms-input-placeholder,
-.c14::-moz-placeholder {
-  height: inherit;
-  line-height: inherit;
-  color: #6E6E69;
-}
-
-.c14::-moz-placeholder,
-.c14:-ms-input-placeholder,
-.c14:-ms-input-placeholder {
-  height: inherit;
-  line-height: inherit;
-  color: #6E6E69;
-}
-
-.c14::-moz-placeholder,
-.c14:-ms-input-placeholder,
-.c14::placeholder {
   height: inherit;
   line-height: inherit;
   color: #6E6E69;
@@ -5153,6 +5038,129 @@ Array [
   color: #6E6E69;
 }
 
+.c14 {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  overflow: visible;
+  background-color: #FFFFFF;
+  outline: none;
+  border: 1px solid #BCBCB6;
+  position: relative;
+  height: 40px;
+  width: 100%;
+  text-align: left;
+  box-sizing: border-box;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 32px;
+  padding-right: 8px;
+}
+
+.c14:hover {
+  border-color: #4B4B46;
+  z-index: 2;
+}
+
+.c14:focus {
+  border-color: #0046FF;
+  z-index: 3;
+}
+
+.c14::-moz-placeholder,
+.c14:-ms-input-placeholder,
+.c14::-webkit-input-placeholder {
+  height: inherit;
+  line-height: inherit;
+  color: #6E6E69;
+}
+
+.c14::-moz-placeholder,
+.c14:-ms-input-placeholder,
+.c14::-moz-placeholder {
+  height: inherit;
+  line-height: inherit;
+  color: #6E6E69;
+}
+
+.c14::-moz-placeholder,
+.c14:-ms-input-placeholder,
+.c14:-ms-input-placeholder {
+  height: inherit;
+  line-height: inherit;
+  color: #6E6E69;
+}
+
+.c14::-moz-placeholder,
+.c14:-ms-input-placeholder,
+.c14::placeholder {
+  height: inherit;
+  line-height: inherit;
+  color: #6E6E69;
+}
+
+.c17 {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  overflow: visible;
+  background-color: #FFFFFF;
+  outline: none;
+  border: 1px solid #BCBCB6;
+  position: relative;
+  height: 40px;
+  width: 100%;
+  text-align: center;
+  box-sizing: border-box;
+  padding: 8px;
+  margin: 0 -1px;
+  z-index: 1;
+}
+
+.c17:hover {
+  border-color: #4B4B46;
+  z-index: 2;
+}
+
+.c17:focus {
+  border-color: #0046FF;
+  z-index: 3;
+}
+
+.c17::-moz-placeholder,
+.c17:-ms-input-placeholder,
+.c17::-webkit-input-placeholder {
+  height: inherit;
+  line-height: inherit;
+  color: #6E6E69;
+}
+
+.c17::-moz-placeholder,
+.c17:-ms-input-placeholder,
+.c17::-moz-placeholder {
+  height: inherit;
+  line-height: inherit;
+  color: #6E6E69;
+}
+
+.c17::-moz-placeholder,
+.c17:-ms-input-placeholder,
+.c17:-ms-input-placeholder {
+  height: inherit;
+  line-height: inherit;
+  color: #6E6E69;
+}
+
+.c17::-moz-placeholder,
+.c17:-ms-input-placeholder,
+.c17::placeholder {
+  height: inherit;
+  line-height: inherit;
+  color: #6E6E69;
+}
+
 .c0 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -5210,6 +5218,10 @@ Array [
   align-self: center;
 }
 
+@media (min-width:760px) {
+
+}
+
 <div
     className="c0"
     direction="column"
@@ -5249,7 +5261,7 @@ Array [
               className="c8 c9"
             >
               <input
-                className="c10"
+                className="NormalizedInput__Input-sc-1m4kmh9-0 c10"
                 id="insert-unique-id"
                 inputMode="decimal"
                 min={0}
@@ -5300,7 +5312,7 @@ Array [
               className="c8 c9"
             >
               <input
-                className="c11"
+                className="NormalizedInput__Input-sc-1m4kmh9-0 c11"
                 id="insert-unique-id"
                 inputMode="decimal"
                 min={0}
@@ -5357,7 +5369,7 @@ Array [
               className="c8 c9"
             >
               <input
-                className="c14"
+                className="NormalizedInput__Input-sc-1m4kmh9-0 c14"
                 id="insert-unique-id"
                 inputMode="decimal"
                 min={0}
@@ -5369,7 +5381,7 @@ Array [
                 value=""
               />
               <div
-                className="c15 c13"
+                className="c12 c15"
                 position="left"
               >
                 <svg
@@ -5426,7 +5438,7 @@ Array [
               className="c8 c9"
             >
               <input
-                className="c17"
+                className="NormalizedInput__Input-sc-1m4kmh9-0 c17"
                 id="insert-unique-id"
                 inputMode="decimal"
                 min={0}
@@ -5496,6 +5508,10 @@ Array [
   margin-bottom: 32px;
 }
 
+@media (min-width:760px) {
+
+}
+
 <div
     className="c0"
   />,
@@ -5503,22 +5519,6 @@ Array [
 `;
 
 exports[`Storyshots Molecules | Input / Number With Right Addon 1`] = `
-.c9 {
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
 .c1 {
   box-sizing: border-box;
   display: -webkit-box;
@@ -5531,7 +5531,7 @@ exports[`Storyshots Molecules | Input / Number With Right Addon 1`] = `
   align-items: center;
 }
 
-.c6 {
+.c5 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -5545,6 +5545,22 @@ exports[`Storyshots Molecules | Input / Number With Right Addon 1`] = `
   -webkit-flex-grow: 1;
   -ms-flex-positive: 1;
   flex-grow: 1;
+}
+
+.c8 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .c2 {
@@ -5576,12 +5592,12 @@ exports[`Storyshots Molecules | Input / Number With Right Addon 1`] = `
   display: inline-block;
 }
 
-.c5 {
+.c6 {
   position: relative;
   box-shadow: 0 1px 3px rgba(0,0,0,0.03);
 }
 
-.c8 {
+.c9 {
   position: absolute;
   top: 0;
   height: 100%;
@@ -5676,7 +5692,7 @@ exports[`Storyshots Molecules | Input / Number With Right Addon 1`] = `
       className="c5 c6"
     >
       <input
-        className="c7"
+        className="NormalizedInput__Input-sc-1m4kmh9-0 c7"
         id="insert-unique-id"
         inputMode="decimal"
         min={0}
@@ -5740,7 +5756,7 @@ Array [
   align-items: center;
 }
 
-.c9 {
+.c8 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -5817,7 +5833,7 @@ Array [
   display: inline-block;
 }
 
-.c8 {
+.c9 {
   position: relative;
   box-shadow: 0 1px 3px rgba(0,0,0,0.03);
 }
@@ -6113,6 +6129,10 @@ Array [
   align-self: center;
 }
 
+@media (min-width:760px) {
+
+}
+
 <div
     className="c0"
     direction="column"
@@ -6152,7 +6172,7 @@ Array [
               className="c8 c9"
             >
               <input
-                className="c10"
+                className="NormalizedInput__Input-sc-1m4kmh9-0 c10"
                 id="insert-unique-id"
                 inputMode="decimal"
                 min={0}
@@ -6254,7 +6274,7 @@ Array [
               className="c8 c9"
             >
               <input
-                className="c14"
+                className="NormalizedInput__Input-sc-1m4kmh9-0 c14"
                 id="insert-unique-id"
                 inputMode="decimal"
                 min={0}
@@ -6305,7 +6325,7 @@ Array [
             >
               <input
                 aria-invalid={true}
-                className="c15"
+                className="NormalizedInput__Input-sc-1m4kmh9-0 c15"
                 id="insert-unique-id"
                 inputMode="decimal"
                 min={0}
@@ -6389,6 +6409,10 @@ Array [
   margin-bottom: 32px;
 }
 
+@media (min-width:760px) {
+
+}
+
 <div
     className="c0"
   />,
@@ -6408,7 +6432,7 @@ exports[`Storyshots Molecules | Input / Number With Success 1`] = `
   align-items: center;
 }
 
-.c6 {
+.c5 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -6476,7 +6500,7 @@ exports[`Storyshots Molecules | Input / Number With Success 1`] = `
   display: inline-block;
 }
 
-.c5 {
+.c6 {
   position: relative;
   box-shadow: 0 1px 3px rgba(0,0,0,0.03);
 }
@@ -6618,7 +6642,7 @@ exports[`Storyshots Molecules | Input / Number With Success 1`] = `
       className="c5 c6"
     >
       <input
-        className="c7"
+        className="NormalizedInput__Input-sc-1m4kmh9-0 c7"
         id="insert-unique-id"
         inputMode="decimal"
         min={0}
@@ -6697,7 +6721,7 @@ Array [
   align-items: center;
 }
 
-.c6 {
+.c5 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -6765,7 +6789,7 @@ Array [
   display: inline-block;
 }
 
-.c5 {
+.c6 {
   position: relative;
   box-shadow: 0 1px 3px rgba(0,0,0,0.03);
 }
@@ -6907,7 +6931,7 @@ Array [
         className="c5 c6"
       >
         <input
-          className="c7"
+          className="NormalizedInput__Input-sc-1m4kmh9-0 c7"
           id="insert-unique-id"
           inputMode="decimal"
           min={0}

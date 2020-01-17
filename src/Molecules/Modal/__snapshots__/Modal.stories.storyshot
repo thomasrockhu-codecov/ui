@@ -5,7 +5,7 @@ exports[`Storyshots Molecules | Modal Default Story 1`] = `
   margin-bottom: 8px;
 }
 
-.c2 {
+.c1 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -39,6 +39,15 @@ exports[`Storyshots Molecules | Modal Default Story 1`] = `
   stroke: #6E6E69;
 }
 
+.c5 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 1.2;
+}
+
 .c8 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
@@ -49,19 +58,10 @@ exports[`Storyshots Molecules | Modal Default Story 1`] = `
 }
 
 .c4 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #282823;
-  margin: 0;
-  font-weight: 800;
-  font-size: 20px;
-  line-height: 1.2;
-}
-
-.c5 {
   padding-right: 16px;
 }
 
-.c1 {
+.c2 {
   position: fixed;
   top: 0;
   left: 0;
@@ -130,16 +130,24 @@ exports[`Storyshots Molecules | Modal Default Story 1`] = `
 }
 
 @media (min-width:760px) {
-  .c4 {
+  .c5 {
     font-size: 24px;
     line-height: 1.1666666666666667;
   }
 }
 
 @media (min-width:760px) {
-  .c1 {
+  .c2 {
     background-color: rgba(110,110,105,0.63);
   }
+}
+
+@media (max-width:759px) {
+
+}
+
+@media (min-width:760px) {
+
 }
 
 @media (min-width:760px) {
@@ -262,7 +270,7 @@ exports[`Storyshots Molecules | Modal Default Story 1`] = `
               </p>
             </div>
             <button
-              className="c9"
+              className="NormalizedButton__Button-ey7f5x-0 c9"
               onClick={[Function]}
               type="button"
             >
@@ -318,7 +326,7 @@ exports[`Storyshots Molecules | Modal Footer Story 1`] = `
   padding-top: 16px;
 }
 
-.c2 {
+.c1 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -352,6 +360,15 @@ exports[`Storyshots Molecules | Modal Footer Story 1`] = `
   stroke: #6E6E69;
 }
 
+.c5 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 1.2;
+}
+
 .c8 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
@@ -359,15 +376,6 @@ exports[`Storyshots Molecules | Modal Footer Story 1`] = `
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
-}
-
-.c4 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #282823;
-  margin: 0;
-  font-weight: 800;
-  font-size: 20px;
-  line-height: 1.2;
 }
 
 .c11 {
@@ -450,11 +458,11 @@ exports[`Storyshots Molecules | Modal Footer Story 1`] = `
   background-color: hsl(223.5,100%,40%);
 }
 
-.c5 {
+.c4 {
   padding-right: 16px;
 }
 
-.c1 {
+.c2 {
   position: fixed;
   top: 0;
   left: 0;
@@ -523,16 +531,24 @@ exports[`Storyshots Molecules | Modal Footer Story 1`] = `
 }
 
 @media (min-width:760px) {
-  .c4 {
+  .c5 {
     font-size: 24px;
     line-height: 1.1666666666666667;
   }
 }
 
 @media (min-width:760px) {
-  .c1 {
+  .c2 {
     background-color: rgba(110,110,105,0.63);
   }
+}
+
+@media (max-width:759px) {
+
+}
+
+@media (min-width:760px) {
+
 }
 
 @media (min-width:760px) {
@@ -665,7 +681,7 @@ exports[`Storyshots Molecules | Modal Footer Story 1`] = `
                   This is a footer which is a ReactNode, which could e.g. contain a button or only text
                 </p>
                 <button
-                  className="c10"
+                  className="NormalizedButton__Button-ey7f5x-0 c10"
                   onClick={[Function]}
                   type="button"
                 >
@@ -680,7 +696,7 @@ exports[`Storyshots Molecules | Modal Footer Story 1`] = `
               </div>
             </div>
             <button
-              className="c12"
+              className="NormalizedButton__Button-ey7f5x-0 c12"
               onClick={[Function]}
               type="button"
             >
@@ -730,7 +746,7 @@ exports[`Storyshots Molecules | Modal Hide Close 1`] = `
   margin-bottom: 8px;
 }
 
-.c2 {
+.c1 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -746,6 +762,15 @@ exports[`Storyshots Molecules | Modal Hide Close 1`] = `
   align-items: center;
 }
 
+.c5 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 1.2;
+}
+
 .c8 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
@@ -756,19 +781,10 @@ exports[`Storyshots Molecules | Modal Hide Close 1`] = `
 }
 
 .c4 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #282823;
-  margin: 0;
-  font-weight: 800;
-  font-size: 20px;
-  line-height: 1.2;
-}
-
-.c5 {
   padding-right: 16px;
 }
 
-.c1 {
+.c2 {
   position: fixed;
   top: 0;
   left: 0;
@@ -798,16 +814,24 @@ exports[`Storyshots Molecules | Modal Hide Close 1`] = `
 }
 
 @media (min-width:760px) {
-  .c4 {
+  .c5 {
     font-size: 24px;
     line-height: 1.1666666666666667;
   }
 }
 
 @media (min-width:760px) {
-  .c1 {
+  .c2 {
     background-color: rgba(110,110,105,0.63);
   }
+}
+
+@media (max-width:759px) {
+
+}
+
+@media (min-width:760px) {
+
 }
 
 @media (min-width:760px) {
@@ -927,7 +951,7 @@ exports[`Storyshots Molecules | Modal Node As Title 1`] = `
   margin-bottom: 8px;
 }
 
-.c2 {
+.c1 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -984,15 +1008,6 @@ exports[`Storyshots Molecules | Modal Node As Title 1`] = `
   stroke: #6E6E69;
 }
 
-.c9 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #282823;
-  margin: 0;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.5;
-}
-
 .c6 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
@@ -1002,7 +1017,16 @@ exports[`Storyshots Molecules | Modal Node As Title 1`] = `
   line-height: 1.2;
 }
 
-.c1 {
+.c9 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.c2 {
   position: fixed;
   top: 0;
   left: 0;
@@ -1078,9 +1102,17 @@ exports[`Storyshots Molecules | Modal Node As Title 1`] = `
 }
 
 @media (min-width:760px) {
-  .c1 {
+  .c2 {
     background-color: rgba(110,110,105,0.63);
   }
+}
+
+@media (max-width:759px) {
+
+}
+
+@media (min-width:760px) {
+
 }
 
 @media (min-width:760px) {
@@ -1227,7 +1259,7 @@ exports[`Storyshots Molecules | Modal Node As Title 1`] = `
               </p>
             </div>
             <button
-              className="c10"
+              className="NormalizedButton__Button-ey7f5x-0 c10"
               onClick={[Function]}
               type="button"
             >
@@ -1277,7 +1309,7 @@ exports[`Storyshots Molecules | Modal Uncontrolled Behavior 1`] = `
   margin-bottom: 8px;
 }
 
-.c2 {
+.c1 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -1311,6 +1343,15 @@ exports[`Storyshots Molecules | Modal Uncontrolled Behavior 1`] = `
   stroke: #6E6E69;
 }
 
+.c5 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 1.2;
+}
+
 .c8 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
@@ -1321,19 +1362,10 @@ exports[`Storyshots Molecules | Modal Uncontrolled Behavior 1`] = `
 }
 
 .c4 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #282823;
-  margin: 0;
-  font-weight: 800;
-  font-size: 20px;
-  line-height: 1.2;
-}
-
-.c5 {
   padding-right: 16px;
 }
 
-.c1 {
+.c2 {
   position: fixed;
   top: 0;
   left: 0;
@@ -1402,16 +1434,24 @@ exports[`Storyshots Molecules | Modal Uncontrolled Behavior 1`] = `
 }
 
 @media (min-width:760px) {
-  .c4 {
+  .c5 {
     font-size: 24px;
     line-height: 1.1666666666666667;
   }
 }
 
 @media (min-width:760px) {
-  .c1 {
+  .c2 {
     background-color: rgba(110,110,105,0.63);
   }
+}
+
+@media (max-width:759px) {
+
+}
+
+@media (min-width:760px) {
+
 }
 
 @media (min-width:760px) {
@@ -1528,7 +1568,7 @@ exports[`Storyshots Molecules | Modal Uncontrolled Behavior 1`] = `
               </p>
             </div>
             <button
-              className="c9"
+              className="NormalizedButton__Button-ey7f5x-0 c9"
               onClick={[Function]}
               type="button"
             >
@@ -1578,7 +1618,7 @@ exports[`Storyshots Molecules | Modal Without Header 1`] = `
   margin-bottom: 8px;
 }
 
-.c2 {
+.c1 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -1621,7 +1661,7 @@ exports[`Storyshots Molecules | Modal Without Header 1`] = `
   line-height: 1.5;
 }
 
-.c1 {
+.c2 {
   position: fixed;
   top: 0;
   left: 0;
@@ -1684,9 +1724,17 @@ exports[`Storyshots Molecules | Modal Without Header 1`] = `
 }
 
 @media (min-width:760px) {
-  .c1 {
+  .c2 {
     background-color: rgba(110,110,105,0.63);
   }
+}
+
+@media (max-width:759px) {
+
+}
+
+@media (min-width:760px) {
+
 }
 
 @media (min-width:760px) {
@@ -1795,7 +1843,7 @@ exports[`Storyshots Molecules | Modal Without Header 1`] = `
               </p>
             </div>
             <button
-              className="c6"
+              className="NormalizedButton__Button-ey7f5x-0 c6"
               onClick={[Function]}
               type="button"
             >

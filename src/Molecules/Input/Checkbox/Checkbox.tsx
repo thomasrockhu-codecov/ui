@@ -40,7 +40,7 @@ const StyledFormLabel = styled(FormLabel)`
   }
 `;
 
-const Input = styled(CleanInput).attrs({ type: 'checkbox' })<InternalInputProps>`
+const Input = styled(CleanInput).attrs(() => ({ type: 'checkbox' }))<InternalInputProps>`
   position: absolute;
   opacity: 0;
   height: 0;

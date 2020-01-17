@@ -56,7 +56,7 @@ export const placeholderNormalizaion = css`
   }
 `;
 
-const Input = styled(NormalizedElements.Input).attrs({ type: 'text' })<Partial<Props>>`
+const Input = styled(NormalizedElements.Input).attrs(() => ({ type: 'text' }))<Partial<Props>>`
   border: 0;
   width: 100%;
   padding: ${p => p.theme.spacing.unit(2)}px;

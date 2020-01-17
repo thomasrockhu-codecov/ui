@@ -84,16 +84,7 @@ exports[`Storyshots Molecules | Drawer Default Story 1`] = `
   stroke: #6E6E69;
 }
 
-.c13 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #282823;
-  margin: 0;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.5;
-}
-
-.c2 {
+.c3 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
   margin: 0;
@@ -111,7 +102,16 @@ exports[`Storyshots Molecules | Drawer Default Story 1`] = `
   line-height: 1.4285714285714286;
 }
 
-.c5 {
+.c13 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.c4 {
   font-family: inherit;
   font-size: 100%;
   line-height: 1.15;
@@ -140,33 +140,33 @@ exports[`Storyshots Molecules | Drawer Default Story 1`] = `
   cursor: pointer;
 }
 
-.c5,
-.c5[type='button'],
-.c5[type='reset'],
-.c5[type='submit'] {
+.c4,
+.c4[type='button'],
+.c4[type='reset'],
+.c4[type='submit'] {
   -webkit-appearance: button;
 }
 
-.c5::-moz-focus-inner,
-.c5[type='button']::-moz-focus-inner,
-.c5[type='reset']::-moz-focus-inner,
-.c5[type='submit']::-moz-focus-inner {
+.c4::-moz-focus-inner,
+.c4[type='button']::-moz-focus-inner,
+.c4[type='reset']::-moz-focus-inner,
+.c4[type='submit']::-moz-focus-inner {
   border-style: none;
   padding: 0;
 }
 
-.c5:-moz-focusring,
-.c5[type='button']:-moz-focusring,
-.c5[type='reset']:-moz-focusring,
-.c5[type='submit']:-moz-focusring {
+.c4:-moz-focusring,
+.c4[type='button']:-moz-focusring,
+.c4[type='reset']:-moz-focusring,
+.c4[type='submit']:-moz-focusring {
   outline: 1px dotted ButtonText;
 }
 
-.c4 {
+.c5 {
   margin-left: auto;
 }
 
-.c3 {
+.c2 {
   padding-right: 16px;
 }
 
@@ -234,10 +234,18 @@ exports[`Storyshots Molecules | Drawer Default Story 1`] = `
 }
 
 @media (min-width:760px) {
-  .c2 {
+  .c3 {
     font-size: 24px;
     line-height: 1.1666666666666667;
   }
+}
+
+@media (min-width:760px) {
+
+}
+
+@media (min-width:1600px) {
+
 }
 
 <div>
@@ -306,7 +314,7 @@ exports[`Storyshots Molecules | Drawer Default Story 1`] = `
                 </h2>
               </span>
               <button
-                className="c4 c5"
+                className="NormalizedButton__Button-ey7f5x-0 c4 c5"
                 onClick={[Function]}
                 type="button"
               >
@@ -513,15 +521,6 @@ exports[`Storyshots Molecules | Drawer With Custom Title 1`] = `
   stroke: #6E6E69;
 }
 
-.c13 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #282823;
-  margin: 0;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.5;
-}
-
 .c4 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
@@ -540,7 +539,16 @@ exports[`Storyshots Molecules | Drawer With Custom Title 1`] = `
   line-height: 1.4285714285714286;
 }
 
-.c6 {
+.c13 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.c5 {
   font-family: inherit;
   font-size: 100%;
   line-height: 1.15;
@@ -569,29 +577,29 @@ exports[`Storyshots Molecules | Drawer With Custom Title 1`] = `
   cursor: pointer;
 }
 
-.c6,
-.c6[type='button'],
-.c6[type='reset'],
-.c6[type='submit'] {
+.c5,
+.c5[type='button'],
+.c5[type='reset'],
+.c5[type='submit'] {
   -webkit-appearance: button;
 }
 
-.c6::-moz-focus-inner,
-.c6[type='button']::-moz-focus-inner,
-.c6[type='reset']::-moz-focus-inner,
-.c6[type='submit']::-moz-focus-inner {
+.c5::-moz-focus-inner,
+.c5[type='button']::-moz-focus-inner,
+.c5[type='reset']::-moz-focus-inner,
+.c5[type='submit']::-moz-focus-inner {
   border-style: none;
   padding: 0;
 }
 
-.c6:-moz-focusring,
-.c6[type='button']:-moz-focusring,
-.c6[type='reset']:-moz-focusring,
-.c6[type='submit']:-moz-focusring {
+.c5:-moz-focusring,
+.c5[type='button']:-moz-focusring,
+.c5[type='reset']:-moz-focusring,
+.c5[type='submit']:-moz-focusring {
   outline: 1px dotted ButtonText;
 }
 
-.c5 {
+.c6 {
   margin-left: auto;
 }
 
@@ -663,6 +671,14 @@ exports[`Storyshots Molecules | Drawer With Custom Title 1`] = `
     font-size: 24px;
     line-height: 1.1666666666666667;
   }
+}
+
+@media (min-width:760px) {
+
+}
+
+@media (min-width:1600px) {
+
 }
 
 <div>
@@ -747,7 +763,7 @@ exports[`Storyshots Molecules | Drawer With Custom Title 1`] = `
                 </div>
               </span>
               <button
-                className="c5 c6"
+                className="NormalizedButton__Button-ey7f5x-0 c5 c6"
                 onClick={[Function]}
                 type="button"
               >
