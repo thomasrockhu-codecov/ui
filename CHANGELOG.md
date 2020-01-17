@@ -1,3 +1,10 @@
+## [2.13.2](https://github.com/nordnet/ui/compare/v2.13.1...v2.13.2) (2020-01-17)
+
+
+### Bug Fixes
+
+* 🐛 relax node version ([2d76fc6](https://github.com/nordnet/ui/commit/2d76fc6))
+
 ## [2.13.1](https://github.com/nordnet/ui/compare/v2.13.0...v2.13.1) (2020-01-16)
 
 
