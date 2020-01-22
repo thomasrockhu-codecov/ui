@@ -1,3 +1,10 @@
+## [2.13.4](https://github.com/nordnet/ui/compare/v2.13.3...v2.13.4) (2020-01-22)
+
+
+### Bug Fixes
+
+* horizontal overflow hidden ([31dd3e5](https://github.com/nordnet/ui/commit/31dd3e5))
+
 ## [2.13.3](https://github.com/nordnet/ui/compare/v2.13.2...v2.13.3) (2020-01-21)
 
 
