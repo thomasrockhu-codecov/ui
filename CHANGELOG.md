@@ -1,3 +1,10 @@
+## [2.13.5](https://github.com/nordnet/ui/compare/v2.13.4...v2.13.5) (2020-01-23)
+
+
+### Bug Fixes
+
+* remove min height from neutral button ([8c91d43](https://github.com/nordnet/ui/commit/8c91d43))
+
 ## [2.13.4](https://github.com/nordnet/ui/compare/v2.13.3...v2.13.4) (2020-01-22)
 
 
