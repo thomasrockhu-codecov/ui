@@ -1,3 +1,10 @@
+# [2.14.0](https://github.com/nordnet/ui/compare/v2.13.5...v2.14.0) (2020-01-24)
+
+
+### Features
+
+* **modal:** add support for node as title ([78b5367](https://github.com/nordnet/ui/commit/78b5367))
+
 ## [2.13.5](https://github.com/nordnet/ui/compare/v2.13.4...v2.13.5) (2020-01-23)
 
 
