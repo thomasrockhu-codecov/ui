@@ -1,3 +1,10 @@
+## [2.14.1](https://github.com/nordnet/ui/compare/v2.14.0...v2.14.1) (2020-01-27)
+
+
+### Bug Fixes
+
+* 🐛 upgrade to styled-components 5 ([9f98040](https://github.com/nordnet/ui/commit/9f98040))
+
 # [2.14.0](https://github.com/nordnet/ui/compare/v2.13.5...v2.14.0) (2020-01-24)
 
 
