@@ -1,3 +1,31 @@
+# [2.14.0](https://github.com/nordnet/ui/compare/v2.13.5...v2.14.0) (2020-01-24)
+
+
+### Features
+
+* **modal:** add support for node as title ([78b5367](https://github.com/nordnet/ui/commit/78b5367))
+
+## [2.13.5](https://github.com/nordnet/ui/compare/v2.13.4...v2.13.5) (2020-01-23)
+
+
+### Bug Fixes
+
+* remove min height from neutral button ([8c91d43](https://github.com/nordnet/ui/commit/8c91d43))
+
+## [2.13.4](https://github.com/nordnet/ui/compare/v2.13.3...v2.13.4) (2020-01-22)
+
+
+### Bug Fixes
+
+* horizontal overflow hidden ([31dd3e5](https://github.com/nordnet/ui/commit/31dd3e5))
+
+## [2.13.3](https://github.com/nordnet/ui/compare/v2.13.2...v2.13.3) (2020-01-21)
+
+
+### Bug Fixes
+
+* button omit min height if size is not m or l ([2f17336](https://github.com/nordnet/ui/commit/2f17336))
+
 ## [2.13.2](https://github.com/nordnet/ui/compare/v2.13.1...v2.13.2) (2020-01-17)
 
 

@@ -33,6 +33,7 @@ exports[`Storyshots Molecules | Drawer Default 1`] = `
 
 .c11 {
   position: relative;
+  overflow-x: hidden;
 }
 
 .c14 {
@@ -131,7 +132,6 @@ exports[`Storyshots Molecules | Drawer Default 1`] = `
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  min-height: 32px;
   padding: 0;
   background-color: transparent;
   color: #282823;
@@ -439,6 +439,7 @@ exports[`Storyshots Molecules | Drawer With a custom title 1`] = `
 
 .c11 {
   position: relative;
+  overflow-x: hidden;
 }
 
 .c14 {
@@ -560,7 +561,6 @@ exports[`Storyshots Molecules | Drawer With a custom title 1`] = `
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  min-height: 32px;
   padding: 0;
   background-color: transparent;
   color: #282823;
