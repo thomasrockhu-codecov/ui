@@ -17,7 +17,7 @@ import {
   TrackingContext,
 } from '../../..';
 import { Display } from '../../../common/Display';
-import mdx from './Select.mdx';
+import docs from './Select.mdx';
 
 /* eslint-disable react-hooks/rules-of-hooks */
 const useSelectMachineFromContext = Input.Select.useSelectMachineFromContext;
@@ -1206,8 +1206,6 @@ export const focusWithoutScrolling = () => (
 export default {
   title: 'Molecules | Input / Select',
   parameters: {
-    docs: {
-      page: mdx,
-    },
+    ...docs.parameters,
   },
 };

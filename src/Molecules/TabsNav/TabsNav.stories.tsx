@@ -8,9 +8,7 @@ import docs from './TabsNav.mdx';
 export default {
   title: 'Molecules | TabsNav',
   parameters: {
-    docs: {
-      page: docs,
-    },
+    ...docs.parameters,
   },
 };
 
