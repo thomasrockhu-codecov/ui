@@ -57,7 +57,7 @@ exports[`Storyshots Molecules | CardWithTitle Card With Title As Section 1`] = `
 `;
 
 exports[`Storyshots Molecules | CardWithTitle Default Story 1`] = `
-.c1 {
+.c0 {
   background: #FFFFFF;
   box-shadow: 0 2px 2px 0 rgba(0,0,0,0.03);
 }
@@ -66,7 +66,7 @@ exports[`Storyshots Molecules | CardWithTitle Default Story 1`] = `
   padding: 20px;
 }
 
-.c0 {
+.c1 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -96,13 +96,9 @@ exports[`Storyshots Molecules | CardWithTitle Integration Card With Title With C
   padding-bottom: 20px;
 }
 
-.c1 {
+.c0 {
   background: #FFFFFF;
   box-shadow: 0 2px 2px 0 rgba(0,0,0,0.03);
-}
-
-.c4 {
-  box-sizing: border-box;
 }
 
 .c3 {
@@ -124,7 +120,11 @@ exports[`Storyshots Molecules | CardWithTitle Integration Card With Title With C
   align-items: center;
 }
 
-.c9 {
+.c4 {
+  box-sizing: border-box;
+}
+
+.c8 {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -161,7 +161,7 @@ exports[`Storyshots Molecules | CardWithTitle Integration Card With Title With C
   padding: 20px;
 }
 
-.c0 {
+.c1 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -190,7 +190,7 @@ exports[`Storyshots Molecules | CardWithTitle Integration Card With Title With C
   max-width: 400px;
 }
 
-.c8 {
+.c9 {
   padding-left: 4px;
 }
 
@@ -267,7 +267,7 @@ exports[`Storyshots Molecules | CardWithTitle Integration Faded Scroll With Heig
   padding-right: 20px;
 }
 
-.c2 {
+.c0 {
   background: #FFFFFF;
   box-shadow: 0 2px 2px 0 rgba(0,0,0,0.03);
 }
@@ -421,7 +421,7 @@ exports[`Storyshots Molecules | CardWithTitle Integration Faded Scroll With Heig
 }
 
 @media (min-width:976px) {
-  .c0 {
+  .c2 {
     height: 250px;
   }
 }
@@ -475,7 +475,7 @@ exports[`Storyshots Molecules | CardWithTitle Integration With Faded Scroll 1`] 
   padding-right: 20px;
 }
 
-.c1 {
+.c0 {
   background: #FFFFFF;
   box-shadow: 0 2px 2px 0 rgba(0,0,0,0.03);
 }
@@ -516,7 +516,7 @@ exports[`Storyshots Molecules | CardWithTitle Integration With Faded Scroll 1`] 
   padding: 20px;
 }
 
-.c0 {
+.c1 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;

@@ -5,8 +5,8 @@ exports[`Storyshots Atoms | Skeleton Default Story 1`] = `
   width: 300px;
   display: block;
   background-color: #EBEBE8;
-  -webkit-animation: bzcbYv 1.5s ease-in-out 0.5s infinite;
-  animation: bzcbYv 1.5s ease-in-out 0.5s infinite;
+  -webkit-animation: bsOnqq 1.5s ease-in-out 0.5s infinite;
+  animation: bsOnqq 1.5s ease-in-out 0.5s infinite;
   margin-top: 0;
   margin-bottom: 0;
 }
@@ -16,7 +16,7 @@ exports[`Storyshots Atoms | Skeleton Default Story 1`] = `
 }
 
 <div
-  className="c0"
+  className="Skeleton__Base-sc-1n2btkl-0 c0"
   width="300px"
 />
 `;
@@ -56,8 +56,8 @@ Array [
   width: 200px;
   display: block;
   background-color: #EBEBE8;
-  -webkit-animation: bzcbYv 1.5s ease-in-out 0.5s infinite;
-  animation: bzcbYv 1.5s ease-in-out 0.5s infinite;
+  -webkit-animation: bsOnqq 1.5s ease-in-out 0.5s infinite;
+  animation: bsOnqq 1.5s ease-in-out 0.5s infinite;
   margin-top: 0;
   margin-bottom: 0;
 }
@@ -70,8 +70,8 @@ Array [
   width: 100px;
   display: block;
   background-color: #EBEBE8;
-  -webkit-animation: bzcbYv 1.5s ease-in-out 0.5s infinite;
-  animation: bzcbYv 1.5s ease-in-out 0.5s infinite;
+  -webkit-animation: bsOnqq 1.5s ease-in-out 0.5s infinite;
+  animation: bsOnqq 1.5s ease-in-out 0.5s infinite;
   height: 100px;
 }
 
@@ -79,8 +79,8 @@ Array [
   width: 64px;
   display: block;
   background-color: #EBEBE8;
-  -webkit-animation: bzcbYv 1.5s ease-in-out 0.5s infinite;
-  animation: bzcbYv 1.5s ease-in-out 0.5s infinite;
+  -webkit-animation: bsOnqq 1.5s ease-in-out 0.5s infinite;
+  animation: bsOnqq 1.5s ease-in-out 0.5s infinite;
   height: 64px;
   border-radius: 50%;
 }
@@ -142,6 +142,10 @@ Array [
   align-self: center;
 }
 
+@media (min-width:760px) {
+
+}
+
 <div
     className="c0"
     direction="column"
@@ -157,7 +161,7 @@ Array [
       </div>
       <div>
         <div
-          className="c3"
+          className="Skeleton__Base-sc-1n2btkl-0 c3"
           width="200px"
         />
       </div>
@@ -173,7 +177,7 @@ Array [
       </div>
       <div>
         <div
-          className="c4"
+          className="Skeleton__Base-sc-1n2btkl-0 c4"
           width="100px"
         />
       </div>
@@ -189,7 +193,7 @@ Array [
       </div>
       <div>
         <div
-          className="c5"
+          className="Skeleton__Base-sc-1n2btkl-0 c5"
           width={16}
         />
       </div>
@@ -197,6 +201,10 @@ Array [
   </div>,
   .c0 {
   margin-bottom: 32px;
+}
+
+@media (min-width:760px) {
+
 }
 
 <div

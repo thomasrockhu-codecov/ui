@@ -26,7 +26,7 @@ const getSharedStyle = (props: ThemedStyledProps<LinkProps, Theme>) => {
   return `
     display: ${display};
     padding: 0;
-    color: ${disabled ? theme.color.disabledText : getEnabledColor(color, theme)}
+    color: ${disabled ? theme.color.disabledText : getEnabledColor(color, theme)};
 
     &:hover {
       text-decoration: underline;

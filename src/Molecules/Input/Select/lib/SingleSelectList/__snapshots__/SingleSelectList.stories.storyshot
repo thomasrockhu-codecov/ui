@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Storyshots Molecules | Input / Select / SingleSelectList Item Default 1`] = `
-.c1 {
+.c0 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: inherit;
   margin: 0;
@@ -10,7 +10,7 @@ exports[`Storyshots Molecules | Input / Select / SingleSelectList Item Default 1
   line-height: 1.4285714285714286;
 }
 
-.c0 {
+.c1 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -31,7 +31,7 @@ exports[`Storyshots Molecules | Input / Select / SingleSelectList Item Default 1
   cursor: pointer;
 }
 
-.c0:hover {
+.c1:hover {
   background: #F5F5F5;
 }
 
@@ -54,7 +54,7 @@ exports[`Storyshots Molecules | Input / Select / SingleSelectList Item Default 1
 `;
 
 exports[`Storyshots Molecules | Input / Select / SingleSelectList Item Disabled 1`] = `
-.c1 {
+.c0 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: inherit;
   margin: 0;
@@ -63,7 +63,7 @@ exports[`Storyshots Molecules | Input / Select / SingleSelectList Item Disabled 
   line-height: 1.4285714285714286;
 }
 
-.c0 {
+.c1 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -82,11 +82,10 @@ exports[`Storyshots Molecules | Input / Select / SingleSelectList Item Disabled 
   white-space: nowrap;
   background: #FFFFFF;
   cursor: pointer;
-  color: #A0A09B;
-  pointer-events: none;
+  color: #A0A09B pointer-events:none;
 }
 
-.c0:hover {
+.c1:hover {
   background: #F5F5F5;
 }
 
@@ -139,7 +138,7 @@ exports[`Storyshots Molecules | Input / Select / SingleSelectList Item Selected 
   display: block;
 }
 
-.c1 {
+.c0 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: inherit;
   margin: 0;
@@ -148,7 +147,7 @@ exports[`Storyshots Molecules | Input / Select / SingleSelectList Item Selected 
   line-height: 1.4285714285714286;
 }
 
-.c0 {
+.c1 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -169,7 +168,7 @@ exports[`Storyshots Molecules | Input / Select / SingleSelectList Item Selected 
   cursor: pointer;
 }
 
-.c0:hover {
+.c1:hover {
   background: #F5F5F5;
 }
 
@@ -339,7 +338,7 @@ exports[`Storyshots Molecules | Input / Select / SingleSelectList List With Diff
   display: block;
 }
 
-.c9 {
+.c8 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: inherit;
   margin: 0;
@@ -348,7 +347,7 @@ exports[`Storyshots Molecules | Input / Select / SingleSelectList List With Diff
   line-height: 1.4285714285714286;
 }
 
-.c8 {
+.c9 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -369,7 +368,7 @@ exports[`Storyshots Molecules | Input / Select / SingleSelectList List With Diff
   cursor: pointer;
 }
 
-.c8:hover {
+.c9:hover {
   background: #F5F5F5;
 }
 
@@ -417,8 +416,7 @@ exports[`Storyshots Molecules | Input / Select / SingleSelectList List With Diff
   white-space: nowrap;
   background: #FFFFFF;
   cursor: pointer;
-  color: #A0A09B;
-  pointer-events: none;
+  color: #A0A09B pointer-events:none;
 }
 
 .c15:hover {
@@ -654,7 +652,7 @@ exports[`Storyshots Molecules | Input / Select / SingleSelectList List With Diff
     </div>
     <div>
       <div
-        className="c3"
+        className="DropdownBubble-sc-16ly6j0-0 c3"
       >
         <div
           className="c4"
@@ -678,7 +676,7 @@ exports[`Storyshots Molecules | Input / Select / SingleSelectList List With Diff
                 </span>
               </span>
               <span
-                className="c11 c9"
+                className="c8 c11"
               >
                 <span
                   className="c10"
@@ -716,7 +714,7 @@ exports[`Storyshots Molecules | Input / Select / SingleSelectList List With Diff
                 </span>
               </span>
               <span
-                className="c15 c9"
+                className="c8 c15"
               >
                 <span
                   className="c10"
@@ -725,7 +723,7 @@ exports[`Storyshots Molecules | Input / Select / SingleSelectList List With Diff
                 </span>
               </span>
               <span
-                className="c15 c9"
+                className="c8 c15"
               >
                 <span
                   className="c10"
@@ -734,7 +732,7 @@ exports[`Storyshots Molecules | Input / Select / SingleSelectList List With Diff
                 </span>
               </span>
               <span
-                className="c15 c9"
+                className="c8 c15"
               >
                 <span
                   className="c10"
@@ -743,7 +741,7 @@ exports[`Storyshots Molecules | Input / Select / SingleSelectList List With Diff
                 </span>
               </span>
               <span
-                className="c15 c9"
+                className="c8 c15"
               >
                 <span
                   className="c10"
@@ -752,7 +750,7 @@ exports[`Storyshots Molecules | Input / Select / SingleSelectList List With Diff
                 </span>
               </span>
               <span
-                className="c15 c9"
+                className="c8 c15"
               >
                 <span
                   className="c10"
@@ -761,7 +759,7 @@ exports[`Storyshots Molecules | Input / Select / SingleSelectList List With Diff
                 </span>
               </span>
               <span
-                className="c15 c9"
+                className="c8 c15"
               >
                 <span
                   className="c10"
@@ -770,7 +768,7 @@ exports[`Storyshots Molecules | Input / Select / SingleSelectList List With Diff
                 </span>
               </span>
               <span
-                className="c15 c9"
+                className="c8 c15"
               >
                 <span
                   className="c10"
@@ -779,7 +777,7 @@ exports[`Storyshots Molecules | Input / Select / SingleSelectList List With Diff
                 </span>
               </span>
               <span
-                className="c15 c9"
+                className="c8 c15"
               >
                 <span
                   className="c10"
@@ -788,7 +786,7 @@ exports[`Storyshots Molecules | Input / Select / SingleSelectList List With Diff
                 </span>
               </span>
               <span
-                className="c15 c9"
+                className="c8 c15"
               >
                 <span
                   className="c10"
@@ -797,7 +795,7 @@ exports[`Storyshots Molecules | Input / Select / SingleSelectList List With Diff
                 </span>
               </span>
               <span
-                className="c15 c9"
+                className="c8 c15"
               >
                 <span
                   className="c10"
@@ -825,7 +823,7 @@ exports[`Storyshots Molecules | Input / Select / SingleSelectList List With Diff
     </div>
     <div>
       <div
-        className="c17"
+        className="DropdownBubble-sc-16ly6j0-0 c17"
       >
         <div
           className="c4"
@@ -849,7 +847,7 @@ exports[`Storyshots Molecules | Input / Select / SingleSelectList List With Diff
                 </span>
               </span>
               <span
-                className="c11 c9"
+                className="c8 c11"
               >
                 <span
                   className="c10"
@@ -878,7 +876,7 @@ exports[`Storyshots Molecules | Input / Select / SingleSelectList List With Diff
                 </div>
               </span>
               <span
-                className="c15 c9"
+                className="c8 c15"
               >
                 <span
                   className="c10"
@@ -887,7 +885,7 @@ exports[`Storyshots Molecules | Input / Select / SingleSelectList List With Diff
                 </span>
               </span>
               <span
-                className="c15 c9"
+                className="c8 c15"
               >
                 <span
                   className="c10"
@@ -896,7 +894,7 @@ exports[`Storyshots Molecules | Input / Select / SingleSelectList List With Diff
                 </span>
               </span>
               <span
-                className="c15 c9"
+                className="c8 c15"
               >
                 <span
                   className="c10"
@@ -905,7 +903,7 @@ exports[`Storyshots Molecules | Input / Select / SingleSelectList List With Diff
                 </span>
               </span>
               <span
-                className="c15 c9"
+                className="c8 c15"
               >
                 <span
                   className="c10"
@@ -914,7 +912,7 @@ exports[`Storyshots Molecules | Input / Select / SingleSelectList List With Diff
                 </span>
               </span>
               <span
-                className="c15 c9"
+                className="c8 c15"
               >
                 <span
                   className="c10"
@@ -923,7 +921,7 @@ exports[`Storyshots Molecules | Input / Select / SingleSelectList List With Diff
                 </span>
               </span>
               <span
-                className="c15 c9"
+                className="c8 c15"
               >
                 <span
                   className="c10"
@@ -932,7 +930,7 @@ exports[`Storyshots Molecules | Input / Select / SingleSelectList List With Diff
                 </span>
               </span>
               <span
-                className="c15 c9"
+                className="c8 c15"
               >
                 <span
                   className="c10"
@@ -941,7 +939,7 @@ exports[`Storyshots Molecules | Input / Select / SingleSelectList List With Diff
                 </span>
               </span>
               <span
-                className="c15 c9"
+                className="c8 c15"
               >
                 <span
                   className="c10"
@@ -950,7 +948,7 @@ exports[`Storyshots Molecules | Input / Select / SingleSelectList List With Diff
                 </span>
               </span>
               <span
-                className="c15 c9"
+                className="c8 c15"
               >
                 <span
                   className="c10"
@@ -959,7 +957,7 @@ exports[`Storyshots Molecules | Input / Select / SingleSelectList List With Diff
                 </span>
               </span>
               <span
-                className="c15 c9"
+                className="c8 c15"
               >
                 <span
                   className="c10"
@@ -987,7 +985,7 @@ exports[`Storyshots Molecules | Input / Select / SingleSelectList List With Diff
     </div>
     <div>
       <div
-        className="c18"
+        className="DropdownBubble-sc-16ly6j0-0 c18"
       >
         <div
           className="c4"
@@ -1011,7 +1009,7 @@ exports[`Storyshots Molecules | Input / Select / SingleSelectList List With Diff
                 </span>
               </span>
               <span
-                className="c11 c9"
+                className="c8 c11"
               >
                 <span
                   className="c10"
@@ -1049,7 +1047,7 @@ exports[`Storyshots Molecules | Input / Select / SingleSelectList List With Diff
                 </span>
               </span>
               <span
-                className="c15 c9"
+                className="c8 c15"
               >
                 <span
                   className="c10"
@@ -1058,7 +1056,7 @@ exports[`Storyshots Molecules | Input / Select / SingleSelectList List With Diff
                 </span>
               </span>
               <span
-                className="c15 c9"
+                className="c8 c15"
               >
                 <span
                   className="c10"
@@ -1067,7 +1065,7 @@ exports[`Storyshots Molecules | Input / Select / SingleSelectList List With Diff
                 </span>
               </span>
               <span
-                className="c15 c9"
+                className="c8 c15"
               >
                 <span
                   className="c10"
@@ -1076,7 +1074,7 @@ exports[`Storyshots Molecules | Input / Select / SingleSelectList List With Diff
                 </span>
               </span>
               <span
-                className="c15 c9"
+                className="c8 c15"
               >
                 <span
                   className="c10"
@@ -1085,7 +1083,7 @@ exports[`Storyshots Molecules | Input / Select / SingleSelectList List With Diff
                 </span>
               </span>
               <span
-                className="c15 c9"
+                className="c8 c15"
               >
                 <span
                   className="c10"
@@ -1094,7 +1092,7 @@ exports[`Storyshots Molecules | Input / Select / SingleSelectList List With Diff
                 </span>
               </span>
               <span
-                className="c15 c9"
+                className="c8 c15"
               >
                 <span
                   className="c10"
@@ -1103,7 +1101,7 @@ exports[`Storyshots Molecules | Input / Select / SingleSelectList List With Diff
                 </span>
               </span>
               <span
-                className="c15 c9"
+                className="c8 c15"
               >
                 <span
                   className="c10"
@@ -1112,7 +1110,7 @@ exports[`Storyshots Molecules | Input / Select / SingleSelectList List With Diff
                 </span>
               </span>
               <span
-                className="c15 c9"
+                className="c8 c15"
               >
                 <span
                   className="c10"
@@ -1121,7 +1119,7 @@ exports[`Storyshots Molecules | Input / Select / SingleSelectList List With Diff
                 </span>
               </span>
               <span
-                className="c15 c9"
+                className="c8 c15"
               >
                 <span
                   className="c10"
@@ -1130,7 +1128,7 @@ exports[`Storyshots Molecules | Input / Select / SingleSelectList List With Diff
                 </span>
               </span>
               <span
-                className="c15 c9"
+                className="c8 c15"
               >
                 <span
                   className="c10"

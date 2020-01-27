@@ -75,52 +75,6 @@ exports[`Storyshots Atoms | DropdownBubble Default Story 1`] = `
 `;
 
 exports[`Storyshots Atoms | DropdownBubble Different Triangle Position 1`] = `
-.c5 {
-  position: relative;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  min-height: 0;
-  -webkit-transform: translateY(10px);
-  -ms-transform: translateY(10px);
-  transform: translateY(10px);
-  border: 1px solid #BCBCB6;
-  background-color: #FFFFFF;
-  box-shadow: 0 2px 4px 0 rgba(40,40,35,0.15);
-}
-
-.c5:before {
-  right: 20px;
-  position: absolute;
-  width: 0;
-  height: 0;
-  content: '';
-  speak: none;
-  border-left: 6px solid transparent;
-  border-right: 6px solid transparent;
-  bottom: 100%;
-  border-bottom: 6px solid;
-  border-bottom-color: #BCBCB6;
-}
-
-.c5:after {
-  right: 20px;
-  position: absolute;
-  width: 0;
-  height: 0;
-  content: '';
-  speak: none;
-  border-left: 6px solid transparent;
-  border-right: 6px solid transparent;
-  bottom: calc(100% - 1px);
-  border-bottom: 6px solid;
-  border-bottom-color: #FFFFFF;
-}
-
 .c3 {
   position: relative;
   display: -webkit-box;
@@ -155,6 +109,52 @@ exports[`Storyshots Atoms | DropdownBubble Different Triangle Position 1`] = `
 
 .c3:after {
   left: 20px;
+  position: absolute;
+  width: 0;
+  height: 0;
+  content: '';
+  speak: none;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  bottom: calc(100% - 1px);
+  border-bottom: 6px solid;
+  border-bottom-color: #FFFFFF;
+}
+
+.c5 {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  min-height: 0;
+  -webkit-transform: translateY(10px);
+  -ms-transform: translateY(10px);
+  transform: translateY(10px);
+  border: 1px solid #BCBCB6;
+  background-color: #FFFFFF;
+  box-shadow: 0 2px 4px 0 rgba(40,40,35,0.15);
+}
+
+.c5:before {
+  right: 20px;
+  position: absolute;
+  width: 0;
+  height: 0;
+  content: '';
+  speak: none;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  bottom: 100%;
+  border-bottom: 6px solid;
+  border-bottom-color: #BCBCB6;
+}
+
+.c5:after {
+  right: 20px;
   position: absolute;
   width: 0;
   height: 0;

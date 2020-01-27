@@ -1,10 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Storyshots Molecules | TabsNav Integration Conditionally Hide Tab 1`] = `
-.c1 {
-  box-sizing: border-box;
-}
-
 .c0 {
   box-sizing: border-box;
   display: -webkit-box;
@@ -16,7 +12,11 @@ exports[`Storyshots Molecules | TabsNav Integration Conditionally Hide Tab 1`] =
   flex-direction: column;
 }
 
-.c2 {
+.c1 {
+  box-sizing: border-box;
+}
+
+.c3 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -29,12 +29,12 @@ exports[`Storyshots Molecules | TabsNav Integration Conditionally Hide Tab 1`] =
   margin-right: -8px;
 }
 
-.c2 > * {
+.c3 > * {
   padding-left: 8px;
   padding-right: 8px;
 }
 
-.c2 > *:not(:first-child) {
+.c3 > *:not(:first-child) {
   padding-top: 0;
 }
 
@@ -70,7 +70,7 @@ exports[`Storyshots Molecules | TabsNav Integration Conditionally Hide Tab 1`] =
   color: inherit;
 }
 
-.c3 {
+.c2 {
   list-style-type: none;
   padding: 0;
   margin-top: 0;
@@ -78,7 +78,7 @@ exports[`Storyshots Molecules | TabsNav Integration Conditionally Hide Tab 1`] =
 }
 
 @media (min-width:760px) {
-  .c2 {
+  .c3 {
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -90,12 +90,12 @@ exports[`Storyshots Molecules | TabsNav Integration Conditionally Hide Tab 1`] =
     margin-right: -16px;
   }
 
-  .c2 > * {
+  .c3 > * {
     padding-left: 16px;
     padding-right: 16px;
   }
 
-  .c2 > *:not(:first-child) {
+  .c3 > *:not(:first-child) {
     padding-top: 0;
   }
 }
@@ -169,10 +169,6 @@ exports[`Storyshots Molecules | TabsNav Integration With React Router 1`] = `
   padding-bottom: 16px;
 }
 
-.c1 {
-  box-sizing: border-box;
-}
-
 .c0 {
   box-sizing: border-box;
   display: -webkit-box;
@@ -184,7 +180,11 @@ exports[`Storyshots Molecules | TabsNav Integration With React Router 1`] = `
   flex-direction: column;
 }
 
-.c2 {
+.c1 {
+  box-sizing: border-box;
+}
+
+.c3 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -197,12 +197,12 @@ exports[`Storyshots Molecules | TabsNav Integration With React Router 1`] = `
   margin-right: -8px;
 }
 
-.c2 > * {
+.c3 > * {
   padding-left: 8px;
   padding-right: 8px;
 }
 
-.c2 > *:not(:first-child) {
+.c3 > *:not(:first-child) {
   padding-top: 0;
 }
 
@@ -210,6 +210,19 @@ exports[`Storyshots Molecules | TabsNav Integration With React Router 1`] = `
   width: 100%;
   height: 1px;
   background-color: #EBEBE8;
+}
+
+.c8 {
+  height: 44px;
+  position: relative;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .c6 {
@@ -234,19 +247,6 @@ exports[`Storyshots Molecules | TabsNav Integration With React Router 1`] = `
   position: absolute;
   bottom: 0;
   left: 0;
-}
-
-.c8 {
-  height: 44px;
-  position: relative;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
 }
 
 .c7 {
@@ -277,7 +277,7 @@ exports[`Storyshots Molecules | TabsNav Integration With React Router 1`] = `
   color: inherit;
 }
 
-.c3 {
+.c2 {
   list-style-type: none;
   padding: 0;
   margin-top: 0;
@@ -285,7 +285,7 @@ exports[`Storyshots Molecules | TabsNav Integration With React Router 1`] = `
 }
 
 @media (min-width:760px) {
-  .c2 {
+  .c3 {
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -297,12 +297,12 @@ exports[`Storyshots Molecules | TabsNav Integration With React Router 1`] = `
     margin-right: -16px;
   }
 
-  .c2 > * {
+  .c3 > * {
     padding-left: 16px;
     padding-right: 16px;
   }
 
-  .c2 > *:not(:first-child) {
+  .c3 > *:not(:first-child) {
     padding-top: 0;
   }
 }
@@ -390,10 +390,6 @@ exports[`Storyshots Molecules | TabsNav Integration With React Router And Height
   padding-bottom: 16px;
 }
 
-.c1 {
-  box-sizing: border-box;
-}
-
 .c0 {
   box-sizing: border-box;
   display: -webkit-box;
@@ -405,7 +401,11 @@ exports[`Storyshots Molecules | TabsNav Integration With React Router And Height
   flex-direction: column;
 }
 
-.c2 {
+.c1 {
+  box-sizing: border-box;
+}
+
+.c3 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -418,12 +418,12 @@ exports[`Storyshots Molecules | TabsNav Integration With React Router And Height
   margin-right: -8px;
 }
 
-.c2 > * {
+.c3 > * {
   padding-left: 8px;
   padding-right: 8px;
 }
 
-.c2 > *:not(:first-child) {
+.c3 > *:not(:first-child) {
   padding-top: 0;
 }
 
@@ -470,20 +470,20 @@ exports[`Storyshots Molecules | TabsNav Integration With React Router And Height
   align-items: center;
 }
 
-.c7 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #282823;
-  margin: 0;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.5;
-}
-
 .c4 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
   margin: 0;
   font-weight: 700;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.c7 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
 }
@@ -498,7 +498,7 @@ exports[`Storyshots Molecules | TabsNav Integration With React Router And Height
   color: inherit;
 }
 
-.c3 {
+.c2 {
   list-style-type: none;
   padding: 0;
   margin-top: 0;
@@ -506,7 +506,7 @@ exports[`Storyshots Molecules | TabsNav Integration With React Router And Height
 }
 
 @media (min-width:760px) {
-  .c2 {
+  .c3 {
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -518,12 +518,12 @@ exports[`Storyshots Molecules | TabsNav Integration With React Router And Height
     margin-right: -16px;
   }
 
-  .c2 > * {
+  .c3 > * {
     padding-left: 16px;
     padding-right: 16px;
   }
 
-  .c2 > *:not(:first-child) {
+  .c3 > *:not(:first-child) {
     padding-top: 0;
   }
 }

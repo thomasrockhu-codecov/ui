@@ -3921,20 +3921,6 @@ exports[`Storyshots Atoms | Icon Inline Story 1`] = `
 `;
 
 exports[`Storyshots Atoms | Icon With Modified Stroke 1`] = `
-.c7 {
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  width: 40px;
-  height: 40px;
-  fill: #00D200;
-  -webkit-flex-shrink: 0;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
-  display: block;
-}
-
 .c3 {
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -3943,6 +3929,20 @@ exports[`Storyshots Atoms | Icon With Modified Stroke 1`] = `
   width: 40px;
   height: 40px;
   fill: #282823;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
+}
+
+.c7 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 40px;
+  height: 40px;
+  fill: #00D200;
   -webkit-flex-shrink: 0;
   -ms-flex-negative: 0;
   flex-shrink: 0;

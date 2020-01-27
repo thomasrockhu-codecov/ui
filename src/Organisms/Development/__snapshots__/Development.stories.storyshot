@@ -5,12 +5,12 @@ exports[`Storyshots Organisms | Development As Currency 1`] = `
   color: #00D200;
 }
 
-.c5 {
-  color: #FF1900;
-}
-
 .c4 {
   color: #282823;
+}
+
+.c5 {
+  color: #FF1900;
 }
 
 .c0 {
@@ -151,12 +151,12 @@ exports[`Storyshots Organisms | Development As Percentage 1`] = `
   color: #00D200;
 }
 
-.c5 {
-  color: #FF1900;
-}
-
 .c4 {
   color: #282823;
+}
+
+.c5 {
+  color: #FF1900;
 }
 
 .c0 {
@@ -297,12 +297,12 @@ exports[`Storyshots Organisms | Development Default Story 1`] = `
   color: #00D200;
 }
 
-.c5 {
-  color: #FF1900;
-}
-
 .c4 {
   color: #282823;
+}
+
+.c5 {
+  color: #FF1900;
 }
 
 .c0 {
@@ -445,24 +445,6 @@ exports[`Storyshots Organisms | Development Integration With Different Typograph
   line-height: 1.5;
 }
 
-.c13 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #282823;
-  margin: 0;
-  font-weight: 800;
-  font-size: 46px;
-  line-height: 1.0434782608695652;
-}
-
-.c10 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #282823;
-  margin: 0;
-  font-weight: 800;
-  font-size: 24px;
-  line-height: 1.1666666666666667;
-}
-
 .c7 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
@@ -470,24 +452,6 @@ exports[`Storyshots Organisms | Development Integration With Different Typograph
   font-weight: 400;
   font-size: 14px;
   line-height: 1.4285714285714286;
-}
-
-.c11 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #282823;
-  margin: 0;
-  font-weight: 800;
-  font-size: 20px;
-  line-height: 1.2;
-}
-
-.c12 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #282823;
-  margin: 0;
-  font-weight: 800;
-  font-size: 18px;
-  line-height: 1.3333333333333333;
 }
 
 .c8 {
@@ -508,16 +472,52 @@ exports[`Storyshots Organisms | Development Integration With Different Typograph
   line-height: 1.6;
 }
 
+.c10 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 800;
+  font-size: 24px;
+  line-height: 1.1666666666666667;
+}
+
+.c11 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 1.2;
+}
+
+.c12 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.3333333333333333;
+}
+
+.c13 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 800;
+  font-size: 46px;
+  line-height: 1.0434782608695652;
+}
+
 .c4 {
   color: #00D200;
 }
 
-.c6 {
-  color: #FF1900;
-}
-
 .c5 {
   color: #282823;
+}
+
+.c6 {
+  color: #FF1900;
 }
 
 .c0 {
@@ -578,13 +578,6 @@ exports[`Storyshots Organisms | Development Integration With Different Typograph
 }
 
 @media (min-width:760px) {
-  .c13 {
-    font-size: 48px;
-    line-height: 1.0833333333333333;
-  }
-}
-
-@media (min-width:760px) {
   .c10 {
     font-size: 28px;
     line-height: 1.1428571428571428;
@@ -602,6 +595,13 @@ exports[`Storyshots Organisms | Development Integration With Different Typograph
   .c12 {
     font-size: 20px;
     line-height: 1.2;
+  }
+}
+
+@media (min-width:760px) {
+  .c13 {
+    font-size: 48px;
+    line-height: 1.0833333333333333;
   }
 }
 
@@ -1420,12 +1420,12 @@ exports[`Storyshots Organisms | Development Regression Infinity 1`] = `
 `;
 
 exports[`Storyshots Organisms | Development Regression Value Is Non Zero But Rounded Value Is 0 1`] = `
-.c4 {
-  color: #FF1900;
-}
-
 .c3 {
   color: #282823;
+}
+
+.c4 {
+  color: #FF1900;
 }
 
 .c0 {
@@ -1607,12 +1607,12 @@ exports[`Storyshots Organisms | Development With Icon 1`] = `
   color: #00D200;
 }
 
-.c5 {
-  color: #FF1900;
-}
-
 .c4 {
   color: #282823;
+}
+
+.c5 {
+  color: #FF1900;
 }
 
 .c0 {

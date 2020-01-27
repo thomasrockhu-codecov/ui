@@ -72,7 +72,7 @@ const AddonBox = styled(Flexbox)<{ position?: 'left' | 'right' }>`
   ${p => (p.position === 'right' ? `right: ${p.theme.spacing.unit(2)}px;` : '')}
 `;
 
-const Stepper = styled.button.attrs({ type: 'button' })<Partial<Props>>`
+const Stepper = styled.button.attrs(() => ({ type: 'button' }))<Partial<Props>>`
   ${width}
   ${height}
   ${background}
@@ -98,7 +98,7 @@ const Stepper = styled.button.attrs({ type: 'button' })<Partial<Props>>`
   }
   `;
 
-const Input = styled(NormalizedElements.Input).attrs({ type: 'text' })<Partial<Props>>`
+const Input = styled(NormalizedElements.Input).attrs(() => ({ type: 'text' }))<Partial<Props>>`
   ${background}
   ${borderStyles}
   ${height}

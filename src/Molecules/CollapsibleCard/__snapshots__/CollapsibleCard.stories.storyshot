@@ -6,10 +6,6 @@ exports[`Storyshots Molecules | CollapsibleCard Collapsed Initially 1`] = `
   box-shadow: 0 2px 2px 0 rgba(0,0,0,0.03);
 }
 
-.c3 {
-  box-sizing: border-box;
-}
-
 .c2 {
   box-sizing: border-box;
   display: -webkit-box;
@@ -37,7 +33,11 @@ exports[`Storyshots Molecules | CollapsibleCard Collapsed Initially 1`] = `
   padding-top: 0;
 }
 
-.c6 {
+.c3 {
+  box-sizing: border-box;
+}
+
+.c5 {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -51,15 +51,6 @@ exports[`Storyshots Molecules | CollapsibleCard Collapsed Initially 1`] = `
   display: block;
 }
 
-.c8 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #282823;
-  margin: 0;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.5;
-}
-
 .c4 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
@@ -67,6 +58,15 @@ exports[`Storyshots Molecules | CollapsibleCard Collapsed Initially 1`] = `
   font-weight: 800;
   font-size: 18px;
   line-height: 1.3333333333333333;
+}
+
+.c9 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
 }
 
 .c7 {
@@ -106,7 +106,7 @@ exports[`Storyshots Molecules | CollapsibleCard Collapsed Initially 1`] = `
   opacity: 1;
 }
 
-.c5 {
+.c6 {
   -webkit-transform: rotate(180deg);
   -ms-transform: rotate(180deg);
   transform: rotate(180deg);
@@ -118,7 +118,7 @@ exports[`Storyshots Molecules | CollapsibleCard Collapsed Initially 1`] = `
   transition: transform 0.16s ease-out;
 }
 
-.c9 {
+.c8 {
   margin: 0;
 }
 
@@ -192,10 +192,6 @@ exports[`Storyshots Molecules | CollapsibleCard Collapsible With Custom Componen
   box-shadow: 0 2px 2px 0 rgba(0,0,0,0.03);
 }
 
-.c3 {
-  box-sizing: border-box;
-}
-
 .c2 {
   box-sizing: border-box;
   display: -webkit-box;
@@ -223,7 +219,11 @@ exports[`Storyshots Molecules | CollapsibleCard Collapsible With Custom Componen
   padding-top: 0;
 }
 
-.c6 {
+.c3 {
+  box-sizing: border-box;
+}
+
+.c5 {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -237,15 +237,6 @@ exports[`Storyshots Molecules | CollapsibleCard Collapsible With Custom Componen
   display: block;
 }
 
-.c8 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #282823;
-  margin: 0;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.5;
-}
-
 .c4 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
@@ -253,6 +244,15 @@ exports[`Storyshots Molecules | CollapsibleCard Collapsible With Custom Componen
   font-weight: 800;
   font-size: 18px;
   line-height: 1.3333333333333333;
+}
+
+.c9 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
 }
 
 .c7 {
@@ -292,7 +292,7 @@ exports[`Storyshots Molecules | CollapsibleCard Collapsible With Custom Componen
   opacity: 0;
 }
 
-.c5 {
+.c6 {
   -webkit-transform: rodate(0);
   -ms-transform: rodate(0);
   transform: rodate(0);
@@ -304,7 +304,7 @@ exports[`Storyshots Molecules | CollapsibleCard Collapsible With Custom Componen
   transition: transform 0.16s ease-out;
 }
 
-.c9 {
+.c8 {
   margin: 0;
 }
 
@@ -380,10 +380,6 @@ exports[`Storyshots Molecules | CollapsibleCard Collapsible With On Click Listen
   box-shadow: 0 2px 2px 0 rgba(0,0,0,0.03);
 }
 
-.c3 {
-  box-sizing: border-box;
-}
-
 .c2 {
   box-sizing: border-box;
   display: -webkit-box;
@@ -411,7 +407,11 @@ exports[`Storyshots Molecules | CollapsibleCard Collapsible With On Click Listen
   padding-top: 0;
 }
 
-.c6 {
+.c3 {
+  box-sizing: border-box;
+}
+
+.c5 {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -425,15 +425,6 @@ exports[`Storyshots Molecules | CollapsibleCard Collapsible With On Click Listen
   display: block;
 }
 
-.c8 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #282823;
-  margin: 0;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.5;
-}
-
 .c4 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
@@ -441,6 +432,15 @@ exports[`Storyshots Molecules | CollapsibleCard Collapsible With On Click Listen
   font-weight: 800;
   font-size: 18px;
   line-height: 1.3333333333333333;
+}
+
+.c9 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
 }
 
 .c7 {
@@ -480,7 +480,7 @@ exports[`Storyshots Molecules | CollapsibleCard Collapsible With On Click Listen
   opacity: 0;
 }
 
-.c5 {
+.c6 {
   -webkit-transform: rodate(0);
   -ms-transform: rodate(0);
   transform: rodate(0);
@@ -492,7 +492,7 @@ exports[`Storyshots Molecules | CollapsibleCard Collapsible With On Click Listen
   transition: transform 0.16s ease-out;
 }
 
-.c9 {
+.c8 {
   margin: 0;
 }
 
@@ -566,10 +566,6 @@ exports[`Storyshots Molecules | CollapsibleCard Default Story 1`] = `
   box-shadow: 0 2px 2px 0 rgba(0,0,0,0.03);
 }
 
-.c3 {
-  box-sizing: border-box;
-}
-
 .c2 {
   box-sizing: border-box;
   display: -webkit-box;
@@ -597,7 +593,11 @@ exports[`Storyshots Molecules | CollapsibleCard Default Story 1`] = `
   padding-top: 0;
 }
 
-.c6 {
+.c3 {
+  box-sizing: border-box;
+}
+
+.c5 {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -611,15 +611,6 @@ exports[`Storyshots Molecules | CollapsibleCard Default Story 1`] = `
   display: block;
 }
 
-.c8 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #282823;
-  margin: 0;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.5;
-}
-
 .c4 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
@@ -627,6 +618,15 @@ exports[`Storyshots Molecules | CollapsibleCard Default Story 1`] = `
   font-weight: 800;
   font-size: 18px;
   line-height: 1.3333333333333333;
+}
+
+.c9 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
 }
 
 .c7 {
@@ -666,7 +666,7 @@ exports[`Storyshots Molecules | CollapsibleCard Default Story 1`] = `
   opacity: 0;
 }
 
-.c5 {
+.c6 {
   -webkit-transform: rodate(0);
   -ms-transform: rodate(0);
   transform: rodate(0);
@@ -678,7 +678,7 @@ exports[`Storyshots Molecules | CollapsibleCard Default Story 1`] = `
   transition: transform 0.16s ease-out;
 }
 
-.c9 {
+.c8 {
   margin: 0;
 }
 

@@ -10,10 +10,6 @@ exports[`Storyshots Molecules | PageHeader Page Header React Node Title 1`] = `
   box-shadow: 0 2px 2px 0 rgba(0,0,0,0.03);
 }
 
-.c3 {
-  box-sizing: border-box;
-}
-
 .c2 {
   box-sizing: border-box;
   display: -webkit-box;
@@ -23,6 +19,10 @@ exports[`Storyshots Molecules | PageHeader Page Header React Node Title 1`] = `
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
+}
+
+.c3 {
+  box-sizing: border-box;
 }
 
 .c5 {
@@ -155,10 +155,6 @@ exports[`Storyshots Molecules | PageHeader Page Header With Children 1`] = `
   box-shadow: 0 2px 2px 0 rgba(0,0,0,0.03);
 }
 
-.c3 {
-  box-sizing: border-box;
-}
-
 .c2 {
   box-sizing: border-box;
   display: -webkit-box;
@@ -168,6 +164,10 @@ exports[`Storyshots Molecules | PageHeader Page Header With Children 1`] = `
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
+}
+
+.c3 {
+  box-sizing: border-box;
 }
 
 .c10 {
@@ -439,7 +439,7 @@ exports[`Storyshots Molecules | PageHeader Page Header With Children 1`] = `
                   className="c3"
                 >
                   <button
-                    className="c11"
+                    className="NormalizedButton__Button-ey7f5x-0 c11"
                     onClick={[Function]}
                     type="button"
                   >
@@ -472,10 +472,6 @@ exports[`Storyshots Molecules | PageHeader Regular Page Header 1`] = `
   box-shadow: 0 2px 2px 0 rgba(0,0,0,0.03);
 }
 
-.c3 {
-  box-sizing: border-box;
-}
-
 .c2 {
   box-sizing: border-box;
   display: -webkit-box;
@@ -485,6 +481,10 @@ exports[`Storyshots Molecules | PageHeader Regular Page Header 1`] = `
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
+}
+
+.c3 {
+  box-sizing: border-box;
 }
 
 .c5 {
