@@ -11,5 +11,6 @@ module.exports = {
   transform: {
     '^.+\\.stories\\.tsx?$': '@storybook/addon-storyshots/injectFileName',
     '^.+\\.[tj]sx?$': 'babel-jest',
+    '^.+\\.mdx?$': '@storybook/addon-docs/jest-transform-mdx',
   },
 };
