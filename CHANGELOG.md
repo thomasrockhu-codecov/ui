@@ -1,3 +1,11 @@
+## [2.14.2](https://github.com/nordnet/ui/compare/v2.14.1...v2.14.2) (2020-01-29)
+
+
+### Bug Fixes
+
+* modal max height and make fadedscroll friendly ([15076e9](https://github.com/nordnet/ui/commit/15076e9))
+* update snaps ([3156936](https://github.com/nordnet/ui/commit/3156936))
+
 ## [2.14.1](https://github.com/nordnet/ui/compare/v2.14.0...v2.14.1) (2020-01-27)
 
 
