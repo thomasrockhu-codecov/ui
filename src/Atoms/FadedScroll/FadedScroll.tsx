@@ -1,6 +1,6 @@
 import React, { useRef } from 'react';
 import styled from 'styled-components';
-import { useOnScreen } from '../../common/Hooks';
+import { useIntersect } from '../../common/Hooks';
 import { Component, InternalProps, Props } from './FadedScroll.types';
 import {
   containerStyles,
@@ -18,7 +18,7 @@ const Container = styled.div<InternalProps & Props>`
   ${p => (p.enableMobileFade ? fadeBottomStyles : fadeBottomDesktopStyles)}
 `;
 
-const Scroller = styled.div<InternalProps & Props>`
+const Scroller = styled.div<Props>`
   ${scrollerStyles}
 `;
 
@@ -27,7 +27,7 @@ const Content = styled.div`
   overflow-x: hidden;
 `;
 
-const IntersectionBottom = styled.div`
+const IntersectionBottom = styled.div<Props>`
   ${intersectionStyles}
   bottom: 0;
 `;
@@ -52,11 +52,9 @@ export const FadedScroll: Component & {
   fadeHeight = 13,
   maxHeight,
 }) => {
+  const [setIntersectionTopRef, intersectionTopRatio] = useIntersect();
+  const [setIntersectionBottomRef, intersectionBottomRatio] = useIntersect();
   const contentRef = useRef<HTMLDivElement | null>(null);
-  const intersectionTopRef = useRef<HTMLDivElement | null>(null);
-  const intersectionBottomRef = useRef<HTMLDivElement | null>(null);
-  const intersectionTopOnScreen = useOnScreen(intersectionTopRef);
-  const intersectionBottomOnScreen = useOnScreen(intersectionBottomRef);
 
   return (
     <Container
@@ -64,15 +62,17 @@ export const FadedScroll: Component & {
       disableTopFade={disableTopFade}
       enableMobileFade={enableMobileFade}
       fadeHeight={fadeHeight}
-      intersectionTopOnScreen={intersectionTopOnScreen}
-      intersectionBottomOnScreen={intersectionBottomOnScreen}
+      intersectionTopRatio={intersectionTopRatio}
+      intersectionBottomRatio={intersectionBottomRatio}
       maxHeight={maxHeight}
     >
       <Scroller enableMobileFade={enableMobileFade} maxHeight={maxHeight}>
         <Content ref={contentRef}>
-          {!disableTopFade && <IntersectionTop ref={intersectionTopRef} />}
+          {!disableTopFade && (
+            <IntersectionTop fadeHeight={fadeHeight} ref={setIntersectionTopRef} />
+          )}
           {children}
-          <IntersectionBottom ref={intersectionBottomRef} />
+          <IntersectionBottom fadeHeight={fadeHeight} ref={setIntersectionBottomRef} />
         </Content>
       </Scroller>
     </Container>

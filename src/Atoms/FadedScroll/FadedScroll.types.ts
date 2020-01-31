@@ -1,6 +1,6 @@
 export type InternalProps = {
-  intersectionTopOnScreen?: boolean | null;
-  intersectionBottomOnScreen?: boolean | null;
+  intersectionTopRatio: number;
+  intersectionBottomRatio: number;
 };
 
 export type Props = {
@@ -15,6 +15,7 @@ export type Props = {
    */
   enableMobileFade?: boolean;
   disableTopFade?: boolean;
+  ref?: React.Ref<HTMLDivElement>;
 };
 
 export type Component = React.FC<Props>;

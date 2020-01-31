@@ -304,7 +304,7 @@ exports[`Storyshots Molecules | CardWithTitle Integration Faded Scroll With Heig
 }
 
 .c11 {
-  height: 4px;
+  height: 13px;
   width: 4px;
   position: absolute;
   right: 0;
@@ -313,7 +313,7 @@ exports[`Storyshots Molecules | CardWithTitle Integration Faded Scroll With Heig
 }
 
 .c8 {
-  height: 4px;
+  height: 13px;
   width: 4px;
   position: absolute;
   right: 0;
@@ -366,10 +366,9 @@ exports[`Storyshots Molecules | CardWithTitle Integration Faded Scroll With Heig
     background: transparent;
     z-index: 1;
     opacity: 0;
-    -webkit-transition: 0.3s opacity ease-out;
-    transition: 0.3s opacity ease-out;
     top: 0;
     background: linear-gradient(0deg,#ffffff00 0%,#ffffffff 100%);
+    opacity: 1;
   }
 }
 
@@ -389,10 +388,9 @@ exports[`Storyshots Molecules | CardWithTitle Integration Faded Scroll With Heig
     background: transparent;
     z-index: 1;
     opacity: 0;
-    -webkit-transition: 0.3s opacity ease-out;
-    transition: 0.3s opacity ease-out;
     bottom: 0;
     background: linear-gradient(0deg,#ffffffff 0%,#ffffff00 100%);
+    opacity: 1;
   }
 }
 
@@ -486,7 +484,7 @@ exports[`Storyshots Molecules | CardWithTitle Integration With Faded Scroll 1`] 
 }
 
 .c10 {
-  height: 4px;
+  height: 13px;
   width: 4px;
   position: absolute;
   right: 0;
@@ -495,7 +493,7 @@ exports[`Storyshots Molecules | CardWithTitle Integration With Faded Scroll 1`] 
 }
 
 .c7 {
-  height: 4px;
+  height: 13px;
   width: 4px;
   position: absolute;
   right: 0;
@@ -548,10 +546,9 @@ exports[`Storyshots Molecules | CardWithTitle Integration With Faded Scroll 1`] 
     background: transparent;
     z-index: 1;
     opacity: 0;
-    -webkit-transition: 0.3s opacity ease-out;
-    transition: 0.3s opacity ease-out;
     top: 0;
     background: linear-gradient(0deg,#ffffff00 0%,#ffffffff 100%);
+    opacity: 1;
   }
 }
 
@@ -571,10 +568,9 @@ exports[`Storyshots Molecules | CardWithTitle Integration With Faded Scroll 1`] 
     background: transparent;
     z-index: 1;
     opacity: 0;
-    -webkit-transition: 0.3s opacity ease-out;
-    transition: 0.3s opacity ease-out;
     bottom: 0;
     background: linear-gradient(0deg,#ffffffff 0%,#ffffff00 100%);
+    opacity: 1;
   }
 }
 
