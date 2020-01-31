@@ -1,3 +1,12 @@
+## [2.14.3](https://github.com/nordnet/ui/compare/v2.14.2...v2.14.3) (2020-01-31)
+
+
+### Bug Fixes
+
+* add forwardrefs to iconbase and questionmark icon ([446b578](https://github.com/nordnet/ui/commit/446b578))
+* update snaps ([7275768](https://github.com/nordnet/ui/commit/7275768))
+* use jest-styled-components ([27d8871](https://github.com/nordnet/ui/commit/27d8871))
+
 ## [2.14.2](https://github.com/nordnet/ui/compare/v2.14.1...v2.14.2) (2020-01-29)
 
 
