@@ -221,7 +221,6 @@ exports[`Storyshots Molecules | Modal Default Story 1`] = `
               >
                 <h2
                   className="c4 c5"
-                  type="title2"
                 >
                   Dialog information
                 </h2>
@@ -232,7 +231,6 @@ exports[`Storyshots Molecules | Modal Default Story 1`] = `
             >
               <p
                 className="c7"
-                type="primary"
               >
                 Modals should be used with care as they are quite intrusive on the user experience and demand immediate attention (while also blocking all other actions on the site). Always consider if you can solve a problem in another way first before you choose to go with the modal.
               </p>
@@ -242,7 +240,6 @@ exports[`Storyshots Molecules | Modal Default Story 1`] = `
             >
               <p
                 className="c7"
-                type="primary"
               >
                 That being said they are a good tool if you need to grab the users attention, either to communicate something very important or make them take an action before proceeding.
               </p>
@@ -252,14 +249,12 @@ exports[`Storyshots Molecules | Modal Default Story 1`] = `
             >
               <p
                 className="c7"
-                type="primary"
               >
                 Nielsen/Norman has an excellent article about their usage here
               </p>
             </div>
             <p
               className="c7"
-              type="primary"
             >
               <a
                 href="https:// www.nngroup.com/articles/modal-nonmodal-dialog/"
@@ -718,7 +713,6 @@ exports[`Storyshots Molecules | Modal Footer Story 1`] = `
               >
                 <h2
                   className="c4 c5"
-                  type="title2"
                 >
                   Dialog information
                 </h2>
@@ -741,7 +735,6 @@ exports[`Storyshots Molecules | Modal Footer Story 1`] = `
                   >
                     <p
                       className="c11"
-                      type="primary"
                     >
                       Modals should be used with care as they are quite intrusive on the user experience and demand immediate attention (while also blocking all other actions on the site). Always consider if you can solve a problem in another way first before you choose to go with the modal. Modals should be used with care as they are quite intrusive on the user experience and demand immediate attention (while also blocking all other actions on the site). Always consider if you can solve a problem in another way first before you choose to go with the modal.
                     </p>
@@ -751,7 +744,6 @@ exports[`Storyshots Molecules | Modal Footer Story 1`] = `
                   >
                     <p
                       className="c11"
-                      type="primary"
                     >
                       That being said they are a good tool if you need to grab the users attention, either to communicate something very important or make them take an action before proceeding. That being said they are a good tool if you need to grab the users attention, either to communicate something very important or make them take an action before proceeding.
                     </p>
@@ -761,7 +753,6 @@ exports[`Storyshots Molecules | Modal Footer Story 1`] = `
                   >
                     <p
                       className="c11"
-                      type="primary"
                     >
                       Modals should be used with care as they are quite intrusive on the user experience and demand immediate attention (while also blocking all other actions on the site). Always consider if you can solve a problem in another way first before you choose to go with the modal. Modals should be used with care as they are quite intrusive on the user experience and demand immediate attention (while also blocking all other actions on the site). Always consider if you can solve a problem in another way first before you choose to go with the modal.
                     </p>
@@ -771,7 +762,6 @@ exports[`Storyshots Molecules | Modal Footer Story 1`] = `
                   >
                     <p
                       className="c11"
-                      type="primary"
                     >
                       Modals should be used with care as they are quite intrusive on the user experience and demand immediate attention (while also blocking all other actions on the site). Always consider if you can solve a problem in another way first before you choose to go with the modal. Modals should be used with care as they are quite intrusive on the user experience and demand immediate attention (while also blocking all other actions on the site). Always consider if you can solve a problem in another way first before you choose to go with the modal.
                     </p>
@@ -781,14 +771,12 @@ exports[`Storyshots Molecules | Modal Footer Story 1`] = `
                   >
                     <p
                       className="c11"
-                      type="primary"
                     >
                       Nielsen/Norman has an excellent article about their usage here
                     </p>
                   </div>
                   <p
                     className="c11"
-                    type="primary"
                   >
                     <a
                       href="https:// www.nngroup.com/articles/modal-nonmodal-dialog/"
@@ -808,7 +796,6 @@ exports[`Storyshots Molecules | Modal Footer Story 1`] = `
               <div>
                 <p
                   className="c11"
-                  type="primary"
                 >
                   This is a footer which is a ReactNode, which could e.g. contain a button or only text
                 </p>
@@ -1027,7 +1014,6 @@ exports[`Storyshots Molecules | Modal Hide Close 1`] = `
               >
                 <h2
                   className="c4 c5"
-                  type="title2"
                 >
                   Dialog information
                 </h2>
@@ -1038,7 +1024,6 @@ exports[`Storyshots Molecules | Modal Hide Close 1`] = `
             >
               <p
                 className="c7"
-                type="primary"
               >
                 The close button in the upper right corner is now hidden because the prop hideClose is true.
               </p>
@@ -1316,7 +1301,6 @@ exports[`Storyshots Molecules | Modal Node As Title 1`] = `
                   </svg>
                   <h2
                     className="c6"
-                    type="title2"
                   >
                     React Node Title
                   </h2>
@@ -1341,7 +1325,6 @@ exports[`Storyshots Molecules | Modal Node As Title 1`] = `
             >
               <p
                 className="c8"
-                type="primary"
               >
                 Modals should be used with care as they are quite intrusive on the user experience and demand immediate attention (while also blocking all other actions on the site). Always consider if you can solve a problem in another way first before you choose to go with the modal.
               </p>
@@ -1351,7 +1334,6 @@ exports[`Storyshots Molecules | Modal Node As Title 1`] = `
             >
               <p
                 className="c8"
-                type="primary"
               >
                 That being said they are a good tool if you need to grab the users attention, either to communicate something very important or make them take an action before proceeding.
               </p>
@@ -1361,14 +1343,12 @@ exports[`Storyshots Molecules | Modal Node As Title 1`] = `
             >
               <p
                 className="c8"
-                type="primary"
               >
                 Nielsen/Norman has an excellent article about their usage here
               </p>
             </div>
             <p
               className="c8"
-              type="primary"
             >
               <a
                 href="https:// www.nngroup.com/articles/modal-nonmodal-dialog/"
@@ -1637,7 +1617,6 @@ exports[`Storyshots Molecules | Modal Uncontrolled Behavior 1`] = `
               >
                 <h2
                   className="c4 c5"
-                  type="title2"
                 >
                   Dialog information
                 </h2>
@@ -1648,7 +1627,6 @@ exports[`Storyshots Molecules | Modal Uncontrolled Behavior 1`] = `
             >
               <p
                 className="c7"
-                type="primary"
               >
                 Modals should be used with care as they are quite intrusive on the user experience and demand immediate attention (while also blocking all other actions on the site). Always consider if you can solve a problem in another way first before you choose to go with the modal.
               </p>
@@ -1658,7 +1636,6 @@ exports[`Storyshots Molecules | Modal Uncontrolled Behavior 1`] = `
             >
               <p
                 className="c7"
-                type="primary"
               >
                 That being said they are a good tool if you need to grab the users attention, either to communicate something very important or make them take an action before proceeding.
               </p>
@@ -1668,14 +1645,12 @@ exports[`Storyshots Molecules | Modal Uncontrolled Behavior 1`] = `
             >
               <p
                 className="c7"
-                type="primary"
               >
                 Nielsen/Norman has an excellent article about their usage here
               </p>
             </div>
             <p
               className="c7"
-              type="primary"
             >
               <a
                 href="https:// www.nngroup.com/articles/modal-nonmodal-dialog/"
@@ -1918,7 +1893,6 @@ exports[`Storyshots Molecules | Modal Without Header 1`] = `
             >
               <p
                 className="c4"
-                type="primary"
               >
                 Modals should be used with care as they are quite intrusive on the user experience and demand immediate attention (while also blocking all other actions on the site). Always consider if you can solve a problem in another way first before you choose to go with the modal.
               </p>
@@ -1928,7 +1902,6 @@ exports[`Storyshots Molecules | Modal Without Header 1`] = `
             >
               <p
                 className="c4"
-                type="primary"
               >
                 That being said they are a good tool if you need to grab the users attention, either to communicate something very important or make them take an action before proceeding.
               </p>
@@ -1938,14 +1911,12 @@ exports[`Storyshots Molecules | Modal Without Header 1`] = `
             >
               <p
                 className="c4"
-                type="primary"
               >
                 Nielsen/Norman has an excellent article about their usage here
               </p>
             </div>
             <p
               className="c4"
-              type="primary"
             >
               <a
                 href="https:// www.nngroup.com/articles/modal-nonmodal-dialog/"

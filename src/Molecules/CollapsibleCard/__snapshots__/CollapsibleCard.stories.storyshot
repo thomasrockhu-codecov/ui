@@ -146,7 +146,6 @@ exports[`Storyshots Molecules | CollapsibleCard Collapsed Initially 1`] = `
       >
         <h2
           className="c4"
-          type="title3"
         >
           Collapsed initially
         </h2>
@@ -179,7 +178,6 @@ exports[`Storyshots Molecules | CollapsibleCard Collapsed Initially 1`] = `
   >
     <p
       className="c8 c9"
-      type="primary"
     >
       Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
     </p>
@@ -333,7 +331,6 @@ exports[`Storyshots Molecules | CollapsibleCard Collapsible With Custom Componen
       >
         <h2
           className="c4"
-          type="title3"
         >
           <div>
             Custom title
@@ -368,7 +365,6 @@ exports[`Storyshots Molecules | CollapsibleCard Collapsible With Custom Componen
   >
     <p
       className="c8 c9"
-      type="primary"
     >
       Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
     </p>
@@ -522,7 +518,6 @@ exports[`Storyshots Molecules | CollapsibleCard Collapsible With On Click Listen
       >
         <h2
           className="c4"
-          type="title3"
         >
           I've been clicked 0 times
         </h2>
@@ -555,7 +550,6 @@ exports[`Storyshots Molecules | CollapsibleCard Collapsible With On Click Listen
   >
     <p
       className="c8 c9"
-      type="primary"
     >
       On mobile the onClick event should fire for onTouchStart and not onClick.
     </p>
@@ -709,7 +703,6 @@ exports[`Storyshots Molecules | CollapsibleCard Default Story 1`] = `
       >
         <h2
           className="c4"
-          type="title3"
         >
           Collapsible
         </h2>
@@ -742,7 +735,6 @@ exports[`Storyshots Molecules | CollapsibleCard Default Story 1`] = `
   >
     <p
       className="c8 c9"
-      type="primary"
     >
       Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
     </p>
