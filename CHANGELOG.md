@@ -1,3 +1,16 @@
+# [2.16.0](https://github.com/nordnet/ui/compare/v2.15.1...v2.16.0) (2020-02-04)
+
+
+### Bug Fixes
+
+* dont show fade initially ([eb89703](https://github.com/nordnet/ui/commit/eb89703))
+* update snaps ([e013439](https://github.com/nordnet/ui/commit/e013439))
+
+
+### Features
+
+* fadescroll with ratio instead of transition ([2147ebf](https://github.com/nordnet/ui/commit/2147ebf))
+
 ## [2.15.1](https://github.com/nordnet/ui/compare/v2.15.0...v2.15.1) (2020-02-04)
 
 
