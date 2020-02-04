@@ -1,6 +1,6 @@
 import { css } from 'styled-components';
 import { InternalProps, Props } from './FadedScroll.types';
-import { getValueFromNumberOrString } from '../../common/utils';
+import { getValueFromNumberOrString, isNumber } from '../../common/utils';
 
 const flexAutoHeightStyles = css`
   min-height: 0; /* Firefox */
@@ -43,7 +43,7 @@ export const fadeTopStyles = css<InternalProps & Props>`
     ${fadeStyles}
     top: 0;
     background: linear-gradient(0deg, #ffffff00 0%, #ffffffff 100%);
-    opacity: ${p => 1 - p.intersectionTopRatio};
+    ${p => (isNumber(p.intersectionTopRatio) ? `opacity: ${1 - p.intersectionTopRatio}` : '')};
   }
 `;
 
@@ -60,7 +60,8 @@ export const fadeBottomStyles = css<InternalProps & Props>`
     ${fadeStyles}
     bottom: 0;
     background: linear-gradient(0deg, #ffffffff 0%, #ffffff00 100%);
-    opacity: ${p => 1 - p.intersectionBottomRatio};
+    ${p =>
+      isNumber(p.intersectionBottomRatio) ? `opacity: ${1 - p.intersectionBottomRatio}` : ''};
   }
 `;
 
@@ -71,7 +72,7 @@ export const fadeBottomDesktopStyles = css`
 `;
 
 export const intersectionStyles = css<Props>`
-  height: ${p => p.fadeHeight}px;
+  height: ${p => p.theme.spacing.unit(4)}px;
   width: ${p => p.theme.spacing.unit(1)}px;
   position: absolute;
   right: 0;

@@ -52,8 +52,8 @@ export const FadedScroll: Component & {
   fadeHeight = 13,
   maxHeight,
 }) => {
-  const [setIntersectionTopRef, intersectionTopRatio] = useIntersect();
-  const [setIntersectionBottomRef, intersectionBottomRatio] = useIntersect();
+  const [setIntersectionTopRef, intersectionTopRatio] = useIntersect<HTMLDivElement>();
+  const [setIntersectionBottomRef, intersectionBottomRatio] = useIntersect<HTMLDivElement>();
   const contentRef = useRef<HTMLDivElement | null>(null);
 
   return (

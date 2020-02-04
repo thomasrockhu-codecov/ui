@@ -8,16 +8,14 @@ import { useState, useEffect, useRef } from 'react';
 
 const defaultThreshold = [0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1];
 
-const useIntersect = (
-  rootMargin: string = '0px',
-): [React.Dispatch<React.SetStateAction<HTMLDivElement | null>>, number] => {
-  const [ratio, updateRatio] = useState<number>(0);
-  const [node, setNode] = useState<HTMLDivElement | null>(null);
+function useIntersect<ElementType>(rootMargin: string = '0px') {
+  const [ratio, updateRatio] = useState<number | null>(null);
+  const [node, setNode] = useState<React.RefObject<ElementType> | null>(null);
   const observer: any = useRef<HTMLDivElement | null>(null);
 
   useEffect(() => {
-    if (typeof IntersectionObserver === 'undefined') {
-      return () => null;
+    if (!node || typeof IntersectionObserver === 'undefined') {
+      return undefined;
     }
 
     if (observer.current) observer.current.disconnect();
@@ -32,9 +30,9 @@ const useIntersect = (
     if (node) currentObserver.observe(node);
 
     return () => currentObserver.disconnect();
-  }, [node]);
+  }, [node, rootMargin]);
 
-  return [setNode, ratio];
-};
+  return [setNode, ratio] as [React.Ref<ElementType>, typeof ratio];
+}
 
 export default useIntersect;

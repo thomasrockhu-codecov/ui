@@ -1,6 +1,6 @@
 export type InternalProps = {
-  intersectionTopRatio: number;
-  intersectionBottomRatio: number;
+  intersectionTopRatio: number | null;
+  intersectionBottomRatio: number | null;
 };
 
 export type Props = {
