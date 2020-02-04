@@ -941,8 +941,6 @@ exports[`Storyshots Molecules | Input / Select / MultiSelectList List With Diffe
   background: transparent;
   z-index: 1;
   opacity: 0;
-  -webkit-transition: 0.3s opacity ease-out;
-  transition: 0.3s opacity ease-out;
   top: 0;
   background: linear-gradient(0deg,#ffffff00 0%,#ffffffff 100%);
 }
@@ -958,8 +956,6 @@ exports[`Storyshots Molecules | Input / Select / MultiSelectList List With Diffe
   background: transparent;
   z-index: 1;
   opacity: 0;
-  -webkit-transition: 0.3s opacity ease-out;
-  transition: 0.3s opacity ease-out;
   bottom: 0;
   background: linear-gradient(0deg,#ffffffff 0%,#ffffff00 100%);
 }
@@ -989,7 +985,7 @@ exports[`Storyshots Molecules | Input / Select / MultiSelectList List With Diffe
 }
 
 .c30 {
-  height: 4px;
+  height: 16px;
   width: 4px;
   position: absolute;
   right: 0;
@@ -998,7 +994,7 @@ exports[`Storyshots Molecules | Input / Select / MultiSelectList List With Diffe
 }
 
 .c7 {
-  height: 4px;
+  height: 16px;
   width: 4px;
   position: absolute;
   right: 0;

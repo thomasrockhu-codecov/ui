@@ -27,6 +27,10 @@ global.IntersectionObserver = class IntersectionObserver {
   unobserve() {
     return null;
   }
+
+  disconnect() {
+    return null;
+  }
 };
 /* eslint-enable */
 

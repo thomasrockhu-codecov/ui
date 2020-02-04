@@ -299,7 +299,7 @@ exports[`Storyshots Organisms | CardWithTabs Integration With Faded Scroll 1`] =
 }
 
 .c22 {
-  height: 4px;
+  height: 16px;
   width: 4px;
   position: absolute;
   right: 0;
@@ -308,7 +308,7 @@ exports[`Storyshots Organisms | CardWithTabs Integration With Faded Scroll 1`] =
 }
 
 .c20 {
-  height: 4px;
+  height: 16px;
   width: 4px;
   position: absolute;
   right: 0;
@@ -503,8 +503,6 @@ exports[`Storyshots Organisms | CardWithTabs Integration With Faded Scroll 1`] =
     background: transparent;
     z-index: 1;
     opacity: 0;
-    -webkit-transition: 0.3s opacity ease-out;
-    transition: 0.3s opacity ease-out;
     top: 0;
     background: linear-gradient(0deg,#ffffff00 0%,#ffffffff 100%);
   }
@@ -526,8 +524,6 @@ exports[`Storyshots Organisms | CardWithTabs Integration With Faded Scroll 1`] =
     background: transparent;
     z-index: 1;
     opacity: 0;
-    -webkit-transition: 0.3s opacity ease-out;
-    transition: 0.3s opacity ease-out;
     bottom: 0;
     background: linear-gradient(0deg,#ffffffff 0%,#ffffff00 100%);
   }
@@ -713,7 +709,7 @@ exports[`Storyshots Organisms | CardWithTabs Integration With Faded Scroll With 
 }
 
 .c23 {
-  height: 4px;
+  height: 16px;
   width: 4px;
   position: absolute;
   right: 0;
@@ -722,7 +718,7 @@ exports[`Storyshots Organisms | CardWithTabs Integration With Faded Scroll With 
 }
 
 .c21 {
-  height: 4px;
+  height: 16px;
   width: 4px;
   position: absolute;
   right: 0;
@@ -917,8 +913,6 @@ exports[`Storyshots Organisms | CardWithTabs Integration With Faded Scroll With 
     background: transparent;
     z-index: 1;
     opacity: 0;
-    -webkit-transition: 0.3s opacity ease-out;
-    transition: 0.3s opacity ease-out;
     top: 0;
     background: linear-gradient(0deg,#ffffff00 0%,#ffffffff 100%);
   }
@@ -940,8 +934,6 @@ exports[`Storyshots Organisms | CardWithTabs Integration With Faded Scroll With 
     background: transparent;
     z-index: 1;
     opacity: 0;
-    -webkit-transition: 0.3s opacity ease-out;
-    transition: 0.3s opacity ease-out;
     bottom: 0;
     background: linear-gradient(0deg,#ffffffff 0%,#ffffff00 100%);
   }
