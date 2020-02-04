@@ -1,3 +1,10 @@
+# [2.15.0](https://github.com/nordnet/ui/compare/v2.14.3...v2.15.0) (2020-02-04)
+
+
+### Features
+
+* **input:** exposing type on input.text (email, password, etc) ([4f99b82](https://github.com/nordnet/ui/commit/4f99b82))
+
 ## [2.14.3](https://github.com/nordnet/ui/compare/v2.14.2...v2.14.3) (2020-01-31)
 
 
