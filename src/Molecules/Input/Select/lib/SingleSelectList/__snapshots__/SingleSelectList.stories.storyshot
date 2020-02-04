@@ -249,7 +249,6 @@ exports[`Storyshots Molecules | Input / Select / SingleSelectList List With Diff
   opacity: 0;
   top: 0;
   background: linear-gradient(0deg,#ffffff00 0%,#ffffffff 100%);
-  opacity: 1;
 }
 
 .c4::after {
@@ -265,7 +264,6 @@ exports[`Storyshots Molecules | Input / Select / SingleSelectList List With Diff
   opacity: 0;
   bottom: 0;
   background: linear-gradient(0deg,#ffffffff 0%,#ffffff00 100%);
-  opacity: 1;
 }
 
 .c5 {
@@ -293,7 +291,7 @@ exports[`Storyshots Molecules | Input / Select / SingleSelectList List With Diff
 }
 
 .c16 {
-  height: 13px;
+  height: 16px;
   width: 4px;
   position: absolute;
   right: 0;
@@ -302,7 +300,7 @@ exports[`Storyshots Molecules | Input / Select / SingleSelectList List With Diff
 }
 
 .c7 {
-  height: 13px;
+  height: 16px;
   width: 4px;
   position: absolute;
   right: 0;

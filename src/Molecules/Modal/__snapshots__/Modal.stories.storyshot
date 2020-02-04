@@ -352,7 +352,6 @@ exports[`Storyshots Molecules | Modal Footer Story 1`] = `
   opacity: 0;
   top: 0;
   background: linear-gradient(0deg,#ffffff00 0%,#ffffffff 100%);
-  opacity: 1;
 }
 
 .c6::after {
@@ -368,7 +367,6 @@ exports[`Storyshots Molecules | Modal Footer Story 1`] = `
   opacity: 0;
   bottom: 0;
   background: linear-gradient(0deg,#ffffffff 0%,#ffffff00 100%);
-  opacity: 1;
 }
 
 .c7 {
@@ -396,7 +394,7 @@ exports[`Storyshots Molecules | Modal Footer Story 1`] = `
 }
 
 .c12 {
-  height: 13px;
+  height: 16px;
   width: 4px;
   position: absolute;
   right: 0;
@@ -405,7 +403,7 @@ exports[`Storyshots Molecules | Modal Footer Story 1`] = `
 }
 
 .c9 {
-  height: 13px;
+  height: 16px;
   width: 4px;
   position: absolute;
   right: 0;
