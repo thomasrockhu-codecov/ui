@@ -169,9 +169,14 @@ const getTypeStyles = (props: ThemedStyledProps<Props, Theme>) => {
     
   `;
 };
+const Span = styled.span``;
 
 const CleanSpan = React.forwardRef<HTMLSpanElement, any>((props, ref) => (
-  <span ref={ref} {...R.omit(['color', 'type', 'weight', 'lineHeight'])(props)} />
+  <Span
+    ref={ref}
+    as={props.forwardedAs}
+    {...R.omit(['color', 'type', 'weight', 'lineHeight'])(props)}
+  />
 ));
 
 const StyledTypography = styled(CleanSpan)<Props>`
@@ -189,7 +194,7 @@ export const Typography: React.FC<Props> = React.forwardRef<HTMLElement, Props>(
     <StyledTypography
       className={className}
       id={id}
-      as={as}
+      forwardedAs={as}
       color={color}
       type={type}
       weight={weight}
