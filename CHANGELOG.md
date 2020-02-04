@@ -1,3 +1,11 @@
+## [2.15.1](https://github.com/nordnet/ui/compare/v2.15.0...v2.15.1) (2020-02-04)
+
+
+### Bug Fixes
+
+* **typography:** support 'as' without props warning ([b817e86](https://github.com/nordnet/ui/commit/b817e86))
+* **typography:** updated snaps ([7377575](https://github.com/nordnet/ui/commit/7377575))
+
 # [2.15.0](https://github.com/nordnet/ui/compare/v2.14.3...v2.15.0) (2020-02-04)
 
 
