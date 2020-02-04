@@ -341,3 +341,24 @@ export const withMaxLength = () => (
 withMaxLength.story = {
   name: 'With maxLength',
 };
+
+export const alternatingTypes = () => (
+  <form
+    onSubmit={e => {
+      e.preventDefault();
+    }}
+  >
+    <div>
+      <Input.Text label="email" type="email" />
+    </div>
+    <div>
+      <Input.Text label="password" type="password" />
+    </div>
+    <div>
+      <Input.Text label="search" type="search" />
+    </div>
+    <div>
+      <Input.Text label="search" type="submit" />
+    </div>
+  </form>
+);

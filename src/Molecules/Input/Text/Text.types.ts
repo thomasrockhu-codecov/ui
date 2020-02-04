@@ -25,7 +25,7 @@ export type Props = {
    * underneath
    */
   width?: string | number;
-
+  type?: string;
   value?: string;
   defaultValue?: string;
   required?: boolean;
