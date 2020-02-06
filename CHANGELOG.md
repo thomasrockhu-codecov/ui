@@ -1,3 +1,11 @@
+# [2.17.0](https://github.com/nordnet/ui/compare/v2.16.0...v2.17.0) (2020-02-06)
+
+
+### Features
+
+* 🎸 add possibility to unset flexbox size values ([f2994da](https://github.com/nordnet/ui/commit/f2994da))
+* 🎸 add social media icons ([aca689c](https://github.com/nordnet/ui/commit/aca689c))
+
 # [2.16.0](https://github.com/nordnet/ui/compare/v2.15.1...v2.16.0) (2020-02-04)
 
 
