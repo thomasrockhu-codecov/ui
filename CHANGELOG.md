@@ -1,3 +1,10 @@
+## [2.17.1](https://github.com/nordnet/ui/compare/v2.17.0...v2.17.1) (2020-02-06)
+
+
+### Bug Fixes
+
+* make modal header and footer not grow ([7fd680f](https://github.com/nordnet/ui/commit/7fd680f))
+
 # [2.17.0](https://github.com/nordnet/ui/compare/v2.16.0...v2.17.0) (2020-02-06)
 
 
