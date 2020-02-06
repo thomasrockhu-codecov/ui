@@ -39,6 +39,10 @@ import { Questionmark } from './components/Questionmark';
 import { Rtmt } from './components/Rtmt';
 import { Search } from './components/Search';
 import { SharevilleLogo } from './components/SharevilleLogo';
+import { SocialFacebook } from './components/SocialFacebook';
+import { SocialInstagram } from './components/SocialInstagram';
+import { SocialTwitter } from './components/SocialTwitter';
+import { SocialYouTube } from './components/SocialYouTube';
 import { SolidCircle } from './components/Circle';
 import { Star } from './components/Star';
 import { Star24 } from './components/Star24';
@@ -88,6 +92,10 @@ export default {
   Rtmt,
   Search,
   SharevilleLogo,
+  SocialFacebook,
+  SocialInstagram,
+  SocialTwitter,
+  SocialYouTube,
   SolidCircle,
   Star,
   Star24,
