@@ -1,5 +1,6 @@
 export type LabelAddonProp = {
   labelTooltip?: string;
+  hideLabel?: boolean;
 };
 
 export type Props = {

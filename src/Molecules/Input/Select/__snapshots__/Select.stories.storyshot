@@ -4823,21 +4823,17 @@ exports[`Storyshots Molecules | Input / Select Hide Label 1`] = `
       <div
         className="c3"
       >
-        <div
-          className="c2"
+        <label
+          className="c4"
+          hidden={true}
+          htmlFor="input-1"
         >
-          <label
-            className="c4"
-            hidden={true}
-            htmlFor="input-1"
+          <span
+            className="c5"
           >
-            <span
-              className="c5"
-            >
-              Label 
-            </span>
-          </label>
-        </div>
+            Label 
+          </span>
+        </label>
         <div
           className="c6"
           disabled={false}
