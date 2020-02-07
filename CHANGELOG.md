@@ -1,3 +1,11 @@
+## [2.17.2](https://github.com/nordnet/ui/compare/v2.17.1...v2.17.2) (2020-02-07)
+
+
+### Bug Fixes
+
+* 🐛 remove empty space left by hidden label ([0bad970](https://github.com/nordnet/ui/commit/0bad970))
+* 🐛 remove empty space left by hidden label in firefox ([595052e](https://github.com/nordnet/ui/commit/595052e))
+
 ## [2.17.1](https://github.com/nordnet/ui/compare/v2.17.0...v2.17.1) (2020-02-06)
 
 
