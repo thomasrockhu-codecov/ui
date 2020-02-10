@@ -1,3 +1,10 @@
+## [2.17.3](https://github.com/nordnet/ui/compare/v2.17.2...v2.17.3) (2020-02-10)
+
+
+### Bug Fixes
+
+* exposing useOnClickOutside hook ([7f8eab5](https://github.com/nordnet/ui/commit/7f8eab5))
+
 ## [2.17.2](https://github.com/nordnet/ui/compare/v2.17.1...v2.17.2) (2020-02-07)
 
 
