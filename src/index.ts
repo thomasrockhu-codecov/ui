@@ -53,7 +53,7 @@ import CardWithTabs from './Organisms/CardWithTabs';
 import Development from './Organisms/Development';
 
 /** Hooks */
-import { useKeyPress } from './common/Hooks';
+import { useKeyPress, useOnClickOutside } from './common/Hooks';
 
 import theme, { createTheme } from './theme';
 import TrackingContext from './common/tracking';
@@ -118,5 +118,6 @@ export {
   Typography,
   useKeyPress,
   useMedia,
+  useOnClickOutside,
   VisuallyHidden,
 };
