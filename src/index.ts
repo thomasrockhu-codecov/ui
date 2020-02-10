@@ -117,7 +117,7 @@ export {
   TrackingContext,
   Typography,
   useKeyPress,
-  useOnClickOutside,
   useMedia,
+  useOnClickOutside,
   VisuallyHidden,
 };
