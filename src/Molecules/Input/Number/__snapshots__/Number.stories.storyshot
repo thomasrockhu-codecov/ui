@@ -3397,19 +3397,7 @@ exports[`Storyshots Molecules | Input / Number With Extra Info Below 1`] = `
 `;
 
 exports[`Storyshots Molecules | Input / Number With Hidden Label 1`] = `
-.c1 {
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.c5 {
+.c4 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -3425,7 +3413,7 @@ exports[`Storyshots Molecules | Input / Number With Hidden Label 1`] = `
   flex-grow: 1;
 }
 
-.c9 {
+.c8 {
   position: absolute;
   height: 1px;
   width: 1px;
@@ -3434,7 +3422,7 @@ exports[`Storyshots Molecules | Input / Number With Hidden Label 1`] = `
   clip: rect(1px,1px,1px,1px);
 }
 
-.c2 {
+.c1 {
   position: absolute;
   height: 1px;
   width: 1px;
@@ -3446,7 +3434,7 @@ exports[`Storyshots Molecules | Input / Number With Hidden Label 1`] = `
   cursor: pointer;
 }
 
-.c10 {
+.c9 {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -3460,7 +3448,7 @@ exports[`Storyshots Molecules | Input / Number With Hidden Label 1`] = `
   display: block;
 }
 
-.c3 {
+.c2 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #6E6E69;
   margin: 0;
@@ -3469,7 +3457,7 @@ exports[`Storyshots Molecules | Input / Number With Hidden Label 1`] = `
   line-height: 1.4285714285714286;
 }
 
-.c4 {
+.c3 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
   margin: 0;
@@ -3483,12 +3471,12 @@ exports[`Storyshots Molecules | Input / Number With Hidden Label 1`] = `
   display: inline-block;
 }
 
-.c6 {
+.c5 {
   position: relative;
   box-shadow: 0 1px 3px rgba(0,0,0,0.03);
 }
 
-.c8 {
+.c7 {
   width: 40px;
   height: 40px;
   background-color: #FFFFFF;
@@ -3515,31 +3503,31 @@ exports[`Storyshots Molecules | Input / Number With Hidden Label 1`] = `
   flex: 1 0 auto;
 }
 
-.c8:hover {
+.c7:hover {
   border-color: #4B4B46;
   z-index: 2;
 }
 
-.c8:focus {
+.c7:focus {
   border-color: #0046FF;
   z-index: 3;
 }
 
-.c8:first-of-type {
+.c7:first-of-type {
   -webkit-order: -1;
   -ms-flex-order: -1;
   order: -1;
 }
 
-.c8:active:enabled {
+.c7:active:enabled {
   background-color: #0046FF;
 }
 
-.c8:active:enabled svg {
+.c7:active:enabled svg {
   fill: #FFFFFF;
 }
 
-.c7 {
+.c6 {
   font-family: inherit;
   font-size: 100%;
   line-height: 1.15;
@@ -3558,43 +3546,43 @@ exports[`Storyshots Molecules | Input / Number With Hidden Label 1`] = `
   z-index: 1;
 }
 
-.c7:hover {
+.c6:hover {
   border-color: #4B4B46;
   z-index: 2;
 }
 
-.c7:focus {
+.c6:focus {
   border-color: #0046FF;
   z-index: 3;
 }
 
-.c7::-moz-placeholder,
-.c7:-ms-input-placeholder,
-.c7::-webkit-input-placeholder {
+.c6::-moz-placeholder,
+.c6:-ms-input-placeholder,
+.c6::-webkit-input-placeholder {
   height: inherit;
   line-height: inherit;
   color: #6E6E69;
 }
 
-.c7::-moz-placeholder,
-.c7:-ms-input-placeholder,
-.c7::-moz-placeholder {
+.c6::-moz-placeholder,
+.c6:-ms-input-placeholder,
+.c6::-moz-placeholder {
   height: inherit;
   line-height: inherit;
   color: #6E6E69;
 }
 
-.c7::-moz-placeholder,
-.c7:-ms-input-placeholder,
-.c7:-ms-input-placeholder {
+.c6::-moz-placeholder,
+.c6:-ms-input-placeholder,
+.c6:-ms-input-placeholder {
   height: inherit;
   line-height: inherit;
   color: #6E6E69;
 }
 
-.c7::-moz-placeholder,
-.c7:-ms-input-placeholder,
-.c7::placeholder {
+.c6::-moz-placeholder,
+.c6:-ms-input-placeholder,
+.c6::placeholder {
   height: inherit;
   line-height: inherit;
   color: #6E6E69;
@@ -3603,29 +3591,25 @@ exports[`Storyshots Molecules | Input / Number With Hidden Label 1`] = `
 <div
   className="c0"
 >
-  <div
+  <label
     className="c1"
+    hidden={true}
+    htmlFor="insert-unique-id"
   >
-    <label
+    <span
       className="c2"
-      hidden={true}
-      htmlFor="insert-unique-id"
     >
-      <span
-        className="c3"
-      >
-        Label 
-      </span>
-    </label>
-  </div>
+      Label 
+    </span>
+  </label>
   <span
-    className="c4"
+    className="c3"
   >
     <div
-      className="c5 c6"
+      className="c4 c5"
     >
       <input
-        className="NormalizedInput__Input-sc-1m4kmh9-0 c7"
+        className="NormalizedInput__Input-sc-1m4kmh9-0 c6"
         id="insert-unique-id"
         inputMode="decimal"
         min={0}
@@ -3636,19 +3620,19 @@ exports[`Storyshots Molecules | Input / Number With Hidden Label 1`] = `
         value="1"
       />
       <button
-        className="c8"
+        className="c7"
         onClick={[Function]}
         type="button"
       >
         <div
-          className="c9"
+          className="c8"
         >
           decrease number by 
           1
         </div>
         <svg
           aria-hidden="true"
-          className="c10"
+          className="c9"
           focusable="false"
           preserveAspectRatio="xMidYMid meet"
           role="presentation"
@@ -3661,19 +3645,19 @@ exports[`Storyshots Molecules | Input / Number With Hidden Label 1`] = `
         </svg>
       </button>
       <button
-        className="c8"
+        className="c7"
         onClick={[Function]}
         type="button"
       >
         <div
-          className="c9"
+          className="c8"
         >
           increase number by 
           1
         </div>
         <svg
           aria-hidden="true"
-          className="c10"
+          className="c9"
           focusable="false"
           preserveAspectRatio="xMidYMid meet"
           role="presentation"

@@ -2402,18 +2402,6 @@ Array [
 
 exports[`Storyshots Molecules | Input / Text Hidden Label 1`] = `
 .c3 {
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.c4 {
   position: absolute;
   height: 1px;
   width: 1px;
@@ -2437,7 +2425,7 @@ exports[`Storyshots Molecules | Input / Text Hidden Label 1`] = `
   line-height: 1.4285714285714286;
 }
 
-.c5 {
+.c4 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
   margin: 0;
@@ -2451,7 +2439,7 @@ exports[`Storyshots Molecules | Input / Text Hidden Label 1`] = `
   display: inline-block;
 }
 
-.c7 {
+.c6 {
   font-family: inherit;
   font-size: 100%;
   line-height: 1.15;
@@ -2470,47 +2458,47 @@ exports[`Storyshots Molecules | Input / Text Hidden Label 1`] = `
   background-color: #FFFFFF;
 }
 
-.c7:hover {
+.c6:hover {
   border-color: #4B4B46;
 }
 
-.c7:focus {
+.c6:focus {
   border-color: #0046FF;
 }
 
-.c7::-moz-placeholder,
-.c7:-ms-input-placeholder,
-.c7::-webkit-input-placeholder {
+.c6::-moz-placeholder,
+.c6:-ms-input-placeholder,
+.c6::-webkit-input-placeholder {
   height: inherit;
   line-height: inherit;
   color: #6E6E69;
 }
 
-.c7::-moz-placeholder,
-.c7:-ms-input-placeholder,
-.c7::-moz-placeholder {
+.c6::-moz-placeholder,
+.c6:-ms-input-placeholder,
+.c6::-moz-placeholder {
   height: inherit;
   line-height: inherit;
   color: #6E6E69;
 }
 
-.c7::-moz-placeholder,
-.c7:-ms-input-placeholder,
-.c7:-ms-input-placeholder {
+.c6::-moz-placeholder,
+.c6:-ms-input-placeholder,
+.c6:-ms-input-placeholder {
   height: inherit;
   line-height: inherit;
   color: #6E6E69;
 }
 
-.c7::-moz-placeholder,
-.c7:-ms-input-placeholder,
-.c7::placeholder {
+.c6::-moz-placeholder,
+.c6:-ms-input-placeholder,
+.c6::placeholder {
   height: inherit;
   line-height: inherit;
   color: #6E6E69;
 }
 
-.c6 {
+.c5 {
   position: relative;
 }
 
@@ -2527,20 +2515,16 @@ exports[`Storyshots Molecules | Input / Text Hidden Label 1`] = `
       <div
         className="c3"
       >
-        <div
-          className="c4"
-        >
-          Label 
-        </div>
+        Label 
       </div>
       <span
-        className="c5"
+        className="c4"
       >
         <div
-          className="c6"
+          className="c5"
         >
           <input
-            className="NormalizedInput__Input-sc-1m4kmh9-0 c7"
+            className="NormalizedInput__Input-sc-1m4kmh9-0 c6"
             placeholder="Placeholder"
             type="text"
           />

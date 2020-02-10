@@ -18,12 +18,15 @@ const TooltipIcon = styled(Icon.Questionmark)`
 
 const BottomWrapper = styled(motion.div)``;
 
-const WithOptionalAddon: React.FC<LabelAddonProp> = ({ children, labelTooltip }) => (
-  <Flexbox container alignItems="center">
-    {children}
-    {labelTooltip && <TooltipIcon title={labelTooltip} size={4} />}
-  </Flexbox>
-);
+const WithOptionalAddon: React.FC<LabelAddonProp> = ({ children, labelTooltip, hideLabel }) =>
+  hideLabel ? (
+    <>{children}</>
+  ) : (
+    <Flexbox container alignItems="center">
+      {children}
+      {labelTooltip && <TooltipIcon title={labelTooltip} size={4} />}
+    </Flexbox>
+  );
 
 export const FormField: React.FC<Props> = React.forwardRef(
   (
@@ -50,7 +53,7 @@ export const FormField: React.FC<Props> = React.forwardRef(
     if (label) {
       field = (
         <FormLabel>
-          <WithOptionalAddon labelTooltip={labelTooltip}>
+          <WithOptionalAddon labelTooltip={labelTooltip} hideLabel={hideLabel}>
             {hideLabel ? <VisuallyHidden>{labelText}</VisuallyHidden> : labelText}
           </WithOptionalAddon>
           {children}
@@ -60,7 +63,7 @@ export const FormField: React.FC<Props> = React.forwardRef(
       if (group) {
         field = (
           <Fieldset>
-            <WithOptionalAddon labelTooltip={labelTooltip}>
+            <WithOptionalAddon labelTooltip={labelTooltip} hideLabel={hideLabel}>
               <Legend styleType="label">{labelText}</Legend>
             </WithOptionalAddon>
             {children}
@@ -69,7 +72,7 @@ export const FormField: React.FC<Props> = React.forwardRef(
       } else if (fieldId || forId) {
         field = (
           <>
-            <WithOptionalAddon labelTooltip={labelTooltip}>
+            <WithOptionalAddon labelTooltip={labelTooltip} hideLabel={hideLabel}>
               <FormLabel hideLabel={hideLabel} forId={fieldId || forId}>
                 {labelText}
               </FormLabel>
