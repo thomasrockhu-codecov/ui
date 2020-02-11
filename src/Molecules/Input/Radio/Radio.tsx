@@ -51,7 +51,7 @@ const StyledFormLabel = styled(FormLabel)`
   }
 `;
 
-const Input = styled(CleanInput).attrs({ type: 'radio' })<InternalInputProps>`
+const Input = styled(CleanInput).attrs(() => ({ type: 'radio' }))<InternalInputProps>`
   position: absolute;
   opacity: 0;
   height: 0;

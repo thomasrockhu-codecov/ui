@@ -6,10 +6,6 @@ exports[`Storyshots Molecules | CollapsibleCard Collapsed initially 1`] = `
   box-shadow: 0 2px 2px 0 rgba(0,0,0,0.03);
 }
 
-.c3 {
-  box-sizing: border-box;
-}
-
 .c2 {
   box-sizing: border-box;
   display: -webkit-box;
@@ -37,7 +33,11 @@ exports[`Storyshots Molecules | CollapsibleCard Collapsed initially 1`] = `
   padding-top: 0;
 }
 
-.c6 {
+.c3 {
+  box-sizing: border-box;
+}
+
+.c5 {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -51,15 +51,6 @@ exports[`Storyshots Molecules | CollapsibleCard Collapsed initially 1`] = `
   display: block;
 }
 
-.c8 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #282823;
-  margin: 0;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.5;
-}
-
 .c4 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
@@ -67,6 +58,15 @@ exports[`Storyshots Molecules | CollapsibleCard Collapsed initially 1`] = `
   font-weight: 800;
   font-size: 18px;
   line-height: 1.3333333333333333;
+}
+
+.c9 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
 }
 
 .c7 {
@@ -106,7 +106,7 @@ exports[`Storyshots Molecules | CollapsibleCard Collapsed initially 1`] = `
   opacity: 1;
 }
 
-.c5 {
+.c6 {
   -webkit-transform: rotate(180deg);
   -ms-transform: rotate(180deg);
   transform: rotate(180deg);
@@ -118,7 +118,7 @@ exports[`Storyshots Molecules | CollapsibleCard Collapsed initially 1`] = `
   transition: transform 0.16s ease-out;
 }
 
-.c9 {
+.c8 {
   margin: 0;
 }
 
@@ -146,7 +146,6 @@ exports[`Storyshots Molecules | CollapsibleCard Collapsed initially 1`] = `
       >
         <h2
           className="c4"
-          type="title3"
         >
           Collapsed initially
         </h2>
@@ -157,6 +156,7 @@ exports[`Storyshots Molecules | CollapsibleCard Collapsed initially 1`] = `
         <svg
           aria-hidden="true"
           className="c5 c6"
+          collapsed={true}
           focusable="false"
           preserveAspectRatio="xMidYMid meet"
           role="presentation"
@@ -178,7 +178,6 @@ exports[`Storyshots Molecules | CollapsibleCard Collapsed initially 1`] = `
   >
     <p
       className="c8 c9"
-      type="primary"
     >
       Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
     </p>
@@ -192,10 +191,6 @@ exports[`Storyshots Molecules | CollapsibleCard Collapsible with custom componen
   box-shadow: 0 2px 2px 0 rgba(0,0,0,0.03);
 }
 
-.c3 {
-  box-sizing: border-box;
-}
-
 .c2 {
   box-sizing: border-box;
   display: -webkit-box;
@@ -223,7 +218,11 @@ exports[`Storyshots Molecules | CollapsibleCard Collapsible with custom componen
   padding-top: 0;
 }
 
-.c6 {
+.c3 {
+  box-sizing: border-box;
+}
+
+.c5 {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -237,15 +236,6 @@ exports[`Storyshots Molecules | CollapsibleCard Collapsible with custom componen
   display: block;
 }
 
-.c8 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #282823;
-  margin: 0;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.5;
-}
-
 .c4 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
@@ -253,6 +243,15 @@ exports[`Storyshots Molecules | CollapsibleCard Collapsible with custom componen
   font-weight: 800;
   font-size: 18px;
   line-height: 1.3333333333333333;
+}
+
+.c9 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
 }
 
 .c7 {
@@ -292,7 +291,7 @@ exports[`Storyshots Molecules | CollapsibleCard Collapsible with custom componen
   opacity: 0;
 }
 
-.c5 {
+.c6 {
   -webkit-transform: rodate(0);
   -ms-transform: rodate(0);
   transform: rodate(0);
@@ -304,7 +303,7 @@ exports[`Storyshots Molecules | CollapsibleCard Collapsible with custom componen
   transition: transform 0.16s ease-out;
 }
 
-.c9 {
+.c8 {
   margin: 0;
 }
 
@@ -332,7 +331,6 @@ exports[`Storyshots Molecules | CollapsibleCard Collapsible with custom componen
       >
         <h2
           className="c4"
-          type="title3"
         >
           <div>
             Custom title
@@ -345,6 +343,7 @@ exports[`Storyshots Molecules | CollapsibleCard Collapsible with custom componen
         <svg
           aria-hidden="true"
           className="c5 c6"
+          collapsed={false}
           focusable="false"
           preserveAspectRatio="xMidYMid meet"
           role="presentation"
@@ -366,7 +365,6 @@ exports[`Storyshots Molecules | CollapsibleCard Collapsible with custom componen
   >
     <p
       className="c8 c9"
-      type="primary"
     >
       Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
     </p>
@@ -380,10 +378,6 @@ exports[`Storyshots Molecules | CollapsibleCard Collapsible with onClick listene
   box-shadow: 0 2px 2px 0 rgba(0,0,0,0.03);
 }
 
-.c3 {
-  box-sizing: border-box;
-}
-
 .c2 {
   box-sizing: border-box;
   display: -webkit-box;
@@ -411,7 +405,11 @@ exports[`Storyshots Molecules | CollapsibleCard Collapsible with onClick listene
   padding-top: 0;
 }
 
-.c6 {
+.c3 {
+  box-sizing: border-box;
+}
+
+.c5 {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -425,15 +423,6 @@ exports[`Storyshots Molecules | CollapsibleCard Collapsible with onClick listene
   display: block;
 }
 
-.c8 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #282823;
-  margin: 0;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.5;
-}
-
 .c4 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
@@ -441,6 +430,15 @@ exports[`Storyshots Molecules | CollapsibleCard Collapsible with onClick listene
   font-weight: 800;
   font-size: 18px;
   line-height: 1.3333333333333333;
+}
+
+.c9 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
 }
 
 .c7 {
@@ -480,7 +478,7 @@ exports[`Storyshots Molecules | CollapsibleCard Collapsible with onClick listene
   opacity: 0;
 }
 
-.c5 {
+.c6 {
   -webkit-transform: rodate(0);
   -ms-transform: rodate(0);
   transform: rodate(0);
@@ -492,7 +490,7 @@ exports[`Storyshots Molecules | CollapsibleCard Collapsible with onClick listene
   transition: transform 0.16s ease-out;
 }
 
-.c9 {
+.c8 {
   margin: 0;
 }
 
@@ -520,7 +518,6 @@ exports[`Storyshots Molecules | CollapsibleCard Collapsible with onClick listene
       >
         <h2
           className="c4"
-          type="title3"
         >
           I've been clicked 0 times
         </h2>
@@ -531,6 +528,7 @@ exports[`Storyshots Molecules | CollapsibleCard Collapsible with onClick listene
         <svg
           aria-hidden="true"
           className="c5 c6"
+          collapsed={false}
           focusable="false"
           preserveAspectRatio="xMidYMid meet"
           role="presentation"
@@ -552,7 +550,6 @@ exports[`Storyshots Molecules | CollapsibleCard Collapsible with onClick listene
   >
     <p
       className="c8 c9"
-      type="primary"
     >
       On mobile the onClick event should fire for onTouchStart and not onClick.
     </p>
@@ -566,10 +563,6 @@ exports[`Storyshots Molecules | CollapsibleCard Default 1`] = `
   box-shadow: 0 2px 2px 0 rgba(0,0,0,0.03);
 }
 
-.c3 {
-  box-sizing: border-box;
-}
-
 .c2 {
   box-sizing: border-box;
   display: -webkit-box;
@@ -597,7 +590,11 @@ exports[`Storyshots Molecules | CollapsibleCard Default 1`] = `
   padding-top: 0;
 }
 
-.c6 {
+.c3 {
+  box-sizing: border-box;
+}
+
+.c5 {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -611,15 +608,6 @@ exports[`Storyshots Molecules | CollapsibleCard Default 1`] = `
   display: block;
 }
 
-.c8 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #282823;
-  margin: 0;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.5;
-}
-
 .c4 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
@@ -627,6 +615,15 @@ exports[`Storyshots Molecules | CollapsibleCard Default 1`] = `
   font-weight: 800;
   font-size: 18px;
   line-height: 1.3333333333333333;
+}
+
+.c9 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
 }
 
 .c7 {
@@ -666,7 +663,7 @@ exports[`Storyshots Molecules | CollapsibleCard Default 1`] = `
   opacity: 0;
 }
 
-.c5 {
+.c6 {
   -webkit-transform: rodate(0);
   -ms-transform: rodate(0);
   transform: rodate(0);
@@ -678,7 +675,7 @@ exports[`Storyshots Molecules | CollapsibleCard Default 1`] = `
   transition: transform 0.16s ease-out;
 }
 
-.c9 {
+.c8 {
   margin: 0;
 }
 
@@ -706,7 +703,6 @@ exports[`Storyshots Molecules | CollapsibleCard Default 1`] = `
       >
         <h2
           className="c4"
-          type="title3"
         >
           Collapsible
         </h2>
@@ -717,6 +713,7 @@ exports[`Storyshots Molecules | CollapsibleCard Default 1`] = `
         <svg
           aria-hidden="true"
           className="c5 c6"
+          collapsed={false}
           focusable="false"
           preserveAspectRatio="xMidYMid meet"
           role="presentation"
@@ -738,7 +735,6 @@ exports[`Storyshots Molecules | CollapsibleCard Default 1`] = `
   >
     <p
       className="c8 c9"
-      type="primary"
     >
       Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
     </p>

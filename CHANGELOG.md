@@ -1,3 +1,85 @@
+## [2.17.3](https://github.com/nordnet/ui/compare/v2.17.2...v2.17.3) (2020-02-10)
+
+
+### Bug Fixes
+
+* exposing useOnClickOutside hook ([7f8eab5](https://github.com/nordnet/ui/commit/7f8eab5))
+
+## [2.17.2](https://github.com/nordnet/ui/compare/v2.17.1...v2.17.2) (2020-02-07)
+
+
+### Bug Fixes
+
+* 🐛 remove empty space left by hidden label ([0bad970](https://github.com/nordnet/ui/commit/0bad970))
+* 🐛 remove empty space left by hidden label in firefox ([595052e](https://github.com/nordnet/ui/commit/595052e))
+
+## [2.17.1](https://github.com/nordnet/ui/compare/v2.17.0...v2.17.1) (2020-02-06)
+
+
+### Bug Fixes
+
+* make modal header and footer not grow ([7fd680f](https://github.com/nordnet/ui/commit/7fd680f))
+
+# [2.17.0](https://github.com/nordnet/ui/compare/v2.16.0...v2.17.0) (2020-02-06)
+
+
+### Features
+
+* 🎸 add possibility to unset flexbox size values ([f2994da](https://github.com/nordnet/ui/commit/f2994da))
+* 🎸 add social media icons ([aca689c](https://github.com/nordnet/ui/commit/aca689c))
+
+# [2.16.0](https://github.com/nordnet/ui/compare/v2.15.1...v2.16.0) (2020-02-04)
+
+
+### Bug Fixes
+
+* dont show fade initially ([eb89703](https://github.com/nordnet/ui/commit/eb89703))
+* update snaps ([e013439](https://github.com/nordnet/ui/commit/e013439))
+
+
+### Features
+
+* fadescroll with ratio instead of transition ([2147ebf](https://github.com/nordnet/ui/commit/2147ebf))
+
+## [2.15.1](https://github.com/nordnet/ui/compare/v2.15.0...v2.15.1) (2020-02-04)
+
+
+### Bug Fixes
+
+* **typography:** support 'as' without props warning ([b817e86](https://github.com/nordnet/ui/commit/b817e86))
+* **typography:** updated snaps ([7377575](https://github.com/nordnet/ui/commit/7377575))
+
+# [2.15.0](https://github.com/nordnet/ui/compare/v2.14.3...v2.15.0) (2020-02-04)
+
+
+### Features
+
+* **input:** exposing type on input.text (email, password, etc) ([4f99b82](https://github.com/nordnet/ui/commit/4f99b82))
+
+## [2.14.3](https://github.com/nordnet/ui/compare/v2.14.2...v2.14.3) (2020-01-31)
+
+
+### Bug Fixes
+
+* add forwardrefs to iconbase and questionmark icon ([446b578](https://github.com/nordnet/ui/commit/446b578))
+* update snaps ([7275768](https://github.com/nordnet/ui/commit/7275768))
+* use jest-styled-components ([27d8871](https://github.com/nordnet/ui/commit/27d8871))
+
+## [2.14.2](https://github.com/nordnet/ui/compare/v2.14.1...v2.14.2) (2020-01-29)
+
+
+### Bug Fixes
+
+* modal max height and make fadedscroll friendly ([15076e9](https://github.com/nordnet/ui/commit/15076e9))
+* update snaps ([3156936](https://github.com/nordnet/ui/commit/3156936))
+
+## [2.14.1](https://github.com/nordnet/ui/compare/v2.14.0...v2.14.1) (2020-01-27)
+
+
+### Bug Fixes
+
+* 🐛 upgrade to styled-components 5 ([9f98040](https://github.com/nordnet/ui/commit/9f98040))
+
 # [2.14.0](https://github.com/nordnet/ui/compare/v2.13.5...v2.14.0) (2020-01-24)
 
 

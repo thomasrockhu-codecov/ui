@@ -78,10 +78,6 @@ exports[`Storyshots Atoms | TabTitle Default 1`] = `
 `;
 
 exports[`Storyshots Atoms | TabTitle Integration: with Flexbox 1`] = `
-.c1 {
-  box-sizing: border-box;
-}
-
 .c0 {
   box-sizing: border-box;
   display: -webkit-box;
@@ -91,6 +87,10 @@ exports[`Storyshots Atoms | TabTitle Integration: with Flexbox 1`] = `
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
+}
+
+.c1 {
+  box-sizing: border-box;
 }
 
 .c3 {

@@ -305,8 +305,16 @@ exports[`Storyshots Molecules | FormField Required 1`] = `
 `;
 
 exports[`Storyshots Molecules | FormField With group of items 1`] = `
-.c7 {
+.c2 {
   box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .c6 {
@@ -328,25 +336,17 @@ exports[`Storyshots Molecules | FormField With group of items 1`] = `
   padding-top: 0;
 }
 
-.c2 {
+.c7 {
   box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
 }
 
-.c3 {
+.c4 {
   text-overflow: ellipsis;
   white-space: nowrap;
   cursor: pointer;
 }
 
-.c4 {
+.c3 {
   box-sizing: border-box;
   color: inherit;
   display: table;
@@ -386,7 +386,7 @@ exports[`Storyshots Molecules | FormField With group of items 1`] = `
       className="c2"
     >
       <legend
-        className="c3 c4"
+        className="NormalizedLegend__Legend-sc-1svgb20-0 c3 c4"
         hidden={false}
       >
         <span
@@ -449,7 +449,7 @@ exports[`Storyshots Molecules | FormField With label tooltip 1`] = `
   cursor: pointer;
 }
 
-.c5 {
+.c4 {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -481,7 +481,7 @@ exports[`Storyshots Molecules | FormField With label tooltip 1`] = `
   display: inline-block;
 }
 
-.c4 {
+.c5 {
   margin-left: 4px;
 }
 

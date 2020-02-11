@@ -124,7 +124,7 @@ Array [
             className="c4"
           >
             <textarea
-              className="c5"
+              className="NormalizedTextarea__Textarea-i5on9-0 c5"
               onBlur={[Function]}
               onChange={[Function]}
               onClick={[Function]}
@@ -263,7 +263,7 @@ exports[`Storyshots Molecules | Input / Textarea Default 1`] = `
           className="c4"
         >
           <textarea
-            className="c5"
+            className="NormalizedTextarea__Textarea-i5on9-0 c5"
             placeholder="Placeholder"
             rows={3}
           />
@@ -390,7 +390,7 @@ exports[`Storyshots Molecules | Input / Textarea Disabled 1`] = `
           className="c4"
         >
           <textarea
-            className="c5"
+            className="NormalizedTextarea__Textarea-i5on9-0 c5"
             disabled={true}
             placeholder="Placeholder"
             rows={3}
@@ -602,7 +602,7 @@ exports[`Storyshots Molecules | Input / Textarea Edge cases 1`] = `
                 className="c7"
               >
                 <textarea
-                  className="c8"
+                  className="NormalizedTextarea__Textarea-i5on9-0 c8"
                   placeholder="If placeholder goes too long though, it probably should be truncated into ellipsis, right?"
                   rows={3}
                 />
@@ -650,7 +650,7 @@ exports[`Storyshots Molecules | Input / Textarea Edge cases 1`] = `
                 className="c7"
               >
                 <textarea
-                  className="c8"
+                  className="NormalizedTextarea__Textarea-i5on9-0 c8"
                   placeholder=""
                   rows={3}
                 />
@@ -810,7 +810,7 @@ exports[`Storyshots Molecules | Input / Textarea Error if empty text 1`] = `
         >
           <textarea
             aria-invalid={true}
-            className="c5"
+            className="NormalizedTextarea__Textarea-i5on9-0 c5"
             onChange={[Function]}
             placeholder="This is a placeholder"
             rows={3}
@@ -963,7 +963,7 @@ exports[`Storyshots Molecules | Input / Textarea Extra info below 1`] = `
           className="c4"
         >
           <textarea
-            className="c5"
+            className="NormalizedTextarea__Textarea-i5on9-0 c5"
             placeholder="Placeholder"
             rows={3}
           />
@@ -1120,7 +1120,7 @@ exports[`Storyshots Molecules | Input / Textarea Extra info with error 1`] = `
         >
           <textarea
             aria-invalid={true}
-            className="c5"
+            className="NormalizedTextarea__Textarea-i5on9-0 c5"
             onChange={[Function]}
             placeholder="This is a placeholder"
             rows={3}
@@ -1265,7 +1265,7 @@ exports[`Storyshots Molecules | Input / Textarea Full width 1`] = `
           className="c4"
         >
           <textarea
-            className="c5"
+            className="NormalizedTextarea__Textarea-i5on9-0 c5"
             placeholder="Placeholder"
             rows={3}
           />
@@ -1278,18 +1278,6 @@ exports[`Storyshots Molecules | Input / Textarea Full width 1`] = `
 
 exports[`Storyshots Molecules | Input / Textarea Hidden label 1`] = `
 .c3 {
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.c4 {
   position: absolute;
   height: 1px;
   width: 1px;
@@ -1313,7 +1301,7 @@ exports[`Storyshots Molecules | Input / Textarea Hidden label 1`] = `
   line-height: 1.4285714285714286;
 }
 
-.c5 {
+.c4 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
   margin: 0;
@@ -1327,7 +1315,7 @@ exports[`Storyshots Molecules | Input / Textarea Hidden label 1`] = `
   display: inline-block;
 }
 
-.c6 {
+.c5 {
   font-family: inherit;
   font-size: 100%;
   line-height: 1.15;
@@ -1345,41 +1333,41 @@ exports[`Storyshots Molecules | Input / Textarea Hidden label 1`] = `
   background-color: #FFFFFF;
 }
 
-.c6:hover {
+.c5:hover {
   border-color: #4B4B46;
 }
 
-.c6:focus {
+.c5:focus {
   border-color: #0046FF;
 }
 
-.c6::-moz-placeholder,
-.c6:-ms-input-placeholder,
-.c6::-webkit-input-placeholder {
+.c5::-moz-placeholder,
+.c5:-ms-input-placeholder,
+.c5::-webkit-input-placeholder {
   height: inherit;
   line-height: inherit;
   color: #6E6E69;
 }
 
-.c6::-moz-placeholder,
-.c6:-ms-input-placeholder,
-.c6::-moz-placeholder {
+.c5::-moz-placeholder,
+.c5:-ms-input-placeholder,
+.c5::-moz-placeholder {
   height: inherit;
   line-height: inherit;
   color: #6E6E69;
 }
 
-.c6::-moz-placeholder,
-.c6:-ms-input-placeholder,
-.c6:-ms-input-placeholder {
+.c5::-moz-placeholder,
+.c5:-ms-input-placeholder,
+.c5:-ms-input-placeholder {
   height: inherit;
   line-height: inherit;
   color: #6E6E69;
 }
 
-.c6::-moz-placeholder,
-.c6:-ms-input-placeholder,
-.c6::placeholder {
+.c5::-moz-placeholder,
+.c5:-ms-input-placeholder,
+.c5::placeholder {
   height: inherit;
   line-height: inherit;
   color: #6E6E69;
@@ -1398,18 +1386,14 @@ exports[`Storyshots Molecules | Input / Textarea Hidden label 1`] = `
       <div
         className="c3"
       >
-        <div
-          className="c4"
-        >
-          Label 
-        </div>
+        Label 
       </div>
       <div>
         <span
-          className="c5"
+          className="c4"
         >
           <textarea
-            className="c6"
+            className="NormalizedTextarea__Textarea-i5on9-0 c5"
             placeholder="Placeholder"
             rows={3}
           />
@@ -1607,6 +1591,10 @@ Array [
   align-self: center;
 }
 
+@media (min-width:760px) {
+
+}
+
 <div
     className="c0"
     direction="column"
@@ -1641,7 +1629,7 @@ Array [
                   className="c7"
                 >
                   <textarea
-                    className="c8"
+                    className="NormalizedTextarea__Textarea-i5on9-0 c8"
                     placeholder="Placeholder"
                     required={true}
                     rows={3}
@@ -1683,7 +1671,7 @@ Array [
                   className="c7"
                 >
                   <textarea
-                    className="c8"
+                    className="NormalizedTextarea__Textarea-i5on9-0 c8"
                     placeholder="Placeholder"
                     required={true}
                     rows={3}
@@ -1698,6 +1686,10 @@ Array [
   </div>,
   .c0 {
   margin-bottom: 32px;
+}
+
+@media (min-width:760px) {
+
 }
 
 <div
@@ -1827,7 +1819,7 @@ exports[`Storyshots Molecules | Input / Textarea Specific width 1`] = `
           className="c4"
         >
           <textarea
-            className="c5"
+            className="NormalizedTextarea__Textarea-i5on9-0 c5"
             placeholder="Placeholder"
             rows={3}
           />
@@ -1958,7 +1950,7 @@ exports[`Storyshots Molecules | Input / Textarea Success 1`] = `
           className="c4"
         >
           <textarea
-            className="c5"
+            className="NormalizedTextarea__Textarea-i5on9-0 c5"
             placeholder="Placeholder"
             rows={3}
           />
@@ -2090,7 +2082,7 @@ exports[`Storyshots Molecules | Input / Textarea With auto focus 1`] = `
         >
           <textarea
             autoFocus={true}
-            className="c5"
+            className="NormalizedTextarea__Textarea-i5on9-0 c5"
             placeholder="Placeholder"
             rows={3}
           />
@@ -2221,7 +2213,7 @@ exports[`Storyshots Molecules | Input / Textarea With default value (Uncontrolle
           className="c4"
         >
           <textarea
-            className="c5"
+            className="NormalizedTextarea__Textarea-i5on9-0 c5"
             defaultValue="Some predefined text"
             placeholder="Placeholder"
             rows={3}
@@ -2252,7 +2244,7 @@ exports[`Storyshots Molecules | Input / Textarea With tooltip as label addon 1`]
   cursor: pointer;
 }
 
-.c5 {
+.c4 {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -2293,7 +2285,7 @@ exports[`Storyshots Molecules | Input / Textarea With tooltip as label addon 1`]
   display: inline-block;
 }
 
-.c4 {
+.c5 {
   margin-left: 4px;
 }
 
@@ -2403,7 +2395,7 @@ exports[`Storyshots Molecules | Input / Textarea With tooltip as label addon 1`]
           className="c7"
         >
           <textarea
-            className="c8"
+            className="NormalizedTextarea__Textarea-i5on9-0 c8"
             placeholder="Placeholder"
             rows={3}
           />
@@ -2534,7 +2526,7 @@ exports[`Storyshots Molecules | Input / Textarea With value (Controlled behaviou
           className="c4"
         >
           <textarea
-            className="c5"
+            className="NormalizedTextarea__Textarea-i5on9-0 c5"
             placeholder="Placeholder"
             rows={3}
             value="Some predefined text"

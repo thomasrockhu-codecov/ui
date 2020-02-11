@@ -131,7 +131,7 @@ Array [
             className="c5"
           >
             <input
-              className="c6"
+              className="NormalizedInput__Input-sc-1m4kmh9-0 c6"
               onBlur={[Function]}
               onChange={[Function]}
               onClick={[Function]}
@@ -150,8 +150,259 @@ Array [
 ]
 `;
 
+exports[`Storyshots Molecules | Input / Text Alternating Types 1`] = `
+.c3 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c1 {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.c2 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #6E6E69;
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c4 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c0 {
+  width: 200px;
+  display: inline-block;
+}
+
+.c6 {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  overflow: visible;
+  border: 0;
+  width: 100%;
+  padding: 8px;
+  margin: 0;
+  line-height: inherit;
+  box-sizing: border-box;
+  height: 40px;
+  outline: none;
+  border: 1px solid #BCBCB6;
+  position: relative;
+  background-color: #FFFFFF;
+}
+
+.c6:hover {
+  border-color: #4B4B46;
+}
+
+.c6:focus {
+  border-color: #0046FF;
+}
+
+.c6::-moz-placeholder,
+.c6:-ms-input-placeholder,
+.c6::-webkit-input-placeholder {
+  height: inherit;
+  line-height: inherit;
+  color: #6E6E69;
+}
+
+.c6::-moz-placeholder,
+.c6:-ms-input-placeholder,
+.c6::-moz-placeholder {
+  height: inherit;
+  line-height: inherit;
+  color: #6E6E69;
+}
+
+.c6::-moz-placeholder,
+.c6:-ms-input-placeholder,
+.c6:-ms-input-placeholder {
+  height: inherit;
+  line-height: inherit;
+  color: #6E6E69;
+}
+
+.c6::-moz-placeholder,
+.c6:-ms-input-placeholder,
+.c6::placeholder {
+  height: inherit;
+  line-height: inherit;
+  color: #6E6E69;
+}
+
+.c5 {
+  position: relative;
+}
+
+<form
+  onSubmit={[Function]}
+>
+  <div>
+    <div
+      className="c0"
+    >
+      <label
+        className="c1"
+        hidden={false}
+      >
+        <span
+          className="c2"
+        >
+          <div
+            className="c3"
+          >
+            email 
+          </div>
+          <span
+            className="c4"
+          >
+            <div
+              className="c5"
+            >
+              <input
+                className="NormalizedInput__Input-sc-1m4kmh9-0 c6"
+                type="email"
+              />
+            </div>
+          </span>
+        </span>
+      </label>
+    </div>
+  </div>
+  <div>
+    <div
+      className="c0"
+    >
+      <label
+        className="c1"
+        hidden={false}
+      >
+        <span
+          className="c2"
+        >
+          <div
+            className="c3"
+          >
+            password 
+          </div>
+          <span
+            className="c4"
+          >
+            <div
+              className="c5"
+            >
+              <input
+                className="NormalizedInput__Input-sc-1m4kmh9-0 c6"
+                type="password"
+              />
+            </div>
+          </span>
+        </span>
+      </label>
+    </div>
+  </div>
+  <div>
+    <div
+      className="c0"
+    >
+      <label
+        className="c1"
+        hidden={false}
+      >
+        <span
+          className="c2"
+        >
+          <div
+            className="c3"
+          >
+            search 
+          </div>
+          <span
+            className="c4"
+          >
+            <div
+              className="c5"
+            >
+              <input
+                className="NormalizedInput__Input-sc-1m4kmh9-0 c6"
+                type="search"
+              />
+            </div>
+          </span>
+        </span>
+      </label>
+    </div>
+  </div>
+  <div>
+    <div
+      className="c0"
+    >
+      <label
+        className="c1"
+        hidden={false}
+      >
+        <span
+          className="c2"
+        >
+          <div
+            className="c3"
+          >
+            search 
+          </div>
+          <span
+            className="c4"
+          >
+            <div
+              className="c5"
+            >
+              <input
+                className="NormalizedInput__Input-sc-1m4kmh9-0 c6"
+                type="submit"
+              />
+            </div>
+          </span>
+        </span>
+      </label>
+    </div>
+  </div>
+</form>
+`;
+
 exports[`Storyshots Molecules | Input / Text Both addons 1`] = `
-.c8 {
+.c3 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c7 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -161,18 +412,6 @@ exports[`Storyshots Molecules | Input / Text Both addons 1`] = `
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.c3 {
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -287,7 +526,7 @@ exports[`Storyshots Molecules | Input / Text Both addons 1`] = `
   position: relative;
 }
 
-.c7 {
+.c8 {
   width: 32px;
   top: 0;
   height: 100%;
@@ -329,7 +568,7 @@ exports[`Storyshots Molecules | Input / Text Both addons 1`] = `
           className="c5"
         >
           <input
-            className="c6"
+            className="NormalizedInput__Input-sc-1m4kmh9-0 c6"
             placeholder="Placeholder"
             type="text"
           />
@@ -352,7 +591,7 @@ exports[`Storyshots Molecules | Input / Text Both addons 1`] = `
             </svg>
           </div>
           <div
-            className="c10 c8"
+            className="c7 c10"
             position="right"
           >
             SEK
@@ -491,7 +730,7 @@ exports[`Storyshots Molecules | Input / Text Default 1`] = `
           className="c5"
         >
           <input
-            className="c6"
+            className="NormalizedInput__Input-sc-1m4kmh9-0 c6"
             placeholder="Placeholder"
             type="text"
           />
@@ -503,7 +742,19 @@ exports[`Storyshots Molecules | Input / Text Default 1`] = `
 `;
 
 exports[`Storyshots Molecules | Input / Text Disabled +addon 1`] = `
-.c8 {
+.c3 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c7 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -513,18 +764,6 @@ exports[`Storyshots Molecules | Input / Text Disabled +addon 1`] = `
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.c3 {
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -635,7 +874,7 @@ exports[`Storyshots Molecules | Input / Text Disabled +addon 1`] = `
   position: relative;
 }
 
-.c7 {
+.c8 {
   width: 32px;
   top: 0;
   height: 100%;
@@ -677,7 +916,7 @@ exports[`Storyshots Molecules | Input / Text Disabled +addon 1`] = `
           className="c5"
         >
           <input
-            className="c6"
+            className="NormalizedInput__Input-sc-1m4kmh9-0 c6"
             disabled={true}
             placeholder="Placeholder"
             type="text"
@@ -701,7 +940,7 @@ exports[`Storyshots Molecules | Input / Text Disabled +addon 1`] = `
             </svg>
           </div>
           <div
-            className="c10 c8"
+            className="c7 c10"
             position="right"
           >
             SEK
@@ -836,7 +1075,7 @@ exports[`Storyshots Molecules | Input / Text Disabled 1`] = `
           className="c5"
         >
           <input
-            className="c6"
+            className="NormalizedInput__Input-sc-1m4kmh9-0 c6"
             disabled={true}
             placeholder="Placeholder"
             type="text"
@@ -1055,7 +1294,7 @@ exports[`Storyshots Molecules | Input / Text Edge cases 1`] = `
                 className="c8"
               >
                 <input
-                  className="c9"
+                  className="NormalizedInput__Input-sc-1m4kmh9-0 c9"
                   placeholder="If placeholder goes too long though, it probably should be truncated into ellipsis, right?"
                   type="text"
                 />
@@ -1105,7 +1344,7 @@ exports[`Storyshots Molecules | Input / Text Edge cases 1`] = `
                 className="c8"
               >
                 <input
-                  className="c9"
+                  className="NormalizedInput__Input-sc-1m4kmh9-0 c9"
                   placeholder=""
                   type="text"
                 />
@@ -1272,7 +1511,7 @@ exports[`Storyshots Molecules | Input / Text Error if empty text 1`] = `
         >
           <input
             aria-invalid={true}
-            className="c6"
+            className="NormalizedInput__Input-sc-1m4kmh9-0 c6"
             onChange={[Function]}
             placeholder="This is a placeholder"
             type="text"
@@ -1432,7 +1671,7 @@ exports[`Storyshots Molecules | Input / Text Extra info below 1`] = `
           className="c5"
         >
           <input
-            className="c6"
+            className="NormalizedInput__Input-sc-1m4kmh9-0 c6"
             placeholder="Placeholder"
             type="text"
           />
@@ -1596,7 +1835,7 @@ exports[`Storyshots Molecules | Input / Text Extra info with error 1`] = `
         >
           <input
             aria-invalid={true}
-            className="c6"
+            className="NormalizedInput__Input-sc-1m4kmh9-0 c6"
             onChange={[Function]}
             placeholder="This is a placeholder"
             type="text"
@@ -1651,7 +1890,19 @@ Array [
       Full width inputs
     </span>
   </div>,
-  .c12 {
+  .c6 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c11 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -1661,18 +1912,6 @@ Array [
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.c6 {
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -1905,7 +2144,7 @@ Array [
   position: relative;
 }
 
-.c11 {
+.c12 {
   width: 32px;
   top: 0;
   height: 100%;
@@ -1982,6 +2221,10 @@ Array [
   align-self: center;
 }
 
+@media (min-width:760px) {
+
+}
+
 <div
     className="c0"
     direction="column"
@@ -2019,7 +2262,7 @@ Array [
                   className="c8"
                 >
                   <input
-                    className="c9"
+                    className="NormalizedInput__Input-sc-1m4kmh9-0 c9"
                     placeholder="Placeholder"
                     type="text"
                   />
@@ -2063,7 +2306,7 @@ Array [
                   className="c8"
                 >
                   <input
-                    className="c10"
+                    className="NormalizedInput__Input-sc-1m4kmh9-0 c10"
                     placeholder="Placeholder"
                     type="text"
                   />
@@ -2125,12 +2368,12 @@ Array [
                   className="c8"
                 >
                   <input
-                    className="c14"
+                    className="NormalizedInput__Input-sc-1m4kmh9-0 c14"
                     placeholder="Placeholder"
                     type="text"
                   />
                   <div
-                    className="c15 c12"
+                    className="c11 c15"
                     position="right"
                   >
                     SEK
@@ -2147,6 +2390,10 @@ Array [
   margin-bottom: 32px;
 }
 
+@media (min-width:760px) {
+
+}
+
 <div
     className="c0"
   />,
@@ -2155,18 +2402,6 @@ Array [
 
 exports[`Storyshots Molecules | Input / Text Hidden label 1`] = `
 .c3 {
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.c4 {
   position: absolute;
   height: 1px;
   width: 1px;
@@ -2190,7 +2425,7 @@ exports[`Storyshots Molecules | Input / Text Hidden label 1`] = `
   line-height: 1.4285714285714286;
 }
 
-.c5 {
+.c4 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
   margin: 0;
@@ -2204,7 +2439,7 @@ exports[`Storyshots Molecules | Input / Text Hidden label 1`] = `
   display: inline-block;
 }
 
-.c7 {
+.c6 {
   font-family: inherit;
   font-size: 100%;
   line-height: 1.15;
@@ -2223,47 +2458,47 @@ exports[`Storyshots Molecules | Input / Text Hidden label 1`] = `
   background-color: #FFFFFF;
 }
 
-.c7:hover {
+.c6:hover {
   border-color: #4B4B46;
 }
 
-.c7:focus {
+.c6:focus {
   border-color: #0046FF;
 }
 
-.c7::-moz-placeholder,
-.c7:-ms-input-placeholder,
-.c7::-webkit-input-placeholder {
+.c6::-moz-placeholder,
+.c6:-ms-input-placeholder,
+.c6::-webkit-input-placeholder {
   height: inherit;
   line-height: inherit;
   color: #6E6E69;
 }
 
-.c7::-moz-placeholder,
-.c7:-ms-input-placeholder,
-.c7::-moz-placeholder {
+.c6::-moz-placeholder,
+.c6:-ms-input-placeholder,
+.c6::-moz-placeholder {
   height: inherit;
   line-height: inherit;
   color: #6E6E69;
 }
 
-.c7::-moz-placeholder,
-.c7:-ms-input-placeholder,
-.c7:-ms-input-placeholder {
+.c6::-moz-placeholder,
+.c6:-ms-input-placeholder,
+.c6:-ms-input-placeholder {
   height: inherit;
   line-height: inherit;
   color: #6E6E69;
 }
 
-.c7::-moz-placeholder,
-.c7:-ms-input-placeholder,
-.c7::placeholder {
+.c6::-moz-placeholder,
+.c6:-ms-input-placeholder,
+.c6::placeholder {
   height: inherit;
   line-height: inherit;
   color: #6E6E69;
 }
 
-.c6 {
+.c5 {
   position: relative;
 }
 
@@ -2280,20 +2515,16 @@ exports[`Storyshots Molecules | Input / Text Hidden label 1`] = `
       <div
         className="c3"
       >
-        <div
-          className="c4"
-        >
-          Label 
-        </div>
+        Label 
       </div>
       <span
-        className="c5"
+        className="c4"
       >
         <div
-          className="c6"
+          className="c5"
         >
           <input
-            className="c7"
+            className="NormalizedInput__Input-sc-1m4kmh9-0 c6"
             placeholder="Placeholder"
             type="text"
           />
@@ -2305,7 +2536,19 @@ exports[`Storyshots Molecules | Input / Text Hidden label 1`] = `
 `;
 
 exports[`Storyshots Molecules | Input / Text Left addon 1`] = `
-.c8 {
+.c3 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c7 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -2315,18 +2558,6 @@ exports[`Storyshots Molecules | Input / Text Left addon 1`] = `
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.c3 {
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -2440,7 +2671,7 @@ exports[`Storyshots Molecules | Input / Text Left addon 1`] = `
   position: relative;
 }
 
-.c7 {
+.c8 {
   width: 32px;
   top: 0;
   height: 100%;
@@ -2472,7 +2703,7 @@ exports[`Storyshots Molecules | Input / Text Left addon 1`] = `
           className="c5"
         >
           <input
-            className="c6"
+            className="NormalizedInput__Input-sc-1m4kmh9-0 c6"
             placeholder="Placeholder"
             type="text"
           />
@@ -2693,6 +2924,10 @@ Array [
   align-self: center;
 }
 
+@media (min-width:760px) {
+
+}
+
 <div
     className="c0"
     direction="column"
@@ -2729,7 +2964,7 @@ Array [
                   className="c8"
                 >
                   <input
-                    className="c9"
+                    className="NormalizedInput__Input-sc-1m4kmh9-0 c9"
                     placeholder="Placeholder"
                     required={true}
                     type="text"
@@ -2773,7 +3008,7 @@ Array [
                   className="c8"
                 >
                   <input
-                    className="c9"
+                    className="NormalizedInput__Input-sc-1m4kmh9-0 c9"
                     placeholder="Placeholder"
                     required={true}
                     type="text"
@@ -2790,6 +3025,10 @@ Array [
   margin-bottom: 32px;
 }
 
+@media (min-width:760px) {
+
+}
+
 <div
     className="c0"
   />,
@@ -2797,7 +3036,19 @@ Array [
 `;
 
 exports[`Storyshots Molecules | Input / Text Right addon 1`] = `
-.c8 {
+.c3 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c7 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -2807,18 +3058,6 @@ exports[`Storyshots Molecules | Input / Text Right addon 1`] = `
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.c3 {
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -2918,7 +3157,7 @@ exports[`Storyshots Molecules | Input / Text Right addon 1`] = `
   position: relative;
 }
 
-.c7 {
+.c8 {
   width: 32px;
   top: 0;
   height: 100%;
@@ -2950,7 +3189,7 @@ exports[`Storyshots Molecules | Input / Text Right addon 1`] = `
           className="c5"
         >
           <input
-            className="c6"
+            className="NormalizedInput__Input-sc-1m4kmh9-0 c6"
             placeholder="Placeholder"
             type="text"
           />
@@ -2968,18 +3207,6 @@ exports[`Storyshots Molecules | Input / Text Right addon 1`] = `
 `;
 
 exports[`Storyshots Molecules | Input / Text Simple login form 1`] = `
-.c6 {
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
 .c0 {
   box-sizing: border-box;
   display: -webkit-box;
@@ -3019,6 +3246,18 @@ exports[`Storyshots Molecules | Input / Text Simple login form 1`] = `
   -webkit-flex-basis: 50%;
   -ms-flex-preferred-size: 50%;
   flex-basis: 50%;
+}
+
+.c6 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .c14 {
@@ -3070,13 +3309,13 @@ exports[`Storyshots Molecules | Input / Text Simple login form 1`] = `
   line-height: 1.4285714285714286;
 }
 
-.c16 {
+.c10 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: inherit;
+  color: #6E6E69;
   margin: 0;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.3333333333333333;
 }
 
 .c12 {
@@ -3088,13 +3327,13 @@ exports[`Storyshots Molecules | Input / Text Simple login form 1`] = `
   line-height: 1.3333333333333333;
 }
 
-.c10 {
+.c16 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #6E6E69;
+  color: inherit;
   margin: 0;
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 1.3333333333333333;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
 }
 
 .c15 {
@@ -3328,7 +3567,7 @@ exports[`Storyshots Molecules | Input / Text Simple login form 1`] = `
                 className="c8"
               >
                 <input
-                  className="c9"
+                  className="NormalizedInput__Input-sc-1m4kmh9-0 c9"
                   placeholder="Username"
                   type="text"
                 />
@@ -3372,7 +3611,7 @@ exports[`Storyshots Molecules | Input / Text Simple login form 1`] = `
               >
                 <input
                   aria-invalid={true}
-                  className="c11"
+                  className="NormalizedInput__Input-sc-1m4kmh9-0 c11"
                   placeholder="Password"
                   type="text"
                 />
@@ -3399,7 +3638,7 @@ exports[`Storyshots Molecules | Input / Text Simple login form 1`] = `
     className="c14"
   >
     <button
-      className="c15"
+      className="NormalizedButton__Button-ey7f5x-0 c15"
       onClick={[Function]}
       type="button"
     >
@@ -3446,7 +3685,19 @@ Array [
       Size = "s"
     </span>
   </div>,
-  .c16 {
+  .c6 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c15 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -3456,18 +3707,6 @@ Array [
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.c6 {
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -3782,7 +4021,7 @@ Array [
   position: relative;
 }
 
-.c15 {
+.c16 {
   width: 32px;
   top: 0;
   height: 100%;
@@ -3859,6 +4098,10 @@ Array [
   align-self: center;
 }
 
+@media (min-width:760px) {
+
+}
+
 <div
     className="c0"
     direction="column"
@@ -3895,7 +4138,7 @@ Array [
                   className="c8"
                 >
                   <input
-                    className="c9"
+                    className="NormalizedInput__Input-sc-1m4kmh9-0 c9"
                     placeholder="Placeholder"
                     type="text"
                   />
@@ -3939,7 +4182,7 @@ Array [
                   className="c8"
                 >
                   <input
-                    className="c9"
+                    className="NormalizedInput__Input-sc-1m4kmh9-0 c9"
                     placeholder="Placeholder"
                     type="text"
                   />
@@ -3983,7 +4226,7 @@ Array [
                 >
                   <input
                     aria-invalid={true}
-                    className="c11"
+                    className="NormalizedInput__Input-sc-1m4kmh9-0 c11"
                     placeholder="Placeholder"
                     type="text"
                   />
@@ -4038,7 +4281,7 @@ Array [
                   className="c8"
                 >
                   <input
-                    className="c14"
+                    className="NormalizedInput__Input-sc-1m4kmh9-0 c14"
                     placeholder="Placeholder"
                     type="text"
                   />
@@ -4099,12 +4342,12 @@ Array [
                   className="c8"
                 >
                   <input
-                    className="c18"
+                    className="NormalizedInput__Input-sc-1m4kmh9-0 c18"
                     placeholder="Placeholder"
                     type="text"
                   />
                   <div
-                    className="c19 c16"
+                    className="c15 c19"
                     position="right"
                   >
                     SEK
@@ -4119,6 +4362,10 @@ Array [
   </div>,
   .c0 {
   margin-bottom: 32px;
+}
+
+@media (min-width:760px) {
+
 }
 
 <div
@@ -4254,7 +4501,7 @@ exports[`Storyshots Molecules | Input / Text Success 1`] = `
           className="c5"
         >
           <input
-            className="c6"
+            className="NormalizedInput__Input-sc-1m4kmh9-0 c6"
             placeholder="Placeholder"
             type="text"
           />
@@ -4393,7 +4640,7 @@ exports[`Storyshots Molecules | Input / Text With auto focus 1`] = `
         >
           <input
             autoFocus={true}
-            className="c6"
+            className="NormalizedInput__Input-sc-1m4kmh9-0 c6"
             placeholder="Placeholder"
             type="text"
           />
@@ -4531,7 +4778,7 @@ exports[`Storyshots Molecules | Input / Text With default value (Uncontrolled be
           className="c5"
         >
           <input
-            className="c6"
+            className="NormalizedInput__Input-sc-1m4kmh9-0 c6"
             defaultValue="Some predefined text"
             placeholder="Placeholder"
             type="text"
@@ -4670,7 +4917,7 @@ exports[`Storyshots Molecules | Input / Text With maxLength 1`] = `
           className="c5"
         >
           <input
-            className="c6"
+            className="NormalizedInput__Input-sc-1m4kmh9-0 c6"
             maxLength={3}
             placeholder="Placeholder"
             type="text"
@@ -4701,7 +4948,7 @@ exports[`Storyshots Molecules | Input / Text With tooltip as label addon 1`] = `
   cursor: pointer;
 }
 
-.c5 {
+.c4 {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -4742,7 +4989,7 @@ exports[`Storyshots Molecules | Input / Text With tooltip as label addon 1`] = `
   display: inline-block;
 }
 
-.c4 {
+.c5 {
   margin-left: 4px;
 }
 
@@ -4859,7 +5106,7 @@ exports[`Storyshots Molecules | Input / Text With tooltip as label addon 1`] = `
           className="c8"
         >
           <input
-            className="c9"
+            className="NormalizedInput__Input-sc-1m4kmh9-0 c9"
             placeholder="Placeholder"
             type="text"
           />
@@ -4997,7 +5244,7 @@ exports[`Storyshots Molecules | Input / Text With value (Controlled behaviour) 1
           className="c5"
         >
           <input
-            className="c6"
+            className="NormalizedInput__Input-sc-1m4kmh9-0 c6"
             placeholder="Placeholder"
             type="text"
             value="Some predefined text"

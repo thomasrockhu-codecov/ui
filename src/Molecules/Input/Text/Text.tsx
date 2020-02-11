@@ -56,7 +56,9 @@ export const placeholderNormalizaion = css`
   }
 `;
 
-const Input = styled(NormalizedElements.Input).attrs({ type: 'text' })<Partial<Props>>`
+const Input = styled(NormalizedElements.Input).attrs(p => ({ type: p.type || 'text' }))<
+  Partial<Props>
+>`
   border: 0;
   width: 100%;
   padding: ${p => p.theme.spacing.unit(2)}px;
@@ -121,6 +123,7 @@ const TextComponent = React.forwardRef<HTMLInputElement, Props>((props, ref) => 
     success,
     value,
     visuallyEmphasiseRequired,
+    type,
   } = props;
 
   return (
@@ -155,6 +158,7 @@ const TextComponent = React.forwardRef<HTMLInputElement, Props>((props, ref) => 
               size,
               success,
               value,
+              type,
               ref,
             }}
             {...getAriaProps(props)}

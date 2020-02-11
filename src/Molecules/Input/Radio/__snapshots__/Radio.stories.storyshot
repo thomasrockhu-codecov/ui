@@ -13,7 +13,7 @@ exports[`Storyshots Molecules | Input / Radio Default 1`] = `
   align-items: center;
 }
 
-.c2 {
+.c1 {
   text-overflow: ellipsis;
   white-space: nowrap;
   cursor: pointer;
@@ -28,7 +28,7 @@ exports[`Storyshots Molecules | Input / Radio Default 1`] = `
   line-height: 1.4285714285714286;
 }
 
-.c9 {
+.c8 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
   margin: 0;
@@ -77,11 +77,11 @@ exports[`Storyshots Molecules | Input / Radio Default 1`] = `
   height: 12px;
 }
 
-.c1 {
+.c2 {
   position: relative;
 }
 
-.c1:hover .c6 {
+.c2:hover .c6 {
   border-color: #4B4B46;
 }
 
@@ -113,7 +113,7 @@ exports[`Storyshots Molecules | Input / Radio Default 1`] = `
   border: 1px solid #0046FF;
 }
 
-.c8 {
+.c9 {
   padding-left: 8px;
   white-space: initial;
 }
@@ -195,7 +195,7 @@ Array [
   align-items: center;
 }
 
-.c5 {
+.c4 {
   text-overflow: ellipsis;
   white-space: nowrap;
   cursor: pointer;
@@ -210,7 +210,7 @@ Array [
   line-height: 1.4285714285714286;
 }
 
-.c12 {
+.c11 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #A0A09B;
   margin: 0;
@@ -259,11 +259,11 @@ Array [
   height: 12px;
 }
 
-.c4 {
+.c5 {
   position: relative;
 }
 
-.c4:hover .c9 {
+.c5:hover .c9 {
   border-color: #4B4B46;
 }
 
@@ -295,31 +295,7 @@ Array [
   border: 1px solid #0046FF;
 }
 
-.c13:checked + .c9::after {
-  background: #0046FF;
-}
-
-.c13[disabled] + .c9 {
-  border-color: #EBEBE8;
-}
-
-.c13:checked[disabled] + .c9 {
-  border-color: #EBEBE8;
-}
-
-.c13:checked[disabled] + .c9::after {
-  background: #EBEBE8;
-}
-
-.c13 + .c9::before {
-  border: 1px solid #FF1900;
-}
-
-.c13:focus + .c9::before {
-  border: 1px solid #0046FF;
-}
-
-.c11 {
+.c12 {
   padding-left: 8px;
   white-space: initial;
 }
@@ -379,6 +355,10 @@ Array [
   -webkit-align-self: center;
   -ms-flex-item-align: center;
   align-self: center;
+}
+
+@media (min-width:760px) {
+
 }
 
 <div
@@ -481,6 +461,10 @@ Array [
   margin-bottom: 32px;
 }
 
+@media (min-width:760px) {
+
+}
+
 <div
     className="c0"
   />,
@@ -488,6 +472,18 @@ Array [
 `;
 
 exports[`Storyshots Molecules | Input / Radio In a group 1`] = `
+.c2 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
 .c6 {
   box-sizing: border-box;
   display: -webkit-box;
@@ -507,25 +503,13 @@ exports[`Storyshots Molecules | Input / Radio In a group 1`] = `
   padding-top: 0;
 }
 
-.c2 {
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.c3 {
+.c4 {
   text-overflow: ellipsis;
   white-space: nowrap;
   cursor: pointer;
 }
 
-.c4 {
+.c3 {
   box-sizing: border-box;
   color: inherit;
   display: table;
@@ -544,7 +528,7 @@ exports[`Storyshots Molecules | Input / Radio In a group 1`] = `
   line-height: 1.4285714285714286;
 }
 
-.c13 {
+.c12 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
   margin: 0;
@@ -559,13 +543,13 @@ exports[`Storyshots Molecules | Input / Radio In a group 1`] = `
   border: 0;
 }
 
-.c7 {
-  width: auto;
+.c0 {
+  width: 200px;
   display: inline-block;
 }
 
-.c0 {
-  width: 200px;
+.c7 {
+  width: auto;
   display: inline-block;
 }
 
@@ -640,31 +624,7 @@ exports[`Storyshots Molecules | Input / Radio In a group 1`] = `
   border: 1px solid #0046FF;
 }
 
-.c14:checked + .c10::after {
-  background: #0046FF;
-}
-
-.c14[disabled] + .c10 {
-  border-color: #EBEBE8;
-}
-
-.c14:checked[disabled] + .c10 {
-  border-color: #EBEBE8;
-}
-
-.c14:checked[disabled] + .c10::after {
-  background: #EBEBE8;
-}
-
-.c14 + .c10::before {
-  border: 1px solid #FF1900;
-}
-
-.c14:focus + .c10::before {
-  border: 1px solid #0046FF;
-}
-
-.c12 {
+.c13 {
   padding-left: 8px;
   white-space: initial;
 }
@@ -679,7 +639,7 @@ exports[`Storyshots Molecules | Input / Radio In a group 1`] = `
       className="c2"
     >
       <legend
-        className="c3 c4"
+        className="NormalizedLegend__Legend-sc-1svgb20-0 c3 c4"
         hidden={false}
       >
         <span
@@ -697,7 +657,7 @@ exports[`Storyshots Molecules | Input / Radio In a group 1`] = `
         width="auto"
       >
         <label
-          className="c8 c3"
+          className="c4 c8"
           hidden={false}
         >
           <span
@@ -729,7 +689,7 @@ exports[`Storyshots Molecules | Input / Radio In a group 1`] = `
         width="auto"
       >
         <label
-          className="c8 c3"
+          className="c4 c8"
           hidden={false}
         >
           <span
@@ -761,7 +721,7 @@ exports[`Storyshots Molecules | Input / Radio In a group 1`] = `
         width="auto"
       >
         <label
-          className="c8 c3"
+          className="c4 c8"
           hidden={false}
         >
           <span
@@ -794,6 +754,18 @@ exports[`Storyshots Molecules | Input / Radio In a group 1`] = `
 `;
 
 exports[`Storyshots Molecules | Input / Radio In a group with error 1`] = `
+.c2 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
 .c6 {
   box-sizing: border-box;
   display: -webkit-box;
@@ -813,18 +785,6 @@ exports[`Storyshots Molecules | Input / Radio In a group with error 1`] = `
   padding-top: 0;
 }
 
-.c2 {
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
 .c15 {
   position: absolute;
   height: 1px;
@@ -834,13 +794,13 @@ exports[`Storyshots Molecules | Input / Radio In a group with error 1`] = `
   clip: rect(1px,1px,1px,1px);
 }
 
-.c3 {
+.c4 {
   text-overflow: ellipsis;
   white-space: nowrap;
   cursor: pointer;
 }
 
-.c4 {
+.c3 {
   box-sizing: border-box;
   color: inherit;
   display: table;
@@ -859,7 +819,7 @@ exports[`Storyshots Molecules | Input / Radio In a group with error 1`] = `
   line-height: 1.4285714285714286;
 }
 
-.c13 {
+.c12 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
   margin: 0;
@@ -883,13 +843,13 @@ exports[`Storyshots Molecules | Input / Radio In a group with error 1`] = `
   border: 0;
 }
 
-.c7 {
-  width: auto;
+.c0 {
+  width: 200px;
   display: inline-block;
 }
 
-.c0 {
-  width: 200px;
+.c7 {
+  width: auto;
   display: inline-block;
 }
 
@@ -934,26 +894,6 @@ exports[`Storyshots Molecules | Input / Radio In a group with error 1`] = `
 
 .c8:hover .c10 {
   border-color: #4B4B46;
-}
-
-.c16:checked + .c10::after {
-  background: #0046FF;
-}
-
-.c16[disabled] + .c10 {
-  border-color: #EBEBE8;
-}
-
-.c16:checked[disabled] + .c10 {
-  border-color: #EBEBE8;
-}
-
-.c16:checked[disabled] + .c10::after {
-  background: #EBEBE8;
-}
-
-.c16:focus + .c10::before {
-  border: 1px solid #0046FF;
 }
 
 .c9 {
@@ -988,7 +928,7 @@ exports[`Storyshots Molecules | Input / Radio In a group with error 1`] = `
   border: 1px solid #0046FF;
 }
 
-.c12 {
+.c13 {
   padding-left: 8px;
   white-space: initial;
 }
@@ -1003,7 +943,7 @@ exports[`Storyshots Molecules | Input / Radio In a group with error 1`] = `
       className="c2"
     >
       <legend
-        className="c3 c4"
+        className="NormalizedLegend__Legend-sc-1svgb20-0 c3 c4"
         hidden={false}
       >
         <span
@@ -1021,7 +961,7 @@ exports[`Storyshots Molecules | Input / Radio In a group with error 1`] = `
         width="auto"
       >
         <label
-          className="c8 c3"
+          className="c4 c8"
           hidden={false}
         >
           <span
@@ -1055,7 +995,7 @@ exports[`Storyshots Molecules | Input / Radio In a group with error 1`] = `
         width="auto"
       >
         <label
-          className="c8 c3"
+          className="c4 c8"
           hidden={false}
         >
           <span
@@ -1089,7 +1029,7 @@ exports[`Storyshots Molecules | Input / Radio In a group with error 1`] = `
         width="auto"
       >
         <label
-          className="c8 c3"
+          className="c4 c8"
           hidden={false}
         >
           <span
@@ -1178,7 +1118,7 @@ Array [
   align-items: center;
 }
 
-.c5 {
+.c4 {
   text-overflow: ellipsis;
   white-space: nowrap;
   cursor: pointer;
@@ -1193,7 +1133,7 @@ Array [
   line-height: 1.4285714285714286;
 }
 
-.c12 {
+.c11 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
   margin: 0;
@@ -1242,11 +1182,11 @@ Array [
   height: 12px;
 }
 
-.c4 {
+.c5 {
   position: relative;
 }
 
-.c4:hover .c9 {
+.c5:hover .c9 {
   border-color: #4B4B46;
 }
 
@@ -1278,7 +1218,7 @@ Array [
   border: 1px solid #0046FF;
 }
 
-.c11 {
+.c12 {
   padding-left: 8px;
   white-space: initial;
 }
@@ -1338,6 +1278,10 @@ Array [
   -webkit-align-self: center;
   -ms-flex-item-align: center;
   align-self: center;
+}
+
+@media (min-width:760px) {
+
 }
 
 <div
@@ -1439,6 +1383,10 @@ Array [
   margin-bottom: 32px;
 }
 
+@media (min-width:760px) {
+
+}
+
 <div
     className="c0"
   />,
@@ -1458,7 +1406,7 @@ exports[`Storyshots Molecules | Input / Radio With all actions 1`] = `
   align-items: center;
 }
 
-.c2 {
+.c1 {
   text-overflow: ellipsis;
   white-space: nowrap;
   cursor: pointer;
@@ -1473,7 +1421,7 @@ exports[`Storyshots Molecules | Input / Radio With all actions 1`] = `
   line-height: 1.4285714285714286;
 }
 
-.c9 {
+.c8 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
   margin: 0;
@@ -1522,11 +1470,11 @@ exports[`Storyshots Molecules | Input / Radio With all actions 1`] = `
   height: 12px;
 }
 
-.c1 {
+.c2 {
   position: relative;
 }
 
-.c1:hover .c6 {
+.c2:hover .c6 {
   border-color: #4B4B46;
 }
 
@@ -1558,31 +1506,7 @@ exports[`Storyshots Molecules | Input / Radio With all actions 1`] = `
   border: 1px solid #0046FF;
 }
 
-.c10:checked + .c6::after {
-  background: #0046FF;
-}
-
-.c10[disabled] + .c6 {
-  border-color: #EBEBE8;
-}
-
-.c10:checked[disabled] + .c6 {
-  border-color: #EBEBE8;
-}
-
-.c10:checked[disabled] + .c6::after {
-  background: #EBEBE8;
-}
-
-.c10 + .c6::before {
-  border: 1px solid #FF1900;
-}
-
-.c10:focus + .c6::before {
-  border: 1px solid #0046FF;
-}
-
-.c8 {
+.c9 {
   padding-left: 8px;
   white-space: initial;
 }
@@ -1650,7 +1574,7 @@ exports[`Storyshots Molecules | Input / Radio With an error if not checked 1`] =
   clip: rect(1px,1px,1px,1px);
 }
 
-.c2 {
+.c1 {
   text-overflow: ellipsis;
   white-space: nowrap;
   cursor: pointer;
@@ -1665,7 +1589,7 @@ exports[`Storyshots Molecules | Input / Radio With an error if not checked 1`] =
   line-height: 1.4285714285714286;
 }
 
-.c9 {
+.c8 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
   margin: 0;
@@ -1723,32 +1647,12 @@ exports[`Storyshots Molecules | Input / Radio With an error if not checked 1`] =
   height: 12px;
 }
 
-.c1 {
+.c2 {
   position: relative;
 }
 
-.c1:hover .c6 {
+.c2:hover .c6 {
   border-color: #4B4B46;
-}
-
-.c12:checked + .c6::after {
-  background: #0046FF;
-}
-
-.c12[disabled] + .c6 {
-  border-color: #EBEBE8;
-}
-
-.c12:checked[disabled] + .c6 {
-  border-color: #EBEBE8;
-}
-
-.c12:checked[disabled] + .c6::after {
-  background: #EBEBE8;
-}
-
-.c12:focus + .c6::before {
-  border: 1px solid #0046FF;
 }
 
 .c5 {
@@ -1783,7 +1687,7 @@ exports[`Storyshots Molecules | Input / Radio With an error if not checked 1`] =
   border: 1px solid #0046FF;
 }
 
-.c8 {
+.c9 {
   padding-left: 8px;
   white-space: initial;
 }
@@ -1849,7 +1753,7 @@ exports[`Storyshots Molecules | Input / Radio With auto focus 1`] = `
   align-items: center;
 }
 
-.c2 {
+.c1 {
   text-overflow: ellipsis;
   white-space: nowrap;
   cursor: pointer;
@@ -1864,7 +1768,7 @@ exports[`Storyshots Molecules | Input / Radio With auto focus 1`] = `
   line-height: 1.4285714285714286;
 }
 
-.c9 {
+.c8 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
   margin: 0;
@@ -1913,11 +1817,11 @@ exports[`Storyshots Molecules | Input / Radio With auto focus 1`] = `
   height: 12px;
 }
 
-.c1 {
+.c2 {
   position: relative;
 }
 
-.c1:hover .c6 {
+.c2:hover .c6 {
   border-color: #4B4B46;
 }
 
@@ -1949,31 +1853,7 @@ exports[`Storyshots Molecules | Input / Radio With auto focus 1`] = `
   border: 1px solid #0046FF;
 }
 
-.c10:checked + .c6::after {
-  background: #0046FF;
-}
-
-.c10[disabled] + .c6 {
-  border-color: #EBEBE8;
-}
-
-.c10:checked[disabled] + .c6 {
-  border-color: #EBEBE8;
-}
-
-.c10:checked[disabled] + .c6::after {
-  background: #EBEBE8;
-}
-
-.c10 + .c6::before {
-  border: 1px solid #FF1900;
-}
-
-.c10:focus + .c6::before {
-  border: 1px solid #0046FF;
-}
-
-.c8 {
+.c9 {
   padding-left: 8px;
   white-space: initial;
 }
@@ -2027,7 +1907,7 @@ Array [
   align-items: center;
 }
 
-.c2 {
+.c1 {
   text-overflow: ellipsis;
   white-space: nowrap;
   cursor: pointer;
@@ -2042,7 +1922,7 @@ Array [
   line-height: 1.4285714285714286;
 }
 
-.c9 {
+.c8 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
   margin: 0;
@@ -2091,11 +1971,11 @@ Array [
   height: 12px;
 }
 
-.c1 {
+.c2 {
   position: relative;
 }
 
-.c1:hover .c6 {
+.c2:hover .c6 {
   border-color: #4B4B46;
 }
 
@@ -2127,7 +2007,7 @@ Array [
   border: 1px solid #0046FF;
 }
 
-.c8 {
+.c9 {
   padding-left: 8px;
   white-space: initial;
 }
@@ -2188,7 +2068,7 @@ exports[`Storyshots Molecules | Input / Radio With default checked 1`] = `
   align-items: center;
 }
 
-.c2 {
+.c1 {
   text-overflow: ellipsis;
   white-space: nowrap;
   cursor: pointer;
@@ -2203,7 +2083,7 @@ exports[`Storyshots Molecules | Input / Radio With default checked 1`] = `
   line-height: 1.4285714285714286;
 }
 
-.c9 {
+.c8 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
   margin: 0;
@@ -2252,11 +2132,11 @@ exports[`Storyshots Molecules | Input / Radio With default checked 1`] = `
   height: 12px;
 }
 
-.c1 {
+.c2 {
   position: relative;
 }
 
-.c1:hover .c6 {
+.c2:hover .c6 {
   border-color: #4B4B46;
 }
 
@@ -2288,7 +2168,7 @@ exports[`Storyshots Molecules | Input / Radio With default checked 1`] = `
   border: 1px solid #0046FF;
 }
 
-.c8 {
+.c9 {
   padding-left: 8px;
   white-space: initial;
 }

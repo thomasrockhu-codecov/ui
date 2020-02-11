@@ -8,15 +8,31 @@ Array [
   }
 }
 
+@media not all and (min-width:976px) and (max-width:1279px) {
+
+}
+
+@media not all and (min-width:1280px) {
+
+}
+
 <div
     className="c0"
   >
     I am only shown on screens smaller than medium size
   </div>,
-  @media not all and (min-width:976px) and (max-width:1279px) {
+  @media not all and (max-width:975px) {
+
+}
+
+@media not all and (min-width:976px) and (max-width:1279px) {
   .c0 {
     display: none;
   }
+}
+
+@media not all and (min-width:1280px) {
+
 }
 
 <div
@@ -24,7 +40,15 @@ Array [
   >
     I am only shown between medium and large sizes
   </div>,
-  @media not all and (min-width:1280px) {
+  @media not all and (max-width:975px) {
+
+}
+
+@media not all and (min-width:976px) and (max-width:1279px) {
+
+}
+
+@media not all and (min-width:1280px) {
   .c0 {
     display: none;
   }
@@ -46,15 +70,31 @@ Array [
   }
 }
 
+@media not all and (min-width:976px) and (max-width:1279px) {
+
+}
+
+@media not all and (min-width:1280px) {
+
+}
+
 <div
     className="c0"
   >
     I am only shown on screens smaller than medium size
   </div>,
-  @media not all and (min-width:976px) and (max-width:1279px) {
+  @media not all and (max-width:975px) {
+
+}
+
+@media not all and (min-width:976px) and (max-width:1279px) {
   .c0 {
     display: none;
   }
+}
+
+@media not all and (min-width:1280px) {
+
 }
 
 <div
@@ -62,7 +102,15 @@ Array [
   >
     I am only shown between medium and large sizes
   </div>,
-  @media not all and (min-width:1280px) {
+  @media not all and (max-width:975px) {
+
+}
+
+@media not all and (min-width:976px) and (max-width:1279px) {
+
+}
+
+@media not all and (min-width:1280px) {
   .c0 {
     display: none;
   }

@@ -75,7 +75,7 @@
     "react-router-dom": "5.1.2",
     "react-uid": "^2.2.0",
     "scroll-into-view-if-needed": "^2.2.20",
-    "styled-components": "^4.2.0",
+    "styled-components": "^5.0.0",
     "use-ssr": "^1.0.18",
     "xstate": "^4.6.7"
   },
@@ -149,7 +149,7 @@
     "jest": "24.8.0",
     "jest-environment-jsdom-fourteen": "0.1.0",
     "jest-specific-snapshot": "^2.0.0",
-    "jest-styled-components": "^6.3.1",
+    "jest-styled-components": "^7.0.0",
     "lint-staged": "8.1.7",
     "prettier": "1.17.1",
     "react": "16.10.2",
@@ -170,6 +170,7 @@
   },
   "resolutions": {
     "react": "16.10.2",
-    "react-dom": "16.10.2"
+    "react-dom": "16.10.2",
+    "styled-components": "^5.0.0"
   }
 }

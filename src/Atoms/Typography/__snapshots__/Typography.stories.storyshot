@@ -12,15 +12,6 @@ exports[`Storyshots Atoms | Typography All 1`] = `
   flex-direction: column;
 }
 
-.c5 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #282823;
-  margin: 0;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.5;
-}
-
 .c1 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
@@ -39,15 +30,6 @@ exports[`Storyshots Atoms | Typography All 1`] = `
   line-height: 1.1666666666666667;
 }
 
-.c6 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #282823;
-  margin: 0;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
-}
-
 .c3 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
@@ -64,6 +46,24 @@ exports[`Storyshots Atoms | Typography All 1`] = `
   font-weight: 800;
   font-size: 18px;
   line-height: 1.3333333333333333;
+}
+
+.c5 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.c6 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
 }
 
 .c7 {
@@ -1350,15 +1350,6 @@ exports[`Storyshots Atoms | Typography Title2 1`] = `
 `;
 
 exports[`Storyshots Atoms | Typography Title3 1`] = `
-.c5 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #282823;
-  margin: 0;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 1.3333333333333333;
-}
-
 .c3 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
@@ -1373,6 +1364,15 @@ exports[`Storyshots Atoms | Typography Title3 1`] = `
   color: #282823;
   margin: 0;
   font-weight: 400;
+  font-size: 18px;
+  line-height: 1.3333333333333333;
+}
+
+.c5 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 700;
   font-size: 18px;
   line-height: 1.3333333333333333;
 }
@@ -1435,13 +1435,6 @@ exports[`Storyshots Atoms | Typography Title3 1`] = `
 }
 
 @media (min-width:760px) {
-  .c5 {
-    font-size: 20px;
-    line-height: 1.2;
-  }
-}
-
-@media (min-width:760px) {
   .c3 {
     font-size: 20px;
     line-height: 1.2;
@@ -1450,6 +1443,13 @@ exports[`Storyshots Atoms | Typography Title3 1`] = `
 
 @media (min-width:760px) {
   .c4 {
+    font-size: 20px;
+    line-height: 1.2;
+  }
+}
+
+@media (min-width:760px) {
+  .c5 {
     font-size: 20px;
     line-height: 1.2;
   }

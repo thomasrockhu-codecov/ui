@@ -37,7 +37,7 @@ exports[`Storyshots Molecules | Drawer Default 1`] = `
 }
 
 .c14 {
-  height: 4px;
+  height: 16px;
   width: 4px;
   position: absolute;
   right: 0;
@@ -46,7 +46,7 @@ exports[`Storyshots Molecules | Drawer Default 1`] = `
 }
 
 .c12 {
-  height: 4px;
+  height: 16px;
   width: 4px;
   position: absolute;
   right: 0;
@@ -84,16 +84,7 @@ exports[`Storyshots Molecules | Drawer Default 1`] = `
   stroke: #6E6E69;
 }
 
-.c13 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #282823;
-  margin: 0;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.5;
-}
-
-.c2 {
+.c3 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
   margin: 0;
@@ -111,7 +102,16 @@ exports[`Storyshots Molecules | Drawer Default 1`] = `
   line-height: 1.4285714285714286;
 }
 
-.c5 {
+.c13 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.c4 {
   font-family: inherit;
   font-size: 100%;
   line-height: 1.15;
@@ -140,33 +140,33 @@ exports[`Storyshots Molecules | Drawer Default 1`] = `
   cursor: pointer;
 }
 
-.c5,
-.c5[type='button'],
-.c5[type='reset'],
-.c5[type='submit'] {
+.c4,
+.c4[type='button'],
+.c4[type='reset'],
+.c4[type='submit'] {
   -webkit-appearance: button;
 }
 
-.c5::-moz-focus-inner,
-.c5[type='button']::-moz-focus-inner,
-.c5[type='reset']::-moz-focus-inner,
-.c5[type='submit']::-moz-focus-inner {
+.c4::-moz-focus-inner,
+.c4[type='button']::-moz-focus-inner,
+.c4[type='reset']::-moz-focus-inner,
+.c4[type='submit']::-moz-focus-inner {
   border-style: none;
   padding: 0;
 }
 
-.c5:-moz-focusring,
-.c5[type='button']:-moz-focusring,
-.c5[type='reset']:-moz-focusring,
-.c5[type='submit']:-moz-focusring {
+.c4:-moz-focusring,
+.c4[type='button']:-moz-focusring,
+.c4[type='reset']:-moz-focusring,
+.c4[type='submit']:-moz-focusring {
   outline: 1px dotted ButtonText;
 }
 
-.c4 {
+.c5 {
   margin-left: auto;
 }
 
-.c3 {
+.c2 {
   padding-right: 16px;
 }
 
@@ -186,8 +186,6 @@ exports[`Storyshots Molecules | Drawer Default 1`] = `
     background: transparent;
     z-index: 1;
     opacity: 0;
-    -webkit-transition: 0.3s opacity ease-out;
-    transition: 0.3s opacity ease-out;
     top: 0;
     background: linear-gradient(0deg,#ffffff00 0%,#ffffffff 100%);
   }
@@ -209,8 +207,6 @@ exports[`Storyshots Molecules | Drawer Default 1`] = `
     background: transparent;
     z-index: 1;
     opacity: 0;
-    -webkit-transition: 0.3s opacity ease-out;
-    transition: 0.3s opacity ease-out;
     bottom: 0;
     background: linear-gradient(0deg,#ffffffff 0%,#ffffff00 100%);
   }
@@ -234,10 +230,18 @@ exports[`Storyshots Molecules | Drawer Default 1`] = `
 }
 
 @media (min-width:760px) {
-  .c2 {
+  .c3 {
     font-size: 24px;
     line-height: 1.1666666666666667;
   }
+}
+
+@media (min-width:760px) {
+
+}
+
+@media (min-width:1600px) {
+
 }
 
 <div>
@@ -300,13 +304,12 @@ exports[`Storyshots Molecules | Drawer Default 1`] = `
               >
                 <h2
                   className="c2 c3"
-                  type="title2"
                 >
                   Drawer title
                 </h2>
               </span>
               <button
-                className="c4 c5"
+                className="NormalizedButton__Button-ey7f5x-0 c4 c5"
                 onClick={[Function]}
                 type="button"
               >
@@ -349,7 +352,6 @@ exports[`Storyshots Molecules | Drawer Default 1`] = `
                 <div>
                   <p
                     className="c13"
-                    type="primary"
                   >
                     Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.
                   </p>
@@ -373,7 +375,6 @@ exports[`Storyshots Molecules | Drawer Default 1`] = `
                   </span>
                   <p
                     className="c13"
-                    type="primary"
                   >
                     Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus
                   </p>
@@ -443,7 +444,7 @@ exports[`Storyshots Molecules | Drawer With a custom title 1`] = `
 }
 
 .c14 {
-  height: 4px;
+  height: 16px;
   width: 4px;
   position: absolute;
   right: 0;
@@ -452,7 +453,7 @@ exports[`Storyshots Molecules | Drawer With a custom title 1`] = `
 }
 
 .c12 {
-  height: 4px;
+  height: 16px;
   width: 4px;
   position: absolute;
   right: 0;
@@ -513,15 +514,6 @@ exports[`Storyshots Molecules | Drawer With a custom title 1`] = `
   stroke: #6E6E69;
 }
 
-.c13 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #282823;
-  margin: 0;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.5;
-}
-
 .c4 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
@@ -540,7 +532,16 @@ exports[`Storyshots Molecules | Drawer With a custom title 1`] = `
   line-height: 1.4285714285714286;
 }
 
-.c6 {
+.c13 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.c5 {
   font-family: inherit;
   font-size: 100%;
   line-height: 1.15;
@@ -569,29 +570,29 @@ exports[`Storyshots Molecules | Drawer With a custom title 1`] = `
   cursor: pointer;
 }
 
-.c6,
-.c6[type='button'],
-.c6[type='reset'],
-.c6[type='submit'] {
+.c5,
+.c5[type='button'],
+.c5[type='reset'],
+.c5[type='submit'] {
   -webkit-appearance: button;
 }
 
-.c6::-moz-focus-inner,
-.c6[type='button']::-moz-focus-inner,
-.c6[type='reset']::-moz-focus-inner,
-.c6[type='submit']::-moz-focus-inner {
+.c5::-moz-focus-inner,
+.c5[type='button']::-moz-focus-inner,
+.c5[type='reset']::-moz-focus-inner,
+.c5[type='submit']::-moz-focus-inner {
   border-style: none;
   padding: 0;
 }
 
-.c6:-moz-focusring,
-.c6[type='button']:-moz-focusring,
-.c6[type='reset']:-moz-focusring,
-.c6[type='submit']:-moz-focusring {
+.c5:-moz-focusring,
+.c5[type='button']:-moz-focusring,
+.c5[type='reset']:-moz-focusring,
+.c5[type='submit']:-moz-focusring {
   outline: 1px dotted ButtonText;
 }
 
-.c5 {
+.c6 {
   margin-left: auto;
 }
 
@@ -611,8 +612,6 @@ exports[`Storyshots Molecules | Drawer With a custom title 1`] = `
     background: transparent;
     z-index: 1;
     opacity: 0;
-    -webkit-transition: 0.3s opacity ease-out;
-    transition: 0.3s opacity ease-out;
     top: 0;
     background: linear-gradient(0deg,#ffffff00 0%,#ffffffff 100%);
   }
@@ -634,8 +633,6 @@ exports[`Storyshots Molecules | Drawer With a custom title 1`] = `
     background: transparent;
     z-index: 1;
     opacity: 0;
-    -webkit-transition: 0.3s opacity ease-out;
-    transition: 0.3s opacity ease-out;
     bottom: 0;
     background: linear-gradient(0deg,#ffffffff 0%,#ffffff00 100%);
   }
@@ -663,6 +660,14 @@ exports[`Storyshots Molecules | Drawer With a custom title 1`] = `
     font-size: 24px;
     line-height: 1.1666666666666667;
   }
+}
+
+@media (min-width:760px) {
+
+}
+
+@media (min-width:1600px) {
+
 }
 
 <div>
@@ -740,14 +745,13 @@ exports[`Storyshots Molecules | Drawer With a custom title 1`] = `
                   </svg>
                   <h2
                     className="c4"
-                    type="title2"
                   >
                     Custom title
                   </h2>
                 </div>
               </span>
               <button
-                className="c5 c6"
+                className="NormalizedButton__Button-ey7f5x-0 c5 c6"
                 onClick={[Function]}
                 type="button"
               >
@@ -790,7 +794,6 @@ exports[`Storyshots Molecules | Drawer With a custom title 1`] = `
                 <div>
                   <p
                     className="c13"
-                    type="primary"
                   >
                     Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.
                   </p>
@@ -814,7 +817,6 @@ exports[`Storyshots Molecules | Drawer With a custom title 1`] = `
                   </span>
                   <p
                     className="c13"
-                    type="primary"
                   >
                     Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus
                   </p>

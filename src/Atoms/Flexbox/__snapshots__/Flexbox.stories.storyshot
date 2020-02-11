@@ -119,10 +119,6 @@ exports[`Storyshots Atoms | Flexbox Default 1`] = `
 `;
 
 exports[`Storyshots Atoms | Flexbox With breakpoint props 1`] = `
-.c1 {
-  box-sizing: border-box;
-}
-
 .c0 {
   box-sizing: border-box;
   display: -webkit-box;
@@ -136,6 +132,10 @@ exports[`Storyshots Atoms | Flexbox With breakpoint props 1`] = `
 
 .c0 > *:not(:first-child) {
   padding-top: 16px;
+}
+
+.c1 {
+  box-sizing: border-box;
 }
 
 .c2 {
@@ -333,10 +333,6 @@ exports[`Storyshots Atoms | Flexbox With conditionally visible flex item 1`] = `
 `;
 
 exports[`Storyshots Atoms | Flexbox With container and item props 1`] = `
-.c2 {
-  box-sizing: border-box;
-}
-
 .c0 {
   box-sizing: border-box;
   display: -webkit-box;
@@ -369,6 +365,10 @@ exports[`Storyshots Atoms | Flexbox With container and item props 1`] = `
 
 .c1 > *:not(:first-child) {
   padding-top: 20px;
+}
+
+.c2 {
+  box-sizing: border-box;
 }
 
 .c3 {
@@ -416,14 +416,6 @@ exports[`Storyshots Atoms | Flexbox With container and item props 1`] = `
 `;
 
 exports[`Storyshots Atoms | Flexbox With custom gutter 1`] = `
-.c1 {
-  box-sizing: border-box;
-  max-width: 50%;
-  -webkit-flex-basis: 50%;
-  -ms-flex-preferred-size: 50%;
-  flex-basis: 50%;
-}
-
 .c0 {
   box-sizing: border-box;
   display: -webkit-box;
@@ -441,6 +433,14 @@ exports[`Storyshots Atoms | Flexbox With custom gutter 1`] = `
 
 .c0 > *:not(:first-child) {
   padding-top: 0;
+}
+
+.c1 {
+  box-sizing: border-box;
+  max-width: 50%;
+  -webkit-flex-basis: 50%;
+  -ms-flex-preferred-size: 50%;
+  flex-basis: 50%;
 }
 
 .c2 {
@@ -548,10 +548,6 @@ exports[`Storyshots Atoms | Flexbox With direction: column 1`] = `
 `;
 
 exports[`Storyshots Atoms | Flexbox With height modified 1`] = `
-.c1 {
-  box-sizing: border-box;
-}
-
 .c0 {
   box-sizing: border-box;
   display: -webkit-box;
@@ -559,6 +555,10 @@ exports[`Storyshots Atoms | Flexbox With height modified 1`] = `
   display: -ms-flexbox;
   display: flex;
   height: 40px;
+}
+
+.c1 {
+  box-sizing: border-box;
 }
 
 .c2 {

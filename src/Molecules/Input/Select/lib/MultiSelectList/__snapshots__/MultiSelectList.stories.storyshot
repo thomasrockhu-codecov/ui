@@ -1,23 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Storyshots Molecules | Input / Select / MultiSelectList Item default 1`] = `
-.c13 {
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.c2 {
+.c1 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -31,25 +15,13 @@ exports[`Storyshots Molecules | Input / Select / MultiSelectList Item default 1`
   margin-right: -4px;
 }
 
-.c2 > * {
+.c1 > * {
   padding-left: 4px;
   padding-right: 4px;
 }
 
-.c2 > *:not(:first-child) {
+.c1 > *:not(:first-child) {
   padding-top: 0;
-}
-
-.c9 {
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
 }
 
 .c3 {
@@ -67,7 +39,35 @@ exports[`Storyshots Molecules | Input / Select / MultiSelectList Item default 1`
   flex: 0 0 auto;
 }
 
-.c18 {
+.c9 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c11 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c17 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -83,7 +83,7 @@ exports[`Storyshots Molecules | Input / Select / MultiSelectList Item default 1`
   align-items: center;
 }
 
-.c7 {
+.c5 {
   text-overflow: ellipsis;
   white-space: nowrap;
   cursor: pointer;
@@ -112,7 +112,7 @@ exports[`Storyshots Molecules | Input / Select / MultiSelectList Item default 1`
   line-height: 1.4285714285714286;
 }
 
-.c16 {
+.c15 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
   margin: 0;
@@ -126,7 +126,7 @@ exports[`Storyshots Molecules | Input / Select / MultiSelectList Item default 1`
   display: inline-block;
 }
 
-.c12 {
+.c13 {
   width: 20px;
   height: 20px;
   border: 1px solid #BCBCB6;
@@ -136,7 +136,7 @@ exports[`Storyshots Molecules | Input / Select / MultiSelectList Item default 1`
   flex-shrink: 0;
 }
 
-.c12::before {
+.c13::before {
   content: '';
   display: block;
   padding: 2px;
@@ -154,7 +154,7 @@ exports[`Storyshots Molecules | Input / Select / MultiSelectList Item default 1`
   position: relative;
 }
 
-.c6:hover .c11 {
+.c6:hover .c12 {
   border-color: #4B4B46;
 }
 
@@ -166,60 +166,34 @@ exports[`Storyshots Molecules | Input / Select / MultiSelectList Item default 1`
   cursor: pointer;
 }
 
-.c10:checked + .c11 {
+.c10:checked + .c12 {
   border-color: #0046FF;
   background: #0046FF;
 }
 
-.c10:checked + .c11 svg {
+.c10:checked + .c12 svg {
   fill: #FFFFFF;
 }
 
-.c10[disabled] + .c11 {
+.c10[disabled] + .c12 {
   border-color: #EBEBE8;
 }
 
-.c10:checked[disabled] + .c11 {
+.c10:checked[disabled] + .c12 {
   border-color: #EBEBE8;
   background: #EBEBE8;
 }
 
-.c10:focus + .c11::before {
+.c10:focus + .c12::before {
   border: 1px solid #0046FF;
 }
 
-.c20:checked + .c11 {
-  border-color: #0046FF;
-  background: #0046FF;
-}
-
-.c20:checked + .c11 svg {
-  fill: #FFFFFF;
-}
-
-.c20[disabled] + .c11 {
-  border-color: #EBEBE8;
-}
-
-.c20:checked[disabled] + .c11 {
-  border-color: #EBEBE8;
-  background: #EBEBE8;
-}
-
-.c20 + .c11::before {
-  border: 1px solid #FF1900;
-}
-
-.c20:focus + .c11::before {
-  border: 1px solid #0046FF;
-}
-
-.c15 {
+.c16 {
   padding-left: 8px;
   white-space: initial;
 }
 
-.c1 {
+.c2 {
   height: 100%;
 }
 
@@ -236,16 +210,16 @@ exports[`Storyshots Molecules | Input / Select / MultiSelectList Item default 1`
   background: #F5F5F5;
 }
 
-.c0:hover input + .c11::before {
+.c0:hover input + .c12::before {
   border: 1px solid #0046FF;
 }
 
-.c5 .c11 {
+.c7 .c12 {
   width: 16px;
   height: 16px;
 }
 
-.c17 {
+.c18 {
   -webkit-flex: 1 1 100%;
   -ms-flex: 1 1 100%;
   flex: 1 1 100%;
@@ -318,7 +292,7 @@ exports[`Storyshots Molecules | Input / Select / MultiSelectList Item default 1`
       className="c17 c18"
     >
       <span
-        className="c19 c16"
+        className="c15 c19"
       >
         First
       </span>
@@ -328,23 +302,7 @@ exports[`Storyshots Molecules | Input / Select / MultiSelectList Item default 1`
 `;
 
 exports[`Storyshots Molecules | Input / Select / MultiSelectList Item disabled 1`] = `
-.c13 {
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.c2 {
+.c1 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -358,25 +316,13 @@ exports[`Storyshots Molecules | Input / Select / MultiSelectList Item disabled 1
   margin-right: -4px;
 }
 
-.c2 > * {
+.c1 > * {
   padding-left: 4px;
   padding-right: 4px;
 }
 
-.c2 > *:not(:first-child) {
+.c1 > *:not(:first-child) {
   padding-top: 0;
-}
-
-.c9 {
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
 }
 
 .c3 {
@@ -394,7 +340,35 @@ exports[`Storyshots Molecules | Input / Select / MultiSelectList Item disabled 1
   flex: 0 0 auto;
 }
 
-.c18 {
+.c9 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c11 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c17 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -410,7 +384,7 @@ exports[`Storyshots Molecules | Input / Select / MultiSelectList Item disabled 1
   align-items: center;
 }
 
-.c7 {
+.c5 {
   text-overflow: ellipsis;
   white-space: nowrap;
   cursor: pointer;
@@ -439,7 +413,7 @@ exports[`Storyshots Molecules | Input / Select / MultiSelectList Item disabled 1
   line-height: 1.4285714285714286;
 }
 
-.c16 {
+.c15 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
   margin: 0;
@@ -448,7 +422,7 @@ exports[`Storyshots Molecules | Input / Select / MultiSelectList Item disabled 1
   line-height: 1.4285714285714286;
 }
 
-.c20 {
+.c19 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #A0A09B;
   margin: 0;
@@ -462,7 +436,7 @@ exports[`Storyshots Molecules | Input / Select / MultiSelectList Item disabled 1
   display: inline-block;
 }
 
-.c12 {
+.c13 {
   width: 20px;
   height: 20px;
   border: 1px solid #BCBCB6;
@@ -472,7 +446,7 @@ exports[`Storyshots Molecules | Input / Select / MultiSelectList Item disabled 1
   flex-shrink: 0;
 }
 
-.c12::before {
+.c13::before {
   content: '';
   display: block;
   padding: 2px;
@@ -490,7 +464,7 @@ exports[`Storyshots Molecules | Input / Select / MultiSelectList Item disabled 1
   position: relative;
 }
 
-.c6:hover .c11 {
+.c6:hover .c12 {
   border-color: #4B4B46;
 }
 
@@ -502,65 +476,35 @@ exports[`Storyshots Molecules | Input / Select / MultiSelectList Item disabled 1
   cursor: pointer;
 }
 
-.c10:checked + .c11 {
+.c10:checked + .c12 {
   border-color: #0046FF;
   background: #0046FF;
 }
 
-.c10:checked + .c11 svg {
+.c10:checked + .c12 svg {
   fill: #FFFFFF;
 }
 
-.c10[disabled] + .c11 {
+.c10[disabled] + .c12 {
   border-color: #EBEBE8;
 }
 
-.c10:checked[disabled] + .c11 {
+.c10:checked[disabled] + .c12 {
   border-color: #EBEBE8;
   background: #EBEBE8;
 }
 
-.c10:focus + .c11::before {
+.c10:focus + .c12::before {
   border: 1px solid #0046FF;
 }
 
-.c21:checked + .c11 {
-  border-color: #0046FF;
-  background: #0046FF;
-}
-
-.c21:checked + .c11 svg {
-  fill: #FFFFFF;
-}
-
-.c21[disabled] + .c11 {
-  border-color: #EBEBE8;
-}
-
-.c21:checked[disabled] + .c11 {
-  border-color: #EBEBE8;
-  background: #EBEBE8;
-}
-
-.c21 + .c11::before {
-  border: 1px solid #FF1900;
-}
-
-.c21:focus + .c11::before {
-  border: 1px solid #0046FF;
-}
-
-.c15 {
+.c16 {
   padding-left: 8px;
   white-space: initial;
 }
 
-.c1 {
+.c2 {
   height: 100%;
-}
-
-.c22:hover input + .c11::before {
-  border: 1px solid #0046FF;
 }
 
 .c0 {
@@ -570,23 +514,22 @@ exports[`Storyshots Molecules | Input / Select / MultiSelectList Item disabled 1
   white-space: nowrap;
   background: #FFFFFF;
   cursor: pointer;
-  color: #A0A09B;
-  pointer-events: none;
+  color: #A0A09B pointer-events:none;
 }
 
-.c5 .c11 {
+.c7 .c12 {
   width: 16px;
   height: 16px;
 }
 
-.c17 {
+.c18 {
   -webkit-flex: 1 1 100%;
   -ms-flex: 1 1 100%;
   flex: 1 1 100%;
   min-width: 0;
 }
 
-.c19 {
+.c20 {
   width: 100%;
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -663,23 +606,7 @@ exports[`Storyshots Molecules | Input / Select / MultiSelectList Item disabled 1
 `;
 
 exports[`Storyshots Molecules | Input / Select / MultiSelectList Item selected 1`] = `
-.c13 {
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.c2 {
+.c1 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -693,25 +620,13 @@ exports[`Storyshots Molecules | Input / Select / MultiSelectList Item selected 1
   margin-right: -4px;
 }
 
-.c2 > * {
+.c1 > * {
   padding-left: 4px;
   padding-right: 4px;
 }
 
-.c2 > *:not(:first-child) {
+.c1 > *:not(:first-child) {
   padding-top: 0;
-}
-
-.c9 {
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
 }
 
 .c3 {
@@ -729,7 +644,35 @@ exports[`Storyshots Molecules | Input / Select / MultiSelectList Item selected 1
   flex: 0 0 auto;
 }
 
-.c18 {
+.c9 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c11 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c17 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -745,7 +688,7 @@ exports[`Storyshots Molecules | Input / Select / MultiSelectList Item selected 1
   align-items: center;
 }
 
-.c7 {
+.c5 {
   text-overflow: ellipsis;
   white-space: nowrap;
   cursor: pointer;
@@ -774,7 +717,7 @@ exports[`Storyshots Molecules | Input / Select / MultiSelectList Item selected 1
   line-height: 1.4285714285714286;
 }
 
-.c16 {
+.c15 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
   margin: 0;
@@ -788,7 +731,7 @@ exports[`Storyshots Molecules | Input / Select / MultiSelectList Item selected 1
   display: inline-block;
 }
 
-.c12 {
+.c13 {
   width: 20px;
   height: 20px;
   border: 1px solid #BCBCB6;
@@ -798,7 +741,7 @@ exports[`Storyshots Molecules | Input / Select / MultiSelectList Item selected 1
   flex-shrink: 0;
 }
 
-.c12::before {
+.c13::before {
   content: '';
   display: block;
   padding: 2px;
@@ -816,7 +759,7 @@ exports[`Storyshots Molecules | Input / Select / MultiSelectList Item selected 1
   position: relative;
 }
 
-.c6:hover .c11 {
+.c6:hover .c12 {
   border-color: #4B4B46;
 }
 
@@ -828,60 +771,34 @@ exports[`Storyshots Molecules | Input / Select / MultiSelectList Item selected 1
   cursor: pointer;
 }
 
-.c10:checked + .c11 {
+.c10:checked + .c12 {
   border-color: #0046FF;
   background: #0046FF;
 }
 
-.c10:checked + .c11 svg {
+.c10:checked + .c12 svg {
   fill: #FFFFFF;
 }
 
-.c10[disabled] + .c11 {
+.c10[disabled] + .c12 {
   border-color: #EBEBE8;
 }
 
-.c10:checked[disabled] + .c11 {
+.c10:checked[disabled] + .c12 {
   border-color: #EBEBE8;
   background: #EBEBE8;
 }
 
-.c10:focus + .c11::before {
+.c10:focus + .c12::before {
   border: 1px solid #0046FF;
 }
 
-.c20:checked + .c11 {
-  border-color: #0046FF;
-  background: #0046FF;
-}
-
-.c20:checked + .c11 svg {
-  fill: #FFFFFF;
-}
-
-.c20[disabled] + .c11 {
-  border-color: #EBEBE8;
-}
-
-.c20:checked[disabled] + .c11 {
-  border-color: #EBEBE8;
-  background: #EBEBE8;
-}
-
-.c20 + .c11::before {
-  border: 1px solid #FF1900;
-}
-
-.c20:focus + .c11::before {
-  border: 1px solid #0046FF;
-}
-
-.c15 {
+.c16 {
   padding-left: 8px;
   white-space: initial;
 }
 
-.c1 {
+.c2 {
   height: 100%;
 }
 
@@ -898,16 +815,16 @@ exports[`Storyshots Molecules | Input / Select / MultiSelectList Item selected 1
   background: #F5F5F5;
 }
 
-.c0:hover input + .c11::before {
+.c0:hover input + .c12::before {
   border: 1px solid #0046FF;
 }
 
-.c5 .c11 {
+.c7 .c12 {
   width: 16px;
   height: 16px;
 }
 
-.c17 {
+.c18 {
   -webkit-flex: 1 1 100%;
   -ms-flex: 1 1 100%;
   flex: 1 1 100%;
@@ -982,7 +899,7 @@ exports[`Storyshots Molecules | Input / Select / MultiSelectList Item selected 1
       className="c17 c18"
     >
       <span
-        className="c19 c16"
+        className="c15 c19"
       >
         First
       </span>
@@ -1024,8 +941,6 @@ exports[`Storyshots Molecules | Input / Select / MultiSelectList List with diffe
   background: transparent;
   z-index: 1;
   opacity: 0;
-  -webkit-transition: 0.3s opacity ease-out;
-  transition: 0.3s opacity ease-out;
   top: 0;
   background: linear-gradient(0deg,#ffffff00 0%,#ffffffff 100%);
 }
@@ -1041,8 +956,6 @@ exports[`Storyshots Molecules | Input / Select / MultiSelectList List with diffe
   background: transparent;
   z-index: 1;
   opacity: 0;
-  -webkit-transition: 0.3s opacity ease-out;
-  transition: 0.3s opacity ease-out;
   bottom: 0;
   background: linear-gradient(0deg,#ffffffff 0%,#ffffff00 100%);
 }
@@ -1072,7 +985,7 @@ exports[`Storyshots Molecules | Input / Select / MultiSelectList List with diffe
 }
 
 .c30 {
-  height: 4px;
+  height: 16px;
   width: 4px;
   position: absolute;
   right: 0;
@@ -1081,7 +994,7 @@ exports[`Storyshots Molecules | Input / Select / MultiSelectList List with diffe
 }
 
 .c7 {
-  height: 4px;
+  height: 16px;
   width: 4px;
   position: absolute;
   right: 0;
@@ -1089,23 +1002,7 @@ exports[`Storyshots Molecules | Input / Select / MultiSelectList List with diffe
   top: 0;
 }
 
-.c21 {
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.c10 {
+.c9 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -1119,25 +1016,13 @@ exports[`Storyshots Molecules | Input / Select / MultiSelectList List with diffe
   margin-right: -4px;
 }
 
-.c10 > * {
+.c9 > * {
   padding-left: 4px;
   padding-right: 4px;
 }
 
-.c10 > *:not(:first-child) {
+.c9 > *:not(:first-child) {
   padding-top: 0;
-}
-
-.c17 {
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
 }
 
 .c11 {
@@ -1155,7 +1040,35 @@ exports[`Storyshots Molecules | Input / Select / MultiSelectList List with diffe
   flex: 0 0 auto;
 }
 
-.c26 {
+.c17 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c19 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c25 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -1171,7 +1084,7 @@ exports[`Storyshots Molecules | Input / Select / MultiSelectList List with diffe
   align-items: center;
 }
 
-.c15 {
+.c13 {
   text-overflow: ellipsis;
   white-space: nowrap;
   cursor: pointer;
@@ -1200,7 +1113,7 @@ exports[`Storyshots Molecules | Input / Select / MultiSelectList List with diffe
   line-height: 1.4285714285714286;
 }
 
-.c24 {
+.c23 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
   margin: 0;
@@ -1223,7 +1136,7 @@ exports[`Storyshots Molecules | Input / Select / MultiSelectList List with diffe
   display: inline-block;
 }
 
-.c20 {
+.c21 {
   width: 20px;
   height: 20px;
   border: 1px solid #BCBCB6;
@@ -1233,7 +1146,7 @@ exports[`Storyshots Molecules | Input / Select / MultiSelectList List with diffe
   flex-shrink: 0;
 }
 
-.c20::before {
+.c21::before {
   content: '';
   display: block;
   padding: 2px;
@@ -1251,7 +1164,7 @@ exports[`Storyshots Molecules | Input / Select / MultiSelectList List with diffe
   position: relative;
 }
 
-.c14:hover .c19 {
+.c14:hover .c20 {
   border-color: #4B4B46;
 }
 
@@ -1263,60 +1176,34 @@ exports[`Storyshots Molecules | Input / Select / MultiSelectList List with diffe
   cursor: pointer;
 }
 
-.c18:checked + .c19 {
+.c18:checked + .c20 {
   border-color: #0046FF;
   background: #0046FF;
 }
 
-.c18:checked + .c19 svg {
+.c18:checked + .c20 svg {
   fill: #FFFFFF;
 }
 
-.c18[disabled] + .c19 {
+.c18[disabled] + .c20 {
   border-color: #EBEBE8;
 }
 
-.c18:checked[disabled] + .c19 {
+.c18:checked[disabled] + .c20 {
   border-color: #EBEBE8;
   background: #EBEBE8;
 }
 
-.c18:focus + .c19::before {
+.c18:focus + .c20::before {
   border: 1px solid #0046FF;
 }
 
-.c33:checked + .c19 {
-  border-color: #0046FF;
-  background: #0046FF;
-}
-
-.c33:checked + .c19 svg {
-  fill: #FFFFFF;
-}
-
-.c33[disabled] + .c19 {
-  border-color: #EBEBE8;
-}
-
-.c33:checked[disabled] + .c19 {
-  border-color: #EBEBE8;
-  background: #EBEBE8;
-}
-
-.c33 + .c19::before {
-  border: 1px solid #FF1900;
-}
-
-.c33:focus + .c19::before {
-  border: 1px solid #0046FF;
-}
-
-.c23 {
+.c24 {
   padding-left: 8px;
   white-space: initial;
 }
 
-.c9 {
+.c10 {
   height: 100%;
 }
 
@@ -1333,7 +1220,7 @@ exports[`Storyshots Molecules | Input / Select / MultiSelectList List with diffe
   background: #F5F5F5;
 }
 
-.c8:hover input + .c19::before {
+.c8:hover input + .c20::before {
   border: 1px solid #0046FF;
 }
 
@@ -1344,16 +1231,15 @@ exports[`Storyshots Molecules | Input / Select / MultiSelectList List with diffe
   white-space: nowrap;
   background: #FFFFFF;
   cursor: pointer;
-  color: #A0A09B;
-  pointer-events: none;
+  color: #A0A09B pointer-events:none;
 }
 
-.c13 .c19 {
+.c15 .c20 {
   width: 16px;
   height: 16px;
 }
 
-.c25 {
+.c26 {
   -webkit-flex: 1 1 100%;
   -ms-flex: 1 1 100%;
   flex: 1 1 100%;
@@ -1589,7 +1475,7 @@ exports[`Storyshots Molecules | Input / Select / MultiSelectList List with diffe
     </div>
     <div>
       <div
-        className="c3"
+        className="DropdownBubble-sc-16ly6j0-0 c3"
       >
         <div
           className="c4"
@@ -1662,7 +1548,7 @@ exports[`Storyshots Molecules | Input / Select / MultiSelectList List with diffe
                     className="c25 c26"
                   >
                     <span
-                      className="c27 c24"
+                      className="c23 c27"
                     >
                       Default?
                     </span>
@@ -1730,7 +1616,7 @@ exports[`Storyshots Molecules | Input / Select / MultiSelectList List with diffe
                     className="c25 c26"
                   >
                     <span
-                      className="c27 c24"
+                      className="c23 c27"
                     >
                       First
                     </span>
@@ -1796,7 +1682,7 @@ exports[`Storyshots Molecules | Input / Select / MultiSelectList List with diffe
                     className="c25 c26"
                   >
                     <span
-                      className="c27 c24"
+                      className="c23 c27"
                     >
                       SecondSecondSecondSecondSecondSecondSecondSecondSecondSecondSecondSecondSecondSecondSecond
                     </span>
@@ -1863,7 +1749,7 @@ exports[`Storyshots Molecules | Input / Select / MultiSelectList List with diffe
                     className="c25 c26"
                   >
                     <span
-                      className="c27 c29"
+                      className="c29 c27"
                     >
                       Disabled
                     </span>
@@ -1930,7 +1816,7 @@ exports[`Storyshots Molecules | Input / Select / MultiSelectList List with diffe
                     className="c25 c26"
                   >
                     <span
-                      className="c27 c29"
+                      className="c29 c27"
                     >
                       Disabled
                     </span>
@@ -1997,7 +1883,7 @@ exports[`Storyshots Molecules | Input / Select / MultiSelectList List with diffe
                     className="c25 c26"
                   >
                     <span
-                      className="c27 c29"
+                      className="c29 c27"
                     >
                       Disabled
                     </span>
@@ -2064,7 +1950,7 @@ exports[`Storyshots Molecules | Input / Select / MultiSelectList List with diffe
                     className="c25 c26"
                   >
                     <span
-                      className="c27 c29"
+                      className="c29 c27"
                     >
                       Disabled
                     </span>
@@ -2131,7 +2017,7 @@ exports[`Storyshots Molecules | Input / Select / MultiSelectList List with diffe
                     className="c25 c26"
                   >
                     <span
-                      className="c27 c29"
+                      className="c29 c27"
                     >
                       Disabled
                     </span>
@@ -2198,7 +2084,7 @@ exports[`Storyshots Molecules | Input / Select / MultiSelectList List with diffe
                     className="c25 c26"
                   >
                     <span
-                      className="c27 c29"
+                      className="c29 c27"
                     >
                       Disabled
                     </span>
@@ -2265,7 +2151,7 @@ exports[`Storyshots Molecules | Input / Select / MultiSelectList List with diffe
                     className="c25 c26"
                   >
                     <span
-                      className="c27 c29"
+                      className="c29 c27"
                     >
                       Disabled
                     </span>
@@ -2332,7 +2218,7 @@ exports[`Storyshots Molecules | Input / Select / MultiSelectList List with diffe
                     className="c25 c26"
                   >
                     <span
-                      className="c27 c29"
+                      className="c29 c27"
                     >
                       Disabled
                     </span>
@@ -2399,7 +2285,7 @@ exports[`Storyshots Molecules | Input / Select / MultiSelectList List with diffe
                     className="c25 c26"
                   >
                     <span
-                      className="c27 c29"
+                      className="c29 c27"
                     >
                       Disabled
                     </span>
@@ -2466,7 +2352,7 @@ exports[`Storyshots Molecules | Input / Select / MultiSelectList List with diffe
                     className="c25 c26"
                   >
                     <span
-                      className="c27 c29"
+                      className="c29 c27"
                     >
                       Disabled
                     </span>
@@ -2493,7 +2379,7 @@ exports[`Storyshots Molecules | Input / Select / MultiSelectList List with diffe
     </div>
     <div>
       <div
-        className="c31"
+        className="DropdownBubble-sc-16ly6j0-0 c31"
       >
         <div
           className="c4"
@@ -2566,7 +2452,7 @@ exports[`Storyshots Molecules | Input / Select / MultiSelectList List with diffe
                     className="c25 c26"
                   >
                     <span
-                      className="c27 c24"
+                      className="c23 c27"
                     >
                       Default?
                     </span>
@@ -2634,7 +2520,7 @@ exports[`Storyshots Molecules | Input / Select / MultiSelectList List with diffe
                     className="c25 c26"
                   >
                     <span
-                      className="c27 c24"
+                      className="c23 c27"
                     >
                       First
                     </span>
@@ -2701,7 +2587,7 @@ exports[`Storyshots Molecules | Input / Select / MultiSelectList List with diffe
                     className="c25 c26"
                   >
                     <span
-                      className="c27 c29"
+                      className="c29 c27"
                     >
                       Disabled
                     </span>
@@ -2768,7 +2654,7 @@ exports[`Storyshots Molecules | Input / Select / MultiSelectList List with diffe
                     className="c25 c26"
                   >
                     <span
-                      className="c27 c29"
+                      className="c29 c27"
                     >
                       Disabled
                     </span>
@@ -2835,7 +2721,7 @@ exports[`Storyshots Molecules | Input / Select / MultiSelectList List with diffe
                     className="c25 c26"
                   >
                     <span
-                      className="c27 c29"
+                      className="c29 c27"
                     >
                       Disabled
                     </span>
@@ -2902,7 +2788,7 @@ exports[`Storyshots Molecules | Input / Select / MultiSelectList List with diffe
                     className="c25 c26"
                   >
                     <span
-                      className="c27 c29"
+                      className="c29 c27"
                     >
                       Disabled
                     </span>
@@ -2969,7 +2855,7 @@ exports[`Storyshots Molecules | Input / Select / MultiSelectList List with diffe
                     className="c25 c26"
                   >
                     <span
-                      className="c27 c29"
+                      className="c29 c27"
                     >
                       Disabled
                     </span>
@@ -3036,7 +2922,7 @@ exports[`Storyshots Molecules | Input / Select / MultiSelectList List with diffe
                     className="c25 c26"
                   >
                     <span
-                      className="c27 c29"
+                      className="c29 c27"
                     >
                       Disabled
                     </span>
@@ -3103,7 +2989,7 @@ exports[`Storyshots Molecules | Input / Select / MultiSelectList List with diffe
                     className="c25 c26"
                   >
                     <span
-                      className="c27 c29"
+                      className="c29 c27"
                     >
                       Disabled
                     </span>
@@ -3170,7 +3056,7 @@ exports[`Storyshots Molecules | Input / Select / MultiSelectList List with diffe
                     className="c25 c26"
                   >
                     <span
-                      className="c27 c29"
+                      className="c29 c27"
                     >
                       Disabled
                     </span>
@@ -3237,7 +3123,7 @@ exports[`Storyshots Molecules | Input / Select / MultiSelectList List with diffe
                     className="c25 c26"
                   >
                     <span
-                      className="c27 c29"
+                      className="c29 c27"
                     >
                       Disabled
                     </span>
@@ -3304,7 +3190,7 @@ exports[`Storyshots Molecules | Input / Select / MultiSelectList List with diffe
                     className="c25 c26"
                   >
                     <span
-                      className="c27 c29"
+                      className="c29 c27"
                     >
                       Disabled
                     </span>
@@ -3331,7 +3217,7 @@ exports[`Storyshots Molecules | Input / Select / MultiSelectList List with diffe
     </div>
     <div>
       <div
-        className="c32"
+        className="DropdownBubble-sc-16ly6j0-0 c32"
       >
         <div
           className="c4"
@@ -3404,7 +3290,7 @@ exports[`Storyshots Molecules | Input / Select / MultiSelectList List with diffe
                     className="c25 c26"
                   >
                     <span
-                      className="c27 c24"
+                      className="c23 c27"
                     >
                       Default?
                     </span>
@@ -3472,7 +3358,7 @@ exports[`Storyshots Molecules | Input / Select / MultiSelectList List with diffe
                     className="c25 c26"
                   >
                     <span
-                      className="c27 c24"
+                      className="c23 c27"
                     >
                       First
                     </span>
@@ -3538,7 +3424,7 @@ exports[`Storyshots Molecules | Input / Select / MultiSelectList List with diffe
                     className="c25 c26"
                   >
                     <span
-                      className="c27 c24"
+                      className="c23 c27"
                     >
                       Second
                     </span>
@@ -3605,7 +3491,7 @@ exports[`Storyshots Molecules | Input / Select / MultiSelectList List with diffe
                     className="c25 c26"
                   >
                     <span
-                      className="c27 c29"
+                      className="c29 c27"
                     >
                       Disabled
                     </span>
@@ -3672,7 +3558,7 @@ exports[`Storyshots Molecules | Input / Select / MultiSelectList List with diffe
                     className="c25 c26"
                   >
                     <span
-                      className="c27 c29"
+                      className="c29 c27"
                     >
                       Disabled
                     </span>
@@ -3739,7 +3625,7 @@ exports[`Storyshots Molecules | Input / Select / MultiSelectList List with diffe
                     className="c25 c26"
                   >
                     <span
-                      className="c27 c29"
+                      className="c29 c27"
                     >
                       Disabled
                     </span>
@@ -3806,7 +3692,7 @@ exports[`Storyshots Molecules | Input / Select / MultiSelectList List with diffe
                     className="c25 c26"
                   >
                     <span
-                      className="c27 c29"
+                      className="c29 c27"
                     >
                       Disabled
                     </span>
@@ -3873,7 +3759,7 @@ exports[`Storyshots Molecules | Input / Select / MultiSelectList List with diffe
                     className="c25 c26"
                   >
                     <span
-                      className="c27 c29"
+                      className="c29 c27"
                     >
                       Disabled
                     </span>
@@ -3940,7 +3826,7 @@ exports[`Storyshots Molecules | Input / Select / MultiSelectList List with diffe
                     className="c25 c26"
                   >
                     <span
-                      className="c27 c29"
+                      className="c29 c27"
                     >
                       Disabled
                     </span>
@@ -4007,7 +3893,7 @@ exports[`Storyshots Molecules | Input / Select / MultiSelectList List with diffe
                     className="c25 c26"
                   >
                     <span
-                      className="c27 c29"
+                      className="c29 c27"
                     >
                       Disabled
                     </span>
@@ -4074,7 +3960,7 @@ exports[`Storyshots Molecules | Input / Select / MultiSelectList List with diffe
                     className="c25 c26"
                   >
                     <span
-                      className="c27 c29"
+                      className="c29 c27"
                     >
                       Disabled
                     </span>
@@ -4141,7 +4027,7 @@ exports[`Storyshots Molecules | Input / Select / MultiSelectList List with diffe
                     className="c25 c26"
                   >
                     <span
-                      className="c27 c29"
+                      className="c29 c27"
                     >
                       Disabled
                     </span>
@@ -4208,7 +4094,7 @@ exports[`Storyshots Molecules | Input / Select / MultiSelectList List with diffe
                     className="c25 c26"
                   >
                     <span
-                      className="c27 c29"
+                      className="c29 c27"
                     >
                       Disabled
                     </span>

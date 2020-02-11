@@ -1,6 +1,6 @@
 import { css } from 'styled-components';
 import { InternalProps, Props } from './FadedScroll.types';
-import { getValueFromNumberOrString } from '../../common/utils';
+import { getValueFromNumberOrString, isNumber } from '../../common/utils';
 
 const flexAutoHeightStyles = css`
   min-height: 0; /* Firefox */
@@ -34,7 +34,6 @@ const fadeStyles = css<InternalProps & Props>`
   background: transparent;
   z-index: 1;
   opacity: 0;
-  transition: 0.3s opacity ease-out;
 `;
 
 export const fadeTopStyles = css<InternalProps & Props>`
@@ -44,7 +43,7 @@ export const fadeTopStyles = css<InternalProps & Props>`
     ${fadeStyles}
     top: 0;
     background: linear-gradient(0deg, #ffffff00 0%, #ffffffff 100%);
-    ${p => p.intersectionTopOnScreen === false && `opacity: 1;`}
+    ${p => (isNumber(p.intersectionTopRatio) ? `opacity: ${1 - p.intersectionTopRatio}` : '')};
   }
 `;
 
@@ -61,7 +60,8 @@ export const fadeBottomStyles = css<InternalProps & Props>`
     ${fadeStyles}
     bottom: 0;
     background: linear-gradient(0deg, #ffffffff 0%, #ffffff00 100%);
-    ${p => p.intersectionBottomOnScreen === false && `opacity: 1;`}
+    ${p =>
+      isNumber(p.intersectionBottomRatio) ? `opacity: ${1 - p.intersectionBottomRatio}` : ''};
   }
 `;
 
@@ -71,8 +71,8 @@ export const fadeBottomDesktopStyles = css`
   }
 `;
 
-export const intersectionStyles = css`
-  height: ${p => p.theme.spacing.unit(1)}px;
+export const intersectionStyles = css<Props>`
+  height: ${p => p.theme.spacing.unit(4)}px;
   width: ${p => p.theme.spacing.unit(1)}px;
   position: absolute;
   right: 0;
@@ -84,7 +84,7 @@ export const containerStyles = css<Props>`
   ${p => !p.maxHeight && `
     display: flex;
     height: 100%;
-    
+
     ${flexAutoHeightStyles}
   `}
 `;
@@ -94,6 +94,6 @@ export const scrollerStyles = css<Props>`
   ${p => !p.maxHeight && `
     flex-grow: 1;
   `}
-  
+
   ${p => (p.enableMobileFade ? scrollStyles : scrollDesktopStyles)}
 `;

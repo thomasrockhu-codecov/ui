@@ -1157,7 +1157,7 @@ exports[`Storyshots Atoms | Table Integration: Table (stickyHeader) with Typogra
     width="100%"
   >
     <thead
-      className="c2"
+      className="Thead__StyledThead-ck14n6-0 c2"
     >
       <tr
         className="c3"
@@ -10320,20 +10320,6 @@ exports[`Storyshots Atoms | Table Integration: Table with Typography and ellipsi
   padding-right: 0;
 }
 
-.c12 {
-  height: 100%;
-  padding: 8px 4px;
-  text-align: right;
-}
-
-.c12:first-child {
-  padding-left: 0;
-}
-
-.c12:last-child {
-  padding-right: 0;
-}
-
 .c11 {
   height: 100%;
   padding: 8px 4px;
@@ -10348,6 +10334,20 @@ exports[`Storyshots Atoms | Table Integration: Table with Typography and ellipsi
 }
 
 .c11:last-child {
+  padding-right: 0;
+}
+
+.c12 {
+  height: 100%;
+  padding: 8px 4px;
+  text-align: right;
+}
+
+.c12:first-child {
+  padding-left: 0;
+}
+
+.c12:last-child {
   padding-right: 0;
 }
 

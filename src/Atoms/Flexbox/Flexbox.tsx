@@ -14,6 +14,13 @@ const getSizeStyles = (size: Props['size']) => {
     return null;
   }
 
+  if (size === 'unset') {
+    return `
+      max-width: none;
+      flex-basis: auto;
+    `;
+  }
+
   if (isNumber(size)) {
     const percentage = `${oneCol * size}%`;
 
