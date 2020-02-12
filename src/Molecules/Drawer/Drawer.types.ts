@@ -3,6 +3,7 @@ export type Props = {
   onClose?: Function;
   title?: React.ReactNode;
   open?: boolean;
+  ref?: React.Ref<HTMLDivElement>;
 };
 
 export type TitleProps = {
