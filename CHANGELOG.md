@@ -1,3 +1,10 @@
+## [2.17.4](https://github.com/nordnet/ui/compare/v2.17.3...v2.17.4) (2020-02-13)
+
+
+### Bug Fixes
+
+* adding forward ref to drawer ([af733a4](https://github.com/nordnet/ui/commit/af733a4))
+
 ## [2.17.3](https://github.com/nordnet/ui/compare/v2.17.2...v2.17.3) (2020-02-10)
 
 
