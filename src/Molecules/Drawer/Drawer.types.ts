@@ -10,5 +10,3 @@ export type TitleProps = {
   title: React.ReactNode;
   uid: string;
 };
-
-export type DrawerComponent = React.FC<Props>;

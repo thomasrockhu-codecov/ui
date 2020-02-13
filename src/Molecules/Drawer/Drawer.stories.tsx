@@ -1,5 +1,6 @@
-import React, { useState } from 'react';
+import React, { useState, useRef } from 'react';
 import { Drawer, Typography, Icon, Flexbox } from '../../index';
+import { useOnClickOutside } from '../../common/Hooks';
 
 export default {
   title: 'Molecules | Drawer',
@@ -116,4 +117,40 @@ export const withCustomTitle = () => {
 
 withCustomTitle.story = {
   name: 'With a custom title',
+};
+
+export const WithRefStory = () => {
+  const Example = () => {
+    const [open, setOpen] = useState(true);
+
+    const toggle = () => {
+      setOpen(!open);
+    };
+
+    const onClose = () => {
+      setOpen(false);
+    };
+
+    const ref = useRef<HTMLDivElement>(null);
+    useOnClickOutside(ref, onClose);
+
+    return (
+      <div>
+        <button type="button" onClick={toggle}>
+          Toggle drawer
+        </button>
+        <Drawer onClose={onClose} title="Drawer title" open={open} ref={ref}>
+          <Typography>
+            This Drawer uses a forwardRef. The ref is used with useOnClickOutside hook. Try to click
+            outside the Drawer to close it.
+          </Typography>
+        </Drawer>
+      </div>
+    );
+  };
+  return <Example />;
+};
+
+WithRefStory.story = {
+  name: 'With ref story',
 };
