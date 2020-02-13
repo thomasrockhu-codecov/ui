@@ -4,7 +4,7 @@ import styled from 'styled-components';
 import FocusLock from 'react-focus-lock';
 import { RemoveScroll } from 'react-remove-scroll';
 import { motion } from 'framer-motion';
-import { DrawerComponent, TitleProps } from './Drawer.types';
+import { Props, TitleProps } from './Drawer.types';
 import { isBoolean, isElement } from '../../common/utils';
 import {
   Flexbox,
@@ -91,50 +91,52 @@ const Title: React.FC<TitleProps> = ({ title, uid }) => {
   );
 };
 
-export const Drawer: DrawerComponent & {
+export const Drawer = (React.forwardRef<HTMLDivElement, Props>(
+  ({ className, children, onClose, open: isOpenExternal, title }, ref) => {
+    const isControlled = isBoolean(isOpenExternal);
+    const escapePress = useKeyPress('Escape');
+    const [isOpenInternal, setIsOpenInternal] = useState(true);
+    const isOpen = isControlled ? isOpenExternal : isOpenInternal;
+    const isDesktop = useMedia(t => t.media.greaterThan(t.breakpoints.sm)) || false;
+    const seed = useUIDSeed();
+    const uid = seed(displayName);
+
+    const handleCloseClick = useCallback(() => {
+      setIsOpenInternal(false);
+
+      if (onClose) {
+        onClose();
+      }
+    }, [onClose]);
+
+    useEffect(() => {
+      if (isOpen && escapePress) {
+        handleCloseClick();
+      }
+    }, [escapePress, handleCloseClick, isOpen]);
+
+    return isOpen ? (
+      <Portal>
+        <FocusLock disabled={isDesktop}>
+          <RemoveScroll enabled={!isDesktop}>
+            <Container className={className} aria-labelledby={uid} {...animationProps} ref={ref}>
+              <Box mb={2}>
+                <Flexbox container alignItems="baseline">
+                  {title && <Title title={title} uid={uid} />}
+                  <CloseButton type="button" variant="neutral" onClick={handleCloseClick}>
+                    <Icon.CrossThin size={5} title="Close this drawer" />
+                  </CloseButton>
+                </Flexbox>
+              </Box>
+              <FadedScroll>{children}</FadedScroll>
+            </Container>
+          </RemoveScroll>
+        </FocusLock>
+      </Portal>
+    ) : null;
+  },
+) as any) as React.FC<Props> & {
   components: typeof components;
-} = ({ className, children, onClose, open: isOpenExternal, title }) => {
-  const isControlled = isBoolean(isOpenExternal);
-  const escapePress = useKeyPress('Escape');
-  const [isOpenInternal, setIsOpenInternal] = useState(true);
-  const isOpen = isControlled ? isOpenExternal : isOpenInternal;
-  const isDesktop = useMedia(t => t.media.greaterThan(t.breakpoints.sm)) || false;
-  const seed = useUIDSeed();
-  const uid = seed(displayName);
-
-  const handleCloseClick = useCallback(() => {
-    setIsOpenInternal(false);
-
-    if (onClose) {
-      onClose();
-    }
-  }, [onClose]);
-
-  useEffect(() => {
-    if (isOpen && escapePress) {
-      handleCloseClick();
-    }
-  }, [escapePress, handleCloseClick, isOpen]);
-
-  return isOpen ? (
-    <Portal>
-      <FocusLock disabled={isDesktop}>
-        <RemoveScroll enabled={!isDesktop}>
-          <Container className={className} aria-labelledby={uid} {...animationProps}>
-            <Box mb={2}>
-              <Flexbox container alignItems="baseline">
-                {title && <Title title={title} uid={uid} />}
-                <CloseButton type="button" variant="neutral" onClick={handleCloseClick}>
-                  <Icon.CrossThin size={5} title="Close this drawer" />
-                </CloseButton>
-              </Flexbox>
-            </Box>
-            <FadedScroll>{children}</FadedScroll>
-          </Container>
-        </RemoveScroll>
-      </FocusLock>
-    </Portal>
-  ) : null;
 };
 
 Drawer.components = components;
