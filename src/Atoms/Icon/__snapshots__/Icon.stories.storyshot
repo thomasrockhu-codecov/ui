@@ -278,6 +278,42 @@ Array [
       focusable="false"
       preserveAspectRatio="xMidYMid meet"
       role="presentation"
+      viewBox="0 0 24 24"
+    >
+      <path
+        d="M24.375 1.625v22.75H1.625V1.625zM3.25 9.75v13h19.5v-13zM6.5 4.875V6.5H4.875V4.875zm3.25 0V6.5H8.125V4.875zm3.25 0V6.5h-1.625V4.875zm-9.75 3.25h19.5V3.25H3.25zm0 0"
+        transform="translate(-1,-1)"
+      />
+    </svg>
+  </div>,
+  .c0 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 20px;
+  height: 20px;
+  fill: #0046FF;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
+}
+
+<div
+    style={
+      Object {
+        "display": "inline-block",
+        "outline": "1px dashed #bbb",
+      }
+    }
+  >
+    <svg
+      aria-hidden="true"
+      className="c0"
+      focusable="false"
+      preserveAspectRatio="xMidYMid meet"
+      role="presentation"
       viewBox="0 0 20 18"
     >
       <path
@@ -2470,6 +2506,40 @@ exports[`Storyshots Atoms | Icon Available Icons 1`] = `
           <path
             d="M15 0L3 13.5h7.5L9 24l12-13.5h-7.5z"
             id="a"
+          />
+        </svg>
+      </div>
+    </div>
+  </div>
+  <div
+    className="c1"
+    direction="row"
+  >
+    <div
+      className="c2"
+    >
+      BrowserWindow
+    </div>
+    <div>
+      <div
+        style={
+          Object {
+            "display": "inline-block",
+            "outline": "1px dashed #bbb",
+          }
+        }
+      >
+        <svg
+          aria-hidden="true"
+          className="c3"
+          focusable="false"
+          preserveAspectRatio="xMidYMid meet"
+          role="presentation"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M24.375 1.625v22.75H1.625V1.625zM3.25 9.75v13h19.5v-13zM6.5 4.875V6.5H4.875V4.875zm3.25 0V6.5H8.125V4.875zm3.25 0V6.5h-1.625V4.875zm-9.75 3.25h19.5V3.25H3.25zm0 0"
+            transform="translate(-1,-1)"
           />
         </svg>
       </div>
