@@ -7,22 +7,21 @@ import { motion } from 'framer-motion';
 import { Props, TitleProps } from './Drawer.types';
 import { isBoolean, isElement } from '../../common/utils';
 import {
-  Flexbox,
-  Typography,
-  Icon,
-  Box,
   useKeyPress,
   FadedScroll,
   Portal,
   useMedia,
+  Flexbox,
+  Typography,
   Button,
+  Icon,
 } from '../..';
 
 const displayName = 'Drawer';
 
 const Container = styled(motion.div)`
   box-sizing: border-box;
-  padding: ${({ theme }) => theme.spacing.unit(5)}px;
+  // padding: ${({ theme }) => theme.spacing.unit(5)}px;
   width: 100%;
   height: 100%;
   background: ${({ theme }) => theme.color.card};
@@ -41,10 +40,6 @@ const Container = styled(motion.div)`
   ${({ theme }) => theme.media.greaterThan(theme.breakpoints.xl)} {
     width: ${({ theme }) => theme.spacing.unit(120)}px;
   }
-`;
-
-const CloseButton = styled(Button)`
-  margin-left: auto;
 `;
 
 const Content = styled.div`
@@ -91,8 +86,24 @@ const Title: React.FC<TitleProps> = ({ title, uid }) => {
   );
 };
 
+const MainTitle = styled(Flexbox)`
+  width: 100%;
+`;
+
+const TitleWrapper = styled(Flexbox)`
+  padding: ${({ theme }) => theme.spacing.unit(5)}px;
+  padding-bottom: ${({ theme }) => theme.spacing.unit(0)}px;
+  background: ${({ theme }) => theme.color.card};
+`;
+
+const Subtitle = styled(Flexbox)`
+  margin-top: ${({ theme }) => theme.spacing.unit(5)}px;
+  margin-bottom: ${({ theme }) => theme.spacing.unit(5)}px;
+  width: 100%;
+`;
+
 export const Drawer = (React.forwardRef<HTMLDivElement, Props>(
-  ({ className, children, onClose, open: isOpenExternal, title }, ref) => {
+  ({ className, children, onClose, open: isOpenExternal, title, subtitle }, ref) => {
     const isControlled = isBoolean(isOpenExternal);
     const escapePress = useKeyPress('Escape');
     const [isOpenInternal, setIsOpenInternal] = useState(true);
@@ -120,14 +131,28 @@ export const Drawer = (React.forwardRef<HTMLDivElement, Props>(
         <FocusLock disabled={isDesktop}>
           <RemoveScroll enabled={!isDesktop}>
             <Container className={className} aria-labelledby={uid} {...animationProps} ref={ref}>
-              <Box mb={2}>
-                <Flexbox container alignItems="baseline">
-                  {title && <Title title={title} uid={uid} />}
-                  <CloseButton type="button" variant="neutral" onClick={handleCloseClick}>
-                    <Icon.CrossThin size={5} title="Close this drawer" />
-                  </CloseButton>
-                </Flexbox>
-              </Box>
+              <TitleWrapper container direction="column">
+                {title && (
+                  <MainTitle
+                    container
+                    direction="row"
+                    alignItems="baseline"
+                    justifyContent="space-between"
+                  >
+                    <Title title={title} uid={uid} />
+                    <Button type="button" variant="neutral" onClick={handleCloseClick}>
+                      <Icon.CrossThin size={5} title="Close this drawer" />
+                    </Button>
+                  </MainTitle>
+                )}
+
+                {subtitle && (
+                  <Subtitle item>
+                    {subtitle} {/* TODO: Create a subtitle component */}
+                  </Subtitle>
+                )}
+              </TitleWrapper>
+
               <FadedScroll>{children}</FadedScroll>
             </Container>
           </RemoveScroll>

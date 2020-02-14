@@ -1,5 +1,5 @@
 import React, { useState, useRef } from 'react';
-import { Drawer, Typography, Icon, Flexbox } from '../../index';
+import { Drawer, Typography, Icon, Flexbox, Input } from '../../index';
 import { useOnClickOutside } from '../../common/Hooks';
 
 export default {
@@ -153,4 +153,45 @@ export const WithRefStory = () => {
 
 WithRefStory.story = {
   name: 'With ref story',
+};
+
+export const WithSubtitleStory = () => {
+  const Example = () => {
+    const [open, setOpen] = useState(true);
+
+    const toggle = () => {
+      setOpen(!open);
+    };
+
+    const onClose = () => {
+      setOpen(false);
+    };
+
+    const ref = useRef<HTMLDivElement>(null);
+    useOnClickOutside(ref, onClose);
+
+    return (
+      <div>
+        <button type="button" onClick={toggle}>
+          Toggle drawer
+        </button>
+        <Drawer
+          onClose={onClose}
+          title="Drawer title"
+          subtitle={<Input.Text width="100%" value="" placeholder="placeholder" label="" />}
+          open={open}
+        >
+          <Typography>
+            This Drawer uses a forwardRef. The ref is used with useOnClickOutside hook. Try to click
+            outside the Drawer to close it.
+          </Typography>
+        </Drawer>
+      </div>
+    );
+  };
+  return <Example />;
+};
+
+WithSubtitleStory.story = {
+  name: 'With subtitle story',
 };
