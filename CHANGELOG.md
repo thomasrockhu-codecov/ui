@@ -1,3 +1,11 @@
+## [2.17.5](https://github.com/nordnet/ui/compare/v2.17.4...v2.17.5) (2020-02-14)
+
+
+### Bug Fixes
+
+* make drawer title not shrink ([81d046d](https://github.com/nordnet/ui/commit/81d046d))
+* set drawer cross icon position absolute ([c87fb15](https://github.com/nordnet/ui/commit/c87fb15))
+
 ## [2.17.4](https://github.com/nordnet/ui/compare/v2.17.3...v2.17.4) (2020-02-13)
 
 
