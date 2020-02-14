@@ -6,18 +6,9 @@ import { RemoveScroll } from 'react-remove-scroll';
 import { motion } from 'framer-motion';
 import { Props, TitleProps } from './Drawer.types';
 import { isBoolean, isElement } from '../../common/utils';
-import {
-  Flexbox,
-  Typography,
-  Icon,
-  Box,
-  useKeyPress,
-  FadedScroll,
-  Portal,
-  useMedia,
-  Button,
-} from '../..';
+import { Typography, Icon, useKeyPress, FadedScroll, Portal, useMedia, Button } from '../..';
 
+const CROSS_SIZE = 5;
 const displayName = 'Drawer';
 
 const Container = styled(motion.div)`
@@ -44,7 +35,9 @@ const Container = styled(motion.div)`
 `;
 
 const CloseButton = styled(Button)`
-  margin-left: auto;
+  position: absolute;
+  top: 0;
+  right: 0;
 `;
 
 const Content = styled.div`
@@ -54,6 +47,12 @@ const Content = styled.div`
 
 const H2 = styled.h2`
   padding-right: ${p => p.theme.spacing.unit(4)}px;
+`;
+
+const TitleWrapper = styled.div`
+  position: relative;
+  margin-bottom: ${p => p.theme.spacing.unit(2)}px;
+  min-height: ${p => p.theme.spacing.unit(CROSS_SIZE)}px;
 `;
 
 const animationProps = {
@@ -75,6 +74,7 @@ const animationProps = {
 const components = {
   Container,
   Content,
+  TitleWrapper,
 };
 
 const Title: React.FC<TitleProps> = ({ title, uid }) => {
@@ -120,14 +120,12 @@ export const Drawer = (React.forwardRef<HTMLDivElement, Props>(
         <FocusLock disabled={isDesktop}>
           <RemoveScroll enabled={!isDesktop}>
             <Container className={className} aria-labelledby={uid} {...animationProps} ref={ref}>
-              <Box mb={2}>
-                <Flexbox container alignItems="baseline">
-                  {title && <Title title={title} uid={uid} />}
-                  <CloseButton type="button" variant="neutral" onClick={handleCloseClick}>
-                    <Icon.CrossThin size={5} title="Close this drawer" />
-                  </CloseButton>
-                </Flexbox>
-              </Box>
+              <TitleWrapper>
+                {title && <Title title={title} uid={uid} />}
+                <CloseButton type="button" variant="neutral" onClick={handleCloseClick}>
+                  <Icon.CrossThin size={CROSS_SIZE} title="Close this drawer" />
+                </CloseButton>
+              </TitleWrapper>
               <FadedScroll>{children}</FadedScroll>
             </Container>
           </RemoveScroll>
