@@ -53,6 +53,7 @@ const TitleWrapper = styled.div`
   position: relative;
   margin-bottom: ${p => p.theme.spacing.unit(2)}px;
   min-height: ${p => p.theme.spacing.unit(CROSS_SIZE)}px;
+  flex: 1 0 auto;
 `;
 
 const animationProps = {

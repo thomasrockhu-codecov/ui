@@ -160,6 +160,9 @@ exports[`Storyshots Molecules | Drawer Default Story 1`] = `
   position: relative;
   margin-bottom: 8px;
   min-height: 20px;
+  -webkit-flex: 1 0 auto;
+  -ms-flex: 1 0 auto;
+  flex: 1 0 auto;
 }
 
 @media (min-width:976px) {
@@ -574,6 +577,9 @@ exports[`Storyshots Molecules | Drawer With Custom Title 1`] = `
   position: relative;
   margin-bottom: 8px;
   min-height: 20px;
+  -webkit-flex: 1 0 auto;
+  -ms-flex: 1 0 auto;
+  flex: 1 0 auto;
 }
 
 @media (min-width:976px) {
@@ -985,6 +991,9 @@ exports[`Storyshots Molecules | Drawer With Ref Story 1`] = `
   position: relative;
   margin-bottom: 8px;
   min-height: 20px;
+  -webkit-flex: 1 0 auto;
+  -ms-flex: 1 0 auto;
+  flex: 1 0 auto;
 }
 
 @media (min-width:976px) {
