@@ -5,6 +5,7 @@ import { Attachement } from './components/Attachement';
 import { Bank } from './components/Bank';
 import { Bell } from './components/Bell';
 import { Bolt } from './components/Bolt';
+import { BrowserWindow } from './components/BrowserWindow';
 import { Calendar } from './components/Calendar';
 import { CheckMark } from './components/CheckMark';
 import { CheckMarkCircle } from './components/CheckMarkCircle';
@@ -58,6 +59,7 @@ export default {
   Bank,
   Bell,
   Bolt,
+  BrowserWindow,
   Calendar,
   CheckMark,
   CheckMarkCircle,
