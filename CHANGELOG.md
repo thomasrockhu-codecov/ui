@@ -1,3 +1,10 @@
+## [2.17.6](https://github.com/nordnet/ui/compare/v2.17.5...v2.17.6) (2020-02-18)
+
+
+### Bug Fixes
+
+* add browser icon ([6a89f1b](https://github.com/nordnet/ui/commit/6a89f1b))
+
 ## [2.17.5](https://github.com/nordnet/ui/compare/v2.17.4...v2.17.5) (2020-02-14)
 
 
