@@ -1,3 +1,10 @@
+## [2.17.7](https://github.com/nordnet/ui/compare/v2.17.6...v2.17.7) (2020-02-19)
+
+
+### Bug Fixes
+
+* remove built in fadedscroll ([0fe4dc5](https://github.com/nordnet/ui/commit/0fe4dc5))
+
 ## [2.17.6](https://github.com/nordnet/ui/compare/v2.17.5...v2.17.6) (2020-02-18)
 
 
