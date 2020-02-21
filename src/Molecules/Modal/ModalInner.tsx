@@ -108,7 +108,7 @@ export const ModalInner: React.FC<Props> = ({
   };
   const seed = useUIDSeed();
   const titleId = seed('ModalTitle');
-  const hasHeader = hideClose || title;
+  const hasHeader = !hideClose || title;
 
   useEffect(() => {
     setShow(true); // Show is only used for animation
