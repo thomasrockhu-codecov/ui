@@ -1,3 +1,11 @@
+## [2.17.8](https://github.com/nordnet/ui/compare/v2.17.7...v2.17.8) (2020-02-21)
+
+
+### Bug Fixes
+
+* **input:** adjust radio size and add background color ([1046d1b](https://github.com/nordnet/ui/commit/1046d1b))
+* **modal:** fix logic to hide header ([4710d9e](https://github.com/nordnet/ui/commit/4710d9e))
+
 ## [2.17.7](https://github.com/nordnet/ui/compare/v2.17.6...v2.17.7) (2020-02-19)
 
 
