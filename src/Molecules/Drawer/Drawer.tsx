@@ -155,6 +155,22 @@ export const Drawer = (React.forwardRef<HTMLDivElement, Props>(
       }
     }, [onClose]);
 
+    const handleDragEnd = useCallback(
+      (_, info) => {
+        if (info.offset.x < 0) {
+          setSwipeDirection('left');
+        } else {
+          setSwipeDirection('right');
+        }
+        if (shouldCloseBecauseOfDrag(info)) {
+          handleCloseClick();
+        } else {
+          // Todo: handle small offsets -> rollback
+        }
+      },
+      [handleCloseClick],
+    );
+
     useEffect(() => {
       if (isOpen && escapePress) {
         handleCloseClick();
@@ -177,18 +193,7 @@ export const Drawer = (React.forwardRef<HTMLDivElement, Props>(
                   dragControls={dragControls}
                   dragListener={false}
                   drag="x"
-                  onDragEnd={(_, info) => {
-                    if (info.offset.x < 0) {
-                      setSwipeDirection('left');
-                    } else {
-                      setSwipeDirection('right');
-                    }
-                    if (shouldCloseBecauseOfDrag(info)) {
-                      handleCloseClick();
-                    } else {
-                      // Todo: handle small offsets -> rollback
-                    }
-                  }}
+                  onDragEnd={handleDragEnd}
                 >
                   <TitleWrapper onTouchStart={startDrag}>
                     {title && <Title title={title} uid={uid} />}
