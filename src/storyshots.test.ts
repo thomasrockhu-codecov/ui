@@ -15,6 +15,21 @@ addSerializer(styleSheetSerializer);
 // @ts-ignore
 ReactDOM.createPortal = node => React.createElement('portal-dummy', null, node);
 
+jest.mock('framer-motion', () => {
+  const React = require('react'); // eslint-disable-line global-require,no-shadow
+  const Dummy = (type = React.Fragment) => ({ children }) =>
+    React.createElement(type, {}, ...(Array.isArray(children) ? children : [children]));
+
+  return {
+    motion: {
+      span: Dummy('span'),
+      div: Dummy('div'),
+    },
+    useDragControls: () => ({}),
+    AnimatePresence: Dummy(),
+  };
+});
+
 Math.random = () => 0.421;
 
 /* eslint-disable */
