@@ -3,7 +3,7 @@ import { useUIDSeed } from 'react-uid';
 import styled from 'styled-components';
 import FocusLock from 'react-focus-lock';
 import { RemoveScroll } from 'react-remove-scroll';
-import { motion } from 'framer-motion';
+import { motion, useDragControls, AnimatePresence, PanInfo } from 'framer-motion';
 import { Props, TitleProps } from './Drawer.types';
 import { isBoolean, isElement } from '../../common/utils';
 import { Typography, Icon, useKeyPress, Portal, useMedia, Button } from '../..';
@@ -63,20 +63,19 @@ const TitleWrapper = styled.div`
 `;
 
 const animationProps = {
-  initial: {
-    opacity: 0,
-    x: 70,
-  },
   animate: {
     opacity: 1,
     x: 0,
   },
   transition: {
-    type: 'spring',
-    damping: 15,
-    stiffness: 200,
+    ease: 'easeInOut',
+    duration: 0.2,
   },
 };
+
+// Todo: handle rollback if small offset
+const shouldCloseBecauseOfDrag = (info: PanInfo) =>
+  Math.abs(info.offset.x) > 0 || Math.abs(info.velocity.x) > 300;
 
 const components = {
   CloseButton,
@@ -99,6 +98,29 @@ const Title: React.FC<TitleProps> = ({ title, uid }) => {
   );
 };
 
+const useDifferentAnimationBasedOnSwipeDirection = () => {
+  const [swipeDirection, setSwipeDirection] = React.useState('right');
+  const exitAnimation = React.useMemo(
+    () => ({
+      opacity: 0,
+      x: swipeDirection === 'right' ? 700 : -700,
+    }),
+    [swipeDirection],
+  );
+  const initialAnimation = React.useMemo(
+    () => ({
+      opacity: 0,
+      x: swipeDirection === 'right' ? 70 : -70,
+    }),
+    [swipeDirection],
+  );
+  return {
+    setSwipeDirection,
+    exitAnimation,
+    initialAnimation,
+  };
+};
+
 export const Drawer = (React.forwardRef<HTMLDivElement, Props>(
   ({ className, children, disableContentStyle, onClose, open: isOpenExternal, title }, ref) => {
     const isControlled = isBoolean(isOpenExternal);
@@ -108,6 +130,22 @@ export const Drawer = (React.forwardRef<HTMLDivElement, Props>(
     const isDesktop = useMedia(t => t.media.greaterThan(t.breakpoints.sm)) || false;
     const seed = useUIDSeed();
     const uid = seed(displayName);
+    const dragControls = useDragControls();
+
+    const {
+      setSwipeDirection,
+      exitAnimation,
+      initialAnimation,
+    } = useDifferentAnimationBasedOnSwipeDirection();
+
+    const startDrag = useCallback(
+      event => {
+        dragControls.start(event, {
+          snapToCursor: false,
+        });
+      },
+      [dragControls],
+    );
 
     const handleCloseClick = useCallback(() => {
       setIsOpenInternal(false);
@@ -117,29 +155,60 @@ export const Drawer = (React.forwardRef<HTMLDivElement, Props>(
       }
     }, [onClose]);
 
+    const handleDragEnd = useCallback(
+      (_, info) => {
+        if (info.offset.x < 0) {
+          setSwipeDirection('left');
+        } else {
+          setSwipeDirection('right');
+        }
+        if (shouldCloseBecauseOfDrag(info)) {
+          handleCloseClick();
+        } else {
+          // Todo: handle small offsets -> rollback
+        }
+      },
+      [handleCloseClick],
+    );
+
     useEffect(() => {
       if (isOpen && escapePress) {
         handleCloseClick();
       }
     }, [escapePress, handleCloseClick, isOpen]);
 
-    return isOpen ? (
-      <Portal>
-        <FocusLock disabled={isDesktop}>
-          <RemoveScroll enabled={!isDesktop}>
-            <Container className={className} aria-labelledby={uid} {...animationProps} ref={ref}>
-              <TitleWrapper>
-                {title && <Title title={title} uid={uid} />}
-                <CloseButton type="button" variant="neutral" onClick={handleCloseClick}>
-                  <Icon.CrossThin size={CROSS_SIZE} title="Close this drawer" />
-                </CloseButton>
-              </TitleWrapper>
-              {disableContentStyle ? children : <Content>{children}</Content>}
-            </Container>
-          </RemoveScroll>
-        </FocusLock>
-      </Portal>
-    ) : null;
+    return (
+      <AnimatePresence>
+        {isOpen ? (
+          <Portal>
+            <FocusLock disabled={isDesktop}>
+              <RemoveScroll enabled={!isDesktop}>
+                <Container
+                  className={className}
+                  aria-labelledby={uid}
+                  {...animationProps}
+                  initial={initialAnimation}
+                  exit={exitAnimation}
+                  ref={ref}
+                  dragControls={dragControls}
+                  dragListener={false}
+                  drag="x"
+                  onDragEnd={handleDragEnd}
+                >
+                  <TitleWrapper onTouchStart={startDrag}>
+                    {title && <Title title={title} uid={uid} />}
+                    <CloseButton type="button" variant="neutral" onClick={handleCloseClick}>
+                      <Icon.CrossThin size={CROSS_SIZE} title="Close this drawer" />
+                    </CloseButton>
+                  </TitleWrapper>
+                  {disableContentStyle ? children : <Content>{children}</Content>}
+                </Container>
+              </RemoveScroll>
+            </FocusLock>
+          </Portal>
+        ) : null}
+      </AnimatePresence>
+    );
   },
 ) as any) as React.FC<Props> & {
   components: typeof components;
