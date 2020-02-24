@@ -1,3 +1,10 @@
+# [2.18.0](https://github.com/nordnet/ui/compare/v2.17.8...v2.18.0) (2020-02-24)
+
+
+### Features
+
+* **drawer:** drag behaviour for touch devices ([9aa2725](https://github.com/nordnet/ui/commit/9aa2725))
+
 ## [2.17.8](https://github.com/nordnet/ui/compare/v2.17.7...v2.17.8) (2020-02-21)
 
 
