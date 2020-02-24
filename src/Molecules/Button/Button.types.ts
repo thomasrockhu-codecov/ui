@@ -4,6 +4,7 @@ import { Theme } from '../../theme/theme.types';
 
 type Colors = Theme['color'];
 type ColorFn = (t: Theme) => Colors['cta'] | Colors['negative'];
+
 export type ButtonProps = {
   /** @default primary */
   variant?: 'primary' | 'secondary' | 'neutral';
@@ -29,7 +30,7 @@ export type ButtonProps = {
   as?: any;
   loading?: boolean;
   ref?: React.Ref<HTMLAnchorElement> | React.Ref<HTMLButtonElement>;
-};
+} & Pick<React.DOMAttributes<HTMLButtonElement>, 'onMouseEnter' | 'onMouseLeave' | 'onMouseOver'>;
 
 type Omit<T, K> = Pick<T, Exclude<keyof T, K>>;
 type ForceRequired<T, K extends keyof T> = Omit<T, K> & Required<Pick<T, K>>;

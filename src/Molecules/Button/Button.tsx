@@ -72,6 +72,9 @@ export const Button: ButtonComponent = React.forwardRef<
     as,
     loading,
     external,
+    onMouseEnter,
+    onMouseLeave,
+    onMouseOver,
   } = props;
   const externalIsNotPresent = typeof external === 'undefined';
   const toAndDisabledAreNotPresentTogether = !(to && disabled);
@@ -92,6 +95,9 @@ export const Button: ButtonComponent = React.forwardRef<
     fullWidth,
     colorFn: color,
     id,
+    onMouseEnter,
+    onMouseLeave,
+    onMouseOver,
   };
 
   if (colorFromTheme && (isPrimary(variant) || isSecondary(variant))) {
