@@ -62,7 +62,8 @@ const borderStyles = css<Pick<Props, 'error' | 'success'>>`
 const SelectWrapper = styled.div`
   ${height}
   ${borderStyles}
-position:relative;
+  box-sizing: border-box;
+  position: relative;
 `;
 
 export const FormFieldOrFragment = React.forwardRef<HTMLDivElement, any>(
