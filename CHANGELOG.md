@@ -1,3 +1,10 @@
+## [2.18.1](https://github.com/nordnet/ui/compare/v2.18.0...v2.18.1) (2020-02-24)
+
+
+### Bug Fixes
+
+* 🐛 make input.select height match height of other inputs ([ced0e49](https://github.com/nordnet/ui/commit/ced0e49))
+
 # [2.18.0](https://github.com/nordnet/ui/compare/v2.17.8...v2.18.0) (2020-02-24)
 
 
