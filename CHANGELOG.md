@@ -1,3 +1,47 @@
+# [2.18.0](https://github.com/nordnet/ui/compare/v2.17.8...v2.18.0) (2020-02-24)
+
+
+### Features
+
+* **drawer:** drag behaviour for touch devices ([9aa2725](https://github.com/nordnet/ui/commit/9aa2725))
+
+## [2.17.8](https://github.com/nordnet/ui/compare/v2.17.7...v2.17.8) (2020-02-21)
+
+
+### Bug Fixes
+
+* **input:** adjust radio size and add background color ([1046d1b](https://github.com/nordnet/ui/commit/1046d1b))
+* **modal:** fix logic to hide header ([4710d9e](https://github.com/nordnet/ui/commit/4710d9e))
+
+## [2.17.7](https://github.com/nordnet/ui/compare/v2.17.6...v2.17.7) (2020-02-19)
+
+
+### Bug Fixes
+
+* remove built in fadedscroll ([0fe4dc5](https://github.com/nordnet/ui/commit/0fe4dc5))
+
+## [2.17.6](https://github.com/nordnet/ui/compare/v2.17.5...v2.17.6) (2020-02-18)
+
+
+### Bug Fixes
+
+* add browser icon ([6a89f1b](https://github.com/nordnet/ui/commit/6a89f1b))
+
+## [2.17.5](https://github.com/nordnet/ui/compare/v2.17.4...v2.17.5) (2020-02-14)
+
+
+### Bug Fixes
+
+* make drawer title not shrink ([81d046d](https://github.com/nordnet/ui/commit/81d046d))
+* set drawer cross icon position absolute ([c87fb15](https://github.com/nordnet/ui/commit/c87fb15))
+
+## [2.17.4](https://github.com/nordnet/ui/compare/v2.17.3...v2.17.4) (2020-02-13)
+
+
+### Bug Fixes
+
+* adding forward ref to drawer ([af733a4](https://github.com/nordnet/ui/commit/af733a4))
+
 ## [2.17.3](https://github.com/nordnet/ui/compare/v2.17.2...v2.17.3) (2020-02-10)
 
 
