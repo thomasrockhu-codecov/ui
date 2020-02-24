@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Storyshots Molecules | Input / Text Actions Story 1`] = `
+exports[`Storyshots Molecules | Input / Text Actions 1`] = `
 Array [
   <p>
     Actions are a bit laggy because of the @storybook/addon-actions. Prod performance is not affected.
@@ -389,7 +389,7 @@ exports[`Storyshots Molecules | Input / Text Alternating Types 1`] = `
 </form>
 `;
 
-exports[`Storyshots Molecules | Input / Text Both Addons 1`] = `
+exports[`Storyshots Molecules | Input / Text Both addons 1`] = `
 .c3 {
   box-sizing: border-box;
   display: -webkit-box;
@@ -603,7 +603,7 @@ exports[`Storyshots Molecules | Input / Text Both Addons 1`] = `
 </div>
 `;
 
-exports[`Storyshots Molecules | Input / Text Default Story 1`] = `
+exports[`Storyshots Molecules | Input / Text Default 1`] = `
 .c3 {
   box-sizing: border-box;
   display: -webkit-box;
@@ -741,7 +741,7 @@ exports[`Storyshots Molecules | Input / Text Default Story 1`] = `
 </div>
 `;
 
-exports[`Storyshots Molecules | Input / Text Disabled Addon 1`] = `
+exports[`Storyshots Molecules | Input / Text Disabled +addon 1`] = `
 .c3 {
   box-sizing: border-box;
   display: -webkit-box;
@@ -952,7 +952,7 @@ exports[`Storyshots Molecules | Input / Text Disabled Addon 1`] = `
 </div>
 `;
 
-exports[`Storyshots Molecules | Input / Text Disabled Story 1`] = `
+exports[`Storyshots Molecules | Input / Text Disabled 1`] = `
 .c3 {
   box-sizing: border-box;
   display: -webkit-box;
@@ -1087,7 +1087,7 @@ exports[`Storyshots Molecules | Input / Text Disabled Story 1`] = `
 </div>
 `;
 
-exports[`Storyshots Molecules | Input / Text Edge Cases 1`] = `
+exports[`Storyshots Molecules | Input / Text Edge cases 1`] = `
 .c6 {
   box-sizing: border-box;
   display: -webkit-box;
@@ -1365,7 +1365,7 @@ exports[`Storyshots Molecules | Input / Text Edge Cases 1`] = `
 </div>
 `;
 
-exports[`Storyshots Molecules | Input / Text Error If Empty Text 1`] = `
+exports[`Storyshots Molecules | Input / Text Error if empty text 1`] = `
 .c3 {
   box-sizing: border-box;
   display: -webkit-box;
@@ -1535,7 +1535,7 @@ exports[`Storyshots Molecules | Input / Text Error If Empty Text 1`] = `
 </div>
 `;
 
-exports[`Storyshots Molecules | Input / Text Extra Info Below 1`] = `
+exports[`Storyshots Molecules | Input / Text Extra info below 1`] = `
 .c3 {
   box-sizing: border-box;
   display: -webkit-box;
@@ -1689,7 +1689,7 @@ exports[`Storyshots Molecules | Input / Text Extra Info Below 1`] = `
 </div>
 `;
 
-exports[`Storyshots Molecules | Input / Text Extra Info With Error 1`] = `
+exports[`Storyshots Molecules | Input / Text Extra info with error 1`] = `
 .c3 {
   box-sizing: border-box;
   display: -webkit-box;
@@ -1859,7 +1859,7 @@ exports[`Storyshots Molecules | Input / Text Extra Info With Error 1`] = `
 </div>
 `;
 
-exports[`Storyshots Molecules | Input / Text Full Width Story 1`] = `
+exports[`Storyshots Molecules | Input / Text Full width 1`] = `
 Array [
   .c0 {
   margin-bottom: 16px;
@@ -2400,7 +2400,7 @@ Array [
 ]
 `;
 
-exports[`Storyshots Molecules | Input / Text Hidden Label 1`] = `
+exports[`Storyshots Molecules | Input / Text Hidden label 1`] = `
 .c3 {
   position: absolute;
   height: 1px;
@@ -2535,7 +2535,7 @@ exports[`Storyshots Molecules | Input / Text Hidden Label 1`] = `
 </div>
 `;
 
-exports[`Storyshots Molecules | Input / Text Left Addon Story 1`] = `
+exports[`Storyshots Molecules | Input / Text Left addon 1`] = `
 .c3 {
   box-sizing: border-box;
   display: -webkit-box;
@@ -2732,7 +2732,7 @@ exports[`Storyshots Molecules | Input / Text Left Addon Story 1`] = `
 </div>
 `;
 
-exports[`Storyshots Molecules | Input / Text Required Story 1`] = `
+exports[`Storyshots Molecules | Input / Text Required 1`] = `
 Array [
   .c0 {
   margin-bottom: 16px;
@@ -3035,7 +3035,7 @@ Array [
 ]
 `;
 
-exports[`Storyshots Molecules | Input / Text Right Addon Story 1`] = `
+exports[`Storyshots Molecules | Input / Text Right addon 1`] = `
 .c3 {
   box-sizing: border-box;
   display: -webkit-box;
@@ -3206,7 +3206,7 @@ exports[`Storyshots Molecules | Input / Text Right Addon Story 1`] = `
 </div>
 `;
 
-exports[`Storyshots Molecules | Input / Text Simple Login Form 1`] = `
+exports[`Storyshots Molecules | Input / Text Simple login form 1`] = `
 .c0 {
   box-sizing: border-box;
   display: -webkit-box;
@@ -4374,7 +4374,7 @@ Array [
 ]
 `;
 
-exports[`Storyshots Molecules | Input / Text Success Story 1`] = `
+exports[`Storyshots Molecules | Input / Text Success 1`] = `
 .c3 {
   box-sizing: border-box;
   display: -webkit-box;
@@ -4512,7 +4512,7 @@ exports[`Storyshots Molecules | Input / Text Success Story 1`] = `
 </div>
 `;
 
-exports[`Storyshots Molecules | Input / Text With Auto Focus 1`] = `
+exports[`Storyshots Molecules | Input / Text With auto focus 1`] = `
 .c3 {
   box-sizing: border-box;
   display: -webkit-box;
@@ -4651,7 +4651,7 @@ exports[`Storyshots Molecules | Input / Text With Auto Focus 1`] = `
 </div>
 `;
 
-exports[`Storyshots Molecules | Input / Text With Default Value Uncontrolled Behaviour 1`] = `
+exports[`Storyshots Molecules | Input / Text With default value (Uncontrolled behaviour) 1`] = `
 .c3 {
   box-sizing: border-box;
   display: -webkit-box;
@@ -4790,7 +4790,146 @@ exports[`Storyshots Molecules | Input / Text With Default Value Uncontrolled Beh
 </div>
 `;
 
-exports[`Storyshots Molecules | Input / Text With Label Tooltip 1`] = `
+exports[`Storyshots Molecules | Input / Text With maxLength 1`] = `
+.c3 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c1 {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.c2 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #6E6E69;
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c4 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c0 {
+  width: 200px;
+  display: inline-block;
+}
+
+.c6 {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  overflow: visible;
+  border: 0;
+  width: 100%;
+  padding: 8px;
+  margin: 0;
+  line-height: inherit;
+  box-sizing: border-box;
+  height: 40px;
+  outline: none;
+  border: 1px solid #BCBCB6;
+  position: relative;
+  background-color: #FFFFFF;
+}
+
+.c6:hover {
+  border-color: #4B4B46;
+}
+
+.c6:focus {
+  border-color: #0046FF;
+}
+
+.c6::-moz-placeholder,
+.c6:-ms-input-placeholder,
+.c6::-webkit-input-placeholder {
+  height: inherit;
+  line-height: inherit;
+  color: #6E6E69;
+}
+
+.c6::-moz-placeholder,
+.c6:-ms-input-placeholder,
+.c6::-moz-placeholder {
+  height: inherit;
+  line-height: inherit;
+  color: #6E6E69;
+}
+
+.c6::-moz-placeholder,
+.c6:-ms-input-placeholder,
+.c6:-ms-input-placeholder {
+  height: inherit;
+  line-height: inherit;
+  color: #6E6E69;
+}
+
+.c6::-moz-placeholder,
+.c6:-ms-input-placeholder,
+.c6::placeholder {
+  height: inherit;
+  line-height: inherit;
+  color: #6E6E69;
+}
+
+.c5 {
+  position: relative;
+}
+
+<div
+  className="c0"
+>
+  <label
+    className="c1"
+    hidden={false}
+  >
+    <span
+      className="c2"
+    >
+      <div
+        className="c3"
+      >
+        has max length 
+      </div>
+      <span
+        className="c4"
+      >
+        <div
+          className="c5"
+        >
+          <input
+            className="NormalizedInput__Input-sc-1m4kmh9-0 c6"
+            maxLength={3}
+            placeholder="Placeholder"
+            type="text"
+          />
+        </div>
+      </span>
+    </span>
+  </label>
+</div>
+`;
+
+exports[`Storyshots Molecules | Input / Text With tooltip as label addon 1`] = `
 .c3 {
   box-sizing: border-box;
   display: -webkit-box;
@@ -4978,146 +5117,7 @@ exports[`Storyshots Molecules | Input / Text With Label Tooltip 1`] = `
 </div>
 `;
 
-exports[`Storyshots Molecules | Input / Text With Max Length 1`] = `
-.c3 {
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.c1 {
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  cursor: pointer;
-}
-
-.c2 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #6E6E69;
-  margin: 0;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
-}
-
-.c4 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #282823;
-  margin: 0;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
-}
-
-.c0 {
-  width: 200px;
-  display: inline-block;
-}
-
-.c6 {
-  font-family: inherit;
-  font-size: 100%;
-  line-height: 1.15;
-  margin: 0;
-  overflow: visible;
-  border: 0;
-  width: 100%;
-  padding: 8px;
-  margin: 0;
-  line-height: inherit;
-  box-sizing: border-box;
-  height: 40px;
-  outline: none;
-  border: 1px solid #BCBCB6;
-  position: relative;
-  background-color: #FFFFFF;
-}
-
-.c6:hover {
-  border-color: #4B4B46;
-}
-
-.c6:focus {
-  border-color: #0046FF;
-}
-
-.c6::-moz-placeholder,
-.c6:-ms-input-placeholder,
-.c6::-webkit-input-placeholder {
-  height: inherit;
-  line-height: inherit;
-  color: #6E6E69;
-}
-
-.c6::-moz-placeholder,
-.c6:-ms-input-placeholder,
-.c6::-moz-placeholder {
-  height: inherit;
-  line-height: inherit;
-  color: #6E6E69;
-}
-
-.c6::-moz-placeholder,
-.c6:-ms-input-placeholder,
-.c6:-ms-input-placeholder {
-  height: inherit;
-  line-height: inherit;
-  color: #6E6E69;
-}
-
-.c6::-moz-placeholder,
-.c6:-ms-input-placeholder,
-.c6::placeholder {
-  height: inherit;
-  line-height: inherit;
-  color: #6E6E69;
-}
-
-.c5 {
-  position: relative;
-}
-
-<div
-  className="c0"
->
-  <label
-    className="c1"
-    hidden={false}
-  >
-    <span
-      className="c2"
-    >
-      <div
-        className="c3"
-      >
-        has max length 
-      </div>
-      <span
-        className="c4"
-      >
-        <div
-          className="c5"
-        >
-          <input
-            className="NormalizedInput__Input-sc-1m4kmh9-0 c6"
-            maxLength={3}
-            placeholder="Placeholder"
-            type="text"
-          />
-        </div>
-      </span>
-    </span>
-  </label>
-</div>
-`;
-
-exports[`Storyshots Molecules | Input / Text With Value Controlled Behaviour 1`] = `
+exports[`Storyshots Molecules | Input / Text With value (Controlled behaviour) 1`] = `
 .c3 {
   box-sizing: border-box;
   display: -webkit-box;

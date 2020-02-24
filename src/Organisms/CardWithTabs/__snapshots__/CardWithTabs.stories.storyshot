@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Storyshots Organisms | CardWithTabs Controlled Behaviour 1`] = `
+exports[`Storyshots Organisms | CardWithTabs Controlled behaviour 1`] = `
 Array [
   @media (min-width:760px) {
 
@@ -281,7 +281,7 @@ Array [
 ]
 `;
 
-exports[`Storyshots Organisms | CardWithTabs Integration With Faded Scroll 1`] = `
+exports[`Storyshots Organisms | CardWithTabs Integration: with FadedScroll 1`] = `
 .c21 {
   padding-left: 20px;
   padding-top: 16px;
@@ -665,7 +665,7 @@ nunc dignissim.
 </div>
 `;
 
-exports[`Storyshots Organisms | CardWithTabs Integration With Faded Scroll With Height From Parent 1`] = `
+exports[`Storyshots Organisms | CardWithTabs Integration: with FadedScroll of content and height being whatever is available left of parents height. 1`] = `
 .c22 {
   padding-left: 20px;
   padding-top: 16px;
@@ -1091,7 +1091,7 @@ nunc dignissim.
 </div>
 `;
 
-exports[`Storyshots Organisms | CardWithTabs Integration With Typography And Extra Space Inside 1`] = `
+exports[`Storyshots Organisms | CardWithTabs Integration: with Typography and extra space inside 1`] = `
 .c17 {
   padding-left: 20px;
   padding-top: 16px;
@@ -1394,7 +1394,7 @@ nunc dignissim.
 </div>
 `;
 
-exports[`Storyshots Organisms | CardWithTabs With Initial Active Tab Index 1`] = `
+exports[`Storyshots Organisms | CardWithTabs with initialActiveTabIndex 1`] = `
 .c0 {
   background: #FFFFFF;
   box-shadow: 0 2px 2px 0 rgba(0,0,0,0.03);

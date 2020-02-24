@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Storyshots Molecules | Button Button Primary With Colors 1`] = `
+exports[`Storyshots Molecules | Button Button primary with colors 1`] = `
 .c4 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: inherit;
@@ -266,7 +266,7 @@ exports[`Storyshots Molecules | Button Button Primary With Colors 1`] = `
 </div>
 `;
 
-exports[`Storyshots Molecules | Button Button Secondary With Colors 1`] = `
+exports[`Storyshots Molecules | Button Button secondary with colors 1`] = `
 .c4 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: inherit;
@@ -548,7 +548,7 @@ exports[`Storyshots Molecules | Button Button Secondary With Colors 1`] = `
 </div>
 `;
 
-exports[`Storyshots Molecules | Button Button That Is Full Width 1`] = `
+exports[`Storyshots Molecules | Button Button that is full width 1`] = `
 .c1 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: inherit;
@@ -645,7 +645,222 @@ exports[`Storyshots Molecules | Button Button That Is Full Width 1`] = `
 </button>
 `;
 
-exports[`Storyshots Molecules | Button Button With Different Variants 1`] = `
+exports[`Storyshots Molecules | Button Button which sets focus on another button 1`] = `
+.c0 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: -10px;
+  margin-right: -10px;
+}
+
+.c0 > * {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.c0 > *:not(:first-child) {
+  padding-top: 0;
+}
+
+.c1 {
+  box-sizing: border-box;
+}
+
+.c3 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: inherit;
+  margin: 0;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c2 {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  overflow: visible;
+  text-transform: none;
+  position: relative;
+  box-sizing: border-box;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  padding: 4px 12px;
+  min-height: 32px;
+  background-color: #0046FF;
+  color: #FFFFFF;
+  border: none;
+  border-radius: 0;
+  cursor: pointer;
+}
+
+.c2,
+.c2[type='button'],
+.c2[type='reset'],
+.c2[type='submit'] {
+  -webkit-appearance: button;
+}
+
+.c2::-moz-focus-inner,
+.c2[type='button']::-moz-focus-inner,
+.c2[type='reset']::-moz-focus-inner,
+.c2[type='submit']::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+.c2:-moz-focusring,
+.c2[type='button']:-moz-focusring,
+.c2[type='reset']:-moz-focusring,
+.c2[type='submit']:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+.c2::before {
+  content: '';
+  display: block;
+  position: absolute;
+  border: 2px solid transparent;
+  top: 0;
+  left: 0;
+  width: calc(100% - 4px);
+  height: calc(100% - 4px);
+}
+
+.c2:hover {
+  background-color: hsl(223.5,100%,45%);
+}
+
+.c2:active {
+  background-color: hsl(223.5,100%,40%);
+}
+
+.c4 {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  overflow: visible;
+  text-transform: none;
+  position: relative;
+  box-sizing: border-box;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  padding: 4px 12px;
+  min-height: 32px;
+  background-color: #FF1900;
+  color: #FFFFFF;
+  border: none;
+  border-radius: 0;
+  cursor: pointer;
+}
+
+.c4,
+.c4[type='button'],
+.c4[type='reset'],
+.c4[type='submit'] {
+  -webkit-appearance: button;
+}
+
+.c4::-moz-focus-inner,
+.c4[type='button']::-moz-focus-inner,
+.c4[type='reset']::-moz-focus-inner,
+.c4[type='submit']::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+.c4:-moz-focusring,
+.c4[type='button']:-moz-focusring,
+.c4[type='reset']:-moz-focusring,
+.c4[type='submit']:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+.c4::before {
+  content: '';
+  display: block;
+  position: absolute;
+  border: 2px solid transparent;
+  top: 0;
+  left: 0;
+  width: calc(100% - 4px);
+  height: calc(100% - 4px);
+}
+
+.c4:hover {
+  background-color: hsl(5.899999999999977,100%,45%);
+}
+
+.c4:active {
+  background-color: hsl(5.899999999999977,100%,40%);
+}
+
+<div
+  className="c0"
+>
+  <div
+    className="c1"
+  >
+    <button
+      className="NormalizedButton__Button-ey7f5x-0 c2"
+      onClick={[Function]}
+      type="button"
+    >
+      <span>
+        <span
+          className="c3"
+        >
+          Click to focus
+        </span>
+      </span>
+    </button>
+  </div>
+  <div
+    className="c1"
+  >
+    <button
+      className="NormalizedButton__Button-ey7f5x-0 c4"
+      onClick={[Function]}
+      type="button"
+    >
+      <span>
+        <span
+          className="c3"
+        >
+          Focus me
+        </span>
+      </span>
+    </button>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Molecules | Button Button with different variants 1`] = `
 .c4 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: inherit;
@@ -993,222 +1208,7 @@ exports[`Storyshots Molecules | Button Button With Different Variants 1`] = `
 </div>
 `;
 
-exports[`Storyshots Molecules | Button Button With Focus On 1`] = `
-.c0 {
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  margin-left: -10px;
-  margin-right: -10px;
-}
-
-.c0 > * {
-  padding-left: 10px;
-  padding-right: 10px;
-}
-
-.c0 > *:not(:first-child) {
-  padding-top: 0;
-}
-
-.c1 {
-  box-sizing: border-box;
-}
-
-.c3 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: inherit;
-  margin: 0;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
-}
-
-.c2 {
-  font-family: inherit;
-  font-size: 100%;
-  line-height: 1.15;
-  margin: 0;
-  overflow: visible;
-  text-transform: none;
-  position: relative;
-  box-sizing: border-box;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  padding: 4px 12px;
-  min-height: 32px;
-  background-color: #0046FF;
-  color: #FFFFFF;
-  border: none;
-  border-radius: 0;
-  cursor: pointer;
-}
-
-.c2,
-.c2[type='button'],
-.c2[type='reset'],
-.c2[type='submit'] {
-  -webkit-appearance: button;
-}
-
-.c2::-moz-focus-inner,
-.c2[type='button']::-moz-focus-inner,
-.c2[type='reset']::-moz-focus-inner,
-.c2[type='submit']::-moz-focus-inner {
-  border-style: none;
-  padding: 0;
-}
-
-.c2:-moz-focusring,
-.c2[type='button']:-moz-focusring,
-.c2[type='reset']:-moz-focusring,
-.c2[type='submit']:-moz-focusring {
-  outline: 1px dotted ButtonText;
-}
-
-.c2::before {
-  content: '';
-  display: block;
-  position: absolute;
-  border: 2px solid transparent;
-  top: 0;
-  left: 0;
-  width: calc(100% - 4px);
-  height: calc(100% - 4px);
-}
-
-.c2:hover {
-  background-color: hsl(223.5,100%,45%);
-}
-
-.c2:active {
-  background-color: hsl(223.5,100%,40%);
-}
-
-.c4 {
-  font-family: inherit;
-  font-size: 100%;
-  line-height: 1.15;
-  margin: 0;
-  overflow: visible;
-  text-transform: none;
-  position: relative;
-  box-sizing: border-box;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  padding: 4px 12px;
-  min-height: 32px;
-  background-color: #FF1900;
-  color: #FFFFFF;
-  border: none;
-  border-radius: 0;
-  cursor: pointer;
-}
-
-.c4,
-.c4[type='button'],
-.c4[type='reset'],
-.c4[type='submit'] {
-  -webkit-appearance: button;
-}
-
-.c4::-moz-focus-inner,
-.c4[type='button']::-moz-focus-inner,
-.c4[type='reset']::-moz-focus-inner,
-.c4[type='submit']::-moz-focus-inner {
-  border-style: none;
-  padding: 0;
-}
-
-.c4:-moz-focusring,
-.c4[type='button']:-moz-focusring,
-.c4[type='reset']:-moz-focusring,
-.c4[type='submit']:-moz-focusring {
-  outline: 1px dotted ButtonText;
-}
-
-.c4::before {
-  content: '';
-  display: block;
-  position: absolute;
-  border: 2px solid transparent;
-  top: 0;
-  left: 0;
-  width: calc(100% - 4px);
-  height: calc(100% - 4px);
-}
-
-.c4:hover {
-  background-color: hsl(5.899999999999977,100%,45%);
-}
-
-.c4:active {
-  background-color: hsl(5.899999999999977,100%,40%);
-}
-
-<div
-  className="c0"
->
-  <div
-    className="c1"
-  >
-    <button
-      className="NormalizedButton__Button-ey7f5x-0 c2"
-      onClick={[Function]}
-      type="button"
-    >
-      <span>
-        <span
-          className="c3"
-        >
-          Click to focus
-        </span>
-      </span>
-    </button>
-  </div>
-  <div
-    className="c1"
-  >
-    <button
-      className="NormalizedButton__Button-ey7f5x-0 c4"
-      onClick={[Function]}
-      type="button"
-    >
-      <span>
-        <span
-          className="c3"
-        >
-          Focus me
-        </span>
-      </span>
-    </button>
-  </div>
-</div>
-`;
-
-exports[`Storyshots Molecules | Button Button With Loading State 1`] = `
+exports[`Storyshots Molecules | Button Button with loading state 1`] = `
 Array [
   .c0 {
   margin-bottom: 16px;
@@ -3071,7 +3071,7 @@ Array [
 ]
 `;
 
-exports[`Storyshots Molecules | Button Button With Size Modified 1`] = `
+exports[`Storyshots Molecules | Button Button with size modified 1`] = `
 Array [
   .c0 {
   margin-bottom: 16px;
@@ -3724,7 +3724,7 @@ Array [
 ]
 `;
 
-exports[`Storyshots Molecules | Button Button With Type Modified 1`] = `
+exports[`Storyshots Molecules | Button Button with type modified 1`] = `
 .c4 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: inherit;
@@ -3919,7 +3919,7 @@ exports[`Storyshots Molecules | Button Button With Type Modified 1`] = `
 </div>
 `;
 
-exports[`Storyshots Molecules | Button Buttons Composed In A Group 1`] = `
+exports[`Storyshots Molecules | Button Buttons composed in a group 1`] = `
 .c0 {
   box-sizing: border-box;
   display: -webkit-box;
@@ -4147,7 +4147,7 @@ exports[`Storyshots Molecules | Button Buttons Composed In A Group 1`] = `
 </div>
 `;
 
-exports[`Storyshots Molecules | Button Default Usage 1`] = `
+exports[`Storyshots Molecules | Button Default usage 1`] = `
 .c1 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: inherit;
@@ -4243,7 +4243,7 @@ exports[`Storyshots Molecules | Button Default Usage 1`] = `
 </button>
 `;
 
-exports[`Storyshots Molecules | Button Disabled Button With Different Variants 1`] = `
+exports[`Storyshots Molecules | Button Disabled Button with different variants 1`] = `
 .c4 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: inherit;
@@ -4570,7 +4570,7 @@ exports[`Storyshots Molecules | Button Disabled Button With Different Variants 1
 </div>
 `;
 
-exports[`Storyshots Molecules | Button Disabled Link Looking Like A Button 1`] = `
+exports[`Storyshots Molecules | Button Disabled link looking like a button 1`] = `
 .c1 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: inherit;
@@ -4660,7 +4660,7 @@ exports[`Storyshots Molecules | Button Disabled Link Looking Like A Button 1`] =
 </button>
 `;
 
-exports[`Storyshots Molecules | Button External Link Looking Like A Button 1`] = `
+exports[`Storyshots Molecules | Button External link looking like a button 1`] = `
 .c1 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: inherit;
@@ -4731,7 +4731,7 @@ exports[`Storyshots Molecules | Button External Link Looking Like A Button 1`] =
 </a>
 `;
 
-exports[`Storyshots Molecules | Button Link Looking Like A Button 1`] = `
+exports[`Storyshots Molecules | Button Link looking like a button 1`] = `
 .c4 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: inherit;
@@ -4947,7 +4947,7 @@ exports[`Storyshots Molecules | Button Link Looking Like A Button 1`] = `
 </div>
 `;
 
-exports[`Storyshots Molecules | Button Link Looking Like A Button That Is Full Width 1`] = `
+exports[`Storyshots Molecules | Button Link looking like a button that is full width 1`] = `
 .c1 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: inherit;
@@ -5015,7 +5015,7 @@ exports[`Storyshots Molecules | Button Link Looking Like A Button That Is Full W
 </a>
 `;
 
-exports[`Storyshots Molecules | Button Link Looking Like A Button With Rel As Nofollow 1`] = `
+exports[`Storyshots Molecules | Button Link looking like a button with rel as nofollow 1`] = `
 .c1 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: inherit;
@@ -5084,7 +5084,7 @@ exports[`Storyshots Molecules | Button Link Looking Like A Button With Rel As No
 </a>
 `;
 
-exports[`Storyshots Molecules | Button Link Looking Like A Button With With Colors 1`] = `
+exports[`Storyshots Molecules | Button Link looking like a button with with colors 1`] = `
 Array [
   .c0 {
   margin-bottom: 16px;
@@ -5603,7 +5603,7 @@ Array [
 ]
 `;
 
-exports[`Storyshots Molecules | Button Links Looking Like Buttons Composed In A Group 1`] = `
+exports[`Storyshots Molecules | Button Links looking like buttons composed in a group 1`] = `
 .c0 {
   box-sizing: border-box;
   display: -webkit-box;

@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Storyshots Molecules | Modal Default Story 1`] = `
+exports[`Storyshots Molecules | Modal Default 1`] = `
 .c6 {
   margin-bottom: 8px;
 }
@@ -308,7 +308,198 @@ exports[`Storyshots Molecules | Modal Default Story 1`] = `
 </div>
 `;
 
-exports[`Storyshots Molecules | Modal Footer Story 1`] = `
+exports[`Storyshots Molecules | Modal Hide Close button 1`] = `
+.c6 {
+  margin-bottom: 8px;
+}
+
+.c1 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c5 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 1.2;
+}
+
+.c7 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.c4 {
+  padding-right: 16px;
+}
+
+.c2 {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 500;
+}
+
+.c3 {
+  padding-bottom: 16px;
+  padding-right: 28px;
+  min-height: 20px;
+  -webkit-flex: 0 0 auto;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+}
+
+.c0 {
+  background-image: linear-gradient(#00D200,#FF1900);
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 20px;
+  height: 200vh;
+}
+
+@media (min-width:760px) {
+  .c5 {
+    font-size: 24px;
+    line-height: 1.1666666666666667;
+  }
+}
+
+@media (min-width:760px) {
+  .c2 {
+    background-color: rgba(110,110,105,0.63);
+  }
+}
+
+@media (max-width:759px) {
+
+}
+
+@media (min-width:760px) {
+
+}
+
+<div>
+  <button
+    onClick={[Function]}
+    type="button"
+  >
+    Open modal
+  </button>
+  <div
+    className="c0"
+  />
+  <portal-dummy>
+    <div
+      data-focus-guard={true}
+      style={
+        Object {
+          "height": "0px",
+          "left": "1px",
+          "overflow": "hidden",
+          "padding": 0,
+          "position": "fixed",
+          "top": "1px",
+          "width": "1px",
+        }
+      }
+      tabIndex={0}
+    />
+    <div
+      data-focus-guard={true}
+      style={
+        Object {
+          "height": "0px",
+          "left": "1px",
+          "overflow": "hidden",
+          "padding": 0,
+          "position": "fixed",
+          "top": "1px",
+          "width": "1px",
+        }
+      }
+      tabIndex={1}
+    />
+    <div
+      data-focus-lock-disabled={false}
+      onBlur={[Function]}
+      onFocus={[Function]}
+    >
+      <div
+        onScrollCapture={[Function]}
+        onTouchMoveCapture={[Function]}
+        onWheelCapture={[Function]}
+      >
+        <div
+          className="c1 c2"
+        >
+          <div>
+            <div
+              className="c3"
+            >
+              <span
+                id="13val-ModalTitle"
+              >
+                <h2
+                  className="c4 c5"
+                >
+                  Dialog information
+                </h2>
+              </span>
+            </div>
+            <div
+              className="c6"
+            >
+              <p
+                className="c7"
+              >
+                The close button in the upper right corner is now hidden because the prop hideClose is true.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      data-focus-guard={true}
+      style={
+        Object {
+          "height": "0px",
+          "left": "1px",
+          "overflow": "hidden",
+          "padding": 0,
+          "position": "fixed",
+          "top": "1px",
+          "width": "1px",
+        }
+      }
+      tabIndex={0}
+    />
+  </portal-dummy>
+</div>
+`;
+
+exports[`Storyshots Molecules | Modal Integration: Modal with a footer and Button 1`] = `
 .c10 {
   margin-bottom: 8px;
 }
@@ -856,198 +1047,7 @@ exports[`Storyshots Molecules | Modal Footer Story 1`] = `
 </div>
 `;
 
-exports[`Storyshots Molecules | Modal Hide Close 1`] = `
-.c6 {
-  margin-bottom: 8px;
-}
-
-.c1 {
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.c5 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #282823;
-  margin: 0;
-  font-weight: 800;
-  font-size: 20px;
-  line-height: 1.2;
-}
-
-.c7 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #282823;
-  margin: 0;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.5;
-}
-
-.c4 {
-  padding-right: 16px;
-}
-
-.c2 {
-  position: fixed;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  z-index: 500;
-}
-
-.c3 {
-  padding-bottom: 16px;
-  padding-right: 28px;
-  min-height: 20px;
-  -webkit-flex: 0 0 auto;
-  -ms-flex: 0 0 auto;
-  flex: 0 0 auto;
-}
-
-.c0 {
-  background-image: linear-gradient(#00D200,#FF1900);
-  position: absolute;
-  right: 0;
-  top: 0;
-  width: 20px;
-  height: 200vh;
-}
-
-@media (min-width:760px) {
-  .c5 {
-    font-size: 24px;
-    line-height: 1.1666666666666667;
-  }
-}
-
-@media (min-width:760px) {
-  .c2 {
-    background-color: rgba(110,110,105,0.63);
-  }
-}
-
-@media (max-width:759px) {
-
-}
-
-@media (min-width:760px) {
-
-}
-
-<div>
-  <button
-    onClick={[Function]}
-    type="button"
-  >
-    Open modal
-  </button>
-  <div
-    className="c0"
-  />
-  <portal-dummy>
-    <div
-      data-focus-guard={true}
-      style={
-        Object {
-          "height": "0px",
-          "left": "1px",
-          "overflow": "hidden",
-          "padding": 0,
-          "position": "fixed",
-          "top": "1px",
-          "width": "1px",
-        }
-      }
-      tabIndex={0}
-    />
-    <div
-      data-focus-guard={true}
-      style={
-        Object {
-          "height": "0px",
-          "left": "1px",
-          "overflow": "hidden",
-          "padding": 0,
-          "position": "fixed",
-          "top": "1px",
-          "width": "1px",
-        }
-      }
-      tabIndex={1}
-    />
-    <div
-      data-focus-lock-disabled={false}
-      onBlur={[Function]}
-      onFocus={[Function]}
-    >
-      <div
-        onScrollCapture={[Function]}
-        onTouchMoveCapture={[Function]}
-        onWheelCapture={[Function]}
-      >
-        <div
-          className="c1 c2"
-        >
-          <div>
-            <div
-              className="c3"
-            >
-              <span
-                id="13val-ModalTitle"
-              >
-                <h2
-                  className="c4 c5"
-                >
-                  Dialog information
-                </h2>
-              </span>
-            </div>
-            <div
-              className="c6"
-            >
-              <p
-                className="c7"
-              >
-                The close button in the upper right corner is now hidden because the prop hideClose is true.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div
-      data-focus-guard={true}
-      style={
-        Object {
-          "height": "0px",
-          "left": "1px",
-          "overflow": "hidden",
-          "padding": 0,
-          "position": "fixed",
-          "top": "1px",
-          "width": "1px",
-        }
-      }
-      tabIndex={0}
-    />
-  </portal-dummy>
-</div>
-`;
-
-exports[`Storyshots Molecules | Modal Node As Title 1`] = `
+exports[`Storyshots Molecules | Modal Node as Title 1`] = `
 .c7 {
   margin-bottom: 8px;
 }
@@ -1398,7 +1398,7 @@ exports[`Storyshots Molecules | Modal Node As Title 1`] = `
 </div>
 `;
 
-exports[`Storyshots Molecules | Modal Uncontrolled Behavior 1`] = `
+exports[`Storyshots Molecules | Modal Uncontrolled behavior 1`] = `
 .c6 {
   margin-bottom: 8px;
 }
@@ -1700,7 +1700,7 @@ exports[`Storyshots Molecules | Modal Uncontrolled Behavior 1`] = `
 </div>
 `;
 
-exports[`Storyshots Molecules | Modal Without Header 1`] = `
+exports[`Storyshots Molecules | Modal Without header 1`] = `
 .c4 {
   margin-bottom: 8px;
 }

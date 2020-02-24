@@ -1,5 +1,6 @@
 const path = require('path');
 const tsConfig = require('../tsconfig.json');
+const createCompiler = require('@storybook/addon-docs/mdx-compiler-plugin');
 
 module.exports = ({ config, mode }) => {
   config.entry.unshift(require.resolve('core-js/es/weak-set'));
@@ -33,7 +34,7 @@ module.exports = ({ config, mode }) => {
   });
 
   config.module.rules.push({
-    test: /(?<!stories)\.mdx/,
+    test: /\.mdx$/,
     use: [
       {
         loader: 'babel-loader',
@@ -44,6 +45,9 @@ module.exports = ({ config, mode }) => {
       },
       {
         loader: '@mdx-js/loader',
+        options: {
+          compilers: [createCompiler({})],
+        },
       },
     ],
   });

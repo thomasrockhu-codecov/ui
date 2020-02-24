@@ -27,14 +27,11 @@ const ComponentThatLogsRender: React.FC<any> = ({ children }) => {
   action('Rendered!')();
   return children;
 };
-
 export default {
   title: 'Atoms | CssGrid',
 
   parameters: {
-    docs: {
-      page: docs,
-    },
+    ...docs.parameters,
   },
 };
 
