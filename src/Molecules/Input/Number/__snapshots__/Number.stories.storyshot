@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Storyshots Molecules | Input / Number Default 1`] = `
-.c1 {
+.c3 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -38,7 +38,7 @@ exports[`Storyshots Molecules | Input / Number Default 1`] = `
   clip: rect(1px,1px,1px,1px);
 }
 
-.c2 {
+.c1 {
   text-overflow: ellipsis;
   white-space: nowrap;
   cursor: pointer;
@@ -58,7 +58,7 @@ exports[`Storyshots Molecules | Input / Number Default 1`] = `
   display: block;
 }
 
-.c3 {
+.c2 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #6E6E69;
   margin: 0;
@@ -201,21 +201,21 @@ exports[`Storyshots Molecules | Input / Number Default 1`] = `
 <div
   className="c0"
 >
-  <div
+  <label
     className="c1"
+    hidden={false}
+    htmlFor="insert-unique-id"
   >
-    <label
+    <span
       className="c2"
-      hidden={false}
-      htmlFor="insert-unique-id"
     >
-      <span
+      <div
         className="c3"
       >
         Label 
-      </span>
-    </label>
-  </div>
+      </div>
+    </span>
+  </label>
   <span
     className="c4"
   >
@@ -289,7 +289,7 @@ exports[`Storyshots Molecules | Input / Number Default 1`] = `
 `;
 
 exports[`Storyshots Molecules | Input / Number Disabled 1`] = `
-.c1 {
+.c3 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -326,7 +326,7 @@ exports[`Storyshots Molecules | Input / Number Disabled 1`] = `
   clip: rect(1px,1px,1px,1px);
 }
 
-.c2 {
+.c1 {
   text-overflow: ellipsis;
   white-space: nowrap;
   cursor: pointer;
@@ -346,7 +346,7 @@ exports[`Storyshots Molecules | Input / Number Disabled 1`] = `
   display: block;
 }
 
-.c3 {
+.c2 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #6E6E69;
   margin: 0;
@@ -479,21 +479,21 @@ exports[`Storyshots Molecules | Input / Number Disabled 1`] = `
 <div
   className="c0"
 >
-  <div
+  <label
     className="c1"
+    hidden={false}
+    htmlFor="insert-unique-id"
   >
-    <label
+    <span
       className="c2"
-      hidden={false}
-      htmlFor="insert-unique-id"
     >
-      <span
+      <div
         className="c3"
       >
         Label 
-      </span>
-    </label>
-  </div>
+      </div>
+    </span>
+  </label>
   <span
     className="c4"
   >
@@ -600,7 +600,7 @@ Array [
       Required
     </span>
   </div>,
-  .c4 {
+  .c6 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -637,7 +637,7 @@ Array [
   clip: rect(1px,1px,1px,1px);
 }
 
-.c5 {
+.c4 {
   text-overflow: ellipsis;
   white-space: nowrap;
   cursor: pointer;
@@ -657,7 +657,7 @@ Array [
   display: block;
 }
 
-.c6 {
+.c5 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #6E6E69;
   margin: 0;
@@ -875,21 +875,21 @@ Array [
         <div
           className="c3"
         >
-          <div
+          <label
             className="c4"
+            hidden={false}
+            htmlFor="insert-unique-id"
           >
-            <label
+            <span
               className="c5"
-              hidden={false}
-              htmlFor="insert-unique-id"
             >
-              <span
+              <div
                 className="c6"
               >
                 Label 
-              </span>
-            </label>
-          </div>
+              </div>
+            </span>
+          </label>
           <span
             className="c7"
           >
@@ -976,21 +976,21 @@ Array [
         <div
           className="c3"
         >
-          <div
+          <label
             className="c4"
+            hidden={false}
+            htmlFor="insert-unique-id"
           >
-            <label
+            <span
               className="c5"
-              hidden={false}
-              htmlFor="insert-unique-id"
             >
-              <span
+              <div
                 className="c6"
               >
                 Label *
-              </span>
-            </label>
-          </div>
+              </div>
+            </span>
+          </label>
           <span
             className="c7"
           >
@@ -1080,7 +1080,7 @@ Array [
 `;
 
 exports[`Storyshots Molecules | Input / Number With a smaller step 1`] = `
-.c1 {
+.c3 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -1117,7 +1117,7 @@ exports[`Storyshots Molecules | Input / Number With a smaller step 1`] = `
   clip: rect(1px,1px,1px,1px);
 }
 
-.c2 {
+.c1 {
   text-overflow: ellipsis;
   white-space: nowrap;
   cursor: pointer;
@@ -1137,7 +1137,7 @@ exports[`Storyshots Molecules | Input / Number With a smaller step 1`] = `
   display: block;
 }
 
-.c3 {
+.c2 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #6E6E69;
   margin: 0;
@@ -1280,21 +1280,21 @@ exports[`Storyshots Molecules | Input / Number With a smaller step 1`] = `
 <div
   className="c0"
 >
-  <div
+  <label
     className="c1"
+    hidden={false}
+    htmlFor="insert-unique-id"
   >
-    <label
+    <span
       className="c2"
-      hidden={false}
-      htmlFor="insert-unique-id"
     >
-      <span
+      <div
         className="c3"
       >
         Label 
-      </span>
-    </label>
-  </div>
+      </div>
+    </span>
+  </label>
   <span
     className="c4"
   >
@@ -1368,7 +1368,7 @@ exports[`Storyshots Molecules | Input / Number With a smaller step 1`] = `
 `;
 
 exports[`Storyshots Molecules | Input / Number With all actions 1`] = `
-.c1 {
+.c3 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -1405,7 +1405,7 @@ exports[`Storyshots Molecules | Input / Number With all actions 1`] = `
   clip: rect(1px,1px,1px,1px);
 }
 
-.c2 {
+.c1 {
   text-overflow: ellipsis;
   white-space: nowrap;
   cursor: pointer;
@@ -1425,7 +1425,7 @@ exports[`Storyshots Molecules | Input / Number With all actions 1`] = `
   display: block;
 }
 
-.c3 {
+.c2 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #6E6E69;
   margin: 0;
@@ -1568,21 +1568,21 @@ exports[`Storyshots Molecules | Input / Number With all actions 1`] = `
 <div
   className="c0"
 >
-  <div
+  <label
     className="c1"
+    hidden={false}
+    htmlFor="insert-unique-id"
   >
-    <label
+    <span
       className="c2"
-      hidden={false}
-      htmlFor="insert-unique-id"
     >
-      <span
+      <div
         className="c3"
       >
         Label 
-      </span>
-    </label>
-  </div>
+      </div>
+    </span>
+  </label>
   <span
     className="c4"
   >
@@ -1661,7 +1661,7 @@ exports[`Storyshots Molecules | Input / Number With all actions 1`] = `
 `;
 
 exports[`Storyshots Molecules | Input / Number With auto focus 1`] = `
-.c1 {
+.c3 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -1698,7 +1698,7 @@ exports[`Storyshots Molecules | Input / Number With auto focus 1`] = `
   clip: rect(1px,1px,1px,1px);
 }
 
-.c2 {
+.c1 {
   text-overflow: ellipsis;
   white-space: nowrap;
   cursor: pointer;
@@ -1718,7 +1718,7 @@ exports[`Storyshots Molecules | Input / Number With auto focus 1`] = `
   display: block;
 }
 
-.c3 {
+.c2 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #6E6E69;
   margin: 0;
@@ -1861,21 +1861,21 @@ exports[`Storyshots Molecules | Input / Number With auto focus 1`] = `
 <div
   className="c0"
 >
-  <div
+  <label
     className="c1"
+    hidden={false}
+    htmlFor="insert-unique-id"
   >
-    <label
+    <span
       className="c2"
-      hidden={false}
-      htmlFor="insert-unique-id"
     >
-      <span
+      <div
         className="c3"
       >
         Label 
-      </span>
-    </label>
-  </div>
+      </div>
+    </span>
+  </label>
   <span
     className="c4"
   >
@@ -1950,7 +1950,7 @@ exports[`Storyshots Molecules | Input / Number With auto focus 1`] = `
 `;
 
 exports[`Storyshots Molecules | Input / Number With both addons 1`] = `
-.c1 {
+.c3 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -1994,7 +1994,7 @@ exports[`Storyshots Molecules | Input / Number With both addons 1`] = `
   align-items: center;
 }
 
-.c2 {
+.c1 {
   text-overflow: ellipsis;
   white-space: nowrap;
   cursor: pointer;
@@ -2014,7 +2014,7 @@ exports[`Storyshots Molecules | Input / Number With both addons 1`] = `
   display: block;
 }
 
-.c3 {
+.c2 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #6E6E69;
   margin: 0;
@@ -2123,21 +2123,21 @@ exports[`Storyshots Molecules | Input / Number With both addons 1`] = `
 <div
   className="c0"
 >
-  <div
+  <label
     className="c1"
+    hidden={false}
+    htmlFor="insert-unique-id"
   >
-    <label
+    <span
       className="c2"
-      hidden={false}
-      htmlFor="insert-unique-id"
     >
-      <span
+      <div
         className="c3"
       >
         Label 
-      </span>
-    </label>
-  </div>
+      </div>
+    </span>
+  </label>
   <span
     className="c4"
   >
@@ -2185,7 +2185,7 @@ exports[`Storyshots Molecules | Input / Number With both addons 1`] = `
 `;
 
 exports[`Storyshots Molecules | Input / Number With default value (Uncontrolled behaviour) 1`] = `
-.c1 {
+.c3 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -2222,7 +2222,7 @@ exports[`Storyshots Molecules | Input / Number With default value (Uncontrolled 
   clip: rect(1px,1px,1px,1px);
 }
 
-.c2 {
+.c1 {
   text-overflow: ellipsis;
   white-space: nowrap;
   cursor: pointer;
@@ -2242,7 +2242,7 @@ exports[`Storyshots Molecules | Input / Number With default value (Uncontrolled 
   display: block;
 }
 
-.c3 {
+.c2 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #6E6E69;
   margin: 0;
@@ -2385,21 +2385,21 @@ exports[`Storyshots Molecules | Input / Number With default value (Uncontrolled 
 <div
   className="c0"
 >
-  <div
+  <label
     className="c1"
+    hidden={false}
+    htmlFor="insert-unique-id"
   >
-    <label
+    <span
       className="c2"
-      hidden={false}
-      htmlFor="insert-unique-id"
     >
-      <span
+      <div
         className="c3"
       >
         Label 
-      </span>
-    </label>
-  </div>
+      </div>
+    </span>
+  </label>
   <span
     className="c4"
   >
@@ -2473,7 +2473,7 @@ exports[`Storyshots Molecules | Input / Number With default value (Uncontrolled 
 `;
 
 exports[`Storyshots Molecules | Input / Number With error if value is less than 1 1`] = `
-.c1 {
+.c3 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -2510,7 +2510,7 @@ exports[`Storyshots Molecules | Input / Number With error if value is less than 
   clip: rect(1px,1px,1px,1px);
 }
 
-.c2 {
+.c1 {
   text-overflow: ellipsis;
   white-space: nowrap;
   cursor: pointer;
@@ -2530,7 +2530,7 @@ exports[`Storyshots Molecules | Input / Number With error if value is less than 
   display: block;
 }
 
-.c3 {
+.c2 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #6E6E69;
   margin: 0;
@@ -2682,21 +2682,21 @@ exports[`Storyshots Molecules | Input / Number With error if value is less than 
 <div
   className="c0"
 >
-  <div
+  <label
     className="c1"
+    hidden={false}
+    htmlFor="insert-unique-id"
   >
-    <label
+    <span
       className="c2"
-      hidden={false}
-      htmlFor="insert-unique-id"
     >
-      <span
+      <div
         className="c3"
       >
         Label 
-      </span>
-    </label>
-  </div>
+      </div>
+    </span>
+  </label>
   <span
     className="c4"
   >
@@ -2783,7 +2783,7 @@ exports[`Storyshots Molecules | Input / Number With error if value is less than 
 `;
 
 exports[`Storyshots Molecules | Input / Number With extra info and error 1`] = `
-.c1 {
+.c3 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -2820,7 +2820,7 @@ exports[`Storyshots Molecules | Input / Number With extra info and error 1`] = `
   clip: rect(1px,1px,1px,1px);
 }
 
-.c2 {
+.c1 {
   text-overflow: ellipsis;
   white-space: nowrap;
   cursor: pointer;
@@ -2840,7 +2840,7 @@ exports[`Storyshots Molecules | Input / Number With extra info and error 1`] = `
   display: block;
 }
 
-.c3 {
+.c2 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #6E6E69;
   margin: 0;
@@ -2992,21 +2992,21 @@ exports[`Storyshots Molecules | Input / Number With extra info and error 1`] = `
 <div
   className="c0"
 >
-  <div
+  <label
     className="c1"
+    hidden={false}
+    htmlFor="insert-unique-id"
   >
-    <label
+    <span
       className="c2"
-      hidden={false}
-      htmlFor="insert-unique-id"
     >
-      <span
+      <div
         className="c3"
       >
         Label 
-      </span>
-    </label>
-  </div>
+      </div>
+    </span>
+  </label>
   <span
     className="c4"
   >
@@ -3093,7 +3093,7 @@ exports[`Storyshots Molecules | Input / Number With extra info and error 1`] = `
 `;
 
 exports[`Storyshots Molecules | Input / Number With extra info below 1`] = `
-.c1 {
+.c3 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -3130,7 +3130,7 @@ exports[`Storyshots Molecules | Input / Number With extra info below 1`] = `
   clip: rect(1px,1px,1px,1px);
 }
 
-.c2 {
+.c1 {
   text-overflow: ellipsis;
   white-space: nowrap;
   cursor: pointer;
@@ -3150,7 +3150,7 @@ exports[`Storyshots Molecules | Input / Number With extra info below 1`] = `
   display: block;
 }
 
-.c3 {
+.c2 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #6E6E69;
   margin: 0;
@@ -3302,21 +3302,21 @@ exports[`Storyshots Molecules | Input / Number With extra info below 1`] = `
 <div
   className="c0"
 >
-  <div
+  <label
     className="c1"
+    hidden={false}
+    htmlFor="insert-unique-id"
   >
-    <label
+    <span
       className="c2"
-      hidden={false}
-      htmlFor="insert-unique-id"
     >
-      <span
+      <div
         className="c3"
       >
         Label 
-      </span>
-    </label>
-  </div>
+      </div>
+    </span>
+  </label>
   <span
     className="c4"
   >
@@ -3675,7 +3675,7 @@ exports[`Storyshots Molecules | Input / Number With hidden label 1`] = `
 `;
 
 exports[`Storyshots Molecules | Input / Number With label tooltip 1`] = `
-.c1 {
+.c3 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -3712,7 +3712,7 @@ exports[`Storyshots Molecules | Input / Number With label tooltip 1`] = `
   clip: rect(1px,1px,1px,1px);
 }
 
-.c2 {
+.c1 {
   text-overflow: ellipsis;
   white-space: nowrap;
   cursor: pointer;
@@ -3750,7 +3750,7 @@ exports[`Storyshots Molecules | Input / Number With label tooltip 1`] = `
   stroke: #6E6E69;
 }
 
-.c3 {
+.c2 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #6E6E69;
   margin: 0;
@@ -3897,49 +3897,49 @@ exports[`Storyshots Molecules | Input / Number With label tooltip 1`] = `
 <div
   className="c0"
 >
-  <div
+  <label
     className="c1"
+    hidden={false}
+    htmlFor="insert-unique-id"
   >
-    <label
+    <span
       className="c2"
-      hidden={false}
-      htmlFor="insert-unique-id"
     >
-      <span
+      <div
         className="c3"
       >
         Label 
-      </span>
-    </label>
-    <svg
-      aria-hidden="false"
-      className="c4 c5"
-      focusable="false"
-      preserveAspectRatio="xMidYMid meet"
-      role="img"
-      viewBox="0 0 24 24"
-    >
-      <g
-        fillRule="evenodd"
-        transform="translate(1 1)"
-      >
-        <circle
-          className="c6"
-          cx="11"
-          cy="11"
-          fill="none"
-          r="11"
-        />
-        <path
-          d="M9.4544,13.5528 L9.4544,13.3008 C9.4544,12.1584 9.4376,11.6376 11.1512,10.2432 C11.8904,9.6384 12.4784,9.2184 12.4784,8.496 C12.4784,7.8576 12.0248,7.3536 11.1176,7.3536 C10.1768,7.3536 9.656,7.9416 9.4376,8.6472 L6.9008,8.6472 C7.2368,6.3624 8.9504,5.1696 11.168,5.1696 C13.5032,5.1696 15.0992,6.4128 15.0992,8.3784 C15.0992,9.6888 14.5448,10.3776 13.0496,11.6544 C12.344,12.2424 11.84,12.6456 11.7056,13.3008 L11.6552,13.5528 L9.4544,13.5528 Z M11.9072,14.7288 L11.9072,17.4 L9.2696,17.4 L9.2696,14.7288 L11.9072,14.7288 Z"
-          fillRule="nonzero"
-        />
-      </g>
-      <title>
-        Tooltip content
-      </title>
-    </svg>
-  </div>
+        <svg
+          aria-hidden="false"
+          className="c4 c5"
+          focusable="false"
+          preserveAspectRatio="xMidYMid meet"
+          role="img"
+          viewBox="0 0 24 24"
+        >
+          <g
+            fillRule="evenodd"
+            transform="translate(1 1)"
+          >
+            <circle
+              className="c6"
+              cx="11"
+              cy="11"
+              fill="none"
+              r="11"
+            />
+            <path
+              d="M9.4544,13.5528 L9.4544,13.3008 C9.4544,12.1584 9.4376,11.6376 11.1512,10.2432 C11.8904,9.6384 12.4784,9.2184 12.4784,8.496 C12.4784,7.8576 12.0248,7.3536 11.1176,7.3536 C10.1768,7.3536 9.656,7.9416 9.4376,8.6472 L6.9008,8.6472 C7.2368,6.3624 8.9504,5.1696 11.168,5.1696 C13.5032,5.1696 15.0992,6.4128 15.0992,8.3784 C15.0992,9.6888 14.5448,10.3776 13.0496,11.6544 C12.344,12.2424 11.84,12.6456 11.7056,13.3008 L11.6552,13.5528 L9.4544,13.5528 Z M11.9072,14.7288 L11.9072,17.4 L9.2696,17.4 L9.2696,14.7288 L11.9072,14.7288 Z"
+              fillRule="nonzero"
+            />
+          </g>
+          <title>
+            Tooltip content
+          </title>
+        </svg>
+      </div>
+    </span>
+  </label>
   <span
     className="c7"
   >
@@ -4013,7 +4013,7 @@ exports[`Storyshots Molecules | Input / Number With label tooltip 1`] = `
 `;
 
 exports[`Storyshots Molecules | Input / Number With left addon 1`] = `
-.c1 {
+.c3 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -4057,7 +4057,7 @@ exports[`Storyshots Molecules | Input / Number With left addon 1`] = `
   align-items: center;
 }
 
-.c2 {
+.c1 {
   text-overflow: ellipsis;
   white-space: nowrap;
   cursor: pointer;
@@ -4077,7 +4077,7 @@ exports[`Storyshots Molecules | Input / Number With left addon 1`] = `
   display: block;
 }
 
-.c3 {
+.c2 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #6E6E69;
   margin: 0;
@@ -4178,21 +4178,21 @@ exports[`Storyshots Molecules | Input / Number With left addon 1`] = `
 <div
   className="c0"
 >
-  <div
+  <label
     className="c1"
+    hidden={false}
+    htmlFor="insert-unique-id"
   >
-    <label
+    <span
       className="c2"
-      hidden={false}
-      htmlFor="insert-unique-id"
     >
-      <span
+      <div
         className="c3"
       >
         Label 
-      </span>
-    </label>
-  </div>
+      </div>
+    </span>
+  </label>
   <span
     className="c4"
   >
@@ -4234,7 +4234,7 @@ exports[`Storyshots Molecules | Input / Number With left addon 1`] = `
 `;
 
 exports[`Storyshots Molecules | Input / Number With max and min 1`] = `
-.c1 {
+.c3 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -4271,7 +4271,7 @@ exports[`Storyshots Molecules | Input / Number With max and min 1`] = `
   clip: rect(1px,1px,1px,1px);
 }
 
-.c2 {
+.c1 {
   text-overflow: ellipsis;
   white-space: nowrap;
   cursor: pointer;
@@ -4291,7 +4291,7 @@ exports[`Storyshots Molecules | Input / Number With max and min 1`] = `
   display: block;
 }
 
-.c3 {
+.c2 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #6E6E69;
   margin: 0;
@@ -4434,21 +4434,21 @@ exports[`Storyshots Molecules | Input / Number With max and min 1`] = `
 <div
   className="c0"
 >
-  <div
+  <label
     className="c1"
+    hidden={false}
+    htmlFor="insert-unique-id"
   >
-    <label
+    <span
       className="c2"
-      hidden={false}
-      htmlFor="insert-unique-id"
     >
-      <span
+      <div
         className="c3"
       >
         Label 
-      </span>
-    </label>
-  </div>
+      </div>
+    </span>
+  </label>
   <span
     className="c4"
   >
@@ -4523,7 +4523,7 @@ exports[`Storyshots Molecules | Input / Number With max and min 1`] = `
 `;
 
 exports[`Storyshots Molecules | Input / Number With no steppers 1`] = `
-.c1 {
+.c3 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -4551,13 +4551,13 @@ exports[`Storyshots Molecules | Input / Number With no steppers 1`] = `
   flex-grow: 1;
 }
 
-.c2 {
+.c1 {
   text-overflow: ellipsis;
   white-space: nowrap;
   cursor: pointer;
 }
 
-.c3 {
+.c2 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #6E6E69;
   margin: 0;
@@ -4649,21 +4649,21 @@ exports[`Storyshots Molecules | Input / Number With no steppers 1`] = `
 <div
   className="c0"
 >
-  <div
+  <label
     className="c1"
+    hidden={false}
+    htmlFor="insert-unique-id"
   >
-    <label
+    <span
       className="c2"
-      hidden={false}
-      htmlFor="insert-unique-id"
     >
-      <span
+      <div
         className="c3"
       >
         Label 
-      </span>
-    </label>
-  </div>
+      </div>
+    </span>
+  </label>
   <span
     className="c4"
   >
@@ -4717,7 +4717,7 @@ Array [
       Placeholders
     </span>
   </div>,
-  .c4 {
+  .c6 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -4770,7 +4770,7 @@ Array [
   clip: rect(1px,1px,1px,1px);
 }
 
-.c5 {
+.c4 {
   text-overflow: ellipsis;
   white-space: nowrap;
   cursor: pointer;
@@ -4804,7 +4804,7 @@ Array [
   display: block;
 }
 
-.c6 {
+.c5 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #6E6E69;
   margin: 0;
@@ -5223,21 +5223,21 @@ Array [
         <div
           className="c3"
         >
-          <div
+          <label
             className="c4"
+            hidden={false}
+            htmlFor="insert-unique-id"
           >
-            <label
+            <span
               className="c5"
-              hidden={false}
-              htmlFor="insert-unique-id"
             >
-              <span
+              <div
                 className="c6"
               >
                 Label 
-              </span>
-            </label>
-          </div>
+              </div>
+            </span>
+          </label>
           <span
             className="c7"
           >
@@ -5274,21 +5274,21 @@ Array [
         <div
           className="c3"
         >
-          <div
+          <label
             className="c4"
+            hidden={false}
+            htmlFor="insert-unique-id"
           >
-            <label
+            <span
               className="c5"
-              hidden={false}
-              htmlFor="insert-unique-id"
             >
-              <span
+              <div
                 className="c6"
               >
                 Label 
-              </span>
-            </label>
-          </div>
+              </div>
+            </span>
+          </label>
           <span
             className="c7"
           >
@@ -5331,21 +5331,21 @@ Array [
         <div
           className="c3"
         >
-          <div
+          <label
             className="c4"
+            hidden={false}
+            htmlFor="insert-unique-id"
           >
-            <label
+            <span
               className="c5"
-              hidden={false}
-              htmlFor="insert-unique-id"
             >
-              <span
+              <div
                 className="c6"
               >
                 Label 
-              </span>
-            </label>
-          </div>
+              </div>
+            </span>
+          </label>
           <span
             className="c7"
           >
@@ -5400,21 +5400,21 @@ Array [
         <div
           className="c3"
         >
-          <div
+          <label
             className="c4"
+            hidden={false}
+            htmlFor="insert-unique-id"
           >
-            <label
+            <span
               className="c5"
-              hidden={false}
-              htmlFor="insert-unique-id"
             >
-              <span
+              <div
                 className="c6"
               >
                 Label 
-              </span>
-            </label>
-          </div>
+              </div>
+            </span>
+          </label>
           <span
             className="c7"
           >
@@ -5503,7 +5503,7 @@ Array [
 `;
 
 exports[`Storyshots Molecules | Input / Number With right addon 1`] = `
-.c1 {
+.c3 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -5547,13 +5547,13 @@ exports[`Storyshots Molecules | Input / Number With right addon 1`] = `
   align-items: center;
 }
 
-.c2 {
+.c1 {
   text-overflow: ellipsis;
   white-space: nowrap;
   cursor: pointer;
 }
 
-.c3 {
+.c2 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #6E6E69;
   margin: 0;
@@ -5654,21 +5654,21 @@ exports[`Storyshots Molecules | Input / Number With right addon 1`] = `
 <div
   className="c0"
 >
-  <div
+  <label
     className="c1"
+    hidden={false}
+    htmlFor="insert-unique-id"
   >
-    <label
+    <span
       className="c2"
-      hidden={false}
-      htmlFor="insert-unique-id"
     >
-      <span
+      <div
         className="c3"
       >
         Label 
-      </span>
-    </label>
-  </div>
+      </div>
+    </span>
+  </label>
   <span
     className="c4"
   >
@@ -5728,7 +5728,7 @@ Array [
       Size = "s"
     </span>
   </div>,
-  .c4 {
+  .c6 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -5765,7 +5765,7 @@ Array [
   clip: rect(1px,1px,1px,1px);
 }
 
-.c5 {
+.c4 {
   text-overflow: ellipsis;
   white-space: nowrap;
   cursor: pointer;
@@ -5785,7 +5785,7 @@ Array [
   display: block;
 }
 
-.c6 {
+.c5 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #6E6E69;
   margin: 0;
@@ -6134,21 +6134,21 @@ Array [
         <div
           className="c3"
         >
-          <div
+          <label
             className="c4"
+            hidden={false}
+            htmlFor="insert-unique-id"
           >
-            <label
+            <span
               className="c5"
-              hidden={false}
-              htmlFor="insert-unique-id"
             >
-              <span
+              <div
                 className="c6"
               >
                 Label 
-              </span>
-            </label>
-          </div>
+              </div>
+            </span>
+          </label>
           <span
             className="c7"
           >
@@ -6236,21 +6236,21 @@ Array [
         <div
           className="c3"
         >
-          <div
+          <label
             className="c4"
+            hidden={false}
+            htmlFor="insert-unique-id"
           >
-            <label
+            <span
               className="c5"
-              hidden={false}
-              htmlFor="insert-unique-id"
             >
-              <span
+              <div
                 className="c6"
               >
                 Label 
-              </span>
-            </label>
-          </div>
+              </div>
+            </span>
+          </label>
           <span
             className="c7"
           >
@@ -6286,21 +6286,21 @@ Array [
         <div
           className="c3"
         >
-          <div
+          <label
             className="c4"
+            hidden={false}
+            htmlFor="insert-unique-id"
           >
-            <label
+            <span
               className="c5"
-              hidden={false}
-              htmlFor="insert-unique-id"
             >
-              <span
+              <div
                 className="c6"
               >
                 Label 
-              </span>
-            </label>
-          </div>
+              </div>
+            </span>
+          </label>
           <span
             className="c7"
           >
@@ -6404,7 +6404,7 @@ Array [
 `;
 
 exports[`Storyshots Molecules | Input / Number With success 1`] = `
-.c1 {
+.c3 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -6441,7 +6441,7 @@ exports[`Storyshots Molecules | Input / Number With success 1`] = `
   clip: rect(1px,1px,1px,1px);
 }
 
-.c2 {
+.c1 {
   text-overflow: ellipsis;
   white-space: nowrap;
   cursor: pointer;
@@ -6461,7 +6461,7 @@ exports[`Storyshots Molecules | Input / Number With success 1`] = `
   display: block;
 }
 
-.c3 {
+.c2 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #6E6E69;
   margin: 0;
@@ -6604,21 +6604,21 @@ exports[`Storyshots Molecules | Input / Number With success 1`] = `
 <div
   className="c0"
 >
-  <div
+  <label
     className="c1"
+    hidden={false}
+    htmlFor="insert-unique-id"
   >
-    <label
+    <span
       className="c2"
-      hidden={false}
-      htmlFor="insert-unique-id"
     >
-      <span
+      <div
         className="c3"
       >
         Label 
-      </span>
-    </label>
-  </div>
+      </div>
+    </span>
+  </label>
   <span
     className="c4"
   >
@@ -6693,7 +6693,7 @@ exports[`Storyshots Molecules | Input / Number With success 1`] = `
 
 exports[`Storyshots Molecules | Input / Number With value (Controlled behaviour) 1`] = `
 Array [
-  .c1 {
+  .c3 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -6730,7 +6730,7 @@ Array [
   clip: rect(1px,1px,1px,1px);
 }
 
-.c2 {
+.c1 {
   text-overflow: ellipsis;
   white-space: nowrap;
   cursor: pointer;
@@ -6750,7 +6750,7 @@ Array [
   display: block;
 }
 
-.c3 {
+.c2 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #6E6E69;
   margin: 0;
@@ -6893,21 +6893,21 @@ Array [
 <div
     className="c0"
   >
-    <div
+    <label
       className="c1"
+      hidden={false}
+      htmlFor="insert-unique-id"
     >
-      <label
+      <span
         className="c2"
-        hidden={false}
-        htmlFor="insert-unique-id"
       >
-        <span
+        <div
           className="c3"
         >
           Label 
-        </span>
-      </label>
-    </div>
+        </div>
+      </span>
+    </label>
     <span
       className="c4"
     >
