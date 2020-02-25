@@ -30,7 +30,10 @@ export type ButtonProps = {
   as?: any;
   loading?: boolean;
   ref?: React.Ref<HTMLAnchorElement> | React.Ref<HTMLButtonElement>;
-} & Pick<React.DOMAttributes<HTMLButtonElement>, 'onMouseEnter' | 'onMouseLeave' | 'onMouseOver'>;
+} & Pick<
+  React.DOMAttributes<HTMLButtonElement | HTMLAnchorElement>,
+  'onMouseEnter' | 'onMouseLeave' | 'onMouseOver'
+>;
 
 type Omit<T, K> = Pick<T, Exclude<keyof T, K>>;
 type ForceRequired<T, K extends keyof T> = Omit<T, K> & Required<Pick<T, K>>;
