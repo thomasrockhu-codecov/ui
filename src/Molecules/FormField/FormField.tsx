@@ -72,11 +72,11 @@ export const FormField: React.FC<Props> = React.forwardRef(
       } else if (fieldId || forId) {
         field = (
           <>
-            <WithOptionalAddon labelTooltip={labelTooltip} hideLabel={hideLabel}>
-              <FormLabel hideLabel={hideLabel} forId={fieldId || forId}>
+            <FormLabel hideLabel={hideLabel} forId={fieldId || forId}>
+              <WithOptionalAddon labelTooltip={labelTooltip} hideLabel={hideLabel}>
                 {labelText}
-              </FormLabel>
-            </WithOptionalAddon>
+              </WithOptionalAddon>
+            </FormLabel>
             {children}
           </>
         );
