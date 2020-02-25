@@ -233,21 +233,21 @@ exports[`Storyshots Molecules | Input / Select Accessible From Document Forms 1`
         <div
           className="c3"
         >
-          <div
-            className="c2"
+          <label
+            className="c4"
+            hidden={false}
+            htmlFor="forms-input-test"
           >
-            <label
-              className="c4"
-              hidden={false}
-              htmlFor="forms-input-test"
+            <span
+              className="c5"
             >
-              <span
-                className="c5"
+              <div
+                className="c2"
               >
                 User account 
-              </span>
-            </label>
-          </div>
+              </div>
+            </span>
+          </label>
           <div
             className="c6"
             disabled={false}
@@ -542,21 +542,21 @@ exports[`Storyshots Molecules | Input / Select Actions 1`] = `
       <div
         className="c3"
       >
-        <div
-          className="c2"
+        <label
+          className="c4"
+          hidden={false}
+          htmlFor="custom-renderers-select"
         >
-          <label
-            className="c4"
-            hidden={false}
-            htmlFor="custom-renderers-select"
+          <span
+            className="c5"
           >
-            <span
-              className="c5"
+            <div
+              className="c2"
             >
               User account 
-            </span>
-          </label>
-        </div>
+            </div>
+          </span>
+        </label>
         <div
           className="c6"
           disabled={false}
@@ -835,21 +835,21 @@ exports[`Storyshots Molecules | Input / Select Actions And Empty Option List 1`]
       <div
         className="c3"
       >
-        <div
-          className="c2"
+        <label
+          className="c4"
+          hidden={false}
+          htmlFor="custom-renderers-select"
         >
-          <label
-            className="c4"
-            hidden={false}
-            htmlFor="custom-renderers-select"
+          <span
+            className="c5"
           >
-            <span
-              className="c5"
+            <div
+              className="c2"
             >
               User account 
-            </span>
-          </label>
-        </div>
+            </div>
+          </span>
+        </label>
         <div
           className="c6"
           disabled={false}
@@ -1140,21 +1140,21 @@ exports[`Storyshots Molecules | Input / Select Auto Focus 1`] = `
       <div
         className="c3"
       >
-        <div
-          className="c2"
+        <label
+          className="c4"
+          hidden={false}
+          htmlFor="onchange-select"
         >
-          <label
-            className="c4"
-            hidden={false}
-            htmlFor="onchange-select"
+          <span
+            className="c5"
           >
-            <span
-              className="c5"
+            <div
+              className="c2"
             >
               User account 
-            </span>
-          </label>
-        </div>
+            </div>
+          </span>
+        </label>
         <div
           className="c6"
           disabled={false}
@@ -1507,21 +1507,21 @@ Array [
         <div
           className="c3"
         >
-          <div
-            className="c2"
+          <label
+            className="c4"
+            hidden={false}
+            htmlFor="onchange-select"
           >
-            <label
-              className="c4"
-              hidden={false}
-              htmlFor="onchange-select"
+            <span
+              className="c5"
             >
-              <span
-                className="c5"
+              <div
+                className="c2"
               >
                 User account 
-              </span>
-            </label>
-          </div>
+              </div>
+            </span>
+          </label>
           <div
             className="c6"
             disabled={false}
@@ -1814,21 +1814,21 @@ exports[`Storyshots Molecules | Input / Select Controlled behaviour 1`] = `
       <div
         className="c3"
       >
-        <div
-          className="c2"
+        <label
+          className="c4"
+          hidden={false}
+          htmlFor="onchange-select"
         >
-          <label
-            className="c4"
-            hidden={false}
-            htmlFor="onchange-select"
+          <span
+            className="c5"
           >
-            <span
-              className="c5"
+            <div
+              className="c2"
             >
               User account 
-            </span>
-          </label>
-        </div>
+            </div>
+          </span>
+        </label>
         <div
           className="c6"
           disabled={false}
@@ -2114,21 +2114,21 @@ exports[`Storyshots Molecules | Input / Select Custom Renderers 1`] = `
       <div
         className="c3"
       >
-        <div
-          className="c2"
+        <label
+          className="c4"
+          hidden={false}
+          htmlFor="custom-renderers-select"
         >
-          <label
-            className="c4"
-            hidden={false}
-            htmlFor="custom-renderers-select"
+          <span
+            className="c5"
           >
-            <span
-              className="c5"
+            <div
+              className="c2"
             >
               User account 
-            </span>
-          </label>
-        </div>
+            </div>
+          </span>
+        </label>
         <div
           className="c6"
           disabled={false}
@@ -2415,21 +2415,21 @@ exports[`Storyshots Molecules | Input / Select Default Story 1`] = `
       <div
         className="c3"
       >
-        <div
-          className="c2"
+        <label
+          className="c4"
+          hidden={false}
+          htmlFor="input-1"
         >
-          <label
-            className="c4"
-            hidden={false}
-            htmlFor="input-1"
+          <span
+            className="c5"
           >
-            <span
-              className="c5"
+            <div
+              className="c2"
             >
               Label 
-            </span>
-          </label>
-        </div>
+            </div>
+          </span>
+        </label>
         <div
           className="c6"
           disabled={false}
@@ -2901,21 +2901,21 @@ exports[`Storyshots Molecules | Input / Select Default variations 1`] = `
             <div
               className="c6"
             >
-              <div
-                className="c5"
+              <label
+                className="c7"
+                hidden={false}
+                htmlFor="disabled-select"
               >
-                <label
-                  className="c7"
-                  hidden={false}
-                  htmlFor="disabled-select"
+                <span
+                  className="c8"
                 >
-                  <span
-                    className="c8"
+                  <div
+                    className="c5"
                   >
                     User account 
-                  </span>
-                </label>
-              </div>
+                  </div>
+                </span>
+              </label>
               <div
                 className="c9"
                 disabled={true}
@@ -3020,21 +3020,21 @@ exports[`Storyshots Molecules | Input / Select Default variations 1`] = `
             <div
               className="c6"
             >
-              <div
-                className="c5"
+              <label
+                className="c7"
+                hidden={false}
+                htmlFor="error-select"
               >
-                <label
-                  className="c7"
-                  hidden={false}
-                  htmlFor="error-select"
+                <span
+                  className="c8"
                 >
-                  <span
-                    className="c8"
+                  <div
+                    className="c5"
                   >
                     User account 
-                  </span>
-                </label>
-              </div>
+                  </div>
+                </span>
+              </label>
               <div
                 className="c20"
                 disabled={false}
@@ -3150,21 +3150,21 @@ exports[`Storyshots Molecules | Input / Select Default variations 1`] = `
             <div
               className="c6"
             >
-              <div
-                className="c5"
+              <label
+                className="c7"
+                hidden={false}
+                htmlFor="info-select"
               >
-                <label
-                  className="c7"
-                  hidden={false}
-                  htmlFor="info-select"
+                <span
+                  className="c8"
                 >
-                  <span
-                    className="c8"
+                  <div
+                    className="c5"
                   >
                     User account 
-                  </span>
-                </label>
-              </div>
+                  </div>
+                </span>
+              </label>
               <div
                 className="c24"
                 disabled={false}
@@ -3275,21 +3275,21 @@ exports[`Storyshots Molecules | Input / Select Default variations 1`] = `
             <div
               className="c6"
             >
-              <div
-                className="c5"
+              <label
+                className="c7"
+                hidden={false}
+                htmlFor="success-select"
               >
-                <label
-                  className="c7"
-                  hidden={false}
-                  htmlFor="success-select"
+                <span
+                  className="c8"
                 >
-                  <span
-                    className="c8"
+                  <div
+                    className="c5"
                   >
                     User account 
-                  </span>
-                </label>
-              </div>
+                  </div>
+                </span>
+              </label>
               <div
                 className="c26"
                 disabled={false}
@@ -3583,21 +3583,21 @@ exports[`Storyshots Molecules | Input / Select Disabled Items 1`] = `
       <div
         className="c3"
       >
-        <div
-          className="c2"
+        <label
+          className="c4"
+          hidden={false}
+          htmlFor="onchange-select"
         >
-          <label
-            className="c4"
-            hidden={false}
-            htmlFor="onchange-select"
+          <span
+            className="c5"
           >
-            <span
-              className="c5"
+            <div
+              className="c2"
             >
               User account 
-            </span>
-          </label>
-        </div>
+            </div>
+          </span>
+        </label>
         <div
           className="c6"
           disabled={false}
@@ -3914,21 +3914,21 @@ Array [
         <div
           className="c3"
         >
-          <div
-            className="c2"
+          <label
+            className="c4"
+            hidden={false}
+            htmlFor="no-scroll-select"
           >
-            <label
-              className="c4"
-              hidden={false}
-              htmlFor="no-scroll-select"
+            <span
+              className="c5"
             >
-              <span
-                className="c5"
+              <div
+                className="c2"
               >
                 User account 
-              </span>
-            </label>
-          </div>
+              </div>
+            </span>
+          </label>
           <div
             className="c6"
             disabled={false}
@@ -4236,21 +4236,21 @@ exports[`Storyshots Molecules | Input / Select Full Width 1`] = `
         className="c3"
         width="100%"
       >
-        <div
-          className="c2"
+        <label
+          className="c4"
+          hidden={false}
+          htmlFor="onchange-select"
         >
-          <label
-            className="c4"
-            hidden={false}
-            htmlFor="onchange-select"
+          <span
+            className="c5"
           >
-            <span
-              className="c5"
+            <div
+              className="c2"
             >
               User account 
-            </span>
-          </label>
-        </div>
+            </div>
+          </span>
+        </label>
         <div
           className="c6"
           disabled={false}
@@ -4529,21 +4529,21 @@ exports[`Storyshots Molecules | Input / Select Fully Empty 1`] = `
       <div
         className="c3"
       >
-        <div
-          className="c2"
+        <label
+          className="c4"
+          hidden={false}
+          htmlFor="custom-renderers-select"
         >
-          <label
-            className="c4"
-            hidden={false}
-            htmlFor="custom-renderers-select"
+          <span
+            className="c5"
           >
-            <span
-              className="c5"
+            <div
+              className="c2"
             >
               User account 
-            </span>
-          </label>
-        </div>
+            </div>
+          </span>
+        </label>
         <div
           className="c6"
           disabled={false}
@@ -6477,21 +6477,21 @@ exports[`Storyshots Molecules | Input / Select Multi Select Uncontrolled 1`] = `
       <div
         className="c3"
       >
-        <div
-          className="c2"
+        <label
+          className="c4"
+          hidden={false}
+          htmlFor="input-1"
         >
-          <label
-            className="c4"
-            hidden={false}
-            htmlFor="input-1"
+          <span
+            className="c5"
           >
-            <span
-              className="c5"
+            <div
+              className="c2"
             >
               Label 
-            </span>
-          </label>
-        </div>
+            </div>
+          </span>
+        </label>
         <div
           className="c6"
           disabled={false}
@@ -6779,21 +6779,21 @@ exports[`Storyshots Molecules | Input / Select Multiselect 1`] = `
       <div
         className="c3"
       >
-        <div
-          className="c2"
+        <label
+          className="c4"
+          hidden={false}
+          htmlFor="custom-renderers-select"
         >
-          <label
-            className="c4"
-            hidden={false}
-            htmlFor="custom-renderers-select"
+          <span
+            className="c5"
           >
-            <span
-              className="c5"
+            <div
+              className="c2"
             >
               User account 
-            </span>
-          </label>
-        </div>
+            </div>
+          </span>
+        </label>
         <div
           className="c6"
           disabled={false}
@@ -7081,21 +7081,21 @@ exports[`Storyshots Molecules | Input / Select Multiselect Actions 1`] = `
       <div
         className="c3"
       >
-        <div
-          className="c2"
+        <label
+          className="c4"
+          hidden={false}
+          htmlFor="custom-renderers-select"
         >
-          <label
-            className="c4"
-            hidden={false}
-            htmlFor="custom-renderers-select"
+          <span
+            className="c5"
           >
-            <span
-              className="c5"
+            <div
+              className="c2"
             >
               User account 
-            </span>
-          </label>
-        </div>
+            </div>
+          </span>
+        </label>
         <div
           className="c6"
           disabled={false}
@@ -7390,21 +7390,21 @@ exports[`Storyshots Molecules | Input / Select Multiselect Select All 1`] = `
       <div
         className="c3"
       >
-        <div
-          className="c2"
+        <label
+          className="c4"
+          hidden={false}
+          htmlFor="multiwithall-select"
         >
-          <label
-            className="c4"
-            hidden={false}
-            htmlFor="multiwithall-select"
+          <span
+            className="c5"
           >
-            <span
-              className="c5"
+            <div
+              className="c2"
             >
               User account 
-            </span>
-          </label>
-        </div>
+            </div>
+          </span>
+        </label>
         <div
           className="c6"
           disabled={false}
@@ -7695,21 +7695,21 @@ exports[`Storyshots Molecules | Input / Select On Blur And On Focus 1`] = `
       <div
         className="c3"
       >
-        <div
-          className="c2"
+        <label
+          className="c4"
+          hidden={false}
+          htmlFor="custom-renderers-select"
         >
-          <label
-            className="c4"
-            hidden={false}
-            htmlFor="custom-renderers-select"
+          <span
+            className="c5"
           >
-            <span
-              className="c5"
+            <div
+              className="c2"
             >
               User account 
-            </span>
-          </label>
-        </div>
+            </div>
+          </span>
+        </label>
         <div
           className="c6"
           disabled={false}
@@ -8000,21 +8000,21 @@ exports[`Storyshots Molecules | Input / Select On Search Query Change 1`] = `
       <div
         className="c3"
       >
-        <div
-          className="c2"
+        <label
+          className="c4"
+          hidden={false}
+          htmlFor="success-select"
         >
-          <label
-            className="c4"
-            hidden={false}
-            htmlFor="success-select"
+          <span
+            className="c5"
           >
-            <span
-              className="c5"
+            <div
+              className="c2"
             >
               User account 
-            </span>
-          </label>
-        </div>
+            </div>
+          </span>
+        </label>
         <div
           className="c6"
           disabled={false}
@@ -8693,21 +8693,21 @@ exports[`Storyshots Molecules | Input / Select Overflow Story 1`] = `
       <div
         className="c3"
       >
-        <div
-          className="c2"
+        <label
+          className="c4"
+          hidden={false}
+          htmlFor="input-1"
         >
-          <label
-            className="c4"
-            hidden={false}
-            htmlFor="input-1"
+          <span
+            className="c5"
           >
-            <span
-              className="c5"
+            <div
+              className="c2"
             >
               LabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabel 
-            </span>
-          </label>
-        </div>
+            </div>
+          </span>
+        </label>
         <div
           className="c6"
           disabled={false}
@@ -9000,21 +9000,21 @@ exports[`Storyshots Molecules | Input / Select Preselected Options 1`] = `
       <div
         className="c3"
       >
-        <div
-          className="c2"
+        <label
+          className="c4"
+          hidden={false}
+          htmlFor="input-1"
         >
-          <label
-            className="c4"
-            hidden={false}
-            htmlFor="input-1"
+          <span
+            className="c5"
           >
-            <span
-              className="c5"
+            <div
+              className="c2"
             >
               Label 
-            </span>
-          </label>
-        </div>
+            </div>
+          </span>
+        </label>
         <div
           className="c6"
           disabled={false}
@@ -9321,21 +9321,21 @@ exports[`Storyshots Molecules | Input / Select Search Story 1`] = `
       <div
         className="c3"
       >
-        <div
-          className="c2"
+        <label
+          className="c4"
+          hidden={false}
+          htmlFor="input-1"
         >
-          <label
-            className="c4"
-            hidden={false}
-            htmlFor="input-1"
+          <span
+            className="c5"
           >
-            <span
-              className="c5"
+            <div
+              className="c2"
             >
               Label 
-            </span>
-          </label>
-        </div>
+            </div>
+          </span>
+        </label>
         <div
           className="c6"
           disabled={false}
@@ -9807,21 +9807,21 @@ exports[`Storyshots Molecules | Input / Select Size S 1`] = `
             <div
               className="c6"
             >
-              <div
-                className="c5"
+              <label
+                className="c7"
+                hidden={false}
+                htmlFor="disabled-select"
               >
-                <label
-                  className="c7"
-                  hidden={false}
-                  htmlFor="disabled-select"
+                <span
+                  className="c8"
                 >
-                  <span
-                    className="c8"
+                  <div
+                    className="c5"
                   >
                     User account 
-                  </span>
-                </label>
-              </div>
+                  </div>
+                </span>
+              </label>
               <div
                 className="c9"
                 disabled={true}
@@ -9927,21 +9927,21 @@ exports[`Storyshots Molecules | Input / Select Size S 1`] = `
             <div
               className="c6"
             >
-              <div
-                className="c5"
+              <label
+                className="c7"
+                hidden={false}
+                htmlFor="error-select"
               >
-                <label
-                  className="c7"
-                  hidden={false}
-                  htmlFor="error-select"
+                <span
+                  className="c8"
                 >
-                  <span
-                    className="c8"
+                  <div
+                    className="c5"
                   >
                     User account 
-                  </span>
-                </label>
-              </div>
+                  </div>
+                </span>
+              </label>
               <div
                 className="c20"
                 disabled={false}
@@ -10058,21 +10058,21 @@ exports[`Storyshots Molecules | Input / Select Size S 1`] = `
             <div
               className="c6"
             >
-              <div
-                className="c5"
+              <label
+                className="c7"
+                hidden={false}
+                htmlFor="info-select"
               >
-                <label
-                  className="c7"
-                  hidden={false}
-                  htmlFor="info-select"
+                <span
+                  className="c8"
                 >
-                  <span
-                    className="c8"
+                  <div
+                    className="c5"
                   >
                     User account 
-                  </span>
-                </label>
-              </div>
+                  </div>
+                </span>
+              </label>
               <div
                 className="c24"
                 disabled={false}
@@ -10184,21 +10184,21 @@ exports[`Storyshots Molecules | Input / Select Size S 1`] = `
             <div
               className="c6"
             >
-              <div
-                className="c5"
+              <label
+                className="c7"
+                hidden={false}
+                htmlFor="success-select"
               >
-                <label
-                  className="c7"
-                  hidden={false}
-                  htmlFor="success-select"
+                <span
+                  className="c8"
                 >
-                  <span
-                    className="c8"
+                  <div
+                    className="c5"
                   >
                     User account 
-                  </span>
-                </label>
-              </div>
+                  </div>
+                </span>
+              </label>
               <div
                 className="c26"
                 disabled={false}
@@ -10493,21 +10493,21 @@ exports[`Storyshots Molecules | Input / Select Tracking 1`] = `
       <div
         className="c3"
       >
-        <div
-          className="c2"
+        <label
+          className="c4"
+          hidden={false}
+          htmlFor="input-1"
         >
-          <label
-            className="c4"
-            hidden={false}
-            htmlFor="input-1"
+          <span
+            className="c5"
           >
-            <span
-              className="c5"
+            <div
+              className="c2"
             >
               Label 
-            </span>
-          </label>
-        </div>
+            </div>
+          </span>
+        </label>
         <div
           className="c6"
           disabled={false}
@@ -10799,21 +10799,21 @@ Array [
         <div
           className="c3"
         >
-          <div
-            className="c2"
+          <label
+            className="c4"
+            hidden={false}
+            htmlFor="input-1"
           >
-            <label
-              className="c4"
-              hidden={false}
-              htmlFor="input-1"
+            <span
+              className="c5"
             >
-              <span
-                className="c5"
+              <div
+                className="c2"
               >
                 Label 
-              </span>
-            </label>
-          </div>
+              </div>
+            </span>
+          </label>
           <div
             className="c6"
             disabled={false}
@@ -11101,21 +11101,21 @@ Array [
         <div
           className="c3"
         >
-          <div
-            className="c2"
+          <label
+            className="c4"
+            hidden={false}
+            htmlFor="input-2"
           >
-            <label
-              className="c4"
-              hidden={false}
-              htmlFor="input-2"
+            <span
+              className="c5"
             >
-              <span
-                className="c5"
+              <div
+                className="c2"
               >
                 Label 
-              </span>
-            </label>
-          </div>
+              </div>
+            </span>
+          </label>
           <div
             className="c6"
             disabled={false}
