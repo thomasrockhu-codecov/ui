@@ -1,3 +1,10 @@
+## [2.18.2](https://github.com/nordnet/ui/compare/v2.18.1...v2.18.2) (2020-02-25)
+
+
+### Bug Fixes
+
+* sync label structure ([05c47cf](https://github.com/nordnet/ui/commit/05c47cf))
+
 ## [2.18.1](https://github.com/nordnet/ui/compare/v2.18.0...v2.18.1) (2020-02-24)
 
 
