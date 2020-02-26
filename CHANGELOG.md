@@ -1,3 +1,10 @@
+# [2.20.0](https://github.com/nordnet/ui/compare/v2.19.0...v2.20.0) (2020-02-26)
+
+
+### Features
+
+* add some native attributes  to Link ([78d3f44](https://github.com/nordnet/ui/commit/78d3f44))
+
 # [2.19.0](https://github.com/nordnet/ui/compare/v2.18.2...v2.19.0) (2020-02-26)
 
 
