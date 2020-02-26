@@ -79,6 +79,10 @@ export const Link: LinkComponent = React.forwardRef<any, LinkProps>((props, ref)
     rel = external ? 'noopener noreferrer nofollow' : undefined,
     as,
     color,
+    onMouseEnter,
+    onMouseLeave,
+    onMouseOver,
+    onFocus,
   } = props;
   const destinationProp = external || cms ? { href: to } : { to };
 
@@ -115,6 +119,10 @@ export const Link: LinkComponent = React.forwardRef<any, LinkProps>((props, ref)
       cms={cms}
       as={as}
       color={color}
+      onMouseEnter={onMouseEnter}
+      onMouseLeave={onMouseLeave}
+      onMouseOver={onMouseOver}
+      onFocus={onFocus}
     >
       {children}
     </StyledLink>

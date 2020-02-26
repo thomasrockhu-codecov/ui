@@ -16,6 +16,9 @@ export type LinkProps = {
   disabled?: boolean;
   as?: any;
   ref?: React.Ref<any>;
-};
+} & Pick<
+  React.DOMAttributes<HTMLAnchorElement>,
+  'onMouseEnter' | 'onMouseLeave' | 'onMouseOver' | 'onFocus'
+>;
 
 export type LinkComponent = React.FunctionComponent<LinkProps>;
