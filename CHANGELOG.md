@@ -1,3 +1,16 @@
+# [2.19.0](https://github.com/nordnet/ui/compare/v2.18.2...v2.19.0) (2020-02-26)
+
+
+### Bug Fixes
+
+* 🐛 allow anchor mouse event listeners ([fc813ba](https://github.com/nordnet/ui/commit/fc813ba))
+
+
+### Features
+
+* 🎸 add some onMouse props to Button component ([6e08b82](https://github.com/nordnet/ui/commit/6e08b82))
+* add cogwheel icon ([060fca5](https://github.com/nordnet/ui/commit/060fca5))
+
 ## [2.18.2](https://github.com/nordnet/ui/compare/v2.18.1...v2.18.2) (2020-02-25)
 
 
