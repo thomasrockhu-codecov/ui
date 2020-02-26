@@ -13,6 +13,7 @@ import { ChevronDown } from './components/ChevronDown';
 import { ChevronLeft } from './components/ChevronLeft';
 import { ChevronRight } from './components/ChevronRight';
 import { ChevronUp } from './components/ChevronUp';
+import { Cogwheel } from './components/Cogwheel';
 import { Cross } from './components/Cross';
 import { CrossThin } from './components/CrossThin';
 import { CrossCircle } from './components/CrossCircle';
@@ -67,6 +68,7 @@ export default {
   ChevronLeft,
   ChevronRight,
   ChevronUp,
+  Cogwheel,
   Cross,
   CrossThin,
   CrossCircle,
