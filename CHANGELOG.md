@@ -1,3 +1,10 @@
+## [2.20.1](https://github.com/nordnet/ui/compare/v2.20.0...v2.20.1) (2020-02-27)
+
+
+### Bug Fixes
+
+* **card:** color bar for all screen sizes ([2e45334](https://github.com/nordnet/ui/commit/2e45334))
+
 # [2.20.0](https://github.com/nordnet/ui/compare/v2.19.0...v2.20.0) (2020-02-26)
 
 
