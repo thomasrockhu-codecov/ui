@@ -15,19 +15,17 @@ const getColor = (props: ThemedStyledProps<Props, Theme>) => {
 };
 
 const barStyles = css<Props>`
-  ${p => p.theme.media.greaterThan(p.theme.breakpoints.sm)} {
-    position: relative;
+  position: relative;
 
-    &::before {
-      content: '';
-      display: block;
-      width: 100%;
-      height: ${p => p.theme.spacing.unit(1)}px;
-      background: ${p => getColor(p)};
-      position: absolute;
-      top: 0;
-      left: 0;
-    }
+  &::before {
+    content: '';
+    display: block;
+    width: 100%;
+    height: ${p => p.theme.spacing.unit(1)}px;
+    background: ${p => getColor(p)};
+    position: absolute;
+    top: 0;
+    left: 0;
   }
 `;
 
