@@ -1,3 +1,10 @@
+## [2.21.1](https://github.com/nordnet/ui/compare/v2.21.0...v2.21.1) (2020-02-28)
+
+
+### Bug Fixes
+
+* 🐛 Modal overflowing vertically is not breaking ([07f87ae](https://github.com/nordnet/ui/commit/07f87ae))
+
 # [2.21.0](https://github.com/nordnet/ui/compare/v2.20.1...v2.21.0) (2020-02-28)
 
 
