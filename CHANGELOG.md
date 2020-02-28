@@ -1,3 +1,10 @@
+# [2.21.0](https://github.com/nordnet/ui/compare/v2.20.1...v2.21.0) (2020-02-28)
+
+
+### Features
+
+* 🎸 add bank deposit icon ([e6d2955](https://github.com/nordnet/ui/commit/e6d2955))
+
 ## [2.20.1](https://github.com/nordnet/ui/compare/v2.20.0...v2.20.1) (2020-02-27)
 
 
