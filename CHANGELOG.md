@@ -1,3 +1,10 @@
+## [2.21.2](https://github.com/nordnet/ui/compare/v2.21.1...v2.21.2) (2020-03-02)
+
+
+### Bug Fixes
+
+* 🐛 overflow auto instead of scroll ([a7a0958](https://github.com/nordnet/ui/commit/a7a0958))
+
 ## [2.21.1](https://github.com/nordnet/ui/compare/v2.21.0...v2.21.1) (2020-02-28)
 
 
