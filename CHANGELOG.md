@@ -1,3 +1,10 @@
+## [2.21.4](https://github.com/nordnet/ui/compare/v2.21.3...v2.21.4) (2020-03-04)
+
+
+### Bug Fixes
+
+* rebuild docs ([66dc4eb](https://github.com/nordnet/ui/commit/66dc4eb))
+
 ## [2.21.3](https://github.com/nordnet/ui/compare/v2.21.2...v2.21.3) (2020-03-04)
 
 
