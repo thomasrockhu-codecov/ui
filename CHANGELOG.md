@@ -1,3 +1,10 @@
+## [2.21.3](https://github.com/nordnet/ui/compare/v2.21.2...v2.21.3) (2020-03-04)
+
+
+### Bug Fixes
+
+* add min-width 0 to fix firefox ([7c5a8f5](https://github.com/nordnet/ui/commit/7c5a8f5))
+
 ## [2.21.2](https://github.com/nordnet/ui/compare/v2.21.1...v2.21.2) (2020-03-02)
 
 
