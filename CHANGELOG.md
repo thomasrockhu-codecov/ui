@@ -1,3 +1,10 @@
+# [2.22.0](https://github.com/nordnet/ui/compare/v2.21.4...v2.22.0) (2020-03-09)
+
+
+### Features
+
+* icon filter ([1480b4d](https://github.com/nordnet/ui/commit/1480b4d))
+
 ## [2.21.4](https://github.com/nordnet/ui/compare/v2.21.3...v2.21.4) (2020-03-04)
 
 
