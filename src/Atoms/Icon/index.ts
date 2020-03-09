@@ -16,8 +16,8 @@ import { ChevronRight } from './components/ChevronRight';
 import { ChevronUp } from './components/ChevronUp';
 import { Cogwheel } from './components/Cogwheel';
 import { Cross } from './components/Cross';
-import { CrossThin } from './components/CrossThin';
 import { CrossCircle } from './components/CrossCircle';
+import { CrossThin } from './components/CrossThin';
 import { DiagonalWithCircle } from './components/DiagonalWithCircle';
 import { DirectionDown } from './components/DirectionDown';
 import { DirectionUp } from './components/DirectionUp';
@@ -25,6 +25,7 @@ import { ExternalLink } from './components/ExternalLink';
 import { EyeWithPlus } from './components/EyeWithPlus';
 import { EyeWithPlusActive } from './components/EyeWithPlusActive';
 import { File } from './components/File';
+import { Filter } from './components/Filter';
 import { Flag } from './components/Flag';
 import { Globe } from './components/Globe';
 import { Hamburger } from './components/Hamburger';
@@ -72,8 +73,8 @@ export default {
   ChevronUp,
   Cogwheel,
   Cross,
-  CrossThin,
   CrossCircle,
+  CrossThin,
   DiagonalWithCircle,
   DirectionDown,
   DirectionUp,
@@ -81,6 +82,7 @@ export default {
   EyeWithPlus,
   EyeWithPlusActive,
   File,
+  Filter,
   Flag,
   Globe,
   Hamburger,
