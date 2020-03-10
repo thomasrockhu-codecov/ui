@@ -1,3 +1,10 @@
+## [2.22.1](https://github.com/nordnet/ui/compare/v2.22.0...v2.22.1) (2020-03-10)
+
+
+### Bug Fixes
+
+* select machine not updating on props change ([75b3cee](https://github.com/nordnet/ui/commit/75b3cee))
+
 # [2.22.0](https://github.com/nordnet/ui/compare/v2.21.4...v2.22.0) (2020-03-09)
 
 
