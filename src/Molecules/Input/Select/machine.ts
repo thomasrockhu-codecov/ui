@@ -82,7 +82,7 @@ export const SelectMachine = Machine<Context>(
     on: {
       [ACTION_TYPES.SYNC]: {
         actions: 'syncProps',
-        target: 'selection.unknown',
+        target: ['selection.unknown', 'interaction.unknown', 'open.unknown', 'correctness.unknown'],
       },
     },
     states: {
