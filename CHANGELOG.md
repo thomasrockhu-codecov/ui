@@ -1,3 +1,10 @@
+## [2.22.2](https://github.com/nordnet/ui/compare/v2.22.1...v2.22.2) (2020-03-11)
+
+
+### Bug Fixes
+
+* **deps:** updated framer-motion@1.9.1 ([f0feae6](https://github.com/nordnet/ui/commit/f0feae6))
+
 ## [2.22.1](https://github.com/nordnet/ui/compare/v2.22.0...v2.22.1) (2020-03-10)
 
 
