@@ -1,3 +1,11 @@
+## [2.22.3](https://github.com/nordnet/ui/compare/v2.22.2...v2.22.3) (2020-03-13)
+
+
+### Bug Fixes
+
+* add inmodal prop ([0684856](https://github.com/nordnet/ui/commit/0684856))
+* update snaps ([dcc037f](https://github.com/nordnet/ui/commit/dcc037f))
+
 ## [2.22.2](https://github.com/nordnet/ui/compare/v2.22.1...v2.22.2) (2020-03-11)
 
 
