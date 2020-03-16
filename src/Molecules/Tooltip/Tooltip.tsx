@@ -60,20 +60,20 @@ const getToolTipPosition = (position: Props['position']) => {
   }
 };
 
-export const Tooltip: TooltipComponent = ({ children, label, ariaLabel, position = 'auto' }) => {
+export const Tooltip: TooltipComponent = ({ children, label, ariaLabel, position = 'bottom' }) => {
   const [trigger, tooltip] = useTooltip();
   const { isVisible, triggerRect } = tooltip;
   const tooltipPosition = getToolTipPosition(position);
 
   return (
     <>
-      {cloneElement(children, trigger)}
+      {cloneElement(children as React.ReactElement, trigger)}
 
       {isVisible && <Triangle triggerRect={triggerRect} tooltipPosition={position} />}
       <StyledTooltip
         {...tooltip}
         label={<Typography type="tertiary">{label}</Typography>}
-        ariaLabel={ariaLabel}
+        aria-label={ariaLabel}
         position={tooltipPosition}
       />
     </>
