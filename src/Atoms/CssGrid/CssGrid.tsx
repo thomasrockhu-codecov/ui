@@ -262,7 +262,7 @@ export type ItemProps = {
   place?: string;
 };
 
-const RawCssGridItem = styled.div<ItemProps & { css: any }>`
+const RawCssGridItem = styled.div<ItemProps & { css?: any }>`
   box-sizing: border-box;
   min-width: 0; /* prevents grid blowout */
   ${({ justify }) => (justify ? `justify-self: ${justify};` : '')}
