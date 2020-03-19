@@ -30,6 +30,7 @@ import CardWithTitle from './Molecules/CardWithTitle';
 import CollapsibleCard from './Molecules/CollapsibleCard';
 import Drawer from './Molecules/Drawer';
 import FeedbackBanner from './Molecules/FeedbackBanner';
+import InfoBar from './Molecules/InfoBar';
 import Fieldset from './Molecules/Fieldset';
 import FormField from './Molecules/FormField';
 import Input from './Molecules/Input';
@@ -75,6 +76,7 @@ export {
   Development,
   FadedScroll,
   FeedbackBanner,
+  InfoBar,
   Fieldset,
   Flag,
   Flexbox,
