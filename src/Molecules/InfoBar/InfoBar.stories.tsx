@@ -1,10 +1,10 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 import { BrowserRouter } from 'react-router-dom';
-import { InfoBar } from '.';
-import { Props } from './InfoBar.types';
+import { InfoBar } from '../..';
+import { InfoBarProps } from './InfoBar.types';
 
-const WrappedInfoBar: React.FC<Props> = ({ variant, children, onClose }) => (
+const WrappedInfoBar: React.FC<InfoBarProps> = ({ variant, children, onClose }) => (
   <BrowserRouter>
     <InfoBar onClose={onClose} variant={variant}>
       {children}

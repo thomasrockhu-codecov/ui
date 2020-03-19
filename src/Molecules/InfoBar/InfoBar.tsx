@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { Box, Flexbox, PageWrapper, Typography, Icon } from '../..';
-import { Props } from './InfoBar.types';
+import { InfoBarProps, InfoBarIconProps, FnHelper } from './InfoBar.types';
 
 /*
 Categories:
@@ -12,7 +12,7 @@ Categories:
 * general (default): white bg and circle info icon
 */
 
-const bgFn = ({ variant, theme }) => {
+const bgFn = ({ variant, theme }: FnHelper) => {
   switch (variant) {
     case 'success':
       return theme.color.positive;
@@ -27,7 +27,7 @@ const bgFn = ({ variant, theme }) => {
   }
 };
 
-const textFn = ({ variant, theme }) => {
+const textFn = ({ variant, theme }: FnHelper) => {
   switch (variant) {
     case 'error':
       return theme.color.textLight;
@@ -36,7 +36,7 @@ const textFn = ({ variant, theme }) => {
   }
 };
 
-const textLinkFn = ({ variant, theme }) => {
+const textLinkFn = ({ variant, theme }: FnHelper) => {
   switch (variant) {
     case 'success':
       return theme.color.text;
@@ -68,7 +68,7 @@ const InfoBarPageWrapper = styled(PageWrapper)`
   }
 `;
 
-const InfoBarIcon = ({ variant }) => {
+const InfoBarIcon: React.FC<InfoBarIconProps> = ({ variant }) => {
   switch (variant) {
     case 'success':
       return <Icon.CheckMarkCircle fill={theme => textLinkFn({ variant, theme })} />;
@@ -88,7 +88,7 @@ const InfoBarIcon = ({ variant }) => {
   }
 };
 
-export const InfoBar: React.FC<Props> = ({ variant, onClose, className, children }) => {
+export const InfoBar: React.FC<InfoBarProps> = ({ variant, onClose, className, children }) => {
   return (
     <InfoBarPageWrapper className={className} variant={variant}>
       <Box py={1} px={3} sm={{ px: 0 }}>
