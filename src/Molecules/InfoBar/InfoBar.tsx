@@ -88,7 +88,7 @@ const InfoBarIcon = ({ variant }) => {
   }
 };
 
-const InfoBar: React.FC<Props> = ({ variant, onClose, className, children }) => {
+export const InfoBar: React.FC<Props> = ({ variant, onClose, className, children }) => {
   return (
     <InfoBarPageWrapper className={className} variant={variant}>
       <Box py={1} px={3} sm={{ px: 0 }}>
@@ -117,5 +117,3 @@ const InfoBar: React.FC<Props> = ({ variant, onClose, className, children }) => 
     </InfoBarPageWrapper>
   );
 };
-
-export default InfoBar;
