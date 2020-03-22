@@ -15,31 +15,41 @@ import { ChevronLeft } from './components/ChevronLeft';
 import { ChevronRight } from './components/ChevronRight';
 import { ChevronUp } from './components/ChevronUp';
 import { Cogwheel } from './components/Cogwheel';
+import { Commodities } from './components/Commodities';
+import { Communication } from './components/Communication';
+import { ConsumerCyclic } from './components/ConsumerCyclic';
+import { ConsumerStable } from './components/ConsumerStable';
 import { Cross } from './components/Cross';
 import { CrossCircle } from './components/CrossCircle';
 import { CrossThin } from './components/CrossThin';
 import { DiagonalWithCircle } from './components/DiagonalWithCircle';
 import { DirectionDown } from './components/DirectionDown';
 import { DirectionUp } from './components/DirectionUp';
+import { Energy } from './components/Energy';
 import { ExternalLink } from './components/ExternalLink';
 import { EyeWithPlus } from './components/EyeWithPlus';
 import { EyeWithPlusActive } from './components/EyeWithPlusActive';
 import { File } from './components/File';
 import { Filter } from './components/Filter';
+import { Financial } from './components/Financial';
 import { Flag } from './components/Flag';
 import { Globe } from './components/Globe';
 import { Hamburger } from './components/Hamburger';
+import { Healthcare } from './components/Healthcare';
 import { Import } from './components/Import';
+import { Industrial } from './components/Industrial';
 import { InfoCircle } from './components/InfoCircle';
 import { Maximize } from './components/Maximize';
 import { Minimize } from './components/Minimize';
 import { Minus } from './components/Minus';
+import { Other } from './components/Other';
 import { Pen } from './components/Pen';
 import { Pending } from './components/Pending';
 import { Plus } from './components/Plus';
 import { PlusWithCircle } from './components/PlusWithCircle';
 import { Printer } from './components/Printer';
 import { Questionmark } from './components/Questionmark';
+import { RealEstate } from './components/RealEstate';
 import { Rtmt } from './components/Rtmt';
 import { Search } from './components/Search';
 import { SharevilleLogo } from './components/SharevilleLogo';
@@ -50,8 +60,10 @@ import { SocialYouTube } from './components/SocialYouTube';
 import { SolidCircle } from './components/Circle';
 import { Star } from './components/Star';
 import { Star24 } from './components/Star24';
+import { Technology } from './components/Technology';
 import { ThreeDots } from './components/ThreeDots';
 import { Trash } from './components/Trash';
+import { Utilities } from './components/Utilities';
 import { WarningTriangle } from './components/WarningTriangle';
 
 export default {
@@ -72,31 +84,41 @@ export default {
   ChevronRight,
   ChevronUp,
   Cogwheel,
+  Commodities,
+  Communication,
+  ConsumerCyclic,
+  ConsumerStable,
   Cross,
   CrossCircle,
   CrossThin,
   DiagonalWithCircle,
   DirectionDown,
   DirectionUp,
+  Energy,
   ExternalLink,
   EyeWithPlus,
   EyeWithPlusActive,
   File,
   Filter,
+  Financial,
   Flag,
   Globe,
   Hamburger,
+  Healthcare,
   Import,
+  Industrial,
   InfoCircle,
   Maximize,
   Minimize,
   Minus,
+  Other,
   Pen,
   Pending,
   Plus,
   PlusWithCircle,
   Printer,
   Questionmark,
+  RealEstate,
   Rtmt,
   Search,
   SharevilleLogo,
@@ -107,7 +129,9 @@ export default {
   SolidCircle,
   Star,
   Star24,
+  Technology,
   ThreeDots,
   Trash,
+  Utilities,
   WarningTriangle,
 };
