@@ -255,14 +255,46 @@ const StyledDiv = styled.div<Props>`
   }}
 ` as React.FC<Props>;
 
+const getMsJustifySelfStyles = (justify: ItemProps['justify']) =>
+  `-ms-grid-column-align: ${justify};`;
+
+const getMsAlignSelfStyles = (align: ItemProps['align']) => `-ms-grid-row-align: ${align};`;
+
+const getJustifySelfStyles = (justify: ItemProps['justify']) =>
+  justify
+    ? `
+  justify-self: ${justify};
+  ${getMsJustifySelfStyles(justify)}
+`
+    : '';
+
+const getAlignSelfStyles = (align: ItemProps['align']) =>
+  align
+    ? `
+  align-self: ${align};
+  ${getMsAlignSelfStyles(align)}
+`
+    : '';
+
+const getPlaceSelfStyles = (place: ItemProps['place']) => {
+  const styles = [];
+  if (typeof place === 'string' && place) {
+    const [alignOrBoth, justify] = place.split(' ') as [ItemProps['align'], ItemProps['justify']];
+    styles.push(`place-self: ${place};`);
+    styles.push(getMsAlignSelfStyles(alignOrBoth));
+    styles.push(getMsJustifySelfStyles(justify || alignOrBoth));
+  }
+  return styles.join('\n');
+};
+
 const getCssGridItemStylesFromProps = ({
   justify,
   align,
   place,
 }: Pick<ItemProps, 'justify' | 'align' | 'place'>) => `
-  ${justify ? `justify-self: ${justify};` : ''}
-  ${align ? `align-self: ${align};` : ''}
-  ${place ? `place-self: ${place};` : ''}
+  ${getJustifySelfStyles(justify)}
+  ${getAlignSelfStyles(align)}
+  ${getPlaceSelfStyles(place)}
 `;
 
 const RawCssGridItem = styled.div<ItemProps>`
