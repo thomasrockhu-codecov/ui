@@ -7,7 +7,7 @@ import {
   Gutter,
   TemplateColumn,
   TemplateRow,
-  AreaName,
+  ItemProps,
   AreaInfo,
   Size,
 } from './CssGrid.types';
@@ -255,24 +255,43 @@ const StyledDiv = styled.div<Props>`
   }}
 ` as React.FC<Props>;
 
-export type ItemProps = {
-  area: AreaName;
-  justify?: 'start' | 'end' | 'center' | 'stretch';
-  align?: 'start' | 'end' | 'center' | 'stretch';
-  place?: string;
-};
+const getCssGridItemStylesFromProps = ({
+  justify,
+  align,
+  place,
+}: Pick<ItemProps, 'justify' | 'align' | 'place'>) => `
+  ${justify ? `justify-self: ${justify};` : ''}
+  ${align ? `align-self: ${align};` : ''}
+  ${place ? `place-self: ${place};` : ''}
+`;
 
 const RawCssGridItem = styled.div<ItemProps>`
   box-sizing: border-box;
   min-width: 0; /* prevents grid blowout */
-  ${({ justify }) => (justify ? `justify-self: ${justify};` : '')}
-  ${({ align }) => (align ? `align-self: ${align};` : '')}
-  ${({ place }) => (place ? `place-self: ${place};` : '')}
+  ${p => getCssGridItemStylesFromProps(p)}
+  ${p =>
+    Object.keys(p.theme.breakpoints)
+      .filter(breakpoint => p[breakpoint])
+      .map(
+        breakpoint =>
+          `${p.theme.media.greaterThan(p.theme.breakpoints[breakpoint])} {
+          ${getCssGridItemStylesFromProps(p[breakpoint])}
+        }`,
+      )
+      .join('\n')}
 `;
 
-export const CssGridItem: React.FC<ItemProps> = ({ align, area, children, justify, place }) => (
-  <RawCssGridItem {...{ align, area, children, justify, place }} />
-);
+export const CssGridItem: React.FC<ItemProps> = ({
+  align,
+  area,
+  children,
+  justify,
+  place,
+  sm,
+  md,
+  lg,
+  xl,
+}) => <RawCssGridItem {...{ align, area, children, justify, place, sm, md, lg, xl }} />;
 CssGridItem.displayName = 'CssGrid.Item';
 
 const generateChildStyles = (areasInfo: Record<string, AreaInfo>, size: Size, theme: Theme) => (
