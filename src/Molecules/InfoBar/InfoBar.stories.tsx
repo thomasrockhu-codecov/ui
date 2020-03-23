@@ -1,7 +1,7 @@
 import React from 'react';
+import styled from 'styled-components';
 
 import { InfoBar } from '../..';
-import { Display } from '../../common/Display';
 
 export default {
   title: 'Molecules | InfoBar',
@@ -10,91 +10,99 @@ export default {
   },
 };
 
+export const StyledBg = styled.div`
+  background: #f5f5f5;
+`;
+
 export const defaultUsage = () => (
-  <InfoBar>
-    InfoBar should be used on top of the pages to show Marketing or Customer Support communication
-    messages. Content of the InfoBar is just rendered <code>children</code>
-  </InfoBar>
+  <StyledBg>
+    <InfoBar>
+      InfoBar should be used on top of the pages to show Marketing or Customer Support communication
+      messages. Content of the InfoBar is just rendered <code>children</code>
+    </InfoBar>
+  </StyledBg>
 );
 
 defaultUsage.story = {
   name: 'Default usage',
 };
-
+/* eslint-disable no-alert */
 export const onCloseProp = () => (
-  <Display
-    items={[
-      {
-        title: 'Without onClose (default)',
-        component: <InfoBar>Without onClose prop InfoBar cannot be dismissed</InfoBar>,
-      },
-      {
-        title: 'With onClose (alert("close"))',
-        component: (
-          <InfoBar onClose={() => alert('close')}>
-            With onClose prop InfoBar can be dismissed, but ParentComponent is in charge to react
-            and actually hide the InfoBar.
-          </InfoBar>
-        ),
-      },
-    ]}
-  />
+  <StyledBg>
+    <InfoBar>Without onClose prop InfoBar cannot be dismissed</InfoBar>
+    <br />
+    <br />
+    <br />
+    <InfoBar onClose={() => alert('close')}>
+      With onClose prop InfoBar can be dismissed, but ParentComponent is in charge to react and
+      actually hide the InfoBar.
+    </InfoBar>
+  </StyledBg>
 );
+/* eslint-enable no-alert */
 
 onCloseProp.story = {
   name: 'onClose prop demo',
 };
 
+const variants = [
+  {
+    content: (
+      <>
+        We’re currently working on the new main menu. Links marked with arrow icon will redirect you
+        to the previous website experience. <a href="#nonce">Read more</a>
+      </>
+    ),
+  },
+  {
+    value: 'general',
+    content: (
+      <>
+        We’re currently working on the new main menu. Links marked with arrow icon will redirect you
+        to the previous website experience. <a href="#nonce">Read more</a>
+      </>
+    ),
+  },
+  {
+    value: 'warning',
+    content: (
+      <>
+        We’re currently working on the new main menu. Links marked with arrow icon will redirect you
+        to the previous website experience. <a href="#nonce">Read more</a>
+      </>
+    ),
+  },
+  {
+    value: 'error',
+    content: (
+      <>
+        The US market is currently down, we are fixing it right now. It will soon be back and
+        running. <a href="#nonce">Read more</a>
+      </>
+    ),
+  },
+  {
+    value: 'success',
+    content: (
+      <>
+        We have fixed the US market issue. It is now back to service. <a href="#nonce">Read more</a>
+      </>
+    ),
+  },
+];
+
 export const differentVariants = () => (
-  <Display
-    items={[
-      {
-        title: 'default',
-        component: (
-          <InfoBar>
-            We’re currently working on the new main menu. Links marked with arrow icon will redirect
-            you to the previous website experience. <a href="#nonce">Read more</a>
-          </InfoBar>
-        ),
-      },
-      {
-        title: 'general',
-        component: (
-          <InfoBar variant="general">
-            We’re currently working on the new main menu. Links marked with arrow icon will redirect
-            you to the previous website experience. <a href="#nonce">Read more</a>
-          </InfoBar>
-        ),
-      },
-      {
-        title: 'warning',
-        component: (
-          <InfoBar variant="warning">
-            We’re currently working on the new main menu. Links marked with arrow icon will redirect
-            you to the previous website experience. <a href="#nonce">Read more</a>
-          </InfoBar>
-        ),
-      },
-      {
-        title: 'error',
-        component: (
-          <InfoBar variant="error">
-            The US market is currently down, we are fixing it right now. It will soon be back and
-            running. <a href="#nonce">Read more</a>
-          </InfoBar>
-        ),
-      },
-      {
-        title: 'success',
-        component: (
-          <InfoBar variant="success">
-            We have fixed the US market issue. It is now back to service.{' '}
-            <a href="#nonce">Read more</a>
-          </InfoBar>
-        ),
-      },
-    ]}
-  />
+  <StyledBg>
+    {variants.map(v => (
+      <>
+        {v.value && <code>variant={v.value}</code>}
+        <br />
+        <InfoBar variant={v.value}>{v.content}</InfoBar>
+        <br />
+        <br />
+      </>
+    ))}
+  </StyledBg>
 );
 
 differentVariants.story = {

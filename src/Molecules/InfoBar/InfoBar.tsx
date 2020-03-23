@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
-import { Box, Flexbox, PageWrapper, Typography, Icon } from '../..';
+import { Box, Flexbox, Typography, Icon } from '../..';
+import PageWrapper from '../PageWrapper';
 import { InfoBarProps, InfoBarIconProps, FnHelper } from './InfoBar.types';
 
 /*
