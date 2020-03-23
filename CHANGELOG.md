@@ -1,3 +1,10 @@
+# [2.23.0](https://github.com/nordnet/ui/compare/v2.22.3...v2.23.0) (2020-03-23)
+
+
+### Features
+
+* add 12 new sector icons ([4a5ab30](https://github.com/nordnet/ui/commit/4a5ab30))
+
 ## [2.22.3](https://github.com/nordnet/ui/compare/v2.22.2...v2.22.3) (2020-03-13)
 
 
