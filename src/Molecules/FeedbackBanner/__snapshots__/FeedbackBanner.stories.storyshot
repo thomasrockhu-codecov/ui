@@ -340,7 +340,7 @@ exports[`Storyshots Molecules | FeedbackBanner Different variant 1`] = `
   display: block;
 }
 
-.c13 {
+.c14 {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -354,7 +354,7 @@ exports[`Storyshots Molecules | FeedbackBanner Different variant 1`] = `
   display: block;
 }
 
-.c15 {
+.c16 {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -366,6 +366,10 @@ exports[`Storyshots Molecules | FeedbackBanner Different variant 1`] = `
   -ms-flex-negative: 0;
   flex-shrink: 0;
   display: block;
+}
+
+.c12 {
+  fill: #6E6E69;
 }
 
 .c8 {
@@ -400,14 +404,14 @@ exports[`Storyshots Molecules | FeedbackBanner Different variant 1`] = `
   box-sizing: border-box;
 }
 
-.c12 {
+.c13 {
   background-color: #F5F5F5;
   border-left: 4px solid #FFCF00;
   padding: 4px 12px;
   box-sizing: border-box;
 }
 
-.c14 {
+.c15 {
   background-color: #F5F5F5;
   border-left: 4px solid #00D200;
   padding: 4px 12px;
@@ -560,12 +564,12 @@ exports[`Storyshots Molecules | FeedbackBanner Different variant 1`] = `
                 d="M12,23.8695652 C18.627417,23.8695652 24,18.5553799 24,12 C24,5.44462014 18.627417,0.130434783 12,0.130434783 C5.372583,0.130434783 0,5.44462014 0,12 C0,18.5553799 5.372583,23.8695652 12,23.8695652 Z"
               />
               <polygon
-                fill="#FFF"
+                className="c12"
                 points="11.492 6.847 11.492 17.137 12.492 17.137 12.492 6.847"
                 transform="rotate(-45 11.992 11.992)"
               />
               <polygon
-                fill="#FFF"
+                className="c12"
                 points="11.492 6.847 11.492 17.137 12.492 17.137 12.492 6.847"
                 transform="rotate(45 11.992 11.992)"
               />
@@ -600,7 +604,7 @@ exports[`Storyshots Molecules | FeedbackBanner Different variant 1`] = `
     </div>
     <div>
       <div
-        className="c12"
+        className="c13"
       >
         <div
           className="c4"
@@ -608,7 +612,7 @@ exports[`Storyshots Molecules | FeedbackBanner Different variant 1`] = `
           <span>
             <svg
               aria-hidden="true"
-              className="c13"
+              className="c14"
               focusable="false"
               preserveAspectRatio="xMidYMid meet"
               role="presentation"
@@ -652,7 +656,7 @@ exports[`Storyshots Molecules | FeedbackBanner Different variant 1`] = `
     </div>
     <div>
       <div
-        className="c14"
+        className="c15"
       >
         <div
           className="c4"
@@ -660,7 +664,7 @@ exports[`Storyshots Molecules | FeedbackBanner Different variant 1`] = `
           <span>
             <svg
               aria-hidden="true"
-              className="c15"
+              className="c16"
               focusable="false"
               preserveAspectRatio="xMidYMid meet"
               role="presentation"
