@@ -1,3 +1,20 @@
+# [2.25.0](https://github.com/nordnet/ui/compare/v2.24.0...v2.25.0) (2020-03-23)
+
+
+### Bug Fixes
+
+* **InfoBar:** fix exports ([1f6581d](https://github.com/nordnet/ui/commit/1f6581d))
+* **InfoBar:** fix stories ([54c82d4](https://github.com/nordnet/ui/commit/54c82d4))
+* **InfoBar:** fix stories and types ([7837192](https://github.com/nordnet/ui/commit/7837192))
+* **InfoBar:** fix TS types ([2878cee](https://github.com/nordnet/ui/commit/2878cee))
+* **InfoBar:** fix TS types ([7c6d14c](https://github.com/nordnet/ui/commit/7c6d14c))
+
+
+### Features
+
+* **Icon.CrossCircle:** add an option to modify CrossCircle's cross color via stroke prop ([94fa3f4](https://github.com/nordnet/ui/commit/94fa3f4))
+* **InfoBar:** add InfoBar Component ([ff6ca4e](https://github.com/nordnet/ui/commit/ff6ca4e))
+
 # [2.24.0](https://github.com/nordnet/ui/compare/v2.23.0...v2.24.0) (2020-03-23)
 
 
