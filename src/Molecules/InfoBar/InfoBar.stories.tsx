@@ -1,7 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
 
-import { InfoBar } from '../..';
+import InfoBar from '.';
+import { Variant } from './InfoBar.types';
 
 export default {
   title: 'Molecules | InfoBar',
@@ -10,7 +11,7 @@ export default {
   },
 };
 
-export const StyledBg = styled.div`
+const StyledBg = styled.div`
   background: #f5f5f5;
 `;
 
@@ -47,7 +48,8 @@ onCloseProp.story = {
 
 const variants = [
   {
-    content: (
+    variant: 'general' as Variant,
+    children: (
       <>
         We’re currently working on the new main menu. Links marked with arrow icon will redirect you
         to the previous website experience. <a href="#nonce">Read more</a>
@@ -55,8 +57,8 @@ const variants = [
     ),
   },
   {
-    value: 'general',
-    content: (
+    variant: 'warning' as Variant,
+    children: (
       <>
         We’re currently working on the new main menu. Links marked with arrow icon will redirect you
         to the previous website experience. <a href="#nonce">Read more</a>
@@ -64,17 +66,8 @@ const variants = [
     ),
   },
   {
-    value: 'warning',
-    content: (
-      <>
-        We’re currently working on the new main menu. Links marked with arrow icon will redirect you
-        to the previous website experience. <a href="#nonce">Read more</a>
-      </>
-    ),
-  },
-  {
-    value: 'error',
-    content: (
+    variant: 'error' as Variant,
+    children: (
       <>
         The US market is currently down, we are fixing it right now. It will soon be back and
         running. <a href="#nonce">Read more</a>
@@ -82,8 +75,8 @@ const variants = [
     ),
   },
   {
-    value: 'success',
-    content: (
+    variant: 'success' as Variant,
+    children: (
       <>
         We have fixed the US market issue. It is now back to service. <a href="#nonce">Read more</a>
       </>
@@ -93,11 +86,16 @@ const variants = [
 
 export const differentVariants = () => (
   <StyledBg>
-    {variants.map(v => (
+    <code>no variant passed, defaults to general</code>
+    <br />
+    <InfoBar>{variants[0].children}</InfoBar>
+    <br />
+    <br />
+    {variants.map(({ variant, children }) => (
       <>
-        {v.value && <code>variant={v.value}</code>}
+        <code>variant={variant}</code>
         <br />
-        <InfoBar variant={v.value}>{v.content}</InfoBar>
+        <InfoBar variant={variant}>{children}</InfoBar>
         <br />
         <br />
       </>

@@ -1,7 +1,7 @@
 import { Theme } from '../../theme/theme.types';
 
 /** @default general */
-type Variant = 'error' | 'success' | 'warning' | 'general';
+export type Variant = 'error' | 'success' | 'warning' | 'general';
 
 export type InfoBarProps = {
   className?: string;
