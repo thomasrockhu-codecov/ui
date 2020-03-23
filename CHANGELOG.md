@@ -1,3 +1,10 @@
+# [2.24.0](https://github.com/nordnet/ui/compare/v2.23.0...v2.24.0) (2020-03-23)
+
+
+### Features
+
+* 🎸 add breakpoint props to CssGrid.Item ([4fb11b3](https://github.com/nordnet/ui/commit/4fb11b3))
+
 # [2.23.0](https://github.com/nordnet/ui/compare/v2.22.3...v2.23.0) (2020-03-23)
 
 
