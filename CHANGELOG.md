@@ -1,3 +1,10 @@
+## [2.25.1](https://github.com/nordnet/ui/compare/v2.25.0...v2.25.1) (2020-03-23)
+
+
+### Bug Fixes
+
+* 🐛 add -ms grid styles for align justify place self ([dab0a24](https://github.com/nordnet/ui/commit/dab0a24))
+
 # [2.25.0](https://github.com/nordnet/ui/compare/v2.24.0...v2.25.0) (2020-03-23)
 
 
