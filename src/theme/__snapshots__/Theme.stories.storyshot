@@ -2491,37 +2491,6 @@ exports[`Storyshots Theme Colors (semantic) 1`] = `
       <td
         className="c5"
       >
-        starRating
-      </td>
-      <td
-        className="c5"
-      >
-        <div
-          className="c22"
-          color="#FFCF00"
-        />
-        <div>
-          #FFCF00
-        </div>
-      </td>
-      <td
-        className="c5"
-      >
-        <div
-          className="c22"
-          color="#FFCF00"
-        />
-        <div>
-          #FFCF00
-        </div>
-      </td>
-    </tr>
-    <tr
-      className="c2"
-    >
-      <td
-        className="c5"
-      >
         svgFill
       </td>
       <td
@@ -3536,6 +3505,37 @@ exports[`Storyshots Theme Colors (semantic) 1`] = `
         />
         <div>
           #BCBCB6
+        </div>
+      </td>
+    </tr>
+    <tr
+      className="c2"
+    >
+      <td
+        className="c5"
+      >
+        ratingStar
+      </td>
+      <td
+        className="c5"
+      >
+        <div
+          className="c22"
+          color="#FFCF00"
+        />
+        <div>
+          #FFCF00
+        </div>
+      </td>
+      <td
+        className="c5"
+      >
+        <div
+          className="c22"
+          color="#FFCF00"
+        />
+        <div>
+          #FFCF00
         </div>
       </td>
     </tr>
