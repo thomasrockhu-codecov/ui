@@ -131,10 +131,14 @@ export type Theme = {
     spinnerWhite: RawColor['white'];
     /** index */
     streamingBolt: RawColor['index'];
+    /** index */
+    starRating: RawColor['index'];
     /** gray0 */
     svgFill: RawColor['gray0'];
     /** gray2 */
     svgStroke: RawColor['gray2'];
+    /** gray6 */
+    inactiveRatingStar: RawColor['gray6'];
     /** gray4 */
     inputBorder: RawColor['gray4'];
     /** gray1 */

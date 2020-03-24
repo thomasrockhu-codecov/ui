@@ -184,11 +184,13 @@ export const createTheme = (config: ThemeConfig = {}): Theme => {
       spinnerBlack: rawColor.black,
       spinnerWhite: rawColor.white,
       streamingBolt: rawColor.index,
+      starRating: rawColor.index,
       svgFill: rawColor.gray0,
       svgStroke: rawColor.gray2,
       text: rawColor.gray0,
       textLight: rawColor.white, // FIXME: to be removed later
       warning: a11yColors ? rawColor.a11yIndex : rawColor.index,
+      inactiveRatingStar: rawColor.gray6,
       inputBorder: rawColor.gray4,
       inputBorderHover: rawColor.gray1,
       flagBorder: rawColor.gray6,
