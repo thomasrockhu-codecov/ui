@@ -1,6 +1,6 @@
 import React, { cloneElement } from 'react';
 import styled from 'styled-components';
-import { useTooltip, TooltipPopup } from '@reach/tooltip';
+import { useTooltip, TooltipPopup, Position } from '@reach/tooltip';
 import { TooltipComponent, Props } from './Tooltip.types';
 import { Typography } from '../..';
 import Triangle from './Triangle';
@@ -18,28 +18,44 @@ const StyledTooltip = styled(TooltipPopup)`
   max-width: 200px;
 `;
 
-const positionOver = (triggerRect: ClientRect, tooltipRect: ClientRect) => {
+const positionOver: Position = (triggerRect, tooltipRect) => {
+  if (!triggerRect || !tooltipRect) {
+    return {};
+  }
+
   return {
     left: `${leftCenter(triggerRect, tooltipRect)}px`,
     top: `${topOver(triggerRect, tooltipRect)}px`,
   };
 };
 
-const positionUnder = (triggerRect: ClientRect, tooltipRect: ClientRect) => {
+const positionUnder: Position = (triggerRect, tooltipRect) => {
+  if (!triggerRect || !tooltipRect) {
+    return {};
+  }
+
   return {
     left: `${leftCenter(triggerRect, tooltipRect)}px`,
     top: `${topUnder(triggerRect, tooltipRect)}px`,
   };
 };
 
-const positionBefore = (triggerRect: ClientRect, tooltipRect: ClientRect) => {
+const positionBefore: Position = (triggerRect, tooltipRect) => {
+  if (!triggerRect || !tooltipRect) {
+    return {};
+  }
+
   return {
     left: `${leftBefore(triggerRect, tooltipRect)}px`,
     top: `${topCenter(triggerRect, tooltipRect)}px`,
   };
 };
 
-const positionAfter = (triggerRect: ClientRect, tooltipRect: ClientRect) => {
+const positionAfter: Position = (triggerRect, tooltipRect) => {
+  if (!triggerRect || !tooltipRect) {
+    return {};
+  }
+
   return {
     left: `${leftAfter(triggerRect, tooltipRect)}px`,
     top: `${topCenter(triggerRect, tooltipRect)}px`,
@@ -69,7 +85,9 @@ export const Tooltip: TooltipComponent = ({ children, label, ariaLabel, position
     <>
       {cloneElement(children as React.ReactElement, trigger)}
 
-      {isVisible && <Triangle triggerRect={triggerRect} tooltipPosition={position} />}
+      {isVisible && triggerRect && (
+        <Triangle triggerRect={triggerRect} tooltipPosition={position} />
+      )}
       <StyledTooltip
         {...tooltip}
         label={<Typography type="tertiary">{label}</Typography>}
