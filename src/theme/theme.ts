@@ -184,7 +184,6 @@ export const createTheme = (config: ThemeConfig = {}): Theme => {
       spinnerBlack: rawColor.black,
       spinnerWhite: rawColor.white,
       streamingBolt: rawColor.index,
-      starRating: rawColor.index,
       svgFill: rawColor.gray0,
       svgStroke: rawColor.gray2,
       text: rawColor.gray0,
@@ -218,6 +217,7 @@ export const createTheme = (config: ThemeConfig = {}): Theme => {
       pieChartColor1: rawColor.complementaryPink2,
       pieChartColor2: rawColor.brandPink,
       pieChartColor3: rawColor.gray4,
+      ratingStar: rawColor.index,
     },
     media: {
       between: (s1, s2) => {

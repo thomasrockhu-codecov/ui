@@ -132,7 +132,7 @@ export type Theme = {
     /** index */
     streamingBolt: RawColor['index'];
     /** index */
-    starRating: RawColor['index'];
+    ratingStar: RawColor['index'];
     /** gray0 */
     svgFill: RawColor['gray0'];
     /** gray2 */
