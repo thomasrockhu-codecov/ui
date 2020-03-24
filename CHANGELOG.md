@@ -1,3 +1,49 @@
+## [2.25.1](https://github.com/nordnet/ui/compare/v2.25.0...v2.25.1) (2020-03-23)
+
+
+### Bug Fixes
+
+* 🐛 add -ms grid styles for align justify place self ([dab0a24](https://github.com/nordnet/ui/commit/dab0a24))
+
+# [2.25.0](https://github.com/nordnet/ui/compare/v2.24.0...v2.25.0) (2020-03-23)
+
+
+### Bug Fixes
+
+* **InfoBar:** fix exports ([1f6581d](https://github.com/nordnet/ui/commit/1f6581d))
+* **InfoBar:** fix stories ([54c82d4](https://github.com/nordnet/ui/commit/54c82d4))
+* **InfoBar:** fix stories and types ([7837192](https://github.com/nordnet/ui/commit/7837192))
+* **InfoBar:** fix TS types ([2878cee](https://github.com/nordnet/ui/commit/2878cee))
+* **InfoBar:** fix TS types ([7c6d14c](https://github.com/nordnet/ui/commit/7c6d14c))
+
+
+### Features
+
+* **Icon.CrossCircle:** add an option to modify CrossCircle's cross color via stroke prop ([94fa3f4](https://github.com/nordnet/ui/commit/94fa3f4))
+* **InfoBar:** add InfoBar Component ([ff6ca4e](https://github.com/nordnet/ui/commit/ff6ca4e))
+
+# [2.24.0](https://github.com/nordnet/ui/compare/v2.23.0...v2.24.0) (2020-03-23)
+
+
+### Features
+
+* 🎸 add breakpoint props to CssGrid.Item ([4fb11b3](https://github.com/nordnet/ui/commit/4fb11b3))
+
+# [2.23.0](https://github.com/nordnet/ui/compare/v2.22.3...v2.23.0) (2020-03-23)
+
+
+### Features
+
+* add 12 new sector icons ([4a5ab30](https://github.com/nordnet/ui/commit/4a5ab30))
+
+## [2.22.3](https://github.com/nordnet/ui/compare/v2.22.2...v2.22.3) (2020-03-13)
+
+
+### Bug Fixes
+
+* add inmodal prop ([0684856](https://github.com/nordnet/ui/commit/0684856))
+* update snaps ([dcc037f](https://github.com/nordnet/ui/commit/dcc037f))
+
 ## [2.22.2](https://github.com/nordnet/ui/compare/v2.22.1...v2.22.2) (2020-03-11)
 
 

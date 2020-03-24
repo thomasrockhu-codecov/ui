@@ -1,5 +1,6 @@
 import React, { cloneElement } from 'react';
 import styled from 'styled-components';
+import * as R from 'ramda';
 import { useTooltip, TooltipPopup, Position } from '@reach/tooltip';
 import { TooltipComponent, Props } from './Tooltip.types';
 import { Typography } from '../..';
@@ -7,8 +8,13 @@ import Triangle from './Triangle';
 import { leftAfter, leftCenter, leftBefore, topCenter, topOver, topUnder } from './utils';
 import { BORDER_SIZE } from './consts';
 
-const StyledTooltip = styled(TooltipPopup)`
-  z-index: 1;
+// TODO: Remove CleanTooltipPopup on next release of Styled-Components. Use shouldForwardProp
+const CleanTooltipPopup = React.forwardRef<HTMLDivElement, any>((props, ref) => (
+  <TooltipPopup ref={ref} as={props.forwardedAs} {...R.omit(['inModal'])(props)} />
+));
+
+const StyledTooltip = styled(CleanTooltipPopup)`
+  z-index: ${p => (p.inModal ? p.theme.zIndex.overlayInModal : p.theme.zIndex.overlay)};
   pointer-events: none;
   position: absolute;
   padding: ${p => p.theme.spacing.unit(1)}px ${p => p.theme.spacing.unit(2)}px;
@@ -76,7 +82,13 @@ const getToolTipPosition = (position: Props['position']) => {
   }
 };
 
-export const Tooltip: TooltipComponent = ({ children, label, ariaLabel, position = 'bottom' }) => {
+export const Tooltip: TooltipComponent = ({
+  children,
+  label,
+  ariaLabel,
+  position = 'bottom',
+  inModal,
+}) => {
   const [trigger, tooltip] = useTooltip();
   const { isVisible, triggerRect } = tooltip;
   const tooltipPosition = getToolTipPosition(position);
@@ -86,13 +98,14 @@ export const Tooltip: TooltipComponent = ({ children, label, ariaLabel, position
       {cloneElement(children as React.ReactElement, trigger)}
 
       {isVisible && triggerRect && (
-        <Triangle triggerRect={triggerRect} tooltipPosition={position} />
+        <Triangle triggerRect={triggerRect} tooltipPosition={position} inModal={inModal} />
       )}
       <StyledTooltip
         {...tooltip}
         label={<Typography type="tertiary">{label}</Typography>}
         aria-label={ariaLabel}
         position={tooltipPosition}
+        inModal={inModal}
       />
     </>
   );
