@@ -176,13 +176,13 @@ export type Theme = {
     /** brandBlue */
     menuAccent5: RawColor['brandBlue'];
     /** complementaryBlue1 */
-    mapColor1: RawColor['complementaryBlue1'];
+    mapColor1: RawColor['complementaryBlue2'];
     /** complementaryBlue2 */
-    mapColor2: RawColor['complementaryBlue2'];
+    mapColor2: RawColor['complementaryBlue1'];
     /** brandBlue */
     mapColor3: RawColor['brandBlue'];
-    /** gray2 */
-    mapColor4: RawColor['gray2'];
+    /** gray1 */
+    mapColor4: RawColor['gray1'];
     /** gray3 */
     mapColor5: RawColor['gray3'];
     /** brandBlue */
