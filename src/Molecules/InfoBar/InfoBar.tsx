@@ -72,7 +72,12 @@ const InfoBarPageWrapper = styled(PageWrapper)`
 const InfoBarIcon: React.FC<InfoBarIconProps> = ({ variant }) => {
   switch (variant) {
     case 'success':
-      return <Icon.CheckMarkCircle fill={theme => textLinkFn({ variant, theme })} />;
+      return (
+        <Icon.CheckMarkCircle
+          fill={theme => textLinkFn({ variant, theme })}
+          stroke={theme => bgFn({ variant, theme })}
+        />
+      );
     case 'error':
       return (
         <Icon.CrossCircle
@@ -81,11 +86,26 @@ const InfoBarIcon: React.FC<InfoBarIconProps> = ({ variant }) => {
         />
       );
     case 'warning':
-      return <Icon.WarningTriangle fill={theme => textLinkFn({ variant, theme })} />;
+      return (
+        <Icon.WarningTriangle
+          fill={theme => textLinkFn({ variant, theme })}
+          stroke={theme => bgFn({ variant, theme })}
+        />
+      );
     case 'general':
-      return <Icon.InfoCircle fill={theme => textLinkFn({ variant, theme })} />;
+      return (
+        <Icon.InfoCircle
+          fill={theme => textLinkFn({ variant, theme })}
+          stroke={theme => bgFn({ variant, theme })}
+        />
+      );
     default:
-      return <Icon.InfoCircle fill={theme => textLinkFn({ variant, theme })} />;
+      return (
+        <Icon.InfoCircle
+          fill={theme => textLinkFn({ variant, theme })}
+          stroke={theme => bgFn({ variant, theme })}
+        />
+      );
   }
 };
 
