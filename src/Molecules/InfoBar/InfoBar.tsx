@@ -63,8 +63,10 @@ const InfoBarPageWrapper = styled(PageWrapper)`
     color: ${textLinkFn};
   }
   button {
+    display: block;
+    padding: 0;
     background: none;
-    border: none;
+    border-width: 0;
     cursor: pointer;
   }
 `;
@@ -123,7 +125,7 @@ export const InfoBar: React.FC<InfoBarProps> = ({ variant, onClose, className, c
             <Typography type="secondary">{children}</Typography>
           </Flexbox>
           {typeof onClose === 'function' ? (
-            <Flexbox item alignSelf="flex-start">
+            <Flexbox item>
               <Box pl={2}>
                 <button type="button" onClick={onClose}>
                   <Icon.Cross size={3} fill={theme => textFn({ variant, theme })} />
