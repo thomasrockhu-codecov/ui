@@ -83,8 +83,10 @@ exports[`Storyshots Molecules | InfoBar Default usage 1`] = `
 }
 
 .c1 button {
+  display: block;
+  padding: 0;
   background: none;
-  border: none;
+  border-width: 0;
   cursor: pointer;
 }
 
@@ -264,7 +266,7 @@ exports[`Storyshots Molecules | InfoBar Different variants 1`] = `
 }
 
 .c18 {
-  fill: #FFFFFF;
+  fill: #00D200;
 }
 
 .c16 {
@@ -276,7 +278,7 @@ exports[`Storyshots Molecules | InfoBar Different variants 1`] = `
 }
 
 .c13 {
-  fill: #FFFFFF;
+  fill: #FFCF00;
 }
 
 .c10 {
@@ -308,8 +310,10 @@ exports[`Storyshots Molecules | InfoBar Different variants 1`] = `
 }
 
 .c1 button {
+  display: block;
+  padding: 0;
   background: none;
-  border: none;
+  border-width: 0;
   cursor: pointer;
 }
 
@@ -328,8 +332,10 @@ exports[`Storyshots Molecules | InfoBar Different variants 1`] = `
 }
 
 .c11 button {
+  display: block;
+  padding: 0;
   background: none;
-  border: none;
+  border-width: 0;
   cursor: pointer;
 }
 
@@ -348,8 +354,10 @@ exports[`Storyshots Molecules | InfoBar Different variants 1`] = `
 }
 
 .c14 button {
+  display: block;
+  padding: 0;
   background: none;
-  border: none;
+  border-width: 0;
   cursor: pointer;
 }
 
@@ -368,8 +376,10 @@ exports[`Storyshots Molecules | InfoBar Different variants 1`] = `
 }
 
 .c17 button {
+  display: block;
+  padding: 0;
   background: none;
-  border: none;
+  border-width: 0;
   cursor: pointer;
 }
 
@@ -734,7 +744,7 @@ exports[`Storyshots Molecules | InfoBar onClose prop demo 1`] = `
   padding-right: 8px;
 }
 
-.c12 {
+.c11 {
   padding-left: 8px;
 }
 
@@ -762,13 +772,6 @@ exports[`Storyshots Molecules | InfoBar onClose prop demo 1`] = `
   flex-grow: 2;
 }
 
-.c11 {
-  box-sizing: border-box;
-  -webkit-align-self: flex-start;
-  -ms-flex-item-align: start;
-  align-self: flex-start;
-}
-
 .c7 {
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -783,7 +786,7 @@ exports[`Storyshots Molecules | InfoBar onClose prop demo 1`] = `
   display: block;
 }
 
-.c13 {
+.c12 {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -830,8 +833,10 @@ exports[`Storyshots Molecules | InfoBar onClose prop demo 1`] = `
 }
 
 .c1 button {
+  display: block;
+  padding: 0;
   background: none;
-  border: none;
+  border-width: 0;
   cursor: pointer;
 }
 
@@ -975,10 +980,10 @@ exports[`Storyshots Molecules | InfoBar onClose prop demo 1`] = `
             </span>
           </div>
           <div
-            className="c11"
+            className="c5"
           >
             <div
-              className="c12"
+              className="c11"
             >
               <button
                 onClick={[Function]}
@@ -986,7 +991,7 @@ exports[`Storyshots Molecules | InfoBar onClose prop demo 1`] = `
               >
                 <svg
                   aria-hidden="true"
-                  className="c13"
+                  className="c12"
                   focusable="false"
                   preserveAspectRatio="xMidYMid meet"
                   role="presentation"
