@@ -9,9 +9,10 @@ import { leftAfter, leftCenter, leftBefore, topCenter, topOver, topUnder } from 
 import { BORDER_SIZE } from './consts';
 
 // TODO: Remove CleanTooltipPopup on next release of Styled-Components. Use shouldForwardProp
-const CleanTooltipPopup = React.forwardRef<HTMLDivElement, any>((props, ref) => (
-  <TooltipPopup ref={ref} as={props.forwardedAs} {...R.omit(['inModal'])(props)} />
-));
+const CleanTooltipPopup = React.forwardRef<HTMLDivElement, any>(
+  // @ts-ignore
+  (props, ref) => <TooltipPopup ref={ref} as={props.forwardedAs} {...R.omit(['inModal'])(props)} />,
+);
 
 const StyledTooltip = styled(CleanTooltipPopup)`
   z-index: ${p => (p.inModal ? p.theme.zIndex.overlayInModal : p.theme.zIndex.overlay)};
