@@ -1,3 +1,20 @@
+## [2.25.4](https://github.com/nordnet/ui/compare/v2.25.3...v2.25.4) (2020-03-27)
+
+
+### Bug Fixes
+
+* clean up css grid and its utils ([ff128f6](https://github.com/nordnet/ui/commit/ff128f6))
+* empty commit ([707fc7d](https://github.com/nordnet/ui/commit/707fc7d))
+* machine ts ([aa391f2](https://github.com/nordnet/ui/commit/aa391f2))
+* make formfield work after ts update ([175426d](https://github.com/nordnet/ui/commit/175426d))
+* make ts 3.8.3 work ([e5f29aa](https://github.com/nordnet/ui/commit/e5f29aa))
+* merge master ([63d38dc](https://github.com/nordnet/ui/commit/63d38dc))
+* ts errors ([a9f1301](https://github.com/nordnet/ui/commit/a9f1301))
+* ts of tooltip ([e1b30e3](https://github.com/nordnet/ui/commit/e1b30e3))
+* update reach-ui ([3e2eecc](https://github.com/nordnet/ui/commit/3e2eecc))
+* update snaps ([48114d0](https://github.com/nordnet/ui/commit/48114d0))
+* update ts to 3.4.5 ([246eece](https://github.com/nordnet/ui/commit/246eece))
+
 ## [2.25.3](https://github.com/nordnet/ui/compare/v2.25.2...v2.25.3) (2020-03-25)
 
 
