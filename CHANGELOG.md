@@ -1,3 +1,16 @@
+# [2.26.0](https://github.com/nordnet/ui/compare/v2.25.4...v2.26.0) (2020-03-27)
+
+
+### Bug Fixes
+
+* update snaps ([80fdf41](https://github.com/nordnet/ui/commit/80fdf41))
+* use correct colors ([786c064](https://github.com/nordnet/ui/commit/786c064))
+
+
+### Features
+
+* add rating component ([ba8f9c0](https://github.com/nordnet/ui/commit/ba8f9c0))
+
 ## [2.25.4](https://github.com/nordnet/ui/compare/v2.25.3...v2.25.4) (2020-03-27)
 
 
