@@ -297,7 +297,7 @@ const getCssGridItemStylesFromProps = ({
   ${getPlaceSelfStyles(place)}
 `;
 
-const RawCssGridItem = styled.div<ItemProps>`
+const RawCssGridItem = styled.div<ItemProps & { css?: any }>`
   box-sizing: border-box;
   min-width: 0; /* prevents grid blowout */
   ${p => getCssGridItemStylesFromProps(p)}
