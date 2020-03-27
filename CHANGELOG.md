@@ -1,3 +1,18 @@
+## [2.25.3](https://github.com/nordnet/ui/compare/v2.25.2...v2.25.3) (2020-03-25)
+
+
+### Bug Fixes
+
+* **InfoBar:** update variant icons to utilise secondary color ([76496f7](https://github.com/nordnet/ui/commit/76496f7))
+* **InfoBar:** vertically align close icon ([1c03be0](https://github.com/nordnet/ui/commit/1c03be0))
+
+## [2.25.2](https://github.com/nordnet/ui/compare/v2.25.1...v2.25.2) (2020-03-25)
+
+
+### Bug Fixes
+
+* update icons for infobar ([a17a853](https://github.com/nordnet/ui/commit/a17a853))
+
 ## [2.25.1](https://github.com/nordnet/ui/compare/v2.25.0...v2.25.1) (2020-03-23)
 
 

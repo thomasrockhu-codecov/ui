@@ -139,6 +139,8 @@ export type Theme = {
     svgStroke: RawColor['gray2'];
     /** gray6 */
     inactiveRatingStar: RawColor['gray6'];
+    /** white */
+    svgStokeLight: RawColor['white'];
     /** gray4 */
     inputBorder: RawColor['gray4'];
     /** gray1 */

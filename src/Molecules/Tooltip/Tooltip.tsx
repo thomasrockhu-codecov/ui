@@ -1,7 +1,7 @@
 import React, { cloneElement } from 'react';
 import styled from 'styled-components';
 import * as R from 'ramda';
-import { useTooltip, TooltipPopup } from '@reach/tooltip';
+import { useTooltip, TooltipPopup, Position } from '@reach/tooltip';
 import { TooltipComponent, Props } from './Tooltip.types';
 import { Typography } from '../..';
 import Triangle from './Triangle';
@@ -9,9 +9,10 @@ import { leftAfter, leftCenter, leftBefore, topCenter, topOver, topUnder } from 
 import { BORDER_SIZE } from './consts';
 
 // TODO: Remove CleanTooltipPopup on next release of Styled-Components. Use shouldForwardProp
-const CleanTooltipPopup = React.forwardRef<HTMLDivElement, any>((props, ref) => (
-  <TooltipPopup ref={ref} as={props.forwardedAs} {...R.omit(['inModal'])(props)} />
-));
+const CleanTooltipPopup = React.forwardRef<HTMLDivElement, any>(
+  // @ts-ignore
+  (props, ref) => <TooltipPopup ref={ref} as={props.forwardedAs} {...R.omit(['inModal'])(props)} />,
+);
 
 const StyledTooltip = styled(CleanTooltipPopup)`
   z-index: ${p => (p.inModal ? p.theme.zIndex.overlayInModal : p.theme.zIndex.overlay)};
@@ -24,28 +25,44 @@ const StyledTooltip = styled(CleanTooltipPopup)`
   max-width: 200px;
 `;
 
-const positionOver = (triggerRect: ClientRect, tooltipRect: ClientRect) => {
+const positionOver: Position = (triggerRect, tooltipRect) => {
+  if (!triggerRect || !tooltipRect) {
+    return {};
+  }
+
   return {
     left: `${leftCenter(triggerRect, tooltipRect)}px`,
     top: `${topOver(triggerRect, tooltipRect)}px`,
   };
 };
 
-const positionUnder = (triggerRect: ClientRect, tooltipRect: ClientRect) => {
+const positionUnder: Position = (triggerRect, tooltipRect) => {
+  if (!triggerRect || !tooltipRect) {
+    return {};
+  }
+
   return {
     left: `${leftCenter(triggerRect, tooltipRect)}px`,
     top: `${topUnder(triggerRect, tooltipRect)}px`,
   };
 };
 
-const positionBefore = (triggerRect: ClientRect, tooltipRect: ClientRect) => {
+const positionBefore: Position = (triggerRect, tooltipRect) => {
+  if (!triggerRect || !tooltipRect) {
+    return {};
+  }
+
   return {
     left: `${leftBefore(triggerRect, tooltipRect)}px`,
     top: `${topCenter(triggerRect, tooltipRect)}px`,
   };
 };
 
-const positionAfter = (triggerRect: ClientRect, tooltipRect: ClientRect) => {
+const positionAfter: Position = (triggerRect, tooltipRect) => {
+  if (!triggerRect || !tooltipRect) {
+    return {};
+  }
+
   return {
     left: `${leftAfter(triggerRect, tooltipRect)}px`,
     top: `${topCenter(triggerRect, tooltipRect)}px`,
@@ -70,7 +87,7 @@ export const Tooltip: TooltipComponent = ({
   children,
   label,
   ariaLabel,
-  position = 'auto',
+  position = 'bottom',
   inModal,
 }) => {
   const [trigger, tooltip] = useTooltip();
@@ -79,15 +96,15 @@ export const Tooltip: TooltipComponent = ({
 
   return (
     <>
-      {cloneElement(children, trigger)}
+      {cloneElement(children as React.ReactElement, trigger)}
 
-      {isVisible && (
+      {isVisible && triggerRect && (
         <Triangle triggerRect={triggerRect} tooltipPosition={position} inModal={inModal} />
       )}
       <StyledTooltip
         {...tooltip}
         label={<Typography type="tertiary">{label}</Typography>}
-        ariaLabel={ariaLabel}
+        aria-label={ariaLabel}
         position={tooltipPosition}
         inModal={inModal}
       />
