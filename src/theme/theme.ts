@@ -195,7 +195,6 @@ export const createTheme = (config: ThemeConfig = {}): Theme => {
       text: rawColor.gray0,
       textLight: rawColor.white, // FIXME: to be removed later
       warning: a11yColors ? rawColor.a11yIndex : rawColor.index,
-      inactiveRatingStar: rawColor.gray6,
       inputBorder: rawColor.gray4,
       inputBorderHover: rawColor.gray1,
       flagBorder: rawColor.gray6,
@@ -223,7 +222,6 @@ export const createTheme = (config: ThemeConfig = {}): Theme => {
       pieChartColor1: rawColor.complementaryPink2,
       pieChartColor2: rawColor.brandPink,
       pieChartColor3: rawColor.gray4,
-      ratingStar: rawColor.index,
     },
     media: {
       between: (s1, s2) => {
