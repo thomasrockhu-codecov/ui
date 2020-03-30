@@ -1,9 +1,8 @@
 import React from 'react';
 import styled, { css, ThemedStyledProps } from 'styled-components';
-import Button from '../../Molecules/Button';
+import Typography from '../Typography';
 
 import { Props } from './Pill.types';
-import Icon from '../Icon';
 import { Theme } from '../../theme/theme.types';
 import { isFunction } from '../../common/utils';
 
@@ -30,24 +29,9 @@ const StyledDiv = styled.div<Props>`
   align-items: center;
 `;
 
-const StyledButton = styled(Button)<Props>`
-  padding: 0 ${p => p.theme.spacing.unit(1)}px;
-`;
-
-export const Pill: React.FC<Props> = ({
-  barColor,
-  className,
-  children,
-  onRemoveClick,
-  onValueClick,
-}) => (
+export const Pill: React.FC<Props> = ({ barColor, className, children }) => (
   <StyledDiv className={className} barColor={barColor}>
-    <StyledButton type="button" onClick={onValueClick} variant="neutral">
-      <span>{children}</span>
-    </StyledButton>
-    <StyledButton type="button" onClick={onRemoveClick} variant="neutral">
-      <Icon.CrossThin size={2} />
-    </StyledButton>
+    <Typography>{children}</Typography>
   </StyledDiv>
 );
 Pill.displayName = 'Pill';

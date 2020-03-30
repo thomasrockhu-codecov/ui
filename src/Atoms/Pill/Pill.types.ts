@@ -7,6 +7,4 @@ export type Props = {
   className?: string;
   barColor?: ColorFn;
   children: React.ReactNode;
-  onRemoveClick?: React.MouseEventHandler;
-  onValueClick?: React.MouseEventHandler;
 };

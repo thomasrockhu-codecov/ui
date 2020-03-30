@@ -196,6 +196,30 @@ exports[`Storyshots Molecules | PageHeader Page header with children 1`] = `
   padding-top: 0;
 }
 
+.c5 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 1.2;
+}
+
+.c12 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: inherit;
+  margin: 0;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c7 {
+  width: 100%;
+  height: 1px;
+  background-color: #EBEBE8;
+}
+
 .c11 {
   font-family: inherit;
   font-size: 100%;
@@ -265,30 +289,6 @@ exports[`Storyshots Molecules | PageHeader Page header with children 1`] = `
 
 .c11:active {
   background-color: hsl(223.5,100%,40%);
-}
-
-.c7 {
-  width: 100%;
-  height: 1px;
-  background-color: #EBEBE8;
-}
-
-.c5 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #282823;
-  margin: 0;
-  font-weight: 800;
-  font-size: 20px;
-  line-height: 1.2;
-}
-
-.c12 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: inherit;
-  margin: 0;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
 }
 
 .c1 {

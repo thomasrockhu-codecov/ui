@@ -1,7 +1,14 @@
 import React from 'react';
-import { action } from '@storybook/addon-actions';
+import styled from 'styled-components';
 
 import { Pill } from './Pill';
+import Icon from '../Icon';
+import Typography from '../Typography';
+import Button from '../../Molecules/Button';
+
+const StyledButton = styled(Button)`
+  padding: 0 ${p => p.theme.spacing.unit(1)}px;
+`;
 
 export default {
   title: 'Atoms | Pill',
@@ -11,12 +18,14 @@ export default {
   },
 };
 
-const onRemoveClickAction = action('Pill onRemoveClickAction');
-const onValueClickAction = action('PillonCompareWithClick onValueClickAction');
-
 export const basicPill = () => (
-  <Pill onRemoveClick={onRemoveClickAction} onValueClick={onValueClickAction}>
-    1234
+  <Pill>
+    <StyledButton type="button" variant="neutral">
+      <Typography type="secondary">1234</Typography>
+    </StyledButton>
+    <StyledButton type="button" variant="neutral">
+      <Icon.CrossThin size={2} />
+    </StyledButton>
   </Pill>
 );
 
@@ -24,7 +33,16 @@ basicPill.story = {
   name: 'Basic Pill',
 };
 
-export const pillWithBar = () => <Pill barColor={t => t.color.pill8}>123</Pill>;
+export const pillWithBar = () => (
+  <Pill barColor={t => t.color.pill8}>
+    <StyledButton type="button" variant="neutral">
+      <Typography type="secondary">1234</Typography>
+    </StyledButton>
+    <StyledButton type="button" variant="neutral">
+      <Icon.CrossThin size={2} />
+    </StyledButton>
+  </Pill>
+);
 
 pillWithBar.story = {
   name: 'Pill with colored bar',
