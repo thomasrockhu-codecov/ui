@@ -1,3 +1,16 @@
+# [2.27.0](https://github.com/nordnet/ui/compare/v2.26.0...v2.27.0) (2020-03-27)
+
+
+### Bug Fixes
+
+* bump resolution ([10c5a76](https://github.com/nordnet/ui/commit/10c5a76))
+* update snaps ([f5d8816](https://github.com/nordnet/ui/commit/f5d8816))
+
+
+### Features
+
+* update storybook and styled components ([2e6f629](https://github.com/nordnet/ui/commit/2e6f629))
+
 # [2.26.0](https://github.com/nordnet/ui/compare/v2.25.4...v2.26.0) (2020-03-27)
 
 
