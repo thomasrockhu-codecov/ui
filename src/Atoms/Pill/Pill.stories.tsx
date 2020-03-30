@@ -1,16 +1,6 @@
 import React from 'react';
-import styled from 'styled-components';
-import { Props } from './Pill.types';
 
 import { Pill } from './Pill';
-import { Display } from '../../common/Display';
-
-const StyledContent = styled.div`
-  height: 50vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-`;
 
 export default {
   title: 'Atoms | Pill',
@@ -20,10 +10,14 @@ export default {
   },
 };
 
-export const basicCard = () => <Pill />;
+export const basicPill = () => <Pill value="1234" />;
 
-export const pillWithBar = () => <Pill value="123" barColor={t => t.color.pill1} />;
+basicPill.story = {
+  name: 'Basic Pill',
+};
+
+export const pillWithBar = () => <Pill value="123" barColor={t => t.color.pill8} />;
 
 pillWithBar.story = {
-  name: 'Pard with colored top bar',
+  name: 'Pill with colored bar',
 };

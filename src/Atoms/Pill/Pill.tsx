@@ -17,14 +17,24 @@ const getColor = (props: ThemedStyledProps<Props, Theme>) => {
 };
 
 const barStyles = css<Props>`
-  border: ${p => p.theme.spacing.unit(1)}pxpx solid ${p => getColor(p)};
+  border-left: ${p => p.theme.spacing.unit(1)}px solid ${p => getColor(p)};
 `;
 
 const StyledDiv = styled.div<Props>`
+  display: inline-flex;
+  box-sizing: border-box;
   background: ${({ theme }) => theme.color.card};
   box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.21);
-  box-sizing: border-box;
   ${p => (p.barColor ? barStyles : ``)}
+  align-items: center;
+`;
+
+const StyledButton = styled.button<Props>`
+  background: ${({ theme }) => theme.color.card};
+  border: 0;
+  margin: 0;
+  padding: 2px 6px;
+  cursor: pointer;
 `;
 
 export const Pill: React.FC<Props> = ({
@@ -35,12 +45,12 @@ export const Pill: React.FC<Props> = ({
   onValueClick,
 }) => (
   <StyledDiv className={className} barColor={barColor}>
-    <button type="button" title="Edit this selection" onClick={onValueClick}>
+    <StyledButton type="button" title="Edit this selection" onClick={onValueClick}>
       {value}
-    </button>
-    <button type="button" title="Remove this selection" onClick={onRemoveClick}>
-      <Icon.Cross />
-    </button>
+    </StyledButton>
+    <StyledButton type="button" title="Remove this selection" onClick={onRemoveClick}>
+      <Icon.CrossThin size={2} />
+    </StyledButton>
   </StyledDiv>
 );
 Pill.displayName = 'Pill';

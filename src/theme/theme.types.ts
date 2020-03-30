@@ -48,6 +48,30 @@ export type RawColor = {
   a11yPositive: '#008A00';
   a11yNegative: '#E81700';
   a11yIndex: '#C15700';
+
+  // PILL COLORS
+  pill1: '#F5F5F5';
+  pill2: '#EBEBE8';
+  pill3: '#D7D7D2';
+  pill4: '#BCBCB6';
+  pill5: '#A0A09B';
+  pill6: '#6E6E69';
+  pill7: '#4B4B46';
+  pill8: '#282823';
+  pill9: '#000000';
+  pill10: '#D2F500';
+  pill11: '#01424C';
+  pill12: '#00D200';
+  pill13: '#01424C';
+  pill14: '#131F4F';
+  pill15: '#023C00';
+  pill16: '#00C8F5';
+  pill18: '#00F0E1';
+  pill19: '#FF2B83';
+  pill20: '#385E9D';
+  pill21: '#3A913F';
+  pill22: '#009195';
+  pill23: '#AC135A';
 };
 
 type NumberOrObjectWithNumber = number | { size: number };
@@ -208,6 +232,29 @@ export type Theme = {
     pieChartColor2: RawColor['brandPink'];
     /** gray4 */
     pieChartColor3: RawColor['gray4'];
+    /** pill colors */
+    pill1: RawColor['pill1'];
+    pill2: RawColor['pill2'];
+    pill3: RawColor['pill3'];
+    pill4: RawColor['pill4'];
+    pill5: RawColor['pill5'];
+    pill6: RawColor['pill6'];
+    pill7: RawColor['pill7'];
+    pill8: RawColor['pill8'];
+    pill9: RawColor['pill9'];
+    pill10: RawColor['pill10'];
+    pill11: RawColor['pill11'];
+    pill12: RawColor['pill12'];
+    pill13: RawColor['pill13'];
+    pill14: RawColor['pill14'];
+    pill15: RawColor['pill15'];
+    pill16: RawColor['pill16'];
+    pill18: RawColor['pill18'];
+    pill19: RawColor['pill19'];
+    pill20: RawColor['pill20'];
+    pill21: RawColor['pill21'];
+    pill22: RawColor['pill22'];
+    pill23: RawColor['pill23'];
   };
 
   spacing: {
