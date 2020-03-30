@@ -6,6 +6,20 @@ exports[`Storyshots Molecules | Input / Select Accessible From Document Forms 1`
   padding-right: 8px;
 }
 
+.c15 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 20px;
+  height: 20px;
+  fill: #282823;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
+}
+
 .c2 {
   box-sizing: border-box;
   display: -webkit-box;
@@ -30,20 +44,6 @@ exports[`Storyshots Molecules | Input / Select Accessible From Document Forms 1`
   text-overflow: ellipsis;
   white-space: nowrap;
   cursor: pointer;
-}
-
-.c15 {
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  width: 20px;
-  height: 20px;
-  fill: #282823;
-  -webkit-flex-shrink: 0;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
-  display: block;
 }
 
 .c8 {
@@ -319,6 +319,20 @@ exports[`Storyshots Molecules | Input / Select Actions 1`] = `
   padding-right: 8px;
 }
 
+.c15 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 20px;
+  height: 20px;
+  fill: #282823;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
+}
+
 .c2 {
   box-sizing: border-box;
   display: -webkit-box;
@@ -343,20 +357,6 @@ exports[`Storyshots Molecules | Input / Select Actions 1`] = `
   text-overflow: ellipsis;
   white-space: nowrap;
   cursor: pointer;
-}
-
-.c15 {
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  width: 20px;
-  height: 20px;
-  fill: #282823;
-  -webkit-flex-shrink: 0;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
-  display: block;
 }
 
 .c8 {
@@ -624,6 +624,20 @@ exports[`Storyshots Molecules | Input / Select Actions And Empty Option List 1`]
   padding-right: 8px;
 }
 
+.c15 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 20px;
+  height: 20px;
+  fill: #282823;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
+}
+
 .c2 {
   box-sizing: border-box;
   display: -webkit-box;
@@ -648,20 +662,6 @@ exports[`Storyshots Molecules | Input / Select Actions And Empty Option List 1`]
   text-overflow: ellipsis;
   white-space: nowrap;
   cursor: pointer;
-}
-
-.c15 {
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  width: 20px;
-  height: 20px;
-  fill: #282823;
-  -webkit-flex-shrink: 0;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
-  display: block;
 }
 
 .c8 {
@@ -917,6 +917,20 @@ exports[`Storyshots Molecules | Input / Select Auto Focus 1`] = `
   padding-right: 8px;
 }
 
+.c15 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 20px;
+  height: 20px;
+  fill: #282823;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
+}
+
 .c2 {
   box-sizing: border-box;
   display: -webkit-box;
@@ -941,20 +955,6 @@ exports[`Storyshots Molecules | Input / Select Auto Focus 1`] = `
   text-overflow: ellipsis;
   white-space: nowrap;
   cursor: pointer;
-}
-
-.c15 {
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  width: 20px;
-  height: 20px;
-  fill: #282823;
-  -webkit-flex-shrink: 0;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
-  display: block;
 }
 
 .c8 {
@@ -1284,6 +1284,20 @@ Array [
   padding-right: 8px;
 }
 
+.c15 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 20px;
+  height: 20px;
+  fill: #282823;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
+}
+
 .c2 {
   box-sizing: border-box;
   display: -webkit-box;
@@ -1308,20 +1322,6 @@ Array [
   text-overflow: ellipsis;
   white-space: nowrap;
   cursor: pointer;
-}
-
-.c15 {
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  width: 20px;
-  height: 20px;
-  fill: #282823;
-  -webkit-flex-shrink: 0;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
-  display: block;
 }
 
 .c8 {
@@ -1590,6 +1590,20 @@ exports[`Storyshots Molecules | Input / Select Controlled behaviour 1`] = `
   padding-right: 8px;
 }
 
+.c15 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 20px;
+  height: 20px;
+  fill: #282823;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
+}
+
 .c2 {
   box-sizing: border-box;
   display: -webkit-box;
@@ -1614,20 +1628,6 @@ exports[`Storyshots Molecules | Input / Select Controlled behaviour 1`] = `
   text-overflow: ellipsis;
   white-space: nowrap;
   cursor: pointer;
-}
-
-.c15 {
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  width: 20px;
-  height: 20px;
-  fill: #282823;
-  -webkit-flex-shrink: 0;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
-  display: block;
 }
 
 .c8 {
@@ -1896,6 +1896,20 @@ exports[`Storyshots Molecules | Input / Select Custom Renderers 1`] = `
   padding-right: 32px;
 }
 
+.c14 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 20px;
+  height: 20px;
+  fill: #282823;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
+}
+
 .c2 {
   box-sizing: border-box;
   display: -webkit-box;
@@ -1920,20 +1934,6 @@ exports[`Storyshots Molecules | Input / Select Custom Renderers 1`] = `
   text-overflow: ellipsis;
   white-space: nowrap;
   cursor: pointer;
-}
-
-.c14 {
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  width: 20px;
-  height: 20px;
-  fill: #282823;
-  -webkit-flex-shrink: 0;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
-  display: block;
 }
 
 .c8 {
@@ -2192,6 +2192,20 @@ exports[`Storyshots Molecules | Input / Select Default Story 1`] = `
   padding-right: 8px;
 }
 
+.c15 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 20px;
+  height: 20px;
+  fill: #282823;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
+}
+
 .c2 {
   box-sizing: border-box;
   display: -webkit-box;
@@ -2216,20 +2230,6 @@ exports[`Storyshots Molecules | Input / Select Default Story 1`] = `
   text-overflow: ellipsis;
   white-space: nowrap;
   cursor: pointer;
-}
-
-.c15 {
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  width: 20px;
-  height: 20px;
-  fill: #282823;
-  -webkit-flex-shrink: 0;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
-  display: block;
 }
 
 .c8 {
@@ -2497,6 +2497,20 @@ exports[`Storyshots Molecules | Input / Select Default variations 1`] = `
   padding-right: 8px;
 }
 
+.c18 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 20px;
+  height: 20px;
+  fill: #282823;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
+}
+
 .c5 {
   box-sizing: border-box;
   display: -webkit-box;
@@ -2530,20 +2544,6 @@ exports[`Storyshots Molecules | Input / Select Default variations 1`] = `
   text-overflow: ellipsis;
   white-space: nowrap;
   cursor: pointer;
-}
-
-.c18 {
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  width: 20px;
-  height: 20px;
-  fill: #282823;
-  -webkit-flex-shrink: 0;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
-  display: block;
 }
 
 .c11 {
@@ -3360,6 +3360,20 @@ exports[`Storyshots Molecules | Input / Select Disabled Items 1`] = `
   padding-right: 8px;
 }
 
+.c15 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 20px;
+  height: 20px;
+  fill: #282823;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
+}
+
 .c2 {
   box-sizing: border-box;
   display: -webkit-box;
@@ -3384,20 +3398,6 @@ exports[`Storyshots Molecules | Input / Select Disabled Items 1`] = `
   text-overflow: ellipsis;
   white-space: nowrap;
   cursor: pointer;
-}
-
-.c15 {
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  width: 20px;
-  height: 20px;
-  fill: #282823;
-  -webkit-flex-shrink: 0;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
-  display: block;
 }
 
 .c8 {
@@ -3691,6 +3691,20 @@ Array [
   padding-right: 8px;
 }
 
+.c15 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 20px;
+  height: 20px;
+  fill: #282823;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
+}
+
 .c2 {
   box-sizing: border-box;
   display: -webkit-box;
@@ -3715,20 +3729,6 @@ Array [
   text-overflow: ellipsis;
   white-space: nowrap;
   cursor: pointer;
-}
-
-.c15 {
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  width: 20px;
-  height: 20px;
-  fill: #282823;
-  -webkit-flex-shrink: 0;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
-  display: block;
 }
 
 .c8 {
@@ -4012,6 +4012,20 @@ exports[`Storyshots Molecules | Input / Select Full Width 1`] = `
   padding-right: 8px;
 }
 
+.c15 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 20px;
+  height: 20px;
+  fill: #282823;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
+}
+
 .c2 {
   box-sizing: border-box;
   display: -webkit-box;
@@ -4036,20 +4050,6 @@ exports[`Storyshots Molecules | Input / Select Full Width 1`] = `
   text-overflow: ellipsis;
   white-space: nowrap;
   cursor: pointer;
-}
-
-.c15 {
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  width: 20px;
-  height: 20px;
-  fill: #282823;
-  -webkit-flex-shrink: 0;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
-  display: block;
 }
 
 .c8 {
@@ -4318,6 +4318,20 @@ exports[`Storyshots Molecules | Input / Select Fully Empty 1`] = `
   padding-right: 8px;
 }
 
+.c15 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 20px;
+  height: 20px;
+  fill: #282823;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
+}
+
 .c2 {
   box-sizing: border-box;
   display: -webkit-box;
@@ -4342,20 +4356,6 @@ exports[`Storyshots Molecules | Input / Select Fully Empty 1`] = `
   text-overflow: ellipsis;
   white-space: nowrap;
   cursor: pointer;
-}
-
-.c15 {
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  width: 20px;
-  height: 20px;
-  fill: #282823;
-  -webkit-flex-shrink: 0;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
-  display: block;
 }
 
 .c8 {
@@ -4611,6 +4611,20 @@ exports[`Storyshots Molecules | Input / Select Hide Label 1`] = `
   padding-right: 8px;
 }
 
+.c15 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 20px;
+  height: 20px;
+  fill: #282823;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
+}
+
 .c2 {
   box-sizing: border-box;
   display: -webkit-box;
@@ -4641,20 +4655,6 @@ exports[`Storyshots Molecules | Input / Select Hide Label 1`] = `
   text-overflow: ellipsis;
   white-space: nowrap;
   cursor: pointer;
-}
-
-.c15 {
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  width: 20px;
-  height: 20px;
-  fill: #282823;
-  -webkit-flex-shrink: 0;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
-  display: block;
 }
 
 .c8 {
@@ -4913,6 +4913,21 @@ exports[`Storyshots Molecules | Input / Select Hide Label 1`] = `
 `;
 
 exports[`Storyshots Molecules | Input / Select Link With Dropdown And Search Box Multiselect 1`] = `
+.c11 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 12px;
+  height: 12px;
+  fill: #282823;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: inline-block;
+  vertical-align: middle;
+}
+
 .c2 {
   box-sizing: border-box;
   display: -webkit-box;
@@ -4970,21 +4985,6 @@ exports[`Storyshots Molecules | Input / Select Link With Dropdown And Search Box
 
 .c12 {
   box-sizing: border-box;
-}
-
-.c11 {
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  width: 12px;
-  height: 12px;
-  fill: #282823;
-  -webkit-flex-shrink: 0;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
-  display: inline-block;
-  vertical-align: middle;
 }
 
 .c4 {
@@ -5247,6 +5247,21 @@ exports[`Storyshots Molecules | Input / Select Link With Dropdown And Search Box
 `;
 
 exports[`Storyshots Molecules | Input / Select Link With Dropdown And Search Box Secondary 1`] = `
+.c11 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 14px;
+  height: 14px;
+  fill: #282823;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: inline-block;
+  vertical-align: middle;
+}
+
 .c2 {
   box-sizing: border-box;
   display: -webkit-box;
@@ -5304,21 +5319,6 @@ exports[`Storyshots Molecules | Input / Select Link With Dropdown And Search Box
 
 .c12 {
   box-sizing: border-box;
-}
-
-.c11 {
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  width: 14px;
-  height: 14px;
-  fill: #282823;
-  -webkit-flex-shrink: 0;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
-  display: inline-block;
-  vertical-align: middle;
 }
 
 .c4 {
@@ -5570,6 +5570,21 @@ exports[`Storyshots Molecules | Input / Select Link With Dropdown And Search Box
 `;
 
 exports[`Storyshots Molecules | Input / Select Link With Dropdown And Search Box Tertiary 1`] = `
+.c11 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 12px;
+  height: 12px;
+  fill: #282823;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: inline-block;
+  vertical-align: middle;
+}
+
 .c2 {
   box-sizing: border-box;
   display: -webkit-box;
@@ -5627,21 +5642,6 @@ exports[`Storyshots Molecules | Input / Select Link With Dropdown And Search Box
 
 .c12 {
   box-sizing: border-box;
-}
-
-.c11 {
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  width: 12px;
-  height: 12px;
-  fill: #282823;
-  -webkit-flex-shrink: 0;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
-  display: inline-block;
-  vertical-align: middle;
 }
 
 .c4 {
@@ -5902,6 +5902,21 @@ exports[`Storyshots Molecules | Input / Select Link With Dropdown And Search Box
 `;
 
 exports[`Storyshots Molecules | Input / Select List Positioned To The Left 1`] = `
+.c12 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 12px;
+  height: 12px;
+  fill: #282823;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: inline-block;
+  vertical-align: middle;
+}
+
 .c0 {
   box-sizing: border-box;
   display: -webkit-box;
@@ -5971,21 +5986,6 @@ exports[`Storyshots Molecules | Input / Select List Positioned To The Left 1`] =
 
 .c13 {
   box-sizing: border-box;
-}
-
-.c12 {
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  width: 12px;
-  height: 12px;
-  fill: #282823;
-  -webkit-flex-shrink: 0;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
-  display: inline-block;
-  vertical-align: middle;
 }
 
 .c5 {
@@ -6257,6 +6257,20 @@ exports[`Storyshots Molecules | Input / Select Multi Select Uncontrolled 1`] = `
   padding-right: 8px;
 }
 
+.c14 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 20px;
+  height: 20px;
+  fill: #282823;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
+}
+
 .c2 {
   box-sizing: border-box;
   display: -webkit-box;
@@ -6281,20 +6295,6 @@ exports[`Storyshots Molecules | Input / Select Multi Select Uncontrolled 1`] = `
   text-overflow: ellipsis;
   white-space: nowrap;
   cursor: pointer;
-}
-
-.c14 {
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  width: 20px;
-  height: 20px;
-  fill: #282823;
-  -webkit-flex-shrink: 0;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
-  display: block;
 }
 
 .c8 {
@@ -6559,6 +6559,20 @@ exports[`Storyshots Molecules | Input / Select Multiselect 1`] = `
   padding-right: 8px;
 }
 
+.c14 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 20px;
+  height: 20px;
+  fill: #282823;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
+}
+
 .c2 {
   box-sizing: border-box;
   display: -webkit-box;
@@ -6583,20 +6597,6 @@ exports[`Storyshots Molecules | Input / Select Multiselect 1`] = `
   text-overflow: ellipsis;
   white-space: nowrap;
   cursor: pointer;
-}
-
-.c14 {
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  width: 20px;
-  height: 20px;
-  fill: #282823;
-  -webkit-flex-shrink: 0;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
-  display: block;
 }
 
 .c8 {
@@ -6861,6 +6861,20 @@ exports[`Storyshots Molecules | Input / Select Multiselect Actions 1`] = `
   padding-right: 8px;
 }
 
+.c14 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 20px;
+  height: 20px;
+  fill: #282823;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
+}
+
 .c2 {
   box-sizing: border-box;
   display: -webkit-box;
@@ -6885,20 +6899,6 @@ exports[`Storyshots Molecules | Input / Select Multiselect Actions 1`] = `
   text-overflow: ellipsis;
   white-space: nowrap;
   cursor: pointer;
-}
-
-.c14 {
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  width: 20px;
-  height: 20px;
-  fill: #282823;
-  -webkit-flex-shrink: 0;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
-  display: block;
 }
 
 .c8 {
@@ -7163,6 +7163,20 @@ exports[`Storyshots Molecules | Input / Select Multiselect Select All 1`] = `
   padding-right: 8px;
 }
 
+.c14 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 20px;
+  height: 20px;
+  fill: #282823;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
+}
+
 .c2 {
   box-sizing: border-box;
   display: -webkit-box;
@@ -7187,20 +7201,6 @@ exports[`Storyshots Molecules | Input / Select Multiselect Select All 1`] = `
   text-overflow: ellipsis;
   white-space: nowrap;
   cursor: pointer;
-}
-
-.c14 {
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  width: 20px;
-  height: 20px;
-  fill: #282823;
-  -webkit-flex-shrink: 0;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
-  display: block;
 }
 
 .c8 {
@@ -7472,6 +7472,20 @@ exports[`Storyshots Molecules | Input / Select On Blur And On Focus 1`] = `
   padding-right: 8px;
 }
 
+.c15 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 20px;
+  height: 20px;
+  fill: #282823;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
+}
+
 .c2 {
   box-sizing: border-box;
   display: -webkit-box;
@@ -7496,20 +7510,6 @@ exports[`Storyshots Molecules | Input / Select On Blur And On Focus 1`] = `
   text-overflow: ellipsis;
   white-space: nowrap;
   cursor: pointer;
-}
-
-.c15 {
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  width: 20px;
-  height: 20px;
-  fill: #282823;
-  -webkit-flex-shrink: 0;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
-  display: block;
 }
 
 .c8 {
@@ -7777,6 +7777,20 @@ exports[`Storyshots Molecules | Input / Select On Search Query Change 1`] = `
   padding-right: 8px;
 }
 
+.c15 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 20px;
+  height: 20px;
+  fill: #282823;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
+}
+
 .c2 {
   box-sizing: border-box;
   display: -webkit-box;
@@ -7801,20 +7815,6 @@ exports[`Storyshots Molecules | Input / Select On Search Query Change 1`] = `
   text-overflow: ellipsis;
   white-space: nowrap;
   cursor: pointer;
-}
-
-.c15 {
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  width: 20px;
-  height: 20px;
-  fill: #282823;
-  -webkit-flex-shrink: 0;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
-  display: block;
 }
 
 .c8 {
@@ -8082,6 +8082,20 @@ exports[`Storyshots Molecules | Input / Select Overflow Story 1`] = `
   padding-right: 8px;
 }
 
+.c15 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 20px;
+  height: 20px;
+  fill: #282823;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
+}
+
 .c2 {
   box-sizing: border-box;
   display: -webkit-box;
@@ -8106,20 +8120,6 @@ exports[`Storyshots Molecules | Input / Select Overflow Story 1`] = `
   text-overflow: ellipsis;
   white-space: nowrap;
   cursor: pointer;
-}
-
-.c15 {
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  width: 20px;
-  height: 20px;
-  fill: #282823;
-  -webkit-flex-shrink: 0;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
-  display: block;
 }
 
 .c8 {
@@ -8775,6 +8775,20 @@ exports[`Storyshots Molecules | Input / Select Preselected Options 1`] = `
   padding-right: 8px;
 }
 
+.c14 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 20px;
+  height: 20px;
+  fill: #282823;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
+}
+
 .c2 {
   box-sizing: border-box;
   display: -webkit-box;
@@ -8799,20 +8813,6 @@ exports[`Storyshots Molecules | Input / Select Preselected Options 1`] = `
   text-overflow: ellipsis;
   white-space: nowrap;
   cursor: pointer;
-}
-
-.c14 {
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  width: 20px;
-  height: 20px;
-  fill: #282823;
-  -webkit-flex-shrink: 0;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
-  display: block;
 }
 
 .c8 {
@@ -9082,6 +9082,20 @@ exports[`Storyshots Molecules | Input / Select Search Story 1`] = `
   padding-right: 8px;
 }
 
+.c15 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 20px;
+  height: 20px;
+  fill: #282823;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
+}
+
 .c2 {
   box-sizing: border-box;
   display: -webkit-box;
@@ -9106,20 +9120,6 @@ exports[`Storyshots Molecules | Input / Select Search Story 1`] = `
   text-overflow: ellipsis;
   white-space: nowrap;
   cursor: pointer;
-}
-
-.c15 {
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  width: 20px;
-  height: 20px;
-  fill: #282823;
-  -webkit-flex-shrink: 0;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
-  display: block;
 }
 
 .c8 {
@@ -9403,6 +9403,20 @@ exports[`Storyshots Molecules | Input / Select Size S 1`] = `
   padding-right: 8px;
 }
 
+.c18 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 20px;
+  height: 20px;
+  fill: #282823;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
+}
+
 .c5 {
   box-sizing: border-box;
   display: -webkit-box;
@@ -9436,20 +9450,6 @@ exports[`Storyshots Molecules | Input / Select Size S 1`] = `
   text-overflow: ellipsis;
   white-space: nowrap;
   cursor: pointer;
-}
-
-.c18 {
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  width: 20px;
-  height: 20px;
-  fill: #282823;
-  -webkit-flex-shrink: 0;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
-  display: block;
 }
 
 .c11 {
@@ -10270,6 +10270,20 @@ exports[`Storyshots Molecules | Input / Select Tracking 1`] = `
   padding-right: 8px;
 }
 
+.c15 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 20px;
+  height: 20px;
+  fill: #282823;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
+}
+
 .c2 {
   box-sizing: border-box;
   display: -webkit-box;
@@ -10294,20 +10308,6 @@ exports[`Storyshots Molecules | Input / Select Tracking 1`] = `
   text-overflow: ellipsis;
   white-space: nowrap;
   cursor: pointer;
-}
-
-.c15 {
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  width: 20px;
-  height: 20px;
-  fill: #282823;
-  -webkit-flex-shrink: 0;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
-  display: block;
 }
 
 .c8 {
@@ -10576,6 +10576,20 @@ Array [
   padding-right: 8px;
 }
 
+.c15 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 20px;
+  height: 20px;
+  fill: #282823;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
+}
+
 .c2 {
   box-sizing: border-box;
   display: -webkit-box;
@@ -10600,20 +10614,6 @@ Array [
   text-overflow: ellipsis;
   white-space: nowrap;
   cursor: pointer;
-}
-
-.c15 {
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  width: 20px;
-  height: 20px;
-  fill: #282823;
-  -webkit-flex-shrink: 0;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
-  display: block;
 }
 
 .c8 {
@@ -10878,6 +10878,20 @@ Array [
   padding-right: 8px;
 }
 
+.c15 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 20px;
+  height: 20px;
+  fill: #282823;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
+}
+
 .c2 {
   box-sizing: border-box;
   display: -webkit-box;
@@ -10902,20 +10916,6 @@ Array [
   text-overflow: ellipsis;
   white-space: nowrap;
   cursor: pointer;
-}
-
-.c15 {
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  width: 20px;
-  height: 20px;
-  fill: #282823;
-  -webkit-flex-shrink: 0;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
-  display: block;
 }
 
 .c8 {

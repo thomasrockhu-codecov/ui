@@ -2226,24 +2226,6 @@ exports[`Storyshots Molecules | Input / Textarea With default value (Uncontrolle
 `;
 
 exports[`Storyshots Molecules | Input / Textarea With tooltip as label addon 1`] = `
-.c3 {
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.c1 {
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  cursor: pointer;
-}
-
 .c4 {
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -2260,6 +2242,24 @@ exports[`Storyshots Molecules | Input / Textarea With tooltip as label addon 1`]
 
 .c6 {
   stroke: #6E6E69;
+}
+
+.c3 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c1 {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  cursor: pointer;
 }
 
 .c2 {

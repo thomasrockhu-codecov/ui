@@ -2,6 +2,7 @@
 import { Table, Tbody, Td, Tfoot, Th, Thead, Tr } from './Atoms/Table';
 import Box from './Atoms/Box';
 import Card from './Atoms/Card';
+import Pill from './Atoms/Pill';
 import CssGrid from './Atoms/CssGrid';
 import DateTime from './Atoms/DateTime';
 import DropdownBubble from './Atoms/DropdownBubble';
@@ -99,6 +100,7 @@ export {
   PageHeaderCard,
   PageWrapper,
   Portal,
+  Pill,
   Rating,
   /** @deprecated */ Select,
   Separator,

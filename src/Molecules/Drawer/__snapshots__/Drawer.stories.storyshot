@@ -286,6 +286,24 @@ exports[`Storyshots Molecules | Drawer Default 1`] = `
 `;
 
 exports[`Storyshots Molecules | Drawer Integration: With FadedScroll 1`] = `
+.c6 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 20px;
+  height: 20px;
+  fill: #282823;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
+}
+
+.c7 {
+  stroke: #6E6E69;
+}
+
 .c9 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -377,24 +395,6 @@ exports[`Storyshots Molecules | Drawer Integration: With FadedScroll 1`] = `
   right: 0;
   pointer-events: none;
   top: 0;
-}
-
-.c6 {
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  width: 20px;
-  height: 20px;
-  fill: #282823;
-  -webkit-flex-shrink: 0;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
-  display: block;
-}
-
-.c7 {
-  stroke: #6E6E69;
 }
 
 .c2 {
@@ -682,6 +682,24 @@ exports[`Storyshots Molecules | Drawer Integration: With FadedScroll 1`] = `
 `;
 
 exports[`Storyshots Molecules | Drawer With a custom title 1`] = `
+.c2 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 20px;
+  height: 20px;
+  fill: #282823;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
+}
+
+.c7 {
+  stroke: #6E6E69;
+}
+
 .c1 {
   box-sizing: border-box;
   display: -webkit-box;
@@ -703,24 +721,6 @@ exports[`Storyshots Molecules | Drawer With a custom title 1`] = `
 
 .c1 > *:not(:first-child) {
   padding-top: 0;
-}
-
-.c2 {
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  width: 20px;
-  height: 20px;
-  fill: #282823;
-  -webkit-flex-shrink: 0;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
-  display: block;
-}
-
-.c7 {
-  stroke: #6E6E69;
 }
 
 .c3 {

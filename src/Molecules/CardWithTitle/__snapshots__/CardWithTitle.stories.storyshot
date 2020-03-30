@@ -101,6 +101,21 @@ exports[`Storyshots Molecules | CardWithTitle Integration: CardWithTitle with cu
   box-shadow: 0 2px 2px 0 rgba(0,0,0,0.03);
 }
 
+.c8 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 12px;
+  height: 12px;
+  fill: #0046FF;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: inline-block;
+  vertical-align: middle;
+}
+
 .c3 {
   box-sizing: border-box;
   display: -webkit-box;
@@ -122,21 +137,6 @@ exports[`Storyshots Molecules | CardWithTitle Integration: CardWithTitle with cu
 
 .c4 {
   box-sizing: border-box;
-}
-
-.c8 {
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  width: 12px;
-  height: 12px;
-  fill: #0046FF;
-  -webkit-flex-shrink: 0;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
-  display: inline-block;
-  vertical-align: middle;
 }
 
 .c5 {
