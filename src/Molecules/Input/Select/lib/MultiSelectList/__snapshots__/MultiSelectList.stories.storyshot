@@ -1,20 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Storyshots Molecules | Input / Select / MultiSelectList Item default 1`] = `
-.c14 {
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  width: 12px;
-  height: 12px;
-  fill: transparent;
-  -webkit-flex-shrink: 0;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
-  display: block;
-}
-
 .c1 {
   box-sizing: border-box;
   display: -webkit-box;
@@ -101,6 +87,20 @@ exports[`Storyshots Molecules | Input / Select / MultiSelectList Item default 1`
   text-overflow: ellipsis;
   white-space: nowrap;
   cursor: pointer;
+}
+
+.c14 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 12px;
+  height: 12px;
+  fill: transparent;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
 }
 
 .c8 {
@@ -302,20 +302,6 @@ exports[`Storyshots Molecules | Input / Select / MultiSelectList Item default 1`
 `;
 
 exports[`Storyshots Molecules | Input / Select / MultiSelectList Item disabled 1`] = `
-.c14 {
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  width: 12px;
-  height: 12px;
-  fill: transparent;
-  -webkit-flex-shrink: 0;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
-  display: block;
-}
-
 .c1 {
   box-sizing: border-box;
   display: -webkit-box;
@@ -402,6 +388,20 @@ exports[`Storyshots Molecules | Input / Select / MultiSelectList Item disabled 1
   text-overflow: ellipsis;
   white-space: nowrap;
   cursor: pointer;
+}
+
+.c14 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 12px;
+  height: 12px;
+  fill: transparent;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
 }
 
 .c8 {
@@ -606,20 +606,6 @@ exports[`Storyshots Molecules | Input / Select / MultiSelectList Item disabled 1
 `;
 
 exports[`Storyshots Molecules | Input / Select / MultiSelectList Item selected 1`] = `
-.c14 {
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  width: 12px;
-  height: 12px;
-  fill: transparent;
-  -webkit-flex-shrink: 0;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
-  display: block;
-}
-
 .c1 {
   box-sizing: border-box;
   display: -webkit-box;
@@ -706,6 +692,20 @@ exports[`Storyshots Molecules | Input / Select / MultiSelectList Item selected 1
   text-overflow: ellipsis;
   white-space: nowrap;
   cursor: pointer;
+}
+
+.c14 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 12px;
+  height: 12px;
+  fill: transparent;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
 }
 
 .c8 {
@@ -909,20 +909,6 @@ exports[`Storyshots Molecules | Input / Select / MultiSelectList Item selected 1
 `;
 
 exports[`Storyshots Molecules | Input / Select / MultiSelectList List with different arrow positions 1`] = `
-.c22 {
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  width: 12px;
-  height: 12px;
-  fill: transparent;
-  -webkit-flex-shrink: 0;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
-  display: block;
-}
-
 .c4 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -1102,6 +1088,20 @@ exports[`Storyshots Molecules | Input / Select / MultiSelectList List with diffe
   text-overflow: ellipsis;
   white-space: nowrap;
   cursor: pointer;
+}
+
+.c22 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 12px;
+  height: 12px;
+  fill: transparent;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
 }
 
 .c16 {

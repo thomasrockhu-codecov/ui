@@ -390,20 +390,6 @@ exports[`Storyshots Molecules | Input / Text Alternating Types 1`] = `
 `;
 
 exports[`Storyshots Molecules | Input / Text Both addons 1`] = `
-.c9 {
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  width: 16px;
-  height: 16px;
-  fill: #282823;
-  -webkit-flex-shrink: 0;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
-  display: block;
-}
-
 .c3 {
   box-sizing: border-box;
   display: -webkit-box;
@@ -436,6 +422,20 @@ exports[`Storyshots Molecules | Input / Text Both addons 1`] = `
   text-overflow: ellipsis;
   white-space: nowrap;
   cursor: pointer;
+}
+
+.c9 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 16px;
+  height: 16px;
+  fill: #282823;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
 }
 
 .c2 {
@@ -742,20 +742,6 @@ exports[`Storyshots Molecules | Input / Text Default 1`] = `
 `;
 
 exports[`Storyshots Molecules | Input / Text Disabled +addon 1`] = `
-.c9 {
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  width: 16px;
-  height: 16px;
-  fill: #282823;
-  -webkit-flex-shrink: 0;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
-  display: block;
-}
-
 .c3 {
   box-sizing: border-box;
   display: -webkit-box;
@@ -788,6 +774,20 @@ exports[`Storyshots Molecules | Input / Text Disabled +addon 1`] = `
   text-overflow: ellipsis;
   white-space: nowrap;
   cursor: pointer;
+}
+
+.c9 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 16px;
+  height: 16px;
+  fill: #282823;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
 }
 
 .c2 {
@@ -1890,21 +1890,7 @@ Array [
       Full width inputs
     </span>
   </div>,
-  .c13 {
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  width: 16px;
-  height: 16px;
-  fill: #282823;
-  -webkit-flex-shrink: 0;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
-  display: block;
-}
-
-.c6 {
+  .c6 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -1936,6 +1922,20 @@ Array [
   text-overflow: ellipsis;
   white-space: nowrap;
   cursor: pointer;
+}
+
+.c13 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 16px;
+  height: 16px;
+  fill: #282823;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
 }
 
 .c5 {
@@ -2536,20 +2536,6 @@ exports[`Storyshots Molecules | Input / Text Hidden label 1`] = `
 `;
 
 exports[`Storyshots Molecules | Input / Text Left addon 1`] = `
-.c9 {
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  width: 16px;
-  height: 16px;
-  fill: #282823;
-  -webkit-flex-shrink: 0;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
-  display: block;
-}
-
 .c3 {
   box-sizing: border-box;
   display: -webkit-box;
@@ -2582,6 +2568,20 @@ exports[`Storyshots Molecules | Input / Text Left addon 1`] = `
   text-overflow: ellipsis;
   white-space: nowrap;
   cursor: pointer;
+}
+
+.c9 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 16px;
+  height: 16px;
+  fill: #282823;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
 }
 
 .c2 {
@@ -3291,51 +3291,6 @@ exports[`Storyshots Molecules | Input / Text Simple login form 1`] = `
   cursor: pointer;
 }
 
-.c5 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #6E6E69;
-  margin: 0;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
-}
-
-.c7 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #282823;
-  margin: 0;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
-}
-
-.c10 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #6E6E69;
-  margin: 0;
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 1.3333333333333333;
-}
-
-.c12 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #FF1900;
-  margin: 0;
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 1.3333333333333333;
-}
-
-.c16 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: inherit;
-  margin: 0;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
-}
-
 .c15 {
   font-family: inherit;
   font-size: 100%;
@@ -3406,6 +3361,51 @@ exports[`Storyshots Molecules | Input / Text Simple login form 1`] = `
 
 .c15:active {
   background-color: hsl(223.5,100%,40%);
+}
+
+.c5 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #6E6E69;
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c7 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c10 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #6E6E69;
+  margin: 0;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.3333333333333333;
+}
+
+.c12 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #FF1900;
+  margin: 0;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.3333333333333333;
+}
+
+.c16 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: inherit;
+  margin: 0;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
 }
 
 .c3 {
@@ -3685,21 +3685,7 @@ Array [
       Size = "s"
     </span>
   </div>,
-  .c17 {
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  width: 16px;
-  height: 16px;
-  fill: #282823;
-  -webkit-flex-shrink: 0;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
-  display: block;
-}
-
-.c6 {
+  .c6 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -3740,6 +3726,20 @@ Array [
   text-overflow: ellipsis;
   white-space: nowrap;
   cursor: pointer;
+}
+
+.c17 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 16px;
+  height: 16px;
+  fill: #282823;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
 }
 
 .c5 {
@@ -4930,24 +4930,6 @@ exports[`Storyshots Molecules | Input / Text With maxLength 1`] = `
 `;
 
 exports[`Storyshots Molecules | Input / Text With tooltip as label addon 1`] = `
-.c4 {
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  width: 16px;
-  height: 16px;
-  fill: #282823;
-  -webkit-flex-shrink: 0;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
-  display: block;
-}
-
-.c6 {
-  stroke: #6E6E69;
-}
-
 .c3 {
   box-sizing: border-box;
   display: -webkit-box;
@@ -4964,6 +4946,24 @@ exports[`Storyshots Molecules | Input / Text With tooltip as label addon 1`] = `
   text-overflow: ellipsis;
   white-space: nowrap;
   cursor: pointer;
+}
+
+.c4 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 16px;
+  height: 16px;
+  fill: #282823;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
+}
+
+.c6 {
+  stroke: #6E6E69;
 }
 
 .c2 {

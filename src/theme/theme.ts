@@ -57,18 +57,6 @@ export const rawColor = {
   pill8: '#282823',
   pill9: '#000000',
   pill10: '#D2F500',
-  pill11: '#01424C',
-  pill12: '#00D200',
-  pill13: '#01424C',
-  pill14: '#131F4F',
-  pill15: '#023C00',
-  pill16: '#00C8F5',
-  pill18: '#00F0E1',
-  pill19: '#FF2B83',
-  pill20: '#385E9D',
-  pill21: '#3A913F',
-  pill22: '#009195',
-  pill23: '#AC135A',
 } as RawColor;
 
 const breakpoints: Theme['breakpoints'] = {
@@ -253,18 +241,6 @@ export const createTheme = (config: ThemeConfig = {}): Theme => {
       pill8: rawColor.pill8,
       pill9: rawColor.pill9,
       pill10: rawColor.pill10,
-      pill11: rawColor.pill11,
-      pill12: rawColor.pill12,
-      pill13: rawColor.pill13,
-      pill14: rawColor.pill14,
-      pill15: rawColor.pill15,
-      pill16: rawColor.pill16,
-      pill18: rawColor.pill18,
-      pill19: rawColor.pill19,
-      pill20: rawColor.pill20,
-      pill21: rawColor.pill21,
-      pill22: rawColor.pill22,
-      pill23: rawColor.pill23,
     },
     media: {
       between: (s1, s2) => {

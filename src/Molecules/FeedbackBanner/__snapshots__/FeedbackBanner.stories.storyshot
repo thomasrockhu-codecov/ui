@@ -1,24 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Storyshots Molecules | FeedbackBanner Complex children 1`] = `
-.c2 {
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  width: 20px;
-  height: 20px;
-  fill: #FFCF00;
-  -webkit-flex-shrink: 0;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
-  display: block;
-}
-
-.c3 {
-  fill: #FFFFFF;
-}
-
 .c1 {
   box-sizing: border-box;
   display: -webkit-box;
@@ -54,6 +36,24 @@ exports[`Storyshots Molecules | FeedbackBanner Complex children 1`] = `
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
+}
+
+.c2 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 20px;
+  height: 20px;
+  fill: #FFCF00;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
+}
+
+.c3 {
+  fill: #FFFFFF;
 }
 
 .c6 {
@@ -156,24 +156,6 @@ exports[`Storyshots Molecules | FeedbackBanner Complex children 1`] = `
 `;
 
 exports[`Storyshots Molecules | FeedbackBanner Default usage 1`] = `
-.c2 {
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  width: 20px;
-  height: 20px;
-  fill: #0046FF;
-  -webkit-flex-shrink: 0;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
-  display: block;
-}
-
-.c3 {
-  fill: #FFFFFF;
-}
-
 .c1 {
   box-sizing: border-box;
   display: -webkit-box;
@@ -209,6 +191,24 @@ exports[`Storyshots Molecules | FeedbackBanner Default usage 1`] = `
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
+}
+
+.c2 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 20px;
+  height: 20px;
+  fill: #0046FF;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
+}
+
+.c3 {
+  fill: #FFFFFF;
 }
 
 .c6 {
@@ -283,6 +283,43 @@ exports[`Storyshots Molecules | FeedbackBanner Default usage 1`] = `
 `;
 
 exports[`Storyshots Molecules | FeedbackBanner Different variant 1`] = `
+.c4 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-left: -6px;
+  margin-right: -6px;
+}
+
+.c4 > * {
+  padding-left: 6px;
+  padding-right: 6px;
+}
+
+.c4 > *:not(:first-child) {
+  padding-top: 0;
+}
+
+.c7 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
 .c5 {
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -353,43 +390,6 @@ exports[`Storyshots Molecules | FeedbackBanner Different variant 1`] = `
 
 .c16 {
   fill: #FFFFFF;
-}
-
-.c4 {
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  margin-left: -6px;
-  margin-right: -6px;
-}
-
-.c4 > * {
-  padding-left: 6px;
-  padding-right: 6px;
-}
-
-.c4 > *:not(:first-child) {
-  padding-top: 0;
-}
-
-.c7 {
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
 }
 
 .c9 {
@@ -715,24 +715,6 @@ exports[`Storyshots Molecules | FeedbackBanner Different variant 1`] = `
 `;
 
 exports[`Storyshots Molecules | FeedbackBanner Displaying title 1`] = `
-.c5 {
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  width: 20px;
-  height: 20px;
-  fill: #0046FF;
-  -webkit-flex-shrink: 0;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
-  display: block;
-}
-
-.c6 {
-  fill: #FFFFFF;
-}
-
 .c4 {
   box-sizing: border-box;
   display: -webkit-box;
@@ -768,6 +750,24 @@ exports[`Storyshots Molecules | FeedbackBanner Displaying title 1`] = `
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
+}
+
+.c5 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 20px;
+  height: 20px;
+  fill: #0046FF;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
+}
+
+.c6 {
+  fill: #FFFFFF;
 }
 
 .c9 {

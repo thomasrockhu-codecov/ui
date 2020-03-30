@@ -12,24 +12,6 @@ exports[`Storyshots Molecules | InfoBar Default usage 1`] = `
   padding-right: 8px;
 }
 
-.c7 {
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  width: 20px;
-  height: 20px;
-  fill: #0046FF;
-  -webkit-flex-shrink: 0;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
-  display: block;
-}
-
-.c8 {
-  fill: #FFFFFF;
-}
-
 .c4 {
   box-sizing: border-box;
   display: -webkit-box;
@@ -52,6 +34,24 @@ exports[`Storyshots Molecules | InfoBar Default usage 1`] = `
   -webkit-flex-grow: 2;
   -ms-flex-positive: 2;
   flex-grow: 2;
+}
+
+.c7 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 20px;
+  height: 20px;
+  fill: #0046FF;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
+}
+
+.c8 {
+  fill: #FFFFFF;
 }
 
 .c10 {
@@ -199,6 +199,30 @@ exports[`Storyshots Molecules | InfoBar Different variants 1`] = `
   padding-right: 8px;
 }
 
+.c4 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c5 {
+  box-sizing: border-box;
+}
+
+.c9 {
+  box-sizing: border-box;
+  -webkit-box-flex: 2;
+  -webkit-flex-grow: 2;
+  -ms-flex-positive: 2;
+  flex-grow: 2;
+}
+
 .c7 {
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -255,30 +279,6 @@ exports[`Storyshots Molecules | InfoBar Different variants 1`] = `
 
 .c13 {
   fill: #FFCF00;
-}
-
-.c4 {
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.c5 {
-  box-sizing: border-box;
-}
-
-.c9 {
-  box-sizing: border-box;
-  -webkit-box-flex: 2;
-  -webkit-flex-grow: 2;
-  -ms-flex-positive: 2;
-  flex-grow: 2;
 }
 
 .c10 {
@@ -748,6 +748,30 @@ exports[`Storyshots Molecules | InfoBar onClose prop demo 1`] = `
   padding-left: 8px;
 }
 
+.c4 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c5 {
+  box-sizing: border-box;
+}
+
+.c9 {
+  box-sizing: border-box;
+  -webkit-box-flex: 2;
+  -webkit-flex-grow: 2;
+  -ms-flex-positive: 2;
+  flex-grow: 2;
+}
+
 .c7 {
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -778,30 +802,6 @@ exports[`Storyshots Molecules | InfoBar onClose prop demo 1`] = `
 
 .c8 {
   fill: #FFFFFF;
-}
-
-.c4 {
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.c5 {
-  box-sizing: border-box;
-}
-
-.c9 {
-  box-sizing: border-box;
-  -webkit-box-flex: 2;
-  -webkit-flex-grow: 2;
-  -ms-flex-positive: 2;
-  flex-grow: 2;
 }
 
 .c10 {

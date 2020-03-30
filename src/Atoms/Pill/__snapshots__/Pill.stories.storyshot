@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Storyshots Atoms | Pill Basic Pill 1`] = `
-.c2 {
+.c4 {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -15,8 +15,59 @@ exports[`Storyshots Atoms | Pill Basic Pill 1`] = `
   display: block;
 }
 
-.c3 {
+.c5 {
   stroke: #6E6E69;
+}
+
+.c1 {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  overflow: visible;
+  text-transform: none;
+  position: relative;
+  box-sizing: border-box;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  padding: 0;
+  background-color: transparent;
+  color: #282823;
+  border: none;
+  border-radius: 0;
+  cursor: pointer;
+}
+
+.c1,
+.c1[type='button'],
+.c1[type='reset'],
+.c1[type='submit'] {
+  -webkit-appearance: button;
+}
+
+.c1::-moz-focus-inner,
+.c1[type='button']::-moz-focus-inner,
+.c1[type='reset']::-moz-focus-inner,
+.c1[type='submit']::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+.c1:-moz-focusring,
+.c1[type='button']:-moz-focusring,
+.c1[type='reset']:-moz-focusring,
+.c1[type='submit']:-moz-focusring {
+  outline: 1px dotted ButtonText;
 }
 
 .c0 {
@@ -33,49 +84,64 @@ exports[`Storyshots Atoms | Pill Basic Pill 1`] = `
   align-items: center;
 }
 
-.c1 {
-  background: #FFFFFF;
-  border: 0;
+.c2 {
+  padding: 0 4px;
+}
+
+.c3 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: inherit;
   margin: 0;
-  padding: 2px 6px;
-  cursor: pointer;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
 }
 
 <div
   className="c0"
 >
   <button
-    className="c1"
-    title="Edit this selection"
+    className="NormalizedButton__Button-ey7f5x-0 c1 c2"
+    onClick={[Function]}
     type="button"
   >
-    1234
+    <span
+      className="c3"
+    >
+      <span>
+        1234
+      </span>
+    </span>
   </button>
   <button
-    className="c1"
-    title="Remove this selection"
+    className="NormalizedButton__Button-ey7f5x-0 c1 c2"
+    onClick={[Function]}
     type="button"
   >
-    <svg
-      aria-hidden="true"
-      className="c2"
-      focusable="false"
-      preserveAspectRatio="xMidYMid meet"
-      role="presentation"
-      viewBox="0 0 24 24"
+    <span
+      className="c3"
     >
-      <path
-        className="c3"
-        d="m 1 1 l 22 22 m -22 0 l 22 -22"
-        strokeWidth={2}
-      />
-    </svg>
+      <svg
+        aria-hidden="true"
+        className="c4"
+        focusable="false"
+        preserveAspectRatio="xMidYMid meet"
+        role="presentation"
+        viewBox="0 0 24 24"
+      >
+        <path
+          className="c5"
+          d="m 1 1 l 22 22 m -22 0 l 22 -22"
+          strokeWidth={2}
+        />
+      </svg>
+    </span>
   </button>
 </div>
 `;
 
 exports[`Storyshots Atoms | Pill Pill with colored bar 1`] = `
-.c2 {
+.c4 {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -89,8 +155,59 @@ exports[`Storyshots Atoms | Pill Pill with colored bar 1`] = `
   display: block;
 }
 
-.c3 {
+.c5 {
   stroke: #6E6E69;
+}
+
+.c1 {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  overflow: visible;
+  text-transform: none;
+  position: relative;
+  box-sizing: border-box;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  padding: 0;
+  background-color: transparent;
+  color: #282823;
+  border: none;
+  border-radius: 0;
+  cursor: pointer;
+}
+
+.c1,
+.c1[type='button'],
+.c1[type='reset'],
+.c1[type='submit'] {
+  -webkit-appearance: button;
+}
+
+.c1::-moz-focus-inner,
+.c1[type='button']::-moz-focus-inner,
+.c1[type='reset']::-moz-focus-inner,
+.c1[type='submit']::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+.c1:-moz-focusring,
+.c1[type='button']:-moz-focusring,
+.c1[type='reset']:-moz-focusring,
+.c1[type='submit']:-moz-focusring {
+  outline: 1px dotted ButtonText;
 }
 
 .c0 {
@@ -108,43 +225,58 @@ exports[`Storyshots Atoms | Pill Pill with colored bar 1`] = `
   align-items: center;
 }
 
-.c1 {
-  background: #FFFFFF;
-  border: 0;
+.c2 {
+  padding: 0 4px;
+}
+
+.c3 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: inherit;
   margin: 0;
-  padding: 2px 6px;
-  cursor: pointer;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
 }
 
 <div
   className="c0"
 >
   <button
-    className="c1"
-    title="Edit this selection"
+    className="NormalizedButton__Button-ey7f5x-0 c1 c2"
+    onClick={[Function]}
     type="button"
   >
-    123
+    <span
+      className="c3"
+    >
+      <span>
+        123
+      </span>
+    </span>
   </button>
   <button
-    className="c1"
-    title="Remove this selection"
+    className="NormalizedButton__Button-ey7f5x-0 c1 c2"
+    onClick={[Function]}
     type="button"
   >
-    <svg
-      aria-hidden="true"
-      className="c2"
-      focusable="false"
-      preserveAspectRatio="xMidYMid meet"
-      role="presentation"
-      viewBox="0 0 24 24"
+    <span
+      className="c3"
     >
-      <path
-        className="c3"
-        d="m 1 1 l 22 22 m -22 0 l 22 -22"
-        strokeWidth={2}
-      />
-    </svg>
+      <svg
+        aria-hidden="true"
+        className="c4"
+        focusable="false"
+        preserveAspectRatio="xMidYMid meet"
+        role="presentation"
+        viewBox="0 0 24 24"
+      >
+        <path
+          className="c5"
+          d="m 1 1 l 22 22 m -22 0 l 22 -22"
+          strokeWidth={2}
+        />
+      </svg>
+    </span>
   </button>
 </div>
 `;

@@ -1,5 +1,6 @@
 import React from 'react';
 import styled, { css, ThemedStyledProps } from 'styled-components';
+import Button from '../../Molecules/Button';
 
 import { Props } from './Pill.types';
 import Icon from '../Icon';
@@ -29,26 +30,22 @@ const StyledDiv = styled.div<Props>`
   align-items: center;
 `;
 
-const StyledButton = styled.button<Props>`
-  background: ${({ theme }) => theme.color.card};
-  border: 0;
-  margin: 0;
-  padding: 2px 6px;
-  cursor: pointer;
+const StyledButton = styled(Button)<Props>`
+  padding: 0 ${p => p.theme.spacing.unit(1)}px;
 `;
 
 export const Pill: React.FC<Props> = ({
   barColor,
   className,
-  value,
+  children,
   onRemoveClick,
   onValueClick,
 }) => (
   <StyledDiv className={className} barColor={barColor}>
-    <StyledButton type="button" title="Edit this selection" onClick={onValueClick}>
-      {value}
+    <StyledButton type="button" onClick={onValueClick} variant="neutral">
+      <span>{children}</span>
     </StyledButton>
-    <StyledButton type="button" title="Remove this selection" onClick={onRemoveClick}>
+    <StyledButton type="button" onClick={onRemoveClick} variant="neutral">
       <Icon.CrossThin size={2} />
     </StyledButton>
   </StyledDiv>

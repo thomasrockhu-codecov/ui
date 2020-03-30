@@ -8,20 +8,6 @@ exports[`Storyshots Molecules | Input / Select / Action All States 1`] = `
   padding-bottom: 8px;
 }
 
-.c7 {
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  width: 16px;
-  height: 16px;
-  fill: currentColor;
-  -webkit-flex-shrink: 0;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
-  display: block;
-}
-
 .c6 {
   box-sizing: border-box;
   display: -webkit-box;
@@ -43,6 +29,20 @@ exports[`Storyshots Molecules | Input / Select / Action All States 1`] = `
 
 .c6 > *:not(:first-child) {
   padding-top: 0;
+}
+
+.c7 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 16px;
+  height: 16px;
+  fill: currentColor;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
 }
 
 .c5 {

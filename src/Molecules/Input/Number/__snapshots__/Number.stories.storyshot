@@ -1,20 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Storyshots Molecules | Input / Number Default 1`] = `
-.c10 {
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  width: 12px;
-  height: 12px;
-  fill: #282823;
-  -webkit-flex-shrink: 0;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
-  display: block;
-}
-
 .c3 {
   box-sizing: border-box;
   display: -webkit-box;
@@ -56,6 +42,20 @@ exports[`Storyshots Molecules | Input / Number Default 1`] = `
   text-overflow: ellipsis;
   white-space: nowrap;
   cursor: pointer;
+}
+
+.c10 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 12px;
+  height: 12px;
+  fill: #282823;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
 }
 
 .c2 {
@@ -290,20 +290,6 @@ exports[`Storyshots Molecules | Input / Number Default 1`] = `
 `;
 
 exports[`Storyshots Molecules | Input / Number Disabled 1`] = `
-.c10 {
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  width: 12px;
-  height: 12px;
-  fill: #282823;
-  -webkit-flex-shrink: 0;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
-  display: block;
-}
-
 .c3 {
   box-sizing: border-box;
   display: -webkit-box;
@@ -345,6 +331,20 @@ exports[`Storyshots Molecules | Input / Number Disabled 1`] = `
   text-overflow: ellipsis;
   white-space: nowrap;
   cursor: pointer;
+}
+
+.c10 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 12px;
+  height: 12px;
+  fill: #282823;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
 }
 
 .c2 {
@@ -602,21 +602,7 @@ Array [
       Required
     </span>
   </div>,
-  .c13 {
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  width: 12px;
-  height: 12px;
-  fill: #282823;
-  -webkit-flex-shrink: 0;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
-  display: block;
-}
-
-.c6 {
+  .c6 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -657,6 +643,20 @@ Array [
   text-overflow: ellipsis;
   white-space: nowrap;
   cursor: pointer;
+}
+
+.c13 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 12px;
+  height: 12px;
+  fill: #282823;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
 }
 
 .c5 {
@@ -1083,20 +1083,6 @@ Array [
 `;
 
 exports[`Storyshots Molecules | Input / Number With a smaller step 1`] = `
-.c10 {
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  width: 12px;
-  height: 12px;
-  fill: #282823;
-  -webkit-flex-shrink: 0;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
-  display: block;
-}
-
 .c3 {
   box-sizing: border-box;
   display: -webkit-box;
@@ -1138,6 +1124,20 @@ exports[`Storyshots Molecules | Input / Number With a smaller step 1`] = `
   text-overflow: ellipsis;
   white-space: nowrap;
   cursor: pointer;
+}
+
+.c10 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 12px;
+  height: 12px;
+  fill: #282823;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
 }
 
 .c2 {
@@ -1372,20 +1372,6 @@ exports[`Storyshots Molecules | Input / Number With a smaller step 1`] = `
 `;
 
 exports[`Storyshots Molecules | Input / Number With all actions 1`] = `
-.c10 {
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  width: 12px;
-  height: 12px;
-  fill: #282823;
-  -webkit-flex-shrink: 0;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
-  display: block;
-}
-
 .c3 {
   box-sizing: border-box;
   display: -webkit-box;
@@ -1427,6 +1413,20 @@ exports[`Storyshots Molecules | Input / Number With all actions 1`] = `
   text-overflow: ellipsis;
   white-space: nowrap;
   cursor: pointer;
+}
+
+.c10 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 12px;
+  height: 12px;
+  fill: #282823;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
 }
 
 .c2 {
@@ -1666,20 +1666,6 @@ exports[`Storyshots Molecules | Input / Number With all actions 1`] = `
 `;
 
 exports[`Storyshots Molecules | Input / Number With auto focus 1`] = `
-.c10 {
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  width: 12px;
-  height: 12px;
-  fill: #282823;
-  -webkit-flex-shrink: 0;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
-  display: block;
-}
-
 .c3 {
   box-sizing: border-box;
   display: -webkit-box;
@@ -1721,6 +1707,20 @@ exports[`Storyshots Molecules | Input / Number With auto focus 1`] = `
   text-overflow: ellipsis;
   white-space: nowrap;
   cursor: pointer;
+}
+
+.c10 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 12px;
+  height: 12px;
+  fill: #282823;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
 }
 
 .c2 {
@@ -1956,20 +1956,6 @@ exports[`Storyshots Molecules | Input / Number With auto focus 1`] = `
 `;
 
 exports[`Storyshots Molecules | Input / Number With both addons 1`] = `
-.c10 {
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  width: 16px;
-  height: 16px;
-  fill: #282823;
-  -webkit-flex-shrink: 0;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
-  display: block;
-}
-
 .c3 {
   box-sizing: border-box;
   display: -webkit-box;
@@ -2018,6 +2004,20 @@ exports[`Storyshots Molecules | Input / Number With both addons 1`] = `
   text-overflow: ellipsis;
   white-space: nowrap;
   cursor: pointer;
+}
+
+.c10 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 16px;
+  height: 16px;
+  fill: #282823;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
 }
 
 .c2 {
@@ -2191,20 +2191,6 @@ exports[`Storyshots Molecules | Input / Number With both addons 1`] = `
 `;
 
 exports[`Storyshots Molecules | Input / Number With default value (Uncontrolled behaviour) 1`] = `
-.c10 {
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  width: 12px;
-  height: 12px;
-  fill: #282823;
-  -webkit-flex-shrink: 0;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
-  display: block;
-}
-
 .c3 {
   box-sizing: border-box;
   display: -webkit-box;
@@ -2246,6 +2232,20 @@ exports[`Storyshots Molecules | Input / Number With default value (Uncontrolled 
   text-overflow: ellipsis;
   white-space: nowrap;
   cursor: pointer;
+}
+
+.c10 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 12px;
+  height: 12px;
+  fill: #282823;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
 }
 
 .c2 {
@@ -2480,20 +2480,6 @@ exports[`Storyshots Molecules | Input / Number With default value (Uncontrolled 
 `;
 
 exports[`Storyshots Molecules | Input / Number With error if value is less than 1 1`] = `
-.c10 {
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  width: 12px;
-  height: 12px;
-  fill: #282823;
-  -webkit-flex-shrink: 0;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
-  display: block;
-}
-
 .c3 {
   box-sizing: border-box;
   display: -webkit-box;
@@ -2535,6 +2521,20 @@ exports[`Storyshots Molecules | Input / Number With error if value is less than 
   text-overflow: ellipsis;
   white-space: nowrap;
   cursor: pointer;
+}
+
+.c10 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 12px;
+  height: 12px;
+  fill: #282823;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
 }
 
 .c2 {
@@ -2791,20 +2791,6 @@ exports[`Storyshots Molecules | Input / Number With error if value is less than 
 `;
 
 exports[`Storyshots Molecules | Input / Number With extra info and error 1`] = `
-.c10 {
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  width: 12px;
-  height: 12px;
-  fill: #282823;
-  -webkit-flex-shrink: 0;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
-  display: block;
-}
-
 .c3 {
   box-sizing: border-box;
   display: -webkit-box;
@@ -2846,6 +2832,20 @@ exports[`Storyshots Molecules | Input / Number With extra info and error 1`] = `
   text-overflow: ellipsis;
   white-space: nowrap;
   cursor: pointer;
+}
+
+.c10 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 12px;
+  height: 12px;
+  fill: #282823;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
 }
 
 .c2 {
@@ -3102,20 +3102,6 @@ exports[`Storyshots Molecules | Input / Number With extra info and error 1`] = `
 `;
 
 exports[`Storyshots Molecules | Input / Number With extra info below 1`] = `
-.c10 {
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  width: 12px;
-  height: 12px;
-  fill: #282823;
-  -webkit-flex-shrink: 0;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
-  display: block;
-}
-
 .c3 {
   box-sizing: border-box;
   display: -webkit-box;
@@ -3157,6 +3143,20 @@ exports[`Storyshots Molecules | Input / Number With extra info below 1`] = `
   text-overflow: ellipsis;
   white-space: nowrap;
   cursor: pointer;
+}
+
+.c10 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 12px;
+  height: 12px;
+  fill: #282823;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
 }
 
 .c2 {
@@ -3407,20 +3407,6 @@ exports[`Storyshots Molecules | Input / Number With extra info below 1`] = `
 `;
 
 exports[`Storyshots Molecules | Input / Number With hidden label 1`] = `
-.c9 {
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  width: 12px;
-  height: 12px;
-  fill: #282823;
-  -webkit-flex-shrink: 0;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
-  display: block;
-}
-
 .c4 {
   box-sizing: border-box;
   display: -webkit-box;
@@ -3456,6 +3442,20 @@ exports[`Storyshots Molecules | Input / Number With hidden label 1`] = `
   text-overflow: ellipsis;
   white-space: nowrap;
   cursor: pointer;
+}
+
+.c9 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 12px;
+  height: 12px;
+  fill: #282823;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
 }
 
 .c2 {
@@ -3686,38 +3686,6 @@ exports[`Storyshots Molecules | Input / Number With hidden label 1`] = `
 `;
 
 exports[`Storyshots Molecules | Input / Number With label tooltip 1`] = `
-.c4 {
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  width: 16px;
-  height: 16px;
-  fill: #282823;
-  -webkit-flex-shrink: 0;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
-  display: block;
-}
-
-.c13 {
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  width: 12px;
-  height: 12px;
-  fill: #282823;
-  -webkit-flex-shrink: 0;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
-  display: block;
-}
-
-.c6 {
-  stroke: #6E6E69;
-}
-
 .c3 {
   box-sizing: border-box;
   display: -webkit-box;
@@ -3759,6 +3727,38 @@ exports[`Storyshots Molecules | Input / Number With label tooltip 1`] = `
   text-overflow: ellipsis;
   white-space: nowrap;
   cursor: pointer;
+}
+
+.c4 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 16px;
+  height: 16px;
+  fill: #282823;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
+}
+
+.c13 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 12px;
+  height: 12px;
+  fill: #282823;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
+}
+
+.c6 {
+  stroke: #6E6E69;
 }
 
 .c2 {
@@ -4025,20 +4025,6 @@ exports[`Storyshots Molecules | Input / Number With label tooltip 1`] = `
 `;
 
 exports[`Storyshots Molecules | Input / Number With left addon 1`] = `
-.c10 {
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  width: 16px;
-  height: 16px;
-  fill: #282823;
-  -webkit-flex-shrink: 0;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
-  display: block;
-}
-
 .c3 {
   box-sizing: border-box;
   display: -webkit-box;
@@ -4087,6 +4073,20 @@ exports[`Storyshots Molecules | Input / Number With left addon 1`] = `
   text-overflow: ellipsis;
   white-space: nowrap;
   cursor: pointer;
+}
+
+.c10 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 16px;
+  height: 16px;
+  fill: #282823;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
 }
 
 .c2 {
@@ -4246,20 +4246,6 @@ exports[`Storyshots Molecules | Input / Number With left addon 1`] = `
 `;
 
 exports[`Storyshots Molecules | Input / Number With max and min 1`] = `
-.c10 {
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  width: 12px;
-  height: 12px;
-  fill: #282823;
-  -webkit-flex-shrink: 0;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
-  display: block;
-}
-
 .c3 {
   box-sizing: border-box;
   display: -webkit-box;
@@ -4301,6 +4287,20 @@ exports[`Storyshots Molecules | Input / Number With max and min 1`] = `
   text-overflow: ellipsis;
   white-space: nowrap;
   cursor: pointer;
+}
+
+.c10 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 12px;
+  height: 12px;
+  fill: #282823;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
 }
 
 .c2 {
@@ -4731,35 +4731,7 @@ Array [
       Placeholders
     </span>
   </div>,
-  .c16 {
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  width: 16px;
-  height: 16px;
-  fill: #282823;
-  -webkit-flex-shrink: 0;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
-  display: block;
-}
-
-.c20 {
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  width: 12px;
-  height: 12px;
-  fill: #282823;
-  -webkit-flex-shrink: 0;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
-  display: block;
-}
-
-.c6 {
+  .c6 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -4816,6 +4788,34 @@ Array [
   text-overflow: ellipsis;
   white-space: nowrap;
   cursor: pointer;
+}
+
+.c16 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 16px;
+  height: 16px;
+  fill: #282823;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
+}
+
+.c20 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 12px;
+  height: 12px;
+  fill: #282823;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
 }
 
 .c5 {
@@ -5744,21 +5744,7 @@ Array [
       Size = "s"
     </span>
   </div>,
-  .c13 {
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  width: 12px;
-  height: 12px;
-  fill: #282823;
-  -webkit-flex-shrink: 0;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
-  display: block;
-}
-
-.c6 {
+  .c6 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -5799,6 +5785,20 @@ Array [
   text-overflow: ellipsis;
   white-space: nowrap;
   cursor: pointer;
+}
+
+.c13 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 12px;
+  height: 12px;
+  fill: #282823;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
 }
 
 .c5 {
@@ -6423,20 +6423,6 @@ Array [
 `;
 
 exports[`Storyshots Molecules | Input / Number With success 1`] = `
-.c10 {
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  width: 12px;
-  height: 12px;
-  fill: #282823;
-  -webkit-flex-shrink: 0;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
-  display: block;
-}
-
 .c3 {
   box-sizing: border-box;
   display: -webkit-box;
@@ -6478,6 +6464,20 @@ exports[`Storyshots Molecules | Input / Number With success 1`] = `
   text-overflow: ellipsis;
   white-space: nowrap;
   cursor: pointer;
+}
+
+.c10 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 12px;
+  height: 12px;
+  fill: #282823;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
 }
 
 .c2 {
@@ -6713,21 +6713,7 @@ exports[`Storyshots Molecules | Input / Number With success 1`] = `
 
 exports[`Storyshots Molecules | Input / Number With value (Controlled behaviour) 1`] = `
 Array [
-  .c10 {
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  width: 12px;
-  height: 12px;
-  fill: #282823;
-  -webkit-flex-shrink: 0;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
-  display: block;
-}
-
-.c3 {
+  .c3 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -6768,6 +6754,20 @@ Array [
   text-overflow: ellipsis;
   white-space: nowrap;
   cursor: pointer;
+}
+
+.c10 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 12px;
+  height: 12px;
+  fill: #282823;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
 }
 
 .c2 {

@@ -6,7 +6,7 @@ type ColorFn = (t: Theme) => Values<Theme['color']>;
 export type Props = {
   className?: string;
   barColor?: ColorFn;
-  value?: string | number;
+  children: React.ReactNode;
   onRemoveClick?: React.MouseEventHandler;
   onValueClick?: React.MouseEventHandler;
 };

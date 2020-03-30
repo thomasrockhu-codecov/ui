@@ -1,15 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Storyshots Molecules | Button Button primary with colors 1`] = `
-.c4 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: inherit;
-  margin: 0;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
-}
-
 .c3 {
   font-family: inherit;
   font-size: 100%;
@@ -152,6 +143,15 @@ exports[`Storyshots Molecules | Button Button primary with colors 1`] = `
   background-color: hsl(5.899999999999977,100%,40%);
 }
 
+.c4 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: inherit;
+  margin: 0;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
 .c0 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -267,15 +267,6 @@ exports[`Storyshots Molecules | Button Button primary with colors 1`] = `
 `;
 
 exports[`Storyshots Molecules | Button Button secondary with colors 1`] = `
-.c4 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: inherit;
-  margin: 0;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
-}
-
 .c3 {
   font-family: inherit;
   font-size: 100%;
@@ -434,6 +425,15 @@ exports[`Storyshots Molecules | Button Button secondary with colors 1`] = `
   border-color: hsl(5.899999999999977,100%,35%);
 }
 
+.c4 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: inherit;
+  margin: 0;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
 .c0 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -549,15 +549,6 @@ exports[`Storyshots Molecules | Button Button secondary with colors 1`] = `
 `;
 
 exports[`Storyshots Molecules | Button Button that is full width 1`] = `
-.c1 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: inherit;
-  margin: 0;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
-}
-
 .c0 {
   font-family: inherit;
   font-size: 100%;
@@ -630,6 +621,15 @@ exports[`Storyshots Molecules | Button Button that is full width 1`] = `
   background-color: hsl(223.5,100%,40%);
 }
 
+.c1 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: inherit;
+  margin: 0;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
 <button
   className="NormalizedButton__Button-ey7f5x-0 c0"
   onClick={[Function]}
@@ -667,15 +667,6 @@ exports[`Storyshots Molecules | Button Button which sets focus on another button
 
 .c1 {
   box-sizing: border-box;
-}
-
-.c3 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: inherit;
-  margin: 0;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
 }
 
 .c2 {
@@ -820,6 +811,15 @@ exports[`Storyshots Molecules | Button Button which sets focus on another button
   background-color: hsl(5.899999999999977,100%,40%);
 }
 
+.c3 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: inherit;
+  margin: 0;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
 <div
   className="c0"
 >
@@ -861,15 +861,6 @@ exports[`Storyshots Molecules | Button Button which sets focus on another button
 `;
 
 exports[`Storyshots Molecules | Button Button with different variants 1`] = `
-.c4 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: inherit;
-  margin: 0;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
-}
-
 .c3 {
   font-family: inherit;
   font-size: 100%;
@@ -1071,6 +1062,15 @@ exports[`Storyshots Molecules | Button Button with different variants 1`] = `
   outline: 1px dotted ButtonText;
 }
 
+.c4 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: inherit;
+  margin: 0;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
 .c0 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -1239,35 +1239,7 @@ Array [
       Primary
     </span>
   </div>,
-  .c5 {
-  display: inline-block;
-  -webkit-animation: spinner 1s linear infinite;
-  animation: spinner 1s linear infinite;
-}
-
-.c6 {
-  display: block;
-}
-
-.c4 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: inherit;
-  margin: 0;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
-}
-
-.c8 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: inherit;
-  margin: 0;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.5;
-}
-
-.c3 {
+  .c3 {
   font-family: inherit;
   font-size: 100%;
   line-height: 1.15;
@@ -1407,6 +1379,34 @@ Array [
 
 .c7:active {
   background-color: hsl(223.5,100%,40%);
+}
+
+.c5 {
+  display: inline-block;
+  -webkit-animation: spinner 1s linear infinite;
+  animation: spinner 1s linear infinite;
+}
+
+.c6 {
+  display: block;
+}
+
+.c4 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: inherit;
+  margin: 0;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c8 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: inherit;
+  margin: 0;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.5;
 }
 
 .c0 {
@@ -1693,35 +1693,7 @@ Array [
       Primary with custom color
     </span>
   </div>,
-  .c5 {
-  display: inline-block;
-  -webkit-animation: spinner 1s linear infinite;
-  animation: spinner 1s linear infinite;
-}
-
-.c6 {
-  display: block;
-}
-
-.c4 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: inherit;
-  margin: 0;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
-}
-
-.c8 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: inherit;
-  margin: 0;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.5;
-}
-
-.c3 {
+  .c3 {
   font-family: inherit;
   font-size: 100%;
   line-height: 1.15;
@@ -1861,6 +1833,34 @@ Array [
 
 .c7:active {
   background-color: hsl(5.899999999999977,100%,40%);
+}
+
+.c5 {
+  display: inline-block;
+  -webkit-animation: spinner 1s linear infinite;
+  animation: spinner 1s linear infinite;
+}
+
+.c6 {
+  display: block;
+}
+
+.c4 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: inherit;
+  margin: 0;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c8 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: inherit;
+  margin: 0;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.5;
 }
 
 .c0 {
@@ -2147,35 +2147,7 @@ Array [
       Secondary
     </span>
   </div>,
-  .c5 {
-  display: inline-block;
-  -webkit-animation: spinner 1s linear infinite;
-  animation: spinner 1s linear infinite;
-}
-
-.c6 {
-  display: block;
-}
-
-.c4 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: inherit;
-  margin: 0;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
-}
-
-.c8 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: inherit;
-  margin: 0;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.5;
-}
-
-.c3 {
+  .c3 {
   font-family: inherit;
   font-size: 100%;
   line-height: 1.15;
@@ -2331,6 +2303,34 @@ Array [
 
 .c7:active::before {
   border-color: hsl(223.5,100%,35%);
+}
+
+.c5 {
+  display: inline-block;
+  -webkit-animation: spinner 1s linear infinite;
+  animation: spinner 1s linear infinite;
+}
+
+.c6 {
+  display: block;
+}
+
+.c4 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: inherit;
+  margin: 0;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c8 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: inherit;
+  margin: 0;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.5;
 }
 
 .c0 {
@@ -2617,35 +2617,7 @@ Array [
       Secondary with custom color
     </span>
   </div>,
-  .c5 {
-  display: inline-block;
-  -webkit-animation: spinner 1s linear infinite;
-  animation: spinner 1s linear infinite;
-}
-
-.c6 {
-  display: block;
-}
-
-.c4 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: inherit;
-  margin: 0;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
-}
-
-.c8 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: inherit;
-  margin: 0;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.5;
-}
-
-.c3 {
+  .c3 {
   font-family: inherit;
   font-size: 100%;
   line-height: 1.15;
@@ -2801,6 +2773,34 @@ Array [
 
 .c7:active::before {
   border-color: hsl(5.899999999999977,100%,35%);
+}
+
+.c5 {
+  display: inline-block;
+  -webkit-animation: spinner 1s linear infinite;
+  animation: spinner 1s linear infinite;
+}
+
+.c6 {
+  display: block;
+}
+
+.c4 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: inherit;
+  margin: 0;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c8 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: inherit;
+  margin: 0;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.5;
 }
 
 .c0 {
@@ -3102,25 +3102,7 @@ Array [
       Primary
     </span>
   </div>,
-  .c4 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: inherit;
-  margin: 0;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
-}
-
-.c6 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: inherit;
-  margin: 0;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.5;
-}
-
-.c3 {
+  .c3 {
   font-family: inherit;
   font-size: 100%;
   line-height: 1.15;
@@ -3260,6 +3242,24 @@ Array [
 
 .c5:active {
   background-color: hsl(223.5,100%,40%);
+}
+
+.c4 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: inherit;
+  margin: 0;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c6 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: inherit;
+  margin: 0;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.5;
 }
 
 .c0 {
@@ -3418,25 +3418,7 @@ Array [
       Secondary
     </span>
   </div>,
-  .c4 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: inherit;
-  margin: 0;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
-}
-
-.c6 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: inherit;
-  margin: 0;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.5;
-}
-
-.c3 {
+  .c3 {
   font-family: inherit;
   font-size: 100%;
   line-height: 1.15;
@@ -3594,6 +3576,24 @@ Array [
   border-color: hsl(223.5,100%,35%);
 }
 
+.c4 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: inherit;
+  margin: 0;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c6 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: inherit;
+  margin: 0;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
 .c0 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -3725,15 +3725,6 @@ Array [
 `;
 
 exports[`Storyshots Molecules | Button Button with type modified 1`] = `
-.c4 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: inherit;
-  margin: 0;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
-}
-
 .c3 {
   font-family: inherit;
   font-size: 100%;
@@ -3803,6 +3794,15 @@ exports[`Storyshots Molecules | Button Button with type modified 1`] = `
 
 .c3:active {
   background-color: hsl(223.5,100%,40%);
+}
+
+.c4 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: inherit;
+  margin: 0;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
 }
 
 .c0 {
@@ -3944,15 +3944,6 @@ exports[`Storyshots Molecules | Button Buttons composed in a group 1`] = `
   -webkit-flex: 1 1 50%;
   -ms-flex: 1 1 50%;
   flex: 1 1 50%;
-}
-
-.c3 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: inherit;
-  margin: 0;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
 }
 
 .c2 {
@@ -4107,6 +4098,15 @@ exports[`Storyshots Molecules | Button Buttons composed in a group 1`] = `
   border-color: hsl(223.5,100%,35%);
 }
 
+.c3 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: inherit;
+  margin: 0;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
 <div
   className="c0"
 >
@@ -4148,15 +4148,6 @@ exports[`Storyshots Molecules | Button Buttons composed in a group 1`] = `
 `;
 
 exports[`Storyshots Molecules | Button Default usage 1`] = `
-.c1 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: inherit;
-  margin: 0;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
-}
-
 .c0 {
   font-family: inherit;
   font-size: 100%;
@@ -4228,6 +4219,15 @@ exports[`Storyshots Molecules | Button Default usage 1`] = `
   background-color: hsl(223.5,100%,40%);
 }
 
+.c1 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: inherit;
+  margin: 0;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
 <button
   className="NormalizedButton__Button-ey7f5x-0 c0"
   onClick={[Function]}
@@ -4244,15 +4244,6 @@ exports[`Storyshots Molecules | Button Default usage 1`] = `
 `;
 
 exports[`Storyshots Molecules | Button Disabled Button with different variants 1`] = `
-.c4 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: inherit;
-  margin: 0;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
-}
-
 .c3 {
   font-family: inherit;
   font-size: 100%;
@@ -4430,6 +4421,15 @@ exports[`Storyshots Molecules | Button Disabled Button with different variants 1
   outline: 1px dotted ButtonText;
 }
 
+.c4 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: inherit;
+  margin: 0;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
 .c0 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -4571,15 +4571,6 @@ exports[`Storyshots Molecules | Button Disabled Button with different variants 1
 `;
 
 exports[`Storyshots Molecules | Button Disabled link looking like a button 1`] = `
-.c1 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: inherit;
-  margin: 0;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
-}
-
 .c0 {
   font-family: inherit;
   font-size: 100%;
@@ -4644,6 +4635,15 @@ exports[`Storyshots Molecules | Button Disabled link looking like a button 1`] =
   height: calc(100% - 4px);
 }
 
+.c1 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: inherit;
+  margin: 0;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
 <button
   className="NormalizedButton__Button-ey7f5x-0 c0"
   disabled={true}
@@ -4661,15 +4661,6 @@ exports[`Storyshots Molecules | Button Disabled link looking like a button 1`] =
 `;
 
 exports[`Storyshots Molecules | Button External link looking like a button 1`] = `
-.c1 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: inherit;
-  margin: 0;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
-}
-
 .c0 {
   position: relative;
   box-sizing: border-box;
@@ -4713,6 +4704,15 @@ exports[`Storyshots Molecules | Button External link looking like a button 1`] =
   background-color: hsl(223.5,100%,40%);
 }
 
+.c1 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: inherit;
+  margin: 0;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
 <a
   className="c0"
   href="//www.google.com"
@@ -4732,15 +4732,6 @@ exports[`Storyshots Molecules | Button External link looking like a button 1`] =
 `;
 
 exports[`Storyshots Molecules | Button Link looking like a button 1`] = `
-.c4 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: inherit;
-  margin: 0;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
-}
-
 .c3 {
   position: relative;
   box-sizing: border-box;
@@ -4831,6 +4822,15 @@ exports[`Storyshots Molecules | Button Link looking like a button 1`] = `
 
 .c5:active::before {
   border-color: hsl(223.5,100%,35%);
+}
+
+.c4 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: inherit;
+  margin: 0;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
 }
 
 .c0 {
@@ -4948,15 +4948,6 @@ exports[`Storyshots Molecules | Button Link looking like a button 1`] = `
 `;
 
 exports[`Storyshots Molecules | Button Link looking like a button that is full width 1`] = `
-.c1 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: inherit;
-  margin: 0;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
-}
-
 .c0 {
   position: relative;
   box-sizing: border-box;
@@ -4998,6 +4989,15 @@ exports[`Storyshots Molecules | Button Link looking like a button that is full w
 
 .c0:active {
   background-color: hsl(223.5,100%,40%);
+}
+
+.c1 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: inherit;
+  margin: 0;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
 }
 
 <a
@@ -5016,15 +5016,6 @@ exports[`Storyshots Molecules | Button Link looking like a button that is full w
 `;
 
 exports[`Storyshots Molecules | Button Link looking like a button with rel as nofollow 1`] = `
-.c1 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: inherit;
-  margin: 0;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
-}
-
 .c0 {
   position: relative;
   box-sizing: border-box;
@@ -5066,6 +5057,15 @@ exports[`Storyshots Molecules | Button Link looking like a button with rel as no
 
 .c0:active {
   background-color: hsl(223.5,100%,40%);
+}
+
+.c1 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: inherit;
+  margin: 0;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
 }
 
 <a
@@ -5115,16 +5115,7 @@ Array [
       Primary
     </span>
   </div>,
-  .c4 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: inherit;
-  margin: 0;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
-}
-
-.c3 {
+  .c3 {
   position: relative;
   box-sizing: border-box;
   -webkit-align-items: center;
@@ -5206,6 +5197,15 @@ Array [
 
 .c5:active {
   background-color: hsl(5.899999999999977,100%,40%);
+}
+
+.c4 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: inherit;
+  margin: 0;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
 }
 
 .c0 {
@@ -5364,16 +5364,7 @@ Array [
       Secondary
     </span>
   </div>,
-  .c4 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: inherit;
-  margin: 0;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
-}
-
-.c3 {
+  .c3 {
   position: relative;
   box-sizing: border-box;
   -webkit-align-items: center;
@@ -5471,6 +5462,15 @@ Array [
 
 .c5:active::before {
   border-color: hsl(5.899999999999977,100%,35%);
+}
+
+.c4 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: inherit;
+  margin: 0;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
 }
 
 .c0 {
@@ -5630,15 +5630,6 @@ exports[`Storyshots Molecules | Button Links looking like buttons composed in a 
   flex: 1;
 }
 
-.c3 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: inherit;
-  margin: 0;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
-}
-
 .c2 {
   position: relative;
   box-sizing: border-box;
@@ -5731,6 +5722,15 @@ exports[`Storyshots Molecules | Button Links looking like buttons composed in a 
 
 .c4:active::before {
   border-color: hsl(223.5,100%,35%);
+}
+
+.c3 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: inherit;
+  margin: 0;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
 }
 
 <div
