@@ -48,18 +48,6 @@ export type RawColor = {
   a11yPositive: '#008A00';
   a11yNegative: '#E81700';
   a11yIndex: '#C15700';
-
-  // PILL COLORS
-  pill1: '#F5F5F5';
-  pill2: '#EBEBE8';
-  pill3: '#D7D7D2';
-  pill4: '#BCBCB6';
-  pill5: '#A0A09B';
-  pill6: '#6E6E69';
-  pill7: '#4B4B46';
-  pill8: '#282823';
-  pill9: '#000000';
-  pill10: '#D2F500';
 };
 
 type NumberOrObjectWithNumber = number | { size: number };
@@ -221,16 +209,16 @@ export type Theme = {
     /** gray4 */
     pieChartColor3: RawColor['gray4'];
     /** pill colors */
-    pill1: RawColor['pill1'];
-    pill2: RawColor['pill2'];
-    pill3: RawColor['pill3'];
-    pill4: RawColor['pill4'];
-    pill5: RawColor['pill5'];
-    pill6: RawColor['pill6'];
-    pill7: RawColor['pill7'];
-    pill8: RawColor['pill8'];
-    pill9: RawColor['pill9'];
-    pill10: RawColor['pill10'];
+    pill1: RawColor['brandGreen'];
+    pill2: RawColor['complementaryTurquoise2'];
+    pill3: RawColor['complementaryPink2'];
+    pill4: RawColor['complementaryBlue2'];
+    pill5: RawColor['complementaryGreen2'];
+    pill6: RawColor['brandBlue'];
+    pill7: RawColor['brandTurquoise'];
+    pill8: RawColor['brandPink'];
+    pill9: RawColor['complementaryGreen1'];
+    pill10: RawColor['complementaryPink1'];
   };
 
   spacing: {

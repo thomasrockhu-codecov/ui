@@ -45,18 +45,6 @@ export const rawColor = {
   a11yPositive: '#008A00',
   a11yNegative: '#E81700',
   a11yIndex: '#C15700',
-
-  // PILL COLORS
-  pill1: '#F5F5F5',
-  pill2: '#EBEBE8',
-  pill3: '#D7D7D2',
-  pill4: '#BCBCB6',
-  pill5: '#A0A09B',
-  pill6: '#6E6E69',
-  pill7: '#4B4B46',
-  pill8: '#282823',
-  pill9: '#000000',
-  pill10: '#D2F500',
 } as RawColor;
 
 const breakpoints: Theme['breakpoints'] = {
@@ -231,16 +219,16 @@ export const createTheme = (config: ThemeConfig = {}): Theme => {
       pieChartColor1: rawColor.complementaryPink2,
       pieChartColor2: rawColor.brandPink,
       pieChartColor3: rawColor.gray4,
-      pill1: rawColor.pill1,
-      pill2: rawColor.pill2,
-      pill3: rawColor.pill3,
-      pill4: rawColor.pill4,
-      pill5: rawColor.pill5,
-      pill6: rawColor.pill6,
-      pill7: rawColor.pill7,
-      pill8: rawColor.pill8,
-      pill9: rawColor.pill9,
-      pill10: rawColor.pill10,
+      pill1: rawColor.brandGreen,
+      pill2: rawColor.complementaryTurquoise2,
+      pill3: rawColor.complementaryPink2,
+      pill4: rawColor.complementaryBlue2,
+      pill5: rawColor.complementaryGreen2,
+      pill6: rawColor.brandBlue,
+      pill7: rawColor.brandTurquoise,
+      pill8: rawColor.brandPink,
+      pill9: rawColor.complementaryGreen1,
+      pill10: rawColor.complementaryPink1,
     },
     media: {
       between: (s1, s2) => {
