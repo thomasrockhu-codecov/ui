@@ -13,7 +13,14 @@ export default {
   },
 };
 
-export const basicPill = () => <Pill>123</Pill>;
+export const basicPill = () => (
+  <Pill>
+    <Typography type="tertiary" weight="bold">
+      OMXS30
+    </Typography>{' '}
+    <Typography type="tertiary">1567</Typography>
+  </Pill>
+);
 
 basicPill.story = {
   name: 'Basic Pill',
@@ -42,12 +49,15 @@ export const pillWithBar = () => (
 pillWithBar.story = {
   name: 'Pill with colored bar',
 };
-export const pillWithBarAndNoPadding = () => (
+export const pillWithNoPadding = () => (
   <Pill barColor={t => t.color.pill8} noPadding>
-    123
+    <Typography type="tertiary" weight="bold">
+      OMXS30
+    </Typography>{' '}
+    <Typography type="tertiary">1567</Typography>
   </Pill>
 );
 
-pillWithBarAndNoPadding.story = {
-  name: 'Pill with colored bar and no padding',
+pillWithNoPadding.story = {
+  name: 'Pill with no padding',
 };

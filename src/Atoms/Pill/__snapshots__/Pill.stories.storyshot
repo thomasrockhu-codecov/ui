@@ -9,10 +9,38 @@ exports[`Storyshots Atoms | Pill Basic Pill 1`] = `
   box-shadow: 0 1px 4px 0 rgba(0,0,0,0.21);
 }
 
+.c1 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 1.3333333333333333;
+}
+
+.c2 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.3333333333333333;
+}
+
 <div
   className="c0"
 >
-  123
+  <span
+    className="c1"
+  >
+    OMXS30
+  </span>
+   
+  <span
+    className="c2"
+  >
+    1567
+  </span>
 </div>
 `;
 
@@ -213,7 +241,7 @@ exports[`Storyshots Atoms | Pill Pill with colored bar 1`] = `
 </div>
 `;
 
-exports[`Storyshots Atoms | Pill Pill with colored bar and no padding 1`] = `
+exports[`Storyshots Atoms | Pill Pill with no padding 1`] = `
 .c0 {
   display: inline-block;
   box-sizing: border-box;
@@ -222,10 +250,38 @@ exports[`Storyshots Atoms | Pill Pill with colored bar and no padding 1`] = `
   border-left: 2px solid #FF2B83;
 }
 
+.c1 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 1.3333333333333333;
+}
+
+.c2 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.3333333333333333;
+}
+
 <div
   barColor={[Function]}
   className="c0"
 >
-  123
+  <span
+    className="c1"
+  >
+    OMXS30
+  </span>
+   
+  <span
+    className="c2"
+  >
+    1567
+  </span>
 </div>
 `;
