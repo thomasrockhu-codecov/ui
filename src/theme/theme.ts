@@ -148,6 +148,11 @@ export const createTheme = (config: ThemeConfig = {}): Theme => {
       menuAccent3: rawColor.index,
       menuAccent4: rawColor.brandPink,
       menuAccent5: rawColor.brandBlue,
+      mapColor1: rawColor.complementaryBlue2,
+      mapColor2: rawColor.complementaryBlue1,
+      mapColor3: rawColor.brandBlue,
+      mapColor4: rawColor.gray1,
+      mapColor5: rawColor.gray3,
       modalBackdrop: Color(rawColor.gray2)
         .alpha(0.63)
         .rgb()

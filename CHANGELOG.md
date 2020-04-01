@@ -1,3 +1,23 @@
+## [2.28.1](https://github.com/nordnet/ui/compare/v2.28.0...v2.28.1) (2020-03-31)
+
+
+### Bug Fixes
+
+* add color for regions in map ([fe27577](https://github.com/nordnet/ui/commit/fe27577))
+* add color names for rating stars ([8de5760](https://github.com/nordnet/ui/commit/8de5760))
+
+# [2.28.0](https://github.com/nordnet/ui/compare/v2.27.0...v2.28.0) (2020-03-31)
+
+
+### Bug Fixes
+
+* update star rating size ([76545d8](https://github.com/nordnet/ui/commit/76545d8))
+
+
+### Features
+
+* add size prop ([c98d12d](https://github.com/nordnet/ui/commit/c98d12d))
+
 # [2.27.0](https://github.com/nordnet/ui/compare/v2.26.0...v2.27.0) (2020-03-27)
 
 
