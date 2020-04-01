@@ -14,6 +14,7 @@ import Legend from './Atoms/Legend';
 import List from './Atoms/List';
 import ListItem from './Atoms/ListItem';
 import Media, { useMedia } from './Atoms/Media';
+import Pill from './Atoms/Pill';
 import Portal from './Atoms/Portal';
 import Separator from './Atoms/Separator';
 import Skeleton from './Atoms/Skeleton';
@@ -99,6 +100,7 @@ export {
   PageHeaderCard,
   PageWrapper,
   Portal,
+  Pill,
   Rating,
   /** @deprecated */ Select,
   Separator,

@@ -224,6 +224,16 @@ export const createTheme = (config: ThemeConfig = {}): Theme => {
       pieChartColor1: rawColor.complementaryPink2,
       pieChartColor2: rawColor.brandPink,
       pieChartColor3: rawColor.gray4,
+      pill1: rawColor.brandGreen,
+      pill2: rawColor.complementaryTurquoise2,
+      pill3: rawColor.complementaryPink2,
+      pill4: rawColor.complementaryBlue2,
+      pill5: rawColor.complementaryGreen2,
+      pill6: rawColor.brandBlue,
+      pill7: rawColor.brandTurquoise,
+      pill8: rawColor.brandPink,
+      pill9: rawColor.complementaryGreen1,
+      pill10: rawColor.complementaryPink1,
     },
     media: {
       between: (s1, s2) => {
