@@ -13,16 +13,7 @@ export default {
   },
 };
 
-export const basicPill = () => (
-  <Pill>
-    <Button type="button" variant="neutral">
-      <Typography type="secondary">1234</Typography>
-    </Button>
-    <Button type="button" variant="neutral">
-      <Icon.CrossThin size={2} />
-    </Button>
-  </Pill>
-);
+export const basicPill = () => <Pill>123</Pill>;
 
 basicPill.story = {
   name: 'Basic Pill',
@@ -50,4 +41,13 @@ export const pillWithBar = () => (
 
 pillWithBar.story = {
   name: 'Pill with colored bar',
+};
+export const pillWithBarAndNoPadding = () => (
+  <Pill barColor={t => t.color.pill8} noPadding>
+    123
+  </Pill>
+);
+
+pillWithBarAndNoPadding.story = {
+  name: 'Pill with colored bar and no padding',
 };
