@@ -1,3 +1,25 @@
+# [2.29.0](https://github.com/nordnet/ui/compare/v2.28.1...v2.29.0) (2020-04-01)
+
+
+### Bug Fixes
+
+* 🐛 add doc and accept noPadding prop ([abf42b4](https://github.com/nordnet/ui/commit/abf42b4))
+* 🐛 add jsdoc comments for the colors ([474af9d](https://github.com/nordnet/ui/commit/474af9d))
+* 🐛 add pill theme colors ([8255ed0](https://github.com/nordnet/ui/commit/8255ed0))
+* 🐛 add story with no padding ([c0be785](https://github.com/nordnet/ui/commit/c0be785))
+* 🐛 export pill ([5fab2d7](https://github.com/nordnet/ui/commit/5fab2d7))
+* 🐛 resolve more pr comments regarding pill props ([ffa5c19](https://github.com/nordnet/ui/commit/ffa5c19))
+* 🐛 resolve some PR comments ([318bee8](https://github.com/nordnet/ui/commit/318bee8))
+* 🐛 use already existing colors for pills ([657bcd1](https://github.com/nordnet/ui/commit/657bcd1))
+* add pill colors to theme ([48c8ce6](https://github.com/nordnet/ui/commit/48c8ce6))
+* adjust to have more meaningful stories ([5dd16e1](https://github.com/nordnet/ui/commit/5dd16e1))
+* update snapshots ([d334111](https://github.com/nordnet/ui/commit/d334111))
+
+
+### Features
+
+* 🎸 add a new component: Pill ([29eec43](https://github.com/nordnet/ui/commit/29eec43))
+
 ## [2.28.1](https://github.com/nordnet/ui/compare/v2.28.0...v2.28.1) (2020-03-31)
 
 
