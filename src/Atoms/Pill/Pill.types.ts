@@ -6,5 +6,6 @@ type ColorFn = (t: Theme) => Values<Theme['color']>;
 export type Props = {
   className?: string;
   barColor?: ColorFn;
+  noPadding?: boolean;
   children: React.ReactNode;
 };

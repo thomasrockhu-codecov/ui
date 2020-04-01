@@ -1,31 +1,26 @@
 import React from 'react';
-import styled from 'styled-components';
 
 import { Pill } from './Pill';
-import Icon from '../Icon';
-import Typography from '../Typography';
-import Button from '../../Molecules/Button';
-
-const StyledButton = styled(Button)`
-  padding: 0 ${p => p.theme.spacing.unit(1)}px;
-`;
+import docs from './Pill.mdx';
+import { Flexbox, Icon, Typography, Button } from '../..';
 
 export default {
   title: 'Atoms | Pill',
 
   parameters: {
+    ...docs.parameters,
     component: Pill,
   },
 };
 
 export const basicPill = () => (
   <Pill>
-    <StyledButton type="button" variant="neutral">
+    <Button type="button" variant="neutral">
       <Typography type="secondary">1234</Typography>
-    </StyledButton>
-    <StyledButton type="button" variant="neutral">
+    </Button>
+    <Button type="button" variant="neutral">
       <Icon.CrossThin size={2} />
-    </StyledButton>
+    </Button>
   </Pill>
 );
 
@@ -35,12 +30,21 @@ basicPill.story = {
 
 export const pillWithBar = () => (
   <Pill barColor={t => t.color.pill8}>
-    <StyledButton type="button" variant="neutral">
-      <Typography type="secondary">1234</Typography>
-    </StyledButton>
-    <StyledButton type="button" variant="neutral">
-      <Icon.CrossThin size={2} />
-    </StyledButton>
+    <Flexbox container gutter={1} alignItems="center">
+      <Flexbox item>
+        <Button type="button" variant="neutral">
+          <Typography type="tertiary" weight="bold">
+            Bollinger
+          </Typography>{' '}
+          <Typography type="tertiary">1234</Typography>
+        </Button>
+      </Flexbox>
+      <Flexbox item>
+        <Button type="button" variant="neutral">
+          <Icon.CrossThin size={2} />
+        </Button>
+      </Flexbox>
+    </Flexbox>
   </Pill>
 );
 

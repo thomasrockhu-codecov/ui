@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Storyshots Atoms | Pill Basic Pill 1`] = `
-.c6 {
+.c4 {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -15,20 +15,19 @@ exports[`Storyshots Atoms | Pill Basic Pill 1`] = `
   display: block;
 }
 
-.c7 {
+.c5 {
   stroke: #6E6E69;
 }
 
-.c1 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #282823;
-  margin: 0;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.5;
+.c0 {
+  display: inline-block;
+  padding: 0 4px;
+  box-sizing: border-box;
+  background: #FFFFFF;
+  box-shadow: 0 1px 4px 0 rgba(0,0,0,0.21);
 }
 
-.c4 {
+.c2 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: inherit;
   margin: 0;
@@ -37,7 +36,7 @@ exports[`Storyshots Atoms | Pill Basic Pill 1`] = `
   line-height: 1.4285714285714286;
 }
 
-.c5 {
+.c3 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
   margin: 0;
@@ -46,21 +45,7 @@ exports[`Storyshots Atoms | Pill Basic Pill 1`] = `
   line-height: 1.4285714285714286;
 }
 
-.c0 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  box-sizing: border-box;
-  background: #FFFFFF;
-  box-shadow: 0 1px 4px 0 rgba(0,0,0,0.21);
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.c2 {
+.c1 {
   font-family: inherit;
   font-size: 100%;
   line-height: 1.15;
@@ -89,83 +74,102 @@ exports[`Storyshots Atoms | Pill Basic Pill 1`] = `
   cursor: pointer;
 }
 
-.c2,
-.c2[type='button'],
-.c2[type='reset'],
-.c2[type='submit'] {
+.c1,
+.c1[type='button'],
+.c1[type='reset'],
+.c1[type='submit'] {
   -webkit-appearance: button;
 }
 
-.c2::-moz-focus-inner,
-.c2[type='button']::-moz-focus-inner,
-.c2[type='reset']::-moz-focus-inner,
-.c2[type='submit']::-moz-focus-inner {
+.c1::-moz-focus-inner,
+.c1[type='button']::-moz-focus-inner,
+.c1[type='reset']::-moz-focus-inner,
+.c1[type='submit']::-moz-focus-inner {
   border-style: none;
   padding: 0;
 }
 
-.c2:-moz-focusring,
-.c2[type='button']:-moz-focusring,
-.c2[type='reset']:-moz-focusring,
-.c2[type='submit']:-moz-focusring {
+.c1:-moz-focusring,
+.c1[type='button']:-moz-focusring,
+.c1[type='reset']:-moz-focusring,
+.c1[type='submit']:-moz-focusring {
   outline: 1px dotted ButtonText;
-}
-
-.c3 {
-  padding: 0 4px;
 }
 
 <div
   className="c0"
 >
-  <span
-    className="c1"
+  <button
+    className="NormalizedButton__Button-ey7f5x-0 c1"
+    onClick={[Function]}
+    type="button"
   >
-    <button
-      className="NormalizedButton__Button-ey7f5x-0 c2 c3"
-      onClick={[Function]}
-      type="button"
+    <span
+      className="c2"
     >
       <span
-        className="c4"
+        className="c3"
       >
-        <span
+        1234
+      </span>
+    </span>
+  </button>
+  <button
+    className="NormalizedButton__Button-ey7f5x-0 c1"
+    onClick={[Function]}
+    type="button"
+  >
+    <span
+      className="c2"
+    >
+      <svg
+        aria-hidden="true"
+        className="c4"
+        focusable="false"
+        preserveAspectRatio="xMidYMid meet"
+        role="presentation"
+        viewBox="0 0 24 24"
+      >
+        <path
           className="c5"
-        >
-          1234
-        </span>
-      </span>
-    </button>
-    <button
-      className="NormalizedButton__Button-ey7f5x-0 c2 c3"
-      onClick={[Function]}
-      type="button"
-    >
-      <span
-        className="c4"
-      >
-        <svg
-          aria-hidden="true"
-          className="c6"
-          focusable="false"
-          preserveAspectRatio="xMidYMid meet"
-          role="presentation"
-          viewBox="0 0 24 24"
-        >
-          <path
-            className="c7"
-            d="m 1 1 l 22 22 m -22 0 l 22 -22"
-            strokeWidth={2}
-          />
-        </svg>
-      </span>
-    </button>
-  </span>
+          d="m 1 1 l 22 22 m -22 0 l 22 -22"
+          strokeWidth={2}
+        />
+      </svg>
+    </span>
+  </button>
 </div>
 `;
 
 exports[`Storyshots Atoms | Pill Pill with colored bar 1`] = `
-.c6 {
+.c1 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-left: -2px;
+  margin-right: -2px;
+}
+
+.c1 > * {
+  padding-left: 2px;
+  padding-right: 2px;
+}
+
+.c1 > *:not(:first-child) {
+  padding-top: 0;
+}
+
+.c2 {
+  box-sizing: border-box;
+}
+
+.c7 {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -179,17 +183,17 @@ exports[`Storyshots Atoms | Pill Pill with colored bar 1`] = `
   display: block;
 }
 
-.c7 {
+.c8 {
   stroke: #6E6E69;
 }
 
-.c1 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #282823;
-  margin: 0;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.5;
+.c0 {
+  display: inline-block;
+  padding: 0 4px;
+  box-sizing: border-box;
+  background: #FFFFFF;
+  box-shadow: 0 1px 4px 0 rgba(0,0,0,0.21);
+  border-left: 2px solid #FF2B83;
 }
 
 .c4 {
@@ -205,27 +209,21 @@ exports[`Storyshots Atoms | Pill Pill with colored bar 1`] = `
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
   margin: 0;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 1.3333333333333333;
+}
+
+.c6 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
   font-weight: 400;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
+  font-size: 12px;
+  line-height: 1.3333333333333333;
 }
 
-.c0 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  box-sizing: border-box;
-  background: #FFFFFF;
-  box-shadow: 0 1px 4px 0 rgba(0,0,0,0.21);
-  border-left: 4px solid #FF2B83;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.c2 {
+.c3 {
   font-family: inherit;
   font-size: 100%;
   line-height: 1.15;
@@ -254,77 +252,88 @@ exports[`Storyshots Atoms | Pill Pill with colored bar 1`] = `
   cursor: pointer;
 }
 
-.c2,
-.c2[type='button'],
-.c2[type='reset'],
-.c2[type='submit'] {
+.c3,
+.c3[type='button'],
+.c3[type='reset'],
+.c3[type='submit'] {
   -webkit-appearance: button;
 }
 
-.c2::-moz-focus-inner,
-.c2[type='button']::-moz-focus-inner,
-.c2[type='reset']::-moz-focus-inner,
-.c2[type='submit']::-moz-focus-inner {
+.c3::-moz-focus-inner,
+.c3[type='button']::-moz-focus-inner,
+.c3[type='reset']::-moz-focus-inner,
+.c3[type='submit']::-moz-focus-inner {
   border-style: none;
   padding: 0;
 }
 
-.c2:-moz-focusring,
-.c2[type='button']:-moz-focusring,
-.c2[type='reset']:-moz-focusring,
-.c2[type='submit']:-moz-focusring {
+.c3:-moz-focusring,
+.c3[type='button']:-moz-focusring,
+.c3[type='reset']:-moz-focusring,
+.c3[type='submit']:-moz-focusring {
   outline: 1px dotted ButtonText;
 }
 
-.c3 {
-  padding: 0 4px;
-}
-
 <div
+  barColor={[Function]}
   className="c0"
 >
-  <span
+  <div
     className="c1"
   >
-    <button
-      className="NormalizedButton__Button-ey7f5x-0 c2 c3"
-      onClick={[Function]}
-      type="button"
+    <div
+      className="c2"
     >
-      <span
-        className="c4"
+      <button
+        className="NormalizedButton__Button-ey7f5x-0 c3"
+        onClick={[Function]}
+        type="button"
       >
         <span
-          className="c5"
+          className="c4"
         >
-          1234
+          <span
+            className="c5"
+          >
+            Bollinger
+          </span>
+           
+          <span
+            className="c6"
+          >
+            1234
+          </span>
         </span>
-      </span>
-    </button>
-    <button
-      className="NormalizedButton__Button-ey7f5x-0 c2 c3"
-      onClick={[Function]}
-      type="button"
+      </button>
+    </div>
+    <div
+      className="c2"
     >
-      <span
-        className="c4"
+      <button
+        className="NormalizedButton__Button-ey7f5x-0 c3"
+        onClick={[Function]}
+        type="button"
       >
-        <svg
-          aria-hidden="true"
-          className="c6"
-          focusable="false"
-          preserveAspectRatio="xMidYMid meet"
-          role="presentation"
-          viewBox="0 0 24 24"
+        <span
+          className="c4"
         >
-          <path
+          <svg
+            aria-hidden="true"
             className="c7"
-            d="m 1 1 l 22 22 m -22 0 l 22 -22"
-            strokeWidth={2}
-          />
-        </svg>
-      </span>
-    </button>
-  </span>
+            focusable="false"
+            preserveAspectRatio="xMidYMid meet"
+            role="presentation"
+            viewBox="0 0 24 24"
+          >
+            <path
+              className="c8"
+              d="m 1 1 l 22 22 m -22 0 l 22 -22"
+              strokeWidth={2}
+            />
+          </svg>
+        </span>
+      </button>
+    </div>
+  </div>
 </div>
 `;

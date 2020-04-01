@@ -1,0 +1,26 @@
+import { Meta, Story, Preview, Props } from '@storybook/addon-docs/blocks';
+import { Playground } from '../../../docs/Playground';
+import { Pill } from './Pill';
+import { Typography } from '../..';
+
+# Pill
+
+This component will render a pill component with nothing inside.
+
+## Props
+<Props of={Pill} />
+
+## Usage
+
+Basic usage
+
+```javascript
+<Pill barColor={t => t.color.pill8}>
+    <Typography type="tertiary">123</Typography>
+</Pill>
+```
+
+## Playground
+<Playground code={`<Pill barColor={t => t.color.pill8}>
+    <Typography type="tertiary">123</Typography>
+</Pill>`} />
