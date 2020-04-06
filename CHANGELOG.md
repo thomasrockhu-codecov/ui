@@ -1,3 +1,10 @@
+# [2.30.0](https://github.com/nordnet/ui/compare/v2.29.0...v2.30.0) (2020-04-06)
+
+
+### Features
+
+* 🎸 add account numbers icon ([2b9f31f](https://github.com/nordnet/ui/commit/2b9f31f))
+
 # [2.29.0](https://github.com/nordnet/ui/compare/v2.28.1...v2.29.0) (2020-04-01)
 
 
