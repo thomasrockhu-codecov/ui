@@ -30,6 +30,51 @@ Array [
       focusable="false"
       preserveAspectRatio="xMidYMid meet"
       role="presentation"
+      viewBox="0 0 28 28"
+    >
+      <g
+        fillRule="evenodd"
+      >
+        <path
+          d="M0 7h28v2H0zM27 28L27 26H1v2zM3 11h2v13H3zM18 11h2v13h-2zM8 11h2v13H8zM13 11h2v13h-2zM23 11h2v13h-2z"
+        />
+        <path
+          d="M28 7l-.896 1.789-13.999-7L14 0l14 7z"
+        />
+        <path
+          d="M0 7l.895 1.789 14-7L14 0A91306.11 91306.11 0 010 7z"
+        />
+      </g>
+    </svg>
+  </div>,
+  .c0 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 20px;
+  height: 20px;
+  fill: #0046FF;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
+}
+
+<div
+    style={
+      Object {
+        "display": "inline-block",
+        "outline": "1px dashed #bbb",
+      }
+    }
+  >
+    <svg
+      aria-hidden="true"
+      className="c0"
+      focusable="false"
+      preserveAspectRatio="xMidYMid meet"
+      role="presentation"
       viewBox="0 0 24 24"
     >
       <path
@@ -2850,6 +2895,49 @@ exports[`Storyshots Atoms | Icon Available icons 1`] = `
   className="c0"
   direction="column"
 >
+  <div
+    className="c1"
+    direction="row"
+  >
+    <div
+      className="c2"
+    >
+      AccountNumbers
+    </div>
+    <div>
+      <div
+        style={
+          Object {
+            "display": "inline-block",
+            "outline": "1px dashed #bbb",
+          }
+        }
+      >
+        <svg
+          aria-hidden="true"
+          className="c3"
+          focusable="false"
+          preserveAspectRatio="xMidYMid meet"
+          role="presentation"
+          viewBox="0 0 28 28"
+        >
+          <g
+            fillRule="evenodd"
+          >
+            <path
+              d="M0 7h28v2H0zM27 28L27 26H1v2zM3 11h2v13H3zM18 11h2v13h-2zM8 11h2v13H8zM13 11h2v13h-2zM23 11h2v13h-2z"
+            />
+            <path
+              d="M28 7l-.896 1.789-13.999-7L14 0l14 7z"
+            />
+            <path
+              d="M0 7l.895 1.789 14-7L14 0A91306.11 91306.11 0 010 7z"
+            />
+          </g>
+        </svg>
+      </div>
+    </div>
+  </div>
   <div
     className="c1"
     direction="row"
