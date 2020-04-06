@@ -39,6 +39,7 @@ import { Healthcare } from './components/Healthcare';
 import { Import } from './components/Import';
 import { Industrial } from './components/Industrial';
 import { InfoCircle } from './components/InfoCircle';
+import { AccountNumbers } from './components/AccountNumbers';
 import { Maximize } from './components/Maximize';
 import { Minimize } from './components/Minimize';
 import { Minus } from './components/Minus';
@@ -67,6 +68,7 @@ import { Utilities } from './components/Utilities';
 import { WarningTriangle } from './components/WarningTriangle';
 
 export default {
+  AccountNumbers,
   AddWithCircle,
   Archive,
   ArrowRight,
