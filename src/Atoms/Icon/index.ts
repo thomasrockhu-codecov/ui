@@ -8,6 +8,7 @@ import { Bell } from './components/Bell';
 import { Bolt } from './components/Bolt';
 import { BrowserWindow } from './components/BrowserWindow';
 import { Calendar } from './components/Calendar';
+import { CandleSticks } from './components/CandleSticks';
 import { CheckMark } from './components/CheckMark';
 import { CheckMarkCircle } from './components/CheckMarkCircle';
 import { ChevronDown } from './components/ChevronDown';
@@ -36,6 +37,7 @@ import { Flag } from './components/Flag';
 import { Globe } from './components/Globe';
 import { Hamburger } from './components/Hamburger';
 import { Healthcare } from './components/Healthcare';
+import { LineGraph } from './components/LineGraph';
 import { Import } from './components/Import';
 import { Industrial } from './components/Industrial';
 import { InfoCircle } from './components/InfoCircle';
@@ -80,6 +82,7 @@ export default {
   Bolt,
   BrowserWindow,
   Calendar,
+  CandleSticks,
   CheckMark,
   CheckMarkCircle,
   ChevronDown,
@@ -108,6 +111,7 @@ export default {
   Globe,
   Hamburger,
   Healthcare,
+  LineGraph,
   Import,
   Industrial,
   InfoCircle,
