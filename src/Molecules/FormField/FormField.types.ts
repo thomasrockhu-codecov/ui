@@ -4,12 +4,12 @@ export type LabelAddonProp = {
 };
 
 export type Props = {
-  label?: string;
+  label?: React.ReactNode;
   hideLabel?: boolean;
   children: React.ReactNode;
   className?: string;
-  error?: string;
-  extraInfo?: string;
+  error?: React.ReactNode;
+  extraInfo?: React.ReactNode;
   fieldId?: string;
   /** @deprecated use fieldId */
   forId?: string;
