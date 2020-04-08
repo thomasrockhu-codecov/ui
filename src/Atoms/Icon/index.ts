@@ -66,6 +66,7 @@ import { ThreeDots } from './components/ThreeDots';
 import { Trash } from './components/Trash';
 import { Utilities } from './components/Utilities';
 import { WarningTriangle } from './components/WarningTriangle';
+import { ThinArrow } from './components/ThinArrow';
 
 export default {
   AccountNumbers,
@@ -136,4 +137,5 @@ export default {
   Trash,
   Utilities,
   WarningTriangle,
+  ThinArrow,
 };
