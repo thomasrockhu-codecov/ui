@@ -20,9 +20,27 @@ export const inlineStory = () => (
   </span>
 );
 
-export const iconWithProps = () => (
+export const thinArrowUp = () => (
   <span>
     <Icon.ThinArrow direction={select('Direction', ['up', 'right', 'down', 'left'], 'up')} />
+  </span>
+);
+
+export const thinArrowRight = () => (
+  <span>
+    <Icon.ThinArrow direction={select('Direction', ['up', 'right', 'down', 'left'], 'right')} />
+  </span>
+);
+
+export const thinArrowDown = () => (
+  <span>
+    <Icon.ThinArrow direction={select('Direction', ['up', 'right', 'down', 'left'], 'down')} />
+  </span>
+);
+
+export const thinArrowLeft = () => (
+  <span>
+    <Icon.ThinArrow direction={select('Direction', ['up', 'right', 'down', 'left'], 'left')} />
   </span>
 );
 
