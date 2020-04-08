@@ -1,3 +1,12 @@
+## [2.31.1](https://github.com/nordnet/ui/compare/v2.31.0...v2.31.1) (2020-04-08)
+
+
+### Bug Fixes
+
+* 🐛 add candlesticks and linegraph type icons ([9589db9](https://github.com/nordnet/ui/commit/9589db9))
+* 🐛 remove hardcoded colors ([f9be042](https://github.com/nordnet/ui/commit/f9be042))
+* update snaps ([df5ae3d](https://github.com/nordnet/ui/commit/df5ae3d))
+
 # [2.31.0](https://github.com/nordnet/ui/compare/v2.30.0...v2.31.0) (2020-04-08)
 
 
