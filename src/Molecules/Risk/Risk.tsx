@@ -1,5 +1,4 @@
 import React from 'react';
-import { injectIntl } from 'react-intl';
 import styled from 'styled-components';
 import R from 'ramda';
 import { isNumber } from '../../common/utils';
@@ -35,4 +34,4 @@ export const Risk: React.FC<Props> = ({ risk = 0 }) => {
   );
 };
 
-export default injectIntl(Risk);
+export default Risk;
