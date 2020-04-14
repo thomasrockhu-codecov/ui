@@ -238,6 +238,10 @@ export type Theme = {
     pill9: RawColor['complementaryGreen1'];
     /** complementaryPink1 */
     pill10: RawColor['complementaryPink1'];
+    /** complementaryBlue2 */
+    riskLevelActiveBackground: RawColor['complementaryBlue1'];
+    /** gray6 */
+    riskLevelInactiveBackground: RawColor['gray6'];
   };
 
   spacing: {
