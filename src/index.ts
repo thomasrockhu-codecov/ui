@@ -45,6 +45,7 @@ import Modal from './Molecules/Modal';
 import PageHeaderCard from './Molecules/PageHeaderCard';
 import PageWrapper from './Molecules/PageWrapper';
 import Rating from './Molecules/Rating';
+import Risk from './Molecules/Risk';
 import Select from './Molecules/Select';
 import Switch from './Molecules/Switch';
 import Tabs from './Molecules/Tabs';
@@ -102,6 +103,7 @@ export {
   Portal,
   Pill,
   Rating,
+  Risk,
   /** @deprecated */ Select,
   Separator,
   Skeleton,
