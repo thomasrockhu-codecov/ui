@@ -120,6 +120,8 @@ export const createTheme = (config: ThemeConfig = {}): Theme => {
       background: rawColor.gray7,
       backgroundBlack: rawColor.black,
       backgroundDark: rawColor.gray0,
+      barScaleActiveBar: rawColor.complementaryBlue1,
+      barScaleInactiveBar: rawColor.gray6,
       bubbleBackground: rawColor.white,
       bubbleBorder: rawColor.gray4,
       buttonSecondaryBackground: rawColor.white,
@@ -234,8 +236,6 @@ export const createTheme = (config: ThemeConfig = {}): Theme => {
       pill8: rawColor.brandPink,
       pill9: rawColor.complementaryGreen1,
       pill10: rawColor.complementaryPink1,
-      riskLevelActiveBackground: rawColor.complementaryBlue1,
-      riskLevelInactiveBackground: rawColor.gray6,
     },
     media: {
       between: (s1, s2) => {

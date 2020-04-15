@@ -6,7 +6,7 @@ import { Flexbox, Typography, Box } from '../..';
 import { Props } from './BarScale.types';
 
 const POSITIONS = {
-  FIRST: 'FIST',
+  FIRST: 'FIRST',
   CENTER: 'CENTER',
   LAST: 'LAST',
 };
@@ -36,7 +36,7 @@ const Indicator = styled.span<{ position: string }>`
   ${p => p.position === POSITIONS.FIRST && first}
   ${p => p.position === POSITIONS.CENTER && center}
   ${p => p.position === POSITIONS.LAST && last}
-  background: ${({ theme }) => theme.color.riskLevelActiveBackground};
+  background: ${({ theme }) => theme.color.barScaleActiveBar};
   color: ${({ theme }) => theme.color.textLight};
 `;
 
@@ -45,9 +45,7 @@ const StyledFlexbox = styled(Flexbox)<{ isActive: boolean }>`
   position: relative;
   height: ${({ theme }) => theme.spacing.unit(4)}px;
   background: ${p =>
-    p.isActive
-      ? p.theme.color.riskLevelActiveBackground
-      : p.theme.color.riskLevelInactiveBackground};
+    p.isActive ? p.theme.color.barScaleActiveBar : p.theme.color.barScaleActiveBar};
 
   &::after {
     display: ${p => (p.isActive ? 'block' : 'none')};
@@ -57,7 +55,7 @@ const StyledFlexbox = styled(Flexbox)<{ isActive: boolean }>`
     bottom: 70%;
     left: ${OFFSET_PERCENT}%;
     transform: translate(-${OFFSET_PERCENT}%);
-    border-color: ${({ theme }) => theme.color.riskLevelActiveBackground} transparent transparent
+    border-color: ${({ theme }) => theme.color.barScaleActiveBar} transparent transparent
       transparent;
   }
 `;

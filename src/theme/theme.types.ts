@@ -61,6 +61,10 @@ export type Theme = {
     background: RawColor['gray7'];
     /** black */
     backgroundBlack: RawColor['black'];
+    /** complementaryBlue1 */
+    barScaleActiveBar: RawColor['complementaryBlue1'];
+    /** gray6 */
+    barScaleInactiveBar: RawColor['gray6'];
     /** gray0 */
     text: RawColor['gray0'];
     /** white */
@@ -238,10 +242,6 @@ export type Theme = {
     pill9: RawColor['complementaryGreen1'];
     /** complementaryPink1 */
     pill10: RawColor['complementaryPink1'];
-    /** complementaryBlue2 */
-    riskLevelActiveBackground: RawColor['complementaryBlue1'];
-    /** gray6 */
-    riskLevelInactiveBackground: RawColor['gray6'];
   };
 
   spacing: {
