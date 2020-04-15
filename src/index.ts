@@ -26,6 +26,7 @@ import VisuallyHidden from './Atoms/VisuallyHidden';
 
 /** Molecules */
 import Avatar from './Molecules/Avatar';
+import BarScale from './Molecules/BarScale';
 import Button from './Molecules/Button';
 import CardWithTitle from './Molecules/CardWithTitle';
 import CollapsibleCard from './Molecules/CollapsibleCard';
@@ -45,7 +46,6 @@ import Modal from './Molecules/Modal';
 import PageHeaderCard from './Molecules/PageHeaderCard';
 import PageWrapper from './Molecules/PageWrapper';
 import Rating from './Molecules/Rating';
-import Risk from './Molecules/Risk';
 import Select from './Molecules/Select';
 import Switch from './Molecules/Switch';
 import Tabs from './Molecules/Tabs';
@@ -65,6 +65,7 @@ import TrackingContext from './common/tracking';
 /** Runtime code */
 export {
   Avatar,
+  BarScale,
   Box,
   Button,
   Card,
@@ -103,7 +104,6 @@ export {
   Portal,
   Pill,
   Rating,
-  Risk,
   /** @deprecated */ Select,
   Separator,
   Skeleton,
