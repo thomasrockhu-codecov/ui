@@ -30,7 +30,7 @@ const Indicator = styled.span<{ position: string }>`
   bottom: 170%;
   min-width:  calc(100% - 16px);
   padding: 0 ${({ theme }) => theme.spacing.unit(2)}px;
-  height: ${({ theme }) => theme.spacing.unit(5)}px;;
+  height: ${({ theme }) => theme.spacing.unit(5)}px;
   white-space: nowrap;
   text-align: center;
   ${p => p.position === POSITIONS.FIRST && first}
