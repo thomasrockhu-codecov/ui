@@ -218,26 +218,26 @@ export type Theme = {
     pieChartColor2: RawColor['brandPink'];
     /** gray4 */
     pieChartColor3: RawColor['gray4'];
-    /** brandGreen */
-    pill1: RawColor['brandGreen'];
-    /** complementaryTurquoise2 */
-    pill2: RawColor['complementaryTurquoise2'];
-    /** complementaryPink2 */
-    pill3: RawColor['complementaryPink2'];
-    /** complementaryBlue2 */
-    pill4: RawColor['complementaryBlue2'];
-    /** complementaryGreen2 */
-    pill5: RawColor['complementaryGreen2'];
-    /** brandBlue */
-    pill6: RawColor['brandBlue'];
-    /** brandTurquoise */
-    pill7: RawColor['brandTurquoise'];
-    /** brandPink */
-    pill8: RawColor['brandPink'];
-    /** complementaryGreen1 */
-    pill9: RawColor['complementaryGreen1'];
     /** complementaryPink1 */
-    pill10: RawColor['complementaryPink1'];
+    pill1: RawColor['complementaryPink1'];
+    /** complementaryTurquoise1 */
+    pill2: RawColor['complementaryTurquoise1'];
+    /** complementaryGreen1 */
+    pill3: RawColor['complementaryGreen1'];
+    /** complementaryBlue1 */
+    pill4: RawColor['complementaryBlue1'];
+    /** brandPink */
+    pill5: RawColor['brandPink'];
+    /** brandTurquoise */
+    pill6: RawColor['brandTurquoise'];
+    /** brandBlue */
+    pill7: RawColor['brandBlue'];
+    /** complementaryGreen2 */
+    pill8: RawColor['complementaryGreen2'];
+    /** complementaryBlue2 */
+    pill9: RawColor['complementaryBlue2'];
+    /** complementaryPink2 */
+    pill10: RawColor['complementaryPink2'];
   };
 
   spacing: {
