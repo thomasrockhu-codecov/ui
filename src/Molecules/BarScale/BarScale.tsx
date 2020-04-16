@@ -66,12 +66,12 @@ const StyledFlexbox = styled(Flexbox).withConfig({
 
 export const BarScale: React.FC<Props> = ({
   value = 0,
-  max = 0,
+  max = 7,
   showValue = false,
   indicatorText = '',
   axisLabel = null,
 }) => {
-  const verifiedMaxRating = isNumber(max) ? max : 0;
+  const verifiedMaxRating = isNumber(max) ? max : 7;
   const clampedValue = isNumber(value) ? Math.max(0, Math.min(value, max)) : 0;
 
   const isActive = (bar: number) => bar === clampedValue;
