@@ -42,7 +42,7 @@ const StyledButton = styled.button<IndicatorsProps>`
 `;
 
 const AnimatedChevronUp = styled(Icon.ChevronUp)<IndicatorsProps>`
-  transform: ${p => (p.$collapsed ? 'rotate(180deg)' : 'rodate(0)')};
+  transform: ${p => (p.$collapsed ? 'rotate(180deg)' : 'rotate(0)')};
   transform-origin: center center;
   transition: transform 0.16s ease-out;
 `;
