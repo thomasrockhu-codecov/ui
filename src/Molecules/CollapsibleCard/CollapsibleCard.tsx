@@ -37,18 +37,12 @@ const StyledButton = styled.button<IndicatorsProps>`
     top: 0;
     left: 0;
     transition: opacity 0.16s ease-out;
-    opacity: ${p => {
-      if (p.collapsed) {
-        return `1`;
-      }
-
-      return `0`;
-    }};
+    opacity: ${p => (p.$collapsed ? 1 : 0)};
   }
 `;
 
 const AnimatedChevronUp = styled(Icon.ChevronUp)<IndicatorsProps>`
-  transform: ${p => (p.collapsed ? 'rotate(180deg)' : 'rodate(0)')};
+  transform: ${p => (p.$collapsed ? 'rotate(180deg)' : 'rodate(0)')};
   transform-origin: center center;
   transition: transform 0.16s ease-out;
 `;
@@ -153,7 +147,7 @@ export const CollapsibleCard: React.FC<CollapsibleProps> = ({
       <StyledButton
         type="button"
         {...{ [hasOnTouch ? 'onTouchStart' : 'onClick']: toggle }}
-        collapsed={collapsed}
+        $collapsed={collapsed}
         aria-expanded={!collapsed}
       >
         <Flexbox container gutter={4} alignItems="center" justifyContent="space-between">
@@ -163,7 +157,7 @@ export const CollapsibleCard: React.FC<CollapsibleProps> = ({
             </Typography>
           </Flexbox>
           <Flexbox item>
-            <AnimatedChevronUp size={2} collapsed={collapsed} />
+            <AnimatedChevronUp size={2} $collapsed={collapsed} />
           </Flexbox>
         </Flexbox>
       </StyledButton>
