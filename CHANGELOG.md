@@ -1,3 +1,10 @@
+## [2.32.1](https://github.com/nordnet/ui/compare/v2.32.0...v2.32.1) (2020-04-16)
+
+
+### Bug Fixes
+
+* 🐛 rearrange pill colors ([66f75cb](https://github.com/nordnet/ui/commit/66f75cb))
+
 # [2.32.0](https://github.com/nordnet/ui/compare/v2.31.1...v2.32.0) (2020-04-16)
 
 
