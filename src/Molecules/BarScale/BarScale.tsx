@@ -25,7 +25,9 @@ const last = css`
   transform: translate(-100%);
 `;
 
-const Indicator = styled.span<{ position: string }>`
+const Indicator = styled('span').withConfig({
+  shouldForwardProp: prop => !['position'].includes(prop),
+})<{ position: string }>`
   position: absolute;
   bottom: 170%;
   min-width:  calc(100% - 16px);
@@ -41,11 +43,13 @@ const Indicator = styled.span<{ position: string }>`
 `;
 
 const OFFSET_PERCENT = 50;
-const StyledFlexbox = styled(Flexbox)<{ isActive: boolean }>`
+const StyledFlexbox = styled(Flexbox).withConfig({
+  shouldForwardProp: prop => !['isActive'].includes(prop),
+})<{ isActive: boolean }>`
   position: relative;
   height: ${({ theme }) => theme.spacing.unit(4)}px;
   background: ${p =>
-    p.isActive ? p.theme.color.barScaleActiveBar : p.theme.color.barScaleActiveBar};
+    p.isActive ? p.theme.color.barScaleActiveBar : p.theme.color.barScaleInactiveBar};
 
   &::after {
     display: ${p => (p.isActive ? 'block' : 'none')};
@@ -81,7 +85,7 @@ export const BarScale: React.FC<Props> = ({
     <Box mt={10}>
       <Flexbox container gutter={1}>
         {R.range(1, verifiedMaxRating + 1).map(bar => (
-          <Flexbox item flex="1">
+          <Flexbox key={bar} item flex="1">
             <StyledFlexbox
               container
               justifyContent="center"
