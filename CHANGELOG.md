@@ -1,3 +1,15 @@
+# [2.32.0](https://github.com/nordnet/ui/compare/v2.31.1...v2.32.0) (2020-04-16)
+
+
+### Bug Fixes
+
+* make ts work ([feb09c6](https://github.com/nordnet/ui/commit/feb09c6))
+
+
+### Features
+
+* update styled-components to include shouldForwardProp ([db47c68](https://github.com/nordnet/ui/commit/db47c68))
+
 ## [2.31.1](https://github.com/nordnet/ui/compare/v2.31.0...v2.31.1) (2020-04-08)
 
 
