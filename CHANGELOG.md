@@ -1,3 +1,11 @@
+## [2.32.2](https://github.com/nordnet/ui/compare/v2.32.1...v2.32.2) (2020-04-16)
+
+
+### Bug Fixes
+
+* correct typo ([176dc41](https://github.com/nordnet/ui/commit/176dc41))
+* remove collapsed warnings ([2ebd42d](https://github.com/nordnet/ui/commit/2ebd42d))
+
 ## [2.32.1](https://github.com/nordnet/ui/compare/v2.32.0...v2.32.1) (2020-04-16)
 
 
