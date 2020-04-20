@@ -2,18 +2,12 @@ import React, { useRef, useLayoutEffect, useState } from 'react';
 import R from 'ramda';
 import styled, { css } from 'styled-components';
 import { isNumber, isHTMLElement } from '../../common/utils';
-import { Props, IndicatorProps, BarProps } from './BarScale.types';
+import { Props, IndicatorProps, BarProps, CheckCollisionFunc } from './BarScale.types';
 import { Flexbox, Typography, Box } from '../..';
 
 const TRIANGLE_TOP_BORDER_SIZE = 2;
 const TRIANGLE_SIDE_BORDER_SIZE = 6;
 const TRIANGLE_OFFSET = 1;
-
-const POSITIONS = {
-  FIRST: 'FIRST',
-  CENTER: 'CENTER',
-  LAST: 'LAST',
-};
 
 export const intersectionStyles = css`
   height: ${p => p.theme.spacing.unit(1)}px;
@@ -40,7 +34,7 @@ const rightCollisionStyle = css`
 `;
 
 const Indicator = styled('span').withConfig({
-  shouldForwardProp: prop => !['position', 'leftCollision', 'rightCollision'].includes(prop),
+  shouldForwardProp: prop => !['leftCollision', 'rightCollision'].includes(prop),
 })<IndicatorProps>`
   position: absolute;
   bottom: 100%;
@@ -80,7 +74,7 @@ const StyledFlexbox = styled(Flexbox).withConfig({
   }
 `;
 
-const xAxisCollision = (a: HTMLElement, b: HTMLElement) => {
+const xAxisCollision: CheckCollisionFunc = (a, b) => {
   if (!isHTMLElement(a) || !isHTMLElement(b)) {
     return false;
   }
@@ -119,12 +113,6 @@ export const BarScale: React.FC<Props> = ({
     }
   }, [indicatorRef, intersectionRight, intersectionLeft]);
 
-  const getPosition = (position: number): string => {
-    if (position === 1) return POSITIONS.FIRST;
-    if (position === max) return POSITIONS.LAST;
-    return POSITIONS.CENTER;
-  };
-
   return (
     <Box mt={10}>
       <Flexbox container gutter={1}>
@@ -145,7 +133,6 @@ export const BarScale: React.FC<Props> = ({
                     <Indicator
                       leftCollision={leftCollision}
                       rightCollision={rightCollision}
-                      position={getPosition(clampedValue)}
                       ref={indicatorRef}
                     >
                       <Typography type="tertiary" color={t => t.color.textLight}>

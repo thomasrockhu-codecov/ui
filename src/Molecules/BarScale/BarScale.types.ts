@@ -19,7 +19,6 @@ export type Props = {
 };
 
 export type IndicatorProps = {
-  position: string;
   leftCollision: boolean;
   rightCollision: boolean;
 };
@@ -27,3 +26,5 @@ export type IndicatorProps = {
 export type BarProps = {
   isActive: boolean;
 };
+
+export type CheckCollisionFunc = (a: HTMLElement, b: HTMLElement) => boolean;
