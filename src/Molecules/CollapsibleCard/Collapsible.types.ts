@@ -6,5 +6,5 @@ export type CollapsibleProps = {
 };
 
 export type IndicatorsProps = {
-  collapsed: boolean;
+  $collapsed: boolean;
 };

@@ -1,3 +1,25 @@
+## [2.32.3](https://github.com/nordnet/ui/compare/v2.32.2...v2.32.3) (2020-04-20)
+
+
+### Bug Fixes
+
+* render card-with-tabs header again and fix ts ([65a7b44](https://github.com/nordnet/ui/commit/65a7b44))
+
+## [2.32.2](https://github.com/nordnet/ui/compare/v2.32.1...v2.32.2) (2020-04-16)
+
+
+### Bug Fixes
+
+* correct typo ([176dc41](https://github.com/nordnet/ui/commit/176dc41))
+* remove collapsed warnings ([2ebd42d](https://github.com/nordnet/ui/commit/2ebd42d))
+
+## [2.32.1](https://github.com/nordnet/ui/compare/v2.32.0...v2.32.1) (2020-04-16)
+
+
+### Bug Fixes
+
+* 🐛 rearrange pill colors ([66f75cb](https://github.com/nordnet/ui/commit/66f75cb))
+
 # [2.32.0](https://github.com/nordnet/ui/compare/v2.31.1...v2.32.0) (2020-04-16)
 
 
