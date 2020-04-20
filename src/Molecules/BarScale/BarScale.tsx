@@ -8,7 +8,7 @@ import { Flexbox, Typography, Box } from '../..';
 const TRIANGLE_TOP_BORDER_SIZE = 2;
 const TRIANGLE_SIDE_BORDER_SIZE = 6;
 const TRIANGLE_OFFSET = 1;
-const OFFSET_PERCENT = 50;
+
 const POSITIONS = {
   FIRST: 'FIRST',
   CENTER: 'CENTER',
@@ -69,8 +69,8 @@ const StyledFlexbox = styled(Flexbox).withConfig({
     position: absolute;
     bottom: 100%;
     margin-bottom: ${({ theme }) => theme.spacing.unit(TRIANGLE_OFFSET)}px;
-    left: ${OFFSET_PERCENT}%;
-    transform: translate(-${OFFSET_PERCENT}%);
+    left: 50%;
+    transform: translate(-50%);
     width: 0;
     height: 0;
     border-left: ${TRIANGLE_SIDE_BORDER_SIZE}px solid transparent;
