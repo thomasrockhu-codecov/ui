@@ -5,7 +5,8 @@ import { isNumber } from '../../common/utils';
 import { Props } from './BarScale.types';
 import { Flexbox, Typography, Box } from '../..';
 
-const TRIANGLE_SIZE = 2;
+const TRIANGLE_TOP_BORDER_SIZE = 2;
+const TRIANGLE_SIDE_BORDER_SIZE = 6;
 const TRIANGLE_OFFSET = 1;
 const OFFSET_PERCENT = 50;
 const POSITIONS = {
@@ -19,7 +20,7 @@ export const intersectionStyles = css`
   width: ${p => p.theme.spacing.unit(1)}px;
   position: absolute;
   bottom: 100%;
-  margin-bottom: ${({ theme }) => theme.spacing.unit(TRIANGLE_OFFSET + TRIANGLE_SIZE)}px;
+  margin-bottom: ${({ theme }) => theme.spacing.unit(TRIANGLE_OFFSET + TRIANGLE_TOP_BORDER_SIZE)}px;
   pointer-events: none;
 `;
 
@@ -49,7 +50,7 @@ const Indicator = styled('span').withConfig({
   bottom: 100%;
   ${p => p.leftCollision && leftCollisionStyle}
   ${p => p.rightCollision && rightCollisionStyle}
-  margin-bottom: ${({ theme }) => theme.spacing.unit(TRIANGLE_OFFSET + TRIANGLE_SIZE)}px;
+  margin-bottom: ${({ theme }) => theme.spacing.unit(TRIANGLE_OFFSET + TRIANGLE_TOP_BORDER_SIZE)}px;
   padding: 0 ${({ theme }) => theme.spacing.unit(2)}px;
   height: ${({ theme }) => theme.spacing.unit(5)}px;
   white-space: nowrap;
@@ -76,9 +77,9 @@ const StyledFlexbox = styled(Flexbox).withConfig({
     transform: translate(-${OFFSET_PERCENT}%);
     width: 0;
     height: 0;
-    border-left: ${({ theme }) => theme.spacing.unit(TRIANGLE_SIZE)}px solid transparent;
-    border-right: ${({ theme }) => theme.spacing.unit(TRIANGLE_SIZE)}px solid transparent;
-    border-top: ${({ theme }) => theme.spacing.unit(TRIANGLE_SIZE)}px solid
+    border-left: ${TRIANGLE_SIDE_BORDER_SIZE}px solid transparent;
+    border-right: ${TRIANGLE_SIDE_BORDER_SIZE}px solid transparent;
+    border-top: ${({ theme }) => theme.spacing.unit(TRIANGLE_TOP_BORDER_SIZE)}px solid
       ${({ theme }) => theme.color.barScaleActiveBar};
   }
 `;
