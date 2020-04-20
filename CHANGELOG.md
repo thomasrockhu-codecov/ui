@@ -1,3 +1,10 @@
+## [2.32.3](https://github.com/nordnet/ui/compare/v2.32.2...v2.32.3) (2020-04-20)
+
+
+### Bug Fixes
+
+* render card-with-tabs header again and fix ts ([65a7b44](https://github.com/nordnet/ui/commit/65a7b44))
+
 ## [2.32.2](https://github.com/nordnet/ui/compare/v2.32.1...v2.32.2) (2020-04-16)
 
 
