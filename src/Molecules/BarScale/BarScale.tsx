@@ -1,7 +1,7 @@
 import React, { useRef, useLayoutEffect, useState } from 'react';
 import R from 'ramda';
 import styled, { css } from 'styled-components';
-import { isNumber } from '../../common/utils';
+import { isNumber, isHTMLElement } from '../../common/utils';
 import { Props, IndicatorProps, BarProps } from './BarScale.types';
 import { Flexbox, Typography, Box } from '../..';
 
@@ -81,6 +81,10 @@ const StyledFlexbox = styled(Flexbox).withConfig({
 `;
 
 const xAxisCollision = (a: HTMLElement, b: HTMLElement) => {
+  if (!isHTMLElement(a) || !isHTMLElement(b)) {
+    return false;
+  }
+
   const { x: bX, width: bWidth } = b.getBoundingClientRect();
   return a.getBoundingClientRect().x <= bX + bWidth;
 };
