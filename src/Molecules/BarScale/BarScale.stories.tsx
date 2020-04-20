@@ -16,16 +16,6 @@ const getBarScaleProps = ({
   value = 0,
   indicatorText = 'Hello world',
   showValue = false,
-} = {}) => ({
-  value: number('Value', value),
-  indicatorText: text('Indicator text', indicatorText),
-  showValue: boolean('showValue', showValue),
-});
-
-const getBarScalePropsWithMax = ({
-  value = 0,
-  indicatorText = 'Hello world',
-  showValue = false,
   max = 7,
 } = {}) => ({
   value: number('Value', value),
@@ -34,21 +24,12 @@ const getBarScalePropsWithMax = ({
   max: number('max', max),
 });
 
-export const BarScaleWithValue2 = () => (
+export const BarScaleWithValueAndText = () => (
   <BarScale
     {...getBarScaleProps({
       value: 2,
-      indicatorText: 'Low',
-      showValue: true,
+      indicatorText: 'text',
     })}
-    max={7}
-    axisLabel={
-      <Flexbox container justifyContent="space-between">
-        <Flexbox item>Low</Flexbox>
-        <Flexbox item>Medium</Flexbox>
-        <Flexbox item>High</Flexbox>
-      </Flexbox>
-    }
   />
 );
 
@@ -59,7 +40,15 @@ export const BarScaleWithLongText = () => (
       indicatorText: 'Long Long Long Long text',
       showValue: true,
     })}
-    max={7}
+  />
+);
+
+export const BarScaleWithXAxis = () => (
+  <BarScale
+    {...getBarScaleProps({
+      value: 6,
+      indicatorText: 'some text',
+    })}
     axisLabel={
       <Flexbox container justifyContent="space-between">
         <Flexbox item>Low</Flexbox>
@@ -70,20 +59,23 @@ export const BarScaleWithLongText = () => (
   />
 );
 
-export const BarScaleWithOverrideMaxLength = () => (
+export const BarScaleWithoutShowValue = () => (
   <BarScale
-    {...getBarScalePropsWithMax({
+    {...getBarScaleProps({
       value: 6,
-      indicatorText: 'Long Long Long Long Long Long Long Long Long Long Long Long Long text',
-      showValue: true,
+      indicatorText: 'text',
+      showValue: false,
+    })}
+  />
+);
+
+export const BarScaleWithMax = () => (
+  <BarScale
+    {...getBarScaleProps({
+      value: 6,
+      indicatorText: 'text',
+      showValue: false,
       max: 7,
     })}
-    axisLabel={
-      <Flexbox container justifyContent="space-between">
-        <Flexbox item>Low</Flexbox>
-        <Flexbox item>Medium</Flexbox>
-        <Flexbox item>High</Flexbox>
-      </Flexbox>
-    }
   />
 );

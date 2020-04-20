@@ -1,8 +1,8 @@
 import React, { useRef, useLayoutEffect, useState } from 'react';
-import styled, { css } from 'styled-components';
 import R from 'ramda';
+import styled, { css } from 'styled-components';
 import { isNumber } from '../../common/utils';
-import { Props } from './BarScale.types';
+import { Props, IndicatorProps, BarProps } from './BarScale.types';
 import { Flexbox, Typography, Box } from '../..';
 
 const TRIANGLE_TOP_BORDER_SIZE = 2;
@@ -41,11 +41,7 @@ const rightCollisionStyle = css`
 
 const Indicator = styled('span').withConfig({
   shouldForwardProp: prop => !['position', 'leftCollision', 'rightCollision'].includes(prop),
-})<{
-  position: string;
-  leftCollision: boolean;
-  rightCollision: boolean;
-}>`
+})<IndicatorProps>`
   position: absolute;
   bottom: 100%;
   ${p => p.leftCollision && leftCollisionStyle}
@@ -61,7 +57,7 @@ const Indicator = styled('span').withConfig({
 
 const StyledFlexbox = styled(Flexbox).withConfig({
   shouldForwardProp: prop => !['isActive'].includes(prop),
-})<{ isActive: boolean }>`
+})<BarProps>`
   position: relative;
   height: ${({ theme }) => theme.spacing.unit(4)}px;
   background: ${p =>
@@ -84,8 +80,10 @@ const StyledFlexbox = styled(Flexbox).withConfig({
   }
 `;
 
-const xAxisCollision = (a: HTMLElement, b: HTMLElement) =>
-  a.getBoundingClientRect().x <= b.getBoundingClientRect().x + b.getBoundingClientRect().width;
+const xAxisCollision = (a: HTMLElement, b: HTMLElement) => {
+  const { x: bX, width: bWidth } = b.getBoundingClientRect();
+  return a.getBoundingClientRect().x <= bX + bWidth;
+};
 
 export const BarScale: React.FC<Props> = ({
   value = 0,
@@ -115,7 +113,7 @@ export const BarScale: React.FC<Props> = ({
       const hasRightCollision = xAxisCollision(intersectionRight.current, indicatorRef.current);
       setRightCollision(hasRightCollision);
     }
-  }, [indicatorRef, intersectionLeft, intersectionRight]);
+  }, [indicatorRef, intersectionRight, intersectionLeft]);
 
   const getPosition = (position: number): string => {
     if (position === 1) return POSITIONS.FIRST;
@@ -130,7 +128,7 @@ export const BarScale: React.FC<Props> = ({
         <IntersectionRight ref={intersectionRight} />
 
         {R.range(1, verifiedMaxRating + 1).map(bar => (
-          <Flexbox key={bar} item flex="1">
+          <Flexbox key={bar} item flex="1 1 auto">
             <StyledFlexbox
               container
               justifyContent="center"
