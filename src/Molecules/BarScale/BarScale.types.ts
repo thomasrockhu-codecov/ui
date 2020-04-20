@@ -27,4 +27,4 @@ export type BarProps = {
   isActive: boolean;
 };
 
-export type CheckCollisionFunc = (a: HTMLElement, b: HTMLElement) => boolean;
+export type CheckCollision = (a: HTMLElement, b: HTMLElement) => boolean;

@@ -2,7 +2,7 @@ import React, { useRef, useLayoutEffect, useState } from 'react';
 import R from 'ramda';
 import styled, { css } from 'styled-components';
 import { isNumber, isHTMLElement } from '../../common/utils';
-import { Props, IndicatorProps, BarProps, CheckCollisionFunc } from './BarScale.types';
+import { Props, IndicatorProps, BarProps, CheckCollision } from './BarScale.types';
 import { Flexbox, Typography, Box } from '../..';
 
 const TRIANGLE_TOP_BORDER_SIZE = 2;
@@ -74,7 +74,7 @@ const StyledFlexbox = styled(Flexbox).withConfig({
   }
 `;
 
-const xAxisCollision: CheckCollisionFunc = (a, b) => {
+const xAxisCollision: CheckCollision = (a, b) => {
   if (!isHTMLElement(a) || !isHTMLElement(b)) {
     return false;
   }
