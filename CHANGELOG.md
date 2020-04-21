@@ -1,3 +1,20 @@
+## [2.32.4](https://github.com/nordnet/ui/compare/v2.32.3...v2.32.4) (2020-04-21)
+
+
+### Bug Fixes
+
+* add default value 7 to max ([0edc0c8](https://github.com/nordnet/ui/commit/0edc0c8))
+* add risk component ([b1b8678](https://github.com/nordnet/ui/commit/b1b8678))
+* add semantic names for colors ([24eb511](https://github.com/nordnet/ui/commit/24eb511))
+* exposing risk component ([9273540](https://github.com/nordnet/ui/commit/9273540))
+* indicators text shifts in position  when touch edges ([21a9899](https://github.com/nordnet/ui/commit/21a9899))
+* protection in  collision check function ([b115e45](https://github.com/nordnet/ui/commit/b115e45))
+* remove offset const ([df3a507](https://github.com/nordnet/ui/commit/df3a507))
+* triangle width ([1a1bcae](https://github.com/nordnet/ui/commit/1a1bcae))
+* typed func and remove position prop ([b85218d](https://github.com/nordnet/ui/commit/b85218d))
+* update stories and collision check ([6a03b7f](https://github.com/nordnet/ui/commit/6a03b7f))
+* use should forward prop ([b542886](https://github.com/nordnet/ui/commit/b542886))
+
 ## [2.32.3](https://github.com/nordnet/ui/compare/v2.32.2...v2.32.3) (2020-04-20)
 
 
