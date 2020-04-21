@@ -61,6 +61,10 @@ export type Theme = {
     background: RawColor['gray7'];
     /** black */
     backgroundBlack: RawColor['black'];
+    /** complementaryBlue1 */
+    barScaleActiveBar: RawColor['complementaryBlue1'];
+    /** gray6 */
+    barScaleInactiveBar: RawColor['gray6'];
     /** gray0 */
     text: RawColor['gray0'];
     /** white */

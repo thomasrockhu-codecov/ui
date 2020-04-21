@@ -120,6 +120,8 @@ export const createTheme = (config: ThemeConfig = {}): Theme => {
       background: rawColor.gray7,
       backgroundBlack: rawColor.black,
       backgroundDark: rawColor.gray0,
+      barScaleActiveBar: rawColor.complementaryBlue1,
+      barScaleInactiveBar: rawColor.gray6,
       bubbleBackground: rawColor.white,
       bubbleBorder: rawColor.gray4,
       buttonSecondaryBackground: rawColor.white,

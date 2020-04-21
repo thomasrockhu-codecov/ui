@@ -26,6 +26,7 @@ import VisuallyHidden from './Atoms/VisuallyHidden';
 
 /** Molecules */
 import Avatar from './Molecules/Avatar';
+import BarScale from './Molecules/BarScale';
 import Button from './Molecules/Button';
 import CardWithTitle from './Molecules/CardWithTitle';
 import CollapsibleCard from './Molecules/CollapsibleCard';
@@ -64,6 +65,7 @@ import TrackingContext from './common/tracking';
 /** Runtime code */
 export {
   Avatar,
+  BarScale,
   Box,
   Button,
   Card,
