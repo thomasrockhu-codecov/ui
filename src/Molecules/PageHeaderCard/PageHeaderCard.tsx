@@ -9,9 +9,18 @@ export const PageHeaderCard: PageHeaderCardComponent = ({ title, className, chil
       return title;
     }
     return (
-      <Typography type="title2" as="h1">
-        {title}
-      </Typography>
+      <>
+        <Media query={t => t.media.lessThan(t.breakpoints.sm)}>
+          <Typography type="title1" as="h1">
+            {title}
+          </Typography>
+        </Media>
+        <Media query={t => t.media.greaterThan(t.breakpoints.sm)}>
+          <Typography type="title2" as="h1">
+            {title}
+          </Typography>
+        </Media>
+      </>
     );
   };
 
