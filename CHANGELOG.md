@@ -1,3 +1,10 @@
+## [2.32.5](https://github.com/nordnet/ui/compare/v2.32.4...v2.32.5) (2020-04-24)
+
+
+### Bug Fixes
+
+* 🐛 change a11y colors ([71d5f55](https://github.com/nordnet/ui/commit/71d5f55))
+
 ## [2.32.4](https://github.com/nordnet/ui/compare/v2.32.3...v2.32.4) (2020-04-21)
 
 
