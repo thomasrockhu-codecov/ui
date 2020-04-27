@@ -1,3 +1,13 @@
+## [2.32.6](https://github.com/nordnet/ui/compare/v2.32.5...v2.32.6) (2020-04-27)
+
+
+### Bug Fixes
+
+* after QnA title should be title1 ([e54e2df](https://github.com/nordnet/ui/commit/e54e2df))
+* default title is now 24px for small screens ([f87f0c3](https://github.com/nordnet/ui/commit/f87f0c3))
+* snapshots ([7b93541](https://github.com/nordnet/ui/commit/7b93541))
+* update snapshots ([df350b0](https://github.com/nordnet/ui/commit/df350b0))
+
 ## [2.32.5](https://github.com/nordnet/ui/compare/v2.32.4...v2.32.5) (2020-04-24)
 
 
