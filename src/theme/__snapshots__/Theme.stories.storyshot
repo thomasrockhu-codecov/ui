@@ -247,7 +247,7 @@ Array [
 .c29 {
   width: 56px;
   height: 56px;
-  background-color: #4A47CE;
+  background-color: #0030B2;
   border: 1px solid #eee;
 }
 
@@ -261,14 +261,14 @@ Array [
 .c31 {
   width: 56px;
   height: 56px;
-  background-color: #A40100;
+  background-color: #800100;
   border: 1px solid #eee;
 }
 
 .c32 {
   width: 56px;
   height: 56px;
-  background-color: #EEDC00;
+  background-color: #DFC700;
   border: 1px solid #eee;
 }
 
@@ -782,10 +782,10 @@ Array [
       <div>
         <div
           className="c29"
-          color="#4A47CE"
+          color="#0030B2"
         />
         <div>
-          #4A47CE
+          #0030B2
         </div>
       </div>
     </div>
@@ -820,10 +820,10 @@ Array [
       <div>
         <div
           className="c31"
-          color="#A40100"
+          color="#800100"
         />
         <div>
-          #A40100
+          #800100
         </div>
       </div>
     </div>
@@ -839,10 +839,10 @@ Array [
       <div>
         <div
           className="c32"
-          color="#EEDC00"
+          color="#DFC700"
         />
         <div>
-          #EEDC00
+          #DFC700
         </div>
       </div>
     </div>
@@ -967,7 +967,7 @@ exports[`Storyshots Theme Colors (semantic) 1`] = `
 .c14 {
   width: 56px;
   height: 56px;
-  background-color: #4A47CE;
+  background-color: #0030B2;
   border: 1px solid #eee;
 }
 
@@ -981,7 +981,7 @@ exports[`Storyshots Theme Colors (semantic) 1`] = `
 .c16 {
   width: 56px;
   height: 56px;
-  background-color: hsl(241.29999999999995,57.9%,38%);
+  background-color: hsl(223.79999999999995,100%,24.4%);
   border: 1px solid #eee;
 }
 
@@ -1079,7 +1079,7 @@ exports[`Storyshots Theme Colors (semantic) 1`] = `
 .c30 {
   width: 56px;
   height: 56px;
-  background-color: #A40100;
+  background-color: #800100;
   border: 1px solid #eee;
 }
 
@@ -1107,7 +1107,7 @@ exports[`Storyshots Theme Colors (semantic) 1`] = `
 .c34 {
   width: 56px;
   height: 56px;
-  background-color: hsl(0.39999999999997726,100%,22.5%);
+  background-color: hsl(0.5,100%,17.6%);
   border: 1px solid #eee;
 }
 
@@ -1142,7 +1142,7 @@ exports[`Storyshots Theme Colors (semantic) 1`] = `
 .c39 {
   width: 56px;
   height: 56px;
-  background-color: #EEDC00;
+  background-color: #DFC700;
   border: 1px solid #eee;
 }
 
@@ -1548,10 +1548,10 @@ exports[`Storyshots Theme Colors (semantic) 1`] = `
       >
         <div
           className="c14"
-          color="#4A47CE"
+          color="#0030B2"
         />
         <div>
-          #4A47CE
+          #0030B2
         </div>
       </td>
     </tr>
@@ -1579,10 +1579,10 @@ exports[`Storyshots Theme Colors (semantic) 1`] = `
       >
         <div
           className="c16"
-          color="hsl(241.29999999999995, 57.9%, 38%)"
+          color="hsl(223.79999999999995, 100%, 24.4%)"
         />
         <div>
-          hsl(241.29999999999995, 57.9%, 38%)
+          hsl(223.79999999999995, 100%, 24.4%)
         </div>
       </td>
     </tr>
@@ -1610,10 +1610,10 @@ exports[`Storyshots Theme Colors (semantic) 1`] = `
       >
         <div
           className="c14"
-          color="#4A47CE"
+          color="#0030B2"
         />
         <div>
-          #4A47CE
+          #0030B2
         </div>
       </td>
     </tr>
@@ -1672,10 +1672,10 @@ exports[`Storyshots Theme Colors (semantic) 1`] = `
       >
         <div
           className="c14"
-          color="#4A47CE"
+          color="#0030B2"
         />
         <div>
-          #4A47CE
+          #0030B2
         </div>
       </td>
     </tr>
@@ -2323,10 +2323,10 @@ exports[`Storyshots Theme Colors (semantic) 1`] = `
       >
         <div
           className="c30"
-          color="#A40100"
+          color="#800100"
         />
         <div>
-          #A40100
+          #800100
         </div>
       </td>
     </tr>
@@ -2385,10 +2385,10 @@ exports[`Storyshots Theme Colors (semantic) 1`] = `
       >
         <div
           className="c30"
-          color="#A40100"
+          color="#800100"
         />
         <div>
-          #A40100
+          #800100
         </div>
       </td>
     </tr>
@@ -2416,10 +2416,10 @@ exports[`Storyshots Theme Colors (semantic) 1`] = `
       >
         <div
           className="c34"
-          color="hsl(0.39999999999997726, 100%, 22.5%)"
+          color="hsl(0.5, 100%, 17.6%)"
         />
         <div>
-          hsl(0.39999999999997726, 100%, 22.5%)
+          hsl(0.5, 100%, 17.6%)
         </div>
       </td>
     </tr>
@@ -2943,10 +2943,10 @@ exports[`Storyshots Theme Colors (semantic) 1`] = `
       >
         <div
           className="c39"
-          color="#EEDC00"
+          color="#DFC700"
         />
         <div>
-          #EEDC00
+          #DFC700
         </div>
       </td>
     </tr>

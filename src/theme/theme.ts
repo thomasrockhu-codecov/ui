@@ -41,10 +41,10 @@ export const rawColor = {
   index: '#FFCF00',
 
   // ACCESSIBLE FUNCTIONAL COLORS
-  a11yCta: '#4A47CE',
+  a11yCta: '#0030B2',
   a11yPositive: '#00890F',
-  a11yNegative: '#A40100',
-  a11yIndex: '#EEDC00',
+  a11yNegative: '#800100',
+  a11yIndex: '#DFC700',
 } as RawColor;
 
 const breakpoints: Theme['breakpoints'] = {
