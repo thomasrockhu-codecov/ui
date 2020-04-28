@@ -6,6 +6,10 @@ Array [
 
 }
 
+@media (min-width:760px) {
+
+}
+
 <button
     onClick={[Function]}
     type="button"
@@ -114,7 +118,7 @@ Array [
 }
 
 .c4 {
-  padding: 20px;
+  padding: 12px 12px 8px;
 }
 
 .c1 {
@@ -192,6 +196,12 @@ Array [
   .c5 {
     font-size: 20px;
     line-height: 1.2;
+  }
+}
+
+@media (min-width:760px) {
+  .c4 {
+    padding: 16px 20px 8px;
   }
 }
 
@@ -413,7 +423,7 @@ exports[`Storyshots Organisms | CardWithTabs Integration: with FadedScroll 1`] =
 }
 
 .c4 {
-  padding: 20px;
+  padding: 12px 12px 8px;
 }
 
 .c1 {
@@ -540,6 +550,12 @@ exports[`Storyshots Organisms | CardWithTabs Integration: with FadedScroll 1`] =
   .c5 {
     font-size: 20px;
     line-height: 1.2;
+  }
+}
+
+@media (min-width:760px) {
+  .c4 {
+    padding: 16px 20px 8px;
   }
 }
 
@@ -823,7 +839,7 @@ exports[`Storyshots Organisms | CardWithTabs Integration: with FadedScroll of co
 }
 
 .c5 {
-  padding: 20px;
+  padding: 12px 12px 8px;
 }
 
 .c1 {
@@ -960,6 +976,12 @@ exports[`Storyshots Organisms | CardWithTabs Integration: with FadedScroll of co
   .c6 {
     font-size: 20px;
     line-height: 1.2;
+  }
+}
+
+@media (min-width:760px) {
+  .c5 {
+    padding: 16px 20px 8px;
   }
 }
 
@@ -1201,7 +1223,7 @@ exports[`Storyshots Organisms | CardWithTabs Integration: with Typography and ex
 }
 
 .c4 {
-  padding: 20px;
+  padding: 12px 12px 8px;
 }
 
 .c1 {
@@ -1279,6 +1301,12 @@ exports[`Storyshots Organisms | CardWithTabs Integration: with Typography and ex
   .c5 {
     font-size: 20px;
     line-height: 1.2;
+  }
+}
+
+@media (min-width:760px) {
+  .c4 {
+    padding: 16px 20px 8px;
   }
 }
 
@@ -1497,7 +1525,7 @@ exports[`Storyshots Organisms | CardWithTabs with initialActiveTabIndex 1`] = `
 }
 
 .c4 {
-  padding: 20px;
+  padding: 12px 12px 8px;
 }
 
 .c1 {
@@ -1575,6 +1603,12 @@ exports[`Storyshots Organisms | CardWithTabs with initialActiveTabIndex 1`] = `
   .c5 {
     font-size: 20px;
     line-height: 1.2;
+  }
+}
+
+@media (min-width:760px) {
+  .c4 {
+    padding: 16px 20px 8px;
   }
 }
 
