@@ -7,21 +7,15 @@ const StyledTabs = styled(Tabs)`
   padding: 0 ${({ theme }) => theme.spacing.unit(5)}px;
 `;
 
-const CustomCardWithTitle = styled(CardWithTitle)`
-  ${CardWithTitle.components.StyledHeader} {
-    padding-bottom: ${({ theme }) => theme.spacing.unit(2)}px;
-  }
-`;
-
 const CardWithTabs: Component & {
   Tab: typeof Tabs.Tab;
 } = ({ activeTabIndex, children, initialActiveTabIndex, ...rest }) => {
   return (
-    <CustomCardWithTitle {...rest}>
+    <CardWithTitle {...rest}>
       <StyledTabs activeTabIndex={activeTabIndex} initialActiveTabIndex={initialActiveTabIndex}>
         {children}
       </StyledTabs>
-    </CustomCardWithTitle>
+    </CardWithTitle>
   );
 };
 
