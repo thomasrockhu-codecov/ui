@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import { Card } from '../..';
 import { CardWithTitleComponent } from './CardWithTitle.types';
+import { Box } from '../../Atoms/Box/Box';
 
 const StyledHeader = styled.header`
   padding: ${({ theme }) => theme.spacing.unit(3)}px ${({ theme }) => theme.spacing.unit(3)}px
@@ -38,7 +39,9 @@ export const CardWithTitle: CardWithTitleComponent & {
   return (
     <StyledCard {...rest}>
       <StyledHeader>{title}</StyledHeader>
-      {children}
+      <Box pt={3} px={3} pb={2} sm={{ pt: 4, px: 5, pb: 2 }}>
+        {children}
+      </Box>
     </StyledCard>
   );
 };
