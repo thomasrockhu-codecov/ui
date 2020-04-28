@@ -4,7 +4,12 @@ import { Card } from '../..';
 import { CardWithTitleComponent } from './CardWithTitle.types';
 
 const StyledHeader = styled.header`
-  padding: ${({ theme }) => theme.spacing.unit(5)}px;
+  padding: ${({ theme }) => theme.spacing.unit(3)}px ${({ theme }) => theme.spacing.unit(2)}px
+    ${({ theme }) => theme.spacing.unit(3)}px;
+  ${p => p.theme.media.greaterThan(p.theme.breakpoints.sm)} {
+    padding: ${({ theme }) => theme.spacing.unit(4)}px ${({ theme }) => theme.spacing.unit(5)}px
+      ${({ theme }) => theme.spacing.unit(2)}px;
+  }
 `;
 
 const StyledCard = styled(Card)`
