@@ -16,7 +16,7 @@ export const CardWithTitle: CardWithTitleComponent = props => {
 
   return (
     <StyledCard {...rest}>
-      <Box pt={3} px={3} pb={2} sm={{ pt: 4, px: 5 }}>
+      <Box pt={3} px={3} pb={2} sm={{ pt: 4, px: 5 }} as="header">
         {isElement(title) ? (
           title
         ) : (
