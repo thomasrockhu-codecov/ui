@@ -1,7 +1,13 @@
 import React, { useRef, useLayoutEffect, useState } from 'react';
 import styled, { css } from 'styled-components';
 import { isHTMLElement } from '../../common/utils';
-import { Props, IndicatorProps, LineProps, CheckCollision } from './LineScale.types';
+import {
+  Props,
+  IndicatorProps,
+  LineProps,
+  AverageLabelProps,
+  CheckCollision,
+} from './LineScale.types';
 import { Flexbox, Typography, Box, Number } from '../..';
 
 const TRIANGLE_TOP_BORDER_SIZE = 2;
@@ -45,32 +51,31 @@ const transformStyle = css`
 `;
 
 const Indicator = styled('span').withConfig({
-  shouldForwardProp: prop => !['value', 'leftCollision', 'rightCollision'].includes(prop),
+  shouldForwardProp: prop =>
+    !['value', 'valueColor', 'leftCollision', 'rightCollision'].includes(prop),
 })<IndicatorProps>`
   position: relative;
   bottom: 100%;
-  margin-left: ${p => p.value}%;
-  margin-right: ${p => p.value}%;
+  margin: 0 ${p => p.value}% ${({ theme }) =>
+  theme.spacing.unit(TRIANGLE_OFFSET + TRIANGLE_TOP_BORDER_SIZE)}px; 
+  padding: 2px ${({ theme }) => theme.spacing.unit(1.5)}px;
   ${p => p.leftCollision && leftCollisionStyle}
   ${p => p.rightCollision && rightCollisionStyle}
   ${p => !p.leftCollision && !p.rightCollision && transformStyle}
-    margin-bottom: ${({ theme }) =>
-      theme.spacing.unit(TRIANGLE_OFFSET + TRIANGLE_TOP_BORDER_SIZE)}px;
-  padding: 2px ${({ theme }) => theme.spacing.unit(1.5)}px;
   height: ${({ theme }) => theme.spacing.unit(4)}px;
   white-space: nowrap;
   text-align: center;
-  background: ${({ theme }) => theme.color.pill2};
+  background: ${p => p.valueColor || p.theme.color.pill2};
   color: ${({ theme }) => theme.color.textLight};
 `;
 
-const AverageText = styled('span').withConfig({
-  shouldForwardProp: prop => !['value', 'leftCollision', 'rightCollision'].includes(prop),
-})<IndicatorProps>`
+const AverageLabel = styled('span').withConfig({
+  shouldForwardProp: prop => !['averageValue', 'leftCollision', 'rightCollision'].includes(prop),
+})<AverageLabelProps>`
   position: relative;
   bottom: -${({ theme }) => theme.spacing.unit(8)}px;
-  margin-left: ${p => p.value}%;
-  margin-right: ${p => p.value}%;
+  margin-left: ${p => p.averageValue}%;
+  margin-right: ${p => p.averageValue}%;
   ${p => p.leftCollision && leftCollisionStyle}
   ${p => p.rightCollision && rightCollisionStyle}
   ${p => !p.leftCollision && !p.rightCollision && transformStyle}
@@ -81,8 +86,7 @@ const AverageText = styled('span').withConfig({
 `;
 
 const StyledFlexbox = styled(Flexbox).withConfig({
-  shouldForwardProp: prop =>
-    !['value', 'averageValue', 'leftCollision', 'rightCollision'].includes(prop),
+  shouldForwardProp: prop => !['value', 'valueColor', 'averageValue'].includes(prop),
 })<LineProps>`
   position: relative;
   height: 2px;
@@ -93,7 +97,7 @@ const StyledFlexbox = styled(Flexbox).withConfig({
     content: '';
     position: absolute;
     bottom: -${({ theme }) => theme.spacing.unit(6)}px;
-    margin-left: ${p => p.value}%;
+    margin-left: ${p => p.averageValue}%;
     width: 0px;
     height: ${({ theme }) => theme.spacing.unit(14)}px;
     border-left: 1px dashed ${({ theme }) => theme.color.label};
@@ -111,15 +115,8 @@ const StyledFlexbox = styled(Flexbox).withConfig({
     border-left: ${TRIANGLE_SIDE_BORDER_SIZE}px solid transparent;
     border-right: ${TRIANGLE_SIDE_BORDER_SIZE}px solid transparent;
     border-top: ${({ theme }) => theme.spacing.unit(TRIANGLE_TOP_BORDER_SIZE)}px solid
-      ${({ theme }) => theme.color.pill2};
+      ${p => p.valueColor || p.theme.color.pill2};
   }
-`;
-
-const StyledFlexbox2 = styled(Flexbox).withConfig({
-  shouldForwardProp: prop =>
-    !['value', 'averageValue', 'leftCollision', 'rightCollision'].includes(prop),
-})<LineProps>`
-  position: relative;
 `;
 
 const xAxisCollision: CheckCollision = (a, b) => {
@@ -130,7 +127,15 @@ const xAxisCollision: CheckCollision = (a, b) => {
   return a.getBoundingClientRect().x <= bX + bWidth;
 };
 
-export const LineScale: React.FC<Props> = ({ value, averageValue, averageText, valuePrefix }) => {
+export const LineScale: React.FC<Props> = ({
+  value,
+  valueLabel,
+  valueColor,
+  averageValue,
+  averageValueLabel,
+  minLabel,
+  maxLabel,
+}) => {
   const [leftCollision, setLeftCollision] = useState(false);
   const [leftAverageTextCollision, setLeftAverageTextCollision] = useState(false);
   const [rightCollision, setRightCollision] = useState(false);
@@ -140,11 +145,6 @@ export const LineScale: React.FC<Props> = ({ value, averageValue, averageText, v
   const averageTextRef = useRef<HTMLSpanElement>(null);
   const intersectionLeft = useRef<HTMLDivElement>(null);
   const intersectionRight = useRef<HTMLDivElement>(null);
-
-  console.log('leftCollision', leftCollision);
-  console.log('rightCollision', rightCollision);
-  console.log('leftAverageTextCollision', leftAverageTextCollision);
-  console.log('rightAverageTextCollision', rightAverageTextCollision);
 
   useLayoutEffect(() => {
     if (indicatorRef.current && intersectionLeft.current) {
@@ -174,54 +174,46 @@ export const LineScale: React.FC<Props> = ({ value, averageValue, averageText, v
         <Flexbox container direction="column">
           <IntersectionLeft ref={intersectionLeft} />
           <IntersectionRight ref={intersectionRight} />
-
           <Flexbox item flex="1 1 auto">
             <StyledFlexbox
               container
               value={value}
               averageValue={averageValue}
-              leftCollision={leftCollision}
-              rightCollision={rightCollision}
+              valueColor={valueColor}
             >
               <Indicator
                 value={value}
+                valueColor={valueColor}
                 leftCollision={leftCollision}
                 rightCollision={rightCollision}
                 ref={indicatorRef}
               >
                 <Typography type="tertiary" color={t => t.color.textLight}>
-                  {valuePrefix}
-                  <Number value={value} decimals={2} />
+                  {(Boolean(valueLabel) && valueLabel) || <Number value={value} decimals={2} />}
                 </Typography>
               </Indicator>
             </StyledFlexbox>
           </Flexbox>
-
-          <Flexbox container justifyContent="space-between">
-            <Flexbox item>0</Flexbox>
-            <Flexbox item>100</Flexbox>
-          </Flexbox>
-
-          <Flexbox item flex="1 1 auto">
-            <StyledFlexbox2
-              container
-              value={value}
-              averageValue={averageValue}
-              leftCollision={leftCollision}
-              rightCollision={rightCollision}
-            >
-              <AverageText
-                leftCollision={leftAverageTextCollision}
-                rightCollision={rightAverageTextCollision}
-                ref={averageTextRef}
-                value={averageValue}
-              >
-                <Typography type="tertiary" color={t => t.color.label}>
-                  {averageText}{' '}
-                </Typography>
-              </AverageText>
-            </StyledFlexbox2>
-          </Flexbox>
+          {(Boolean(minLabel) || Boolean(maxLabel)) && (
+            <Flexbox container justifyContent="space-between">
+              <Flexbox item>{minLabel}</Flexbox>
+              <Flexbox item>{maxLabel}</Flexbox>
+            </Flexbox>
+          )}
+          {(Boolean(averageValue) || Boolean(averageValueLabel)) && (
+            <Flexbox item flex="1 1 auto">
+              <Flexbox container>
+                <AverageLabel
+                  leftCollision={leftAverageTextCollision}
+                  rightCollision={rightAverageTextCollision}
+                  ref={averageTextRef}
+                  averageValue={averageValue}
+                >
+                  {averageValueLabel}
+                </AverageLabel>
+              </Flexbox>
+            </Flexbox>
+          )}
         </Flexbox>
       </Box>
     </Typography>

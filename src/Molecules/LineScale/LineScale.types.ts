@@ -1,33 +1,49 @@
 export type Props = {
-  /** Needs to be between 0 and max  */
+  /**
+   * Main indicator value
+   * Needs to be between 0 and max */
   value: number;
 
-  /** The number of bars to render */
-  /** @default 7 */
-  max?: number;
+  /** Text in the main indicator */
+  valueLabel?: string;
 
-  /** show the number of the active bar */
-  /** @default false */
-  showValue: boolean;
+  /** Color of the main indicator */
+  valueColor?: string;
 
-  /** the text in the indicator */
-  indicatorText: string;
+  /**
+   * Average indicator value
+   * Needs to be between 0 and max if present */
+  averageValue?: number;
 
-  /** X axis label */
+  /** Text in the average indcator */
+  averageValueLabel?: string;
+
+  /** X axis min label */
   /** @default null */
-  axisLabel?: React.ReactNode;
+  minLabel?: React.ReactNode;
+
+  /** X axis max label */
+  /** @default null */
+  maxLabel?: React.ReactNode;
 };
 
 export type IndicatorProps = {
   value: number;
+  valueColor?: string;
+  leftCollision: boolean;
+  rightCollision: boolean;
+};
+
+export type AverageLabelProps = {
+  averageValue?: number;
   leftCollision: boolean;
   rightCollision: boolean;
 };
 
 export type LineProps = {
   value: number;
-  leftCollision: boolean;
-  rightCollision: boolean;
+  valueColor?: string;
+  averageValue?: number;
 };
 
 export type CheckCollision = (a: HTMLElement, b: HTMLElement) => boolean;
