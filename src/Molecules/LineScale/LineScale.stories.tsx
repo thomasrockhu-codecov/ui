@@ -57,8 +57,8 @@ export const LineScaleNearLeftEdge = () => (
     valueLabel="5.00"
     averageValue={5}
     averageValueLabel="Average for category 5.00"
-    minLabel="0"
-    maxLabel="100"
+    minLabel="Lowest value"
+    maxLabel="Highest value"
   />
 );
 
@@ -103,8 +103,8 @@ export const LineScaleAlmostAtRightEdge = () => (
     valueLabel="99.00"
     averageValue={99}
     averageValueLabel="Average for category 99.00"
-    minLabel="0"
-    maxLabel="100"
+    minLabel="Lowest value"
+    maxLabel="Highest value"
   />
 );
 

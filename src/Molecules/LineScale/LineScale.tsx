@@ -182,6 +182,8 @@ export const LineScale: React.FC<Props> = ({
               valueColor={valueColor}
             >
               <Indicator
+                tabIndex={-1}
+                aria-label={valueLabel}
                 value={value}
                 valueColor={valueColor}
                 leftCollision={leftCollision}
@@ -204,12 +206,16 @@ export const LineScale: React.FC<Props> = ({
             <Flexbox item flex="1 1 auto">
               <Flexbox container>
                 <AverageLabel
+                  tabIndex={0}
+                  aria-label={averageValueLabel}
                   leftCollision={leftAverageTextCollision}
                   rightCollision={rightAverageTextCollision}
                   ref={averageTextRef}
                   averageValue={averageValue}
                 >
-                  {averageValueLabel}
+                  <Typography type="tertiary" color={t => t.color.label}>
+                    {averageValueLabel}
+                  </Typography>
                 </AverageLabel>
               </Flexbox>
             </Flexbox>
