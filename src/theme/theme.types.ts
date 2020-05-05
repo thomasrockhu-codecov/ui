@@ -223,25 +223,25 @@ export type Theme = {
     /** gray4 */
     pieChartColor3: RawColor['gray4'];
     /** complementaryPink1 */
-    pill1: RawColor['complementaryPink1'];
+    indicatorPillColor1: RawColor['complementaryPink1'];
     /** complementaryTurquoise1 */
-    pill2: RawColor['complementaryTurquoise1'];
+    indicatorPillColor2: RawColor['complementaryTurquoise1'];
     /** complementaryGreen1 */
-    pill3: RawColor['complementaryGreen1'];
+    indicatorPillColor3: RawColor['complementaryGreen1'];
     /** complementaryBlue1 */
-    pill4: RawColor['complementaryBlue1'];
+    indicatorPillColor4: RawColor['complementaryBlue1'];
     /** brandPink */
-    pill5: RawColor['brandPink'];
+    indicatorPillColor5: RawColor['brandPink'];
     /** brandTurquoise */
-    pill6: RawColor['brandTurquoise'];
+    indicatorPillColor6: RawColor['brandTurquoise'];
     /** brandBlue */
-    pill7: RawColor['brandBlue'];
+    indicatorPillColor7: RawColor['brandBlue'];
     /** complementaryGreen2 */
-    pill8: RawColor['complementaryGreen2'];
+    indicatorPillColor8: RawColor['complementaryGreen2'];
     /** complementaryBlue2 */
-    pill9: RawColor['complementaryBlue2'];
+    indicatorPillColor9: RawColor['complementaryBlue2'];
     /** complementaryPink2 */
-    pill10: RawColor['complementaryPink2'];
+    indicatorPillColor10: RawColor['complementaryPink2'];
   };
 
   spacing: {
