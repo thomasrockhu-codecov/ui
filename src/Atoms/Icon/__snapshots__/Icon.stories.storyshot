@@ -687,41 +687,6 @@ Array [
       focusable="false"
       preserveAspectRatio="xMidYMid meet"
       role="presentation"
-      viewBox="0 0 14 14"
-    >
-      <path
-        d="M0.930308177,8.44440689 C4.60669905,4.09790343 10.1057958,4.30868804 10.1057958,4.30868804 C10.1057958,4.30868804 2.31066754,6.97738765 0.0211893194,12.3289085 C-0.159621672,12.7513696 0.869541386,13.3007772 1.10441695,12.8013158 C1.80546912,11.3130397 2.78235487,10.1968326 2.78235487,10.1968326 C4.22362996,10.7321185 6.71685566,11.3594183 8.48400757,10.1183459 C10.8312738,8.46967725 10.5913344,4.81498731 13.9421463,3.03550739 C14.7248166,2.6200328 7.37412,0.882769259 3.51527982,3.11771042 C0.668921612,4.76608172 0.832306832,7.45098409 0.930308177,8.44440689 Z"
-      />
-    </svg>
-  </div>,
-  .c0 {
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  width: 20px;
-  height: 20px;
-  fill: #0046FF;
-  -webkit-flex-shrink: 0;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
-  display: block;
-}
-
-<div
-    style={
-      Object {
-        "display": "inline-block",
-        "outline": "1px dashed #bbb",
-      }
-    }
-  >
-    <svg
-      aria-hidden="true"
-      className="c0"
-      focusable="false"
-      preserveAspectRatio="xMidYMid meet"
-      role="presentation"
       viewBox="0 0 16 16"
     >
       <g
@@ -1557,42 +1522,6 @@ Array [
       focusable="false"
       preserveAspectRatio="xMidYMid meet"
       role="presentation"
-      viewBox="0 0 16 16"
-    >
-      <path
-        d="M2 0v13.999L16 14v2l-14-.001V16H0V0h2zm12.213.034l1.757.955-4.531 8.34-3.991-2.014-2.647 5.189-1.782-.909 3.552-6.961 4.036 2.036L14.213.034z"
-        fillRule="evenodd"
-      />
-    </svg>
-  </div>,
-  .c0 {
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  width: 20px;
-  height: 20px;
-  fill: #0046FF;
-  -webkit-flex-shrink: 0;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
-  display: block;
-}
-
-<div
-    style={
-      Object {
-        "display": "inline-block",
-        "outline": "1px dashed #bbb",
-      }
-    }
-  >
-    <svg
-      aria-hidden="true"
-      className="c0"
-      focusable="false"
-      preserveAspectRatio="xMidYMid meet"
-      role="presentation"
       viewBox="0 0 24 24"
     >
       <path
@@ -1677,6 +1606,77 @@ Array [
       <polygon
         className="c1"
         points="11 8 11 16 9 16 9 8 11 8 11 4 11 6 9 6 9 4 11 4"
+      />
+    </svg>
+  </div>,
+  .c0 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 20px;
+  height: 20px;
+  fill: #0046FF;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
+}
+
+<div
+    style={
+      Object {
+        "display": "inline-block",
+        "outline": "1px dashed #bbb",
+      }
+    }
+  >
+    <svg
+      aria-hidden="true"
+      className="c0"
+      focusable="false"
+      preserveAspectRatio="xMidYMid meet"
+      role="presentation"
+      viewBox="0 0 14 14"
+    >
+      <path
+        d="M0.930308177,8.44440689 C4.60669905,4.09790343 10.1057958,4.30868804 10.1057958,4.30868804 C10.1057958,4.30868804 2.31066754,6.97738765 0.0211893194,12.3289085 C-0.159621672,12.7513696 0.869541386,13.3007772 1.10441695,12.8013158 C1.80546912,11.3130397 2.78235487,10.1968326 2.78235487,10.1968326 C4.22362996,10.7321185 6.71685566,11.3594183 8.48400757,10.1183459 C10.8312738,8.46967725 10.5913344,4.81498731 13.9421463,3.03550739 C14.7248166,2.6200328 7.37412,0.882769259 3.51527982,3.11771042 C0.668921612,4.76608172 0.832306832,7.45098409 0.930308177,8.44440689 Z"
+      />
+    </svg>
+  </div>,
+  .c0 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 20px;
+  height: 20px;
+  fill: #0046FF;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
+}
+
+<div
+    style={
+      Object {
+        "display": "inline-block",
+        "outline": "1px dashed #bbb",
+      }
+    }
+  >
+    <svg
+      aria-hidden="true"
+      className="c0"
+      focusable="false"
+      preserveAspectRatio="xMidYMid meet"
+      role="presentation"
+      viewBox="0 0 16 16"
+    >
+      <path
+        d="M2 0v13.999L16 14v2l-14-.001V16H0V0h2zm12.213.034l1.757.955-4.531 8.34-3.991-2.014-2.647 5.189-1.782-.909 3.552-6.961 4.036 2.036L14.213.034z"
+        fillRule="evenodd"
       />
     </svg>
   </div>,
@@ -3673,39 +3673,6 @@ exports[`Storyshots Atoms | Icon Available icons 1`] = `
     <div
       className="c2"
     >
-      Co2
-    </div>
-    <div>
-      <div
-        style={
-          Object {
-            "display": "inline-block",
-            "outline": "1px dashed #bbb",
-          }
-        }
-      >
-        <svg
-          aria-hidden="true"
-          className="c3"
-          focusable="false"
-          preserveAspectRatio="xMidYMid meet"
-          role="presentation"
-          viewBox="0 0 14 14"
-        >
-          <path
-            d="M0.930308177,8.44440689 C4.60669905,4.09790343 10.1057958,4.30868804 10.1057958,4.30868804 C10.1057958,4.30868804 2.31066754,6.97738765 0.0211893194,12.3289085 C-0.159621672,12.7513696 0.869541386,13.3007772 1.10441695,12.8013158 C1.80546912,11.3130397 2.78235487,10.1968326 2.78235487,10.1968326 C4.22362996,10.7321185 6.71685566,11.3594183 8.48400757,10.1183459 C10.8312738,8.46967725 10.5913344,4.81498731 13.9421463,3.03550739 C14.7248166,2.6200328 7.37412,0.882769259 3.51527982,3.11771042 C0.668921612,4.76608172 0.832306832,7.45098409 0.930308177,8.44440689 Z"
-          />
-        </svg>
-      </div>
-    </div>
-  </div>
-  <div
-    className="c1"
-    direction="row"
-  >
-    <div
-      className="c2"
-    >
       Cogwheel
     </div>
     <div>
@@ -4489,40 +4456,6 @@ exports[`Storyshots Atoms | Icon Available icons 1`] = `
     <div
       className="c2"
     >
-      LineGraph
-    </div>
-    <div>
-      <div
-        style={
-          Object {
-            "display": "inline-block",
-            "outline": "1px dashed #bbb",
-          }
-        }
-      >
-        <svg
-          aria-hidden="true"
-          className="c3"
-          focusable="false"
-          preserveAspectRatio="xMidYMid meet"
-          role="presentation"
-          viewBox="0 0 16 16"
-        >
-          <path
-            d="M2 0v13.999L16 14v2l-14-.001V16H0V0h2zm12.213.034l1.757.955-4.531 8.34-3.991-2.014-2.647 5.189-1.782-.909 3.552-6.961 4.036 2.036L14.213.034z"
-            fillRule="evenodd"
-          />
-        </svg>
-      </div>
-    </div>
-  </div>
-  <div
-    className="c1"
-    direction="row"
-  >
-    <div
-      className="c2"
-    >
       Import
     </div>
     <div>
@@ -4616,6 +4549,73 @@ exports[`Storyshots Atoms | Icon Available icons 1`] = `
           <polygon
             className="c7"
             points="11 8 11 16 9 16 9 8 11 8 11 4 11 6 9 6 9 4 11 4"
+          />
+        </svg>
+      </div>
+    </div>
+  </div>
+  <div
+    className="c1"
+    direction="row"
+  >
+    <div
+      className="c2"
+    >
+      Leaf
+    </div>
+    <div>
+      <div
+        style={
+          Object {
+            "display": "inline-block",
+            "outline": "1px dashed #bbb",
+          }
+        }
+      >
+        <svg
+          aria-hidden="true"
+          className="c3"
+          focusable="false"
+          preserveAspectRatio="xMidYMid meet"
+          role="presentation"
+          viewBox="0 0 14 14"
+        >
+          <path
+            d="M0.930308177,8.44440689 C4.60669905,4.09790343 10.1057958,4.30868804 10.1057958,4.30868804 C10.1057958,4.30868804 2.31066754,6.97738765 0.0211893194,12.3289085 C-0.159621672,12.7513696 0.869541386,13.3007772 1.10441695,12.8013158 C1.80546912,11.3130397 2.78235487,10.1968326 2.78235487,10.1968326 C4.22362996,10.7321185 6.71685566,11.3594183 8.48400757,10.1183459 C10.8312738,8.46967725 10.5913344,4.81498731 13.9421463,3.03550739 C14.7248166,2.6200328 7.37412,0.882769259 3.51527982,3.11771042 C0.668921612,4.76608172 0.832306832,7.45098409 0.930308177,8.44440689 Z"
+          />
+        </svg>
+      </div>
+    </div>
+  </div>
+  <div
+    className="c1"
+    direction="row"
+  >
+    <div
+      className="c2"
+    >
+      LineGraph
+    </div>
+    <div>
+      <div
+        style={
+          Object {
+            "display": "inline-block",
+            "outline": "1px dashed #bbb",
+          }
+        }
+      >
+        <svg
+          aria-hidden="true"
+          className="c3"
+          focusable="false"
+          preserveAspectRatio="xMidYMid meet"
+          role="presentation"
+          viewBox="0 0 16 16"
+        >
+          <path
+            d="M2 0v13.999L16 14v2l-14-.001V16H0V0h2zm12.213.034l1.757.955-4.531 8.34-3.991-2.014-2.647 5.189-1.782-.909 3.552-6.961 4.036 2.036L14.213.034z"
+            fillRule="evenodd"
           />
         </svg>
       </div>
