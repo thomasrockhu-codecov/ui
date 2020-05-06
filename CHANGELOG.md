@@ -1,3 +1,18 @@
+# [2.33.0](https://github.com/nordnet/ui/compare/v2.32.7...v2.33.0) (2020-05-06)
+
+
+### Bug Fixes
+
+* adjusted stories and added voice over ([485875a](https://github.com/nordnet/ui/commit/485875a))
+* better way to align ([6cd4046](https://github.com/nordnet/ui/commit/6cd4046))
+* cleanup styling and types ([bb0c050](https://github.com/nordnet/ui/commit/bb0c050))
+* removed unneccasry aria and tab ([445d054](https://github.com/nordnet/ui/commit/445d054))
+
+
+### Features
+
+* add linescale component ([6e33057](https://github.com/nordnet/ui/commit/6e33057))
+
 ## [2.32.7](https://github.com/nordnet/ui/compare/v2.32.6...v2.32.7) (2020-04-27)
 
 
