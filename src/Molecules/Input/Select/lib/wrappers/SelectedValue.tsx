@@ -13,7 +13,7 @@ const CleanNormalizedButton = React.forwardRef((props: any, ref: React.Ref<any>)
 ));
 
 const StyledA11yButton = styled(CleanNormalizedButton)`
-  background: transparent;
+  background: ${p => (p.disabled ? p.theme.color.disabledBackground : 'transparent')};
   width: 100%;
   height: 100%;
   cursor: ${p => (p.disabled ? 'not-allowed' : 'pointer')};
