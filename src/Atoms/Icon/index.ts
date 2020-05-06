@@ -15,6 +15,7 @@ import { ChevronDown } from './components/ChevronDown';
 import { ChevronLeft } from './components/ChevronLeft';
 import { ChevronRight } from './components/ChevronRight';
 import { ChevronUp } from './components/ChevronUp';
+import { Co2 } from './components/Co2';
 import { Cogwheel } from './components/Cogwheel';
 import { Commodities } from './components/Commodities';
 import { Communication } from './components/Communication';
@@ -89,6 +90,7 @@ export default {
   ChevronLeft,
   ChevronRight,
   ChevronUp,
+  Co2,
   Cogwheel,
   Commodities,
   Communication,
