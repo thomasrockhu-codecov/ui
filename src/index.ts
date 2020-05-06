@@ -37,6 +37,7 @@ import FormField from './Molecules/FormField';
 import InfoBar from './Molecules/InfoBar';
 import Input from './Molecules/Input';
 import LabeledValue from './Molecules/LabeledValue';
+import LineScale from './Molecules/LineScale';
 import Link from './Molecules/Link';
 import LinkBuy from './Molecules/LinkBuy';
 import LinkSell from './Molecules/LinkSell';
@@ -90,6 +91,7 @@ export {
   Input,
   LabeledValue,
   Legend,
+  LineScale,
   Link,
   LinkBuy,
   LinkSell,
