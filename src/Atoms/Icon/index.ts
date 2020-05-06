@@ -1,3 +1,4 @@
+import { AccountNumbers } from './components/AccountNumbers';
 import { AddWithCircle } from './components/AddWithCircle';
 import { Archive } from './components/Archive';
 import { ArrowRight } from './components/ArrowRight';
@@ -37,11 +38,11 @@ import { Flag } from './components/Flag';
 import { Globe } from './components/Globe';
 import { Hamburger } from './components/Hamburger';
 import { Healthcare } from './components/Healthcare';
-import { LineGraph } from './components/LineGraph';
 import { Import } from './components/Import';
 import { Industrial } from './components/Industrial';
 import { InfoCircle } from './components/InfoCircle';
-import { AccountNumbers } from './components/AccountNumbers';
+import { Leaf } from './components/Leaf';
+import { LineGraph } from './components/LineGraph';
 import { Maximize } from './components/Maximize';
 import { Minimize } from './components/Minimize';
 import { Minus } from './components/Minus';
@@ -111,10 +112,11 @@ export default {
   Globe,
   Hamburger,
   Healthcare,
-  LineGraph,
   Import,
   Industrial,
   InfoCircle,
+  Leaf,
+  LineGraph,
   Maximize,
   Minimize,
   Minus,
