@@ -1,3 +1,11 @@
+## [2.33.1](https://github.com/nordnet/ui/compare/v2.33.0...v2.33.1) (2020-05-06)
+
+
+### Bug Fixes
+
+* add co2 icon ([b695ed4](https://github.com/nordnet/ui/commit/b695ed4))
+* renamed to a generic icon name ([b7edf5f](https://github.com/nordnet/ui/commit/b7edf5f))
+
 # [2.33.0](https://github.com/nordnet/ui/compare/v2.32.7...v2.33.0) (2020-05-06)
 
 
