@@ -1,3 +1,20 @@
+# [2.34.0](https://github.com/nordnet/ui/compare/v2.33.1...v2.34.0) (2020-05-07)
+
+
+### Bug Fixes
+
+* 🐛 change padding of childrens box ([b69be69](https://github.com/nordnet/ui/commit/b69be69))
+* 🐛 change padding on sides for mobile and add snapshots ([369ba48](https://github.com/nordnet/ui/commit/369ba48))
+* 🐛 wrap title in an header html element ([7fc8561](https://github.com/nordnet/ui/commit/7fc8561))
+* 🐛 wrap title with typography ([71d0c1a](https://github.com/nordnet/ui/commit/71d0c1a))
+
+
+### Features
+
+* 🎸 add padding for card with title content ([0a51ea7](https://github.com/nordnet/ui/commit/0a51ea7))
+* 🎸 change padding of card with title ([4c91329](https://github.com/nordnet/ui/commit/4c91329))
+* 🎸 remove custom styling of tabs ([cd89f75](https://github.com/nordnet/ui/commit/cd89f75))
+
 ## [2.33.1](https://github.com/nordnet/ui/compare/v2.33.0...v2.33.1) (2020-05-06)
 
 
