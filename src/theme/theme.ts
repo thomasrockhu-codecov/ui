@@ -236,6 +236,16 @@ export const createTheme = (config: ThemeConfig = {}): Theme => {
       pill8: rawColor.complementaryGreen2,
       pill9: rawColor.complementaryBlue2,
       pill10: rawColor.complementaryPink2,
+      indicatorPillColor1: rawColor.complementaryPink1,
+      indicatorPillColor2: rawColor.complementaryTurquoise1,
+      indicatorPillColor3: rawColor.complementaryGreen1,
+      indicatorPillColor4: rawColor.complementaryBlue1,
+      indicatorPillColor5: rawColor.brandPink,
+      indicatorPillColor6: rawColor.brandTurquoise,
+      indicatorPillColor7: rawColor.brandBlue,
+      indicatorPillColor8: rawColor.complementaryGreen2,
+      indicatorPillColor9: rawColor.complementaryBlue2,
+      indicatorPillColor10: rawColor.complementaryPink2,
     },
     media: {
       between: (s1, s2) => {
