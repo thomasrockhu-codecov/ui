@@ -1,3 +1,15 @@
+## [2.34.1](https://github.com/nordnet/ui/compare/v2.34.0...v2.34.1) (2020-05-07)
+
+
+### Bug Fixes
+
+* 🐛 add old names back until everything is in prod ([3de33e7](https://github.com/nordnet/ui/commit/3de33e7))
+* 🐛 add old names back until everything is in prod ([62fa8f1](https://github.com/nordnet/ui/commit/62fa8f1))
+* 🐛 rename pill colors and remove disabled select background ([7fd9d7f](https://github.com/nordnet/ui/commit/7fd9d7f))
+* 🐛 revert background fix ([dc44ad3](https://github.com/nordnet/ui/commit/dc44ad3))
+* merge master with branch ([b9412aa](https://github.com/nordnet/ui/commit/b9412aa))
+* update tests ([ec07b34](https://github.com/nordnet/ui/commit/ec07b34))
+
 # [2.34.0](https://github.com/nordnet/ui/compare/v2.33.1...v2.34.0) (2020-05-07)
 
 
