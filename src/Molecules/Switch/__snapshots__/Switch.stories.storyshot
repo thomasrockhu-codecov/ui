@@ -1,10 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Storyshots Molecules | Switch Controlled behaviour 1`] = `
-.c2 {
-  box-sizing: border-box;
-}
-
 .c1 {
   box-sizing: border-box;
   display: -webkit-box;
@@ -26,6 +22,10 @@ exports[`Storyshots Molecules | Switch Controlled behaviour 1`] = `
 
 .c1 > *:not(:first-child) {
   padding-top: 0;
+}
+
+.c2 {
+  box-sizing: border-box;
 }
 
 .c3 {
@@ -147,7 +147,7 @@ exports[`Storyshots Molecules | Switch Controlled behaviour 1`] = `
     >
       <button
         aria-checked={true}
-        className="c4"
+        className="NormalizedButton__Button-ey7f5x-0 c4"
         onClick={[Function]}
         role="switch"
         type="button"
@@ -169,10 +169,6 @@ exports[`Storyshots Molecules | Switch Controlled behaviour 1`] = `
 `;
 
 exports[`Storyshots Molecules | Switch Default Off 1`] = `
-.c2 {
-  box-sizing: border-box;
-}
-
 .c1 {
   box-sizing: border-box;
   display: -webkit-box;
@@ -194,6 +190,10 @@ exports[`Storyshots Molecules | Switch Default Off 1`] = `
 
 .c1 > *:not(:first-child) {
   padding-top: 0;
+}
+
+.c2 {
+  box-sizing: border-box;
 }
 
 .c3 {
@@ -315,7 +315,7 @@ exports[`Storyshots Molecules | Switch Default Off 1`] = `
     >
       <button
         aria-checked={false}
-        className="c4"
+        className="NormalizedButton__Button-ey7f5x-0 c4"
         onClick={[Function]}
         role="switch"
         type="button"
@@ -337,10 +337,6 @@ exports[`Storyshots Molecules | Switch Default Off 1`] = `
 `;
 
 exports[`Storyshots Molecules | Switch Default On 1`] = `
-.c2 {
-  box-sizing: border-box;
-}
-
 .c1 {
   box-sizing: border-box;
   display: -webkit-box;
@@ -362,6 +358,10 @@ exports[`Storyshots Molecules | Switch Default On 1`] = `
 
 .c1 > *:not(:first-child) {
   padding-top: 0;
+}
+
+.c2 {
+  box-sizing: border-box;
 }
 
 .c3 {
@@ -483,7 +483,7 @@ exports[`Storyshots Molecules | Switch Default On 1`] = `
     >
       <button
         aria-checked={true}
-        className="c4"
+        className="NormalizedButton__Button-ey7f5x-0 c4"
         onClick={[Function]}
         role="switch"
         type="button"
@@ -505,10 +505,6 @@ exports[`Storyshots Molecules | Switch Default On 1`] = `
 `;
 
 exports[`Storyshots Molecules | Switch Disabled 1`] = `
-.c2 {
-  box-sizing: border-box;
-}
-
 .c1 {
   box-sizing: border-box;
   display: -webkit-box;
@@ -530,6 +526,10 @@ exports[`Storyshots Molecules | Switch Disabled 1`] = `
 
 .c1 > *:not(:first-child) {
   padding-top: 0;
+}
+
+.c2 {
+  box-sizing: border-box;
 }
 
 .c3 {
@@ -651,7 +651,7 @@ exports[`Storyshots Molecules | Switch Disabled 1`] = `
     >
       <button
         aria-checked={false}
-        className="c4"
+        className="NormalizedButton__Button-ey7f5x-0 c4"
         disabled={true}
         onClick={[Function]}
         role="switch"
@@ -674,10 +674,6 @@ exports[`Storyshots Molecules | Switch Disabled 1`] = `
 `;
 
 exports[`Storyshots Molecules | Switch With Label prop as ReactNode 1`] = `
-.c2 {
-  box-sizing: border-box;
-}
-
 .c1 {
   box-sizing: border-box;
   display: -webkit-box;
@@ -699,6 +695,10 @@ exports[`Storyshots Molecules | Switch With Label prop as ReactNode 1`] = `
 
 .c1 > *:not(:first-child) {
   padding-top: 0;
+}
+
+.c2 {
+  box-sizing: border-box;
 }
 
 .c3 {
@@ -820,7 +820,7 @@ exports[`Storyshots Molecules | Switch With Label prop as ReactNode 1`] = `
     >
       <button
         aria-checked={false}
-        className="c4"
+        className="NormalizedButton__Button-ey7f5x-0 c4"
         onClick={[Function]}
         role="switch"
         type="button"
@@ -842,10 +842,6 @@ exports[`Storyshots Molecules | Switch With Label prop as ReactNode 1`] = `
 `;
 
 exports[`Storyshots Molecules | Switch With hidden label 1`] = `
-.c2 {
-  box-sizing: border-box;
-}
-
 .c1 {
   box-sizing: border-box;
   display: -webkit-box;
@@ -867,6 +863,10 @@ exports[`Storyshots Molecules | Switch With hidden label 1`] = `
 
 .c1 > *:not(:first-child) {
   padding-top: 0;
+}
+
+.c2 {
+  box-sizing: border-box;
 }
 
 .c3 {
@@ -1001,7 +1001,7 @@ exports[`Storyshots Molecules | Switch With hidden label 1`] = `
     >
       <button
         aria-checked={false}
-        className="c5"
+        className="NormalizedButton__Button-ey7f5x-0 c5"
         onClick={[Function]}
         role="switch"
         type="button"

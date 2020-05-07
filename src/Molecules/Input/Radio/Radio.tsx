@@ -13,9 +13,10 @@ const CleanInput = React.forwardRef((props: any, ref: React.Ref<HTMLInputElement
 ));
 
 const Circle = styled.div`
-  width: ${p => p.theme.spacing.unit(RADIO_SIZE)}px;
-  height: ${p => p.theme.spacing.unit(RADIO_SIZE)}px;
+  width: ${p => p.theme.spacing.unit(RADIO_SIZE) - 2}px;
+  height: ${p => p.theme.spacing.unit(RADIO_SIZE) - 2}px;
   border: 1px solid ${p => p.theme.color.inputBorder};
+  background-color: ${p => p.theme.color.backgroundInput};
   position: relative;
   border-radius: 50%;
   flex-shrink: 0;
@@ -38,8 +39,8 @@ const Circle = styled.div`
   }
 
   &::after {
-    width: ${p => p.theme.spacing.unit(RADIO_SIZE - 2)}px;
-    height: ${p => p.theme.spacing.unit(RADIO_SIZE - 2)}px;
+    width: ${p => p.theme.spacing.unit(RADIO_SIZE - 2) - 1}px;
+    height: ${p => p.theme.spacing.unit(RADIO_SIZE - 2) - 1}px;
   }
 `;
 
@@ -51,7 +52,7 @@ const StyledFormLabel = styled(FormLabel)`
   }
 `;
 
-const Input = styled(CleanInput).attrs({ type: 'radio' })<InternalInputProps>`
+const Input = styled(CleanInput).attrs(() => ({ type: 'radio' }))<InternalInputProps>`
   position: absolute;
   opacity: 0;
   height: 0;

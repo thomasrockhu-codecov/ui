@@ -4,7 +4,13 @@ module.exports = {
   testPathIgnorePatterns: ['/dist/', '/node_modules/'],
   testEnvironment: 'jest-environment-jsdom-fourteen',
   moduleFileExtensions: ['js', 'ts', 'tsx', 'json', 'md'],
+  transformIgnorePatterns: ['node_modules/(?!(@statecharts|react-syntax-highlighter)/.*)'],
   moduleNameMapper: {
-    '\\.(md)$': '<rootDir>/src/mdMock.ts',
+    '\\.(mdx?)$': '<rootDir>/src/mdMock.ts',
+  },
+  transform: {
+    '^.+\\.stories\\.tsx?$': '@storybook/addon-storyshots/injectFileName',
+    '^.+\\.[tj]sx?$': 'babel-jest',
+    '^.+\\.mdx?$': '@storybook/addon-docs/jest-transform-mdx',
   },
 };

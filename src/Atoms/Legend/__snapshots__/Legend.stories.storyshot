@@ -28,7 +28,7 @@ exports[`Storyshots Atoms | Legend Default 1`] = `
 }
 
 <legend
-  className="c0"
+  className="NormalizedLegend__Legend-sc-1svgb20-0 c0"
 >
   <span
     className="c1"
@@ -45,13 +45,13 @@ exports[`Storyshots Atoms | Legend Docs 1`] = `
 `;
 
 exports[`Storyshots Atoms | Legend Looking like a label 1`] = `
-.c0 {
+.c1 {
   text-overflow: ellipsis;
   white-space: nowrap;
   cursor: pointer;
 }
 
-.c1 {
+.c0 {
   box-sizing: border-box;
   color: inherit;
   display: table;
@@ -71,7 +71,7 @@ exports[`Storyshots Atoms | Legend Looking like a label 1`] = `
 }
 
 <legend
-  className="c0 c1"
+  className="NormalizedLegend__Legend-sc-1svgb20-0 c0 c1"
   hidden={false}
 >
   <span

@@ -1,3 +1,3 @@
-import Number from './Number';
+import { InjectedNumber as Number } from './Number';
 
 export default Number;

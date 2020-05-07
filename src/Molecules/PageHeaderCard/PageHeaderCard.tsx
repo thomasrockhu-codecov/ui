@@ -9,7 +9,7 @@ export const PageHeaderCard: PageHeaderCardComponent = ({ title, className, chil
       return title;
     }
     return (
-      <Typography type="title2" as="h1">
+      <Typography type="title1" as="h1">
         {title}
       </Typography>
     );

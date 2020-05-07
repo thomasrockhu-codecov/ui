@@ -136,7 +136,7 @@ const getTypeStyles = (props: ThemedStyledProps<Props, Theme>) => {
 
   const getLineHeight = (mode: Exclude<FontProps, null>) => {
     if (lineHeight) {
-      return 'inherit';
+      return 'line-height: inherit';
     }
 
     return `${mode.lineHeight ? `line-height: ${mode.lineHeight / mode.size};` : ''}`;
@@ -150,7 +150,7 @@ const getTypeStyles = (props: ThemedStyledProps<Props, Theme>) => {
   );
 
   return `
-    font-weight ${
+    font-weight: ${
       weight && allowedWeights.includes(weight) ? WEIGHTS[weight] : WEIGHTS[defaultWeight]
     };
     ${getFontSize(mobile)}
@@ -169,9 +169,14 @@ const getTypeStyles = (props: ThemedStyledProps<Props, Theme>) => {
     
   `;
 };
+const Span = styled.span``;
 
 const CleanSpan = React.forwardRef<HTMLSpanElement, any>((props, ref) => (
-  <span ref={ref} {...R.omit(['color', 'type', 'weight', 'lineHeight'])(props)} />
+  <Span
+    ref={ref}
+    as={props.forwardedAs}
+    {...R.omit(['color', 'type', 'weight', 'lineHeight'])(props)}
+  />
 ));
 
 const StyledTypography = styled(CleanSpan)<Props>`
@@ -183,12 +188,13 @@ const StyledTypography = styled(CleanSpan)<Props>`
 `;
 
 export const Typography: React.FC<Props> = React.forwardRef<HTMLElement, Props>((props, ref) => {
-  const { as, className, children, color, type, weight, lineHeight } = props;
+  const { as, className, children, color, id, type, weight, lineHeight } = props;
 
   return (
     <StyledTypography
       className={className}
-      as={as}
+      id={id}
+      forwardedAs={as}
       color={color}
       type={type}
       weight={weight}

@@ -13,7 +13,6 @@ exports[`Storyshots Atoms | Portal Default 1`] = `
 <portal-dummy>
   <p
     className="c0"
-    type="primary"
   >
     This element is moved to the bottom of the body tag
   </p>
@@ -36,7 +35,6 @@ exports[`Storyshots Atoms | Portal If attachTo prop is not a HTMLElement then no
   <portal-dummy>
     <p
       className="c0"
-      type="primary"
     >
       This element should not be rendered
     </p>

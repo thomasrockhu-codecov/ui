@@ -1,35 +1,48 @@
 import React from 'react';
-import { storiesOf } from '@storybook/react';
 import { BrowserRouter } from 'react-router-dom';
-import { Typography, LinkSell } from '../..';
+import { LinkSell } from '../..';
 
-storiesOf('Molecules | LinkSell', module)
-  .add('LinkSell', () => {
-    return (
-      <BrowserRouter>
-        <Typography type="primary">
-          <LinkSell to="somewhere">Sell</LinkSell>
-        </Typography>
-      </BrowserRouter>
-    );
-  })
-  .add('LinkSell disabled', () => {
-    return (
-      <BrowserRouter>
-        <Typography type="primary">
-          <LinkSell disabled>Sell</LinkSell>
-        </Typography>
-      </BrowserRouter>
-    );
-  })
-  .add('LinkSell with rel as nofollow', () => {
-    return (
-      <BrowserRouter>
-        <Typography type="primary">
-          <LinkSell to="somewhere" rel="nofollow">
-            Sell
-          </LinkSell>
-        </Typography>
-      </BrowserRouter>
-    );
-  });
+export default {
+  title: 'Molecules | LinkSell',
+  parameters: {
+    component: LinkSell,
+  },
+};
+
+export const linkSell = () => {
+  return (
+    <BrowserRouter>
+      <LinkSell to="somewhere">Sell</LinkSell>
+    </BrowserRouter>
+  );
+};
+
+linkSell.story = {
+  name: 'LinkSell',
+};
+
+export const linkSellDisabled = () => {
+  return (
+    <BrowserRouter>
+      <LinkSell disabled>Sell</LinkSell>
+    </BrowserRouter>
+  );
+};
+
+linkSellDisabled.story = {
+  name: 'LinkSell disabled',
+};
+
+export const linkSellWithRelAsNofollow = () => {
+  return (
+    <BrowserRouter>
+      <LinkSell to="somewhere" rel="nofollow">
+        Sell
+      </LinkSell>
+    </BrowserRouter>
+  );
+};
+
+linkSellWithRelAsNofollow.story = {
+  name: 'LinkSell with rel as nofollow',
+};

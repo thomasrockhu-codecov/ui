@@ -5,12 +5,12 @@ exports[`Storyshots Organisms | Development As currency 1`] = `
   color: #00D200;
 }
 
-.c5 {
-  color: #FF1900;
-}
-
 .c4 {
   color: #282823;
+}
+
+.c5 {
+  color: #FF1900;
 }
 
 .c0 {
@@ -151,12 +151,12 @@ exports[`Storyshots Organisms | Development As percentage 1`] = `
   color: #00D200;
 }
 
-.c5 {
-  color: #FF1900;
-}
-
 .c4 {
   color: #282823;
+}
+
+.c5 {
+  color: #FF1900;
 }
 
 .c0 {
@@ -297,12 +297,12 @@ exports[`Storyshots Organisms | Development Default 1`] = `
   color: #00D200;
 }
 
-.c5 {
-  color: #FF1900;
-}
-
 .c4 {
   color: #282823;
+}
+
+.c5 {
+  color: #FF1900;
 }
 
 .c0 {
@@ -512,12 +512,12 @@ exports[`Storyshots Organisms | Development Integration: with different typograp
   color: #00D200;
 }
 
-.c6 {
-  color: #FF1900;
-}
-
 .c5 {
   color: #282823;
+}
+
+.c6 {
+  color: #FF1900;
 }
 
 .c0 {
@@ -1424,6 +1424,10 @@ exports[`Storyshots Organisms | Development Regression: value is non-zero, but r
   color: #282823;
 }
 
+.c4 {
+  color: #FF1900;
+}
+
 .c0 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -1536,6 +1540,28 @@ exports[`Storyshots Organisms | Development Regression: value is non-zero, but r
     <div
       className="c2"
     >
+      \`value = -1.3123 and decimals = 3\`
+    </div>
+    <div>
+      <span
+        className="c4"
+        value={-1.312}
+      >
+        <span
+          aria-hidden={true}
+        />
+        
+        -1.312
+      </span>
+    </div>
+  </div>
+  <div
+    className="c1"
+    direction="row"
+  >
+    <div
+      className="c2"
+    >
       \`value = -0.3 and maximumDecimals = 0\`
     </div>
     <div>
@@ -1581,12 +1607,12 @@ exports[`Storyshots Organisms | Development With icon 1`] = `
   color: #00D200;
 }
 
-.c5 {
-  color: #FF1900;
-}
-
 .c4 {
   color: #282823;
+}
+
+.c5 {
+  color: #FF1900;
 }
 
 .c0 {

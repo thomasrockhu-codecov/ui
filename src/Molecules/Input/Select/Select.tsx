@@ -1,321 +1,310 @@
 import React from 'react';
-import styled, { css } from 'styled-components';
-import { Icon, Flexbox, FormField } from '../../..';
+import { useMachine } from '@xstate/react';
+import styled from 'styled-components';
 
-import { usePrevious, useOnClickOutside } from '../../../common/Hooks';
-import { useKeyboardNavigation } from './useKeyboardNavigation';
+import { useOnClickOutside } from '../../../common/Hooks';
 
-import { noop, createCounter } from './utils';
-
-import { ListItemWrapper, ListWrapper, SelectedValueWrapper } from './wrappers';
-import { useSelectReducer, SelectStateContext } from './context';
+import {
+  ListItemWrapper,
+  ListWrapper,
+  SelectedValueWrapper,
+  FormFieldOrFragment,
+  SearchWrapper,
+  ActionsWrapper,
+} from './lib/wrappers';
+import { useSelectMachineFromContext, SelectStateContext } from './lib/context';
 import {
   useComponentsWithDefaults,
   defaultComponents,
-  defaultActionTypes,
-  defaultSelectReducer,
-  defaultSelectInitialState,
-} from './defaults';
-import { Props, Option } from './Select.types';
+  defaultComponentsMultiselect,
+} from './lib/defaults';
+import { SelectMachine, OptionLike, ACTION_TYPES } from './machine';
+import { Props, Action as ActionType } from './Select.types';
 
-const Chevron = styled(Icon.ChevronDown)<{ open: boolean }>`
-  transform: translateY(-50%) ${p => (p.open ? 'rotate(180deg)' : 'rotate(0)')};
-  transform-origin: center center;
-  transition: transform 0.16s ease-out;
-  position: absolute;
-  height: ${p => p.theme.spacing.unit(2)}px;
-  top: 50%;
-  right: ${p => p.theme.spacing.unit(1)}px;
-  pointer-events: none;
-`;
+import { assert } from '../../../common/utils';
 
-const StyledRelativeDiv = styled.div<any>`
-  position: relative;
-  display: inline-block;
-  width: ${p => (p.fullWidth ? '100%' : 'initial')};
-`;
+import {
+  useAutofocus,
+  useDelegateKeyDownToMachine,
+  useFocusFromMachine,
+  useIsFirstRender,
+  useMultiRef,
+  usePropagateChangesThroughOnChange,
+  useSyncPropsWithMachine,
+  useOnBlurAndOnFocus,
+} from './lib/hooks';
+import { SYMBOL_ALL } from './lib/constants';
+import TrackingContext from '../../../common/tracking';
 
-const height = css<Pick<Props, 'size'>>`
-  height: ${p => (p.size === 's' ? p.theme.spacing.unit(8) : p.theme.spacing.unit(10))}px;
-`;
-
-const hoverBorderStyles = css<Pick<Props, 'disabled'>>`
-  ${p =>
-    p.disabled
-      ? ''
-      : `
-      &:hover {
-        border-color: ${p.theme.color.inputBorderHover};
-      }
-`}
-`;
-
-const focusBorderStyles = css`
-  &:focus-within {
-    border-color: ${p => p.theme.color.borderActive};
-  }
-  &.focus-within {
-    border-color: ${p => p.theme.color.borderActive};
-  }
-`;
-const hasError = (error?: Props['error']) => error && error !== '';
-const borderStyles = css<Pick<Props, 'error' | 'success'>>`
-  outline: none;
-  border: 1px solid
-    ${p => {
-      if (hasError(p.error)) return p.theme.color.inputBorderError;
-      if (p.success) return p.theme.color.inputBorderSuccess;
-      return p.theme.color.inputBorder;
-    }};
-  position: relative;
-  ${hoverBorderStyles}
-  ${focusBorderStyles}
-`;
-
-const SelectWrapper = styled.div`
-  ${height}
-  ${borderStyles}
-  position:relative;
-`;
-const FormFieldOrFragment = React.forwardRef<HTMLDivElement, any>(
-  ({ children, noFormField, open, onFocus, onBlur, fullWidth, ...props }, ref) => (
-    <StyledRelativeDiv
-      {...(noFormField ? { ref } : {})}
-      onBlur={onBlur}
-      onFocus={onFocus}
-      fullWidth={fullWidth}
-    >
-      <Flexbox container alignItems="center" {...(fullWidth ? { width: '100%' } : {})}>
-        {noFormField ? (
-          children
-        ) : (
-          <FormField {...props} {...(fullWidth ? { width: '100%' } : {})} ref={ref}>
-            <SelectWrapper {...props}>
-              {children}
-              <Chevron open={open} />
-            </SelectWrapper>
-          </FormField>
-        )}
-      </Flexbox>
-    </StyledRelativeDiv>
-  ),
-);
-FormFieldOrFragment.displayName = 'FormFieldOrFragment';
-
+/* eslint-disable spaced-comment */
 const HiddenSelect = styled.select`
   display: none;
 `;
+const noop = () => {};
+
+const getValuesForNativeSelect = (selectedItems: { value: any }[], isMultiselect: boolean) => {
+  if (isMultiselect) {
+    return selectedItems.map(x => x.value);
+  }
+  return selectedItems.length > 0 ? selectedItems[0].value : undefined;
+};
 
 const Select = (props: Props) => {
-  const {
-    placeholder,
-    value: valueFromProps,
-    onChange: onChangeFromProps,
-    onFocus,
-    onBlur,
-    options,
-    components,
-    noFormField,
-    reducer = defaultSelectReducer,
-    initialState = defaultSelectInitialState,
-    disabled,
-    autoFocusFirstOption = true,
-    fullWidth,
-  } = props;
-
-  const isControlledMode = typeof valueFromProps !== 'undefined';
-  const [_state, dispatch] = React.useReducer(
-    reducer as typeof defaultSelectReducer,
-    initialState as typeof defaultSelectInitialState,
-  );
-  const previousState = usePrevious(_state);
-  const { ListItem, List, SelectedValue } = useComponentsWithDefaults(components);
-
-  const stateValueHasChanged = previousState && !Object.is(previousState.value, _state.value);
-  const valueUpdatedInControlledMode =
-    isControlledMode && stateValueHasChanged && _state.value !== valueFromProps;
-  const valueUpdatedInUncontrolledMode = !isControlledMode && previousState && stateValueHasChanged;
-
-  if (onChangeFromProps && (valueUpdatedInUncontrolledMode || valueUpdatedInControlledMode)) {
-    onChangeFromProps(_state.value);
-  }
-
-  // Adjusting state for possible
-  // changes from props
-  const state = React.useMemo(
-    () =>
-      reducer(_state, {
-        type: defaultActionTypes['Select.SyncState'],
-        payload: {
-          options,
-          placeholder,
-          value: isControlledMode ? valueFromProps : _state.value,
-        },
-      }),
-    [_state, options, placeholder, isControlledMode, valueFromProps, reducer],
+  assert(Boolean(props.id), `Input.Select: "id" is required.`);
+  assert(
+    typeof props.value !== 'undefined' ? typeof props.onChange !== 'undefined' : true,
+    `Input.Select: You can't use 'value' prop without onChange. It makes sense only if you want a readonly Input.Select, which is really weird. Don't do that.`,
   );
 
-  // And defer the real update
-  React.useEffect(() => {
-    dispatch({
-      type: defaultActionTypes['Select.SyncState'],
-      payload: {
-        options,
-        placeholder,
-        value: isControlledMode ? valueFromProps : _state.value,
-      },
-    });
-  }, [options, placeholder, isControlledMode, valueFromProps, dispatch]);
-  const { open, value } = state;
-  const buttonRef = React.useRef<HTMLButtonElement>(null);
-  const customSelectListRef = React.useRef<HTMLDivElement>(null);
+  const trackContext = React.useContext(TrackingContext);
 
-  const { setRef, onKeyDown: handleListItemKeyDown, itemsRefs } = useKeyboardNavigation(
-    {
-      itemsLength: options.filter(x => !x.disabled).length,
-      onEscape: () => {
-        dispatch({ type: defaultActionTypes['Select.Close'] });
-        if (buttonRef.current) {
-          buttonRef.current.focus();
-        }
-      },
+  const isFirstRender = useIsFirstRender();
+
+  /******      Machine instantiation      ******/
+  const machineHandlers = useMachine(SelectMachine, {
+    context: {
+      label: props.label,
+      error: props.error || '',
+      success: props.success || false,
+      options: props.options,
+      selectedItems: [],
+      disabled: props.disabled || false,
+      open: false,
+      itemFocusIdx: null,
+      placeholder: props.placeholder || '',
+      searchQuery: '',
+      extraInfo: props.extraInfo || '',
+      multiselect: props.multiselect || false,
+      lastNavigationType: null,
+      visibleOptions: props.options,
+      showSearch: props.showSearch || false,
+      id: props.id,
+      valueFromProps: props.value,
+      uncommitedSelectedItems: [],
+      actions: props.actions || [],
     },
-    [options],
-  );
+  });
+  const [machineState, send, service] = machineHandlers;
+
+  /******      Tracking      ******/
+  const currentPropsRef = React.useRef(props);
+  currentPropsRef.current = props;
+  React.useEffect(() => {
+    const listener = (e: any) =>
+      trackContext && trackContext.track('Input.Select', e as any, currentPropsRef.current);
+
+    service.onEvent(listener);
+
+    return () => {
+      service.off(listener);
+    };
+  }, [trackContext, service]);
 
   React.useEffect(() => {
-    if (autoFocusFirstOption) {
-      if (itemsRefs.length > 0 && itemsRefs.every(i => Boolean(i))) {
-        itemsRefs[0].focus();
-      }
-    }
-  }, [open, autoFocusFirstOption, itemsRefs]);
+    if (!props.onSearchQueryChange) return;
+    const listener = (e: { type: string; payload: string }) =>
+      e.type === ACTION_TYPES.SEARCH_QUERY_UPDATE && props.onSearchQueryChange!(e);
 
-  const inputWrapperRef = React.useRef<HTMLDivElement>(null);
-  useOnClickOutside([customSelectListRef, inputWrapperRef], () =>
-    dispatch({ type: defaultActionTypes['Select.Close'] }),
+    service.onEvent(listener as any);
+    // eslint-disable-next-line consistent-return
+    return () => {
+      service.off(listener);
+    };
+  }, [service, props.onSearchQueryChange]);
+
+  /******      Machine syncing      ******/
+  usePropagateChangesThroughOnChange(machineState, send, props.onChange, isFirstRender);
+  useSyncPropsWithMachine(
+    {
+      searchQuery: props.searchQuery || machineState.context.searchQuery,
+      label: props.label,
+      options: props.options,
+      placeholder: props.placeholder,
+      error: props.error,
+      valueFromProps: props.value,
+      success: props.success,
+      disabled: props.disabled,
+      extraInfo: props.extraInfo,
+      multiselect: props.multiselect,
+      showSearch: props.showSearch || false,
+      id: props.id,
+      actions: props.actions || [],
+    },
+    [
+      send,
+      props.label,
+      props.options,
+      props.placeholder,
+      props.error,
+      props.success,
+      props.disabled,
+      props.extraInfo,
+      props.value,
+      props.multiselect,
+      props.showSearch,
+      props.id,
+      props.actions,
+      props.searchQuery,
+    ],
   );
 
-  const handleClickListItem = (
-    { selected, option }: { selected: boolean; option: Option },
-    e: React.MouseEvent,
-  ) => {
-    const action = {
-      type: selected
-        ? defaultActionTypes['Select.DeselectValue']
-        : defaultActionTypes['Select.SelectValue'],
-      payload: option,
-    };
-
-    dispatch(action);
+  /******      Handlers      ******/
+  const handleClickListItem = (option: OptionLike) => (e: React.MouseEvent) => {
     e.preventDefault();
+    send({ type: 'ITEM_CLICK', payload: option });
+    return false;
   };
 
-  const counter = createCounter();
-  // Not using isFocused in state, hence ref
-  const isFocused = React.useRef(false);
+  const handleClickActionItem = (action: ActionType) => (e: React.MouseEvent) => {
+    e.preventDefault();
+    send({ type: 'SELECT_ITEM', payload: action });
+    return false;
+  };
 
-  const handleBlur = (e: React.FocusEvent) => {
-    if (
-      inputWrapperRef.current &&
-      !inputWrapperRef.current.contains((e.relatedTarget as unknown) as Node)
-    ) {
-      if (onBlur) onBlur(e);
-      isFocused.current = false;
-      dispatch({ type: defaultActionTypes['Select.Close'] });
+  const handleKeyDown = useDelegateKeyDownToMachine(send, !props.showSearch);
+
+  const isKeyboardNavigation = machineState.matches(
+    'interaction.enabled.active.navigation.keyboard',
+  );
+
+  const handleMouseMove = React.useCallback(() => {
+    if (isKeyboardNavigation) {
+      send('MOUSE_MOVE');
     }
-  };
-  const handleFocus = (e: React.FocusEvent) => {
-    if (!onFocus) return;
-    if (inputWrapperRef.current && inputWrapperRef.current.contains(document.activeElement)) {
-      if (!isFocused.current) {
-        onFocus(e);
-        isFocused.current = true;
-      }
-    }
-  };
+  }, [send, isKeyboardNavigation]);
 
-  if (!state.initialized) {
-    return null;
-  }
+  /******      Refs      ******/
+  const buttonRef = React.useRef(null);
+  const [itemRefs, setItemRef] = useMultiRef();
+  const listRef = React.useRef(null);
+  const formFieldRef = React.useRef(null);
+  const inputRef = React.useRef(null);
+  const searchRef = React.useRef(null);
+
+  /******      Focus management      ******/
+  useAutofocus(buttonRef, props.autoFocus);
+  useFocusFromMachine(machineState, buttonRef, itemRefs, searchRef);
+  useOnClickOutside([listRef, formFieldRef], () => send({ type: 'BLUR' }));
+  const { handleBlur, handleFocus } = useOnBlurAndOnFocus(
+    machineState,
+    send,
+    props.onBlur,
+    props.onFocus,
+    formFieldRef,
+    isFirstRender,
+    inputRef,
+  );
+
+  /******      Renderers      ******/
+  const { ListItem, List, SelectedValue, Search, Action } = useComponentsWithDefaults(
+    props.components,
+    {
+      multiselect: machineState.context.multiselect,
+    },
+  );
+
+  /******      Values from machine      ******/
+  const isOpen = machineState.context.open;
+  const isDisabled = machineState.context.disabled;
+  const error = machineState.context.error;
+  const success = machineState.context.success;
+  const extraInfo = machineState.context.extraInfo;
+  const label = machineState.context.label;
+  const placeholder = machineState.context.placeholder;
+  const options = machineState.context.visibleOptions;
+  const selectedItems = machineState.context.selectedItems;
+  const multiselect = machineState.context.multiselect;
 
   return (
-    <>
-      <HiddenSelect name={props.name} disabled={props.disabled}>
-        {props.placeholder && (
-          <option
-            label={props.placeholder}
-            value=""
-            {...(value.length === 0 ? { selected: true } : {})}
-          />
-        )}
-        {props.options.map(x => (
-          <option
-            label={x.label}
-            value={x.value}
-            {...(value.includes(x) ? { selected: true } : {})}
-          />
+    <div className={props.className}>
+      <HiddenSelect
+        name={props.name}
+        disabled={isDisabled}
+        ref={inputRef}
+        aria-hidden="true"
+        {...(multiselect ? { multiple: true } : {})}
+        value={getValuesForNativeSelect(selectedItems, multiselect)}
+        onChange={noop}
+      >
+        {placeholder && <option label={placeholder} value="" />}
+        {options.map(x => (
+          <option label={x.label} value={x.value} key={`${x.label}${x.value}`} />
         ))}
       </HiddenSelect>
-      <SelectStateContext.Provider value={[state, dispatch]}>
+      <SelectStateContext.Provider value={machineHandlers}>
         <FormFieldOrFragment
-          noFormField={noFormField}
-          {...props}
-          ref={inputWrapperRef}
-          disabled={disabled}
-          open={open}
-          onFocus={handleFocus}
+          label={label}
+          hideLabel={props.hideLabel}
+          noFormField={props.noFormField}
+          ref={formFieldRef}
+          disabled={isDisabled}
+          open={isOpen}
+          fullWidth={props.fullWidth}
+          error={error}
+          success={success}
+          extraInfo={extraInfo}
+          id={props.id}
+          size={props.size}
           onBlur={handleBlur}
-          fullWidth={fullWidth}
+          onFocus={handleFocus}
+          width={props.width}
         >
           <SelectedValueWrapper
-            state={state}
             ref={buttonRef}
-            open={open}
-            disabled={disabled}
-            noFormField={noFormField}
+            data-testid="input-select-button"
+            open={isOpen}
+            label={label}
+            disabled={isDisabled}
+            noFormField={props.noFormField}
             placeholder={placeholder}
-            dispatch={dispatch}
             component={SelectedValue}
             options={options}
+            state={machineState}
+            id={props.id}
           />
-          {open && (
+          {isOpen && (
             <ListWrapper
-              ref={customSelectListRef}
-              key={3}
               component={List}
-              noFormField={noFormField}
-              onBlur={() => dispatch({ type: defaultActionTypes['Select.Close'] })}
+              noFormField={props.noFormField}
+              onKeyDown={handleKeyDown}
+              onMouseMove={handleMouseMove}
+              ref={listRef}
+              data-testid="input-select-list"
+              searchComponent={<SearchWrapper ref={searchRef} component={Search} />}
+              listPosition={props.listPosition}
+              actionsComponent={
+                machineState.context.actions.length > 0 ? (
+                  <ActionsWrapper component={Action} onClickFactory={handleClickActionItem} />
+                ) : null
+              }
+              maxHeight={props.listMaxHeight}
+              width={props.width}
             >
               {options.map((x: any, index: number) => (
                 <ListItemWrapper
                   key={x.value}
                   index={index}
-                  onKeyDown={handleListItemKeyDown}
-                  ref={x.disabled ? noop : setRef(counter.next().value)}
+                  ref={setItemRef(index) as any}
                   option={x}
-                  selected={value.includes(x)}
-                  onClick={handleClickListItem}
-                  component={ListItem as any}
+                  id={props.id}
+                  onClick={x.disabled ? noop : handleClickListItem(x)}
+                  component={ListItem}
                 />
               ))}
             </ListWrapper>
           )}
         </FormFieldOrFragment>
       </SelectStateContext.Provider>
-    </>
+    </div>
   );
 };
 
-const defaults = {
-  actionTypes: defaultActionTypes,
-  reducer: defaultSelectReducer,
-  initialState: defaultSelectInitialState,
+Select.useSelectMachineFromContext = useSelectMachineFromContext;
+Select.ACTION_TYPES = ACTION_TYPES;
+Select.SYMBOL_ALL = SYMBOL_ALL;
+Select.defaults = {
   components: defaultComponents,
+  componentsMultiselect: defaultComponentsMultiselect,
 };
-
-Select.useSelectReducer = useSelectReducer;
-
-Select.defaults = defaults;
 
 export { Select };

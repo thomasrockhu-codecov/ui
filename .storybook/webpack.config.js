@@ -1,4 +1,6 @@
 const path = require('path');
+const tsConfig = require('../tsconfig.json');
+const createCompiler = require('@storybook/addon-docs/mdx-compiler-plugin');
 
 module.exports = ({ config, mode }) => {
   config.entry.unshift(require.resolve('core-js/es/weak-set'));
@@ -10,16 +12,46 @@ module.exports = ({ config, mode }) => {
   });
   config.module.rules.push({
     test: /\.(ts|tsx)$/,
-    loader: require.resolve('babel-loader'),
-    options: {
-      presets: [['react-app', { flow: false, typescript: true }]],
-    },
+    loaders: [
+      {
+        loader: 'babel-loader',
+        options: {
+          presets: [['react-app', { flow: false, typescript: true }]],
+        },
+      },
+      {
+        loader: 'react-docgen-typescript-loader',
+        // For some reason loader doesn't like moduleResolution field
+        // @hack
+        options: { compilerOptions: { ...tsConfig.compilerOptions, moduleResolution: undefined } },
+      },
+    ],
   });
   config.module.rules.push({
     test: /\.jsx?$/,
     loader: require.resolve('babel-loader'),
     include: [path.resolve(__dirname, '..', 'node_modules', 'use-ssr')],
   });
-  config.resolve.extensions.push('.ts', '.tsx', '.d.ts', '.md');
+
+  config.module.rules.push({
+    test: /\.mdx$/,
+    use: [
+      {
+        loader: 'babel-loader',
+        // may or may not need this line depending on your app's setup
+        options: {
+          plugins: ['@babel/plugin-transform-react-jsx'],
+        },
+      },
+      {
+        loader: '@mdx-js/loader',
+        options: {
+          compilers: [createCompiler({})],
+        },
+      },
+    ],
+  });
+
+  config.resolve.extensions.push('.ts', '.tsx', '.d.ts', '.md', '.mdx');
   return config;
 };

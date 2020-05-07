@@ -2,7 +2,7 @@ import React from 'react';
 import { injectIntl } from 'react-intl';
 import styled from 'styled-components';
 import * as R from 'ramda';
-import { NumberComponent as NumberComponentType, Ticks } from './Number.types';
+import { NumberComponent as NumberComponentType, Props, Ticks } from './Number.types';
 import { assert } from '../../common/utils';
 import { Typography, VisuallyHidden } from '../..';
 
@@ -75,7 +75,7 @@ export const getRoundedValue = (
   if (typeof maximumDecimals !== 'undefined' || typeof minimumDecimals !== 'undefined')
     dec = getDecimalsFromMinMax(value, maximumDecimals, minimumDecimals);
   if (dec === null) return value;
-  return dec === 0 ? Math.round(value) : +Number(value).toPrecision(dec);
+  return +Number(value).toFixed(dec);
 };
 
 const TypographyWithInheritedWeight = styled(Typography)`
@@ -134,5 +134,4 @@ const NumberComponent: NumberComponentType = ({
     </>
   );
 };
-
-export default injectIntl(NumberComponent);
+export const InjectedNumber = (injectIntl(NumberComponent) as any) as React.FC<Props>;

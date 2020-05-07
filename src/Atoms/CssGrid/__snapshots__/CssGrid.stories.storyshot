@@ -46,7 +46,7 @@ exports[`Storyshots Atoms | CssGrid Conditionally hidden: WRONG way [hidden] 1`]
   className="c0"
 >
   <div
-    className="c1"
+    className="CssGrid__RawCssGridItem-bu5cxy-1 c1"
   >
     <div
       className="c2"
@@ -55,95 +55,7 @@ exports[`Storyshots Atoms | CssGrid Conditionally hidden: WRONG way [hidden] 1`]
     </div>
   </div>
   <div
-    className="c3"
-  >
-    <div
-      className="c2"
-    >
-      Content
-    </div>
-  </div>
-</div>
-`;
-
-exports[`Storyshots Atoms | CssGrid Conditionally hidden: WRONG way [shown] 1`] = `
-.c0 {
-  display: grid;
-  box-sizing: border-box;
-  grid-template-areas: "left top top" "left content content";
-  grid-template-rows: auto auto;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 20px;
-  display: -ms-grid;
-  -ms-grid-rows: auto 20px auto;
-  -ms-grid-columns: 1fr 20px 1fr 20px 1fr;
-}
-
-.c1 {
-  box-sizing: border-box;
-  min-width: 0;
-  -ms-grid-row: 1;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 1;
-  -ms-grid-row-span: 3;
-  display: block;
-  grid-area: left;
-}
-
-.c3 {
-  box-sizing: border-box;
-  min-width: 0;
-  -ms-grid-row: 1;
-  -ms-grid-column: 3;
-  -ms-grid-column-span: 3;
-  -ms-grid-row-span: 1;
-  display: block;
-  grid-area: top;
-}
-
-.c4 {
-  box-sizing: border-box;
-  min-width: 0;
-  -ms-grid-row: 3;
-  -ms-grid-column: 3;
-  -ms-grid-column-span: 3;
-  -ms-grid-row-span: 1;
-  display: block;
-  grid-area: content;
-}
-
-.c2 {
-  box-sizing: border-box;
-  border: 1px solid black;
-  background-color: #eee;
-  height: 100%;
-}
-
-<div
-  className="c0"
->
-  <div
-    className="c1"
-  >
-    <div
-      className="c2"
-    >
-      Left
-    </div>
-  </div>
-  <div
-    className="c3"
-  >
-    <div
-      className="c2"
-    >
-      <div>
-        This item is mounted and stays mounted no matter what. However, it‘d be hidden with css
-      </div>
-    </div>
-  </div>
-  <div
-    className="c4"
+    className="CssGrid__RawCssGridItem-bu5cxy-1 c3"
   >
     <div
       className="c2"
@@ -211,7 +123,7 @@ exports[`Storyshots Atoms | CssGrid Conditionally hidden: good way [hidden] 1`] 
   className="c0"
 >
   <div
-    className="c1"
+    className="CssGrid__RawCssGridItem-bu5cxy-1 c1"
   >
     <div
       className="c2"
@@ -220,7 +132,7 @@ exports[`Storyshots Atoms | CssGrid Conditionally hidden: good way [hidden] 1`] 
     </div>
   </div>
   <div
-    className="c3"
+    className="CssGrid__RawCssGridItem-bu5cxy-1 c3"
   >
     <div
       className="c2"
@@ -231,7 +143,7 @@ exports[`Storyshots Atoms | CssGrid Conditionally hidden: good way [hidden] 1`] 
     </div>
   </div>
   <div
-    className="c4"
+    className="CssGrid__RawCssGridItem-bu5cxy-1 c4"
   >
     <div
       className="c2"
@@ -295,7 +207,7 @@ exports[`Storyshots Atoms | CssGrid Conditionally hidden: good way [shown] 1`] =
   className="c0"
 >
   <div
-    className="c1"
+    className="CssGrid__RawCssGridItem-bu5cxy-1 c1"
   >
     <div
       className="c2"
@@ -304,7 +216,7 @@ exports[`Storyshots Atoms | CssGrid Conditionally hidden: good way [shown] 1`] =
     </div>
   </div>
   <div
-    className="c3"
+    className="CssGrid__RawCssGridItem-bu5cxy-1 c3"
   >
     <div
       className="c2"
@@ -315,7 +227,7 @@ exports[`Storyshots Atoms | CssGrid Conditionally hidden: good way [shown] 1`] =
     </div>
   </div>
   <div
-    className="c4"
+    className="CssGrid__RawCssGridItem-bu5cxy-1 c4"
   >
     <div
       className="c2"
@@ -394,7 +306,7 @@ exports[`Storyshots Atoms | CssGrid CssGrid with custom gutter 1`] = `
   className="c0"
 >
   <div
-    className="c1"
+    className="CssGrid__RawCssGridItem-bu5cxy-1 c1"
   >
     <div
       className="c2"
@@ -403,7 +315,7 @@ exports[`Storyshots Atoms | CssGrid CssGrid with custom gutter 1`] = `
     </div>
   </div>
   <div
-    className="c3"
+    className="CssGrid__RawCssGridItem-bu5cxy-1 c3"
   >
     <div
       className="c2"
@@ -412,7 +324,7 @@ exports[`Storyshots Atoms | CssGrid CssGrid with custom gutter 1`] = `
     </div>
   </div>
   <div
-    className="c4"
+    className="CssGrid__RawCssGridItem-bu5cxy-1 c4"
   >
     <div
       className="c2"
@@ -421,7 +333,7 @@ exports[`Storyshots Atoms | CssGrid CssGrid with custom gutter 1`] = `
     </div>
   </div>
   <div
-    className="c5"
+    className="CssGrid__RawCssGridItem-bu5cxy-1 c5"
   >
     <div
       className="c2"
@@ -500,7 +412,7 @@ exports[`Storyshots Atoms | CssGrid CssGrid with custom templateColumns 1`] = `
   className="c0"
 >
   <div
-    className="c1"
+    className="CssGrid__RawCssGridItem-bu5cxy-1 c1"
   >
     <div
       className="c2"
@@ -509,7 +421,7 @@ exports[`Storyshots Atoms | CssGrid CssGrid with custom templateColumns 1`] = `
     </div>
   </div>
   <div
-    className="c3"
+    className="CssGrid__RawCssGridItem-bu5cxy-1 c3"
   >
     <div
       className="c2"
@@ -518,7 +430,7 @@ exports[`Storyshots Atoms | CssGrid CssGrid with custom templateColumns 1`] = `
     </div>
   </div>
   <div
-    className="c4"
+    className="CssGrid__RawCssGridItem-bu5cxy-1 c4"
   >
     <div
       className="c2"
@@ -527,7 +439,7 @@ exports[`Storyshots Atoms | CssGrid CssGrid with custom templateColumns 1`] = `
     </div>
   </div>
   <div
-    className="c5"
+    className="CssGrid__RawCssGridItem-bu5cxy-1 c5"
   >
     <div
       className="c2"
@@ -602,7 +514,7 @@ exports[`Storyshots Atoms | CssGrid CssGrid with different layouts for different
   height: 100%;
 }
 
-@media (min-width:760px), {
+@media (min-width:760px) {
   .c0 {
     grid-template-areas: "left top sidebar" "left content sidebar" "left content sidebar";
     grid-template-rows: auto 1fr 1fr;
@@ -662,7 +574,7 @@ exports[`Storyshots Atoms | CssGrid CssGrid with different layouts for different
   className="c0"
 >
   <div
-    className="c1"
+    className="CssGrid__RawCssGridItem-bu5cxy-1 c1"
   >
     <div
       className="c2"
@@ -671,7 +583,7 @@ exports[`Storyshots Atoms | CssGrid CssGrid with different layouts for different
     </div>
   </div>
   <div
-    className="c3"
+    className="CssGrid__RawCssGridItem-bu5cxy-1 c3"
   >
     <div
       className="c2"
@@ -680,7 +592,7 @@ exports[`Storyshots Atoms | CssGrid CssGrid with different layouts for different
     </div>
   </div>
   <div
-    className="c4"
+    className="CssGrid__RawCssGridItem-bu5cxy-1 c4"
   >
     <div
       className="c2"
@@ -689,7 +601,112 @@ exports[`Storyshots Atoms | CssGrid CssGrid with different layouts for different
     </div>
   </div>
   <div
-    className="c5"
+    className="CssGrid__RawCssGridItem-bu5cxy-1 c5"
+  >
+    <div
+      className="c2"
+    >
+      Sidebar
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Atoms | CssGrid CssGrid with minmax() 1`] = `
+.c0 {
+  display: grid;
+  box-sizing: border-box;
+  grid-template-areas: "left top sidebar" "left content sidebar";
+  grid-template-columns: 1fr minmax(30ch,2fr) 1fr;
+  grid-gap: 20px;
+  display: -ms-grid;
+  -ms-grid-rows: 1fr 20px 1fr;
+  -ms-grid-columns: 1fr 20px minmax(30ch,2fr) 20px 1fr;
+}
+
+.c1 {
+  box-sizing: border-box;
+  min-width: 0;
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  -ms-grid-row-span: 3;
+  display: block;
+  grid-area: left;
+}
+
+.c3 {
+  box-sizing: border-box;
+  min-width: 0;
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 1;
+  -ms-grid-row-span: 1;
+  display: block;
+  grid-area: top;
+}
+
+.c4 {
+  box-sizing: border-box;
+  min-width: 0;
+  -ms-grid-row: 3;
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 1;
+  -ms-grid-row-span: 1;
+  display: block;
+  grid-area: content;
+}
+
+.c5 {
+  box-sizing: border-box;
+  min-width: 0;
+  -ms-grid-row: 1;
+  -ms-grid-column: 5;
+  -ms-grid-column-span: 1;
+  -ms-grid-row-span: 3;
+  display: block;
+  grid-area: sidebar;
+}
+
+.c2 {
+  box-sizing: border-box;
+  border: 1px solid black;
+  background-color: #eee;
+  height: 100%;
+}
+
+<div
+  className="c0"
+>
+  <div
+    className="CssGrid__RawCssGridItem-bu5cxy-1 c1"
+  >
+    <div
+      className="c2"
+    >
+      Left
+    </div>
+  </div>
+  <div
+    className="CssGrid__RawCssGridItem-bu5cxy-1 c3"
+  >
+    <div
+      className="c2"
+    >
+      Top
+    </div>
+  </div>
+  <div
+    className="CssGrid__RawCssGridItem-bu5cxy-1 c4"
+  >
+    <div
+      className="c2"
+    >
+      Content
+    </div>
+  </div>
+  <div
+    className="CssGrid__RawCssGridItem-bu5cxy-1 c5"
   >
     <div
       className="c2"
@@ -792,7 +809,7 @@ exports[`Storyshots Atoms | CssGrid CssGrid with object as gutter and custom siz
   className="c0"
 >
   <div
-    className="c1"
+    className="CssGrid__RawCssGridItem-bu5cxy-1 c1"
   >
     <div
       className="c2"
@@ -801,7 +818,7 @@ exports[`Storyshots Atoms | CssGrid CssGrid with object as gutter and custom siz
     </div>
   </div>
   <div
-    className="c3"
+    className="CssGrid__RawCssGridItem-bu5cxy-1 c3"
   >
     <div
       className="c2"
@@ -810,7 +827,7 @@ exports[`Storyshots Atoms | CssGrid CssGrid with object as gutter and custom siz
     </div>
   </div>
   <div
-    className="c4"
+    className="CssGrid__RawCssGridItem-bu5cxy-1 c4"
   >
     <div
       className="c2"
@@ -819,7 +836,7 @@ exports[`Storyshots Atoms | CssGrid CssGrid with object as gutter and custom siz
     </div>
   </div>
   <div
-    className="c5"
+    className="CssGrid__RawCssGridItem-bu5cxy-1 c5"
   >
     <div
       className="c2"
@@ -828,7 +845,7 @@ exports[`Storyshots Atoms | CssGrid CssGrid with object as gutter and custom siz
     </div>
   </div>
   <div
-    className="c6"
+    className="CssGrid__RawCssGridItem-bu5cxy-1 c6"
   >
     <div
       className="c2"
@@ -837,12 +854,399 @@ exports[`Storyshots Atoms | CssGrid CssGrid with object as gutter and custom siz
     </div>
   </div>
   <div
-    className="c7"
+    className="CssGrid__RawCssGridItem-bu5cxy-1 c7"
   >
     <div
       className="c2"
     >
       Sidebar
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Atoms | CssGrid Items With Different Placements 1`] = `
+.c0 {
+  display: grid;
+  box-sizing: border-box;
+  grid-template-areas: "alignStart alignCenter alignStretch alignEnd" "justifyStart justifyCenter justifyStretch justifyEnd" "placeStart placeCenter placeStretch placeEnd";
+  grid-template-rows: 100px 100px 100px;
+  grid-template-columns: 100px 100px 100px 100px;
+  grid-gap: 20px;
+  display: -ms-grid;
+  -ms-grid-rows: 100px 20px 100px 20px 100px;
+  -ms-grid-columns: 100px 20px 100px 20px 100px 20px 100px;
+}
+
+.c1 {
+  box-sizing: border-box;
+  min-width: 0;
+  -webkit-align-self: start;
+  -ms-flex-item-align: start;
+  align-self: start;
+  -ms-grid-row-align: start;
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  -ms-grid-row-span: 1;
+  display: block;
+  grid-area: alignStart;
+}
+
+.c3 {
+  box-sizing: border-box;
+  min-width: 0;
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+  -ms-grid-row-align: center;
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 1;
+  -ms-grid-row-span: 1;
+  display: block;
+  grid-area: alignCenter;
+}
+
+.c4 {
+  box-sizing: border-box;
+  min-width: 0;
+  -webkit-align-self: stretch;
+  -ms-flex-item-align: stretch;
+  align-self: stretch;
+  -ms-grid-row-align: stretch;
+  -ms-grid-row: 1;
+  -ms-grid-column: 5;
+  -ms-grid-column-span: 1;
+  -ms-grid-row-span: 1;
+  display: block;
+  grid-area: alignStretch;
+}
+
+.c5 {
+  box-sizing: border-box;
+  min-width: 0;
+  -webkit-align-self: end;
+  -ms-flex-item-align: end;
+  align-self: end;
+  -ms-grid-row-align: end;
+  -ms-grid-row: 1;
+  -ms-grid-column: 7;
+  -ms-grid-column-span: 1;
+  -ms-grid-row-span: 1;
+  display: block;
+  grid-area: alignEnd;
+}
+
+.c6 {
+  box-sizing: border-box;
+  min-width: 0;
+  justify-self: start;
+  -ms-grid-column-align: start;
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  -ms-grid-row-span: 1;
+  display: block;
+  grid-area: justifyStart;
+}
+
+.c7 {
+  box-sizing: border-box;
+  min-width: 0;
+  justify-self: center;
+  -ms-grid-column-align: center;
+  -ms-grid-row: 3;
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 1;
+  -ms-grid-row-span: 1;
+  display: block;
+  grid-area: justifyCenter;
+}
+
+.c8 {
+  box-sizing: border-box;
+  min-width: 0;
+  justify-self: stretch;
+  -ms-grid-column-align: stretch;
+  -ms-grid-row: 3;
+  -ms-grid-column: 5;
+  -ms-grid-column-span: 1;
+  -ms-grid-row-span: 1;
+  display: block;
+  grid-area: justifyStretch;
+}
+
+.c9 {
+  box-sizing: border-box;
+  min-width: 0;
+  justify-self: end;
+  -ms-grid-column-align: end;
+  -ms-grid-row: 3;
+  -ms-grid-column: 7;
+  -ms-grid-column-span: 1;
+  -ms-grid-row-span: 1;
+  display: block;
+  grid-area: justifyEnd;
+}
+
+.c10 {
+  box-sizing: border-box;
+  min-width: 0;
+  place-self: start;
+  -ms-grid-row-align: start;
+  -ms-grid-column-align: start;
+  -ms-grid-row: 5;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  -ms-grid-row-span: 1;
+  display: block;
+  grid-area: placeStart;
+}
+
+.c11 {
+  box-sizing: border-box;
+  min-width: 0;
+  place-self: center;
+  -ms-grid-row-align: center;
+  -ms-grid-column-align: center;
+  -ms-grid-row: 5;
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 1;
+  -ms-grid-row-span: 1;
+  display: block;
+  grid-area: placeCenter;
+}
+
+.c12 {
+  box-sizing: border-box;
+  min-width: 0;
+  place-self: stretch;
+  -ms-grid-row-align: stretch;
+  -ms-grid-column-align: stretch;
+  -ms-grid-row: 5;
+  -ms-grid-column: 5;
+  -ms-grid-column-span: 1;
+  -ms-grid-row-span: 1;
+  display: block;
+  grid-area: placeStretch;
+}
+
+.c13 {
+  box-sizing: border-box;
+  min-width: 0;
+  place-self: end;
+  -ms-grid-row-align: end;
+  -ms-grid-column-align: end;
+  -ms-grid-row: 5;
+  -ms-grid-column: 7;
+  -ms-grid-column-span: 1;
+  -ms-grid-row-span: 1;
+  display: block;
+  grid-area: placeEnd;
+}
+
+.c2 {
+  background-color: #F5F5F5;
+}
+
+<div
+  className="c0"
+>
+  <div
+    className="CssGrid__RawCssGridItem-bu5cxy-1 c1"
+  >
+    <div
+      className="c2"
+    >
+      left
+    </div>
+  </div>
+  <div
+    className="CssGrid__RawCssGridItem-bu5cxy-1 c3"
+  >
+    <div
+      className="c2"
+    >
+      center
+    </div>
+  </div>
+  <div
+    className="CssGrid__RawCssGridItem-bu5cxy-1 c4"
+  >
+    <div
+      className="c2"
+    >
+      stretch
+    </div>
+  </div>
+  <div
+    className="CssGrid__RawCssGridItem-bu5cxy-1 c5"
+  >
+    <div
+      className="c2"
+    >
+      end
+    </div>
+  </div>
+  <div
+    className="CssGrid__RawCssGridItem-bu5cxy-1 c6"
+  >
+    <div
+      className="c2"
+    >
+      left
+    </div>
+  </div>
+  <div
+    className="CssGrid__RawCssGridItem-bu5cxy-1 c7"
+  >
+    <div
+      className="c2"
+    >
+      center
+    </div>
+  </div>
+  <div
+    className="CssGrid__RawCssGridItem-bu5cxy-1 c8"
+  >
+    <div
+      className="c2"
+    >
+      stretch
+    </div>
+  </div>
+  <div
+    className="CssGrid__RawCssGridItem-bu5cxy-1 c9"
+  >
+    <div
+      className="c2"
+    >
+      end
+    </div>
+  </div>
+  <div
+    className="CssGrid__RawCssGridItem-bu5cxy-1 c10"
+  >
+    <div
+      className="c2"
+    >
+      left
+    </div>
+  </div>
+  <div
+    className="CssGrid__RawCssGridItem-bu5cxy-1 c11"
+  >
+    <div
+      className="c2"
+    >
+      center
+    </div>
+  </div>
+  <div
+    className="CssGrid__RawCssGridItem-bu5cxy-1 c12"
+  >
+    <div
+      className="c2"
+    >
+      stretch
+    </div>
+  </div>
+  <div
+    className="CssGrid__RawCssGridItem-bu5cxy-1 c13"
+  >
+    <div
+      className="c2"
+    >
+      end
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Atoms | CssGrid Items with different placements 1`] = `
+.c0 {
+  display: grid;
+  box-sizing: border-box;
+  grid-template-areas: "left top top" "left content content";
+  grid-template-rows: auto auto;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 20px;
+  display: -ms-grid;
+  -ms-grid-rows: auto 20px auto;
+  -ms-grid-columns: 1fr 20px 1fr 20px 1fr;
+}
+
+.c1 {
+  box-sizing: border-box;
+  min-width: 0;
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  -ms-grid-row-span: 3;
+  display: block;
+  grid-area: left;
+}
+
+.c3 {
+  box-sizing: border-box;
+  min-width: 0;
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 3;
+  -ms-grid-row-span: 1;
+  display: block;
+  grid-area: top;
+}
+
+.c4 {
+  box-sizing: border-box;
+  min-width: 0;
+  -ms-grid-row: 3;
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 3;
+  -ms-grid-row-span: 1;
+  display: block;
+  grid-area: content;
+}
+
+.c2 {
+  box-sizing: border-box;
+  border: 1px solid black;
+  background-color: #eee;
+  height: 100%;
+}
+
+<div
+  className="c0"
+>
+  <div
+    className="CssGrid__RawCssGridItem-bu5cxy-1 c1"
+  >
+    <div
+      className="c2"
+    >
+      Left
+    </div>
+  </div>
+  <div
+    className="CssGrid__RawCssGridItem-bu5cxy-1 c3"
+  >
+    <div
+      className="c2"
+    >
+      <div>
+        This item is mounted and stays mounted no matter what. However, it‘d be hidden with css
+      </div>
+    </div>
+  </div>
+  <div
+    className="CssGrid__RawCssGridItem-bu5cxy-1 c4"
+  >
+    <div
+      className="c2"
+    >
+      Content
     </div>
   </div>
 </div>
@@ -904,7 +1308,7 @@ exports[`Storyshots Atoms | CssGrid Shown on md+, hidden on small screens 1`] = 
   height: 100%;
 }
 
-@media (min-width:976px), {
+@media (min-width:976px) {
   .c0 {
     grid-template-areas: "left" "top" "content";
     grid-template-rows: auto auto;
@@ -960,7 +1364,7 @@ exports[`Storyshots Atoms | CssGrid Shown on md+, hidden on small screens 1`] = 
   className="c0"
 >
   <div
-    className="c1"
+    className="CssGrid__RawCssGridItem-bu5cxy-1 c1"
   >
     <div
       className="c2"
@@ -969,7 +1373,7 @@ exports[`Storyshots Atoms | CssGrid Shown on md+, hidden on small screens 1`] = 
     </div>
   </div>
   <div
-    className="c3"
+    className="CssGrid__RawCssGridItem-bu5cxy-1 c3"
   >
     <div
       className="c2"
@@ -980,7 +1384,7 @@ exports[`Storyshots Atoms | CssGrid Shown on md+, hidden on small screens 1`] = 
     </div>
   </div>
   <div
-    className="c4"
+    className="CssGrid__RawCssGridItem-bu5cxy-1 c4"
   >
     <div
       className="c2"
@@ -989,7 +1393,7 @@ exports[`Storyshots Atoms | CssGrid Shown on md+, hidden on small screens 1`] = 
     </div>
   </div>
   <div
-    className="c5"
+    className="CssGrid__RawCssGridItem-bu5cxy-1 c5"
   >
     <div
       className="c2"
@@ -1024,13 +1428,6 @@ exports[`Storyshots Atoms | CssGrid Shown on small screen sizes, hidden on md+ 1
   grid-area: left;
 }
 
-.c5 {
-  box-sizing: border-box;
-  min-width: 0;
-  display: none;
-  grid-area: none;
-}
-
 .c3 {
   box-sizing: border-box;
   min-width: 0;
@@ -1053,6 +1450,13 @@ exports[`Storyshots Atoms | CssGrid Shown on small screen sizes, hidden on md+ 1
   grid-area: content;
 }
 
+.c5 {
+  box-sizing: border-box;
+  min-width: 0;
+  display: none;
+  grid-area: none;
+}
+
 .c2 {
   box-sizing: border-box;
   border: 1px solid black;
@@ -1060,7 +1464,7 @@ exports[`Storyshots Atoms | CssGrid Shown on small screen sizes, hidden on md+ 1
   height: 100%;
 }
 
-@media (min-width:976px), {
+@media (min-width:976px) {
   .c0 {
     grid-template-areas: "left" "content";
     grid-template-rows: auto auto;
@@ -1084,13 +1488,6 @@ exports[`Storyshots Atoms | CssGrid Shown on small screen sizes, hidden on md+ 1
 }
 
 @media (min-width:976px) {
-  .c5 {
-    display: none;
-    grid-area: none;
-  }
-}
-
-@media (min-width:976px) {
   .c3 {
     display: none;
     grid-area: none;
@@ -1108,11 +1505,18 @@ exports[`Storyshots Atoms | CssGrid Shown on small screen sizes, hidden on md+ 1
   }
 }
 
+@media (min-width:976px) {
+  .c5 {
+    display: none;
+    grid-area: none;
+  }
+}
+
 <div
   className="c0"
 >
   <div
-    className="c1"
+    className="CssGrid__RawCssGridItem-bu5cxy-1 c1"
   >
     <div
       className="c2"
@@ -1121,7 +1525,7 @@ exports[`Storyshots Atoms | CssGrid Shown on small screen sizes, hidden on md+ 1
     </div>
   </div>
   <div
-    className="c3"
+    className="CssGrid__RawCssGridItem-bu5cxy-1 c3"
   >
     <div
       className="c2"
@@ -1132,7 +1536,7 @@ exports[`Storyshots Atoms | CssGrid Shown on small screen sizes, hidden on md+ 1
     </div>
   </div>
   <div
-    className="c4"
+    className="CssGrid__RawCssGridItem-bu5cxy-1 c4"
   >
     <div
       className="c2"
@@ -1141,7 +1545,7 @@ exports[`Storyshots Atoms | CssGrid Shown on small screen sizes, hidden on md+ 1
     </div>
   </div>
   <div
-    className="c5"
+    className="CssGrid__RawCssGridItem-bu5cxy-1 c5"
   >
     <div
       className="c2"
@@ -1231,7 +1635,7 @@ exports[`Storyshots Atoms | CssGrid Simple CssGrid 1`] = `
   className="c0"
 >
   <div
-    className="c1"
+    className="CssGrid__RawCssGridItem-bu5cxy-1 c1"
   >
     <div
       className="c2"
@@ -1240,7 +1644,7 @@ exports[`Storyshots Atoms | CssGrid Simple CssGrid 1`] = `
     </div>
   </div>
   <div
-    className="c3"
+    className="CssGrid__RawCssGridItem-bu5cxy-1 c3"
   >
     <div
       className="c2"
@@ -1249,7 +1653,7 @@ exports[`Storyshots Atoms | CssGrid Simple CssGrid 1`] = `
     </div>
   </div>
   <div
-    className="c4"
+    className="CssGrid__RawCssGridItem-bu5cxy-1 c4"
   >
     <div
       className="c2"
@@ -1258,7 +1662,7 @@ exports[`Storyshots Atoms | CssGrid Simple CssGrid 1`] = `
     </div>
   </div>
   <div
-    className="c5"
+    className="CssGrid__RawCssGridItem-bu5cxy-1 c5"
   >
     <div
       className="c2"
@@ -1267,7 +1671,7 @@ exports[`Storyshots Atoms | CssGrid Simple CssGrid 1`] = `
     </div>
   </div>
   <div
-    className="c6"
+    className="CssGrid__RawCssGridItem-bu5cxy-1 c6"
   >
     <div
       className="c2"

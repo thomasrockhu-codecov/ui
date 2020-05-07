@@ -6,12 +6,12 @@ import styled from 'styled-components';
 import { Flexbox, Typography, TabTitle } from '../..';
 import { assert } from '../../common/utils';
 import { useKeyboardNavigation } from '../Tabs/useKeyboardNavigation';
-import { ItemComponent, ItemProps, TitleComponent, Component } from './TabsNav.types';
+import { ItemProps, TitleComponent, Component } from './TabsNav.types';
 
-const Item: ItemComponent = ({ children }) => {
+export const Item: React.FC<ItemProps> = ({ children }) => {
   return <div>{children}</div>;
 };
-Item.displayName = 'TabsNav.Tab';
+(Item as any).displayName = 'TabsNav.Tab';
 
 const StyledLink = styled(Link)`
   display: flex;
@@ -55,7 +55,7 @@ const isItemOrUndefined = (x: any): x is { type: typeof Item; props: ItemProps }
 
 // TODO: fix ts issue with height prop
 // @ts-ignore
-const TabsNav: Component = (withRouter(({ children, location, height = 11, className }) => {
+export const TabsNav: Component = (withRouter(({ children, location, height = 11, className }) => {
   const { setRef, onKeyDown } = useKeyboardNavigation({
     itemsLength: React.Children.count(children),
   });

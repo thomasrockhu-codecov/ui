@@ -1,0 +1,20 @@
+import { Meta, Story, Preview, Props } from '@storybook/addon-docs/blocks';
+import { FadedScroll } from './FadedScroll.tsx';
+
+<Meta title="Atoms | FadedScroll" />
+
+# FadedScroll
+
+This component provides a faded look to the bottom of a vertically scrollable element.
+
+## Usage
+
+This component is mainly intended to give an effect on screen sizes larger than 'md'.
+We try to not have scrollbars in mobile. The reason being the user experience when the page also have a scrollbar making it harder to navigate with multiple scrollbars.
+In some rare cases you still might need this effect on mobile screen sizes like in the modal component where to body scroll is locked. In cases like that you can use the `enableMobileFade` prop.
+
+You can provide a maxHeight to the component or let this component take all available space of parent and if the content exceeds that height then the scrollbar will appear.
+
+## Props
+
+<Props of={FadedScroll} />

@@ -1,8 +1,22 @@
 import React from 'react';
-import { storiesOf } from '@storybook/react';
 import { Legend } from '../..';
 
-storiesOf('Atoms | Legend', module)
-  .add('Docs', () => <p>The Legend component defines a caption for the Fieldset component.</p>)
-  .add('Default', () => <Legend>Caption text</Legend>)
-  .add('Looking like a label', () => <Legend styleType="label">Caption text</Legend>);
+export default {
+  title: 'Atoms | Legend',
+  parameters: {
+    component: Legend,
+  },
+};
+
+export const docs = () => <p>The Legend component defines a caption for the Fieldset component.</p>;
+export const defaultStory = () => <Legend>Caption text</Legend>;
+
+defaultStory.story = {
+  name: 'Default',
+};
+
+export const lookingLikeALabel = () => <Legend styleType="label">Caption text</Legend>;
+
+lookingLikeALabel.story = {
+  name: 'Looking like a label',
+};

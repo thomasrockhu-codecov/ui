@@ -56,8 +56,8 @@ export const placeholderNormalizaion = css`
   }
 `;
 
-const Input = styled(NormalizedElements.Input).attrs({ type: 'text' })<
-  Partial<Props> & { sizeProp: Props['size'] }
+const Input = styled(NormalizedElements.Input).attrs(p => ({ type: p.type || 'text' }))<
+  Partial<Props>
 >`
   border: 0;
   width: 100%;
@@ -97,25 +97,17 @@ const components = {
   AddonBox,
 };
 
-export const Text: React.FC<Props> & {
-  /**
-   * This will allow you to customize
-   * inner parts with styled-components
-   * @example
-   * const CustomText = styled(Input.Text)`
-   *  ${Input.Text.components.Input} {
-   *    color: pink;
-   * }
-   * `
-   * */
-  components: typeof components;
-} = props => {
+const getAriaProps = R.pickBy((val, key) => key.startsWith('aria-'));
+const getDataProps = R.pickBy((val, key) => key.startsWith('data-'));
+
+const TextComponent = React.forwardRef<HTMLInputElement, Props>((props, ref) => {
   const {
     autoFocus,
     defaultValue,
     disabled,
     error,
     leftAddon,
+    maxLength,
     name,
     onBlur,
     onChange,
@@ -131,11 +123,15 @@ export const Text: React.FC<Props> & {
     success,
     value,
     visuallyEmphasiseRequired,
+    type,
   } = props;
 
   return (
     <FormField
-      {...R.pick(['error', 'extraInfo', 'hideLabel', 'label', 'width'], props)}
+      {...R.pick(
+        ['error', 'extraInfo', 'hideLabel', 'label', 'labelTooltip', 'className', 'width'],
+        props,
+      )}
       required={visuallyEmphasiseRequired}
     >
       <Typography type="secondary" color={t => t.color.text}>
@@ -147,6 +143,7 @@ export const Text: React.FC<Props> & {
               disabled,
               error,
               leftAddon,
+              maxLength,
               name,
               onBlur,
               onChange,
@@ -158,10 +155,14 @@ export const Text: React.FC<Props> & {
               placeholder,
               required,
               rightAddon,
-              sizeProp: size,
+              size,
               success,
               value,
+              type,
+              ref,
             }}
+            {...getAriaProps(props)}
+            {...getDataProps(props)}
             {...(hasError(error) ? { 'aria-invalid': true } : {})}
           />
           {leftAddon && (
@@ -178,5 +179,7 @@ export const Text: React.FC<Props> & {
       </Typography>
     </FormField>
   );
-};
+});
+
+export const Text: typeof TextComponent & { components?: typeof components } = TextComponent;
 Text.components = components;

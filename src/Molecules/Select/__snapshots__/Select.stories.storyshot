@@ -10,7 +10,7 @@ exports[`Storyshots DEPRECATED | Molecules / Select  Select with hidden label 1`
   clip: rect(1px,1px,1px,1px);
 }
 
-.c7 {
+.c6 {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -33,7 +33,7 @@ exports[`Storyshots DEPRECATED | Molecules / Select  Select with hidden label 1`
   line-height: 1.4285714285714286;
 }
 
-.c5 {
+.c4 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
   margin: 0;
@@ -50,7 +50,7 @@ exports[`Storyshots DEPRECATED | Molecules / Select  Select with hidden label 1`
   border-radius: 0;
 }
 
-.c6 {
+.c7 {
   -webkit-transform: translateY(-50%) rotate(0);
   -ms-transform: translateY(-50%) rotate(0);
   transform: translateY(-50%) rotate(0);
@@ -78,7 +78,7 @@ exports[`Storyshots DEPRECATED | Molecules / Select  Select with hidden label 1`
   border-color: #4B4B46;
 }
 
-.c4 {
+.c5 {
   height: 32px;
   width: 100%;
   line-height: 32px;
@@ -139,10 +139,10 @@ exports[`Storyshots DEPRECATED | Molecules / Select  Select with hidden label 1`
     <svg
       aria-hidden="true"
       className="c6 c7"
+      focus={false}
       focusable="false"
       preserveAspectRatio="xMidYMid meet"
       role="presentation"
-      size={5}
       viewBox="0 0 24 24"
     >
       <polygon
@@ -154,7 +154,7 @@ exports[`Storyshots DEPRECATED | Molecules / Select  Select with hidden label 1`
 `;
 
 exports[`Storyshots DEPRECATED | Molecules / Select  Select with overflowing placeholder 1`] = `
-.c6 {
+.c5 {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -177,7 +177,7 @@ exports[`Storyshots DEPRECATED | Molecules / Select  Select with overflowing pla
   line-height: 1.4285714285714286;
 }
 
-.c4 {
+.c3 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
   margin: 0;
@@ -194,7 +194,7 @@ exports[`Storyshots DEPRECATED | Molecules / Select  Select with overflowing pla
   border-radius: 0;
 }
 
-.c5 {
+.c6 {
   -webkit-transform: translateY(-50%) rotate(0);
   -ms-transform: translateY(-50%) rotate(0);
   transform: translateY(-50%) rotate(0);
@@ -222,7 +222,7 @@ exports[`Storyshots DEPRECATED | Molecules / Select  Select with overflowing pla
   border-color: #4B4B46;
 }
 
-.c3 {
+.c4 {
   height: 32px;
   width: 100%;
   line-height: 32px;
@@ -276,10 +276,10 @@ exports[`Storyshots DEPRECATED | Molecules / Select  Select with overflowing pla
       <svg
         aria-hidden="true"
         className="c5 c6"
+        focus={false}
         focusable="false"
         preserveAspectRatio="xMidYMid meet"
         role="presentation"
-        size={5}
         viewBox="0 0 24 24"
       >
         <polygon
@@ -292,7 +292,7 @@ exports[`Storyshots DEPRECATED | Molecules / Select  Select with overflowing pla
 `;
 
 exports[`Storyshots DEPRECATED | Molecules / Select  Select with placeholder 1`] = `
-.c6 {
+.c5 {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -315,7 +315,7 @@ exports[`Storyshots DEPRECATED | Molecules / Select  Select with placeholder 1`]
   line-height: 1.4285714285714286;
 }
 
-.c4 {
+.c3 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
   margin: 0;
@@ -332,7 +332,7 @@ exports[`Storyshots DEPRECATED | Molecules / Select  Select with placeholder 1`]
   border-radius: 0;
 }
 
-.c5 {
+.c6 {
   -webkit-transform: translateY(-50%) rotate(0);
   -ms-transform: translateY(-50%) rotate(0);
   transform: translateY(-50%) rotate(0);
@@ -360,7 +360,7 @@ exports[`Storyshots DEPRECATED | Molecules / Select  Select with placeholder 1`]
   border-color: #4B4B46;
 }
 
-.c3 {
+.c4 {
   height: 32px;
   width: 100%;
   line-height: 32px;
@@ -423,10 +423,10 @@ exports[`Storyshots DEPRECATED | Molecules / Select  Select with placeholder 1`]
     <svg
       aria-hidden="true"
       className="c5 c6"
+      focus={false}
       focusable="false"
       preserveAspectRatio="xMidYMid meet"
       role="presentation"
-      size={5}
       viewBox="0 0 24 24"
     >
       <polygon
@@ -438,7 +438,7 @@ exports[`Storyshots DEPRECATED | Molecules / Select  Select with placeholder 1`]
 `;
 
 exports[`Storyshots DEPRECATED | Molecules / Select  Select with placeholder and preselected value 1`] = `
-.c6 {
+.c5 {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -461,7 +461,7 @@ exports[`Storyshots DEPRECATED | Molecules / Select  Select with placeholder and
   line-height: 1.4285714285714286;
 }
 
-.c4 {
+.c3 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
   margin: 0;
@@ -478,7 +478,7 @@ exports[`Storyshots DEPRECATED | Molecules / Select  Select with placeholder and
   border-radius: 0;
 }
 
-.c5 {
+.c6 {
   -webkit-transform: translateY(-50%) rotate(0);
   -ms-transform: translateY(-50%) rotate(0);
   transform: translateY(-50%) rotate(0);
@@ -506,7 +506,7 @@ exports[`Storyshots DEPRECATED | Molecules / Select  Select with placeholder and
   border-color: #4B4B46;
 }
 
-.c3 {
+.c4 {
   height: 32px;
   width: 100%;
   line-height: 32px;
@@ -569,10 +569,10 @@ exports[`Storyshots DEPRECATED | Molecules / Select  Select with placeholder and
     <svg
       aria-hidden="true"
       className="c5 c6"
+      focus={false}
       focusable="false"
       preserveAspectRatio="xMidYMid meet"
       role="presentation"
-      size={5}
       viewBox="0 0 24 24"
     >
       <polygon
@@ -593,7 +593,7 @@ exports[`Storyshots DEPRECATED | Molecules / Select  Select with prepended empty
   clip: rect(1px,1px,1px,1px);
 }
 
-.c7 {
+.c6 {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -616,7 +616,7 @@ exports[`Storyshots DEPRECATED | Molecules / Select  Select with prepended empty
   line-height: 1.4285714285714286;
 }
 
-.c5 {
+.c4 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
   margin: 0;
@@ -633,7 +633,7 @@ exports[`Storyshots DEPRECATED | Molecules / Select  Select with prepended empty
   border-radius: 0;
 }
 
-.c6 {
+.c7 {
   -webkit-transform: translateY(-50%) rotate(0);
   -ms-transform: translateY(-50%) rotate(0);
   transform: translateY(-50%) rotate(0);
@@ -661,7 +661,7 @@ exports[`Storyshots DEPRECATED | Molecules / Select  Select with prepended empty
   border-color: #4B4B46;
 }
 
-.c4 {
+.c5 {
   height: 32px;
   width: 100%;
   line-height: 32px;
@@ -727,10 +727,10 @@ exports[`Storyshots DEPRECATED | Molecules / Select  Select with prepended empty
     <svg
       aria-hidden="true"
       className="c6 c7"
+      focus={false}
       focusable="false"
       preserveAspectRatio="xMidYMid meet"
       role="presentation"
-      size={5}
       viewBox="0 0 24 24"
     >
       <polygon
@@ -742,7 +742,7 @@ exports[`Storyshots DEPRECATED | Molecules / Select  Select with prepended empty
 `;
 
 exports[`Storyshots DEPRECATED | Molecules / Select  Select with preselected value 1`] = `
-.c6 {
+.c5 {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -765,7 +765,7 @@ exports[`Storyshots DEPRECATED | Molecules / Select  Select with preselected val
   line-height: 1.4285714285714286;
 }
 
-.c4 {
+.c3 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
   margin: 0;
@@ -782,7 +782,7 @@ exports[`Storyshots DEPRECATED | Molecules / Select  Select with preselected val
   border-radius: 0;
 }
 
-.c5 {
+.c6 {
   -webkit-transform: translateY(-50%) rotate(0);
   -ms-transform: translateY(-50%) rotate(0);
   transform: translateY(-50%) rotate(0);
@@ -810,7 +810,7 @@ exports[`Storyshots DEPRECATED | Molecules / Select  Select with preselected val
   border-color: #4B4B46;
 }
 
-.c3 {
+.c4 {
   height: 32px;
   width: 100%;
   line-height: 32px;
@@ -867,10 +867,10 @@ exports[`Storyshots DEPRECATED | Molecules / Select  Select with preselected val
     <svg
       aria-hidden="true"
       className="c5 c6"
+      focus={false}
       focusable="false"
       preserveAspectRatio="xMidYMid meet"
       role="presentation"
-      size={5}
       viewBox="0 0 24 24"
     >
       <polygon
@@ -882,7 +882,7 @@ exports[`Storyshots DEPRECATED | Molecules / Select  Select with preselected val
 `;
 
 exports[`Storyshots DEPRECATED | Molecules / Select  Select without placeholder 1`] = `
-.c6 {
+.c5 {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -905,7 +905,7 @@ exports[`Storyshots DEPRECATED | Molecules / Select  Select without placeholder 
   line-height: 1.4285714285714286;
 }
 
-.c4 {
+.c3 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
   margin: 0;
@@ -922,7 +922,7 @@ exports[`Storyshots DEPRECATED | Molecules / Select  Select without placeholder 
   border-radius: 0;
 }
 
-.c5 {
+.c6 {
   -webkit-transform: translateY(-50%) rotate(0);
   -ms-transform: translateY(-50%) rotate(0);
   transform: translateY(-50%) rotate(0);
@@ -950,7 +950,7 @@ exports[`Storyshots DEPRECATED | Molecules / Select  Select without placeholder 
   border-color: #4B4B46;
 }
 
-.c3 {
+.c4 {
   height: 32px;
   width: 100%;
   line-height: 32px;
@@ -1004,10 +1004,10 @@ exports[`Storyshots DEPRECATED | Molecules / Select  Select without placeholder 
     <svg
       aria-hidden="true"
       className="c5 c6"
+      focus={false}
       focusable="false"
       preserveAspectRatio="xMidYMid meet"
       role="presentation"
-      size={5}
       viewBox="0 0 24 24"
     >
       <polygon

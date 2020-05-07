@@ -210,10 +210,6 @@ exports[`Storyshots Molecules | LabeledValue Integration: LabeledValue with cust
 `;
 
 exports[`Storyshots Molecules | LabeledValue Integration: LabeledValue with negative development and currency 1`] = `
-.c4 {
-  box-sizing: border-box;
-}
-
 .c3 {
   box-sizing: border-box;
   display: -webkit-box;
@@ -234,6 +230,10 @@ exports[`Storyshots Molecules | LabeledValue Integration: LabeledValue with nega
 
 .c3 > *:not(:first-child) {
   padding-top: 0;
+}
+
+.c4 {
+  box-sizing: border-box;
 }
 
 .c2 {
@@ -333,10 +333,6 @@ exports[`Storyshots Molecules | LabeledValue Integration: LabeledValue with nega
 `;
 
 exports[`Storyshots Molecules | LabeledValue Integration: LabeledValue with positive development and currency 1`] = `
-.c4 {
-  box-sizing: border-box;
-}
-
 .c3 {
   box-sizing: border-box;
   display: -webkit-box;
@@ -357,6 +353,10 @@ exports[`Storyshots Molecules | LabeledValue Integration: LabeledValue with posi
 
 .c3 > *:not(:first-child) {
   padding-top: 0;
+}
+
+.c4 {
+  box-sizing: border-box;
 }
 
 .c2 {

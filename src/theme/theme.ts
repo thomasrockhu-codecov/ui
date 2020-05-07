@@ -41,10 +41,10 @@ export const rawColor = {
   index: '#FFCF00',
 
   // ACCESSIBLE FUNCTIONAL COLORS
-  a11yCta: '#2D67FF',
-  a11yPositive: '#008A00',
-  a11yNegative: '#E81700',
-  a11yIndex: '#C15700',
+  a11yCta: '#0030B2',
+  a11yPositive: '#00890F',
+  a11yNegative: '#800100',
+  a11yIndex: '#DFC700',
 } as RawColor;
 
 const breakpoints: Theme['breakpoints'] = {
@@ -72,6 +72,15 @@ const size: Theme['size'] = {
   md: 976,
   lg: 1280,
   xl: 1600,
+};
+
+const zIndex: Theme['zIndex'] = {
+  footer: 100,
+  header: 200,
+  dropdown: 300,
+  overlay: 400,
+  modal: 500,
+  overlayInModal: 600,
 };
 
 const getSizesValues = pipe(
@@ -109,19 +118,43 @@ export const createTheme = (config: ThemeConfig = {}): Theme => {
     color: {
       backgroundInput: rawColor.white,
       background: rawColor.gray7,
+      backgroundBlack: rawColor.black,
       backgroundDark: rawColor.gray0,
+      barScaleActiveBar: rawColor.complementaryBlue1,
+      barScaleInactiveBar: rawColor.gray6,
+      bubbleBackground: rawColor.white,
+      bubbleBorder: rawColor.gray4,
       buttonSecondaryBackground: rawColor.white,
       buttonText: rawColor.white,
       buy: a11yColors ? rawColor.a11yCta : rawColor.cta,
+      buyActive: a11yColors
+        ? Color(rawColor.a11yCta)
+            .darken(0.3)
+            .string()
+        : Color(rawColor.cta)
+            .darken(0.3)
+            .string(),
       borderActive: a11yColors ? rawColor.a11yCta : rawColor.cta,
       card: rawColor.white,
       cta: a11yColors ? rawColor.a11yCta : rawColor.cta,
+      /** @deprecated  */ creditsPiePrimary: rawColor.complementaryPink1,
+      /** @deprecated  */ creditsPieSecondary: rawColor.complementaryPink2,
       /** @deprecated  */ disabled: rawColor.gray3,
       disabledText: rawColor.gray3,
       disabledBackground: rawColor.gray6,
       divider: rawColor.gray6,
       label: rawColor.gray2,
       selectOptionBackground: rawColor.white,
+      menuAccent1: rawColor.brandGreen,
+      menuAccent2: rawColor.brandTurquoise,
+      menuAccent3: rawColor.index,
+      menuAccent4: rawColor.brandPink,
+      menuAccent5: rawColor.brandBlue,
+      mapColor1: rawColor.complementaryBlue2,
+      mapColor2: rawColor.complementaryBlue1,
+      mapColor3: rawColor.brandBlue,
+      mapColor4: rawColor.gray1,
+      mapColor5: rawColor.gray3,
       modalBackdrop: Color(rawColor.gray2)
         .alpha(0.63)
         .rgb()
@@ -130,12 +163,19 @@ export const createTheme = (config: ThemeConfig = {}): Theme => {
       negative: a11yColors ? rawColor.a11yNegative : rawColor.negative,
       positive: a11yColors ? rawColor.a11yPositive : rawColor.positive,
       sell: a11yColors ? rawColor.a11yNegative : rawColor.negative,
+      sellActive: a11yColors
+        ? Color(rawColor.a11yNegative)
+            .darken(0.3)
+            .string()
+        : Color(rawColor.negative)
+            .darken(0.3)
+            .string(),
       shadowCard: Color(rawColor.black)
         .alpha(0.03)
         .rgb()
         .string(),
       shadowModal: Color(rawColor.black)
-        .alpha(0.05)
+        .alpha(0.16)
         .rgb()
         .string(),
       shadowInput: Color(rawColor.black)
@@ -146,10 +186,16 @@ export const createTheme = (config: ThemeConfig = {}): Theme => {
         .alpha(0.05)
         .rgb()
         .string(),
+      shareville: rawColor.complementaryGreen1,
+      skeleton: rawColor.gray6,
       spinnerBlack: rawColor.black,
       spinnerWhite: rawColor.white,
+      starRating: rawColor.index,
+      starRatingOff: rawColor.gray6,
+      streamingBolt: rawColor.index,
       svgFill: rawColor.gray0,
       svgStroke: rawColor.gray2,
+      svgStokeLight: rawColor.white,
       text: rawColor.gray0,
       textLight: rawColor.white, // FIXME: to be removed later
       warning: a11yColors ? rawColor.a11yIndex : rawColor.index,
@@ -163,6 +209,43 @@ export const createTheme = (config: ThemeConfig = {}): Theme => {
       generationSavingsTimelineColor3: rawColor.brandBlue,
       generationSavingsTimelineColor4: rawColor.complementaryBlue1,
       orderDepthBackground: rawColor.gray6,
+      orderDepthDarkBackground: rawColor.gray5,
+      loanRatesGraphColor2: rawColor.complementaryBlue2,
+      barChartColor1: rawColor.brandBlue,
+      barChartColor2: rawColor.complementaryBlue2,
+      barChartColor3: rawColor.complementaryBlue1,
+      barChartColor4: rawColor.complementaryGreen1,
+      barChartColor5: rawColor.complementaryPink1,
+      barChartColor6: rawColor.index,
+      barChartColor7: rawColor.complementaryGreen1,
+      columnChartColor1: rawColor.brandGreen,
+      columnChartColor2: rawColor.complementaryGreen2,
+      columnChartColor3: rawColor.complementaryGreen1,
+      columnChartColor4: rawColor.complementaryTurquoise1,
+      columnChartColor5: rawColor.complementaryTurquoise2,
+      pieChartColor1: rawColor.complementaryPink2,
+      pieChartColor2: rawColor.brandPink,
+      pieChartColor3: rawColor.gray4,
+      pill1: rawColor.complementaryPink1,
+      pill2: rawColor.complementaryTurquoise1,
+      pill3: rawColor.complementaryGreen1,
+      pill4: rawColor.complementaryBlue1,
+      pill5: rawColor.brandPink,
+      pill6: rawColor.brandTurquoise,
+      pill7: rawColor.brandBlue,
+      pill8: rawColor.complementaryGreen2,
+      pill9: rawColor.complementaryBlue2,
+      pill10: rawColor.complementaryPink2,
+      indicatorPillColor1: rawColor.complementaryPink1,
+      indicatorPillColor2: rawColor.complementaryTurquoise1,
+      indicatorPillColor3: rawColor.complementaryGreen1,
+      indicatorPillColor4: rawColor.complementaryBlue1,
+      indicatorPillColor5: rawColor.brandPink,
+      indicatorPillColor6: rawColor.brandTurquoise,
+      indicatorPillColor7: rawColor.brandBlue,
+      indicatorPillColor8: rawColor.complementaryGreen2,
+      indicatorPillColor9: rawColor.complementaryBlue2,
+      indicatorPillColor10: rawColor.complementaryPink2,
     },
     media: {
       between: (s1, s2) => {
@@ -189,6 +272,7 @@ export const createTheme = (config: ThemeConfig = {}): Theme => {
     },
     size: deprecate('theme.size, please use theme.breakpoint instead.')(size),
     spacing,
+    zIndex,
   };
   return theme;
 };

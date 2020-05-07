@@ -14,6 +14,13 @@ const getSizeStyles = (size: Props['size']) => {
     return null;
   }
 
+  if (size === 'unset') {
+    return `
+      max-width: none;
+      flex-basis: auto;
+    `;
+  }
+
   if (isNumber(size)) {
     const percentage = `${oneCol * size}%`;
 
@@ -99,6 +106,8 @@ const sanitizeProps = R.omit([
   'basis',
   'order',
   'justifyContent',
+  'width',
+  'flex',
 ]);
 const SanitizedDiv = React.forwardRef((props: Props, ref: React.Ref<HTMLDivElement>) => (
   <div {...sanitizeProps(props)} ref={ref} />

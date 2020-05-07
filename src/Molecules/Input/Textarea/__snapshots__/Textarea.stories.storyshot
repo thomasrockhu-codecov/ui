@@ -5,7 +5,19 @@ Array [
   <p>
     Actions are a bit laggy because of the @storybook/addon-actions. Prod performance is not affected.
   </p>,
-  .c1 {
+  .c3 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c1 {
   text-overflow: ellipsis;
   white-space: nowrap;
   cursor: pointer;
@@ -20,7 +32,7 @@ Array [
   line-height: 1.4285714285714286;
 }
 
-.c3 {
+.c4 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
   margin: 0;
@@ -34,7 +46,7 @@ Array [
   display: inline-block;
 }
 
-.c4 {
+.c5 {
   font-family: inherit;
   font-size: 100%;
   line-height: 1.15;
@@ -52,41 +64,41 @@ Array [
   background-color: #FFFFFF;
 }
 
-.c4:hover {
+.c5:hover {
   border-color: #4B4B46;
 }
 
-.c4:focus {
+.c5:focus {
   border-color: #0046FF;
 }
 
-.c4::-moz-placeholder,
-.c4:-ms-input-placeholder,
-.c4::-webkit-input-placeholder {
+.c5::-moz-placeholder,
+.c5:-ms-input-placeholder,
+.c5::-webkit-input-placeholder {
   height: inherit;
   line-height: inherit;
   color: #6E6E69;
 }
 
-.c4::-moz-placeholder,
-.c4:-ms-input-placeholder,
-.c4::-moz-placeholder {
+.c5::-moz-placeholder,
+.c5:-ms-input-placeholder,
+.c5::-moz-placeholder {
   height: inherit;
   line-height: inherit;
   color: #6E6E69;
 }
 
-.c4::-moz-placeholder,
-.c4:-ms-input-placeholder,
-.c4:-ms-input-placeholder {
+.c5::-moz-placeholder,
+.c5:-ms-input-placeholder,
+.c5:-ms-input-placeholder {
   height: inherit;
   line-height: inherit;
   color: #6E6E69;
 }
 
-.c4::-moz-placeholder,
-.c4:-ms-input-placeholder,
-.c4::placeholder {
+.c5::-moz-placeholder,
+.c5:-ms-input-placeholder,
+.c5::placeholder {
   height: inherit;
   line-height: inherit;
   color: #6E6E69;
@@ -102,13 +114,17 @@ Array [
       <span
         className="c2"
       >
-        Label 
+        <div
+          className="c3"
+        >
+          Label 
+        </div>
         <div>
           <span
-            className="c3"
+            className="c4"
           >
             <textarea
-              className="c4"
+              className="NormalizedTextarea__Textarea-i5on9-0 c5"
               onBlur={[Function]}
               onChange={[Function]}
               onClick={[Function]}
@@ -128,6 +144,18 @@ Array [
 `;
 
 exports[`Storyshots Molecules | Input / Textarea Default 1`] = `
+.c3 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
 .c1 {
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -143,7 +171,7 @@ exports[`Storyshots Molecules | Input / Textarea Default 1`] = `
   line-height: 1.4285714285714286;
 }
 
-.c3 {
+.c4 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
   margin: 0;
@@ -157,7 +185,7 @@ exports[`Storyshots Molecules | Input / Textarea Default 1`] = `
   display: inline-block;
 }
 
-.c4 {
+.c5 {
   font-family: inherit;
   font-size: 100%;
   line-height: 1.15;
@@ -175,41 +203,41 @@ exports[`Storyshots Molecules | Input / Textarea Default 1`] = `
   background-color: #FFFFFF;
 }
 
-.c4:hover {
+.c5:hover {
   border-color: #4B4B46;
 }
 
-.c4:focus {
+.c5:focus {
   border-color: #0046FF;
 }
 
-.c4::-moz-placeholder,
-.c4:-ms-input-placeholder,
-.c4::-webkit-input-placeholder {
+.c5::-moz-placeholder,
+.c5:-ms-input-placeholder,
+.c5::-webkit-input-placeholder {
   height: inherit;
   line-height: inherit;
   color: #6E6E69;
 }
 
-.c4::-moz-placeholder,
-.c4:-ms-input-placeholder,
-.c4::-moz-placeholder {
+.c5::-moz-placeholder,
+.c5:-ms-input-placeholder,
+.c5::-moz-placeholder {
   height: inherit;
   line-height: inherit;
   color: #6E6E69;
 }
 
-.c4::-moz-placeholder,
-.c4:-ms-input-placeholder,
-.c4:-ms-input-placeholder {
+.c5::-moz-placeholder,
+.c5:-ms-input-placeholder,
+.c5:-ms-input-placeholder {
   height: inherit;
   line-height: inherit;
   color: #6E6E69;
 }
 
-.c4::-moz-placeholder,
-.c4:-ms-input-placeholder,
-.c4::placeholder {
+.c5::-moz-placeholder,
+.c5:-ms-input-placeholder,
+.c5::placeholder {
   height: inherit;
   line-height: inherit;
   color: #6E6E69;
@@ -225,13 +253,17 @@ exports[`Storyshots Molecules | Input / Textarea Default 1`] = `
     <span
       className="c2"
     >
-      Label 
+      <div
+        className="c3"
+      >
+        Label 
+      </div>
       <div>
         <span
-          className="c3"
+          className="c4"
         >
           <textarea
-            className="c4"
+            className="NormalizedTextarea__Textarea-i5on9-0 c5"
             placeholder="Placeholder"
             rows={3}
           />
@@ -243,6 +275,18 @@ exports[`Storyshots Molecules | Input / Textarea Default 1`] = `
 `;
 
 exports[`Storyshots Molecules | Input / Textarea Disabled 1`] = `
+.c3 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
 .c1 {
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -258,7 +302,7 @@ exports[`Storyshots Molecules | Input / Textarea Disabled 1`] = `
   line-height: 1.4285714285714286;
 }
 
-.c3 {
+.c4 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
   margin: 0;
@@ -272,7 +316,7 @@ exports[`Storyshots Molecules | Input / Textarea Disabled 1`] = `
   display: inline-block;
 }
 
-.c4 {
+.c5 {
   font-family: inherit;
   font-size: 100%;
   line-height: 1.15;
@@ -290,37 +334,37 @@ exports[`Storyshots Molecules | Input / Textarea Disabled 1`] = `
   background-color: #EBEBE8;
 }
 
-.c4:focus {
+.c5:focus {
   border-color: #0046FF;
 }
 
-.c4::-moz-placeholder,
-.c4:-ms-input-placeholder,
-.c4::-webkit-input-placeholder {
+.c5::-moz-placeholder,
+.c5:-ms-input-placeholder,
+.c5::-webkit-input-placeholder {
   height: inherit;
   line-height: inherit;
   color: #6E6E69;
 }
 
-.c4::-moz-placeholder,
-.c4:-ms-input-placeholder,
-.c4::-moz-placeholder {
+.c5::-moz-placeholder,
+.c5:-ms-input-placeholder,
+.c5::-moz-placeholder {
   height: inherit;
   line-height: inherit;
   color: #6E6E69;
 }
 
-.c4::-moz-placeholder,
-.c4:-ms-input-placeholder,
-.c4:-ms-input-placeholder {
+.c5::-moz-placeholder,
+.c5:-ms-input-placeholder,
+.c5:-ms-input-placeholder {
   height: inherit;
   line-height: inherit;
   color: #6E6E69;
 }
 
-.c4::-moz-placeholder,
-.c4:-ms-input-placeholder,
-.c4::placeholder {
+.c5::-moz-placeholder,
+.c5:-ms-input-placeholder,
+.c5::placeholder {
   height: inherit;
   line-height: inherit;
   color: #6E6E69;
@@ -336,13 +380,17 @@ exports[`Storyshots Molecules | Input / Textarea Disabled 1`] = `
     <span
       className="c2"
     >
-      Label 
+      <div
+        className="c3"
+      >
+        Label 
+      </div>
       <div>
         <span
-          className="c3"
+          className="c4"
         >
           <textarea
-            className="c4"
+            className="NormalizedTextarea__Textarea-i5on9-0 c5"
             disabled={true}
             placeholder="Placeholder"
             rows={3}
@@ -355,6 +403,18 @@ exports[`Storyshots Molecules | Input / Textarea Disabled 1`] = `
 `;
 
 exports[`Storyshots Molecules | Input / Textarea Edge cases 1`] = `
+.c6 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
 .c4 {
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -370,7 +430,7 @@ exports[`Storyshots Molecules | Input / Textarea Edge cases 1`] = `
   line-height: 1.4285714285714286;
 }
 
-.c6 {
+.c7 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
   margin: 0;
@@ -379,7 +439,7 @@ exports[`Storyshots Molecules | Input / Textarea Edge cases 1`] = `
   line-height: 1.4285714285714286;
 }
 
-.c8 {
+.c9 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #6E6E69;
   margin: 0;
@@ -393,7 +453,7 @@ exports[`Storyshots Molecules | Input / Textarea Edge cases 1`] = `
   display: inline-block;
 }
 
-.c7 {
+.c8 {
   font-family: inherit;
   font-size: 100%;
   line-height: 1.15;
@@ -411,41 +471,41 @@ exports[`Storyshots Molecules | Input / Textarea Edge cases 1`] = `
   background-color: #FFFFFF;
 }
 
-.c7:hover {
+.c8:hover {
   border-color: #4B4B46;
 }
 
-.c7:focus {
+.c8:focus {
   border-color: #0046FF;
 }
 
-.c7::-moz-placeholder,
-.c7:-ms-input-placeholder,
-.c7::-webkit-input-placeholder {
+.c8::-moz-placeholder,
+.c8:-ms-input-placeholder,
+.c8::-webkit-input-placeholder {
   height: inherit;
   line-height: inherit;
   color: #6E6E69;
 }
 
-.c7::-moz-placeholder,
-.c7:-ms-input-placeholder,
-.c7::-moz-placeholder {
+.c8::-moz-placeholder,
+.c8:-ms-input-placeholder,
+.c8::-moz-placeholder {
   height: inherit;
   line-height: inherit;
   color: #6E6E69;
 }
 
-.c7::-moz-placeholder,
-.c7:-ms-input-placeholder,
-.c7:-ms-input-placeholder {
+.c8::-moz-placeholder,
+.c8:-ms-input-placeholder,
+.c8:-ms-input-placeholder {
   height: inherit;
   line-height: inherit;
   color: #6E6E69;
 }
 
-.c7::-moz-placeholder,
-.c7:-ms-input-placeholder,
-.c7::placeholder {
+.c8::-moz-placeholder,
+.c8:-ms-input-placeholder,
+.c8::placeholder {
   height: inherit;
   line-height: inherit;
   color: #6E6E69;
@@ -532,13 +592,17 @@ exports[`Storyshots Molecules | Input / Textarea Edge cases 1`] = `
           <span
             className="c5"
           >
-            Too long label, goes into ellipsis. Consider smaller label or bigger input 
+            <div
+              className="c6"
+            >
+              Too long label, goes into ellipsis. Consider smaller label or bigger input 
+            </div>
             <div>
               <span
-                className="c6"
+                className="c7"
               >
                 <textarea
-                  className="c7"
+                  className="NormalizedTextarea__Textarea-i5on9-0 c8"
                   placeholder="If placeholder goes too long though, it probably should be truncated into ellipsis, right?"
                   rows={3}
                 />
@@ -548,7 +612,7 @@ exports[`Storyshots Molecules | Input / Textarea Edge cases 1`] = `
         </label>
         <div>
           <span
-            className="c8"
+            className="c9"
           >
             This is much neccessary info wow
           </span>
@@ -576,13 +640,17 @@ exports[`Storyshots Molecules | Input / Textarea Edge cases 1`] = `
           <span
             className="c5"
           >
-            Small label 
+            <div
+              className="c6"
+            >
+              Small label 
+            </div>
             <div>
               <span
-                className="c6"
+                className="c7"
               >
                 <textarea
-                  className="c7"
+                  className="NormalizedTextarea__Textarea-i5on9-0 c8"
                   placeholder=""
                   rows={3}
                 />
@@ -592,7 +660,7 @@ exports[`Storyshots Molecules | Input / Textarea Edge cases 1`] = `
         </label>
         <div>
           <span
-            className="c8"
+            className="c9"
           >
             Big extra fat extraInfo that will wrap over many lines. Be careful with this pattern, use it only with small texts!
           </span>
@@ -604,7 +672,19 @@ exports[`Storyshots Molecules | Input / Textarea Edge cases 1`] = `
 `;
 
 exports[`Storyshots Molecules | Input / Textarea Error if empty text 1`] = `
-.c6 {
+.c3 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c7 {
   position: absolute;
   height: 1px;
   width: 1px;
@@ -628,7 +708,7 @@ exports[`Storyshots Molecules | Input / Textarea Error if empty text 1`] = `
   line-height: 1.4285714285714286;
 }
 
-.c3 {
+.c4 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
   margin: 0;
@@ -637,7 +717,7 @@ exports[`Storyshots Molecules | Input / Textarea Error if empty text 1`] = `
   line-height: 1.4285714285714286;
 }
 
-.c5 {
+.c6 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #FF1900;
   margin: 0;
@@ -651,7 +731,7 @@ exports[`Storyshots Molecules | Input / Textarea Error if empty text 1`] = `
   display: inline-block;
 }
 
-.c4 {
+.c5 {
   font-family: inherit;
   font-size: 100%;
   line-height: 1.15;
@@ -669,41 +749,41 @@ exports[`Storyshots Molecules | Input / Textarea Error if empty text 1`] = `
   background-color: #FFFFFF;
 }
 
-.c4:hover {
+.c5:hover {
   border-color: #4B4B46;
 }
 
-.c4:focus {
+.c5:focus {
   border-color: #0046FF;
 }
 
-.c4::-moz-placeholder,
-.c4:-ms-input-placeholder,
-.c4::-webkit-input-placeholder {
+.c5::-moz-placeholder,
+.c5:-ms-input-placeholder,
+.c5::-webkit-input-placeholder {
   height: inherit;
   line-height: inherit;
   color: #6E6E69;
 }
 
-.c4::-moz-placeholder,
-.c4:-ms-input-placeholder,
-.c4::-moz-placeholder {
+.c5::-moz-placeholder,
+.c5:-ms-input-placeholder,
+.c5::-moz-placeholder {
   height: inherit;
   line-height: inherit;
   color: #6E6E69;
 }
 
-.c4::-moz-placeholder,
-.c4:-ms-input-placeholder,
-.c4:-ms-input-placeholder {
+.c5::-moz-placeholder,
+.c5:-ms-input-placeholder,
+.c5:-ms-input-placeholder {
   height: inherit;
   line-height: inherit;
   color: #6E6E69;
 }
 
-.c4::-moz-placeholder,
-.c4:-ms-input-placeholder,
-.c4::placeholder {
+.c5::-moz-placeholder,
+.c5:-ms-input-placeholder,
+.c5::placeholder {
   height: inherit;
   line-height: inherit;
   color: #6E6E69;
@@ -719,14 +799,18 @@ exports[`Storyshots Molecules | Input / Textarea Error if empty text 1`] = `
     <span
       className="c2"
     >
-      My awesome text field 
+      <div
+        className="c3"
+      >
+        My awesome text field 
+      </div>
       <div>
         <span
-          className="c3"
+          className="c4"
         >
           <textarea
             aria-invalid={true}
-            className="c4"
+            className="NormalizedTextarea__Textarea-i5on9-0 c5"
             onChange={[Function]}
             placeholder="This is a placeholder"
             rows={3}
@@ -737,10 +821,10 @@ exports[`Storyshots Molecules | Input / Textarea Error if empty text 1`] = `
   </label>
   <div>
     <span
-      className="c5"
+      className="c6"
     >
       <div
-        className="c6"
+        className="c7"
       >
         Error: 
       </div>
@@ -751,6 +835,18 @@ exports[`Storyshots Molecules | Input / Textarea Error if empty text 1`] = `
 `;
 
 exports[`Storyshots Molecules | Input / Textarea Extra info below 1`] = `
+.c3 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
 .c1 {
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -766,7 +862,7 @@ exports[`Storyshots Molecules | Input / Textarea Extra info below 1`] = `
   line-height: 1.4285714285714286;
 }
 
-.c3 {
+.c4 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
   margin: 0;
@@ -775,7 +871,7 @@ exports[`Storyshots Molecules | Input / Textarea Extra info below 1`] = `
   line-height: 1.4285714285714286;
 }
 
-.c5 {
+.c6 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #6E6E69;
   margin: 0;
@@ -789,7 +885,7 @@ exports[`Storyshots Molecules | Input / Textarea Extra info below 1`] = `
   display: inline-block;
 }
 
-.c4 {
+.c5 {
   font-family: inherit;
   font-size: 100%;
   line-height: 1.15;
@@ -807,41 +903,41 @@ exports[`Storyshots Molecules | Input / Textarea Extra info below 1`] = `
   background-color: #FFFFFF;
 }
 
-.c4:hover {
+.c5:hover {
   border-color: #4B4B46;
 }
 
-.c4:focus {
+.c5:focus {
   border-color: #0046FF;
 }
 
-.c4::-moz-placeholder,
-.c4:-ms-input-placeholder,
-.c4::-webkit-input-placeholder {
+.c5::-moz-placeholder,
+.c5:-ms-input-placeholder,
+.c5::-webkit-input-placeholder {
   height: inherit;
   line-height: inherit;
   color: #6E6E69;
 }
 
-.c4::-moz-placeholder,
-.c4:-ms-input-placeholder,
-.c4::-moz-placeholder {
+.c5::-moz-placeholder,
+.c5:-ms-input-placeholder,
+.c5::-moz-placeholder {
   height: inherit;
   line-height: inherit;
   color: #6E6E69;
 }
 
-.c4::-moz-placeholder,
-.c4:-ms-input-placeholder,
-.c4:-ms-input-placeholder {
+.c5::-moz-placeholder,
+.c5:-ms-input-placeholder,
+.c5:-ms-input-placeholder {
   height: inherit;
   line-height: inherit;
   color: #6E6E69;
 }
 
-.c4::-moz-placeholder,
-.c4:-ms-input-placeholder,
-.c4::placeholder {
+.c5::-moz-placeholder,
+.c5:-ms-input-placeholder,
+.c5::placeholder {
   height: inherit;
   line-height: inherit;
   color: #6E6E69;
@@ -857,13 +953,17 @@ exports[`Storyshots Molecules | Input / Textarea Extra info below 1`] = `
     <span
       className="c2"
     >
-      Label 
+      <div
+        className="c3"
+      >
+        Label 
+      </div>
       <div>
         <span
-          className="c3"
+          className="c4"
         >
           <textarea
-            className="c4"
+            className="NormalizedTextarea__Textarea-i5on9-0 c5"
             placeholder="Placeholder"
             rows={3}
           />
@@ -873,7 +973,7 @@ exports[`Storyshots Molecules | Input / Textarea Extra info below 1`] = `
   </label>
   <div>
     <span
-      className="c5"
+      className="c6"
     >
       Use wisely this space
     </span>
@@ -882,7 +982,19 @@ exports[`Storyshots Molecules | Input / Textarea Extra info below 1`] = `
 `;
 
 exports[`Storyshots Molecules | Input / Textarea Extra info with error 1`] = `
-.c6 {
+.c3 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c7 {
   position: absolute;
   height: 1px;
   width: 1px;
@@ -906,7 +1018,7 @@ exports[`Storyshots Molecules | Input / Textarea Extra info with error 1`] = `
   line-height: 1.4285714285714286;
 }
 
-.c3 {
+.c4 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
   margin: 0;
@@ -915,7 +1027,7 @@ exports[`Storyshots Molecules | Input / Textarea Extra info with error 1`] = `
   line-height: 1.4285714285714286;
 }
 
-.c5 {
+.c6 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #FF1900;
   margin: 0;
@@ -929,7 +1041,7 @@ exports[`Storyshots Molecules | Input / Textarea Extra info with error 1`] = `
   display: inline-block;
 }
 
-.c4 {
+.c5 {
   font-family: inherit;
   font-size: 100%;
   line-height: 1.15;
@@ -947,41 +1059,41 @@ exports[`Storyshots Molecules | Input / Textarea Extra info with error 1`] = `
   background-color: #FFFFFF;
 }
 
-.c4:hover {
+.c5:hover {
   border-color: #4B4B46;
 }
 
-.c4:focus {
+.c5:focus {
   border-color: #0046FF;
 }
 
-.c4::-moz-placeholder,
-.c4:-ms-input-placeholder,
-.c4::-webkit-input-placeholder {
+.c5::-moz-placeholder,
+.c5:-ms-input-placeholder,
+.c5::-webkit-input-placeholder {
   height: inherit;
   line-height: inherit;
   color: #6E6E69;
 }
 
-.c4::-moz-placeholder,
-.c4:-ms-input-placeholder,
-.c4::-moz-placeholder {
+.c5::-moz-placeholder,
+.c5:-ms-input-placeholder,
+.c5::-moz-placeholder {
   height: inherit;
   line-height: inherit;
   color: #6E6E69;
 }
 
-.c4::-moz-placeholder,
-.c4:-ms-input-placeholder,
-.c4:-ms-input-placeholder {
+.c5::-moz-placeholder,
+.c5:-ms-input-placeholder,
+.c5:-ms-input-placeholder {
   height: inherit;
   line-height: inherit;
   color: #6E6E69;
 }
 
-.c4::-moz-placeholder,
-.c4:-ms-input-placeholder,
-.c4::placeholder {
+.c5::-moz-placeholder,
+.c5:-ms-input-placeholder,
+.c5::placeholder {
   height: inherit;
   line-height: inherit;
   color: #6E6E69;
@@ -997,14 +1109,18 @@ exports[`Storyshots Molecules | Input / Textarea Extra info with error 1`] = `
     <span
       className="c2"
     >
-      My awesome text field 
+      <div
+        className="c3"
+      >
+        My awesome text field 
+      </div>
       <div>
         <span
-          className="c3"
+          className="c4"
         >
           <textarea
             aria-invalid={true}
-            className="c4"
+            className="NormalizedTextarea__Textarea-i5on9-0 c5"
             onChange={[Function]}
             placeholder="This is a placeholder"
             rows={3}
@@ -1015,10 +1131,10 @@ exports[`Storyshots Molecules | Input / Textarea Extra info with error 1`] = `
   </label>
   <div>
     <span
-      className="c5"
+      className="c6"
     >
       <div
-        className="c6"
+        className="c7"
       >
         Error: 
       </div>
@@ -1029,6 +1145,18 @@ exports[`Storyshots Molecules | Input / Textarea Extra info with error 1`] = `
 `;
 
 exports[`Storyshots Molecules | Input / Textarea Full width 1`] = `
+.c3 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
 .c1 {
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -1044,7 +1172,7 @@ exports[`Storyshots Molecules | Input / Textarea Full width 1`] = `
   line-height: 1.4285714285714286;
 }
 
-.c3 {
+.c4 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
   margin: 0;
@@ -1058,7 +1186,7 @@ exports[`Storyshots Molecules | Input / Textarea Full width 1`] = `
   display: inline-block;
 }
 
-.c4 {
+.c5 {
   font-family: inherit;
   font-size: 100%;
   line-height: 1.15;
@@ -1076,41 +1204,41 @@ exports[`Storyshots Molecules | Input / Textarea Full width 1`] = `
   background-color: #FFFFFF;
 }
 
-.c4:hover {
+.c5:hover {
   border-color: #4B4B46;
 }
 
-.c4:focus {
+.c5:focus {
   border-color: #0046FF;
 }
 
-.c4::-moz-placeholder,
-.c4:-ms-input-placeholder,
-.c4::-webkit-input-placeholder {
+.c5::-moz-placeholder,
+.c5:-ms-input-placeholder,
+.c5::-webkit-input-placeholder {
   height: inherit;
   line-height: inherit;
   color: #6E6E69;
 }
 
-.c4::-moz-placeholder,
-.c4:-ms-input-placeholder,
-.c4::-moz-placeholder {
+.c5::-moz-placeholder,
+.c5:-ms-input-placeholder,
+.c5::-moz-placeholder {
   height: inherit;
   line-height: inherit;
   color: #6E6E69;
 }
 
-.c4::-moz-placeholder,
-.c4:-ms-input-placeholder,
-.c4:-ms-input-placeholder {
+.c5::-moz-placeholder,
+.c5:-ms-input-placeholder,
+.c5:-ms-input-placeholder {
   height: inherit;
   line-height: inherit;
   color: #6E6E69;
 }
 
-.c4::-moz-placeholder,
-.c4:-ms-input-placeholder,
-.c4::placeholder {
+.c5::-moz-placeholder,
+.c5:-ms-input-placeholder,
+.c5::placeholder {
   height: inherit;
   line-height: inherit;
   color: #6E6E69;
@@ -1127,13 +1255,17 @@ exports[`Storyshots Molecules | Input / Textarea Full width 1`] = `
     <span
       className="c2"
     >
-      Label 
+      <div
+        className="c3"
+      >
+        Label 
+      </div>
       <div>
         <span
-          className="c3"
+          className="c4"
         >
           <textarea
-            className="c4"
+            className="NormalizedTextarea__Textarea-i5on9-0 c5"
             placeholder="Placeholder"
             rows={3}
           />
@@ -1261,7 +1393,7 @@ exports[`Storyshots Molecules | Input / Textarea Hidden label 1`] = `
           className="c4"
         >
           <textarea
-            className="c5"
+            className="NormalizedTextarea__Textarea-i5on9-0 c5"
             placeholder="Placeholder"
             rows={3}
           />
@@ -1303,7 +1435,19 @@ Array [
       Required
     </span>
   </div>,
-  .c4 {
+  .c6 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c4 {
   text-overflow: ellipsis;
   white-space: nowrap;
   cursor: pointer;
@@ -1318,7 +1462,7 @@ Array [
   line-height: 1.4285714285714286;
 }
 
-.c6 {
+.c7 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
   margin: 0;
@@ -1332,7 +1476,7 @@ Array [
   display: inline-block;
 }
 
-.c7 {
+.c8 {
   font-family: inherit;
   font-size: 100%;
   line-height: 1.15;
@@ -1350,41 +1494,41 @@ Array [
   background-color: #FFFFFF;
 }
 
-.c7:hover {
+.c8:hover {
   border-color: #4B4B46;
 }
 
-.c7:focus {
+.c8:focus {
   border-color: #0046FF;
 }
 
-.c7::-moz-placeholder,
-.c7:-ms-input-placeholder,
-.c7::-webkit-input-placeholder {
+.c8::-moz-placeholder,
+.c8:-ms-input-placeholder,
+.c8::-webkit-input-placeholder {
   height: inherit;
   line-height: inherit;
   color: #6E6E69;
 }
 
-.c7::-moz-placeholder,
-.c7:-ms-input-placeholder,
-.c7::-moz-placeholder {
+.c8::-moz-placeholder,
+.c8:-ms-input-placeholder,
+.c8::-moz-placeholder {
   height: inherit;
   line-height: inherit;
   color: #6E6E69;
 }
 
-.c7::-moz-placeholder,
-.c7:-ms-input-placeholder,
-.c7:-ms-input-placeholder {
+.c8::-moz-placeholder,
+.c8:-ms-input-placeholder,
+.c8:-ms-input-placeholder {
   height: inherit;
   line-height: inherit;
   color: #6E6E69;
 }
 
-.c7::-moz-placeholder,
-.c7:-ms-input-placeholder,
-.c7::placeholder {
+.c8::-moz-placeholder,
+.c8:-ms-input-placeholder,
+.c8::placeholder {
   height: inherit;
   line-height: inherit;
   color: #6E6E69;
@@ -1447,6 +1591,10 @@ Array [
   align-self: center;
 }
 
+@media (min-width:760px) {
+
+}
+
 <div
     className="c0"
     direction="column"
@@ -1471,13 +1619,17 @@ Array [
             <span
               className="c5"
             >
-              Label 
+              <div
+                className="c6"
+              >
+                Label 
+              </div>
               <div>
                 <span
-                  className="c6"
+                  className="c7"
                 >
                   <textarea
-                    className="c7"
+                    className="NormalizedTextarea__Textarea-i5on9-0 c8"
                     placeholder="Placeholder"
                     required={true}
                     rows={3}
@@ -1509,13 +1661,17 @@ Array [
             <span
               className="c5"
             >
-              Label *
+              <div
+                className="c6"
+              >
+                Label *
+              </div>
               <div>
                 <span
-                  className="c6"
+                  className="c7"
                 >
                   <textarea
-                    className="c7"
+                    className="NormalizedTextarea__Textarea-i5on9-0 c8"
                     placeholder="Placeholder"
                     required={true}
                     rows={3}
@@ -1532,6 +1688,10 @@ Array [
   margin-bottom: 32px;
 }
 
+@media (min-width:760px) {
+
+}
+
 <div
     className="c0"
   />,
@@ -1539,6 +1699,18 @@ Array [
 `;
 
 exports[`Storyshots Molecules | Input / Textarea Specific width 1`] = `
+.c3 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
 .c1 {
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -1554,7 +1726,7 @@ exports[`Storyshots Molecules | Input / Textarea Specific width 1`] = `
   line-height: 1.4285714285714286;
 }
 
-.c3 {
+.c4 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
   margin: 0;
@@ -1568,7 +1740,7 @@ exports[`Storyshots Molecules | Input / Textarea Specific width 1`] = `
   display: inline-block;
 }
 
-.c4 {
+.c5 {
   font-family: inherit;
   font-size: 100%;
   line-height: 1.15;
@@ -1586,41 +1758,41 @@ exports[`Storyshots Molecules | Input / Textarea Specific width 1`] = `
   background-color: #FFFFFF;
 }
 
-.c4:hover {
+.c5:hover {
   border-color: #4B4B46;
 }
 
-.c4:focus {
+.c5:focus {
   border-color: #0046FF;
 }
 
-.c4::-moz-placeholder,
-.c4:-ms-input-placeholder,
-.c4::-webkit-input-placeholder {
+.c5::-moz-placeholder,
+.c5:-ms-input-placeholder,
+.c5::-webkit-input-placeholder {
   height: inherit;
   line-height: inherit;
   color: #6E6E69;
 }
 
-.c4::-moz-placeholder,
-.c4:-ms-input-placeholder,
-.c4::-moz-placeholder {
+.c5::-moz-placeholder,
+.c5:-ms-input-placeholder,
+.c5::-moz-placeholder {
   height: inherit;
   line-height: inherit;
   color: #6E6E69;
 }
 
-.c4::-moz-placeholder,
-.c4:-ms-input-placeholder,
-.c4:-ms-input-placeholder {
+.c5::-moz-placeholder,
+.c5:-ms-input-placeholder,
+.c5:-ms-input-placeholder {
   height: inherit;
   line-height: inherit;
   color: #6E6E69;
 }
 
-.c4::-moz-placeholder,
-.c4:-ms-input-placeholder,
-.c4::placeholder {
+.c5::-moz-placeholder,
+.c5:-ms-input-placeholder,
+.c5::placeholder {
   height: inherit;
   line-height: inherit;
   color: #6E6E69;
@@ -1637,13 +1809,17 @@ exports[`Storyshots Molecules | Input / Textarea Specific width 1`] = `
     <span
       className="c2"
     >
-      Label 
+      <div
+        className="c3"
+      >
+        Label 
+      </div>
       <div>
         <span
-          className="c3"
+          className="c4"
         >
           <textarea
-            className="c4"
+            className="NormalizedTextarea__Textarea-i5on9-0 c5"
             placeholder="Placeholder"
             rows={3}
           />
@@ -1655,6 +1831,18 @@ exports[`Storyshots Molecules | Input / Textarea Specific width 1`] = `
 `;
 
 exports[`Storyshots Molecules | Input / Textarea Success 1`] = `
+.c3 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
 .c1 {
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -1670,7 +1858,7 @@ exports[`Storyshots Molecules | Input / Textarea Success 1`] = `
   line-height: 1.4285714285714286;
 }
 
-.c3 {
+.c4 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
   margin: 0;
@@ -1684,7 +1872,7 @@ exports[`Storyshots Molecules | Input / Textarea Success 1`] = `
   display: inline-block;
 }
 
-.c4 {
+.c5 {
   font-family: inherit;
   font-size: 100%;
   line-height: 1.15;
@@ -1702,41 +1890,41 @@ exports[`Storyshots Molecules | Input / Textarea Success 1`] = `
   background-color: #FFFFFF;
 }
 
-.c4:hover {
+.c5:hover {
   border-color: #4B4B46;
 }
 
-.c4:focus {
+.c5:focus {
   border-color: #0046FF;
 }
 
-.c4::-moz-placeholder,
-.c4:-ms-input-placeholder,
-.c4::-webkit-input-placeholder {
+.c5::-moz-placeholder,
+.c5:-ms-input-placeholder,
+.c5::-webkit-input-placeholder {
   height: inherit;
   line-height: inherit;
   color: #6E6E69;
 }
 
-.c4::-moz-placeholder,
-.c4:-ms-input-placeholder,
-.c4::-moz-placeholder {
+.c5::-moz-placeholder,
+.c5:-ms-input-placeholder,
+.c5::-moz-placeholder {
   height: inherit;
   line-height: inherit;
   color: #6E6E69;
 }
 
-.c4::-moz-placeholder,
-.c4:-ms-input-placeholder,
-.c4:-ms-input-placeholder {
+.c5::-moz-placeholder,
+.c5:-ms-input-placeholder,
+.c5:-ms-input-placeholder {
   height: inherit;
   line-height: inherit;
   color: #6E6E69;
 }
 
-.c4::-moz-placeholder,
-.c4:-ms-input-placeholder,
-.c4::placeholder {
+.c5::-moz-placeholder,
+.c5:-ms-input-placeholder,
+.c5::placeholder {
   height: inherit;
   line-height: inherit;
   color: #6E6E69;
@@ -1752,13 +1940,17 @@ exports[`Storyshots Molecules | Input / Textarea Success 1`] = `
     <span
       className="c2"
     >
-      Label 
+      <div
+        className="c3"
+      >
+        Label 
+      </div>
       <div>
         <span
-          className="c3"
+          className="c4"
         >
           <textarea
-            className="c4"
+            className="NormalizedTextarea__Textarea-i5on9-0 c5"
             placeholder="Placeholder"
             rows={3}
           />
@@ -1770,6 +1962,18 @@ exports[`Storyshots Molecules | Input / Textarea Success 1`] = `
 `;
 
 exports[`Storyshots Molecules | Input / Textarea With auto focus 1`] = `
+.c3 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
 .c1 {
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -1785,7 +1989,7 @@ exports[`Storyshots Molecules | Input / Textarea With auto focus 1`] = `
   line-height: 1.4285714285714286;
 }
 
-.c3 {
+.c4 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
   margin: 0;
@@ -1799,7 +2003,7 @@ exports[`Storyshots Molecules | Input / Textarea With auto focus 1`] = `
   display: inline-block;
 }
 
-.c4 {
+.c5 {
   font-family: inherit;
   font-size: 100%;
   line-height: 1.15;
@@ -1817,41 +2021,41 @@ exports[`Storyshots Molecules | Input / Textarea With auto focus 1`] = `
   background-color: #FFFFFF;
 }
 
-.c4:hover {
+.c5:hover {
   border-color: #4B4B46;
 }
 
-.c4:focus {
+.c5:focus {
   border-color: #0046FF;
 }
 
-.c4::-moz-placeholder,
-.c4:-ms-input-placeholder,
-.c4::-webkit-input-placeholder {
+.c5::-moz-placeholder,
+.c5:-ms-input-placeholder,
+.c5::-webkit-input-placeholder {
   height: inherit;
   line-height: inherit;
   color: #6E6E69;
 }
 
-.c4::-moz-placeholder,
-.c4:-ms-input-placeholder,
-.c4::-moz-placeholder {
+.c5::-moz-placeholder,
+.c5:-ms-input-placeholder,
+.c5::-moz-placeholder {
   height: inherit;
   line-height: inherit;
   color: #6E6E69;
 }
 
-.c4::-moz-placeholder,
-.c4:-ms-input-placeholder,
-.c4:-ms-input-placeholder {
+.c5::-moz-placeholder,
+.c5:-ms-input-placeholder,
+.c5:-ms-input-placeholder {
   height: inherit;
   line-height: inherit;
   color: #6E6E69;
 }
 
-.c4::-moz-placeholder,
-.c4:-ms-input-placeholder,
-.c4::placeholder {
+.c5::-moz-placeholder,
+.c5:-ms-input-placeholder,
+.c5::placeholder {
   height: inherit;
   line-height: inherit;
   color: #6E6E69;
@@ -1867,14 +2071,18 @@ exports[`Storyshots Molecules | Input / Textarea With auto focus 1`] = `
     <span
       className="c2"
     >
-      Label 
+      <div
+        className="c3"
+      >
+        Label 
+      </div>
       <div>
         <span
-          className="c3"
+          className="c4"
         >
           <textarea
             autoFocus={true}
-            className="c4"
+            className="NormalizedTextarea__Textarea-i5on9-0 c5"
             placeholder="Placeholder"
             rows={3}
           />
@@ -1886,6 +2094,18 @@ exports[`Storyshots Molecules | Input / Textarea With auto focus 1`] = `
 `;
 
 exports[`Storyshots Molecules | Input / Textarea With default value (Uncontrolled behaviour) 1`] = `
+.c3 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
 .c1 {
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -1901,7 +2121,7 @@ exports[`Storyshots Molecules | Input / Textarea With default value (Uncontrolle
   line-height: 1.4285714285714286;
 }
 
-.c3 {
+.c4 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
   margin: 0;
@@ -1915,7 +2135,7 @@ exports[`Storyshots Molecules | Input / Textarea With default value (Uncontrolle
   display: inline-block;
 }
 
-.c4 {
+.c5 {
   font-family: inherit;
   font-size: 100%;
   line-height: 1.15;
@@ -1933,41 +2153,41 @@ exports[`Storyshots Molecules | Input / Textarea With default value (Uncontrolle
   background-color: #FFFFFF;
 }
 
-.c4:hover {
+.c5:hover {
   border-color: #4B4B46;
 }
 
-.c4:focus {
+.c5:focus {
   border-color: #0046FF;
 }
 
-.c4::-moz-placeholder,
-.c4:-ms-input-placeholder,
-.c4::-webkit-input-placeholder {
+.c5::-moz-placeholder,
+.c5:-ms-input-placeholder,
+.c5::-webkit-input-placeholder {
   height: inherit;
   line-height: inherit;
   color: #6E6E69;
 }
 
-.c4::-moz-placeholder,
-.c4:-ms-input-placeholder,
-.c4::-moz-placeholder {
+.c5::-moz-placeholder,
+.c5:-ms-input-placeholder,
+.c5::-moz-placeholder {
   height: inherit;
   line-height: inherit;
   color: #6E6E69;
 }
 
-.c4::-moz-placeholder,
-.c4:-ms-input-placeholder,
-.c4:-ms-input-placeholder {
+.c5::-moz-placeholder,
+.c5:-ms-input-placeholder,
+.c5:-ms-input-placeholder {
   height: inherit;
   line-height: inherit;
   color: #6E6E69;
 }
 
-.c4::-moz-placeholder,
-.c4:-ms-input-placeholder,
-.c4::placeholder {
+.c5::-moz-placeholder,
+.c5:-ms-input-placeholder,
+.c5::placeholder {
   height: inherit;
   line-height: inherit;
   color: #6E6E69;
@@ -1983,13 +2203,17 @@ exports[`Storyshots Molecules | Input / Textarea With default value (Uncontrolle
     <span
       className="c2"
     >
-      Label 
+      <div
+        className="c3"
+      >
+        Label 
+      </div>
       <div>
         <span
-          className="c3"
+          className="c4"
         >
           <textarea
-            className="c4"
+            className="NormalizedTextarea__Textarea-i5on9-0 c5"
             defaultValue="Some predefined text"
             placeholder="Placeholder"
             rows={3}
@@ -2001,11 +2225,41 @@ exports[`Storyshots Molecules | Input / Textarea With default value (Uncontrolle
 </div>
 `;
 
-exports[`Storyshots Molecules | Input / Textarea With value (Controlled behaviour) 1`] = `
+exports[`Storyshots Molecules | Input / Textarea With tooltip as label addon 1`] = `
+.c3 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
 .c1 {
   text-overflow: ellipsis;
   white-space: nowrap;
   cursor: pointer;
+}
+
+.c4 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 16px;
+  height: 16px;
+  fill: #282823;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
+}
+
+.c6 {
+  stroke: #6E6E69;
 }
 
 .c2 {
@@ -2017,7 +2271,7 @@ exports[`Storyshots Molecules | Input / Textarea With value (Controlled behaviou
   line-height: 1.4285714285714286;
 }
 
-.c3 {
+.c7 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
   margin: 0;
@@ -2031,7 +2285,11 @@ exports[`Storyshots Molecules | Input / Textarea With value (Controlled behaviou
   display: inline-block;
 }
 
-.c4 {
+.c5 {
+  margin-left: 4px;
+}
+
+.c8 {
   font-family: inherit;
   font-size: 100%;
   line-height: 1.15;
@@ -2049,41 +2307,41 @@ exports[`Storyshots Molecules | Input / Textarea With value (Controlled behaviou
   background-color: #FFFFFF;
 }
 
-.c4:hover {
+.c8:hover {
   border-color: #4B4B46;
 }
 
-.c4:focus {
+.c8:focus {
   border-color: #0046FF;
 }
 
-.c4::-moz-placeholder,
-.c4:-ms-input-placeholder,
-.c4::-webkit-input-placeholder {
+.c8::-moz-placeholder,
+.c8:-ms-input-placeholder,
+.c8::-webkit-input-placeholder {
   height: inherit;
   line-height: inherit;
   color: #6E6E69;
 }
 
-.c4::-moz-placeholder,
-.c4:-ms-input-placeholder,
-.c4::-moz-placeholder {
+.c8::-moz-placeholder,
+.c8:-ms-input-placeholder,
+.c8::-moz-placeholder {
   height: inherit;
   line-height: inherit;
   color: #6E6E69;
 }
 
-.c4::-moz-placeholder,
-.c4:-ms-input-placeholder,
-.c4:-ms-input-placeholder {
+.c8::-moz-placeholder,
+.c8:-ms-input-placeholder,
+.c8:-ms-input-placeholder {
   height: inherit;
   line-height: inherit;
   color: #6E6E69;
 }
 
-.c4::-moz-placeholder,
-.c4:-ms-input-placeholder,
-.c4::placeholder {
+.c8::-moz-placeholder,
+.c8:-ms-input-placeholder,
+.c8::placeholder {
   height: inherit;
   line-height: inherit;
   color: #6E6E69;
@@ -2099,13 +2357,176 @@ exports[`Storyshots Molecules | Input / Textarea With value (Controlled behaviou
     <span
       className="c2"
     >
-      Label 
+      <div
+        className="c3"
+      >
+        Label 
+        <svg
+          aria-hidden="false"
+          className="c4 c5"
+          focusable="false"
+          preserveAspectRatio="xMidYMid meet"
+          role="img"
+          viewBox="0 0 24 24"
+        >
+          <g
+            fillRule="evenodd"
+            transform="translate(1 1)"
+          >
+            <circle
+              className="c6"
+              cx="11"
+              cy="11"
+              fill="none"
+              r="11"
+            />
+            <path
+              d="M9.4544,13.5528 L9.4544,13.3008 C9.4544,12.1584 9.4376,11.6376 11.1512,10.2432 C11.8904,9.6384 12.4784,9.2184 12.4784,8.496 C12.4784,7.8576 12.0248,7.3536 11.1176,7.3536 C10.1768,7.3536 9.656,7.9416 9.4376,8.6472 L6.9008,8.6472 C7.2368,6.3624 8.9504,5.1696 11.168,5.1696 C13.5032,5.1696 15.0992,6.4128 15.0992,8.3784 C15.0992,9.6888 14.5448,10.3776 13.0496,11.6544 C12.344,12.2424 11.84,12.6456 11.7056,13.3008 L11.6552,13.5528 L9.4544,13.5528 Z M11.9072,14.7288 L11.9072,17.4 L9.2696,17.4 L9.2696,14.7288 L11.9072,14.7288 Z"
+              fillRule="nonzero"
+            />
+          </g>
+          <title>
+            Tooltip content
+          </title>
+        </svg>
+      </div>
       <div>
         <span
-          className="c3"
+          className="c7"
         >
           <textarea
-            className="c4"
+            className="NormalizedTextarea__Textarea-i5on9-0 c8"
+            placeholder="Placeholder"
+            rows={3}
+          />
+        </span>
+      </div>
+    </span>
+  </label>
+</div>
+`;
+
+exports[`Storyshots Molecules | Input / Textarea With value (Controlled behaviour) 1`] = `
+.c3 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c1 {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.c2 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #6E6E69;
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c4 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c0 {
+  width: 200px;
+  display: inline-block;
+}
+
+.c5 {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  overflow: auto;
+  border: 0;
+  width: 100%;
+  padding: 8px;
+  margin: 0;
+  vertical-align: top;
+  box-sizing: border-box;
+  outline: none;
+  border: 1px solid #BCBCB6;
+  position: relative;
+  background-color: #FFFFFF;
+}
+
+.c5:hover {
+  border-color: #4B4B46;
+}
+
+.c5:focus {
+  border-color: #0046FF;
+}
+
+.c5::-moz-placeholder,
+.c5:-ms-input-placeholder,
+.c5::-webkit-input-placeholder {
+  height: inherit;
+  line-height: inherit;
+  color: #6E6E69;
+}
+
+.c5::-moz-placeholder,
+.c5:-ms-input-placeholder,
+.c5::-moz-placeholder {
+  height: inherit;
+  line-height: inherit;
+  color: #6E6E69;
+}
+
+.c5::-moz-placeholder,
+.c5:-ms-input-placeholder,
+.c5:-ms-input-placeholder {
+  height: inherit;
+  line-height: inherit;
+  color: #6E6E69;
+}
+
+.c5::-moz-placeholder,
+.c5:-ms-input-placeholder,
+.c5::placeholder {
+  height: inherit;
+  line-height: inherit;
+  color: #6E6E69;
+}
+
+<div
+  className="c0"
+>
+  <label
+    className="c1"
+    hidden={false}
+  >
+    <span
+      className="c2"
+    >
+      <div
+        className="c3"
+      >
+        Label 
+      </div>
+      <div>
+        <span
+          className="c4"
+        >
+          <textarea
+            className="NormalizedTextarea__Textarea-i5on9-0 c5"
             placeholder="Placeholder"
             rows={3}
             value="Some predefined text"

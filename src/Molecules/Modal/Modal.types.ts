@@ -1,7 +1,9 @@
 export type InnerProps = {
   className?: string;
   onClose?: Function;
-  title?: string;
+  title?: React.ReactNode;
+  footer?: React.ReactNode;
+  hideClose?: boolean;
 };
 
 export type DialogProps = {
@@ -10,4 +12,6 @@ export type DialogProps = {
 
 export type Props = {
   open?: boolean;
+  /** @default false */
+  autoFocus?: boolean;
 } & InnerProps;

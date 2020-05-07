@@ -8,6 +8,7 @@ import NormalizedElements from '../../../common/NormalizedElements';
 import { getStringAsNumber, getNumberAsString } from './utils';
 import { isNumber, isString, isUndefined, assert } from '../../../common/utils';
 import adjustValue from './adjustValue';
+import { placeholderNormalizaion } from '../Text/Text';
 
 const hasError = (error?: Props['error']) => error && error !== '';
 const removeNonNumberCharacters = R.replace(/[^0-9\-.,]+/, '');
@@ -71,7 +72,7 @@ const AddonBox = styled(Flexbox)<{ position?: 'left' | 'right' }>`
   ${p => (p.position === 'right' ? `right: ${p.theme.spacing.unit(2)}px;` : '')}
 `;
 
-const Stepper = styled.button.attrs({ type: 'button' })<Partial<Props>>`
+const Stepper = styled.button.attrs(() => ({ type: 'button' }))<Partial<Props>>`
   ${width}
   ${height}
   ${background}
@@ -97,10 +98,11 @@ const Stepper = styled.button.attrs({ type: 'button' })<Partial<Props>>`
   }
   `;
 
-const Input = styled(NormalizedElements.Input).attrs({ type: 'text' })<Partial<Props>>`
+const Input = styled(NormalizedElements.Input).attrs(() => ({ type: 'text' }))<Partial<Props>>`
   ${background}
   ${borderStyles}
   ${height}
+  ${placeholderNormalizaion}
   width: 100%;
   text-align: ${p => (p.showSteppers ? 'center' : 'left')};
   box-sizing: border-box;
@@ -115,6 +117,7 @@ const Input = styled(NormalizedElements.Input).attrs({ type: 'text' })<Partial<P
       : `
       padding: ${p.theme.spacing.unit(2)}px;
       margin: 0 -1px;
+      min-width: 0;
       z-index: 1;
       `}
   
@@ -161,6 +164,7 @@ const NumberInput: NumberComponent & {
     onKeyUp,
     onStepDown,
     onStepUp,
+    placeholder: placeholderRaw,
     rightAddon,
     required,
     size,
@@ -172,6 +176,8 @@ const NumberInput: NumberComponent & {
   } = props;
   const [internalValue, setInternalValue] = useState(getNumberAsString(defaultValue));
   const showSteppers = noSteppers !== true && isUndefined(leftAddon) && isUndefined(rightAddon);
+  const placeholder = showSteppers ? undefined : placeholderRaw;
+
   const handleValueChange = (val: string) => {
     setInternalValue(val);
 
@@ -260,7 +266,7 @@ const NumberInput: NumberComponent & {
 
   return (
     <FormField
-      {...R.pick(['error', 'extraInfo', 'hideLabel', 'label', 'width'], props)}
+      {...R.pick(['error', 'extraInfo', 'hideLabel', 'label', 'labelTooltip', 'width'], props)}
       required={visuallyEmphasiseRequired}
       fieldId={id}
     >
@@ -283,6 +289,7 @@ const NumberInput: NumberComponent & {
               onKeyDown: onKeyDownHandler,
               onKeyPress,
               onKeyUp,
+              placeholder,
               ref: inputRef,
               rightAddon,
               required,
@@ -322,7 +329,7 @@ const NumberInput: NumberComponent & {
     </FormField>
   );
 };
-
 NumberInput.components = components;
-
-export default injectIntl(NumberInput);
+export const Number: React.FC<Props> & {
+  components: typeof components;
+} = injectIntl(NumberInput) as any;

@@ -1,8 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Props } from './FormField.types';
-import { VisuallyHidden, FormLabel, Typography, Fieldset, Legend } from '../..';
+import { Props, LabelAddonProp } from './FormField.types';
+import { Flexbox, Icon, VisuallyHidden, FormLabel, Typography, Fieldset, Legend } from '../..';
 import { assert } from '../../common/utils';
 
 const hasError = (error?: Props['error']) => error && error !== '';
@@ -12,8 +12,23 @@ const Wrapper = styled.div<{ width?: string | number }>`
   display: inline-block;
 `;
 
+const TooltipIcon = styled(Icon.Questionmark)`
+  margin-left: ${p => p.theme.spacing.unit(1)}px;
+`;
+
 const BottomWrapper = styled(motion.div)``;
-export const FormField: React.FC<Props> = React.forwardRef(
+
+const WithOptionalAddon: React.FC<LabelAddonProp> = ({ children, labelTooltip, hideLabel }) =>
+  hideLabel ? (
+    <>{children}</>
+  ) : (
+    <Flexbox container alignItems="center">
+      {children}
+      {labelTooltip && <TooltipIcon title={labelTooltip} size={4} />}
+    </Flexbox>
+  );
+
+export const FormField = React.forwardRef<HTMLDivElement, Props>(
   (
     {
       children,
@@ -25,6 +40,7 @@ export const FormField: React.FC<Props> = React.forwardRef(
       group,
       hideLabel,
       label,
+      labelTooltip,
       required = false,
       showRequired = false,
       width,
@@ -37,7 +53,9 @@ export const FormField: React.FC<Props> = React.forwardRef(
     if (label) {
       field = (
         <FormLabel>
-          {hideLabel ? <VisuallyHidden>{labelText}</VisuallyHidden> : labelText}
+          <WithOptionalAddon labelTooltip={labelTooltip} hideLabel={hideLabel}>
+            {hideLabel ? <VisuallyHidden>{labelText}</VisuallyHidden> : labelText}
+          </WithOptionalAddon>
           {children}
         </FormLabel>
       );
@@ -45,7 +63,9 @@ export const FormField: React.FC<Props> = React.forwardRef(
       if (group) {
         field = (
           <Fieldset>
-            <Legend styleType="label">{labelText}</Legend>
+            <WithOptionalAddon labelTooltip={labelTooltip} hideLabel={hideLabel}>
+              <Legend styleType="label">{labelText}</Legend>
+            </WithOptionalAddon>
             {children}
           </Fieldset>
         );
@@ -53,7 +73,9 @@ export const FormField: React.FC<Props> = React.forwardRef(
         field = (
           <>
             <FormLabel hideLabel={hideLabel} forId={fieldId || forId}>
-              {labelText}
+              <WithOptionalAddon labelTooltip={labelTooltip} hideLabel={hideLabel}>
+                {labelText}
+              </WithOptionalAddon>
             </FormLabel>
             {children}
           </>

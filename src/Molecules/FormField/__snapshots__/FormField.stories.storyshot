@@ -1,6 +1,18 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Storyshots Molecules | FormField Default 1`] = `
+.c3 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
 .c1 {
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -32,7 +44,11 @@ exports[`Storyshots Molecules | FormField Default 1`] = `
     <span
       className="c2"
     >
-      Label 
+      <div
+        className="c3"
+      >
+        Label 
+      </div>
     </span>
   </label>
   <div
@@ -54,7 +70,19 @@ exports[`Storyshots Molecules | FormField Docs 1`] = `
 `;
 
 exports[`Storyshots Molecules | FormField Error 1`] = `
-.c4 {
+.c3 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c5 {
   position: absolute;
   height: 1px;
   width: 1px;
@@ -78,7 +106,7 @@ exports[`Storyshots Molecules | FormField Error 1`] = `
   line-height: 1.4285714285714286;
 }
 
-.c3 {
+.c4 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #FF1900;
   margin: 0;
@@ -103,7 +131,11 @@ exports[`Storyshots Molecules | FormField Error 1`] = `
     <span
       className="c2"
     >
-      Label 
+      <div
+        className="c3"
+      >
+        Label 
+      </div>
     </span>
   </label>
   <div
@@ -117,10 +149,10 @@ exports[`Storyshots Molecules | FormField Error 1`] = `
   </div>
   <div>
     <span
-      className="c3"
+      className="c4"
     >
       <div
-        className="c4"
+        className="c5"
       >
         Error: 
       </div>
@@ -131,6 +163,18 @@ exports[`Storyshots Molecules | FormField Error 1`] = `
 `;
 
 exports[`Storyshots Molecules | FormField Extra info 1`] = `
+.c3 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
 .c1 {
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -146,7 +190,7 @@ exports[`Storyshots Molecules | FormField Extra info 1`] = `
   line-height: 1.4285714285714286;
 }
 
-.c3 {
+.c4 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #6E6E69;
   margin: 0;
@@ -171,7 +215,11 @@ exports[`Storyshots Molecules | FormField Extra info 1`] = `
     <span
       className="c2"
     >
-      Label 
+      <div
+        className="c3"
+      >
+        Label 
+      </div>
     </span>
   </label>
   <div
@@ -185,7 +233,7 @@ exports[`Storyshots Molecules | FormField Extra info 1`] = `
   </div>
   <div>
     <span
-      className="c3"
+      className="c4"
     >
       Some extra info
     </span>
@@ -194,6 +242,18 @@ exports[`Storyshots Molecules | FormField Extra info 1`] = `
 `;
 
 exports[`Storyshots Molecules | FormField Required 1`] = `
+.c3 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
 .c1 {
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -225,7 +285,11 @@ exports[`Storyshots Molecules | FormField Required 1`] = `
     <span
       className="c2"
     >
-      Label *
+      <div
+        className="c3"
+      >
+        Label *
+      </div>
     </span>
   </label>
   <div
@@ -241,11 +305,19 @@ exports[`Storyshots Molecules | FormField Required 1`] = `
 `;
 
 exports[`Storyshots Molecules | FormField With group of items 1`] = `
-.c6 {
+.c2 {
   box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
-.c5 {
+.c6 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -255,16 +327,20 @@ exports[`Storyshots Molecules | FormField With group of items 1`] = `
   margin-right: -10px;
 }
 
-.c5 > * {
+.c6 > * {
   padding-left: 10px;
   padding-right: 10px;
 }
 
-.c5 > *:not(:first-child) {
+.c6 > *:not(:first-child) {
   padding-top: 0;
 }
 
-.c2 {
+.c7 {
+  box-sizing: border-box;
+}
+
+.c4 {
   text-overflow: ellipsis;
   white-space: nowrap;
   cursor: pointer;
@@ -280,7 +356,7 @@ exports[`Storyshots Molecules | FormField With group of items 1`] = `
   cursor: auto;
 }
 
-.c4 {
+.c5 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #6E6E69;
   margin: 0;
@@ -306,21 +382,25 @@ exports[`Storyshots Molecules | FormField With group of items 1`] = `
   <fieldset
     className="c1"
   >
-    <legend
-      className="c2 c3"
-      hidden={false}
-    >
-      <span
-        className="c4"
-      >
-        Caption to a group of items 
-      </span>
-    </legend>
     <div
-      className="c5"
+      className="c2"
+    >
+      <legend
+        className="NormalizedLegend__Legend-sc-1svgb20-0 c3 c4"
+        hidden={false}
+      >
+        <span
+          className="c5"
+        >
+          Caption to a group of items 
+        </span>
+      </legend>
+    </div>
+    <div
+      className="c6"
     >
       <div
-        className="c6"
+        className="c7"
       >
         <div
           style={
@@ -333,7 +413,7 @@ exports[`Storyshots Molecules | FormField With group of items 1`] = `
         </div>
       </div>
       <div
-        className="c6"
+        className="c7"
       >
         <div
           style={
@@ -347,5 +427,118 @@ exports[`Storyshots Molecules | FormField With group of items 1`] = `
       </div>
     </div>
   </fieldset>
+</div>
+`;
+
+exports[`Storyshots Molecules | FormField With label tooltip 1`] = `
+.c3 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c1 {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.c4 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 16px;
+  height: 16px;
+  fill: #282823;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
+}
+
+.c6 {
+  stroke: #6E6E69;
+}
+
+.c2 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #6E6E69;
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c0 {
+  width: 200px;
+  display: inline-block;
+}
+
+.c5 {
+  margin-left: 4px;
+}
+
+<div
+  className="c0"
+>
+  <label
+    className="c1"
+    hidden={false}
+    htmlFor="unique-id-1"
+  >
+    <span
+      className="c2"
+    >
+      <div
+        className="c3"
+      >
+        Label 
+        <svg
+          aria-hidden="false"
+          className="c4 c5"
+          focusable="false"
+          preserveAspectRatio="xMidYMid meet"
+          role="img"
+          viewBox="0 0 24 24"
+        >
+          <g
+            fillRule="evenodd"
+            transform="translate(1 1)"
+          >
+            <circle
+              className="c6"
+              cx="11"
+              cy="11"
+              fill="none"
+              r="11"
+            />
+            <path
+              d="M9.4544,13.5528 L9.4544,13.3008 C9.4544,12.1584 9.4376,11.6376 11.1512,10.2432 C11.8904,9.6384 12.4784,9.2184 12.4784,8.496 C12.4784,7.8576 12.0248,7.3536 11.1176,7.3536 C10.1768,7.3536 9.656,7.9416 9.4376,8.6472 L6.9008,8.6472 C7.2368,6.3624 8.9504,5.1696 11.168,5.1696 C13.5032,5.1696 15.0992,6.4128 15.0992,8.3784 C15.0992,9.6888 14.5448,10.3776 13.0496,11.6544 C12.344,12.2424 11.84,12.6456 11.7056,13.3008 L11.6552,13.5528 L9.4544,13.5528 Z M11.9072,14.7288 L11.9072,17.4 L9.2696,17.4 L9.2696,14.7288 L11.9072,14.7288 Z"
+              fillRule="nonzero"
+            />
+          </g>
+          <title>
+            Tooltip content
+          </title>
+        </svg>
+      </div>
+    </span>
+  </label>
+  <div
+    style={
+      Object {
+        "background": "aqua",
+      }
+    }
+  >
+    Pass in any children you want
+  </div>
 </div>
 `;
