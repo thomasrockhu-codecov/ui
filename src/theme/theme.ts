@@ -253,6 +253,7 @@ export const createTheme = (config: ThemeConfig = {}): Theme => {
       sliderThumbBorder: rawColor.gray4,
       sliderThumbActive: rawColor.cta,
     },
+    isHighContrastMode: a11yColors,
     media: {
       between: (s1, s2) => {
         const number1 = isNumber(s1) ? s1 : s1.size;
