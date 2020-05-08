@@ -1,3 +1,16 @@
+# [2.37.0](https://github.com/nordnet/ui/compare/v2.36.0...v2.37.0) (2020-05-08)
+
+
+### Bug Fixes
+
+* add missing colors ([29d9a61](https://github.com/nordnet/ui/commit/29d9a61))
+* merge master ([69a0789](https://github.com/nordnet/ui/commit/69a0789))
+
+
+### Features
+
+* 🎸 always expose default and a11y colors ([781646f](https://github.com/nordnet/ui/commit/781646f))
+
 # [2.36.0](https://github.com/nordnet/ui/compare/v2.35.0...v2.36.0) (2020-05-08)
 
 
