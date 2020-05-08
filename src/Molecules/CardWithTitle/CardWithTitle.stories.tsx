@@ -55,6 +55,16 @@ defaultStory.story = {
   name: 'Default',
 };
 
+export const withComponentAsTitleStory = () => (
+  <CardWithTitle title={<Typography type="hero">Hero Title</Typography>}>
+    A CardWithTitle containing content
+  </CardWithTitle>
+);
+
+withComponentAsTitleStory.story = {
+  name: 'With Component As Title',
+};
+
 export const cardWithTitleAsArticleMostCardWithTitleShouldBeArticle = () => (
   <CardWithTitle as="article" title="Konton">
     A CardWithTitle as a article containing content

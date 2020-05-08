@@ -1,11 +1,9 @@
 import React from 'react';
 import styled from 'styled-components';
-import { Card } from '../..';
+import { Card, Typography } from '../..';
 import { CardWithTitleComponent } from './CardWithTitle.types';
-
-const StyledHeader = styled.header`
-  padding: ${({ theme }) => theme.spacing.unit(5)}px;
-`;
+import { Box } from '../../Atoms/Box/Box';
+import { isElement } from '../../common/utils';
 
 const StyledCard = styled(Card)`
   display: flex;
@@ -13,31 +11,25 @@ const StyledCard = styled(Card)`
   max-height: 100%;
 `;
 
-const components = { StyledHeader };
-
-export const CardWithTitle: CardWithTitleComponent & {
-  /**
-   * This will allow you to customize
-   * inner parts with styled-components
-   * @example
-   * const CustomCardWithTitle= styled(CardWithTitle)`
-   *  ${CardWithTitle.components.StyledHeader} {
-   *    color: pink;
-   * }
-   * `
-   * */
-  components: typeof components;
-} = props => {
+export const CardWithTitle: CardWithTitleComponent = props => {
   const { title, children, ...rest } = props;
 
   return (
     <StyledCard {...rest}>
-      <StyledHeader>{title}</StyledHeader>
-      {children}
+      <Box pt={3} px={3} pb={2} sm={{ pt: 4, px: 5 }} as="header">
+        {isElement(title) ? (
+          title
+        ) : (
+          <Typography type="title3" weight="extrabold">
+            {title}
+          </Typography>
+        )}
+      </Box>
+      <Box px={3} pb={2} sm={{ px: 5, pb: 2 }}>
+        {children}
+      </Box>
     </StyledCard>
   );
 };
-
-CardWithTitle.components = components;
 
 CardWithTitle.displayName = 'CardWithTitle';
