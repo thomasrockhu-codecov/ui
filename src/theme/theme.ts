@@ -225,6 +225,12 @@ const createColors = (type: ThemeColorsVersion): ThemeColors<typeof type> => {
     indicatorPillColor8: rawColor.complementaryGreen2,
     indicatorPillColor9: rawColor.complementaryBlue2,
     indicatorPillColor10: rawColor.complementaryPink2,
+    sliderLeftColor: rawColor.brandGreen,
+    sliderRightColor: rawColor.gray6,
+    sliderThumbColor: rawColor.white,
+    sliderThumbBackground: rawColor.gray4,
+    sliderThumbBorder: rawColor.gray4,
+    sliderThumbActive: rawColor.cta,
   };
 };
 
