@@ -256,6 +256,7 @@ export const createTheme = (config: ThemeConfig = {}): Theme => {
     color: createColors(type),
     colorDefault: createColors('default'),
     colorA11y: createColors('a11y'),
+    isHighContrastMode: a11yColors,
     media: {
       between: (s1, s2) => {
         const number1 = isNumber(s1) ? s1 : s1.size;

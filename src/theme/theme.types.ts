@@ -342,4 +342,5 @@ export type Theme = {
     modal: 500;
     overlayInModal: 600;
   };
+  isHighContrastMode: boolean;
 };
