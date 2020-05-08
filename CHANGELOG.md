@@ -1,3 +1,10 @@
+# [2.36.0](https://github.com/nordnet/ui/compare/v2.35.0...v2.36.0) (2020-05-08)
+
+
+### Features
+
+* add high contrast check to theme ([3439046](https://github.com/nordnet/ui/commit/3439046))
+
 # [2.35.0](https://github.com/nordnet/ui/compare/v2.34.1...v2.35.0) (2020-05-08)
 
 
