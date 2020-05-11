@@ -11,9 +11,14 @@ const getPrefix = (value?: number | null) => {
   return value > 0 ? '▲' : '▼';
 };
 
-const getColor = ({ value, theme }: { value?: number; theme: Theme }) => {
+const getColor = ({
+  value,
+  theme,
+  positiveColor = c => c.color.positive,
+  negativeColor = c => c.color.negative,
+}: Pick<DevelopmentProps, 'value' | 'positiveColor' | 'negativeColor'> & { theme: Theme }) => {
   if (!value || !Number.isFinite(value)) return theme.color.text;
-  return value > 0 ? theme.color.positive : theme.color.negative;
+  return value > 0 ? positiveColor(theme) : negativeColor(theme);
 };
 
 const StyledDevelopment = styled.span<DevelopmentProps>`
@@ -27,6 +32,8 @@ const Development: DevelopmentComponent = props => {
     maximumDecimals,
     minimumDecimals,
     ticks,
+    positiveColor,
+    negativeColor,
     className,
     icon = false,
   } = props;
@@ -34,7 +41,12 @@ const Development: DevelopmentComponent = props => {
     ? getRoundedValue(value, { ticks, decimals, maximumDecimals, minimumDecimals })
     : value;
   return (
-    <StyledDevelopment className={className} value={roundedValue}>
+    <StyledDevelopment
+      className={className}
+      value={roundedValue}
+      positiveColor={positiveColor}
+      negativeColor={negativeColor}
+    >
       <span aria-hidden>{icon && getPrefix(roundedValue)}</span>
       <NumberComponent sign {...props} />
     </StyledDevelopment>
