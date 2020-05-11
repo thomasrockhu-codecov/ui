@@ -109,6 +109,9 @@ const Slider: FC<Props> = ({ onChange, value, max, min, step, leftColor, rightCo
   };
 
   const handleMouseMove = (event: MouseEvent) => {
+    event.stopPropagation();
+    event.preventDefault();
+
     const newX = event.clientX - diff.current - sliderRef.current.getBoundingClientRect().left;
     handleChange(newX);
   };
