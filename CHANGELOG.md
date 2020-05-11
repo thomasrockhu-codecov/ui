@@ -1,3 +1,11 @@
+## [2.38.1](https://github.com/nordnet/ui/compare/v2.38.0...v2.38.1) (2020-05-11)
+
+
+### Bug Fixes
+
+* 🐛 prevent text selection during button drag ([4694136](https://github.com/nordnet/ui/commit/4694136))
+* 🐛 prevent text selection on thumb button drag on mobile ([15ef8f5](https://github.com/nordnet/ui/commit/15ef8f5))
+
 # [2.38.0](https://github.com/nordnet/ui/compare/v2.37.0...v2.38.0) (2020-05-11)
 
 
