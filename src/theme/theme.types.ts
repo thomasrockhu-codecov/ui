@@ -265,12 +265,14 @@ export type ThemeColors<Version extends ThemeColorsVersion> = {
   indicatorPillColor10: RawColor['complementaryPink2'];
 };
 
-export type Theme = {
+export type ColorSets = {
   /** Semantic names for the colors */
   color: ThemeColors<'all'>;
   colorDefault: ThemeColors<'default'>;
   colorA11y: ThemeColors<'a11y'>;
+};
 
+export type Theme = ColorSets & {
   spacing: {
     /**
      * One unit, all spacing should be handled with this
