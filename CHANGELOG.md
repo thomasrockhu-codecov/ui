@@ -1,3 +1,10 @@
+# [2.38.0](https://github.com/nordnet/ui/compare/v2.37.0...v2.38.0) (2020-05-11)
+
+
+### Features
+
+* 🎸 add possibility to specify color on development comp ([bb487cb](https://github.com/nordnet/ui/commit/bb487cb))
+
 # [2.37.0](https://github.com/nordnet/ui/compare/v2.36.0...v2.37.0) (2020-05-08)
 
 
