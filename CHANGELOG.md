@@ -1,3 +1,11 @@
+## [2.38.2](https://github.com/nordnet/ui/compare/v2.38.1...v2.38.2) (2020-05-12)
+
+
+### Bug Fixes
+
+* add closetitle prop on modal ([d265c48](https://github.com/nordnet/ui/commit/d265c48))
+* update modal snapshot ([8574f79](https://github.com/nordnet/ui/commit/8574f79))
+
 ## [2.38.1](https://github.com/nordnet/ui/compare/v2.38.0...v2.38.1) (2020-05-11)
 
 
