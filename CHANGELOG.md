@@ -1,3 +1,10 @@
+# [2.39.0](https://github.com/nordnet/ui/compare/v2.38.2...v2.39.0) (2020-05-14)
+
+
+### Features
+
+* 🎸 new colors for pension transfers ([7d7a178](https://github.com/nordnet/ui/commit/7d7a178))
+
 ## [2.38.2](https://github.com/nordnet/ui/compare/v2.38.1...v2.38.2) (2020-05-12)
 
 
