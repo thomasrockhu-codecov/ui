@@ -231,6 +231,36 @@ const createColors = (type: ThemeColorsVersion): ThemeColors<typeof type> => {
     sliderThumbBackground: rawColor.gray4,
     sliderThumbBorder: rawColor.gray4,
     sliderThumbActive: rawColor.cta,
+    dateAvatarBackground: Color(rawColor.complementaryBlue1)
+      .alpha(0.1)
+      .rgb()
+      .string(),
+    dateAvatarText1: rawColor.gray2,
+    dateAvatarText2: rawColor.complementaryBlue2,
+    timelineColor1: rawColor.cta,
+    timelineColor2: rawColor.positive,
+    timelineColor3: rawColor.gray4,
+    transferProgressBar1: rawColor.brandPink,
+    transferProgressBar2: rawColor.positive,
+    transferProgressBar3: rawColor.gray5,
+    transferProgressBarText1: rawColor.gray1,
+    transferProgressBarText2: rawColor.gray2,
+    transferStatusBannerBackground1: Color(rawColor.complementaryBlue1)
+      .alpha(0.1)
+      .rgb()
+      .string(),
+    transferStatusBannerBackground2: Color(rawColor.complementaryPink1)
+      .alpha(0.1)
+      .rgb()
+      .string(),
+    transferStatusBannerBackground3: Color(rawColor.index)
+      .alpha(0.1)
+      .rgb()
+      .string(),
+    transferStatusBannerText1: rawColor.complementaryBlue1,
+    transferStatusBannerText2: rawColor.complementaryPink1,
+    transferStatusBannerText3: rawColor.gray0,
+    transferStatusBannerChevron: rawColor.gray0,
   };
 };
 
