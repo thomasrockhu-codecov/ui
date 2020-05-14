@@ -1,3 +1,10 @@
+## [2.39.1](https://github.com/nordnet/ui/compare/v2.39.0...v2.39.1) (2020-05-14)
+
+
+### Bug Fixes
+
+* 🐛 adds negative color timeline color  and a11y colors ([45efac2](https://github.com/nordnet/ui/commit/45efac2))
+
 # [2.39.0](https://github.com/nordnet/ui/compare/v2.38.2...v2.39.0) (2020-05-14)
 
 
