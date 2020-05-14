@@ -81,6 +81,26 @@ asCurrency.story = {
   name: 'As currency',
 };
 
+export const withDifferentColors = () => (
+  <Display
+    items={[
+      {
+        title: 'Positive value',
+        component: <Development value={50} positiveColor={c => c.colorA11y.positive} />,
+      },
+      { title: 'Zero value', component: <Development value={0} /> },
+      {
+        title: 'Negative value',
+        component: <Development value={-200} negativeColor={c => c.colorA11y.negative} />,
+      },
+    ]}
+  />
+);
+
+withDifferentColors.story = {
+  name: 'With different colors',
+};
+
 export const regressionInfinity = () => (
   <Display
     items={[

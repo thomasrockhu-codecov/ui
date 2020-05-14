@@ -1,7 +1,7 @@
 import { filter, values, mapObjIndexed, pipe, prop as Rprop } from 'ramda';
 import Color from 'color';
 import { assert, isNumber, deprecate } from '../common/utils'; // eslint-disable-line import/no-unresolved
-import { ThemeConfig, Theme, RawColor } from './theme.types';
+import { ThemeConfig, Theme, RawColor, ThemeColors, ThemeColorsVersion } from './theme.types';
 
 // Export from here for showing in story,
 // but don't export from index.ts
@@ -91,9 +91,185 @@ const getSizesValues = pipe(
   filter(Boolean),
 );
 
+const createColors = (type: ThemeColorsVersion): ThemeColors<typeof type> => {
+  const a11yColors = type === 'a11y';
+
+  return {
+    backgroundInput: rawColor.white,
+    background: rawColor.gray7,
+    backgroundBlack: rawColor.black,
+    backgroundDark: rawColor.gray0,
+    barScaleActiveBar: rawColor.complementaryBlue1,
+    barScaleInactiveBar: rawColor.gray6,
+    bubbleBackground: rawColor.white,
+    bubbleBorder: rawColor.gray4,
+    buttonSecondaryBackground: rawColor.white,
+    buttonText: rawColor.white,
+    buy: a11yColors ? rawColor.a11yCta : rawColor.cta,
+    buyActive: a11yColors
+      ? Color(rawColor.a11yCta)
+          .darken(0.3)
+          .string()
+      : Color(rawColor.cta)
+          .darken(0.3)
+          .string(),
+    borderActive: a11yColors ? rawColor.a11yCta : rawColor.cta,
+    card: rawColor.white,
+    cta: a11yColors ? rawColor.a11yCta : rawColor.cta,
+    /** @deprecated  */ creditsPiePrimary: rawColor.complementaryPink1,
+    /** @deprecated  */ creditsPieSecondary: rawColor.complementaryPink2,
+    /** @deprecated  */ disabled: rawColor.gray3,
+    disabledText: rawColor.gray3,
+    disabledBackground: rawColor.gray6,
+    divider: rawColor.gray6,
+    label: rawColor.gray2,
+    selectOptionBackground: rawColor.white,
+    menuAccent1: rawColor.brandGreen,
+    menuAccent2: rawColor.brandTurquoise,
+    menuAccent3: rawColor.index,
+    menuAccent4: rawColor.brandPink,
+    menuAccent5: rawColor.brandBlue,
+    mapColor1: rawColor.complementaryBlue2,
+    mapColor2: rawColor.complementaryBlue1,
+    mapColor3: rawColor.brandBlue,
+    mapColor4: rawColor.gray1,
+    mapColor5: rawColor.gray3,
+    modalBackdrop: Color(rawColor.gray2)
+      .alpha(0.63)
+      .rgb()
+      .string(),
+    module: rawColor.white,
+    negative: a11yColors ? rawColor.a11yNegative : rawColor.negative,
+    positive: a11yColors ? rawColor.a11yPositive : rawColor.positive,
+    sell: a11yColors ? rawColor.a11yNegative : rawColor.negative,
+    sellActive: a11yColors
+      ? Color(rawColor.a11yNegative)
+          .darken(0.3)
+          .string()
+      : Color(rawColor.negative)
+          .darken(0.3)
+          .string(),
+    shadowCard: Color(rawColor.black)
+      .alpha(0.03)
+      .rgb()
+      .string(),
+    shadowModal: Color(rawColor.black)
+      .alpha(0.16)
+      .rgb()
+      .string(),
+    shadowInput: Color(rawColor.black)
+      .alpha(0.03)
+      .rgb()
+      .string(),
+    shadowSwitch: Color(rawColor.black)
+      .alpha(0.05)
+      .rgb()
+      .string(),
+    shareville: rawColor.complementaryGreen1,
+    skeleton: rawColor.gray6,
+    spinnerBlack: rawColor.black,
+    spinnerWhite: rawColor.white,
+    starRating: rawColor.index,
+    starRatingOff: rawColor.gray6,
+    streamingBolt: rawColor.index,
+    svgFill: rawColor.gray0,
+    svgStroke: rawColor.gray2,
+    svgStokeLight: rawColor.white,
+    text: rawColor.gray0,
+    textLight: rawColor.white, // FIXME: to be removed later
+    warning: a11yColors ? rawColor.a11yIndex : rawColor.index,
+    inputBorder: rawColor.gray4,
+    inputBorderHover: rawColor.gray1,
+    flagBorder: rawColor.gray6,
+    inputBorderError: rawColor.negative,
+    inputBorderSuccess: rawColor.positive,
+    generationSavingsTimelineColor1: rawColor.complementaryGreen1,
+    generationSavingsTimelineColor2: rawColor.complementaryPink1,
+    generationSavingsTimelineColor3: rawColor.brandBlue,
+    generationSavingsTimelineColor4: rawColor.complementaryBlue1,
+    orderDepthBackground: rawColor.gray6,
+    orderDepthDarkBackground: rawColor.gray5,
+    loanRatesGraphColor2: rawColor.complementaryBlue2,
+    barChartColor1: rawColor.brandBlue,
+    barChartColor2: rawColor.complementaryBlue2,
+    barChartColor3: rawColor.complementaryBlue1,
+    barChartColor4: rawColor.complementaryGreen1,
+    barChartColor5: rawColor.complementaryPink1,
+    barChartColor6: rawColor.index,
+    barChartColor7: rawColor.complementaryGreen1,
+    columnChartColor1: rawColor.brandGreen,
+    columnChartColor2: rawColor.complementaryGreen2,
+    columnChartColor3: rawColor.complementaryGreen1,
+    columnChartColor4: rawColor.complementaryTurquoise1,
+    columnChartColor5: rawColor.complementaryTurquoise2,
+    pieChartColor1: rawColor.complementaryPink2,
+    pieChartColor2: rawColor.brandPink,
+    pieChartColor3: rawColor.gray4,
+    pill1: rawColor.complementaryPink1,
+    pill2: rawColor.complementaryTurquoise1,
+    pill3: rawColor.complementaryGreen1,
+    pill4: rawColor.complementaryBlue1,
+    pill5: rawColor.brandPink,
+    pill6: rawColor.brandTurquoise,
+    pill7: rawColor.brandBlue,
+    pill8: rawColor.complementaryGreen2,
+    pill9: rawColor.complementaryBlue2,
+    pill10: rawColor.complementaryPink2,
+    indicatorPillColor1: rawColor.complementaryPink1,
+    indicatorPillColor2: rawColor.complementaryTurquoise1,
+    indicatorPillColor3: rawColor.complementaryGreen1,
+    indicatorPillColor4: rawColor.complementaryBlue1,
+    indicatorPillColor5: rawColor.brandPink,
+    indicatorPillColor6: rawColor.brandTurquoise,
+    indicatorPillColor7: rawColor.brandBlue,
+    indicatorPillColor8: rawColor.complementaryGreen2,
+    indicatorPillColor9: rawColor.complementaryBlue2,
+    indicatorPillColor10: rawColor.complementaryPink2,
+    sliderLeftColor: rawColor.brandGreen,
+    sliderRightColor: rawColor.gray6,
+    sliderThumbColor: rawColor.white,
+    sliderThumbBackground: rawColor.gray4,
+    sliderThumbBorder: rawColor.gray4,
+    sliderThumbActive: rawColor.cta,
+    dateAvatarBackground: Color(rawColor.complementaryBlue1)
+      .alpha(0.1)
+      .rgb()
+      .string(),
+    dateAvatarText1: rawColor.gray2,
+    dateAvatarText2: rawColor.complementaryBlue2,
+    timelineColor1: a11yColors ? rawColor.a11yCta : rawColor.cta,
+    timelineColor2: a11yColors ? rawColor.a11yPositive : rawColor.positive,
+    timelineColor3: a11yColors ? rawColor.a11yIndex : rawColor.index,
+    timelineColor4: a11yColors ? rawColor.a11yNegative : rawColor.negative,
+    timelineColor5: rawColor.gray4,
+    transferProgressBar1: rawColor.brandPink,
+    transferProgressBar2: a11yColors ? rawColor.a11yPositive : rawColor.positive,
+    transferProgressBar3: rawColor.gray5,
+    transferProgressBarText1: rawColor.gray1,
+    transferProgressBarText2: rawColor.gray2,
+    transferStatusBannerBackground1: Color(rawColor.complementaryBlue1)
+      .alpha(0.1)
+      .rgb()
+      .string(),
+    transferStatusBannerBackground2: Color(rawColor.complementaryPink1)
+      .alpha(0.1)
+      .rgb()
+      .string(),
+    transferStatusBannerBackground3: Color(rawColor.index)
+      .alpha(0.1)
+      .rgb()
+      .string(),
+    transferStatusBannerText1: rawColor.complementaryBlue1,
+    transferStatusBannerText2: rawColor.complementaryPink1,
+    transferStatusBannerText3: rawColor.gray0,
+    transferStatusBannerChevron: rawColor.gray0,
+  };
+};
+
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
 export const createTheme = (config: ThemeConfig = {}): Theme => {
   const { a11yColors = false } = config;
+  const type = a11yColors ? 'a11y' : 'default';
 
   // @ts-ignore
   const sizeValues = getSizesValues(breakpoints) as number[];
@@ -115,138 +291,10 @@ export const createTheme = (config: ThemeConfig = {}): Theme => {
       duration: {},
     },
     breakpoints,
-    color: {
-      backgroundInput: rawColor.white,
-      background: rawColor.gray7,
-      backgroundBlack: rawColor.black,
-      backgroundDark: rawColor.gray0,
-      barScaleActiveBar: rawColor.complementaryBlue1,
-      barScaleInactiveBar: rawColor.gray6,
-      bubbleBackground: rawColor.white,
-      bubbleBorder: rawColor.gray4,
-      buttonSecondaryBackground: rawColor.white,
-      buttonText: rawColor.white,
-      buy: a11yColors ? rawColor.a11yCta : rawColor.cta,
-      buyActive: a11yColors
-        ? Color(rawColor.a11yCta)
-            .darken(0.3)
-            .string()
-        : Color(rawColor.cta)
-            .darken(0.3)
-            .string(),
-      borderActive: a11yColors ? rawColor.a11yCta : rawColor.cta,
-      card: rawColor.white,
-      cta: a11yColors ? rawColor.a11yCta : rawColor.cta,
-      /** @deprecated  */ creditsPiePrimary: rawColor.complementaryPink1,
-      /** @deprecated  */ creditsPieSecondary: rawColor.complementaryPink2,
-      /** @deprecated  */ disabled: rawColor.gray3,
-      disabledText: rawColor.gray3,
-      disabledBackground: rawColor.gray6,
-      divider: rawColor.gray6,
-      label: rawColor.gray2,
-      selectOptionBackground: rawColor.white,
-      menuAccent1: rawColor.brandGreen,
-      menuAccent2: rawColor.brandTurquoise,
-      menuAccent3: rawColor.index,
-      menuAccent4: rawColor.brandPink,
-      menuAccent5: rawColor.brandBlue,
-      mapColor1: rawColor.complementaryBlue2,
-      mapColor2: rawColor.complementaryBlue1,
-      mapColor3: rawColor.brandBlue,
-      mapColor4: rawColor.gray1,
-      mapColor5: rawColor.gray3,
-      modalBackdrop: Color(rawColor.gray2)
-        .alpha(0.63)
-        .rgb()
-        .string(),
-      module: rawColor.white,
-      negative: a11yColors ? rawColor.a11yNegative : rawColor.negative,
-      positive: a11yColors ? rawColor.a11yPositive : rawColor.positive,
-      sell: a11yColors ? rawColor.a11yNegative : rawColor.negative,
-      sellActive: a11yColors
-        ? Color(rawColor.a11yNegative)
-            .darken(0.3)
-            .string()
-        : Color(rawColor.negative)
-            .darken(0.3)
-            .string(),
-      shadowCard: Color(rawColor.black)
-        .alpha(0.03)
-        .rgb()
-        .string(),
-      shadowModal: Color(rawColor.black)
-        .alpha(0.16)
-        .rgb()
-        .string(),
-      shadowInput: Color(rawColor.black)
-        .alpha(0.03)
-        .rgb()
-        .string(),
-      shadowSwitch: Color(rawColor.black)
-        .alpha(0.05)
-        .rgb()
-        .string(),
-      shareville: rawColor.complementaryGreen1,
-      skeleton: rawColor.gray6,
-      spinnerBlack: rawColor.black,
-      spinnerWhite: rawColor.white,
-      starRating: rawColor.index,
-      starRatingOff: rawColor.gray6,
-      streamingBolt: rawColor.index,
-      svgFill: rawColor.gray0,
-      svgStroke: rawColor.gray2,
-      svgStokeLight: rawColor.white,
-      text: rawColor.gray0,
-      textLight: rawColor.white, // FIXME: to be removed later
-      warning: a11yColors ? rawColor.a11yIndex : rawColor.index,
-      inputBorder: rawColor.gray4,
-      inputBorderHover: rawColor.gray1,
-      flagBorder: rawColor.gray6,
-      inputBorderError: rawColor.negative,
-      inputBorderSuccess: rawColor.positive,
-      generationSavingsTimelineColor1: rawColor.complementaryGreen1,
-      generationSavingsTimelineColor2: rawColor.complementaryPink1,
-      generationSavingsTimelineColor3: rawColor.brandBlue,
-      generationSavingsTimelineColor4: rawColor.complementaryBlue1,
-      orderDepthBackground: rawColor.gray6,
-      orderDepthDarkBackground: rawColor.gray5,
-      loanRatesGraphColor2: rawColor.complementaryBlue2,
-      barChartColor1: rawColor.brandBlue,
-      barChartColor2: rawColor.complementaryBlue2,
-      barChartColor3: rawColor.complementaryBlue1,
-      barChartColor4: rawColor.complementaryGreen1,
-      barChartColor5: rawColor.complementaryPink1,
-      barChartColor6: rawColor.index,
-      barChartColor7: rawColor.complementaryGreen1,
-      columnChartColor1: rawColor.brandGreen,
-      columnChartColor2: rawColor.complementaryGreen2,
-      columnChartColor3: rawColor.complementaryGreen1,
-      columnChartColor4: rawColor.complementaryTurquoise1,
-      columnChartColor5: rawColor.complementaryTurquoise2,
-      pieChartColor1: rawColor.complementaryPink2,
-      pieChartColor2: rawColor.brandPink,
-      pieChartColor3: rawColor.gray4,
-      pill1: rawColor.complementaryPink1,
-      pill2: rawColor.complementaryTurquoise1,
-      pill3: rawColor.complementaryGreen1,
-      pill4: rawColor.complementaryBlue1,
-      pill5: rawColor.brandPink,
-      pill6: rawColor.brandTurquoise,
-      pill7: rawColor.brandBlue,
-      pill8: rawColor.complementaryGreen2,
-      pill9: rawColor.complementaryBlue2,
-      pill10: rawColor.complementaryPink2,
-      indicatorPillColor1: rawColor.complementaryPink1,
-      indicatorPillColor2: rawColor.complementaryTurquoise1,
-      indicatorPillColor3: rawColor.complementaryGreen1,
-      indicatorPillColor4: rawColor.complementaryBlue1,
-      indicatorPillColor5: rawColor.brandPink,
-      indicatorPillColor6: rawColor.brandTurquoise,
-      indicatorPillColor7: rawColor.brandBlue,
-      indicatorPillColor8: rawColor.complementaryGreen2,
-      indicatorPillColor9: rawColor.complementaryBlue2,
-      indicatorPillColor10: rawColor.complementaryPink2,
-    },
+    color: createColors(type),
+    colorDefault: createColors('default'),
+    colorA11y: createColors('a11y'),
+    isHighContrastMode: a11yColors,
     media: {
       between: (s1, s2) => {
         const number1 = isNumber(s1) ? s1 : s1.size;
