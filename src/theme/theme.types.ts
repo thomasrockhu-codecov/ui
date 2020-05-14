@@ -282,15 +282,19 @@ export type ThemeColors<Version extends ThemeColorsVersion> = {
   /** complementaryBlue2 */
   dateAvatarText2: RawColor['complementaryBlue2'];
   /** cta */
-  timelineColor1: RawColor['cta'];
+  timelineColor1: ChangeableColor<RawColor['cta'], RawColor['a11yCta'], Version>;
   /** positive */
-  timelineColor2: RawColor['positive'];
+  timelineColor2: ChangeableColor<RawColor['positive'], RawColor['a11yPositive'], Version>;
+  /** index */
+  timelineColor3: ChangeableColor<RawColor['index'], RawColor['a11yIndex'], Version>;
+  /** negative */
+  timelineColor4: ChangeableColor<RawColor['negative'], RawColor['a11yNegative'], Version>;
   /** gray4 */
-  timelineColor3: RawColor['gray4'];
+  timelineColor5: RawColor['gray4'];
   /** brankPink */
   transferProgressBar1: RawColor['brandPink'];
   /** positive */
-  transferProgressBar2: RawColor['positive'];
+  transferProgressBar2: ChangeableColor<RawColor['positive'], RawColor['a11yPositive'], Version>;
   /** gray5 */
   transferProgressBar3: RawColor['gray5'];
   /** gray1 */
