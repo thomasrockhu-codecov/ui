@@ -275,6 +275,42 @@ export type ThemeColors<Version extends ThemeColorsVersion> = {
   sliderThumbBorder: RawColor['gray4'];
   /** cta */
   sliderThumbActive: RawColor['cta'];
+  /** 10 percent of complementaryBlue1 */
+  dateAvatarBackground: string;
+  /** gray2 */
+  dateAvatarText1: RawColor['gray2'];
+  /** complementaryBlue2 */
+  dateAvatarText2: RawColor['complementaryBlue2'];
+  /** cta */
+  timelineColor1: RawColor['cta'];
+  /** positive */
+  timelineColor2: RawColor['positive'];
+  /** gray4 */
+  timelineColor3: RawColor['gray4'];
+  /** brankPink */
+  transferProgressBar1: RawColor['brandPink'];
+  /** positive */
+  transferProgressBar2: RawColor['positive'];
+  /** gray5 */
+  transferProgressBar3: RawColor['gray5'];
+  /** gray1 */
+  transferProgressBarText1: RawColor['gray1'];
+  /** gray2 */
+  transferProgressBarText2: RawColor['gray2'];
+  /** 10 percent of complementaryBlue1 */
+  transferStatusBannerBackground1: string;
+  /** 10 percent of complementaryPink1 */
+  transferStatusBannerBackground2: string;
+  /** 10 percent of index */
+  transferStatusBannerBackground3: string;
+  /** complementaryBlue1 */
+  transferStatusBannerText1: RawColor['complementaryBlue1'];
+  /** complementaryPink1 */
+  transferStatusBannerText2: RawColor['complementaryPink1'];
+  /** gray0 */
+  transferStatusBannerText3: RawColor['gray0'];
+  /** gray0 */
+  transferStatusBannerChevron: RawColor['gray0'];
 };
 
 export type ColorSets = {
