@@ -232,12 +232,10 @@ const createColors = (type: ThemeColorsVersion): ThemeColors<typeof type> => {
     sliderThumbBackground: rawColor.gray4,
     sliderThumbBorder: rawColor.gray4,
     sliderThumbActive: rawColor.cta,
-    dateAvatarBackground: Color(rawColor.complementaryBlue1)
-      .alpha(0.1)
-      .rgb()
-      .string(),
+    dateAvatarBackground1: rawColor.gray6,
+    dateAvatarBackground2: rawColor.gray7,
     dateAvatarText1: rawColor.gray2,
-    dateAvatarText2: rawColor.complementaryBlue2,
+    dateAvatarText2: rawColor.gray0,
     timelineColor1: a11yColors ? rawColor.a11yCta : rawColor.cta,
     timelineColor2: a11yColors ? rawColor.a11yPositive : rawColor.positive,
     timelineColor3: a11yColors ? rawColor.a11yIndex : rawColor.index,
