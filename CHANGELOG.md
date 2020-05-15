@@ -1,3 +1,67 @@
+## [2.39.1](https://github.com/nordnet/ui/compare/v2.39.0...v2.39.1) (2020-05-14)
+
+
+### Bug Fixes
+
+* 🐛 adds negative color timeline color  and a11y colors ([45efac2](https://github.com/nordnet/ui/commit/45efac2))
+
+# [2.39.0](https://github.com/nordnet/ui/compare/v2.38.2...v2.39.0) (2020-05-14)
+
+
+### Features
+
+* 🎸 new colors for pension transfers ([7d7a178](https://github.com/nordnet/ui/commit/7d7a178))
+
+## [2.38.2](https://github.com/nordnet/ui/compare/v2.38.1...v2.38.2) (2020-05-12)
+
+
+### Bug Fixes
+
+* add closetitle prop on modal ([d265c48](https://github.com/nordnet/ui/commit/d265c48))
+* update modal snapshot ([8574f79](https://github.com/nordnet/ui/commit/8574f79))
+
+## [2.38.1](https://github.com/nordnet/ui/compare/v2.38.0...v2.38.1) (2020-05-11)
+
+
+### Bug Fixes
+
+* 🐛 prevent text selection during button drag ([4694136](https://github.com/nordnet/ui/commit/4694136))
+* 🐛 prevent text selection on thumb button drag on mobile ([15ef8f5](https://github.com/nordnet/ui/commit/15ef8f5))
+
+# [2.38.0](https://github.com/nordnet/ui/compare/v2.37.0...v2.38.0) (2020-05-11)
+
+
+### Features
+
+* 🎸 add possibility to specify color on development comp ([bb487cb](https://github.com/nordnet/ui/commit/bb487cb))
+
+# [2.37.0](https://github.com/nordnet/ui/compare/v2.36.0...v2.37.0) (2020-05-08)
+
+
+### Bug Fixes
+
+* add missing colors ([29d9a61](https://github.com/nordnet/ui/commit/29d9a61))
+* merge master ([69a0789](https://github.com/nordnet/ui/commit/69a0789))
+
+
+### Features
+
+* 🎸 always expose default and a11y colors ([781646f](https://github.com/nordnet/ui/commit/781646f))
+
+# [2.36.0](https://github.com/nordnet/ui/compare/v2.35.0...v2.36.0) (2020-05-08)
+
+
+### Features
+
+* add high contrast check to theme ([3439046](https://github.com/nordnet/ui/commit/3439046))
+
+# [2.35.0](https://github.com/nordnet/ui/compare/v2.34.1...v2.35.0) (2020-05-08)
+
+
+### Features
+
+* 🎸 implement slider component ([743d158](https://github.com/nordnet/ui/commit/743d158))
+
 # [2.35.0-beta.1](https://github.com/nordnet/ui/compare/v2.34.1...v2.35.0-beta.1@beta) (2020-05-08)
 
 
