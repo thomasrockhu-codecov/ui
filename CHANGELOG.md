@@ -1,3 +1,15 @@
+# [2.40.0-beta.1](https://github.com/nordnet/ui/compare/v2.39.1...v2.40.0-beta.1@beta) (2020-05-15)
+
+
+### Bug Fixes
+
+* merge branch 'master' into update-beta-branch ([3b65fad](https://github.com/nordnet/ui/commit/3b65fad))
+
+
+### Features
+
+* bump version ([4ef4258](https://github.com/nordnet/ui/commit/4ef4258))
+
 ## [2.39.1](https://github.com/nordnet/ui/compare/v2.39.0...v2.39.1) (2020-05-14)
 
 
