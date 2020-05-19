@@ -1,3 +1,15 @@
+# [2.41.0-beta.1](https://github.com/nordnet/ui/compare/v2.40.0...v2.41.0-beta.1@beta) (2020-05-19)
+
+
+### Bug Fixes
+
+* merge branch 'master' into update-beta-branch ([3b65fad](https://github.com/nordnet/ui/commit/3b65fad))
+
+
+### Features
+
+* bump version ([4ef4258](https://github.com/nordnet/ui/commit/4ef4258))
+
 # [2.40.0](https://github.com/nordnet/ui/compare/v2.39.1...v2.40.0) (2020-05-15)
 
 
@@ -73,6 +85,13 @@
 ### Features
 
 * 🎸 implement slider component ([743d158](https://github.com/nordnet/ui/commit/743d158))
+
+# [2.35.0-beta.1](https://github.com/nordnet/ui/compare/v2.34.1...v2.35.0-beta.1@beta) (2020-05-08)
+
+
+### Features
+
+* bump version ([4ef4258](https://github.com/nordnet/ui/commit/4ef4258))
 
 ## [2.34.1](https://github.com/nordnet/ui/compare/v2.34.0...v2.34.1) (2020-05-07)
 
