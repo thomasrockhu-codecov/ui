@@ -1,3 +1,11 @@
+## [2.41.1](https://github.com/nordnet/ui/compare/v2.41.0...v2.41.1) (2020-05-20)
+
+
+### Bug Fixes
+
+* 🐛 add autocomplete support to Input.Text ([62fe2ef](https://github.com/nordnet/ui/commit/62fe2ef))
+* 🐛 add BankID icon ([0c8bf49](https://github.com/nordnet/ui/commit/0c8bf49))
+
 # [2.41.0](https://github.com/nordnet/ui/compare/v2.40.0...v2.41.0) (2020-05-19)
 
 
