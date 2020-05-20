@@ -95,6 +95,18 @@ withAutoFocus.story = {
   name: 'With auto focus',
 };
 
+export const withAutoComplete = () => (
+  <>
+    <Input.Text label="Ordinary Text" placeholder="Placeholder" autoComplete="on" />
+    <Input.Text label="E-mail" placeholder="Placeholder" autoComplete="email" type="email" />
+    <Input.Text label="Phone number" placeholder="Placeholder" autoComplete="tel" type="tel" />
+  </>
+);
+
+withAutoComplete.story = {
+  name: 'With auto complete',
+};
+
 export const requiredStory = () => (
   <Display
     title="Required"

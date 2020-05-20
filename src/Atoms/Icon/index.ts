@@ -4,6 +4,7 @@ import { Archive } from './components/Archive';
 import { ArrowRight } from './components/ArrowRight';
 import { Attachement } from './components/Attachement';
 import { Bank } from './components/Bank';
+import { BankID } from './components/BankID';
 import { BankDeposit } from './components/BankDeposit';
 import { Bell } from './components/Bell';
 import { Bolt } from './components/Bolt';
@@ -78,6 +79,7 @@ export default {
   ArrowRight,
   Attachement,
   Bank,
+  BankID,
   BankDeposit,
   Bell,
   Bolt,

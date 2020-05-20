@@ -102,6 +102,7 @@ const getDataProps = R.pickBy((val, key) => key.startsWith('data-'));
 
 const TextComponent = React.forwardRef<HTMLInputElement, Props>((props, ref) => {
   const {
+    autoComplete,
     autoFocus,
     defaultValue,
     disabled,
@@ -138,6 +139,7 @@ const TextComponent = React.forwardRef<HTMLInputElement, Props>((props, ref) => 
         <Wrapper>
           <Input
             {...{
+              autoComplete,
               autoFocus,
               defaultValue,
               disabled,
