@@ -1,3 +1,10 @@
+## [2.41.2](https://github.com/nordnet/ui/compare/v2.41.1...v2.41.2) (2020-05-22)
+
+
+### Bug Fixes
+
+* 🐛 fix vertical alignment in select component ([9212e81](https://github.com/nordnet/ui/commit/9212e81))
+
 ## [2.41.1](https://github.com/nordnet/ui/compare/v2.41.0...v2.41.1) (2020-05-20)
 
 
