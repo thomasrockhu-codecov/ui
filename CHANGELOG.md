@@ -1,3 +1,11 @@
+## [2.41.3](https://github.com/nordnet/ui/compare/v2.41.2...v2.41.3) (2020-05-25)
+
+
+### Bug Fixes
+
+* ad as prop to drawer ([23636aa](https://github.com/nordnet/ui/commit/23636aa))
+* add rest props to button ([e21ba49](https://github.com/nordnet/ui/commit/e21ba49))
+
 ## [2.41.2](https://github.com/nordnet/ui/compare/v2.41.1...v2.41.2) (2020-05-22)
 
 
