@@ -118,6 +118,8 @@ export type ThemeColors<Version extends ThemeColorsVersion> = {
   positive: ChangeableColor<RawColor['positive'], RawColor['a11yPositive'], Version>;
   /** negative */
   negative: ChangeableColor<RawColor['negative'], RawColor['a11yNegative'], Version>;
+  /** negative or brandPink */
+  negativeBlackBackground: ChangeableColor<RawColor['negative'], RawColor['brandPink'], Version>;
   /** index */
   warning: ChangeableColor<RawColor['index'], RawColor['a11yIndex'], Version>;
   /** white */

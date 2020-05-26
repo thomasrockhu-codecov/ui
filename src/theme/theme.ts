@@ -141,6 +141,7 @@ const createColors = (type: ThemeColorsVersion): ThemeColors<typeof type> => {
       .string(),
     module: rawColor.white,
     negative: a11yColors ? rawColor.a11yNegative : rawColor.negative,
+    negativeBlackBackground: a11yColors ? rawColor.brandPink : rawColor.negative,
     positive: a11yColors ? rawColor.a11yPositive : rawColor.positive,
     sell: a11yColors ? rawColor.a11yNegative : rawColor.negative,
     sellActive: a11yColors ? rawColor.a11yNegativePressed : rawColor.negativePressed,
