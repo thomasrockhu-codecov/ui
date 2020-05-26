@@ -1,3 +1,10 @@
+# [2.42.0](https://github.com/nordnet/ui/compare/v2.41.4...v2.42.0) (2020-05-26)
+
+
+### Features
+
+* 🎸 add color ([d6ddca2](https://github.com/nordnet/ui/commit/d6ddca2))
+
 ## [2.41.4](https://github.com/nordnet/ui/compare/v2.41.3...v2.41.4) (2020-05-26)
 
 
