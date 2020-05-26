@@ -1,3 +1,10 @@
+## [2.41.4](https://github.com/nordnet/ui/compare/v2.41.3...v2.41.4) (2020-05-26)
+
+
+### Bug Fixes
+
+* 🐛 change pressed colors and a11y colors ([d921ee3](https://github.com/nordnet/ui/commit/d921ee3))
+
 ## [2.41.3](https://github.com/nordnet/ui/compare/v2.41.2...v2.41.3) (2020-05-25)
 
 
