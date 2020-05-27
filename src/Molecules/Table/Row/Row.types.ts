@@ -7,4 +7,16 @@ type Props = {
   hideBorder?: boolean;
 };
 
-export type RowComponent = React.FC<Props>;
+type Expandable = {
+  expanded?: boolean;
+  expandable: true;
+};
+
+type NonExpandable = {
+  expanded?: false;
+  expandable?: false;
+};
+
+type ExpandableProps = Expandable | NonExpandable;
+
+export type RowComponent = React.FC<Props & ExpandableProps>;

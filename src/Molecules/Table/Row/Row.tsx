@@ -27,8 +27,17 @@ const StyledRow = styled('div').withConfig({
   }
 `;
 
-export const Row: RowComponent = ({ size = 'm', hideBorder = false, children }) => (
-  <StyledRow size={size} hideBorder={hideBorder} role="row">
-    {children}
-  </StyledRow>
-);
+export const Row: RowComponent = ({
+  expanded = false,
+  expandable = false,
+  size = 'm',
+  hideBorder = false,
+  children,
+}) => {
+  return (
+    <StyledRow size={size} hideBorder={hideBorder} role="row" aria-expanded={expanded}>
+      {children}
+      {expandable && <span>Expanded</span>}
+    </StyledRow>
+  );
+};
