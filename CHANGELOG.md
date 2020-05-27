@@ -1,3 +1,10 @@
+## [2.42.1](https://github.com/nordnet/ui/compare/v2.42.0...v2.42.1) (2020-05-27)
+
+
+### Bug Fixes
+
+* 🐛 makes indicator optional for CollapsibleCard ([54cd535](https://github.com/nordnet/ui/commit/54cd535))
+
 # [2.42.0](https://github.com/nordnet/ui/compare/v2.41.4...v2.42.0) (2020-05-26)
 
 
