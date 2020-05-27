@@ -16,14 +16,19 @@ const getPaddingSize = (size: Size) => {
 };
 
 const StyledRow = styled('div').withConfig({
-  shouldForwardProp: prop => !['size'].includes(prop),
-})<{ size: Size }>`
+  shouldForwardProp: prop => !['size', ''].includes(prop),
+})<{ size: Size; hideBorder: boolean }>`
   padding-top: ${p => p.theme.spacing.unit(getPaddingSize(p.size))}px;
   padding-bottom: ${p => p.theme.spacing.unit(getPaddingSize(p.size))}px;
+  ${p => (!p.hideBorder ? `border-bottom: 1px solid ${p.theme.color.divider}` : '')};
+
+  &:hover {
+    background: ${p => p.theme.color.tableRowHover};
+  }
 `;
 
-export const Row: RowComponent = ({ size = 'm', children }) => (
-  <StyledRow size={size} role="row">
+export const Row: RowComponent = ({ size = 'm', hideBorder = false, children }) => (
+  <StyledRow size={size} hideBorder={hideBorder} role="row">
     {children}
   </StyledRow>
 );

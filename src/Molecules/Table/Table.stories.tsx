@@ -8,4 +8,12 @@ export default {
   },
 };
 
-export const emptyTable = () => <Table />;
+export const tableWithDifferentRows = () => (
+  <Table>
+    <Table.Row>Default</Table.Row>
+    <Table.Row hideBorder>Border bottom hidden</Table.Row>
+    <Table.Row size="l">Large</Table.Row>
+    <Table.Row size="m">Medium</Table.Row>
+    <Table.Row size="s">Small</Table.Row>
+  </Table>
+);
