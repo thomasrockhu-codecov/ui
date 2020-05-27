@@ -1,1 +1,3 @@
-export { Table } from './Table';
+import { Row } from './Row';
+
+export default { Row };
