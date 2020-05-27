@@ -1,7 +1,82 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Storyshots Molecules | Table Empty Table 1`] = `
+exports[`Storyshots Molecules | Table Table With Different Rows 1`] = `
+.c0 {
+  padding-top: 4px;
+  padding-bottom: 4px;
+  border-bottom: 1px solid #EBEBE8;
+}
+
+.c0:hover {
+  background: #F5F5F5;
+}
+
+.c1 {
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+
+.c1:hover {
+  background: #F5F5F5;
+}
+
+.c2 {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid #EBEBE8;
+}
+
+.c2:hover {
+  background: #F5F5F5;
+}
+
+.c3 {
+  padding-top: 0px;
+  padding-bottom: 0px;
+  border-bottom: 1px solid #EBEBE8;
+}
+
+.c3:hover {
+  background: #F5F5F5;
+}
+
 <div
   role="table"
-/>
+>
+  <div
+    className="c0"
+    hideBorder={false}
+    role="row"
+  >
+    Default
+  </div>
+  <div
+    className="c1"
+    hideBorder={true}
+    role="row"
+  >
+    Border bottom hidden
+  </div>
+  <div
+    className="c2"
+    hideBorder={false}
+    role="row"
+  >
+    Large
+  </div>
+  <div
+    className="c0"
+    hideBorder={false}
+    role="row"
+  >
+    Medium
+  </div>
+  <div
+    className="c3"
+    hideBorder={false}
+    role="row"
+  >
+    Small
+  </div>
+</div>
 `;
