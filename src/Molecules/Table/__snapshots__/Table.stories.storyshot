@@ -5,6 +5,7 @@ exports[`Storyshots Molecules | Table Table With Different Rows 1`] = `
   padding-top: 4px;
   padding-bottom: 4px;
   border-bottom: 1px solid #EBEBE8;
+  border-left: 2px solid transparent;
 }
 
 .c0:hover {
@@ -14,6 +15,7 @@ exports[`Storyshots Molecules | Table Table With Different Rows 1`] = `
 .c1 {
   padding-top: 4px;
   padding-bottom: 4px;
+  border-left: 2px solid transparent;
 }
 
 .c1:hover {
@@ -24,6 +26,7 @@ exports[`Storyshots Molecules | Table Table With Different Rows 1`] = `
   padding-top: 8px;
   padding-bottom: 8px;
   border-bottom: 1px solid #EBEBE8;
+  border-left: 2px solid transparent;
 }
 
 .c2:hover {
@@ -34,6 +37,7 @@ exports[`Storyshots Molecules | Table Table With Different Rows 1`] = `
   padding-top: 0px;
   padding-bottom: 0px;
   border-bottom: 1px solid #EBEBE8;
+  border-left: 2px solid transparent;
 }
 
 .c3:hover {
@@ -44,41 +48,31 @@ exports[`Storyshots Molecules | Table Table With Different Rows 1`] = `
   role="table"
 >
   <div
-    aria-expanded={false}
     className="c0"
-    hideBorder={false}
     role="row"
   >
     Default
   </div>
   <div
-    aria-expanded={false}
     className="c1"
-    hideBorder={true}
     role="row"
   >
     Border bottom hidden
   </div>
   <div
-    aria-expanded={false}
     className="c2"
-    hideBorder={false}
     role="row"
   >
     Large
   </div>
   <div
-    aria-expanded={false}
     className="c0"
-    hideBorder={false}
     role="row"
   >
     Medium
   </div>
   <div
-    aria-expanded={false}
     className="c3"
-    hideBorder={false}
     role="row"
   >
     Small

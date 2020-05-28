@@ -1,5 +1,6 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Table from './Table';
+import { Button } from '../../index';
 
 export default {
   title: 'Molecules | Table',
@@ -8,7 +9,7 @@ export default {
   },
 };
 
-export const tableWithDifferentRows = () => (
+export const TableWithDifferentRows = () => (
   <Table>
     <Table.Row>Default</Table.Row>
     <Table.Row hideBorder>Border bottom hidden</Table.Row>
@@ -18,11 +19,18 @@ export const tableWithDifferentRows = () => (
   </Table>
 );
 
-export const tableExpanded = () => (
-  <Table>
-    <Table.Row>Default</Table.Row>
-    <Table.Row expandable expanded>Expandable</Table.Row>
-    <Table.Row>Default</Table.Row>
-    <Table.Row>Default</Table.Row>
-  </Table>
-);
+export const TableExpanded = () => {
+  const [expanded, setExpanded] = useState(false);
+  return (
+    <Table>
+      <Table.Row>Default</Table.Row>
+      <Table.Row expandable expanded={expanded}>
+        <Button variant="secondary" size="s" onClick={() => setExpanded(!expanded)}>
+          {expanded ? 'Collapse' : 'Expand'}
+        </Button>
+      </Table.Row>
+      <Table.Row>Default</Table.Row>
+      <Table.Row>Default</Table.Row>
+    </Table>
+  );
+};
