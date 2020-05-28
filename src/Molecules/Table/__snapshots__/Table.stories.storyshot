@@ -1,10 +1,25 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Storyshots Molecules | Table Table With Different Rows 1`] = `
-.c0 {
+.c1 {
   padding-top: 4px;
   padding-bottom: 4px;
+}
+
+.c3 {
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+.c4 {
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+
+.c0 {
   border-bottom: 1px solid #EBEBE8;
+  padding-right: 8px;
+  padding-left: 6px;
   border-left: 2px solid transparent;
 }
 
@@ -12,35 +27,13 @@ exports[`Storyshots Molecules | Table Table With Different Rows 1`] = `
   background: #F5F5F5;
 }
 
-.c1 {
-  padding-top: 4px;
-  padding-bottom: 4px;
-  border-left: 2px solid transparent;
-}
-
-.c1:hover {
-  background: #F5F5F5;
-}
-
 .c2 {
-  padding-top: 8px;
-  padding-bottom: 8px;
-  border-bottom: 1px solid #EBEBE8;
+  padding-right: 8px;
+  padding-left: 6px;
   border-left: 2px solid transparent;
 }
 
 .c2:hover {
-  background: #F5F5F5;
-}
-
-.c3 {
-  padding-top: 0px;
-  padding-bottom: 0px;
-  border-bottom: 1px solid #EBEBE8;
-  border-left: 2px solid transparent;
-}
-
-.c3:hover {
   background: #F5F5F5;
 }
 
@@ -51,31 +44,51 @@ exports[`Storyshots Molecules | Table Table With Different Rows 1`] = `
     className="c0"
     role="row"
   >
-    Default
-  </div>
-  <div
-    className="c1"
-    role="row"
-  >
-    Border bottom hidden
+    <div
+      className="c1"
+    >
+      Default
+    </div>
   </div>
   <div
     className="c2"
     role="row"
   >
-    Large
+    <div
+      className="c1"
+    >
+      Border bottom hidden
+    </div>
   </div>
   <div
     className="c0"
     role="row"
   >
-    Medium
+    <div
+      className="c3"
+    >
+      Large
+    </div>
   </div>
   <div
-    className="c3"
+    className="c0"
     role="row"
   >
-    Small
+    <div
+      className="c1"
+    >
+      Medium
+    </div>
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c4"
+    >
+      Small
+    </div>
   </div>
 </div>
 `;
