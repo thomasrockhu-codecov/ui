@@ -34,3 +34,17 @@ export const TableExpanded = () => {
     </Table>
   );
 };
+
+export const ExpandedContentAsRenderProp = () => {
+  const expandableContent = () => <div>Oh hello I am a render prop</div>;
+  return (
+    <Table>
+      <Table.Row expanded expandable expandableContent={expandableContent}>
+        Default
+      </Table.Row>
+      <Table.Row>Default</Table.Row>
+      <Table.Row>Default</Table.Row>
+      <Table.Row>Default</Table.Row>
+    </Table>
+  );
+};

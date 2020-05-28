@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { ReactNode } from 'react';
 
 export type Size = 's' | 'm' | 'l';
 
@@ -6,6 +6,7 @@ type Props = {
   size?: Size;
   hideBorder?: boolean;
   className?: string;
+  expandableContent?: () => ReactNode;
 };
 
 type Expandable = {

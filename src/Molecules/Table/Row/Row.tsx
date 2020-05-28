@@ -39,6 +39,7 @@ export const Row: RowComponent = ({
   expandable = false,
   size = 'm',
   hideBorder = false,
+  expandableContent,
   children,
 }) => {
   const ariaExpanded = expandable ? { 'aria-expanded': expanded } : {};
@@ -54,7 +55,7 @@ export const Row: RowComponent = ({
       {expandable && expanded && (
         <ExpandedContent>
           <Box px={3} pb={2}>
-            Expanded content
+            {expandableContent && expandableContent()}
           </Box>
         </ExpandedContent>
       )}
