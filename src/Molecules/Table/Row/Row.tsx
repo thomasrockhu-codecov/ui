@@ -16,18 +16,26 @@ const getPaddingSize = (size: Size) => {
 };
 
 const StyledRow = styled('div').withConfig({
-  shouldForwardProp: prop => !['size', ''].includes(prop),
-})<{ size: Size; hideBorder: boolean }>`
+  shouldForwardProp: prop => !['size', 'hideBorder', 'expanded', ''].includes(prop),
+})<{ size: Size; hideBorder: boolean; expanded: boolean; }>`
   padding-top: ${p => p.theme.spacing.unit(getPaddingSize(p.size))}px;
   padding-bottom: ${p => p.theme.spacing.unit(getPaddingSize(p.size))}px;
   ${p => (!p.hideBorder ? `border-bottom: 1px solid ${p.theme.color.divider}` : '')};
 
+  border-left: ${p => p.theme.spacing.unit(0.5)} solid ${p => p.expanded ? p.theme.color.cta : 'transparent'};
+
   &:hover {
     background: ${p => p.theme.color.tableRowHover};
   }
+  
+`;
+
+const ExpandedContent = styled('div')`
+  
 `;
 
 export const Row: RowComponent = ({
+  className,
   expanded = false,
   expandable = false,
   size = 'm',
@@ -35,9 +43,9 @@ export const Row: RowComponent = ({
   children,
 }) => {
   return (
-    <StyledRow size={size} hideBorder={hideBorder} role="row" aria-expanded={expanded}>
+    <StyledRow className={className} size={size} hideBorder={hideBorder} role="row" expanded={expanded} aria-expanded={expanded}>
       {children}
-      {expandable && <span>Expanded</span>}
+      {expandable && <div>Expanded</div>}
     </StyledRow>
   );
 };

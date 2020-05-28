@@ -5,6 +5,7 @@ export type Size = 's' | 'm' | 'l';
 type Props = {
   size?: Size;
   hideBorder?: boolean;
+  className?: string;
 };
 
 type Expandable = {

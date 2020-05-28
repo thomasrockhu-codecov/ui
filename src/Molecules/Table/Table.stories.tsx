@@ -17,3 +17,12 @@ export const tableWithDifferentRows = () => (
     <Table.Row size="s">Small</Table.Row>
   </Table>
 );
+
+export const tableExpanded = () => (
+  <Table>
+    <Table.Row>Default</Table.Row>
+    <Table.Row expandable expanded>Expandable</Table.Row>
+    <Table.Row>Default</Table.Row>
+    <Table.Row>Default</Table.Row>
+  </Table>
+);
