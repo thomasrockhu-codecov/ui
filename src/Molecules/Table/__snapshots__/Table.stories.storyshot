@@ -1,5 +1,96 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`Storyshots Molecules | Table Expanded Content As Render Prop 1`] = `
+.c1 {
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+
+.c2 {
+  padding-left: 12px;
+  padding-right: 12px;
+  padding-bottom: 8px;
+}
+
+.c0 {
+  padding-right: 8px;
+  padding-left: 6px;
+  border-left: 2px solid #0046FF;
+}
+
+.c0:hover {
+  background: #F5F5F5;
+}
+
+.c3 {
+  border-bottom: 1px solid #EBEBE8;
+  padding-right: 8px;
+  padding-left: 6px;
+  border-left: 2px solid transparent;
+}
+
+.c3:hover {
+  background: #F5F5F5;
+}
+
+<div
+  role="table"
+>
+  <div
+    aria-expanded={true}
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    >
+      Default
+    </div>
+    <div
+      className=""
+    >
+      <div
+        className="c2"
+      >
+        <div>
+          Oh hello I am a render prop
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    className="c3"
+    role="row"
+  >
+    <div
+      className="c1"
+    >
+      Default
+    </div>
+  </div>
+  <div
+    className="c3"
+    role="row"
+  >
+    <div
+      className="c1"
+    >
+      Default
+    </div>
+  </div>
+  <div
+    className="c3"
+    role="row"
+  >
+    <div
+      className="c1"
+    >
+      Default
+    </div>
+  </div>
+</div>
+`;
+
 exports[`Storyshots Molecules | Table Table With Different Rows 1`] = `
 .c1 {
   padding-top: 4px;

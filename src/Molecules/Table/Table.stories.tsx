@@ -20,19 +20,23 @@ export const TableWithDifferentRows = () => (
 );
 
 export const TableExpanded = () => {
-  const [expanded, setExpanded] = useState(false);
-  return (
-    <Table>
-      <Table.Row>Default</Table.Row>
-      <Table.Row expandable expanded={expanded}>
-        <Button variant="secondary" size="s" onClick={() => setExpanded(!expanded)}>
-          {expanded ? 'Collapse' : 'Expand'}
-        </Button>
-      </Table.Row>
-      <Table.Row>Default</Table.Row>
-      <Table.Row>Default</Table.Row>
-    </Table>
-  );
+  const TableExpandedExample = () => {
+    const [expanded, setExpanded] = useState(false);
+    return (
+      <Table>
+        <Table.Row>Default</Table.Row>
+        <Table.Row expandable expanded={expanded}>
+          <Button variant="secondary" size="s" onClick={() => setExpanded(!expanded)}>
+            {expanded ? 'Collapse' : 'Expand'}
+          </Button>
+        </Table.Row>
+        <Table.Row>Default</Table.Row>
+        <Table.Row>Default</Table.Row>
+      </Table>
+    );
+  };
+
+  return <TableExpandedExample />;
 };
 
 export const ExpandedContentAsRenderProp = () => {
