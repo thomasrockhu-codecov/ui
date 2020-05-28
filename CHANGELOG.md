@@ -1,3 +1,10 @@
+## [2.42.2](https://github.com/nordnet/ui/compare/v2.42.1...v2.42.2) (2020-05-28)
+
+
+### Bug Fixes
+
+* now collision triggers properly ([e60ab60](https://github.com/nordnet/ui/commit/e60ab60))
+
 ## [2.42.1](https://github.com/nordnet/ui/compare/v2.42.0...v2.42.1) (2020-05-27)
 
 
