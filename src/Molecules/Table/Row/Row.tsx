@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { RowComponent, Size } from './Row.types';
-import {Box} from "../../../index";
+import { Box } from '../../../index';
 
 const getPaddingSize = (size: Size) => {
   switch (size) {
@@ -17,12 +17,12 @@ const getPaddingSize = (size: Size) => {
 };
 
 const StyledRow = styled('div').withConfig({
-  shouldForwardProp: prop => !['size', 'hideBorder', 'expanded', ''].includes(prop),
-})<{ size: Size; hideBorder: boolean; expanded: boolean }>`
-  padding-top: ${p => p.theme.spacing.unit(getPaddingSize(p.size))}px;
-  padding-bottom: ${p => p.theme.spacing.unit(getPaddingSize(p.size))}px;
-  ${p => (!p.hideBorder ? `border-bottom: 1px solid ${p.theme.color.divider}` : '')};
+  shouldForwardProp: prop => !['hideBorder', 'expanded'].includes(prop),
+})<{ hideBorder: boolean; expanded: boolean }>`
+  ${p => (!p.hideBorder && !p.expanded ? `border-bottom: 1px solid ${p.theme.color.divider}` : '')};
 
+  padding-right: ${p => p.theme.spacing.unit(2)}px;
+  padding-left: ${p => p.theme.spacing.unit(1.5)}px;
   border-left: ${p => p.theme.spacing.unit(0.5)}px solid
     ${p => (p.expanded ? p.theme.color.cta : 'transparent')};
 
@@ -31,9 +31,7 @@ const StyledRow = styled('div').withConfig({
   }
 `;
 
-const ExpandedContent = styled('div')`
- 
-`;
+const ExpandedContent = styled('div')``;
 
 export const Row: RowComponent = ({
   className,
@@ -47,14 +45,19 @@ export const Row: RowComponent = ({
   return (
     <StyledRow
       className={className}
-      size={size}
       hideBorder={hideBorder}
       role="row"
       expanded={expanded}
       {...ariaExpanded}
     >
-      {children}
-      {expandable && expanded && <ExpandedContent><Box px={3} pb={2}>Expanded content</Box></ExpandedContent>}
+      <Box py={getPaddingSize(size)}>{children}</Box>
+      {expandable && expanded && (
+        <ExpandedContent>
+          <Box px={3} pb={2}>
+            Expanded content
+          </Box>
+        </ExpandedContent>
+      )}
     </StyledRow>
   );
 };
