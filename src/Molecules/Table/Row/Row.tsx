@@ -36,23 +36,22 @@ const ExpandedContent = styled('div')``;
 export const Row: RowComponent = ({
   className,
   expanded = false,
-  expandable = false,
   size = 'm',
   hideBorder = false,
   expandableContent,
   children,
+  ...htmlProps
 }) => {
-  const ariaExpanded = expandable ? { 'aria-expanded': expanded } : {};
   return (
     <StyledRow
       className={className}
       hideBorder={hideBorder}
       role="row"
       expanded={expanded}
-      {...ariaExpanded}
+      {...htmlProps}
     >
       <Box py={getPaddingSize(size)}>{children}</Box>
-      {expandable && expanded && (
+      {expanded && (
         <ExpandedContent>
           <Box px={3} pb={2}>
             {expandableContent && expandableContent()}

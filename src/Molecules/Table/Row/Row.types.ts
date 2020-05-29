@@ -1,5 +1,7 @@
 import React, { ReactNode } from 'react';
 
+type HtmlProps = {} & React.HTMLAttributes<HTMLDivElement>;
+
 export type Size = 's' | 'm' | 'l';
 
 type Props = {
@@ -7,18 +9,7 @@ type Props = {
   hideBorder?: boolean;
   className?: string;
   expandableContent?: () => ReactNode;
-};
-
-type Expandable = {
   expanded?: boolean;
-  expandable: true;
-};
+} & HtmlProps;
 
-type NonExpandable = {
-  expanded?: false;
-  expandable?: false;
-};
-
-type ExpandableProps = Expandable | NonExpandable;
-
-export type RowComponent = React.FC<Props & ExpandableProps>;
+export type RowComponent = React.FC<Props>;
