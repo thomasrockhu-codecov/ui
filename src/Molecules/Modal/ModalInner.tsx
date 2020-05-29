@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, useRef } from 'react';
 import { useUIDSeed } from 'react-uid';
 import { RemoveScroll } from 'react-remove-scroll';
 import FocusLock from 'react-focus-lock';
@@ -7,6 +7,7 @@ import { motion } from 'framer-motion';
 import { DialogProps, Props } from './Modal.types';
 import NormalizedElements from '../../common/NormalizedElements';
 import { isFunction } from '../../common/utils';
+import { useOnClickOutside } from '../../common/Hooks';
 import { Title } from './Title';
 import { Flexbox, Icon, useKeyPress } from '../..';
 
@@ -90,6 +91,7 @@ export const ModalInner: React.FC<Props> = ({
   onClose,
   footer,
   hideClose = false,
+  closeOnBackdropClick = false,
 }) => {
   const [show, setShow] = useState(false);
   const escapePress = useKeyPress('Escape');
@@ -111,6 +113,8 @@ export const ModalInner: React.FC<Props> = ({
   const seed = useUIDSeed();
   const titleId = seed('ModalTitle');
   const hasHeader = !hideClose || title;
+  const ref = useRef<HTMLDivElement>(null);
+  useOnClickOutside(ref, onClose as () => void);
 
   useEffect(() => {
     setShow(true); // Show is only used for animation
@@ -134,6 +138,7 @@ export const ModalInner: React.FC<Props> = ({
               className={className}
               show={show}
               role="dialog"
+              {...closeOnBackdropClick && { ref }}
               {...animationProps}
             >
               {hasHeader && <Header>{title && <Title title={title} uid={titleId} />}</Header>}
