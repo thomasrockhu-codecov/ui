@@ -25,7 +25,7 @@ export const TableExpanded = () => {
     return (
       <Table>
         <Table.Row>Default</Table.Row>
-        <Table.Row expanded={expanded}>
+        <Table.Row expanded={expanded} expandableContent={<div>I am expanded</div>}>
           <Button variant="secondary" size="s" onClick={() => setExpanded(!expanded)}>
             {expanded ? 'Collapse' : 'Expand'}
           </Button>
@@ -35,20 +35,5 @@ export const TableExpanded = () => {
       </Table>
     );
   };
-
   return <TableExpandedExample />;
-};
-
-export const ExpandedContentAsRenderProp = () => {
-  const expandableContent = () => <div>Oh hello I am a render prop</div>;
-  return (
-    <Table>
-      <Table.Row expanded expandableContent={expandableContent}>
-        Default
-      </Table.Row>
-      <Table.Row>Default</Table.Row>
-      <Table.Row>Default</Table.Row>
-      <Table.Row>Default</Table.Row>
-    </Table>
-  );
 };

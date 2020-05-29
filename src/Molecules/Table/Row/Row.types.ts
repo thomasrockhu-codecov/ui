@@ -8,7 +8,7 @@ type Props = {
   size?: Size;
   hideBorder?: boolean;
   className?: string;
-  expandableContent?: () => ReactNode;
+  expandableContent?: ReactNode;
   expanded?: boolean;
 } & HtmlProps;
 

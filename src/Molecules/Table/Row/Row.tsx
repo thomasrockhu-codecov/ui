@@ -54,7 +54,7 @@ export const Row: RowComponent = ({
       {expanded && (
         <ExpandedContent>
           <Box px={3} pb={2}>
-            {expandableContent && expandableContent()}
+            {expandableContent}
           </Box>
         </ExpandedContent>
       )}
