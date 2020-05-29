@@ -5,6 +5,7 @@ export type InnerProps = {
   title?: React.ReactNode;
   footer?: React.ReactNode;
   hideClose?: boolean;
+  /** @default false */
   closeOnBackdropClick?: boolean;
 };
 
