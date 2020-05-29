@@ -16,4 +16,8 @@ export type Props = {
   colorNext?: ColorFn;
   colorText?: ColorFn;
   colorLabel?: ColorFn;
+  titleContainer?: string;
+  titleDone?: string;
+  titleActive?: string;
+  titleNext?: string;
 };

@@ -5,11 +5,13 @@ import styled from 'styled-components';
 import { Flexbox, Icon, Typography } from '../..';
 import { Props } from './ProgressBar.types';
 
-const StyledContainer = styled(Flexbox)`
+const StyledContainer = styled(Flexbox).withConfig({
+  shouldForwardProp: prop => !['hasLabels'].includes(prop),
+})<{ hasLabels: boolean | undefined }>`
   width: 100%;
   padding-bottom: ${({ theme }) => theme.spacing.unit(0)}px;
   ${p => p.theme.media.greaterThan(p.theme.breakpoints.md)} {
-    padding-bottom: ${({ theme }) => theme.spacing.unit(8)}px;
+    padding-bottom: ${({ theme, hasLabels }) => hasLabels && theme.spacing.unit(8)}px;
   }
 `;
 
@@ -76,6 +78,10 @@ const ProgressBar: FC<Props> = ({
   colorNext,
   colorText,
   colorLabel,
+  titleContainer,
+  titleDone,
+  titleActive,
+  titleNext,
 }) => {
   const stepBubble = (stepNumber: number) => {
     const stepDone = stepNumber < currentStep;
@@ -83,12 +89,12 @@ const ProgressBar: FC<Props> = ({
 
     const titleProgress = () => {
       if (stepDone) {
-        return 'step done';
+        return titleDone || 'step done';
       }
       if (stepActive) {
-        return 'active step';
+        return titleActive || 'active step';
       }
-      return 'step not done';
+      return titleNext || 'step not done';
     };
 
     const title = `${
@@ -146,7 +152,12 @@ const ProgressBar: FC<Props> = ({
   };
 
   return (
-    <StyledContainer container alignItems="center" title="progress bar">
+    <StyledContainer
+      container
+      alignItems="center"
+      title={titleContainer || 'progress bar'}
+      hasLabels={stepLabels && stepLabels.length > 0}
+    >
       {generateSteps()}
     </StyledContainer>
   );

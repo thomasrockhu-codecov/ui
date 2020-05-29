@@ -70,3 +70,20 @@ export const CustomColors = () => {
     </Box>
   );
 };
+
+export const CustomTitles = () => {
+  const stepLabels = ['Huey', 'Dewey', 'Louie'];
+  return (
+    <Box px={10}>
+      <ProgressBar
+        numberOfSteps={3}
+        currentStep={2}
+        stepLabels={stepLabels}
+        titleContainer="Donald's Nephews"
+        titleDone="The red one"
+        titleActive="The blue one"
+        titleNext="The green one"
+      />
+    </Box>
+  );
+};
