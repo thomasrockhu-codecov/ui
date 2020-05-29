@@ -13,21 +13,28 @@ const StyledContainer = styled(Flexbox).withConfig({
 `;
 
 const StyledBubble = styled(Flexbox).withConfig({
-  shouldForwardProp: prop => !['done', 'active'].includes(prop),
-})<{ done: boolean; active: boolean }>`
+  shouldForwardProp: prop =>
+    !['done', 'active', 'colorDone', 'colorActive', 'colorNext'].includes(prop),
+})<{
+  done: boolean;
+  active: boolean;
+  colorDone: Props['colorDone'];
+  colorActive: Props['colorActive'];
+  colorNext: Props['colorNext'];
+}>`
   position: relative;
   border-radius: 50%;
   width: ${({ theme }) => theme.spacing.unit(8)}px;
   height: ${({ theme }) => theme.spacing.unit(8)}px;
   color: ${({ theme }) => theme.color.progressBarText};
-  background: ${({ theme, done, active }) => {
+  background: ${({ theme, done, active, colorDone, colorActive, colorNext }) => {
     if (done) {
-      return theme.color.progressBarDone;
+      return colorDone ? colorDone(theme) : theme.color.progressBarDone;
     }
     if (active) {
-      return theme.color.progressBarActive;
+      return colorActive ? colorActive(theme) : theme.color.progressBarActive;
     }
-    return theme.color.progressBarNext;
+    return colorNext ? colorNext(theme) : theme.color.progressBarNext;
   }};
 `;
 
@@ -38,14 +45,33 @@ const StyledTypography = styled(Typography)`
   white-space: nowrap;
 `;
 
-const StyledLine = styled.div<{ done: boolean }>`
+const StyledLine = styled.div.withConfig({
+  shouldForwardProp: prop => !['done', 'colorDone', 'colorNext'].includes(prop),
+})<{
+  done: boolean;
+  colorDone: Props['colorDone'];
+  colorNext: Props['colorNext'];
+}>`
   width: 100%;
   height: ${({ theme }) => theme.spacing.unit(0.5)}px;
-  background: ${({ theme, done }) =>
-    done ? theme.color.progressBarDone : theme.color.progressBarNext};
+  background: ${({ theme, done, colorDone, colorNext }) => {
+    if (done) {
+      return colorDone ? colorDone(theme) : theme.color.progressBarDone;
+    }
+    return colorNext ? colorNext(theme) : theme.color.progressBarNext;
+  }};
 `;
 
-const ProgressBar: FC<Props> = ({ numberOfSteps, currentStep, stepLabels }) => {
+const ProgressBar: FC<Props> = ({
+  numberOfSteps,
+  currentStep,
+  stepLabels,
+  colorDone,
+  colorActive,
+  colorNext,
+  colorText,
+  colorLabel,
+}) => {
   const isDesktop = useMedia(t => t.media.greaterThan(t.breakpoints.sm)) || false;
   const showStepLabels = isDesktop && stepLabels && stepLabels.length > 0;
 
@@ -78,22 +104,38 @@ const ProgressBar: FC<Props> = ({ numberOfSteps, currentStep, stepLabels }) => {
           done={stepDone}
           active={stepActive}
           title={title}
+          colorDone={colorDone}
+          colorActive={colorActive}
+          colorNext={colorNext}
         >
-          <Typography type="secondary" color={t => t.color.textLight} aria-hidden>
-            {stepDone ? <Icon.CheckMark color={t => t.color.textLight} size={4} /> : stepNumber}
+          <Typography
+            type="secondary"
+            color={t => (colorText ? colorText(t) : t.color.textLight)}
+            aria-hidden
+          >
+            {stepDone ? (
+              <Icon.CheckMark
+                color={t => (colorText ? colorText(t) : t.color.textLight)}
+                size={4}
+              />
+            ) : (
+              stepNumber
+            )}
           </Typography>
           {showStepLabels && (
             <StyledTypography
               type="secondary"
               weight={stepActive ? 'bold' : 'regular'}
-              color={t => t.color.text}
+              color={t => (colorLabel ? colorLabel(t) : t.color.text)}
               aria-hidden
             >
               {stepLabels && stepLabels[stepNumber - 1]}
             </StyledTypography>
           )}
         </StyledBubble>
-        {stepNumber < numberOfSteps && <StyledLine done={stepDone} />}
+        {stepNumber < numberOfSteps && (
+          <StyledLine done={stepDone} colorDone={colorDone} colorNext={colorNext} />
+        )}
       </React.Fragment>
     );
   };

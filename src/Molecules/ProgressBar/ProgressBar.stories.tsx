@@ -15,7 +15,11 @@ const getProps = ({ numberOfSteps = 3, currentStep = 1, stepLabels = ['foo', 'ba
 });
 
 export const Default = () => {
-  return <ProgressBar {...getProps({ numberOfSteps: 3, currentStep: 2, stepLabels: [] })} />;
+  return (
+    <Box px={10}>
+      <ProgressBar {...getProps({ numberOfSteps: 3, currentStep: 2, stepLabels: [] })} />
+    </Box>
+  );
 };
 
 export const WithLabels = () => {
@@ -30,11 +34,13 @@ export const WithLabels = () => {
 export const StepProgression = () => {
   const stepLabels = ['One', 'Two', 'Three'];
   return (
-    <Flexbox container direction="column" gutter={2}>
-      <ProgressBar numberOfSteps={3} currentStep={1} stepLabels={stepLabels} />
-      <ProgressBar numberOfSteps={3} currentStep={2} stepLabels={stepLabels} />
-      <ProgressBar numberOfSteps={3} currentStep={3} stepLabels={stepLabels} />
-    </Flexbox>
+    <Box px={10}>
+      <Flexbox container direction="column" gutter={2}>
+        <ProgressBar numberOfSteps={3} currentStep={1} stepLabels={stepLabels} />
+        <ProgressBar numberOfSteps={3} currentStep={2} stepLabels={stepLabels} />
+        <ProgressBar numberOfSteps={3} currentStep={3} stepLabels={stepLabels} />
+      </Flexbox>
+    </Box>
   );
 };
 
@@ -43,6 +49,24 @@ export const LotsOfSteps = () => {
   return (
     <Box px={10}>
       <ProgressBar numberOfSteps={7} currentStep={4} stepLabels={stepLabels} />
+    </Box>
+  );
+};
+
+export const CustomColors = () => {
+  const stepLabels = ['Done', 'Active', 'Next'];
+  return (
+    <Box px={10}>
+      <ProgressBar
+        numberOfSteps={3}
+        currentStep={2}
+        stepLabels={stepLabels}
+        colorDone={t => t.color.menuAccent4}
+        colorActive={t => t.color.menuAccent1}
+        colorNext={t => t.color.menuAccent2}
+        colorText={t => t.color.menuAccent5}
+        colorLabel={t => t.color.cta}
+      />
     </Box>
   );
 };

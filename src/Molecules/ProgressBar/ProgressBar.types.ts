@@ -1,3 +1,9 @@
+import { Theme } from '../../theme/theme.types';
+
+type Values<ObjectType> = ObjectType extends Record<any, infer K> ? K : never; // c
+
+type ColorFn = (t: Theme) => Values<Theme['color']>;
+
 export type Props = {
   numberOfSteps: number;
   currentStep: number;
@@ -5,4 +11,9 @@ export type Props = {
    * The array must be same length as numberOfSteps
    * Labels will be hidden on smaller screen widths */
   stepLabels?: string[];
+  colorDone?: ColorFn;
+  colorActive?: ColorFn;
+  colorNext?: ColorFn;
+  colorText?: ColorFn;
+  colorLabel?: ColorFn;
 };
