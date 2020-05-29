@@ -2,14 +2,15 @@ import React, { FC } from 'react';
 import * as R from 'ramda';
 import styled from 'styled-components';
 
-import { Flexbox, Icon, Typography, useMedia } from '../..';
+import { Flexbox, Icon, Typography } from '../..';
 import { Props } from './ProgressBar.types';
 
-const StyledContainer = styled(Flexbox).withConfig({
-  shouldForwardProp: prop => !['showStepLabels'].includes(prop),
-})<{ showStepLabels: boolean | undefined }>`
+const StyledContainer = styled(Flexbox)`
   width: 100%;
-  padding-bottom: ${({ showStepLabels, theme }) => (showStepLabels ? theme.spacing.unit(8) : 0)}px;
+  padding-bottom: ${({ theme }) => theme.spacing.unit(0)}px;
+  ${p => p.theme.media.greaterThan(p.theme.breakpoints.md)} {
+    padding-bottom: ${({ theme }) => theme.spacing.unit(8)}px;
+  }
 `;
 
 const StyledBubble = styled(Flexbox).withConfig({
@@ -43,6 +44,10 @@ const StyledTypography = styled(Typography)`
   top: ${({ theme }) => theme.spacing.unit(10)}px;
   text-align: center;
   white-space: nowrap;
+  display: none;
+  ${p => p.theme.media.greaterThan(p.theme.breakpoints.md)} {
+    display: block;
+  }
 `;
 
 const StyledLine = styled.div.withConfig({
@@ -53,7 +58,7 @@ const StyledLine = styled.div.withConfig({
   colorNext: Props['colorNext'];
 }>`
   width: 100%;
-  height: ${({ theme }) => theme.spacing.unit(0.5)}px;
+  height: 2px;
   background: ${({ theme, done, colorDone, colorNext }) => {
     if (done) {
       return colorDone ? colorDone(theme) : theme.color.progressBarDone;
@@ -72,9 +77,6 @@ const ProgressBar: FC<Props> = ({
   colorText,
   colorLabel,
 }) => {
-  const isDesktop = useMedia(t => t.media.greaterThan(t.breakpoints.sm)) || false;
-  const showStepLabels = isDesktop && stepLabels && stepLabels.length > 0;
-
   const stepBubble = (stepNumber: number) => {
     const stepDone = stepNumber < currentStep;
     const stepActive = stepNumber === currentStep;
@@ -122,16 +124,14 @@ const ProgressBar: FC<Props> = ({
               stepNumber
             )}
           </Typography>
-          {showStepLabels && (
-            <StyledTypography
-              type="secondary"
-              weight={stepActive ? 'bold' : 'regular'}
-              color={t => (colorLabel ? colorLabel(t) : t.color.text)}
-              aria-hidden
-            >
-              {stepLabels && stepLabels[stepNumber - 1]}
-            </StyledTypography>
-          )}
+          <StyledTypography
+            type="secondary"
+            weight={stepActive ? 'bold' : 'regular'}
+            color={t => (colorLabel ? colorLabel(t) : t.color.text)}
+            aria-hidden
+          >
+            {stepLabels && stepLabels[stepNumber - 1]}
+          </StyledTypography>
         </StyledBubble>
         {stepNumber < numberOfSteps && (
           <StyledLine done={stepDone} colorDone={colorDone} colorNext={colorNext} />
@@ -146,12 +146,7 @@ const ProgressBar: FC<Props> = ({
   };
 
   return (
-    <StyledContainer
-      container
-      alignItems="center"
-      showStepLabels={showStepLabels}
-      title="progress bar"
-    >
+    <StyledContainer container alignItems="center" title="progress bar">
       {generateSteps()}
     </StyledContainer>
   );
