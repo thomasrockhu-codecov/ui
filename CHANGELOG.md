@@ -1,3 +1,15 @@
+# [2.43.0](https://github.com/nordnet/ui/compare/v2.42.2...v2.43.0) (2020-05-29)
+
+
+### Bug Fixes
+
+* 🐛 add js doc for types ([722e4f9](https://github.com/nordnet/ui/commit/722e4f9))
+
+
+### Features
+
+* 🎸 add bolean for closing modal on backdrop click ([e80872c](https://github.com/nordnet/ui/commit/e80872c))
+
 ## [2.42.2](https://github.com/nordnet/ui/compare/v2.42.1...v2.42.2) (2020-05-28)
 
 
