@@ -1,3 +1,31 @@
+# [2.44.0](https://github.com/nordnet/ui/compare/v2.43.0...v2.44.0) (2020-06-01)
+
+
+### Bug Fixes
+
+* add accordion snaps ([4bbbff6](https://github.com/nordnet/ui/commit/4bbbff6))
+* add jsdoc to expanded prop ([4cf9f05](https://github.com/nordnet/ui/commit/4cf9f05))
+* add types to test utils ([9eae9a8](https://github.com/nordnet/ui/commit/9eae9a8))
+* cleanup stories ([8bbba7f](https://github.com/nordnet/ui/commit/8bbba7f))
+* imports ([aa05f2d](https://github.com/nordnet/ui/commit/aa05f2d))
+* remove script from package json ([7506a4b](https://github.com/nordnet/ui/commit/7506a4b))
+* remove unnecessary turnery ([42dd89e](https://github.com/nordnet/ui/commit/42dd89e))
+* replace hex with color from theme ([98661ed](https://github.com/nordnet/ui/commit/98661ed))
+* stories ([b96d244](https://github.com/nordnet/ui/commit/b96d244))
+* update snaps ([34fc714](https://github.com/nordnet/ui/commit/34fc714))
+* update snaps ([2937960](https://github.com/nordnet/ui/commit/2937960))
+
+
+### Features
+
+* add classname ([af69008](https://github.com/nordnet/ui/commit/af69008))
+* add forwardref ([3077aed](https://github.com/nordnet/ui/commit/3077aed))
+* add mdx file ([6f618a4](https://github.com/nordnet/ui/commit/6f618a4))
+* add tests ([3392adc](https://github.com/nordnet/ui/commit/3392adc))
+* create accordion ([cb5ab65](https://github.com/nordnet/ui/commit/cb5ab65))
+* create accordion item ([5233e90](https://github.com/nordnet/ui/commit/5233e90))
+* create accordion stories ([ef248f5](https://github.com/nordnet/ui/commit/ef248f5))
+
 # [2.43.0](https://github.com/nordnet/ui/compare/v2.42.2...v2.43.0) (2020-05-29)
 
 
