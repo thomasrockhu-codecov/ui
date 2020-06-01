@@ -1,3 +1,10 @@
+# [2.45.0](https://github.com/nordnet/ui/compare/v2.44.0...v2.45.0) (2020-06-01)
+
+
+### Features
+
+* 🎸 adds transferPendingIconColor ([bfa047e](https://github.com/nordnet/ui/commit/bfa047e))
+
 # [2.44.0](https://github.com/nordnet/ui/compare/v2.43.0...v2.44.0) (2020-06-01)
 
 
