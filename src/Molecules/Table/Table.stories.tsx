@@ -13,9 +13,9 @@ export const DefaultTable = () => (
   <Table>
     <Table.RowGroup>
       <Table.Row>
-        <Table.Header>Header 1</Table.Header>
-        <Table.Header>Header 2</Table.Header>
-        <Table.Header>Header 3</Table.Header>
+        <Table.Header name="Heade 1">Header 1</Table.Header>
+        <Table.Header name="Heade 2">Header 2</Table.Header>
+        <Table.Header name="Heade 3">Header 3</Table.Header>
       </Table.Row>
     </Table.RowGroup>
   </Table>
@@ -53,3 +53,19 @@ export const TableExpanded = () => {
   };
   return <TableExpandedExample />;
 };
+
+export const TableHeader = () => (
+  <Table>
+    <Table.RowGroup>
+      <Table.Row>
+        <Table.Header name="TableHeader1" flex="1">
+          Table header 1
+        </Table.Header>
+        <Table.Header name="TableHeader2" flex="3">
+          Table header 2
+        </Table.Header>
+        <Table.Header name="TableHeader3">Table header 3</Table.Header>
+      </Table.Row>
+    </Table.RowGroup>
+  </Table>
+);
