@@ -26,9 +26,9 @@ export const TableWithDifferentRows = () => (
     <Table.RowGroup>
       <Table.Row>Default</Table.Row>
       <Table.Row hideBorder>Border bottom hidden</Table.Row>
-      <Table.Row size="l">Large</Table.Row>
-      <Table.Row size="m">Medium</Table.Row>
-      <Table.Row size="s">Small</Table.Row>
+      <Table.Row density="l">Large</Table.Row>
+      <Table.Row density="m">Medium</Table.Row>
+      <Table.Row density="s">Small</Table.Row>
     </Table.RowGroup>
   </Table>
 );

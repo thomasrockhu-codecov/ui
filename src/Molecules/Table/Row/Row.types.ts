@@ -2,10 +2,10 @@ import React, { ReactNode } from 'react';
 
 type HtmlProps = {} & React.HTMLAttributes<HTMLDivElement>;
 
-export type Size = 's' | 'm' | 'l';
+export type Density = 's' | 'm' | 'l';
 
 type Props = {
-  size?: Size;
+  density?: Density;
   hideBorder?: boolean;
   expandableContent?: ReactNode;
   expanded?: boolean;
