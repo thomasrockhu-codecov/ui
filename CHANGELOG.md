@@ -1,3 +1,10 @@
+## [2.45.1](https://github.com/nordnet/ui/compare/v2.45.0...v2.45.1) (2020-06-02)
+
+
+### Bug Fixes
+
+* 🐛 make closing modal on backdrop click more performant ([b917773](https://github.com/nordnet/ui/commit/b917773))
+
 # [2.45.0](https://github.com/nordnet/ui/compare/v2.44.0...v2.45.0) (2020-06-01)
 
 
