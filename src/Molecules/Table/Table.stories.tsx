@@ -117,14 +117,25 @@ export const TableHeader = () => (
   <Table>
     <Table.RowGroup>
       <Table.Row>
-        <Table.Header flex="1" sortable>
-          Table header 1 flex 1
-        </Table.Header>
+        <Table.Header flex="1">Table header 1 flex 1</Table.Header>
         <Table.Header flex="3">Table header 2 flex 3</Table.Header>
         <Table.Header>Table header 3 no flex</Table.Header>
         <Table.Header>
           <Typography type="title2">I&apos;m a component</Typography>
         </Table.Header>
+      </Table.Row>
+    </Table.RowGroup>
+  </Table>
+);
+
+export const SortableHeaders = () => (
+  <Table>
+    <Table.RowGroup>
+      <Table.Row>
+        <Table.Header sortable>Header 1</Table.Header>
+        <Table.Header sortable>Header 2</Table.Header>
+        <Table.Header sortable>Header 3</Table.Header>
+        <Table.Header sortable>Header 4</Table.Header>
       </Table.Row>
     </Table.RowGroup>
   </Table>
