@@ -25,9 +25,10 @@ const StyledTypography = styled(Typography).withConfig({
   shouldForwardProp: p => !['density'].includes(p),
 })<{ density: Density }>`
   padding-top: ${p => getDensityPaddings(p.density)}px;
+  padding-bottom: ${p => getDensityPaddings(p.density)}px;
 `;
 
-export const TextWrapper: React.FC<TextWrapperProps> = ({ fontSize, density, children }) => (
+export const TextWrapper: React.FC<TextWrapperProps> = ({ fontSize, density = 'm', children }) => (
   <StyledTypography
     type={fontSize === 'l' ? 'secondary' : 'tertiary'}
     density={density}

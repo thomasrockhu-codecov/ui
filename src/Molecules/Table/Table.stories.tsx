@@ -117,7 +117,9 @@ export const TableHeader = () => (
   <Table>
     <Table.RowGroup>
       <Table.Row>
-        <Table.Header flex="1">Table header 1 flex 1</Table.Header>
+        <Table.Header flex="1" sortable>
+          Table header 1 flex 1
+        </Table.Header>
         <Table.Header flex="3">Table header 2 flex 3</Table.Header>
         <Table.Header>Table header 3 no flex</Table.Header>
         <Table.Header>
