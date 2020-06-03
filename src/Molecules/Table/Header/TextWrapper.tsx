@@ -28,11 +28,16 @@ const StyledTypography = styled(Typography).withConfig({
   padding-bottom: ${p => getDensityPaddings(p.density)}px;
 `;
 
-export const TextWrapper: React.FC<TextWrapperProps> = ({ fontSize, density = 'm', children }) => (
+export const TextWrapper: React.FC<TextWrapperProps> = ({
+  fontSize,
+  density = 'm',
+  sorted,
+  children,
+}) => (
   <StyledTypography
     type={fontSize === 'l' ? 'secondary' : 'tertiary'}
     density={density}
-    color={t => t.color.label}
+    color={t => (sorted ? t.color.text : t.color.label)}
   >
     {children}
   </StyledTypography>

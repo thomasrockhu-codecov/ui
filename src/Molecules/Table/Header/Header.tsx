@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import R from 'ramda';
 import { Props, SortOrder } from './Header.types';
 import { isElement } from '../../../common/utils';
 import { Flexbox, Icon } from '../../..';
@@ -18,15 +19,15 @@ const getSortOrderIcon = (sortable: boolean, sortOrder: SortOrder) => {
     return null;
   }
 
-  if (!sortOrder) {
-    return <StyledIconChevronDown size={2} color={t => t.color.label} />;
+  if (sortOrder === 'descending') {
+    return <StyledIconThinArrow direction="down" size={2} color={t => t.color.text} />;
   }
 
   if (sortOrder === 'ascending') {
-    return <StyledIconThinArrow direction="up" size={2} />;
+    return <StyledIconThinArrow direction="up" size={2} color={t => t.color.text} />;
   }
 
-  return <StyledIconThinArrow direction="down" size={2} />;
+  return <StyledIconChevronDown size={2} color={t => t.color.label} />;
 };
 
 export const Header: React.FC<Props> = ({
@@ -45,6 +46,7 @@ export const Header: React.FC<Props> = ({
   children,
   ...htmlProps
 }) => {
+  const ariaSorted = sortable ? { 'aria-sort': sortOrder || 'none' } : {};
   return (
     <Flexbox
       container={container}
@@ -56,13 +58,14 @@ export const Header: React.FC<Props> = ({
       wrap={wrap}
       className={className}
       role="columnheader"
-      {...htmlProps}
       alignItems="center"
+      {...ariaSorted}
+      {...htmlProps}
     >
       {isElement(children) ? (
         <>{children}</>
       ) : (
-        <TextWrapper fontSize={fontSize} density={density}>
+        <TextWrapper fontSize={fontSize} density={density} sorted={!R.isNil(sortOrder)}>
           {children}
         </TextWrapper>
       )}

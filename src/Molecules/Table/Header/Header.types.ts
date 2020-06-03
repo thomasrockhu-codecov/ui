@@ -6,14 +6,22 @@ export type Density = 's' | 'm' | 'l';
 export type TextWrapperProps = {
   fontSize?: 'm' | 'l';
   density?: Density;
+  sorted?: boolean;
 };
 
 export type SortOrder = 'ascending' | 'descending' | undefined;
 
-export type Props = {
-  sortable?: boolean;
+type Unsortable = {
+  sortable?: false;
+  sortOrder?: undefined;
+};
+type Sortable = {
+  sortable: true;
   sortOrder?: SortOrder;
-} & FlexboxProps &
-  TextWrapperProps;
+};
+
+type SortedProps = Sortable | Unsortable;
+
+export type Props = {} & FlexboxProps & TextWrapperProps & SortedProps;
 
 export type HeaderComponent = React.FC<Props>;

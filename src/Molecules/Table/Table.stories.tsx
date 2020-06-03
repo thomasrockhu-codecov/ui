@@ -139,7 +139,10 @@ export const SortableHeaders = () => (
           Header 2
         </Table.Header>
         <Table.Header sortable>Header 3</Table.Header>
-        <Table.Header sortable>Header 4</Table.Header>
+        <Table.Header sortable={false}>Header 4</Table.Header>
+        <Table.Header sortable sortOrder="ascending">
+          Header 4
+        </Table.Header>
       </Table.Row>
     </Table.RowGroup>
   </Table>
