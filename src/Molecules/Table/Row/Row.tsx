@@ -1,21 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
 import Flexbox from '../../../Atoms/Flexbox';
-import { RowComponent, Density } from './Row.types';
+import { RowComponent } from './Row.types';
 import { Box } from '../../../index';
-
-const getDensityHeight = (density: Density) => {
-  switch (density) {
-    case 's':
-      return 5;
-    case 'm':
-      return 8;
-    case 'l':
-      return 10;
-    default:
-      return 8;
-  }
-};
 
 const StyledRow = styled('div').withConfig({
   shouldForwardProp: prop => !['hideBorder', 'expanded'].includes(prop),
@@ -32,18 +19,11 @@ const StyledRow = styled('div').withConfig({
   }
 `;
 
-const StyledFlexbox = styled(Flexbox).withConfig({
-  shouldForwardProp: prop => !['density'].includes(prop),
-})<{ density: Density }>`
-  height: ${p => p.theme.spacing.unit(getDensityHeight(p.density))}px;
-`;
-
 const ExpandedContent = styled('div')``;
 
 export const Row: RowComponent = ({
   className,
   expanded = false,
-  density = 'm',
   hideBorder = false,
   expandableContent,
   children,
@@ -57,9 +37,9 @@ export const Row: RowComponent = ({
       expanded={expanded}
       {...htmlProps}
     >
-      <StyledFlexbox container density={density} alignItems="center">
+      <Flexbox container alignItems="center">
         {children}
-      </StyledFlexbox>
+      </Flexbox>
       {expanded && (
         <ExpandedContent>
           <Box px={3} pb={2}>

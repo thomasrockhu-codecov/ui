@@ -48,7 +48,7 @@ export const TablesWithDifferentDensities = () => (
     <Typography type="title3">Small</Typography>
     <StyledTable>
       <Table.RowGroup>
-        <Table.Row density="s">
+        <Table.Row>
           <Table.Header>Header 1</Table.Header>
           <Table.Header>Header 2</Table.Header>
           <Table.Header>Header 3</Table.Header>
@@ -59,7 +59,7 @@ export const TablesWithDifferentDensities = () => (
     <Typography type="title3">Medium</Typography>
     <StyledTable>
       <Table.RowGroup>
-        <Table.Row density="m">
+        <Table.Row>
           <Table.Header>Header 1</Table.Header>
           <Table.Header>Header 2</Table.Header>
           <Table.Header>Header 3</Table.Header>
@@ -70,7 +70,7 @@ export const TablesWithDifferentDensities = () => (
     <Typography type="title3">Large</Typography>
     <StyledTable>
       <Table.RowGroup>
-        <Table.Row density="l">
+        <Table.Row>
           <Table.Header>Header 1</Table.Header>
           <Table.Header>Header 2</Table.Header>
           <Table.Header>Header 3</Table.Header>
@@ -85,9 +85,9 @@ export const TableWithDifferentRows = () => (
     <Table.RowGroup>
       <Table.Row>Default</Table.Row>
       <Table.Row hideBorder>Border bottom hidden</Table.Row>
-      <Table.Row density="l">Large</Table.Row>
-      <Table.Row density="m">Medium</Table.Row>
-      <Table.Row density="s">Small</Table.Row>
+      <Table.Row>Large</Table.Row>
+      <Table.Row>Medium</Table.Row>
+      <Table.Row>Small</Table.Row>
     </Table.RowGroup>
   </Table>
 );

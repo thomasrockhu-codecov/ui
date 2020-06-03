@@ -17,7 +17,7 @@ exports[`Storyshots Molecules | Table Default Table 1`] = `
   align-items: center;
 }
 
-.c4 {
+.c3 {
   box-sizing: border-box;
   -webkit-flex: 1;
   -ms-flex: 1;
@@ -44,8 +44,9 @@ exports[`Storyshots Molecules | Table Default Table 1`] = `
   background: #F5F5F5;
 }
 
-.c3 {
-  height: 32px;
+.c4 {
+  padding-top: 4px;
+  padding-bottom: 4px;
 }
 
 <div
@@ -60,10 +61,10 @@ exports[`Storyshots Molecules | Table Default Table 1`] = `
       role="row"
     >
       <div
-        className="c2 c3"
+        className="c2"
       >
         <div
-          className="c4"
+          className="c3 c4"
           role="columnheader"
         >
           <span
@@ -73,7 +74,7 @@ exports[`Storyshots Molecules | Table Default Table 1`] = `
           </span>
         </div>
         <div
-          className="c4"
+          className="c3 c4"
           role="columnheader"
         >
           <span
@@ -83,7 +84,7 @@ exports[`Storyshots Molecules | Table Default Table 1`] = `
           </span>
         </div>
         <div
-          className="c4"
+          className="c3 c4"
           role="columnheader"
         >
           <span
@@ -115,7 +116,7 @@ exports[`Storyshots Molecules | Table Table Expanded 1`] = `
   align-items: center;
 }
 
-.c5 {
+.c4 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: inherit;
   margin: 0;
@@ -124,7 +125,7 @@ exports[`Storyshots Molecules | Table Table Expanded 1`] = `
   line-height: 1.4285714285714286;
 }
 
-.c4 {
+.c3 {
   font-family: inherit;
   font-size: 100%;
   line-height: 1.15;
@@ -153,29 +154,29 @@ exports[`Storyshots Molecules | Table Table Expanded 1`] = `
   cursor: pointer;
 }
 
-.c4,
-.c4[type='button'],
-.c4[type='reset'],
-.c4[type='submit'] {
+.c3,
+.c3[type='button'],
+.c3[type='reset'],
+.c3[type='submit'] {
   -webkit-appearance: button;
 }
 
-.c4::-moz-focus-inner,
-.c4[type='button']::-moz-focus-inner,
-.c4[type='reset']::-moz-focus-inner,
-.c4[type='submit']::-moz-focus-inner {
+.c3::-moz-focus-inner,
+.c3[type='button']::-moz-focus-inner,
+.c3[type='reset']::-moz-focus-inner,
+.c3[type='submit']::-moz-focus-inner {
   border-style: none;
   padding: 0;
 }
 
-.c4:-moz-focusring,
-.c4[type='button']:-moz-focusring,
-.c4[type='reset']:-moz-focusring,
-.c4[type='submit']:-moz-focusring {
+.c3:-moz-focusring,
+.c3[type='button']:-moz-focusring,
+.c3[type='reset']:-moz-focusring,
+.c3[type='submit']:-moz-focusring {
   outline: 1px dotted ButtonText;
 }
 
-.c4::before {
+.c3::before {
   content: '';
   display: block;
   position: absolute;
@@ -186,19 +187,19 @@ exports[`Storyshots Molecules | Table Table Expanded 1`] = `
   height: calc(100% - 4px);
 }
 
-.c4:hover {
+.c3:hover {
   color: hsl(223.5,100%,40%);
 }
 
-.c4:hover::before {
+.c3:hover::before {
   border-color: hsl(223.5,100%,40%);
 }
 
-.c4:active {
+.c3:active {
   color: hsl(223.5,100%,35%);
 }
 
-.c4:active::before {
+.c3:active::before {
   border-color: hsl(223.5,100%,35%);
 }
 
@@ -213,10 +214,6 @@ exports[`Storyshots Molecules | Table Table Expanded 1`] = `
   background: #F5F5F5;
 }
 
-.c3 {
-  height: 32px;
-}
-
 <div
   role="table"
 >
@@ -229,7 +226,7 @@ exports[`Storyshots Molecules | Table Table Expanded 1`] = `
       role="row"
     >
       <div
-        className="c2 c3"
+        className="c2"
       >
         Default
       </div>
@@ -239,16 +236,16 @@ exports[`Storyshots Molecules | Table Table Expanded 1`] = `
       role="row"
     >
       <div
-        className="c2 c3"
+        className="c2"
       >
         <button
-          className="NormalizedButton__Button-ey7f5x-0 c4"
+          className="NormalizedButton__Button-ey7f5x-0 c3"
           onClick={[Function]}
           type="button"
         >
           <span>
             <span
-              className="c5"
+              className="c4"
             >
               Expand
             </span>
@@ -261,7 +258,7 @@ exports[`Storyshots Molecules | Table Table Expanded 1`] = `
       role="row"
     >
       <div
-        className="c2 c3"
+        className="c2"
       >
         Default
       </div>
@@ -271,7 +268,7 @@ exports[`Storyshots Molecules | Table Table Expanded 1`] = `
       role="row"
     >
       <div
-        className="c2 c3"
+        className="c2"
       >
         Default
       </div>
@@ -297,7 +294,7 @@ exports[`Storyshots Molecules | Table Table Header 1`] = `
   align-items: center;
 }
 
-.c4 {
+.c3 {
   box-sizing: border-box;
   -webkit-flex: 1;
   -ms-flex: 1;
@@ -340,8 +337,9 @@ exports[`Storyshots Molecules | Table Table Header 1`] = `
   background: #F5F5F5;
 }
 
-.c3 {
-  height: 32px;
+.c4 {
+  padding-top: 4px;
+  padding-bottom: 4px;
 }
 
 @media (min-width:760px) {
@@ -363,10 +361,10 @@ exports[`Storyshots Molecules | Table Table Header 1`] = `
       role="row"
     >
       <div
-        className="c2 c3"
+        className="c2"
       >
         <div
-          className="c4"
+          className="c3 c4"
           role="columnheader"
         >
           <span
@@ -376,7 +374,7 @@ exports[`Storyshots Molecules | Table Table Header 1`] = `
           </span>
         </div>
         <div
-          className="c6"
+          className="c6 c4"
           role="columnheader"
         >
           <span
@@ -386,7 +384,7 @@ exports[`Storyshots Molecules | Table Table Header 1`] = `
           </span>
         </div>
         <div
-          className="c4"
+          className="c3 c4"
           role="columnheader"
         >
           <span
@@ -396,7 +394,7 @@ exports[`Storyshots Molecules | Table Table Header 1`] = `
           </span>
         </div>
         <div
-          className="c4"
+          className="c3 c4"
           role="columnheader"
         >
           <span
@@ -439,26 +437,14 @@ exports[`Storyshots Molecules | Table Table With Different Rows 1`] = `
   background: #F5F5F5;
 }
 
-.c4 {
+.c3 {
   padding-right: 8px;
   padding-left: 6px;
   border-left: 2px solid transparent;
 }
 
-.c4:hover {
+.c3:hover {
   background: #F5F5F5;
-}
-
-.c3 {
-  height: 32px;
-}
-
-.c5 {
-  height: 40px;
-}
-
-.c6 {
-  height: 20px;
 }
 
 <div
@@ -473,17 +459,17 @@ exports[`Storyshots Molecules | Table Table With Different Rows 1`] = `
       role="row"
     >
       <div
-        className="c2 c3"
+        className="c2"
       >
         Default
       </div>
     </div>
     <div
-      className="c4"
+      className="c3"
       role="row"
     >
       <div
-        className="c2 c3"
+        className="c2"
       >
         Border bottom hidden
       </div>
@@ -493,7 +479,7 @@ exports[`Storyshots Molecules | Table Table With Different Rows 1`] = `
       role="row"
     >
       <div
-        className="c2 c5"
+        className="c2"
       >
         Large
       </div>
@@ -503,7 +489,7 @@ exports[`Storyshots Molecules | Table Table With Different Rows 1`] = `
       role="row"
     >
       <div
-        className="c2 c3"
+        className="c2"
       >
         Medium
       </div>
@@ -513,7 +499,7 @@ exports[`Storyshots Molecules | Table Table With Different Rows 1`] = `
       role="row"
     >
       <div
-        className="c2 c6"
+        className="c2"
       >
         Small
       </div>
@@ -539,7 +525,7 @@ exports[`Storyshots Molecules | Table Tables With Different Densities 1`] = `
   align-items: center;
 }
 
-.c7 {
+.c6 {
   box-sizing: border-box;
   -webkit-flex: 1;
   -ms-flex: 1;
@@ -575,16 +561,9 @@ exports[`Storyshots Molecules | Table Tables With Different Densities 1`] = `
   background: #F5F5F5;
 }
 
-.c6 {
-  height: 32px;
-}
-
-.c9 {
-  height: 20px;
-}
-
-.c10 {
-  height: 40px;
+.c7 {
+  padding-top: 4px;
+  padding-bottom: 4px;
 }
 
 .c0 {
@@ -624,10 +603,10 @@ exports[`Storyshots Molecules | Table Tables With Different Densities 1`] = `
         role="row"
       >
         <div
-          className="c5 c6"
+          className="c5"
         >
           <div
-            className="c7"
+            className="c6 c7"
             role="columnheader"
           >
             <span
@@ -637,7 +616,7 @@ exports[`Storyshots Molecules | Table Tables With Different Densities 1`] = `
             </span>
           </div>
           <div
-            className="c7"
+            className="c6 c7"
             role="columnheader"
           >
             <span
@@ -647,7 +626,7 @@ exports[`Storyshots Molecules | Table Tables With Different Densities 1`] = `
             </span>
           </div>
           <div
-            className="c7"
+            className="c6 c7"
             role="columnheader"
           >
             <span
@@ -678,10 +657,10 @@ exports[`Storyshots Molecules | Table Tables With Different Densities 1`] = `
         role="row"
       >
         <div
-          className="c5 c9"
+          className="c5"
         >
           <div
-            className="c7"
+            className="c6 c7"
             role="columnheader"
           >
             <span
@@ -691,7 +670,7 @@ exports[`Storyshots Molecules | Table Tables With Different Densities 1`] = `
             </span>
           </div>
           <div
-            className="c7"
+            className="c6 c7"
             role="columnheader"
           >
             <span
@@ -701,7 +680,7 @@ exports[`Storyshots Molecules | Table Tables With Different Densities 1`] = `
             </span>
           </div>
           <div
-            className="c7"
+            className="c6 c7"
             role="columnheader"
           >
             <span
@@ -732,10 +711,10 @@ exports[`Storyshots Molecules | Table Tables With Different Densities 1`] = `
         role="row"
       >
         <div
-          className="c5 c6"
+          className="c5"
         >
           <div
-            className="c7"
+            className="c6 c7"
             role="columnheader"
           >
             <span
@@ -745,7 +724,7 @@ exports[`Storyshots Molecules | Table Tables With Different Densities 1`] = `
             </span>
           </div>
           <div
-            className="c7"
+            className="c6 c7"
             role="columnheader"
           >
             <span
@@ -755,7 +734,7 @@ exports[`Storyshots Molecules | Table Tables With Different Densities 1`] = `
             </span>
           </div>
           <div
-            className="c7"
+            className="c6 c7"
             role="columnheader"
           >
             <span
@@ -786,10 +765,10 @@ exports[`Storyshots Molecules | Table Tables With Different Densities 1`] = `
         role="row"
       >
         <div
-          className="c5 c10"
+          className="c5"
         >
           <div
-            className="c7"
+            className="c6 c7"
             role="columnheader"
           >
             <span
@@ -799,7 +778,7 @@ exports[`Storyshots Molecules | Table Tables With Different Densities 1`] = `
             </span>
           </div>
           <div
-            className="c7"
+            className="c6 c7"
             role="columnheader"
           >
             <span
@@ -809,7 +788,7 @@ exports[`Storyshots Molecules | Table Tables With Different Densities 1`] = `
             </span>
           </div>
           <div
-            className="c7"
+            className="c6 c7"
             role="columnheader"
           >
             <span
