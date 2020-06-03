@@ -14,6 +14,7 @@ export const Header: React.FC<Props> = ({
   shrink,
   wrap = 'nowrap',
   name,
+  fontSize = 's',
   children,
   ...htmlProps
 }) => {
@@ -46,7 +47,13 @@ export const Header: React.FC<Props> = ({
       role="columnheader"
       {...htmlProps}
     >
-      {isElement(children) ? <>{children}</> : <Typography type="tertiary">{children}</Typography>}
+      {isElement(children) ? (
+        <>{children}</>
+      ) : (
+        <Typography type={fontSize === 'l' ? 'secondary' : 'tertiary'} color={t => t.color.label}>
+          {children}
+        </Typography>
+      )}
     </Flexbox>
   );
 };

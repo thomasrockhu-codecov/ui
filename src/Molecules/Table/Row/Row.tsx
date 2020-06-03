@@ -4,16 +4,16 @@ import Flexbox from '../../../Atoms/Flexbox';
 import { RowComponent, Density } from './Row.types';
 import { Box } from '../../../index';
 
-const getDensityPaddings = (density: Density) => {
+const getDensityHeight = (density: Density) => {
   switch (density) {
     case 's':
-      return 0;
+      return 5;
     case 'm':
-      return 1;
+      return 8;
     case 'l':
-      return 2;
+      return 10;
     default:
-      return 1;
+      return 8;
   }
 };
 
@@ -35,8 +35,7 @@ const StyledRow = styled('div').withConfig({
 const StyledFlexbox = styled(Flexbox).withConfig({
   shouldForwardProp: prop => !['density'].includes(prop),
 })<{ density: Density }>`
-  padding-top: ${p => p.theme.spacing.unit(getDensityPaddings(p.density))}px;
-  padding-bottom: ${p => p.theme.spacing.unit(getDensityPaddings(p.density))}px;
+  height: ${p => p.theme.spacing.unit(getDensityHeight(p.density))}px;
 `;
 
 const ExpandedContent = styled('div')``;
@@ -58,7 +57,7 @@ export const Row: RowComponent = ({
       expanded={expanded}
       {...htmlProps}
     >
-      <StyledFlexbox container density={density}>
+      <StyledFlexbox container density={density} alignItems="center">
         {children}
       </StyledFlexbox>
       {expanded && (

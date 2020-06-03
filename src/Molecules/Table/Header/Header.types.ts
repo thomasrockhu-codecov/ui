@@ -5,6 +5,7 @@ type HtmlProps = {} & React.AllHTMLAttributes<HTMLDivElement & HTMLTableHeaderCe
 
 export type Props = {
   name: string;
+  fontSize?: 'm' | 'l';
 } & FlexboxProps &
   HtmlProps;
 
