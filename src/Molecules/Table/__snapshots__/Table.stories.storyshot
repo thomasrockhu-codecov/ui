@@ -20,6 +20,15 @@ exports[`Storyshots Molecules | Table Default Table 1`] = `
   flex: 1;
 }
 
+.c5 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.3333333333333333;
+}
+
 .c1 {
   border-bottom: 1px solid #EBEBE8;
   padding-right: 8px;
@@ -54,19 +63,31 @@ exports[`Storyshots Molecules | Table Default Table 1`] = `
           className="c4"
           role="columnheader"
         >
-          Header 1
+          <span
+            className="c5"
+          >
+            Header 1
+          </span>
         </div>
         <div
           className="c4"
           role="columnheader"
         >
-          Header 2
+          <span
+            className="c5"
+          >
+            Header 2
+          </span>
         </div>
         <div
           className="c4"
           role="columnheader"
         >
-          Header 3
+          <span
+            className="c5"
+          >
+            Header 3
+          </span>
         </div>
       </div>
     </div>
@@ -273,11 +294,29 @@ exports[`Storyshots Molecules | Table Table Header 1`] = `
   flex: 1;
 }
 
-.c5 {
+.c6 {
   box-sizing: border-box;
   -webkit-flex: 3;
   -ms-flex: 3;
   flex: 3;
+}
+
+.c5 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.3333333333333333;
+}
+
+.c7 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 1.2;
 }
 
 .c1 {
@@ -294,6 +333,13 @@ exports[`Storyshots Molecules | Table Table Header 1`] = `
 .c3 {
   padding-top: 4px;
   padding-bottom: 4px;
+}
+
+@media (min-width:760px) {
+  .c7 {
+    font-size: 24px;
+    line-height: 1.1666666666666667;
+  }
 }
 
 <div
@@ -314,19 +360,41 @@ exports[`Storyshots Molecules | Table Table Header 1`] = `
           className="c4"
           role="columnheader"
         >
-          Table header 1
+          <span
+            className="c5"
+          >
+            Table header 1 flex 1
+          </span>
         </div>
         <div
-          className="c5"
+          className="c6"
           role="columnheader"
         >
-          Table header 2
+          <span
+            className="c5"
+          >
+            Table header 2 flex 3
+          </span>
         </div>
         <div
           className="c4"
           role="columnheader"
         >
-          Table header 3
+          <span
+            className="c5"
+          >
+            Table header 3 no flex
+          </span>
+        </div>
+        <div
+          className="c4"
+          role="columnheader"
+        >
+          <span
+            className="c7"
+          >
+            I\`&apos\`m a component
+          </span>
         </div>
       </div>
     </div>
