@@ -1,7 +1,8 @@
 import React, { useContext, useEffect } from 'react';
 import { Props } from './Header.types';
-import { Flexbox } from '../../../index';
+import { Flexbox, Typography } from '../../../index';
 import { FlexTableContext } from '../shared/FlexTableContext';
+import { isElement } from '../../../common/utils';
 
 export const Header: React.FC<Props> = ({
   className,
@@ -45,7 +46,7 @@ export const Header: React.FC<Props> = ({
       role="columnheader"
       {...htmlProps}
     >
-      {children}
+      {isElement(children) ? <>{children}</> : <Typography type="tertiary">{children}</Typography>}
     </Flexbox>
   );
 };

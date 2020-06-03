@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import Table from './Table';
-import { Button } from '../../index';
+import { Button, Typography } from '../../index';
 
 export default {
   title: 'Molecules | Table',
@@ -59,12 +59,15 @@ export const TableHeader = () => (
     <Table.RowGroup>
       <Table.Row>
         <Table.Header name="TableHeader1" flex="1">
-          Table header 1
+          Table header 1 flex 1
         </Table.Header>
         <Table.Header name="TableHeader2" flex="3">
-          Table header 2
+          Table header 2 flex 3
         </Table.Header>
-        <Table.Header name="TableHeader3">Table header 3</Table.Header>
+        <Table.Header name="TableHeader3">Table header 3 no flex</Table.Header>
+        <Table.Header name="TableHeader3">
+          <Typography type="title2">I`&apos`m a component</Typography>
+        </Table.Header>
       </Table.Row>
     </Table.RowGroup>
   </Table>
