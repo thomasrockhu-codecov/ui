@@ -38,6 +38,7 @@ export const TextWrapper: React.FC<TextWrapperProps> = ({
     type={fontSize === 'l' ? 'secondary' : 'tertiary'}
     density={density}
     color={t => (sorted ? t.color.text : t.color.label)}
+    weight={sorted ? 'bold' : 'regular'}
   >
     {children}
   </StyledTypography>
