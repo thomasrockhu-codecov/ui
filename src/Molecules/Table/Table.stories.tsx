@@ -14,9 +14,9 @@ export const DefaultTable = () => (
   <Table>
     <Table.RowGroup>
       <Table.Row>
-        <Table.Header name="Heade 1">Header 1</Table.Header>
-        <Table.Header name="Heade 2">Header 2</Table.Header>
-        <Table.Header name="Heade 3">Header 3</Table.Header>
+        <Table.Header>Header 1</Table.Header>
+        <Table.Header>Header 2</Table.Header>
+        <Table.Header>Header 3</Table.Header>
       </Table.Row>
     </Table.RowGroup>
   </Table>
@@ -38,9 +38,9 @@ export const TablesWithDifferentDensities = () => (
     <StyledTable>
       <Table.RowGroup>
         <Table.Row>
-          <Table.Header name="Heade 1">Header 1</Table.Header>
-          <Table.Header name="Heade 2">Header 2</Table.Header>
-          <Table.Header name="Heade 3">Header 3</Table.Header>
+          <Table.Header>Header 1</Table.Header>
+          <Table.Header>Header 2</Table.Header>
+          <Table.Header>Header 3</Table.Header>
         </Table.Row>
       </Table.RowGroup>
     </StyledTable>
@@ -49,9 +49,9 @@ export const TablesWithDifferentDensities = () => (
     <StyledTable>
       <Table.RowGroup>
         <Table.Row density="s">
-          <Table.Header name="Heade 1">Header 1</Table.Header>
-          <Table.Header name="Heade 2">Header 2</Table.Header>
-          <Table.Header name="Heade 3">Header 3</Table.Header>
+          <Table.Header>Header 1</Table.Header>
+          <Table.Header>Header 2</Table.Header>
+          <Table.Header>Header 3</Table.Header>
         </Table.Row>
       </Table.RowGroup>
     </StyledTable>
@@ -60,9 +60,9 @@ export const TablesWithDifferentDensities = () => (
     <StyledTable>
       <Table.RowGroup>
         <Table.Row density="m">
-          <Table.Header name="Heade 1">Header 1</Table.Header>
-          <Table.Header name="Heade 2">Header 2</Table.Header>
-          <Table.Header name="Heade 3">Header 3</Table.Header>
+          <Table.Header>Header 1</Table.Header>
+          <Table.Header>Header 2</Table.Header>
+          <Table.Header>Header 3</Table.Header>
         </Table.Row>
       </Table.RowGroup>
     </StyledTable>
@@ -71,9 +71,9 @@ export const TablesWithDifferentDensities = () => (
     <StyledTable>
       <Table.RowGroup>
         <Table.Row density="l">
-          <Table.Header name="Heade 1">Header 1</Table.Header>
-          <Table.Header name="Heade 2">Header 2</Table.Header>
-          <Table.Header name="Heade 3">Header 3</Table.Header>
+          <Table.Header>Header 1</Table.Header>
+          <Table.Header>Header 2</Table.Header>
+          <Table.Header>Header 3</Table.Header>
         </Table.Row>
       </Table.RowGroup>
     </StyledTable>
@@ -117,15 +117,11 @@ export const TableHeader = () => (
   <Table>
     <Table.RowGroup>
       <Table.Row>
-        <Table.Header name="TableHeader1" flex="1">
-          Table header 1 flex 1
-        </Table.Header>
-        <Table.Header name="TableHeader2" flex="3">
-          Table header 2 flex 3
-        </Table.Header>
-        <Table.Header name="TableHeader3">Table header 3 no flex</Table.Header>
-        <Table.Header name="TableHeader3">
-          <Typography type="title2">I`&apos`m a component</Typography>
+        <Table.Header flex="1">Table header 1 flex 1</Table.Header>
+        <Table.Header flex="3">Table header 2 flex 3</Table.Header>
+        <Table.Header>Table header 3 no flex</Table.Header>
+        <Table.Header>
+          <Typography type="title2">I&apos;m a component</Typography>
         </Table.Header>
       </Table.Row>
     </Table.RowGroup>

@@ -1,7 +1,6 @@
-import React, { useContext, useEffect } from 'react';
+import React from 'react';
 import { Props } from './Header.types';
 import { Flexbox, Typography } from '../../../index';
-import { FlexTableContext } from '../shared/FlexTableContext';
 import { isElement } from '../../../common/utils';
 
 export const Header: React.FC<Props> = ({
@@ -13,27 +12,10 @@ export const Header: React.FC<Props> = ({
   order,
   shrink,
   wrap = 'nowrap',
-  name,
   fontSize = 's',
   children,
   ...htmlProps
 }) => {
-  const { setColumnProps } = useContext(FlexTableContext);
-
-  useEffect(() => {
-    if (setColumnProps) {
-      setColumnProps(name, {
-        container,
-        flex,
-        grow,
-        item,
-        order,
-        shrink,
-        wrap,
-      });
-    }
-  }, [flex, grow, item, order, shrink, wrap, container]);
-
   return (
     <Flexbox
       container={container}
