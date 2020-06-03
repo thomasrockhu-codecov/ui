@@ -152,11 +152,37 @@ exports[`Storyshots Molecules | Table Sortable Headers 1`] = `
   user-select: none;
   width: 8px;
   height: 8px;
+  fill: #282823;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
+}
+
+.c10 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 8px;
+  height: 8px;
   fill: #6E6E69;
   -webkit-flex-shrink: 0;
   -ms-flex-negative: 0;
   flex-shrink: 0;
   display: block;
+}
+
+.c7 {
+  -webkit-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+
+.c9 {
+  -webkit-transform: rotate(270deg);
+  -ms-transform: rotate(270deg);
+  transform: rotate(270deg);
 }
 
 .c4 {
@@ -184,7 +210,11 @@ exports[`Storyshots Molecules | Table Sortable Headers 1`] = `
   padding-bottom: 4px;
 }
 
-.c7 {
+.c11 {
+  margin-left: 4px;
+}
+
+.c8 {
   margin-left: 4px;
 }
 
@@ -213,14 +243,15 @@ exports[`Storyshots Molecules | Table Sortable Headers 1`] = `
           </span>
           <svg
             aria-hidden="true"
-            className="c6 c7"
+            className="c6 c7 c8"
+            direction="up"
             focusable="false"
             preserveAspectRatio="xMidYMid meet"
             role="presentation"
-            viewBox="0 0 24 24"
+            viewBox="0 0 15 16"
           >
-            <polygon
-              points="19.969 4 24 8.027 12 20 0 8.027 4.031 4 12 11.952"
+            <path
+              d="M9.179 1l-6.21 6.222h12.873v1.556L2.97 8.777 9.18 15H6.984L0 8l6.984-7h2.195z"
             />
           </svg>
         </div>
@@ -235,14 +266,15 @@ exports[`Storyshots Molecules | Table Sortable Headers 1`] = `
           </span>
           <svg
             aria-hidden="true"
-            className="c6 c7"
+            className="c6 c9 c8"
+            direction="down"
             focusable="false"
             preserveAspectRatio="xMidYMid meet"
             role="presentation"
-            viewBox="0 0 24 24"
+            viewBox="0 0 15 16"
           >
-            <polygon
-              points="19.969 4 24 8.027 12 20 0 8.027 4.031 4 12 11.952"
+            <path
+              d="M9.179 1l-6.21 6.222h12.873v1.556L2.97 8.777 9.18 15H6.984L0 8l6.984-7h2.195z"
             />
           </svg>
         </div>
@@ -257,7 +289,7 @@ exports[`Storyshots Molecules | Table Sortable Headers 1`] = `
           </span>
           <svg
             aria-hidden="true"
-            className="c6 c7"
+            className="c10 c11"
             focusable="false"
             preserveAspectRatio="xMidYMid meet"
             role="presentation"
@@ -279,7 +311,7 @@ exports[`Storyshots Molecules | Table Sortable Headers 1`] = `
           </span>
           <svg
             aria-hidden="true"
-            className="c6 c7"
+            className="c10 c11"
             focusable="false"
             preserveAspectRatio="xMidYMid meet"
             role="presentation"

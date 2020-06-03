@@ -8,8 +8,11 @@ export type TextWrapperProps = {
   density?: Density;
 };
 
+export type SortOrder = 'ascending' | 'descending' | undefined;
+
 export type Props = {
   sortable?: boolean;
+  sortOrder?: SortOrder;
 } & FlexboxProps &
   TextWrapperProps;
 

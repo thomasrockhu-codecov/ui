@@ -132,8 +132,12 @@ export const SortableHeaders = () => (
   <Table>
     <Table.RowGroup>
       <Table.Row>
-        <Table.Header sortable>Header 1</Table.Header>
-        <Table.Header sortable>Header 2</Table.Header>
+        <Table.Header sortable sortOrder="ascending">
+          Header 1
+        </Table.Header>
+        <Table.Header sortable sortOrder="descending">
+          Header 2
+        </Table.Header>
         <Table.Header sortable>Header 3</Table.Header>
         <Table.Header sortable>Header 4</Table.Header>
       </Table.Row>

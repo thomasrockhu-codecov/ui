@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { Props } from './Header.types';
+import { Props, SortOrder } from './Header.types';
 import { isElement } from '../../../common/utils';
 import { Flexbox, Icon } from '../../..';
 import { TextWrapper } from './TextWrapper';
@@ -8,6 +8,26 @@ import { TextWrapper } from './TextWrapper';
 const StyledIconChevronDown = styled(Icon.ChevronDown)`
   margin-left: ${p => p.theme.spacing.unit(1)}px;
 `;
+
+const StyledIconThinArrow = styled(Icon.ThinArrow)`
+  margin-left: ${p => p.theme.spacing.unit(1)}px;
+`;
+
+const getSortOrderIcon = (sortable: boolean, sortOrder: SortOrder) => {
+  if (!sortable) {
+    return null;
+  }
+
+  if (!sortOrder) {
+    return <StyledIconChevronDown size={2} color={t => t.color.label} />;
+  }
+
+  if (sortOrder === 'ascending') {
+    return <StyledIconThinArrow direction="up" size={2} />;
+  }
+
+  return <StyledIconThinArrow direction="down" size={2} />;
+};
 
 export const Header: React.FC<Props> = ({
   className,
@@ -21,6 +41,7 @@ export const Header: React.FC<Props> = ({
   sortable = false,
   fontSize = 'm',
   density = 'm',
+  sortOrder = undefined,
   children,
   ...htmlProps
 }) => {
@@ -45,7 +66,7 @@ export const Header: React.FC<Props> = ({
           {children}
         </TextWrapper>
       )}
-      {sortable && <StyledIconChevronDown size={2} color={t => t.color.label} />}
+      {getSortOrderIcon(sortable, sortOrder)}
     </Flexbox>
   );
 };
