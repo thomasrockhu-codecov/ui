@@ -14,7 +14,7 @@ const StyledIconThinArrow = styled(Icon.ThinArrow)`
   margin-left: ${p => p.theme.spacing.unit(1)}px;
 `;
 
-const getSortOrderIcon = (sortable: boolean, sortOrder: SortStates) => {
+const SortIcon: React.FC<{ sortable: boolean, sortOrder: SortStates}> = ({sortable, sortOrder}) => {
   if (!sortable) {
     return null;
   }
@@ -89,8 +89,7 @@ export const Header: React.FC<Props> = ({
           <TextWrapper fontSize={fontSize} density={density} sorted={!R.isNil(sortOrder)}>
             {children}
           </TextWrapper>
-          {/* TODO: Change to a component */}
-          {getSortOrderIcon(sortable, sortOrder)}
+          <SortIcon sortable={sortable} sortOrder={sortOrder} />
         </>
       )}
     </Flexbox>
