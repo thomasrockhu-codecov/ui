@@ -26,16 +26,12 @@ exports[`Storyshots Molecules | Table Default Table 1`] = `
   -webkit-flex-wrap: nowrap;
   -ms-flex-wrap: nowrap;
   flex-wrap: nowrap;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
 }
 
-.c4 {
+.c5 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #6E6E69;
   margin: 0;
@@ -55,9 +51,16 @@ exports[`Storyshots Molecules | Table Default Table 1`] = `
   background: #F5F5F5;
 }
 
-.c5 {
+.c6 {
   padding-top: 4px;
   padding-bottom: 4px;
+}
+
+.c4 {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  color: inherit;
+  width: 100%;
 }
 
 <div
@@ -78,31 +81,52 @@ exports[`Storyshots Molecules | Table Default Table 1`] = `
           className="c3"
           role="columnheader"
         >
-          <span
-            className="c4 c5"
+          <a
+            className="c4"
+            href="#"
+            onClick={[Function]}
+            role="button"
           >
-            Header 1
-          </span>
+            <span
+              className="c5 c6"
+            >
+              Header 1
+            </span>
+          </a>
         </div>
         <div
           className="c3"
           role="columnheader"
         >
-          <span
-            className="c4 c5"
+          <a
+            className="c4"
+            href="#"
+            onClick={[Function]}
+            role="button"
           >
-            Header 2
-          </span>
+            <span
+              className="c5 c6"
+            >
+              Header 2
+            </span>
+          </a>
         </div>
         <div
           className="c3"
           role="columnheader"
         >
-          <span
-            className="c4 c5"
+          <a
+            className="c4"
+            href="#"
+            onClick={[Function]}
+            role="button"
           >
-            Header 3
-          </span>
+            <span
+              className="c5 c6"
+            >
+              Header 3
+            </span>
+          </a>
         </div>
       </div>
     </div>
@@ -136,30 +160,12 @@ exports[`Storyshots Molecules | Table Sortable Headers 1`] = `
   -webkit-flex-wrap: nowrap;
   -ms-flex-wrap: nowrap;
   flex-wrap: nowrap;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
 }
 
-.c6 {
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  width: 8px;
-  height: 8px;
-  fill: #282823;
-  -webkit-flex-shrink: 0;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
-  display: block;
-}
-
-.c11 {
+.c7 {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -170,31 +176,11 @@ exports[`Storyshots Molecules | Table Sortable Headers 1`] = `
   -webkit-flex-shrink: 0;
   -ms-flex-negative: 0;
   flex-shrink: 0;
-  display: block;
+  display: inline-block;
+  vertical-align: middle;
 }
 
-.c7 {
-  -webkit-transform: rotate(90deg);
-  -ms-transform: rotate(90deg);
-  transform: rotate(90deg);
-}
-
-.c9 {
-  -webkit-transform: rotate(270deg);
-  -ms-transform: rotate(270deg);
-  transform: rotate(270deg);
-}
-
-.c4 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #282823;
-  margin: 0;
-  font-weight: 700;
-  font-size: 12px;
-  line-height: 1.3333333333333333;
-}
-
-.c10 {
+.c5 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #6E6E69;
   margin: 0;
@@ -214,17 +200,20 @@ exports[`Storyshots Molecules | Table Sortable Headers 1`] = `
   background: #F5F5F5;
 }
 
-.c5 {
+.c6 {
   padding-top: 4px;
   padding-bottom: 4px;
 }
 
-.c12 {
+.c8 {
   margin-left: 4px;
 }
 
-.c8 {
-  margin-left: 4px;
+.c4 {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  color: inherit;
+  width: 100%;
 }
 
 <div
@@ -242,109 +231,141 @@ exports[`Storyshots Molecules | Table Sortable Headers 1`] = `
         className="c2"
       >
         <div
-          aria-sort="ascending"
+          aria-sort="none"
           className="c3"
           role="columnheader"
         >
-          <span
-            className="c4 c5"
+          <a
+            className="c4"
+            href="#"
+            onClick={[Function]}
+            role="button"
           >
-            Header 1
-          </span>
-          <svg
-            aria-hidden="true"
-            className="c6 c7 c8"
-            direction="up"
-            focusable="false"
-            preserveAspectRatio="xMidYMid meet"
-            role="presentation"
-            viewBox="0 0 15 16"
-          >
-            <path
-              d="M9.179 1l-6.21 6.222h12.873v1.556L2.97 8.777 9.18 15H6.984L0 8l6.984-7h2.195z"
-            />
-          </svg>
-        </div>
-        <div
-          aria-sort="descending"
-          className="c3"
-          role="columnheader"
-        >
-          <span
-            className="c4 c5"
-          >
-            Header 2
-          </span>
-          <svg
-            aria-hidden="true"
-            className="c6 c9 c8"
-            direction="down"
-            focusable="false"
-            preserveAspectRatio="xMidYMid meet"
-            role="presentation"
-            viewBox="0 0 15 16"
-          >
-            <path
-              d="M9.179 1l-6.21 6.222h12.873v1.556L2.97 8.777 9.18 15H6.984L0 8l6.984-7h2.195z"
-            />
-          </svg>
+            <span
+              className="c5 c6"
+            >
+              Header 1
+            </span>
+            <svg
+              aria-hidden="true"
+              className="c7 c8"
+              focusable="false"
+              preserveAspectRatio="xMidYMid meet"
+              role="presentation"
+              viewBox="0 0 24 24"
+            >
+              <polygon
+                points="19.969 4 24 8.027 12 20 0 8.027 4.031 4 12 11.952"
+              />
+            </svg>
+          </a>
         </div>
         <div
           aria-sort="none"
           className="c3"
           role="columnheader"
         >
-          <span
-            className="c10 c5"
+          <a
+            className="c4"
+            href="#"
+            onClick={[Function]}
+            role="button"
           >
-            Header 3
-          </span>
-          <svg
-            aria-hidden="true"
-            className="c11 c12"
-            focusable="false"
-            preserveAspectRatio="xMidYMid meet"
-            role="presentation"
-            viewBox="0 0 24 24"
+            <span
+              className="c5 c6"
+            >
+              Header 2
+            </span>
+            <svg
+              aria-hidden="true"
+              className="c7 c8"
+              focusable="false"
+              preserveAspectRatio="xMidYMid meet"
+              role="presentation"
+              viewBox="0 0 24 24"
+            >
+              <polygon
+                points="19.969 4 24 8.027 12 20 0 8.027 4.031 4 12 11.952"
+              />
+            </svg>
+          </a>
+        </div>
+        <div
+          aria-sort="none"
+          className="c3"
+          role="columnheader"
+        >
+          <a
+            className="c4"
+            href="#"
+            onClick={[Function]}
+            role="button"
           >
-            <polygon
-              points="19.969 4 24 8.027 12 20 0 8.027 4.031 4 12 11.952"
-            />
-          </svg>
+            <span
+              className="c5 c6"
+            >
+              Header 3
+            </span>
+            <svg
+              aria-hidden="true"
+              className="c7 c8"
+              focusable="false"
+              preserveAspectRatio="xMidYMid meet"
+              role="presentation"
+              viewBox="0 0 24 24"
+            >
+              <polygon
+                points="19.969 4 24 8.027 12 20 0 8.027 4.031 4 12 11.952"
+              />
+            </svg>
+          </a>
         </div>
         <div
           className="c3"
           role="columnheader"
         >
-          <span
-            className="c10 c5"
+          <a
+            className="c4"
+            href="#"
+            onClick={[Function]}
+            role="button"
           >
-            Header 4
-          </span>
+            <span
+              className="c5 c6"
+            >
+              Header 4
+            </span>
+          </a>
         </div>
         <div
-          aria-sort="ascending"
+          aria-sort="none"
           className="c3"
           role="columnheader"
         >
-          <span
-            className="c4 c5"
+          <a
+            className="c4"
+            href="#"
+            onClick={[Function]}
+            role="button"
           >
-            Header 4
-          </span>
-          <svg
-            aria-hidden="true"
-            className="c6 c7 c8"
-            direction="up"
-            focusable="false"
-            preserveAspectRatio="xMidYMid meet"
-            role="presentation"
-            viewBox="0 0 15 16"
-          >
-            <path
-              d="M9.179 1l-6.21 6.222h12.873v1.556L2.97 8.777 9.18 15H6.984L0 8l6.984-7h2.195z"
-            />
-          </svg>
+            <span
+              className="c5 c6"
+            >
+              Header 4
+            </span>
+            <svg
+              aria-hidden="true"
+              className="c7 c8"
+              focusable="false"
+              preserveAspectRatio="xMidYMid meet"
+              role="presentation"
+              viewBox="0 0 24 24"
+            >
+              <polygon
+                points="19.969 4 24 8.027 12 20 0 8.027 4.031 4 12 11.952"
+              />
+            </svg>
+          </a>
         </div>
       </div>
     </div>
@@ -556,16 +577,12 @@ exports[`Storyshots Molecules | Table Table Header 1`] = `
   -webkit-flex-wrap: nowrap;
   -ms-flex-wrap: nowrap;
   flex-wrap: nowrap;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
 }
 
-.c6 {
+.c7 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -574,16 +591,12 @@ exports[`Storyshots Molecules | Table Table Header 1`] = `
   -webkit-flex-wrap: nowrap;
   -ms-flex-wrap: nowrap;
   flex-wrap: nowrap;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
   -webkit-flex: 3;
   -ms-flex: 3;
   flex: 3;
 }
 
-.c4 {
+.c5 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #6E6E69;
   margin: 0;
@@ -592,7 +605,7 @@ exports[`Storyshots Molecules | Table Table Header 1`] = `
   line-height: 1.3333333333333333;
 }
 
-.c7 {
+.c8 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
   margin: 0;
@@ -612,13 +625,20 @@ exports[`Storyshots Molecules | Table Table Header 1`] = `
   background: #F5F5F5;
 }
 
-.c5 {
+.c6 {
   padding-top: 4px;
   padding-bottom: 4px;
 }
 
+.c4 {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  color: inherit;
+  width: 100%;
+}
+
 @media (min-width:760px) {
-  .c7 {
+  .c8 {
     font-size: 24px;
     line-height: 1.1666666666666667;
   }
@@ -642,38 +662,59 @@ exports[`Storyshots Molecules | Table Table Header 1`] = `
           className="c3"
           role="columnheader"
         >
-          <span
-            className="c4 c5"
+          <a
+            className="c4"
+            href="#"
+            onClick={[Function]}
+            role="button"
           >
-            Table header 1 flex 1
-          </span>
+            <span
+              className="c5 c6"
+            >
+              Table header 1 flex 1
+            </span>
+          </a>
         </div>
         <div
-          className="c6"
+          className="c7"
           role="columnheader"
         >
-          <span
-            className="c4 c5"
+          <a
+            className="c4"
+            href="#"
+            onClick={[Function]}
+            role="button"
           >
-            Table header 2 flex 3
-          </span>
+            <span
+              className="c5 c6"
+            >
+              Table header 2 flex 3
+            </span>
+          </a>
+        </div>
+        <div
+          className="c3"
+          role="columnheader"
+        >
+          <a
+            className="c4"
+            href="#"
+            onClick={[Function]}
+            role="button"
+          >
+            <span
+              className="c5 c6"
+            >
+              Table header 3 no flex
+            </span>
+          </a>
         </div>
         <div
           className="c3"
           role="columnheader"
         >
           <span
-            className="c4 c5"
-          >
-            Table header 3 no flex
-          </span>
-        </div>
-        <div
-          className="c3"
-          role="columnheader"
-        >
-          <span
-            className="c7"
+            className="c8"
           >
             I'm a component
           </span>
@@ -809,10 +850,6 @@ exports[`Storyshots Molecules | Table Tables With Different Densities 1`] = `
   -webkit-flex-wrap: nowrap;
   -ms-flex-wrap: nowrap;
   flex-wrap: nowrap;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
@@ -827,7 +864,7 @@ exports[`Storyshots Molecules | Table Tables With Different Densities 1`] = `
   line-height: 1.3333333333333333;
 }
 
-.c7 {
+.c8 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #6E6E69;
   margin: 0;
@@ -847,9 +884,16 @@ exports[`Storyshots Molecules | Table Tables With Different Densities 1`] = `
   background: #F5F5F5;
 }
 
-.c8 {
+.c9 {
   padding-top: 4px;
   padding-bottom: 4px;
+}
+
+.c7 {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  color: inherit;
+  width: 100%;
 }
 
 .c0 {
@@ -895,31 +939,52 @@ exports[`Storyshots Molecules | Table Tables With Different Densities 1`] = `
             className="c6"
             role="columnheader"
           >
-            <span
-              className="c7 c8"
+            <a
+              className="c7"
+              href="#"
+              onClick={[Function]}
+              role="button"
             >
-              Header 1
-            </span>
+              <span
+                className="c8 c9"
+              >
+                Header 1
+              </span>
+            </a>
           </div>
           <div
             className="c6"
             role="columnheader"
           >
-            <span
-              className="c7 c8"
+            <a
+              className="c7"
+              href="#"
+              onClick={[Function]}
+              role="button"
             >
-              Header 2
-            </span>
+              <span
+                className="c8 c9"
+              >
+                Header 2
+              </span>
+            </a>
           </div>
           <div
             className="c6"
             role="columnheader"
           >
-            <span
-              className="c7 c8"
+            <a
+              className="c7"
+              href="#"
+              onClick={[Function]}
+              role="button"
             >
-              Header 3
-            </span>
+              <span
+                className="c8 c9"
+              >
+                Header 3
+              </span>
+            </a>
           </div>
         </div>
       </div>
@@ -949,31 +1014,52 @@ exports[`Storyshots Molecules | Table Tables With Different Densities 1`] = `
             className="c6"
             role="columnheader"
           >
-            <span
-              className="c7 c8"
+            <a
+              className="c7"
+              href="#"
+              onClick={[Function]}
+              role="button"
             >
-              Header 1
-            </span>
+              <span
+                className="c8 c9"
+              >
+                Header 1
+              </span>
+            </a>
           </div>
           <div
             className="c6"
             role="columnheader"
           >
-            <span
-              className="c7 c8"
+            <a
+              className="c7"
+              href="#"
+              onClick={[Function]}
+              role="button"
             >
-              Header 2
-            </span>
+              <span
+                className="c8 c9"
+              >
+                Header 2
+              </span>
+            </a>
           </div>
           <div
             className="c6"
             role="columnheader"
           >
-            <span
-              className="c7 c8"
+            <a
+              className="c7"
+              href="#"
+              onClick={[Function]}
+              role="button"
             >
-              Header 3
-            </span>
+              <span
+                className="c8 c9"
+              >
+                Header 3
+              </span>
+            </a>
           </div>
         </div>
       </div>
@@ -1003,31 +1089,52 @@ exports[`Storyshots Molecules | Table Tables With Different Densities 1`] = `
             className="c6"
             role="columnheader"
           >
-            <span
-              className="c7 c8"
+            <a
+              className="c7"
+              href="#"
+              onClick={[Function]}
+              role="button"
             >
-              Header 1
-            </span>
+              <span
+                className="c8 c9"
+              >
+                Header 1
+              </span>
+            </a>
           </div>
           <div
             className="c6"
             role="columnheader"
           >
-            <span
-              className="c7 c8"
+            <a
+              className="c7"
+              href="#"
+              onClick={[Function]}
+              role="button"
             >
-              Header 2
-            </span>
+              <span
+                className="c8 c9"
+              >
+                Header 2
+              </span>
+            </a>
           </div>
           <div
             className="c6"
             role="columnheader"
           >
-            <span
-              className="c7 c8"
+            <a
+              className="c7"
+              href="#"
+              onClick={[Function]}
+              role="button"
             >
-              Header 3
-            </span>
+              <span
+                className="c8 c9"
+              >
+                Header 3
+              </span>
+            </a>
           </div>
         </div>
       </div>
@@ -1057,31 +1164,52 @@ exports[`Storyshots Molecules | Table Tables With Different Densities 1`] = `
             className="c6"
             role="columnheader"
           >
-            <span
-              className="c7 c8"
+            <a
+              className="c7"
+              href="#"
+              onClick={[Function]}
+              role="button"
             >
-              Header 1
-            </span>
+              <span
+                className="c8 c9"
+              >
+                Header 1
+              </span>
+            </a>
           </div>
           <div
             className="c6"
             role="columnheader"
           >
-            <span
-              className="c7 c8"
+            <a
+              className="c7"
+              href="#"
+              onClick={[Function]}
+              role="button"
             >
-              Header 2
-            </span>
+              <span
+                className="c8 c9"
+              >
+                Header 2
+              </span>
+            </a>
           </div>
           <div
             className="c6"
             role="columnheader"
           >
-            <span
-              className="c7 c8"
+            <a
+              className="c7"
+              href="#"
+              onClick={[Function]}
+              role="button"
             >
-              Header 3
-            </span>
+              <span
+                className="c8 c9"
+              >
+                Header 3
+              </span>
+            </a>
           </div>
         </div>
       </div>
