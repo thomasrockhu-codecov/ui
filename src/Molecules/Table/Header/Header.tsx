@@ -14,20 +14,29 @@ const StyledIconThinArrow = styled(Icon.ThinArrow)`
   margin-left: ${p => p.theme.spacing.unit(1)}px;
 `;
 
-const SortIcon: React.FC<{ sortable: boolean, sortOrder: SortStates}> = ({sortable, sortOrder}) => {
+const StyledLink = styled.a`
+  text-decoration: none;
+  color: inherit;
+  width: 100%;
+`;
+
+const SortIcon: React.FC<{ sortable: boolean; sortOrder: SortStates }> = ({
+  sortable,
+  sortOrder,
+}) => {
   if (!sortable) {
     return null;
   }
 
   if (sortOrder === 'descending') {
-    return <StyledIconThinArrow direction="down" size={2} color={t => t.color.text} />;
+    return <StyledIconThinArrow inline direction="down" size={2} color={t => t.color.text} />;
   }
 
   if (sortOrder === 'ascending') {
-    return <StyledIconThinArrow direction="up" size={2} color={t => t.color.text} />;
+    return <StyledIconThinArrow inline direction="up" size={2} color={t => t.color.text} />;
   }
 
-  return <StyledIconChevronDown size={2} color={t => t.color.label} />;
+  return <StyledIconChevronDown inline size={2} color={t => t.color.label} />;
 };
 
 export const Header: React.FC<Props> = ({
@@ -78,19 +87,25 @@ export const Header: React.FC<Props> = ({
       wrap={wrap}
       className={className}
       role="columnheader"
-      alignItems="center"
       {...ariaSorted}
       {...flexBoxProps}
     >
       {isElement(children) ? (
         children
       ) : (
-        <>
+        <StyledLink
+          href="#"
+          role="button"
+          onClick={e => {
+            e.preventDefault();
+            onSortClick();
+          }}
+        >
           <TextWrapper fontSize={fontSize} density={density} sorted={!R.isNil(sortOrder)}>
             {children}
           </TextWrapper>
           <SortIcon sortable={sortable} sortOrder={sortOrder} />
-        </>
+        </StyledLink>
       )}
     </Flexbox>
   );
