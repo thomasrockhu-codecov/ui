@@ -147,3 +147,5 @@ export const SortableHeaders = () => (
     </Table.RowGroup>
   </Table>
 );
+
+// TODO: add story to how you create a custom sorting header and variations thereof

@@ -9,18 +9,32 @@ export type TextWrapperProps = {
   sorted?: boolean;
 };
 
-export type SortOrder = 'ascending' | 'descending' | undefined;
+export type SortStates = 'ascending' | 'descending' | null;
+export type onSort = (sortOrder: SortStates) => void;
 
 type Unsortable = {
   sortable?: false;
   sortOrder?: undefined;
-};
-type Sortable = {
-  sortable: true;
-  sortOrder?: SortOrder;
+  defaultSortOrder?: undefined;
+  onSort?: undefined;
 };
 
-type SortedProps = Sortable | Unsortable;
+interface Sortable {
+  sortable: true;
+  onSort?: onSort;
+}
+
+interface ControlledSort extends Sortable {
+  sortOrder: SortStates;
+  defaultSortOrder?: undefined;
+}
+
+interface UncontrolledSort extends Sortable {
+  sortOrder?: undefined;
+  defaultSortOrder?: SortStates;
+}
+
+type SortedProps = ControlledSort | UncontrolledSort | Unsortable;
 
 export type Props = {} & FlexboxProps & TextWrapperProps & SortedProps;
 

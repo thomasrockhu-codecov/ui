@@ -1,7 +1,7 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import styled from 'styled-components';
 import R from 'ramda';
-import { Props, SortOrder } from './Header.types';
+import { Props, SortStates } from './Header.types';
 import { isElement } from '../../../common/utils';
 import { Flexbox, Icon } from '../../..';
 import { TextWrapper } from './TextWrapper';
@@ -14,7 +14,7 @@ const StyledIconThinArrow = styled(Icon.ThinArrow)`
   margin-left: ${p => p.theme.spacing.unit(1)}px;
 `;
 
-const getSortOrderIcon = (sortable: boolean, sortOrder: SortOrder) => {
+const getSortOrderIcon = (sortable: boolean, sortOrder: SortStates) => {
   if (!sortable) {
     return null;
   }
@@ -31,22 +31,42 @@ const getSortOrderIcon = (sortable: boolean, sortOrder: SortOrder) => {
 };
 
 export const Header: React.FC<Props> = ({
+  children,
   className,
   container = true,
+  defaultSortOrder = null,
+  density = 'm',
   flex = '1',
+  fontSize = 'm',
   grow,
   item = true,
   order,
   shrink,
-  wrap = 'nowrap',
   sortable = false,
-  fontSize = 'm',
-  density = 'm',
-  sortOrder = undefined,
-  children,
-  ...htmlProps
+  sortOrder: sortOrderProp,
+  onSort = () => {},
+  wrap = 'nowrap',
+  ...flexBoxProps
 }) => {
+  const [sortOrder, setSortOrder] = useState(defaultSortOrder);
   const ariaSorted = sortable ? { 'aria-sort': sortOrder || 'none' } : {};
+
+  const controlledSort = sortOrderProp !== undefined;
+  useEffect(() => {
+    if (controlledSort) {
+      // @ts-ignore
+      setSortOrder(sortOrderProp);
+    }
+  }, [sortOrderProp, setSortOrder, controlledSort]);
+
+  const onSortClick = () => {
+    const newSortOrder = sortOrder === 'ascending' ? 'descending' : 'ascending';
+    onSort(newSortOrder);
+    if (!controlledSort) {
+      setSortOrder(newSortOrder);
+    }
+  };
+
   return (
     <Flexbox
       container={container}
@@ -60,16 +80,19 @@ export const Header: React.FC<Props> = ({
       role="columnheader"
       alignItems="center"
       {...ariaSorted}
-      {...htmlProps}
+      {...flexBoxProps}
     >
       {isElement(children) ? (
-        <>{children}</>
+        children
       ) : (
-        <TextWrapper fontSize={fontSize} density={density} sorted={!R.isNil(sortOrder)}>
-          {children}
-        </TextWrapper>
+        <>
+          <TextWrapper fontSize={fontSize} density={density} sorted={!R.isNil(sortOrder)}>
+            {children}
+          </TextWrapper>
+          {/* TODO: Change to a component */}
+          {getSortOrderIcon(sortable, sortOrder)}
+        </>
       )}
-      {getSortOrderIcon(sortable, sortOrder)}
     </Flexbox>
   );
 };
