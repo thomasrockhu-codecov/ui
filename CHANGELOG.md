@@ -1,3 +1,10 @@
+## [2.46.1](https://github.com/nordnet/ui/compare/v2.46.0...v2.46.1) (2020-06-04)
+
+
+### Bug Fixes
+
+* replace formatMessage with string ([d1eb592](https://github.com/nordnet/ui/commit/d1eb592))
+
 # [2.46.0](https://github.com/nordnet/ui/compare/v2.45.1...v2.46.0) (2020-06-04)
 
 
