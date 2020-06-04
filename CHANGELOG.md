@@ -1,3 +1,17 @@
+# [2.46.0](https://github.com/nordnet/ui/compare/v2.45.1...v2.46.0) (2020-06-04)
+
+
+### Bug Fixes
+
+* 🐛 add customisable colors to ProgressBar ([999018c](https://github.com/nordnet/ui/commit/999018c))
+* 🐛 allow passing custom titles to ProgressBar ([15e3b0a](https://github.com/nordnet/ui/commit/15e3b0a))
+* 🐛 small adjustments to ProgressBar ([6ebb4d4](https://github.com/nordnet/ui/commit/6ebb4d4))
+
+
+### Features
+
+* 🎸 implement ProgressBar ([2c7751d](https://github.com/nordnet/ui/commit/2c7751d))
+
 ## [2.45.1](https://github.com/nordnet/ui/compare/v2.45.0...v2.45.1) (2020-06-02)
 
 
