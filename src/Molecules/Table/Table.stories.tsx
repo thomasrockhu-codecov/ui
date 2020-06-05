@@ -153,10 +153,10 @@ export const SortableHeaderControlled = () => {
         <Table.RowGroup>
           <Table.Row>
             <Table.Header sortable sortOrder={sortState} onSort={onSort}>
-              Controled1
+              Controlled1
             </Table.Header>
             <Table.Header sortable sortOrder={sortState} onSort={onSort}>
-              Controled2
+              Controlled2
             </Table.Header>
             <Table.Header sortable={false}>Not sortable</Table.Header>
             <Table.Header sortable>Uncontrolled</Table.Header>
@@ -164,7 +164,7 @@ export const SortableHeaderControlled = () => {
               Uncontrolled with initial
             </Table.Header>
             <Table.Header sortable sortOrder={sortState} onSort={onSort}>
-              Controled3
+              Controlled3
             </Table.Header>
           </Table.Row>
         </Table.RowGroup>
