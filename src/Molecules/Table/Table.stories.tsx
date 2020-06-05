@@ -144,27 +144,30 @@ export const SortableHeadersUncontrolled = () => (
 );
 
 export const SortableHeaderControlled = () => {
-  const [sortState, setSortState] = useState<SortOrder>(SORT_ORDER_DESCENDING);
-  const onSort = (sortOrder: SortOrder) => setSortState(sortOrder);
-  return (
-    <Table>
-      <Table.RowGroup>
-        <Table.Row>
-          <Table.Header sortable sortOrder={sortState} onSort={onSort}>
-            Controled1
-          </Table.Header>
-          <Table.Header sortable sortOrder={sortState} onSort={onSort}>
-            Controled2
-          </Table.Header>
-          <Table.Header sortable={false}>Not sortable</Table.Header>
-          <Table.Header sortable>Uncontroled</Table.Header>
-          <Table.Header sortable sortOrder={sortState} onSort={onSort}>
-            Controled3
-          </Table.Header>
-        </Table.Row>
-      </Table.RowGroup>
-    </Table>
-  );
+  const SortableHeaderExample = () => {
+    const [sortState, setSortState] = useState<SortOrder>(SORT_ORDER_DESCENDING);
+    const onSort = (sortOrder: SortOrder) => setSortState(sortOrder);
+    return (
+      <Table>
+        <Table.RowGroup>
+          <Table.Row>
+            <Table.Header sortable sortOrder={sortState} onSort={onSort}>
+              Controled1
+            </Table.Header>
+            <Table.Header sortable sortOrder={sortState} onSort={onSort}>
+              Controled2
+            </Table.Header>
+            <Table.Header sortable={false}>Not sortable</Table.Header>
+            <Table.Header sortable>Uncontroled</Table.Header>
+            <Table.Header sortable sortOrder={sortState} onSort={onSort}>
+              Controled3
+            </Table.Header>
+          </Table.Row>
+        </Table.RowGroup>
+      </Table>
+    );
+  };
+  return SortableHeaderExample;
 };
 
 // TODO: add story to how you create a custom sorting header and variations thereof
