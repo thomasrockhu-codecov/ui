@@ -145,6 +145,7 @@ export const SortableHeadersUncontrolled = () => (
 
 export const SortableHeaderControlled = () => {
   const SortableHeaderExample = () => {
+    // TODO: remove state after setting up context
     const [sortState, setSortState] = useState<SortOrder>(SORT_ORDER_DESCENDING);
     const onSort = (sortOrder: SortOrder) => setSortState(sortOrder);
     return (
@@ -158,7 +159,10 @@ export const SortableHeaderControlled = () => {
               Controled2
             </Table.Header>
             <Table.Header sortable={false}>Not sortable</Table.Header>
-            <Table.Header sortable>Uncontroled</Table.Header>
+            <Table.Header sortable>Uncontrolled</Table.Header>
+            <Table.Header sortable initialSortOrder={Table.CONSTANTS.SORT_ORDER_DESCENDING}>
+              Uncontrolled with initial
+            </Table.Header>
             <Table.Header sortable sortOrder={sortState} onSort={onSort}>
               Controled3
             </Table.Header>
