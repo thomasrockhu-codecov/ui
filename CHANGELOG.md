@@ -1,3 +1,11 @@
+## [2.46.2](https://github.com/nordnet/ui/compare/v2.46.1...v2.46.2) (2020-06-05)
+
+
+### Bug Fixes
+
+* 🐛 chanage to same padding bottom on all screen widths ([2d87b79](https://github.com/nordnet/ui/commit/2d87b79))
+* change padding bottom for children in cards ([e95f37a](https://github.com/nordnet/ui/commit/e95f37a))
+
 ## [2.46.1](https://github.com/nordnet/ui/compare/v2.46.0...v2.46.1) (2020-06-04)
 
 
