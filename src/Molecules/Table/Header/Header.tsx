@@ -1,10 +1,11 @@
 import React, { useState, useEffect } from 'react';
 import styled from 'styled-components';
 import R from 'ramda';
-import { Props, SortStates } from './Header.types';
+import { Props, SortOrder } from './Header.types';
 import { isElement } from '../../../common/utils';
 import { Flexbox, Icon } from '../../..';
 import { TextWrapper } from './TextWrapper';
+import {SORT_ORDER_ASCENDING, SORT_ORDER_DESCENDING, SORT_ORDER_NONE} from "../shared/constants";
 
 const StyledIconChevronDown = styled(Icon.ChevronDown)`
   margin-left: ${p => p.theme.spacing.unit(1)}px;
@@ -20,7 +21,7 @@ const StyledLink = styled.a`
   width: 100%;
 `;
 
-const SortIcon: React.FC<{ sortable: boolean; sortOrder: SortStates }> = ({
+const SortIcon: React.FC<{ sortable: boolean; sortOrder: SortOrder }> = ({
   sortable,
   sortOrder,
 }) => {
@@ -39,11 +40,19 @@ const SortIcon: React.FC<{ sortable: boolean; sortOrder: SortStates }> = ({
   return <StyledIconChevronDown inline size={2} color={t => t.color.label} />;
 };
 
+const SORT_ORDERS:SortOrder[] = [SORT_ORDER_NONE, SORT_ORDER_ASCENDING, SORT_ORDER_DESCENDING];
+
+const getNextSortOrder = (currentOrder: SortOrder):SortOrder => {
+  const currentIndex = SORT_ORDERS.indexOf(currentOrder);
+  const nextIndex = (currentIndex + 1) % SORT_ORDERS.length -1;
+  return SORT_ORDERS[nextIndex];
+}
+
 export const Header: React.FC<Props> = ({
   children,
   className,
   container = true,
-  defaultSortOrder = null,
+  defaultSortOrder = SORT_ORDER_NONE,
   density = 'm',
   flex = '1',
   fontSize = 'm',
@@ -57,7 +66,7 @@ export const Header: React.FC<Props> = ({
   wrap = 'nowrap',
   ...flexBoxProps
 }) => {
-  const [sortOrder, setSortOrder] = useState(defaultSortOrder);
+  const [sortOrder, setSortOrder] = useState<SortOrder>(defaultSortOrder);
   const ariaSorted = sortable ? { 'aria-sort': sortOrder || 'none' } : {};
 
   const controlledSort = sortOrderProp !== undefined;
@@ -69,7 +78,7 @@ export const Header: React.FC<Props> = ({
   }, [sortOrderProp, setSortOrder, controlledSort]);
 
   const onSortClick = () => {
-    const newSortOrder = sortOrder === 'ascending' ? 'descending' : 'ascending';
+    const newSortOrder = getNextSortOrder(sortOrder);
     onSort(newSortOrder);
     if (!controlledSort) {
       setSortOrder(newSortOrder);
