@@ -15,10 +15,11 @@ const StyledIconThinArrow = styled(Icon.ThinArrow)`
   margin-left: ${p => p.theme.spacing.unit(1)}px;
 `;
 
-const StyledLink = styled.a`
+const StyledLink = styled.a<{ sortable?: Props['sortable'] }>`
   text-decoration: none;
   color: inherit;
   width: 100%;
+  cursor: ${p => (p.sortable ? 'pointer' : 'default')};
 `;
 
 const SortIcon: React.FC<{ sortable: boolean; sortOrder: SortOrder }> = ({
@@ -109,6 +110,7 @@ export const Header: React.FC<Props> = ({
             e.preventDefault();
             onSortClick();
           }}
+          sortable={sortable}
         >
           <TextWrapper fontSize={fontSize} density={density} sorted={!R.isNil(sortOrder)}>
             {children}

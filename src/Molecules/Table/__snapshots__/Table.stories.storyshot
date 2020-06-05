@@ -61,6 +61,7 @@ exports[`Storyshots Molecules | Table Default Table 1`] = `
   text-decoration: none;
   color: inherit;
   width: 100%;
+  cursor: default;
 }
 
 <div
@@ -214,6 +215,15 @@ exports[`Storyshots Molecules | Table Sortable Headers 1`] = `
   text-decoration: none;
   color: inherit;
   width: 100%;
+  cursor: pointer;
+}
+
+.c9 {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  color: inherit;
+  width: 100%;
+  cursor: default;
 }
 
 <div
@@ -295,7 +305,7 @@ exports[`Storyshots Molecules | Table Sortable Headers 1`] = `
           role="columnheader"
         >
           <a
-            className="c4"
+            className="c9"
             href="#"
             onClick={[Function]}
             role="button"
@@ -605,6 +615,7 @@ exports[`Storyshots Molecules | Table Table Header 1`] = `
   text-decoration: none;
   color: inherit;
   width: 100%;
+  cursor: default;
 }
 
 @media (min-width:760px) {
@@ -864,6 +875,7 @@ exports[`Storyshots Molecules | Table Tables With Different Densities 1`] = `
   text-decoration: none;
   color: inherit;
   width: 100%;
+  cursor: default;
 }
 
 .c0 {
