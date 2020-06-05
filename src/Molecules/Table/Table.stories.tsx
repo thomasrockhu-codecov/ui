@@ -132,17 +132,10 @@ export const SortableHeaders = () => (
   <Table>
     <Table.RowGroup>
       <Table.Row>
-        <Table.Header sortable sortOrder="ascending">
-          Header 1
-        </Table.Header>
-        <Table.Header sortable sortOrder="descending">
-          Header 2
-        </Table.Header>
-        <Table.Header sortable>Header 3</Table.Header>
-        <Table.Header sortable={false}>Header 4</Table.Header>
-        <Table.Header sortable sortOrder="ascending">
-          Header 4
-        </Table.Header>
+        <Table.Header sortable>Ticker</Table.Header>
+        <Table.Header sortable>Instrument name</Table.Header>
+        <Table.Header sortable={false}>Country</Table.Header>
+        <Table.Header sortable>Yield</Table.Header>
       </Table.Row>
     </Table.RowGroup>
   </Table>

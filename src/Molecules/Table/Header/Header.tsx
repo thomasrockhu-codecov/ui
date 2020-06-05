@@ -5,7 +5,7 @@ import { Props, SortOrder } from './Header.types';
 import { isElement } from '../../../common/utils';
 import { Flexbox, Icon } from '../../..';
 import { TextWrapper } from './TextWrapper';
-import {SORT_ORDER_ASCENDING, SORT_ORDER_DESCENDING, SORT_ORDER_NONE} from "../shared/constants";
+import { SORT_ORDER_ASCENDING, SORT_ORDER_DESCENDING, SORT_ORDER_NONE } from '../shared/constants';
 
 const StyledIconChevronDown = styled(Icon.ChevronDown)`
   margin-left: ${p => p.theme.spacing.unit(1)}px;
@@ -40,13 +40,13 @@ const SortIcon: React.FC<{ sortable: boolean; sortOrder: SortOrder }> = ({
   return <StyledIconChevronDown inline size={2} color={t => t.color.label} />;
 };
 
-const SORT_ORDERS:SortOrder[] = [SORT_ORDER_NONE, SORT_ORDER_ASCENDING, SORT_ORDER_DESCENDING];
+const SORT_ORDERS: SortOrder[] = [SORT_ORDER_NONE, SORT_ORDER_ASCENDING, SORT_ORDER_DESCENDING];
 
-const getNextSortOrder = (currentOrder: SortOrder):SortOrder => {
+const getNextSortOrder = (currentOrder: SortOrder): SortOrder => {
   const currentIndex = SORT_ORDERS.indexOf(currentOrder);
-  const nextIndex = (currentIndex + 1) % SORT_ORDERS.length -1;
+  const nextIndex = (currentIndex + 1) % SORT_ORDERS.length;
   return SORT_ORDERS[nextIndex];
-}
+};
 
 export const Header: React.FC<Props> = ({
   children,
