@@ -10,12 +10,12 @@ export type TextWrapperProps = {
 };
 
 export type SortOrder = 'ascending' | 'descending' | 'none';
-export type onSort = (sortOrder: SortOrder) => void;
+export type onSort = (newSortOrder: SortOrder) => void;
 
 type Unsortable = {
   sortable?: false;
   sortOrder?: undefined;
-  defaultSortOrder?: undefined;
+  initialSortOrder?: undefined;
   onSort?: undefined;
 };
 
@@ -26,12 +26,12 @@ interface Sortable {
 
 interface ControlledSort extends Sortable {
   sortOrder: SortOrder;
-  defaultSortOrder?: undefined;
+  initialSortOrder?: undefined;
 }
 
 interface UncontrolledSort extends Sortable {
   sortOrder?: undefined;
-  defaultSortOrder?: SortOrder;
+  initialSortOrder?: SortOrder;
 }
 
 type SortedProps = ControlledSort | UncontrolledSort | Unsortable;

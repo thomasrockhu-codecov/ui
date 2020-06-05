@@ -31,11 +31,11 @@ const SortIcon: React.FC<{ sortable: boolean; sortOrder: SortOrder }> = ({
   }
 
   if (sortOrder === 'descending') {
-    return <StyledIconThinArrow inline direction="down" size={2} color={t => t.color.text} />;
+    return <StyledIconThinArrow inline direction="up" size={2} color={t => t.color.text} />;
   }
 
   if (sortOrder === 'ascending') {
-    return <StyledIconThinArrow inline direction="up" size={2} color={t => t.color.text} />;
+    return <StyledIconThinArrow inline direction="down" size={2} color={t => t.color.text} />;
   }
 
   return <StyledIconChevronDown inline size={2} color={t => t.color.label} />;
@@ -53,7 +53,7 @@ export const Header: React.FC<Props> = ({
   children,
   className,
   container = true,
-  defaultSortOrder = SORT_ORDER_NONE,
+  initialSortOrder = SORT_ORDER_NONE,
   density = 'm',
   flex = '1',
   fontSize = 'm',
@@ -67,8 +67,8 @@ export const Header: React.FC<Props> = ({
   wrap = 'nowrap',
   ...flexBoxProps
 }) => {
-  const [sortOrder, setSortOrder] = useState<SortOrder>(defaultSortOrder);
-  const ariaSorted = sortable ? { 'aria-sort': sortOrder || 'none' } : {};
+  const [sortOrder, setSortOrder] = useState<SortOrder>(initialSortOrder);
+  const ariaSorted = sortable ? { 'aria-sort': sortOrder } : {};
 
   const controlledSort = sortOrderProp !== undefined;
   useEffect(() => {
