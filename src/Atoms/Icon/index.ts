@@ -46,6 +46,7 @@ import { InfoCircle } from './components/InfoCircle';
 import { Leaf } from './components/Leaf';
 import { LineGraph } from './components/LineGraph';
 import { Maximize } from './components/Maximize';
+import { Move } from './components/Move';
 import { Minimize } from './components/Minimize';
 import { Minus } from './components/Minus';
 import { Other } from './components/Other';
@@ -122,6 +123,7 @@ export default {
   Leaf,
   LineGraph,
   Maximize,
+  Move,
   Minimize,
   Minus,
   Other,
