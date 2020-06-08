@@ -26,6 +26,7 @@ const StyledTypography = styled(Typography).withConfig({
 })<{ density: Density }>`
   padding-top: ${p => getDensityPaddings(p.density)}px;
   padding-bottom: ${p => getDensityPaddings(p.density)}px;
+  display: inline-block;
 `;
 
 export const TextWrapper: React.FC<TextWrapperProps> = ({

@@ -35,7 +35,7 @@ const StyledTable = styled(Table)`
 
 export const TablesWithDifferentDensities = () => (
   <StyledDiv>
-    <Typography type="title3">Default</Typography>
+    <Typography type="title3">Default (Medium)</Typography>
 
     <StyledTable>
       <Table.RowGroup>
@@ -51,9 +51,15 @@ export const TablesWithDifferentDensities = () => (
     <StyledTable>
       <Table.RowGroup>
         <Table.Row>
-          <Table.Header columnId="column1">Header 1</Table.Header>
-          <Table.Header columnId="column2">Header 2</Table.Header>
-          <Table.Header columnId="column3">Header 3</Table.Header>
+          <Table.Header columnId="column1" density="s">
+            Header 1
+          </Table.Header>
+          <Table.Header columnId="column2" density="s">
+            Header 2
+          </Table.Header>
+          <Table.Header columnId="column3" density="s">
+            Header 3
+          </Table.Header>
         </Table.Row>
       </Table.RowGroup>
     </StyledTable>
@@ -62,9 +68,15 @@ export const TablesWithDifferentDensities = () => (
     <StyledTable>
       <Table.RowGroup>
         <Table.Row>
-          <Table.Header columnId="column1">Header 1</Table.Header>
-          <Table.Header columnId="column2">Header 2</Table.Header>
-          <Table.Header columnId="column3">Header 3</Table.Header>
+          <Table.Header columnId="column1" density="m">
+            Header 1
+          </Table.Header>
+          <Table.Header columnId="column2" density="m">
+            Header 2
+          </Table.Header>
+          <Table.Header columnId="column3" density="m">
+            Header 3
+          </Table.Header>
         </Table.Row>
       </Table.RowGroup>
     </StyledTable>
@@ -73,9 +85,15 @@ export const TablesWithDifferentDensities = () => (
     <StyledTable>
       <Table.RowGroup>
         <Table.Row>
-          <Table.Header columnId="column1">Header 1</Table.Header>
-          <Table.Header columnId="column2">Header 2</Table.Header>
-          <Table.Header columnId="column3">Header 3</Table.Header>
+          <Table.Header columnId="column1" density="l">
+            Header 1
+          </Table.Header>
+          <Table.Header columnId="column2" density="l">
+            Header 2
+          </Table.Header>
+          <Table.Header columnId="column3" density="l">
+            Header 3
+          </Table.Header>
         </Table.Row>
       </Table.RowGroup>
     </StyledTable>
