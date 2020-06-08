@@ -38,6 +38,7 @@ import { Financial } from './components/Financial';
 import { Flag } from './components/Flag';
 import { Globe } from './components/Globe';
 import { Hamburger } from './components/Hamburger';
+import { House } from './components/House';
 import { Healthcare } from './components/Healthcare';
 import { Increase } from './components/Increase';
 import { Import } from './components/Import';
@@ -116,6 +117,7 @@ export default {
   Globe,
   Hamburger,
   Healthcare,
+  House,
   Increase,
   Import,
   Industrial,
