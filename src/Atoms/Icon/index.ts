@@ -39,6 +39,7 @@ import { Flag } from './components/Flag';
 import { Globe } from './components/Globe';
 import { Hamburger } from './components/Hamburger';
 import { Healthcare } from './components/Healthcare';
+import { Increase } from './components/Increase';
 import { Import } from './components/Import';
 import { Industrial } from './components/Industrial';
 import { InfoCircle } from './components/InfoCircle';
@@ -114,6 +115,7 @@ export default {
   Globe,
   Hamburger,
   Healthcare,
+  Increase,
   Import,
   Industrial,
   InfoCircle,
