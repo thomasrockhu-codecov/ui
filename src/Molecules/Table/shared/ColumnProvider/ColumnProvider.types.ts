@@ -25,10 +25,9 @@ type FlexPropsType = Pick<
   | 'wrap'
 >;
 
-export type ColumnReducer = {
-  [columnId: string]: {
-    flexProps: FlexPropsType;
-  };
+// TODO: Set correct state type
+export type ColumnState = {
+  [columnId: string]: any;
 };
 
 export type ColumnDispatch = (action: ColumnActions) => void;

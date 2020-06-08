@@ -1,13 +1,12 @@
 import React, { useReducer } from 'react';
-import { ColumnActions, ColumnReducer, ColumnDispatch } from './ColumnProvider.types';
+import { ColumnActions, ColumnState, ColumnDispatch } from './ColumnProvider.types';
 
 export const ACTION_SET_FLEX_PROPS = 'SET_FLEX_PROPS';
 
-export const ColumnStateContext = React.createContext<ColumnReducer | undefined>(undefined);
+export const ColumnStateContext = React.createContext<ColumnState | undefined>(undefined);
 export const ColumnDispatchContext = React.createContext<ColumnDispatch | undefined>(undefined);
 
-// TODO: Fix state type
-const columnReducer = (state: any, action: ColumnActions) => {
+const columnReducer = (state: ColumnState, action: ColumnActions): ColumnState => {
   switch (action.type) {
     case ACTION_SET_FLEX_PROPS:
       return {
@@ -22,7 +21,7 @@ const columnReducer = (state: any, action: ColumnActions) => {
 };
 
 export const ColumnProvider: React.FC = ({ children }) => {
-  const [state, dispatch] = useReducer(columnReducer, { columnName: { flexProps: { size: 4 } } });
+  const [state, dispatch] = useReducer(columnReducer, {});
 
   return (
     <ColumnStateContext.Provider value={state}>
