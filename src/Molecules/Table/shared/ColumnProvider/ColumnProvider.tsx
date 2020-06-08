@@ -1,16 +1,16 @@
 import React, { useReducer } from 'react';
-import { ColumnActions, ColumnState, ColumnDispatch } from './ColumnProvider.types';
+import { ColumnActions, ColumnsState, ColumnsDispatch } from './ColumnProvider.types';
 
 export const ACTION_SET_FLEX_PROPS = 'SET_FLEX_PROPS';
 
-export const ColumnStateContext = React.createContext<ColumnState | undefined>(undefined);
-export const ColumnDispatchContext = React.createContext<ColumnDispatch | undefined>(undefined);
+export const ColumnStateContext = React.createContext<ColumnsState | undefined>(undefined);
+export const ColumnDispatchContext = React.createContext<ColumnsDispatch | undefined>(undefined);
 
-const columnReducer = (state: ColumnState, action: ColumnActions): ColumnState => {
+const columnReducer = (state: ColumnsState, action: ColumnActions): ColumnsState => {
   switch (action.type) {
     case ACTION_SET_FLEX_PROPS:
       return {
-        ...state[action.columnId],
+        ...state,
         [action.columnId]: { flexProps: action.flexProps },
       };
 

@@ -16,9 +16,9 @@ export const DefaultTable = () => (
   <Table>
     <Table.RowGroup>
       <Table.Row>
-        <Table.Header>Header 1</Table.Header>
-        <Table.Header>Header 2</Table.Header>
-        <Table.Header>Header 3</Table.Header>
+        <Table.Header columnId="column1">Header 1</Table.Header>
+        <Table.Header columnId="column2">Header 2</Table.Header>
+        <Table.Header columnId="column3">Header 3</Table.Header>
       </Table.Row>
     </Table.RowGroup>
   </Table>
@@ -40,9 +40,9 @@ export const TablesWithDifferentDensities = () => (
     <StyledTable>
       <Table.RowGroup>
         <Table.Row>
-          <Table.Header>Header 1</Table.Header>
-          <Table.Header>Header 2</Table.Header>
-          <Table.Header>Header 3</Table.Header>
+          <Table.Header columnId="column1">Header 1</Table.Header>
+          <Table.Header columnId="column2">Header 2</Table.Header>
+          <Table.Header columnId="column3">Header 3</Table.Header>
         </Table.Row>
       </Table.RowGroup>
     </StyledTable>
@@ -51,9 +51,9 @@ export const TablesWithDifferentDensities = () => (
     <StyledTable>
       <Table.RowGroup>
         <Table.Row>
-          <Table.Header>Header 1</Table.Header>
-          <Table.Header>Header 2</Table.Header>
-          <Table.Header>Header 3</Table.Header>
+          <Table.Header columnId="column1">Header 1</Table.Header>
+          <Table.Header columnId="column2">Header 2</Table.Header>
+          <Table.Header columnId="column3">Header 3</Table.Header>
         </Table.Row>
       </Table.RowGroup>
     </StyledTable>
@@ -62,9 +62,9 @@ export const TablesWithDifferentDensities = () => (
     <StyledTable>
       <Table.RowGroup>
         <Table.Row>
-          <Table.Header>Header 1</Table.Header>
-          <Table.Header>Header 2</Table.Header>
-          <Table.Header>Header 3</Table.Header>
+          <Table.Header columnId="column1">Header 1</Table.Header>
+          <Table.Header columnId="column2">Header 2</Table.Header>
+          <Table.Header columnId="column3">Header 3</Table.Header>
         </Table.Row>
       </Table.RowGroup>
     </StyledTable>
@@ -73,9 +73,9 @@ export const TablesWithDifferentDensities = () => (
     <StyledTable>
       <Table.RowGroup>
         <Table.Row>
-          <Table.Header>Header 1</Table.Header>
-          <Table.Header>Header 2</Table.Header>
-          <Table.Header>Header 3</Table.Header>
+          <Table.Header columnId="column1">Header 1</Table.Header>
+          <Table.Header columnId="column2">Header 2</Table.Header>
+          <Table.Header columnId="column3">Header 3</Table.Header>
         </Table.Row>
       </Table.RowGroup>
     </StyledTable>
@@ -117,16 +117,18 @@ export const TableExpanded = () => {
 
 export const TableHeader = () => (
   <Table>
-    <Table.RowGroup>
-      <Table.Row>
-        <Table.Header flex="1">Table header 1 flex 1</Table.Header>
-        <Table.Header flex="3">Table header 2 flex 3</Table.Header>
-        <Table.Header>Table header 3 no flex</Table.Header>
-        <Table.Header>
-          <Typography type="title2">I&apos;m a component</Typography>
-        </Table.Header>
-      </Table.Row>
-    </Table.RowGroup>
+    <Table.Row>
+      <Table.Header columnId="column1" flex="1">
+        Table header 1 flex 1
+      </Table.Header>
+      <Table.Header columnId="column2" flex="3">
+        Table header 2 flex 3
+      </Table.Header>
+      <Table.Header columnId="column3">Table header 3 no flex</Table.Header>
+      <Table.Header columnId="column4">
+        <Typography type="title2">I&apos;m a component</Typography>
+      </Table.Header>
+    </Table.Row>
   </Table>
 );
 
@@ -134,10 +136,18 @@ export const SortableHeadersUncontrolled = () => (
   <Table>
     <Table.RowGroup>
       <Table.Row>
-        <Table.Header sortable>Ticker</Table.Header>
-        <Table.Header sortable>Instrument name</Table.Header>
-        <Table.Header sortable={false}>Country</Table.Header>
-        <Table.Header sortable>Yield</Table.Header>
+        <Table.Header columnId="column1" sortable>
+          Ticker
+        </Table.Header>
+        <Table.Header columnId="column2" sortable>
+          Instrument name
+        </Table.Header>
+        <Table.Header columnId="column3" sortable={false}>
+          Country
+        </Table.Header>
+        <Table.Header columnId="column4" sortable>
+          Yield
+        </Table.Header>
       </Table.Row>
     </Table.RowGroup>
   </Table>
@@ -152,18 +162,26 @@ export const SortableHeaderControlled = () => {
       <Table>
         <Table.RowGroup>
           <Table.Row>
-            <Table.Header sortable sortOrder={sortState} onSort={onSort}>
+            <Table.Header columnId="column1" sortable sortOrder={sortState} onSort={onSort}>
               Controlled1
             </Table.Header>
-            <Table.Header sortable sortOrder={sortState} onSort={onSort}>
+            <Table.Header columnId="column2" sortable sortOrder={sortState} onSort={onSort}>
               Controlled2
             </Table.Header>
-            <Table.Header sortable={false}>Not sortable</Table.Header>
-            <Table.Header sortable>Uncontrolled</Table.Header>
-            <Table.Header sortable initialSortOrder={Table.CONSTANTS.SORT_ORDER_DESCENDING}>
+            <Table.Header columnId="column3" sortable={false}>
+              Not sortable
+            </Table.Header>
+            <Table.Header columnId="column4" sortable>
+              Uncontrolled
+            </Table.Header>
+            <Table.Header
+              columnId="column5"
+              sortable
+              initialSortOrder={Table.CONSTANTS.SORT_ORDER_DESCENDING}
+            >
               Uncontrolled with initial
             </Table.Header>
-            <Table.Header sortable sortOrder={sortState} onSort={onSort}>
+            <Table.Header columnId="column6" sortable sortOrder={sortState} onSort={onSort}>
               Controlled3
             </Table.Header>
           </Table.Row>

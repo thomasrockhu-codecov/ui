@@ -1,17 +1,29 @@
-import { useContext } from 'react';
+import { useContext, useCallback } from 'react';
 import { ColumnStateContext, ColumnDispatchContext } from './ColumnProvider';
-import { ColumnActions } from './ColumnProvider.types';
+import { ColumnsDispatch, ColumnsState, ColumnDispatch, ColumnState } from './ColumnProvider.types';
 
-export const useColumn = (columnId: string) => {
+export const useColumnProvider = (): [ColumnsState, ColumnsDispatch] => {
   const state = useContext(ColumnStateContext);
   const dispatch = useContext(ColumnDispatchContext);
 
   if (state === undefined || dispatch === undefined) {
-    return [undefined, undefined];
+    throw Error('Using useColumnProvider outside ColumnProvider');
   }
+
+  return [state, dispatch];
+};
+
+// TODO: Set up types for column state and column dispatch which is specific to a columnId
+export const useColumn = (columnId: string): [ColumnState, ColumnDispatch] => {
+  const [state, dispatch] = useColumnProvider();
+
   const columnState = state[columnId];
-  const columnDispatch = (action: Omit<ColumnActions, 'columnId'>) =>
-    dispatch({ ...action, columnId });
+  const columnDispatch: ColumnDispatch = useCallback(
+    action => {
+      dispatch({ ...action, columnId });
+    },
+    [columnId, dispatch],
+  );
 
   return [columnState, columnDispatch];
 };

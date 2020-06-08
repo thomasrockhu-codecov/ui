@@ -1,7 +1,7 @@
 import { Props as FlexboxProps } from '../../../../Atoms/Flexbox/Flexbox.types';
 import { ACTION_SET_FLEX_PROPS } from './ColumnProvider';
 
-type FlexPropsType = Pick<
+export type FlexPropsType = Pick<
   FlexboxProps,
   | 'align'
   | 'alignContent'
@@ -26,11 +26,15 @@ type FlexPropsType = Pick<
 >;
 
 // TODO: Set correct state type
-export type ColumnState = {
-  [columnId: string]: any;
+export type ColumnsState = {
+  [columnId: string]: ColumnState;
 };
 
-export type ColumnDispatch = (action: ColumnActions) => void;
+export type ColumnState = { flexProps: FlexPropsType };
+
+export type ColumnsDispatch = (action: ColumnActions) => void;
+
+export type ColumnDispatch = (action: Omit<ColumnActions, 'columnId'>) => void;
 
 type SET_FLEX_ACTION = {
   type: typeof ACTION_SET_FLEX_PROPS;

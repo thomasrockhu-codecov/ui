@@ -36,6 +36,6 @@ interface UncontrolledSort extends Sortable {
 
 type SortedProps = ControlledSort | UncontrolledSort | Unsortable;
 
-export type Props = {} & FlexboxProps & TextWrapperProps & SortedProps;
+export type Props = { columnId: string } & FlexboxProps & TextWrapperProps & SortedProps;
 
 export type HeaderComponent = React.FC<Props>;
