@@ -1,5 +1,6 @@
 import { AccountNumbers } from './components/AccountNumbers';
 import { AddWithCircle } from './components/AddWithCircle';
+import { Apartment } from './components/Apartment';
 import { Archive } from './components/Archive';
 import { ArrowRight } from './components/ArrowRight';
 import { Attachement } from './components/Attachement';
@@ -78,6 +79,7 @@ import { ThinArrow } from './components/ThinArrow';
 export default {
   AccountNumbers,
   AddWithCircle,
+  Apartment,
   Archive,
   ArrowRight,
   Attachement,
