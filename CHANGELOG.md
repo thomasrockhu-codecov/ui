@@ -1,3 +1,14 @@
+# [2.47.0](https://github.com/nordnet/ui/compare/v2.46.3...v2.47.0) (2020-06-08)
+
+
+### Features
+
+* 🎸 add house icon ([7180fc1](https://github.com/nordnet/ui/commit/7180fc1))
+* 🎸 add increase icon ([76374fd](https://github.com/nordnet/ui/commit/76374fd))
+* 🎸 add move icon ([3aa1d3e](https://github.com/nordnet/ui/commit/3aa1d3e))
+* 🎸 amended ([be63914](https://github.com/nordnet/ui/commit/be63914))
+* 🎸 Apartment icon added ([bc6c487](https://github.com/nordnet/ui/commit/bc6c487))
+
 ## [2.46.3](https://github.com/nordnet/ui/compare/v2.46.2...v2.46.3) (2020-06-08)
 
 
