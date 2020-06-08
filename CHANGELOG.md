@@ -1,3 +1,10 @@
+## [2.46.3](https://github.com/nordnet/ui/compare/v2.46.2...v2.46.3) (2020-06-08)
+
+
+### Bug Fixes
+
+* resolution to transitive dependency, also bump react and react-dom ([69b989d](https://github.com/nordnet/ui/commit/69b989d))
+
 ## [2.46.2](https://github.com/nordnet/ui/compare/v2.46.1...v2.46.2) (2020-06-05)
 
 
