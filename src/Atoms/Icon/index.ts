@@ -1,5 +1,6 @@
 import { AccountNumbers } from './components/AccountNumbers';
 import { AddWithCircle } from './components/AddWithCircle';
+import { Apartment } from './components/Apartment';
 import { Archive } from './components/Archive';
 import { ArrowRight } from './components/ArrowRight';
 import { Attachement } from './components/Attachement';
@@ -38,13 +39,16 @@ import { Financial } from './components/Financial';
 import { Flag } from './components/Flag';
 import { Globe } from './components/Globe';
 import { Hamburger } from './components/Hamburger';
+import { House } from './components/House';
 import { Healthcare } from './components/Healthcare';
+import { Increase } from './components/Increase';
 import { Import } from './components/Import';
 import { Industrial } from './components/Industrial';
 import { InfoCircle } from './components/InfoCircle';
 import { Leaf } from './components/Leaf';
 import { LineGraph } from './components/LineGraph';
 import { Maximize } from './components/Maximize';
+import { Move } from './components/Move';
 import { Minimize } from './components/Minimize';
 import { Minus } from './components/Minus';
 import { Other } from './components/Other';
@@ -75,6 +79,7 @@ import { ThinArrow } from './components/ThinArrow';
 export default {
   AccountNumbers,
   AddWithCircle,
+  Apartment,
   Archive,
   ArrowRight,
   Attachement,
@@ -114,12 +119,15 @@ export default {
   Globe,
   Hamburger,
   Healthcare,
+  House,
+  Increase,
   Import,
   Industrial,
   InfoCircle,
   Leaf,
   LineGraph,
   Maximize,
+  Move,
   Minimize,
   Minus,
   Other,
