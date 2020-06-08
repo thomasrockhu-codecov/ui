@@ -151,9 +151,9 @@
     "jest-styled-components": "^7.0.0",
     "lint-staged": "8.1.7",
     "prettier": "1.17.1",
-    "react": "16.10.2",
+    "react": "^16.13.1",
     "react-docgen-typescript-loader": "^3.3.0",
-    "react-dom": "16.10.2",
+    "react-dom": "^16.13.1",
     "react-live": "^2.2.2",
     "react-markdown": "4.0.8",
     "react-test-renderer": "16.8.6",
@@ -168,8 +168,7 @@
     "webpack": "4.32.0"
   },
   "resolutions": {
-    "react": "16.10.2",
-    "react-dom": "16.10.2",
-    "styled-components": "^5.1.0"
+    "styled-components": "^5.1.0",
+    "websocket-extensions": "^0.1.4"
   }
 }
