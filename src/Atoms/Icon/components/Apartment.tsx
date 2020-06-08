@@ -3,7 +3,6 @@ import { IconBase } from '../IconBase';
 import { BaseProps } from '../IconBase.types';
 
 export const Apartment = ({ color, ...rest }: BaseProps) => {
-  console.log('Color', color);
   return (
     <IconBase {...rest} viewBox="0 0 32 32" color={color}>
       <g stroke="none" strokeWidth="1" fill="inherit">
