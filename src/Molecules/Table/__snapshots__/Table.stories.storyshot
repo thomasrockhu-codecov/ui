@@ -789,6 +789,17 @@ exports[`Storyshots Molecules | Table Table Expanded 1`] = `
 `;
 
 exports[`Storyshots Molecules | Table Table Header 1`] = `
+.c7 {
+  height: 12px;
+  box-sizing: border-box;
+  display: inline-block;
+  vertical-align: middle;
+  position: relative;
+  bottom: 1px;
+  width: 16px;
+  overflow: hidden;
+}
+
 .c1 {
   box-sizing: border-box;
   display: -webkit-box;
@@ -829,6 +840,21 @@ exports[`Storyshots Molecules | Table Table Header 1`] = `
   flex: 3;
 }
 
+.c8 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 8px;
+  height: 8px;
+  fill: #6E6E69;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: inline-block;
+  vertical-align: middle;
+}
+
 .c3 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #6E6E69;
@@ -838,7 +864,7 @@ exports[`Storyshots Molecules | Table Table Header 1`] = `
   line-height: 1.3333333333333333;
 }
 
-.c6 {
+.c10 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
   margin: 0;
@@ -864,8 +890,19 @@ exports[`Storyshots Molecules | Table Table Header 1`] = `
   display: inline-block;
 }
 
+.c9 {
+  margin-left: 4px;
+}
+
+.c6 {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  color: inherit;
+  width: 100%;
+}
+
 @media (min-width:760px) {
-  .c6 {
+  .c10 {
     font-size: 24px;
     line-height: 1.1666666666666667;
   }
@@ -902,6 +939,75 @@ exports[`Storyshots Molecules | Table Table Header 1`] = `
         </span>
       </div>
       <div
+        aria-sort="none"
+        className="c2"
+        role="columnheader"
+      >
+        <a
+          className="c6"
+          href="#"
+          onClick={[Function]}
+          role="button"
+        >
+          <svg
+            className="c7"
+            focusable="false"
+            role="img"
+            viewBox="0 0 640 480"
+          >
+            <g
+              transform="translate(50.082) scale(.9375)"
+            >
+              <g
+                fillRule="evenodd"
+                strokeWidth="1pt"
+              >
+                <path
+                  d="M-121.103.302h256V205.1h-256zM-121.103 307.178h256v204.8h-256z"
+                  fill="#006aa7"
+                />
+                <path
+                  d="M-121.103 204.984h256v102.4h-256z"
+                  fill="#fecc00"
+                />
+                <path
+                  d="M133.843.01h102.4v511.997h-102.4z"
+                  fill="#fecc00"
+                />
+                <path
+                  d="M232.995 205.013h460.798v102.4H232.995z"
+                  fill="#fecc00"
+                />
+                <path
+                  d="M236.155 307.208h460.797v204.799H236.155zM236.155.302h460.797V205.1H236.155z"
+                  fill="#006aa7"
+                />
+              </g>
+            </g>
+            <title>
+              Sweden
+            </title>
+          </svg>
+          <span
+            className="c3 c4"
+          >
+            Customised header
+          </span>
+          <svg
+            aria-hidden="true"
+            className="c8 c9"
+            focusable="false"
+            preserveAspectRatio="xMidYMid meet"
+            role="presentation"
+            viewBox="0 0 24 24"
+          >
+            <polygon
+              points="19.969 4 24 8.027 12 20 0 8.027 4.031 4 12 11.952"
+            />
+          </svg>
+        </a>
+      </div>
+      <div
         className="c2"
         role="columnheader"
       >
@@ -916,9 +1022,18 @@ exports[`Storyshots Molecules | Table Table Header 1`] = `
         role="columnheader"
       >
         <span
-          className="c6"
+          className="c10"
         >
           I'm a component
+        </span>
+        <span
+          className="c3 c4"
+        >
+          <span
+            className="c10"
+          >
+            I'm a component
+          </span>
         </span>
       </div>
     </div>
