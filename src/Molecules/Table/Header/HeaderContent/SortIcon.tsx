@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { Icon } from '../../../..';
-import { SortIconProps } from './HeaderContent.types';
+import { SortIconComponent } from './HeaderContent.types';
 import { SORT_ORDER_NONE } from '../../shared/constants';
 
 const StyledIconChevronDown = styled(Icon.ChevronDown)`
@@ -12,7 +12,7 @@ const StyledIconSortArrow = styled(Icon.SortArrow)`
   margin-left: ${p => p.theme.spacing.unit(1)}px;
 `;
 
-export const SortIcon: React.FC<SortIconProps> = ({ sortOrder }) => {
+export const SortIcon: SortIconComponent = ({ sortOrder }) => {
   if (sortOrder === SORT_ORDER_NONE) {
     return <StyledIconChevronDown inline size={2} color={t => t.color.label} />;
   }

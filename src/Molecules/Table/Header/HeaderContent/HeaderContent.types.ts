@@ -16,7 +16,7 @@ export type SortIconProps = {
   sortOrder: NonNullable<SortOrder>;
 };
 
-export type SortIconComponent = React.FC<SortButtonProps>;
+export type SortIconComponent = React.FC<SortIconProps>;
 
 export type SortButtonProps = {
   onClick: () => void;
