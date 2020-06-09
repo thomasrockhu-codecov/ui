@@ -20,8 +20,6 @@ const StyledRow = styled('div').withConfig({
   }
 `;
 
-const ExpandedContent = styled('div')``;
-
 export const Row: RowComponent = ({
   className,
   expanded = false,
@@ -44,11 +42,9 @@ export const Row: RowComponent = ({
         {children}
       </Flexbox>
       {expanded && (
-        <ExpandedContent>
-          <Box px={3} pb={2}>
-            {expandableContent}
-          </Box>
-        </ExpandedContent>
+        <Box px={3} pb={2}>
+          {expandableContent}
+        </Box>
       )}
     </StyledRow>
   );
