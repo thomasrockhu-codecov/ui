@@ -1,15 +1,7 @@
 import React from 'react';
 import { Props as FlexboxProps } from '../../../Atoms/Flexbox/Flexbox.types';
+import { SortOrder, TextWrapperProps } from './HeaderContent/HeaderContent.types';
 
-export type Density = 's' | 'm' | 'l';
-
-export type TextWrapperProps = {
-  fontSize?: 'm' | 'l';
-  density?: Density;
-  sorted?: boolean;
-};
-
-export type SortOrder = 'ascending' | 'descending' | 'none' | null;
 export type onSort = (newSortOrder: SortOrder, columnId: string) => void;
 
 type Unsortable = {

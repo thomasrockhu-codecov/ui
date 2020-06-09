@@ -1,12 +1,12 @@
 import React from 'react';
 import styled from 'styled-components';
-import { Typography } from '../../..';
-import { TextWrapperProps, Density } from './Header.types';
+import { Typography } from '../../../..';
+import { TextWrapperProps, Density } from './HeaderContent.types';
 import {
   DENSITY_PADDING_LARGE,
   DENSITY_PADDING_SMALL,
   DENSITY_PADDING_MEDIUM,
-} from '../shared/constants';
+} from '../../shared/constants';
 
 const getDensityPaddings = (density: Density) => {
   switch (density) {

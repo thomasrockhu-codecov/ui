@@ -1,6 +1,6 @@
 import { Props as FlexboxProps } from '../../../../Atoms/Flexbox/Flexbox.types';
 import { ACTION_SET_FLEX_PROPS, ACTION_SET_SORTING } from './ColumnProvider';
-import { SortOrder } from '../../Header/Header.types';
+import { SortOrder } from '../../Header/HeaderContent/HeaderContent.types';
 
 export type FlexPropsType = Pick<
   FlexboxProps,

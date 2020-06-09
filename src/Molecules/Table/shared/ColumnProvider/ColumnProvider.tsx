@@ -42,6 +42,8 @@ const columnReducer = (state: ColumnsState, action: ColumnActions): ColumnsState
       };
 
     default: {
+      // TODO: Fix typing of never on action.type
+      // @ts-ignore
       throw new Error(`Unhandled action type: ${action.type}`);
     }
   }

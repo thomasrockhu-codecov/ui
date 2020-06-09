@@ -1,10 +1,8 @@
 import React, { useEffect } from 'react';
-import styled from 'styled-components';
-import R from 'ramda';
-import { Props, SortOrder } from './Header.types';
+import { Props } from './Header.types';
+import { SortOrder } from './HeaderContent/HeaderContent.types';
 import { isElement } from '../../../common/utils';
-import { Flexbox, Icon } from '../../..';
-import { TextWrapper } from './TextWrapper';
+import { Flexbox } from '../../..';
 import { SORT_ORDER_ASCENDING, SORT_ORDER_DESCENDING, SORT_ORDER_NONE } from '../shared/constants';
 import {
   useFlexCellProps,
@@ -12,33 +10,7 @@ import {
   ACTION_SET_FLEX_PROPS,
   ACTION_SET_SORTING,
 } from '../shared/ColumnProvider';
-
-const StyledIconChevronDown = styled(Icon.ChevronDown)`
-  margin-left: ${p => p.theme.spacing.unit(1)}px;
-`;
-
-const StyledIconThinArrow = styled(Icon.ThinArrow)`
-  margin-left: ${p => p.theme.spacing.unit(1)}px;
-`;
-
-const StyledLink = styled.a<{ sortable?: Props['sortable'] }>`
-  text-decoration: none;
-  color: inherit;
-  width: 100%;
-  cursor: ${p => (p.sortable ? 'pointer' : 'default')};
-`;
-
-const SortIcon: React.FC<{ sortOrder: SortOrder }> = ({ sortOrder }) => {
-  if (sortOrder === 'descending') {
-    return <StyledIconThinArrow inline direction="up" size={2} color={t => t.color.text} />;
-  }
-
-  if (sortOrder === 'ascending') {
-    return <StyledIconThinArrow inline direction="down" size={2} color={t => t.color.text} />;
-  }
-
-  return <StyledIconChevronDown inline size={2} color={t => t.color.label} />;
-};
+import { HeaderContent } from './HeaderContent';
 
 const SORT_ORDERS: SortOrder[] = [SORT_ORDER_NONE, SORT_ORDER_ASCENDING, SORT_ORDER_DESCENDING];
 
@@ -116,20 +88,15 @@ export const Header: React.FC<Props> = props => {
       {isElement(children) ? (
         children
       ) : (
-        <StyledLink
-          href="#"
-          role="button"
-          onClick={e => {
-            e.preventDefault();
-            onSortClick();
-          }}
+        <HeaderContent
+          onSortClick={onSortClick}
           sortable={sortable}
+          sortOrder={sortOrder}
+          density={density}
+          fontSize={fontSize}
         >
-          <TextWrapper fontSize={fontSize} density={density} sorted={!R.isNil(sortOrder)}>
-            {children}
-          </TextWrapper>
-          {sortable && sortOrder && <SortIcon sortOrder={sortOrder} />}
-        </StyledLink>
+          {children}
+        </HeaderContent>
       )}
     </Flexbox>
   );
