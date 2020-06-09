@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import styled from 'styled-components';
 import Table from './Table';
 import { Button, Typography } from '../../index';
-import { SORT_ORDER_DESCENDING } from './shared/constants';
 import { SortOrder } from './Header/Header.types';
 
 export default {
@@ -172,42 +171,55 @@ export const SortableHeadersUncontrolled = () => (
 );
 
 export const SortableHeaderControlled = () => {
-  const SortableHeaderExample = () => {
-    // TODO: remove state after setting up context
-    const [sortState, setSortState] = useState<SortOrder>(SORT_ORDER_DESCENDING);
-    const onSort = (sortOrder: SortOrder) => setSortState(sortOrder);
-    return (
-      <Table>
-        <Table.RowGroup>
-          <Table.Row>
-            <Table.Header columnId="column1" sortable sortOrder={sortState} onSort={onSort}>
-              Controlled1
-            </Table.Header>
-            <Table.Header columnId="column2" sortable sortOrder={sortState} onSort={onSort}>
-              Controlled2
-            </Table.Header>
-            <Table.Header columnId="column3" sortable={false}>
-              Not sortable
-            </Table.Header>
-            <Table.Header columnId="column4" sortable>
-              Uncontrolled
-            </Table.Header>
-            <Table.Header
-              columnId="column5"
-              sortable
-              initialSortOrder={Table.CONSTANTS.SORT_ORDER_DESCENDING}
-            >
-              Uncontrolled with initial
-            </Table.Header>
-            <Table.Header columnId="column6" sortable sortOrder={sortState} onSort={onSort}>
-              Controlled3
-            </Table.Header>
-          </Table.Row>
-        </Table.RowGroup>
-      </Table>
-    );
-  };
-  return SortableHeaderExample;
+  const [column1Sort, setColumn1Sort] = useState<SortOrder>(Table.CONSTANTS.SORT_ORDER_NONE);
+  const [column2Sort, setColumn2Sort] = useState<SortOrder>(Table.CONSTANTS.SORT_ORDER_ASCENDING);
+  const [column6Sort, setColumn6Sort] = useState<SortOrder>(Table.CONSTANTS.SORT_ORDER_DESCENDING);
+
+  return (
+    <Table>
+      <Table.RowGroup>
+        <Table.Row>
+          <Table.Header
+            columnId="column1"
+            sortable
+            sortOrder={column1Sort}
+            onSort={(sortOrder: SortOrder) => setColumn1Sort(sortOrder)}
+          >
+            Controlled1
+          </Table.Header>
+          <Table.Header
+            columnId="column2"
+            sortable
+            sortOrder={column2Sort}
+            onSort={(sortOrder: SortOrder) => setColumn2Sort(sortOrder)}
+          >
+            Controlled2
+          </Table.Header>
+          <Table.Header columnId="column3" sortable={false}>
+            Not sortable
+          </Table.Header>
+          <Table.Header columnId="column4" sortable>
+            Uncontrolled
+          </Table.Header>
+          <Table.Header
+            columnId="column5"
+            sortable
+            initialSortOrder={Table.CONSTANTS.SORT_ORDER_DESCENDING}
+          >
+            Uncontrolled with initial
+          </Table.Header>
+          <Table.Header
+            columnId="column6"
+            sortable
+            sortOrder={column6Sort}
+            onSort={(sortOrder: SortOrder) => setColumn6Sort(sortOrder)}
+          >
+            Controlled3
+          </Table.Header>
+        </Table.Row>
+      </Table.RowGroup>
+    </Table>
+  );
 };
 
 // TODO: add story to how you create a custom sorting header and variations thereof
