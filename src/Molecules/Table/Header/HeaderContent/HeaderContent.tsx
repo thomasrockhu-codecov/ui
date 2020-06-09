@@ -20,7 +20,7 @@ export const HeaderContent: React.FC<Props & UIProps> = ({
   onSortClick,
   children,
 }) => {
-  if (!sortable) {
+  if (!sortable || sortOrder === null) {
     return (
       <TextWrapper fontSize={fontSize} density={density} sorted={false}>
         {children}
