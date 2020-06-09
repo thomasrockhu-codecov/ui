@@ -65,6 +65,16 @@ withComponentAsTitleStory.story = {
   name: 'With Component As Title',
 };
 
+export const withExtraPadding = () => (
+  <CardWithTitle padded title="Title for the card">
+    A CardWithTitle with extra padding
+  </CardWithTitle>
+);
+
+withExtraPadding.story = {
+  name: 'With Extra Padding',
+};
+
 export const cardWithTitleAsArticleMostCardWithTitleShouldBeArticle = () => (
   <CardWithTitle as="article" title="Konton">
     A CardWithTitle as a article containing content
