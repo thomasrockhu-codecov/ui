@@ -1,3 +1,11 @@
+# [2.48.0](https://github.com/nordnet/ui/compare/v2.47.2...v2.48.0) (2020-06-09)
+
+
+### Features
+
+* 🎸 amend ([53fc9c2](https://github.com/nordnet/ui/commit/53fc9c2))
+* 🎸 amend ([673ac0e](https://github.com/nordnet/ui/commit/673ac0e))
+
 ## [2.47.2](https://github.com/nordnet/ui/compare/v2.47.1...v2.47.2) (2020-06-09)
 
 
