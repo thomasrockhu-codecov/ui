@@ -84,7 +84,7 @@ export const Header: React.FC<Props> = props => {
 
   const onSortClick = () => {
     const newSortOrder = getNextSortOrder(sortOrder);
-    onSort(newSortOrder);
+    onSort(newSortOrder, columnId);
     if (!controlledSort) {
       setSortOrder(newSortOrder);
     }

@@ -10,7 +10,7 @@ export type TextWrapperProps = {
 };
 
 export type SortOrder = 'ascending' | 'descending' | 'none';
-export type onSort = (newSortOrder: SortOrder) => void;
+export type onSort = (newSortOrder: SortOrder, columnId: string) => void;
 
 type Unsortable = {
   sortable?: false;
