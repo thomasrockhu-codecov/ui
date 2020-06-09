@@ -1,5 +1,6 @@
 import { Props as FlexboxProps } from '../../../../Atoms/Flexbox/Flexbox.types';
-import { ACTION_SET_FLEX_PROPS } from './ColumnProvider';
+import { ACTION_SET_FLEX_PROPS, ACTION_SET_SORTING } from './ColumnProvider';
+import { SortOrder } from '../../Header/Header.types';
 
 export type FlexPropsType = Pick<
   FlexboxProps,
@@ -30,11 +31,20 @@ export type ColumnsState = {
   [columnId: string]: ColumnState;
 };
 
-export type ColumnState = { flexProps: FlexPropsType };
+export type ColumnState = {
+  flexProps: FlexPropsType;
+  sortOrder: SortOrder;
+  controlledSort: boolean;
+};
 
 export type ColumnsDispatch = (action: ColumnActions) => void;
 
-export type ColumnDispatch = (action: Omit<ColumnActions, 'columnId'>) => void;
+export type AllKeys<T> = T extends T ? keyof T : never;
+export type OmitOverAll<T, K extends AllKeys<T>> = T extends T
+  ? Pick<T, Exclude<keyof T, K>>
+  : never;
+
+export type ColumnDispatch = (action: OmitOverAll<ColumnActions, 'columnId'>) => void;
 
 type SET_FLEX_ACTION = {
   type: typeof ACTION_SET_FLEX_PROPS;
@@ -42,4 +52,11 @@ type SET_FLEX_ACTION = {
   flexProps: FlexPropsType;
 };
 
-export type ColumnActions = SET_FLEX_ACTION;
+type SET_SORTING_ACTION = {
+  type: typeof ACTION_SET_SORTING;
+  columnId: string;
+  sortOrder: SortOrder;
+  controlledSort: boolean;
+};
+
+export type ColumnActions = SET_FLEX_ACTION | SET_SORTING_ACTION;

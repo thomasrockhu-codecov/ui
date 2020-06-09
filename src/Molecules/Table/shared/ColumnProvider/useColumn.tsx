@@ -7,7 +7,7 @@ export const useColumnProvider = (): [ColumnsState, ColumnsDispatch] => {
   const dispatch = useContext(ColumnDispatchContext);
 
   if (state === undefined || dispatch === undefined) {
-    throw Error('Using useColumnProvider outside ColumnProvider');
+    throw Error('Using useColumnProvider outside of the Table element');
   }
 
   return [state, dispatch];
