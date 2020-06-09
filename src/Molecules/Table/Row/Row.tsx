@@ -1,8 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
-import Flexbox from '../../../Atoms/Flexbox';
 import { RowComponent } from './Row.types';
-import { Box } from '../../../index';
+import { Box, Flexbox } from '../../../index';
 import { ColorFn } from '../../../common/Types/sharedTypes';
 
 const StyledRow = styled('div').withConfig({
