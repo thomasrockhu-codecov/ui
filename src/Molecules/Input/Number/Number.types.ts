@@ -1,4 +1,4 @@
-import { InjectedIntlProps, InjectedIntl } from 'react-intl';
+import { IntlShape } from 'react-intl';
 
 export type Props = {
   autoFocus?: boolean;
@@ -56,7 +56,7 @@ export type Props = {
   onKeyPress?: React.KeyboardEventHandler<HTMLInputElement>;
 };
 
-export type NumberComponent = React.FunctionComponent<Props & InjectedIntlProps>;
+export type NumberComponent = React.FunctionComponent<Props>;
 
 export type adjustValueProps = {
   step: number;
@@ -64,5 +64,5 @@ export type adjustValueProps = {
   max?: number;
   shouldIncrement: boolean;
   originalValue: number;
-  intl: InjectedIntl;
+  intl: IntlShape;
 };

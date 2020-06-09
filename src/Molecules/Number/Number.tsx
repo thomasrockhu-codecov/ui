@@ -1,8 +1,8 @@
 import React from 'react';
-import { injectIntl } from 'react-intl';
+import { useIntl } from 'react-intl';
 import styled from 'styled-components';
 import * as R from 'ramda';
-import { NumberComponent as NumberComponentType, Props, Ticks } from './Number.types';
+import { NumberComponent as NumberComponentType, Ticks } from './Number.types';
 import { assert } from '../../common/utils';
 import { Typography, VisuallyHidden } from '../..';
 
@@ -82,8 +82,7 @@ const TypographyWithInheritedWeight = styled(Typography)`
   font-weight: inherit;
 `;
 
-const NumberComponent: NumberComponentType = ({
-  intl,
+export const NumberComponent: NumberComponentType = ({
   value,
   decimals,
   minimumDecimals,
@@ -94,6 +93,7 @@ const NumberComponent: NumberComponentType = ({
   currencySize,
   sign = false,
 }) => {
+  const { formatNumber } = useIntl();
   if (typeof value === 'undefined' || value === null || !Number.isFinite(value)) return <>-</>;
   if (typeof currency !== 'undefined' && currency === null) return <>-</>;
 
@@ -103,7 +103,7 @@ const NumberComponent: NumberComponentType = ({
     minimumDecimals,
     maximumDecimals,
   });
-  const formattedNumber = intl.formatNumber(
+  const formattedNumber = formatNumber(
     value,
     getNumberOptions(value, { ticks, decimals, minimumDecimals, maximumDecimals }),
   );
@@ -134,4 +134,3 @@ const NumberComponent: NumberComponentType = ({
     </>
   );
 };
-export const InjectedNumber = (injectIntl(NumberComponent) as any) as React.FC<Props>;
