@@ -1,3 +1,10 @@
+# [2.48.0-beta.1](https://github.com/nordnet/ui/compare/v2.47.2...v2.48.0-beta.1@beta) (2020-06-09)
+
+
+### Features
+
+* 🎸 bump react-intl to v4 ([4588508](https://github.com/nordnet/ui/commit/4588508))
+
 ## [2.47.2](https://github.com/nordnet/ui/compare/v2.47.1...v2.47.2) (2020-06-09)
 
 
