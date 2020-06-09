@@ -71,6 +71,7 @@ import { Trash } from './components/Trash';
 import { Utilities } from './components/Utilities';
 import { WarningTriangle } from './components/WarningTriangle';
 import { ThinArrow } from './components/ThinArrow';
+import { SortArrow } from './components/SortArrow';
 
 export default {
   AccountNumbers,
@@ -146,4 +147,5 @@ export default {
   Utilities,
   WarningTriangle,
   ThinArrow,
+  SortArrow,
 };

@@ -2963,6 +2963,51 @@ Array [
       />
     </svg>
   </div>,
+  .c0 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 20px;
+  height: 20px;
+  fill: #0046FF;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
+}
+
+.c1 {
+  -webkit-transform: rotate(undefineddeg);
+  -ms-transform: rotate(undefineddeg);
+  transform: rotate(undefineddeg);
+}
+
+<div
+    style={
+      Object {
+        "display": "inline-block",
+        "outline": "1px dashed #bbb",
+      }
+    }
+  >
+    <svg
+      aria-hidden="true"
+      className="c0 c1"
+      focusable="false"
+      preserveAspectRatio="xMidYMid meet"
+      role="presentation"
+      viewBox="0 0 8 12"
+    >
+      <path
+        d="M9 2v8.4l1.66-1.62L12 10.1 8 14l-4-3.9 1.34-1.32L7 10.4V2h2z"
+        fill="#282823"
+        fillRule="evenodd"
+        id="a"
+        transform="matrix(1 0 0 -1 -4 14)"
+      />
+    </svg>
+  </div>,
 ]
 `;
 
@@ -3074,6 +3119,12 @@ exports[`Storyshots Atoms | Icon Available icons 1`] = `
 }
 
 .c17 {
+  -webkit-transform: rotate(undefineddeg);
+  -ms-transform: rotate(undefineddeg);
+  transform: rotate(undefineddeg);
+}
+
+.c18 {
   -webkit-transform: rotate(undefineddeg);
   -ms-transform: rotate(undefineddeg);
   transform: rotate(undefineddeg);
@@ -5913,6 +5964,43 @@ exports[`Storyshots Atoms | Icon Available icons 1`] = `
       </div>
     </div>
   </div>
+  <div
+    className="c1"
+    direction="row"
+  >
+    <div
+      className="c2"
+    >
+      SortArrow
+    </div>
+    <div>
+      <div
+        style={
+          Object {
+            "display": "inline-block",
+            "outline": "1px dashed #bbb",
+          }
+        }
+      >
+        <svg
+          aria-hidden="true"
+          className="c3 c18"
+          focusable="false"
+          preserveAspectRatio="xMidYMid meet"
+          role="presentation"
+          viewBox="0 0 8 12"
+        >
+          <path
+            d="M9 2v8.4l1.66-1.62L12 10.1 8 14l-4-3.9 1.34-1.32L7 10.4V2h2z"
+            fill="#282823"
+            fillRule="evenodd"
+            id="a"
+            transform="matrix(1 0 0 -1 -4 14)"
+          />
+        </svg>
+      </div>
+    </div>
+  </div>
 </div>
 `;
 
@@ -6005,6 +6093,90 @@ exports[`Storyshots Atoms | Icon Inline 1`] = `
     />
   </svg>
    directly in the text with inline prop!
+</span>
+`;
+
+exports[`Storyshots Atoms | Icon Sort Arrow Ascending 1`] = `
+.c0 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 20px;
+  height: 20px;
+  fill: #282823;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
+}
+
+.c1 {
+  -webkit-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+
+<span>
+  <svg
+    aria-hidden="true"
+    className="c0 c1"
+    direction="ascending"
+    focusable="false"
+    preserveAspectRatio="xMidYMid meet"
+    role="presentation"
+    viewBox="0 0 8 12"
+  >
+    <path
+      d="M9 2v8.4l1.66-1.62L12 10.1 8 14l-4-3.9 1.34-1.32L7 10.4V2h2z"
+      fill="#282823"
+      fillRule="evenodd"
+      id="a"
+      transform="matrix(1 0 0 -1 -4 14)"
+    />
+  </svg>
+</span>
+`;
+
+exports[`Storyshots Atoms | Icon Sort Arrow Descending 1`] = `
+.c0 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 20px;
+  height: 20px;
+  fill: #282823;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
+}
+
+.c1 {
+  -webkit-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  transform: rotate(0deg);
+}
+
+<span>
+  <svg
+    aria-hidden="true"
+    className="c0 c1"
+    direction="descending"
+    focusable="false"
+    preserveAspectRatio="xMidYMid meet"
+    role="presentation"
+    viewBox="0 0 8 12"
+  >
+    <path
+      d="M9 2v8.4l1.66-1.62L12 10.1 8 14l-4-3.9 1.34-1.32L7 10.4V2h2z"
+      fill="#282823"
+      fillRule="evenodd"
+      id="a"
+      transform="matrix(1 0 0 -1 -4 14)"
+    />
+  </svg>
 </span>
 `;
 
