@@ -172,12 +172,15 @@ export const SortableHeadersUncontrolled = () => (
 // For useState to work in storybook, components needs to be wrapped in a new function
 export const SortableHeaderControlled = () => {
   const ReactComponent = () => {
-    const [column1Sort, setColumn1Sort] = useState<SortOrder>(Table.CONSTANTS.SORT_ORDER_NONE);
-    const [column2Sort, setColumn2Sort] = useState<SortOrder>(Table.CONSTANTS.SORT_ORDER_ASCENDING);
-    const [column6Sort, setColumn6Sort] = useState<SortOrder>(
-      Table.CONSTANTS.SORT_ORDER_DESCENDING,
-    );
+    const [columnSort, setColumnSort] = useState<{ sortOrder: SortOrder; columnId: string }>({
+      columnId: 'column1',
+      sortOrder: Table.CONSTANTS.SORT_ORDER_NONE,
+    });
 
+    const getSort = (columnId: string) =>
+      columnSort.columnId === columnId ? columnSort.sortOrder : Table.CONSTANTS.SORT_ORDER_NONE;
+    const onSort = (sortOrder: SortOrder, columnId: string) =>
+      setColumnSort({ sortOrder, columnId });
     return (
       <Table>
         <Table.RowGroup>
@@ -185,16 +188,16 @@ export const SortableHeaderControlled = () => {
             <Table.Header
               columnId="column1"
               sortable
-              sortOrder={column1Sort}
-              onSort={(sortOrder: SortOrder) => setColumn1Sort(sortOrder)}
+              sortOrder={getSort('column1')}
+              onSort={onSort}
             >
               Controlled1
             </Table.Header>
             <Table.Header
               columnId="column2"
               sortable
-              sortOrder={column2Sort}
-              onSort={(sortOrder: SortOrder) => setColumn2Sort(sortOrder)}
+              sortOrder={getSort('column2')}
+              onSort={onSort}
             >
               Controlled2
             </Table.Header>
@@ -214,8 +217,8 @@ export const SortableHeaderControlled = () => {
             <Table.Header
               columnId="column6"
               sortable
-              sortOrder={column6Sort}
-              onSort={(sortOrder: SortOrder) => setColumn6Sort(sortOrder)}
+              sortOrder={getSort('column6')}
+              onSort={onSort}
             >
               Controlled3
             </Table.Header>
@@ -224,7 +227,7 @@ export const SortableHeaderControlled = () => {
       </Table>
     );
   };
-  return ReactComponent;
+  return <ReactComponent />;
 };
 
 // TODO: add story to how you create a custom sorting header and variations thereof
