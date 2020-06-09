@@ -1,3 +1,12 @@
+## [2.47.1](https://github.com/nordnet/ui/compare/v2.47.0...v2.47.1) (2020-06-09)
+
+
+### Bug Fixes
+
+* adjust animation ([aa776be](https://github.com/nordnet/ui/commit/aa776be))
+* adjust drawer heading alignment and icon ([5e0acc1](https://github.com/nordnet/ui/commit/5e0acc1))
+* animation revert ([cd899d0](https://github.com/nordnet/ui/commit/cd899d0))
+
 # [2.47.0](https://github.com/nordnet/ui/compare/v2.46.3...v2.47.0) (2020-06-08)
 
 
