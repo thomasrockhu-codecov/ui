@@ -1,6 +1,11 @@
-import React from 'react';
+import React, { ReactNode } from 'react';
 import { Props as FlexboxProps } from '../../../Atoms/Flexbox/Flexbox.types';
-import { SortOrder, TextWrapperProps } from './HeaderContent/HeaderContent.types';
+import {
+  SortOrder,
+  TextWrapperProps,
+  SortIconProps,
+  SortButtonProps,
+} from './HeaderContent/HeaderContent.types';
 
 export type onSort = (newSortOrder: SortOrder, columnId: string) => void;
 
@@ -28,6 +33,20 @@ interface UncontrolledSort extends Sortable {
 
 type SortedProps = ControlledSort | UncontrolledSort | Unsortable;
 
-export type Props = { columnId: string } & FlexboxProps & TextWrapperProps & SortedProps;
+type RenderPropArguments = TextWrapperProps &
+  SortIconProps &
+  SortButtonProps & { onSortClick: () => void; sorted: boolean; sortable: boolean };
+type RenderFunc = (props: RenderPropArguments) => ReactNode;
+type Children = ReactNode | RenderFunc;
 
-export type HeaderComponent = React.FC<Props>;
+export type Props = { children: Children; columnId: string } & FlexboxProps &
+  TextWrapperProps &
+  SortedProps;
+
+export type HeaderComponents = {
+  TextWrapper: React.FC<TextWrapperProps>;
+  SortIcon: React.FC<SortIconProps>;
+  SortButton: React.FC<SortButtonProps>;
+};
+
+export type HeaderComponent = React.FC<Props> & HeaderComponents;

@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
 import Table from './Table';
-import { Button, Typography } from '../../index';
+import { Button, Typography, Flag } from '../..';
 import { SortOrder } from './Header/HeaderContent/HeaderContent.types';
 
 export default {
@@ -131,22 +131,38 @@ export const TableExpanded = () => {
   return <TableExpandedExample />;
 };
 
-export const TableHeader = () => (
-  <Table>
-    <Table.Row>
-      <Table.Header columnId="column1" flex="1">
-        Table header 1 flex 1
-      </Table.Header>
-      <Table.Header columnId="column2" flex="3">
-        Table header 2 flex 3
-      </Table.Header>
-      <Table.Header columnId="column3">Table header 3 no flex</Table.Header>
-      <Table.Header columnId="column4">
-        <Typography type="title2">I&apos;m a component</Typography>
-      </Table.Header>
-    </Table.Row>
-  </Table>
-);
+export const TableHeader = () => {
+  const CustomisedTableHeader: React.FC = ({ children }) => (
+    <Table.Header columnId="column3" sortable>
+      {({ sortable, sorted, fontSize, density, onSortClick, sortOrder }) => (
+        <Table.Header.SortButton onClick={onSortClick}>
+          <Flag country="SE" inline height={3} />
+          <Table.Header.TextWrapper fontSize={fontSize} density={density} sorted={sorted}>
+            {children}
+          </Table.Header.TextWrapper>
+          {sortable && <Table.Header.SortIcon sortOrder={sortOrder} />}
+        </Table.Header.SortButton>
+      )}
+    </Table.Header>
+  );
+  return (
+    <Table>
+      <Table.Row>
+        <Table.Header columnId="column1" flex="1">
+          Table header 1 flex 1
+        </Table.Header>
+        <Table.Header columnId="column2" flex="3">
+          Table header 2 flex 3
+        </Table.Header>
+        <CustomisedTableHeader>Customised header</CustomisedTableHeader>
+        <Table.Header columnId="column4">Table header 3 no flex</Table.Header>
+        <Table.Header columnId="column5">
+          <Typography type="title2">I&apos;m a component</Typography>
+        </Table.Header>
+      </Table.Row>
+    </Table>
+  );
+};
 
 export const SortableHeadersUncontrolled = () => (
   <Table>
@@ -181,6 +197,7 @@ export const SortableHeaderControlled = () => {
       columnSort.columnId === columnId ? columnSort.sortOrder : Table.CONSTANTS.SORT_ORDER_NONE;
     const onSort = (sortOrder: SortOrder, columnId: string) =>
       setColumnSort({ sortOrder, columnId });
+
     return (
       <Table>
         <Table.RowGroup>

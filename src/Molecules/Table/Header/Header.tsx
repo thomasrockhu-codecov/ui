@@ -1,7 +1,8 @@
 import React, { useEffect } from 'react';
+import * as R from 'ramda';
 import { Props } from './Header.types';
 import { SortOrder } from './HeaderContent/HeaderContent.types';
-import { isElement } from '../../../common/utils';
+import { isElement, isFunction } from '../../../common/utils';
 import { Flexbox } from '../../..';
 import { SORT_ORDER_ASCENDING, SORT_ORDER_DESCENDING, SORT_ORDER_NONE } from '../shared/constants';
 import {
@@ -10,7 +11,7 @@ import {
   ACTION_SET_FLEX_PROPS,
   ACTION_SET_SORTING,
 } from '../shared/ColumnProvider';
-import { HeaderContent } from './HeaderContent';
+import { HeaderContent, TextWrapper, SortIcon, SortButton } from './HeaderContent';
 
 const SORT_ORDERS: SortOrder[] = [SORT_ORDER_NONE, SORT_ORDER_ASCENDING, SORT_ORDER_DESCENDING];
 
@@ -26,7 +27,7 @@ const getSortOrder = (
   initialSortOrder: SortOrder,
 ) => stateSortOrder || sortOrderProp || initialSortOrder;
 
-export const Header: React.FC<Props> = props => {
+const Header: React.FC<Props> = props => {
   const {
     children,
     className,
@@ -78,6 +79,8 @@ export const Header: React.FC<Props> = props => {
     }
   }, [cellFlexProps, columnDispatch]);
 
+  const sorted = !R.isNil(sortOrder) && sortOrder !== SORT_ORDER_NONE;
+
   return (
     <Flexbox
       className={className}
@@ -85,8 +88,9 @@ export const Header: React.FC<Props> = props => {
       {...ariaSorted}
       {...cellFlexProps || columnState.flexProps}
     >
-      {isElement(children) ? (
-        children
+      {isElement(children) && children}
+      {isFunction(children) ? (
+        children({ density, fontSize, sortable, sortOrder, onSortClick, sorted, columnId })
       ) : (
         <HeaderContent
           onSortClick={onSortClick}
@@ -94,6 +98,7 @@ export const Header: React.FC<Props> = props => {
           sortOrder={sortOrder}
           density={density}
           fontSize={fontSize}
+          sorted={sorted}
         >
           {children}
         </HeaderContent>
@@ -101,3 +106,9 @@ export const Header: React.FC<Props> = props => {
     </Flexbox>
   );
 };
+
+Header.TextWrapper = TextWrapper;
+Header.SortIcon = SortIcon;
+Header.SortButton = SortButton;
+
+export default Header;

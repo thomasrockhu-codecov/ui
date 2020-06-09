@@ -1,16 +1,10 @@
 import React from 'react';
-import styled from 'styled-components';
 import * as R from 'ramda';
 import { Props, UIProps } from './HeaderContent.types';
 import { TextWrapper } from './TextWrapper';
 import { SORT_ORDER_NONE } from '../../shared/constants';
 import { SortIcon } from './SortIcon';
-
-const StyledLink = styled.a<{ sortable?: Props['sortable'] }>`
-  text-decoration: none;
-  color: inherit;
-  width: 100%;
-`;
+import { SortButton } from './SortButton';
 
 export const HeaderContent: React.FC<Props & UIProps> = ({
   sortable,
@@ -29,14 +23,7 @@ export const HeaderContent: React.FC<Props & UIProps> = ({
   }
 
   return (
-    <StyledLink
-      href="#"
-      role="button"
-      onClick={e => {
-        e.preventDefault();
-        onSortClick();
-      }}
-    >
+    <SortButton onClick={onSortClick}>
       <TextWrapper
         fontSize={fontSize}
         density={density}
@@ -45,6 +32,6 @@ export const HeaderContent: React.FC<Props & UIProps> = ({
         {children}
       </TextWrapper>
       <SortIcon sortOrder={sortOrder} />
-    </StyledLink>
+    </SortButton>
   );
 };
