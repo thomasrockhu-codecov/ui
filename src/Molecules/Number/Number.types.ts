@@ -1,4 +1,3 @@
-import { InjectedIntlProps } from 'react-intl';
 import { Types as TypographyTypes } from '../../Atoms/Typography/Typography.types';
 
 export type Ticks = { fromPrice: number; toPrice: number; tick?: number; decimals: number }[];
@@ -20,4 +19,4 @@ export type Props = {
   sign?: boolean;
 };
 
-export type NumberComponent = React.FunctionComponent<Props & InjectedIntlProps>;
+export type NumberComponent = React.FunctionComponent<Props>;

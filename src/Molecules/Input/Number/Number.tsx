@@ -1,5 +1,5 @@
 import React, { useState, useRef } from 'react';
-import { injectIntl } from 'react-intl';
+import { useIntl } from 'react-intl';
 import styled, { css } from 'styled-components';
 import * as R from 'ramda';
 import { Props, NumberComponent } from './Number.types';
@@ -149,7 +149,6 @@ const NumberInput: NumberComponent & {
     disabled,
     error,
     id,
-    intl,
     leftAddon,
     max,
     min = 0,
@@ -175,6 +174,7 @@ const NumberInput: NumberComponent & {
     visuallyEmphasiseRequired,
   } = props;
   const [internalValue, setInternalValue] = useState(getNumberAsString(defaultValue));
+  const intl = useIntl();
   const showSteppers = noSteppers !== true && isUndefined(leftAddon) && isUndefined(rightAddon);
   const placeholder = showSteppers ? undefined : placeholderRaw;
 
@@ -332,4 +332,4 @@ const NumberInput: NumberComponent & {
 NumberInput.components = components;
 export const Number: React.FC<Props> & {
   components: typeof components;
-} = injectIntl(NumberInput) as any;
+} = NumberInput as any;

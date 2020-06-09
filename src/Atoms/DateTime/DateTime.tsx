@@ -1,4 +1,4 @@
-import { injectIntl } from 'react-intl';
+import { useIntl } from 'react-intl';
 import React from 'react';
 import { DateTimeComponent } from './DateTime.types';
 import { isValidDateTimeNumber } from '../../common/utils';
@@ -18,7 +18,8 @@ const dateOptions = {
   day: 'numeric',
 };
 
-const DateTime: DateTimeComponent = ({ intl, value, onlyDate, invalidValue = '-' }) => {
+const DateTime: DateTimeComponent = ({ value, onlyDate, invalidValue = '-' }) => {
+  const intl = useIntl();
   if (isValidDateTimeNumber(value)) {
     const options = onlyDate ? dateOptions : dateTimeOptions;
 
@@ -28,5 +29,4 @@ const DateTime: DateTimeComponent = ({ intl, value, onlyDate, invalidValue = '-'
   return <>{invalidValue}</>;
 };
 
-const Injected = (injectIntl(DateTime as any) as any) as DateTimeComponent;
-export default Injected;
+export default DateTime;
