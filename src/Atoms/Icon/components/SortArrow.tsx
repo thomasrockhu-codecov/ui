@@ -13,7 +13,7 @@ const DIRECTION = {
 };
 
 const StyledIconBase = styled(IconBase)<Direction>`
-  transform: ${p => `rotate(${DIRECTION[p.direction]}deg`});
+  transform: rotate(${p => `${DIRECTION[p.direction] || DIRECTION.ascending}`}deg);
 `;
 
 export const SortArrow = (props: BaseProps & Direction) => {
