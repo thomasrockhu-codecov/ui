@@ -1,3 +1,10 @@
+## [2.47.2](https://github.com/nordnet/ui/compare/v2.47.1...v2.47.2) (2020-06-09)
+
+
+### Bug Fixes
+
+* omit barColor too ([48c8313](https://github.com/nordnet/ui/commit/48c8313))
+
 ## [2.47.1](https://github.com/nordnet/ui/compare/v2.47.0...v2.47.1) (2020-06-09)
 
 
