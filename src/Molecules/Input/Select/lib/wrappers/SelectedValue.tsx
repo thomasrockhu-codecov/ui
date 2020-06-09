@@ -6,6 +6,7 @@ import { useSelectMachineFromContext } from '../context';
 import NormalizedElements from '../../../../../common/NormalizedElements';
 
 const FullWidthFlexbox = styled(Flexbox)`
+  height: 100%;
   width: 100%;
 `;
 const CleanNormalizedButton = React.forwardRef((props: any, ref: React.Ref<any>) => (

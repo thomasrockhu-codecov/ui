@@ -1,9 +1,11 @@
 import { AccountNumbers } from './components/AccountNumbers';
 import { AddWithCircle } from './components/AddWithCircle';
+import { Apartment } from './components/Apartment';
 import { Archive } from './components/Archive';
 import { ArrowRight } from './components/ArrowRight';
 import { Attachement } from './components/Attachement';
 import { Bank } from './components/Bank';
+import { BankID } from './components/BankID';
 import { BankDeposit } from './components/BankDeposit';
 import { Bell } from './components/Bell';
 import { Bolt } from './components/Bolt';
@@ -23,6 +25,7 @@ import { ConsumerCyclic } from './components/ConsumerCyclic';
 import { ConsumerStable } from './components/ConsumerStable';
 import { Cross } from './components/Cross';
 import { CrossCircle } from './components/CrossCircle';
+import { CrossMedium } from './components/CrossMedium';
 import { CrossThin } from './components/CrossThin';
 import { DiagonalWithCircle } from './components/DiagonalWithCircle';
 import { DirectionDown } from './components/DirectionDown';
@@ -37,13 +40,16 @@ import { Financial } from './components/Financial';
 import { Flag } from './components/Flag';
 import { Globe } from './components/Globe';
 import { Hamburger } from './components/Hamburger';
+import { House } from './components/House';
 import { Healthcare } from './components/Healthcare';
+import { Increase } from './components/Increase';
 import { Import } from './components/Import';
 import { Industrial } from './components/Industrial';
 import { InfoCircle } from './components/InfoCircle';
 import { Leaf } from './components/Leaf';
 import { LineGraph } from './components/LineGraph';
 import { Maximize } from './components/Maximize';
+import { Move } from './components/Move';
 import { Minimize } from './components/Minimize';
 import { Minus } from './components/Minus';
 import { Other } from './components/Other';
@@ -74,10 +80,12 @@ import { ThinArrow } from './components/ThinArrow';
 export default {
   AccountNumbers,
   AddWithCircle,
+  Apartment,
   Archive,
   ArrowRight,
   Attachement,
   Bank,
+  BankID,
   BankDeposit,
   Bell,
   Bolt,
@@ -97,6 +105,7 @@ export default {
   ConsumerStable,
   Cross,
   CrossCircle,
+  CrossMedium,
   CrossThin,
   DiagonalWithCircle,
   DirectionDown,
@@ -112,12 +121,15 @@ export default {
   Globe,
   Hamburger,
   Healthcare,
+  House,
+  Increase,
   Import,
   Industrial,
   InfoCircle,
   Leaf,
   LineGraph,
   Maximize,
+  Move,
   Minimize,
   Minus,
   Other,

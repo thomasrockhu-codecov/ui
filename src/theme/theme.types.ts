@@ -39,14 +39,20 @@ export type RawColor = {
 
   // FUNCTIONAL COLOURS FOR PRODUCT DEVELOPMENT
   cta: '#0046FF';
+  ctaHover: '#003BD9';
+  ctaPressed: '#0030B2';
   positive: '#00D200';
   negative: '#FF1900';
+  negativeHover: '#D90E00';
+  negativePressed: '#B20300';
   index: '#FFCF00';
 
   // ACCESSIBLE FUNCTIONAL COLORS
-  a11yCta: '#0030B2';
-  a11yPositive: '#00890F';
-  a11yNegative: '#800100';
+  a11yCta: '#0046FF';
+  a11yCtaPressed: '#003BD9';
+  a11yPositive: '#008A00';
+  a11yNegative: '#AC135A';
+  a11yNegativePressed: '#78013A';
   a11yIndex: '#DFC700';
 };
 
@@ -84,8 +90,8 @@ export type ThemeColors<Version extends ThemeColorsVersion> = {
   label: RawColor['gray2'];
   /** cta */
   buy: ChangeableColor<RawColor['cta'], RawColor['a11yCta'], Version>;
-  /** 3 percent darker cta */
-  buyActive: string;
+  /** ctaPressed */
+  buyActive: ChangeableColor<RawColor['ctaPressed'], RawColor['a11yCtaPressed'], Version>;
   /** white */
   buttonText: RawColor['white'];
   /** cta */
@@ -96,8 +102,12 @@ export type ThemeColors<Version extends ThemeColorsVersion> = {
   bubbleBorder: RawColor['gray4'];
   /** negative */
   sell: ChangeableColor<RawColor['negative'], RawColor['a11yNegative'], Version>;
-  /** 3 percent darker negative */
-  sellActive: string;
+  /** negativePressed */
+  sellActive: ChangeableColor<
+    RawColor['negativePressed'],
+    RawColor['a11yNegativePressed'],
+    Version
+  >;
   /** cta */
   cta: ChangeableColor<RawColor['cta'], RawColor['a11yCta'], Version>;
   /** creditsPiePrimary */
@@ -108,6 +118,8 @@ export type ThemeColors<Version extends ThemeColorsVersion> = {
   positive: ChangeableColor<RawColor['positive'], RawColor['a11yPositive'], Version>;
   /** negative */
   negative: ChangeableColor<RawColor['negative'], RawColor['a11yNegative'], Version>;
+  /** negative or brandPink */
+  negativeBlackBackground: ChangeableColor<RawColor['negative'], RawColor['brandPink'], Version>;
   /** index */
   warning: ChangeableColor<RawColor['index'], RawColor['a11yIndex'], Version>;
   /** white */
@@ -285,6 +297,8 @@ export type ThemeColors<Version extends ThemeColorsVersion> = {
   dateAvatarText1: RawColor['gray2'];
   /** gray0 */
   dateAvatarText2: RawColor['gray0'];
+  /** index */
+  transferPendingIconColor: ChangeableColor<RawColor['index'], RawColor['a11yIndex'], Version>;
   /** cta */
   timelineColor1: ChangeableColor<RawColor['cta'], RawColor['a11yCta'], Version>;
   /** positive */
@@ -319,6 +333,14 @@ export type ThemeColors<Version extends ThemeColorsVersion> = {
   transferStatusBannerText3: RawColor['gray0'];
   /** gray0 */
   transferStatusBannerChevron: RawColor['gray0'];
+  /** white */
+  progressBarText: RawColor['white'];
+  /** positive */
+  progressBarDone: RawColor['positive'];
+  /** cta */
+  progressBarActive: RawColor['cta'];
+  /** gray4 */
+  progressBarNext: RawColor['gray4'];
 };
 
 export type ColorSets = {

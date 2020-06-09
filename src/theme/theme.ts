@@ -36,14 +36,20 @@ export const rawColor = {
 
   // FUNCTIONAL COLOURS FOR PRODUCT DEVELOPMENT
   cta: '#0046FF',
+  ctaHover: '#003BD9',
+  ctaPressed: '#0030B2',
   positive: '#00D200',
   negative: '#FF1900',
+  negativeHover: '#D90E00',
+  negativePressed: '#B20300',
   index: '#FFCF00',
 
   // ACCESSIBLE FUNCTIONAL COLORS
-  a11yCta: '#0030B2',
-  a11yPositive: '#00890F',
-  a11yNegative: '#800100',
+  a11yCta: '#0046FF',
+  a11yCtaPressed: '#003BD9',
+  a11yPositive: '#008A00',
+  a11yNegative: '#AC135A',
+  a11yNegativePressed: '#78013A',
   a11yIndex: '#DFC700',
 } as RawColor;
 
@@ -106,13 +112,7 @@ const createColors = (type: ThemeColorsVersion): ThemeColors<typeof type> => {
     buttonSecondaryBackground: rawColor.white,
     buttonText: rawColor.white,
     buy: a11yColors ? rawColor.a11yCta : rawColor.cta,
-    buyActive: a11yColors
-      ? Color(rawColor.a11yCta)
-          .darken(0.3)
-          .string()
-      : Color(rawColor.cta)
-          .darken(0.3)
-          .string(),
+    buyActive: a11yColors ? rawColor.a11yCtaPressed : rawColor.ctaPressed,
     borderActive: a11yColors ? rawColor.a11yCta : rawColor.cta,
     card: rawColor.white,
     cta: a11yColors ? rawColor.a11yCta : rawColor.cta,
@@ -141,15 +141,10 @@ const createColors = (type: ThemeColorsVersion): ThemeColors<typeof type> => {
       .string(),
     module: rawColor.white,
     negative: a11yColors ? rawColor.a11yNegative : rawColor.negative,
+    negativeBlackBackground: a11yColors ? rawColor.brandPink : rawColor.negative,
     positive: a11yColors ? rawColor.a11yPositive : rawColor.positive,
     sell: a11yColors ? rawColor.a11yNegative : rawColor.negative,
-    sellActive: a11yColors
-      ? Color(rawColor.a11yNegative)
-          .darken(0.3)
-          .string()
-      : Color(rawColor.negative)
-          .darken(0.3)
-          .string(),
+    sellActive: a11yColors ? rawColor.a11yNegativePressed : rawColor.negativePressed,
     shadowCard: Color(rawColor.black)
       .alpha(0.03)
       .rgb()
@@ -236,6 +231,7 @@ const createColors = (type: ThemeColorsVersion): ThemeColors<typeof type> => {
     dateAvatarBackground2: rawColor.gray7,
     dateAvatarText1: rawColor.gray2,
     dateAvatarText2: rawColor.gray0,
+    transferPendingIconColor: a11yColors ? rawColor.a11yIndex : rawColor.index,
     timelineColor1: a11yColors ? rawColor.a11yCta : rawColor.cta,
     timelineColor2: a11yColors ? rawColor.a11yPositive : rawColor.positive,
     timelineColor3: a11yColors ? rawColor.a11yIndex : rawColor.index,
@@ -262,6 +258,10 @@ const createColors = (type: ThemeColorsVersion): ThemeColors<typeof type> => {
     transferStatusBannerText2: rawColor.complementaryPink1,
     transferStatusBannerText3: rawColor.gray0,
     transferStatusBannerChevron: rawColor.gray0,
+    progressBarText: rawColor.white,
+    progressBarDone: rawColor.positive,
+    progressBarActive: rawColor.cta,
+    progressBarNext: rawColor.gray4,
   };
 };
 
