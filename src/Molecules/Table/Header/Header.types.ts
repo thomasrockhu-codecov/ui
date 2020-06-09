@@ -2,9 +2,12 @@ import React, { ReactNode } from 'react';
 import { Props as FlexboxProps } from '../../../Atoms/Flexbox/Flexbox.types';
 import {
   SortOrder,
-  TextWrapperProps,
-  SortIconProps,
   SortButtonProps,
+  TextWrapperComponent,
+  TextWrapperProps,
+  SortIconComponent,
+  SortButtonComponent,
+  SortIconProps,
 } from './HeaderContent/HeaderContent.types';
 
 export type onSort = (newSortOrder: SortOrder, columnId: string) => void;
@@ -39,14 +42,14 @@ type RenderPropArguments = TextWrapperProps &
 type RenderFunc = (props: RenderPropArguments) => ReactNode;
 type Children = ReactNode | RenderFunc;
 
-export type Props = { children: Children; columnId: string } & FlexboxProps &
+type Props = { children: Children; columnId: string } & FlexboxProps &
   TextWrapperProps &
   SortedProps;
 
 export type HeaderComponents = {
-  TextWrapper: React.FC<TextWrapperProps>;
-  SortIcon: React.FC<SortIconProps>;
-  SortButton: React.FC<SortButtonProps>;
+  TextWrapper: TextWrapperComponent;
+  SortIcon: SortIconComponent;
+  SortButton: SortButtonComponent;
 };
 
 export type HeaderComponent = React.FC<Props> & HeaderComponents;

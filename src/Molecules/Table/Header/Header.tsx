@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import * as R from 'ramda';
-import { Props } from './Header.types';
+import { HeaderComponent } from './Header.types';
 import { SortOrder } from './HeaderContent/HeaderContent.types';
 import { isElement, isFunction } from '../../../common/utils';
 import { Flexbox } from '../../..';
@@ -27,7 +27,7 @@ const getSortOrder = (
   initialSortOrder: SortOrder,
 ) => stateSortOrder || sortOrderProp || initialSortOrder;
 
-const Header: React.FC<Props> = props => {
+const Header: HeaderComponent = props => {
   const {
     children,
     className,
