@@ -102,11 +102,10 @@ export const TablesWithDifferentDensities = () => (
 export const TableWithDifferentRows = () => (
   <Table>
     <Table.RowGroup>
+      <Table.Row separatorColor={t => t.color.text}>Separator color set</Table.Row>
       <Table.Row>Default</Table.Row>
-      <Table.Row hideBorder>Border bottom hidden</Table.Row>
-      <Table.Row>Large</Table.Row>
-      <Table.Row>Medium</Table.Row>
-      <Table.Row>Small</Table.Row>
+      <Table.Row hideSeparator>Separator hidden</Table.Row>
+      <Table.Row>Default</Table.Row>
     </Table.RowGroup>
   </Table>
 );

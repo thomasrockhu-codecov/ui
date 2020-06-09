@@ -646,7 +646,7 @@ exports[`Storyshots Molecules | Table Table With Different Rows 1`] = `
 }
 
 .c1 {
-  border-bottom: 1px solid #EBEBE8;
+  border-bottom: 1px solid #282823;
   padding-right: 8px;
   padding-left: 6px;
   border-left: 2px solid transparent;
@@ -657,12 +657,23 @@ exports[`Storyshots Molecules | Table Table With Different Rows 1`] = `
 }
 
 .c3 {
+  border-bottom: 1px solid #EBEBE8;
   padding-right: 8px;
   padding-left: 6px;
   border-left: 2px solid transparent;
 }
 
 .c3:hover {
+  background: #F5F5F5;
+}
+
+.c4 {
+  padding-right: 8px;
+  padding-left: 6px;
+  border-left: 2px solid transparent;
+}
+
+.c4:hover {
   background: #F5F5F5;
 }
 
@@ -680,7 +691,7 @@ exports[`Storyshots Molecules | Table Table With Different Rows 1`] = `
       <div
         className="c2"
       >
-        Default
+        Separator color set
       </div>
     </div>
     <div
@@ -690,37 +701,27 @@ exports[`Storyshots Molecules | Table Table With Different Rows 1`] = `
       <div
         className="c2"
       >
-        Border bottom hidden
+        Default
       </div>
     </div>
     <div
-      className="c1"
+      className="c4"
       role="row"
     >
       <div
         className="c2"
       >
-        Large
+        Separator hidden
       </div>
     </div>
     <div
-      className="c1"
+      className="c3"
       role="row"
     >
       <div
         className="c2"
       >
-        Medium
-      </div>
-    </div>
-    <div
-      className="c1"
-      role="row"
-    >
-      <div
-        className="c2"
-      >
-        Small
+        Default
       </div>
     </div>
   </div>

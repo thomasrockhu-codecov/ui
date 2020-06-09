@@ -44,6 +44,18 @@ export const thinArrowLeft = () => (
   </span>
 );
 
+export const sortArrowAscending = () => (
+  <span>
+    <Icon.SortArrow direction={select('Direction', ['ascending', 'descending'], 'ascending')} />
+  </span>
+);
+
+export const sortArrowDescending = () => (
+  <span>
+    <Icon.SortArrow direction={select('Direction', ['ascending', 'descending'], 'descending')} />
+  </span>
+);
+
 inlineStory.story = {
   name: 'Inline',
 };
