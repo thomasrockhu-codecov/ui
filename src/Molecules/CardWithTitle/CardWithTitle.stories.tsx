@@ -65,14 +65,14 @@ withComponentAsTitleStory.story = {
   name: 'With Component As Title',
 };
 
-export const withExtraPadding = () => (
+export const withVariantBig = () => (
   <CardWithTitle variant="big" title="Title for the card">
     A CardWithTitle with extra padding
   </CardWithTitle>
 );
 
-withExtraPadding.story = {
-  name: 'With Extra Padding',
+withVariantBig.story = {
+  name: 'With variant big',
 };
 
 export const cardWithTitleAsArticleMostCardWithTitleShouldBeArticle = () => (

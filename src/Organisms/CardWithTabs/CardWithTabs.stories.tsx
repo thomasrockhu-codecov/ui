@@ -62,7 +62,7 @@ export const withVariantBig = () => (
 );
 
 withVariantBig.story = {
-  name: 'with Variant Big',
+  name: 'With variant big',
 };
 
 export const controlledBehaviour = () => {
