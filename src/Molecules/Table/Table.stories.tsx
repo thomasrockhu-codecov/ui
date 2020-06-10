@@ -88,6 +88,7 @@ const bigTableData = [...Array(bigTableRows)].map((_, rowIndex) => {
   }, {});
 });
 
+// @ts-ignore
 const BigTableRow = ({ data }) => {
   return (
     <Table.Row>
