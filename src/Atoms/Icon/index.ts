@@ -30,7 +30,7 @@ import { CrossThin } from './components/CrossThin';
 import { DiagonalWithCircle } from './components/DiagonalWithCircle';
 import { DirectionDown } from './components/DirectionDown';
 import { DirectionUp } from './components/DirectionUp';
-import { DoItYourself } from './components/DoItYourself';
+import { ConfigurationSliders } from './components/ConfigurationSliders';
 import { Energy } from './components/Energy';
 import { ExternalLink } from './components/ExternalLink';
 import { EyeWithPlus } from './components/EyeWithPlus';
@@ -116,7 +116,7 @@ export default {
   DiagonalWithCircle,
   DirectionDown,
   DirectionUp,
-  DoItYourself,
+  ConfigurationSliders,
   Energy,
   ExternalLink,
   EyeWithPlus,
