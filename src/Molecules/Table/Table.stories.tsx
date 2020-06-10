@@ -13,13 +13,11 @@ export default {
 
 export const DefaultTable = () => (
   <Table>
-    <Table.RowGroup>
-      <Table.Row>
-        <Table.Header columnId="column1">Header 1</Table.Header>
-        <Table.Header columnId="column2">Header 2</Table.Header>
-        <Table.Header columnId="column3">Header 3</Table.Header>
-      </Table.Row>
-    </Table.RowGroup>
+    <Table.Row>
+      <Table.Header columnId="column1">Header 1</Table.Header>
+      <Table.Header columnId="column2">Header 2</Table.Header>
+      <Table.Header columnId="column3">Header 3</Table.Header>
+    </Table.Row>
   </Table>
 );
 
@@ -37,76 +35,66 @@ export const TablesWithDifferentDensities = () => (
     <Typography type="title3">Default (Medium)</Typography>
 
     <StyledTable>
-      <Table.RowGroup>
-        <Table.Row>
-          <Table.Header columnId="column1">Header 1</Table.Header>
-          <Table.Header columnId="column2">Header 2</Table.Header>
-          <Table.Header columnId="column3">Header 3</Table.Header>
-        </Table.Row>
-      </Table.RowGroup>
+      <Table.Row>
+        <Table.Header columnId="column1">Header 1</Table.Header>
+        <Table.Header columnId="column2">Header 2</Table.Header>
+        <Table.Header columnId="column3">Header 3</Table.Header>
+      </Table.Row>
     </StyledTable>
 
     <Typography type="title3">Small</Typography>
     <StyledTable>
-      <Table.RowGroup>
-        <Table.Row>
-          <Table.Header columnId="column1" density="s">
-            Header 1
-          </Table.Header>
-          <Table.Header columnId="column2" density="s">
-            Header 2
-          </Table.Header>
-          <Table.Header columnId="column3" density="s">
-            Header 3
-          </Table.Header>
-        </Table.Row>
-      </Table.RowGroup>
+      <Table.Row>
+        <Table.Header columnId="column1" density="s">
+          Header 1
+        </Table.Header>
+        <Table.Header columnId="column2" density="s">
+          Header 2
+        </Table.Header>
+        <Table.Header columnId="column3" density="s">
+          Header 3
+        </Table.Header>
+      </Table.Row>
     </StyledTable>
 
     <Typography type="title3">Medium</Typography>
     <StyledTable>
-      <Table.RowGroup>
-        <Table.Row>
-          <Table.Header columnId="column1" density="m">
-            Header 1
-          </Table.Header>
-          <Table.Header columnId="column2" density="m">
-            Header 2
-          </Table.Header>
-          <Table.Header columnId="column3" density="m">
-            Header 3
-          </Table.Header>
-        </Table.Row>
-      </Table.RowGroup>
+      <Table.Row>
+        <Table.Header columnId="column1" density="m">
+          Header 1
+        </Table.Header>
+        <Table.Header columnId="column2" density="m">
+          Header 2
+        </Table.Header>
+        <Table.Header columnId="column3" density="m">
+          Header 3
+        </Table.Header>
+      </Table.Row>
     </StyledTable>
 
     <Typography type="title3">Large</Typography>
     <StyledTable>
-      <Table.RowGroup>
-        <Table.Row>
-          <Table.Header columnId="column1" density="l">
-            Header 1
-          </Table.Header>
-          <Table.Header columnId="column2" density="l">
-            Header 2
-          </Table.Header>
-          <Table.Header columnId="column3" density="l">
-            Header 3
-          </Table.Header>
-        </Table.Row>
-      </Table.RowGroup>
+      <Table.Row>
+        <Table.Header columnId="column1" density="l">
+          Header 1
+        </Table.Header>
+        <Table.Header columnId="column2" density="l">
+          Header 2
+        </Table.Header>
+        <Table.Header columnId="column3" density="l">
+          Header 3
+        </Table.Header>
+      </Table.Row>
     </StyledTable>
   </StyledDiv>
 );
 
 export const TableWithDifferentRows = () => (
   <Table>
-    <Table.RowGroup>
-      <Table.Row separatorColor={t => t.color.text}>Separator color set</Table.Row>
-      <Table.Row>Default</Table.Row>
-      <Table.Row hideSeparator>Separator hidden</Table.Row>
-      <Table.Row>Default</Table.Row>
-    </Table.RowGroup>
+    <Table.Row separatorColor={t => t.color.text}>Separator color set</Table.Row>
+    <Table.Row>Default</Table.Row>
+    <Table.Row hideSeparator>Separator hidden</Table.Row>
+    <Table.Row>Default</Table.Row>
   </Table>
 );
 
@@ -115,16 +103,14 @@ export const TableExpanded = () => {
     const [expanded, setExpanded] = useState(false);
     return (
       <Table>
-        <Table.RowGroup>
-          <Table.Row>Default</Table.Row>
-          <Table.Row expanded={expanded} expandableContent={<div>I am expanded</div>}>
-            <Button variant="secondary" size="s" onClick={() => setExpanded(!expanded)}>
-              {expanded ? 'Collapse' : 'Expand'}
-            </Button>
-          </Table.Row>
-          <Table.Row>Default</Table.Row>
-          <Table.Row>Default</Table.Row>
-        </Table.RowGroup>
+        <Table.Row>Default</Table.Row>
+        <Table.Row expanded={expanded} expandableContent={<div>I am expanded</div>}>
+          <Button variant="secondary" size="s" onClick={() => setExpanded(!expanded)}>
+            {expanded ? 'Collapse' : 'Expand'}
+          </Button>
+        </Table.Row>
+        <Table.Row>Default</Table.Row>
+        <Table.Row>Default</Table.Row>
       </Table>
     );
   };
@@ -166,22 +152,20 @@ export const TableHeader = () => {
 
 export const SortableHeadersUncontrolled = () => (
   <Table>
-    <Table.RowGroup>
-      <Table.Row>
-        <Table.Header columnId="column1" sortable>
-          Ticker
-        </Table.Header>
-        <Table.Header columnId="column2" sortable>
-          Instrument name
-        </Table.Header>
-        <Table.Header columnId="column3" sortable={false}>
-          Country
-        </Table.Header>
-        <Table.Header columnId="column4" sortable>
-          Yield
-        </Table.Header>
-      </Table.Row>
-    </Table.RowGroup>
+    <Table.Row>
+      <Table.Header columnId="column1" sortable>
+        Ticker
+      </Table.Header>
+      <Table.Header columnId="column2" sortable>
+        Instrument name
+      </Table.Header>
+      <Table.Header columnId="column3" sortable={false}>
+        Country
+      </Table.Header>
+      <Table.Header columnId="column4" sortable>
+        Yield
+      </Table.Header>
+    </Table.Row>
   </Table>
 );
 
@@ -200,47 +184,30 @@ export const SortableHeaderControlled = () => {
 
     return (
       <Table>
-        <Table.RowGroup>
-          <Table.Row>
-            <Table.Header
-              columnId="column1"
-              sortable
-              sortOrder={getSort('column1')}
-              onSort={onSort}
-            >
-              Controlled1
-            </Table.Header>
-            <Table.Header
-              columnId="column2"
-              sortable
-              sortOrder={getSort('column2')}
-              onSort={onSort}
-            >
-              Controlled2
-            </Table.Header>
-            <Table.Header columnId="column3" sortable={false}>
-              Not sortable
-            </Table.Header>
-            <Table.Header columnId="column4" sortable>
-              Uncontrolled
-            </Table.Header>
-            <Table.Header
-              columnId="column5"
-              sortable
-              initialSortOrder={Table.CONSTANTS.SORT_ORDER_DESCENDING}
-            >
-              Uncontrolled with initial
-            </Table.Header>
-            <Table.Header
-              columnId="column6"
-              sortable
-              sortOrder={getSort('column6')}
-              onSort={onSort}
-            >
-              Controlled3
-            </Table.Header>
-          </Table.Row>
-        </Table.RowGroup>
+        <Table.Row>
+          <Table.Header columnId="column1" sortable sortOrder={getSort('column1')} onSort={onSort}>
+            Controlled1
+          </Table.Header>
+          <Table.Header columnId="column2" sortable sortOrder={getSort('column2')} onSort={onSort}>
+            Controlled2
+          </Table.Header>
+          <Table.Header columnId="column3" sortable={false}>
+            Not sortable
+          </Table.Header>
+          <Table.Header columnId="column4" sortable>
+            Uncontrolled
+          </Table.Header>
+          <Table.Header
+            columnId="column5"
+            sortable
+            initialSortOrder={Table.CONSTANTS.SORT_ORDER_DESCENDING}
+          >
+            Uncontrolled with initial
+          </Table.Header>
+          <Table.Header columnId="column6" sortable sortOrder={getSort('column6')} onSort={onSort}>
+            Controlled3
+          </Table.Header>
+        </Table.Row>
       </Table>
     );
   };

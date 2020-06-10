@@ -1,11 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Storyshots Molecules | Table Default Table 1`] = `
-.c0 {
-  box-sizing: border-box;
-}
-
-.c2 {
+.c1 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -17,7 +13,7 @@ exports[`Storyshots Molecules | Table Default Table 1`] = `
   align-items: center;
 }
 
-.c3 {
+.c2 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -31,7 +27,7 @@ exports[`Storyshots Molecules | Table Default Table 1`] = `
   flex: 1;
 }
 
-.c4 {
+.c3 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #6E6E69;
   margin: 0;
@@ -40,18 +36,18 @@ exports[`Storyshots Molecules | Table Default Table 1`] = `
   line-height: 1.3333333333333333;
 }
 
-.c1 {
+.c0 {
   border-bottom: 1px solid #EBEBE8;
   padding-right: 8px;
   padding-left: 6px;
   border-left: 2px solid transparent;
 }
 
-.c1:hover {
+.c0:hover {
   background: #F5F5F5;
 }
 
-.c5 {
+.c4 {
   padding-top: 4px;
   padding-bottom: 4px;
   display: inline-block;
@@ -62,45 +58,40 @@ exports[`Storyshots Molecules | Table Default Table 1`] = `
 >
   <div
     className="c0"
-    role="rowgroup"
+    role="row"
   >
     <div
       className="c1"
-      role="row"
     >
       <div
         className="c2"
+        role="columnheader"
       >
-        <div
-          className="c3"
-          role="columnheader"
+        <span
+          className="c3 c4"
         >
-          <span
-            className="c4 c5"
-          >
-            Header 1
-          </span>
-        </div>
-        <div
-          className="c3"
-          role="columnheader"
+          Header 1
+        </span>
+      </div>
+      <div
+        className="c2"
+        role="columnheader"
+      >
+        <span
+          className="c3 c4"
         >
-          <span
-            className="c4 c5"
-          >
-            Header 2
-          </span>
-        </div>
-        <div
-          className="c3"
-          role="columnheader"
+          Header 2
+        </span>
+      </div>
+      <div
+        className="c2"
+        role="columnheader"
+      >
+        <span
+          className="c3 c4"
         >
-          <span
-            className="c4 c5"
-          >
-            Header 3
-          </span>
-        </div>
+          Header 3
+        </span>
       </div>
     </div>
   </div>
@@ -108,11 +99,7 @@ exports[`Storyshots Molecules | Table Default Table 1`] = `
 `;
 
 exports[`Storyshots Molecules | Table Sortable Header Controlled 1`] = `
-.c0 {
-  box-sizing: border-box;
-}
-
-.c2 {
+.c1 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -124,7 +111,7 @@ exports[`Storyshots Molecules | Table Sortable Header Controlled 1`] = `
   align-items: center;
 }
 
-.c3 {
+.c2 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -138,7 +125,7 @@ exports[`Storyshots Molecules | Table Sortable Header Controlled 1`] = `
   flex: 1;
 }
 
-.c7 {
+.c6 {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -153,7 +140,7 @@ exports[`Storyshots Molecules | Table Sortable Header Controlled 1`] = `
   vertical-align: middle;
 }
 
-.c10 {
+.c9 {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -168,13 +155,13 @@ exports[`Storyshots Molecules | Table Sortable Header Controlled 1`] = `
   vertical-align: middle;
 }
 
-.c11 {
+.c10 {
   -webkit-transform: rotate(180deg);
   -ms-transform: rotate(180deg);
   transform: rotate(180deg);
 }
 
-.c5 {
+.c4 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #6E6E69;
   margin: 0;
@@ -183,7 +170,7 @@ exports[`Storyshots Molecules | Table Sortable Header Controlled 1`] = `
   line-height: 1.3333333333333333;
 }
 
-.c9 {
+.c8 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
   margin: 0;
@@ -192,32 +179,32 @@ exports[`Storyshots Molecules | Table Sortable Header Controlled 1`] = `
   line-height: 1.3333333333333333;
 }
 
-.c1 {
+.c0 {
   border-bottom: 1px solid #EBEBE8;
   padding-right: 8px;
   padding-left: 6px;
   border-left: 2px solid transparent;
 }
 
-.c1:hover {
+.c0:hover {
   background: #F5F5F5;
 }
 
-.c6 {
+.c5 {
   padding-top: 4px;
   padding-bottom: 4px;
   display: inline-block;
 }
 
-.c8 {
+.c7 {
   margin-left: 4px;
 }
 
-.c12 {
+.c11 {
   margin-left: 4px;
 }
 
-.c4 {
+.c3 {
   -webkit-text-decoration: none;
   text-decoration: none;
   color: inherit;
@@ -229,178 +216,173 @@ exports[`Storyshots Molecules | Table Sortable Header Controlled 1`] = `
 >
   <div
     className="c0"
-    role="rowgroup"
+    role="row"
   >
     <div
       className="c1"
-      role="row"
     >
       <div
+        aria-sort="none"
         className="c2"
+        role="columnheader"
       >
-        <div
-          aria-sort="none"
+        <a
           className="c3"
-          role="columnheader"
-        >
-          <a
-            className="c4"
-            href="#"
-            onClick={[Function]}
-            role="button"
-          >
-            <span
-              className="c5 c6"
-            >
-              Controlled1
-            </span>
-            <svg
-              aria-hidden="true"
-              className="c7 c8"
-              focusable="false"
-              preserveAspectRatio="xMidYMid meet"
-              role="presentation"
-              viewBox="0 0 24 24"
-            >
-              <polygon
-                points="19.969 4 24 8.027 12 20 0 8.027 4.031 4 12 11.952"
-              />
-            </svg>
-          </a>
-        </div>
-        <div
-          aria-sort="none"
-          className="c3"
-          role="columnheader"
-        >
-          <a
-            className="c4"
-            href="#"
-            onClick={[Function]}
-            role="button"
-          >
-            <span
-              className="c5 c6"
-            >
-              Controlled2
-            </span>
-            <svg
-              aria-hidden="true"
-              className="c7 c8"
-              focusable="false"
-              preserveAspectRatio="xMidYMid meet"
-              role="presentation"
-              viewBox="0 0 24 24"
-            >
-              <polygon
-                points="19.969 4 24 8.027 12 20 0 8.027 4.031 4 12 11.952"
-              />
-            </svg>
-          </a>
-        </div>
-        <div
-          className="c3"
-          role="columnheader"
+          href="#"
+          onClick={[Function]}
+          role="button"
         >
           <span
-            className="c5 c6"
+            className="c4 c5"
           >
-            Not sortable
+            Controlled1
           </span>
-        </div>
-        <div
-          aria-sort="none"
-          className="c3"
-          role="columnheader"
-        >
-          <a
-            className="c4"
-            href="#"
-            onClick={[Function]}
-            role="button"
+          <svg
+            aria-hidden="true"
+            className="c6 c7"
+            focusable="false"
+            preserveAspectRatio="xMidYMid meet"
+            role="presentation"
+            viewBox="0 0 24 24"
           >
-            <span
-              className="c5 c6"
-            >
-              Uncontrolled
-            </span>
-            <svg
-              aria-hidden="true"
-              className="c7 c8"
-              focusable="false"
-              preserveAspectRatio="xMidYMid meet"
-              role="presentation"
-              viewBox="0 0 24 24"
-            >
-              <polygon
-                points="19.969 4 24 8.027 12 20 0 8.027 4.031 4 12 11.952"
-              />
-            </svg>
-          </a>
-        </div>
-        <div
-          aria-sort="descending"
+            <polygon
+              points="19.969 4 24 8.027 12 20 0 8.027 4.031 4 12 11.952"
+            />
+          </svg>
+        </a>
+      </div>
+      <div
+        aria-sort="none"
+        className="c2"
+        role="columnheader"
+      >
+        <a
           className="c3"
-          role="columnheader"
+          href="#"
+          onClick={[Function]}
+          role="button"
         >
-          <a
-            className="c4"
-            href="#"
-            onClick={[Function]}
-            role="button"
+          <span
+            className="c4 c5"
           >
-            <span
-              className="c9 c6"
-            >
-              Uncontrolled with initial
-            </span>
-            <svg
-              aria-hidden="true"
-              className="c10 c11 c12"
-              direction="descending"
-              focusable="false"
-              preserveAspectRatio="xMidYMid meet"
-              role="presentation"
-              viewBox="0 0 8 12"
-            >
-              <path
-                d="M9 2v8.4l1.66-1.62L12 10.1 8 14l-4-3.9 1.34-1.32L7 10.4V2h2z"
-                fillRule="evenodd"
-                transform="matrix(1 0 0 -1 -4 14)"
-              />
-            </svg>
-          </a>
-        </div>
-        <div
-          aria-sort="none"
+            Controlled2
+          </span>
+          <svg
+            aria-hidden="true"
+            className="c6 c7"
+            focusable="false"
+            preserveAspectRatio="xMidYMid meet"
+            role="presentation"
+            viewBox="0 0 24 24"
+          >
+            <polygon
+              points="19.969 4 24 8.027 12 20 0 8.027 4.031 4 12 11.952"
+            />
+          </svg>
+        </a>
+      </div>
+      <div
+        className="c2"
+        role="columnheader"
+      >
+        <span
+          className="c4 c5"
+        >
+          Not sortable
+        </span>
+      </div>
+      <div
+        aria-sort="none"
+        className="c2"
+        role="columnheader"
+      >
+        <a
           className="c3"
-          role="columnheader"
+          href="#"
+          onClick={[Function]}
+          role="button"
         >
-          <a
-            className="c4"
-            href="#"
-            onClick={[Function]}
-            role="button"
+          <span
+            className="c4 c5"
           >
-            <span
-              className="c5 c6"
-            >
-              Controlled3
-            </span>
-            <svg
-              aria-hidden="true"
-              className="c7 c8"
-              focusable="false"
-              preserveAspectRatio="xMidYMid meet"
-              role="presentation"
-              viewBox="0 0 24 24"
-            >
-              <polygon
-                points="19.969 4 24 8.027 12 20 0 8.027 4.031 4 12 11.952"
-              />
-            </svg>
-          </a>
-        </div>
+            Uncontrolled
+          </span>
+          <svg
+            aria-hidden="true"
+            className="c6 c7"
+            focusable="false"
+            preserveAspectRatio="xMidYMid meet"
+            role="presentation"
+            viewBox="0 0 24 24"
+          >
+            <polygon
+              points="19.969 4 24 8.027 12 20 0 8.027 4.031 4 12 11.952"
+            />
+          </svg>
+        </a>
+      </div>
+      <div
+        aria-sort="descending"
+        className="c2"
+        role="columnheader"
+      >
+        <a
+          className="c3"
+          href="#"
+          onClick={[Function]}
+          role="button"
+        >
+          <span
+            className="c8 c5"
+          >
+            Uncontrolled with initial
+          </span>
+          <svg
+            aria-hidden="true"
+            className="c9 c10 c11"
+            direction="descending"
+            focusable="false"
+            preserveAspectRatio="xMidYMid meet"
+            role="presentation"
+            viewBox="0 0 8 12"
+          >
+            <path
+              d="M9 2v8.4l1.66-1.62L12 10.1 8 14l-4-3.9 1.34-1.32L7 10.4V2h2z"
+              fillRule="evenodd"
+              transform="matrix(1 0 0 -1 -4 14)"
+            />
+          </svg>
+        </a>
+      </div>
+      <div
+        aria-sort="none"
+        className="c2"
+        role="columnheader"
+      >
+        <a
+          className="c3"
+          href="#"
+          onClick={[Function]}
+          role="button"
+        >
+          <span
+            className="c4 c5"
+          >
+            Controlled3
+          </span>
+          <svg
+            aria-hidden="true"
+            className="c6 c7"
+            focusable="false"
+            preserveAspectRatio="xMidYMid meet"
+            role="presentation"
+            viewBox="0 0 24 24"
+          >
+            <polygon
+              points="19.969 4 24 8.027 12 20 0 8.027 4.031 4 12 11.952"
+            />
+          </svg>
+        </a>
       </div>
     </div>
   </div>
@@ -408,11 +390,7 @@ exports[`Storyshots Molecules | Table Sortable Header Controlled 1`] = `
 `;
 
 exports[`Storyshots Molecules | Table Sortable Headers Uncontrolled 1`] = `
-.c0 {
-  box-sizing: border-box;
-}
-
-.c2 {
+.c1 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -424,7 +402,7 @@ exports[`Storyshots Molecules | Table Sortable Headers Uncontrolled 1`] = `
   align-items: center;
 }
 
-.c3 {
+.c2 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -438,7 +416,7 @@ exports[`Storyshots Molecules | Table Sortable Headers Uncontrolled 1`] = `
   flex: 1;
 }
 
-.c7 {
+.c6 {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -453,7 +431,7 @@ exports[`Storyshots Molecules | Table Sortable Headers Uncontrolled 1`] = `
   vertical-align: middle;
 }
 
-.c5 {
+.c4 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #6E6E69;
   margin: 0;
@@ -462,28 +440,28 @@ exports[`Storyshots Molecules | Table Sortable Headers Uncontrolled 1`] = `
   line-height: 1.3333333333333333;
 }
 
-.c1 {
+.c0 {
   border-bottom: 1px solid #EBEBE8;
   padding-right: 8px;
   padding-left: 6px;
   border-left: 2px solid transparent;
 }
 
-.c1:hover {
+.c0:hover {
   background: #F5F5F5;
 }
 
-.c6 {
+.c5 {
   padding-top: 4px;
   padding-bottom: 4px;
   display: inline-block;
 }
 
-.c8 {
+.c7 {
   margin-left: 4px;
 }
 
-.c4 {
+.c3 {
   -webkit-text-decoration: none;
   text-decoration: none;
   color: inherit;
@@ -495,115 +473,110 @@ exports[`Storyshots Molecules | Table Sortable Headers Uncontrolled 1`] = `
 >
   <div
     className="c0"
-    role="rowgroup"
+    role="row"
   >
     <div
       className="c1"
-      role="row"
     >
       <div
+        aria-sort="none"
         className="c2"
+        role="columnheader"
       >
-        <div
-          aria-sort="none"
+        <a
           className="c3"
-          role="columnheader"
-        >
-          <a
-            className="c4"
-            href="#"
-            onClick={[Function]}
-            role="button"
-          >
-            <span
-              className="c5 c6"
-            >
-              Ticker
-            </span>
-            <svg
-              aria-hidden="true"
-              className="c7 c8"
-              focusable="false"
-              preserveAspectRatio="xMidYMid meet"
-              role="presentation"
-              viewBox="0 0 24 24"
-            >
-              <polygon
-                points="19.969 4 24 8.027 12 20 0 8.027 4.031 4 12 11.952"
-              />
-            </svg>
-          </a>
-        </div>
-        <div
-          aria-sort="none"
-          className="c3"
-          role="columnheader"
-        >
-          <a
-            className="c4"
-            href="#"
-            onClick={[Function]}
-            role="button"
-          >
-            <span
-              className="c5 c6"
-            >
-              Instrument name
-            </span>
-            <svg
-              aria-hidden="true"
-              className="c7 c8"
-              focusable="false"
-              preserveAspectRatio="xMidYMid meet"
-              role="presentation"
-              viewBox="0 0 24 24"
-            >
-              <polygon
-                points="19.969 4 24 8.027 12 20 0 8.027 4.031 4 12 11.952"
-              />
-            </svg>
-          </a>
-        </div>
-        <div
-          className="c3"
-          role="columnheader"
+          href="#"
+          onClick={[Function]}
+          role="button"
         >
           <span
-            className="c5 c6"
+            className="c4 c5"
           >
-            Country
+            Ticker
           </span>
-        </div>
-        <div
-          aria-sort="none"
-          className="c3"
-          role="columnheader"
-        >
-          <a
-            className="c4"
-            href="#"
-            onClick={[Function]}
-            role="button"
+          <svg
+            aria-hidden="true"
+            className="c6 c7"
+            focusable="false"
+            preserveAspectRatio="xMidYMid meet"
+            role="presentation"
+            viewBox="0 0 24 24"
           >
-            <span
-              className="c5 c6"
-            >
-              Yield
-            </span>
-            <svg
-              aria-hidden="true"
-              className="c7 c8"
-              focusable="false"
-              preserveAspectRatio="xMidYMid meet"
-              role="presentation"
-              viewBox="0 0 24 24"
-            >
-              <polygon
-                points="19.969 4 24 8.027 12 20 0 8.027 4.031 4 12 11.952"
-              />
-            </svg>
-          </a>
-        </div>
+            <polygon
+              points="19.969 4 24 8.027 12 20 0 8.027 4.031 4 12 11.952"
+            />
+          </svg>
+        </a>
+      </div>
+      <div
+        aria-sort="none"
+        className="c2"
+        role="columnheader"
+      >
+        <a
+          className="c3"
+          href="#"
+          onClick={[Function]}
+          role="button"
+        >
+          <span
+            className="c4 c5"
+          >
+            Instrument name
+          </span>
+          <svg
+            aria-hidden="true"
+            className="c6 c7"
+            focusable="false"
+            preserveAspectRatio="xMidYMid meet"
+            role="presentation"
+            viewBox="0 0 24 24"
+          >
+            <polygon
+              points="19.969 4 24 8.027 12 20 0 8.027 4.031 4 12 11.952"
+            />
+          </svg>
+        </a>
+      </div>
+      <div
+        className="c2"
+        role="columnheader"
+      >
+        <span
+          className="c4 c5"
+        >
+          Country
+        </span>
+      </div>
+      <div
+        aria-sort="none"
+        className="c2"
+        role="columnheader"
+      >
+        <a
+          className="c3"
+          href="#"
+          onClick={[Function]}
+          role="button"
+        >
+          <span
+            className="c4 c5"
+          >
+            Yield
+          </span>
+          <svg
+            aria-hidden="true"
+            className="c6 c7"
+            focusable="false"
+            preserveAspectRatio="xMidYMid meet"
+            role="presentation"
+            viewBox="0 0 24 24"
+          >
+            <polygon
+              points="19.969 4 24 8.027 12 20 0 8.027 4.031 4 12 11.952"
+            />
+          </svg>
+        </a>
       </div>
     </div>
   </div>
@@ -611,11 +584,7 @@ exports[`Storyshots Molecules | Table Sortable Headers Uncontrolled 1`] = `
 `;
 
 exports[`Storyshots Molecules | Table Table Expanded 1`] = `
-.c0 {
-  box-sizing: border-box;
-}
-
-.c2 {
+.c1 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -627,7 +596,7 @@ exports[`Storyshots Molecules | Table Table Expanded 1`] = `
   align-items: center;
 }
 
-.c4 {
+.c3 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: inherit;
   margin: 0;
@@ -636,7 +605,7 @@ exports[`Storyshots Molecules | Table Table Expanded 1`] = `
   line-height: 1.4285714285714286;
 }
 
-.c3 {
+.c2 {
   font-family: inherit;
   font-size: 100%;
   line-height: 1.15;
@@ -665,29 +634,29 @@ exports[`Storyshots Molecules | Table Table Expanded 1`] = `
   cursor: pointer;
 }
 
-.c3,
-.c3[type='button'],
-.c3[type='reset'],
-.c3[type='submit'] {
+.c2,
+.c2[type='button'],
+.c2[type='reset'],
+.c2[type='submit'] {
   -webkit-appearance: button;
 }
 
-.c3::-moz-focus-inner,
-.c3[type='button']::-moz-focus-inner,
-.c3[type='reset']::-moz-focus-inner,
-.c3[type='submit']::-moz-focus-inner {
+.c2::-moz-focus-inner,
+.c2[type='button']::-moz-focus-inner,
+.c2[type='reset']::-moz-focus-inner,
+.c2[type='submit']::-moz-focus-inner {
   border-style: none;
   padding: 0;
 }
 
-.c3:-moz-focusring,
-.c3[type='button']:-moz-focusring,
-.c3[type='reset']:-moz-focusring,
-.c3[type='submit']:-moz-focusring {
+.c2:-moz-focusring,
+.c2[type='button']:-moz-focusring,
+.c2[type='reset']:-moz-focusring,
+.c2[type='submit']:-moz-focusring {
   outline: 1px dotted ButtonText;
 }
 
-.c3::before {
+.c2::before {
   content: '';
   display: block;
   position: absolute;
@@ -698,30 +667,30 @@ exports[`Storyshots Molecules | Table Table Expanded 1`] = `
   height: calc(100% - 4px);
 }
 
-.c3:hover {
+.c2:hover {
   color: hsl(223.5,100%,40%);
 }
 
-.c3:hover::before {
+.c2:hover::before {
   border-color: hsl(223.5,100%,40%);
 }
 
-.c3:active {
+.c2:active {
   color: hsl(223.5,100%,35%);
 }
 
-.c3:active::before {
+.c2:active::before {
   border-color: hsl(223.5,100%,35%);
 }
 
-.c1 {
+.c0 {
   border-bottom: 1px solid #EBEBE8;
   padding-right: 8px;
   padding-left: 6px;
   border-left: 2px solid transparent;
 }
 
-.c1:hover {
+.c0:hover {
   background: #F5F5F5;
 }
 
@@ -730,59 +699,54 @@ exports[`Storyshots Molecules | Table Table Expanded 1`] = `
 >
   <div
     className="c0"
-    role="rowgroup"
+    role="row"
   >
     <div
       className="c1"
-      role="row"
     >
-      <div
-        className="c2"
-      >
-        Default
-      </div>
+      Default
     </div>
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
     <div
       className="c1"
-      role="row"
     >
-      <div
-        className="c2"
+      <button
+        className="NormalizedButton__Button-ey7f5x-0 c2"
+        onClick={[Function]}
+        type="button"
       >
-        <button
-          className="NormalizedButton__Button-ey7f5x-0 c3"
-          onClick={[Function]}
-          type="button"
-        >
-          <span>
-            <span
-              className="c4"
-            >
-              Expand
-            </span>
+        <span>
+          <span
+            className="c3"
+          >
+            Expand
           </span>
-        </button>
-      </div>
+        </span>
+      </button>
     </div>
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
     <div
       className="c1"
-      role="row"
     >
-      <div
-        className="c2"
-      >
-        Default
-      </div>
+      Default
     </div>
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
     <div
       className="c1"
-      role="row"
     >
-      <div
-        className="c2"
-      >
-        Default
-      </div>
+      Default
     </div>
   </div>
 </div>
@@ -1042,11 +1006,7 @@ exports[`Storyshots Molecules | Table Table Header 1`] = `
 `;
 
 exports[`Storyshots Molecules | Table Table With Different Rows 1`] = `
-.c0 {
-  box-sizing: border-box;
-}
-
-.c2 {
+.c1 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -1058,19 +1018,29 @@ exports[`Storyshots Molecules | Table Table With Different Rows 1`] = `
   align-items: center;
 }
 
-.c1 {
+.c0 {
   border-bottom: 1px solid #282823;
   padding-right: 8px;
   padding-left: 6px;
   border-left: 2px solid transparent;
 }
 
-.c1:hover {
+.c0:hover {
+  background: #F5F5F5;
+}
+
+.c2 {
+  border-bottom: 1px solid #EBEBE8;
+  padding-right: 8px;
+  padding-left: 6px;
+  border-left: 2px solid transparent;
+}
+
+.c2:hover {
   background: #F5F5F5;
 }
 
 .c3 {
-  border-bottom: 1px solid #EBEBE8;
   padding-right: 8px;
   padding-left: 6px;
   border-left: 2px solid transparent;
@@ -1080,73 +1050,54 @@ exports[`Storyshots Molecules | Table Table With Different Rows 1`] = `
   background: #F5F5F5;
 }
 
-.c4 {
-  padding-right: 8px;
-  padding-left: 6px;
-  border-left: 2px solid transparent;
-}
-
-.c4:hover {
-  background: #F5F5F5;
-}
-
 <div
   role="table"
 >
   <div
     className="c0"
-    role="rowgroup"
+    role="row"
   >
     <div
       className="c1"
-      role="row"
     >
-      <div
-        className="c2"
-      >
-        Separator color set
-      </div>
+      Separator color set
     </div>
+  </div>
+  <div
+    className="c2"
+    role="row"
+  >
     <div
-      className="c3"
-      role="row"
+      className="c1"
     >
-      <div
-        className="c2"
-      >
-        Default
-      </div>
+      Default
     </div>
+  </div>
+  <div
+    className="c3"
+    role="row"
+  >
     <div
-      className="c4"
-      role="row"
+      className="c1"
     >
-      <div
-        className="c2"
-      >
-        Separator hidden
-      </div>
+      Separator hidden
     </div>
+  </div>
+  <div
+    className="c2"
+    role="row"
+  >
     <div
-      className="c3"
-      role="row"
+      className="c1"
     >
-      <div
-        className="c2"
-      >
-        Default
-      </div>
+      Default
     </div>
   </div>
 </div>
 `;
 
 exports[`Storyshots Molecules | Table Tables With Different Densities 1`] = `
-.c3 {
-  box-sizing: border-box;
-}
-
-.c5 {
+.c4 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -1158,7 +1109,7 @@ exports[`Storyshots Molecules | Table Tables With Different Densities 1`] = `
   align-items: center;
 }
 
-.c6 {
+.c5 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -1181,7 +1132,7 @@ exports[`Storyshots Molecules | Table Tables With Different Densities 1`] = `
   line-height: 1.3333333333333333;
 }
 
-.c7 {
+.c6 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #6E6E69;
   margin: 0;
@@ -1190,30 +1141,30 @@ exports[`Storyshots Molecules | Table Tables With Different Densities 1`] = `
   line-height: 1.3333333333333333;
 }
 
-.c4 {
+.c3 {
   border-bottom: 1px solid #EBEBE8;
   padding-right: 8px;
   padding-left: 6px;
   border-left: 2px solid transparent;
 }
 
-.c4:hover {
+.c3:hover {
   background: #F5F5F5;
 }
 
-.c8 {
+.c7 {
   padding-top: 4px;
   padding-bottom: 4px;
   display: inline-block;
 }
 
-.c9 {
+.c8 {
   padding-top: 0px;
   padding-bottom: 0px;
   display: inline-block;
 }
 
-.c10 {
+.c9 {
   padding-top: 8px;
   padding-bottom: 8px;
   display: inline-block;
@@ -1249,45 +1200,40 @@ exports[`Storyshots Molecules | Table Tables With Different Densities 1`] = `
   >
     <div
       className="c3"
-      role="rowgroup"
+      role="row"
     >
       <div
         className="c4"
-        role="row"
       >
         <div
           className="c5"
+          role="columnheader"
         >
-          <div
-            className="c6"
-            role="columnheader"
+          <span
+            className="c6 c7"
           >
-            <span
-              className="c7 c8"
-            >
-              Header 1
-            </span>
-          </div>
-          <div
-            className="c6"
-            role="columnheader"
+            Header 1
+          </span>
+        </div>
+        <div
+          className="c5"
+          role="columnheader"
+        >
+          <span
+            className="c6 c7"
           >
-            <span
-              className="c7 c8"
-            >
-              Header 2
-            </span>
-          </div>
-          <div
-            className="c6"
-            role="columnheader"
+            Header 2
+          </span>
+        </div>
+        <div
+          className="c5"
+          role="columnheader"
+        >
+          <span
+            className="c6 c7"
           >
-            <span
-              className="c7 c8"
-            >
-              Header 3
-            </span>
-          </div>
+            Header 3
+          </span>
         </div>
       </div>
     </div>
@@ -1303,45 +1249,40 @@ exports[`Storyshots Molecules | Table Tables With Different Densities 1`] = `
   >
     <div
       className="c3"
-      role="rowgroup"
+      role="row"
     >
       <div
         className="c4"
-        role="row"
       >
         <div
           className="c5"
+          role="columnheader"
         >
-          <div
-            className="c6"
-            role="columnheader"
+          <span
+            className="c6 c8"
           >
-            <span
-              className="c7 c9"
-            >
-              Header 1
-            </span>
-          </div>
-          <div
-            className="c6"
-            role="columnheader"
+            Header 1
+          </span>
+        </div>
+        <div
+          className="c5"
+          role="columnheader"
+        >
+          <span
+            className="c6 c8"
           >
-            <span
-              className="c7 c9"
-            >
-              Header 2
-            </span>
-          </div>
-          <div
-            className="c6"
-            role="columnheader"
+            Header 2
+          </span>
+        </div>
+        <div
+          className="c5"
+          role="columnheader"
+        >
+          <span
+            className="c6 c8"
           >
-            <span
-              className="c7 c9"
-            >
-              Header 3
-            </span>
-          </div>
+            Header 3
+          </span>
         </div>
       </div>
     </div>
@@ -1357,45 +1298,40 @@ exports[`Storyshots Molecules | Table Tables With Different Densities 1`] = `
   >
     <div
       className="c3"
-      role="rowgroup"
+      role="row"
     >
       <div
         className="c4"
-        role="row"
       >
         <div
           className="c5"
+          role="columnheader"
         >
-          <div
-            className="c6"
-            role="columnheader"
+          <span
+            className="c6 c7"
           >
-            <span
-              className="c7 c8"
-            >
-              Header 1
-            </span>
-          </div>
-          <div
-            className="c6"
-            role="columnheader"
+            Header 1
+          </span>
+        </div>
+        <div
+          className="c5"
+          role="columnheader"
+        >
+          <span
+            className="c6 c7"
           >
-            <span
-              className="c7 c8"
-            >
-              Header 2
-            </span>
-          </div>
-          <div
-            className="c6"
-            role="columnheader"
+            Header 2
+          </span>
+        </div>
+        <div
+          className="c5"
+          role="columnheader"
+        >
+          <span
+            className="c6 c7"
           >
-            <span
-              className="c7 c8"
-            >
-              Header 3
-            </span>
-          </div>
+            Header 3
+          </span>
         </div>
       </div>
     </div>
@@ -1411,45 +1347,40 @@ exports[`Storyshots Molecules | Table Tables With Different Densities 1`] = `
   >
     <div
       className="c3"
-      role="rowgroup"
+      role="row"
     >
       <div
         className="c4"
-        role="row"
       >
         <div
           className="c5"
+          role="columnheader"
         >
-          <div
-            className="c6"
-            role="columnheader"
+          <span
+            className="c6 c9"
           >
-            <span
-              className="c7 c10"
-            >
-              Header 1
-            </span>
-          </div>
-          <div
-            className="c6"
-            role="columnheader"
+            Header 1
+          </span>
+        </div>
+        <div
+          className="c5"
+          role="columnheader"
+        >
+          <span
+            className="c6 c9"
           >
-            <span
-              className="c7 c10"
-            >
-              Header 2
-            </span>
-          </div>
-          <div
-            className="c6"
-            role="columnheader"
+            Header 2
+          </span>
+        </div>
+        <div
+          className="c5"
+          role="columnheader"
+        >
+          <span
+            className="c6 c9"
           >
-            <span
-              className="c7 c10"
-            >
-              Header 3
-            </span>
-          </div>
+            Header 3
+          </span>
         </div>
       </div>
     </div>
