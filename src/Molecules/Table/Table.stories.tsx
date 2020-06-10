@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import R from 'ramda';
 import styled from 'styled-components';
 import Table from './Table';
 import { Button, Typography, Flag } from '../..';
@@ -78,7 +79,7 @@ export const TruncatedCellContent = () => (
 const bigTableColumns = 10;
 const bigTableRows = 500;
 const bigTableData = [...Array(bigTableRows)].map((_, rowIndex) => {
-  const rowId = `_${Math.random()
+  const rowId = `${Math.random()
     .toString(36)
     .substr(2, 9)}`;
   return [...Array(bigTableColumns)].reduce((acc, __, columnIndex) => {
@@ -90,27 +91,31 @@ const bigTableData = [...Array(bigTableRows)].map((_, rowIndex) => {
 const BigTableRow = ({ data }) => {
   return (
     <Table.Row>
-      {Object.keys(data).map((valueKey, index) => (
-        <Table.Cell key={data.id} columnId={`column${index}`}>
-          {data[valueKey].value}
-        </Table.Cell>
-      ))}
+      {Object.keys(R.omit(['rowId'], data)).map((valueKey, index) => {
+        return (
+          <Table.Cell key={data.id} columnId={`column${index}`}>
+            {data[valueKey].value}
+          </Table.Cell>
+        );
+      })}
     </Table.Row>
   );
 };
 
-export const BigTable = () => (
-  <Table>
-    <Table.Row>
-      {[...Array(bigTableColumns)].map((_, index) => (
-        <Table.Header columnId={`column${index}`}>Header {index}</Table.Header>
+export const BigTable = () => {
+  return (
+    <Table>
+      <Table.Row>
+        {[...Array(bigTableColumns)].map((_, index) => (
+          <Table.Header columnId={`column${index}`}>Header {index}</Table.Header>
+        ))}
+      </Table.Row>
+      {bigTableData.map(data => (
+        <BigTableRow key={data.rowId} data={data} />
       ))}
-    </Table.Row>
-    {bigTableData.map(data => (
-      <BigTableRow key={data.rowId} data={data} />
-    ))}
-  </Table>
-);
+    </Table>
+  );
+};
 
 export const DifferentAlignmentsTable = () => (
   <Table>
