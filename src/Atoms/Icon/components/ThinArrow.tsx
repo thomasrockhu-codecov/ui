@@ -15,7 +15,7 @@ const DIRECTION = {
 };
 
 const StyledIconBase = styled(IconBase)<Direction>`
-  transform: ${p => `rotate(${DIRECTION[p.direction] || DIRECTION.up}deg`});
+  transform: ${p => `rotate(${DIRECTION[p.direction]}deg`});
 `;
 
 export const ThinArrow = (props: BaseProps & Direction) => {
