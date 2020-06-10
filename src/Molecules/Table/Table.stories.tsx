@@ -3,7 +3,6 @@ import styled from 'styled-components';
 import Table from './Table';
 import { Button, Typography, Flag } from '../..';
 import { SortOrder } from './Header/HeaderContent/HeaderContent.types';
-import { SORT_ORDER_DESCENDING } from './shared/constants';
 import { OnSort } from './Header/Header.types';
 
 export default {
@@ -161,10 +160,14 @@ export const SortableHeadersUncontrolled = () => (
       <Table.Header columnId="column2" sortable>
         Uncontrolled 2
       </Table.Header>
-      <Table.Header columnId="column4" sortable initialSortOrder={SORT_ORDER_DESCENDING}>
+      <Table.Header
+        columnId="column3"
+        sortable
+        initialSortOrder={Table.CONSTANTS.SORT_ORDER_DESCENDING}
+      >
         With initial sort order
       </Table.Header>
-      <Table.Header columnId="column3" sortable={false}>
+      <Table.Header columnId="column4" sortable={false}>
         Non sortable
       </Table.Header>
     </Table.Row>
@@ -183,6 +186,49 @@ export const SortableHeaderControlled = () => {
       columnSort.columnId === columnId ? columnSort.sortOrder : Table.CONSTANTS.SORT_ORDER_NONE;
     const onSort: OnSort = (columnId, nextSortOrder) =>
       setColumnSort({ columnId, sortOrder: nextSortOrder });
+
+    return (
+      <Table>
+        <Table.Row>
+          <Table.Header columnId="column1" sortable sortOrder={getSort('column1')} onSort={onSort}>
+            Controlled1
+          </Table.Header>
+          <Table.Header columnId="column2" sortable sortOrder={getSort('column2')} onSort={onSort}>
+            Controlled2
+          </Table.Header>
+          <Table.Header columnId="column3" sortable={false}>
+            Not sortable
+          </Table.Header>
+          <Table.Header columnId="column4" sortable sortOrder={getSort('column4')} onSort={onSort}>
+            Controlled3
+          </Table.Header>
+        </Table.Row>
+      </Table>
+    );
+  };
+  return <ReactComponent />;
+};
+
+export const SortableHeaderOnlyAscendingDescending = () => {
+  const ReactComponent = () => {
+    const [columnSort, setColumnSort] = useState<{ columnId: string; sortOrder: SortOrder }>({
+      columnId: 'column1',
+      sortOrder: Table.CONSTANTS.SORT_ORDER_ASCENDING,
+    });
+
+    const getSort = (columnId: string) =>
+      columnSort.columnId === columnId ? columnSort.sortOrder : Table.CONSTANTS.SORT_ORDER_NONE;
+    const onSort: OnSort = columnId => {
+      let nextSortOrder: SortOrder = Table.CONSTANTS.SORT_ORDER_ASCENDING;
+      const sameAsCurrentlySorted = columnId === columnSort.columnId;
+      if (sameAsCurrentlySorted) {
+        nextSortOrder =
+          columnSort.sortOrder === Table.CONSTANTS.SORT_ORDER_ASCENDING
+            ? Table.CONSTANTS.SORT_ORDER_DESCENDING
+            : Table.CONSTANTS.SORT_ORDER_ASCENDING;
+      }
+      setColumnSort({ columnId, sortOrder: nextSortOrder });
+    };
 
     return (
       <Table>
