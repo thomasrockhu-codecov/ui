@@ -176,6 +176,7 @@ const createColors = (type: ThemeColorsVersion): ThemeColors<typeof type> => {
     warning: a11yColors ? rawColor.a11yIndex : rawColor.index,
     inputBorder: rawColor.gray4,
     inputBorderHover: rawColor.gray1,
+    tableRowHover: rawColor.gray7,
     flagBorder: rawColor.gray6,
     inputBorderError: rawColor.negative,
     inputBorderSuccess: rawColor.positive,
