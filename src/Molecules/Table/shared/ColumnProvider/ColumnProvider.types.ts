@@ -1,5 +1,9 @@
 import { Props as FlexboxProps } from '../../../../Atoms/Flexbox/Flexbox.types';
-import { ACTION_SET_FLEX_PROPS, ACTION_SET_SORTING } from './ColumnProvider';
+import {
+  ACTION_SET_FLEX_PROPS,
+  ACTION_SET_INITIAL_SORTING,
+  ACTION_SET_SORTING,
+} from './ColumnProvider';
 import { SortOrder } from '../../Header/HeaderContent/HeaderContent.types';
 
 export type FlexPropsType = Pick<
@@ -46,17 +50,23 @@ export type OmitOverAll<T, K extends AllKeys<T>> = T extends T
 
 export type ColumnDispatch = (action: OmitOverAll<ColumnActions, 'columnId'>) => void;
 
-type SET_FLEX_ACTION = {
+type SetFlexAction = {
   type: typeof ACTION_SET_FLEX_PROPS;
   columnId: string;
   flexProps: FlexPropsType;
 };
 
-type SET_SORTING_ACTION = {
+type SetSortingAction = {
   type: typeof ACTION_SET_SORTING;
+  columnId: string;
+  sortOrder: SortOrder;
+};
+
+type SetInitialSortingAction = {
+  type: typeof ACTION_SET_INITIAL_SORTING;
   columnId: string;
   sortOrder: SortOrder;
   controlledSort: boolean;
 };
 
-export type ColumnActions = SET_FLEX_ACTION | SET_SORTING_ACTION;
+export type ColumnActions = SetFlexAction | SetSortingAction | SetInitialSortingAction;

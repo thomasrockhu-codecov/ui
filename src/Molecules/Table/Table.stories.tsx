@@ -3,6 +3,8 @@ import styled from 'styled-components';
 import Table from './Table';
 import { Button, Typography, Flag } from '../..';
 import { SortOrder } from './Header/HeaderContent/HeaderContent.types';
+import { SORT_ORDER_DESCENDING } from './shared/constants';
+import { OnSort } from './Header/Header.types';
 
 export default {
   title: 'Molecules | Table',
@@ -154,16 +156,16 @@ export const SortableHeadersUncontrolled = () => (
   <Table>
     <Table.Row>
       <Table.Header columnId="column1" sortable>
-        Ticker
+        Uncontrolled 1
       </Table.Header>
       <Table.Header columnId="column2" sortable>
-        Instrument name
+        Uncontrolled 2
+      </Table.Header>
+      <Table.Header columnId="column4" sortable initialSortOrder={SORT_ORDER_DESCENDING}>
+        With initial sort order
       </Table.Header>
       <Table.Header columnId="column3" sortable={false}>
-        Country
-      </Table.Header>
-      <Table.Header columnId="column4" sortable>
-        Yield
+        Non sortable
       </Table.Header>
     </Table.Row>
   </Table>
@@ -172,15 +174,15 @@ export const SortableHeadersUncontrolled = () => (
 // For useState to work in storybook, components needs to be wrapped in a new function
 export const SortableHeaderControlled = () => {
   const ReactComponent = () => {
-    const [columnSort, setColumnSort] = useState<{ sortOrder: SortOrder; columnId: string }>({
+    const [columnSort, setColumnSort] = useState<{ columnId: string; sortOrder: SortOrder }>({
       columnId: 'column1',
       sortOrder: Table.CONSTANTS.SORT_ORDER_NONE,
     });
 
     const getSort = (columnId: string) =>
       columnSort.columnId === columnId ? columnSort.sortOrder : Table.CONSTANTS.SORT_ORDER_NONE;
-    const onSort = (sortOrder: SortOrder, columnId: string) =>
-      setColumnSort({ sortOrder, columnId });
+    const onSort: OnSort = (columnId, nextSortOrder) =>
+      setColumnSort({ columnId, sortOrder: nextSortOrder });
 
     return (
       <Table>
@@ -194,17 +196,7 @@ export const SortableHeaderControlled = () => {
           <Table.Header columnId="column3" sortable={false}>
             Not sortable
           </Table.Header>
-          <Table.Header columnId="column4" sortable>
-            Uncontrolled
-          </Table.Header>
-          <Table.Header
-            columnId="column5"
-            sortable
-            initialSortOrder={Table.CONSTANTS.SORT_ORDER_DESCENDING}
-          >
-            Uncontrolled with initial
-          </Table.Header>
-          <Table.Header columnId="column6" sortable sortOrder={getSort('column6')} onSort={onSort}>
+          <Table.Header columnId="column4" sortable sortOrder={getSort('column4')} onSort={onSort}>
             Controlled3
           </Table.Header>
         </Table.Row>

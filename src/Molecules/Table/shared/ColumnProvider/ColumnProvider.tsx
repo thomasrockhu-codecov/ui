@@ -5,6 +5,7 @@ import { SORT_ORDER_NONE } from '../constants';
 
 export const ACTION_SET_FLEX_PROPS = 'SET_FLEX_PROPS';
 export const ACTION_SET_SORTING = 'SET_SORTING';
+export const ACTION_SET_INITIAL_SORTING = 'SET_INITIAL_SORTING';
 
 export const ColumnStateContext = React.createContext<ColumnsState | undefined>(undefined);
 export const ColumnDispatchContext = React.createContext<ColumnsDispatch | undefined>(undefined);
@@ -34,6 +35,15 @@ const columnReducer = (state: ColumnsState, action: ColumnActions): ColumnsState
     case ACTION_SET_SORTING:
       return {
         ...setRestOfSortingState(state),
+        [action.columnId]: {
+          ...state[action.columnId],
+          sortOrder: action.sortOrder,
+        },
+      };
+
+    case ACTION_SET_INITIAL_SORTING:
+      return {
+        ...state,
         [action.columnId]: {
           ...state[action.columnId],
           controlledSort: action.controlledSort,

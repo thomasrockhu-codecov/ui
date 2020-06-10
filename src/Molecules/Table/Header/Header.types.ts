@@ -10,7 +10,7 @@ import {
   SortIconProps,
 } from './HeaderContent/HeaderContent.types';
 
-export type onSort = (newSortOrder: SortOrder, columnId: string) => void;
+export type OnSort = (columnId: string, newSortOrder: SortOrder) => void;
 
 type Unsortable = {
   sortable?: false;
@@ -21,7 +21,7 @@ type Unsortable = {
 
 interface Sortable {
   sortable: true;
-  onSort?: onSort;
+  onSort?: OnSort;
 }
 
 interface ControlledSort extends Sortable {

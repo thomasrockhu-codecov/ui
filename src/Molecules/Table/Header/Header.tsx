@@ -12,6 +12,7 @@ import {
   ACTION_SET_SORTING,
 } from '../shared/ColumnProvider';
 import { HeaderContent, TextWrapper, SortIcon, SortButton } from './HeaderContent';
+import { ACTION_SET_INITIAL_SORTING } from '../shared/ColumnProvider/ColumnProvider';
 
 const SORT_ORDERS: SortOrder[] = [SORT_ORDER_NONE, SORT_ORDER_ASCENDING, SORT_ORDER_DESCENDING];
 
@@ -48,10 +49,9 @@ const Header: HeaderComponent = props => {
   const cellFlexProps = useFlexCellProps(props);
   const controlledSort = sortOrderProp !== undefined;
 
-  // Initiate sorting
   useEffect(() => {
     columnDispatch({
-      type: ACTION_SET_SORTING,
+      type: ACTION_SET_INITIAL_SORTING,
       sortOrder,
       controlledSort,
     });
@@ -61,15 +61,15 @@ const Header: HeaderComponent = props => {
     // If the sortOrder changes from the outside, update internal the column sort state
     if (controlledSort) {
       // @ts-ignore
-      columnDispatch({ type: ACTION_SET_SORTING, sortOrder: sortOrderProp, controlledSort });
+      columnDispatch({ type: ACTION_SET_SORTING, sortOrder: sortOrderProp });
     }
   }, [sortOrderProp, controlledSort, columnDispatch]);
 
   const onSortClick = () => {
     const newSortOrder = getNextSortOrder(sortOrder || initialSortOrder);
-    onSort(newSortOrder, columnId);
+    onSort(columnId, newSortOrder);
     if (!controlledSort) {
-      columnDispatch({ type: ACTION_SET_SORTING, sortOrder: newSortOrder, controlledSort });
+      columnDispatch({ type: ACTION_SET_SORTING, sortOrder: newSortOrder });
     }
   };
 

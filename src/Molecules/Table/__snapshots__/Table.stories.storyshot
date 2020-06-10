@@ -140,41 +140,11 @@ exports[`Storyshots Molecules | Table Sortable Header Controlled 1`] = `
   vertical-align: middle;
 }
 
-.c9 {
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  width: 8px;
-  height: 8px;
-  fill: #282823;
-  -webkit-flex-shrink: 0;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
-  display: inline-block;
-  vertical-align: middle;
-}
-
-.c10 {
-  -webkit-transform: rotate(0deg);
-  -ms-transform: rotate(0deg);
-  transform: rotate(0deg);
-}
-
 .c4 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #6E6E69;
   margin: 0;
   font-weight: 400;
-  font-size: 12px;
-  line-height: 1.3333333333333333;
-}
-
-.c8 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #282823;
-  margin: 0;
-  font-weight: 700;
   font-size: 12px;
   line-height: 1.3333333333333333;
 }
@@ -197,10 +167,6 @@ exports[`Storyshots Molecules | Table Sortable Header Controlled 1`] = `
 }
 
 .c7 {
-  margin-left: 4px;
-}
-
-.c11 {
   margin-left: 4px;
 }
 
@@ -305,69 +271,6 @@ exports[`Storyshots Molecules | Table Sortable Header Controlled 1`] = `
           <span
             className="c4 c5"
           >
-            Uncontrolled
-          </span>
-          <svg
-            aria-hidden="true"
-            className="c6 c7"
-            focusable="false"
-            preserveAspectRatio="xMidYMid meet"
-            role="presentation"
-            viewBox="0 0 24 24"
-          >
-            <polygon
-              points="19.969 4 24 8.027 12 20 0 8.027 4.031 4 12 11.952"
-            />
-          </svg>
-        </a>
-      </div>
-      <div
-        aria-sort="descending"
-        className="c2"
-        role="columnheader"
-      >
-        <a
-          className="c3"
-          href="#"
-          onClick={[Function]}
-          role="button"
-        >
-          <span
-            className="c8 c5"
-          >
-            Uncontrolled with initial
-          </span>
-          <svg
-            aria-hidden="true"
-            className="c9 c10 c11"
-            direction="descending"
-            focusable="false"
-            preserveAspectRatio="xMidYMid meet"
-            role="presentation"
-            viewBox="0 0 8 12"
-          >
-            <path
-              d="M9 2v8.4l1.66-1.62L12 10.1 8 14l-4-3.9 1.34-1.32L7 10.4V2h2z"
-              fillRule="evenodd"
-              transform="matrix(1 0 0 -1 -4 14)"
-            />
-          </svg>
-        </a>
-      </div>
-      <div
-        aria-sort="none"
-        className="c2"
-        role="columnheader"
-      >
-        <a
-          className="c3"
-          href="#"
-          onClick={[Function]}
-          role="button"
-        >
-          <span
-            className="c4 c5"
-          >
             Controlled3
           </span>
           <svg
@@ -431,11 +334,41 @@ exports[`Storyshots Molecules | Table Sortable Headers Uncontrolled 1`] = `
   vertical-align: middle;
 }
 
+.c9 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 8px;
+  height: 8px;
+  fill: #282823;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.c10 {
+  -webkit-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  transform: rotate(0deg);
+}
+
 .c4 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #6E6E69;
   margin: 0;
   font-weight: 400;
+  font-size: 12px;
+  line-height: 1.3333333333333333;
+}
+
+.c8 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 700;
   font-size: 12px;
   line-height: 1.3333333333333333;
 }
@@ -458,6 +391,10 @@ exports[`Storyshots Molecules | Table Sortable Headers Uncontrolled 1`] = `
 }
 
 .c7 {
+  margin-left: 4px;
+}
+
+.c11 {
   margin-left: 4px;
 }
 
@@ -492,7 +429,7 @@ exports[`Storyshots Molecules | Table Sortable Headers Uncontrolled 1`] = `
           <span
             className="c4 c5"
           >
-            Ticker
+            Uncontrolled 1
           </span>
           <svg
             aria-hidden="true"
@@ -522,7 +459,7 @@ exports[`Storyshots Molecules | Table Sortable Headers Uncontrolled 1`] = `
           <span
             className="c4 c5"
           >
-            Instrument name
+            Uncontrolled 2
           </span>
           <svg
             aria-hidden="true"
@@ -534,6 +471,39 @@ exports[`Storyshots Molecules | Table Sortable Headers Uncontrolled 1`] = `
           >
             <polygon
               points="19.969 4 24 8.027 12 20 0 8.027 4.031 4 12 11.952"
+            />
+          </svg>
+        </a>
+      </div>
+      <div
+        aria-sort="descending"
+        className="c2"
+        role="columnheader"
+      >
+        <a
+          className="c3"
+          href="#"
+          onClick={[Function]}
+          role="button"
+        >
+          <span
+            className="c8 c5"
+          >
+            With initial sort order
+          </span>
+          <svg
+            aria-hidden="true"
+            className="c9 c10 c11"
+            direction="descending"
+            focusable="false"
+            preserveAspectRatio="xMidYMid meet"
+            role="presentation"
+            viewBox="0 0 8 12"
+          >
+            <path
+              d="M9 2v8.4l1.66-1.62L12 10.1 8 14l-4-3.9 1.34-1.32L7 10.4V2h2z"
+              fillRule="evenodd"
+              transform="matrix(1 0 0 -1 -4 14)"
             />
           </svg>
         </a>
@@ -545,38 +515,8 @@ exports[`Storyshots Molecules | Table Sortable Headers Uncontrolled 1`] = `
         <span
           className="c4 c5"
         >
-          Country
+          Non sortable
         </span>
-      </div>
-      <div
-        aria-sort="none"
-        className="c2"
-        role="columnheader"
-      >
-        <a
-          className="c3"
-          href="#"
-          onClick={[Function]}
-          role="button"
-        >
-          <span
-            className="c4 c5"
-          >
-            Yield
-          </span>
-          <svg
-            aria-hidden="true"
-            className="c6 c7"
-            focusable="false"
-            preserveAspectRatio="xMidYMid meet"
-            role="presentation"
-            viewBox="0 0 24 24"
-          >
-            <polygon
-              points="19.969 4 24 8.027 12 20 0 8.027 4.031 4 12 11.952"
-            />
-          </svg>
-        </a>
       </div>
     </div>
   </div>
