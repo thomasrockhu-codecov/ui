@@ -1,3 +1,17 @@
+# [2.49.0](https://github.com/nordnet/ui/compare/v2.48.0...v2.49.0) (2020-06-10)
+
+
+### Bug Fixes
+
+* rename icon ([3ddf1cd](https://github.com/nordnet/ui/commit/3ddf1cd))
+* update storyshot ([a436549](https://github.com/nordnet/ui/commit/a436549))
+
+
+### Features
+
+* add new icons ([20e6980](https://github.com/nordnet/ui/commit/20e6980))
+* add new icons ([58f36e2](https://github.com/nordnet/ui/commit/58f36e2))
+
 # [2.48.0](https://github.com/nordnet/ui/compare/v2.47.2...v2.48.0) (2020-06-09)
 
 
