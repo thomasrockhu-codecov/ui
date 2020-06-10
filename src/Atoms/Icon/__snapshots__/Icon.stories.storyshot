@@ -2937,9 +2937,9 @@ Array [
 }
 
 .c1 {
-  -webkit-transform: rotate(undefineddeg);
-  -ms-transform: rotate(undefineddeg);
-  transform: rotate(undefineddeg);
+  -webkit-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  transform: rotate(90deg);
 }
 
 <div
@@ -2953,6 +2953,7 @@ Array [
     <svg
       aria-hidden="true"
       className="c0 c1"
+      direction="up"
       focusable="false"
       preserveAspectRatio="xMidYMid meet"
       role="presentation"
@@ -2978,9 +2979,9 @@ Array [
 }
 
 .c1 {
-  -webkit-transform: rotate(undefineddeg);
-  -ms-transform: rotate(undefineddeg);
-  transform: rotate(undefineddeg);
+  -webkit-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  transform: rotate(0deg);
 }
 
 <div
@@ -2994,6 +2995,7 @@ Array [
     <svg
       aria-hidden="true"
       className="c0 c1"
+      direction="descending"
       focusable="false"
       preserveAspectRatio="xMidYMid meet"
       role="presentation"
@@ -3117,15 +3119,15 @@ exports[`Storyshots Atoms | Icon Available icons 1`] = `
 }
 
 .c17 {
-  -webkit-transform: rotate(undefineddeg);
-  -ms-transform: rotate(undefineddeg);
-  transform: rotate(undefineddeg);
+  -webkit-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  transform: rotate(90deg);
 }
 
 .c18 {
-  -webkit-transform: rotate(undefineddeg);
-  -ms-transform: rotate(undefineddeg);
-  transform: rotate(undefineddeg);
+  -webkit-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  transform: rotate(0deg);
 }
 
 .c0 {
@@ -5950,6 +5952,7 @@ exports[`Storyshots Atoms | Icon Available icons 1`] = `
         <svg
           aria-hidden="true"
           className="c3 c17"
+          direction="up"
           focusable="false"
           preserveAspectRatio="xMidYMid meet"
           role="presentation"
@@ -5983,6 +5986,7 @@ exports[`Storyshots Atoms | Icon Available icons 1`] = `
         <svg
           aria-hidden="true"
           className="c3 c18"
+          direction="descending"
           focusable="false"
           preserveAspectRatio="xMidYMid meet"
           role="presentation"
