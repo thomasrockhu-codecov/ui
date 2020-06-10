@@ -11,6 +11,17 @@ exports[`Storyshots Molecules | Table Default Table 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  margin-left: -4px;
+  margin-right: -4px;
+}
+
+.c1 > * {
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+.c1 > *:not(:first-child) {
+  padding-top: 0;
 }
 
 .c2 {
@@ -38,8 +49,8 @@ exports[`Storyshots Molecules | Table Default Table 1`] = `
 
 .c0 {
   border-bottom: 1px solid #000000;
-  padding-right: 8px;
-  padding-left: 6px;
+  padding-right: 4px;
+  padding-left: 2px;
   border-left: 2px solid transparent;
 }
 
@@ -49,8 +60,8 @@ exports[`Storyshots Molecules | Table Default Table 1`] = `
 
 .c5 {
   border-bottom: 1px solid #EBEBE8;
-  padding-right: 8px;
-  padding-left: 6px;
+  padding-right: 4px;
+  padding-left: 2px;
   border-left: 2px solid transparent;
 }
 
@@ -62,6 +73,7 @@ exports[`Storyshots Molecules | Table Default Table 1`] = `
   padding-top: 4px;
   padding-bottom: 4px;
   display: inline-block;
+  word-break: break-word;
 }
 
 <div
@@ -144,6 +156,17 @@ exports[`Storyshots Molecules | Table Different Alignments Table 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  margin-left: -4px;
+  margin-right: -4px;
+}
+
+.c1 > * {
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+.c1 > *:not(:first-child) {
+  padding-top: 0;
 }
 
 .c2 {
@@ -207,8 +230,8 @@ exports[`Storyshots Molecules | Table Different Alignments Table 1`] = `
 
 .c0 {
   border-bottom: 1px solid #000000;
-  padding-right: 8px;
-  padding-left: 6px;
+  padding-right: 4px;
+  padding-left: 2px;
   border-left: 2px solid transparent;
 }
 
@@ -218,8 +241,8 @@ exports[`Storyshots Molecules | Table Different Alignments Table 1`] = `
 
 .c7 {
   border-bottom: 1px solid #EBEBE8;
-  padding-right: 8px;
-  padding-left: 6px;
+  padding-right: 4px;
+  padding-left: 2px;
   border-left: 2px solid transparent;
 }
 
@@ -231,6 +254,7 @@ exports[`Storyshots Molecules | Table Different Alignments Table 1`] = `
   padding-top: 4px;
   padding-bottom: 4px;
   display: inline-block;
+  word-break: break-word;
 }
 
 <div
@@ -323,6 +347,17 @@ exports[`Storyshots Molecules | Table Sortable Header Controlled 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  margin-left: -4px;
+  margin-right: -4px;
+}
+
+.c1 > * {
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+.c1 > *:not(:first-child) {
+  padding-top: 0;
 }
 
 .c2 {
@@ -365,8 +400,8 @@ exports[`Storyshots Molecules | Table Sortable Header Controlled 1`] = `
 
 .c0 {
   border-bottom: 1px solid #EBEBE8;
-  padding-right: 8px;
-  padding-left: 6px;
+  padding-right: 4px;
+  padding-left: 2px;
   border-left: 2px solid transparent;
 }
 
@@ -378,6 +413,7 @@ exports[`Storyshots Molecules | Table Sortable Header Controlled 1`] = `
   padding-top: 4px;
   padding-bottom: 4px;
   display: inline-block;
+  word-break: break-word;
 }
 
 .c7 {
@@ -517,6 +553,17 @@ exports[`Storyshots Molecules | Table Sortable Header Only Ascending Descending 
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  margin-left: -4px;
+  margin-right: -4px;
+}
+
+.c1 > * {
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+.c1 > *:not(:first-child) {
+  padding-top: 0;
 }
 
 .c2 {
@@ -589,8 +636,8 @@ exports[`Storyshots Molecules | Table Sortable Header Only Ascending Descending 
 
 .c0 {
   border-bottom: 1px solid #EBEBE8;
-  padding-right: 8px;
-  padding-left: 6px;
+  padding-right: 4px;
+  padding-left: 2px;
   border-left: 2px solid transparent;
 }
 
@@ -602,6 +649,7 @@ exports[`Storyshots Molecules | Table Sortable Header Only Ascending Descending 
   padding-top: 4px;
   padding-bottom: 4px;
   display: inline-block;
+  word-break: break-word;
 }
 
 .c11 {
@@ -748,6 +796,17 @@ exports[`Storyshots Molecules | Table Sortable Headers Uncontrolled 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  margin-left: -4px;
+  margin-right: -4px;
+}
+
+.c1 > * {
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+.c1 > *:not(:first-child) {
+  padding-top: 0;
 }
 
 .c2 {
@@ -820,8 +879,8 @@ exports[`Storyshots Molecules | Table Sortable Headers Uncontrolled 1`] = `
 
 .c0 {
   border-bottom: 1px solid #EBEBE8;
-  padding-right: 8px;
-  padding-left: 6px;
+  padding-right: 4px;
+  padding-left: 2px;
   border-left: 2px solid transparent;
 }
 
@@ -833,6 +892,7 @@ exports[`Storyshots Molecules | Table Sortable Headers Uncontrolled 1`] = `
   padding-top: 4px;
   padding-bottom: 4px;
   display: inline-block;
+  word-break: break-word;
 }
 
 .c7 {
@@ -979,6 +1039,17 @@ exports[`Storyshots Molecules | Table Table Expanded 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  margin-left: -4px;
+  margin-right: -4px;
+}
+
+.c1 > * {
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+.c1 > *:not(:first-child) {
+  padding-top: 0;
 }
 
 .c3 {
@@ -1070,8 +1141,8 @@ exports[`Storyshots Molecules | Table Table Expanded 1`] = `
 
 .c0 {
   border-bottom: 1px solid #EBEBE8;
-  padding-right: 8px;
-  padding-left: 6px;
+  padding-right: 4px;
+  padding-left: 2px;
   border-left: 2px solid transparent;
 }
 
@@ -1159,6 +1230,17 @@ exports[`Storyshots Molecules | Table Table Header 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  margin-left: -4px;
+  margin-right: -4px;
+}
+
+.c1 > * {
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+.c1 > *:not(:first-child) {
+  padding-top: 0;
 }
 
 .c2 {
@@ -1224,8 +1306,8 @@ exports[`Storyshots Molecules | Table Table Header 1`] = `
 
 .c0 {
   border-bottom: 1px solid #EBEBE8;
-  padding-right: 8px;
-  padding-left: 6px;
+  padding-right: 4px;
+  padding-left: 2px;
   border-left: 2px solid transparent;
 }
 
@@ -1237,6 +1319,7 @@ exports[`Storyshots Molecules | Table Table Header 1`] = `
   padding-top: 4px;
   padding-bottom: 4px;
   display: inline-block;
+  word-break: break-word;
 }
 
 .c9 {
@@ -1401,12 +1484,23 @@ exports[`Storyshots Molecules | Table Table With Different Rows 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  margin-left: -4px;
+  margin-right: -4px;
+}
+
+.c1 > * {
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+.c1 > *:not(:first-child) {
+  padding-top: 0;
 }
 
 .c0 {
   border-bottom: 1px solid #282823;
-  padding-right: 8px;
-  padding-left: 6px;
+  padding-right: 4px;
+  padding-left: 2px;
   border-left: 2px solid transparent;
 }
 
@@ -1416,8 +1510,8 @@ exports[`Storyshots Molecules | Table Table With Different Rows 1`] = `
 
 .c2 {
   border-bottom: 1px solid #EBEBE8;
-  padding-right: 8px;
-  padding-left: 6px;
+  padding-right: 4px;
+  padding-left: 2px;
   border-left: 2px solid transparent;
 }
 
@@ -1426,8 +1520,8 @@ exports[`Storyshots Molecules | Table Table With Different Rows 1`] = `
 }
 
 .c3 {
-  padding-right: 8px;
-  padding-left: 6px;
+  padding-right: 4px;
+  padding-left: 2px;
   border-left: 2px solid transparent;
 }
 
@@ -1492,6 +1586,17 @@ exports[`Storyshots Molecules | Table Table Without Separators 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  margin-left: -4px;
+  margin-right: -4px;
+}
+
+.c1 > * {
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+.c1 > *:not(:first-child) {
+  padding-top: 0;
 }
 
 .c2 {
@@ -1519,8 +1624,8 @@ exports[`Storyshots Molecules | Table Table Without Separators 1`] = `
 
 .c0 {
   border-bottom: 1px solid #000000;
-  padding-right: 8px;
-  padding-left: 6px;
+  padding-right: 4px;
+  padding-left: 2px;
   border-left: 2px solid transparent;
 }
 
@@ -1529,8 +1634,8 @@ exports[`Storyshots Molecules | Table Table Without Separators 1`] = `
 }
 
 .c5 {
-  padding-right: 8px;
-  padding-left: 6px;
+  padding-right: 4px;
+  padding-left: 2px;
   border-left: 2px solid transparent;
 }
 
@@ -1542,6 +1647,7 @@ exports[`Storyshots Molecules | Table Table Without Separators 1`] = `
   padding-top: 4px;
   padding-bottom: 4px;
   display: inline-block;
+  word-break: break-word;
 }
 
 <div
@@ -1624,6 +1730,17 @@ exports[`Storyshots Molecules | Table Tables With Different Densities 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  margin-left: -4px;
+  margin-right: -4px;
+}
+
+.c4 > * {
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+.c4 > *:not(:first-child) {
+  padding-top: 0;
 }
 
 .c5 {
@@ -1660,8 +1777,8 @@ exports[`Storyshots Molecules | Table Tables With Different Densities 1`] = `
 
 .c3 {
   border-bottom: 1px solid #EBEBE8;
-  padding-right: 8px;
-  padding-left: 6px;
+  padding-right: 4px;
+  padding-left: 2px;
   border-left: 2px solid transparent;
 }
 
@@ -1673,18 +1790,21 @@ exports[`Storyshots Molecules | Table Tables With Different Densities 1`] = `
   padding-top: 4px;
   padding-bottom: 4px;
   display: inline-block;
+  word-break: break-word;
 }
 
 .c8 {
   padding-top: 0px;
   padding-bottom: 0px;
   display: inline-block;
+  word-break: break-word;
 }
 
 .c9 {
   padding-top: 8px;
   padding-bottom: 8px;
   display: inline-block;
+  word-break: break-word;
 }
 
 .c0 {
@@ -1901,6 +2021,189 @@ exports[`Storyshots Molecules | Table Tables With Different Densities 1`] = `
         </div>
       </div>
     </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Molecules | Table Truncated Cell Content 1`] = `
+.c1 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-left: -4px;
+  margin-right: -4px;
+}
+
+.c1 > * {
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+.c1 > *:not(:first-child) {
+  padding-top: 0;
+}
+
+.c2 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+
+.c5 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -webkit-flex: 0 15%;
+  -ms-flex: 0 15%;
+  flex: 0 15%;
+}
+
+.c6 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -webkit-flex: 0 100px;
+  -ms-flex: 0 100px;
+  flex: 0 100px;
+}
+
+.c3 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #6E6E69;
+  margin: 0;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.3333333333333333;
+}
+
+.c0 {
+  border-bottom: 1px solid #000000;
+  padding-right: 4px;
+  padding-left: 2px;
+  border-left: 2px solid transparent;
+}
+
+.c0:hover {
+  background: #F5F5F5;
+}
+
+.c7 {
+  border-bottom: 1px solid #EBEBE8;
+  padding-right: 4px;
+  padding-left: 2px;
+  border-left: 2px solid transparent;
+}
+
+.c7:hover {
+  background: #F5F5F5;
+}
+
+.c4 {
+  padding-top: 4px;
+  padding-bottom: 4px;
+  display: inline-block;
+  word-break: break-word;
+}
+
+<div
+  role="table"
+>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    >
+      <div
+        className="c2"
+        role="columnheader"
+      >
+        <span
+          className="c3 c4"
+        >
+          Flex 1
+        </span>
+      </div>
+      <div
+        className="c5"
+        role="columnheader"
+      >
+        <span
+          className="c3 c4"
+        >
+          Fifteen percent
+        </span>
+      </div>
+      <div
+        className="c6"
+        role="columnheader"
+      >
+        <span
+          className="c3 c4"
+        >
+          Loooooooooooooong header set width
+        </span>
+      </div>
+      <div
+        className="c2"
+        role="columnheader"
+      >
+        <span
+          className="c3 c4"
+        >
+          Default
+        </span>
+      </div>
+    </div>
+  </div>
+  <div
+    className="c7"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c7"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c7"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
   </div>
 </div>
 `;

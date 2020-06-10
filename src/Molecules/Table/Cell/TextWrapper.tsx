@@ -11,6 +11,9 @@ const StyledTypography = styled(Typography).withConfig({
   padding-top: ${p => getDensityPaddings(p.density)}px;
   padding-bottom: ${p => getDensityPaddings(p.density)}px;
   display: inline-block;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
 `;
 
 export const TextWrapper: TextWrapperComponent = ({ fontSize = 'm', density = 'm', children }) => (

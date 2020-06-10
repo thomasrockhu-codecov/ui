@@ -11,6 +11,7 @@ const StyledTypography = styled(Typography).withConfig({
   padding-top: ${p => getDensityPaddings(p.density)}px;
   padding-bottom: ${p => getDensityPaddings(p.density)}px;
   display: inline-block;
+  word-break: break-word;
 `;
 
 export const TextWrapper: TextWrapperComponent = ({

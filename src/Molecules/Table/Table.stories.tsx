@@ -37,6 +37,44 @@ export const DefaultTable = () => (
   </Table>
 );
 
+export const TruncatedCellContent = () => (
+  <Table>
+    <Table.Row separatorColor={t => t.color.backgroundBlack}>
+      <Table.Header flex="1" columnId="column1">
+        Flex 1
+      </Table.Header>
+      <Table.Header flex="0 15%" columnId="column2">
+        Fifteen percent
+      </Table.Header>
+      <Table.Header flex="0 100px" columnId="column3">
+        Loooooooooooooong header set width
+      </Table.Header>
+      <Table.Header columnId="column4">Default</Table.Header>
+    </Table.Row>
+    <Table.Row>
+      <Table.Cell columnId="column1">Cell 1-1</Table.Cell>
+      <Table.Cell columnId="column2">
+        Very long cell content that should be truncated or ellipsized depepending on your language
+        preferences
+      </Table.Cell>
+      <Table.Cell columnId="column3">Cell 1-3</Table.Cell>
+      <Table.Cell columnId="column4">Cell 1-4</Table.Cell>
+    </Table.Row>
+    <Table.Row>
+      <Table.Cell columnId="column1">Cell 2-1</Table.Cell>
+      <Table.Cell columnId="column2">Cell 2-2</Table.Cell>
+      <Table.Cell columnId="column3">Cell 2-3</Table.Cell>
+      <Table.Cell columnId="column4">Cell 2-4</Table.Cell>
+    </Table.Row>
+    <Table.Row>
+      <Table.Cell columnId="column1">Cell 3-1</Table.Cell>
+      <Table.Cell columnId="column2">Cell 3-2</Table.Cell>
+      <Table.Cell columnId="column3">Cell 3-3</Table.Cell>
+      <Table.Cell columnId="column4">Cell 3-4</Table.Cell>
+    </Table.Row>
+  </Table>
+);
+
 export const DifferentAlignmentsTable = () => (
   <Table>
     <Table.Row separatorColor={t => t.color.backgroundBlack}>
