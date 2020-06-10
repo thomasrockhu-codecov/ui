@@ -1,9 +1,8 @@
 import React from 'react';
-
-export type Density = 's' | 'm' | 'l';
+import { FontSize, Density } from '../../shared/shared.types';
 
 export type TextWrapperProps = {
-  fontSize?: 'm' | 'l';
+  fontSize?: FontSize;
   density?: Density;
   sorted?: boolean;
 };

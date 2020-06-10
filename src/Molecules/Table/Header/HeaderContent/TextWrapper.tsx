@@ -1,14 +1,14 @@
 import React from 'react';
 import styled from 'styled-components';
 import { Typography } from '../../../..';
-import { TextWrapperProps, Density } from './HeaderContent.types';
+import { TextWrapperProps } from './HeaderContent.types';
 import {
   DENSITY_PADDING_LARGE,
   DENSITY_PADDING_SMALL,
   DENSITY_PADDING_MEDIUM,
 } from '../../shared/constants';
 
-const getDensityPaddings = (density: Density) => {
+const getDensityPaddings = (density: TextWrapperProps['density']) => {
   switch (density) {
     case 's':
       return DENSITY_PADDING_SMALL;
@@ -23,14 +23,14 @@ const getDensityPaddings = (density: Density) => {
 
 const StyledTypography = styled(Typography).withConfig({
   shouldForwardProp: p => !['density'].includes(p),
-})<{ density: Density }>`
+})<{ density: TextWrapperProps['density'] }>`
   padding-top: ${p => getDensityPaddings(p.density)}px;
   padding-bottom: ${p => getDensityPaddings(p.density)}px;
   display: inline-block;
 `;
 
 export const TextWrapper: React.FC<TextWrapperProps> = ({
-  fontSize,
+  fontSize = 'm',
   density = 'm',
   sorted,
   children,
