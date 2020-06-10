@@ -1,9 +1,9 @@
 import React from 'react';
 import styled from 'styled-components';
-import { Typography } from '../../../..';
-import { getDensityPaddings, getFontSizeTypographyType } from '../../shared/textUtils';
-import { Density } from '../../shared/shared.types';
-import { TextWrapperComponent } from './HeaderContent.types';
+import { Typography } from '../../..';
+import { TextWrapperComponent } from './Cell.types';
+import { getDensityPaddings, getFontSizeTypographyType } from '../shared/textUtils';
+import { Density } from '../shared/shared.types';
 
 const StyledTypography = styled(Typography).withConfig({
   shouldForwardProp: p => !['density'].includes(p),
@@ -13,17 +13,11 @@ const StyledTypography = styled(Typography).withConfig({
   display: inline-block;
 `;
 
-export const TextWrapper: TextWrapperComponent = ({
-  fontSize = 'm',
-  density = 'm',
-  sorted,
-  children,
-}) => (
+export const TextWrapper: TextWrapperComponent = ({ fontSize = 'm', density = 'm', children }) => (
   <StyledTypography
     type={getFontSizeTypographyType(fontSize)}
     density={density}
-    color={t => (sorted ? t.color.text : t.color.label)}
-    weight={sorted ? 'bold' : 'regular'}
+    color={t => t.color.text}
   >
     {children}
   </StyledTypography>

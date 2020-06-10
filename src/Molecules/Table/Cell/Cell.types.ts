@@ -1,4 +1,4 @@
-import { ReactNode } from 'react';
+import React, { ReactNode } from 'react';
 import { FontSize, Density } from '../shared/shared.types';
 
 type RenderPropArguments = { density: Density; fontSize: FontSize; columnId: string };
@@ -14,3 +14,10 @@ export type Props = {
 };
 
 export type CellComponent = React.FC<Props>;
+
+export type TextWrapperProps = {
+  fontSize?: FontSize;
+  density?: Density;
+};
+
+export type TextWrapperComponent = React.FC<TextWrapperProps>;
