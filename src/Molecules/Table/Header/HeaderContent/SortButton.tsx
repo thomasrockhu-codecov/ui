@@ -8,6 +8,7 @@ const StyledLink = styled.a`
   width: 100%;
 `;
 
+// TODO: Change this to an actual button for better a11y
 export const SortButton: React.FC<SortButtonProps> = ({ children, onClick }) => (
   <StyledLink
     href="#"
