@@ -37,13 +37,24 @@ exports[`Storyshots Molecules | Table Default Table 1`] = `
 }
 
 .c0 {
-  border-bottom: 1px solid #EBEBE8;
+  border-bottom: 1px solid #000000;
   padding-right: 8px;
   padding-left: 6px;
   border-left: 2px solid transparent;
 }
 
 .c0:hover {
+  background: #F5F5F5;
+}
+
+.c5 {
+  border-bottom: 1px solid #EBEBE8;
+  padding-right: 8px;
+  padding-left: 6px;
+  border-left: 2px solid transparent;
+}
+
+.c5:hover {
   background: #F5F5F5;
 }
 
@@ -94,6 +105,209 @@ exports[`Storyshots Molecules | Table Default Table 1`] = `
         </span>
       </div>
     </div>
+  </div>
+  <div
+    className="c5"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c5"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c5"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+</div>
+`;
+
+exports[`Storyshots Molecules | Table Different Alignments Table 1`] = `
+.c1 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c2 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+
+.c5 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+
+.c6 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+
+.c3 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #6E6E69;
+  margin: 0;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.3333333333333333;
+}
+
+.c0 {
+  border-bottom: 1px solid #000000;
+  padding-right: 8px;
+  padding-left: 6px;
+  border-left: 2px solid transparent;
+}
+
+.c0:hover {
+  background: #F5F5F5;
+}
+
+.c7 {
+  border-bottom: 1px solid #EBEBE8;
+  padding-right: 8px;
+  padding-left: 6px;
+  border-left: 2px solid transparent;
+}
+
+.c7:hover {
+  background: #F5F5F5;
+}
+
+.c4 {
+  padding-top: 4px;
+  padding-bottom: 4px;
+  display: inline-block;
+}
+
+<div
+  role="table"
+>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    >
+      <div
+        className="c2"
+        role="columnheader"
+      >
+        <span
+          className="c3 c4"
+        >
+          Left
+        </span>
+      </div>
+      <div
+        className="c5"
+        role="columnheader"
+      >
+        <span
+          className="c3 c4"
+        >
+          Right
+        </span>
+      </div>
+      <div
+        className="c5"
+        role="columnheader"
+      >
+        <span
+          className="c3 c4"
+        >
+          Right
+        </span>
+      </div>
+      <div
+        className="c6"
+        role="columnheader"
+      >
+        <span
+          className="c3 c4"
+        >
+          Center
+        </span>
+      </div>
+    </div>
+  </div>
+  <div
+    className="c7"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c7"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c7"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
   </div>
 </div>
 `;
@@ -1263,6 +1477,138 @@ exports[`Storyshots Molecules | Table Table With Different Rows 1`] = `
     >
       Default
     </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Molecules | Table Table Without Separators 1`] = `
+.c1 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c2 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+
+.c3 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #6E6E69;
+  margin: 0;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.3333333333333333;
+}
+
+.c0 {
+  border-bottom: 1px solid #000000;
+  padding-right: 8px;
+  padding-left: 6px;
+  border-left: 2px solid transparent;
+}
+
+.c0:hover {
+  background: #F5F5F5;
+}
+
+.c5 {
+  padding-right: 8px;
+  padding-left: 6px;
+  border-left: 2px solid transparent;
+}
+
+.c5:hover {
+  background: #F5F5F5;
+}
+
+.c4 {
+  padding-top: 4px;
+  padding-bottom: 4px;
+  display: inline-block;
+}
+
+<div
+  role="table"
+>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    >
+      <div
+        className="c2"
+        role="columnheader"
+      >
+        <span
+          className="c3 c4"
+        >
+          Header 1
+        </span>
+      </div>
+      <div
+        className="c2"
+        role="columnheader"
+      >
+        <span
+          className="c3 c4"
+        >
+          Header 2
+        </span>
+      </div>
+      <div
+        className="c2"
+        role="columnheader"
+      >
+        <span
+          className="c3 c4"
+        >
+          Header 3
+        </span>
+      </div>
+    </div>
+  </div>
+  <div
+    className="c5"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c5"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c5"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
   </div>
 </div>
 `;
