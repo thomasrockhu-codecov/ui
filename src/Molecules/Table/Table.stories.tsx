@@ -79,7 +79,7 @@ export const TruncatedCellContent = () => (
 const bigTableColumns = 10;
 const bigTableRows = 500;
 const bigTableData = [...Array(bigTableRows)].map((_, rowIndex) => {
-  const rowId = `${Math.random()
+  const rowId = `${rowIndex}_${Math.random()
     .toString(36)
     .substr(2, 9)}`;
   return [...Array(bigTableColumns)].reduce((acc, __, columnIndex) => {
