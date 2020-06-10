@@ -1,3 +1,10 @@
+## [2.49.1](https://github.com/nordnet/ui/compare/v2.49.0...v2.49.1) (2020-06-10)
+
+
+### Bug Fixes
+
+* add extra padded version of card with title and card with tabs ([b7764c7](https://github.com/nordnet/ui/commit/b7764c7))
+
 # [2.49.0](https://github.com/nordnet/ui/compare/v2.48.0...v2.49.0) (2020-06-10)
 
 
