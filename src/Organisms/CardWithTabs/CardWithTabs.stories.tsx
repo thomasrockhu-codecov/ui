@@ -51,7 +51,7 @@ withInitialActiveTabIndex.story = {
 };
 
 export const withExtraPadding = () => (
-  <CardWithTabs padded title="Title for the card" initialActiveTabIndex={0}>
+  <CardWithTabs variant="ariy" title="Title for the card" initialActiveTabIndex={0}>
     <CardWithTabs.Tab title="Tab title 1" onTitleClick={action('Clicked title1')}>
       1
     </CardWithTabs.Tab>

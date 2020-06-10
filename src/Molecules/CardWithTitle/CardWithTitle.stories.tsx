@@ -66,7 +66,7 @@ withComponentAsTitleStory.story = {
 };
 
 export const withExtraPadding = () => (
-  <CardWithTitle padded title="Title for the card">
+  <CardWithTitle variant="big" title="Title for the card">
     A CardWithTitle with extra padding
   </CardWithTitle>
 );

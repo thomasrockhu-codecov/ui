@@ -1,7 +1,8 @@
 import { Props as CardProps } from '../../Atoms/Card/Card.types';
 
 export type Props = {
-  padded?: boolean;
+  /** @default normal */
+  variant?: 'normal' | 'big';
   title: React.ReactNode;
 };
 

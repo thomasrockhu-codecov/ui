@@ -12,7 +12,8 @@ const StyledCard = styled(Card)`
 `;
 
 export const CardWithTitle: CardWithTitleComponent = props => {
-  const { title, padded = false, children, ...rest } = props;
+  const { title, variant = 'normal', children, ...rest } = props;
+  const isBig = variant === 'big';
 
   return (
     <StyledCard {...rest}>
@@ -20,7 +21,7 @@ export const CardWithTitle: CardWithTitleComponent = props => {
         pt={3}
         px={3}
         pb={2}
-        sm={{ ...(padded ? { pt: 10, px: 10, pb: 3 } : { pt: 4, px: 5 }) }}
+        sm={{ ...(isBig ? { pt: 10, px: 10, pb: 3 } : { pt: 4, px: 5 }) }}
         as="header"
       >
         {isElement(title) ? (
@@ -28,7 +29,7 @@ export const CardWithTitle: CardWithTitleComponent = props => {
         ) : (
           <>
             <Media query={t => t.media.greaterThan(t.breakpoints.sm)}>
-              <Typography type={padded ? 'title2' : 'title3'} weight="extrabold">
+              <Typography type={isBig ? 'title2' : 'title3'} weight="extrabold">
                 {title}
               </Typography>
             </Media>
@@ -42,7 +43,7 @@ export const CardWithTitle: CardWithTitleComponent = props => {
         )}
       </Box>
 
-      <Box px={3} pb={5} sm={{ ...(padded ? { px: 10, pb: 10 } : { px: 5 }) }}>
+      <Box px={3} pb={5} sm={{ ...(isBig ? { px: 10, pb: 10 } : { px: 5 }) }}>
         {children}
       </Box>
     </StyledCard>
