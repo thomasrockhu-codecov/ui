@@ -50,8 +50,8 @@ withInitialActiveTabIndex.story = {
   name: 'with initialActiveTabIndex',
 };
 
-export const withExtraPadding = () => (
-  <CardWithTabs variant="ariy" title="Title for the card" initialActiveTabIndex={0}>
+export const withVariantBig = () => (
+  <CardWithTabs variant="big" title="Title for the card" initialActiveTabIndex={0}>
     <CardWithTabs.Tab title="Tab title 1" onTitleClick={action('Clicked title1')}>
       1
     </CardWithTabs.Tab>
@@ -61,8 +61,8 @@ export const withExtraPadding = () => (
   </CardWithTabs>
 );
 
-withExtraPadding.story = {
-  name: 'with Extra Padding',
+withVariantBig.story = {
+  name: 'with Variant Big',
 };
 
 export const controlledBehaviour = () => {
