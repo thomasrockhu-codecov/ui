@@ -2937,9 +2937,9 @@ Array [
 }
 
 .c1 {
-  -webkit-transform: rotate(90deg);
-  -ms-transform: rotate(90deg);
-  transform: rotate(90deg);
+  -webkit-transform: rotate(undefineddeg);
+  -ms-transform: rotate(undefineddeg);
+  transform: rotate(undefineddeg);
 }
 
 <div
@@ -2978,9 +2978,9 @@ Array [
 }
 
 .c1 {
-  -webkit-transform: rotate(180deg);
-  -ms-transform: rotate(180deg);
-  transform: rotate(180deg);
+  -webkit-transform: rotate(undefineddeg);
+  -ms-transform: rotate(undefineddeg);
+  transform: rotate(undefineddeg);
 }
 
 <div
@@ -3117,15 +3117,15 @@ exports[`Storyshots Atoms | Icon Available icons 1`] = `
 }
 
 .c17 {
-  -webkit-transform: rotate(90deg);
-  -ms-transform: rotate(90deg);
-  transform: rotate(90deg);
+  -webkit-transform: rotate(undefineddeg);
+  -ms-transform: rotate(undefineddeg);
+  transform: rotate(undefineddeg);
 }
 
 .c18 {
-  -webkit-transform: rotate(180deg);
-  -ms-transform: rotate(180deg);
-  transform: rotate(180deg);
+  -webkit-transform: rotate(undefineddeg);
+  -ms-transform: rotate(undefineddeg);
+  transform: rotate(undefineddeg);
 }
 
 .c0 {
@@ -6148,9 +6148,9 @@ exports[`Storyshots Atoms | Icon Sort Arrow Descending 1`] = `
 }
 
 .c1 {
-  -webkit-transform: rotate(180deg);
-  -ms-transform: rotate(180deg);
-  transform: rotate(180deg);
+  -webkit-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  transform: rotate(0deg);
 }
 
 <span>
@@ -6226,9 +6226,9 @@ exports[`Storyshots Atoms | Icon Thin Arrow Left 1`] = `
 }
 
 .c1 {
-  -webkit-transform: rotate(90deg);
-  -ms-transform: rotate(90deg);
-  transform: rotate(90deg);
+  -webkit-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  transform: rotate(0deg);
 }
 
 <span>
