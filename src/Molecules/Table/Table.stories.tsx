@@ -14,10 +14,85 @@ export default {
 
 export const DefaultTable = () => (
   <Table>
-    <Table.Row>
+    <Table.Row separatorColor={t => t.color.backgroundBlack}>
       <Table.Header columnId="column1">Header 1</Table.Header>
       <Table.Header columnId="column2">Header 2</Table.Header>
       <Table.Header columnId="column3">Header 3</Table.Header>
+    </Table.Row>
+    <Table.Row>
+      <Table.Cell columnId="column1">Cell 1-1</Table.Cell>
+      <Table.Cell columnId="column2">Cell 1-2</Table.Cell>
+      <Table.Cell columnId="column3">Cell 1-3</Table.Cell>
+    </Table.Row>
+    <Table.Row>
+      <Table.Cell columnId="column1">Cell 2-1</Table.Cell>
+      <Table.Cell columnId="column2">Cell 2-2</Table.Cell>
+      <Table.Cell columnId="column3">Cell 2-3</Table.Cell>
+    </Table.Row>
+    <Table.Row>
+      <Table.Cell columnId="column1">Cell 3-1</Table.Cell>
+      <Table.Cell columnId="column2">Cell 3-2</Table.Cell>
+      <Table.Cell columnId="column3">Cell 3-3</Table.Cell>
+    </Table.Row>
+  </Table>
+);
+
+export const DifferentAlignmentsTable = () => (
+  <Table>
+    <Table.Row separatorColor={t => t.color.backgroundBlack}>
+      <Table.Header columnId="column1">Left</Table.Header>
+      <Table.Header columnId="column2" justifyContent="flex-end">
+        Right
+      </Table.Header>
+      <Table.Header columnId="column3" justifyContent="flex-end">
+        Right
+      </Table.Header>
+      <Table.Header columnId="column4" justifyContent="center">
+        Center
+      </Table.Header>
+    </Table.Row>
+    <Table.Row>
+      <Table.Cell columnId="column1">Cell 1-1</Table.Cell>
+      <Table.Cell columnId="column2">Cell 1-2</Table.Cell>
+      <Table.Cell columnId="column3">Cell 1-3</Table.Cell>
+      <Table.Cell columnId="column4">Cell 1-4</Table.Cell>
+    </Table.Row>
+    <Table.Row>
+      <Table.Cell columnId="column1">Cell 2-1</Table.Cell>
+      <Table.Cell columnId="column2">Cell 2-2</Table.Cell>
+      <Table.Cell columnId="column3">Cell 2-3</Table.Cell>
+      <Table.Cell columnId="column4">Cell 2-4</Table.Cell>
+    </Table.Row>
+    <Table.Row>
+      <Table.Cell columnId="column1">Cell 3-1</Table.Cell>
+      <Table.Cell columnId="column2">Cell 3-2</Table.Cell>
+      <Table.Cell columnId="column3">Cell 3-3</Table.Cell>
+      <Table.Cell columnId="column4">Cell 3-4</Table.Cell>
+    </Table.Row>
+  </Table>
+);
+
+export const TableWithoutSeparators = () => (
+  <Table>
+    <Table.Row separatorColor={t => t.color.backgroundBlack}>
+      <Table.Header columnId="column1">Header 1</Table.Header>
+      <Table.Header columnId="column2">Header 2</Table.Header>
+      <Table.Header columnId="column3">Header 3</Table.Header>
+    </Table.Row>
+    <Table.Row hideSeparator>
+      <Table.Cell columnId="column1">Cell 1-1</Table.Cell>
+      <Table.Cell columnId="column2">Cell 1-2</Table.Cell>
+      <Table.Cell columnId="column3">Cell 1-3</Table.Cell>
+    </Table.Row>
+    <Table.Row hideSeparator>
+      <Table.Cell columnId="column1">Cell 2-1</Table.Cell>
+      <Table.Cell columnId="column2">Cell 2-2</Table.Cell>
+      <Table.Cell columnId="column3">Cell 2-3</Table.Cell>
+    </Table.Row>
+    <Table.Row hideSeparator>
+      <Table.Cell columnId="column1">Cell 3-1</Table.Cell>
+      <Table.Cell columnId="column2">Cell 3-2</Table.Cell>
+      <Table.Cell columnId="column3">Cell 3-3</Table.Cell>
     </Table.Row>
   </Table>
 );

@@ -7,9 +7,9 @@ type Children = ReactNode | RenderFunc;
 
 export type Props = {
   children: Children;
-  className: string;
-  density: Density;
-  fontSize: FontSize;
+  className?: string;
+  density?: Density;
+  fontSize?: FontSize;
   columnId: string;
 };
 
