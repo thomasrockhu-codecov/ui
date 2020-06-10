@@ -30,6 +30,7 @@ import { CrossThin } from './components/CrossThin';
 import { DiagonalWithCircle } from './components/DiagonalWithCircle';
 import { DirectionDown } from './components/DirectionDown';
 import { DirectionUp } from './components/DirectionUp';
+import { ConfigurationSliders } from './components/ConfigurationSliders';
 import { Energy } from './components/Energy';
 import { ExternalLink } from './components/ExternalLink';
 import { EyeWithPlus } from './components/EyeWithPlus';
@@ -39,7 +40,9 @@ import { Filter } from './components/Filter';
 import { Financial } from './components/Financial';
 import { Flag } from './components/Flag';
 import { Globe } from './components/Globe';
+import { Guided } from './components/Guided';
 import { Hamburger } from './components/Hamburger';
+import { HighRisk } from './components/HighRisk';
 import { House } from './components/House';
 import { Healthcare } from './components/Healthcare';
 import { Increase } from './components/Increase';
@@ -48,7 +51,10 @@ import { Industrial } from './components/Industrial';
 import { InfoCircle } from './components/InfoCircle';
 import { Leaf } from './components/Leaf';
 import { LineGraph } from './components/LineGraph';
+import { LowRisk } from './components/LowRisk';
 import { Maximize } from './components/Maximize';
+import { MediumRisk } from './components/MediumRisk';
+import { Money } from './components/Money';
 import { Move } from './components/Move';
 import { Minimize } from './components/Minimize';
 import { Minus } from './components/Minus';
@@ -110,6 +116,7 @@ export default {
   DiagonalWithCircle,
   DirectionDown,
   DirectionUp,
+  ConfigurationSliders,
   Energy,
   ExternalLink,
   EyeWithPlus,
@@ -119,16 +126,21 @@ export default {
   Financial,
   Flag,
   Globe,
+  Guided,
   Hamburger,
   Healthcare,
+  HighRisk,
   House,
   Increase,
   Import,
   Industrial,
   InfoCircle,
   Leaf,
+  LowRisk,
   LineGraph,
   Maximize,
+  MediumRisk,
+  Money,
   Move,
   Minimize,
   Minus,
