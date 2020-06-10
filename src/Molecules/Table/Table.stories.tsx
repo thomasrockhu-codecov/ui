@@ -75,6 +75,43 @@ export const TruncatedCellContent = () => (
   </Table>
 );
 
+const bigTableColumns = 10;
+const bigTableRows = 500;
+const bigTableData = [...Array(bigTableRows)].map((_, rowIndex) => {
+  const rowId = `_${Math.random()
+    .toString(36)
+    .substr(2, 9)}`;
+  return [...Array(bigTableColumns)].reduce((acc, __, columnIndex) => {
+    const keyName = `value${columnIndex}`;
+    return { ...acc, rowId, [keyName]: { value: `Cell ${rowIndex}-${columnIndex}` } };
+  }, {});
+});
+
+const BigTableRow = ({ data }) => {
+  return (
+    <Table.Row>
+      {Object.keys(data).map((valueKey, index) => (
+        <Table.Cell key={data.id} columnId={`column${index}`}>
+          {data[valueKey].value}
+        </Table.Cell>
+      ))}
+    </Table.Row>
+  );
+};
+
+export const BigTable = () => (
+  <Table>
+    <Table.Row>
+      {[...Array(bigTableColumns)].map((_, index) => (
+        <Table.Header columnId={`column${index}`}>Header {index}</Table.Header>
+      ))}
+    </Table.Row>
+    {bigTableData.map(data => (
+      <BigTableRow key={data.rowId} data={data} />
+    ))}
+  </Table>
+);
+
 export const DifferentAlignmentsTable = () => (
   <Table>
     <Table.Row separatorColor={t => t.color.backgroundBlack}>
