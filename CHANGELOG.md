@@ -1,3 +1,10 @@
+## [2.49.2](https://github.com/nordnet/ui/compare/v2.49.1...v2.49.2) (2020-06-10)
+
+
+### Bug Fixes
+
+* update storyshot and rename icon ([d355d3c](https://github.com/nordnet/ui/commit/d355d3c))
+
 ## [2.49.1](https://github.com/nordnet/ui/compare/v2.49.0...v2.49.1) (2020-06-10)
 
 
