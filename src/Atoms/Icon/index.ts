@@ -40,7 +40,7 @@ import { Filter } from './components/Filter';
 import { Financial } from './components/Financial';
 import { Flag } from './components/Flag';
 import { Globe } from './components/Globe';
-import { Guided } from './components/Guided';
+import { Compass } from './components/Compass';
 import { Hamburger } from './components/Hamburger';
 import { HighRisk } from './components/HighRisk';
 import { House } from './components/House';
@@ -126,7 +126,7 @@ export default {
   Financial,
   Flag,
   Globe,
-  Guided,
+  Compass,
   Hamburger,
   Healthcare,
   HighRisk,
