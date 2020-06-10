@@ -3,8 +3,7 @@ import { FlexPropsType } from './ColumnProvider.types';
 
 export const useFlexCellProps = ({
   align,
-  // TODO: Unsupported Flexbox attribute (currently treated as HTML attribute instead of CSS), desired behaviour is achieved if alignContent is added to Flexbox sanitize.
-  // alignContent,
+  alignContent,
   alignItems,
   alignSelf,
   basis,
@@ -27,7 +26,7 @@ export const useFlexCellProps = ({
   const sharedProps = useMemo(
     () => ({
       align,
-      // alignContent,
+      alignContent,
       alignItems,
       alignSelf,
       basis,
@@ -49,7 +48,7 @@ export const useFlexCellProps = ({
     }),
     [
       align,
-      // alignContent,
+      alignContent,
       alignItems,
       alignSelf,
       basis,
