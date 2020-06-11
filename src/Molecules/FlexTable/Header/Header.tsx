@@ -10,9 +10,9 @@ import {
   useColumn,
   ACTION_SET_FLEX_PROPS,
   ACTION_SET_SORTING,
+  ACTION_SET_INITIAL_SORTING,
 } from '../shared/ColumnProvider';
 import { HeaderContent, TextWrapper, SortIcon, SortButton } from './HeaderContent';
-import { ACTION_SET_INITIAL_SORTING } from '../shared/ColumnProvider/ColumnProvider';
 
 const SORT_ORDERS: SortOrder[] = [SORT_ORDER_NONE, SORT_ORDER_ASCENDING, SORT_ORDER_DESCENDING];
 
