@@ -17,11 +17,11 @@ export default {
 
 export const DefaultTable = () => (
   <FlexTable>
-    <FlexTable.Row separatorColor={t => t.color.backgroundBlack}>
+    <FlexTable.HeaderRow>
       <FlexTable.Header columnId="column1">Header 1</FlexTable.Header>
       <FlexTable.Header columnId="column2">Header 2</FlexTable.Header>
       <FlexTable.Header columnId="column3">Header 3</FlexTable.Header>
-    </FlexTable.Row>
+    </FlexTable.HeaderRow>
     <FlexTable.Row>
       <FlexTable.Cell columnId="column1">Cell 1-1</FlexTable.Cell>
       <FlexTable.Cell columnId="column2">Cell 1-2</FlexTable.Cell>
@@ -42,11 +42,11 @@ export const DefaultTable = () => (
 
 export const TableWithNonHiglightableRows = () => (
   <FlexTable>
-    <FlexTable.Row separatorColor={t => t.color.backgroundBlack}>
+    <FlexTable.HeaderRow>
       <FlexTable.Header columnId="column1">Header 1</FlexTable.Header>
       <FlexTable.Header columnId="column2">Header 2</FlexTable.Header>
       <FlexTable.Header columnId="column3">Header 3</FlexTable.Header>
-    </FlexTable.Row>
+    </FlexTable.HeaderRow>
     <FlexTable.Row>
       <FlexTable.Cell columnId="column1">Cell 1-1</FlexTable.Cell>
       <FlexTable.Cell columnId="column2">Cell 1-2</FlexTable.Cell>
@@ -67,7 +67,7 @@ export const TableWithNonHiglightableRows = () => (
 
 export const TruncatedCellContent = () => (
   <FlexTable>
-    <FlexTable.Row separatorColor={t => t.color.backgroundBlack}>
+    <FlexTable.HeaderRow>
       <FlexTable.Header flex="1" columnId="column1">
         Flex 1
       </FlexTable.Header>
@@ -78,7 +78,7 @@ export const TruncatedCellContent = () => (
         Loooooooooooooong header set width
       </FlexTable.Header>
       <FlexTable.Header columnId="column4">Default</FlexTable.Header>
-    </FlexTable.Row>
+    </FlexTable.HeaderRow>
     <FlexTable.Row>
       <FlexTable.Cell columnId="column1">Cell 1-1</FlexTable.Cell>
       <FlexTable.Cell columnId="column2">
@@ -141,11 +141,11 @@ export const BigTable = () => {
     ]);
     return (
       <FlexTable>
-        <FlexTable.Row>
+        <FlexTable.HeaderRow>
           {[...Array(columnsLength)].map((_, index) => (
             <FlexTable.Header columnId={`column${index + 1}`}>Header {index + 1}</FlexTable.Header>
           ))}
-        </FlexTable.Row>
+        </FlexTable.HeaderRow>
         {tableData.map(data => (
           <BigTableRow key={data.rowId} data={data} />
         ))}
@@ -157,7 +157,7 @@ export const BigTable = () => {
 
 export const DifferentAlignmentsTable = () => (
   <FlexTable>
-    <FlexTable.Row separatorColor={t => t.color.backgroundBlack}>
+    <FlexTable.HeaderRow>
       <FlexTable.Header columnId="column1">Left</FlexTable.Header>
       <FlexTable.Header columnId="column2" justifyContent="flex-end">
         Right
@@ -168,7 +168,7 @@ export const DifferentAlignmentsTable = () => (
       <FlexTable.Header columnId="column4" justifyContent="center">
         Center
       </FlexTable.Header>
-    </FlexTable.Row>
+    </FlexTable.HeaderRow>
     <FlexTable.Row>
       <FlexTable.Cell columnId="column1">Cell 1-1</FlexTable.Cell>
       <FlexTable.Cell columnId="column2">Cell 1-2</FlexTable.Cell>
@@ -192,11 +192,11 @@ export const DifferentAlignmentsTable = () => (
 
 export const TableWithoutSeparators = () => (
   <FlexTable>
-    <FlexTable.Row separatorColor={t => t.color.backgroundBlack}>
+    <FlexTable.HeaderRow>
       <FlexTable.Header columnId="column1">Header 1</FlexTable.Header>
       <FlexTable.Header columnId="column2">Header 2</FlexTable.Header>
       <FlexTable.Header columnId="column3">Header 3</FlexTable.Header>
-    </FlexTable.Row>
+    </FlexTable.HeaderRow>
     <FlexTable.Row hideSeparator>
       <FlexTable.Cell columnId="column1">Cell 1-1</FlexTable.Cell>
       <FlexTable.Cell columnId="column2">Cell 1-2</FlexTable.Cell>
@@ -227,18 +227,27 @@ const StyledFlexTable = styled(FlexTable)`
 export const TablesWithDifferentDensities = () => (
   <StyledDiv>
     <Typography type="title3">Default (Medium)</Typography>
-
     <StyledFlexTable>
-      <FlexTable.Row>
+      <FlexTable.HeaderRow>
         <FlexTable.Header columnId="column1">Header 1</FlexTable.Header>
         <FlexTable.Header columnId="column2">Header 2</FlexTable.Header>
         <FlexTable.Header columnId="column3">Header 3</FlexTable.Header>
+      </FlexTable.HeaderRow>
+      <FlexTable.Row>
+        <FlexTable.Cell columnId="column1">Cell 1-1</FlexTable.Cell>
+        <FlexTable.Cell columnId="column2">Cell 1-2</FlexTable.Cell>
+        <FlexTable.Cell columnId="column3">Cell 1-3</FlexTable.Cell>
+      </FlexTable.Row>
+      <FlexTable.Row>
+        <FlexTable.Cell columnId="column1">Cell 2-1</FlexTable.Cell>
+        <FlexTable.Cell columnId="column2">Cell 2-2</FlexTable.Cell>
+        <FlexTable.Cell columnId="column3">Cell 2-3</FlexTable.Cell>
       </FlexTable.Row>
     </StyledFlexTable>
 
     <Typography type="title3">Small</Typography>
     <StyledFlexTable>
-      <FlexTable.Row>
+      <FlexTable.HeaderRow>
         <FlexTable.Header columnId="column1" density="s">
           Header 1
         </FlexTable.Header>
@@ -248,12 +257,34 @@ export const TablesWithDifferentDensities = () => (
         <FlexTable.Header columnId="column3" density="s">
           Header 3
         </FlexTable.Header>
+      </FlexTable.HeaderRow>
+      <FlexTable.Row>
+        <FlexTable.Cell columnId="column1" density="s">
+          Cell 1-1
+        </FlexTable.Cell>
+        <FlexTable.Cell columnId="column2" density="s">
+          Cell 1-2
+        </FlexTable.Cell>
+        <FlexTable.Cell columnId="column3" density="s">
+          Cell 1-3
+        </FlexTable.Cell>
+      </FlexTable.Row>
+      <FlexTable.Row>
+        <FlexTable.Cell columnId="column1" density="s">
+          Cell 2-1
+        </FlexTable.Cell>
+        <FlexTable.Cell columnId="column2" density="s">
+          Cell 2-2
+        </FlexTable.Cell>
+        <FlexTable.Cell columnId="column3" density="s">
+          Cell 2-3
+        </FlexTable.Cell>
       </FlexTable.Row>
     </StyledFlexTable>
 
     <Typography type="title3">Medium</Typography>
     <StyledFlexTable>
-      <FlexTable.Row>
+      <FlexTable.HeaderRow>
         <FlexTable.Header columnId="column1" density="m">
           Header 1
         </FlexTable.Header>
@@ -263,12 +294,34 @@ export const TablesWithDifferentDensities = () => (
         <FlexTable.Header columnId="column3" density="m">
           Header 3
         </FlexTable.Header>
+      </FlexTable.HeaderRow>
+      <FlexTable.Row>
+        <FlexTable.Cell columnId="column1" density="m">
+          Cell 1-1
+        </FlexTable.Cell>
+        <FlexTable.Cell columnId="column2" density="m">
+          Cell 1-2
+        </FlexTable.Cell>
+        <FlexTable.Cell columnId="column3" density="m">
+          Cell 1-3
+        </FlexTable.Cell>
+      </FlexTable.Row>
+      <FlexTable.Row>
+        <FlexTable.Cell columnId="column1" density="m">
+          Cell 2-1
+        </FlexTable.Cell>
+        <FlexTable.Cell columnId="column2" density="m">
+          Cell 2-2
+        </FlexTable.Cell>
+        <FlexTable.Cell columnId="column3" density="m">
+          Cell 2-3
+        </FlexTable.Cell>
       </FlexTable.Row>
     </StyledFlexTable>
 
     <Typography type="title3">Large</Typography>
     <StyledFlexTable>
-      <FlexTable.Row>
+      <FlexTable.HeaderRow>
         <FlexTable.Header columnId="column1" density="l">
           Header 1
         </FlexTable.Header>
@@ -278,6 +331,28 @@ export const TablesWithDifferentDensities = () => (
         <FlexTable.Header columnId="column3" density="l">
           Header 3
         </FlexTable.Header>
+      </FlexTable.HeaderRow>
+      <FlexTable.Row>
+        <FlexTable.Cell columnId="column1" density="l">
+          Cell 1-1
+        </FlexTable.Cell>
+        <FlexTable.Cell columnId="column2" density="l">
+          Cell 1-2
+        </FlexTable.Cell>
+        <FlexTable.Cell columnId="column3" density="l">
+          Cell 1-3
+        </FlexTable.Cell>
+      </FlexTable.Row>
+      <FlexTable.Row>
+        <FlexTable.Cell columnId="column1" density="l">
+          Cell 2-1
+        </FlexTable.Cell>
+        <FlexTable.Cell columnId="column2" density="l">
+          Cell 2-2
+        </FlexTable.Cell>
+        <FlexTable.Cell columnId="column3" density="l">
+          Cell 2-3
+        </FlexTable.Cell>
       </FlexTable.Row>
     </StyledFlexTable>
   </StyledDiv>
@@ -285,7 +360,7 @@ export const TablesWithDifferentDensities = () => (
 
 export const TableWithDifferentRows = () => (
   <FlexTable>
-    <FlexTable.Row separatorColor={t => t.color.text}>Separator color set</FlexTable.Row>
+    <FlexTable.Row separatorColor={t => t.color.barChartColor1}>Separator color set</FlexTable.Row>
     <FlexTable.Row>Default</FlexTable.Row>
     <FlexTable.Row hideSeparator>Separator hidden</FlexTable.Row>
     <FlexTable.Row>Default</FlexTable.Row>
@@ -327,7 +402,7 @@ export const TableHeader = () => {
   );
   return (
     <FlexTable>
-      <FlexTable.Row>
+      <FlexTable.HeaderRow>
         <FlexTable.Header columnId="column1" flex="1">
           Table header 1 flex 1
         </FlexTable.Header>
@@ -339,14 +414,14 @@ export const TableHeader = () => {
         <FlexTable.Header columnId="column5">
           <Typography type="title2">I&apos;m a component</Typography>
         </FlexTable.Header>
-      </FlexTable.Row>
+      </FlexTable.HeaderRow>
     </FlexTable>
   );
 };
 
 export const SortableHeadersUncontrolled = () => (
   <FlexTable>
-    <FlexTable.Row>
+    <FlexTable.HeaderRow>
       <FlexTable.Header columnId="column1" sortable>
         Uncontrolled 1
       </FlexTable.Header>
@@ -363,7 +438,7 @@ export const SortableHeadersUncontrolled = () => (
       <FlexTable.Header columnId="column4" sortable={false}>
         Non sortable
       </FlexTable.Header>
-    </FlexTable.Row>
+    </FlexTable.HeaderRow>
   </FlexTable>
 );
 
@@ -382,7 +457,7 @@ export const SortableHeaderControlled = () => {
 
     return (
       <FlexTable>
-        <FlexTable.Row>
+        <FlexTable.HeaderRow>
           <FlexTable.Header
             columnId="column1"
             sortable
@@ -410,7 +485,7 @@ export const SortableHeaderControlled = () => {
           >
             Controlled3
           </FlexTable.Header>
-        </FlexTable.Row>
+        </FlexTable.HeaderRow>
       </FlexTable>
     );
   };
@@ -440,7 +515,7 @@ export const SortableHeaderOnlyAscendingDescending = () => {
 
     return (
       <FlexTable>
-        <FlexTable.Row>
+        <FlexTable.HeaderRow>
           <FlexTable.Header
             columnId="column1"
             sortable
@@ -468,7 +543,7 @@ export const SortableHeaderOnlyAscendingDescending = () => {
           >
             Controlled3
           </FlexTable.Header>
-        </FlexTable.Row>
+        </FlexTable.HeaderRow>
       </FlexTable>
     );
   };

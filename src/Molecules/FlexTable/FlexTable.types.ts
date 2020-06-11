@@ -12,6 +12,7 @@ export type Props = {
 
 export type FlexTableComponents = {
   Header: HeaderComponent;
+  HeaderRow: RowComponent;
   Row: RowComponent;
   Cell: CellComponent;
   CONSTANTS: typeof constants;
