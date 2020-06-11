@@ -78,14 +78,14 @@ export const TruncatedCellContent = () => (
   </FlexTable>
 );
 
-const generateUniqueId = () =>
-  `_${Math.random()
+const generateUniqueId = (rowIndex: number) =>
+  `${rowIndex}_${Math.random()
     .toString(36)
     .substr(2, 9)}`;
 
 const generateTableData = (rowsLength: number, columnsLength: number) =>
   [...Array(rowsLength)].map((_, rowIndex) => {
-    const rowId = generateUniqueId();
+    const rowId = generateUniqueId(rowIndex);
     return [...Array(columnsLength)].reduce((acc, __, columnIndex) => {
       const keyName = `value${columnIndex + 1}`;
       return { ...acc, rowId, [keyName]: { value: `Cell ${rowIndex + 1}-${columnIndex + 1}` } };
