@@ -7,6 +7,7 @@ type Props = {
   hideSeparator?: boolean;
   expandableContent?: ReactNode;
   expanded?: boolean;
+  hoverHighlight?: boolean;
   separatorColor?: ColorFn;
 } & HtmlProps;
 

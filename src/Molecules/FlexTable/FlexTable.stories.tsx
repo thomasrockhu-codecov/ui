@@ -40,6 +40,31 @@ export const DefaultTable = () => (
   </FlexTable>
 );
 
+export const TableWithNonHiglightableRows = () => (
+  <FlexTable>
+    <FlexTable.Row separatorColor={t => t.color.backgroundBlack}>
+      <FlexTable.Header columnId="column1">Header 1</FlexTable.Header>
+      <FlexTable.Header columnId="column2">Header 2</FlexTable.Header>
+      <FlexTable.Header columnId="column3">Header 3</FlexTable.Header>
+    </FlexTable.Row>
+    <FlexTable.Row>
+      <FlexTable.Cell columnId="column1">Cell 1-1</FlexTable.Cell>
+      <FlexTable.Cell columnId="column2">Cell 1-2</FlexTable.Cell>
+      <FlexTable.Cell columnId="column3">Cell 1-3</FlexTable.Cell>
+    </FlexTable.Row>
+    <FlexTable.Row hoverHighlight={false}>
+      <FlexTable.Cell columnId="column1">No highlight 2-1</FlexTable.Cell>
+      <FlexTable.Cell columnId="column2">No highlight 2-2</FlexTable.Cell>
+      <FlexTable.Cell columnId="column3">No highlight 2-3</FlexTable.Cell>
+    </FlexTable.Row>
+    <FlexTable.Row>
+      <FlexTable.Cell columnId="column1">Cell 3-1</FlexTable.Cell>
+      <FlexTable.Cell columnId="column2">Cell 3-2</FlexTable.Cell>
+      <FlexTable.Cell columnId="column3">Cell 3-3</FlexTable.Cell>
+    </FlexTable.Row>
+  </FlexTable>
+);
+
 export const TruncatedCellContent = () => (
   <FlexTable>
     <FlexTable.Row separatorColor={t => t.color.backgroundBlack}>
