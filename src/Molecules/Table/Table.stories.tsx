@@ -1,6 +1,7 @@
-import React, { useState } from 'react';
+import React, { useState, useMemo } from 'react';
 import R from 'ramda';
 import styled from 'styled-components';
+import { number, withKnobs } from '@storybook/addon-knobs';
 import Table from './Table';
 import { Button, Typography, Flag } from '../..';
 import { SortOrder } from './Header/HeaderContent/HeaderContent.types';
@@ -8,6 +9,7 @@ import { OnSort } from './Header/Header.types';
 
 export default {
   title: 'Molecules | Table',
+  decorators: [withKnobs],
   parameters: {
     component: Table,
   },
@@ -76,24 +78,26 @@ export const TruncatedCellContent = () => (
   </Table>
 );
 
-const bigTableColumns = 10;
-const bigTableRows = 500;
-const bigTableData = [...Array(bigTableRows)].map((_, rowIndex) => {
-  const rowId = `${rowIndex}_${Math.random()
+const generateUniqueId = () =>
+  `_${Math.random()
     .toString(36)
     .substr(2, 9)}`;
-  return [...Array(bigTableColumns)].reduce((acc, __, columnIndex) => {
-    const keyName = `value${columnIndex}`;
-    return { ...acc, rowId, [keyName]: { value: `Cell ${rowIndex}-${columnIndex}` } };
-  }, {});
-});
 
-const BigTableRow = ({ data }: { data: any }) => {
+const generateTableData = (rowsLength: number, columnsLength: number) =>
+  [...Array(rowsLength)].map((_, rowIndex) => {
+    const rowId = generateUniqueId();
+    return [...Array(columnsLength)].reduce((acc, __, columnIndex) => {
+      const keyName = `value${columnIndex + 1}`;
+      return { ...acc, rowId, [keyName]: { value: `Cell ${rowIndex + 1}-${columnIndex + 1}` } };
+    }, {});
+  });
+
+const BigTableRow = ({ data }: any) => {
   return (
     <Table.Row>
       {Object.keys(R.omit(['rowId'], data)).map((valueKey, index) => {
         return (
-          <Table.Cell key={data.id} columnId={`column${index}`}>
+          <Table.Cell key={data.id} columnId={`column${index + 1}`}>
             {data[valueKey].value}
           </Table.Cell>
         );
@@ -103,18 +107,27 @@ const BigTableRow = ({ data }: { data: any }) => {
 };
 
 export const BigTable = () => {
-  return (
-    <Table>
-      <Table.Row>
-        {[...Array(bigTableColumns)].map((_, index) => (
-          <Table.Header columnId={`column${index}`}>Header {index}</Table.Header>
+  const ReactComponent = () => {
+    const rowsLength = number('Number of rows', 500);
+    const columnsLength = number('Number of columns', 10);
+    const tableData = useMemo(() => generateTableData(rowsLength, columnsLength), [
+      rowsLength,
+      columnsLength,
+    ]);
+    return (
+      <Table>
+        <Table.Row>
+          {[...Array(columnsLength)].map((_, index) => (
+            <Table.Header columnId={`column${index + 1}`}>Header {index + 1}</Table.Header>
+          ))}
+        </Table.Row>
+        {tableData.map(data => (
+          <BigTableRow key={data.rowId} data={data} />
         ))}
-      </Table.Row>
-      {bigTableData.map(data => (
-        <BigTableRow key={data.rowId} data={data} />
-      ))}
-    </Table>
-  );
+      </Table>
+    );
+  };
+  return <ReactComponent />;
 };
 
 export const DifferentAlignmentsTable = () => (

@@ -1,4 +1,5 @@
 import { useMemo } from 'react';
+import * as R from 'ramda';
 import { FlexPropsType } from './ColumnProvider.types';
 
 export const useFlexCellProps = ({
@@ -24,28 +25,29 @@ export const useFlexCellProps = ({
   wrap = 'nowrap',
 }: Partial<FlexPropsType>): Partial<FlexPropsType> => {
   const sharedProps = useMemo(
-    () => ({
-      align,
-      alignContent,
-      alignItems,
-      alignSelf,
-      basis,
-      container,
-      direction,
-      flex,
-      grow,
-      gutter,
-      height,
-      item,
-      justifyContent,
-      lg,
-      md,
-      order,
-      shrink,
-      size,
-      sm,
-      wrap,
-    }),
+    () =>
+      R.filter(val => val !== undefined, {
+        align,
+        alignContent,
+        alignItems,
+        alignSelf,
+        basis,
+        container,
+        direction,
+        flex,
+        grow,
+        gutter,
+        height,
+        item,
+        justifyContent,
+        lg,
+        md,
+        order,
+        shrink,
+        size,
+        sm,
+        wrap,
+      }),
     [
       align,
       alignContent,
