@@ -12,8 +12,6 @@ const StyledRow = styled('div').withConfig({
   ${p =>
     !p.hideSeparator && !p.expanded ? `border-bottom: 1px solid ${p.separatorColor(p.theme)}` : ''};
 
-  ${p => (p.expanded ? p.theme.color.cta : 'transparent')};
-
   ${p =>
     p.hoverHighlight &&
     `&:hover {
@@ -22,7 +20,8 @@ const StyledRow = styled('div').withConfig({
 
   padding-right: ${p => p.theme.spacing.unit(1)}px;
   padding-left: ${p => p.theme.spacing.unit(0.5)}px;
-  border-left: ${p => p.theme.spacing.unit(0.5)}px solid;
+  border-left: ${p => p.theme.spacing.unit(0.5)}px solid
+    ${p => (p.expanded ? p.theme.color.cta : 'transparent')};
 `;
 
 export const Row: RowComponent = ({
