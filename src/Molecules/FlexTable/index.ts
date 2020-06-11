@@ -1,3 +1,3 @@
-import { Row } from './Row';
+import { Row, HeaderRow } from './Row';
 
-export default { Row };
+export default { Row, HeaderRow };

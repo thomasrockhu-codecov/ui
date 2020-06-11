@@ -11,7 +11,7 @@ const StyledFlexbox = styled(Flexbox)`
   overflow: hidden;
 `;
 
-const Cell: CellComponent = ({ children, className, density, fontSize, columnId }) => {
+const Cell: CellComponent = ({ children, className, fontSize, columnId }) => {
   const [columnState] = useColumn(columnId);
 
   if (!R.prop('flexProps', columnState)) {
@@ -22,9 +22,9 @@ const Cell: CellComponent = ({ children, className, density, fontSize, columnId 
     <StyledFlexbox className={className} role="cell" {...columnState.flexProps}>
       {isElement(children) && children}
       {isFunction(children) ? (
-        children({ density, fontSize, columnId })
+        children({ fontSize, columnId })
       ) : (
-        <TextWrapper fontSize={fontSize} density={density}>
+        <TextWrapper fontSize={fontSize}>
           {children}
         </TextWrapper>
       )}

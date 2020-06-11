@@ -1,22 +1,27 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { Row } from './Row';
 import { RowComponent } from './Row.types';
+import { FlexTableContext } from '../../../../dist/types/Molecules/Table/shared/FlexTableContext';
 
 export const HeaderRow: RowComponent = ({
   className,
   hoverHighlight = false,
   hideSeparator = false,
-  separatorColor = theme => theme.color.text,
+  separatorColor = (theme) => theme.color.text,
   children,
   ...htmlProps
-}) => (
-  <Row
-    className={className}
-    hoverHighlight={hoverHighlight}
-    hideSeparator={hideSeparator}
-    separatorColor={separatorColor}
-    {...htmlProps}
-  >
-    {children}
-  </Row>
-);
+}) => {
+  const { density } = useContext(FlexTableContext);
+  return (
+    <Row
+      className={className}
+      hoverHighlight={hoverHighlight}
+      hideSeparator={hideSeparator}
+      separatorColor={separatorColor}
+      density={density}
+      {...htmlProps}
+    >
+      {children}
+    </Row>
+  );
+};

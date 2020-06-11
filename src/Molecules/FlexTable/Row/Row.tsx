@@ -3,25 +3,29 @@ import styled from 'styled-components';
 import { RowComponent } from './Row.types';
 import { Box, Flexbox } from '../../../index';
 import { ColorFn } from '../../../common/Types/sharedTypes';
+import { getDensityPaddings } from '../shared/textUtils';
+import {Density} from "../shared/shared.types";
 
 /* the cells are padded by row gutter 1 unit (4px) */
 const StyledRow = styled('div').withConfig({
-  shouldForwardProp: prop =>
-    !['hideSeparator', 'expanded', 'separatorColor', 'hoverHighlight'].includes(prop),
-})<{ hideSeparator: boolean; expanded: boolean; separatorColor: ColorFn; hoverHighlight: boolean }>`
-  ${p =>
+  shouldForwardProp: (prop) =>
+    !['hideSeparator', 'expanded', 'separatorColor', 'hoverHighlight', 'density'].includes(prop),
+})<{ hideSeparator: boolean; expanded: boolean; separatorColor: ColorFn; hoverHighlight: boolean; density: Density; }>`
+  ${(p) =>
     !p.hideSeparator && !p.expanded ? `border-bottom: 1px solid ${p.separatorColor(p.theme)}` : ''};
 
-  ${p =>
+  ${(p) =>
     p.hoverHighlight &&
     `&:hover {
         background: ${p.theme.color.tableRowHover};
       }`};
 
-  padding-right: ${p => p.theme.spacing.unit(1)}px;
-  padding-left: ${p => p.theme.spacing.unit(0.5)}px;
-  border-left: ${p => p.theme.spacing.unit(0.5)}px solid
-    ${p => (p.expanded ? p.theme.color.cta : 'transparent')};
+  padding-top: ${(p) => getDensityPaddings(p.density)}px;
+  padding-right: ${(p) => p.theme.spacing.unit(1)}px;
+  padding-bottom: ${(p) => getDensityPaddings(p.density)}px;
+  padding-left: ${(p) => p.theme.spacing.unit(0.5)}px;
+  border-left: ${(p) => p.theme.spacing.unit(0.5)}px solid
+    ${(p) => (p.expanded ? p.theme.color.cta : 'transparent')};
 `;
 
 export const Row: RowComponent = ({
@@ -29,8 +33,9 @@ export const Row: RowComponent = ({
   expanded = false,
   hoverHighlight = true,
   hideSeparator = false,
-  separatorColor = theme => theme.color.divider,
+  separatorColor = (theme) => theme.color.divider,
   expandableContent,
+  density,
   children,
   ...htmlProps
 }) => {
@@ -42,6 +47,7 @@ export const Row: RowComponent = ({
       expanded={expanded}
       hoverHighlight={hoverHighlight}
       separatorColor={separatorColor}
+      density={density}
       {...htmlProps}
     >
       <Flexbox container gutter={2} alignItems="center">

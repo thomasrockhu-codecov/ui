@@ -1,9 +1,8 @@
 import React from 'react';
-import { FontSize, Density } from '../../shared/shared.types';
+import { FontSize } from '../../shared/shared.types';
 
 export type TextWrapperProps = {
   fontSize?: FontSize;
-  density?: Density;
   sorted?: boolean;
 };
 
