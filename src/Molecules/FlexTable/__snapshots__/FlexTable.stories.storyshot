@@ -1,0 +1,6399 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Molecules | FlexTable Big Table 1`] = `
+.c1 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-left: -4px;
+  margin-right: -4px;
+}
+
+.c1 > * {
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+.c1 > *:not(:first-child) {
+  padding-top: 0;
+}
+
+.c2 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+
+.c3 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #6E6E69;
+  margin: 0;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.3333333333333333;
+}
+
+.c0 {
+  border-bottom: 1px solid #EBEBE8;
+  padding-right: 4px;
+  padding-left: 2px;
+  border-left: 2px solid transparent;
+}
+
+.c0:hover {
+  background: #F5F5F5;
+}
+
+.c4 {
+  padding-top: 4px;
+  padding-bottom: 4px;
+  display: inline-block;
+  word-break: break-word;
+}
+
+<div
+  role="table"
+>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    >
+      <div
+        className="c2"
+        role="columnheader"
+      >
+        <span
+          className="c3 c4"
+        >
+          Header 
+          1
+        </span>
+      </div>
+      <div
+        className="c2"
+        role="columnheader"
+      >
+        <span
+          className="c3 c4"
+        >
+          Header 
+          2
+        </span>
+      </div>
+      <div
+        className="c2"
+        role="columnheader"
+      >
+        <span
+          className="c3 c4"
+        >
+          Header 
+          3
+        </span>
+      </div>
+      <div
+        className="c2"
+        role="columnheader"
+      >
+        <span
+          className="c3 c4"
+        >
+          Header 
+          4
+        </span>
+      </div>
+      <div
+        className="c2"
+        role="columnheader"
+      >
+        <span
+          className="c3 c4"
+        >
+          Header 
+          5
+        </span>
+      </div>
+      <div
+        className="c2"
+        role="columnheader"
+      >
+        <span
+          className="c3 c4"
+        >
+          Header 
+          6
+        </span>
+      </div>
+      <div
+        className="c2"
+        role="columnheader"
+      >
+        <span
+          className="c3 c4"
+        >
+          Header 
+          7
+        </span>
+      </div>
+      <div
+        className="c2"
+        role="columnheader"
+      >
+        <span
+          className="c3 c4"
+        >
+          Header 
+          8
+        </span>
+      </div>
+      <div
+        className="c2"
+        role="columnheader"
+      >
+        <span
+          className="c3 c4"
+        >
+          Header 
+          9
+        </span>
+      </div>
+      <div
+        className="c2"
+        role="columnheader"
+      >
+        <span
+          className="c3 c4"
+        >
+          Header 
+          10
+        </span>
+      </div>
+    </div>
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+</div>
+`;
+
+exports[`Storyshots Molecules | FlexTable Default Table 1`] = `
+.c1 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-left: -4px;
+  margin-right: -4px;
+}
+
+.c1 > * {
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+.c1 > *:not(:first-child) {
+  padding-top: 0;
+}
+
+.c2 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+
+.c3 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #6E6E69;
+  margin: 0;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.3333333333333333;
+}
+
+.c0 {
+  border-bottom: 1px solid #000000;
+  padding-right: 4px;
+  padding-left: 2px;
+  border-left: 2px solid transparent;
+}
+
+.c0:hover {
+  background: #F5F5F5;
+}
+
+.c5 {
+  border-bottom: 1px solid #EBEBE8;
+  padding-right: 4px;
+  padding-left: 2px;
+  border-left: 2px solid transparent;
+}
+
+.c5:hover {
+  background: #F5F5F5;
+}
+
+.c4 {
+  padding-top: 4px;
+  padding-bottom: 4px;
+  display: inline-block;
+  word-break: break-word;
+}
+
+<div
+  role="table"
+>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    >
+      <div
+        className="c2"
+        role="columnheader"
+      >
+        <span
+          className="c3 c4"
+        >
+          Header 1
+        </span>
+      </div>
+      <div
+        className="c2"
+        role="columnheader"
+      >
+        <span
+          className="c3 c4"
+        >
+          Header 2
+        </span>
+      </div>
+      <div
+        className="c2"
+        role="columnheader"
+      >
+        <span
+          className="c3 c4"
+        >
+          Header 3
+        </span>
+      </div>
+    </div>
+  </div>
+  <div
+    className="c5"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c5"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c5"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+</div>
+`;
+
+exports[`Storyshots Molecules | FlexTable Different Alignments Table 1`] = `
+.c1 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-left: -4px;
+  margin-right: -4px;
+}
+
+.c1 > * {
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+.c1 > *:not(:first-child) {
+  padding-top: 0;
+}
+
+.c2 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+
+.c5 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+
+.c6 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+
+.c3 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #6E6E69;
+  margin: 0;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.3333333333333333;
+}
+
+.c0 {
+  border-bottom: 1px solid #000000;
+  padding-right: 4px;
+  padding-left: 2px;
+  border-left: 2px solid transparent;
+}
+
+.c0:hover {
+  background: #F5F5F5;
+}
+
+.c7 {
+  border-bottom: 1px solid #EBEBE8;
+  padding-right: 4px;
+  padding-left: 2px;
+  border-left: 2px solid transparent;
+}
+
+.c7:hover {
+  background: #F5F5F5;
+}
+
+.c4 {
+  padding-top: 4px;
+  padding-bottom: 4px;
+  display: inline-block;
+  word-break: break-word;
+}
+
+<div
+  role="table"
+>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    >
+      <div
+        className="c2"
+        role="columnheader"
+      >
+        <span
+          className="c3 c4"
+        >
+          Left
+        </span>
+      </div>
+      <div
+        className="c5"
+        role="columnheader"
+      >
+        <span
+          className="c3 c4"
+        >
+          Right
+        </span>
+      </div>
+      <div
+        className="c5"
+        role="columnheader"
+      >
+        <span
+          className="c3 c4"
+        >
+          Right
+        </span>
+      </div>
+      <div
+        className="c6"
+        role="columnheader"
+      >
+        <span
+          className="c3 c4"
+        >
+          Center
+        </span>
+      </div>
+    </div>
+  </div>
+  <div
+    className="c7"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c7"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c7"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+</div>
+`;
+
+exports[`Storyshots Molecules | FlexTable Sortable Header Controlled 1`] = `
+.c1 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-left: -4px;
+  margin-right: -4px;
+}
+
+.c1 > * {
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+.c1 > *:not(:first-child) {
+  padding-top: 0;
+}
+
+.c2 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+
+.c6 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 8px;
+  height: 8px;
+  fill: #6E6E69;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.c4 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #6E6E69;
+  margin: 0;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.3333333333333333;
+}
+
+.c0 {
+  border-bottom: 1px solid #EBEBE8;
+  padding-right: 4px;
+  padding-left: 2px;
+  border-left: 2px solid transparent;
+}
+
+.c0:hover {
+  background: #F5F5F5;
+}
+
+.c5 {
+  padding-top: 4px;
+  padding-bottom: 4px;
+  display: inline-block;
+  word-break: break-word;
+}
+
+.c7 {
+  margin-left: 4px;
+}
+
+.c3 {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  color: inherit;
+  width: 100%;
+}
+
+<div
+  role="table"
+>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    >
+      <div
+        aria-sort="none"
+        className="c2"
+        role="columnheader"
+      >
+        <a
+          className="c3"
+          href="#"
+          onClick={[Function]}
+          role="button"
+        >
+          <span
+            className="c4 c5"
+          >
+            Controlled1
+          </span>
+          <svg
+            aria-hidden="true"
+            className="c6 c7"
+            focusable="false"
+            preserveAspectRatio="xMidYMid meet"
+            role="presentation"
+            viewBox="0 0 24 24"
+          >
+            <polygon
+              points="19.969 4 24 8.027 12 20 0 8.027 4.031 4 12 11.952"
+            />
+          </svg>
+        </a>
+      </div>
+      <div
+        aria-sort="none"
+        className="c2"
+        role="columnheader"
+      >
+        <a
+          className="c3"
+          href="#"
+          onClick={[Function]}
+          role="button"
+        >
+          <span
+            className="c4 c5"
+          >
+            Controlled2
+          </span>
+          <svg
+            aria-hidden="true"
+            className="c6 c7"
+            focusable="false"
+            preserveAspectRatio="xMidYMid meet"
+            role="presentation"
+            viewBox="0 0 24 24"
+          >
+            <polygon
+              points="19.969 4 24 8.027 12 20 0 8.027 4.031 4 12 11.952"
+            />
+          </svg>
+        </a>
+      </div>
+      <div
+        className="c2"
+        role="columnheader"
+      >
+        <span
+          className="c4 c5"
+        >
+          Not sortable
+        </span>
+      </div>
+      <div
+        aria-sort="none"
+        className="c2"
+        role="columnheader"
+      >
+        <a
+          className="c3"
+          href="#"
+          onClick={[Function]}
+          role="button"
+        >
+          <span
+            className="c4 c5"
+          >
+            Controlled3
+          </span>
+          <svg
+            aria-hidden="true"
+            className="c6 c7"
+            focusable="false"
+            preserveAspectRatio="xMidYMid meet"
+            role="presentation"
+            viewBox="0 0 24 24"
+          >
+            <polygon
+              points="19.969 4 24 8.027 12 20 0 8.027 4.031 4 12 11.952"
+            />
+          </svg>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Molecules | FlexTable Sortable Header Only Ascending Descending 1`] = `
+.c1 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-left: -4px;
+  margin-right: -4px;
+}
+
+.c1 > * {
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+.c1 > *:not(:first-child) {
+  padding-top: 0;
+}
+
+.c2 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+
+.c6 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 8px;
+  height: 8px;
+  fill: #282823;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.c10 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 8px;
+  height: 8px;
+  fill: #6E6E69;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.c7 {
+  -webkit-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+
+.c4 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 1.3333333333333333;
+}
+
+.c9 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #6E6E69;
+  margin: 0;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.3333333333333333;
+}
+
+.c0 {
+  border-bottom: 1px solid #EBEBE8;
+  padding-right: 4px;
+  padding-left: 2px;
+  border-left: 2px solid transparent;
+}
+
+.c0:hover {
+  background: #F5F5F5;
+}
+
+.c5 {
+  padding-top: 4px;
+  padding-bottom: 4px;
+  display: inline-block;
+  word-break: break-word;
+}
+
+.c11 {
+  margin-left: 4px;
+}
+
+.c8 {
+  margin-left: 4px;
+}
+
+.c3 {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  color: inherit;
+  width: 100%;
+}
+
+<div
+  role="table"
+>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    >
+      <div
+        aria-sort="ascending"
+        className="c2"
+        role="columnheader"
+      >
+        <a
+          className="c3"
+          href="#"
+          onClick={[Function]}
+          role="button"
+        >
+          <span
+            className="c4 c5"
+          >
+            Controlled1
+          </span>
+          <svg
+            aria-hidden="true"
+            className="c6 c7 c8"
+            direction="ascending"
+            focusable="false"
+            preserveAspectRatio="xMidYMid meet"
+            role="presentation"
+            viewBox="0 0 8 12"
+          >
+            <path
+              d="M9 2v8.4l1.66-1.62L12 10.1 8 14l-4-3.9 1.34-1.32L7 10.4V2h2z"
+              fillRule="evenodd"
+              transform="matrix(1 0 0 -1 -4 14)"
+            />
+          </svg>
+        </a>
+      </div>
+      <div
+        aria-sort="none"
+        className="c2"
+        role="columnheader"
+      >
+        <a
+          className="c3"
+          href="#"
+          onClick={[Function]}
+          role="button"
+        >
+          <span
+            className="c9 c5"
+          >
+            Controlled2
+          </span>
+          <svg
+            aria-hidden="true"
+            className="c10 c11"
+            focusable="false"
+            preserveAspectRatio="xMidYMid meet"
+            role="presentation"
+            viewBox="0 0 24 24"
+          >
+            <polygon
+              points="19.969 4 24 8.027 12 20 0 8.027 4.031 4 12 11.952"
+            />
+          </svg>
+        </a>
+      </div>
+      <div
+        className="c2"
+        role="columnheader"
+      >
+        <span
+          className="c9 c5"
+        >
+          Not sortable
+        </span>
+      </div>
+      <div
+        aria-sort="none"
+        className="c2"
+        role="columnheader"
+      >
+        <a
+          className="c3"
+          href="#"
+          onClick={[Function]}
+          role="button"
+        >
+          <span
+            className="c9 c5"
+          >
+            Controlled3
+          </span>
+          <svg
+            aria-hidden="true"
+            className="c10 c11"
+            focusable="false"
+            preserveAspectRatio="xMidYMid meet"
+            role="presentation"
+            viewBox="0 0 24 24"
+          >
+            <polygon
+              points="19.969 4 24 8.027 12 20 0 8.027 4.031 4 12 11.952"
+            />
+          </svg>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Molecules | FlexTable Sortable Headers Uncontrolled 1`] = `
+.c1 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-left: -4px;
+  margin-right: -4px;
+}
+
+.c1 > * {
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+.c1 > *:not(:first-child) {
+  padding-top: 0;
+}
+
+.c2 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+
+.c6 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 8px;
+  height: 8px;
+  fill: #6E6E69;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.c9 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 8px;
+  height: 8px;
+  fill: #282823;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.c10 {
+  -webkit-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  transform: rotate(0deg);
+}
+
+.c4 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #6E6E69;
+  margin: 0;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.3333333333333333;
+}
+
+.c8 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 1.3333333333333333;
+}
+
+.c0 {
+  border-bottom: 1px solid #EBEBE8;
+  padding-right: 4px;
+  padding-left: 2px;
+  border-left: 2px solid transparent;
+}
+
+.c0:hover {
+  background: #F5F5F5;
+}
+
+.c5 {
+  padding-top: 4px;
+  padding-bottom: 4px;
+  display: inline-block;
+  word-break: break-word;
+}
+
+.c7 {
+  margin-left: 4px;
+}
+
+.c11 {
+  margin-left: 4px;
+}
+
+.c3 {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  color: inherit;
+  width: 100%;
+}
+
+<div
+  role="table"
+>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    >
+      <div
+        aria-sort="none"
+        className="c2"
+        role="columnheader"
+      >
+        <a
+          className="c3"
+          href="#"
+          onClick={[Function]}
+          role="button"
+        >
+          <span
+            className="c4 c5"
+          >
+            Uncontrolled 1
+          </span>
+          <svg
+            aria-hidden="true"
+            className="c6 c7"
+            focusable="false"
+            preserveAspectRatio="xMidYMid meet"
+            role="presentation"
+            viewBox="0 0 24 24"
+          >
+            <polygon
+              points="19.969 4 24 8.027 12 20 0 8.027 4.031 4 12 11.952"
+            />
+          </svg>
+        </a>
+      </div>
+      <div
+        aria-sort="none"
+        className="c2"
+        role="columnheader"
+      >
+        <a
+          className="c3"
+          href="#"
+          onClick={[Function]}
+          role="button"
+        >
+          <span
+            className="c4 c5"
+          >
+            Uncontrolled 2
+          </span>
+          <svg
+            aria-hidden="true"
+            className="c6 c7"
+            focusable="false"
+            preserveAspectRatio="xMidYMid meet"
+            role="presentation"
+            viewBox="0 0 24 24"
+          >
+            <polygon
+              points="19.969 4 24 8.027 12 20 0 8.027 4.031 4 12 11.952"
+            />
+          </svg>
+        </a>
+      </div>
+      <div
+        aria-sort="descending"
+        className="c2"
+        role="columnheader"
+      >
+        <a
+          className="c3"
+          href="#"
+          onClick={[Function]}
+          role="button"
+        >
+          <span
+            className="c8 c5"
+          >
+            With initial sort order
+          </span>
+          <svg
+            aria-hidden="true"
+            className="c9 c10 c11"
+            direction="descending"
+            focusable="false"
+            preserveAspectRatio="xMidYMid meet"
+            role="presentation"
+            viewBox="0 0 8 12"
+          >
+            <path
+              d="M9 2v8.4l1.66-1.62L12 10.1 8 14l-4-3.9 1.34-1.32L7 10.4V2h2z"
+              fillRule="evenodd"
+              transform="matrix(1 0 0 -1 -4 14)"
+            />
+          </svg>
+        </a>
+      </div>
+      <div
+        className="c2"
+        role="columnheader"
+      >
+        <span
+          className="c4 c5"
+        >
+          Non sortable
+        </span>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Molecules | FlexTable Table Expanded 1`] = `
+.c1 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-left: -4px;
+  margin-right: -4px;
+}
+
+.c1 > * {
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+.c1 > *:not(:first-child) {
+  padding-top: 0;
+}
+
+.c3 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: inherit;
+  margin: 0;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c2 {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  overflow: visible;
+  text-transform: none;
+  position: relative;
+  box-sizing: border-box;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  padding: NaNpx NaNpx;
+  background-color: #FFFFFF;
+  color: #0046FF;
+  border: none;
+  border-radius: 0;
+  cursor: pointer;
+}
+
+.c2,
+.c2[type='button'],
+.c2[type='reset'],
+.c2[type='submit'] {
+  -webkit-appearance: button;
+}
+
+.c2::-moz-focus-inner,
+.c2[type='button']::-moz-focus-inner,
+.c2[type='reset']::-moz-focus-inner,
+.c2[type='submit']::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+.c2:-moz-focusring,
+.c2[type='button']:-moz-focusring,
+.c2[type='reset']:-moz-focusring,
+.c2[type='submit']:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+.c2::before {
+  content: '';
+  display: block;
+  position: absolute;
+  border: 2px solid #0046FF;
+  top: 0;
+  left: 0;
+  width: calc(100% - 4px);
+  height: calc(100% - 4px);
+}
+
+.c2:hover {
+  color: hsl(223.5,100%,40%);
+}
+
+.c2:hover::before {
+  border-color: hsl(223.5,100%,40%);
+}
+
+.c2:active {
+  color: hsl(223.5,100%,35%);
+}
+
+.c2:active::before {
+  border-color: hsl(223.5,100%,35%);
+}
+
+.c0 {
+  border-bottom: 1px solid #EBEBE8;
+  padding-right: 4px;
+  padding-left: 2px;
+  border-left: 2px solid transparent;
+}
+
+.c0:hover {
+  background: #F5F5F5;
+}
+
+<div
+  role="table"
+>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    >
+      Default
+    </div>
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    >
+      <button
+        className="NormalizedButton__Button-ey7f5x-0 c2"
+        onClick={[Function]}
+        type="button"
+      >
+        <span>
+          <span
+            className="c3"
+          >
+            Expand
+          </span>
+        </span>
+      </button>
+    </div>
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    >
+      Default
+    </div>
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    >
+      Default
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Molecules | FlexTable Table Header 1`] = `
+.c7 {
+  height: 12px;
+  box-sizing: border-box;
+  display: inline-block;
+  vertical-align: middle;
+  position: relative;
+  bottom: 1px;
+  width: 16px;
+  overflow: hidden;
+}
+
+.c1 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-left: -4px;
+  margin-right: -4px;
+}
+
+.c1 > * {
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+.c1 > *:not(:first-child) {
+  padding-top: 0;
+}
+
+.c2 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+
+.c5 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -webkit-flex: 3;
+  -ms-flex: 3;
+  flex: 3;
+}
+
+.c8 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 8px;
+  height: 8px;
+  fill: #6E6E69;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.c3 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #6E6E69;
+  margin: 0;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.3333333333333333;
+}
+
+.c10 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 1.2;
+}
+
+.c0 {
+  border-bottom: 1px solid #EBEBE8;
+  padding-right: 4px;
+  padding-left: 2px;
+  border-left: 2px solid transparent;
+}
+
+.c0:hover {
+  background: #F5F5F5;
+}
+
+.c4 {
+  padding-top: 4px;
+  padding-bottom: 4px;
+  display: inline-block;
+  word-break: break-word;
+}
+
+.c9 {
+  margin-left: 4px;
+}
+
+.c6 {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  color: inherit;
+  width: 100%;
+}
+
+@media (min-width:760px) {
+  .c10 {
+    font-size: 24px;
+    line-height: 1.1666666666666667;
+  }
+}
+
+<div
+  role="table"
+>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    >
+      <div
+        className="c2"
+        role="columnheader"
+      >
+        <span
+          className="c3 c4"
+        >
+          Table header 1 flex 1
+        </span>
+      </div>
+      <div
+        className="c5"
+        role="columnheader"
+      >
+        <span
+          className="c3 c4"
+        >
+          Table header 2 flex 3
+        </span>
+      </div>
+      <div
+        aria-sort="none"
+        className="c2"
+        role="columnheader"
+      >
+        <a
+          className="c6"
+          href="#"
+          onClick={[Function]}
+          role="button"
+        >
+          <svg
+            className="c7"
+            focusable="false"
+            role="img"
+            viewBox="0 0 640 480"
+          >
+            <g
+              transform="translate(50.082) scale(.9375)"
+            >
+              <g
+                fillRule="evenodd"
+                strokeWidth="1pt"
+              >
+                <path
+                  d="M-121.103.302h256V205.1h-256zM-121.103 307.178h256v204.8h-256z"
+                  fill="#006aa7"
+                />
+                <path
+                  d="M-121.103 204.984h256v102.4h-256z"
+                  fill="#fecc00"
+                />
+                <path
+                  d="M133.843.01h102.4v511.997h-102.4z"
+                  fill="#fecc00"
+                />
+                <path
+                  d="M232.995 205.013h460.798v102.4H232.995z"
+                  fill="#fecc00"
+                />
+                <path
+                  d="M236.155 307.208h460.797v204.799H236.155zM236.155.302h460.797V205.1H236.155z"
+                  fill="#006aa7"
+                />
+              </g>
+            </g>
+            <title>
+              Sweden
+            </title>
+          </svg>
+          <span
+            className="c3 c4"
+          >
+            Customised header
+          </span>
+          <svg
+            aria-hidden="true"
+            className="c8 c9"
+            focusable="false"
+            preserveAspectRatio="xMidYMid meet"
+            role="presentation"
+            viewBox="0 0 24 24"
+          >
+            <polygon
+              points="19.969 4 24 8.027 12 20 0 8.027 4.031 4 12 11.952"
+            />
+          </svg>
+        </a>
+      </div>
+      <div
+        className="c2"
+        role="columnheader"
+      >
+        <span
+          className="c3 c4"
+        >
+          Table header 3 no flex
+        </span>
+      </div>
+      <div
+        className="c2"
+        role="columnheader"
+      >
+        <span
+          className="c10"
+        >
+          I'm a component
+        </span>
+        <span
+          className="c3 c4"
+        >
+          <span
+            className="c10"
+          >
+            I'm a component
+          </span>
+        </span>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Molecules | FlexTable Table With Different Rows 1`] = `
+.c1 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-left: -4px;
+  margin-right: -4px;
+}
+
+.c1 > * {
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+.c1 > *:not(:first-child) {
+  padding-top: 0;
+}
+
+.c0 {
+  border-bottom: 1px solid #282823;
+  padding-right: 4px;
+  padding-left: 2px;
+  border-left: 2px solid transparent;
+}
+
+.c0:hover {
+  background: #F5F5F5;
+}
+
+.c2 {
+  border-bottom: 1px solid #EBEBE8;
+  padding-right: 4px;
+  padding-left: 2px;
+  border-left: 2px solid transparent;
+}
+
+.c2:hover {
+  background: #F5F5F5;
+}
+
+.c3 {
+  padding-right: 4px;
+  padding-left: 2px;
+  border-left: 2px solid transparent;
+}
+
+.c3:hover {
+  background: #F5F5F5;
+}
+
+<div
+  role="table"
+>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    >
+      Separator color set
+    </div>
+  </div>
+  <div
+    className="c2"
+    role="row"
+  >
+    <div
+      className="c1"
+    >
+      Default
+    </div>
+  </div>
+  <div
+    className="c3"
+    role="row"
+  >
+    <div
+      className="c1"
+    >
+      Separator hidden
+    </div>
+  </div>
+  <div
+    className="c2"
+    role="row"
+  >
+    <div
+      className="c1"
+    >
+      Default
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Molecules | FlexTable Table Without Separators 1`] = `
+.c1 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-left: -4px;
+  margin-right: -4px;
+}
+
+.c1 > * {
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+.c1 > *:not(:first-child) {
+  padding-top: 0;
+}
+
+.c2 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+
+.c3 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #6E6E69;
+  margin: 0;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.3333333333333333;
+}
+
+.c0 {
+  border-bottom: 1px solid #000000;
+  padding-right: 4px;
+  padding-left: 2px;
+  border-left: 2px solid transparent;
+}
+
+.c0:hover {
+  background: #F5F5F5;
+}
+
+.c5 {
+  padding-right: 4px;
+  padding-left: 2px;
+  border-left: 2px solid transparent;
+}
+
+.c5:hover {
+  background: #F5F5F5;
+}
+
+.c4 {
+  padding-top: 4px;
+  padding-bottom: 4px;
+  display: inline-block;
+  word-break: break-word;
+}
+
+<div
+  role="table"
+>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    >
+      <div
+        className="c2"
+        role="columnheader"
+      >
+        <span
+          className="c3 c4"
+        >
+          Header 1
+        </span>
+      </div>
+      <div
+        className="c2"
+        role="columnheader"
+      >
+        <span
+          className="c3 c4"
+        >
+          Header 2
+        </span>
+      </div>
+      <div
+        className="c2"
+        role="columnheader"
+      >
+        <span
+          className="c3 c4"
+        >
+          Header 3
+        </span>
+      </div>
+    </div>
+  </div>
+  <div
+    className="c5"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c5"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c5"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+</div>
+`;
+
+exports[`Storyshots Molecules | FlexTable Tables With Different Densities 1`] = `
+.c4 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-left: -4px;
+  margin-right: -4px;
+}
+
+.c4 > * {
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+.c4 > *:not(:first-child) {
+  padding-top: 0;
+}
+
+.c5 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+
+.c1 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.3333333333333333;
+}
+
+.c6 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #6E6E69;
+  margin: 0;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.3333333333333333;
+}
+
+.c3 {
+  border-bottom: 1px solid #EBEBE8;
+  padding-right: 4px;
+  padding-left: 2px;
+  border-left: 2px solid transparent;
+}
+
+.c3:hover {
+  background: #F5F5F5;
+}
+
+.c7 {
+  padding-top: 4px;
+  padding-bottom: 4px;
+  display: inline-block;
+  word-break: break-word;
+}
+
+.c8 {
+  padding-top: 0px;
+  padding-bottom: 0px;
+  display: inline-block;
+  word-break: break-word;
+}
+
+.c9 {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  display: inline-block;
+  word-break: break-word;
+}
+
+.c0 {
+  background-color: #F5F5F5;
+}
+
+.c2 {
+  background-color: white;
+  margin-bottom: 20px;
+}
+
+@media (min-width:760px) {
+  .c1 {
+    font-size: 20px;
+    line-height: 1.2;
+  }
+}
+
+<div
+  className="c0"
+>
+  <span
+    className="c1"
+  >
+    Default (Medium)
+  </span>
+  <div
+    className="c2"
+    role="table"
+  >
+    <div
+      className="c3"
+      role="row"
+    >
+      <div
+        className="c4"
+      >
+        <div
+          className="c5"
+          role="columnheader"
+        >
+          <span
+            className="c6 c7"
+          >
+            Header 1
+          </span>
+        </div>
+        <div
+          className="c5"
+          role="columnheader"
+        >
+          <span
+            className="c6 c7"
+          >
+            Header 2
+          </span>
+        </div>
+        <div
+          className="c5"
+          role="columnheader"
+        >
+          <span
+            className="c6 c7"
+          >
+            Header 3
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <span
+    className="c1"
+  >
+    Small
+  </span>
+  <div
+    className="c2"
+    role="table"
+  >
+    <div
+      className="c3"
+      role="row"
+    >
+      <div
+        className="c4"
+      >
+        <div
+          className="c5"
+          role="columnheader"
+        >
+          <span
+            className="c6 c8"
+          >
+            Header 1
+          </span>
+        </div>
+        <div
+          className="c5"
+          role="columnheader"
+        >
+          <span
+            className="c6 c8"
+          >
+            Header 2
+          </span>
+        </div>
+        <div
+          className="c5"
+          role="columnheader"
+        >
+          <span
+            className="c6 c8"
+          >
+            Header 3
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <span
+    className="c1"
+  >
+    Medium
+  </span>
+  <div
+    className="c2"
+    role="table"
+  >
+    <div
+      className="c3"
+      role="row"
+    >
+      <div
+        className="c4"
+      >
+        <div
+          className="c5"
+          role="columnheader"
+        >
+          <span
+            className="c6 c7"
+          >
+            Header 1
+          </span>
+        </div>
+        <div
+          className="c5"
+          role="columnheader"
+        >
+          <span
+            className="c6 c7"
+          >
+            Header 2
+          </span>
+        </div>
+        <div
+          className="c5"
+          role="columnheader"
+        >
+          <span
+            className="c6 c7"
+          >
+            Header 3
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <span
+    className="c1"
+  >
+    Large
+  </span>
+  <div
+    className="c2"
+    role="table"
+  >
+    <div
+      className="c3"
+      role="row"
+    >
+      <div
+        className="c4"
+      >
+        <div
+          className="c5"
+          role="columnheader"
+        >
+          <span
+            className="c6 c9"
+          >
+            Header 1
+          </span>
+        </div>
+        <div
+          className="c5"
+          role="columnheader"
+        >
+          <span
+            className="c6 c9"
+          >
+            Header 2
+          </span>
+        </div>
+        <div
+          className="c5"
+          role="columnheader"
+        >
+          <span
+            className="c6 c9"
+          >
+            Header 3
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Molecules | FlexTable Truncated Cell Content 1`] = `
+.c1 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-left: -4px;
+  margin-right: -4px;
+}
+
+.c1 > * {
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+.c1 > *:not(:first-child) {
+  padding-top: 0;
+}
+
+.c2 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+
+.c5 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -webkit-flex: 0 15%;
+  -ms-flex: 0 15%;
+  flex: 0 15%;
+}
+
+.c6 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -webkit-flex: 0 100px;
+  -ms-flex: 0 100px;
+  flex: 0 100px;
+}
+
+.c3 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #6E6E69;
+  margin: 0;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.3333333333333333;
+}
+
+.c0 {
+  border-bottom: 1px solid #000000;
+  padding-right: 4px;
+  padding-left: 2px;
+  border-left: 2px solid transparent;
+}
+
+.c0:hover {
+  background: #F5F5F5;
+}
+
+.c7 {
+  border-bottom: 1px solid #EBEBE8;
+  padding-right: 4px;
+  padding-left: 2px;
+  border-left: 2px solid transparent;
+}
+
+.c7:hover {
+  background: #F5F5F5;
+}
+
+.c4 {
+  padding-top: 4px;
+  padding-bottom: 4px;
+  display: inline-block;
+  word-break: break-word;
+}
+
+<div
+  role="table"
+>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    >
+      <div
+        className="c2"
+        role="columnheader"
+      >
+        <span
+          className="c3 c4"
+        >
+          Flex 1
+        </span>
+      </div>
+      <div
+        className="c5"
+        role="columnheader"
+      >
+        <span
+          className="c3 c4"
+        >
+          Fifteen percent
+        </span>
+      </div>
+      <div
+        className="c6"
+        role="columnheader"
+      >
+        <span
+          className="c3 c4"
+        >
+          Loooooooooooooong header set width
+        </span>
+      </div>
+      <div
+        className="c2"
+        role="columnheader"
+      >
+        <span
+          className="c3 c4"
+        >
+          Default
+        </span>
+      </div>
+    </div>
+  </div>
+  <div
+    className="c7"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c7"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+  <div
+    className="c7"
+    role="row"
+  >
+    <div
+      className="c1"
+    />
+  </div>
+</div>
+`;

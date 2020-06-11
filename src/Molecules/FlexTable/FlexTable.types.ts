@@ -10,7 +10,7 @@ export type Props = {
   className?: string;
 } & HtmlProps;
 
-export type TableComponents = {
+export type FlexTableComponents = {
   Header: HeaderComponent;
   Row: RowComponent;
   Cell: CellComponent;
