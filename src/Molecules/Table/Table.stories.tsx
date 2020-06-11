@@ -88,8 +88,7 @@ const bigTableData = [...Array(bigTableRows)].map((_, rowIndex) => {
   }, {});
 });
 
-// @ts-ignore
-const BigTableRow = ({ data }) => {
+const BigTableRow = ({ data }: { data: any }) => {
   return (
     <Table.Row>
       {Object.keys(R.omit(['rowId'], data)).map((valueKey, index) => {
