@@ -55,6 +55,7 @@ import Slider from './Molecules/Slider';
 import Switch from './Molecules/Switch';
 import Tabs from './Molecules/Tabs';
 import TabsNav from './Molecules/TabsNav';
+import Timeline from './Molecules/Timeline';
 import Tooltip from './Molecules/Tooltip';
 
 /** Organisms */
@@ -130,6 +131,7 @@ export {
   Thead,
   theme,
   Time,
+  Timeline,
   Tooltip,
   Tr,
   TrackingContext,
