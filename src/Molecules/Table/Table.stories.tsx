@@ -1,5 +1,7 @@
-import React, { useState } from 'react';
+import React, { useState, useMemo } from 'react';
+import R from 'ramda';
 import styled from 'styled-components';
+import { number, withKnobs } from '@storybook/addon-knobs';
 import Table from './Table';
 import { Button, Typography, Flag } from '../..';
 import { SortOrder } from './Header/HeaderContent/HeaderContent.types';
@@ -7,6 +9,7 @@ import { OnSort } from './Header/Header.types';
 
 export default {
   title: 'Molecules | Table',
+  decorators: [withKnobs],
   parameters: {
     component: Table,
   },
@@ -14,10 +17,175 @@ export default {
 
 export const DefaultTable = () => (
   <Table>
-    <Table.Row>
+    <Table.Row separatorColor={t => t.color.backgroundBlack}>
       <Table.Header columnId="column1">Header 1</Table.Header>
       <Table.Header columnId="column2">Header 2</Table.Header>
       <Table.Header columnId="column3">Header 3</Table.Header>
+    </Table.Row>
+    <Table.Row>
+      <Table.Cell columnId="column1">Cell 1-1</Table.Cell>
+      <Table.Cell columnId="column2">Cell 1-2</Table.Cell>
+      <Table.Cell columnId="column3">Cell 1-3</Table.Cell>
+    </Table.Row>
+    <Table.Row>
+      <Table.Cell columnId="column1">Cell 2-1</Table.Cell>
+      <Table.Cell columnId="column2">Cell 2-2</Table.Cell>
+      <Table.Cell columnId="column3">Cell 2-3</Table.Cell>
+    </Table.Row>
+    <Table.Row>
+      <Table.Cell columnId="column1">Cell 3-1</Table.Cell>
+      <Table.Cell columnId="column2">Cell 3-2</Table.Cell>
+      <Table.Cell columnId="column3">Cell 3-3</Table.Cell>
+    </Table.Row>
+  </Table>
+);
+
+export const TruncatedCellContent = () => (
+  <Table>
+    <Table.Row separatorColor={t => t.color.backgroundBlack}>
+      <Table.Header flex="1" columnId="column1">
+        Flex 1
+      </Table.Header>
+      <Table.Header flex="0 15%" columnId="column2">
+        Fifteen percent
+      </Table.Header>
+      <Table.Header flex="0 100px" columnId="column3">
+        Loooooooooooooong header set width
+      </Table.Header>
+      <Table.Header columnId="column4">Default</Table.Header>
+    </Table.Row>
+    <Table.Row>
+      <Table.Cell columnId="column1">Cell 1-1</Table.Cell>
+      <Table.Cell columnId="column2">
+        Very long cell content that should be truncated or ellipsized depepending on your language
+        preferences
+      </Table.Cell>
+      <Table.Cell columnId="column3">Cell 1-3</Table.Cell>
+      <Table.Cell columnId="column4">Cell 1-4</Table.Cell>
+    </Table.Row>
+    <Table.Row>
+      <Table.Cell columnId="column1">Cell 2-1</Table.Cell>
+      <Table.Cell columnId="column2">Cell 2-2</Table.Cell>
+      <Table.Cell columnId="column3">Cell 2-3</Table.Cell>
+      <Table.Cell columnId="column4">Cell 2-4</Table.Cell>
+    </Table.Row>
+    <Table.Row>
+      <Table.Cell columnId="column1">Cell 3-1</Table.Cell>
+      <Table.Cell columnId="column2">Cell 3-2</Table.Cell>
+      <Table.Cell columnId="column3">Cell 3-3</Table.Cell>
+      <Table.Cell columnId="column4">Cell 3-4</Table.Cell>
+    </Table.Row>
+  </Table>
+);
+
+const generateUniqueId = () =>
+  `_${Math.random()
+    .toString(36)
+    .substr(2, 9)}`;
+
+const generateTableData = (rowsLength: number, columnsLength: number) =>
+  [...Array(rowsLength)].map((_, rowIndex) => {
+    const rowId = generateUniqueId();
+    return [...Array(columnsLength)].reduce((acc, __, columnIndex) => {
+      const keyName = `value${columnIndex + 1}`;
+      return { ...acc, rowId, [keyName]: { value: `Cell ${rowIndex + 1}-${columnIndex + 1}` } };
+    }, {});
+  });
+
+const BigTableRow = ({ data }: any) => {
+  return (
+    <Table.Row>
+      {Object.keys(R.omit(['rowId'], data)).map((valueKey, index) => {
+        return (
+          <Table.Cell key={data.id} columnId={`column${index + 1}`}>
+            {data[valueKey].value}
+          </Table.Cell>
+        );
+      })}
+    </Table.Row>
+  );
+};
+
+export const BigTable = () => {
+  const ReactComponent = () => {
+    const rowsLength = number('Number of rows', 500);
+    const columnsLength = number('Number of columns', 10);
+    const tableData = useMemo(() => generateTableData(rowsLength, columnsLength), [
+      rowsLength,
+      columnsLength,
+    ]);
+    return (
+      <Table>
+        <Table.Row>
+          {[...Array(columnsLength)].map((_, index) => (
+            <Table.Header columnId={`column${index + 1}`}>Header {index + 1}</Table.Header>
+          ))}
+        </Table.Row>
+        {tableData.map(data => (
+          <BigTableRow key={data.rowId} data={data} />
+        ))}
+      </Table>
+    );
+  };
+  return <ReactComponent />;
+};
+
+export const DifferentAlignmentsTable = () => (
+  <Table>
+    <Table.Row separatorColor={t => t.color.backgroundBlack}>
+      <Table.Header columnId="column1">Left</Table.Header>
+      <Table.Header columnId="column2" justifyContent="flex-end">
+        Right
+      </Table.Header>
+      <Table.Header columnId="column3" justifyContent="flex-end">
+        Right
+      </Table.Header>
+      <Table.Header columnId="column4" justifyContent="center">
+        Center
+      </Table.Header>
+    </Table.Row>
+    <Table.Row>
+      <Table.Cell columnId="column1">Cell 1-1</Table.Cell>
+      <Table.Cell columnId="column2">Cell 1-2</Table.Cell>
+      <Table.Cell columnId="column3">Cell 1-3</Table.Cell>
+      <Table.Cell columnId="column4">Cell 1-4</Table.Cell>
+    </Table.Row>
+    <Table.Row>
+      <Table.Cell columnId="column1">Cell 2-1</Table.Cell>
+      <Table.Cell columnId="column2">Cell 2-2</Table.Cell>
+      <Table.Cell columnId="column3">Cell 2-3</Table.Cell>
+      <Table.Cell columnId="column4">Cell 2-4</Table.Cell>
+    </Table.Row>
+    <Table.Row>
+      <Table.Cell columnId="column1">Cell 3-1</Table.Cell>
+      <Table.Cell columnId="column2">Cell 3-2</Table.Cell>
+      <Table.Cell columnId="column3">Cell 3-3</Table.Cell>
+      <Table.Cell columnId="column4">Cell 3-4</Table.Cell>
+    </Table.Row>
+  </Table>
+);
+
+export const TableWithoutSeparators = () => (
+  <Table>
+    <Table.Row separatorColor={t => t.color.backgroundBlack}>
+      <Table.Header columnId="column1">Header 1</Table.Header>
+      <Table.Header columnId="column2">Header 2</Table.Header>
+      <Table.Header columnId="column3">Header 3</Table.Header>
+    </Table.Row>
+    <Table.Row hideSeparator>
+      <Table.Cell columnId="column1">Cell 1-1</Table.Cell>
+      <Table.Cell columnId="column2">Cell 1-2</Table.Cell>
+      <Table.Cell columnId="column3">Cell 1-3</Table.Cell>
+    </Table.Row>
+    <Table.Row hideSeparator>
+      <Table.Cell columnId="column1">Cell 2-1</Table.Cell>
+      <Table.Cell columnId="column2">Cell 2-2</Table.Cell>
+      <Table.Cell columnId="column3">Cell 2-3</Table.Cell>
+    </Table.Row>
+    <Table.Row hideSeparator>
+      <Table.Cell columnId="column1">Cell 3-1</Table.Cell>
+      <Table.Cell columnId="column2">Cell 3-2</Table.Cell>
+      <Table.Cell columnId="column3">Cell 3-3</Table.Cell>
     </Table.Row>
   </Table>
 );

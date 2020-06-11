@@ -1,25 +1,9 @@
 import React from 'react';
 import styled from 'styled-components';
 import { Typography } from '../../../..';
-import { TextWrapperProps, Density } from './HeaderContent.types';
-import {
-  DENSITY_PADDING_LARGE,
-  DENSITY_PADDING_SMALL,
-  DENSITY_PADDING_MEDIUM,
-} from '../../shared/constants';
-
-const getDensityPaddings = (density: Density) => {
-  switch (density) {
-    case 's':
-      return DENSITY_PADDING_SMALL;
-    case 'm':
-      return DENSITY_PADDING_MEDIUM;
-    case 'l':
-      return DENSITY_PADDING_LARGE;
-    default:
-      return 1;
-  }
-};
+import { getDensityPaddings, getFontSizeTypographyType } from '../../shared/textUtils';
+import { Density } from '../../shared/shared.types';
+import { TextWrapperComponent } from './HeaderContent.types';
 
 const StyledTypography = styled(Typography).withConfig({
   shouldForwardProp: p => !['density'].includes(p),
@@ -27,16 +11,17 @@ const StyledTypography = styled(Typography).withConfig({
   padding-top: ${p => getDensityPaddings(p.density)}px;
   padding-bottom: ${p => getDensityPaddings(p.density)}px;
   display: inline-block;
+  word-break: break-word;
 `;
 
-export const TextWrapper: React.FC<TextWrapperProps> = ({
-  fontSize,
+export const TextWrapper: TextWrapperComponent = ({
+  fontSize = 'm',
   density = 'm',
   sorted,
   children,
 }) => (
   <StyledTypography
-    type={fontSize === 'l' ? 'secondary' : 'tertiary'}
+    type={getFontSizeTypographyType(fontSize)}
     density={density}
     color={t => (sorted ? t.color.text : t.color.label)}
     weight={sorted ? 'bold' : 'regular'}

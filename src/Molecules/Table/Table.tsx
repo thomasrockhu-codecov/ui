@@ -1,6 +1,7 @@
 import React from 'react';
 import { Row } from './Row';
 import { Header } from './Header';
+import { Cell } from './Cell';
 import { constants, ColumnProvider } from './shared';
 import { Props, TableComponents } from './Table.types';
 
@@ -12,6 +13,7 @@ const Table: React.FC<Props> & TableComponents = ({ className, children, ...html
 
 Table.Row = Row;
 Table.Header = Header;
+Table.Cell = Cell;
 Table.CONSTANTS = constants;
 
 export default Table;
