@@ -83,17 +83,6 @@ exports[`Storyshots Molecules | Table Big Table 1`] = `
           className="c3 c4"
         >
           Header 
-          0
-        </span>
-      </div>
-      <div
-        className="c2"
-        role="columnheader"
-      >
-        <span
-          className="c3 c4"
-        >
-          Header 
           1
         </span>
       </div>
@@ -183,6 +172,17 @@ exports[`Storyshots Molecules | Table Big Table 1`] = `
         >
           Header 
           9
+        </span>
+      </div>
+      <div
+        className="c2"
+        role="columnheader"
+      >
+        <span
+          className="c3 c4"
+        >
+          Header 
+          10
         </span>
       </div>
     </div>
