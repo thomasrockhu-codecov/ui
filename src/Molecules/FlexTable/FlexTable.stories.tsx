@@ -135,18 +135,41 @@ export const BigTable = () => {
   const ReactComponent = () => {
     const rowsLength = number('Number of rows', 500);
     const columnsLength = number('Number of columns', 10);
+    const [sort, setSort] = useState<any>({});
     const tableData = useMemo(() => generateTableData(rowsLength, columnsLength), [
       rowsLength,
       columnsLength,
     ]);
+    const sortedData = useMemo(() => {
+      const getValue = (rowData: any) => rowData[sort.columnId.replace('column', 'value')].value;
+      return tableData.sort((rowA, rowB) => {
+        if (sort.sortOrder === 'ascending') {
+          return getValue(rowB).localeCompare(getValue(rowA));
+        }
+
+        if (sort.sortOrder === 'descending') {
+          return getValue(rowA).localeCompare(getValue(rowB));
+        }
+
+        return 0;
+      });
+    }, [tableData, sort]);
     return (
       <FlexTable>
         <FlexTable.HeaderRow>
           {[...Array(columnsLength)].map((_, index) => (
-            <FlexTable.Header columnId={`column${index + 1}`}>Header {index + 1}</FlexTable.Header>
+            <FlexTable.Header
+              columnId={`column${index + 1}`}
+              sortable
+              onSort={(columnId, nextSortOrder) => {
+                setSort({ columnId, sortOrder: nextSortOrder });
+              }}
+            >
+              Header {index + 1}
+            </FlexTable.Header>
           ))}
         </FlexTable.HeaderRow>
-        {tableData.map(data => (
+        {sortedData.map(data => (
           <BigTableRow key={data.rowId} data={data} />
         ))}
       </FlexTable>
@@ -419,28 +442,31 @@ export const TableHeader = () => {
   );
 };
 
-export const SortableHeadersUncontrolled = () => (
-  <FlexTable>
-    <FlexTable.HeaderRow>
-      <FlexTable.Header columnId="column1" sortable>
-        Uncontrolled 1
-      </FlexTable.Header>
-      <FlexTable.Header columnId="column2" sortable>
-        Uncontrolled 2
-      </FlexTable.Header>
-      <FlexTable.Header
-        columnId="column3"
-        sortable
-        initialSortOrder={FlexTable.CONSTANTS.SORT_ORDER_DESCENDING}
-      >
-        With initial sort order
-      </FlexTable.Header>
-      <FlexTable.Header columnId="column4" sortable={false}>
-        Non sortable
-      </FlexTable.Header>
-    </FlexTable.HeaderRow>
-  </FlexTable>
-);
+export const SortableHeadersUncontrolled = () => {
+  return (
+    <FlexTable>
+      <FlexTable.HeaderRow>
+        <FlexTable.Header columnId="column1" sortable>
+          Uncontrolled 1
+        </FlexTable.Header>
+        <FlexTable.Header columnId="column2" sortable>
+          Uncontrolled 2
+        </FlexTable.Header>
+        <FlexTable.Header
+          columnId="column3"
+          sortable
+          initialSortOrder={FlexTable.CONSTANTS.SORT_ORDER_DESCENDING}
+        >
+          With initial sort order
+        </FlexTable.Header>
+        <FlexTable.Header columnId="column4" sortable={false}>
+          Non sortable
+        </FlexTable.Header>
+      </FlexTable.HeaderRow>
+      <FlexTable.Row />
+    </FlexTable>
+  );
+};
 
 // For useState to work in storybook, components needs to be wrapped in a new function
 export const SortableHeaderControlled = () => {
