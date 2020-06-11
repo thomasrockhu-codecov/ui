@@ -154,6 +154,7 @@ export const BigTable = () => {
         return 0;
       });
     }, [tableData, sort]);
+
     return (
       <FlexTable>
         <FlexTable.HeaderRow>
@@ -269,113 +270,59 @@ export const TablesWithDifferentDensities = () => (
     </StyledFlexTable>
 
     <Typography type="title3">Small</Typography>
-    <StyledFlexTable density='s'>
+    <StyledFlexTable density="s">
       <FlexTable.HeaderRow>
-        <FlexTable.Header columnId="column1">
-          Header 1
-        </FlexTable.Header>
-        <FlexTable.Header columnId="column2">
-          Header 2
-        </FlexTable.Header>
-        <FlexTable.Header columnId="column3">
-          Header 3
-        </FlexTable.Header>
+        <FlexTable.Header columnId="column1">Header 1</FlexTable.Header>
+        <FlexTable.Header columnId="column2">Header 2</FlexTable.Header>
+        <FlexTable.Header columnId="column3">Header 3</FlexTable.Header>
       </FlexTable.HeaderRow>
       <FlexTable.Row>
-        <FlexTable.Cell columnId="column1">
-          Cell 1-1
-        </FlexTable.Cell>
-        <FlexTable.Cell columnId="column2">
-          Cell 1-2
-        </FlexTable.Cell>
-        <FlexTable.Cell columnId="column3">
-          Cell 1-3
-        </FlexTable.Cell>
+        <FlexTable.Cell columnId="column1">Cell 1-1</FlexTable.Cell>
+        <FlexTable.Cell columnId="column2">Cell 1-2</FlexTable.Cell>
+        <FlexTable.Cell columnId="column3">Cell 1-3</FlexTable.Cell>
       </FlexTable.Row>
       <FlexTable.Row>
-        <FlexTable.Cell columnId="column1">
-          Cell 2-1
-        </FlexTable.Cell>
-        <FlexTable.Cell columnId="column2">
-          Cell 2-2
-        </FlexTable.Cell>
-        <FlexTable.Cell columnId="column3">
-          Cell 2-3
-        </FlexTable.Cell>
+        <FlexTable.Cell columnId="column1">Cell 2-1</FlexTable.Cell>
+        <FlexTable.Cell columnId="column2">Cell 2-2</FlexTable.Cell>
+        <FlexTable.Cell columnId="column3">Cell 2-3</FlexTable.Cell>
       </FlexTable.Row>
     </StyledFlexTable>
 
     <Typography type="title3">Medium</Typography>
     <StyledFlexTable>
       <FlexTable.HeaderRow>
-        <FlexTable.Header columnId="column1">
-          Header 1
-        </FlexTable.Header>
-        <FlexTable.Header columnId="column2">
-          Header 2
-        </FlexTable.Header>
-        <FlexTable.Header columnId="column3">
-          Header 3
-        </FlexTable.Header>
+        <FlexTable.Header columnId="column1">Header 1</FlexTable.Header>
+        <FlexTable.Header columnId="column2">Header 2</FlexTable.Header>
+        <FlexTable.Header columnId="column3">Header 3</FlexTable.Header>
       </FlexTable.HeaderRow>
       <FlexTable.Row>
-        <FlexTable.Cell columnId="column1">
-          Cell 1-1
-        </FlexTable.Cell>
-        <FlexTable.Cell columnId="column2">
-          Cell 1-2
-        </FlexTable.Cell>
-        <FlexTable.Cell columnId="column3">
-          Cell 1-3
-        </FlexTable.Cell>
+        <FlexTable.Cell columnId="column1">Cell 1-1</FlexTable.Cell>
+        <FlexTable.Cell columnId="column2">Cell 1-2</FlexTable.Cell>
+        <FlexTable.Cell columnId="column3">Cell 1-3</FlexTable.Cell>
       </FlexTable.Row>
       <FlexTable.Row>
-        <FlexTable.Cell columnId="column1">
-          Cell 2-1
-        </FlexTable.Cell>
-        <FlexTable.Cell columnId="column2">
-          Cell 2-2
-        </FlexTable.Cell>
-        <FlexTable.Cell columnId="column3">
-          Cell 2-3
-        </FlexTable.Cell>
+        <FlexTable.Cell columnId="column1">Cell 2-1</FlexTable.Cell>
+        <FlexTable.Cell columnId="column2">Cell 2-2</FlexTable.Cell>
+        <FlexTable.Cell columnId="column3">Cell 2-3</FlexTable.Cell>
       </FlexTable.Row>
     </StyledFlexTable>
 
     <Typography type="title3">Large</Typography>
     <StyledFlexTable density="l">
       <FlexTable.HeaderRow>
-        <FlexTable.Header columnId="column1">
-          Header 1
-        </FlexTable.Header>
-        <FlexTable.Header columnId="column2">
-          Header 2
-        </FlexTable.Header>
-        <FlexTable.Header columnId="column3">
-          Header 3
-        </FlexTable.Header>
+        <FlexTable.Header columnId="column1">Header 1</FlexTable.Header>
+        <FlexTable.Header columnId="column2">Header 2</FlexTable.Header>
+        <FlexTable.Header columnId="column3">Header 3</FlexTable.Header>
       </FlexTable.HeaderRow>
       <FlexTable.Row>
-        <FlexTable.Cell columnId="column1">
-          Cell 1-1
-        </FlexTable.Cell>
-        <FlexTable.Cell columnId="column2">
-          Cell 1-2
-        </FlexTable.Cell>
-        <FlexTable.Cell columnId="column3">
-          Cell 1-3
-        </FlexTable.Cell>
+        <FlexTable.Cell columnId="column1">Cell 1-1</FlexTable.Cell>
+        <FlexTable.Cell columnId="column2">Cell 1-2</FlexTable.Cell>
+        <FlexTable.Cell columnId="column3">Cell 1-3</FlexTable.Cell>
       </FlexTable.Row>
       <FlexTable.Row>
-        <FlexTable.Cell columnId="column1">
-          Cell 2-1
-        </FlexTable.Cell>
-        <FlexTable.Cell columnId="column2">
-          Cell 2-2
-        </FlexTable.Cell>
-        <FlexTable.Cell columnId="column3">
-          Cell 2-3
-        </FlexTable.Cell>
+        <FlexTable.Cell columnId="column1">Cell 2-1</FlexTable.Cell>
+        <FlexTable.Cell columnId="column2">Cell 2-2</FlexTable.Cell>
+        <FlexTable.Cell columnId="column3">Cell 2-3</FlexTable.Cell>
       </FlexTable.Row>
     </StyledFlexTable>
   </StyledDiv>

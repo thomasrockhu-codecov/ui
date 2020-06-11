@@ -4,13 +4,7 @@ import { Header } from './Header';
 import { Cell } from './Cell';
 import { constants, ColumnProvider } from './shared';
 import { Props, FlexTableComponents } from './FlexTable.types';
-import { Density } from './shared/shared.types';
-
-export type TableState = {
-  density: Density;
-};
-
-const TableContext = React.createContext<TableState | undefined>(undefined);
+import { FlexTableProvider } from './shared/FlexTableProvider';
 
 const FlexTable: React.FC<Props> & FlexTableComponents = ({
   className,
@@ -18,11 +12,11 @@ const FlexTable: React.FC<Props> & FlexTableComponents = ({
   children,
   ...htmlProps
 }) => (
-  <TableContext.Provider value={{ density }}>
+  <FlexTableProvider density={density}>
     <div className={className} role="table" {...htmlProps}>
       <ColumnProvider>{children}</ColumnProvider>
     </div>
-  </TableContext.Provider>
+  </FlexTableProvider>
 );
 
 FlexTable.Row = Row;

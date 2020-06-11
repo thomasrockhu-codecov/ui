@@ -36,7 +36,6 @@ const Header: HeaderComponent = props => {
     sortable = false,
     sortOrder: sortOrderProp,
     onSort = () => {},
-    density = 'm',
     fontSize,
     columnId,
   } = props;
@@ -89,13 +88,12 @@ const Header: HeaderComponent = props => {
     >
       {isElement(children) && children}
       {isFunction(children) ? (
-        children({ density, fontSize, sortable, sortOrder, onSortClick, sorted, columnId })
+        children({ fontSize, sortable, sortOrder, onSortClick, sorted, columnId })
       ) : (
         <HeaderContent
           onSortClick={onSortClick}
           sortable={sortable}
           sortOrder={sortOrder}
-          density={density}
           fontSize={fontSize}
           sorted={sorted}
         >

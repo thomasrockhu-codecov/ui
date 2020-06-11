@@ -12,7 +12,7 @@ const StyledTypography = styled(Typography)`
 `;
 
 export const TextWrapper: TextWrapperComponent = ({ fontSize = 'm', children }) => (
-  <StyledTypography type={getFontSizeTypographyType(fontSize)} color={(t) => t.color.text}>
+  <StyledTypography type={getFontSizeTypographyType(fontSize)} color={t => t.color.text}>
     {children}
   </StyledTypography>
 );
