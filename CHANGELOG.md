@@ -1,3 +1,11 @@
+## [2.49.3](https://github.com/nordnet/ui/compare/v2.49.2...v2.49.3) (2020-06-12)
+
+
+### Bug Fixes
+
+* update file icon ([165903d](https://github.com/nordnet/ui/commit/165903d))
+* update viewBox for file icon ([0a58de3](https://github.com/nordnet/ui/commit/0a58de3))
+
 ## [2.49.2](https://github.com/nordnet/ui/compare/v2.49.1...v2.49.2) (2020-06-10)
 
 
