@@ -21,13 +21,9 @@ const Cell: CellComponent = ({ children, className, fontSize, columnId }) => {
   return (
     <StyledFlexbox className={className} role="cell" {...columnState.flexProps}>
       {isElement(children) && children}
-      {isFunction(children) ? (
-        children({ fontSize, columnId })
-      ) : (
-        <TextWrapper fontSize={fontSize}>
-          {children}
-        </TextWrapper>
-      )}
+      {isFunction(children)
+        ? children({ fontSize, columnId })
+        : !isElement(children) && <TextWrapper fontSize={fontSize}>{children}</TextWrapper>}
     </StyledFlexbox>
   );
 };
