@@ -1,6 +1,6 @@
 import React from 'react';
 import { HeaderRow, Row } from './Row';
-import { Header } from './Header';
+import { Header, IconHeader } from './Header';
 import { Cell } from './Cell';
 import { constants, ColumnProvider } from './shared';
 import { Props, FlexTableComponents } from './FlexTable.types';
@@ -22,6 +22,7 @@ const FlexTable: React.FC<Props> & FlexTableComponents = ({
 FlexTable.Row = Row;
 FlexTable.HeaderRow = HeaderRow;
 FlexTable.Header = Header;
+FlexTable.IconHeader = IconHeader;
 FlexTable.Cell = Cell;
 FlexTable.CONSTANTS = constants;
 

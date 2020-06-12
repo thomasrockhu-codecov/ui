@@ -17,7 +17,6 @@ const Cell: CellComponent = ({ children, className, fontSize, columnId }) => {
   if (!R.prop('flexProps', columnState)) {
     return null;
   }
-
   return (
     <StyledFlexbox className={className} role="cell" {...columnState.flexProps}>
       {isElement(children) && children}
