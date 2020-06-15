@@ -1,12 +1,14 @@
-import React from 'react';
+import React, { useState } from 'react';
+import * as R from 'ramda';
 import styled from 'styled-components';
 import { RowComponent } from './Row.types';
-import { Box, Flexbox } from '../../../index';
+import { Box, Flexbox, Button, Icon } from '../../../index';
 import { ColorFn } from '../../../common/Types/sharedTypes';
 import { getDensityPaddings } from '../shared/textUtils';
 import { Density } from '../shared/shared.types';
 import { useFlexTable } from '../shared/FlexTableProvider';
 import { ExpandItems } from './ExpandItems';
+import { Cell } from '../Cell';
 
 /* the cells are padded by row gutter 1 unit (4px) */
 const StyledRow = styled('div').withConfig({
@@ -41,9 +43,18 @@ const StyledFlexbox = styled(Flexbox).withConfig({
     ${p => (p.expanded ? p.theme.color.cta : 'transparent')};
 `;
 
+export const ExpandButton: React.FC<{ expanded: boolean; onClick: () => void }> = ({
+  expanded,
+  onClick,
+}) => (
+  <Button variant="neutral" onClick={onClick} aria-expanded={expanded}>
+    {expanded ? <Icon.ChevronUp /> : <Icon.ChevronDown />}
+  </Button>
+);
+
 export const Row: RowComponent = ({
   className,
-  expanded = false,
+  expanded: expandedProp,
   hoverHighlight = true,
   hideSeparator = false,
   separatorColor = theme => theme.color.divider,
@@ -53,6 +64,8 @@ export const Row: RowComponent = ({
   ...htmlProps
 }) => {
   const { density } = useFlexTable();
+  const [expanded, setExpanded] = useState(R.isNil(expandedProp) ? false : expandedProp);
+  const isExpandable = expandChildren || (expandItems && expandItems.length);
   return (
     <StyledRow
       className={className}
@@ -71,6 +84,11 @@ export const Row: RowComponent = ({
         density={density}
       >
         {children}
+        {isExpandable && (
+          <Cell columnId="actions">
+            <ExpandButton expanded={expanded} onClick={() => setExpanded(!expanded)} />
+          </Cell>
+        )}
       </StyledFlexbox>
       {expanded && (
         <Box px={4} pb={2}>

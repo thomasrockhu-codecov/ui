@@ -42,7 +42,7 @@ type RenderPropArguments = TextWrapperProps &
 type RenderFunc = (props: RenderPropArguments) => ReactNode;
 type Children = ReactNode | RenderFunc;
 
-type Props = { children: Children; columnId: string } & FlexboxProps &
+type Props = { children?: Children; columnId: string } & FlexboxProps &
   TextWrapperProps &
   SortedProps;
 

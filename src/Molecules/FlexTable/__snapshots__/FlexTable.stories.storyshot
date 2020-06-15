@@ -4608,7 +4608,7 @@ exports[`Storyshots Molecules | FlexTable Default Table With Icon Column 1`] = `
   padding-top: 0;
 }
 
-.c2 {
+.c3 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -4622,7 +4622,7 @@ exports[`Storyshots Molecules | FlexTable Default Table With Icon Column 1`] = `
   flex: 1;
 }
 
-.c5 {
+.c6 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -4640,7 +4640,7 @@ exports[`Storyshots Molecules | FlexTable Default Table With Icon Column 1`] = `
   flex: 0 40px;
 }
 
-.c3 {
+.c4 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #6E6E69;
   margin: 0;
@@ -4651,27 +4651,35 @@ exports[`Storyshots Molecules | FlexTable Default Table With Icon Column 1`] = `
 
 .c0 {
   border-bottom: 1px solid #282823;
-  padding-top: 4px;
   padding-right: 4px;
-  padding-bottom: 4px;
   padding-left: 2px;
   border-left: 2px solid transparent;
 }
 
-.c6 {
+.c7 {
   border-bottom: 1px solid #EBEBE8;
-  padding-top: 4px;
   padding-right: 4px;
-  padding-bottom: 4px;
   padding-left: 2px;
   border-left: 2px solid transparent;
 }
 
-.c6:hover {
+.c2 {
+  padding-top: 4px;
+  padding-bottom: 4px;
+  border-left: 2px solid transparent;
+}
+
+.c8 {
+  padding-top: 4px;
+  padding-bottom: 4px;
+  border-left: 2px solid transparent;
+}
+
+.c8:hover {
   background: #F5F5F5;
 }
 
-.c4 {
+.c5 {
   display: inline-block;
   word-break: break-word;
 }
@@ -4684,65 +4692,65 @@ exports[`Storyshots Molecules | FlexTable Default Table With Icon Column 1`] = `
     role="row"
   >
     <div
-      className="c1"
+      className="c1 c2"
     >
       <div
-        className="c2"
+        className="c3"
         role="columnheader"
       >
         <span
-          className="c3 c4"
+          className="c4 c5"
         >
           Header 1
         </span>
       </div>
       <div
-        className="c2"
+        className="c3"
         role="columnheader"
       >
         <span
-          className="c3 c4"
+          className="c4 c5"
         >
           Header 2
         </span>
       </div>
       <div
-        className="c2"
+        className="c3"
         role="columnheader"
       >
         <span
-          className="c3 c4"
+          className="c4 c5"
         >
           Header 3
         </span>
       </div>
       <div
-        className="c5"
+        className="c6"
       />
     </div>
   </div>
   <div
-    className="c6"
+    className="c7"
     role="row"
   >
     <div
-      className="c1"
+      className="c1 c8"
     />
   </div>
   <div
-    className="c6"
+    className="c7"
     role="row"
   >
     <div
-      className="c1"
+      className="c1 c8"
     />
   </div>
   <div
-    className="c6"
+    className="c7"
     role="row"
   >
     <div
-      className="c1"
+      className="c1 c8"
     />
   </div>
 </div>
@@ -5886,6 +5894,20 @@ exports[`Storyshots Molecules | FlexTable Table Expanded Children 1`] = `
   flex: 1;
 }
 
+.c6 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -webkit-flex: 0 40px;
+  -ms-flex: 0 40px;
+  flex: 0 40px;
+}
+
 .c4 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #6E6E69;
@@ -5902,7 +5924,7 @@ exports[`Storyshots Molecules | FlexTable Table Expanded Children 1`] = `
   border-left: 2px solid transparent;
 }
 
-.c6 {
+.c7 {
   border-bottom: 1px solid #EBEBE8;
   padding-right: 4px;
   padding-left: 2px;
@@ -5915,13 +5937,13 @@ exports[`Storyshots Molecules | FlexTable Table Expanded Children 1`] = `
   border-left: 2px solid transparent;
 }
 
-.c7 {
+.c8 {
   padding-top: 4px;
   padding-bottom: 4px;
   border-left: 2px solid transparent;
 }
 
-.c7:hover {
+.c8:hover {
   background: #F5F5F5;
 }
 
@@ -5970,31 +5992,38 @@ exports[`Storyshots Molecules | FlexTable Table Expanded Children 1`] = `
           Header 3
         </span>
       </div>
+      <div
+        className="c6"
+        role="columnheader"
+      >
+        <span
+          className="c4 c5"
+        />
+      </div>
     </div>
   </div>
   <div
-    className="c6"
+    className="c7"
     role="row"
   >
     <div
-      className="c1 c7"
+      className="c1 c8"
     />
   </div>
   <div
-    className="c6"
-    onClick={[Function]}
+    className="c7"
     role="row"
   >
     <div
-      className="c1 c7"
+      className="c1 c8"
     />
   </div>
   <div
-    className="c6"
+    className="c7"
     role="row"
   >
     <div
-      className="c1 c7"
+      className="c1 c8"
     />
   </div>
 </div>

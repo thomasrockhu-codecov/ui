@@ -6,7 +6,7 @@ type RenderFunc = (props: RenderPropArguments) => ReactNode;
 type Children = ReactNode | RenderFunc;
 
 export type Props = {
-  children: Children;
+  children?: Children;
   className?: string;
   fontSize?: FontSize;
   columnId: string;
