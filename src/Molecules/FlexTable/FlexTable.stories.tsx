@@ -387,9 +387,9 @@ export const TableExpandedChildren = () => {
           onClick={() => setExpanded(!expanded)}
           expandItems={expandedItemsGenerator()}
         >
-          <FlexTable.Cell columnId="column1">Cell 2-1</FlexTable.Cell>
-          <FlexTable.Cell columnId="column2">Cell 2-2</FlexTable.Cell>
-          <FlexTable.Cell columnId="column3">Cell 2-3</FlexTable.Cell>
+          <FlexTable.Cell columnId="column1">Expandable</FlexTable.Cell>
+          <FlexTable.Cell columnId="column2">Expandable</FlexTable.Cell>
+          <FlexTable.Cell columnId="column3">Expandable</FlexTable.Cell>
         </FlexTable.Row>
         <FlexTable.Row>
           <FlexTable.Cell columnId="column1">Cell 3-1</FlexTable.Cell>
