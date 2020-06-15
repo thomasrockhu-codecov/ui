@@ -357,18 +357,12 @@ export const TableExpanded = () => {
 };
 
 export const TableExpandedChildren = () => {
-  type ExpandedValues = {
-    label: string;
-    value: string;
-  };
+  const expandedItemsGenerator = [...Array(10)].reduce((acc, _, itemIndex) => {
+    const keyName = `${itemIndex + 1}`;
+    return [...acc, { label: `Label ${keyName}`, value: `Value ${keyName}` }];
+  }, []);
 
-  const expandedItemsGenerator = (): Array<ExpandedValues> =>
-    [...Array(10)].reduce((acc, _, itemIndex) => {
-      const keyName = `${itemIndex + 1}`;
-      return [...acc, { label: `Label ${keyName}`, value: `Value ${keyName}` }];
-    }, []);
-
-  const TableExpandedExample = () => {
+  const TableExpandedChildrenExample = () => {
     const [expanded, setExpanded] = useState(false);
     return (
       <FlexTable>
@@ -385,7 +379,7 @@ export const TableExpandedChildren = () => {
         <FlexTable.Row
           expanded={expanded}
           onClick={() => setExpanded(!expanded)}
-          expandItems={expandedItemsGenerator()}
+          expandItems={expandedItemsGenerator}
         >
           <FlexTable.Cell columnId="column1">Expandable</FlexTable.Cell>
           <FlexTable.Cell columnId="column2">Expandable</FlexTable.Cell>
@@ -399,7 +393,7 @@ export const TableExpandedChildren = () => {
       </FlexTable>
     );
   };
-  return <TableExpandedExample />;
+  return <TableExpandedChildrenExample />;
 };
 
 export const TableHeader = () => {

@@ -8,7 +8,7 @@ export type ExpandItem = {
   value: string;
 };
 
-type ExpandItems = Array<ExpandItem>;
+export type ExpandItems = Array<ExpandItem>;
 
 type Props = {
   hideSeparator?: boolean;
