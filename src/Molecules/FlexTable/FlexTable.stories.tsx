@@ -385,7 +385,7 @@ export const TableExpandedChildren = () => {
         <FlexTable.Row
           expanded={expanded}
           onClick={() => setExpanded(!expanded)}
-          expandableContent={expandedItemsGenerator()}
+          expandItems={expandedItemsGenerator()}
         >
           <FlexTable.Cell columnId="column1">Cell 2-1</FlexTable.Cell>
           <FlexTable.Cell columnId="column2">Cell 2-2</FlexTable.Cell>
