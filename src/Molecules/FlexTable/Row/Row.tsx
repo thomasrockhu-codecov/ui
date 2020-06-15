@@ -6,6 +6,7 @@ import { ColorFn } from '../../../common/Types/sharedTypes';
 import { getDensityPaddings } from '../shared/textUtils';
 import { Density } from '../shared/shared.types';
 import { useFlexTable } from '../shared/FlexTableProvider';
+import { ExpandItems } from './ExpandItems';
 
 /* the cells are padded by row gutter 1 unit (4px) */
 const StyledRow = styled('div').withConfig({
@@ -41,7 +42,8 @@ export const Row: RowComponent = ({
   hoverHighlight = true,
   hideSeparator = false,
   separatorColor = theme => theme.color.divider,
-  expandableContent,
+  expandChildren,
+  expandItems,
   children,
   ...htmlProps
 }) => {
@@ -62,7 +64,8 @@ export const Row: RowComponent = ({
       </Flexbox>
       {expanded && (
         <Box px={4} pb={2}>
-          {expandableContent}
+          {expandItems && <ExpandItems items={expandItems} />}
+          {expandChildren}
         </Box>
       )}
     </StyledRow>

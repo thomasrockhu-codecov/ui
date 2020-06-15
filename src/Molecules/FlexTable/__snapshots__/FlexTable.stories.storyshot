@@ -4757,188 +4757,6 @@ exports[`Storyshots Molecules | FlexTable Different Alignments Table 1`] = `
 </div>
 `;
 
-exports[`Storyshots Molecules | FlexTable Old Table Expanded 1`] = `
-.c1 {
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  margin-left: -4px;
-  margin-right: -4px;
-}
-
-.c1 > * {
-  padding-left: 4px;
-  padding-right: 4px;
-}
-
-.c1 > *:not(:first-child) {
-  padding-top: 0;
-}
-
-.c3 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: inherit;
-  margin: 0;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
-}
-
-.c2 {
-  font-family: inherit;
-  font-size: 100%;
-  line-height: 1.15;
-  margin: 0;
-  overflow: visible;
-  text-transform: none;
-  position: relative;
-  box-sizing: border-box;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  padding: NaNpx NaNpx;
-  background-color: #FFFFFF;
-  color: #0046FF;
-  border: none;
-  border-radius: 0;
-  cursor: pointer;
-}
-
-.c2,
-.c2[type='button'],
-.c2[type='reset'],
-.c2[type='submit'] {
-  -webkit-appearance: button;
-}
-
-.c2::-moz-focus-inner,
-.c2[type='button']::-moz-focus-inner,
-.c2[type='reset']::-moz-focus-inner,
-.c2[type='submit']::-moz-focus-inner {
-  border-style: none;
-  padding: 0;
-}
-
-.c2:-moz-focusring,
-.c2[type='button']:-moz-focusring,
-.c2[type='reset']:-moz-focusring,
-.c2[type='submit']:-moz-focusring {
-  outline: 1px dotted ButtonText;
-}
-
-.c2::before {
-  content: '';
-  display: block;
-  position: absolute;
-  border: 2px solid #0046FF;
-  top: 0;
-  left: 0;
-  width: calc(100% - 4px);
-  height: calc(100% - 4px);
-}
-
-.c2:hover {
-  color: hsl(223.5,100%,40%);
-}
-
-.c2:hover::before {
-  border-color: hsl(223.5,100%,40%);
-}
-
-.c2:active {
-  color: hsl(223.5,100%,35%);
-}
-
-.c2:active::before {
-  border-color: hsl(223.5,100%,35%);
-}
-
-.c0 {
-  border-bottom: 1px solid #EBEBE8;
-  padding-top: 4px;
-  padding-right: 4px;
-  padding-bottom: 4px;
-  padding-left: 2px;
-  border-left: 2px solid transparent;
-}
-
-.c0:hover {
-  background: #F5F5F5;
-}
-
-<div
-  role="table"
->
-  <div
-    className="c0"
-    role="row"
-  >
-    <div
-      className="c1"
-    >
-      Default
-    </div>
-  </div>
-  <div
-    className="c0"
-    role="row"
-  >
-    <div
-      className="c1"
-    >
-      <button
-        className="NormalizedButton__Button-ey7f5x-0 c2"
-        onClick={[Function]}
-        type="button"
-      >
-        <span>
-          <span
-            className="c3"
-          >
-            Expand
-          </span>
-        </span>
-      </button>
-    </div>
-  </div>
-  <div
-    className="c0"
-    role="row"
-  >
-    <div
-      className="c1"
-    >
-      Default
-    </div>
-  </div>
-  <div
-    className="c0"
-    role="row"
-  >
-    <div
-      className="c1"
-    >
-      Default
-    </div>
-  </div>
-</div>
-`;
-
 exports[`Storyshots Molecules | FlexTable Sortable Header Controlled 1`] = `
 .c1 {
   box-sizing: border-box;
@@ -5664,6 +5482,188 @@ exports[`Storyshots Molecules | FlexTable Table Expanded 1`] = `
   padding-top: 0;
 }
 
+.c3 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: inherit;
+  margin: 0;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c2 {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  overflow: visible;
+  text-transform: none;
+  position: relative;
+  box-sizing: border-box;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  padding: NaNpx NaNpx;
+  background-color: #FFFFFF;
+  color: #0046FF;
+  border: none;
+  border-radius: 0;
+  cursor: pointer;
+}
+
+.c2,
+.c2[type='button'],
+.c2[type='reset'],
+.c2[type='submit'] {
+  -webkit-appearance: button;
+}
+
+.c2::-moz-focus-inner,
+.c2[type='button']::-moz-focus-inner,
+.c2[type='reset']::-moz-focus-inner,
+.c2[type='submit']::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+.c2:-moz-focusring,
+.c2[type='button']:-moz-focusring,
+.c2[type='reset']:-moz-focusring,
+.c2[type='submit']:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+.c2::before {
+  content: '';
+  display: block;
+  position: absolute;
+  border: 2px solid #0046FF;
+  top: 0;
+  left: 0;
+  width: calc(100% - 4px);
+  height: calc(100% - 4px);
+}
+
+.c2:hover {
+  color: hsl(223.5,100%,40%);
+}
+
+.c2:hover::before {
+  border-color: hsl(223.5,100%,40%);
+}
+
+.c2:active {
+  color: hsl(223.5,100%,35%);
+}
+
+.c2:active::before {
+  border-color: hsl(223.5,100%,35%);
+}
+
+.c0 {
+  border-bottom: 1px solid #EBEBE8;
+  padding-top: 4px;
+  padding-right: 4px;
+  padding-bottom: 4px;
+  padding-left: 2px;
+  border-left: 2px solid transparent;
+}
+
+.c0:hover {
+  background: #F5F5F5;
+}
+
+<div
+  role="table"
+>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    >
+      Default
+    </div>
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    >
+      <button
+        className="NormalizedButton__Button-ey7f5x-0 c2"
+        onClick={[Function]}
+        type="button"
+      >
+        <span>
+          <span
+            className="c3"
+          >
+            Expand
+          </span>
+        </span>
+      </button>
+    </div>
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    >
+      Default
+    </div>
+  </div>
+  <div
+    className="c0"
+    role="row"
+  >
+    <div
+      className="c1"
+    >
+      Default
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Molecules | FlexTable Table Expanded Children 1`] = `
+.c1 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-left: -4px;
+  margin-right: -4px;
+}
+
+.c1 > * {
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+.c1 > *:not(:first-child) {
+  padding-top: 0;
+}
+
 .c2 {
   box-sizing: border-box;
   display: -webkit-box;
@@ -5766,6 +5766,50 @@ exports[`Storyshots Molecules | FlexTable Table Expanded 1`] = `
   </div>
   <div
     className="c5"
+    expandableContent={
+      Array [
+        Object {
+          "label": "Label 1",
+          "value": "Value 1",
+        },
+        Object {
+          "label": "Label 2",
+          "value": "Value 2",
+        },
+        Object {
+          "label": "Label 3",
+          "value": "Value 3",
+        },
+        Object {
+          "label": "Label 4",
+          "value": "Value 4",
+        },
+        Object {
+          "label": "Label 5",
+          "value": "Value 5",
+        },
+        Object {
+          "label": "Label 6",
+          "value": "Value 6",
+        },
+        Object {
+          "label": "Label 7",
+          "value": "Value 7",
+        },
+        Object {
+          "label": "Label 8",
+          "value": "Value 8",
+        },
+        Object {
+          "label": "Label 9",
+          "value": "Value 9",
+        },
+        Object {
+          "label": "Label 10",
+          "value": "Value 10",
+        },
+      ]
+    }
     onClick={[Function]}
     role="row"
   >

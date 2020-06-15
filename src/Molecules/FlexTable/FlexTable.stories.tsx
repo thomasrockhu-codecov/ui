@@ -337,13 +337,13 @@ export const TableWithDifferentRows = () => (
   </FlexTable>
 );
 
-export const OldTableExpanded = () => {
+export const TableExpanded = () => {
   const TableExpandedExample = () => {
     const [expanded, setExpanded] = useState(false);
     return (
       <FlexTable>
         <FlexTable.Row>Default</FlexTable.Row>
-        <FlexTable.Row expanded={expanded} expandableContent={<div>I am expanded</div>}>
+        <FlexTable.Row expanded={expanded} expandChildren={<div>I am expanded</div>}>
           <Button variant="secondary" size="s" onClick={() => setExpanded(!expanded)}>
             {expanded ? 'Collapse' : 'Expand'}
           </Button>
@@ -356,7 +356,18 @@ export const OldTableExpanded = () => {
   return <TableExpandedExample />;
 };
 
-export const TableExpanded = () => {
+export const TableExpandedChildren = () => {
+  type ExpandedValues = {
+    label: string;
+    value: string;
+  };
+
+  const expandedItemsGenerator = (): Array<ExpandedValues> =>
+    [...Array(10)].reduce((acc, _, itemIndex) => {
+      const keyName = `${itemIndex + 1}`;
+      return [...acc, { label: `Label ${keyName}`, value: `Value ${keyName}` }];
+    }, []);
+
   const TableExpandedExample = () => {
     const [expanded, setExpanded] = useState(false);
     return (
@@ -374,7 +385,7 @@ export const TableExpanded = () => {
         <FlexTable.Row
           expanded={expanded}
           onClick={() => setExpanded(!expanded)}
-          expandableContent={<div>I am expanded</div>}
+          expandableContent={expandedItemsGenerator()}
         >
           <FlexTable.Cell columnId="column1">Cell 2-1</FlexTable.Cell>
           <FlexTable.Cell columnId="column2">Cell 2-2</FlexTable.Cell>
