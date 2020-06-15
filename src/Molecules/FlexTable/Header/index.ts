@@ -1,4 +1,4 @@
 import Header from './Header';
-import IconHeader from './IconHeader';
+import ActionHeader from './ActionHeader';
 
-export { Header, IconHeader };
+export { Header, ActionHeader };

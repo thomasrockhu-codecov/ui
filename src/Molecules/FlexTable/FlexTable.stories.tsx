@@ -46,7 +46,7 @@ export const DefaultTableWithIconColumn = () => (
       <FlexTable.Header columnId="column1">Header 1</FlexTable.Header>
       <FlexTable.Header columnId="column2">Header 2</FlexTable.Header>
       <FlexTable.Header columnId="column3">Header 3</FlexTable.Header>
-      <FlexTable.IconHeader columnId="column4" icons={2} />
+      <FlexTable.ActionHeader icons={2} />
     </FlexTable.HeaderRow>
     <FlexTable.Row>
       <FlexTable.Cell columnId="column1">Cell 1-1</FlexTable.Cell>
@@ -398,28 +398,32 @@ export const TableExpandedChildren = () => {
   }, []);
 
   const TableExpandedChildrenExample = () => {
+    const [expanded, setExpanded] = useState(false);
     return (
       <FlexTable>
         <FlexTable.HeaderRow>
           <FlexTable.Header columnId="column1">Header 1</FlexTable.Header>
           <FlexTable.Header columnId="column2">Header 2</FlexTable.Header>
           <FlexTable.Header columnId="column3">Header 3</FlexTable.Header>
-          <FlexTable.Header columnId="actions" flex="0 40px" />
+          <FlexTable.ActionHeader icons={1} />
         </FlexTable.HeaderRow>
         <FlexTable.Row>
           <FlexTable.Cell columnId="column1">Cell 1-1</FlexTable.Cell>
           <FlexTable.Cell columnId="column2">Cell 1-2</FlexTable.Cell>
           <FlexTable.Cell columnId="column3">Cell 1-3</FlexTable.Cell>
+          <FlexTable.ExpandCell expanded={false} onClick={() => setExpanded(!expanded)} disabled />
         </FlexTable.Row>
-        <FlexTable.Row expandItems={expandedItemsGenerator}>
+        <FlexTable.Row expandItems={expandedItemsGenerator} expanded={expanded}>
           <FlexTable.Cell columnId="column1">Expandable</FlexTable.Cell>
           <FlexTable.Cell columnId="column2">Expandable</FlexTable.Cell>
           <FlexTable.Cell columnId="column3">Expandable</FlexTable.Cell>
+          <FlexTable.ExpandCell expanded={expanded} onClick={() => setExpanded(!expanded)} />
         </FlexTable.Row>
         <FlexTable.Row>
           <FlexTable.Cell columnId="column1">Cell 3-1</FlexTable.Cell>
           <FlexTable.Cell columnId="column2">Cell 3-2</FlexTable.Cell>
           <FlexTable.Cell columnId="column3">Cell 3-3</FlexTable.Cell>
+          <FlexTable.ExpandCell expanded={false} onClick={() => setExpanded(!expanded)} disabled />
         </FlexTable.Row>
       </FlexTable>
     );

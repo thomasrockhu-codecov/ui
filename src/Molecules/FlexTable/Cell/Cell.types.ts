@@ -19,3 +19,11 @@ export type TextWrapperProps = {
 };
 
 export type TextWrapperComponent = React.FC<TextWrapperProps>;
+
+type ExpandCellProps = {
+  disabled?: boolean;
+  expanded: boolean;
+  onClick: () => void;
+};
+
+export type ExpandCellComponent = React.FC<ExpandCellProps>;

@@ -1,13 +1,13 @@
 import React, { useEffect } from 'react';
 import R from 'ramda';
-import { IconHeaderComponent } from './IconHeader.types';
+import { ActionHeaderComponent } from './ActionHeader.types';
 import { Flexbox } from '../../..';
 import { useFlexCellProps, useColumn, ACTION_SET_FLEX_PROPS } from '../shared/ColumnProvider';
 
-const IconHeader: IconHeaderComponent = props => {
-  const { columnId, icons } = props;
+const ActionHeader: ActionHeaderComponent = props => {
+  const { icons } = props;
 
-  const [columnState, columnDispatch] = useColumn(columnId);
+  const [columnState, columnDispatch] = useColumn('actions');
 
   const cellFlexProps = useFlexCellProps({
     ...props,
@@ -24,4 +24,4 @@ const IconHeader: IconHeaderComponent = props => {
   return <Flexbox {...R.propOr(cellFlexProps, 'flexProps', columnState)} />;
 };
 
-export default IconHeader;
+export default ActionHeader;

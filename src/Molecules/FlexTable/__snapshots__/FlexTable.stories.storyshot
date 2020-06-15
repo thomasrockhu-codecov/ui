@@ -5903,9 +5903,13 @@ exports[`Storyshots Molecules | FlexTable Table Expanded Children 1`] = `
   -webkit-flex-wrap: nowrap;
   -ms-flex-wrap: nowrap;
   flex-wrap: nowrap;
-  -webkit-flex: 0 40px;
-  -ms-flex: 0 40px;
-  flex: 0 40px;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  -webkit-flex: 0 24px;
+  -ms-flex: 0 24px;
+  flex: 0 24px;
 }
 
 .c4 {
@@ -5994,12 +5998,7 @@ exports[`Storyshots Molecules | FlexTable Table Expanded Children 1`] = `
       </div>
       <div
         className="c6"
-        role="columnheader"
-      >
-        <span
-          className="c4 c5"
-        />
-      </div>
+      />
     </div>
   </div>
   <div
