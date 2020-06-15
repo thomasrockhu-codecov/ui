@@ -1,3 +1,10 @@
+## [2.50.1](https://github.com/nordnet/ui/compare/v2.50.0...v2.50.1) (2020-06-15)
+
+
+### Bug Fixes
+
+* revert search drawer alignment ([3da7055](https://github.com/nordnet/ui/commit/3da7055))
+
 # [2.50.0](https://github.com/nordnet/ui/compare/v2.49.3...v2.50.0) (2020-06-12)
 
 
