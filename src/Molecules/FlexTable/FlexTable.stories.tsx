@@ -378,7 +378,7 @@ export const TableExpanded = () => {
     return (
       <FlexTable>
         <FlexTable.Row>Default</FlexTable.Row>
-        <FlexTable.Row expanded={expanded} expandableContent={<div>I am expanded</div>}>
+        <FlexTable.Row expanded={expanded} expandChildren={<div>I am expanded</div>}>
           <Button variant="secondary" size="s" onClick={() => setExpanded(!expanded)}>
             {expanded ? 'Collapse' : 'Expand'}
           </Button>
@@ -389,6 +389,46 @@ export const TableExpanded = () => {
     );
   };
   return <TableExpandedExample />;
+};
+
+export const TableExpandedChildren = () => {
+  const expandedItemsGenerator = [...Array(10)].reduce((acc, _, itemIndex) => {
+    const keyName = `${itemIndex + 1}`;
+    return [...acc, { label: `Label ${keyName}`, value: `Value ${keyName}` }];
+  }, []);
+
+  const TableExpandedChildrenExample = () => {
+    const [expanded, setExpanded] = useState(false);
+    return (
+      <FlexTable>
+        <FlexTable.HeaderRow>
+          <FlexTable.Header columnId="column1">Header 1</FlexTable.Header>
+          <FlexTable.Header columnId="column2">Header 2</FlexTable.Header>
+          <FlexTable.Header columnId="column3">Header 3</FlexTable.Header>
+        </FlexTable.HeaderRow>
+        <FlexTable.Row>
+          <FlexTable.Cell columnId="column1">Cell 1-1</FlexTable.Cell>
+          <FlexTable.Cell columnId="column2">Cell 1-2</FlexTable.Cell>
+          <FlexTable.Cell columnId="column3">Cell 1-3</FlexTable.Cell>
+        </FlexTable.Row>
+        <FlexTable.Row
+          expanded={expanded}
+          onClick={() => setExpanded(!expanded)}
+          expandItems={expandedItemsGenerator}
+        >
+          <FlexTable.Cell columnId="column1">Expandable</FlexTable.Cell>
+          <FlexTable.Cell columnId="column2">Expandable</FlexTable.Cell>
+          <FlexTable.Cell columnId="column3">Expandable</FlexTable.Cell>
+        </FlexTable.Row>
+        <FlexTable.Row>
+          <FlexTable.Cell columnId="column1">Cell 3-1</FlexTable.Cell>
+          <FlexTable.Cell columnId="column2">Cell 3-2</FlexTable.Cell>
+          <FlexTable.Cell columnId="column3">Cell 3-3</FlexTable.Cell>
+        </FlexTable.Row>
+      </FlexTable>
+    );
+  };
+  return <TableExpandedChildrenExample />;
 };
 
 export const TableHeader = () => {
