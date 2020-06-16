@@ -392,7 +392,7 @@ export const TableExpanded = () => {
 };
 
 export const TableExpandedChildren = () => {
-  const expandedItemsGenerator = [...Array(10)].reduce((acc, _, itemIndex) => {
+  const expandedItemsGenerator = [...Array(20)].reduce((acc, _, itemIndex) => {
     const keyName = `${itemIndex + 1}`;
     return [...acc, { label: `Label ${keyName}`, value: `Value ${keyName}` }];
   }, []);
