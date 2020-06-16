@@ -3,7 +3,7 @@ import R from 'ramda';
 import styled from 'styled-components';
 import { number, withKnobs } from '@storybook/addon-knobs';
 import FlexTable from './FlexTable';
-import { Button, Typography, Flag, Icon } from '../..';
+import { Button, Typography, Flag, Icon, Number } from '../..';
 import { SortOrder } from './Header/HeaderContent/HeaderContent.types';
 import { OnSort } from './Header/Header.types';
 
@@ -391,17 +391,22 @@ export const TableExpanded = () => {
   return <TableExpandedExample />;
 };
 
-export const TableExpandedChildren = () => {
-  const expandedItemsGenerator = [...Array(20)].reduce((acc, _, itemIndex) => {
+const expandedItemsGenerator = (renderComponent = false) =>
+  [...Array(20)].reduce((acc, _, itemIndex) => {
     const keyName = `${itemIndex + 1}`;
-    return [
-      ...acc,
-      { label: `Label ${keyName}`, value: `${Math.floor(10 ** (20 - itemIndex) * Math.random())}` },
-    ];
+    const labelText = `Label ${keyName}`;
+    const label = renderComponent ? <Typography>{labelText}</Typography> : labelText;
+    const valueText = Math.floor(10 ** (20 - itemIndex) * Math.random());
+    const value = renderComponent ? <Number value={valueText} /> : valueText.toString();
+    return [...acc, { label, value }];
   }, []);
 
+export const TableExpandedChildren = () => {
+  const expandItemsText = expandedItemsGenerator();
+  const expandItemsComponents = expandedItemsGenerator(true);
   const TableExpandedChildrenExample = () => {
     const [expanded, setExpanded] = useState(false);
+    const [expanded2, setExpanded2] = useState(false);
     return (
       <FlexTable>
         <FlexTable.HeaderRow>
@@ -416,17 +421,18 @@ export const TableExpandedChildren = () => {
           <FlexTable.Cell columnId="column3">Cell 1-3</FlexTable.Cell>
           <FlexTable.ExpandCell expanded={false} onClick={() => setExpanded(!expanded)} disabled />
         </FlexTable.Row>
-        <FlexTable.Row expandItems={expandedItemsGenerator} expanded={expanded}>
+        <FlexTable.Row expandItems={expandItemsText} expanded={expanded}>
           <FlexTable.Cell columnId="column1">Expandable</FlexTable.Cell>
           <FlexTable.Cell columnId="column2">Expandable</FlexTable.Cell>
           <FlexTable.Cell columnId="column3">Expandable</FlexTable.Cell>
           <FlexTable.ExpandCell expanded={expanded} onClick={() => setExpanded(!expanded)} />
         </FlexTable.Row>
-        <FlexTable.Row>
+
+        <FlexTable.Row expandItems={expandItemsComponents} expanded={expanded2}>
           <FlexTable.Cell columnId="column1">Cell 3-1</FlexTable.Cell>
           <FlexTable.Cell columnId="column2">Cell 3-2</FlexTable.Cell>
           <FlexTable.Cell columnId="column3">Cell 3-3</FlexTable.Cell>
-          <FlexTable.ExpandCell expanded={false} onClick={() => setExpanded(!expanded)} disabled />
+          <FlexTable.ExpandCell expanded={expanded2} onClick={() => setExpanded2(!expanded2)} />
         </FlexTable.Row>
       </FlexTable>
     );
