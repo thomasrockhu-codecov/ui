@@ -148,7 +148,8 @@ const generateTableData = (rowsLength: number, columnsLength: number) =>
     const rowId = generateUniqueId(rowIndex);
     return [...Array(columnsLength)].reduce((acc, __, columnIndex) => {
       const keyName = `value${columnIndex + 1}`;
-      return { ...acc, rowId, [keyName]: { value: `Cell ${rowIndex + 1}-${columnIndex + 1}` } };
+      const id = generateUniqueId(columnIndex);
+      return { ...acc, rowId, [keyName]: { value: `Cell ${rowIndex + 1}-${columnIndex + 1}`, id } };
     }, {});
   });
 
@@ -157,7 +158,7 @@ const BigTableRow = ({ data }: any) => {
     <FlexTable.Row>
       {Object.keys(R.omit(['rowId'], data)).map((valueKey, index) => {
         return (
-          <FlexTable.Cell key={data.id} columnId={`column${index + 1}`}>
+          <FlexTable.Cell key={data[valueKey].id} columnId={`column${index + 1}`}>
             {data[valueKey].value}
           </FlexTable.Cell>
         );
@@ -176,8 +177,13 @@ export const BigTable = () => {
       columnsLength,
     ]);
     const sortedData = useMemo(() => {
+      const start = performance.now();
+
+      if (sort.sortOrder === 'none') {
+        return tableData;
+      }
       const getValue = (rowData: any) => rowData[sort.columnId.replace('column', 'value')].value;
-      return tableData.sort((rowA, rowB) => {
+      const sorted = [...tableData].sort((rowA, rowB) => {
         if (sort.sortOrder === 'ascending') {
           return getValue(rowB).localeCompare(getValue(rowA));
         }
@@ -188,6 +194,9 @@ export const BigTable = () => {
 
         return 0;
       });
+      const end = performance.now();
+      console.log(`This took ${end - start}ms to complete`);
+      return sorted;
     }, [tableData, sort]);
 
     return (
@@ -196,6 +205,7 @@ export const BigTable = () => {
           {[...Array(columnsLength)].map((_, index) => (
             <FlexTable.Header
               columnId={`column${index + 1}`}
+              key={`column${index + 1}`}
               sortable
               onSort={(columnId, nextSortOrder) => {
                 setSort({ columnId, sortOrder: nextSortOrder });
