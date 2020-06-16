@@ -1,5 +1,6 @@
 import React, { ReactNode } from 'react';
 import { FontSize, Density } from '../shared/shared.types';
+import { FlexPropsType } from '../shared/ColumnProvider/ColumnProvider.types';
 
 type RenderPropArguments = { density: Density; fontSize: FontSize; columnId: string };
 type RenderFunc = (props: RenderPropArguments) => ReactNode;
@@ -13,6 +14,8 @@ export type Props = {
 };
 
 export type CellComponent = React.FC<Props>;
+
+export type InnerCellComponent = React.FC<{ flexProps: FlexPropsType } & Props>;
 
 export type TextWrapperProps = {
   fontSize?: FontSize;
