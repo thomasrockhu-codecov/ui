@@ -3,7 +3,7 @@ import R from 'ramda';
 import styled from 'styled-components';
 import { number, withKnobs } from '@storybook/addon-knobs';
 import FlexTable from './FlexTable';
-import { Button, Typography, Flag, Icon, Number } from '../..';
+import { Button, Typography, Flag, Icon, Number, Flexbox, Box } from '../..';
 import { SortOrder } from './Header/HeaderContent/HeaderContent.types';
 import { OnSort } from './Header/Header.types';
 
@@ -52,24 +52,36 @@ export const DefaultTableWithIconColumn = () => (
       <FlexTable.Cell columnId="column1">Cell 1-1</FlexTable.Cell>
       <FlexTable.Cell columnId="column2">Cell 1-2</FlexTable.Cell>
       <FlexTable.Cell columnId="column3">Cell 1-3</FlexTable.Cell>
-      <FlexTable.Cell columnId="column4">
-        <Icon.ChevronDown size={4} />
+      <FlexTable.Cell columnId="actions">
+        <Flexbox container alignItems="center">
+          <Icon.ThreeDots />
+          <Box ml={1} />
+          <Icon.ChevronDown size={4} />
+        </Flexbox>
       </FlexTable.Cell>
     </FlexTable.Row>
     <FlexTable.Row>
       <FlexTable.Cell columnId="column1">Cell 2-1</FlexTable.Cell>
       <FlexTable.Cell columnId="column2">Cell 2-2</FlexTable.Cell>
       <FlexTable.Cell columnId="column3">Cell 2-3</FlexTable.Cell>
-      <FlexTable.Cell columnId="column4">
-        <Icon.ChevronDown size={4} />
+      <FlexTable.Cell columnId="actions">
+        <Flexbox container alignItems="center">
+          <Icon.ThreeDots />
+          <Box ml={1} />
+          <Icon.ChevronDown size={4} />
+        </Flexbox>
       </FlexTable.Cell>
     </FlexTable.Row>
     <FlexTable.Row>
       <FlexTable.Cell columnId="column1">Cell 3-1</FlexTable.Cell>
       <FlexTable.Cell columnId="column2">Cell 3-2</FlexTable.Cell>
       <FlexTable.Cell columnId="column3">Cell 3-3</FlexTable.Cell>
-      <FlexTable.Cell columnId="column4">
-        <Icon.ChevronDown size={4} />
+      <FlexTable.Cell columnId="actions">
+        <Flexbox container alignItems="center">
+          <Icon.ThreeDots />
+          <Box ml={1} />
+          <Icon.ChevronDown size={4} />
+        </Flexbox>
       </FlexTable.Cell>
     </FlexTable.Row>
   </FlexTable>
