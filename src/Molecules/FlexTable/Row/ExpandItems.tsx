@@ -1,9 +1,9 @@
 import React from 'react';
-import { Media, Flexbox, Typography, LabeledValue, List, ListItem } from '../../..';
+import { Media, Flexbox, Typography, LabeledValue, List } from '../../..';
 import { ExpandItemsComponent, ExpandItem } from './Row.types';
 
 const MobileItem: React.FC<{ item: ExpandItem }> = ({ item }) => (
-  <Flexbox container justifyContent="space-between" as={ListItem}>
+  <Flexbox container justifyContent="space-between" as="li">
     <Flexbox item>
       <Typography type="tertiary" color={t => t.color.label}>
         {item.label}
@@ -15,7 +15,7 @@ const MobileItem: React.FC<{ item: ExpandItem }> = ({ item }) => (
   </Flexbox>
 );
 const DesktopItem: React.FC<{ item: ExpandItem }> = ({ item }) => (
-  <Flexbox item as={ListItem}>
+  <Flexbox item as="li">
     <LabeledValue
       label={
         <Typography type="secondary" color={t => t.color.label}>
