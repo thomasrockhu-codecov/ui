@@ -36,8 +36,11 @@ const StyledRow = styled(Flexbox).withConfig({
   padding-bottom: ${p => getDensityPaddings(p.density)}px;
 `;
 
-const StyledExpandedRow = styled.div`
+const StyledExpandedRow = styled('div').withConfig({
+  shouldForwardProp: prop => !['separatorColor'].includes(prop),
+})<{ separatorColor: ColorFn }>`
   border-left: ${p => p.theme.spacing.unit(0.5)}px solid ${p => p.theme.color.cta};
+  border-bottom: 1px solid ${p => p.separatorColor(p.theme)};
 `;
 
 export const ExpandButton: React.FC<{ expanded: boolean; onClick: () => void }> = ({
@@ -79,7 +82,7 @@ export const Row: RowComponent = ({
       </StyledRow>
 
       {expanded && (
-        <StyledExpandedRow role="row">
+        <StyledExpandedRow role="row" separatorColor={separatorColor}>
           <Box px={4} pb={2} role="cell">
             {expandItems && <ExpandItems items={expandItems} />}
             {expandChildren}
