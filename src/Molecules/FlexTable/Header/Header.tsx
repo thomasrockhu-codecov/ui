@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useLayoutEffect } from 'react';
 import * as R from 'ramda';
 import { HeaderComponent } from './Header.types';
 import { SortOrder } from './HeaderContent/HeaderContent.types';
@@ -72,7 +72,7 @@ const Header: HeaderComponent = props => {
     }
   };
 
-  useEffect(() => {
+  useLayoutEffect(() => {
     if (cellFlexProps) {
       columnDispatch({ type: ACTION_SET_FLEX_PROPS, flexProps: cellFlexProps });
     }
