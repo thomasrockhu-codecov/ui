@@ -156,13 +156,12 @@ const generateTableData = (rowsLength: number, columnsLength: number) =>
 const BigTableRow = ({ data }: any) => {
   return (
     <FlexTable.Row>
-      {Object.keys(R.omit(['rowId'], data)).map((valueKey, index) => {
-        return (
-          <FlexTable.Cell key={data[valueKey].id} columnId={`column${index + 1}`}>
-            {data[valueKey].value}
-          </FlexTable.Cell>
-        );
-      })}
+      {Object.keys(R.omit(['rowId'], data)).map((valueKey, index) => (
+        <FlexTable.Cell key={data[valueKey].id} columnId={`column${index + 1}`}>
+          <Flag country="SE" />
+          <Typography>{data[valueKey].value}</Typography>
+        </FlexTable.Cell>
+      ))}
     </FlexTable.Row>
   );
 };
@@ -177,13 +176,11 @@ export const BigTable = () => {
       columnsLength,
     ]);
     const sortedData = useMemo(() => {
-      const start = performance.now();
-
       if (sort.sortOrder === 'none') {
         return tableData;
       }
       const getValue = (rowData: any) => rowData[sort.columnId.replace('column', 'value')].value;
-      const sorted = [...tableData].sort((rowA, rowB) => {
+      const sorted = tableData.slice(0).sort((rowA, rowB) => {
         if (sort.sortOrder === 'ascending') {
           return getValue(rowB).localeCompare(getValue(rowA));
         }
@@ -194,8 +191,6 @@ export const BigTable = () => {
 
         return 0;
       });
-      const end = performance.now();
-      console.log(`This took ${end - start}ms to complete`);
       return sorted;
     }, [tableData, sort]);
 
