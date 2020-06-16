@@ -1,32 +1,43 @@
 import React from 'react';
 import { Media, Flexbox, Typography, LabeledValue, List } from '../../..';
-import { ExpandItemsComponent, ExpandItem } from './Row.types';
+import { ExpandItemsComponent, ExpandItemComponent } from './Row.types';
+import { isElement } from '../../../common/utils';
 
-const MobileItem: React.FC<{ item: ExpandItem }> = ({ item }) => (
+export const MobileItem: ExpandItemComponent = ({ item }) => (
   <Flexbox container justifyContent="space-between" as="li">
     <Flexbox item>
-      <Typography type="tertiary" color={t => t.color.label}>
-        {item.label}
-      </Typography>
+      {isElement(item.label) ? (
+        item.label
+      ) : (
+        <Typography type="tertiary" color={t => t.color.label}>
+          {item.label}
+        </Typography>
+      )}
     </Flexbox>
     <Flexbox item>
-      <Typography type="tertiary">{item.value}</Typography>
+      {isElement(item.value) ? item.value : <Typography type="tertiary">{item.value}</Typography>}
     </Flexbox>
   </Flexbox>
 );
-const DesktopItem: React.FC<{ item: ExpandItem }> = ({ item }) => (
+
+export const DesktopItem: ExpandItemComponent = ({ item }) => (
   <Flexbox item as="li">
     <LabeledValue
       label={
-        <Typography type="secondary" color={t => t.color.label}>
-          {item.label}
-        </Typography>
+        isElement(item.label) ? (
+          item.label
+        ) : (
+          <Typography type="secondary" color={t => t.color.label}>
+            {item.label}
+          </Typography>
+        )
       }
     >
-      <Typography>{item.value}</Typography>
+      {isElement(item.value) ? item.value : <Typography>{item.value}</Typography>}
     </LabeledValue>
   </Flexbox>
 );
+
 export const ExpandItems: ExpandItemsComponent = ({ items }) => {
   return (
     <>

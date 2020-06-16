@@ -1,12 +1,12 @@
 import React from 'react';
 import styled from 'styled-components';
-import { RowComponent } from './Row.types';
+import { RowComponent, RowComponents } from './Row.types';
 import { Box, Flexbox, Button, Icon } from '../../../index';
 import { ColorFn } from '../../../common/Types/sharedTypes';
 import { getDensityPaddings } from '../shared/textUtils';
 import { Density } from '../shared/shared.types';
 import { useFlexTable } from '../shared/FlexTableProvider';
-import { ExpandItems } from './ExpandItems';
+import { ExpandItems, DesktopItem, MobileItem } from './ExpandItems';
 
 /* the cells are padded by row gutter 1 unit (4px) */
 const StyledRow = styled(Flexbox).withConfig({
@@ -52,7 +52,7 @@ export const ExpandButton: React.FC<{ expanded: boolean; onClick: () => void }> 
   </Button>
 );
 
-export const Row: RowComponent = ({
+const Row: RowComponent & RowComponents = ({
   className,
   expanded = false,
   hoverHighlight = true,
@@ -92,3 +92,9 @@ export const Row: RowComponent = ({
     </>
   );
 };
+
+Row.ExpandItemDesktop = DesktopItem;
+Row.ExpandItemMobile = MobileItem;
+Row.ExpandItems = ExpandItems;
+
+export default Row;

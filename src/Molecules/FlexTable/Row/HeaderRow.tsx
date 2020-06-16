@@ -1,5 +1,5 @@
 import React from 'react';
-import { Row } from './Row';
+import Row from './Row';
 import { RowComponent } from './Row.types';
 
 export const HeaderRow: RowComponent = ({

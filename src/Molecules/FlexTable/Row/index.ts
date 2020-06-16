@@ -1,2 +1,4 @@
-export { Row } from './Row';
-export { HeaderRow } from './HeaderRow';
+import Row from './Row';
+import { HeaderRow } from './HeaderRow';
+
+export { Row, HeaderRow };

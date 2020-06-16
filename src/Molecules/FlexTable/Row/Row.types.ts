@@ -3,12 +3,13 @@ import { ColorFn } from '../../../common/Types/sharedTypes';
 
 type HtmlProps = {} & React.HTMLAttributes<HTMLDivElement>;
 
-export type ExpandItem = {
-  label: string;
-  value: string;
+export type ExpandItemProps = {
+  label: ReactNode;
+  value: ReactNode;
 };
 
-export type ExpandItems = Array<ExpandItem>;
+export type ExpandItems = Array<ExpandItemProps>;
+export type ExpandItemComponent = React.FC<{ item: ExpandItemProps }>;
 
 type Props = {
   hideSeparator?: boolean;
@@ -20,4 +21,11 @@ type Props = {
 } & HtmlProps;
 
 export type ExpandItemsComponent = React.FC<{ items: ExpandItems }>;
+
+export type RowComponents = {
+  ExpandItems: ExpandItemsComponent;
+  ExpandItemMobile: ExpandItemComponent;
+  ExpandItemDesktop: ExpandItemComponent;
+};
+
 export type RowComponent = React.FC<Props>;
