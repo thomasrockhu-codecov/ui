@@ -173,7 +173,7 @@ const BigTableRow = ({ data }: any) => (
 );
 
 const VirtualizedRow: any = styled(FlexTable.Row).attrs({
-  style: p => p.style,
+  style: (p: { style: React.CSSProperties }) => p.style,
 })``;
 
 const VirtualizedTableRow = React.memo(({ data, style }: any) => (

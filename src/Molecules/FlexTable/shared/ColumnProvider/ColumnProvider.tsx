@@ -1,6 +1,11 @@
 import React, { useReducer } from 'react';
 import * as R from 'ramda';
-import { ColumnActions, ColumnsState, ColumnsDispatch } from './ColumnProvider.types';
+import {
+  ColumnActions,
+  ColumnsState,
+  ColumnsDispatch,
+  ColumnsLayoutState,
+} from './ColumnProvider.types';
 import { SORT_ORDER_NONE } from '../constants';
 
 export const ACTION_SET_FLEX_PROPS = 'SET_FLEX_PROPS';
@@ -9,6 +14,7 @@ export const ACTION_SET_INITIAL_SORTING = 'SET_INITIAL_SORTING';
 
 export const ColumnStateContext = React.createContext<ColumnsState | undefined>(undefined);
 export const ColumnDispatchContext = React.createContext<ColumnsDispatch | undefined>(undefined);
+export const ColumnsLayoutContext = React.createContext<ColumnsLayoutState | undefined>(undefined);
 
 // We need to set the rest of the sorting to none when sorting a new header
 const setRestOfSortingState = (state: ColumnsState): ColumnsState =>
@@ -29,7 +35,10 @@ const columnReducer = (state: ColumnsState, action: ColumnActions): ColumnsState
     case ACTION_SET_FLEX_PROPS:
       return {
         ...state,
-        [action.columnId]: { ...state[action.columnId], flexProps: action.flexProps },
+        layoutProps: {
+          ...state.layoutProps,
+          [action.columnId]: { ...state.layoutProps[action.columnId], flexProps: action.flexProps },
+        },
       };
 
     case ACTION_SET_SORTING:
@@ -64,7 +73,9 @@ export const ColumnProvider: React.FC = ({ children }) => {
 
   return (
     <ColumnStateContext.Provider value={state}>
-      <ColumnDispatchContext.Provider value={dispatch}>{children}</ColumnDispatchContext.Provider>
+      <ColumnsLayoutContext.Provider value={state.flexProps}>
+        <ColumnDispatchContext.Provider value={dispatch}>{children}</ColumnDispatchContext.Provider>
+      </ColumnsLayoutContext.Provider>
     </ColumnStateContext.Provider>
   );
 };
