@@ -35,13 +35,18 @@ export type ColumnsState = {
   [columnId: string]: ColumnState;
 };
 
-export type ColumnState = {
-  flexProps: FlexPropsType;
-  sortOrder: SortOrder;
-  controlledSort: boolean;
+type LayoutPropsTypes = {
+  [columnId: string]: { flexProps: FlexPropsType };
 };
 
+export type ColumnState = {
+  sortOrder: SortOrder;
+  controlledSort: boolean;
+} & ColumnsLayoutState;
+
 export type ColumnsDispatch = (action: ColumnActions) => void;
+
+export type ColumnsLayoutState = { layoutProps: LayoutPropsTypes };
 
 export type AllKeys<T> = T extends T ? keyof T : never;
 export type OmitOverAll<T, K extends AllKeys<T>> = T extends T
