@@ -3414,7 +3414,7 @@ Array [
     <svg
       aria-hidden="true"
       className="c0 c1"
-      direction="descending"
+      direction="ascending"
       focusable="false"
       preserveAspectRatio="xMidYMid meet"
       role="presentation"
@@ -6802,7 +6802,7 @@ exports[`Storyshots Atoms | Icon Available icons 1`] = `
         <svg
           aria-hidden="true"
           className="c3 c18"
-          direction="descending"
+          direction="ascending"
           focusable="false"
           preserveAspectRatio="xMidYMid meet"
           role="presentation"
@@ -6928,9 +6928,9 @@ exports[`Storyshots Atoms | Icon Sort Arrow Ascending 1`] = `
 }
 
 .c1 {
-  -webkit-transform: rotate(180deg);
-  -ms-transform: rotate(180deg);
-  transform: rotate(180deg);
+  -webkit-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  transform: rotate(0deg);
 }
 
 <span>
@@ -6968,9 +6968,9 @@ exports[`Storyshots Atoms | Icon Sort Arrow Descending 1`] = `
 }
 
 .c1 {
-  -webkit-transform: rotate(0deg);
-  -ms-transform: rotate(0deg);
-  transform: rotate(0deg);
+  -webkit-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg);
 }
 
 <span>
