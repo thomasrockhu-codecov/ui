@@ -46,7 +46,7 @@ export const DefaultTableWithIconColumn = () => (
       <FlexTable.Header columnId="column1">Header 1</FlexTable.Header>
       <FlexTable.Header columnId="column2">Header 2</FlexTable.Header>
       <FlexTable.Header columnId="column3">Header 3</FlexTable.Header>
-      <FlexTable.ActionHeader icons={2} />
+      <FlexTable.ActionHeader />
     </FlexTable.HeaderRow>
     <FlexTable.Row>
       <FlexTable.Cell columnId="column1">Cell 1-1</FlexTable.Cell>
@@ -440,7 +440,7 @@ export const TableExpandedChildren = () => {
           <FlexTable.Header columnId="column1">Header 1</FlexTable.Header>
           <FlexTable.Header columnId="column2">Header 2</FlexTable.Header>
           <FlexTable.Header columnId="column3">Header 3</FlexTable.Header>
-          <FlexTable.ActionHeader icons={1} />
+          <FlexTable.ActionHeader />
         </FlexTable.HeaderRow>
         <FlexTable.Row>
           <FlexTable.Cell columnId="column1">Disabled</FlexTable.Cell>

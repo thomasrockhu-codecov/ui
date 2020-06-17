@@ -5,14 +5,12 @@ import { Flexbox } from '../../..';
 import { useFlexCellProps, useColumn, ACTION_SET_FLEX_PROPS } from '../shared/ColumnProvider';
 
 const ActionHeader: ActionHeaderComponent = props => {
-  const { icons } = props;
-
   const [columnState, columnDispatch] = useColumn('actions');
 
   const cellFlexProps = useFlexCellProps({
-    ...props,
     justifyContent: 'flex-end',
-    flex: `0 ${16 * icons + 8}px`,
+    flex: `0 20px`,
+    ...props,
   });
 
   useEffect(() => {
