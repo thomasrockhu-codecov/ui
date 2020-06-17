@@ -30,24 +30,24 @@ export type FlexPropsType = Pick<
   | 'wrap'
 >;
 
-// TODO: Set correct state type
-export type ColumnsState = {
-  [columnId: string]: ColumnState;
+export type ColumnLayoutTypes = {
+  flexProps: FlexPropsType;
+};
+export type ColumnsLayoutState = {
+  layout: {
+    [columnId: string]: ColumnLayoutTypes;
+  };
 };
 
-type LayoutPropsTypes = {
-  [columnId: string]: { flexProps: FlexPropsType };
+export type ColumnDataTypes = { sortOrder: SortOrder; controlledSort: boolean };
+export type ColumnsDataState = {
+  data: {
+    [columnId: string]: ColumnDataTypes;
+  };
 };
-
-export type ColumnState = {
-  sortOrder: SortOrder;
-  controlledSort: boolean;
-} & ColumnsLayoutState;
+export type ColumnsState = ColumnsDataState & ColumnsLayoutState;
 
 export type ColumnsDispatch = (action: ColumnActions) => void;
-
-export type ColumnsLayoutState = { layoutProps: LayoutPropsTypes };
-
 export type AllKeys<T> = T extends T ? keyof T : never;
 export type OmitOverAll<T, K extends AllKeys<T>> = T extends T
   ? Pick<T, Exclude<keyof T, K>>

@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import * as R from 'ramda';
 import { isElement, isFunction } from '../../../common/utils';
 import { Flexbox } from '../../..';
-import { useColumn } from '../shared/ColumnProvider';
+import { useColumnLayout } from '../shared/ColumnProvider';
 import { CellComponent, InnerCellComponent } from './Cell.types';
 import { TextWrapper } from './TextWrapper';
 
@@ -23,15 +23,15 @@ const InnerCell: InnerCellComponent = React.memo(
 );
 
 const Cell: CellComponent = ({ children, className, fontSize, columnId }) => {
-  const [columnState] = useColumn(columnId);
+  const [columnLayout] = useColumnLayout(columnId);
 
-  if (!R.prop('flexProps', columnState)) {
+  if (!R.prop('flexProps', columnLayout)) {
     return null;
   }
 
   return (
     <InnerCell
-      flexProps={columnState.flexProps}
+      flexProps={columnLayout.flexProps}
       className={className}
       fontSize={fontSize}
       columnId={columnId}
