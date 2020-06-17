@@ -3,9 +3,10 @@ import R from 'ramda';
 import styled from 'styled-components';
 import { number, withKnobs } from '@storybook/addon-knobs';
 import FlexTable from './FlexTable';
-import { Button, Typography, Flag, Icon, Number, Flexbox, Box } from '../..';
+import { Button, Typography, Flag, Icon, Number, Flexbox } from '../..';
 import { SortOrder } from './Header/HeaderContent/HeaderContent.types';
 import { OnSort } from './Header/Header.types';
+import { ICON_COLUMN_DEFAULT_FLEX_PROPS } from './shared/constants';
 
 export default {
   title: 'Molecules | FlexTable',
@@ -46,42 +47,36 @@ export const DefaultTableWithIconColumn = () => (
       <FlexTable.Header columnId="column1">Header 1</FlexTable.Header>
       <FlexTable.Header columnId="column2">Header 2</FlexTable.Header>
       <FlexTable.Header columnId="column3">Header 3</FlexTable.Header>
-      <FlexTable.ActionHeader />
+      <FlexTable.Header columnId="actionsColumn" {...ICON_COLUMN_DEFAULT_FLEX_PROPS} />
     </FlexTable.HeaderRow>
     <FlexTable.Row>
       <FlexTable.Cell columnId="column1">Cell 1-1</FlexTable.Cell>
       <FlexTable.Cell columnId="column2">Cell 1-2</FlexTable.Cell>
       <FlexTable.Cell columnId="column3">Cell 1-3</FlexTable.Cell>
-      <FlexTable.Cell columnId="actions">
-        <Flexbox container alignItems="center">
+      <FlexTable.Cell columnId="actionsColumn">
+        <Button variant="neutral">
           <Icon.ThreeDots />
-          <Box ml={1} />
-          <Icon.ChevronDown size={4} />
-        </Flexbox>
+        </Button>
       </FlexTable.Cell>
     </FlexTable.Row>
     <FlexTable.Row>
       <FlexTable.Cell columnId="column1">Cell 2-1</FlexTable.Cell>
       <FlexTable.Cell columnId="column2">Cell 2-2</FlexTable.Cell>
       <FlexTable.Cell columnId="column3">Cell 2-3</FlexTable.Cell>
-      <FlexTable.Cell columnId="actions">
-        <Flexbox container alignItems="center">
+      <FlexTable.Cell columnId="actionsColumn">
+        <Button variant="neutral">
           <Icon.ThreeDots />
-          <Box ml={1} />
-          <Icon.ChevronDown size={4} />
-        </Flexbox>
+        </Button>
       </FlexTable.Cell>
     </FlexTable.Row>
     <FlexTable.Row>
       <FlexTable.Cell columnId="column1">Cell 3-1</FlexTable.Cell>
       <FlexTable.Cell columnId="column2">Cell 3-2</FlexTable.Cell>
       <FlexTable.Cell columnId="column3">Cell 3-3</FlexTable.Cell>
-      <FlexTable.Cell columnId="actions">
-        <Flexbox container alignItems="center">
+      <FlexTable.Cell columnId="actionsColumn">
+        <Button variant="neutral">
           <Icon.ThreeDots />
-          <Box ml={1} />
-          <Icon.ChevronDown size={4} />
-        </Flexbox>
+        </Button>
       </FlexTable.Cell>
     </FlexTable.Row>
   </FlexTable>
@@ -384,25 +379,6 @@ export const TableWithDifferentRows = () => (
   </FlexTable>
 );
 
-export const TableExpanded = () => {
-  const TableExpandedExample = () => {
-    const [expanded, setExpanded] = useState(false);
-    return (
-      <FlexTable>
-        <FlexTable.Row>Default</FlexTable.Row>
-        <FlexTable.Row expanded={expanded} expandChildren={<div>I am expanded</div>}>
-          <Button variant="secondary" size="s" onClick={() => setExpanded(!expanded)}>
-            {expanded ? 'Collapse' : 'Expand'}
-          </Button>
-        </FlexTable.Row>
-        <FlexTable.Row>Default</FlexTable.Row>
-        <FlexTable.Row>Default</FlexTable.Row>
-      </FlexTable>
-    );
-  };
-  return <TableExpandedExample />;
-};
-
 const expandedItemsGenerator = (renderComponent = false) =>
   [...Array(20)].reduce((acc, _, itemIndex) => {
     const keyName = `${itemIndex + 1}`;
@@ -413,7 +389,7 @@ const expandedItemsGenerator = (renderComponent = false) =>
     return [...acc, { label, value }];
   }, []);
 
-export const TableExpandedChildren = () => {
+export const ExpandableTable = () => {
   const expandItemsText = expandedItemsGenerator();
   const expandItemsComponents = expandedItemsGenerator(true);
   const expandChildrenComponents = (
@@ -430,7 +406,7 @@ export const TableExpandedChildren = () => {
       </Flexbox>
     </Flexbox>
   );
-  const TableExpandedChildrenExample = () => {
+  const ExpandedTableExample = () => {
     const [expanded1, setExpanded1] = useState(false);
     const [expanded2, setExpanded2] = useState(false);
     const [expanded3, setExpanded3] = useState(false);
@@ -440,13 +416,14 @@ export const TableExpandedChildren = () => {
           <FlexTable.Header columnId="column1">Header 1</FlexTable.Header>
           <FlexTable.Header columnId="column2">Header 2</FlexTable.Header>
           <FlexTable.Header columnId="column3">Header 3</FlexTable.Header>
-          <FlexTable.ActionHeader />
+          <FlexTable.Header columnId="expandColumn" {...ICON_COLUMN_DEFAULT_FLEX_PROPS} />
         </FlexTable.HeaderRow>
         <FlexTable.Row>
           <FlexTable.Cell columnId="column1">Disabled</FlexTable.Cell>
           <FlexTable.Cell columnId="column2">Disabled</FlexTable.Cell>
           <FlexTable.Cell columnId="column3">Disabled</FlexTable.Cell>
           <FlexTable.ExpandCell
+            columnId="expandColumn"
             expanded={false}
             onClick={() => setExpanded1(!expanded1)}
             disabled
@@ -456,14 +433,22 @@ export const TableExpandedChildren = () => {
           <FlexTable.Cell columnId="column1">Expandable</FlexTable.Cell>
           <FlexTable.Cell columnId="column2">Expandable</FlexTable.Cell>
           <FlexTable.Cell columnId="column3">Expandable</FlexTable.Cell>
-          <FlexTable.ExpandCell expanded={expanded1} onClick={() => setExpanded1(!expanded1)} />
+          <FlexTable.ExpandCell
+            columnId="expandColumn"
+            expanded={expanded1}
+            onClick={() => setExpanded1(!expanded1)}
+          />
         </FlexTable.Row>
 
         <FlexTable.Row expandItems={expandItemsComponents} expanded={expanded2}>
           <FlexTable.Cell columnId="column1">Expandable component items</FlexTable.Cell>
           <FlexTable.Cell columnId="column2">Expandable component items</FlexTable.Cell>
           <FlexTable.Cell columnId="column3">Expandable component items</FlexTable.Cell>
-          <FlexTable.ExpandCell expanded={expanded2} onClick={() => setExpanded2(!expanded2)} />
+          <FlexTable.ExpandCell
+            columnId="expandColumn"
+            expanded={expanded2}
+            onClick={() => setExpanded2(!expanded2)}
+          />
         </FlexTable.Row>
         <FlexTable.Row
           expandItems={expandItemsText}
@@ -473,12 +458,16 @@ export const TableExpandedChildren = () => {
           <FlexTable.Cell columnId="column1">Expandable with children</FlexTable.Cell>
           <FlexTable.Cell columnId="column2">Expandable with children</FlexTable.Cell>
           <FlexTable.Cell columnId="column3">Expandable with children</FlexTable.Cell>
-          <FlexTable.ExpandCell expanded={expanded3} onClick={() => setExpanded3(!expanded3)} />
+          <FlexTable.ExpandCell
+            columnId="expandColumn"
+            expanded={expanded3}
+            onClick={() => setExpanded3(!expanded3)}
+          />
         </FlexTable.Row>
       </FlexTable>
     );
   };
-  return <TableExpandedChildrenExample />;
+  return <ExpandedTableExample />;
 };
 
 export const TableHeader = () => {
@@ -507,7 +496,7 @@ export const TableHeader = () => {
         <CustomisedTableHeader>Customised header</CustomisedTableHeader>
         <FlexTable.Header columnId="column4">Table header 3 no flex</FlexTable.Header>
         <FlexTable.Header columnId="column5">
-          <Typography type="title2">I&apos;m a component</Typography>
+          <Typography type="title3">React component</Typography>
         </FlexTable.Header>
       </FlexTable.HeaderRow>
     </FlexTable>
