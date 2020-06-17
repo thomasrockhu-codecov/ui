@@ -43,9 +43,11 @@ export type ContainerProps = {
     | 'space-evenly'
     | 'stretch';
 
+  title?: string;
+  hidden?: boolean;
+
   /** a11y */
   role?: string;
-  title?: string;
 };
 
 export type ItemProps = {
