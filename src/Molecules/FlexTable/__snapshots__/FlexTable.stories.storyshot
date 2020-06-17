@@ -4801,9 +4801,9 @@ exports[`Storyshots Molecules | FlexTable Sortable Header Only Ascending Descend
 }
 
 .c7 {
-  -webkit-transform: rotate(180deg);
-  -ms-transform: rotate(180deg);
-  transform: rotate(180deg);
+  -webkit-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  transform: rotate(0deg);
 }
 
 .c4 {
@@ -5044,9 +5044,9 @@ exports[`Storyshots Molecules | FlexTable Sortable Headers Uncontrolled 1`] = `
 }
 
 .c10 {
-  -webkit-transform: rotate(0deg);
-  -ms-transform: rotate(0deg);
-  transform: rotate(0deg);
+  -webkit-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg);
 }
 
 .c4 {
