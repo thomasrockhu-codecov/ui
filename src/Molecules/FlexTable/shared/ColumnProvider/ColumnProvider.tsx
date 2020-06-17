@@ -6,7 +6,6 @@ import {
   ColumnsDataState,
   ColumnsDispatch,
   ColumnsLayoutState,
-  ColumnDataTypes,
 } from './ColumnProvider.types';
 import { SORT_ORDER_NONE } from '../constants';
 
@@ -19,9 +18,7 @@ export const ColumnDispatchContext = React.createContext<ColumnsDispatch | undef
 export const ColumnsLayoutContext = React.createContext<ColumnsLayoutState | undefined>(undefined);
 
 // We need to set the rest of the sorting to none when sorting a new header
-const setRestOfSortingState = (data: {
-  [columnId: string]: ColumnDataTypes;
-}): { [columnId: string]: ColumnDataTypes } =>
+const setRestOfSortingState = (data: ColumnsDataState): ColumnsDataState =>
   R.map(columnData => {
     // Null sortOrder means that it's not sortable
     if (columnData.sortOrder === null) {

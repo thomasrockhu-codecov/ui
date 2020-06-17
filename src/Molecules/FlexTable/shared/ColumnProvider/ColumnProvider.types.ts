@@ -34,18 +34,14 @@ export type ColumnLayoutTypes = {
   flexProps: FlexPropsType;
 };
 export type ColumnsLayoutState = {
-  layout: {
-    [columnId: string]: ColumnLayoutTypes;
-  };
+  [columnId: string]: ColumnLayoutTypes;
 };
 
 export type ColumnDataTypes = { sortOrder: SortOrder; controlledSort: boolean };
 export type ColumnsDataState = {
-  data: {
-    [columnId: string]: ColumnDataTypes;
-  };
+  [columnId: string]: ColumnDataTypes;
 };
-export type ColumnsState = ColumnsDataState & ColumnsLayoutState;
+export type ColumnsState = { data: ColumnsDataState; layout: ColumnsLayoutState };
 
 export type ColumnsDispatch = (action: ColumnActions) => void;
 export type AllKeys<T> = T extends T ? keyof T : never;
