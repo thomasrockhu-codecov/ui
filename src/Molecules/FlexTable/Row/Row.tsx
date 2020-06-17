@@ -83,7 +83,7 @@ const Row: RowComponent & RowComponents = ({
 
       {expanded && (
         <StyledExpandedRow role="row" separatorColor={separatorColor}>
-          <Box px={4} pb={2} role="cell">
+          <Box px={5} md={{ pt: 5 }} role="cell">
             {expandItems && <ExpandItems items={expandItems} />}
             {expandChildren}
           </Box>
