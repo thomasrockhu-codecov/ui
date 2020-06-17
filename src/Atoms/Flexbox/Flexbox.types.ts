@@ -45,6 +45,7 @@ export type ContainerProps = {
 
   /** a11y */
   role?: string;
+  hidden?: boolean;
 };
 
 export type ItemProps = {
