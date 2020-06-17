@@ -158,8 +158,7 @@ const BigTableRow = ({ data }: any) => {
     <FlexTable.Row>
       {Object.keys(R.omit(['rowId'], data)).map((valueKey, index) => (
         <FlexTable.Cell key={data[valueKey].id} columnId={`column${index + 1}`}>
-          <Flag country="SE" />
-          <Typography>{data[valueKey].value}</Typography>
+          {data[valueKey].value}
         </FlexTable.Cell>
       ))}
     </FlexTable.Row>
