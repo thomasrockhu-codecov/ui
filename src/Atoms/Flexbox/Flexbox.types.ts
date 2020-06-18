@@ -8,6 +8,7 @@ export type ContainerProps = {
   direction?: 'row' | 'row-reverse' | 'column' | 'column-reverse';
   wrap?: 'nowrap' | 'wrap' | 'wrap-reverse';
   gutter?: number;
+  hidden?: boolean;
   justifyContent?:
     | 'flex-start'
     | 'flex-end'
@@ -45,7 +46,6 @@ export type ContainerProps = {
 
   /** a11y */
   role?: string;
-  hidden?: boolean;
 };
 
 export type ItemProps = {
@@ -59,6 +59,7 @@ export type ItemProps = {
   alignSelf?: AlignSelfProperty;
   size?: number | string;
   as?: keyof JSX.IntrinsicElements | React.ComponentType<any>;
+  hidden?: boolean;
   /** a11y */
   role?: string;
 };

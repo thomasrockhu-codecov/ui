@@ -84,6 +84,7 @@ const getItemStyles = (p: Props & { theme: Theme }) => `
   ${p.basis ? `flex-basis: ${p.basis};` : ''}
   ${p.flex ? `flex: ${p.flex};` : ''}
   ${p.align ? `align-self: ${p.align};` : ''}
+  ${p.hidden ? 'display: none;' : ''}
 `;
 
 const sanitizeProps = R.omit([
