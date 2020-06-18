@@ -1,5 +1,5 @@
 import React from 'react';
-import { RowComponent } from './Row/Row.types';
+import { RowComponent, FooterRowComponent, HeaderRowComponent } from './Row/Row.types';
 import { HeaderComponent } from './Header/Header.types';
 import { constants } from './shared';
 import { CellComponent, ExpandCellComponent } from './Cell/Cell.types';
@@ -14,8 +14,8 @@ export type Props = {
 
 export type FlexTableComponents = {
   Header: HeaderComponent;
-  HeaderRow: RowComponent;
-  FooterRow: RowComponent;
+  HeaderRow: HeaderRowComponent;
+  FooterRow: FooterRowComponent;
   Row: RowComponent;
   Cell: CellComponent;
   ExpandCell: ExpandCellComponent;

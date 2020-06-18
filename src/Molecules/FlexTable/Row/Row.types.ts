@@ -29,3 +29,11 @@ export type RowComponents = {
 };
 
 export type RowComponent = React.FC<Props>;
+
+type HeaderProps = Omit<Props, 'expandChildren' | 'expandItems' | 'expanded' | 'hoverHighlight'>;
+
+export type HeaderRowComponent = React.FC<HeaderProps>;
+
+type FooterProps = HeaderProps;
+
+export type FooterRowComponent = React.FC<FooterProps>;
