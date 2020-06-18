@@ -1,6 +1,7 @@
 import React from 'react';
 import { HeaderRow, FooterRow, Row } from './Row';
 import { Header } from './Header';
+import { Footer } from './Footer';
 import { Cell } from './Cell';
 import { constants, ColumnProvider } from './shared';
 import { Props, FlexTableComponents } from './FlexTable.types';
@@ -24,6 +25,7 @@ FlexTable.Row = Row;
 FlexTable.HeaderRow = HeaderRow;
 FlexTable.FooterRow = FooterRow;
 FlexTable.Header = Header;
+FlexTable.Footer = Footer;
 FlexTable.ExpandCell = ExpandCell;
 FlexTable.Cell = Cell;
 FlexTable.CONSTANTS = constants;

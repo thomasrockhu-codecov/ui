@@ -64,9 +64,9 @@ export const DefaultTableWithFooter = () => (
       <FlexTable.Cell columnId="column3">Cell 3-3</FlexTable.Cell>
     </FlexTable.Row>
     <FlexTable.FooterRow>
-      <FlexTable.Header columnId="column1">Footer 1</FlexTable.Header>
-      <FlexTable.Header columnId="column2">Footer 2</FlexTable.Header>
-      <FlexTable.Header columnId="column3">Footer 3</FlexTable.Header>
+      <FlexTable.Footer columnId="column1">Footer 1</FlexTable.Footer>
+      <FlexTable.Footer columnId="column2">Footer 2</FlexTable.Footer>
+      <FlexTable.Footer columnId="column3">Footer 3</FlexTable.Footer>
     </FlexTable.FooterRow>
   </FlexTable>
 );
