@@ -59,6 +59,7 @@ const Row: RowComponent & RowComponents = ({
   hoverHighlight = true,
   hideSeparator = false,
   separatorColor = theme => theme.color.divider,
+  expandable = false,
   expandChildren,
   expandItems,
   children,
@@ -81,8 +82,14 @@ const Row: RowComponent & RowComponents = ({
         {...htmlProps}
       >
         {children}
-        {(expandChildren || expandItems) && (
-          <ExpandCell columnId="expand" expanded={expand} onClick={() => setExpand(!expand)} />
+
+        {expandable && (
+          <ExpandCell
+            columnId="expand"
+            expanded={expand}
+            onClick={() => setExpand(!expand)}
+            disabled={!(expandChildren || expandItems)}
+          />
         )}
       </StyledRow>
 

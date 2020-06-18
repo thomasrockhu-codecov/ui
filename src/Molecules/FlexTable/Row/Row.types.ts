@@ -15,6 +15,7 @@ type Props = {
   hideSeparator?: boolean;
   expandChildren?: ReactNode;
   expandItems?: ExpandItems;
+  expandable?: boolean;
   expanded?: boolean;
   hoverHighlight?: boolean;
   separatorColor?: ColorFn;
