@@ -2,26 +2,17 @@ import React from 'react';
 import styled from 'styled-components';
 import { Typography } from '../../..';
 import { TextWrapperComponent } from './Cell.types';
-import { getDensityPaddings, getFontSizeTypographyType } from '../shared/textUtils';
-import { Density } from '../shared/shared.types';
+import { getFontSizeTypographyType } from '../shared/textUtils';
 
-const StyledTypography = styled(Typography).withConfig({
-  shouldForwardProp: p => !['density'].includes(p),
-})<{ density: Density }>`
-  padding-top: ${p => getDensityPaddings(p.density)}px;
-  padding-bottom: ${p => getDensityPaddings(p.density)}px;
+const StyledTypography = styled(Typography)`
   display: inline-block;
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
 `;
 
-export const TextWrapper: TextWrapperComponent = ({ fontSize = 'm', density = 'm', children }) => (
-  <StyledTypography
-    type={getFontSizeTypographyType(fontSize)}
-    density={density}
-    color={t => t.color.text}
-  >
+export const TextWrapper: TextWrapperComponent = ({ fontSize = 'm', children }) => (
+  <StyledTypography type={getFontSizeTypographyType(fontSize)} color={t => t.color.text}>
     {children}
   </StyledTypography>
 );

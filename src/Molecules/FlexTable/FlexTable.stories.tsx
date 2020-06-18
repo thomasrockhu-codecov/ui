@@ -3,9 +3,10 @@ import R from 'ramda';
 import styled from 'styled-components';
 import { number, withKnobs } from '@storybook/addon-knobs';
 import FlexTable from './FlexTable';
-import { Button, Typography, Flag } from '../..';
+import { Button, Typography, Flag, Icon, Number, Flexbox } from '../..';
 import { SortOrder } from './Header/HeaderContent/HeaderContent.types';
 import { OnSort } from './Header/Header.types';
+import { ICON_COLUMN_DEFAULT_FLEX_PROPS } from './shared/constants';
 
 export default {
   title: 'Molecules | FlexTable',
@@ -17,11 +18,11 @@ export default {
 
 export const DefaultTable = () => (
   <FlexTable>
-    <FlexTable.Row separatorColor={t => t.color.backgroundBlack}>
+    <FlexTable.HeaderRow>
       <FlexTable.Header columnId="column1">Header 1</FlexTable.Header>
       <FlexTable.Header columnId="column2">Header 2</FlexTable.Header>
       <FlexTable.Header columnId="column3">Header 3</FlexTable.Header>
-    </FlexTable.Row>
+    </FlexTable.HeaderRow>
     <FlexTable.Row>
       <FlexTable.Cell columnId="column1">Cell 1-1</FlexTable.Cell>
       <FlexTable.Cell columnId="column2">Cell 1-2</FlexTable.Cell>
@@ -40,9 +41,75 @@ export const DefaultTable = () => (
   </FlexTable>
 );
 
+export const DefaultTableWithIconColumn = () => (
+  <FlexTable>
+    <FlexTable.HeaderRow>
+      <FlexTable.Header columnId="column1">Header 1</FlexTable.Header>
+      <FlexTable.Header columnId="column2">Header 2</FlexTable.Header>
+      <FlexTable.Header columnId="column3">Header 3</FlexTable.Header>
+      <FlexTable.Header columnId="actionsColumn" {...ICON_COLUMN_DEFAULT_FLEX_PROPS} />
+    </FlexTable.HeaderRow>
+    <FlexTable.Row>
+      <FlexTable.Cell columnId="column1">Cell 1-1</FlexTable.Cell>
+      <FlexTable.Cell columnId="column2">Cell 1-2</FlexTable.Cell>
+      <FlexTable.Cell columnId="column3">Cell 1-3</FlexTable.Cell>
+      <FlexTable.Cell columnId="actionsColumn">
+        <Button variant="neutral">
+          <Icon.ThreeDots />
+        </Button>
+      </FlexTable.Cell>
+    </FlexTable.Row>
+    <FlexTable.Row>
+      <FlexTable.Cell columnId="column1">Cell 2-1</FlexTable.Cell>
+      <FlexTable.Cell columnId="column2">Cell 2-2</FlexTable.Cell>
+      <FlexTable.Cell columnId="column3">Cell 2-3</FlexTable.Cell>
+      <FlexTable.Cell columnId="actionsColumn">
+        <Button variant="neutral">
+          <Icon.ThreeDots />
+        </Button>
+      </FlexTable.Cell>
+    </FlexTable.Row>
+    <FlexTable.Row>
+      <FlexTable.Cell columnId="column1">Cell 3-1</FlexTable.Cell>
+      <FlexTable.Cell columnId="column2">Cell 3-2</FlexTable.Cell>
+      <FlexTable.Cell columnId="column3">Cell 3-3</FlexTable.Cell>
+      <FlexTable.Cell columnId="actionsColumn">
+        <Button variant="neutral">
+          <Icon.ThreeDots />
+        </Button>
+      </FlexTable.Cell>
+    </FlexTable.Row>
+  </FlexTable>
+);
+
+export const TableWithNonHiglightableRows = () => (
+  <FlexTable>
+    <FlexTable.HeaderRow>
+      <FlexTable.Header columnId="column1">Header 1</FlexTable.Header>
+      <FlexTable.Header columnId="column2">Header 2</FlexTable.Header>
+      <FlexTable.Header columnId="column3">Header 3</FlexTable.Header>
+    </FlexTable.HeaderRow>
+    <FlexTable.Row>
+      <FlexTable.Cell columnId="column1">Cell 1-1</FlexTable.Cell>
+      <FlexTable.Cell columnId="column2">Cell 1-2</FlexTable.Cell>
+      <FlexTable.Cell columnId="column3">Cell 1-3</FlexTable.Cell>
+    </FlexTable.Row>
+    <FlexTable.Row hoverHighlight={false}>
+      <FlexTable.Cell columnId="column1">No highlight 2-1</FlexTable.Cell>
+      <FlexTable.Cell columnId="column2">No highlight 2-2</FlexTable.Cell>
+      <FlexTable.Cell columnId="column3">No highlight 2-3</FlexTable.Cell>
+    </FlexTable.Row>
+    <FlexTable.Row>
+      <FlexTable.Cell columnId="column1">Cell 3-1</FlexTable.Cell>
+      <FlexTable.Cell columnId="column2">Cell 3-2</FlexTable.Cell>
+      <FlexTable.Cell columnId="column3">Cell 3-3</FlexTable.Cell>
+    </FlexTable.Row>
+  </FlexTable>
+);
+
 export const TruncatedCellContent = () => (
   <FlexTable>
-    <FlexTable.Row separatorColor={t => t.color.backgroundBlack}>
+    <FlexTable.HeaderRow>
       <FlexTable.Header flex="1" columnId="column1">
         Flex 1
       </FlexTable.Header>
@@ -53,7 +120,7 @@ export const TruncatedCellContent = () => (
         Loooooooooooooong header set width
       </FlexTable.Header>
       <FlexTable.Header columnId="column4">Default</FlexTable.Header>
-    </FlexTable.Row>
+    </FlexTable.HeaderRow>
     <FlexTable.Row>
       <FlexTable.Cell columnId="column1">Cell 1-1</FlexTable.Cell>
       <FlexTable.Cell columnId="column2">
@@ -110,18 +177,42 @@ export const BigTable = () => {
   const ReactComponent = () => {
     const rowsLength = number('Number of rows', 500);
     const columnsLength = number('Number of columns', 10);
+    const [sort, setSort] = useState<any>({});
     const tableData = useMemo(() => generateTableData(rowsLength, columnsLength), [
       rowsLength,
       columnsLength,
     ]);
+    const sortedData = useMemo(() => {
+      const getValue = (rowData: any) => rowData[sort.columnId.replace('column', 'value')].value;
+      return tableData.sort((rowA, rowB) => {
+        if (sort.sortOrder === 'ascending') {
+          return getValue(rowB).localeCompare(getValue(rowA));
+        }
+
+        if (sort.sortOrder === 'descending') {
+          return getValue(rowA).localeCompare(getValue(rowB));
+        }
+
+        return 0;
+      });
+    }, [tableData, sort]);
+
     return (
       <FlexTable>
-        <FlexTable.Row>
+        <FlexTable.HeaderRow>
           {[...Array(columnsLength)].map((_, index) => (
-            <FlexTable.Header columnId={`column${index + 1}`}>Header {index + 1}</FlexTable.Header>
+            <FlexTable.Header
+              columnId={`column${index + 1}`}
+              sortable
+              onSort={(columnId, nextSortOrder) => {
+                setSort({ columnId, sortOrder: nextSortOrder });
+              }}
+            >
+              Header {index + 1}
+            </FlexTable.Header>
           ))}
-        </FlexTable.Row>
-        {tableData.map(data => (
+        </FlexTable.HeaderRow>
+        {sortedData.map(data => (
           <BigTableRow key={data.rowId} data={data} />
         ))}
       </FlexTable>
@@ -132,7 +223,7 @@ export const BigTable = () => {
 
 export const DifferentAlignmentsTable = () => (
   <FlexTable>
-    <FlexTable.Row separatorColor={t => t.color.backgroundBlack}>
+    <FlexTable.HeaderRow>
       <FlexTable.Header columnId="column1">Left</FlexTable.Header>
       <FlexTable.Header columnId="column2" justifyContent="flex-end">
         Right
@@ -143,7 +234,7 @@ export const DifferentAlignmentsTable = () => (
       <FlexTable.Header columnId="column4" justifyContent="center">
         Center
       </FlexTable.Header>
-    </FlexTable.Row>
+    </FlexTable.HeaderRow>
     <FlexTable.Row>
       <FlexTable.Cell columnId="column1">Cell 1-1</FlexTable.Cell>
       <FlexTable.Cell columnId="column2">Cell 1-2</FlexTable.Cell>
@@ -167,11 +258,11 @@ export const DifferentAlignmentsTable = () => (
 
 export const TableWithoutSeparators = () => (
   <FlexTable>
-    <FlexTable.Row separatorColor={t => t.color.backgroundBlack}>
+    <FlexTable.HeaderRow>
       <FlexTable.Header columnId="column1">Header 1</FlexTable.Header>
       <FlexTable.Header columnId="column2">Header 2</FlexTable.Header>
       <FlexTable.Header columnId="column3">Header 3</FlexTable.Header>
-    </FlexTable.Row>
+    </FlexTable.HeaderRow>
     <FlexTable.Row hideSeparator>
       <FlexTable.Cell columnId="column1">Cell 1-1</FlexTable.Cell>
       <FlexTable.Cell columnId="column2">Cell 1-2</FlexTable.Cell>
@@ -202,57 +293,78 @@ const StyledFlexTable = styled(FlexTable)`
 export const TablesWithDifferentDensities = () => (
   <StyledDiv>
     <Typography type="title3">Default (Medium)</Typography>
-
     <StyledFlexTable>
-      <FlexTable.Row>
+      <FlexTable.HeaderRow>
         <FlexTable.Header columnId="column1">Header 1</FlexTable.Header>
         <FlexTable.Header columnId="column2">Header 2</FlexTable.Header>
         <FlexTable.Header columnId="column3">Header 3</FlexTable.Header>
+      </FlexTable.HeaderRow>
+      <FlexTable.Row>
+        <FlexTable.Cell columnId="column1">Cell 1-1</FlexTable.Cell>
+        <FlexTable.Cell columnId="column2">Cell 1-2</FlexTable.Cell>
+        <FlexTable.Cell columnId="column3">Cell 1-3</FlexTable.Cell>
+      </FlexTable.Row>
+      <FlexTable.Row>
+        <FlexTable.Cell columnId="column1">Cell 2-1</FlexTable.Cell>
+        <FlexTable.Cell columnId="column2">Cell 2-2</FlexTable.Cell>
+        <FlexTable.Cell columnId="column3">Cell 2-3</FlexTable.Cell>
       </FlexTable.Row>
     </StyledFlexTable>
 
     <Typography type="title3">Small</Typography>
-    <StyledFlexTable>
+    <StyledFlexTable density="s">
+      <FlexTable.HeaderRow>
+        <FlexTable.Header columnId="column1">Header 1</FlexTable.Header>
+        <FlexTable.Header columnId="column2">Header 2</FlexTable.Header>
+        <FlexTable.Header columnId="column3">Header 3</FlexTable.Header>
+      </FlexTable.HeaderRow>
       <FlexTable.Row>
-        <FlexTable.Header columnId="column1" density="s">
-          Header 1
-        </FlexTable.Header>
-        <FlexTable.Header columnId="column2" density="s">
-          Header 2
-        </FlexTable.Header>
-        <FlexTable.Header columnId="column3" density="s">
-          Header 3
-        </FlexTable.Header>
+        <FlexTable.Cell columnId="column1">Cell 1-1</FlexTable.Cell>
+        <FlexTable.Cell columnId="column2">Cell 1-2</FlexTable.Cell>
+        <FlexTable.Cell columnId="column3">Cell 1-3</FlexTable.Cell>
+      </FlexTable.Row>
+      <FlexTable.Row>
+        <FlexTable.Cell columnId="column1">Cell 2-1</FlexTable.Cell>
+        <FlexTable.Cell columnId="column2">Cell 2-2</FlexTable.Cell>
+        <FlexTable.Cell columnId="column3">Cell 2-3</FlexTable.Cell>
       </FlexTable.Row>
     </StyledFlexTable>
 
     <Typography type="title3">Medium</Typography>
     <StyledFlexTable>
+      <FlexTable.HeaderRow>
+        <FlexTable.Header columnId="column1">Header 1</FlexTable.Header>
+        <FlexTable.Header columnId="column2">Header 2</FlexTable.Header>
+        <FlexTable.Header columnId="column3">Header 3</FlexTable.Header>
+      </FlexTable.HeaderRow>
       <FlexTable.Row>
-        <FlexTable.Header columnId="column1" density="m">
-          Header 1
-        </FlexTable.Header>
-        <FlexTable.Header columnId="column2" density="m">
-          Header 2
-        </FlexTable.Header>
-        <FlexTable.Header columnId="column3" density="m">
-          Header 3
-        </FlexTable.Header>
+        <FlexTable.Cell columnId="column1">Cell 1-1</FlexTable.Cell>
+        <FlexTable.Cell columnId="column2">Cell 1-2</FlexTable.Cell>
+        <FlexTable.Cell columnId="column3">Cell 1-3</FlexTable.Cell>
+      </FlexTable.Row>
+      <FlexTable.Row>
+        <FlexTable.Cell columnId="column1">Cell 2-1</FlexTable.Cell>
+        <FlexTable.Cell columnId="column2">Cell 2-2</FlexTable.Cell>
+        <FlexTable.Cell columnId="column3">Cell 2-3</FlexTable.Cell>
       </FlexTable.Row>
     </StyledFlexTable>
 
     <Typography type="title3">Large</Typography>
-    <StyledFlexTable>
+    <StyledFlexTable density="l">
+      <FlexTable.HeaderRow>
+        <FlexTable.Header columnId="column1">Header 1</FlexTable.Header>
+        <FlexTable.Header columnId="column2">Header 2</FlexTable.Header>
+        <FlexTable.Header columnId="column3">Header 3</FlexTable.Header>
+      </FlexTable.HeaderRow>
       <FlexTable.Row>
-        <FlexTable.Header columnId="column1" density="l">
-          Header 1
-        </FlexTable.Header>
-        <FlexTable.Header columnId="column2" density="l">
-          Header 2
-        </FlexTable.Header>
-        <FlexTable.Header columnId="column3" density="l">
-          Header 3
-        </FlexTable.Header>
+        <FlexTable.Cell columnId="column1">Cell 1-1</FlexTable.Cell>
+        <FlexTable.Cell columnId="column2">Cell 1-2</FlexTable.Cell>
+        <FlexTable.Cell columnId="column3">Cell 1-3</FlexTable.Cell>
+      </FlexTable.Row>
+      <FlexTable.Row>
+        <FlexTable.Cell columnId="column1">Cell 2-1</FlexTable.Cell>
+        <FlexTable.Cell columnId="column2">Cell 2-2</FlexTable.Cell>
+        <FlexTable.Cell columnId="column3">Cell 2-3</FlexTable.Cell>
       </FlexTable.Row>
     </StyledFlexTable>
   </StyledDiv>
@@ -260,39 +372,111 @@ export const TablesWithDifferentDensities = () => (
 
 export const TableWithDifferentRows = () => (
   <FlexTable>
-    <FlexTable.Row separatorColor={t => t.color.text}>Separator color set</FlexTable.Row>
+    <FlexTable.Row separatorColor={t => t.color.barChartColor1}>Separator color set</FlexTable.Row>
     <FlexTable.Row>Default</FlexTable.Row>
     <FlexTable.Row hideSeparator>Separator hidden</FlexTable.Row>
     <FlexTable.Row>Default</FlexTable.Row>
   </FlexTable>
 );
 
-export const TableExpanded = () => {
-  const TableExpandedExample = () => {
-    const [expanded, setExpanded] = useState(false);
+const expandedItemsGenerator = (renderComponent = false) =>
+  [...Array(20)].reduce((acc, _, itemIndex) => {
+    const keyName = `${itemIndex + 1}`;
+    const labelText = `Label ${keyName}`;
+    const label = renderComponent ? <Typography>{labelText}</Typography> : labelText;
+    const valueText = Math.floor(10 ** (20 - itemIndex) * Math.random());
+    const value = renderComponent ? <Number value={valueText} /> : valueText.toString();
+    return [...acc, { label, value }];
+  }, []);
+
+export const ExpandableTable = () => {
+  const expandItemsText = expandedItemsGenerator();
+  const expandItemsComponents = expandedItemsGenerator(true);
+  const expandChildrenComponents = (
+    <Flexbox container justifyContent="center" gutter={2}>
+      <Flexbox item>
+        <Button size="l" variant="primary">
+          Buy
+        </Button>
+      </Flexbox>
+      <Flexbox item>
+        <Button size="l" variant="secondary">
+          Sell
+        </Button>
+      </Flexbox>
+    </Flexbox>
+  );
+  const ExpandedTableExample = () => {
+    const [expanded1, setExpanded1] = useState(false);
+    const [expanded2, setExpanded2] = useState(false);
+    const [expanded3, setExpanded3] = useState(false);
     return (
       <FlexTable>
-        <FlexTable.Row>Default</FlexTable.Row>
-        <FlexTable.Row expanded={expanded} expandableContent={<div>I am expanded</div>}>
-          <Button variant="secondary" size="s" onClick={() => setExpanded(!expanded)}>
-            {expanded ? 'Collapse' : 'Expand'}
-          </Button>
+        <FlexTable.HeaderRow>
+          <FlexTable.Header columnId="column1">Header 1</FlexTable.Header>
+          <FlexTable.Header columnId="column2">Header 2</FlexTable.Header>
+          <FlexTable.Header columnId="column3">Header 3</FlexTable.Header>
+          <FlexTable.Header columnId="expandColumn" {...ICON_COLUMN_DEFAULT_FLEX_PROPS} />
+        </FlexTable.HeaderRow>
+        <FlexTable.Row>
+          <FlexTable.Cell columnId="column1">Disabled</FlexTable.Cell>
+          <FlexTable.Cell columnId="column2">Disabled</FlexTable.Cell>
+          <FlexTable.Cell columnId="column3">Disabled</FlexTable.Cell>
+          <FlexTable.ExpandCell
+            columnId="expandColumn"
+            expanded={false}
+            onClick={() => setExpanded1(!expanded1)}
+            disabled
+          />
         </FlexTable.Row>
-        <FlexTable.Row>Default</FlexTable.Row>
-        <FlexTable.Row>Default</FlexTable.Row>
+        <FlexTable.Row expandItems={expandItemsText} expanded={expanded1}>
+          <FlexTable.Cell columnId="column1">Expandable</FlexTable.Cell>
+          <FlexTable.Cell columnId="column2">Expandable</FlexTable.Cell>
+          <FlexTable.Cell columnId="column3">Expandable</FlexTable.Cell>
+          <FlexTable.ExpandCell
+            columnId="expandColumn"
+            expanded={expanded1}
+            onClick={() => setExpanded1(!expanded1)}
+          />
+        </FlexTable.Row>
+
+        <FlexTable.Row expandItems={expandItemsComponents} expanded={expanded2}>
+          <FlexTable.Cell columnId="column1">Expandable component items</FlexTable.Cell>
+          <FlexTable.Cell columnId="column2">Expandable component items</FlexTable.Cell>
+          <FlexTable.Cell columnId="column3">Expandable component items</FlexTable.Cell>
+          <FlexTable.ExpandCell
+            columnId="expandColumn"
+            expanded={expanded2}
+            onClick={() => setExpanded2(!expanded2)}
+          />
+        </FlexTable.Row>
+        <FlexTable.Row
+          expandItems={expandItemsText}
+          expandChildren={expandChildrenComponents}
+          expanded={expanded3}
+        >
+          <FlexTable.Cell columnId="column1">Expandable with children</FlexTable.Cell>
+          <FlexTable.Cell columnId="column2">Expandable with children</FlexTable.Cell>
+          <FlexTable.Cell columnId="column3">Expandable with children</FlexTable.Cell>
+          <FlexTable.ExpandCell
+            columnId="expandColumn"
+            expanded={expanded3}
+            onClick={() => setExpanded3(!expanded3)}
+          />
+        </FlexTable.Row>
       </FlexTable>
     );
   };
-  return <TableExpandedExample />;
+  return <ExpandedTableExample />;
 };
 
 export const TableHeader = () => {
   const CustomisedTableHeader: React.FC = ({ children }) => (
     <FlexTable.Header columnId="column3" sortable>
-      {({ sortable, sorted, fontSize, density, onSortClick, sortOrder }) => (
+      {({ sortable, sorted, fontSize, onSortClick, sortOrder }) => (
         <FlexTable.Header.SortButton onClick={onSortClick}>
           <Flag country="SE" inline height={3} />
-          <FlexTable.Header.TextWrapper fontSize={fontSize} density={density} sorted={sorted}>
+          <FlexTable.Header.TextWrapper fontSize={fontSize} sorted={sorted}>
             {children}
           </FlexTable.Header.TextWrapper>
           {sortable && <FlexTable.Header.SortIcon sortOrder={sortOrder} />}
@@ -302,7 +486,7 @@ export const TableHeader = () => {
   );
   return (
     <FlexTable>
-      <FlexTable.Row>
+      <FlexTable.HeaderRow>
         <FlexTable.Header columnId="column1" flex="1">
           Table header 1 flex 1
         </FlexTable.Header>
@@ -312,35 +496,38 @@ export const TableHeader = () => {
         <CustomisedTableHeader>Customised header</CustomisedTableHeader>
         <FlexTable.Header columnId="column4">Table header 3 no flex</FlexTable.Header>
         <FlexTable.Header columnId="column5">
-          <Typography type="title2">I&apos;m a component</Typography>
+          <Typography type="title3">React component</Typography>
         </FlexTable.Header>
-      </FlexTable.Row>
+      </FlexTable.HeaderRow>
     </FlexTable>
   );
 };
 
-export const SortableHeadersUncontrolled = () => (
-  <FlexTable>
-    <FlexTable.Row>
-      <FlexTable.Header columnId="column1" sortable>
-        Uncontrolled 1
-      </FlexTable.Header>
-      <FlexTable.Header columnId="column2" sortable>
-        Uncontrolled 2
-      </FlexTable.Header>
-      <FlexTable.Header
-        columnId="column3"
-        sortable
-        initialSortOrder={FlexTable.CONSTANTS.SORT_ORDER_DESCENDING}
-      >
-        With initial sort order
-      </FlexTable.Header>
-      <FlexTable.Header columnId="column4" sortable={false}>
-        Non sortable
-      </FlexTable.Header>
-    </FlexTable.Row>
-  </FlexTable>
-);
+export const SortableHeadersUncontrolled = () => {
+  return (
+    <FlexTable>
+      <FlexTable.HeaderRow>
+        <FlexTable.Header columnId="column1" sortable>
+          Uncontrolled 1
+        </FlexTable.Header>
+        <FlexTable.Header columnId="column2" sortable>
+          Uncontrolled 2
+        </FlexTable.Header>
+        <FlexTable.Header
+          columnId="column3"
+          sortable
+          initialSortOrder={FlexTable.CONSTANTS.SORT_ORDER_DESCENDING}
+        >
+          With initial sort order
+        </FlexTable.Header>
+        <FlexTable.Header columnId="column4" sortable={false}>
+          Non sortable
+        </FlexTable.Header>
+      </FlexTable.HeaderRow>
+      <FlexTable.Row />
+    </FlexTable>
+  );
+};
 
 // For useState to work in storybook, components needs to be wrapped in a new function
 export const SortableHeaderControlled = () => {
@@ -357,7 +544,7 @@ export const SortableHeaderControlled = () => {
 
     return (
       <FlexTable>
-        <FlexTable.Row>
+        <FlexTable.HeaderRow>
           <FlexTable.Header
             columnId="column1"
             sortable
@@ -385,7 +572,7 @@ export const SortableHeaderControlled = () => {
           >
             Controlled3
           </FlexTable.Header>
-        </FlexTable.Row>
+        </FlexTable.HeaderRow>
       </FlexTable>
     );
   };
@@ -415,7 +602,7 @@ export const SortableHeaderOnlyAscendingDescending = () => {
 
     return (
       <FlexTable>
-        <FlexTable.Row>
+        <FlexTable.HeaderRow>
           <FlexTable.Header
             columnId="column1"
             sortable
@@ -443,7 +630,7 @@ export const SortableHeaderOnlyAscendingDescending = () => {
           >
             Controlled3
           </FlexTable.Header>
-        </FlexTable.Row>
+        </FlexTable.HeaderRow>
       </FlexTable>
     );
   };

@@ -6,9 +6,8 @@ type RenderFunc = (props: RenderPropArguments) => ReactNode;
 type Children = ReactNode | RenderFunc;
 
 export type Props = {
-  children: Children;
+  children?: Children;
   className?: string;
-  density?: Density;
   fontSize?: FontSize;
   columnId: string;
 };
@@ -17,7 +16,15 @@ export type CellComponent = React.FC<Props>;
 
 export type TextWrapperProps = {
   fontSize?: FontSize;
-  density?: Density;
 };
 
 export type TextWrapperComponent = React.FC<TextWrapperProps>;
+
+type ExpandCellProps = {
+  disabled?: boolean;
+  expanded: boolean;
+  onClick: () => void;
+  columnId: string;
+};
+
+export type ExpandCellComponent = React.FC<ExpandCellProps>;

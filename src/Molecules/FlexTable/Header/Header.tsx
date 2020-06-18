@@ -10,9 +10,9 @@ import {
   useColumn,
   ACTION_SET_FLEX_PROPS,
   ACTION_SET_SORTING,
+  ACTION_SET_INITIAL_SORTING,
 } from '../shared/ColumnProvider';
 import { HeaderContent, TextWrapper, SortIcon, SortButton } from './HeaderContent';
-import { ACTION_SET_INITIAL_SORTING } from '../shared/ColumnProvider/ColumnProvider';
 
 const SORT_ORDERS: SortOrder[] = [SORT_ORDER_NONE, SORT_ORDER_ASCENDING, SORT_ORDER_DESCENDING];
 
@@ -36,7 +36,6 @@ const Header: HeaderComponent = props => {
     sortable = false,
     sortOrder: sortOrderProp,
     onSort = () => {},
-    density = 'm',
     fontSize,
     columnId,
   } = props;
@@ -88,20 +87,19 @@ const Header: HeaderComponent = props => {
       {...R.propOr(cellFlexProps, 'flexProps', columnState)}
     >
       {isElement(children) && children}
-      {isFunction(children) ? (
-        children({ density, fontSize, sortable, sortOrder, onSortClick, sorted, columnId })
-      ) : (
-        <HeaderContent
-          onSortClick={onSortClick}
-          sortable={sortable}
-          sortOrder={sortOrder}
-          density={density}
-          fontSize={fontSize}
-          sorted={sorted}
-        >
-          {children}
-        </HeaderContent>
-      )}
+      {isFunction(children)
+        ? children({ fontSize, sortable, sortOrder, onSortClick, sorted, columnId })
+        : !isElement(children) && (
+            <HeaderContent
+              onSortClick={onSortClick}
+              sortable={sortable}
+              sortOrder={sortOrder}
+              fontSize={fontSize}
+              sorted={sorted}
+            >
+              {children}
+            </HeaderContent>
+          )}
     </Flexbox>
   );
 };

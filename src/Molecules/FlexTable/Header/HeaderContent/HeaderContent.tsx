@@ -9,14 +9,13 @@ import { SortButton } from './SortButton';
 export const HeaderContent: React.FC<Props & UIProps> = ({
   sortable,
   fontSize,
-  density,
   sortOrder,
   onSortClick,
   children,
 }) => {
   if (!sortable || sortOrder === null) {
     return (
-      <TextWrapper fontSize={fontSize} density={density} sorted={false}>
+      <TextWrapper fontSize={fontSize} sorted={false}>
         {children}
       </TextWrapper>
     );
@@ -26,7 +25,6 @@ export const HeaderContent: React.FC<Props & UIProps> = ({
     <SortButton onClick={onSortClick}>
       <TextWrapper
         fontSize={fontSize}
-        density={density}
         sorted={!R.isNil(sortOrder) && sortOrder !== SORT_ORDER_NONE}
       >
         {children}
