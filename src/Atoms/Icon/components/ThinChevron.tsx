@@ -19,13 +19,7 @@ const StyledIconBase = styled(IconBase)<Direction>`
 export const ThinChevron = ({ direction = 'down', ...props }: BaseProps & Direction) => {
   return (
     <StyledIconBase direction={direction} {...props} viewBox="0 0 16 16">
-      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16">
-        <path
-          fill="#282823"
-          fillRule="evenodd"
-          d="M14.616 3.584l1.388 1.44-7.997 7.711L.005 5.024l1.388-1.44 6.613 6.373z"
-        />
-      </svg>
+      <polygon points="14.620 3.580, 16.000 5.020, 8.000 12.730, 0.000 5.030, 1.400 3.580, 8.000 9.96" />
     </StyledIconBase>
   );
 };

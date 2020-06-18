@@ -3420,17 +3420,9 @@ Array [
       role="presentation"
       viewBox="0 0 16 16"
     >
-      <svg
-        height="16"
-        width="16"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <path
-          d="M14.616 3.584l1.388 1.44-7.997 7.711L.005 5.024l1.388-1.44 6.613 6.373z"
-          fill="#282823"
-          fillRule="evenodd"
-        />
-      </svg>
+      <polygon
+        points="14.620 3.580, 16.000 5.020, 8.000 12.730, 0.000 5.030, 1.400 3.580, 8.000 9.96"
+      />
     </svg>
   </div>,
   .c0 {
@@ -6864,17 +6856,9 @@ exports[`Storyshots Atoms | Icon Available icons 1`] = `
           role="presentation"
           viewBox="0 0 16 16"
         >
-          <svg
-            height="16"
-            width="16"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M14.616 3.584l1.388 1.44-7.997 7.711L.005 5.024l1.388-1.44 6.613 6.373z"
-              fill="#282823"
-              fillRule="evenodd"
-            />
-          </svg>
+          <polygon
+            points="14.620 3.580, 16.000 5.020, 8.000 12.730, 0.000 5.030, 1.400 3.580, 8.000 9.96"
+          />
         </svg>
       </div>
     </div>
@@ -7273,17 +7257,9 @@ exports[`Storyshots Atoms | Icon Thin Chevron Down 1`] = `
     role="presentation"
     viewBox="0 0 16 16"
   >
-    <svg
-      height="16"
-      width="16"
-      xmlns="http://www.w3.org/2000/svg"
-    >
-      <path
-        d="M14.616 3.584l1.388 1.44-7.997 7.711L.005 5.024l1.388-1.44 6.613 6.373z"
-        fill="#282823"
-        fillRule="evenodd"
-      />
-    </svg>
+    <polygon
+      points="14.620 3.580, 16.000 5.020, 8.000 12.730, 0.000 5.030, 1.400 3.580, 8.000 9.96"
+    />
   </svg>
 </span>
 `;
@@ -7319,17 +7295,9 @@ exports[`Storyshots Atoms | Icon Thin Chevron Up 1`] = `
     role="presentation"
     viewBox="0 0 16 16"
   >
-    <svg
-      height="16"
-      width="16"
-      xmlns="http://www.w3.org/2000/svg"
-    >
-      <path
-        d="M14.616 3.584l1.388 1.44-7.997 7.711L.005 5.024l1.388-1.44 6.613 6.373z"
-        fill="#282823"
-        fillRule="evenodd"
-      />
-    </svg>
+    <polygon
+      points="14.620 3.580, 16.000 5.020, 8.000 12.730, 0.000 5.030, 1.400 3.580, 8.000 9.96"
+    />
   </svg>
 </span>
 `;
