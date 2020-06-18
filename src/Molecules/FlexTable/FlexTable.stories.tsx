@@ -41,6 +41,36 @@ export const DefaultTable = () => (
   </FlexTable>
 );
 
+export const DefaultTableWithFooter = () => (
+  <FlexTable>
+    <FlexTable.HeaderRow>
+      <FlexTable.Header columnId="column1">Header 1</FlexTable.Header>
+      <FlexTable.Header columnId="column2">Header 2</FlexTable.Header>
+      <FlexTable.Header columnId="column3">Header 3</FlexTable.Header>
+    </FlexTable.HeaderRow>
+    <FlexTable.Row>
+      <FlexTable.Cell columnId="column1">Cell 1-1</FlexTable.Cell>
+      <FlexTable.Cell columnId="column2">Cell 1-2</FlexTable.Cell>
+      <FlexTable.Cell columnId="column3">Cell 1-3</FlexTable.Cell>
+    </FlexTable.Row>
+    <FlexTable.Row>
+      <FlexTable.Cell columnId="column1">Cell 2-1</FlexTable.Cell>
+      <FlexTable.Cell columnId="column2">Cell 2-2</FlexTable.Cell>
+      <FlexTable.Cell columnId="column3">Cell 2-3</FlexTable.Cell>
+    </FlexTable.Row>
+    <FlexTable.Row>
+      <FlexTable.Cell columnId="column1">Cell 3-1</FlexTable.Cell>
+      <FlexTable.Cell columnId="column2">Cell 3-2</FlexTable.Cell>
+      <FlexTable.Cell columnId="column3">Cell 3-3</FlexTable.Cell>
+    </FlexTable.Row>
+    <FlexTable.FooterRow>
+      <FlexTable.Header columnId="column1">Footer 1</FlexTable.Header>
+      <FlexTable.Header columnId="column2">Footer 2</FlexTable.Header>
+      <FlexTable.Header columnId="column3">Footer 3</FlexTable.Header>
+    </FlexTable.FooterRow>
+  </FlexTable>
+);
+
 export const DefaultTableWithIconColumn = () => (
   <FlexTable>
     <FlexTable.HeaderRow>
