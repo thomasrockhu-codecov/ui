@@ -81,10 +81,9 @@ const Row: RowComponent & RowComponents = ({
         {...htmlProps}
       >
         {children}
-        {expandChildren ||
-          (expandItems && (
-            <ExpandCell columnId="expand" expanded={expand} onClick={() => setExpand(!expand)} />
-          ))}
+        {(expandChildren || expandItems) && (
+          <ExpandCell columnId="expand" expanded={expand} onClick={() => setExpand(!expand)} />
+        )}
       </StyledRow>
 
       {expand && (
