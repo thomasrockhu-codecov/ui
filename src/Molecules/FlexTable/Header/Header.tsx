@@ -7,10 +7,11 @@ import { Flexbox } from '../../..';
 import { SORT_ORDER_ASCENDING, SORT_ORDER_DESCENDING, SORT_ORDER_NONE } from '../shared/constants';
 import {
   useFlexCellProps,
-  useColumn,
+  useColumnData,
   ACTION_SET_FLEX_PROPS,
   ACTION_SET_SORTING,
   ACTION_SET_INITIAL_SORTING,
+  useColumnLayout,
 } from '../shared/ColumnProvider';
 import { HeaderContent, TextWrapper, SortIcon, SortButton } from './HeaderContent';
 
@@ -40,7 +41,8 @@ const Header: HeaderComponent = props => {
     columnId,
   } = props;
 
-  const [columnState, columnDispatch] = useColumn(columnId);
+  const [columnState, columnDispatch] = useColumnData(columnId);
+  const [columnLayout] = useColumnLayout(columnId);
   const sortOrder = sortable
     ? getSortOrder(R.prop('sortOrder', columnState), sortOrderProp, initialSortOrder)
     : null;
@@ -84,7 +86,7 @@ const Header: HeaderComponent = props => {
       className={className}
       role="columnheader"
       {...ariaSorted}
-      {...R.propOr(cellFlexProps, 'flexProps', columnState)}
+      {...R.propOr(cellFlexProps, 'flexProps', columnLayout)}
     >
       {isElement(children) && children}
       {isFunction(children)
