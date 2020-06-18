@@ -2831,6 +2831,12 @@ exports[`Storyshots Molecules | FlexTable Different Alignments Table 1`] = `
 `;
 
 exports[`Storyshots Molecules | FlexTable Expandable Table 1`] = `
+.c9 {
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 8px;
+}
+
 .c0 {
   box-sizing: border-box;
   display: -webkit-box;
@@ -2875,6 +2881,73 @@ exports[`Storyshots Molecules | FlexTable Expandable Table 1`] = `
   flex: 0 20px;
 }
 
+.c12 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.c13 {
+  box-sizing: border-box;
+}
+
+.c16 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-left: -20px;
+  margin-right: -20px;
+}
+
+.c16 > * {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.c16 > *:not(:first-child) {
+  padding-top: 0;
+}
+
+.c22 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin-left: -4px;
+  margin-right: -4px;
+}
+
+.c22 > * {
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+.c22 > *:not(:first-child) {
+  padding-top: 0;
+}
+
+.c11 {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
 .c3 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #6E6E69;
@@ -2882,6 +2955,210 @@ exports[`Storyshots Molecules | FlexTable Expandable Table 1`] = `
   font-weight: 400;
   font-size: 12px;
   line-height: 1.3333333333333333;
+}
+
+.c14 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.3333333333333333;
+}
+
+.c20 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #6E6E69;
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c21 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.c24 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: inherit;
+  margin: 0;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.c23 {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  overflow: visible;
+  text-transform: none;
+  position: relative;
+  box-sizing: border-box;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  padding: 8px 16px;
+  min-height: 40px;
+  background-color: #0046FF;
+  color: #FFFFFF;
+  border: none;
+  border-radius: 0;
+  cursor: pointer;
+}
+
+.c23,
+.c23[type='button'],
+.c23[type='reset'],
+.c23[type='submit'] {
+  -webkit-appearance: button;
+}
+
+.c23::-moz-focus-inner,
+.c23[type='button']::-moz-focus-inner,
+.c23[type='reset']::-moz-focus-inner,
+.c23[type='submit']::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+.c23:-moz-focusring,
+.c23[type='button']:-moz-focusring,
+.c23[type='reset']:-moz-focusring,
+.c23[type='submit']:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+.c23::before {
+  content: '';
+  display: block;
+  position: absolute;
+  border: 2px solid transparent;
+  top: 0;
+  left: 0;
+  width: calc(100% - 4px);
+  height: calc(100% - 4px);
+}
+
+.c23:hover {
+  background-color: hsl(223.5,100%,45%);
+}
+
+.c23:active {
+  background-color: hsl(223.5,100%,40%);
+}
+
+.c25 {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  overflow: visible;
+  text-transform: none;
+  position: relative;
+  box-sizing: border-box;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  padding: 8px 16px;
+  min-height: 40px;
+  background-color: #FFFFFF;
+  color: #0046FF;
+  border: none;
+  border-radius: 0;
+  cursor: pointer;
+}
+
+.c25,
+.c25[type='button'],
+.c25[type='reset'],
+.c25[type='submit'] {
+  -webkit-appearance: button;
+}
+
+.c25::-moz-focus-inner,
+.c25[type='button']::-moz-focus-inner,
+.c25[type='reset']::-moz-focus-inner,
+.c25[type='submit']::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+.c25:-moz-focusring,
+.c25[type='button']:-moz-focusring,
+.c25[type='reset']:-moz-focusring,
+.c25[type='submit']:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+.c25::before {
+  content: '';
+  display: block;
+  position: absolute;
+  border: 2px solid #0046FF;
+  top: 0;
+  left: 0;
+  width: calc(100% - 4px);
+  height: calc(100% - 4px);
+}
+
+.c25:hover {
+  color: hsl(223.5,100%,40%);
+}
+
+.c25:hover::before {
+  border-color: hsl(223.5,100%,40%);
+}
+
+.c25:active {
+  color: hsl(223.5,100%,35%);
+}
+
+.c25:active::before {
+  border-color: hsl(223.5,100%,35%);
+}
+
+.c18 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.c19 {
+  margin-bottom: 4px;
+}
+
+.c17 {
+  padding-bottom: 20px;
 }
 
 .c1 {
@@ -2906,9 +3183,41 @@ exports[`Storyshots Molecules | FlexTable Expandable Table 1`] = `
   background: #F5F5F5;
 }
 
+.c7 {
+  padding-right: 4px;
+  padding-left: 2px;
+  border-left: 2px solid #0046FF;
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+
+.c8 {
+  border-left: 2px solid #0046FF;
+  border-bottom: 1px solid #EBEBE8;
+}
+
 .c4 {
   display: inline-block;
   word-break: break-word;
+}
+
+@media (min-width:976px) {
+  .c9 {
+    padding-top: 20px;
+    padding-bottom: 0px;
+  }
+}
+
+@media not all and (max-width:975px) {
+  .c10 {
+    display: none;
+  }
+}
+
+@media not all and (min-width:976px) {
+  .c15 {
+    display: none;
+  }
 }
 
 <div
@@ -2962,9 +3271,915 @@ exports[`Storyshots Molecules | FlexTable Expandable Table 1`] = `
     role="row"
   />
   <div
-    className="c0 c6"
+    className="c0 c7"
     role="row"
   />
+  <div
+    className="c8"
+    role="row"
+  >
+    <div
+      className="c9"
+      role="cell"
+    >
+      <div
+        className="c10"
+      >
+        <ul
+          className="c11"
+        >
+          <li
+            className="c12"
+          >
+            <div
+              className="c13"
+            >
+              <span
+                className="c3"
+              >
+                Label 1
+              </span>
+            </div>
+            <div
+              className="c13"
+            >
+              <span
+                className="c14"
+              >
+                42100000000000000000
+              </span>
+            </div>
+          </li>
+          <li
+            className="c12"
+          >
+            <div
+              className="c13"
+            >
+              <span
+                className="c3"
+              >
+                Label 2
+              </span>
+            </div>
+            <div
+              className="c13"
+            >
+              <span
+                className="c14"
+              >
+                4210000000000000000
+              </span>
+            </div>
+          </li>
+          <li
+            className="c12"
+          >
+            <div
+              className="c13"
+            >
+              <span
+                className="c3"
+              >
+                Label 3
+              </span>
+            </div>
+            <div
+              className="c13"
+            >
+              <span
+                className="c14"
+              >
+                421000000000000000
+              </span>
+            </div>
+          </li>
+          <li
+            className="c12"
+          >
+            <div
+              className="c13"
+            >
+              <span
+                className="c3"
+              >
+                Label 4
+              </span>
+            </div>
+            <div
+              className="c13"
+            >
+              <span
+                className="c14"
+              >
+                42100000000000000
+              </span>
+            </div>
+          </li>
+          <li
+            className="c12"
+          >
+            <div
+              className="c13"
+            >
+              <span
+                className="c3"
+              >
+                Label 5
+              </span>
+            </div>
+            <div
+              className="c13"
+            >
+              <span
+                className="c14"
+              >
+                4210000000000000
+              </span>
+            </div>
+          </li>
+          <li
+            className="c12"
+          >
+            <div
+              className="c13"
+            >
+              <span
+                className="c3"
+              >
+                Label 6
+              </span>
+            </div>
+            <div
+              className="c13"
+            >
+              <span
+                className="c14"
+              >
+                421000000000000
+              </span>
+            </div>
+          </li>
+          <li
+            className="c12"
+          >
+            <div
+              className="c13"
+            >
+              <span
+                className="c3"
+              >
+                Label 7
+              </span>
+            </div>
+            <div
+              className="c13"
+            >
+              <span
+                className="c14"
+              >
+                42100000000000
+              </span>
+            </div>
+          </li>
+          <li
+            className="c12"
+          >
+            <div
+              className="c13"
+            >
+              <span
+                className="c3"
+              >
+                Label 8
+              </span>
+            </div>
+            <div
+              className="c13"
+            >
+              <span
+                className="c14"
+              >
+                4210000000000
+              </span>
+            </div>
+          </li>
+          <li
+            className="c12"
+          >
+            <div
+              className="c13"
+            >
+              <span
+                className="c3"
+              >
+                Label 9
+              </span>
+            </div>
+            <div
+              className="c13"
+            >
+              <span
+                className="c14"
+              >
+                421000000000
+              </span>
+            </div>
+          </li>
+          <li
+            className="c12"
+          >
+            <div
+              className="c13"
+            >
+              <span
+                className="c3"
+              >
+                Label 10
+              </span>
+            </div>
+            <div
+              className="c13"
+            >
+              <span
+                className="c14"
+              >
+                42100000000
+              </span>
+            </div>
+          </li>
+          <li
+            className="c12"
+          >
+            <div
+              className="c13"
+            >
+              <span
+                className="c3"
+              >
+                Label 11
+              </span>
+            </div>
+            <div
+              className="c13"
+            >
+              <span
+                className="c14"
+              >
+                4210000000
+              </span>
+            </div>
+          </li>
+          <li
+            className="c12"
+          >
+            <div
+              className="c13"
+            >
+              <span
+                className="c3"
+              >
+                Label 12
+              </span>
+            </div>
+            <div
+              className="c13"
+            >
+              <span
+                className="c14"
+              >
+                421000000
+              </span>
+            </div>
+          </li>
+          <li
+            className="c12"
+          >
+            <div
+              className="c13"
+            >
+              <span
+                className="c3"
+              >
+                Label 13
+              </span>
+            </div>
+            <div
+              className="c13"
+            >
+              <span
+                className="c14"
+              >
+                42100000
+              </span>
+            </div>
+          </li>
+          <li
+            className="c12"
+          >
+            <div
+              className="c13"
+            >
+              <span
+                className="c3"
+              >
+                Label 14
+              </span>
+            </div>
+            <div
+              className="c13"
+            >
+              <span
+                className="c14"
+              >
+                4210000
+              </span>
+            </div>
+          </li>
+          <li
+            className="c12"
+          >
+            <div
+              className="c13"
+            >
+              <span
+                className="c3"
+              >
+                Label 15
+              </span>
+            </div>
+            <div
+              className="c13"
+            >
+              <span
+                className="c14"
+              >
+                421000
+              </span>
+            </div>
+          </li>
+          <li
+            className="c12"
+          >
+            <div
+              className="c13"
+            >
+              <span
+                className="c3"
+              >
+                Label 16
+              </span>
+            </div>
+            <div
+              className="c13"
+            >
+              <span
+                className="c14"
+              >
+                42100
+              </span>
+            </div>
+          </li>
+          <li
+            className="c12"
+          >
+            <div
+              className="c13"
+            >
+              <span
+                className="c3"
+              >
+                Label 17
+              </span>
+            </div>
+            <div
+              className="c13"
+            >
+              <span
+                className="c14"
+              >
+                4210
+              </span>
+            </div>
+          </li>
+          <li
+            className="c12"
+          >
+            <div
+              className="c13"
+            >
+              <span
+                className="c3"
+              >
+                Label 18
+              </span>
+            </div>
+            <div
+              className="c13"
+            >
+              <span
+                className="c14"
+              >
+                421
+              </span>
+            </div>
+          </li>
+          <li
+            className="c12"
+          >
+            <div
+              className="c13"
+            >
+              <span
+                className="c3"
+              >
+                Label 19
+              </span>
+            </div>
+            <div
+              className="c13"
+            >
+              <span
+                className="c14"
+              >
+                42
+              </span>
+            </div>
+          </li>
+          <li
+            className="c12"
+          >
+            <div
+              className="c13"
+            >
+              <span
+                className="c3"
+              >
+                Label 20
+              </span>
+            </div>
+            <div
+              className="c13"
+            >
+              <span
+                className="c14"
+              >
+                4
+              </span>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div
+        className="c15"
+      >
+        <ul
+          className="c11 c16"
+        >
+          <li
+            className="c17"
+          >
+            <div
+              className="c18"
+            >
+              <div
+                className="c19"
+              >
+                <span
+                  className="c20"
+                >
+                  Label 1
+                </span>
+              </div>
+              <span
+                className="c21"
+              >
+                42100000000000000000
+              </span>
+            </div>
+          </li>
+          <li
+            className="c17"
+          >
+            <div
+              className="c18"
+            >
+              <div
+                className="c19"
+              >
+                <span
+                  className="c20"
+                >
+                  Label 2
+                </span>
+              </div>
+              <span
+                className="c21"
+              >
+                4210000000000000000
+              </span>
+            </div>
+          </li>
+          <li
+            className="c17"
+          >
+            <div
+              className="c18"
+            >
+              <div
+                className="c19"
+              >
+                <span
+                  className="c20"
+                >
+                  Label 3
+                </span>
+              </div>
+              <span
+                className="c21"
+              >
+                421000000000000000
+              </span>
+            </div>
+          </li>
+          <li
+            className="c17"
+          >
+            <div
+              className="c18"
+            >
+              <div
+                className="c19"
+              >
+                <span
+                  className="c20"
+                >
+                  Label 4
+                </span>
+              </div>
+              <span
+                className="c21"
+              >
+                42100000000000000
+              </span>
+            </div>
+          </li>
+          <li
+            className="c17"
+          >
+            <div
+              className="c18"
+            >
+              <div
+                className="c19"
+              >
+                <span
+                  className="c20"
+                >
+                  Label 5
+                </span>
+              </div>
+              <span
+                className="c21"
+              >
+                4210000000000000
+              </span>
+            </div>
+          </li>
+          <li
+            className="c17"
+          >
+            <div
+              className="c18"
+            >
+              <div
+                className="c19"
+              >
+                <span
+                  className="c20"
+                >
+                  Label 6
+                </span>
+              </div>
+              <span
+                className="c21"
+              >
+                421000000000000
+              </span>
+            </div>
+          </li>
+          <li
+            className="c17"
+          >
+            <div
+              className="c18"
+            >
+              <div
+                className="c19"
+              >
+                <span
+                  className="c20"
+                >
+                  Label 7
+                </span>
+              </div>
+              <span
+                className="c21"
+              >
+                42100000000000
+              </span>
+            </div>
+          </li>
+          <li
+            className="c17"
+          >
+            <div
+              className="c18"
+            >
+              <div
+                className="c19"
+              >
+                <span
+                  className="c20"
+                >
+                  Label 8
+                </span>
+              </div>
+              <span
+                className="c21"
+              >
+                4210000000000
+              </span>
+            </div>
+          </li>
+          <li
+            className="c17"
+          >
+            <div
+              className="c18"
+            >
+              <div
+                className="c19"
+              >
+                <span
+                  className="c20"
+                >
+                  Label 9
+                </span>
+              </div>
+              <span
+                className="c21"
+              >
+                421000000000
+              </span>
+            </div>
+          </li>
+          <li
+            className="c17"
+          >
+            <div
+              className="c18"
+            >
+              <div
+                className="c19"
+              >
+                <span
+                  className="c20"
+                >
+                  Label 10
+                </span>
+              </div>
+              <span
+                className="c21"
+              >
+                42100000000
+              </span>
+            </div>
+          </li>
+          <li
+            className="c17"
+          >
+            <div
+              className="c18"
+            >
+              <div
+                className="c19"
+              >
+                <span
+                  className="c20"
+                >
+                  Label 11
+                </span>
+              </div>
+              <span
+                className="c21"
+              >
+                4210000000
+              </span>
+            </div>
+          </li>
+          <li
+            className="c17"
+          >
+            <div
+              className="c18"
+            >
+              <div
+                className="c19"
+              >
+                <span
+                  className="c20"
+                >
+                  Label 12
+                </span>
+              </div>
+              <span
+                className="c21"
+              >
+                421000000
+              </span>
+            </div>
+          </li>
+          <li
+            className="c17"
+          >
+            <div
+              className="c18"
+            >
+              <div
+                className="c19"
+              >
+                <span
+                  className="c20"
+                >
+                  Label 13
+                </span>
+              </div>
+              <span
+                className="c21"
+              >
+                42100000
+              </span>
+            </div>
+          </li>
+          <li
+            className="c17"
+          >
+            <div
+              className="c18"
+            >
+              <div
+                className="c19"
+              >
+                <span
+                  className="c20"
+                >
+                  Label 14
+                </span>
+              </div>
+              <span
+                className="c21"
+              >
+                4210000
+              </span>
+            </div>
+          </li>
+          <li
+            className="c17"
+          >
+            <div
+              className="c18"
+            >
+              <div
+                className="c19"
+              >
+                <span
+                  className="c20"
+                >
+                  Label 15
+                </span>
+              </div>
+              <span
+                className="c21"
+              >
+                421000
+              </span>
+            </div>
+          </li>
+          <li
+            className="c17"
+          >
+            <div
+              className="c18"
+            >
+              <div
+                className="c19"
+              >
+                <span
+                  className="c20"
+                >
+                  Label 16
+                </span>
+              </div>
+              <span
+                className="c21"
+              >
+                42100
+              </span>
+            </div>
+          </li>
+          <li
+            className="c17"
+          >
+            <div
+              className="c18"
+            >
+              <div
+                className="c19"
+              >
+                <span
+                  className="c20"
+                >
+                  Label 17
+                </span>
+              </div>
+              <span
+                className="c21"
+              >
+                4210
+              </span>
+            </div>
+          </li>
+          <li
+            className="c17"
+          >
+            <div
+              className="c18"
+            >
+              <div
+                className="c19"
+              >
+                <span
+                  className="c20"
+                >
+                  Label 18
+                </span>
+              </div>
+              <span
+                className="c21"
+              >
+                421
+              </span>
+            </div>
+          </li>
+          <li
+            className="c17"
+          >
+            <div
+              className="c18"
+            >
+              <div
+                className="c19"
+              >
+                <span
+                  className="c20"
+                >
+                  Label 19
+                </span>
+              </div>
+              <span
+                className="c21"
+              >
+                42
+              </span>
+            </div>
+          </li>
+          <li
+            className="c17"
+          >
+            <div
+              className="c18"
+            >
+              <div
+                className="c19"
+              >
+                <span
+                  className="c20"
+                >
+                  Label 20
+                </span>
+              </div>
+              <span
+                className="c21"
+              >
+                4
+              </span>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
   <div
     className="c0 c6"
     role="row"
@@ -2972,7 +4187,46 @@ exports[`Storyshots Molecules | FlexTable Expandable Table 1`] = `
   <div
     className="c0 c6"
     role="row"
-  />
+  >
+    <div
+      className="c22"
+    >
+      <div
+        className="c13"
+      >
+        <button
+          className="NormalizedButton__Button-ey7f5x-0 c23"
+          onClick={[Function]}
+          type="button"
+        >
+          <span>
+            <span
+              className="c24"
+            >
+              Buy
+            </span>
+          </span>
+        </button>
+      </div>
+      <div
+        className="c13"
+      >
+        <button
+          className="NormalizedButton__Button-ey7f5x-0 c25"
+          onClick={[Function]}
+          type="button"
+        >
+          <span>
+            <span
+              className="c24"
+            >
+              Sell
+            </span>
+          </span>
+        </button>
+      </div>
+    </div>
+  </div>
 </div>
 `;
 
