@@ -9,7 +9,6 @@ export type ContainerProps = {
   wrap?: 'nowrap' | 'wrap' | 'wrap-reverse';
   gutter?: number;
   hidden?: boolean;
-  title?: string;
   justifyContent?:
     | 'flex-start'
     | 'flex-end'
