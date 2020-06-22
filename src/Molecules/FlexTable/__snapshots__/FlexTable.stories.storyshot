@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Storyshots Molecules | FlexTable Big Table 1`] = `
-.c0 {
+.c1 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -13,7 +13,7 @@ exports[`Storyshots Molecules | FlexTable Big Table 1`] = `
   align-items: center;
 }
 
-.c2 {
+.c4 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -27,7 +27,7 @@ exports[`Storyshots Molecules | FlexTable Big Table 1`] = `
   flex: 1;
 }
 
-.c6 {
+.c8 {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -42,7 +42,7 @@ exports[`Storyshots Molecules | FlexTable Big Table 1`] = `
   vertical-align: middle;
 }
 
-.c4 {
+.c6 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #6E6E69;
   margin: 0;
@@ -51,16 +51,7 @@ exports[`Storyshots Molecules | FlexTable Big Table 1`] = `
   line-height: 1.3333333333333333;
 }
 
-.c1 {
-  border-bottom: 1px solid #282823;
-  padding-right: 4px;
-  padding-left: 2px;
-  border-left: 2px solid transparent;
-  padding-top: 4px;
-  padding-bottom: 4px;
-}
-
-.c8 {
+.c2 {
   border-bottom: 1px solid #EBEBE8;
   padding-right: 4px;
   padding-left: 2px;
@@ -69,53 +60,74 @@ exports[`Storyshots Molecules | FlexTable Big Table 1`] = `
   padding-bottom: 4px;
 }
 
-.c8:hover {
+.c10 {
+  border-bottom: 1px solid #EBEBE8;
+  padding-right: 4px;
+  padding-left: 2px;
+  border-left: 2px solid transparent;
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+
+.c10:hover {
   background: #F5F5F5;
 }
 
-.c5 {
+.c3 {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  background-color: #FFFFFF;
+}
+
+.c7 {
   display: inline-block;
   word-break: break-word;
 }
 
-.c7 {
+.c9 {
   margin-left: 4px;
 }
 
-.c3 {
+.c5 {
   -webkit-text-decoration: none;
   text-decoration: none;
   color: inherit;
   width: 100%;
 }
 
+.c0 {
+  position: relative;
+}
+
 <div
+  className="c0"
   role="table"
 >
   <div
-    className="c0 c1"
+    className="c1 c2 c3"
     role="row"
   >
     <div
       aria-sort="none"
-      className="c2"
+      className="c4"
       role="columnheader"
     >
       <a
-        className="c3"
+        className="c5"
         href="#"
         onClick={[Function]}
         role="button"
       >
         <span
-          className="c4 c5"
+          className="c6 c7"
         >
           Header 
           1
         </span>
         <svg
           aria-hidden="true"
-          className="c6 c7"
+          className="c8 c9"
           focusable="false"
           preserveAspectRatio="xMidYMid meet"
           role="presentation"
@@ -129,24 +141,24 @@ exports[`Storyshots Molecules | FlexTable Big Table 1`] = `
     </div>
     <div
       aria-sort="none"
-      className="c2"
+      className="c4"
       role="columnheader"
     >
       <a
-        className="c3"
+        className="c5"
         href="#"
         onClick={[Function]}
         role="button"
       >
         <span
-          className="c4 c5"
+          className="c6 c7"
         >
           Header 
           2
         </span>
         <svg
           aria-hidden="true"
-          className="c6 c7"
+          className="c8 c9"
           focusable="false"
           preserveAspectRatio="xMidYMid meet"
           role="presentation"
@@ -160,24 +172,24 @@ exports[`Storyshots Molecules | FlexTable Big Table 1`] = `
     </div>
     <div
       aria-sort="none"
-      className="c2"
+      className="c4"
       role="columnheader"
     >
       <a
-        className="c3"
+        className="c5"
         href="#"
         onClick={[Function]}
         role="button"
       >
         <span
-          className="c4 c5"
+          className="c6 c7"
         >
           Header 
           3
         </span>
         <svg
           aria-hidden="true"
-          className="c6 c7"
+          className="c8 c9"
           focusable="false"
           preserveAspectRatio="xMidYMid meet"
           role="presentation"
@@ -191,24 +203,24 @@ exports[`Storyshots Molecules | FlexTable Big Table 1`] = `
     </div>
     <div
       aria-sort="none"
-      className="c2"
+      className="c4"
       role="columnheader"
     >
       <a
-        className="c3"
+        className="c5"
         href="#"
         onClick={[Function]}
         role="button"
       >
         <span
-          className="c4 c5"
+          className="c6 c7"
         >
           Header 
           4
         </span>
         <svg
           aria-hidden="true"
-          className="c6 c7"
+          className="c8 c9"
           focusable="false"
           preserveAspectRatio="xMidYMid meet"
           role="presentation"
@@ -222,24 +234,24 @@ exports[`Storyshots Molecules | FlexTable Big Table 1`] = `
     </div>
     <div
       aria-sort="none"
-      className="c2"
+      className="c4"
       role="columnheader"
     >
       <a
-        className="c3"
+        className="c5"
         href="#"
         onClick={[Function]}
         role="button"
       >
         <span
-          className="c4 c5"
+          className="c6 c7"
         >
           Header 
           5
         </span>
         <svg
           aria-hidden="true"
-          className="c6 c7"
+          className="c8 c9"
           focusable="false"
           preserveAspectRatio="xMidYMid meet"
           role="presentation"
@@ -253,24 +265,24 @@ exports[`Storyshots Molecules | FlexTable Big Table 1`] = `
     </div>
     <div
       aria-sort="none"
-      className="c2"
+      className="c4"
       role="columnheader"
     >
       <a
-        className="c3"
+        className="c5"
         href="#"
         onClick={[Function]}
         role="button"
       >
         <span
-          className="c4 c5"
+          className="c6 c7"
         >
           Header 
           6
         </span>
         <svg
           aria-hidden="true"
-          className="c6 c7"
+          className="c8 c9"
           focusable="false"
           preserveAspectRatio="xMidYMid meet"
           role="presentation"
@@ -284,24 +296,24 @@ exports[`Storyshots Molecules | FlexTable Big Table 1`] = `
     </div>
     <div
       aria-sort="none"
-      className="c2"
+      className="c4"
       role="columnheader"
     >
       <a
-        className="c3"
+        className="c5"
         href="#"
         onClick={[Function]}
         role="button"
       >
         <span
-          className="c4 c5"
+          className="c6 c7"
         >
           Header 
           7
         </span>
         <svg
           aria-hidden="true"
-          className="c6 c7"
+          className="c8 c9"
           focusable="false"
           preserveAspectRatio="xMidYMid meet"
           role="presentation"
@@ -315,24 +327,24 @@ exports[`Storyshots Molecules | FlexTable Big Table 1`] = `
     </div>
     <div
       aria-sort="none"
-      className="c2"
+      className="c4"
       role="columnheader"
     >
       <a
-        className="c3"
+        className="c5"
         href="#"
         onClick={[Function]}
         role="button"
       >
         <span
-          className="c4 c5"
+          className="c6 c7"
         >
           Header 
           8
         </span>
         <svg
           aria-hidden="true"
-          className="c6 c7"
+          className="c8 c9"
           focusable="false"
           preserveAspectRatio="xMidYMid meet"
           role="presentation"
@@ -346,24 +358,24 @@ exports[`Storyshots Molecules | FlexTable Big Table 1`] = `
     </div>
     <div
       aria-sort="none"
-      className="c2"
+      className="c4"
       role="columnheader"
     >
       <a
-        className="c3"
+        className="c5"
         href="#"
         onClick={[Function]}
         role="button"
       >
         <span
-          className="c4 c5"
+          className="c6 c7"
         >
           Header 
           9
         </span>
         <svg
           aria-hidden="true"
-          className="c6 c7"
+          className="c8 c9"
           focusable="false"
           preserveAspectRatio="xMidYMid meet"
           role="presentation"
@@ -377,24 +389,24 @@ exports[`Storyshots Molecules | FlexTable Big Table 1`] = `
     </div>
     <div
       aria-sort="none"
-      className="c2"
+      className="c4"
       role="columnheader"
     >
       <a
-        className="c3"
+        className="c5"
         href="#"
         onClick={[Function]}
         role="button"
       >
         <span
-          className="c4 c5"
+          className="c6 c7"
         >
           Header 
           10
         </span>
         <svg
           aria-hidden="true"
-          className="c6 c7"
+          className="c8 c9"
           focusable="false"
           preserveAspectRatio="xMidYMid meet"
           role="presentation"
@@ -408,2010 +420,2010 @@ exports[`Storyshots Molecules | FlexTable Big Table 1`] = `
     </div>
   </div>
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
   <div
-    className="c0 c8"
+    className="c1 c10"
     role="row"
   />
 </div>
 `;
 
 exports[`Storyshots Molecules | FlexTable Default Table 1`] = `
-.c0 {
+.c1 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -2421,259 +2433,9 @@ exports[`Storyshots Molecules | FlexTable Default Table 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-}
-
-.c2 {
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-wrap: nowrap;
-  -ms-flex-wrap: nowrap;
-  flex-wrap: nowrap;
-  -webkit-flex: 1;
-  -ms-flex: 1;
-  flex: 1;
-}
-
-.c3 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #6E6E69;
-  margin: 0;
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 1.3333333333333333;
-}
-
-.c1 {
-  border-bottom: 1px solid #282823;
-  padding-right: 4px;
-  padding-left: 2px;
-  border-left: 2px solid transparent;
-  padding-top: 4px;
-  padding-bottom: 4px;
-}
-
-.c5 {
-  border-bottom: 1px solid #EBEBE8;
-  padding-right: 4px;
-  padding-left: 2px;
-  border-left: 2px solid transparent;
-  padding-top: 4px;
-  padding-bottom: 4px;
-}
-
-.c5:hover {
-  background: #F5F5F5;
 }
 
 .c4 {
-  display: inline-block;
-  word-break: break-word;
-}
-
-<div
-  role="table"
->
-  <div
-    className="c0 c1"
-    role="row"
-  >
-    <div
-      className="c2"
-      role="columnheader"
-    >
-      <span
-        className="c3 c4"
-      >
-        Header 1
-      </span>
-    </div>
-    <div
-      className="c2"
-      role="columnheader"
-    >
-      <span
-        className="c3 c4"
-      >
-        Header 2
-      </span>
-    </div>
-    <div
-      className="c2"
-      role="columnheader"
-    >
-      <span
-        className="c3 c4"
-      >
-        Header 3
-      </span>
-    </div>
-  </div>
-  <div
-    className="c0 c5"
-    role="row"
-  />
-  <div
-    className="c0 c5"
-    role="row"
-  />
-  <div
-    className="c0 c5"
-    role="row"
-  />
-</div>
-`;
-
-exports[`Storyshots Molecules | FlexTable Default Table With Footer 1`] = `
-.c0 {
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.c2 {
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-wrap: nowrap;
-  -ms-flex-wrap: nowrap;
-  flex-wrap: nowrap;
-  -webkit-flex: 1;
-  -ms-flex: 1;
-  flex: 1;
-}
-
-.c3 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #6E6E69;
-  margin: 0;
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 1.3333333333333333;
-}
-
-.c1 {
-  border-bottom: 1px solid #282823;
-  padding-right: 4px;
-  padding-left: 2px;
-  border-left: 2px solid transparent;
-  padding-top: 4px;
-  padding-bottom: 4px;
-}
-
-.c5 {
-  border-bottom: 1px solid #EBEBE8;
-  padding-right: 4px;
-  padding-left: 2px;
-  border-left: 2px solid transparent;
-  padding-top: 4px;
-  padding-bottom: 4px;
-}
-
-.c5:hover {
-  background: #F5F5F5;
-}
-
-.c6 {
-  border-bottom: 1px solid #EBEBE8;
-  padding-right: 4px;
-  padding-left: 2px;
-  border-left: 2px solid transparent;
-  padding-top: 4px;
-  padding-bottom: 4px;
-}
-
-.c7 {
-  border-top: 1px solid #282823;
-  border-bottom: 0;
-}
-
-.c4 {
-  display: inline-block;
-  word-break: break-word;
-}
-
-<div
-  role="table"
->
-  <div
-    className="c0 c1"
-    role="row"
-  >
-    <div
-      className="c2"
-      role="columnheader"
-    >
-      <span
-        className="c3 c4"
-      >
-        Header 1
-      </span>
-    </div>
-    <div
-      className="c2"
-      role="columnheader"
-    >
-      <span
-        className="c3 c4"
-      >
-        Header 2
-      </span>
-    </div>
-    <div
-      className="c2"
-      role="columnheader"
-    >
-      <span
-        className="c3 c4"
-      >
-        Header 3
-      </span>
-    </div>
-  </div>
-  <div
-    className="c0 c5"
-    role="row"
-  />
-  <div
-    className="c0 c5"
-    role="row"
-  />
-  <div
-    className="c0 c5"
-    role="row"
-  />
-  <div
-    className="c0 c6 c7"
-    role="row"
-  />
-</div>
-`;
-
-exports[`Storyshots Molecules | FlexTable Default Table With Icon Column 1`] = `
-.c0 {
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.c2 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -2688,194 +2450,16 @@ exports[`Storyshots Molecules | FlexTable Default Table With Icon Column 1`] = `
 }
 
 .c5 {
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-wrap: nowrap;
-  -ms-flex-wrap: nowrap;
-  flex-wrap: nowrap;
-  -webkit-box-pack: end;
-  -webkit-justify-content: flex-end;
-  -ms-flex-pack: end;
-  justify-content: flex-end;
-  -webkit-flex: 0 20px;
-  -ms-flex: 0 20px;
-  flex: 0 20px;
-}
-
-.c3 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #6E6E69;
   margin: 0;
   font-weight: 400;
   font-size: 12px;
   line-height: 1.3333333333333333;
-}
-
-.c1 {
-  border-bottom: 1px solid #282823;
-  padding-right: 4px;
-  padding-left: 2px;
-  border-left: 2px solid transparent;
-  padding-top: 4px;
-  padding-bottom: 4px;
-}
-
-.c6 {
-  border-bottom: 1px solid #EBEBE8;
-  padding-right: 4px;
-  padding-left: 2px;
-  border-left: 2px solid transparent;
-  padding-top: 4px;
-  padding-bottom: 4px;
-}
-
-.c6:hover {
-  background: #F5F5F5;
-}
-
-.c4 {
-  display: inline-block;
-  word-break: break-word;
-}
-
-<div
-  role="table"
->
-  <div
-    className="c0 c1"
-    role="row"
-  >
-    <div
-      className="c2"
-      role="columnheader"
-    >
-      <span
-        className="c3 c4"
-      >
-        Header 1
-      </span>
-    </div>
-    <div
-      className="c2"
-      role="columnheader"
-    >
-      <span
-        className="c3 c4"
-      >
-        Header 2
-      </span>
-    </div>
-    <div
-      className="c2"
-      role="columnheader"
-    >
-      <span
-        className="c3 c4"
-      >
-        Header 3
-      </span>
-    </div>
-    <div
-      className="c5"
-      role="columnheader"
-    >
-      <span
-        className="c3 c4"
-      />
-    </div>
-  </div>
-  <div
-    className="c0 c6"
-    role="row"
-  />
-  <div
-    className="c0 c6"
-    role="row"
-  />
-  <div
-    className="c0 c6"
-    role="row"
-  />
-</div>
-`;
-
-exports[`Storyshots Molecules | FlexTable Different Alignments Table 1`] = `
-.c0 {
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
 }
 
 .c2 {
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-wrap: nowrap;
-  -ms-flex-wrap: nowrap;
-  flex-wrap: nowrap;
-  -webkit-flex: 1;
-  -ms-flex: 1;
-  flex: 1;
-}
-
-.c5 {
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-wrap: nowrap;
-  -ms-flex-wrap: nowrap;
-  flex-wrap: nowrap;
-  -webkit-box-pack: end;
-  -webkit-justify-content: flex-end;
-  -ms-flex-pack: end;
-  justify-content: flex-end;
-  -webkit-flex: 1;
-  -ms-flex: 1;
-  flex: 1;
-}
-
-.c6 {
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-wrap: nowrap;
-  -ms-flex-wrap: nowrap;
-  flex-wrap: nowrap;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-flex: 1;
-  -ms-flex: 1;
-  flex: 1;
-}
-
-.c3 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #6E6E69;
-  margin: 0;
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 1.3333333333333333;
-}
-
-.c1 {
-  border-bottom: 1px solid #282823;
+  border-bottom: 1px solid #EBEBE8;
   padding-right: 4px;
   padding-left: 2px;
   border-left: 2px solid transparent;
@@ -2896,76 +2480,78 @@ exports[`Storyshots Molecules | FlexTable Different Alignments Table 1`] = `
   background: #F5F5F5;
 }
 
-.c4 {
+.c3 {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  background-color: #FFFFFF;
+}
+
+.c6 {
   display: inline-block;
   word-break: break-word;
 }
 
+.c0 {
+  position: relative;
+}
+
 <div
+  className="c0"
   role="table"
 >
   <div
-    className="c0 c1"
+    className="c1 c2 c3"
     role="row"
   >
     <div
-      className="c2"
+      className="c4"
       role="columnheader"
     >
       <span
-        className="c3 c4"
+        className="c5 c6"
       >
-        Left
+        Header 1
       </span>
     </div>
     <div
-      className="c5"
+      className="c4"
       role="columnheader"
     >
       <span
-        className="c3 c4"
+        className="c5 c6"
       >
-        Right
+        Header 2
       </span>
     </div>
     <div
-      className="c5"
+      className="c4"
       role="columnheader"
     >
       <span
-        className="c3 c4"
+        className="c5 c6"
       >
-        Right
-      </span>
-    </div>
-    <div
-      className="c6"
-      role="columnheader"
-    >
-      <span
-        className="c3 c4"
-      >
-        Center
+        Header 3
       </span>
     </div>
   </div>
   <div
-    className="c0 c7"
+    className="c1 c7"
     role="row"
   />
   <div
-    className="c0 c7"
+    className="c1 c7"
     role="row"
   />
   <div
-    className="c0 c7"
+    className="c1 c7"
     role="row"
   />
 </div>
 `;
 
-exports[`Storyshots Molecules | FlexTable Expandable Table 1`] = `
-.c0 {
+exports[`Storyshots Molecules | FlexTable Default Table With Footer 1`] = `
+.c1 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -2977,7 +2563,7 @@ exports[`Storyshots Molecules | FlexTable Expandable Table 1`] = `
   align-items: center;
 }
 
-.c2 {
+.c4 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -2992,6 +2578,143 @@ exports[`Storyshots Molecules | FlexTable Expandable Table 1`] = `
 }
 
 .c5 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #6E6E69;
+  margin: 0;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.3333333333333333;
+}
+
+.c2 {
+  border-bottom: 1px solid #EBEBE8;
+  padding-right: 4px;
+  padding-left: 2px;
+  border-left: 2px solid transparent;
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+
+.c7 {
+  border-bottom: 1px solid #EBEBE8;
+  padding-right: 4px;
+  padding-left: 2px;
+  border-left: 2px solid transparent;
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+
+.c7:hover {
+  background: #F5F5F5;
+}
+
+.c3 {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  background-color: #FFFFFF;
+}
+
+.c8 {
+  border-top: 1px solid #282823;
+  border-bottom: 0;
+}
+
+.c6 {
+  display: inline-block;
+  word-break: break-word;
+}
+
+.c0 {
+  position: relative;
+}
+
+<div
+  className="c0"
+  role="table"
+>
+  <div
+    className="c1 c2 c3"
+    role="row"
+  >
+    <div
+      className="c4"
+      role="columnheader"
+    >
+      <span
+        className="c5 c6"
+      >
+        Header 1
+      </span>
+    </div>
+    <div
+      className="c4"
+      role="columnheader"
+    >
+      <span
+        className="c5 c6"
+      >
+        Header 2
+      </span>
+    </div>
+    <div
+      className="c4"
+      role="columnheader"
+    >
+      <span
+        className="c5 c6"
+      >
+        Header 3
+      </span>
+    </div>
+  </div>
+  <div
+    className="c1 c7"
+    role="row"
+  />
+  <div
+    className="c1 c7"
+    role="row"
+  />
+  <div
+    className="c1 c7"
+    role="row"
+  />
+  <div
+    className="c1 c2 c8"
+    role="row"
+  />
+</div>
+`;
+
+exports[`Storyshots Molecules | FlexTable Default Table With Icon Column 1`] = `
+.c1 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c4 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+
+.c7 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -3009,7 +2732,7 @@ exports[`Storyshots Molecules | FlexTable Expandable Table 1`] = `
   flex: 0 20px;
 }
 
-.c3 {
+.c5 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #6E6E69;
   margin: 0;
@@ -3018,16 +2741,7 @@ exports[`Storyshots Molecules | FlexTable Expandable Table 1`] = `
   line-height: 1.3333333333333333;
 }
 
-.c1 {
-  border-bottom: 1px solid #282823;
-  padding-right: 4px;
-  padding-left: 2px;
-  border-left: 2px solid transparent;
-  padding-top: 4px;
-  padding-bottom: 4px;
-}
-
-.c6 {
+.c2 {
   border-bottom: 1px solid #EBEBE8;
   padding-right: 4px;
   padding-left: 2px;
@@ -3036,82 +2750,99 @@ exports[`Storyshots Molecules | FlexTable Expandable Table 1`] = `
   padding-bottom: 4px;
 }
 
-.c6:hover {
+.c8 {
+  border-bottom: 1px solid #EBEBE8;
+  padding-right: 4px;
+  padding-left: 2px;
+  border-left: 2px solid transparent;
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+
+.c8:hover {
   background: #F5F5F5;
 }
 
-.c4 {
+.c3 {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  background-color: #FFFFFF;
+}
+
+.c6 {
   display: inline-block;
   word-break: break-word;
 }
 
+.c0 {
+  position: relative;
+}
+
 <div
+  className="c0"
   role="table"
 >
   <div
-    className="c0 c1"
+    className="c1 c2 c3"
     role="row"
   >
     <div
-      className="c2"
+      className="c4"
       role="columnheader"
     >
       <span
-        className="c3 c4"
+        className="c5 c6"
       >
         Header 1
       </span>
     </div>
     <div
-      className="c2"
+      className="c4"
       role="columnheader"
     >
       <span
-        className="c3 c4"
+        className="c5 c6"
       >
         Header 2
       </span>
     </div>
     <div
-      className="c2"
+      className="c4"
       role="columnheader"
     >
       <span
-        className="c3 c4"
+        className="c5 c6"
       >
         Header 3
       </span>
     </div>
     <div
-      className="c5"
+      className="c7"
       role="columnheader"
     >
       <span
-        className="c3 c4"
+        className="c5 c6"
       />
     </div>
   </div>
   <div
-    className="c0 c6"
+    className="c1 c8"
     role="row"
   />
   <div
-    className="c0 c6"
+    className="c1 c8"
     role="row"
   />
   <div
-    className="c0 c6"
-    role="row"
-  />
-  <div
-    className="c0 c6"
+    className="c1 c8"
     role="row"
   />
 </div>
 `;
 
-exports[`Storyshots Molecules | FlexTable Sortable Header Controlled 1`] = `
-.c0 {
+exports[`Storyshots Molecules | FlexTable Different Alignments Table 1`] = `
+.c1 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -3123,7 +2854,7 @@ exports[`Storyshots Molecules | FlexTable Sortable Header Controlled 1`] = `
   align-items: center;
 }
 
-.c2 {
+.c4 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -3137,7 +2868,339 @@ exports[`Storyshots Molecules | FlexTable Sortable Header Controlled 1`] = `
   flex: 1;
 }
 
+.c7 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+
+.c8 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+
+.c5 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #6E6E69;
+  margin: 0;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.3333333333333333;
+}
+
+.c2 {
+  border-bottom: 1px solid #EBEBE8;
+  padding-right: 4px;
+  padding-left: 2px;
+  border-left: 2px solid transparent;
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+
+.c9 {
+  border-bottom: 1px solid #EBEBE8;
+  padding-right: 4px;
+  padding-left: 2px;
+  border-left: 2px solid transparent;
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+
+.c9:hover {
+  background: #F5F5F5;
+}
+
+.c3 {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  background-color: #FFFFFF;
+}
+
 .c6 {
+  display: inline-block;
+  word-break: break-word;
+}
+
+.c0 {
+  position: relative;
+}
+
+<div
+  className="c0"
+  role="table"
+>
+  <div
+    className="c1 c2 c3"
+    role="row"
+  >
+    <div
+      className="c4"
+      role="columnheader"
+    >
+      <span
+        className="c5 c6"
+      >
+        Left
+      </span>
+    </div>
+    <div
+      className="c7"
+      role="columnheader"
+    >
+      <span
+        className="c5 c6"
+      >
+        Right
+      </span>
+    </div>
+    <div
+      className="c7"
+      role="columnheader"
+    >
+      <span
+        className="c5 c6"
+      >
+        Right
+      </span>
+    </div>
+    <div
+      className="c8"
+      role="columnheader"
+    >
+      <span
+        className="c5 c6"
+      >
+        Center
+      </span>
+    </div>
+  </div>
+  <div
+    className="c1 c9"
+    role="row"
+  />
+  <div
+    className="c1 c9"
+    role="row"
+  />
+  <div
+    className="c1 c9"
+    role="row"
+  />
+</div>
+`;
+
+exports[`Storyshots Molecules | FlexTable Expandable Table 1`] = `
+.c1 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c4 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+
+.c7 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  -webkit-flex: 0 20px;
+  -ms-flex: 0 20px;
+  flex: 0 20px;
+}
+
+.c5 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #6E6E69;
+  margin: 0;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.3333333333333333;
+}
+
+.c2 {
+  border-bottom: 1px solid #EBEBE8;
+  padding-right: 4px;
+  padding-left: 2px;
+  border-left: 2px solid transparent;
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+
+.c8 {
+  border-bottom: 1px solid #EBEBE8;
+  padding-right: 4px;
+  padding-left: 2px;
+  border-left: 2px solid transparent;
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+
+.c8:hover {
+  background: #F5F5F5;
+}
+
+.c3 {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  background-color: #FFFFFF;
+}
+
+.c6 {
+  display: inline-block;
+  word-break: break-word;
+}
+
+.c0 {
+  position: relative;
+}
+
+<div
+  className="c0"
+  role="table"
+>
+  <div
+    className="c1 c2 c3"
+    role="row"
+  >
+    <div
+      className="c4"
+      role="columnheader"
+    >
+      <span
+        className="c5 c6"
+      >
+        Header 1
+      </span>
+    </div>
+    <div
+      className="c4"
+      role="columnheader"
+    >
+      <span
+        className="c5 c6"
+      >
+        Header 2
+      </span>
+    </div>
+    <div
+      className="c4"
+      role="columnheader"
+    >
+      <span
+        className="c5 c6"
+      >
+        Header 3
+      </span>
+    </div>
+    <div
+      className="c7"
+      role="columnheader"
+    >
+      <span
+        className="c5 c6"
+      />
+    </div>
+  </div>
+  <div
+    className="c1 c8"
+    role="row"
+  />
+  <div
+    className="c1 c8"
+    role="row"
+  />
+  <div
+    className="c1 c8"
+    role="row"
+  />
+  <div
+    className="c1 c8"
+    role="row"
+  />
+</div>
+`;
+
+exports[`Storyshots Molecules | FlexTable Sortable Header Controlled 1`] = `
+.c1 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c4 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+
+.c8 {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -3152,7 +3215,7 @@ exports[`Storyshots Molecules | FlexTable Sortable Header Controlled 1`] = `
   vertical-align: middle;
 }
 
-.c4 {
+.c6 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #6E6E69;
   margin: 0;
@@ -3161,8 +3224,8 @@ exports[`Storyshots Molecules | FlexTable Sortable Header Controlled 1`] = `
   line-height: 1.3333333333333333;
 }
 
-.c1 {
-  border-bottom: 1px solid #282823;
+.c2 {
+  border-bottom: 1px solid #EBEBE8;
   padding-right: 4px;
   padding-left: 2px;
   border-left: 2px solid transparent;
@@ -3170,48 +3233,60 @@ exports[`Storyshots Molecules | FlexTable Sortable Header Controlled 1`] = `
   padding-bottom: 4px;
 }
 
-.c5 {
+.c3 {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  background-color: #FFFFFF;
+}
+
+.c7 {
   display: inline-block;
   word-break: break-word;
 }
 
-.c7 {
+.c9 {
   margin-left: 4px;
 }
 
-.c3 {
+.c5 {
   -webkit-text-decoration: none;
   text-decoration: none;
   color: inherit;
   width: 100%;
 }
 
+.c0 {
+  position: relative;
+}
+
 <div
+  className="c0"
   role="table"
 >
   <div
-    className="c0 c1"
+    className="c1 c2 c3"
     role="row"
   >
     <div
       aria-sort="none"
-      className="c2"
+      className="c4"
       role="columnheader"
     >
       <a
-        className="c3"
+        className="c5"
         href="#"
         onClick={[Function]}
         role="button"
       >
         <span
-          className="c4 c5"
+          className="c6 c7"
         >
           Controlled1
         </span>
         <svg
           aria-hidden="true"
-          className="c6 c7"
+          className="c8 c9"
           focusable="false"
           preserveAspectRatio="xMidYMid meet"
           role="presentation"
@@ -3225,23 +3300,23 @@ exports[`Storyshots Molecules | FlexTable Sortable Header Controlled 1`] = `
     </div>
     <div
       aria-sort="none"
-      className="c2"
+      className="c4"
       role="columnheader"
     >
       <a
-        className="c3"
+        className="c5"
         href="#"
         onClick={[Function]}
         role="button"
       >
         <span
-          className="c4 c5"
+          className="c6 c7"
         >
           Controlled2
         </span>
         <svg
           aria-hidden="true"
-          className="c6 c7"
+          className="c8 c9"
           focusable="false"
           preserveAspectRatio="xMidYMid meet"
           role="presentation"
@@ -3254,34 +3329,34 @@ exports[`Storyshots Molecules | FlexTable Sortable Header Controlled 1`] = `
       </a>
     </div>
     <div
-      className="c2"
+      className="c4"
       role="columnheader"
     >
       <span
-        className="c4 c5"
+        className="c6 c7"
       >
         Not sortable
       </span>
     </div>
     <div
       aria-sort="none"
-      className="c2"
+      className="c4"
       role="columnheader"
     >
       <a
-        className="c3"
+        className="c5"
         href="#"
         onClick={[Function]}
         role="button"
       >
         <span
-          className="c4 c5"
+          className="c6 c7"
         >
           Controlled3
         </span>
         <svg
           aria-hidden="true"
-          className="c6 c7"
+          className="c8 c9"
           focusable="false"
           preserveAspectRatio="xMidYMid meet"
           role="presentation"
@@ -3298,7 +3373,7 @@ exports[`Storyshots Molecules | FlexTable Sortable Header Controlled 1`] = `
 `;
 
 exports[`Storyshots Molecules | FlexTable Sortable Header Only Ascending Descending 1`] = `
-.c0 {
+.c1 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -3310,7 +3385,7 @@ exports[`Storyshots Molecules | FlexTable Sortable Header Only Ascending Descend
   align-items: center;
 }
 
-.c2 {
+.c4 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -3324,7 +3399,7 @@ exports[`Storyshots Molecules | FlexTable Sortable Header Only Ascending Descend
   flex: 1;
 }
 
-.c6 {
+.c8 {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -3339,7 +3414,7 @@ exports[`Storyshots Molecules | FlexTable Sortable Header Only Ascending Descend
   vertical-align: middle;
 }
 
-.c10 {
+.c12 {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -3354,13 +3429,13 @@ exports[`Storyshots Molecules | FlexTable Sortable Header Only Ascending Descend
   vertical-align: middle;
 }
 
-.c7 {
+.c9 {
   -webkit-transform: rotate(0deg);
   -ms-transform: rotate(0deg);
   transform: rotate(0deg);
 }
 
-.c4 {
+.c6 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
   margin: 0;
@@ -3369,7 +3444,7 @@ exports[`Storyshots Molecules | FlexTable Sortable Header Only Ascending Descend
   line-height: 1.3333333333333333;
 }
 
-.c9 {
+.c11 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #6E6E69;
   margin: 0;
@@ -3378,8 +3453,8 @@ exports[`Storyshots Molecules | FlexTable Sortable Header Only Ascending Descend
   line-height: 1.3333333333333333;
 }
 
-.c1 {
-  border-bottom: 1px solid #282823;
+.c2 {
+  border-bottom: 1px solid #EBEBE8;
   padding-right: 4px;
   padding-left: 2px;
   border-left: 2px solid transparent;
@@ -3387,52 +3462,64 @@ exports[`Storyshots Molecules | FlexTable Sortable Header Only Ascending Descend
   padding-bottom: 4px;
 }
 
-.c5 {
+.c3 {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  background-color: #FFFFFF;
+}
+
+.c7 {
   display: inline-block;
   word-break: break-word;
 }
 
-.c11 {
+.c13 {
   margin-left: 4px;
 }
 
-.c8 {
+.c10 {
   margin-left: 4px;
 }
 
-.c3 {
+.c5 {
   -webkit-text-decoration: none;
   text-decoration: none;
   color: inherit;
   width: 100%;
 }
 
+.c0 {
+  position: relative;
+}
+
 <div
+  className="c0"
   role="table"
 >
   <div
-    className="c0 c1"
+    className="c1 c2 c3"
     role="row"
   >
     <div
       aria-sort="ascending"
-      className="c2"
+      className="c4"
       role="columnheader"
     >
       <a
-        className="c3"
+        className="c5"
         href="#"
         onClick={[Function]}
         role="button"
       >
         <span
-          className="c4 c5"
+          className="c6 c7"
         >
           Controlled1
         </span>
         <svg
           aria-hidden="true"
-          className="c6 c7 c8"
+          className="c8 c9 c10"
           direction="ascending"
           focusable="false"
           preserveAspectRatio="xMidYMid meet"
@@ -3449,23 +3536,23 @@ exports[`Storyshots Molecules | FlexTable Sortable Header Only Ascending Descend
     </div>
     <div
       aria-sort="none"
-      className="c2"
+      className="c4"
       role="columnheader"
     >
       <a
-        className="c3"
+        className="c5"
         href="#"
         onClick={[Function]}
         role="button"
       >
         <span
-          className="c9 c5"
+          className="c11 c7"
         >
           Controlled2
         </span>
         <svg
           aria-hidden="true"
-          className="c10 c11"
+          className="c12 c13"
           focusable="false"
           preserveAspectRatio="xMidYMid meet"
           role="presentation"
@@ -3478,34 +3565,34 @@ exports[`Storyshots Molecules | FlexTable Sortable Header Only Ascending Descend
       </a>
     </div>
     <div
-      className="c2"
+      className="c4"
       role="columnheader"
     >
       <span
-        className="c9 c5"
+        className="c11 c7"
       >
         Not sortable
       </span>
     </div>
     <div
       aria-sort="none"
-      className="c2"
+      className="c4"
       role="columnheader"
     >
       <a
-        className="c3"
+        className="c5"
         href="#"
         onClick={[Function]}
         role="button"
       >
         <span
-          className="c9 c5"
+          className="c11 c7"
         >
           Controlled3
         </span>
         <svg
           aria-hidden="true"
-          className="c10 c11"
+          className="c12 c13"
           focusable="false"
           preserveAspectRatio="xMidYMid meet"
           role="presentation"
@@ -3522,7 +3609,7 @@ exports[`Storyshots Molecules | FlexTable Sortable Header Only Ascending Descend
 `;
 
 exports[`Storyshots Molecules | FlexTable Sortable Headers Uncontrolled 1`] = `
-.c0 {
+.c1 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -3534,7 +3621,7 @@ exports[`Storyshots Molecules | FlexTable Sortable Headers Uncontrolled 1`] = `
   align-items: center;
 }
 
-.c2 {
+.c4 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -3548,7 +3635,7 @@ exports[`Storyshots Molecules | FlexTable Sortable Headers Uncontrolled 1`] = `
   flex: 1;
 }
 
-.c6 {
+.c8 {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -3563,7 +3650,7 @@ exports[`Storyshots Molecules | FlexTable Sortable Headers Uncontrolled 1`] = `
   vertical-align: middle;
 }
 
-.c9 {
+.c11 {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -3578,13 +3665,13 @@ exports[`Storyshots Molecules | FlexTable Sortable Headers Uncontrolled 1`] = `
   vertical-align: middle;
 }
 
-.c10 {
+.c12 {
   -webkit-transform: rotate(180deg);
   -ms-transform: rotate(180deg);
   transform: rotate(180deg);
 }
 
-.c4 {
+.c6 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #6E6E69;
   margin: 0;
@@ -3593,7 +3680,7 @@ exports[`Storyshots Molecules | FlexTable Sortable Headers Uncontrolled 1`] = `
   line-height: 1.3333333333333333;
 }
 
-.c8 {
+.c10 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
   margin: 0;
@@ -3602,16 +3689,7 @@ exports[`Storyshots Molecules | FlexTable Sortable Headers Uncontrolled 1`] = `
   line-height: 1.3333333333333333;
 }
 
-.c1 {
-  border-bottom: 1px solid #282823;
-  padding-right: 4px;
-  padding-left: 2px;
-  border-left: 2px solid transparent;
-  padding-top: 4px;
-  padding-bottom: 4px;
-}
-
-.c12 {
+.c2 {
   border-bottom: 1px solid #EBEBE8;
   padding-right: 4px;
   padding-left: 2px;
@@ -3620,56 +3698,77 @@ exports[`Storyshots Molecules | FlexTable Sortable Headers Uncontrolled 1`] = `
   padding-bottom: 4px;
 }
 
-.c12:hover {
+.c14 {
+  border-bottom: 1px solid #EBEBE8;
+  padding-right: 4px;
+  padding-left: 2px;
+  border-left: 2px solid transparent;
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+
+.c14:hover {
   background: #F5F5F5;
 }
 
-.c5 {
+.c3 {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  background-color: #FFFFFF;
+}
+
+.c7 {
   display: inline-block;
   word-break: break-word;
 }
 
-.c7 {
+.c9 {
   margin-left: 4px;
 }
 
-.c11 {
+.c13 {
   margin-left: 4px;
 }
 
-.c3 {
+.c5 {
   -webkit-text-decoration: none;
   text-decoration: none;
   color: inherit;
   width: 100%;
 }
 
+.c0 {
+  position: relative;
+}
+
 <div
+  className="c0"
   role="table"
 >
   <div
-    className="c0 c1"
+    className="c1 c2 c3"
     role="row"
   >
     <div
       aria-sort="none"
-      className="c2"
+      className="c4"
       role="columnheader"
     >
       <a
-        className="c3"
+        className="c5"
         href="#"
         onClick={[Function]}
         role="button"
       >
         <span
-          className="c4 c5"
+          className="c6 c7"
         >
           Uncontrolled 1
         </span>
         <svg
           aria-hidden="true"
-          className="c6 c7"
+          className="c8 c9"
           focusable="false"
           preserveAspectRatio="xMidYMid meet"
           role="presentation"
@@ -3683,23 +3782,23 @@ exports[`Storyshots Molecules | FlexTable Sortable Headers Uncontrolled 1`] = `
     </div>
     <div
       aria-sort="none"
-      className="c2"
+      className="c4"
       role="columnheader"
     >
       <a
-        className="c3"
+        className="c5"
         href="#"
         onClick={[Function]}
         role="button"
       >
         <span
-          className="c4 c5"
+          className="c6 c7"
         >
           Uncontrolled 2
         </span>
         <svg
           aria-hidden="true"
-          className="c6 c7"
+          className="c8 c9"
           focusable="false"
           preserveAspectRatio="xMidYMid meet"
           role="presentation"
@@ -3713,23 +3812,23 @@ exports[`Storyshots Molecules | FlexTable Sortable Headers Uncontrolled 1`] = `
     </div>
     <div
       aria-sort="descending"
-      className="c2"
+      className="c4"
       role="columnheader"
     >
       <a
-        className="c3"
+        className="c5"
         href="#"
         onClick={[Function]}
         role="button"
       >
         <span
-          className="c8 c5"
+          className="c10 c7"
         >
           With initial sort order
         </span>
         <svg
           aria-hidden="true"
-          className="c9 c10 c11"
+          className="c11 c12 c13"
           direction="descending"
           focusable="false"
           preserveAspectRatio="xMidYMid meet"
@@ -3745,25 +3844,25 @@ exports[`Storyshots Molecules | FlexTable Sortable Headers Uncontrolled 1`] = `
       </a>
     </div>
     <div
-      className="c2"
+      className="c4"
       role="columnheader"
     >
       <span
-        className="c4 c5"
+        className="c6 c7"
       >
         Non sortable
       </span>
     </div>
   </div>
   <div
-    className="c0 c12"
+    className="c1 c14"
     role="row"
   />
 </div>
 `;
 
 exports[`Storyshots Molecules | FlexTable Table Header 1`] = `
-.c7 {
+.c9 {
   height: 12px;
   box-sizing: border-box;
   display: inline-block;
@@ -3774,7 +3873,7 @@ exports[`Storyshots Molecules | FlexTable Table Header 1`] = `
   overflow: hidden;
 }
 
-.c0 {
+.c1 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -3786,7 +3885,7 @@ exports[`Storyshots Molecules | FlexTable Table Header 1`] = `
   align-items: center;
 }
 
-.c2 {
+.c4 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -3800,7 +3899,7 @@ exports[`Storyshots Molecules | FlexTable Table Header 1`] = `
   flex: 1;
 }
 
-.c5 {
+.c7 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -3814,7 +3913,7 @@ exports[`Storyshots Molecules | FlexTable Table Header 1`] = `
   flex: 3;
 }
 
-.c8 {
+.c10 {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -3829,7 +3928,7 @@ exports[`Storyshots Molecules | FlexTable Table Header 1`] = `
   vertical-align: middle;
 }
 
-.c3 {
+.c5 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #6E6E69;
   margin: 0;
@@ -3838,7 +3937,7 @@ exports[`Storyshots Molecules | FlexTable Table Header 1`] = `
   line-height: 1.3333333333333333;
 }
 
-.c10 {
+.c12 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
   margin: 0;
@@ -3847,8 +3946,8 @@ exports[`Storyshots Molecules | FlexTable Table Header 1`] = `
   line-height: 1.3333333333333333;
 }
 
-.c1 {
-  border-bottom: 1px solid #282823;
+.c2 {
+  border-bottom: 1px solid #EBEBE8;
   padding-right: 4px;
   padding-left: 2px;
   border-left: 2px solid transparent;
@@ -3856,69 +3955,81 @@ exports[`Storyshots Molecules | FlexTable Table Header 1`] = `
   padding-bottom: 4px;
 }
 
-.c4 {
+.c3 {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  background-color: #FFFFFF;
+}
+
+.c6 {
   display: inline-block;
   word-break: break-word;
 }
 
-.c9 {
+.c11 {
   margin-left: 4px;
 }
 
-.c6 {
+.c8 {
   -webkit-text-decoration: none;
   text-decoration: none;
   color: inherit;
   width: 100%;
 }
 
+.c0 {
+  position: relative;
+}
+
 @media (min-width:760px) {
-  .c10 {
+  .c12 {
     font-size: 20px;
     line-height: 1.2;
   }
 }
 
 <div
+  className="c0"
   role="table"
 >
   <div
-    className="c0 c1"
+    className="c1 c2 c3"
     role="row"
   >
     <div
-      className="c2"
+      className="c4"
       role="columnheader"
     >
       <span
-        className="c3 c4"
+        className="c5 c6"
       >
         Table header 1 flex 1
       </span>
     </div>
     <div
-      className="c5"
+      className="c7"
       role="columnheader"
     >
       <span
-        className="c3 c4"
+        className="c5 c6"
       >
         Table header 2 flex 3
       </span>
     </div>
     <div
       aria-sort="none"
-      className="c2"
+      className="c4"
       role="columnheader"
     >
       <a
-        className="c6"
+        className="c8"
         href="#"
         onClick={[Function]}
         role="button"
       >
         <svg
-          className="c7"
+          className="c9"
           focusable="false"
           role="img"
           viewBox="0 0 640 480"
@@ -3957,13 +4068,13 @@ exports[`Storyshots Molecules | FlexTable Table Header 1`] = `
           </title>
         </svg>
         <span
-          className="c3 c4"
+          className="c5 c6"
         >
           Customised header
         </span>
         <svg
           aria-hidden="true"
-          className="c8 c9"
+          className="c10 c11"
           focusable="false"
           preserveAspectRatio="xMidYMid meet"
           role="presentation"
@@ -3976,21 +4087,21 @@ exports[`Storyshots Molecules | FlexTable Table Header 1`] = `
       </a>
     </div>
     <div
-      className="c2"
+      className="c4"
       role="columnheader"
     >
       <span
-        className="c3 c4"
+        className="c5 c6"
       >
         Table header 3 no flex
       </span>
     </div>
     <div
-      className="c2"
+      className="c4"
       role="columnheader"
     >
       <span
-        className="c10"
+        className="c12"
       >
         React component
       </span>
@@ -4000,7 +4111,7 @@ exports[`Storyshots Molecules | FlexTable Table Header 1`] = `
 `;
 
 exports[`Storyshots Molecules | FlexTable Table With Different Rows 1`] = `
-.c0 {
+.c1 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -4012,21 +4123,8 @@ exports[`Storyshots Molecules | FlexTable Table With Different Rows 1`] = `
   align-items: center;
 }
 
-.c1 {
-  border-bottom: 1px solid #00C8F5;
-  padding-right: 4px;
-  padding-left: 2px;
-  border-left: 2px solid transparent;
-  padding-top: 4px;
-  padding-bottom: 4px;
-}
-
-.c1:hover {
-  background: #F5F5F5;
-}
-
 .c2 {
-  border-bottom: 1px solid #EBEBE8;
+  border-bottom: 1px solid #00C8F5;
   padding-right: 4px;
   padding-left: 2px;
   border-left: 2px solid transparent;
@@ -4039,6 +4137,7 @@ exports[`Storyshots Molecules | FlexTable Table With Different Rows 1`] = `
 }
 
 .c3 {
+  border-bottom: 1px solid #EBEBE8;
   padding-right: 4px;
   padding-left: 2px;
   border-left: 2px solid transparent;
@@ -4050,29 +4149,46 @@ exports[`Storyshots Molecules | FlexTable Table With Different Rows 1`] = `
   background: #F5F5F5;
 }
 
+.c4 {
+  padding-right: 4px;
+  padding-left: 2px;
+  border-left: 2px solid transparent;
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+
+.c4:hover {
+  background: #F5F5F5;
+}
+
+.c0 {
+  position: relative;
+}
+
 <div
+  className="c0"
   role="table"
 >
   <div
-    className="c0 c1"
+    className="c1 c2"
     role="row"
   >
     Separator color set
   </div>
   <div
-    className="c0 c2"
+    className="c1 c3"
     role="row"
   >
     Default
   </div>
   <div
-    className="c0 c3"
+    className="c1 c4"
     role="row"
   >
     Separator hidden
   </div>
   <div
-    className="c0 c2"
+    className="c1 c3"
     role="row"
   >
     Default
@@ -4081,7 +4197,7 @@ exports[`Storyshots Molecules | FlexTable Table With Different Rows 1`] = `
 `;
 
 exports[`Storyshots Molecules | FlexTable Table With Non Higlightable Rows 1`] = `
-.c0 {
+.c1 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -4093,7 +4209,7 @@ exports[`Storyshots Molecules | FlexTable Table With Non Higlightable Rows 1`] =
   align-items: center;
 }
 
-.c2 {
+.c4 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -4107,7 +4223,7 @@ exports[`Storyshots Molecules | FlexTable Table With Non Higlightable Rows 1`] =
   flex: 1;
 }
 
-.c3 {
+.c5 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #6E6E69;
   margin: 0;
@@ -4116,16 +4232,7 @@ exports[`Storyshots Molecules | FlexTable Table With Non Higlightable Rows 1`] =
   line-height: 1.3333333333333333;
 }
 
-.c1 {
-  border-bottom: 1px solid #282823;
-  padding-right: 4px;
-  padding-left: 2px;
-  border-left: 2px solid transparent;
-  padding-top: 4px;
-  padding-bottom: 4px;
-}
-
-.c5 {
+.c2 {
   border-bottom: 1px solid #EBEBE8;
   padding-right: 4px;
   padding-left: 2px;
@@ -4134,79 +4241,91 @@ exports[`Storyshots Molecules | FlexTable Table With Non Higlightable Rows 1`] =
   padding-bottom: 4px;
 }
 
-.c5:hover {
+.c7 {
+  border-bottom: 1px solid #EBEBE8;
+  padding-right: 4px;
+  padding-left: 2px;
+  border-left: 2px solid transparent;
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+
+.c7:hover {
   background: #F5F5F5;
 }
 
-.c6 {
-  border-bottom: 1px solid #EBEBE8;
-  padding-right: 4px;
-  padding-left: 2px;
-  border-left: 2px solid transparent;
-  padding-top: 4px;
-  padding-bottom: 4px;
+.c3 {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  background-color: #FFFFFF;
 }
 
-.c4 {
+.c6 {
   display: inline-block;
   word-break: break-word;
 }
 
+.c0 {
+  position: relative;
+}
+
 <div
+  className="c0"
   role="table"
 >
   <div
-    className="c0 c1"
+    className="c1 c2 c3"
     role="row"
   >
     <div
-      className="c2"
+      className="c4"
       role="columnheader"
     >
       <span
-        className="c3 c4"
+        className="c5 c6"
       >
         Header 1
       </span>
     </div>
     <div
-      className="c2"
+      className="c4"
       role="columnheader"
     >
       <span
-        className="c3 c4"
+        className="c5 c6"
       >
         Header 2
       </span>
     </div>
     <div
-      className="c2"
+      className="c4"
       role="columnheader"
     >
       <span
-        className="c3 c4"
+        className="c5 c6"
       >
         Header 3
       </span>
     </div>
   </div>
   <div
-    className="c0 c5"
+    className="c1 c7"
     role="row"
   />
   <div
-    className="c0 c6"
+    className="c1 c2"
     role="row"
   />
   <div
-    className="c0 c5"
+    className="c1 c7"
     role="row"
   />
 </div>
 `;
 
 exports[`Storyshots Molecules | FlexTable Table Without Separators 1`] = `
-.c0 {
+.c1 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -4218,7 +4337,7 @@ exports[`Storyshots Molecules | FlexTable Table Without Separators 1`] = `
   align-items: center;
 }
 
-.c2 {
+.c4 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -4232,7 +4351,7 @@ exports[`Storyshots Molecules | FlexTable Table Without Separators 1`] = `
   flex: 1;
 }
 
-.c3 {
+.c5 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #6E6E69;
   margin: 0;
@@ -4241,8 +4360,8 @@ exports[`Storyshots Molecules | FlexTable Table Without Separators 1`] = `
   line-height: 1.3333333333333333;
 }
 
-.c1 {
-  border-bottom: 1px solid #282823;
+.c2 {
+  border-bottom: 1px solid #EBEBE8;
   padding-right: 4px;
   padding-left: 2px;
   border-left: 2px solid transparent;
@@ -4250,7 +4369,7 @@ exports[`Storyshots Molecules | FlexTable Table Without Separators 1`] = `
   padding-bottom: 4px;
 }
 
-.c5 {
+.c7 {
   padding-right: 4px;
   padding-left: 2px;
   border-left: 2px solid transparent;
@@ -4258,70 +4377,82 @@ exports[`Storyshots Molecules | FlexTable Table Without Separators 1`] = `
   padding-bottom: 4px;
 }
 
-.c5:hover {
+.c7:hover {
   background: #F5F5F5;
 }
 
-.c4 {
+.c3 {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  background-color: #FFFFFF;
+}
+
+.c6 {
   display: inline-block;
   word-break: break-word;
 }
 
+.c0 {
+  position: relative;
+}
+
 <div
+  className="c0"
   role="table"
 >
   <div
-    className="c0 c1"
+    className="c1 c2 c3"
     role="row"
   >
     <div
-      className="c2"
+      className="c4"
       role="columnheader"
     >
       <span
-        className="c3 c4"
+        className="c5 c6"
       >
         Header 1
       </span>
     </div>
     <div
-      className="c2"
+      className="c4"
       role="columnheader"
     >
       <span
-        className="c3 c4"
+        className="c5 c6"
       >
         Header 2
       </span>
     </div>
     <div
-      className="c2"
+      className="c4"
       role="columnheader"
     >
       <span
-        className="c3 c4"
+        className="c5 c6"
       >
         Header 3
       </span>
     </div>
   </div>
   <div
-    className="c0 c5"
+    className="c1 c7"
     role="row"
   />
   <div
-    className="c0 c5"
+    className="c1 c7"
     role="row"
   />
   <div
-    className="c0 c5"
+    className="c1 c7"
     role="row"
   />
 </div>
 `;
 
 exports[`Storyshots Molecules | FlexTable Tables With Different Densities 1`] = `
-.c3 {
+.c4 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -4333,7 +4464,7 @@ exports[`Storyshots Molecules | FlexTable Tables With Different Densities 1`] = 
   align-items: center;
 }
 
-.c5 {
+.c7 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -4356,7 +4487,7 @@ exports[`Storyshots Molecules | FlexTable Tables With Different Densities 1`] = 
   line-height: 1.3333333333333333;
 }
 
-.c6 {
+.c8 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #6E6E69;
   margin: 0;
@@ -4365,35 +4496,13 @@ exports[`Storyshots Molecules | FlexTable Tables With Different Densities 1`] = 
   line-height: 1.3333333333333333;
 }
 
-.c4 {
-  border-bottom: 1px solid #282823;
-  padding-right: 4px;
-  padding-left: 2px;
-  border-left: 2px solid transparent;
-  padding-top: 4px;
-  padding-bottom: 4px;
-}
-
-.c8 {
+.c5 {
   border-bottom: 1px solid #EBEBE8;
   padding-right: 4px;
   padding-left: 2px;
   border-left: 2px solid transparent;
   padding-top: 4px;
   padding-bottom: 4px;
-}
-
-.c8:hover {
-  background: #F5F5F5;
-}
-
-.c9 {
-  border-bottom: 1px solid #282823;
-  padding-right: 4px;
-  padding-left: 2px;
-  border-left: 2px solid transparent;
-  padding-top: 0px;
-  padding-bottom: 0px;
 }
 
 .c10 {
@@ -4401,8 +4510,8 @@ exports[`Storyshots Molecules | FlexTable Tables With Different Densities 1`] = 
   padding-right: 4px;
   padding-left: 2px;
   border-left: 2px solid transparent;
-  padding-top: 0px;
-  padding-bottom: 0px;
+  padding-top: 4px;
+  padding-bottom: 4px;
 }
 
 .c10:hover {
@@ -4410,15 +4519,28 @@ exports[`Storyshots Molecules | FlexTable Tables With Different Densities 1`] = 
 }
 
 .c11 {
-  border-bottom: 1px solid #282823;
+  border-bottom: 1px solid #EBEBE8;
   padding-right: 4px;
   padding-left: 2px;
   border-left: 2px solid transparent;
-  padding-top: 8px;
-  padding-bottom: 8px;
+  padding-top: 0px;
+  padding-bottom: 0px;
 }
 
 .c12 {
+  border-bottom: 1px solid #EBEBE8;
+  padding-right: 4px;
+  padding-left: 2px;
+  border-left: 2px solid transparent;
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+
+.c12:hover {
+  background: #F5F5F5;
+}
+
+.c13 {
   border-bottom: 1px solid #EBEBE8;
   padding-right: 4px;
   padding-left: 2px;
@@ -4427,20 +4549,40 @@ exports[`Storyshots Molecules | FlexTable Tables With Different Densities 1`] = 
   padding-bottom: 8px;
 }
 
-.c12:hover {
+.c14 {
+  border-bottom: 1px solid #EBEBE8;
+  padding-right: 4px;
+  padding-left: 2px;
+  border-left: 2px solid transparent;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+.c14:hover {
   background: #F5F5F5;
 }
 
-.c7 {
+.c6 {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  background-color: #FFFFFF;
+}
+
+.c9 {
   display: inline-block;
   word-break: break-word;
+}
+
+.c2 {
+  position: relative;
 }
 
 .c0 {
   background-color: #F5F5F5;
 }
 
-.c2 {
+.c3 {
   background-color: white;
   margin-bottom: 20px;
 }
@@ -4461,50 +4603,50 @@ exports[`Storyshots Molecules | FlexTable Tables With Different Densities 1`] = 
     Default (Medium)
   </span>
   <div
-    className="c2"
+    className="c2 c3"
     role="table"
   >
     <div
-      className="c3 c4"
+      className="c4 c5 c6"
       role="row"
     >
       <div
-        className="c5"
+        className="c7"
         role="columnheader"
       >
         <span
-          className="c6 c7"
+          className="c8 c9"
         >
           Header 1
         </span>
       </div>
       <div
-        className="c5"
+        className="c7"
         role="columnheader"
       >
         <span
-          className="c6 c7"
+          className="c8 c9"
         >
           Header 2
         </span>
       </div>
       <div
-        className="c5"
+        className="c7"
         role="columnheader"
       >
         <span
-          className="c6 c7"
+          className="c8 c9"
         >
           Header 3
         </span>
       </div>
     </div>
     <div
-      className="c3 c8"
+      className="c4 c10"
       role="row"
     />
     <div
-      className="c3 c8"
+      className="c4 c10"
       role="row"
     />
   </div>
@@ -4514,50 +4656,50 @@ exports[`Storyshots Molecules | FlexTable Tables With Different Densities 1`] = 
     Small
   </span>
   <div
-    className="c2"
+    className="c2 c3"
     role="table"
   >
     <div
-      className="c3 c9"
+      className="c4 c11 c6"
       role="row"
     >
       <div
-        className="c5"
+        className="c7"
         role="columnheader"
       >
         <span
-          className="c6 c7"
+          className="c8 c9"
         >
           Header 1
         </span>
       </div>
       <div
-        className="c5"
+        className="c7"
         role="columnheader"
       >
         <span
-          className="c6 c7"
+          className="c8 c9"
         >
           Header 2
         </span>
       </div>
       <div
-        className="c5"
+        className="c7"
         role="columnheader"
       >
         <span
-          className="c6 c7"
+          className="c8 c9"
         >
           Header 3
         </span>
       </div>
     </div>
     <div
-      className="c3 c10"
+      className="c4 c12"
       role="row"
     />
     <div
-      className="c3 c10"
+      className="c4 c12"
       role="row"
     />
   </div>
@@ -4567,50 +4709,50 @@ exports[`Storyshots Molecules | FlexTable Tables With Different Densities 1`] = 
     Medium
   </span>
   <div
-    className="c2"
+    className="c2 c3"
     role="table"
   >
     <div
-      className="c3 c4"
+      className="c4 c5 c6"
       role="row"
     >
       <div
-        className="c5"
+        className="c7"
         role="columnheader"
       >
         <span
-          className="c6 c7"
+          className="c8 c9"
         >
           Header 1
         </span>
       </div>
       <div
-        className="c5"
+        className="c7"
         role="columnheader"
       >
         <span
-          className="c6 c7"
+          className="c8 c9"
         >
           Header 2
         </span>
       </div>
       <div
-        className="c5"
+        className="c7"
         role="columnheader"
       >
         <span
-          className="c6 c7"
+          className="c8 c9"
         >
           Header 3
         </span>
       </div>
     </div>
     <div
-      className="c3 c8"
+      className="c4 c10"
       role="row"
     />
     <div
-      className="c3 c8"
+      className="c4 c10"
       role="row"
     />
   </div>
@@ -4620,50 +4762,50 @@ exports[`Storyshots Molecules | FlexTable Tables With Different Densities 1`] = 
     Large
   </span>
   <div
-    className="c2"
+    className="c2 c3"
     role="table"
   >
     <div
-      className="c3 c11"
+      className="c4 c13 c6"
       role="row"
     >
       <div
-        className="c5"
+        className="c7"
         role="columnheader"
       >
         <span
-          className="c6 c7"
+          className="c8 c9"
         >
           Header 1
         </span>
       </div>
       <div
-        className="c5"
+        className="c7"
         role="columnheader"
       >
         <span
-          className="c6 c7"
+          className="c8 c9"
         >
           Header 2
         </span>
       </div>
       <div
-        className="c5"
+        className="c7"
         role="columnheader"
       >
         <span
-          className="c6 c7"
+          className="c8 c9"
         >
           Header 3
         </span>
       </div>
     </div>
     <div
-      className="c3 c12"
+      className="c4 c14"
       role="row"
     />
     <div
-      className="c3 c12"
+      className="c4 c14"
       role="row"
     />
   </div>
@@ -4671,7 +4813,7 @@ exports[`Storyshots Molecules | FlexTable Tables With Different Densities 1`] = 
 `;
 
 exports[`Storyshots Molecules | FlexTable Truncated Cell Content 1`] = `
-.c0 {
+.c1 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -4683,7 +4825,7 @@ exports[`Storyshots Molecules | FlexTable Truncated Cell Content 1`] = `
   align-items: center;
 }
 
-.c2 {
+.c4 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -4697,7 +4839,7 @@ exports[`Storyshots Molecules | FlexTable Truncated Cell Content 1`] = `
   flex: 1;
 }
 
-.c5 {
+.c7 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -4711,7 +4853,7 @@ exports[`Storyshots Molecules | FlexTable Truncated Cell Content 1`] = `
   flex: 0 15%;
 }
 
-.c6 {
+.c8 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -4725,7 +4867,7 @@ exports[`Storyshots Molecules | FlexTable Truncated Cell Content 1`] = `
   flex: 0 100px;
 }
 
-.c3 {
+.c5 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #6E6E69;
   margin: 0;
@@ -4734,16 +4876,7 @@ exports[`Storyshots Molecules | FlexTable Truncated Cell Content 1`] = `
   line-height: 1.3333333333333333;
 }
 
-.c1 {
-  border-bottom: 1px solid #282823;
-  padding-right: 4px;
-  padding-left: 2px;
-  border-left: 2px solid transparent;
-  padding-top: 4px;
-  padding-bottom: 4px;
-}
-
-.c7 {
+.c2 {
   border-bottom: 1px solid #EBEBE8;
   padding-right: 4px;
   padding-left: 2px;
@@ -4752,73 +4885,94 @@ exports[`Storyshots Molecules | FlexTable Truncated Cell Content 1`] = `
   padding-bottom: 4px;
 }
 
-.c7:hover {
+.c9 {
+  border-bottom: 1px solid #EBEBE8;
+  padding-right: 4px;
+  padding-left: 2px;
+  border-left: 2px solid transparent;
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+
+.c9:hover {
   background: #F5F5F5;
 }
 
-.c4 {
+.c3 {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  background-color: #FFFFFF;
+}
+
+.c6 {
   display: inline-block;
   word-break: break-word;
 }
 
+.c0 {
+  position: relative;
+}
+
 <div
+  className="c0"
   role="table"
 >
   <div
-    className="c0 c1"
+    className="c1 c2 c3"
     role="row"
   >
     <div
-      className="c2"
+      className="c4"
       role="columnheader"
     >
       <span
-        className="c3 c4"
+        className="c5 c6"
       >
         Flex 1
       </span>
     </div>
     <div
-      className="c5"
+      className="c7"
       role="columnheader"
     >
       <span
-        className="c3 c4"
+        className="c5 c6"
       >
         Fifteen percent
       </span>
     </div>
     <div
-      className="c6"
+      className="c8"
       role="columnheader"
     >
       <span
-        className="c3 c4"
+        className="c5 c6"
       >
         Loooooooooooooong header set width
       </span>
     </div>
     <div
-      className="c2"
+      className="c4"
       role="columnheader"
     >
       <span
-        className="c3 c4"
+        className="c5 c6"
       >
         Default
       </span>
     </div>
   </div>
   <div
-    className="c0 c7"
+    className="c1 c9"
     role="row"
   />
   <div
-    className="c0 c7"
+    className="c1 c9"
     role="row"
   />
   <div
-    className="c0 c7"
+    className="c1 c9"
     role="row"
   />
 </div>
