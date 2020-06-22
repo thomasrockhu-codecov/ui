@@ -4,12 +4,6 @@ import { setIntlConfig, withIntl } from 'storybook-addon-intl';
 import { DocsPage } from '@storybook/addon-docs/blocks';
 import { ThemeDecorator, DocsWrapper } from './ThemeDecorator';
 // Load the locale data for all your defined locales
-import { addLocaleData } from 'react-intl';
-import enLocaleData from 'react-intl/locale-data/en';
-import svLocaleData from 'react-intl/locale-data/sv';
-import noLocaleData from 'react-intl/locale-data/no';
-import daLocaleData from 'react-intl/locale-data/da';
-import fiLocaleData from 'react-intl/locale-data/fi';
 
 addParameters({
   docs: {
@@ -18,11 +12,6 @@ addParameters({
   },
 });
 
-addLocaleData(enLocaleData);
-addLocaleData(svLocaleData);
-addLocaleData(noLocaleData);
-addLocaleData(daLocaleData);
-addLocaleData(fiLocaleData);
 // automatically import all files ending in *.stories.tsx
 const req = require.context('../docs', true, /.stories.mdx$/);
 const req2 = require.context('../src', true, /.stories.tsx$/);
