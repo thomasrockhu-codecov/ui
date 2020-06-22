@@ -1,3 +1,10 @@
+# [2.52.0](https://github.com/nordnet/ui/compare/v2.51.0...v2.52.0) (2020-06-22)
+
+
+### Features
+
+* spread link rest props ([796fca8](https://github.com/nordnet/ui/commit/796fca8))
+
 # [2.51.0](https://github.com/nordnet/ui/compare/v2.50.1...v2.51.0) (2020-06-22)
 
 
