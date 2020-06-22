@@ -33,7 +33,6 @@ export type RowComponent = React.FC<Props>;
 type HeaderProps = {
   hideSeparator?: boolean;
   separatorColor?: ColorFn;
-  sticky?: boolean;
 } & HtmlProps;
 
 export type HeaderRowComponent = React.FC<HeaderProps>;
