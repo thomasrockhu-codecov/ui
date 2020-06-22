@@ -5,9 +5,6 @@ export type FlexTableState = {
   stickyHeader: boolean;
 };
 
-export type Props = {
-  density: Density;
-  stickyHeader: boolean;
-};
+export type Props = {} & FlexTableState;
 
 export type FlexTableProviderComponent = React.FC<Props>;
