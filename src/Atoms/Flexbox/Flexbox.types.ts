@@ -46,6 +46,7 @@ export type ContainerProps = {
 
   /** a11y */
   role?: string;
+  title?: string;
 };
 
 export type ItemProps = {
