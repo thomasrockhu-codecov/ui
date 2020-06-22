@@ -58603,6 +58603,10 @@ exports[`Storyshots Molecules | FlexTable Expandable Table 1`] = `
 
 exports[`Storyshots Molecules | FlexTable Hide Columns On Mobiles Table 1`] = `
 .c0 {
+  padding-left: 4px;
+}
+
+.c2 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -58614,7 +58618,7 @@ exports[`Storyshots Molecules | FlexTable Hide Columns On Mobiles Table 1`] = `
   align-items: center;
 }
 
-.c2 {
+.c4 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -58628,7 +58632,7 @@ exports[`Storyshots Molecules | FlexTable Hide Columns On Mobiles Table 1`] = `
   flex: 1;
 }
 
-.c5 {
+.c7 {
   box-sizing: border-box;
   display: none;
   -webkit-flex-wrap: nowrap;
@@ -58640,7 +58644,16 @@ exports[`Storyshots Molecules | FlexTable Hide Columns On Mobiles Table 1`] = `
   display: none;
 }
 
-.c3 {
+.c1 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.3333333333333333;
+}
+
+.c5 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #6E6E69;
   margin: 0;
@@ -58649,7 +58662,7 @@ exports[`Storyshots Molecules | FlexTable Hide Columns On Mobiles Table 1`] = `
   line-height: 1.3333333333333333;
 }
 
-.c8 {
+.c10 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
   margin: 0;
@@ -58658,18 +58671,18 @@ exports[`Storyshots Molecules | FlexTable Hide Columns On Mobiles Table 1`] = `
   line-height: 1.3333333333333333;
 }
 
-.c9 {
+.c11 {
   display: inline-block;
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
 }
 
-.c7 {
+.c9 {
   overflow: hidden;
 }
 
-.c1 {
+.c3 {
   border-bottom: 1px solid #282823;
   padding-right: 4px;
   padding-left: 2px;
@@ -58678,7 +58691,7 @@ exports[`Storyshots Molecules | FlexTable Hide Columns On Mobiles Table 1`] = `
   padding-bottom: 4px;
 }
 
-.c6 {
+.c8 {
   border-bottom: 1px solid #EBEBE8;
   padding-right: 4px;
   padding-left: 2px;
@@ -58687,17 +58700,17 @@ exports[`Storyshots Molecules | FlexTable Hide Columns On Mobiles Table 1`] = `
   padding-bottom: 4px;
 }
 
-.c6:hover {
+.c8:hover {
   background: #F5F5F5;
 }
 
-.c4 {
+.c6 {
   display: inline-block;
   word-break: break-word;
 }
 
 @media (min-width:976px) {
-  .c5 {
+  .c7 {
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -58711,148 +58724,164 @@ exports[`Storyshots Molecules | FlexTable Hide Columns On Mobiles Table 1`] = `
   }
 }
 
+@media (min-width:760px) {
+  .c1 {
+    font-size: 20px;
+    line-height: 1.2;
+  }
+}
+
 <div
   role="table"
 >
+  <caption>
+    <div
+      className="c0"
+    >
+      <span
+        className="c1"
+      />
+    </div>
+  </caption>
   <div
-    className="c0 c1"
+    className="c2 c3"
     role="row"
   >
     <div
-      className="c2"
+      className="c4"
       role="columnheader"
     >
       <span
-        className="c3 c4"
+        className="c5 c6"
       >
         Header 1
       </span>
     </div>
     <div
-      className="c5"
+      className="c7"
       hidden={true}
       role="columnheader"
     >
       <span
-        className="c3 c4"
+        className="c5 c6"
       >
         Hidden column on mobile
       </span>
     </div>
     <div
-      className="c2"
+      className="c4"
       role="columnheader"
     >
       <span
-        className="c3 c4"
+        className="c5 c6"
       >
         Header 3
       </span>
     </div>
   </div>
   <div
-    className="c0 c6"
+    className="c2 c8"
     role="row"
   >
     <div
-      className="c2 c7"
+      className="c4 c9"
       role="cell"
     >
       <span
-        className="c8 c9"
+        className="c10 c11"
       >
         Cell 1-1
       </span>
     </div>
     <div
-      className="c5 c7"
+      className="c7 c9"
       hidden={true}
       role="cell"
     >
       <span
-        className="c8 c9"
+        className="c10 c11"
       >
         Hidden on mobile
       </span>
     </div>
     <div
-      className="c2 c7"
+      className="c4 c9"
       role="cell"
     >
       <span
-        className="c8 c9"
+        className="c10 c11"
       >
         Cell 1-3
       </span>
     </div>
   </div>
   <div
-    className="c0 c6"
+    className="c2 c8"
     role="row"
   >
     <div
-      className="c2 c7"
+      className="c4 c9"
       role="cell"
     >
       <span
-        className="c8 c9"
+        className="c10 c11"
       >
         Cell 2-1
       </span>
     </div>
     <div
-      className="c5 c7"
+      className="c7 c9"
       hidden={true}
       role="cell"
     >
       <span
-        className="c8 c9"
+        className="c10 c11"
       >
         Hidden on mobile
       </span>
     </div>
     <div
-      className="c2 c7"
+      className="c4 c9"
       role="cell"
     >
       <span
-        className="c8 c9"
+        className="c10 c11"
       >
         Cell 2-3
       </span>
     </div>
   </div>
   <div
-    className="c0 c6"
+    className="c2 c8"
     role="row"
   >
     <div
-      className="c2 c7"
+      className="c4 c9"
       role="cell"
     >
       <span
-        className="c8 c9"
+        className="c10 c11"
       >
         Cell 3-1
       </span>
     </div>
     <div
-      className="c5 c7"
+      className="c7 c9"
       hidden={true}
       role="cell"
     >
       <span
-        className="c8 c9"
+        className="c10 c11"
       >
         Hidden on mobile
       </span>
     </div>
     <div
-      className="c2 c7"
+      className="c4 c9"
       role="cell"
     >
       <span
-        className="c8 c9"
+        className="c10 c11"
       >
         Cell 3-3
       </span>
