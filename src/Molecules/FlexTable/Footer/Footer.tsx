@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import * as R from 'ramda';
 import { isElement, isFunction } from '../../../common/utils';
 import { Flexbox } from '../../..';
-import { useColumn } from '../shared/ColumnProvider';
+import { useColumnLayout } from '../shared/ColumnProvider';
 import { FooterComponent } from './Footer.types';
 import { TextWrapper } from './TextWrapper';
 
@@ -12,13 +12,13 @@ const StyledFlexbox = styled(Flexbox)`
 `;
 
 const Footer: FooterComponent = ({ children, className, fontSize, columnId }) => {
-  const [columnState] = useColumn(columnId);
+  const [columnLayout] = useColumnLayout(columnId);
 
-  if (!R.prop('flexProps', columnState)) {
+  if (!R.prop('flexProps', columnLayout)) {
     return null;
   }
   return (
-    <StyledFlexbox className={className} role="cell" {...columnState.flexProps}>
+    <StyledFlexbox className={className} role="cell" {...columnLayout.flexProps}>
       {isElement(children) && children}
       {isFunction(children)
         ? children({ fontSize, columnId })

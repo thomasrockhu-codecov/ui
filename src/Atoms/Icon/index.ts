@@ -82,6 +82,7 @@ import { Trash } from './components/Trash';
 import { Utilities } from './components/Utilities';
 import { WarningTriangle } from './components/WarningTriangle';
 import { ThinArrow } from './components/ThinArrow';
+import { ThinChevron } from './components/ThinChevron';
 import { SortArrow } from './components/SortArrow';
 
 export default {
@@ -169,5 +170,6 @@ export default {
   Utilities,
   WarningTriangle,
   ThinArrow,
+  ThinChevron,
   SortArrow,
 };

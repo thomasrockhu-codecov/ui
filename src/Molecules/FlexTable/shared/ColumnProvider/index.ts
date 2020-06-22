@@ -4,5 +4,5 @@ export {
   ACTION_SET_SORTING,
   ACTION_SET_INITIAL_SORTING,
 } from './ColumnProvider';
-export { useColumn } from './useColumn';
+export { useColumnData, useColumnLayout } from './useColumn';
 export { useFlexCellProps } from './useFlexCellProps';
