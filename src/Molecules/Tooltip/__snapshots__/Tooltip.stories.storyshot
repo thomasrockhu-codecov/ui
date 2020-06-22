@@ -117,6 +117,9 @@ exports[`Storyshots Molecules | Tooltip Integration: With Drawer and Modal 1`] =
   padding: 20px 20px 0 20px;
   margin-bottom: 8px;
   min-height: 20px;
+  -webkit-flex: 0 0 auto;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
 }
 
 .c7 {
