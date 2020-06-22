@@ -243,6 +243,12 @@ const VirtualizedBigTableRow = ({ data: items, index, style }: any) => (
   <VirtualizedTableRow key={items[index].rowId} data={items[index]} style={style} />
 );
 
+const FullHeightDiv = styled.div`
+  display: flex;
+  flex: 1 0;
+  height: 100vh;
+`;
+
 export const VirtualizedTable = () => {
   const ReactComponent = () => {
     const rowsLength = number('Number of rows', 500);
@@ -272,7 +278,7 @@ export const VirtualizedTable = () => {
     }, [tableData, sort]);
 
     return (
-      <div style={{ display: 'flex', flex: '1 1', height: '100vh', width: '100vw' }}>
+      <FullHeightDiv>
         <FlexTable>
           <FlexTable.HeaderRow>
             {[...Array(columnsLength)].map((_, index) => (
@@ -296,14 +302,14 @@ export const VirtualizedTable = () => {
                 itemData={sortedData}
                 itemCount={sortedData.length}
                 itemSize={25}
-                overscanCount={20}
+                overscanCount={10}
               >
                 {VirtualizedBigTableRow}
               </List>
             )}
           </AutoSizer>
         </FlexTable>
-      </div>
+      </FullHeightDiv>
     );
   };
   return <ReactComponent />;

@@ -56946,7 +56946,7 @@ exports[`Storyshots Molecules | FlexTable Truncated Cell Content 1`] = `
 `;
 
 exports[`Storyshots Molecules | FlexTable Virtualized Table 1`] = `
-.c0 {
+.c1 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -56958,7 +56958,7 @@ exports[`Storyshots Molecules | FlexTable Virtualized Table 1`] = `
   align-items: center;
 }
 
-.c2 {
+.c3 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -56972,7 +56972,7 @@ exports[`Storyshots Molecules | FlexTable Virtualized Table 1`] = `
   flex: 1;
 }
 
-.c6 {
+.c7 {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -56987,7 +56987,7 @@ exports[`Storyshots Molecules | FlexTable Virtualized Table 1`] = `
   vertical-align: middle;
 }
 
-.c4 {
+.c5 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #6E6E69;
   margin: 0;
@@ -56996,7 +56996,7 @@ exports[`Storyshots Molecules | FlexTable Virtualized Table 1`] = `
   line-height: 1.3333333333333333;
 }
 
-.c1 {
+.c2 {
   border-bottom: 1px solid #282823;
   padding-right: 4px;
   padding-left: 2px;
@@ -57005,59 +57005,63 @@ exports[`Storyshots Molecules | FlexTable Virtualized Table 1`] = `
   padding-bottom: 4px;
 }
 
-.c5 {
+.c6 {
   display: inline-block;
   word-break: break-word;
 }
 
-.c7 {
+.c8 {
   margin-left: 4px;
 }
 
-.c3 {
+.c4 {
   -webkit-text-decoration: none;
   text-decoration: none;
   color: inherit;
   width: 100%;
 }
 
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex: 1 0;
+  -ms-flex: 1 0;
+  flex: 1 0;
+  height: 100vh;
+}
+
 <div
-  style={
-    Object {
-      "display": "flex",
-      "flex": "1 1",
-      "height": "100vh",
-      "width": "100vw",
-    }
-  }
+  className="c0"
 >
   <div
     role="table"
   >
     <div
-      className="c0 c1"
+      className="c1 c2"
       role="row"
     >
       <div
         aria-sort="none"
-        className="c2"
+        className="c3"
         role="columnheader"
       >
         <a
-          className="c3"
+          className="c4"
           href="#"
           onClick={[Function]}
           role="button"
         >
           <span
-            className="c4 c5"
+            className="c5 c6"
           >
             Header 
             1
           </span>
           <svg
             aria-hidden="true"
-            className="c6 c7"
+            className="c7 c8"
             focusable="false"
             preserveAspectRatio="xMidYMid meet"
             role="presentation"
@@ -57071,24 +57075,24 @@ exports[`Storyshots Molecules | FlexTable Virtualized Table 1`] = `
       </div>
       <div
         aria-sort="none"
-        className="c2"
+        className="c3"
         role="columnheader"
       >
         <a
-          className="c3"
+          className="c4"
           href="#"
           onClick={[Function]}
           role="button"
         >
           <span
-            className="c4 c5"
+            className="c5 c6"
           >
             Header 
             2
           </span>
           <svg
             aria-hidden="true"
-            className="c6 c7"
+            className="c7 c8"
             focusable="false"
             preserveAspectRatio="xMidYMid meet"
             role="presentation"
@@ -57102,24 +57106,24 @@ exports[`Storyshots Molecules | FlexTable Virtualized Table 1`] = `
       </div>
       <div
         aria-sort="none"
-        className="c2"
+        className="c3"
         role="columnheader"
       >
         <a
-          className="c3"
+          className="c4"
           href="#"
           onClick={[Function]}
           role="button"
         >
           <span
-            className="c4 c5"
+            className="c5 c6"
           >
             Header 
             3
           </span>
           <svg
             aria-hidden="true"
-            className="c6 c7"
+            className="c7 c8"
             focusable="false"
             preserveAspectRatio="xMidYMid meet"
             role="presentation"
@@ -57133,24 +57137,24 @@ exports[`Storyshots Molecules | FlexTable Virtualized Table 1`] = `
       </div>
       <div
         aria-sort="none"
-        className="c2"
+        className="c3"
         role="columnheader"
       >
         <a
-          className="c3"
+          className="c4"
           href="#"
           onClick={[Function]}
           role="button"
         >
           <span
-            className="c4 c5"
+            className="c5 c6"
           >
             Header 
             4
           </span>
           <svg
             aria-hidden="true"
-            className="c6 c7"
+            className="c7 c8"
             focusable="false"
             preserveAspectRatio="xMidYMid meet"
             role="presentation"
@@ -57164,24 +57168,24 @@ exports[`Storyshots Molecules | FlexTable Virtualized Table 1`] = `
       </div>
       <div
         aria-sort="none"
-        className="c2"
+        className="c3"
         role="columnheader"
       >
         <a
-          className="c3"
+          className="c4"
           href="#"
           onClick={[Function]}
           role="button"
         >
           <span
-            className="c4 c5"
+            className="c5 c6"
           >
             Header 
             5
           </span>
           <svg
             aria-hidden="true"
-            className="c6 c7"
+            className="c7 c8"
             focusable="false"
             preserveAspectRatio="xMidYMid meet"
             role="presentation"
@@ -57195,24 +57199,24 @@ exports[`Storyshots Molecules | FlexTable Virtualized Table 1`] = `
       </div>
       <div
         aria-sort="none"
-        className="c2"
+        className="c3"
         role="columnheader"
       >
         <a
-          className="c3"
+          className="c4"
           href="#"
           onClick={[Function]}
           role="button"
         >
           <span
-            className="c4 c5"
+            className="c5 c6"
           >
             Header 
             6
           </span>
           <svg
             aria-hidden="true"
-            className="c6 c7"
+            className="c7 c8"
             focusable="false"
             preserveAspectRatio="xMidYMid meet"
             role="presentation"
@@ -57226,24 +57230,24 @@ exports[`Storyshots Molecules | FlexTable Virtualized Table 1`] = `
       </div>
       <div
         aria-sort="none"
-        className="c2"
+        className="c3"
         role="columnheader"
       >
         <a
-          className="c3"
+          className="c4"
           href="#"
           onClick={[Function]}
           role="button"
         >
           <span
-            className="c4 c5"
+            className="c5 c6"
           >
             Header 
             7
           </span>
           <svg
             aria-hidden="true"
-            className="c6 c7"
+            className="c7 c8"
             focusable="false"
             preserveAspectRatio="xMidYMid meet"
             role="presentation"
@@ -57257,24 +57261,24 @@ exports[`Storyshots Molecules | FlexTable Virtualized Table 1`] = `
       </div>
       <div
         aria-sort="none"
-        className="c2"
+        className="c3"
         role="columnheader"
       >
         <a
-          className="c3"
+          className="c4"
           href="#"
           onClick={[Function]}
           role="button"
         >
           <span
-            className="c4 c5"
+            className="c5 c6"
           >
             Header 
             8
           </span>
           <svg
             aria-hidden="true"
-            className="c6 c7"
+            className="c7 c8"
             focusable="false"
             preserveAspectRatio="xMidYMid meet"
             role="presentation"
@@ -57288,24 +57292,24 @@ exports[`Storyshots Molecules | FlexTable Virtualized Table 1`] = `
       </div>
       <div
         aria-sort="none"
-        className="c2"
+        className="c3"
         role="columnheader"
       >
         <a
-          className="c3"
+          className="c4"
           href="#"
           onClick={[Function]}
           role="button"
         >
           <span
-            className="c4 c5"
+            className="c5 c6"
           >
             Header 
             9
           </span>
           <svg
             aria-hidden="true"
-            className="c6 c7"
+            className="c7 c8"
             focusable="false"
             preserveAspectRatio="xMidYMid meet"
             role="presentation"
@@ -57319,24 +57323,24 @@ exports[`Storyshots Molecules | FlexTable Virtualized Table 1`] = `
       </div>
       <div
         aria-sort="none"
-        className="c2"
+        className="c3"
         role="columnheader"
       >
         <a
-          className="c3"
+          className="c4"
           href="#"
           onClick={[Function]}
           role="button"
         >
           <span
-            className="c4 c5"
+            className="c5 c6"
           >
             Header 
             10
           </span>
           <svg
             aria-hidden="true"
-            className="c6 c7"
+            className="c7 c8"
             focusable="false"
             preserveAspectRatio="xMidYMid meet"
             role="presentation"
