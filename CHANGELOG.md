@@ -1,3 +1,10 @@
+## [2.52.1](https://github.com/nordnet/ui/compare/v2.52.0...v2.52.1) (2020-06-22)
+
+
+### Bug Fixes
+
+* remove grow and shrink from title wrapper ([a97ed09](https://github.com/nordnet/ui/commit/a97ed09))
+
 # [2.52.0](https://github.com/nordnet/ui/compare/v2.51.0...v2.52.0) (2020-06-22)
 
 
