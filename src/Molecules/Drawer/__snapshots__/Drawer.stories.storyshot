@@ -114,6 +114,9 @@ exports[`Storyshots Molecules | Drawer Default 1`] = `
   padding: 20px 20px 0 20px;
   margin-bottom: 8px;
   min-height: 20px;
+  -webkit-flex: 0 0 auto;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
 }
 
 @media (min-width:760px) {
@@ -483,6 +486,9 @@ exports[`Storyshots Molecules | Drawer Integration: With FadedScroll 1`] = `
   padding: 20px 20px 0 20px;
   margin-bottom: 8px;
   min-height: 20px;
+  -webkit-flex: 0 0 auto;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
 }
 
 @media (min-width:760px) {
@@ -810,6 +816,9 @@ exports[`Storyshots Molecules | Drawer With a custom title 1`] = `
   padding: 20px 20px 0 20px;
   margin-bottom: 8px;
   min-height: 20px;
+  -webkit-flex: 0 0 auto;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
 }
 
 @media (min-width:760px) {
@@ -1066,6 +1075,9 @@ exports[`Storyshots Molecules | Drawer With no title 1`] = `
   padding: 20px 20px 0 20px;
   margin-bottom: 8px;
   min-height: 20px;
+  -webkit-flex: 0 0 auto;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
 }
 
 @media (min-width:760px) {
@@ -1303,6 +1315,9 @@ exports[`Storyshots Molecules | Drawer With ref story 1`] = `
   padding: 20px 20px 0 20px;
   margin-bottom: 8px;
   min-height: 20px;
+  -webkit-flex: 0 0 auto;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
 }
 
 @media (min-width:760px) {
