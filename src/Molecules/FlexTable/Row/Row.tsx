@@ -1,5 +1,6 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import styled from 'styled-components';
+import * as R from 'ramda';
 import { RowComponent, RowComponents } from './Row.types';
 import { Box, Flexbox, Button, Icon } from '../../../index';
 import { ColorFn } from '../../../common/Types/sharedTypes';
@@ -8,6 +9,7 @@ import { Density } from '../shared/shared.types';
 import { useFlexTable } from '../shared/FlexTableProvider';
 import { ExpandItems, ExpandItem } from './ExpandItems';
 import { ExpandCell } from '../Cell/ExpandCell';
+import { COLUMN_ID_EXPAND } from '../shared/constants';
 
 /* the cells are padded by row gutter 1 unit (4px) */
 const StyledRow = styled(Flexbox).withConfig({
@@ -55,11 +57,12 @@ export const ExpandButton: React.FC<{ expanded: boolean; onClick: () => void }> 
 
 const Row: RowComponent & RowComponents = ({
   className,
-  expanded = false,
+  expanded,
   hoverHighlight = true,
   hideSeparator = false,
   separatorColor = theme => theme.color.divider,
-  expandable = false,
+  includeExpand = false,
+  onExpandToggle,
   expandChildren,
   expandItems,
   children,
@@ -67,6 +70,13 @@ const Row: RowComponent & RowComponents = ({
 }) => {
   const { density } = useFlexTable();
   const [expand, setExpand] = useState(expanded || false);
+
+  useEffect(() => {
+    if (!R.isNil(expanded)) {
+      setExpand(expanded);
+    }
+  }, [expand, expanded]);
+
   return (
     <>
       <StyledRow
@@ -82,12 +92,11 @@ const Row: RowComponent & RowComponents = ({
         {...htmlProps}
       >
         {children}
-
-        {expandable && (
+        {includeExpand && (
           <ExpandCell
-            columnId="expand"
+            columnId={COLUMN_ID_EXPAND}
             expanded={expand}
-            onClick={() => setExpand(!expand)}
+            onClick={() => (onExpandToggle ? onExpandToggle(!expand) : setExpand(!expand))}
             disabled={!(expandChildren || expandItems)}
           />
         )}

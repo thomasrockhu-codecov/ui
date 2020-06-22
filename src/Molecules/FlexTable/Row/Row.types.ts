@@ -8,15 +8,30 @@ import { ColorFn } from '../../../common/Types/sharedTypes';
 
 type HtmlProps = {} & React.HTMLAttributes<HTMLDivElement>;
 
-type Props = {
-  hideSeparator?: boolean;
+interface Expand {
+  expanded?: boolean;
   expandChildren?: ReactNode;
   expandItems?: ExpandItems;
-  expandable?: boolean;
-  expanded?: boolean;
+}
+
+interface IncludeExpand extends Expand {
+  includeExpand?: true;
+  onExpandToggle?: (expanded: boolean) => void;
+}
+
+interface ExcludeExpand extends Expand {
+  includeExpand?: false;
+  onExpandToggle?: undefined;
+}
+
+type ExpandProps = IncludeExpand | ExcludeExpand;
+
+type Props = {
+  hideSeparator?: boolean;
   hoverHighlight?: boolean;
   separatorColor?: ColorFn;
-} & HtmlProps;
+} & ExpandProps &
+  HtmlProps;
 
 export type RowComponents = {
   ExpandItem: ExpandItemComponent;
@@ -25,7 +40,10 @@ export type RowComponents = {
 
 export type RowComponent = React.FC<Props>;
 
-type HeaderProps = Omit<Props, 'expandChildren' | 'expandItems' | 'expanded' | 'hoverHighlight'>;
+type HeaderProps = Omit<
+  Props,
+  'expandChildren' | 'expandItems' | 'expanded' | 'hoverHighlight' | 'includeExpand'
+>;
 
 export type HeaderRowComponent = React.FC<HeaderProps>;
 
