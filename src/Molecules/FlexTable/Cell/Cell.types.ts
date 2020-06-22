@@ -12,13 +12,15 @@ export type Props = {
   columnId: string;
 };
 
-export type CellComponent = React.FC<Props>;
-
 export type TextWrapperProps = {
   fontSize?: FontSize;
 };
 
 export type TextWrapperComponent = React.FC<TextWrapperProps>;
+
+export type CellComponents = { TextWrapper: TextWrapperComponent };
+
+export type CellComponent = React.FC<Props> & CellComponents;
 
 type ExpandCellProps = {
   disabled?: boolean;
