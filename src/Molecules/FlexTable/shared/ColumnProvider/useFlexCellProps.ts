@@ -23,6 +23,7 @@ export const useFlexCellProps = ({
   size,
   sm,
   wrap = 'nowrap',
+  hidden,
 }: Partial<FlexPropsType>): Partial<FlexPropsType> => {
   const sharedProps = useMemo(
     () =>
@@ -47,6 +48,7 @@ export const useFlexCellProps = ({
         size,
         sm,
         wrap,
+        hidden,
       }),
     [
       align,
@@ -69,6 +71,7 @@ export const useFlexCellProps = ({
       size,
       sm,
       wrap,
+      hidden,
     ],
   );
 
