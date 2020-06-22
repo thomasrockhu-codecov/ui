@@ -11,6 +11,7 @@ type HtmlProps = {} & React.HTMLAttributes<HTMLDivElement>;
 export type Props = {
   className?: string;
   density?: Density;
+  stickyHeader?: boolean;
 } & HtmlProps;
 
 export type FlexTableComponents = {

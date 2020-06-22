@@ -30,7 +30,11 @@ export type RowComponents = {
 
 export type RowComponent = React.FC<Props>;
 
-type HeaderProps = Omit<Props, 'expandChildren' | 'expandItems' | 'expanded' | 'hoverHighlight'>;
+type HeaderProps = {
+  hideSeparator?: boolean;
+  separatorColor?: ColorFn;
+  sticky?: boolean;
+} & HtmlProps;
 
 export type HeaderRowComponent = React.FC<HeaderProps>;
 

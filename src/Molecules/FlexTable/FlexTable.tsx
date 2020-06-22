@@ -11,10 +11,11 @@ import { ExpandCell } from './Cell/ExpandCell';
 const FlexTable: React.FC<Props> & FlexTableComponents = ({
   className,
   density = 'm',
+  stickyHeader = true,
   children,
   ...htmlProps
 }) => (
-  <FlexTableProvider density={density}>
+  <FlexTableProvider density={density} stickyHeader={stickyHeader}>
     <div className={className} role="table" {...htmlProps}>
       <ColumnProvider>{children}</ColumnProvider>
     </div>
