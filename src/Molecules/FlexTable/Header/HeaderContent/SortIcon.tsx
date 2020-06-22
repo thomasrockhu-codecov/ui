@@ -17,5 +17,5 @@ export const SortIcon: SortIconComponent = ({ sortOrder }) => {
     return <StyledIconChevronDown inline size={2} color={t => t.color.label} />;
   }
 
-  return <StyledIconSortArrow inline direction={sortOrder} size={2} color={t => t.color.text} />;
+  return <StyledIconSortArrow inline direction={sortOrder} size={3} color={t => t.color.text} />;
 };

@@ -8,7 +8,7 @@ const StyledButton = styled(Button)`
   }
 `;
 
-const SizedExpandButton: React.FC<{
+const SmallScreenExpandButton: React.FC<{
   expanded: boolean;
   disabled: boolean;
   onClick: () => void;
@@ -23,6 +23,21 @@ const SizedExpandButton: React.FC<{
   </StyledButton>
 );
 
+const LargeScreenExpandButton: React.FC<{
+  expanded: boolean;
+  disabled: boolean;
+  onClick: () => void;
+  size: number;
+}> = ({ expanded, disabled, onClick, size }) => (
+  <StyledButton variant="neutral" onClick={onClick} aria-expanded={expanded} disabled={disabled}>
+    <Icon.ThinChevron
+      direction={expanded ? 'up' : 'down'}
+      size={size}
+      fill={t => (disabled ? t.color.disabled : t.color.text)}
+    />
+  </StyledButton>
+);
+
 export const ExpandButton: React.FC<{
   expanded: boolean;
   onClick: () => void;
@@ -30,10 +45,10 @@ export const ExpandButton: React.FC<{
 }> = ({ expanded, disabled, onClick }) => (
   <>
     <Media query={t => t.media.lessThan(t.breakpoints.md)}>
-      <SizedExpandButton expanded={expanded} disabled={disabled} onClick={onClick} size={2} />
+      <SmallScreenExpandButton expanded={expanded} disabled={disabled} onClick={onClick} size={2} />
     </Media>
     <Media query={t => t.media.greaterThan(t.breakpoints.md)}>
-      <SizedExpandButton expanded={expanded} disabled={disabled} onClick={onClick} size={4} />
+      <LargeScreenExpandButton expanded={expanded} disabled={disabled} onClick={onClick} size={4} />
     </Media>
   </>
 );
