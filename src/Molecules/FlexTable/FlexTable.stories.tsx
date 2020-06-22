@@ -384,7 +384,7 @@ const expandedItemsGenerator = (renderComponent = false) =>
     const keyName = `${itemIndex + 1}`;
     const labelText = `Label ${keyName}`;
     const label = renderComponent ? <Typography>{labelText}</Typography> : labelText;
-    const valueText = Math.floor(10 ** (20 - itemIndex) * Math.random());
+    const valueText = Math.floor(10 ** (20 - Math.ceil(Math.random() * 20)) * Math.random());
     const value = renderComponent ? <Number value={valueText} /> : valueText.toString();
     return [...acc, { label, value }];
   }, []);

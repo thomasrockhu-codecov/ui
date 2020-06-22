@@ -6,7 +6,7 @@ import { ColorFn } from '../../../common/Types/sharedTypes';
 import { getDensityPaddings } from '../shared/textUtils';
 import { Density } from '../shared/shared.types';
 import { useFlexTable } from '../shared/FlexTableProvider';
-import { ExpandItems, DesktopItem, MobileItem } from './ExpandItems';
+import { ExpandItems, ExpandItem } from './ExpandItems';
 import { ExpandCell } from '../Cell/ExpandCell';
 
 /* the cells are padded by row gutter 1 unit (4px) */
@@ -96,10 +96,10 @@ const Row: RowComponent & RowComponents = ({
       {expand && (
         <StyledExpandedRow role="row" separatorColor={separatorColor}>
           {/* TODO should we rather have padding specified in ExpandItems? */}
-          <Box px={5} pb={2} md={{ pt: 5, pb: 0 }} role="cell">
+          <Box px={5} pb={2} md={{ px: 5, pt: 5, pb: 0 }} role="cell">
             {expandItems && <ExpandItems items={expandItems} />}
             {expandChildren && (
-              <Box pt={2} md={{ pt: 0, pb: 5 }}>
+              <Box pt={2} md={{ px: 5, pt: 0, pb: 5 }}>
                 {expandChildren}
               </Box>
             )}
@@ -110,8 +110,7 @@ const Row: RowComponent & RowComponents = ({
   );
 };
 
-Row.ExpandItemDesktop = DesktopItem;
-Row.ExpandItemMobile = MobileItem;
+Row.ExpandItem = ExpandItem;
 Row.ExpandItems = ExpandItems;
 
 export default Row;
