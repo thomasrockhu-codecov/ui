@@ -14,19 +14,9 @@ export type Props = {
 
 export type TextWrapperProps = {
   fontSize?: FontSize;
+  weight?: string;
 };
 
 export type TextWrapperComponent = React.FC<TextWrapperProps>;
 
-export type CellComponents = { TextWrapper: TextWrapperComponent };
-
-export type CellComponent = React.FC<Props> & CellComponents;
-
-type ExpandCellProps = {
-  disabled?: boolean;
-  expanded: boolean;
-  onClick: () => void;
-  columnId: string;
-};
-
-export type ExpandCellComponent = React.FC<ExpandCellProps>;
+export type FooterComponent = React.FC<Props> & { TextWrapper: TextWrapperComponent };
