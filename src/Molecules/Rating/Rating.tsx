@@ -1,5 +1,4 @@
 import React from 'react';
-import { injectIntl } from 'react-intl';
 import { Flexbox, Icon, VisuallyHidden } from '../..';
 import { isNumber } from '../../common/utils';
 import { Props, RatingComponent } from './Rating.types';
@@ -31,4 +30,4 @@ export const Rating: RatingComponent = ({ rating = 0, size = 5 }) => {
   );
 };
 
-export default injectIntl(Rating);
+export default Rating;
