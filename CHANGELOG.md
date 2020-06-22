@@ -1,3 +1,10 @@
+# [2.51.0](https://github.com/nordnet/ui/compare/v2.50.1...v2.51.0) (2020-06-22)
+
+
+### Features
+
+* add couple of icons, sort imports alphabetically ([81b374b](https://github.com/nordnet/ui/commit/81b374b))
+
 ## [2.50.1](https://github.com/nordnet/ui/compare/v2.50.0...v2.50.1) (2020-06-15)
 
 
