@@ -58,6 +58,7 @@ const TitleWrapper = styled.div`
     )}px`};
   margin-bottom: ${p => p.theme.spacing.unit(2)}px;
   min-height: ${p => p.theme.spacing.unit(CROSS_SIZE)}px;
+  flex: 0 0 auto;
 `;
 
 const animationProps = {
