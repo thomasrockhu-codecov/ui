@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { ReactNode } from 'react';
 import { RowComponent, FooterRowComponent, HeaderRowComponent } from './Row/Row.types';
 import { HeaderComponent } from './Header/Header.types';
 import { FooterComponent } from './Footer/Footer.types';
@@ -11,6 +11,7 @@ type HtmlProps = {} & React.HTMLAttributes<HTMLDivElement>;
 export type Props = {
   className?: string;
   density?: Density;
+  title?: ReactNode;
 } & HtmlProps;
 
 export type FlexTableComponents = {
