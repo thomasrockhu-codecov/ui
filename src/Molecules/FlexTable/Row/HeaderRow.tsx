@@ -1,10 +1,9 @@
 import React from 'react';
 import Row from './Row';
-import { RowComponent } from './Row.types';
+import { HeaderRowComponent } from './Row.types';
 
-export const HeaderRow: RowComponent = ({
+export const HeaderRow: HeaderRowComponent = ({
   className,
-  hoverHighlight = false,
   hideSeparator = false,
   separatorColor = theme => theme.color.text,
   children,
@@ -13,7 +12,7 @@ export const HeaderRow: RowComponent = ({
   return (
     <Row
       className={className}
-      hoverHighlight={hoverHighlight}
+      hoverHighlight={false}
       hideSeparator={hideSeparator}
       separatorColor={separatorColor}
       {...htmlProps}

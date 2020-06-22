@@ -44,6 +44,18 @@ export const thinArrowLeft = () => (
   </span>
 );
 
+export const thinChevronUp = () => (
+  <span>
+    <Icon.ThinChevron direction={select('Direction', ['up', 'down'], 'up')} />
+  </span>
+);
+
+export const thinChevronDown = () => (
+  <span>
+    <Icon.ThinChevron direction={select('Direction', ['up', 'down'], 'down')} />
+  </span>
+);
+
 export const sortArrowAscending = () => (
   <span>
     <Icon.SortArrow direction={select('Direction', ['ascending', 'descending'], 'ascending')} />
