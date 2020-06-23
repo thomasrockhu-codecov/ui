@@ -946,171 +946,198 @@ export const ExpandableTable = () => {
   );
 };
 
-export const TableHeader = () => {
-  const CustomisedTableHeader: React.FC = ({ children }) => (
-    <FlexTable.Header columnId="column3" sortable>
-      {({ sortable, sorted, fontSize, onSortClick, sortOrder }) => (
-        <FlexTable.Header.SortButton onClick={onSortClick}>
-          <Flag country="SE" inline height={3} />
-          <FlexTable.Header.TextWrapper fontSize={fontSize} sorted={sorted}>
-            {children}
-          </FlexTable.Header.TextWrapper>
-          {sortable && <FlexTable.Header.SortIcon sortOrder={sortOrder} />}
-        </FlexTable.Header.SortButton>
-      )}
-    </FlexTable.Header>
-  );
-  return (
-    <FlexTable>
-      <FlexTable.HeaderRow>
-        <FlexTable.Header columnId="column1" flex="1">
-          Table header 1 flex 1
-        </FlexTable.Header>
-        <FlexTable.Header columnId="column2" flex="3">
-          Table header 2 flex 3
-        </FlexTable.Header>
-        <CustomisedTableHeader>Customised header</CustomisedTableHeader>
-        <FlexTable.Header columnId="column4">Table header 3 no flex</FlexTable.Header>
-        <FlexTable.Header columnId="column5">
-          <Typography type="title3">React component</Typography>
-        </FlexTable.Header>
-      </FlexTable.HeaderRow>
-    </FlexTable>
-  );
-};
-
-export const SortableHeadersUncontrolled = () => {
-  return (
-    <FlexTable>
-      <FlexTable.HeaderRow>
-        <FlexTable.Header columnId="column1" sortable>
-          Uncontrolled 1
-        </FlexTable.Header>
-        <FlexTable.Header columnId="column2" sortable>
-          Uncontrolled 2
-        </FlexTable.Header>
-        <FlexTable.Header
-          columnId="column3"
-          sortable
-          initialSortOrder={FlexTable.CONSTANTS.SORT_ORDER_DESCENDING}
-        >
-          With initial sort order
-        </FlexTable.Header>
-        <FlexTable.Header columnId="column4" sortable={false}>
-          Non sortable
-        </FlexTable.Header>
-      </FlexTable.HeaderRow>
-      <FlexTable.Row />
-    </FlexTable>
-  );
-};
-
-// For useState to work in storybook, components needs to be wrapped in a new function
-export const SortableHeaderControlled = () => {
-  const ReactComponent = () => {
-    const [columnSort, setColumnSort] = useState<{ columnId: string; sortOrder: SortOrder }>({
-      columnId: 'column1',
-      sortOrder: FlexTable.CONSTANTS.SORT_ORDER_NONE,
-    });
-
-    const getSort = (columnId: string) =>
-      columnSort.columnId === columnId ? columnSort.sortOrder : FlexTable.CONSTANTS.SORT_ORDER_NONE;
-    const onSort: OnSort = (columnId, nextSortOrder) =>
-      setColumnSort({ columnId, sortOrder: nextSortOrder });
-
+export const TableHeaders = () => {
+  const DefaultTableHeaders = () => {
+    const CustomisedTableHeader: React.FC = ({ children }) => (
+      <FlexTable.Header columnId="column3" sortable>
+        {({ sortable, sorted, fontSize, onSortClick, sortOrder }) => (
+          <FlexTable.Header.SortButton onClick={onSortClick}>
+            <Flag country="SE" inline height={3} />
+            <FlexTable.Header.TextWrapper fontSize={fontSize} sorted={sorted}>
+              {children}
+            </FlexTable.Header.TextWrapper>
+            {sortable && <FlexTable.Header.SortIcon sortOrder={sortOrder} />}
+          </FlexTable.Header.SortButton>
+        )}
+      </FlexTable.Header>
+    );
     return (
       <FlexTable>
         <FlexTable.HeaderRow>
-          <FlexTable.Header
-            columnId="column1"
-            sortable
-            sortOrder={getSort('column1')}
-            onSort={onSort}
-          >
-            Controlled1
+          <FlexTable.Header columnId="column1" flex="1">
+            Table header 1 flex 1
           </FlexTable.Header>
-          <FlexTable.Header
-            columnId="column2"
-            sortable
-            sortOrder={getSort('column2')}
-            onSort={onSort}
-          >
-            Controlled2
+          <FlexTable.Header columnId="column2" flex="3">
+            Table header 2 flex 3
           </FlexTable.Header>
-          <FlexTable.Header columnId="column3" sortable={false}>
-            Not sortable
-          </FlexTable.Header>
-          <FlexTable.Header
-            columnId="column4"
-            sortable
-            sortOrder={getSort('column4')}
-            onSort={onSort}
-          >
-            Controlled3
+          <CustomisedTableHeader>Customised header</CustomisedTableHeader>
+          <FlexTable.Header columnId="column4">Table header 3 no flex</FlexTable.Header>
+          <FlexTable.Header columnId="column5">
+            <Typography type="title3">React component</Typography>
           </FlexTable.Header>
         </FlexTable.HeaderRow>
       </FlexTable>
     );
   };
-  return <ReactComponent />;
-};
 
-export const SortableHeaderOnlyAscendingDescending = () => {
-  const ReactComponent = () => {
-    const [columnSort, setColumnSort] = useState<{ columnId: string; sortOrder: SortOrder }>({
-      columnId: 'column1',
-      sortOrder: FlexTable.CONSTANTS.SORT_ORDER_ASCENDING,
-    });
+  const UncontrolledSortableHeaders = () => {
+    return (
+      <FlexTable>
+        <FlexTable.HeaderRow>
+          <FlexTable.Header columnId="column1" sortable>
+            Uncontrolled 1
+          </FlexTable.Header>
+          <FlexTable.Header columnId="column2" sortable>
+            Uncontrolled 2
+          </FlexTable.Header>
+          <FlexTable.Header
+            columnId="column3"
+            sortable
+            initialSortOrder={FlexTable.CONSTANTS.SORT_ORDER_DESCENDING}
+          >
+            With initial sort order
+          </FlexTable.Header>
+          <FlexTable.Header columnId="column4" sortable={false}>
+            Non sortable
+          </FlexTable.Header>
+        </FlexTable.HeaderRow>
+        <FlexTable.Row />
+      </FlexTable>
+    );
+  };
 
-    const getSort = (columnId: string) =>
-      columnSort.columnId === columnId ? columnSort.sortOrder : FlexTable.CONSTANTS.SORT_ORDER_NONE;
-    const onSort: OnSort = columnId => {
-      let nextSortOrder: SortOrder = FlexTable.CONSTANTS.SORT_ORDER_ASCENDING;
-      const sameAsCurrentlySorted = columnId === columnSort.columnId;
-      if (sameAsCurrentlySorted) {
-        nextSortOrder =
-          columnSort.sortOrder === FlexTable.CONSTANTS.SORT_ORDER_ASCENDING
-            ? FlexTable.CONSTANTS.SORT_ORDER_DESCENDING
-            : FlexTable.CONSTANTS.SORT_ORDER_ASCENDING;
-      }
-      setColumnSort({ columnId, sortOrder: nextSortOrder });
+  // For useState to work in storybook, components needs to be wrapped in a new function
+  const ControlledSortableHeaders = () => {
+    const ReactComponent = () => {
+      const [columnSort, setColumnSort] = useState<{ columnId: string; sortOrder: SortOrder }>({
+        columnId: 'column1',
+        sortOrder: FlexTable.CONSTANTS.SORT_ORDER_NONE,
+      });
+
+      const getSort = (columnId: string) =>
+        columnSort.columnId === columnId
+          ? columnSort.sortOrder
+          : FlexTable.CONSTANTS.SORT_ORDER_NONE;
+      const onSort: OnSort = (columnId, nextSortOrder) =>
+        setColumnSort({ columnId, sortOrder: nextSortOrder });
+
+      return (
+        <FlexTable>
+          <FlexTable.HeaderRow>
+            <FlexTable.Header
+              columnId="column1"
+              sortable
+              sortOrder={getSort('column1')}
+              onSort={onSort}
+            >
+              Controlled1
+            </FlexTable.Header>
+            <FlexTable.Header
+              columnId="column2"
+              sortable
+              sortOrder={getSort('column2')}
+              onSort={onSort}
+            >
+              Controlled2
+            </FlexTable.Header>
+            <FlexTable.Header columnId="column3" sortable={false}>
+              Not sortable
+            </FlexTable.Header>
+            <FlexTable.Header
+              columnId="column4"
+              sortable
+              sortOrder={getSort('column4')}
+              onSort={onSort}
+            >
+              Controlled3
+            </FlexTable.Header>
+          </FlexTable.HeaderRow>
+        </FlexTable>
+      );
     };
-
-    return (
-      <FlexTable>
-        <FlexTable.HeaderRow>
-          <FlexTable.Header
-            columnId="column1"
-            sortable
-            sortOrder={getSort('column1')}
-            onSort={onSort}
-          >
-            Controlled1
-          </FlexTable.Header>
-          <FlexTable.Header
-            columnId="column2"
-            sortable
-            sortOrder={getSort('column2')}
-            onSort={onSort}
-          >
-            Controlled2
-          </FlexTable.Header>
-          <FlexTable.Header columnId="column3" sortable={false}>
-            Not sortable
-          </FlexTable.Header>
-          <FlexTable.Header
-            columnId="column4"
-            sortable
-            sortOrder={getSort('column4')}
-            onSort={onSort}
-          >
-            Controlled3
-          </FlexTable.Header>
-        </FlexTable.HeaderRow>
-      </FlexTable>
-    );
+    return <ReactComponent />;
   };
-  return <ReactComponent />;
+
+  const SortableHeadersOnlyAscendingDescending = () => {
+    const ReactComponent = () => {
+      const [columnSort, setColumnSort] = useState<{ columnId: string; sortOrder: SortOrder }>({
+        columnId: 'column1',
+        sortOrder: FlexTable.CONSTANTS.SORT_ORDER_ASCENDING,
+      });
+
+      const getSort = (columnId: string) =>
+        columnSort.columnId === columnId
+          ? columnSort.sortOrder
+          : FlexTable.CONSTANTS.SORT_ORDER_NONE;
+      const onSort: OnSort = columnId => {
+        let nextSortOrder: SortOrder = FlexTable.CONSTANTS.SORT_ORDER_ASCENDING;
+        const sameAsCurrentlySorted = columnId === columnSort.columnId;
+        if (sameAsCurrentlySorted) {
+          nextSortOrder =
+            columnSort.sortOrder === FlexTable.CONSTANTS.SORT_ORDER_ASCENDING
+              ? FlexTable.CONSTANTS.SORT_ORDER_DESCENDING
+              : FlexTable.CONSTANTS.SORT_ORDER_ASCENDING;
+        }
+        setColumnSort({ columnId, sortOrder: nextSortOrder });
+      };
+
+      return (
+        <FlexTable>
+          <FlexTable.HeaderRow>
+            <FlexTable.Header
+              columnId="column1"
+              sortable
+              sortOrder={getSort('column1')}
+              onSort={onSort}
+            >
+              Controlled1
+            </FlexTable.Header>
+            <FlexTable.Header
+              columnId="column2"
+              sortable
+              sortOrder={getSort('column2')}
+              onSort={onSort}
+            >
+              Controlled2
+            </FlexTable.Header>
+            <FlexTable.Header columnId="column3" sortable={false}>
+              Not sortable
+            </FlexTable.Header>
+            <FlexTable.Header
+              columnId="column4"
+              sortable
+              sortOrder={getSort('column4')}
+              onSort={onSort}
+            >
+              Controlled3
+            </FlexTable.Header>
+          </FlexTable.HeaderRow>
+        </FlexTable>
+      );
+    };
+    return <ReactComponent />;
+  };
+
+  return (
+    <StyledDiv>
+      <StyledTableDiv>
+        <Typography type="title3">Default Table Header Variations</Typography>
+        <DefaultTableHeaders />
+      </StyledTableDiv>
+      <StyledTableDiv>
+        <Typography type="title3">Uncontrolled Sortable Headers</Typography>
+        <UncontrolledSortableHeaders />
+      </StyledTableDiv>
+      <StyledTableDiv>
+        <Typography type="title3">Controlled Sortable Headers</Typography>
+        <ControlledSortableHeaders />
+      </StyledTableDiv>
+      <StyledTableDiv>
+        <Typography type="title3">Sortable Headers – Only Ascending/Descending</Typography>
+        <SortableHeadersOnlyAscendingDescending />
+      </StyledTableDiv>
+    </StyledDiv>
+  );
 };
 
 // TODO: add story to how you create a custom sorting header and variations thereof

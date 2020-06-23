@@ -131117,240 +131117,23 @@ Array [
 ]
 `;
 
-exports[`Storyshots Molecules | FlexTable Sortable Header Controlled 1`] = `
-.c1 {
+exports[`Storyshots Molecules | FlexTable Table Headers 1`] = `
+.c4 {
   padding-left: 4px;
 }
 
-.c3 {
+.c13 {
+  height: 12px;
   box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.c6 {
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-wrap: nowrap;
-  -ms-flex-wrap: nowrap;
-  flex-wrap: nowrap;
-  -webkit-flex: 1;
-  -ms-flex: 1;
-  flex: 1;
-}
-
-.c10 {
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  width: 8px;
-  height: 8px;
-  fill: #6E6E69;
-  -webkit-flex-shrink: 0;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
   display: inline-block;
   vertical-align: middle;
-}
-
-.c2 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #282823;
-  margin: 0;
-  font-weight: 800;
-  font-size: 18px;
-  line-height: 1.3333333333333333;
-}
-
-.c8 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #6E6E69;
-  margin: 0;
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 1.3333333333333333;
-}
-
-.c4 {
-  border-bottom: 1px solid #EBEBE8;
-  padding-right: 4px;
-  padding-left: 2px;
-  border-left: 2px solid transparent;
-  padding-top: 4px;
-  padding-bottom: 4px;
+  position: relative;
+  bottom: 1px;
+  width: 16px;
+  overflow: hidden;
 }
 
 .c5 {
-  position: -webkit-sticky;
-  position: sticky;
-  top: 0;
-  background-color: #FFFFFF;
-}
-
-.c9 {
-  display: inline-block;
-  word-break: break-word;
-}
-
-.c11 {
-  margin-left: 4px;
-}
-
-.c7 {
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  color: inherit;
-  width: 100%;
-}
-
-.c0 {
-  position: relative;
-}
-
-@media (min-width:760px) {
-  .c2 {
-    font-size: 20px;
-    line-height: 1.2;
-  }
-}
-
-<div
-  className="c0"
-  role="table"
->
-  <caption>
-    <div
-      className="c1"
-    >
-      <span
-        className="c2"
-      />
-    </div>
-  </caption>
-  <div
-    className="c3 c4 c5"
-    role="row"
-  >
-    <div
-      aria-sort="none"
-      className="c6"
-      role="columnheader"
-    >
-      <a
-        className="c7"
-        href="#"
-        onClick={[Function]}
-        role="button"
-      >
-        <span
-          className="c8 c9"
-        >
-          Controlled1
-        </span>
-        <svg
-          aria-hidden="true"
-          className="c10 c11"
-          focusable="false"
-          preserveAspectRatio="xMidYMid meet"
-          role="presentation"
-          viewBox="0 0 24 24"
-        >
-          <polygon
-            points="19.969 4 24 8.027 12 20 0 8.027 4.031 4 12 11.952"
-          />
-        </svg>
-      </a>
-    </div>
-    <div
-      aria-sort="none"
-      className="c6"
-      role="columnheader"
-    >
-      <a
-        className="c7"
-        href="#"
-        onClick={[Function]}
-        role="button"
-      >
-        <span
-          className="c8 c9"
-        >
-          Controlled2
-        </span>
-        <svg
-          aria-hidden="true"
-          className="c10 c11"
-          focusable="false"
-          preserveAspectRatio="xMidYMid meet"
-          role="presentation"
-          viewBox="0 0 24 24"
-        >
-          <polygon
-            points="19.969 4 24 8.027 12 20 0 8.027 4.031 4 12 11.952"
-          />
-        </svg>
-      </a>
-    </div>
-    <div
-      className="c6"
-      role="columnheader"
-    >
-      <span
-        className="c8 c9"
-      >
-        Not sortable
-      </span>
-    </div>
-    <div
-      aria-sort="none"
-      className="c6"
-      role="columnheader"
-    >
-      <a
-        className="c7"
-        href="#"
-        onClick={[Function]}
-        role="button"
-      >
-        <span
-          className="c8 c9"
-        >
-          Controlled3
-        </span>
-        <svg
-          aria-hidden="true"
-          className="c10 c11"
-          focusable="false"
-          preserveAspectRatio="xMidYMid meet"
-          role="presentation"
-          viewBox="0 0 24 24"
-        >
-          <polygon
-            points="19.969 4 24 8.027 12 20 0 8.027 4.031 4 12 11.952"
-          />
-        </svg>
-      </a>
-    </div>
-  </div>
-</div>
-`;
-
-exports[`Storyshots Molecules | FlexTable Sortable Header Only Ascending Descending 1`] = `
-.c1 {
-  padding-left: 4px;
-}
-
-.c3 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -131362,7 +131145,7 @@ exports[`Storyshots Molecules | FlexTable Sortable Header Only Ascending Descend
   align-items: center;
 }
 
-.c6 {
+.c8 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -131376,19 +131159,18 @@ exports[`Storyshots Molecules | FlexTable Sortable Header Only Ascending Descend
   flex: 1;
 }
 
-.c10 {
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  width: 12px;
-  height: 12px;
-  fill: #282823;
-  -webkit-flex-shrink: 0;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
-  display: inline-block;
-  vertical-align: middle;
+.c11 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -webkit-flex: 3;
+  -ms-flex: 3;
+  flex: 3;
 }
 
 .c14 {
@@ -131406,7 +131188,28 @@ exports[`Storyshots Molecules | FlexTable Sortable Header Only Ascending Descend
   vertical-align: middle;
 }
 
-.c11 {
+.c17 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 12px;
+  height: 12px;
+  fill: #282823;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.c18 {
+  -webkit-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+
+.c21 {
   -webkit-transform: rotate(0deg);
   -ms-transform: rotate(0deg);
   transform: rotate(0deg);
@@ -131421,299 +131224,25 @@ exports[`Storyshots Molecules | FlexTable Sortable Header Only Ascending Descend
   line-height: 1.3333333333333333;
 }
 
-.c8 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #282823;
-  margin: 0;
-  font-weight: 700;
-  font-size: 12px;
-  line-height: 1.3333333333333333;
-}
-
-.c13 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #6E6E69;
-  margin: 0;
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 1.3333333333333333;
-}
-
-.c4 {
-  border-bottom: 1px solid #EBEBE8;
-  padding-right: 4px;
-  padding-left: 2px;
-  border-left: 2px solid transparent;
-  padding-top: 4px;
-  padding-bottom: 4px;
-}
-
-.c5 {
-  position: -webkit-sticky;
-  position: sticky;
-  top: 0;
-  background-color: #FFFFFF;
-}
-
 .c9 {
-  display: inline-block;
-  word-break: break-word;
-}
-
-.c15 {
-  margin-left: 4px;
-}
-
-.c12 {
-  margin-left: 4px;
-}
-
-.c7 {
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  color: inherit;
-  width: 100%;
-}
-
-.c0 {
-  position: relative;
-}
-
-@media (min-width:760px) {
-  .c2 {
-    font-size: 20px;
-    line-height: 1.2;
-  }
-}
-
-<div
-  className="c0"
-  role="table"
->
-  <caption>
-    <div
-      className="c1"
-    >
-      <span
-        className="c2"
-      />
-    </div>
-  </caption>
-  <div
-    className="c3 c4 c5"
-    role="row"
-  >
-    <div
-      aria-sort="ascending"
-      className="c6"
-      role="columnheader"
-    >
-      <a
-        className="c7"
-        href="#"
-        onClick={[Function]}
-        role="button"
-      >
-        <span
-          className="c8 c9"
-        >
-          Controlled1
-        </span>
-        <svg
-          aria-hidden="true"
-          className="c10 c11 c12"
-          direction="ascending"
-          focusable="false"
-          preserveAspectRatio="xMidYMid meet"
-          role="presentation"
-          viewBox="0 0 8 12"
-        >
-          <path
-            d="M9 2v8.4l1.66-1.62L12 10.1 8 14l-4-3.9 1.34-1.32L7 10.4V2h2z"
-            fillRule="evenodd"
-            transform="matrix(1 0 0 -1 -4 14)"
-          />
-        </svg>
-      </a>
-    </div>
-    <div
-      aria-sort="none"
-      className="c6"
-      role="columnheader"
-    >
-      <a
-        className="c7"
-        href="#"
-        onClick={[Function]}
-        role="button"
-      >
-        <span
-          className="c13 c9"
-        >
-          Controlled2
-        </span>
-        <svg
-          aria-hidden="true"
-          className="c14 c15"
-          focusable="false"
-          preserveAspectRatio="xMidYMid meet"
-          role="presentation"
-          viewBox="0 0 24 24"
-        >
-          <polygon
-            points="19.969 4 24 8.027 12 20 0 8.027 4.031 4 12 11.952"
-          />
-        </svg>
-      </a>
-    </div>
-    <div
-      className="c6"
-      role="columnheader"
-    >
-      <span
-        className="c13 c9"
-      >
-        Not sortable
-      </span>
-    </div>
-    <div
-      aria-sort="none"
-      className="c6"
-      role="columnheader"
-    >
-      <a
-        className="c7"
-        href="#"
-        onClick={[Function]}
-        role="button"
-      >
-        <span
-          className="c13 c9"
-        >
-          Controlled3
-        </span>
-        <svg
-          aria-hidden="true"
-          className="c14 c15"
-          focusable="false"
-          preserveAspectRatio="xMidYMid meet"
-          role="presentation"
-          viewBox="0 0 24 24"
-        >
-          <polygon
-            points="19.969 4 24 8.027 12 20 0 8.027 4.031 4 12 11.952"
-          />
-        </svg>
-      </a>
-    </div>
-  </div>
-</div>
-`;
-
-exports[`Storyshots Molecules | FlexTable Sortable Headers Uncontrolled 1`] = `
-.c1 {
-  padding-left: 4px;
-}
-
-.c3 {
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.c6 {
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-wrap: nowrap;
-  -ms-flex-wrap: nowrap;
-  flex-wrap: nowrap;
-  -webkit-flex: 1;
-  -ms-flex: 1;
-  flex: 1;
-}
-
-.c10 {
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  width: 8px;
-  height: 8px;
-  fill: #6E6E69;
-  -webkit-flex-shrink: 0;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
-  display: inline-block;
-  vertical-align: middle;
-}
-
-.c13 {
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  width: 12px;
-  height: 12px;
-  fill: #282823;
-  -webkit-flex-shrink: 0;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
-  display: inline-block;
-  vertical-align: middle;
-}
-
-.c14 {
-  -webkit-transform: rotate(180deg);
-  -ms-transform: rotate(180deg);
-  transform: rotate(180deg);
-}
-
-.c2 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #282823;
-  margin: 0;
-  font-weight: 800;
-  font-size: 18px;
-  line-height: 1.3333333333333333;
-}
-
-.c8 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #6E6E69;
   margin: 0;
   font-weight: 400;
   font-size: 12px;
   line-height: 1.3333333333333333;
-}
-
-.c12 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #282823;
-  margin: 0;
-  font-weight: 700;
-  font-size: 12px;
-  line-height: 1.3333333333333333;
-}
-
-.c4 {
-  border-bottom: 1px solid #EBEBE8;
-  padding-right: 4px;
-  padding-left: 2px;
-  border-left: 2px solid transparent;
-  padding-top: 4px;
-  padding-bottom: 4px;
 }
 
 .c16 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 1.3333333333333333;
+}
+
+.c6 {
   border-bottom: 1px solid #EBEBE8;
   padding-right: 4px;
   padding-left: 2px;
@@ -131722,299 +131251,60 @@ exports[`Storyshots Molecules | FlexTable Sortable Headers Uncontrolled 1`] = `
   padding-bottom: 4px;
 }
 
-.c16:hover {
+.c20 {
+  border-bottom: 1px solid #EBEBE8;
+  padding-right: 4px;
+  padding-left: 2px;
+  border-left: 2px solid transparent;
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+
+.c20:hover {
   background: #F5F5F5;
 }
 
-.c5 {
+.c7 {
   position: -webkit-sticky;
   position: sticky;
   top: 0;
   background-color: #FFFFFF;
 }
 
-.c9 {
+.c10 {
   display: inline-block;
   word-break: break-word;
-}
-
-.c11 {
-  margin-left: 4px;
 }
 
 .c15 {
   margin-left: 4px;
 }
 
-.c7 {
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  color: inherit;
-  width: 100%;
-}
-
-.c0 {
-  position: relative;
-}
-
-@media (min-width:760px) {
-  .c2 {
-    font-size: 20px;
-    line-height: 1.2;
-  }
-}
-
-<div
-  className="c0"
-  role="table"
->
-  <caption>
-    <div
-      className="c1"
-    >
-      <span
-        className="c2"
-      />
-    </div>
-  </caption>
-  <div
-    className="c3 c4 c5"
-    role="row"
-  >
-    <div
-      aria-sort="none"
-      className="c6"
-      role="columnheader"
-    >
-      <a
-        className="c7"
-        href="#"
-        onClick={[Function]}
-        role="button"
-      >
-        <span
-          className="c8 c9"
-        >
-          Uncontrolled 1
-        </span>
-        <svg
-          aria-hidden="true"
-          className="c10 c11"
-          focusable="false"
-          preserveAspectRatio="xMidYMid meet"
-          role="presentation"
-          viewBox="0 0 24 24"
-        >
-          <polygon
-            points="19.969 4 24 8.027 12 20 0 8.027 4.031 4 12 11.952"
-          />
-        </svg>
-      </a>
-    </div>
-    <div
-      aria-sort="none"
-      className="c6"
-      role="columnheader"
-    >
-      <a
-        className="c7"
-        href="#"
-        onClick={[Function]}
-        role="button"
-      >
-        <span
-          className="c8 c9"
-        >
-          Uncontrolled 2
-        </span>
-        <svg
-          aria-hidden="true"
-          className="c10 c11"
-          focusable="false"
-          preserveAspectRatio="xMidYMid meet"
-          role="presentation"
-          viewBox="0 0 24 24"
-        >
-          <polygon
-            points="19.969 4 24 8.027 12 20 0 8.027 4.031 4 12 11.952"
-          />
-        </svg>
-      </a>
-    </div>
-    <div
-      aria-sort="descending"
-      className="c6"
-      role="columnheader"
-    >
-      <a
-        className="c7"
-        href="#"
-        onClick={[Function]}
-        role="button"
-      >
-        <span
-          className="c12 c9"
-        >
-          With initial sort order
-        </span>
-        <svg
-          aria-hidden="true"
-          className="c13 c14 c15"
-          direction="descending"
-          focusable="false"
-          preserveAspectRatio="xMidYMid meet"
-          role="presentation"
-          viewBox="0 0 8 12"
-        >
-          <path
-            d="M9 2v8.4l1.66-1.62L12 10.1 8 14l-4-3.9 1.34-1.32L7 10.4V2h2z"
-            fillRule="evenodd"
-            transform="matrix(1 0 0 -1 -4 14)"
-          />
-        </svg>
-      </a>
-    </div>
-    <div
-      className="c6"
-      role="columnheader"
-    >
-      <span
-        className="c8 c9"
-      >
-        Non sortable
-      </span>
-    </div>
-  </div>
-  <div
-    className="c3 c16"
-    role="row"
-  />
-</div>
-`;
-
-exports[`Storyshots Molecules | FlexTable Table Header 1`] = `
-.c1 {
-  padding-left: 4px;
-}
-
-.c11 {
-  height: 12px;
-  box-sizing: border-box;
-  display: inline-block;
-  vertical-align: middle;
-  position: relative;
-  bottom: 1px;
-  width: 16px;
-  overflow: hidden;
-}
-
-.c3 {
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.c6 {
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-wrap: nowrap;
-  -ms-flex-wrap: nowrap;
-  flex-wrap: nowrap;
-  -webkit-flex: 1;
-  -ms-flex: 1;
-  flex: 1;
-}
-
-.c9 {
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-wrap: nowrap;
-  -ms-flex-wrap: nowrap;
-  flex-wrap: nowrap;
-  -webkit-flex: 3;
-  -ms-flex: 3;
-  flex: 3;
-}
-
-.c12 {
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  width: 8px;
-  height: 8px;
-  fill: #6E6E69;
-  -webkit-flex-shrink: 0;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
-  display: inline-block;
-  vertical-align: middle;
-}
-
-.c2 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #282823;
-  margin: 0;
-  font-weight: 800;
-  font-size: 18px;
-  line-height: 1.3333333333333333;
-}
-
-.c7 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #6E6E69;
-  margin: 0;
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 1.3333333333333333;
-}
-
-.c4 {
-  border-bottom: 1px solid #EBEBE8;
-  padding-right: 4px;
-  padding-left: 2px;
-  border-left: 2px solid transparent;
-  padding-top: 4px;
-  padding-bottom: 4px;
-}
-
-.c5 {
-  position: -webkit-sticky;
-  position: sticky;
-  top: 0;
-  background-color: #FFFFFF;
-}
-
-.c8 {
-  display: inline-block;
-  word-break: break-word;
-}
-
-.c13 {
+.c19 {
   margin-left: 4px;
 }
 
-.c10 {
+.c12 {
   -webkit-text-decoration: none;
   text-decoration: none;
   color: inherit;
   width: 100%;
 }
 
-.c0 {
+.c3 {
   position: relative;
+}
+
+.c0 {
+  background-color: #F5F5F5;
+}
+
+.c1 {
+  background-color: white;
+}
+
+.c1:not(:first-of-type) {
+  margin-top: 40px;
 }
 
 @media (min-width:760px) {
@@ -132026,129 +131316,536 @@ exports[`Storyshots Molecules | FlexTable Table Header 1`] = `
 
 <div
   className="c0"
-  role="table"
 >
-  <caption>
-    <div
-      className="c1"
-    >
-      <span
-        className="c2"
-      />
-    </div>
-  </caption>
   <div
-    className="c3 c4 c5"
-    role="row"
+    className="c1"
   >
-    <div
-      className="c6"
-      role="columnheader"
+    <span
+      className="c2"
     >
-      <span
-        className="c7 c8"
-      >
-        Table header 1 flex 1
-      </span>
-    </div>
+      Default Table Header Variations
+    </span>
     <div
-      className="c9"
-      role="columnheader"
+      className="c3"
+      role="table"
     >
-      <span
-        className="c7 c8"
-      >
-        Table header 2 flex 3
-      </span>
-    </div>
-    <div
-      aria-sort="none"
-      className="c6"
-      role="columnheader"
-    >
-      <a
-        className="c10"
-        href="#"
-        onClick={[Function]}
-        role="button"
-      >
-        <svg
-          className="c11"
-          focusable="false"
-          role="img"
-          viewBox="0 0 640 480"
+      <caption>
+        <div
+          className="c4"
         >
-          <g
-            transform="translate(50.082) scale(.9375)"
+          <span
+            className="c2"
+          />
+        </div>
+      </caption>
+      <div
+        className="c5 c6 c7"
+        role="row"
+      >
+        <div
+          className="c8"
+          role="columnheader"
+        >
+          <span
+            className="c9 c10"
           >
-            <g
-              fillRule="evenodd"
-              strokeWidth="1pt"
+            Table header 1 flex 1
+          </span>
+        </div>
+        <div
+          className="c11"
+          role="columnheader"
+        >
+          <span
+            className="c9 c10"
+          >
+            Table header 2 flex 3
+          </span>
+        </div>
+        <div
+          aria-sort="none"
+          className="c8"
+          role="columnheader"
+        >
+          <a
+            className="c12"
+            href="#"
+            onClick={[Function]}
+            role="button"
+          >
+            <svg
+              className="c13"
+              focusable="false"
+              role="img"
+              viewBox="0 0 640 480"
+            >
+              <g
+                transform="translate(50.082) scale(.9375)"
+              >
+                <g
+                  fillRule="evenodd"
+                  strokeWidth="1pt"
+                >
+                  <path
+                    d="M-121.103.302h256V205.1h-256zM-121.103 307.178h256v204.8h-256z"
+                    fill="#006aa7"
+                  />
+                  <path
+                    d="M-121.103 204.984h256v102.4h-256z"
+                    fill="#fecc00"
+                  />
+                  <path
+                    d="M133.843.01h102.4v511.997h-102.4z"
+                    fill="#fecc00"
+                  />
+                  <path
+                    d="M232.995 205.013h460.798v102.4H232.995z"
+                    fill="#fecc00"
+                  />
+                  <path
+                    d="M236.155 307.208h460.797v204.799H236.155zM236.155.302h460.797V205.1H236.155z"
+                    fill="#006aa7"
+                  />
+                </g>
+              </g>
+              <title>
+                Sweden
+              </title>
+            </svg>
+            <span
+              className="c9 c10"
+            >
+              Customised header
+            </span>
+            <svg
+              aria-hidden="true"
+              className="c14 c15"
+              focusable="false"
+              preserveAspectRatio="xMidYMid meet"
+              role="presentation"
+              viewBox="0 0 24 24"
+            >
+              <polygon
+                points="19.969 4 24 8.027 12 20 0 8.027 4.031 4 12 11.952"
+              />
+            </svg>
+          </a>
+        </div>
+        <div
+          className="c8"
+          role="columnheader"
+        >
+          <span
+            className="c9 c10"
+          >
+            Table header 3 no flex
+          </span>
+        </div>
+        <div
+          className="c8"
+          role="columnheader"
+        >
+          <span
+            className="c2"
+          >
+            React component
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    className="c1"
+  >
+    <span
+      className="c2"
+    >
+      Uncontrolled Sortable Headers
+    </span>
+    <div
+      className="c3"
+      role="table"
+    >
+      <caption>
+        <div
+          className="c4"
+        >
+          <span
+            className="c2"
+          />
+        </div>
+      </caption>
+      <div
+        className="c5 c6 c7"
+        role="row"
+      >
+        <div
+          aria-sort="none"
+          className="c8"
+          role="columnheader"
+        >
+          <a
+            className="c12"
+            href="#"
+            onClick={[Function]}
+            role="button"
+          >
+            <span
+              className="c9 c10"
+            >
+              Uncontrolled 1
+            </span>
+            <svg
+              aria-hidden="true"
+              className="c14 c15"
+              focusable="false"
+              preserveAspectRatio="xMidYMid meet"
+              role="presentation"
+              viewBox="0 0 24 24"
+            >
+              <polygon
+                points="19.969 4 24 8.027 12 20 0 8.027 4.031 4 12 11.952"
+              />
+            </svg>
+          </a>
+        </div>
+        <div
+          aria-sort="none"
+          className="c8"
+          role="columnheader"
+        >
+          <a
+            className="c12"
+            href="#"
+            onClick={[Function]}
+            role="button"
+          >
+            <span
+              className="c9 c10"
+            >
+              Uncontrolled 2
+            </span>
+            <svg
+              aria-hidden="true"
+              className="c14 c15"
+              focusable="false"
+              preserveAspectRatio="xMidYMid meet"
+              role="presentation"
+              viewBox="0 0 24 24"
+            >
+              <polygon
+                points="19.969 4 24 8.027 12 20 0 8.027 4.031 4 12 11.952"
+              />
+            </svg>
+          </a>
+        </div>
+        <div
+          aria-sort="descending"
+          className="c8"
+          role="columnheader"
+        >
+          <a
+            className="c12"
+            href="#"
+            onClick={[Function]}
+            role="button"
+          >
+            <span
+              className="c16 c10"
+            >
+              With initial sort order
+            </span>
+            <svg
+              aria-hidden="true"
+              className="c17 c18 c19"
+              direction="descending"
+              focusable="false"
+              preserveAspectRatio="xMidYMid meet"
+              role="presentation"
+              viewBox="0 0 8 12"
             >
               <path
-                d="M-121.103.302h256V205.1h-256zM-121.103 307.178h256v204.8h-256z"
-                fill="#006aa7"
+                d="M9 2v8.4l1.66-1.62L12 10.1 8 14l-4-3.9 1.34-1.32L7 10.4V2h2z"
+                fillRule="evenodd"
+                transform="matrix(1 0 0 -1 -4 14)"
               />
-              <path
-                d="M-121.103 204.984h256v102.4h-256z"
-                fill="#fecc00"
-              />
-              <path
-                d="M133.843.01h102.4v511.997h-102.4z"
-                fill="#fecc00"
-              />
-              <path
-                d="M232.995 205.013h460.798v102.4H232.995z"
-                fill="#fecc00"
-              />
-              <path
-                d="M236.155 307.208h460.797v204.799H236.155zM236.155.302h460.797V205.1H236.155z"
-                fill="#006aa7"
-              />
-            </g>
-          </g>
-          <title>
-            Sweden
-          </title>
-        </svg>
-        <span
-          className="c7 c8"
+            </svg>
+          </a>
+        </div>
+        <div
+          className="c8"
+          role="columnheader"
         >
-          Customised header
-        </span>
-        <svg
-          aria-hidden="true"
-          className="c12 c13"
-          focusable="false"
-          preserveAspectRatio="xMidYMid meet"
-          role="presentation"
-          viewBox="0 0 24 24"
+          <span
+            className="c9 c10"
+          >
+            Non sortable
+          </span>
+        </div>
+      </div>
+      <div
+        className="c5 c20"
+        role="row"
+      />
+    </div>
+  </div>
+  <div
+    className="c1"
+  >
+    <span
+      className="c2"
+    >
+      Controlled Sortable Headers
+    </span>
+    <div
+      className="c3"
+      role="table"
+    >
+      <caption>
+        <div
+          className="c4"
         >
-          <polygon
-            points="19.969 4 24 8.027 12 20 0 8.027 4.031 4 12 11.952"
+          <span
+            className="c2"
           />
-        </svg>
-      </a>
-    </div>
-    <div
-      className="c6"
-      role="columnheader"
-    >
-      <span
-        className="c7 c8"
+        </div>
+      </caption>
+      <div
+        className="c5 c6 c7"
+        role="row"
       >
-        Table header 3 no flex
-      </span>
+        <div
+          aria-sort="none"
+          className="c8"
+          role="columnheader"
+        >
+          <a
+            className="c12"
+            href="#"
+            onClick={[Function]}
+            role="button"
+          >
+            <span
+              className="c9 c10"
+            >
+              Controlled1
+            </span>
+            <svg
+              aria-hidden="true"
+              className="c14 c15"
+              focusable="false"
+              preserveAspectRatio="xMidYMid meet"
+              role="presentation"
+              viewBox="0 0 24 24"
+            >
+              <polygon
+                points="19.969 4 24 8.027 12 20 0 8.027 4.031 4 12 11.952"
+              />
+            </svg>
+          </a>
+        </div>
+        <div
+          aria-sort="none"
+          className="c8"
+          role="columnheader"
+        >
+          <a
+            className="c12"
+            href="#"
+            onClick={[Function]}
+            role="button"
+          >
+            <span
+              className="c9 c10"
+            >
+              Controlled2
+            </span>
+            <svg
+              aria-hidden="true"
+              className="c14 c15"
+              focusable="false"
+              preserveAspectRatio="xMidYMid meet"
+              role="presentation"
+              viewBox="0 0 24 24"
+            >
+              <polygon
+                points="19.969 4 24 8.027 12 20 0 8.027 4.031 4 12 11.952"
+              />
+            </svg>
+          </a>
+        </div>
+        <div
+          className="c8"
+          role="columnheader"
+        >
+          <span
+            className="c9 c10"
+          >
+            Not sortable
+          </span>
+        </div>
+        <div
+          aria-sort="none"
+          className="c8"
+          role="columnheader"
+        >
+          <a
+            className="c12"
+            href="#"
+            onClick={[Function]}
+            role="button"
+          >
+            <span
+              className="c9 c10"
+            >
+              Controlled3
+            </span>
+            <svg
+              aria-hidden="true"
+              className="c14 c15"
+              focusable="false"
+              preserveAspectRatio="xMidYMid meet"
+              role="presentation"
+              viewBox="0 0 24 24"
+            >
+              <polygon
+                points="19.969 4 24 8.027 12 20 0 8.027 4.031 4 12 11.952"
+              />
+            </svg>
+          </a>
+        </div>
+      </div>
     </div>
-    <div
-      className="c6"
-      role="columnheader"
+  </div>
+  <div
+    className="c1"
+  >
+    <span
+      className="c2"
     >
-      <span
-        className="c2"
+      Sortable Headers – Only Ascending/Descending
+    </span>
+    <div
+      className="c3"
+      role="table"
+    >
+      <caption>
+        <div
+          className="c4"
+        >
+          <span
+            className="c2"
+          />
+        </div>
+      </caption>
+      <div
+        className="c5 c6 c7"
+        role="row"
       >
-        React component
-      </span>
+        <div
+          aria-sort="ascending"
+          className="c8"
+          role="columnheader"
+        >
+          <a
+            className="c12"
+            href="#"
+            onClick={[Function]}
+            role="button"
+          >
+            <span
+              className="c16 c10"
+            >
+              Controlled1
+            </span>
+            <svg
+              aria-hidden="true"
+              className="c17 c21 c19"
+              direction="ascending"
+              focusable="false"
+              preserveAspectRatio="xMidYMid meet"
+              role="presentation"
+              viewBox="0 0 8 12"
+            >
+              <path
+                d="M9 2v8.4l1.66-1.62L12 10.1 8 14l-4-3.9 1.34-1.32L7 10.4V2h2z"
+                fillRule="evenodd"
+                transform="matrix(1 0 0 -1 -4 14)"
+              />
+            </svg>
+          </a>
+        </div>
+        <div
+          aria-sort="none"
+          className="c8"
+          role="columnheader"
+        >
+          <a
+            className="c12"
+            href="#"
+            onClick={[Function]}
+            role="button"
+          >
+            <span
+              className="c9 c10"
+            >
+              Controlled2
+            </span>
+            <svg
+              aria-hidden="true"
+              className="c14 c15"
+              focusable="false"
+              preserveAspectRatio="xMidYMid meet"
+              role="presentation"
+              viewBox="0 0 24 24"
+            >
+              <polygon
+                points="19.969 4 24 8.027 12 20 0 8.027 4.031 4 12 11.952"
+              />
+            </svg>
+          </a>
+        </div>
+        <div
+          className="c8"
+          role="columnheader"
+        >
+          <span
+            className="c9 c10"
+          >
+            Not sortable
+          </span>
+        </div>
+        <div
+          aria-sort="none"
+          className="c8"
+          role="columnheader"
+        >
+          <a
+            className="c12"
+            href="#"
+            onClick={[Function]}
+            role="button"
+          >
+            <span
+              className="c9 c10"
+            >
+              Controlled3
+            </span>
+            <svg
+              aria-hidden="true"
+              className="c14 c15"
+              focusable="false"
+              preserveAspectRatio="xMidYMid meet"
+              role="presentation"
+              viewBox="0 0 24 24"
+            >
+              <polygon
+                points="19.969 4 24 8.027 12 20 0 8.027 4.031 4 12 11.952"
+              />
+            </svg>
+          </a>
+        </div>
+      </div>
     </div>
   </div>
 </div>
