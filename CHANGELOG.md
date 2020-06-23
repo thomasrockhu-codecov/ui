@@ -1,3 +1,46 @@
+## [2.52.1](https://github.com/nordnet/ui/compare/v2.52.0...v2.52.1) (2020-06-22)
+
+
+### Bug Fixes
+
+* remove grow and shrink from title wrapper ([a97ed09](https://github.com/nordnet/ui/commit/a97ed09))
+
+# [2.52.0](https://github.com/nordnet/ui/compare/v2.51.0...v2.52.0) (2020-06-22)
+
+
+### Features
+
+* spread link rest props ([796fca8](https://github.com/nordnet/ui/commit/796fca8))
+
+# [2.51.0](https://github.com/nordnet/ui/compare/v2.50.1...v2.51.0) (2020-06-22)
+
+
+### Features
+
+* add couple of icons, sort imports alphabetically ([81b374b](https://github.com/nordnet/ui/commit/81b374b))
+
+## [2.50.1](https://github.com/nordnet/ui/compare/v2.50.0...v2.50.1) (2020-06-15)
+
+
+### Bug Fixes
+
+* revert search drawer alignment ([3da7055](https://github.com/nordnet/ui/commit/3da7055))
+
+# [2.50.0](https://github.com/nordnet/ui/compare/v2.49.3...v2.50.0) (2020-06-12)
+
+
+### Features
+
+* 🎸 bump react-intl to v4 ([c6faf46](https://github.com/nordnet/ui/commit/c6faf46))
+
+## [2.49.3](https://github.com/nordnet/ui/compare/v2.49.2...v2.49.3) (2020-06-12)
+
+
+### Bug Fixes
+
+* update file icon ([165903d](https://github.com/nordnet/ui/commit/165903d))
+* update viewBox for file icon ([0a58de3](https://github.com/nordnet/ui/commit/0a58de3))
+
 ## [2.49.2](https://github.com/nordnet/ui/compare/v2.49.1...v2.49.2) (2020-06-10)
 
 

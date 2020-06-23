@@ -28,21 +28,23 @@ export type FlexPropsType = Pick<
   | 'size'
   | 'sm'
   | 'wrap'
+  | 'hidden'
 >;
 
-// TODO: Set correct state type
-export type ColumnsState = {
-  [columnId: string]: ColumnState;
+export type ColumnLayoutTypes = {
+  flexProps: FlexPropsType;
+};
+export type ColumnsLayoutState = {
+  [columnId: string]: ColumnLayoutTypes;
 };
 
-export type ColumnState = {
-  flexProps: FlexPropsType;
-  sortOrder: SortOrder;
-  controlledSort: boolean;
+export type ColumnDataTypes = { sortOrder: SortOrder; controlledSort: boolean };
+export type ColumnsDataState = {
+  [columnId: string]: ColumnDataTypes;
 };
+export type ColumnsState = { data: ColumnsDataState; layout: ColumnsLayoutState };
 
 export type ColumnsDispatch = (action: ColumnActions) => void;
-
 export type AllKeys<T> = T extends T ? keyof T : never;
 export type OmitOverAll<T, K extends AllKeys<T>> = T extends T
   ? Pick<T, Exclude<keyof T, K>>

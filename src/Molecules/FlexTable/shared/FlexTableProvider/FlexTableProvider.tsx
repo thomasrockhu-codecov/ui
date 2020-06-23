@@ -3,6 +3,12 @@ import { FlexTableProviderComponent, FlexTableState } from './FlexTableProvider.
 
 export const FlexTableContext = React.createContext<FlexTableState | undefined>(undefined);
 
-export const FlexTableProvider: FlexTableProviderComponent = ({ children, density }) => (
-  <FlexTableContext.Provider value={{ density }}>{children}</FlexTableContext.Provider>
+export const FlexTableProvider: FlexTableProviderComponent = ({
+  children,
+  density,
+  stickyHeader,
+}) => (
+  <FlexTableContext.Provider value={{ density, stickyHeader }}>
+    {children}
+  </FlexTableContext.Provider>
 );

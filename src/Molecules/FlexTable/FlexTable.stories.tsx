@@ -2,8 +2,10 @@ import React, { useState, useMemo } from 'react';
 import R from 'ramda';
 import styled from 'styled-components';
 import { number, withKnobs } from '@storybook/addon-knobs';
+import { FixedSizeList as List } from 'react-window';
+import AutoSizer from 'react-virtualized-auto-sizer';
 import FlexTable from './FlexTable';
-import { Button, Typography, Flag, Icon, Number, Flexbox } from '../..';
+import { Button, Typography, Flag, Icon, Number, Flexbox, Separator } from '../..';
 import { SortOrder } from './Header/HeaderContent/HeaderContent.types';
 import { OnSort } from './Header/Header.types';
 import { ICON_COLUMN_DEFAULT_FLEX_PROPS } from './shared/constants';
@@ -68,6 +70,31 @@ export const DefaultTableWithFooter = () => (
       <FlexTable.Footer columnId="column2">Footer 2</FlexTable.Footer>
       <FlexTable.Footer columnId="column3">Footer 3</FlexTable.Footer>
     </FlexTable.FooterRow>
+  </FlexTable>
+);
+
+export const DefaultTableWithTitle = () => (
+  <FlexTable title="Title">
+    <FlexTable.HeaderRow>
+      <FlexTable.Header columnId="column1">Header 1</FlexTable.Header>
+      <FlexTable.Header columnId="column2">Header 2</FlexTable.Header>
+      <FlexTable.Header columnId="column3">Header 3</FlexTable.Header>
+    </FlexTable.HeaderRow>
+    <FlexTable.Row>
+      <FlexTable.Cell columnId="column1">Cell 1-1</FlexTable.Cell>
+      <FlexTable.Cell columnId="column2">Cell 1-2</FlexTable.Cell>
+      <FlexTable.Cell columnId="column3">Cell 1-3</FlexTable.Cell>
+    </FlexTable.Row>
+    <FlexTable.Row>
+      <FlexTable.Cell columnId="column1">Cell 2-1</FlexTable.Cell>
+      <FlexTable.Cell columnId="column2">Cell 2-2</FlexTable.Cell>
+      <FlexTable.Cell columnId="column3">Cell 2-3</FlexTable.Cell>
+    </FlexTable.Row>
+    <FlexTable.Row>
+      <FlexTable.Cell columnId="column1">Cell 3-1</FlexTable.Cell>
+      <FlexTable.Cell columnId="column2">Cell 3-2</FlexTable.Cell>
+      <FlexTable.Cell columnId="column3">Cell 3-3</FlexTable.Cell>
+    </FlexTable.Row>
   </FlexTable>
 );
 
@@ -185,25 +212,165 @@ const generateTableData = (rowsLength: number, columnsLength: number) =>
     const rowId = generateUniqueId(rowIndex);
     return [...Array(columnsLength)].reduce((acc, __, columnIndex) => {
       const keyName = `value${columnIndex + 1}`;
-      return { ...acc, rowId, [keyName]: { value: `Cell ${rowIndex + 1}-${columnIndex + 1}` } };
+      const id = generateUniqueId(columnIndex);
+      return { ...acc, rowId, [keyName]: { value: `Cell ${rowIndex + 1}-${columnIndex + 1}`, id } };
     }, {});
   });
 
-const BigTableRow = ({ data }: any) => {
-  return (
-    <FlexTable.Row>
-      {Object.keys(R.omit(['rowId'], data)).map((valueKey, index) => {
-        return (
-          <FlexTable.Cell key={data.id} columnId={`column${index + 1}`}>
-            {data[valueKey].value}
-          </FlexTable.Cell>
-        );
-      })}
-    </FlexTable.Row>
-  );
-};
+const BigTableRow = ({ data }: any) => (
+  <FlexTable.Row>
+    {Object.keys(R.omit(['rowId'], data)).map((valueKey, index) => (
+      <FlexTable.Cell key={data[valueKey].id} columnId={`column${index + 1}`}>
+        {data[valueKey].value}
+      </FlexTable.Cell>
+    ))}
+  </FlexTable.Row>
+);
+
+const VirtualizedRow: any = styled(FlexTable.Row).attrs({
+  style: (p: { style: React.CSSProperties }) => p.style,
+})``;
+
+const VirtualizedTableRow = React.memo(({ data, style }: any) => (
+  <VirtualizedRow style={style}>
+    {Object.keys(R.omit(['rowId'], data)).map((valueKey, index) => (
+      <FlexTable.Cell key={data[valueKey].id} columnId={`column${index + 1}`}>
+        {data[valueKey].value}
+      </FlexTable.Cell>
+    ))}
+  </VirtualizedRow>
+));
 
 export const BigTable = () => {
+  const ReactComponent = () => {
+    const rowsLength = number('Number of rows', 500);
+    const columnsLength = number('Number of columns', 10);
+    const [sort, setSort] = useState<any>({});
+    const tableData = useMemo(() => generateTableData(rowsLength, columnsLength), [
+      rowsLength,
+      columnsLength,
+    ]);
+    const sortedData = useMemo(() => {
+      if (sort.sortOrder === 'none') {
+        return tableData;
+      }
+      const getValue = (rowData: any) => rowData[sort.columnId.replace('column', 'value')].value;
+      const sorted = tableData.slice(0).sort((rowA, rowB) => {
+        if (sort.sortOrder === 'ascending') {
+          return getValue(rowB).localeCompare(getValue(rowA));
+        }
+
+        if (sort.sortOrder === 'descending') {
+          return getValue(rowA).localeCompare(getValue(rowB));
+        }
+
+        return 0;
+      });
+      return sorted;
+    }, [tableData, sort]);
+
+    return (
+      <FlexTable>
+        <FlexTable.HeaderRow>
+          {[...Array(columnsLength)].map((_, index) => (
+            <FlexTable.Header
+              columnId={`column${index + 1}`}
+              key={`column${index + 1}`}
+              sortable
+              onSort={(columnId, nextSortOrder) => {
+                setSort({ columnId, sortOrder: nextSortOrder });
+              }}
+            >
+              Header {index + 1}
+            </FlexTable.Header>
+          ))}
+        </FlexTable.HeaderRow>
+        {sortedData.map(data => (
+          <BigTableRow key={data.rowId} data={data} />
+        ))}
+      </FlexTable>
+    );
+  };
+  return <ReactComponent />;
+};
+
+const VirtualizedBigTableRow = ({ data: items, index, style }: any) => (
+  <VirtualizedTableRow key={items[index].rowId} data={items[index]} style={style} />
+);
+
+const FullHeightDiv = styled.div`
+  display: flex;
+  flex: 1 0;
+  height: 100vh;
+`;
+
+export const VirtualizedTable = () => {
+  const ReactComponent = () => {
+    const rowsLength = number('Number of rows', 500);
+    const columnsLength = number('Number of columns', 10);
+    const [sort, setSort] = useState<any>({});
+    const tableData = useMemo(() => generateTableData(rowsLength, columnsLength), [
+      rowsLength,
+      columnsLength,
+    ]);
+    const sortedData = useMemo(() => {
+      if (sort.sortOrder === 'none') {
+        return tableData;
+      }
+      const getValue = (rowData: any) => rowData[sort.columnId.replace('column', 'value')].value;
+      const sorted = tableData.slice(0).sort((rowA, rowB) => {
+        if (sort.sortOrder === 'ascending') {
+          return getValue(rowB).localeCompare(getValue(rowA));
+        }
+
+        if (sort.sortOrder === 'descending') {
+          return getValue(rowA).localeCompare(getValue(rowB));
+        }
+
+        return 0;
+      });
+      return sorted;
+    }, [tableData, sort]);
+
+    return (
+      <FullHeightDiv>
+        <FlexTable>
+          <FlexTable.HeaderRow>
+            {[...Array(columnsLength)].map((_, index) => (
+              <FlexTable.Header
+                columnId={`column${index + 1}`}
+                key={`column${index + 1}`}
+                sortable
+                onSort={(columnId, nextSortOrder) => {
+                  setSort({ columnId, sortOrder: nextSortOrder });
+                }}
+              >
+                Header {index + 1}
+              </FlexTable.Header>
+            ))}
+          </FlexTable.HeaderRow>
+          <AutoSizer>
+            {({ height, width }: any) => (
+              <List
+                height={height}
+                width={width}
+                itemData={sortedData}
+                itemCount={sortedData.length}
+                itemSize={25}
+                overscanCount={10}
+              >
+                {VirtualizedBigTableRow}
+              </List>
+            )}
+          </AutoSizer>
+        </FlexTable>
+      </FullHeightDiv>
+    );
+  };
+  return <ReactComponent />;
+};
+
+export const BigTableWithoutStickyHeader = () => {
   const ReactComponent = () => {
     const rowsLength = number('Number of rows', 500);
     const columnsLength = number('Number of columns', 10);
@@ -228,7 +395,7 @@ export const BigTable = () => {
     }, [tableData, sort]);
 
     return (
-      <FlexTable>
+      <FlexTable stickyHeader={false}>
         <FlexTable.HeaderRow>
           {[...Array(columnsLength)].map((_, index) => (
             <FlexTable.Header
@@ -246,6 +413,79 @@ export const BigTable = () => {
           <BigTableRow key={data.rowId} data={data} />
         ))}
       </FlexTable>
+    );
+  };
+  return <ReactComponent />;
+};
+
+export const MultipleTables = () => {
+  const ReactComponent = () => {
+    const rowsLength = number('Number of rows', 100);
+    const columnsLength = number('Number of columns', 5);
+    const [sort, setSort] = useState<any>({});
+    const tableData = useMemo(() => generateTableData(rowsLength, columnsLength), [
+      rowsLength,
+      columnsLength,
+    ]);
+    const sortedData = useMemo(() => {
+      const getValue = (rowData: any) => rowData[sort.columnId.replace('column', 'value')].value;
+      return tableData.sort((rowA, rowB) => {
+        if (sort.sortOrder === 'ascending') {
+          return getValue(rowB).localeCompare(getValue(rowA));
+        }
+
+        if (sort.sortOrder === 'descending') {
+          return getValue(rowA).localeCompare(getValue(rowB));
+        }
+
+        return 0;
+      });
+    }, [tableData, sort]);
+
+    return (
+      <>
+        <FlexTable>
+          <FlexTable.HeaderRow>
+            {[...Array(columnsLength)].map((_, index) => (
+              <FlexTable.Header
+                columnId={`column${index + 1}`}
+                sortable
+                onSort={(columnId, nextSortOrder) => {
+                  setSort({ columnId, sortOrder: nextSortOrder });
+                }}
+              >
+                Table1 Header {index + 1}
+              </FlexTable.Header>
+            ))}
+          </FlexTable.HeaderRow>
+          {sortedData.map(data => (
+            <BigTableRow key={data.rowId} data={data} />
+          ))}
+        </FlexTable>
+        <br />
+        <br />
+        <Separator />
+        <br />
+        <br />
+        <FlexTable>
+          <FlexTable.HeaderRow>
+            {[...Array(columnsLength)].map((_, index) => (
+              <FlexTable.Header
+                columnId={`column${index + 1}`}
+                sortable
+                onSort={(columnId, nextSortOrder) => {
+                  setSort({ columnId, sortOrder: nextSortOrder });
+                }}
+              >
+                Table 2 Header {index + 1}
+              </FlexTable.Header>
+            ))}
+          </FlexTable.HeaderRow>
+          {sortedData.map(data => (
+            <BigTableRow key={data.rowId} data={data} />
+          ))}
+        </FlexTable>
+      </>
     );
   };
   return <ReactComponent />;
@@ -282,6 +522,33 @@ export const DifferentAlignmentsTable = () => (
       <FlexTable.Cell columnId="column2">Cell 3-2</FlexTable.Cell>
       <FlexTable.Cell columnId="column3">Cell 3-3</FlexTable.Cell>
       <FlexTable.Cell columnId="column4">Cell 3-4</FlexTable.Cell>
+    </FlexTable.Row>
+  </FlexTable>
+);
+
+export const HideColumnsOnMobilesTable = () => (
+  <FlexTable>
+    <FlexTable.HeaderRow>
+      <FlexTable.Header columnId="column1">Header 1</FlexTable.Header>
+      <FlexTable.Header columnId="column2" hidden md={{ hidden: false }}>
+        Hidden column on mobile
+      </FlexTable.Header>
+      <FlexTable.Header columnId="column3">Header 3</FlexTable.Header>
+    </FlexTable.HeaderRow>
+    <FlexTable.Row>
+      <FlexTable.Cell columnId="column1">Cell 1-1</FlexTable.Cell>
+      <FlexTable.Cell columnId="column2">Hidden on mobile</FlexTable.Cell>
+      <FlexTable.Cell columnId="column3">Cell 1-3</FlexTable.Cell>
+    </FlexTable.Row>
+    <FlexTable.Row>
+      <FlexTable.Cell columnId="column1">Cell 2-1</FlexTable.Cell>
+      <FlexTable.Cell columnId="column2">Hidden on mobile</FlexTable.Cell>
+      <FlexTable.Cell columnId="column3">Cell 2-3</FlexTable.Cell>
+    </FlexTable.Row>
+    <FlexTable.Row>
+      <FlexTable.Cell columnId="column1">Cell 3-1</FlexTable.Cell>
+      <FlexTable.Cell columnId="column2">Hidden on mobile</FlexTable.Cell>
+      <FlexTable.Cell columnId="column3">Cell 3-3</FlexTable.Cell>
     </FlexTable.Row>
   </FlexTable>
 );
@@ -443,7 +710,10 @@ export const ExpandableTable = () => {
           <FlexTable.Header columnId="column1">Header 1</FlexTable.Header>
           <FlexTable.Header columnId="column2">Header 2</FlexTable.Header>
           <FlexTable.Header columnId="column3">Header 3</FlexTable.Header>
-          <FlexTable.Header columnId="expand" {...ICON_COLUMN_DEFAULT_FLEX_PROPS} />
+          <FlexTable.Header
+            columnId={FlexTable.CONSTANTS.COLUMN_ID_EXPAND}
+            {...ICON_COLUMN_DEFAULT_FLEX_PROPS}
+          />
         </FlexTable.HeaderRow>
 
         <FlexTable.Row includeExpand>

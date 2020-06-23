@@ -1,7 +1,7 @@
-import { injectIntl } from 'react-intl';
+import { useIntl } from 'react-intl';
 import React from 'react';
 import { isValidDateTimeNumber } from '../../common/utils';
-import { TimeComponent, Props } from './Time.types';
+import { TimeComponent } from './Time.types';
 
 const timeOptions = {
   hour12: false,
@@ -10,12 +10,13 @@ const timeOptions = {
   second: 'numeric',
 };
 
-const Time: TimeComponent = ({ intl, value, invalidValue = '-' }) =>
-  isValidDateTimeNumber(value) ? (
+const Time: TimeComponent = ({ value, invalidValue = '-' }) => {
+  const intl = useIntl();
+  return isValidDateTimeNumber(value) ? (
     <time>{intl.formatTime(value, timeOptions)}</time>
   ) : (
     <>{invalidValue}</>
   );
+};
 
-const Injected = (injectIntl(Time) as any) as React.FC<Props>;
-export default Injected;
+export default Time;
