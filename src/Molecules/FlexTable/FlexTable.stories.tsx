@@ -920,17 +920,13 @@ export const SortableHeaderUncontrolledWithDifferentAlignment = () => {
     <FlexTable>
       <FlexTable.HeaderRow>
         <FlexTable.Header columnId="column1" sortable justifyContent="center">
-          Uncontrolled 1
+          Uncontrolled center
         </FlexTable.Header>
         <FlexTable.Header columnId="column2" sortable justifyContent="flex-end">
-          Uncontrolled 2
+          Uncontrolled right
         </FlexTable.Header>
-        <FlexTable.Header
-          columnId="column3"
-          sortable
-          initialSortOrder={FlexTable.CONSTANTS.SORT_ORDER_DESCENDING}
-        >
-          With initial sort order
+        <FlexTable.Header columnId="column3" sortable>
+          Uncontrolled left
         </FlexTable.Header>
         <FlexTable.Header columnId="column4" sortable={false}>
           Non sortable
