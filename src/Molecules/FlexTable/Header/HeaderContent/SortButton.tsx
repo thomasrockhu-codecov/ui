@@ -3,18 +3,16 @@ import styled from 'styled-components';
 import { SortButtonProps } from './HeaderContent.types';
 import { Button } from '../../../..';
 
-const StyledButton = styled(Button)`
+const StyledHeaderButton = styled(Button)`
   width: 100%;
   justify-content: inherit;
-  &:focus,
-  &: active {
+  &:focus {
     outline: none;
   }
 `;
 
-// TODO: Change this to an actual button for better a11y
 export const SortButton: React.FC<SortButtonProps> = ({ children, onClick }) => (
-  <StyledButton
+  <StyledHeaderButton
     variant="neutral"
     onClick={e => {
       e.preventDefault();
@@ -22,5 +20,5 @@ export const SortButton: React.FC<SortButtonProps> = ({ children, onClick }) => 
     }}
   >
     {children}
-  </StyledButton>
+  </StyledHeaderButton>
 );
