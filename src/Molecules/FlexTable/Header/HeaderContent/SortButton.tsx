@@ -1,23 +1,26 @@
 import React from 'react';
 import styled from 'styled-components';
 import { SortButtonProps } from './HeaderContent.types';
+import { Button } from '../../../../index';
 
-const StyledLink = styled.a`
-  text-decoration: none;
-  color: inherit;
+const StyledButton = styled(Button)`
   width: 100%;
+  justify-content: flex-start;
+  &:focus,
+  &: active {
+    outline: none;
+  }
 `;
 
 // TODO: Change this to an actual button for better a11y
 export const SortButton: React.FC<SortButtonProps> = ({ children, onClick }) => (
-  <StyledLink
-    href="#"
-    role="button"
-    onClick={e => {
+  <StyledButton
+    variant="neutral"
+    onClick={(e) => {
       e.preventDefault();
       onClick();
     }}
   >
     {children}
-  </StyledLink>
+  </StyledButton>
 );
