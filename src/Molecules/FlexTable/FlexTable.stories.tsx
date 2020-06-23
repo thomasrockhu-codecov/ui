@@ -710,22 +710,31 @@ export const ExpandableTable = () => {
           <FlexTable.Header columnId="column1">Header 1</FlexTable.Header>
           <FlexTable.Header columnId="column2">Header 2</FlexTable.Header>
           <FlexTable.Header columnId="column3">Header 3</FlexTable.Header>
-          <FlexTable.Header columnId="expand" {...ICON_COLUMN_DEFAULT_FLEX_PROPS} />
+          <FlexTable.Header
+            columnId={FlexTable.CONSTANTS.COLUMN_ID_EXPAND}
+            {...ICON_COLUMN_DEFAULT_FLEX_PROPS}
+          />
         </FlexTable.HeaderRow>
 
-        <FlexTable.Row expandable>
+        <FlexTable.Row includeExpand>
           <FlexTable.Cell columnId="column1">Disabled</FlexTable.Cell>
           <FlexTable.Cell columnId="column2">Disabled</FlexTable.Cell>
           <FlexTable.Cell columnId="column3">Disabled</FlexTable.Cell>
         </FlexTable.Row>
 
-        <FlexTable.Row expandable expandItems={expandItemsText} expanded>
+        <FlexTable.Row includeExpand expandItems={expandItemsText}>
           <FlexTable.Cell columnId="column1">Expandable</FlexTable.Cell>
           <FlexTable.Cell columnId="column2">Expandable</FlexTable.Cell>
           <FlexTable.Cell columnId="column3">Expandable</FlexTable.Cell>
         </FlexTable.Row>
 
-        <FlexTable.Row expandable expandItems={expandItemsComponents}>
+        <FlexTable.Row includeExpand expandItems={expandItemsText} expanded>
+          <FlexTable.Cell columnId="column1">Expandable with initial state</FlexTable.Cell>
+          <FlexTable.Cell columnId="column2">Expandable with initial state</FlexTable.Cell>
+          <FlexTable.Cell columnId="column3">Expandable with initial state</FlexTable.Cell>
+        </FlexTable.Row>
+
+        <FlexTable.Row includeExpand expandItems={expandItemsComponents}>
           <FlexTable.Cell columnId="column1">Expandable component items</FlexTable.Cell>
           <FlexTable.Cell columnId="column2">Expandable component items</FlexTable.Cell>
           <FlexTable.Cell columnId="column3">Expandable component items</FlexTable.Cell>
@@ -734,12 +743,220 @@ export const ExpandableTable = () => {
         <FlexTable.Row
           expandItems={expandItemsText}
           expandChildren={expandChildrenComponents}
-          expandable
+          includeExpand
         >
           <FlexTable.Cell columnId="column1">Expandable with children</FlexTable.Cell>
           <FlexTable.Cell columnId="column2">Expandable with children</FlexTable.Cell>
           <FlexTable.Cell columnId="column3">Expandable with children</FlexTable.Cell>
         </FlexTable.Row>
+      </FlexTable>
+    );
+  };
+  return <ExpandedTableExample />;
+};
+
+export const ExpandableControlledTable = () => {
+  const expandItemsText = expandedItemsGenerator();
+  const expandItemsComponents = expandedItemsGenerator(true);
+  const expandChildrenComponents = (
+    <Flexbox container justifyContent="center" gutter={2}>
+      <Flexbox item>
+        <Button size="l" variant="primary">
+          Buy
+        </Button>
+      </Flexbox>
+      <Flexbox item>
+        <Button size="l" variant="secondary">
+          Sell
+        </Button>
+      </Flexbox>
+    </Flexbox>
+  );
+
+  const ExpandedTableExample = () => {
+    const [expandedRows, setExpandedRows] = useState<string[]>(['row3']);
+
+    return (
+      <FlexTable>
+        <FlexTable.HeaderRow>
+          <FlexTable.Header columnId="column1">Header 1</FlexTable.Header>
+          <FlexTable.Header columnId="column2">Header 2</FlexTable.Header>
+          <FlexTable.Header columnId="column3">Header 3</FlexTable.Header>
+          <FlexTable.Header
+            columnId={FlexTable.CONSTANTS.COLUMN_ID_EXPAND}
+            {...ICON_COLUMN_DEFAULT_FLEX_PROPS}
+          />
+        </FlexTable.HeaderRow>
+
+        <FlexTable.Row includeExpand>
+          <FlexTable.Cell columnId="column1">Disabled</FlexTable.Cell>
+          <FlexTable.Cell columnId="column2">Disabled</FlexTable.Cell>
+          <FlexTable.Cell columnId="column3">Disabled</FlexTable.Cell>
+        </FlexTable.Row>
+
+        <FlexTable.Row
+          includeExpand
+          expandItems={expandItemsText}
+          expanded={expandedRows.includes('row2')}
+          onExpandToggle={expanded =>
+            expanded
+              ? setExpandedRows([...expandedRows, 'row2'])
+              : setExpandedRows(expandedRows.filter(row => row !== 'row2'))
+          }
+        >
+          <FlexTable.Cell columnId="column1">Expandable</FlexTable.Cell>
+          <FlexTable.Cell columnId="column2">Expandable</FlexTable.Cell>
+          <FlexTable.Cell columnId="column3">Expandable</FlexTable.Cell>
+        </FlexTable.Row>
+
+        <FlexTable.Row
+          includeExpand
+          expandItems={expandItemsText}
+          expanded={expandedRows.includes('row3')}
+          onExpandToggle={expanded =>
+            expanded
+              ? setExpandedRows([...expandedRows, 'row3'])
+              : setExpandedRows(expandedRows.filter(row => row !== 'row3'))
+          }
+        >
+          <FlexTable.Cell columnId="column1">Expandable with initial state</FlexTable.Cell>
+          <FlexTable.Cell columnId="column2">Expandable with initial state</FlexTable.Cell>
+          <FlexTable.Cell columnId="column3">Expandable with initial state</FlexTable.Cell>
+        </FlexTable.Row>
+
+        <FlexTable.Row
+          includeExpand
+          expandItems={expandItemsComponents}
+          expanded={expandedRows.includes('row4')}
+          onExpandToggle={expanded =>
+            expanded
+              ? setExpandedRows([...expandedRows, 'row4'])
+              : setExpandedRows(expandedRows.filter(row => row !== 'row4'))
+          }
+        >
+          <FlexTable.Cell columnId="column1">Expandable component items</FlexTable.Cell>
+          <FlexTable.Cell columnId="column2">Expandable component items</FlexTable.Cell>
+          <FlexTable.Cell columnId="column3">Expandable component items</FlexTable.Cell>
+        </FlexTable.Row>
+
+        <FlexTable.Row
+          includeExpand
+          expandItems={expandItemsText}
+          expandChildren={expandChildrenComponents}
+          expanded={expandedRows.includes('row5')}
+          onExpandToggle={expanded =>
+            expanded
+              ? setExpandedRows([...expandedRows, 'row5'])
+              : setExpandedRows(expandedRows.filter(row => row !== 'row5'))
+          }
+        >
+          <FlexTable.Cell columnId="column1">Expandable with children</FlexTable.Cell>
+          <FlexTable.Cell columnId="column2">Expandable with children</FlexTable.Cell>
+          <FlexTable.Cell columnId="column3">Expandable with children</FlexTable.Cell>
+        </FlexTable.Row>
+      </FlexTable>
+    );
+  };
+  return <ExpandedTableExample />;
+};
+
+const ExpandRow = ({ expandItems, expanded, expandChildren, children, toggleExpand }: any) => (
+  <FlexTable.Row expanded={expanded} expandItems={expandItems} expandChildren={expandChildren}>
+    {children}
+    <FlexTable.ExpandCell
+      columnId={FlexTable.CONSTANTS.COLUMN_ID_EXPAND}
+      expanded={expanded}
+      onClick={toggleExpand}
+      disabled={!expandChildren && !expandItems}
+    />
+  </FlexTable.Row>
+);
+
+export const ExpandableControlledTableWithOwnCell = () => {
+  const expandItemsText = expandedItemsGenerator();
+  const expandItemsComponents = expandedItemsGenerator(true);
+  const expandChildrenComponents = (
+    <Flexbox container justifyContent="center" gutter={2}>
+      <Flexbox item>
+        <Button size="l" variant="primary">
+          Buy
+        </Button>
+      </Flexbox>
+      <Flexbox item>
+        <Button size="l" variant="secondary">
+          Sell
+        </Button>
+      </Flexbox>
+    </Flexbox>
+  );
+
+  const ExpandedTableExample = () => {
+    const [expandedRows, setExpandedRows] = useState<string[]>(['row3']);
+    const toggleExpand = (rowId: string) => {
+      const isAlreadyExpanded = expandedRows.includes(rowId);
+      if (isAlreadyExpanded) {
+        return setExpandedRows(expandedRows.filter(row => row !== rowId));
+      }
+      return setExpandedRows([...expandedRows, rowId]);
+    };
+    return (
+      <FlexTable>
+        <FlexTable.HeaderRow>
+          <FlexTable.Header columnId="column1">Header 1</FlexTable.Header>
+          <FlexTable.Header columnId="column2">Header 2</FlexTable.Header>
+          <FlexTable.Header columnId="column3">Header 3</FlexTable.Header>
+          <FlexTable.Header
+            columnId={FlexTable.CONSTANTS.COLUMN_ID_EXPAND}
+            {...ICON_COLUMN_DEFAULT_FLEX_PROPS}
+          />
+        </FlexTable.HeaderRow>
+
+        <ExpandRow>
+          <FlexTable.Cell columnId="column1">Disabled</FlexTable.Cell>
+          <FlexTable.Cell columnId="column2">Disabled</FlexTable.Cell>
+          <FlexTable.Cell columnId="column3">Disabled</FlexTable.Cell>
+        </ExpandRow>
+
+        <ExpandRow
+          expandItems={expandItemsText}
+          expanded={expandedRows.includes('row2')}
+          toggleExpand={() => toggleExpand('row2')}
+        >
+          <FlexTable.Cell columnId="column1">Expandable</FlexTable.Cell>
+          <FlexTable.Cell columnId="column2">Expandable</FlexTable.Cell>
+          <FlexTable.Cell columnId="column3">Expandable</FlexTable.Cell>
+        </ExpandRow>
+
+        <ExpandRow
+          expandItems={expandItemsText}
+          expanded={expandedRows.includes('row3')}
+          toggleExpand={() => toggleExpand('row3')}
+        >
+          <FlexTable.Cell columnId="column1">Expandable with initial state</FlexTable.Cell>
+          <FlexTable.Cell columnId="column2">Expandable with initial state</FlexTable.Cell>
+          <FlexTable.Cell columnId="column3">Expandable with initial state</FlexTable.Cell>
+        </ExpandRow>
+
+        <ExpandRow
+          expandItems={expandItemsComponents}
+          expanded={expandedRows.includes('row4')}
+          toggleExpand={() => toggleExpand('row4')}
+        >
+          <FlexTable.Cell columnId="column1">Expandable component items</FlexTable.Cell>
+          <FlexTable.Cell columnId="column2">Expandable component items</FlexTable.Cell>
+          <FlexTable.Cell columnId="column3">Expandable component items</FlexTable.Cell>
+        </ExpandRow>
+
+        <ExpandRow
+          expandItems={expandItemsText}
+          expandChildren={expandChildrenComponents}
+          expanded={expandedRows.includes('row5')}
+          toggleExpand={() => toggleExpand('row5')}
+        >
+          <FlexTable.Cell columnId="column1">Expandable with children</FlexTable.Cell>
+          <FlexTable.Cell columnId="column2">Expandable with children</FlexTable.Cell>
+          <FlexTable.Cell columnId="column3">Expandable with children</FlexTable.Cell>
+        </ExpandRow>
       </FlexTable>
     );
   };
