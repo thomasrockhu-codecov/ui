@@ -7,7 +7,7 @@ import { Props as FlexBoxProps } from '../../../../Atoms/Flexbox/Flexbox.types';
 import { TextWrapperLabel, TextWrapperValue } from './TextWrappers';
 
 const StyledFlexboxItem = styled(Flexbox)<FlexBoxProps>`
-  max-width: ${p => p.theme.spacing.unit(40)}px;
+  max-width: ${p => p.theme.spacing.unit(75)}px;
   padding-bottom: ${p => p.theme.spacing.unit(5)}px;
 `;
 
