@@ -1001,7 +1001,6 @@ export const TableHeaders = () => {
             Non sortable
           </FlexTable.Header>
         </FlexTable.HeaderRow>
-        <FlexTable.Row />
       </FlexTable>
     );
   };

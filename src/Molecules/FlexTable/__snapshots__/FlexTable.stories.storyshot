@@ -131209,7 +131209,7 @@ exports[`Storyshots Molecules | FlexTable Table Headers 1`] = `
   transform: rotate(180deg);
 }
 
-.c21 {
+.c20 {
   -webkit-transform: rotate(0deg);
   -ms-transform: rotate(0deg);
   transform: rotate(0deg);
@@ -131249,19 +131249,6 @@ exports[`Storyshots Molecules | FlexTable Table Headers 1`] = `
   border-left: 2px solid transparent;
   padding-top: 4px;
   padding-bottom: 4px;
-}
-
-.c20 {
-  border-bottom: 1px solid #EBEBE8;
-  padding-right: 4px;
-  padding-left: 2px;
-  border-left: 2px solid transparent;
-  padding-top: 4px;
-  padding-bottom: 4px;
-}
-
-.c20:hover {
-  background: #F5F5F5;
 }
 
 .c7 {
@@ -131583,10 +131570,6 @@ exports[`Storyshots Molecules | FlexTable Table Headers 1`] = `
           </span>
         </div>
       </div>
-      <div
-        className="c5 c20"
-        role="row"
-      />
     </div>
   </div>
   <div
@@ -131760,7 +131743,7 @@ exports[`Storyshots Molecules | FlexTable Table Headers 1`] = `
             </span>
             <svg
               aria-hidden="true"
-              className="c17 c21 c19"
+              className="c17 c20 c19"
               direction="ascending"
               focusable="false"
               preserveAspectRatio="xMidYMid meet"
