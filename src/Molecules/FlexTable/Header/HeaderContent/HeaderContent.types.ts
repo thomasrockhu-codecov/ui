@@ -18,7 +18,6 @@ export type SortIconComponent = React.FC<SortIconProps>;
 
 export type SortButtonProps = {
   onClick: () => void;
-  children: React.ReactChild;
 };
 
 export type SortButtonComponent = React.FC<SortButtonProps>;
