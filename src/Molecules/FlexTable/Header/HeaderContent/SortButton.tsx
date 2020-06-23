@@ -5,7 +5,7 @@ import { Button } from '../../../../index';
 
 const StyledButton = styled(Button)`
   width: 100%;
-  justify-content: flex-start;
+  justify-content: inherit;
   &:focus,
   &: active {
     outline: none;
@@ -16,7 +16,7 @@ const StyledButton = styled(Button)`
 export const SortButton: React.FC<SortButtonProps> = ({ children, onClick }) => (
   <StyledButton
     variant="neutral"
-    onClick={(e) => {
+    onClick={e => {
       e.preventDefault();
       onClick();
     }}
