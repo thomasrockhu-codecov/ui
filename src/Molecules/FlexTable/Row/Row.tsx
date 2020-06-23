@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import styled from 'styled-components';
-import * as R from 'ramda';
 import { RowComponent, RowComponents } from './Row.types';
 import { Box, Flexbox, Button, Icon } from '../../../index';
 import { ColorFn } from '../../../common/Types/sharedTypes';
@@ -57,7 +56,7 @@ export const ExpandButton: React.FC<{ expanded: boolean; onClick: () => void }> 
 
 const Row: RowComponent & RowComponents = ({
   className,
-  expanded,
+  expanded = false,
   hoverHighlight = true,
   hideSeparator = false,
   separatorColor = theme => theme.color.divider,
@@ -69,13 +68,11 @@ const Row: RowComponent & RowComponents = ({
   ...htmlProps
 }) => {
   const { density } = useFlexTable();
-  const [expand, setExpand] = useState(expanded || false);
+  const [expand, setExpand] = useState(expanded);
 
   useEffect(() => {
-    if (!R.isNil(expanded)) {
-      setExpand(expanded);
-    }
-  }, [expand, expanded]);
+    setExpand(expanded);
+  }, [expanded]);
 
   return (
     <>
