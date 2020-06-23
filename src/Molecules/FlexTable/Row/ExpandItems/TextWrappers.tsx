@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { Typography, Media } from '../../../..';
+import { useFlexTable } from '../../shared/FlexTableProvider';
 
 const StyledTypography = styled(Typography)`
   display: inline-block;
@@ -16,13 +17,18 @@ export const TextWrapperLabel: React.FC = ({ children }) => (
   </StyledTypography>
 );
 
-export const TextWrapperValue: React.FC = ({ children }) => (
-  <>
-    <Media query={t => t.media.lessThan(t.breakpoints.md)}>
-      <StyledTypography type="tertiary">{children}</StyledTypography>
-    </Media>
-    <Media query={t => t.media.greaterThan(t.breakpoints.md)}>
-      <StyledTypography type="secondary">{children}</StyledTypography>
-    </Media>
-  </>
-);
+export const TextWrapperValue: React.FC = ({ children }) => {
+  const { density } = useFlexTable();
+  return (
+    <>
+      <Media query={t => t.media.lessThan(t.breakpoints.md)}>
+        <StyledTypography type="tertiary">{children}</StyledTypography>
+      </Media>
+      <Media query={t => t.media.greaterThan(t.breakpoints.md)}>
+        <StyledTypography type={density === 's' ? 'tertiary' : 'secondary'}>
+          {children}
+        </StyledTypography>
+      </Media>
+    </>
+  );
+};

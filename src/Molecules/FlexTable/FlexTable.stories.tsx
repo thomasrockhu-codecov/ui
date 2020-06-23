@@ -667,15 +667,6 @@ export const TablesWithDifferentDensities = () => (
   </StyledDiv>
 );
 
-export const TableWithDifferentRows = () => (
-  <FlexTable>
-    <FlexTable.Row separatorColor={t => t.color.barChartColor1}>Separator color set</FlexTable.Row>
-    <FlexTable.Row>Default</FlexTable.Row>
-    <FlexTable.Row hideSeparator>Separator hidden</FlexTable.Row>
-    <FlexTable.Row>Default</FlexTable.Row>
-  </FlexTable>
-);
-
 const expandedItemsGenerator = (renderComponent = false) =>
   [...Array(20)].reduce((acc, _, itemIndex) => {
     const keyName = `${itemIndex + 1}`;
@@ -685,6 +676,52 @@ const expandedItemsGenerator = (renderComponent = false) =>
     const value = renderComponent ? <Number value={valueText} /> : valueText.toString();
     return [...acc, { label, value }];
   }, []);
+
+export const ExpandableTableWithDensitySmall = () => {
+  const expandItemsText = expandedItemsGenerator();
+
+  const ExpandedTableExample = () => {
+    return (
+      <FlexTable density="s">
+        <FlexTable.HeaderRow>
+          <FlexTable.Header columnId="column1">Header 1</FlexTable.Header>
+          <FlexTable.Header columnId="column2">Header 2</FlexTable.Header>
+          <FlexTable.Header columnId="column3">Header 3</FlexTable.Header>
+          <FlexTable.Header
+            columnId={FlexTable.CONSTANTS.COLUMN_ID_EXPAND}
+            {...ICON_COLUMN_DEFAULT_FLEX_PROPS}
+          />
+        </FlexTable.HeaderRow>
+
+        <FlexTable.Row includeExpand expandItems={expandItemsText}>
+          <FlexTable.Cell columnId="column1">Expandable</FlexTable.Cell>
+          <FlexTable.Cell columnId="column2">Expandable</FlexTable.Cell>
+          <FlexTable.Cell columnId="column3">Expandable</FlexTable.Cell>
+        </FlexTable.Row>
+        <FlexTable.Row includeExpand expandItems={expandItemsText}>
+          <FlexTable.Cell columnId="column1">Expandable</FlexTable.Cell>
+          <FlexTable.Cell columnId="column2">Expandable</FlexTable.Cell>
+          <FlexTable.Cell columnId="column3">Expandable</FlexTable.Cell>
+        </FlexTable.Row>
+        <FlexTable.Row includeExpand expandItems={expandItemsText}>
+          <FlexTable.Cell columnId="column1">Expandable</FlexTable.Cell>
+          <FlexTable.Cell columnId="column2">Expandable</FlexTable.Cell>
+          <FlexTable.Cell columnId="column3">Expandable</FlexTable.Cell>
+        </FlexTable.Row>
+      </FlexTable>
+    );
+  };
+  return <ExpandedTableExample />;
+};
+
+export const TableWithDifferentRows = () => (
+  <FlexTable>
+    <FlexTable.Row separatorColor={t => t.color.barChartColor1}>Separator color set</FlexTable.Row>
+    <FlexTable.Row>Default</FlexTable.Row>
+    <FlexTable.Row hideSeparator>Separator hidden</FlexTable.Row>
+    <FlexTable.Row>Default</FlexTable.Row>
+  </FlexTable>
+);
 
 export const ExpandableTable = () => {
   const expandItemsText = expandedItemsGenerator();
