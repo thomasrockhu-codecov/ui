@@ -686,6 +686,13 @@ const expandedItemsGenerator = (renderComponent = false) =>
     return [...acc, { label, value }];
   }, []);
 
+const StyledTableDiv = styled.div`
+  &:not(:first-of-type) {
+    margin-top: ${p => p.theme.spacing.unit(10)}px;
+  }
+  background-color: white;
+`;
+
 export const ExpandableTable = () => {
   const expandItemsText = expandedItemsGenerator();
   const expandItemsComponents = expandedItemsGenerator(true);
@@ -752,28 +759,8 @@ export const ExpandableTable = () => {
       </FlexTable>
     );
   };
-  return <ExpandedTableExample />;
-};
 
-export const ExpandableControlledTable = () => {
-  const expandItemsText = expandedItemsGenerator();
-  const expandItemsComponents = expandedItemsGenerator(true);
-  const expandChildrenComponents = (
-    <Flexbox container justifyContent="center" gutter={2}>
-      <Flexbox item>
-        <Button size="l" variant="primary">
-          Buy
-        </Button>
-      </Flexbox>
-      <Flexbox item>
-        <Button size="l" variant="secondary">
-          Sell
-        </Button>
-      </Flexbox>
-    </Flexbox>
-  );
-
-  const ExpandedTableExample = () => {
+  const ControlledExpandedTableExample = () => {
     const [expandedRows, setExpandedRows] = useState<string[]>(['row3']);
 
     return (
@@ -857,40 +844,20 @@ export const ExpandableControlledTable = () => {
       </FlexTable>
     );
   };
-  return <ExpandedTableExample />;
-};
 
-const ExpandRow = ({ expandItems, expanded, expandChildren, children, toggleExpand }: any) => (
-  <FlexTable.Row expanded={expanded} expandItems={expandItems} expandChildren={expandChildren}>
-    {children}
-    <FlexTable.ExpandCell
-      columnId={FlexTable.CONSTANTS.COLUMN_ID_EXPAND}
-      expanded={expanded}
-      onClick={toggleExpand}
-      disabled={!expandChildren && !expandItems}
-    />
-  </FlexTable.Row>
-);
-
-export const ExpandableControlledTableWithOwnCell = () => {
-  const expandItemsText = expandedItemsGenerator();
-  const expandItemsComponents = expandedItemsGenerator(true);
-  const expandChildrenComponents = (
-    <Flexbox container justifyContent="center" gutter={2}>
-      <Flexbox item>
-        <Button size="l" variant="primary">
-          Buy
-        </Button>
-      </Flexbox>
-      <Flexbox item>
-        <Button size="l" variant="secondary">
-          Sell
-        </Button>
-      </Flexbox>
-    </Flexbox>
+  const ExpandRow = ({ expandItems, expanded, expandChildren, children, toggleExpand }: any) => (
+    <FlexTable.Row expanded={expanded} expandItems={expandItems} expandChildren={expandChildren}>
+      {children}
+      <FlexTable.ExpandCell
+        columnId={FlexTable.CONSTANTS.COLUMN_ID_EXPAND}
+        expanded={expanded}
+        onClick={toggleExpand}
+        disabled={!expandChildren && !expandItems}
+      />
+    </FlexTable.Row>
   );
 
-  const ExpandedTableExample = () => {
+  const ControlledExpandableTableWithOwnCell = () => {
     const [expandedRows, setExpandedRows] = useState<string[]>(['row3']);
     const toggleExpand = (rowId: string) => {
       const isAlreadyExpanded = expandedRows.includes(rowId);
@@ -960,7 +927,23 @@ export const ExpandableControlledTableWithOwnCell = () => {
       </FlexTable>
     );
   };
-  return <ExpandedTableExample />;
+
+  return (
+    <StyledDiv>
+      <StyledTableDiv>
+        <Typography type="title3">Default Expandable Table</Typography>
+        <ExpandedTableExample />
+      </StyledTableDiv>
+      <StyledTableDiv>
+        <Typography type="title3">Controlled Expandable Table</Typography>
+        <ControlledExpandedTableExample />
+      </StyledTableDiv>
+      <StyledTableDiv>
+        <Typography type="title3">Controlled Expandable Table With Own Cell</Typography>
+        <ControlledExpandableTableWithOwnCell />
+      </StyledTableDiv>
+    </StyledDiv>
+  );
 };
 
 export const TableHeader = () => {
