@@ -4,8 +4,6 @@ import { SortButtonProps } from './HeaderContent.types';
 import { Button } from '../../../..';
 
 const StyledButton = styled(Button)`
-  text-decoration: none;
-  color: inherit;
   width: 100%;
   justify-content: inherit;
   &:focus,
