@@ -167,13 +167,36 @@ export const DefaultTable = () => {
 
 export const TableWithDifferentRows = () => (
   <StyledFlexTable>
-    <FlexTable.Row>Default</FlexTable.Row>
-    <FlexTable.Row hoverHighlight={false}>No highlight</FlexTable.Row>
-    <FlexTable.Row hideSeparator>Separator hidden</FlexTable.Row>
-    <FlexTable.Row hoverHighlight={false} hideSeparator>
-      No highlight and separator hidden
+    <FlexTable.HeaderRow>
+      <FlexTable.Header columnId="column1">Header 1</FlexTable.Header>
+      <FlexTable.Header columnId="column2">Header 2</FlexTable.Header>
+      <FlexTable.Header columnId="column3">Header 3</FlexTable.Header>
+    </FlexTable.HeaderRow>
+    <FlexTable.Row>
+      <FlexTable.Cell columnId="column1">Default</FlexTable.Cell>
+      <FlexTable.Cell columnId="column2">Default</FlexTable.Cell>
+      <FlexTable.Cell columnId="column3">Default</FlexTable.Cell>
     </FlexTable.Row>
-    <FlexTable.Row separatorColor={t => t.color.barChartColor1}>Separator color set</FlexTable.Row>
+    <FlexTable.Row hoverHighlight={false}>
+      <FlexTable.Cell columnId="column1">No highlight</FlexTable.Cell>
+      <FlexTable.Cell columnId="column2">No highlight</FlexTable.Cell>
+      <FlexTable.Cell columnId="column3">No highlight</FlexTable.Cell>
+    </FlexTable.Row>
+    <FlexTable.Row hideSeparator>
+      <FlexTable.Cell columnId="column1">Separator hidden</FlexTable.Cell>
+      <FlexTable.Cell columnId="column2">Separator hidden</FlexTable.Cell>
+      <FlexTable.Cell columnId="column3">Separator hidden</FlexTable.Cell>
+    </FlexTable.Row>
+    <FlexTable.Row hoverHighlight={false} hideSeparator>
+      <FlexTable.Cell columnId="column1">No highlight and separator hidden</FlexTable.Cell>
+      <FlexTable.Cell columnId="column2">No highlight and separator hidden</FlexTable.Cell>
+      <FlexTable.Cell columnId="column3">No highlight and separator hidden</FlexTable.Cell>
+    </FlexTable.Row>
+    <FlexTable.Row separatorColor={t => t.color.barChartColor1}>
+      <FlexTable.Cell columnId="column1">Separator color set</FlexTable.Cell>
+      <FlexTable.Cell columnId="column2">Separator color set</FlexTable.Cell>
+      <FlexTable.Cell columnId="column3">Separator color set</FlexTable.Cell>
+    </FlexTable.Row>
   </StyledFlexTable>
 );
 
@@ -1127,5 +1150,3 @@ export const MultipleBigTablesWithStickyHeaders = () => {
   };
   return <ReactComponent />;
 };
-
-// TODO: add story to how you create a custom sorting header and variations thereof

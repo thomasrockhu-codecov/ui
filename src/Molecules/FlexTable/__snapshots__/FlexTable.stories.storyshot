@@ -132049,6 +132049,20 @@ exports[`Storyshots Molecules | FlexTable Table With Different Rows 1`] = `
   align-items: center;
 }
 
+.c7 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+
 .c3 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
@@ -132056,6 +132070,35 @@ exports[`Storyshots Molecules | FlexTable Table With Different Rows 1`] = `
   font-weight: 800;
   font-size: 18px;
   line-height: 1.3333333333333333;
+}
+
+.c8 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #6E6E69;
+  margin: 0;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.3333333333333333;
+}
+
+.c12 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.3333333333333333;
+}
+
+.c13 {
+  display: inline-block;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.c11 {
+  overflow: hidden;
 }
 
 .c5 {
@@ -132067,11 +132110,7 @@ exports[`Storyshots Molecules | FlexTable Table With Different Rows 1`] = `
   padding-bottom: 4px;
 }
 
-.c5:hover {
-  background: #F5F5F5;
-}
-
-.c6 {
+.c10 {
   border-bottom: 1px solid #EBEBE8;
   padding-right: 4px;
   padding-left: 2px;
@@ -132080,19 +132119,11 @@ exports[`Storyshots Molecules | FlexTable Table With Different Rows 1`] = `
   padding-bottom: 4px;
 }
 
-.c7 {
-  padding-right: 4px;
-  padding-left: 2px;
-  border-left: 2px solid transparent;
-  padding-top: 4px;
-  padding-bottom: 4px;
-}
-
-.c7:hover {
+.c10:hover {
   background: #F5F5F5;
 }
 
-.c8 {
+.c14 {
   padding-right: 4px;
   padding-left: 2px;
   border-left: 2px solid transparent;
@@ -132100,7 +132131,19 @@ exports[`Storyshots Molecules | FlexTable Table With Different Rows 1`] = `
   padding-bottom: 4px;
 }
 
-.c9 {
+.c14:hover {
+  background: #F5F5F5;
+}
+
+.c15 {
+  padding-right: 4px;
+  padding-left: 2px;
+  border-left: 2px solid transparent;
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+
+.c16 {
   border-bottom: 1px solid #00C8F5;
   padding-right: 4px;
   padding-left: 2px;
@@ -132109,8 +132152,20 @@ exports[`Storyshots Molecules | FlexTable Table With Different Rows 1`] = `
   padding-bottom: 4px;
 }
 
-.c9:hover {
+.c16:hover {
   background: #F5F5F5;
+}
+
+.c6 {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  background-color: #FFFFFF;
+}
+
+.c9 {
+  display: inline-block;
+  word-break: break-word;
 }
 
 .c0 {
@@ -132146,34 +132201,214 @@ exports[`Storyshots Molecules | FlexTable Table With Different Rows 1`] = `
     </div>
   </caption>
   <div
+    className="c4 c5 c6"
+    role="row"
+  >
+    <div
+      className="c7"
+      role="columnheader"
+    >
+      <span
+        className="c8 c9"
+      >
+        Header 1
+      </span>
+    </div>
+    <div
+      className="c7"
+      role="columnheader"
+    >
+      <span
+        className="c8 c9"
+      >
+        Header 2
+      </span>
+    </div>
+    <div
+      className="c7"
+      role="columnheader"
+    >
+      <span
+        className="c8 c9"
+      >
+        Header 3
+      </span>
+    </div>
+  </div>
+  <div
+    className="c4 c10"
+    role="row"
+  >
+    <div
+      className="c7 c11"
+      role="cell"
+    >
+      <span
+        className="c12 c13"
+      >
+        Default
+      </span>
+    </div>
+    <div
+      className="c7 c11"
+      role="cell"
+    >
+      <span
+        className="c12 c13"
+      >
+        Default
+      </span>
+    </div>
+    <div
+      className="c7 c11"
+      role="cell"
+    >
+      <span
+        className="c12 c13"
+      >
+        Default
+      </span>
+    </div>
+  </div>
+  <div
     className="c4 c5"
     role="row"
   >
-    Default
+    <div
+      className="c7 c11"
+      role="cell"
+    >
+      <span
+        className="c12 c13"
+      >
+        No highlight
+      </span>
+    </div>
+    <div
+      className="c7 c11"
+      role="cell"
+    >
+      <span
+        className="c12 c13"
+      >
+        No highlight
+      </span>
+    </div>
+    <div
+      className="c7 c11"
+      role="cell"
+    >
+      <span
+        className="c12 c13"
+      >
+        No highlight
+      </span>
+    </div>
   </div>
   <div
-    className="c4 c6"
+    className="c4 c14"
     role="row"
   >
-    No highlight
+    <div
+      className="c7 c11"
+      role="cell"
+    >
+      <span
+        className="c12 c13"
+      >
+        Separator hidden
+      </span>
+    </div>
+    <div
+      className="c7 c11"
+      role="cell"
+    >
+      <span
+        className="c12 c13"
+      >
+        Separator hidden
+      </span>
+    </div>
+    <div
+      className="c7 c11"
+      role="cell"
+    >
+      <span
+        className="c12 c13"
+      >
+        Separator hidden
+      </span>
+    </div>
   </div>
   <div
-    className="c4 c7"
+    className="c4 c15"
     role="row"
   >
-    Separator hidden
+    <div
+      className="c7 c11"
+      role="cell"
+    >
+      <span
+        className="c12 c13"
+      >
+        No highlight and separator hidden
+      </span>
+    </div>
+    <div
+      className="c7 c11"
+      role="cell"
+    >
+      <span
+        className="c12 c13"
+      >
+        No highlight and separator hidden
+      </span>
+    </div>
+    <div
+      className="c7 c11"
+      role="cell"
+    >
+      <span
+        className="c12 c13"
+      >
+        No highlight and separator hidden
+      </span>
+    </div>
   </div>
   <div
-    className="c4 c8"
+    className="c4 c16"
     role="row"
   >
-    No highlight and separator hidden
-  </div>
-  <div
-    className="c4 c9"
-    role="row"
-  >
-    Separator color set
+    <div
+      className="c7 c11"
+      role="cell"
+    >
+      <span
+        className="c12 c13"
+      >
+        Separator color set
+      </span>
+    </div>
+    <div
+      className="c7 c11"
+      role="cell"
+    >
+      <span
+        className="c12 c13"
+      >
+        Separator color set
+      </span>
+    </div>
+    <div
+      className="c7 c11"
+      role="cell"
+    >
+      <span
+        className="c12 c13"
+      >
+        Separator color set
+      </span>
+    </div>
   </div>
 </div>
 `;
