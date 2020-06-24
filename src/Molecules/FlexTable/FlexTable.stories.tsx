@@ -714,15 +714,6 @@ export const ExpandableTableWithDensitySmall = () => {
   return <ExpandedTableExample />;
 };
 
-export const TableWithDifferentRows = () => (
-  <FlexTable>
-    <FlexTable.Row separatorColor={t => t.color.barChartColor1}>Separator color set</FlexTable.Row>
-    <FlexTable.Row>Default</FlexTable.Row>
-    <FlexTable.Row hideSeparator>Separator hidden</FlexTable.Row>
-    <FlexTable.Row>Default</FlexTable.Row>
-  </FlexTable>
-);
-
 export const ExpandableTable = () => {
   const expandItemsText = expandedItemsGenerator();
   const expandItemsComponents = expandedItemsGenerator(true);
