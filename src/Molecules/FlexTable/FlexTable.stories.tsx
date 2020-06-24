@@ -880,7 +880,7 @@ export const ExpandableTable = () => {
     </FlexTable.Row>
   );
 
-  const ControlledExpandableTableWithOwnCell = () => {
+  const ControlledExpandableTableWithOwnCellExample = () => {
     const [expandedRows, setExpandedRows] = useState<string[]>(['row3']);
     const toggleExpand = (rowId: string) => {
       const isAlreadyExpanded = expandedRows.includes(rowId);
@@ -963,7 +963,7 @@ export const ExpandableTable = () => {
       </StyledTableDiv>
       <StyledTableDiv>
         <Typography type="title3">Controlled Expandable Table With Own Cell</Typography>
-        <ControlledExpandableTableWithOwnCell />
+        <ControlledExpandableTableWithOwnCellExample />
       </StyledTableDiv>
     </StyledDiv>
   );
