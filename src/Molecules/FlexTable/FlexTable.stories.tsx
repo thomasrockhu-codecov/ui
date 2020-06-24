@@ -173,28 +173,15 @@ export const DefaultTable = () => {
   );
 };
 
-export const TableWithNonHiglightableRows = () => (
+export const TableWithDifferentRows = () => (
   <FlexTable>
-    <FlexTable.HeaderRow>
-      <FlexTable.Header columnId="column1">Header 1</FlexTable.Header>
-      <FlexTable.Header columnId="column2">Header 2</FlexTable.Header>
-      <FlexTable.Header columnId="column3">Header 3</FlexTable.Header>
-    </FlexTable.HeaderRow>
-    <FlexTable.Row>
-      <FlexTable.Cell columnId="column1">Cell 1-1</FlexTable.Cell>
-      <FlexTable.Cell columnId="column2">Cell 1-2</FlexTable.Cell>
-      <FlexTable.Cell columnId="column3">Cell 1-3</FlexTable.Cell>
+    <FlexTable.Row>Default</FlexTable.Row>
+    <FlexTable.Row hoverHighlight={false}>No highlight</FlexTable.Row>
+    <FlexTable.Row hideSeparator>Separator hidden</FlexTable.Row>
+    <FlexTable.Row hoverHighlight={false} hideSeparator>
+      No highlight and separator hidden
     </FlexTable.Row>
-    <FlexTable.Row hoverHighlight={false}>
-      <FlexTable.Cell columnId="column1">No highlight 2-1</FlexTable.Cell>
-      <FlexTable.Cell columnId="column2">No highlight 2-2</FlexTable.Cell>
-      <FlexTable.Cell columnId="column3">No highlight 2-3</FlexTable.Cell>
-    </FlexTable.Row>
-    <FlexTable.Row>
-      <FlexTable.Cell columnId="column1">Cell 3-1</FlexTable.Cell>
-      <FlexTable.Cell columnId="column2">Cell 3-2</FlexTable.Cell>
-      <FlexTable.Cell columnId="column3">Cell 3-3</FlexTable.Cell>
-    </FlexTable.Row>
+    <FlexTable.Row separatorColor={t => t.color.barChartColor1}>Separator color set</FlexTable.Row>
   </FlexTable>
 );
 
@@ -587,31 +574,6 @@ export const HideColumnsOnMobilesTable = () => (
   </FlexTable>
 );
 
-export const TableWithoutSeparators = () => (
-  <FlexTable>
-    <FlexTable.HeaderRow>
-      <FlexTable.Header columnId="column1">Header 1</FlexTable.Header>
-      <FlexTable.Header columnId="column2">Header 2</FlexTable.Header>
-      <FlexTable.Header columnId="column3">Header 3</FlexTable.Header>
-    </FlexTable.HeaderRow>
-    <FlexTable.Row hideSeparator>
-      <FlexTable.Cell columnId="column1">Cell 1-1</FlexTable.Cell>
-      <FlexTable.Cell columnId="column2">Cell 1-2</FlexTable.Cell>
-      <FlexTable.Cell columnId="column3">Cell 1-3</FlexTable.Cell>
-    </FlexTable.Row>
-    <FlexTable.Row hideSeparator>
-      <FlexTable.Cell columnId="column1">Cell 2-1</FlexTable.Cell>
-      <FlexTable.Cell columnId="column2">Cell 2-2</FlexTable.Cell>
-      <FlexTable.Cell columnId="column3">Cell 2-3</FlexTable.Cell>
-    </FlexTable.Row>
-    <FlexTable.Row hideSeparator>
-      <FlexTable.Cell columnId="column1">Cell 3-1</FlexTable.Cell>
-      <FlexTable.Cell columnId="column2">Cell 3-2</FlexTable.Cell>
-      <FlexTable.Cell columnId="column3">Cell 3-3</FlexTable.Cell>
-    </FlexTable.Row>
-  </FlexTable>
-);
-
 const StyledFlexTable = styled(FlexTable)`
   background-color: white;
   margin-bottom: ${p => p.theme.spacing.unit(5)}px;
@@ -695,15 +657,6 @@ export const TablesWithDifferentDensities = () => (
       </FlexTable.Row>
     </StyledFlexTable>
   </StyledDiv>
-);
-
-export const TableWithDifferentRows = () => (
-  <FlexTable>
-    <FlexTable.Row separatorColor={t => t.color.barChartColor1}>Separator color set</FlexTable.Row>
-    <FlexTable.Row>Default</FlexTable.Row>
-    <FlexTable.Row hideSeparator>Separator hidden</FlexTable.Row>
-    <FlexTable.Row>Default</FlexTable.Row>
-  </FlexTable>
 );
 
 const expandedItemsGenerator = (renderComponent = false) =>
