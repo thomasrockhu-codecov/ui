@@ -35,7 +35,7 @@ export const HeaderRow: HeaderRowComponent = ({
       className={className}
       hoverHighlight={false}
       hideSeparator={hideSeparator}
-      isHeader
+      isContent={false}
       separatorColor={separatorColor}
       sticky={stickyHeader}
       {...htmlProps}

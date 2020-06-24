@@ -30,7 +30,7 @@ type Props = {
   hideSeparator?: boolean;
   hoverHighlight?: boolean;
   separatorColor?: ColorFn;
-  isHeader?: boolean;
+  isContent?: boolean;
 } & ExpandProps &
   HtmlProps;
 
@@ -43,7 +43,7 @@ export type RowComponent = React.FC<Props>;
 
 type HeaderProps = {
   hideSeparator?: boolean;
-  isHeader?: boolean;
+  isContent?: boolean;
   separatorColor?: ColorFn;
 } & HtmlProps;
 

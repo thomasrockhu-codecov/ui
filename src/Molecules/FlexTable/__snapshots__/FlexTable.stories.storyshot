@@ -107956,8 +107956,8 @@ exports[`Storyshots Molecules | FlexTable Expandable Controlled Table 1`] = `
 
 .c4 {
   border-bottom: 1px solid #EBEBE8;
-  padding-right: 4px;
-  padding-left: 2px;
+  padding-right: 8px;
+  padding-left: 6px;
   border-left: 2px solid transparent;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -107965,8 +107965,8 @@ exports[`Storyshots Molecules | FlexTable Expandable Controlled Table 1`] = `
 
 .c10 {
   border-bottom: 1px solid #EBEBE8;
-  padding-right: 4px;
-  padding-left: 2px;
+  padding-right: 8px;
+  padding-left: 6px;
   border-left: 2px solid transparent;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -107977,8 +107977,8 @@ exports[`Storyshots Molecules | FlexTable Expandable Controlled Table 1`] = `
 }
 
 .c25 {
-  padding-right: 4px;
-  padding-left: 2px;
+  padding-right: 8px;
+  padding-left: 6px;
   border-left: 2px solid #0046FF;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -116046,6 +116046,15 @@ exports[`Storyshots Molecules | FlexTable Expandable Table 1`] = `
   line-height: 1.4285714285714286;
 }
 
+.c40 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 1.3333333333333333;
+}
+
 .c15 {
   font-family: inherit;
   font-size: 100%;
@@ -116196,8 +116205,8 @@ exports[`Storyshots Molecules | FlexTable Expandable Table 1`] = `
 
 .c4 {
   border-bottom: 1px solid #EBEBE8;
-  padding-right: 4px;
-  padding-left: 2px;
+  padding-right: 8px;
+  padding-left: 6px;
   border-left: 2px solid transparent;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -116205,8 +116214,8 @@ exports[`Storyshots Molecules | FlexTable Expandable Table 1`] = `
 
 .c10 {
   border-bottom: 1px solid #EBEBE8;
-  padding-right: 4px;
-  padding-left: 2px;
+  padding-right: 8px;
+  padding-left: 6px;
   border-left: 2px solid transparent;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -116217,8 +116226,8 @@ exports[`Storyshots Molecules | FlexTable Expandable Table 1`] = `
 }
 
 .c25 {
-  padding-right: 4px;
-  padding-left: 2px;
+  padding-right: 8px;
+  padding-left: 6px;
   border-left: 2px solid #0046FF;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -116236,9 +116245,25 @@ exports[`Storyshots Molecules | FlexTable Expandable Table 1`] = `
   background-color: #FFFFFF;
 }
 
+.c38 {
+  border-top: 1px solid #282823;
+  border-bottom: 0;
+}
+
 .c8 {
   display: inline-block;
   word-break: break-word;
+}
+
+.c41 {
+  display: inline-block;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.c39 {
+  overflow: hidden;
 }
 
 .c0 {
@@ -119961,6 +119986,49 @@ exports[`Storyshots Molecules | FlexTable Expandable Table 1`] = `
       </div>
     </div>
   </div>
+  <div
+    className="c3 c4 c38"
+    role="row"
+  >
+    <div
+      className="c6 c39"
+      role="cell"
+    >
+      <span
+        className="c40 c41"
+      >
+        Footer 1
+      </span>
+    </div>
+    <div
+      className="c6 c39"
+      role="cell"
+    >
+      <span
+        className="c40 c41"
+      >
+        Footer 2
+      </span>
+    </div>
+    <div
+      className="c6 c39"
+      role="cell"
+    >
+      <span
+        className="c40 c41"
+      >
+        Footer 3
+      </span>
+    </div>
+    <div
+      className="c9"
+      role="columnheader"
+    >
+      <span
+        className="c7 c8"
+      />
+    </div>
+  </div>
 </div>
 `;
 
@@ -120151,8 +120219,8 @@ exports[`Storyshots Molecules | FlexTable Expandable Table With Density Small 1`
 
 .c4 {
   border-bottom: 1px solid #EBEBE8;
-  padding-right: 4px;
-  padding-left: 2px;
+  padding-right: 8px;
+  padding-left: 6px;
   border-left: 2px solid transparent;
   padding-top: 0px;
   padding-bottom: 0px;
@@ -120160,8 +120228,8 @@ exports[`Storyshots Molecules | FlexTable Expandable Table With Density Small 1`
 
 .c10 {
   border-bottom: 1px solid #EBEBE8;
-  padding-right: 4px;
-  padding-left: 2px;
+  padding-right: 8px;
+  padding-left: 6px;
   border-left: 2px solid transparent;
   padding-top: 0px;
   padding-bottom: 0px;
