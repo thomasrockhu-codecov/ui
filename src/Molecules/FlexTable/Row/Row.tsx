@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import styled from 'styled-components';
-import { RowComponent, RowComponents } from './Row.types';
+import { ExpandProps, RowComponent, RowComponents } from './Row.types';
 import { Box, Flexbox, Button, Icon } from '../../../index';
 import { ColorFn } from '../../../common/Types/sharedTypes';
 import { getDensityPaddings } from '../shared/textUtils';
@@ -8,7 +8,8 @@ import { Density } from '../shared/shared.types';
 import { useFlexTable } from '../shared/FlexTableProvider';
 import { ExpandItems, ExpandItem } from './ExpandItems';
 import { ExpandCell } from '../Cell/ExpandCell';
-import { COLUMN_ID_EXPAND } from '../shared/constants';
+import { COLUMN_ID_EXPAND, ICON_COLUMN_DEFAULT_FLEX_PROPS } from '../shared/constants';
+import FlexTable from '../FlexTable';
 
 /* the cells are padded by row gutter 1 unit (4px) */
 const StyledRow = styled(Flexbox).withConfig({
@@ -54,13 +55,40 @@ export const ExpandButton: React.FC<{ expanded: boolean; onClick: () => void }> 
   </Button>
 );
 
+const ExpandElement: React.FC<
+  ExpandProps & { isHeader: boolean; setExpand: (expanded: boolean) => void }
+> = ({ isHeader, expanded = false, onExpandToggle, setExpand, expandChildren, expandItems }) => {
+  const { expandable } = useFlexTable();
+
+  if (!expandable) {
+    return null;
+  }
+  if (isHeader) {
+    return (
+      <FlexTable.Header
+        columnId={FlexTable.CONSTANTS.COLUMN_ID_EXPAND}
+        {...ICON_COLUMN_DEFAULT_FLEX_PROPS}
+      />
+    );
+  }
+
+  return (
+    <ExpandCell
+      columnId={COLUMN_ID_EXPAND}
+      expanded={expanded}
+      onClick={() => (onExpandToggle ? onExpandToggle(!expanded) : setExpand(!expanded))}
+      disabled={!(expandChildren || expandItems)}
+    />
+  );
+};
+
 const Row: RowComponent & RowComponents = ({
   className,
   expanded = false,
   hoverHighlight = true,
   hideSeparator = false,
+  isHeader = false,
   separatorColor = theme => theme.color.divider,
-  includeExpand = false,
   onExpandToggle,
   expandChildren,
   expandItems,
@@ -89,14 +117,14 @@ const Row: RowComponent & RowComponents = ({
         {...htmlProps}
       >
         {children}
-        {includeExpand && (
-          <ExpandCell
-            columnId={COLUMN_ID_EXPAND}
-            expanded={expand}
-            onClick={() => (onExpandToggle ? onExpandToggle(!expand) : setExpand(!expand))}
-            disabled={!(expandChildren || expandItems)}
-          />
-        )}
+        <ExpandElement
+          isHeader={isHeader}
+          expanded={expand}
+          expandItems={expandItems}
+          expandChildren={expandChildren}
+          onExpandToggle={onExpandToggle}
+          setExpand={setExpand}
+        />
       </StyledRow>
 
       {expand && (

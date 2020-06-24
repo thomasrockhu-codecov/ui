@@ -14,6 +14,7 @@ export type Props = {
   fontSize?: FontSize;
   stickyHeader?: boolean;
   title?: ReactNode;
+  expandable?: boolean;
 } & HtmlProps;
 
 export type FlexTableComponents = {

@@ -24,12 +24,13 @@ interface ExcludeExpand extends Expand {
   onExpandToggle?: undefined;
 }
 
-type ExpandProps = IncludeExpand | ExcludeExpand;
+export type ExpandProps = IncludeExpand | ExcludeExpand;
 
 type Props = {
   hideSeparator?: boolean;
   hoverHighlight?: boolean;
   separatorColor?: ColorFn;
+  isHeader?: boolean;
 } & ExpandProps &
   HtmlProps;
 
@@ -42,6 +43,7 @@ export type RowComponent = React.FC<Props>;
 
 type HeaderProps = {
   hideSeparator?: boolean;
+  isHeader?: boolean;
   separatorColor?: ColorFn;
 } & HtmlProps;
 

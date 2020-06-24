@@ -682,28 +682,24 @@ export const ExpandableTableWithDensitySmall = () => {
 
   const ExpandedTableExample = () => {
     return (
-      <FlexTable density="s">
+      <FlexTable density="s" expandable>
         <FlexTable.HeaderRow>
           <FlexTable.Header columnId="column1">Header 1</FlexTable.Header>
           <FlexTable.Header columnId="column2">Header 2</FlexTable.Header>
           <FlexTable.Header columnId="column3">Header 3</FlexTable.Header>
-          <FlexTable.Header
-            columnId={FlexTable.CONSTANTS.COLUMN_ID_EXPAND}
-            {...ICON_COLUMN_DEFAULT_FLEX_PROPS}
-          />
         </FlexTable.HeaderRow>
 
-        <FlexTable.Row includeExpand expandItems={expandItemsText}>
+        <FlexTable.Row expandItems={expandItemsText}>
           <FlexTable.Cell columnId="column1">Expandable</FlexTable.Cell>
           <FlexTable.Cell columnId="column2">Expandable</FlexTable.Cell>
           <FlexTable.Cell columnId="column3">Expandable</FlexTable.Cell>
         </FlexTable.Row>
-        <FlexTable.Row includeExpand expandItems={expandItemsText}>
+        <FlexTable.Row expandItems={expandItemsText}>
           <FlexTable.Cell columnId="column1">Expandable</FlexTable.Cell>
           <FlexTable.Cell columnId="column2">Expandable</FlexTable.Cell>
           <FlexTable.Cell columnId="column3">Expandable</FlexTable.Cell>
         </FlexTable.Row>
-        <FlexTable.Row includeExpand expandItems={expandItemsText}>
+        <FlexTable.Row expandItems={expandItemsText}>
           <FlexTable.Cell columnId="column1">Expandable</FlexTable.Cell>
           <FlexTable.Cell columnId="column2">Expandable</FlexTable.Cell>
           <FlexTable.Cell columnId="column3">Expandable</FlexTable.Cell>
@@ -733,46 +729,38 @@ export const ExpandableTable = () => {
   );
   const ExpandedTableExample = () => {
     return (
-      <FlexTable>
+      <FlexTable expandable>
         <FlexTable.HeaderRow>
           <FlexTable.Header columnId="column1">Header 1</FlexTable.Header>
           <FlexTable.Header columnId="column2">Header 2</FlexTable.Header>
           <FlexTable.Header columnId="column3">Header 3</FlexTable.Header>
-          <FlexTable.Header
-            columnId={FlexTable.CONSTANTS.COLUMN_ID_EXPAND}
-            {...ICON_COLUMN_DEFAULT_FLEX_PROPS}
-          />
         </FlexTable.HeaderRow>
 
-        <FlexTable.Row includeExpand>
+        <FlexTable.Row>
           <FlexTable.Cell columnId="column1">Disabled</FlexTable.Cell>
           <FlexTable.Cell columnId="column2">Disabled</FlexTable.Cell>
           <FlexTable.Cell columnId="column3">Disabled</FlexTable.Cell>
         </FlexTable.Row>
 
-        <FlexTable.Row includeExpand expandItems={expandItemsText}>
+        <FlexTable.Row expandItems={expandItemsText}>
           <FlexTable.Cell columnId="column1">Expandable</FlexTable.Cell>
           <FlexTable.Cell columnId="column2">Expandable</FlexTable.Cell>
           <FlexTable.Cell columnId="column3">Expandable</FlexTable.Cell>
         </FlexTable.Row>
 
-        <FlexTable.Row includeExpand expandItems={expandItemsText} expanded>
+        <FlexTable.Row expandItems={expandItemsText} expanded>
           <FlexTable.Cell columnId="column1">Expandable with initial state</FlexTable.Cell>
           <FlexTable.Cell columnId="column2">Expandable with initial state</FlexTable.Cell>
           <FlexTable.Cell columnId="column3">Expandable with initial state</FlexTable.Cell>
         </FlexTable.Row>
 
-        <FlexTable.Row includeExpand expandItems={expandItemsComponents}>
+        <FlexTable.Row expandItems={expandItemsComponents}>
           <FlexTable.Cell columnId="column1">Expandable component items</FlexTable.Cell>
           <FlexTable.Cell columnId="column2">Expandable component items</FlexTable.Cell>
           <FlexTable.Cell columnId="column3">Expandable component items</FlexTable.Cell>
         </FlexTable.Row>
 
-        <FlexTable.Row
-          expandItems={expandItemsText}
-          expandChildren={expandChildrenComponents}
-          includeExpand
-        >
+        <FlexTable.Row expandItems={expandItemsText} expandChildren={expandChildrenComponents}>
           <FlexTable.Cell columnId="column1">Expandable with children</FlexTable.Cell>
           <FlexTable.Cell columnId="column2">Expandable with children</FlexTable.Cell>
           <FlexTable.Cell columnId="column3">Expandable with children</FlexTable.Cell>
@@ -805,25 +793,20 @@ export const ExpandableControlledTable = () => {
     const [expandedRows, setExpandedRows] = useState<string[]>(['row3']);
 
     return (
-      <FlexTable>
+      <FlexTable expandable>
         <FlexTable.HeaderRow>
           <FlexTable.Header columnId="column1">Header 1</FlexTable.Header>
           <FlexTable.Header columnId="column2">Header 2</FlexTable.Header>
           <FlexTable.Header columnId="column3">Header 3</FlexTable.Header>
-          <FlexTable.Header
-            columnId={FlexTable.CONSTANTS.COLUMN_ID_EXPAND}
-            {...ICON_COLUMN_DEFAULT_FLEX_PROPS}
-          />
         </FlexTable.HeaderRow>
 
-        <FlexTable.Row includeExpand>
+        <FlexTable.Row>
           <FlexTable.Cell columnId="column1">Disabled</FlexTable.Cell>
           <FlexTable.Cell columnId="column2">Disabled</FlexTable.Cell>
           <FlexTable.Cell columnId="column3">Disabled</FlexTable.Cell>
         </FlexTable.Row>
 
         <FlexTable.Row
-          includeExpand
           expandItems={expandItemsText}
           expanded={expandedRows.includes('row2')}
           onExpandToggle={expanded =>
@@ -838,7 +821,6 @@ export const ExpandableControlledTable = () => {
         </FlexTable.Row>
 
         <FlexTable.Row
-          includeExpand
           expandItems={expandItemsText}
           expanded={expandedRows.includes('row3')}
           onExpandToggle={expanded =>
@@ -853,7 +835,6 @@ export const ExpandableControlledTable = () => {
         </FlexTable.Row>
 
         <FlexTable.Row
-          includeExpand
           expandItems={expandItemsComponents}
           expanded={expandedRows.includes('row4')}
           onExpandToggle={expanded =>
@@ -868,7 +849,6 @@ export const ExpandableControlledTable = () => {
         </FlexTable.Row>
 
         <FlexTable.Row
-          includeExpand
           expandItems={expandItemsText}
           expandChildren={expandChildrenComponents}
           expanded={expandedRows.includes('row5')}
@@ -1225,7 +1205,6 @@ export const TablesWithDifferentFontSizes = () => (
         />
       </FlexTable.HeaderRow>
       <FlexTable.Row
-        includeExpand
         expandItems={[
           { label: 'item1', value: 'value of item1' },
           { label: 'item2', value: 'value of item2' },
@@ -1249,7 +1228,6 @@ export const TablesWithDifferentFontSizes = () => (
         />
       </FlexTable.HeaderRow>
       <FlexTable.Row
-        includeExpand
         expandItems={[
           { label: 'item1', value: 'value of item1' },
           { label: 'item2', value: 'value of item2' },
@@ -1273,7 +1251,6 @@ export const TablesWithDifferentFontSizes = () => (
         />
       </FlexTable.HeaderRow>
       <FlexTable.Row
-        includeExpand
         expandItems={[
           { label: 'item1', value: 'value of item1' },
           { label: 'item2', value: 'value of item2' },
