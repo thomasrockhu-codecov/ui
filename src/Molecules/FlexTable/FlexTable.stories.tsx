@@ -185,43 +185,124 @@ export const TableWithDifferentRows = () => (
   </FlexTable>
 );
 
-export const TruncatedCellContent = () => (
-  <FlexTable>
-    <FlexTable.HeaderRow>
-      <FlexTable.Header flex="1" columnId="column1">
-        Flex 1
-      </FlexTable.Header>
-      <FlexTable.Header flex="0 15%" columnId="column2">
-        Fifteen percent
-      </FlexTable.Header>
-      <FlexTable.Header flex="0 100px" columnId="column3">
-        Loooooooooooooong header set width
-      </FlexTable.Header>
-      <FlexTable.Header columnId="column4">Default</FlexTable.Header>
-    </FlexTable.HeaderRow>
-    <FlexTable.Row>
-      <FlexTable.Cell columnId="column1">Cell 1-1</FlexTable.Cell>
-      <FlexTable.Cell columnId="column2">
-        Very long cell content that should be truncated or ellipsized depepending on your language
-        preferences
-      </FlexTable.Cell>
-      <FlexTable.Cell columnId="column3">Cell 1-3</FlexTable.Cell>
-      <FlexTable.Cell columnId="column4">Cell 1-4</FlexTable.Cell>
-    </FlexTable.Row>
-    <FlexTable.Row>
-      <FlexTable.Cell columnId="column1">Cell 2-1</FlexTable.Cell>
-      <FlexTable.Cell columnId="column2">Cell 2-2</FlexTable.Cell>
-      <FlexTable.Cell columnId="column3">Cell 2-3</FlexTable.Cell>
-      <FlexTable.Cell columnId="column4">Cell 2-4</FlexTable.Cell>
-    </FlexTable.Row>
-    <FlexTable.Row>
-      <FlexTable.Cell columnId="column1">Cell 3-1</FlexTable.Cell>
-      <FlexTable.Cell columnId="column2">Cell 3-2</FlexTable.Cell>
-      <FlexTable.Cell columnId="column3">Cell 3-3</FlexTable.Cell>
-      <FlexTable.Cell columnId="column4">Cell 3-4</FlexTable.Cell>
-    </FlexTable.Row>
-  </FlexTable>
-);
+export const TableWithDifferentColumns = () => {
+  const ColumnWidthTableExample = () => (
+    <FlexTable>
+      <FlexTable.HeaderRow>
+        <FlexTable.Header flex="1" columnId="column1">
+          Flex 1
+        </FlexTable.Header>
+        <FlexTable.Header flex="0 15%" columnId="column2">
+          Fifteen percent
+        </FlexTable.Header>
+        <FlexTable.Header flex="0 100px" columnId="column3">
+          Loooooooooooooong header set width
+        </FlexTable.Header>
+        <FlexTable.Header columnId="column4">Default</FlexTable.Header>
+      </FlexTable.HeaderRow>
+      <FlexTable.Row>
+        <FlexTable.Cell columnId="column1">Cell 1-1</FlexTable.Cell>
+        <FlexTable.Cell columnId="column2">
+          Very long cell content that should be truncated or ellipsized depepending on your language
+          preferences
+        </FlexTable.Cell>
+        <FlexTable.Cell columnId="column3">Cell 1-3</FlexTable.Cell>
+        <FlexTable.Cell columnId="column4">Cell 1-4</FlexTable.Cell>
+      </FlexTable.Row>
+      <FlexTable.Row>
+        <FlexTable.Cell columnId="column1">Cell 2-1</FlexTable.Cell>
+        <FlexTable.Cell columnId="column2">Cell 2-2</FlexTable.Cell>
+        <FlexTable.Cell columnId="column3">Cell 2-3</FlexTable.Cell>
+        <FlexTable.Cell columnId="column4">Cell 2-4</FlexTable.Cell>
+      </FlexTable.Row>
+      <FlexTable.Row>
+        <FlexTable.Cell columnId="column1">Cell 3-1</FlexTable.Cell>
+        <FlexTable.Cell columnId="column2">Cell 3-2</FlexTable.Cell>
+        <FlexTable.Cell columnId="column3">Cell 3-3</FlexTable.Cell>
+        <FlexTable.Cell columnId="column4">Cell 3-4</FlexTable.Cell>
+      </FlexTable.Row>
+    </FlexTable>
+  );
+
+  const DifferentAlignmentsTableExample = () => (
+    <FlexTable>
+      <FlexTable.HeaderRow>
+        <FlexTable.Header columnId="column1">Left</FlexTable.Header>
+        <FlexTable.Header columnId="column2" justifyContent="flex-end">
+          Right
+        </FlexTable.Header>
+        <FlexTable.Header columnId="column3" justifyContent="flex-end">
+          Right
+        </FlexTable.Header>
+        <FlexTable.Header columnId="column4" justifyContent="center">
+          Center
+        </FlexTable.Header>
+      </FlexTable.HeaderRow>
+      <FlexTable.Row>
+        <FlexTable.Cell columnId="column1">Cell 1-1</FlexTable.Cell>
+        <FlexTable.Cell columnId="column2">Cell 1-2</FlexTable.Cell>
+        <FlexTable.Cell columnId="column3">Cell 1-3</FlexTable.Cell>
+        <FlexTable.Cell columnId="column4">Cell 1-4</FlexTable.Cell>
+      </FlexTable.Row>
+      <FlexTable.Row>
+        <FlexTable.Cell columnId="column1">Cell 2-1</FlexTable.Cell>
+        <FlexTable.Cell columnId="column2">Cell 2-2</FlexTable.Cell>
+        <FlexTable.Cell columnId="column3">Cell 2-3</FlexTable.Cell>
+        <FlexTable.Cell columnId="column4">Cell 2-4</FlexTable.Cell>
+      </FlexTable.Row>
+      <FlexTable.Row>
+        <FlexTable.Cell columnId="column1">Cell 3-1</FlexTable.Cell>
+        <FlexTable.Cell columnId="column2">Cell 3-2</FlexTable.Cell>
+        <FlexTable.Cell columnId="column3">Cell 3-3</FlexTable.Cell>
+        <FlexTable.Cell columnId="column4">Cell 3-4</FlexTable.Cell>
+      </FlexTable.Row>
+    </FlexTable>
+  );
+
+  const MediaColumnsExample = () => (
+    <FlexTable>
+      <FlexTable.HeaderRow>
+        <FlexTable.Header columnId="column1">Header 1</FlexTable.Header>
+        <FlexTable.Header columnId="column2" hidden md={{ hidden: false }}>
+          Hidden column on mobile
+        </FlexTable.Header>
+        <FlexTable.Header columnId="column3">Header 3</FlexTable.Header>
+      </FlexTable.HeaderRow>
+      <FlexTable.Row>
+        <FlexTable.Cell columnId="column1">Cell 1-1</FlexTable.Cell>
+        <FlexTable.Cell columnId="column2">Hidden on mobile</FlexTable.Cell>
+        <FlexTable.Cell columnId="column3">Cell 1-3</FlexTable.Cell>
+      </FlexTable.Row>
+      <FlexTable.Row>
+        <FlexTable.Cell columnId="column1">Cell 2-1</FlexTable.Cell>
+        <FlexTable.Cell columnId="column2">Hidden on mobile</FlexTable.Cell>
+        <FlexTable.Cell columnId="column3">Cell 2-3</FlexTable.Cell>
+      </FlexTable.Row>
+      <FlexTable.Row>
+        <FlexTable.Cell columnId="column1">Cell 3-1</FlexTable.Cell>
+        <FlexTable.Cell columnId="column2">Hidden on mobile</FlexTable.Cell>
+        <FlexTable.Cell columnId="column3">Cell 3-3</FlexTable.Cell>
+      </FlexTable.Row>
+    </FlexTable>
+  );
+
+  return (
+    <StyledDiv>
+      <StyledTableDiv>
+        <Typography type="title3">Table With Column Width Set</Typography>
+        <ColumnWidthTableExample />
+      </StyledTableDiv>
+      <StyledTableDiv>
+        <Typography type="title3">Table With Different Alignments</Typography>
+        <DifferentAlignmentsTableExample />
+      </StyledTableDiv>
+      <StyledTableDiv>
+        <Typography type="title3">Table With Columns Hidden Based On Screen Size</Typography>
+        <MediaColumnsExample />
+      </StyledTableDiv>
+    </StyledDiv>
+  );
+};
 
 const generateUniqueId = (rowIndex: number) =>
   `${rowIndex}_${Math.random()
@@ -511,68 +592,6 @@ export const MultipleTables = () => {
   };
   return <ReactComponent />;
 };
-
-export const DifferentAlignmentsTable = () => (
-  <FlexTable>
-    <FlexTable.HeaderRow>
-      <FlexTable.Header columnId="column1">Left</FlexTable.Header>
-      <FlexTable.Header columnId="column2" justifyContent="flex-end">
-        Right
-      </FlexTable.Header>
-      <FlexTable.Header columnId="column3" justifyContent="flex-end">
-        Right
-      </FlexTable.Header>
-      <FlexTable.Header columnId="column4" justifyContent="center">
-        Center
-      </FlexTable.Header>
-    </FlexTable.HeaderRow>
-    <FlexTable.Row>
-      <FlexTable.Cell columnId="column1">Cell 1-1</FlexTable.Cell>
-      <FlexTable.Cell columnId="column2">Cell 1-2</FlexTable.Cell>
-      <FlexTable.Cell columnId="column3">Cell 1-3</FlexTable.Cell>
-      <FlexTable.Cell columnId="column4">Cell 1-4</FlexTable.Cell>
-    </FlexTable.Row>
-    <FlexTable.Row>
-      <FlexTable.Cell columnId="column1">Cell 2-1</FlexTable.Cell>
-      <FlexTable.Cell columnId="column2">Cell 2-2</FlexTable.Cell>
-      <FlexTable.Cell columnId="column3">Cell 2-3</FlexTable.Cell>
-      <FlexTable.Cell columnId="column4">Cell 2-4</FlexTable.Cell>
-    </FlexTable.Row>
-    <FlexTable.Row>
-      <FlexTable.Cell columnId="column1">Cell 3-1</FlexTable.Cell>
-      <FlexTable.Cell columnId="column2">Cell 3-2</FlexTable.Cell>
-      <FlexTable.Cell columnId="column3">Cell 3-3</FlexTable.Cell>
-      <FlexTable.Cell columnId="column4">Cell 3-4</FlexTable.Cell>
-    </FlexTable.Row>
-  </FlexTable>
-);
-
-export const HideColumnsOnMobilesTable = () => (
-  <FlexTable>
-    <FlexTable.HeaderRow>
-      <FlexTable.Header columnId="column1">Header 1</FlexTable.Header>
-      <FlexTable.Header columnId="column2" hidden md={{ hidden: false }}>
-        Hidden column on mobile
-      </FlexTable.Header>
-      <FlexTable.Header columnId="column3">Header 3</FlexTable.Header>
-    </FlexTable.HeaderRow>
-    <FlexTable.Row>
-      <FlexTable.Cell columnId="column1">Cell 1-1</FlexTable.Cell>
-      <FlexTable.Cell columnId="column2">Hidden on mobile</FlexTable.Cell>
-      <FlexTable.Cell columnId="column3">Cell 1-3</FlexTable.Cell>
-    </FlexTable.Row>
-    <FlexTable.Row>
-      <FlexTable.Cell columnId="column1">Cell 2-1</FlexTable.Cell>
-      <FlexTable.Cell columnId="column2">Hidden on mobile</FlexTable.Cell>
-      <FlexTable.Cell columnId="column3">Cell 2-3</FlexTable.Cell>
-    </FlexTable.Row>
-    <FlexTable.Row>
-      <FlexTable.Cell columnId="column1">Cell 3-1</FlexTable.Cell>
-      <FlexTable.Cell columnId="column2">Hidden on mobile</FlexTable.Cell>
-      <FlexTable.Cell columnId="column3">Cell 3-3</FlexTable.Cell>
-    </FlexTable.Row>
-  </FlexTable>
-);
 
 const StyledFlexTable = styled(FlexTable)`
   background-color: white;
