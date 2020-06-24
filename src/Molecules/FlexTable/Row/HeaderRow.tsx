@@ -18,7 +18,8 @@ const StyledHeaderRow = styled(Row).withConfig({
         position: sticky;
         top: 0;
         background-color: ${p.theme.color.tableHeaderBackground}`
-      : ''}
+      : ''};
+  ${p => (!p.hideSeparator ? `border-bottom: 1px solid ${p.separatorColor(p.theme)}` : '')};
 `;
 
 export const HeaderRow: HeaderRowComponent = ({
@@ -29,6 +30,7 @@ export const HeaderRow: HeaderRowComponent = ({
   ...htmlProps
 }) => {
   const { stickyHeader } = useFlexTable();
+  console.log('Color: ', separatorColor);
 
   return (
     <StyledHeaderRow
