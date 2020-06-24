@@ -39,7 +39,7 @@ const FlexTable: React.FC<Props> & FlexTableComponents = ({
   stickyHeader = true,
   children,
   title,
-  fontSize,
+  fontSize = 'm',
   ...htmlProps
 }) => (
   <FlexTableProvider density={density} stickyHeader={stickyHeader} fontSize={fontSize}>
