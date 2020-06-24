@@ -6,6 +6,7 @@ import { Flexbox } from '../../..';
 import { useColumnLayout } from '../shared/ColumnProvider';
 import { CellComponent } from './Cell.types';
 import { TextWrapper } from './TextWrapper';
+import { TruncateWithTooltip } from '../shared';
 
 const StyledFlexbox = styled(Flexbox)`
   overflow: hidden;
@@ -25,7 +26,11 @@ const Cell: CellComponent = React.memo(({ children, className, fontSize, columnI
       {isElement(children) && children}
       {isFunction(children)
         ? children({ fontSize, columnId })
-        : !isElement(children) && <TextWrapper fontSize={fontSize}>{children}</TextWrapper>}
+        : !isElement(children) && (
+            <TruncateWithTooltip label={children} position="top">
+              <TextWrapper fontSize={fontSize}>{children}</TextWrapper>
+            </TruncateWithTooltip>
+          )}
     </StyledFlexbox>
   );
 });

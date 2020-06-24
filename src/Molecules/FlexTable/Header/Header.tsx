@@ -1,5 +1,6 @@
 import React, { useEffect, useLayoutEffect } from 'react';
 import * as R from 'ramda';
+import styled from 'styled-components';
 import { HeaderComponent } from './Header.types';
 import { SortOrder } from './HeaderContent/HeaderContent.types';
 import { isElement, isFunction } from '../../../common/utils';
@@ -14,6 +15,7 @@ import {
   useColumnLayout,
 } from '../shared/ColumnProvider';
 import { HeaderContent, TextWrapper, SortIcon, SortButton } from './HeaderContent';
+import { TruncateWithTooltip } from '../shared';
 
 const SORT_ORDERS: SortOrder[] = [SORT_ORDER_NONE, SORT_ORDER_ASCENDING, SORT_ORDER_DESCENDING];
 
@@ -28,6 +30,10 @@ const getSortOrder = (
   sortOrderProp: SortOrder | undefined,
   initialSortOrder: SortOrder,
 ) => stateSortOrder || sortOrderProp || initialSortOrder;
+
+const StyledFlexbox = styled(Flexbox)`
+  overflow: hidden;
+`;
 
 const Header: HeaderComponent = props => {
   const {
@@ -82,7 +88,7 @@ const Header: HeaderComponent = props => {
 
   const sorted = !R.isNil(sortOrder) && sortOrder !== SORT_ORDER_NONE;
   return (
-    <Flexbox
+    <StyledFlexbox
       className={className}
       role="columnheader"
       {...ariaSorted}
@@ -92,17 +98,19 @@ const Header: HeaderComponent = props => {
       {isFunction(children)
         ? children({ fontSize, sortable, sortOrder, onSortClick, sorted, columnId })
         : !isElement(children) && (
-            <HeaderContent
-              onSortClick={onSortClick}
-              sortable={sortable}
-              sortOrder={sortOrder}
-              fontSize={fontSize}
-              sorted={sorted}
-            >
-              {children}
-            </HeaderContent>
+            <TruncateWithTooltip position="top" label={children}>
+              <HeaderContent
+                onSortClick={onSortClick}
+                sortable={sortable}
+                sortOrder={sortOrder}
+                fontSize={fontSize}
+                sorted={sorted}
+              >
+                {children}
+              </HeaderContent>
+            </TruncateWithTooltip>
           )}
-    </Flexbox>
+    </StyledFlexbox>
   );
 };
 
