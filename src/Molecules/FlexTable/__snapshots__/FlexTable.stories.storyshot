@@ -105932,281 +105932,11 @@ exports[`Storyshots Molecules | FlexTable Big Table Without Sticky Header 1`] = 
 `;
 
 exports[`Storyshots Molecules | FlexTable Default Table 1`] = `
-.c1 {
-  padding-left: 4px;
-}
-
-.c3 {
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.c6 {
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-wrap: nowrap;
-  -ms-flex-wrap: nowrap;
-  flex-wrap: nowrap;
-  -webkit-flex: 1;
-  -ms-flex: 1;
-  flex: 1;
-}
-
-.c2 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #282823;
-  margin: 0;
-  font-weight: 800;
-  font-size: 18px;
-  line-height: 1.3333333333333333;
-}
-
-.c7 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #6E6E69;
-  margin: 0;
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 1.3333333333333333;
-}
-
-.c11 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #282823;
-  margin: 0;
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 1.3333333333333333;
-}
-
-.c12 {
-  display: inline-block;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  overflow: hidden;
-}
-
-.c10 {
-  overflow: hidden;
-}
-
 .c4 {
-  border-bottom: 1px solid #EBEBE8;
-  padding-right: 4px;
-  padding-left: 2px;
-  border-left: 2px solid transparent;
-  padding-top: 4px;
-  padding-bottom: 4px;
-}
-
-.c9 {
-  border-bottom: 1px solid #EBEBE8;
-  padding-right: 4px;
-  padding-left: 2px;
-  border-left: 2px solid transparent;
-  padding-top: 4px;
-  padding-bottom: 4px;
-}
-
-.c9:hover {
-  background: #F5F5F5;
+  padding-left: 4px;
 }
 
 .c5 {
-  position: -webkit-sticky;
-  position: sticky;
-  top: 0;
-  background-color: #FFFFFF;
-}
-
-.c8 {
-  display: inline-block;
-  word-break: break-word;
-}
-
-.c0 {
-  position: relative;
-}
-
-@media (min-width:760px) {
-  .c2 {
-    font-size: 20px;
-    line-height: 1.2;
-  }
-}
-
-<div
-  className="c0"
-  role="table"
->
-  <caption>
-    <div
-      className="c1"
-    >
-      <span
-        className="c2"
-      />
-    </div>
-  </caption>
-  <div
-    className="c3 c4 c5"
-    role="row"
-  >
-    <div
-      className="c6"
-      role="columnheader"
-    >
-      <span
-        className="c7 c8"
-      >
-        Header 1
-      </span>
-    </div>
-    <div
-      className="c6"
-      role="columnheader"
-    >
-      <span
-        className="c7 c8"
-      >
-        Header 2
-      </span>
-    </div>
-    <div
-      className="c6"
-      role="columnheader"
-    >
-      <span
-        className="c7 c8"
-      >
-        Header 3
-      </span>
-    </div>
-  </div>
-  <div
-    className="c3 c9"
-    role="row"
-  >
-    <div
-      className="c6 c10"
-      role="cell"
-    >
-      <span
-        className="c11 c12"
-      >
-        Cell 1-1
-      </span>
-    </div>
-    <div
-      className="c6 c10"
-      role="cell"
-    >
-      <span
-        className="c11 c12"
-      >
-        Cell 1-2
-      </span>
-    </div>
-    <div
-      className="c6 c10"
-      role="cell"
-    >
-      <span
-        className="c11 c12"
-      >
-        Cell 1-3
-      </span>
-    </div>
-  </div>
-  <div
-    className="c3 c9"
-    role="row"
-  >
-    <div
-      className="c6 c10"
-      role="cell"
-    >
-      <span
-        className="c11 c12"
-      >
-        Cell 2-1
-      </span>
-    </div>
-    <div
-      className="c6 c10"
-      role="cell"
-    >
-      <span
-        className="c11 c12"
-      >
-        Cell 2-2
-      </span>
-    </div>
-    <div
-      className="c6 c10"
-      role="cell"
-    >
-      <span
-        className="c11 c12"
-      >
-        Cell 2-3
-      </span>
-    </div>
-  </div>
-  <div
-    className="c3 c9"
-    role="row"
-  >
-    <div
-      className="c6 c10"
-      role="cell"
-    >
-      <span
-        className="c11 c12"
-      >
-        Cell 3-1
-      </span>
-    </div>
-    <div
-      className="c6 c10"
-      role="cell"
-    >
-      <span
-        className="c11 c12"
-      >
-        Cell 3-2
-      </span>
-    </div>
-    <div
-      className="c6 c10"
-      role="cell"
-    >
-      <span
-        className="c11 c12"
-      >
-        Cell 3-3
-      </span>
-    </div>
-  </div>
-</div>
-`;
-
-exports[`Storyshots Molecules | FlexTable Default Table With Footer 1`] = `
-.c1 {
-  padding-left: 4px;
-}
-
-.c3 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -106218,7 +105948,7 @@ exports[`Storyshots Molecules | FlexTable Default Table With Footer 1`] = `
   align-items: center;
 }
 
-.c6 {
+.c8 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -106232,337 +105962,7 @@ exports[`Storyshots Molecules | FlexTable Default Table With Footer 1`] = `
   flex: 1;
 }
 
-.c2 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #282823;
-  margin: 0;
-  font-weight: 800;
-  font-size: 18px;
-  line-height: 1.3333333333333333;
-}
-
-.c7 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #6E6E69;
-  margin: 0;
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 1.3333333333333333;
-}
-
-.c11 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #282823;
-  margin: 0;
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 1.3333333333333333;
-}
-
-.c15 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #282823;
-  margin: 0;
-  font-weight: 700;
-  font-size: 12px;
-  line-height: 1.3333333333333333;
-}
-
-.c12 {
-  display: inline-block;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  overflow: hidden;
-}
-
-.c10 {
-  overflow: hidden;
-}
-
-.c4 {
-  border-bottom: 1px solid #EBEBE8;
-  padding-right: 4px;
-  padding-left: 2px;
-  border-left: 2px solid transparent;
-  padding-top: 4px;
-  padding-bottom: 4px;
-}
-
-.c9 {
-  border-bottom: 1px solid #EBEBE8;
-  padding-right: 4px;
-  padding-left: 2px;
-  border-left: 2px solid transparent;
-  padding-top: 4px;
-  padding-bottom: 4px;
-}
-
-.c9:hover {
-  background: #F5F5F5;
-}
-
-.c5 {
-  position: -webkit-sticky;
-  position: sticky;
-  top: 0;
-  background-color: #FFFFFF;
-}
-
-.c13 {
-  border-top: 1px solid #282823;
-  border-bottom: 0;
-}
-
-.c8 {
-  display: inline-block;
-  word-break: break-word;
-}
-
-.c16 {
-  display: inline-block;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  overflow: hidden;
-}
-
-.c14 {
-  overflow: hidden;
-}
-
-.c0 {
-  position: relative;
-}
-
-@media (min-width:760px) {
-  .c2 {
-    font-size: 20px;
-    line-height: 1.2;
-  }
-}
-
-<div
-  className="c0"
-  role="table"
->
-  <caption>
-    <div
-      className="c1"
-    >
-      <span
-        className="c2"
-      />
-    </div>
-  </caption>
-  <div
-    className="c3 c4 c5"
-    role="row"
-  >
-    <div
-      className="c6"
-      role="columnheader"
-    >
-      <span
-        className="c7 c8"
-      >
-        Header 1
-      </span>
-    </div>
-    <div
-      className="c6"
-      role="columnheader"
-    >
-      <span
-        className="c7 c8"
-      >
-        Header 2
-      </span>
-    </div>
-    <div
-      className="c6"
-      role="columnheader"
-    >
-      <span
-        className="c7 c8"
-      >
-        Header 3
-      </span>
-    </div>
-  </div>
-  <div
-    className="c3 c9"
-    role="row"
-  >
-    <div
-      className="c6 c10"
-      role="cell"
-    >
-      <span
-        className="c11 c12"
-      >
-        Cell 1-1
-      </span>
-    </div>
-    <div
-      className="c6 c10"
-      role="cell"
-    >
-      <span
-        className="c11 c12"
-      >
-        Cell 1-2
-      </span>
-    </div>
-    <div
-      className="c6 c10"
-      role="cell"
-    >
-      <span
-        className="c11 c12"
-      >
-        Cell 1-3
-      </span>
-    </div>
-  </div>
-  <div
-    className="c3 c9"
-    role="row"
-  >
-    <div
-      className="c6 c10"
-      role="cell"
-    >
-      <span
-        className="c11 c12"
-      >
-        Cell 2-1
-      </span>
-    </div>
-    <div
-      className="c6 c10"
-      role="cell"
-    >
-      <span
-        className="c11 c12"
-      >
-        Cell 2-2
-      </span>
-    </div>
-    <div
-      className="c6 c10"
-      role="cell"
-    >
-      <span
-        className="c11 c12"
-      >
-        Cell 2-3
-      </span>
-    </div>
-  </div>
-  <div
-    className="c3 c9"
-    role="row"
-  >
-    <div
-      className="c6 c10"
-      role="cell"
-    >
-      <span
-        className="c11 c12"
-      >
-        Cell 3-1
-      </span>
-    </div>
-    <div
-      className="c6 c10"
-      role="cell"
-    >
-      <span
-        className="c11 c12"
-      >
-        Cell 3-2
-      </span>
-    </div>
-    <div
-      className="c6 c10"
-      role="cell"
-    >
-      <span
-        className="c11 c12"
-      >
-        Cell 3-3
-      </span>
-    </div>
-  </div>
-  <div
-    className="c3 c4 c13"
-    role="row"
-  >
-    <div
-      className="c6 c14"
-      role="cell"
-    >
-      <span
-        className="c15 c16"
-      >
-        Footer 1
-      </span>
-    </div>
-    <div
-      className="c6 c14"
-      role="cell"
-    >
-      <span
-        className="c15 c16"
-      >
-        Footer 2
-      </span>
-    </div>
-    <div
-      className="c6 c14"
-      role="cell"
-    >
-      <span
-        className="c15 c16"
-      >
-        Footer 3
-      </span>
-    </div>
-  </div>
-</div>
-`;
-
-exports[`Storyshots Molecules | FlexTable Default Table With Icon Column 1`] = `
-.c1 {
-  padding-left: 4px;
-}
-
-.c3 {
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.c6 {
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-wrap: nowrap;
-  -ms-flex-wrap: nowrap;
-  flex-wrap: nowrap;
-  -webkit-flex: 1;
-  -ms-flex: 1;
-  flex: 1;
-}
-
-.c9 {
+.c19 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -106580,7 +105980,7 @@ exports[`Storyshots Molecules | FlexTable Default Table With Icon Column 1`] = `
   flex: 0 20px;
 }
 
-.c16 {
+.c22 {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -106603,7 +106003,7 @@ exports[`Storyshots Molecules | FlexTable Default Table With Icon Column 1`] = `
   line-height: 1.3333333333333333;
 }
 
-.c7 {
+.c9 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #6E6E69;
   margin: 0;
@@ -106612,7 +106012,7 @@ exports[`Storyshots Molecules | FlexTable Default Table With Icon Column 1`] = `
   line-height: 1.3333333333333333;
 }
 
-.c12 {
+.c13 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
   margin: 0;
@@ -106621,7 +106021,16 @@ exports[`Storyshots Molecules | FlexTable Default Table With Icon Column 1`] = `
   line-height: 1.3333333333333333;
 }
 
-.c15 {
+.c17 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 1.3333333333333333;
+}
+
+.c21 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: inherit;
   margin: 0;
@@ -106630,7 +106039,7 @@ exports[`Storyshots Molecules | FlexTable Default Table With Icon Column 1`] = `
   line-height: 1.4285714285714286;
 }
 
-.c14 {
+.c20 {
   font-family: inherit;
   font-size: 100%;
   line-height: 1.15;
@@ -106659,402 +106068,40 @@ exports[`Storyshots Molecules | FlexTable Default Table With Icon Column 1`] = `
   cursor: pointer;
 }
 
-.c14,
-.c14[type='button'],
-.c14[type='reset'],
-.c14[type='submit'] {
+.c20,
+.c20[type='button'],
+.c20[type='reset'],
+.c20[type='submit'] {
   -webkit-appearance: button;
 }
 
-.c14::-moz-focus-inner,
-.c14[type='button']::-moz-focus-inner,
-.c14[type='reset']::-moz-focus-inner,
-.c14[type='submit']::-moz-focus-inner {
+.c20::-moz-focus-inner,
+.c20[type='button']::-moz-focus-inner,
+.c20[type='reset']::-moz-focus-inner,
+.c20[type='submit']::-moz-focus-inner {
   border-style: none;
   padding: 0;
 }
 
-.c14:-moz-focusring,
-.c14[type='button']:-moz-focusring,
-.c14[type='reset']:-moz-focusring,
-.c14[type='submit']:-moz-focusring {
+.c20:-moz-focusring,
+.c20[type='button']:-moz-focusring,
+.c20[type='reset']:-moz-focusring,
+.c20[type='submit']:-moz-focusring {
   outline: 1px dotted ButtonText;
 }
 
-.c13 {
+.c14 {
   display: inline-block;
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
-}
-
-.c11 {
-  overflow: hidden;
-}
-
-.c4 {
-  border-bottom: 1px solid #EBEBE8;
-  padding-right: 4px;
-  padding-left: 2px;
-  border-left: 2px solid transparent;
-  padding-top: 4px;
-  padding-bottom: 4px;
-}
-
-.c10 {
-  border-bottom: 1px solid #EBEBE8;
-  padding-right: 4px;
-  padding-left: 2px;
-  border-left: 2px solid transparent;
-  padding-top: 4px;
-  padding-bottom: 4px;
-}
-
-.c10:hover {
-  background: #F5F5F5;
-}
-
-.c5 {
-  position: -webkit-sticky;
-  position: sticky;
-  top: 0;
-  background-color: #FFFFFF;
-}
-
-.c8 {
-  display: inline-block;
-  word-break: break-word;
-}
-
-.c0 {
-  position: relative;
-}
-
-@media (min-width:760px) {
-  .c2 {
-    font-size: 20px;
-    line-height: 1.2;
-  }
-}
-
-<div
-  className="c0"
-  role="table"
->
-  <caption>
-    <div
-      className="c1"
-    >
-      <span
-        className="c2"
-      />
-    </div>
-  </caption>
-  <div
-    className="c3 c4 c5"
-    role="row"
-  >
-    <div
-      className="c6"
-      role="columnheader"
-    >
-      <span
-        className="c7 c8"
-      >
-        Header 1
-      </span>
-    </div>
-    <div
-      className="c6"
-      role="columnheader"
-    >
-      <span
-        className="c7 c8"
-      >
-        Header 2
-      </span>
-    </div>
-    <div
-      className="c6"
-      role="columnheader"
-    >
-      <span
-        className="c7 c8"
-      >
-        Header 3
-      </span>
-    </div>
-    <div
-      className="c9"
-      role="columnheader"
-    >
-      <span
-        className="c7 c8"
-      />
-    </div>
-  </div>
-  <div
-    className="c3 c10"
-    role="row"
-  >
-    <div
-      className="c6 c11"
-      role="cell"
-    >
-      <span
-        className="c12 c13"
-      >
-        Cell 1-1
-      </span>
-    </div>
-    <div
-      className="c6 c11"
-      role="cell"
-    >
-      <span
-        className="c12 c13"
-      >
-        Cell 1-2
-      </span>
-    </div>
-    <div
-      className="c6 c11"
-      role="cell"
-    >
-      <span
-        className="c12 c13"
-      >
-        Cell 1-3
-      </span>
-    </div>
-    <div
-      className="c9 c11"
-      role="cell"
-    >
-      <button
-        className="NormalizedButton__Button-ey7f5x-0 c14"
-        onClick={[Function]}
-        type="button"
-      >
-        <span
-          className="c15"
-        >
-          <svg
-            aria-hidden="true"
-            className="c16"
-            focusable="false"
-            preserveAspectRatio="xMidYMid meet"
-            role="presentation"
-            viewBox="0 0 24 24"
-          >
-            <path
-              d="M21 9a3 3 0 1 1 0 6 3 3 0 0 1 0-6zM3 9a3 3 0 1 1 0 6 3 3 0 0 1 0-6zm9 0a3 3 0 1 1 0 6 3 3 0 0 1 0-6z"
-              fillRule="evenodd"
-            />
-          </svg>
-        </span>
-      </button>
-    </div>
-  </div>
-  <div
-    className="c3 c10"
-    role="row"
-  >
-    <div
-      className="c6 c11"
-      role="cell"
-    >
-      <span
-        className="c12 c13"
-      >
-        Cell 2-1
-      </span>
-    </div>
-    <div
-      className="c6 c11"
-      role="cell"
-    >
-      <span
-        className="c12 c13"
-      >
-        Cell 2-2
-      </span>
-    </div>
-    <div
-      className="c6 c11"
-      role="cell"
-    >
-      <span
-        className="c12 c13"
-      >
-        Cell 2-3
-      </span>
-    </div>
-    <div
-      className="c9 c11"
-      role="cell"
-    >
-      <button
-        className="NormalizedButton__Button-ey7f5x-0 c14"
-        onClick={[Function]}
-        type="button"
-      >
-        <span
-          className="c15"
-        >
-          <svg
-            aria-hidden="true"
-            className="c16"
-            focusable="false"
-            preserveAspectRatio="xMidYMid meet"
-            role="presentation"
-            viewBox="0 0 24 24"
-          >
-            <path
-              d="M21 9a3 3 0 1 1 0 6 3 3 0 0 1 0-6zM3 9a3 3 0 1 1 0 6 3 3 0 0 1 0-6zm9 0a3 3 0 1 1 0 6 3 3 0 0 1 0-6z"
-              fillRule="evenodd"
-            />
-          </svg>
-        </span>
-      </button>
-    </div>
-  </div>
-  <div
-    className="c3 c10"
-    role="row"
-  >
-    <div
-      className="c6 c11"
-      role="cell"
-    >
-      <span
-        className="c12 c13"
-      >
-        Cell 3-1
-      </span>
-    </div>
-    <div
-      className="c6 c11"
-      role="cell"
-    >
-      <span
-        className="c12 c13"
-      >
-        Cell 3-2
-      </span>
-    </div>
-    <div
-      className="c6 c11"
-      role="cell"
-    >
-      <span
-        className="c12 c13"
-      >
-        Cell 3-3
-      </span>
-    </div>
-    <div
-      className="c9 c11"
-      role="cell"
-    >
-      <button
-        className="NormalizedButton__Button-ey7f5x-0 c14"
-        onClick={[Function]}
-        type="button"
-      >
-        <span
-          className="c15"
-        >
-          <svg
-            aria-hidden="true"
-            className="c16"
-            focusable="false"
-            preserveAspectRatio="xMidYMid meet"
-            role="presentation"
-            viewBox="0 0 24 24"
-          >
-            <path
-              d="M21 9a3 3 0 1 1 0 6 3 3 0 0 1 0-6zM3 9a3 3 0 1 1 0 6 3 3 0 0 1 0-6zm9 0a3 3 0 1 1 0 6 3 3 0 0 1 0-6z"
-              fillRule="evenodd"
-            />
-          </svg>
-        </span>
-      </button>
-    </div>
-  </div>
-</div>
-`;
-
-exports[`Storyshots Molecules | FlexTable Default Table With Title 1`] = `
-.c1 {
-  padding-left: 4px;
-}
-
-.c3 {
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.c6 {
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-wrap: nowrap;
-  -ms-flex-wrap: nowrap;
-  flex-wrap: nowrap;
-  -webkit-flex: 1;
-  -ms-flex: 1;
-  flex: 1;
-}
-
-.c2 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #282823;
-  margin: 0;
-  font-weight: 800;
-  font-size: 18px;
-  line-height: 1.3333333333333333;
-}
-
-.c7 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #6E6E69;
-  margin: 0;
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 1.3333333333333333;
-}
-
-.c11 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #282823;
-  margin: 0;
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 1.3333333333333333;
 }
 
 .c12 {
-  display: inline-block;
-  text-overflow: ellipsis;
-  white-space: nowrap;
   overflow: hidden;
 }
 
-.c10 {
-  overflow: hidden;
-}
-
-.c4 {
+.c6 {
   border-bottom: 1px solid #EBEBE8;
   padding-right: 4px;
   padding-left: 2px;
@@ -107063,7 +106110,7 @@ exports[`Storyshots Molecules | FlexTable Default Table With Title 1`] = `
   padding-bottom: 4px;
 }
 
-.c9 {
+.c11 {
   border-bottom: 1px solid #EBEBE8;
   padding-right: 4px;
   padding-left: 2px;
@@ -107072,24 +106119,52 @@ exports[`Storyshots Molecules | FlexTable Default Table With Title 1`] = `
   padding-bottom: 4px;
 }
 
-.c9:hover {
+.c11:hover {
   background: #F5F5F5;
 }
 
-.c5 {
+.c7 {
   position: -webkit-sticky;
   position: sticky;
   top: 0;
   background-color: #FFFFFF;
 }
 
-.c8 {
+.c15 {
+  border-top: 1px solid #282823;
+  border-bottom: 0;
+}
+
+.c10 {
   display: inline-block;
   word-break: break-word;
 }
 
-.c0 {
+.c18 {
+  display: inline-block;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.c16 {
+  overflow: hidden;
+}
+
+.c3 {
   position: relative;
+}
+
+.c0 {
+  background-color: #F5F5F5;
+}
+
+.c1 {
+  background-color: white;
+}
+
+.c1:not(:first-of-type) {
+  margin-top: 40px;
 }
 
 @media (min-width:760px) {
@@ -107101,157 +106176,786 @@ exports[`Storyshots Molecules | FlexTable Default Table With Title 1`] = `
 
 <div
   className="c0"
-  role="table"
 >
-  <caption>
-    <div
-      className="c1"
-    >
-      <span
-        className="c2"
-      >
-        Title
-      </span>
-    </div>
-  </caption>
   <div
-    className="c3 c4 c5"
-    role="row"
+    className="c1"
   >
-    <div
-      className="c6"
-      role="columnheader"
+    <span
+      className="c2"
     >
-      <span
-        className="c7 c8"
-      >
-        Header 1
-      </span>
-    </div>
+      Default Table
+    </span>
     <div
-      className="c6"
-      role="columnheader"
+      className="c3"
+      role="table"
     >
-      <span
-        className="c7 c8"
+      <caption>
+        <div
+          className="c4"
+        >
+          <span
+            className="c2"
+          />
+        </div>
+      </caption>
+      <div
+        className="c5 c6 c7"
+        role="row"
       >
-        Header 2
-      </span>
-    </div>
-    <div
-      className="c6"
-      role="columnheader"
-    >
-      <span
-        className="c7 c8"
+        <div
+          className="c8"
+          role="columnheader"
+        >
+          <span
+            className="c9 c10"
+          >
+            Header 1
+          </span>
+        </div>
+        <div
+          className="c8"
+          role="columnheader"
+        >
+          <span
+            className="c9 c10"
+          >
+            Header 2
+          </span>
+        </div>
+        <div
+          className="c8"
+          role="columnheader"
+        >
+          <span
+            className="c9 c10"
+          >
+            Header 3
+          </span>
+        </div>
+      </div>
+      <div
+        className="c5 c11"
+        role="row"
       >
-        Header 3
-      </span>
+        <div
+          className="c8 c12"
+          role="cell"
+        >
+          <span
+            className="c13 c14"
+          >
+            Cell 1-1
+          </span>
+        </div>
+        <div
+          className="c8 c12"
+          role="cell"
+        >
+          <span
+            className="c13 c14"
+          >
+            Cell 1-2
+          </span>
+        </div>
+        <div
+          className="c8 c12"
+          role="cell"
+        >
+          <span
+            className="c13 c14"
+          >
+            Cell 1-3
+          </span>
+        </div>
+      </div>
+      <div
+        className="c5 c11"
+        role="row"
+      >
+        <div
+          className="c8 c12"
+          role="cell"
+        >
+          <span
+            className="c13 c14"
+          >
+            Cell 2-1
+          </span>
+        </div>
+        <div
+          className="c8 c12"
+          role="cell"
+        >
+          <span
+            className="c13 c14"
+          >
+            Cell 2-2
+          </span>
+        </div>
+        <div
+          className="c8 c12"
+          role="cell"
+        >
+          <span
+            className="c13 c14"
+          >
+            Cell 2-3
+          </span>
+        </div>
+      </div>
+      <div
+        className="c5 c11"
+        role="row"
+      >
+        <div
+          className="c8 c12"
+          role="cell"
+        >
+          <span
+            className="c13 c14"
+          >
+            Cell 3-1
+          </span>
+        </div>
+        <div
+          className="c8 c12"
+          role="cell"
+        >
+          <span
+            className="c13 c14"
+          >
+            Cell 3-2
+          </span>
+        </div>
+        <div
+          className="c8 c12"
+          role="cell"
+        >
+          <span
+            className="c13 c14"
+          >
+            Cell 3-3
+          </span>
+        </div>
+      </div>
     </div>
   </div>
   <div
-    className="c3 c9"
-    role="row"
+    className="c1"
   >
-    <div
-      className="c6 c10"
-      role="cell"
+    <span
+      className="c2"
     >
-      <span
-        className="c11 c12"
-      >
-        Cell 1-1
-      </span>
-    </div>
+      Default Table With Title
+    </span>
     <div
-      className="c6 c10"
-      role="cell"
+      className="c3"
+      role="table"
     >
-      <span
-        className="c11 c12"
+      <caption>
+        <div
+          className="c4"
+        >
+          <span
+            className="c2"
+          >
+            Title
+          </span>
+        </div>
+      </caption>
+      <div
+        className="c5 c6 c7"
+        role="row"
       >
-        Cell 1-2
-      </span>
-    </div>
-    <div
-      className="c6 c10"
-      role="cell"
-    >
-      <span
-        className="c11 c12"
+        <div
+          className="c8"
+          role="columnheader"
+        >
+          <span
+            className="c9 c10"
+          >
+            Header 1
+          </span>
+        </div>
+        <div
+          className="c8"
+          role="columnheader"
+        >
+          <span
+            className="c9 c10"
+          >
+            Header 2
+          </span>
+        </div>
+        <div
+          className="c8"
+          role="columnheader"
+        >
+          <span
+            className="c9 c10"
+          >
+            Header 3
+          </span>
+        </div>
+      </div>
+      <div
+        className="c5 c11"
+        role="row"
       >
-        Cell 1-3
-      </span>
+        <div
+          className="c8 c12"
+          role="cell"
+        >
+          <span
+            className="c13 c14"
+          >
+            Cell 1-1
+          </span>
+        </div>
+        <div
+          className="c8 c12"
+          role="cell"
+        >
+          <span
+            className="c13 c14"
+          >
+            Cell 1-2
+          </span>
+        </div>
+        <div
+          className="c8 c12"
+          role="cell"
+        >
+          <span
+            className="c13 c14"
+          >
+            Cell 1-3
+          </span>
+        </div>
+      </div>
+      <div
+        className="c5 c11"
+        role="row"
+      >
+        <div
+          className="c8 c12"
+          role="cell"
+        >
+          <span
+            className="c13 c14"
+          >
+            Cell 2-1
+          </span>
+        </div>
+        <div
+          className="c8 c12"
+          role="cell"
+        >
+          <span
+            className="c13 c14"
+          >
+            Cell 2-2
+          </span>
+        </div>
+        <div
+          className="c8 c12"
+          role="cell"
+        >
+          <span
+            className="c13 c14"
+          >
+            Cell 2-3
+          </span>
+        </div>
+      </div>
+      <div
+        className="c5 c11"
+        role="row"
+      >
+        <div
+          className="c8 c12"
+          role="cell"
+        >
+          <span
+            className="c13 c14"
+          >
+            Cell 3-1
+          </span>
+        </div>
+        <div
+          className="c8 c12"
+          role="cell"
+        >
+          <span
+            className="c13 c14"
+          >
+            Cell 3-2
+          </span>
+        </div>
+        <div
+          className="c8 c12"
+          role="cell"
+        >
+          <span
+            className="c13 c14"
+          >
+            Cell 3-3
+          </span>
+        </div>
+      </div>
     </div>
   </div>
   <div
-    className="c3 c9"
-    role="row"
+    className="c1"
   >
-    <div
-      className="c6 c10"
-      role="cell"
+    <span
+      className="c2"
     >
-      <span
-        className="c11 c12"
-      >
-        Cell 2-1
-      </span>
-    </div>
+      Default Table With Footer
+    </span>
     <div
-      className="c6 c10"
-      role="cell"
+      className="c3"
+      role="table"
     >
-      <span
-        className="c11 c12"
+      <caption>
+        <div
+          className="c4"
+        >
+          <span
+            className="c2"
+          />
+        </div>
+      </caption>
+      <div
+        className="c5 c6 c7"
+        role="row"
       >
-        Cell 2-2
-      </span>
-    </div>
-    <div
-      className="c6 c10"
-      role="cell"
-    >
-      <span
-        className="c11 c12"
+        <div
+          className="c8"
+          role="columnheader"
+        >
+          <span
+            className="c9 c10"
+          >
+            Header 1
+          </span>
+        </div>
+        <div
+          className="c8"
+          role="columnheader"
+        >
+          <span
+            className="c9 c10"
+          >
+            Header 2
+          </span>
+        </div>
+        <div
+          className="c8"
+          role="columnheader"
+        >
+          <span
+            className="c9 c10"
+          >
+            Header 3
+          </span>
+        </div>
+      </div>
+      <div
+        className="c5 c11"
+        role="row"
       >
-        Cell 2-3
-      </span>
+        <div
+          className="c8 c12"
+          role="cell"
+        >
+          <span
+            className="c13 c14"
+          >
+            Cell 1-1
+          </span>
+        </div>
+        <div
+          className="c8 c12"
+          role="cell"
+        >
+          <span
+            className="c13 c14"
+          >
+            Cell 1-2
+          </span>
+        </div>
+        <div
+          className="c8 c12"
+          role="cell"
+        >
+          <span
+            className="c13 c14"
+          >
+            Cell 1-3
+          </span>
+        </div>
+      </div>
+      <div
+        className="c5 c11"
+        role="row"
+      >
+        <div
+          className="c8 c12"
+          role="cell"
+        >
+          <span
+            className="c13 c14"
+          >
+            Cell 2-1
+          </span>
+        </div>
+        <div
+          className="c8 c12"
+          role="cell"
+        >
+          <span
+            className="c13 c14"
+          >
+            Cell 2-2
+          </span>
+        </div>
+        <div
+          className="c8 c12"
+          role="cell"
+        >
+          <span
+            className="c13 c14"
+          >
+            Cell 2-3
+          </span>
+        </div>
+      </div>
+      <div
+        className="c5 c11"
+        role="row"
+      >
+        <div
+          className="c8 c12"
+          role="cell"
+        >
+          <span
+            className="c13 c14"
+          >
+            Cell 3-1
+          </span>
+        </div>
+        <div
+          className="c8 c12"
+          role="cell"
+        >
+          <span
+            className="c13 c14"
+          >
+            Cell 3-2
+          </span>
+        </div>
+        <div
+          className="c8 c12"
+          role="cell"
+        >
+          <span
+            className="c13 c14"
+          >
+            Cell 3-3
+          </span>
+        </div>
+      </div>
+      <div
+        className="c5 c6 c15"
+        role="row"
+      >
+        <div
+          className="c8 c16"
+          role="cell"
+        >
+          <span
+            className="c17 c18"
+          >
+            Footer 1
+          </span>
+        </div>
+        <div
+          className="c8 c16"
+          role="cell"
+        >
+          <span
+            className="c17 c18"
+          >
+            Footer 2
+          </span>
+        </div>
+        <div
+          className="c8 c16"
+          role="cell"
+        >
+          <span
+            className="c17 c18"
+          >
+            Footer 3
+          </span>
+        </div>
+      </div>
     </div>
   </div>
   <div
-    className="c3 c9"
-    role="row"
+    className="c1"
   >
-    <div
-      className="c6 c10"
-      role="cell"
+    <span
+      className="c2"
     >
-      <span
-        className="c11 c12"
-      >
-        Cell 3-1
-      </span>
-    </div>
+      Default Table With Actions Column
+    </span>
     <div
-      className="c6 c10"
-      role="cell"
+      className="c3"
+      role="table"
     >
-      <span
-        className="c11 c12"
+      <caption>
+        <div
+          className="c4"
+        >
+          <span
+            className="c2"
+          />
+        </div>
+      </caption>
+      <div
+        className="c5 c6 c7"
+        role="row"
       >
-        Cell 3-2
-      </span>
-    </div>
-    <div
-      className="c6 c10"
-      role="cell"
-    >
-      <span
-        className="c11 c12"
+        <div
+          className="c8"
+          role="columnheader"
+        >
+          <span
+            className="c9 c10"
+          >
+            Header 1
+          </span>
+        </div>
+        <div
+          className="c8"
+          role="columnheader"
+        >
+          <span
+            className="c9 c10"
+          >
+            Header 2
+          </span>
+        </div>
+        <div
+          className="c8"
+          role="columnheader"
+        >
+          <span
+            className="c9 c10"
+          >
+            Header 3
+          </span>
+        </div>
+        <div
+          className="c19"
+          role="columnheader"
+        >
+          <span
+            className="c9 c10"
+          />
+        </div>
+      </div>
+      <div
+        className="c5 c11"
+        role="row"
       >
-        Cell 3-3
-      </span>
+        <div
+          className="c8 c12"
+          role="cell"
+        >
+          <span
+            className="c13 c14"
+          >
+            Cell 1-1
+          </span>
+        </div>
+        <div
+          className="c8 c12"
+          role="cell"
+        >
+          <span
+            className="c13 c14"
+          >
+            Cell 1-2
+          </span>
+        </div>
+        <div
+          className="c8 c12"
+          role="cell"
+        >
+          <span
+            className="c13 c14"
+          >
+            Cell 1-3
+          </span>
+        </div>
+        <div
+          className="c19 c12"
+          role="cell"
+        >
+          <button
+            className="NormalizedButton__Button-ey7f5x-0 c20"
+            onClick={[Function]}
+            type="button"
+          >
+            <span
+              className="c21"
+            >
+              <svg
+                aria-hidden="true"
+                className="c22"
+                focusable="false"
+                preserveAspectRatio="xMidYMid meet"
+                role="presentation"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M21 9a3 3 0 1 1 0 6 3 3 0 0 1 0-6zM3 9a3 3 0 1 1 0 6 3 3 0 0 1 0-6zm9 0a3 3 0 1 1 0 6 3 3 0 0 1 0-6z"
+                  fillRule="evenodd"
+                />
+              </svg>
+            </span>
+          </button>
+        </div>
+      </div>
+      <div
+        className="c5 c11"
+        role="row"
+      >
+        <div
+          className="c8 c12"
+          role="cell"
+        >
+          <span
+            className="c13 c14"
+          >
+            Cell 2-1
+          </span>
+        </div>
+        <div
+          className="c8 c12"
+          role="cell"
+        >
+          <span
+            className="c13 c14"
+          >
+            Cell 2-2
+          </span>
+        </div>
+        <div
+          className="c8 c12"
+          role="cell"
+        >
+          <span
+            className="c13 c14"
+          >
+            Cell 2-3
+          </span>
+        </div>
+        <div
+          className="c19 c12"
+          role="cell"
+        >
+          <button
+            className="NormalizedButton__Button-ey7f5x-0 c20"
+            onClick={[Function]}
+            type="button"
+          >
+            <span
+              className="c21"
+            >
+              <svg
+                aria-hidden="true"
+                className="c22"
+                focusable="false"
+                preserveAspectRatio="xMidYMid meet"
+                role="presentation"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M21 9a3 3 0 1 1 0 6 3 3 0 0 1 0-6zM3 9a3 3 0 1 1 0 6 3 3 0 0 1 0-6zm9 0a3 3 0 1 1 0 6 3 3 0 0 1 0-6z"
+                  fillRule="evenodd"
+                />
+              </svg>
+            </span>
+          </button>
+        </div>
+      </div>
+      <div
+        className="c5 c11"
+        role="row"
+      >
+        <div
+          className="c8 c12"
+          role="cell"
+        >
+          <span
+            className="c13 c14"
+          >
+            Cell 3-1
+          </span>
+        </div>
+        <div
+          className="c8 c12"
+          role="cell"
+        >
+          <span
+            className="c13 c14"
+          >
+            Cell 3-2
+          </span>
+        </div>
+        <div
+          className="c8 c12"
+          role="cell"
+        >
+          <span
+            className="c13 c14"
+          >
+            Cell 3-3
+          </span>
+        </div>
+        <div
+          className="c19 c12"
+          role="cell"
+        >
+          <button
+            className="NormalizedButton__Button-ey7f5x-0 c20"
+            onClick={[Function]}
+            type="button"
+          >
+            <span
+              className="c21"
+            >
+              <svg
+                aria-hidden="true"
+                className="c22"
+                focusable="false"
+                preserveAspectRatio="xMidYMid meet"
+                role="presentation"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M21 9a3 3 0 1 1 0 6 3 3 0 0 1 0-6zM3 9a3 3 0 1 1 0 6 3 3 0 0 1 0-6zm9 0a3 3 0 1 1 0 6 3 3 0 0 1 0-6z"
+                  fillRule="evenodd"
+                />
+              </svg>
+            </span>
+          </button>
+        </div>
+      </div>
     </div>
   </div>
 </div>
