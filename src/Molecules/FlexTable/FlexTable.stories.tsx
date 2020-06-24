@@ -29,6 +29,11 @@ const StyledTableDiv = styled.div`
   background-color: white;
 `;
 
+const StyledFlexTable = styled(FlexTable)`
+  background-color: white;
+  margin-bottom: ${p => p.theme.spacing.unit(5)}px;
+`;
+
 export const DefaultTable = () => {
   const DefaultTableExample = () => (
     <FlexTable>
@@ -310,11 +315,13 @@ export const TableWithDifferentHeaders = () => {
       <FlexTable.Header columnId="column3" sortable>
         {({ sortable, sorted, fontSize, onSortClick, sortOrder }) => (
           <FlexTable.Header.SortButton onClick={onSortClick}>
-            <Flag country="SE" inline height={3} />
-            <FlexTable.Header.TextWrapper fontSize={fontSize} sorted={sorted}>
-              {children}
-            </FlexTable.Header.TextWrapper>
-            {sortable && <FlexTable.Header.SortIcon sortOrder={sortOrder} />}
+            <>
+              <Flag country="SE" inline height={3} />
+              <FlexTable.Header.TextWrapper fontSize={fontSize} sorted={sorted}>
+                {children}
+              </FlexTable.Header.TextWrapper>
+              {sortable && <FlexTable.Header.SortIcon sortOrder={sortOrder} />}
+            </>
           </FlexTable.Header.SortButton>
         )}
       </FlexTable.Header>
@@ -475,10 +482,31 @@ export const TableWithDifferentHeaders = () => {
     return <ReactComponent />;
   };
 
+  const SortableHeaderUncontrolledWithDifferentAlignmentExample = () => {
+    return (
+      <FlexTable>
+        <FlexTable.HeaderRow>
+          <FlexTable.Header columnId="column1" sortable justifyContent="center">
+            Uncontrolled center
+          </FlexTable.Header>
+          <FlexTable.Header columnId="column2" sortable justifyContent="flex-end">
+            Uncontrolled right
+          </FlexTable.Header>
+          <FlexTable.Header columnId="column3" sortable>
+            Uncontrolled left
+          </FlexTable.Header>
+          <FlexTable.Header columnId="column4" sortable={false}>
+            Not sortable
+          </FlexTable.Header>
+        </FlexTable.HeaderRow>
+      </FlexTable>
+    );
+  };
+
   return (
     <StyledDiv>
       <StyledTableDiv>
-        <Typography type="title3">Default Table Header Variations</Typography>
+        <Typography type="title3">Table Header Variations</Typography>
         <DefaultTableHeaders />
       </StyledTableDiv>
       <StyledTableDiv>
@@ -492,6 +520,12 @@ export const TableWithDifferentHeaders = () => {
       <StyledTableDiv>
         <Typography type="title3">Sortable Headers – Only Ascending/Descending</Typography>
         <SortableHeadersOnlyAscendingDescending />
+      </StyledTableDiv>
+      <StyledTableDiv>
+        <Typography type="title3">
+          Uncontrolled Sortable Headers With Different Alignments
+        </Typography>
+        <SortableHeaderUncontrolledWithDifferentAlignmentExample />
       </StyledTableDiv>
     </StyledDiv>
   );
@@ -1128,10 +1162,5 @@ export const MultipleTables = () => {
   };
   return <ReactComponent />;
 };
-
-const StyledFlexTable = styled(FlexTable)`
-  background-color: white;
-  margin-bottom: ${p => p.theme.spacing.unit(5)}px;
-`;
 
 // TODO: add story to how you create a custom sorting header and variations thereof
