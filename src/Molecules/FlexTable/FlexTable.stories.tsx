@@ -5,7 +5,7 @@ import { number, withKnobs } from '@storybook/addon-knobs';
 import { FixedSizeList as List } from 'react-window';
 import AutoSizer from 'react-virtualized-auto-sizer';
 import FlexTable from './FlexTable';
-import { Button, Typography, Flag, Icon, Number, Flexbox, Separator } from '../..';
+import { Button, Typography, Flag, Icon, Number, Flexbox } from '../..';
 import { SortOrder } from './Header/HeaderContent/HeaderContent.types';
 import { OnSort } from './Header/Header.types';
 import { ICON_COLUMN_DEFAULT_FLEX_PROPS } from './shared/constants';
@@ -22,21 +22,16 @@ const StyledDiv = styled.div`
   background-color: ${p => p.theme.color.background};
 `;
 
-const StyledTableDiv = styled.div`
-  &:not(:first-of-type) {
-    margin-top: ${p => p.theme.spacing.unit(10)}px;
-  }
-  background-color: white;
-`;
-
 const StyledFlexTable = styled(FlexTable)`
   background-color: white;
-  margin-bottom: ${p => p.theme.spacing.unit(5)}px;
+  &:not(:last-of-type) {
+    margin-bottom: ${p => p.theme.spacing.unit(10)}px;
+  }
 `;
 
 export const DefaultTable = () => {
   const DefaultTableExample = () => (
-    <FlexTable>
+    <StyledFlexTable>
       <FlexTable.HeaderRow>
         <FlexTable.Header columnId="column1">Header 1</FlexTable.Header>
         <FlexTable.Header columnId="column2">Header 2</FlexTable.Header>
@@ -57,11 +52,11 @@ export const DefaultTable = () => {
         <FlexTable.Cell columnId="column2">Cell 3-2</FlexTable.Cell>
         <FlexTable.Cell columnId="column3">Cell 3-3</FlexTable.Cell>
       </FlexTable.Row>
-    </FlexTable>
+    </StyledFlexTable>
   );
 
   const DefaultTableWithTitleExample = () => (
-    <FlexTable title="Title">
+    <StyledFlexTable title="Title">
       <FlexTable.HeaderRow>
         <FlexTable.Header columnId="column1">Header 1</FlexTable.Header>
         <FlexTable.Header columnId="column2">Header 2</FlexTable.Header>
@@ -82,11 +77,11 @@ export const DefaultTable = () => {
         <FlexTable.Cell columnId="column2">Cell 3-2</FlexTable.Cell>
         <FlexTable.Cell columnId="column3">Cell 3-3</FlexTable.Cell>
       </FlexTable.Row>
-    </FlexTable>
+    </StyledFlexTable>
   );
 
   const DefaultTableWithFooterExample = () => (
-    <FlexTable>
+    <StyledFlexTable>
       <FlexTable.HeaderRow>
         <FlexTable.Header columnId="column1">Header 1</FlexTable.Header>
         <FlexTable.Header columnId="column2">Header 2</FlexTable.Header>
@@ -112,11 +107,11 @@ export const DefaultTable = () => {
         <FlexTable.Footer columnId="column2">Footer 2</FlexTable.Footer>
         <FlexTable.Footer columnId="column3">Footer 3</FlexTable.Footer>
       </FlexTable.FooterRow>
-    </FlexTable>
+    </StyledFlexTable>
   );
 
   const DefaultTableWithActionsColumnExample = () => (
-    <FlexTable>
+    <StyledFlexTable>
       <FlexTable.HeaderRow>
         <FlexTable.Header columnId="column1">Header 1</FlexTable.Header>
         <FlexTable.Header columnId="column2">Header 2</FlexTable.Header>
@@ -153,33 +148,25 @@ export const DefaultTable = () => {
           </Button>
         </FlexTable.Cell>
       </FlexTable.Row>
-    </FlexTable>
+    </StyledFlexTable>
   );
 
   return (
     <StyledDiv>
-      <StyledTableDiv>
-        <Typography type="title3">Default Table</Typography>
-        <DefaultTableExample />
-      </StyledTableDiv>
-      <StyledTableDiv>
-        <Typography type="title3">Default Table With Title</Typography>
-        <DefaultTableWithTitleExample />
-      </StyledTableDiv>
-      <StyledTableDiv>
-        <Typography type="title3">Default Table With Footer</Typography>
-        <DefaultTableWithFooterExample />
-      </StyledTableDiv>
-      <StyledTableDiv>
-        <Typography type="title3">Default Table With Actions Column</Typography>
-        <DefaultTableWithActionsColumnExample />
-      </StyledTableDiv>
+      <Typography type="title3">Default Table</Typography>
+      <DefaultTableExample />
+      <Typography type="title3">Default Table With Title</Typography>
+      <DefaultTableWithTitleExample />
+      <Typography type="title3">Default Table With Footer</Typography>
+      <DefaultTableWithFooterExample />
+      <Typography type="title3">Default Table With Actions Column</Typography>
+      <DefaultTableWithActionsColumnExample />
     </StyledDiv>
   );
 };
 
 export const TableWithDifferentRows = () => (
-  <FlexTable>
+  <StyledFlexTable>
     <FlexTable.Row>Default</FlexTable.Row>
     <FlexTable.Row hoverHighlight={false}>No highlight</FlexTable.Row>
     <FlexTable.Row hideSeparator>Separator hidden</FlexTable.Row>
@@ -187,12 +174,12 @@ export const TableWithDifferentRows = () => (
       No highlight and separator hidden
     </FlexTable.Row>
     <FlexTable.Row separatorColor={t => t.color.barChartColor1}>Separator color set</FlexTable.Row>
-  </FlexTable>
+  </StyledFlexTable>
 );
 
 export const TableWithDifferentColumns = () => {
   const ColumnWidthTableExample = () => (
-    <FlexTable>
+    <StyledFlexTable>
       <FlexTable.HeaderRow>
         <FlexTable.Header flex="1" columnId="column1">
           Flex 1
@@ -226,11 +213,11 @@ export const TableWithDifferentColumns = () => {
         <FlexTable.Cell columnId="column3">Cell 3-3</FlexTable.Cell>
         <FlexTable.Cell columnId="column4">Cell 3-4</FlexTable.Cell>
       </FlexTable.Row>
-    </FlexTable>
+    </StyledFlexTable>
   );
 
   const DifferentAlignmentsTableExample = () => (
-    <FlexTable>
+    <StyledFlexTable>
       <FlexTable.HeaderRow>
         <FlexTable.Header columnId="column1">Left</FlexTable.Header>
         <FlexTable.Header columnId="column2" justifyContent="flex-end">
@@ -261,11 +248,11 @@ export const TableWithDifferentColumns = () => {
         <FlexTable.Cell columnId="column3">Cell 3-3</FlexTable.Cell>
         <FlexTable.Cell columnId="column4">Cell 3-4</FlexTable.Cell>
       </FlexTable.Row>
-    </FlexTable>
+    </StyledFlexTable>
   );
 
   const MediaColumnsExample = () => (
-    <FlexTable>
+    <StyledFlexTable>
       <FlexTable.HeaderRow>
         <FlexTable.Header columnId="column1">Header 1</FlexTable.Header>
         <FlexTable.Header columnId="column2" hidden md={{ hidden: false }}>
@@ -288,23 +275,17 @@ export const TableWithDifferentColumns = () => {
         <FlexTable.Cell columnId="column2">Hidden on mobile</FlexTable.Cell>
         <FlexTable.Cell columnId="column3">Cell 3-3</FlexTable.Cell>
       </FlexTable.Row>
-    </FlexTable>
+    </StyledFlexTable>
   );
 
   return (
     <StyledDiv>
-      <StyledTableDiv>
-        <Typography type="title3">Table With Column Width Set</Typography>
-        <ColumnWidthTableExample />
-      </StyledTableDiv>
-      <StyledTableDiv>
-        <Typography type="title3">Table With Different Alignments</Typography>
-        <DifferentAlignmentsTableExample />
-      </StyledTableDiv>
-      <StyledTableDiv>
-        <Typography type="title3">Table With Columns Hidden Based On Screen Size</Typography>
-        <MediaColumnsExample />
-      </StyledTableDiv>
+      <Typography type="title3">Table With Column Width Set</Typography>
+      <ColumnWidthTableExample />
+      <Typography type="title3">Table With Different Alignments</Typography>
+      <DifferentAlignmentsTableExample />
+      <Typography type="title3">Table With Columns Hidden Based On Screen Size</Typography>
+      <MediaColumnsExample />
     </StyledDiv>
   );
 };
@@ -327,7 +308,7 @@ export const TableWithDifferentHeaders = () => {
       </FlexTable.Header>
     );
     return (
-      <FlexTable>
+      <StyledFlexTable>
         <FlexTable.HeaderRow>
           <FlexTable.Header columnId="column1" flex="1">
             Table header 1 flex 1
@@ -341,13 +322,13 @@ export const TableWithDifferentHeaders = () => {
             <Typography type="title3">React component</Typography>
           </FlexTable.Header>
         </FlexTable.HeaderRow>
-      </FlexTable>
+      </StyledFlexTable>
     );
   };
 
   const UncontrolledSortableHeaders = () => {
     return (
-      <FlexTable>
+      <StyledFlexTable>
         <FlexTable.HeaderRow>
           <FlexTable.Header columnId="column1" sortable>
             Uncontrolled 1
@@ -366,7 +347,7 @@ export const TableWithDifferentHeaders = () => {
             Non sortable
           </FlexTable.Header>
         </FlexTable.HeaderRow>
-      </FlexTable>
+      </StyledFlexTable>
     );
   };
 
@@ -386,7 +367,7 @@ export const TableWithDifferentHeaders = () => {
         setColumnSort({ columnId, sortOrder: nextSortOrder });
 
       return (
-        <FlexTable>
+        <StyledFlexTable>
           <FlexTable.HeaderRow>
             <FlexTable.Header
               columnId="column1"
@@ -416,9 +397,10 @@ export const TableWithDifferentHeaders = () => {
               Controlled3
             </FlexTable.Header>
           </FlexTable.HeaderRow>
-        </FlexTable>
+        </StyledFlexTable>
       );
     };
+
     return <ReactComponent />;
   };
 
@@ -446,7 +428,7 @@ export const TableWithDifferentHeaders = () => {
       };
 
       return (
-        <FlexTable>
+        <StyledFlexTable>
           <FlexTable.HeaderRow>
             <FlexTable.Header
               columnId="column1"
@@ -476,7 +458,7 @@ export const TableWithDifferentHeaders = () => {
               Controlled3
             </FlexTable.Header>
           </FlexTable.HeaderRow>
-        </FlexTable>
+        </StyledFlexTable>
       );
     };
     return <ReactComponent />;
@@ -484,7 +466,7 @@ export const TableWithDifferentHeaders = () => {
 
   const SortableHeaderUncontrolledWithDifferentAlignmentExample = () => {
     return (
-      <FlexTable>
+      <StyledFlexTable>
         <FlexTable.HeaderRow>
           <FlexTable.Header columnId="column1" sortable justifyContent="center">
             Uncontrolled center
@@ -499,34 +481,22 @@ export const TableWithDifferentHeaders = () => {
             Not sortable
           </FlexTable.Header>
         </FlexTable.HeaderRow>
-      </FlexTable>
+      </StyledFlexTable>
     );
   };
 
   return (
     <StyledDiv>
-      <StyledTableDiv>
-        <Typography type="title3">Table Header Variations</Typography>
-        <DefaultTableHeaders />
-      </StyledTableDiv>
-      <StyledTableDiv>
-        <Typography type="title3">Uncontrolled Sortable Headers</Typography>
-        <UncontrolledSortableHeaders />
-      </StyledTableDiv>
-      <StyledTableDiv>
-        <Typography type="title3">Controlled Sortable Headers</Typography>
-        <ControlledSortableHeaders />
-      </StyledTableDiv>
-      <StyledTableDiv>
-        <Typography type="title3">Sortable Headers – Only Ascending/Descending</Typography>
-        <SortableHeadersOnlyAscendingDescending />
-      </StyledTableDiv>
-      <StyledTableDiv>
-        <Typography type="title3">
-          Uncontrolled Sortable Headers With Different Alignments
-        </Typography>
-        <SortableHeaderUncontrolledWithDifferentAlignmentExample />
-      </StyledTableDiv>
+      <Typography type="title3">Table Header Variations</Typography>
+      <DefaultTableHeaders />
+      <Typography type="title3">Uncontrolled Sortable Headers</Typography>
+      <UncontrolledSortableHeaders />
+      <Typography type="title3">Controlled Sortable Headers</Typography>
+      <ControlledSortableHeaders />
+      <Typography type="title3">Sortable Headers – Only Ascending/Descending</Typography>
+      <SortableHeadersOnlyAscendingDescending />
+      <Typography type="title3">Uncontrolled Sortable Headers With Different Alignments</Typography>
+      <SortableHeaderUncontrolledWithDifferentAlignmentExample />
     </StyledDiv>
   );
 };
@@ -640,7 +610,7 @@ export const ExpandableTableWithDifferentScenarios = () => {
   );
   const ExpandedTableExample = () => {
     return (
-      <FlexTable>
+      <StyledFlexTable>
         <FlexTable.HeaderRow>
           <FlexTable.Header columnId="column1">Header 1</FlexTable.Header>
           <FlexTable.Header columnId="column2">Header 2</FlexTable.Header>
@@ -684,7 +654,7 @@ export const ExpandableTableWithDifferentScenarios = () => {
           <FlexTable.Cell columnId="column2">Expandable with children</FlexTable.Cell>
           <FlexTable.Cell columnId="column3">Expandable with children</FlexTable.Cell>
         </FlexTable.Row>
-      </FlexTable>
+      </StyledFlexTable>
     );
   };
 
@@ -692,7 +662,7 @@ export const ExpandableTableWithDifferentScenarios = () => {
     const [expandedRows, setExpandedRows] = useState<string[]>(['row3']);
 
     return (
-      <FlexTable>
+      <StyledFlexTable>
         <FlexTable.HeaderRow>
           <FlexTable.Header columnId="column1">Header 1</FlexTable.Header>
           <FlexTable.Header columnId="column2">Header 2</FlexTable.Header>
@@ -769,7 +739,7 @@ export const ExpandableTableWithDifferentScenarios = () => {
           <FlexTable.Cell columnId="column2">Expandable with children</FlexTable.Cell>
           <FlexTable.Cell columnId="column3">Expandable with children</FlexTable.Cell>
         </FlexTable.Row>
-      </FlexTable>
+      </StyledFlexTable>
     );
   };
 
@@ -795,7 +765,7 @@ export const ExpandableTableWithDifferentScenarios = () => {
       return setExpandedRows([...expandedRows, rowId]);
     };
     return (
-      <FlexTable>
+      <StyledFlexTable>
         <FlexTable.HeaderRow>
           <FlexTable.Header columnId="column1">Header 1</FlexTable.Header>
           <FlexTable.Header columnId="column2">Header 2</FlexTable.Header>
@@ -852,24 +822,18 @@ export const ExpandableTableWithDifferentScenarios = () => {
           <FlexTable.Cell columnId="column2">Expandable with children</FlexTable.Cell>
           <FlexTable.Cell columnId="column3">Expandable with children</FlexTable.Cell>
         </ExpandRow>
-      </FlexTable>
+      </StyledFlexTable>
     );
   };
 
   return (
     <StyledDiv>
-      <StyledTableDiv>
-        <Typography type="title3">Default Expandable Table</Typography>
-        <ExpandedTableExample />
-      </StyledTableDiv>
-      <StyledTableDiv>
-        <Typography type="title3">Controlled Expandable Table</Typography>
-        <ControlledExpandedTableExample />
-      </StyledTableDiv>
-      <StyledTableDiv>
-        <Typography type="title3">Controlled Expandable Table With Own Cell</Typography>
-        <ControlledExpandableTableWithOwnCellExample />
-      </StyledTableDiv>
+      <Typography type="title3">Default Expandable Table</Typography>
+      <ExpandedTableExample />
+      <Typography type="title3">Controlled Expandable Table</Typography>
+      <ControlledExpandedTableExample />
+      <Typography type="title3">Controlled Expandable Table With Own Cell</Typography>
+      <ControlledExpandableTableWithOwnCellExample />
     </StyledDiv>
   );
 };
@@ -1090,7 +1054,7 @@ export const BigTableWithoutStickyHeader = () => {
   return <ReactComponent />;
 };
 
-export const MultipleTables = () => {
+export const MultipleBigTablesWithStickyHeaders = () => {
   const ReactComponent = () => {
     const rowsLength = number('Number of rows', 100);
     const columnsLength = number('Number of columns', 5);
@@ -1115,8 +1079,11 @@ export const MultipleTables = () => {
     }, [tableData, sort]);
 
     return (
-      <>
-        <FlexTable>
+      <StyledDiv>
+        <Typography type="title3">
+          Table 1 - Multiple Big Tables Demonstrating Proper Sticky Header
+        </Typography>
+        <StyledFlexTable>
           <FlexTable.HeaderRow>
             {[...Array(columnsLength)].map((_, index) => (
               <FlexTable.Header
@@ -1133,13 +1100,11 @@ export const MultipleTables = () => {
           {sortedData.map(data => (
             <BigTableRow key={data.rowId} data={data} />
           ))}
-        </FlexTable>
-        <br />
-        <br />
-        <Separator />
-        <br />
-        <br />
-        <FlexTable>
+        </StyledFlexTable>
+        <Typography type="title3">
+          Table 2 - Multiple Big Tables Demonstrating Proper Sticky Header
+        </Typography>
+        <StyledFlexTable>
           <FlexTable.HeaderRow>
             {[...Array(columnsLength)].map((_, index) => (
               <FlexTable.Header
@@ -1156,8 +1121,8 @@ export const MultipleTables = () => {
           {sortedData.map(data => (
             <BigTableRow key={data.rowId} data={data} />
           ))}
-        </FlexTable>
-      </>
+        </StyledFlexTable>
+      </StyledDiv>
     );
   };
   return <ReactComponent />;
