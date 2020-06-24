@@ -1,3 +1,10 @@
+# [2.53.0](https://github.com/nordnet/ui/compare/v2.52.1...v2.53.0) (2020-06-23)
+
+
+### Features
+
+* update react-router and react-router-dom ([bd9191f](https://github.com/nordnet/ui/commit/bd9191f))
+
 ## [2.52.1](https://github.com/nordnet/ui/compare/v2.52.0...v2.52.1) (2020-06-22)
 
 
