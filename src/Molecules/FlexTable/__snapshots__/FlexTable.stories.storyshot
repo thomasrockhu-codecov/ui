@@ -107674,7 +107674,7 @@ exports[`Storyshots Molecules | FlexTable Expandable Controlled Table 1`] = `
   box-sizing: border-box;
 }
 
-.c38 {
+.c37 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -107687,12 +107687,12 @@ exports[`Storyshots Molecules | FlexTable Expandable Controlled Table 1`] = `
   margin-right: -20px;
 }
 
-.c38 > * {
+.c37 > * {
   padding-left: 20px;
   padding-right: 20px;
 }
 
-.c38 > *:not(:first-child) {
+.c37 > *:not(:first-child) {
   padding-top: 0;
 }
 
@@ -107795,15 +107795,6 @@ exports[`Storyshots Molecules | FlexTable Expandable Controlled Table 1`] = `
   font-weight: 400;
   font-size: 12px;
   line-height: 1.3333333333333333;
-}
-
-.c33 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #282823;
-  margin: 0;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
 }
 
 .c17 {
@@ -107917,7 +107908,7 @@ exports[`Storyshots Molecules | FlexTable Expandable Controlled Table 1`] = `
   outline: 1px dotted ButtonText;
 }
 
-.c35 {
+.c34 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -107927,7 +107918,7 @@ exports[`Storyshots Molecules | FlexTable Expandable Controlled Table 1`] = `
   flex-direction: column;
 }
 
-.c37 {
+.c36 {
   margin-bottom: 4px;
 }
 
@@ -107939,12 +107930,12 @@ exports[`Storyshots Molecules | FlexTable Expandable Controlled Table 1`] = `
   width: 100%;
 }
 
-.c34 {
+.c33 {
   max-width: 300px;
   padding-bottom: 20px;
 }
 
-.c36 {
+.c35 {
   overflow: hidden;
 }
 
@@ -108435,7 +108426,7 @@ exports[`Storyshots Molecules | FlexTable Expandable Controlled Table 1`] = `
                   className="c19"
                 >
                   <span
-                    className="c33 c32"
+                    className="c12 c32"
                   >
                     42100000000
                   </span>
@@ -108447,13 +108438,13 @@ exports[`Storyshots Molecules | FlexTable Expandable Controlled Table 1`] = `
             className="c19"
           >
             <li
-              className="c34"
+              className="c33"
             >
               <div
-                className="c35 c36"
+                className="c34 c35"
               >
                 <div
-                  className="c37"
+                  className="c36"
                 >
                   <span
                     className="c7 c32"
@@ -108474,7 +108465,7 @@ exports[`Storyshots Molecules | FlexTable Expandable Controlled Table 1`] = `
                   className="c19"
                 >
                   <span
-                    className="c33 c32"
+                    className="c12 c32"
                   >
                     42100000000
                   </span>
@@ -108513,7 +108504,7 @@ exports[`Storyshots Molecules | FlexTable Expandable Controlled Table 1`] = `
                   className="c19"
                 >
                   <span
-                    className="c33 c32"
+                    className="c12 c32"
                   >
                     42100000000
                   </span>
@@ -108525,13 +108516,13 @@ exports[`Storyshots Molecules | FlexTable Expandable Controlled Table 1`] = `
             className="c19"
           >
             <li
-              className="c34"
+              className="c33"
             >
               <div
-                className="c35 c36"
+                className="c34 c35"
               >
                 <div
-                  className="c37"
+                  className="c36"
                 >
                   <span
                     className="c7 c32"
@@ -108552,7 +108543,7 @@ exports[`Storyshots Molecules | FlexTable Expandable Controlled Table 1`] = `
                   className="c19"
                 >
                   <span
-                    className="c33 c32"
+                    className="c12 c32"
                   >
                     42100000000
                   </span>
@@ -108591,7 +108582,7 @@ exports[`Storyshots Molecules | FlexTable Expandable Controlled Table 1`] = `
                   className="c19"
                 >
                   <span
-                    className="c33 c32"
+                    className="c12 c32"
                   >
                     42100000000
                   </span>
@@ -108603,13 +108594,13 @@ exports[`Storyshots Molecules | FlexTable Expandable Controlled Table 1`] = `
             className="c19"
           >
             <li
-              className="c34"
+              className="c33"
             >
               <div
-                className="c35 c36"
+                className="c34 c35"
               >
                 <div
-                  className="c37"
+                  className="c36"
                 >
                   <span
                     className="c7 c32"
@@ -108630,7 +108621,7 @@ exports[`Storyshots Molecules | FlexTable Expandable Controlled Table 1`] = `
                   className="c19"
                 >
                   <span
-                    className="c33 c32"
+                    className="c12 c32"
                   >
                     42100000000
                   </span>
@@ -108669,7 +108660,7 @@ exports[`Storyshots Molecules | FlexTable Expandable Controlled Table 1`] = `
                   className="c19"
                 >
                   <span
-                    className="c33 c32"
+                    className="c12 c32"
                   >
                     42100000000
                   </span>
@@ -108681,13 +108672,13 @@ exports[`Storyshots Molecules | FlexTable Expandable Controlled Table 1`] = `
             className="c19"
           >
             <li
-              className="c34"
+              className="c33"
             >
               <div
-                className="c35 c36"
+                className="c34 c35"
               >
                 <div
-                  className="c37"
+                  className="c36"
                 >
                   <span
                     className="c7 c32"
@@ -108708,7 +108699,7 @@ exports[`Storyshots Molecules | FlexTable Expandable Controlled Table 1`] = `
                   className="c19"
                 >
                   <span
-                    className="c33 c32"
+                    className="c12 c32"
                   >
                     42100000000
                   </span>
@@ -108747,7 +108738,7 @@ exports[`Storyshots Molecules | FlexTable Expandable Controlled Table 1`] = `
                   className="c19"
                 >
                   <span
-                    className="c33 c32"
+                    className="c12 c32"
                   >
                     42100000000
                   </span>
@@ -108759,13 +108750,13 @@ exports[`Storyshots Molecules | FlexTable Expandable Controlled Table 1`] = `
             className="c19"
           >
             <li
-              className="c34"
+              className="c33"
             >
               <div
-                className="c35 c36"
+                className="c34 c35"
               >
                 <div
-                  className="c37"
+                  className="c36"
                 >
                   <span
                     className="c7 c32"
@@ -108786,7 +108777,7 @@ exports[`Storyshots Molecules | FlexTable Expandable Controlled Table 1`] = `
                   className="c19"
                 >
                   <span
-                    className="c33 c32"
+                    className="c12 c32"
                   >
                     42100000000
                   </span>
@@ -108825,7 +108816,7 @@ exports[`Storyshots Molecules | FlexTable Expandable Controlled Table 1`] = `
                   className="c19"
                 >
                   <span
-                    className="c33 c32"
+                    className="c12 c32"
                   >
                     42100000000
                   </span>
@@ -108837,13 +108828,13 @@ exports[`Storyshots Molecules | FlexTable Expandable Controlled Table 1`] = `
             className="c19"
           >
             <li
-              className="c34"
+              className="c33"
             >
               <div
-                className="c35 c36"
+                className="c34 c35"
               >
                 <div
-                  className="c37"
+                  className="c36"
                 >
                   <span
                     className="c7 c32"
@@ -108864,7 +108855,7 @@ exports[`Storyshots Molecules | FlexTable Expandable Controlled Table 1`] = `
                   className="c19"
                 >
                   <span
-                    className="c33 c32"
+                    className="c12 c32"
                   >
                     42100000000
                   </span>
@@ -108903,7 +108894,7 @@ exports[`Storyshots Molecules | FlexTable Expandable Controlled Table 1`] = `
                   className="c19"
                 >
                   <span
-                    className="c33 c32"
+                    className="c12 c32"
                   >
                     42100000000
                   </span>
@@ -108915,13 +108906,13 @@ exports[`Storyshots Molecules | FlexTable Expandable Controlled Table 1`] = `
             className="c19"
           >
             <li
-              className="c34"
+              className="c33"
             >
               <div
-                className="c35 c36"
+                className="c34 c35"
               >
                 <div
-                  className="c37"
+                  className="c36"
                 >
                   <span
                     className="c7 c32"
@@ -108942,7 +108933,7 @@ exports[`Storyshots Molecules | FlexTable Expandable Controlled Table 1`] = `
                   className="c19"
                 >
                   <span
-                    className="c33 c32"
+                    className="c12 c32"
                   >
                     42100000000
                   </span>
@@ -108981,7 +108972,7 @@ exports[`Storyshots Molecules | FlexTable Expandable Controlled Table 1`] = `
                   className="c19"
                 >
                   <span
-                    className="c33 c32"
+                    className="c12 c32"
                   >
                     42100000000
                   </span>
@@ -108993,13 +108984,13 @@ exports[`Storyshots Molecules | FlexTable Expandable Controlled Table 1`] = `
             className="c19"
           >
             <li
-              className="c34"
+              className="c33"
             >
               <div
-                className="c35 c36"
+                className="c34 c35"
               >
                 <div
-                  className="c37"
+                  className="c36"
                 >
                   <span
                     className="c7 c32"
@@ -109020,7 +109011,7 @@ exports[`Storyshots Molecules | FlexTable Expandable Controlled Table 1`] = `
                   className="c19"
                 >
                   <span
-                    className="c33 c32"
+                    className="c12 c32"
                   >
                     42100000000
                   </span>
@@ -109059,7 +109050,7 @@ exports[`Storyshots Molecules | FlexTable Expandable Controlled Table 1`] = `
                   className="c19"
                 >
                   <span
-                    className="c33 c32"
+                    className="c12 c32"
                   >
                     42100000000
                   </span>
@@ -109071,13 +109062,13 @@ exports[`Storyshots Molecules | FlexTable Expandable Controlled Table 1`] = `
             className="c19"
           >
             <li
-              className="c34"
+              className="c33"
             >
               <div
-                className="c35 c36"
+                className="c34 c35"
               >
                 <div
-                  className="c37"
+                  className="c36"
                 >
                   <span
                     className="c7 c32"
@@ -109098,7 +109089,7 @@ exports[`Storyshots Molecules | FlexTable Expandable Controlled Table 1`] = `
                   className="c19"
                 >
                   <span
-                    className="c33 c32"
+                    className="c12 c32"
                   >
                     42100000000
                   </span>
@@ -109137,7 +109128,7 @@ exports[`Storyshots Molecules | FlexTable Expandable Controlled Table 1`] = `
                   className="c19"
                 >
                   <span
-                    className="c33 c32"
+                    className="c12 c32"
                   >
                     42100000000
                   </span>
@@ -109149,13 +109140,13 @@ exports[`Storyshots Molecules | FlexTable Expandable Controlled Table 1`] = `
             className="c19"
           >
             <li
-              className="c34"
+              className="c33"
             >
               <div
-                className="c35 c36"
+                className="c34 c35"
               >
                 <div
-                  className="c37"
+                  className="c36"
                 >
                   <span
                     className="c7 c32"
@@ -109176,7 +109167,7 @@ exports[`Storyshots Molecules | FlexTable Expandable Controlled Table 1`] = `
                   className="c19"
                 >
                   <span
-                    className="c33 c32"
+                    className="c12 c32"
                   >
                     42100000000
                   </span>
@@ -109215,7 +109206,7 @@ exports[`Storyshots Molecules | FlexTable Expandable Controlled Table 1`] = `
                   className="c19"
                 >
                   <span
-                    className="c33 c32"
+                    className="c12 c32"
                   >
                     42100000000
                   </span>
@@ -109227,13 +109218,13 @@ exports[`Storyshots Molecules | FlexTable Expandable Controlled Table 1`] = `
             className="c19"
           >
             <li
-              className="c34"
+              className="c33"
             >
               <div
-                className="c35 c36"
+                className="c34 c35"
               >
                 <div
-                  className="c37"
+                  className="c36"
                 >
                   <span
                     className="c7 c32"
@@ -109254,7 +109245,7 @@ exports[`Storyshots Molecules | FlexTable Expandable Controlled Table 1`] = `
                   className="c19"
                 >
                   <span
-                    className="c33 c32"
+                    className="c12 c32"
                   >
                     42100000000
                   </span>
@@ -109293,7 +109284,7 @@ exports[`Storyshots Molecules | FlexTable Expandable Controlled Table 1`] = `
                   className="c19"
                 >
                   <span
-                    className="c33 c32"
+                    className="c12 c32"
                   >
                     42100000000
                   </span>
@@ -109305,13 +109296,13 @@ exports[`Storyshots Molecules | FlexTable Expandable Controlled Table 1`] = `
             className="c19"
           >
             <li
-              className="c34"
+              className="c33"
             >
               <div
-                className="c35 c36"
+                className="c34 c35"
               >
                 <div
-                  className="c37"
+                  className="c36"
                 >
                   <span
                     className="c7 c32"
@@ -109332,7 +109323,7 @@ exports[`Storyshots Molecules | FlexTable Expandable Controlled Table 1`] = `
                   className="c19"
                 >
                   <span
-                    className="c33 c32"
+                    className="c12 c32"
                   >
                     42100000000
                   </span>
@@ -109371,7 +109362,7 @@ exports[`Storyshots Molecules | FlexTable Expandable Controlled Table 1`] = `
                   className="c19"
                 >
                   <span
-                    className="c33 c32"
+                    className="c12 c32"
                   >
                     42100000000
                   </span>
@@ -109383,13 +109374,13 @@ exports[`Storyshots Molecules | FlexTable Expandable Controlled Table 1`] = `
             className="c19"
           >
             <li
-              className="c34"
+              className="c33"
             >
               <div
-                className="c35 c36"
+                className="c34 c35"
               >
                 <div
-                  className="c37"
+                  className="c36"
                 >
                   <span
                     className="c7 c32"
@@ -109410,7 +109401,7 @@ exports[`Storyshots Molecules | FlexTable Expandable Controlled Table 1`] = `
                   className="c19"
                 >
                   <span
-                    className="c33 c32"
+                    className="c12 c32"
                   >
                     42100000000
                   </span>
@@ -109449,7 +109440,7 @@ exports[`Storyshots Molecules | FlexTable Expandable Controlled Table 1`] = `
                   className="c19"
                 >
                   <span
-                    className="c33 c32"
+                    className="c12 c32"
                   >
                     42100000000
                   </span>
@@ -109461,13 +109452,13 @@ exports[`Storyshots Molecules | FlexTable Expandable Controlled Table 1`] = `
             className="c19"
           >
             <li
-              className="c34"
+              className="c33"
             >
               <div
-                className="c35 c36"
+                className="c34 c35"
               >
                 <div
-                  className="c37"
+                  className="c36"
                 >
                   <span
                     className="c7 c32"
@@ -109488,7 +109479,7 @@ exports[`Storyshots Molecules | FlexTable Expandable Controlled Table 1`] = `
                   className="c19"
                 >
                   <span
-                    className="c33 c32"
+                    className="c12 c32"
                   >
                     42100000000
                   </span>
@@ -109527,7 +109518,7 @@ exports[`Storyshots Molecules | FlexTable Expandable Controlled Table 1`] = `
                   className="c19"
                 >
                   <span
-                    className="c33 c32"
+                    className="c12 c32"
                   >
                     42100000000
                   </span>
@@ -109539,13 +109530,13 @@ exports[`Storyshots Molecules | FlexTable Expandable Controlled Table 1`] = `
             className="c19"
           >
             <li
-              className="c34"
+              className="c33"
             >
               <div
-                className="c35 c36"
+                className="c34 c35"
               >
                 <div
-                  className="c37"
+                  className="c36"
                 >
                   <span
                     className="c7 c32"
@@ -109566,7 +109557,7 @@ exports[`Storyshots Molecules | FlexTable Expandable Controlled Table 1`] = `
                   className="c19"
                 >
                   <span
-                    className="c33 c32"
+                    className="c12 c32"
                   >
                     42100000000
                   </span>
@@ -109605,7 +109596,7 @@ exports[`Storyshots Molecules | FlexTable Expandable Controlled Table 1`] = `
                   className="c19"
                 >
                   <span
-                    className="c33 c32"
+                    className="c12 c32"
                   >
                     42100000000
                   </span>
@@ -109617,13 +109608,13 @@ exports[`Storyshots Molecules | FlexTable Expandable Controlled Table 1`] = `
             className="c19"
           >
             <li
-              className="c34"
+              className="c33"
             >
               <div
-                className="c35 c36"
+                className="c34 c35"
               >
                 <div
-                  className="c37"
+                  className="c36"
                 >
                   <span
                     className="c7 c32"
@@ -109644,7 +109635,7 @@ exports[`Storyshots Molecules | FlexTable Expandable Controlled Table 1`] = `
                   className="c19"
                 >
                   <span
-                    className="c33 c32"
+                    className="c12 c32"
                   >
                     42100000000
                   </span>
@@ -109683,7 +109674,7 @@ exports[`Storyshots Molecules | FlexTable Expandable Controlled Table 1`] = `
                   className="c19"
                 >
                   <span
-                    className="c33 c32"
+                    className="c12 c32"
                   >
                     42100000000
                   </span>
@@ -109695,13 +109686,13 @@ exports[`Storyshots Molecules | FlexTable Expandable Controlled Table 1`] = `
             className="c19"
           >
             <li
-              className="c34"
+              className="c33"
             >
               <div
-                className="c35 c36"
+                className="c34 c35"
               >
                 <div
-                  className="c37"
+                  className="c36"
                 >
                   <span
                     className="c7 c32"
@@ -109722,7 +109713,7 @@ exports[`Storyshots Molecules | FlexTable Expandable Controlled Table 1`] = `
                   className="c19"
                 >
                   <span
-                    className="c33 c32"
+                    className="c12 c32"
                   >
                     42100000000
                   </span>
@@ -109761,7 +109752,7 @@ exports[`Storyshots Molecules | FlexTable Expandable Controlled Table 1`] = `
                   className="c19"
                 >
                   <span
-                    className="c33 c32"
+                    className="c12 c32"
                   >
                     42100000000
                   </span>
@@ -109773,13 +109764,13 @@ exports[`Storyshots Molecules | FlexTable Expandable Controlled Table 1`] = `
             className="c19"
           >
             <li
-              className="c34"
+              className="c33"
             >
               <div
-                className="c35 c36"
+                className="c34 c35"
               >
                 <div
-                  className="c37"
+                  className="c36"
                 >
                   <span
                     className="c7 c32"
@@ -109800,7 +109791,7 @@ exports[`Storyshots Molecules | FlexTable Expandable Controlled Table 1`] = `
                   className="c19"
                 >
                   <span
-                    className="c33 c32"
+                    className="c12 c32"
                   >
                     42100000000
                   </span>
@@ -109839,7 +109830,7 @@ exports[`Storyshots Molecules | FlexTable Expandable Controlled Table 1`] = `
                   className="c19"
                 >
                   <span
-                    className="c33 c32"
+                    className="c12 c32"
                   >
                     42100000000
                   </span>
@@ -109851,13 +109842,13 @@ exports[`Storyshots Molecules | FlexTable Expandable Controlled Table 1`] = `
             className="c19"
           >
             <li
-              className="c34"
+              className="c33"
             >
               <div
-                className="c35 c36"
+                className="c34 c35"
               >
                 <div
-                  className="c37"
+                  className="c36"
                 >
                   <span
                     className="c7 c32"
@@ -109878,7 +109869,7 @@ exports[`Storyshots Molecules | FlexTable Expandable Controlled Table 1`] = `
                   className="c19"
                 >
                   <span
-                    className="c33 c32"
+                    className="c12 c32"
                   >
                     42100000000
                   </span>
@@ -109917,7 +109908,7 @@ exports[`Storyshots Molecules | FlexTable Expandable Controlled Table 1`] = `
                   className="c19"
                 >
                   <span
-                    className="c33 c32"
+                    className="c12 c32"
                   >
                     42100000000
                   </span>
@@ -109929,13 +109920,13 @@ exports[`Storyshots Molecules | FlexTable Expandable Controlled Table 1`] = `
             className="c19"
           >
             <li
-              className="c34"
+              className="c33"
             >
               <div
-                className="c35 c36"
+                className="c34 c35"
               >
                 <div
-                  className="c37"
+                  className="c36"
                 >
                   <span
                     className="c7 c32"
@@ -109956,7 +109947,7 @@ exports[`Storyshots Molecules | FlexTable Expandable Controlled Table 1`] = `
                   className="c19"
                 >
                   <span
-                    className="c33 c32"
+                    className="c12 c32"
                   >
                     42100000000
                   </span>
@@ -109970,7 +109961,7 @@ exports[`Storyshots Molecules | FlexTable Expandable Controlled Table 1`] = `
         className="c19"
       >
         <ul
-          className="c29 c38"
+          className="c29 c37"
         >
           <div
             className="c14"
@@ -110003,7 +109994,7 @@ exports[`Storyshots Molecules | FlexTable Expandable Controlled Table 1`] = `
                   className="c19"
                 >
                   <span
-                    className="c33 c32"
+                    className="c12 c32"
                   >
                     42100000000
                   </span>
@@ -110015,13 +110006,13 @@ exports[`Storyshots Molecules | FlexTable Expandable Controlled Table 1`] = `
             className="c19"
           >
             <li
-              className="c34"
+              className="c33"
             >
               <div
-                className="c35 c36"
+                className="c34 c35"
               >
                 <div
-                  className="c37"
+                  className="c36"
                 >
                   <span
                     className="c7 c32"
@@ -110042,7 +110033,7 @@ exports[`Storyshots Molecules | FlexTable Expandable Controlled Table 1`] = `
                   className="c19"
                 >
                   <span
-                    className="c33 c32"
+                    className="c12 c32"
                   >
                     42100000000
                   </span>
@@ -110081,7 +110072,7 @@ exports[`Storyshots Molecules | FlexTable Expandable Controlled Table 1`] = `
                   className="c19"
                 >
                   <span
-                    className="c33 c32"
+                    className="c12 c32"
                   >
                     42100000000
                   </span>
@@ -110093,13 +110084,13 @@ exports[`Storyshots Molecules | FlexTable Expandable Controlled Table 1`] = `
             className="c19"
           >
             <li
-              className="c34"
+              className="c33"
             >
               <div
-                className="c35 c36"
+                className="c34 c35"
               >
                 <div
-                  className="c37"
+                  className="c36"
                 >
                   <span
                     className="c7 c32"
@@ -110120,7 +110111,7 @@ exports[`Storyshots Molecules | FlexTable Expandable Controlled Table 1`] = `
                   className="c19"
                 >
                   <span
-                    className="c33 c32"
+                    className="c12 c32"
                   >
                     42100000000
                   </span>
@@ -110159,7 +110150,7 @@ exports[`Storyshots Molecules | FlexTable Expandable Controlled Table 1`] = `
                   className="c19"
                 >
                   <span
-                    className="c33 c32"
+                    className="c12 c32"
                   >
                     42100000000
                   </span>
@@ -110171,13 +110162,13 @@ exports[`Storyshots Molecules | FlexTable Expandable Controlled Table 1`] = `
             className="c19"
           >
             <li
-              className="c34"
+              className="c33"
             >
               <div
-                className="c35 c36"
+                className="c34 c35"
               >
                 <div
-                  className="c37"
+                  className="c36"
                 >
                   <span
                     className="c7 c32"
@@ -110198,7 +110189,7 @@ exports[`Storyshots Molecules | FlexTable Expandable Controlled Table 1`] = `
                   className="c19"
                 >
                   <span
-                    className="c33 c32"
+                    className="c12 c32"
                   >
                     42100000000
                   </span>
@@ -110237,7 +110228,7 @@ exports[`Storyshots Molecules | FlexTable Expandable Controlled Table 1`] = `
                   className="c19"
                 >
                   <span
-                    className="c33 c32"
+                    className="c12 c32"
                   >
                     42100000000
                   </span>
@@ -110249,13 +110240,13 @@ exports[`Storyshots Molecules | FlexTable Expandable Controlled Table 1`] = `
             className="c19"
           >
             <li
-              className="c34"
+              className="c33"
             >
               <div
-                className="c35 c36"
+                className="c34 c35"
               >
                 <div
-                  className="c37"
+                  className="c36"
                 >
                   <span
                     className="c7 c32"
@@ -110276,7 +110267,7 @@ exports[`Storyshots Molecules | FlexTable Expandable Controlled Table 1`] = `
                   className="c19"
                 >
                   <span
-                    className="c33 c32"
+                    className="c12 c32"
                   >
                     42100000000
                   </span>
@@ -110315,7 +110306,7 @@ exports[`Storyshots Molecules | FlexTable Expandable Controlled Table 1`] = `
                   className="c19"
                 >
                   <span
-                    className="c33 c32"
+                    className="c12 c32"
                   >
                     42100000000
                   </span>
@@ -110327,13 +110318,13 @@ exports[`Storyshots Molecules | FlexTable Expandable Controlled Table 1`] = `
             className="c19"
           >
             <li
-              className="c34"
+              className="c33"
             >
               <div
-                className="c35 c36"
+                className="c34 c35"
               >
                 <div
-                  className="c37"
+                  className="c36"
                 >
                   <span
                     className="c7 c32"
@@ -110354,7 +110345,7 @@ exports[`Storyshots Molecules | FlexTable Expandable Controlled Table 1`] = `
                   className="c19"
                 >
                   <span
-                    className="c33 c32"
+                    className="c12 c32"
                   >
                     42100000000
                   </span>
@@ -110393,7 +110384,7 @@ exports[`Storyshots Molecules | FlexTable Expandable Controlled Table 1`] = `
                   className="c19"
                 >
                   <span
-                    className="c33 c32"
+                    className="c12 c32"
                   >
                     42100000000
                   </span>
@@ -110405,13 +110396,13 @@ exports[`Storyshots Molecules | FlexTable Expandable Controlled Table 1`] = `
             className="c19"
           >
             <li
-              className="c34"
+              className="c33"
             >
               <div
-                className="c35 c36"
+                className="c34 c35"
               >
                 <div
-                  className="c37"
+                  className="c36"
                 >
                   <span
                     className="c7 c32"
@@ -110432,7 +110423,7 @@ exports[`Storyshots Molecules | FlexTable Expandable Controlled Table 1`] = `
                   className="c19"
                 >
                   <span
-                    className="c33 c32"
+                    className="c12 c32"
                   >
                     42100000000
                   </span>
@@ -110471,7 +110462,7 @@ exports[`Storyshots Molecules | FlexTable Expandable Controlled Table 1`] = `
                   className="c19"
                 >
                   <span
-                    className="c33 c32"
+                    className="c12 c32"
                   >
                     42100000000
                   </span>
@@ -110483,13 +110474,13 @@ exports[`Storyshots Molecules | FlexTable Expandable Controlled Table 1`] = `
             className="c19"
           >
             <li
-              className="c34"
+              className="c33"
             >
               <div
-                className="c35 c36"
+                className="c34 c35"
               >
                 <div
-                  className="c37"
+                  className="c36"
                 >
                   <span
                     className="c7 c32"
@@ -110510,7 +110501,7 @@ exports[`Storyshots Molecules | FlexTable Expandable Controlled Table 1`] = `
                   className="c19"
                 >
                   <span
-                    className="c33 c32"
+                    className="c12 c32"
                   >
                     42100000000
                   </span>
@@ -110549,7 +110540,7 @@ exports[`Storyshots Molecules | FlexTable Expandable Controlled Table 1`] = `
                   className="c19"
                 >
                   <span
-                    className="c33 c32"
+                    className="c12 c32"
                   >
                     42100000000
                   </span>
@@ -110561,13 +110552,13 @@ exports[`Storyshots Molecules | FlexTable Expandable Controlled Table 1`] = `
             className="c19"
           >
             <li
-              className="c34"
+              className="c33"
             >
               <div
-                className="c35 c36"
+                className="c34 c35"
               >
                 <div
-                  className="c37"
+                  className="c36"
                 >
                   <span
                     className="c7 c32"
@@ -110588,7 +110579,7 @@ exports[`Storyshots Molecules | FlexTable Expandable Controlled Table 1`] = `
                   className="c19"
                 >
                   <span
-                    className="c33 c32"
+                    className="c12 c32"
                   >
                     42100000000
                   </span>
@@ -110627,7 +110618,7 @@ exports[`Storyshots Molecules | FlexTable Expandable Controlled Table 1`] = `
                   className="c19"
                 >
                   <span
-                    className="c33 c32"
+                    className="c12 c32"
                   >
                     42100000000
                   </span>
@@ -110639,13 +110630,13 @@ exports[`Storyshots Molecules | FlexTable Expandable Controlled Table 1`] = `
             className="c19"
           >
             <li
-              className="c34"
+              className="c33"
             >
               <div
-                className="c35 c36"
+                className="c34 c35"
               >
                 <div
-                  className="c37"
+                  className="c36"
                 >
                   <span
                     className="c7 c32"
@@ -110666,7 +110657,7 @@ exports[`Storyshots Molecules | FlexTable Expandable Controlled Table 1`] = `
                   className="c19"
                 >
                   <span
-                    className="c33 c32"
+                    className="c12 c32"
                   >
                     42100000000
                   </span>
@@ -110705,7 +110696,7 @@ exports[`Storyshots Molecules | FlexTable Expandable Controlled Table 1`] = `
                   className="c19"
                 >
                   <span
-                    className="c33 c32"
+                    className="c12 c32"
                   >
                     42100000000
                   </span>
@@ -110717,13 +110708,13 @@ exports[`Storyshots Molecules | FlexTable Expandable Controlled Table 1`] = `
             className="c19"
           >
             <li
-              className="c34"
+              className="c33"
             >
               <div
-                className="c35 c36"
+                className="c34 c35"
               >
                 <div
-                  className="c37"
+                  className="c36"
                 >
                   <span
                     className="c7 c32"
@@ -110744,7 +110735,7 @@ exports[`Storyshots Molecules | FlexTable Expandable Controlled Table 1`] = `
                   className="c19"
                 >
                   <span
-                    className="c33 c32"
+                    className="c12 c32"
                   >
                     42100000000
                   </span>
@@ -110783,7 +110774,7 @@ exports[`Storyshots Molecules | FlexTable Expandable Controlled Table 1`] = `
                   className="c19"
                 >
                   <span
-                    className="c33 c32"
+                    className="c12 c32"
                   >
                     42100000000
                   </span>
@@ -110795,13 +110786,13 @@ exports[`Storyshots Molecules | FlexTable Expandable Controlled Table 1`] = `
             className="c19"
           >
             <li
-              className="c34"
+              className="c33"
             >
               <div
-                className="c35 c36"
+                className="c34 c35"
               >
                 <div
-                  className="c37"
+                  className="c36"
                 >
                   <span
                     className="c7 c32"
@@ -110822,7 +110813,7 @@ exports[`Storyshots Molecules | FlexTable Expandable Controlled Table 1`] = `
                   className="c19"
                 >
                   <span
-                    className="c33 c32"
+                    className="c12 c32"
                   >
                     42100000000
                   </span>
@@ -110861,7 +110852,7 @@ exports[`Storyshots Molecules | FlexTable Expandable Controlled Table 1`] = `
                   className="c19"
                 >
                   <span
-                    className="c33 c32"
+                    className="c12 c32"
                   >
                     42100000000
                   </span>
@@ -110873,13 +110864,13 @@ exports[`Storyshots Molecules | FlexTable Expandable Controlled Table 1`] = `
             className="c19"
           >
             <li
-              className="c34"
+              className="c33"
             >
               <div
-                className="c35 c36"
+                className="c34 c35"
               >
                 <div
-                  className="c37"
+                  className="c36"
                 >
                   <span
                     className="c7 c32"
@@ -110900,7 +110891,7 @@ exports[`Storyshots Molecules | FlexTable Expandable Controlled Table 1`] = `
                   className="c19"
                 >
                   <span
-                    className="c33 c32"
+                    className="c12 c32"
                   >
                     42100000000
                   </span>
@@ -110939,7 +110930,7 @@ exports[`Storyshots Molecules | FlexTable Expandable Controlled Table 1`] = `
                   className="c19"
                 >
                   <span
-                    className="c33 c32"
+                    className="c12 c32"
                   >
                     42100000000
                   </span>
@@ -110951,13 +110942,13 @@ exports[`Storyshots Molecules | FlexTable Expandable Controlled Table 1`] = `
             className="c19"
           >
             <li
-              className="c34"
+              className="c33"
             >
               <div
-                className="c35 c36"
+                className="c34 c35"
               >
                 <div
-                  className="c37"
+                  className="c36"
                 >
                   <span
                     className="c7 c32"
@@ -110978,7 +110969,7 @@ exports[`Storyshots Molecules | FlexTable Expandable Controlled Table 1`] = `
                   className="c19"
                 >
                   <span
-                    className="c33 c32"
+                    className="c12 c32"
                   >
                     42100000000
                   </span>
@@ -111017,7 +111008,7 @@ exports[`Storyshots Molecules | FlexTable Expandable Controlled Table 1`] = `
                   className="c19"
                 >
                   <span
-                    className="c33 c32"
+                    className="c12 c32"
                   >
                     42100000000
                   </span>
@@ -111029,13 +111020,13 @@ exports[`Storyshots Molecules | FlexTable Expandable Controlled Table 1`] = `
             className="c19"
           >
             <li
-              className="c34"
+              className="c33"
             >
               <div
-                className="c35 c36"
+                className="c34 c35"
               >
                 <div
-                  className="c37"
+                  className="c36"
                 >
                   <span
                     className="c7 c32"
@@ -111056,7 +111047,7 @@ exports[`Storyshots Molecules | FlexTable Expandable Controlled Table 1`] = `
                   className="c19"
                 >
                   <span
-                    className="c33 c32"
+                    className="c12 c32"
                   >
                     42100000000
                   </span>
@@ -111095,7 +111086,7 @@ exports[`Storyshots Molecules | FlexTable Expandable Controlled Table 1`] = `
                   className="c19"
                 >
                   <span
-                    className="c33 c32"
+                    className="c12 c32"
                   >
                     42100000000
                   </span>
@@ -111107,13 +111098,13 @@ exports[`Storyshots Molecules | FlexTable Expandable Controlled Table 1`] = `
             className="c19"
           >
             <li
-              className="c34"
+              className="c33"
             >
               <div
-                className="c35 c36"
+                className="c34 c35"
               >
                 <div
-                  className="c37"
+                  className="c36"
                 >
                   <span
                     className="c7 c32"
@@ -111134,7 +111125,7 @@ exports[`Storyshots Molecules | FlexTable Expandable Controlled Table 1`] = `
                   className="c19"
                 >
                   <span
-                    className="c33 c32"
+                    className="c12 c32"
                   >
                     42100000000
                   </span>
@@ -111173,7 +111164,7 @@ exports[`Storyshots Molecules | FlexTable Expandable Controlled Table 1`] = `
                   className="c19"
                 >
                   <span
-                    className="c33 c32"
+                    className="c12 c32"
                   >
                     42100000000
                   </span>
@@ -111185,13 +111176,13 @@ exports[`Storyshots Molecules | FlexTable Expandable Controlled Table 1`] = `
             className="c19"
           >
             <li
-              className="c34"
+              className="c33"
             >
               <div
-                className="c35 c36"
+                className="c34 c35"
               >
                 <div
-                  className="c37"
+                  className="c36"
                 >
                   <span
                     className="c7 c32"
@@ -111212,7 +111203,7 @@ exports[`Storyshots Molecules | FlexTable Expandable Controlled Table 1`] = `
                   className="c19"
                 >
                   <span
-                    className="c33 c32"
+                    className="c12 c32"
                   >
                     42100000000
                   </span>
@@ -111251,7 +111242,7 @@ exports[`Storyshots Molecules | FlexTable Expandable Controlled Table 1`] = `
                   className="c19"
                 >
                   <span
-                    className="c33 c32"
+                    className="c12 c32"
                   >
                     42100000000
                   </span>
@@ -111263,13 +111254,13 @@ exports[`Storyshots Molecules | FlexTable Expandable Controlled Table 1`] = `
             className="c19"
           >
             <li
-              className="c34"
+              className="c33"
             >
               <div
-                className="c35 c36"
+                className="c34 c35"
               >
                 <div
-                  className="c37"
+                  className="c36"
                 >
                   <span
                     className="c7 c32"
@@ -111290,7 +111281,7 @@ exports[`Storyshots Molecules | FlexTable Expandable Controlled Table 1`] = `
                   className="c19"
                 >
                   <span
-                    className="c33 c32"
+                    className="c12 c32"
                   >
                     42100000000
                   </span>
@@ -111329,7 +111320,7 @@ exports[`Storyshots Molecules | FlexTable Expandable Controlled Table 1`] = `
                   className="c19"
                 >
                   <span
-                    className="c33 c32"
+                    className="c12 c32"
                   >
                     42100000000
                   </span>
@@ -111341,13 +111332,13 @@ exports[`Storyshots Molecules | FlexTable Expandable Controlled Table 1`] = `
             className="c19"
           >
             <li
-              className="c34"
+              className="c33"
             >
               <div
-                className="c35 c36"
+                className="c34 c35"
               >
                 <div
-                  className="c37"
+                  className="c36"
                 >
                   <span
                     className="c7 c32"
@@ -111368,7 +111359,7 @@ exports[`Storyshots Molecules | FlexTable Expandable Controlled Table 1`] = `
                   className="c19"
                 >
                   <span
-                    className="c33 c32"
+                    className="c12 c32"
                   >
                     42100000000
                   </span>
@@ -111407,7 +111398,7 @@ exports[`Storyshots Molecules | FlexTable Expandable Controlled Table 1`] = `
                   className="c19"
                 >
                   <span
-                    className="c33 c32"
+                    className="c12 c32"
                   >
                     42100000000
                   </span>
@@ -111419,13 +111410,13 @@ exports[`Storyshots Molecules | FlexTable Expandable Controlled Table 1`] = `
             className="c19"
           >
             <li
-              className="c34"
+              className="c33"
             >
               <div
-                className="c35 c36"
+                className="c34 c35"
               >
                 <div
-                  className="c37"
+                  className="c36"
                 >
                   <span
                     className="c7 c32"
@@ -111446,7 +111437,7 @@ exports[`Storyshots Molecules | FlexTable Expandable Controlled Table 1`] = `
                   className="c19"
                 >
                   <span
-                    className="c33 c32"
+                    className="c12 c32"
                   >
                     42100000000
                   </span>
@@ -111485,7 +111476,7 @@ exports[`Storyshots Molecules | FlexTable Expandable Controlled Table 1`] = `
                   className="c19"
                 >
                   <span
-                    className="c33 c32"
+                    className="c12 c32"
                   >
                     42100000000
                   </span>
@@ -111497,13 +111488,13 @@ exports[`Storyshots Molecules | FlexTable Expandable Controlled Table 1`] = `
             className="c19"
           >
             <li
-              className="c34"
+              className="c33"
             >
               <div
-                className="c35 c36"
+                className="c34 c35"
               >
                 <div
-                  className="c37"
+                  className="c36"
                 >
                   <span
                     className="c7 c32"
@@ -111524,7 +111515,7 @@ exports[`Storyshots Molecules | FlexTable Expandable Controlled Table 1`] = `
                   className="c19"
                 >
                   <span
-                    className="c33 c32"
+                    className="c12 c32"
                   >
                     42100000000
                   </span>
@@ -111804,7 +111795,7 @@ exports[`Storyshots Molecules | FlexTable Expandable Controlled Table With Own C
   box-sizing: border-box;
 }
 
-.c38 {
+.c37 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -111817,12 +111808,12 @@ exports[`Storyshots Molecules | FlexTable Expandable Controlled Table With Own C
   margin-right: -20px;
 }
 
-.c38 > * {
+.c37 > * {
   padding-left: 20px;
   padding-right: 20px;
 }
 
-.c38 > *:not(:first-child) {
+.c37 > *:not(:first-child) {
   padding-top: 0;
 }
 
@@ -111925,15 +111916,6 @@ exports[`Storyshots Molecules | FlexTable Expandable Controlled Table With Own C
   font-weight: 400;
   font-size: 12px;
   line-height: 1.3333333333333333;
-}
-
-.c33 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #282823;
-  margin: 0;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
 }
 
 .c17 {
@@ -112047,7 +112029,7 @@ exports[`Storyshots Molecules | FlexTable Expandable Controlled Table With Own C
   outline: 1px dotted ButtonText;
 }
 
-.c35 {
+.c34 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -112057,7 +112039,7 @@ exports[`Storyshots Molecules | FlexTable Expandable Controlled Table With Own C
   flex-direction: column;
 }
 
-.c37 {
+.c36 {
   margin-bottom: 4px;
 }
 
@@ -112069,12 +112051,12 @@ exports[`Storyshots Molecules | FlexTable Expandable Controlled Table With Own C
   width: 100%;
 }
 
-.c34 {
+.c33 {
   max-width: 300px;
   padding-bottom: 20px;
 }
 
-.c36 {
+.c35 {
   overflow: hidden;
 }
 
@@ -112563,7 +112545,7 @@ exports[`Storyshots Molecules | FlexTable Expandable Controlled Table With Own C
                   className="c19"
                 >
                   <span
-                    className="c33 c32"
+                    className="c12 c32"
                   >
                     42100000000
                   </span>
@@ -112575,13 +112557,13 @@ exports[`Storyshots Molecules | FlexTable Expandable Controlled Table With Own C
             className="c19"
           >
             <li
-              className="c34"
+              className="c33"
             >
               <div
-                className="c35 c36"
+                className="c34 c35"
               >
                 <div
-                  className="c37"
+                  className="c36"
                 >
                   <span
                     className="c7 c32"
@@ -112602,7 +112584,7 @@ exports[`Storyshots Molecules | FlexTable Expandable Controlled Table With Own C
                   className="c19"
                 >
                   <span
-                    className="c33 c32"
+                    className="c12 c32"
                   >
                     42100000000
                   </span>
@@ -112641,7 +112623,7 @@ exports[`Storyshots Molecules | FlexTable Expandable Controlled Table With Own C
                   className="c19"
                 >
                   <span
-                    className="c33 c32"
+                    className="c12 c32"
                   >
                     42100000000
                   </span>
@@ -112653,13 +112635,13 @@ exports[`Storyshots Molecules | FlexTable Expandable Controlled Table With Own C
             className="c19"
           >
             <li
-              className="c34"
+              className="c33"
             >
               <div
-                className="c35 c36"
+                className="c34 c35"
               >
                 <div
-                  className="c37"
+                  className="c36"
                 >
                   <span
                     className="c7 c32"
@@ -112680,7 +112662,7 @@ exports[`Storyshots Molecules | FlexTable Expandable Controlled Table With Own C
                   className="c19"
                 >
                   <span
-                    className="c33 c32"
+                    className="c12 c32"
                   >
                     42100000000
                   </span>
@@ -112719,7 +112701,7 @@ exports[`Storyshots Molecules | FlexTable Expandable Controlled Table With Own C
                   className="c19"
                 >
                   <span
-                    className="c33 c32"
+                    className="c12 c32"
                   >
                     42100000000
                   </span>
@@ -112731,13 +112713,13 @@ exports[`Storyshots Molecules | FlexTable Expandable Controlled Table With Own C
             className="c19"
           >
             <li
-              className="c34"
+              className="c33"
             >
               <div
-                className="c35 c36"
+                className="c34 c35"
               >
                 <div
-                  className="c37"
+                  className="c36"
                 >
                   <span
                     className="c7 c32"
@@ -112758,7 +112740,7 @@ exports[`Storyshots Molecules | FlexTable Expandable Controlled Table With Own C
                   className="c19"
                 >
                   <span
-                    className="c33 c32"
+                    className="c12 c32"
                   >
                     42100000000
                   </span>
@@ -112797,7 +112779,7 @@ exports[`Storyshots Molecules | FlexTable Expandable Controlled Table With Own C
                   className="c19"
                 >
                   <span
-                    className="c33 c32"
+                    className="c12 c32"
                   >
                     42100000000
                   </span>
@@ -112809,13 +112791,13 @@ exports[`Storyshots Molecules | FlexTable Expandable Controlled Table With Own C
             className="c19"
           >
             <li
-              className="c34"
+              className="c33"
             >
               <div
-                className="c35 c36"
+                className="c34 c35"
               >
                 <div
-                  className="c37"
+                  className="c36"
                 >
                   <span
                     className="c7 c32"
@@ -112836,7 +112818,7 @@ exports[`Storyshots Molecules | FlexTable Expandable Controlled Table With Own C
                   className="c19"
                 >
                   <span
-                    className="c33 c32"
+                    className="c12 c32"
                   >
                     42100000000
                   </span>
@@ -112875,7 +112857,7 @@ exports[`Storyshots Molecules | FlexTable Expandable Controlled Table With Own C
                   className="c19"
                 >
                   <span
-                    className="c33 c32"
+                    className="c12 c32"
                   >
                     42100000000
                   </span>
@@ -112887,13 +112869,13 @@ exports[`Storyshots Molecules | FlexTable Expandable Controlled Table With Own C
             className="c19"
           >
             <li
-              className="c34"
+              className="c33"
             >
               <div
-                className="c35 c36"
+                className="c34 c35"
               >
                 <div
-                  className="c37"
+                  className="c36"
                 >
                   <span
                     className="c7 c32"
@@ -112914,7 +112896,7 @@ exports[`Storyshots Molecules | FlexTable Expandable Controlled Table With Own C
                   className="c19"
                 >
                   <span
-                    className="c33 c32"
+                    className="c12 c32"
                   >
                     42100000000
                   </span>
@@ -112953,7 +112935,7 @@ exports[`Storyshots Molecules | FlexTable Expandable Controlled Table With Own C
                   className="c19"
                 >
                   <span
-                    className="c33 c32"
+                    className="c12 c32"
                   >
                     42100000000
                   </span>
@@ -112965,13 +112947,13 @@ exports[`Storyshots Molecules | FlexTable Expandable Controlled Table With Own C
             className="c19"
           >
             <li
-              className="c34"
+              className="c33"
             >
               <div
-                className="c35 c36"
+                className="c34 c35"
               >
                 <div
-                  className="c37"
+                  className="c36"
                 >
                   <span
                     className="c7 c32"
@@ -112992,7 +112974,7 @@ exports[`Storyshots Molecules | FlexTable Expandable Controlled Table With Own C
                   className="c19"
                 >
                   <span
-                    className="c33 c32"
+                    className="c12 c32"
                   >
                     42100000000
                   </span>
@@ -113031,7 +113013,7 @@ exports[`Storyshots Molecules | FlexTable Expandable Controlled Table With Own C
                   className="c19"
                 >
                   <span
-                    className="c33 c32"
+                    className="c12 c32"
                   >
                     42100000000
                   </span>
@@ -113043,13 +113025,13 @@ exports[`Storyshots Molecules | FlexTable Expandable Controlled Table With Own C
             className="c19"
           >
             <li
-              className="c34"
+              className="c33"
             >
               <div
-                className="c35 c36"
+                className="c34 c35"
               >
                 <div
-                  className="c37"
+                  className="c36"
                 >
                   <span
                     className="c7 c32"
@@ -113070,7 +113052,7 @@ exports[`Storyshots Molecules | FlexTable Expandable Controlled Table With Own C
                   className="c19"
                 >
                   <span
-                    className="c33 c32"
+                    className="c12 c32"
                   >
                     42100000000
                   </span>
@@ -113109,7 +113091,7 @@ exports[`Storyshots Molecules | FlexTable Expandable Controlled Table With Own C
                   className="c19"
                 >
                   <span
-                    className="c33 c32"
+                    className="c12 c32"
                   >
                     42100000000
                   </span>
@@ -113121,13 +113103,13 @@ exports[`Storyshots Molecules | FlexTable Expandable Controlled Table With Own C
             className="c19"
           >
             <li
-              className="c34"
+              className="c33"
             >
               <div
-                className="c35 c36"
+                className="c34 c35"
               >
                 <div
-                  className="c37"
+                  className="c36"
                 >
                   <span
                     className="c7 c32"
@@ -113148,7 +113130,7 @@ exports[`Storyshots Molecules | FlexTable Expandable Controlled Table With Own C
                   className="c19"
                 >
                   <span
-                    className="c33 c32"
+                    className="c12 c32"
                   >
                     42100000000
                   </span>
@@ -113187,7 +113169,7 @@ exports[`Storyshots Molecules | FlexTable Expandable Controlled Table With Own C
                   className="c19"
                 >
                   <span
-                    className="c33 c32"
+                    className="c12 c32"
                   >
                     42100000000
                   </span>
@@ -113199,13 +113181,13 @@ exports[`Storyshots Molecules | FlexTable Expandable Controlled Table With Own C
             className="c19"
           >
             <li
-              className="c34"
+              className="c33"
             >
               <div
-                className="c35 c36"
+                className="c34 c35"
               >
                 <div
-                  className="c37"
+                  className="c36"
                 >
                   <span
                     className="c7 c32"
@@ -113226,7 +113208,7 @@ exports[`Storyshots Molecules | FlexTable Expandable Controlled Table With Own C
                   className="c19"
                 >
                   <span
-                    className="c33 c32"
+                    className="c12 c32"
                   >
                     42100000000
                   </span>
@@ -113265,7 +113247,7 @@ exports[`Storyshots Molecules | FlexTable Expandable Controlled Table With Own C
                   className="c19"
                 >
                   <span
-                    className="c33 c32"
+                    className="c12 c32"
                   >
                     42100000000
                   </span>
@@ -113277,13 +113259,13 @@ exports[`Storyshots Molecules | FlexTable Expandable Controlled Table With Own C
             className="c19"
           >
             <li
-              className="c34"
+              className="c33"
             >
               <div
-                className="c35 c36"
+                className="c34 c35"
               >
                 <div
-                  className="c37"
+                  className="c36"
                 >
                   <span
                     className="c7 c32"
@@ -113304,7 +113286,7 @@ exports[`Storyshots Molecules | FlexTable Expandable Controlled Table With Own C
                   className="c19"
                 >
                   <span
-                    className="c33 c32"
+                    className="c12 c32"
                   >
                     42100000000
                   </span>
@@ -113343,7 +113325,7 @@ exports[`Storyshots Molecules | FlexTable Expandable Controlled Table With Own C
                   className="c19"
                 >
                   <span
-                    className="c33 c32"
+                    className="c12 c32"
                   >
                     42100000000
                   </span>
@@ -113355,13 +113337,13 @@ exports[`Storyshots Molecules | FlexTable Expandable Controlled Table With Own C
             className="c19"
           >
             <li
-              className="c34"
+              className="c33"
             >
               <div
-                className="c35 c36"
+                className="c34 c35"
               >
                 <div
-                  className="c37"
+                  className="c36"
                 >
                   <span
                     className="c7 c32"
@@ -113382,7 +113364,7 @@ exports[`Storyshots Molecules | FlexTable Expandable Controlled Table With Own C
                   className="c19"
                 >
                   <span
-                    className="c33 c32"
+                    className="c12 c32"
                   >
                     42100000000
                   </span>
@@ -113421,7 +113403,7 @@ exports[`Storyshots Molecules | FlexTable Expandable Controlled Table With Own C
                   className="c19"
                 >
                   <span
-                    className="c33 c32"
+                    className="c12 c32"
                   >
                     42100000000
                   </span>
@@ -113433,13 +113415,13 @@ exports[`Storyshots Molecules | FlexTable Expandable Controlled Table With Own C
             className="c19"
           >
             <li
-              className="c34"
+              className="c33"
             >
               <div
-                className="c35 c36"
+                className="c34 c35"
               >
                 <div
-                  className="c37"
+                  className="c36"
                 >
                   <span
                     className="c7 c32"
@@ -113460,7 +113442,7 @@ exports[`Storyshots Molecules | FlexTable Expandable Controlled Table With Own C
                   className="c19"
                 >
                   <span
-                    className="c33 c32"
+                    className="c12 c32"
                   >
                     42100000000
                   </span>
@@ -113499,7 +113481,7 @@ exports[`Storyshots Molecules | FlexTable Expandable Controlled Table With Own C
                   className="c19"
                 >
                   <span
-                    className="c33 c32"
+                    className="c12 c32"
                   >
                     42100000000
                   </span>
@@ -113511,13 +113493,13 @@ exports[`Storyshots Molecules | FlexTable Expandable Controlled Table With Own C
             className="c19"
           >
             <li
-              className="c34"
+              className="c33"
             >
               <div
-                className="c35 c36"
+                className="c34 c35"
               >
                 <div
-                  className="c37"
+                  className="c36"
                 >
                   <span
                     className="c7 c32"
@@ -113538,7 +113520,7 @@ exports[`Storyshots Molecules | FlexTable Expandable Controlled Table With Own C
                   className="c19"
                 >
                   <span
-                    className="c33 c32"
+                    className="c12 c32"
                   >
                     42100000000
                   </span>
@@ -113577,7 +113559,7 @@ exports[`Storyshots Molecules | FlexTable Expandable Controlled Table With Own C
                   className="c19"
                 >
                   <span
-                    className="c33 c32"
+                    className="c12 c32"
                   >
                     42100000000
                   </span>
@@ -113589,13 +113571,13 @@ exports[`Storyshots Molecules | FlexTable Expandable Controlled Table With Own C
             className="c19"
           >
             <li
-              className="c34"
+              className="c33"
             >
               <div
-                className="c35 c36"
+                className="c34 c35"
               >
                 <div
-                  className="c37"
+                  className="c36"
                 >
                   <span
                     className="c7 c32"
@@ -113616,7 +113598,7 @@ exports[`Storyshots Molecules | FlexTable Expandable Controlled Table With Own C
                   className="c19"
                 >
                   <span
-                    className="c33 c32"
+                    className="c12 c32"
                   >
                     42100000000
                   </span>
@@ -113655,7 +113637,7 @@ exports[`Storyshots Molecules | FlexTable Expandable Controlled Table With Own C
                   className="c19"
                 >
                   <span
-                    className="c33 c32"
+                    className="c12 c32"
                   >
                     42100000000
                   </span>
@@ -113667,13 +113649,13 @@ exports[`Storyshots Molecules | FlexTable Expandable Controlled Table With Own C
             className="c19"
           >
             <li
-              className="c34"
+              className="c33"
             >
               <div
-                className="c35 c36"
+                className="c34 c35"
               >
                 <div
-                  className="c37"
+                  className="c36"
                 >
                   <span
                     className="c7 c32"
@@ -113694,7 +113676,7 @@ exports[`Storyshots Molecules | FlexTable Expandable Controlled Table With Own C
                   className="c19"
                 >
                   <span
-                    className="c33 c32"
+                    className="c12 c32"
                   >
                     42100000000
                   </span>
@@ -113733,7 +113715,7 @@ exports[`Storyshots Molecules | FlexTable Expandable Controlled Table With Own C
                   className="c19"
                 >
                   <span
-                    className="c33 c32"
+                    className="c12 c32"
                   >
                     42100000000
                   </span>
@@ -113745,13 +113727,13 @@ exports[`Storyshots Molecules | FlexTable Expandable Controlled Table With Own C
             className="c19"
           >
             <li
-              className="c34"
+              className="c33"
             >
               <div
-                className="c35 c36"
+                className="c34 c35"
               >
                 <div
-                  className="c37"
+                  className="c36"
                 >
                   <span
                     className="c7 c32"
@@ -113772,7 +113754,7 @@ exports[`Storyshots Molecules | FlexTable Expandable Controlled Table With Own C
                   className="c19"
                 >
                   <span
-                    className="c33 c32"
+                    className="c12 c32"
                   >
                     42100000000
                   </span>
@@ -113811,7 +113793,7 @@ exports[`Storyshots Molecules | FlexTable Expandable Controlled Table With Own C
                   className="c19"
                 >
                   <span
-                    className="c33 c32"
+                    className="c12 c32"
                   >
                     42100000000
                   </span>
@@ -113823,13 +113805,13 @@ exports[`Storyshots Molecules | FlexTable Expandable Controlled Table With Own C
             className="c19"
           >
             <li
-              className="c34"
+              className="c33"
             >
               <div
-                className="c35 c36"
+                className="c34 c35"
               >
                 <div
-                  className="c37"
+                  className="c36"
                 >
                   <span
                     className="c7 c32"
@@ -113850,7 +113832,7 @@ exports[`Storyshots Molecules | FlexTable Expandable Controlled Table With Own C
                   className="c19"
                 >
                   <span
-                    className="c33 c32"
+                    className="c12 c32"
                   >
                     42100000000
                   </span>
@@ -113889,7 +113871,7 @@ exports[`Storyshots Molecules | FlexTable Expandable Controlled Table With Own C
                   className="c19"
                 >
                   <span
-                    className="c33 c32"
+                    className="c12 c32"
                   >
                     42100000000
                   </span>
@@ -113901,13 +113883,13 @@ exports[`Storyshots Molecules | FlexTable Expandable Controlled Table With Own C
             className="c19"
           >
             <li
-              className="c34"
+              className="c33"
             >
               <div
-                className="c35 c36"
+                className="c34 c35"
               >
                 <div
-                  className="c37"
+                  className="c36"
                 >
                   <span
                     className="c7 c32"
@@ -113928,7 +113910,7 @@ exports[`Storyshots Molecules | FlexTable Expandable Controlled Table With Own C
                   className="c19"
                 >
                   <span
-                    className="c33 c32"
+                    className="c12 c32"
                   >
                     42100000000
                   </span>
@@ -113967,7 +113949,7 @@ exports[`Storyshots Molecules | FlexTable Expandable Controlled Table With Own C
                   className="c19"
                 >
                   <span
-                    className="c33 c32"
+                    className="c12 c32"
                   >
                     42100000000
                   </span>
@@ -113979,13 +113961,13 @@ exports[`Storyshots Molecules | FlexTable Expandable Controlled Table With Own C
             className="c19"
           >
             <li
-              className="c34"
+              className="c33"
             >
               <div
-                className="c35 c36"
+                className="c34 c35"
               >
                 <div
-                  className="c37"
+                  className="c36"
                 >
                   <span
                     className="c7 c32"
@@ -114006,7 +113988,7 @@ exports[`Storyshots Molecules | FlexTable Expandable Controlled Table With Own C
                   className="c19"
                 >
                   <span
-                    className="c33 c32"
+                    className="c12 c32"
                   >
                     42100000000
                   </span>
@@ -114045,7 +114027,7 @@ exports[`Storyshots Molecules | FlexTable Expandable Controlled Table With Own C
                   className="c19"
                 >
                   <span
-                    className="c33 c32"
+                    className="c12 c32"
                   >
                     42100000000
                   </span>
@@ -114057,13 +114039,13 @@ exports[`Storyshots Molecules | FlexTable Expandable Controlled Table With Own C
             className="c19"
           >
             <li
-              className="c34"
+              className="c33"
             >
               <div
-                className="c35 c36"
+                className="c34 c35"
               >
                 <div
-                  className="c37"
+                  className="c36"
                 >
                   <span
                     className="c7 c32"
@@ -114084,7 +114066,7 @@ exports[`Storyshots Molecules | FlexTable Expandable Controlled Table With Own C
                   className="c19"
                 >
                   <span
-                    className="c33 c32"
+                    className="c12 c32"
                   >
                     42100000000
                   </span>
@@ -114098,7 +114080,7 @@ exports[`Storyshots Molecules | FlexTable Expandable Controlled Table With Own C
         className="c19"
       >
         <ul
-          className="c29 c38"
+          className="c29 c37"
         >
           <div
             className="c14"
@@ -114131,7 +114113,7 @@ exports[`Storyshots Molecules | FlexTable Expandable Controlled Table With Own C
                   className="c19"
                 >
                   <span
-                    className="c33 c32"
+                    className="c12 c32"
                   >
                     42100000000
                   </span>
@@ -114143,13 +114125,13 @@ exports[`Storyshots Molecules | FlexTable Expandable Controlled Table With Own C
             className="c19"
           >
             <li
-              className="c34"
+              className="c33"
             >
               <div
-                className="c35 c36"
+                className="c34 c35"
               >
                 <div
-                  className="c37"
+                  className="c36"
                 >
                   <span
                     className="c7 c32"
@@ -114170,7 +114152,7 @@ exports[`Storyshots Molecules | FlexTable Expandable Controlled Table With Own C
                   className="c19"
                 >
                   <span
-                    className="c33 c32"
+                    className="c12 c32"
                   >
                     42100000000
                   </span>
@@ -114209,7 +114191,7 @@ exports[`Storyshots Molecules | FlexTable Expandable Controlled Table With Own C
                   className="c19"
                 >
                   <span
-                    className="c33 c32"
+                    className="c12 c32"
                   >
                     42100000000
                   </span>
@@ -114221,13 +114203,13 @@ exports[`Storyshots Molecules | FlexTable Expandable Controlled Table With Own C
             className="c19"
           >
             <li
-              className="c34"
+              className="c33"
             >
               <div
-                className="c35 c36"
+                className="c34 c35"
               >
                 <div
-                  className="c37"
+                  className="c36"
                 >
                   <span
                     className="c7 c32"
@@ -114248,7 +114230,7 @@ exports[`Storyshots Molecules | FlexTable Expandable Controlled Table With Own C
                   className="c19"
                 >
                   <span
-                    className="c33 c32"
+                    className="c12 c32"
                   >
                     42100000000
                   </span>
@@ -114287,7 +114269,7 @@ exports[`Storyshots Molecules | FlexTable Expandable Controlled Table With Own C
                   className="c19"
                 >
                   <span
-                    className="c33 c32"
+                    className="c12 c32"
                   >
                     42100000000
                   </span>
@@ -114299,13 +114281,13 @@ exports[`Storyshots Molecules | FlexTable Expandable Controlled Table With Own C
             className="c19"
           >
             <li
-              className="c34"
+              className="c33"
             >
               <div
-                className="c35 c36"
+                className="c34 c35"
               >
                 <div
-                  className="c37"
+                  className="c36"
                 >
                   <span
                     className="c7 c32"
@@ -114326,7 +114308,7 @@ exports[`Storyshots Molecules | FlexTable Expandable Controlled Table With Own C
                   className="c19"
                 >
                   <span
-                    className="c33 c32"
+                    className="c12 c32"
                   >
                     42100000000
                   </span>
@@ -114365,7 +114347,7 @@ exports[`Storyshots Molecules | FlexTable Expandable Controlled Table With Own C
                   className="c19"
                 >
                   <span
-                    className="c33 c32"
+                    className="c12 c32"
                   >
                     42100000000
                   </span>
@@ -114377,13 +114359,13 @@ exports[`Storyshots Molecules | FlexTable Expandable Controlled Table With Own C
             className="c19"
           >
             <li
-              className="c34"
+              className="c33"
             >
               <div
-                className="c35 c36"
+                className="c34 c35"
               >
                 <div
-                  className="c37"
+                  className="c36"
                 >
                   <span
                     className="c7 c32"
@@ -114404,7 +114386,7 @@ exports[`Storyshots Molecules | FlexTable Expandable Controlled Table With Own C
                   className="c19"
                 >
                   <span
-                    className="c33 c32"
+                    className="c12 c32"
                   >
                     42100000000
                   </span>
@@ -114443,7 +114425,7 @@ exports[`Storyshots Molecules | FlexTable Expandable Controlled Table With Own C
                   className="c19"
                 >
                   <span
-                    className="c33 c32"
+                    className="c12 c32"
                   >
                     42100000000
                   </span>
@@ -114455,13 +114437,13 @@ exports[`Storyshots Molecules | FlexTable Expandable Controlled Table With Own C
             className="c19"
           >
             <li
-              className="c34"
+              className="c33"
             >
               <div
-                className="c35 c36"
+                className="c34 c35"
               >
                 <div
-                  className="c37"
+                  className="c36"
                 >
                   <span
                     className="c7 c32"
@@ -114482,7 +114464,7 @@ exports[`Storyshots Molecules | FlexTable Expandable Controlled Table With Own C
                   className="c19"
                 >
                   <span
-                    className="c33 c32"
+                    className="c12 c32"
                   >
                     42100000000
                   </span>
@@ -114521,7 +114503,7 @@ exports[`Storyshots Molecules | FlexTable Expandable Controlled Table With Own C
                   className="c19"
                 >
                   <span
-                    className="c33 c32"
+                    className="c12 c32"
                   >
                     42100000000
                   </span>
@@ -114533,13 +114515,13 @@ exports[`Storyshots Molecules | FlexTable Expandable Controlled Table With Own C
             className="c19"
           >
             <li
-              className="c34"
+              className="c33"
             >
               <div
-                className="c35 c36"
+                className="c34 c35"
               >
                 <div
-                  className="c37"
+                  className="c36"
                 >
                   <span
                     className="c7 c32"
@@ -114560,7 +114542,7 @@ exports[`Storyshots Molecules | FlexTable Expandable Controlled Table With Own C
                   className="c19"
                 >
                   <span
-                    className="c33 c32"
+                    className="c12 c32"
                   >
                     42100000000
                   </span>
@@ -114599,7 +114581,7 @@ exports[`Storyshots Molecules | FlexTable Expandable Controlled Table With Own C
                   className="c19"
                 >
                   <span
-                    className="c33 c32"
+                    className="c12 c32"
                   >
                     42100000000
                   </span>
@@ -114611,13 +114593,13 @@ exports[`Storyshots Molecules | FlexTable Expandable Controlled Table With Own C
             className="c19"
           >
             <li
-              className="c34"
+              className="c33"
             >
               <div
-                className="c35 c36"
+                className="c34 c35"
               >
                 <div
-                  className="c37"
+                  className="c36"
                 >
                   <span
                     className="c7 c32"
@@ -114638,7 +114620,7 @@ exports[`Storyshots Molecules | FlexTable Expandable Controlled Table With Own C
                   className="c19"
                 >
                   <span
-                    className="c33 c32"
+                    className="c12 c32"
                   >
                     42100000000
                   </span>
@@ -114677,7 +114659,7 @@ exports[`Storyshots Molecules | FlexTable Expandable Controlled Table With Own C
                   className="c19"
                 >
                   <span
-                    className="c33 c32"
+                    className="c12 c32"
                   >
                     42100000000
                   </span>
@@ -114689,13 +114671,13 @@ exports[`Storyshots Molecules | FlexTable Expandable Controlled Table With Own C
             className="c19"
           >
             <li
-              className="c34"
+              className="c33"
             >
               <div
-                className="c35 c36"
+                className="c34 c35"
               >
                 <div
-                  className="c37"
+                  className="c36"
                 >
                   <span
                     className="c7 c32"
@@ -114716,7 +114698,7 @@ exports[`Storyshots Molecules | FlexTable Expandable Controlled Table With Own C
                   className="c19"
                 >
                   <span
-                    className="c33 c32"
+                    className="c12 c32"
                   >
                     42100000000
                   </span>
@@ -114755,7 +114737,7 @@ exports[`Storyshots Molecules | FlexTable Expandable Controlled Table With Own C
                   className="c19"
                 >
                   <span
-                    className="c33 c32"
+                    className="c12 c32"
                   >
                     42100000000
                   </span>
@@ -114767,13 +114749,13 @@ exports[`Storyshots Molecules | FlexTable Expandable Controlled Table With Own C
             className="c19"
           >
             <li
-              className="c34"
+              className="c33"
             >
               <div
-                className="c35 c36"
+                className="c34 c35"
               >
                 <div
-                  className="c37"
+                  className="c36"
                 >
                   <span
                     className="c7 c32"
@@ -114794,7 +114776,7 @@ exports[`Storyshots Molecules | FlexTable Expandable Controlled Table With Own C
                   className="c19"
                 >
                   <span
-                    className="c33 c32"
+                    className="c12 c32"
                   >
                     42100000000
                   </span>
@@ -114833,7 +114815,7 @@ exports[`Storyshots Molecules | FlexTable Expandable Controlled Table With Own C
                   className="c19"
                 >
                   <span
-                    className="c33 c32"
+                    className="c12 c32"
                   >
                     42100000000
                   </span>
@@ -114845,13 +114827,13 @@ exports[`Storyshots Molecules | FlexTable Expandable Controlled Table With Own C
             className="c19"
           >
             <li
-              className="c34"
+              className="c33"
             >
               <div
-                className="c35 c36"
+                className="c34 c35"
               >
                 <div
-                  className="c37"
+                  className="c36"
                 >
                   <span
                     className="c7 c32"
@@ -114872,7 +114854,7 @@ exports[`Storyshots Molecules | FlexTable Expandable Controlled Table With Own C
                   className="c19"
                 >
                   <span
-                    className="c33 c32"
+                    className="c12 c32"
                   >
                     42100000000
                   </span>
@@ -114911,7 +114893,7 @@ exports[`Storyshots Molecules | FlexTable Expandable Controlled Table With Own C
                   className="c19"
                 >
                   <span
-                    className="c33 c32"
+                    className="c12 c32"
                   >
                     42100000000
                   </span>
@@ -114923,13 +114905,13 @@ exports[`Storyshots Molecules | FlexTable Expandable Controlled Table With Own C
             className="c19"
           >
             <li
-              className="c34"
+              className="c33"
             >
               <div
-                className="c35 c36"
+                className="c34 c35"
               >
                 <div
-                  className="c37"
+                  className="c36"
                 >
                   <span
                     className="c7 c32"
@@ -114950,7 +114932,7 @@ exports[`Storyshots Molecules | FlexTable Expandable Controlled Table With Own C
                   className="c19"
                 >
                   <span
-                    className="c33 c32"
+                    className="c12 c32"
                   >
                     42100000000
                   </span>
@@ -114989,7 +114971,7 @@ exports[`Storyshots Molecules | FlexTable Expandable Controlled Table With Own C
                   className="c19"
                 >
                   <span
-                    className="c33 c32"
+                    className="c12 c32"
                   >
                     42100000000
                   </span>
@@ -115001,13 +114983,13 @@ exports[`Storyshots Molecules | FlexTable Expandable Controlled Table With Own C
             className="c19"
           >
             <li
-              className="c34"
+              className="c33"
             >
               <div
-                className="c35 c36"
+                className="c34 c35"
               >
                 <div
-                  className="c37"
+                  className="c36"
                 >
                   <span
                     className="c7 c32"
@@ -115028,7 +115010,7 @@ exports[`Storyshots Molecules | FlexTable Expandable Controlled Table With Own C
                   className="c19"
                 >
                   <span
-                    className="c33 c32"
+                    className="c12 c32"
                   >
                     42100000000
                   </span>
@@ -115067,7 +115049,7 @@ exports[`Storyshots Molecules | FlexTable Expandable Controlled Table With Own C
                   className="c19"
                 >
                   <span
-                    className="c33 c32"
+                    className="c12 c32"
                   >
                     42100000000
                   </span>
@@ -115079,13 +115061,13 @@ exports[`Storyshots Molecules | FlexTable Expandable Controlled Table With Own C
             className="c19"
           >
             <li
-              className="c34"
+              className="c33"
             >
               <div
-                className="c35 c36"
+                className="c34 c35"
               >
                 <div
-                  className="c37"
+                  className="c36"
                 >
                   <span
                     className="c7 c32"
@@ -115106,7 +115088,7 @@ exports[`Storyshots Molecules | FlexTable Expandable Controlled Table With Own C
                   className="c19"
                 >
                   <span
-                    className="c33 c32"
+                    className="c12 c32"
                   >
                     42100000000
                   </span>
@@ -115145,7 +115127,7 @@ exports[`Storyshots Molecules | FlexTable Expandable Controlled Table With Own C
                   className="c19"
                 >
                   <span
-                    className="c33 c32"
+                    className="c12 c32"
                   >
                     42100000000
                   </span>
@@ -115157,13 +115139,13 @@ exports[`Storyshots Molecules | FlexTable Expandable Controlled Table With Own C
             className="c19"
           >
             <li
-              className="c34"
+              className="c33"
             >
               <div
-                className="c35 c36"
+                className="c34 c35"
               >
                 <div
-                  className="c37"
+                  className="c36"
                 >
                   <span
                     className="c7 c32"
@@ -115184,7 +115166,7 @@ exports[`Storyshots Molecules | FlexTable Expandable Controlled Table With Own C
                   className="c19"
                 >
                   <span
-                    className="c33 c32"
+                    className="c12 c32"
                   >
                     42100000000
                   </span>
@@ -115223,7 +115205,7 @@ exports[`Storyshots Molecules | FlexTable Expandable Controlled Table With Own C
                   className="c19"
                 >
                   <span
-                    className="c33 c32"
+                    className="c12 c32"
                   >
                     42100000000
                   </span>
@@ -115235,13 +115217,13 @@ exports[`Storyshots Molecules | FlexTable Expandable Controlled Table With Own C
             className="c19"
           >
             <li
-              className="c34"
+              className="c33"
             >
               <div
-                className="c35 c36"
+                className="c34 c35"
               >
                 <div
-                  className="c37"
+                  className="c36"
                 >
                   <span
                     className="c7 c32"
@@ -115262,7 +115244,7 @@ exports[`Storyshots Molecules | FlexTable Expandable Controlled Table With Own C
                   className="c19"
                 >
                   <span
-                    className="c33 c32"
+                    className="c12 c32"
                   >
                     42100000000
                   </span>
@@ -115301,7 +115283,7 @@ exports[`Storyshots Molecules | FlexTable Expandable Controlled Table With Own C
                   className="c19"
                 >
                   <span
-                    className="c33 c32"
+                    className="c12 c32"
                   >
                     42100000000
                   </span>
@@ -115313,13 +115295,13 @@ exports[`Storyshots Molecules | FlexTable Expandable Controlled Table With Own C
             className="c19"
           >
             <li
-              className="c34"
+              className="c33"
             >
               <div
-                className="c35 c36"
+                className="c34 c35"
               >
                 <div
-                  className="c37"
+                  className="c36"
                 >
                   <span
                     className="c7 c32"
@@ -115340,7 +115322,7 @@ exports[`Storyshots Molecules | FlexTable Expandable Controlled Table With Own C
                   className="c19"
                 >
                   <span
-                    className="c33 c32"
+                    className="c12 c32"
                   >
                     42100000000
                   </span>
@@ -115379,7 +115361,7 @@ exports[`Storyshots Molecules | FlexTable Expandable Controlled Table With Own C
                   className="c19"
                 >
                   <span
-                    className="c33 c32"
+                    className="c12 c32"
                   >
                     42100000000
                   </span>
@@ -115391,13 +115373,13 @@ exports[`Storyshots Molecules | FlexTable Expandable Controlled Table With Own C
             className="c19"
           >
             <li
-              className="c34"
+              className="c33"
             >
               <div
-                className="c35 c36"
+                className="c34 c35"
               >
                 <div
-                  className="c37"
+                  className="c36"
                 >
                   <span
                     className="c7 c32"
@@ -115418,7 +115400,7 @@ exports[`Storyshots Molecules | FlexTable Expandable Controlled Table With Own C
                   className="c19"
                 >
                   <span
-                    className="c33 c32"
+                    className="c12 c32"
                   >
                     42100000000
                   </span>
@@ -115457,7 +115439,7 @@ exports[`Storyshots Molecules | FlexTable Expandable Controlled Table With Own C
                   className="c19"
                 >
                   <span
-                    className="c33 c32"
+                    className="c12 c32"
                   >
                     42100000000
                   </span>
@@ -115469,13 +115451,13 @@ exports[`Storyshots Molecules | FlexTable Expandable Controlled Table With Own C
             className="c19"
           >
             <li
-              className="c34"
+              className="c33"
             >
               <div
-                className="c35 c36"
+                className="c34 c35"
               >
                 <div
-                  className="c37"
+                  className="c36"
                 >
                   <span
                     className="c7 c32"
@@ -115496,7 +115478,7 @@ exports[`Storyshots Molecules | FlexTable Expandable Controlled Table With Own C
                   className="c19"
                 >
                   <span
-                    className="c33 c32"
+                    className="c12 c32"
                   >
                     42100000000
                   </span>
@@ -115535,7 +115517,7 @@ exports[`Storyshots Molecules | FlexTable Expandable Controlled Table With Own C
                   className="c19"
                 >
                   <span
-                    className="c33 c32"
+                    className="c12 c32"
                   >
                     42100000000
                   </span>
@@ -115547,13 +115529,13 @@ exports[`Storyshots Molecules | FlexTable Expandable Controlled Table With Own C
             className="c19"
           >
             <li
-              className="c34"
+              className="c33"
             >
               <div
-                className="c35 c36"
+                className="c34 c35"
               >
                 <div
-                  className="c37"
+                  className="c36"
                 >
                   <span
                     className="c7 c32"
@@ -115574,7 +115556,7 @@ exports[`Storyshots Molecules | FlexTable Expandable Controlled Table With Own C
                   className="c19"
                 >
                   <span
-                    className="c33 c32"
+                    className="c12 c32"
                   >
                     42100000000
                   </span>
@@ -115613,7 +115595,7 @@ exports[`Storyshots Molecules | FlexTable Expandable Controlled Table With Own C
                   className="c19"
                 >
                   <span
-                    className="c33 c32"
+                    className="c12 c32"
                   >
                     42100000000
                   </span>
@@ -115625,13 +115607,13 @@ exports[`Storyshots Molecules | FlexTable Expandable Controlled Table With Own C
             className="c19"
           >
             <li
-              className="c34"
+              className="c33"
             >
               <div
-                className="c35 c36"
+                className="c34 c35"
               >
                 <div
-                  className="c37"
+                  className="c36"
                 >
                   <span
                     className="c7 c32"
@@ -115652,7 +115634,7 @@ exports[`Storyshots Molecules | FlexTable Expandable Controlled Table With Own C
                   className="c19"
                 >
                   <span
-                    className="c33 c32"
+                    className="c12 c32"
                   >
                     42100000000
                   </span>
@@ -115932,7 +115914,7 @@ exports[`Storyshots Molecules | FlexTable Expandable Table 1`] = `
   box-sizing: border-box;
 }
 
-.c38 {
+.c37 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -115945,12 +115927,12 @@ exports[`Storyshots Molecules | FlexTable Expandable Table 1`] = `
   margin-right: -20px;
 }
 
-.c38 > * {
+.c37 > * {
   padding-left: 20px;
   padding-right: 20px;
 }
 
-.c38 > *:not(:first-child) {
+.c37 > *:not(:first-child) {
   padding-top: 0;
 }
 
@@ -116053,15 +116035,6 @@ exports[`Storyshots Molecules | FlexTable Expandable Table 1`] = `
   font-weight: 400;
   font-size: 12px;
   line-height: 1.3333333333333333;
-}
-
-.c33 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #282823;
-  margin: 0;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
 }
 
 .c17 {
@@ -116175,7 +116148,7 @@ exports[`Storyshots Molecules | FlexTable Expandable Table 1`] = `
   outline: 1px dotted ButtonText;
 }
 
-.c35 {
+.c34 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -116185,7 +116158,7 @@ exports[`Storyshots Molecules | FlexTable Expandable Table 1`] = `
   flex-direction: column;
 }
 
-.c37 {
+.c36 {
   margin-bottom: 4px;
 }
 
@@ -116197,12 +116170,12 @@ exports[`Storyshots Molecules | FlexTable Expandable Table 1`] = `
   width: 100%;
 }
 
-.c34 {
+.c33 {
   max-width: 300px;
   padding-bottom: 20px;
 }
 
-.c36 {
+.c35 {
   overflow: hidden;
 }
 
@@ -116693,7 +116666,7 @@ exports[`Storyshots Molecules | FlexTable Expandable Table 1`] = `
                   className="c19"
                 >
                   <span
-                    className="c33 c32"
+                    className="c12 c32"
                   >
                     42100000000
                   </span>
@@ -116705,13 +116678,13 @@ exports[`Storyshots Molecules | FlexTable Expandable Table 1`] = `
             className="c19"
           >
             <li
-              className="c34"
+              className="c33"
             >
               <div
-                className="c35 c36"
+                className="c34 c35"
               >
                 <div
-                  className="c37"
+                  className="c36"
                 >
                   <span
                     className="c7 c32"
@@ -116732,7 +116705,7 @@ exports[`Storyshots Molecules | FlexTable Expandable Table 1`] = `
                   className="c19"
                 >
                   <span
-                    className="c33 c32"
+                    className="c12 c32"
                   >
                     42100000000
                   </span>
@@ -116771,7 +116744,7 @@ exports[`Storyshots Molecules | FlexTable Expandable Table 1`] = `
                   className="c19"
                 >
                   <span
-                    className="c33 c32"
+                    className="c12 c32"
                   >
                     42100000000
                   </span>
@@ -116783,13 +116756,13 @@ exports[`Storyshots Molecules | FlexTable Expandable Table 1`] = `
             className="c19"
           >
             <li
-              className="c34"
+              className="c33"
             >
               <div
-                className="c35 c36"
+                className="c34 c35"
               >
                 <div
-                  className="c37"
+                  className="c36"
                 >
                   <span
                     className="c7 c32"
@@ -116810,7 +116783,7 @@ exports[`Storyshots Molecules | FlexTable Expandable Table 1`] = `
                   className="c19"
                 >
                   <span
-                    className="c33 c32"
+                    className="c12 c32"
                   >
                     42100000000
                   </span>
@@ -116849,7 +116822,7 @@ exports[`Storyshots Molecules | FlexTable Expandable Table 1`] = `
                   className="c19"
                 >
                   <span
-                    className="c33 c32"
+                    className="c12 c32"
                   >
                     42100000000
                   </span>
@@ -116861,13 +116834,13 @@ exports[`Storyshots Molecules | FlexTable Expandable Table 1`] = `
             className="c19"
           >
             <li
-              className="c34"
+              className="c33"
             >
               <div
-                className="c35 c36"
+                className="c34 c35"
               >
                 <div
-                  className="c37"
+                  className="c36"
                 >
                   <span
                     className="c7 c32"
@@ -116888,7 +116861,7 @@ exports[`Storyshots Molecules | FlexTable Expandable Table 1`] = `
                   className="c19"
                 >
                   <span
-                    className="c33 c32"
+                    className="c12 c32"
                   >
                     42100000000
                   </span>
@@ -116927,7 +116900,7 @@ exports[`Storyshots Molecules | FlexTable Expandable Table 1`] = `
                   className="c19"
                 >
                   <span
-                    className="c33 c32"
+                    className="c12 c32"
                   >
                     42100000000
                   </span>
@@ -116939,13 +116912,13 @@ exports[`Storyshots Molecules | FlexTable Expandable Table 1`] = `
             className="c19"
           >
             <li
-              className="c34"
+              className="c33"
             >
               <div
-                className="c35 c36"
+                className="c34 c35"
               >
                 <div
-                  className="c37"
+                  className="c36"
                 >
                   <span
                     className="c7 c32"
@@ -116966,7 +116939,7 @@ exports[`Storyshots Molecules | FlexTable Expandable Table 1`] = `
                   className="c19"
                 >
                   <span
-                    className="c33 c32"
+                    className="c12 c32"
                   >
                     42100000000
                   </span>
@@ -117005,7 +116978,7 @@ exports[`Storyshots Molecules | FlexTable Expandable Table 1`] = `
                   className="c19"
                 >
                   <span
-                    className="c33 c32"
+                    className="c12 c32"
                   >
                     42100000000
                   </span>
@@ -117017,13 +116990,13 @@ exports[`Storyshots Molecules | FlexTable Expandable Table 1`] = `
             className="c19"
           >
             <li
-              className="c34"
+              className="c33"
             >
               <div
-                className="c35 c36"
+                className="c34 c35"
               >
                 <div
-                  className="c37"
+                  className="c36"
                 >
                   <span
                     className="c7 c32"
@@ -117044,7 +117017,7 @@ exports[`Storyshots Molecules | FlexTable Expandable Table 1`] = `
                   className="c19"
                 >
                   <span
-                    className="c33 c32"
+                    className="c12 c32"
                   >
                     42100000000
                   </span>
@@ -117083,7 +117056,7 @@ exports[`Storyshots Molecules | FlexTable Expandable Table 1`] = `
                   className="c19"
                 >
                   <span
-                    className="c33 c32"
+                    className="c12 c32"
                   >
                     42100000000
                   </span>
@@ -117095,13 +117068,13 @@ exports[`Storyshots Molecules | FlexTable Expandable Table 1`] = `
             className="c19"
           >
             <li
-              className="c34"
+              className="c33"
             >
               <div
-                className="c35 c36"
+                className="c34 c35"
               >
                 <div
-                  className="c37"
+                  className="c36"
                 >
                   <span
                     className="c7 c32"
@@ -117122,7 +117095,7 @@ exports[`Storyshots Molecules | FlexTable Expandable Table 1`] = `
                   className="c19"
                 >
                   <span
-                    className="c33 c32"
+                    className="c12 c32"
                   >
                     42100000000
                   </span>
@@ -117161,7 +117134,7 @@ exports[`Storyshots Molecules | FlexTable Expandable Table 1`] = `
                   className="c19"
                 >
                   <span
-                    className="c33 c32"
+                    className="c12 c32"
                   >
                     42100000000
                   </span>
@@ -117173,13 +117146,13 @@ exports[`Storyshots Molecules | FlexTable Expandable Table 1`] = `
             className="c19"
           >
             <li
-              className="c34"
+              className="c33"
             >
               <div
-                className="c35 c36"
+                className="c34 c35"
               >
                 <div
-                  className="c37"
+                  className="c36"
                 >
                   <span
                     className="c7 c32"
@@ -117200,7 +117173,7 @@ exports[`Storyshots Molecules | FlexTable Expandable Table 1`] = `
                   className="c19"
                 >
                   <span
-                    className="c33 c32"
+                    className="c12 c32"
                   >
                     42100000000
                   </span>
@@ -117239,7 +117212,7 @@ exports[`Storyshots Molecules | FlexTable Expandable Table 1`] = `
                   className="c19"
                 >
                   <span
-                    className="c33 c32"
+                    className="c12 c32"
                   >
                     42100000000
                   </span>
@@ -117251,13 +117224,13 @@ exports[`Storyshots Molecules | FlexTable Expandable Table 1`] = `
             className="c19"
           >
             <li
-              className="c34"
+              className="c33"
             >
               <div
-                className="c35 c36"
+                className="c34 c35"
               >
                 <div
-                  className="c37"
+                  className="c36"
                 >
                   <span
                     className="c7 c32"
@@ -117278,7 +117251,7 @@ exports[`Storyshots Molecules | FlexTable Expandable Table 1`] = `
                   className="c19"
                 >
                   <span
-                    className="c33 c32"
+                    className="c12 c32"
                   >
                     42100000000
                   </span>
@@ -117317,7 +117290,7 @@ exports[`Storyshots Molecules | FlexTable Expandable Table 1`] = `
                   className="c19"
                 >
                   <span
-                    className="c33 c32"
+                    className="c12 c32"
                   >
                     42100000000
                   </span>
@@ -117329,13 +117302,13 @@ exports[`Storyshots Molecules | FlexTable Expandable Table 1`] = `
             className="c19"
           >
             <li
-              className="c34"
+              className="c33"
             >
               <div
-                className="c35 c36"
+                className="c34 c35"
               >
                 <div
-                  className="c37"
+                  className="c36"
                 >
                   <span
                     className="c7 c32"
@@ -117356,7 +117329,7 @@ exports[`Storyshots Molecules | FlexTable Expandable Table 1`] = `
                   className="c19"
                 >
                   <span
-                    className="c33 c32"
+                    className="c12 c32"
                   >
                     42100000000
                   </span>
@@ -117395,7 +117368,7 @@ exports[`Storyshots Molecules | FlexTable Expandable Table 1`] = `
                   className="c19"
                 >
                   <span
-                    className="c33 c32"
+                    className="c12 c32"
                   >
                     42100000000
                   </span>
@@ -117407,13 +117380,13 @@ exports[`Storyshots Molecules | FlexTable Expandable Table 1`] = `
             className="c19"
           >
             <li
-              className="c34"
+              className="c33"
             >
               <div
-                className="c35 c36"
+                className="c34 c35"
               >
                 <div
-                  className="c37"
+                  className="c36"
                 >
                   <span
                     className="c7 c32"
@@ -117434,7 +117407,7 @@ exports[`Storyshots Molecules | FlexTable Expandable Table 1`] = `
                   className="c19"
                 >
                   <span
-                    className="c33 c32"
+                    className="c12 c32"
                   >
                     42100000000
                   </span>
@@ -117473,7 +117446,7 @@ exports[`Storyshots Molecules | FlexTable Expandable Table 1`] = `
                   className="c19"
                 >
                   <span
-                    className="c33 c32"
+                    className="c12 c32"
                   >
                     42100000000
                   </span>
@@ -117485,13 +117458,13 @@ exports[`Storyshots Molecules | FlexTable Expandable Table 1`] = `
             className="c19"
           >
             <li
-              className="c34"
+              className="c33"
             >
               <div
-                className="c35 c36"
+                className="c34 c35"
               >
                 <div
-                  className="c37"
+                  className="c36"
                 >
                   <span
                     className="c7 c32"
@@ -117512,7 +117485,7 @@ exports[`Storyshots Molecules | FlexTable Expandable Table 1`] = `
                   className="c19"
                 >
                   <span
-                    className="c33 c32"
+                    className="c12 c32"
                   >
                     42100000000
                   </span>
@@ -117551,7 +117524,7 @@ exports[`Storyshots Molecules | FlexTable Expandable Table 1`] = `
                   className="c19"
                 >
                   <span
-                    className="c33 c32"
+                    className="c12 c32"
                   >
                     42100000000
                   </span>
@@ -117563,13 +117536,13 @@ exports[`Storyshots Molecules | FlexTable Expandable Table 1`] = `
             className="c19"
           >
             <li
-              className="c34"
+              className="c33"
             >
               <div
-                className="c35 c36"
+                className="c34 c35"
               >
                 <div
-                  className="c37"
+                  className="c36"
                 >
                   <span
                     className="c7 c32"
@@ -117590,7 +117563,7 @@ exports[`Storyshots Molecules | FlexTable Expandable Table 1`] = `
                   className="c19"
                 >
                   <span
-                    className="c33 c32"
+                    className="c12 c32"
                   >
                     42100000000
                   </span>
@@ -117629,7 +117602,7 @@ exports[`Storyshots Molecules | FlexTable Expandable Table 1`] = `
                   className="c19"
                 >
                   <span
-                    className="c33 c32"
+                    className="c12 c32"
                   >
                     42100000000
                   </span>
@@ -117641,13 +117614,13 @@ exports[`Storyshots Molecules | FlexTable Expandable Table 1`] = `
             className="c19"
           >
             <li
-              className="c34"
+              className="c33"
             >
               <div
-                className="c35 c36"
+                className="c34 c35"
               >
                 <div
-                  className="c37"
+                  className="c36"
                 >
                   <span
                     className="c7 c32"
@@ -117668,7 +117641,7 @@ exports[`Storyshots Molecules | FlexTable Expandable Table 1`] = `
                   className="c19"
                 >
                   <span
-                    className="c33 c32"
+                    className="c12 c32"
                   >
                     42100000000
                   </span>
@@ -117707,7 +117680,7 @@ exports[`Storyshots Molecules | FlexTable Expandable Table 1`] = `
                   className="c19"
                 >
                   <span
-                    className="c33 c32"
+                    className="c12 c32"
                   >
                     42100000000
                   </span>
@@ -117719,13 +117692,13 @@ exports[`Storyshots Molecules | FlexTable Expandable Table 1`] = `
             className="c19"
           >
             <li
-              className="c34"
+              className="c33"
             >
               <div
-                className="c35 c36"
+                className="c34 c35"
               >
                 <div
-                  className="c37"
+                  className="c36"
                 >
                   <span
                     className="c7 c32"
@@ -117746,7 +117719,7 @@ exports[`Storyshots Molecules | FlexTable Expandable Table 1`] = `
                   className="c19"
                 >
                   <span
-                    className="c33 c32"
+                    className="c12 c32"
                   >
                     42100000000
                   </span>
@@ -117785,7 +117758,7 @@ exports[`Storyshots Molecules | FlexTable Expandable Table 1`] = `
                   className="c19"
                 >
                   <span
-                    className="c33 c32"
+                    className="c12 c32"
                   >
                     42100000000
                   </span>
@@ -117797,13 +117770,13 @@ exports[`Storyshots Molecules | FlexTable Expandable Table 1`] = `
             className="c19"
           >
             <li
-              className="c34"
+              className="c33"
             >
               <div
-                className="c35 c36"
+                className="c34 c35"
               >
                 <div
-                  className="c37"
+                  className="c36"
                 >
                   <span
                     className="c7 c32"
@@ -117824,7 +117797,7 @@ exports[`Storyshots Molecules | FlexTable Expandable Table 1`] = `
                   className="c19"
                 >
                   <span
-                    className="c33 c32"
+                    className="c12 c32"
                   >
                     42100000000
                   </span>
@@ -117863,7 +117836,7 @@ exports[`Storyshots Molecules | FlexTable Expandable Table 1`] = `
                   className="c19"
                 >
                   <span
-                    className="c33 c32"
+                    className="c12 c32"
                   >
                     42100000000
                   </span>
@@ -117875,13 +117848,13 @@ exports[`Storyshots Molecules | FlexTable Expandable Table 1`] = `
             className="c19"
           >
             <li
-              className="c34"
+              className="c33"
             >
               <div
-                className="c35 c36"
+                className="c34 c35"
               >
                 <div
-                  className="c37"
+                  className="c36"
                 >
                   <span
                     className="c7 c32"
@@ -117902,7 +117875,7 @@ exports[`Storyshots Molecules | FlexTable Expandable Table 1`] = `
                   className="c19"
                 >
                   <span
-                    className="c33 c32"
+                    className="c12 c32"
                   >
                     42100000000
                   </span>
@@ -117941,7 +117914,7 @@ exports[`Storyshots Molecules | FlexTable Expandable Table 1`] = `
                   className="c19"
                 >
                   <span
-                    className="c33 c32"
+                    className="c12 c32"
                   >
                     42100000000
                   </span>
@@ -117953,13 +117926,13 @@ exports[`Storyshots Molecules | FlexTable Expandable Table 1`] = `
             className="c19"
           >
             <li
-              className="c34"
+              className="c33"
             >
               <div
-                className="c35 c36"
+                className="c34 c35"
               >
                 <div
-                  className="c37"
+                  className="c36"
                 >
                   <span
                     className="c7 c32"
@@ -117980,7 +117953,7 @@ exports[`Storyshots Molecules | FlexTable Expandable Table 1`] = `
                   className="c19"
                 >
                   <span
-                    className="c33 c32"
+                    className="c12 c32"
                   >
                     42100000000
                   </span>
@@ -118019,7 +117992,7 @@ exports[`Storyshots Molecules | FlexTable Expandable Table 1`] = `
                   className="c19"
                 >
                   <span
-                    className="c33 c32"
+                    className="c12 c32"
                   >
                     42100000000
                   </span>
@@ -118031,13 +118004,13 @@ exports[`Storyshots Molecules | FlexTable Expandable Table 1`] = `
             className="c19"
           >
             <li
-              className="c34"
+              className="c33"
             >
               <div
-                className="c35 c36"
+                className="c34 c35"
               >
                 <div
-                  className="c37"
+                  className="c36"
                 >
                   <span
                     className="c7 c32"
@@ -118058,7 +118031,7 @@ exports[`Storyshots Molecules | FlexTable Expandable Table 1`] = `
                   className="c19"
                 >
                   <span
-                    className="c33 c32"
+                    className="c12 c32"
                   >
                     42100000000
                   </span>
@@ -118097,7 +118070,7 @@ exports[`Storyshots Molecules | FlexTable Expandable Table 1`] = `
                   className="c19"
                 >
                   <span
-                    className="c33 c32"
+                    className="c12 c32"
                   >
                     42100000000
                   </span>
@@ -118109,13 +118082,13 @@ exports[`Storyshots Molecules | FlexTable Expandable Table 1`] = `
             className="c19"
           >
             <li
-              className="c34"
+              className="c33"
             >
               <div
-                className="c35 c36"
+                className="c34 c35"
               >
                 <div
-                  className="c37"
+                  className="c36"
                 >
                   <span
                     className="c7 c32"
@@ -118136,7 +118109,7 @@ exports[`Storyshots Molecules | FlexTable Expandable Table 1`] = `
                   className="c19"
                 >
                   <span
-                    className="c33 c32"
+                    className="c12 c32"
                   >
                     42100000000
                   </span>
@@ -118175,7 +118148,7 @@ exports[`Storyshots Molecules | FlexTable Expandable Table 1`] = `
                   className="c19"
                 >
                   <span
-                    className="c33 c32"
+                    className="c12 c32"
                   >
                     42100000000
                   </span>
@@ -118187,13 +118160,13 @@ exports[`Storyshots Molecules | FlexTable Expandable Table 1`] = `
             className="c19"
           >
             <li
-              className="c34"
+              className="c33"
             >
               <div
-                className="c35 c36"
+                className="c34 c35"
               >
                 <div
-                  className="c37"
+                  className="c36"
                 >
                   <span
                     className="c7 c32"
@@ -118214,7 +118187,7 @@ exports[`Storyshots Molecules | FlexTable Expandable Table 1`] = `
                   className="c19"
                 >
                   <span
-                    className="c33 c32"
+                    className="c12 c32"
                   >
                     42100000000
                   </span>
@@ -118228,7 +118201,7 @@ exports[`Storyshots Molecules | FlexTable Expandable Table 1`] = `
         className="c19"
       >
         <ul
-          className="c29 c38"
+          className="c29 c37"
         >
           <div
             className="c14"
@@ -118261,7 +118234,7 @@ exports[`Storyshots Molecules | FlexTable Expandable Table 1`] = `
                   className="c19"
                 >
                   <span
-                    className="c33 c32"
+                    className="c12 c32"
                   >
                     42100000000
                   </span>
@@ -118273,13 +118246,13 @@ exports[`Storyshots Molecules | FlexTable Expandable Table 1`] = `
             className="c19"
           >
             <li
-              className="c34"
+              className="c33"
             >
               <div
-                className="c35 c36"
+                className="c34 c35"
               >
                 <div
-                  className="c37"
+                  className="c36"
                 >
                   <span
                     className="c7 c32"
@@ -118300,7 +118273,7 @@ exports[`Storyshots Molecules | FlexTable Expandable Table 1`] = `
                   className="c19"
                 >
                   <span
-                    className="c33 c32"
+                    className="c12 c32"
                   >
                     42100000000
                   </span>
@@ -118339,7 +118312,7 @@ exports[`Storyshots Molecules | FlexTable Expandable Table 1`] = `
                   className="c19"
                 >
                   <span
-                    className="c33 c32"
+                    className="c12 c32"
                   >
                     42100000000
                   </span>
@@ -118351,13 +118324,13 @@ exports[`Storyshots Molecules | FlexTable Expandable Table 1`] = `
             className="c19"
           >
             <li
-              className="c34"
+              className="c33"
             >
               <div
-                className="c35 c36"
+                className="c34 c35"
               >
                 <div
-                  className="c37"
+                  className="c36"
                 >
                   <span
                     className="c7 c32"
@@ -118378,7 +118351,7 @@ exports[`Storyshots Molecules | FlexTable Expandable Table 1`] = `
                   className="c19"
                 >
                   <span
-                    className="c33 c32"
+                    className="c12 c32"
                   >
                     42100000000
                   </span>
@@ -118417,7 +118390,7 @@ exports[`Storyshots Molecules | FlexTable Expandable Table 1`] = `
                   className="c19"
                 >
                   <span
-                    className="c33 c32"
+                    className="c12 c32"
                   >
                     42100000000
                   </span>
@@ -118429,13 +118402,13 @@ exports[`Storyshots Molecules | FlexTable Expandable Table 1`] = `
             className="c19"
           >
             <li
-              className="c34"
+              className="c33"
             >
               <div
-                className="c35 c36"
+                className="c34 c35"
               >
                 <div
-                  className="c37"
+                  className="c36"
                 >
                   <span
                     className="c7 c32"
@@ -118456,7 +118429,7 @@ exports[`Storyshots Molecules | FlexTable Expandable Table 1`] = `
                   className="c19"
                 >
                   <span
-                    className="c33 c32"
+                    className="c12 c32"
                   >
                     42100000000
                   </span>
@@ -118495,7 +118468,7 @@ exports[`Storyshots Molecules | FlexTable Expandable Table 1`] = `
                   className="c19"
                 >
                   <span
-                    className="c33 c32"
+                    className="c12 c32"
                   >
                     42100000000
                   </span>
@@ -118507,13 +118480,13 @@ exports[`Storyshots Molecules | FlexTable Expandable Table 1`] = `
             className="c19"
           >
             <li
-              className="c34"
+              className="c33"
             >
               <div
-                className="c35 c36"
+                className="c34 c35"
               >
                 <div
-                  className="c37"
+                  className="c36"
                 >
                   <span
                     className="c7 c32"
@@ -118534,7 +118507,7 @@ exports[`Storyshots Molecules | FlexTable Expandable Table 1`] = `
                   className="c19"
                 >
                   <span
-                    className="c33 c32"
+                    className="c12 c32"
                   >
                     42100000000
                   </span>
@@ -118573,7 +118546,7 @@ exports[`Storyshots Molecules | FlexTable Expandable Table 1`] = `
                   className="c19"
                 >
                   <span
-                    className="c33 c32"
+                    className="c12 c32"
                   >
                     42100000000
                   </span>
@@ -118585,13 +118558,13 @@ exports[`Storyshots Molecules | FlexTable Expandable Table 1`] = `
             className="c19"
           >
             <li
-              className="c34"
+              className="c33"
             >
               <div
-                className="c35 c36"
+                className="c34 c35"
               >
                 <div
-                  className="c37"
+                  className="c36"
                 >
                   <span
                     className="c7 c32"
@@ -118612,7 +118585,7 @@ exports[`Storyshots Molecules | FlexTable Expandable Table 1`] = `
                   className="c19"
                 >
                   <span
-                    className="c33 c32"
+                    className="c12 c32"
                   >
                     42100000000
                   </span>
@@ -118651,7 +118624,7 @@ exports[`Storyshots Molecules | FlexTable Expandable Table 1`] = `
                   className="c19"
                 >
                   <span
-                    className="c33 c32"
+                    className="c12 c32"
                   >
                     42100000000
                   </span>
@@ -118663,13 +118636,13 @@ exports[`Storyshots Molecules | FlexTable Expandable Table 1`] = `
             className="c19"
           >
             <li
-              className="c34"
+              className="c33"
             >
               <div
-                className="c35 c36"
+                className="c34 c35"
               >
                 <div
-                  className="c37"
+                  className="c36"
                 >
                   <span
                     className="c7 c32"
@@ -118690,7 +118663,7 @@ exports[`Storyshots Molecules | FlexTable Expandable Table 1`] = `
                   className="c19"
                 >
                   <span
-                    className="c33 c32"
+                    className="c12 c32"
                   >
                     42100000000
                   </span>
@@ -118729,7 +118702,7 @@ exports[`Storyshots Molecules | FlexTable Expandable Table 1`] = `
                   className="c19"
                 >
                   <span
-                    className="c33 c32"
+                    className="c12 c32"
                   >
                     42100000000
                   </span>
@@ -118741,13 +118714,13 @@ exports[`Storyshots Molecules | FlexTable Expandable Table 1`] = `
             className="c19"
           >
             <li
-              className="c34"
+              className="c33"
             >
               <div
-                className="c35 c36"
+                className="c34 c35"
               >
                 <div
-                  className="c37"
+                  className="c36"
                 >
                   <span
                     className="c7 c32"
@@ -118768,7 +118741,7 @@ exports[`Storyshots Molecules | FlexTable Expandable Table 1`] = `
                   className="c19"
                 >
                   <span
-                    className="c33 c32"
+                    className="c12 c32"
                   >
                     42100000000
                   </span>
@@ -118807,7 +118780,7 @@ exports[`Storyshots Molecules | FlexTable Expandable Table 1`] = `
                   className="c19"
                 >
                   <span
-                    className="c33 c32"
+                    className="c12 c32"
                   >
                     42100000000
                   </span>
@@ -118819,13 +118792,13 @@ exports[`Storyshots Molecules | FlexTable Expandable Table 1`] = `
             className="c19"
           >
             <li
-              className="c34"
+              className="c33"
             >
               <div
-                className="c35 c36"
+                className="c34 c35"
               >
                 <div
-                  className="c37"
+                  className="c36"
                 >
                   <span
                     className="c7 c32"
@@ -118846,7 +118819,7 @@ exports[`Storyshots Molecules | FlexTable Expandable Table 1`] = `
                   className="c19"
                 >
                   <span
-                    className="c33 c32"
+                    className="c12 c32"
                   >
                     42100000000
                   </span>
@@ -118885,7 +118858,7 @@ exports[`Storyshots Molecules | FlexTable Expandable Table 1`] = `
                   className="c19"
                 >
                   <span
-                    className="c33 c32"
+                    className="c12 c32"
                   >
                     42100000000
                   </span>
@@ -118897,13 +118870,13 @@ exports[`Storyshots Molecules | FlexTable Expandable Table 1`] = `
             className="c19"
           >
             <li
-              className="c34"
+              className="c33"
             >
               <div
-                className="c35 c36"
+                className="c34 c35"
               >
                 <div
-                  className="c37"
+                  className="c36"
                 >
                   <span
                     className="c7 c32"
@@ -118924,7 +118897,7 @@ exports[`Storyshots Molecules | FlexTable Expandable Table 1`] = `
                   className="c19"
                 >
                   <span
-                    className="c33 c32"
+                    className="c12 c32"
                   >
                     42100000000
                   </span>
@@ -118963,7 +118936,7 @@ exports[`Storyshots Molecules | FlexTable Expandable Table 1`] = `
                   className="c19"
                 >
                   <span
-                    className="c33 c32"
+                    className="c12 c32"
                   >
                     42100000000
                   </span>
@@ -118975,13 +118948,13 @@ exports[`Storyshots Molecules | FlexTable Expandable Table 1`] = `
             className="c19"
           >
             <li
-              className="c34"
+              className="c33"
             >
               <div
-                className="c35 c36"
+                className="c34 c35"
               >
                 <div
-                  className="c37"
+                  className="c36"
                 >
                   <span
                     className="c7 c32"
@@ -119002,7 +118975,7 @@ exports[`Storyshots Molecules | FlexTable Expandable Table 1`] = `
                   className="c19"
                 >
                   <span
-                    className="c33 c32"
+                    className="c12 c32"
                   >
                     42100000000
                   </span>
@@ -119041,7 +119014,7 @@ exports[`Storyshots Molecules | FlexTable Expandable Table 1`] = `
                   className="c19"
                 >
                   <span
-                    className="c33 c32"
+                    className="c12 c32"
                   >
                     42100000000
                   </span>
@@ -119053,13 +119026,13 @@ exports[`Storyshots Molecules | FlexTable Expandable Table 1`] = `
             className="c19"
           >
             <li
-              className="c34"
+              className="c33"
             >
               <div
-                className="c35 c36"
+                className="c34 c35"
               >
                 <div
-                  className="c37"
+                  className="c36"
                 >
                   <span
                     className="c7 c32"
@@ -119080,7 +119053,7 @@ exports[`Storyshots Molecules | FlexTable Expandable Table 1`] = `
                   className="c19"
                 >
                   <span
-                    className="c33 c32"
+                    className="c12 c32"
                   >
                     42100000000
                   </span>
@@ -119119,7 +119092,7 @@ exports[`Storyshots Molecules | FlexTable Expandable Table 1`] = `
                   className="c19"
                 >
                   <span
-                    className="c33 c32"
+                    className="c12 c32"
                   >
                     42100000000
                   </span>
@@ -119131,13 +119104,13 @@ exports[`Storyshots Molecules | FlexTable Expandable Table 1`] = `
             className="c19"
           >
             <li
-              className="c34"
+              className="c33"
             >
               <div
-                className="c35 c36"
+                className="c34 c35"
               >
                 <div
-                  className="c37"
+                  className="c36"
                 >
                   <span
                     className="c7 c32"
@@ -119158,7 +119131,7 @@ exports[`Storyshots Molecules | FlexTable Expandable Table 1`] = `
                   className="c19"
                 >
                   <span
-                    className="c33 c32"
+                    className="c12 c32"
                   >
                     42100000000
                   </span>
@@ -119197,7 +119170,7 @@ exports[`Storyshots Molecules | FlexTable Expandable Table 1`] = `
                   className="c19"
                 >
                   <span
-                    className="c33 c32"
+                    className="c12 c32"
                   >
                     42100000000
                   </span>
@@ -119209,13 +119182,13 @@ exports[`Storyshots Molecules | FlexTable Expandable Table 1`] = `
             className="c19"
           >
             <li
-              className="c34"
+              className="c33"
             >
               <div
-                className="c35 c36"
+                className="c34 c35"
               >
                 <div
-                  className="c37"
+                  className="c36"
                 >
                   <span
                     className="c7 c32"
@@ -119236,7 +119209,7 @@ exports[`Storyshots Molecules | FlexTable Expandable Table 1`] = `
                   className="c19"
                 >
                   <span
-                    className="c33 c32"
+                    className="c12 c32"
                   >
                     42100000000
                   </span>
@@ -119275,7 +119248,7 @@ exports[`Storyshots Molecules | FlexTable Expandable Table 1`] = `
                   className="c19"
                 >
                   <span
-                    className="c33 c32"
+                    className="c12 c32"
                   >
                     42100000000
                   </span>
@@ -119287,13 +119260,13 @@ exports[`Storyshots Molecules | FlexTable Expandable Table 1`] = `
             className="c19"
           >
             <li
-              className="c34"
+              className="c33"
             >
               <div
-                className="c35 c36"
+                className="c34 c35"
               >
                 <div
-                  className="c37"
+                  className="c36"
                 >
                   <span
                     className="c7 c32"
@@ -119314,7 +119287,7 @@ exports[`Storyshots Molecules | FlexTable Expandable Table 1`] = `
                   className="c19"
                 >
                   <span
-                    className="c33 c32"
+                    className="c12 c32"
                   >
                     42100000000
                   </span>
@@ -119353,7 +119326,7 @@ exports[`Storyshots Molecules | FlexTable Expandable Table 1`] = `
                   className="c19"
                 >
                   <span
-                    className="c33 c32"
+                    className="c12 c32"
                   >
                     42100000000
                   </span>
@@ -119365,13 +119338,13 @@ exports[`Storyshots Molecules | FlexTable Expandable Table 1`] = `
             className="c19"
           >
             <li
-              className="c34"
+              className="c33"
             >
               <div
-                className="c35 c36"
+                className="c34 c35"
               >
                 <div
-                  className="c37"
+                  className="c36"
                 >
                   <span
                     className="c7 c32"
@@ -119392,7 +119365,7 @@ exports[`Storyshots Molecules | FlexTable Expandable Table 1`] = `
                   className="c19"
                 >
                   <span
-                    className="c33 c32"
+                    className="c12 c32"
                   >
                     42100000000
                   </span>
@@ -119431,7 +119404,7 @@ exports[`Storyshots Molecules | FlexTable Expandable Table 1`] = `
                   className="c19"
                 >
                   <span
-                    className="c33 c32"
+                    className="c12 c32"
                   >
                     42100000000
                   </span>
@@ -119443,13 +119416,13 @@ exports[`Storyshots Molecules | FlexTable Expandable Table 1`] = `
             className="c19"
           >
             <li
-              className="c34"
+              className="c33"
             >
               <div
-                className="c35 c36"
+                className="c34 c35"
               >
                 <div
-                  className="c37"
+                  className="c36"
                 >
                   <span
                     className="c7 c32"
@@ -119470,7 +119443,7 @@ exports[`Storyshots Molecules | FlexTable Expandable Table 1`] = `
                   className="c19"
                 >
                   <span
-                    className="c33 c32"
+                    className="c12 c32"
                   >
                     42100000000
                   </span>
@@ -119509,7 +119482,7 @@ exports[`Storyshots Molecules | FlexTable Expandable Table 1`] = `
                   className="c19"
                 >
                   <span
-                    className="c33 c32"
+                    className="c12 c32"
                   >
                     42100000000
                   </span>
@@ -119521,13 +119494,13 @@ exports[`Storyshots Molecules | FlexTable Expandable Table 1`] = `
             className="c19"
           >
             <li
-              className="c34"
+              className="c33"
             >
               <div
-                className="c35 c36"
+                className="c34 c35"
               >
                 <div
-                  className="c37"
+                  className="c36"
                 >
                   <span
                     className="c7 c32"
@@ -119548,7 +119521,7 @@ exports[`Storyshots Molecules | FlexTable Expandable Table 1`] = `
                   className="c19"
                 >
                   <span
-                    className="c33 c32"
+                    className="c12 c32"
                   >
                     42100000000
                   </span>
@@ -119587,7 +119560,7 @@ exports[`Storyshots Molecules | FlexTable Expandable Table 1`] = `
                   className="c19"
                 >
                   <span
-                    className="c33 c32"
+                    className="c12 c32"
                   >
                     42100000000
                   </span>
@@ -119599,13 +119572,13 @@ exports[`Storyshots Molecules | FlexTable Expandable Table 1`] = `
             className="c19"
           >
             <li
-              className="c34"
+              className="c33"
             >
               <div
-                className="c35 c36"
+                className="c34 c35"
               >
                 <div
-                  className="c37"
+                  className="c36"
                 >
                   <span
                     className="c7 c32"
@@ -119626,7 +119599,7 @@ exports[`Storyshots Molecules | FlexTable Expandable Table 1`] = `
                   className="c19"
                 >
                   <span
-                    className="c33 c32"
+                    className="c12 c32"
                   >
                     42100000000
                   </span>
@@ -119665,7 +119638,7 @@ exports[`Storyshots Molecules | FlexTable Expandable Table 1`] = `
                   className="c19"
                 >
                   <span
-                    className="c33 c32"
+                    className="c12 c32"
                   >
                     42100000000
                   </span>
@@ -119677,13 +119650,13 @@ exports[`Storyshots Molecules | FlexTable Expandable Table 1`] = `
             className="c19"
           >
             <li
-              className="c34"
+              className="c33"
             >
               <div
-                className="c35 c36"
+                className="c34 c35"
               >
                 <div
-                  className="c37"
+                  className="c36"
                 >
                   <span
                     className="c7 c32"
@@ -119704,7 +119677,7 @@ exports[`Storyshots Molecules | FlexTable Expandable Table 1`] = `
                   className="c19"
                 >
                   <span
-                    className="c33 c32"
+                    className="c12 c32"
                   >
                     42100000000
                   </span>
@@ -119743,7 +119716,7 @@ exports[`Storyshots Molecules | FlexTable Expandable Table 1`] = `
                   className="c19"
                 >
                   <span
-                    className="c33 c32"
+                    className="c12 c32"
                   >
                     42100000000
                   </span>
@@ -119755,13 +119728,13 @@ exports[`Storyshots Molecules | FlexTable Expandable Table 1`] = `
             className="c19"
           >
             <li
-              className="c34"
+              className="c33"
             >
               <div
-                className="c35 c36"
+                className="c34 c35"
               >
                 <div
-                  className="c37"
+                  className="c36"
                 >
                   <span
                     className="c7 c32"
@@ -119782,7 +119755,7 @@ exports[`Storyshots Molecules | FlexTable Expandable Table 1`] = `
                   className="c19"
                 >
                   <span
-                    className="c33 c32"
+                    className="c12 c32"
                   >
                     42100000000
                   </span>
@@ -133585,7 +133558,7 @@ exports[`Storyshots Molecules | FlexTable Table Header 1`] = `
 </div>
 `;
 
-exports[`Storyshots Molecules | FlexTable Table With Different Rows 1`] = `
+exports[`Storyshots Molecules | FlexTable Table With Large Density And Large Font Size 1`] = `
 .c1 {
   padding-left: 4px;
 }
@@ -133602,6 +133575,20 @@ exports[`Storyshots Molecules | FlexTable Table With Different Rows 1`] = `
   align-items: center;
 }
 
+.c6 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+
 .c2 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
@@ -133611,42 +133598,67 @@ exports[`Storyshots Molecules | FlexTable Table With Different Rows 1`] = `
   line-height: 1.3333333333333333;
 }
 
+.c7 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #6E6E69;
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c11 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c12 {
+  display: inline-block;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.c10 {
+  overflow: hidden;
+}
+
 .c4 {
-  border-bottom: 1px solid #00C8F5;
-  padding-right: 4px;
-  padding-left: 2px;
-  border-left: 2px solid transparent;
-  padding-top: 4px;
-  padding-bottom: 4px;
-}
-
-.c4:hover {
-  background: #F5F5F5;
-}
-
-.c5 {
   border-bottom: 1px solid #EBEBE8;
   padding-right: 4px;
   padding-left: 2px;
   border-left: 2px solid transparent;
-  padding-top: 4px;
-  padding-bottom: 4px;
+  padding-top: 8px;
+  padding-bottom: 8px;
 }
 
-.c5:hover {
-  background: #F5F5F5;
-}
-
-.c6 {
+.c9 {
+  border-bottom: 1px solid #EBEBE8;
   padding-right: 4px;
   padding-left: 2px;
   border-left: 2px solid transparent;
-  padding-top: 4px;
-  padding-bottom: 4px;
+  padding-top: 8px;
+  padding-bottom: 8px;
 }
 
-.c6:hover {
+.c9:hover {
   background: #F5F5F5;
+}
+
+.c5 {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  background-color: #FFFFFF;
+}
+
+.c8 {
+  display: inline-block;
+  word-break: break-word;
 }
 
 .c0 {
@@ -133674,28 +133686,109 @@ exports[`Storyshots Molecules | FlexTable Table With Different Rows 1`] = `
     </div>
   </caption>
   <div
-    className="c3 c4"
+    className="c3 c4 c5"
     role="row"
   >
-    Separator color set
-  </div>
-  <div
-    className="c3 c5"
-    role="row"
-  >
-    Default
-  </div>
-  <div
-    className="c3 c6"
-    role="row"
-  >
-    Separator hidden
-  </div>
-  <div
-    className="c3 c5"
-    role="row"
-  >
-    Default
+    <div
+      className="c6"
+      role="columnheader"
+    >
+      <span
+        className="c7 c8"
+      >
+        Header1
+      </span>
+    </div>
+    <div
+      className="c6"
+      role="columnheader"
+    >
+      <span
+        className="c7 c8"
+      >
+        Header1
+      </span>
+    </div>
+    <div
+      className="c6"
+      role="columnheader"
+    >
+      <span
+        className="c7 c8"
+      >
+        Header1
+      </span>
+    </div>
+    <div
+      className="c3 c9"
+      role="row"
+    >
+      <div
+        className="c6 c10"
+        role="cell"
+      >
+        <span
+          className="c11 c12"
+        >
+          Cell 1-1
+        </span>
+      </div>
+      <div
+        className="c6 c10"
+        role="cell"
+      >
+        <span
+          className="c11 c12"
+        >
+          Cell 1-2
+        </span>
+      </div>
+      <div
+        className="c6 c10"
+        role="cell"
+      >
+        <span
+          className="c11 c12"
+        >
+          Cell 1-3
+        </span>
+      </div>
+    </div>
+    <div
+      className="c3 c9"
+      role="row"
+    >
+      <div
+        className="c6 c10"
+        role="cell"
+      >
+        <span
+          className="c11 c12"
+        >
+          Cell 2-1
+        </span>
+      </div>
+      <div
+        className="c6 c10"
+        role="cell"
+      >
+        <span
+          className="c11 c12"
+        >
+          Cell 2-2
+        </span>
+      </div>
+      <div
+        className="c6 c10"
+        role="cell"
+      >
+        <span
+          className="c11 c12"
+        >
+          Cell 2-3
+        </span>
+      </div>
+    </div>
   </div>
 </div>
 `;

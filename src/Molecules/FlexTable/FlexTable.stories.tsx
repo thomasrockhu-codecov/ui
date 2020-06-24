@@ -1158,4 +1158,134 @@ export const SortableHeaderOnlyAscendingDescending = () => {
   return <ReactComponent />;
 };
 
+export const TablesWithDifferentFontSizes = () => (
+  <StyledDiv>
+    <StyledFlexTable title="Default">
+      <FlexTable.HeaderRow>
+        <FlexTable.Header columnId="column1">Header 1</FlexTable.Header>
+        <FlexTable.Header columnId="column2">Header 2</FlexTable.Header>
+        <FlexTable.Header columnId="column3">Header 3</FlexTable.Header>
+      </FlexTable.HeaderRow>
+      <FlexTable.Row>
+        <FlexTable.Cell columnId="column1">Cell 1-1</FlexTable.Cell>
+        <FlexTable.Cell columnId="column2">Cell 1-2</FlexTable.Cell>
+        <FlexTable.Cell columnId="column3">Cell 1-3</FlexTable.Cell>
+      </FlexTable.Row>
+      <FlexTable.Row>
+        <FlexTable.Cell columnId="column1">Cell 2-1</FlexTable.Cell>
+        <FlexTable.Cell columnId="column2">Cell 2-2</FlexTable.Cell>
+        <FlexTable.Cell columnId="column3">Cell 2-3</FlexTable.Cell>
+      </FlexTable.Row>
+    </StyledFlexTable>
+
+    <StyledFlexTable fontSize="m" title="Medium">
+      <FlexTable.HeaderRow>
+        <FlexTable.Header columnId="column1">Header 1</FlexTable.Header>
+        <FlexTable.Header columnId="column2">Header 2</FlexTable.Header>
+        <FlexTable.Header columnId="column3">Header 3</FlexTable.Header>
+      </FlexTable.HeaderRow>
+      <FlexTable.Row>
+        <FlexTable.Cell columnId="column1">Cell 1-1</FlexTable.Cell>
+        <FlexTable.Cell columnId="column2">Cell 1-2</FlexTable.Cell>
+        <FlexTable.Cell columnId="column3">Cell 1-3</FlexTable.Cell>
+      </FlexTable.Row>
+      <FlexTable.Row>
+        <FlexTable.Cell columnId="column1">Cell 2-1</FlexTable.Cell>
+        <FlexTable.Cell columnId="column2">Cell 2-2</FlexTable.Cell>
+        <FlexTable.Cell columnId="column3">Cell 2-3</FlexTable.Cell>
+      </FlexTable.Row>
+    </StyledFlexTable>
+
+    <StyledFlexTable title="Large" fontSize="l">
+      <FlexTable.HeaderRow>
+        <FlexTable.Header columnId="column1">Header 1</FlexTable.Header>
+        <FlexTable.Header columnId="column2">Header 2</FlexTable.Header>
+        <FlexTable.Header columnId="column3">Header 3</FlexTable.Header>
+      </FlexTable.HeaderRow>
+      <FlexTable.Row>
+        <FlexTable.Cell columnId="column1">Cell 1-1</FlexTable.Cell>
+        <FlexTable.Cell columnId="column2">Cell 1-2</FlexTable.Cell>
+        <FlexTable.Cell columnId="column3">Cell 1-3</FlexTable.Cell>
+      </FlexTable.Row>
+      <FlexTable.Row>
+        <FlexTable.Cell columnId="column1">Cell 2-1</FlexTable.Cell>
+        <FlexTable.Cell columnId="column2">Cell 2-2</FlexTable.Cell>
+        <FlexTable.Cell columnId="column3">Cell 2-3</FlexTable.Cell>
+      </FlexTable.Row>
+    </StyledFlexTable>
+
+    <StyledFlexTable title="ExpandDefault">
+      <FlexTable.HeaderRow>
+        <FlexTable.Header columnId="column1">Header 1</FlexTable.Header>
+        <FlexTable.Header columnId="column2">Header 2</FlexTable.Header>
+        <FlexTable.Header columnId="column3">Header 3</FlexTable.Header>
+        <FlexTable.Header
+          columnId={FlexTable.CONSTANTS.COLUMN_ID_EXPAND}
+          {...ICON_COLUMN_DEFAULT_FLEX_PROPS}
+        />
+      </FlexTable.HeaderRow>
+      <FlexTable.Row
+        includeExpand
+        expandItems={[
+          { label: 'item1', value: 'value of item1' },
+          { label: 'item2', value: 'value of item2' },
+          { label: 'item3', value: 'value of item3' },
+        ]}
+      >
+        <FlexTable.Cell columnId="column1">Cell 1-1</FlexTable.Cell>
+        <FlexTable.Cell columnId="column2">Cell 1-2</FlexTable.Cell>
+        <FlexTable.Cell columnId="column3">Cell 1-3</FlexTable.Cell>
+      </FlexTable.Row>
+    </StyledFlexTable>
+
+    <StyledFlexTable title="ExpandMedium" fontSize="m">
+      <FlexTable.HeaderRow>
+        <FlexTable.Header columnId="column1">Header 1</FlexTable.Header>
+        <FlexTable.Header columnId="column2">Header 2</FlexTable.Header>
+        <FlexTable.Header columnId="column3">Header 3</FlexTable.Header>
+        <FlexTable.Header
+          columnId={FlexTable.CONSTANTS.COLUMN_ID_EXPAND}
+          {...ICON_COLUMN_DEFAULT_FLEX_PROPS}
+        />
+      </FlexTable.HeaderRow>
+      <FlexTable.Row
+        includeExpand
+        expandItems={[
+          { label: 'item1', value: 'value of item1' },
+          { label: 'item2', value: 'value of item2' },
+          { label: 'item3', value: 'value of item3' },
+        ]}
+      >
+        <FlexTable.Cell columnId="column1">Cell 1-1</FlexTable.Cell>
+        <FlexTable.Cell columnId="column2">Cell 1-2</FlexTable.Cell>
+        <FlexTable.Cell columnId="column3">Cell 1-3</FlexTable.Cell>
+      </FlexTable.Row>
+    </StyledFlexTable>
+
+    <StyledFlexTable title="ExpandLarge" fontSize="l">
+      <FlexTable.HeaderRow>
+        <FlexTable.Header columnId="column1">Header 1</FlexTable.Header>
+        <FlexTable.Header columnId="column2">Header 2</FlexTable.Header>
+        <FlexTable.Header columnId="column3">Header 3</FlexTable.Header>
+        <FlexTable.Header
+          columnId={FlexTable.CONSTANTS.COLUMN_ID_EXPAND}
+          {...ICON_COLUMN_DEFAULT_FLEX_PROPS}
+        />
+      </FlexTable.HeaderRow>
+      <FlexTable.Row
+        includeExpand
+        expandItems={[
+          { label: 'item1', value: 'value of item1' },
+          { label: 'item2', value: 'value of item2' },
+          { label: 'item3', value: 'value of item3' },
+        ]}
+      >
+        <FlexTable.Cell columnId="column1">Cell 1-1</FlexTable.Cell>
+        <FlexTable.Cell columnId="column2">Cell 1-2</FlexTable.Cell>
+        <FlexTable.Cell columnId="column3">Cell 1-3</FlexTable.Cell>
+      </FlexTable.Row>
+    </StyledFlexTable>
+  </StyledDiv>
+);
+
 // TODO: add story to how you create a custom sorting header and variations thereof

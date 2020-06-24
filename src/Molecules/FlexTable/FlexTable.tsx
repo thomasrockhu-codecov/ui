@@ -39,9 +39,10 @@ const FlexTable: React.FC<Props> & FlexTableComponents = ({
   stickyHeader = true,
   children,
   title,
+  fontSize,
   ...htmlProps
 }) => (
-  <FlexTableProvider density={density} stickyHeader={stickyHeader}>
+  <FlexTableProvider density={density} stickyHeader={stickyHeader} fontSize={fontSize}>
     {/* pass sticky with context instead of prop-drilling, since context might change */}
     <FlexTableContainer className={className} {...htmlProps}>
       <caption>

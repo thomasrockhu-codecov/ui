@@ -4,13 +4,14 @@ import { HeaderComponent } from './Header/Header.types';
 import { FooterComponent } from './Footer/Footer.types';
 import { constants } from './shared';
 import { CellComponent, ExpandCellComponent } from './Cell/Cell.types';
-import { Density } from './shared/shared.types';
+import { Density, FontSize } from './shared/shared.types';
 
 type HtmlProps = {} & React.HTMLAttributes<HTMLDivElement>;
 
 export type Props = {
   className?: string;
   density?: Density;
+  fontSize?: FontSize;
   stickyHeader?: boolean;
   title?: ReactNode;
 } & HtmlProps;

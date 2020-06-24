@@ -4,7 +4,7 @@ import { isElement } from '../../../../common/utils';
 import { Flexbox, LabeledValue, Media } from '../../../..';
 import { ExpandItemComponent, ExpandItemProps } from './ExpandItems.types';
 import { Props as FlexBoxProps } from '../../../../Atoms/Flexbox/Flexbox.types';
-import { TextWrapperLabel, TextWrapperValue } from './TextWrappers';
+import { TextWrapperLabel, TextWrapperValue } from './TextWrapper';
 
 const StyledFlexboxItem = styled(Flexbox)<FlexBoxProps>`
   max-width: ${p => p.theme.spacing.unit(75)}px;

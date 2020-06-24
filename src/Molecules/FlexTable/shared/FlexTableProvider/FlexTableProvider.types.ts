@@ -1,8 +1,9 @@
-import { Density } from '../shared.types';
+import { Density, FontSize } from '../shared.types';
 
 export type FlexTableState = {
-  density: Density;
+  density?: Density;
   stickyHeader: boolean;
+  fontSize?: FontSize;
 };
 
 export type Props = {} & FlexTableState;

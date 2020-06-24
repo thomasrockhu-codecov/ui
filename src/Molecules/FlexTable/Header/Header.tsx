@@ -37,7 +37,6 @@ const Header: HeaderComponent = props => {
     sortable = false,
     sortOrder: sortOrderProp,
     onSort = () => {},
-    fontSize,
     columnId,
   } = props;
 
@@ -90,13 +89,12 @@ const Header: HeaderComponent = props => {
     >
       {isElement(children) && children}
       {isFunction(children)
-        ? children({ fontSize, sortable, sortOrder, onSortClick, sorted, columnId })
+        ? children({ sortable, sortOrder, onSortClick, sorted, columnId })
         : !isElement(children) && (
             <HeaderContent
               onSortClick={onSortClick}
               sortable={sortable}
               sortOrder={sortOrder}
-              fontSize={fontSize}
               sorted={sorted}
             >
               {children}

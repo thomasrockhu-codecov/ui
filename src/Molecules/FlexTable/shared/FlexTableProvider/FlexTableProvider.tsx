@@ -6,9 +6,10 @@ export const FlexTableContext = React.createContext<FlexTableState | undefined>(
 export const FlexTableProvider: FlexTableProviderComponent = ({
   children,
   density,
+  fontSize,
   stickyHeader,
 }) => (
-  <FlexTableContext.Provider value={{ density, stickyHeader }}>
+  <FlexTableContext.Provider value={{ density, stickyHeader, fontSize }}>
     {children}
   </FlexTableContext.Provider>
 );
