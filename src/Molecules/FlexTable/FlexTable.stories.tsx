@@ -9,12 +9,14 @@ import { Button, Typography, Flag, Icon, Number, Flexbox } from '../..';
 import { SortOrder } from './Header/HeaderContent/HeaderContent.types';
 import { OnSort } from './Header/Header.types';
 import { ICON_COLUMN_DEFAULT_FLEX_PROPS } from './shared/constants';
+import docs from './FlexTable.mdx';
 
 export default {
   title: 'Molecules | FlexTable',
   decorators: [withKnobs],
   parameters: {
     component: FlexTable,
+    ...docs.parameters,
   },
 };
 
