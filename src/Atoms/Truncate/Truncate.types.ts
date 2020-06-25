@@ -1,7 +1,7 @@
-import { ReactNode } from 'react';
+import React, { ReactNode } from 'react';
 
 export type Props = {
   as?: keyof JSX.IntrinsicElements | React.ComponentType<any>;
   className?: string;
   children: ReactNode;
-} & React.HTMLProps<HTMLElement>;
+} & Omit<React.HTMLProps<HTMLElement>, 'as'>;
