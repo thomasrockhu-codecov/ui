@@ -30,7 +30,6 @@ export const HeaderRow: HeaderRowComponent = ({
   ...htmlProps
 }) => {
   const { stickyHeader } = useFlexTable();
-  console.log('Color: ', separatorColor);
 
   return (
     <StyledHeaderRow
