@@ -2,7 +2,7 @@ import { DENSITY_PADDING_LARGE, DENSITY_PADDING_MEDIUM, DENSITY_PADDING_SMALL } 
 import { Density, FontSize } from './shared.types';
 
 export const getFontSizeTypographyType = (fontSize: FontSize) =>
-  fontSize === 'l' ? 'secondary' : 'tertiary';
+  fontSize === 'm' ? 'secondary' : 'tertiary';
 
 export const getDensityPaddings = (density: Density) => {
   switch (density) {
