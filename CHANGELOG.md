@@ -1,3 +1,10 @@
+## [2.53.1](https://github.com/nordnet/ui/compare/v2.53.0...v2.53.1) (2020-06-25)
+
+
+### Bug Fixes
+
+* 🐛 add support for id prop in Input.Text component ([223fafb](https://github.com/nordnet/ui/commit/223fafb))
+
 # [2.53.0](https://github.com/nordnet/ui/compare/v2.52.1...v2.53.0) (2020-06-23)
 
 
