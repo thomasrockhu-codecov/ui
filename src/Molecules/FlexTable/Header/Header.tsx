@@ -1,5 +1,6 @@
 import React, { useEffect, useLayoutEffect } from 'react';
 import * as R from 'ramda';
+import styled from 'styled-components';
 import { HeaderComponent } from './Header.types';
 import { SortOrder } from './HeaderContent/HeaderContent.types';
 import { isElement, isFunction } from '../../../common/utils';
@@ -28,6 +29,10 @@ const getSortOrder = (
   sortOrderProp: SortOrder | undefined,
   initialSortOrder: SortOrder,
 ) => stateSortOrder || sortOrderProp || initialSortOrder;
+
+const StyledFlexbox = styled(Flexbox)`
+  overflow: hidden;
+`;
 
 const Header: HeaderComponent = props => {
   const {
@@ -81,7 +86,7 @@ const Header: HeaderComponent = props => {
 
   const sorted = !R.isNil(sortOrder) && sortOrder !== SORT_ORDER_NONE;
   return (
-    <Flexbox
+    <StyledFlexbox
       className={className}
       role="columnheader"
       {...ariaSorted}
@@ -100,7 +105,7 @@ const Header: HeaderComponent = props => {
               {children}
             </HeaderContent>
           )}
-    </Flexbox>
+    </StyledFlexbox>
   );
 };
 
