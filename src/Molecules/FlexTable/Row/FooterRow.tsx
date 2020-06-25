@@ -24,6 +24,7 @@ export const FooterRow: FooterRowComponent = ({
       hoverHighlight={false}
       hideSeparator={hideSeparator}
       separatorColor={separatorColor}
+      isContent={false}
       {...htmlProps}
     >
       {children}

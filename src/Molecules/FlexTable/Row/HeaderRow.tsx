@@ -18,7 +18,8 @@ const StyledHeaderRow = styled(Row).withConfig({
         position: sticky;
         top: 0;
         background-color: ${p.theme.color.tableHeaderBackground}`
-      : ''}
+      : ''};
+  ${p => (!p.hideSeparator ? `border-bottom: 1px solid ${p.separatorColor(p.theme)}` : '')};
 `;
 
 export const HeaderRow: HeaderRowComponent = ({
@@ -35,6 +36,7 @@ export const HeaderRow: HeaderRowComponent = ({
       className={className}
       hoverHighlight={false}
       hideSeparator={hideSeparator}
+      isContent={false}
       separatorColor={separatorColor}
       sticky={stickyHeader}
       {...htmlProps}

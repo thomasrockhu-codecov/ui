@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import styled from 'styled-components';
-import { RowComponent, RowComponents } from './Row.types';
+import { ExpandProps, RowComponent, RowComponents } from './Row.types';
 import { Box, Flexbox, Button, Icon } from '../../../index';
 import { ColorFn } from '../../../common/Types/sharedTypes';
 import { getDensityPaddings } from '../shared/textUtils';
@@ -8,23 +8,32 @@ import { Density } from '../shared/shared.types';
 import { useFlexTable } from '../shared/FlexTableProvider';
 import { ExpandItems, ExpandItem } from './ExpandItems';
 import { ExpandCell } from '../Cell/ExpandCell';
-import { COLUMN_ID_EXPAND } from '../shared/constants';
+import { COLUMN_ID_EXPAND, ICON_COLUMN_DEFAULT_FLEX_PROPS } from '../shared/constants';
+import FlexTable from '../FlexTable';
 
 /* the cells are padded by row gutter 1 unit (4px) */
 const StyledRow = styled(Flexbox).withConfig({
   shouldForwardProp: prop =>
-    !['hideSeparator', 'expanded', 'separatorColor', 'density', 'hoverHighlight'].includes(prop),
+    ![
+      'hideSeparator',
+      'expanded',
+      'separatorColor',
+      'density',
+      'hoverHighlight',
+      'expandable',
+    ].includes(prop),
 })<{
   hideSeparator: boolean;
   expanded: boolean;
   separatorColor: ColorFn;
   hoverHighlight: boolean;
   density: Density;
+  expandable: boolean;
 }>`
   ${p =>
     !p.hideSeparator && !p.expanded ? `border-bottom: 1px solid ${p.separatorColor(p.theme)}` : ''};
-  padding-right: ${p => p.theme.spacing.unit(1)}px;
-  padding-left: ${p => p.theme.spacing.unit(0.5)}px;
+  padding-right: ${p => (p.expandable ? p.theme.spacing.unit(2) : p.theme.spacing.unit(1))}px;
+  padding-left: ${p => (p.expandable ? p.theme.spacing.unit(1.5) : p.theme.spacing.unit(0.5))}px;
   border-left: ${p => p.theme.spacing.unit(0.5)}px solid
     ${p => (p.expanded ? p.theme.color.cta : 'transparent')};
   ${p =>
@@ -54,20 +63,53 @@ export const ExpandButton: React.FC<{ expanded: boolean; onClick: () => void }> 
   </Button>
 );
 
+const ExpandElement: React.FC<
+  ExpandProps & { expandable: boolean; isContent: boolean; setExpand: (expanded: boolean) => void }
+> = ({
+  expandable,
+  isContent,
+  expanded = false,
+  onExpandToggle,
+  setExpand,
+  expandChildren,
+  expandItems,
+}) => {
+  if (!expandable) {
+    return null;
+  }
+  if (!isContent) {
+    return (
+      <FlexTable.Header
+        columnId={FlexTable.CONSTANTS.COLUMN_ID_EXPAND}
+        {...ICON_COLUMN_DEFAULT_FLEX_PROPS}
+      />
+    );
+  }
+
+  return (
+    <ExpandCell
+      columnId={COLUMN_ID_EXPAND}
+      expanded={expanded}
+      onClick={() => (onExpandToggle ? onExpandToggle(!expanded) : setExpand(!expanded))}
+      disabled={!(expandChildren || expandItems)}
+    />
+  );
+};
+
 const Row: RowComponent & RowComponents = ({
   className,
   expanded = false,
   hoverHighlight = true,
   hideSeparator = false,
+  isContent = true,
   separatorColor = theme => theme.color.divider,
-  includeExpand = false,
   onExpandToggle,
   expandChildren,
   expandItems,
   children,
   ...htmlProps
 }) => {
-  const { density } = useFlexTable();
+  const { density, expandable } = useFlexTable();
   const [expand, setExpand] = useState(expanded);
 
   useEffect(() => {
@@ -86,17 +128,19 @@ const Row: RowComponent & RowComponents = ({
         expanded={expand}
         separatorColor={separatorColor}
         density={density}
+        expandable={expandable}
         {...htmlProps}
       >
         {children}
-        {includeExpand && (
-          <ExpandCell
-            columnId={COLUMN_ID_EXPAND}
-            expanded={expand}
-            onClick={() => (onExpandToggle ? onExpandToggle(!expand) : setExpand(!expand))}
-            disabled={!(expandChildren || expandItems)}
-          />
-        )}
+        <ExpandElement
+          isContent={isContent}
+          expanded={expand}
+          expandItems={expandItems}
+          expandChildren={expandChildren}
+          onExpandToggle={onExpandToggle}
+          setExpand={setExpand}
+          expandable={expandable}
+        />
       </StyledRow>
 
       {expand && (

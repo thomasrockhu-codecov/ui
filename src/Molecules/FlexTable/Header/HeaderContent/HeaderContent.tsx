@@ -5,14 +5,15 @@ import { TextWrapper } from './TextWrapper';
 import { SORT_ORDER_NONE } from '../../shared/constants';
 import { SortIcon } from './SortIcon';
 import { SortButton } from './SortButton';
+import { useFlexTable } from '../../shared/FlexTableProvider';
 
 export const HeaderContent: React.FC<Props & UIProps> = ({
   sortable,
-  fontSize,
   sortOrder,
   onSortClick,
   children,
 }) => {
+  const { fontSize } = useFlexTable();
   if (!sortable || sortOrder === null) {
     return (
       <TextWrapper fontSize={fontSize} sorted={false}>
