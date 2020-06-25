@@ -303,10 +303,10 @@ export const TableWithDifferentColumns = () => {
 
   return (
     <StyledDiv>
-      <Typography type="title3">Table With Column Width Set</Typography>
-      <ColumnWidthTableExample />
       <Typography type="title3">Table With Different Alignments</Typography>
       <DifferentAlignmentsTableExample />
+      <Typography type="title3">Table With Column Width Set</Typography>
+      <ColumnWidthTableExample />
       <Typography type="title3">Table With Columns Hidden Based On Screen Size</Typography>
       <MediaColumnsExample />
     </StyledDiv>
