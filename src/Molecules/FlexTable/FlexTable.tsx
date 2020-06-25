@@ -44,12 +44,19 @@ const StyledTypography = styled(Typography)`
 const FlexTable: React.FC<Props> & FlexTableComponents = ({
   className,
   density = 'm',
+  expandable = false,
   stickyHeader = true,
   children,
   title,
+  fontSize = 'm',
   ...htmlProps
 }) => (
-  <FlexTableProvider density={density} stickyHeader={stickyHeader}>
+  <FlexTableProvider
+    density={density}
+    stickyHeader={stickyHeader}
+    fontSize={fontSize}
+    expandable={expandable}
+  >
     {/* pass sticky with context instead of prop-drilling, since context might change */}
     <FlexTableContainer className={className} {...htmlProps}>
       <StyledCaption>
