@@ -23,6 +23,7 @@ import TabTitle from './Atoms/TabTitle';
 import Time from './Atoms/Time';
 import Typography from './Atoms/Typography';
 import VisuallyHidden from './Atoms/VisuallyHidden';
+import Truncate from './Atoms/Truncate';
 
 /** Molecules */
 import Accordion from './Molecules/Accordion';
@@ -133,6 +134,7 @@ export {
   Tooltip,
   Tr,
   TrackingContext,
+  Truncate,
   Typography,
   useKeyPress,
   useMedia,
