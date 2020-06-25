@@ -13,7 +13,7 @@ const StyledDiv = styled.div`
   max-width: ${p => p.theme.spacing.unit(35)}px;
 `;
 
-export const truncateDefault = () => (
+export const truncateWithTooltipDefault = () => (
   <>
     <StyledDiv>
       <TruncateWithTooltip position="bottom" label="Hover over this truncated text">
