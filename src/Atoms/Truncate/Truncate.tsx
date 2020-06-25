@@ -11,9 +11,9 @@ const StyledDiv = styled.div`
 `;
 
 export const Truncate = React.forwardRef<React.Ref<HTMLElement>, Props>(
-  ({ as, className, children }, ref) => {
+  ({ as, className, children, ...divProps }, ref) => {
     return (
-      <StyledDiv as={as} className={className} ref={ref}>
+      <StyledDiv as={as} className={className} ref={ref} {...divProps}>
         {children}
       </StyledDiv>
     );
