@@ -1,3 +1,16 @@
+# [2.54.0](https://github.com/nordnet/ui/compare/v2.53.1...v2.54.0) (2020-06-25)
+
+
+### Bug Fixes
+
+* 🐛 type for as prop on truncate ([8a1a59e](https://github.com/nordnet/ui/commit/8a1a59e))
+
+
+### Features
+
+* 🎸 add truncate ([4c6ab15](https://github.com/nordnet/ui/commit/4c6ab15))
+* 🎸 add truncate with tooltip ([54b3285](https://github.com/nordnet/ui/commit/54b3285))
+
 ## [2.53.1](https://github.com/nordnet/ui/compare/v2.53.0...v2.53.1) (2020-06-25)
 
 
