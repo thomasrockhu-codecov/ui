@@ -8,22 +8,20 @@ type Direction = {
 };
 
 const DIRECTION = {
-  up: 90,
-  right: 180,
-  down: 270,
-  left: 0,
+  up: 180,
+  down: 0,
 };
 
 const StyledIconBase = styled(IconBase)<Direction>`
   transform: ${p => `rotate(${DIRECTION[p.direction]}deg`});
 `;
 
-export const ThinArrow = ({ direction = 'up', ...props }: BaseProps & Direction) => {
+export const ThinChevron = ({ direction = 'down', ...props }: BaseProps & Direction) => {
   return (
-    <StyledIconBase direction={direction} {...props} viewBox="0 0 15 16">
-      <path d="M9.179 1l-6.21 6.222h12.873v1.556L2.97 8.777 9.18 15H6.984L0 8l6.984-7h2.195z" />
+    <StyledIconBase direction={direction} {...props} viewBox="0 0 16 16">
+      <polygon points="14.620 3.580, 16.000 5.020, 8.000 12.730, 0.000 5.030, 1.400 3.580, 8.000 9.96" />
     </StyledIconBase>
   );
 };
 
-ThinArrow.displayName = 'Icon.ThinArrow';
+ThinChevron.displayName = 'Icon.ThinChevron';
