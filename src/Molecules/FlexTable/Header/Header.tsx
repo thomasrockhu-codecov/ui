@@ -64,8 +64,7 @@ const Header: HeaderComponent = props => {
 
   useEffect(() => {
     // If the sortOrder changes from the outside, update internal the column sort state
-    if (controlledSort) {
-      // @ts-ignore
+    if (controlledSort && sortOrderProp !== undefined) {
       columnDispatch({ type: ACTION_SET_SORTING, sortOrder: sortOrderProp });
     }
   }, [sortOrderProp, controlledSort, columnDispatch]);

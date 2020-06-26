@@ -31,4 +31,5 @@ const Cell: CellComponent = ({ children, className, columnId }) => {
 };
 
 Cell.TextWrapper = React.memo(TextWrapper);
-export default React.memo(Cell);
+// React.memo/NamedExoticComponent prevents TextWrapper from being included in types, recast to retain type.
+export default (React.memo(Cell) as any) as CellComponent;
