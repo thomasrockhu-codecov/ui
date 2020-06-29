@@ -1,10 +1,5 @@
 import { FlexPropsType } from './ColumnProvider/ColumnProvider.types';
 
-// TODO: use theme spacing (on the following 3 constants)
-export const DENSITY_PADDING_SMALL = 0;
-export const DENSITY_PADDING_MEDIUM = 4;
-export const DENSITY_PADDING_LARGE = 8;
-
 export const SORT_ORDER_NONE = 'none';
 export const SORT_ORDER_ASCENDING = 'ascending';
 export const SORT_ORDER_DESCENDING = 'descending';
