@@ -146,6 +146,7 @@ exports[`Storyshots Molecules | FlexTable Big Table 1`] = `
 }
 
 .c13 {
+  line-height: 0;
   min-width: 0;
 }
 
@@ -73316,6 +73317,7 @@ exports[`Storyshots Molecules | FlexTable Big Table Without Sticky Header 1`] = 
 }
 
 .c12 {
+  line-height: 0;
   min-width: 0;
 }
 
@@ -159510,6 +159512,7 @@ exports[`Storyshots Molecules | FlexTable Multiple Big Tables With Sticky Header
 }
 
 .c15 {
+  line-height: 0;
   min-width: 0;
 }
 
@@ -176052,7 +176055,7 @@ exports[`Storyshots Molecules | FlexTable Table With Different Columns 1`] = `
 `;
 
 exports[`Storyshots Molecules | FlexTable Table With Different Headers 1`] = `
-.c15 {
+.c18 {
   height: 12px;
   box-sizing: border-box;
   display: inline-block;
@@ -176103,7 +176106,7 @@ exports[`Storyshots Molecules | FlexTable Table With Different Headers 1`] = `
   flex: 3;
 }
 
-.c18 {
+.c15 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -176111,11 +176114,11 @@ exports[`Storyshots Molecules | FlexTable Table With Different Headers 1`] = `
   display: flex;
 }
 
-.c20 {
+.c17 {
   box-sizing: border-box;
 }
 
-.c27 {
+.c29 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -176133,7 +176136,7 @@ exports[`Storyshots Molecules | FlexTable Table With Different Headers 1`] = `
   flex: 1;
 }
 
-.c28 {
+.c30 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -176151,7 +176154,7 @@ exports[`Storyshots Molecules | FlexTable Table With Different Headers 1`] = `
   flex: 1;
 }
 
-.c16 {
+.c20 {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -176166,7 +176169,7 @@ exports[`Storyshots Molecules | FlexTable Table With Different Headers 1`] = `
   vertical-align: middle;
 }
 
-.c23 {
+.c25 {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -176181,13 +176184,13 @@ exports[`Storyshots Molecules | FlexTable Table With Different Headers 1`] = `
   vertical-align: middle;
 }
 
-.c24 {
+.c26 {
   -webkit-transform: rotate(180deg);
   -ms-transform: rotate(180deg);
   transform: rotate(180deg);
 }
 
-.c26 {
+.c28 {
   -webkit-transform: rotate(0deg);
   -ms-transform: rotate(0deg);
   transform: rotate(0deg);
@@ -176211,7 +176214,7 @@ exports[`Storyshots Molecules | FlexTable Table With Different Headers 1`] = `
   line-height: 1.4285714285714286;
 }
 
-.c22 {
+.c24 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
   margin: 0;
@@ -176245,11 +176248,11 @@ exports[`Storyshots Molecules | FlexTable Table With Different Headers 1`] = `
   border-bottom: 1px solid #282823;
 }
 
-.c17 {
+.c21 {
   margin-left: 4px;
 }
 
-.c25 {
+.c27 {
   margin-left: 4px;
 }
 
@@ -176264,14 +176267,15 @@ exports[`Storyshots Molecules | FlexTable Table With Different Headers 1`] = `
   width: 100%;
 }
 
-.c19 {
+.c22 {
   -webkit-box-pack: inherit;
   -webkit-justify-content: inherit;
   -ms-flex-pack: inherit;
   justify-content: inherit;
 }
 
-.c21 {
+.c23 {
+  line-height: 0;
   min-width: 0;
 }
 
@@ -176308,6 +176312,18 @@ exports[`Storyshots Molecules | FlexTable Table With Different Headers 1`] = `
 
 .c3:not(:last-of-type) {
   margin-bottom: 40px;
+}
+
+.c16 {
+  -webkit-box-pack: inherit;
+  -webkit-justify-content: inherit;
+  -ms-flex-pack: inherit;
+  justify-content: inherit;
+}
+
+.c19 {
+  line-height: 0;
+  min-width: 0;
 }
 
 @media (min-width:760px) {
@@ -176380,66 +176396,82 @@ exports[`Storyshots Molecules | FlexTable Table With Different Headers 1`] = `
           onKeyDown={[Function]}
           role="button"
         >
-          <svg
-            className="c15"
-            focusable="false"
-            role="img"
-            viewBox="0 0 640 480"
-          >
-            <g
-              transform="translate(50.082) scale(.9375)"
-            >
-              <g
-                fillRule="evenodd"
-                strokeWidth="1pt"
-              >
-                <path
-                  d="M-121.103.302h256V205.1h-256zM-121.103 307.178h256v204.8h-256z"
-                  fill="#006aa7"
-                />
-                <path
-                  d="M-121.103 204.984h256v102.4h-256z"
-                  fill="#fecc00"
-                />
-                <path
-                  d="M133.843.01h102.4v511.997h-102.4z"
-                  fill="#fecc00"
-                />
-                <path
-                  d="M232.995 205.013h460.798v102.4H232.995z"
-                  fill="#fecc00"
-                />
-                <path
-                  d="M236.155 307.208h460.797v204.799H236.155zM236.155.302h460.797V205.1H236.155z"
-                  fill="#006aa7"
-                />
-              </g>
-            </g>
-            <title>
-              Sweden
-            </title>
-          </svg>
           <div
-            className="c11"
+            className="c15 c16"
           >
-            <span
-              className="c12"
+            <div
+              className="c17"
             >
-              Customised header
-            </span>
+              <svg
+                className="c18"
+                focusable="false"
+                role="img"
+                viewBox="0 0 640 480"
+              >
+                <g
+                  transform="translate(50.082) scale(.9375)"
+                >
+                  <g
+                    fillRule="evenodd"
+                    strokeWidth="1pt"
+                  >
+                    <path
+                      d="M-121.103.302h256V205.1h-256zM-121.103 307.178h256v204.8h-256z"
+                      fill="#006aa7"
+                    />
+                    <path
+                      d="M-121.103 204.984h256v102.4h-256z"
+                      fill="#fecc00"
+                    />
+                    <path
+                      d="M133.843.01h102.4v511.997h-102.4z"
+                      fill="#fecc00"
+                    />
+                    <path
+                      d="M232.995 205.013h460.798v102.4H232.995z"
+                      fill="#fecc00"
+                    />
+                    <path
+                      d="M236.155 307.208h460.797v204.799H236.155zM236.155.302h460.797V205.1H236.155z"
+                      fill="#006aa7"
+                    />
+                  </g>
+                </g>
+                <title>
+                  Sweden
+                </title>
+              </svg>
+            </div>
+            <div
+              className="c17 c19"
+            >
+              <div
+                className="c11"
+              >
+                <span
+                  className="c12"
+                >
+                  Customised header
+                </span>
+              </div>
+            </div>
+            <div
+              className="c17"
+            >
+              <svg
+                aria-hidden="true"
+                className="c20 c21"
+                focusable="false"
+                preserveAspectRatio="xMidYMid meet"
+                role="presentation"
+                viewBox="0 0 24 24"
+              >
+                <polygon
+                  points="19.969 4 24 8.027 12 20 0 8.027 4.031 4 12 11.952"
+                />
+              </svg>
+            </div>
           </div>
-          <svg
-            aria-hidden="true"
-            className="c16 c17"
-            focusable="false"
-            preserveAspectRatio="xMidYMid meet"
-            role="presentation"
-            viewBox="0 0 24 24"
-          >
-            <polygon
-              points="19.969 4 24 8.027 12 20 0 8.027 4.031 4 12 11.952"
-            />
-          </svg>
         </a>
       </div>
       <div
@@ -176501,10 +176533,10 @@ exports[`Storyshots Molecules | FlexTable Table With Different Headers 1`] = `
           role="button"
         >
           <div
-            className="c18 c19"
+            className="c15 c22"
           >
             <div
-              className="c20 c21"
+              className="c17 c23"
             >
               <div
                 className="c11"
@@ -176517,11 +176549,11 @@ exports[`Storyshots Molecules | FlexTable Table With Different Headers 1`] = `
               </div>
             </div>
             <div
-              className="c20"
+              className="c17"
             >
               <svg
                 aria-hidden="true"
-                className="c16 c17"
+                className="c20 c21"
                 focusable="false"
                 preserveAspectRatio="xMidYMid meet"
                 role="presentation"
@@ -176548,10 +176580,10 @@ exports[`Storyshots Molecules | FlexTable Table With Different Headers 1`] = `
           role="button"
         >
           <div
-            className="c18 c19"
+            className="c15 c22"
           >
             <div
-              className="c20 c21"
+              className="c17 c23"
             >
               <div
                 className="c11"
@@ -176564,11 +176596,11 @@ exports[`Storyshots Molecules | FlexTable Table With Different Headers 1`] = `
               </div>
             </div>
             <div
-              className="c20"
+              className="c17"
             >
               <svg
                 aria-hidden="true"
-                className="c16 c17"
+                className="c20 c21"
                 focusable="false"
                 preserveAspectRatio="xMidYMid meet"
                 role="presentation"
@@ -176595,27 +176627,27 @@ exports[`Storyshots Molecules | FlexTable Table With Different Headers 1`] = `
           role="button"
         >
           <div
-            className="c18 c19"
+            className="c15 c22"
           >
             <div
-              className="c20 c21"
+              className="c17 c23"
             >
               <div
                 className="c11"
               >
                 <span
-                  className="c22"
+                  className="c24"
                 >
                   With initial sort order
                 </span>
               </div>
             </div>
             <div
-              className="c20"
+              className="c17"
             >
               <svg
                 aria-hidden="true"
-                className="c23 c24 c25"
+                className="c25 c26 c27"
                 direction="descending"
                 focusable="false"
                 preserveAspectRatio="xMidYMid meet"
@@ -176681,10 +176713,10 @@ exports[`Storyshots Molecules | FlexTable Table With Different Headers 1`] = `
           role="button"
         >
           <div
-            className="c18 c19"
+            className="c15 c22"
           >
             <div
-              className="c20 c21"
+              className="c17 c23"
             >
               <div
                 className="c11"
@@ -176697,11 +176729,11 @@ exports[`Storyshots Molecules | FlexTable Table With Different Headers 1`] = `
               </div>
             </div>
             <div
-              className="c20"
+              className="c17"
             >
               <svg
                 aria-hidden="true"
-                className="c16 c17"
+                className="c20 c21"
                 focusable="false"
                 preserveAspectRatio="xMidYMid meet"
                 role="presentation"
@@ -176728,10 +176760,10 @@ exports[`Storyshots Molecules | FlexTable Table With Different Headers 1`] = `
           role="button"
         >
           <div
-            className="c18 c19"
+            className="c15 c22"
           >
             <div
-              className="c20 c21"
+              className="c17 c23"
             >
               <div
                 className="c11"
@@ -176744,11 +176776,11 @@ exports[`Storyshots Molecules | FlexTable Table With Different Headers 1`] = `
               </div>
             </div>
             <div
-              className="c20"
+              className="c17"
             >
               <svg
                 aria-hidden="true"
-                className="c16 c17"
+                className="c20 c21"
                 focusable="false"
                 preserveAspectRatio="xMidYMid meet"
                 role="presentation"
@@ -176789,10 +176821,10 @@ exports[`Storyshots Molecules | FlexTable Table With Different Headers 1`] = `
           role="button"
         >
           <div
-            className="c18 c19"
+            className="c15 c22"
           >
             <div
-              className="c20 c21"
+              className="c17 c23"
             >
               <div
                 className="c11"
@@ -176805,11 +176837,11 @@ exports[`Storyshots Molecules | FlexTable Table With Different Headers 1`] = `
               </div>
             </div>
             <div
-              className="c20"
+              className="c17"
             >
               <svg
                 aria-hidden="true"
-                className="c16 c17"
+                className="c20 c21"
                 focusable="false"
                 preserveAspectRatio="xMidYMid meet"
                 role="presentation"
@@ -176858,27 +176890,27 @@ exports[`Storyshots Molecules | FlexTable Table With Different Headers 1`] = `
           role="button"
         >
           <div
-            className="c18 c19"
+            className="c15 c22"
           >
             <div
-              className="c20 c21"
+              className="c17 c23"
             >
               <div
                 className="c11"
               >
                 <span
-                  className="c22"
+                  className="c24"
                 >
                   Controlled1
                 </span>
               </div>
             </div>
             <div
-              className="c20"
+              className="c17"
             >
               <svg
                 aria-hidden="true"
-                className="c23 c26 c25"
+                className="c25 c28 c27"
                 direction="ascending"
                 focusable="false"
                 preserveAspectRatio="xMidYMid meet"
@@ -176908,10 +176940,10 @@ exports[`Storyshots Molecules | FlexTable Table With Different Headers 1`] = `
           role="button"
         >
           <div
-            className="c18 c19"
+            className="c15 c22"
           >
             <div
-              className="c20 c21"
+              className="c17 c23"
             >
               <div
                 className="c11"
@@ -176924,11 +176956,11 @@ exports[`Storyshots Molecules | FlexTable Table With Different Headers 1`] = `
               </div>
             </div>
             <div
-              className="c20"
+              className="c17"
             >
               <svg
                 aria-hidden="true"
-                className="c16 c17"
+                className="c20 c21"
                 focusable="false"
                 preserveAspectRatio="xMidYMid meet"
                 role="presentation"
@@ -176969,10 +177001,10 @@ exports[`Storyshots Molecules | FlexTable Table With Different Headers 1`] = `
           role="button"
         >
           <div
-            className="c18 c19"
+            className="c15 c22"
           >
             <div
-              className="c20 c21"
+              className="c17 c23"
             >
               <div
                 className="c11"
@@ -176985,11 +177017,11 @@ exports[`Storyshots Molecules | FlexTable Table With Different Headers 1`] = `
               </div>
             </div>
             <div
-              className="c20"
+              className="c17"
             >
               <svg
                 aria-hidden="true"
-                className="c16 c17"
+                className="c20 c21"
                 focusable="false"
                 preserveAspectRatio="xMidYMid meet"
                 role="presentation"
@@ -177027,7 +177059,7 @@ exports[`Storyshots Molecules | FlexTable Table With Different Headers 1`] = `
     >
       <div
         aria-sort="none"
-        className="c27 c10"
+        className="c29 c10"
         role="columnheader"
       >
         <a
@@ -177038,10 +177070,10 @@ exports[`Storyshots Molecules | FlexTable Table With Different Headers 1`] = `
           role="button"
         >
           <div
-            className="c18 c19"
+            className="c15 c22"
           >
             <div
-              className="c20 c21"
+              className="c17 c23"
             >
               <div
                 className="c11"
@@ -177054,11 +177086,11 @@ exports[`Storyshots Molecules | FlexTable Table With Different Headers 1`] = `
               </div>
             </div>
             <div
-              className="c20"
+              className="c17"
             >
               <svg
                 aria-hidden="true"
-                className="c16 c17"
+                className="c20 c21"
                 focusable="false"
                 preserveAspectRatio="xMidYMid meet"
                 role="presentation"
@@ -177074,7 +177106,7 @@ exports[`Storyshots Molecules | FlexTable Table With Different Headers 1`] = `
       </div>
       <div
         aria-sort="none"
-        className="c28 c10"
+        className="c30 c10"
         role="columnheader"
       >
         <a
@@ -177085,10 +177117,10 @@ exports[`Storyshots Molecules | FlexTable Table With Different Headers 1`] = `
           role="button"
         >
           <div
-            className="c18 c19"
+            className="c15 c22"
           >
             <div
-              className="c20 c21"
+              className="c17 c23"
             >
               <div
                 className="c11"
@@ -177101,11 +177133,11 @@ exports[`Storyshots Molecules | FlexTable Table With Different Headers 1`] = `
               </div>
             </div>
             <div
-              className="c20"
+              className="c17"
             >
               <svg
                 aria-hidden="true"
-                className="c16 c17"
+                className="c20 c21"
                 focusable="false"
                 preserveAspectRatio="xMidYMid meet"
                 role="presentation"
@@ -177132,10 +177164,10 @@ exports[`Storyshots Molecules | FlexTable Table With Different Headers 1`] = `
           role="button"
         >
           <div
-            className="c18 c19"
+            className="c15 c22"
           >
             <div
-              className="c20 c21"
+              className="c17 c23"
             >
               <div
                 className="c11"
@@ -177148,11 +177180,11 @@ exports[`Storyshots Molecules | FlexTable Table With Different Headers 1`] = `
               </div>
             </div>
             <div
-              className="c20"
+              className="c17"
             >
               <svg
                 aria-hidden="true"
-                className="c16 c17"
+                className="c20 c21"
                 focusable="false"
                 preserveAspectRatio="xMidYMid meet"
                 role="presentation"
@@ -179103,6 +179135,7 @@ exports[`Storyshots Molecules | FlexTable Virtualized Table 1`] = `
 }
 
 .c14 {
+  line-height: 0;
   min-width: 0;
 }
 

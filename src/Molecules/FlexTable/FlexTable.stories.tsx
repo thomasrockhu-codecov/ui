@@ -318,17 +318,34 @@ export const TableWithDifferentColumns = () => {
 
 export const TableWithDifferentHeaders = () => {
   const DefaultTableHeaders = () => {
+    const StyledFlexboxContainer = styled(Flexbox)`
+      justify-content: inherit;
+    `;
+
+    const StyledFlexbox = styled(Flexbox)`
+      line-height: 0;
+      min-width: 0;
+    `;
+
     const CustomisedTableHeader: React.FC = ({ children }) => (
       <FlexTable.Header columnId="column3" sortable>
         {({ sortable, sorted, fontSize, onSortClick, sortOrder }) => (
           <FlexTable.Header.SortButton onClick={onSortClick}>
-            <>
-              <Flag country="SE" inline height={3} />
-              <FlexTable.Header.TextWrapper fontSize={fontSize} sorted={sorted}>
-                {children}
-              </FlexTable.Header.TextWrapper>
-              {sortable && <FlexTable.Header.SortIcon sortOrder={sortOrder} />}
-            </>
+            <StyledFlexboxContainer container>
+              <Flexbox item>
+                <Flag country="SE" inline height={3} />
+              </Flexbox>
+              <StyledFlexbox item>
+                <FlexTable.Header.TextWrapper fontSize={fontSize} sorted={sorted}>
+                  {children}
+                </FlexTable.Header.TextWrapper>
+              </StyledFlexbox>
+              {sortable && (
+                <Flexbox item>
+                  <FlexTable.Header.SortIcon sortOrder={sortOrder} />
+                </Flexbox>
+              )}
+            </StyledFlexboxContainer>
           </FlexTable.Header.SortButton>
         )}
       </FlexTable.Header>
