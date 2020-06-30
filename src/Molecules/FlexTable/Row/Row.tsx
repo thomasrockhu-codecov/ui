@@ -107,6 +107,9 @@ const Row: RowComponent & RowComponents = ({
   expandChildren,
   expandItems,
   children,
+  sm,
+  md,
+  lg,
   ...htmlProps
 }) => {
   const { density, expandable } = useFlexTable();

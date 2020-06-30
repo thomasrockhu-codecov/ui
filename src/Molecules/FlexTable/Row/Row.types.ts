@@ -26,12 +26,19 @@ interface ExcludeExpand extends Expand {
 
 export type ExpandProps = IncludeExpand | ExcludeExpand;
 
+type MediaRelatedProps<T> = {
+  sm?: Partial<T>;
+  md?: Partial<T>;
+  lg?: Partial<T>;
+};
+
 type Props = {
   hideSeparator?: boolean;
   hoverHighlight?: boolean;
   separatorColor?: ColorFn;
   isContent?: boolean;
 } & ExpandProps &
+  MediaRelatedProps<Pick<Expand, 'expandItems'>> &
   HtmlProps;
 
 export type RowComponents = {

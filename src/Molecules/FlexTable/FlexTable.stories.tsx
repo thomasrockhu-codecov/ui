@@ -748,6 +748,46 @@ export const ExpandableTableWithDifferentScenarios = () => {
     );
   };
 
+  const OnlyExpandableOnMobileTable = () => {
+    const columnData = [
+      { label: 'Header 4', value: 'Expandable 4' },
+      { label: 'Header 5', value: 'Expandable 5' },
+      { label: 'Header 6', value: 'Expandable 6' },
+      { label: 'Header 7', value: 'Expandable 7' },
+    ];
+    return (
+      <StyledFlexTable expandable>
+        <FlexTable.HeaderRow>
+          <FlexTable.Header columnId="column1">Header 1</FlexTable.Header>
+          <FlexTable.Header columnId="column2">Header 2</FlexTable.Header>
+          <FlexTable.Header columnId="column3">Header 3</FlexTable.Header>
+          <FlexTable.Header columnId="column4" hidden sm={{ hidden: false }}>
+            Header 4
+          </FlexTable.Header>
+          <FlexTable.Header columnId="column5" hidden sm={{ hidden: false }}>
+            Header 5
+          </FlexTable.Header>
+          <FlexTable.Header columnId="column6" hidden sm={{ hidden: false }}>
+            Header 6
+          </FlexTable.Header>
+          <FlexTable.Header columnId="column7" hidden sm={{ hidden: false }}>
+            Header 7
+          </FlexTable.Header>
+        </FlexTable.HeaderRow>
+
+        <FlexTable.Row expandItems={columnData} sm={{ expandItems: [] }}>
+          <FlexTable.Cell columnId="column1">Expandable</FlexTable.Cell>
+          <FlexTable.Cell columnId="column2">Expandable</FlexTable.Cell>
+          <FlexTable.Cell columnId="column3">Expandable</FlexTable.Cell>
+          <FlexTable.Cell columnId="column4">Expandable 4</FlexTable.Cell>
+          <FlexTable.Cell columnId="column5">Expandable 5</FlexTable.Cell>
+          <FlexTable.Cell columnId="column6">Expandable 6</FlexTable.Cell>
+          <FlexTable.Cell columnId="column7">Expandable 7</FlexTable.Cell>
+        </FlexTable.Row>
+      </StyledFlexTable>
+    );
+  };
+
   const ControlledExpandedTableExample = () => {
     const [expandedRows, setExpandedRows] = useState<string[]>(['row3']);
 
@@ -912,6 +952,8 @@ export const ExpandableTableWithDifferentScenarios = () => {
     <StyledDiv>
       <Typography type="title3">Default Expandable Table</Typography>
       <ExpandedTableExample />
+      <Typography type="title3">Only Expandable On Mobile Table</Typography>
+      <OnlyExpandableOnMobileTable />
       <Typography type="title3">Controlled Expandable Table</Typography>
       <ControlledExpandedTableExample />
       <Typography type="title3">Controlled Expandable Table With Own Cell</Typography>
