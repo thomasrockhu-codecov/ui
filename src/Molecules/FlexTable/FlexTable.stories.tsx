@@ -323,7 +323,7 @@ export const TableWithDifferentHeaders = () => {
     `;
 
     const StyledFlexbox = styled(Flexbox)`
-      line-height: 0;
+      display: inline-flex;
       min-width: 0;
     `;
 

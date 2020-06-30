@@ -146,7 +146,10 @@ exports[`Storyshots Molecules | FlexTable Big Table 1`] = `
 }
 
 .c13 {
-  line-height: 0;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
   min-width: 0;
 }
 
@@ -73317,7 +73320,10 @@ exports[`Storyshots Molecules | FlexTable Big Table Without Sticky Header 1`] = 
 }
 
 .c12 {
-  line-height: 0;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
   min-width: 0;
 }
 
@@ -159512,7 +159518,10 @@ exports[`Storyshots Molecules | FlexTable Multiple Big Tables With Sticky Header
 }
 
 .c15 {
-  line-height: 0;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
   min-width: 0;
 }
 
@@ -176275,7 +176284,10 @@ exports[`Storyshots Molecules | FlexTable Table With Different Headers 1`] = `
 }
 
 .c23 {
-  line-height: 0;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
   min-width: 0;
 }
 
@@ -176322,7 +176334,10 @@ exports[`Storyshots Molecules | FlexTable Table With Different Headers 1`] = `
 }
 
 .c19 {
-  line-height: 0;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
   min-width: 0;
 }
 
@@ -179135,7 +179150,10 @@ exports[`Storyshots Molecules | FlexTable Virtualized Table 1`] = `
 }
 
 .c14 {
-  line-height: 0;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
   min-width: 0;
 }
 

@@ -13,10 +13,10 @@ const StyledFlexboxContainer = styled(Flexbox)`
   justify-content: inherit;
 `;
 
-// line-height: 0; keeps Textwrapper with tooltip from not expanding row height.
+// inline-flex keeps Textwrapper with tooltip from not expanding row height.
 // min-width: 0; makes us able to shrink the Flexbox smaller than child text elements.
 const StyledFlexbox = styled(Flexbox)`
-  line-height: 0;
+  display: inline-flex;
   min-width: 0;
 `;
 
