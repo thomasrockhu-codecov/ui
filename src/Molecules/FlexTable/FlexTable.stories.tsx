@@ -761,21 +761,21 @@ export const ExpandableTableWithDifferentScenarios = () => {
           <FlexTable.Header columnId="column1">Header 1</FlexTable.Header>
           <FlexTable.Header columnId="column2">Header 2</FlexTable.Header>
           <FlexTable.Header columnId="column3">Header 3</FlexTable.Header>
-          <FlexTable.Header columnId="column4" hidden sm={{ hidden: false }}>
+          <FlexTable.Header columnId="column4" hidden md={{ hidden: false }}>
             Header 4
           </FlexTable.Header>
-          <FlexTable.Header columnId="column5" hidden sm={{ hidden: false }}>
+          <FlexTable.Header columnId="column5" hidden md={{ hidden: false }}>
             Header 5
           </FlexTable.Header>
-          <FlexTable.Header columnId="column6" hidden sm={{ hidden: false }}>
+          <FlexTable.Header columnId="column6" hidden md={{ hidden: false }}>
             Header 6
           </FlexTable.Header>
-          <FlexTable.Header columnId="column7" hidden sm={{ hidden: false }}>
+          <FlexTable.Header columnId="column7" hidden md={{ hidden: false }}>
             Header 7
           </FlexTable.Header>
         </FlexTable.HeaderRow>
 
-        <FlexTable.Row expandItems={columnData} sm={{ expandItems: [] }}>
+        <FlexTable.Row expandItems={columnData} md={{ expandItems: [] }}>
           <FlexTable.Cell columnId="column1">Expandable</FlexTable.Cell>
           <FlexTable.Cell columnId="column2">Expandable</FlexTable.Cell>
           <FlexTable.Cell columnId="column3">Expandable</FlexTable.Cell>

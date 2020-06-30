@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import styled from 'styled-components';
 import { ExpandProps, RowComponent, RowComponents } from './Row.types';
-import { Box, Flexbox, Button, Icon } from '../../../index';
+import { Box, Flexbox, Button, Icon, Media } from '../../..';
 import { ColorFn } from '../../../common/Types/sharedTypes';
 import { getDensityPaddings } from '../shared/textUtils';
 import { Density } from '../shared/shared.types';
@@ -64,19 +64,8 @@ export const ExpandButton: React.FC<{ expanded: boolean; onClick: () => void }> 
 );
 
 const ExpandElement: React.FC<
-  ExpandProps & { expandable: boolean; isContent: boolean; setExpand: (expanded: boolean) => void }
-> = ({
-  expandable,
-  isContent,
-  expanded = false,
-  onExpandToggle,
-  setExpand,
-  expandChildren,
-  expandItems,
-}) => {
-  if (!expandable) {
-    return null;
-  }
+  ExpandProps & { isContent: boolean; setExpand: (expanded: boolean) => void }
+> = ({ isContent, expanded = false, onExpandToggle, setExpand, disabled }) => {
   if (!isContent) {
     return (
       <FlexTable.Header
@@ -91,10 +80,28 @@ const ExpandElement: React.FC<
       columnId={COLUMN_ID_EXPAND}
       expanded={expanded}
       onClick={() => (onExpandToggle ? onExpandToggle(!expanded) : setExpand(!expanded))}
-      disabled={!(expandChildren || expandItems)}
+      disabled={disabled}
     />
   );
 };
+
+const ExpandRow = separatorColor => ({ children }) => (
+  <StyledExpandedRow role="row" separatorColor={separatorColor}>
+    {children}
+  </StyledExpandedRow>
+);
+
+const ExpandArea = ({ expandChildren, expandItems, separatorColor }) => (
+  <Box px={5} pb={2} md={{ px: 5, pt: 5, pb: 0 }} role="cell">
+    {/* TODO should we rather have padding specified in ExpandItems? */}
+    {expandItems && <ExpandItems items={expandItems} />}
+    {expandChildren && (
+      <Box pt={2} md={{ px: 5, pt: 0, pb: 5 }}>
+        {expandChildren}
+      </Box>
+    )}
+  </Box>
+);
 
 const Row: RowComponent & RowComponents = ({
   className,
@@ -104,16 +111,37 @@ const Row: RowComponent & RowComponents = ({
   isContent = true,
   separatorColor = theme => theme.color.divider,
   onExpandToggle,
-  expandChildren,
-  expandItems,
+  expandChildren: expandChildrenXs,
+  expandItems: expandItemsXs,
   children,
   sm,
   md,
   lg,
+  xl,
   ...htmlProps
 }) => {
   const { density, expandable } = useFlexTable();
   const [expand, setExpand] = useState(expanded);
+
+  const screenExpanded = [
+    { size: 'xs', expandChildren: expandChildrenXs, expandItems: expandItemsXs },
+    { size: 'sm', ...sm },
+    { size: 'md', ...md },
+    { size: 'lg', ...lg },
+    { size: 'xl', ...xl },
+  ]
+    .filter(({ expandChildren, expandItems }) => expandChildren || expandItems)
+    .map((_, index, arr) => {
+      const sizesUpToNow = arr.slice(0, index + 1);
+      const screenSizeProps = sizesUpToNow.reduce(
+        (acc2, values) => ({
+          ...acc2,
+          ...values,
+        }),
+        {},
+      );
+      return screenSizeProps;
+    });
 
   useEffect(() => {
     setExpand(expanded);
@@ -135,30 +163,53 @@ const Row: RowComponent & RowComponents = ({
         {...htmlProps}
       >
         {children}
-        <ExpandElement
-          isContent={isContent}
-          expanded={expand}
-          expandItems={expandItems}
-          expandChildren={expandChildren}
-          onExpandToggle={onExpandToggle}
-          setExpand={setExpand}
-          expandable={expandable}
-        />
+        {expandable && (
+          <ExpandElement
+            isContent={isContent}
+            expanded={expand}
+            onExpandToggle={onExpandToggle}
+            disabled={!(expandChildrenXs || expandItemsXs)}
+            setExpand={setExpand}
+          />
+        )}
       </StyledRow>
 
-      {expand && (
-        <StyledExpandedRow role="row" separatorColor={separatorColor}>
-          {/* TODO should we rather have padding specified in ExpandItems? */}
-          <Box px={5} pb={2} md={{ px: 5, pt: 5, pb: 0 }} role="cell">
-            {expandItems && <ExpandItems items={expandItems} />}
-            {expandChildren && (
-              <Box pt={2} md={{ px: 5, pt: 0, pb: 5 }}>
-                {expandChildren}
-              </Box>
-            )}
-          </Box>
-        </StyledExpandedRow>
-      )}
+      {expand &&
+        screenExpanded.map(({ size, expandChildren, expandItems }, index, arr) => {
+          const nextSize = arr[index + 1] ? arr[index + 1].size : null;
+          const ExpandedRow = ExpandRow(separatorColor);
+          const mediaQuery = (t, currentSize) => {
+            if (currentSize === 'xs' && nextSize) {
+              return t.media.lessThan(t.breakpoints[nextSize]);
+            }
+            if (nextSize) {
+              return t.media.between(t.breakpoints[currentSize], nextSize);
+            }
+            return t.media.greaterThan(t.breakpoints[currentSize]);
+          };
+
+          if (size === 'xs' && !nextSize) {
+            return (
+              <ExpandedRow>
+                <ExpandArea
+                  expandChildren={expandChildren}
+                  expandItems={expandItems}
+                  separatorColor={separatorColor}
+                />
+              </ExpandedRow>
+            );
+          }
+
+          return (
+            <Media query={t => mediaQuery(t, size)} as={ExpandedRow}>
+              <ExpandArea
+                expandChildren={expandChildren}
+                expandItems={expandItems}
+                separatorColor={separatorColor}
+              />
+            </Media>
+          );
+        })}
     </>
   );
 };
