@@ -12,7 +12,7 @@ const Wrapper = styled(UI.Card)`
 export const Playground = ({ code }) => (
   <LiveProvider scope={UI} code={code} theme={theme as any}>
     <Wrapper>
-      <IntlProvider>
+      <IntlProvider locale="sv-SE">
         <LivePreview />
       </IntlProvider>
     </Wrapper>
