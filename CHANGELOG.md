@@ -1,3 +1,11 @@
+## [2.55.1](https://github.com/nordnet/ui/compare/v2.55.0...v2.55.1) (2020-06-29)
+
+
+### Bug Fixes
+
+* bump package version ([31a375c](https://github.com/nordnet/ui/commit/31a375c))
+* wip flex table export errors ([e7e1754](https://github.com/nordnet/ui/commit/e7e1754))
+
 # [2.55.0](https://github.com/nordnet/ui/compare/v2.54.0...v2.55.0) (2020-06-26)
 
 
