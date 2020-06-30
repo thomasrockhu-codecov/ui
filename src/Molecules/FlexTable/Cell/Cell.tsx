@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { ReactNode } from 'react';
 import styled from 'styled-components';
 import * as R from 'ramda';
 import { isElement, isFunction } from '../../../common/utils';
@@ -32,4 +32,4 @@ const Cell: CellComponent = ({ children, className, columnId }) => {
 
 Cell.TextWrapper = React.memo(TextWrapper);
 // React.memo/NamedExoticComponent prevents TextWrapper from being included in types, recast to retain type.
-export default (React.memo(Cell) as any) as CellComponent;
+export default (React.memo(Cell) as ReactNode) as CellComponent;
