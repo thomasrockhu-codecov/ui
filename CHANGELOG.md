@@ -1,3 +1,12 @@
+## [2.55.2](https://github.com/nordnet/ui/compare/v2.55.1...v2.55.2) (2020-06-30)
+
+
+### Bug Fixes
+
+* 🐛 cell ts error ([6ec2683](https://github.com/nordnet/ui/commit/6ec2683))
+* 🐛 fixed ts error for cell, header and column provider ([bda8c3b](https://github.com/nordnet/ui/commit/bda8c3b))
+* 🐛 recast to ReactNode and added clarifying comment ([3398f9f](https://github.com/nordnet/ui/commit/3398f9f))
+
 ## [2.55.1](https://github.com/nordnet/ui/compare/v2.55.0...v2.55.1) (2020-06-29)
 
 
