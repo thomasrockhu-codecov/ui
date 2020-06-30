@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { ReactNode } from 'react';
 import styled from 'styled-components';
 import * as R from 'ramda';
 import { isElement, isFunction } from '../../../common/utils';
@@ -12,9 +12,7 @@ const StyledFlexbox = styled(Flexbox)`
   overflow: hidden;
 `;
 
-// TODO: Fix typings that react memo causes when exporting textwrapper on cell
-// @ts-ignore
-const Cell: CellComponent = React.memo(({ children, className, columnId }) => {
+const Cell: CellComponent = ({ children, className, columnId }) => {
   const [columnLayout] = useColumnLayout(columnId);
   const { fontSize } = useFlexTable();
 
@@ -30,7 +28,8 @@ const Cell: CellComponent = React.memo(({ children, className, columnId }) => {
         : !isElement(children) && <TextWrapper fontSize={fontSize}>{children}</TextWrapper>}
     </StyledFlexbox>
   );
-});
+};
 
 Cell.TextWrapper = React.memo(TextWrapper);
-export default Cell;
+// React.memo/NamedExoticComponent prevents TextWrapper from being included in types, recast to retain type.
+export default (React.memo(Cell) as ReactNode) as CellComponent;
