@@ -21,6 +21,7 @@ export const integrationWithReactRouter = () => (
             title="Link to /route1"
             to="/route1"
             onTitleClick={action('Clicked title1')}
+            active
           />
           <TabsNav.Tab
             title={<div>Link to /route2</div>}
