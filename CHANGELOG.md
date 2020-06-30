@@ -1,3 +1,12 @@
+## [2.55.3](https://github.com/nordnet/ui/compare/v2.55.2...v2.55.3) (2020-06-30)
+
+
+### Bug Fixes
+
+* 🐛 change line-height to display: inline-flex ([2d8c1c6](https://github.com/nordnet/ui/commit/2d8c1c6))
+* 🐛 correct truncate and icon on same row as text ([5c39159](https://github.com/nordnet/ui/commit/5c39159))
+* 🐛 extra padding from overflow: hidden ([a603411](https://github.com/nordnet/ui/commit/a603411))
+
 ## [2.55.2](https://github.com/nordnet/ui/compare/v2.55.1...v2.55.2) (2020-06-30)
 
 
