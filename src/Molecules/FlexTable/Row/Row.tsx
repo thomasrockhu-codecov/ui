@@ -103,6 +103,28 @@ const ExpandArea = ({ expandChildren, expandItems, separatorColor }) => (
   </Box>
 );
 
+const getScreenMedia = ({ xs, sm, md, lg, xl }) => {
+  return [
+    { size: 'xs', ...xs },
+    { size: 'sm', ...sm },
+    { size: 'md', ...md },
+    { size: 'lg', ...lg },
+    { size: 'xl', ...xl },
+  ]
+    .filter(media => Object.keys(media).length > 1)
+    .map((_, index, arr) => {
+      const sizesUpToNow = arr.slice(0, index + 1);
+      const screenSizeProps = sizesUpToNow.reduce(
+        (acc2, values) => ({
+          ...acc2,
+          ...values,
+        }),
+        {},
+      );
+      return screenSizeProps;
+    });
+};
+
 const Row: RowComponent & RowComponents = ({
   className,
   expanded = false,
@@ -123,25 +145,16 @@ const Row: RowComponent & RowComponents = ({
   const { density, expandable } = useFlexTable();
   const [expand, setExpand] = useState(expanded);
 
-  const screenExpanded = [
-    { size: 'xs', expandChildren: expandChildrenXs, expandItems: expandItemsXs },
-    { size: 'sm', ...sm },
-    { size: 'md', ...md },
-    { size: 'lg', ...lg },
-    { size: 'xl', ...xl },
-  ]
-    .filter(({ expandChildren, expandItems }) => expandChildren || expandItems)
-    .map((_, index, arr) => {
-      const sizesUpToNow = arr.slice(0, index + 1);
-      const screenSizeProps = sizesUpToNow.reduce(
-        (acc2, values) => ({
-          ...acc2,
-          ...values,
-        }),
-        {},
-      );
-      return screenSizeProps;
-    });
+  const screenExpanded = getScreenMedia({
+    xs: {
+      expandChildren: expandChildrenXs,
+      expandItems: expandItemsXs,
+    },
+    sm,
+    md,
+    lg,
+    xl,
+  });
 
   useEffect(() => {
     setExpand(expanded);
