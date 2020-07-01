@@ -175094,6 +175094,14 @@ exports[`Storyshots Molecules | FlexTable Multiple Big Tables With Sticky Header
 `;
 
 exports[`Storyshots Molecules | FlexTable Table With Different Columns 1`] = `
+.c20 {
+  height: 20px;
+  box-sizing: border-box;
+  display: block;
+  width: 26.666666666666668px;
+  overflow: hidden;
+}
+
 .c6 {
   box-sizing: border-box;
   display: -webkit-box;
@@ -175184,7 +175192,7 @@ exports[`Storyshots Molecules | FlexTable Table With Different Columns 1`] = `
   flex: 0 100px;
 }
 
-.c20 {
+.c21 {
   box-sizing: border-box;
   display: none;
   -webkit-flex-wrap: nowrap;
@@ -175301,7 +175309,7 @@ exports[`Storyshots Molecules | FlexTable Table With Different Columns 1`] = `
 }
 
 @media (min-width:976px) {
-  .c20 {
+  .c21 {
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -175766,7 +175774,54 @@ exports[`Storyshots Molecules | FlexTable Table With Different Columns 1`] = `
           <span
             className="c17"
           >
-            Cell 2-3
+            <svg
+              className="c20"
+              focusable="false"
+              role="img"
+              viewBox="0 0 640 480"
+            >
+              <g
+                transform="translate(50.082) scale(.9375)"
+              >
+                <g
+                  fillRule="evenodd"
+                  strokeWidth="1pt"
+                >
+                  <path
+                    d="M-121.103.302h256V205.1h-256zM-121.103 307.178h256v204.8h-256z"
+                    fill="#006aa7"
+                  />
+                  <path
+                    d="M-121.103 204.984h256v102.4h-256z"
+                    fill="#fecc00"
+                  />
+                  <path
+                    d="M133.843.01h102.4v511.997h-102.4z"
+                    fill="#fecc00"
+                  />
+                  <path
+                    d="M232.995 205.013h460.798v102.4H232.995z"
+                    fill="#fecc00"
+                  />
+                  <path
+                    d="M236.155 307.208h460.797v204.799H236.155zM236.155.302h460.797V205.1H236.155z"
+                    fill="#006aa7"
+                  />
+                </g>
+              </g>
+              <title>
+                Sweden
+              </title>
+            </svg>
+            <div
+              className="c11"
+            >
+              <span
+                className="c17"
+              >
+                Long cell with flag
+              </span>
+            </div>
           </span>
         </div>
       </div>
@@ -175882,7 +175937,7 @@ exports[`Storyshots Molecules | FlexTable Table With Different Columns 1`] = `
         </div>
       </div>
       <div
-        className="c20 c10"
+        className="c21 c10"
         hidden={true}
         role="columnheader"
       >
@@ -175930,7 +175985,7 @@ exports[`Storyshots Molecules | FlexTable Table With Different Columns 1`] = `
         </div>
       </div>
       <div
-        className="c20 c16"
+        className="c21 c16"
         hidden={true}
         role="cell"
       >
@@ -175978,7 +176033,7 @@ exports[`Storyshots Molecules | FlexTable Table With Different Columns 1`] = `
         </div>
       </div>
       <div
-        className="c20 c16"
+        className="c21 c16"
         hidden={true}
         role="cell"
       >
@@ -176026,7 +176081,7 @@ exports[`Storyshots Molecules | FlexTable Table With Different Columns 1`] = `
         </div>
       </div>
       <div
-        className="c20 c16"
+        className="c21 c16"
         hidden={true}
         role="cell"
       >
