@@ -204,12 +204,12 @@ export const TableWithDifferentRows = () => (
 );
 
 export const TableWithDifferentColumns = () => {
-  const FlagCell = ({ children, columnId }) => (
+  const FlagCell: React.FC<{ columnId: string }> = React.memo(({ children, columnId }) => (
     <FlexTable.Cell columnId={columnId}>
       <Flag country="SE" />
       <FlexTable.Cell.TextWrapper>{children}</FlexTable.Cell.TextWrapper>
     </FlexTable.Cell>
-  );
+  ));
 
   const ColumnWidthTableExample = () => (
     <StyledFlexTable>
