@@ -8,16 +8,10 @@ import { SortIcon } from './SortIcon';
 import { SortButton } from './SortButton';
 import { useFlexTable } from '../../shared/FlexTableProvider';
 import { Flexbox } from '../../../..';
+import { CellInlineContainer } from '../../shared';
 
 const StyledFlexboxContainer = styled(Flexbox)`
   justify-content: inherit;
-`;
-
-// inline-flex keeps Textwrapper with tooltip from not expanding row height.
-// min-width: 0; makes us able to shrink the Flexbox smaller than child text elements.
-const StyledFlexbox = styled(Flexbox)`
-  display: inline-flex;
-  min-width: 0;
 `;
 
 export const HeaderContent: React.FC<Props & UIProps> = ({
@@ -38,14 +32,14 @@ export const HeaderContent: React.FC<Props & UIProps> = ({
   return (
     <SortButton onClick={onSortClick}>
       <StyledFlexboxContainer container>
-        <StyledFlexbox item>
+        <CellInlineContainer item>
           <TextWrapper
             fontSize={fontSize}
             sorted={!R.isNil(sortOrder) && sortOrder !== SORT_ORDER_NONE}
           >
             {children}
           </TextWrapper>
-        </StyledFlexbox>
+        </CellInlineContainer>
         <Flexbox item>
           <SortIcon sortOrder={sortOrder} />
         </Flexbox>

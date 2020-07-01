@@ -4,7 +4,7 @@ import { HeaderRow, FooterRow, Row } from './Row';
 import { Header } from './Header';
 import { Footer } from './Footer';
 import { Cell } from './Cell';
-import { constants, ColumnProvider } from './shared';
+import { constants, ColumnProvider, CellInlineContainer } from './shared';
 import { Props, FlexTableComponents } from './FlexTable.types';
 import { FlexTableProvider, useFlexTable } from './shared/FlexTableProvider';
 import { ExpandCell } from './Cell/ExpandCell';
@@ -74,6 +74,7 @@ FlexTable.Header = Header;
 FlexTable.Footer = Footer;
 FlexTable.ExpandCell = ExpandCell;
 FlexTable.Cell = Cell;
+FlexTable.CellInlineContainer = CellInlineContainer;
 FlexTable.CONSTANTS = constants;
 
 export default FlexTable;
