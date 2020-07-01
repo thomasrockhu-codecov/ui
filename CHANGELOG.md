@@ -1,3 +1,11 @@
+## [2.56.1](https://github.com/nordnet/ui/compare/v2.56.0...v2.56.1) (2020-07-01)
+
+
+### Bug Fixes
+
+* 🐛 added column id type to flag cell ([46d3953](https://github.com/nordnet/ui/commit/46d3953))
+* 🐛 inner cell to retain export of text wrapper ([a32d8f9](https://github.com/nordnet/ui/commit/a32d8f9))
+
 # [2.56.0](https://github.com/nordnet/ui/compare/v2.55.3...v2.56.0) (2020-07-01)
 
 
