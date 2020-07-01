@@ -204,6 +204,13 @@ export const TableWithDifferentRows = () => (
 );
 
 export const TableWithDifferentColumns = () => {
+  const FlagCell: React.FC<{ columnId: string }> = React.memo(({ children, columnId }) => (
+    <FlexTable.Cell columnId={columnId}>
+      <Flag country="SE" />
+      <FlexTable.Cell.TextWrapper>{children}</FlexTable.Cell.TextWrapper>
+    </FlexTable.Cell>
+  ));
+
   const ColumnWidthTableExample = () => (
     <StyledFlexTable>
       <FlexTable.HeaderRow>
@@ -230,7 +237,7 @@ export const TableWithDifferentColumns = () => {
       <FlexTable.Row>
         <FlexTable.Cell columnId="column1">Cell 2-1</FlexTable.Cell>
         <FlexTable.Cell columnId="column2">Cell 2-2</FlexTable.Cell>
-        <FlexTable.Cell columnId="column3">Cell 2-3</FlexTable.Cell>
+        <FlagCell columnId="column3">Long cell with flag</FlagCell>
         <FlexTable.Cell columnId="column4">Cell 2-4</FlexTable.Cell>
       </FlexTable.Row>
       <FlexTable.Row>
