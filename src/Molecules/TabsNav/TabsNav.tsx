@@ -1,15 +1,20 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 import { Flexbox, Typography, TabTitle } from '../..';
 import { assert } from '../../common/utils';
 import { useKeyboardNavigation } from '../Tabs/useKeyboardNavigation';
 import { ItemProps, TitleComponent, Component } from './TabsNav.types';
+import { LinkProps, useLink } from '../../common/Links';
 
 export const Item: React.FC<ItemProps> = ({ children }) => {
   return <div>{children}</div>;
 };
 (Item as any).displayName = 'TabsNav.Tab';
+
+const Link: React.FC<LinkProps> = props => {
+  const LinkComponent = useLink();
+  return <LinkComponent {...props} />;
+};
 
 const StyledLink = styled(Link)`
   display: flex;

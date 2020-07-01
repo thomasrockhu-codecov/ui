@@ -131,7 +131,7 @@ export const Button: ButtonComponent = React.forwardRef<
         ref={ref as React.Ref<HTMLAnchorElement>}
         {...(external
           ? // TODO: unify these parts with link
-            { as: 'a' as 'a', href: to, target: '_blank', rel: 'noopener noreferrer nofollow' }
+            { as: 'a', href: to, target: '_blank', rel: 'noopener noreferrer nofollow' }
           : {
               to,
               as,
