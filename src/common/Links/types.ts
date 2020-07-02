@@ -1,13 +1,10 @@
-import { ReactNode, FC, RefObject, HTMLProps } from 'react';
+import { ReactNode, FC, Ref, HTMLProps } from 'react';
 
 export type LinkProps = Partial<HTMLProps<HTMLAnchorElement>> & {
   to: any;
   external?: boolean;
-  innerRef?:
-    | ((instance: HTMLAnchorElement | null) => void)
-    | RefObject<HTMLAnchorElement>
-    | null
-    | undefined;
+  cms?: boolean;
+  innerRef?: Ref<any>;
 };
 
 export type LinkProviderProps = {

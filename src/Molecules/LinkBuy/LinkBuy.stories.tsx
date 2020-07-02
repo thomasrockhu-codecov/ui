@@ -1,6 +1,6 @@
 import React from 'react';
-import { BrowserRouter } from 'react-router-dom';
 import { LinkBuy } from '../..';
+import { Provider } from '../Link/ReactRouterLinkHelper';
 
 export default {
   title: 'Molecules | LinkBuy',
@@ -11,9 +11,9 @@ export default {
 
 export const linkBuy = () => {
   return (
-    <BrowserRouter>
+    <Provider>
       <LinkBuy to="somewhere">Buy</LinkBuy>
-    </BrowserRouter>
+    </Provider>
   );
 };
 
@@ -23,9 +23,9 @@ linkBuy.story = {
 
 export const linkBuyDisabled = () => {
   return (
-    <BrowserRouter>
+    <Provider>
       <LinkBuy disabled>Buy</LinkBuy>
-    </BrowserRouter>
+    </Provider>
   );
 };
 
@@ -35,11 +35,11 @@ linkBuyDisabled.story = {
 
 export const linkBuyWithRelAsNofollow = () => {
   return (
-    <BrowserRouter>
+    <Provider>
       <LinkBuy to="somewhere" rel="nofollow">
         Buy
       </LinkBuy>
-    </BrowserRouter>
+    </Provider>
   );
 };
 
