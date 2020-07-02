@@ -1,3 +1,10 @@
+# [2.57.0](https://github.com/nordnet/ui/compare/v2.56.1...v2.57.0) (2020-07-02)
+
+
+### Features
+
+* update Calendar icon ([4237f89](https://github.com/nordnet/ui/commit/4237f89))
+
 ## [2.56.1](https://github.com/nordnet/ui/compare/v2.56.0...v2.56.1) (2020-07-01)
 
 
