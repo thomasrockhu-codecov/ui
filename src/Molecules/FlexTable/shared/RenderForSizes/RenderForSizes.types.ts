@@ -1,12 +1,26 @@
-type ScreenSize = 'xs' | 'sm' | 'md' | 'lg' | 'xl';
+import { Theme, MediaQuery } from '../../../../theme/theme.types';
 
-type ScreenSizeProps = { [key: string]: any };
+export type ScreenSize = 'xs' | keyof Theme['breakpoints'];
 
-type MediaProps<T extends ScreenSizeProps> = { [size in ScreenSize]: T };
+export interface ScreenSizeProps {
+  [key: string]: any;
+}
 
-export type GetScreenMedia = <T extends ScreenSizeProps>(
-  mediaProps: MediaProps<T>,
-) => Array<T & { size: ScreenSize }>;
+export type MediaProps = { [size in ScreenSize]?: ScreenSizeProps };
 
-// type MediaProps<T> = T & { size: Size };
-// export type GetScreenMedia<T> = () => { [size in Size]: MediaProps<T> };
+export type MediaPropsAndSize = ScreenSizeProps & { size: ScreenSize };
+
+export type GetMediaQuery = (
+  theme: Theme,
+  currentSize: ScreenSize,
+  nextSize: ScreenSize | null,
+) => MediaQuery;
+
+export type GetScreenMedia = (mediaProps: MediaProps) => Array<MediaPropsAndSize>;
+
+export type RenderForSizesComponent = React.FC<
+  MediaProps & {
+    Component: (props: MediaPropsAndSize) => React.ReactNode;
+    Container: (props: MediaPropsAndSize) => React.ReactNode;
+  }
+>;

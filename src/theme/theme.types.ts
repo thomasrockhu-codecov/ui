@@ -1,4 +1,4 @@
-type MediaQuery = string;
+export type MediaQuery = string;
 /** Number of pixels */
 export type ThemeConfig = {
   a11yColors?: boolean;

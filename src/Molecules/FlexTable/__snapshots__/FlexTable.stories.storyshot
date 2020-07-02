@@ -147519,6 +147519,18 @@ exports[`Storyshots Molecules | FlexTable Expandable Table With Different Scenar
   padding-top: 0;
 }
 
+.c42 {
+  box-sizing: border-box;
+  display: none;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  display: none;
+}
+
 .c21 {
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -147808,15 +147820,6 @@ exports[`Storyshots Molecules | FlexTable Expandable Table With Different Scenar
   padding-bottom: 4px;
 }
 
-.c42 {
-  border-bottom: 1px solid #EBEBE8;
-  padding-right: 4px;
-  padding-left: 2px;
-  border-left: 2px solid transparent;
-  padding-top: 4px;
-  padding-bottom: 4px;
-}
-
 .c43 {
   border-bottom: 1px solid #EBEBE8;
   padding-right: 4px;
@@ -147826,11 +147829,20 @@ exports[`Storyshots Molecules | FlexTable Expandable Table With Different Scenar
   padding-bottom: 4px;
 }
 
-.c43:hover {
+.c44 {
+  border-bottom: 1px solid #EBEBE8;
+  padding-right: 4px;
+  padding-left: 2px;
+  border-left: 2px solid transparent;
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+
+.c44:hover {
   background: #F5F5F5;
 }
 
-.c44 {
+.c45 {
   padding-right: 4px;
   padding-left: 2px;
   border-left: 2px solid #0046FF;
@@ -147906,6 +147918,21 @@ exports[`Storyshots Molecules | FlexTable Expandable Table With Different Scenar
     padding-top: 20px;
     padding-right: 20px;
     padding-bottom: 0px;
+  }
+}
+
+@media (min-width:976px) {
+  .c42 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: nowrap;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
   }
 }
 
@@ -151632,6 +151659,311 @@ exports[`Storyshots Molecules | FlexTable Expandable Table With Different Scenar
             className="c16"
           >
             Expandable with children
+          </span>
+        </div>
+      </div>
+      <div
+        className="c13 c15"
+        role="cell"
+      >
+        <div
+          className="c17"
+        >
+          <button
+            aria-expanded={false}
+            className="NormalizedButton__Button-ey7f5x-0 c25 c19"
+            disabled={false}
+            onClick={[Function]}
+            type="button"
+          >
+            <span
+              className="c20"
+            >
+              <svg
+                aria-hidden="true"
+                className="c26"
+                focusable="false"
+                preserveAspectRatio="xMidYMid meet"
+                role="presentation"
+                viewBox="0 0 24 24"
+              >
+                <polygon
+                  points="19.969 4 24 8.027 12 20 0 8.027 4.031 4 12 11.952"
+                />
+              </svg>
+            </span>
+          </button>
+        </div>
+        <div
+          className="c22"
+        >
+          <button
+            aria-expanded={false}
+            className="NormalizedButton__Button-ey7f5x-0 c25 c19"
+            disabled={false}
+            onClick={[Function]}
+            type="button"
+          >
+            <span
+              className="c20"
+            >
+              <svg
+                aria-hidden="true"
+                className="c27 c24"
+                direction="down"
+                focusable="false"
+                preserveAspectRatio="xMidYMid meet"
+                role="presentation"
+                viewBox="0 0 16 16"
+              >
+                <polygon
+                  points="14.620 3.580, 16.000 5.020, 8.000 12.730, 0.000 5.030, 1.400 3.580, 8.000 9.96"
+                />
+              </svg>
+            </span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <span
+    className="c1"
+  >
+    Only Expandable On Mobile Table
+  </span>
+  <div
+    className="c2 c3"
+    role="table"
+  >
+    <caption
+      className="c4"
+    >
+      <span
+        className="c1 c5"
+      />
+    </caption>
+    <div
+      className="c6 c7 c8"
+      role="row"
+    >
+      <div
+        className="c9 c10"
+        role="columnheader"
+      >
+        <div
+          className="c11"
+        >
+          <span
+            className="c12"
+          >
+            Header 1
+          </span>
+        </div>
+      </div>
+      <div
+        className="c9 c10"
+        role="columnheader"
+      >
+        <div
+          className="c11"
+        >
+          <span
+            className="c12"
+          >
+            Header 2
+          </span>
+        </div>
+      </div>
+      <div
+        className="c9 c10"
+        role="columnheader"
+      >
+        <div
+          className="c11"
+        >
+          <span
+            className="c12"
+          >
+            Header 3
+          </span>
+        </div>
+      </div>
+      <div
+        className="c42 c10"
+        hidden={true}
+        role="columnheader"
+      >
+        <div
+          className="c11"
+        >
+          <span
+            className="c12"
+          >
+            Header 4
+          </span>
+        </div>
+      </div>
+      <div
+        className="c42 c10"
+        hidden={true}
+        role="columnheader"
+      >
+        <div
+          className="c11"
+        >
+          <span
+            className="c12"
+          >
+            Header 5
+          </span>
+        </div>
+      </div>
+      <div
+        className="c42 c10"
+        hidden={true}
+        role="columnheader"
+      >
+        <div
+          className="c11"
+        >
+          <span
+            className="c12"
+          >
+            Header 6
+          </span>
+        </div>
+      </div>
+      <div
+        className="c42 c10"
+        hidden={true}
+        role="columnheader"
+      >
+        <div
+          className="c11"
+        >
+          <span
+            className="c12"
+          >
+            Header 7
+          </span>
+        </div>
+      </div>
+      <div
+        className="c13 c10"
+        role="columnheader"
+      >
+        <div
+          className="c11"
+        >
+          <span
+            className="c12"
+          />
+        </div>
+      </div>
+    </div>
+    <div
+      className="c6 c14"
+      role="row"
+    >
+      <div
+        className="c9 c15"
+        role="cell"
+      >
+        <div
+          className="c11"
+        >
+          <span
+            className="c16"
+          >
+            Expandable
+          </span>
+        </div>
+      </div>
+      <div
+        className="c9 c15"
+        role="cell"
+      >
+        <div
+          className="c11"
+        >
+          <span
+            className="c16"
+          >
+            Expandable
+          </span>
+        </div>
+      </div>
+      <div
+        className="c9 c15"
+        role="cell"
+      >
+        <div
+          className="c11"
+        >
+          <span
+            className="c16"
+          >
+            Expandable
+          </span>
+        </div>
+      </div>
+      <div
+        className="c42 c15"
+        hidden={true}
+        role="cell"
+      >
+        <div
+          className="c11"
+        >
+          <span
+            className="c16"
+          >
+            Expandable 4
+          </span>
+        </div>
+      </div>
+      <div
+        className="c42 c15"
+        hidden={true}
+        role="cell"
+      >
+        <div
+          className="c11"
+        >
+          <span
+            className="c16"
+          >
+            Expandable 5
+          </span>
+        </div>
+      </div>
+      <div
+        className="c42 c15"
+        hidden={true}
+        role="cell"
+      >
+        <div
+          className="c11"
+        >
+          <span
+            className="c16"
+          >
+            Expandable 6
+          </span>
+        </div>
+      </div>
+      <div
+        className="c42 c15"
+        hidden={true}
+        role="cell"
+      >
+        <div
+          className="c11"
+        >
+          <span
+            className="c16"
+          >
+            Expandable 7
           </span>
         </div>
       </div>
@@ -155484,7 +155816,7 @@ exports[`Storyshots Molecules | FlexTable Expandable Table With Different Scenar
       />
     </caption>
     <div
-      className="c6 c42 c8"
+      className="c6 c43 c8"
       role="row"
     >
       <div
@@ -155543,7 +155875,7 @@ exports[`Storyshots Molecules | FlexTable Expandable Table With Different Scenar
       </div>
     </div>
     <div
-      className="c6 c43"
+      className="c6 c44"
       role="row"
     >
       <div
@@ -155650,7 +155982,7 @@ exports[`Storyshots Molecules | FlexTable Expandable Table With Different Scenar
       </div>
     </div>
     <div
-      className="c6 c43"
+      className="c6 c44"
       role="row"
     >
       <div
@@ -155759,7 +156091,7 @@ exports[`Storyshots Molecules | FlexTable Expandable Table With Different Scenar
       </div>
     </div>
     <div
-      className="c6 c44"
+      className="c6 c45"
       role="row"
     >
       <div
@@ -159015,7 +159347,7 @@ exports[`Storyshots Molecules | FlexTable Expandable Table With Different Scenar
       </div>
     </div>
     <div
-      className="c6 c43"
+      className="c6 c44"
       role="row"
     >
       <div
@@ -159124,7 +159456,7 @@ exports[`Storyshots Molecules | FlexTable Expandable Table With Different Scenar
       </div>
     </div>
     <div
-      className="c6 c43"
+      className="c6 c44"
       role="row"
     >
       <div

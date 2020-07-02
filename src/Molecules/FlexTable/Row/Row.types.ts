@@ -5,6 +5,7 @@ import {
   ExpandItemsComponent,
 } from './ExpandItems/ExpandItems.types';
 import { ColorFn } from '../../../common/Types/sharedTypes';
+import { Theme } from '../../../theme/theme.types';
 
 type HtmlProps = {} & React.HTMLAttributes<HTMLDivElement>;
 
@@ -25,12 +26,9 @@ interface ExcludeExpand extends Expand {
 }
 
 export type ExpandProps = IncludeExpand | ExcludeExpand;
+export type ExpandAreaProps = Expand;
 
-type MediaRelatedProps<T> = {
-  sm?: Partial<T>;
-  md?: Partial<T>;
-  lg?: Partial<T>;
-};
+type MediaRelatedProps<T> = { [screenSize in keyof Theme['breakpoints']]?: Partial<T> };
 
 type Props = {
   hideSeparator?: boolean;
@@ -38,7 +36,7 @@ type Props = {
   separatorColor?: ColorFn;
   isContent?: boolean;
 } & ExpandProps &
-  MediaRelatedProps<Pick<Expand, 'expandItems'>> &
+  MediaRelatedProps<Pick<Expand, 'expandItems' | 'expandChildren'>> &
   HtmlProps;
 
 export type RowComponents = {
