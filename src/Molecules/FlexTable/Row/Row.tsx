@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import styled from 'styled-components';
 import { ExpandProps, RowComponent, RowComponents } from './Row.types';
-import { Box, Flexbox, Button, Icon, Media } from '../../..';
+import { Box, Flexbox, Button, Icon } from '../../..';
 import { ColorFn } from '../../../common/Types/sharedTypes';
 import { getDensityPaddings } from '../shared/textUtils';
 import { Density } from '../shared/shared.types';
@@ -10,60 +10,6 @@ import { ExpandItems, ExpandItem } from './ExpandItems';
 import { ExpandCell } from '../Cell/ExpandCell';
 import { COLUMN_ID_EXPAND, ICON_COLUMN_DEFAULT_FLEX_PROPS } from '../shared/constants';
 import FlexTable from '../FlexTable';
-
-const getScreenMedia = ({ xs, sm, md, lg, xl }) => {
-  return [
-    { size: 'xs', ...xs },
-    { size: 'sm', ...sm },
-    { size: 'md', ...md },
-    { size: 'lg', ...lg },
-    { size: 'xl', ...xl },
-  ]
-    .filter(media => Object.keys(media).length > 1)
-    .map((_, index, arr) => {
-      const sizesUpToNow = arr.slice(0, index + 1);
-      const screenSizeProps = sizesUpToNow.reduce(
-        (acc2, values) => ({
-          ...acc2,
-          ...values,
-        }),
-        {},
-      );
-      return screenSizeProps;
-    });
-};
-
-const RenderForSizes = ({ xs, sm, md, lg, xl, Component, Container }) => {
-  const propsPerMedia = getScreenMedia({ xs, sm, md, lg, xl });
-
-  const MediaComponent = propsPerMedia.map(({ size, ...props }, index, arr) => {
-    const nextSize = arr[index + 1] ? arr[index + 1].size : null;
-
-    const mediaQuery = (t, currentSize) => {
-      if (currentSize === 'xs' && nextSize) {
-        return t.media.lessThan(t.breakpoints[nextSize]);
-      }
-      if (nextSize) {
-        return t.media.between(t.breakpoints[currentSize], nextSize);
-      }
-      return t.media.greaterThan(t.breakpoints[currentSize]);
-    };
-    if (size === 'xs' && !nextSize) {
-      return (
-        <Container>
-          <Component {...props} />
-        </Container>
-      );
-    }
-    return (
-      <Media query={t => mediaQuery(t, size)} as={Container}>
-        <Component {...props} />
-      </Media>
-    );
-  });
-
-  return <>{MediaComponent}</>;
-};
 
 /* the cells are padded by row gutter 1 unit (4px) */
 const StyledRow = styled(Flexbox).withConfig({
@@ -138,12 +84,6 @@ const ExpandElement: React.FC<
     />
   );
 };
-
-const ExpandRow = separatorColor => ({ children }) => (
-  <StyledExpandedRow role="row" separatorColor={separatorColor}>
-    {children}
-  </StyledExpandedRow>
-);
 
 const ExpandArea = ({ expandChildren, expandItems, separatorColor }) => (
   <Box px={5} pb={2} md={{ px: 5, pt: 5, pb: 0 }} role="cell">
@@ -229,14 +169,18 @@ const Row: RowComponent & RowComponents = ({
           md={md}
           lg={lg}
           xl={xl}
-          Component={
+          Component={({ expandChildren, expandItems }) => (
             <ExpandArea
-              expandChildren={expandChildrenXs}
-              expandItems={expandItemsXs}
+              expandItems={expandItems}
+              expandChildren={expandChildren}
               separatorColor={separatorColor}
             />
-          }
-          Container={ExpandRow(separatorColor)}
+          )}
+          Container={({ children: containerChildren }) => (
+            <StyledExpandedRow role="row" separatorColor={separatorColor}>
+              {containerChildren}
+            </StyledExpandedRow>
+          )}
         />
       )}
     </>
