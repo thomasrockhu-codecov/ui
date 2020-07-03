@@ -1,3 +1,58 @@
+## [2.58.1](https://github.com/nordnet/ui/compare/v2.58.0...v2.58.1) (2020-07-03)
+
+
+### Bug Fixes
+
+* 🐛 table alignment on header and cell ([124addf](https://github.com/nordnet/ui/commit/124addf))
+
+# [2.58.0](https://github.com/nordnet/ui/compare/v2.57.0...v2.58.0) (2020-07-03)
+
+
+### Features
+
+* 🎸 add cell inline container ([ccef566](https://github.com/nordnet/ui/commit/ccef566))
+* 🎸 add spacing between cells ([b14a4b1](https://github.com/nordnet/ui/commit/b14a4b1))
+
+# [2.57.0](https://github.com/nordnet/ui/compare/v2.56.1...v2.57.0) (2020-07-02)
+
+
+### Features
+
+* update Calendar icon ([4237f89](https://github.com/nordnet/ui/commit/4237f89))
+
+## [2.56.1](https://github.com/nordnet/ui/compare/v2.56.0...v2.56.1) (2020-07-01)
+
+
+### Bug Fixes
+
+* 🐛 added column id type to flag cell ([46d3953](https://github.com/nordnet/ui/commit/46d3953))
+* 🐛 inner cell to retain export of text wrapper ([a32d8f9](https://github.com/nordnet/ui/commit/a32d8f9))
+
+# [2.56.0](https://github.com/nordnet/ui/compare/v2.55.3...v2.56.0) (2020-07-01)
+
+
+### Features
+
+* **Timeline:** adds Timeline component ([f36dd45](https://github.com/nordnet/ui/commit/f36dd45))
+
+## [2.55.3](https://github.com/nordnet/ui/compare/v2.55.2...v2.55.3) (2020-06-30)
+
+
+### Bug Fixes
+
+* 🐛 change line-height to display: inline-flex ([2d8c1c6](https://github.com/nordnet/ui/commit/2d8c1c6))
+* 🐛 correct truncate and icon on same row as text ([5c39159](https://github.com/nordnet/ui/commit/5c39159))
+* 🐛 extra padding from overflow: hidden ([a603411](https://github.com/nordnet/ui/commit/a603411))
+
+## [2.55.2](https://github.com/nordnet/ui/compare/v2.55.1...v2.55.2) (2020-06-30)
+
+
+### Bug Fixes
+
+* 🐛 cell ts error ([6ec2683](https://github.com/nordnet/ui/commit/6ec2683))
+* 🐛 fixed ts error for cell, header and column provider ([bda8c3b](https://github.com/nordnet/ui/commit/bda8c3b))
+* 🐛 recast to ReactNode and added clarifying comment ([3398f9f](https://github.com/nordnet/ui/commit/3398f9f))
+
 ## [2.55.1](https://github.com/nordnet/ui/compare/v2.55.0...v2.55.1) (2020-06-29)
 
 

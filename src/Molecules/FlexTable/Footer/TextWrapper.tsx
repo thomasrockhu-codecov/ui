@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import { Typography } from '../../..';
 import { TextWrapperComponent } from './Footer.types';
 import { getFontSizeTypographyType } from '../shared/textUtils';
+import { StyledTruncateTooltip } from '../shared';
 
 const StyledTypography = styled(Typography)`
   display: inline-block;
@@ -16,11 +17,13 @@ export const TextWrapper: TextWrapperComponent = ({
   children,
   weight = 'bold',
 }) => (
-  <StyledTypography
-    type={getFontSizeTypographyType(fontSize)}
-    color={t => t.color.text}
-    weight={weight}
-  >
-    {children}
-  </StyledTypography>
+  <StyledTruncateTooltip label={children}>
+    <StyledTypography
+      type={getFontSizeTypographyType(fontSize)}
+      color={t => t.color.text}
+      weight={weight}
+    >
+      {children}
+    </StyledTypography>
+  </StyledTruncateTooltip>
 );
