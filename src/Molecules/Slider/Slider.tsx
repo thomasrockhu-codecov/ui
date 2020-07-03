@@ -14,10 +14,38 @@ const pressedThumbStyle = css<InternalSliderTypes>`
       return !p.$disabled && `${thumbColor ? Color(thumbColor).darken(0.1) : ''}`;
     }};
     height: ${p =>
-      p.$variant === VARIANT_TYPES.SMALL ? `${THUMB_SMALL - 4}px` : `${THUMB_BIG - 6}px`};
+      p.$variant === VARIANT_TYPES.SMALL
+        ? `${THUMB_SMALL - p.theme.spacing.unit(1)}`
+        : `${THUMB_BIG - p.theme.spacing.unit(1.25)}`}px;
     width: ${p =>
-      p.$variant === VARIANT_TYPES.SMALL ? `${THUMB_SMALL - 4}px` : `${THUMB_BIG - 6}px`};
+      p.$variant === VARIANT_TYPES.SMALL
+        ? `${THUMB_SMALL - p.theme.spacing.unit(1)}`
+        : `${THUMB_BIG - p.theme.spacing.unit(1.25)}`}px;
   }
+`;
+
+const focusedThumbStyle = css<InternalSliderTypes>`
+  &:focus {
+    border: ${p => {
+      const thumbColor = p.$sliderColor ? p.$sliderColor(p.theme) : '';
+      return (
+        !p.$disabled &&
+        `${thumbColor ? `${p.theme.spacing.unit(1)}px solid ${Color(thumbColor).darken(0.1)}` : ''}`
+      );
+    }};
+    background: ${p => {
+      const thumbColor = p.$sliderColor ? p.$sliderColor(p.theme) : '';
+      return !p.$disabled && `${thumbColor ? Color(thumbColor).darken(0.1) : ''}`;
+    }};
+    border-radius: 50%;
+  }
+`;
+
+const height = css<InternalSliderTypes>`
+  height: ${p =>
+    p.$variant === VARIANT_TYPES.SMALL
+      ? `${p.theme.spacing.unit(1)}`
+      : `${p.theme.spacing.unit(3)}`}px;
 `;
 
 const StyledSliderWrapper = styled('div')<InternalSliderTypes>`
@@ -28,23 +56,17 @@ const StyledSliderWrapper = styled('div')<InternalSliderTypes>`
     ${p => p.theme.color.sliderBackgroundColor} 50% 100%
   );
   background: ${p => p.$disabled && p.theme.color.sliderDisabled};
-  height: ${p =>
-    p.$variant === VARIANT_TYPES.SMALL
-      ? `${p.theme.spacing.unit(1)} px`
-      : `${p.theme.spacing.unit(3)} px`};
+  ${height};
   max-width: 100%;
   width: 100%;
 `;
 
 const StyledSlider = styled('div')<InternalSliderTypes>`
   max-width: 100%;
-  height: ${p =>
-    p.$variant === VARIANT_TYPES.SMALL
-      ? `${p.theme.spacing.unit(1)}`
-      : `${p.theme.spacing.unit(3)}`}px;
+  ${height};
   position: relative;
   width: calc(
-    100% - ${p => (p.$variant === VARIANT_TYPES.SMALL ? `${THUMB_SMALL}px` : `${THUMB_BIG}px`)}
+    100% - ${p => (p.$variant === VARIANT_TYPES.SMALL ? `${THUMB_SMALL}` : `${THUMB_BIG}`)}px
   );
   margin: 0 auto;
 `;
@@ -61,36 +83,27 @@ const StyledThumb = styled('div')<InternalSliderTypes>`
   align-items: center;
   justify-content: center;
   position: relative;
-  width: ${p => (p.$variant === VARIANT_TYPES.SMALL ? `${THUMB_SMALL}px` : `${THUMB_BIG}px`)};
-  height: ${p => (p.$variant === VARIANT_TYPES.SMALL ? `${THUMB_SMALL}px` : `${THUMB_BIG}px`)};
+  width: ${p => (p.$variant === VARIANT_TYPES.SMALL ? `${THUMB_SMALL}` : `${THUMB_BIG}`)}px;
+  height: ${p => (p.$variant === VARIANT_TYPES.SMALL ? `${THUMB_SMALL}` : `${THUMB_BIG}`)}px;
   top: 50%;
   border-radius: 50%;
   transform: translateY(-50%);
   background: ${p => p.theme.color.sliderThumbBackground};
   border: ${p =>
-    p.$sliderColor && !p.$disabled
-      ? `4px solid ${p.$sliderColor(p.theme)}`
-      : `4px solid ${p.theme.color.sliderColor}`};
-  border: ${p => (p.$disabled ? `4px solid ${p.theme.color.sliderDisabled}` : '')};
+    `${p.theme.spacing.unit(1)}px solid ${
+      p.$sliderColor && !p.$disabled ? p.$sliderColor(p.theme) : p.theme.color.sliderColor
+    }`};
+  border: ${p =>
+    p.$disabled ? `${p.theme.spacing.unit(1)}px solid ${p.theme.color.sliderDisabled}` : ''};
   cursor: grab;
-  &:focus {
-    border: ${p => {
-      const thumbColor = p.$sliderColor ? p.$sliderColor(p.theme) : '';
-      return !p.$disabled && `${thumbColor ? `4px solid ${Color(thumbColor).darken(0.1)}` : ''}`;
-    }};
-    background: ${p => {
-      const thumbColor = p.$sliderColor ? p.$sliderColor(p.theme) : '';
-      return !p.$disabled && `${thumbColor ? Color(thumbColor).darken(0.1) : ''}`;
-    }};
-    border-radius: 50%;
-  }
+  ${focusedThumbStyle}
   ${pressedThumbStyle}
 `;
 
 const getLeft: getLeftFn = (percentage, variant) => {
   return `calc(${percentage}% - ${
-    variant === 'big' ? `${THUMB_BIG / 2}px` : `${THUMB_SMALL / 2}px`
-  })`;
+    variant === 'big' ? `${THUMB_BIG / 2}` : `${THUMB_SMALL / 2}`
+  }px)`;
 };
 const Slider: FC<Props> = ({
   onChange,
