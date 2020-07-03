@@ -4,11 +4,8 @@ import { BaseProps } from '../IconBase.types';
 
 export const Calendar = (props: BaseProps) => {
   return (
-    <IconBase {...props} viewBox="0 0 20 18">
-      <path
-        d="M8 3v2h8V3h2v2h4v16H2V5h4V3h2zm12 7H4v9h16v-9zM7 15v2H5v-2h2zm3 0v2H8v-2h2zm3 0v2h-2v-2h2zm3 0v2h-2v-2h2zm3 0v2h-2v-2h2zM7 12v2H5v-2h2zm3 0v2H8v-2h2zm3 0v2h-2v-2h2zm3 0v2h-2v-2h2zm3 0v2h-2v-2h2zm1-5H4v1h16V7z"
-        transform="translate(-2 -3)"
-      />
+    <IconBase {...props} viewBox="0 0 32 32">
+      <path d="M31 5v25H1V5h30zm-2 6H3v17h26V11zM7 22v2H5v-2h2zm4 0v2H9v-2h2zm4 0v2h-2v-2h2zm4 0v2h-2v-2h2zm4 0v2h-2v-2h2zm4 0v2h-2v-2h2zM7 18v2H5v-2h2zm4 0v2H9v-2h2zm4 0v2h-2v-2h2zm4 0v2h-2v-2h2zm4 0v2h-2v-2h2zm4 0v2h-2v-2h2zM7 14v2H5v-2h2zm4 0v2H9v-2h2zm4 0v2h-2v-2h2zm4 0v2h-2v-2h2zm4 0v2h-2v-2h2zm4 0v2h-2v-2h2zm2-7H3v2h26V7zM7 2v3H5V2h2zm20 0v3h-2V2h2z" />
     </IconBase>
   );
 };
