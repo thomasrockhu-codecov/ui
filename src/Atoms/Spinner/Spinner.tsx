@@ -1,6 +1,9 @@
 import React, { useEffect, useState } from 'react';
+import R from 'ramda';
 import styled, { withTheme } from 'styled-components';
-import { Props, PropsWithTheme } from './Spinner.types';
+import { isArray, isString } from '../../common/utils';
+import { Props, PropsWithTheme, ColorFn } from './Spinner.types';
+import { Theme } from '../../theme/theme.types';
 
 const Animation = styled.span`
   @keyframes spinner {
@@ -19,23 +22,36 @@ const StyledSvg = styled.svg`
   display: block;
 `;
 
+const evalColor = (theme: Theme, color?: ColorFn): string => {
+  if (typeof color === 'function') {
+    const usedColor = color(theme);
+
+    if (isArray(usedColor)) {
+      return R.head(usedColor) || theme.color.cta;
+    }
+    return isString(usedColor) ? usedColor : theme.color.cta;
+  }
+
+  return color || theme.color.cta;
+};
+
 const RawSpinner: React.FC<PropsWithTheme> = ({ theme, size = 4, color, id }) => {
   const calculatedSize = theme.spacing.unit(size);
-  const usedColor = typeof color === 'function' ? color(theme) : color || theme.color.cta;
   const id1 = `spinner-${id}-1`;
   const id2 = `spinner-${id}-2`;
+  const newColor: string = evalColor(theme, color);
 
   return (
     <Animation>
       <StyledSvg width={calculatedSize} height={calculatedSize} viewBox="0 0 24 24">
         <defs>
           <linearGradient id={id1} x1="50%" x2="50%" y1="0%" y2="100%">
-            <stop offset="0%" stopColor={usedColor} stopOpacity="0" />
-            <stop offset="100%" stopColor={usedColor} stopOpacity=".5" />
+            <stop offset="0%" stopColor={newColor} stopOpacity="0" />
+            <stop offset="100%" stopColor={newColor} stopOpacity=".5" />
           </linearGradient>
           <linearGradient id={id2} x1="50%" x2="50%" y1="0%" y2="100%">
-            <stop offset="0%" stopColor={usedColor} stopOpacity=".5" />
-            <stop offset="100%" stopColor={usedColor} />
+            <stop offset="0%" stopColor={newColor} stopOpacity=".5" />
+            <stop offset="100%" stopColor={newColor} />
           </linearGradient>
         </defs>
         <g fill="none" fillRule="evenodd">

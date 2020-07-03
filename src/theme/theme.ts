@@ -100,6 +100,24 @@ const getSizesValues = pipe(
 const createColors = (type: ThemeColorsVersion): ThemeColors<typeof type> => {
   const a11yColors = type === 'a11y';
 
+  const grayScale = [
+    rawColor.gray6,
+    rawColor.gray4,
+    rawColor.gray3,
+    rawColor.gray1,
+    rawColor.gray0,
+  ];
+
+  const paletteA11y = [
+    rawColor.brandBlue,
+    rawColor.complementaryBlue1,
+    rawColor.complementaryBlue2,
+    rawColor.brandPink,
+    rawColor.complementaryPink2,
+    ...grayScale,
+  ];
+
+  // prettier-ignore
   return {
     backgroundInput: rawColor.white,
     background: rawColor.gray7,
@@ -116,9 +134,6 @@ const createColors = (type: ThemeColorsVersion): ThemeColors<typeof type> => {
     borderActive: a11yColors ? rawColor.a11yCta : rawColor.cta,
     card: rawColor.white,
     cta: a11yColors ? rawColor.a11yCta : rawColor.cta,
-    /** @deprecated  */ creditsPiePrimary: rawColor.complementaryPink1,
-    /** @deprecated  */ creditsPieSecondary: rawColor.complementaryPink2,
-    /** @deprecated  */ disabled: rawColor.gray3,
     disabledText: rawColor.gray3,
     disabledBackground: rawColor.gray6,
     divider: rawColor.gray6,
@@ -130,37 +145,17 @@ const createColors = (type: ThemeColorsVersion): ThemeColors<typeof type> => {
     menuAccent3: rawColor.index,
     menuAccent4: rawColor.brandPink,
     menuAccent5: rawColor.brandBlue,
-    mapColor1: rawColor.complementaryBlue2,
-    mapColor2: rawColor.complementaryBlue1,
-    mapColor3: rawColor.brandBlue,
-    mapColor4: rawColor.gray1,
-    mapColor5: rawColor.gray3,
-    modalBackdrop: Color(rawColor.gray2)
-      .alpha(0.63)
-      .rgb()
-      .string(),
+    modalBackdrop: Color(rawColor.gray2).alpha(0.63).rgb().string(),
     module: rawColor.white,
     negative: a11yColors ? rawColor.a11yNegative : rawColor.negative,
     negativeBlackBackground: a11yColors ? rawColor.brandPink : rawColor.negative,
     positive: a11yColors ? rawColor.a11yPositive : rawColor.positive,
     sell: a11yColors ? rawColor.a11yNegative : rawColor.negative,
     sellActive: a11yColors ? rawColor.a11yNegativePressed : rawColor.negativePressed,
-    shadowCard: Color(rawColor.black)
-      .alpha(0.03)
-      .rgb()
-      .string(),
-    shadowModal: Color(rawColor.black)
-      .alpha(0.16)
-      .rgb()
-      .string(),
-    shadowInput: Color(rawColor.black)
-      .alpha(0.03)
-      .rgb()
-      .string(),
-    shadowSwitch: Color(rawColor.black)
-      .alpha(0.05)
-      .rgb()
-      .string(),
+    shadowCard: Color(rawColor.black).alpha(0.03).rgb().string(),
+    shadowModal: Color(rawColor.black).alpha(0.16).rgb().string(),
+    shadowInput: Color(rawColor.black).alpha(0.03).rgb().string(),
+    shadowSwitch: Color(rawColor.black).alpha(0.05).rgb().string(),
     shareville: rawColor.complementaryGreen1,
     skeleton: rawColor.gray6,
     spinnerBlack: rawColor.black,
@@ -188,41 +183,6 @@ const createColors = (type: ThemeColorsVersion): ThemeColors<typeof type> => {
     orderDepthBackground: rawColor.gray6,
     orderDepthDarkBackground: rawColor.gray5,
     loanRatesGraphColor2: rawColor.complementaryBlue2,
-    barChartColor1: rawColor.brandBlue,
-    barChartColor2: rawColor.complementaryBlue2,
-    barChartColor3: rawColor.complementaryBlue1,
-    barChartColor4: rawColor.complementaryGreen1,
-    barChartColor5: rawColor.complementaryPink1,
-    barChartColor6: rawColor.index,
-    barChartColor7: rawColor.complementaryGreen1,
-    columnChartColor1: rawColor.brandGreen,
-    columnChartColor2: rawColor.complementaryGreen2,
-    columnChartColor3: rawColor.complementaryGreen1,
-    columnChartColor4: rawColor.complementaryTurquoise1,
-    columnChartColor5: rawColor.complementaryTurquoise2,
-    pieChartColor1: rawColor.complementaryPink2,
-    pieChartColor2: rawColor.brandPink,
-    pieChartColor3: rawColor.gray4,
-    pill1: rawColor.complementaryPink1,
-    pill2: rawColor.complementaryTurquoise1,
-    pill3: rawColor.complementaryGreen1,
-    pill4: rawColor.complementaryBlue1,
-    pill5: rawColor.brandPink,
-    pill6: rawColor.brandTurquoise,
-    pill7: rawColor.brandBlue,
-    pill8: rawColor.complementaryGreen2,
-    pill9: rawColor.complementaryBlue2,
-    pill10: rawColor.complementaryPink2,
-    indicatorPillColor1: rawColor.complementaryPink1,
-    indicatorPillColor2: rawColor.complementaryTurquoise1,
-    indicatorPillColor3: rawColor.complementaryGreen1,
-    indicatorPillColor4: rawColor.complementaryBlue1,
-    indicatorPillColor5: rawColor.brandPink,
-    indicatorPillColor6: rawColor.brandTurquoise,
-    indicatorPillColor7: rawColor.brandBlue,
-    indicatorPillColor8: rawColor.complementaryGreen2,
-    indicatorPillColor9: rawColor.complementaryBlue2,
-    indicatorPillColor10: rawColor.complementaryPink2,
     sliderLeftColor: rawColor.brandGreen,
     sliderRightColor: rawColor.gray6,
     sliderThumbColor: rawColor.white,
@@ -244,18 +204,9 @@ const createColors = (type: ThemeColorsVersion): ThemeColors<typeof type> => {
     transferProgressBar3: rawColor.gray5,
     transferProgressBarText1: rawColor.gray1,
     transferProgressBarText2: rawColor.gray2,
-    transferStatusBannerBackground1: Color(rawColor.complementaryBlue1)
-      .alpha(0.1)
-      .rgb()
-      .string(),
-    transferStatusBannerBackground2: Color(rawColor.complementaryPink1)
-      .alpha(0.1)
-      .rgb()
-      .string(),
-    transferStatusBannerBackground3: Color(rawColor.index)
-      .alpha(0.1)
-      .rgb()
-      .string(),
+    transferStatusBannerBackground1: Color(rawColor.complementaryBlue1).alpha(0.1).rgb().string(),
+    transferStatusBannerBackground2: Color(rawColor.complementaryPink1).alpha(0.1).rgb().string(),
+    transferStatusBannerBackground3: Color(rawColor.index).alpha(0.1).rgb().string(),
     transferStatusBannerText1: rawColor.complementaryBlue1,
     transferStatusBannerText2: rawColor.complementaryPink1,
     transferStatusBannerText3: rawColor.gray0,
@@ -264,6 +215,62 @@ const createColors = (type: ThemeColorsVersion): ThemeColors<typeof type> => {
     progressBarDone: rawColor.positive,
     progressBarActive: rawColor.cta,
     progressBarNext: rawColor.gray4,
+    paletteMap: [rawColor.complementaryBlue2, rawColor.complementaryBlue1, rawColor.brandBlue,
+    rawColor.gray1, rawColor.gray3],
+    palettePink: a11yColors ? paletteA11y :
+      [rawColor.brandPink, rawColor.complementaryPink1, rawColor.complementaryPink2, rawColor.brandTurquoise,
+      rawColor.complementaryTurquoise1, ...grayScale
+      ],
+    paletteGreen: a11yColors ? paletteA11y :
+      [rawColor.brandGreen, rawColor.complementaryGreen1, rawColor.complementaryGreen2,
+      rawColor.brandTurquoise, rawColor.complementaryTurquoise1, ...grayScale
+      ],
+    paletteBlue: a11yColors ? paletteA11y :
+      [rawColor.brandBlue, rawColor.complementaryBlue1, rawColor.complementaryBlue2, rawColor.brandTurquoise,
+      rawColor.complementaryTurquoise1, ...grayScale
+      ],
+    paletteTurquoise: a11yColors ? paletteA11y :
+      [rawColor.brandTurquoise, rawColor.complementaryTurquoise1, rawColor.complementaryTurquoise2, rawColor.brandBlue,
+      rawColor.complementaryBlue1, ...grayScale
+      ],
+    paletteLineGraph: [rawColor.cta, rawColor.index, rawColor.complementaryPink1,
+    rawColor.complementaryBlue1, rawColor.complementaryTurquoise1, rawColor.complementaryGreen1,
+    rawColor.brandPink, rawColor.complementaryGreen2, rawColor.complementaryBlue2, rawColor.complementaryPink2,
+    rawColor.complementaryTurquoise2, rawColor.gray1,
+    ],
+    /** @deprecated  */ creditsPiePrimary: rawColor.complementaryPink1,
+    /** @deprecated  */ creditsPieSecondary: rawColor.complementaryPink2,
+    /** @deprecated  */ disabled: rawColor.gray3,
+    /** @deprecated  */ mapColor1: rawColor.complementaryBlue2,
+    /** @deprecated  */ mapColor2: rawColor.complementaryBlue1,
+    /** @deprecated  */ mapColor3: rawColor.brandBlue,
+    /** @deprecated  */ mapColor4: rawColor.gray1,
+    /** @deprecated  */ mapColor5: rawColor.gray3,
+    /** @deprecated  */ barChartColor1: rawColor.brandBlue,
+    /** @deprecated  */ barChartColor2: rawColor.complementaryBlue2,
+    /** @deprecated  */ barChartColor3: rawColor.complementaryBlue1,
+    /** @deprecated  */ barChartColor4: rawColor.complementaryGreen1,
+    /** @deprecated  */ barChartColor5: rawColor.complementaryPink1,
+    /** @deprecated  */ barChartColor6: rawColor.index,
+    /** @deprecated  */ barChartColor7: rawColor.complementaryGreen1,
+    /** @deprecated  */ columnChartColor1: rawColor.brandGreen,
+    /** @deprecated  */ columnChartColor2: rawColor.complementaryGreen2,
+    /** @deprecated  */ columnChartColor3: rawColor.complementaryGreen1,
+    /** @deprecated  */ columnChartColor4: rawColor.complementaryTurquoise1,
+    /** @deprecated  */ columnChartColor5: rawColor.complementaryTurquoise2,
+    /** @deprecated  */ pieChartColor1: rawColor.complementaryPink2,
+    /** @deprecated  */ pieChartColor2: rawColor.brandPink,
+    /** @deprecated  */ pieChartColor3: rawColor.gray4,
+    /** @deprecated  */ indicatorPillColor1: rawColor.complementaryPink1,
+    /** @deprecated  */ indicatorPillColor2: rawColor.complementaryTurquoise1,
+    /** @deprecated  */ indicatorPillColor3: rawColor.complementaryGreen1,
+    /** @deprecated  */ indicatorPillColor4: rawColor.complementaryBlue1,
+    /** @deprecated  */ indicatorPillColor5: rawColor.brandPink,
+    /** @deprecated  */ indicatorPillColor6: rawColor.brandTurquoise,
+    /** @deprecated  */ indicatorPillColor7: rawColor.brandBlue,
+    /** @deprecated  */ indicatorPillColor8: rawColor.complementaryGreen2,
+    /** @deprecated  */ indicatorPillColor9: rawColor.complementaryBlue2,
+    /** @deprecated  */ indicatorPillColor10: rawColor.complementaryPink2,
   };
 };
 

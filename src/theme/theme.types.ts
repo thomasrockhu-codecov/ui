@@ -128,9 +128,6 @@ export type ThemeColors<Version extends ThemeColorsVersion> = {
   divider: RawColor['gray6'];
   /** gray0 */
   backgroundDark: RawColor['gray0'];
-  /** @deprecated
-   * gray3 */
-  disabled: RawColor['gray3'];
   /** gray3 */
   disabledText: RawColor['gray3'];
   /** gray6 */
@@ -211,76 +208,6 @@ export type ThemeColors<Version extends ThemeColorsVersion> = {
   menuAccent4: RawColor['brandPink'];
   /** brandBlue */
   menuAccent5: RawColor['brandBlue'];
-  /** complementaryBlue1 */
-  mapColor1: RawColor['complementaryBlue2'];
-  /** complementaryBlue2 */
-  mapColor2: RawColor['complementaryBlue1'];
-  /** brandBlue */
-  mapColor3: RawColor['brandBlue'];
-  /** gray1 */
-  mapColor4: RawColor['gray1'];
-  /** gray3 */
-  mapColor5: RawColor['gray3'];
-  /** brandBlue */
-  barChartColor1: RawColor['brandBlue'];
-  /** complementaryBlue2 */
-  barChartColor2: RawColor['complementaryBlue2'];
-  /** complementaryBlue1 */
-  barChartColor3: RawColor['complementaryBlue1'];
-  /** complementaryGreen1 */
-  barChartColor4: RawColor['complementaryGreen1'];
-  /** complementaryPink1 */
-  barChartColor5: RawColor['complementaryPink1'];
-  /** index */
-  barChartColor6: RawColor['index'];
-  /** complementaryGreen1 */
-  barChartColor7: RawColor['complementaryGreen1'];
-  /** brandGreen */
-  columnChartColor1: RawColor['brandGreen'];
-  /** complementaryGreen2 */
-  columnChartColor2: RawColor['complementaryGreen2'];
-  /** complementaryGreen1 */
-  columnChartColor3: RawColor['complementaryGreen1'];
-  /** complementaryTurquoise1 */
-  columnChartColor4: RawColor['complementaryTurquoise1'];
-  /** complementaryTurquoise2 */
-  columnChartColor5: RawColor['complementaryTurquoise2'];
-  /** complementaryPink2 */
-  pieChartColor1: RawColor['complementaryPink2'];
-  /** brandPink */
-  pieChartColor2: RawColor['brandPink'];
-  /** gray4 */
-  pieChartColor3: RawColor['gray4'];
-  pill1: RawColor['complementaryPink1'];
-  /** complementaryPink1 */
-  indicatorPillColor1: RawColor['complementaryPink1'];
-  pill2: RawColor['complementaryTurquoise1'];
-  /** complementaryTurquoise1 */
-  indicatorPillColor2: RawColor['complementaryTurquoise1'];
-  pill3: RawColor['complementaryGreen1'];
-  /** complementaryGreen1 */
-  indicatorPillColor3: RawColor['complementaryGreen1'];
-  pill4: RawColor['complementaryBlue1'];
-  /** complementaryBlue1 */
-  indicatorPillColor4: RawColor['complementaryBlue1'];
-  pill5: RawColor['brandPink'];
-  /** brandPink */
-  indicatorPillColor5: RawColor['brandPink'];
-  pill6: RawColor['brandTurquoise'];
-  /** brandTurquoise */
-  indicatorPillColor6: RawColor['brandTurquoise'];
-  pill7: RawColor['brandBlue'];
-  /** brandBlue */
-  indicatorPillColor7: RawColor['brandBlue'];
-  pill8: RawColor['complementaryGreen2'];
-  /** complementaryGreen2 */
-  indicatorPillColor8: RawColor['complementaryGreen2'];
-  pill9: RawColor['complementaryBlue2'];
-  /** complementaryBlue2 */
-  indicatorPillColor9: RawColor['complementaryBlue2'];
-  pill10: RawColor['complementaryPink2'];
-  /** complementaryPink2 */
-  indicatorPillColor10: RawColor['complementaryPink2'];
   /** brandGreen */
   sliderLeftColor: RawColor['brandGreen'];
   /** gray6 */
@@ -345,6 +272,105 @@ export type ThemeColors<Version extends ThemeColorsVersion> = {
   progressBarActive: RawColor['cta'];
   /** gray4 */
   progressBarNext: RawColor['gray4'];
+  paletteMap: string[];
+  palettePink: string[];
+  paletteGreen: string[];
+  paletteBlue: string[];
+  paletteTurquoise: string[];
+  paletteLineGraph: string[];
+  /** @deprecated
+   * gray3 */
+  disabled: RawColor['gray3'];
+  /** @deprecated
+   * complementaryBlue2 */
+  mapColor1: RawColor['complementaryBlue2'];
+  /** @deprecated
+   * complementaryBlue1 */
+  mapColor2: RawColor['complementaryBlue1'];
+  /** @deprecated
+   * brandBlue */
+  mapColor3: RawColor['brandBlue'];
+  /** @deprecated
+   * gray1 */
+  mapColor4: RawColor['gray1'];
+  /** @deprecated
+   * gray3 */
+  mapColor5: RawColor['gray3'];
+  /** @deprecated
+   * brandBlue */
+  barChartColor1: RawColor['brandBlue'];
+  /** @deprecated
+   * complementaryBlue2 */
+  barChartColor2: RawColor['complementaryBlue2'];
+  /** @deprecated
+   * complementaryBlue1 */
+  barChartColor3: RawColor['complementaryBlue1'];
+  /** @deprecated
+   * complementaryGreen1 */
+  barChartColor4: RawColor['complementaryGreen1'];
+  /** @deprecated
+   * complementaryPink1 */
+  barChartColor5: RawColor['complementaryPink1'];
+  /** @deprecated
+   * index */
+  barChartColor6: RawColor['index'];
+  /** @deprecated
+   * complementaryGreen1 */
+  barChartColor7: RawColor['complementaryGreen1'];
+  /** @deprecated
+   * brandGreen */
+  columnChartColor1: RawColor['brandGreen'];
+  /** @deprecated
+   * complementaryGreen2 */
+  columnChartColor2: RawColor['complementaryGreen2'];
+  /** @deprecated
+   * complementaryGreen1 */
+  columnChartColor3: RawColor['complementaryGreen1'];
+  /** @deprecated
+   * complementaryTurquoise1 */
+  columnChartColor4: RawColor['complementaryTurquoise1'];
+  /** @deprecated
+   * complementaryTurquoise2 */
+  columnChartColor5: RawColor['complementaryTurquoise2'];
+  /** @deprecated
+   * complementaryPink2 */
+  pieChartColor1: RawColor['complementaryPink2'];
+  /** @deprecated
+   * brandPink */
+  pieChartColor2: RawColor['brandPink'];
+  /** @deprecated
+   * gray4 */
+  pieChartColor3: RawColor['gray4'];
+  /** @deprecated
+   * complementaryPink1 */
+  indicatorPillColor1: RawColor['complementaryPink1'];
+  /** @deprecated
+   * complementaryTurquoise1 */
+  indicatorPillColor2: RawColor['complementaryTurquoise1'];
+  /** @deprecated
+   * complementaryGreen1 */
+  indicatorPillColor3: RawColor['complementaryGreen1'];
+  /** @deprecated
+   * complementaryBlue1 */
+  indicatorPillColor4: RawColor['complementaryBlue1'];
+  /** @deprecated
+   * brandPink */
+  indicatorPillColor5: RawColor['brandPink'];
+  /** @deprecated
+   * brandTurquoise */
+  indicatorPillColor6: RawColor['brandTurquoise'];
+  /** @deprecated
+   * brandBlue */
+  indicatorPillColor7: RawColor['brandBlue'];
+  /** @deprecated
+   * complementaryGreen2 */
+  indicatorPillColor8: RawColor['complementaryGreen2'];
+  /** @deprecated
+   * complementaryBlue2 */
+  indicatorPillColor9: RawColor['complementaryBlue2'];
+  /** @deprecated
+   * complementaryPink2 */
+  indicatorPillColor10: RawColor['complementaryPink2'];
 };
 
 export type ColorSets = {
