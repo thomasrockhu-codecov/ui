@@ -45,6 +45,16 @@ const StyledRow = styled(Flexbox).withConfig({
 
   padding-top: ${p => getDensityPaddings(p.density)}px;
   padding-bottom: ${p => getDensityPaddings(p.density)}px;
+
+  & > * {
+    &:first-child {
+      padding-left: 0;
+    }
+
+    &:last-child {
+      padding-right: 0;
+    }
+  }
 `;
 
 const StyledExpandedRow = styled('div').withConfig({
@@ -130,6 +140,7 @@ const Row: RowComponent & RowComponents = ({
         density={density}
         expandable={expandable}
         {...htmlProps}
+        gutter={1}
       >
         {children}
         <ExpandElement
