@@ -669,12 +669,37 @@ export const TableWithDifferentSizeProps = () => {
     </StyledDiv>
   );
 
+  const TablesWithDifferentSizesInMobile = () => (
+    <StyledDiv>
+      <Typography type="primary">Small density and font on desktop, large on mobile</Typography>
+      <StyledFlexTable density="l" fontSize="m" md={{ density: 's', fontSize: 's' }}>
+        <FlexTable.HeaderRow>
+          <FlexTable.Header columnId="column1">Header 1</FlexTable.Header>
+          <FlexTable.Header columnId="column2">Header 2</FlexTable.Header>
+          <FlexTable.Header columnId="column3">Header 3</FlexTable.Header>
+        </FlexTable.HeaderRow>
+        <FlexTable.Row>
+          <FlexTable.Cell columnId="column1">Cell 1-1</FlexTable.Cell>
+          <FlexTable.Cell columnId="column2">Cell 1-2</FlexTable.Cell>
+          <FlexTable.Cell columnId="column3">Cell 1-3</FlexTable.Cell>
+        </FlexTable.Row>
+        <FlexTable.Row>
+          <FlexTable.Cell columnId="column1">Cell 2-1</FlexTable.Cell>
+          <FlexTable.Cell columnId="column2">Cell 2-2</FlexTable.Cell>
+          <FlexTable.Cell columnId="column3">Cell 2-3</FlexTable.Cell>
+        </FlexTable.Row>
+      </StyledFlexTable>
+    </StyledDiv>
+  );
+
   return (
     <StyledDiv>
       <Typography type="title3">Tables With Different Densities</Typography>
       <TablesWithDifferentDensitiesExample />
       <Typography type="title3">Tables With Different Font Sizes</Typography>
       <TablesWithDifferentFontSizesExample />
+      <Typography type="title3">Tables With Different Sizes on mobile</Typography>
+      <TablesWithDifferentSizesInMobile />
     </StyledDiv>
   );
 };
