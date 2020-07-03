@@ -3,7 +3,7 @@ import {
   ExpandItems,
   ExpandItemComponent,
   ExpandItemsComponent,
-} from './ExpandItems/ExpandItems.types';
+} from './components/ExpandItems/ExpandItems.types';
 import { ColorFn } from '../../../common/Types/sharedTypes';
 import { Theme } from '../../../theme/theme.types';
 

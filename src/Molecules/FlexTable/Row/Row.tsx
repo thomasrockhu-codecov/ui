@@ -1,17 +1,14 @@
 import React, { useState, useEffect } from 'react';
 import styled from 'styled-components';
-import { ExpandProps, RowComponent, RowComponents, ExpandAreaProps } from './Row.types';
-import { Box, Flexbox, Button, Icon } from '../../..';
+import { RowComponent, RowComponents } from './Row.types';
+import { Flexbox } from '../../..';
 import { ColorFn } from '../../../common/Types/sharedTypes';
 import { getDensityPaddings } from '../shared/textUtils';
 import { Density } from '../shared/shared.types';
 import { useFlexTable } from '../shared/FlexTableProvider';
-import { ExpandItems, ExpandItem } from './ExpandItems';
-import { ExpandCell } from '../Cell/ExpandCell';
-import { constants, RenderForSizes } from '../shared';
-import FlexTable from '../FlexTable';
-
-const { COLUMN_ID_EXPAND, ICON_COLUMN_DEFAULT_FLEX_PROPS } = constants;
+import { ExpandItems, ExpandItem } from './components/ExpandItems';
+import { RenderForSizes } from '../shared';
+import { ExpandElement, ExpandArea } from './components';
 
 /* the cells are padded by row gutter 1 unit (4px) */
 const StyledRow = styled(Flexbox).withConfig({
@@ -56,54 +53,12 @@ const StyledExpandedRow = styled('div').withConfig({
   border-bottom: 1px solid ${p => p.separatorColor(p.theme)};
 `;
 
-export const ExpandButton: React.FC<{ expanded: boolean; onClick: () => void }> = ({
-  expanded,
-  onClick,
-}) => (
-  <Button variant="neutral" onClick={onClick} aria-expanded={expanded}>
-    {expanded ? <Icon.ChevronUp /> : <Icon.ChevronDown />}
-  </Button>
-);
-
-const ExpandElement: React.FC<
-  ExpandProps & { isContent: boolean; disabled?: boolean; setExpand: (expanded: boolean) => void }
-> = ({ isContent, expanded = false, onExpandToggle, setExpand, disabled }) => {
-  if (!isContent) {
-    return (
-      <FlexTable.Header
-        columnId={FlexTable.CONSTANTS.COLUMN_ID_EXPAND}
-        {...ICON_COLUMN_DEFAULT_FLEX_PROPS}
-      />
-    );
-  }
-
-  return (
-    <ExpandCell
-      columnId={COLUMN_ID_EXPAND}
-      expanded={expanded}
-      onClick={() => (onExpandToggle ? onExpandToggle(!expanded) : setExpand(!expanded))}
-      disabled={disabled}
-    />
-  );
-};
-
-const ExpandArea: React.FC<ExpandAreaProps> = ({ expandChildren, expandItems }) => (
-  <Box px={5} pb={2} md={{ px: 5, pt: 5, pb: 0 }} role="cell">
-    {/* TODO should we rather have padding specified in ExpandItems? */}
-    {expandItems && <ExpandItems items={expandItems} />}
-    {expandChildren && (
-      <Box pt={2} md={{ px: 5, pt: 0, pb: 5 }}>
-        {expandChildren}
-      </Box>
-    )}
-  </Box>
-);
-
 const Row: RowComponent & RowComponents = ({
   className,
   expanded = false,
   hoverHighlight = true,
   hideSeparator = false,
+  // If false means that it's a header
   isContent = true,
   separatorColor = theme => theme.color.divider,
   onExpandToggle,

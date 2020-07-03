@@ -1,9 +1,9 @@
 import React from 'react';
 import styled from 'styled-components';
-import { isElement } from '../../../../common/utils';
-import { Flexbox, LabeledValue, Media } from '../../../..';
+import { isElement } from '../../../../../common/utils';
+import { Flexbox, LabeledValue, Media } from '../../../../..';
 import { ExpandItemComponent, ExpandItemProps } from './ExpandItems.types';
-import { Props as FlexBoxProps } from '../../../../Atoms/Flexbox/Flexbox.types';
+import { Props as FlexBoxProps } from '../../../../../Atoms/Flexbox/Flexbox.types';
 import { TextWrapperLabel, TextWrapperValue } from './TextWrapper';
 
 const StyledFlexboxItem = styled(Flexbox)<FlexBoxProps>`

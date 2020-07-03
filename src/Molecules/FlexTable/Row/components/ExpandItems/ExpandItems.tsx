@@ -1,9 +1,9 @@
 import React from 'react';
 import styled from 'styled-components';
-import { Media, Flexbox, List } from '../../../..';
+import { Media, Flexbox, List } from '../../../../..';
 import { ExpandItemsComponent } from './ExpandItems.types';
-import { Props as FlexBoxProps } from '../../../../Atoms/Flexbox/Flexbox.types';
-import { Props as ListProps } from '../../../../Atoms/List/List.types';
+import { Props as FlexBoxProps } from '../../../../../Atoms/Flexbox/Flexbox.types';
+import { Props as ListProps } from '../../../../../Atoms/List/List.types';
 import { ExpandItem } from './ExpandItem';
 
 type FlexListProps = FlexBoxProps & ListProps;
