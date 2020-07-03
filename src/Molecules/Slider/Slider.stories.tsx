@@ -149,3 +149,49 @@ export const SmallVariant = () => {
   };
   return <ControlledExample />;
 };
+
+export const DefaultColor = () => {
+  const ControlledExample = () => {
+    const [value, setValue] = useState(50);
+
+    const handleChange = (v: number) => setValue(v);
+
+    return (
+      <>
+        <Slider
+          onChange={handleChange}
+          value={value}
+          {...getSliderProps({ min: 0, max: 100, step: 1 })}
+        />
+        <Typography>
+          <Number value={value} maximumDecimals={2} /> Kronor
+        </Typography>
+      </>
+    );
+  };
+  return <ControlledExample />;
+};
+
+export const Disabled = () => {
+  const ControlledExample = () => {
+    const [value, setValue] = useState(50);
+
+    const handleChange = (v: number) => setValue(v);
+
+    return (
+      <>
+        <Slider
+          onChange={handleChange}
+          value={value}
+          {...getSliderProps({ min: 0, max: 100, step: 1 })}
+          sliderColor={t => t.color.pill6}
+          disabled
+        />
+        <Typography>
+          <Number value={value} maximumDecimals={2} /> Kronor
+        </Typography>
+      </>
+    );
+  };
+  return <ControlledExample />;
+};

@@ -11,13 +11,15 @@ type Variant = 'big' | 'small';
 export type getLeftFn = (percentage: number, variant?: Variant) => string;
 
 export type SliderTypes = {
-  sliderColor: ColorFn;
+  sliderColor?: ColorFn;
   variant?: Variant;
+  disabled?: boolean;
 };
 
 export type InternalSliderTypes = {
   $variant?: Variant;
-  $sliderColor: ColorFn;
+  $sliderColor?: ColorFn;
+  $disabled?: boolean;
 };
 
 export type Props = {

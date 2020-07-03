@@ -11,7 +11,7 @@ const pressedThumbStyle = css<InternalSliderTypes>`
   &:active {
     background: ${p => {
       const thumbColor = p.$sliderColor ? p.$sliderColor(p.theme) : '';
-      return `${thumbColor ? Color(thumbColor).darken(0.1) : ''}`;
+      return !p.$disabled && `${thumbColor ? Color(thumbColor).darken(0.1) : ''}`;
     }};
     height: ${p =>
       p.$variant === VARIANT_TYPES.SMALL ? `${THUMB_SMALL - 4}px` : `${THUMB_BIG - 6}px`};
@@ -23,9 +23,11 @@ const pressedThumbStyle = css<InternalSliderTypes>`
 const StyledSliderWrapper = styled('div')<InternalSliderTypes>`
   background: linear-gradient(
     to right,
-    ${p => (p.$sliderColor ? p.$sliderColor(p.theme) : p.theme.color.sliderLeftColor)} 0% 50%,
-    ${p => p.theme.color.sliderRightColor} 50% 100%
+    ${p => (p.$sliderColor && !p.$disabled ? p.$sliderColor(p.theme) : p.theme.color.sliderColor)}
+      0% 50%,
+    ${p => p.theme.color.sliderBackgroundColor} 50% 100%
   );
+  background: ${p => p.$disabled && p.theme.color.sliderDisabled};
   height: ${p =>
     p.$variant === VARIANT_TYPES.SMALL
       ? `${p.theme.spacing.unit(1)} px`
@@ -44,8 +46,14 @@ const StyledSlider = styled('div')<InternalSliderTypes>`
   width: calc(
     100% - ${p => (p.$variant === VARIANT_TYPES.SMALL ? `${THUMB_SMALL}px` : `${THUMB_BIG}px`)}
   );
-  margin: 5px auto;
+  margin: 0 auto;
 `;
+
+const getPercentage = (current: number, min: number, max: number) =>
+  ((current - min) / (max - min)) * 100;
+
+const getValue = (percentage: number, min: number, max: number) =>
+  ((max - min) / 100) * percentage + min;
 
 const StyledThumb = styled('div')<InternalSliderTypes>`
   box-sizing: border-box;
@@ -58,31 +66,26 @@ const StyledThumb = styled('div')<InternalSliderTypes>`
   top: 50%;
   border-radius: 50%;
   transform: translateY(-50%);
-  background: ${p => p.theme.color.bubbleBackground};
+  background: ${p => p.theme.color.sliderThumbBackground};
   border: ${p =>
-    p.$sliderColor
+    p.$sliderColor && !p.$disabled
       ? `4px solid ${p.$sliderColor(p.theme)}`
-      : `4px solid ${p.theme.color.sliderLeftColor}`};
+      : `4px solid ${p.theme.color.sliderColor}`};
+  border: ${p => (p.$disabled ? `4px solid ${p.theme.color.sliderDisabled}` : '')};
   cursor: grab;
   &:focus {
     border: ${p => {
       const thumbColor = p.$sliderColor ? p.$sliderColor(p.theme) : '';
-      return `${thumbColor ? `4px solid ${Color(thumbColor).darken(0.1)}` : ''}`;
+      return !p.$disabled && `${thumbColor ? `4px solid ${Color(thumbColor).darken(0.1)}` : ''}`;
     }};
     background: ${p => {
       const thumbColor = p.$sliderColor ? p.$sliderColor(p.theme) : '';
-      return `${thumbColor ? Color(thumbColor).darken(0.1) : ''}`;
+      return !p.$disabled && `${thumbColor ? Color(thumbColor).darken(0.1) : ''}`;
     }};
     border-radius: 50%;
   }
   ${pressedThumbStyle}
 `;
-
-const getPercentage = (current: number, min: number, max: number) =>
-  ((current - min) / (max - min)) * 100;
-
-const getValue = (percentage: number, min: number, max: number) =>
-  ((max - min) / 100) * percentage + min;
 
 const getLeft: getLeftFn = (percentage, variant) => {
   return `calc(${percentage}% - ${
@@ -98,6 +101,7 @@ const Slider: FC<Props> = ({
   sliderColor,
   theme,
   variant = 'big',
+  disabled = false,
 }) => {
   const initialPercentage = getPercentage(value, min, max);
   const linearGradient: number = ((value - min) / (max - min)) * 100;
@@ -107,26 +111,28 @@ const Slider: FC<Props> = ({
   const diff = useRef() as React.MutableRefObject<number>;
 
   const handleChange = (val: number) => {
-    let newX = val;
-    const start = 0;
-    const end = sliderRef.current.offsetWidth - thumbRef.current.offsetWidth;
+    if (!disabled) {
+      let newX = val;
+      const start = 0;
+      const end = sliderRef.current.offsetWidth - thumbRef.current.offsetWidth;
 
-    if (newX < start) {
-      newX = start;
-    }
-    if (newX > end) {
-      newX = end;
-    }
+      if (newX < start) {
+        newX = start;
+      }
+      if (newX > end) {
+        newX = end;
+      }
 
-    const newPercentage = getPercentage(newX, start, end);
-    const newValue = getValue(newPercentage, min, max);
+      const newPercentage = getPercentage(newX, start, end);
+      const newValue = getValue(newPercentage, min, max);
 
-    if (newValue % step === 0) {
-      thumbRef.current.style.left = getLeft(newPercentage, variant);
-    }
+      if (newValue % step === 0) {
+        thumbRef.current.style.left = getLeft(newPercentage, variant);
+      }
 
-    if (typeof onChange === 'function') {
-      onChange(newValue - (newValue % step));
+      if (typeof onChange === 'function') {
+        onChange(newValue - (newValue % step));
+      }
     }
   };
 
@@ -181,37 +187,44 @@ const Slider: FC<Props> = ({
   };
 
   const handleKeyDown = (event: KeyboardEvent) => {
-    const increase =
-      (event.key && ['ArrowRight', 'ArrowUp'].includes(event.key)) ||
-      (event.keyCode && [38, 39].includes(event.keyCode));
-    const decrease =
-      (event.key && ['ArrowLeft', 'ArrowDown'].includes(event.key)) ||
-      (event.keyCode && [37, 40].includes(event.keyCode));
+    if (!disabled) {
+      const increase =
+        (event.key && ['ArrowRight', 'ArrowUp'].includes(event.key)) ||
+        (event.keyCode && [38, 39].includes(event.keyCode));
+      const decrease =
+        (event.key && ['ArrowLeft', 'ArrowDown'].includes(event.key)) ||
+        (event.keyCode && [37, 40].includes(event.keyCode));
 
-    let newX = value;
-    if (increase) {
-      newX = value + step;
-    }
-    if (decrease) {
-      newX = value - step;
-    }
-    if (newX >= min && newX <= max) {
-      if (typeof onChange === 'function') {
-        onChange(newX);
+      let newX = value;
+      if (increase) {
+        newX = value + step;
+      }
+      if (decrease) {
+        newX = value - step;
+      }
+      if (newX >= min && newX <= max) {
+        if (typeof onChange === 'function') {
+          onChange(newX);
+        }
       }
     }
   };
 
-  const gradient = {
+  const sliderBackground = {
     background: `linear-gradient(to right, ${
-      sliderColor ? sliderColor(theme) : theme.color.sliderLeftColor
-    } ${linearGradient}% , ${theme.color.sliderRightColor} ${linearGradient}%)`,
+      sliderColor ? sliderColor(theme) : theme.color.sliderColor
+    } ${linearGradient}% , ${theme.color.sliderBackgroundColor} ${linearGradient}%)`,
   };
+
+  const disabledBackground = {
+    background: `${theme.color.sliderDisabled}`,
+  };
+
   return (
-    <StyledSliderWrapper $sliderColor={sliderColor} $variant={variant}>
+    <StyledSliderWrapper $sliderColor={sliderColor} $variant={variant} $disabled={disabled}>
       <StyledSlider
         ref={sliderRef}
-        style={gradient}
+        style={disabled ? disabledBackground : sliderBackground}
         onClick={handleSliderClick}
         $sliderColor={sliderColor}
         $variant={variant}
@@ -231,6 +244,7 @@ const Slider: FC<Props> = ({
           aria-valuenow={value}
           aria-valuemax={max}
           $variant={variant}
+          $disabled={disabled}
         />
       </StyledSlider>
     </StyledSliderWrapper>
