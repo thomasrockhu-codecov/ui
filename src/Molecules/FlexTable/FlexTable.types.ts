@@ -5,6 +5,7 @@ import { FooterComponent } from './Footer/Footer.types';
 import { constants } from './shared';
 import { CellComponent, ExpandCellComponent } from './Cell/Cell.types';
 import { Density, FontSize } from './shared/shared.types';
+import { CellInlineContainerComponent } from './shared/CellInlineContainer/CellInlineContainer.types';
 
 type HtmlProps = {} & React.HTMLAttributes<HTMLDivElement>;
 
@@ -25,5 +26,6 @@ export type FlexTableComponents = {
   Row: RowComponent;
   Cell: CellComponent;
   ExpandCell: ExpandCellComponent;
+  CellInlineContainer: CellInlineContainerComponent;
   CONSTANTS: typeof constants;
 };

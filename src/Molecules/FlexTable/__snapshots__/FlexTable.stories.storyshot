@@ -11,6 +11,17 @@ exports[`Storyshots Molecules | FlexTable Big Table 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  margin-left: -2px;
+  margin-right: -2px;
+}
+
+.c4 > * {
+  padding-left: 2px;
+  padding-right: 2px;
+}
+
+.c4 > *:not(:first-child) {
+  padding-top: 0;
 }
 
 .c7 {
@@ -89,6 +100,14 @@ exports[`Storyshots Molecules | FlexTable Big Table 1`] = `
   overflow: hidden;
 }
 
+.c13 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  min-width: 0;
+}
+
 .c15 {
   width: inherit;
 }
@@ -106,6 +125,14 @@ exports[`Storyshots Molecules | FlexTable Big Table 1`] = `
   padding-bottom: 4px;
 }
 
+.c5 > *:first-child {
+  padding-left: 0;
+}
+
+.c5 > *:last-child {
+  padding-right: 0;
+}
+
 .c19 {
   border-bottom: 1px solid #EBEBE8;
   padding-right: 4px;
@@ -117,6 +144,14 @@ exports[`Storyshots Molecules | FlexTable Big Table 1`] = `
 
 .c19:hover {
   background: #F5F5F5;
+}
+
+.c19 > *:first-child {
+  padding-left: 0;
+}
+
+.c19 > *:last-child {
+  padding-right: 0;
 }
 
 .c6 {
@@ -147,14 +182,6 @@ exports[`Storyshots Molecules | FlexTable Big Table 1`] = `
   -webkit-justify-content: inherit;
   -ms-flex-pack: inherit;
   justify-content: inherit;
-}
-
-.c13 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  min-width: 0;
 }
 
 .c8 {
@@ -73193,6 +73220,17 @@ exports[`Storyshots Molecules | FlexTable Big Table Without Sticky Header 1`] = 
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  margin-left: -2px;
+  margin-right: -2px;
+}
+
+.c3 > * {
+  padding-left: 2px;
+  padding-right: 2px;
+}
+
+.c3 > *:not(:first-child) {
+  padding-top: 0;
 }
 
 .c6 {
@@ -73271,6 +73309,14 @@ exports[`Storyshots Molecules | FlexTable Big Table Without Sticky Header 1`] = 
   overflow: hidden;
 }
 
+.c12 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  min-width: 0;
+}
+
 .c14 {
   width: inherit;
 }
@@ -73288,6 +73334,14 @@ exports[`Storyshots Molecules | FlexTable Big Table Without Sticky Header 1`] = 
   padding-bottom: 4px;
 }
 
+.c4 > *:first-child {
+  padding-left: 0;
+}
+
+.c4 > *:last-child {
+  padding-right: 0;
+}
+
 .c18 {
   border-bottom: 1px solid #EBEBE8;
   padding-right: 4px;
@@ -73299,6 +73353,14 @@ exports[`Storyshots Molecules | FlexTable Big Table Without Sticky Header 1`] = 
 
 .c18:hover {
   background: #F5F5F5;
+}
+
+.c18 > *:first-child {
+  padding-left: 0;
+}
+
+.c18 > *:last-child {
+  padding-right: 0;
 }
 
 .c5 {
@@ -73325,14 +73387,6 @@ exports[`Storyshots Molecules | FlexTable Big Table Without Sticky Header 1`] = 
   -webkit-justify-content: inherit;
   -ms-flex-pack: inherit;
   justify-content: inherit;
-}
-
-.c12 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  min-width: 0;
 }
 
 .c7 {
@@ -146367,6 +146421,17 @@ exports[`Storyshots Molecules | FlexTable Default Table 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  margin-left: -2px;
+  margin-right: -2px;
+}
+
+.c6 > * {
+  padding-left: 2px;
+  padding-right: 2px;
+}
+
+.c6 > *:not(:first-child) {
+  padding-top: 0;
 }
 
 .c9 {
@@ -146536,6 +146601,14 @@ exports[`Storyshots Molecules | FlexTable Default Table 1`] = `
   padding-bottom: 4px;
 }
 
+.c7 > *:first-child {
+  padding-left: 0;
+}
+
+.c7 > *:last-child {
+  padding-right: 0;
+}
+
 .c14 {
   border-bottom: 1px solid #EBEBE8;
   padding-right: 4px;
@@ -146547,6 +146620,14 @@ exports[`Storyshots Molecules | FlexTable Default Table 1`] = `
 
 .c14:hover {
   background: #F5F5F5;
+}
+
+.c14 > *:first-child {
+  padding-left: 0;
+}
+
+.c14 > *:last-child {
+  padding-right: 0;
 }
 
 .c8 {
@@ -147603,6 +147684,17 @@ exports[`Storyshots Molecules | FlexTable Expandable Table With Different Scenar
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  margin-left: -2px;
+  margin-right: -2px;
+}
+
+.c6 > * {
+  padding-left: 2px;
+  padding-right: 2px;
+}
+
+.c6 > *:not(:first-child) {
+  padding-top: 0;
 }
 
 .c9 {
@@ -147947,6 +148039,14 @@ exports[`Storyshots Molecules | FlexTable Expandable Table With Different Scenar
   padding-bottom: 4px;
 }
 
+.c7 > *:first-child {
+  padding-left: 0;
+}
+
+.c7 > *:last-child {
+  padding-right: 0;
+}
+
 .c15 {
   border-bottom: 1px solid #EBEBE8;
   padding-right: 8px;
@@ -147960,12 +148060,28 @@ exports[`Storyshots Molecules | FlexTable Expandable Table With Different Scenar
   background: #F5F5F5;
 }
 
+.c15 > *:first-child {
+  padding-left: 0;
+}
+
+.c15 > *:last-child {
+  padding-right: 0;
+}
+
 .c29 {
   padding-right: 8px;
   padding-left: 6px;
   border-left: 2px solid #0046FF;
   padding-top: 4px;
   padding-bottom: 4px;
+}
+
+.c29 > *:first-child {
+  padding-left: 0;
+}
+
+.c29 > *:last-child {
+  padding-right: 0;
 }
 
 .c43 {
@@ -147975,6 +148091,14 @@ exports[`Storyshots Molecules | FlexTable Expandable Table With Different Scenar
   border-left: 2px solid transparent;
   padding-top: 4px;
   padding-bottom: 4px;
+}
+
+.c43 > *:first-child {
+  padding-left: 0;
+}
+
+.c43 > *:last-child {
+  padding-right: 0;
 }
 
 .c44 {
@@ -147990,12 +148114,28 @@ exports[`Storyshots Molecules | FlexTable Expandable Table With Different Scenar
   background: #F5F5F5;
 }
 
+.c44 > *:first-child {
+  padding-left: 0;
+}
+
+.c44 > *:last-child {
+  padding-right: 0;
+}
+
 .c45 {
   padding-right: 4px;
   padding-left: 2px;
   border-left: 2px solid #0046FF;
   padding-top: 4px;
   padding-bottom: 4px;
+}
+
+.c45 > *:first-child {
+  padding-left: 0;
+}
+
+.c45 > *:last-child {
+  padding-right: 0;
 }
 
 .c31 {
@@ -159407,6 +159547,17 @@ exports[`Storyshots Molecules | FlexTable Multiple Big Tables With Sticky Header
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  margin-left: -2px;
+  margin-right: -2px;
+}
+
+.c6 > * {
+  padding-left: 2px;
+  padding-right: 2px;
+}
+
+.c6 > *:not(:first-child) {
+  padding-top: 0;
 }
 
 .c9 {
@@ -159485,6 +159636,14 @@ exports[`Storyshots Molecules | FlexTable Multiple Big Tables With Sticky Header
   overflow: hidden;
 }
 
+.c15 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  min-width: 0;
+}
+
 .c17 {
   width: inherit;
 }
@@ -159502,6 +159661,14 @@ exports[`Storyshots Molecules | FlexTable Multiple Big Tables With Sticky Header
   padding-bottom: 4px;
 }
 
+.c7 > *:first-child {
+  padding-left: 0;
+}
+
+.c7 > *:last-child {
+  padding-right: 0;
+}
+
 .c21 {
   border-bottom: 1px solid #EBEBE8;
   padding-right: 4px;
@@ -159513,6 +159680,14 @@ exports[`Storyshots Molecules | FlexTable Multiple Big Tables With Sticky Header
 
 .c21:hover {
   background: #F5F5F5;
+}
+
+.c21 > *:first-child {
+  padding-left: 0;
+}
+
+.c21 > *:last-child {
+  padding-right: 0;
 }
 
 .c8 {
@@ -159543,14 +159718,6 @@ exports[`Storyshots Molecules | FlexTable Multiple Big Tables With Sticky Header
   -webkit-justify-content: inherit;
   -ms-flex-pack: inherit;
   justify-content: inherit;
-}
-
-.c15 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  min-width: 0;
 }
 
 .c10 {
@@ -175126,7 +175293,7 @@ exports[`Storyshots Molecules | FlexTable Multiple Big Tables With Sticky Header
 `;
 
 exports[`Storyshots Molecules | FlexTable Table With Different Columns 1`] = `
-.c21 {
+.c23 {
   height: 20px;
   box-sizing: border-box;
   display: block;
@@ -175144,6 +175311,17 @@ exports[`Storyshots Molecules | FlexTable Table With Different Columns 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  margin-left: -2px;
+  margin-right: -2px;
+}
+
+.c6 > * {
+  padding-left: 2px;
+  padding-right: 2px;
+}
+
+.c6 > *:not(:first-child) {
+  padding-top: 0;
 }
 
 .c9 {
@@ -175224,7 +175402,19 @@ exports[`Storyshots Molecules | FlexTable Table With Different Columns 1`] = `
   flex: 0 100px;
 }
 
-.c22 {
+.c25 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.c27 {
+  box-sizing: border-box;
+}
+
+.c30 {
   box-sizing: border-box;
   display: none;
   -webkit-flex-wrap: nowrap;
@@ -175234,6 +175424,25 @@ exports[`Storyshots Molecules | FlexTable Table With Different Columns 1`] = `
   -ms-flex: 1;
   flex: 1;
   display: none;
+}
+
+.c21 {
+  box-sizing: border-box;
+}
+
+.c28 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 8px;
+  height: 8px;
+  fill: #6E6E69;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: inline-block;
+  vertical-align: middle;
 }
 
 .c1 {
@@ -175271,6 +175480,14 @@ exports[`Storyshots Molecules | FlexTable Table With Different Columns 1`] = `
   overflow: hidden;
 }
 
+.c22 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  min-width: 0;
+}
+
 .c12 {
   width: inherit;
 }
@@ -175288,6 +175505,14 @@ exports[`Storyshots Molecules | FlexTable Table With Different Columns 1`] = `
   padding-bottom: 4px;
 }
 
+.c7 > *:first-child {
+  padding-left: 0;
+}
+
+.c7 > *:last-child {
+  padding-right: 0;
+}
+
 .c16 {
   border-bottom: 1px solid #EBEBE8;
   padding-right: 4px;
@@ -175301,12 +175526,42 @@ exports[`Storyshots Molecules | FlexTable Table With Different Columns 1`] = `
   background: #F5F5F5;
 }
 
+.c16 > *:first-child {
+  padding-left: 0;
+}
+
+.c16 > *:last-child {
+  padding-right: 0;
+}
+
 .c8 {
   position: -webkit-sticky;
   position: sticky;
   top: 0;
   background-color: #FFFFFF;
   border-bottom: 1px solid #282823;
+}
+
+.c29 {
+  margin-left: 4px;
+}
+
+.c24 {
+  -webkit-box-pack: inherit;
+  -webkit-justify-content: inherit;
+  -ms-flex-pack: inherit;
+  justify-content: inherit;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  color: inherit;
+  width: 100%;
+}
+
+.c26 {
+  -webkit-box-pack: inherit;
+  -webkit-justify-content: inherit;
+  -ms-flex-pack: inherit;
+  justify-content: inherit;
 }
 
 .c10 {
@@ -175345,7 +175600,7 @@ exports[`Storyshots Molecules | FlexTable Table With Different Columns 1`] = `
 }
 
 @media (min-width:976px) {
-  .c22 {
+  .c30 {
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -175805,60 +176060,492 @@ exports[`Storyshots Molecules | FlexTable Table With Different Columns 1`] = `
         role="cell"
       >
         <div
+          className="c21 c22"
+        >
+          <div
+            className="c11 c12"
+          >
+            <span
+              className="c18"
+            >
+              Long cell with flag
+            </span>
+          </div>
+          <svg
+            className="c23"
+            focusable="false"
+            role="img"
+            viewBox="0 0 640 480"
+          >
+            <g
+              transform="translate(50.082) scale(.9375)"
+            >
+              <g
+                fillRule="evenodd"
+                strokeWidth="1pt"
+              >
+                <path
+                  d="M-121.103.302h256V205.1h-256zM-121.103 307.178h256v204.8h-256z"
+                  fill="#006aa7"
+                />
+                <path
+                  d="M-121.103 204.984h256v102.4h-256z"
+                  fill="#fecc00"
+                />
+                <path
+                  d="M133.843.01h102.4v511.997h-102.4z"
+                  fill="#fecc00"
+                />
+                <path
+                  d="M232.995 205.013h460.798v102.4H232.995z"
+                  fill="#fecc00"
+                />
+                <path
+                  d="M236.155 307.208h460.797v204.799H236.155zM236.155.302h460.797V205.1H236.155z"
+                  fill="#006aa7"
+                />
+              </g>
+            </g>
+            <title>
+              Sweden
+            </title>
+          </svg>
+        </div>
+      </div>
+      <div
+        className="c9 c17"
+        role="cell"
+      >
+        <div
           className="c11 c12"
         >
           <span
             className="c18"
           >
-            <svg
-              className="c21"
-              focusable="false"
-              role="img"
-              viewBox="0 0 640 480"
+            Cell 2-4
+          </span>
+        </div>
+      </div>
+    </div>
+    <div
+      className="c6 c16"
+      role="row"
+    >
+      <div
+        className="c9 c17"
+        role="cell"
+      >
+        <div
+          className="c11 c12"
+        >
+          <span
+            className="c18"
+          >
+            Cell 3-1
+          </span>
+        </div>
+      </div>
+      <div
+        className="c19 c17"
+        role="cell"
+      >
+        <div
+          className="c11 c12"
+        >
+          <span
+            className="c18"
+          >
+            Cell 3-2
+          </span>
+        </div>
+      </div>
+      <div
+        className="c20 c17"
+        role="cell"
+      >
+        <div
+          className="c11 c12"
+        >
+          <span
+            className="c18"
+          >
+            Cell 3-3
+          </span>
+        </div>
+      </div>
+      <div
+        className="c9 c17"
+        role="cell"
+      >
+        <div
+          className="c11 c12"
+        >
+          <span
+            className="c18"
+          >
+            Cell 3-4
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <span
+    className="c1"
+  >
+    Sortable Table With Column Width Set
+  </span>
+  <div
+    className="c2 c3"
+    role="table"
+  >
+    <caption
+      className="c4"
+    >
+      <span
+        className="c1 c5"
+      />
+    </caption>
+    <div
+      className="c6 c7 c8"
+      role="row"
+    >
+      <div
+        aria-sort="none"
+        className="c9 c10"
+        role="columnheader"
+      >
+        <a
+          className="c24"
+          href="#"
+          onClick={[Function]}
+          onKeyDown={[Function]}
+          role="button"
+        >
+          <div
+            className="c25 c26"
+          >
+            <div
+              className="c27 c22"
+            >
+              <div
+                className="c11 c12"
+              >
+                <span
+                  className="c13"
+                >
+                  Flex 1
+                </span>
+              </div>
+            </div>
+            <div
+              className="c27"
+            >
+              <svg
+                aria-hidden="true"
+                className="c28 c29"
+                focusable="false"
+                preserveAspectRatio="xMidYMid meet"
+                role="presentation"
+                viewBox="0 0 24 24"
+              >
+                <polygon
+                  points="19.969 4 24 8.027 12 20 0 8.027 4.031 4 12 11.952"
+                />
+              </svg>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div
+        aria-sort="none"
+        className="c19 c10"
+        role="columnheader"
+      >
+        <a
+          className="c24"
+          href="#"
+          onClick={[Function]}
+          onKeyDown={[Function]}
+          role="button"
+        >
+          <div
+            className="c25 c26"
+          >
+            <div
+              className="c27 c22"
+            >
+              <div
+                className="c11 c12"
+              >
+                <span
+                  className="c13"
+                >
+                  Fifteen percent
+                </span>
+              </div>
+            </div>
+            <div
+              className="c27"
+            >
+              <svg
+                aria-hidden="true"
+                className="c28 c29"
+                focusable="false"
+                preserveAspectRatio="xMidYMid meet"
+                role="presentation"
+                viewBox="0 0 24 24"
+              >
+                <polygon
+                  points="19.969 4 24 8.027 12 20 0 8.027 4.031 4 12 11.952"
+                />
+              </svg>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div
+        aria-sort="none"
+        className="c20 c10"
+        role="columnheader"
+      >
+        <a
+          className="c24"
+          href="#"
+          onClick={[Function]}
+          onKeyDown={[Function]}
+          role="button"
+        >
+          <div
+            className="c25 c26"
+          >
+            <div
+              className="c27 c22"
+            >
+              <div
+                className="c11 c12"
+              >
+                <span
+                  className="c13"
+                >
+                  Loooooooooooooong header set width
+                </span>
+              </div>
+            </div>
+            <div
+              className="c27"
+            >
+              <svg
+                aria-hidden="true"
+                className="c28 c29"
+                focusable="false"
+                preserveAspectRatio="xMidYMid meet"
+                role="presentation"
+                viewBox="0 0 24 24"
+              >
+                <polygon
+                  points="19.969 4 24 8.027 12 20 0 8.027 4.031 4 12 11.952"
+                />
+              </svg>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div
+        aria-sort="none"
+        className="c9 c10"
+        role="columnheader"
+      >
+        <a
+          className="c24"
+          href="#"
+          onClick={[Function]}
+          onKeyDown={[Function]}
+          role="button"
+        >
+          <div
+            className="c25 c26"
+          >
+            <div
+              className="c27 c22"
+            >
+              <div
+                className="c11 c12"
+              >
+                <span
+                  className="c13"
+                >
+                  Default
+                </span>
+              </div>
+            </div>
+            <div
+              className="c27"
+            >
+              <svg
+                aria-hidden="true"
+                className="c28 c29"
+                focusable="false"
+                preserveAspectRatio="xMidYMid meet"
+                role="presentation"
+                viewBox="0 0 24 24"
+              >
+                <polygon
+                  points="19.969 4 24 8.027 12 20 0 8.027 4.031 4 12 11.952"
+                />
+              </svg>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+    <div
+      className="c6 c16"
+      role="row"
+    >
+      <div
+        className="c9 c17"
+        role="cell"
+      >
+        <div
+          className="c11 c12"
+        >
+          <span
+            className="c18"
+          >
+            Cell 1-1
+          </span>
+        </div>
+      </div>
+      <div
+        className="c19 c17"
+        role="cell"
+      >
+        <div
+          className="c11 c12"
+        >
+          <span
+            className="c18"
+          >
+            Very long cell content that should be truncated or ellipsized depepending on your language preferences
+          </span>
+        </div>
+      </div>
+      <div
+        className="c20 c17"
+        role="cell"
+      >
+        <div
+          className="c11 c12"
+        >
+          <span
+            className="c18"
+          >
+            Cell 1-3
+          </span>
+        </div>
+      </div>
+      <div
+        className="c9 c17"
+        role="cell"
+      >
+        <div
+          className="c11 c12"
+        >
+          <span
+            className="c18"
+          >
+            Cell 1-4
+          </span>
+        </div>
+      </div>
+    </div>
+    <div
+      className="c6 c16"
+      role="row"
+    >
+      <div
+        className="c9 c17"
+        role="cell"
+      >
+        <div
+          className="c11 c12"
+        >
+          <span
+            className="c18"
+          >
+            Cell 2-1
+          </span>
+        </div>
+      </div>
+      <div
+        className="c19 c17"
+        role="cell"
+      >
+        <div
+          className="c11 c12"
+        >
+          <span
+            className="c18"
+          >
+            Cell 2-2
+          </span>
+        </div>
+      </div>
+      <div
+        className="c20 c17"
+        role="cell"
+      >
+        <div
+          className="c21 c22"
+        >
+          <div
+            className="c11 c12"
+          >
+            <span
+              className="c18"
+            >
+              Long cell with flag
+            </span>
+          </div>
+          <svg
+            className="c23"
+            focusable="false"
+            role="img"
+            viewBox="0 0 640 480"
+          >
+            <g
+              transform="translate(50.082) scale(.9375)"
             >
               <g
-                transform="translate(50.082) scale(.9375)"
+                fillRule="evenodd"
+                strokeWidth="1pt"
               >
-                <g
-                  fillRule="evenodd"
-                  strokeWidth="1pt"
-                >
-                  <path
-                    d="M-121.103.302h256V205.1h-256zM-121.103 307.178h256v204.8h-256z"
-                    fill="#006aa7"
-                  />
-                  <path
-                    d="M-121.103 204.984h256v102.4h-256z"
-                    fill="#fecc00"
-                  />
-                  <path
-                    d="M133.843.01h102.4v511.997h-102.4z"
-                    fill="#fecc00"
-                  />
-                  <path
-                    d="M232.995 205.013h460.798v102.4H232.995z"
-                    fill="#fecc00"
-                  />
-                  <path
-                    d="M236.155 307.208h460.797v204.799H236.155zM236.155.302h460.797V205.1H236.155z"
-                    fill="#006aa7"
-                  />
-                </g>
+                <path
+                  d="M-121.103.302h256V205.1h-256zM-121.103 307.178h256v204.8h-256z"
+                  fill="#006aa7"
+                />
+                <path
+                  d="M-121.103 204.984h256v102.4h-256z"
+                  fill="#fecc00"
+                />
+                <path
+                  d="M133.843.01h102.4v511.997h-102.4z"
+                  fill="#fecc00"
+                />
+                <path
+                  d="M232.995 205.013h460.798v102.4H232.995z"
+                  fill="#fecc00"
+                />
+                <path
+                  d="M236.155 307.208h460.797v204.799H236.155zM236.155.302h460.797V205.1H236.155z"
+                  fill="#006aa7"
+                />
               </g>
-              <title>
-                Sweden
-              </title>
-            </svg>
-            <div
-              className="c11 c12"
-            >
-              <span
-                className="c18"
-              >
-                Long cell with flag
-              </span>
-            </div>
-          </span>
+            </g>
+            <title>
+              Sweden
+            </title>
+          </svg>
         </div>
       </div>
       <div
@@ -175973,7 +176660,7 @@ exports[`Storyshots Molecules | FlexTable Table With Different Columns 1`] = `
         </div>
       </div>
       <div
-        className="c22 c10"
+        className="c30 c10"
         hidden={true}
         role="columnheader"
       >
@@ -176021,7 +176708,7 @@ exports[`Storyshots Molecules | FlexTable Table With Different Columns 1`] = `
         </div>
       </div>
       <div
-        className="c22 c17"
+        className="c30 c17"
         hidden={true}
         role="cell"
       >
@@ -176069,7 +176756,7 @@ exports[`Storyshots Molecules | FlexTable Table With Different Columns 1`] = `
         </div>
       </div>
       <div
-        className="c22 c17"
+        className="c30 c17"
         hidden={true}
         role="cell"
       >
@@ -176117,7 +176804,7 @@ exports[`Storyshots Molecules | FlexTable Table With Different Columns 1`] = `
         </div>
       </div>
       <div
-        className="c22 c17"
+        className="c30 c17"
         hidden={true}
         role="cell"
       >
@@ -176172,6 +176859,17 @@ exports[`Storyshots Molecules | FlexTable Table With Different Headers 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  margin-left: -2px;
+  margin-right: -2px;
+}
+
+.c6 > * {
+  padding-left: 2px;
+  padding-right: 2px;
+}
+
+.c6 > *:not(:first-child) {
+  padding-top: 0;
 }
 
 .c9 {
@@ -176214,7 +176912,7 @@ exports[`Storyshots Molecules | FlexTable Table With Different Headers 1`] = `
   box-sizing: border-box;
 }
 
-.c30 {
+.c29 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -176232,7 +176930,7 @@ exports[`Storyshots Molecules | FlexTable Table With Different Headers 1`] = `
   flex: 1;
 }
 
-.c31 {
+.c30 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -176265,7 +176963,7 @@ exports[`Storyshots Molecules | FlexTable Table With Different Headers 1`] = `
   vertical-align: middle;
 }
 
-.c26 {
+.c25 {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -176280,13 +176978,13 @@ exports[`Storyshots Molecules | FlexTable Table With Different Headers 1`] = `
   vertical-align: middle;
 }
 
-.c27 {
+.c26 {
   -webkit-transform: rotate(180deg);
   -ms-transform: rotate(180deg);
   transform: rotate(180deg);
 }
 
-.c29 {
+.c28 {
   -webkit-transform: rotate(0deg);
   -ms-transform: rotate(0deg);
   transform: rotate(0deg);
@@ -176310,7 +177008,7 @@ exports[`Storyshots Molecules | FlexTable Table With Different Headers 1`] = `
   line-height: 1.4285714285714286;
 }
 
-.c25 {
+.c24 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
   margin: 0;
@@ -176327,6 +177025,14 @@ exports[`Storyshots Molecules | FlexTable Table With Different Headers 1`] = `
   overflow: hidden;
 }
 
+.c20 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  min-width: 0;
+}
+
 .c12 {
   width: inherit;
 }
@@ -176338,6 +177044,14 @@ exports[`Storyshots Molecules | FlexTable Table With Different Headers 1`] = `
   border-left: 2px solid transparent;
   padding-top: 4px;
   padding-bottom: 4px;
+}
+
+.c7 > *:first-child {
+  padding-left: 0;
+}
+
+.c7 > *:last-child {
+  padding-right: 0;
 }
 
 .c8 {
@@ -176352,7 +177066,7 @@ exports[`Storyshots Molecules | FlexTable Table With Different Headers 1`] = `
   margin-left: 4px;
 }
 
-.c28 {
+.c27 {
   margin-left: 4px;
 }
 
@@ -176372,14 +177086,6 @@ exports[`Storyshots Molecules | FlexTable Table With Different Headers 1`] = `
   -webkit-justify-content: inherit;
   -ms-flex-pack: inherit;
   justify-content: inherit;
-}
-
-.c24 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  min-width: 0;
 }
 
 .c10 {
@@ -176422,14 +177128,6 @@ exports[`Storyshots Molecules | FlexTable Table With Different Headers 1`] = `
   -webkit-justify-content: inherit;
   -ms-flex-pack: inherit;
   justify-content: inherit;
-}
-
-.c20 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  min-width: 0;
 }
 
 @media (min-width:760px) {
@@ -176642,7 +177340,7 @@ exports[`Storyshots Molecules | FlexTable Table With Different Headers 1`] = `
             className="c16 c23"
           >
             <div
-              className="c18 c24"
+              className="c18 c20"
             >
               <div
                 className="c11 c12"
@@ -176689,7 +177387,7 @@ exports[`Storyshots Molecules | FlexTable Table With Different Headers 1`] = `
             className="c16 c23"
           >
             <div
-              className="c18 c24"
+              className="c18 c20"
             >
               <div
                 className="c11 c12"
@@ -176736,13 +177434,13 @@ exports[`Storyshots Molecules | FlexTable Table With Different Headers 1`] = `
             className="c16 c23"
           >
             <div
-              className="c18 c24"
+              className="c18 c20"
             >
               <div
                 className="c11 c12"
               >
                 <span
-                  className="c25"
+                  className="c24"
                 >
                   With initial sort order
                 </span>
@@ -176753,7 +177451,7 @@ exports[`Storyshots Molecules | FlexTable Table With Different Headers 1`] = `
             >
               <svg
                 aria-hidden="true"
-                className="c26 c27 c28"
+                className="c25 c26 c27"
                 direction="descending"
                 focusable="false"
                 preserveAspectRatio="xMidYMid meet"
@@ -176822,7 +177520,7 @@ exports[`Storyshots Molecules | FlexTable Table With Different Headers 1`] = `
             className="c16 c23"
           >
             <div
-              className="c18 c24"
+              className="c18 c20"
             >
               <div
                 className="c11 c12"
@@ -176869,7 +177567,7 @@ exports[`Storyshots Molecules | FlexTable Table With Different Headers 1`] = `
             className="c16 c23"
           >
             <div
-              className="c18 c24"
+              className="c18 c20"
             >
               <div
                 className="c11 c12"
@@ -176930,7 +177628,7 @@ exports[`Storyshots Molecules | FlexTable Table With Different Headers 1`] = `
             className="c16 c23"
           >
             <div
-              className="c18 c24"
+              className="c18 c20"
             >
               <div
                 className="c11 c12"
@@ -176999,13 +177697,13 @@ exports[`Storyshots Molecules | FlexTable Table With Different Headers 1`] = `
             className="c16 c23"
           >
             <div
-              className="c18 c24"
+              className="c18 c20"
             >
               <div
                 className="c11 c12"
               >
                 <span
-                  className="c25"
+                  className="c24"
                 >
                   Controlled1
                 </span>
@@ -177016,7 +177714,7 @@ exports[`Storyshots Molecules | FlexTable Table With Different Headers 1`] = `
             >
               <svg
                 aria-hidden="true"
-                className="c26 c29 c28"
+                className="c25 c28 c27"
                 direction="ascending"
                 focusable="false"
                 preserveAspectRatio="xMidYMid meet"
@@ -177049,7 +177747,7 @@ exports[`Storyshots Molecules | FlexTable Table With Different Headers 1`] = `
             className="c16 c23"
           >
             <div
-              className="c18 c24"
+              className="c18 c20"
             >
               <div
                 className="c11 c12"
@@ -177110,7 +177808,7 @@ exports[`Storyshots Molecules | FlexTable Table With Different Headers 1`] = `
             className="c16 c23"
           >
             <div
-              className="c18 c24"
+              className="c18 c20"
             >
               <div
                 className="c11 c12"
@@ -177165,7 +177863,7 @@ exports[`Storyshots Molecules | FlexTable Table With Different Headers 1`] = `
     >
       <div
         aria-sort="none"
-        className="c30 c10"
+        className="c29 c10"
         role="columnheader"
       >
         <a
@@ -177179,7 +177877,7 @@ exports[`Storyshots Molecules | FlexTable Table With Different Headers 1`] = `
             className="c16 c23"
           >
             <div
-              className="c18 c24"
+              className="c18 c20"
             >
               <div
                 className="c11 c12"
@@ -177212,7 +177910,7 @@ exports[`Storyshots Molecules | FlexTable Table With Different Headers 1`] = `
       </div>
       <div
         aria-sort="none"
-        className="c31 c10"
+        className="c30 c10"
         role="columnheader"
       >
         <a
@@ -177226,7 +177924,7 @@ exports[`Storyshots Molecules | FlexTable Table With Different Headers 1`] = `
             className="c16 c23"
           >
             <div
-              className="c18 c24"
+              className="c18 c20"
             >
               <div
                 className="c11 c12"
@@ -177273,7 +177971,7 @@ exports[`Storyshots Molecules | FlexTable Table With Different Headers 1`] = `
             className="c16 c23"
           >
             <div
-              className="c18 c24"
+              className="c18 c20"
             >
               <div
                 className="c11 c12"
@@ -177334,6 +178032,17 @@ exports[`Storyshots Molecules | FlexTable Table With Different Rows 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  margin-left: -2px;
+  margin-right: -2px;
+}
+
+.c5 > * {
+  padding-left: 2px;
+  padding-right: 2px;
+}
+
+.c5 > *:not(:first-child) {
+  padding-top: 0;
 }
 
 .c8 {
@@ -177402,6 +178111,14 @@ exports[`Storyshots Molecules | FlexTable Table With Different Rows 1`] = `
   padding-bottom: 4px;
 }
 
+.c6 > *:first-child {
+  padding-left: 0;
+}
+
+.c6 > *:last-child {
+  padding-right: 0;
+}
+
 .c13 {
   border-bottom: 1px solid #EBEBE8;
   padding-right: 4px;
@@ -177413,6 +178130,14 @@ exports[`Storyshots Molecules | FlexTable Table With Different Rows 1`] = `
 
 .c13:hover {
   background: #F5F5F5;
+}
+
+.c13 > *:first-child {
+  padding-left: 0;
+}
+
+.c13 > *:last-child {
+  padding-right: 0;
 }
 
 .c16 {
@@ -177427,12 +178152,28 @@ exports[`Storyshots Molecules | FlexTable Table With Different Rows 1`] = `
   background: #F5F5F5;
 }
 
+.c16 > *:first-child {
+  padding-left: 0;
+}
+
+.c16 > *:last-child {
+  padding-right: 0;
+}
+
 .c17 {
   padding-right: 4px;
   padding-left: 2px;
   border-left: 2px solid transparent;
   padding-top: 4px;
   padding-bottom: 4px;
+}
+
+.c17 > *:first-child {
+  padding-left: 0;
+}
+
+.c17 > *:last-child {
+  padding-right: 0;
 }
 
 .c18 {
@@ -177446,6 +178187,14 @@ exports[`Storyshots Molecules | FlexTable Table With Different Rows 1`] = `
 
 .c18:hover {
   background: #F5F5F5;
+}
+
+.c18 > *:first-child {
+  padding-left: 0;
+}
+
+.c18 > *:last-child {
+  padding-right: 0;
 }
 
 .c7 {
@@ -177797,6 +178546,17 @@ exports[`Storyshots Molecules | FlexTable Table With Different Size Props 1`] = 
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  margin-left: -2px;
+  margin-right: -2px;
+}
+
+.c7 > * {
+  padding-left: 2px;
+  padding-right: 2px;
+}
+
+.c7 > *:not(:first-child) {
+  padding-top: 0;
 }
 
 .c10 {
@@ -177892,6 +178652,14 @@ exports[`Storyshots Molecules | FlexTable Table With Different Size Props 1`] = 
   padding-bottom: 4px;
 }
 
+.c8 > *:first-child {
+  padding-left: 0;
+}
+
+.c8 > *:last-child {
+  padding-right: 0;
+}
+
 .c15 {
   border-bottom: 1px solid #EBEBE8;
   padding-right: 4px;
@@ -177905,6 +178673,14 @@ exports[`Storyshots Molecules | FlexTable Table With Different Size Props 1`] = 
   background: #F5F5F5;
 }
 
+.c15 > *:first-child {
+  padding-left: 0;
+}
+
+.c15 > *:last-child {
+  padding-right: 0;
+}
+
 .c18 {
   border-bottom: 1px solid #EBEBE8;
   padding-right: 4px;
@@ -177912,6 +178688,14 @@ exports[`Storyshots Molecules | FlexTable Table With Different Size Props 1`] = 
   border-left: 2px solid transparent;
   padding-top: 0px;
   padding-bottom: 0px;
+}
+
+.c18 > *:first-child {
+  padding-left: 0;
+}
+
+.c18 > *:last-child {
+  padding-right: 0;
 }
 
 .c19 {
@@ -177927,6 +178711,14 @@ exports[`Storyshots Molecules | FlexTable Table With Different Size Props 1`] = 
   background: #F5F5F5;
 }
 
+.c19 > *:first-child {
+  padding-left: 0;
+}
+
+.c19 > *:last-child {
+  padding-right: 0;
+}
+
 .c20 {
   border-bottom: 1px solid #EBEBE8;
   padding-right: 4px;
@@ -177934,6 +178726,14 @@ exports[`Storyshots Molecules | FlexTable Table With Different Size Props 1`] = 
   border-left: 2px solid transparent;
   padding-top: 8px;
   padding-bottom: 8px;
+}
+
+.c20 > *:first-child {
+  padding-left: 0;
+}
+
+.c20 > *:last-child {
+  padding-right: 0;
 }
 
 .c21 {
@@ -177947,6 +178747,14 @@ exports[`Storyshots Molecules | FlexTable Table With Different Size Props 1`] = 
 
 .c21:hover {
   background: #F5F5F5;
+}
+
+.c21 > *:first-child {
+  padding-left: 0;
+}
+
+.c21 > *:last-child {
+  padding-right: 0;
 }
 
 .c9 {
@@ -179140,6 +179948,17 @@ exports[`Storyshots Molecules | FlexTable Virtualized Table 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  margin-left: -2px;
+  margin-right: -2px;
+}
+
+.c5 > * {
+  padding-left: 2px;
+  padding-right: 2px;
+}
+
+.c5 > *:not(:first-child) {
+  padding-top: 0;
 }
 
 .c8 {
@@ -179209,6 +180028,14 @@ exports[`Storyshots Molecules | FlexTable Virtualized Table 1`] = `
   overflow: hidden;
 }
 
+.c14 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  min-width: 0;
+}
+
 .c16 {
   width: inherit;
 }
@@ -179220,6 +180047,14 @@ exports[`Storyshots Molecules | FlexTable Virtualized Table 1`] = `
   border-left: 2px solid transparent;
   padding-top: 4px;
   padding-bottom: 4px;
+}
+
+.c6 > *:first-child {
+  padding-left: 0;
+}
+
+.c6 > *:last-child {
+  padding-right: 0;
 }
 
 .c7 {
@@ -179250,14 +180085,6 @@ exports[`Storyshots Molecules | FlexTable Virtualized Table 1`] = `
   -webkit-justify-content: inherit;
   -ms-flex-pack: inherit;
   justify-content: inherit;
-}
-
-.c14 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  min-width: 0;
 }
 
 .c9 {
