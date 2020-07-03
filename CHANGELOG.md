@@ -1,3 +1,11 @@
+# [2.58.0](https://github.com/nordnet/ui/compare/v2.57.0...v2.58.0) (2020-07-03)
+
+
+### Features
+
+* 🎸 add cell inline container ([ccef566](https://github.com/nordnet/ui/commit/ccef566))
+* 🎸 add spacing between cells ([b14a4b1](https://github.com/nordnet/ui/commit/b14a4b1))
+
 # [2.57.0](https://github.com/nordnet/ui/compare/v2.56.1...v2.57.0) (2020-07-02)
 
 
