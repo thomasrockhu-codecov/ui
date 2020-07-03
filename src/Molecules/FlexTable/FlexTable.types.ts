@@ -4,18 +4,17 @@ import { HeaderComponent } from './Header/Header.types';
 import { FooterComponent } from './Footer/Footer.types';
 import { constants } from './shared';
 import { CellComponent, ExpandCellComponent } from './Cell/Cell.types';
-import { Density, FontSize } from './shared/shared.types';
+import { Props as FlexTableProviderProps } from './shared/FlexTableProvider/FlexTableProvider.types';
 
 type HtmlProps = {} & React.HTMLAttributes<HTMLDivElement>;
 
 export type Props = {
   className?: string;
-  density?: Density;
-  fontSize?: FontSize;
-  stickyHeader?: boolean;
   title?: ReactNode;
-  expandable?: boolean;
-} & HtmlProps;
+} & Partial<FlexTableProviderProps> &
+  HtmlProps;
+
+export type FlexTableComponent = React.FC<Props>;
 
 export type FlexTableComponents = {
   Header: HeaderComponent;

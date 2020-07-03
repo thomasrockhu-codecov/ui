@@ -71,7 +71,14 @@ const Row: RowComponent & RowComponents = ({
   xl,
   ...htmlProps
 }) => {
-  const { density, expandable } = useFlexTable();
+  const {
+    density: xsDensity,
+    expandable: xsExpandable,
+    sm: smTable,
+    md: mdTable,
+    lg: lgTable,
+    xl: xlTable,
+  } = useFlexTable();
   const [expand, setExpand] = useState(expanded);
 
   useEffect(() => {
@@ -80,30 +87,44 @@ const Row: RowComponent & RowComponents = ({
 
   return (
     <>
-      <StyledRow
-        container
-        alignItems="center"
-        hoverHighlight={hoverHighlight}
-        className={className}
-        hideSeparator={hideSeparator}
-        role="row"
-        expanded={expand}
-        separatorColor={separatorColor}
-        density={density}
-        expandable={expandable}
-        {...htmlProps}
-      >
-        {children}
-        {expandable && (
-          <ExpandElement
-            isContent={isContent}
+      <RenderForSizes
+        xs={{ density: xsDensity, expandable: xsExpandable }}
+        sm={smTable}
+        md={mdTable}
+        lg={lgTable}
+        xl={xlTable}
+        Container={({ density, expandable, children: component }) => (
+          <StyledRow
+            container
+            alignItems="center"
+            hoverHighlight={hoverHighlight}
+            className={className}
+            hideSeparator={hideSeparator}
+            role="row"
             expanded={expand}
-            onExpandToggle={onExpandToggle}
-            disabled={!expandChildrenXs && !expandItemsXs}
-            setExpand={setExpand}
-          />
+            separatorColor={separatorColor}
+            density={density}
+            expandable={expandable}
+            {...htmlProps}
+          >
+            {component}
+          </StyledRow>
         )}
-      </StyledRow>
+        Component={({ expandable }) => (
+          <>
+            {children}
+            {expandable && (
+              <ExpandElement
+                isContent={isContent}
+                expanded={expand}
+                onExpandToggle={onExpandToggle}
+                disabled={!expandChildrenXs && !expandItemsXs}
+                setExpand={setExpand}
+              />
+            )}
+          </>
+        )}
+      />
 
       {expand && (
         <RenderForSizes
@@ -115,13 +136,13 @@ const Row: RowComponent & RowComponents = ({
           md={md}
           lg={lg}
           xl={xl}
+          Container={({ children: component }) => (
+            <StyledExpandedRow role="row" separatorColor={separatorColor}>
+              {component}
+            </StyledExpandedRow>
+          )}
           Component={({ expandChildren, expandItems }) => (
             <ExpandArea expandItems={expandItems} expandChildren={expandChildren} />
-          )}
-          Container={({ children: containerChildren }) => (
-            <StyledExpandedRow role="row" separatorColor={separatorColor}>
-              {containerChildren}
-            </StyledExpandedRow>
           )}
         />
       )}
