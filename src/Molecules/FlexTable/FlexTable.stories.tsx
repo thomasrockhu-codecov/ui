@@ -1002,15 +1002,22 @@ const generateTableData = (rowsLength: number, columnsLength: number) =>
     }, {});
   });
 
-const BigTableRow = ({ data }: any) => (
-  <FlexTable.Row>
-    {Object.keys(R.omit(['rowId'], data)).map((valueKey, index) => (
-      <FlexTable.Cell key={data[valueKey].id} columnId={`column${index + 1}`}>
-        {data[valueKey].value}
-      </FlexTable.Cell>
-    ))}
-  </FlexTable.Row>
-);
+const BigTableRow = ({ data }: any) => {
+  const xsColumnKeys = Object.keys(data).filter((_, index) => Boolean(index % 2));
+  const expandItems = xsColumnKeys.map(
+    (key, index) => ({ label: `Header ${index * 2 + 1}`, value: data[key].value }),
+    {},
+  );
+  return (
+    <FlexTable.Row expandItems={expandItems} md={{ expandItems: [] }}>
+      {Object.keys(R.omit(['rowId'], data)).map((valueKey, index) => (
+        <FlexTable.Cell key={data[valueKey].id} columnId={`column${index + 1}`}>
+          {data[valueKey].value}
+        </FlexTable.Cell>
+      ))}
+    </FlexTable.Row>
+  );
+};
 
 const VirtualizedRow: any = styled(FlexTable.Row).attrs({
   style: (p: { style: React.CSSProperties }) => p.style,
@@ -1055,7 +1062,7 @@ export const BigTable = () => {
     }, [tableData, sort]);
 
     return (
-      <FlexTable>
+      <FlexTable expandable md={{ expandable: false }}>
         <FlexTable.HeaderRow>
           {[...Array(columnsLength)].map((_, index) => (
             <FlexTable.Header
@@ -1065,6 +1072,8 @@ export const BigTable = () => {
               onSort={(columnId, nextSortOrder) => {
                 setSort({ columnId, sortOrder: nextSortOrder });
               }}
+              hidden={Boolean(index % 2)}
+              md={{ hidden: false }}
             >
               Header {index + 1}
             </FlexTable.Header>
