@@ -1,3 +1,10 @@
+## [2.58.1](https://github.com/nordnet/ui/compare/v2.58.0...v2.58.1) (2020-07-03)
+
+
+### Bug Fixes
+
+* 🐛 table alignment on header and cell ([124addf](https://github.com/nordnet/ui/commit/124addf))
+
 # [2.58.0](https://github.com/nordnet/ui/compare/v2.57.0...v2.58.0) (2020-07-03)
 
 
