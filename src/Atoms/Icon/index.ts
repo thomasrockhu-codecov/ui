@@ -5,8 +5,8 @@ import { Archive } from './components/Archive';
 import { ArrowRight } from './components/ArrowRight';
 import { Attachement } from './components/Attachement';
 import { Bank } from './components/Bank';
-import { BankID } from './components/BankID';
 import { BankDeposit } from './components/BankDeposit';
+import { BankID } from './components/BankID';
 import { Bell } from './components/Bell';
 import { Bolt } from './components/Bolt';
 import { BrowserWindow } from './components/BrowserWindow';
@@ -21,6 +21,8 @@ import { ChevronUp } from './components/ChevronUp';
 import { Cogwheel } from './components/Cogwheel';
 import { Commodities } from './components/Commodities';
 import { Communication } from './components/Communication';
+import { Compass } from './components/Compass';
+import { ConfigurationSliders } from './components/ConfigurationSliders';
 import { ConsumerCyclic } from './components/ConsumerCyclic';
 import { ConsumerStable } from './components/ConsumerStable';
 import { Cross } from './components/Cross';
@@ -39,19 +41,26 @@ import { Filter } from './components/Filter';
 import { Financial } from './components/Financial';
 import { Flag } from './components/Flag';
 import { Globe } from './components/Globe';
+import { Growth } from './components/Growth';
 import { Hamburger } from './components/Hamburger';
-import { House } from './components/House';
+import { HandWithCoin } from './components/HandWithCoin';
 import { Healthcare } from './components/Healthcare';
-import { Increase } from './components/Increase';
+import { Heart } from './components/Heart';
+import { HighRisk } from './components/HighRisk';
+import { House } from './components/House';
 import { Import } from './components/Import';
+import { Increase } from './components/Increase';
 import { Industrial } from './components/Industrial';
 import { InfoCircle } from './components/InfoCircle';
 import { Leaf } from './components/Leaf';
 import { LineGraph } from './components/LineGraph';
+import { LowRisk } from './components/LowRisk';
 import { Maximize } from './components/Maximize';
-import { Move } from './components/Move';
+import { MediumRisk } from './components/MediumRisk';
 import { Minimize } from './components/Minimize';
 import { Minus } from './components/Minus';
+import { Money } from './components/Money';
+import { Move } from './components/Move';
 import { Other } from './components/Other';
 import { Pen } from './components/Pen';
 import { Pending } from './components/Pending';
@@ -59,6 +68,7 @@ import { Plus } from './components/Plus';
 import { PlusWithCircle } from './components/PlusWithCircle';
 import { Printer } from './components/Printer';
 import { Questionmark } from './components/Questionmark';
+import { Raising } from './components/Raising';
 import { RealEstate } from './components/RealEstate';
 import { Rtmt } from './components/Rtmt';
 import { Search } from './components/Search';
@@ -70,12 +80,15 @@ import { SocialYouTube } from './components/SocialYouTube';
 import { SolidCircle } from './components/Circle';
 import { Star } from './components/Star';
 import { Star24 } from './components/Star24';
+import { StarOutline } from './components/StarOutline';
 import { Technology } from './components/Technology';
+import { ThinArrow } from './components/ThinArrow';
 import { ThreeDots } from './components/ThreeDots';
 import { Trash } from './components/Trash';
 import { Utilities } from './components/Utilities';
 import { WarningTriangle } from './components/WarningTriangle';
-import { ThinArrow } from './components/ThinArrow';
+import { ThinChevron } from './components/ThinChevron';
+import { SortArrow } from './components/SortArrow';
 
 export default {
   AccountNumbers,
@@ -85,8 +98,8 @@ export default {
   ArrowRight,
   Attachement,
   Bank,
-  BankID,
   BankDeposit,
+  BankID,
   Bell,
   Bolt,
   BrowserWindow,
@@ -101,6 +114,8 @@ export default {
   Cogwheel,
   Commodities,
   Communication,
+  Compass,
+  ConfigurationSliders,
   ConsumerCyclic,
   ConsumerStable,
   Cross,
@@ -119,19 +134,26 @@ export default {
   Financial,
   Flag,
   Globe,
+  Growth,
   Hamburger,
+  HandWithCoin,
   Healthcare,
+  Heart,
+  HighRisk,
   House,
-  Increase,
   Import,
+  Increase,
   Industrial,
   InfoCircle,
   Leaf,
   LineGraph,
+  LowRisk,
   Maximize,
-  Move,
+  MediumRisk,
   Minimize,
   Minus,
+  Money,
+  Move,
   Other,
   Pen,
   Pending,
@@ -139,6 +161,7 @@ export default {
   PlusWithCircle,
   Printer,
   Questionmark,
+  Raising,
   RealEstate,
   Rtmt,
   Search,
@@ -150,10 +173,13 @@ export default {
   SolidCircle,
   Star,
   Star24,
+  StarOutline,
   Technology,
+  ThinArrow,
   ThreeDots,
   Trash,
   Utilities,
   WarningTriangle,
-  ThinArrow,
+  ThinChevron,
+  SortArrow,
 };

@@ -13,8 +13,8 @@
     "node": ">=10"
   },
   "scripts": {
-    "test": "jest",
-    "test-ci": "jest --coverage --ci && codecov",
+    "test": "TZ=UTC jest",
+    "test-ci": "TZ=UTC jest --coverage --ci && codecov",
     "dev": "start-storybook -p 6006 -s ./static",
     "lint:js": "eslint --ext=.tsx --ext=.ts src",
     "lint:css": "stylelint './src/**/*.{ts,tsx}'",
@@ -71,8 +71,6 @@
     "react-focus-lock": "^2.0.3",
     "react-intl": "^4.6.9",
     "react-remove-scroll": "^2.0.4",
-    "react-router": "5.1.2",
-    "react-router-dom": "5.1.2",
     "react-uid": "^2.2.0",
     "scroll-into-view-if-needed": "^2.2.20",
     "styled-components": "^5.1.0",
@@ -81,7 +79,9 @@
   },
   "peerDependencies": {
     "react": ">=16",
-    "react-dom": ">=16"
+    "react-dom": ">=16",
+    "react-router": "5",
+    "react-router-dom": "5"
   },
   "devDependencies": {
     "@babel/cli": "7.4.4",
@@ -116,6 +116,8 @@
     "@types/react": "16.9.25",
     "@types/react-dom": "16.9.1",
     "@types/react-router-dom": "5.1.0",
+    "@types/react-virtualized-auto-sizer": "^1.0.0",
+    "@types/react-window": "^1.8.2",
     "@types/storybook__addon-actions": "3.4.2",
     "@types/storybook__addon-knobs": "5.0.0",
     "@types/storybook__react": "4.0.1",
@@ -155,7 +157,11 @@
     "react-dom": "^16.13.1",
     "react-live": "^2.2.2",
     "react-markdown": "4.0.8",
+    "react-router": "^5.2.0",
+    "react-router-dom": "^5.2.0",
     "react-test-renderer": "16.8.6",
+    "react-virtualized-auto-sizer": "^1.0.2",
+    "react-window": "^1.8.5",
     "rimraf": "2.6.3",
     "semantic-release": "16.0.0-beta.18",
     "storybook-addon-intl": "2.4.1",
