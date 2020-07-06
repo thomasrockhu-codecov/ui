@@ -1,3 +1,10 @@
+# [2.59.0-beta.2](https://github.com/nordnet/ui/compare/v2.59.0-beta.1@beta...v2.59.0-beta.2@beta) (2020-07-06)
+
+
+### Bug Fixes
+
+* fadedscroll ie11 fix ([5dc2cde](https://github.com/nordnet/ui/commit/5dc2cde))
+
 # [2.59.0-beta.1](https://github.com/nordnet/ui/compare/v2.58.1...v2.59.0-beta.1@beta) (2020-07-03)
 
 
