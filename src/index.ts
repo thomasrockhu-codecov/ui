@@ -71,6 +71,8 @@ import { useKeyPress, useOnClickOutside } from './common/Hooks';
 import theme, { createTheme } from './theme';
 import TrackingContext from './common/tracking';
 
+import { LinkContext, LinkProvider, LinkProviderProps, LinkProps, useLink } from './common/Links';
+
 /** Runtime code */
 export {
   Accordion,
@@ -146,4 +148,9 @@ export {
   useMedia,
   useOnClickOutside,
   VisuallyHidden,
+  LinkContext,
+  LinkProvider,
+  LinkProviderProps,
+  LinkProps,
+  useLink,
 };
