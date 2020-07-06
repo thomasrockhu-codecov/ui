@@ -577,6 +577,7 @@ exports[`Storyshots Organisms | CardWithTabs Integration: with FadedScroll 1`] =
   .c16 {
     max-height: 80px;
     overflow-y: auto;
+    width: 100%;
   }
 }
 
@@ -1017,6 +1018,7 @@ exports[`Storyshots Organisms | CardWithTabs Integration: with FadedScroll of co
     -ms-flex-preferred-size: auto;
     flex-basis: auto;
     overflow-y: auto;
+    width: 100%;
   }
 }
 
