@@ -1,17 +1,7 @@
 import React from 'react';
 import { Cell } from './index';
+import { ExpandButton } from '../shared/ExpandButton/ExpandButton';
 import { ExpandCellComponent } from './Cell.types';
-import { Icon, Button } from '../../..';
-
-const ExpandButton: React.FC<{ expanded: boolean; onClick: () => void; disabled: boolean }> = ({
-  expanded,
-  onClick,
-  disabled,
-}) => (
-  <Button variant="neutral" onClick={onClick} aria-expanded={expanded} disabled={disabled}>
-    {expanded ? <Icon.ChevronUp /> : <Icon.ChevronDown />}
-  </Button>
-);
 
 export const ExpandCell: ExpandCellComponent = ({
   columnId,
