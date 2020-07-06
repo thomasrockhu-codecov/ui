@@ -732,12 +732,37 @@ export const TableWithDifferentSizeProps = () => {
     </StyledDiv>
   );
 
+  const TablesWithDifferentSizesInMobile = () => (
+    <StyledDiv>
+      <Typography type="primary">Small density and font on desktop, large on mobile</Typography>
+      <StyledFlexTable density="l" fontSize="m" md={{ density: 's', fontSize: 's' }}>
+        <FlexTable.HeaderRow>
+          <FlexTable.Header columnId="column1">Header 1</FlexTable.Header>
+          <FlexTable.Header columnId="column2">Header 2</FlexTable.Header>
+          <FlexTable.Header columnId="column3">Header 3</FlexTable.Header>
+        </FlexTable.HeaderRow>
+        <FlexTable.Row>
+          <FlexTable.Cell columnId="column1">Cell 1-1</FlexTable.Cell>
+          <FlexTable.Cell columnId="column2">Cell 1-2</FlexTable.Cell>
+          <FlexTable.Cell columnId="column3">Cell 1-3</FlexTable.Cell>
+        </FlexTable.Row>
+        <FlexTable.Row>
+          <FlexTable.Cell columnId="column1">Cell 2-1</FlexTable.Cell>
+          <FlexTable.Cell columnId="column2">Cell 2-2</FlexTable.Cell>
+          <FlexTable.Cell columnId="column3">Cell 2-3</FlexTable.Cell>
+        </FlexTable.Row>
+      </StyledFlexTable>
+    </StyledDiv>
+  );
+
   return (
     <StyledDiv>
       <Typography type="title3">Tables With Different Densities</Typography>
       <TablesWithDifferentDensitiesExample />
       <Typography type="title3">Tables With Different Font Sizes</Typography>
       <TablesWithDifferentFontSizesExample />
+      <Typography type="title3">Tables With Different Sizes on mobile</Typography>
+      <TablesWithDifferentSizesInMobile />
     </StyledDiv>
   );
 };
@@ -806,6 +831,46 @@ export const ExpandableTableWithDifferentScenarios = () => {
           <FlexTable.Cell columnId="column1">Expandable with children</FlexTable.Cell>
           <FlexTable.Cell columnId="column2">Expandable with children</FlexTable.Cell>
           <FlexTable.Cell columnId="column3">Expandable with children</FlexTable.Cell>
+        </FlexTable.Row>
+      </StyledFlexTable>
+    );
+  };
+
+  const OnlyExpandableOnMobileTable = () => {
+    const columnData = [
+      { label: 'Header 4', value: 'Expandable 4' },
+      { label: 'Header 5', value: 'Expandable 5' },
+      { label: 'Header 6', value: 'Expandable 6' },
+      { label: 'Header 7', value: 'Expandable 7' },
+    ];
+    return (
+      <StyledFlexTable expandable md={{ expandable: false }}>
+        <FlexTable.HeaderRow>
+          <FlexTable.Header columnId="column1">Header 1</FlexTable.Header>
+          <FlexTable.Header columnId="column2">Header 2</FlexTable.Header>
+          <FlexTable.Header columnId="column3">Header 3</FlexTable.Header>
+          <FlexTable.Header columnId="column4" hidden md={{ hidden: false }}>
+            Header 4
+          </FlexTable.Header>
+          <FlexTable.Header columnId="column5" hidden md={{ hidden: false }}>
+            Header 5
+          </FlexTable.Header>
+          <FlexTable.Header columnId="column6" hidden md={{ hidden: false }}>
+            Header 6
+          </FlexTable.Header>
+          <FlexTable.Header columnId="column7" hidden md={{ hidden: false }}>
+            Header 7
+          </FlexTable.Header>
+        </FlexTable.HeaderRow>
+
+        <FlexTable.Row expandItems={columnData} md={{ expandItems: [] }}>
+          <FlexTable.Cell columnId="column1">Expandable</FlexTable.Cell>
+          <FlexTable.Cell columnId="column2">Expandable</FlexTable.Cell>
+          <FlexTable.Cell columnId="column3">Expandable</FlexTable.Cell>
+          <FlexTable.Cell columnId="column4">Expandable 4</FlexTable.Cell>
+          <FlexTable.Cell columnId="column5">Expandable 5</FlexTable.Cell>
+          <FlexTable.Cell columnId="column6">Expandable 6</FlexTable.Cell>
+          <FlexTable.Cell columnId="column7">Expandable 7</FlexTable.Cell>
         </FlexTable.Row>
       </StyledFlexTable>
     );
@@ -975,6 +1040,8 @@ export const ExpandableTableWithDifferentScenarios = () => {
     <StyledDiv>
       <Typography type="title3">Default Expandable Table</Typography>
       <ExpandedTableExample />
+      <Typography type="title3">Only Expandable On Mobile Table</Typography>
+      <OnlyExpandableOnMobileTable />
       <Typography type="title3">Controlled Expandable Table</Typography>
       <ControlledExpandedTableExample />
       <Typography type="title3">Controlled Expandable Table With Own Cell</Typography>
@@ -998,15 +1065,22 @@ const generateTableData = (rowsLength: number, columnsLength: number) =>
     }, {});
   });
 
-const BigTableRow = ({ data }: any) => (
-  <FlexTable.Row>
-    {Object.keys(R.omit(['rowId'], data)).map((valueKey, index) => (
-      <FlexTable.Cell key={data[valueKey].id} columnId={`column${index + 1}`}>
-        {data[valueKey].value}
-      </FlexTable.Cell>
-    ))}
-  </FlexTable.Row>
-);
+const BigTableRow = ({ data }: any) => {
+  const xsColumnKeys = Object.keys(data).filter((_, index) => Boolean(index % 2));
+  const expandItems = xsColumnKeys.map(
+    (key, index) => ({ label: `Header ${index * 2 + 1}`, value: data[key].value }),
+    {},
+  );
+  return (
+    <FlexTable.Row expandItems={expandItems} md={{ expandItems: [] }}>
+      {Object.keys(R.omit(['rowId'], data)).map((valueKey, index) => (
+        <FlexTable.Cell key={data[valueKey].id} columnId={`column${index + 1}`}>
+          {data[valueKey].value}
+        </FlexTable.Cell>
+      ))}
+    </FlexTable.Row>
+  );
+};
 
 const VirtualizedRow: any = styled(FlexTable.Row).attrs({
   style: (p: { style: React.CSSProperties }) => p.style,
@@ -1051,7 +1125,7 @@ export const BigTable = () => {
     }, [tableData, sort]);
 
     return (
-      <FlexTable>
+      <FlexTable expandable md={{ expandable: false }}>
         <FlexTable.HeaderRow>
           {[...Array(columnsLength)].map((_, index) => (
             <FlexTable.Header
@@ -1061,6 +1135,8 @@ export const BigTable = () => {
               onSort={(columnId, nextSortOrder) => {
                 setSort({ columnId, sortOrder: nextSortOrder });
               }}
+              hidden={Boolean(index % 2)}
+              md={{ hidden: false }}
             >
               Header {index + 1}
             </FlexTable.Header>

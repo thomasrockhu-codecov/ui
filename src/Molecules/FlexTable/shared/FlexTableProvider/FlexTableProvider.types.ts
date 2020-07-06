@@ -1,12 +1,14 @@
-import { Density, FontSize } from '../shared.types';
+import { Density, FontSize, MediaRelatedProps } from '../shared.types';
 
-export type FlexTableState = {
+type FlexTableState = {
   density: Density;
   stickyHeader: boolean;
   fontSize: FontSize;
   expandable: boolean;
 };
 
-export type Props = {} & FlexTableState;
+export type Props = MediaRelatedProps<FlexTableState> & FlexTableState;
+
+export type FlexTableContextProps = Props | undefined;
 
 export type FlexTableProviderComponent = React.FC<Props>;
