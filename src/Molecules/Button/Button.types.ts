@@ -24,7 +24,9 @@ export type ButtonProps = {
   type?: 'button' | 'reset' | 'submit';
   to?: ReactRouterDomLinkProps['to'];
   external?: boolean;
+  cms?: boolean;
   rel?: string;
+  target?: '_blank' | '_self';
   colorFn?: ColorFn;
   id?: string;
   as?: any;
@@ -35,9 +37,11 @@ export type ButtonProps = {
   'onMouseEnter' | 'onMouseLeave' | 'onMouseOver'
 >;
 
-type Omit<T, K> = Pick<T, Exclude<keyof T, K>>;
-type ForceRequired<T, K extends keyof T> = Omit<T, K> & Required<Pick<T, K>>;
-
-export type InnerProps = ForceRequired<ButtonProps, 'size'>;
+export type InnerProps = Omit<ButtonProps, 'variant' | 'size' | 'fullWidth' | 'colorFn'> & {
+  $variant?: ButtonProps['variant'];
+  $fullWidth?: ButtonProps['fullWidth'];
+  $size: Exclude<ButtonProps['size'], undefined>;
+  $colorFn?: ColorFn;
+};
 
 export type ButtonComponent = React.FC<ButtonProps>;

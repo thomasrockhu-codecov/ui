@@ -2,7 +2,7 @@ import React from 'react';
 import { action } from '@storybook/addon-actions';
 import { Route } from 'react-router';
 import { Link, Typography } from '../..';
-import { Provider } from './ReactRouterLinkHelper';
+import { Provider } from '../../common/Links/ReactRouterLinkHelper';
 
 export default {
   title: 'Molecules | Link',

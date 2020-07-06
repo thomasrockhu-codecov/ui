@@ -1,13 +1,12 @@
-import React, { useContext } from 'react';
-import R from 'ramda';
+import React, { useContext, FC } from 'react';
 import styled, { ThemeContext } from 'styled-components';
-import { Link as RouterLink } from 'react-router-dom';
 import { ButtonComponent, ButtonProps, InnerProps } from './Button.types';
 import { assert } from '../../common/utils';
 import NormalizedElements from '../../common/NormalizedElements';
 import TrackingContext from '../../common/tracking';
 import ButtonContent from './ButtonContent';
 import { neutralStyles, primaryStyles, secondaryStyles } from './Button.styles';
+import { useLink, LinkProps as RawLinkProps } from '../../common/Links';
 
 const isPrimary = (variant: ButtonProps['variant']) => variant === 'primary';
 const isSecondary = (variant: ButtonProps['variant']) => variant === 'secondary';
@@ -15,11 +14,11 @@ const isNeutral = (variant: ButtonProps['variant']) => variant === 'neutral';
 
 const StyledButton = styled(NormalizedElements.Button)<InnerProps>`
   ${p => {
-    if (isSecondary(p.variant)) {
+    if (isSecondary(p.$variant)) {
       return secondaryStyles;
     }
 
-    if (isNeutral(p.variant)) {
+    if (isNeutral(p.$variant)) {
       return neutralStyles;
     }
 
@@ -30,20 +29,18 @@ const StyledButton = styled(NormalizedElements.Button)<InnerProps>`
   cursor: ${p => (p.disabled ? 'not-allowed' : 'pointer')};
 `;
 
-const CleanRouterLink = React.forwardRef<HTMLAnchorElement, ButtonProps>((props, ref) => (
-  <RouterLink
-    ref={ref}
-    {...R.omit(['fullWidth', 'colorFn', 'color', 'variant', 'size'], props) as any}
-  />
-));
+const CleanLink: FC<RawLinkProps> = props => {
+  const RawLink = useLink();
+  return <RawLink {...props} />;
+};
 
-const StyledLink = styled(CleanRouterLink)<InnerProps>`
+const StyledLink = styled(CleanLink)<InnerProps>`
   ${p => {
-    if (isSecondary(p.variant)) {
+    if (isSecondary(p.$variant)) {
       return secondaryStyles;
     }
 
-    if (isNeutral(p.variant)) {
+    if (isNeutral(p.$variant)) {
       return neutralStyles;
     }
 
@@ -65,13 +62,15 @@ export const Button: ButtonComponent = React.forwardRef<
     variant = 'primary',
     fullWidth,
     to,
-    children,
     rel,
+    target,
+    children,
     id,
     color,
     as,
     loading,
     external,
+    cms,
     onMouseEnter,
     onMouseLeave,
     onMouseOver,
@@ -92,10 +91,10 @@ export const Button: ButtonComponent = React.forwardRef<
     ...rest,
     className,
     onClick: trackClick,
-    size,
-    variant,
-    fullWidth,
-    colorFn: color,
+    $size: size,
+    $variant: variant,
+    $fullWidth: fullWidth,
+    $colorFn: color,
     id,
     onMouseEnter,
     onMouseLeave,
@@ -128,14 +127,12 @@ export const Button: ButtonComponent = React.forwardRef<
       <StyledLink
         {...sharedProps}
         rel={rel}
-        ref={ref as React.Ref<HTMLAnchorElement>}
-        {...(external
-          ? // TODO: unify these parts with link
-            { as: 'a', href: to, target: '_blank', rel: 'noopener noreferrer nofollow' }
-          : {
-              to,
-              as,
-            })}
+        innerRef={ref as React.Ref<HTMLAnchorElement>}
+        external={external}
+        cms={cms}
+        to={to}
+        as={as}
+        target={target}
       >
         <ButtonContent loading={loading} variant={variant} size={size} colorFn={color}>
           {children}

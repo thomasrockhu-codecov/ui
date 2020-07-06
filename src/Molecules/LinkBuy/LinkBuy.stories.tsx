@@ -1,6 +1,6 @@
 import React from 'react';
 import { LinkBuy } from '../..';
-import { Provider } from '../Link/ReactRouterLinkHelper';
+import { Provider } from '../../common/Links/ReactRouterLinkHelper';
 
 export default {
   title: 'Molecules | LinkBuy',
