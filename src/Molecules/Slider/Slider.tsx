@@ -48,7 +48,7 @@ const height = css<InternalSliderTypes>`
       : `${p.theme.spacing.unit(3)}`}px;
 `;
 
-const StyledSliderWrapper = styled('div')<InternalSliderTypes>`
+const StyledSliderWrapper = styled.div<InternalSliderTypes>`
   background: linear-gradient(
     to right,
     ${p => (p.$sliderColor && !p.$disabled ? p.$sliderColor(p.theme) : p.theme.color.sliderColor)}
@@ -61,7 +61,7 @@ const StyledSliderWrapper = styled('div')<InternalSliderTypes>`
   width: 100%;
 `;
 
-const StyledSlider = styled('div')<InternalSliderTypes>`
+const StyledSlider = styled.div<InternalSliderTypes>`
   max-width: 100%;
   ${height};
   position: relative;
