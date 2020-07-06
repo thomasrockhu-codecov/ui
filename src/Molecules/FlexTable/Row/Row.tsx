@@ -31,10 +31,13 @@ const StyledRow = styled(Flexbox).withConfig({
 }>`
   ${p =>
     !p.hideSeparator && !p.expanded ? `border-bottom: 1px solid ${p.separatorColor(p.theme)}` : ''};
+
   padding-right: ${p => (p.expandable ? p.theme.spacing.unit(2) : p.theme.spacing.unit(1))}px;
   padding-left: ${p => (p.expandable ? p.theme.spacing.unit(1.5) : p.theme.spacing.unit(0.5))}px;
+
   border-left: ${p => p.theme.spacing.unit(0.5)}px solid
-    ${p => (p.expanded ? p.theme.color.cta : 'transparent')};
+    ${p => (p.expanded && p.expandable ? p.theme.color.cta : 'transparent')};
+
   ${p =>
     p.hoverHighlight &&
     !p.expanded &&
@@ -152,9 +155,12 @@ const Row: RowComponent & RowComponents = ({
               {component}
             </StyledExpandedRow>
           )}
-          Component={({ expandChildren, expandItems }) => (
-            <ExpandArea expandItems={expandItems} expandChildren={expandChildren} />
-          )}
+          Component={({ expandChildren, expandItems }) => {
+            if (expandItems.length === 0 && !expandChildren) {
+              return null;
+            }
+            return <ExpandArea expandItems={expandItems} expandChildren={expandChildren} />;
+          }}
         />
       )}
     </>
