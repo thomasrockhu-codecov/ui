@@ -1,10 +1,11 @@
 import React from 'react';
 import { getFontSizeTypographyType } from '../../shared/textUtils';
 import { TextWrapperComponent } from './HeaderContent.types';
-import { TruncateWithTooltip, Typography } from '../../../..';
+import { Typography } from '../../../..';
+import { StyledTruncateTooltip } from '../../shared';
 
 export const TextWrapper: TextWrapperComponent = ({ fontSize = 'm', sorted, children }) => (
-  <TruncateWithTooltip label={children}>
+  <StyledTruncateTooltip label={children}>
     <Typography
       type={getFontSizeTypographyType(fontSize)}
       color={t => (sorted ? t.color.text : t.color.label)}
@@ -12,5 +13,5 @@ export const TextWrapper: TextWrapperComponent = ({ fontSize = 'm', sorted, chil
     >
       {children}
     </Typography>
-  </TruncateWithTooltip>
+  </StyledTruncateTooltip>
 );

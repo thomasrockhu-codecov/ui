@@ -13,9 +13,9 @@
     "node": ">=10"
   },
   "scripts": {
-    "test": "jest",
+    "test": "TZ=UTC jest",
     "tdd": "npm run test -- --watch",
-    "test-ci": "jest --coverage --ci && codecov",
+    "test-ci": "TZ=UTC jest --coverage --ci && codecov",
     "dev": "start-storybook -p 6006 -s ./static",
     "lint:js": "eslint --ext=.tsx --ext=.ts src",
     "lint:css": "stylelint './src/**/*.{ts,tsx}'",
