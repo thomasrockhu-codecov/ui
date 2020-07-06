@@ -640,6 +640,7 @@ exports[`Storyshots Molecules | CardWithTitle Integration: with FadedScroll 1`] 
   .c6 {
     max-height: 200px;
     overflow-y: auto;
+    width: 100%;
   }
 }
 
@@ -865,6 +866,7 @@ exports[`Storyshots Molecules | CardWithTitle Integration: with FadedScroll of c
     -ms-flex-preferred-size: auto;
     flex-basis: auto;
     overflow-y: auto;
+    width: 100%;
   }
 }
 
