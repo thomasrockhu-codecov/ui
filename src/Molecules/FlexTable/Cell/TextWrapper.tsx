@@ -1,12 +1,13 @@
 import React from 'react';
-import { Typography, TruncateWithTooltip } from '../../..';
+import { Typography } from '../../..';
 import { TextWrapperComponent } from './Cell.types';
 import { getFontSizeTypographyType } from '../shared/textUtils';
+import { StyledTruncateTooltip } from '../shared';
 
 export const TextWrapper: TextWrapperComponent = ({ fontSize = 'm', children }) => (
-  <TruncateWithTooltip label={children}>
+  <StyledTruncateTooltip label={children}>
     <Typography type={getFontSizeTypographyType(fontSize)} color={t => t.color.text}>
       {children}
     </Typography>
-  </TruncateWithTooltip>
+  </StyledTruncateTooltip>
 );

@@ -15,6 +15,7 @@ export const scrollStyles = css<Pick<Props, 'maxHeight'>>`
       ? `max-height: ${getValueFromNumberOrString(p.maxHeight, p.theme)};`
       : flexAutoHeightStyles}
   overflow-y: auto;
+  width: 100%;
 `;
 
 export const scrollDesktopStyles = css<Pick<Props, 'maxHeight'>>`

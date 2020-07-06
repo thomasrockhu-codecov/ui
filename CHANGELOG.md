@@ -1,3 +1,25 @@
+## [2.58.2](https://github.com/nordnet/ui/compare/v2.58.1...v2.58.2) (2020-07-03)
+
+
+### Bug Fixes
+
+* fadedscroll ie11 fix ([5dc2cde](https://github.com/nordnet/ui/commit/5dc2cde))
+
+## [2.58.1](https://github.com/nordnet/ui/compare/v2.58.0...v2.58.1) (2020-07-03)
+
+
+### Bug Fixes
+
+* 🐛 table alignment on header and cell ([124addf](https://github.com/nordnet/ui/commit/124addf))
+
+# [2.58.0](https://github.com/nordnet/ui/compare/v2.57.0...v2.58.0) (2020-07-03)
+
+
+### Features
+
+* 🎸 add cell inline container ([ccef566](https://github.com/nordnet/ui/commit/ccef566))
+* 🎸 add spacing between cells ([b14a4b1](https://github.com/nordnet/ui/commit/b14a4b1))
+
 # [2.57.0](https://github.com/nordnet/ui/compare/v2.56.1...v2.57.0) (2020-07-02)
 
 
