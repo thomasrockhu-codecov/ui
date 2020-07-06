@@ -48,6 +48,9 @@ const StyledRow = styled(Flexbox).withConfig({
   padding-top: ${p => getDensityPaddings(p.density)}px;
   padding-bottom: ${p => getDensityPaddings(p.density)}px;
 
+  margin-right: 0;
+  margin-left: 0;
+
   & > * {
     &:first-child {
       padding-left: 0;
