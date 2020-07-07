@@ -1,3 +1,10 @@
+## [2.59.1](https://github.com/nordnet/ui/compare/v2.59.0...v2.59.1) (2020-07-07)
+
+
+### Bug Fixes
+
+* not packing storyshots in package ([86c36be](https://github.com/nordnet/ui/commit/86c36be))
+
 # [2.59.0](https://github.com/nordnet/ui/compare/v2.58.2...v2.59.0) (2020-07-06)
 
 

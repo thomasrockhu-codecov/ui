@@ -2,9 +2,13 @@
 !dist
 !dist/**/*
 dist/**/*.test*
+dist/**/*.storyshot*
+
 !src
 !src/**/*
 src/**/*.test*
+src/**/*.storyshot*
+
 !bin
 !package.json
 !tsconfig.json
