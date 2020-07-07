@@ -1,16 +1,22 @@
-# [2.59.0-beta.2](https://github.com/nordnet/ui/compare/v2.59.0-beta.1@beta...v2.59.0-beta.2@beta) (2020-07-06)
+# [2.59.0](https://github.com/nordnet/ui/compare/v2.58.2...v2.59.0) (2020-07-06)
 
 
 ### Bug Fixes
 
-* fadedscroll ie11 fix ([5dc2cde](https://github.com/nordnet/ui/commit/5dc2cde))
-
-# [2.59.0-beta.1](https://github.com/nordnet/ui/compare/v2.58.1...v2.59.0-beta.1@beta) (2020-07-03)
+* 🐛 expandable styling when resizing ([7b8b094](https://github.com/nordnet/ui/commit/7b8b094))
+* 🐛 remove negiative margin for row ([4341b8e](https://github.com/nordnet/ui/commit/4341b8e))
+* 🐛 use shared export expand button in expand cell ([c57a39d](https://github.com/nordnet/ui/commit/c57a39d))
 
 
 ### Features
 
-* 🎸 bump react-intl to v4 ([4588508](https://github.com/nordnet/ui/commit/4588508))
+* 🎸 add screen breakpoints expand props on row ([2ad2345](https://github.com/nordnet/ui/commit/2ad2345))
+* 🎸 set flextable props for different screen sizes ([95b7131](https://github.com/nordnet/ui/commit/95b7131))
+* wip add expandable media props to flex table rows ([015b2f0](https://github.com/nordnet/ui/commit/015b2f0))
+* wip extract media render to separate function ([73d5509](https://github.com/nordnet/ui/commit/73d5509))
+* wip fix render media func. and extract to shared ([c9620ca](https://github.com/nordnet/ui/commit/c9620ca))
+* wip render expand on different screens ([39035c8](https://github.com/nordnet/ui/commit/39035c8))
+
 ## [2.58.2](https://github.com/nordnet/ui/compare/v2.58.1...v2.58.2) (2020-07-03)
 
 
