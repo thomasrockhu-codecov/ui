@@ -1,0 +1,39 @@
+import React, { FC } from 'react';
+import { MemoryRouter, Link as RRLink } from 'react-router-dom';
+import { LinkProvider, LinkProps } from '.';
+
+export const RawLink: FC<LinkProps> = props => {
+  const {
+    innerRef,
+    to,
+    external,
+    cms,
+    children,
+    className,
+    target = external ? '_blank' : undefined,
+    rel = external ? 'noopener noreferrer nofollow' : undefined,
+    ...rest
+  } = props;
+  if (cms || external) {
+    return (
+      <a href={to} ref={innerRef} target={target} rel={rel} className={className} {...rest}>
+        {children}
+      </a>
+    );
+  }
+  return (
+    <RRLink ref={innerRef as any} className={className} to={to} rel={rel} target={target} {...rest}>
+      {children}
+    </RRLink>
+  );
+};
+
+export const Provider: FC = ({ children }) => {
+  return (
+    <MemoryRouter>
+      <LinkProvider link={RawLink}>
+        <>{children}</>
+      </LinkProvider>
+    </MemoryRouter>
+  );
+};

@@ -14,6 +14,7 @@
   },
   "scripts": {
     "test": "TZ=UTC jest",
+    "tdd": "npm run test -- --watch",
     "test-ci": "TZ=UTC jest --coverage --ci && codecov",
     "dev": "start-storybook -p 6006 -s ./static",
     "lint:js": "eslint --ext=.tsx --ext=.ts src",
@@ -79,13 +80,12 @@
   },
   "peerDependencies": {
     "react": ">=16",
-    "react-dom": ">=16",
-    "react-router": "5",
-    "react-router-dom": "5"
+    "react-dom": ">=16"
   },
   "devDependencies": {
     "@babel/cli": "7.4.4",
     "@babel/core": "7.4.4",
+    "@babel/helper-validator-identifier": "^7.10.4",
     "@babel/plugin-proposal-class-properties": "7.4.4",
     "@babel/plugin-transform-runtime": "^7.4.4",
     "@babel/preset-env": "7.4.4",

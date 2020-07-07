@@ -1,10 +1,9 @@
 import React from 'react';
 import styled from 'styled-components';
-import { HashRouter } from 'react-router-dom';
 import MD from 'react-markdown';
 import docs from './CardWithTitle.md';
 
-import { Box, CardWithTitle, FadedScroll, Flexbox, Icon, Link, Typography } from '../..';
+import { Box, CardWithTitle, FadedScroll, Flexbox, Icon, Typography } from '../..';
 
 const Text = styled.span`
   display: inline-block;
@@ -107,24 +106,20 @@ export const integrationCardWithTitleWithCustomComponentAsTitle = () => {
         </Typography>
       </Flexbox>
       <Flexbox item>
-        <Link to="www.google.com">
-          <Typography type="secondary" color={t => t.color.text} weight="bold">
-            Marknadsöversikt
-          </Typography>
-          <PaddedIcon inline color={t => t.color.cta} size={3} />
-        </Link>
+        <Typography type="secondary" color={t => t.color.text} weight="bold">
+          Marknadsöversikt (Not Really a link)
+        </Typography>
+        <PaddedIcon inline color={t => t.color.cta} size={3} />
       </Flexbox>
     </Flexbox>
   );
 
   return (
-    <HashRouter>
-      <CardWithTitle title={CustomTitle}>
-        <Box px={5} pb={5}>
-          <MockedContent />
-        </Box>
-      </CardWithTitle>
-    </HashRouter>
+    <CardWithTitle title={CustomTitle}>
+      <Box px={5} pb={5}>
+        <MockedContent />
+      </Box>
+    </CardWithTitle>
   );
 };
 
