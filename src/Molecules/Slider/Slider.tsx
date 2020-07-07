@@ -48,6 +48,10 @@ const height = css<InternalSliderTypes>`
       : `${p.theme.spacing.unit(3)}`}px;
 `;
 
+const cursor = css<InternalSliderTypes>`
+  cursor: ${p => (p.$disabled ? 'not-allowed' : 'default')};
+`;
+
 const StyledSliderWrapper = styled.div<InternalSliderTypes>`
   background: linear-gradient(
     to right,
@@ -59,6 +63,7 @@ const StyledSliderWrapper = styled.div<InternalSliderTypes>`
   ${height};
   max-width: 100%;
   width: 100%;
+  ${cursor}
 `;
 
 const StyledSlider = styled.div<InternalSliderTypes>`
@@ -69,6 +74,7 @@ const StyledSlider = styled.div<InternalSliderTypes>`
     100% - ${p => (p.$variant === VARIANT_TYPES.SMALL ? `${THUMB_SMALL}` : `${THUMB_BIG}`)}px
   );
   margin: 0 auto;
+  ${cursor}
 `;
 
 const getPercentage = (current: number, min: number, max: number) =>
@@ -95,16 +101,18 @@ const StyledThumb = styled('div')<InternalSliderTypes>`
     }`};
   border: ${p =>
     p.$disabled ? `${p.theme.spacing.unit(1)}px solid ${p.theme.color.sliderDisabled}` : ''};
-  cursor: grab;
+  cursor: ${p => (p.$disabled ? 'not-allowed' : 'grab')};
   ${focusedThumbStyle}
   ${pressedThumbStyle}
 `;
 
 const getLeft: getLeftFn = (percentage, variant) => {
   return `calc(${percentage}% - ${
-    variant === 'big' ? `${THUMB_BIG / 2}` : `${THUMB_SMALL / 2}`
+    variant === 'big' ? `${THUMB_BIG / 2 + 1}` : `${THUMB_SMALL / 2}` // + 1 to make left side of the slider look
+    // good when magnified
   }px)`;
 };
+
 const Slider: FC<Props> = ({
   onChange,
   value,
@@ -241,6 +249,7 @@ const Slider: FC<Props> = ({
         onClick={handleSliderClick}
         $sliderColor={sliderColor}
         $variant={variant}
+        $disabled={disabled}
       >
         <StyledThumb
           $sliderColor={sliderColor}
