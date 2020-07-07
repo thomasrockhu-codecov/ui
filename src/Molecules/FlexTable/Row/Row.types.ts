@@ -3,8 +3,9 @@ import {
   ExpandItems,
   ExpandItemComponent,
   ExpandItemsComponent,
-} from './ExpandItems/ExpandItems.types';
+} from './components/ExpandItems/ExpandItems.types';
 import { ColorFn } from '../../../common/Types/sharedTypes';
+import { MediaRelatedProps } from '../shared/shared.types';
 
 type HtmlProps = {} & React.HTMLAttributes<HTMLDivElement>;
 
@@ -25,6 +26,7 @@ interface ExcludeExpand extends Expand {
 }
 
 export type ExpandProps = IncludeExpand | ExcludeExpand;
+export type ExpandAreaProps = Expand;
 
 type Props = {
   hideSeparator?: boolean;
@@ -32,6 +34,7 @@ type Props = {
   separatorColor?: ColorFn;
   isContent?: boolean;
 } & ExpandProps &
+  MediaRelatedProps<Pick<Expand, 'expandItems' | 'expandChildren'>> &
   HtmlProps;
 
 export type RowComponents = {
