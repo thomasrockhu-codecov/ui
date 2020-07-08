@@ -1,13 +1,12 @@
 import { Meta, Story, Preview, Props } from '@storybook/addon-docs/blocks';
 import FlexTable from './FlexTable';
-import {Button} from "../../.."
 
 <Meta title="Molecules | FlexTable" component={FlexTable} />
 
 # FlexTable
 
-Flextable is a table component built using the `Flexbox` component to allow responsive headers and columns. 
-The Flextable component only handles UI states. 
+Flextable is a table component built using the `Flexbox` component to allow responsive headers and columns.
+The Flextable component only handles UI states.
 
 <Preview>
   <FlexTable>
@@ -34,21 +33,31 @@ The Flextable component only handles UI states.
   </FlexTable>
 </Preview>
 
-
 ## Row
+
+Row has the important feature of managing expand states. For it to know how to handle an out-of-the-box-expand it needs `expandItems` and/or `expandChildren`, alongside the parent `FlexTable` having `expandable = true`. If neither of `expandItems` or `expandChildren` are supplied, the chevron will be disabled.
 
 ### Header Row & Footer Row
 
+Header Row and Footer Row has the same functionality as an ordinary `Row` but with other default properties to fulfill their purpose.
+Most notably, the property `isContent` is set to `false`.
+This keeps the row from rendering a chevron and instead provides a empty `Header` with fixed properties with the same `columnId` as all the chevrons in the table.
+
 ## Header
-Header sets the layout for the entire column and handles sorting aswell. The layout is set using the same properties that `Flexbox`uses. Setting the same `columnId` on `Cell` and `Footer` makes them inherit the layout properties.
-The `fontSize` and `density` defined in the `FlexTable` component is inherited here. If the content does not fit within the `Header`, it will be truncated and produces a tooltip on hover
+
+Header sets the layout for the entire column and handles sorting as well. The layout is set using the same properties that `Flexbox`uses. Setting the same `columnId` on `Cell` and `Footer` makes them inherit the layout properties.
+The `fontSize` and `density` defined in the `FlexTable` component is inherited here. If the content does not fit within the `Header`, it will be truncated and produces a tooltip on hover.
 
 <Preview>
   <FlexTable>
     <FlexTable.HeaderRow>
       <FlexTable.Header columnId="instrument-name">Instrument Name (default)</FlexTable.Header>
-      <FlexTable.Header columnId="currency" flex="0 0 150px">Currency (150px)</FlexTable.Header>
-      <FlexTable.Header columnId="country" justifyContent="flex-end" flex="2">Country (flex 2, justify end)</FlexTable.Header>
+      <FlexTable.Header columnId="currency" flex="0 0 150px">
+        Currency (150px)
+      </FlexTable.Header>
+      <FlexTable.Header columnId="country" justifyContent="flex-end" flex="2">
+        Country (flex 2, justify end)
+      </FlexTable.Header>
     </FlexTable.HeaderRow>
     <FlexTable.Row>
       <FlexTable.Cell columnId="instrument-name">Ericsson</FlexTable.Cell>
@@ -58,9 +67,18 @@ The `fontSize` and `density` defined in the `FlexTable` component is inherited h
   </FlexTable>
 </Preview>
 
+`Header` features conditional hiding based on `Media`. To hide columns e.g. if size `md` or smaller:
+
+```jsx
+<FlexTable.Header columnId="id" hidden md={{ hidden: false }}>
+  Hidden on mobile
+</FlexTable.Header>
+```
+
 ### Sorting
-To enable sorting, the `sortable` property has to be set to true. The user can have either a controlled or uncontrolled sorting state by setting the `sortOrder` property. 
-In an uncontrolled state the header will unsort the other headers when a header is sorted. The default sorting rotation is *unsorted --> ascending --> descending --> unsorted*
+
+To enable sorting, the `sortable` property has to be set to true. The user can have either a controlled or uncontrolled sorting state by setting the `sortOrder` property.
+In an uncontrolled state the header will unsort the other headers when a header is sorted. The default sorting rotation is _unsorted --> ascending --> descending --> unsorted_
 
 ```jsx
 const data = [
@@ -78,8 +96,8 @@ const InstrumentTable = () => (
 
     // Array sort mutates the original array, therefore you should always make a copy
     return data.slice(0).sort(
-      (instrumentA,instrumentB ) => 
-        sorting.sortOrder === FlexTable.CONSTANTS.SORT_ORDER_ASCENDING 
+      (instrumentA,instrumentB ) =>
+        sorting.sortOrder === FlexTable.CONSTANTS.SORT_ORDER_ASCENDING
         ? instrumentA[sorting.columnId].toLocaleCompare(instrumentB[sorting.columnId])
         : instrumentB[sorting.columnId].toLocaleCompare(instrumentA[sorting.columnId]);
       );
@@ -106,9 +124,34 @@ const InstrumentTable = () => (
 
 ## Cell
 
+Cell consumes the properties of the `Header` with the same `columnId`.
+Cell wraps an `<InnerCell>` component that uses `React.memo` so that content is not rerendered on sort.
+This also enables us retain TextWrapper-type on export.
+
 ## Footer
 
+Similar functionality to `Cell`.
+
 ## Constants
+
+1. `SORT_ORDER_NONE` / `SORT_ORDER_ASCENDING` / `SORT_ORDER_DESCENDING`
+
+   To handle the correct `string` for sort orders. Are `'none'`, `'ascending'` and `'descending'` respectively.
+
+1. `COLUMN_ID_EXPAND = 'column-expand'`
+
+   The `id` that is assigned to `HeaderRow`'s empty `Header` and `Row`'s chevron.
+
+1. `ICON_COLUMN_DEFAULT_FLEX_PROPS`
+
+Assigns the `HeaderRow`'s empty `Header` its fixed properties:
+
+```jsx
+const ICON_COLUMN_DEFAULT_FLEX_PROPS: Pick<FlexPropsType, 'justifyContent' | 'flex'> = {
+  justifyContent: 'flex-end',
+  flex: `0 20px`,
+};
+```
 
 ## Component parts
 
