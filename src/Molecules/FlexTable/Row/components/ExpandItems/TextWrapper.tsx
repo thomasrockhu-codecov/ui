@@ -1,8 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
-import { Typography, Media } from '../../../..';
-import { useFlexTable } from '../../shared/FlexTableProvider';
-import { getFontSizeTypographyType } from '../../shared/textUtils';
+import { Typography, Media } from '../../../../..';
+import { useFlexTable } from '../../../shared/FlexTableProvider';
+import { getFontSizeTypographyType } from '../../../shared/textUtils';
 
 const StyledTypography = styled(Typography)`
   display: inline-block;

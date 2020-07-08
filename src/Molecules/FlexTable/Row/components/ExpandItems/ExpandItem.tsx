@@ -1,18 +1,14 @@
 import React from 'react';
 import styled from 'styled-components';
-import { isElement } from '../../../../common/utils';
-import { Flexbox, LabeledValue, Media } from '../../../..';
+import { isElement } from '../../../../../common/utils';
+import { Flexbox, LabeledValue, Media } from '../../../../..';
 import { ExpandItemComponent, ExpandItemProps } from './ExpandItems.types';
-import { Props as FlexBoxProps } from '../../../../Atoms/Flexbox/Flexbox.types';
+import { Props as FlexBoxProps } from '../../../../../Atoms/Flexbox/Flexbox.types';
 import { TextWrapperLabel, TextWrapperValue } from './TextWrapper';
 
 const StyledFlexboxItem = styled(Flexbox)<FlexBoxProps>`
   max-width: ${p => p.theme.spacing.unit(75)}px;
   padding-bottom: ${p => p.theme.spacing.unit(5)}px;
-`;
-
-const StyledLabeledValue = styled(LabeledValue)`
-  overflow: hidden;
 `;
 
 const MobileItem: React.FC<{ item: ExpandItemProps }> = ({ item }) => (
@@ -28,11 +24,11 @@ const MobileItem: React.FC<{ item: ExpandItemProps }> = ({ item }) => (
 
 const DesktopItem: React.FC<{ item: ExpandItemProps }> = ({ item }) => (
   <StyledFlexboxItem item as="li">
-    <StyledLabeledValue
+    <LabeledValue
       label={isElement(item.label) ? item.label : <TextWrapperLabel>{item.label}</TextWrapperLabel>}
     >
       {isElement(item.value) ? item.value : <TextWrapperValue>{item.value}</TextWrapperValue>}
-    </StyledLabeledValue>
+    </LabeledValue>
   </StyledFlexboxItem>
 );
 
