@@ -47,7 +47,10 @@ const cursor = css<InternalSliderTypes>`
 `;
 
 const Container = styled.div<InternalSliderTypes>`
-  height: ${p => (p.$variant === VARIANT_TYPES.SMALL ? 14 : 22)}px;
+  height: ${p => (p.$variant === VARIANT_TYPES.SMALL ? THUMB_SMALL : THUMB_BIG)}px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 `;
 
 const StyledSliderWrapper = styled.div<InternalSliderTypes>`
