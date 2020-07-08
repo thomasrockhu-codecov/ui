@@ -13,14 +13,8 @@ const pressedThumbStyle = css<InternalSliderTypes>`
       const thumbColor = p.$sliderColor ? p.$sliderColor(p.theme) : '';
       return !p.$disabled && `${thumbColor ? Color(thumbColor).darken(0.1) : ''}`;
     }};
-    height: ${p =>
-      p.$variant === VARIANT_TYPES.SMALL
-        ? `${THUMB_SMALL - p.theme.spacing.unit(1)}`
-        : `${THUMB_BIG - p.theme.spacing.unit(1.25)}`}px;
-    width: ${p =>
-      p.$variant === VARIANT_TYPES.SMALL
-        ? `${THUMB_SMALL - p.theme.spacing.unit(1)}`
-        : `${THUMB_BIG - p.theme.spacing.unit(1.25)}`}px;
+    height: ${p => (p.$variant === VARIANT_TYPES.SMALL ? THUMB_SMALL - 4 : THUMB_BIG - 6)}px;
+    width: ${p => (p.$variant === VARIANT_TYPES.SMALL ? THUMB_SMALL - 4 : THUMB_BIG - 6)}px;
   }
 `;
 
@@ -50,6 +44,10 @@ const height = css<InternalSliderTypes>`
 
 const cursor = css<InternalSliderTypes>`
   cursor: ${p => (p.$disabled ? 'not-allowed' : 'default')};
+`;
+
+const Container = styled.div<InternalSliderTypes>`
+  height: ${p => (p.$variant === VARIANT_TYPES.SMALL ? 14 : 22)}px;
 `;
 
 const StyledSliderWrapper = styled.div<InternalSliderTypes>`
@@ -242,34 +240,36 @@ const Slider: FC<Props> = ({
   };
 
   return (
-    <StyledSliderWrapper $sliderColor={sliderColor} $variant={variant} $disabled={disabled}>
-      <StyledSlider
-        ref={sliderRef}
-        style={disabled ? disabledBackground : sliderBackground}
-        onClick={handleSliderClick}
-        $sliderColor={sliderColor}
-        $variant={variant}
-        $disabled={disabled}
-      >
-        <StyledThumb
+    <Container $variant={variant}>
+      <StyledSliderWrapper $sliderColor={sliderColor} $variant={variant} $disabled={disabled}>
+        <StyledSlider
+          ref={sliderRef}
+          style={disabled ? disabledBackground : sliderBackground}
+          onClick={handleSliderClick}
           $sliderColor={sliderColor}
-          tabIndex={0}
-          ref={thumbRef}
-          onClick={handleThumbClick}
-          onMouseDown={handleMouseDown}
-          onMouseUp={handleMouseUp}
-          onTouchStart={handleTouchStart}
-          onKeyDown={handleKeyDown}
-          style={{ left: getLeft(initialPercentage, variant) }}
-          role="slider"
-          aria-valuemin={min}
-          aria-valuenow={value}
-          aria-valuemax={max}
           $variant={variant}
           $disabled={disabled}
-        />
-      </StyledSlider>
-    </StyledSliderWrapper>
+        >
+          <StyledThumb
+            $sliderColor={sliderColor}
+            tabIndex={0}
+            ref={thumbRef}
+            onClick={handleThumbClick}
+            onMouseDown={handleMouseDown}
+            onMouseUp={handleMouseUp}
+            onTouchStart={handleTouchStart}
+            onKeyDown={handleKeyDown}
+            style={{ left: getLeft(initialPercentage, variant) }}
+            role="slider"
+            aria-valuemin={min}
+            aria-valuenow={value}
+            aria-valuemax={max}
+            $variant={variant}
+            $disabled={disabled}
+          />
+        </StyledSlider>
+      </StyledSliderWrapper>
+    </Container>
   );
 };
 
