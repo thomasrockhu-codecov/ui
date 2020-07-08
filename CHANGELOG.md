@@ -1,3 +1,21 @@
+# [2.60.0](https://github.com/nordnet/ui/compare/v2.59.2...v2.60.0) (2020-07-08)
+
+
+### Bug Fixes
+
+* add proper default variant, not-allowed cursor on disabled variant ([51049c5](https://github.com/nordnet/ui/commit/51049c5))
+* add slider container ([213d7c7](https://github.com/nordnet/ui/commit/213d7c7))
+* change div sc call ([0161adc](https://github.com/nordnet/ui/commit/0161adc))
+* merge master ([a5cfaa6](https://github.com/nordnet/ui/commit/a5cfaa6))
+* merge master ([19c309a](https://github.com/nordnet/ui/commit/19c309a))
+* set container height to total height ([9c83a38](https://github.com/nordnet/ui/commit/9c83a38))
+
+
+### Features
+
+* add disabled option to slider ([fe8e5a7](https://github.com/nordnet/ui/commit/fe8e5a7))
+* slider component rebuild ([12c2a90](https://github.com/nordnet/ui/commit/12c2a90))
+
 ## [2.59.2](https://github.com/nordnet/ui/compare/v2.59.1...v2.59.2) (2020-07-08)
 
 
