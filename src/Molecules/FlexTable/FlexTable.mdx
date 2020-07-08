@@ -1,14 +1,117 @@
 import { Meta, Story, Preview, Props } from '@storybook/addon-docs/blocks';
 import FlexTable from './FlexTable';
+import {Button} from "../../.."
 
 <Meta title="Molecules | FlexTable" component={FlexTable} />
 
 # FlexTable
 
+Flextable is a table component built using the `Flexbox` component to allow responsive headers and columns. 
+The Flextable component only handles UI states. 
+
+<Preview>
+  <FlexTable>
+    <FlexTable.HeaderRow>
+      <FlexTable.Header columnId="instrument-name">Instrument Name</FlexTable.Header>
+      <FlexTable.Header columnId="currency">Currency</FlexTable.Header>
+      <FlexTable.Header columnId="country">Country</FlexTable.Header>
+    </FlexTable.HeaderRow>
+    <FlexTable.Row>
+      <FlexTable.Cell columnId="instrument-name">Ericsson</FlexTable.Cell>
+      <FlexTable.Cell columnId="currency">SEK</FlexTable.Cell>
+      <FlexTable.Cell columnId="country">SE</FlexTable.Cell>
+    </FlexTable.Row>
+    <FlexTable.Row>
+      <FlexTable.Cell columnId="instrument-name">Apple</FlexTable.Cell>
+      <FlexTable.Cell columnId="currency">USD</FlexTable.Cell>
+      <FlexTable.Cell columnId="country">US</FlexTable.Cell>
+    </FlexTable.Row>
+    <FlexTable.Row>
+      <FlexTable.Cell columnId="instrument-name">Nokia</FlexTable.Cell>
+      <FlexTable.Cell columnId="currency">EUR</FlexTable.Cell>
+      <FlexTable.Cell columnId="country">FI</FlexTable.Cell>
+    </FlexTable.Row>
+  </FlexTable>
+</Preview>
+
+
+## Row
+
+### Header Row & Footer Row
+
+## Header
+Header sets the layout for the entire column and handles sorting aswell. The layout is set using the same properties that `Flexbox`uses. Setting the same `columnId` on `Cell` and `Footer` makes them inherit the layout properties.
+The `fontSize` and `density` defined in the `FlexTable` component is inherited here. If the content does not fit within the `Header`, it will be truncated and produces a tooltip on hover
+
+<Preview>
+  <FlexTable>
+    <FlexTable.HeaderRow>
+      <FlexTable.Header columnId="instrument-name">Instrument Name (default)</FlexTable.Header>
+      <FlexTable.Header columnId="currency" flex="0 0 150px">Currency (150px)</FlexTable.Header>
+      <FlexTable.Header columnId="country" justifyContent="flex-end" flex="2">Country (flex 2, justify end)</FlexTable.Header>
+    </FlexTable.HeaderRow>
+    <FlexTable.Row>
+      <FlexTable.Cell columnId="instrument-name">Ericsson</FlexTable.Cell>
+      <FlexTable.Cell columnId="currency">SEK</FlexTable.Cell>
+      <FlexTable.Cell columnId="country">SE</FlexTable.Cell>
+    </FlexTable.Row>
+  </FlexTable>
+</Preview>
+
+### Sorting
+To enable sorting, the `sortable` property has to be set to true. The user can have either a controlled or uncontrolled sorting state by setting the `sortOrder` property. 
+In an uncontrolled state the header will unsort the other headers when a header is sorted. The default sorting rotation is *unsorted --> ascending --> descending --> unsorted*
+
 ```jsx
-<FlexTable>
-<FlexTable.HeaderRow>
-<FlexTable.Header columnId="test2"></FlexTable.Header>
-</FlexTable.HeaderRow>
-</FlexTable>
+const data = [
+  {instrumentName: "Ericsson", currency: "SEK", country: "SE"},
+  {instrumentName: "Apple", currency: "USD", country: "US"},
+  {instrumentName: "Nokia", currency: "EUR", country: "FI"}
+];
+
+const InstrumentTable = () => (
+  const [sorting, setSorting] = useState({columnId: "instrumentName", sortOrder: FlexTable.CONSTANTS.SORT_ORDER_NONE});
+  const sortedData = useMemo(() => {
+    if(sorting.sortOrder === FlexTable.CONSTANTS.SORT_ORDER_NONE){
+      return data;
+    }
+
+    // Array sort mutates the original array, therefore you should always make a copy
+    return data.slice(0).sort(
+      (instrumentA,instrumentB ) => 
+        sorting.sortOrder === FlexTable.CONSTANTS.SORT_ORDER_ASCENDING 
+        ? instrumentA[sorting.columnId].toLocaleCompare(instrumentB[sorting.columnId])
+        : instrumentB[sorting.columnId].toLocaleCompare(instrumentA[sorting.columnId]);
+      );
+  }, [sorting, data]);
+
+  return (
+    <FlexTable>
+      <FlexTable.HeaderRow>
+        <FlexTable.Header columnId="instrumentName" sortable>Instrument Name</FlexTable.Header>
+        <FlexTable.Header columnId="currency" sortable>Currency</FlexTable.Header>
+        <FlexTable.Header columnId="country" sortable>Country</FlexTable.Header>
+      </FlexTable.HeaderRow>
+      {sortedData.map(({instrumentName, currency, country}) => (
+        <FlexTable.Row>
+          <FlexTable.Cell columnId="instrumentName">{instrumentName}</FlexTable.Cell>
+          <FlexTable.Cell columnId="currency">{currency}</FlexTable.Cell>
+          <FlexTable.Cell columnId="country">{country}</FlexTable.Cell>
+        </FlexTable.Row>
+      ))}
+    </FlexTable>
+  )
+);
 ```
+
+## Cell
+
+## Footer
+
+## Constants
+
+## Component parts
+
+## Responsitivity
+
+## Performance
