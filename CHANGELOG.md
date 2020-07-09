@@ -1,12 +1,10 @@
 # [2.60.0-beta.2](https://github.com/nordnet/ui/compare/v2.60.0-beta.1@beta...v2.60.0-beta.2@beta) (2020-07-07)
 
-
 ### Bug Fixes
 
 * cleaned dependencies ([8ded330](https://github.com/nordnet/ui/commit/8ded330))
 * exposing the new link helpers ([c61a24a](https://github.com/nordnet/ui/commit/c61a24a))
 * innerref needs to be specifically handled in defaultlink ([017f8da](https://github.com/nordnet/ui/commit/017f8da))
-
 
 ### Features
 
@@ -15,7 +13,6 @@
 * 🎸 links no longer depend on react-router ([2ffc4d1](https://github.com/nordnet/ui/commit/2ffc4d1))
 * 🎸 navtabs.item accepts active, no router ([a2e0970](https://github.com/nordnet/ui/commit/a2e0970))
 * 🎸 new linkprovider tested with tabnavs ([0f576a7](https://github.com/nordnet/ui/commit/0f576a7))
-
 
 ### BREAKING CHANGES
 
@@ -32,6 +29,36 @@ react-router.
 ### Features
 
 * 🎸 bump react-intl to v4 ([4588508](https://github.com/nordnet/ui/commit/4588508))
+
+# [2.60.0](https://github.com/nordnet/ui/compare/v2.59.2...v2.60.0) (2020-07-08)
+
+### Bug Fixes
+
+* add proper default variant, not-allowed cursor on disabled variant ([51049c5](https://github.com/nordnet/ui/commit/51049c5))
+* add slider container ([213d7c7](https://github.com/nordnet/ui/commit/213d7c7))
+* change div sc call ([0161adc](https://github.com/nordnet/ui/commit/0161adc))
+* merge master ([a5cfaa6](https://github.com/nordnet/ui/commit/a5cfaa6))
+* merge master ([19c309a](https://github.com/nordnet/ui/commit/19c309a))
+* set container height to total height ([9c83a38](https://github.com/nordnet/ui/commit/9c83a38))
+
+### Features
+
+* add disabled option to slider ([fe8e5a7](https://github.com/nordnet/ui/commit/fe8e5a7))
+* slider component rebuild ([12c2a90](https://github.com/nordnet/ui/commit/12c2a90))
+
+## [2.59.2](https://github.com/nordnet/ui/compare/v2.59.1...v2.59.2) (2020-07-08)
+
+
+### Bug Fixes
+
+* 🐛 react-intl 5 ([2c5caae](https://github.com/nordnet/ui/commit/2c5caae))
+
+## [2.59.1](https://github.com/nordnet/ui/compare/v2.59.0...v2.59.1) (2020-07-07)
+
+
+### Bug Fixes
+
+* not packing storyshots in package ([86c36be](https://github.com/nordnet/ui/commit/86c36be))
 
 # [2.59.0](https://github.com/nordnet/ui/compare/v2.58.2...v2.59.0) (2020-07-06)
 
