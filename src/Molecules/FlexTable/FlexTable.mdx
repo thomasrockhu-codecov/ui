@@ -33,47 +33,37 @@ The Flextable component only handles UI states.
   </FlexTable>
 </Preview>
 
-## Row
+`xs`, `sm`, `md`, `lg` and `xl` are all applicable to `FlexTable` as with `Flexbox` enabling users to modify properties depending on screen size.
 
-Row has the important feature of managing expand states.
-For it to know how to handle an out-of-the-box-expand it needs `expandItems` and/or `expandChildren`, alongside the parent `FlexTable` having `expandable = true`.
-If neither `expandItems` or `expandChildren` are supplied, the chevron will be disabled.
-
-Conditionally expand `expandItems` and/or `expandChildren` can be implemented in the following way:
-
-```jsx
-const ConditionalMediaExpand = () => {
-  const columnData = [{ label: 'Country', value: 'SE' }];
-  return (
-    <StyledFlexTable expandable md={{ expandable: false }}>
-      <FlexTable.HeaderRow>
-        <FlexTable.Header columnId="instrumentName">Instrument Name</FlexTable.Header>
-        <FlexTable.Header columnId="country" hidden md={{ hidden: false }}>
-          Country
-        </FlexTable.Header>
-      </FlexTable.HeaderRow>
-
-      <FlexTable.Row expandItems={columnData} md={{ expandItems: [] }}>
-        <FlexTable.Cell columnId="instrumentName">Ericsson</FlexTable.Cell>
-        <FlexTable.Cell columnId="country">SE</FlexTable.Cell>
-      </FlexTable.Row>
-    </StyledFlexTable>
-  );
-};
-```
-
-Several Media breakpoints can be used. The properties `expandItems` and `expandChildren` defaults to `xs`.
-
-### Header Row & Footer Row
-
-Header Row and Footer Row has the same functionality as an ordinary `Row` but with other default properties to fulfill their purpose.
-Most notably, the property `isContent` is set to `false`.
-This keeps the row from rendering a chevron and instead provides a empty `Header` with fixed properties with the same `columnId` as all the chevrons in the table.
+<Preview>
+  <FlexTable density="l" fontSize="m" md={{ density: 's', fontSize: 's' }}>
+    <FlexTable.HeaderRow>
+      <FlexTable.Header columnId="instrument-name">Instrument Name</FlexTable.Header>
+      <FlexTable.Header columnId="currency">Currency</FlexTable.Header>
+      <FlexTable.Header columnId="country">Country</FlexTable.Header>
+    </FlexTable.HeaderRow>
+    <FlexTable.Row>
+      <FlexTable.Cell columnId="instrument-name">Ericsson</FlexTable.Cell>
+      <FlexTable.Cell columnId="currency">SEK</FlexTable.Cell>
+      <FlexTable.Cell columnId="country">SE</FlexTable.Cell>
+    </FlexTable.Row>
+    <FlexTable.Row>
+      <FlexTable.Cell columnId="instrument-name">Apple</FlexTable.Cell>
+      <FlexTable.Cell columnId="currency">USD</FlexTable.Cell>
+      <FlexTable.Cell columnId="country">US</FlexTable.Cell>
+    </FlexTable.Row>
+    <FlexTable.Row>
+      <FlexTable.Cell columnId="instrument-name">Nokia</FlexTable.Cell>
+      <FlexTable.Cell columnId="currency">EUR</FlexTable.Cell>
+      <FlexTable.Cell columnId="country">FI</FlexTable.Cell>
+    </FlexTable.Row>
+  </FlexTable>
+</Preview>
 
 ## Header
 
 Header sets the layout for the entire column and handles sorting as well. The layout is set using the same properties that `Flexbox`uses. Setting the same `columnId` on `Cell` and `Footer` makes them inherit the layout properties.
-The `fontSize` and `density` defined in the `FlexTable` component is inherited here. If the content does not fit within the `Header`, it will be truncated and produces a tooltip on hover.
+The `fontSize` and `density` defined in the `FlexTable` component is inherited here. If the content does not fit within the `Header`, it will be truncated and produces a tooltip on hover via the molecule `TruncateWithToolTip`.
 
 <Preview>
   <FlexTable>
@@ -96,11 +86,24 @@ The `fontSize` and `density` defined in the `FlexTable` component is inherited h
 
 `Header` features conditional hiding based on `Media`. To hide columns e.g. if size `md` or smaller:
 
-```jsx
-<FlexTable.Header columnId="id" hidden md={{ hidden: false }}>
-  Hidden on mobile
-</FlexTable.Header>
-```
+<Preview>
+  <FlexTable>
+    <FlexTable.HeaderRow>
+      <FlexTable.Header columnId="instrument-name">Instrument Name</FlexTable.Header>
+      <FlexTable.Header columnId="currency" hidden md={{ hidden: false }}>
+        Currency (hidden on mobile)
+      </FlexTable.Header>
+      <FlexTable.Header columnId="country" md={{ justifyContent: 'flex-end' }}>
+        Country (justify end on desktop)
+      </FlexTable.Header>
+    </FlexTable.HeaderRow>
+    <FlexTable.Row>
+      <FlexTable.Cell columnId="instrument-name">Ericsson</FlexTable.Cell>
+      <FlexTable.Cell columnId="currency">SEK</FlexTable.Cell>
+      <FlexTable.Cell columnId="country">SE</FlexTable.Cell>
+    </FlexTable.Row>
+  </FlexTable>
+</Preview>
 
 ### Sorting
 
@@ -157,7 +160,44 @@ This also enables us retain TextWrapper-type on export.
 
 ## Footer
 
-Similar functionality to `Cell`.
+Similar functionality to `Cell`. Has like `Header` the property `isContent = false` to render empty cell instead of chevron.
+
+## Row
+
+Row has the important feature of managing expand states.
+For it to know how to handle an out-of-the-box-expand it needs `expandItems` and/or `expandChildren`, alongside the parent `FlexTable` having `expandable = true`.
+If neither `expandItems` or `expandChildren` are supplied, the chevron will be disabled.
+
+Conditionally expand `expandItems` and/or `expandChildren` can be implemented in the following way:
+
+```jsx
+const ConditionalMediaExpand = () => {
+  const columnData = [{ label: 'Country', value: 'SE' }];
+  return (
+    <StyledFlexTable expandable md={{ expandable: false }}>
+      <FlexTable.HeaderRow>
+        <FlexTable.Header columnId="instrumentName">Instrument Name</FlexTable.Header>
+        <FlexTable.Header columnId="country" hidden md={{ hidden: false }}>
+          Country
+        </FlexTable.Header>
+      </FlexTable.HeaderRow>
+
+      <FlexTable.Row expandItems={columnData} md={{ expandItems: [] }}>
+        <FlexTable.Cell columnId="instrumentName">Ericsson</FlexTable.Cell>
+        <FlexTable.Cell columnId="country">SE</FlexTable.Cell>
+      </FlexTable.Row>
+    </StyledFlexTable>
+  );
+};
+```
+
+Several Media breakpoints can be used. The properties `expandItems` and `expandChildren` defaults to `xs`.
+
+### Header Row & Footer Row
+
+Header Row and Footer Row has the same functionality as an ordinary `Row` but with other default properties to fulfill their purpose.
+Most notably, the property `isContent` is set to `false`.
+This keeps the row from rendering a chevron and instead provides a empty `Header` with fixed properties with the same `columnId` as all the chevrons in the table.
 
 ## Constants
 
