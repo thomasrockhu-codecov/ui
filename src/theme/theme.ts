@@ -224,6 +224,7 @@ const createColors = (type: ThemeColorsVersion): ThemeColors<typeof type> => {
     indicatorPillColor9: rawColor.complementaryBlue2,
     indicatorPillColor10: rawColor.complementaryPink2,
     sliderColor: rawColor.cta,
+    sliderSecondary: rawColor.brandGreen,
     sliderDisabled: rawColor.gray6,
     sliderThumbBackground: rawColor.white,
     sliderBackgroundColor: rawColor.gray6,

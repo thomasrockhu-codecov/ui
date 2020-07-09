@@ -283,6 +283,8 @@ export type ThemeColors<Version extends ThemeColorsVersion> = {
   indicatorPillColor10: RawColor['complementaryPink2'];
   /** cta */
   sliderColor: RawColor['cta'];
+  /** brandGreen */
+  sliderSecondary: RawColor['brandGreen'];
   /** gray6 */
   sliderDisabled: RawColor['gray6'];
   /** gray6 */
