@@ -1,3 +1,10 @@
+# [2.61.0](https://github.com/nordnet/ui/compare/v2.60.0...v2.61.0) (2020-07-09)
+
+
+### Features
+
+* add sliderSecondary color ([cfab49a](https://github.com/nordnet/ui/commit/cfab49a))
+
 # [2.60.0](https://github.com/nordnet/ui/compare/v2.59.2...v2.60.0) (2020-07-08)
 
 
