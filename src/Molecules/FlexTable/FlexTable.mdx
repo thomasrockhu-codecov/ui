@@ -35,7 +35,34 @@ The Flextable component only handles UI states.
 
 ## Row
 
-Row has the important feature of managing expand states. For it to know how to handle an out-of-the-box-expand it needs `expandItems` and/or `expandChildren`, alongside the parent `FlexTable` having `expandable = true`. If neither of `expandItems` or `expandChildren` are supplied, the chevron will be disabled.
+Row has the important feature of managing expand states.
+For it to know how to handle an out-of-the-box-expand it needs `expandItems` and/or `expandChildren`, alongside the parent `FlexTable` having `expandable = true`.
+If neither `expandItems` or `expandChildren` are supplied, the chevron will be disabled.
+
+Conditionally expand `expandItems` and/or `expandChildren` can be implemented in the following way:
+
+```jsx
+const ConditionalMediaExpand = () => {
+  const columnData = [{ label: 'Country', value: 'SE' }];
+  return (
+    <StyledFlexTable expandable md={{ expandable: false }}>
+      <FlexTable.HeaderRow>
+        <FlexTable.Header columnId="instrumentName">Instrument Name</FlexTable.Header>
+        <FlexTable.Header columnId="country" hidden md={{ hidden: false }}>
+          Country
+        </FlexTable.Header>
+      </FlexTable.HeaderRow>
+
+      <FlexTable.Row expandItems={columnData} md={{ expandItems: [] }}>
+        <FlexTable.Cell columnId="instrumentName">Ericsson</FlexTable.Cell>
+        <FlexTable.Cell columnId="country">SE</FlexTable.Cell>
+      </FlexTable.Row>
+    </StyledFlexTable>
+  );
+};
+```
+
+Several Media breakpoints can be used. The properties `expandItems` and `expandChildren` defaults to `xs`.
 
 ### Header Row & Footer Row
 
