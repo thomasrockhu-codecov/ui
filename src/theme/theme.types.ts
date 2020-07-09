@@ -176,7 +176,7 @@ export type ThemeColors<Version extends ThemeColorsVersion> = {
   /** gray1 */
   inputBorderHover: RawColor['gray1'];
   /** white */
-  tableHeaderBackground: RawColor['white'];
+  tableRowBackground: RawColor['white'];
   /** gray7 */
   tableRowHover: RawColor['gray7'];
   /** negative */
