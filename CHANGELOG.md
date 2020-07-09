@@ -1,3 +1,12 @@
+## [2.61.1](https://github.com/nordnet/ui/compare/v2.61.0...v2.61.1) (2020-07-09)
+
+
+### Bug Fixes
+
+* 🐛 remove background color from stories ([2b089a1](https://github.com/nordnet/ui/commit/2b089a1))
+* 🐛 set background color on row expand area ([c867101](https://github.com/nordnet/ui/commit/c867101))
+* 🐛 set row background to white in table ([b866adf](https://github.com/nordnet/ui/commit/b866adf))
+
 # [2.61.0](https://github.com/nordnet/ui/compare/v2.60.0...v2.61.0) (2020-07-09)
 
 
