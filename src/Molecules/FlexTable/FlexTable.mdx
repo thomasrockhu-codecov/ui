@@ -33,6 +33,59 @@ The Flextable component only handles UI states.
   </FlexTable>
 </Preview>
 
+## General
+
+### Customize components
+
+To enable users to customise their components, `FlexTable` and its components are developed to support plain strings, components and functions as children.
+Sending in a plain string as a child will wrap the string with content wrappers to set e.g. the correct font, font size and padding.
+If the user sends in a component it will be rendered without content wrappers, enabling full customisability. To simplify reuse of the table standards,
+the components export all their content wrappers as building stones, to create your own custom component. See the example below
+
+```jsx
+<FlexTable.Cell>String</FlexTable.Cell>
+
+// is equivalent to writing
+
+<FlexTable.Cell>
+  <FlexTable.Cell.TextWrapper fontSize="m">
+    String
+  </FlexTable.Cell.TextWrapper>
+</FlexTable.Cell>
+
+// or with render props
+
+<FlexTable.Cell>
+  {({fontSize}) => (
+    <FlexTable.Cell.TextWrapper fontSize={fontSize}>
+      String
+    </FlexTable.Cell.TextWrapper>
+  )}
+</FlexTable.Cell>
+```
+
+In this example `Cell` exports its building block `TextWrapper`. `TextWrapper` includes the font size and truncation used when supplying a plain string as a child.
+This allows building custom components that fulfill the FlexTable standards, see below
+
+```jsx
+const FlagNumberCell = React.memo(({ value, country, currency }) => (
+  <FlexTable.Cell>
+    {({ fontSize }) => (
+      <FlexTable.Cell.TextWrapper fontSize={fontSize}>
+        <Flag country={country} />
+        <Number value={value} currency={currency} />
+      </FlexTable.Cell.TextWrapper>
+    )}
+  </FlexTable.Cell>
+));
+
+<FlagNumberCell value={23} country="SE" currency="SEK" />;
+```
+
+This example cell will fit in with the rest of the cells and change its font size depending on what is set on the `FlexTable`.
+
+## FlexTable component
+
 `xs`, `sm`, `md`, `lg` and `xl` are all applicable to `FlexTable` as with `Flexbox` enabling users to modify properties depending on screen size.
 
 <Preview>
@@ -60,11 +113,11 @@ The Flextable component only handles UI states.
   </FlexTable>
 </Preview>
 
-### Customizing parts
-
 ## Header
 
-Header sets the layout for the entire column and handles sorting as well. The layout is set using the same properties that `Flexbox`uses. Setting the same `columnId` on `Cell` and `Footer` makes them inherit the layout properties.
+Header sets the layout for the entire column and handles sorting as well.
+The layout is set using the same properties that `Flexbox`uses.
+Setting the same `columnId` on `Cell` and `Footer` makes them inherit the layout properties.
 The `fontSize` and `density` defined in the `FlexTable` component is inherited here. If the content does not fit within the `Header`, it will be truncated and produces a tooltip on hover via the molecule `TruncateWithToolTip`.
 
 <Preview>
@@ -156,7 +209,7 @@ const InstrumentTable = () => (
 
 ### Custom Header
 
-Table headers contain sorting, to customise a sortable table header you should use `Flexbox` to isolate the different items
+`Header` contains sorting, to customise a sortable table header you should use `Flexbox` to isolate the different items
 
 ```jsx
 const CustomisedTableHeader = React.memo(({ flag, country }) => (
@@ -184,7 +237,7 @@ const CustomisedTableHeader = React.memo(({ flag, country }) => (
 ));
 ```
 
-`CellInlineContainer` is a Flexbox-wrapper that makes a `Flexbox` item able to truncate, also makes sure everything inside has correct vertical alignment.
+`CellInlineContainer` is a Flexbox-wrapper that makes a `Flexbox` item able to truncate, also makes sure everything inside has correct vertical alignment due to tooltip.
 `<Flexbox container>` may need to be styled with css to inherit flexbox values. For example
 
 ```jsx
@@ -202,9 +255,7 @@ const StyledFlexboxContainer = styled(Flexbox)
 
 ## Cell
 
-Cell consumes the properties of the `Header` with the same `columnId`.
-Cell wraps an `<InnerCell>` component that uses `React.memo` so that content is not rerendered on sort.
-This also enables us retain TextWrapper-type on export.
+Cell consumes the layout properties of the `Header` with the same `columnId`.
 
 ### Custom Cell
 
@@ -224,6 +275,8 @@ const NumberCell: React.FC<{ columnId: string }> = React.memo(({ value, columnId
 ```
 
 You could also skip using Render Props and supply the values for `fontSize` and `density` yourself in the example above.
+Note the use of `React.memo`, this is important to include to improve sorting speed.
+More info regarding this can be found under _Performance_.
 
 ## Footer
 
