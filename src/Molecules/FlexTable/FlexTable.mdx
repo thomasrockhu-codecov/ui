@@ -60,6 +60,8 @@ The Flextable component only handles UI states.
   </FlexTable>
 </Preview>
 
+### Customizing parts
+
 ## Header
 
 Header sets the layout for the entire column and handles sorting as well. The layout is set using the same properties that `Flexbox`uses. Setting the same `columnId` on `Cell` and `Footer` makes them inherit the layout properties.
@@ -152,11 +154,76 @@ const InstrumentTable = () => (
 );
 ```
 
+### Custom Header
+
+Table headers contain sorting, to customise a sortable table header you should use `Flexbox` to isolate the different items
+
+```jsx
+const CustomisedTableHeader = React.memo(({ flag, country }) => (
+  <FlexTable.Header columnId="CountryAndCurrency" sortable>
+    {({ sortable, sorted, fontSize, onSortClick, sortOrder }) => (
+      <FlexTable.Header.SortButton onClick={onSortClick}>
+        <Flexbox container>
+          <Flexbox item>
+            <Flag country={flag} inline height={3} />
+          </Flexbox>
+          <FlexTable.CellInlineContainer item>
+            <FlexTable.Header.TextWrapper fontSize={fontSize} sorted={sorted}>
+              {country}
+            </FlexTable.Header.TextWrapper>
+          </FlexTable.CellInlineContainer>
+          {sortable && (
+            <Flexbox item>
+              <FlexTable.Header.SortIcon sortOrder={sortOrder} />
+            </Flexbox>
+          )}
+        </Flexbox>
+      </FlexTable.Header.SortButton>
+    )}
+  </FlexTable.Header>
+));
+```
+
+`CellInlineContainer` is a Flexbox-wrapper that makes a `Flexbox` item able to truncate, also makes sure everything inside has correct vertical alignment.
+`<Flexbox container>` may need to be styled with css to inherit flexbox values. For example
+
+```jsx
+
+const StyledFlexboxContainer = styled(Flexbox)
+  justify-content: inherit;
+  align-items: inherit;
+;
+
+<StyledFlexboxContainer container>
+  ...
+</StyledFlexboxContainer>
+
+```
+
 ## Cell
 
 Cell consumes the properties of the `Header` with the same `columnId`.
 Cell wraps an `<InnerCell>` component that uses `React.memo` so that content is not rerendered on sort.
 This also enables us retain TextWrapper-type on export.
+
+### Custom Cell
+
+By using Render Props when creating your custom cell, you enable `FlexTable` to communicate the properties set by it.
+In this example below we automatically get the `fontSize` and `density` from the table.
+
+```jsx
+const NumberCell: React.FC<{ columnId: string }> = React.memo(({ value, columnId }) => (
+  <FlexTable.Cell columnId={columnId}>
+    {({ fontSize, density }) => (
+      <FlexTable.Cell.TextWrapper fontSize={fontSize} density={density}>
+        <Number value={value} />
+      </FlexTable.Cell.TextWrapper>
+    )}
+  </FlexTable.Cell>
+));
+```
+
+You could also skip using Render Props and supply the values for `fontSize` and `density` yourself in the example above.
 
 ## Footer
 
@@ -219,9 +286,5 @@ const ICON_COLUMN_DEFAULT_FLEX_PROPS: Pick<FlexPropsType, 'justifyContent' | 'fl
   flex: `0 20px`,
 };
 ```
-
-## Component parts
-
-## Responsitivity
 
 ## Performance
