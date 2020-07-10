@@ -1,3 +1,11 @@
+## [3.0.1](https://github.com/nordnet/ui/compare/v3.0.0...v3.0.1) (2020-07-10)
+
+
+### Bug Fixes
+
+* 🐛 add render for sizes to cell ([fe7df23](https://github.com/nordnet/ui/commit/fe7df23))
+* 🐛 add render for sizes to header content ([abf999c](https://github.com/nordnet/ui/commit/abf999c))
+
 # [3.0.0](https://github.com/nordnet/ui/compare/v2.61.1...v3.0.0) (2020-07-10)
 
 
