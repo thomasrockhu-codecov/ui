@@ -1,7 +1,7 @@
 import React from 'react';
 import { HashRouter } from 'react-router-dom';
 
-import { FeedbackBanner, Link } from '../..';
+import { FeedbackBanner, Spinner } from '../..';
 import { Display } from '../../common/Display';
 
 export default {
@@ -92,7 +92,7 @@ export const complexChildren = () => (
       <div>
         <div>The message can also be stuctured as a more complex item than just a string</div>
         <div>
-          For example, you can provide a <Link to="/">link to somewhere</Link> if you want to
+          For example, you can provide a Spinner <Spinner id="defaultSpinner" /> if you want to
         </div>
       </div>
     </FeedbackBanner>

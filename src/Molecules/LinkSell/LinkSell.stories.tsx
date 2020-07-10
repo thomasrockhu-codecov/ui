@@ -1,6 +1,6 @@
 import React from 'react';
-import { BrowserRouter } from 'react-router-dom';
 import { LinkSell } from '../..';
+import { Provider } from '../../common/Links/ReactRouterLinkHelper';
 
 export default {
   title: 'Molecules | LinkSell',
@@ -11,9 +11,9 @@ export default {
 
 export const linkSell = () => {
   return (
-    <BrowserRouter>
+    <Provider>
       <LinkSell to="somewhere">Sell</LinkSell>
-    </BrowserRouter>
+    </Provider>
   );
 };
 
@@ -23,9 +23,9 @@ linkSell.story = {
 
 export const linkSellDisabled = () => {
   return (
-    <BrowserRouter>
+    <Provider>
       <LinkSell disabled>Sell</LinkSell>
-    </BrowserRouter>
+    </Provider>
   );
 };
 
@@ -35,11 +35,11 @@ linkSellDisabled.story = {
 
 export const linkSellWithRelAsNofollow = () => {
   return (
-    <BrowserRouter>
+    <Provider>
       <LinkSell to="somewhere" rel="nofollow">
         Sell
       </LinkSell>
-    </BrowserRouter>
+    </Provider>
   );
 };
 
