@@ -1,29 +1,35 @@
 import React from 'react';
-import styled from 'styled-components';
 import { Typography } from '../../..';
 import { TextWrapperComponent } from './Footer.types';
 import { getFontSizeTypographyType } from '../shared/textUtils';
 import { StyledTruncateTooltip } from '../shared';
+import { FontSize } from '../shared/shared.types';
 
-const StyledTypography = styled(Typography)`
-  display: inline-block;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  overflow: hidden;
-`;
+const Text: React.FC<{ fontSize: FontSize; weight: string }> = ({ children, weight, fontSize }) => (
+  <Typography type={getFontSizeTypographyType(fontSize)} color={t => t.color.text} weight={weight}>
+    {children}
+  </Typography>
+);
 
 export const TextWrapper: TextWrapperComponent = ({
   fontSize = 'm',
   children,
   weight = 'bold',
-}) => (
-  <StyledTruncateTooltip label={children}>
-    <StyledTypography
-      type={getFontSizeTypographyType(fontSize)}
-      color={t => t.color.text}
-      weight={weight}
-    >
-      {children}
-    </StyledTypography>
-  </StyledTruncateTooltip>
-);
+  truncate = true,
+}) => {
+  if (!truncate) {
+    return (
+      <Text fontSize={fontSize} weight={weight}>
+        {children}
+      </Text>
+    );
+  }
+
+  return (
+    <StyledTruncateTooltip label={children}>
+      <Text fontSize={fontSize} weight={weight}>
+        {children}
+      </Text>
+    </StyledTruncateTooltip>
+  );
+};
