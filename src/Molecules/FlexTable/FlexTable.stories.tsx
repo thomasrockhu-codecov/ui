@@ -26,7 +26,6 @@ const StyledDiv = styled.div`
 `;
 
 const StyledFlexTable = styled(FlexTable)`
-  background-color: white;
   &:not(:last-of-type) {
     margin-bottom: ${p => p.theme.spacing.unit(10)}px;
   }

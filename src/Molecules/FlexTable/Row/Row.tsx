@@ -29,6 +29,7 @@ const StyledRow = styled(Flexbox).withConfig({
   density: Density;
   expandable: boolean;
 }>`
+  background: ${p => p.theme.color.tableRowBackground};
   ${p =>
     !p.hideSeparator && !p.expanded ? `border-bottom: 1px solid ${p.separatorColor(p.theme)}` : ''};
 
@@ -42,8 +43,8 @@ const StyledRow = styled(Flexbox).withConfig({
     p.hoverHighlight &&
     !p.expanded &&
     `&:hover {
-        background: ${p.theme.color.tableRowHover};
-      }`};
+      background: ${p.theme.color.tableRowHover};
+    }`};
 
   padding-top: ${p => getDensityPaddings(p.density)}px;
   padding-bottom: ${p => getDensityPaddings(p.density)}px;

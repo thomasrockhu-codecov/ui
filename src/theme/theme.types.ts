@@ -176,7 +176,7 @@ export type ThemeColors<Version extends ThemeColorsVersion> = {
   /** gray1 */
   inputBorderHover: RawColor['gray1'];
   /** white */
-  tableHeaderBackground: RawColor['white'];
+  tableRowBackground: RawColor['white'];
   /** gray7 */
   tableRowHover: RawColor['gray7'];
   /** negative */
@@ -283,6 +283,8 @@ export type ThemeColors<Version extends ThemeColorsVersion> = {
   indicatorPillColor10: RawColor['complementaryPink2'];
   /** cta */
   sliderColor: RawColor['cta'];
+  /** brandGreen */
+  sliderSecondary: RawColor['brandGreen'];
   /** gray6 */
   sliderDisabled: RawColor['gray6'];
   /** gray6 */

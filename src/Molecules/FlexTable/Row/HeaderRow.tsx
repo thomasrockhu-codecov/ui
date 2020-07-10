@@ -16,8 +16,7 @@ const StyledHeaderRow = styled(Row).withConfig({
     p.sticky
       ? `
         position: sticky;
-        top: 0;
-        background-color: ${p.theme.color.tableHeaderBackground}`
+        top: 0;`
       : ''};
   ${p => (!p.hideSeparator ? `border-bottom: 1px solid ${p.separatorColor(p.theme)}` : '')};
 `;

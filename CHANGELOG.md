@@ -1,57 +1,21 @@
-# [3.0.0-beta.1](https://github.com/nordnet/ui/compare/v2.60.0...v3.0.0-beta.1@beta) (2020-07-09)
+
+## [2.61.1](https://github.com/nordnet/ui/compare/v2.61.0...v2.61.1) (2020-07-09)
 
 
 ### Bug Fixes
 
-* cleaned dependencies ([8ded330](https://github.com/nordnet/ui/commit/8ded330))
-* exposing the new link helpers ([c61a24a](https://github.com/nordnet/ui/commit/c61a24a))
-* innerref needs to be specifically handled in defaultlink ([017f8da](https://github.com/nordnet/ui/commit/017f8da))
-* merged master for latest changes ([e63dd29](https://github.com/nordnet/ui/commit/e63dd29))
+* 🐛 remove background color from stories ([2b089a1](https://github.com/nordnet/ui/commit/2b089a1))
+* 🐛 set background color on row expand area ([c867101](https://github.com/nordnet/ui/commit/c867101))
+* 🐛 set row background to white in table ([b866adf](https://github.com/nordnet/ui/commit/b866adf))
+
+# [2.61.0](https://github.com/nordnet/ui/compare/v2.60.0...v2.61.0) (2020-07-09)
 
 
 ### Features
 
-* 🎸 actually removing react-router as peerdep ([bb5c90f](https://github.com/nordnet/ui/commit/bb5c90f))
-* 🎸 bump react-intl to v4 ([4588508](https://github.com/nordnet/ui/commit/4588508))
-* 🎸 button is using linkprovider ([4f69763](https://github.com/nordnet/ui/commit/4f69763))
-* 🎸 links no longer depend on react-router ([2ffc4d1](https://github.com/nordnet/ui/commit/2ffc4d1))
-* 🎸 navtabs.item accepts active, no router ([a2e0970](https://github.com/nordnet/ui/commit/a2e0970))
-* 🎸 new linkprovider tested with tabnavs ([0f576a7](https://github.com/nordnet/ui/commit/0f576a7))
+* add sliderSecondary color ([cfab49a](https://github.com/nordnet/ui/commit/cfab49a))
 
-
-### BREAKING CHANGES
-
-* 🧨 No longer requires react-router as a routing system.
-* 🧨 Button as a link requires LinkProvider
-* 🧨 Link needs a provided react-router link to work as before
-* 🧨 TabNavs requires a custom Link to LinkProvider if to be used with
-react-router.
-* 🧨 Dropping support for automatic active with react-router
-
-# [2.60.0-beta.2](https://github.com/nordnet/ui/compare/v2.60.0-beta.1@beta...v2.60.0-beta.2@beta) (2020-07-07)
-
-### Bug Fixes
-
-* cleaned dependencies ([8ded330](https://github.com/nordnet/ui/commit/8ded330))
-* exposing the new link helpers ([c61a24a](https://github.com/nordnet/ui/commit/c61a24a))
-* innerref needs to be specifically handled in defaultlink ([017f8da](https://github.com/nordnet/ui/commit/017f8da))
-
-### Features
-
-* 🎸 actually removing react-router as peerdep ([bb5c90f](https://github.com/nordnet/ui/commit/bb5c90f))
-* 🎸 button is using linkprovider ([4f69763](https://github.com/nordnet/ui/commit/4f69763))
-* 🎸 links no longer depend on react-router ([2ffc4d1](https://github.com/nordnet/ui/commit/2ffc4d1))
-* 🎸 navtabs.item accepts active, no router ([a2e0970](https://github.com/nordnet/ui/commit/a2e0970))
-* 🎸 new linkprovider tested with tabnavs ([0f576a7](https://github.com/nordnet/ui/commit/0f576a7))
-
-### BREAKING CHANGES
-
-* 🧨 No longer requires react-router as a routing system.
-* 🧨 Button as a link requires LinkProvider
-* 🧨 Link needs a provided react-router link to work as before
-* 🧨 TabNavs requires a custom Link to LinkProvider if to be used with
-react-router.
-* 🧨 Dropping support for automatic active with react-router
+# [2.60.0](https://github.com/nordnet/ui/compare/v2.59.2...v2.60.0) (2020-07-08)
 
 # [2.60.0-beta.1](https://github.com/nordnet/ui/compare/v2.59.0...v2.60.0-beta.1@beta) (2020-07-07)
 
