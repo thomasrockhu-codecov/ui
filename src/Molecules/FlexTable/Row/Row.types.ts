@@ -64,10 +64,18 @@ export type RowComponents = {
   ExpandItems: ExpandItemsComponent;
 };
 
-export type RowComponent = React.FC<Props>;
+export type RowComponent = React.FC<Props> & RowComponents;
 
 type HeaderProps = {
+  /**
+   * Hide row bottom border
+   * @default false
+   */
   hideSeparator?: boolean;
+  /**
+   * Decides if it should render empty `Header` or chevron when table is expandable
+   * @default true
+   */
   isContent?: boolean;
   separatorColor?: ColorFn;
 } & HtmlProps;
