@@ -4,7 +4,7 @@ import { TextWrapperComponent } from './HeaderContent.types';
 import { Typography } from '../../../..';
 import { StyledTruncateTooltip } from '../../shared';
 
-export const TextWrapper: TextWrapperComponent = ({ fontSize = 'm', sorted, children }) => (
+export const TextWrapper: TextWrapperComponent = ({ fontSize = 'm', sorted = false, children }) => (
   <StyledTruncateTooltip label={children}>
     <Typography
       type={getFontSizeTypographyType(fontSize)}
