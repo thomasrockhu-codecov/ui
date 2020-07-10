@@ -44,6 +44,7 @@ const StyledTypography = styled(Typography)`
 const FlexTable: FlexTableComponent & FlexTableComponents = ({
   className,
   density = 'm',
+  columnDistance = 2,
   expandable = false,
   stickyHeader = true,
   children,
@@ -57,6 +58,7 @@ const FlexTable: FlexTableComponent & FlexTableComponents = ({
 }) => (
   <FlexTableProvider
     density={density}
+    columnDistance={columnDistance}
     stickyHeader={stickyHeader}
     fontSize={fontSize}
     expandable={expandable}

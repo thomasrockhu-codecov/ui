@@ -754,6 +754,30 @@ export const TableWithDifferentSizeProps = () => {
     </StyledDiv>
   );
 
+  const TablesWithDifferentColumnDistanceOnMobileExample = () => (
+    <StyledDiv>
+      <StyledFlexTable columnDistance={2} sm={{ columnDistance: 10 }}>
+        <FlexTable.HeaderRow>
+          <FlexTable.Header columnId="column1">Header 1</FlexTable.Header>
+          <FlexTable.Header columnId="column2" justifyContent="flex-end">
+            Header 2
+          </FlexTable.Header>
+          <FlexTable.Header columnId="column3">Header 3</FlexTable.Header>
+        </FlexTable.HeaderRow>
+        <FlexTable.Row>
+          <FlexTable.Cell columnId="column1">Cell 1-1</FlexTable.Cell>
+          <FlexTable.Cell columnId="column2">Cell 1-2</FlexTable.Cell>
+          <FlexTable.Cell columnId="column3">Cell 1-3</FlexTable.Cell>
+        </FlexTable.Row>
+        <FlexTable.Row>
+          <FlexTable.Cell columnId="column1">Cell 2-1</FlexTable.Cell>
+          <FlexTable.Cell columnId="column2">Cell 2-2</FlexTable.Cell>
+          <FlexTable.Cell columnId="column3">Cell 2-3</FlexTable.Cell>
+        </FlexTable.Row>
+      </StyledFlexTable>
+    </StyledDiv>
+  );
+
   return (
     <StyledDiv>
       <Typography type="title3">Tables With Different Densities</Typography>
@@ -762,6 +786,8 @@ export const TableWithDifferentSizeProps = () => {
       <TablesWithDifferentFontSizesExample />
       <Typography type="title3">Tables With Different Sizes on mobile</Typography>
       <TablesWithDifferentSizesInMobile />
+      <Typography type="title3">Tables With Different Column Distance on mobile</Typography>
+      <TablesWithDifferentColumnDistanceOnMobileExample />
     </StyledDiv>
   );
 };

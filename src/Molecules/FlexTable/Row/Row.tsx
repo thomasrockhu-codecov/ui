@@ -90,6 +90,7 @@ const Row: RowComponent & RowComponents = ({
 }) => {
   const {
     density: xsDensity,
+    columnDistance: xsColumnDistance,
     expandable: xsExpandable,
     sm: smTable,
     md: mdTable,
@@ -105,12 +106,12 @@ const Row: RowComponent & RowComponents = ({
   return (
     <>
       <RenderForSizes
-        xs={{ density: xsDensity, expandable: xsExpandable }}
+        xs={{ density: xsDensity, expandable: xsExpandable, columnDistance: xsColumnDistance }}
         sm={smTable}
         md={mdTable}
         lg={lgTable}
         xl={xlTable}
-        Container={({ density, expandable, children: component }) => (
+        Container={({ density, columnDistance, expandable, children: component }) => (
           <StyledRow
             container
             alignItems="center"
@@ -122,7 +123,7 @@ const Row: RowComponent & RowComponents = ({
             separatorColor={separatorColor}
             density={density}
             expandable={expandable}
-            gutter={1}
+            gutter={columnDistance}
             {...htmlProps}
           >
             {component}

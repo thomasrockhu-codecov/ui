@@ -6,6 +6,7 @@ export const FlexTableContext = React.createContext<FlexTableContextProps>(undef
 export const FlexTableProvider: FlexTableProviderComponent = ({
   children,
   density,
+  columnDistance,
   expandable,
   fontSize,
   stickyHeader,
@@ -15,7 +16,7 @@ export const FlexTableProvider: FlexTableProviderComponent = ({
   xl,
 }) => (
   <FlexTableContext.Provider
-    value={{ density, stickyHeader, fontSize, expandable, sm, md, lg, xl }}
+    value={{ density, columnDistance, stickyHeader, fontSize, expandable, sm, md, lg, xl }}
   >
     {children}
   </FlexTableContext.Provider>
