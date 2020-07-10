@@ -1,3 +1,16 @@
+# [3.0.0-beta.2](https://github.com/nordnet/ui/compare/v3.0.0-beta.1@beta...v3.0.0-beta.2@beta) (2020-07-10)
+
+
+### Bug Fixes
+
+* 🐛 remove background color from stories ([2b089a1](https://github.com/nordnet/ui/commit/2b089a1))
+* 🐛 set background color on row expand area ([c867101](https://github.com/nordnet/ui/commit/c867101))
+* 🐛 set row background to white in table ([b866adf](https://github.com/nordnet/ui/commit/b866adf))
+
+
+### Features
+
+* add sliderSecondary color ([cfab49a](https://github.com/nordnet/ui/commit/cfab49a))
 
 ## [2.61.1](https://github.com/nordnet/ui/compare/v2.61.0...v2.61.1) (2020-07-09)
 
