@@ -10,8 +10,18 @@ import { MediaRelatedProps } from '../shared/shared.types';
 type HtmlProps = {} & React.HTMLAttributes<HTMLDivElement>;
 
 interface Expand {
+  /**
+   * Sets expand state
+   * @default false
+   */
   expanded?: boolean;
+  /**
+   * Components to be rendered in the expandable area. Is rendered below `expandItems`
+   */
   expandChildren?: ReactNode;
+  /**
+   * Array to be rendered in the expandable area. Maps itself by key/value pairs.
+   */
   expandItems?: ExpandItems;
 }
 
@@ -29,9 +39,21 @@ export type ExpandProps = IncludeExpand | ExcludeExpand;
 export type ExpandAreaProps = Expand;
 
 type Props = {
+  /**
+   * Hide row bottom border
+   * @default false
+   */
   hideSeparator?: boolean;
+  /**
+   * Highlight on mouse hover
+   * @default true
+   */
   hoverHighlight?: boolean;
   separatorColor?: ColorFn;
+  /**
+   * Decides if it should render empty `Header` or chevron when table is expandable
+   * @default true
+   */
   isContent?: boolean;
 } & ExpandProps &
   MediaRelatedProps<Pick<Expand, 'expandItems' | 'expandChildren'>> &
