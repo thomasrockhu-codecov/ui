@@ -1,3 +1,10 @@
+# [3.1.0](https://github.com/nordnet/ui/compare/v3.0.1...v3.1.0) (2020-07-13)
+
+
+### Features
+
+* add new icons ([072d991](https://github.com/nordnet/ui/commit/072d991))
+
 ## [3.0.1](https://github.com/nordnet/ui/compare/v3.0.0...v3.0.1) (2020-07-10)
 
 
