@@ -4,6 +4,7 @@ import { FontSize } from '../../shared/shared.types';
 export type TextWrapperProps = {
   fontSize?: FontSize;
   sorted?: boolean;
+  truncate?: boolean;
 };
 
 export type TextWrapperComponent = React.FC<TextWrapperProps>;

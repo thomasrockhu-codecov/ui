@@ -15,6 +15,7 @@ export type Props = {
 export type TextWrapperProps = {
   fontSize?: FontSize;
   weight?: string;
+  truncate?: boolean;
 };
 
 export type TextWrapperComponent = React.FC<TextWrapperProps>;
