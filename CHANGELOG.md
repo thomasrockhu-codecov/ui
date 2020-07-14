@@ -1,3 +1,16 @@
+# [3.2.0](https://github.com/nordnet/ui/compare/v3.1.0...v3.2.0) (2020-07-14)
+
+
+### Bug Fixes
+
+* 🐛 added render for sizes to footer ([57346ec](https://github.com/nordnet/ui/commit/57346ec))
+
+
+### Features
+
+* 🎸 allow disable of truncation on table text wrappers ([f93e5da](https://github.com/nordnet/ui/commit/f93e5da))
+* 🎸 column distance for flex table ([d05d8f7](https://github.com/nordnet/ui/commit/d05d8f7))
+
 # [3.1.0](https://github.com/nordnet/ui/compare/v3.0.1...v3.1.0) (2020-07-13)
 
 
