@@ -8,7 +8,7 @@ import { SortIcon } from './SortIcon';
 import { SortButton } from './SortButton';
 import { useFlexTable } from '../../shared/FlexTableProvider';
 import { Flexbox } from '../../../..';
-import { CellInlineContainer } from '../../shared';
+import { CellInlineContainer, RenderForSizes } from '../../shared';
 
 const StyledFlexboxContainer = styled(Flexbox)`
   justify-content: inherit;
@@ -20,30 +20,57 @@ export const HeaderContent: React.FC<Props & UIProps> = ({
   onSortClick,
   children,
 }) => {
-  const { fontSize } = useFlexTable();
+  const {
+    fontSize: xsFontSize,
+    sm: smTable,
+    md: mdTable,
+    lg: lgTable,
+    xl: xlTable,
+  } = useFlexTable();
+
   if (!sortable || sortOrder === null) {
     return (
-      <TextWrapper fontSize={fontSize} sorted={false}>
-        {children}
-      </TextWrapper>
+      <RenderForSizes
+        xs={{ fontSize: xsFontSize }}
+        sm={smTable}
+        md={mdTable}
+        lg={lgTable}
+        xl={xlTable}
+        Container={({ fontSize, children: component }) => (
+          <TextWrapper fontSize={fontSize} sorted={false}>
+            {component}
+          </TextWrapper>
+        )}
+        Component={() => children}
+      />
     );
   }
 
   return (
-    <SortButton onClick={onSortClick}>
-      <StyledFlexboxContainer container>
-        <CellInlineContainer item>
-          <TextWrapper
-            fontSize={fontSize}
-            sorted={!R.isNil(sortOrder) && sortOrder !== SORT_ORDER_NONE}
-          >
-            {children}
-          </TextWrapper>
-        </CellInlineContainer>
-        <Flexbox item>
-          <SortIcon sortOrder={sortOrder} />
-        </Flexbox>
-      </StyledFlexboxContainer>
-    </SortButton>
+    <RenderForSizes
+      xs={{ fontSize: xsFontSize }}
+      sm={smTable}
+      md={mdTable}
+      lg={lgTable}
+      xl={xlTable}
+      Container={({ children: component }) => (
+        <SortButton onClick={onSortClick}>{component}</SortButton>
+      )}
+      Component={({ fontSize }) => (
+        <StyledFlexboxContainer container>
+          <CellInlineContainer item>
+            <TextWrapper
+              fontSize={fontSize}
+              sorted={!R.isNil(sortOrder) && sortOrder !== SORT_ORDER_NONE}
+            >
+              {children}
+            </TextWrapper>
+          </CellInlineContainer>
+          <Flexbox item>
+            <SortIcon sortOrder={sortOrder} />
+          </Flexbox>
+        </StyledFlexboxContainer>
+      )}
+    />
   );
 };

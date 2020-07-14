@@ -1,12 +1,11 @@
-import R from 'ramda';
-import React, { useContext } from 'react';
+import React, { useContext, FC } from 'react';
 import styled, { ThemedStyledProps } from 'styled-components';
-import { Link as RouterLink } from 'react-router-dom';
 import { LinkComponent, LinkProps } from './Link.types';
 import { Theme } from '../../theme/theme.types';
 import { isUndefined } from '../../common/utils';
 import NormalizedElements from '../../common/NormalizedElements';
 import TrackingContext from '../../common/tracking';
+import { useLink, LinkProps as RawLinkProps } from '../../common/Links';
 
 const getEnabledColor = (color: LinkProps['color'], theme: Theme): string => {
   if (color === 'black') {
@@ -18,15 +17,24 @@ const getEnabledColor = (color: LinkProps['color'], theme: Theme): string => {
   return theme.color.cta;
 };
 
-const getSharedStyle = (props: ThemedStyledProps<LinkProps, Theme>) => {
-  const { theme, disabled, display = 'inline', color } = props;
+const getSharedStyle = (
+  props: ThemedStyledProps<
+    {
+      disabled?: LinkProps['disabled'];
+      $display?: LinkProps['display'];
+      $color?: LinkProps['color'];
+    },
+    Theme
+  >,
+) => {
+  const { theme, disabled, $display = 'inline', $color } = props;
 
   // Need to switch to display: inline-block
   // But it will break pages, so need to do it through mutations
   return `
-    display: ${display};
+    display: ${$display};
     padding: 0;
-    color: ${disabled ? theme.color.disabledText : getEnabledColor(color, theme)};
+    color: ${disabled ? theme.color.disabledText : getEnabledColor($color, theme)};
 
     &:hover {
       text-decoration: underline;
@@ -34,17 +42,10 @@ const getSharedStyle = (props: ThemedStyledProps<LinkProps, Theme>) => {
   `;
 };
 
-const CleanLink = React.forwardRef((props: LinkProps, ref) => {
-  return props.external || props.cms ? (
-    // eslint-disable-next-line jsx-a11y/anchor-has-content
-    <a
-      ref={ref}
-      {...R.omit(['fullWidth', 'colorFn', 'color', 'display', 'external', 'cms'], props) as any}
-    />
-  ) : (
-    <RouterLink ref={ref} {...R.omit(['fullWidth', 'colorFn', 'color', 'display'], props) as any} />
-  );
-});
+const CleanLink: FC<RawLinkProps> = props => {
+  const RawLink = useLink();
+  return <RawLink {...props} />;
+};
 
 const StyledLink = styled(CleanLink)<LinkProps>`
   ${p => getSharedStyle(p)}
@@ -71,13 +72,12 @@ export const Link: LinkComponent = React.forwardRef<any, LinkProps>((props, ref)
     to,
     children,
     disabled,
+    display,
     className,
     onClick,
     external,
     cms,
-    target = external ? '_blank' : undefined,
-    rel = external ? 'noopener noreferrer nofollow' : undefined,
-    as,
+    as, // FIXME Might have broken as functionallity, needs verification.
     color,
     onMouseEnter,
     onMouseLeave,
@@ -85,7 +85,6 @@ export const Link: LinkComponent = React.forwardRef<any, LinkProps>((props, ref)
     onFocus,
     ...rest
   } = props;
-  const destinationProp = external || cms ? { href: to } : { to };
 
   const { track } = useContext(TrackingContext);
   const trackClick = (e: React.MouseEvent) => {
@@ -111,16 +110,15 @@ export const Link: LinkComponent = React.forwardRef<any, LinkProps>((props, ref)
 
   return (
     <StyledLink
-      ref={ref}
+      innerRef={ref}
       className={className}
       onClick={trackClick}
-      {...destinationProp}
-      target={target}
-      rel={rel}
+      to={to}
       external={external}
       cms={cms}
       as={as}
-      color={color}
+      $color={color}
+      $display={display}
       onMouseEnter={onMouseEnter}
       onMouseLeave={onMouseLeave}
       onMouseOver={onMouseOver}

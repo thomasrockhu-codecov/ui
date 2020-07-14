@@ -5,11 +5,12 @@ import { number, withKnobs } from '@storybook/addon-knobs';
 import { FixedSizeList as List } from 'react-window';
 import AutoSizer from 'react-virtualized-auto-sizer';
 import FlexTable from './FlexTable';
-import { Button, Typography, Flag, Icon, Number, Flexbox } from '../..';
+import { Button, Typography, Flag, Icon, Number, Flexbox, DateTime } from '../..';
 import { SortOrder } from './Header/HeaderContent/HeaderContent.types';
 import { OnSort } from './Header/Header.types';
 import { ICON_COLUMN_DEFAULT_FLEX_PROPS } from './shared/constants';
 import docs from './FlexTable.mdx';
+import { FlexPropsType } from './shared/ColumnProvider/ColumnProvider.types';
 
 export default {
   title: 'Molecules | FlexTable',
@@ -28,7 +29,6 @@ const StyledDiv = styled.div`
 `;
 
 const StyledFlexTable = styled(FlexTable)`
-  background-color: white;
   &:not(:last-of-type) {
     margin-bottom: ${p => p.theme.spacing.unit(10)}px;
   }
@@ -369,12 +369,138 @@ export const TableWithDifferentColumns = () => {
   );
 };
 
+const StyledFlexboxContainer = styled(Flexbox)`
+  justify-content: inherit;
+`;
+
+export const TableCustomDataCells = () => {
+  const Story = () => {
+    const TruncateStartHeader: React.FC<{
+      currency: string;
+      columnId: string;
+      flex: string;
+      justifyContent?: FlexPropsType['justifyContent'];
+    }> = ({ children, columnId, flex, currency, justifyContent }) => (
+      <FlexTable.Header columnId={columnId} flex={flex} justifyContent={justifyContent} sortable>
+        {({ sortable, sorted, fontSize, onSortClick, sortOrder }) => (
+          <FlexTable.Header.SortButton onClick={onSortClick}>
+            <StyledFlexboxContainer container>
+              <FlexTable.CellInlineContainer item>
+                <FlexTable.Header.TextWrapper fontSize={fontSize} sorted={sorted}>
+                  {children}
+                </FlexTable.Header.TextWrapper>
+              </FlexTable.CellInlineContainer>
+              <Flexbox item>
+                <FlexTable.Header.TextWrapper fontSize={fontSize} truncate={false}>
+                  {currency}
+                </FlexTable.Header.TextWrapper>
+              </Flexbox>
+              {sortable && (
+                <Flexbox item>
+                  <FlexTable.Header.SortIcon sortOrder={sortOrder} />
+                </Flexbox>
+              )}
+            </StyledFlexboxContainer>
+          </FlexTable.Header.SortButton>
+        )}
+      </FlexTable.Header>
+    );
+
+    const NumberCell: React.FC<{
+      columnId: string;
+      value: number;
+      percentage?: boolean;
+    }> = React.memo(({ columnId, value, percentage = false }) => (
+      <FlexTable.Cell columnId={columnId}>
+        {({ fontSize }) => (
+          <FlexTable.Cell.TextWrapper fontSize={fontSize}>
+            <Number value={value} percentage={percentage} />
+          </FlexTable.Cell.TextWrapper>
+        )}
+      </FlexTable.Cell>
+    ));
+
+    const NumberFooter: React.FC<{
+      columnId: string;
+      value: number;
+      percentage?: boolean;
+    }> = React.memo(({ columnId, value, percentage = false }) => (
+      <FlexTable.Footer columnId={columnId}>
+        {({ fontSize }) => (
+          <FlexTable.Footer.TextWrapper fontSize={fontSize}>
+            <Number value={value} percentage={percentage} />
+          </FlexTable.Footer.TextWrapper>
+        )}
+      </FlexTable.Footer>
+    ));
+
+    const DateCell: React.FC<{ columnId: string; value: number }> = React.memo(
+      ({ columnId, value }) => (
+        <FlexTable.Cell columnId={columnId}>
+          {({ fontSize }) => (
+            <FlexTable.Cell.TextWrapper fontSize={fontSize}>
+              <DateTime value={value} />
+            </FlexTable.Cell.TextWrapper>
+          )}
+        </FlexTable.Cell>
+      ),
+    );
+
+    const FlagCell: React.FC<{ columnId: string; country: string }> = React.memo(
+      ({ columnId, country }) => (
+        <FlexTable.Cell columnId={columnId}>
+          {({ fontSize }) => (
+            <FlexTable.Cell.TextWrapper fontSize={fontSize}>
+              <Flag country={country} />
+            </FlexTable.Cell.TextWrapper>
+          )}
+        </FlexTable.Cell>
+      ),
+    );
+
+    return (
+      <FlexTable>
+        <FlexTable.HeaderRow>
+          <FlexTable.Header columnId="date">Date</FlexTable.Header>
+          <TruncateStartHeader
+            columnId="transferable-quantity"
+            flex="0 0 150px"
+            justifyContent="flex-end"
+            currency="USD"
+          >
+            Transferable Quantity
+          </TruncateStartHeader>
+          <FlexTable.Header columnId="country">Country</FlexTable.Header>
+          <FlexTable.Header columnId="percentage" justifyContent="flex-end">
+            Percentage
+          </FlexTable.Header>
+        </FlexTable.HeaderRow>
+        <FlexTable.Row>
+          <DateCell columnId="date" value={1594385610185} />
+          <NumberCell columnId="transferable-quantity" value={300} />
+          <FlagCell columnId="country" country="SE" />
+          <NumberCell columnId="percentage" value={75} percentage />
+        </FlexTable.Row>
+        <FlexTable.Row>
+          <DateCell columnId="date" value={1594385610000} />
+          <NumberCell columnId="transferable-quantity" value={100} />
+          <FlagCell columnId="country" country="UK" />
+          <NumberCell columnId="percentage" value={25} percentage />
+        </FlexTable.Row>
+        <FlexTable.FooterRow>
+          <FlexTable.Footer columnId="date" />
+          <NumberFooter columnId="transferable-quantity" value={400} />
+          <FlexTable.Footer columnId="country" />
+          <NumberFooter columnId="percentage" value={25} percentage />
+        </FlexTable.FooterRow>
+      </FlexTable>
+    );
+  };
+  return <Story />;
+};
+
 export const TableWithDifferentHeaders = () => {
   const DefaultTableHeaders = () => {
-    const StyledFlexboxContainer = styled(Flexbox)`
-      justify-content: inherit;
-    `;
-
     const CustomisedTableHeader: React.FC = ({ children }) => (
       <FlexTable.Header columnId="column3" sortable>
         {({ sortable, sorted, fontSize, onSortClick, sortOrder }) => (
@@ -753,6 +879,35 @@ export const TableWithDifferentSizeProps = () => {
           <FlexTable.Cell columnId="column2">Cell 2-2</FlexTable.Cell>
           <FlexTable.Cell columnId="column3">Cell 2-3</FlexTable.Cell>
         </FlexTable.Row>
+        <FlexTable.FooterRow>
+          <FlexTable.Footer columnId="column1">Footer 1</FlexTable.Footer>
+          <FlexTable.Footer columnId="column2">Footer 2</FlexTable.Footer>
+          <FlexTable.Footer columnId="column3">Footer 3</FlexTable.Footer>
+        </FlexTable.FooterRow>
+      </StyledFlexTable>
+    </StyledDiv>
+  );
+
+  const TablesWithDifferentColumnDistanceOnMobileExample = () => (
+    <StyledDiv>
+      <StyledFlexTable columnDistance={2} sm={{ columnDistance: 10 }}>
+        <FlexTable.HeaderRow>
+          <FlexTable.Header columnId="column1">Header 1</FlexTable.Header>
+          <FlexTable.Header columnId="column2" justifyContent="flex-end">
+            Header 2
+          </FlexTable.Header>
+          <FlexTable.Header columnId="column3">Header 3</FlexTable.Header>
+        </FlexTable.HeaderRow>
+        <FlexTable.Row>
+          <FlexTable.Cell columnId="column1">Cell 1-1</FlexTable.Cell>
+          <FlexTable.Cell columnId="column2">Cell 1-2</FlexTable.Cell>
+          <FlexTable.Cell columnId="column3">Cell 1-3</FlexTable.Cell>
+        </FlexTable.Row>
+        <FlexTable.Row>
+          <FlexTable.Cell columnId="column1">Cell 2-1</FlexTable.Cell>
+          <FlexTable.Cell columnId="column2">Cell 2-2</FlexTable.Cell>
+          <FlexTable.Cell columnId="column3">Cell 2-3</FlexTable.Cell>
+        </FlexTable.Row>
       </StyledFlexTable>
     </StyledDiv>
   );
@@ -765,6 +920,8 @@ export const TableWithDifferentSizeProps = () => {
       <TablesWithDifferentFontSizesExample />
       <Typography type="title3">Tables With Different Sizes on mobile</Typography>
       <TablesWithDifferentSizesInMobile />
+      <Typography type="title3">Tables With Different Column Distance on mobile</Typography>
+      <TablesWithDifferentColumnDistanceOnMobileExample />
     </StyledDiv>
   );
 };

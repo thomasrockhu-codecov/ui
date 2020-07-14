@@ -1,3 +1,131 @@
+## [3.2.1](https://github.com/nordnet/ui/compare/v3.2.0...v3.2.1) (2020-07-14)
+
+
+### Bug Fixes
+
+* 🐛 add z index to header row if sticky ([03df5c3](https://github.com/nordnet/ui/commit/03df5c3))
+* 🐛 remove legacy expand and rework types ([4858a4d](https://github.com/nordnet/ui/commit/4858a4d))
+
+# [3.2.0](https://github.com/nordnet/ui/compare/v3.1.0...v3.2.0) (2020-07-14)
+
+
+### Bug Fixes
+
+* 🐛 added render for sizes to footer ([57346ec](https://github.com/nordnet/ui/commit/57346ec))
+
+
+### Features
+
+* 🎸 allow disable of truncation on table text wrappers ([f93e5da](https://github.com/nordnet/ui/commit/f93e5da))
+* 🎸 column distance for flex table ([d05d8f7](https://github.com/nordnet/ui/commit/d05d8f7))
+
+# [3.1.0](https://github.com/nordnet/ui/compare/v3.0.1...v3.1.0) (2020-07-13)
+
+
+### Features
+
+* add new icons ([072d991](https://github.com/nordnet/ui/commit/072d991))
+
+## [3.0.1](https://github.com/nordnet/ui/compare/v3.0.0...v3.0.1) (2020-07-10)
+
+
+### Bug Fixes
+
+* 🐛 add render for sizes to cell ([fe7df23](https://github.com/nordnet/ui/commit/fe7df23))
+* 🐛 add render for sizes to header content ([abf999c](https://github.com/nordnet/ui/commit/abf999c))
+
+# [3.0.0](https://github.com/nordnet/ui/compare/v2.61.1...v3.0.0) (2020-07-10)
+
+
+### Bug Fixes
+
+* cleaned dependencies ([8ded330](https://github.com/nordnet/ui/commit/8ded330))
+* exposing the new link helpers ([c61a24a](https://github.com/nordnet/ui/commit/c61a24a))
+* innerref needs to be specifically handled in defaultlink ([017f8da](https://github.com/nordnet/ui/commit/017f8da))
+* merged master for latest changes ([e63dd29](https://github.com/nordnet/ui/commit/e63dd29))
+
+
+### Features
+
+* 🎸 actually removing react-router as peerdep ([bb5c90f](https://github.com/nordnet/ui/commit/bb5c90f))
+* 🎸 bump react-intl to v4 ([4588508](https://github.com/nordnet/ui/commit/4588508))
+* 🎸 button is using linkprovider ([4f69763](https://github.com/nordnet/ui/commit/4f69763))
+* 🎸 links no longer depend on react-router ([2ffc4d1](https://github.com/nordnet/ui/commit/2ffc4d1))
+* 🎸 navtabs.item accepts active, no router ([a2e0970](https://github.com/nordnet/ui/commit/a2e0970))
+* 🎸 new linkprovider tested with tabnavs ([0f576a7](https://github.com/nordnet/ui/commit/0f576a7))
+
+
+### BREAKING CHANGES
+
+* 🧨 No longer requires react-router as a routing system.
+* 🧨 Button as a link requires LinkProvider
+* 🧨 Link needs a provided react-router link to work as before
+* 🧨 TabNavs requires a custom Link to LinkProvider if to be used with
+react-router.
+* 🧨 Dropping support for automatic active with react-router
+
+# [3.0.0-beta.2](https://github.com/nordnet/ui/compare/v3.0.0-beta.1@beta...v3.0.0-beta.2@beta) (2020-07-10)
+
+
+### Bug Fixes
+
+* 🐛 remove background color from stories ([2b089a1](https://github.com/nordnet/ui/commit/2b089a1))
+* 🐛 set background color on row expand area ([c867101](https://github.com/nordnet/ui/commit/c867101))
+* 🐛 set row background to white in table ([b866adf](https://github.com/nordnet/ui/commit/b866adf))
+
+
+### Features
+
+* add sliderSecondary color ([cfab49a](https://github.com/nordnet/ui/commit/cfab49a))
+
+## [2.61.1](https://github.com/nordnet/ui/compare/v2.61.0...v2.61.1) (2020-07-09)
+
+
+### Bug Fixes
+
+* 🐛 remove background color from stories ([2b089a1](https://github.com/nordnet/ui/commit/2b089a1))
+* 🐛 set background color on row expand area ([c867101](https://github.com/nordnet/ui/commit/c867101))
+* 🐛 set row background to white in table ([b866adf](https://github.com/nordnet/ui/commit/b866adf))
+
+# [2.61.0](https://github.com/nordnet/ui/compare/v2.60.0...v2.61.0) (2020-07-09)
+
+
+### Features
+
+* add sliderSecondary color ([cfab49a](https://github.com/nordnet/ui/commit/cfab49a))
+
+# [2.60.0](https://github.com/nordnet/ui/compare/v2.59.2...v2.60.0) (2020-07-08)
+
+# [2.60.0-beta.1](https://github.com/nordnet/ui/compare/v2.59.0...v2.60.0-beta.1@beta) (2020-07-07)
+
+
+### Features
+
+* 🎸 bump react-intl to v4 ([4588508](https://github.com/nordnet/ui/commit/4588508))
+
+# [2.60.0](https://github.com/nordnet/ui/compare/v2.59.2...v2.60.0) (2020-07-08)
+
+### Bug Fixes
+
+* add proper default variant, not-allowed cursor on disabled variant ([51049c5](https://github.com/nordnet/ui/commit/51049c5))
+* add slider container ([213d7c7](https://github.com/nordnet/ui/commit/213d7c7))
+* change div sc call ([0161adc](https://github.com/nordnet/ui/commit/0161adc))
+* merge master ([a5cfaa6](https://github.com/nordnet/ui/commit/a5cfaa6))
+* merge master ([19c309a](https://github.com/nordnet/ui/commit/19c309a))
+* set container height to total height ([9c83a38](https://github.com/nordnet/ui/commit/9c83a38))
+
+### Features
+
+* add disabled option to slider ([fe8e5a7](https://github.com/nordnet/ui/commit/fe8e5a7))
+* slider component rebuild ([12c2a90](https://github.com/nordnet/ui/commit/12c2a90))
+
+## [2.59.2](https://github.com/nordnet/ui/compare/v2.59.1...v2.59.2) (2020-07-08)
+
+
+### Bug Fixes
+
+* 🐛 react-intl 5 ([2c5caae](https://github.com/nordnet/ui/commit/2c5caae))
+
 ## [2.59.1](https://github.com/nordnet/ui/compare/v2.59.0...v2.59.1) (2020-07-07)
 
 

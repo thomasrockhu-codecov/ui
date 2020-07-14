@@ -1,17 +1,20 @@
 import React from 'react';
-// @ts-ignore
-import { matchPath, withRouter } from 'react-router';
-import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 import { Flexbox, Typography, TabTitle } from '../..';
 import { assert } from '../../common/utils';
 import { useKeyboardNavigation } from '../Tabs/useKeyboardNavigation';
 import { ItemProps, TitleComponent, Component } from './TabsNav.types';
+import { LinkProps, useLink } from '../../common/Links';
 
 export const Item: React.FC<ItemProps> = ({ children }) => {
   return <div>{children}</div>;
 };
 (Item as any).displayName = 'TabsNav.Tab';
+
+const Link: React.FC<LinkProps> = props => {
+  const LinkComponent = useLink();
+  return <LinkComponent {...props} />;
+};
 
 const StyledLink = styled(Link)`
   display: flex;
@@ -25,7 +28,7 @@ const Title: TitleComponent = ({ active, children, setRef, to, onKeyDown, onClic
       <StyledLink
         to={to}
         innerRef={setRef}
-        aria-current={active && 'page'}
+        aria-current={active ? 'page' : undefined}
         onKeyDown={onKeyDown}
         onClick={onClick}
       >
@@ -55,7 +58,7 @@ const isItemOrUndefined = (x: any): x is { type: typeof Item; props: ItemProps }
 
 // TODO: fix ts issue with height prop
 // @ts-ignore
-export const TabsNav: Component = (withRouter(({ children, location, height = 11, className }) => {
+export const TabsNav: Component = ({ children, height = 11, className }) => {
   const { setRef, onKeyDown } = useKeyboardNavigation({
     itemsLength: React.Children.count(children),
   });
@@ -65,14 +68,10 @@ export const TabsNav: Component = (withRouter(({ children, location, height = 11
     if (!isItemOrUndefined(c)) {
       assert(false, 'There should be only <TabsNav.Tab> children inside of <TabsNav> component');
     } else if (c) {
-      const isIndexActive = Boolean(
-        matchPath(location.pathname, { path: c.props.to, exact: Boolean(c.props.exact) }),
-      );
-
       titles.push(
         <Flexbox item as="li" key={c.props.to}>
           <Title
-            active={isIndexActive}
+            active={!!c.props.active}
             onClick={c.props.onTitleClick}
             setRef={setRef(i)}
             to={c.props.to}
@@ -99,7 +98,7 @@ export const TabsNav: Component = (withRouter(({ children, location, height = 11
       {titles}
     </Flexbox>
   );
-}) as unknown) as Component;
+};
 
 TabsNav.displayName = 'TabsNav';
 TabsNav.Tab = Item;

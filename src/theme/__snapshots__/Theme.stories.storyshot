@@ -3208,7 +3208,7 @@ exports[`Storyshots Theme Colors (semantic) 1`] = `
       <td
         className="c5"
       >
-        tableHeaderBackground
+        tableRowBackground
       </td>
       <td
         className="c5"
@@ -4665,7 +4665,38 @@ exports[`Storyshots Theme Colors (semantic) 1`] = `
       <td
         className="c5"
       >
-        sliderLeftColor
+        sliderColor
+      </td>
+      <td
+        className="c5"
+      >
+        <div
+          className="c13"
+          color="#0046FF"
+        />
+        <div>
+          #0046FF
+        </div>
+      </td>
+      <td
+        className="c5"
+      >
+        <div
+          className="c13"
+          color="#0046FF"
+        />
+        <div>
+          #0046FF
+        </div>
+      </td>
+    </tr>
+    <tr
+      className="c2"
+    >
+      <td
+        className="c5"
+      >
+        sliderSecondary
       </td>
       <td
         className="c5"
@@ -4696,7 +4727,7 @@ exports[`Storyshots Theme Colors (semantic) 1`] = `
       <td
         className="c5"
       >
-        sliderRightColor
+        sliderDisabled
       </td>
       <td
         className="c5"
@@ -4718,37 +4749,6 @@ exports[`Storyshots Theme Colors (semantic) 1`] = `
         />
         <div>
           #EBEBE8
-        </div>
-      </td>
-    </tr>
-    <tr
-      className="c2"
-    >
-      <td
-        className="c5"
-      >
-        sliderThumbColor
-      </td>
-      <td
-        className="c5"
-      >
-        <div
-          className="c6"
-          color="#FFFFFF"
-        />
-        <div>
-          #FFFFFF
-        </div>
-      </td>
-      <td
-        className="c5"
-      >
-        <div
-          className="c6"
-          color="#FFFFFF"
-        />
-        <div>
-          #FFFFFF
         </div>
       </td>
     </tr>
@@ -4764,53 +4764,22 @@ exports[`Storyshots Theme Colors (semantic) 1`] = `
         className="c5"
       >
         <div
-          className="c12"
-          color="#BCBCB6"
+          className="c6"
+          color="#FFFFFF"
         />
         <div>
-          #BCBCB6
+          #FFFFFF
         </div>
       </td>
       <td
         className="c5"
       >
         <div
-          className="c12"
-          color="#BCBCB6"
+          className="c6"
+          color="#FFFFFF"
         />
         <div>
-          #BCBCB6
-        </div>
-      </td>
-    </tr>
-    <tr
-      className="c2"
-    >
-      <td
-        className="c5"
-      >
-        sliderThumbBorder
-      </td>
-      <td
-        className="c5"
-      >
-        <div
-          className="c12"
-          color="#BCBCB6"
-        />
-        <div>
-          #BCBCB6
-        </div>
-      </td>
-      <td
-        className="c5"
-      >
-        <div
-          className="c12"
-          color="#BCBCB6"
-        />
-        <div>
-          #BCBCB6
+          #FFFFFF
         </div>
       </td>
     </tr>
@@ -4820,28 +4789,28 @@ exports[`Storyshots Theme Colors (semantic) 1`] = `
       <td
         className="c5"
       >
-        sliderThumbActive
+        sliderBackgroundColor
       </td>
       <td
         className="c5"
       >
         <div
-          className="c13"
-          color="#0046FF"
+          className="c11"
+          color="#EBEBE8"
         />
         <div>
-          #0046FF
+          #EBEBE8
         </div>
       </td>
       <td
         className="c5"
       >
         <div
-          className="c13"
-          color="#0046FF"
+          className="c11"
+          color="#EBEBE8"
         />
         <div>
-          #0046FF
+          #EBEBE8
         </div>
       </td>
     </tr>

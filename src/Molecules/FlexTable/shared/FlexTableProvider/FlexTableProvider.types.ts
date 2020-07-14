@@ -7,6 +7,11 @@ type FlexTableState = {
    */
   density: Density;
   /**
+   * Padding horizontally between cells
+   * @default 2
+   */
+  columnDistance: number;
+  /**
    * Set if header is fixed or follows scroll.
    * @default true
    */

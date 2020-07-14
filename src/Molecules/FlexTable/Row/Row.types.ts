@@ -9,7 +9,7 @@ import { MediaRelatedProps } from '../shared/shared.types';
 
 type HtmlProps = {} & React.HTMLAttributes<HTMLDivElement>;
 
-interface Expand {
+export type ExpandAreaProps = {
   /**
    * Sets expand state
    * @default false
@@ -23,20 +23,8 @@ interface Expand {
    * Array to be rendered in the expandable area. Maps itself by key/value pairs.
    */
   expandItems?: ExpandItems;
-}
-
-interface IncludeExpand extends Expand {
-  includeExpand?: true;
-  onExpandToggle?: (expanded: boolean) => void;
-}
-
-interface ExcludeExpand extends Expand {
-  includeExpand?: false;
-  onExpandToggle?: undefined;
-}
-
-export type ExpandProps = IncludeExpand | ExcludeExpand;
-export type ExpandAreaProps = Expand;
+  onExpandToggle?: (expanded: boolean) => void | undefined;
+};
 
 type Props = {
   /**
@@ -55,8 +43,8 @@ type Props = {
    * @default true
    */
   isContent?: boolean;
-} & ExpandProps &
-  MediaRelatedProps<Pick<Expand, 'expandItems' | 'expandChildren'>> &
+} & ExpandAreaProps &
+  MediaRelatedProps<Pick<ExpandAreaProps, 'expandItems' | 'expandChildren'>> &
   HtmlProps;
 
 export type RowComponents = {

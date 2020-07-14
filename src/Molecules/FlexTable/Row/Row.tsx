@@ -29,6 +29,7 @@ const StyledRow = styled(Flexbox).withConfig({
   density: Density;
   expandable: boolean;
 }>`
+  background: ${p => p.theme.color.tableRowBackground};
   ${p =>
     !p.hideSeparator && !p.expanded ? `border-bottom: 1px solid ${p.separatorColor(p.theme)}` : ''};
 
@@ -42,8 +43,8 @@ const StyledRow = styled(Flexbox).withConfig({
     p.hoverHighlight &&
     !p.expanded &&
     `&:hover {
-        background: ${p.theme.color.tableRowHover};
-      }`};
+      background: ${p.theme.color.tableRowHover};
+    }`};
 
   padding-top: ${p => getDensityPaddings(p.density)}px;
   padding-bottom: ${p => getDensityPaddings(p.density)}px;
@@ -89,6 +90,7 @@ const Row: RowComponent = ({
 }) => {
   const {
     density: xsDensity,
+    columnDistance: xsColumnDistance,
     expandable: xsExpandable,
     sm: smTable,
     md: mdTable,
@@ -104,12 +106,12 @@ const Row: RowComponent = ({
   return (
     <>
       <RenderForSizes
-        xs={{ density: xsDensity, expandable: xsExpandable }}
+        xs={{ density: xsDensity, expandable: xsExpandable, columnDistance: xsColumnDistance }}
         sm={smTable}
         md={mdTable}
         lg={lgTable}
         xl={xlTable}
-        Container={({ density, expandable, children: component }) => (
+        Container={({ density, columnDistance, expandable, children: component }) => (
           <StyledRow
             container
             alignItems="center"
@@ -121,7 +123,7 @@ const Row: RowComponent = ({
             separatorColor={separatorColor}
             density={density}
             expandable={expandable}
-            gutter={1}
+            gutter={columnDistance}
             {...htmlProps}
           >
             {component}

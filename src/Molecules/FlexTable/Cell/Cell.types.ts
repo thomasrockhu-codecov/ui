@@ -21,6 +21,11 @@ export type TextWrapperProps = {
    * @default 'm'
    */
   fontSize?: FontSize;
+  /**
+   * Truncate the text inside and a tooltip on hover when truncated
+   * @default true
+   */
+  truncate?: boolean;
 };
 
 export type TextWrapperComponent = React.FC<TextWrapperProps>;

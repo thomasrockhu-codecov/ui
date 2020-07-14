@@ -1,6 +1,5 @@
 import React from 'react';
-import { HashRouter } from 'react-router-dom';
-import { Accordion, AccordionItem, Typography, Link } from '../..';
+import { Accordion, AccordionItem, Typography, Spinner } from '../..';
 import docs from './Accordion.mdx';
 
 export default {
@@ -21,7 +20,7 @@ const ExampleContent = () => (
 
 const exampleFooter = (
   <Typography as="p" type="secondary" weight="bold">
-    Did not find what you look for? <Link to="/#">Check out FAQ</Link>
+    Did not find what you look for? ...Thats a shame. <Spinner id="shame" />
   </Typography>
 );
 
@@ -41,14 +40,12 @@ defaultStory.story = {
 };
 
 export const withFooter = () => (
-  <HashRouter>
-    <Accordion footer={exampleFooter}>
-      <AccordionItem title="Låg CO₂ risk">
-        <ExampleContent />
-      </AccordionItem>
-      <AccordionItem title="Sustainability score">
-        <ExampleContent />
-      </AccordionItem>
-    </Accordion>
-  </HashRouter>
+  <Accordion footer={exampleFooter}>
+    <AccordionItem title="Låg CO₂ risk">
+      <ExampleContent />
+    </AccordionItem>
+    <AccordionItem title="Sustainability score">
+      <ExampleContent />
+    </AccordionItem>
+  </Accordion>
 );

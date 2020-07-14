@@ -28,16 +28,17 @@ exports[`Storyshots Molecules | Link Cms link with its default values 1`] = `
 >
   <a
     className="c1"
-    href="http://www.google.com"
+    href="https://example.com"
     onClick={[Function]}
   >
-    Link
+    Example CMS
   </a>
 </span>
 `;
 
 exports[`Storyshots Molecules | Link Default usage 1`] = `
-.c0 {
+Array [
+  .c0 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
   margin: 0;
@@ -60,16 +61,50 @@ exports[`Storyshots Molecules | Link Default usage 1`] = `
 }
 
 <span
-  className="c0"
->
-  <a
-    className="c1"
-    href="/startpage"
-    onClick={[Function]}
+    className="c0"
   >
-    Link
-  </a>
-</span>
+    <a
+      className="c1"
+      href="/route1"
+      onClick={[Function]}
+    >
+      Link1
+    </a>
+  </span>,
+  .c0 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c1 {
+  display: inline;
+  padding: 0;
+  color: #0046FF;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c1:hover {
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+<span
+    className="c0"
+  >
+    <a
+      className="c1"
+      href="/route2"
+      onClick={[Function]}
+    >
+      Link2
+    </a>
+  </span>,
+]
 `;
 
 exports[`Storyshots Molecules | Link External link with its default values 1`] = `
@@ -100,12 +135,12 @@ exports[`Storyshots Molecules | Link External link with its default values 1`] =
 >
   <a
     className="c1"
-    href="http://www.google.com"
+    href="https://example.com"
     onClick={[Function]}
     rel="noopener noreferrer nofollow"
     target="_blank"
   >
-    Link
+    Example
   </a>
 </span>
 `;
@@ -138,12 +173,12 @@ exports[`Storyshots Molecules | Link External link with rel and target overriden
 >
   <a
     className="c1"
-    href="http://www.google.com"
+    href="https://example.com"
     onClick={[Function]}
     rel="nofollow"
     target="_self"
   >
-    Link
+    Example CMS
   </a>
 </span>
 `;
@@ -176,7 +211,7 @@ exports[`Storyshots Molecules | Link With black color 1`] = `
 >
   <a
     className="c1"
-    href="http://www.google.com"
+    href="https://example.com"
     onClick={[Function]}
     rel="noopener noreferrer nofollow"
     target="_blank"
@@ -283,7 +318,7 @@ exports[`Storyshots Molecules | Link With inherited color 1`] = `
 >
   <a
     className="c1"
-    href="http://www.google.com"
+    href="https://example.com"
     onClick={[Function]}
     rel="noopener noreferrer nofollow"
     target="_blank"
@@ -294,7 +329,8 @@ exports[`Storyshots Molecules | Link With inherited color 1`] = `
 `;
 
 exports[`Storyshots Molecules | Link With typography primary as type 1`] = `
-.c0 {
+Array [
+  .c0 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
   margin: 0;
@@ -317,16 +353,50 @@ exports[`Storyshots Molecules | Link With typography primary as type 1`] = `
 }
 
 <span
-  className="c0"
->
-  <a
-    className="c1"
-    href="/startpage"
-    onClick={[Function]}
+    className="c0"
   >
-    Link
-  </a>
-</span>
+    <a
+      className="c1"
+      href="/route1"
+      onClick={[Function]}
+    >
+      Link1
+    </a>
+  </span>,
+  .c0 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.c1 {
+  display: inline;
+  padding: 0;
+  color: #0046FF;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c1:hover {
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+<span
+    className="c0"
+  >
+    <a
+      className="c1"
+      href="/route2"
+      onClick={[Function]}
+    >
+      Link2
+    </a>
+  </span>,
+]
 `;
 
 exports[`Storyshots Molecules | Link Without to prop results in a button looking like a link 1`] = `

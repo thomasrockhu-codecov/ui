@@ -12,6 +12,7 @@ export type TextWrapperProps = {
    * @default false
    */
   sorted?: boolean;
+  truncate?: boolean;
 };
 
 export type TextWrapperComponent = React.FC<TextWrapperProps>;

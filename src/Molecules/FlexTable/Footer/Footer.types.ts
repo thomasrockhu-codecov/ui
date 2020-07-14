@@ -26,6 +26,7 @@ export type TextWrapperProps = {
    * @default 'bold'
    */
   weight?: string;
+  truncate?: boolean;
 };
 
 export type TextWrapperComponent = React.FC<TextWrapperProps>;

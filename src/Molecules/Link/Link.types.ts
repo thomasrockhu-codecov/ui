@@ -1,5 +1,4 @@
 import React from 'react';
-import { LinkProps as ReactRouterDomLinkProps } from 'react-router-dom';
 
 export type LinkProps = {
   children: React.ReactChild | React.ReactChild[];
@@ -9,7 +8,7 @@ export type LinkProps = {
   color?: 'blue' | 'black' | 'inherit';
   /** @default _self */
   target?: '_blank' | '_self';
-  to?: ReactRouterDomLinkProps['to'];
+  to?: any; // TODO define this, used to be LinkProps.to from 'react-router-dom' types.
   external?: boolean;
   cms?: boolean;
   rel?: string;
