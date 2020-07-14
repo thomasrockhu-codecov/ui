@@ -1,3 +1,19 @@
+# [3.3.0](https://github.com/nordnet/ui/compare/v3.2.1...v3.3.0) (2020-07-14)
+
+
+### Bug Fixes
+
+* 🐛 created mdx file and added docs to flex table stories ([368bcf5](https://github.com/nordnet/ui/commit/368bcf5))
+
+
+### Features
+
+* 🎸 add custom header and cell ([651a2b1](https://github.com/nordnet/ui/commit/651a2b1))
+* 🎸 add customise component title ([b33552a](https://github.com/nordnet/ui/commit/b33552a))
+* 🎸 added expandable row example to docs ([261005c](https://github.com/nordnet/ui/commit/261005c))
+* 🎸 created mdx for table ([41fa0c2](https://github.com/nordnet/ui/commit/41fa0c2))
+* 🎸 reorder and add examples and more text ([8d42ec0](https://github.com/nordnet/ui/commit/8d42ec0))
+
 ## [3.2.1](https://github.com/nordnet/ui/compare/v3.2.0...v3.2.1) (2020-07-14)
 
 
