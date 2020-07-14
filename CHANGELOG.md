@@ -1,3 +1,11 @@
+## [3.2.1](https://github.com/nordnet/ui/compare/v3.2.0...v3.2.1) (2020-07-14)
+
+
+### Bug Fixes
+
+* 🐛 add z index to header row if sticky ([03df5c3](https://github.com/nordnet/ui/commit/03df5c3))
+* 🐛 remove legacy expand and rework types ([4858a4d](https://github.com/nordnet/ui/commit/4858a4d))
+
 # [3.2.0](https://github.com/nordnet/ui/compare/v3.1.0...v3.2.0) (2020-07-14)
 
 
