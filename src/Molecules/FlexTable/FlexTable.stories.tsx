@@ -750,6 +750,11 @@ export const TableWithDifferentSizeProps = () => {
           <FlexTable.Cell columnId="column2">Cell 2-2</FlexTable.Cell>
           <FlexTable.Cell columnId="column3">Cell 2-3</FlexTable.Cell>
         </FlexTable.Row>
+        <FlexTable.FooterRow>
+          <FlexTable.Footer columnId="column1">Footer 1</FlexTable.Footer>
+          <FlexTable.Footer columnId="column2">Footer 2</FlexTable.Footer>
+          <FlexTable.Footer columnId="column3">Footer 3</FlexTable.Footer>
+        </FlexTable.FooterRow>
       </StyledFlexTable>
     </StyledDiv>
   );
