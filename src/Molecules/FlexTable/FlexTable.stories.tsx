@@ -9,6 +9,7 @@ import { Button, Typography, Flag, Icon, Number, Flexbox, DateTime } from '../..
 import { SortOrder } from './Header/HeaderContent/HeaderContent.types';
 import { OnSort } from './Header/Header.types';
 import { ICON_COLUMN_DEFAULT_FLEX_PROPS } from './shared/constants';
+import docs from './FlexTable.mdx';
 import { FlexPropsType } from './shared/ColumnProvider/ColumnProvider.types';
 
 export default {
@@ -16,6 +17,7 @@ export default {
   decorators: [withKnobs],
   parameters: {
     component: FlexTable,
+    ...docs.parameters,
   },
 };
 

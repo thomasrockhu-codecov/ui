@@ -13,8 +13,17 @@ import {
 export type OnSort = (columnId: string, newSortOrder: SortOrder) => void;
 
 type Unsortable = {
+  /**
+   * Add sortable arrow and button
+   */
   sortable?: false;
+  /**
+   * Sets a controlled sort state, sort states can be found under FlexTable.CONSTANTS
+   */
   sortOrder?: undefined;
+  /**
+   * Sets the initial sort state for uncontrolled sorting
+   */
   initialSortOrder?: undefined;
   onSort?: undefined;
 };
@@ -42,11 +51,24 @@ type RenderPropArguments = TextWrapperProps &
 type RenderFunc = (props: RenderPropArguments) => ReactNode;
 type Children = ReactNode | RenderFunc;
 
-type Props = { children?: Children; columnId: string } & FlexboxProps & SortedProps;
+type Props = {
+  children?: Children;
+  /**
+   * Set column id, used to share layout between header and cells in the column
+   */
+  columnId: string;
+} & FlexboxProps &
+  SortedProps;
 
 export type HeaderComponents = {
+  /**
+   * Wraps text in correct font size with truncation and tooltip
+   */
   TextWrapper: TextWrapperComponent;
   SortIcon: SortIconComponent;
+  /**
+   * Wraps the header with an accessible button so it's clickable anywhere to sort
+   */
   SortButton: SortButtonComponent;
 };
 

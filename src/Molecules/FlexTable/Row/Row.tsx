@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import styled from 'styled-components';
-import { RowComponent, RowComponents } from './Row.types';
+import { RowComponent } from './Row.types';
 import { Flexbox } from '../../..';
 import { ColorFn } from '../../../common/Types/sharedTypes';
 import { getDensityPaddings } from '../shared/textUtils';
@@ -70,7 +70,7 @@ const StyledExpandedRow = styled('div').withConfig({
   border-bottom: 1px solid ${p => p.separatorColor(p.theme)};
 `;
 
-const Row: RowComponent & RowComponents = ({
+const Row: RowComponent = ({
   className,
   expanded = false,
   hoverHighlight = true,

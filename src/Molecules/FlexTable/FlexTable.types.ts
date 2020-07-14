@@ -11,6 +11,9 @@ type HtmlProps = {} & React.HTMLAttributes<HTMLDivElement>;
 
 export type Props = {
   className?: string;
+  /**
+   * Will render a title above the table
+   */
   title?: ReactNode;
 } & Partial<FlexTableProviderProps> &
   HtmlProps;
