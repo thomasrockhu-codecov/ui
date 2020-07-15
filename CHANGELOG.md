@@ -1,3 +1,10 @@
+# [3.4.0](https://github.com/nordnet/ui/compare/v3.3.2...v3.4.0) (2020-07-15)
+
+
+### Features
+
+* 🎸 export expand item and make label and value render prop ([c8131d9](https://github.com/nordnet/ui/commit/c8131d9))
+
 ## [3.3.2](https://github.com/nordnet/ui/compare/v3.3.1...v3.3.2) (2020-07-15)
 
 
