@@ -64,9 +64,9 @@ const Header: HeaderComponent = props => {
 
   useEffect(() => {
     // If the sortOrder changes from the outside, update internal the column sort state
-    // controlledSort not be able to be false if sortOrderProp = undefined, but doesn't understand, therefore !== undefined is included
-    if (controlledSort && sortOrderProp !== undefined) {
-      columnDispatch({ type: ACTION_SET_SORTING, sortOrder: sortOrderProp });
+    if (controlledSort) {
+      // TODO: Remove type assertion when typescript is able to assert undefined from constants, in this case controlledSort
+      columnDispatch({ type: ACTION_SET_SORTING, sortOrder: sortOrderProp as SortOrder });
     }
   }, [sortOrderProp, controlledSort, columnDispatch]);
 

@@ -1027,7 +1027,7 @@ export const ExpandableTableWithDifferentScenarios = () => {
           <FlexTable.Cell columnId="column3">Expandable</FlexTable.Cell>
         </FlexTable.Row>
 
-        <FlexTable.Row expandItems={expandItemsText} expanded>
+        <FlexTable.Row expandItems={expandItemsText} initiallyExpanded>
           <FlexTable.Cell columnId="column1">Expandable with initial state</FlexTable.Cell>
           <FlexTable.Cell columnId="column2">Expandable with initial state</FlexTable.Cell>
           <FlexTable.Cell columnId="column3">Expandable with initial state</FlexTable.Cell>
@@ -1090,7 +1090,11 @@ export const ExpandableTableWithDifferentScenarios = () => {
 
   const ControlledExpandedTableExample = () => {
     const [expandedRows, setExpandedRows] = useState<string[]>(['row3']);
-
+    const isExpanded = (rowId: string) => expandedRows.includes(rowId);
+    const onExpandClick = (rowId: string) => (newExpanded: boolean) =>
+      newExpanded
+        ? setExpandedRows([...expandedRows, rowId])
+        : setExpandedRows(expandedRows.filter(row => row !== rowId));
     return (
       <StyledFlexTable expandable>
         <FlexTable.HeaderRow>
@@ -1107,12 +1111,8 @@ export const ExpandableTableWithDifferentScenarios = () => {
 
         <FlexTable.Row
           expandItems={expandItemsText}
-          expanded={expandedRows.includes('row2')}
-          onExpandToggle={expanded =>
-            expanded
-              ? setExpandedRows([...expandedRows, 'row2'])
-              : setExpandedRows(expandedRows.filter(row => row !== 'row2'))
-          }
+          expanded={isExpanded('row2')}
+          onExpandToggle={onExpandClick('row2')}
         >
           <FlexTable.Cell columnId="column1">Expandable</FlexTable.Cell>
           <FlexTable.Cell columnId="column2">Expandable</FlexTable.Cell>
@@ -1121,12 +1121,8 @@ export const ExpandableTableWithDifferentScenarios = () => {
 
         <FlexTable.Row
           expandItems={expandItemsText}
-          expanded={expandedRows.includes('row3')}
-          onExpandToggle={expanded =>
-            expanded
-              ? setExpandedRows([...expandedRows, 'row3'])
-              : setExpandedRows(expandedRows.filter(row => row !== 'row3'))
-          }
+          expanded={isExpanded('row3')}
+          onExpandToggle={onExpandClick('row3')}
         >
           <FlexTable.Cell columnId="column1">Expandable with initial state</FlexTable.Cell>
           <FlexTable.Cell columnId="column2">Expandable with initial state</FlexTable.Cell>
@@ -1135,12 +1131,8 @@ export const ExpandableTableWithDifferentScenarios = () => {
 
         <FlexTable.Row
           expandItems={expandItemsComponents}
-          expanded={expandedRows.includes('row4')}
-          onExpandToggle={expanded =>
-            expanded
-              ? setExpandedRows([...expandedRows, 'row4'])
-              : setExpandedRows(expandedRows.filter(row => row !== 'row4'))
-          }
+          expanded={isExpanded('row4')}
+          onExpandToggle={onExpandClick('row4')}
         >
           <FlexTable.Cell columnId="column1">Expandable component items</FlexTable.Cell>
           <FlexTable.Cell columnId="column2">Expandable component items</FlexTable.Cell>
@@ -1150,12 +1142,8 @@ export const ExpandableTableWithDifferentScenarios = () => {
         <FlexTable.Row
           expandItems={expandItemsText}
           expandChildren={expandChildrenComponents}
-          expanded={expandedRows.includes('row5')}
-          onExpandToggle={expanded =>
-            expanded
-              ? setExpandedRows([...expandedRows, 'row5'])
-              : setExpandedRows(expandedRows.filter(row => row !== 'row5'))
-          }
+          expanded={isExpanded('row5')}
+          onExpandToggle={onExpandClick('row5')}
         >
           <FlexTable.Cell columnId="column1">Expandable with children</FlexTable.Cell>
           <FlexTable.Cell columnId="column2">Expandable with children</FlexTable.Cell>
