@@ -930,9 +930,21 @@ const expandedItemsGenerator = (renderComponent = false) =>
   [...Array(20)].reduce((acc, _, itemIndex) => {
     const keyName = `${itemIndex + 1}`;
     const labelText = `Label ${keyName}`;
-    const label = renderComponent ? <Typography>{labelText}</Typography> : labelText;
+    const label = renderComponent
+      ? ({ fontSize }: any) => (
+          <FlexTable.ExpandItem.TextWrapperLabel fontSize={fontSize}>
+            {labelText}
+          </FlexTable.ExpandItem.TextWrapperLabel>
+        )
+      : labelText;
     const valueText = Math.floor(10 ** (20 - Math.ceil(Math.random() * 20)) * Math.random());
-    const value = renderComponent ? <Number value={valueText} /> : valueText.toString();
+    const value = renderComponent
+      ? ({ fontSize }: any) => (
+          <FlexTable.ExpandItem.TextWrapperValue fontSize={fontSize}>
+            <Number value={valueText} />
+          </FlexTable.ExpandItem.TextWrapperValue>
+        )
+      : valueText.toString();
     return [...acc, { label, value }];
   }, []);
 

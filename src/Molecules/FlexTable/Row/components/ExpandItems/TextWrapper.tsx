@@ -1,8 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
-import { Typography, Media } from '../../../../..';
-import { useFlexTable } from '../../../shared/FlexTableProvider';
+import { Typography } from '../../../../..';
 import { getFontSizeTypographyType } from '../../../shared/textUtils';
+import { FontSize } from '../../../shared/shared.types';
 
 const StyledTypography = styled(Typography)`
   display: inline-block;
@@ -12,22 +12,12 @@ const StyledTypography = styled(Typography)`
   width: 100%;
 `;
 
-export const TextWrapperLabel: React.FC = ({ children }) => (
-  <StyledTypography type="tertiary" color={t => t.color.label}>
+export const TextWrapperLabel: React.FC<{ fontSize: FontSize }> = ({ fontSize, children }) => (
+  <StyledTypography type={getFontSizeTypographyType(fontSize)} color={t => t.color.label}>
     {children}
   </StyledTypography>
 );
 
-export const TextWrapperValue: React.FC = ({ children }) => {
-  const { fontSize } = useFlexTable();
-  return (
-    <>
-      <Media query={t => t.media.lessThan(t.breakpoints.md)}>
-        <StyledTypography type="tertiary">{children}</StyledTypography>
-      </Media>
-      <Media query={t => t.media.greaterThan(t.breakpoints.md)}>
-        <StyledTypography type={getFontSizeTypographyType(fontSize)}>{children}</StyledTypography>
-      </Media>
-    </>
-  );
-};
+export const TextWrapperValue: React.FC<{ fontSize: FontSize }> = ({ fontSize, children }) => (
+  <StyledTypography type={getFontSizeTypographyType(fontSize)}>{children}</StyledTypography>
+);
