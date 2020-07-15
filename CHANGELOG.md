@@ -1,3 +1,10 @@
+## [3.3.2](https://github.com/nordnet/ui/compare/v3.3.1...v3.3.2) (2020-07-15)
+
+
+### Bug Fixes
+
+* 🐛 add initiallyExpanded to FlexTable row ([ad128fe](https://github.com/nordnet/ui/commit/ad128fe))
+
 ## [3.3.1](https://github.com/nordnet/ui/compare/v3.3.0...v3.3.1) (2020-07-15)
 
 
