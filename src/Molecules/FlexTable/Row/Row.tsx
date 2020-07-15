@@ -72,7 +72,8 @@ const StyledExpandedRow = styled('div').withConfig({
 
 const Row: RowComponent = ({
   className,
-  expanded = false,
+  expanded,
+  initiallyExpanded = false,
   hoverHighlight = true,
   hideSeparator = false,
   // If false means that it's a header
@@ -97,10 +98,22 @@ const Row: RowComponent = ({
     lg: lgTable,
     xl: xlTable,
   } = useFlexTable();
-  const [expand, setExpand] = useState(expanded);
+  const controlledExpand = expanded !== undefined;
+  const [expand, setExpand] = useState(controlledExpand ? expanded : initiallyExpanded);
+
+  const onExpandToggleClick = () => {
+    if (onExpandToggle) {
+      onExpandToggle(!expand);
+    }
+    if (!controlledExpand) {
+      setExpand(!expand);
+    }
+  };
 
   useEffect(() => {
-    setExpand(expanded);
+    if (controlledExpand) {
+      setExpand(expanded);
+    }
   }, [expanded]);
 
   return (
@@ -119,7 +132,8 @@ const Row: RowComponent = ({
             className={className}
             hideSeparator={hideSeparator}
             role="row"
-            expanded={expand}
+            // TODO: Remove type assertion when typescript is able to assert undefined from constants, in this case controlledExpand
+            expanded={expand as boolean}
             separatorColor={separatorColor}
             density={density}
             expandable={expandable}
@@ -136,7 +150,7 @@ const Row: RowComponent = ({
               <ExpandElement
                 isContent={isContent}
                 expanded={expand}
-                onExpandToggle={onExpandToggle}
+                onExpandToggle={onExpandToggleClick}
                 disabled={!expandChildrenXs && !expandItemsXs}
                 setExpand={setExpand}
               />
