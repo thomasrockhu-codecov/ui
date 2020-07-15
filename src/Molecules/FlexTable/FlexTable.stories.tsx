@@ -983,9 +983,21 @@ const expandedItemsGenerator = (renderComponent = false) =>
   [...Array(20)].reduce((acc, _, itemIndex) => {
     const keyName = `${itemIndex + 1}`;
     const labelText = `Label ${keyName}`;
-    const label = renderComponent ? <Typography>{labelText}</Typography> : labelText;
+    const label = renderComponent
+      ? ({ fontSize }: any) => (
+          <FlexTable.ExpandItem.TextWrapperLabel fontSize={fontSize}>
+            {labelText}
+          </FlexTable.ExpandItem.TextWrapperLabel>
+        )
+      : labelText;
     const valueText = Math.floor(10 ** (20 - Math.ceil(Math.random() * 20)) * Math.random());
-    const value = renderComponent ? <Number value={valueText} /> : valueText.toString();
+    const value = renderComponent
+      ? ({ fontSize }: any) => (
+          <FlexTable.ExpandItem.TextWrapperValue fontSize={fontSize}>
+            <Number value={valueText} />
+          </FlexTable.ExpandItem.TextWrapperValue>
+        )
+      : valueText.toString();
     return [...acc, { label, value }];
   }, []);
 
@@ -1236,6 +1248,24 @@ export const ExpandableTableWithDifferentScenarios = () => {
     );
   };
 
+  const ExpandedTableDifferentFontSizeOnMobile = () => {
+    return (
+      <StyledFlexTable fontSize="m" md={{ fontSize: 's' }} expandable>
+        <FlexTable.HeaderRow>
+          <FlexTable.Header columnId="column1">Header 1</FlexTable.Header>
+          <FlexTable.Header columnId="column2">Header 2</FlexTable.Header>
+          <FlexTable.Header columnId="column3">Header 3</FlexTable.Header>
+        </FlexTable.HeaderRow>
+
+        <FlexTable.Row expandItems={expandItemsText} initiallyExpanded>
+          <FlexTable.Cell columnId="column1">Expandable</FlexTable.Cell>
+          <FlexTable.Cell columnId="column2">Expandable</FlexTable.Cell>
+          <FlexTable.Cell columnId="column3">Expandable</FlexTable.Cell>
+        </FlexTable.Row>
+      </StyledFlexTable>
+    );
+  };
+
   return (
     <StyledDiv>
       <Typography type="title3">Default Expandable Table</Typography>
@@ -1246,6 +1276,8 @@ export const ExpandableTableWithDifferentScenarios = () => {
       <ControlledExpandedTableExample />
       <Typography type="title3">Controlled Expandable Table With Own Cell</Typography>
       <ControlledExpandableTableWithOwnCellExample />
+      <Typography type="title3">Different Font Size For Expand Item On Mobile</Typography>
+      <ExpandedTableDifferentFontSizeOnMobile />
     </StyledDiv>
   );
 };

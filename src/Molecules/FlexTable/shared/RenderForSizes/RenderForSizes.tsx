@@ -58,7 +58,6 @@ export const RenderForSizes: RenderForSizesComponent = ({
       {propsPerMedia.map((props, index, arr) => {
         const { size } = props;
         const nextSize = arr[index + 1] ? arr[index + 1].size : null;
-
         const component = Component(props);
         const container = Container({ children: component, ...props });
 
