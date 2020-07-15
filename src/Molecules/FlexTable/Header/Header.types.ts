@@ -12,33 +12,38 @@ import {
 
 export type OnSort = (columnId: string, newSortOrder: SortOrder) => void;
 
-type Unsortable = {
+interface Sorting {
   /**
    * Add sortable arrow and button
+   * @default false
    */
-  sortable?: false;
+  sortable?: boolean;
   /**
    * Sets a controlled sort state, sort states can be found under FlexTable.CONSTANTS
    */
-  sortOrder?: undefined;
+  sortOrder?: SortOrder;
   /**
    * Sets the initial sort state for uncontrolled sorting
    */
-  initialSortOrder?: undefined;
-  onSort?: undefined;
-};
-
-interface Sortable {
-  sortable: true;
+  initialSortOrder?: SortOrder;
   onSort?: OnSort;
 }
 
-interface ControlledSort extends Sortable {
+interface Unsortable extends Sorting {
+  sortable?: false;
+  sortOrder?: undefined;
+  initialSortOrder?: undefined;
+  onSort?: undefined;
+}
+
+interface ControlledSort extends Sorting {
+  sortable: true;
   sortOrder: SortOrder;
   initialSortOrder?: undefined;
 }
 
-interface UncontrolledSort extends Sortable {
+interface UncontrolledSort extends Sorting {
+  sortable: true;
   sortOrder?: undefined;
   initialSortOrder?: SortOrder;
 }
