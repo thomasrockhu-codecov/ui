@@ -1,3 +1,10 @@
+## [3.3.1](https://github.com/nordnet/ui/compare/v3.3.0...v3.3.1) (2020-07-15)
+
+
+### Bug Fixes
+
+* 🐛 add title omit to htmlprops ([bfb60be](https://github.com/nordnet/ui/commit/bfb60be))
+
 # [3.3.0](https://github.com/nordnet/ui/compare/v3.2.1...v3.3.0) (2020-07-14)
 
 

@@ -17,7 +17,7 @@ export type Props = {
    */
   title?: ReactNode;
 } & Partial<FlexTableProviderProps> &
-  HtmlProps;
+  Omit<HtmlProps, 'title'>;
 
 export type FlexTableComponent = React.FC<Props>;
 

@@ -9,12 +9,16 @@ import { MediaRelatedProps } from '../shared/shared.types';
 
 type HtmlProps = {} & React.HTMLAttributes<HTMLDivElement>;
 
-export type ExpandAreaProps = {
+interface ExpandArea {
   /**
-   * Sets expand state
-   * @default false
+   * Sets expand state, makes expansion controlled
    */
   expanded?: boolean;
+  /**
+   * If the row starts out expanded, is used when expanded is not supplied, i.e. uncontrolled expansion
+   * @default false
+   */
+  initiallyExpanded?: boolean;
   /**
    * Components to be rendered in the expandable area. Is rendered below `expandItems`
    */
@@ -23,8 +27,21 @@ export type ExpandAreaProps = {
    * Array to be rendered in the expandable area. Maps itself by key/value pairs.
    */
   expandItems?: ExpandItems;
-  onExpandToggle?: (expanded: boolean) => void | undefined;
-};
+  onExpandToggle?: (newExpanded: boolean) => void | undefined;
+}
+
+interface ControlledExpand extends ExpandArea {
+  expanded: boolean;
+  // You're not allowed to supply initiallyExpanded if expanded has been defined
+  initiallyExpanded?: undefined;
+}
+
+interface UncontrolledExpand extends ExpandArea {
+  expanded?: undefined;
+  initiallyExpanded?: boolean;
+}
+
+export type ExpandAreaProps = UncontrolledExpand | ControlledExpand;
 
 type Props = {
   /**

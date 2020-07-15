@@ -1,12 +1,13 @@
 import React from 'react';
 import styled from 'styled-components';
 import { isElement, isFunction } from '../../../../../common/utils';
-import { Flexbox, LabeledValue, Media } from '../../../../..';
+import { Flexbox, LabeledValue } from '../../../../..';
 import { ExpandItemComponent, ExpandItemProps, RenderFunc } from './ExpandItems.types';
 import { Props as FlexBoxProps } from '../../../../../Atoms/Flexbox/Flexbox.types';
 import { TextWrapperLabel, TextWrapperValue } from './TextWrapper';
 import { FontSize } from '../../../shared/shared.types';
 import { useFlexTable } from '../../../shared/FlexTableProvider';
+import { RenderForSizes } from '../../../shared';
 
 const StyledFlexboxItem = styled(Flexbox)<FlexBoxProps>`
   max-width: ${p => p.theme.spacing.unit(75)}px;
@@ -64,16 +65,23 @@ const DesktopItem: React.FC<{ item: ExpandItemProps; fontSize: FontSize }> = ({
 );
 
 export const ExpandItem: ExpandItemComponent = ({ item }) => {
-  const { fontSize } = useFlexTable();
+  const { fontSize: xsFontSize, sm, md, lg, xl } = useFlexTable();
   return (
-    <>
-      <Media query={t => t.media.lessThan(t.breakpoints.md)}>
-        <MobileItem item={item} fontSize={fontSize} />
-      </Media>
-      <Media query={t => t.media.greaterThan(t.breakpoints.md)}>
-        <DesktopItem item={item} fontSize={fontSize} />
-      </Media>
-    </>
+    <RenderForSizes
+      xs={{ fontSize: xsFontSize, mobileItem: true }}
+      sm={sm}
+      md={{ ...md, mobileItem: false }}
+      lg={lg}
+      xl={xl}
+      Container={({ fontSize, mobileItem }) => {
+        if (mobileItem) {
+          return <MobileItem item={item} fontSize={fontSize} />;
+        }
+
+        return <DesktopItem item={item} fontSize={fontSize} />;
+      }}
+      Component={({ children }) => children}
+    />
   );
 };
 

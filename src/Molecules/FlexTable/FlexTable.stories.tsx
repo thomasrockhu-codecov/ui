@@ -85,6 +85,57 @@ export const DefaultTable = () => {
     </StyledFlexTable>
   );
 
+  const DefaultTableWithCustomTitleExample = () => {
+    const CustomTitle: React.FC<{ country: string; name: string; shortName: string }> = ({
+      country,
+      name,
+      shortName,
+    }) => (
+      <Flexbox container alignItems="baseline" gutter={1}>
+        <Flexbox item>
+          <Flag country={country} height={3} />
+        </Flexbox>
+        <Flexbox item>
+          <Typography type="secondary" weight="bold">
+            {name}
+          </Typography>
+        </Flexbox>
+        <Flexbox item>
+          <Typography type="secondary" color={t => t.color.label}>
+            ({shortName})
+          </Typography>
+        </Flexbox>
+      </Flexbox>
+    );
+
+    return (
+      <StyledFlexTable
+        title={<CustomTitle country="SE" name="Ericsson Corporation" shortName="ERICSSON" />}
+      >
+        <FlexTable.HeaderRow>
+          <FlexTable.Header columnId="column1">Header 1</FlexTable.Header>
+          <FlexTable.Header columnId="column2">Header 2</FlexTable.Header>
+          <FlexTable.Header columnId="column3">Header 3</FlexTable.Header>
+        </FlexTable.HeaderRow>
+        <FlexTable.Row>
+          <FlexTable.Cell columnId="column1">Cell 1-1</FlexTable.Cell>
+          <FlexTable.Cell columnId="column2">Cell 1-2</FlexTable.Cell>
+          <FlexTable.Cell columnId="column3">Cell 1-3</FlexTable.Cell>
+        </FlexTable.Row>
+        <FlexTable.Row>
+          <FlexTable.Cell columnId="column1">Cell 2-1</FlexTable.Cell>
+          <FlexTable.Cell columnId="column2">Cell 2-2</FlexTable.Cell>
+          <FlexTable.Cell columnId="column3">Cell 2-3</FlexTable.Cell>
+        </FlexTable.Row>
+        <FlexTable.Row>
+          <FlexTable.Cell columnId="column1">Cell 3-1</FlexTable.Cell>
+          <FlexTable.Cell columnId="column2">Cell 3-2</FlexTable.Cell>
+          <FlexTable.Cell columnId="column3">Cell 3-3</FlexTable.Cell>
+        </FlexTable.Row>
+      </StyledFlexTable>
+    );
+  };
+
   const DefaultTableWithFooterExample = () => (
     <StyledFlexTable>
       <FlexTable.HeaderRow>
@@ -162,6 +213,8 @@ export const DefaultTable = () => {
       <DefaultTableExample />
       <Typography type="title3">Default Table With Title</Typography>
       <DefaultTableWithTitleExample />
+      <Typography type="title3">Default Table Custom With Title</Typography>
+      <DefaultTableWithCustomTitleExample />
       <Typography type="title3">Default Table With Footer</Typography>
       <DefaultTableWithFooterExample />
       <Typography type="title3">Default Table With Actions Column</Typography>
@@ -986,7 +1039,7 @@ export const ExpandableTableWithDifferentScenarios = () => {
           <FlexTable.Cell columnId="column3">Expandable</FlexTable.Cell>
         </FlexTable.Row>
 
-        <FlexTable.Row expandItems={expandItemsText} expanded>
+        <FlexTable.Row expandItems={expandItemsText} initiallyExpanded>
           <FlexTable.Cell columnId="column1">Expandable with initial state</FlexTable.Cell>
           <FlexTable.Cell columnId="column2">Expandable with initial state</FlexTable.Cell>
           <FlexTable.Cell columnId="column3">Expandable with initial state</FlexTable.Cell>
@@ -1049,7 +1102,11 @@ export const ExpandableTableWithDifferentScenarios = () => {
 
   const ControlledExpandedTableExample = () => {
     const [expandedRows, setExpandedRows] = useState<string[]>(['row3']);
-
+    const isExpanded = (rowId: string) => expandedRows.includes(rowId);
+    const onExpandClick = (rowId: string) => (newExpanded: boolean) =>
+      newExpanded
+        ? setExpandedRows([...expandedRows, rowId])
+        : setExpandedRows(expandedRows.filter(row => row !== rowId));
     return (
       <StyledFlexTable expandable>
         <FlexTable.HeaderRow>
@@ -1066,12 +1123,8 @@ export const ExpandableTableWithDifferentScenarios = () => {
 
         <FlexTable.Row
           expandItems={expandItemsText}
-          expanded={expandedRows.includes('row2')}
-          onExpandToggle={expanded =>
-            expanded
-              ? setExpandedRows([...expandedRows, 'row2'])
-              : setExpandedRows(expandedRows.filter(row => row !== 'row2'))
-          }
+          expanded={isExpanded('row2')}
+          onExpandToggle={onExpandClick('row2')}
         >
           <FlexTable.Cell columnId="column1">Expandable</FlexTable.Cell>
           <FlexTable.Cell columnId="column2">Expandable</FlexTable.Cell>
@@ -1080,12 +1133,8 @@ export const ExpandableTableWithDifferentScenarios = () => {
 
         <FlexTable.Row
           expandItems={expandItemsText}
-          expanded={expandedRows.includes('row3')}
-          onExpandToggle={expanded =>
-            expanded
-              ? setExpandedRows([...expandedRows, 'row3'])
-              : setExpandedRows(expandedRows.filter(row => row !== 'row3'))
-          }
+          expanded={isExpanded('row3')}
+          onExpandToggle={onExpandClick('row3')}
         >
           <FlexTable.Cell columnId="column1">Expandable with initial state</FlexTable.Cell>
           <FlexTable.Cell columnId="column2">Expandable with initial state</FlexTable.Cell>
@@ -1094,12 +1143,8 @@ export const ExpandableTableWithDifferentScenarios = () => {
 
         <FlexTable.Row
           expandItems={expandItemsComponents}
-          expanded={expandedRows.includes('row4')}
-          onExpandToggle={expanded =>
-            expanded
-              ? setExpandedRows([...expandedRows, 'row4'])
-              : setExpandedRows(expandedRows.filter(row => row !== 'row4'))
-          }
+          expanded={isExpanded('row4')}
+          onExpandToggle={onExpandClick('row4')}
         >
           <FlexTable.Cell columnId="column1">Expandable component items</FlexTable.Cell>
           <FlexTable.Cell columnId="column2">Expandable component items</FlexTable.Cell>
@@ -1109,12 +1154,8 @@ export const ExpandableTableWithDifferentScenarios = () => {
         <FlexTable.Row
           expandItems={expandItemsText}
           expandChildren={expandChildrenComponents}
-          expanded={expandedRows.includes('row5')}
-          onExpandToggle={expanded =>
-            expanded
-              ? setExpandedRows([...expandedRows, 'row5'])
-              : setExpandedRows(expandedRows.filter(row => row !== 'row5'))
-          }
+          expanded={isExpanded('row5')}
+          onExpandToggle={onExpandClick('row5')}
         >
           <FlexTable.Cell columnId="column1">Expandable with children</FlexTable.Cell>
           <FlexTable.Cell columnId="column2">Expandable with children</FlexTable.Cell>
@@ -1207,6 +1248,24 @@ export const ExpandableTableWithDifferentScenarios = () => {
     );
   };
 
+  const ExpandedTableDifferentFontSizeOnMobile = () => {
+    return (
+      <StyledFlexTable fontSize="m" md={{ fontSize: 's' }} expandable>
+        <FlexTable.HeaderRow>
+          <FlexTable.Header columnId="column1">Header 1</FlexTable.Header>
+          <FlexTable.Header columnId="column2">Header 2</FlexTable.Header>
+          <FlexTable.Header columnId="column3">Header 3</FlexTable.Header>
+        </FlexTable.HeaderRow>
+
+        <FlexTable.Row expandItems={expandItemsText} initiallyExpanded>
+          <FlexTable.Cell columnId="column1">Expandable</FlexTable.Cell>
+          <FlexTable.Cell columnId="column2">Expandable</FlexTable.Cell>
+          <FlexTable.Cell columnId="column3">Expandable</FlexTable.Cell>
+        </FlexTable.Row>
+      </StyledFlexTable>
+    );
+  };
+
   return (
     <StyledDiv>
       <Typography type="title3">Default Expandable Table</Typography>
@@ -1217,6 +1276,8 @@ export const ExpandableTableWithDifferentScenarios = () => {
       <ControlledExpandedTableExample />
       <Typography type="title3">Controlled Expandable Table With Own Cell</Typography>
       <ControlledExpandableTableWithOwnCellExample />
+      <Typography type="title3">Different Font Size For Expand Item On Mobile</Typography>
+      <ExpandedTableDifferentFontSizeOnMobile />
     </StyledDiv>
   );
 };
