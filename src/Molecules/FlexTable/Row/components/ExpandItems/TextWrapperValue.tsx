@@ -1,17 +1,20 @@
 import React from 'react';
-import styled from 'styled-components';
-import { Typography } from '../../../../..';
+import { Typography, TruncateWithTooltip } from '../../../../..';
 import { FontSize } from '../../../shared/shared.types';
 import { getFontSizeTypographyType } from '../../../shared/textUtils';
+import { TextWrapperComponent } from './ExpandItems.types';
 
-const StyledTypography = styled(Typography)`
-  display: inline-block;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  overflow: hidden;
-  width: 100%;
-`;
-
-export const TextWrapperValue: React.FC<{ fontSize: FontSize }> = ({ fontSize, children }) => (
-  <StyledTypography type={getFontSizeTypographyType(fontSize)}>{children}</StyledTypography>
+const Text: React.FC<{ fontSize: FontSize }> = ({ fontSize, children }) => (
+  <Typography type={getFontSizeTypographyType(fontSize)}>{children}</Typography>
 );
+
+export const TextWrapperValue: TextWrapperComponent = ({ fontSize, children, truncate = true }) => {
+  if (!truncate) {
+    return <Text fontSize={fontSize}>{children}</Text>;
+  }
+  return (
+    <TruncateWithTooltip label={children}>
+      <Text fontSize={fontSize}>{children}</Text>
+    </TruncateWithTooltip>
+  );
+};
