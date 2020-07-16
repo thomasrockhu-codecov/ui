@@ -981,6 +981,12 @@ export const TableWithDifferentSizeProps = () => {
 
 const expandedItemsGenerator = (renderComponent = false) =>
   [...Array(20)].reduce((acc, _, itemIndex) => {
+    // Make the first item really long
+    if (itemIndex === 0) {
+      const label = 'This is a reaaaallllyyy loooong label demonstrating truncation';
+      const value = 'This valuues is super long to also demonstrate truncation';
+      return [...acc, { label, value }];
+    }
     const keyName = `${itemIndex + 1}`;
     const labelText = `Label ${keyName}`;
     const label = renderComponent
@@ -1177,7 +1183,7 @@ export const ExpandableTableWithDifferentScenarios = () => {
     </FlexTable.Row>
   );
 
-  const ControlledExpandableTableWithOwnCellExample = () => {
+  const ControlledExpandableTableWithCustomRowExample = () => {
     const [expandedRows, setExpandedRows] = useState<string[]>(['row3']);
     const toggleExpand = (rowId: string) => {
       const isAlreadyExpanded = expandedRows.includes(rowId);
@@ -1274,8 +1280,8 @@ export const ExpandableTableWithDifferentScenarios = () => {
       <OnlyExpandableOnMobileTable />
       <Typography type="title3">Controlled Expandable Table</Typography>
       <ControlledExpandedTableExample />
-      <Typography type="title3">Controlled Expandable Table With Own Cell</Typography>
-      <ControlledExpandableTableWithOwnCellExample />
+      <Typography type="title3">Controlled Expandable Table With Custom Row</Typography>
+      <ControlledExpandableTableWithCustomRowExample />
       <Typography type="title3">Different Font Size For Expand Item On Mobile</Typography>
       <ExpandedTableDifferentFontSizeOnMobile />
     </StyledDiv>

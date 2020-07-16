@@ -4,10 +4,16 @@ import { isElement, isFunction } from '../../../../../common/utils';
 import { Flexbox, LabeledValue } from '../../../../..';
 import { ExpandItemComponent, ExpandItemProps, RenderFunc } from './ExpandItems.types';
 import { Props as FlexBoxProps } from '../../../../../Atoms/Flexbox/Flexbox.types';
-import { TextWrapperLabel, TextWrapperValue } from './TextWrapper';
+import { TextWrapperLabel } from './TextWrapperLabel';
+import { TextWrapperValue } from './TextWrapperValue';
 import { FontSize } from '../../../shared/shared.types';
 import { useFlexTable } from '../../../shared/FlexTableProvider';
 import { RenderForSizes } from '../../../shared';
+
+const StyledOverflowItem = styled(Flexbox)<{ textAlign?: string }>`
+  overflow: hidden;
+  text-align: ${({ textAlign = 'left' }) => textAlign};
+`;
 
 const StyledFlexboxItem = styled(Flexbox)<FlexBoxProps>`
   max-width: ${p => p.theme.spacing.unit(75)}px;
@@ -36,14 +42,14 @@ const MobileItem: React.FC<{ item: ExpandItemProps; fontSize: FontSize }> = ({
   fontSize,
 }) => (
   <Flexbox container justifyContent="space-between" as="li">
-    <Flexbox item>
+    <StyledOverflowItem item flex="0 0 50%">
       <ExpandRenderer fontSize={fontSize} isLabel>
         {item.label}
       </ExpandRenderer>
-    </Flexbox>
-    <Flexbox item>
+    </StyledOverflowItem>
+    <StyledOverflowItem item flex="0 0 50%" textAlign="right">
       <ExpandRenderer fontSize={fontSize}>{item.value}</ExpandRenderer>
-    </Flexbox>
+    </StyledOverflowItem>
   </Flexbox>
 );
 

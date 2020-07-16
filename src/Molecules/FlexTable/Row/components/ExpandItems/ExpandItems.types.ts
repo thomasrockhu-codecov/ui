@@ -19,3 +19,5 @@ type Items = {
 export type ExpandItemComponent = React.FC<{ item: ExpandItemProps }> & Items;
 
 export type ExpandItemsComponent = React.FC<{ items: ExpandItems }>;
+
+export type TextWrapperComponent = React.FC<{ fontSize: FontSize; truncate?: boolean }>;
