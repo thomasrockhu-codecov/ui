@@ -389,6 +389,13 @@ This keeps the row from rendering a chevron and instead provides a empty `Header
     
     The layout properties used on the Icon column.
 
+## Design notes
+These pretain to the design standards of the cells and rows
+
+- In general, columns with cells that use number values should be right aligned, i.e. `justifyContent="flex-end"``
+- When `density` is `s`, `fontSize` value should be `s`. For other `density` values `fontSize` could be either `s` or `m`
+- If the column header ends with a currency, the currency shouldn't truncate. An example of how to truncate the rest can be found in the stories
+
 
 ## Performance
 The table should be able to handle large numbers of rows without a hitch. However sorting all the rows creates a lot of unnecessary re-renders. Each row is re-rendered to its new position
