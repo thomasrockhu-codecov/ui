@@ -1,3 +1,10 @@
+# [3.5.0](https://github.com/nordnet/ui/compare/v3.4.0...v3.5.0) (2020-07-16)
+
+
+### Features
+
+* 🎸 add truncation tooltip on table expand item ([5754b9c](https://github.com/nordnet/ui/commit/5754b9c))
+
 # [3.4.0](https://github.com/nordnet/ui/compare/v3.3.2...v3.4.0) (2020-07-15)
 
 
