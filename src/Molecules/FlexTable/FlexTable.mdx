@@ -35,8 +35,23 @@ The Flextable component only handles UI states.
   </FlexTable>
 </Preview>
 
+**Table of Contents**
+- Customization
+- FlexTable component
+- Header
+  - Sorting
+  - Custom Header 
+- Cell
+  - Custom Cell
+- Footer
+- Row
+  - Header Row & Footer Row
+- Constants
+- Design Notes
+- Performance
 
-### Customize components
+
+## Customization
 
 To enable users to customise their components, `FlexTable` and its components are developed to support plain strings, components and functions as children.
 Sending in a plain string as a child will wrap the string with content wrappers to set e.g. the correct font, font size and padding.
@@ -389,10 +404,10 @@ This keeps the row from rendering a chevron and instead provides a empty `Header
     
     The layout properties used on the Icon column.
 
-## Design notes
-These pretain to the design standards of the cells and rows
+## Design Notes
+These pretain to the design standards of the FlexTable
 
-- In general, columns with cells that use number values should be right aligned, i.e. `justifyContent="flex-end"``
+- In general, columns with cells that use number values should be right aligned, i.e. `justifyContent="flex-end"`
 - When `density` is `s`, `fontSize` value should be `s`. For other `density` values `fontSize` could be either `s` or `m`
 - If the column header ends with a currency, the currency shouldn't truncate. An example of how to truncate the rest can be found in the stories
 
