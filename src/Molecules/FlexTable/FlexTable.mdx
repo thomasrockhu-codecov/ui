@@ -179,7 +179,10 @@ The `fontSize` defined in the `FlexTable` component is inherited here. If the co
 ### Sorting
 
 To enable sorting, the `sortable` property has to be set to true. The user can have either a controlled or uncontrolled sorting state by setting the `sortOrder` property.
-In an uncontrolled state the header will unsort the other headers when a header is sorted. The default sorting rotation is _unsorted --> ascending --> descending --> unsorted_
+In an uncontrolled state the header will unsort the other headers when a header is sorted. The default sorting rotation is _unsorted --> ascending --> descending --> unsorted_. 
+
+Note: To ease sorting, we recommend that the `columnId` for each column has the same name as the data property that the column represents. 
+In the example below, The `columnId` of the first column represents `instrumentName` field in the data, `columnId` of second column represents `currency` etc.
 
 ```jsx
 const data = [
@@ -222,6 +225,8 @@ const InstrumentTable = () => (
   )
 );
 ```
+
+
 
 ### Custom Header
 
