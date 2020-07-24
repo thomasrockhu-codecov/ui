@@ -69,7 +69,11 @@ export const LevelOne: LevelOneComponent = ({
         return (
           <ListItem key={label} $current={current}>
             {current || done ? (
-              <StyledButton onClick={() => onStepClick(name)} variant="neutral" fullWidth>
+              <StyledButton
+                onClick={() => onStepClick && onStepClick(name)}
+                variant="neutral"
+                fullWidth
+              >
                 <Typography type="primary" weight={current ? 'bold' : 'regular'}>
                   <Content
                     py={VERTICAL_PADDING}

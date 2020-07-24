@@ -50,7 +50,7 @@ export const LevelTwo: LevelTwoComponent = ({
               sm={{ pl: contentPaddingDesktop, pr: HORIZONTAL_PADDING_DESKTOP }}
             >
               {current || done ? (
-                <Button onClick={() => onStepClick(name)} variant="neutral">
+                <Button onClick={() => onStepClick && onStepClick(name)} variant="neutral">
                   <Typography
                     color={t => (current ? t.color.text : t.color.disabledText)}
                     type="secondary"
