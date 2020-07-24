@@ -1,9 +1,9 @@
 import React from 'react';
-import { storiesOf } from '@storybook/react';
 import { action } from '@storybook/addon-actions';
+import docs from './MultiStepProgress.mdx';
 import MultiStepProgress from './MultiStepProgress';
 
-export const mockedSteps = [
+const mockedSteps = [
   { current: false, done: true, label: 'Investment objective', name: 'investment_objective' },
   {
     current: true,
@@ -19,7 +19,7 @@ export const mockedSteps = [
   { current: false, done: false, label: 'Allocations', name: 'allocations' },
 ];
 
-export const mockedStepsNotStarted = [
+const mockedStepsNotStarted = [
   { current: false, done: false, label: 'Investment objective', name: 'investment_objective' },
   {
     current: false,
@@ -35,22 +35,35 @@ export const mockedStepsNotStarted = [
   { current: false, done: false, label: 'Allocations', name: 'allocations' },
 ];
 
-storiesOf('Molecules | Multi Step Progress', module)
-  .add('Default', () => (
-    <>
-      <MultiStepProgress
-        steps={mockedSteps}
-        onStepClick={action(`step click`)}
-        onSubStepClick={action(`sub step click`)}
-      />
-    </>
-  ))
-  .add('Not started', () => (
-    <>
-      <MultiStepProgress
-        steps={mockedStepsNotStarted}
-        onStepClick={action(`step click`)}
-        onSubStepClick={action(`sub step click`)}
-      />
-    </>
-  ));
+export default {
+  title: 'Molecules | Multi Step Progress',
+
+  parameters: {
+    ...docs.parameters,
+    component: MultiStepProgress,
+  },
+};
+
+export const basicMultiStepProgress = () => (
+  <MultiStepProgress
+    steps={mockedSteps}
+    onStepClick={action(`step click`)}
+    onSubStepClick={action(`sub step click`)}
+  />
+);
+
+basicMultiStepProgress.story = {
+  name: 'Basic Multi Step Progress',
+};
+
+export const notStartedMultiStepProgress = () => (
+  <MultiStepProgress
+    steps={mockedStepsNotStarted}
+    onStepClick={action(`step click`)}
+    onSubStepClick={action(`sub step click`)}
+  />
+);
+
+notStartedMultiStepProgress.story = {
+  name: 'Not Started Multi Step Progress',
+};
