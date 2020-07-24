@@ -1,3 +1,10 @@
+# [3.6.0](https://github.com/nordnet/ui/compare/v3.5.0...v3.6.0) (2020-07-24)
+
+
+### Features
+
+* 🎸 move multi step progress from mutations to ui ([816d909](https://github.com/nordnet/ui/commit/816d909))
+
 # [3.5.0](https://github.com/nordnet/ui/compare/v3.4.0...v3.5.0) (2020-07-16)
 
 
