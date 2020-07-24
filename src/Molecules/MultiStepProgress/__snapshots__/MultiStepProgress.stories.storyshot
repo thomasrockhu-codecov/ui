@@ -1,0 +1,773 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Molecules | Multi Step Progress Default 1`] = `
+.c8 {
+  padding-left: 44px;
+  padding-top: 12px;
+  padding-right: 12px;
+  padding-bottom: 12px;
+}
+
+.c21 {
+  padding-left: 44px;
+  padding-right: 12px;
+}
+
+.c25 {
+  padding-left: 44px;
+  padding-top: 12px;
+  padding-right: 12px;
+  padding-bottom: 12px;
+}
+
+.c0 {
+  background: #FFFFFF;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.03);
+}
+
+.c10 {
+  position: absolute;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  -webkit-clip: rect(1px,1px,1px,1px);
+  clip: rect(1px,1px,1px,1px);
+}
+
+.c13 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 24px;
+  height: 24px;
+  fill: #00D200;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
+}
+
+.c14 {
+  fill: #FFFFFF;
+}
+
+.c6 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: inherit;
+  margin: 0;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c7 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.c11 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c16 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.c23 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #A0A09B;
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c24 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #A0A09B;
+  margin: 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.c4 {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  overflow: visible;
+  text-transform: none;
+  position: relative;
+  box-sizing: border-box;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  padding: 0;
+  background-color: transparent;
+  color: #282823;
+  border: none;
+  border-radius: 0;
+  cursor: pointer;
+}
+
+.c4,
+.c4[type='button'],
+.c4[type='reset'],
+.c4[type='submit'] {
+  -webkit-appearance: button;
+}
+
+.c4::-moz-focus-inner,
+.c4[type='button']::-moz-focus-inner,
+.c4[type='reset']::-moz-focus-inner,
+.c4[type='submit']::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+.c4:-moz-focusring,
+.c4[type='button']:-moz-focusring,
+.c4[type='reset']:-moz-focusring,
+.c4[type='submit']:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+.c22 {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  overflow: visible;
+  text-transform: none;
+  position: relative;
+  box-sizing: border-box;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  padding: 0;
+  background-color: transparent;
+  color: #282823;
+  border: none;
+  border-radius: 0;
+  cursor: pointer;
+}
+
+.c22,
+.c22[type='button'],
+.c22[type='reset'],
+.c22[type='submit'] {
+  -webkit-appearance: button;
+}
+
+.c22::-moz-focus-inner,
+.c22[type='button']::-moz-focus-inner,
+.c22[type='reset']::-moz-focus-inner,
+.c22[type='submit']::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+.c22:-moz-focusring,
+.c22[type='button']:-moz-focusring,
+.c22[type='reset']:-moz-focusring,
+.c22[type='submit']:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+.c12 {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+}
+
+.c17 {
+  width: 24px;
+  height: 24px;
+  background-color: #0046FF;
+  color: #FFFFFF;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.c26 {
+  width: 24px;
+  height: 24px;
+  background-color: #EBEBE8;
+  color: #A0A09B;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.c18 {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  padding-bottom: 12px;
+}
+
+.c20 {
+  display: block;
+}
+
+.c20 + .c19 {
+  padding-top: 8px;
+}
+
+.c1 {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.c3 {
+  display: block;
+  position: relative;
+}
+
+.c3::before {
+  content: '';
+  display: block;
+  background: #0046FF;
+  width: 2px;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  -webkit-transition: opacity 0.16s ease-out;
+  transition: opacity 0.16s ease-out;
+  opacity: 0;
+}
+
+.c3 + .c2 {
+  border-top: 8px solid #EBEBE8;
+}
+
+.c15 {
+  display: block;
+  position: relative;
+}
+
+.c15::before {
+  content: '';
+  display: block;
+  background: #0046FF;
+  width: 2px;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  -webkit-transition: opacity 0.16s ease-out;
+  transition: opacity 0.16s ease-out;
+  opacity: 1;
+}
+
+.c15 + .c2 {
+  border-top: 8px solid #EBEBE8;
+}
+
+.c9 {
+  position: relative;
+}
+
+.c5 {
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+}
+
+@media (min-width:760px) {
+  .c8 {
+    padding-left: 52px;
+    padding-right: 20px;
+  }
+}
+
+@media (min-width:760px) {
+  .c21 {
+    padding-left: 52px;
+    padding-right: 20px;
+  }
+}
+
+@media (min-width:760px) {
+  .c25 {
+    padding-left: 52px;
+  }
+}
+
+@media (min-width:760px) {
+  .c12 {
+    left: 20px;
+  }
+}
+
+<div
+  className="c0"
+>
+  <div
+    aria-label="Progress"
+    role="group"
+  >
+    <ol
+      className="c1"
+    >
+      <li
+        className="c2 c3"
+      >
+        <button
+          className="NormalizedButton__Button-ey7f5x-0 c4 c5"
+          onClick={[Function]}
+          type="button"
+        >
+          <span
+            className="c6"
+          >
+            <span
+              className="c7"
+            >
+              <div
+                className="c8 c9"
+              >
+                <div
+                  className="c10"
+                >
+                  Completed
+                </div>
+                <span
+                  aria-hidden={true}
+                  className="c11 c12"
+                >
+                  <svg
+                    aria-hidden="true"
+                    className="c13"
+                    focusable="false"
+                    preserveAspectRatio="xMidYMid meet"
+                    role="presentation"
+                    viewBox="0 0 20 20"
+                  >
+                    <path
+                      d="M10,20 C4.4771525,20 0,15.5228475 0,10 C0,4.4771525 4.4771525,0 10,0 C15.5228475,0 20,4.4771525 20,10 C20,15.5228475 15.5228475,20 10,20 Z"
+                    />
+                    <polygon
+                      className="c14"
+                      points="13.695 6 15 7.314 8.696 13.69 5 9.924 6.319 8.656 8.696 11.059"
+                    />
+                  </svg>
+                </span>
+                Investment objective
+              </div>
+            </span>
+          </span>
+        </button>
+      </li>
+      <li
+        className="c2 c15"
+      >
+        <button
+          className="NormalizedButton__Button-ey7f5x-0 c4 c5"
+          onClick={[Function]}
+          type="button"
+        >
+          <span
+            className="c6"
+          >
+            <span
+              className="c16"
+            >
+              <div
+                className="c8 c9"
+              >
+                <span
+                  aria-hidden={true}
+                  className="c11 c12"
+                >
+                  <span
+                    className="c17"
+                  >
+                    2
+                  </span>
+                </span>
+                Time and risk
+              </div>
+            </span>
+          </span>
+        </button>
+        <ol
+          className="c18"
+        >
+          <li
+            className="c19 c20"
+          >
+            <div
+              className="c21"
+            >
+              <button
+                className="NormalizedButton__Button-ey7f5x-0 c22"
+                onClick={[Function]}
+                type="button"
+              >
+                <span
+                  className="c6"
+                >
+                  <span
+                    className="c23"
+                  >
+                    <div
+                      className="c10"
+                    >
+                      Completed
+                    </div>
+                    Investment period
+                  </span>
+                </span>
+              </button>
+            </div>
+          </li>
+          <li
+            className="c19 c20"
+          >
+            <div
+              className="c21"
+            >
+              <button
+                className="NormalizedButton__Button-ey7f5x-0 c22"
+                onClick={[Function]}
+                type="button"
+              >
+                <span
+                  className="c6"
+                >
+                  <span
+                    className="c11"
+                  >
+                    <div
+                      className="c10"
+                    >
+                      Not completed
+                    </div>
+                    Frequency
+                  </span>
+                </span>
+              </button>
+            </div>
+          </li>
+          <li
+            className="c19 c20"
+          >
+            <div
+              className="c21"
+            >
+              <span
+                className="c23"
+              >
+                <div
+                  className="c10"
+                >
+                  Not completed
+                </div>
+                Amount
+              </span>
+            </div>
+          </li>
+        </ol>
+      </li>
+      <li
+        className="c2 c3"
+      >
+        <span
+          className="c24"
+        >
+          <div
+            className="c25 c9"
+          >
+            <div
+              className="c10"
+            >
+              Not completed
+            </div>
+            <span
+              aria-hidden={true}
+              className="c11 c12"
+            >
+              <span
+                className="c26"
+              >
+                3
+              </span>
+            </span>
+            Allocations
+          </div>
+        </span>
+      </li>
+    </ol>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Molecules | Multi Step Progress Not started 1`] = `
+.c5 {
+  padding-left: 44px;
+  padding-top: 12px;
+  padding-right: 12px;
+  padding-bottom: 12px;
+}
+
+.c0 {
+  background: #FFFFFF;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.03);
+}
+
+.c7 {
+  position: absolute;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  -webkit-clip: rect(1px,1px,1px,1px);
+  clip: rect(1px,1px,1px,1px);
+}
+
+.c4 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #A0A09B;
+  margin: 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.c8 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c9 {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+}
+
+.c10 {
+  width: 24px;
+  height: 24px;
+  background-color: #EBEBE8;
+  color: #A0A09B;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.c1 {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.c3 {
+  display: block;
+  position: relative;
+}
+
+.c3::before {
+  content: '';
+  display: block;
+  background: #0046FF;
+  width: 2px;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  -webkit-transition: opacity 0.16s ease-out;
+  transition: opacity 0.16s ease-out;
+  opacity: 0;
+}
+
+.c3 + .c2 {
+  border-top: 8px solid #EBEBE8;
+}
+
+.c6 {
+  position: relative;
+}
+
+@media (min-width:760px) {
+  .c5 {
+    padding-left: 52px;
+  }
+}
+
+@media (min-width:760px) {
+  .c9 {
+    left: 20px;
+  }
+}
+
+<div
+  className="c0"
+>
+  <div
+    aria-label="Progress"
+    role="group"
+  >
+    <ol
+      className="c1"
+    >
+      <li
+        className="c2 c3"
+      >
+        <span
+          className="c4"
+        >
+          <div
+            className="c5 c6"
+          >
+            <div
+              className="c7"
+            >
+              Not completed
+            </div>
+            <span
+              aria-hidden={true}
+              className="c8 c9"
+            >
+              <span
+                className="c10"
+              >
+                1
+              </span>
+            </span>
+            Investment objective
+          </div>
+        </span>
+      </li>
+      <li
+        className="c2 c3"
+      >
+        <span
+          className="c4"
+        >
+          <div
+            className="c5 c6"
+          >
+            <div
+              className="c7"
+            >
+              Not completed
+            </div>
+            <span
+              aria-hidden={true}
+              className="c8 c9"
+            >
+              <span
+                className="c10"
+              >
+                2
+              </span>
+            </span>
+            Time and risk
+          </div>
+        </span>
+      </li>
+      <li
+        className="c2 c3"
+      >
+        <span
+          className="c4"
+        >
+          <div
+            className="c5 c6"
+          >
+            <div
+              className="c7"
+            >
+              Not completed
+            </div>
+            <span
+              aria-hidden={true}
+              className="c8 c9"
+            >
+              <span
+                className="c10"
+              >
+                3
+              </span>
+            </span>
+            Allocations
+          </div>
+        </span>
+      </li>
+    </ol>
+  </div>
+</div>
+`;
