@@ -6,6 +6,21 @@
 * 🐛 export multi step progress story properly ([02af5a3](https://github.com/nordnet/ui/commit/02af5a3))
 * 🐛 export multi step progress story properly ([103663d](https://github.com/nordnet/ui/commit/103663d))
 * 🐛 force a new ui version ([b70f8a8](https://github.com/nordnet/ui/commit/b70f8a8))
+* new build version plx ([3d3521d](https://github.com/nordnet/ui/commit/3d3521d))
+
+
+### Features
+
+* 🎸 move multi step progress from mutations to ui ([816d909](https://github.com/nordnet/ui/commit/816d909))
+
+# [3.6.0](https://github.com/nordnet/ui/compare/v3.5.0...v3.6.0) (2020-07-27)
+
+
+### Bug Fixes
+
+* 🐛 export multi step progress story properly ([02af5a3](https://github.com/nordnet/ui/commit/02af5a3))
+* 🐛 export multi step progress story properly ([103663d](https://github.com/nordnet/ui/commit/103663d))
+* 🐛 force a new ui version ([b70f8a8](https://github.com/nordnet/ui/commit/b70f8a8))
 
 
 ### Features
