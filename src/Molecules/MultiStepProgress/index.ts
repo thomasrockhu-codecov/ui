@@ -1,3 +1,3 @@
-import MultiStepProgress from './MultiStepProgress';
+import { MultiStepProgress } from './MultiStepProgress';
 
 export default MultiStepProgress;

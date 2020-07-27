@@ -1,7 +1,7 @@
 import React from 'react';
 import { action } from '@storybook/addon-actions';
 import docs from './MultiStepProgress.mdx';
-import MultiStepProgress from './MultiStepProgress';
+import { MultiStepProgress } from './MultiStepProgress';
 
 const mockedSteps = [
   { current: false, done: true, label: 'Investment objective', name: 'investment_objective' },
