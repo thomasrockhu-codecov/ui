@@ -25,6 +25,7 @@ jobs:
 
     - stage: release
       script:
+        - node -v && npm -v && yarn -v
         - TRAVIS_JOB_NUMBER=WORKAROUND.1 npm run semantic-release
       if: (NOT type IN (pull_request)) AND (branch = master)
 
