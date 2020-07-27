@@ -30,6 +30,27 @@
 * add graceful fs ([7c21ff8](https://github.com/nordnet/ui/commit/7c21ff8))
 * bump npm on travis to 614 ([f50657b](https://github.com/nordnet/ui/commit/f50657b))
 * changel npm version to my local env ([7b2fb41](https://github.com/nordnet/ui/commit/7b2fb41))
+* fix mdx warning ([91e84f8](https://github.com/nordnet/ui/commit/91e84f8))
+* install npm after yarn ([71442e1](https://github.com/nordnet/ui/commit/71442e1))
+* log version of everything before release ([ceec92f](https://github.com/nordnet/ui/commit/ceec92f))
+* new build version plx ([3d3521d](https://github.com/nordnet/ui/commit/3d3521d))
+
+
+### Features
+
+* 🎸 move multi step progress from mutations to ui ([816d909](https://github.com/nordnet/ui/commit/816d909))
+
+# [3.6.0](https://github.com/nordnet/ui/compare/v3.5.0...v3.6.0) (2020-07-27)
+
+
+### Bug Fixes
+
+* 🐛 export multi step progress story properly ([02af5a3](https://github.com/nordnet/ui/commit/02af5a3))
+* 🐛 export multi step progress story properly ([103663d](https://github.com/nordnet/ui/commit/103663d))
+* 🐛 force a new ui version ([b70f8a8](https://github.com/nordnet/ui/commit/b70f8a8))
+* add graceful fs ([7c21ff8](https://github.com/nordnet/ui/commit/7c21ff8))
+* bump npm on travis to 614 ([f50657b](https://github.com/nordnet/ui/commit/f50657b))
+* changel npm version to my local env ([7b2fb41](https://github.com/nordnet/ui/commit/7b2fb41))
 * install npm after yarn ([71442e1](https://github.com/nordnet/ui/commit/71442e1))
 * log version of everything before release ([ceec92f](https://github.com/nordnet/ui/commit/ceec92f))
 * new build version plx ([3d3521d](https://github.com/nordnet/ui/commit/3d3521d))
