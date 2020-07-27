@@ -3,7 +3,7 @@ import Card from '../../Atoms/Card';
 import { LevelOne } from './LevelOne';
 import { MultiStepProgressComponent } from './MultiStepProgress.types';
 
-const MultiStepProgress: MultiStepProgressComponent = ({
+export const MultiStepProgress: MultiStepProgressComponent = ({
   onStepClick,
   onSubStepClick,
   steps,
@@ -26,4 +26,4 @@ const MultiStepProgress: MultiStepProgressComponent = ({
   );
 };
 
-export default MultiStepProgress;
+MultiStepProgress.displayName = 'MultiStepProgress';
