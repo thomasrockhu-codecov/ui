@@ -18,7 +18,7 @@ cache:
 
 jobs:
   include:
-    - stage: test
+    - stage: validate
       script:
         - commitlint-travis
         - npm run lint
@@ -36,6 +36,6 @@ jobs:
       if: (NOT type IN (pull_request)) AND (branch = beta)
 
 stages:
-  - name: test-and-build
+  - name: validate
   - name: release
   - name: beta-release
