@@ -1,3 +1,16 @@
+# [3.7.0](https://github.com/nordnet/ui/compare/v3.6.0...v3.7.0) (2020-08-05)
+
+
+### Bug Fixes
+
+* **semrel:** replicate previous successful release env ([1741508](https://github.com/nordnet/ui/commit/1741508))
+* **travis:** trigger release ([2faba97](https://github.com/nordnet/ui/commit/2faba97))
+
+
+### Features
+
+* test ([d113233](https://github.com/nordnet/ui/commit/d113233))
+
 # [3.7.0](https://github.com/nordnet/ui/compare/v3.6.0...v3.7.0) (2020-08-04)
 
 
