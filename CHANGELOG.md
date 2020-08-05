@@ -1,3 +1,10 @@
+## [3.7.1](https://github.com/nordnet/ui/compare/v3.7.0...v3.7.1) (2020-08-05)
+
+
+### Bug Fixes
+
+* **semrel:** trigger release ([a6504b4](https://github.com/nordnet/ui/commit/a6504b4))
+
 # [3.7.0](https://github.com/nordnet/ui/compare/v3.6.0...v3.7.0) (2020-08-05)
 
 
