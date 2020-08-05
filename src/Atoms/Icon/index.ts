@@ -67,6 +67,7 @@ import { Other } from './components/Other';
 import { Pen } from './components/Pen';
 import { Pending } from './components/Pending';
 import { Plus } from './components/Plus';
+import { PlusThin } from './components/PlusThin';
 import { PlusWithCircle } from './components/PlusWithCircle';
 import { Printer } from './components/Printer';
 import { Questionmark } from './components/Questionmark';
@@ -163,6 +164,7 @@ export default {
   Pen,
   Pending,
   Plus,
+  PlusThin,
   PlusWithCircle,
   Printer,
   Questionmark,

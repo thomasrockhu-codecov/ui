@@ -2643,6 +2643,46 @@ Array [
       focusable="false"
       preserveAspectRatio="xMidYMid meet"
       role="presentation"
+      viewBox="0 0 35 35"
+    >
+      <path
+        d="M16.7618.1432h3v35.8736h-3z"
+        fillRule="evenodd"
+      />
+      <path
+        d="M35.2986 16.08v3H.425v-3z"
+        fillRule="evenodd"
+      />
+    </svg>
+  </div>,
+  .c0 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 20px;
+  height: 20px;
+  fill: #0046FF;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
+}
+
+<div
+    style={
+      Object {
+        "display": "inline-block",
+        "outline": "1px dashed #bbb",
+      }
+    }
+  >
+    <svg
+      aria-hidden="true"
+      className="c0"
+      focusable="false"
+      preserveAspectRatio="xMidYMid meet"
+      role="presentation"
       viewBox="0 0 24 24"
     >
       <path
@@ -6385,6 +6425,44 @@ exports[`Storyshots Atoms | Icon Available icons 1`] = `
         >
           <path
             d="M7.166 0v5h5v2h-5v5h-2V6.999L.166 7V5l5-.001V0h2z"
+            fillRule="evenodd"
+          />
+        </svg>
+      </div>
+    </div>
+  </div>
+  <div
+    className="c1"
+    direction="row"
+  >
+    <div
+      className="c2"
+    >
+      PlusThin
+    </div>
+    <div>
+      <div
+        style={
+          Object {
+            "display": "inline-block",
+            "outline": "1px dashed #bbb",
+          }
+        }
+      >
+        <svg
+          aria-hidden="true"
+          className="c3"
+          focusable="false"
+          preserveAspectRatio="xMidYMid meet"
+          role="presentation"
+          viewBox="0 0 35 35"
+        >
+          <path
+            d="M16.7618.1432h3v35.8736h-3z"
+            fillRule="evenodd"
+          />
+          <path
+            d="M35.2986 16.08v3H.425v-3z"
             fillRule="evenodd"
           />
         </svg>
