@@ -1,3 +1,10 @@
+# [3.8.0](https://github.com/nordnet/ui/compare/v3.7.1...v3.8.0) (2020-08-05)
+
+
+### Features
+
+* 🎸 thinner plus icon added ([c94345e](https://github.com/nordnet/ui/commit/c94345e))
+
 ## [3.7.1](https://github.com/nordnet/ui/compare/v3.7.0...v3.7.1) (2020-08-05)
 
 
