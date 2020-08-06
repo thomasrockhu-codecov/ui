@@ -53,6 +53,7 @@ import PageHeaderCard from './Molecules/PageHeaderCard';
 import ProgressBar from './Molecules/ProgressBar';
 import PageWrapper from './Molecules/PageWrapper';
 import Rating from './Molecules/Rating';
+import SegmentedControl from './Molecules/SegmentedControl';
 import Select from './Molecules/Select';
 import Slider from './Molecules/Slider';
 import Switch from './Molecules/Switch';
@@ -122,6 +123,7 @@ export {
   Pill,
   ProgressBar,
   Rating,
+  SegmentedControl,
   /** @deprecated */ Select,
   Separator,
   Skeleton,
