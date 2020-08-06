@@ -88,7 +88,7 @@ export const Switch: React.FC<Props> = ({
     setChecked(nextState);
 
     if (onClick) {
-      onClick(e, nextState);
+      setTimeout(() => onClick(e, nextState));
     }
   };
 
