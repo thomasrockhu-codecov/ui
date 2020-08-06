@@ -1,5 +1,7 @@
 import React, { ReactNode } from 'react';
 
+export type MouseEventProps = ((e: React.MouseEvent, selected: number) => void) | undefined;
+
 export type OverlayProps = {
   $count: number;
   $selected: number;
@@ -7,7 +9,7 @@ export type OverlayProps = {
 
 export type ItemProps = {
   itemId: number;
-  onItemClick?: (e: React.MouseEvent, selected: number) => void;
+  onItemClick?: MouseEventProps;
   className?: string;
   active?: boolean;
   children: ReactNode;
@@ -21,7 +23,7 @@ export type ContainerProps = {
    */
   selected?: number;
   className?: string;
-  onClick?: (e: React.MouseEvent, selected: number) => void;
+  onClick?: MouseEventProps;
 };
 
 export type ItemComponent = React.FC<ItemProps>;

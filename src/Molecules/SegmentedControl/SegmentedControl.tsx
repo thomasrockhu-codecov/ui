@@ -1,7 +1,12 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
 import { assert } from '../../common/utils';
-import { OverlayProps, ItemProps, SegmentedControlComponent } from './SegmentedControl.types';
+import {
+  OverlayProps,
+  ItemProps,
+  MouseEventProps,
+  SegmentedControlComponent,
+} from './SegmentedControl.types';
 import { Flexbox, Typography } from '../..';
 
 const Overlay = styled.div<OverlayProps>`
@@ -56,7 +61,7 @@ const isItemOrUndefined = (x: any): x is { type: typeof Item; props: ItemProps }
     return true;
   }
 
-  return typeof x === 'object' && Object.hasOwnProperty.call(x, 'type'); // FIXME: && x.type === Item;
+  return typeof x === 'object' && Object.hasOwnProperty.call(x, 'type') && x.type === Item;
 };
 
 const SegmentedControl: SegmentedControlComponent = ({
@@ -69,7 +74,7 @@ const SegmentedControl: SegmentedControlComponent = ({
   const isControlled = typeof selectedControlled !== 'undefined';
 
   const [selected, setSelected] = useState(selectedInitially);
-  const clickHandler = (e: React.MouseEvent, onItemClick: any, itemId: number) => {
+  const clickHandler = (e: React.MouseEvent, onItemClick: MouseEventProps, itemId: number) => {
     setSelected(itemId);
     if (onItemClick) {
       setTimeout(() => onItemClick(e, itemId));
