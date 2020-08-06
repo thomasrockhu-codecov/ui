@@ -1,3 +1,16 @@
+# [3.9.0](https://github.com/nordnet/ui/compare/v3.8.0...v3.9.0) (2020-08-06)
+
+
+### Bug Fixes
+
+* better trypes ([2ce0b5d](https://github.com/nordnet/ui/commit/2ce0b5d))
+* improve animations on switch component ([a5041af](https://github.com/nordnet/ui/commit/a5041af))
+
+
+### Features
+
+* add segmentedcontrol component ([3869c44](https://github.com/nordnet/ui/commit/3869c44))
+
 # [3.8.0](https://github.com/nordnet/ui/compare/v3.7.1...v3.8.0) (2020-08-05)
 
 
