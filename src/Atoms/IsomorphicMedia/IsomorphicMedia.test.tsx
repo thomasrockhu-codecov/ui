@@ -1,22 +1,12 @@
 import React from 'react';
-import { render, cleanup } from '@testing-library/react';
 import { ThemeProvider } from 'styled-components';
-import { renderToString } from 'react-dom/server';
+import { render, cleanup } from '@testing-library/react';
 import ReactDOM from 'react-dom';
 import { Theme } from '../../theme/theme.types';
 import { createTheme } from '../../index';
 import { useIsomorphicMedia } from './index';
 import { IsomorphicMedia } from './IsomorphicMedia';
-import { HTML_FROM_SSR } from './IsomorphicMedia.ssr.test';
-
-export const Element = () => (
-  <ThemeProvider theme={createTheme()}>
-    <>
-      <IsomorphicMedia query={t => t.media.greaterThan(t.breakpoints.sm)}>gt sm</IsomorphicMedia>
-      <IsomorphicMedia query={t => t.media.lessThan(t.breakpoints.sm)}>lt sm</IsomorphicMedia>
-    </>
-  </ThemeProvider>
-);
+import { Element, HTML_FROM_SSR } from './IsomorphicMedia.fixtures';
 
 afterEach(cleanup);
 beforeEach(() => {
@@ -52,21 +42,6 @@ test('useMedia hook: returns true if matches', () => {
   expect(node.textContent).toBe('true');
 });
 
-test('useMedia hook: returns null if SSR', () => {
-  const theme = createTheme();
-  const ConsumerThatDoesntMatch = () => {
-    const matches = useIsomorphicMedia(t => t.media.greaterThan(t.breakpoints.lg));
-    return <div data-testid="consumer">{`${matches}`}</div>;
-  };
-
-  const html = renderToString(
-    <ThemeProvider theme={theme}>
-      <ConsumerThatDoesntMatch />
-    </ThemeProvider>,
-  );
-  expect(html).toMatchSnapshot();
-});
-
 test('useMedia hook: returns false if doesnt match', async () => {
   const theme = createTheme();
 
@@ -84,22 +59,6 @@ test('useMedia hook: returns false if doesnt match', async () => {
 
   expect(node).toBeDefined();
   expect(node.textContent).toBe('false');
-});
-
-test('Server-side rendering works: rendering all medias with CSS workaround', () => {
-  const html = renderToString(
-    <ThemeProvider theme={createTheme()}>
-      <>
-        <IsomorphicMedia query={t => t.media.greaterThan(t.breakpoints.sm)}>
-          This shows on and above sm
-        </IsomorphicMedia>
-        <IsomorphicMedia query={t => t.media.lessThan(t.breakpoints.sm)}>
-          This shows below sm
-        </IsomorphicMedia>
-      </>
-    </ThemeProvider>,
-  );
-  expect(html).toMatchSnapshot();
 });
 
 test('Client-side rendering works: not rendering non-matched media', async () => {

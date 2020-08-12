@@ -1,4 +1,4 @@
 import { IsomorphicMedia, useIsomorphicMedia } from './IsomorphicMedia';
 
-export { useIsomorphicMedia };
+export { IsomorphicMedia, useIsomorphicMedia };
 export default IsomorphicMedia;
