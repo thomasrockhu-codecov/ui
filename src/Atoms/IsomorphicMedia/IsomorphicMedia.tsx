@@ -27,7 +27,6 @@ const useIsomorphicMedia = (query: string | ((t: Theme) => string)) => {
 
   // Effect won't run during SSR
   useIsomorphicLayoutEffect(() => {
-    console.log('WINDOW TYPE-----', typeof window);
     if (typeof window.matchMedia !== 'function') {
       return undefined;
     }

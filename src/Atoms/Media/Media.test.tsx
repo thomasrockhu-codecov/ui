@@ -116,6 +116,7 @@ test('Hydration', async () => {
     </ThemeProvider>
   );
   const html = renderToString(<Element />);
+  console.log(html);
   const main = document.createElement('main');
 
   main.innerHTML = html;
