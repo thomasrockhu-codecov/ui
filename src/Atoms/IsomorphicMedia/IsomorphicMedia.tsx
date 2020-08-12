@@ -2,7 +2,7 @@ import React from 'react';
 import styled, { ThemeContext } from 'styled-components';
 import R from 'ramda';
 
-import { Props } from './LayoutEffectMedia.types';
+import { Props } from './IsomorphicMedia.types';
 import { Theme } from '../../theme/theme.types';
 
 const negateMedia = R.pipe(
@@ -17,14 +17,18 @@ const StyledDiv = styled.div<{ query: Props['query'] }>`
   }
 `;
 
-const useLayoutEffectMedia = (query: string | ((t: Theme) => string)) => {
+const useIsomorphicLayoutEffect =
+  typeof window !== 'undefined' ? React.useLayoutEffect : React.useEffect;
+
+const useIsomorphicMedia = (query: string | ((t: Theme) => string)) => {
   const theme = React.useContext(ThemeContext);
   const [matches, setMatches] = React.useState<boolean | null>(null);
   const mediaQuery = (typeof query === 'string' ? query : query(theme)).replace('@media ', '');
 
   // Effect won't run during SSR
-  React.useLayoutEffect(() => {
-    if (typeof window === 'undefined' || typeof window.matchMedia !== 'function') {
+  useIsomorphicLayoutEffect(() => {
+    console.log('WINDOW TYPE-----', typeof window);
+    if (typeof window.matchMedia !== 'function') {
       return undefined;
     }
 
@@ -45,13 +49,13 @@ const useLayoutEffectMedia = (query: string | ((t: Theme) => string)) => {
   return matches;
 };
 
-const LayoutEffectMedia: React.FunctionComponent<Props> = props => {
+const IsomorphicMedia: React.FunctionComponent<Props> = props => {
   const As = props.as || 'div';
-  const matches = useLayoutEffectMedia(props.query);
+  const matches = useIsomorphicMedia(props.query);
   // If matches === null it means we are in SSR
   // Show css fallback then
   if (matches === null) return <StyledDiv {...props} />;
   return matches ? <As>{props.children}</As> : null;
 };
 
-export { LayoutEffectMedia, useLayoutEffectMedia };
+export { IsomorphicMedia, useIsomorphicMedia };
