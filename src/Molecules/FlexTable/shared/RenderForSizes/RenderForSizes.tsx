@@ -67,7 +67,13 @@ export const RenderForSizes: RenderForSizesComponent = ({
 
         const as = (() => container) as React.FC;
 
-        return <Media key={size} query={t => getMediaQuery(t, size, nextSize)} as={as} />;
+        return (
+          <Media
+            key={`${size}${index + 1}`}
+            query={t => getMediaQuery(t, size, nextSize)}
+            as={as}
+          />
+        );
       })}
     </>
   );
