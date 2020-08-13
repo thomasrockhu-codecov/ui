@@ -1,3 +1,11 @@
+# [3.10.0](https://github.com/nordnet/ui/compare/v3.9.0...v3.10.0) (2020-08-13)
+
+
+### Features
+
+* create isopmorphic media and remove old ([96d5f52](https://github.com/nordnet/ui/commit/96d5f52))
+* wip nothing works ([fa60b49](https://github.com/nordnet/ui/commit/fa60b49))
+
 # [3.9.0](https://github.com/nordnet/ui/compare/v3.8.0...v3.9.0) (2020-08-06)
 
 
