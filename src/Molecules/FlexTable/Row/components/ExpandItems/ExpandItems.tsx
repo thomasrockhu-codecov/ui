@@ -17,15 +17,15 @@ export const ExpandItems: ExpandItemsComponent = ({ items }) => {
     <>
       <Media query={t => t.media.lessThan(t.breakpoints.md)}>
         <List>
-          {items.map(item => (
-            <ExpandItem item={item} />
+          {items.map((item, index) => (
+            <ExpandItem key={`expandItem_mobile_${index + 1}`} item={item} />
           ))}
         </List>
       </Media>
       <Media query={t => t.media.greaterThan(t.breakpoints.md)}>
         <Flexbox container wrap="wrap" gutter={10} as={FlexList}>
-          {items.map(item => (
-            <ExpandItem item={item} />
+          {items.map((item, index) => (
+            <ExpandItem key={`expandItem_desktop_${index + 1}`} item={item} />
           ))}
         </Flexbox>
       </Media>
