@@ -472,6 +472,26 @@ exports[`Storyshots Molecules | Input / Text Both addons 1`] = `
   display: inline-block;
 }
 
+.c8 {
+  width: 32px;
+  top: 0;
+  height: 100%;
+  padding-left: 4px;
+  padding-right: 4px;
+  position: absolute;
+  left: 0;
+}
+
+.c10 {
+  width: 32px;
+  top: 0;
+  height: 100%;
+  padding-left: 4px;
+  padding-right: 4px;
+  position: absolute;
+  right: 4px;
+}
+
 .c6 {
   font-family: inherit;
   font-size: 100%;
@@ -540,26 +560,6 @@ exports[`Storyshots Molecules | Input / Text Both addons 1`] = `
   padding: 0px 0;
 }
 
-.c8 {
-  width: 32px;
-  top: 0;
-  height: 100%;
-  padding-left: 4px;
-  padding-right: 4px;
-  position: absolute;
-  left: 0;
-}
-
-.c10 {
-  width: 32px;
-  top: 0;
-  height: 100%;
-  padding-left: 4px;
-  padding-right: 4px;
-  position: absolute;
-  right: 4px;
-}
-
 <div
   className="c0"
 >
@@ -590,6 +590,7 @@ exports[`Storyshots Molecules | Input / Text Both addons 1`] = `
           <div
             className="c7 c8"
             position="left"
+            variant="normal"
           >
             <svg
               aria-hidden="true"
@@ -833,6 +834,26 @@ exports[`Storyshots Molecules | Input / Text Disabled +addon 1`] = `
   display: inline-block;
 }
 
+.c8 {
+  width: 32px;
+  top: 0;
+  height: 100%;
+  padding-left: 4px;
+  padding-right: 4px;
+  position: absolute;
+  left: 0;
+}
+
+.c10 {
+  width: 32px;
+  top: 0;
+  height: 100%;
+  padding-left: 4px;
+  padding-right: 4px;
+  position: absolute;
+  right: 4px;
+}
+
 .c6 {
   font-family: inherit;
   font-size: 100%;
@@ -897,26 +918,6 @@ exports[`Storyshots Molecules | Input / Text Disabled +addon 1`] = `
   padding: 0px 0;
 }
 
-.c8 {
-  width: 32px;
-  top: 0;
-  height: 100%;
-  padding-left: 4px;
-  padding-right: 4px;
-  position: absolute;
-  left: 0;
-}
-
-.c10 {
-  width: 32px;
-  top: 0;
-  height: 100%;
-  padding-left: 4px;
-  padding-right: 4px;
-  position: absolute;
-  right: 4px;
-}
-
 <div
   className="c0"
 >
@@ -948,6 +949,7 @@ exports[`Storyshots Molecules | Input / Text Disabled +addon 1`] = `
           <div
             className="c7 c8"
             position="left"
+            variant="normal"
           >
             <svg
               aria-hidden="true"
@@ -2007,6 +2009,26 @@ Array [
   display: inline-block;
 }
 
+.c12 {
+  width: 32px;
+  top: 0;
+  height: 100%;
+  padding-left: 4px;
+  padding-right: 4px;
+  position: absolute;
+  left: 0;
+}
+
+.c15 {
+  width: 32px;
+  top: 0;
+  height: 100%;
+  padding-left: 4px;
+  padding-right: 4px;
+  position: absolute;
+  right: 4px;
+}
+
 .c9 {
   font-family: inherit;
   font-size: 100%;
@@ -2197,26 +2219,6 @@ Array [
   padding: 0px 0;
 }
 
-.c12 {
-  width: 32px;
-  top: 0;
-  height: 100%;
-  padding-left: 4px;
-  padding-right: 4px;
-  position: absolute;
-  left: 0;
-}
-
-.c15 {
-  width: 32px;
-  top: 0;
-  height: 100%;
-  padding-left: 4px;
-  padding-right: 4px;
-  position: absolute;
-  right: 4px;
-}
-
 .c0 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -2368,6 +2370,7 @@ Array [
                   <div
                     className="c11 c12"
                     position="left"
+                    variant="normal"
                   >
                     <svg
                       aria-hidden="true"
@@ -2668,6 +2671,16 @@ exports[`Storyshots Molecules | Input / Text Left addon 1`] = `
   display: inline-block;
 }
 
+.c8 {
+  width: 32px;
+  top: 0;
+  height: 100%;
+  padding-left: 4px;
+  padding-right: 4px;
+  position: absolute;
+  left: 0;
+}
+
 .c6 {
   font-family: inherit;
   font-size: 100%;
@@ -2735,16 +2748,6 @@ exports[`Storyshots Molecules | Input / Text Left addon 1`] = `
   padding: 0px 0;
 }
 
-.c8 {
-  width: 32px;
-  top: 0;
-  height: 100%;
-  padding-left: 4px;
-  padding-right: 4px;
-  position: absolute;
-  left: 0;
-}
-
 <div
   className="c0"
 >
@@ -2775,6 +2778,7 @@ exports[`Storyshots Molecules | Input / Text Left addon 1`] = `
           <div
             className="c7 c8"
             position="left"
+            variant="normal"
           >
             <svg
               aria-hidden="true"
@@ -2856,7 +2860,7 @@ Array [
   align-items: center;
 }
 
-.c22 {
+.c23 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -2887,7 +2891,7 @@ Array [
   cursor: pointer;
 }
 
-.c20 {
+.c21 {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -2947,6 +2951,40 @@ Array [
   display: inline-block;
 }
 
+.c20 {
+  width: 32px;
+  top: 0;
+  height: 100%;
+  padding-left: 4px;
+  padding-right: 4px;
+  position: absolute;
+  left: 0;
+}
+
+.c20:not(:focus) {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.c24 {
+  width: 32px;
+  top: 0;
+  height: 100%;
+  padding-left: 4px;
+  padding-right: 4px;
+  position: absolute;
+  right: 4px;
+}
+
+.c24:not(:focus) {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.c24:not(:focus) {
+  right: 0;
+}
+
 .c9 {
   font-family: inherit;
   font-size: 100%;
@@ -2959,9 +2997,6 @@ Array [
   margin: 0;
   line-height: inherit;
   box-sizing: border-box;
-  color: #0046FF;
-  font-size: 28px;
-  font-weight: bold;
   height: 40px;
   outline: none;
   border: solid;
@@ -2969,10 +3004,9 @@ Array [
   border-width: 0 0 2px 0;
   position: relative;
   background-color: #FFFFFF;
-}
-
-.c9:focus {
-  padding: 0 0 0 8px;
+  color: #0046FF;
+  font-size: 28px;
+  font-weight: bold;
 }
 
 .c9:focus {
@@ -3015,6 +3049,15 @@ Array [
   opacity: 1;
 }
 
+.c9:disabled {
+  color: #A0A09B;
+}
+
+.c9:focus {
+  padding-left: 8px;
+  padding-right: 0px;
+}
+
 .c12 {
   font-family: inherit;
   font-size: 100%;
@@ -3027,22 +3070,17 @@ Array [
   margin: 0;
   line-height: inherit;
   box-sizing: border-box;
-  color: #0046FF;
-  font-size: 28px;
-  font-weight: bold;
   height: 40px;
   outline: none;
   border: solid;
   border-color: #BCBCB6;
   border-width: 0 0 2px 0;
   position: relative;
-  color: #A0A09B;
   border-color: #EBEBE8;
   background-color: #FFFFFF;
-}
-
-.c12:focus {
-  padding: 0 0 0 8px;
+  color: #0046FF;
+  font-size: 28px;
+  font-weight: bold;
 }
 
 .c12:focus {
@@ -3081,6 +3119,15 @@ Array [
   opacity: 1;
 }
 
+.c12:disabled {
+  color: #A0A09B;
+}
+
+.c12:focus {
+  padding-left: 8px;
+  padding-right: 0px;
+}
+
 .c13 {
   font-family: inherit;
   font-size: 100%;
@@ -3093,9 +3140,6 @@ Array [
   margin: 0;
   line-height: inherit;
   box-sizing: border-box;
-  color: #0046FF;
-  font-size: 28px;
-  font-weight: bold;
   height: 40px;
   outline: none;
   border: solid;
@@ -3103,10 +3147,9 @@ Array [
   border-width: 0 0 2px 0;
   position: relative;
   background-color: #FFFFFF;
-}
-
-.c13:focus {
-  padding: 0 0 0 8px;
+  color: #0046FF;
+  font-size: 28px;
+  font-weight: bold;
 }
 
 .c13:focus {
@@ -3149,6 +3192,15 @@ Array [
   opacity: 1;
 }
 
+.c13:disabled {
+  color: #A0A09B;
+}
+
+.c13:focus {
+  padding-left: 8px;
+  padding-right: 0px;
+}
+
 .c16 {
   font-family: inherit;
   font-size: 100%;
@@ -3161,9 +3213,6 @@ Array [
   margin: 0;
   line-height: inherit;
   box-sizing: border-box;
-  color: #0046FF;
-  font-size: 28px;
-  font-weight: bold;
   height: 40px;
   outline: none;
   border: solid;
@@ -3171,10 +3220,9 @@ Array [
   border-width: 0 0 2px 0;
   position: relative;
   background-color: #FFFFFF;
-}
-
-.c16:focus {
-  padding: 0 0 0 8px;
+  color: #0046FF;
+  font-size: 28px;
+  font-weight: bold;
 }
 
 .c16:focus {
@@ -3217,6 +3265,15 @@ Array [
   opacity: 1;
 }
 
+.c16:disabled {
+  color: #A0A09B;
+}
+
+.c16:focus {
+  padding-left: 8px;
+  padding-right: 0px;
+}
+
 .c17 {
   font-family: inherit;
   font-size: 100%;
@@ -3229,9 +3286,6 @@ Array [
   margin: 0;
   line-height: inherit;
   box-sizing: border-box;
-  color: #0046FF;
-  font-size: 28px;
-  font-weight: bold;
   height: 40px;
   outline: none;
   border: solid;
@@ -3240,10 +3294,9 @@ Array [
   position: relative;
   background-color: #FFFFFF;
   padding-left: 32px;
-}
-
-.c17:focus {
-  padding: 0 0 0 8px;
+  color: #0046FF;
+  font-size: 28px;
+  font-weight: bold;
 }
 
 .c17:focus {
@@ -3286,7 +3339,16 @@ Array [
   opacity: 1;
 }
 
-.c21 {
+.c17:disabled {
+  color: #A0A09B;
+}
+
+.c17:focus {
+  padding-left: 32px;
+  padding-right: 0px;
+}
+
+.c22 {
   font-family: inherit;
   font-size: 100%;
   line-height: 1.15;
@@ -3298,9 +3360,6 @@ Array [
   margin: 0;
   line-height: inherit;
   box-sizing: border-box;
-  color: #0046FF;
-  font-size: 28px;
-  font-weight: bold;
   height: 40px;
   outline: none;
   border: solid;
@@ -3309,75 +3368,67 @@ Array [
   position: relative;
   background-color: #FFFFFF;
   padding-right: 40px;
+  color: #0046FF;
+  font-size: 28px;
+  font-weight: bold;
 }
 
-.c21:focus {
-  padding: 0 0 0 8px;
-}
-
-.c21:focus {
+.c22:focus {
   border-width: 1px;
 }
 
-.c21:hover {
+.c22:hover {
   border-color: #4B4B46;
 }
 
-.c21:focus {
+.c22:focus {
   border-color: #0046FF;
 }
 
-.c21::-webkit-input-placeholder {
+.c22::-webkit-input-placeholder {
   color: #0046FF;
   height: inherit;
   line-height: inherit;
   opacity: 1;
 }
 
-.c21::-moz-placeholder {
+.c22::-moz-placeholder {
   color: #0046FF;
   height: inherit;
   line-height: inherit;
   opacity: 1;
 }
 
-.c21:-ms-input-placeholder {
+.c22:-ms-input-placeholder {
   color: #0046FF;
   height: inherit;
   line-height: inherit;
   opacity: 1;
 }
 
-.c21::placeholder {
+.c22::placeholder {
   color: #0046FF;
   height: inherit;
   line-height: inherit;
   opacity: 1;
+}
+
+.c22:disabled {
+  color: #A0A09B;
+}
+
+.c22:focus {
+  padding-left: 8px;
+  padding-right: 32px;
+}
+
+.c22:focus + .c19 {
+  padding-right: 8px;
 }
 
 .c8 {
   position: relative;
   padding: 0px 0;
-}
-
-.c19 {
-  width: 32px;
-  top: 0;
-  height: 100%;
-  padding-left: 4px;
-  padding-right: 4px;
-  position: absolute;
-  left: 0;
-}
-
-.c23 {
-  width: 32px;
-  top: 0;
-  height: 100%;
-  padding-left: 0px;
-  padding-right: 0px;
-  position: absolute;
-  right: 0px;
 }
 
 .c0 {
@@ -3719,12 +3770,13 @@ Array [
                     variant="quiet"
                   />
                   <div
-                    className="c18 c19"
+                    className="c18 c19 c20"
                     position="left"
+                    variant="quiet"
                   >
                     <svg
                       aria-hidden="true"
-                      className="c20"
+                      className="c21"
                       focusable="false"
                       preserveAspectRatio="xMidYMid meet"
                       role="presentation"
@@ -3775,13 +3827,13 @@ Array [
                   className="c8"
                 >
                   <input
-                    className="NormalizedInput__Input-sc-1m4kmh9-0 c21"
+                    className="NormalizedInput__Input-sc-1m4kmh9-0 c22"
                     placeholder="Placeholder"
                     type="text"
                     variant="quiet"
                   />
                   <div
-                    className="c22 c23"
+                    className="c23 c19 c24"
                     position="right"
                     variant="quiet"
                   >
@@ -4175,6 +4227,16 @@ exports[`Storyshots Molecules | Input / Text Right addon 1`] = `
   display: inline-block;
 }
 
+.c8 {
+  width: 32px;
+  top: 0;
+  height: 100%;
+  padding-left: 4px;
+  padding-right: 4px;
+  position: absolute;
+  right: 4px;
+}
+
 .c6 {
   font-family: inherit;
   font-size: 100%;
@@ -4240,16 +4302,6 @@ exports[`Storyshots Molecules | Input / Text Right addon 1`] = `
 .c5 {
   position: relative;
   padding: 0px 0;
-}
-
-.c8 {
-  width: 32px;
-  top: 0;
-  height: 100%;
-  padding-left: 4px;
-  padding-right: 4px;
-  position: absolute;
-  right: 4px;
 }
 
 <div
@@ -4873,6 +4925,26 @@ Array [
   display: inline-block;
 }
 
+.c16 {
+  width: 32px;
+  top: 0;
+  height: 100%;
+  padding-left: 4px;
+  padding-right: 4px;
+  position: absolute;
+  left: 0;
+}
+
+.c19 {
+  width: 32px;
+  top: 0;
+  height: 100%;
+  padding-left: 4px;
+  padding-right: 4px;
+  position: absolute;
+  right: 4px;
+}
+
 .c9 {
   font-family: inherit;
   font-size: 100%;
@@ -5122,26 +5194,6 @@ Array [
 .c8 {
   position: relative;
   padding: 0px 0;
-}
-
-.c16 {
-  width: 32px;
-  top: 0;
-  height: 100%;
-  padding-left: 4px;
-  padding-right: 4px;
-  position: absolute;
-  left: 0;
-}
-
-.c19 {
-  width: 32px;
-  top: 0;
-  height: 100%;
-  padding-left: 4px;
-  padding-right: 4px;
-  position: absolute;
-  right: 4px;
 }
 
 .c0 {
@@ -5395,6 +5447,7 @@ Array [
                   <div
                     className="c15 c16"
                     position="left"
+                    variant="normal"
                   >
                     <svg
                       aria-hidden="true"
