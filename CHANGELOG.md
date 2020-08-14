@@ -1,3 +1,16 @@
+# [3.12.0](https://github.com/nordnet/ui/compare/v3.11.0...v3.12.0) (2020-08-14)
+
+
+### Bug Fixes
+
+* fixed support for addons in quiet input ([39eca74](https://github.com/nordnet/ui/commit/39eca74))
+
+
+### Features
+
+* add form-field disabled support ([41ebd44](https://github.com/nordnet/ui/commit/41ebd44))
+* add quiet variant to input.text ([8af8da6](https://github.com/nordnet/ui/commit/8af8da6))
+
 # [3.11.0](https://github.com/nordnet/ui/compare/v3.10.1...v3.11.0) (2020-08-14)
 
 
