@@ -1,3 +1,13 @@
+## [3.10.1](https://github.com/nordnet/ui/compare/v3.10.0...v3.10.1) (2020-08-14)
+
+
+### Bug Fixes
+
+* 🐛 add key for expand items ([926c7f7](https://github.com/nordnet/ui/commit/926c7f7))
+* 🐛 add unique key to render for sizes iteration ([a706cb9](https://github.com/nordnet/ui/commit/a706cb9))
+* 🐛 correctly set key prop on container in renderforsizes ([8d2adf8](https://github.com/nordnet/ui/commit/8d2adf8))
+* remove index from key prop ([51e58f5](https://github.com/nordnet/ui/commit/51e58f5))
+
 # [3.10.0](https://github.com/nordnet/ui/compare/v3.9.0...v3.10.0) (2020-08-13)
 
 
