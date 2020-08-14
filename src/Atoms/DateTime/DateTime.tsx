@@ -18,12 +18,12 @@ const dateOptions = {
   day: 'numeric',
 };
 
-const DateTime: DateTimeComponent = ({ value, onlyDate, invalidValue = '-' }) => {
+const DateTime: DateTimeComponent = ({ value, onlyDate, options, invalidValue = '-' }) => {
   const intl = useIntl();
   if (isValidDateTimeNumber(value)) {
-    const options = onlyDate ? dateOptions : dateTimeOptions;
+    const formatOptions = options || (onlyDate ? dateOptions : dateTimeOptions);
 
-    return <time>{intl!.formatDate(value, options)}</time>;
+    return <time>{intl!.formatDate(value, formatOptions)}</time>;
   }
 
   return <>{invalidValue}</>;
