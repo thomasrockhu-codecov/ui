@@ -1,3 +1,19 @@
+# [3.11.0](https://github.com/nordnet/ui/compare/v3.10.1...v3.11.0) (2020-08-14)
+
+
+### Bug Fixes
+
+* add expanded aria attribute ([c595a97](https://github.com/nordnet/ui/commit/c595a97))
+* breaking storyshot ([804ffb7](https://github.com/nordnet/ui/commit/804ffb7))
+* clean up toplevel ([22c552e](https://github.com/nordnet/ui/commit/22c552e))
+* hide borders on mobile and in drawer ([f329045](https://github.com/nordnet/ui/commit/f329045))
+* remove border in mobile ([1c65ce6](https://github.com/nordnet/ui/commit/1c65ce6))
+
+
+### Features
+
+* display drawer on mobile for multistepprogress ([b31127c](https://github.com/nordnet/ui/commit/b31127c))
+
 ## [3.10.1](https://github.com/nordnet/ui/compare/v3.10.0...v3.10.1) (2020-08-14)
 
 
