@@ -51,10 +51,7 @@ const borderStyles = css<Pick<Props, 'error' | 'success' | 'disabled' | 'variant
   ${hoverBorderStyles}
   ${focusBorderStyles}
   ${p =>
-    p.disabled && p.variant === 'quiet'
-      ? `color: ${p.theme.color.disabledText};
-      border-color: ${p.theme.color.disabledBackground};`
-      : ''}
+    p.disabled && p.variant === 'quiet' ? `border-color: ${p.theme.color.disabledBackground};` : ''}
 `;
 
 export const placeholderNormalizaion = css<Pick<Props, 'variant'>>`
@@ -66,23 +63,39 @@ export const placeholderNormalizaion = css<Pick<Props, 'variant'>>`
   }
 `;
 
+const AddonBox = styled(Flexbox)<{ position?: 'left' | 'right'; variant?: Variant }>`
+  width: ${p => p.theme.spacing.unit(8)}px;
+  top: 0;
+  height: 100%;
+  padding-left: ${p => p.theme.spacing.unit(1)}px;
+  padding-right: ${p => p.theme.spacing.unit(1)}px;
+  position: absolute;
+  ${p => (p.position === 'left' ? 'left: 0;' : '')}
+  ${p => (p.position === 'right' ? `right: ${p.theme.spacing.unit(1)}px;` : '')}
+  ${p =>
+    p.variant === 'quiet'
+      ? `&:not(:focus) {    
+          padding-left: 0;
+          padding-right: 0;
+        }`
+      : ''}
+  ${p =>
+    p.variant === 'quiet' && p.position === 'right'
+      ? `&:not(:focus) {   
+          right: 0;
+        }`
+      : ''}
+`;
+
 const Input = styled(NormalizedElements.Input).attrs(p => ({ type: p.type || 'text' }))<
   Partial<Props>
 >`
   border: 0;
   width: 100%;
   padding: ${p => p.theme.spacing.unit(p.variant === 'quiet' ? 0 : 2)}px;
-  ${p =>
-    p.variant === 'quiet'
-      ? `&:focus {
-      padding: 0 0 0 ${p.theme.spacing.unit(2)}px;
-    }`
-      : ''}
   margin: 0;
   line-height: inherit;
   box-sizing: border-box;
-  ${p =>
-    p.variant === 'quiet' ? `color: ${p.theme.color.cta}; font-size: 28px; font-weight: bold;` : ''}
   ${height}
   ${borderStyles}
   ${background}
@@ -92,25 +105,30 @@ const Input = styled(NormalizedElements.Input).attrs(p => ({ type: p.type || 'te
     p.rightAddon
       ? `padding-right: ${p.theme.spacing.unit(10)}px;` // compensate for right paddings
       : ''}
+  ${p =>
+    p.variant === 'quiet'
+      ? `color: ${p.theme.color.cta}; 
+         &:disabled {
+           color: ${p.theme.color.disabledText};
+         }
+         font-size: 28px; 
+         font-weight: bold;
+         &:focus {
+           padding-left: ${p.theme.spacing.unit(p.leftAddon ? 8 : 2)}px;
+           padding-right: ${p.theme.spacing.unit(p.rightAddon ? 8 : 0)}px;
+         }`
+      : ''}
+  ${p =>
+    p.variant === 'quiet' && p.rightAddon
+      ? `&:focus + ${AddonBox} {
+          padding-right: ${p.theme.spacing.unit(2)}px;
+        }`
+      : ''}
   `;
 
 const Wrapper = styled.div<{ variant?: Variant }>`
   position: relative;
   padding: ${p => p.theme.spacing.unit(p.variant === 'quiet' ? 1 : 0)}px 0;
-`;
-
-const AddonBox = styled(Flexbox)<{ position?: 'left' | 'right'; variant?: Variant }>`
-  width: ${p => p.theme.spacing.unit(8)}px;
-  top: 0;
-  height: 100%;
-  padding-left: ${p => p.theme.spacing.unit(p.variant === 'quiet' ? 0 : 1)}px;
-  padding-right: ${p => p.theme.spacing.unit(p.variant === 'quiet' ? 0 : 1)}px;
-  position: absolute;
-  ${p => (p.position === 'left' ? 'left: 0;' : '')}
-  ${p =>
-    p.position === 'right'
-      ? `right: ${p.theme.spacing.unit(p.variant === 'quiet' ? 0 : 1)}px;`
-      : ''}
 `;
 
 const components = {
@@ -202,7 +220,13 @@ const TextComponent = React.forwardRef<HTMLInputElement, Props>((props, ref) => 
             {...(hasError(error) ? { 'aria-invalid': true } : {})}
           />
           {leftAddon && (
-            <AddonBox container justifyContent="center" alignItems="center" position="left">
+            <AddonBox
+              container
+              variant={variant}
+              justifyContent="center"
+              alignItems="center"
+              position="left"
+            >
               {leftAddon}
             </AddonBox>
           )}
