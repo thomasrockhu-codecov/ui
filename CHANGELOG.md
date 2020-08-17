@@ -1,3 +1,15 @@
+# [3.13.0](https://github.com/nordnet/ui/compare/v3.12.0...v3.13.0) (2020-08-17)
+
+
+### Bug Fixes
+
+* 🐛 change date format in Timeline ([33b44d9](https://github.com/nordnet/ui/commit/33b44d9))
+
+
+### Features
+
+* 🎸 allow custom formatting on DateTime component ([4b903c3](https://github.com/nordnet/ui/commit/4b903c3))
+
 # [3.12.0](https://github.com/nordnet/ui/compare/v3.11.0...v3.12.0) (2020-08-14)
 
 
