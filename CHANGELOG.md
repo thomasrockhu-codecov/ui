@@ -1,3 +1,10 @@
+## [3.13.1](https://github.com/nordnet/ui/compare/v3.13.0...v3.13.1) (2020-08-17)
+
+
+### Bug Fixes
+
+* 🐛 removes margins on timeline ([d1c69c1](https://github.com/nordnet/ui/commit/d1c69c1))
+
 # [3.13.0](https://github.com/nordnet/ui/compare/v3.12.0...v3.13.0) (2020-08-17)
 
 
