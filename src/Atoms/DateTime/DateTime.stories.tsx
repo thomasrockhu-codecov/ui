@@ -40,6 +40,20 @@ withDateAsIso8601String.story = {
   name: 'With date as ISO 8601 string',
 };
 
+export const withCustomFormattingOptions = () => {
+  const options = {
+    year: 'numeric',
+    month: 'short',
+    day: 'numeric',
+    weekday: 'short',
+  };
+  return <DateTime value="1999-11-11" options={options} />;
+};
+
+withCustomFormattingOptions.story = {
+  name: 'With custom formatting options',
+};
+
 export const invalidValueStory = () => {
   return <DateTime value={null} />;
 };
