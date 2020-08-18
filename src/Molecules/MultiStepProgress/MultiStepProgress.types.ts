@@ -8,7 +8,7 @@ export type StepBaseProps = {
 };
 
 export type MultiStepProgressProps = {
-  onStepClick?: (stepName: string) => void;
+  onStepClick?: (stepName?: string) => void;
   onSubStepClick?: (stepName: string) => void;
   steps?: StepTopLevelProps[];
   /** Used to label the component */
@@ -18,6 +18,7 @@ export type MultiStepProgressProps = {
   /** Visible on non completed steps */
   titleNotDone?: string;
   mobileDrawerTitle?: string;
+  closeDrawerOnStepClick?: boolean;
 };
 
 export type MultiStepProgressComponent = React.FC<MultiStepProgressProps>;
