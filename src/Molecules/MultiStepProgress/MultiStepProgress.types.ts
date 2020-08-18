@@ -8,7 +8,7 @@ export type StepBaseProps = {
 };
 
 export type MultiStepProgressProps = {
-  onStepClick?: (stepName?: string) => void;
+  onStepClick?: (stepName: string) => void;
   onSubStepClick?: (stepName: string) => void;
   steps?: StepTopLevelProps[];
   /** Used to label the component */

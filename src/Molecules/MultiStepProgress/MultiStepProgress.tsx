@@ -22,6 +22,7 @@ export const MultiStepProgress: MultiStepProgressComponent = ({
   mobileDrawerTitle = 'Start monthly savings',
   closeDrawerOnStepClick = false,
 }) => {
+
   // TODO: use context to pass these lovely props down the rabbit hole
   const [open, setOpen] = useState(false);
 
@@ -33,9 +34,10 @@ export const MultiStepProgress: MultiStepProgressComponent = ({
     setOpen(false);
   };
 
-  const onStepClickDrawerClose = () => {
+  const onStepClickDrawerClose = (value: string) => {
     if(closeDrawerOnStepClick) onDrawerClose();
-    onStepClick
+   
+    if(onStepClick) onStepClick(value);
   };
 
   return (
