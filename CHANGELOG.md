@@ -1,3 +1,10 @@
+## [3.13.2](https://github.com/nordnet/ui/compare/v3.13.1...v3.13.2) (2020-08-19)
+
+
+### Bug Fixes
+
+* 🐛 drawer menu now closes on step click ([06adf11](https://github.com/nordnet/ui/commit/06adf11))
+
 ## [3.13.1](https://github.com/nordnet/ui/compare/v3.13.0...v3.13.1) (2020-08-17)
 
 
