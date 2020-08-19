@@ -56,6 +56,19 @@ basicMultiStepProgress.story = {
   name: 'Basic Multi Step Progress',
 };
 
+export const basicMultiStepProgressWithDrawerClose = () => (
+  <MultiStepProgress
+    steps={mockedSteps}
+    onStepClick={action(`step click`)}
+    onSubStepClick={action(`sub step click`)}
+    closeDrawerOnStepClick
+  />
+);
+
+basicMultiStepProgressWithDrawerClose.story = {
+  name: 'Basic Multi Step Progress (With Closing Drawer)',
+};
+
 export const notStartedMultiStepProgress = () => (
   <MultiStepProgress
     steps={mockedStepsNotStarted}
