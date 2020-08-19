@@ -20,6 +20,7 @@ export const MultiStepProgress: MultiStepProgressComponent = ({
   titleDone = 'Completed',
   titleNotDone = 'Not completed',
   mobileDrawerTitle = 'Start monthly savings',
+  closeDrawerOnStepClick = false,
 }) => {
   // TODO: use context to pass these lovely props down the rabbit hole
   const [open, setOpen] = useState(false);
@@ -31,6 +32,12 @@ export const MultiStepProgress: MultiStepProgressComponent = ({
   const onDrawerClose = () => {
     setOpen(false);
   };
+
+  const onStepClickDrawerClose = (value: string) => {
+    if (closeDrawerOnStepClick) onDrawerClose();
+    if (onStepClick) onStepClick(value);
+  };
+
   return (
     <>
       <Card>
@@ -61,7 +68,7 @@ export const MultiStepProgress: MultiStepProgressComponent = ({
         >
           <div role="group" aria-label={title}>
             <TopLevel
-              onStepClick={onStepClick}
+              onStepClick={onStepClickDrawerClose}
               onSubStepClick={onSubStepClick}
               steps={steps}
               titleDone={titleDone}
