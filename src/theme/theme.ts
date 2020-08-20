@@ -122,7 +122,6 @@ const createColors = (type: ThemeColorsVersion): ThemeColors<typeof type> => {
     disabledText: rawColor.gray3,
     disabledBackground: rawColor.gray6,
     divider: rawColor.gray6,
-
     label: rawColor.gray2,
     accordionText: rawColor.gray2,
     selectOptionBackground: rawColor.white,
