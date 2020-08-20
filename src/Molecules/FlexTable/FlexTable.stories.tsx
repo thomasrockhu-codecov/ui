@@ -444,7 +444,7 @@ export const TableCustomDataCells = () => {
                 </FlexTable.Header.TextWrapper>
               </FlexTable.CellInlineContainer>
               <Flexbox item>
-                <FlexTable.Header.TextWrapper fontSize={fontSize} truncate={false}>
+                <FlexTable.Header.TextWrapper fontSize={fontSize} sorted={sorted} truncate={false}>
                   {currency}
                 </FlexTable.Header.TextWrapper>
               </Flexbox>

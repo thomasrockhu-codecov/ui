@@ -35,8 +35,23 @@ The Flextable component only handles UI states.
   </FlexTable>
 </Preview>
 
+**Table of Contents**
+- Customization
+- FlexTable component
+- Header
+  - Sorting
+  - Custom Header 
+- Cell
+  - Custom Cell
+- Footer
+- Row
+  - Header Row & Footer Row
+- Constants
+- Design Notes
+- Performance
 
-### Customize components
+
+## Customization
 
 To enable users to customise their components, `FlexTable` and its components are developed to support plain strings, components and functions as children.
 Sending in a plain string as a child will wrap the string with content wrappers to set e.g. the correct font, font size and padding.
@@ -119,7 +134,7 @@ This example cell will fit in with the rest of the cells and change its font siz
 Header sets the layout for the entire column and handles sorting as well.
 The layout is set using the same properties that `Flexbox`uses.
 Setting the same `columnId` on `Cell` and `Footer` makes them inherit the layout properties.
-The `fontSize` and `density` defined in the `FlexTable` component is inherited here. If the content does not fit within the `Header`, it will be truncated and produces a tooltip on hover via the molecule `TruncateWithToolTip`.
+The `fontSize` defined in the `FlexTable` component is inherited here. If the content does not fit within the `Header`, it will be truncated and produces a tooltip on hover via the molecule `TruncateWithToolTip`.
 
 <Preview>
   <FlexTable>
@@ -164,7 +179,10 @@ The `fontSize` and `density` defined in the `FlexTable` component is inherited h
 ### Sorting
 
 To enable sorting, the `sortable` property has to be set to true. The user can have either a controlled or uncontrolled sorting state by setting the `sortOrder` property.
-In an uncontrolled state the header will unsort the other headers when a header is sorted. The default sorting rotation is _unsorted --> ascending --> descending --> unsorted_
+In an uncontrolled state the header will unsort the other headers when a header is sorted. The default sorting rotation is _unsorted --> ascending --> descending --> unsorted_. 
+
+Note: To ease sorting, we recommend that the `columnId` for each column has the same name as the data property that the column represents. 
+In the example below, The `columnId` of the first column represents `instrumentName` field in the data, `columnId` of second column represents `currency` etc.
 
 ```jsx
 const data = [
@@ -207,6 +225,8 @@ const InstrumentTable = () => (
   )
 );
 ```
+
+
 
 ### Custom Header
 
@@ -261,13 +281,13 @@ Cell consumes the layout properties of the `Header` with the same `columnId`.
 ### Custom Cell
 
 By using Render Props when creating your custom cell, you enable `FlexTable` to communicate the properties set by it.
-In this example below we automatically get the `fontSize` and `density` from the table.
+In this example below we automatically get the `fontSize` from the table.
 
 ```jsx
 const NumberCell: React.FC<{ columnId: string }> = React.memo(({ value, columnId }) => (
   <FlexTable.Cell columnId={columnId}>
-    {({ fontSize, density }) => (
-      <FlexTable.Cell.TextWrapper fontSize={fontSize} density={density}>
+    {({ fontSize }) => (
+      <FlexTable.Cell.TextWrapper fontSize={fontSize}>
         <Number value={value} />
       </FlexTable.Cell.TextWrapper>
     )}
@@ -275,7 +295,7 @@ const NumberCell: React.FC<{ columnId: string }> = React.memo(({ value, columnId
 ));
 ```
 
-You could also skip using Render Props and supply the values for `fontSize` and `density` yourself in the example above.
+You could also skip using Render Props and supply the values for `fontSize` yourself in the example above.
 Note the use of `React.memo`, this is important to include to improve sorting speed.
 More info regarding this can be found under _Performance_.
 
@@ -388,6 +408,13 @@ This keeps the row from rendering a chevron and instead provides a empty `Header
 1. `ICON_COLUMN_DEFAULT_FLEX_PROPS`
     
     The layout properties used on the Icon column.
+
+## Design Notes
+These pertain to the design standards of the FlexTable
+
+- In general, columns with cells that use number values should be right aligned, i.e. `justifyContent="flex-end"`
+- When `density` is `s`, `fontSize` value should be `s`. For other `density` values `fontSize` could be either `s` or `m`
+- If the column header ends with a currency, the currency shouldn't truncate. An example of how to truncate the rest can be found in the stories
 
 
 ## Performance
