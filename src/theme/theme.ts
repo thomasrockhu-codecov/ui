@@ -122,6 +122,7 @@ const createColors = (type: ThemeColorsVersion): ThemeColors<typeof type> => {
     disabledText: rawColor.gray3,
     disabledBackground: rawColor.gray6,
     divider: rawColor.gray6,
+
     label: rawColor.gray2,
     accordionText: rawColor.gray2,
     selectOptionBackground: rawColor.white,
@@ -145,6 +146,7 @@ const createColors = (type: ThemeColorsVersion): ThemeColors<typeof type> => {
     positive: a11yColors ? rawColor.a11yPositive : rawColor.positive,
     sell: a11yColors ? rawColor.a11yNegative : rawColor.negative,
     sellActive: a11yColors ? rawColor.a11yNegativePressed : rawColor.negativePressed,
+    separator: rawColor.gray0,
     shadowCard: Color(rawColor.black)
       .alpha(0.03)
       .rgb()
