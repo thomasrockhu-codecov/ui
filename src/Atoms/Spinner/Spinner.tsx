@@ -39,19 +39,19 @@ const RawSpinner: React.FC<PropsWithTheme> = ({ theme, size = 4, color, id }) =>
   const calculatedSize = theme.spacing.unit(size);
   const id1 = `spinner-${id}-1`;
   const id2 = `spinner-${id}-2`;
-  const newColor: string = evalColor(theme, color);
+  const usedColor: string = evalColor(theme, color);
 
   return (
     <Animation>
       <StyledSvg width={calculatedSize} height={calculatedSize} viewBox="0 0 24 24">
         <defs>
           <linearGradient id={id1} x1="50%" x2="50%" y1="0%" y2="100%">
-            <stop offset="0%" stopColor={newColor} stopOpacity="0" />
-            <stop offset="100%" stopColor={newColor} stopOpacity=".5" />
+            <stop offset="0%" stopColor={usedColor} stopOpacity="0" />
+            <stop offset="100%" stopColor={usedColor} stopOpacity=".5" />
           </linearGradient>
           <linearGradient id={id2} x1="50%" x2="50%" y1="0%" y2="100%">
-            <stop offset="0%" stopColor={newColor} stopOpacity=".5" />
-            <stop offset="100%" stopColor={newColor} />
+            <stop offset="0%" stopColor={usedColor} stopOpacity=".5" />
+            <stop offset="100%" stopColor={usedColor} />
           </linearGradient>
         </defs>
         <g fill="none" fillRule="evenodd">
