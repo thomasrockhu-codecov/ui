@@ -1,0 +1,19 @@
+import { Meta, Story, Preview, Props } from '@storybook/addon-docs/blocks';
+import { IntlProvider } from 'react-intl';
+import SegmentedControl from './SegmentedControl';
+import { Number } from "../..";
+
+<Meta title="Molecules | SegmentedControl" component={SegmentedControl} />
+
+# SegmentedControl
+
+SegmentedControl is a component built using the `Flexbox` component that mimicks a radio group with radio inputs.
+Always uses 100% of the availble width.
+
+<Preview>
+  <SegmentedControl>
+      <SegmentedControl.Item itemId={0}>%</SegmentedControl.Item>
+      <SegmentedControl.Item itemId={1}>SEK</SegmentedControl.Item>
+  </SegmentedControl>
+</Preview>
+

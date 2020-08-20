@@ -62,7 +62,7 @@ export const RenderForSizes: RenderForSizesComponent = ({
         const container = Container({ children: component, ...props });
 
         if (size === 'xs' && !nextSize) {
-          return container;
+          return <React.Fragment key={size}>{container}</React.Fragment>;
         }
 
         const as = (() => container) as React.FC;

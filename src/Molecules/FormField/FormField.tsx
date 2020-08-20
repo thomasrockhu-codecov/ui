@@ -44,6 +44,7 @@ export const FormField = React.forwardRef<HTMLDivElement, Props>(
       required = false,
       showRequired = false,
       width,
+      disabled,
     },
     ref,
   ) => {
@@ -52,7 +53,7 @@ export const FormField = React.forwardRef<HTMLDivElement, Props>(
 
     if (label) {
       field = (
-        <FormLabel>
+        <FormLabel disabled={disabled}>
           <WithOptionalAddon labelTooltip={labelTooltip} hideLabel={hideLabel}>
             {hideLabel ? <VisuallyHidden>{labelText}</VisuallyHidden> : labelText}
           </WithOptionalAddon>
@@ -122,7 +123,10 @@ export const FormField = React.forwardRef<HTMLDivElement, Props>(
                 exit={{ y: 0, opacity: 0 }}
                 aria-live="polite"
               >
-                <Typography type="tertiary" color={t => t.color.label}>
+                <Typography
+                  type="tertiary"
+                  color={t => (disabled ? t.color.disabled : t.color.label)}
+                >
                   {extraInfo}
                 </Typography>
               </BottomWrapper>

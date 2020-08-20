@@ -127,6 +127,8 @@ export type ThemeColors<Version extends ThemeColorsVersion> = {
   /** gray6 */
   divider: RawColor['gray6'];
   /** gray0 */
+  separator: RawColor['gray0'];
+  /** gray0 */
   backgroundDark: RawColor['gray0'];
   /** @deprecated
    * gray3 */

@@ -1,3 +1,166 @@
+# [3.14.0](https://github.com/nordnet/ui/compare/v3.13.3...v3.14.0) (2020-08-20)
+
+
+### Features
+
+* 🎸 add csv svg to icon component ([10fbc2b](https://github.com/nordnet/ui/commit/10fbc2b))
+
+## [3.13.3](https://github.com/nordnet/ui/compare/v3.13.2...v3.13.3) (2020-08-20)
+
+
+### Bug Fixes
+
+* 🐛 add separator color alias ([d3dc3ba](https://github.com/nordnet/ui/commit/d3dc3ba))
+* 🐛 remove unnecessary row ([14df489](https://github.com/nordnet/ui/commit/14df489))
+
+## [3.13.2](https://github.com/nordnet/ui/compare/v3.13.1...v3.13.2) (2020-08-19)
+
+
+### Bug Fixes
+
+* 🐛 drawer menu now closes on step click ([06adf11](https://github.com/nordnet/ui/commit/06adf11))
+
+## [3.13.1](https://github.com/nordnet/ui/compare/v3.13.0...v3.13.1) (2020-08-17)
+
+
+### Bug Fixes
+
+* 🐛 removes margins on timeline ([d1c69c1](https://github.com/nordnet/ui/commit/d1c69c1))
+
+# [3.13.0](https://github.com/nordnet/ui/compare/v3.12.0...v3.13.0) (2020-08-17)
+
+
+### Bug Fixes
+
+* 🐛 change date format in Timeline ([33b44d9](https://github.com/nordnet/ui/commit/33b44d9))
+
+
+### Features
+
+* 🎸 allow custom formatting on DateTime component ([4b903c3](https://github.com/nordnet/ui/commit/4b903c3))
+
+# [3.12.0](https://github.com/nordnet/ui/compare/v3.11.0...v3.12.0) (2020-08-14)
+
+
+### Bug Fixes
+
+* fixed support for addons in quiet input ([39eca74](https://github.com/nordnet/ui/commit/39eca74))
+
+
+### Features
+
+* add form-field disabled support ([41ebd44](https://github.com/nordnet/ui/commit/41ebd44))
+* add quiet variant to input.text ([8af8da6](https://github.com/nordnet/ui/commit/8af8da6))
+
+# [3.11.0](https://github.com/nordnet/ui/compare/v3.10.1...v3.11.0) (2020-08-14)
+
+
+### Bug Fixes
+
+* add expanded aria attribute ([c595a97](https://github.com/nordnet/ui/commit/c595a97))
+* breaking storyshot ([804ffb7](https://github.com/nordnet/ui/commit/804ffb7))
+* clean up toplevel ([22c552e](https://github.com/nordnet/ui/commit/22c552e))
+* hide borders on mobile and in drawer ([f329045](https://github.com/nordnet/ui/commit/f329045))
+* remove border in mobile ([1c65ce6](https://github.com/nordnet/ui/commit/1c65ce6))
+
+
+### Features
+
+* display drawer on mobile for multistepprogress ([b31127c](https://github.com/nordnet/ui/commit/b31127c))
+
+## [3.10.1](https://github.com/nordnet/ui/compare/v3.10.0...v3.10.1) (2020-08-14)
+
+
+### Bug Fixes
+
+* 🐛 add key for expand items ([926c7f7](https://github.com/nordnet/ui/commit/926c7f7))
+* 🐛 add unique key to render for sizes iteration ([a706cb9](https://github.com/nordnet/ui/commit/a706cb9))
+* 🐛 correctly set key prop on container in renderforsizes ([8d2adf8](https://github.com/nordnet/ui/commit/8d2adf8))
+* remove index from key prop ([51e58f5](https://github.com/nordnet/ui/commit/51e58f5))
+
+# [3.10.0](https://github.com/nordnet/ui/compare/v3.9.0...v3.10.0) (2020-08-13)
+
+
+### Features
+
+* create isopmorphic media and remove old ([96d5f52](https://github.com/nordnet/ui/commit/96d5f52))
+* wip nothing works ([fa60b49](https://github.com/nordnet/ui/commit/fa60b49))
+
+# [3.9.0](https://github.com/nordnet/ui/compare/v3.8.0...v3.9.0) (2020-08-06)
+
+
+### Bug Fixes
+
+* better trypes ([2ce0b5d](https://github.com/nordnet/ui/commit/2ce0b5d))
+* improve animations on switch component ([a5041af](https://github.com/nordnet/ui/commit/a5041af))
+
+
+### Features
+
+* add segmentedcontrol component ([3869c44](https://github.com/nordnet/ui/commit/3869c44))
+
+# [3.8.0](https://github.com/nordnet/ui/compare/v3.7.1...v3.8.0) (2020-08-05)
+
+
+### Features
+
+* 🎸 thinner plus icon added ([c94345e](https://github.com/nordnet/ui/commit/c94345e))
+
+## [3.7.1](https://github.com/nordnet/ui/compare/v3.7.0...v3.7.1) (2020-08-05)
+
+
+### Bug Fixes
+
+* **semrel:** trigger release ([a6504b4](https://github.com/nordnet/ui/commit/a6504b4))
+
+# [3.7.0](https://github.com/nordnet/ui/compare/v3.6.0...v3.7.0) (2020-08-05)
+
+
+### Bug Fixes
+
+* **semrel:** replicate previous successful release env ([1741508](https://github.com/nordnet/ui/commit/1741508))
+* **travis:** trigger release ([2faba97](https://github.com/nordnet/ui/commit/2faba97))
+
+
+### Features
+
+* test ([d113233](https://github.com/nordnet/ui/commit/d113233))
+
+# [3.7.0](https://github.com/nordnet/ui/compare/v3.6.0...v3.7.0) (2020-08-04)
+
+
+### Bug Fixes
+
+* **travis:** trigger release ([2faba97](https://github.com/nordnet/ui/commit/2faba97))
+
+
+### Features
+
+* test ([d113233](https://github.com/nordnet/ui/commit/d113233))
+
+# [3.6.0](https://github.com/nordnet/ui/compare/v3.5.0...v3.6.0) (2020-08-03)
+
+
+### Bug Fixes
+
+* 🐛 export multi step progress story properly ([02af5a3](https://github.com/nordnet/ui/commit/02af5a3))
+* 🐛 export multi step progress story properly ([103663d](https://github.com/nordnet/ui/commit/103663d))
+* 🐛 force a new ui version ([b70f8a8](https://github.com/nordnet/ui/commit/b70f8a8))
+* add graceful fs ([7c21ff8](https://github.com/nordnet/ui/commit/7c21ff8))
+* bump npm on travis to 614 ([f50657b](https://github.com/nordnet/ui/commit/f50657b))
+* changel npm version to my local env ([7b2fb41](https://github.com/nordnet/ui/commit/7b2fb41))
+* fix mdx warning ([91e84f8](https://github.com/nordnet/ui/commit/91e84f8))
+* install npm after yarn ([71442e1](https://github.com/nordnet/ui/commit/71442e1))
+* log version of everything before release ([ceec92f](https://github.com/nordnet/ui/commit/ceec92f))
+* new build version plx ([3d3521d](https://github.com/nordnet/ui/commit/3d3521d))
+
+
+### Features
+
+* 🎸 move multi step progress from mutations to ui ([816d909](https://github.com/nordnet/ui/commit/816d909))
+* trigger release ([53f3e62](https://github.com/nordnet/ui/commit/53f3e62))
+
+
 # [3.5.0](https://github.com/nordnet/ui/compare/v3.4.0...v3.5.0) (2020-07-16)
 
 

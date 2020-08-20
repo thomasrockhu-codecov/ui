@@ -145,6 +145,7 @@ const createColors = (type: ThemeColorsVersion): ThemeColors<typeof type> => {
     positive: a11yColors ? rawColor.a11yPositive : rawColor.positive,
     sell: a11yColors ? rawColor.a11yNegative : rawColor.negative,
     sellActive: a11yColors ? rawColor.a11yNegativePressed : rawColor.negativePressed,
+    separator: rawColor.gray0,
     shadowCard: Color(rawColor.black)
       .alpha(0.03)
       .rgb()

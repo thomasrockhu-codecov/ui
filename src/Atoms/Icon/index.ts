@@ -30,6 +30,7 @@ import { Cross } from './components/Cross';
 import { CrossCircle } from './components/CrossCircle';
 import { CrossMedium } from './components/CrossMedium';
 import { CrossThin } from './components/CrossThin';
+import { Csv } from './components/Csv';
 import { DiagonalWithCircle } from './components/DiagonalWithCircle';
 import { DirectionDown } from './components/DirectionDown';
 import { DirectionUp } from './components/DirectionUp';
@@ -67,6 +68,7 @@ import { Other } from './components/Other';
 import { Pen } from './components/Pen';
 import { Pending } from './components/Pending';
 import { Plus } from './components/Plus';
+import { PlusThin } from './components/PlusThin';
 import { PlusWithCircle } from './components/PlusWithCircle';
 import { Printer } from './components/Printer';
 import { Questionmark } from './components/Questionmark';
@@ -126,6 +128,7 @@ export default {
   CrossCircle,
   CrossMedium,
   CrossThin,
+  Csv,
   DiagonalWithCircle,
   DirectionDown,
   DirectionUp,
@@ -163,6 +166,7 @@ export default {
   Pen,
   Pending,
   Plus,
+  PlusThin,
   PlusWithCircle,
   Printer,
   Questionmark,
