@@ -1,3 +1,17 @@
+# [3.16.0](https://github.com/nordnet/ui/compare/v3.15.0...v3.16.0) (2020-08-20)
+
+
+### Bug Fixes
+
+* avoid using deprecated colors ([17159ca](https://github.com/nordnet/ui/commit/17159ca))
+* change const name ([9178291](https://github.com/nordnet/ui/commit/9178291))
+* update snapshots ([45ffd76](https://github.com/nordnet/ui/commit/45ffd76))
+
+
+### Features
+
+* deprecate old colors, add new palettes ([efaf11b](https://github.com/nordnet/ui/commit/efaf11b))
+
 # [3.15.0](https://github.com/nordnet/ui/compare/v3.14.0...v3.15.0) (2020-08-20)
 
 
