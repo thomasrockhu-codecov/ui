@@ -1,3 +1,10 @@
+# [3.14.0](https://github.com/nordnet/ui/compare/v3.13.3...v3.14.0) (2020-08-20)
+
+
+### Features
+
+* 🎸 add csv svg to icon component ([10fbc2b](https://github.com/nordnet/ui/commit/10fbc2b))
+
 ## [3.13.3](https://github.com/nordnet/ui/compare/v3.13.2...v3.13.3) (2020-08-20)
 
 
