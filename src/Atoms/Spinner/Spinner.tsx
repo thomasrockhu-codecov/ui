@@ -1,6 +1,9 @@
 import React, { useEffect, useState } from 'react';
+import R from 'ramda';
 import styled, { withTheme } from 'styled-components';
-import { Props, PropsWithTheme } from './Spinner.types';
+import { isArray, isString } from '../../common/utils';
+import { Props, PropsWithTheme, ColorFn } from './Spinner.types';
+import { Theme } from '../../theme/theme.types';
 
 const Animation = styled.span`
   @keyframes spinner {
@@ -19,11 +22,24 @@ const StyledSvg = styled.svg`
   display: block;
 `;
 
+const evalColor = (theme: Theme, color?: ColorFn): string => {
+  if (typeof color === 'function') {
+    const usedColor = color(theme);
+
+    if (isArray(usedColor)) {
+      return R.head(usedColor) || theme.color.cta;
+    }
+    return isString(usedColor) ? usedColor : theme.color.cta;
+  }
+
+  return color || theme.color.cta;
+};
+
 const RawSpinner: React.FC<PropsWithTheme> = ({ theme, size = 4, color, id }) => {
   const calculatedSize = theme.spacing.unit(size);
-  const usedColor = typeof color === 'function' ? color(theme) : color || theme.color.cta;
   const id1 = `spinner-${id}-1`;
   const id2 = `spinner-${id}-2`;
+  const usedColor: string = evalColor(theme, color);
 
   return (
     <Animation>
