@@ -30,6 +30,7 @@ import { Cross } from './components/Cross';
 import { CrossCircle } from './components/CrossCircle';
 import { CrossMedium } from './components/CrossMedium';
 import { CrossThin } from './components/CrossThin';
+import { Csv } from './components/Csv';
 import { DiagonalWithCircle } from './components/DiagonalWithCircle';
 import { DirectionDown } from './components/DirectionDown';
 import { DirectionUp } from './components/DirectionUp';
@@ -127,6 +128,7 @@ export default {
   CrossCircle,
   CrossMedium,
   CrossThin,
+  Csv,
   DiagonalWithCircle,
   DirectionDown,
   DirectionUp,
