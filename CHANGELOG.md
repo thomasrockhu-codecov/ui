@@ -1,3 +1,16 @@
+# [3.15.0](https://github.com/nordnet/ui/compare/v3.14.0...v3.15.0) (2020-08-20)
+
+
+### Bug Fixes
+
+* remove incorrect api in docs ([0c1f06f](https://github.com/nordnet/ui/commit/0c1f06f))
+
+
+### Features
+
+* add design notes in docs ([c70ebe7](https://github.com/nordnet/ui/commit/c70ebe7))
+* add table of contents ([7157a99](https://github.com/nordnet/ui/commit/7157a99))
+
 # [3.14.0](https://github.com/nordnet/ui/compare/v3.13.3...v3.14.0) (2020-08-20)
 
 
