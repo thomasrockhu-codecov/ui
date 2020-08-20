@@ -1,6 +1,6 @@
 {
   "name": "@nordnet/ui",
-  "version": "1.0.0-beta.X",
+  "version": "0.0.0-dev",
   "author": "Nordnet <frontend@nordnet.se> (https://nordnet.se)",
   "repository": "https://github.com/nordnet/ui",
   "bugs": "https://github.com/nordnet/ui/issues",
@@ -14,6 +14,7 @@
   },
   "scripts": {
     "test": "TZ=UTC jest",
+    "tdd": "npm run test -- --watch",
     "test-ci": "TZ=UTC jest --coverage --ci && codecov",
     "dev": "start-storybook -p 6006 -s ./static",
     "lint:js": "eslint --ext=.tsx --ext=.ts src",
@@ -69,7 +70,7 @@
     "framer-motion": "^1.9.1",
     "ramda": "^0.26.1",
     "react-focus-lock": "^2.0.3",
-    "react-intl": "^4.6.9",
+    "react-intl": "^5.0.2",
     "react-remove-scroll": "^2.0.4",
     "react-uid": "^2.2.0",
     "scroll-into-view-if-needed": "^2.2.20",
@@ -79,13 +80,12 @@
   },
   "peerDependencies": {
     "react": ">=16",
-    "react-dom": ">=16",
-    "react-router": "5",
-    "react-router-dom": "5"
+    "react-dom": ">=16"
   },
   "devDependencies": {
     "@babel/cli": "7.4.4",
     "@babel/core": "7.4.4",
+    "@babel/helper-validator-identifier": "^7.10.4",
     "@babel/plugin-proposal-class-properties": "7.4.4",
     "@babel/plugin-transform-runtime": "^7.4.4",
     "@babel/preset-env": "7.4.4",

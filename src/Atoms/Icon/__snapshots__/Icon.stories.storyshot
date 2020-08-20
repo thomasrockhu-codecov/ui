@@ -822,6 +822,41 @@ Array [
       role="presentation"
       viewBox="0 0 16 16"
     >
+      <path
+        d="M4.37272727 4.56363636l9.16363633 3.05454546-3.4737272 1.73545454 4.4327952 4.43275024-.8999541.8999541-4.43184114-4.4327043-1.73636363 3.4736363-3.05454546-9.16363634zM6.385 6.576l1.278 3.833.85200146-1.70308945L10.218 7.854 6.385 6.576zM15.6363636.36363636v9.92727274h-2.9696969V9.01818182L14.363 9.018V1.636H1.636v7.382l3.564.00018182v1.27272728H.36363636V.36363636H15.6363636z"
+      />
+    </svg>
+  </div>,
+  .c0 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 20px;
+  height: 20px;
+  fill: #0046FF;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
+}
+
+<div
+    style={
+      Object {
+        "display": "inline-block",
+        "outline": "1px dashed #bbb",
+      }
+    }
+  >
+    <svg
+      aria-hidden="true"
+      className="c0"
+      focusable="false"
+      preserveAspectRatio="xMidYMid meet"
+      role="presentation"
+      viewBox="0 0 16 16"
+    >
       <g
         fillRule="evenodd"
       >
@@ -1198,6 +1233,52 @@ Array [
         className="c1"
         d="m 1 1 l 22 22 m -22 0 l 22 -22"
         strokeWidth={2}
+      />
+    </svg>
+  </div>,
+  .c0 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 20px;
+  height: 20px;
+  fill: #0046FF;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
+}
+
+.c1 {
+  fill: #FFFFFF;
+}
+
+<div
+    style={
+      Object {
+        "display": "inline-block",
+        "outline": "1px dashed #bbb",
+      }
+    }
+  >
+    <svg
+      aria-hidden="true"
+      className="c0"
+      focusable="false"
+      preserveAspectRatio="xMidYMid meet"
+      role="presentation"
+      viewBox="0 0 16 16"
+    >
+      <path
+        d="M10.24 1.6H3.41v12.8h10.24V4.8h-3.41V1.6zM11.47 0l3.89 3.72V16H1.71V0h9.76z"
+      />
+      <path
+        d="M0 6.4h11.95v6.4H0z"
+      />
+      <path
+        className="c1"
+        d="M2.74 11.38c.83 0 1.5-.55 1.55-1.26h-.8a.77.77 0 01-.77.57c-.57 0-.94-.46-.94-1.17s.37-1.16.94-1.16c.35 0 .62.16.76.5h.8c-.08-.67-.73-1.2-1.54-1.2-1.1 0-1.77.82-1.77 1.86s.66 1.86 1.77 1.86zm3.42.01c.9 0 1.44-.46 1.44-1.13 0-.63-.43-.89-1.28-1.1-.58-.15-.83-.22-.83-.47 0-.21.18-.37.55-.37.41 0 .67.2.71.46h.77c-.07-.76-.74-1.11-1.46-1.11-.86 0-1.35.47-1.35 1.06 0 .54.28.84 1.24 1.1.53.13.87.19.87.49 0 .27-.24.41-.63.41s-.76-.15-.82-.52H4.6c.04.71.62 1.18 1.57 1.18zm3.88-.09l1.1-3.55h-.8l-.85 2.96-.84-2.96h-.82l1.1 3.55h1.11z"
       />
     </svg>
   </div>,
@@ -2426,6 +2507,41 @@ Array [
       viewBox="0 0 16 16"
     >
       <path
+        d="M8 0c4.418278 0 8 3.581722 8 8s-3.581722 8-8 8-8-3.581722-8-8 3.581722-8 8-8zm0 1.33333333c-1.60080509 0-3.06983091.56421413-4.21906468 1.50462961l1.82854039 1.82870373-.94280904.94280904-1.82870373-1.82854039C1.89754746 4.93016909 1.33333333 6.39919491 1.33333333 8c0 3.6818983 2.98476834 6.6666667 6.66666667 6.6666667 1.60080509 0 3.0698309-.5642142 4.2190647-1.5046296l-1.8285404-1.8287038.942809-.942809 1.8287038 1.8285404C14.1024525 11.0698309 14.6666667 9.60080509 14.6666667 8c0-3.68189833-2.9847684-6.66666667-6.6666667-6.66666667zm.496 2.01333334v.928c1.10933333.18133333 2.0053333.88533333 2.1333333 2.048H9.40266667c-.128-.45866667-.46933334-.768-.90666667-.90666667v1.99466667C10.064 7.83733333 10.8 8.38133333 10.8 9.576c0 1.2586667-.87466667 2.1226667-2.304 2.24v.9173333h-.91733333v-.928c-1.42933334-.16-2.35733334-.9706666-2.44266667-2.25066663h1.248c.11733333.65066663.608 1.00266663 1.19466667 1.13066663V8.41333333c-1.632-.448-2.208-1.03466666-2.208-2.06933333 0-1.13066667.84266666-1.984 2.208-2.10133333v-.896H8.496zm0 5.32266666V10.728c.62933333-.096 1.06666667-.4586667 1.06666667-1.04533333C9.56266667 9.128 9.168 8.872 8.496 8.66933333zm-.91733333-3.328c-.61866667.08533334-.97066667.448-.97066667.928 0 .45866667.30933333.68266667.97066667.896z"
+      />
+    </svg>
+  </div>,
+  .c0 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 20px;
+  height: 20px;
+  fill: #0046FF;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
+}
+
+<div
+    style={
+      Object {
+        "display": "inline-block",
+        "outline": "1px dashed #bbb",
+      }
+    }
+  >
+    <svg
+      aria-hidden="true"
+      className="c0"
+      focusable="false"
+      preserveAspectRatio="xMidYMid meet"
+      role="presentation"
+      viewBox="0 0 16 16"
+    >
+      <path
         d="M3.5,9 C5.43299662,9 7,10.5670034 7,12.5 C7,14.4329966 5.43299662,16 3.5,16 C1.56700338,16 0,14.4329966 0,12.5 C0,10.5670034 1.56700338,9 3.5,9 Z M16,9 L16,16 L9,16 L9,9 L16,9 Z M3.5,10 C2.11928813,10 1,11.1192881 1,12.5 C1,13.8807119 2.11928813,15 3.5,15 C4.88071187,15 6,13.8807119 6,12.5 C6,11.1192881 4.88071187,10 3.5,10 Z M15,10 L10,10 L10,15 L15,15 L15,10 Z M12.5,0 C14.4329966,0 16,1.56700338 16,3.5 C16,5.43299662 14.4329966,7 12.5,7 C10.5670034,7 9,5.43299662 9,3.5 C9,1.56700338 10.5670034,0 12.5,0 Z M7,0 L7,7 L0,7 L0,0 L7,0 Z M12.5,1 C11.1192881,1 10,2.11928813 10,3.5 C10,4.88071187 11.1192881,6 12.5,6 C13.8807119,6 15,4.88071187 15,3.5 C15,2.11928813 13.8807119,1 12.5,1 Z M6,1 L1,1 L1,6 L6,6 L6,1 Z"
         fillRule="evenodd"
       />
@@ -2541,6 +2657,46 @@ Array [
     >
       <path
         d="M7.166 0v5h5v2h-5v5h-2V6.999L.166 7V5l5-.001V0h2z"
+        fillRule="evenodd"
+      />
+    </svg>
+  </div>,
+  .c0 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 20px;
+  height: 20px;
+  fill: #0046FF;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
+}
+
+<div
+    style={
+      Object {
+        "display": "inline-block",
+        "outline": "1px dashed #bbb",
+      }
+    }
+  >
+    <svg
+      aria-hidden="true"
+      className="c0"
+      focusable="false"
+      preserveAspectRatio="xMidYMid meet"
+      role="presentation"
+      viewBox="0 0 35 35"
+    >
+      <path
+        d="M16.7618.1432h3v35.8736h-3z"
+        fillRule="evenodd"
+      />
+      <path
+        d="M35.2986 16.08v3H.425v-3z"
         fillRule="evenodd"
       />
     </svg>
@@ -2843,6 +2999,41 @@ Array [
           </g>
         </g>
       </g>
+    </svg>
+  </div>,
+  .c0 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 20px;
+  height: 20px;
+  fill: #0046FF;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
+}
+
+<div
+    style={
+      Object {
+        "display": "inline-block",
+        "outline": "1px dashed #bbb",
+      }
+    }
+  >
+    <svg
+      aria-hidden="true"
+      className="c0"
+      focusable="false"
+      preserveAspectRatio="xMidYMid meet"
+      role="presentation"
+      viewBox="0 0 16 16"
+    >
+      <path
+        d="M16 8.33333333V16H8.33333333V8.33333333H16zm-12.16666667 0L7.66666667 16H0l3.83333333-7.66666667zM14.6666667 9.66666667H9.66666667v5.00000003h5.00000003V9.66666667zM3.83333333 11.3143333L2.157 14.6666667h3.35233333l-1.676-3.3523334zm0-11.3143333c2.11709154 0 3.83333334 1.71624179 3.83333334 3.83333333 0 2.11709154-1.7162418 3.83333334-3.83333334 3.83333334C1.71624179 7.66666667 0 5.95042487 0 3.83333333 0 1.71624179 1.71624179 0 3.83333333 0zm8.33333337 0L16 2.64876819l-1.5801565 5.01789848H9.91348987L8.33333333 2.64876819 12.1666667 0zM3.83333333 1.33333333c-1.38071187 0-2.5 1.11928813-2.5 2.5 0 1.38071188 1.11928813 2.5 2.5 2.5 1.38071188 0 2.5-1.11928812 2.5-2.5 0-1.38071187-1.11928812-2.5-2.5-2.5zm8.33333337.287l-2.26633337 1.566.99099997 3.147h2.5503334l.991-3.147-2.266-1.566z"
+      />
     </svg>
   </div>,
   .c0 {
@@ -3226,6 +3417,50 @@ Array [
 }
 
 .c1 {
+  -webkit-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  transform: rotate(0deg);
+}
+
+<div
+    style={
+      Object {
+        "display": "inline-block",
+        "outline": "1px dashed #bbb",
+      }
+    }
+  >
+    <svg
+      aria-hidden="true"
+      className="c0 c1"
+      direction="ascending"
+      focusable="false"
+      preserveAspectRatio="xMidYMid meet"
+      role="presentation"
+      viewBox="0 0 8 12"
+    >
+      <path
+        d="M9 2v8.4l1.66-1.62L12 10.1 8 14l-4-3.9 1.34-1.32L7 10.4V2h2z"
+        fillRule="evenodd"
+        transform="matrix(1 0 0 -1 -4 14)"
+      />
+    </svg>
+  </div>,
+  .c0 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 20px;
+  height: 20px;
+  fill: #0046FF;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
+}
+
+.c1 {
   stroke: #6E6E69;
 }
 
@@ -3420,6 +3655,48 @@ Array [
   display: block;
 }
 
+.c1 {
+  -webkit-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  transform: rotate(0deg);
+}
+
+<div
+    style={
+      Object {
+        "display": "inline-block",
+        "outline": "1px dashed #bbb",
+      }
+    }
+  >
+    <svg
+      aria-hidden="true"
+      className="c0 c1"
+      direction="down"
+      focusable="false"
+      preserveAspectRatio="xMidYMid meet"
+      role="presentation"
+      viewBox="0 0 16 16"
+    >
+      <polygon
+        points="14.620 3.580, 16.000 5.020, 8.000 12.730, 0.000 5.030, 1.400 3.580, 8.000 9.96"
+      />
+    </svg>
+  </div>,
+  .c0 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 20px;
+  height: 20px;
+  fill: #0046FF;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
+}
+
 <div
     style={
       Object {
@@ -3556,92 +3833,6 @@ Array [
       />
     </svg>
   </div>,
-  .c0 {
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  width: 20px;
-  height: 20px;
-  fill: #0046FF;
-  -webkit-flex-shrink: 0;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
-  display: block;
-}
-
-.c1 {
-  -webkit-transform: rotate(0deg);
-  -ms-transform: rotate(0deg);
-  transform: rotate(0deg);
-}
-
-<div
-    style={
-      Object {
-        "display": "inline-block",
-        "outline": "1px dashed #bbb",
-      }
-    }
-  >
-    <svg
-      aria-hidden="true"
-      className="c0 c1"
-      direction="down"
-      focusable="false"
-      preserveAspectRatio="xMidYMid meet"
-      role="presentation"
-      viewBox="0 0 16 16"
-    >
-      <polygon
-        points="14.620 3.580, 16.000 5.020, 8.000 12.730, 0.000 5.030, 1.400 3.580, 8.000 9.96"
-      />
-    </svg>
-  </div>,
-  .c0 {
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  width: 20px;
-  height: 20px;
-  fill: #0046FF;
-  -webkit-flex-shrink: 0;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
-  display: block;
-}
-
-.c1 {
-  -webkit-transform: rotate(0deg);
-  -ms-transform: rotate(0deg);
-  transform: rotate(0deg);
-}
-
-<div
-    style={
-      Object {
-        "display": "inline-block",
-        "outline": "1px dashed #bbb",
-      }
-    }
-  >
-    <svg
-      aria-hidden="true"
-      className="c0 c1"
-      direction="ascending"
-      focusable="false"
-      preserveAspectRatio="xMidYMid meet"
-      role="presentation"
-      viewBox="0 0 8 12"
-    >
-      <path
-        d="M9 2v8.4l1.66-1.62L12 10.1 8 14l-4-3.9 1.34-1.32L7 10.4V2h2z"
-        fillRule="evenodd"
-        transform="matrix(1 0 0 -1 -4 14)"
-      />
-    </svg>
-  </div>,
 ]
 `;
 
@@ -3660,7 +3851,7 @@ exports[`Storyshots Atoms | Icon Available icons 1`] = `
   display: block;
 }
 
-.c10 {
+.c11 {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -3674,7 +3865,7 @@ exports[`Storyshots Atoms | Icon Available icons 1`] = `
   display: block;
 }
 
-.c11 {
+.c12 {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -3688,7 +3879,7 @@ exports[`Storyshots Atoms | Icon Available icons 1`] = `
   display: block;
 }
 
-.c12 {
+.c13 {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -3702,7 +3893,7 @@ exports[`Storyshots Atoms | Icon Available icons 1`] = `
   display: block;
 }
 
-.c13 {
+.c14 {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -3737,37 +3928,41 @@ exports[`Storyshots Atoms | Icon Available icons 1`] = `
 }
 
 .c9 {
-  stroke: #6E6E69;
+  fill: #FFFFFF;
 }
 
-.c14 {
+.c10 {
   stroke: #6E6E69;
 }
 
 .c15 {
-  stroke: #6E6E69;
-}
-
-.c16 {
-  -webkit-transform: rotate(90deg);
-  -ms-transform: rotate(90deg);
-  transform: rotate(90deg);
-}
-
-.c17 {
-  fill: #FFFFFF;
-}
-
-.c18 {
   -webkit-transform: rotate(0deg);
   -ms-transform: rotate(0deg);
   transform: rotate(0deg);
+}
+
+.c16 {
+  stroke: #6E6E69;
+}
+
+.c17 {
+  stroke: #6E6E69;
+}
+
+.c18 {
+  -webkit-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  transform: rotate(90deg);
 }
 
 .c19 {
   -webkit-transform: rotate(0deg);
   -ms-transform: rotate(0deg);
   transform: rotate(0deg);
+}
+
+.c20 {
+  fill: #FFFFFF;
 }
 
 .c0 {
@@ -4580,6 +4775,39 @@ exports[`Storyshots Atoms | Icon Available icons 1`] = `
     <div
       className="c2"
     >
+      Clicks
+    </div>
+    <div>
+      <div
+        style={
+          Object {
+            "display": "inline-block",
+            "outline": "1px dashed #bbb",
+          }
+        }
+      >
+        <svg
+          aria-hidden="true"
+          className="c3"
+          focusable="false"
+          preserveAspectRatio="xMidYMid meet"
+          role="presentation"
+          viewBox="0 0 16 16"
+        >
+          <path
+            d="M4.37272727 4.56363636l9.16363633 3.05454546-3.4737272 1.73545454 4.4327952 4.43275024-.8999541.8999541-4.43184114-4.4327043-1.73636363 3.4736363-3.05454546-9.16363634zM6.385 6.576l1.278 3.833.85200146-1.70308945L10.218 7.854 6.385 6.576zM15.6363636.36363636v9.92727274h-2.9696969V9.01818182L14.363 9.018V1.636H1.636v7.382l3.564.00018182v1.27272728H.36363636V.36363636H15.6363636z"
+          />
+        </svg>
+      </div>
+    </div>
+  </div>
+  <div
+    className="c1"
+    direction="row"
+  >
+    <div
+      className="c2"
+    >
       Cogwheel
     </div>
     <div>
@@ -4947,6 +5175,46 @@ exports[`Storyshots Atoms | Icon Available icons 1`] = `
             className="c7"
             d="m 1 1 l 22 22 m -22 0 l 22 -22"
             strokeWidth={2}
+          />
+        </svg>
+      </div>
+    </div>
+  </div>
+  <div
+    className="c1"
+    direction="row"
+  >
+    <div
+      className="c2"
+    >
+      Csv
+    </div>
+    <div>
+      <div
+        style={
+          Object {
+            "display": "inline-block",
+            "outline": "1px dashed #bbb",
+          }
+        }
+      >
+        <svg
+          aria-hidden="true"
+          className="c3"
+          focusable="false"
+          preserveAspectRatio="xMidYMid meet"
+          role="presentation"
+          viewBox="0 0 16 16"
+        >
+          <path
+            d="M10.24 1.6H3.41v12.8h10.24V4.8h-3.41V1.6zM11.47 0l3.89 3.72V16H1.71V0h9.76z"
+          />
+          <path
+            d="M0 6.4h11.95v6.4H0z"
+          />
+          <path
+            className="c8"
+            d="M2.74 11.38c.83 0 1.5-.55 1.55-1.26h-.8a.77.77 0 01-.77.57c-.57 0-.94-.46-.94-1.17s.37-1.16.94-1.16c.35 0 .62.16.76.5h.8c-.08-.67-.73-1.2-1.54-1.2-1.1 0-1.77.82-1.77 1.86s.66 1.86 1.77 1.86zm3.42.01c.9 0 1.44-.46 1.44-1.13 0-.63-.43-.89-1.28-1.1-.58-.15-.83-.22-.83-.47 0-.21.18-.37.55-.37.41 0 .67.2.71.46h.77c-.07-.76-.74-1.11-1.46-1.11-.86 0-1.35.47-1.35 1.06 0 .54.28.84 1.24 1.1.53.13.87.19.87.49 0 .27-.24.41-.63.41s-.76-.15-.82-.52H4.6c.04.71.62 1.18 1.57 1.18zm3.88-.09l1.1-3.55h-.8l-.85 2.96-.84-2.96h-.82l1.1 3.55h1.11z"
           />
         </svg>
       </div>
@@ -5768,7 +6036,7 @@ exports[`Storyshots Atoms | Icon Available icons 1`] = `
             d="M10,20 C4.4771525,20 0,15.5228475 0,10 C0,4.4771525 4.4771525,0 10,0 C15.5228475,0 20,4.4771525 20,10 C20,15.5228475 15.5228475,20 10,20 Z"
           />
           <polygon
-            className="c8"
+            className="c9"
             points="11 8 11 16 9 16 9 8 11 8 11 4 11 6 9 6 9 4 11 4"
           />
         </svg>
@@ -6085,6 +6353,39 @@ exports[`Storyshots Atoms | Icon Available icons 1`] = `
     <div
       className="c2"
     >
+      NoFee
+    </div>
+    <div>
+      <div
+        style={
+          Object {
+            "display": "inline-block",
+            "outline": "1px dashed #bbb",
+          }
+        }
+      >
+        <svg
+          aria-hidden="true"
+          className="c3"
+          focusable="false"
+          preserveAspectRatio="xMidYMid meet"
+          role="presentation"
+          viewBox="0 0 16 16"
+        >
+          <path
+            d="M8 0c4.418278 0 8 3.581722 8 8s-3.581722 8-8 8-8-3.581722-8-8 3.581722-8 8-8zm0 1.33333333c-1.60080509 0-3.06983091.56421413-4.21906468 1.50462961l1.82854039 1.82870373-.94280904.94280904-1.82870373-1.82854039C1.89754746 4.93016909 1.33333333 6.39919491 1.33333333 8c0 3.6818983 2.98476834 6.6666667 6.66666667 6.6666667 1.60080509 0 3.0698309-.5642142 4.2190647-1.5046296l-1.8285404-1.8287038.942809-.942809 1.8287038 1.8285404C14.1024525 11.0698309 14.6666667 9.60080509 14.6666667 8c0-3.68189833-2.9847684-6.66666667-6.6666667-6.66666667zm.496 2.01333334v.928c1.10933333.18133333 2.0053333.88533333 2.1333333 2.048H9.40266667c-.128-.45866667-.46933334-.768-.90666667-.90666667v1.99466667C10.064 7.83733333 10.8 8.38133333 10.8 9.576c0 1.2586667-.87466667 2.1226667-2.304 2.24v.9173333h-.91733333v-.928c-1.42933334-.16-2.35733334-.9706666-2.44266667-2.25066663h1.248c.11733333.65066663.608 1.00266663 1.19466667 1.13066663V8.41333333c-1.632-.448-2.208-1.03466666-2.208-2.06933333 0-1.13066667.84266666-1.984 2.208-2.10133333v-.896H8.496zm0 5.32266666V10.728c.62933333-.096 1.06666667-.4586667 1.06666667-1.04533333C9.56266667 9.128 9.168 8.872 8.496 8.66933333zm-.91733333-3.328c-.61866667.08533334-.97066667.448-.97066667.928 0 .45866667.30933333.68266667.97066667.896z"
+          />
+        </svg>
+      </div>
+    </div>
+  </div>
+  <div
+    className="c1"
+    direction="row"
+  >
+    <div
+      className="c2"
+    >
       Other
     </div>
     <div>
@@ -6227,6 +6528,44 @@ exports[`Storyshots Atoms | Icon Available icons 1`] = `
     <div
       className="c2"
     >
+      PlusThin
+    </div>
+    <div>
+      <div
+        style={
+          Object {
+            "display": "inline-block",
+            "outline": "1px dashed #bbb",
+          }
+        }
+      >
+        <svg
+          aria-hidden="true"
+          className="c3"
+          focusable="false"
+          preserveAspectRatio="xMidYMid meet"
+          role="presentation"
+          viewBox="0 0 35 35"
+        >
+          <path
+            d="M16.7618.1432h3v35.8736h-3z"
+            fillRule="evenodd"
+          />
+          <path
+            d="M35.2986 16.08v3H.425v-3z"
+            fillRule="evenodd"
+          />
+        </svg>
+      </div>
+    </div>
+  </div>
+  <div
+    className="c1"
+    direction="row"
+  >
+    <div
+      className="c2"
+    >
       PlusWithCircle
     </div>
     <div>
@@ -6323,7 +6662,7 @@ exports[`Storyshots Atoms | Icon Available icons 1`] = `
             transform="translate(1 1)"
           >
             <circle
-              className="c9"
+              className="c10"
               cx="11"
               cy="11"
               fill="none"
@@ -6509,6 +6848,39 @@ exports[`Storyshots Atoms | Icon Available icons 1`] = `
     <div
       className="c2"
     >
+      Shapes
+    </div>
+    <div>
+      <div
+        style={
+          Object {
+            "display": "inline-block",
+            "outline": "1px dashed #bbb",
+          }
+        }
+      >
+        <svg
+          aria-hidden="true"
+          className="c3"
+          focusable="false"
+          preserveAspectRatio="xMidYMid meet"
+          role="presentation"
+          viewBox="0 0 16 16"
+        >
+          <path
+            d="M16 8.33333333V16H8.33333333V8.33333333H16zm-12.16666667 0L7.66666667 16H0l3.83333333-7.66666667zM14.6666667 9.66666667H9.66666667v5.00000003h5.00000003V9.66666667zM3.83333333 11.3143333L2.157 14.6666667h3.35233333l-1.676-3.3523334zm0-11.3143333c2.11709154 0 3.83333334 1.71624179 3.83333334 3.83333333 0 2.11709154-1.7162418 3.83333334-3.83333334 3.83333334C1.71624179 7.66666667 0 5.95042487 0 3.83333333 0 1.71624179 1.71624179 0 3.83333333 0zm8.33333337 0L16 2.64876819l-1.5801565 5.01789848H9.91348987L8.33333333 2.64876819 12.1666667 0zM3.83333333 1.33333333c-1.38071187 0-2.5 1.11928813-2.5 2.5 0 1.38071188 1.11928813 2.5 2.5 2.5 1.38071188 0 2.5-1.11928812 2.5-2.5 0-1.38071187-1.11928812-2.5-2.5-2.5zm8.33333337.287l-2.26633337 1.566.99099997 3.147h2.5503334l.991-3.147-2.266-1.566z"
+          />
+        </svg>
+      </div>
+    </div>
+  </div>
+  <div
+    className="c1"
+    direction="row"
+  >
+    <div
+      className="c2"
+    >
       SharevilleLogo
     </div>
     <div>
@@ -6680,7 +7052,7 @@ exports[`Storyshots Atoms | Icon Available icons 1`] = `
       >
         <svg
           aria-hidden="true"
-          className="c10"
+          className="c11"
           focusable="false"
           preserveAspectRatio="xMidYMid meet"
           role="presentation"
@@ -6719,7 +7091,7 @@ exports[`Storyshots Atoms | Icon Available icons 1`] = `
       >
         <svg
           aria-hidden="true"
-          className="c11"
+          className="c12"
           focusable="false"
           preserveAspectRatio="xMidYMid meet"
           role="presentation"
@@ -6763,7 +7135,7 @@ exports[`Storyshots Atoms | Icon Available icons 1`] = `
       >
         <svg
           aria-hidden="true"
-          className="c12"
+          className="c13"
           focusable="false"
           preserveAspectRatio="xMidYMid meet"
           role="presentation"
@@ -6802,7 +7174,7 @@ exports[`Storyshots Atoms | Icon Available icons 1`] = `
       >
         <svg
           aria-hidden="true"
-          className="c13"
+          className="c14"
           focusable="false"
           preserveAspectRatio="xMidYMid meet"
           role="presentation"
@@ -6863,6 +7235,42 @@ exports[`Storyshots Atoms | Icon Available icons 1`] = `
     <div
       className="c2"
     >
+      SortArrow
+    </div>
+    <div>
+      <div
+        style={
+          Object {
+            "display": "inline-block",
+            "outline": "1px dashed #bbb",
+          }
+        }
+      >
+        <svg
+          aria-hidden="true"
+          className="c3 c15"
+          direction="ascending"
+          focusable="false"
+          preserveAspectRatio="xMidYMid meet"
+          role="presentation"
+          viewBox="0 0 8 12"
+        >
+          <path
+            d="M9 2v8.4l1.66-1.62L12 10.1 8 14l-4-3.9 1.34-1.32L7 10.4V2h2z"
+            fillRule="evenodd"
+            transform="matrix(1 0 0 -1 -4 14)"
+          />
+        </svg>
+      </div>
+    </div>
+  </div>
+  <div
+    className="c1"
+    direction="row"
+  >
+    <div
+      className="c2"
+    >
       Star
     </div>
     <div>
@@ -6883,7 +7291,7 @@ exports[`Storyshots Atoms | Icon Available icons 1`] = `
           viewBox="0 0 24 24"
         >
           <path
-            className="c14"
+            className="c16"
             d="M12,1.64454792 L9.3866076,9.8333333 L1.47495162,9.8333333 L7.76482663,14.6514827 L5.15238966,22.6910996 L12,17.7166602 L18.8476103,22.6910996 L16.2351733,14.6514827 L22.5250484,9.8333333 L14.6133924,9.8333333 L12,1.64454792 Z"
             strokeWidth="1"
           />
@@ -6918,7 +7326,7 @@ exports[`Storyshots Atoms | Icon Available icons 1`] = `
           viewBox="0 0 24 24"
         >
           <path
-            className="c15"
+            className="c17"
             d="M12,3.28909585 L9.7518819,10.3333333 L2.94990324,10.3333333 L8.34965326,14.4696321 L6.10344598,21.3821992 L12,17.0986537 L17.896554,21.3821992 L15.6503467,14.4696321 L21.0500967,10.3333333 L14.2481181,10.3333333 L12,3.28909585 Z"
             strokeWidth="2"
           />
@@ -7013,7 +7421,7 @@ exports[`Storyshots Atoms | Icon Available icons 1`] = `
       >
         <svg
           aria-hidden="true"
-          className="c3 c16"
+          className="c3 c18"
           direction="up"
           focusable="false"
           preserveAspectRatio="xMidYMid meet"
@@ -7022,6 +7430,40 @@ exports[`Storyshots Atoms | Icon Available icons 1`] = `
         >
           <path
             d="M9.179 1l-6.21 6.222h12.873v1.556L2.97 8.777 9.18 15H6.984L0 8l6.984-7h2.195z"
+          />
+        </svg>
+      </div>
+    </div>
+  </div>
+  <div
+    className="c1"
+    direction="row"
+  >
+    <div
+      className="c2"
+    >
+      ThinChevron
+    </div>
+    <div>
+      <div
+        style={
+          Object {
+            "display": "inline-block",
+            "outline": "1px dashed #bbb",
+          }
+        }
+      >
+        <svg
+          aria-hidden="true"
+          className="c3 c19"
+          direction="down"
+          focusable="false"
+          preserveAspectRatio="xMidYMid meet"
+          role="presentation"
+          viewBox="0 0 16 16"
+        >
+          <polygon
+            points="14.620 3.580, 16.000 5.020, 8.000 12.730, 0.000 5.030, 1.400 3.580, 8.000 9.96"
           />
         </svg>
       </div>
@@ -7158,78 +7600,8 @@ exports[`Storyshots Atoms | Icon Available icons 1`] = `
             points="10 1 20 19 0 19"
           />
           <polygon
-            className="c17"
+            className="c20"
             points="11 14 11 16 9 16 9 14 11 14 11 8 11 13 9 13 9 8 11 8"
-          />
-        </svg>
-      </div>
-    </div>
-  </div>
-  <div
-    className="c1"
-    direction="row"
-  >
-    <div
-      className="c2"
-    >
-      ThinChevron
-    </div>
-    <div>
-      <div
-        style={
-          Object {
-            "display": "inline-block",
-            "outline": "1px dashed #bbb",
-          }
-        }
-      >
-        <svg
-          aria-hidden="true"
-          className="c3 c18"
-          direction="down"
-          focusable="false"
-          preserveAspectRatio="xMidYMid meet"
-          role="presentation"
-          viewBox="0 0 16 16"
-        >
-          <polygon
-            points="14.620 3.580, 16.000 5.020, 8.000 12.730, 0.000 5.030, 1.400 3.580, 8.000 9.96"
-          />
-        </svg>
-      </div>
-    </div>
-  </div>
-  <div
-    className="c1"
-    direction="row"
-  >
-    <div
-      className="c2"
-    >
-      SortArrow
-    </div>
-    <div>
-      <div
-        style={
-          Object {
-            "display": "inline-block",
-            "outline": "1px dashed #bbb",
-          }
-        }
-      >
-        <svg
-          aria-hidden="true"
-          className="c3 c19"
-          direction="ascending"
-          focusable="false"
-          preserveAspectRatio="xMidYMid meet"
-          role="presentation"
-          viewBox="0 0 8 12"
-        >
-          <path
-            d="M9 2v8.4l1.66-1.62L12 10.1 8 14l-4-3.9 1.34-1.32L7 10.4V2h2z"
-            fillRule="evenodd"
-            transform="matrix(1 0 0 -1 -4 14)"
           />
         </svg>
       </div>

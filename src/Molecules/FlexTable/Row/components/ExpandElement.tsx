@@ -1,12 +1,16 @@
 import React from 'react';
 import FlexTable from '../..';
-import { ICON_COLUMN_DEFAULT_FLEX_PROPS, COLUMN_ID_EXPAND } from '../../shared/constants';
+import { ExpandAreaProps } from '../Row.types';
 import { ExpandCell } from '../../Cell/ExpandCell';
-import { ExpandProps } from '../Row.types';
+import { ICON_COLUMN_DEFAULT_FLEX_PROPS, COLUMN_ID_EXPAND } from '../../shared/constants';
 
 export const ExpandElement: React.FC<
-  ExpandProps & { isContent: boolean; disabled?: boolean; setExpand: (expanded: boolean) => void }
-> = ({ isContent, expanded = false, onExpandToggle, setExpand, disabled = false }) => {
+  ExpandAreaProps & {
+    isContent: boolean;
+    disabled?: boolean;
+    setExpand: (expanded: boolean) => void;
+  }
+> = ({ isContent, expanded = false, onExpandToggle, setExpand, disabled }) => {
   if (!isContent) {
     return (
       <FlexTable.Header

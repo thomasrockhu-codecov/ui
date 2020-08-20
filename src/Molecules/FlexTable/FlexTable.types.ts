@@ -4,19 +4,22 @@ import { HeaderComponent } from './Header/Header.types';
 import { FooterComponent } from './Footer/Footer.types';
 import { constants } from './shared';
 import { CellComponent, ExpandCellComponent } from './Cell/Cell.types';
-import { Density, FontSize } from './shared/shared.types';
+import { Props as FlexTableProviderProps } from './shared/FlexTableProvider/FlexTableProvider.types';
 import { CellInlineContainerComponent } from './shared/CellInlineContainer/CellInlineContainer.types';
+import { ExpandItemComponent } from './Row/components/ExpandItems/ExpandItems.types';
 
 type HtmlProps = {} & React.HTMLAttributes<HTMLDivElement>;
 
 export type Props = {
   className?: string;
-  density?: Density;
-  fontSize?: FontSize;
-  stickyHeader?: boolean;
+  /**
+   * Will render a title above the table
+   */
   title?: ReactNode;
-  expandable?: boolean;
-} & HtmlProps;
+} & Partial<FlexTableProviderProps> &
+  Omit<HtmlProps, 'title'>;
+
+export type FlexTableComponent = React.FC<Props>;
 
 export type FlexTableComponents = {
   Header: HeaderComponent;
@@ -26,6 +29,7 @@ export type FlexTableComponents = {
   Row: RowComponent;
   Cell: CellComponent;
   ExpandCell: ExpandCellComponent;
+  ExpandItem: ExpandItemComponent;
   CellInlineContainer: CellInlineContainerComponent;
   CONSTANTS: typeof constants;
 };

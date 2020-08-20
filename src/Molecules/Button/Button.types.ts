@@ -1,5 +1,4 @@
 import React from 'react';
-import { LinkProps as ReactRouterDomLinkProps } from 'react-router-dom';
 import { Theme } from '../../theme/theme.types';
 
 type Colors = Theme['color'];
@@ -22,9 +21,11 @@ export type ButtonProps = {
   onClick?: (e: React.MouseEvent) => void;
   /** @default button */
   type?: 'button' | 'reset' | 'submit';
-  to?: ReactRouterDomLinkProps['to'];
+  to?: any; // TODO define this, used to be LinkProps.to from 'react-router-dom' types.
   external?: boolean;
+  cms?: boolean;
   rel?: string;
+  target?: '_blank' | '_self';
   colorFn?: ColorFn;
   id?: string;
   as?: any;
@@ -35,9 +36,11 @@ export type ButtonProps = {
   'onMouseEnter' | 'onMouseLeave' | 'onMouseOver'
 >;
 
-type Omit<T, K> = Pick<T, Exclude<keyof T, K>>;
-type ForceRequired<T, K extends keyof T> = Omit<T, K> & Required<Pick<T, K>>;
-
-export type InnerProps = ForceRequired<ButtonProps, 'size'>;
+export type InnerProps = Omit<ButtonProps, 'variant' | 'size' | 'fullWidth' | 'colorFn'> & {
+  $variant?: ButtonProps['variant'];
+  $fullWidth?: ButtonProps['fullWidth'];
+  $size: Exclude<ButtonProps['size'], undefined>;
+  $colorFn?: ColorFn;
+};
 
 export type ButtonComponent = React.FC<ButtonProps>;

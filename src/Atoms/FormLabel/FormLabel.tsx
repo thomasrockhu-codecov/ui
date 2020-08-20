@@ -11,9 +11,16 @@ const StyledLabel = styled.label`
   cursor: pointer;
 `;
 
-export const FormLabel: React.FC<Props> = ({ as, children, className, forId, hideLabel }) => (
+export const FormLabel: React.FC<Props> = ({
+  as,
+  children,
+  className,
+  forId,
+  hideLabel,
+  disabled,
+}) => (
   <StyledLabel as={as} className={className} htmlFor={forId} hidden={Boolean(hideLabel)}>
-    <Typography type="secondary" color={t => t.color.label}>
+    <Typography type="secondary" color={t => (disabled ? t.color.disabled : t.color.label)}>
       {children}
     </Typography>
   </StyledLabel>

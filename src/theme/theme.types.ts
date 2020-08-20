@@ -1,4 +1,4 @@
-type MediaQuery = string;
+export type MediaQuery = string;
 /** Number of pixels */
 export type ThemeConfig = {
   a11yColors?: boolean;
@@ -127,6 +127,8 @@ export type ThemeColors<Version extends ThemeColorsVersion> = {
   /** gray6 */
   divider: RawColor['gray6'];
   /** gray0 */
+  separator: RawColor['gray0'];
+  /** gray0 */
   backgroundDark: RawColor['gray0'];
   /** gray3 */
   disabledText: RawColor['gray3'];
@@ -173,7 +175,7 @@ export type ThemeColors<Version extends ThemeColorsVersion> = {
   /** gray1 */
   inputBorderHover: RawColor['gray1'];
   /** white */
-  tableHeaderBackground: RawColor['white'];
+  tableRowBackground: RawColor['white'];
   /** gray7 */
   tableRowHover: RawColor['gray7'];
   /** negative */
@@ -208,18 +210,16 @@ export type ThemeColors<Version extends ThemeColorsVersion> = {
   menuAccent4: RawColor['brandPink'];
   /** brandBlue */
   menuAccent5: RawColor['brandBlue'];
-  /** brandGreen */
-  sliderLeftColor: RawColor['brandGreen'];
-  /** gray6 */
-  sliderRightColor: RawColor['gray6'];
-  /** white */
-  sliderThumbColor: RawColor['white'];
-  /** gray4 */
-  sliderThumbBackground: RawColor['gray4'];
-  /** gray4 */
-  sliderThumbBorder: RawColor['gray4'];
   /** cta */
-  sliderThumbActive: RawColor['cta'];
+  sliderColor: RawColor['cta'];
+  /** brandGreen */
+  sliderSecondary: RawColor['brandGreen'];
+  /** gray6 */
+  sliderDisabled: RawColor['gray6'];
+  /** gray6 */
+  sliderBackgroundColor: RawColor['gray6'];
+  /** white */
+  sliderThumbBackground: RawColor['white'];
   /** gray6 */
   dateAvatarBackground1: RawColor['gray6'];
   /** gray7 */

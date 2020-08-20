@@ -18,6 +18,7 @@ export type Props = {
   required?: boolean;
   /** @deprecated use required */
   showRequired?: boolean;
+  disabled?: boolean;
 
   /**
    * You need to specify width

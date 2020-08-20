@@ -18,6 +18,7 @@ import { ChevronDown } from './components/ChevronDown';
 import { ChevronLeft } from './components/ChevronLeft';
 import { ChevronRight } from './components/ChevronRight';
 import { ChevronUp } from './components/ChevronUp';
+import { Clicks } from './components/Clicks';
 import { Cogwheel } from './components/Cogwheel';
 import { Commodities } from './components/Commodities';
 import { Communication } from './components/Communication';
@@ -29,6 +30,7 @@ import { Cross } from './components/Cross';
 import { CrossCircle } from './components/CrossCircle';
 import { CrossMedium } from './components/CrossMedium';
 import { CrossThin } from './components/CrossThin';
+import { Csv } from './components/Csv';
 import { DiagonalWithCircle } from './components/DiagonalWithCircle';
 import { DirectionDown } from './components/DirectionDown';
 import { DirectionUp } from './components/DirectionUp';
@@ -61,10 +63,12 @@ import { Minimize } from './components/Minimize';
 import { Minus } from './components/Minus';
 import { Money } from './components/Money';
 import { Move } from './components/Move';
+import { NoFee } from './components/NoFee';
 import { Other } from './components/Other';
 import { Pen } from './components/Pen';
 import { Pending } from './components/Pending';
 import { Plus } from './components/Plus';
+import { PlusThin } from './components/PlusThin';
 import { PlusWithCircle } from './components/PlusWithCircle';
 import { Printer } from './components/Printer';
 import { Questionmark } from './components/Questionmark';
@@ -72,23 +76,24 @@ import { Raising } from './components/Raising';
 import { RealEstate } from './components/RealEstate';
 import { Rtmt } from './components/Rtmt';
 import { Search } from './components/Search';
+import { Shapes } from './components/Shapes';
 import { SharevilleLogo } from './components/SharevilleLogo';
 import { SocialFacebook } from './components/SocialFacebook';
 import { SocialInstagram } from './components/SocialInstagram';
 import { SocialTwitter } from './components/SocialTwitter';
 import { SocialYouTube } from './components/SocialYouTube';
 import { SolidCircle } from './components/Circle';
+import { SortArrow } from './components/SortArrow';
 import { Star } from './components/Star';
 import { Star24 } from './components/Star24';
 import { StarOutline } from './components/StarOutline';
 import { Technology } from './components/Technology';
 import { ThinArrow } from './components/ThinArrow';
+import { ThinChevron } from './components/ThinChevron';
 import { ThreeDots } from './components/ThreeDots';
 import { Trash } from './components/Trash';
 import { Utilities } from './components/Utilities';
 import { WarningTriangle } from './components/WarningTriangle';
-import { ThinChevron } from './components/ThinChevron';
-import { SortArrow } from './components/SortArrow';
 
 export default {
   AccountNumbers,
@@ -111,6 +116,7 @@ export default {
   ChevronLeft,
   ChevronRight,
   ChevronUp,
+  Clicks,
   Cogwheel,
   Commodities,
   Communication,
@@ -122,6 +128,7 @@ export default {
   CrossCircle,
   CrossMedium,
   CrossThin,
+  Csv,
   DiagonalWithCircle,
   DirectionDown,
   DirectionUp,
@@ -154,10 +161,12 @@ export default {
   Minus,
   Money,
   Move,
+  NoFee,
   Other,
   Pen,
   Pending,
   Plus,
+  PlusThin,
   PlusWithCircle,
   Printer,
   Questionmark,
@@ -165,21 +174,22 @@ export default {
   RealEstate,
   Rtmt,
   Search,
+  Shapes,
   SharevilleLogo,
   SocialFacebook,
   SocialInstagram,
   SocialTwitter,
   SocialYouTube,
   SolidCircle,
+  SortArrow,
   Star,
   Star24,
   StarOutline,
   Technology,
   ThinArrow,
+  ThinChevron,
   ThreeDots,
   Trash,
   Utilities,
   WarningTriangle,
-  ThinChevron,
-  SortArrow,
 };

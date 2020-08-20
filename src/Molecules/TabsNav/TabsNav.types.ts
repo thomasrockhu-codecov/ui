@@ -4,6 +4,7 @@ export type ItemProps = {
   onTitleClick?: React.MouseEventHandler;
   exact?: boolean;
   className?: string;
+  active?: boolean;
 };
 
 export type ContainerProps = {

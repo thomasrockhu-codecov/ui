@@ -1,7 +1,8 @@
 import React from 'react';
 import { action } from '@storybook/addon-actions';
-import { BrowserRouter } from 'react-router-dom';
+import { Route } from 'react-router';
 import { Link, Typography } from '../..';
+import { Provider } from '../../common/Links/ReactRouterLinkHelper';
 
 export default {
   title: 'Molecules | Link',
@@ -10,14 +11,28 @@ export default {
   },
 };
 
+const View = ({ location }: any) => {
+  return (
+    <pre>
+      <code>{JSON.stringify(location, null, 2)}</code>
+    </pre>
+  );
+};
+
 export const defaultUsage = () => (
-  <BrowserRouter>
+  <Provider>
     <Typography type="secondary" weight="bold">
-      <Link to="startpage" onClick={action('clicked')}>
-        Link
+      <Link to="/route1" onClick={action('clicked')}>
+        Link1
       </Link>
     </Typography>
-  </BrowserRouter>
+    <Typography type="secondary" weight="bold">
+      <Link to="/route2" onClick={action('clicked')}>
+        Link2
+      </Link>
+    </Typography>
+    <Route path="/:id" component={View} />
+  </Provider>
 );
 
 defaultUsage.story = {
@@ -25,13 +40,19 @@ defaultUsage.story = {
 };
 
 export const withTypographyPrimaryAsType = () => (
-  <BrowserRouter>
+  <Provider>
     <Typography type="primary" weight="bold">
-      <Link to="startpage" onClick={action('clicked')}>
-        Link
+      <Link to="/route1" onClick={action('clicked')}>
+        Link1
       </Link>
     </Typography>
-  </BrowserRouter>
+    <Typography type="primary" weight="bold">
+      <Link to="/route2" onClick={action('clicked')}>
+        Link2
+      </Link>
+    </Typography>
+    <Route path="/:id" component={View} />
+  </Provider>
 );
 
 withTypographyPrimaryAsType.story = {
@@ -39,13 +60,13 @@ withTypographyPrimaryAsType.story = {
 };
 
 export const externalLinkWithItsDefaultValues = () => (
-  <BrowserRouter>
+  <Provider>
     <Typography type="secondary" weight="bold">
-      <Link to="http://www.google.com" onClick={action('clicked')} external>
-        Link
+      <Link to="https://example.com" onClick={action('clicked')} external>
+        Example
       </Link>
     </Typography>
-  </BrowserRouter>
+  </Provider>
 );
 
 externalLinkWithItsDefaultValues.story = {
@@ -53,13 +74,13 @@ externalLinkWithItsDefaultValues.story = {
 };
 
 export const cmsLinkWithItsDefaultValues = () => (
-  <BrowserRouter>
+  <Provider>
     <Typography type="secondary" weight="bold">
-      <Link to="http://www.google.com" onClick={action('clicked')} cms>
-        Link
+      <Link to="https://example.com" onClick={action('clicked')} cms>
+        Example CMS
       </Link>
     </Typography>
-  </BrowserRouter>
+  </Provider>
 );
 
 cmsLinkWithItsDefaultValues.story = {
@@ -67,19 +88,19 @@ cmsLinkWithItsDefaultValues.story = {
 };
 
 export const externalLinkWithRelAndTargetOverriden = () => (
-  <BrowserRouter>
+  <Provider>
     <Typography type="secondary" weight="bold">
       <Link
-        to="http://www.google.com"
+        to="https://example.com"
+        onClick={action('clicked')}
         rel="nofollow"
         target="_self"
-        onClick={action('clicked')}
         external
       >
-        Link
+        Example CMS
       </Link>
     </Typography>
-  </BrowserRouter>
+  </Provider>
 );
 
 externalLinkWithRelAndTargetOverriden.story = {
@@ -87,13 +108,13 @@ externalLinkWithRelAndTargetOverriden.story = {
 };
 
 export const withDisabledPropResultsInADisabledButtonLookingLikeALink = () => (
-  <BrowserRouter>
+  <Provider>
     <Typography type="secondary" weight="bold">
       <Link onClick={action('clicked')} disabled>
         Link
       </Link>
     </Typography>
-  </BrowserRouter>
+  </Provider>
 );
 
 withDisabledPropResultsInADisabledButtonLookingLikeALink.story = {
@@ -101,11 +122,11 @@ withDisabledPropResultsInADisabledButtonLookingLikeALink.story = {
 };
 
 export const withoutToPropResultsInAButtonLookingLikeALink = () => (
-  <BrowserRouter>
+  <Provider>
     <Typography type="secondary" weight="bold">
       <Link onClick={action('clicked')}>Link</Link>
     </Typography>
-  </BrowserRouter>
+  </Provider>
 );
 
 withoutToPropResultsInAButtonLookingLikeALink.story = {
@@ -113,13 +134,13 @@ withoutToPropResultsInAButtonLookingLikeALink.story = {
 };
 
 export const withBlackColor = () => (
-  <BrowserRouter>
+  <Provider>
     <Typography type="primary">
-      <Link color="black" to="http://www.google.com" external onClick={action('clicked')}>
+      <Link color="black" to="https://example.com" external onClick={action('clicked')}>
         Link
       </Link>
     </Typography>
-  </BrowserRouter>
+  </Provider>
 );
 
 withBlackColor.story = {
@@ -127,13 +148,13 @@ withBlackColor.story = {
 };
 
 export const withInheritedColor = () => (
-  <BrowserRouter>
+  <Provider>
     <Typography type="primary" color={t => t.color.generationSavingsTimelineColor2}>
-      <Link color="inherit" to="http://www.google.com" external onClick={action('clicked')}>
+      <Link color="inherit" to="https://example.com" external onClick={action('clicked')}>
         Link
       </Link>
     </Typography>
-  </BrowserRouter>
+  </Provider>
 );
 
 withInheritedColor.story = {

@@ -1,3 +1,5 @@
+export type Variant = 'normal' | 'quiet';
+
 export type Props = {
   className?: string;
   id?: string;
@@ -19,6 +21,8 @@ export type Props = {
   placeholder?: string;
   fullWidth?: boolean;
   size?: 's';
+  /** @default normal */
+  variant?: Variant;
   /**
    * You need to specify width
    * (better in pixels), because

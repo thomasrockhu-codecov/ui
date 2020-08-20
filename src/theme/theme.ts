@@ -152,10 +152,23 @@ const createColors = (type: ThemeColorsVersion): ThemeColors<typeof type> => {
     positive: a11yColors ? rawColor.a11yPositive : rawColor.positive,
     sell: a11yColors ? rawColor.a11yNegative : rawColor.negative,
     sellActive: a11yColors ? rawColor.a11yNegativePressed : rawColor.negativePressed,
-    shadowCard: Color(rawColor.black).alpha(0.03).rgb().string(),
-    shadowModal: Color(rawColor.black).alpha(0.16).rgb().string(),
-    shadowInput: Color(rawColor.black).alpha(0.03).rgb().string(),
-    shadowSwitch: Color(rawColor.black).alpha(0.05).rgb().string(),
+    separator: rawColor.gray0,
+    shadowCard: Color(rawColor.black)
+      .alpha(0.03)
+      .rgb()
+      .string(),
+    shadowModal: Color(rawColor.black)
+      .alpha(0.16)
+      .rgb()
+      .string(),
+    shadowInput: Color(rawColor.black)
+      .alpha(0.03)
+      .rgb()
+      .string(),
+    shadowSwitch: Color(rawColor.black)
+      .alpha(0.05)
+      .rgb()
+      .string(),
     shareville: rawColor.complementaryGreen1,
     skeleton: rawColor.gray6,
     spinnerBlack: rawColor.black,
@@ -171,7 +184,7 @@ const createColors = (type: ThemeColorsVersion): ThemeColors<typeof type> => {
     warning: a11yColors ? rawColor.a11yIndex : rawColor.index,
     inputBorder: rawColor.gray4,
     inputBorderHover: rawColor.gray1,
-    tableHeaderBackground: rawColor.white,
+    tableRowBackground: rawColor.white,
     tableRowHover: rawColor.gray7,
     flagBorder: rawColor.gray6,
     inputBorderError: rawColor.negative,
@@ -183,12 +196,11 @@ const createColors = (type: ThemeColorsVersion): ThemeColors<typeof type> => {
     orderDepthBackground: rawColor.gray6,
     orderDepthDarkBackground: rawColor.gray5,
     loanRatesGraphColor2: rawColor.complementaryBlue2,
-    sliderLeftColor: rawColor.brandGreen,
-    sliderRightColor: rawColor.gray6,
-    sliderThumbColor: rawColor.white,
-    sliderThumbBackground: rawColor.gray4,
-    sliderThumbBorder: rawColor.gray4,
-    sliderThumbActive: rawColor.cta,
+    sliderColor: rawColor.cta,
+    sliderSecondary: rawColor.brandGreen,
+    sliderDisabled: rawColor.gray6,
+    sliderThumbBackground: rawColor.white,
+    sliderBackgroundColor: rawColor.gray6,
     dateAvatarBackground1: rawColor.gray6,
     dateAvatarBackground2: rawColor.gray7,
     dateAvatarText1: rawColor.gray2,

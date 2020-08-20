@@ -21,6 +21,8 @@ const StyledBox = styled(Box)`
 
 const StyledUl = styled.ul`
   padding-left: 0;
+  margin-top: 0;
+  margin-bottom: 0;
 `;
 
 const StyledContainer = styled(Flexbox)`
@@ -88,6 +90,13 @@ const StyledListItem = styled(ListItem).withConfig({
   }
 `;
 
+const dateTimeOptions = {
+  year: 'numeric',
+  month: 'short',
+  day: 'numeric',
+  weekday: 'short',
+};
+
 const Timeline: React.FC<Props> = ({ steps, colorSuccess, colorNext }) => {
   let previousStatus: StepProps['status'];
   return (
@@ -113,7 +122,7 @@ const Timeline: React.FC<Props> = ({ steps, colorSuccess, colorNext }) => {
               <StyledFlexbox item container direction="row" alignItems="center">
                 <Flexbox item container direction="column">
                   <Typography type="tertiary" color={t => t.color.label}>
-                    <DateTime onlyDate value={date.toUTCString()} />
+                    <DateTime options={dateTimeOptions} value={date.toUTCString()} />
                   </Typography>
                   <Typography type="secondary">{text}</Typography>
                 </Flexbox>
