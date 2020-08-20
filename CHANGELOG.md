@@ -1,3 +1,11 @@
+## [3.13.3](https://github.com/nordnet/ui/compare/v3.13.2...v3.13.3) (2020-08-20)
+
+
+### Bug Fixes
+
+* 🐛 add separator color alias ([d3dc3ba](https://github.com/nordnet/ui/commit/d3dc3ba))
+* 🐛 remove unnecessary row ([14df489](https://github.com/nordnet/ui/commit/14df489))
+
 ## [3.13.2](https://github.com/nordnet/ui/compare/v3.13.1...v3.13.2) (2020-08-19)
 
 
