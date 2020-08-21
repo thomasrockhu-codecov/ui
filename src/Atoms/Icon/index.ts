@@ -8,6 +8,9 @@ import { Bank } from './components/Bank';
 import { BankDeposit } from './components/BankDeposit';
 import { BankID } from './components/BankID';
 import { Bell } from './components/Bell';
+import { BellActive } from './components/BellActive';
+import { BellInactive } from './components/BellInactive';
+import { BellPlain } from './components/BellPlain';
 import { Bolt } from './components/Bolt';
 import { BrowserWindow } from './components/BrowserWindow';
 import { Calendar } from './components/Calendar';
@@ -106,6 +109,9 @@ export default {
   BankDeposit,
   BankID,
   Bell,
+  BellActive,
+  BellInactive,
+  BellPlain,
   Bolt,
   BrowserWindow,
   Calendar,
