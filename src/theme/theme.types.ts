@@ -126,6 +126,8 @@ export type ThemeColors<Version extends ThemeColorsVersion> = {
   card: RawColor['white'];
   /** gray6 */
   divider: RawColor['gray6'];
+  /** gray4 */
+  emptyState: RawColor['gray4'];
   /** gray0 */
   separator: RawColor['gray0'];
   /** gray0 */
