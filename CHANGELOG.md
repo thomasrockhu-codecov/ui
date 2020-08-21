@@ -1,3 +1,10 @@
+## [3.17.1](https://github.com/nordnet/ui/compare/v3.17.0...v3.17.1) (2020-08-21)
+
+
+### Bug Fixes
+
+* 🐛 new color name for empty state ([6ae6a6d](https://github.com/nordnet/ui/commit/6ae6a6d))
+
 # [3.17.0](https://github.com/nordnet/ui/compare/v3.16.0...v3.17.0) (2020-08-21)
 
 
