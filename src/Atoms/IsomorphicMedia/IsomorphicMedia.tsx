@@ -17,8 +17,9 @@ const StyledDiv = styled.div<{ query: Props['query'] }>`
   }
 `;
 
-const useIsomorphicLayoutEffect =
-  typeof window !== 'undefined' ? React.useLayoutEffect : React.useEffect;
+const isServerSide = typeof window === 'undefined';
+
+const useIsomorphicLayoutEffect = !isServerSide ? React.useLayoutEffect : React.useEffect;
 
 const useIsomorphicMedia = (query: string | ((t: Theme) => string)) => {
   const theme = React.useContext(ThemeContext);
@@ -51,9 +52,9 @@ const useIsomorphicMedia = (query: string | ((t: Theme) => string)) => {
 const IsomorphicMedia: React.FunctionComponent<Props> = props => {
   const As = props.as || 'div';
   const matches = useIsomorphicMedia(props.query);
-  // If matches === null it means we are in SSR
-  // Show css fallback then
-  if (matches === null) return <StyledDiv {...props} />;
+  // matches === null implies SSR or first client render, also need isServerSide to verify SSR.
+  // Show css fallback in SSR
+  if (isServerSide && matches === null) return <StyledDiv {...props} />;
   return matches ? <As>{props.children}</As> : null;
 };
 
