@@ -1,6 +1,7 @@
 import React from 'react';
 import styled, { ThemeContext } from 'styled-components';
 import R from 'ramda';
+import useSSR from 'use-ssr';
 
 import { Props } from './IsomorphicMedia.types';
 import { Theme } from '../../theme/theme.types';
@@ -17,14 +18,13 @@ const StyledDiv = styled.div<{ query: Props['query'] }>`
   }
 `;
 
-const isServerSide = typeof window === 'undefined';
-
-const useIsomorphicLayoutEffect = !isServerSide ? React.useLayoutEffect : React.useEffect;
-
 const useIsomorphicMedia = (query: string | ((t: Theme) => string)) => {
   const theme = React.useContext(ThemeContext);
   const [matches, setMatches] = React.useState<boolean | null>(null);
   const mediaQuery = (typeof query === 'string' ? query : query(theme)).replace('@media ', '');
+
+  const { isServer } = useSSR();
+  const useIsomorphicLayoutEffect = !isServer ? React.useLayoutEffect : React.useEffect;
 
   // Effect won't run during SSR
   useIsomorphicLayoutEffect(() => {
@@ -50,11 +50,12 @@ const useIsomorphicMedia = (query: string | ((t: Theme) => string)) => {
 };
 
 const IsomorphicMedia: React.FunctionComponent<Props> = props => {
+  const { isServer } = useSSR();
   const As = props.as || 'div';
   const matches = useIsomorphicMedia(props.query);
-  // matches === null implies SSR or first client render, also need isServerSide to verify SSR.
+  // matches === null implies SSR or first client render, also need isServer to verify SSR.
   // Show css fallback in SSR
-  if (isServerSide && matches === null) return <StyledDiv {...props} />;
+  if (isServer && matches === null) return <StyledDiv {...props} />;
   return matches ? <As>{props.children}</As> : null;
 };
 
