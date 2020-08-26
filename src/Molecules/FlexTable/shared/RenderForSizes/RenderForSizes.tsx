@@ -6,7 +6,7 @@ import {
   GetScreenMedia,
   RenderForSizesComponent,
 } from './RenderForSizes.types';
-import { Media } from '../../../..';
+import IsomorphicMedia from '../../../../Atoms/IsomorphicMedia';
 
 export const getScreenMedia: GetScreenMedia = ({ xs, sm, md, lg, xl }) => {
   const screenMedia = [
@@ -67,7 +67,7 @@ export const RenderForSizes: RenderForSizesComponent = ({
 
         const as = (() => container) as React.FC;
 
-        return <Media key={size} query={t => getMediaQuery(t, size, nextSize)} as={as} />;
+        return <IsomorphicMedia key={size} query={t => getMediaQuery(t, size, nextSize)} as={as} />;
       })}
     </>
   );
