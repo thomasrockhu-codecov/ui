@@ -1,3 +1,10 @@
+## [3.17.2](https://github.com/nordnet/ui/compare/v3.17.1...v3.17.2) (2020-08-26)
+
+
+### Bug Fixes
+
+* 🐛 prevent unnecessary remounts on initial flextable render ([ff4dc41](https://github.com/nordnet/ui/commit/ff4dc41))
+
 ## [3.17.1](https://github.com/nordnet/ui/compare/v3.17.0...v3.17.1) (2020-08-21)
 
 
