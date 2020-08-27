@@ -569,6 +569,7 @@ exports[`Storyshots Atoms | FadedScroll With height of scrollable area being wha
   -webkit-flex-grow: 1;
   -ms-flex-positive: 1;
   flex-grow: 1;
+  width: 100%;
 }
 
 .c3 {
@@ -915,6 +916,7 @@ exports[`Storyshots Atoms | FadedScroll With mobile fade enabled 1`] = `
   -webkit-flex-grow: 1;
   -ms-flex-positive: 1;
   flex-grow: 1;
+  width: 100%;
   min-height: 0;
   -webkit-box-flex: 1;
   -webkit-flex-grow: 1;
