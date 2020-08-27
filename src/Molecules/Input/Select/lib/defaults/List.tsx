@@ -1,8 +1,7 @@
 import * as React from 'react';
 import styled from 'styled-components';
-import { List as UIList, DropdownBubble, Separator, Box } from '../../../../..';
+import { List as UIList, FadedScroll, DropdownBubble, Separator, Box } from '../../../../..';
 import { useMedia } from '../../../../../Atoms/Media';
-import FadedScroll from '../../../../../Atoms/FadedScroll';
 
 type ListProps = {
   listPosition?: string;
