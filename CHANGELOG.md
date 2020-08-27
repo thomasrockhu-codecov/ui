@@ -1,3 +1,11 @@
+## [3.17.3-beta.1](https://github.com/nordnet/ui/compare/v3.17.2...v3.17.3-beta.1@beta) (2020-08-27)
+
+
+### Bug Fixes
+
+* move import ([9f9d43e](https://github.com/nordnet/ui/commit/9f9d43e))
+* render without faded scroll for ie10+ ([7896c9d](https://github.com/nordnet/ui/commit/7896c9d))
+
 ## [3.17.2](https://github.com/nordnet/ui/compare/v3.17.1...v3.17.2) (2020-08-26)
 
 
