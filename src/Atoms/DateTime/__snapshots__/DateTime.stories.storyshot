@@ -10,6 +10,12 @@ exports[`Storyshots Atoms | DateTime Invalid value 1`] = `"-"`;
 
 exports[`Storyshots Atoms | DateTime Uses custom symbol for invalid value 1`] = `"X"`;
 
+exports[`Storyshots Atoms | DateTime With custom formatting options 1`] = `
+<time>
+  Thu, Nov 11, 1999
+</time>
+`;
+
 exports[`Storyshots Atoms | DateTime With date as ISO 8601 string 1`] = `
 <time>
   11/11/1999

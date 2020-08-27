@@ -338,6 +338,60 @@ export const small = () => (
   />
 );
 
+export const quiet = () => (
+  <Display
+    title={`Variant = "quiet"`}
+    items={[
+      {
+        component: <Input.Text variant="quiet" label="Label" placeholder="Placeholder" />,
+        title: 'Default',
+      },
+      {
+        component: (
+          <Input.Text variant="quiet" label="Label" width="100%" placeholder="Placeholder" />
+        ),
+        title: 'Full width',
+      },
+      {
+        component: <Input.Text variant="quiet" label="Label" width="100%" disabled value="0" />,
+        title: 'Disabled',
+      },
+      {
+        component: (
+          <Input.Text
+            variant="quiet"
+            label="Label"
+            placeholder="Placeholder"
+            error="Some error text that will wrap itself over couple of lines"
+          />
+        ),
+        title: 'Error',
+      },
+      {
+        component: <Input.Text variant="quiet" label="Label" placeholder="Placeholder" success />,
+        title: 'Success',
+      },
+      {
+        component: (
+          <Input.Text
+            variant="quiet"
+            label="Label"
+            placeholder="Placeholder"
+            leftAddon={<Icon.Bolt size={4} />}
+          />
+        ),
+        title: 'Left addon',
+      },
+      {
+        component: (
+          <Input.Text variant="quiet" label="Label" placeholder="Placeholder" rightAddon="%" />
+        ),
+        title: 'Right addon',
+      },
+    ]}
+  />
+);
+
 export const withLabelTooltip = () => (
   <Input.Text label="Label" labelTooltip="Tooltip content" placeholder="Placeholder" />
 );

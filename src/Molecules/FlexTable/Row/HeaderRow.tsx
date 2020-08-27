@@ -15,6 +15,7 @@ const StyledHeaderRow = styled(Row).withConfig({
   ${p =>
     p.sticky
       ? `
+        z-index: 1;
         position: sticky;
         top: 0;`
       : ''};

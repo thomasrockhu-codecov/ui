@@ -12,24 +12,38 @@ import {
 
 export type OnSort = (columnId: string, newSortOrder: SortOrder) => void;
 
-type Unsortable = {
+interface Sorting {
+  /**
+   * Add sortable arrow and button
+   * @default false
+   */
+  sortable?: boolean;
+  /**
+   * Sets a controlled sort state, sort states can be found under FlexTable.CONSTANTS
+   */
+  sortOrder?: SortOrder;
+  /**
+   * Sets the initial sort state for uncontrolled sorting
+   */
+  initialSortOrder?: SortOrder;
+  onSort?: OnSort;
+}
+
+interface Unsortable extends Sorting {
   sortable?: false;
   sortOrder?: undefined;
   initialSortOrder?: undefined;
   onSort?: undefined;
-};
-
-interface Sortable {
-  sortable: true;
-  onSort?: OnSort;
 }
 
-interface ControlledSort extends Sortable {
+interface ControlledSort extends Sorting {
+  sortable: true;
   sortOrder: SortOrder;
   initialSortOrder?: undefined;
 }
 
-interface UncontrolledSort extends Sortable {
+interface UncontrolledSort extends Sorting {
+  sortable: true;
   sortOrder?: undefined;
   initialSortOrder?: SortOrder;
 }
@@ -42,11 +56,24 @@ type RenderPropArguments = TextWrapperProps &
 type RenderFunc = (props: RenderPropArguments) => ReactNode;
 type Children = ReactNode | RenderFunc;
 
-type Props = { children?: Children; columnId: string } & FlexboxProps & SortedProps;
+type Props = {
+  children?: Children;
+  /**
+   * Set column id, used to share layout between header and cells in the column
+   */
+  columnId: string;
+} & FlexboxProps &
+  SortedProps;
 
 export type HeaderComponents = {
+  /**
+   * Wraps text in correct font size with truncation and tooltip
+   */
   TextWrapper: TextWrapperComponent;
   SortIcon: SortIconComponent;
+  /**
+   * Wraps the header with an accessible button so it's clickable anywhere to sort
+   */
   SortButton: SortButtonComponent;
 };
 

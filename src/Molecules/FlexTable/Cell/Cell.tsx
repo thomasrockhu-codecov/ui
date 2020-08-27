@@ -7,6 +7,7 @@ import { useColumnLayout } from '../shared/ColumnProvider';
 import { CellComponent, InnerCellComponent } from './Cell.types';
 import { TextWrapper } from './TextWrapper';
 import { useFlexTable } from '../shared/FlexTableProvider';
+import { RenderForSizes } from '../shared';
 
 const StyledFlexbox = styled(Flexbox)`
   overflow: hidden;
@@ -24,22 +25,38 @@ const InnerCell: InnerCellComponent = React.memo(
 );
 
 const Cell: CellComponent = ({ children, className, columnId }) => {
+  const {
+    fontSize: xsFontSize,
+    sm: smTable,
+    md: mdTable,
+    lg: lgTable,
+    xl: xlTable,
+  } = useFlexTable();
   const [columnLayout] = useColumnLayout(columnId);
-  const { fontSize } = useFlexTable();
 
   if (!R.prop('flexProps', columnLayout)) {
     return null;
   }
 
   return (
-    <InnerCell
-      className={className}
-      columnId={columnId}
-      flexProps={columnLayout.flexProps}
-      fontSize={fontSize}
-    >
-      {children}
-    </InnerCell>
+    <RenderForSizes
+      xs={{ fontSize: xsFontSize }}
+      sm={smTable}
+      md={mdTable}
+      lg={lgTable}
+      xl={xlTable}
+      Container={({ fontSize, children: component }) => (
+        <InnerCell
+          className={className}
+          columnId={columnId}
+          flexProps={columnLayout.flexProps}
+          fontSize={fontSize}
+        >
+          {component}
+        </InnerCell>
+      )}
+      Component={() => children}
+    />
   );
 };
 

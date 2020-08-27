@@ -46,12 +46,14 @@ import Link from './Molecules/Link';
 import LinkBuy from './Molecules/LinkBuy';
 import LinkSell from './Molecules/LinkSell';
 import ListWithTitles from './Molecules/ListWithTitles';
-import Number from './Molecules/Number';
 import Modal from './Molecules/Modal';
+import MultiStepProgress from './Molecules/MultiStepProgress';
+import Number from './Molecules/Number';
 import PageHeaderCard from './Molecules/PageHeaderCard';
 import ProgressBar from './Molecules/ProgressBar';
 import PageWrapper from './Molecules/PageWrapper';
 import Rating from './Molecules/Rating';
+import SegmentedControl from './Molecules/SegmentedControl';
 import Select from './Molecules/Select';
 import Slider from './Molecules/Slider';
 import Switch from './Molecules/Switch';
@@ -112,14 +114,16 @@ export {
   ListItem,
   ListWithTitles,
   Media,
-  Modal,
   Number,
+  MultiStepProgress,
+  Modal,
   PageHeaderCard,
   PageWrapper,
   Portal,
   Pill,
   ProgressBar,
   Rating,
+  SegmentedControl,
   /** @deprecated */ Select,
   Separator,
   Skeleton,

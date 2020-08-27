@@ -384,7 +384,7 @@ Array [
 }
 
 .c1 {
-  background: linear-gradient( to right,#3A913F 0% 50%,#EBEBE8 50% 100% );
+  background: linear-gradient( to right,#0046FF 0% 50%,#EBEBE8 50% 100% );
   height: 12px;
   max-width: 100%;
   width: 100%;
@@ -423,20 +423,20 @@ Array [
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
   background: #FFFFFF;
-  border: 4px solid #3A913F;
+  border: 4px solid #0046FF;
   cursor: -webkit-grab;
   cursor: -moz-grab;
   cursor: grab;
 }
 
 .c3:focus {
-  border: 4px solid hsl(123.39999999999998,42.9%,35.8%);
-  background: hsl(123.39999999999998,42.9%,35.8%);
+  border: 4px solid hsl(223.5,100%,45%);
+  background: hsl(223.5,100%,45%);
   border-radius: 50%;
 }
 
 .c3:active {
-  background: hsl(123.39999999999998,42.9%,35.8%);
+  background: hsl(223.5,100%,45%);
   height: 24px;
   width: 24px;
 }
@@ -452,7 +452,7 @@ Array [
         onClick={[Function]}
         style={
           Object {
-            "background": "linear-gradient(to right, #3A913F 100% , #EBEBE8 100%)",
+            "background": "linear-gradient(to right, #0046FF 100% , #EBEBE8 100%)",
           }
         }
       >
@@ -514,7 +514,7 @@ Array [
 }
 
 .c1 {
-  background: linear-gradient( to right,#009195 0% 50%,#EBEBE8 50% 100% );
+  background: linear-gradient( to right,#0046FF 0% 50%,#EBEBE8 50% 100% );
   height: 12px;
   max-width: 100%;
   width: 100%;
@@ -553,20 +553,20 @@ Array [
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
   background: #FFFFFF;
-  border: 4px solid #009195;
+  border: 4px solid #0046FF;
   cursor: -webkit-grab;
   cursor: -moz-grab;
   cursor: grab;
 }
 
 .c3:focus {
-  border: 4px solid hsl(181.60000000000002,100%,26.3%);
-  background: hsl(181.60000000000002,100%,26.3%);
+  border: 4px solid hsl(223.5,100%,45%);
+  background: hsl(223.5,100%,45%);
   border-radius: 50%;
 }
 
 .c3:active {
-  background: hsl(181.60000000000002,100%,26.3%);
+  background: hsl(223.5,100%,45%);
   height: 24px;
   width: 24px;
 }
@@ -582,7 +582,7 @@ Array [
         onClick={[Function]}
         style={
           Object {
-            "background": "linear-gradient(to right, #009195 0% , #EBEBE8 0%)",
+            "background": "linear-gradient(to right, #0046FF 0% , #EBEBE8 0%)",
           }
         }
       >
@@ -774,7 +774,7 @@ Array [
 }
 
 .c1 {
-  background: linear-gradient( to right,#FF2B83 0% 50%,#EBEBE8 50% 100% );
+  background: linear-gradient( to right,#0046FF 0% 50%,#EBEBE8 50% 100% );
   height: 4px;
   max-width: 100%;
   width: 100%;
@@ -813,20 +813,20 @@ Array [
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
   background: #FFFFFF;
-  border: 4px solid #FF2B83;
+  border: 4px solid #0046FF;
   cursor: -webkit-grab;
   cursor: -moz-grab;
   cursor: grab;
 }
 
 .c3:focus {
-  border: 4px solid hsl(335.1,100%,52.6%);
-  background: hsl(335.1,100%,52.6%);
+  border: 4px solid hsl(223.5,100%,45%);
+  background: hsl(223.5,100%,45%);
   border-radius: 50%;
 }
 
 .c3:active {
-  background: hsl(335.1,100%,52.6%);
+  background: hsl(223.5,100%,45%);
   height: 16px;
   width: 16px;
 }
@@ -842,7 +842,7 @@ Array [
         onClick={[Function]}
         style={
           Object {
-            "background": "linear-gradient(to right, #FF2B83 50% , #EBEBE8 50%)",
+            "background": "linear-gradient(to right, #0046FF 50% , #EBEBE8 50%)",
           }
         }
       >

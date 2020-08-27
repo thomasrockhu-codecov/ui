@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import styled from 'styled-components';
-import { RowComponent, RowComponents } from './Row.types';
+import { RowComponent } from './Row.types';
 import { Flexbox } from '../../..';
 import { ColorFn } from '../../../common/Types/sharedTypes';
 import { getDensityPaddings } from '../shared/textUtils';
@@ -70,9 +70,10 @@ const StyledExpandedRow = styled('div').withConfig({
   border-bottom: 1px solid ${p => p.separatorColor(p.theme)};
 `;
 
-const Row: RowComponent & RowComponents = ({
+const Row: RowComponent = ({
   className,
-  expanded = false,
+  expanded,
+  initiallyExpanded = false,
   hoverHighlight = true,
   hideSeparator = false,
   // If false means that it's a header
@@ -90,27 +91,40 @@ const Row: RowComponent & RowComponents = ({
 }) => {
   const {
     density: xsDensity,
+    columnDistance: xsColumnDistance,
     expandable: xsExpandable,
     sm: smTable,
     md: mdTable,
     lg: lgTable,
     xl: xlTable,
   } = useFlexTable();
-  const [expand, setExpand] = useState(expanded);
+  const controlledExpand = expanded !== undefined;
+  const [expand, setExpand] = useState(controlledExpand ? expanded : initiallyExpanded);
+
+  const onExpandToggleClick = () => {
+    if (onExpandToggle) {
+      onExpandToggle(!expand);
+    }
+    if (!controlledExpand) {
+      setExpand(!expand);
+    }
+  };
 
   useEffect(() => {
-    setExpand(expanded);
+    if (controlledExpand) {
+      setExpand(expanded);
+    }
   }, [expanded]);
 
   return (
     <>
       <RenderForSizes
-        xs={{ density: xsDensity, expandable: xsExpandable }}
+        xs={{ density: xsDensity, expandable: xsExpandable, columnDistance: xsColumnDistance }}
         sm={smTable}
         md={mdTable}
         lg={lgTable}
         xl={xlTable}
-        Container={({ density, expandable, children: component }) => (
+        Container={({ density, columnDistance, expandable, children: component }) => (
           <StyledRow
             container
             alignItems="center"
@@ -118,11 +132,12 @@ const Row: RowComponent & RowComponents = ({
             className={className}
             hideSeparator={hideSeparator}
             role="row"
-            expanded={expand}
+            // TODO: Remove type assertion when typescript is able to assert undefined from constants, in this case controlledExpand
+            expanded={expand as boolean}
             separatorColor={separatorColor}
             density={density}
             expandable={expandable}
-            gutter={1}
+            gutter={columnDistance}
             {...htmlProps}
           >
             {component}
@@ -135,7 +150,7 @@ const Row: RowComponent & RowComponents = ({
               <ExpandElement
                 isContent={isContent}
                 expanded={expand}
-                onExpandToggle={onExpandToggle}
+                onExpandToggle={onExpandToggleClick}
                 disabled={!expandChildrenXs && !expandItemsXs}
                 setExpand={setExpand}
               />

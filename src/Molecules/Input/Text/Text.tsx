@@ -1,7 +1,7 @@
 import React from 'react';
 import styled, { css } from 'styled-components';
 import * as R from 'ramda';
-import { Props } from './Text.types';
+import { Props, Variant } from './Text.types';
 import { Flexbox, Typography, FormField } from '../../..';
 import NormalizedElements from '../../../common/NormalizedElements';
 
@@ -11,9 +11,11 @@ const height = css<Pick<Props, 'size'>>`
   height: ${p => (p.size === 's' ? p.theme.spacing.unit(8) : p.theme.spacing.unit(10))}px;
 `;
 
-const background = css<Pick<Props, 'disabled'>>`
+const background = css<Pick<Props, 'disabled' | 'variant'>>`
   background-color: ${p =>
-    p.disabled ? p.theme.color.disabledBackground : p.theme.color.backgroundInput};
+    p.disabled && p.variant !== 'quiet'
+      ? p.theme.color.disabledBackground
+      : p.theme.color.backgroundInput};
 `;
 
 const hoverBorderStyles = css<Pick<Props, 'disabled'>>`
@@ -33,27 +35,56 @@ const focusBorderStyles = css`
   }
 `;
 
-const borderStyles = css<Pick<Props, 'error' | 'success'>>`
+const borderStyles = css<Pick<Props, 'error' | 'success' | 'disabled' | 'variant'>>`
   outline: none;
-  border: 1px solid
-    ${p => {
-      if (hasError(p.error)) return p.theme.color.inputBorderError;
-      if (p.success) return p.theme.color.inputBorderSuccess;
-      return p.theme.color.inputBorder;
-    }};
+  border: solid;
+  border-color: ${p => {
+    if (hasError(p.error)) return p.theme.color.inputBorderError;
+    if (p.success) return p.theme.color.inputBorderSuccess;
+    return p.theme.color.inputBorder;
+  }};
+  border-width: ${p => (p.variant === 'quiet' ? '0 0 2px 0' : '1px')};
+  &:focus {
+    border-width: 1px;
+  }
   position: relative;
   ${hoverBorderStyles}
   ${focusBorderStyles}
+  ${p =>
+    p.disabled && p.variant === 'quiet' ? `border-color: ${p.theme.color.disabledBackground};` : ''}
 `;
 
-export const placeholderNormalizaion = css`
-  &::-moz-placeholder,
-  &:-ms-input-placeholder,
+export const placeholderNormalizaion = css<Pick<Props, 'variant'>>`
   &::placeholder {
+    color: ${p => (p.variant === 'quiet' ? p.theme.color.cta : p.theme.color.label)};
     height: inherit;
     line-height: inherit;
-    color: ${p => p.theme.color.label};
+    opacity: 1;
   }
+`;
+
+const AddonBox = styled(Flexbox)<{ position?: 'left' | 'right'; variant?: Variant }>`
+  width: ${p => p.theme.spacing.unit(8)}px;
+  top: 0;
+  height: 100%;
+  padding-left: ${p => p.theme.spacing.unit(1)}px;
+  padding-right: ${p => p.theme.spacing.unit(1)}px;
+  position: absolute;
+  ${p => (p.position === 'left' ? 'left: 0;' : '')}
+  ${p => (p.position === 'right' ? `right: ${p.theme.spacing.unit(1)}px;` : '')}
+  ${p =>
+    p.variant === 'quiet'
+      ? `&:not(:focus) {    
+          padding-left: 0;
+          padding-right: 0;
+        }`
+      : ''}
+  ${p =>
+    p.variant === 'quiet' && p.position === 'right'
+      ? `&:not(:focus) {   
+          right: 0;
+        }`
+      : ''}
 `;
 
 const Input = styled(NormalizedElements.Input).attrs(p => ({ type: p.type || 'text' }))<
@@ -61,11 +92,10 @@ const Input = styled(NormalizedElements.Input).attrs(p => ({ type: p.type || 'te
 >`
   border: 0;
   width: 100%;
-  padding: ${p => p.theme.spacing.unit(2)}px;
+  padding: ${p => p.theme.spacing.unit(p.variant === 'quiet' ? 0 : 2)}px;
   margin: 0;
   line-height: inherit;
   box-sizing: border-box;
-
   ${height}
   ${borderStyles}
   ${background}
@@ -75,21 +105,30 @@ const Input = styled(NormalizedElements.Input).attrs(p => ({ type: p.type || 'te
     p.rightAddon
       ? `padding-right: ${p.theme.spacing.unit(10)}px;` // compensate for right paddings
       : ''}
-`;
+  ${p =>
+    p.variant === 'quiet'
+      ? `color: ${p.theme.color.cta}; 
+         &:disabled {
+           color: ${p.theme.color.disabledText};
+         }
+         font-size: 28px; 
+         font-weight: bold;
+         &:focus {
+           padding-left: ${p.theme.spacing.unit(p.leftAddon ? 8 : 2)}px;
+           padding-right: ${p.theme.spacing.unit(p.rightAddon ? 8 : 0)}px;
+         }`
+      : ''}
+  ${p =>
+    p.variant === 'quiet' && p.rightAddon
+      ? `&:focus + ${AddonBox} {
+          padding-right: ${p.theme.spacing.unit(2)}px;
+        }`
+      : ''}
+  `;
 
-const Wrapper = styled.div`
+const Wrapper = styled.div<{ variant?: Variant }>`
   position: relative;
-`;
-
-const AddonBox = styled(Flexbox)<{ position?: 'left' | 'right' }>`
-  width: ${p => p.theme.spacing.unit(8)}px;
-  top: 0;
-  height: 100%;
-  padding-left: ${p => p.theme.spacing.unit(1)}px;
-  padding-right: ${p => p.theme.spacing.unit(1)}px;
-  position: absolute;
-  ${p => (p.position === 'left' ? 'left: 0;' : '')}
-  ${p => (p.position === 'right' ? `right: ${p.theme.spacing.unit(1)}px;` : '')}
+  padding: ${p => p.theme.spacing.unit(p.variant === 'quiet' ? 1 : 0)}px 0;
 `;
 
 const components = {
@@ -121,6 +160,7 @@ const TextComponent = React.forwardRef<HTMLInputElement, Props>((props, ref) => 
     placeholder,
     required,
     rightAddon,
+    variant = 'normal',
     size,
     success,
     value,
@@ -131,7 +171,16 @@ const TextComponent = React.forwardRef<HTMLInputElement, Props>((props, ref) => 
   return (
     <FormField
       {...R.pick(
-        ['error', 'extraInfo', 'hideLabel', 'label', 'labelTooltip', 'className', 'width'],
+        [
+          'error',
+          'extraInfo',
+          'hideLabel',
+          'label',
+          'labelTooltip',
+          'className',
+          'width',
+          'disabled',
+        ],
         props,
       )}
       required={visuallyEmphasiseRequired}
@@ -159,6 +208,7 @@ const TextComponent = React.forwardRef<HTMLInputElement, Props>((props, ref) => 
               placeholder,
               required,
               rightAddon,
+              variant,
               size,
               success,
               value,
@@ -170,12 +220,24 @@ const TextComponent = React.forwardRef<HTMLInputElement, Props>((props, ref) => 
             {...(hasError(error) ? { 'aria-invalid': true } : {})}
           />
           {leftAddon && (
-            <AddonBox container justifyContent="center" alignItems="center" position="left">
+            <AddonBox
+              container
+              variant={variant}
+              justifyContent="center"
+              alignItems="center"
+              position="left"
+            >
               {leftAddon}
             </AddonBox>
           )}
           {rightAddon && (
-            <AddonBox container justifyContent="center" alignItems="center" position="right">
+            <AddonBox
+              container
+              variant={variant}
+              justifyContent={variant === 'quiet' ? 'flex-end' : 'center'}
+              alignItems="center"
+              position="right"
+            >
               {rightAddon}
             </AddonBox>
           )}

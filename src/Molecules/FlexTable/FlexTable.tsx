@@ -10,6 +10,7 @@ import { FlexTableProvider, useFlexTable } from './shared/FlexTableProvider';
 import { ExpandCell } from './Cell/ExpandCell';
 import { Typography } from '../..';
 import { isElement } from '../../common/utils';
+import { ExpandItem } from './Row/components';
 
 type HtmlDivProps = {} & React.HTMLAttributes<HTMLDivElement>;
 
@@ -44,6 +45,7 @@ const StyledTypography = styled(Typography)`
 const FlexTable: FlexTableComponent & FlexTableComponents = ({
   className,
   density = 'm',
+  columnDistance = 2,
   expandable = false,
   stickyHeader = true,
   children,
@@ -57,6 +59,7 @@ const FlexTable: FlexTableComponent & FlexTableComponents = ({
 }) => (
   <FlexTableProvider
     density={density}
+    columnDistance={columnDistance}
     stickyHeader={stickyHeader}
     fontSize={fontSize}
     expandable={expandable}
@@ -81,6 +84,7 @@ FlexTable.FooterRow = FooterRow;
 FlexTable.Header = Header;
 FlexTable.Footer = Footer;
 FlexTable.ExpandCell = ExpandCell;
+FlexTable.ExpandItem = ExpandItem;
 FlexTable.Cell = Cell;
 FlexTable.CellInlineContainer = CellInlineContainer;
 FlexTable.CONSTANTS = constants;

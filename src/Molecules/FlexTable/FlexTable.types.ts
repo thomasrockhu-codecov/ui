@@ -6,14 +6,18 @@ import { constants } from './shared';
 import { CellComponent, ExpandCellComponent } from './Cell/Cell.types';
 import { Props as FlexTableProviderProps } from './shared/FlexTableProvider/FlexTableProvider.types';
 import { CellInlineContainerComponent } from './shared/CellInlineContainer/CellInlineContainer.types';
+import { ExpandItemComponent } from './Row/components/ExpandItems/ExpandItems.types';
 
 type HtmlProps = {} & React.HTMLAttributes<HTMLDivElement>;
 
 export type Props = {
   className?: string;
+  /**
+   * Will render a title above the table
+   */
   title?: ReactNode;
 } & Partial<FlexTableProviderProps> &
-  HtmlProps;
+  Omit<HtmlProps, 'title'>;
 
 export type FlexTableComponent = React.FC<Props>;
 
@@ -25,6 +29,7 @@ export type FlexTableComponents = {
   Row: RowComponent;
   Cell: CellComponent;
   ExpandCell: ExpandCellComponent;
+  ExpandItem: ExpandItemComponent;
   CellInlineContainer: CellInlineContainerComponent;
   CONSTANTS: typeof constants;
 };

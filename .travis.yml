@@ -1,11 +1,13 @@
 language: node_js
 node_js:
-  - 12
+  - 12.18.2
 
 before_install:
   # Download latest yarn since travis defaults to v1.3.2
-  - curl -o- -L https://yarnpkg.com/install.sh | bash
+  # - curl -o- -L https://yarnpkg.com/install.sh | bash
   - export PATH="$HOME/.yarn/bin:$PATH"
+  - npm i -g npm@6.5.0
+  - node -v && npm -v && yarn -v
 
 install: yarn install --ignore-engines
 
@@ -16,7 +18,7 @@ cache:
 
 jobs:
   include:
-    - stage: test
+    - stage: validate
       script:
         - commitlint-travis
         - npm run lint
@@ -24,6 +26,7 @@ jobs:
 
     - stage: release
       script:
+        - node -v && npm -v && yarn -v
         - TRAVIS_JOB_NUMBER=WORKAROUND.1 npm run semantic-release
       if: (NOT type IN (pull_request)) AND (branch = master)
 
@@ -33,6 +36,6 @@ jobs:
       if: (NOT type IN (pull_request)) AND (branch = beta)
 
 stages:
-  - name: test-and-build
+  - name: validate
   - name: release
   - name: beta-release

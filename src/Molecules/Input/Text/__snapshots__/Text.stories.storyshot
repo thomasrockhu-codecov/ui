@@ -60,9 +60,15 @@ Array [
   box-sizing: border-box;
   height: 40px;
   outline: none;
-  border: 1px solid #BCBCB6;
+  border: solid;
+  border-color: #BCBCB6;
+  border-width: 1px;
   position: relative;
   background-color: #FFFFFF;
+}
+
+.c6:focus {
+  border-width: 1px;
 }
 
 .c6:hover {
@@ -73,40 +79,37 @@ Array [
   border-color: #0046FF;
 }
 
-.c6::-moz-placeholder,
-.c6:-ms-input-placeholder,
 .c6::-webkit-input-placeholder {
+  color: #6E6E69;
   height: inherit;
   line-height: inherit;
-  color: #6E6E69;
+  opacity: 1;
 }
 
-.c6::-moz-placeholder,
-.c6:-ms-input-placeholder,
 .c6::-moz-placeholder {
+  color: #6E6E69;
   height: inherit;
   line-height: inherit;
-  color: #6E6E69;
+  opacity: 1;
 }
 
-.c6::-moz-placeholder,
-.c6:-ms-input-placeholder,
 .c6:-ms-input-placeholder {
+  color: #6E6E69;
   height: inherit;
   line-height: inherit;
-  color: #6E6E69;
+  opacity: 1;
 }
 
-.c6::-moz-placeholder,
-.c6:-ms-input-placeholder,
 .c6::placeholder {
+  color: #6E6E69;
   height: inherit;
   line-height: inherit;
-  color: #6E6E69;
+  opacity: 1;
 }
 
 .c5 {
   position: relative;
+  padding: 0px 0;
 }
 
 <div
@@ -141,6 +144,7 @@ Array [
               onKeyUp={[Function]}
               placeholder="Placeholder"
               type="text"
+              variant="normal"
             />
           </div>
         </span>
@@ -206,9 +210,15 @@ exports[`Storyshots Molecules | Input / Text Alternating Types 1`] = `
   box-sizing: border-box;
   height: 40px;
   outline: none;
-  border: 1px solid #BCBCB6;
+  border: solid;
+  border-color: #BCBCB6;
+  border-width: 1px;
   position: relative;
   background-color: #FFFFFF;
+}
+
+.c6:focus {
+  border-width: 1px;
 }
 
 .c6:hover {
@@ -219,40 +229,37 @@ exports[`Storyshots Molecules | Input / Text Alternating Types 1`] = `
   border-color: #0046FF;
 }
 
-.c6::-moz-placeholder,
-.c6:-ms-input-placeholder,
 .c6::-webkit-input-placeholder {
+  color: #6E6E69;
   height: inherit;
   line-height: inherit;
-  color: #6E6E69;
+  opacity: 1;
 }
 
-.c6::-moz-placeholder,
-.c6:-ms-input-placeholder,
 .c6::-moz-placeholder {
+  color: #6E6E69;
   height: inherit;
   line-height: inherit;
-  color: #6E6E69;
+  opacity: 1;
 }
 
-.c6::-moz-placeholder,
-.c6:-ms-input-placeholder,
 .c6:-ms-input-placeholder {
+  color: #6E6E69;
   height: inherit;
   line-height: inherit;
-  color: #6E6E69;
+  opacity: 1;
 }
 
-.c6::-moz-placeholder,
-.c6:-ms-input-placeholder,
 .c6::placeholder {
+  color: #6E6E69;
   height: inherit;
   line-height: inherit;
-  color: #6E6E69;
+  opacity: 1;
 }
 
 .c5 {
   position: relative;
+  padding: 0px 0;
 }
 
 <form
@@ -283,6 +290,7 @@ exports[`Storyshots Molecules | Input / Text Alternating Types 1`] = `
               <input
                 className="NormalizedInput__Input-sc-1m4kmh9-0 c6"
                 type="email"
+                variant="normal"
               />
             </div>
           </span>
@@ -315,6 +323,7 @@ exports[`Storyshots Molecules | Input / Text Alternating Types 1`] = `
               <input
                 className="NormalizedInput__Input-sc-1m4kmh9-0 c6"
                 type="password"
+                variant="normal"
               />
             </div>
           </span>
@@ -347,6 +356,7 @@ exports[`Storyshots Molecules | Input / Text Alternating Types 1`] = `
               <input
                 className="NormalizedInput__Input-sc-1m4kmh9-0 c6"
                 type="search"
+                variant="normal"
               />
             </div>
           </span>
@@ -379,6 +389,7 @@ exports[`Storyshots Molecules | Input / Text Alternating Types 1`] = `
               <input
                 className="NormalizedInput__Input-sc-1m4kmh9-0 c6"
                 type="submit"
+                variant="normal"
               />
             </div>
           </span>
@@ -461,71 +472,6 @@ exports[`Storyshots Molecules | Input / Text Both addons 1`] = `
   display: inline-block;
 }
 
-.c6 {
-  font-family: inherit;
-  font-size: 100%;
-  line-height: 1.15;
-  margin: 0;
-  overflow: visible;
-  border: 0;
-  width: 100%;
-  padding: 8px;
-  margin: 0;
-  line-height: inherit;
-  box-sizing: border-box;
-  height: 40px;
-  outline: none;
-  border: 1px solid #BCBCB6;
-  position: relative;
-  background-color: #FFFFFF;
-  padding-left: 32px;
-  padding-right: 40px;
-}
-
-.c6:hover {
-  border-color: #4B4B46;
-}
-
-.c6:focus {
-  border-color: #0046FF;
-}
-
-.c6::-moz-placeholder,
-.c6:-ms-input-placeholder,
-.c6::-webkit-input-placeholder {
-  height: inherit;
-  line-height: inherit;
-  color: #6E6E69;
-}
-
-.c6::-moz-placeholder,
-.c6:-ms-input-placeholder,
-.c6::-moz-placeholder {
-  height: inherit;
-  line-height: inherit;
-  color: #6E6E69;
-}
-
-.c6::-moz-placeholder,
-.c6:-ms-input-placeholder,
-.c6:-ms-input-placeholder {
-  height: inherit;
-  line-height: inherit;
-  color: #6E6E69;
-}
-
-.c6::-moz-placeholder,
-.c6:-ms-input-placeholder,
-.c6::placeholder {
-  height: inherit;
-  line-height: inherit;
-  color: #6E6E69;
-}
-
-.c5 {
-  position: relative;
-}
-
 .c8 {
   width: 32px;
   top: 0;
@@ -544,6 +490,74 @@ exports[`Storyshots Molecules | Input / Text Both addons 1`] = `
   padding-right: 4px;
   position: absolute;
   right: 4px;
+}
+
+.c6 {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  overflow: visible;
+  border: 0;
+  width: 100%;
+  padding: 8px;
+  margin: 0;
+  line-height: inherit;
+  box-sizing: border-box;
+  height: 40px;
+  outline: none;
+  border: solid;
+  border-color: #BCBCB6;
+  border-width: 1px;
+  position: relative;
+  background-color: #FFFFFF;
+  padding-left: 32px;
+  padding-right: 40px;
+}
+
+.c6:focus {
+  border-width: 1px;
+}
+
+.c6:hover {
+  border-color: #4B4B46;
+}
+
+.c6:focus {
+  border-color: #0046FF;
+}
+
+.c6::-webkit-input-placeholder {
+  color: #6E6E69;
+  height: inherit;
+  line-height: inherit;
+  opacity: 1;
+}
+
+.c6::-moz-placeholder {
+  color: #6E6E69;
+  height: inherit;
+  line-height: inherit;
+  opacity: 1;
+}
+
+.c6:-ms-input-placeholder {
+  color: #6E6E69;
+  height: inherit;
+  line-height: inherit;
+  opacity: 1;
+}
+
+.c6::placeholder {
+  color: #6E6E69;
+  height: inherit;
+  line-height: inherit;
+  opacity: 1;
+}
+
+.c5 {
+  position: relative;
+  padding: 0px 0;
 }
 
 <div
@@ -571,10 +585,12 @@ exports[`Storyshots Molecules | Input / Text Both addons 1`] = `
             className="NormalizedInput__Input-sc-1m4kmh9-0 c6"
             placeholder="Placeholder"
             type="text"
+            variant="normal"
           />
           <div
             className="c7 c8"
             position="left"
+            variant="normal"
           >
             <svg
               aria-hidden="true"
@@ -593,6 +609,7 @@ exports[`Storyshots Molecules | Input / Text Both addons 1`] = `
           <div
             className="c7 c10"
             position="right"
+            variant="normal"
           >
             SEK
           </div>
@@ -659,9 +676,15 @@ exports[`Storyshots Molecules | Input / Text Default 1`] = `
   box-sizing: border-box;
   height: 40px;
   outline: none;
-  border: 1px solid #BCBCB6;
+  border: solid;
+  border-color: #BCBCB6;
+  border-width: 1px;
   position: relative;
   background-color: #FFFFFF;
+}
+
+.c6:focus {
+  border-width: 1px;
 }
 
 .c6:hover {
@@ -672,40 +695,37 @@ exports[`Storyshots Molecules | Input / Text Default 1`] = `
   border-color: #0046FF;
 }
 
-.c6::-moz-placeholder,
-.c6:-ms-input-placeholder,
 .c6::-webkit-input-placeholder {
+  color: #6E6E69;
   height: inherit;
   line-height: inherit;
-  color: #6E6E69;
+  opacity: 1;
 }
 
-.c6::-moz-placeholder,
-.c6:-ms-input-placeholder,
 .c6::-moz-placeholder {
+  color: #6E6E69;
   height: inherit;
   line-height: inherit;
-  color: #6E6E69;
+  opacity: 1;
 }
 
-.c6::-moz-placeholder,
-.c6:-ms-input-placeholder,
 .c6:-ms-input-placeholder {
+  color: #6E6E69;
   height: inherit;
   line-height: inherit;
-  color: #6E6E69;
+  opacity: 1;
 }
 
-.c6::-moz-placeholder,
-.c6:-ms-input-placeholder,
 .c6::placeholder {
+  color: #6E6E69;
   height: inherit;
   line-height: inherit;
-  color: #6E6E69;
+  opacity: 1;
 }
 
 .c5 {
   position: relative;
+  padding: 0px 0;
 }
 
 <div
@@ -733,6 +753,7 @@ exports[`Storyshots Molecules | Input / Text Default 1`] = `
             className="NormalizedInput__Input-sc-1m4kmh9-0 c6"
             placeholder="Placeholder"
             type="text"
+            variant="normal"
           />
         </div>
       </span>
@@ -792,7 +813,7 @@ exports[`Storyshots Molecules | Input / Text Disabled +addon 1`] = `
 
 .c2 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #6E6E69;
+  color: #A0A09B;
   margin: 0;
   font-weight: 400;
   font-size: 14px;
@@ -813,67 +834,6 @@ exports[`Storyshots Molecules | Input / Text Disabled +addon 1`] = `
   display: inline-block;
 }
 
-.c6 {
-  font-family: inherit;
-  font-size: 100%;
-  line-height: 1.15;
-  margin: 0;
-  overflow: visible;
-  border: 0;
-  width: 100%;
-  padding: 8px;
-  margin: 0;
-  line-height: inherit;
-  box-sizing: border-box;
-  height: 40px;
-  outline: none;
-  border: 1px solid #BCBCB6;
-  position: relative;
-  background-color: #EBEBE8;
-  padding-left: 32px;
-  padding-right: 40px;
-}
-
-.c6:focus {
-  border-color: #0046FF;
-}
-
-.c6::-moz-placeholder,
-.c6:-ms-input-placeholder,
-.c6::-webkit-input-placeholder {
-  height: inherit;
-  line-height: inherit;
-  color: #6E6E69;
-}
-
-.c6::-moz-placeholder,
-.c6:-ms-input-placeholder,
-.c6::-moz-placeholder {
-  height: inherit;
-  line-height: inherit;
-  color: #6E6E69;
-}
-
-.c6::-moz-placeholder,
-.c6:-ms-input-placeholder,
-.c6:-ms-input-placeholder {
-  height: inherit;
-  line-height: inherit;
-  color: #6E6E69;
-}
-
-.c6::-moz-placeholder,
-.c6:-ms-input-placeholder,
-.c6::placeholder {
-  height: inherit;
-  line-height: inherit;
-  color: #6E6E69;
-}
-
-.c5 {
-  position: relative;
-}
-
 .c8 {
   width: 32px;
   top: 0;
@@ -892,6 +852,70 @@ exports[`Storyshots Molecules | Input / Text Disabled +addon 1`] = `
   padding-right: 4px;
   position: absolute;
   right: 4px;
+}
+
+.c6 {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  overflow: visible;
+  border: 0;
+  width: 100%;
+  padding: 8px;
+  margin: 0;
+  line-height: inherit;
+  box-sizing: border-box;
+  height: 40px;
+  outline: none;
+  border: solid;
+  border-color: #BCBCB6;
+  border-width: 1px;
+  position: relative;
+  background-color: #EBEBE8;
+  padding-left: 32px;
+  padding-right: 40px;
+}
+
+.c6:focus {
+  border-width: 1px;
+}
+
+.c6:focus {
+  border-color: #0046FF;
+}
+
+.c6::-webkit-input-placeholder {
+  color: #6E6E69;
+  height: inherit;
+  line-height: inherit;
+  opacity: 1;
+}
+
+.c6::-moz-placeholder {
+  color: #6E6E69;
+  height: inherit;
+  line-height: inherit;
+  opacity: 1;
+}
+
+.c6:-ms-input-placeholder {
+  color: #6E6E69;
+  height: inherit;
+  line-height: inherit;
+  opacity: 1;
+}
+
+.c6::placeholder {
+  color: #6E6E69;
+  height: inherit;
+  line-height: inherit;
+  opacity: 1;
+}
+
+.c5 {
+  position: relative;
+  padding: 0px 0;
 }
 
 <div
@@ -920,10 +944,12 @@ exports[`Storyshots Molecules | Input / Text Disabled +addon 1`] = `
             disabled={true}
             placeholder="Placeholder"
             type="text"
+            variant="normal"
           />
           <div
             className="c7 c8"
             position="left"
+            variant="normal"
           >
             <svg
               aria-hidden="true"
@@ -942,6 +968,7 @@ exports[`Storyshots Molecules | Input / Text Disabled +addon 1`] = `
           <div
             className="c7 c10"
             position="right"
+            variant="normal"
           >
             SEK
           </div>
@@ -973,7 +1000,7 @@ exports[`Storyshots Molecules | Input / Text Disabled 1`] = `
 
 .c2 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #6E6E69;
+  color: #A0A09B;
   margin: 0;
   font-weight: 400;
   font-size: 14px;
@@ -1008,49 +1035,52 @@ exports[`Storyshots Molecules | Input / Text Disabled 1`] = `
   box-sizing: border-box;
   height: 40px;
   outline: none;
-  border: 1px solid #BCBCB6;
+  border: solid;
+  border-color: #BCBCB6;
+  border-width: 1px;
   position: relative;
   background-color: #EBEBE8;
+}
+
+.c6:focus {
+  border-width: 1px;
 }
 
 .c6:focus {
   border-color: #0046FF;
 }
 
-.c6::-moz-placeholder,
-.c6:-ms-input-placeholder,
 .c6::-webkit-input-placeholder {
+  color: #6E6E69;
   height: inherit;
   line-height: inherit;
-  color: #6E6E69;
+  opacity: 1;
 }
 
-.c6::-moz-placeholder,
-.c6:-ms-input-placeholder,
 .c6::-moz-placeholder {
+  color: #6E6E69;
   height: inherit;
   line-height: inherit;
-  color: #6E6E69;
+  opacity: 1;
 }
 
-.c6::-moz-placeholder,
-.c6:-ms-input-placeholder,
 .c6:-ms-input-placeholder {
+  color: #6E6E69;
   height: inherit;
   line-height: inherit;
-  color: #6E6E69;
+  opacity: 1;
 }
 
-.c6::-moz-placeholder,
-.c6:-ms-input-placeholder,
 .c6::placeholder {
+  color: #6E6E69;
   height: inherit;
   line-height: inherit;
-  color: #6E6E69;
+  opacity: 1;
 }
 
 .c5 {
   position: relative;
+  padding: 0px 0;
 }
 
 <div
@@ -1079,6 +1109,7 @@ exports[`Storyshots Molecules | Input / Text Disabled 1`] = `
             disabled={true}
             placeholder="Placeholder"
             type="text"
+            variant="normal"
           />
         </div>
       </span>
@@ -1152,9 +1183,15 @@ exports[`Storyshots Molecules | Input / Text Edge cases 1`] = `
   box-sizing: border-box;
   height: 40px;
   outline: none;
-  border: 1px solid #BCBCB6;
+  border: solid;
+  border-color: #BCBCB6;
+  border-width: 1px;
   position: relative;
   background-color: #FFFFFF;
+}
+
+.c9:focus {
+  border-width: 1px;
 }
 
 .c9:hover {
@@ -1165,40 +1202,37 @@ exports[`Storyshots Molecules | Input / Text Edge cases 1`] = `
   border-color: #0046FF;
 }
 
-.c9::-moz-placeholder,
-.c9:-ms-input-placeholder,
 .c9::-webkit-input-placeholder {
+  color: #6E6E69;
   height: inherit;
   line-height: inherit;
-  color: #6E6E69;
+  opacity: 1;
 }
 
-.c9::-moz-placeholder,
-.c9:-ms-input-placeholder,
 .c9::-moz-placeholder {
+  color: #6E6E69;
   height: inherit;
   line-height: inherit;
-  color: #6E6E69;
+  opacity: 1;
 }
 
-.c9::-moz-placeholder,
-.c9:-ms-input-placeholder,
 .c9:-ms-input-placeholder {
+  color: #6E6E69;
   height: inherit;
   line-height: inherit;
-  color: #6E6E69;
+  opacity: 1;
 }
 
-.c9::-moz-placeholder,
-.c9:-ms-input-placeholder,
 .c9::placeholder {
+  color: #6E6E69;
   height: inherit;
   line-height: inherit;
-  color: #6E6E69;
+  opacity: 1;
 }
 
 .c8 {
   position: relative;
+  padding: 0px 0;
 }
 
 .c0 {
@@ -1297,6 +1331,7 @@ exports[`Storyshots Molecules | Input / Text Edge cases 1`] = `
                   className="NormalizedInput__Input-sc-1m4kmh9-0 c9"
                   placeholder="If placeholder goes too long though, it probably should be truncated into ellipsis, right?"
                   type="text"
+                  variant="normal"
                 />
               </div>
             </span>
@@ -1347,6 +1382,7 @@ exports[`Storyshots Molecules | Input / Text Edge cases 1`] = `
                   className="NormalizedInput__Input-sc-1m4kmh9-0 c9"
                   placeholder=""
                   type="text"
+                  variant="normal"
                 />
               </div>
             </span>
@@ -1439,9 +1475,15 @@ exports[`Storyshots Molecules | Input / Text Error if empty text 1`] = `
   box-sizing: border-box;
   height: 40px;
   outline: none;
-  border: 1px solid #FF1900;
+  border: solid;
+  border-color: #FF1900;
+  border-width: 1px;
   position: relative;
   background-color: #FFFFFF;
+}
+
+.c6:focus {
+  border-width: 1px;
 }
 
 .c6:hover {
@@ -1452,40 +1494,37 @@ exports[`Storyshots Molecules | Input / Text Error if empty text 1`] = `
   border-color: #0046FF;
 }
 
-.c6::-moz-placeholder,
-.c6:-ms-input-placeholder,
 .c6::-webkit-input-placeholder {
+  color: #6E6E69;
   height: inherit;
   line-height: inherit;
-  color: #6E6E69;
+  opacity: 1;
 }
 
-.c6::-moz-placeholder,
-.c6:-ms-input-placeholder,
 .c6::-moz-placeholder {
+  color: #6E6E69;
   height: inherit;
   line-height: inherit;
-  color: #6E6E69;
+  opacity: 1;
 }
 
-.c6::-moz-placeholder,
-.c6:-ms-input-placeholder,
 .c6:-ms-input-placeholder {
+  color: #6E6E69;
   height: inherit;
   line-height: inherit;
-  color: #6E6E69;
+  opacity: 1;
 }
 
-.c6::-moz-placeholder,
-.c6:-ms-input-placeholder,
 .c6::placeholder {
+  color: #6E6E69;
   height: inherit;
   line-height: inherit;
-  color: #6E6E69;
+  opacity: 1;
 }
 
 .c5 {
   position: relative;
+  padding: 0px 0;
 }
 
 <div
@@ -1515,6 +1554,7 @@ exports[`Storyshots Molecules | Input / Text Error if empty text 1`] = `
             onChange={[Function]}
             placeholder="This is a placeholder"
             type="text"
+            variant="normal"
           />
         </div>
       </span>
@@ -1600,9 +1640,15 @@ exports[`Storyshots Molecules | Input / Text Extra info below 1`] = `
   box-sizing: border-box;
   height: 40px;
   outline: none;
-  border: 1px solid #BCBCB6;
+  border: solid;
+  border-color: #BCBCB6;
+  border-width: 1px;
   position: relative;
   background-color: #FFFFFF;
+}
+
+.c6:focus {
+  border-width: 1px;
 }
 
 .c6:hover {
@@ -1613,40 +1659,37 @@ exports[`Storyshots Molecules | Input / Text Extra info below 1`] = `
   border-color: #0046FF;
 }
 
-.c6::-moz-placeholder,
-.c6:-ms-input-placeholder,
 .c6::-webkit-input-placeholder {
+  color: #6E6E69;
   height: inherit;
   line-height: inherit;
-  color: #6E6E69;
+  opacity: 1;
 }
 
-.c6::-moz-placeholder,
-.c6:-ms-input-placeholder,
 .c6::-moz-placeholder {
+  color: #6E6E69;
   height: inherit;
   line-height: inherit;
-  color: #6E6E69;
+  opacity: 1;
 }
 
-.c6::-moz-placeholder,
-.c6:-ms-input-placeholder,
 .c6:-ms-input-placeholder {
+  color: #6E6E69;
   height: inherit;
   line-height: inherit;
-  color: #6E6E69;
+  opacity: 1;
 }
 
-.c6::-moz-placeholder,
-.c6:-ms-input-placeholder,
 .c6::placeholder {
+  color: #6E6E69;
   height: inherit;
   line-height: inherit;
-  color: #6E6E69;
+  opacity: 1;
 }
 
 .c5 {
   position: relative;
+  padding: 0px 0;
 }
 
 <div
@@ -1674,6 +1717,7 @@ exports[`Storyshots Molecules | Input / Text Extra info below 1`] = `
             className="NormalizedInput__Input-sc-1m4kmh9-0 c6"
             placeholder="Placeholder"
             type="text"
+            variant="normal"
           />
         </div>
       </span>
@@ -1763,9 +1807,15 @@ exports[`Storyshots Molecules | Input / Text Extra info with error 1`] = `
   box-sizing: border-box;
   height: 40px;
   outline: none;
-  border: 1px solid #FF1900;
+  border: solid;
+  border-color: #FF1900;
+  border-width: 1px;
   position: relative;
   background-color: #FFFFFF;
+}
+
+.c6:focus {
+  border-width: 1px;
 }
 
 .c6:hover {
@@ -1776,40 +1826,37 @@ exports[`Storyshots Molecules | Input / Text Extra info with error 1`] = `
   border-color: #0046FF;
 }
 
-.c6::-moz-placeholder,
-.c6:-ms-input-placeholder,
 .c6::-webkit-input-placeholder {
+  color: #6E6E69;
   height: inherit;
   line-height: inherit;
-  color: #6E6E69;
+  opacity: 1;
 }
 
-.c6::-moz-placeholder,
-.c6:-ms-input-placeholder,
 .c6::-moz-placeholder {
+  color: #6E6E69;
   height: inherit;
   line-height: inherit;
-  color: #6E6E69;
+  opacity: 1;
 }
 
-.c6::-moz-placeholder,
-.c6:-ms-input-placeholder,
 .c6:-ms-input-placeholder {
+  color: #6E6E69;
   height: inherit;
   line-height: inherit;
-  color: #6E6E69;
+  opacity: 1;
 }
 
-.c6::-moz-placeholder,
-.c6:-ms-input-placeholder,
 .c6::placeholder {
+  color: #6E6E69;
   height: inherit;
   line-height: inherit;
-  color: #6E6E69;
+  opacity: 1;
 }
 
 .c5 {
   position: relative;
+  padding: 0px 0;
 }
 
 <div
@@ -1839,6 +1886,7 @@ exports[`Storyshots Molecules | Input / Text Extra info with error 1`] = `
             onChange={[Function]}
             placeholder="This is a placeholder"
             type="text"
+            variant="normal"
           />
         </div>
       </span>
@@ -1961,189 +2009,6 @@ Array [
   display: inline-block;
 }
 
-.c9 {
-  font-family: inherit;
-  font-size: 100%;
-  line-height: 1.15;
-  margin: 0;
-  overflow: visible;
-  border: 0;
-  width: 100%;
-  padding: 8px;
-  margin: 0;
-  line-height: inherit;
-  box-sizing: border-box;
-  height: 40px;
-  outline: none;
-  border: 1px solid #BCBCB6;
-  position: relative;
-  background-color: #FFFFFF;
-}
-
-.c9:hover {
-  border-color: #4B4B46;
-}
-
-.c9:focus {
-  border-color: #0046FF;
-}
-
-.c9::-moz-placeholder,
-.c9:-ms-input-placeholder,
-.c9::-webkit-input-placeholder {
-  height: inherit;
-  line-height: inherit;
-  color: #6E6E69;
-}
-
-.c9::-moz-placeholder,
-.c9:-ms-input-placeholder,
-.c9::-moz-placeholder {
-  height: inherit;
-  line-height: inherit;
-  color: #6E6E69;
-}
-
-.c9::-moz-placeholder,
-.c9:-ms-input-placeholder,
-.c9:-ms-input-placeholder {
-  height: inherit;
-  line-height: inherit;
-  color: #6E6E69;
-}
-
-.c9::-moz-placeholder,
-.c9:-ms-input-placeholder,
-.c9::placeholder {
-  height: inherit;
-  line-height: inherit;
-  color: #6E6E69;
-}
-
-.c10 {
-  font-family: inherit;
-  font-size: 100%;
-  line-height: 1.15;
-  margin: 0;
-  overflow: visible;
-  border: 0;
-  width: 100%;
-  padding: 8px;
-  margin: 0;
-  line-height: inherit;
-  box-sizing: border-box;
-  height: 40px;
-  outline: none;
-  border: 1px solid #BCBCB6;
-  position: relative;
-  background-color: #FFFFFF;
-  padding-left: 32px;
-}
-
-.c10:hover {
-  border-color: #4B4B46;
-}
-
-.c10:focus {
-  border-color: #0046FF;
-}
-
-.c10::-moz-placeholder,
-.c10:-ms-input-placeholder,
-.c10::-webkit-input-placeholder {
-  height: inherit;
-  line-height: inherit;
-  color: #6E6E69;
-}
-
-.c10::-moz-placeholder,
-.c10:-ms-input-placeholder,
-.c10::-moz-placeholder {
-  height: inherit;
-  line-height: inherit;
-  color: #6E6E69;
-}
-
-.c10::-moz-placeholder,
-.c10:-ms-input-placeholder,
-.c10:-ms-input-placeholder {
-  height: inherit;
-  line-height: inherit;
-  color: #6E6E69;
-}
-
-.c10::-moz-placeholder,
-.c10:-ms-input-placeholder,
-.c10::placeholder {
-  height: inherit;
-  line-height: inherit;
-  color: #6E6E69;
-}
-
-.c14 {
-  font-family: inherit;
-  font-size: 100%;
-  line-height: 1.15;
-  margin: 0;
-  overflow: visible;
-  border: 0;
-  width: 100%;
-  padding: 8px;
-  margin: 0;
-  line-height: inherit;
-  box-sizing: border-box;
-  height: 40px;
-  outline: none;
-  border: 1px solid #BCBCB6;
-  position: relative;
-  background-color: #FFFFFF;
-  padding-right: 40px;
-}
-
-.c14:hover {
-  border-color: #4B4B46;
-}
-
-.c14:focus {
-  border-color: #0046FF;
-}
-
-.c14::-moz-placeholder,
-.c14:-ms-input-placeholder,
-.c14::-webkit-input-placeholder {
-  height: inherit;
-  line-height: inherit;
-  color: #6E6E69;
-}
-
-.c14::-moz-placeholder,
-.c14:-ms-input-placeholder,
-.c14::-moz-placeholder {
-  height: inherit;
-  line-height: inherit;
-  color: #6E6E69;
-}
-
-.c14::-moz-placeholder,
-.c14:-ms-input-placeholder,
-.c14:-ms-input-placeholder {
-  height: inherit;
-  line-height: inherit;
-  color: #6E6E69;
-}
-
-.c14::-moz-placeholder,
-.c14:-ms-input-placeholder,
-.c14::placeholder {
-  height: inherit;
-  line-height: inherit;
-  color: #6E6E69;
-}
-
-.c8 {
-  position: relative;
-}
-
 .c12 {
   width: 32px;
   top: 0;
@@ -2162,6 +2027,196 @@ Array [
   padding-right: 4px;
   position: absolute;
   right: 4px;
+}
+
+.c9 {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  overflow: visible;
+  border: 0;
+  width: 100%;
+  padding: 8px;
+  margin: 0;
+  line-height: inherit;
+  box-sizing: border-box;
+  height: 40px;
+  outline: none;
+  border: solid;
+  border-color: #BCBCB6;
+  border-width: 1px;
+  position: relative;
+  background-color: #FFFFFF;
+}
+
+.c9:focus {
+  border-width: 1px;
+}
+
+.c9:hover {
+  border-color: #4B4B46;
+}
+
+.c9:focus {
+  border-color: #0046FF;
+}
+
+.c9::-webkit-input-placeholder {
+  color: #6E6E69;
+  height: inherit;
+  line-height: inherit;
+  opacity: 1;
+}
+
+.c9::-moz-placeholder {
+  color: #6E6E69;
+  height: inherit;
+  line-height: inherit;
+  opacity: 1;
+}
+
+.c9:-ms-input-placeholder {
+  color: #6E6E69;
+  height: inherit;
+  line-height: inherit;
+  opacity: 1;
+}
+
+.c9::placeholder {
+  color: #6E6E69;
+  height: inherit;
+  line-height: inherit;
+  opacity: 1;
+}
+
+.c10 {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  overflow: visible;
+  border: 0;
+  width: 100%;
+  padding: 8px;
+  margin: 0;
+  line-height: inherit;
+  box-sizing: border-box;
+  height: 40px;
+  outline: none;
+  border: solid;
+  border-color: #BCBCB6;
+  border-width: 1px;
+  position: relative;
+  background-color: #FFFFFF;
+  padding-left: 32px;
+}
+
+.c10:focus {
+  border-width: 1px;
+}
+
+.c10:hover {
+  border-color: #4B4B46;
+}
+
+.c10:focus {
+  border-color: #0046FF;
+}
+
+.c10::-webkit-input-placeholder {
+  color: #6E6E69;
+  height: inherit;
+  line-height: inherit;
+  opacity: 1;
+}
+
+.c10::-moz-placeholder {
+  color: #6E6E69;
+  height: inherit;
+  line-height: inherit;
+  opacity: 1;
+}
+
+.c10:-ms-input-placeholder {
+  color: #6E6E69;
+  height: inherit;
+  line-height: inherit;
+  opacity: 1;
+}
+
+.c10::placeholder {
+  color: #6E6E69;
+  height: inherit;
+  line-height: inherit;
+  opacity: 1;
+}
+
+.c14 {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  overflow: visible;
+  border: 0;
+  width: 100%;
+  padding: 8px;
+  margin: 0;
+  line-height: inherit;
+  box-sizing: border-box;
+  height: 40px;
+  outline: none;
+  border: solid;
+  border-color: #BCBCB6;
+  border-width: 1px;
+  position: relative;
+  background-color: #FFFFFF;
+  padding-right: 40px;
+}
+
+.c14:focus {
+  border-width: 1px;
+}
+
+.c14:hover {
+  border-color: #4B4B46;
+}
+
+.c14:focus {
+  border-color: #0046FF;
+}
+
+.c14::-webkit-input-placeholder {
+  color: #6E6E69;
+  height: inherit;
+  line-height: inherit;
+  opacity: 1;
+}
+
+.c14::-moz-placeholder {
+  color: #6E6E69;
+  height: inherit;
+  line-height: inherit;
+  opacity: 1;
+}
+
+.c14:-ms-input-placeholder {
+  color: #6E6E69;
+  height: inherit;
+  line-height: inherit;
+  opacity: 1;
+}
+
+.c14::placeholder {
+  color: #6E6E69;
+  height: inherit;
+  line-height: inherit;
+  opacity: 1;
+}
+
+.c8 {
+  position: relative;
+  padding: 0px 0;
 }
 
 .c0 {
@@ -2265,6 +2320,7 @@ Array [
                     className="NormalizedInput__Input-sc-1m4kmh9-0 c9"
                     placeholder="Placeholder"
                     type="text"
+                    variant="normal"
                   />
                 </div>
               </span>
@@ -2309,10 +2365,12 @@ Array [
                     className="NormalizedInput__Input-sc-1m4kmh9-0 c10"
                     placeholder="Placeholder"
                     type="text"
+                    variant="normal"
                   />
                   <div
                     className="c11 c12"
                     position="left"
+                    variant="normal"
                   >
                     <svg
                       aria-hidden="true"
@@ -2371,10 +2429,12 @@ Array [
                     className="NormalizedInput__Input-sc-1m4kmh9-0 c14"
                     placeholder="Placeholder"
                     type="text"
+                    variant="normal"
                   />
                   <div
                     className="c11 c15"
                     position="right"
+                    variant="normal"
                   >
                     SEK
                   </div>
@@ -2453,9 +2513,15 @@ exports[`Storyshots Molecules | Input / Text Hidden label 1`] = `
   box-sizing: border-box;
   height: 40px;
   outline: none;
-  border: 1px solid #BCBCB6;
+  border: solid;
+  border-color: #BCBCB6;
+  border-width: 1px;
   position: relative;
   background-color: #FFFFFF;
+}
+
+.c6:focus {
+  border-width: 1px;
 }
 
 .c6:hover {
@@ -2466,40 +2532,37 @@ exports[`Storyshots Molecules | Input / Text Hidden label 1`] = `
   border-color: #0046FF;
 }
 
-.c6::-moz-placeholder,
-.c6:-ms-input-placeholder,
 .c6::-webkit-input-placeholder {
+  color: #6E6E69;
   height: inherit;
   line-height: inherit;
-  color: #6E6E69;
+  opacity: 1;
 }
 
-.c6::-moz-placeholder,
-.c6:-ms-input-placeholder,
 .c6::-moz-placeholder {
+  color: #6E6E69;
   height: inherit;
   line-height: inherit;
-  color: #6E6E69;
+  opacity: 1;
 }
 
-.c6::-moz-placeholder,
-.c6:-ms-input-placeholder,
 .c6:-ms-input-placeholder {
+  color: #6E6E69;
   height: inherit;
   line-height: inherit;
-  color: #6E6E69;
+  opacity: 1;
 }
 
-.c6::-moz-placeholder,
-.c6:-ms-input-placeholder,
 .c6::placeholder {
+  color: #6E6E69;
   height: inherit;
   line-height: inherit;
-  color: #6E6E69;
+  opacity: 1;
 }
 
 .c5 {
   position: relative;
+  padding: 0px 0;
 }
 
 <div
@@ -2527,6 +2590,7 @@ exports[`Storyshots Molecules | Input / Text Hidden label 1`] = `
             className="NormalizedInput__Input-sc-1m4kmh9-0 c6"
             placeholder="Placeholder"
             type="text"
+            variant="normal"
           />
         </div>
       </span>
@@ -2607,6 +2671,16 @@ exports[`Storyshots Molecules | Input / Text Left addon 1`] = `
   display: inline-block;
 }
 
+.c8 {
+  width: 32px;
+  top: 0;
+  height: 100%;
+  padding-left: 4px;
+  padding-right: 4px;
+  position: absolute;
+  left: 0;
+}
+
 .c6 {
   font-family: inherit;
   font-size: 100%;
@@ -2621,10 +2695,16 @@ exports[`Storyshots Molecules | Input / Text Left addon 1`] = `
   box-sizing: border-box;
   height: 40px;
   outline: none;
-  border: 1px solid #BCBCB6;
+  border: solid;
+  border-color: #BCBCB6;
+  border-width: 1px;
   position: relative;
   background-color: #FFFFFF;
   padding-left: 32px;
+}
+
+.c6:focus {
+  border-width: 1px;
 }
 
 .c6:hover {
@@ -2635,50 +2715,37 @@ exports[`Storyshots Molecules | Input / Text Left addon 1`] = `
   border-color: #0046FF;
 }
 
-.c6::-moz-placeholder,
-.c6:-ms-input-placeholder,
 .c6::-webkit-input-placeholder {
+  color: #6E6E69;
   height: inherit;
   line-height: inherit;
-  color: #6E6E69;
+  opacity: 1;
 }
 
-.c6::-moz-placeholder,
-.c6:-ms-input-placeholder,
 .c6::-moz-placeholder {
+  color: #6E6E69;
   height: inherit;
   line-height: inherit;
-  color: #6E6E69;
+  opacity: 1;
 }
 
-.c6::-moz-placeholder,
-.c6:-ms-input-placeholder,
 .c6:-ms-input-placeholder {
+  color: #6E6E69;
   height: inherit;
   line-height: inherit;
-  color: #6E6E69;
+  opacity: 1;
 }
 
-.c6::-moz-placeholder,
-.c6:-ms-input-placeholder,
 .c6::placeholder {
+  color: #6E6E69;
   height: inherit;
   line-height: inherit;
-  color: #6E6E69;
+  opacity: 1;
 }
 
 .c5 {
   position: relative;
-}
-
-.c8 {
-  width: 32px;
-  top: 0;
-  height: 100%;
-  padding-left: 4px;
-  padding-right: 4px;
-  position: absolute;
-  left: 0;
+  padding: 0px 0;
 }
 
 <div
@@ -2706,10 +2773,12 @@ exports[`Storyshots Molecules | Input / Text Left addon 1`] = `
             className="NormalizedInput__Input-sc-1m4kmh9-0 c6"
             placeholder="Placeholder"
             type="text"
+            variant="normal"
           />
           <div
             className="c7 c8"
             position="left"
+            variant="normal"
           >
             <svg
               aria-hidden="true"
@@ -2730,6 +2799,1066 @@ exports[`Storyshots Molecules | Input / Text Left addon 1`] = `
     </span>
   </label>
 </div>
+`;
+
+exports[`Storyshots Molecules | Input / Text Quiet 1`] = `
+Array [
+  .c0 {
+  margin-bottom: 16px;
+}
+
+.c1 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 800;
+  font-size: 24px;
+  line-height: 1.1666666666666667;
+}
+
+@media (min-width:760px) {
+  .c1 {
+    font-size: 28px;
+    line-height: 1.1428571428571428;
+  }
+}
+
+<div
+    className="c0"
+  >
+    <span
+      className="c1"
+    >
+      Variant = "quiet"
+    </span>
+  </div>,
+  .c6 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c18 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c23 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c15 {
+  position: absolute;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  -webkit-clip: rect(1px,1px,1px,1px);
+  clip: rect(1px,1px,1px,1px);
+}
+
+.c4 {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.c21 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 16px;
+  height: 16px;
+  fill: #282823;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
+}
+
+.c5 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #6E6E69;
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c7 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c11 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #A0A09B;
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c14 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #FF1900;
+  margin: 0;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.3333333333333333;
+}
+
+.c3 {
+  width: 200px;
+  display: inline-block;
+}
+
+.c10 {
+  width: 100%;
+  display: inline-block;
+}
+
+.c20 {
+  width: 32px;
+  top: 0;
+  height: 100%;
+  padding-left: 4px;
+  padding-right: 4px;
+  position: absolute;
+  left: 0;
+}
+
+.c20:not(:focus) {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.c24 {
+  width: 32px;
+  top: 0;
+  height: 100%;
+  padding-left: 4px;
+  padding-right: 4px;
+  position: absolute;
+  right: 4px;
+}
+
+.c24:not(:focus) {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.c24:not(:focus) {
+  right: 0;
+}
+
+.c9 {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  overflow: visible;
+  border: 0;
+  width: 100%;
+  padding: 0px;
+  margin: 0;
+  line-height: inherit;
+  box-sizing: border-box;
+  height: 40px;
+  outline: none;
+  border: solid;
+  border-color: #BCBCB6;
+  border-width: 0 0 2px 0;
+  position: relative;
+  background-color: #FFFFFF;
+  color: #0046FF;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.c9:focus {
+  border-width: 1px;
+}
+
+.c9:hover {
+  border-color: #4B4B46;
+}
+
+.c9:focus {
+  border-color: #0046FF;
+}
+
+.c9::-webkit-input-placeholder {
+  color: #0046FF;
+  height: inherit;
+  line-height: inherit;
+  opacity: 1;
+}
+
+.c9::-moz-placeholder {
+  color: #0046FF;
+  height: inherit;
+  line-height: inherit;
+  opacity: 1;
+}
+
+.c9:-ms-input-placeholder {
+  color: #0046FF;
+  height: inherit;
+  line-height: inherit;
+  opacity: 1;
+}
+
+.c9::placeholder {
+  color: #0046FF;
+  height: inherit;
+  line-height: inherit;
+  opacity: 1;
+}
+
+.c9:disabled {
+  color: #A0A09B;
+}
+
+.c9:focus {
+  padding-left: 8px;
+  padding-right: 0px;
+}
+
+.c12 {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  overflow: visible;
+  border: 0;
+  width: 100%;
+  padding: 0px;
+  margin: 0;
+  line-height: inherit;
+  box-sizing: border-box;
+  height: 40px;
+  outline: none;
+  border: solid;
+  border-color: #BCBCB6;
+  border-width: 0 0 2px 0;
+  position: relative;
+  border-color: #EBEBE8;
+  background-color: #FFFFFF;
+  color: #0046FF;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.c12:focus {
+  border-width: 1px;
+}
+
+.c12:focus {
+  border-color: #0046FF;
+}
+
+.c12::-webkit-input-placeholder {
+  color: #0046FF;
+  height: inherit;
+  line-height: inherit;
+  opacity: 1;
+}
+
+.c12::-moz-placeholder {
+  color: #0046FF;
+  height: inherit;
+  line-height: inherit;
+  opacity: 1;
+}
+
+.c12:-ms-input-placeholder {
+  color: #0046FF;
+  height: inherit;
+  line-height: inherit;
+  opacity: 1;
+}
+
+.c12::placeholder {
+  color: #0046FF;
+  height: inherit;
+  line-height: inherit;
+  opacity: 1;
+}
+
+.c12:disabled {
+  color: #A0A09B;
+}
+
+.c12:focus {
+  padding-left: 8px;
+  padding-right: 0px;
+}
+
+.c13 {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  overflow: visible;
+  border: 0;
+  width: 100%;
+  padding: 0px;
+  margin: 0;
+  line-height: inherit;
+  box-sizing: border-box;
+  height: 40px;
+  outline: none;
+  border: solid;
+  border-color: #FF1900;
+  border-width: 0 0 2px 0;
+  position: relative;
+  background-color: #FFFFFF;
+  color: #0046FF;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.c13:focus {
+  border-width: 1px;
+}
+
+.c13:hover {
+  border-color: #4B4B46;
+}
+
+.c13:focus {
+  border-color: #0046FF;
+}
+
+.c13::-webkit-input-placeholder {
+  color: #0046FF;
+  height: inherit;
+  line-height: inherit;
+  opacity: 1;
+}
+
+.c13::-moz-placeholder {
+  color: #0046FF;
+  height: inherit;
+  line-height: inherit;
+  opacity: 1;
+}
+
+.c13:-ms-input-placeholder {
+  color: #0046FF;
+  height: inherit;
+  line-height: inherit;
+  opacity: 1;
+}
+
+.c13::placeholder {
+  color: #0046FF;
+  height: inherit;
+  line-height: inherit;
+  opacity: 1;
+}
+
+.c13:disabled {
+  color: #A0A09B;
+}
+
+.c13:focus {
+  padding-left: 8px;
+  padding-right: 0px;
+}
+
+.c16 {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  overflow: visible;
+  border: 0;
+  width: 100%;
+  padding: 0px;
+  margin: 0;
+  line-height: inherit;
+  box-sizing: border-box;
+  height: 40px;
+  outline: none;
+  border: solid;
+  border-color: #00D200;
+  border-width: 0 0 2px 0;
+  position: relative;
+  background-color: #FFFFFF;
+  color: #0046FF;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.c16:focus {
+  border-width: 1px;
+}
+
+.c16:hover {
+  border-color: #4B4B46;
+}
+
+.c16:focus {
+  border-color: #0046FF;
+}
+
+.c16::-webkit-input-placeholder {
+  color: #0046FF;
+  height: inherit;
+  line-height: inherit;
+  opacity: 1;
+}
+
+.c16::-moz-placeholder {
+  color: #0046FF;
+  height: inherit;
+  line-height: inherit;
+  opacity: 1;
+}
+
+.c16:-ms-input-placeholder {
+  color: #0046FF;
+  height: inherit;
+  line-height: inherit;
+  opacity: 1;
+}
+
+.c16::placeholder {
+  color: #0046FF;
+  height: inherit;
+  line-height: inherit;
+  opacity: 1;
+}
+
+.c16:disabled {
+  color: #A0A09B;
+}
+
+.c16:focus {
+  padding-left: 8px;
+  padding-right: 0px;
+}
+
+.c17 {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  overflow: visible;
+  border: 0;
+  width: 100%;
+  padding: 0px;
+  margin: 0;
+  line-height: inherit;
+  box-sizing: border-box;
+  height: 40px;
+  outline: none;
+  border: solid;
+  border-color: #BCBCB6;
+  border-width: 0 0 2px 0;
+  position: relative;
+  background-color: #FFFFFF;
+  padding-left: 32px;
+  color: #0046FF;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.c17:focus {
+  border-width: 1px;
+}
+
+.c17:hover {
+  border-color: #4B4B46;
+}
+
+.c17:focus {
+  border-color: #0046FF;
+}
+
+.c17::-webkit-input-placeholder {
+  color: #0046FF;
+  height: inherit;
+  line-height: inherit;
+  opacity: 1;
+}
+
+.c17::-moz-placeholder {
+  color: #0046FF;
+  height: inherit;
+  line-height: inherit;
+  opacity: 1;
+}
+
+.c17:-ms-input-placeholder {
+  color: #0046FF;
+  height: inherit;
+  line-height: inherit;
+  opacity: 1;
+}
+
+.c17::placeholder {
+  color: #0046FF;
+  height: inherit;
+  line-height: inherit;
+  opacity: 1;
+}
+
+.c17:disabled {
+  color: #A0A09B;
+}
+
+.c17:focus {
+  padding-left: 32px;
+  padding-right: 0px;
+}
+
+.c22 {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  overflow: visible;
+  border: 0;
+  width: 100%;
+  padding: 0px;
+  margin: 0;
+  line-height: inherit;
+  box-sizing: border-box;
+  height: 40px;
+  outline: none;
+  border: solid;
+  border-color: #BCBCB6;
+  border-width: 0 0 2px 0;
+  position: relative;
+  background-color: #FFFFFF;
+  padding-right: 40px;
+  color: #0046FF;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.c22:focus {
+  border-width: 1px;
+}
+
+.c22:hover {
+  border-color: #4B4B46;
+}
+
+.c22:focus {
+  border-color: #0046FF;
+}
+
+.c22::-webkit-input-placeholder {
+  color: #0046FF;
+  height: inherit;
+  line-height: inherit;
+  opacity: 1;
+}
+
+.c22::-moz-placeholder {
+  color: #0046FF;
+  height: inherit;
+  line-height: inherit;
+  opacity: 1;
+}
+
+.c22:-ms-input-placeholder {
+  color: #0046FF;
+  height: inherit;
+  line-height: inherit;
+  opacity: 1;
+}
+
+.c22::placeholder {
+  color: #0046FF;
+  height: inherit;
+  line-height: inherit;
+  opacity: 1;
+}
+
+.c22:disabled {
+  color: #A0A09B;
+}
+
+.c22:focus {
+  padding-left: 8px;
+  padding-right: 32px;
+}
+
+.c22:focus + .c19 {
+  padding-right: 8px;
+}
+
+.c8 {
+  position: relative;
+  padding: 0px 0;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  border: 0px;
+}
+
+.c0 > * {
+  padding: 0px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  border: 1px solid #eee;
+}
+
+.c1 > * {
+  padding: 20px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.c2 {
+  border-right: 1px solid #eee;
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+}
+
+@media (min-width:760px) {
+
+}
+
+<div
+    className="c0"
+    direction="column"
+  >
+    <div
+      className="c1"
+      direction="row"
+    >
+      <div
+        className="c2"
+      >
+        Default
+      </div>
+      <div>
+        <div
+          className="c3"
+        >
+          <label
+            className="c4"
+            hidden={false}
+          >
+            <span
+              className="c5"
+            >
+              <div
+                className="c6"
+              >
+                Label 
+              </div>
+              <span
+                className="c7"
+              >
+                <div
+                  className="c8"
+                >
+                  <input
+                    className="NormalizedInput__Input-sc-1m4kmh9-0 c9"
+                    placeholder="Placeholder"
+                    type="text"
+                    variant="quiet"
+                  />
+                </div>
+              </span>
+            </span>
+          </label>
+        </div>
+      </div>
+    </div>
+    <div
+      className="c1"
+      direction="row"
+    >
+      <div
+        className="c2"
+      >
+        Full width
+      </div>
+      <div>
+        <div
+          className="c10"
+          width="100%"
+        >
+          <label
+            className="c4"
+            hidden={false}
+          >
+            <span
+              className="c5"
+            >
+              <div
+                className="c6"
+              >
+                Label 
+              </div>
+              <span
+                className="c7"
+              >
+                <div
+                  className="c8"
+                >
+                  <input
+                    className="NormalizedInput__Input-sc-1m4kmh9-0 c9"
+                    placeholder="Placeholder"
+                    type="text"
+                    variant="quiet"
+                  />
+                </div>
+              </span>
+            </span>
+          </label>
+        </div>
+      </div>
+    </div>
+    <div
+      className="c1"
+      direction="row"
+    >
+      <div
+        className="c2"
+      >
+        Disabled
+      </div>
+      <div>
+        <div
+          className="c10"
+          width="100%"
+        >
+          <label
+            className="c4"
+            hidden={false}
+          >
+            <span
+              className="c11"
+            >
+              <div
+                className="c6"
+              >
+                Label 
+              </div>
+              <span
+                className="c7"
+              >
+                <div
+                  className="c8"
+                >
+                  <input
+                    className="NormalizedInput__Input-sc-1m4kmh9-0 c12"
+                    disabled={true}
+                    type="text"
+                    value="0"
+                    variant="quiet"
+                  />
+                </div>
+              </span>
+            </span>
+          </label>
+        </div>
+      </div>
+    </div>
+    <div
+      className="c1"
+      direction="row"
+    >
+      <div
+        className="c2"
+      >
+        Error
+      </div>
+      <div>
+        <div
+          className="c3"
+        >
+          <label
+            className="c4"
+            hidden={false}
+          >
+            <span
+              className="c5"
+            >
+              <div
+                className="c6"
+              >
+                Label 
+              </div>
+              <span
+                className="c7"
+              >
+                <div
+                  className="c8"
+                >
+                  <input
+                    aria-invalid={true}
+                    className="NormalizedInput__Input-sc-1m4kmh9-0 c13"
+                    placeholder="Placeholder"
+                    type="text"
+                    variant="quiet"
+                  />
+                </div>
+              </span>
+            </span>
+          </label>
+          <div>
+            <span
+              className="c14"
+            >
+              <div
+                className="c15"
+              >
+                Error: 
+              </div>
+              Some error text that will wrap itself over couple of lines
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      className="c1"
+      direction="row"
+    >
+      <div
+        className="c2"
+      >
+        Success
+      </div>
+      <div>
+        <div
+          className="c3"
+        >
+          <label
+            className="c4"
+            hidden={false}
+          >
+            <span
+              className="c5"
+            >
+              <div
+                className="c6"
+              >
+                Label 
+              </div>
+              <span
+                className="c7"
+              >
+                <div
+                  className="c8"
+                >
+                  <input
+                    className="NormalizedInput__Input-sc-1m4kmh9-0 c16"
+                    placeholder="Placeholder"
+                    type="text"
+                    variant="quiet"
+                  />
+                </div>
+              </span>
+            </span>
+          </label>
+        </div>
+      </div>
+    </div>
+    <div
+      className="c1"
+      direction="row"
+    >
+      <div
+        className="c2"
+      >
+        Left addon
+      </div>
+      <div>
+        <div
+          className="c3"
+        >
+          <label
+            className="c4"
+            hidden={false}
+          >
+            <span
+              className="c5"
+            >
+              <div
+                className="c6"
+              >
+                Label 
+              </div>
+              <span
+                className="c7"
+              >
+                <div
+                  className="c8"
+                >
+                  <input
+                    className="NormalizedInput__Input-sc-1m4kmh9-0 c17"
+                    placeholder="Placeholder"
+                    type="text"
+                    variant="quiet"
+                  />
+                  <div
+                    className="c18 c19 c20"
+                    position="left"
+                    variant="quiet"
+                  >
+                    <svg
+                      aria-hidden="true"
+                      className="c21"
+                      focusable="false"
+                      preserveAspectRatio="xMidYMid meet"
+                      role="presentation"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M15 0L3 13.5h7.5L9 24l12-13.5h-7.5z"
+                        id="a"
+                      />
+                    </svg>
+                  </div>
+                </div>
+              </span>
+            </span>
+          </label>
+        </div>
+      </div>
+    </div>
+    <div
+      className="c1"
+      direction="row"
+    >
+      <div
+        className="c2"
+      >
+        Right addon
+      </div>
+      <div>
+        <div
+          className="c3"
+        >
+          <label
+            className="c4"
+            hidden={false}
+          >
+            <span
+              className="c5"
+            >
+              <div
+                className="c6"
+              >
+                Label 
+              </div>
+              <span
+                className="c7"
+              >
+                <div
+                  className="c8"
+                >
+                  <input
+                    className="NormalizedInput__Input-sc-1m4kmh9-0 c22"
+                    placeholder="Placeholder"
+                    type="text"
+                    variant="quiet"
+                  />
+                  <div
+                    className="c23 c19 c24"
+                    position="right"
+                    variant="quiet"
+                  >
+                    %
+                  </div>
+                </div>
+              </span>
+            </span>
+          </label>
+        </div>
+      </div>
+    </div>
+  </div>,
+  .c0 {
+  margin-bottom: 32px;
+}
+
+@media (min-width:760px) {
+
+}
+
+<div
+    className="c0"
+  />,
+]
 `;
 
 exports[`Storyshots Molecules | Input / Text Required 1`] = `
@@ -2818,9 +3947,15 @@ Array [
   box-sizing: border-box;
   height: 40px;
   outline: none;
-  border: 1px solid #BCBCB6;
+  border: solid;
+  border-color: #BCBCB6;
+  border-width: 1px;
   position: relative;
   background-color: #FFFFFF;
+}
+
+.c9:focus {
+  border-width: 1px;
 }
 
 .c9:hover {
@@ -2831,40 +3966,37 @@ Array [
   border-color: #0046FF;
 }
 
-.c9::-moz-placeholder,
-.c9:-ms-input-placeholder,
 .c9::-webkit-input-placeholder {
+  color: #6E6E69;
   height: inherit;
   line-height: inherit;
-  color: #6E6E69;
+  opacity: 1;
 }
 
-.c9::-moz-placeholder,
-.c9:-ms-input-placeholder,
 .c9::-moz-placeholder {
+  color: #6E6E69;
   height: inherit;
   line-height: inherit;
-  color: #6E6E69;
+  opacity: 1;
 }
 
-.c9::-moz-placeholder,
-.c9:-ms-input-placeholder,
 .c9:-ms-input-placeholder {
+  color: #6E6E69;
   height: inherit;
   line-height: inherit;
-  color: #6E6E69;
+  opacity: 1;
 }
 
-.c9::-moz-placeholder,
-.c9:-ms-input-placeholder,
 .c9::placeholder {
+  color: #6E6E69;
   height: inherit;
   line-height: inherit;
-  color: #6E6E69;
+  opacity: 1;
 }
 
 .c8 {
   position: relative;
+  padding: 0px 0;
 }
 
 .c0 {
@@ -2968,6 +4100,7 @@ Array [
                     placeholder="Placeholder"
                     required={true}
                     type="text"
+                    variant="normal"
                   />
                 </div>
               </span>
@@ -3012,6 +4145,7 @@ Array [
                     placeholder="Placeholder"
                     required={true}
                     type="text"
+                    variant="normal"
                   />
                 </div>
               </span>
@@ -3093,6 +4227,16 @@ exports[`Storyshots Molecules | Input / Text Right addon 1`] = `
   display: inline-block;
 }
 
+.c8 {
+  width: 32px;
+  top: 0;
+  height: 100%;
+  padding-left: 4px;
+  padding-right: 4px;
+  position: absolute;
+  right: 4px;
+}
+
 .c6 {
   font-family: inherit;
   font-size: 100%;
@@ -3107,10 +4251,16 @@ exports[`Storyshots Molecules | Input / Text Right addon 1`] = `
   box-sizing: border-box;
   height: 40px;
   outline: none;
-  border: 1px solid #BCBCB6;
+  border: solid;
+  border-color: #BCBCB6;
+  border-width: 1px;
   position: relative;
   background-color: #FFFFFF;
   padding-right: 40px;
+}
+
+.c6:focus {
+  border-width: 1px;
 }
 
 .c6:hover {
@@ -3121,50 +4271,37 @@ exports[`Storyshots Molecules | Input / Text Right addon 1`] = `
   border-color: #0046FF;
 }
 
-.c6::-moz-placeholder,
-.c6:-ms-input-placeholder,
 .c6::-webkit-input-placeholder {
+  color: #6E6E69;
   height: inherit;
   line-height: inherit;
-  color: #6E6E69;
+  opacity: 1;
 }
 
-.c6::-moz-placeholder,
-.c6:-ms-input-placeholder,
 .c6::-moz-placeholder {
+  color: #6E6E69;
   height: inherit;
   line-height: inherit;
-  color: #6E6E69;
+  opacity: 1;
 }
 
-.c6::-moz-placeholder,
-.c6:-ms-input-placeholder,
 .c6:-ms-input-placeholder {
+  color: #6E6E69;
   height: inherit;
   line-height: inherit;
-  color: #6E6E69;
+  opacity: 1;
 }
 
-.c6::-moz-placeholder,
-.c6:-ms-input-placeholder,
 .c6::placeholder {
+  color: #6E6E69;
   height: inherit;
   line-height: inherit;
-  color: #6E6E69;
+  opacity: 1;
 }
 
 .c5 {
   position: relative;
-}
-
-.c8 {
-  width: 32px;
-  top: 0;
-  height: 100%;
-  padding-left: 4px;
-  padding-right: 4px;
-  position: absolute;
-  right: 4px;
+  padding: 0px 0;
 }
 
 <div
@@ -3192,10 +4329,12 @@ exports[`Storyshots Molecules | Input / Text Right addon 1`] = `
             className="NormalizedInput__Input-sc-1m4kmh9-0 c6"
             placeholder="Placeholder"
             type="text"
+            variant="normal"
           />
           <div
             className="c7 c8"
             position="right"
+            variant="normal"
           >
             SEK
           </div>
@@ -3427,9 +4566,15 @@ exports[`Storyshots Molecules | Input / Text Simple login form 1`] = `
   box-sizing: border-box;
   height: 40px;
   outline: none;
-  border: 1px solid #BCBCB6;
+  border: solid;
+  border-color: #BCBCB6;
+  border-width: 1px;
   position: relative;
   background-color: #FFFFFF;
+}
+
+.c9:focus {
+  border-width: 1px;
 }
 
 .c9:hover {
@@ -3440,36 +4585,32 @@ exports[`Storyshots Molecules | Input / Text Simple login form 1`] = `
   border-color: #0046FF;
 }
 
-.c9::-moz-placeholder,
-.c9:-ms-input-placeholder,
 .c9::-webkit-input-placeholder {
+  color: #6E6E69;
   height: inherit;
   line-height: inherit;
-  color: #6E6E69;
+  opacity: 1;
 }
 
-.c9::-moz-placeholder,
-.c9:-ms-input-placeholder,
 .c9::-moz-placeholder {
+  color: #6E6E69;
   height: inherit;
   line-height: inherit;
-  color: #6E6E69;
+  opacity: 1;
 }
 
-.c9::-moz-placeholder,
-.c9:-ms-input-placeholder,
 .c9:-ms-input-placeholder {
+  color: #6E6E69;
   height: inherit;
   line-height: inherit;
-  color: #6E6E69;
+  opacity: 1;
 }
 
-.c9::-moz-placeholder,
-.c9:-ms-input-placeholder,
 .c9::placeholder {
+  color: #6E6E69;
   height: inherit;
   line-height: inherit;
-  color: #6E6E69;
+  opacity: 1;
 }
 
 .c11 {
@@ -3486,9 +4627,15 @@ exports[`Storyshots Molecules | Input / Text Simple login form 1`] = `
   box-sizing: border-box;
   height: 40px;
   outline: none;
-  border: 1px solid #FF1900;
+  border: solid;
+  border-color: #FF1900;
+  border-width: 1px;
   position: relative;
   background-color: #FFFFFF;
+}
+
+.c11:focus {
+  border-width: 1px;
 }
 
 .c11:hover {
@@ -3499,40 +4646,37 @@ exports[`Storyshots Molecules | Input / Text Simple login form 1`] = `
   border-color: #0046FF;
 }
 
-.c11::-moz-placeholder,
-.c11:-ms-input-placeholder,
 .c11::-webkit-input-placeholder {
+  color: #6E6E69;
   height: inherit;
   line-height: inherit;
-  color: #6E6E69;
+  opacity: 1;
 }
 
-.c11::-moz-placeholder,
-.c11:-ms-input-placeholder,
 .c11::-moz-placeholder {
+  color: #6E6E69;
   height: inherit;
   line-height: inherit;
-  color: #6E6E69;
+  opacity: 1;
 }
 
-.c11::-moz-placeholder,
-.c11:-ms-input-placeholder,
 .c11:-ms-input-placeholder {
+  color: #6E6E69;
   height: inherit;
   line-height: inherit;
-  color: #6E6E69;
+  opacity: 1;
 }
 
-.c11::-moz-placeholder,
-.c11:-ms-input-placeholder,
 .c11::placeholder {
+  color: #6E6E69;
   height: inherit;
   line-height: inherit;
-  color: #6E6E69;
+  opacity: 1;
 }
 
 .c8 {
   position: relative;
+  padding: 0px 0;
 }
 
 <div
@@ -3570,6 +4714,7 @@ exports[`Storyshots Molecules | Input / Text Simple login form 1`] = `
                   className="NormalizedInput__Input-sc-1m4kmh9-0 c9"
                   placeholder="Username"
                   type="text"
+                  variant="normal"
                 />
               </div>
             </span>
@@ -3614,6 +4759,7 @@ exports[`Storyshots Molecules | Input / Text Simple login form 1`] = `
                   className="NormalizedInput__Input-sc-1m4kmh9-0 c11"
                   placeholder="Password"
                   type="text"
+                  variant="normal"
                 />
               </div>
             </span>
@@ -3779,248 +4925,6 @@ Array [
   display: inline-block;
 }
 
-.c9 {
-  font-family: inherit;
-  font-size: 100%;
-  line-height: 1.15;
-  margin: 0;
-  overflow: visible;
-  border: 0;
-  width: 100%;
-  padding: 8px;
-  margin: 0;
-  line-height: inherit;
-  box-sizing: border-box;
-  height: 32px;
-  outline: none;
-  border: 1px solid #BCBCB6;
-  position: relative;
-  background-color: #FFFFFF;
-}
-
-.c9:hover {
-  border-color: #4B4B46;
-}
-
-.c9:focus {
-  border-color: #0046FF;
-}
-
-.c9::-moz-placeholder,
-.c9:-ms-input-placeholder,
-.c9::-webkit-input-placeholder {
-  height: inherit;
-  line-height: inherit;
-  color: #6E6E69;
-}
-
-.c9::-moz-placeholder,
-.c9:-ms-input-placeholder,
-.c9::-moz-placeholder {
-  height: inherit;
-  line-height: inherit;
-  color: #6E6E69;
-}
-
-.c9::-moz-placeholder,
-.c9:-ms-input-placeholder,
-.c9:-ms-input-placeholder {
-  height: inherit;
-  line-height: inherit;
-  color: #6E6E69;
-}
-
-.c9::-moz-placeholder,
-.c9:-ms-input-placeholder,
-.c9::placeholder {
-  height: inherit;
-  line-height: inherit;
-  color: #6E6E69;
-}
-
-.c11 {
-  font-family: inherit;
-  font-size: 100%;
-  line-height: 1.15;
-  margin: 0;
-  overflow: visible;
-  border: 0;
-  width: 100%;
-  padding: 8px;
-  margin: 0;
-  line-height: inherit;
-  box-sizing: border-box;
-  height: 32px;
-  outline: none;
-  border: 1px solid #FF1900;
-  position: relative;
-  background-color: #FFFFFF;
-}
-
-.c11:hover {
-  border-color: #4B4B46;
-}
-
-.c11:focus {
-  border-color: #0046FF;
-}
-
-.c11::-moz-placeholder,
-.c11:-ms-input-placeholder,
-.c11::-webkit-input-placeholder {
-  height: inherit;
-  line-height: inherit;
-  color: #6E6E69;
-}
-
-.c11::-moz-placeholder,
-.c11:-ms-input-placeholder,
-.c11::-moz-placeholder {
-  height: inherit;
-  line-height: inherit;
-  color: #6E6E69;
-}
-
-.c11::-moz-placeholder,
-.c11:-ms-input-placeholder,
-.c11:-ms-input-placeholder {
-  height: inherit;
-  line-height: inherit;
-  color: #6E6E69;
-}
-
-.c11::-moz-placeholder,
-.c11:-ms-input-placeholder,
-.c11::placeholder {
-  height: inherit;
-  line-height: inherit;
-  color: #6E6E69;
-}
-
-.c14 {
-  font-family: inherit;
-  font-size: 100%;
-  line-height: 1.15;
-  margin: 0;
-  overflow: visible;
-  border: 0;
-  width: 100%;
-  padding: 8px;
-  margin: 0;
-  line-height: inherit;
-  box-sizing: border-box;
-  height: 32px;
-  outline: none;
-  border: 1px solid #BCBCB6;
-  position: relative;
-  background-color: #FFFFFF;
-  padding-left: 32px;
-}
-
-.c14:hover {
-  border-color: #4B4B46;
-}
-
-.c14:focus {
-  border-color: #0046FF;
-}
-
-.c14::-moz-placeholder,
-.c14:-ms-input-placeholder,
-.c14::-webkit-input-placeholder {
-  height: inherit;
-  line-height: inherit;
-  color: #6E6E69;
-}
-
-.c14::-moz-placeholder,
-.c14:-ms-input-placeholder,
-.c14::-moz-placeholder {
-  height: inherit;
-  line-height: inherit;
-  color: #6E6E69;
-}
-
-.c14::-moz-placeholder,
-.c14:-ms-input-placeholder,
-.c14:-ms-input-placeholder {
-  height: inherit;
-  line-height: inherit;
-  color: #6E6E69;
-}
-
-.c14::-moz-placeholder,
-.c14:-ms-input-placeholder,
-.c14::placeholder {
-  height: inherit;
-  line-height: inherit;
-  color: #6E6E69;
-}
-
-.c18 {
-  font-family: inherit;
-  font-size: 100%;
-  line-height: 1.15;
-  margin: 0;
-  overflow: visible;
-  border: 0;
-  width: 100%;
-  padding: 8px;
-  margin: 0;
-  line-height: inherit;
-  box-sizing: border-box;
-  height: 32px;
-  outline: none;
-  border: 1px solid #BCBCB6;
-  position: relative;
-  background-color: #FFFFFF;
-  padding-right: 40px;
-}
-
-.c18:hover {
-  border-color: #4B4B46;
-}
-
-.c18:focus {
-  border-color: #0046FF;
-}
-
-.c18::-moz-placeholder,
-.c18:-ms-input-placeholder,
-.c18::-webkit-input-placeholder {
-  height: inherit;
-  line-height: inherit;
-  color: #6E6E69;
-}
-
-.c18::-moz-placeholder,
-.c18:-ms-input-placeholder,
-.c18::-moz-placeholder {
-  height: inherit;
-  line-height: inherit;
-  color: #6E6E69;
-}
-
-.c18::-moz-placeholder,
-.c18:-ms-input-placeholder,
-.c18:-ms-input-placeholder {
-  height: inherit;
-  line-height: inherit;
-  color: #6E6E69;
-}
-
-.c18::-moz-placeholder,
-.c18:-ms-input-placeholder,
-.c18::placeholder {
-  height: inherit;
-  line-height: inherit;
-  color: #6E6E69;
-}
-
-.c8 {
-  position: relative;
-}
-
 .c16 {
   width: 32px;
   top: 0;
@@ -4039,6 +4943,257 @@ Array [
   padding-right: 4px;
   position: absolute;
   right: 4px;
+}
+
+.c9 {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  overflow: visible;
+  border: 0;
+  width: 100%;
+  padding: 8px;
+  margin: 0;
+  line-height: inherit;
+  box-sizing: border-box;
+  height: 32px;
+  outline: none;
+  border: solid;
+  border-color: #BCBCB6;
+  border-width: 1px;
+  position: relative;
+  background-color: #FFFFFF;
+}
+
+.c9:focus {
+  border-width: 1px;
+}
+
+.c9:hover {
+  border-color: #4B4B46;
+}
+
+.c9:focus {
+  border-color: #0046FF;
+}
+
+.c9::-webkit-input-placeholder {
+  color: #6E6E69;
+  height: inherit;
+  line-height: inherit;
+  opacity: 1;
+}
+
+.c9::-moz-placeholder {
+  color: #6E6E69;
+  height: inherit;
+  line-height: inherit;
+  opacity: 1;
+}
+
+.c9:-ms-input-placeholder {
+  color: #6E6E69;
+  height: inherit;
+  line-height: inherit;
+  opacity: 1;
+}
+
+.c9::placeholder {
+  color: #6E6E69;
+  height: inherit;
+  line-height: inherit;
+  opacity: 1;
+}
+
+.c11 {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  overflow: visible;
+  border: 0;
+  width: 100%;
+  padding: 8px;
+  margin: 0;
+  line-height: inherit;
+  box-sizing: border-box;
+  height: 32px;
+  outline: none;
+  border: solid;
+  border-color: #FF1900;
+  border-width: 1px;
+  position: relative;
+  background-color: #FFFFFF;
+}
+
+.c11:focus {
+  border-width: 1px;
+}
+
+.c11:hover {
+  border-color: #4B4B46;
+}
+
+.c11:focus {
+  border-color: #0046FF;
+}
+
+.c11::-webkit-input-placeholder {
+  color: #6E6E69;
+  height: inherit;
+  line-height: inherit;
+  opacity: 1;
+}
+
+.c11::-moz-placeholder {
+  color: #6E6E69;
+  height: inherit;
+  line-height: inherit;
+  opacity: 1;
+}
+
+.c11:-ms-input-placeholder {
+  color: #6E6E69;
+  height: inherit;
+  line-height: inherit;
+  opacity: 1;
+}
+
+.c11::placeholder {
+  color: #6E6E69;
+  height: inherit;
+  line-height: inherit;
+  opacity: 1;
+}
+
+.c14 {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  overflow: visible;
+  border: 0;
+  width: 100%;
+  padding: 8px;
+  margin: 0;
+  line-height: inherit;
+  box-sizing: border-box;
+  height: 32px;
+  outline: none;
+  border: solid;
+  border-color: #BCBCB6;
+  border-width: 1px;
+  position: relative;
+  background-color: #FFFFFF;
+  padding-left: 32px;
+}
+
+.c14:focus {
+  border-width: 1px;
+}
+
+.c14:hover {
+  border-color: #4B4B46;
+}
+
+.c14:focus {
+  border-color: #0046FF;
+}
+
+.c14::-webkit-input-placeholder {
+  color: #6E6E69;
+  height: inherit;
+  line-height: inherit;
+  opacity: 1;
+}
+
+.c14::-moz-placeholder {
+  color: #6E6E69;
+  height: inherit;
+  line-height: inherit;
+  opacity: 1;
+}
+
+.c14:-ms-input-placeholder {
+  color: #6E6E69;
+  height: inherit;
+  line-height: inherit;
+  opacity: 1;
+}
+
+.c14::placeholder {
+  color: #6E6E69;
+  height: inherit;
+  line-height: inherit;
+  opacity: 1;
+}
+
+.c18 {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  overflow: visible;
+  border: 0;
+  width: 100%;
+  padding: 8px;
+  margin: 0;
+  line-height: inherit;
+  box-sizing: border-box;
+  height: 32px;
+  outline: none;
+  border: solid;
+  border-color: #BCBCB6;
+  border-width: 1px;
+  position: relative;
+  background-color: #FFFFFF;
+  padding-right: 40px;
+}
+
+.c18:focus {
+  border-width: 1px;
+}
+
+.c18:hover {
+  border-color: #4B4B46;
+}
+
+.c18:focus {
+  border-color: #0046FF;
+}
+
+.c18::-webkit-input-placeholder {
+  color: #6E6E69;
+  height: inherit;
+  line-height: inherit;
+  opacity: 1;
+}
+
+.c18::-moz-placeholder {
+  color: #6E6E69;
+  height: inherit;
+  line-height: inherit;
+  opacity: 1;
+}
+
+.c18:-ms-input-placeholder {
+  color: #6E6E69;
+  height: inherit;
+  line-height: inherit;
+  opacity: 1;
+}
+
+.c18::placeholder {
+  color: #6E6E69;
+  height: inherit;
+  line-height: inherit;
+  opacity: 1;
+}
+
+.c8 {
+  position: relative;
+  padding: 0px 0;
 }
 
 .c0 {
@@ -4141,6 +5296,7 @@ Array [
                     className="NormalizedInput__Input-sc-1m4kmh9-0 c9"
                     placeholder="Placeholder"
                     type="text"
+                    variant="normal"
                   />
                 </div>
               </span>
@@ -4185,6 +5341,7 @@ Array [
                     className="NormalizedInput__Input-sc-1m4kmh9-0 c9"
                     placeholder="Placeholder"
                     type="text"
+                    variant="normal"
                   />
                 </div>
               </span>
@@ -4229,6 +5386,7 @@ Array [
                     className="NormalizedInput__Input-sc-1m4kmh9-0 c11"
                     placeholder="Placeholder"
                     type="text"
+                    variant="normal"
                   />
                 </div>
               </span>
@@ -4284,10 +5442,12 @@ Array [
                     className="NormalizedInput__Input-sc-1m4kmh9-0 c14"
                     placeholder="Placeholder"
                     type="text"
+                    variant="normal"
                   />
                   <div
                     className="c15 c16"
                     position="left"
+                    variant="normal"
                   >
                     <svg
                       aria-hidden="true"
@@ -4345,10 +5505,12 @@ Array [
                     className="NormalizedInput__Input-sc-1m4kmh9-0 c18"
                     placeholder="Placeholder"
                     type="text"
+                    variant="normal"
                   />
                   <div
                     className="c15 c19"
                     position="right"
+                    variant="normal"
                   >
                     SEK
                   </div>
@@ -4430,9 +5592,15 @@ exports[`Storyshots Molecules | Input / Text Success 1`] = `
   box-sizing: border-box;
   height: 40px;
   outline: none;
-  border: 1px solid #00D200;
+  border: solid;
+  border-color: #00D200;
+  border-width: 1px;
   position: relative;
   background-color: #FFFFFF;
+}
+
+.c6:focus {
+  border-width: 1px;
 }
 
 .c6:hover {
@@ -4443,40 +5611,37 @@ exports[`Storyshots Molecules | Input / Text Success 1`] = `
   border-color: #0046FF;
 }
 
-.c6::-moz-placeholder,
-.c6:-ms-input-placeholder,
 .c6::-webkit-input-placeholder {
+  color: #6E6E69;
   height: inherit;
   line-height: inherit;
-  color: #6E6E69;
+  opacity: 1;
 }
 
-.c6::-moz-placeholder,
-.c6:-ms-input-placeholder,
 .c6::-moz-placeholder {
+  color: #6E6E69;
   height: inherit;
   line-height: inherit;
-  color: #6E6E69;
+  opacity: 1;
 }
 
-.c6::-moz-placeholder,
-.c6:-ms-input-placeholder,
 .c6:-ms-input-placeholder {
+  color: #6E6E69;
   height: inherit;
   line-height: inherit;
-  color: #6E6E69;
+  opacity: 1;
 }
 
-.c6::-moz-placeholder,
-.c6:-ms-input-placeholder,
 .c6::placeholder {
+  color: #6E6E69;
   height: inherit;
   line-height: inherit;
-  color: #6E6E69;
+  opacity: 1;
 }
 
 .c5 {
   position: relative;
+  padding: 0px 0;
 }
 
 <div
@@ -4504,6 +5669,7 @@ exports[`Storyshots Molecules | Input / Text Success 1`] = `
             className="NormalizedInput__Input-sc-1m4kmh9-0 c6"
             placeholder="Placeholder"
             type="text"
+            variant="normal"
           />
         </div>
       </span>
@@ -4569,9 +5735,15 @@ Array [
   box-sizing: border-box;
   height: 40px;
   outline: none;
-  border: 1px solid #BCBCB6;
+  border: solid;
+  border-color: #BCBCB6;
+  border-width: 1px;
   position: relative;
   background-color: #FFFFFF;
+}
+
+.c6:focus {
+  border-width: 1px;
 }
 
 .c6:hover {
@@ -4582,40 +5754,37 @@ Array [
   border-color: #0046FF;
 }
 
-.c6::-moz-placeholder,
-.c6:-ms-input-placeholder,
 .c6::-webkit-input-placeholder {
+  color: #6E6E69;
   height: inherit;
   line-height: inherit;
-  color: #6E6E69;
+  opacity: 1;
 }
 
-.c6::-moz-placeholder,
-.c6:-ms-input-placeholder,
 .c6::-moz-placeholder {
+  color: #6E6E69;
   height: inherit;
   line-height: inherit;
-  color: #6E6E69;
+  opacity: 1;
 }
 
-.c6::-moz-placeholder,
-.c6:-ms-input-placeholder,
 .c6:-ms-input-placeholder {
+  color: #6E6E69;
   height: inherit;
   line-height: inherit;
-  color: #6E6E69;
+  opacity: 1;
 }
 
-.c6::-moz-placeholder,
-.c6:-ms-input-placeholder,
 .c6::placeholder {
+  color: #6E6E69;
   height: inherit;
   line-height: inherit;
-  color: #6E6E69;
+  opacity: 1;
 }
 
 .c5 {
   position: relative;
+  padding: 0px 0;
 }
 
 <div
@@ -4644,6 +5813,7 @@ Array [
               className="NormalizedInput__Input-sc-1m4kmh9-0 c6"
               placeholder="Placeholder"
               type="text"
+              variant="normal"
             />
           </div>
         </span>
@@ -4705,9 +5875,15 @@ Array [
   box-sizing: border-box;
   height: 40px;
   outline: none;
-  border: 1px solid #BCBCB6;
+  border: solid;
+  border-color: #BCBCB6;
+  border-width: 1px;
   position: relative;
   background-color: #FFFFFF;
+}
+
+.c6:focus {
+  border-width: 1px;
 }
 
 .c6:hover {
@@ -4718,40 +5894,37 @@ Array [
   border-color: #0046FF;
 }
 
-.c6::-moz-placeholder,
-.c6:-ms-input-placeholder,
 .c6::-webkit-input-placeholder {
+  color: #6E6E69;
   height: inherit;
   line-height: inherit;
-  color: #6E6E69;
+  opacity: 1;
 }
 
-.c6::-moz-placeholder,
-.c6:-ms-input-placeholder,
 .c6::-moz-placeholder {
+  color: #6E6E69;
   height: inherit;
   line-height: inherit;
-  color: #6E6E69;
+  opacity: 1;
 }
 
-.c6::-moz-placeholder,
-.c6:-ms-input-placeholder,
 .c6:-ms-input-placeholder {
+  color: #6E6E69;
   height: inherit;
   line-height: inherit;
-  color: #6E6E69;
+  opacity: 1;
 }
 
-.c6::-moz-placeholder,
-.c6:-ms-input-placeholder,
 .c6::placeholder {
+  color: #6E6E69;
   height: inherit;
   line-height: inherit;
-  color: #6E6E69;
+  opacity: 1;
 }
 
 .c5 {
   position: relative;
+  padding: 0px 0;
 }
 
 <div
@@ -4780,6 +5953,7 @@ Array [
               className="NormalizedInput__Input-sc-1m4kmh9-0 c6"
               placeholder="Placeholder"
               type="email"
+              variant="normal"
             />
           </div>
         </span>
@@ -4841,9 +6015,15 @@ Array [
   box-sizing: border-box;
   height: 40px;
   outline: none;
-  border: 1px solid #BCBCB6;
+  border: solid;
+  border-color: #BCBCB6;
+  border-width: 1px;
   position: relative;
   background-color: #FFFFFF;
+}
+
+.c6:focus {
+  border-width: 1px;
 }
 
 .c6:hover {
@@ -4854,40 +6034,37 @@ Array [
   border-color: #0046FF;
 }
 
-.c6::-moz-placeholder,
-.c6:-ms-input-placeholder,
 .c6::-webkit-input-placeholder {
+  color: #6E6E69;
   height: inherit;
   line-height: inherit;
-  color: #6E6E69;
+  opacity: 1;
 }
 
-.c6::-moz-placeholder,
-.c6:-ms-input-placeholder,
 .c6::-moz-placeholder {
+  color: #6E6E69;
   height: inherit;
   line-height: inherit;
-  color: #6E6E69;
+  opacity: 1;
 }
 
-.c6::-moz-placeholder,
-.c6:-ms-input-placeholder,
 .c6:-ms-input-placeholder {
+  color: #6E6E69;
   height: inherit;
   line-height: inherit;
-  color: #6E6E69;
+  opacity: 1;
 }
 
-.c6::-moz-placeholder,
-.c6:-ms-input-placeholder,
 .c6::placeholder {
+  color: #6E6E69;
   height: inherit;
   line-height: inherit;
-  color: #6E6E69;
+  opacity: 1;
 }
 
 .c5 {
   position: relative;
+  padding: 0px 0;
 }
 
 <div
@@ -4916,6 +6093,7 @@ Array [
               className="NormalizedInput__Input-sc-1m4kmh9-0 c6"
               placeholder="Placeholder"
               type="tel"
+              variant="normal"
             />
           </div>
         </span>
@@ -4981,9 +6159,15 @@ exports[`Storyshots Molecules | Input / Text With auto focus 1`] = `
   box-sizing: border-box;
   height: 40px;
   outline: none;
-  border: 1px solid #BCBCB6;
+  border: solid;
+  border-color: #BCBCB6;
+  border-width: 1px;
   position: relative;
   background-color: #FFFFFF;
+}
+
+.c6:focus {
+  border-width: 1px;
 }
 
 .c6:hover {
@@ -4994,40 +6178,37 @@ exports[`Storyshots Molecules | Input / Text With auto focus 1`] = `
   border-color: #0046FF;
 }
 
-.c6::-moz-placeholder,
-.c6:-ms-input-placeholder,
 .c6::-webkit-input-placeholder {
+  color: #6E6E69;
   height: inherit;
   line-height: inherit;
-  color: #6E6E69;
+  opacity: 1;
 }
 
-.c6::-moz-placeholder,
-.c6:-ms-input-placeholder,
 .c6::-moz-placeholder {
+  color: #6E6E69;
   height: inherit;
   line-height: inherit;
-  color: #6E6E69;
+  opacity: 1;
 }
 
-.c6::-moz-placeholder,
-.c6:-ms-input-placeholder,
 .c6:-ms-input-placeholder {
+  color: #6E6E69;
   height: inherit;
   line-height: inherit;
-  color: #6E6E69;
+  opacity: 1;
 }
 
-.c6::-moz-placeholder,
-.c6:-ms-input-placeholder,
 .c6::placeholder {
+  color: #6E6E69;
   height: inherit;
   line-height: inherit;
-  color: #6E6E69;
+  opacity: 1;
 }
 
 .c5 {
   position: relative;
+  padding: 0px 0;
 }
 
 <div
@@ -5056,6 +6237,7 @@ exports[`Storyshots Molecules | Input / Text With auto focus 1`] = `
             className="NormalizedInput__Input-sc-1m4kmh9-0 c6"
             placeholder="Placeholder"
             type="text"
+            variant="normal"
           />
         </div>
       </span>
@@ -5120,9 +6302,15 @@ exports[`Storyshots Molecules | Input / Text With default value (Uncontrolled be
   box-sizing: border-box;
   height: 40px;
   outline: none;
-  border: 1px solid #BCBCB6;
+  border: solid;
+  border-color: #BCBCB6;
+  border-width: 1px;
   position: relative;
   background-color: #FFFFFF;
+}
+
+.c6:focus {
+  border-width: 1px;
 }
 
 .c6:hover {
@@ -5133,40 +6321,37 @@ exports[`Storyshots Molecules | Input / Text With default value (Uncontrolled be
   border-color: #0046FF;
 }
 
-.c6::-moz-placeholder,
-.c6:-ms-input-placeholder,
 .c6::-webkit-input-placeholder {
+  color: #6E6E69;
   height: inherit;
   line-height: inherit;
-  color: #6E6E69;
+  opacity: 1;
 }
 
-.c6::-moz-placeholder,
-.c6:-ms-input-placeholder,
 .c6::-moz-placeholder {
+  color: #6E6E69;
   height: inherit;
   line-height: inherit;
-  color: #6E6E69;
+  opacity: 1;
 }
 
-.c6::-moz-placeholder,
-.c6:-ms-input-placeholder,
 .c6:-ms-input-placeholder {
+  color: #6E6E69;
   height: inherit;
   line-height: inherit;
-  color: #6E6E69;
+  opacity: 1;
 }
 
-.c6::-moz-placeholder,
-.c6:-ms-input-placeholder,
 .c6::placeholder {
+  color: #6E6E69;
   height: inherit;
   line-height: inherit;
-  color: #6E6E69;
+  opacity: 1;
 }
 
 .c5 {
   position: relative;
+  padding: 0px 0;
 }
 
 <div
@@ -5195,6 +6380,7 @@ exports[`Storyshots Molecules | Input / Text With default value (Uncontrolled be
             defaultValue="Some predefined text"
             placeholder="Placeholder"
             type="text"
+            variant="normal"
           />
         </div>
       </span>
@@ -5259,9 +6445,15 @@ exports[`Storyshots Molecules | Input / Text With maxLength 1`] = `
   box-sizing: border-box;
   height: 40px;
   outline: none;
-  border: 1px solid #BCBCB6;
+  border: solid;
+  border-color: #BCBCB6;
+  border-width: 1px;
   position: relative;
   background-color: #FFFFFF;
+}
+
+.c6:focus {
+  border-width: 1px;
 }
 
 .c6:hover {
@@ -5272,40 +6464,37 @@ exports[`Storyshots Molecules | Input / Text With maxLength 1`] = `
   border-color: #0046FF;
 }
 
-.c6::-moz-placeholder,
-.c6:-ms-input-placeholder,
 .c6::-webkit-input-placeholder {
+  color: #6E6E69;
   height: inherit;
   line-height: inherit;
-  color: #6E6E69;
+  opacity: 1;
 }
 
-.c6::-moz-placeholder,
-.c6:-ms-input-placeholder,
 .c6::-moz-placeholder {
+  color: #6E6E69;
   height: inherit;
   line-height: inherit;
-  color: #6E6E69;
+  opacity: 1;
 }
 
-.c6::-moz-placeholder,
-.c6:-ms-input-placeholder,
 .c6:-ms-input-placeholder {
+  color: #6E6E69;
   height: inherit;
   line-height: inherit;
-  color: #6E6E69;
+  opacity: 1;
 }
 
-.c6::-moz-placeholder,
-.c6:-ms-input-placeholder,
 .c6::placeholder {
+  color: #6E6E69;
   height: inherit;
   line-height: inherit;
-  color: #6E6E69;
+  opacity: 1;
 }
 
 .c5 {
   position: relative;
+  padding: 0px 0;
 }
 
 <div
@@ -5334,6 +6523,7 @@ exports[`Storyshots Molecules | Input / Text With maxLength 1`] = `
             maxLength={3}
             placeholder="Placeholder"
             type="text"
+            variant="normal"
           />
         </div>
       </span>
@@ -5420,9 +6610,15 @@ exports[`Storyshots Molecules | Input / Text With tooltip as label addon 1`] = `
   box-sizing: border-box;
   height: 40px;
   outline: none;
-  border: 1px solid #BCBCB6;
+  border: solid;
+  border-color: #BCBCB6;
+  border-width: 1px;
   position: relative;
   background-color: #FFFFFF;
+}
+
+.c9:focus {
+  border-width: 1px;
 }
 
 .c9:hover {
@@ -5433,40 +6629,37 @@ exports[`Storyshots Molecules | Input / Text With tooltip as label addon 1`] = `
   border-color: #0046FF;
 }
 
-.c9::-moz-placeholder,
-.c9:-ms-input-placeholder,
 .c9::-webkit-input-placeholder {
+  color: #6E6E69;
   height: inherit;
   line-height: inherit;
-  color: #6E6E69;
+  opacity: 1;
 }
 
-.c9::-moz-placeholder,
-.c9:-ms-input-placeholder,
 .c9::-moz-placeholder {
+  color: #6E6E69;
   height: inherit;
   line-height: inherit;
-  color: #6E6E69;
+  opacity: 1;
 }
 
-.c9::-moz-placeholder,
-.c9:-ms-input-placeholder,
 .c9:-ms-input-placeholder {
+  color: #6E6E69;
   height: inherit;
   line-height: inherit;
-  color: #6E6E69;
+  opacity: 1;
 }
 
-.c9::-moz-placeholder,
-.c9:-ms-input-placeholder,
 .c9::placeholder {
+  color: #6E6E69;
   height: inherit;
   line-height: inherit;
-  color: #6E6E69;
+  opacity: 1;
 }
 
 .c8 {
   position: relative;
+  padding: 0px 0;
 }
 
 <div
@@ -5522,6 +6715,7 @@ exports[`Storyshots Molecules | Input / Text With tooltip as label addon 1`] = `
             className="NormalizedInput__Input-sc-1m4kmh9-0 c9"
             placeholder="Placeholder"
             type="text"
+            variant="normal"
           />
         </div>
       </span>
@@ -5586,9 +6780,15 @@ exports[`Storyshots Molecules | Input / Text With value (Controlled behaviour) 1
   box-sizing: border-box;
   height: 40px;
   outline: none;
-  border: 1px solid #BCBCB6;
+  border: solid;
+  border-color: #BCBCB6;
+  border-width: 1px;
   position: relative;
   background-color: #FFFFFF;
+}
+
+.c6:focus {
+  border-width: 1px;
 }
 
 .c6:hover {
@@ -5599,40 +6799,37 @@ exports[`Storyshots Molecules | Input / Text With value (Controlled behaviour) 1
   border-color: #0046FF;
 }
 
-.c6::-moz-placeholder,
-.c6:-ms-input-placeholder,
 .c6::-webkit-input-placeholder {
+  color: #6E6E69;
   height: inherit;
   line-height: inherit;
-  color: #6E6E69;
+  opacity: 1;
 }
 
-.c6::-moz-placeholder,
-.c6:-ms-input-placeholder,
 .c6::-moz-placeholder {
+  color: #6E6E69;
   height: inherit;
   line-height: inherit;
-  color: #6E6E69;
+  opacity: 1;
 }
 
-.c6::-moz-placeholder,
-.c6:-ms-input-placeholder,
 .c6:-ms-input-placeholder {
+  color: #6E6E69;
   height: inherit;
   line-height: inherit;
-  color: #6E6E69;
+  opacity: 1;
 }
 
-.c6::-moz-placeholder,
-.c6:-ms-input-placeholder,
 .c6::placeholder {
+  color: #6E6E69;
   height: inherit;
   line-height: inherit;
-  color: #6E6E69;
+  opacity: 1;
 }
 
 .c5 {
   position: relative;
+  padding: 0px 0;
 }
 
 <div
@@ -5661,6 +6858,7 @@ exports[`Storyshots Molecules | Input / Text With value (Controlled behaviour) 1
             placeholder="Placeholder"
             type="text"
             value="Some predefined text"
+            variant="normal"
           />
         </div>
       </span>

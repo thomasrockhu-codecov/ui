@@ -63,6 +63,8 @@ const StyledSliderWrapper = styled.div<InternalSliderTypes>`
   background: ${p => p.$disabled && p.theme.color.sliderDisabled};
   ${height};
   max-width: 100%;
+  /* TODO: move this into a prop */
+  /* border-radius: 10px; */
   width: 100%;
   ${cursor}
 `;
@@ -75,7 +77,7 @@ const StyledSlider = styled.div<InternalSliderTypes>`
     100% - ${p => (p.$variant === VARIANT_TYPES.SMALL ? `${THUMB_SMALL}` : `${THUMB_BIG}`)}px
   );
   margin: 0 auto;
-  ${cursor}
+  ${cursor};
 `;
 
 const getPercentage = (current: number, min: number, max: number) =>
