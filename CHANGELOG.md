@@ -1,3 +1,11 @@
+## [3.17.3](https://github.com/nordnet/ui/compare/v3.17.2...v3.17.3) (2020-08-28)
+
+
+### Bug Fixes
+
+* 🐛 update snapshots ([ec6c768](https://github.com/nordnet/ui/commit/ec6c768))
+* 🐛 will fix text being wrapped in scroll lists in IE11 ([6ad44d3](https://github.com/nordnet/ui/commit/6ad44d3))
+
 ## [3.17.2](https://github.com/nordnet/ui/compare/v3.17.1...v3.17.2) (2020-08-26)
 
 
