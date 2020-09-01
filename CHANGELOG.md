@@ -1,3 +1,11 @@
+## [3.17.4](https://github.com/nordnet/ui/compare/v3.17.3...v3.17.4) (2020-09-01)
+
+
+### Bug Fixes
+
+* 🐛 add babel plugin for optional-chaining ([1e80caf](https://github.com/nordnet/ui/commit/1e80caf))
+* 🐛 updragde babel instead of plugin for optional chaining ([c238d5b](https://github.com/nordnet/ui/commit/c238d5b))
+
 ## [3.17.3](https://github.com/nordnet/ui/compare/v3.17.2...v3.17.3) (2020-08-28)
 
 
