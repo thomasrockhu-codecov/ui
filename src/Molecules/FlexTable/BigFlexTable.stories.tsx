@@ -18,21 +18,19 @@ export default {
 };
 
 const StyledDiv = styled.div`
-  background-color: ${p => p.theme.color.background};
+  background-color: ${(p) => p.theme.color.background};
   &:not(:last-of-type) {
-    margin-bottom: ${p => p.theme.spacing.unit(10)}px;
+    margin-bottom: ${(p) => p.theme.spacing.unit(10)}px;
   }
 `;
 
 const StyledFlexTable = styled(FlexTable)`
   &:not(:last-of-type) {
-    margin-bottom: ${p => p.theme.spacing.unit(10)}px;
+    margin-bottom: ${(p) => p.theme.spacing.unit(10)}px;
   }
 `;
 const generateUniqueId = (rowIndex: number) =>
-  `${rowIndex}_${Math.random()
-    .toString(36)
-    .substr(2, 9)}`;
+  `${rowIndex}_${Math.random().toString(36).substr(2, 9)}`;
 
 const generateTableData = (rowsLength: number, columnsLength: number) =>
   [...Array(rowsLength)].map((_, rowIndex) => {
@@ -108,7 +106,7 @@ export const BigTable = () => {
               </FlexTable.Header>
             ))}
           </FlexTable.HeaderRow>
-          {sortedData.map(data => (
+          {sortedData.map((data) => (
             <BigTableRow key={data.rowId} data={data} />
           ))}
         </FlexTable>
@@ -263,7 +261,7 @@ export const BigTableWithoutStickyHeader = () => {
               </FlexTable.Header>
             ))}
           </FlexTable.HeaderRow>
-          {sortedData.map(data => (
+          {sortedData.map((data) => (
             <BigTableRow key={data.rowId} data={data} />
           ))}
         </FlexTable>
@@ -321,7 +319,7 @@ export const MultipleBigTablesWithStickyHeaders = () => {
               </FlexTable.Header>
             ))}
           </FlexTable.HeaderRow>
-          {sortedData.map(data => (
+          {sortedData.map((data) => (
             <BigTableRow key={data.rowId} data={data} />
           ))}
         </StyledFlexTable>
@@ -342,7 +340,7 @@ export const MultipleBigTablesWithStickyHeaders = () => {
               </FlexTable.Header>
             ))}
           </FlexTable.HeaderRow>
-          {sortedData.map(data => (
+          {sortedData.map((data) => (
             <BigTableRow key={data.rowId} data={data} />
           ))}
         </StyledFlexTable>

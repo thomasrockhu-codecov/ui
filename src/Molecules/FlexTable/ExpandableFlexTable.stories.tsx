@@ -150,7 +150,7 @@ export const ControlledExpandedTable = () => {
     const onExpandClick = (rowId: string) => (newExpanded: boolean) =>
       newExpanded
         ? setExpandedRows([...expandedRows, rowId])
-        : setExpandedRows(expandedRows.filter(row => row !== rowId));
+        : setExpandedRows(expandedRows.filter((row) => row !== rowId));
     const expandItemsText = expandedItemsGenerator();
     const expandItemsComponents = expandedItemsGenerator(true);
     return (
@@ -234,7 +234,7 @@ export const ControlledExpandableTableWithCustomRow = () => {
     const toggleExpand = (rowId: string) => {
       const isAlreadyExpanded = expandedRows.includes(rowId);
       if (isAlreadyExpanded) {
-        return setExpandedRows(expandedRows.filter(row => row !== rowId));
+        return setExpandedRows(expandedRows.filter((row) => row !== rowId));
       }
       return setExpandedRows([...expandedRows, rowId]);
     };

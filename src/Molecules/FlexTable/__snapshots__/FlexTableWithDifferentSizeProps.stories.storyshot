@@ -1051,15 +1051,6 @@ exports[`Storyshots Molecules | FlexTable / FlexTable with different size props 
   line-height: 1.4285714285714286;
 }
 
-.c18 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #6E6E69;
-  margin: 0;
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 1.3333333333333333;
-}
-
 .c17 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
@@ -1067,6 +1058,15 @@ exports[`Storyshots Molecules | FlexTable / FlexTable with different size props 
   font-weight: 400;
   font-size: 14px;
   line-height: 1.4285714285714286;
+}
+
+.c18 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #6E6E69;
+  margin: 0;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.3333333333333333;
 }
 
 .c19 {

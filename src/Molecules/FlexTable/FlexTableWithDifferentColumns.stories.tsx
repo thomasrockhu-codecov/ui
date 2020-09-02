@@ -15,15 +15,15 @@ export default {
 };
 
 const StyledDiv = styled.div`
-  background-color: ${p => p.theme.color.background};
+  background-color: ${(p) => p.theme.color.background};
   &:not(:last-of-type) {
-    margin-bottom: ${p => p.theme.spacing.unit(10)}px;
+    margin-bottom: ${(p) => p.theme.spacing.unit(10)}px;
   }
 `;
 
 const StyledFlexTable = styled(FlexTable)`
   &:not(:last-of-type) {
-    margin-bottom: ${p => p.theme.spacing.unit(10)}px;
+    margin-bottom: ${(p) => p.theme.spacing.unit(10)}px;
   }
 `;
 

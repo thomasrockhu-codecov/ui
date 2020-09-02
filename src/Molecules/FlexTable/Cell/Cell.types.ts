@@ -1,6 +1,7 @@
 import React, { ReactNode } from 'react';
-import { FontSize, Density } from '../shared/shared.types';
+import { FontSize, Density, MediaRelatedProps } from '../shared/shared.types';
 import { FlexPropsType } from '../shared/ColumnProvider/ColumnProvider.types';
+import { FlexProps } from '../../../Atoms/Flexbox/Flexbox.types';
 
 type RenderPropArguments = { density: Density; fontSize: FontSize; columnId: string };
 type RenderFunc = (props: RenderPropArguments) => ReactNode;
@@ -13,7 +14,8 @@ export type Props = {
    * Define which column which cell it belongs to and sets the column layout defined in the `Header`
    */
   columnId: string;
-};
+} & MediaRelatedProps<FlexProps> &
+  FlexProps;
 
 export type TextWrapperProps = {
   /**
@@ -32,7 +34,7 @@ export type TextWrapperComponent = React.FC<TextWrapperProps>;
 
 export type CellComponents = { TextWrapper: TextWrapperComponent };
 
-export type CellComponent = React.FC<Props> & CellComponents;
+export type CellComponent = React.FC<Props & TextWrapperProps> & CellComponents;
 
 export type InnerCellComponent = React.FC<Props & TextWrapperProps & { flexProps: FlexPropsType }>;
 
@@ -52,4 +54,4 @@ type ExpandCellProps = {
   columnId: string;
 };
 
-export type ExpandCellComponent = React.FC<ExpandCellProps>;
+export type ExpandCellComponent = React.FC<ExpandCellProps & FlexProps>;

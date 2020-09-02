@@ -1,9 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
-import * as R from 'ramda';
 import { isElement, isFunction } from '../../../common/utils';
 import { Flexbox } from '../../..';
-import { useColumnLayout } from '../shared/ColumnProvider';
+import { useFlexCellProps } from '../shared/ColumnProvider';
 import { CellComponent, InnerCellComponent } from './Cell.types';
 import { TextWrapper } from './TextWrapper';
 import { useFlexTable } from '../shared/FlexTableProvider';
@@ -24,7 +23,8 @@ const InnerCell: InnerCellComponent = React.memo(
   ),
 );
 
-const Cell: CellComponent = ({ children, className, columnId }) => {
+const Cell: CellComponent = (props) => {
+  const { children, className, columnId } = props;
   const {
     fontSize: xsFontSize,
     sm: smTable,
@@ -32,11 +32,8 @@ const Cell: CellComponent = ({ children, className, columnId }) => {
     lg: lgTable,
     xl: xlTable,
   } = useFlexTable();
-  const [columnLayout] = useColumnLayout(columnId);
 
-  if (!R.prop('flexProps', columnLayout)) {
-    return null;
-  }
+  const flexProps = useFlexCellProps(props);
 
   return (
     <RenderForSizes
@@ -49,7 +46,7 @@ const Cell: CellComponent = ({ children, className, columnId }) => {
         <InnerCell
           className={className}
           columnId={columnId}
-          flexProps={columnLayout.flexProps}
+          flexProps={flexProps}
           fontSize={fontSize}
         >
           {component}

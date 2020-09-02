@@ -8,8 +8,9 @@ export const ExpandCell: ExpandCellComponent = ({
   disabled = false,
   expanded,
   onClick,
+  ...cellProps
 }) => (
-  <Cell columnId={columnId}>
+  <Cell columnId={columnId} {...cellProps}>
     <ExpandButton expanded={expanded} onClick={onClick} disabled={disabled} />
   </Cell>
 );

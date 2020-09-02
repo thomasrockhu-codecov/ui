@@ -17,15 +17,15 @@ export default {
 };
 
 const StyledDiv = styled.div`
-  background-color: ${p => p.theme.color.background};
+  background-color: ${(p) => p.theme.color.background};
   &:not(:last-of-type) {
-    margin-bottom: ${p => p.theme.spacing.unit(10)}px;
+    margin-bottom: ${(p) => p.theme.spacing.unit(10)}px;
   }
 `;
 
 const StyledFlexTable = styled(FlexTable)`
   &:not(:last-of-type) {
-    margin-bottom: ${p => p.theme.spacing.unit(10)}px;
+    margin-bottom: ${(p) => p.theme.spacing.unit(10)}px;
   }
 `;
 
@@ -193,7 +193,7 @@ export const SortableHeadersOnlyAscendingDescending = () => {
         columnSort.columnId === columnId
           ? columnSort.sortOrder
           : FlexTable.CONSTANTS.SORT_ORDER_NONE;
-      const onSort: OnSort = columnId => {
+      const onSort: OnSort = (columnId) => {
         let nextSortOrder: SortOrder = FlexTable.CONSTANTS.SORT_ORDER_ASCENDING;
         const sameAsCurrentlySorted = columnId === columnSort.columnId;
         if (sameAsCurrentlySorted) {
