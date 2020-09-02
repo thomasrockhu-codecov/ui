@@ -4,6 +4,7 @@ import { withKnobs } from '@storybook/addon-knobs';
 import FlexTable from './FlexTable';
 import { Typography, Flag } from '../..';
 import docs from './FlexTable.mdx';
+import { FlexProps } from '../../Atoms/Flexbox/Flexbox.types';
 
 export default {
   title: 'Molecules | FlexTable / FlexTable with different columns',
@@ -44,21 +45,39 @@ export const DifferentAlignmentsTable = () => {
       </FlexTable.HeaderRow>
       <FlexTable.Row>
         <FlexTable.Cell columnId="column1">Cell 1-1</FlexTable.Cell>
-        <FlexTable.Cell columnId="column2">Cell 1-2</FlexTable.Cell>
-        <FlexTable.Cell columnId="column3">Cell 1-3</FlexTable.Cell>
-        <FlexTable.Cell columnId="column4">Cell 1-4</FlexTable.Cell>
+        <FlexTable.Cell columnId="column2" justifyContent="flex-end">
+          Cell 1-2
+        </FlexTable.Cell>
+        <FlexTable.Cell columnId="column3" justifyContent="flex-end">
+          Cell 1-3
+        </FlexTable.Cell>
+        <FlexTable.Cell columnId="column4" justifyContent="center">
+          Cell 1-4
+        </FlexTable.Cell>
       </FlexTable.Row>
       <FlexTable.Row>
         <FlexTable.Cell columnId="column1">Cell 2-1</FlexTable.Cell>
-        <FlexTable.Cell columnId="column2">Cell 2-2</FlexTable.Cell>
-        <FlexTable.Cell columnId="column3">Cell 2-3</FlexTable.Cell>
-        <FlexTable.Cell columnId="column4">Cell 2-4</FlexTable.Cell>
+        <FlexTable.Cell columnId="column2" justifyContent="flex-end">
+          Cell 2-2
+        </FlexTable.Cell>
+        <FlexTable.Cell columnId="column3" justifyContent="flex-end">
+          Cell 2-3
+        </FlexTable.Cell>
+        <FlexTable.Cell columnId="column4" justifyContent="center">
+          Cell 2-4
+        </FlexTable.Cell>
       </FlexTable.Row>
       <FlexTable.Row>
         <FlexTable.Cell columnId="column1">Cell 3-1</FlexTable.Cell>
-        <FlexTable.Cell columnId="column2">Cell 3-2</FlexTable.Cell>
-        <FlexTable.Cell columnId="column3">Cell 3-3</FlexTable.Cell>
-        <FlexTable.Cell columnId="column4">Cell 3-4</FlexTable.Cell>
+        <FlexTable.Cell columnId="column2" justifyContent="flex-end">
+          Cell 3-2
+        </FlexTable.Cell>
+        <FlexTable.Cell columnId="column3" justifyContent="flex-end">
+          Cell 3-3
+        </FlexTable.Cell>
+        <FlexTable.Cell columnId="column4" justifyContent="center">
+          Cell 3-4
+        </FlexTable.Cell>
       </FlexTable.Row>
     </StyledFlexTable>
   );
@@ -72,14 +91,16 @@ export const DifferentAlignmentsTable = () => {
 };
 
 export const ColumnWidthTableWithCustomFlagCell = () => {
-  const FlagCell: React.FC<{ columnId: string }> = React.memo(({ children, columnId }) => (
-    <FlexTable.Cell columnId={columnId}>
-      <FlexTable.CellInlineContainer>
-        <FlexTable.Cell.TextWrapper>{children}</FlexTable.Cell.TextWrapper>
-        <Flag country="SE" />
-      </FlexTable.CellInlineContainer>
-    </FlexTable.Cell>
-  ));
+  const FlagCell: React.FC<{ columnId: string } & FlexProps> = React.memo(
+    ({ children, columnId, ...cellProps }) => (
+      <FlexTable.Cell columnId={columnId} {...cellProps}>
+        <FlexTable.CellInlineContainer>
+          <FlexTable.Cell.TextWrapper>{children}</FlexTable.Cell.TextWrapper>
+          <Flag country="SE" />
+        </FlexTable.CellInlineContainer>
+      </FlexTable.Cell>
+    ),
+  );
 
   const ColumnWidthTableWithCustomFlagCellExample = () => (
     <StyledFlexTable>
@@ -96,24 +117,40 @@ export const ColumnWidthTableWithCustomFlagCell = () => {
         <FlexTable.Header columnId="column4">Default</FlexTable.Header>
       </FlexTable.HeaderRow>
       <FlexTable.Row>
-        <FlexTable.Cell columnId="column1">Cell 1-1</FlexTable.Cell>
-        <FlexTable.Cell columnId="column2">
+        <FlexTable.Cell flex="1" columnId="column1">
+          Cell 1-1
+        </FlexTable.Cell>
+        <FlexTable.Cell flex="0 15%" columnId="column2">
           Very long cell content that should be truncated or ellipsized depepending on your language
           preferences
         </FlexTable.Cell>
-        <FlexTable.Cell columnId="column3">Cell 1-3</FlexTable.Cell>
+        <FlexTable.Cell flex="0 100px" columnId="column3">
+          Cell 1-3
+        </FlexTable.Cell>
         <FlexTable.Cell columnId="column4">Cell 1-4</FlexTable.Cell>
       </FlexTable.Row>
       <FlexTable.Row>
-        <FlexTable.Cell columnId="column1">Cell 2-1</FlexTable.Cell>
-        <FlexTable.Cell columnId="column2">Cell 2-2</FlexTable.Cell>
-        <FlagCell columnId="column3">Long cell with flag</FlagCell>
+        <FlexTable.Cell flex="1" columnId="column1">
+          Cell 2-1
+        </FlexTable.Cell>
+        <FlexTable.Cell flex="0 15%" columnId="column2">
+          Cell 2-2
+        </FlexTable.Cell>
+        <FlagCell flex="0 100px" columnId="column3">
+          Long cell with flag
+        </FlagCell>
         <FlexTable.Cell columnId="column4">Cell 2-4</FlexTable.Cell>
       </FlexTable.Row>
       <FlexTable.Row>
-        <FlexTable.Cell columnId="column1">Cell 3-1</FlexTable.Cell>
-        <FlexTable.Cell columnId="column2">Cell 3-2</FlexTable.Cell>
-        <FlexTable.Cell columnId="column3">Cell 3-3</FlexTable.Cell>
+        <FlexTable.Cell flex="1" columnId="column1">
+          Cell 3-1
+        </FlexTable.Cell>
+        <FlexTable.Cell flex="0 15%" columnId="column2">
+          Cell 3-2
+        </FlexTable.Cell>
+        <FlexTable.Cell flex="0 100px" columnId="column3">
+          Cell 3-3
+        </FlexTable.Cell>
         <FlexTable.Cell columnId="column4">Cell 3-4</FlexTable.Cell>
       </FlexTable.Row>
     </StyledFlexTable>
@@ -128,14 +165,16 @@ export const ColumnWidthTableWithCustomFlagCell = () => {
 };
 
 export const ColumnWidthSortableTable = () => {
-  const FlagCell: React.FC<{ columnId: string }> = React.memo(({ children, columnId }) => (
-    <FlexTable.Cell columnId={columnId}>
-      <FlexTable.CellInlineContainer>
-        <FlexTable.Cell.TextWrapper>{children}</FlexTable.Cell.TextWrapper>
-        <Flag country="SE" />
-      </FlexTable.CellInlineContainer>
-    </FlexTable.Cell>
-  ));
+  const FlagCell: React.FC<{ columnId: string } & FlexProps> = React.memo(
+    ({ children, columnId, ...cellProps }) => (
+      <FlexTable.Cell columnId={columnId} {...cellProps}>
+        <FlexTable.CellInlineContainer>
+          <FlexTable.Cell.TextWrapper>{children}</FlexTable.Cell.TextWrapper>
+          <Flag country="SE" />
+        </FlexTable.CellInlineContainer>
+      </FlexTable.Cell>
+    ),
+  );
 
   const ColumnWidthSortableTableExample = () => (
     <StyledFlexTable>
@@ -154,24 +193,40 @@ export const ColumnWidthSortableTable = () => {
         </FlexTable.Header>
       </FlexTable.HeaderRow>
       <FlexTable.Row>
-        <FlexTable.Cell columnId="column1">Cell 1-1</FlexTable.Cell>
-        <FlexTable.Cell columnId="column2">
+        <FlexTable.Cell flex="1" columnId="column1">
+          Cell 1-1
+        </FlexTable.Cell>
+        <FlexTable.Cell flex="0 15%" columnId="column2">
           Very long cell content that should be truncated or ellipsized depepending on your language
           preferences
         </FlexTable.Cell>
-        <FlexTable.Cell columnId="column3">Cell 1-3</FlexTable.Cell>
+        <FlexTable.Cell flex="0 100px" columnId="column3">
+          Cell 1-3
+        </FlexTable.Cell>
         <FlexTable.Cell columnId="column4">Cell 1-4</FlexTable.Cell>
       </FlexTable.Row>
       <FlexTable.Row>
-        <FlexTable.Cell columnId="column1">Cell 2-1</FlexTable.Cell>
-        <FlexTable.Cell columnId="column2">Cell 2-2</FlexTable.Cell>
-        <FlagCell columnId="column3">Long cell with flag</FlagCell>
+        <FlexTable.Cell flex="1" columnId="column1">
+          Cell 2-1
+        </FlexTable.Cell>
+        <FlexTable.Cell flex="0 15%" columnId="column2">
+          Cell 2-2
+        </FlexTable.Cell>
+        <FlagCell flex="0 100px" columnId="column3">
+          Long cell with flag
+        </FlagCell>
         <FlexTable.Cell columnId="column4">Cell 2-4</FlexTable.Cell>
       </FlexTable.Row>
       <FlexTable.Row>
-        <FlexTable.Cell columnId="column1">Cell 3-1</FlexTable.Cell>
-        <FlexTable.Cell columnId="column2">Cell 3-2</FlexTable.Cell>
-        <FlexTable.Cell columnId="column3">Cell 3-3</FlexTable.Cell>
+        <FlexTable.Cell flex="1" columnId="column1">
+          Cell 3-1
+        </FlexTable.Cell>
+        <FlexTable.Cell flex="0 15%" columnId="column2">
+          Cell 3-2
+        </FlexTable.Cell>
+        <FlexTable.Cell flex="0 100px" columnId="column3">
+          Cell 3-3
+        </FlexTable.Cell>
         <FlexTable.Cell columnId="column4">Cell 3-4</FlexTable.Cell>
       </FlexTable.Row>
     </StyledFlexTable>
@@ -197,17 +252,23 @@ export const MediaColumns = () => {
       </FlexTable.HeaderRow>
       <FlexTable.Row>
         <FlexTable.Cell columnId="column1">Cell 1-1</FlexTable.Cell>
-        <FlexTable.Cell columnId="column2">Hidden on mobile</FlexTable.Cell>
+        <FlexTable.Cell columnId="column2" hidden md={{ hidden: false }}>
+          Hidden on mobile
+        </FlexTable.Cell>
         <FlexTable.Cell columnId="column3">Cell 1-3</FlexTable.Cell>
       </FlexTable.Row>
       <FlexTable.Row>
         <FlexTable.Cell columnId="column1">Cell 2-1</FlexTable.Cell>
-        <FlexTable.Cell columnId="column2">Hidden on mobile</FlexTable.Cell>
+        <FlexTable.Cell columnId="column2" hidden md={{ hidden: false }}>
+          Hidden on mobile
+        </FlexTable.Cell>
         <FlexTable.Cell columnId="column3">Cell 2-3</FlexTable.Cell>
       </FlexTable.Row>
       <FlexTable.Row>
         <FlexTable.Cell columnId="column1">Cell 3-1</FlexTable.Cell>
-        <FlexTable.Cell columnId="column2">Hidden on mobile</FlexTable.Cell>
+        <FlexTable.Cell columnId="column2" hidden md={{ hidden: false }}>
+          Hidden on mobile
+        </FlexTable.Cell>
         <FlexTable.Cell columnId="column3">Cell 3-3</FlexTable.Cell>
       </FlexTable.Row>
     </StyledFlexTable>

@@ -134,10 +134,18 @@ export const OnlyExpandableOnMobileTable = () => {
         <FlexTable.Cell columnId="column1">Expandable</FlexTable.Cell>
         <FlexTable.Cell columnId="column2">Expandable</FlexTable.Cell>
         <FlexTable.Cell columnId="column3">Expandable</FlexTable.Cell>
-        <FlexTable.Cell columnId="column4">Expandable 4</FlexTable.Cell>
-        <FlexTable.Cell columnId="column5">Expandable 5</FlexTable.Cell>
-        <FlexTable.Cell columnId="column6">Expandable 6</FlexTable.Cell>
-        <FlexTable.Cell columnId="column7">Expandable 7</FlexTable.Cell>
+        <FlexTable.Cell columnId="column4" hidden md={{ hidden: false }}>
+          Expandable 4
+        </FlexTable.Cell>
+        <FlexTable.Cell columnId="column5" hidden md={{ hidden: false }}>
+          Expandable 5
+        </FlexTable.Cell>
+        <FlexTable.Cell columnId="column6" hidden md={{ hidden: false }}>
+          Expandable 6
+        </FlexTable.Cell>
+        <FlexTable.Cell columnId="column7" hidden md={{ hidden: false }}>
+          Expandable 7
+        </FlexTable.Cell>
       </FlexTable.Row>
     </FlexTable>
   );
@@ -222,6 +230,7 @@ const ExpandRow = ({ expandItems, expanded, expandChildren, children, toggleExpa
       expanded={expanded}
       onClick={toggleExpand}
       disabled={!expandChildren && !expandItems}
+      {...ICON_COLUMN_DEFAULT_FLEX_PROPS}
     />
   </FlexTable.Row>
 );
