@@ -1,2187 +1,1931 @@
-## [3.17.3-beta.1](https://github.com/nordnet/ui/compare/v3.17.2...v3.17.3-beta.1@beta) (2020-08-27)
-
+## [3.17.4](https://github.com/nordnet/ui/compare/v3.17.3...v3.17.4) (2020-09-01)
 
 ### Bug Fixes
 
-* move import ([9f9d43e](https://github.com/nordnet/ui/commit/9f9d43e))
-* render without faded scroll for ie10+ ([7896c9d](https://github.com/nordnet/ui/commit/7896c9d))
+- move import ([9f9d43e](https://github.com/nordnet/ui/commit/9f9d43e))
+- render without faded scroll for ie10+ ([7896c9d](https://github.com/nordnet/ui/commit/7896c9d))
+- 🐛 add babel plugin for optional-chaining ([1e80caf](https://github.com/nordnet/ui/commit/1e80caf))
+- 🐛 updragde babel instead of plugin for optional chaining ([c238d5b](https://github.com/nordnet/ui/commit/c238d5b))
+
+## [3.17.3](https://github.com/nordnet/ui/compare/v3.17.2...v3.17.3) (2020-08-28)
+
+### Bug Fixes
+
+- 🐛 update snapshots ([ec6c768](https://github.com/nordnet/ui/commit/ec6c768))
+- 🐛 will fix text being wrapped in scroll lists in IE11 ([6ad44d3](https://github.com/nordnet/ui/commit/6ad44d3))
 
 ## [3.17.2](https://github.com/nordnet/ui/compare/v3.17.1...v3.17.2) (2020-08-26)
 
-
 ### Bug Fixes
 
-* 🐛 prevent unnecessary remounts on initial flextable render ([ff4dc41](https://github.com/nordnet/ui/commit/ff4dc41))
+- 🐛 prevent unnecessary remounts on initial flextable render ([ff4dc41](https://github.com/nordnet/ui/commit/ff4dc41))
 
 ## [3.17.1](https://github.com/nordnet/ui/compare/v3.17.0...v3.17.1) (2020-08-21)
 
-
 ### Bug Fixes
 
-* 🐛 new color name for empty state ([6ae6a6d](https://github.com/nordnet/ui/commit/6ae6a6d))
+- 🐛 new color name for empty state ([6ae6a6d](https://github.com/nordnet/ui/commit/6ae6a6d))
 
 # [3.17.0](https://github.com/nordnet/ui/compare/v3.16.0...v3.17.0) (2020-08-21)
 
-
 ### Bug Fixes
 
-* 🐛 storyshots ([05e4cb3](https://github.com/nordnet/ui/commit/05e4cb3))
-
+- 🐛 storyshots ([05e4cb3](https://github.com/nordnet/ui/commit/05e4cb3))
 
 ### Features
 
-* 🎸 3 more bell icons ([a7de6a3](https://github.com/nordnet/ui/commit/a7de6a3))
+- 🎸 3 more bell icons ([a7de6a3](https://github.com/nordnet/ui/commit/a7de6a3))
 
 # [3.16.0](https://github.com/nordnet/ui/compare/v3.15.0...v3.16.0) (2020-08-20)
 
-
 ### Bug Fixes
 
-* avoid using deprecated colors ([17159ca](https://github.com/nordnet/ui/commit/17159ca))
-* change const name ([9178291](https://github.com/nordnet/ui/commit/9178291))
-* update snapshots ([45ffd76](https://github.com/nordnet/ui/commit/45ffd76))
-
+- avoid using deprecated colors ([17159ca](https://github.com/nordnet/ui/commit/17159ca))
+- change const name ([9178291](https://github.com/nordnet/ui/commit/9178291))
+- update snapshots ([45ffd76](https://github.com/nordnet/ui/commit/45ffd76))
 
 ### Features
 
-* deprecate old colors, add new palettes ([efaf11b](https://github.com/nordnet/ui/commit/efaf11b))
+- deprecate old colors, add new palettes ([efaf11b](https://github.com/nordnet/ui/commit/efaf11b))
 
 # [3.15.0](https://github.com/nordnet/ui/compare/v3.14.0...v3.15.0) (2020-08-20)
 
-
 ### Bug Fixes
 
-* remove incorrect api in docs ([0c1f06f](https://github.com/nordnet/ui/commit/0c1f06f))
-
+- remove incorrect api in docs ([0c1f06f](https://github.com/nordnet/ui/commit/0c1f06f))
 
 ### Features
 
-* add design notes in docs ([c70ebe7](https://github.com/nordnet/ui/commit/c70ebe7))
-* add table of contents ([7157a99](https://github.com/nordnet/ui/commit/7157a99))
+- add design notes in docs ([c70ebe7](https://github.com/nordnet/ui/commit/c70ebe7))
+- add table of contents ([7157a99](https://github.com/nordnet/ui/commit/7157a99))
 
 # [3.14.0](https://github.com/nordnet/ui/compare/v3.13.3...v3.14.0) (2020-08-20)
 
-
 ### Features
 
-* 🎸 add csv svg to icon component ([10fbc2b](https://github.com/nordnet/ui/commit/10fbc2b))
+- 🎸 add csv svg to icon component ([10fbc2b](https://github.com/nordnet/ui/commit/10fbc2b))
 
 ## [3.13.3](https://github.com/nordnet/ui/compare/v3.13.2...v3.13.3) (2020-08-20)
 
-
 ### Bug Fixes
 
-* 🐛 add separator color alias ([d3dc3ba](https://github.com/nordnet/ui/commit/d3dc3ba))
-* 🐛 remove unnecessary row ([14df489](https://github.com/nordnet/ui/commit/14df489))
+- 🐛 add separator color alias ([d3dc3ba](https://github.com/nordnet/ui/commit/d3dc3ba))
+- 🐛 remove unnecessary row ([14df489](https://github.com/nordnet/ui/commit/14df489))
 
 ## [3.13.2](https://github.com/nordnet/ui/compare/v3.13.1...v3.13.2) (2020-08-19)
 
-
 ### Bug Fixes
 
-* 🐛 drawer menu now closes on step click ([06adf11](https://github.com/nordnet/ui/commit/06adf11))
+- 🐛 drawer menu now closes on step click ([06adf11](https://github.com/nordnet/ui/commit/06adf11))
 
 ## [3.13.1](https://github.com/nordnet/ui/compare/v3.13.0...v3.13.1) (2020-08-17)
 
-
 ### Bug Fixes
 
-* 🐛 removes margins on timeline ([d1c69c1](https://github.com/nordnet/ui/commit/d1c69c1))
+- 🐛 removes margins on timeline ([d1c69c1](https://github.com/nordnet/ui/commit/d1c69c1))
 
 # [3.13.0](https://github.com/nordnet/ui/compare/v3.12.0...v3.13.0) (2020-08-17)
 
-
 ### Bug Fixes
 
-* 🐛 change date format in Timeline ([33b44d9](https://github.com/nordnet/ui/commit/33b44d9))
-
+- 🐛 change date format in Timeline ([33b44d9](https://github.com/nordnet/ui/commit/33b44d9))
 
 ### Features
 
-* 🎸 allow custom formatting on DateTime component ([4b903c3](https://github.com/nordnet/ui/commit/4b903c3))
+- 🎸 allow custom formatting on DateTime component ([4b903c3](https://github.com/nordnet/ui/commit/4b903c3))
 
 # [3.12.0](https://github.com/nordnet/ui/compare/v3.11.0...v3.12.0) (2020-08-14)
 
-
 ### Bug Fixes
 
-* fixed support for addons in quiet input ([39eca74](https://github.com/nordnet/ui/commit/39eca74))
-
+- fixed support for addons in quiet input ([39eca74](https://github.com/nordnet/ui/commit/39eca74))
 
 ### Features
 
-* add form-field disabled support ([41ebd44](https://github.com/nordnet/ui/commit/41ebd44))
-* add quiet variant to input.text ([8af8da6](https://github.com/nordnet/ui/commit/8af8da6))
+- add form-field disabled support ([41ebd44](https://github.com/nordnet/ui/commit/41ebd44))
+- add quiet variant to input.text ([8af8da6](https://github.com/nordnet/ui/commit/8af8da6))
 
 # [3.11.0](https://github.com/nordnet/ui/compare/v3.10.1...v3.11.0) (2020-08-14)
 
-
 ### Bug Fixes
 
-* add expanded aria attribute ([c595a97](https://github.com/nordnet/ui/commit/c595a97))
-* breaking storyshot ([804ffb7](https://github.com/nordnet/ui/commit/804ffb7))
-* clean up toplevel ([22c552e](https://github.com/nordnet/ui/commit/22c552e))
-* hide borders on mobile and in drawer ([f329045](https://github.com/nordnet/ui/commit/f329045))
-* remove border in mobile ([1c65ce6](https://github.com/nordnet/ui/commit/1c65ce6))
-
+- add expanded aria attribute ([c595a97](https://github.com/nordnet/ui/commit/c595a97))
+- breaking storyshot ([804ffb7](https://github.com/nordnet/ui/commit/804ffb7))
+- clean up toplevel ([22c552e](https://github.com/nordnet/ui/commit/22c552e))
+- hide borders on mobile and in drawer ([f329045](https://github.com/nordnet/ui/commit/f329045))
+- remove border in mobile ([1c65ce6](https://github.com/nordnet/ui/commit/1c65ce6))
 
 ### Features
 
-* display drawer on mobile for multistepprogress ([b31127c](https://github.com/nordnet/ui/commit/b31127c))
+- display drawer on mobile for multistepprogress ([b31127c](https://github.com/nordnet/ui/commit/b31127c))
 
 ## [3.10.1](https://github.com/nordnet/ui/compare/v3.10.0...v3.10.1) (2020-08-14)
 
-
 ### Bug Fixes
 
-* 🐛 add key for expand items ([926c7f7](https://github.com/nordnet/ui/commit/926c7f7))
-* 🐛 add unique key to render for sizes iteration ([a706cb9](https://github.com/nordnet/ui/commit/a706cb9))
-* 🐛 correctly set key prop on container in renderforsizes ([8d2adf8](https://github.com/nordnet/ui/commit/8d2adf8))
-* remove index from key prop ([51e58f5](https://github.com/nordnet/ui/commit/51e58f5))
+- 🐛 add key for expand items ([926c7f7](https://github.com/nordnet/ui/commit/926c7f7))
+- 🐛 add unique key to render for sizes iteration ([a706cb9](https://github.com/nordnet/ui/commit/a706cb9))
+- 🐛 correctly set key prop on container in renderforsizes ([8d2adf8](https://github.com/nordnet/ui/commit/8d2adf8))
+- remove index from key prop ([51e58f5](https://github.com/nordnet/ui/commit/51e58f5))
 
 # [3.10.0](https://github.com/nordnet/ui/compare/v3.9.0...v3.10.0) (2020-08-13)
 
-
 ### Features
 
-* create isopmorphic media and remove old ([96d5f52](https://github.com/nordnet/ui/commit/96d5f52))
-* wip nothing works ([fa60b49](https://github.com/nordnet/ui/commit/fa60b49))
+- create isopmorphic media and remove old ([96d5f52](https://github.com/nordnet/ui/commit/96d5f52))
+- wip nothing works ([fa60b49](https://github.com/nordnet/ui/commit/fa60b49))
 
 # [3.9.0](https://github.com/nordnet/ui/compare/v3.8.0...v3.9.0) (2020-08-06)
 
-
 ### Bug Fixes
 
-* better trypes ([2ce0b5d](https://github.com/nordnet/ui/commit/2ce0b5d))
-* improve animations on switch component ([a5041af](https://github.com/nordnet/ui/commit/a5041af))
-
+- better trypes ([2ce0b5d](https://github.com/nordnet/ui/commit/2ce0b5d))
+- improve animations on switch component ([a5041af](https://github.com/nordnet/ui/commit/a5041af))
 
 ### Features
 
-* add segmentedcontrol component ([3869c44](https://github.com/nordnet/ui/commit/3869c44))
+- add segmentedcontrol component ([3869c44](https://github.com/nordnet/ui/commit/3869c44))
 
 # [3.8.0](https://github.com/nordnet/ui/compare/v3.7.1...v3.8.0) (2020-08-05)
 
-
 ### Features
 
-* 🎸 thinner plus icon added ([c94345e](https://github.com/nordnet/ui/commit/c94345e))
+- 🎸 thinner plus icon added ([c94345e](https://github.com/nordnet/ui/commit/c94345e))
 
 ## [3.7.1](https://github.com/nordnet/ui/compare/v3.7.0...v3.7.1) (2020-08-05)
 
-
 ### Bug Fixes
 
-* **semrel:** trigger release ([a6504b4](https://github.com/nordnet/ui/commit/a6504b4))
+- **semrel:** trigger release ([a6504b4](https://github.com/nordnet/ui/commit/a6504b4))
 
 # [3.7.0](https://github.com/nordnet/ui/compare/v3.6.0...v3.7.0) (2020-08-05)
 
-
 ### Bug Fixes
 
-* **semrel:** replicate previous successful release env ([1741508](https://github.com/nordnet/ui/commit/1741508))
-* **travis:** trigger release ([2faba97](https://github.com/nordnet/ui/commit/2faba97))
-
+- **semrel:** replicate previous successful release env ([1741508](https://github.com/nordnet/ui/commit/1741508))
+- **travis:** trigger release ([2faba97](https://github.com/nordnet/ui/commit/2faba97))
 
 ### Features
 
-* test ([d113233](https://github.com/nordnet/ui/commit/d113233))
+- test ([d113233](https://github.com/nordnet/ui/commit/d113233))
 
 # [3.7.0](https://github.com/nordnet/ui/compare/v3.6.0...v3.7.0) (2020-08-04)
 
-
 ### Bug Fixes
 
-* **travis:** trigger release ([2faba97](https://github.com/nordnet/ui/commit/2faba97))
-
+- **travis:** trigger release ([2faba97](https://github.com/nordnet/ui/commit/2faba97))
 
 ### Features
 
-* test ([d113233](https://github.com/nordnet/ui/commit/d113233))
+- test ([d113233](https://github.com/nordnet/ui/commit/d113233))
 
 # [3.6.0](https://github.com/nordnet/ui/compare/v3.5.0...v3.6.0) (2020-08-03)
 
-
 ### Bug Fixes
 
-* 🐛 export multi step progress story properly ([02af5a3](https://github.com/nordnet/ui/commit/02af5a3))
-* 🐛 export multi step progress story properly ([103663d](https://github.com/nordnet/ui/commit/103663d))
-* 🐛 force a new ui version ([b70f8a8](https://github.com/nordnet/ui/commit/b70f8a8))
-* add graceful fs ([7c21ff8](https://github.com/nordnet/ui/commit/7c21ff8))
-* bump npm on travis to 614 ([f50657b](https://github.com/nordnet/ui/commit/f50657b))
-* changel npm version to my local env ([7b2fb41](https://github.com/nordnet/ui/commit/7b2fb41))
-* fix mdx warning ([91e84f8](https://github.com/nordnet/ui/commit/91e84f8))
-* install npm after yarn ([71442e1](https://github.com/nordnet/ui/commit/71442e1))
-* log version of everything before release ([ceec92f](https://github.com/nordnet/ui/commit/ceec92f))
-* new build version plx ([3d3521d](https://github.com/nordnet/ui/commit/3d3521d))
-
+- 🐛 export multi step progress story properly ([02af5a3](https://github.com/nordnet/ui/commit/02af5a3))
+- 🐛 export multi step progress story properly ([103663d](https://github.com/nordnet/ui/commit/103663d))
+- 🐛 force a new ui version ([b70f8a8](https://github.com/nordnet/ui/commit/b70f8a8))
+- add graceful fs ([7c21ff8](https://github.com/nordnet/ui/commit/7c21ff8))
+- bump npm on travis to 614 ([f50657b](https://github.com/nordnet/ui/commit/f50657b))
+- changel npm version to my local env ([7b2fb41](https://github.com/nordnet/ui/commit/7b2fb41))
+- fix mdx warning ([91e84f8](https://github.com/nordnet/ui/commit/91e84f8))
+- install npm after yarn ([71442e1](https://github.com/nordnet/ui/commit/71442e1))
+- log version of everything before release ([ceec92f](https://github.com/nordnet/ui/commit/ceec92f))
+- new build version plx ([3d3521d](https://github.com/nordnet/ui/commit/3d3521d))
 
 ### Features
 
-* 🎸 move multi step progress from mutations to ui ([816d909](https://github.com/nordnet/ui/commit/816d909))
-* trigger release ([53f3e62](https://github.com/nordnet/ui/commit/53f3e62))
-
+- 🎸 move multi step progress from mutations to ui ([816d909](https://github.com/nordnet/ui/commit/816d909))
+- trigger release ([53f3e62](https://github.com/nordnet/ui/commit/53f3e62))
 
 # [3.5.0](https://github.com/nordnet/ui/compare/v3.4.0...v3.5.0) (2020-07-16)
 
-
 ### Features
 
-* 🎸 add truncation tooltip on table expand item ([5754b9c](https://github.com/nordnet/ui/commit/5754b9c))
+- 🎸 add truncation tooltip on table expand item ([5754b9c](https://github.com/nordnet/ui/commit/5754b9c))
 
 # [3.4.0](https://github.com/nordnet/ui/compare/v3.3.2...v3.4.0) (2020-07-15)
 
-
 ### Features
 
-* 🎸 export expand item and make label and value render prop ([c8131d9](https://github.com/nordnet/ui/commit/c8131d9))
+- 🎸 export expand item and make label and value render prop ([c8131d9](https://github.com/nordnet/ui/commit/c8131d9))
 
 ## [3.3.2](https://github.com/nordnet/ui/compare/v3.3.1...v3.3.2) (2020-07-15)
 
-
 ### Bug Fixes
 
-* 🐛 add initiallyExpanded to FlexTable row ([ad128fe](https://github.com/nordnet/ui/commit/ad128fe))
+- 🐛 add initiallyExpanded to FlexTable row ([ad128fe](https://github.com/nordnet/ui/commit/ad128fe))
 
 ## [3.3.1](https://github.com/nordnet/ui/compare/v3.3.0...v3.3.1) (2020-07-15)
 
-
 ### Bug Fixes
 
-* 🐛 add title omit to htmlprops ([bfb60be](https://github.com/nordnet/ui/commit/bfb60be))
+- 🐛 add title omit to htmlprops ([bfb60be](https://github.com/nordnet/ui/commit/bfb60be))
 
 # [3.3.0](https://github.com/nordnet/ui/compare/v3.2.1...v3.3.0) (2020-07-14)
 
-
 ### Bug Fixes
 
-* 🐛 created mdx file and added docs to flex table stories ([368bcf5](https://github.com/nordnet/ui/commit/368bcf5))
-
+- 🐛 created mdx file and added docs to flex table stories ([368bcf5](https://github.com/nordnet/ui/commit/368bcf5))
 
 ### Features
 
-* 🎸 add custom header and cell ([651a2b1](https://github.com/nordnet/ui/commit/651a2b1))
-* 🎸 add customise component title ([b33552a](https://github.com/nordnet/ui/commit/b33552a))
-* 🎸 added expandable row example to docs ([261005c](https://github.com/nordnet/ui/commit/261005c))
-* 🎸 created mdx for table ([41fa0c2](https://github.com/nordnet/ui/commit/41fa0c2))
-* 🎸 reorder and add examples and more text ([8d42ec0](https://github.com/nordnet/ui/commit/8d42ec0))
+- 🎸 add custom header and cell ([651a2b1](https://github.com/nordnet/ui/commit/651a2b1))
+- 🎸 add customise component title ([b33552a](https://github.com/nordnet/ui/commit/b33552a))
+- 🎸 added expandable row example to docs ([261005c](https://github.com/nordnet/ui/commit/261005c))
+- 🎸 created mdx for table ([41fa0c2](https://github.com/nordnet/ui/commit/41fa0c2))
+- 🎸 reorder and add examples and more text ([8d42ec0](https://github.com/nordnet/ui/commit/8d42ec0))
 
 ## [3.2.1](https://github.com/nordnet/ui/compare/v3.2.0...v3.2.1) (2020-07-14)
 
-
 ### Bug Fixes
 
-* 🐛 add z index to header row if sticky ([03df5c3](https://github.com/nordnet/ui/commit/03df5c3))
-* 🐛 remove legacy expand and rework types ([4858a4d](https://github.com/nordnet/ui/commit/4858a4d))
+- 🐛 add z index to header row if sticky ([03df5c3](https://github.com/nordnet/ui/commit/03df5c3))
+- 🐛 remove legacy expand and rework types ([4858a4d](https://github.com/nordnet/ui/commit/4858a4d))
 
 # [3.2.0](https://github.com/nordnet/ui/compare/v3.1.0...v3.2.0) (2020-07-14)
 
-
 ### Bug Fixes
 
-* 🐛 added render for sizes to footer ([57346ec](https://github.com/nordnet/ui/commit/57346ec))
-
+- 🐛 added render for sizes to footer ([57346ec](https://github.com/nordnet/ui/commit/57346ec))
 
 ### Features
 
-* 🎸 allow disable of truncation on table text wrappers ([f93e5da](https://github.com/nordnet/ui/commit/f93e5da))
-* 🎸 column distance for flex table ([d05d8f7](https://github.com/nordnet/ui/commit/d05d8f7))
+- 🎸 allow disable of truncation on table text wrappers ([f93e5da](https://github.com/nordnet/ui/commit/f93e5da))
+- 🎸 column distance for flex table ([d05d8f7](https://github.com/nordnet/ui/commit/d05d8f7))
 
 # [3.1.0](https://github.com/nordnet/ui/compare/v3.0.1...v3.1.0) (2020-07-13)
 
-
 ### Features
 
-* add new icons ([072d991](https://github.com/nordnet/ui/commit/072d991))
+- add new icons ([072d991](https://github.com/nordnet/ui/commit/072d991))
 
 ## [3.0.1](https://github.com/nordnet/ui/compare/v3.0.0...v3.0.1) (2020-07-10)
 
-
 ### Bug Fixes
 
-* 🐛 add render for sizes to cell ([fe7df23](https://github.com/nordnet/ui/commit/fe7df23))
-* 🐛 add render for sizes to header content ([abf999c](https://github.com/nordnet/ui/commit/abf999c))
+- 🐛 add render for sizes to cell ([fe7df23](https://github.com/nordnet/ui/commit/fe7df23))
+- 🐛 add render for sizes to header content ([abf999c](https://github.com/nordnet/ui/commit/abf999c))
 
 # [3.0.0](https://github.com/nordnet/ui/compare/v2.61.1...v3.0.0) (2020-07-10)
 
-
 ### Bug Fixes
 
-* cleaned dependencies ([8ded330](https://github.com/nordnet/ui/commit/8ded330))
-* exposing the new link helpers ([c61a24a](https://github.com/nordnet/ui/commit/c61a24a))
-* innerref needs to be specifically handled in defaultlink ([017f8da](https://github.com/nordnet/ui/commit/017f8da))
-* merged master for latest changes ([e63dd29](https://github.com/nordnet/ui/commit/e63dd29))
-
+- cleaned dependencies ([8ded330](https://github.com/nordnet/ui/commit/8ded330))
+- exposing the new link helpers ([c61a24a](https://github.com/nordnet/ui/commit/c61a24a))
+- innerref needs to be specifically handled in defaultlink ([017f8da](https://github.com/nordnet/ui/commit/017f8da))
+- merged master for latest changes ([e63dd29](https://github.com/nordnet/ui/commit/e63dd29))
 
 ### Features
 
-* 🎸 actually removing react-router as peerdep ([bb5c90f](https://github.com/nordnet/ui/commit/bb5c90f))
-* 🎸 bump react-intl to v4 ([4588508](https://github.com/nordnet/ui/commit/4588508))
-* 🎸 button is using linkprovider ([4f69763](https://github.com/nordnet/ui/commit/4f69763))
-* 🎸 links no longer depend on react-router ([2ffc4d1](https://github.com/nordnet/ui/commit/2ffc4d1))
-* 🎸 navtabs.item accepts active, no router ([a2e0970](https://github.com/nordnet/ui/commit/a2e0970))
-* 🎸 new linkprovider tested with tabnavs ([0f576a7](https://github.com/nordnet/ui/commit/0f576a7))
-
+- 🎸 actually removing react-router as peerdep ([bb5c90f](https://github.com/nordnet/ui/commit/bb5c90f))
+- 🎸 bump react-intl to v4 ([4588508](https://github.com/nordnet/ui/commit/4588508))
+- 🎸 button is using linkprovider ([4f69763](https://github.com/nordnet/ui/commit/4f69763))
+- 🎸 links no longer depend on react-router ([2ffc4d1](https://github.com/nordnet/ui/commit/2ffc4d1))
+- 🎸 navtabs.item accepts active, no router ([a2e0970](https://github.com/nordnet/ui/commit/a2e0970))
+- 🎸 new linkprovider tested with tabnavs ([0f576a7](https://github.com/nordnet/ui/commit/0f576a7))
 
 ### BREAKING CHANGES
 
-* 🧨 No longer requires react-router as a routing system.
-* 🧨 Button as a link requires LinkProvider
-* 🧨 Link needs a provided react-router link to work as before
-* 🧨 TabNavs requires a custom Link to LinkProvider if to be used with
-react-router.
-* 🧨 Dropping support for automatic active with react-router
+- 🧨 No longer requires react-router as a routing system.
+- 🧨 Button as a link requires LinkProvider
+- 🧨 Link needs a provided react-router link to work as before
+- 🧨 TabNavs requires a custom Link to LinkProvider if to be used with
+  react-router.
+- 🧨 Dropping support for automatic active with react-router
 
 # [3.0.0-beta.2](https://github.com/nordnet/ui/compare/v3.0.0-beta.1@beta...v3.0.0-beta.2@beta) (2020-07-10)
 
-
 ### Bug Fixes
 
-* 🐛 remove background color from stories ([2b089a1](https://github.com/nordnet/ui/commit/2b089a1))
-* 🐛 set background color on row expand area ([c867101](https://github.com/nordnet/ui/commit/c867101))
-* 🐛 set row background to white in table ([b866adf](https://github.com/nordnet/ui/commit/b866adf))
-
+- 🐛 remove background color from stories ([2b089a1](https://github.com/nordnet/ui/commit/2b089a1))
+- 🐛 set background color on row expand area ([c867101](https://github.com/nordnet/ui/commit/c867101))
+- 🐛 set row background to white in table ([b866adf](https://github.com/nordnet/ui/commit/b866adf))
 
 ### Features
 
-* add sliderSecondary color ([cfab49a](https://github.com/nordnet/ui/commit/cfab49a))
+- add sliderSecondary color ([cfab49a](https://github.com/nordnet/ui/commit/cfab49a))
 
 ## [2.61.1](https://github.com/nordnet/ui/compare/v2.61.0...v2.61.1) (2020-07-09)
 
-
 ### Bug Fixes
 
-* 🐛 remove background color from stories ([2b089a1](https://github.com/nordnet/ui/commit/2b089a1))
-* 🐛 set background color on row expand area ([c867101](https://github.com/nordnet/ui/commit/c867101))
-* 🐛 set row background to white in table ([b866adf](https://github.com/nordnet/ui/commit/b866adf))
+- 🐛 remove background color from stories ([2b089a1](https://github.com/nordnet/ui/commit/2b089a1))
+- 🐛 set background color on row expand area ([c867101](https://github.com/nordnet/ui/commit/c867101))
+- 🐛 set row background to white in table ([b866adf](https://github.com/nordnet/ui/commit/b866adf))
 
 # [2.61.0](https://github.com/nordnet/ui/compare/v2.60.0...v2.61.0) (2020-07-09)
 
-
 ### Features
 
-* add sliderSecondary color ([cfab49a](https://github.com/nordnet/ui/commit/cfab49a))
+- add sliderSecondary color ([cfab49a](https://github.com/nordnet/ui/commit/cfab49a))
 
 # [2.60.0](https://github.com/nordnet/ui/compare/v2.59.2...v2.60.0) (2020-07-08)
 
 # [2.60.0-beta.1](https://github.com/nordnet/ui/compare/v2.59.0...v2.60.0-beta.1@beta) (2020-07-07)
 
-
 ### Features
 
-* 🎸 bump react-intl to v4 ([4588508](https://github.com/nordnet/ui/commit/4588508))
+- 🎸 bump react-intl to v4 ([4588508](https://github.com/nordnet/ui/commit/4588508))
 
 # [2.60.0](https://github.com/nordnet/ui/compare/v2.59.2...v2.60.0) (2020-07-08)
 
 ### Bug Fixes
 
-* add proper default variant, not-allowed cursor on disabled variant ([51049c5](https://github.com/nordnet/ui/commit/51049c5))
-* add slider container ([213d7c7](https://github.com/nordnet/ui/commit/213d7c7))
-* change div sc call ([0161adc](https://github.com/nordnet/ui/commit/0161adc))
-* merge master ([a5cfaa6](https://github.com/nordnet/ui/commit/a5cfaa6))
-* merge master ([19c309a](https://github.com/nordnet/ui/commit/19c309a))
-* set container height to total height ([9c83a38](https://github.com/nordnet/ui/commit/9c83a38))
+- add proper default variant, not-allowed cursor on disabled variant ([51049c5](https://github.com/nordnet/ui/commit/51049c5))
+- add slider container ([213d7c7](https://github.com/nordnet/ui/commit/213d7c7))
+- change div sc call ([0161adc](https://github.com/nordnet/ui/commit/0161adc))
+- merge master ([a5cfaa6](https://github.com/nordnet/ui/commit/a5cfaa6))
+- merge master ([19c309a](https://github.com/nordnet/ui/commit/19c309a))
+- set container height to total height ([9c83a38](https://github.com/nordnet/ui/commit/9c83a38))
 
 ### Features
 
-* add disabled option to slider ([fe8e5a7](https://github.com/nordnet/ui/commit/fe8e5a7))
-* slider component rebuild ([12c2a90](https://github.com/nordnet/ui/commit/12c2a90))
+- add disabled option to slider ([fe8e5a7](https://github.com/nordnet/ui/commit/fe8e5a7))
+- slider component rebuild ([12c2a90](https://github.com/nordnet/ui/commit/12c2a90))
 
 ## [2.59.2](https://github.com/nordnet/ui/compare/v2.59.1...v2.59.2) (2020-07-08)
 
-
 ### Bug Fixes
 
-* 🐛 react-intl 5 ([2c5caae](https://github.com/nordnet/ui/commit/2c5caae))
+- 🐛 react-intl 5 ([2c5caae](https://github.com/nordnet/ui/commit/2c5caae))
 
 ## [2.59.1](https://github.com/nordnet/ui/compare/v2.59.0...v2.59.1) (2020-07-07)
 
-
 ### Bug Fixes
 
-* not packing storyshots in package ([86c36be](https://github.com/nordnet/ui/commit/86c36be))
+- not packing storyshots in package ([86c36be](https://github.com/nordnet/ui/commit/86c36be))
 
 # [2.59.0](https://github.com/nordnet/ui/compare/v2.58.2...v2.59.0) (2020-07-06)
 
-
 ### Bug Fixes
 
-* 🐛 expandable styling when resizing ([7b8b094](https://github.com/nordnet/ui/commit/7b8b094))
-* 🐛 remove negiative margin for row ([4341b8e](https://github.com/nordnet/ui/commit/4341b8e))
-* 🐛 use shared export expand button in expand cell ([c57a39d](https://github.com/nordnet/ui/commit/c57a39d))
-
+- 🐛 expandable styling when resizing ([7b8b094](https://github.com/nordnet/ui/commit/7b8b094))
+- 🐛 remove negiative margin for row ([4341b8e](https://github.com/nordnet/ui/commit/4341b8e))
+- 🐛 use shared export expand button in expand cell ([c57a39d](https://github.com/nordnet/ui/commit/c57a39d))
 
 ### Features
 
-* 🎸 add screen breakpoints expand props on row ([2ad2345](https://github.com/nordnet/ui/commit/2ad2345))
-* 🎸 set flextable props for different screen sizes ([95b7131](https://github.com/nordnet/ui/commit/95b7131))
-* wip add expandable media props to flex table rows ([015b2f0](https://github.com/nordnet/ui/commit/015b2f0))
-* wip extract media render to separate function ([73d5509](https://github.com/nordnet/ui/commit/73d5509))
-* wip fix render media func. and extract to shared ([c9620ca](https://github.com/nordnet/ui/commit/c9620ca))
-* wip render expand on different screens ([39035c8](https://github.com/nordnet/ui/commit/39035c8))
+- 🎸 add screen breakpoints expand props on row ([2ad2345](https://github.com/nordnet/ui/commit/2ad2345))
+- 🎸 set flextable props for different screen sizes ([95b7131](https://github.com/nordnet/ui/commit/95b7131))
+- wip add expandable media props to flex table rows ([015b2f0](https://github.com/nordnet/ui/commit/015b2f0))
+- wip extract media render to separate function ([73d5509](https://github.com/nordnet/ui/commit/73d5509))
+- wip fix render media func. and extract to shared ([c9620ca](https://github.com/nordnet/ui/commit/c9620ca))
+- wip render expand on different screens ([39035c8](https://github.com/nordnet/ui/commit/39035c8))
 
 ## [2.58.2](https://github.com/nordnet/ui/compare/v2.58.1...v2.58.2) (2020-07-03)
 
-
 ### Bug Fixes
 
-* fadedscroll ie11 fix ([5dc2cde](https://github.com/nordnet/ui/commit/5dc2cde))
+- fadedscroll ie11 fix ([5dc2cde](https://github.com/nordnet/ui/commit/5dc2cde))
 
 ## [2.58.1](https://github.com/nordnet/ui/compare/v2.58.0...v2.58.1) (2020-07-03)
 
-
 ### Bug Fixes
 
-* 🐛 table alignment on header and cell ([124addf](https://github.com/nordnet/ui/commit/124addf))
+- 🐛 table alignment on header and cell ([124addf](https://github.com/nordnet/ui/commit/124addf))
 
 # [2.58.0](https://github.com/nordnet/ui/compare/v2.57.0...v2.58.0) (2020-07-03)
 
-
 ### Features
 
-* 🎸 add cell inline container ([ccef566](https://github.com/nordnet/ui/commit/ccef566))
-* 🎸 add spacing between cells ([b14a4b1](https://github.com/nordnet/ui/commit/b14a4b1))
+- 🎸 add cell inline container ([ccef566](https://github.com/nordnet/ui/commit/ccef566))
+- 🎸 add spacing between cells ([b14a4b1](https://github.com/nordnet/ui/commit/b14a4b1))
 
 # [2.57.0](https://github.com/nordnet/ui/compare/v2.56.1...v2.57.0) (2020-07-02)
 
-
 ### Features
 
-* update Calendar icon ([4237f89](https://github.com/nordnet/ui/commit/4237f89))
+- update Calendar icon ([4237f89](https://github.com/nordnet/ui/commit/4237f89))
 
 ## [2.56.1](https://github.com/nordnet/ui/compare/v2.56.0...v2.56.1) (2020-07-01)
 
-
 ### Bug Fixes
 
-* 🐛 added column id type to flag cell ([46d3953](https://github.com/nordnet/ui/commit/46d3953))
-* 🐛 inner cell to retain export of text wrapper ([a32d8f9](https://github.com/nordnet/ui/commit/a32d8f9))
+- 🐛 added column id type to flag cell ([46d3953](https://github.com/nordnet/ui/commit/46d3953))
+- 🐛 inner cell to retain export of text wrapper ([a32d8f9](https://github.com/nordnet/ui/commit/a32d8f9))
 
 # [2.56.0](https://github.com/nordnet/ui/compare/v2.55.3...v2.56.0) (2020-07-01)
 
-
 ### Features
 
-* **Timeline:** adds Timeline component ([f36dd45](https://github.com/nordnet/ui/commit/f36dd45))
+- **Timeline:** adds Timeline component ([f36dd45](https://github.com/nordnet/ui/commit/f36dd45))
 
 ## [2.55.3](https://github.com/nordnet/ui/compare/v2.55.2...v2.55.3) (2020-06-30)
 
-
 ### Bug Fixes
 
-* 🐛 change line-height to display: inline-flex ([2d8c1c6](https://github.com/nordnet/ui/commit/2d8c1c6))
-* 🐛 correct truncate and icon on same row as text ([5c39159](https://github.com/nordnet/ui/commit/5c39159))
-* 🐛 extra padding from overflow: hidden ([a603411](https://github.com/nordnet/ui/commit/a603411))
+- 🐛 change line-height to display: inline-flex ([2d8c1c6](https://github.com/nordnet/ui/commit/2d8c1c6))
+- 🐛 correct truncate and icon on same row as text ([5c39159](https://github.com/nordnet/ui/commit/5c39159))
+- 🐛 extra padding from overflow: hidden ([a603411](https://github.com/nordnet/ui/commit/a603411))
 
 ## [2.55.2](https://github.com/nordnet/ui/compare/v2.55.1...v2.55.2) (2020-06-30)
 
-
 ### Bug Fixes
 
-* 🐛 cell ts error ([6ec2683](https://github.com/nordnet/ui/commit/6ec2683))
-* 🐛 fixed ts error for cell, header and column provider ([bda8c3b](https://github.com/nordnet/ui/commit/bda8c3b))
-* 🐛 recast to ReactNode and added clarifying comment ([3398f9f](https://github.com/nordnet/ui/commit/3398f9f))
+- 🐛 cell ts error ([6ec2683](https://github.com/nordnet/ui/commit/6ec2683))
+- 🐛 fixed ts error for cell, header and column provider ([bda8c3b](https://github.com/nordnet/ui/commit/bda8c3b))
+- 🐛 recast to ReactNode and added clarifying comment ([3398f9f](https://github.com/nordnet/ui/commit/3398f9f))
 
 ## [2.55.1](https://github.com/nordnet/ui/compare/v2.55.0...v2.55.1) (2020-06-29)
 
-
 ### Bug Fixes
 
-* bump package version ([31a375c](https://github.com/nordnet/ui/commit/31a375c))
-* wip flex table export errors ([e7e1754](https://github.com/nordnet/ui/commit/e7e1754))
+- bump package version ([31a375c](https://github.com/nordnet/ui/commit/31a375c))
+- wip flex table export errors ([e7e1754](https://github.com/nordnet/ui/commit/e7e1754))
 
 # [2.55.0](https://github.com/nordnet/ui/compare/v2.54.0...v2.55.0) (2020-06-26)
 
-
 ### Bug Fixes
 
-* 🐛 add changes to yarn lock file ([33686ae](https://github.com/nordnet/ui/commit/33686ae))
-* 🐛 add color to header border ([4bec243](https://github.com/nordnet/ui/commit/4bec243))
-* 🐛 add conditional chevron icon ([f43069d](https://github.com/nordnet/ui/commit/f43069d))
-* 🐛 add correct null check header content ([6d3d35c](https://github.com/nordnet/ui/commit/6d3d35c))
-* 🐛 add fallback direction to arrow icons ([c17a6e8](https://github.com/nordnet/ui/commit/c17a6e8))
-* 🐛 add flexlist component for expand item ([3e92bb4](https://github.com/nordnet/ui/commit/3e92bb4))
-* 🐛 add hidden prop type to flexbox item ([efabdf2](https://github.com/nordnet/ui/commit/efabdf2))
-* 🐛 add padding for expand items and container ([1f3017d](https://github.com/nordnet/ui/commit/1f3017d))
-* 🐛 add padding to expanded table ([d585df3](https://github.com/nordnet/ui/commit/d585df3))
-* 🐛 add row separator when expanded ([8e7e2e8](https://github.com/nordnet/ui/commit/8e7e2e8))
-* 🐛 added back prop on type ([6acacc9](https://github.com/nordnet/ui/commit/6acacc9))
-* 🐛 added cells to different rows story and removed comment ([ba2fc8d](https://github.com/nordnet/ui/commit/ba2fc8d))
-* 🐛 allow html attributes in Box types ([3850b8a](https://github.com/nordnet/ui/commit/3850b8a))
-* 🐛 change fleax table header link to button ([e4af539](https://github.com/nordnet/ui/commit/e4af539))
-* 🐛 change font size in expanded value when density is small ([a193199](https://github.com/nordnet/ui/commit/a193199))
-* 🐛 change sort arrow in table header ([d36e186](https://github.com/nordnet/ui/commit/d36e186))
-* 🐛 chevron thickness and sort icon size ([bae697b](https://github.com/nordnet/ui/commit/bae697b))
-* 🐛 correct render condition for children of table row ([be0b195](https://github.com/nordnet/ui/commit/be0b195))
-* 🐛 correct sort icon props ([d2a52d1](https://github.com/nordnet/ui/commit/d2a52d1))
-* 🐛 expand item truncation, width and font size ([efee49e](https://github.com/nordnet/ui/commit/efee49e))
-* 🐛 expand item width to correct from design ([c6ad9c1](https://github.com/nordnet/ui/commit/c6ad9c1))
-* 🐛 expandable controlled table on expand toggle ternary ([d773abb](https://github.com/nordnet/ui/commit/d773abb))
-* 🐛 expandable controlled table on expand toggle ternary ([2e83af5](https://github.com/nordnet/ui/commit/2e83af5))
-* 🐛 expanded table into same story ([2d368d2](https://github.com/nordnet/ui/commit/2d368d2))
-* 🐛 export text wrapper on cell ([c072c6d](https://github.com/nordnet/ui/commit/c072c6d))
-* 🐛 flip direction of ascending descending in sort arrow ([c249d37](https://github.com/nordnet/ui/commit/c249d37))
-* 🐛 merge with feat/table-component and minor refactor ([8403322](https://github.com/nordnet/ui/commit/8403322))
-* 🐛 merge with table component and font size + story ([e54700c](https://github.com/nordnet/ui/commit/e54700c))
-* 🐛 path to polygon for chevron icon ([a173eb3](https://github.com/nordnet/ui/commit/a173eb3))
-* 🐛 remove duplicate render when child is an element ([2c650fc](https://github.com/nordnet/ui/commit/2c650fc))
-* 🐛 remove rowgroup from table ([e0f0025](https://github.com/nordnet/ui/commit/e0f0025))
-* 🐛 remove uneccessary wrapper div ([440335e](https://github.com/nordnet/ui/commit/440335e))
-* 🐛 remove unnecessary row in table headers story ([cc54b18](https://github.com/nordnet/ui/commit/cc54b18))
-* 🐛 remove unused type for flexbox component ([537f596](https://github.com/nordnet/ui/commit/537f596))
-* 🐛 removed comment ([a14f813](https://github.com/nordnet/ui/commit/a14f813))
-* 🐛 removed typo and unnecessary styling for sort button ([27f078a](https://github.com/nordnet/ui/commit/27f078a))
-* 🐛 removed unnecessary style for flex table sort button ([39135cc](https://github.com/nordnet/ui/commit/39135cc))
-* 🐛 rename old expandable content to expand items ([1acad95](https://github.com/nordnet/ui/commit/1acad95))
-* 🐛 restyle of all FlexTables and removed StyledTableDiv ([4d6204a](https://github.com/nordnet/ui/commit/4d6204a))
-* 🐛 revert back button table header sort button into a link ([2db2d56](https://github.com/nordnet/ui/commit/2db2d56))
-* 🐛 revert border left conditional ([9bbf7c9](https://github.com/nordnet/ui/commit/9bbf7c9))
-* 🐛 revert fallback direction for arrow icons ([cca1195](https://github.com/nordnet/ui/commit/cca1195))
-* 🐛 set fallback direction for arrow icons if not set ([7a0eae2](https://github.com/nordnet/ui/commit/7a0eae2))
-* 🐛 wrong column id and merge with feat/table-component ([b7d056f](https://github.com/nordnet/ui/commit/b7d056f))
-* add snapshots ([5036999](https://github.com/nordnet/ui/commit/5036999))
-* change sort arrow orientation and update stories ([76edd6d](https://github.com/nordnet/ui/commit/76edd6d))
-* clarify story for flex table with different alignment ([b2b140f](https://github.com/nordnet/ui/commit/b2b140f))
-* colors of sorted headers ([2adf317](https://github.com/nordnet/ui/commit/2adf317))
-* font size on table level ([9c8f1a1](https://github.com/nordnet/ui/commit/9c8f1a1))
-* hover only on row ([3b15308](https://github.com/nordnet/ui/commit/3b15308))
-* make sort order icon into a component ([0fe84df](https://github.com/nordnet/ui/commit/0fe84df))
-* next sort order ([3f6d196](https://github.com/nordnet/ui/commit/3f6d196))
-* padding in row ([5b7f771](https://github.com/nordnet/ui/commit/5b7f771))
-* pointer on sortable/unstortable header ([c0d83d8](https://github.com/nordnet/ui/commit/c0d83d8))
-* react hook warning in stories ([48e2b69](https://github.com/nordnet/ui/commit/48e2b69))
-* remove nested SortableHeaderExample ([23305d5](https://github.com/nordnet/ui/commit/23305d5))
-* remove non supported Flexbox attribute ([3e37009](https://github.com/nordnet/ui/commit/3e37009))
-* render cell with correct layout directly ([e937515](https://github.com/nordnet/ui/commit/e937515))
-* return alignContent as a prop and sanitize it in flexbox ([ea3354f](https://github.com/nordnet/ui/commit/ea3354f))
-* review comment ([9571fda](https://github.com/nordnet/ui/commit/9571fda))
-* set correct default state ([d1d1b51](https://github.com/nordnet/ui/commit/d1d1b51))
-* snapshots ([455ea0c](https://github.com/nordnet/ui/commit/455ea0c))
-* snapshots ([3813e86](https://github.com/nordnet/ui/commit/3813e86))
-* snapshots ([41d2279](https://github.com/nordnet/ui/commit/41d2279))
-* snapshots ([d8a3055](https://github.com/nordnet/ui/commit/d8a3055))
-* snapshots ([caac062](https://github.com/nordnet/ui/commit/caac062))
-* snapshots ([686496f](https://github.com/nordnet/ui/commit/686496f))
-* sort state controlled and uncontrolled ([68342e2](https://github.com/nordnet/ui/commit/68342e2))
-* stories for sortable headers ([8360787](https://github.com/nordnet/ui/commit/8360787))
-* story with state ([29441e2](https://github.com/nordnet/ui/commit/29441e2))
-* story, action header is wip ([61080a2](https://github.com/nordnet/ui/commit/61080a2))
-* table density ([de27314](https://github.com/nordnet/ui/commit/de27314))
-* types ([93fa958](https://github.com/nordnet/ui/commit/93fa958))
-* types for table column states ([e363910](https://github.com/nordnet/ui/commit/e363910))
-* unsupported conditional ([5bc6141](https://github.com/nordnet/ui/commit/5bc6141))
-* wip change sort button from link into button ([343f376](https://github.com/nordnet/ui/commit/343f376))
-
+- 🐛 add changes to yarn lock file ([33686ae](https://github.com/nordnet/ui/commit/33686ae))
+- 🐛 add color to header border ([4bec243](https://github.com/nordnet/ui/commit/4bec243))
+- 🐛 add conditional chevron icon ([f43069d](https://github.com/nordnet/ui/commit/f43069d))
+- 🐛 add correct null check header content ([6d3d35c](https://github.com/nordnet/ui/commit/6d3d35c))
+- 🐛 add fallback direction to arrow icons ([c17a6e8](https://github.com/nordnet/ui/commit/c17a6e8))
+- 🐛 add flexlist component for expand item ([3e92bb4](https://github.com/nordnet/ui/commit/3e92bb4))
+- 🐛 add hidden prop type to flexbox item ([efabdf2](https://github.com/nordnet/ui/commit/efabdf2))
+- 🐛 add padding for expand items and container ([1f3017d](https://github.com/nordnet/ui/commit/1f3017d))
+- 🐛 add padding to expanded table ([d585df3](https://github.com/nordnet/ui/commit/d585df3))
+- 🐛 add row separator when expanded ([8e7e2e8](https://github.com/nordnet/ui/commit/8e7e2e8))
+- 🐛 added back prop on type ([6acacc9](https://github.com/nordnet/ui/commit/6acacc9))
+- 🐛 added cells to different rows story and removed comment ([ba2fc8d](https://github.com/nordnet/ui/commit/ba2fc8d))
+- 🐛 allow html attributes in Box types ([3850b8a](https://github.com/nordnet/ui/commit/3850b8a))
+- 🐛 change fleax table header link to button ([e4af539](https://github.com/nordnet/ui/commit/e4af539))
+- 🐛 change font size in expanded value when density is small ([a193199](https://github.com/nordnet/ui/commit/a193199))
+- 🐛 change sort arrow in table header ([d36e186](https://github.com/nordnet/ui/commit/d36e186))
+- 🐛 chevron thickness and sort icon size ([bae697b](https://github.com/nordnet/ui/commit/bae697b))
+- 🐛 correct render condition for children of table row ([be0b195](https://github.com/nordnet/ui/commit/be0b195))
+- 🐛 correct sort icon props ([d2a52d1](https://github.com/nordnet/ui/commit/d2a52d1))
+- 🐛 expand item truncation, width and font size ([efee49e](https://github.com/nordnet/ui/commit/efee49e))
+- 🐛 expand item width to correct from design ([c6ad9c1](https://github.com/nordnet/ui/commit/c6ad9c1))
+- 🐛 expandable controlled table on expand toggle ternary ([d773abb](https://github.com/nordnet/ui/commit/d773abb))
+- 🐛 expandable controlled table on expand toggle ternary ([2e83af5](https://github.com/nordnet/ui/commit/2e83af5))
+- 🐛 expanded table into same story ([2d368d2](https://github.com/nordnet/ui/commit/2d368d2))
+- 🐛 export text wrapper on cell ([c072c6d](https://github.com/nordnet/ui/commit/c072c6d))
+- 🐛 flip direction of ascending descending in sort arrow ([c249d37](https://github.com/nordnet/ui/commit/c249d37))
+- 🐛 merge with feat/table-component and minor refactor ([8403322](https://github.com/nordnet/ui/commit/8403322))
+- 🐛 merge with table component and font size + story ([e54700c](https://github.com/nordnet/ui/commit/e54700c))
+- 🐛 path to polygon for chevron icon ([a173eb3](https://github.com/nordnet/ui/commit/a173eb3))
+- 🐛 remove duplicate render when child is an element ([2c650fc](https://github.com/nordnet/ui/commit/2c650fc))
+- 🐛 remove rowgroup from table ([e0f0025](https://github.com/nordnet/ui/commit/e0f0025))
+- 🐛 remove uneccessary wrapper div ([440335e](https://github.com/nordnet/ui/commit/440335e))
+- 🐛 remove unnecessary row in table headers story ([cc54b18](https://github.com/nordnet/ui/commit/cc54b18))
+- 🐛 remove unused type for flexbox component ([537f596](https://github.com/nordnet/ui/commit/537f596))
+- 🐛 removed comment ([a14f813](https://github.com/nordnet/ui/commit/a14f813))
+- 🐛 removed typo and unnecessary styling for sort button ([27f078a](https://github.com/nordnet/ui/commit/27f078a))
+- 🐛 removed unnecessary style for flex table sort button ([39135cc](https://github.com/nordnet/ui/commit/39135cc))
+- 🐛 rename old expandable content to expand items ([1acad95](https://github.com/nordnet/ui/commit/1acad95))
+- 🐛 restyle of all FlexTables and removed StyledTableDiv ([4d6204a](https://github.com/nordnet/ui/commit/4d6204a))
+- 🐛 revert back button table header sort button into a link ([2db2d56](https://github.com/nordnet/ui/commit/2db2d56))
+- 🐛 revert border left conditional ([9bbf7c9](https://github.com/nordnet/ui/commit/9bbf7c9))
+- 🐛 revert fallback direction for arrow icons ([cca1195](https://github.com/nordnet/ui/commit/cca1195))
+- 🐛 set fallback direction for arrow icons if not set ([7a0eae2](https://github.com/nordnet/ui/commit/7a0eae2))
+- 🐛 wrong column id and merge with feat/table-component ([b7d056f](https://github.com/nordnet/ui/commit/b7d056f))
+- add snapshots ([5036999](https://github.com/nordnet/ui/commit/5036999))
+- change sort arrow orientation and update stories ([76edd6d](https://github.com/nordnet/ui/commit/76edd6d))
+- clarify story for flex table with different alignment ([b2b140f](https://github.com/nordnet/ui/commit/b2b140f))
+- colors of sorted headers ([2adf317](https://github.com/nordnet/ui/commit/2adf317))
+- font size on table level ([9c8f1a1](https://github.com/nordnet/ui/commit/9c8f1a1))
+- hover only on row ([3b15308](https://github.com/nordnet/ui/commit/3b15308))
+- make sort order icon into a component ([0fe84df](https://github.com/nordnet/ui/commit/0fe84df))
+- next sort order ([3f6d196](https://github.com/nordnet/ui/commit/3f6d196))
+- padding in row ([5b7f771](https://github.com/nordnet/ui/commit/5b7f771))
+- pointer on sortable/unstortable header ([c0d83d8](https://github.com/nordnet/ui/commit/c0d83d8))
+- react hook warning in stories ([48e2b69](https://github.com/nordnet/ui/commit/48e2b69))
+- remove nested SortableHeaderExample ([23305d5](https://github.com/nordnet/ui/commit/23305d5))
+- remove non supported Flexbox attribute ([3e37009](https://github.com/nordnet/ui/commit/3e37009))
+- render cell with correct layout directly ([e937515](https://github.com/nordnet/ui/commit/e937515))
+- return alignContent as a prop and sanitize it in flexbox ([ea3354f](https://github.com/nordnet/ui/commit/ea3354f))
+- review comment ([9571fda](https://github.com/nordnet/ui/commit/9571fda))
+- set correct default state ([d1d1b51](https://github.com/nordnet/ui/commit/d1d1b51))
+- snapshots ([455ea0c](https://github.com/nordnet/ui/commit/455ea0c))
+- snapshots ([3813e86](https://github.com/nordnet/ui/commit/3813e86))
+- snapshots ([41d2279](https://github.com/nordnet/ui/commit/41d2279))
+- snapshots ([d8a3055](https://github.com/nordnet/ui/commit/d8a3055))
+- snapshots ([caac062](https://github.com/nordnet/ui/commit/caac062))
+- snapshots ([686496f](https://github.com/nordnet/ui/commit/686496f))
+- sort state controlled and uncontrolled ([68342e2](https://github.com/nordnet/ui/commit/68342e2))
+- stories for sortable headers ([8360787](https://github.com/nordnet/ui/commit/8360787))
+- story with state ([29441e2](https://github.com/nordnet/ui/commit/29441e2))
+- story, action header is wip ([61080a2](https://github.com/nordnet/ui/commit/61080a2))
+- table density ([de27314](https://github.com/nordnet/ui/commit/de27314))
+- types ([93fa958](https://github.com/nordnet/ui/commit/93fa958))
+- types for table column states ([e363910](https://github.com/nordnet/ui/commit/e363910))
+- unsupported conditional ([5bc6141](https://github.com/nordnet/ui/commit/5bc6141))
+- wip change sort button from link into button ([343f376](https://github.com/nordnet/ui/commit/343f376))
 
 ### Features
 
-* 🎸 add a tooltip when cells and headers are truncated ([ad2f127](https://github.com/nordnet/ui/commit/ad2f127))
-* 🎸 add base cell ([2e8c5e9](https://github.com/nordnet/ui/commit/2e8c5e9))
-* 🎸 add border hiding and table row story ([014470c](https://github.com/nordnet/ui/commit/014470c))
-* 🎸 add controlled expand, rename prop to add expand on row ([2a7580f](https://github.com/nordnet/ui/commit/2a7580f))
-* 🎸 add density to header ([b7a1e4f](https://github.com/nordnet/ui/commit/b7a1e4f))
-* 🎸 add expand button sizes and fixed action header size ([a19a9a8](https://github.com/nordnet/ui/commit/a19a9a8))
-* 🎸 add expand cell and refactor to action header ([4471aaf](https://github.com/nordnet/ui/commit/4471aaf))
-* 🎸 add font size to table header ([52e5217](https://github.com/nordnet/ui/commit/52e5217))
-* 🎸 add header and row group components ([de9e778](https://github.com/nordnet/ui/commit/de9e778))
-* 🎸 add hoverHighlight prop to row ([ee51508](https://github.com/nordnet/ui/commit/ee51508))
-* 🎸 add html attributes types to table and row ([7d54074](https://github.com/nordnet/ui/commit/7d54074))
-* 🎸 add new table expanded story ([beaec44](https://github.com/nordnet/ui/commit/beaec44))
-* 🎸 add padding for expand item children ([134221b](https://github.com/nordnet/ui/commit/134221b))
-* 🎸 add padding to table row ([58d40cb](https://github.com/nordnet/ui/commit/58d40cb))
-* 🎸 add prop to hide table column ([5c0cbe3](https://github.com/nordnet/ui/commit/5c0cbe3))
-* 🎸 add row tyes expand and expandable ([158684b](https://github.com/nordnet/ui/commit/158684b))
-* 🎸 add sort arrow svg icon ([34b5767](https://github.com/nordnet/ui/commit/34b5767))
-* 🎸 add sort order icon to header ([f0d2117](https://github.com/nordnet/ui/commit/f0d2117))
-* 🎸 add sticky header to flex table ([e21d34f](https://github.com/nordnet/ui/commit/e21d34f))
-* 🎸 add story short for sort arrow ([b66801f](https://github.com/nordnet/ui/commit/b66801f))
-* 🎸 add table footer cell ([2339c68](https://github.com/nordnet/ui/commit/2339c68))
-* 🎸 add table with footer skeleton ([928abe1](https://github.com/nordnet/ui/commit/928abe1))
-* 🎸 add text wrapper for cell ([bbf9995](https://github.com/nordnet/ui/commit/bbf9995))
-* 🎸 add title to flex table ([757a01a](https://github.com/nordnet/ui/commit/757a01a))
-* 🎸 allow expand items to take components and export items ([6c57f46](https://github.com/nordnet/ui/commit/6c57f46))
-* 🎸 change expand items to list items ([5d3418d](https://github.com/nordnet/ui/commit/5d3418d))
-* 🎸 change expandable content to react node ([f3ad236](https://github.com/nordnet/ui/commit/f3ad236))
-* 🎸 generalize expandable items in table row ([2cfab3e](https://github.com/nordnet/ui/commit/2cfab3e))
-* 🎸 icon header ([5317bf9](https://github.com/nordnet/ui/commit/5317bf9))
-* 🎸 make expanded into row ([4dce352](https://github.com/nordnet/ui/commit/4dce352))
-* 🎸 set typography and extract for tables expand items ([ed8f222](https://github.com/nordnet/ui/commit/ed8f222))
-* 🎸 table header types and context ([6a86deb](https://github.com/nordnet/ui/commit/6a86deb))
-* 🎸 use icon header props for header ([97194f0](https://github.com/nordnet/ui/commit/97194f0))
-* 🎸 wip add expand button ([ee59c1f](https://github.com/nordnet/ui/commit/ee59c1f))
-* add class name to table ([4f3d316](https://github.com/nordnet/ui/commit/4f3d316))
-* add column provider to table ([3b80c18](https://github.com/nordnet/ui/commit/3b80c18))
-* add columnId to sorting callback ([95538a8](https://github.com/nordnet/ui/commit/95538a8))
-* add footer row ([e2911e3](https://github.com/nordnet/ui/commit/e2911e3))
-* add header row for better defaults ([4c65bfd](https://github.com/nordnet/ui/commit/4c65bfd))
-* add render prop state sharing to table header ([9569a02](https://github.com/nordnet/ui/commit/9569a02))
-* add Row component, initial commit ([f6267cf](https://github.com/nordnet/ui/commit/f6267cf))
-* add sort order ([89bc463](https://github.com/nordnet/ui/commit/89bc463))
-* add Table component, initial commit ([d250948](https://github.com/nordnet/ui/commit/d250948))
-* dispatch header flex props to column reducer ([d013540](https://github.com/nordnet/ui/commit/d013540))
-* expandable content as render prop ([8fcaa6d](https://github.com/nordnet/ui/commit/8fcaa6d))
-* expandable content wip ([32461e2](https://github.com/nordnet/ui/commit/32461e2))
-* move density to table from cell ([43a2407](https://github.com/nordnet/ui/commit/43a2407))
-* move sorting to column reducer and handle uncontrolled sorting of other columns ([b0d7f32](https://github.com/nordnet/ui/commit/b0d7f32))
-* separator color ([54a3404](https://github.com/nordnet/ui/commit/54a3404))
-* sortable header ([8b9de4c](https://github.com/nordnet/ui/commit/8b9de4c))
-* tab navigation, sort callback, sort icon alignment ([236a6b1](https://github.com/nordnet/ui/commit/236a6b1))
-* truncate cell content if too long, fix long header content ([6918072](https://github.com/nordnet/ui/commit/6918072))
-* use truncate component instead of own one ([5470814](https://github.com/nordnet/ui/commit/5470814))
-* wip add border left to row ([b7f41ab](https://github.com/nordnet/ui/commit/b7f41ab))
-* wip add controlled and uncontrolled sorting ([13bdacf](https://github.com/nordnet/ui/commit/13bdacf))
-* wip add sticky header to context ([bc2478e](https://github.com/nordnet/ui/commit/bc2478e))
-* wip context on table ([5a78970](https://github.com/nordnet/ui/commit/5a78970))
-* wip default header looks if only passed a string ([3d8478e](https://github.com/nordnet/ui/commit/3d8478e))
-
+- 🎸 add a tooltip when cells and headers are truncated ([ad2f127](https://github.com/nordnet/ui/commit/ad2f127))
+- 🎸 add base cell ([2e8c5e9](https://github.com/nordnet/ui/commit/2e8c5e9))
+- 🎸 add border hiding and table row story ([014470c](https://github.com/nordnet/ui/commit/014470c))
+- 🎸 add controlled expand, rename prop to add expand on row ([2a7580f](https://github.com/nordnet/ui/commit/2a7580f))
+- 🎸 add density to header ([b7a1e4f](https://github.com/nordnet/ui/commit/b7a1e4f))
+- 🎸 add expand button sizes and fixed action header size ([a19a9a8](https://github.com/nordnet/ui/commit/a19a9a8))
+- 🎸 add expand cell and refactor to action header ([4471aaf](https://github.com/nordnet/ui/commit/4471aaf))
+- 🎸 add font size to table header ([52e5217](https://github.com/nordnet/ui/commit/52e5217))
+- 🎸 add header and row group components ([de9e778](https://github.com/nordnet/ui/commit/de9e778))
+- 🎸 add hoverHighlight prop to row ([ee51508](https://github.com/nordnet/ui/commit/ee51508))
+- 🎸 add html attributes types to table and row ([7d54074](https://github.com/nordnet/ui/commit/7d54074))
+- 🎸 add new table expanded story ([beaec44](https://github.com/nordnet/ui/commit/beaec44))
+- 🎸 add padding for expand item children ([134221b](https://github.com/nordnet/ui/commit/134221b))
+- 🎸 add padding to table row ([58d40cb](https://github.com/nordnet/ui/commit/58d40cb))
+- 🎸 add prop to hide table column ([5c0cbe3](https://github.com/nordnet/ui/commit/5c0cbe3))
+- 🎸 add row tyes expand and expandable ([158684b](https://github.com/nordnet/ui/commit/158684b))
+- 🎸 add sort arrow svg icon ([34b5767](https://github.com/nordnet/ui/commit/34b5767))
+- 🎸 add sort order icon to header ([f0d2117](https://github.com/nordnet/ui/commit/f0d2117))
+- 🎸 add sticky header to flex table ([e21d34f](https://github.com/nordnet/ui/commit/e21d34f))
+- 🎸 add story short for sort arrow ([b66801f](https://github.com/nordnet/ui/commit/b66801f))
+- 🎸 add table footer cell ([2339c68](https://github.com/nordnet/ui/commit/2339c68))
+- 🎸 add table with footer skeleton ([928abe1](https://github.com/nordnet/ui/commit/928abe1))
+- 🎸 add text wrapper for cell ([bbf9995](https://github.com/nordnet/ui/commit/bbf9995))
+- 🎸 add title to flex table ([757a01a](https://github.com/nordnet/ui/commit/757a01a))
+- 🎸 allow expand items to take components and export items ([6c57f46](https://github.com/nordnet/ui/commit/6c57f46))
+- 🎸 change expand items to list items ([5d3418d](https://github.com/nordnet/ui/commit/5d3418d))
+- 🎸 change expandable content to react node ([f3ad236](https://github.com/nordnet/ui/commit/f3ad236))
+- 🎸 generalize expandable items in table row ([2cfab3e](https://github.com/nordnet/ui/commit/2cfab3e))
+- 🎸 icon header ([5317bf9](https://github.com/nordnet/ui/commit/5317bf9))
+- 🎸 make expanded into row ([4dce352](https://github.com/nordnet/ui/commit/4dce352))
+- 🎸 set typography and extract for tables expand items ([ed8f222](https://github.com/nordnet/ui/commit/ed8f222))
+- 🎸 table header types and context ([6a86deb](https://github.com/nordnet/ui/commit/6a86deb))
+- 🎸 use icon header props for header ([97194f0](https://github.com/nordnet/ui/commit/97194f0))
+- 🎸 wip add expand button ([ee59c1f](https://github.com/nordnet/ui/commit/ee59c1f))
+- add class name to table ([4f3d316](https://github.com/nordnet/ui/commit/4f3d316))
+- add column provider to table ([3b80c18](https://github.com/nordnet/ui/commit/3b80c18))
+- add columnId to sorting callback ([95538a8](https://github.com/nordnet/ui/commit/95538a8))
+- add footer row ([e2911e3](https://github.com/nordnet/ui/commit/e2911e3))
+- add header row for better defaults ([4c65bfd](https://github.com/nordnet/ui/commit/4c65bfd))
+- add render prop state sharing to table header ([9569a02](https://github.com/nordnet/ui/commit/9569a02))
+- add Row component, initial commit ([f6267cf](https://github.com/nordnet/ui/commit/f6267cf))
+- add sort order ([89bc463](https://github.com/nordnet/ui/commit/89bc463))
+- add Table component, initial commit ([d250948](https://github.com/nordnet/ui/commit/d250948))
+- dispatch header flex props to column reducer ([d013540](https://github.com/nordnet/ui/commit/d013540))
+- expandable content as render prop ([8fcaa6d](https://github.com/nordnet/ui/commit/8fcaa6d))
+- expandable content wip ([32461e2](https://github.com/nordnet/ui/commit/32461e2))
+- move density to table from cell ([43a2407](https://github.com/nordnet/ui/commit/43a2407))
+- move sorting to column reducer and handle uncontrolled sorting of other columns ([b0d7f32](https://github.com/nordnet/ui/commit/b0d7f32))
+- separator color ([54a3404](https://github.com/nordnet/ui/commit/54a3404))
+- sortable header ([8b9de4c](https://github.com/nordnet/ui/commit/8b9de4c))
+- tab navigation, sort callback, sort icon alignment ([236a6b1](https://github.com/nordnet/ui/commit/236a6b1))
+- truncate cell content if too long, fix long header content ([6918072](https://github.com/nordnet/ui/commit/6918072))
+- use truncate component instead of own one ([5470814](https://github.com/nordnet/ui/commit/5470814))
+- wip add border left to row ([b7f41ab](https://github.com/nordnet/ui/commit/b7f41ab))
+- wip add controlled and uncontrolled sorting ([13bdacf](https://github.com/nordnet/ui/commit/13bdacf))
+- wip add sticky header to context ([bc2478e](https://github.com/nordnet/ui/commit/bc2478e))
+- wip context on table ([5a78970](https://github.com/nordnet/ui/commit/5a78970))
+- wip default header looks if only passed a string ([3d8478e](https://github.com/nordnet/ui/commit/3d8478e))
 
 ### Performance Improvements
 
-* ⚡️ stop cell from rerendering on sort ([dbbd165](https://github.com/nordnet/ui/commit/dbbd165))
+- ⚡️ stop cell from rerendering on sort ([dbbd165](https://github.com/nordnet/ui/commit/dbbd165))
 
 # [2.54.0](https://github.com/nordnet/ui/compare/v2.53.1...v2.54.0) (2020-06-25)
 
-
 ### Bug Fixes
 
-* 🐛 type for as prop on truncate ([8a1a59e](https://github.com/nordnet/ui/commit/8a1a59e))
-
+- 🐛 type for as prop on truncate ([8a1a59e](https://github.com/nordnet/ui/commit/8a1a59e))
 
 ### Features
 
-* 🎸 add truncate ([4c6ab15](https://github.com/nordnet/ui/commit/4c6ab15))
-* 🎸 add truncate with tooltip ([54b3285](https://github.com/nordnet/ui/commit/54b3285))
+- 🎸 add truncate ([4c6ab15](https://github.com/nordnet/ui/commit/4c6ab15))
+- 🎸 add truncate with tooltip ([54b3285](https://github.com/nordnet/ui/commit/54b3285))
 
 ## [2.53.1](https://github.com/nordnet/ui/compare/v2.53.0...v2.53.1) (2020-06-25)
 
-
 ### Bug Fixes
 
-* 🐛 add support for id prop in Input.Text component ([223fafb](https://github.com/nordnet/ui/commit/223fafb))
+- 🐛 add support for id prop in Input.Text component ([223fafb](https://github.com/nordnet/ui/commit/223fafb))
 
 # [2.53.0](https://github.com/nordnet/ui/compare/v2.52.1...v2.53.0) (2020-06-23)
 
-
 ### Features
 
-* update react-router and react-router-dom ([bd9191f](https://github.com/nordnet/ui/commit/bd9191f))
+- update react-router and react-router-dom ([bd9191f](https://github.com/nordnet/ui/commit/bd9191f))
 
 ## [2.52.1](https://github.com/nordnet/ui/compare/v2.52.0...v2.52.1) (2020-06-22)
 
-
 ### Bug Fixes
 
-* remove grow and shrink from title wrapper ([a97ed09](https://github.com/nordnet/ui/commit/a97ed09))
+- remove grow and shrink from title wrapper ([a97ed09](https://github.com/nordnet/ui/commit/a97ed09))
 
 # [2.52.0](https://github.com/nordnet/ui/compare/v2.51.0...v2.52.0) (2020-06-22)
 
-
 ### Features
 
-* spread link rest props ([796fca8](https://github.com/nordnet/ui/commit/796fca8))
+- spread link rest props ([796fca8](https://github.com/nordnet/ui/commit/796fca8))
 
 # [2.51.0](https://github.com/nordnet/ui/compare/v2.50.1...v2.51.0) (2020-06-22)
 
-
 ### Features
 
-* add couple of icons, sort imports alphabetically ([81b374b](https://github.com/nordnet/ui/commit/81b374b))
+- add couple of icons, sort imports alphabetically ([81b374b](https://github.com/nordnet/ui/commit/81b374b))
 
 ## [2.50.1](https://github.com/nordnet/ui/compare/v2.50.0...v2.50.1) (2020-06-15)
 
-
 ### Bug Fixes
 
-* revert search drawer alignment ([3da7055](https://github.com/nordnet/ui/commit/3da7055))
+- revert search drawer alignment ([3da7055](https://github.com/nordnet/ui/commit/3da7055))
 
 # [2.50.0](https://github.com/nordnet/ui/compare/v2.49.3...v2.50.0) (2020-06-12)
 
-
 ### Features
 
-* 🎸 bump react-intl to v4 ([c6faf46](https://github.com/nordnet/ui/commit/c6faf46))
+- 🎸 bump react-intl to v4 ([c6faf46](https://github.com/nordnet/ui/commit/c6faf46))
 
 ## [2.49.3](https://github.com/nordnet/ui/compare/v2.49.2...v2.49.3) (2020-06-12)
 
-
 ### Bug Fixes
 
-* update file icon ([165903d](https://github.com/nordnet/ui/commit/165903d))
-* update viewBox for file icon ([0a58de3](https://github.com/nordnet/ui/commit/0a58de3))
+- update file icon ([165903d](https://github.com/nordnet/ui/commit/165903d))
+- update viewBox for file icon ([0a58de3](https://github.com/nordnet/ui/commit/0a58de3))
 
 ## [2.49.2](https://github.com/nordnet/ui/compare/v2.49.1...v2.49.2) (2020-06-10)
 
-
 ### Bug Fixes
 
-* update storyshot and rename icon ([d355d3c](https://github.com/nordnet/ui/commit/d355d3c))
+- update storyshot and rename icon ([d355d3c](https://github.com/nordnet/ui/commit/d355d3c))
 
 ## [2.49.1](https://github.com/nordnet/ui/compare/v2.49.0...v2.49.1) (2020-06-10)
 
-
 ### Bug Fixes
 
-* add extra padded version of card with title and card with tabs ([b7764c7](https://github.com/nordnet/ui/commit/b7764c7))
+- add extra padded version of card with title and card with tabs ([b7764c7](https://github.com/nordnet/ui/commit/b7764c7))
 
 # [2.49.0](https://github.com/nordnet/ui/compare/v2.48.0...v2.49.0) (2020-06-10)
 
-
 ### Bug Fixes
 
-* rename icon ([3ddf1cd](https://github.com/nordnet/ui/commit/3ddf1cd))
-* update storyshot ([a436549](https://github.com/nordnet/ui/commit/a436549))
-
+- rename icon ([3ddf1cd](https://github.com/nordnet/ui/commit/3ddf1cd))
+- update storyshot ([a436549](https://github.com/nordnet/ui/commit/a436549))
 
 ### Features
 
-* add new icons ([20e6980](https://github.com/nordnet/ui/commit/20e6980))
-* add new icons ([58f36e2](https://github.com/nordnet/ui/commit/58f36e2))
+- add new icons ([20e6980](https://github.com/nordnet/ui/commit/20e6980))
+- add new icons ([58f36e2](https://github.com/nordnet/ui/commit/58f36e2))
 
 # [2.48.0](https://github.com/nordnet/ui/compare/v2.47.2...v2.48.0) (2020-06-09)
 
-
 ### Features
 
-* 🎸 amend ([53fc9c2](https://github.com/nordnet/ui/commit/53fc9c2))
-* 🎸 amend ([673ac0e](https://github.com/nordnet/ui/commit/673ac0e))
+- 🎸 amend ([53fc9c2](https://github.com/nordnet/ui/commit/53fc9c2))
+- 🎸 amend ([673ac0e](https://github.com/nordnet/ui/commit/673ac0e))
 
 ## [2.47.2](https://github.com/nordnet/ui/compare/v2.47.1...v2.47.2) (2020-06-09)
 
-
 ### Bug Fixes
 
-* omit barColor too ([48c8313](https://github.com/nordnet/ui/commit/48c8313))
+- omit barColor too ([48c8313](https://github.com/nordnet/ui/commit/48c8313))
 
 ## [2.47.1](https://github.com/nordnet/ui/compare/v2.47.0...v2.47.1) (2020-06-09)
 
-
 ### Bug Fixes
 
-* adjust animation ([aa776be](https://github.com/nordnet/ui/commit/aa776be))
-* adjust drawer heading alignment and icon ([5e0acc1](https://github.com/nordnet/ui/commit/5e0acc1))
-* animation revert ([cd899d0](https://github.com/nordnet/ui/commit/cd899d0))
+- adjust animation ([aa776be](https://github.com/nordnet/ui/commit/aa776be))
+- adjust drawer heading alignment and icon ([5e0acc1](https://github.com/nordnet/ui/commit/5e0acc1))
+- animation revert ([cd899d0](https://github.com/nordnet/ui/commit/cd899d0))
 
 # [2.47.0](https://github.com/nordnet/ui/compare/v2.46.3...v2.47.0) (2020-06-08)
 
-
 ### Features
 
-* 🎸 add house icon ([7180fc1](https://github.com/nordnet/ui/commit/7180fc1))
-* 🎸 add increase icon ([76374fd](https://github.com/nordnet/ui/commit/76374fd))
-* 🎸 add move icon ([3aa1d3e](https://github.com/nordnet/ui/commit/3aa1d3e))
-* 🎸 amended ([be63914](https://github.com/nordnet/ui/commit/be63914))
-* 🎸 Apartment icon added ([bc6c487](https://github.com/nordnet/ui/commit/bc6c487))
+- 🎸 add house icon ([7180fc1](https://github.com/nordnet/ui/commit/7180fc1))
+- 🎸 add increase icon ([76374fd](https://github.com/nordnet/ui/commit/76374fd))
+- 🎸 add move icon ([3aa1d3e](https://github.com/nordnet/ui/commit/3aa1d3e))
+- 🎸 amended ([be63914](https://github.com/nordnet/ui/commit/be63914))
+- 🎸 Apartment icon added ([bc6c487](https://github.com/nordnet/ui/commit/bc6c487))
 
 ## [2.46.3](https://github.com/nordnet/ui/compare/v2.46.2...v2.46.3) (2020-06-08)
 
-
 ### Bug Fixes
 
-* resolution to transitive dependency, also bump react and react-dom ([69b989d](https://github.com/nordnet/ui/commit/69b989d))
+- resolution to transitive dependency, also bump react and react-dom ([69b989d](https://github.com/nordnet/ui/commit/69b989d))
 
 ## [2.46.2](https://github.com/nordnet/ui/compare/v2.46.1...v2.46.2) (2020-06-05)
 
-
 ### Bug Fixes
 
-* 🐛 chanage to same padding bottom on all screen widths ([2d87b79](https://github.com/nordnet/ui/commit/2d87b79))
-* change padding bottom for children in cards ([e95f37a](https://github.com/nordnet/ui/commit/e95f37a))
+- 🐛 chanage to same padding bottom on all screen widths ([2d87b79](https://github.com/nordnet/ui/commit/2d87b79))
+- change padding bottom for children in cards ([e95f37a](https://github.com/nordnet/ui/commit/e95f37a))
 
 ## [2.46.1](https://github.com/nordnet/ui/compare/v2.46.0...v2.46.1) (2020-06-04)
 
-
 ### Bug Fixes
 
-* replace formatMessage with string ([d1eb592](https://github.com/nordnet/ui/commit/d1eb592))
+- replace formatMessage with string ([d1eb592](https://github.com/nordnet/ui/commit/d1eb592))
 
 # [2.46.0](https://github.com/nordnet/ui/compare/v2.45.1...v2.46.0) (2020-06-04)
 
-
 ### Bug Fixes
 
-* 🐛 add customisable colors to ProgressBar ([999018c](https://github.com/nordnet/ui/commit/999018c))
-* 🐛 allow passing custom titles to ProgressBar ([15e3b0a](https://github.com/nordnet/ui/commit/15e3b0a))
-* 🐛 small adjustments to ProgressBar ([6ebb4d4](https://github.com/nordnet/ui/commit/6ebb4d4))
-
+- 🐛 add customisable colors to ProgressBar ([999018c](https://github.com/nordnet/ui/commit/999018c))
+- 🐛 allow passing custom titles to ProgressBar ([15e3b0a](https://github.com/nordnet/ui/commit/15e3b0a))
+- 🐛 small adjustments to ProgressBar ([6ebb4d4](https://github.com/nordnet/ui/commit/6ebb4d4))
 
 ### Features
 
-* 🎸 implement ProgressBar ([2c7751d](https://github.com/nordnet/ui/commit/2c7751d))
+- 🎸 implement ProgressBar ([2c7751d](https://github.com/nordnet/ui/commit/2c7751d))
 
 ## [2.45.1](https://github.com/nordnet/ui/compare/v2.45.0...v2.45.1) (2020-06-02)
 
-
 ### Bug Fixes
 
-* 🐛 make closing modal on backdrop click more performant ([b917773](https://github.com/nordnet/ui/commit/b917773))
+- 🐛 make closing modal on backdrop click more performant ([b917773](https://github.com/nordnet/ui/commit/b917773))
 
 # [2.45.0](https://github.com/nordnet/ui/compare/v2.44.0...v2.45.0) (2020-06-01)
 
-
 ### Features
 
-* 🎸 adds transferPendingIconColor ([bfa047e](https://github.com/nordnet/ui/commit/bfa047e))
+- 🎸 adds transferPendingIconColor ([bfa047e](https://github.com/nordnet/ui/commit/bfa047e))
 
 # [2.44.0](https://github.com/nordnet/ui/compare/v2.43.0...v2.44.0) (2020-06-01)
 
-
 ### Bug Fixes
 
-* add accordion snaps ([4bbbff6](https://github.com/nordnet/ui/commit/4bbbff6))
-* add jsdoc to expanded prop ([4cf9f05](https://github.com/nordnet/ui/commit/4cf9f05))
-* add types to test utils ([9eae9a8](https://github.com/nordnet/ui/commit/9eae9a8))
-* cleanup stories ([8bbba7f](https://github.com/nordnet/ui/commit/8bbba7f))
-* imports ([aa05f2d](https://github.com/nordnet/ui/commit/aa05f2d))
-* remove script from package json ([7506a4b](https://github.com/nordnet/ui/commit/7506a4b))
-* remove unnecessary turnery ([42dd89e](https://github.com/nordnet/ui/commit/42dd89e))
-* replace hex with color from theme ([98661ed](https://github.com/nordnet/ui/commit/98661ed))
-* stories ([b96d244](https://github.com/nordnet/ui/commit/b96d244))
-* update snaps ([34fc714](https://github.com/nordnet/ui/commit/34fc714))
-* update snaps ([2937960](https://github.com/nordnet/ui/commit/2937960))
-
+- add accordion snaps ([4bbbff6](https://github.com/nordnet/ui/commit/4bbbff6))
+- add jsdoc to expanded prop ([4cf9f05](https://github.com/nordnet/ui/commit/4cf9f05))
+- add types to test utils ([9eae9a8](https://github.com/nordnet/ui/commit/9eae9a8))
+- cleanup stories ([8bbba7f](https://github.com/nordnet/ui/commit/8bbba7f))
+- imports ([aa05f2d](https://github.com/nordnet/ui/commit/aa05f2d))
+- remove script from package json ([7506a4b](https://github.com/nordnet/ui/commit/7506a4b))
+- remove unnecessary turnery ([42dd89e](https://github.com/nordnet/ui/commit/42dd89e))
+- replace hex with color from theme ([98661ed](https://github.com/nordnet/ui/commit/98661ed))
+- stories ([b96d244](https://github.com/nordnet/ui/commit/b96d244))
+- update snaps ([34fc714](https://github.com/nordnet/ui/commit/34fc714))
+- update snaps ([2937960](https://github.com/nordnet/ui/commit/2937960))
 
 ### Features
 
-* add classname ([af69008](https://github.com/nordnet/ui/commit/af69008))
-* add forwardref ([3077aed](https://github.com/nordnet/ui/commit/3077aed))
-* add mdx file ([6f618a4](https://github.com/nordnet/ui/commit/6f618a4))
-* add tests ([3392adc](https://github.com/nordnet/ui/commit/3392adc))
-* create accordion ([cb5ab65](https://github.com/nordnet/ui/commit/cb5ab65))
-* create accordion item ([5233e90](https://github.com/nordnet/ui/commit/5233e90))
-* create accordion stories ([ef248f5](https://github.com/nordnet/ui/commit/ef248f5))
+- add classname ([af69008](https://github.com/nordnet/ui/commit/af69008))
+- add forwardref ([3077aed](https://github.com/nordnet/ui/commit/3077aed))
+- add mdx file ([6f618a4](https://github.com/nordnet/ui/commit/6f618a4))
+- add tests ([3392adc](https://github.com/nordnet/ui/commit/3392adc))
+- create accordion ([cb5ab65](https://github.com/nordnet/ui/commit/cb5ab65))
+- create accordion item ([5233e90](https://github.com/nordnet/ui/commit/5233e90))
+- create accordion stories ([ef248f5](https://github.com/nordnet/ui/commit/ef248f5))
 
 # [2.43.0](https://github.com/nordnet/ui/compare/v2.42.2...v2.43.0) (2020-05-29)
 
-
 ### Bug Fixes
 
-* 🐛 add js doc for types ([722e4f9](https://github.com/nordnet/ui/commit/722e4f9))
-
+- 🐛 add js doc for types ([722e4f9](https://github.com/nordnet/ui/commit/722e4f9))
 
 ### Features
 
-* 🎸 add bolean for closing modal on backdrop click ([e80872c](https://github.com/nordnet/ui/commit/e80872c))
+- 🎸 add bolean for closing modal on backdrop click ([e80872c](https://github.com/nordnet/ui/commit/e80872c))
 
 ## [2.42.2](https://github.com/nordnet/ui/compare/v2.42.1...v2.42.2) (2020-05-28)
 
-
 ### Bug Fixes
 
-* now collision triggers properly ([e60ab60](https://github.com/nordnet/ui/commit/e60ab60))
+- now collision triggers properly ([e60ab60](https://github.com/nordnet/ui/commit/e60ab60))
 
 ## [2.42.1](https://github.com/nordnet/ui/compare/v2.42.0...v2.42.1) (2020-05-27)
 
-
 ### Bug Fixes
 
-* 🐛 makes indicator optional for CollapsibleCard ([54cd535](https://github.com/nordnet/ui/commit/54cd535))
+- 🐛 makes indicator optional for CollapsibleCard ([54cd535](https://github.com/nordnet/ui/commit/54cd535))
 
 # [2.42.0](https://github.com/nordnet/ui/compare/v2.41.4...v2.42.0) (2020-05-26)
 
-
 ### Features
 
-* 🎸 add color ([d6ddca2](https://github.com/nordnet/ui/commit/d6ddca2))
+- 🎸 add color ([d6ddca2](https://github.com/nordnet/ui/commit/d6ddca2))
 
 ## [2.41.4](https://github.com/nordnet/ui/compare/v2.41.3...v2.41.4) (2020-05-26)
 
-
 ### Bug Fixes
 
-* 🐛 change pressed colors and a11y colors ([d921ee3](https://github.com/nordnet/ui/commit/d921ee3))
+- 🐛 change pressed colors and a11y colors ([d921ee3](https://github.com/nordnet/ui/commit/d921ee3))
 
 ## [2.41.3](https://github.com/nordnet/ui/compare/v2.41.2...v2.41.3) (2020-05-25)
 
-
 ### Bug Fixes
 
-* ad as prop to drawer ([23636aa](https://github.com/nordnet/ui/commit/23636aa))
-* add rest props to button ([e21ba49](https://github.com/nordnet/ui/commit/e21ba49))
+- ad as prop to drawer ([23636aa](https://github.com/nordnet/ui/commit/23636aa))
+- add rest props to button ([e21ba49](https://github.com/nordnet/ui/commit/e21ba49))
 
 ## [2.41.2](https://github.com/nordnet/ui/compare/v2.41.1...v2.41.2) (2020-05-22)
 
-
 ### Bug Fixes
 
-* 🐛 fix vertical alignment in select component ([9212e81](https://github.com/nordnet/ui/commit/9212e81))
+- 🐛 fix vertical alignment in select component ([9212e81](https://github.com/nordnet/ui/commit/9212e81))
 
 ## [2.41.1](https://github.com/nordnet/ui/compare/v2.41.0...v2.41.1) (2020-05-20)
 
-
 ### Bug Fixes
 
-* 🐛 add autocomplete support to Input.Text ([62fe2ef](https://github.com/nordnet/ui/commit/62fe2ef))
-* 🐛 add BankID icon ([0c8bf49](https://github.com/nordnet/ui/commit/0c8bf49))
+- 🐛 add autocomplete support to Input.Text ([62fe2ef](https://github.com/nordnet/ui/commit/62fe2ef))
+- 🐛 add BankID icon ([0c8bf49](https://github.com/nordnet/ui/commit/0c8bf49))
 
 # [2.41.0](https://github.com/nordnet/ui/compare/v2.40.0...v2.41.0) (2020-05-19)
 
-
 ### Bug Fixes
 
-* merge branch 'master' into update-beta-branch ([3b65fad](https://github.com/nordnet/ui/commit/3b65fad))
-
+- merge branch 'master' into update-beta-branch ([3b65fad](https://github.com/nordnet/ui/commit/3b65fad))
 
 ### Features
 
-* bump version ([4ef4258](https://github.com/nordnet/ui/commit/4ef4258))
+- bump version ([4ef4258](https://github.com/nordnet/ui/commit/4ef4258))
 
 # [2.41.0-beta.1](https://github.com/nordnet/ui/compare/v2.40.0...v2.41.0-beta.1@beta) (2020-05-19)
 
-
 ### Bug Fixes
 
-* merge branch 'master' into update-beta-branch ([3b65fad](https://github.com/nordnet/ui/commit/3b65fad))
-
+- merge branch 'master' into update-beta-branch ([3b65fad](https://github.com/nordnet/ui/commit/3b65fad))
 
 ### Features
 
-* bump version ([4ef4258](https://github.com/nordnet/ui/commit/4ef4258))
+- bump version ([4ef4258](https://github.com/nordnet/ui/commit/4ef4258))
 
 # [2.40.0](https://github.com/nordnet/ui/compare/v2.39.1...v2.40.0) (2020-05-15)
 
-
 ### Bug Fixes
 
-* 🐛 new colors for DateAvatar ([19004f8](https://github.com/nordnet/ui/commit/19004f8))
-
+- 🐛 new colors for DateAvatar ([19004f8](https://github.com/nordnet/ui/commit/19004f8))
 
 ### Features
 
-* add accordion text color ([3768edc](https://github.com/nordnet/ui/commit/3768edc))
+- add accordion text color ([3768edc](https://github.com/nordnet/ui/commit/3768edc))
 
 ## [2.39.1](https://github.com/nordnet/ui/compare/v2.39.0...v2.39.1) (2020-05-14)
 
-
 ### Bug Fixes
 
-* 🐛 adds negative color timeline color  and a11y colors ([45efac2](https://github.com/nordnet/ui/commit/45efac2))
+- 🐛 adds negative color timeline color and a11y colors ([45efac2](https://github.com/nordnet/ui/commit/45efac2))
 
 # [2.39.0](https://github.com/nordnet/ui/compare/v2.38.2...v2.39.0) (2020-05-14)
 
-
 ### Features
 
-* 🎸 new colors for pension transfers ([7d7a178](https://github.com/nordnet/ui/commit/7d7a178))
+- 🎸 new colors for pension transfers ([7d7a178](https://github.com/nordnet/ui/commit/7d7a178))
 
 ## [2.38.2](https://github.com/nordnet/ui/compare/v2.38.1...v2.38.2) (2020-05-12)
 
-
 ### Bug Fixes
 
-* add closetitle prop on modal ([d265c48](https://github.com/nordnet/ui/commit/d265c48))
-* update modal snapshot ([8574f79](https://github.com/nordnet/ui/commit/8574f79))
+- add closetitle prop on modal ([d265c48](https://github.com/nordnet/ui/commit/d265c48))
+- update modal snapshot ([8574f79](https://github.com/nordnet/ui/commit/8574f79))
 
 ## [2.38.1](https://github.com/nordnet/ui/compare/v2.38.0...v2.38.1) (2020-05-11)
 
-
 ### Bug Fixes
 
-* 🐛 prevent text selection during button drag ([4694136](https://github.com/nordnet/ui/commit/4694136))
-* 🐛 prevent text selection on thumb button drag on mobile ([15ef8f5](https://github.com/nordnet/ui/commit/15ef8f5))
+- 🐛 prevent text selection during button drag ([4694136](https://github.com/nordnet/ui/commit/4694136))
+- 🐛 prevent text selection on thumb button drag on mobile ([15ef8f5](https://github.com/nordnet/ui/commit/15ef8f5))
 
 # [2.38.0](https://github.com/nordnet/ui/compare/v2.37.0...v2.38.0) (2020-05-11)
 
-
 ### Features
 
-* 🎸 add possibility to specify color on development comp ([bb487cb](https://github.com/nordnet/ui/commit/bb487cb))
+- 🎸 add possibility to specify color on development comp ([bb487cb](https://github.com/nordnet/ui/commit/bb487cb))
 
 # [2.37.0](https://github.com/nordnet/ui/compare/v2.36.0...v2.37.0) (2020-05-08)
 
-
 ### Bug Fixes
 
-* add missing colors ([29d9a61](https://github.com/nordnet/ui/commit/29d9a61))
-* merge master ([69a0789](https://github.com/nordnet/ui/commit/69a0789))
-
+- add missing colors ([29d9a61](https://github.com/nordnet/ui/commit/29d9a61))
+- merge master ([69a0789](https://github.com/nordnet/ui/commit/69a0789))
 
 ### Features
 
-* 🎸 always expose default and a11y colors ([781646f](https://github.com/nordnet/ui/commit/781646f))
+- 🎸 always expose default and a11y colors ([781646f](https://github.com/nordnet/ui/commit/781646f))
 
 # [2.36.0](https://github.com/nordnet/ui/compare/v2.35.0...v2.36.0) (2020-05-08)
 
-
 ### Features
 
-* add high contrast check to theme ([3439046](https://github.com/nordnet/ui/commit/3439046))
+- add high contrast check to theme ([3439046](https://github.com/nordnet/ui/commit/3439046))
 
 # [2.35.0](https://github.com/nordnet/ui/compare/v2.34.1...v2.35.0) (2020-05-08)
 
-
 ### Features
 
-* 🎸 implement slider component ([743d158](https://github.com/nordnet/ui/commit/743d158))
+- 🎸 implement slider component ([743d158](https://github.com/nordnet/ui/commit/743d158))
 
 # [2.35.0-beta.1](https://github.com/nordnet/ui/compare/v2.34.1...v2.35.0-beta.1@beta) (2020-05-08)
 
-
 ### Features
 
-* bump version ([4ef4258](https://github.com/nordnet/ui/commit/4ef4258))
+- bump version ([4ef4258](https://github.com/nordnet/ui/commit/4ef4258))
 
 ## [2.34.1](https://github.com/nordnet/ui/compare/v2.34.0...v2.34.1) (2020-05-07)
 
-
 ### Bug Fixes
 
-* 🐛 add old names back until everything is in prod ([3de33e7](https://github.com/nordnet/ui/commit/3de33e7))
-* 🐛 add old names back until everything is in prod ([62fa8f1](https://github.com/nordnet/ui/commit/62fa8f1))
-* 🐛 rename pill colors and remove disabled select background ([7fd9d7f](https://github.com/nordnet/ui/commit/7fd9d7f))
-* 🐛 revert background fix ([dc44ad3](https://github.com/nordnet/ui/commit/dc44ad3))
-* merge master with branch ([b9412aa](https://github.com/nordnet/ui/commit/b9412aa))
-* update tests ([ec07b34](https://github.com/nordnet/ui/commit/ec07b34))
+- 🐛 add old names back until everything is in prod ([3de33e7](https://github.com/nordnet/ui/commit/3de33e7))
+- 🐛 add old names back until everything is in prod ([62fa8f1](https://github.com/nordnet/ui/commit/62fa8f1))
+- 🐛 rename pill colors and remove disabled select background ([7fd9d7f](https://github.com/nordnet/ui/commit/7fd9d7f))
+- 🐛 revert background fix ([dc44ad3](https://github.com/nordnet/ui/commit/dc44ad3))
+- merge master with branch ([b9412aa](https://github.com/nordnet/ui/commit/b9412aa))
+- update tests ([ec07b34](https://github.com/nordnet/ui/commit/ec07b34))
 
 # [2.34.0](https://github.com/nordnet/ui/compare/v2.33.1...v2.34.0) (2020-05-07)
 
-
 ### Bug Fixes
 
-* 🐛 change padding of childrens box ([b69be69](https://github.com/nordnet/ui/commit/b69be69))
-* 🐛 change padding on sides for mobile and add snapshots ([369ba48](https://github.com/nordnet/ui/commit/369ba48))
-* 🐛 wrap title in an header html element ([7fc8561](https://github.com/nordnet/ui/commit/7fc8561))
-* 🐛 wrap title with typography ([71d0c1a](https://github.com/nordnet/ui/commit/71d0c1a))
-
+- 🐛 change padding of childrens box ([b69be69](https://github.com/nordnet/ui/commit/b69be69))
+- 🐛 change padding on sides for mobile and add snapshots ([369ba48](https://github.com/nordnet/ui/commit/369ba48))
+- 🐛 wrap title in an header html element ([7fc8561](https://github.com/nordnet/ui/commit/7fc8561))
+- 🐛 wrap title with typography ([71d0c1a](https://github.com/nordnet/ui/commit/71d0c1a))
 
 ### Features
 
-* 🎸 add padding for card with title content ([0a51ea7](https://github.com/nordnet/ui/commit/0a51ea7))
-* 🎸 change padding of card with title ([4c91329](https://github.com/nordnet/ui/commit/4c91329))
-* 🎸 remove custom styling of tabs ([cd89f75](https://github.com/nordnet/ui/commit/cd89f75))
+- 🎸 add padding for card with title content ([0a51ea7](https://github.com/nordnet/ui/commit/0a51ea7))
+- 🎸 change padding of card with title ([4c91329](https://github.com/nordnet/ui/commit/4c91329))
+- 🎸 remove custom styling of tabs ([cd89f75](https://github.com/nordnet/ui/commit/cd89f75))
 
 ## [2.33.1](https://github.com/nordnet/ui/compare/v2.33.0...v2.33.1) (2020-05-06)
 
-
 ### Bug Fixes
 
-* add co2 icon ([b695ed4](https://github.com/nordnet/ui/commit/b695ed4))
-* renamed to a generic icon name ([b7edf5f](https://github.com/nordnet/ui/commit/b7edf5f))
+- add co2 icon ([b695ed4](https://github.com/nordnet/ui/commit/b695ed4))
+- renamed to a generic icon name ([b7edf5f](https://github.com/nordnet/ui/commit/b7edf5f))
 
 # [2.33.0](https://github.com/nordnet/ui/compare/v2.32.7...v2.33.0) (2020-05-06)
 
-
 ### Bug Fixes
 
-* adjusted stories and added voice over ([485875a](https://github.com/nordnet/ui/commit/485875a))
-* better way to align ([6cd4046](https://github.com/nordnet/ui/commit/6cd4046))
-* cleanup styling and types ([bb0c050](https://github.com/nordnet/ui/commit/bb0c050))
-* removed unneccasry aria and tab ([445d054](https://github.com/nordnet/ui/commit/445d054))
-
+- adjusted stories and added voice over ([485875a](https://github.com/nordnet/ui/commit/485875a))
+- better way to align ([6cd4046](https://github.com/nordnet/ui/commit/6cd4046))
+- cleanup styling and types ([bb0c050](https://github.com/nordnet/ui/commit/bb0c050))
+- removed unneccasry aria and tab ([445d054](https://github.com/nordnet/ui/commit/445d054))
 
 ### Features
 
-* add linescale component ([6e33057](https://github.com/nordnet/ui/commit/6e33057))
+- add linescale component ([6e33057](https://github.com/nordnet/ui/commit/6e33057))
 
 ## [2.32.7](https://github.com/nordnet/ui/compare/v2.32.6...v2.32.7) (2020-04-27)
 
-
 ### Bug Fixes
 
-* 🐛 change a11y colors ([a9f875d](https://github.com/nordnet/ui/commit/a9f875d))
+- 🐛 change a11y colors ([a9f875d](https://github.com/nordnet/ui/commit/a9f875d))
 
 ## [2.32.6](https://github.com/nordnet/ui/compare/v2.32.5...v2.32.6) (2020-04-27)
 
-
 ### Bug Fixes
 
-* after QnA title should be title1 ([e54e2df](https://github.com/nordnet/ui/commit/e54e2df))
-* default title is now 24px for small screens ([f87f0c3](https://github.com/nordnet/ui/commit/f87f0c3))
-* snapshots ([7b93541](https://github.com/nordnet/ui/commit/7b93541))
-* update snapshots ([df350b0](https://github.com/nordnet/ui/commit/df350b0))
+- after QnA title should be title1 ([e54e2df](https://github.com/nordnet/ui/commit/e54e2df))
+- default title is now 24px for small screens ([f87f0c3](https://github.com/nordnet/ui/commit/f87f0c3))
+- snapshots ([7b93541](https://github.com/nordnet/ui/commit/7b93541))
+- update snapshots ([df350b0](https://github.com/nordnet/ui/commit/df350b0))
 
 ## [2.32.5](https://github.com/nordnet/ui/compare/v2.32.4...v2.32.5) (2020-04-24)
 
-
 ### Bug Fixes
 
-* 🐛 change a11y colors ([71d5f55](https://github.com/nordnet/ui/commit/71d5f55))
+- 🐛 change a11y colors ([71d5f55](https://github.com/nordnet/ui/commit/71d5f55))
 
 ## [2.32.4](https://github.com/nordnet/ui/compare/v2.32.3...v2.32.4) (2020-04-21)
 
-
 ### Bug Fixes
 
-* add default value 7 to max ([0edc0c8](https://github.com/nordnet/ui/commit/0edc0c8))
-* add risk component ([b1b8678](https://github.com/nordnet/ui/commit/b1b8678))
-* add semantic names for colors ([24eb511](https://github.com/nordnet/ui/commit/24eb511))
-* exposing risk component ([9273540](https://github.com/nordnet/ui/commit/9273540))
-* indicators text shifts in position  when touch edges ([21a9899](https://github.com/nordnet/ui/commit/21a9899))
-* protection in  collision check function ([b115e45](https://github.com/nordnet/ui/commit/b115e45))
-* remove offset const ([df3a507](https://github.com/nordnet/ui/commit/df3a507))
-* triangle width ([1a1bcae](https://github.com/nordnet/ui/commit/1a1bcae))
-* typed func and remove position prop ([b85218d](https://github.com/nordnet/ui/commit/b85218d))
-* update stories and collision check ([6a03b7f](https://github.com/nordnet/ui/commit/6a03b7f))
-* use should forward prop ([b542886](https://github.com/nordnet/ui/commit/b542886))
+- add default value 7 to max ([0edc0c8](https://github.com/nordnet/ui/commit/0edc0c8))
+- add risk component ([b1b8678](https://github.com/nordnet/ui/commit/b1b8678))
+- add semantic names for colors ([24eb511](https://github.com/nordnet/ui/commit/24eb511))
+- exposing risk component ([9273540](https://github.com/nordnet/ui/commit/9273540))
+- indicators text shifts in position when touch edges ([21a9899](https://github.com/nordnet/ui/commit/21a9899))
+- protection in collision check function ([b115e45](https://github.com/nordnet/ui/commit/b115e45))
+- remove offset const ([df3a507](https://github.com/nordnet/ui/commit/df3a507))
+- triangle width ([1a1bcae](https://github.com/nordnet/ui/commit/1a1bcae))
+- typed func and remove position prop ([b85218d](https://github.com/nordnet/ui/commit/b85218d))
+- update stories and collision check ([6a03b7f](https://github.com/nordnet/ui/commit/6a03b7f))
+- use should forward prop ([b542886](https://github.com/nordnet/ui/commit/b542886))
 
 ## [2.32.3](https://github.com/nordnet/ui/compare/v2.32.2...v2.32.3) (2020-04-20)
 
-
 ### Bug Fixes
 
-* render card-with-tabs header again and fix ts ([65a7b44](https://github.com/nordnet/ui/commit/65a7b44))
+- render card-with-tabs header again and fix ts ([65a7b44](https://github.com/nordnet/ui/commit/65a7b44))
 
 ## [2.32.2](https://github.com/nordnet/ui/compare/v2.32.1...v2.32.2) (2020-04-16)
 
-
 ### Bug Fixes
 
-* correct typo ([176dc41](https://github.com/nordnet/ui/commit/176dc41))
-* remove collapsed warnings ([2ebd42d](https://github.com/nordnet/ui/commit/2ebd42d))
+- correct typo ([176dc41](https://github.com/nordnet/ui/commit/176dc41))
+- remove collapsed warnings ([2ebd42d](https://github.com/nordnet/ui/commit/2ebd42d))
 
 ## [2.32.1](https://github.com/nordnet/ui/compare/v2.32.0...v2.32.1) (2020-04-16)
 
-
 ### Bug Fixes
 
-* 🐛 rearrange pill colors ([66f75cb](https://github.com/nordnet/ui/commit/66f75cb))
+- 🐛 rearrange pill colors ([66f75cb](https://github.com/nordnet/ui/commit/66f75cb))
 
 # [2.32.0](https://github.com/nordnet/ui/compare/v2.31.1...v2.32.0) (2020-04-16)
 
-
 ### Bug Fixes
 
-* make ts work ([feb09c6](https://github.com/nordnet/ui/commit/feb09c6))
-
+- make ts work ([feb09c6](https://github.com/nordnet/ui/commit/feb09c6))
 
 ### Features
 
-* update styled-components to include shouldForwardProp ([db47c68](https://github.com/nordnet/ui/commit/db47c68))
+- update styled-components to include shouldForwardProp ([db47c68](https://github.com/nordnet/ui/commit/db47c68))
 
 ## [2.31.1](https://github.com/nordnet/ui/compare/v2.31.0...v2.31.1) (2020-04-08)
 
-
 ### Bug Fixes
 
-* 🐛 add candlesticks and linegraph type icons ([9589db9](https://github.com/nordnet/ui/commit/9589db9))
-* 🐛 remove hardcoded colors ([f9be042](https://github.com/nordnet/ui/commit/f9be042))
-* update snaps ([df5ae3d](https://github.com/nordnet/ui/commit/df5ae3d))
+- 🐛 add candlesticks and linegraph type icons ([9589db9](https://github.com/nordnet/ui/commit/9589db9))
+- 🐛 remove hardcoded colors ([f9be042](https://github.com/nordnet/ui/commit/f9be042))
+- update snaps ([df5ae3d](https://github.com/nordnet/ui/commit/df5ae3d))
 
 # [2.31.0](https://github.com/nordnet/ui/compare/v2.30.0...v2.31.0) (2020-04-08)
 
-
 ### Bug Fixes
 
-* add case for each thin arrow state ([a308eb8](https://github.com/nordnet/ui/commit/a308eb8))
-* snapshots ([0402104](https://github.com/nordnet/ui/commit/0402104))
-
+- add case for each thin arrow state ([a308eb8](https://github.com/nordnet/ui/commit/a308eb8))
+- snapshots ([0402104](https://github.com/nordnet/ui/commit/0402104))
 
 ### Features
 
-* add thin arrow icon ([55ef9ce](https://github.com/nordnet/ui/commit/55ef9ce))
+- add thin arrow icon ([55ef9ce](https://github.com/nordnet/ui/commit/55ef9ce))
 
 # [2.30.0](https://github.com/nordnet/ui/compare/v2.29.0...v2.30.0) (2020-04-06)
 
-
 ### Features
 
-* 🎸 add account numbers icon ([2b9f31f](https://github.com/nordnet/ui/commit/2b9f31f))
+- 🎸 add account numbers icon ([2b9f31f](https://github.com/nordnet/ui/commit/2b9f31f))
 
 # [2.29.0](https://github.com/nordnet/ui/compare/v2.28.1...v2.29.0) (2020-04-01)
 
-
 ### Bug Fixes
 
-* 🐛 add doc and accept noPadding prop ([abf42b4](https://github.com/nordnet/ui/commit/abf42b4))
-* 🐛 add jsdoc comments for the colors ([474af9d](https://github.com/nordnet/ui/commit/474af9d))
-* 🐛 add pill theme colors ([8255ed0](https://github.com/nordnet/ui/commit/8255ed0))
-* 🐛 add story with no padding ([c0be785](https://github.com/nordnet/ui/commit/c0be785))
-* 🐛 export pill ([5fab2d7](https://github.com/nordnet/ui/commit/5fab2d7))
-* 🐛 resolve more pr comments regarding pill props ([ffa5c19](https://github.com/nordnet/ui/commit/ffa5c19))
-* 🐛 resolve some PR comments ([318bee8](https://github.com/nordnet/ui/commit/318bee8))
-* 🐛 use already existing colors for pills ([657bcd1](https://github.com/nordnet/ui/commit/657bcd1))
-* add pill colors to theme ([48c8ce6](https://github.com/nordnet/ui/commit/48c8ce6))
-* adjust to have more meaningful stories ([5dd16e1](https://github.com/nordnet/ui/commit/5dd16e1))
-* update snapshots ([d334111](https://github.com/nordnet/ui/commit/d334111))
-
+- 🐛 add doc and accept noPadding prop ([abf42b4](https://github.com/nordnet/ui/commit/abf42b4))
+- 🐛 add jsdoc comments for the colors ([474af9d](https://github.com/nordnet/ui/commit/474af9d))
+- 🐛 add pill theme colors ([8255ed0](https://github.com/nordnet/ui/commit/8255ed0))
+- 🐛 add story with no padding ([c0be785](https://github.com/nordnet/ui/commit/c0be785))
+- 🐛 export pill ([5fab2d7](https://github.com/nordnet/ui/commit/5fab2d7))
+- 🐛 resolve more pr comments regarding pill props ([ffa5c19](https://github.com/nordnet/ui/commit/ffa5c19))
+- 🐛 resolve some PR comments ([318bee8](https://github.com/nordnet/ui/commit/318bee8))
+- 🐛 use already existing colors for pills ([657bcd1](https://github.com/nordnet/ui/commit/657bcd1))
+- add pill colors to theme ([48c8ce6](https://github.com/nordnet/ui/commit/48c8ce6))
+- adjust to have more meaningful stories ([5dd16e1](https://github.com/nordnet/ui/commit/5dd16e1))
+- update snapshots ([d334111](https://github.com/nordnet/ui/commit/d334111))
 
 ### Features
 
-* 🎸 add a new component: Pill ([29eec43](https://github.com/nordnet/ui/commit/29eec43))
+- 🎸 add a new component: Pill ([29eec43](https://github.com/nordnet/ui/commit/29eec43))
 
 ## [2.28.1](https://github.com/nordnet/ui/compare/v2.28.0...v2.28.1) (2020-03-31)
 
-
 ### Bug Fixes
 
-* add color for regions in map ([fe27577](https://github.com/nordnet/ui/commit/fe27577))
-* add color names for rating stars ([8de5760](https://github.com/nordnet/ui/commit/8de5760))
+- add color for regions in map ([fe27577](https://github.com/nordnet/ui/commit/fe27577))
+- add color names for rating stars ([8de5760](https://github.com/nordnet/ui/commit/8de5760))
 
 # [2.28.0](https://github.com/nordnet/ui/compare/v2.27.0...v2.28.0) (2020-03-31)
 
-
 ### Bug Fixes
 
-* update star rating size ([76545d8](https://github.com/nordnet/ui/commit/76545d8))
-
+- update star rating size ([76545d8](https://github.com/nordnet/ui/commit/76545d8))
 
 ### Features
 
-* add size prop ([c98d12d](https://github.com/nordnet/ui/commit/c98d12d))
+- add size prop ([c98d12d](https://github.com/nordnet/ui/commit/c98d12d))
 
 # [2.27.0](https://github.com/nordnet/ui/compare/v2.26.0...v2.27.0) (2020-03-27)
 
-
 ### Bug Fixes
 
-* bump resolution ([10c5a76](https://github.com/nordnet/ui/commit/10c5a76))
-* update snaps ([f5d8816](https://github.com/nordnet/ui/commit/f5d8816))
-
+- bump resolution ([10c5a76](https://github.com/nordnet/ui/commit/10c5a76))
+- update snaps ([f5d8816](https://github.com/nordnet/ui/commit/f5d8816))
 
 ### Features
 
-* update storybook and styled components ([2e6f629](https://github.com/nordnet/ui/commit/2e6f629))
+- update storybook and styled components ([2e6f629](https://github.com/nordnet/ui/commit/2e6f629))
 
 # [2.26.0](https://github.com/nordnet/ui/compare/v2.25.4...v2.26.0) (2020-03-27)
 
-
 ### Bug Fixes
 
-* update snaps ([80fdf41](https://github.com/nordnet/ui/commit/80fdf41))
-* use correct colors ([786c064](https://github.com/nordnet/ui/commit/786c064))
-
+- update snaps ([80fdf41](https://github.com/nordnet/ui/commit/80fdf41))
+- use correct colors ([786c064](https://github.com/nordnet/ui/commit/786c064))
 
 ### Features
 
-* add rating component ([ba8f9c0](https://github.com/nordnet/ui/commit/ba8f9c0))
+- add rating component ([ba8f9c0](https://github.com/nordnet/ui/commit/ba8f9c0))
 
 ## [2.25.4](https://github.com/nordnet/ui/compare/v2.25.3...v2.25.4) (2020-03-27)
 
-
 ### Bug Fixes
 
-* clean up css grid and its utils ([ff128f6](https://github.com/nordnet/ui/commit/ff128f6))
-* empty commit ([707fc7d](https://github.com/nordnet/ui/commit/707fc7d))
-* machine ts ([aa391f2](https://github.com/nordnet/ui/commit/aa391f2))
-* make formfield work after ts update ([175426d](https://github.com/nordnet/ui/commit/175426d))
-* make ts 3.8.3 work ([e5f29aa](https://github.com/nordnet/ui/commit/e5f29aa))
-* merge master ([63d38dc](https://github.com/nordnet/ui/commit/63d38dc))
-* ts errors ([a9f1301](https://github.com/nordnet/ui/commit/a9f1301))
-* ts of tooltip ([e1b30e3](https://github.com/nordnet/ui/commit/e1b30e3))
-* update reach-ui ([3e2eecc](https://github.com/nordnet/ui/commit/3e2eecc))
-* update snaps ([48114d0](https://github.com/nordnet/ui/commit/48114d0))
-* update ts to 3.4.5 ([246eece](https://github.com/nordnet/ui/commit/246eece))
+- clean up css grid and its utils ([ff128f6](https://github.com/nordnet/ui/commit/ff128f6))
+- empty commit ([707fc7d](https://github.com/nordnet/ui/commit/707fc7d))
+- machine ts ([aa391f2](https://github.com/nordnet/ui/commit/aa391f2))
+- make formfield work after ts update ([175426d](https://github.com/nordnet/ui/commit/175426d))
+- make ts 3.8.3 work ([e5f29aa](https://github.com/nordnet/ui/commit/e5f29aa))
+- merge master ([63d38dc](https://github.com/nordnet/ui/commit/63d38dc))
+- ts errors ([a9f1301](https://github.com/nordnet/ui/commit/a9f1301))
+- ts of tooltip ([e1b30e3](https://github.com/nordnet/ui/commit/e1b30e3))
+- update reach-ui ([3e2eecc](https://github.com/nordnet/ui/commit/3e2eecc))
+- update snaps ([48114d0](https://github.com/nordnet/ui/commit/48114d0))
+- update ts to 3.4.5 ([246eece](https://github.com/nordnet/ui/commit/246eece))
 
 ## [2.25.3](https://github.com/nordnet/ui/compare/v2.25.2...v2.25.3) (2020-03-25)
 
-
 ### Bug Fixes
 
-* **InfoBar:** update variant icons to utilise secondary color ([76496f7](https://github.com/nordnet/ui/commit/76496f7))
-* **InfoBar:** vertically align close icon ([1c03be0](https://github.com/nordnet/ui/commit/1c03be0))
+- **InfoBar:** update variant icons to utilise secondary color ([76496f7](https://github.com/nordnet/ui/commit/76496f7))
+- **InfoBar:** vertically align close icon ([1c03be0](https://github.com/nordnet/ui/commit/1c03be0))
 
 ## [2.25.2](https://github.com/nordnet/ui/compare/v2.25.1...v2.25.2) (2020-03-25)
 
-
 ### Bug Fixes
 
-* update icons for infobar ([a17a853](https://github.com/nordnet/ui/commit/a17a853))
+- update icons for infobar ([a17a853](https://github.com/nordnet/ui/commit/a17a853))
 
 ## [2.25.1](https://github.com/nordnet/ui/compare/v2.25.0...v2.25.1) (2020-03-23)
 
-
 ### Bug Fixes
 
-* 🐛 add -ms grid styles for align justify place self ([dab0a24](https://github.com/nordnet/ui/commit/dab0a24))
+- 🐛 add -ms grid styles for align justify place self ([dab0a24](https://github.com/nordnet/ui/commit/dab0a24))
 
 # [2.25.0](https://github.com/nordnet/ui/compare/v2.24.0...v2.25.0) (2020-03-23)
 
-
 ### Bug Fixes
 
-* **InfoBar:** fix exports ([1f6581d](https://github.com/nordnet/ui/commit/1f6581d))
-* **InfoBar:** fix stories ([54c82d4](https://github.com/nordnet/ui/commit/54c82d4))
-* **InfoBar:** fix stories and types ([7837192](https://github.com/nordnet/ui/commit/7837192))
-* **InfoBar:** fix TS types ([2878cee](https://github.com/nordnet/ui/commit/2878cee))
-* **InfoBar:** fix TS types ([7c6d14c](https://github.com/nordnet/ui/commit/7c6d14c))
-
+- **InfoBar:** fix exports ([1f6581d](https://github.com/nordnet/ui/commit/1f6581d))
+- **InfoBar:** fix stories ([54c82d4](https://github.com/nordnet/ui/commit/54c82d4))
+- **InfoBar:** fix stories and types ([7837192](https://github.com/nordnet/ui/commit/7837192))
+- **InfoBar:** fix TS types ([2878cee](https://github.com/nordnet/ui/commit/2878cee))
+- **InfoBar:** fix TS types ([7c6d14c](https://github.com/nordnet/ui/commit/7c6d14c))
 
 ### Features
 
-* **Icon.CrossCircle:** add an option to modify CrossCircle's cross color via stroke prop ([94fa3f4](https://github.com/nordnet/ui/commit/94fa3f4))
-* **InfoBar:** add InfoBar Component ([ff6ca4e](https://github.com/nordnet/ui/commit/ff6ca4e))
+- **Icon.CrossCircle:** add an option to modify CrossCircle's cross color via stroke prop ([94fa3f4](https://github.com/nordnet/ui/commit/94fa3f4))
+- **InfoBar:** add InfoBar Component ([ff6ca4e](https://github.com/nordnet/ui/commit/ff6ca4e))
 
 # [2.24.0](https://github.com/nordnet/ui/compare/v2.23.0...v2.24.0) (2020-03-23)
 
-
 ### Features
 
-* 🎸 add breakpoint props to CssGrid.Item ([4fb11b3](https://github.com/nordnet/ui/commit/4fb11b3))
+- 🎸 add breakpoint props to CssGrid.Item ([4fb11b3](https://github.com/nordnet/ui/commit/4fb11b3))
 
 # [2.23.0](https://github.com/nordnet/ui/compare/v2.22.3...v2.23.0) (2020-03-23)
 
-
 ### Features
 
-* add 12 new sector icons ([4a5ab30](https://github.com/nordnet/ui/commit/4a5ab30))
+- add 12 new sector icons ([4a5ab30](https://github.com/nordnet/ui/commit/4a5ab30))
 
 ## [2.22.3](https://github.com/nordnet/ui/compare/v2.22.2...v2.22.3) (2020-03-13)
 
-
 ### Bug Fixes
 
-* add inmodal prop ([0684856](https://github.com/nordnet/ui/commit/0684856))
-* update snaps ([dcc037f](https://github.com/nordnet/ui/commit/dcc037f))
+- add inmodal prop ([0684856](https://github.com/nordnet/ui/commit/0684856))
+- update snaps ([dcc037f](https://github.com/nordnet/ui/commit/dcc037f))
 
 ## [2.22.2](https://github.com/nordnet/ui/compare/v2.22.1...v2.22.2) (2020-03-11)
 
-
 ### Bug Fixes
 
-* **deps:** updated framer-motion@1.9.1 ([f0feae6](https://github.com/nordnet/ui/commit/f0feae6))
+- **deps:** updated framer-motion@1.9.1 ([f0feae6](https://github.com/nordnet/ui/commit/f0feae6))
 
 ## [2.22.1](https://github.com/nordnet/ui/compare/v2.22.0...v2.22.1) (2020-03-10)
 
-
 ### Bug Fixes
 
-* select machine not updating on props change ([75b3cee](https://github.com/nordnet/ui/commit/75b3cee))
+- select machine not updating on props change ([75b3cee](https://github.com/nordnet/ui/commit/75b3cee))
 
 # [2.22.0](https://github.com/nordnet/ui/compare/v2.21.4...v2.22.0) (2020-03-09)
 
-
 ### Features
 
-* icon filter ([1480b4d](https://github.com/nordnet/ui/commit/1480b4d))
+- icon filter ([1480b4d](https://github.com/nordnet/ui/commit/1480b4d))
 
 ## [2.21.4](https://github.com/nordnet/ui/compare/v2.21.3...v2.21.4) (2020-03-04)
 
-
 ### Bug Fixes
 
-* rebuild docs ([66dc4eb](https://github.com/nordnet/ui/commit/66dc4eb))
+- rebuild docs ([66dc4eb](https://github.com/nordnet/ui/commit/66dc4eb))
 
 ## [2.21.3](https://github.com/nordnet/ui/compare/v2.21.2...v2.21.3) (2020-03-04)
 
-
 ### Bug Fixes
 
-* add min-width 0 to fix firefox ([7c5a8f5](https://github.com/nordnet/ui/commit/7c5a8f5))
+- add min-width 0 to fix firefox ([7c5a8f5](https://github.com/nordnet/ui/commit/7c5a8f5))
 
 ## [2.21.2](https://github.com/nordnet/ui/compare/v2.21.1...v2.21.2) (2020-03-02)
 
-
 ### Bug Fixes
 
-* 🐛 overflow auto instead of scroll ([a7a0958](https://github.com/nordnet/ui/commit/a7a0958))
+- 🐛 overflow auto instead of scroll ([a7a0958](https://github.com/nordnet/ui/commit/a7a0958))
 
 ## [2.21.1](https://github.com/nordnet/ui/compare/v2.21.0...v2.21.1) (2020-02-28)
 
-
 ### Bug Fixes
 
-* 🐛 Modal overflowing vertically is not breaking ([07f87ae](https://github.com/nordnet/ui/commit/07f87ae))
+- 🐛 Modal overflowing vertically is not breaking ([07f87ae](https://github.com/nordnet/ui/commit/07f87ae))
 
 # [2.21.0](https://github.com/nordnet/ui/compare/v2.20.1...v2.21.0) (2020-02-28)
 
-
 ### Features
 
-* 🎸 add bank deposit icon ([e6d2955](https://github.com/nordnet/ui/commit/e6d2955))
+- 🎸 add bank deposit icon ([e6d2955](https://github.com/nordnet/ui/commit/e6d2955))
 
 ## [2.20.1](https://github.com/nordnet/ui/compare/v2.20.0...v2.20.1) (2020-02-27)
 
-
 ### Bug Fixes
 
-* **card:** color bar for all screen sizes ([2e45334](https://github.com/nordnet/ui/commit/2e45334))
+- **card:** color bar for all screen sizes ([2e45334](https://github.com/nordnet/ui/commit/2e45334))
 
 # [2.20.0](https://github.com/nordnet/ui/compare/v2.19.0...v2.20.0) (2020-02-26)
 
-
 ### Features
 
-* add some native attributes  to Link ([78d3f44](https://github.com/nordnet/ui/commit/78d3f44))
+- add some native attributes to Link ([78d3f44](https://github.com/nordnet/ui/commit/78d3f44))
 
 # [2.19.0](https://github.com/nordnet/ui/compare/v2.18.2...v2.19.0) (2020-02-26)
 
-
 ### Bug Fixes
 
-* 🐛 allow anchor mouse event listeners ([fc813ba](https://github.com/nordnet/ui/commit/fc813ba))
-
+- 🐛 allow anchor mouse event listeners ([fc813ba](https://github.com/nordnet/ui/commit/fc813ba))
 
 ### Features
 
-* 🎸 add some onMouse props to Button component ([6e08b82](https://github.com/nordnet/ui/commit/6e08b82))
-* add cogwheel icon ([060fca5](https://github.com/nordnet/ui/commit/060fca5))
+- 🎸 add some onMouse props to Button component ([6e08b82](https://github.com/nordnet/ui/commit/6e08b82))
+- add cogwheel icon ([060fca5](https://github.com/nordnet/ui/commit/060fca5))
 
 ## [2.18.2](https://github.com/nordnet/ui/compare/v2.18.1...v2.18.2) (2020-02-25)
 
-
 ### Bug Fixes
 
-* sync label structure ([05c47cf](https://github.com/nordnet/ui/commit/05c47cf))
+- sync label structure ([05c47cf](https://github.com/nordnet/ui/commit/05c47cf))
 
 ## [2.18.1](https://github.com/nordnet/ui/compare/v2.18.0...v2.18.1) (2020-02-24)
 
-
 ### Bug Fixes
 
-* 🐛 make input.select height match height of other inputs ([ced0e49](https://github.com/nordnet/ui/commit/ced0e49))
+- 🐛 make input.select height match height of other inputs ([ced0e49](https://github.com/nordnet/ui/commit/ced0e49))
 
 # [2.18.0](https://github.com/nordnet/ui/compare/v2.17.8...v2.18.0) (2020-02-24)
 
-
 ### Features
 
-* **drawer:** drag behaviour for touch devices ([9aa2725](https://github.com/nordnet/ui/commit/9aa2725))
+- **drawer:** drag behaviour for touch devices ([9aa2725](https://github.com/nordnet/ui/commit/9aa2725))
 
 ## [2.17.8](https://github.com/nordnet/ui/compare/v2.17.7...v2.17.8) (2020-02-21)
 
-
 ### Bug Fixes
 
-* **input:** adjust radio size and add background color ([1046d1b](https://github.com/nordnet/ui/commit/1046d1b))
-* **modal:** fix logic to hide header ([4710d9e](https://github.com/nordnet/ui/commit/4710d9e))
+- **input:** adjust radio size and add background color ([1046d1b](https://github.com/nordnet/ui/commit/1046d1b))
+- **modal:** fix logic to hide header ([4710d9e](https://github.com/nordnet/ui/commit/4710d9e))
 
 ## [2.17.7](https://github.com/nordnet/ui/compare/v2.17.6...v2.17.7) (2020-02-19)
 
-
 ### Bug Fixes
 
-* remove built in fadedscroll ([0fe4dc5](https://github.com/nordnet/ui/commit/0fe4dc5))
+- remove built in fadedscroll ([0fe4dc5](https://github.com/nordnet/ui/commit/0fe4dc5))
 
 ## [2.17.6](https://github.com/nordnet/ui/compare/v2.17.5...v2.17.6) (2020-02-18)
 
-
 ### Bug Fixes
 
-* add browser icon ([6a89f1b](https://github.com/nordnet/ui/commit/6a89f1b))
+- add browser icon ([6a89f1b](https://github.com/nordnet/ui/commit/6a89f1b))
 
 ## [2.17.5](https://github.com/nordnet/ui/compare/v2.17.4...v2.17.5) (2020-02-14)
 
-
 ### Bug Fixes
 
-* make drawer title not shrink ([81d046d](https://github.com/nordnet/ui/commit/81d046d))
-* set drawer cross icon position absolute ([c87fb15](https://github.com/nordnet/ui/commit/c87fb15))
+- make drawer title not shrink ([81d046d](https://github.com/nordnet/ui/commit/81d046d))
+- set drawer cross icon position absolute ([c87fb15](https://github.com/nordnet/ui/commit/c87fb15))
 
 ## [2.17.4](https://github.com/nordnet/ui/compare/v2.17.3...v2.17.4) (2020-02-13)
 
-
 ### Bug Fixes
 
-* adding forward ref to drawer ([af733a4](https://github.com/nordnet/ui/commit/af733a4))
+- adding forward ref to drawer ([af733a4](https://github.com/nordnet/ui/commit/af733a4))
 
 ## [2.17.3](https://github.com/nordnet/ui/compare/v2.17.2...v2.17.3) (2020-02-10)
 
-
 ### Bug Fixes
 
-* exposing useOnClickOutside hook ([7f8eab5](https://github.com/nordnet/ui/commit/7f8eab5))
+- exposing useOnClickOutside hook ([7f8eab5](https://github.com/nordnet/ui/commit/7f8eab5))
 
 ## [2.17.2](https://github.com/nordnet/ui/compare/v2.17.1...v2.17.2) (2020-02-07)
 
-
 ### Bug Fixes
 
-* 🐛 remove empty space left by hidden label ([0bad970](https://github.com/nordnet/ui/commit/0bad970))
-* 🐛 remove empty space left by hidden label in firefox ([595052e](https://github.com/nordnet/ui/commit/595052e))
+- 🐛 remove empty space left by hidden label ([0bad970](https://github.com/nordnet/ui/commit/0bad970))
+- 🐛 remove empty space left by hidden label in firefox ([595052e](https://github.com/nordnet/ui/commit/595052e))
 
 ## [2.17.1](https://github.com/nordnet/ui/compare/v2.17.0...v2.17.1) (2020-02-06)
 
-
 ### Bug Fixes
 
-* make modal header and footer not grow ([7fd680f](https://github.com/nordnet/ui/commit/7fd680f))
+- make modal header and footer not grow ([7fd680f](https://github.com/nordnet/ui/commit/7fd680f))
 
 # [2.17.0](https://github.com/nordnet/ui/compare/v2.16.0...v2.17.0) (2020-02-06)
 
-
 ### Features
 
-* 🎸 add possibility to unset flexbox size values ([f2994da](https://github.com/nordnet/ui/commit/f2994da))
-* 🎸 add social media icons ([aca689c](https://github.com/nordnet/ui/commit/aca689c))
+- 🎸 add possibility to unset flexbox size values ([f2994da](https://github.com/nordnet/ui/commit/f2994da))
+- 🎸 add social media icons ([aca689c](https://github.com/nordnet/ui/commit/aca689c))
 
 # [2.16.0](https://github.com/nordnet/ui/compare/v2.15.1...v2.16.0) (2020-02-04)
 
-
 ### Bug Fixes
 
-* dont show fade initially ([eb89703](https://github.com/nordnet/ui/commit/eb89703))
-* update snaps ([e013439](https://github.com/nordnet/ui/commit/e013439))
-
+- dont show fade initially ([eb89703](https://github.com/nordnet/ui/commit/eb89703))
+- update snaps ([e013439](https://github.com/nordnet/ui/commit/e013439))
 
 ### Features
 
-* fadescroll with ratio instead of transition ([2147ebf](https://github.com/nordnet/ui/commit/2147ebf))
+- fadescroll with ratio instead of transition ([2147ebf](https://github.com/nordnet/ui/commit/2147ebf))
 
 ## [2.15.1](https://github.com/nordnet/ui/compare/v2.15.0...v2.15.1) (2020-02-04)
 
-
 ### Bug Fixes
 
-* **typography:** support 'as' without props warning ([b817e86](https://github.com/nordnet/ui/commit/b817e86))
-* **typography:** updated snaps ([7377575](https://github.com/nordnet/ui/commit/7377575))
+- **typography:** support 'as' without props warning ([b817e86](https://github.com/nordnet/ui/commit/b817e86))
+- **typography:** updated snaps ([7377575](https://github.com/nordnet/ui/commit/7377575))
 
 # [2.15.0](https://github.com/nordnet/ui/compare/v2.14.3...v2.15.0) (2020-02-04)
 
-
 ### Features
 
-* **input:** exposing type on input.text (email, password, etc) ([4f99b82](https://github.com/nordnet/ui/commit/4f99b82))
+- **input:** exposing type on input.text (email, password, etc) ([4f99b82](https://github.com/nordnet/ui/commit/4f99b82))
 
 ## [2.14.3](https://github.com/nordnet/ui/compare/v2.14.2...v2.14.3) (2020-01-31)
 
-
 ### Bug Fixes
 
-* add forwardrefs to iconbase and questionmark icon ([446b578](https://github.com/nordnet/ui/commit/446b578))
-* update snaps ([7275768](https://github.com/nordnet/ui/commit/7275768))
-* use jest-styled-components ([27d8871](https://github.com/nordnet/ui/commit/27d8871))
+- add forwardrefs to iconbase and questionmark icon ([446b578](https://github.com/nordnet/ui/commit/446b578))
+- update snaps ([7275768](https://github.com/nordnet/ui/commit/7275768))
+- use jest-styled-components ([27d8871](https://github.com/nordnet/ui/commit/27d8871))
 
 ## [2.14.2](https://github.com/nordnet/ui/compare/v2.14.1...v2.14.2) (2020-01-29)
 
-
 ### Bug Fixes
 
-* modal max height and make fadedscroll friendly ([15076e9](https://github.com/nordnet/ui/commit/15076e9))
-* update snaps ([3156936](https://github.com/nordnet/ui/commit/3156936))
+- modal max height and make fadedscroll friendly ([15076e9](https://github.com/nordnet/ui/commit/15076e9))
+- update snaps ([3156936](https://github.com/nordnet/ui/commit/3156936))
 
 ## [2.14.1](https://github.com/nordnet/ui/compare/v2.14.0...v2.14.1) (2020-01-27)
 
-
 ### Bug Fixes
 
-* 🐛 upgrade to styled-components 5 ([9f98040](https://github.com/nordnet/ui/commit/9f98040))
+- 🐛 upgrade to styled-components 5 ([9f98040](https://github.com/nordnet/ui/commit/9f98040))
 
 # [2.14.0](https://github.com/nordnet/ui/compare/v2.13.5...v2.14.0) (2020-01-24)
 
-
 ### Features
 
-* **modal:** add support for node as title ([78b5367](https://github.com/nordnet/ui/commit/78b5367))
+- **modal:** add support for node as title ([78b5367](https://github.com/nordnet/ui/commit/78b5367))
 
 ## [2.13.5](https://github.com/nordnet/ui/compare/v2.13.4...v2.13.5) (2020-01-23)
 
-
 ### Bug Fixes
 
-* remove min height from neutral button ([8c91d43](https://github.com/nordnet/ui/commit/8c91d43))
+- remove min height from neutral button ([8c91d43](https://github.com/nordnet/ui/commit/8c91d43))
 
 ## [2.13.4](https://github.com/nordnet/ui/compare/v2.13.3...v2.13.4) (2020-01-22)
 
-
 ### Bug Fixes
 
-* horizontal overflow hidden ([31dd3e5](https://github.com/nordnet/ui/commit/31dd3e5))
+- horizontal overflow hidden ([31dd3e5](https://github.com/nordnet/ui/commit/31dd3e5))
 
 ## [2.13.3](https://github.com/nordnet/ui/compare/v2.13.2...v2.13.3) (2020-01-21)
 
-
 ### Bug Fixes
 
-* button omit min height if size is not m or l ([2f17336](https://github.com/nordnet/ui/commit/2f17336))
+- button omit min height if size is not m or l ([2f17336](https://github.com/nordnet/ui/commit/2f17336))
 
 ## [2.13.2](https://github.com/nordnet/ui/compare/v2.13.1...v2.13.2) (2020-01-17)
 
-
 ### Bug Fixes
 
-* 🐛 relax node version ([2d76fc6](https://github.com/nordnet/ui/commit/2d76fc6))
+- 🐛 relax node version ([2d76fc6](https://github.com/nordnet/ui/commit/2d76fc6))
 
 ## [2.13.1](https://github.com/nordnet/ui/compare/v2.13.0...v2.13.1) (2020-01-16)
 
-
 ### Bug Fixes
 
-* disable autofocus and put close button last in html ([ab82a79](https://github.com/nordnet/ui/commit/ab82a79))
-* dont render header if not necessary ([6f69634](https://github.com/nordnet/ui/commit/6f69634))
-* merge master ([531e30e](https://github.com/nordnet/ui/commit/531e30e))
-* no autofucs by default ([4c6ec67](https://github.com/nordnet/ui/commit/4c6ec67))
-* now build ([3ec0464](https://github.com/nordnet/ui/commit/3ec0464))
-* set node engine to v10 ([045023d](https://github.com/nordnet/ui/commit/045023d))
-* update snaps ([5fc2eca](https://github.com/nordnet/ui/commit/5fc2eca))
+- disable autofocus and put close button last in html ([ab82a79](https://github.com/nordnet/ui/commit/ab82a79))
+- dont render header if not necessary ([6f69634](https://github.com/nordnet/ui/commit/6f69634))
+- merge master ([531e30e](https://github.com/nordnet/ui/commit/531e30e))
+- no autofucs by default ([4c6ec67](https://github.com/nordnet/ui/commit/4c6ec67))
+- now build ([3ec0464](https://github.com/nordnet/ui/commit/3ec0464))
+- set node engine to v10 ([045023d](https://github.com/nordnet/ui/commit/045023d))
+- update snaps ([5fc2eca](https://github.com/nordnet/ui/commit/5fc2eca))
 
 # [2.13.0](https://github.com/nordnet/ui/compare/v2.12.1...v2.13.0) (2020-01-16)
 
-
 ### Bug Fixes
 
-* align center when placed right and left ([7162f2a](https://github.com/nordnet/ui/commit/7162f2a))
-* align on different positions ([0c4ad15](https://github.com/nordnet/ui/commit/0c4ad15))
-* drawer style adjustment and js improvement ([89a37bc](https://github.com/nordnet/ui/commit/89a37bc))
-* remove auto positioning ([3d63d09](https://github.com/nordnet/ui/commit/3d63d09))
-* save consts to file ([52dab71](https://github.com/nordnet/ui/commit/52dab71))
-* update snaps ([53d75fc](https://github.com/nordnet/ui/commit/53d75fc))
-
+- align center when placed right and left ([7162f2a](https://github.com/nordnet/ui/commit/7162f2a))
+- align on different positions ([0c4ad15](https://github.com/nordnet/ui/commit/0c4ad15))
+- drawer style adjustment and js improvement ([89a37bc](https://github.com/nordnet/ui/commit/89a37bc))
+- remove auto positioning ([3d63d09](https://github.com/nordnet/ui/commit/3d63d09))
+- save consts to file ([52dab71](https://github.com/nordnet/ui/commit/52dab71))
+- update snaps ([53d75fc](https://github.com/nordnet/ui/commit/53d75fc))
 
 ### Features
 
-* add support for separated list ([cc7cdf2](https://github.com/nordnet/ui/commit/cc7cdf2))
-* create triangle component ([4846fc2](https://github.com/nordnet/ui/commit/4846fc2))
+- add support for separated list ([cc7cdf2](https://github.com/nordnet/ui/commit/cc7cdf2))
+- create triangle component ([4846fc2](https://github.com/nordnet/ui/commit/4846fc2))
 
 ## [2.12.1](https://github.com/nordnet/ui/compare/v2.12.0...v2.12.1) (2020-01-15)
 
-
 ### Bug Fixes
 
-* adds ref support for Button ([d5c4c3b](https://github.com/nordnet/ui/commit/d5c4c3b))
-* removes type from NormalizedButton ([3421028](https://github.com/nordnet/ui/commit/3421028))
+- adds ref support for Button ([d5c4c3b](https://github.com/nordnet/ui/commit/d5c4c3b))
+- removes type from NormalizedButton ([3421028](https://github.com/nordnet/ui/commit/3421028))
 
 # [2.12.0](https://github.com/nordnet/ui/compare/v2.11.0...v2.12.0) (2020-01-13)
 
-
 ### Bug Fixes
 
-* attempt to update nodejs version https://zeit.co/docs/runtimes/?query=node.js#official-runtimes/node-js ([5c50ac1](https://github.com/nordnet/ui/commit/5c50ac1))
-* jsdocs comment for variant ([3b767ee](https://github.com/nordnet/ui/commit/3b767ee))
-* remove border-radius from text variant ([9a0df00](https://github.com/nordnet/ui/commit/9a0df00))
-
+- attempt to update nodejs version https://zeit.co/docs/runtimes/?query=node.js#official-runtimes/node-js ([5c50ac1](https://github.com/nordnet/ui/commit/5c50ac1))
+- jsdocs comment for variant ([3b767ee](https://github.com/nordnet/ui/commit/3b767ee))
+- remove border-radius from text variant ([9a0df00](https://github.com/nordnet/ui/commit/9a0df00))
 
 ### Features
 
-* add skeleton component ([35d1984](https://github.com/nordnet/ui/commit/35d1984))
+- add skeleton component ([35d1984](https://github.com/nordnet/ui/commit/35d1984))
 
 # [2.11.0](https://github.com/nordnet/ui/compare/v2.10.0...v2.11.0) (2019-12-19)
 
-
 ### Bug Fixes
 
-* add uid and make title take elements ([661f76a](https://github.com/nordnet/ui/commit/661f76a))
-* adjust shadow ([8b81c7a](https://github.com/nordnet/ui/commit/8b81c7a))
-* minor fixes to modal to match drawer more ([b82acaa](https://github.com/nordnet/ui/commit/b82acaa))
-* remove uncertain shadow ([35df563](https://github.com/nordnet/ui/commit/35df563))
-* update commit analyzer ([c6cad5c](https://github.com/nordnet/ui/commit/c6cad5c))
-* update snaps ([38affad](https://github.com/nordnet/ui/commit/38affad))
-* update snaps ([dbccc3f](https://github.com/nordnet/ui/commit/dbccc3f))
-* use cross thin icon ([f276420](https://github.com/nordnet/ui/commit/f276420))
-
+- add uid and make title take elements ([661f76a](https://github.com/nordnet/ui/commit/661f76a))
+- adjust shadow ([8b81c7a](https://github.com/nordnet/ui/commit/8b81c7a))
+- minor fixes to modal to match drawer more ([b82acaa](https://github.com/nordnet/ui/commit/b82acaa))
+- remove uncertain shadow ([35df563](https://github.com/nordnet/ui/commit/35df563))
+- update commit analyzer ([c6cad5c](https://github.com/nordnet/ui/commit/c6cad5c))
+- update snaps ([38affad](https://github.com/nordnet/ui/commit/38affad))
+- update snaps ([dbccc3f](https://github.com/nordnet/ui/commit/dbccc3f))
+- use cross thin icon ([f276420](https://github.com/nordnet/ui/commit/f276420))
 
 ### Features
 
-* add mobile behavior and remove switch ([a4b877d](https://github.com/nordnet/ui/commit/a4b877d))
-* create drawer component ([4ad5e95](https://github.com/nordnet/ui/commit/4ad5e95))
+- add mobile behavior and remove switch ([a4b877d](https://github.com/nordnet/ui/commit/a4b877d))
+- create drawer component ([4ad5e95](https://github.com/nordnet/ui/commit/4ad5e95))
 
 # [2.10.0](https://github.com/nordnet/ui/compare/v2.9.0...v2.10.0) (2019-12-13)
 
-
 ### Bug Fixes
 
-* **select:** close->toggle for now ([1ca6d87](https://github.com/nordnet/ui/commit/1ca6d87))
-* **select:** wrap in div, fix formik onblur,onfocus handlers ([768e779](https://github.com/nordnet/ui/commit/768e779))
-
+- **select:** close->toggle for now ([1ca6d87](https://github.com/nordnet/ui/commit/1ca6d87))
+- **select:** wrap in div, fix formik onblur,onfocus handlers ([768e779](https://github.com/nordnet/ui/commit/768e779))
 
 ### Features
 
-* **select:** get rid of forward ref where its not needed) ([a78284a](https://github.com/nordnet/ui/commit/a78284a))
+- **select:** get rid of forward ref where its not needed) ([a78284a](https://github.com/nordnet/ui/commit/a78284a))
 
 # [2.9.0](https://github.com/nordnet/ui/compare/v2.8.1...v2.9.0) (2019-12-13)
 
-
 ### Bug Fixes
 
-* rename label ([5fd428c](https://github.com/nordnet/ui/commit/5fd428c))
-
+- rename label ([5fd428c](https://github.com/nordnet/ui/commit/5fd428c))
 
 ### Features
 
-* max length prop to text input ([dbf318e](https://github.com/nordnet/ui/commit/dbf318e))
+- max length prop to text input ([dbf318e](https://github.com/nordnet/ui/commit/dbf318e))
 
 ## [2.8.1](https://github.com/nordnet/ui/compare/v2.8.0...v2.8.1) (2019-12-11)
 
-
 ### Bug Fixes
 
-* hook off interpreter event ([22cb394](https://github.com/nordnet/ui/commit/22cb394))
+- hook off interpreter event ([22cb394](https://github.com/nordnet/ui/commit/22cb394))
 
 # [2.8.0](https://github.com/nordnet/ui/compare/v2.7.4...v2.8.0) (2019-12-06)
 
-
 ### Features
 
-* 🎸 add ThinCross icon ([0c1fb42](https://github.com/nordnet/ui/commit/0c1fb42))
-* add colored top bar ([824647f](https://github.com/nordnet/ui/commit/824647f))
+- 🎸 add ThinCross icon ([0c1fb42](https://github.com/nordnet/ui/commit/0c1fb42))
+- add colored top bar ([824647f](https://github.com/nordnet/ui/commit/824647f))
 
 ## [2.7.4](https://github.com/nordnet/ui/compare/v2.7.3...v2.7.4) (2019-12-04)
 
-
 ### Bug Fixes
 
-* omit size from button link ([3be80c9](https://github.com/nordnet/ui/commit/3be80c9))
+- omit size from button link ([3be80c9](https://github.com/nordnet/ui/commit/3be80c9))
 
 ## [2.7.3](https://github.com/nordnet/ui/compare/v2.7.2...v2.7.3) (2019-12-03)
 
-
 ### Bug Fixes
 
-* add type to link that looks like button ([8d36c74](https://github.com/nordnet/ui/commit/8d36c74))
+- add type to link that looks like button ([8d36c74](https://github.com/nordnet/ui/commit/8d36c74))
 
 ## [2.7.2](https://github.com/nordnet/ui/compare/v2.7.1...v2.7.2) (2019-12-02)
 
-
 ### Bug Fixes
 
-* get new version ([8019271](https://github.com/nordnet/ui/commit/8019271))
+- get new version ([8019271](https://github.com/nordnet/ui/commit/8019271))
 
 ## [2.7.1](https://github.com/nordnet/ui/compare/v2.7.0...v2.7.1) (2019-12-02)
 
-
 ### Bug Fixes
 
-* deprecate small size ([60ce3ed](https://github.com/nordnet/ui/commit/60ce3ed))
-* merge master ([03f35dd](https://github.com/nordnet/ui/commit/03f35dd))
+- deprecate small size ([60ce3ed](https://github.com/nordnet/ui/commit/60ce3ed))
+- merge master ([03f35dd](https://github.com/nordnet/ui/commit/03f35dd))
 
 # [2.7.0](https://github.com/nordnet/ui/compare/v2.6.1...v2.7.0) (2019-12-02)
 
-
 ### Bug Fixes
 
-* clean up loading prop ([138d36f](https://github.com/nordnet/ui/commit/138d36f))
-* make bold ([eb7883e](https://github.com/nordnet/ui/commit/eb7883e))
-* merge master ([4af55d1](https://github.com/nordnet/ui/commit/4af55d1))
-* merge master ([0cb0e3d](https://github.com/nordnet/ui/commit/0cb0e3d))
-
+- clean up loading prop ([138d36f](https://github.com/nordnet/ui/commit/138d36f))
+- make bold ([eb7883e](https://github.com/nordnet/ui/commit/eb7883e))
+- merge master ([4af55d1](https://github.com/nordnet/ui/commit/4af55d1))
+- merge master ([0cb0e3d](https://github.com/nordnet/ui/commit/0cb0e3d))
 
 ### Features
 
-* add color to loading state spinners ([741b885](https://github.com/nordnet/ui/commit/741b885))
+- add color to loading state spinners ([741b885](https://github.com/nordnet/ui/commit/741b885))
 
 ## [2.6.1](https://github.com/nordnet/ui/compare/v2.6.0...v2.6.1) (2019-12-02)
 
-
 ### Bug Fixes
 
-* add disabled state to neutral ([3883a5d](https://github.com/nordnet/ui/commit/3883a5d))
-* compiling error ([19f763e](https://github.com/nordnet/ui/commit/19f763e))
-* deprecate small size ([1cc97ca](https://github.com/nordnet/ui/commit/1cc97ca))
-* make bold ([fdea6e1](https://github.com/nordnet/ui/commit/fdea6e1))
-* merge master ([7f0400b](https://github.com/nordnet/ui/commit/7f0400b))
-* only warn when small is not used with neutral ([e93bc86](https://github.com/nordnet/ui/commit/e93bc86))
-* remove small size ([f95746d](https://github.com/nordnet/ui/commit/f95746d))
-* revert deprecation of small size for later pr ([3e2b6c3](https://github.com/nordnet/ui/commit/3e2b6c3))
-* sync button styles with design ([d32f2aa](https://github.com/nordnet/ui/commit/d32f2aa))
-* update padding function ([fc9ed87](https://github.com/nordnet/ui/commit/fc9ed87))
-* update snaps ([6d8649e](https://github.com/nordnet/ui/commit/6d8649e))
-* use innerprops ([29a530a](https://github.com/nordnet/ui/commit/29a530a))
+- add disabled state to neutral ([3883a5d](https://github.com/nordnet/ui/commit/3883a5d))
+- compiling error ([19f763e](https://github.com/nordnet/ui/commit/19f763e))
+- deprecate small size ([1cc97ca](https://github.com/nordnet/ui/commit/1cc97ca))
+- make bold ([fdea6e1](https://github.com/nordnet/ui/commit/fdea6e1))
+- merge master ([7f0400b](https://github.com/nordnet/ui/commit/7f0400b))
+- only warn when small is not used with neutral ([e93bc86](https://github.com/nordnet/ui/commit/e93bc86))
+- remove small size ([f95746d](https://github.com/nordnet/ui/commit/f95746d))
+- revert deprecation of small size for later pr ([3e2b6c3](https://github.com/nordnet/ui/commit/3e2b6c3))
+- sync button styles with design ([d32f2aa](https://github.com/nordnet/ui/commit/d32f2aa))
+- update padding function ([fc9ed87](https://github.com/nordnet/ui/commit/fc9ed87))
+- update snaps ([6d8649e](https://github.com/nordnet/ui/commit/6d8649e))
+- use innerprops ([29a530a](https://github.com/nordnet/ui/commit/29a530a))
 
 # [2.6.0](https://github.com/nordnet/ui/compare/v2.5.1...v2.6.0) (2019-12-02)
 
-
 ### Features
 
-* added left/right chevron and calendar icons ([2d90602](https://github.com/nordnet/ui/commit/2d90602))
+- added left/right chevron and calendar icons ([2d90602](https://github.com/nordnet/ui/commit/2d90602))
 
 ## [2.5.1](https://github.com/nordnet/ui/compare/v2.5.0...v2.5.1) (2019-11-26)
 
-
 ### Bug Fixes
 
-* **typography:** line-height and weight were broken in css ([a952eab](https://github.com/nordnet/ui/commit/a952eab))
+- **typography:** line-height and weight were broken in css ([a952eab](https://github.com/nordnet/ui/commit/a952eab))
 
 # [2.5.0](https://github.com/nordnet/ui/compare/v2.4.1...v2.5.0) (2019-11-26)
 
-
 ### Features
 
-* 🎸 add new colors to be used in charts ([bfddba4](https://github.com/nordnet/ui/commit/bfddba4))
+- 🎸 add new colors to be used in charts ([bfddba4](https://github.com/nordnet/ui/commit/bfddba4))
 
 ## [2.4.1](https://github.com/nordnet/ui/compare/v2.4.0...v2.4.1) (2019-11-25)
 
-
 ### Bug Fixes
 
-* **number:** getRoundedValue toPrecision -> toFixed ([cc636b3](https://github.com/nordnet/ui/commit/cc636b3))
+- **number:** getRoundedValue toPrecision -> toFixed ([cc636b3](https://github.com/nordnet/ui/commit/cc636b3))
 
 # [2.4.0](https://github.com/nordnet/ui/compare/v2.3.0...v2.4.0) (2019-11-25)
 
-
 ### Bug Fixes
 
-* 🐛 fix viewbox for hamburger icon making it centered ([d2e0fbe](https://github.com/nordnet/ui/commit/d2e0fbe))
-* 🐛 omit certain props from icon svg ([b7a3a2d](https://github.com/nordnet/ui/commit/b7a3a2d))
-* 🐛 remove external prop from a tags ([fed596f](https://github.com/nordnet/ui/commit/fed596f))
-* lineHeight inherit now works as intended ([b01ade5](https://github.com/nordnet/ui/commit/b01ade5))
-
+- 🐛 fix viewbox for hamburger icon making it centered ([d2e0fbe](https://github.com/nordnet/ui/commit/d2e0fbe))
+- 🐛 omit certain props from icon svg ([b7a3a2d](https://github.com/nordnet/ui/commit/b7a3a2d))
+- 🐛 remove external prop from a tags ([fed596f](https://github.com/nordnet/ui/commit/fed596f))
+- lineHeight inherit now works as intended ([b01ade5](https://github.com/nordnet/ui/commit/b01ade5))
 
 ### Features
 
-* 🎸 add cms prop to Link for generating cms links ([e90bb68](https://github.com/nordnet/ui/commit/e90bb68))
-* 🎸 Add color prop to Link ([4e34634](https://github.com/nordnet/ui/commit/4e34634))
-* 🎸 add hamburger icon ([208ac0c](https://github.com/nordnet/ui/commit/208ac0c))
-* 🎸 add menu colors ([f1ad0ac](https://github.com/nordnet/ui/commit/f1ad0ac))
+- 🎸 add cms prop to Link for generating cms links ([e90bb68](https://github.com/nordnet/ui/commit/e90bb68))
+- 🎸 Add color prop to Link ([4e34634](https://github.com/nordnet/ui/commit/4e34634))
+- 🎸 add hamburger icon ([208ac0c](https://github.com/nordnet/ui/commit/208ac0c))
+- 🎸 add menu colors ([f1ad0ac](https://github.com/nordnet/ui/commit/f1ad0ac))
 
 # [2.3.0](https://github.com/nordnet/ui/compare/v2.2.2...v2.3.0) (2019-11-21)
 
-
 ### Features
 
-* **button:** align external link props with link component ([20ae338](https://github.com/nordnet/ui/commit/20ae338))
-* **button:** external link ([b9c5e97](https://github.com/nordnet/ui/commit/b9c5e97))
+- **button:** align external link props with link component ([20ae338](https://github.com/nordnet/ui/commit/20ae338))
+- **button:** external link ([b9c5e97](https://github.com/nordnet/ui/commit/b9c5e97))
 
 ## [2.2.2](https://github.com/nordnet/ui/compare/v2.2.1...v2.2.2) (2019-11-20)
 
-
 ### Bug Fixes
 
-* **storybook:** addon-docs regression bug, using older version for now ([6cf7ee5](https://github.com/nordnet/ui/commit/6cf7ee5))
+- **storybook:** addon-docs regression bug, using older version for now ([6cf7ee5](https://github.com/nordnet/ui/commit/6cf7ee5))
 
 ## [2.2.1](https://github.com/nordnet/ui/compare/v2.2.0...v2.2.1) (2019-11-20)
 
-
 ### Bug Fixes
 
-* 🐛 change height prop to work in media style props ([8a76e1f](https://github.com/nordnet/ui/commit/8a76e1f))
-* **cssgrid:** proper fix for comma join in media queries ([5c1cb21](https://github.com/nordnet/ui/commit/5c1cb21))
+- 🐛 change height prop to work in media style props ([8a76e1f](https://github.com/nordnet/ui/commit/8a76e1f))
+- **cssgrid:** proper fix for comma join in media queries ([5c1cb21](https://github.com/nordnet/ui/commit/5c1cb21))
 
 # [2.2.0](https://github.com/nordnet/ui/compare/v2.1.2...v2.2.0) (2019-11-18)
 
-
 ### Features
 
-* add semantics for comp pink 1 and 2 ([9dc2d0f](https://github.com/nordnet/ui/commit/9dc2d0f))
+- add semantics for comp pink 1 and 2 ([9dc2d0f](https://github.com/nordnet/ui/commit/9dc2d0f))
 
 ## [2.1.2](https://github.com/nordnet/ui/compare/v2.1.1...v2.1.2) (2019-11-15)
 
-
 ### Bug Fixes
 
-* optionl prop to remove cross for closing modal ([d938f9e](https://github.com/nordnet/ui/commit/d938f9e))
+- optionl prop to remove cross for closing modal ([d938f9e](https://github.com/nordnet/ui/commit/d938f9e))
 
 ## [2.1.1](https://github.com/nordnet/ui/compare/v2.1.0...v2.1.1) (2019-11-13)
 
-
 ### Bug Fixes
 
-* add active state ([c28d0f5](https://github.com/nordnet/ui/commit/c28d0f5))
-* sync buy and sell buttons ([1289166](https://github.com/nordnet/ui/commit/1289166))
+- add active state ([c28d0f5](https://github.com/nordnet/ui/commit/c28d0f5))
+- sync buy and sell buttons ([1289166](https://github.com/nordnet/ui/commit/1289166))
 
 # [2.1.0](https://github.com/nordnet/ui/compare/v2.0.3...v2.1.0) (2019-11-13)
 
-
 ### Features
 
-* add 'as' prop on button ([9ec3b12](https://github.com/nordnet/ui/commit/9ec3b12))
+- add 'as' prop on button ([9ec3b12](https://github.com/nordnet/ui/commit/9ec3b12))
 
 ## [2.0.3](https://github.com/nordnet/ui/compare/v2.0.2...v2.0.3) (2019-11-13)
 
-
 ### Bug Fixes
 
-* remove unnecessary code ([f7b1e6b](https://github.com/nordnet/ui/commit/f7b1e6b))
+- remove unnecessary code ([f7b1e6b](https://github.com/nordnet/ui/commit/f7b1e6b))
 
 ## [2.0.2](https://github.com/nordnet/ui/compare/v2.0.1...v2.0.2) (2019-11-13)
 
-
 ### Bug Fixes
 
-* let content be as wide as possible ([dbb3d86](https://github.com/nordnet/ui/commit/dbb3d86))
+- let content be as wide as possible ([dbb3d86](https://github.com/nordnet/ui/commit/dbb3d86))
 
 ## [2.0.1](https://github.com/nordnet/ui/compare/v2.0.0...v2.0.1) (2019-11-13)
 
-
 ### Bug Fixes
 
-* deselect in multiselect onChange ([40efc03](https://github.com/nordnet/ui/commit/40efc03))
-* **select:** ie11 scroll-into-view ([c71af94](https://github.com/nordnet/ui/commit/c71af94))
+- deselect in multiselect onChange ([40efc03](https://github.com/nordnet/ui/commit/40efc03))
+- **select:** ie11 scroll-into-view ([c71af94](https://github.com/nordnet/ui/commit/c71af94))
 
 # [2.0.0](https://github.com/nordnet/ui/compare/v1.70.0...v2.0.0) (2019-11-12)
 
-
 ### Bug Fixes
 
-* 🐛 bump major ([7cda870](https://github.com/nordnet/ui/commit/7cda870))
-
+- 🐛 bump major ([7cda870](https://github.com/nordnet/ui/commit/7cda870))
 
 ### BREAKING CHANGES
 
-* 🧨 Input.Select breaking changes, check docs
+- 🧨 Input.Select breaking changes, check docs
 
 # [1.70.0](https://github.com/nordnet/ui/compare/v1.69.2...v1.70.0) (2019-11-12)
 
-
 ### Bug Fixes
 
-* **input:** props cleanup ([67c9d39](https://github.com/nordnet/ui/commit/67c9d39))
-* **input.select:** symbol for all, tests, snapshots ([4036135](https://github.com/nordnet/ui/commit/4036135))
-* **input.select:** types ([bf523fc](https://github.com/nordnet/ui/commit/bf523fc))
-* **select:** controlled and uncontrolled behaviour ([5bfc780](https://github.com/nordnet/ui/commit/5bfc780))
-* **select:** design adjustments, hideLabel prop ([2b681e2](https://github.com/nordnet/ui/commit/2b681e2))
-* **select:** design refinements ([249f234](https://github.com/nordnet/ui/commit/249f234))
-* **select:** ie11 bugs vertical overflow ([3e317c5](https://github.com/nordnet/ui/commit/3e317c5))
-* **select:** ie11, safari visuals, remove data-testid from build ([4609ba5](https://github.com/nordnet/ui/commit/4609ba5))
-* **select:** keyboard navigation when no visible items bug ([c388fca](https://github.com/nordnet/ui/commit/c388fca))
-* **select:** multiselect leave focus after selection ([80ab480](https://github.com/nordnet/ui/commit/80ab480))
-* **select:** not scrolling to 0th item ([a2387f9](https://github.com/nordnet/ui/commit/a2387f9))
-* **select:** onBlur triggered when click multiselect, ellipsis multiselect ([5e3e427](https://github.com/nordnet/ui/commit/5e3e427))
-* **select:** search clear onClose ([aa82792](https://github.com/nordnet/ui/commit/aa82792))
-* **select:** selectAll option shouldnt select disabled options ([6a19cbb](https://github.com/nordnet/ui/commit/6a19cbb))
-* **select:** types ([33b6fcc](https://github.com/nordnet/ui/commit/33b6fcc))
-* **select:** types, move list to separate renderer ([697aa4a](https://github.com/nordnet/ui/commit/697aa4a))
-* **select:** value comparison for defaults ([c1f13ee](https://github.com/nordnet/ui/commit/c1f13ee))
-
+- **input:** props cleanup ([67c9d39](https://github.com/nordnet/ui/commit/67c9d39))
+- **input.select:** symbol for all, tests, snapshots ([4036135](https://github.com/nordnet/ui/commit/4036135))
+- **input.select:** types ([bf523fc](https://github.com/nordnet/ui/commit/bf523fc))
+- **select:** controlled and uncontrolled behaviour ([5bfc780](https://github.com/nordnet/ui/commit/5bfc780))
+- **select:** design adjustments, hideLabel prop ([2b681e2](https://github.com/nordnet/ui/commit/2b681e2))
+- **select:** design refinements ([249f234](https://github.com/nordnet/ui/commit/249f234))
+- **select:** ie11 bugs vertical overflow ([3e317c5](https://github.com/nordnet/ui/commit/3e317c5))
+- **select:** ie11, safari visuals, remove data-testid from build ([4609ba5](https://github.com/nordnet/ui/commit/4609ba5))
+- **select:** keyboard navigation when no visible items bug ([c388fca](https://github.com/nordnet/ui/commit/c388fca))
+- **select:** multiselect leave focus after selection ([80ab480](https://github.com/nordnet/ui/commit/80ab480))
+- **select:** not scrolling to 0th item ([a2387f9](https://github.com/nordnet/ui/commit/a2387f9))
+- **select:** onBlur triggered when click multiselect, ellipsis multiselect ([5e3e427](https://github.com/nordnet/ui/commit/5e3e427))
+- **select:** search clear onClose ([aa82792](https://github.com/nordnet/ui/commit/aa82792))
+- **select:** selectAll option shouldnt select disabled options ([6a19cbb](https://github.com/nordnet/ui/commit/6a19cbb))
+- **select:** types ([33b6fcc](https://github.com/nordnet/ui/commit/33b6fcc))
+- **select:** types, move list to separate renderer ([697aa4a](https://github.com/nordnet/ui/commit/697aa4a))
+- **select:** value comparison for defaults ([c1f13ee](https://github.com/nordnet/ui/commit/c1f13ee))
 
 ### Features
 
-* **button:** add id prop ([2fd5f37](https://github.com/nordnet/ui/commit/2fd5f37))
-* **icon.search:** new icon ([63ae47a](https://github.com/nordnet/ui/commit/63ae47a))
-* **select:** add actions prop ([4947780](https://github.com/nordnet/ui/commit/4947780))
-* **select:** empty states ([17cf057](https://github.com/nordnet/ui/commit/17cf057))
-* **select:** event onblur, onfocus, controlled search ([6acb40f](https://github.com/nordnet/ui/commit/6acb40f))
-* **select:** listMaxHeight prop, cleanup ([f5213c8](https://github.com/nordnet/ui/commit/f5213c8))
-* **select:** search -> machine, showSearch prop, changes in renderers ([34e41f2](https://github.com/nordnet/ui/commit/34e41f2))
-* tracking redone, custom config for machine ([da85766](https://github.com/nordnet/ui/commit/da85766))
-* **select:** tracking and actionTypes export ([ee93ee1](https://github.com/nordnet/ui/commit/ee93ee1))
-* **select:** wip disabled items, onChange, a11y, better fade ([53a3c25](https://github.com/nordnet/ui/commit/53a3c25))
-* **select:** wip experimenting with hover/focus ([de23300](https://github.com/nordnet/ui/commit/de23300))
-* **select:** wip experiments with hover, select all ([62d37b8](https://github.com/nordnet/ui/commit/62d37b8))
-* **select:** wip multiselect, custom renderers, cleanup ([d0c008f](https://github.com/nordnet/ui/commit/d0c008f))
-* **wip:** rework on input select, statecharts ([968a6b8](https://github.com/nordnet/ui/commit/968a6b8))
+- **button:** add id prop ([2fd5f37](https://github.com/nordnet/ui/commit/2fd5f37))
+- **icon.search:** new icon ([63ae47a](https://github.com/nordnet/ui/commit/63ae47a))
+- **select:** add actions prop ([4947780](https://github.com/nordnet/ui/commit/4947780))
+- **select:** empty states ([17cf057](https://github.com/nordnet/ui/commit/17cf057))
+- **select:** event onblur, onfocus, controlled search ([6acb40f](https://github.com/nordnet/ui/commit/6acb40f))
+- **select:** listMaxHeight prop, cleanup ([f5213c8](https://github.com/nordnet/ui/commit/f5213c8))
+- **select:** search -> machine, showSearch prop, changes in renderers ([34e41f2](https://github.com/nordnet/ui/commit/34e41f2))
+- tracking redone, custom config for machine ([da85766](https://github.com/nordnet/ui/commit/da85766))
+- **select:** tracking and actionTypes export ([ee93ee1](https://github.com/nordnet/ui/commit/ee93ee1))
+- **select:** wip disabled items, onChange, a11y, better fade ([53a3c25](https://github.com/nordnet/ui/commit/53a3c25))
+- **select:** wip experimenting with hover/focus ([de23300](https://github.com/nordnet/ui/commit/de23300))
+- **select:** wip experiments with hover, select all ([62d37b8](https://github.com/nordnet/ui/commit/62d37b8))
+- **select:** wip multiselect, custom renderers, cleanup ([d0c008f](https://github.com/nordnet/ui/commit/d0c008f))
+- **wip:** rework on input select, statecharts ([968a6b8](https://github.com/nordnet/ui/commit/968a6b8))
 
 ## [1.69.2](https://github.com/nordnet/ui/compare/v1.69.1...v1.69.2) (2019-11-11)
 
-
 ### Bug Fixes
 
-* dont show fade in ie11 ([25e6662](https://github.com/nordnet/ui/commit/25e6662))
-* ie11 contain height ([eaf90c8](https://github.com/nordnet/ui/commit/eaf90c8))
-* merge master ([b7c2d87](https://github.com/nordnet/ui/commit/b7c2d87))
+- dont show fade in ie11 ([25e6662](https://github.com/nordnet/ui/commit/25e6662))
+- ie11 contain height ([eaf90c8](https://github.com/nordnet/ui/commit/eaf90c8))
+- merge master ([b7c2d87](https://github.com/nordnet/ui/commit/b7c2d87))
 
 ## [1.69.1](https://github.com/nordnet/ui/compare/v1.69.0...v1.69.1) (2019-11-11)
 
-
 ### Bug Fixes
 
-* ckean up ([8ac2ae8](https://github.com/nordnet/ui/commit/8ac2ae8))
-* merge master ([ff3ee69](https://github.com/nordnet/ui/commit/ff3ee69))
-* rename styles exports ([765a0f0](https://github.com/nordnet/ui/commit/765a0f0))
+- ckean up ([8ac2ae8](https://github.com/nordnet/ui/commit/8ac2ae8))
+- merge master ([ff3ee69](https://github.com/nordnet/ui/commit/ff3ee69))
+- rename styles exports ([765a0f0](https://github.com/nordnet/ui/commit/765a0f0))
 
 # [1.69.0](https://github.com/nordnet/ui/compare/v1.68.2...v1.69.0) (2019-11-11)
 
-
 ### Features
 
-* exposed complementaryBlue2 color in theme ([0d6b755](https://github.com/nordnet/ui/commit/0d6b755))
+- exposed complementaryBlue2 color in theme ([0d6b755](https://github.com/nordnet/ui/commit/0d6b755))
 
 ## [1.68.2](https://github.com/nordnet/ui/compare/v1.68.1...v1.68.2) (2019-11-08)
 
-
 ### Bug Fixes
 
-* add tests ([7c58e22](https://github.com/nordnet/ui/commit/7c58e22))
-* focus style position ie11 ([6146a16](https://github.com/nordnet/ui/commit/6146a16))
-* make css grid minmax work in ie11 ([528b352](https://github.com/nordnet/ui/commit/528b352))
+- add tests ([7c58e22](https://github.com/nordnet/ui/commit/7c58e22))
+- focus style position ie11 ([6146a16](https://github.com/nordnet/ui/commit/6146a16))
+- make css grid minmax work in ie11 ([528b352](https://github.com/nordnet/ui/commit/528b352))
 
 ## [1.68.1](https://github.com/nordnet/ui/compare/v1.68.0...v1.68.1) (2019-11-06)
 
-
 ### Bug Fixes
 
-* dont show fade in ie11 ([2d1e884](https://github.com/nordnet/ui/commit/2d1e884))
+- dont show fade in ie11 ([2d1e884](https://github.com/nordnet/ui/commit/2d1e884))
 
 # [1.68.0](https://github.com/nordnet/ui/compare/v1.67.0...v1.68.0) (2019-11-05)
 
-
 ### Bug Fixes
 
-* bake in icon and just pass string to tooltip ([5a83484](https://github.com/nordnet/ui/commit/5a83484))
-* merge master ([e8af565](https://github.com/nordnet/ui/commit/e8af565))
-
+- bake in icon and just pass string to tooltip ([5a83484](https://github.com/nordnet/ui/commit/5a83484))
+- merge master ([e8af565](https://github.com/nordnet/ui/commit/e8af565))
 
 ### Features
 
-* 🎸 add background black color ([905a9f5](https://github.com/nordnet/ui/commit/905a9f5))
-* add support to pass addon to label ([75aabd7](https://github.com/nordnet/ui/commit/75aabd7))
+- 🎸 add background black color ([905a9f5](https://github.com/nordnet/ui/commit/905a9f5))
+- add support to pass addon to label ([75aabd7](https://github.com/nordnet/ui/commit/75aabd7))
 
 # [1.67.0](https://github.com/nordnet/ui/compare/v1.66.0...v1.67.0) (2019-11-05)
 
-
 ### Bug Fixes
 
-* 🐛 add viewbox to plus and minus icons ([2e50ec2](https://github.com/nordnet/ui/commit/2e50ec2))
-* adjust  console log messages ([1a4e767](https://github.com/nordnet/ui/commit/1a4e767))
-* clean up ([4b7456c](https://github.com/nordnet/ui/commit/4b7456c))
-* dont show fade by default ([fe1f364](https://github.com/nordnet/ui/commit/fe1f364))
-* ie11 ([f9cc115](https://github.com/nordnet/ui/commit/f9cc115))
-* merge master ([16d75e3](https://github.com/nordnet/ui/commit/16d75e3))
-* merge master ([c6daad7](https://github.com/nordnet/ui/commit/c6daad7))
-* minus viewbox ([6d7fd91](https://github.com/nordnet/ui/commit/6d7fd91))
-* pr fixes ([01ef4e3](https://github.com/nordnet/ui/commit/01ef4e3))
-* simplify ([aee688f](https://github.com/nordnet/ui/commit/aee688f))
-* typos ([10232d8](https://github.com/nordnet/ui/commit/10232d8))
-* **icon.plus:** viewbox ([0b6e234](https://github.com/nordnet/ui/commit/0b6e234))
-* update docs and pr fixes ([7a1aced](https://github.com/nordnet/ui/commit/7a1aced))
-* update mdx of fadedscroll ([68683f2](https://github.com/nordnet/ui/commit/68683f2))
-* update types of useonscreen hook ([e330420](https://github.com/nordnet/ui/commit/e330420))
-
+- 🐛 add viewbox to plus and minus icons ([2e50ec2](https://github.com/nordnet/ui/commit/2e50ec2))
+- adjust console log messages ([1a4e767](https://github.com/nordnet/ui/commit/1a4e767))
+- clean up ([4b7456c](https://github.com/nordnet/ui/commit/4b7456c))
+- dont show fade by default ([fe1f364](https://github.com/nordnet/ui/commit/fe1f364))
+- ie11 ([f9cc115](https://github.com/nordnet/ui/commit/f9cc115))
+- merge master ([16d75e3](https://github.com/nordnet/ui/commit/16d75e3))
+- merge master ([c6daad7](https://github.com/nordnet/ui/commit/c6daad7))
+- minus viewbox ([6d7fd91](https://github.com/nordnet/ui/commit/6d7fd91))
+- pr fixes ([01ef4e3](https://github.com/nordnet/ui/commit/01ef4e3))
+- simplify ([aee688f](https://github.com/nordnet/ui/commit/aee688f))
+- typos ([10232d8](https://github.com/nordnet/ui/commit/10232d8))
+- **icon.plus:** viewbox ([0b6e234](https://github.com/nordnet/ui/commit/0b6e234))
+- update docs and pr fixes ([7a1aced](https://github.com/nordnet/ui/commit/7a1aced))
+- update mdx of fadedscroll ([68683f2](https://github.com/nordnet/ui/commit/68683f2))
+- update types of useonscreen hook ([e330420](https://github.com/nordnet/ui/commit/e330420))
 
 ### Features
 
-* add fadedscroll stories to cardwithtabs ([9edeeea](https://github.com/nordnet/ui/commit/9edeeea))
-* add fadeheight prop ([530217c](https://github.com/nordnet/ui/commit/530217c))
-* create fadedscroll component ([8af8b2b](https://github.com/nordnet/ui/commit/8af8b2b))
-* create scrollable card ([626ab7b](https://github.com/nordnet/ui/commit/626ab7b))
-* expose components of fadedscroll ([2f062a2](https://github.com/nordnet/ui/commit/2f062a2))
+- add fadedscroll stories to cardwithtabs ([9edeeea](https://github.com/nordnet/ui/commit/9edeeea))
+- add fadeheight prop ([530217c](https://github.com/nordnet/ui/commit/530217c))
+- create fadedscroll component ([8af8b2b](https://github.com/nordnet/ui/commit/8af8b2b))
+- create scrollable card ([626ab7b](https://github.com/nordnet/ui/commit/626ab7b))
+- expose components of fadedscroll ([2f062a2](https://github.com/nordnet/ui/commit/2f062a2))
 
 # [1.66.0](https://github.com/nordnet/ui/compare/v1.65.0...v1.66.0) (2019-11-04)
 
-
 ### Bug Fixes
 
-* build ([6de79a4](https://github.com/nordnet/ui/commit/6de79a4))
-* remove fade in mobile if enablemobilefade prop is undefined ([562e2b9](https://github.com/nordnet/ui/commit/562e2b9))
-
+- build ([6de79a4](https://github.com/nordnet/ui/commit/6de79a4))
+- remove fade in mobile if enablemobilefade prop is undefined ([562e2b9](https://github.com/nordnet/ui/commit/562e2b9))
 
 ### Features
 
-* 🎸 add placeholder to Input.Number ([adf156f](https://github.com/nordnet/ui/commit/adf156f))
-* 🎸 only show placeholder when no steppers for Input.Number ([b81c4e9](https://github.com/nordnet/ui/commit/b81c4e9))
+- 🎸 add placeholder to Input.Number ([adf156f](https://github.com/nordnet/ui/commit/adf156f))
+- 🎸 only show placeholder when no steppers for Input.Number ([b81c4e9](https://github.com/nordnet/ui/commit/b81c4e9))
 
 # [1.65.0](https://github.com/nordnet/ui/compare/v1.64.0...v1.65.0) (2019-11-04)
 
-
 ### Bug Fixes
 
-* adjust  console log messages ([c340324](https://github.com/nordnet/ui/commit/c340324))
-* clean up ([f780777](https://github.com/nordnet/ui/commit/f780777))
-* dont show fade by default ([0e83ead](https://github.com/nordnet/ui/commit/0e83ead))
-* ie11 ([0e33faf](https://github.com/nordnet/ui/commit/0e33faf))
-* pr fixes ([fecd488](https://github.com/nordnet/ui/commit/fecd488))
-* simplify ([ea46197](https://github.com/nordnet/ui/commit/ea46197))
-* typos ([673e9e8](https://github.com/nordnet/ui/commit/673e9e8))
-* update docs and pr fixes ([418da12](https://github.com/nordnet/ui/commit/418da12))
-* update mdx of fadedscroll ([6d197d3](https://github.com/nordnet/ui/commit/6d197d3))
-* update types of useonscreen hook ([8c9de73](https://github.com/nordnet/ui/commit/8c9de73))
-
+- adjust console log messages ([c340324](https://github.com/nordnet/ui/commit/c340324))
+- clean up ([f780777](https://github.com/nordnet/ui/commit/f780777))
+- dont show fade by default ([0e83ead](https://github.com/nordnet/ui/commit/0e83ead))
+- ie11 ([0e33faf](https://github.com/nordnet/ui/commit/0e33faf))
+- pr fixes ([fecd488](https://github.com/nordnet/ui/commit/fecd488))
+- simplify ([ea46197](https://github.com/nordnet/ui/commit/ea46197))
+- typos ([673e9e8](https://github.com/nordnet/ui/commit/673e9e8))
+- update docs and pr fixes ([418da12](https://github.com/nordnet/ui/commit/418da12))
+- update mdx of fadedscroll ([6d197d3](https://github.com/nordnet/ui/commit/6d197d3))
+- update types of useonscreen hook ([8c9de73](https://github.com/nordnet/ui/commit/8c9de73))
 
 ### Features
 
-* add fadeheight prop ([3331fcb](https://github.com/nordnet/ui/commit/3331fcb))
-* create fadedscroll component ([deaf3bc](https://github.com/nordnet/ui/commit/deaf3bc))
-* create scrollable card ([201f28a](https://github.com/nordnet/ui/commit/201f28a))
-* expose components of fadedscroll ([f630ab8](https://github.com/nordnet/ui/commit/f630ab8))
+- add fadeheight prop ([3331fcb](https://github.com/nordnet/ui/commit/3331fcb))
+- create fadedscroll component ([deaf3bc](https://github.com/nordnet/ui/commit/deaf3bc))
+- create scrollable card ([201f28a](https://github.com/nordnet/ui/commit/201f28a))
+- expose components of fadedscroll ([f630ab8](https://github.com/nordnet/ui/commit/f630ab8))
 
 # [1.64.0](https://github.com/nordnet/ui/compare/v1.63.1...v1.64.0) (2019-11-04)
 
-
 ### Features
 
-* 🎸 updated plus and minus icons ([093bf8b](https://github.com/nordnet/ui/commit/093bf8b))
+- 🎸 updated plus and minus icons ([093bf8b](https://github.com/nordnet/ui/commit/093bf8b))
 
 ## [1.63.1](https://github.com/nordnet/ui/compare/v1.63.0...v1.63.1) (2019-10-25)
 
-
 ### Bug Fixes
 
-* 🐛 FeedbackBanner text no longer overflows in IE ([4a3f7d1](https://github.com/nordnet/ui/commit/4a3f7d1))
+- 🐛 FeedbackBanner text no longer overflows in IE ([4a3f7d1](https://github.com/nordnet/ui/commit/4a3f7d1))
 
 # [1.63.0](https://github.com/nordnet/ui/compare/v1.62.1...v1.63.0) (2019-10-23)
 
-
 ### Bug Fixes
 
-* 🐛 shareville chrome id bug ([d46a011](https://github.com/nordnet/ui/commit/d46a011))
-* contain tab contents ([8a02ad3](https://github.com/nordnet/ui/commit/8a02ad3))
-* remove overflow rule ([4e524c8](https://github.com/nordnet/ui/commit/4e524c8))
-
+- 🐛 shareville chrome id bug ([d46a011](https://github.com/nordnet/ui/commit/d46a011))
+- contain tab contents ([8a02ad3](https://github.com/nordnet/ui/commit/8a02ad3))
+- remove overflow rule ([4e524c8](https://github.com/nordnet/ui/commit/4e524c8))
 
 ### Features
 
-* add shareville logo ([a7d54d0](https://github.com/nordnet/ui/commit/a7d54d0))
+- add shareville logo ([a7d54d0](https://github.com/nordnet/ui/commit/a7d54d0))
 
 ## [1.62.1](https://github.com/nordnet/ui/compare/v1.62.0...v1.62.1) (2019-10-22)
 
-
 ### Bug Fixes
 
-* do not run onclick if item disabled ([8427875](https://github.com/nordnet/ui/commit/8427875))
+- do not run onclick if item disabled ([8427875](https://github.com/nordnet/ui/commit/8427875))
 
 # [1.62.0](https://github.com/nordnet/ui/compare/v1.61.3...v1.62.0) (2019-10-21)
 
-
 ### Bug Fixes
 
-* 🐛 makes footer a Box instead and onFocus visible ([587003a](https://github.com/nordnet/ui/commit/587003a))
-
+- 🐛 makes footer a Box instead and onFocus visible ([587003a](https://github.com/nordnet/ui/commit/587003a))
 
 ### Features
 
-* 🎸 adds new optional 'footer' prop to Modal ([5e0a614](https://github.com/nordnet/ui/commit/5e0a614))
+- 🎸 adds new optional 'footer' prop to Modal ([5e0a614](https://github.com/nordnet/ui/commit/5e0a614))
 
 ## [1.61.3](https://github.com/nordnet/ui/compare/v1.61.2...v1.61.3) (2019-10-18)
 
-
 ### Bug Fixes
 
-* size prop ([80c4cf8](https://github.com/nordnet/ui/commit/80c4cf8))
+- size prop ([80c4cf8](https://github.com/nordnet/ui/commit/80c4cf8))
 
 ## [1.61.2](https://github.com/nordnet/ui/compare/v1.61.1...v1.61.2) (2019-10-18)
 
-
 ### Bug Fixes
 
-* mdx module declaration ([940aef9](https://github.com/nordnet/ui/commit/940aef9))
+- mdx module declaration ([940aef9](https://github.com/nordnet/ui/commit/940aef9))
 
 ## [1.61.1](https://github.com/nordnet/ui/compare/v1.61.0...v1.61.1) (2019-10-17)
 
-
 ### Bug Fixes
 
-* color for order depth animation ([a8bb17f](https://github.com/nordnet/ui/commit/a8bb17f))
+- color for order depth animation ([a8bb17f](https://github.com/nordnet/ui/commit/a8bb17f))
 
 # [1.61.0](https://github.com/nordnet/ui/compare/v1.60.0...v1.61.0) (2019-10-17)
 
-
 ### Features
 
-* add minimize and maximize icons ([6b0d53e](https://github.com/nordnet/ui/commit/6b0d53e))
+- add minimize and maximize icons ([6b0d53e](https://github.com/nordnet/ui/commit/6b0d53e))
 
 # [1.60.0](https://github.com/nordnet/ui/compare/v1.59.0...v1.60.0) (2019-10-16)
 
-
 ### Bug Fixes
 
-* add color for streaming bolt icon ([271edac](https://github.com/nordnet/ui/commit/271edac))
-
+- add color for streaming bolt icon ([271edac](https://github.com/nordnet/ui/commit/271edac))
 
 ### Features
 
-* add shareville color ([e7cea1a](https://github.com/nordnet/ui/commit/e7cea1a))
+- add shareville color ([e7cea1a](https://github.com/nordnet/ui/commit/e7cea1a))
 
 # [1.59.0](https://github.com/nordnet/ui/compare/v1.58.1...v1.59.0) (2019-10-15)
 
-
 ### Features
 
-* add ellipsis to th and scope attribute ([2681c17](https://github.com/nordnet/ui/commit/2681c17))
+- add ellipsis to th and scope attribute ([2681c17](https://github.com/nordnet/ui/commit/2681c17))
 
 ## [1.58.1](https://github.com/nordnet/ui/compare/v1.58.0...v1.58.1) (2019-10-15)
 
-
 ### Bug Fixes
 
-* ie11 input.select ([84e4dc5](https://github.com/nordnet/ui/commit/84e4dc5))
+- ie11 input.select ([84e4dc5](https://github.com/nordnet/ui/commit/84e4dc5))
 
 # [1.58.0](https://github.com/nordnet/ui/compare/v1.57.0...v1.58.0) (2019-10-15)
 
-
 ### Bug Fixes
 
-* move addon to dev dependency ([2a52f73](https://github.com/nordnet/ui/commit/2a52f73))
-* types ([a316c8a](https://github.com/nordnet/ui/commit/a316c8a))
-
+- move addon to dev dependency ([2a52f73](https://github.com/nordnet/ui/commit/2a52f73))
+- types ([a316c8a](https://github.com/nordnet/ui/commit/a316c8a))
 
 ### Features
 
-* switched to storybooks csf ([75a8fa3](https://github.com/nordnet/ui/commit/75a8fa3))
+- switched to storybooks csf ([75a8fa3](https://github.com/nordnet/ui/commit/75a8fa3))
 
 # [1.57.0](https://github.com/nordnet/ui/compare/v1.56.0...v1.57.0) (2019-10-14)
 
-
 ### Bug Fixes
 
-* 🐛 another merge fix ([a4b9a83](https://github.com/nordnet/ui/commit/a4b9a83))
-* 🐛 fix merge fail ([433bd8d](https://github.com/nordnet/ui/commit/433bd8d))
-* 🐛 merge changelog ([327375f](https://github.com/nordnet/ui/commit/327375f))
-* add tracking to both link types ([c42c179](https://github.com/nordnet/ui/commit/c42c179))
-* ie11 select instablur ([2ac11fb](https://github.com/nordnet/ui/commit/2ac11fb))
-* types ([a804c87](https://github.com/nordnet/ui/commit/a804c87))
-
+- 🐛 another merge fix ([a4b9a83](https://github.com/nordnet/ui/commit/a4b9a83))
+- 🐛 fix merge fail ([433bd8d](https://github.com/nordnet/ui/commit/433bd8d))
+- 🐛 merge changelog ([327375f](https://github.com/nordnet/ui/commit/327375f))
+- add tracking to both link types ([c42c179](https://github.com/nordnet/ui/commit/c42c179))
+- ie11 select instablur ([2ac11fb](https://github.com/nordnet/ui/commit/2ac11fb))
+- types ([a804c87](https://github.com/nordnet/ui/commit/a804c87))
 
 ### Features
 
-* add tracking context ([7f117b2](https://github.com/nordnet/ui/commit/7f117b2))
-* add tracking to button and link ([af203fb](https://github.com/nordnet/ui/commit/af203fb))
+- add tracking context ([7f117b2](https://github.com/nordnet/ui/commit/7f117b2))
+- add tracking to button and link ([af203fb](https://github.com/nordnet/ui/commit/af203fb))
 
 # [1.56.0-beta.1](https://github.com/nordnet/ui/compare/v1.55.0...v1.56.0-beta.1@beta) (2019-10-14)
 

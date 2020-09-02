@@ -94,6 +94,7 @@ export const containerStyles = css<Props>`
 export const scrollerStyles = css<Props>`
   ${p => !p.maxHeight && `
     flex-grow: 1;
+    width: 100%; /*IE fix*/
   `}
 
   ${p => (p.enableMobileFade ? scrollStyles : scrollDesktopStyles)}
