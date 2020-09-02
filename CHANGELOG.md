@@ -1,3 +1,12 @@
+## [3.17.6](https://github.com/nordnet/ui/compare/v3.17.5...v3.17.6) (2020-09-02)
+
+
+### Bug Fixes
+
+* 🐛 resolve merge conflict with master ([f47d313](https://github.com/nordnet/ui/commit/f47d313))
+* move import ([9f9d43e](https://github.com/nordnet/ui/commit/9f9d43e))
+* render without faded scroll for ie10+ ([7896c9d](https://github.com/nordnet/ui/commit/7896c9d))
+
 ## [3.17.5](https://github.com/nordnet/ui/compare/v3.17.4...v3.17.5) (2020-09-02)
 
 
