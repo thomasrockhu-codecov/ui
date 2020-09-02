@@ -1,3 +1,10 @@
+## [3.17.5](https://github.com/nordnet/ui/compare/v3.17.4...v3.17.5) (2020-09-02)
+
+
+### Bug Fixes
+
+* crash on no expand items, export expand items component ([79cd9ae](https://github.com/nordnet/ui/commit/79cd9ae))
+
 ## [3.17.4](https://github.com/nordnet/ui/compare/v3.17.3...v3.17.4) (2020-09-01)
 
 
