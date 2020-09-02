@@ -10,6 +10,8 @@
 
 ### Bug Fixes
 
+* move import ([9f9d43e](https://github.com/nordnet/ui/commit/9f9d43e))
+* render without faded scroll for ie10+ ([7896c9d](https://github.com/nordnet/ui/commit/7896c9d))
 * 🐛 add babel plugin for optional-chaining ([1e80caf](https://github.com/nordnet/ui/commit/1e80caf))
 * 🐛 updragde babel instead of plugin for optional chaining ([c238d5b](https://github.com/nordnet/ui/commit/c238d5b))
 

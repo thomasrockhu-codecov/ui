@@ -1,6 +1,7 @@
 import * as React from 'react';
 import styled from 'styled-components';
 import { List as UIList, FadedScroll, DropdownBubble, Separator, Box } from '../../../../..';
+import { useMedia } from '../../../../../Atoms/Media';
 
 type ListProps = {
   listPosition?: string;
@@ -40,6 +41,7 @@ const StyledDropdownBubble = styled(DropdownBubble)`
   padding-bottom: 8px;
   display: flex;
   flex-direction: column;
+  -ms-overflow-y: scroll;
 `;
 
 const getTrianglePosition = (position: string | undefined) => {
@@ -62,6 +64,8 @@ export const List: React.FC<ListProps> = ({
   noFormField,
 }) => {
   const areOptionsProvided = React.Children.count(children) > 0;
+  // media query for IE10+
+  const isIE10Plus = useMedia('all and (-ms-high-contrast: none), (-ms-high-contrast: active)');
   return (
     <IE11Wrapper>
       <StyledDropdownBubble
@@ -69,9 +73,13 @@ export const List: React.FC<ListProps> = ({
         maxHeight={maxHeight || '240px'}
       >
         {searchComponent}
-        <FadedScrollWithoutPaddingBottom enableMobileFade fadeHeight={8}>
+        {isIE10Plus ? (
           <StyledList role="listbox">{children}</StyledList>
-        </FadedScrollWithoutPaddingBottom>
+        ) : (
+          <FadedScrollWithoutPaddingBottom enableMobileFade fadeHeight={8}>
+            <StyledList role="listbox">{children}</StyledList>
+          </FadedScrollWithoutPaddingBottom>
+        )}
         {actionsComponent !== null && (
           <>
             {areOptionsProvided && <Separator />}
