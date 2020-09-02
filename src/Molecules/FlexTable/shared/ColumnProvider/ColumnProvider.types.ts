@@ -29,6 +29,7 @@ export type FlexPropsType = Pick<
   | 'sm'
   | 'wrap'
   | 'hidden'
+  | 'xl'
 >;
 
 export type ColumnLayoutTypes = {

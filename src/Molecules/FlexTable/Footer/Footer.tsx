@@ -1,9 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
-import * as R from 'ramda';
 import { isElement, isFunction } from '../../../common/utils';
 import { Flexbox } from '../../..';
-import { useColumnLayout } from '../shared/ColumnProvider';
+import { useFlexCellProps } from '../shared/ColumnProvider';
 import { FooterComponent } from './Footer.types';
 import { TextWrapper } from './TextWrapper';
 import { useFlexTable } from '../shared/FlexTableProvider';
@@ -13,7 +12,9 @@ const StyledFlexbox = styled(Flexbox)`
   overflow: hidden;
 `;
 
-const Footer: FooterComponent = ({ children, className, columnId }) => {
+const Footer: FooterComponent = (props) => {
+  const { children, className, columnId } = props;
+
   const {
     fontSize: xsFontSize,
     sm: smTable,
@@ -21,11 +22,9 @@ const Footer: FooterComponent = ({ children, className, columnId }) => {
     lg: lgTable,
     xl: xlTable,
   } = useFlexTable();
-  const [columnLayout] = useColumnLayout(columnId);
 
-  if (!R.prop('flexProps', columnLayout)) {
-    return null;
-  }
+  const flexProps = useFlexCellProps(props);
+
   return (
     <RenderForSizes
       xs={{ fontSize: xsFontSize }}
@@ -34,7 +33,7 @@ const Footer: FooterComponent = ({ children, className, columnId }) => {
       lg={lgTable}
       xl={xlTable}
       Container={({ fontSize, children: component }) => (
-        <StyledFlexbox className={className} role="cell" {...columnLayout.flexProps}>
+        <StyledFlexbox className={className} role="cell" {...flexProps}>
           {isElement(component) && component}
           {isFunction(component)
             ? component({ fontSize, columnId })
