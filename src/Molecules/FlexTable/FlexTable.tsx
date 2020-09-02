@@ -10,7 +10,7 @@ import { FlexTableProvider, useFlexTable } from './shared/FlexTableProvider';
 import { ExpandCell } from './Cell/ExpandCell';
 import { Typography } from '../..';
 import { isElement } from '../../common/utils';
-import { ExpandItem } from './Row/components';
+import { ExpandItem, ExpandItems } from './Row/components';
 
 type HtmlDivProps = {} & React.HTMLAttributes<HTMLDivElement>;
 
@@ -88,5 +88,7 @@ FlexTable.ExpandItem = ExpandItem;
 FlexTable.Cell = Cell;
 FlexTable.CellInlineContainer = CellInlineContainer;
 FlexTable.CONSTANTS = constants;
+
+FlexTable.ExpandItems = ExpandItems;
 
 export default FlexTable;

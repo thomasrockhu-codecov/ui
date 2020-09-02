@@ -6,7 +6,10 @@ import { constants } from './shared';
 import { CellComponent, ExpandCellComponent } from './Cell/Cell.types';
 import { Props as FlexTableProviderProps } from './shared/FlexTableProvider/FlexTableProvider.types';
 import { CellInlineContainerComponent } from './shared/CellInlineContainer/CellInlineContainer.types';
-import { ExpandItemComponent } from './Row/components/ExpandItems/ExpandItems.types';
+import {
+  ExpandItemComponent,
+  ExpandItemsComponent,
+} from './Row/components/ExpandItems/ExpandItems.types';
 
 type HtmlProps = {} & React.HTMLAttributes<HTMLDivElement>;
 
@@ -22,14 +25,15 @@ export type Props = {
 export type FlexTableComponent = React.FC<Props>;
 
 export type FlexTableComponents = {
-  Header: HeaderComponent;
-  HeaderRow: HeaderRowComponent;
-  Footer: FooterComponent;
-  FooterRow: FooterRowComponent;
-  Row: RowComponent;
+  CONSTANTS: typeof constants;
   Cell: CellComponent;
+  CellInlineContainer: CellInlineContainerComponent;
   ExpandCell: ExpandCellComponent;
   ExpandItem: ExpandItemComponent;
-  CellInlineContainer: CellInlineContainerComponent;
-  CONSTANTS: typeof constants;
+  ExpandItems: ExpandItemsComponent;
+  Footer: FooterComponent;
+  FooterRow: FooterRowComponent;
+  Header: HeaderComponent;
+  HeaderRow: HeaderRowComponent;
+  Row: RowComponent;
 };
