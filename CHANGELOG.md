@@ -1,3 +1,10 @@
+## [3.17.3-beta.2](https://github.com/nordnet/ui/compare/v3.17.3-beta.1@beta...v3.17.3-beta.2@beta) (2020-09-02)
+
+
+### Bug Fixes
+
+* 🐛 resolve merge conflict with master ([f47d313](https://github.com/nordnet/ui/commit/f47d313))
+
 ## [3.17.4](https://github.com/nordnet/ui/compare/v3.17.3...v3.17.4) (2020-09-01)
 
 ### Bug Fixes
