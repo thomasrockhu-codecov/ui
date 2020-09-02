@@ -77327,6 +77327,548 @@ exports[`Storyshots Molecules | FlexTable Expandable Table With Different Scenar
 </div>
 `;
 
+exports[`Storyshots Molecules | FlexTable Flex Table With Different Rows 1`] = `
+.c6 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-left: -4px;
+  margin-right: -4px;
+}
+
+.c6 > * {
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+.c6 > *:not(:first-child) {
+  padding-top: 0;
+}
+
+.c9 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+
+.c1 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.3333333333333333;
+}
+
+.c13 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #6E6E69;
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c16 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c11 {
+  display: inline-block;
+  width: 100%;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.c12 {
+  width: inherit;
+}
+
+.c15 {
+  overflow: hidden;
+}
+
+.c7 {
+  background: #FFFFFF;
+  border-bottom: 1px solid #EBEBE8;
+  padding-right: 4px;
+  padding-left: 2px;
+  border-left: 2px solid transparent;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  margin-right: 0;
+  margin-left: 0;
+}
+
+.c7 > *:first-child {
+  padding-left: 0;
+}
+
+.c7 > *:last-child {
+  padding-right: 0;
+}
+
+.c14 {
+  background: #FFFFFF;
+  border-bottom: 1px solid #EBEBE8;
+  padding-right: 4px;
+  padding-left: 2px;
+  border-left: 2px solid transparent;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  margin-right: 0;
+  margin-left: 0;
+}
+
+.c14:hover {
+  background: #F5F5F5;
+}
+
+.c14 > *:first-child {
+  padding-left: 0;
+}
+
+.c14 > *:last-child {
+  padding-right: 0;
+}
+
+.c17 {
+  background: #FFFFFF;
+  padding-right: 4px;
+  padding-left: 2px;
+  border-left: 2px solid transparent;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  margin-right: 0;
+  margin-left: 0;
+}
+
+.c17:hover {
+  background: #F5F5F5;
+}
+
+.c17 > *:first-child {
+  padding-left: 0;
+}
+
+.c17 > *:last-child {
+  padding-right: 0;
+}
+
+.c18 {
+  background: #FFFFFF;
+  padding-right: 4px;
+  padding-left: 2px;
+  border-left: 2px solid transparent;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  margin-right: 0;
+  margin-left: 0;
+}
+
+.c18 > *:first-child {
+  padding-left: 0;
+}
+
+.c18 > *:last-child {
+  padding-right: 0;
+}
+
+.c19 {
+  background: #FFFFFF;
+  border-bottom: 1px solid #00C8F5;
+  padding-right: 4px;
+  padding-left: 2px;
+  border-left: 2px solid transparent;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  margin-right: 0;
+  margin-left: 0;
+}
+
+.c19:hover {
+  background: #F5F5F5;
+}
+
+.c19 > *:first-child {
+  padding-left: 0;
+}
+
+.c19 > *:last-child {
+  padding-right: 0;
+}
+
+.c8 {
+  z-index: 1;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  border-bottom: 1px solid #282823;
+}
+
+.c10 {
+  overflow: hidden;
+}
+
+.c2 {
+  position: relative;
+}
+
+.c4 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.c5 {
+  padding-left: 4px;
+}
+
+.c0 {
+  background-color: #F5F5F5;
+}
+
+.c0:not(:last-of-type) {
+  margin-bottom: 40px;
+}
+
+.c3:not(:last-of-type) {
+  margin-bottom: 40px;
+}
+
+@media (min-width:760px) {
+  .c1 {
+    font-size: 20px;
+    line-height: 1.2;
+  }
+}
+
+<div
+  className="c0"
+>
+  <span
+    className="c1"
+  >
+    FlexTable With Different Rows
+  </span>
+  <div
+    className="c2 c3"
+    role="table"
+  >
+    <caption
+      className="c4"
+    >
+      <span
+        className="c1 c5"
+      />
+    </caption>
+    <div
+      className="c6 c7 c8"
+      role="row"
+    >
+      <div
+        className="c9 c10"
+        role="columnheader"
+      >
+        <div
+          className="c11 c12"
+        >
+          <span
+            className="c13"
+          >
+            Header 1
+          </span>
+        </div>
+      </div>
+      <div
+        className="c9 c10"
+        role="columnheader"
+      >
+        <div
+          className="c11 c12"
+        >
+          <span
+            className="c13"
+          >
+            Header 2
+          </span>
+        </div>
+      </div>
+      <div
+        className="c9 c10"
+        role="columnheader"
+      >
+        <div
+          className="c11 c12"
+        >
+          <span
+            className="c13"
+          >
+            Header 3
+          </span>
+        </div>
+      </div>
+    </div>
+    <div
+      className="c6 c14"
+      role="row"
+    >
+      <div
+        className="c9 c15"
+        role="cell"
+      >
+        <div
+          className="c11 c12"
+        >
+          <span
+            className="c16"
+          >
+            Default
+          </span>
+        </div>
+      </div>
+      <div
+        className="c9 c15"
+        role="cell"
+      >
+        <div
+          className="c11 c12"
+        >
+          <span
+            className="c16"
+          >
+            Default
+          </span>
+        </div>
+      </div>
+      <div
+        className="c9 c15"
+        role="cell"
+      >
+        <div
+          className="c11 c12"
+        >
+          <span
+            className="c16"
+          >
+            Default
+          </span>
+        </div>
+      </div>
+    </div>
+    <div
+      className="c6 c7"
+      role="row"
+    >
+      <div
+        className="c9 c15"
+        role="cell"
+      >
+        <div
+          className="c11 c12"
+        >
+          <span
+            className="c16"
+          >
+            No highlight
+          </span>
+        </div>
+      </div>
+      <div
+        className="c9 c15"
+        role="cell"
+      >
+        <div
+          className="c11 c12"
+        >
+          <span
+            className="c16"
+          >
+            No highlight
+          </span>
+        </div>
+      </div>
+      <div
+        className="c9 c15"
+        role="cell"
+      >
+        <div
+          className="c11 c12"
+        >
+          <span
+            className="c16"
+          >
+            No highlight
+          </span>
+        </div>
+      </div>
+    </div>
+    <div
+      className="c6 c17"
+      role="row"
+    >
+      <div
+        className="c9 c15"
+        role="cell"
+      >
+        <div
+          className="c11 c12"
+        >
+          <span
+            className="c16"
+          >
+            Separator hidden
+          </span>
+        </div>
+      </div>
+      <div
+        className="c9 c15"
+        role="cell"
+      >
+        <div
+          className="c11 c12"
+        >
+          <span
+            className="c16"
+          >
+            Separator hidden
+          </span>
+        </div>
+      </div>
+      <div
+        className="c9 c15"
+        role="cell"
+      >
+        <div
+          className="c11 c12"
+        >
+          <span
+            className="c16"
+          >
+            Separator hidden
+          </span>
+        </div>
+      </div>
+    </div>
+    <div
+      className="c6 c18"
+      role="row"
+    >
+      <div
+        className="c9 c15"
+        role="cell"
+      >
+        <div
+          className="c11 c12"
+        >
+          <span
+            className="c16"
+          >
+            No highlight and separator hidden
+          </span>
+        </div>
+      </div>
+      <div
+        className="c9 c15"
+        role="cell"
+      >
+        <div
+          className="c11 c12"
+        >
+          <span
+            className="c16"
+          >
+            No highlight and separator hidden
+          </span>
+        </div>
+      </div>
+      <div
+        className="c9 c15"
+        role="cell"
+      >
+        <div
+          className="c11 c12"
+        >
+          <span
+            className="c16"
+          >
+            No highlight and separator hidden
+          </span>
+        </div>
+      </div>
+    </div>
+    <div
+      className="c6 c19"
+      role="row"
+    >
+      <div
+        className="c9 c15"
+        role="cell"
+      >
+        <div
+          className="c11 c12"
+        >
+          <span
+            className="c16"
+          >
+            Separator color set
+          </span>
+        </div>
+      </div>
+      <div
+        className="c9 c15"
+        role="cell"
+      >
+        <div
+          className="c11 c12"
+        >
+          <span
+            className="c16"
+          >
+            Separator color set
+          </span>
+        </div>
+      </div>
+      <div
+        className="c9 c15"
+        role="cell"
+      >
+        <div
+          className="c11 c12"
+        >
+          <span
+            className="c16"
+          >
+            Separator color set
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
 exports[`Storyshots Molecules | FlexTable Multiple Big Tables With Sticky Headers 1`] = `
 .c6 {
   box-sizing: border-box;

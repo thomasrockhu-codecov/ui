@@ -1,0 +1,2127 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Molecules | FlexTable / FlexTable with different columns Column Width Sortable Table 1`] = `
+.c27 {
+  height: 20px;
+  box-sizing: border-box;
+  display: block;
+  width: 26.666666666666668px;
+  overflow: hidden;
+}
+
+.c6 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-left: -4px;
+  margin-right: -4px;
+}
+
+.c6 > * {
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+.c6 > *:not(:first-child) {
+  padding-top: 0;
+}
+
+.c9 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+
+.c12 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.c14 {
+  box-sizing: border-box;
+}
+
+.c21 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -webkit-flex: 0 15%;
+  -ms-flex: 0 15%;
+  flex: 0 15%;
+}
+
+.c22 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -webkit-flex: 0 100px;
+  -ms-flex: 0 100px;
+  flex: 0 100px;
+}
+
+.c26 {
+  box-sizing: border-box;
+}
+
+.c19 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 8px;
+  height: 8px;
+  fill: #6E6E69;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.c1 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.3333333333333333;
+}
+
+.c18 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #6E6E69;
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c25 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c16 {
+  display: inline-block;
+  width: 100%;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.c15 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  min-width: 0;
+}
+
+.c17 {
+  width: inherit;
+}
+
+.c24 {
+  overflow: hidden;
+}
+
+.c7 {
+  background: #FFFFFF;
+  border-bottom: 1px solid #EBEBE8;
+  padding-right: 4px;
+  padding-left: 2px;
+  border-left: 2px solid transparent;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  margin-right: 0;
+  margin-left: 0;
+}
+
+.c7 > *:first-child {
+  padding-left: 0;
+}
+
+.c7 > *:last-child {
+  padding-right: 0;
+}
+
+.c23 {
+  background: #FFFFFF;
+  border-bottom: 1px solid #EBEBE8;
+  padding-right: 4px;
+  padding-left: 2px;
+  border-left: 2px solid transparent;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  margin-right: 0;
+  margin-left: 0;
+}
+
+.c23:hover {
+  background: #F5F5F5;
+}
+
+.c23 > *:first-child {
+  padding-left: 0;
+}
+
+.c23 > *:last-child {
+  padding-right: 0;
+}
+
+.c8 {
+  z-index: 1;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  border-bottom: 1px solid #282823;
+}
+
+.c20 {
+  margin-left: 4px;
+}
+
+.c11 {
+  -webkit-box-pack: inherit;
+  -webkit-justify-content: inherit;
+  -ms-flex-pack: inherit;
+  justify-content: inherit;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  color: inherit;
+  width: 100%;
+}
+
+.c13 {
+  -webkit-box-pack: inherit;
+  -webkit-justify-content: inherit;
+  -ms-flex-pack: inherit;
+  justify-content: inherit;
+}
+
+.c10 {
+  overflow: hidden;
+}
+
+.c2 {
+  position: relative;
+}
+
+.c4 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.c5 {
+  padding-left: 4px;
+}
+
+.c0 {
+  background-color: #F5F5F5;
+}
+
+.c0:not(:last-of-type) {
+  margin-bottom: 40px;
+}
+
+.c3:not(:last-of-type) {
+  margin-bottom: 40px;
+}
+
+@media (min-width:760px) {
+  .c1 {
+    font-size: 20px;
+    line-height: 1.2;
+  }
+}
+
+<div
+  className="c0"
+>
+  <span
+    className="c1"
+  >
+    Sortable Table With Column Width Set
+  </span>
+  <div
+    className="c2 c3"
+    role="table"
+  >
+    <caption
+      className="c4"
+    >
+      <span
+        className="c1 c5"
+      />
+    </caption>
+    <div
+      className="c6 c7 c8"
+      role="row"
+    >
+      <div
+        aria-sort="none"
+        className="c9 c10"
+        role="columnheader"
+      >
+        <a
+          className="c11"
+          href="#"
+          onClick={[Function]}
+          onKeyDown={[Function]}
+          role="button"
+        >
+          <div
+            className="c12 c13"
+          >
+            <div
+              className="c14 c15"
+            >
+              <div
+                className="c16 c17"
+              >
+                <span
+                  className="c18"
+                >
+                  Flex 1
+                </span>
+              </div>
+            </div>
+            <div
+              className="c14"
+            >
+              <svg
+                aria-hidden="true"
+                className="c19 c20"
+                focusable="false"
+                preserveAspectRatio="xMidYMid meet"
+                role="presentation"
+                viewBox="0 0 24 24"
+              >
+                <polygon
+                  points="19.969 4 24 8.027 12 20 0 8.027 4.031 4 12 11.952"
+                />
+              </svg>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div
+        aria-sort="none"
+        className="c21 c10"
+        role="columnheader"
+      >
+        <a
+          className="c11"
+          href="#"
+          onClick={[Function]}
+          onKeyDown={[Function]}
+          role="button"
+        >
+          <div
+            className="c12 c13"
+          >
+            <div
+              className="c14 c15"
+            >
+              <div
+                className="c16 c17"
+              >
+                <span
+                  className="c18"
+                >
+                  Fifteen percent
+                </span>
+              </div>
+            </div>
+            <div
+              className="c14"
+            >
+              <svg
+                aria-hidden="true"
+                className="c19 c20"
+                focusable="false"
+                preserveAspectRatio="xMidYMid meet"
+                role="presentation"
+                viewBox="0 0 24 24"
+              >
+                <polygon
+                  points="19.969 4 24 8.027 12 20 0 8.027 4.031 4 12 11.952"
+                />
+              </svg>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div
+        aria-sort="none"
+        className="c22 c10"
+        role="columnheader"
+      >
+        <a
+          className="c11"
+          href="#"
+          onClick={[Function]}
+          onKeyDown={[Function]}
+          role="button"
+        >
+          <div
+            className="c12 c13"
+          >
+            <div
+              className="c14 c15"
+            >
+              <div
+                className="c16 c17"
+              >
+                <span
+                  className="c18"
+                >
+                  Loooooooooooooong header set width
+                </span>
+              </div>
+            </div>
+            <div
+              className="c14"
+            >
+              <svg
+                aria-hidden="true"
+                className="c19 c20"
+                focusable="false"
+                preserveAspectRatio="xMidYMid meet"
+                role="presentation"
+                viewBox="0 0 24 24"
+              >
+                <polygon
+                  points="19.969 4 24 8.027 12 20 0 8.027 4.031 4 12 11.952"
+                />
+              </svg>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div
+        aria-sort="none"
+        className="c9 c10"
+        role="columnheader"
+      >
+        <a
+          className="c11"
+          href="#"
+          onClick={[Function]}
+          onKeyDown={[Function]}
+          role="button"
+        >
+          <div
+            className="c12 c13"
+          >
+            <div
+              className="c14 c15"
+            >
+              <div
+                className="c16 c17"
+              >
+                <span
+                  className="c18"
+                >
+                  Default
+                </span>
+              </div>
+            </div>
+            <div
+              className="c14"
+            >
+              <svg
+                aria-hidden="true"
+                className="c19 c20"
+                focusable="false"
+                preserveAspectRatio="xMidYMid meet"
+                role="presentation"
+                viewBox="0 0 24 24"
+              >
+                <polygon
+                  points="19.969 4 24 8.027 12 20 0 8.027 4.031 4 12 11.952"
+                />
+              </svg>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+    <div
+      className="c6 c23"
+      role="row"
+    >
+      <div
+        className="c9 c24"
+        role="cell"
+      >
+        <div
+          className="c16 c17"
+        >
+          <span
+            className="c25"
+          >
+            Cell 1-1
+          </span>
+        </div>
+      </div>
+      <div
+        className="c21 c24"
+        role="cell"
+      >
+        <div
+          className="c16 c17"
+        >
+          <span
+            className="c25"
+          >
+            Very long cell content that should be truncated or ellipsized depepending on your language preferences
+          </span>
+        </div>
+      </div>
+      <div
+        className="c22 c24"
+        role="cell"
+      >
+        <div
+          className="c16 c17"
+        >
+          <span
+            className="c25"
+          >
+            Cell 1-3
+          </span>
+        </div>
+      </div>
+      <div
+        className="c9 c24"
+        role="cell"
+      >
+        <div
+          className="c16 c17"
+        >
+          <span
+            className="c25"
+          >
+            Cell 1-4
+          </span>
+        </div>
+      </div>
+    </div>
+    <div
+      className="c6 c23"
+      role="row"
+    >
+      <div
+        className="c9 c24"
+        role="cell"
+      >
+        <div
+          className="c16 c17"
+        >
+          <span
+            className="c25"
+          >
+            Cell 2-1
+          </span>
+        </div>
+      </div>
+      <div
+        className="c21 c24"
+        role="cell"
+      >
+        <div
+          className="c16 c17"
+        >
+          <span
+            className="c25"
+          >
+            Cell 2-2
+          </span>
+        </div>
+      </div>
+      <div
+        className="c22 c24"
+        role="cell"
+      >
+        <div
+          className="c26 c15"
+        >
+          <div
+            className="c16 c17"
+          >
+            <span
+              className="c25"
+            >
+              Long cell with flag
+            </span>
+          </div>
+          <svg
+            className="c27"
+            focusable="false"
+            role="img"
+            viewBox="0 0 640 480"
+          >
+            <g
+              transform="translate(50.082) scale(.9375)"
+            >
+              <g
+                fillRule="evenodd"
+                strokeWidth="1pt"
+              >
+                <path
+                  d="M-121.103.302h256V205.1h-256zM-121.103 307.178h256v204.8h-256z"
+                  fill="#006aa7"
+                />
+                <path
+                  d="M-121.103 204.984h256v102.4h-256z"
+                  fill="#fecc00"
+                />
+                <path
+                  d="M133.843.01h102.4v511.997h-102.4z"
+                  fill="#fecc00"
+                />
+                <path
+                  d="M232.995 205.013h460.798v102.4H232.995z"
+                  fill="#fecc00"
+                />
+                <path
+                  d="M236.155 307.208h460.797v204.799H236.155zM236.155.302h460.797V205.1H236.155z"
+                  fill="#006aa7"
+                />
+              </g>
+            </g>
+            <title>
+              Sweden
+            </title>
+          </svg>
+        </div>
+      </div>
+      <div
+        className="c9 c24"
+        role="cell"
+      >
+        <div
+          className="c16 c17"
+        >
+          <span
+            className="c25"
+          >
+            Cell 2-4
+          </span>
+        </div>
+      </div>
+    </div>
+    <div
+      className="c6 c23"
+      role="row"
+    >
+      <div
+        className="c9 c24"
+        role="cell"
+      >
+        <div
+          className="c16 c17"
+        >
+          <span
+            className="c25"
+          >
+            Cell 3-1
+          </span>
+        </div>
+      </div>
+      <div
+        className="c21 c24"
+        role="cell"
+      >
+        <div
+          className="c16 c17"
+        >
+          <span
+            className="c25"
+          >
+            Cell 3-2
+          </span>
+        </div>
+      </div>
+      <div
+        className="c22 c24"
+        role="cell"
+      >
+        <div
+          className="c16 c17"
+        >
+          <span
+            className="c25"
+          >
+            Cell 3-3
+          </span>
+        </div>
+      </div>
+      <div
+        className="c9 c24"
+        role="cell"
+      >
+        <div
+          className="c16 c17"
+        >
+          <span
+            className="c25"
+          >
+            Cell 3-4
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Molecules | FlexTable / FlexTable with different columns Column Width Table With Custom Flag Cell 1`] = `
+.c21 {
+  height: 20px;
+  box-sizing: border-box;
+  display: block;
+  width: 26.666666666666668px;
+  overflow: hidden;
+}
+
+.c6 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-left: -4px;
+  margin-right: -4px;
+}
+
+.c6 > * {
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+.c6 > *:not(:first-child) {
+  padding-top: 0;
+}
+
+.c9 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+
+.c14 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -webkit-flex: 0 15%;
+  -ms-flex: 0 15%;
+  flex: 0 15%;
+}
+
+.c15 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -webkit-flex: 0 100px;
+  -ms-flex: 0 100px;
+  flex: 0 100px;
+}
+
+.c19 {
+  box-sizing: border-box;
+}
+
+.c1 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.3333333333333333;
+}
+
+.c13 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #6E6E69;
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c18 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c11 {
+  display: inline-block;
+  width: 100%;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.c20 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  min-width: 0;
+}
+
+.c12 {
+  width: inherit;
+}
+
+.c17 {
+  overflow: hidden;
+}
+
+.c7 {
+  background: #FFFFFF;
+  border-bottom: 1px solid #EBEBE8;
+  padding-right: 4px;
+  padding-left: 2px;
+  border-left: 2px solid transparent;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  margin-right: 0;
+  margin-left: 0;
+}
+
+.c7 > *:first-child {
+  padding-left: 0;
+}
+
+.c7 > *:last-child {
+  padding-right: 0;
+}
+
+.c16 {
+  background: #FFFFFF;
+  border-bottom: 1px solid #EBEBE8;
+  padding-right: 4px;
+  padding-left: 2px;
+  border-left: 2px solid transparent;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  margin-right: 0;
+  margin-left: 0;
+}
+
+.c16:hover {
+  background: #F5F5F5;
+}
+
+.c16 > *:first-child {
+  padding-left: 0;
+}
+
+.c16 > *:last-child {
+  padding-right: 0;
+}
+
+.c8 {
+  z-index: 1;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  border-bottom: 1px solid #282823;
+}
+
+.c10 {
+  overflow: hidden;
+}
+
+.c2 {
+  position: relative;
+}
+
+.c4 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.c5 {
+  padding-left: 4px;
+}
+
+.c0 {
+  background-color: #F5F5F5;
+}
+
+.c0:not(:last-of-type) {
+  margin-bottom: 40px;
+}
+
+.c3:not(:last-of-type) {
+  margin-bottom: 40px;
+}
+
+@media (min-width:760px) {
+  .c1 {
+    font-size: 20px;
+    line-height: 1.2;
+  }
+}
+
+<div
+  className="c0"
+>
+  <span
+    className="c1"
+  >
+    Table With Different Widths and Custom Flag Cell
+  </span>
+  <div
+    className="c2 c3"
+    role="table"
+  >
+    <caption
+      className="c4"
+    >
+      <span
+        className="c1 c5"
+      />
+    </caption>
+    <div
+      className="c6 c7 c8"
+      role="row"
+    >
+      <div
+        className="c9 c10"
+        role="columnheader"
+      >
+        <div
+          className="c11 c12"
+        >
+          <span
+            className="c13"
+          >
+            Flex 1
+          </span>
+        </div>
+      </div>
+      <div
+        className="c14 c10"
+        role="columnheader"
+      >
+        <div
+          className="c11 c12"
+        >
+          <span
+            className="c13"
+          >
+            Fifteen percent
+          </span>
+        </div>
+      </div>
+      <div
+        className="c15 c10"
+        role="columnheader"
+      >
+        <div
+          className="c11 c12"
+        >
+          <span
+            className="c13"
+          >
+            Loooooooooooooong header set width
+          </span>
+        </div>
+      </div>
+      <div
+        className="c9 c10"
+        role="columnheader"
+      >
+        <div
+          className="c11 c12"
+        >
+          <span
+            className="c13"
+          >
+            Default
+          </span>
+        </div>
+      </div>
+    </div>
+    <div
+      className="c6 c16"
+      role="row"
+    >
+      <div
+        className="c9 c17"
+        role="cell"
+      >
+        <div
+          className="c11 c12"
+        >
+          <span
+            className="c18"
+          >
+            Cell 1-1
+          </span>
+        </div>
+      </div>
+      <div
+        className="c14 c17"
+        role="cell"
+      >
+        <div
+          className="c11 c12"
+        >
+          <span
+            className="c18"
+          >
+            Very long cell content that should be truncated or ellipsized depepending on your language preferences
+          </span>
+        </div>
+      </div>
+      <div
+        className="c15 c17"
+        role="cell"
+      >
+        <div
+          className="c11 c12"
+        >
+          <span
+            className="c18"
+          >
+            Cell 1-3
+          </span>
+        </div>
+      </div>
+      <div
+        className="c9 c17"
+        role="cell"
+      >
+        <div
+          className="c11 c12"
+        >
+          <span
+            className="c18"
+          >
+            Cell 1-4
+          </span>
+        </div>
+      </div>
+    </div>
+    <div
+      className="c6 c16"
+      role="row"
+    >
+      <div
+        className="c9 c17"
+        role="cell"
+      >
+        <div
+          className="c11 c12"
+        >
+          <span
+            className="c18"
+          >
+            Cell 2-1
+          </span>
+        </div>
+      </div>
+      <div
+        className="c14 c17"
+        role="cell"
+      >
+        <div
+          className="c11 c12"
+        >
+          <span
+            className="c18"
+          >
+            Cell 2-2
+          </span>
+        </div>
+      </div>
+      <div
+        className="c15 c17"
+        role="cell"
+      >
+        <div
+          className="c19 c20"
+        >
+          <div
+            className="c11 c12"
+          >
+            <span
+              className="c18"
+            >
+              Long cell with flag
+            </span>
+          </div>
+          <svg
+            className="c21"
+            focusable="false"
+            role="img"
+            viewBox="0 0 640 480"
+          >
+            <g
+              transform="translate(50.082) scale(.9375)"
+            >
+              <g
+                fillRule="evenodd"
+                strokeWidth="1pt"
+              >
+                <path
+                  d="M-121.103.302h256V205.1h-256zM-121.103 307.178h256v204.8h-256z"
+                  fill="#006aa7"
+                />
+                <path
+                  d="M-121.103 204.984h256v102.4h-256z"
+                  fill="#fecc00"
+                />
+                <path
+                  d="M133.843.01h102.4v511.997h-102.4z"
+                  fill="#fecc00"
+                />
+                <path
+                  d="M232.995 205.013h460.798v102.4H232.995z"
+                  fill="#fecc00"
+                />
+                <path
+                  d="M236.155 307.208h460.797v204.799H236.155zM236.155.302h460.797V205.1H236.155z"
+                  fill="#006aa7"
+                />
+              </g>
+            </g>
+            <title>
+              Sweden
+            </title>
+          </svg>
+        </div>
+      </div>
+      <div
+        className="c9 c17"
+        role="cell"
+      >
+        <div
+          className="c11 c12"
+        >
+          <span
+            className="c18"
+          >
+            Cell 2-4
+          </span>
+        </div>
+      </div>
+    </div>
+    <div
+      className="c6 c16"
+      role="row"
+    >
+      <div
+        className="c9 c17"
+        role="cell"
+      >
+        <div
+          className="c11 c12"
+        >
+          <span
+            className="c18"
+          >
+            Cell 3-1
+          </span>
+        </div>
+      </div>
+      <div
+        className="c14 c17"
+        role="cell"
+      >
+        <div
+          className="c11 c12"
+        >
+          <span
+            className="c18"
+          >
+            Cell 3-2
+          </span>
+        </div>
+      </div>
+      <div
+        className="c15 c17"
+        role="cell"
+      >
+        <div
+          className="c11 c12"
+        >
+          <span
+            className="c18"
+          >
+            Cell 3-3
+          </span>
+        </div>
+      </div>
+      <div
+        className="c9 c17"
+        role="cell"
+      >
+        <div
+          className="c11 c12"
+        >
+          <span
+            className="c18"
+          >
+            Cell 3-4
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Molecules | FlexTable / FlexTable with different columns Different Alignments Table 1`] = `
+.c6 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-left: -4px;
+  margin-right: -4px;
+}
+
+.c6 > * {
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+.c6 > *:not(:first-child) {
+  padding-top: 0;
+}
+
+.c9 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+
+.c14 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+
+.c15 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+
+.c1 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.3333333333333333;
+}
+
+.c13 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #6E6E69;
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c18 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c11 {
+  display: inline-block;
+  width: 100%;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.c12 {
+  width: inherit;
+}
+
+.c17 {
+  overflow: hidden;
+}
+
+.c7 {
+  background: #FFFFFF;
+  border-bottom: 1px solid #EBEBE8;
+  padding-right: 4px;
+  padding-left: 2px;
+  border-left: 2px solid transparent;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  margin-right: 0;
+  margin-left: 0;
+}
+
+.c7 > *:first-child {
+  padding-left: 0;
+}
+
+.c7 > *:last-child {
+  padding-right: 0;
+}
+
+.c16 {
+  background: #FFFFFF;
+  border-bottom: 1px solid #EBEBE8;
+  padding-right: 4px;
+  padding-left: 2px;
+  border-left: 2px solid transparent;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  margin-right: 0;
+  margin-left: 0;
+}
+
+.c16:hover {
+  background: #F5F5F5;
+}
+
+.c16 > *:first-child {
+  padding-left: 0;
+}
+
+.c16 > *:last-child {
+  padding-right: 0;
+}
+
+.c8 {
+  z-index: 1;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  border-bottom: 1px solid #282823;
+}
+
+.c10 {
+  overflow: hidden;
+}
+
+.c2 {
+  position: relative;
+}
+
+.c4 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.c5 {
+  padding-left: 4px;
+}
+
+.c0 {
+  background-color: #F5F5F5;
+}
+
+.c0:not(:last-of-type) {
+  margin-bottom: 40px;
+}
+
+.c3:not(:last-of-type) {
+  margin-bottom: 40px;
+}
+
+@media (min-width:760px) {
+  .c1 {
+    font-size: 20px;
+    line-height: 1.2;
+  }
+}
+
+<div
+  className="c0"
+>
+  <span
+    className="c1"
+  >
+    Table With Different Alignments
+  </span>
+  <div
+    className="c2 c3"
+    role="table"
+  >
+    <caption
+      className="c4"
+    >
+      <span
+        className="c1 c5"
+      />
+    </caption>
+    <div
+      className="c6 c7 c8"
+      role="row"
+    >
+      <div
+        className="c9 c10"
+        role="columnheader"
+      >
+        <div
+          className="c11 c12"
+        >
+          <span
+            className="c13"
+          >
+            Left
+          </span>
+        </div>
+      </div>
+      <div
+        className="c14 c10"
+        role="columnheader"
+      >
+        <div
+          className="c11 c12"
+        >
+          <span
+            className="c13"
+          >
+            Right
+          </span>
+        </div>
+      </div>
+      <div
+        className="c14 c10"
+        role="columnheader"
+      >
+        <div
+          className="c11 c12"
+        >
+          <span
+            className="c13"
+          >
+            Right
+          </span>
+        </div>
+      </div>
+      <div
+        className="c15 c10"
+        role="columnheader"
+      >
+        <div
+          className="c11 c12"
+        >
+          <span
+            className="c13"
+          >
+            Center
+          </span>
+        </div>
+      </div>
+    </div>
+    <div
+      className="c6 c16"
+      role="row"
+    >
+      <div
+        className="c9 c17"
+        role="cell"
+      >
+        <div
+          className="c11 c12"
+        >
+          <span
+            className="c18"
+          >
+            Cell 1-1
+          </span>
+        </div>
+      </div>
+      <div
+        className="c14 c17"
+        role="cell"
+      >
+        <div
+          className="c11 c12"
+        >
+          <span
+            className="c18"
+          >
+            Cell 1-2
+          </span>
+        </div>
+      </div>
+      <div
+        className="c14 c17"
+        role="cell"
+      >
+        <div
+          className="c11 c12"
+        >
+          <span
+            className="c18"
+          >
+            Cell 1-3
+          </span>
+        </div>
+      </div>
+      <div
+        className="c15 c17"
+        role="cell"
+      >
+        <div
+          className="c11 c12"
+        >
+          <span
+            className="c18"
+          >
+            Cell 1-4
+          </span>
+        </div>
+      </div>
+    </div>
+    <div
+      className="c6 c16"
+      role="row"
+    >
+      <div
+        className="c9 c17"
+        role="cell"
+      >
+        <div
+          className="c11 c12"
+        >
+          <span
+            className="c18"
+          >
+            Cell 2-1
+          </span>
+        </div>
+      </div>
+      <div
+        className="c14 c17"
+        role="cell"
+      >
+        <div
+          className="c11 c12"
+        >
+          <span
+            className="c18"
+          >
+            Cell 2-2
+          </span>
+        </div>
+      </div>
+      <div
+        className="c14 c17"
+        role="cell"
+      >
+        <div
+          className="c11 c12"
+        >
+          <span
+            className="c18"
+          >
+            Cell 2-3
+          </span>
+        </div>
+      </div>
+      <div
+        className="c15 c17"
+        role="cell"
+      >
+        <div
+          className="c11 c12"
+        >
+          <span
+            className="c18"
+          >
+            Cell 2-4
+          </span>
+        </div>
+      </div>
+    </div>
+    <div
+      className="c6 c16"
+      role="row"
+    >
+      <div
+        className="c9 c17"
+        role="cell"
+      >
+        <div
+          className="c11 c12"
+        >
+          <span
+            className="c18"
+          >
+            Cell 3-1
+          </span>
+        </div>
+      </div>
+      <div
+        className="c14 c17"
+        role="cell"
+      >
+        <div
+          className="c11 c12"
+        >
+          <span
+            className="c18"
+          >
+            Cell 3-2
+          </span>
+        </div>
+      </div>
+      <div
+        className="c14 c17"
+        role="cell"
+      >
+        <div
+          className="c11 c12"
+        >
+          <span
+            className="c18"
+          >
+            Cell 3-3
+          </span>
+        </div>
+      </div>
+      <div
+        className="c15 c17"
+        role="cell"
+      >
+        <div
+          className="c11 c12"
+        >
+          <span
+            className="c18"
+          >
+            Cell 3-4
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Molecules | FlexTable / FlexTable with different columns Media Columns 1`] = `
+.c6 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-left: -4px;
+  margin-right: -4px;
+}
+
+.c6 > * {
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+.c6 > *:not(:first-child) {
+  padding-top: 0;
+}
+
+.c9 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+
+.c14 {
+  box-sizing: border-box;
+  display: none;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  display: none;
+}
+
+.c1 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.3333333333333333;
+}
+
+.c13 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #6E6E69;
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c17 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c11 {
+  display: inline-block;
+  width: 100%;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.c12 {
+  width: inherit;
+}
+
+.c16 {
+  overflow: hidden;
+}
+
+.c7 {
+  background: #FFFFFF;
+  border-bottom: 1px solid #EBEBE8;
+  padding-right: 4px;
+  padding-left: 2px;
+  border-left: 2px solid transparent;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  margin-right: 0;
+  margin-left: 0;
+}
+
+.c7 > *:first-child {
+  padding-left: 0;
+}
+
+.c7 > *:last-child {
+  padding-right: 0;
+}
+
+.c15 {
+  background: #FFFFFF;
+  border-bottom: 1px solid #EBEBE8;
+  padding-right: 4px;
+  padding-left: 2px;
+  border-left: 2px solid transparent;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  margin-right: 0;
+  margin-left: 0;
+}
+
+.c15:hover {
+  background: #F5F5F5;
+}
+
+.c15 > *:first-child {
+  padding-left: 0;
+}
+
+.c15 > *:last-child {
+  padding-right: 0;
+}
+
+.c8 {
+  z-index: 1;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  border-bottom: 1px solid #282823;
+}
+
+.c10 {
+  overflow: hidden;
+}
+
+.c2 {
+  position: relative;
+}
+
+.c4 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.c5 {
+  padding-left: 4px;
+}
+
+.c0 {
+  background-color: #F5F5F5;
+}
+
+.c0:not(:last-of-type) {
+  margin-bottom: 40px;
+}
+
+.c3:not(:last-of-type) {
+  margin-bottom: 40px;
+}
+
+@media (min-width:976px) {
+  .c14 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: nowrap;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+  }
+}
+
+@media (min-width:760px) {
+  .c1 {
+    font-size: 20px;
+    line-height: 1.2;
+  }
+}
+
+<div
+  className="c0"
+>
+  <span
+    className="c1"
+  >
+    Table With Columns Hidden Based On Screen Size
+  </span>
+  <div
+    className="c2 c3"
+    role="table"
+  >
+    <caption
+      className="c4"
+    >
+      <span
+        className="c1 c5"
+      />
+    </caption>
+    <div
+      className="c6 c7 c8"
+      role="row"
+    >
+      <div
+        className="c9 c10"
+        role="columnheader"
+      >
+        <div
+          className="c11 c12"
+        >
+          <span
+            className="c13"
+          >
+            Header 1
+          </span>
+        </div>
+      </div>
+      <div
+        className="c14 c10"
+        hidden={true}
+        role="columnheader"
+      >
+        <div
+          className="c11 c12"
+        >
+          <span
+            className="c13"
+          >
+            Hidden column on mobile
+          </span>
+        </div>
+      </div>
+      <div
+        className="c9 c10"
+        role="columnheader"
+      >
+        <div
+          className="c11 c12"
+        >
+          <span
+            className="c13"
+          >
+            Header 3
+          </span>
+        </div>
+      </div>
+    </div>
+    <div
+      className="c6 c15"
+      role="row"
+    >
+      <div
+        className="c9 c16"
+        role="cell"
+      >
+        <div
+          className="c11 c12"
+        >
+          <span
+            className="c17"
+          >
+            Cell 1-1
+          </span>
+        </div>
+      </div>
+      <div
+        className="c14 c16"
+        hidden={true}
+        role="cell"
+      >
+        <div
+          className="c11 c12"
+        >
+          <span
+            className="c17"
+          >
+            Hidden on mobile
+          </span>
+        </div>
+      </div>
+      <div
+        className="c9 c16"
+        role="cell"
+      >
+        <div
+          className="c11 c12"
+        >
+          <span
+            className="c17"
+          >
+            Cell 1-3
+          </span>
+        </div>
+      </div>
+    </div>
+    <div
+      className="c6 c15"
+      role="row"
+    >
+      <div
+        className="c9 c16"
+        role="cell"
+      >
+        <div
+          className="c11 c12"
+        >
+          <span
+            className="c17"
+          >
+            Cell 2-1
+          </span>
+        </div>
+      </div>
+      <div
+        className="c14 c16"
+        hidden={true}
+        role="cell"
+      >
+        <div
+          className="c11 c12"
+        >
+          <span
+            className="c17"
+          >
+            Hidden on mobile
+          </span>
+        </div>
+      </div>
+      <div
+        className="c9 c16"
+        role="cell"
+      >
+        <div
+          className="c11 c12"
+        >
+          <span
+            className="c17"
+          >
+            Cell 2-3
+          </span>
+        </div>
+      </div>
+    </div>
+    <div
+      className="c6 c15"
+      role="row"
+    >
+      <div
+        className="c9 c16"
+        role="cell"
+      >
+        <div
+          className="c11 c12"
+        >
+          <span
+            className="c17"
+          >
+            Cell 3-1
+          </span>
+        </div>
+      </div>
+      <div
+        className="c14 c16"
+        hidden={true}
+        role="cell"
+      >
+        <div
+          className="c11 c12"
+        >
+          <span
+            className="c17"
+          >
+            Hidden on mobile
+          </span>
+        </div>
+      </div>
+      <div
+        className="c9 c16"
+        role="cell"
+      >
+        <div
+          className="c11 c12"
+        >
+          <span
+            className="c17"
+          >
+            Cell 3-3
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
