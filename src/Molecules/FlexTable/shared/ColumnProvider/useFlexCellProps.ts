@@ -107,7 +107,7 @@ export const useFlexCellProps = (props: Partial<FlexPropsType> & { columnId: str
       JSON.stringify(columnLayout.flexProps) !== JSON.stringify(DEFAULT_CELL_FLEX_PROPS);
     assert(
       !isOldApi,
-      `It seems like you are trying to assign all flexProps via the header for ${columnId}, which doesn't support SSR. Set flexProps on each cell instead.`,
+      `It seems like you are trying to assign all flex props via the header, which doesn't support SSR. Please set the flex props on each cell instead.`,
       { level: 'warn' },
     );
   }
