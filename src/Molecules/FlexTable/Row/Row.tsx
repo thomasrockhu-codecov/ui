@@ -175,7 +175,7 @@ const Row: RowComponent = ({
             </StyledExpandedRow>
           )}
           Component={({ expandChildren, expandItems }) => {
-            if (expandItems.length === 0 && !expandChildren) {
+            if (expandItems && expandItems.length === 0 && !expandChildren) {
               return null;
             }
             return <ExpandArea expandItems={expandItems} expandChildren={expandChildren} />;
