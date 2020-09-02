@@ -109,12 +109,14 @@ export const TableCustomDataCells = () => {
       </FlexTable.Header>
     );
 
-    const NumberCell: React.FC<{
-      columnId: string;
-      value: number;
-      percentage?: boolean;
-    }> = React.memo(({ columnId, value, percentage = false }) => (
-      <FlexTable.Cell columnId={columnId}>
+    const NumberCell: React.FC<
+      {
+        columnId: string;
+        value: number;
+        percentage?: boolean;
+      } & FlexPropsType
+    > = React.memo(({ columnId, value, percentage = false, ...cellProps }) => (
+      <FlexTable.Cell columnId={columnId} {...cellProps}>
         {({ fontSize }) => (
           <FlexTable.Cell.TextWrapper fontSize={fontSize}>
             <Number value={value} percentage={percentage} />
@@ -123,12 +125,14 @@ export const TableCustomDataCells = () => {
       </FlexTable.Cell>
     ));
 
-    const NumberFooter: React.FC<{
-      columnId: string;
-      value: number;
-      percentage?: boolean;
-    }> = React.memo(({ columnId, value, percentage = false }) => (
-      <FlexTable.Footer columnId={columnId}>
+    const NumberFooter: React.FC<
+      {
+        columnId: string;
+        value: number;
+        percentage?: boolean;
+      } & FlexPropsType
+    > = React.memo(({ columnId, value, percentage = false, ...cellProps }) => (
+      <FlexTable.Footer columnId={columnId} {...cellProps}>
         {({ fontSize }) => (
           <FlexTable.Footer.TextWrapper fontSize={fontSize}>
             <Number value={value} percentage={percentage} />
@@ -137,9 +141,9 @@ export const TableCustomDataCells = () => {
       </FlexTable.Footer>
     ));
 
-    const DateCell: React.FC<{ columnId: string; value: number }> = React.memo(
-      ({ columnId, value }) => (
-        <FlexTable.Cell columnId={columnId}>
+    const DateCell: React.FC<{ columnId: string; value: number } & FlexPropsType> = React.memo(
+      ({ columnId, value, ...cellProps }) => (
+        <FlexTable.Cell columnId={columnId} {...cellProps}>
           {({ fontSize }) => (
             <FlexTable.Cell.TextWrapper fontSize={fontSize}>
               <DateTime value={value} />
@@ -149,9 +153,9 @@ export const TableCustomDataCells = () => {
       ),
     );
 
-    const FlagCell: React.FC<{ columnId: string; country: string }> = React.memo(
-      ({ columnId, country }) => (
-        <FlexTable.Cell columnId={columnId}>
+    const FlagCell: React.FC<{ columnId: string; country: string } & FlexPropsType> = React.memo(
+      ({ columnId, country, ...cellProps }) => (
+        <FlexTable.Cell columnId={columnId} {...cellProps}>
           {({ fontSize }) => (
             <FlexTable.Cell.TextWrapper fontSize={fontSize}>
               <Flag country={country} />
@@ -180,21 +184,36 @@ export const TableCustomDataCells = () => {
         </FlexTable.HeaderRow>
         <FlexTable.Row>
           <DateCell columnId="date" value={1594385610185} />
-          <NumberCell columnId="transferable-quantity" value={300} />
+          <NumberCell
+            columnId="transferable-quantity"
+            value={300}
+            justifyContent="flex-end"
+            flex="0 0 150px"
+          />
           <FlagCell columnId="country" country="SE" />
-          <NumberCell columnId="percentage" value={75} percentage />
+          <NumberCell columnId="percentage" value={75} percentage justifyContent="flex-end" />
         </FlexTable.Row>
         <FlexTable.Row>
           <DateCell columnId="date" value={1594385610000} />
-          <NumberCell columnId="transferable-quantity" value={100} />
+          <NumberCell
+            columnId="transferable-quantity"
+            value={100}
+            justifyContent="flex-end"
+            flex="0 0 150px"
+          />
           <FlagCell columnId="country" country="UK" />
-          <NumberCell columnId="percentage" value={25} percentage />
+          <NumberCell columnId="percentage" value={25} percentage justifyContent="flex-end" />
         </FlexTable.Row>
         <FlexTable.FooterRow>
           <FlexTable.Footer columnId="date" />
-          <NumberFooter columnId="transferable-quantity" value={400} />
+          <NumberFooter
+            columnId="transferable-quantity"
+            value={400}
+            justifyContent="flex-end"
+            flex="0 0 150px"
+          />
           <FlexTable.Footer columnId="country" />
-          <NumberFooter columnId="percentage" value={25} percentage />
+          <NumberFooter columnId="percentage" value={25} percentage justifyContent="flex-end" />
         </FlexTable.FooterRow>
       </FlexTable>
     );

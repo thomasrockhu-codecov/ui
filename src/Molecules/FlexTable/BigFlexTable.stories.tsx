@@ -51,7 +51,12 @@ const BigTableRow = ({ data }: any) => {
   return (
     <FlexTable.Row expandItems={expandItems} md={{ expandItems: [] }}>
       {Object.keys(R.omit(['rowId'], data)).map((valueKey, index) => (
-        <FlexTable.Cell key={data[valueKey].id} columnId={`column${index + 1}`}>
+        <FlexTable.Cell
+          key={data[valueKey].id}
+          columnId={`column${index + 1}`}
+          hidden={Boolean(index % 2)}
+          md={{ hidden: false }}
+        >
           {data[valueKey].value}
         </FlexTable.Cell>
       ))}
