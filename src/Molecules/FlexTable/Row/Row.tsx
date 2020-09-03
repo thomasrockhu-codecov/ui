@@ -12,7 +12,7 @@ import { ExpandElement, ExpandArea } from './components';
 
 /* the cells are padded by row gutter 1 unit (4px) */
 const StyledRow = styled(Flexbox).withConfig({
-  shouldForwardProp: prop =>
+  shouldForwardProp: (prop) =>
     ![
       'hideSeparator',
       'expanded',
@@ -29,25 +29,25 @@ const StyledRow = styled(Flexbox).withConfig({
   density: Density;
   expandable: boolean;
 }>`
-  background: ${p => p.theme.color.tableRowBackground};
-  ${p =>
+  background: ${(p) => p.theme.color.tableRowBackground};
+  ${(p) =>
     !p.hideSeparator && !p.expanded ? `border-bottom: 1px solid ${p.separatorColor(p.theme)}` : ''};
 
-  padding-right: ${p => (p.expandable ? p.theme.spacing.unit(2) : p.theme.spacing.unit(1))}px;
-  padding-left: ${p => (p.expandable ? p.theme.spacing.unit(1.5) : p.theme.spacing.unit(0.5))}px;
+  padding-right: ${(p) => (p.expandable ? p.theme.spacing.unit(2) : p.theme.spacing.unit(1))}px;
+  padding-left: ${(p) => (p.expandable ? p.theme.spacing.unit(1.5) : p.theme.spacing.unit(0.5))}px;
 
-  border-left: ${p => p.theme.spacing.unit(0.5)}px solid
-    ${p => (p.expanded && p.expandable ? p.theme.color.cta : 'transparent')};
+  border-left: ${(p) => p.theme.spacing.unit(0.5)}px solid
+    ${(p) => (p.expanded && p.expandable ? p.theme.color.cta : 'transparent')};
 
-  ${p =>
+  ${(p) =>
     p.hoverHighlight &&
     !p.expanded &&
     `&:hover {
       background: ${p.theme.color.tableRowHover};
     }`};
 
-  padding-top: ${p => getDensityPaddings(p.density)}px;
-  padding-bottom: ${p => getDensityPaddings(p.density)}px;
+  padding-top: ${(p) => getDensityPaddings(p.density)}px;
+  padding-bottom: ${(p) => getDensityPaddings(p.density)}px;
 
   margin-right: 0;
   margin-left: 0;
@@ -64,10 +64,10 @@ const StyledRow = styled(Flexbox).withConfig({
 `;
 
 const StyledExpandedRow = styled('div').withConfig({
-  shouldForwardProp: prop => !['separatorColor'].includes(prop),
+  shouldForwardProp: (prop) => !['separatorColor'].includes(prop),
 })<{ separatorColor: ColorFn }>`
-  border-left: ${p => p.theme.spacing.unit(0.5)}px solid ${p => p.theme.color.cta};
-  border-bottom: 1px solid ${p => p.separatorColor(p.theme)};
+  border-left: ${(p) => p.theme.spacing.unit(0.5)}px solid ${(p) => p.theme.color.cta};
+  border-bottom: 1px solid ${(p) => p.separatorColor(p.theme)};
 `;
 
 const Row: RowComponent = ({
@@ -78,7 +78,7 @@ const Row: RowComponent = ({
   hideSeparator = false,
   // If false means that it's a header
   isContent = true,
-  separatorColor = theme => theme.color.divider,
+  separatorColor = (theme) => theme.color.divider,
   onExpandToggle,
   expandChildren: expandChildrenXs,
   expandItems: expandItemsXs,
@@ -124,12 +124,18 @@ const Row: RowComponent = ({
         md={mdTable}
         lg={lgTable}
         xl={xlTable}
-        Container={({ density, columnDistance, expandable, children: component }) => (
+        Container={({
+          density,
+          columnDistance,
+          expandable,
+          children: component,
+          className: mediaClassName,
+        }) => (
           <StyledRow
+            className={mediaClassName ? `${className} ${mediaClassName}` : className}
             container
             alignItems="center"
             hoverHighlight={hoverHighlight}
-            className={className}
             hideSeparator={hideSeparator}
             role="row"
             // TODO: Remove type assertion when typescript is able to assert undefined from constants, in this case controlledExpand
@@ -169,8 +175,12 @@ const Row: RowComponent = ({
           md={md}
           lg={lg}
           xl={xl}
-          Container={({ children: component }) => (
-            <StyledExpandedRow role="row" separatorColor={separatorColor}>
+          Container={({ children: component, className: mediaClassName }) => (
+            <StyledExpandedRow
+              className={mediaClassName}
+              role="row"
+              separatorColor={separatorColor}
+            >
               {component}
             </StyledExpandedRow>
           )}

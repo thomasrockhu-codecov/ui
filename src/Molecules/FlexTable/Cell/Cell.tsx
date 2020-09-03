@@ -42,9 +42,9 @@ const Cell: CellComponent = (props) => {
       md={mdTable}
       lg={lgTable}
       xl={xlTable}
-      Container={({ fontSize, children: component }) => (
+      Container={({ fontSize, children: component, className: mediaClassName }) => (
         <InnerCell
-          className={className}
+          className={mediaClassName ? `${className} ${mediaClassName}` : className}
           columnId={columnId}
           flexProps={flexProps}
           fontSize={fontSize}

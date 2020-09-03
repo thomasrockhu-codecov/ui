@@ -2,6 +2,7 @@ import React from 'react';
 import { FontSize } from '../../shared/shared.types';
 
 export type TextWrapperProps = {
+  className?: string;
   /**
    * Set font size
    * @default 'm'
@@ -29,6 +30,7 @@ export type SortIconProps = {
 export type SortIconComponent = React.FC<SortIconProps>;
 
 export type SortButtonProps = {
+  className?: string;
   onClick: () => void;
   children: React.ReactChild | React.ReactChild[];
 };

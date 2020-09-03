@@ -32,8 +32,12 @@ const Footer: FooterComponent = (props) => {
       md={mdTable}
       lg={lgTable}
       xl={xlTable}
-      Container={({ fontSize, children: component }) => (
-        <StyledFlexbox className={className} role="cell" {...flexProps}>
+      Container={({ fontSize, children: component, className: mediaClassName }) => (
+        <StyledFlexbox
+          className={mediaClassName ? `${className} ${mediaClassName}` : className}
+          role="cell"
+          {...flexProps}
+        >
           {isElement(component) && component}
           {isFunction(component)
             ? component({ fontSize, columnId })
