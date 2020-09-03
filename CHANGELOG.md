@@ -1,3 +1,10 @@
+## [3.18.1](https://github.com/nordnet/ui/compare/v3.18.0...v3.18.1) (2020-09-03)
+
+
+### Bug Fixes
+
+* 🐛 make render for sizes container use media styles in ssr ([fd2a9ae](https://github.com/nordnet/ui/commit/fd2a9ae))
+
 # [3.18.0](https://github.com/nordnet/ui/compare/v3.17.6...v3.18.0) (2020-09-02)
 
 
