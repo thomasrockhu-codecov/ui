@@ -16,8 +16,8 @@ const StyledOverflowItem = styled(Flexbox)<{ textAlign?: string }>`
 `;
 
 const StyledFlexboxItem = styled(Flexbox)<FlexBoxProps>`
-  max-width: ${p => p.theme.spacing.unit(75)}px;
-  padding-bottom: ${p => p.theme.spacing.unit(5)}px;
+  max-width: ${(p) => p.theme.spacing.unit(75)}px;
+  padding-bottom: ${(p) => p.theme.spacing.unit(5)}px;
 `;
 
 const ExpandRenderer: React.FC<{
@@ -37,7 +37,7 @@ const ExpandRenderer: React.FC<{
   );
 };
 
-const MobileItem: React.FC<{ item: ExpandItemProps; fontSize: FontSize }> = ({
+const MobileItem: React.FC<{ className?: string; item: ExpandItemProps; fontSize: FontSize }> = ({
   item,
   fontSize,
 }) => (
@@ -53,7 +53,7 @@ const MobileItem: React.FC<{ item: ExpandItemProps; fontSize: FontSize }> = ({
   </Flexbox>
 );
 
-const DesktopItem: React.FC<{ item: ExpandItemProps; fontSize: FontSize }> = ({
+const DesktopItem: React.FC<{ className?: string; item: ExpandItemProps; fontSize: FontSize }> = ({
   item,
   fontSize,
 }) => (
@@ -79,12 +79,12 @@ export const ExpandItem: ExpandItemComponent = ({ item }) => {
       md={{ ...md, mobileItem: false }}
       lg={lg}
       xl={xl}
-      Container={({ fontSize, mobileItem }) => {
+      Container={({ fontSize, mobileItem, className: mediaClassName }) => {
         if (mobileItem) {
-          return <MobileItem item={item} fontSize={fontSize} />;
+          return <MobileItem className={mediaClassName} item={item} fontSize={fontSize} />;
         }
 
-        return <DesktopItem item={item} fontSize={fontSize} />;
+        return <DesktopItem className={mediaClassName} item={item} fontSize={fontSize} />;
       }}
       Component={({ children }) => children}
     />
