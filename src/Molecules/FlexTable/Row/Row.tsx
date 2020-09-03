@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import styled from 'styled-components';
-import { RowComponent } from './Row.types';
+import {ExpandRowComponent, RowComponent} from './Row.types';
 import { Flexbox } from '../../..';
 import { ColorFn } from '../../../common/Types/sharedTypes';
 import { getDensityPaddings } from '../shared/textUtils';
@@ -70,6 +70,30 @@ const StyledExpandedRow = styled('div').withConfig({
   border-bottom: 1px solid ${(p) => p.separatorColor(p.theme)};
 `;
 
+const ExpandRow: ExpandRowComponent = ({ expandItems: expandItemsXs, expandChildren: expandChildrenXs, sm, md, lg, xl, separatorColor }) => (
+  <RenderForSizes
+    xs={{
+      expandItems: expandItemsXs,
+      expandChildren: expandChildrenXs,
+    }}
+    sm={sm}
+    md={md}
+    lg={lg}
+    xl={xl}
+    Container={({ children: component, className: mediaClassName }) => (
+      <StyledExpandedRow role="row" separatorColor={separatorColor} className={mediaClassName}>
+        {component}
+      </StyledExpandedRow>
+    )}
+    Component={({ expandChildren, expandItems }) => {
+      if (expandItems && expandItems.length === 0 && !expandChildren) {
+        return null;
+      }
+      return <ExpandArea expandItems={expandItems} expandChildren={expandChildren} />;
+    }}
+  />
+);
+
 const Row: RowComponent = ({
   className,
   expanded,
@@ -78,7 +102,7 @@ const Row: RowComponent = ({
   hideSeparator = false,
   // If false means that it's a header
   isContent = true,
-  separatorColor = (theme) => theme.color.divider,
+  separatorColor = (theme: any) => theme.color.divider,
   onExpandToggle,
   expandChildren: expandChildrenXs,
   expandItems: expandItemsXs,
@@ -166,30 +190,14 @@ const Row: RowComponent = ({
       />
 
       {expand && (
-        <RenderForSizes
-          xs={{
-            expandItems: expandItemsXs,
-            expandChildren: expandChildrenXs,
-          }}
+        <ExpandRow
+          expandItems={expandItemsXs}
+          expandChildren={expandChildrenXs}
           sm={sm}
           md={md}
           lg={lg}
           xl={xl}
-          Container={({ children: component, className: mediaClassName }) => (
-            <StyledExpandedRow
-              className={mediaClassName}
-              role="row"
-              separatorColor={separatorColor}
-            >
-              {component}
-            </StyledExpandedRow>
-          )}
-          Component={({ expandChildren, expandItems }) => {
-            if (expandItems && expandItems.length === 0 && !expandChildren) {
-              return null;
-            }
-            return <ExpandArea expandItems={expandItems} expandChildren={expandChildren} />;
-          }}
+          separatorColor={separatorColor}
         />
       )}
     </>
@@ -198,5 +206,6 @@ const Row: RowComponent = ({
 
 Row.ExpandItem = ExpandItem;
 Row.ExpandItems = ExpandItems;
+Row.ExpandRow = ExpandRow;
 
 export default Row;

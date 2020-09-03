@@ -56,7 +56,7 @@ export const FlexTableWithDifferentRows = () => {
         <FlexTable.Cell columnId="column2">No highlight and separator hidden</FlexTable.Cell>
         <FlexTable.Cell columnId="column3">No highlight and separator hidden</FlexTable.Cell>
       </FlexTable.Row>
-      <FlexTable.Row separatorColor={(t) => t.color.barChartColor1}>
+      <FlexTable.Row separatorColor={(t: any) => t.color.barChartColor1}>
         <FlexTable.Cell columnId="column1">Separator color set</FlexTable.Cell>
         <FlexTable.Cell columnId="column2">Separator color set</FlexTable.Cell>
         <FlexTable.Cell columnId="column3">Separator color set</FlexTable.Cell>
