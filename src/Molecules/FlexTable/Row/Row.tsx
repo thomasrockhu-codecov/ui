@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import styled from 'styled-components';
-import {ExpandRowComponent, RowComponent} from './Row.types';
+import { ExpandRowComponent, RowComponent } from './Row.types';
 import { Flexbox } from '../../..';
 import { ColorFn } from '../../../common/Types/sharedTypes';
 import { getDensityPaddings } from '../shared/textUtils';
@@ -70,7 +70,16 @@ const StyledExpandedRow = styled('div').withConfig({
   border-bottom: 1px solid ${(p) => p.separatorColor(p.theme)};
 `;
 
-const ExpandRow: ExpandRowComponent = ({ expandItems: expandItemsXs, expandChildren: expandChildrenXs, sm, md, lg, xl, separatorColor }) => (
+const ExpandRow: ExpandRowComponent = ({
+  expandItems: expandItemsXs,
+  expandChildren: expandChildrenXs,
+  sm,
+  md,
+  lg,
+  xl,
+  separatorColor = (theme: any) => theme.color.divider,
+  ...htmlProps
+}) => (
   <RenderForSizes
     xs={{
       expandItems: expandItemsXs,
@@ -81,7 +90,12 @@ const ExpandRow: ExpandRowComponent = ({ expandItems: expandItemsXs, expandChild
     lg={lg}
     xl={xl}
     Container={({ children: component, className: mediaClassName }) => (
-      <StyledExpandedRow role="row" separatorColor={separatorColor} className={mediaClassName}>
+      <StyledExpandedRow
+        role="row"
+        separatorColor={separatorColor}
+        className={mediaClassName}
+        {...htmlProps}
+      >
         {component}
       </StyledExpandedRow>
     )}
