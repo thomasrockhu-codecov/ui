@@ -9,11 +9,13 @@ type Direction = {
 
 const DIRECTION = {
   up: 180,
+  right: 270,
   down: 0,
+  left: 90,
 };
 
 const StyledIconBase = styled(IconBase)<Direction>`
-  transform: ${p => `rotate(${DIRECTION[p.direction]}deg`});
+  transform: ${(p) => `rotate(${DIRECTION[p.direction]}deg`});
 `;
 
 export const ThinChevron = ({ direction = 'down', ...props }: BaseProps & Direction) => {
