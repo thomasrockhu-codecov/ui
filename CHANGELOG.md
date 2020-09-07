@@ -1,3 +1,10 @@
+## [3.18.2](https://github.com/nordnet/ui/compare/v3.18.1...v3.18.2) (2020-09-07)
+
+
+### Bug Fixes
+
+* 🐛 added missing x directions to thin chevron ([0f1b39b](https://github.com/nordnet/ui/commit/0f1b39b))
+
 ## [3.18.1](https://github.com/nordnet/ui/compare/v3.18.0...v3.18.1) (2020-09-03)
 
 
