@@ -77,7 +77,7 @@ const ExpandRow: ExpandRowComponent = ({
   md,
   lg,
   xl,
-  separatorColor = (theme: any) => theme.color.divider,
+  separatorColor = (theme) => theme.color.divider,
   ...htmlProps
 }) => (
   <RenderForSizes
@@ -116,7 +116,7 @@ const Row: RowComponent = ({
   hideSeparator = false,
   // If false means that it's a header
   isContent = true,
-  separatorColor = (theme: any) => theme.color.divider,
+  separatorColor = (theme) => theme.color.divider,
   onExpandToggle,
   expandChildren: expandChildrenXs,
   expandItems: expandItemsXs,

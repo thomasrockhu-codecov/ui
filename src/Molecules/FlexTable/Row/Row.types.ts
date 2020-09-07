@@ -43,7 +43,7 @@ interface UncontrolledExpand extends ExpandArea {
 
 export type ExpandRowProps = ExpandAreaProps &
   MediaRelatedProps<Pick<ExpandAreaProps, 'expandItems' | 'expandChildren'>> & {
-    separatorColor?: any;
+    separatorColor?: ColorFn;
   } & HtmlProps;
 
 export type ExpandRowComponent = React.FC<ExpandRowProps>;
