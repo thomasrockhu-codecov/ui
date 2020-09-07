@@ -1,3 +1,15 @@
+# [3.19.0](https://github.com/nordnet/ui/compare/v3.18.2...v3.19.0) (2020-09-07)
+
+
+### Bug Fixes
+
+* just mobile ([492dfe0](https://github.com/nordnet/ui/commit/492dfe0))
+
+
+### Features
+
+* changed border size ([ad2c0e6](https://github.com/nordnet/ui/commit/ad2c0e6))
+
 ## [3.18.2](https://github.com/nordnet/ui/compare/v3.18.1...v3.18.2) (2020-09-07)
 
 
