@@ -1,6 +1,6 @@
 import React from 'react';
 import { actions } from '@storybook/addon-actions';
-import { Input, Flexbox, FormField } from '../../..';
+import { Input, Flexbox, FormField, Typography } from '../../..';
 import { Display } from '../../../common/Display';
 
 const handlers = actions(
@@ -211,4 +211,22 @@ export const withAllActions = () => (
 
 withAllActions.story = {
   name: 'With all actions',
+};
+
+export const elementLabelStory = () => {
+  const label = (
+    <>
+      <Typography type="secondary" weight="bold">
+        The first part is bold,
+      </Typography>{' '}
+      <Typography type="secondary" weight="regular">
+        the second part is regular
+      </Typography>
+    </>
+  );
+  return <Input.Checkbox name="example" value="element" label={label} />;
+};
+
+elementLabelStory.story = {
+  name: 'Element as label',
 };

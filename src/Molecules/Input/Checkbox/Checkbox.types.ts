@@ -6,7 +6,7 @@ export type Props = {
   disabled?: boolean;
   error?: string;
   hasError?: boolean;
-  label: string;
+  label: string | JSX.Element;
   name?: string;
   required?: boolean;
   value?: string;
