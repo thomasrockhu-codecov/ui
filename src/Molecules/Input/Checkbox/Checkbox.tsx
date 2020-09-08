@@ -13,14 +13,8 @@ const CleanInput = React.forwardRef((props: any, ref: React.Ref<HTMLInputElement
 ));
 
 const getSize = (size: Props['size']): number => {
-  if (!size) {
-    return CHECKBOX_DEFAULT_SIZE;
-  }
-  if (size === 's') {
+  if (size && size === 's') {
     return 4;
-  }
-  if (size === 'm') {
-    return CHECKBOX_DEFAULT_SIZE;
   }
   return CHECKBOX_DEFAULT_SIZE;
 };

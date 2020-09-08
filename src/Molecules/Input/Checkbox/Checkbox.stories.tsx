@@ -230,3 +230,17 @@ export const elementLabelStory = () => {
 elementLabelStory.story = {
   name: 'Element as label',
 };
+
+export const withDifferentSizes = () => {
+  return (
+    <Flexbox container direction="column" gutter={1}>
+      <Input.Checkbox name="small" value="1" size="s" label="small" />
+      <Input.Checkbox name="medium" value="2" label="medium" />
+      <Input.Checkbox name="default" value="3" label="default" />
+    </Flexbox>
+  );
+};
+
+withDifferentSizes.story = {
+  name: 'Checkboxes with different size',
+};
