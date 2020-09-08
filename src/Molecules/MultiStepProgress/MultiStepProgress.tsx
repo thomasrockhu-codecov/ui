@@ -12,7 +12,7 @@ const StyledDrawer = styled(Drawer)`
 `;
 
 const StyledCard = styled(Card)`
-  background: none;
+  background: transparent;
 `;
 
 export const MultiStepProgress: MultiStepProgressComponent = ({
