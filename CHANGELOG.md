@@ -1,3 +1,10 @@
+## [3.20.1](https://github.com/nordnet/ui/compare/v3.20.0...v3.20.1) (2020-09-08)
+
+
+### Bug Fixes
+
+* add a11y to line graph palette ([4a945db](https://github.com/nordnet/ui/commit/4a945db))
+
 # [3.20.0](https://github.com/nordnet/ui/compare/v3.19.0...v3.20.0) (2020-09-08)
 
 
