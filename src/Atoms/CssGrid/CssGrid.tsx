@@ -16,12 +16,12 @@ import { getAreasInfo, getMsRawTemplateColumnOrRowStyles } from './utils';
 
 const formatAreas = (areas: Props['areas']) =>
   areas
-    .map(areaRow => areaRow.join(' '))
-    .map(area => `"${area}"`)
+    .map((areaRow) => areaRow.join(' '))
+    .map((area) => `"${area}"`)
     .join(' ');
 
 const isNumber = (x: any): x is number => x === parseInt(x, 10);
-const isArrayOfStrings = (xs: any[]): xs is string[] => xs.every(x => typeof x === 'string');
+const isArrayOfStrings = (xs: any[]): xs is string[] => xs.every((x) => typeof x === 'string');
 const isSupportedCssValue = (s: string) => {
   const stringS = `${s}`;
 
@@ -43,8 +43,8 @@ const getGutterStyles = (props: { gutter: Gutter; theme: Theme }) => {
   }
 
   return `
-    ${col ? `column-gap: ${theme.spacing.unit(col)}px;` : ''};
-    ${row ? `row-gap: ${theme.spacing.unit(row)}px;` : ''};
+    ${`column-gap: ${theme.spacing.unit(col)}px;`};
+    ${`row-gap: ${theme.spacing.unit(row)}px;`};
   `;
 };
 
@@ -55,8 +55,9 @@ const getTemplateColumns = (props: { templateColumns?: TemplateColumn; size: Siz
   if (isUndefined(templateColumns)) {
     assert(
       false,
-      `CssGrid: It seems like you don't have templateColumns specified for '${size ||
-        'default'}' size. This may lead to some weird IE11 bugs.`,
+      `CssGrid: It seems like you don't have templateColumns specified for '${
+        size || 'default'
+      }' size. This may lead to some weird IE11 bugs.`,
       { level: 'warn' },
     );
     return '';
@@ -65,8 +66,9 @@ const getTemplateColumns = (props: { templateColumns?: TemplateColumn; size: Siz
   if (isArrayOfStrings(templateColumns)) {
     assert(
       templateColumns.every(isSupportedCssValue),
-      `CssGrid: Probably unsupported css value used in templateColumns for ${size ||
-        'default'}. This will cause some IE11 bugs.`,
+      `CssGrid: Probably unsupported css value used in templateColumns for ${
+        size || 'default'
+      }. This will cause some IE11 bugs.`,
       { level: 'warn' },
     );
     return `grid-template-columns: ${templateColumns.join(' ')};`;
@@ -83,8 +85,9 @@ const getTemplateRows = (props: { templateRows?: TemplateRow; size: Size }): str
   if (isUndefined(templateRows)) {
     assert(
       false,
-      `CssGrid: It seems like you don't have templateRows specified for '${size ||
-        'default'}' size. This will definitely cause some weird IE11 bugs. Please check and fix`,
+      `CssGrid: It seems like you don't have templateRows specified for '${
+        size || 'default'
+      }' size. This will definitely cause some weird IE11 bugs. Please check and fix`,
       { level: 'warn' },
     );
     return '';
@@ -92,8 +95,9 @@ const getTemplateRows = (props: { templateRows?: TemplateRow; size: Size }): str
 
   assert(
     templateRows.every(isSupportedCssValue),
-    `CssGrid: Probably unsupported css value used in templateRows for ${size ||
-      'default'}. This will cause some IE11 bugs.`,
+    `CssGrid: Probably unsupported css value used in templateRows for ${
+      size || 'default'
+    }. This will cause some IE11 bugs.`,
     { level: 'warn' },
   );
   return `grid-template-rows: ${templateRows.join(' ')};`;
@@ -200,7 +204,7 @@ const StyledDiv = styled.div<Props>`
   display: grid;
   box-sizing: border-box;
 
-  ${props => {
+  ${(props) => {
     const { sm, md, lg, xl } = props;
     const createStyles = (innerProps: Partial<Props>, size?: Size) => {
       const { height, areas, templateRows, templateColumns } = innerProps;
@@ -300,12 +304,12 @@ const getCssGridItemStylesFromProps = ({
 const RawCssGridItem = styled.div<ItemProps & { css?: any }>`
   box-sizing: border-box;
   min-width: 0; /* prevents grid blowout */
-  ${p => getCssGridItemStylesFromProps(p)}
-  ${p =>
+  ${(p) => getCssGridItemStylesFromProps(p)}
+  ${(p) =>
     Object.keys(p.theme.breakpoints)
-      .filter(breakpoint => p[breakpoint])
+      .filter((breakpoint) => p[breakpoint])
       .map(
-        breakpoint =>
+        (breakpoint) =>
           `${p.theme.media.greaterThan(p.theme.breakpoints[breakpoint])} {
           ${getCssGridItemStylesFromProps(p[breakpoint])}
         }`,
@@ -379,7 +383,8 @@ const RawCSSGridContainer: React.FC<Props & { theme: Theme }> = ({ theme, childr
     [sm, md, lg, xl, props.areas, theme],
   );
 
-  const stylesFnForChild = (areaName: string) => stylesFnsForChild.map(f => f(areaName)).join('\n');
+  const stylesFnForChild = (areaName: string) =>
+    stylesFnsForChild.map((f) => f(areaName)).join('\n');
 
   const renderedChildren = React.Children.map<JSX.Element | null, React.ReactElement<ItemProps>>(
     children as any,
