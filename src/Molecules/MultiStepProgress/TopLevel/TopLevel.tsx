@@ -37,6 +37,7 @@ const MobileProgressLevels = styled.ol`
 const ListItem = styled.li<InternalProps>`
   display: block;
   position: relative;
+  background-color: ${(p) => p.theme.color.backgroundInput};
 
   &::before {
     content: '';
@@ -53,11 +54,11 @@ const ListItem = styled.li<InternalProps>`
 
   & + & {
     ${({ theme }) => theme.media.lessThan(theme.breakpoints.md)} {
-      border-top: 1px solid ${(p) => p.theme.color.divider};
+      margin-top: ${(p) => p.theme.spacing.unit(0.25)}px;
     }
 
     ${({ theme }) => theme.media.greaterThan(theme.breakpoints.md)} {
-      border-top: ${(p) => p.theme.spacing.unit(2)}px solid ${(p) => p.theme.color.divider};
+      margin-top: ${(p) => p.theme.spacing.unit(2)}px;
     }
   }
 `;

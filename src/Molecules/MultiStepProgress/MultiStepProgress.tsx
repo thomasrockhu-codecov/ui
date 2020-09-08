@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
-
 import Card from '../../Atoms/Card';
 import { TopLevel } from './TopLevel';
 import { MultiStepProgressComponent } from './MultiStepProgress.types';
@@ -10,6 +9,10 @@ const StyledDrawer = styled(Drawer)`
   ${Drawer.components.Content} {
     padding: 0;
   }
+`;
+
+const StyledCard = styled(Card)`
+  background: none;
 `;
 
 export const MultiStepProgress: MultiStepProgressComponent = ({
@@ -40,7 +43,7 @@ export const MultiStepProgress: MultiStepProgressComponent = ({
 
   return (
     <>
-      <Card>
+      <StyledCard>
         <div role="group" aria-label={title}>
           <TopLevel
             drawerOpen={open}
@@ -52,9 +55,9 @@ export const MultiStepProgress: MultiStepProgressComponent = ({
             onMobileStepClick={toggleDrawer}
           />
         </div>
-      </Card>
+      </StyledCard>
 
-      <Media query={t => t.media.lessThan(t.breakpoints.md)}>
+      <Media query={(t) => t.media.lessThan(t.breakpoints.md)}>
         <StyledDrawer
           onClose={onDrawerClose}
           title={
