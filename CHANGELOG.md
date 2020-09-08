@@ -1,3 +1,15 @@
+# [3.22.0](https://github.com/nordnet/ui/compare/v3.21.0...v3.22.0) (2020-09-08)
+
+
+### Bug Fixes
+
+* remove unused import ([943d205](https://github.com/nordnet/ui/commit/943d205))
+
+
+### Features
+
+* small or medium sized checkbox ([f465076](https://github.com/nordnet/ui/commit/f465076))
+
 # [3.21.0](https://github.com/nordnet/ui/compare/v3.20.1...v3.21.0) (2020-09-08)
 
 
