@@ -1,3 +1,20 @@
+# [3.21.0](https://github.com/nordnet/ui/compare/v3.20.1...v3.21.0) (2020-09-08)
+
+
+### Bug Fixes
+
+* 🐛 added missing storyshots ([1ffd181](https://github.com/nordnet/ui/commit/1ffd181))
+* 🐛 border color fix for mobile view ([63b2b0b](https://github.com/nordnet/ui/commit/63b2b0b))
+* 🐛 missing snapshots ([1e92e28](https://github.com/nordnet/ui/commit/1e92e28))
+* 🐛 missing storyshots ([2767332](https://github.com/nordnet/ui/commit/2767332))
+* 🐛 removed icon duplicates as requested ([883f298](https://github.com/nordnet/ui/commit/883f298))
+* 🐛 spaces between steps are now actual spaces, not borders ([2b5b21a](https://github.com/nordnet/ui/commit/2b5b21a))
+
+
+### Features
+
+* 🎸 new thin icon variants for mortgage application added ([ab2502b](https://github.com/nordnet/ui/commit/ab2502b))
+
 ## [3.20.1](https://github.com/nordnet/ui/compare/v3.20.0...v3.20.1) (2020-09-08)
 
 
