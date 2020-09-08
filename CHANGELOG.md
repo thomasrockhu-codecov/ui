@@ -1,3 +1,10 @@
+## [3.22.1](https://github.com/nordnet/ui/compare/v3.22.0...v3.22.1) (2020-09-08)
+
+
+### Bug Fixes
+
+* add contain prop to solve ie11 wrapping issue with flexbox ([d657a2d](https://github.com/nordnet/ui/commit/d657a2d))
+
 # [3.22.0](https://github.com/nordnet/ui/compare/v3.21.0...v3.22.0) (2020-09-08)
 
 
