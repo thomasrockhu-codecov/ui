@@ -54,7 +54,7 @@ const ListItem = styled.li<InternalProps>`
 
   & + & {
     ${({ theme }) => theme.media.lessThan(theme.breakpoints.md)} {
-      margin-top: ${(p) => p.theme.spacing.unit(0.25)}px;
+      border-top: ${(p) => p.theme.spacing.unit(0.25)}px solid ${(p) => p.theme.color.divider};
     }
 
     ${({ theme }) => theme.media.greaterThan(theme.breakpoints.md)} {
