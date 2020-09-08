@@ -1,3 +1,17 @@
+# [3.20.0](https://github.com/nordnet/ui/compare/v3.19.0...v3.20.0) (2020-09-08)
+
+
+### Bug Fixes
+
+* 🐛 allow elements as checkbox labels ([4edf2de](https://github.com/nordnet/ui/commit/4edf2de))
+* add possibility to override with zero gutter ([a78e9e3](https://github.com/nordnet/ui/commit/a78e9e3))
+* htmlprops to expand row ([dca7d1c](https://github.com/nordnet/ui/commit/dca7d1c))
+
+
+### Features
+
+* wip export row ([78abf0b](https://github.com/nordnet/ui/commit/78abf0b))
+
 # [3.19.0](https://github.com/nordnet/ui/compare/v3.18.2...v3.19.0) (2020-09-07)
 
 
