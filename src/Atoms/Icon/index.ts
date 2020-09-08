@@ -17,6 +17,7 @@ import { Calendar } from './components/Calendar';
 import { CandleSticks } from './components/CandleSticks';
 import { CheckMark } from './components/CheckMark';
 import { CheckMarkCircle } from './components/CheckMarkCircle';
+import { CheckMarkCircleThin } from './components/CheckMarkCircleThin';
 import { ChevronDown } from './components/ChevronDown';
 import { ChevronLeft } from './components/ChevronLeft';
 import { ChevronRight } from './components/ChevronRight';
@@ -31,6 +32,7 @@ import { ConsumerCyclic } from './components/ConsumerCyclic';
 import { ConsumerStable } from './components/ConsumerStable';
 import { Cross } from './components/Cross';
 import { CrossCircle } from './components/CrossCircle';
+import { CrossCircleThin } from './components/CrossCircleThin';
 import { CrossMedium } from './components/CrossMedium';
 import { CrossThin } from './components/CrossThin';
 import { Csv } from './components/Csv';
@@ -66,6 +68,7 @@ import { Minimize } from './components/Minimize';
 import { Minus } from './components/Minus';
 import { Money } from './components/Money';
 import { Move } from './components/Move';
+import { MoveThin } from './components/MoveThin';
 import { NoFee } from './components/NoFee';
 import { Other } from './components/Other';
 import { Pen } from './components/Pen';
@@ -95,8 +98,10 @@ import { ThinArrow } from './components/ThinArrow';
 import { ThinChevron } from './components/ThinChevron';
 import { ThreeDots } from './components/ThreeDots';
 import { Trash } from './components/Trash';
+import { TrashRemove } from './components/TrashRemove';
 import { Utilities } from './components/Utilities';
 import { WarningTriangle } from './components/WarningTriangle';
+import { WarningTriangleThin } from './components/WarningTriangleThin';
 
 export default {
   AccountNumbers,
@@ -118,6 +123,7 @@ export default {
   CandleSticks,
   CheckMark,
   CheckMarkCircle,
+  CheckMarkCircleThin,
   ChevronDown,
   ChevronLeft,
   ChevronRight,
@@ -132,6 +138,7 @@ export default {
   ConsumerStable,
   Cross,
   CrossCircle,
+  CrossCircleThin,
   CrossMedium,
   CrossThin,
   Csv,
@@ -167,6 +174,7 @@ export default {
   Minus,
   Money,
   Move,
+  MoveThin,
   NoFee,
   Other,
   Pen,
@@ -196,6 +204,8 @@ export default {
   ThinChevron,
   ThreeDots,
   Trash,
+  TrashRemove,
   Utilities,
   WarningTriangle,
+  WarningTriangleThin,
 };
