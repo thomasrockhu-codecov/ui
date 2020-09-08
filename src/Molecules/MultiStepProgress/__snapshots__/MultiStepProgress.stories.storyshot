@@ -386,7 +386,7 @@ Array [
 }
 
 .c1 {
-  background: none;
+  background: transparent;
 }
 
 @media (min-width:760px) {
@@ -496,10 +496,14 @@ Array [
                         focusable="false"
                         preserveAspectRatio="xMidYMid meet"
                         role="presentation"
-                        viewBox="0 0 20 20"
+                        viewBox="0 0 92 92"
                       >
                         <path
-                          d="M10,20 C4.4771525,20 0,15.5228475 0,10 C0,4.4771525 4.4771525,0 10,0 C15.5228475,0 20,4.4771525 20,10 C20,15.5228475 15.5228475,20 10,20 Z"
+                          d="M46 91.5c25.4050985 0 46-20.3710439 46-45.5S71.4050985.5 46 .5 0 20.8710439 0 46s20.5949015 45.5 46 45.5z"
+                        />
+                        <path
+                          d="M63.1517377 34l3.573537 3.5568749L42.1676463 62l-14.870943-14.8016051 3.573537-3.5568749 11.297406 11.2447302z"
+                          fill="#FFF"
                         />
                         <polygon
                           className="c16"
@@ -1157,7 +1161,7 @@ Array [
 }
 
 .c1 {
-  background: none;
+  background: transparent;
 }
 
 @media (min-width:760px) {
@@ -1267,10 +1271,14 @@ Array [
                         focusable="false"
                         preserveAspectRatio="xMidYMid meet"
                         role="presentation"
-                        viewBox="0 0 20 20"
+                        viewBox="0 0 92 92"
                       >
                         <path
-                          d="M10,20 C4.4771525,20 0,15.5228475 0,10 C0,4.4771525 4.4771525,0 10,0 C15.5228475,0 20,4.4771525 20,10 C20,15.5228475 15.5228475,20 10,20 Z"
+                          d="M46 91.5c25.4050985 0 46-20.3710439 46-45.5S71.4050985.5 46 .5 0 20.8710439 0 46s20.5949015 45.5 46 45.5z"
+                        />
+                        <path
+                          d="M63.1517377 34l3.573537 3.5568749L42.1676463 62l-14.870943-14.8016051 3.573537-3.5568749 11.297406 11.2447302z"
+                          fill="#FFF"
                         />
                         <polygon
                           className="c16"
@@ -1850,7 +1858,7 @@ Array [
 }
 
 .c1 {
-  background: none;
+  background: transparent;
 }
 
 @media (min-width:760px) {
