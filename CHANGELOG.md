@@ -1,3 +1,10 @@
+## [3.22.3](https://github.com/nordnet/ui/compare/v3.22.2...v3.22.3) (2020-09-09)
+
+
+### Bug Fixes
+
+* 🐛 flex table header type export and correct flex props ([20f6395](https://github.com/nordnet/ui/commit/20f6395))
+
 ## [3.22.2](https://github.com/nordnet/ui/compare/v3.22.1...v3.22.2) (2020-09-09)
 
 
