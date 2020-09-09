@@ -78533,7 +78533,7 @@ exports[`Storyshots Molecules | FlexTable / Big FlexTables example Multiple Big 
   z-index: 1;
   position: -webkit-sticky;
   position: sticky;
-  top: 0;
+  top: 0px;
   border-bottom: 1px solid #282823;
 }
 
@@ -95284,7 +95284,7 @@ exports[`Storyshots Molecules | FlexTable / Big FlexTables example Virtualized T
   z-index: 1;
   position: -webkit-sticky;
   position: sticky;
-  top: 0;
+  top: 0px;
   border-bottom: 1px solid #282823;
 }
 

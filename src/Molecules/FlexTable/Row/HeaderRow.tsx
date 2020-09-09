@@ -6,27 +6,30 @@ import { ColorFn } from '../../../common/Types/sharedTypes';
 import { useFlexTable } from '../shared/FlexTableProvider';
 
 const StyledHeaderRow = styled(Row).withConfig({
-  shouldForwardProp: prop => !['hideSeparator', 'separatorColor', 'sticky'].includes(prop),
+  shouldForwardProp: (prop) =>
+    !['hideSeparator', 'separatorColor', 'sticky', 'stickyOffsetTop'].includes(prop),
 })<{
   hideSeparator: boolean;
   separatorColor: ColorFn;
   sticky: boolean;
+  stickyOffsetTop: number;
 }>`
-  ${p =>
+  ${(p) =>
     p.sticky
       ? `
         z-index: 1;
         position: sticky;
-        top: 0;`
+        top: ${p.stickyOffsetTop}px;`
       : ''};
-  ${p => (!p.hideSeparator ? `border-bottom: 1px solid ${p.separatorColor(p.theme)}` : '')};
+  ${(p) => (!p.hideSeparator ? `border-bottom: 1px solid ${p.separatorColor(p.theme)}` : '')};
 `;
 
 export const HeaderRow: HeaderRowComponent = ({
   className,
   hideSeparator = false,
-  separatorColor = theme => theme.color.text,
+  separatorColor = (theme) => theme.color.text,
   children,
+  stickyOffsetTop = 0,
   ...htmlProps
 }) => {
   const { stickyHeader } = useFlexTable();
@@ -39,6 +42,7 @@ export const HeaderRow: HeaderRowComponent = ({
       isContent={false}
       separatorColor={separatorColor}
       sticky={stickyHeader}
+      stickyOffsetTop={stickyOffsetTop}
       {...htmlProps}
     >
       {children}

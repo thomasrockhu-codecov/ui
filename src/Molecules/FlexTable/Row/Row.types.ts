@@ -90,6 +90,11 @@ type HeaderProps = {
    */
   isContent?: boolean;
   separatorColor?: ColorFn;
+  /**
+   *  When the header is sticky, use this number as value for css-top property.
+   * @default 0
+   */
+  stickyOffsetTop?: number;
 } & HtmlProps;
 
 export type HeaderRowComponent = React.FC<HeaderProps>;
