@@ -1,5 +1,5 @@
 import React, { ReactNode } from 'react';
-import { Props as FlexboxProps } from '../../../Atoms/Flexbox/Flexbox.types';
+import { FlexProps } from '../../../Atoms/Flexbox/Flexbox.types';
 import {
   SortOrder,
   SortButtonProps,
@@ -9,6 +9,7 @@ import {
   SortButtonComponent,
   SortIconProps,
 } from './HeaderContent/HeaderContent.types';
+import { MediaRelatedProps } from '../shared/shared.types';
 
 export type OnSort = (columnId: string, newSortOrder: SortOrder) => void;
 
@@ -56,13 +57,14 @@ type RenderPropArguments = TextWrapperProps &
 type RenderFunc = (props: RenderPropArguments) => ReactNode;
 type Children = ReactNode | RenderFunc;
 
-type Props = {
+export type Props = {
   children?: Children;
   /**
    * Set column id, used to share layout between header and cells in the column
    */
   columnId: string;
-} & FlexboxProps &
+} & MediaRelatedProps<FlexProps> &
+  FlexProps &
   SortedProps;
 
 export type HeaderComponents = {
