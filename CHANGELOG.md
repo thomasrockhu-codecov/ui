@@ -1,3 +1,10 @@
+## [3.23.1](https://github.com/nordnet/ui/compare/v3.23.0...v3.23.1) (2020-09-09)
+
+
+### Bug Fixes
+
+* revert contain prop form flexbox component ([0f7d3c1](https://github.com/nordnet/ui/commit/0f7d3c1))
+
 # [3.23.0](https://github.com/nordnet/ui/compare/v3.22.3...v3.23.0) (2020-09-09)
 
 
