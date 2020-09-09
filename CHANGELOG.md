@@ -1,3 +1,10 @@
+# [3.23.0](https://github.com/nordnet/ui/compare/v3.22.3...v3.23.0) (2020-09-09)
+
+
+### Features
+
+* implement sticky top offset for flextable header ([50beac5](https://github.com/nordnet/ui/commit/50beac5))
+
 ## [3.22.3](https://github.com/nordnet/ui/compare/v3.22.2...v3.22.3) (2020-09-09)
 
 
