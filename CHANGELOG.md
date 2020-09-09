@@ -1,3 +1,10 @@
+## [3.22.2](https://github.com/nordnet/ui/compare/v3.22.1...v3.22.2) (2020-09-09)
+
+
+### Bug Fixes
+
+* 🐛 remove extra vertical space when hidden label ([3435874](https://github.com/nordnet/ui/commit/3435874))
+
 ## [3.22.1](https://github.com/nordnet/ui/compare/v3.22.0...v3.22.1) (2020-09-08)
 
 
