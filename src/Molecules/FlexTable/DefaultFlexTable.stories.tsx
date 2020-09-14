@@ -64,7 +64,7 @@ export const DefaultTable = () => {
 
 export const DefaultTableWithTitle = () => {
   const DefaultTableWithTitleExample = () => (
-    <StyledFlexTable title="Table with title">
+    <StyledFlexTable aria-labelledby="table-with-title" title="Table with title">
       <FlexTable.HeaderRow>
         <FlexTable.Header columnId="column1">Header 1</FlexTable.Header>
         <FlexTable.Header columnId="column2">Header 2</FlexTable.Header>
@@ -89,7 +89,7 @@ export const DefaultTableWithTitle = () => {
   );
 
   const DefaultTableWithTitleExampleTwo = () => (
-    <StyledFlexTable title="Some other table">
+    <StyledFlexTable aria-labelledby="some-other-table" title="Some other table">
       <FlexTable.HeaderRow>
         <FlexTable.Header columnId="column1">Header 1</FlexTable.Header>
         <FlexTable.Header columnId="column2">Header 2</FlexTable.Header>
@@ -148,6 +148,7 @@ export const DefaultTableWithCustomTitle = () => {
 
     return (
       <StyledFlexTable
+        aria-labelledby="custom-title"
         title={<CustomTitle country="SE" name="Ericsson Corporation" shortName="ERICSSON" />}
       >
         <FlexTable.HeaderRow>
