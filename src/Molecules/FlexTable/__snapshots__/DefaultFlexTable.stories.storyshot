@@ -1172,11 +1172,13 @@ exports[`Storyshots Molecules | FlexTable / Default FlexTable Default Table With
     Default Table Custom With Title
   </span>
   <div
+    aria-labelledby="custom-title"
     className="c2 c3"
     role="table"
   >
     <div
       className="c4"
+      id="custom-title"
     >
       <div
         className="c5"
@@ -2065,11 +2067,13 @@ exports[`Storyshots Molecules | FlexTable / Default FlexTable Default Table With
     Default Table With Title
   </span>
   <div
+    aria-labelledby="table-with-title"
     className="c2 c3"
     role="table"
   >
     <div
       className="c4"
+      id="table-with-title"
     >
       <span
         className="c1 c5"
@@ -2267,11 +2271,13 @@ exports[`Storyshots Molecules | FlexTable / Default FlexTable Default Table With
     </div>
   </div>
   <div
+    aria-labelledby="some-other-table"
     className="c2 c3"
     role="table"
   >
     <div
       className="c4"
+      id="some-other-table"
     >
       <span
         className="c1 c5"
