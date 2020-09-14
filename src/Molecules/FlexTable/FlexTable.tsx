@@ -15,13 +15,13 @@ import { ExpandItem, ExpandItems } from './Row/components';
 type HtmlDivProps = {} & React.HTMLAttributes<HTMLDivElement>;
 
 const StyledDiv = styled('div').withConfig({
-  shouldForwardProp: prop => !['stickyHeader'].includes(prop),
+  shouldForwardProp: (prop) => !['stickyHeader'].includes(prop),
 })<
   HtmlDivProps & {
     stickyHeader: boolean;
   }
 >`
-  ${p => (p.stickyHeader ? 'position: relative;' : '')}
+  ${(p) => (p.stickyHeader ? 'position: relative;' : '')}
 `;
 
 const FlexTableContainer: React.FC<HtmlDivProps> = ({ className, children, ...htmlDivProps }) => {
@@ -39,7 +39,7 @@ const StyledCaption = styled.div`
 `;
 
 const StyledTypography = styled(Typography)`
-  padding-left: ${p => p.theme.spacing.unit(1)}px;
+  padding-left: ${(p) => p.theme.spacing.unit(1)}px;
 `;
 
 const FlexTable: FlexTableComponent & FlexTableComponents = ({
@@ -69,8 +69,12 @@ const FlexTable: FlexTableComponent & FlexTableComponents = ({
     xl={xl}
   >
     {/* pass sticky with context instead of prop-drilling, since context might change */}
-    <FlexTableContainer className={className} {...htmlProps} aria-describedby="table-caption">
-      <StyledCaption id="table-caption">
+    <FlexTableContainer
+      className={className}
+      {...htmlProps}
+      aria-labelledby={htmlProps['aria-labelledby']}
+    >
+      <StyledCaption id={htmlProps['aria-labelledby']}>
         {isElement(title) ? title : <StyledTypography type="title3">{title}</StyledTypography>}
       </StyledCaption>
       <ColumnProvider>{children}</ColumnProvider>
