@@ -52,13 +52,13 @@ exports[`Storyshots Molecules | FlexTable / Big FlexTables example Big Table 1`]
     className="c2"
     role="table"
   >
-    <caption
+    <div
       className="c3"
     >
       <span
         className="c1 c4"
       />
-    </caption>
+    </div>
   </div>
 </div>
 `;
@@ -347,13 +347,13 @@ exports[`Storyshots Molecules | FlexTable / Big FlexTables example Big Table Wit
     className=""
     role="table"
   >
-    <caption
+    <div
       className="c2"
     >
       <span
         className="c1 c3"
       />
-    </caption>
+    </div>
     <div
       className="c4 c5 c6"
       role="row"
@@ -78639,13 +78639,13 @@ exports[`Storyshots Molecules | FlexTable / Big FlexTables example Multiple Big 
     className="c2 c3"
     role="table"
   >
-    <caption
+    <div
       className="c4"
     >
       <span
         className="c1 c5"
       />
-    </caption>
+    </div>
     <div
       className="c6 c7 c8"
       role="row"
@@ -86901,13 +86901,13 @@ exports[`Storyshots Molecules | FlexTable / Big FlexTables example Multiple Big 
     className="c2 c3"
     role="table"
   >
-    <caption
+    <div
       className="c4"
     >
       <span
         className="c1 c5"
       />
-    </caption>
+    </div>
     <div
       className="c6 c7 c8"
       role="row"
@@ -95370,13 +95370,13 @@ exports[`Storyshots Molecules | FlexTable / Big FlexTables example Virtualized T
       className="c3"
       role="table"
     >
-      <caption
+      <div
         className="c4"
       >
         <span
           className="c1 c5"
         />
-      </caption>
+      </div>
       <div
         className="c6 c7 c8"
         role="row"

@@ -249,13 +249,13 @@ exports[`Storyshots Molecules | FlexTable Flex Table With Different Rows 1`] = `
     className="c2 c3"
     role="table"
   >
-    <caption
+    <div
       className="c4"
     >
       <span
         className="c1 c5"
       />
-    </caption>
+    </div>
     <div
       className="c6 c7 c8"
       role="row"
@@ -824,13 +824,13 @@ exports[`Storyshots Molecules | FlexTable Table Custom Data Cells 1`] = `
   className="c0"
   role="table"
 >
-  <caption
+  <div
     className="c1"
   >
     <span
       className="c2 c3"
     />
-  </caption>
+  </div>
   <div
     className="c4 c5 c6"
     role="row"

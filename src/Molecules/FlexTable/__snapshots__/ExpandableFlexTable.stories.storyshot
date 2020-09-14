@@ -447,13 +447,13 @@ exports[`Storyshots Molecules | FlexTable / Expandable FlexTable Controlled Expa
   className="c0"
   role="table"
 >
-  <caption
+  <div
     className="c1"
   >
     <span
       className="c2 c3"
     />
-  </caption>
+  </div>
   <div
     className="c4 c5 c6"
     role="row"
@@ -1531,13 +1531,13 @@ exports[`Storyshots Molecules | FlexTable / Expandable FlexTable Controlled Expa
   className="c0"
   role="table"
 >
-  <caption
+  <div
     className="c1"
   >
     <span
       className="c2 c3"
     />
-  </caption>
+  </div>
   <div
     className="c4 c5 c6"
     role="row"
@@ -2618,13 +2618,13 @@ exports[`Storyshots Molecules | FlexTable / Expandable FlexTable Expanded Table 
     className="c0"
     role="table"
   >
-    <caption
+    <div
       className="c1"
     >
       <span
         className="c2 c3"
       />
-    </caption>
+    </div>
     <div
       className="c4 c5 c6"
       role="row"
@@ -3358,13 +3358,13 @@ exports[`Storyshots Molecules | FlexTable / Expandable FlexTable Expanded Table 
   className="c0"
   role="table"
 >
-  <caption
+  <div
     className="c1"
   >
     <span
       className="c2 c3"
     />
-  </caption>
+  </div>
   <div
     className="c4"
     role="row"
@@ -3428,12 +3428,12 @@ exports[`Storyshots Molecules | FlexTable / Expandable FlexTable Only Expandable
   className="c0"
   role="table"
 >
-  <caption
+  <div
     className="c1"
   >
     <span
       className="c2 c3"
     />
-  </caption>
+  </div>
 </div>
 `;
