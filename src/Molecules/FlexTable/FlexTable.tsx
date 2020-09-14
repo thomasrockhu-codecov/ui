@@ -72,11 +72,13 @@ const FlexTable: FlexTableComponent & FlexTableComponents = ({
     <FlexTableContainer
       className={className}
       {...htmlProps}
-      aria-labelledby={htmlProps['aria-labelledby']}
+      {...(title ? { 'aria-labelledby': `${htmlProps.id}-title` } : {})}
     >
-      <StyledCaption id={htmlProps['aria-labelledby']}>
-        {isElement(title) ? title : <StyledTypography type="title3">{title}</StyledTypography>}
-      </StyledCaption>
+      {Boolean(title) && (
+        <StyledCaption id={`${htmlProps.id}-title`}>
+          {isElement(title) ? title : <StyledTypography type="title3">{title}</StyledTypography>}
+        </StyledCaption>
+      )}
       <ColumnProvider>{children}</ColumnProvider>
     </FlexTableContainer>
   </FlexTableProvider>
