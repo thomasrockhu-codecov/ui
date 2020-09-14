@@ -34,7 +34,7 @@ const FlexTableContainer: React.FC<HtmlDivProps> = ({ className, children, ...ht
   );
 };
 
-const StyledCaption = styled.caption`
+const StyledCaption = styled.div`
   display: flex;
 `;
 
@@ -69,8 +69,8 @@ const FlexTable: FlexTableComponent & FlexTableComponents = ({
     xl={xl}
   >
     {/* pass sticky with context instead of prop-drilling, since context might change */}
-    <FlexTableContainer className={className} {...htmlProps}>
-      <StyledCaption>
+    <FlexTableContainer className={className} {...htmlProps} aria-describedby="table-caption">
+      <StyledCaption id="table-caption">
         {isElement(title) ? title : <StyledTypography type="title3">{title}</StyledTypography>}
       </StyledCaption>
       <ColumnProvider>{children}</ColumnProvider>
