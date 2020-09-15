@@ -5,17 +5,21 @@ export type InnerProps = {
   title?: React.ReactNode;
   footer?: React.ReactNode;
   hideClose?: boolean;
+  /** @default true */
+  fullScreenMobile?: boolean;
   /** @default false */
   closeOnBackdropClick?: boolean;
 };
 
 export type BackdropProps = {
   onClick: (e: React.ChangeEvent<HTMLElement>) => void;
+  fullScreenMobile?: boolean;
 };
 
 export type DialogProps = {
   show: boolean;
   onClick: (e: React.MouseEvent<HTMLElement>) => void;
+  fullScreenMobile?: boolean;
 };
 
 export type Props = {
