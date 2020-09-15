@@ -1,3 +1,10 @@
+## [3.23.2](https://github.com/nordnet/ui/compare/v3.23.1...v3.23.2) (2020-09-15)
+
+
+### Bug Fixes
+
+* **PageWrapper:** no max-width when printing ([143a2e6](https://github.com/nordnet/ui/commit/143a2e6))
+
 ## [3.23.1](https://github.com/nordnet/ui/compare/v3.23.0...v3.23.1) (2020-09-09)
 
 
