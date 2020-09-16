@@ -422,13 +422,32 @@ export const notFullScreenMobile = () => {
       setOpen(false);
     };
 
+    const footer = (
+      <Flexbox container justifyContent="flex-end">
+        <Box mr={2}>
+          <Button variant="secondary" size="l" onClick={() => {}}>
+            Cancel
+          </Button>
+        </Box>
+        <Button size="l" onClick={() => {}}>
+          Confirm
+        </Button>
+      </Flexbox>
+    );
+
     return (
       <div>
         <button type="button" onClick={onOpen}>
           Open modal
         </button>
         <ScrollMaker />
-        <Modal onClose={onClose} title="Dialog information" open={open} fullScreenMobile={false}>
+        <Modal
+          onClose={onClose}
+          title="Dialog information"
+          open={open}
+          footer={footer}
+          fullScreenMobile={false}
+        >
           <Box mb={2}>
             <Typography type="primary" as="p">
               Resize the window to see the result of setting fullScreenMobile to false.
