@@ -22,9 +22,12 @@ export const Backdrop = styled(Flexbox)<BackdropProps>`
   width: 100%;
   z-index: ${({ theme }) => theme.zIndex.modal};
 
-  ${({ theme }) => theme.media.greaterThan(theme.breakpoints.sm)} {
-    background-color: ${({ theme }) => theme.color.modalBackdrop};
-  }
+  ${(p) =>
+    p.fullScreenMobile
+      ? `${p.theme.media.greaterThan(p.theme.breakpoints.sm)} {
+        background-color: ${p.theme.color.modalBackdrop};
+      }`
+      : `background-color: ${p.theme.color.modalBackdrop};`}
 `;
 
 const Dialog = styled(motion.div)<DialogProps>`
@@ -38,9 +41,14 @@ const Dialog = styled(motion.div)<DialogProps>`
   max-height: 100vh;
 
   ${({ theme }) => theme.media.lessThan(theme.breakpoints.sm)} {
-    width: 100%;
-    height: 100%;
-    transform: none !important; /* disables the appear animation */
+    ${(p) =>
+      p.fullScreenMobile
+        ? `
+          width: 100%;
+          height: 100%;
+          transform: none !important; /* disables the appear animation */
+        `
+        : `margin: ${p.theme.spacing.unit(2)}px`}
   }
 
   ${({ theme }) => theme.media.greaterThan(theme.breakpoints.sm)} {
@@ -60,24 +68,24 @@ const CloseButton = styled(NormalizedElements.Button)`
   cursor: pointer;
   position: absolute;
   transform: translateY(3px); /* to align with header */
-  top: ${p => p.theme.spacing.unit(PADDING_MOBILE)}px;
-  right: ${p => p.theme.spacing.unit(PADDING_MOBILE)}px;
+  top: ${(p) => p.theme.spacing.unit(PADDING_MOBILE)}px;
+  right: ${(p) => p.theme.spacing.unit(PADDING_MOBILE)}px;
 
   ${({ theme }) => theme.media.greaterThan(theme.breakpoints.sm)} {
-    top: ${p => p.theme.spacing.unit(PADDING_DESKTOP)}px;
-    right: ${p => p.theme.spacing.unit(PADDING_DESKTOP)}px;
+    top: ${(p) => p.theme.spacing.unit(PADDING_DESKTOP)}px;
+    right: ${(p) => p.theme.spacing.unit(PADDING_DESKTOP)}px;
   }
 `;
 
 export const Header = styled.div`
-  padding-bottom: ${p => p.theme.spacing.unit(4)}px;
-  padding-right: ${p => p.theme.spacing.unit(CLOSE_ICON_SIZE + 2)}px;
-  min-height: ${p => p.theme.spacing.unit(CLOSE_ICON_SIZE)}px;
+  padding-bottom: ${(p) => p.theme.spacing.unit(4)}px;
+  padding-right: ${(p) => p.theme.spacing.unit(CLOSE_ICON_SIZE + 2)}px;
+  min-height: ${(p) => p.theme.spacing.unit(CLOSE_ICON_SIZE)}px;
   flex: 0 0 auto;
 `;
 
 export const Footer = styled.div`
-  padding-top: ${p => p.theme.spacing.unit(4)}px;
+  padding-top: ${(p) => p.theme.spacing.unit(4)}px;
   flex: 0 0 auto;
 `;
 
@@ -91,6 +99,7 @@ export const ModalInner: React.FC<Props> = ({
   footer,
   hideClose = false,
   closeOnBackdropClick = false,
+  fullScreenMobile = true,
 }) => {
   const [show, setShow] = useState(false);
   const escapePress = useKeyPress('Escape');
@@ -152,6 +161,7 @@ export const ModalInner: React.FC<Props> = ({
             justifyContent="center"
             ref={backdropRef}
             onClick={handleBackdropClick}
+            fullScreenMobile={fullScreenMobile}
           >
             <Dialog
               aria-labelledby={titleId}
@@ -161,6 +171,7 @@ export const ModalInner: React.FC<Props> = ({
               {...animationProps}
               ref={dialogRef}
               onClick={handleDialogClick}
+              fullScreenMobile={fullScreenMobile}
             >
               {hasHeader && <Header>{title && <Title title={title} uid={titleId} />}</Header>}
               {children}

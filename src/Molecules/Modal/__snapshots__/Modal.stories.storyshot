@@ -122,7 +122,7 @@ exports[`Storyshots Molecules | Modal Close On Backdrop Click Story 1`] = `
 }
 
 .c0 {
-  background-image: linear-gradient(#00D200,#FF1900);
+  background-image: linear-gradient( #00D200,#FF1900 );
   position: absolute;
   right: 0;
   top: 0;
@@ -211,6 +211,7 @@ exports[`Storyshots Molecules | Modal Close On Backdrop Click Story 1`] = `
       >
         <div
           className="c1 c2"
+          fullScreenMobile={true}
           onClick={[Function]}
         >
           <div>
@@ -431,7 +432,7 @@ exports[`Storyshots Molecules | Modal Default 1`] = `
 }
 
 .c0 {
-  background-image: linear-gradient(#00D200,#FF1900);
+  background-image: linear-gradient( #00D200,#FF1900 );
   position: absolute;
   right: 0;
   top: 0;
@@ -520,6 +521,7 @@ exports[`Storyshots Molecules | Modal Default 1`] = `
       >
         <div
           className="c1 c2"
+          fullScreenMobile={true}
           onClick={[Function]}
         >
           <div>
@@ -680,7 +682,7 @@ exports[`Storyshots Molecules | Modal Hide Close button 1`] = `
 }
 
 .c0 {
-  background-image: linear-gradient(#00D200,#FF1900);
+  background-image: linear-gradient( #00D200,#FF1900 );
   position: absolute;
   right: 0;
   top: 0;
@@ -762,6 +764,7 @@ exports[`Storyshots Molecules | Modal Hide Close button 1`] = `
       >
         <div
           className="c1 c2"
+          fullScreenMobile={true}
           onClick={[Function]}
         >
           <div>
@@ -1114,7 +1117,7 @@ exports[`Storyshots Molecules | Modal Integration: Modal with a footer and Butto
 }
 
 .c0 {
-  background-image: linear-gradient(#00D200,#FF1900);
+  background-image: linear-gradient( #00D200,#FF1900 );
   position: absolute;
   right: 0;
   top: 0;
@@ -1203,6 +1206,7 @@ exports[`Storyshots Molecules | Modal Integration: Modal with a footer and Butto
       >
         <div
           className="c1 c2"
+          fullScreenMobile={true}
           onClick={[Function]}
         >
           <div>
@@ -1502,7 +1506,7 @@ exports[`Storyshots Molecules | Modal Node as Title 1`] = `
 }
 
 .c0 {
-  background-image: linear-gradient(#00D200,#FF1900);
+  background-image: linear-gradient( #00D200,#FF1900 );
   position: absolute;
   right: 0;
   top: 0;
@@ -1585,6 +1589,7 @@ exports[`Storyshots Molecules | Modal Node as Title 1`] = `
       >
         <div
           className="c1 c2"
+          fullScreenMobile={true}
           onClick={[Function]}
         >
           <div>
@@ -1682,6 +1687,504 @@ exports[`Storyshots Molecules | Modal Node as Title 1`] = `
               >
                 <path
                   className="c10"
+                  d="m 1 1 l 22 22 m -22 0 l 22 -22"
+                  strokeWidth={2}
+                />
+                <title>
+                  Close this modal
+                </title>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      data-focus-guard={true}
+      style={
+        Object {
+          "height": "0px",
+          "left": "1px",
+          "overflow": "hidden",
+          "padding": 0,
+          "position": "fixed",
+          "top": "1px",
+          "width": "1px",
+        }
+      }
+      tabIndex={0}
+    />
+  </portal-dummy>
+</div>
+`;
+
+exports[`Storyshots Molecules | Modal Not full screen mobile 1`] = `
+.c6 {
+  margin-bottom: 8px;
+}
+
+.c10 {
+  margin-right: 8px;
+}
+
+.c1 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c9 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+}
+
+.c15 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 20px;
+  height: 20px;
+  fill: #282823;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
+}
+
+.c16 {
+  stroke: #6E6E69;
+}
+
+.c5 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 1.2;
+}
+
+.c7 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.c12 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: inherit;
+  margin: 0;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.c11 {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  overflow: visible;
+  text-transform: none;
+  position: relative;
+  box-sizing: border-box;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  padding: 8px 16px;
+  min-height: 40px;
+  background-color: #FFFFFF;
+  color: #0046FF;
+  border: none;
+  border-radius: 0;
+  cursor: pointer;
+}
+
+.c11,
+.c11[type='button'],
+.c11[type='reset'],
+.c11[type='submit'] {
+  -webkit-appearance: button;
+}
+
+.c11::-moz-focus-inner,
+.c11[type='button']::-moz-focus-inner,
+.c11[type='reset']::-moz-focus-inner,
+.c11[type='submit']::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+.c11:-moz-focusring,
+.c11[type='button']:-moz-focusring,
+.c11[type='reset']:-moz-focusring,
+.c11[type='submit']:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+.c11::before {
+  content: '';
+  display: block;
+  position: absolute;
+  border: 2px solid #0046FF;
+  top: 0;
+  left: 0;
+  width: calc(100% - 4px);
+  height: calc(100% - 4px);
+}
+
+.c11:hover {
+  color: hsl(223.5,100%,40%);
+}
+
+.c11:hover::before {
+  border-color: hsl(223.5,100%,40%);
+}
+
+.c11:active {
+  color: hsl(223.5,100%,35%);
+}
+
+.c11:active::before {
+  border-color: hsl(223.5,100%,35%);
+}
+
+.c13 {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  overflow: visible;
+  text-transform: none;
+  position: relative;
+  box-sizing: border-box;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  padding: 8px 16px;
+  min-height: 40px;
+  background-color: #0046FF;
+  color: #FFFFFF;
+  border: none;
+  border-radius: 0;
+  cursor: pointer;
+}
+
+.c13,
+.c13[type='button'],
+.c13[type='reset'],
+.c13[type='submit'] {
+  -webkit-appearance: button;
+}
+
+.c13::-moz-focus-inner,
+.c13[type='button']::-moz-focus-inner,
+.c13[type='reset']::-moz-focus-inner,
+.c13[type='submit']::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+.c13:-moz-focusring,
+.c13[type='button']:-moz-focusring,
+.c13[type='reset']:-moz-focusring,
+.c13[type='submit']:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+.c13::before {
+  content: '';
+  display: block;
+  position: absolute;
+  border: 2px solid transparent;
+  top: 0;
+  left: 0;
+  width: calc(100% - 4px);
+  height: calc(100% - 4px);
+}
+
+.c13:hover {
+  background-color: hsl(223.5,100%,45%);
+}
+
+.c13:active {
+  background-color: hsl(223.5,100%,40%);
+}
+
+.c4 {
+  padding-right: 16px;
+}
+
+.c2 {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 500;
+  background-color: rgba(110,110,105,0.63);
+}
+
+.c14 {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  overflow: visible;
+  text-transform: none;
+  display: block;
+  background: none;
+  padding: 0;
+  border: 0;
+  cursor: pointer;
+  position: absolute;
+  -webkit-transform: translateY(3px);
+  -ms-transform: translateY(3px);
+  transform: translateY(3px);
+  top: 20px;
+  right: 20px;
+}
+
+.c14,
+.c14[type='button'],
+.c14[type='reset'],
+.c14[type='submit'] {
+  -webkit-appearance: button;
+}
+
+.c14::-moz-focus-inner,
+.c14[type='button']::-moz-focus-inner,
+.c14[type='reset']::-moz-focus-inner,
+.c14[type='submit']::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+.c14:-moz-focusring,
+.c14[type='button']:-moz-focusring,
+.c14[type='reset']:-moz-focusring,
+.c14[type='submit']:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+.c3 {
+  padding-bottom: 16px;
+  padding-right: 28px;
+  min-height: 20px;
+  -webkit-flex: 0 0 auto;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+}
+
+.c8 {
+  padding-top: 16px;
+  -webkit-flex: 0 0 auto;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+}
+
+.c0 {
+  background-image: linear-gradient( #00D200,#FF1900 );
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 20px;
+  height: 200vh;
+}
+
+@media (min-width:760px) {
+  .c5 {
+    font-size: 24px;
+    line-height: 1.1666666666666667;
+  }
+}
+
+@media (max-width:759px) {
+
+}
+
+@media (min-width:760px) {
+
+}
+
+@media (min-width:760px) {
+  .c14 {
+    top: 40px;
+    right: 40px;
+  }
+}
+
+<div>
+  <button
+    onClick={[Function]}
+    type="button"
+  >
+    Open modal
+  </button>
+  <div
+    className="c0"
+  />
+  <portal-dummy>
+    <div
+      data-focus-guard={true}
+      style={
+        Object {
+          "height": "0px",
+          "left": "1px",
+          "overflow": "hidden",
+          "padding": 0,
+          "position": "fixed",
+          "top": "1px",
+          "width": "1px",
+        }
+      }
+      tabIndex={0}
+    />
+    <div
+      data-focus-guard={true}
+      style={
+        Object {
+          "height": "0px",
+          "left": "1px",
+          "overflow": "hidden",
+          "padding": 0,
+          "position": "fixed",
+          "top": "1px",
+          "width": "1px",
+        }
+      }
+      tabIndex={1}
+    />
+    <div
+      data-focus-lock-disabled={false}
+      onBlur={[Function]}
+      onFocus={[Function]}
+    >
+      <div
+        onScrollCapture={[Function]}
+        onTouchMoveCapture={[Function]}
+        onWheelCapture={[Function]}
+      >
+        <div
+          className="c1 c2"
+          fullScreenMobile={false}
+          onClick={[Function]}
+        >
+          <div>
+            <div
+              className="c3"
+            >
+              <span
+                id="20val-ModalTitle"
+              >
+                <h2
+                  className="c4 c5"
+                >
+                  Dialog information
+                </h2>
+              </span>
+            </div>
+            <div
+              className="c6"
+            >
+              <p
+                className="c7"
+              >
+                Resize the window to see the result of setting fullScreenMobile to false.
+              </p>
+            </div>
+            <div
+              className="c8"
+            >
+              <div
+                className="c9"
+              >
+                <div
+                  className="c10"
+                >
+                  <button
+                    className="NormalizedButton__Button-ey7f5x-0 c11"
+                    onClick={[Function]}
+                    type="button"
+                  >
+                    <span>
+                      <span
+                        className="c12"
+                      >
+                        Cancel
+                      </span>
+                    </span>
+                  </button>
+                </div>
+                <button
+                  className="NormalizedButton__Button-ey7f5x-0 c13"
+                  onClick={[Function]}
+                  type="button"
+                >
+                  <span>
+                    <span
+                      className="c12"
+                    >
+                      Confirm
+                    </span>
+                  </span>
+                </button>
+              </div>
+            </div>
+            <button
+              className="NormalizedButton__Button-ey7f5x-0 c14"
+              onClick={[Function]}
+              type="button"
+            >
+              <svg
+                aria-hidden="false"
+                className="c15"
+                focusable="false"
+                preserveAspectRatio="xMidYMid meet"
+                role="img"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  className="c16"
                   d="m 1 1 l 22 22 m -22 0 l 22 -22"
                   strokeWidth={2}
                 />
@@ -1835,7 +2338,7 @@ exports[`Storyshots Molecules | Modal Uncontrolled behavior 1`] = `
 }
 
 .c0 {
-  background-image: linear-gradient(#00D200,#FF1900);
+  background-image: linear-gradient( #00D200,#FF1900 );
   position: absolute;
   right: 0;
   top: 0;
@@ -1918,6 +2421,7 @@ exports[`Storyshots Molecules | Modal Uncontrolled behavior 1`] = `
       >
         <div
           className="c1 c2"
+          fullScreenMobile={true}
           onClick={[Function]}
         >
           <div>
@@ -2125,7 +2629,7 @@ exports[`Storyshots Molecules | Modal Without header 1`] = `
 }
 
 .c0 {
-  background-image: linear-gradient(#00D200,#FF1900);
+  background-image: linear-gradient( #00D200,#FF1900 );
   position: absolute;
   right: 0;
   top: 0;
@@ -2207,6 +2711,7 @@ exports[`Storyshots Molecules | Modal Without header 1`] = `
       >
         <div
           className="c1 c2"
+          fullScreenMobile={true}
           onClick={[Function]}
         >
           <div>
