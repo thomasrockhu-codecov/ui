@@ -1,3 +1,17 @@
+# [3.24.0](https://github.com/nordnet/ui/compare/v3.23.3...v3.24.0) (2020-09-16)
+
+
+### Bug Fixes
+
+* update snapshot ([8df2730](https://github.com/nordnet/ui/commit/8df2730))
+* update story ([39618f3](https://github.com/nordnet/ui/commit/39618f3))
+* update story ([8f556fe](https://github.com/nordnet/ui/commit/8f556fe))
+
+
+### Features
+
+* add fullScreenMobile prop to modal ([7bed657](https://github.com/nordnet/ui/commit/7bed657))
+
 ## [3.23.3](https://github.com/nordnet/ui/compare/v3.23.2...v3.23.3) (2020-09-16)
 
 
