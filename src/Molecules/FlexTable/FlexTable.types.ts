@@ -24,6 +24,33 @@ export type Props = {
 
 export type FlexTableComponent = React.FC<Props>;
 
+//
+// export interface Props extends Partial<FlexTableProviderProps>, Omit<HtmlProps, 'id' | 'title'> {
+//   className?: string;
+// }
+// interface PropsWithTitle extends Props {
+//   title: ReactNode;
+//   id: string;
+// }
+//
+// interface PropsTwo extends Partial<FlexTableProviderProps>, Omit<HtmlProps, 'id' | 'title'> {
+//   className?: string;
+// }
+//
+// interface PropsWithTitle extends PropsTwo {
+//   id: string;
+//   title: ReactNode;
+// }
+//
+// interface PropsWithoutTitle extends PropsTwo {
+//   id: undefined; // TODO add so that id can be added without title if wanted
+//   title: undefined;
+// }
+//
+// type MyProps = PropsWithoutTitle | PropsWithTitle;
+//
+// export type FlexTableComponent = React.FC<MyProps>;
+
 export type FlexTableComponents = {
   CONSTANTS: typeof constants;
   Cell: CellComponent;
