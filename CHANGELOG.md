@@ -1,3 +1,10 @@
+## [3.23.3](https://github.com/nordnet/ui/compare/v3.23.2...v3.23.3) (2020-09-16)
+
+
+### Bug Fixes
+
+* 🐛 update filter icon with new design ([f8fb043](https://github.com/nordnet/ui/commit/f8fb043))
+
 ## [3.23.2](https://github.com/nordnet/ui/compare/v3.23.1...v3.23.2) (2020-09-15)
 
 
