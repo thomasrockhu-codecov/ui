@@ -1718,7 +1718,7 @@ exports[`Storyshots Molecules | Modal Node as Title 1`] = `
 </div>
 `;
 
-exports[`Storyshots Molecules | Modal Not full width mobile 1`] = `
+exports[`Storyshots Molecules | Modal Not full screen mobile 1`] = `
 .c6 {
   margin-bottom: 8px;
 }
@@ -1947,36 +1947,9 @@ exports[`Storyshots Molecules | Modal Not full width mobile 1`] = `
               <p
                 className="c7"
               >
-                Modals should be used with care as they are quite intrusive on the user experience and demand immediate attention (while also blocking all other actions on the site). Always consider if you can solve a problem in another way first before you choose to go with the modal.
+                Resize the window to see the result of setting fullScreenMobile to false.
               </p>
             </div>
-            <div
-              className="c6"
-            >
-              <p
-                className="c7"
-              >
-                That being said they are a good tool if you need to grab the users attention, either to communicate something very important or make them take an action before proceeding.
-              </p>
-            </div>
-            <div
-              className="c6"
-            >
-              <p
-                className="c7"
-              >
-                Nielsen/Norman has an excellent article about their usage here
-              </p>
-            </div>
-            <p
-              className="c7"
-            >
-              <a
-                href="https:// www.nngroup.com/articles/modal-nonmodal-dialog/"
-              >
-                https:// www.nngroup.com/articles/modal-nonmodal-dialog/
-              </a>
-            </p>
             <button
               className="NormalizedButton__Button-ey7f5x-0 c8"
               onClick={[Function]}
