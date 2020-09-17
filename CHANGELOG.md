@@ -1,3 +1,15 @@
+# [3.25.0](https://github.com/nordnet/ui/compare/v3.24.0...v3.25.0) (2020-09-17)
+
+
+### Bug Fixes
+
+* 🐛 replace icon to icon with path instead of text ([ff5315a](https://github.com/nordnet/ui/commit/ff5315a))
+
+
+### Features
+
+* 🎸 add tax icon ([8752bbc](https://github.com/nordnet/ui/commit/8752bbc))
+
 # [3.24.0](https://github.com/nordnet/ui/compare/v3.23.3...v3.24.0) (2020-09-16)
 
 
