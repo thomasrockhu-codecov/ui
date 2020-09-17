@@ -22,6 +22,7 @@ const StyledDiv = styled.div`
   }
 `;
 
+// Note that wrapping FlexTable in styled makes the type requirement to use id and title together not work
 const StyledFlexTable = styled(FlexTable)`
   &:not(:last-of-type) {
     margin-bottom: ${(p) => p.theme.spacing.unit(10)}px;
