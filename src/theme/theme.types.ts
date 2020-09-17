@@ -274,6 +274,20 @@ export type ThemeColors<Version extends ThemeColorsVersion> = {
   progressBarActive: RawColor['cta'];
   /** gray4 */
   progressBarNext: RawColor['gray4'];
+  /** gray6 */
+  indexFundsBackground: RawColor['gray6'];
+  /** brandBlue */
+  indexFundsNorwegianAccent: RawColor['brandBlue'];
+  /** brandPink */
+  indexFundsFinnishAccent0: RawColor['brandPink'];
+  /** brandBlue */
+  indexFundsFinnishAccent1: RawColor['brandBlue'];
+  /** complementaryBlue2 */
+  indexFundsFinnishAccent2: RawColor['complementaryBlue2'];
+  /** black */
+  indexFundsFinnishAccent3: RawColor['black'];
+  /** complementaryTurquoise1 */
+  indexFundsFinnishAccent4: RawColor['complementaryTurquoise1'];
   paletteMap: string[];
   palettePink: string[];
   paletteGreen: string[];
