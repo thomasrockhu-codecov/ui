@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Storyshots Molecules | FlexTable / FlexTable with different headers Controlled Sortable Headers 1`] = `
-.c4 {
+.c3 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -15,16 +15,16 @@ exports[`Storyshots Molecules | FlexTable / FlexTable with different headers Con
   margin-right: -4px;
 }
 
-.c4 > * {
+.c3 > * {
   padding-left: 4px;
   padding-right: 4px;
 }
 
-.c4 > *:not(:first-child) {
+.c3 > *:not(:first-child) {
   padding-top: 0;
 }
 
-.c7 {
+.c6 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -38,7 +38,7 @@ exports[`Storyshots Molecules | FlexTable / FlexTable with different headers Con
   flex: 1;
 }
 
-.c10 {
+.c9 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -46,11 +46,11 @@ exports[`Storyshots Molecules | FlexTable / FlexTable with different headers Con
   display: flex;
 }
 
-.c12 {
+.c11 {
   box-sizing: border-box;
 }
 
-.c17 {
+.c16 {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -74,7 +74,7 @@ exports[`Storyshots Molecules | FlexTable / FlexTable with different headers Con
   line-height: 1.3333333333333333;
 }
 
-.c16 {
+.c15 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #6E6E69;
   margin: 0;
@@ -83,7 +83,7 @@ exports[`Storyshots Molecules | FlexTable / FlexTable with different headers Con
   line-height: 1.4285714285714286;
 }
 
-.c14 {
+.c13 {
   display: inline-block;
   width: 100%;
   text-overflow: ellipsis;
@@ -91,7 +91,7 @@ exports[`Storyshots Molecules | FlexTable / FlexTable with different headers Con
   overflow: hidden;
 }
 
-.c13 {
+.c12 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -99,11 +99,11 @@ exports[`Storyshots Molecules | FlexTable / FlexTable with different headers Con
   min-width: 0;
 }
 
-.c15 {
+.c14 {
   width: inherit;
 }
 
-.c5 {
+.c4 {
   background: #FFFFFF;
   border-bottom: 1px solid #EBEBE8;
   padding-right: 4px;
@@ -115,15 +115,15 @@ exports[`Storyshots Molecules | FlexTable / FlexTable with different headers Con
   margin-left: 0;
 }
 
-.c5 > *:first-child {
+.c4 > *:first-child {
   padding-left: 0;
 }
 
-.c5 > *:last-child {
+.c4 > *:last-child {
   padding-right: 0;
 }
 
-.c6 {
+.c5 {
   z-index: 1;
   position: -webkit-sticky;
   position: sticky;
@@ -131,11 +131,11 @@ exports[`Storyshots Molecules | FlexTable / FlexTable with different headers Con
   border-bottom: 1px solid #282823;
 }
 
-.c18 {
+.c17 {
   margin-left: 4px;
 }
 
-.c9 {
+.c8 {
   -webkit-box-pack: inherit;
   -webkit-justify-content: inherit;
   -ms-flex-pack: inherit;
@@ -146,14 +146,14 @@ exports[`Storyshots Molecules | FlexTable / FlexTable with different headers Con
   width: 100%;
 }
 
-.c11 {
+.c10 {
   -webkit-box-pack: inherit;
   -webkit-justify-content: inherit;
   -ms-flex-pack: inherit;
   justify-content: inherit;
 }
 
-.c8 {
+.c7 {
   overflow: hidden;
 }
 
@@ -166,10 +166,6 @@ exports[`Storyshots Molecules | FlexTable / FlexTable with different headers Con
 }
 
 .c0:not(:last-of-type) {
-  margin-bottom: 40px;
-}
-
-.c3:not(:last-of-type) {
   margin-bottom: 40px;
 }
 
@@ -189,47 +185,47 @@ exports[`Storyshots Molecules | FlexTable / FlexTable with different headers Con
     Controlled Sortable Headers
   </span>
   <div
-    className="c2 c3"
+    className="c2"
     role="table"
   >
     <div
-      className="c4 c5 c6"
+      className="c3 c4 c5"
       role="row"
     >
       <div
         aria-sort="none"
-        className="c7 c8"
+        className="c6 c7"
         role="columnheader"
       >
         <a
-          className="c9"
+          className="c8"
           href="#"
           onClick={[Function]}
           onKeyDown={[Function]}
           role="button"
         >
           <div
-            className="c10 c11"
+            className="c9 c10"
           >
             <div
-              className="c12 c13"
+              className="c11 c12"
             >
               <div
-                className="c14 c15"
+                className="c13 c14"
               >
                 <span
-                  className="c16"
+                  className="c15"
                 >
                   Controlled1
                 </span>
               </div>
             </div>
             <div
-              className="c12"
+              className="c11"
             >
               <svg
                 aria-hidden="true"
-                className="c17 c18"
+                className="c16 c17"
                 focusable="false"
                 preserveAspectRatio="xMidYMid meet"
                 role="presentation"
@@ -245,38 +241,38 @@ exports[`Storyshots Molecules | FlexTable / FlexTable with different headers Con
       </div>
       <div
         aria-sort="none"
-        className="c7 c8"
+        className="c6 c7"
         role="columnheader"
       >
         <a
-          className="c9"
+          className="c8"
           href="#"
           onClick={[Function]}
           onKeyDown={[Function]}
           role="button"
         >
           <div
-            className="c10 c11"
+            className="c9 c10"
           >
             <div
-              className="c12 c13"
+              className="c11 c12"
             >
               <div
-                className="c14 c15"
+                className="c13 c14"
               >
                 <span
-                  className="c16"
+                  className="c15"
                 >
                   Controlled2
                 </span>
               </div>
             </div>
             <div
-              className="c12"
+              className="c11"
             >
               <svg
                 aria-hidden="true"
-                className="c17 c18"
+                className="c16 c17"
                 focusable="false"
                 preserveAspectRatio="xMidYMid meet"
                 role="presentation"
@@ -291,14 +287,14 @@ exports[`Storyshots Molecules | FlexTable / FlexTable with different headers Con
         </a>
       </div>
       <div
-        className="c7 c8"
+        className="c6 c7"
         role="columnheader"
       >
         <div
-          className="c14 c15"
+          className="c13 c14"
         >
           <span
-            className="c16"
+            className="c15"
           >
             Not sortable
           </span>
@@ -306,38 +302,38 @@ exports[`Storyshots Molecules | FlexTable / FlexTable with different headers Con
       </div>
       <div
         aria-sort="none"
-        className="c7 c8"
+        className="c6 c7"
         role="columnheader"
       >
         <a
-          className="c9"
+          className="c8"
           href="#"
           onClick={[Function]}
           onKeyDown={[Function]}
           role="button"
         >
           <div
-            className="c10 c11"
+            className="c9 c10"
           >
             <div
-              className="c12 c13"
+              className="c11 c12"
             >
               <div
-                className="c14 c15"
+                className="c13 c14"
               >
                 <span
-                  className="c16"
+                  className="c15"
                 >
                   Controlled3
                 </span>
               </div>
             </div>
             <div
-              className="c12"
+              className="c11"
             >
               <svg
                 aria-hidden="true"
-                className="c17 c18"
+                className="c16 c17"
                 focusable="false"
                 preserveAspectRatio="xMidYMid meet"
                 role="presentation"
@@ -357,7 +353,7 @@ exports[`Storyshots Molecules | FlexTable / FlexTable with different headers Con
 `;
 
 exports[`Storyshots Molecules | FlexTable / FlexTable with different headers Default Table Headers 1`] = `
-.c17 {
+.c16 {
   height: 12px;
   box-sizing: border-box;
   display: inline-block;
@@ -368,7 +364,7 @@ exports[`Storyshots Molecules | FlexTable / FlexTable with different headers Def
   overflow: hidden;
 }
 
-.c4 {
+.c3 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -382,16 +378,16 @@ exports[`Storyshots Molecules | FlexTable / FlexTable with different headers Def
   margin-right: -4px;
 }
 
-.c4 > * {
+.c3 > * {
   padding-left: 4px;
   padding-right: 4px;
 }
 
-.c4 > *:not(:first-child) {
+.c3 > *:not(:first-child) {
   padding-top: 0;
 }
 
-.c7 {
+.c6 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -405,7 +401,7 @@ exports[`Storyshots Molecules | FlexTable / FlexTable with different headers Def
   flex: 1;
 }
 
-.c12 {
+.c11 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -419,7 +415,7 @@ exports[`Storyshots Molecules | FlexTable / FlexTable with different headers Def
   flex: 3;
 }
 
-.c14 {
+.c13 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -427,11 +423,11 @@ exports[`Storyshots Molecules | FlexTable / FlexTable with different headers Def
   display: flex;
 }
 
-.c16 {
+.c15 {
   box-sizing: border-box;
 }
 
-.c19 {
+.c18 {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -455,7 +451,7 @@ exports[`Storyshots Molecules | FlexTable / FlexTable with different headers Def
   line-height: 1.3333333333333333;
 }
 
-.c11 {
+.c10 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #6E6E69;
   margin: 0;
@@ -464,7 +460,7 @@ exports[`Storyshots Molecules | FlexTable / FlexTable with different headers Def
   line-height: 1.4285714285714286;
 }
 
-.c9 {
+.c8 {
   display: inline-block;
   width: 100%;
   text-overflow: ellipsis;
@@ -472,7 +468,7 @@ exports[`Storyshots Molecules | FlexTable / FlexTable with different headers Def
   overflow: hidden;
 }
 
-.c18 {
+.c17 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -480,11 +476,11 @@ exports[`Storyshots Molecules | FlexTable / FlexTable with different headers Def
   min-width: 0;
 }
 
-.c10 {
+.c9 {
   width: inherit;
 }
 
-.c5 {
+.c4 {
   background: #FFFFFF;
   border-bottom: 1px solid #EBEBE8;
   padding-right: 4px;
@@ -496,15 +492,15 @@ exports[`Storyshots Molecules | FlexTable / FlexTable with different headers Def
   margin-left: 0;
 }
 
-.c5 > *:first-child {
+.c4 > *:first-child {
   padding-left: 0;
 }
 
-.c5 > *:last-child {
+.c4 > *:last-child {
   padding-right: 0;
 }
 
-.c6 {
+.c5 {
   z-index: 1;
   position: -webkit-sticky;
   position: sticky;
@@ -512,11 +508,11 @@ exports[`Storyshots Molecules | FlexTable / FlexTable with different headers Def
   border-bottom: 1px solid #282823;
 }
 
-.c20 {
+.c19 {
   margin-left: 4px;
 }
 
-.c13 {
+.c12 {
   -webkit-box-pack: inherit;
   -webkit-justify-content: inherit;
   -ms-flex-pack: inherit;
@@ -527,7 +523,7 @@ exports[`Storyshots Molecules | FlexTable / FlexTable with different headers Def
   width: 100%;
 }
 
-.c8 {
+.c7 {
   overflow: hidden;
 }
 
@@ -543,11 +539,7 @@ exports[`Storyshots Molecules | FlexTable / FlexTable with different headers Def
   margin-bottom: 40px;
 }
 
-.c3:not(:last-of-type) {
-  margin-bottom: 40px;
-}
-
-.c15 {
+.c14 {
   -webkit-box-pack: inherit;
   -webkit-justify-content: inherit;
   -ms-flex-pack: inherit;
@@ -570,36 +562,36 @@ exports[`Storyshots Molecules | FlexTable / FlexTable with different headers Def
     Table Header Variations
   </span>
   <div
-    className="c2 c3"
+    className="c2"
     role="table"
   >
     <div
-      className="c4 c5 c6"
+      className="c3 c4 c5"
       role="row"
     >
       <div
-        className="c7 c8"
+        className="c6 c7"
         role="columnheader"
       >
         <div
-          className="c9 c10"
+          className="c8 c9"
         >
           <span
-            className="c11"
+            className="c10"
           >
             Table header 1 flex 1
           </span>
         </div>
       </div>
       <div
-        className="c12 c8"
+        className="c11 c7"
         role="columnheader"
       >
         <div
-          className="c9 c10"
+          className="c8 c9"
         >
           <span
-            className="c11"
+            className="c10"
           >
             Table header 2 flex 3
           </span>
@@ -607,24 +599,24 @@ exports[`Storyshots Molecules | FlexTable / FlexTable with different headers Def
       </div>
       <div
         aria-sort="none"
-        className="c7 c8"
+        className="c6 c7"
         role="columnheader"
       >
         <a
-          className="c13"
+          className="c12"
           href="#"
           onClick={[Function]}
           onKeyDown={[Function]}
           role="button"
         >
           <div
-            className="c14 c15"
+            className="c13 c14"
           >
             <div
-              className="c16"
+              className="c15"
             >
               <svg
-                className="c17"
+                className="c16"
                 focusable="false"
                 role="img"
                 viewBox="0 0 640 480"
@@ -664,24 +656,24 @@ exports[`Storyshots Molecules | FlexTable / FlexTable with different headers Def
               </svg>
             </div>
             <div
-              className="c16 c18"
+              className="c15 c17"
             >
               <div
-                className="c9 c10"
+                className="c8 c9"
               >
                 <span
-                  className="c11"
+                  className="c10"
                 >
                   Customised header
                 </span>
               </div>
             </div>
             <div
-              className="c16"
+              className="c15"
             >
               <svg
                 aria-hidden="true"
-                className="c19 c20"
+                className="c18 c19"
                 focusable="false"
                 preserveAspectRatio="xMidYMid meet"
                 role="presentation"
@@ -696,21 +688,21 @@ exports[`Storyshots Molecules | FlexTable / FlexTable with different headers Def
         </a>
       </div>
       <div
-        className="c7 c8"
+        className="c6 c7"
         role="columnheader"
       >
         <div
-          className="c9 c10"
+          className="c8 c9"
         >
           <span
-            className="c11"
+            className="c10"
           >
             Table header 3 no flex
           </span>
         </div>
       </div>
       <div
-        className="c7 c8"
+        className="c6 c7"
         role="columnheader"
       >
         <span
@@ -725,7 +717,7 @@ exports[`Storyshots Molecules | FlexTable / FlexTable with different headers Def
 `;
 
 exports[`Storyshots Molecules | FlexTable / FlexTable with different headers Sortable Header Uncontrolled With Different Alignment 1`] = `
-.c4 {
+.c3 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -739,16 +731,16 @@ exports[`Storyshots Molecules | FlexTable / FlexTable with different headers Sor
   margin-right: -4px;
 }
 
-.c4 > * {
+.c3 > * {
   padding-left: 4px;
   padding-right: 4px;
 }
 
-.c4 > *:not(:first-child) {
+.c3 > *:not(:first-child) {
   padding-top: 0;
 }
 
-.c7 {
+.c6 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -766,7 +758,7 @@ exports[`Storyshots Molecules | FlexTable / FlexTable with different headers Sor
   flex: 1;
 }
 
-.c10 {
+.c9 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -774,11 +766,11 @@ exports[`Storyshots Molecules | FlexTable / FlexTable with different headers Sor
   display: flex;
 }
 
-.c12 {
+.c11 {
   box-sizing: border-box;
 }
 
-.c19 {
+.c18 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -796,7 +788,7 @@ exports[`Storyshots Molecules | FlexTable / FlexTable with different headers Sor
   flex: 1;
 }
 
-.c20 {
+.c19 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -810,7 +802,7 @@ exports[`Storyshots Molecules | FlexTable / FlexTable with different headers Sor
   flex: 1;
 }
 
-.c17 {
+.c16 {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -834,7 +826,7 @@ exports[`Storyshots Molecules | FlexTable / FlexTable with different headers Sor
   line-height: 1.3333333333333333;
 }
 
-.c16 {
+.c15 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #6E6E69;
   margin: 0;
@@ -843,7 +835,7 @@ exports[`Storyshots Molecules | FlexTable / FlexTable with different headers Sor
   line-height: 1.4285714285714286;
 }
 
-.c14 {
+.c13 {
   display: inline-block;
   width: 100%;
   text-overflow: ellipsis;
@@ -851,7 +843,7 @@ exports[`Storyshots Molecules | FlexTable / FlexTable with different headers Sor
   overflow: hidden;
 }
 
-.c13 {
+.c12 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -859,11 +851,11 @@ exports[`Storyshots Molecules | FlexTable / FlexTable with different headers Sor
   min-width: 0;
 }
 
-.c15 {
+.c14 {
   width: inherit;
 }
 
-.c5 {
+.c4 {
   background: #FFFFFF;
   border-bottom: 1px solid #EBEBE8;
   padding-right: 4px;
@@ -875,15 +867,15 @@ exports[`Storyshots Molecules | FlexTable / FlexTable with different headers Sor
   margin-left: 0;
 }
 
-.c5 > *:first-child {
+.c4 > *:first-child {
   padding-left: 0;
 }
 
-.c5 > *:last-child {
+.c4 > *:last-child {
   padding-right: 0;
 }
 
-.c6 {
+.c5 {
   z-index: 1;
   position: -webkit-sticky;
   position: sticky;
@@ -891,11 +883,11 @@ exports[`Storyshots Molecules | FlexTable / FlexTable with different headers Sor
   border-bottom: 1px solid #282823;
 }
 
-.c18 {
+.c17 {
   margin-left: 4px;
 }
 
-.c9 {
+.c8 {
   -webkit-box-pack: inherit;
   -webkit-justify-content: inherit;
   -ms-flex-pack: inherit;
@@ -906,14 +898,14 @@ exports[`Storyshots Molecules | FlexTable / FlexTable with different headers Sor
   width: 100%;
 }
 
-.c11 {
+.c10 {
   -webkit-box-pack: inherit;
   -webkit-justify-content: inherit;
   -ms-flex-pack: inherit;
   justify-content: inherit;
 }
 
-.c8 {
+.c7 {
   overflow: hidden;
 }
 
@@ -926,10 +918,6 @@ exports[`Storyshots Molecules | FlexTable / FlexTable with different headers Sor
 }
 
 .c0:not(:last-of-type) {
-  margin-bottom: 40px;
-}
-
-.c3:not(:last-of-type) {
   margin-bottom: 40px;
 }
 
@@ -949,47 +937,47 @@ exports[`Storyshots Molecules | FlexTable / FlexTable with different headers Sor
     Uncontrolled Sortable Headers With Different Alignments
   </span>
   <div
-    className="c2 c3"
+    className="c2"
     role="table"
   >
     <div
-      className="c4 c5 c6"
+      className="c3 c4 c5"
       role="row"
     >
       <div
         aria-sort="none"
-        className="c7 c8"
+        className="c6 c7"
         role="columnheader"
       >
         <a
-          className="c9"
+          className="c8"
           href="#"
           onClick={[Function]}
           onKeyDown={[Function]}
           role="button"
         >
           <div
-            className="c10 c11"
+            className="c9 c10"
           >
             <div
-              className="c12 c13"
+              className="c11 c12"
             >
               <div
-                className="c14 c15"
+                className="c13 c14"
               >
                 <span
-                  className="c16"
+                  className="c15"
                 >
                   Uncontrolled center
                 </span>
               </div>
             </div>
             <div
-              className="c12"
+              className="c11"
             >
               <svg
                 aria-hidden="true"
-                className="c17 c18"
+                className="c16 c17"
                 focusable="false"
                 preserveAspectRatio="xMidYMid meet"
                 role="presentation"
@@ -1005,38 +993,38 @@ exports[`Storyshots Molecules | FlexTable / FlexTable with different headers Sor
       </div>
       <div
         aria-sort="none"
-        className="c19 c8"
+        className="c18 c7"
         role="columnheader"
       >
         <a
-          className="c9"
+          className="c8"
           href="#"
           onClick={[Function]}
           onKeyDown={[Function]}
           role="button"
         >
           <div
-            className="c10 c11"
+            className="c9 c10"
           >
             <div
-              className="c12 c13"
+              className="c11 c12"
             >
               <div
-                className="c14 c15"
+                className="c13 c14"
               >
                 <span
-                  className="c16"
+                  className="c15"
                 >
                   Uncontrolled right
                 </span>
               </div>
             </div>
             <div
-              className="c12"
+              className="c11"
             >
               <svg
                 aria-hidden="true"
-                className="c17 c18"
+                className="c16 c17"
                 focusable="false"
                 preserveAspectRatio="xMidYMid meet"
                 role="presentation"
@@ -1052,38 +1040,38 @@ exports[`Storyshots Molecules | FlexTable / FlexTable with different headers Sor
       </div>
       <div
         aria-sort="none"
-        className="c20 c8"
+        className="c19 c7"
         role="columnheader"
       >
         <a
-          className="c9"
+          className="c8"
           href="#"
           onClick={[Function]}
           onKeyDown={[Function]}
           role="button"
         >
           <div
-            className="c10 c11"
+            className="c9 c10"
           >
             <div
-              className="c12 c13"
+              className="c11 c12"
             >
               <div
-                className="c14 c15"
+                className="c13 c14"
               >
                 <span
-                  className="c16"
+                  className="c15"
                 >
                   Uncontrolled left
                 </span>
               </div>
             </div>
             <div
-              className="c12"
+              className="c11"
             >
               <svg
                 aria-hidden="true"
-                className="c17 c18"
+                className="c16 c17"
                 focusable="false"
                 preserveAspectRatio="xMidYMid meet"
                 role="presentation"
@@ -1098,14 +1086,14 @@ exports[`Storyshots Molecules | FlexTable / FlexTable with different headers Sor
         </a>
       </div>
       <div
-        className="c20 c8"
+        className="c19 c7"
         role="columnheader"
       >
         <div
-          className="c14 c15"
+          className="c13 c14"
         >
           <span
-            className="c16"
+            className="c15"
           >
             Not sortable
           </span>
@@ -1117,7 +1105,7 @@ exports[`Storyshots Molecules | FlexTable / FlexTable with different headers Sor
 `;
 
 exports[`Storyshots Molecules | FlexTable / FlexTable with different headers Sortable Headers Only Ascending Descending 1`] = `
-.c4 {
+.c3 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -1131,16 +1119,16 @@ exports[`Storyshots Molecules | FlexTable / FlexTable with different headers Sor
   margin-right: -4px;
 }
 
-.c4 > * {
+.c3 > * {
   padding-left: 4px;
   padding-right: 4px;
 }
 
-.c4 > *:not(:first-child) {
+.c3 > *:not(:first-child) {
   padding-top: 0;
 }
 
-.c7 {
+.c6 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -1154,7 +1142,7 @@ exports[`Storyshots Molecules | FlexTable / FlexTable with different headers Sor
   flex: 1;
 }
 
-.c10 {
+.c9 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -1162,11 +1150,11 @@ exports[`Storyshots Molecules | FlexTable / FlexTable with different headers Sor
   display: flex;
 }
 
-.c12 {
+.c11 {
   box-sizing: border-box;
 }
 
-.c17 {
+.c16 {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -1181,7 +1169,7 @@ exports[`Storyshots Molecules | FlexTable / FlexTable with different headers Sor
   vertical-align: middle;
 }
 
-.c21 {
+.c20 {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -1196,7 +1184,7 @@ exports[`Storyshots Molecules | FlexTable / FlexTable with different headers Sor
   vertical-align: middle;
 }
 
-.c18 {
+.c17 {
   -webkit-transform: rotate(0deg);
   -ms-transform: rotate(0deg);
   transform: rotate(0deg);
@@ -1211,7 +1199,7 @@ exports[`Storyshots Molecules | FlexTable / FlexTable with different headers Sor
   line-height: 1.3333333333333333;
 }
 
-.c16 {
+.c15 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
   margin: 0;
@@ -1220,7 +1208,7 @@ exports[`Storyshots Molecules | FlexTable / FlexTable with different headers Sor
   line-height: 1.4285714285714286;
 }
 
-.c20 {
+.c19 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #6E6E69;
   margin: 0;
@@ -1229,7 +1217,7 @@ exports[`Storyshots Molecules | FlexTable / FlexTable with different headers Sor
   line-height: 1.4285714285714286;
 }
 
-.c14 {
+.c13 {
   display: inline-block;
   width: 100%;
   text-overflow: ellipsis;
@@ -1237,7 +1225,7 @@ exports[`Storyshots Molecules | FlexTable / FlexTable with different headers Sor
   overflow: hidden;
 }
 
-.c13 {
+.c12 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -1245,11 +1233,11 @@ exports[`Storyshots Molecules | FlexTable / FlexTable with different headers Sor
   min-width: 0;
 }
 
-.c15 {
+.c14 {
   width: inherit;
 }
 
-.c5 {
+.c4 {
   background: #FFFFFF;
   border-bottom: 1px solid #EBEBE8;
   padding-right: 4px;
@@ -1261,15 +1249,15 @@ exports[`Storyshots Molecules | FlexTable / FlexTable with different headers Sor
   margin-left: 0;
 }
 
-.c5 > *:first-child {
+.c4 > *:first-child {
   padding-left: 0;
 }
 
-.c5 > *:last-child {
+.c4 > *:last-child {
   padding-right: 0;
 }
 
-.c6 {
+.c5 {
   z-index: 1;
   position: -webkit-sticky;
   position: sticky;
@@ -1277,15 +1265,15 @@ exports[`Storyshots Molecules | FlexTable / FlexTable with different headers Sor
   border-bottom: 1px solid #282823;
 }
 
-.c22 {
+.c21 {
   margin-left: 4px;
 }
 
-.c19 {
+.c18 {
   margin-left: 4px;
 }
 
-.c9 {
+.c8 {
   -webkit-box-pack: inherit;
   -webkit-justify-content: inherit;
   -ms-flex-pack: inherit;
@@ -1296,14 +1284,14 @@ exports[`Storyshots Molecules | FlexTable / FlexTable with different headers Sor
   width: 100%;
 }
 
-.c11 {
+.c10 {
   -webkit-box-pack: inherit;
   -webkit-justify-content: inherit;
   -ms-flex-pack: inherit;
   justify-content: inherit;
 }
 
-.c8 {
+.c7 {
   overflow: hidden;
 }
 
@@ -1316,10 +1304,6 @@ exports[`Storyshots Molecules | FlexTable / FlexTable with different headers Sor
 }
 
 .c0:not(:last-of-type) {
-  margin-bottom: 40px;
-}
-
-.c3:not(:last-of-type) {
   margin-bottom: 40px;
 }
 
@@ -1339,47 +1323,47 @@ exports[`Storyshots Molecules | FlexTable / FlexTable with different headers Sor
     Sortable Headers – Only Ascending/Descending
   </span>
   <div
-    className="c2 c3"
+    className="c2"
     role="table"
   >
     <div
-      className="c4 c5 c6"
+      className="c3 c4 c5"
       role="row"
     >
       <div
         aria-sort="ascending"
-        className="c7 c8"
+        className="c6 c7"
         role="columnheader"
       >
         <a
-          className="c9"
+          className="c8"
           href="#"
           onClick={[Function]}
           onKeyDown={[Function]}
           role="button"
         >
           <div
-            className="c10 c11"
+            className="c9 c10"
           >
             <div
-              className="c12 c13"
+              className="c11 c12"
             >
               <div
-                className="c14 c15"
+                className="c13 c14"
               >
                 <span
-                  className="c16"
+                  className="c15"
                 >
                   Controlled1
                 </span>
               </div>
             </div>
             <div
-              className="c12"
+              className="c11"
             >
               <svg
                 aria-hidden="true"
-                className="c17 c18 c19"
+                className="c16 c17 c18"
                 direction="ascending"
                 focusable="false"
                 preserveAspectRatio="xMidYMid meet"
@@ -1398,38 +1382,38 @@ exports[`Storyshots Molecules | FlexTable / FlexTable with different headers Sor
       </div>
       <div
         aria-sort="none"
-        className="c7 c8"
+        className="c6 c7"
         role="columnheader"
       >
         <a
-          className="c9"
+          className="c8"
           href="#"
           onClick={[Function]}
           onKeyDown={[Function]}
           role="button"
         >
           <div
-            className="c10 c11"
+            className="c9 c10"
           >
             <div
-              className="c12 c13"
+              className="c11 c12"
             >
               <div
-                className="c14 c15"
+                className="c13 c14"
               >
                 <span
-                  className="c20"
+                  className="c19"
                 >
                   Controlled2
                 </span>
               </div>
             </div>
             <div
-              className="c12"
+              className="c11"
             >
               <svg
                 aria-hidden="true"
-                className="c21 c22"
+                className="c20 c21"
                 focusable="false"
                 preserveAspectRatio="xMidYMid meet"
                 role="presentation"
@@ -1444,14 +1428,14 @@ exports[`Storyshots Molecules | FlexTable / FlexTable with different headers Sor
         </a>
       </div>
       <div
-        className="c7 c8"
+        className="c6 c7"
         role="columnheader"
       >
         <div
-          className="c14 c15"
+          className="c13 c14"
         >
           <span
-            className="c20"
+            className="c19"
           >
             Not sortable
           </span>
@@ -1459,38 +1443,38 @@ exports[`Storyshots Molecules | FlexTable / FlexTable with different headers Sor
       </div>
       <div
         aria-sort="none"
-        className="c7 c8"
+        className="c6 c7"
         role="columnheader"
       >
         <a
-          className="c9"
+          className="c8"
           href="#"
           onClick={[Function]}
           onKeyDown={[Function]}
           role="button"
         >
           <div
-            className="c10 c11"
+            className="c9 c10"
           >
             <div
-              className="c12 c13"
+              className="c11 c12"
             >
               <div
-                className="c14 c15"
+                className="c13 c14"
               >
                 <span
-                  className="c20"
+                  className="c19"
                 >
                   Controlled3
                 </span>
               </div>
             </div>
             <div
-              className="c12"
+              className="c11"
             >
               <svg
                 aria-hidden="true"
-                className="c21 c22"
+                className="c20 c21"
                 focusable="false"
                 preserveAspectRatio="xMidYMid meet"
                 role="presentation"
@@ -1510,7 +1494,7 @@ exports[`Storyshots Molecules | FlexTable / FlexTable with different headers Sor
 `;
 
 exports[`Storyshots Molecules | FlexTable / FlexTable with different headers Uncontrolled Sortable Headers 1`] = `
-.c4 {
+.c3 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -1524,16 +1508,16 @@ exports[`Storyshots Molecules | FlexTable / FlexTable with different headers Unc
   margin-right: -4px;
 }
 
-.c4 > * {
+.c3 > * {
   padding-left: 4px;
   padding-right: 4px;
 }
 
-.c4 > *:not(:first-child) {
+.c3 > *:not(:first-child) {
   padding-top: 0;
 }
 
-.c7 {
+.c6 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -1547,7 +1531,7 @@ exports[`Storyshots Molecules | FlexTable / FlexTable with different headers Unc
   flex: 1;
 }
 
-.c10 {
+.c9 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -1555,11 +1539,11 @@ exports[`Storyshots Molecules | FlexTable / FlexTable with different headers Unc
   display: flex;
 }
 
-.c12 {
+.c11 {
   box-sizing: border-box;
 }
 
-.c17 {
+.c16 {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -1574,7 +1558,7 @@ exports[`Storyshots Molecules | FlexTable / FlexTable with different headers Unc
   vertical-align: middle;
 }
 
-.c20 {
+.c19 {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -1589,7 +1573,7 @@ exports[`Storyshots Molecules | FlexTable / FlexTable with different headers Unc
   vertical-align: middle;
 }
 
-.c21 {
+.c20 {
   -webkit-transform: rotate(180deg);
   -ms-transform: rotate(180deg);
   transform: rotate(180deg);
@@ -1604,7 +1588,7 @@ exports[`Storyshots Molecules | FlexTable / FlexTable with different headers Unc
   line-height: 1.3333333333333333;
 }
 
-.c16 {
+.c15 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #6E6E69;
   margin: 0;
@@ -1613,7 +1597,7 @@ exports[`Storyshots Molecules | FlexTable / FlexTable with different headers Unc
   line-height: 1.4285714285714286;
 }
 
-.c19 {
+.c18 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
   margin: 0;
@@ -1622,7 +1606,7 @@ exports[`Storyshots Molecules | FlexTable / FlexTable with different headers Unc
   line-height: 1.4285714285714286;
 }
 
-.c14 {
+.c13 {
   display: inline-block;
   width: 100%;
   text-overflow: ellipsis;
@@ -1630,7 +1614,7 @@ exports[`Storyshots Molecules | FlexTable / FlexTable with different headers Unc
   overflow: hidden;
 }
 
-.c13 {
+.c12 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -1638,11 +1622,11 @@ exports[`Storyshots Molecules | FlexTable / FlexTable with different headers Unc
   min-width: 0;
 }
 
-.c15 {
+.c14 {
   width: inherit;
 }
 
-.c5 {
+.c4 {
   background: #FFFFFF;
   border-bottom: 1px solid #EBEBE8;
   padding-right: 4px;
@@ -1654,15 +1638,15 @@ exports[`Storyshots Molecules | FlexTable / FlexTable with different headers Unc
   margin-left: 0;
 }
 
-.c5 > *:first-child {
+.c4 > *:first-child {
   padding-left: 0;
 }
 
-.c5 > *:last-child {
+.c4 > *:last-child {
   padding-right: 0;
 }
 
-.c6 {
+.c5 {
   z-index: 1;
   position: -webkit-sticky;
   position: sticky;
@@ -1670,15 +1654,15 @@ exports[`Storyshots Molecules | FlexTable / FlexTable with different headers Unc
   border-bottom: 1px solid #282823;
 }
 
-.c18 {
+.c17 {
   margin-left: 4px;
 }
 
-.c22 {
+.c21 {
   margin-left: 4px;
 }
 
-.c9 {
+.c8 {
   -webkit-box-pack: inherit;
   -webkit-justify-content: inherit;
   -ms-flex-pack: inherit;
@@ -1689,14 +1673,14 @@ exports[`Storyshots Molecules | FlexTable / FlexTable with different headers Unc
   width: 100%;
 }
 
-.c11 {
+.c10 {
   -webkit-box-pack: inherit;
   -webkit-justify-content: inherit;
   -ms-flex-pack: inherit;
   justify-content: inherit;
 }
 
-.c8 {
+.c7 {
   overflow: hidden;
 }
 
@@ -1709,10 +1693,6 @@ exports[`Storyshots Molecules | FlexTable / FlexTable with different headers Unc
 }
 
 .c0:not(:last-of-type) {
-  margin-bottom: 40px;
-}
-
-.c3:not(:last-of-type) {
   margin-bottom: 40px;
 }
 
@@ -1732,47 +1712,47 @@ exports[`Storyshots Molecules | FlexTable / FlexTable with different headers Unc
     Uncontrolled Sortable Headers
   </span>
   <div
-    className="c2 c3"
+    className="c2"
     role="table"
   >
     <div
-      className="c4 c5 c6"
+      className="c3 c4 c5"
       role="row"
     >
       <div
         aria-sort="none"
-        className="c7 c8"
+        className="c6 c7"
         role="columnheader"
       >
         <a
-          className="c9"
+          className="c8"
           href="#"
           onClick={[Function]}
           onKeyDown={[Function]}
           role="button"
         >
           <div
-            className="c10 c11"
+            className="c9 c10"
           >
             <div
-              className="c12 c13"
+              className="c11 c12"
             >
               <div
-                className="c14 c15"
+                className="c13 c14"
               >
                 <span
-                  className="c16"
+                  className="c15"
                 >
                   Uncontrolled 1
                 </span>
               </div>
             </div>
             <div
-              className="c12"
+              className="c11"
             >
               <svg
                 aria-hidden="true"
-                className="c17 c18"
+                className="c16 c17"
                 focusable="false"
                 preserveAspectRatio="xMidYMid meet"
                 role="presentation"
@@ -1788,38 +1768,38 @@ exports[`Storyshots Molecules | FlexTable / FlexTable with different headers Unc
       </div>
       <div
         aria-sort="none"
-        className="c7 c8"
+        className="c6 c7"
         role="columnheader"
       >
         <a
-          className="c9"
+          className="c8"
           href="#"
           onClick={[Function]}
           onKeyDown={[Function]}
           role="button"
         >
           <div
-            className="c10 c11"
+            className="c9 c10"
           >
             <div
-              className="c12 c13"
+              className="c11 c12"
             >
               <div
-                className="c14 c15"
+                className="c13 c14"
               >
                 <span
-                  className="c16"
+                  className="c15"
                 >
                   Uncontrolled 2
                 </span>
               </div>
             </div>
             <div
-              className="c12"
+              className="c11"
             >
               <svg
                 aria-hidden="true"
-                className="c17 c18"
+                className="c16 c17"
                 focusable="false"
                 preserveAspectRatio="xMidYMid meet"
                 role="presentation"
@@ -1835,38 +1815,38 @@ exports[`Storyshots Molecules | FlexTable / FlexTable with different headers Unc
       </div>
       <div
         aria-sort="descending"
-        className="c7 c8"
+        className="c6 c7"
         role="columnheader"
       >
         <a
-          className="c9"
+          className="c8"
           href="#"
           onClick={[Function]}
           onKeyDown={[Function]}
           role="button"
         >
           <div
-            className="c10 c11"
+            className="c9 c10"
           >
             <div
-              className="c12 c13"
+              className="c11 c12"
             >
               <div
-                className="c14 c15"
+                className="c13 c14"
               >
                 <span
-                  className="c19"
+                  className="c18"
                 >
                   With initial sort order
                 </span>
               </div>
             </div>
             <div
-              className="c12"
+              className="c11"
             >
               <svg
                 aria-hidden="true"
-                className="c20 c21 c22"
+                className="c19 c20 c21"
                 direction="descending"
                 focusable="false"
                 preserveAspectRatio="xMidYMid meet"
@@ -1884,14 +1864,14 @@ exports[`Storyshots Molecules | FlexTable / FlexTable with different headers Unc
         </a>
       </div>
       <div
-        className="c7 c8"
+        className="c6 c7"
         role="columnheader"
       >
         <div
-          className="c14 c15"
+          className="c13 c14"
         >
           <span
-            className="c16"
+            className="c15"
           >
             Non sortable
           </span>
