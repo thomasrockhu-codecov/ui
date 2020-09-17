@@ -278,16 +278,8 @@ export type ThemeColors<Version extends ThemeColorsVersion> = {
   indexFundsBackground: RawColor['gray6'];
   /** brandBlue */
   indexFundsNorwegianAccent: RawColor['brandBlue'];
-  /** brandPink */
-  indexFundsFinnishAccent0: RawColor['brandPink'];
-  /** brandBlue */
-  indexFundsFinnishAccent1: RawColor['brandBlue'];
-  /** complementaryBlue2 */
-  indexFundsFinnishAccent2: RawColor['complementaryBlue2'];
-  /** black */
-  indexFundsFinnishAccent3: RawColor['black'];
-  /** complementaryTurquoise1 */
-  indexFundsFinnishAccent4: RawColor['complementaryTurquoise1'];
+  /** brandPink, brandBlue, complementaryBlue2, black, complementaryTurquoise1 */
+  indexFundsFinnishAccent: string[];
   paletteMap: string[];
   palettePink: string[];
   paletteGreen: string[];

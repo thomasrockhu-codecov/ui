@@ -243,11 +243,7 @@ const createColors = (type: ThemeColorsVersion): ThemeColors<typeof type> => {
     progressBarNext: rawColor.gray4,
     indexFundsBackground: rawColor.gray6,
     indexFundsNorwegianAccent: rawColor.brandBlue,
-    indexFundsFinnishAccent0: rawColor.brandPink,
-    indexFundsFinnishAccent1: rawColor.brandBlue,
-    indexFundsFinnishAccent2: rawColor.complementaryBlue2,
-    indexFundsFinnishAccent3: rawColor.black,
-    indexFundsFinnishAccent4: rawColor.complementaryTurquoise1,
+    indexFundsFinnishAccent: [rawColor.brandPink, rawColor.brandBlue, rawColor.complementaryBlue2, rawColor.black, rawColor.complementaryTurquoise1],
     paletteMap: [rawColor.complementaryBlue2, rawColor.complementaryBlue1, rawColor.brandBlue,
     rawColor.gray1, rawColor.gray3],
     palettePink: a11yColors ? paletteA11y :
