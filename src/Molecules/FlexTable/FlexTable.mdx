@@ -390,7 +390,7 @@ Conditionally expand `expandItems` and/or `expandChildren` can be implemented in
 const ConditionalMediaExpand = () => {
   const columnData = [{ label: 'Country', value: 'SE' }];
   return (
-    <StyledFlexTable expandable md={{ expandable: false }}>
+    <FlexTable expandable md={{ expandable: false }}>
       <FlexTable.HeaderRow>
         <FlexTable.Header columnId="instrumentName">Instrument Name</FlexTable.Header>
         <FlexTable.Header columnId="country" hidden md={{ hidden: false }}>
@@ -404,7 +404,7 @@ const ConditionalMediaExpand = () => {
           SE
         </FlexTable.Cell>
       </FlexTable.Row>
-    </StyledFlexTable>
+    </FlexTable>
   );
 };
 ```
