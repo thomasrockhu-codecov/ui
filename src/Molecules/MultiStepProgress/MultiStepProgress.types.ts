@@ -21,4 +21,9 @@ export type MultiStepProgressProps = {
   closeDrawerOnStepClick?: boolean;
 };
 
-export type MultiStepProgressComponent = React.FC<MultiStepProgressProps>;
+export type StickyProps = {
+  isSticky?: boolean;
+  stickyTopDistanceUnit?: number;
+};
+
+export type MultiStepProgressComponent = React.FC<MultiStepProgressProps & StickyProps>;

@@ -1550,6 +1550,1053 @@ Array [
 ]
 `;
 
+exports[`Storyshots Molecules | Multi Step Progress Is Sticky 1`] = `
+.c9 {
+  padding-left: 44px;
+  padding-top: 12px;
+  padding-right: 12px;
+  padding-bottom: 12px;
+}
+
+.c20 {
+  padding-left: 44px;
+  padding-top: 12px;
+  padding-right: 12px;
+  padding-bottom: 12px;
+}
+
+.c25 {
+  padding-left: 44px;
+  padding-right: 12px;
+}
+
+.c2 {
+  background: #FFFFFF;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.03);
+}
+
+.c0 {
+  display: grid;
+  box-sizing: border-box;
+  grid-template-areas: "sidebar";
+  grid-template-rows: auto;
+  grid-template-columns: 100fr;
+  grid-gap: 8px;
+  display: -ms-grid;
+  -ms-grid-rows: auto;
+  -ms-grid-columns: 100fr;
+}
+
+.c1 {
+  box-sizing: border-box;
+  min-width: 0;
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  -ms-grid-row-span: 1;
+  display: block;
+  grid-area: sidebar;
+}
+
+.c34 {
+  box-sizing: border-box;
+  min-width: 0;
+  display: none;
+  grid-area: none;
+}
+
+.c30 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c31 {
+  box-sizing: border-box;
+}
+
+.c11 {
+  position: absolute;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  -webkit-clip: rect(1px,1px,1px,1px);
+  clip: rect(1px,1px,1px,1px);
+}
+
+.c32 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 20px;
+  height: 20px;
+  fill: #282823;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
+}
+
+.c33 {
+  -webkit-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  transform: rotate(0deg);
+}
+
+.c8 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #A0A09B;
+  margin: 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.c12 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c18 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: inherit;
+  margin: 0;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c19 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.c26 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #A0A09B;
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c35 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.c16 {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  overflow: visible;
+  text-transform: none;
+  position: relative;
+  box-sizing: border-box;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  padding: 0;
+  background-color: transparent;
+  color: #282823;
+  border: none;
+  border-radius: 0;
+  cursor: pointer;
+}
+
+.c16,
+.c16[type='button'],
+.c16[type='reset'],
+.c16[type='submit'] {
+  -webkit-appearance: button;
+}
+
+.c16::-moz-focus-inner,
+.c16[type='button']::-moz-focus-inner,
+.c16[type='reset']::-moz-focus-inner,
+.c16[type='submit']::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+.c16:-moz-focusring,
+.c16[type='button']:-moz-focusring,
+.c16[type='reset']:-moz-focusring,
+.c16[type='submit']:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+.c13 {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+}
+
+.c14 {
+  width: 24px;
+  height: 24px;
+  background-color: #EBEBE8;
+  color: #A0A09B;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.c21 {
+  width: 24px;
+  height: 24px;
+  background-color: #0046FF;
+  color: #FFFFFF;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.c22 {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  padding-bottom: 12px;
+}
+
+.c24 {
+  display: block;
+}
+
+.c24 + .c23 {
+  padding-top: 8px;
+}
+
+.c5 {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.c28 {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.c7 {
+  display: block;
+  position: relative;
+  background-color: #FFFFFF;
+}
+
+.c7::before {
+  content: '';
+  display: block;
+  background: #0046FF;
+  width: 2px;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  -webkit-transition: opacity 0.16s ease-out;
+  transition: opacity 0.16s ease-out;
+  opacity: 0;
+}
+
+.c15 {
+  display: block;
+  position: relative;
+  background-color: #FFFFFF;
+}
+
+.c15::before {
+  content: '';
+  display: block;
+  background: #0046FF;
+  width: 2px;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  -webkit-transition: opacity 0.16s ease-out;
+  transition: opacity 0.16s ease-out;
+  opacity: 1;
+}
+
+.c10 {
+  position: relative;
+}
+
+.c17 {
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+}
+
+.c29 {
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+}
+
+.c29 > span {
+  width: 100%;
+}
+
+.c3 {
+  background: transparent;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 8px;
+}
+
+@media (min-width:760px) {
+  .c9 {
+    padding-left: 52px;
+  }
+}
+
+@media (min-width:760px) {
+  .c20 {
+    padding-left: 52px;
+    padding-right: 20px;
+  }
+}
+
+@media (min-width:760px) {
+  .c25 {
+    padding-left: 52px;
+    padding-right: 20px;
+  }
+}
+
+@media (min-width:760px) {
+  .c0 {
+    grid-template-areas: "sidebar page";
+    grid-template-columns: 1fr 2fr;
+    grid-gap: 20px;
+    display: -ms-grid;
+    -ms-grid-rows: 1fr;
+    -ms-grid-columns: 1fr 20px 2fr;
+  }
+}
+
+@media (min-width:760px) {
+  .c1 {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    -ms-grid-row-span: 1;
+    display: block;
+    grid-area: sidebar;
+  }
+}
+
+@media (min-width:760px) {
+  .c34 {
+    -ms-grid-row: 1;
+    -ms-grid-column: 3;
+    -ms-grid-column-span: 1;
+    -ms-grid-row-span: 1;
+    display: block;
+    grid-area: page;
+  }
+}
+
+@media not all and (min-width:976px) {
+  .c4 {
+    display: none;
+  }
+}
+
+@media not all and (max-width:975px) {
+  .c27 {
+    display: none;
+  }
+}
+
+@media (min-width:760px) {
+  .c13 {
+    left: 20px;
+  }
+}
+
+@media (max-width:975px) {
+  .c7 + .c6 {
+    border-top: 1px solid #EBEBE8;
+  }
+}
+
+@media (min-width:976px) {
+  .c7 + .c6 {
+    margin-top: 8px;
+  }
+}
+
+@media (max-width:975px) {
+  .c15 + .c6 {
+    border-top: 1px solid #EBEBE8;
+  }
+}
+
+@media (min-width:976px) {
+  .c15 + .c6 {
+    margin-top: 8px;
+  }
+}
+
+<div>
+  <div
+    className="c0"
+  >
+    <div
+      className="CssGrid__RawCssGridItem-bu5cxy-1 c1"
+    >
+      <div
+        className="c2 c3"
+      >
+        <div
+          aria-label="Progress"
+          role="group"
+        >
+          <div
+            className="c4"
+          >
+            <ol
+              className="c5"
+            >
+              <li
+                className="c6 c7"
+              >
+                <span
+                  className="c8"
+                >
+                  <div
+                    className="c9 c10"
+                  >
+                    <div
+                      className="c11"
+                    >
+                      Not completed
+                    </div>
+                    <span
+                      aria-hidden={true}
+                      className="c12 c13"
+                    >
+                      <span
+                        className="c14"
+                      >
+                        1
+                      </span>
+                    </span>
+                    Investment objective
+                  </div>
+                </span>
+              </li>
+              <li
+                className="c6 c15"
+              >
+                <button
+                  className="NormalizedButton__Button-ey7f5x-0 c16 c17"
+                  onClick={[Function]}
+                  type="button"
+                >
+                  <span
+                    className="c18"
+                  >
+                    <span
+                      className="c19"
+                    >
+                      <div
+                        className="c20 c10"
+                      >
+                        <span
+                          aria-hidden={true}
+                          className="c12 c13"
+                        >
+                          <span
+                            className="c21"
+                          >
+                            2
+                          </span>
+                        </span>
+                        Time and risk
+                      </div>
+                    </span>
+                  </span>
+                </button>
+                <ol
+                  className="c22"
+                >
+                  <li
+                    className="c23 c24"
+                  >
+                    <div
+                      className="c25"
+                    >
+                      <span
+                        className="c26"
+                      >
+                        <div
+                          className="c11"
+                        >
+                          Not completed
+                        </div>
+                        Investment period
+                      </span>
+                    </div>
+                  </li>
+                  <li
+                    className="c23 c24"
+                  >
+                    <div
+                      className="c25"
+                    >
+                      <span
+                        className="c26"
+                      >
+                        <div
+                          className="c11"
+                        >
+                          Not completed
+                        </div>
+                        Frequency
+                      </span>
+                    </div>
+                  </li>
+                  <li
+                    className="c23 c24"
+                  >
+                    <div
+                      className="c25"
+                    >
+                      <span
+                        className="c26"
+                      >
+                        <div
+                          className="c11"
+                        >
+                          Not completed
+                        </div>
+                        Amount
+                      </span>
+                    </div>
+                  </li>
+                </ol>
+              </li>
+              <li
+                className="c6 c7"
+              >
+                <span
+                  className="c8"
+                >
+                  <div
+                    className="c9 c10"
+                  >
+                    <div
+                      className="c11"
+                    >
+                      Not completed
+                    </div>
+                    <span
+                      aria-hidden={true}
+                      className="c12 c13"
+                    >
+                      <span
+                        className="c14"
+                      >
+                        3
+                      </span>
+                    </span>
+                    Allocations
+                  </div>
+                </span>
+              </li>
+            </ol>
+          </div>
+          <div
+            className="c27"
+          >
+            <ol
+              className="c28"
+            >
+              <li
+                className="c6 c15"
+              >
+                <button
+                  aria-expanded={false}
+                  className="NormalizedButton__Button-ey7f5x-0 c16 c29"
+                  onClick={[Function]}
+                  type="button"
+                >
+                  <span
+                    className="c18"
+                  >
+                    <span
+                      className="c19"
+                    >
+                      <div
+                        className="c20 c10"
+                      >
+                        <div
+                          className="c30"
+                        >
+                          <div
+                            className="c31"
+                          >
+                            <span
+                              aria-hidden={true}
+                              className="c12 c13"
+                            >
+                              <span
+                                className="c21"
+                              >
+                                2
+                              </span>
+                            </span>
+                            Time and risk
+                          </div>
+                          <div
+                            className="c31"
+                          >
+                            <svg
+                              aria-hidden="true"
+                              className="c32 c33"
+                              direction="down"
+                              focusable="false"
+                              preserveAspectRatio="xMidYMid meet"
+                              role="presentation"
+                              viewBox="0 0 16 16"
+                            >
+                              <polygon
+                                points="14.620 3.580, 16.000 5.020, 8.000 12.730, 0.000 5.030, 1.400 3.580, 8.000 9.96"
+                              />
+                            </svg>
+                          </div>
+                        </div>
+                      </div>
+                    </span>
+                  </span>
+                </button>
+              </li>
+            </ol>
+          </div>
+        </div>
+      </div>
+      <div
+        className="c27"
+      />
+    </div>
+    <div
+      className="CssGrid__RawCssGridItem-bu5cxy-1 c34"
+    >
+      <span
+        className="c35"
+      >
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+      </span>
+      <span
+        className="c35"
+      >
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+      </span>
+      <span
+        className="c35"
+      >
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+      </span>
+      <span
+        className="c35"
+      >
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+      </span>
+      <span
+        className="c35"
+      >
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+      </span>
+      <span
+        className="c35"
+      >
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+      </span>
+      <span
+        className="c35"
+      >
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+      </span>
+      <span
+        className="c35"
+      >
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+      </span>
+      <span
+        className="c35"
+      >
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+      </span>
+      <span
+        className="c35"
+      >
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+      </span>
+      <span
+        className="c35"
+      >
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+      </span>
+      <span
+        className="c35"
+      >
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+      </span>
+      <span
+        className="c35"
+      >
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+      </span>
+      <span
+        className="c35"
+      >
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+      </span>
+      <span
+        className="c35"
+      >
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+      </span>
+      <span
+        className="c35"
+      >
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+      </span>
+      <span
+        className="c35"
+      >
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+      </span>
+      <span
+        className="c35"
+      >
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+      </span>
+      <span
+        className="c35"
+      >
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+      </span>
+      <span
+        className="c35"
+      >
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+      </span>
+      <span
+        className="c35"
+      >
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+      </span>
+      <span
+        className="c35"
+      >
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+      </span>
+      <span
+        className="c35"
+      >
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+      </span>
+      <span
+        className="c35"
+      >
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+      </span>
+      <span
+        className="c35"
+      >
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+      </span>
+      <span
+        className="c35"
+      >
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+      </span>
+      <span
+        className="c35"
+      >
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+      </span>
+      <span
+        className="c35"
+      >
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+      </span>
+      <span
+        className="c35"
+      >
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+      </span>
+      <span
+        className="c35"
+      >
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+      </span>
+      <span
+        className="c35"
+      >
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+      </span>
+      <span
+        className="c35"
+      >
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+      </span>
+      <span
+        className="c35"
+      >
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+      </span>
+      <span
+        className="c35"
+      >
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+      </span>
+      <span
+        className="c35"
+      >
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+      </span>
+      <span
+        className="c35"
+      >
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+      </span>
+      <span
+        className="c35"
+      >
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+      </span>
+      <span
+        className="c35"
+      >
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+      </span>
+      <span
+        className="c35"
+      >
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+      </span>
+      <span
+        className="c35"
+      >
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+      </span>
+      <span
+        className="c35"
+      >
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+      </span>
+      <span
+        className="c35"
+      >
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+      </span>
+      <span
+        className="c35"
+      >
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+      </span>
+      <span
+        className="c35"
+      >
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+      </span>
+      <span
+        className="c35"
+      >
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+      </span>
+      <span
+        className="c35"
+      >
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+      </span>
+      <span
+        className="c35"
+      >
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+      </span>
+      <span
+        className="c35"
+      >
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+      </span>
+      <span
+        className="c35"
+      >
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+      </span>
+      <span
+        className="c35"
+      >
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+      </span>
+      <span
+        className="c35"
+      >
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+      </span>
+      <span
+        className="c35"
+      >
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+      </span>
+      <span
+        className="c35"
+      >
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+      </span>
+      <span
+        className="c35"
+      >
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+      </span>
+      <span
+        className="c35"
+      >
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+      </span>
+      <span
+        className="c35"
+      >
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+      </span>
+      <span
+        className="c35"
+      >
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+      </span>
+      <span
+        className="c35"
+      >
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+      </span>
+      <span
+        className="c35"
+      >
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+      </span>
+      <span
+        className="c35"
+      >
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+      </span>
+      <span
+        className="c35"
+      >
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+      </span>
+      <span
+        className="c35"
+      >
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+      </span>
+      <span
+        className="c35"
+      >
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+      </span>
+      <span
+        className="c35"
+      >
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+      </span>
+      <span
+        className="c35"
+      >
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+      </span>
+      <span
+        className="c35"
+      >
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+      </span>
+      <span
+        className="c35"
+      >
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+      </span>
+      <span
+        className="c35"
+      >
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+      </span>
+      <span
+        className="c35"
+      >
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+      </span>
+      <span
+        className="c35"
+      >
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+      </span>
+    </div>
+  </div>
+</div>
+`;
+
 exports[`Storyshots Molecules | Multi Step Progress Not Started Multi Step Progress 1`] = `
 Array [
   .c7 {

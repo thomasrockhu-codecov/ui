@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import styled from 'styled-components';
 import Card from '../../Atoms/Card';
 import { TopLevel } from './TopLevel';
-import { MultiStepProgressComponent } from './MultiStepProgress.types';
+import { MultiStepProgressComponent, StickyProps } from './MultiStepProgress.types';
 import { Drawer, Media, Flexbox, Typography } from '../..';
 
 const StyledDrawer = styled(Drawer)`
@@ -11,8 +11,17 @@ const StyledDrawer = styled(Drawer)`
   }
 `;
 
-const StyledCard = styled(Card)`
+const StyledCard = styled(Card).withConfig({
+  shouldForwardProp: (prop) => !['isSticky', 'stickyTopDistanceUnit'].includes(prop),
+})<StickyProps>`
   background: transparent;
+
+  ${({ isSticky, stickyTopDistanceUnit, theme }) =>
+    isSticky &&
+    `
+    position: sticky;
+    top: ${stickyTopDistanceUnit ? theme.spacing.unit(stickyTopDistanceUnit) : 0}px;
+  `}
 `;
 
 export const MultiStepProgress: MultiStepProgressComponent = ({
@@ -24,6 +33,8 @@ export const MultiStepProgress: MultiStepProgressComponent = ({
   titleNotDone = 'Not completed',
   mobileDrawerTitle = 'Start monthly savings',
   closeDrawerOnStepClick = false,
+  isSticky = false,
+  stickyTopDistanceUnit = 0,
 }) => {
   // TODO: use context to pass these lovely props down the rabbit hole
   const [open, setOpen] = useState(false);
@@ -43,7 +54,7 @@ export const MultiStepProgress: MultiStepProgressComponent = ({
 
   return (
     <>
-      <StyledCard>
+      <StyledCard isSticky={isSticky} stickyTopDistanceUnit={stickyTopDistanceUnit}>
         <div role="group" aria-label={title}>
           <TopLevel
             drawerOpen={open}
