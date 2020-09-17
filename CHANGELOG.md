@@ -1,3 +1,11 @@
+## [3.25.1](https://github.com/nordnet/ui/compare/v3.25.0...v3.25.1) (2020-09-17)
+
+
+### Bug Fixes
+
+* 🐛 add index funds colors ([fae63ee](https://github.com/nordnet/ui/commit/fae63ee))
+* 🐛 convert finnish index funds colors into array ([b2d5658](https://github.com/nordnet/ui/commit/b2d5658))
+
 # [3.25.0](https://github.com/nordnet/ui/compare/v3.24.0...v3.25.0) (2020-09-17)
 
 
