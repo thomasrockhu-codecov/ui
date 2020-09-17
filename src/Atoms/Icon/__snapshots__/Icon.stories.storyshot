@@ -3700,6 +3700,94 @@ Array [
       focusable="false"
       preserveAspectRatio="xMidYMid meet"
       role="presentation"
+      viewBox="0 0 68 76"
+    >
+      <g
+        fill="none"
+        fillRule="evenodd"
+      >
+        <path
+          d="M50.584 65.657v3.788a3.788 3.788 0 01-7.576 0v-5.05H11.443V6.312a3.788 3.788 0 013.787-3.788h36.617a6.213 6.213 0 00-1.263 3.788v24.354h2.525V16.414H63.21V6.313A6.313 6.313 0 0056.897 0H15.23a6.313 6.313 0 00-6.313 6.313v58.081H.08v5.051a6.313 6.313 0 006.313 6.313h40.404a6.313 6.313 0 006.313-6.313v-3.788h-2.525zM60.685 6.313v7.576H53.11V6.313a3.788 3.788 0 017.576 0zM6.392 73.233a3.788 3.788 0 01-3.788-3.788v-2.526h37.88v2.526c0 1.366.442 2.694 1.262 3.788H6.392z"
+          fill="#282823"
+          fillRule="nonzero"
+        />
+        <g
+          transform="translate(39.69 34.65)"
+        >
+          <text
+            fill="#282823"
+            fontFamily="NordnetSansMono-Bold, Nordnet Sans Mono"
+            fontSize="21.42"
+            fontWeight="bold"
+          >
+            <tspan
+              x="6.615"
+              y="20.788"
+            >
+              €
+            </tspan>
+          </text>
+          <circle
+            cx="13.466"
+            cy="13.466"
+            r="13.466"
+            stroke="#282823"
+            strokeWidth="2.362"
+          />
+        </g>
+        <text
+          fill="#282823"
+          fontFamily="NordnetSansMono-Bold, Nordnet Sans Mono"
+          fontSize="14.805"
+          fontWeight="bold"
+        >
+          <tspan
+            x="16.223"
+            y="20.615"
+          >
+            TAX
+          </tspan>
+        </text>
+        <g
+          stroke="#282823"
+          strokeLinecap="square"
+          strokeWidth="2"
+        >
+          <path
+            d="M18 26h25M19 30h24M31 34h12M22 34h5"
+          />
+        </g>
+      </g>
+    </svg>
+  </div>,
+  .c0 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 20px;
+  height: 20px;
+  fill: #0046FF;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
+}
+
+<div
+    style={
+      Object {
+        "display": "inline-block",
+        "outline": "1px dashed #bbb",
+      }
+    }
+  >
+    <svg
+      aria-hidden="true"
+      className="c0"
+      focusable="false"
+      preserveAspectRatio="xMidYMid meet"
+      role="presentation"
       viewBox="0 0 16 16"
     >
       <path
@@ -7567,6 +7655,92 @@ exports[`Storyshots Atoms | Icon Available icons 1`] = `
           <path
             d="M19.954738,12.2161631 L16,1 L12.044275,12.2161631 L0,12.4589803 L9.59859473,19.6324965 L6.11145618,31 L16,24.2167499 L25.8885438,31 L22.4004183,19.6324965 L32,12.4589803 L19.954738,12.2161631 Z M13.4580851,14.1348167 L15.999013,6.92559225 L18.5419149,14.1348167 L26.2811345,14.2893897 L20.1129047,18.9009071 L22.3540313,26.2043623 L16,21.846513 L9.64498173,26.2043623 L11.8870953,18.9009071 L5.7178785,14.2893897 L13.4580851,14.1348167 Z"
           />
+        </svg>
+      </div>
+    </div>
+  </div>
+  <div
+    className="c1"
+    direction="row"
+  >
+    <div
+      className="c2"
+    >
+      Tax
+    </div>
+    <div>
+      <div
+        style={
+          Object {
+            "display": "inline-block",
+            "outline": "1px dashed #bbb",
+          }
+        }
+      >
+        <svg
+          aria-hidden="true"
+          className="c3"
+          focusable="false"
+          preserveAspectRatio="xMidYMid meet"
+          role="presentation"
+          viewBox="0 0 68 76"
+        >
+          <g
+            fill="none"
+            fillRule="evenodd"
+          >
+            <path
+              d="M50.584 65.657v3.788a3.788 3.788 0 01-7.576 0v-5.05H11.443V6.312a3.788 3.788 0 013.787-3.788h36.617a6.213 6.213 0 00-1.263 3.788v24.354h2.525V16.414H63.21V6.313A6.313 6.313 0 0056.897 0H15.23a6.313 6.313 0 00-6.313 6.313v58.081H.08v5.051a6.313 6.313 0 006.313 6.313h40.404a6.313 6.313 0 006.313-6.313v-3.788h-2.525zM60.685 6.313v7.576H53.11V6.313a3.788 3.788 0 017.576 0zM6.392 73.233a3.788 3.788 0 01-3.788-3.788v-2.526h37.88v2.526c0 1.366.442 2.694 1.262 3.788H6.392z"
+              fill="#282823"
+              fillRule="nonzero"
+            />
+            <g
+              transform="translate(39.69 34.65)"
+            >
+              <text
+                fill="#282823"
+                fontFamily="NordnetSansMono-Bold, Nordnet Sans Mono"
+                fontSize="21.42"
+                fontWeight="bold"
+              >
+                <tspan
+                  x="6.615"
+                  y="20.788"
+                >
+                  €
+                </tspan>
+              </text>
+              <circle
+                cx="13.466"
+                cy="13.466"
+                r="13.466"
+                stroke="#282823"
+                strokeWidth="2.362"
+              />
+            </g>
+            <text
+              fill="#282823"
+              fontFamily="NordnetSansMono-Bold, Nordnet Sans Mono"
+              fontSize="14.805"
+              fontWeight="bold"
+            >
+              <tspan
+                x="16.223"
+                y="20.615"
+              >
+                TAX
+              </tspan>
+            </text>
+            <g
+              stroke="#282823"
+              strokeLinecap="square"
+              strokeWidth="2"
+            >
+              <path
+                d="M18 26h25M19 30h24M31 34h12M22 34h5"
+              />
+            </g>
+          </g>
         </svg>
       </div>
     </div>
