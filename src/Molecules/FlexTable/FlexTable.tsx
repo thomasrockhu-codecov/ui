@@ -34,7 +34,7 @@ const FlexTableContainer: React.FC<HtmlDivProps> = ({ className, children, ...ht
   );
 };
 
-const StyledCaption = styled.div`
+const StyledTitleWrapper = styled.div`
   display: flex;
 `;
 
@@ -75,9 +75,9 @@ const FlexTable: FlexTableComponent & FlexTableComponents = ({
       {...(title ? { 'aria-labelledby': `${htmlProps.id}-title` } : {})}
     >
       {Boolean(title) && (
-        <StyledCaption id={`${htmlProps.id}-title`}>
+        <StyledTitleWrapper id={`${htmlProps.id}-title`}>
           {isElement(title) ? title : <StyledTypography type="title3">{title}</StyledTypography>}
-        </StyledCaption>
+        </StyledTitleWrapper>
       )}
       <ColumnProvider>{children}</ColumnProvider>
     </FlexTableContainer>
