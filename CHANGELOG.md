@@ -1,3 +1,21 @@
+# [3.26.0](https://github.com/nordnet/ui/compare/v3.25.1...v3.26.0) (2020-09-18)
+
+
+### Bug Fixes
+
+* 🐛 add aria label to stories ([c7888eb](https://github.com/nordnet/ui/commit/c7888eb))
+* 🐛 add id to flex table ([e47b7a1](https://github.com/nordnet/ui/commit/e47b7a1))
+* 🐛 set flextable title prop to require id prop ([3557613](https://github.com/nordnet/ui/commit/3557613))
+* documentation ([3b23ac1](https://github.com/nordnet/ui/commit/3b23ac1))
+* naming of title wrapper ([b455a2a](https://github.com/nordnet/ui/commit/b455a2a))
+* wip a11y to table title ([0f0ce32](https://github.com/nordnet/ui/commit/0f0ce32))
+* wip trying to name typing where id is required if title as passed as props ([b2abde2](https://github.com/nordnet/ui/commit/b2abde2))
+
+
+### Features
+
+* pass aria-labelledby in flextable ([07624fe](https://github.com/nordnet/ui/commit/07624fe))
+
 ## [3.25.1](https://github.com/nordnet/ui/compare/v3.25.0...v3.25.1) (2020-09-17)
 
 
