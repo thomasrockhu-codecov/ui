@@ -144,6 +144,7 @@ some performance problems with cells being rendered multiple times and it does n
 Title for the the table can be a string or a react component.
 If a title is set for the table, an id must be set as well. The id will be set as as the id for the whole table, but also used as a base for the id of the table title.
 
+**NOTE: For some reason if Flextable is wrapped as a styled component the TypeScript validation for the id and title props breake. This is important to know because if there is a title prop then there must be an id for a11y reasons.
 
 ## Header
 
