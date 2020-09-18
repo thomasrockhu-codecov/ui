@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Storyshots Molecules | FlexTable Flex Table With Different Rows 1`] = `
-.c6 {
+.c3 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -15,16 +15,16 @@ exports[`Storyshots Molecules | FlexTable Flex Table With Different Rows 1`] = `
   margin-right: -4px;
 }
 
-.c6 > * {
+.c3 > * {
   padding-left: 4px;
   padding-right: 4px;
 }
 
-.c6 > *:not(:first-child) {
+.c3 > *:not(:first-child) {
   padding-top: 0;
 }
 
-.c9 {
+.c6 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -47,7 +47,7 @@ exports[`Storyshots Molecules | FlexTable Flex Table With Different Rows 1`] = `
   line-height: 1.3333333333333333;
 }
 
-.c13 {
+.c10 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #6E6E69;
   margin: 0;
@@ -56,7 +56,7 @@ exports[`Storyshots Molecules | FlexTable Flex Table With Different Rows 1`] = `
   line-height: 1.4285714285714286;
 }
 
-.c16 {
+.c13 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
   margin: 0;
@@ -65,7 +65,7 @@ exports[`Storyshots Molecules | FlexTable Flex Table With Different Rows 1`] = `
   line-height: 1.4285714285714286;
 }
 
-.c11 {
+.c8 {
   display: inline-block;
   width: 100%;
   text-overflow: ellipsis;
@@ -73,15 +73,15 @@ exports[`Storyshots Molecules | FlexTable Flex Table With Different Rows 1`] = `
   overflow: hidden;
 }
 
-.c12 {
+.c9 {
   width: inherit;
 }
 
-.c15 {
+.c12 {
   overflow: hidden;
 }
 
-.c7 {
+.c4 {
   background: #FFFFFF;
   border-bottom: 1px solid #EBEBE8;
   padding-right: 4px;
@@ -93,17 +93,40 @@ exports[`Storyshots Molecules | FlexTable Flex Table With Different Rows 1`] = `
   margin-left: 0;
 }
 
-.c7 > *:first-child {
+.c4 > *:first-child {
   padding-left: 0;
 }
 
-.c7 > *:last-child {
+.c4 > *:last-child {
+  padding-right: 0;
+}
+
+.c11 {
+  background: #FFFFFF;
+  border-bottom: 1px solid #EBEBE8;
+  padding-right: 4px;
+  padding-left: 2px;
+  border-left: 2px solid transparent;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  margin-right: 0;
+  margin-left: 0;
+}
+
+.c11:hover {
+  background: #F5F5F5;
+}
+
+.c11 > *:first-child {
+  padding-left: 0;
+}
+
+.c11 > *:last-child {
   padding-right: 0;
 }
 
 .c14 {
   background: #FFFFFF;
-  border-bottom: 1px solid #EBEBE8;
   padding-right: 4px;
   padding-left: 2px;
   border-left: 2px solid transparent;
@@ -125,7 +148,7 @@ exports[`Storyshots Molecules | FlexTable Flex Table With Different Rows 1`] = `
   padding-right: 0;
 }
 
-.c17 {
+.c15 {
   background: #FFFFFF;
   padding-right: 4px;
   padding-left: 2px;
@@ -136,38 +159,15 @@ exports[`Storyshots Molecules | FlexTable Flex Table With Different Rows 1`] = `
   margin-left: 0;
 }
 
-.c17:hover {
-  background: #F5F5F5;
-}
-
-.c17 > *:first-child {
+.c15 > *:first-child {
   padding-left: 0;
 }
 
-.c17 > *:last-child {
+.c15 > *:last-child {
   padding-right: 0;
 }
 
-.c18 {
-  background: #FFFFFF;
-  padding-right: 4px;
-  padding-left: 2px;
-  border-left: 2px solid transparent;
-  padding-top: 4px;
-  padding-bottom: 4px;
-  margin-right: 0;
-  margin-left: 0;
-}
-
-.c18 > *:first-child {
-  padding-left: 0;
-}
-
-.c18 > *:last-child {
-  padding-right: 0;
-}
-
-.c19 {
+.c16 {
   background: #FFFFFF;
   border-bottom: 1px solid #00C8F5;
   padding-right: 4px;
@@ -179,19 +179,19 @@ exports[`Storyshots Molecules | FlexTable Flex Table With Different Rows 1`] = `
   margin-left: 0;
 }
 
-.c19:hover {
+.c16:hover {
   background: #F5F5F5;
 }
 
-.c19 > *:first-child {
+.c16 > *:first-child {
   padding-left: 0;
 }
 
-.c19 > *:last-child {
+.c16 > *:last-child {
   padding-right: 0;
 }
 
-.c8 {
+.c5 {
   z-index: 1;
   position: -webkit-sticky;
   position: sticky;
@@ -199,7 +199,7 @@ exports[`Storyshots Molecules | FlexTable Flex Table With Different Rows 1`] = `
   border-bottom: 1px solid #282823;
 }
 
-.c10 {
+.c7 {
   overflow: hidden;
 }
 
@@ -207,26 +207,11 @@ exports[`Storyshots Molecules | FlexTable Flex Table With Different Rows 1`] = `
   position: relative;
 }
 
-.c4 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.c5 {
-  padding-left: 4px;
-}
-
 .c0 {
   background-color: #F5F5F5;
 }
 
 .c0:not(:last-of-type) {
-  margin-bottom: 40px;
-}
-
-.c3:not(:last-of-type) {
   margin-bottom: 40px;
 }
 
@@ -246,57 +231,50 @@ exports[`Storyshots Molecules | FlexTable Flex Table With Different Rows 1`] = `
     FlexTable With Different Rows
   </span>
   <div
-    className="c2 c3"
+    className="c2"
     role="table"
   >
-    <caption
-      className="c4"
-    >
-      <span
-        className="c1 c5"
-      />
-    </caption>
     <div
-      className="c6 c7 c8"
+      className="c3 c4 c5"
       role="row"
     >
       <div
-        className="c9 c10"
+        className="c6 c7"
         role="columnheader"
       >
         <div
-          className="c11 c12"
+          className="c8 c9"
         >
           <span
-            className="c13"
+            className="c10"
           >
             Header 1
           </span>
         </div>
       </div>
       <div
-        className="c9 c10"
+        className="c6 c7"
         role="columnheader"
       >
         <div
-          className="c11 c12"
+          className="c8 c9"
         >
           <span
-            className="c13"
+            className="c10"
           >
             Header 2
           </span>
         </div>
       </div>
       <div
-        className="c9 c10"
+        className="c6 c7"
         role="columnheader"
       >
         <div
-          className="c11 c12"
+          className="c8 c9"
         >
           <span
-            className="c13"
+            className="c10"
           >
             Header 3
           </span>
@@ -304,46 +282,46 @@ exports[`Storyshots Molecules | FlexTable Flex Table With Different Rows 1`] = `
       </div>
     </div>
     <div
-      className="c6 c14"
+      className="c3 c11"
       role="row"
     >
       <div
-        className="c9 c15"
+        className="c6 c12"
         role="cell"
       >
         <div
-          className="c11 c12"
+          className="c8 c9"
         >
           <span
-            className="c16"
+            className="c13"
           >
             Default
           </span>
         </div>
       </div>
       <div
-        className="c9 c15"
+        className="c6 c12"
         role="cell"
       >
         <div
-          className="c11 c12"
+          className="c8 c9"
         >
           <span
-            className="c16"
+            className="c13"
           >
             Default
           </span>
         </div>
       </div>
       <div
-        className="c9 c15"
+        className="c6 c12"
         role="cell"
       >
         <div
-          className="c11 c12"
+          className="c8 c9"
         >
           <span
-            className="c16"
+            className="c13"
           >
             Default
           </span>
@@ -351,46 +329,46 @@ exports[`Storyshots Molecules | FlexTable Flex Table With Different Rows 1`] = `
       </div>
     </div>
     <div
-      className="c6 c7"
+      className="c3 c4"
       role="row"
     >
       <div
-        className="c9 c15"
+        className="c6 c12"
         role="cell"
       >
         <div
-          className="c11 c12"
+          className="c8 c9"
         >
           <span
-            className="c16"
+            className="c13"
           >
             No highlight
           </span>
         </div>
       </div>
       <div
-        className="c9 c15"
+        className="c6 c12"
         role="cell"
       >
         <div
-          className="c11 c12"
+          className="c8 c9"
         >
           <span
-            className="c16"
+            className="c13"
           >
             No highlight
           </span>
         </div>
       </div>
       <div
-        className="c9 c15"
+        className="c6 c12"
         role="cell"
       >
         <div
-          className="c11 c12"
+          className="c8 c9"
         >
           <span
-            className="c16"
+            className="c13"
           >
             No highlight
           </span>
@@ -398,46 +376,46 @@ exports[`Storyshots Molecules | FlexTable Flex Table With Different Rows 1`] = `
       </div>
     </div>
     <div
-      className="c6 c17"
+      className="c3 c14"
       role="row"
     >
       <div
-        className="c9 c15"
+        className="c6 c12"
         role="cell"
       >
         <div
-          className="c11 c12"
+          className="c8 c9"
         >
           <span
-            className="c16"
+            className="c13"
           >
             Separator hidden
           </span>
         </div>
       </div>
       <div
-        className="c9 c15"
+        className="c6 c12"
         role="cell"
       >
         <div
-          className="c11 c12"
+          className="c8 c9"
         >
           <span
-            className="c16"
+            className="c13"
           >
             Separator hidden
           </span>
         </div>
       </div>
       <div
-        className="c9 c15"
+        className="c6 c12"
         role="cell"
       >
         <div
-          className="c11 c12"
+          className="c8 c9"
         >
           <span
-            className="c16"
+            className="c13"
           >
             Separator hidden
           </span>
@@ -445,46 +423,46 @@ exports[`Storyshots Molecules | FlexTable Flex Table With Different Rows 1`] = `
       </div>
     </div>
     <div
-      className="c6 c18"
+      className="c3 c15"
       role="row"
     >
       <div
-        className="c9 c15"
+        className="c6 c12"
         role="cell"
       >
         <div
-          className="c11 c12"
+          className="c8 c9"
         >
           <span
-            className="c16"
+            className="c13"
           >
             No highlight and separator hidden
           </span>
         </div>
       </div>
       <div
-        className="c9 c15"
+        className="c6 c12"
         role="cell"
       >
         <div
-          className="c11 c12"
+          className="c8 c9"
         >
           <span
-            className="c16"
+            className="c13"
           >
             No highlight and separator hidden
           </span>
         </div>
       </div>
       <div
-        className="c9 c15"
+        className="c6 c12"
         role="cell"
       >
         <div
-          className="c11 c12"
+          className="c8 c9"
         >
           <span
-            className="c16"
+            className="c13"
           >
             No highlight and separator hidden
           </span>
@@ -492,46 +470,46 @@ exports[`Storyshots Molecules | FlexTable Flex Table With Different Rows 1`] = `
       </div>
     </div>
     <div
-      className="c6 c19"
+      className="c3 c16"
       role="row"
     >
       <div
-        className="c9 c15"
+        className="c6 c12"
         role="cell"
       >
         <div
-          className="c11 c12"
+          className="c8 c9"
         >
           <span
-            className="c16"
+            className="c13"
           >
             Separator color set
           </span>
         </div>
       </div>
       <div
-        className="c9 c15"
+        className="c6 c12"
         role="cell"
       >
         <div
-          className="c11 c12"
+          className="c8 c9"
         >
           <span
-            className="c16"
+            className="c13"
           >
             Separator color set
           </span>
         </div>
       </div>
       <div
-        className="c9 c15"
+        className="c6 c12"
         role="cell"
       >
         <div
-          className="c11 c12"
+          className="c8 c9"
         >
           <span
-            className="c16"
+            className="c13"
           >
             Separator color set
           </span>
@@ -543,7 +521,7 @@ exports[`Storyshots Molecules | FlexTable Flex Table With Different Rows 1`] = `
 `;
 
 exports[`Storyshots Molecules | FlexTable Table Custom Data Cells 1`] = `
-.c24 {
+.c21 {
   height: 20px;
   box-sizing: border-box;
   display: block;
@@ -551,7 +529,7 @@ exports[`Storyshots Molecules | FlexTable Table Custom Data Cells 1`] = `
   overflow: hidden;
 }
 
-.c4 {
+.c1 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -565,16 +543,16 @@ exports[`Storyshots Molecules | FlexTable Table Custom Data Cells 1`] = `
   margin-right: -4px;
 }
 
-.c4 > * {
+.c1 > * {
   padding-left: 4px;
   padding-right: 4px;
 }
 
-.c4 > *:not(:first-child) {
+.c1 > *:not(:first-child) {
   padding-top: 0;
 }
 
-.c7 {
+.c4 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -588,7 +566,7 @@ exports[`Storyshots Molecules | FlexTable Table Custom Data Cells 1`] = `
   flex: 1;
 }
 
-.c12 {
+.c9 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -606,7 +584,7 @@ exports[`Storyshots Molecules | FlexTable Table Custom Data Cells 1`] = `
   flex: 0 0 150px;
 }
 
-.c14 {
+.c11 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -614,11 +592,11 @@ exports[`Storyshots Molecules | FlexTable Table Custom Data Cells 1`] = `
   display: flex;
 }
 
-.c16 {
+.c13 {
   box-sizing: border-box;
 }
 
-.c20 {
+.c17 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -636,7 +614,7 @@ exports[`Storyshots Molecules | FlexTable Table Custom Data Cells 1`] = `
   flex: 1;
 }
 
-.c18 {
+.c15 {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -651,16 +629,7 @@ exports[`Storyshots Molecules | FlexTable Table Custom Data Cells 1`] = `
   vertical-align: middle;
 }
 
-.c2 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #282823;
-  margin: 0;
-  font-weight: 800;
-  font-size: 18px;
-  line-height: 1.3333333333333333;
-}
-
-.c11 {
+.c8 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #6E6E69;
   margin: 0;
@@ -669,7 +638,7 @@ exports[`Storyshots Molecules | FlexTable Table Custom Data Cells 1`] = `
   line-height: 1.4285714285714286;
 }
 
-.c23 {
+.c20 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
   margin: 0;
@@ -678,7 +647,7 @@ exports[`Storyshots Molecules | FlexTable Table Custom Data Cells 1`] = `
   line-height: 1.4285714285714286;
 }
 
-.c27 {
+.c24 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
   margin: 0;
@@ -687,7 +656,7 @@ exports[`Storyshots Molecules | FlexTable Table Custom Data Cells 1`] = `
   line-height: 1.4285714285714286;
 }
 
-.c9 {
+.c6 {
   display: inline-block;
   width: 100%;
   text-overflow: ellipsis;
@@ -695,7 +664,7 @@ exports[`Storyshots Molecules | FlexTable Table Custom Data Cells 1`] = `
   overflow: hidden;
 }
 
-.c17 {
+.c14 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -703,15 +672,15 @@ exports[`Storyshots Molecules | FlexTable Table Custom Data Cells 1`] = `
   min-width: 0;
 }
 
-.c10 {
+.c7 {
   width: inherit;
 }
 
-.c22 {
+.c19 {
   overflow: hidden;
 }
 
-.c5 {
+.c2 {
   background: #FFFFFF;
   border-bottom: 1px solid #EBEBE8;
   padding-right: 4px;
@@ -723,15 +692,15 @@ exports[`Storyshots Molecules | FlexTable Table Custom Data Cells 1`] = `
   margin-left: 0;
 }
 
-.c5 > *:first-child {
+.c2 > *:first-child {
   padding-left: 0;
 }
 
-.c5 > *:last-child {
+.c2 > *:last-child {
   padding-right: 0;
 }
 
-.c21 {
+.c18 {
   background: #FFFFFF;
   border-bottom: 1px solid #EBEBE8;
   padding-right: 4px;
@@ -743,19 +712,19 @@ exports[`Storyshots Molecules | FlexTable Table Custom Data Cells 1`] = `
   margin-left: 0;
 }
 
-.c21:hover {
+.c18:hover {
   background: #F5F5F5;
 }
 
-.c21 > *:first-child {
+.c18 > *:first-child {
   padding-left: 0;
 }
 
-.c21 > *:last-child {
+.c18 > *:last-child {
   padding-right: 0;
 }
 
-.c6 {
+.c3 {
   z-index: 1;
   position: -webkit-sticky;
   position: sticky;
@@ -763,16 +732,16 @@ exports[`Storyshots Molecules | FlexTable Table Custom Data Cells 1`] = `
   border-bottom: 1px solid #282823;
 }
 
-.c25 {
+.c22 {
   border-top: 1px solid #282823;
   border-bottom: 0;
 }
 
-.c19 {
+.c16 {
   margin-left: 4px;
 }
 
-.c13 {
+.c10 {
   -webkit-box-pack: inherit;
   -webkit-justify-content: inherit;
   -ms-flex-pack: inherit;
@@ -783,11 +752,11 @@ exports[`Storyshots Molecules | FlexTable Table Custom Data Cells 1`] = `
   width: 100%;
 }
 
-.c8 {
+.c5 {
   overflow: hidden;
 }
 
-.c26 {
+.c23 {
   overflow: hidden;
 }
 
@@ -795,55 +764,30 @@ exports[`Storyshots Molecules | FlexTable Table Custom Data Cells 1`] = `
   position: relative;
 }
 
-.c1 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.c3 {
-  padding-left: 4px;
-}
-
-.c15 {
+.c12 {
   -webkit-box-pack: inherit;
   -webkit-justify-content: inherit;
   -ms-flex-pack: inherit;
   justify-content: inherit;
 }
 
-@media (min-width:760px) {
-  .c2 {
-    font-size: 20px;
-    line-height: 1.2;
-  }
-}
-
 <div
   className="c0"
   role="table"
 >
-  <caption
-    className="c1"
-  >
-    <span
-      className="c2 c3"
-    />
-  </caption>
   <div
-    className="c4 c5 c6"
+    className="c1 c2 c3"
     role="row"
   >
     <div
-      className="c7 c8"
+      className="c4 c5"
       role="columnheader"
     >
       <div
-        className="c9 c10"
+        className="c6 c7"
       >
         <span
-          className="c11"
+          className="c8"
         >
           Date
         </span>
@@ -851,47 +795,47 @@ exports[`Storyshots Molecules | FlexTable Table Custom Data Cells 1`] = `
     </div>
     <div
       aria-sort="none"
-      className="c12 c8"
+      className="c9 c5"
       role="columnheader"
     >
       <a
-        className="c13"
+        className="c10"
         href="#"
         onClick={[Function]}
         onKeyDown={[Function]}
         role="button"
       >
         <div
-          className="c14 c15"
+          className="c11 c12"
         >
           <div
-            className="c16 c17"
+            className="c13 c14"
           >
             <div
-              className="c9 c10"
+              className="c6 c7"
             >
               <span
-                className="c11"
+                className="c8"
               >
                 Transferable Quantity
               </span>
             </div>
           </div>
           <div
-            className="c16"
+            className="c13"
           >
             <span
-              className="c11"
+              className="c8"
             >
               USD
             </span>
           </div>
           <div
-            className="c16"
+            className="c13"
           >
             <svg
               aria-hidden="true"
-              className="c18 c19"
+              className="c15 c16"
               focusable="false"
               preserveAspectRatio="xMidYMid meet"
               role="presentation"
@@ -906,28 +850,28 @@ exports[`Storyshots Molecules | FlexTable Table Custom Data Cells 1`] = `
       </a>
     </div>
     <div
-      className="c7 c8"
+      className="c4 c5"
       role="columnheader"
     >
       <div
-        className="c9 c10"
+        className="c6 c7"
       >
         <span
-          className="c11"
+          className="c8"
         >
           Country
         </span>
       </div>
     </div>
     <div
-      className="c20 c8"
+      className="c17 c5"
       role="columnheader"
     >
       <div
-        className="c9 c10"
+        className="c6 c7"
       >
         <span
-          className="c11"
+          className="c8"
         >
           Percentage
         </span>
@@ -935,18 +879,18 @@ exports[`Storyshots Molecules | FlexTable Table Custom Data Cells 1`] = `
     </div>
   </div>
   <div
-    className="c4 c21"
+    className="c1 c18"
     role="row"
   >
     <div
-      className="c7 c22"
+      className="c4 c19"
       role="cell"
     >
       <div
-        className="c9 c10"
+        className="c6 c7"
       >
         <span
-          className="c23"
+          className="c20"
         >
           <time>
             7/10/2020, 12:53
@@ -955,14 +899,14 @@ exports[`Storyshots Molecules | FlexTable Table Custom Data Cells 1`] = `
       </div>
     </div>
     <div
-      className="c12 c22"
+      className="c9 c19"
       role="cell"
     >
       <div
-        className="c9 c10"
+        className="c6 c7"
       >
         <span
-          className="c23"
+          className="c20"
         >
           
           300
@@ -970,17 +914,17 @@ exports[`Storyshots Molecules | FlexTable Table Custom Data Cells 1`] = `
       </div>
     </div>
     <div
-      className="c7 c22"
+      className="c4 c19"
       role="cell"
     >
       <div
-        className="c9 c10"
+        className="c6 c7"
       >
         <span
-          className="c23"
+          className="c20"
         >
           <svg
-            className="c24"
+            className="c21"
             focusable="false"
             role="img"
             viewBox="0 0 640 480"
@@ -1022,14 +966,14 @@ exports[`Storyshots Molecules | FlexTable Table Custom Data Cells 1`] = `
       </div>
     </div>
     <div
-      className="c20 c22"
+      className="c17 c19"
       role="cell"
     >
       <div
-        className="c9 c10"
+        className="c6 c7"
       >
         <span
-          className="c23"
+          className="c20"
         >
           
           75
@@ -1039,18 +983,18 @@ exports[`Storyshots Molecules | FlexTable Table Custom Data Cells 1`] = `
     </div>
   </div>
   <div
-    className="c4 c21"
+    className="c1 c18"
     role="row"
   >
     <div
-      className="c7 c22"
+      className="c4 c19"
       role="cell"
     >
       <div
-        className="c9 c10"
+        className="c6 c7"
       >
         <span
-          className="c23"
+          className="c20"
         >
           <time>
             7/10/2020, 12:53
@@ -1059,14 +1003,14 @@ exports[`Storyshots Molecules | FlexTable Table Custom Data Cells 1`] = `
       </div>
     </div>
     <div
-      className="c12 c22"
+      className="c9 c19"
       role="cell"
     >
       <div
-        className="c9 c10"
+        className="c6 c7"
       >
         <span
-          className="c23"
+          className="c20"
         >
           
           100
@@ -1074,26 +1018,26 @@ exports[`Storyshots Molecules | FlexTable Table Custom Data Cells 1`] = `
       </div>
     </div>
     <div
-      className="c7 c22"
+      className="c4 c19"
       role="cell"
     >
       <div
-        className="c9 c10"
+        className="c6 c7"
       >
         <span
-          className="c23"
+          className="c20"
         />
       </div>
     </div>
     <div
-      className="c20 c22"
+      className="c17 c19"
       role="cell"
     >
       <div
-        className="c9 c10"
+        className="c6 c7"
       >
         <span
-          className="c23"
+          className="c20"
         >
           
           25
@@ -1103,30 +1047,30 @@ exports[`Storyshots Molecules | FlexTable Table Custom Data Cells 1`] = `
     </div>
   </div>
   <div
-    className="c4 c5 c25"
+    className="c1 c2 c22"
     role="row"
   >
     <div
-      className="c7 c26"
+      className="c4 c23"
       role="cell"
     >
       <div
-        className="c9 c10"
+        className="c6 c7"
       >
         <span
-          className="c27"
+          className="c24"
         />
       </div>
     </div>
     <div
-      className="c12 c26"
+      className="c9 c23"
       role="cell"
     >
       <div
-        className="c9 c10"
+        className="c6 c7"
       >
         <span
-          className="c27"
+          className="c24"
         >
           
           400
@@ -1134,26 +1078,26 @@ exports[`Storyshots Molecules | FlexTable Table Custom Data Cells 1`] = `
       </div>
     </div>
     <div
-      className="c7 c26"
+      className="c4 c23"
       role="cell"
     >
       <div
-        className="c9 c10"
+        className="c6 c7"
       >
         <span
-          className="c27"
+          className="c24"
         />
       </div>
     </div>
     <div
-      className="c20 c26"
+      className="c17 c23"
       role="cell"
     >
       <div
-        className="c9 c10"
+        className="c6 c7"
       >
         <span
-          className="c27"
+          className="c24"
         >
           
           25
