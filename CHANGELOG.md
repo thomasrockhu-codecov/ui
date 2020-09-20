@@ -1,3 +1,10 @@
+## [3.26.1](https://github.com/nordnet/ui/compare/v3.26.0...v3.26.1) (2020-09-20)
+
+
+### Bug Fixes
+
+* add component to index ([9f122af](https://github.com/nordnet/ui/commit/9f122af))
+
 # [3.26.0](https://github.com/nordnet/ui/compare/v3.25.1...v3.26.0) (2020-09-18)
 
 
