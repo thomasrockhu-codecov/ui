@@ -10,7 +10,7 @@ import Flag from './Atoms/Flag';
 import Flexbox from './Atoms/Flexbox';
 import FormLabel from './Atoms/FormLabel';
 import Icon from './Atoms/Icon';
-import IsomorphicMedia from './Atoms/IsomorphicMedia';
+import IsomorphicMedia, { useIsomorphicMedia } from './Atoms/IsomorphicMedia';
 import Legend from './Atoms/Legend';
 import List from './Atoms/List';
 import ListItem from './Atoms/ListItem';
@@ -152,6 +152,7 @@ export {
   Typography,
   useKeyPress,
   useMedia,
+  useIsomorphicMedia,
   useOnClickOutside,
   VisuallyHidden,
   LinkContext,
