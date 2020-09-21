@@ -1,3 +1,10 @@
+## [3.26.2](https://github.com/nordnet/ui/compare/v3.26.1...v3.26.2) (2020-09-21)
+
+
+### Bug Fixes
+
+* export hook as well as component ([b049aa8](https://github.com/nordnet/ui/commit/b049aa8))
+
 ## [3.26.1](https://github.com/nordnet/ui/compare/v3.26.0...v3.26.1) (2020-09-20)
 
 
