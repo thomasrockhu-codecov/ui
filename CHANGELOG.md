@@ -1,3 +1,17 @@
+## [3.26.3](https://github.com/nordnet/ui/compare/v3.26.2...v3.26.3) (2020-09-22)
+
+
+### Bug Fixes
+
+* break out sliderthumb ([53acbd3](https://github.com/nordnet/ui/commit/53acbd3))
+* create track component and rename highlight ([2cfe07f](https://github.com/nordnet/ui/commit/2cfe07f))
+* enable focus again ([fa4f19b](https://github.com/nordnet/ui/commit/fa4f19b))
+* more accurate value when draging ([b6aec35](https://github.com/nordnet/ui/commit/b6aec35))
+* move out getnewvalue function from component ([b2f8d2f](https://github.com/nordnet/ui/commit/b2f8d2f))
+* proper controlled and uncontrolled and refactor ([7948cc8](https://github.com/nordnet/ui/commit/7948cc8))
+* rename thumb to handle and add controlled story ([8c1cc24](https://github.com/nordnet/ui/commit/8c1cc24))
+* update snaps ([d8f125d](https://github.com/nordnet/ui/commit/d8f125d))
+
 ## [3.26.2](https://github.com/nordnet/ui/compare/v3.26.1...v3.26.2) (2020-09-21)
 
 
