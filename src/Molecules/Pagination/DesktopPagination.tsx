@@ -1,13 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
 import { Typography, Icon, Flexbox, Button } from '../..';
-import {
-  DesktopPaginationProps,
-  PageNumberItemProps,
-  ChevronButtonProps,
-} from './Pagination.types';
-
-const FIRST_PAGE = 1;
+import PageItems from './PageItems';
+import { PaginationDefaultProps, PageItemProps, BrowseButtonProps } from './Pagination.types';
 
 const DESKTOP_NUMBER_WIDTH = 14;
 const MAX_PAGES_LESS_THAN_100_WIDTH = 112;
@@ -20,7 +15,7 @@ const StyledFlexbox = styled(Flexbox)<{ numberOfPages: number }>`
       : MAX_DESKTOP_WIDTH}px;
 `;
 
-const PageNumberItem: React.FC<PageNumberItemProps> = ({ active = false, children, onClick }) => (
+const PageNumberItem: React.FC<PageItemProps> = ({ active = false, children, onClick }) => (
   <Flexbox item>
     <Button id="currentPage" variant="neutral" disabled={active} onClick={onClick}>
       <Typography type="secondary" color={(t) => (active ? t.color.cta : t.color.text)}>
@@ -36,7 +31,7 @@ const TruncatedPageNumbers = () => (
   </Flexbox>
 );
 
-const ChevronButton = ({ direction = 'left', onClick }: ChevronButtonProps) => (
+const ChevronButton = ({ direction = 'left', onClick }: BrowseButtonProps) => (
   <Flexbox item container alignItems="center">
     <Button id="currentPage" variant="neutral" onClick={onClick}>
       {direction === 'left' ? <Icon.ChevronLeft size={2} /> : <Icon.ChevronRight size={2} />}
@@ -44,54 +39,24 @@ const ChevronButton = ({ direction = 'left', onClick }: ChevronButtonProps) => (
   </Flexbox>
 );
 
-const DesktopPagination: React.FC<DesktopPaginationProps> = ({
+const DesktopPagination: React.FC<PaginationDefaultProps> = ({
   currentPage,
   numberOfPages,
-  onClickPageNumber,
+  onClickPageItem,
   onClickPrevious,
   onClickNext,
 }) => {
-  const isFirstPage = currentPage === FIRST_PAGE;
-  const isSecondPage = currentPage === FIRST_PAGE + 1;
-  const isSecondLastPage = currentPage === numberOfPages - 1;
-  const isLastPage = currentPage === numberOfPages;
-  const isWithinFirstThree = currentPage <= 3;
-  const isWithinLastThree = currentPage > numberOfPages - 3;
-  const totalIsOnlyOnePage = numberOfPages === FIRST_PAGE;
-  const totalLessThanFour = numberOfPages < 4;
-  const totalLessThanFive = numberOfPages < 5;
-
   return (
     <Flexbox container gutter={3}>
       <ChevronButton onClick={onClickPrevious} />
       <StyledFlexbox container gutter={1} justifyContent="center" numberOfPages={numberOfPages}>
-        <PageNumberItem onClick={onClickPageNumber} active={isFirstPage}>
-          {FIRST_PAGE}
-        </PageNumberItem>
-        {!isWithinFirstThree && !totalLessThanFive && <TruncatedPageNumbers />}
-        {/* Show third page from last if currently on last one */}
-        {isLastPage && !isFirstPage && !isWithinFirstThree && (
-          <PageNumberItem onClick={onClickPageNumber}>{numberOfPages - 2}</PageNumberItem>
-        )}
-
-        {/* Current, last and next page */}
-        {!isFirstPage && !isSecondPage && (
-          <PageNumberItem onClick={onClickPageNumber}>{currentPage - 1}</PageNumberItem>
-        )}
-        {!isFirstPage && !isLastPage && <PageNumberItem active>{currentPage}</PageNumberItem>}
-        {!isLastPage && !isSecondLastPage && (
-          <PageNumberItem onClick={onClickPageNumber}>{currentPage + 1}</PageNumberItem>
-        )}
-
-        {isFirstPage && !totalLessThanFour && (
-          <PageNumberItem onClick={onClickPageNumber}>{FIRST_PAGE + 2}</PageNumberItem>
-        )}
-        {!isWithinLastThree && !totalLessThanFive && <TruncatedPageNumbers />}
-        {!totalIsOnlyOnePage && (
-          <PageNumberItem onClick={onClickPageNumber} active={isLastPage}>
-            {numberOfPages}
-          </PageNumberItem>
-        )}
+        <PageItems
+          currentPage={currentPage}
+          numberOfPages={numberOfPages}
+          onClickPageItem={onClickPageItem}
+          PageItem={PageNumberItem}
+          TruncatedPageNumbers={TruncatedPageNumbers}
+        />
       </StyledFlexbox>
       <ChevronButton direction="right" onClick={onClickNext} />
     </Flexbox>

@@ -1,11 +1,20 @@
 import React, { useCallback } from 'react';
-import { Props } from './Pagination.types';
+import { PaginationProps } from './Pagination.types';
 import DesktopPagination from './DesktopPagination';
+import Media from '../../Atoms/Media';
+import MobilePaginationCompact from './MobilePaginationCompact';
+import MobilePaginationDefault from './MobilePaginationDefault';
 
-const Pagination: React.FC<Props> = ({ currentPage, itemsPerPage, totalItems, onPageChange }) => {
+const Pagination: React.FC<PaginationProps> = ({
+  currentPage,
+  itemsPerPage,
+  totalItems,
+  compact,
+  onPageChange,
+}) => {
   const numberOfPages = Math.ceil(totalItems / itemsPerPage) || 1;
 
-  const onClickPageNumber = useCallback(
+  const onClickPageItem = useCallback(
     (e) => {
       onPageChange(Number(e.target.textContent));
     },
@@ -26,13 +35,28 @@ const Pagination: React.FC<Props> = ({ currentPage, itemsPerPage, totalItems, on
 
   return (
     <>
-      <DesktopPagination
-        currentPage={currentPage}
-        numberOfPages={numberOfPages}
-        onClickPageNumber={onClickPageNumber}
-        onClickPrevious={onClickPrevious}
-        onClickNext={onClickNext}
-      />
+      <Media query={(t) => t.media.lessThan(t.breakpoints.md)}>
+        {compact ? (
+          <MobilePaginationCompact onClickPrevious={onClickPrevious} onClickNext={onClickNext} />
+        ) : (
+          <MobilePaginationDefault
+            currentPage={currentPage}
+            numberOfPages={numberOfPages}
+            onClickPageItem={onClickPageItem}
+            onClickPrevious={onClickPrevious}
+            onClickNext={onClickNext}
+          />
+        )}
+      </Media>
+      <Media query={(t) => t.media.greaterThan(t.breakpoints.md)}>
+        <DesktopPagination
+          currentPage={currentPage}
+          numberOfPages={numberOfPages}
+          onClickPageItem={onClickPageItem}
+          onClickPrevious={onClickPrevious}
+          onClickNext={onClickNext}
+        />
+      </Media>
     </>
   );
 };
