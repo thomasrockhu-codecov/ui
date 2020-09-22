@@ -1,3 +1,10 @@
+## [3.26.4](https://github.com/nordnet/ui/compare/v3.26.3...v3.26.4) (2020-09-22)
+
+
+### Bug Fixes
+
+* dont save uncontrolled value when component is controlled ([cecffcd](https://github.com/nordnet/ui/commit/cecffcd))
+
 ## [3.26.3](https://github.com/nordnet/ui/compare/v3.26.2...v3.26.3) (2020-09-22)
 
 
