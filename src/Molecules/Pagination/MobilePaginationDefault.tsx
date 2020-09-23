@@ -4,9 +4,8 @@ import { Flexbox, Typography, Icon, Box } from '../..';
 import { PageItemProps, PaginationDefaultProps, BrowseButtonProps } from './Pagination.types';
 import PageItems from './PageItems';
 
-const MOBILE_ITEMS_SIDE_PADDING = 4;
 const MAX_NUMBER_MOBILE_ITEMS = 7;
-const MOBILE_ITEMS_TOTAL_WIDTH = 44;
+const MOBILE_ITEMS_TOTAL_WIDTH = 40;
 
 const StyledLink = styled.a`
   justify-content: inherit;
@@ -54,11 +53,8 @@ const MobilePaginationButton: React.FC<Omit<PageItemProps, 'active'> & { variant
   </StyledLink>
 );
 
-// For mobile, the maximum numbers of items between chevrons is 7, each 40 in width with 2px padding. -4 is for the first and last item.
 const StyledFlexbox = styled(Flexbox)<{ numberOfPages: number }>`
-  width: ${(p) =>
-    Math.min(p.numberOfPages, MAX_NUMBER_MOBILE_ITEMS) * MOBILE_ITEMS_TOTAL_WIDTH -
-    MOBILE_ITEMS_SIDE_PADDING}px;
+  width: ${(p) => Math.min(p.numberOfPages, MAX_NUMBER_MOBILE_ITEMS) * MOBILE_ITEMS_TOTAL_WIDTH}px;
 `;
 
 const PageItem: React.FC<PageItemProps> = ({ active = false, onClick, children }) => (
@@ -97,9 +93,9 @@ const MobilePagination: React.FC<PaginationDefaultProps> = ({
   onClickNext,
 }) => {
   return (
-    <Flexbox container gutter={3}>
+    <Flexbox container>
       <ChevronButton onClick={onClickPrevious} />
-      <StyledFlexbox container gutter={1} justifyContent="center" numberOfPages={numberOfPages}>
+      <StyledFlexbox container justifyContent="center" numberOfPages={numberOfPages}>
         <PageItems
           currentPage={currentPage}
           numberOfPages={numberOfPages}
