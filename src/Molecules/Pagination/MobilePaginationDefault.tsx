@@ -4,8 +4,8 @@ import { Flexbox, Typography, Icon, Box } from '../..';
 import { PageItemProps, PaginationDefaultProps, BrowseButtonProps } from './Pagination.types';
 import PageItems from './PageItems';
 
-const MAX_NUMBER_MOBILE_ITEMS = 7;
-const MOBILE_ITEMS_TOTAL_WIDTH = 40;
+const MAX_NUMBER_ITEMS = 7;
+const ITEMS_TOTAL_WIDTH = 40;
 
 const StyledLink = styled.a`
   justify-content: inherit;
@@ -54,7 +54,7 @@ const MobilePaginationButton: React.FC<Omit<PageItemProps, 'active'> & { variant
 );
 
 const StyledFlexbox = styled(Flexbox)<{ numberOfPages: number }>`
-  width: ${(p) => Math.min(p.numberOfPages, MAX_NUMBER_MOBILE_ITEMS) * MOBILE_ITEMS_TOTAL_WIDTH}px;
+  width: ${(p) => Math.min(p.numberOfPages, MAX_NUMBER_ITEMS) * ITEMS_TOTAL_WIDTH}px;
 `;
 
 const PageItem: React.FC<PageItemProps> = ({ active = false, onClick, children }) => (

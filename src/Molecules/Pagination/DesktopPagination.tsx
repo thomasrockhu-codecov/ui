@@ -4,15 +4,22 @@ import { Typography, Icon, Flexbox, Button } from '../..';
 import PageItems from './PageItems';
 import { PaginationDefaultProps, PageItemProps, BrowseButtonProps } from './Pagination.types';
 
-const DESKTOP_NUMBER_WIDTH = 18;
-const MAX_PAGES_LESS_THAN_100_WIDTH = 150;
-const MAX_DESKTOP_WIDTH = 200;
+const NUMBER_WIDTH = 18;
+const CHEVRON_PADDING = 2 * 8;
+const BETWEEN_8_AND_13_PAGES_WIDTH = 150;
+const BETWEEN_14_AND_101_PAGES_WIDTH = 168;
+const MORE_THAN_101_PAGES_WIDTH = 200;
 
 const StyledFlexbox = styled(Flexbox)<{ numberOfPages: number }>`
-  width: ${(p) =>
-    p.numberOfPages < 100
-      ? Math.min(p.numberOfPages * DESKTOP_NUMBER_WIDTH, MAX_PAGES_LESS_THAN_100_WIDTH)
-      : MAX_DESKTOP_WIDTH}px;
+  width: ${(p) => {
+    if (p.numberOfPages < 8) return p.numberOfPages * NUMBER_WIDTH + CHEVRON_PADDING;
+
+    if (p.numberOfPages >= 8 && p.numberOfPages >= 13) return BETWEEN_8_AND_13_PAGES_WIDTH;
+
+    if (p.numberOfPages >= 14 && p.numberOfPages <= 101) return BETWEEN_14_AND_101_PAGES_WIDTH;
+
+    return MORE_THAN_101_PAGES_WIDTH;
+  }}px;
 `;
 
 const PageNumberItem: React.FC<PageItemProps> = ({ active = false, children, onClick }) => (
@@ -47,9 +54,9 @@ const DesktopPagination: React.FC<PaginationDefaultProps> = ({
   onClickNext,
 }) => {
   return (
-    <Flexbox container gutter={2}>
+    <StyledFlexbox container numberOfPages={numberOfPages}>
       <ChevronButton onClick={onClickPrevious} />
-      <StyledFlexbox container gutter={2} justifyContent="center" numberOfPages={numberOfPages}>
+      <Flexbox container item flex="1" justifyContent="center" gutter={2}>
         <PageItems
           currentPage={currentPage}
           numberOfPages={numberOfPages}
@@ -57,9 +64,9 @@ const DesktopPagination: React.FC<PaginationDefaultProps> = ({
           PageItem={PageNumberItem}
           TruncatedPageNumbers={TruncatedPageNumbers}
         />
-      </StyledFlexbox>
+      </Flexbox>
       <ChevronButton direction="right" onClick={onClickNext} />
-    </Flexbox>
+    </StyledFlexbox>
   );
 };
 
