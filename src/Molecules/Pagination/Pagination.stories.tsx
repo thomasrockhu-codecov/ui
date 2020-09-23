@@ -66,10 +66,10 @@ paginationWithManyPages.story = {
   name: '999 pages',
 };
 
-// export const paginationCompactMobile = () => (
-//   <PaginationWrapper totalItems={10} itemsPerPage={1} compact />
-// );
+export const paginationCompactMobile = () => (
+  <PaginationWrapper totalItems={10} itemsPerPage={1} compact />
+);
 
-// paginationCompactMobile.story = {
-//   name: 'Compact on mobile',
-// };
+paginationCompactMobile.story = {
+  name: 'Compact on mobile',
+};
