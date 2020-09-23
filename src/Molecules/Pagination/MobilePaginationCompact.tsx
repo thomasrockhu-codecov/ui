@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { Flexbox, Icon } from '../..';
-import { PaginationCompactProps, BrowseButtonProps, PageItemProps } from './Pagination.types';
+import { PaginationCompactProps, BrowseButtonProps } from './Pagination.types';
 
 const StyledBox = styled.a`
   display: flex;
@@ -13,19 +13,17 @@ const StyledBox = styled.a`
   align-items: center;
 `;
 
-const MobilePaginationButton: React.FC<Omit<PageItemProps, 'active'>> = ({ children, onClick }) => (
+const MobilePaginationButton: React.FC<{
+  children: React.ReactNode;
+  onClick: (e: React.SyntheticEvent) => void;
+}> = ({ children, onClick }) => (
   <StyledBox
     href="#"
     role="button"
-    onClick={(e) => {
-      e.preventDefault();
-      if (onClick) {
-        onClick(e);
-      }
-    }}
+    onClick={onClick}
     onKeyDown={(e) => {
       // Link should trigger on spacebar clicked like actual button.
-      if (onClick) {
+      if (e.keyCode === 32) {
         onClick(e);
       }
     }}
