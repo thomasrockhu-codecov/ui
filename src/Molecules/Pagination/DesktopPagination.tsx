@@ -4,9 +4,9 @@ import { Typography, Icon, Flexbox, Button } from '../..';
 import PageItems from './PageItems';
 import { PaginationDefaultProps, PageItemProps, BrowseButtonProps } from './Pagination.types';
 
-const DESKTOP_NUMBER_WIDTH = 14;
-const MAX_PAGES_LESS_THAN_100_WIDTH = 112;
-const MAX_DESKTOP_WIDTH = 150;
+const DESKTOP_NUMBER_WIDTH = 18;
+const MAX_PAGES_LESS_THAN_100_WIDTH = 150;
+const MAX_DESKTOP_WIDTH = 200;
 
 const StyledFlexbox = styled(Flexbox)<{ numberOfPages: number }>`
   width: ${(p) =>
@@ -47,9 +47,9 @@ const DesktopPagination: React.FC<PaginationDefaultProps> = ({
   onClickNext,
 }) => {
   return (
-    <Flexbox container gutter={3}>
+    <Flexbox container gutter={2}>
       <ChevronButton onClick={onClickPrevious} />
-      <StyledFlexbox container gutter={1} justifyContent="center" numberOfPages={numberOfPages}>
+      <StyledFlexbox container gutter={2} justifyContent="center" numberOfPages={numberOfPages}>
         <PageItems
           currentPage={currentPage}
           numberOfPages={numberOfPages}
