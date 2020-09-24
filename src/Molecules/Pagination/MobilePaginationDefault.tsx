@@ -5,7 +5,8 @@ import { PageItemProps, PaginationDefaultProps, BrowseButtonProps } from './Pagi
 import PageItems from './PageItems';
 
 const MAX_NUMBER_ITEMS = 7;
-const ITEMS_TOTAL_WIDTH = 40;
+const PAGE_ITEM_WIDTH = 40;
+const TRUNCATED_ITEM_WIDTH = 20;
 
 const StyledLink = styled.a`
   justify-content: inherit;
@@ -13,7 +14,7 @@ const StyledLink = styled.a`
   color: inherit;
 `;
 
-const StyledBox = styled(Box)<{ variant?: string }>`
+const StyledBox = styled(Box)`
   display: flex;
   height: 40px;
   width: 40px;
@@ -21,11 +22,18 @@ const StyledBox = styled(Box)<{ variant?: string }>`
   padding: 0;
   justify-content: center;
   align-items: center;
+`;
+
+const StyledPageItemBox = styled(StyledBox)<{ variant?: string }>`
   ${({ variant, theme }) =>
     variant === 'selected' && `background-color: ${theme.color.cta}; cursor: default`}
   ${({ variant, theme }) =>
     variant === 'chevron' &&
     `box-sizing: border-box; border: 1px solid ${theme.color.inputBorder};`}
+`;
+
+const StyledTruncatedBox = styled(StyledBox)`
+  width: 20px;
 `;
 
 const MobilePaginationButton: React.FC<Omit<PageItemProps, 'active'> & { variant: string }> = ({
@@ -49,12 +57,22 @@ const MobilePaginationButton: React.FC<Omit<PageItemProps, 'active'> & { variant
       }
     }}
   >
-    <StyledBox variant={variant}>{children}</StyledBox>
+    <StyledPageItemBox variant={variant}>{children}</StyledPageItemBox>
   </StyledLink>
 );
 
 const StyledFlexbox = styled(Flexbox)<{ numberOfPages: number }>`
-  width: ${(p) => Math.min(p.numberOfPages, MAX_NUMBER_ITEMS) * ITEMS_TOTAL_WIDTH}px;
+  width: ${(p) => {
+    let width;
+    if (p.numberOfPages <= 5) {
+      width = p.numberOfPages * PAGE_ITEM_WIDTH;
+    } else if (p.numberOfPages === 6) {
+      width = p.numberOfPages * PAGE_ITEM_WIDTH - TRUNCATED_ITEM_WIDTH;
+    } else if (p.numberOfPages >= 7) {
+      width = MAX_NUMBER_ITEMS * PAGE_ITEM_WIDTH - 2 * TRUNCATED_ITEM_WIDTH;
+    }
+    return width;
+  }}px;
 `;
 
 const PageItem: React.FC<PageItemProps> = ({ active = false, onClick, children }) => (
@@ -68,9 +86,9 @@ const PageItem: React.FC<PageItemProps> = ({ active = false, onClick, children }
 );
 
 const TruncatedPageNumbers = () => (
-  <StyledBox>
+  <StyledTruncatedBox>
     <Typography type="secondary">...</Typography>
-  </StyledBox>
+  </StyledTruncatedBox>
 );
 
 const ChevronButton = ({ direction = 'left', onClick }: BrowseButtonProps) => (
