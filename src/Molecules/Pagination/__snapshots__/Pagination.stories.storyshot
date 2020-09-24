@@ -145,7 +145,7 @@ Array [
           role="button"
         >
           <div
-            className="c4"
+            className="MobilePaginationDefault__StyledBox-sc-1pjp7f1-1 c4"
           >
             <svg
               aria-hidden="true"
@@ -178,7 +178,7 @@ Array [
             role="button"
           >
             <div
-              className="c9"
+              className="MobilePaginationDefault__StyledBox-sc-1pjp7f1-1 c9"
             >
               <span
                 className="c10"
@@ -200,7 +200,7 @@ Array [
           role="button"
         >
           <div
-            className="c4"
+            className="MobilePaginationDefault__StyledBox-sc-1pjp7f1-1 c4"
           >
             <svg
               aria-hidden="true"
@@ -684,7 +684,7 @@ Array [
           role="button"
         >
           <div
-            className="c4"
+            className="MobilePaginationDefault__StyledBox-sc-1pjp7f1-1 c4"
           >
             <svg
               aria-hidden="true"
@@ -717,7 +717,7 @@ Array [
             role="button"
           >
             <div
-              className="c9"
+              className="MobilePaginationDefault__StyledBox-sc-1pjp7f1-1 c9"
             >
               <span
                 className="c10"
@@ -738,7 +738,7 @@ Array [
             role="button"
           >
             <div
-              className="c11"
+              className="MobilePaginationDefault__StyledBox-sc-1pjp7f1-1 c11"
             >
               <span
                 className="c12"
@@ -760,7 +760,7 @@ Array [
           role="button"
         >
           <div
-            className="c4"
+            className="MobilePaginationDefault__StyledBox-sc-1pjp7f1-1 c4"
           >
             <svg
               aria-hidden="true"
@@ -1172,7 +1172,7 @@ Array [
   line-height: 1.5;
 }
 
-.c13 {
+.c14 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
   margin: 0;
@@ -1252,8 +1252,28 @@ Array [
   align-items: center;
 }
 
+.c13 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 40px;
+  width: 40px;
+  border: none;
+  padding: 0;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 20px;
+}
+
 .c7 {
-  width: 280px;
+  width: 240px;
 }
 
 @media not all and (max-width:975px) {
@@ -1283,7 +1303,7 @@ Array [
           role="button"
         >
           <div
-            className="c4"
+            className="MobilePaginationDefault__StyledBox-sc-1pjp7f1-1 c4"
           >
             <svg
               aria-hidden="true"
@@ -1316,7 +1336,7 @@ Array [
             role="button"
           >
             <div
-              className="c9"
+              className="MobilePaginationDefault__StyledBox-sc-1pjp7f1-1 c9"
             >
               <span
                 className="c10"
@@ -1337,7 +1357,7 @@ Array [
             role="button"
           >
             <div
-              className="c11"
+              className="MobilePaginationDefault__StyledBox-sc-1pjp7f1-1 c11"
             >
               <span
                 className="c12"
@@ -1358,7 +1378,7 @@ Array [
             role="button"
           >
             <div
-              className="c11"
+              className="MobilePaginationDefault__StyledBox-sc-1pjp7f1-1 c11"
             >
               <span
                 className="c12"
@@ -1369,10 +1389,10 @@ Array [
           </a>
         </div>
         <div
-          className="c11"
+          className="MobilePaginationDefault__StyledBox-sc-1pjp7f1-1 c13"
         >
           <span
-            className="c13"
+            className="c14"
           >
             ...
           </span>
@@ -1388,7 +1408,7 @@ Array [
             role="button"
           >
             <div
-              className="c11"
+              className="MobilePaginationDefault__StyledBox-sc-1pjp7f1-1 c11"
             >
               <span
                 className="c12"
@@ -1410,7 +1430,7 @@ Array [
           role="button"
         >
           <div
-            className="c4"
+            className="MobilePaginationDefault__StyledBox-sc-1pjp7f1-1 c4"
           >
             <svg
               aria-hidden="true"
@@ -1873,7 +1893,7 @@ Array [
   line-height: 1.5;
 }
 
-.c13 {
+.c14 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
   margin: 0;
@@ -1953,8 +1973,28 @@ Array [
   align-items: center;
 }
 
+.c13 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 40px;
+  width: 40px;
+  border: none;
+  padding: 0;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 20px;
+}
+
 .c7 {
-  width: 280px;
+  width: 240px;
 }
 
 @media not all and (max-width:975px) {
@@ -1984,7 +2024,7 @@ Array [
           role="button"
         >
           <div
-            className="c4"
+            className="MobilePaginationDefault__StyledBox-sc-1pjp7f1-1 c4"
           >
             <svg
               aria-hidden="true"
@@ -2017,7 +2057,7 @@ Array [
             role="button"
           >
             <div
-              className="c9"
+              className="MobilePaginationDefault__StyledBox-sc-1pjp7f1-1 c9"
             >
               <span
                 className="c10"
@@ -2038,7 +2078,7 @@ Array [
             role="button"
           >
             <div
-              className="c11"
+              className="MobilePaginationDefault__StyledBox-sc-1pjp7f1-1 c11"
             >
               <span
                 className="c12"
@@ -2059,7 +2099,7 @@ Array [
             role="button"
           >
             <div
-              className="c11"
+              className="MobilePaginationDefault__StyledBox-sc-1pjp7f1-1 c11"
             >
               <span
                 className="c12"
@@ -2070,10 +2110,10 @@ Array [
           </a>
         </div>
         <div
-          className="c11"
+          className="MobilePaginationDefault__StyledBox-sc-1pjp7f1-1 c13"
         >
           <span
-            className="c13"
+            className="c14"
           >
             ...
           </span>
@@ -2089,7 +2129,7 @@ Array [
             role="button"
           >
             <div
-              className="c11"
+              className="MobilePaginationDefault__StyledBox-sc-1pjp7f1-1 c11"
             >
               <span
                 className="c12"
@@ -2111,7 +2151,7 @@ Array [
           role="button"
         >
           <div
-            className="c4"
+            className="MobilePaginationDefault__StyledBox-sc-1pjp7f1-1 c4"
           >
             <svg
               aria-hidden="true"
@@ -3010,7 +3050,7 @@ Array [
 ]
 `;
 
-exports[`Storyshots Molecules | Pagination Regular 1`] = `
+exports[`Storyshots Molecules | Pagination Controlled pagination 1`] = `
 Array [
   .c1 {
   box-sizing: border-box;
@@ -3081,7 +3121,7 @@ Array [
   line-height: 1.5;
 }
 
-.c13 {
+.c14 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
   margin: 0;
@@ -3161,8 +3201,28 @@ Array [
   align-items: center;
 }
 
+.c13 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 40px;
+  width: 40px;
+  border: none;
+  padding: 0;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 20px;
+}
+
 .c7 {
-  width: 280px;
+  width: 240px;
 }
 
 @media not all and (max-width:975px) {
@@ -3192,7 +3252,7 @@ Array [
           role="button"
         >
           <div
-            className="c4"
+            className="MobilePaginationDefault__StyledBox-sc-1pjp7f1-1 c4"
           >
             <svg
               aria-hidden="true"
@@ -3225,7 +3285,7 @@ Array [
             role="button"
           >
             <div
-              className="c9"
+              className="MobilePaginationDefault__StyledBox-sc-1pjp7f1-1 c9"
             >
               <span
                 className="c10"
@@ -3246,7 +3306,7 @@ Array [
             role="button"
           >
             <div
-              className="c11"
+              className="MobilePaginationDefault__StyledBox-sc-1pjp7f1-1 c11"
             >
               <span
                 className="c12"
@@ -3267,7 +3327,7 @@ Array [
             role="button"
           >
             <div
-              className="c11"
+              className="MobilePaginationDefault__StyledBox-sc-1pjp7f1-1 c11"
             >
               <span
                 className="c12"
@@ -3278,10 +3338,10 @@ Array [
           </a>
         </div>
         <div
-          className="c11"
+          className="MobilePaginationDefault__StyledBox-sc-1pjp7f1-1 c13"
         >
           <span
-            className="c13"
+            className="c14"
           >
             ...
           </span>
@@ -3297,7 +3357,7 @@ Array [
             role="button"
           >
             <div
-              className="c11"
+              className="MobilePaginationDefault__StyledBox-sc-1pjp7f1-1 c11"
             >
               <span
                 className="c12"
@@ -3319,7 +3379,728 @@ Array [
           role="button"
         >
           <div
-            className="c4"
+            className="MobilePaginationDefault__StyledBox-sc-1pjp7f1-1 c4"
+          >
+            <svg
+              aria-hidden="true"
+              className="c5"
+              focusable="false"
+              preserveAspectRatio="xMidYMid meet"
+              role="presentation"
+              viewBox="0 0 24 24"
+            >
+              <polygon
+                points="19.969 4 24 8.027 12 20 0 8.027 4.031 4 12 11.952"
+                transform="rotate(-90 12 12)"
+              />
+            </svg>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>,
+  .c1 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.c3 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c8 {
+  box-sizing: border-box;
+}
+
+.c7 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin-left: -4px;
+  margin-right: -4px;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+
+.c7 > * {
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+.c7 > *:not(:first-child) {
+  padding-top: 0;
+}
+
+.c6 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 8px;
+  height: 8px;
+  fill: #282823;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
+}
+
+.c11 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c5 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: inherit;
+  margin: 0;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c10 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #0046FF;
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c4 {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  overflow: visible;
+  text-transform: none;
+  position: relative;
+  box-sizing: border-box;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  padding: 0;
+  background-color: transparent;
+  color: #282823;
+  border: none;
+  border-radius: 0;
+  cursor: pointer;
+}
+
+.c4,
+.c4[type='button'],
+.c4[type='reset'],
+.c4[type='submit'] {
+  -webkit-appearance: button;
+}
+
+.c4::-moz-focus-inner,
+.c4[type='button']::-moz-focus-inner,
+.c4[type='reset']::-moz-focus-inner,
+.c4[type='submit']::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+.c4:-moz-focusring,
+.c4[type='button']:-moz-focusring,
+.c4[type='reset']:-moz-focusring,
+.c4[type='submit']:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+.c9 {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  overflow: visible;
+  text-transform: none;
+  position: relative;
+  box-sizing: border-box;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  padding: 0;
+  background-color: transparent;
+  color: #A0A09B;
+  border: none;
+  border-radius: 0;
+  cursor: not-allowed;
+}
+
+.c9,
+.c9[type='button'],
+.c9[type='reset'],
+.c9[type='submit'] {
+  -webkit-appearance: button;
+}
+
+.c9::-moz-focus-inner,
+.c9[type='button']::-moz-focus-inner,
+.c9[type='reset']::-moz-focus-inner,
+.c9[type='submit']::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+.c9:-moz-focusring,
+.c9[type='button']:-moz-focusring,
+.c9[type='reset']:-moz-focusring,
+.c9[type='submit']:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+.c2 {
+  width: 150px;
+}
+
+@media not all and (max-width:975px) {
+
+}
+
+@media not all and (min-width:976px) {
+  .c0 {
+    display: none;
+  }
+}
+
+<div
+    className="c0"
+  >
+    <div
+      className="c1 c2"
+      numberOfPages={10}
+    >
+      <div
+        className="c3"
+      >
+        <button
+          className="NormalizedButton__Button-ey7f5x-0 c4"
+          id="currentPage"
+          onClick={[Function]}
+          type="button"
+        >
+          <span
+            className="c5"
+          >
+            <svg
+              aria-hidden="true"
+              className="c6"
+              focusable="false"
+              preserveAspectRatio="xMidYMid meet"
+              role="presentation"
+              viewBox="0 0 24 24"
+            >
+              <polygon
+                points="19.969 4 24 8.027 12 20 0 8.027 4.031 4 12 11.952"
+                transform="rotate(90 12 12)"
+              />
+            </svg>
+          </span>
+        </button>
+      </div>
+      <div
+        className="c7"
+      >
+        <div
+          className="c8"
+        >
+          <button
+            className="NormalizedButton__Button-ey7f5x-0 c9"
+            disabled={true}
+            id="currentPage"
+            onClick={[Function]}
+            type="button"
+          >
+            <span
+              className="c5"
+            >
+              <span
+                className="c10"
+              >
+                1
+              </span>
+            </span>
+          </button>
+        </div>
+        <div
+          className="c8"
+        >
+          <button
+            className="NormalizedButton__Button-ey7f5x-0 c4"
+            disabled={false}
+            id="currentPage"
+            onClick={[Function]}
+            type="button"
+          >
+            <span
+              className="c5"
+            >
+              <span
+                className="c11"
+              >
+                2
+              </span>
+            </span>
+          </button>
+        </div>
+        <div
+          className="c8"
+        >
+          <button
+            className="NormalizedButton__Button-ey7f5x-0 c4"
+            disabled={false}
+            id="currentPage"
+            onClick={[Function]}
+            type="button"
+          >
+            <span
+              className="c5"
+            >
+              <span
+                className="c11"
+              >
+                3
+              </span>
+            </span>
+          </button>
+        </div>
+        <div
+          className="c3"
+        >
+          <span
+            className="c11"
+          >
+            ...
+          </span>
+        </div>
+        <div
+          className="c8"
+        >
+          <button
+            className="NormalizedButton__Button-ey7f5x-0 c4"
+            disabled={false}
+            id="currentPage"
+            onClick={[Function]}
+            type="button"
+          >
+            <span
+              className="c5"
+            >
+              <span
+                className="c11"
+              >
+                10
+              </span>
+            </span>
+          </button>
+        </div>
+      </div>
+      <div
+        className="c3"
+      >
+        <button
+          className="NormalizedButton__Button-ey7f5x-0 c4"
+          id="currentPage"
+          onClick={[Function]}
+          type="button"
+        >
+          <span
+            className="c5"
+          >
+            <svg
+              aria-hidden="true"
+              className="c6"
+              focusable="false"
+              preserveAspectRatio="xMidYMid meet"
+              role="presentation"
+              viewBox="0 0 24 24"
+            >
+              <polygon
+                points="19.969 4 24 8.027 12 20 0 8.027 4.031 4 12 11.952"
+                transform="rotate(-90 12 12)"
+              />
+            </svg>
+          </span>
+        </button>
+      </div>
+    </div>
+  </div>,
+]
+`;
+
+exports[`Storyshots Molecules | Pagination Regular 1`] = `
+Array [
+  .c1 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.c2 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c6 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.c8 {
+  box-sizing: border-box;
+}
+
+.c5 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 12px;
+  height: 12px;
+  fill: #282823;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.c10 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #FFFFFF;
+  margin: 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.c12 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.c14 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c3 {
+  -webkit-box-pack: inherit;
+  -webkit-justify-content: inherit;
+  -ms-flex-pack: inherit;
+  justify-content: inherit;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  color: inherit;
+}
+
+.c4 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 40px;
+  width: 40px;
+  border: none;
+  padding: 0;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  box-sizing: border-box;
+  border: 1px solid #BCBCB6;
+}
+
+.c9 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 40px;
+  width: 40px;
+  border: none;
+  padding: 0;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: #0046FF;
+  cursor: default;
+}
+
+.c11 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 40px;
+  width: 40px;
+  border: none;
+  padding: 0;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c13 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 40px;
+  width: 40px;
+  border: none;
+  padding: 0;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 20px;
+}
+
+.c7 {
+  width: 240px;
+}
+
+@media not all and (max-width:975px) {
+  .c0 {
+    display: none;
+  }
+}
+
+@media not all and (min-width:976px) {
+
+}
+
+<div
+    className="c0"
+  >
+    <div
+      className="c1"
+    >
+      <div
+        className="c2"
+      >
+        <a
+          className="c3"
+          href="#"
+          onClick={[Function]}
+          onKeyDown={[Function]}
+          role="button"
+        >
+          <div
+            className="MobilePaginationDefault__StyledBox-sc-1pjp7f1-1 c4"
+          >
+            <svg
+              aria-hidden="true"
+              className="c5"
+              focusable="false"
+              preserveAspectRatio="xMidYMid meet"
+              role="presentation"
+              viewBox="0 0 24 24"
+            >
+              <polygon
+                points="19.969 4 24 8.027 12 20 0 8.027 4.031 4 12 11.952"
+                transform="rotate(90 12 12)"
+              />
+            </svg>
+          </div>
+        </a>
+      </div>
+      <div
+        className="c6 c7"
+        numberOfPages={10}
+      >
+        <div
+          className="c8"
+        >
+          <a
+            className="c3"
+            href="#"
+            onClick={[Function]}
+            onKeyDown={[Function]}
+            role="button"
+          >
+            <div
+              className="MobilePaginationDefault__StyledBox-sc-1pjp7f1-1 c9"
+            >
+              <span
+                className="c10"
+              >
+                1
+              </span>
+            </div>
+          </a>
+        </div>
+        <div
+          className="c8"
+        >
+          <a
+            className="c3"
+            href="#"
+            onClick={[Function]}
+            onKeyDown={[Function]}
+            role="button"
+          >
+            <div
+              className="MobilePaginationDefault__StyledBox-sc-1pjp7f1-1 c11"
+            >
+              <span
+                className="c12"
+              >
+                2
+              </span>
+            </div>
+          </a>
+        </div>
+        <div
+          className="c8"
+        >
+          <a
+            className="c3"
+            href="#"
+            onClick={[Function]}
+            onKeyDown={[Function]}
+            role="button"
+          >
+            <div
+              className="MobilePaginationDefault__StyledBox-sc-1pjp7f1-1 c11"
+            >
+              <span
+                className="c12"
+              >
+                3
+              </span>
+            </div>
+          </a>
+        </div>
+        <div
+          className="MobilePaginationDefault__StyledBox-sc-1pjp7f1-1 c13"
+        >
+          <span
+            className="c14"
+          >
+            ...
+          </span>
+        </div>
+        <div
+          className="c8"
+        >
+          <a
+            className="c3"
+            href="#"
+            onClick={[Function]}
+            onKeyDown={[Function]}
+            role="button"
+          >
+            <div
+              className="MobilePaginationDefault__StyledBox-sc-1pjp7f1-1 c11"
+            >
+              <span
+                className="c12"
+              >
+                10
+              </span>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div
+        className="c2"
+      >
+        <a
+          className="c3"
+          href="#"
+          onClick={[Function]}
+          onKeyDown={[Function]}
+          role="button"
+        >
+          <div
+            className="MobilePaginationDefault__StyledBox-sc-1pjp7f1-1 c4"
           >
             <svg
               aria-hidden="true"

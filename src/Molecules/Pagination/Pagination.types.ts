@@ -1,5 +1,5 @@
 export type PaginationProps = {
-  currentPage: number;
+  currentPage?: number;
   itemsPerPage: number;
   totalItems: number;
   compact?: boolean;
