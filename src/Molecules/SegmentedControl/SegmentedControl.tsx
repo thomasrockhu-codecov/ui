@@ -11,13 +11,13 @@ import { Flexbox, Typography } from '../..';
 
 const Overlay = styled.div<OverlayProps>`
   position: absolute;
-  width: ${p => (p.$count === 0 ? 100 : 100 / p.$count)}%;
-  height: ${p => p.theme.spacing.unit(8)}px;
-  background-color: ${p => p.theme.color.backgroundInput};
-  left: ${p => (p.$count === 0 ? 0 : p.$selected * (100 / p.$count))}%;
+  width: ${(p) => (p.$count === 0 ? 100 : 100 / p.$count)}%;
+  height: ${(p) => p.theme.spacing.unit(8)}px;
+  background-color: ${(p) => p.theme.color.backgroundInput};
+  left: ${(p) => (p.$count === 0 ? 0 : p.$selected * (100 / p.$count))}%;
   margin: -1px 0 0 0;
   pointer-events: none;
-  border: 1px solid ${p => p.theme.color.sliderBackgroundColor};
+  border: 1px solid ${(p) => p.theme.color.sliderBackgroundColor};
   box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.07);
   transition: all 0.3s ease;
 `;
@@ -41,9 +41,9 @@ const Button = styled.button`
 
 const SegmentedControlContainer = styled(Flexbox)`
   position: relative;
-  background-color: ${p => p.theme.color.background};
-  height: ${p => p.theme.spacing.unit(8)}px;
-  margin: ${p => p.theme.spacing.unit(0.5)}px;
+  background-color: ${(p) => p.theme.color.background};
+  height: ${(p) => p.theme.spacing.unit(8)}px;
+  margin: ${(p) => p.theme.spacing.unit(0.5)}px;
 `;
 
 const StyledFlexbox = styled(Flexbox)`
@@ -60,8 +60,7 @@ const isItemOrUndefined = (x: any): x is { type: typeof Item; props: ItemProps }
   if (x == null || typeof x === 'undefined') {
     return true;
   }
-
-  return typeof x === 'object' && Object.hasOwnProperty.call(x, 'type') && x.type === Item;
+  return typeof x === 'object' && Object.hasOwnProperty.call(x, 'type'); // FIXME: && x.type === Item;
 };
 
 const SegmentedControl: SegmentedControlComponent = ({
@@ -83,7 +82,7 @@ const SegmentedControl: SegmentedControlComponent = ({
 
   const items: React.ReactNode[] = [];
 
-  React.Children.forEach(children, c => {
+  React.Children.forEach(children, (c) => {
     if (!isItemOrUndefined(c)) {
       assert(
         false,
@@ -98,8 +97,8 @@ const SegmentedControl: SegmentedControlComponent = ({
             aria-checked={itemSelected === c.props.itemId}
             onClick={
               isControlled
-                ? e => onClick(e, c.props.itemId)
-                : e => clickHandler(e, c.props.onItemClick, c.props.itemId)
+                ? (e) => onClick(e, c.props.itemId)
+                : (e) => clickHandler(e, c.props.onItemClick, c.props.itemId)
             }
             className={c.props.className}
           >
