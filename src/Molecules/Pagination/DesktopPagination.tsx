@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { Typography, Icon, Flexbox, Button } from '../..';
+import { Props as FlexBoxProps } from '../../Atoms/Flexbox/Flexbox.types';
 import PageItems from './PageItems';
 import { PaginationDefaultProps, PageItemProps, BrowseButtonProps } from './Pagination.types';
 
@@ -10,13 +11,16 @@ const BETWEEN_8_AND_13_PAGES_WIDTH = 150;
 const BETWEEN_14_AND_101_PAGES_WIDTH = 168;
 const MORE_THAN_101_PAGES_WIDTH = 200;
 
-const StyledFlexbox = styled(Flexbox)<{ numberOfPages: number }>`
-  width: ${(p) => {
-    if (p.numberOfPages < 8) return p.numberOfPages * NUMBER_WIDTH + CHEVRON_PADDING;
+const StyledFlexbox = styled(
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
+  ({ numberOfPages, ...rest }: { numberOfPages: number } & FlexBoxProps) => <Flexbox {...rest} />,
+)`
+  width: ${({ numberOfPages }) => {
+    if (numberOfPages < 8) return numberOfPages * NUMBER_WIDTH + CHEVRON_PADDING;
 
-    if (p.numberOfPages >= 8 && p.numberOfPages <= 13) return BETWEEN_8_AND_13_PAGES_WIDTH;
+    if (numberOfPages >= 8 && numberOfPages <= 13) return BETWEEN_8_AND_13_PAGES_WIDTH;
 
-    if (p.numberOfPages >= 14 && p.numberOfPages <= 101) return BETWEEN_14_AND_101_PAGES_WIDTH;
+    if (numberOfPages >= 14 && numberOfPages <= 101) return BETWEEN_14_AND_101_PAGES_WIDTH;
 
     return MORE_THAN_101_PAGES_WIDTH;
   }}px;

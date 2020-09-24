@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { Flexbox, Typography, Icon, Box } from '../..';
+import { Props as FlexBoxProps } from '../../Atoms/Flexbox/Flexbox.types';
 import { PageItemProps, PaginationDefaultProps, BrowseButtonProps } from './Pagination.types';
 import PageItems from './PageItems';
 
@@ -61,14 +62,17 @@ const MobilePaginationButton: React.FC<Omit<PageItemProps, 'active'> & { variant
   </StyledLink>
 );
 
-const StyledFlexbox = styled(Flexbox)<{ numberOfPages: number }>`
-  width: ${(p) => {
+const StyledFlexbox = styled(
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
+  ({ numberOfPages, ...rest }: { numberOfPages: number } & FlexBoxProps) => <Flexbox {...rest} />,
+)`
+  width: ${({ numberOfPages }) => {
     let width;
-    if (p.numberOfPages <= 5) {
-      width = p.numberOfPages * PAGE_ITEM_WIDTH;
-    } else if (p.numberOfPages === 6) {
-      width = p.numberOfPages * PAGE_ITEM_WIDTH - TRUNCATED_ITEM_WIDTH;
-    } else if (p.numberOfPages >= 7) {
+    if (numberOfPages <= 5) {
+      width = numberOfPages * PAGE_ITEM_WIDTH;
+    } else if (numberOfPages === 6) {
+      width = numberOfPages * PAGE_ITEM_WIDTH - TRUNCATED_ITEM_WIDTH;
+    } else if (numberOfPages >= 7) {
       width = MAX_NUMBER_ITEMS * PAGE_ITEM_WIDTH - 2 * TRUNCATED_ITEM_WIDTH;
     }
     return width;
