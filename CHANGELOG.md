@@ -1,3 +1,11 @@
+## [3.26.5](https://github.com/nordnet/ui/compare/v3.26.4...v3.26.5) (2020-09-24)
+
+
+### Bug Fixes
+
+* add better object check ([62b5390](https://github.com/nordnet/ui/commit/62b5390))
+* remove object check ([d1df7e9](https://github.com/nordnet/ui/commit/d1df7e9))
+
 ## [3.26.4](https://github.com/nordnet/ui/compare/v3.26.3...v3.26.4) (2020-09-22)
 
 
