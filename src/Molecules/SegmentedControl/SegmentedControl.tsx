@@ -60,7 +60,11 @@ const isItemOrUndefined = (x: any): x is { type: typeof Item; props: ItemProps }
   if (x == null || typeof x === 'undefined') {
     return true;
   }
-  return typeof x === 'object' && Object.hasOwnProperty.call(x, 'type'); // FIXME: && x.type === Item;
+  return (
+    typeof x === 'object' &&
+    Object.hasOwnProperty.call(x, 'type') &&
+    x.type.displayName === Item.displayName
+  );
 };
 
 const SegmentedControl: SegmentedControlComponent = ({
