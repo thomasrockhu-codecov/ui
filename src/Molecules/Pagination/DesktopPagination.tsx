@@ -14,7 +14,7 @@ const StyledFlexbox = styled(Flexbox)<{ numberOfPages: number }>`
   width: ${(p) => {
     if (p.numberOfPages < 8) return p.numberOfPages * NUMBER_WIDTH + CHEVRON_PADDING;
 
-    if (p.numberOfPages >= 8 && p.numberOfPages >= 13) return BETWEEN_8_AND_13_PAGES_WIDTH;
+    if (p.numberOfPages >= 8 && p.numberOfPages <= 13) return BETWEEN_8_AND_13_PAGES_WIDTH;
 
     if (p.numberOfPages >= 14 && p.numberOfPages <= 101) return BETWEEN_14_AND_101_PAGES_WIDTH;
 
