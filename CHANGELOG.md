@@ -1,3 +1,10 @@
+## [3.26.6](https://github.com/nordnet/ui/compare/v3.26.5...v3.26.6) (2020-09-24)
+
+
+### Bug Fixes
+
+* enable keyboard keys when uncontrolled and focus look ([fc5bb7e](https://github.com/nordnet/ui/commit/fc5bb7e))
+
 ## [3.26.5](https://github.com/nordnet/ui/compare/v3.26.4...v3.26.5) (2020-09-24)
 
 
