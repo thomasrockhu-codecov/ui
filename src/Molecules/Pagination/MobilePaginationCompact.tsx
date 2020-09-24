@@ -15,7 +15,7 @@ const StyledBox = styled.a`
 
 const MobilePaginationButton: React.FC<{
   children: React.ReactNode;
-  onClick: (e: React.SyntheticEvent) => void;
+  onClick: () => void;
 }> = ({ children, onClick }) => (
   <StyledBox
     href="#"
@@ -24,7 +24,7 @@ const MobilePaginationButton: React.FC<{
     onKeyDown={(e) => {
       // Link should trigger on spacebar clicked like actual button.
       if (e.keyCode === 32) {
-        onClick(e);
+        onClick();
       }
     }}
   >

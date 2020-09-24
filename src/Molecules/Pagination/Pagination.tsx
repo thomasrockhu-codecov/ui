@@ -14,13 +14,6 @@ const Pagination: React.FC<PaginationProps> = ({
 }) => {
   const numberOfPages = Math.ceil(totalItems / itemsPerPage) || 1;
 
-  const onClickPageItem = useCallback(
-    (e) => {
-      onPageChange(Number(e.target.textContent));
-    },
-    [onPageChange],
-  );
-
   const onClickPrevious = useCallback(() => {
     if (currentPage > 1) {
       onPageChange(currentPage - 1);
@@ -42,7 +35,7 @@ const Pagination: React.FC<PaginationProps> = ({
           <MobilePaginationDefault
             currentPage={currentPage}
             numberOfPages={numberOfPages}
-            onClickPageItem={onClickPageItem}
+            onClickPageItem={onPageChange}
             onClickPrevious={onClickPrevious}
             onClickNext={onClickNext}
           />
@@ -52,7 +45,7 @@ const Pagination: React.FC<PaginationProps> = ({
         <DesktopPagination
           currentPage={currentPage}
           numberOfPages={numberOfPages}
-          onClickPageItem={onClickPageItem}
+          onClickPageItem={onPageChange}
           onClickPrevious={onClickPrevious}
           onClickNext={onClickNext}
         />

@@ -8,20 +8,20 @@ export type PaginationProps = {
 
 export type PageItemProps = {
   active?: boolean;
-  onClick?: (e: React.SyntheticEvent) => void;
+  onClick?: () => void;
 };
 
 export type PageItemsProps = {
   currentPage: number;
   numberOfPages: number;
-  onClickPageItem: PageItemProps['onClick'];
+  onClickPageItem: (newPage: number) => void;
   PageItem: React.FC<PageItemProps>;
   TruncatedPageNumbers: React.FC<{}>;
 };
 
 export type BrowseButtonProps = {
   direction?: 'left' | 'right';
-  onClick: (e: React.SyntheticEvent) => void;
+  onClick: () => void;
 };
 
 export type PaginationCompactProps = {
@@ -32,5 +32,5 @@ export type PaginationCompactProps = {
 export type PaginationDefaultProps = PaginationCompactProps & {
   currentPage: number;
   numberOfPages: number;
-  onClickPageItem: PageItemProps['onClick'];
+  onClickPageItem: PageItemsProps['onClickPageItem'];
 };

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useCallback } from 'react';
 import { PageItemsProps } from './Pagination.types';
 
 const FIRST_PAGE = 1;
@@ -19,32 +19,34 @@ const PageItems: React.FC<PageItemsProps> = ({
   const totalLessThanFour = numberOfPages < 4;
   const totalLessThanFive = numberOfPages < 5;
 
+  const handlePageItemClick = useCallback((page) => () => onClickPageItem(page), [onClickPageItem]);
+
   return (
     <>
-      <PageItem onClick={onClickPageItem} active={isFirstPage}>
+      <PageItem onClick={handlePageItemClick(FIRST_PAGE)} active={isFirstPage}>
         {FIRST_PAGE}
       </PageItem>
       {!isWithinFirstThree && !totalLessThanFive && <TruncatedPageNumbers />}
       {/* Show third page from last if currently on last one */}
       {isLastPage && !isFirstPage && !isWithinFirstThree && (
-        <PageItem onClick={onClickPageItem}>{numberOfPages - 2}</PageItem>
+        <PageItem onClick={handlePageItemClick(currentPage - 2)}>{currentPage - 2}</PageItem>
       )}
 
       {/* Current, last and next page */}
       {!isFirstPage && !isSecondPage && (
-        <PageItem onClick={onClickPageItem}>{currentPage - 1}</PageItem>
+        <PageItem onClick={handlePageItemClick(currentPage - 1)}>{currentPage - 1}</PageItem>
       )}
       {!isFirstPage && !isLastPage && <PageItem active>{currentPage}</PageItem>}
       {!isLastPage && !isSecondLastPage && (
-        <PageItem onClick={onClickPageItem}>{currentPage + 1}</PageItem>
+        <PageItem onClick={handlePageItemClick(currentPage + 1)}>{currentPage + 1}</PageItem>
       )}
 
       {isFirstPage && !totalLessThanFour && (
-        <PageItem onClick={onClickPageItem}>{FIRST_PAGE + 2}</PageItem>
+        <PageItem onClick={handlePageItemClick(FIRST_PAGE + 2)}>{FIRST_PAGE + 2}</PageItem>
       )}
       {!isWithinLastThree && !totalLessThanFive && <TruncatedPageNumbers />}
       {!totalIsOnlyOnePage && (
-        <PageItem onClick={onClickPageItem} active={isLastPage}>
+        <PageItem onClick={handlePageItemClick(numberOfPages)} active={isLastPage}>
           {numberOfPages}
         </PageItem>
       )}

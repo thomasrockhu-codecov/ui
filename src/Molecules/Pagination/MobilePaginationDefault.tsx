@@ -39,13 +39,13 @@ const MobilePaginationButton: React.FC<Omit<PageItemProps, 'active'> & { variant
     onClick={(e) => {
       e.preventDefault();
       if (variant !== 'selected' && onClick) {
-        onClick(e);
+        onClick();
       }
     }}
     onKeyDown={(e) => {
       // Link should trigger on spacebar clicked like actual button.
       if (e.keyCode === 32 && variant !== 'selected' && onClick) {
-        onClick(e);
+        onClick();
       }
     }}
   >
