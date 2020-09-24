@@ -1,17 +1,12 @@
 import React from 'react';
 import styled from 'styled-components';
-import { Flexbox, Typography, Icon, Box } from '../..';
+import { Flexbox, Typography, Icon, Button } from '../..';
+import { ButtonProps } from '../Button/Button.types';
 import { Props as FlexBoxProps } from '../../Atoms/Flexbox/Flexbox.types';
 import { PageItemProps, PaginationDefaultProps, BrowseButtonProps } from './Pagination.types';
 import PageItems from './PageItems';
 
-const StyledLink = styled.a`
-  justify-content: inherit;
-  text-decoration: none;
-  color: inherit;
-`;
-
-const StyledBox = styled(Box)`
+const StyledButton = styled(Button)`
   display: flex;
   height: ${(p) => p.theme.spacing.unit(10)}px;
   width: ${(p) => p.theme.spacing.unit(10)}px;
@@ -19,9 +14,16 @@ const StyledBox = styled(Box)`
   padding: 0;
   justify-content: center;
   align-items: center;
+  background-color: transparent;
+  outline: none;
 `;
 
-const StyledPageItemBox = styled(StyledBox)<{ variant?: string }>`
+const StyledPageItemBox = styled(
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
+  ({ variant, ...rest }: Omit<ButtonProps, 'variant'> & { variant?: string }) => (
+    <StyledButton {...rest} />
+  ),
+)`
   ${({ variant, theme }) =>
     variant === 'selected' && `background-color: ${theme.color.cta}; cursor: default`}
   ${({ variant, theme }) =>
@@ -29,7 +31,7 @@ const StyledPageItemBox = styled(StyledBox)<{ variant?: string }>`
     `box-sizing: border-box; border: 1px solid ${theme.color.inputBorder};`}
 `;
 
-const StyledTruncatedBox = styled(StyledBox)`
+const StyledTruncatedBox = styled(StyledButton)`
   width: ${(p) => p.theme.spacing.unit(5)}px;
 `;
 
@@ -38,24 +40,17 @@ const MobilePaginationButton: React.FC<Omit<PageItemProps, 'active'> & { variant
   onClick,
   variant,
 }) => (
-  <StyledLink
-    href="#"
-    role="button"
-    onClick={(e) => {
-      e.preventDefault();
+  <StyledPageItemBox
+    disabled={!['selected', 'chevron'].includes(variant)}
+    onClick={() => {
       if (variant !== 'selected' && onClick) {
         onClick();
       }
     }}
-    onKeyDown={(e) => {
-      // Link should trigger on spacebar clicked like actual button.
-      if (e.keyCode === 32 && variant !== 'selected' && onClick) {
-        onClick();
-      }
-    }}
+    variant={variant}
   >
-    <StyledPageItemBox variant={variant}>{children}</StyledPageItemBox>
-  </StyledLink>
+    {children}
+  </StyledPageItemBox>
 );
 
 const StyledFlexbox = styled(

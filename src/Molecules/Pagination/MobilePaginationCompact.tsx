@@ -1,9 +1,10 @@
 import React from 'react';
 import styled from 'styled-components';
 import { Flexbox, Icon } from '../..';
+import { Button } from '../../common/NormalizedElements/NormalizedButton';
 import { PaginationCompactProps, BrowseButtonProps } from './Pagination.types';
 
-const StyledBox = styled.a`
+const StyledButton = styled(Button)`
   display: flex;
   height: ${(p) => p.theme.spacing.unit(10)}px;
   width: ${(p) => p.theme.spacing.unit(10)}px;
@@ -11,25 +12,17 @@ const StyledBox = styled.a`
   padding: 0;
   justify-content: center;
   align-items: center;
+  background-color: transparent;
+  outline: none;
 `;
 
 const MobilePaginationButton: React.FC<{
-  children: React.ReactNode;
+  children: React.ReactChild;
   onClick: () => void;
 }> = ({ children, onClick }) => (
-  <StyledBox
-    href="#"
-    role="button"
-    onClick={onClick}
-    onKeyDown={(e) => {
-      // Link should trigger on spacebar clicked like actual button.
-      if (e.keyCode === 32) {
-        onClick();
-      }
-    }}
-  >
+  <StyledButton href="#" onClick={onClick}>
     {children}
-  </StyledBox>
+  </StyledButton>
 );
 
 const ChevronButton = ({ direction = 'left', onClick }: BrowseButtonProps) => (
