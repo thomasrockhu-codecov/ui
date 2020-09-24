@@ -5,10 +5,6 @@ import { Props as FlexBoxProps } from '../../Atoms/Flexbox/Flexbox.types';
 import { PageItemProps, PaginationDefaultProps, BrowseButtonProps } from './Pagination.types';
 import PageItems from './PageItems';
 
-const MAX_NUMBER_ITEMS = 7;
-const PAGE_ITEM_WIDTH = 40;
-const TRUNCATED_ITEM_WIDTH = 20;
-
 const StyledLink = styled.a`
   justify-content: inherit;
   text-decoration: none;
@@ -17,8 +13,8 @@ const StyledLink = styled.a`
 
 const StyledBox = styled(Box)`
   display: flex;
-  height: 40px;
-  width: 40px;
+  height: ${(p) => p.theme.spacing.unit(10)}px;
+  width: ${(p) => p.theme.spacing.unit(10)}px;
   border: none;
   padding: 0;
   justify-content: center;
@@ -34,7 +30,7 @@ const StyledPageItemBox = styled(StyledBox)<{ variant?: string }>`
 `;
 
 const StyledTruncatedBox = styled(StyledBox)`
-  width: 20px;
+  width: ${(p) => p.theme.spacing.unit(5)}px;
 `;
 
 const MobilePaginationButton: React.FC<Omit<PageItemProps, 'active'> & { variant: string }> = ({
@@ -66,13 +62,17 @@ const StyledFlexbox = styled(
   // eslint-disable-next-line @typescript-eslint/no-unused-vars
   ({ numberOfPages, ...rest }: { numberOfPages: number } & FlexBoxProps) => <Flexbox {...rest} />,
 )`
-  width: ${({ numberOfPages }) => {
+  width: ${(p) => {
+    const PAGE_ITEM_WIDTH = p.theme.spacing.unit(10);
+    const TRUNCATED_ITEM_WIDTH = p.theme.spacing.unit(5);
+    const MAX_NUMBER_ITEMS = 7;
+
     let width;
-    if (numberOfPages <= 5) {
-      width = numberOfPages * PAGE_ITEM_WIDTH;
-    } else if (numberOfPages === 6) {
-      width = numberOfPages * PAGE_ITEM_WIDTH - TRUNCATED_ITEM_WIDTH;
-    } else if (numberOfPages >= 7) {
+    if (p.numberOfPages <= 5) {
+      width = p.numberOfPages * PAGE_ITEM_WIDTH;
+    } else if (p.numberOfPages === 6) {
+      width = p.numberOfPages * PAGE_ITEM_WIDTH - TRUNCATED_ITEM_WIDTH;
+    } else if (p.numberOfPages >= 7) {
       width = MAX_NUMBER_ITEMS * PAGE_ITEM_WIDTH - 2 * TRUNCATED_ITEM_WIDTH;
     }
     return width;

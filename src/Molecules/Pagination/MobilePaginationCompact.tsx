@@ -5,8 +5,8 @@ import { PaginationCompactProps, BrowseButtonProps } from './Pagination.types';
 
 const StyledBox = styled.a`
   display: flex;
-  height: 40px;
-  width: 40px;
+  height: ${(p) => p.theme.spacing.unit(10)}px;
+  width: ${(p) => p.theme.spacing.unit(10)}px;
   border: none;
   padding: 0;
   justify-content: center;
