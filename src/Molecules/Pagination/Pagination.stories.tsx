@@ -1,23 +1,14 @@
 import React from 'react';
-import MD from 'react-markdown';
 import { action } from '@storybook/addon-actions';
-import docs from './Pagination.md';
-
-import { Typography } from '../..';
+import docs from './Pagination.mdx';
 import Pagination from './Pagination';
 
 export default {
   title: 'Molecules | Pagination',
   parameters: {
-    component: Pagination,
+    ...docs.parameters,
   },
 };
-
-export const documentation = () => (
-  <Typography type="primary">
-    <MD source={docs} />
-  </Typography>
-);
 
 const UncontrolledPaginationWrapper = ({ totalItems = 10, itemsPerPage = 1, compact = false }) => (
   <Pagination
