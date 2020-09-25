@@ -1,3 +1,13 @@
+## [3.26.7](https://github.com/nordnet/ui/compare/v3.26.6...v3.26.7) (2020-09-25)
+
+
+### Bug Fixes
+
+* 🐛 fix styled types on Avatar ([45a5984](https://github.com/nordnet/ui/commit/45a5984))
+* 🐛 needs prop fix ([27578af](https://github.com/nordnet/ui/commit/27578af))
+* 🐛 prop name change ([36eb14c](https://github.com/nordnet/ui/commit/36eb14c))
+* 🐛 use function check ([58503eb](https://github.com/nordnet/ui/commit/58503eb))
+
 ## [3.26.6](https://github.com/nordnet/ui/compare/v3.26.5...v3.26.6) (2020-09-24)
 
 
