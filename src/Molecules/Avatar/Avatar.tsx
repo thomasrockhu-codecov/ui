@@ -1,10 +1,10 @@
 import React from 'react';
 import styled, { StyledProps } from 'styled-components';
-import { Props, ColorFn } from './Avatar.types';
+import { Props } from './Avatar.types';
 
 import { Flexbox, Typography } from '../..';
 
-const getSize = (p: StyledProps<Props & { $backgroundColorst?: ColorFn }>) => {
+const getSize = (p: StyledProps<Props>) => {
   switch (p.size) {
     case 's':
       return p.theme.spacing.unit(6);
@@ -14,9 +14,9 @@ const getSize = (p: StyledProps<Props & { $backgroundColorst?: ColorFn }>) => {
   }
 };
 
-const StyledDiv = styled(Flexbox)<{ $backgroundColors?: ColorFn }>`
-  background-color: ${({ theme, $backgroundColors }) =>
-    $backgroundColors ? $backgroundColors(theme) : theme.color.backgroundDark};
+const StyledDiv = styled(Flexbox)<Props>`
+  background-color: ${({ theme, backgroundColors }) =>
+    backgroundColors ? backgroundColors(theme) : theme.color.backgroundDark};
   width: ${getSize}px;
   height: ${getSize}px;
   font-size: ${getSize}px;
@@ -29,7 +29,7 @@ export const Avatar: React.FunctionComponent<Props> = ({
   backgroundColors,
 }) => (
   <StyledDiv
-    $backgroundColors={backgroundColors}
+    backgroundColors={backgroundColors}
     container
     alignItems="center"
     justifyContent="center"
