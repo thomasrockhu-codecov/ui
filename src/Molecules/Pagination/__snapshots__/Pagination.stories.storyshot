@@ -21,6 +21,18 @@ exports[`Storyshots Molecules | Pagination 1 page 1`] = `
   align-items: center;
 }
 
+.c8 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
 .c10 {
   box-sizing: border-box;
 }
@@ -49,15 +61,6 @@ exports[`Storyshots Molecules | Pagination 1 page 1`] = `
 
 .c17 > *:not(:first-child) {
   padding-top: 0;
-}
-
-.c7 {
-  position: absolute;
-  height: 1px;
-  width: 1px;
-  overflow: hidden;
-  -webkit-clip: rect(1px,1px,1px,1px);
-  clip: rect(1px,1px,1px,1px);
 }
 
 .c6 {
@@ -107,7 +110,7 @@ exports[`Storyshots Molecules | Pagination 1 page 1`] = `
   line-height: 1.5;
 }
 
-.c19 {
+.c18 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #0046FF;
   margin: 0;
@@ -167,57 +170,6 @@ exports[`Storyshots Molecules | Pagination 1 page 1`] = `
   outline: 1px dotted ButtonText;
 }
 
-.c18 {
-  font-family: inherit;
-  font-size: 100%;
-  line-height: 1.15;
-  margin: 0;
-  overflow: visible;
-  text-transform: none;
-  position: relative;
-  box-sizing: border-box;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  padding: 0;
-  background-color: transparent;
-  color: #A0A09B;
-  border: none;
-  border-radius: 0;
-  cursor: not-allowed;
-}
-
-.c18,
-.c18[type='button'],
-.c18[type='reset'],
-.c18[type='submit'] {
-  -webkit-appearance: button;
-}
-
-.c18::-moz-focus-inner,
-.c18[type='button']::-moz-focus-inner,
-.c18[type='reset']::-moz-focus-inner,
-.c18[type='submit']::-moz-focus-inner {
-  border-style: none;
-  padding: 0;
-}
-
-.c18:-moz-focusring,
-.c18[type='button']:-moz-focusring,
-.c18[type='reset']:-moz-focusring,
-.c18[type='submit']:-moz-focusring {
-  outline: 1px dotted ButtonText;
-}
-
 .c14 {
   width: 34px;
 }
@@ -225,6 +177,7 @@ exports[`Storyshots Molecules | Pagination 1 page 1`] = `
 .c16 {
   margin: 0;
   padding: 0;
+  list-style-type: none;
 }
 
 .c4 {
@@ -273,13 +226,14 @@ exports[`Storyshots Molecules | Pagination 1 page 1`] = `
   cursor: default;
 }
 
-.c9 {
-  width: 40px;
-}
-
-.c8 {
+.c7 {
   margin: 0;
   padding: 0;
+  list-style-type: none;
+}
+
+.c9 {
+  width: 40px;
 }
 
 @media not all and (max-width:975px) {
@@ -308,6 +262,7 @@ exports[`Storyshots Molecules | Pagination 1 page 1`] = `
         className="c2"
       >
         <button
+          aria-label="Go to previous page"
           className="NormalizedButton__Button-ey7f5x-0 c3 c4"
           onClick={[Function]}
           type="button"
@@ -328,21 +283,18 @@ exports[`Storyshots Molecules | Pagination 1 page 1`] = `
                 transform="rotate(90 12 12)"
               />
             </svg>
-            <div
-              className="c7"
-            >
-              Go to previous page
-            </div>
           </span>
         </button>
       </div>
       <ul
-        className="c8 c9"
+        className="c7 c8 c9"
       >
-        <div
+        <li
           className="c10"
         >
           <button
+            aria-disabled={true}
+            aria-label="Current Page: Page 1"
             className="NormalizedButton__Button-ey7f5x-0 c3 c11"
             onClick={[Function]}
             type="button"
@@ -353,21 +305,17 @@ exports[`Storyshots Molecules | Pagination 1 page 1`] = `
               <span
                 className="c12"
               >
-                <div
-                  className="c7"
-                >
-                  Go to page
-                </div>
                 1
               </span>
             </span>
           </button>
-        </div>
+        </li>
       </ul>
       <div
         className="c2"
       >
         <button
+          aria-label="Go to next page"
           className="NormalizedButton__Button-ey7f5x-0 c3 c4"
           onClick={[Function]}
           type="button"
@@ -388,11 +336,6 @@ exports[`Storyshots Molecules | Pagination 1 page 1`] = `
                 transform="rotate(-90 12 12)"
               />
             </svg>
-            <div
-              className="c7"
-            >
-              Go to next page
-            </div>
           </span>
         </button>
       </div>
@@ -405,6 +348,7 @@ exports[`Storyshots Molecules | Pagination 1 page 1`] = `
       className="c1 c14"
     >
       <button
+        aria-label="Go to previous page"
         className="NormalizedButton__Button-ey7f5x-0 c3"
         onClick={[Function]}
         type="button"
@@ -425,22 +369,18 @@ exports[`Storyshots Molecules | Pagination 1 page 1`] = `
               transform="rotate(90 12 12)"
             />
           </svg>
-          <div
-            className="c7"
-          >
-            Go to previous page
-          </div>
         </span>
       </button>
       <ul
         className="c16 c17"
       >
-        <div
+        <li
           className="c10"
         >
           <button
-            className="NormalizedButton__Button-ey7f5x-0 c18"
-            disabled={true}
+            aria-disabled={true}
+            aria-label="Current Page: page 1"
+            className="NormalizedButton__Button-ey7f5x-0 c3"
             onClick={[Function]}
             type="button"
           >
@@ -448,20 +388,16 @@ exports[`Storyshots Molecules | Pagination 1 page 1`] = `
               className="c5"
             >
               <span
-                className="c19"
+                className="c18"
               >
-                <div
-                  className="c7"
-                >
-                  Go to page
-                </div>
                 1
               </span>
             </span>
           </button>
-        </div>
+        </li>
       </ul>
       <button
+        aria-label="Go to next page"
         className="NormalizedButton__Button-ey7f5x-0 c3"
         onClick={[Function]}
         type="button"
@@ -482,11 +418,6 @@ exports[`Storyshots Molecules | Pagination 1 page 1`] = `
               transform="rotate(-90 12 12)"
             />
           </svg>
-          <div
-            className="c7"
-          >
-            Go to next page
-          </div>
         </span>
       </button>
     </div>
@@ -513,6 +444,18 @@ exports[`Storyshots Molecules | Pagination 2 pages 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+}
+
+.c8 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
 .c10 {
@@ -545,15 +488,6 @@ exports[`Storyshots Molecules | Pagination 2 pages 1`] = `
   padding-top: 0;
 }
 
-.c7 {
-  position: absolute;
-  height: 1px;
-  width: 1px;
-  overflow: hidden;
-  -webkit-clip: rect(1px,1px,1px,1px);
-  clip: rect(1px,1px,1px,1px);
-}
-
 .c6 {
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -610,7 +544,7 @@ exports[`Storyshots Molecules | Pagination 2 pages 1`] = `
   line-height: 1.5;
 }
 
-.c21 {
+.c20 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #0046FF;
   margin: 0;
@@ -619,7 +553,7 @@ exports[`Storyshots Molecules | Pagination 2 pages 1`] = `
   line-height: 1.4285714285714286;
 }
 
-.c22 {
+.c21 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
   margin: 0;
@@ -679,57 +613,6 @@ exports[`Storyshots Molecules | Pagination 2 pages 1`] = `
   outline: 1px dotted ButtonText;
 }
 
-.c20 {
-  font-family: inherit;
-  font-size: 100%;
-  line-height: 1.15;
-  margin: 0;
-  overflow: visible;
-  text-transform: none;
-  position: relative;
-  box-sizing: border-box;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  padding: 0;
-  background-color: transparent;
-  color: #A0A09B;
-  border: none;
-  border-radius: 0;
-  cursor: not-allowed;
-}
-
-.c20,
-.c20[type='button'],
-.c20[type='reset'],
-.c20[type='submit'] {
-  -webkit-appearance: button;
-}
-
-.c20::-moz-focus-inner,
-.c20[type='button']::-moz-focus-inner,
-.c20[type='reset']::-moz-focus-inner,
-.c20[type='submit']::-moz-focus-inner {
-  border-style: none;
-  padding: 0;
-}
-
-.c20:-moz-focusring,
-.c20[type='button']:-moz-focusring,
-.c20[type='reset']:-moz-focusring,
-.c20[type='submit']:-moz-focusring {
-  outline: 1px dotted ButtonText;
-}
-
 .c16 {
   width: 52px;
 }
@@ -737,6 +620,7 @@ exports[`Storyshots Molecules | Pagination 2 pages 1`] = `
 .c18 {
   margin: 0;
   padding: 0;
+  list-style-type: none;
 }
 
 .c4 {
@@ -806,13 +690,14 @@ exports[`Storyshots Molecules | Pagination 2 pages 1`] = `
   outline: none;
 }
 
-.c9 {
-  width: 80px;
-}
-
-.c8 {
+.c7 {
   margin: 0;
   padding: 0;
+  list-style-type: none;
+}
+
+.c9 {
+  width: 80px;
 }
 
 @media not all and (max-width:975px) {
@@ -841,6 +726,7 @@ exports[`Storyshots Molecules | Pagination 2 pages 1`] = `
         className="c2"
       >
         <button
+          aria-label="Go to previous page"
           className="NormalizedButton__Button-ey7f5x-0 c3 c4"
           onClick={[Function]}
           type="button"
@@ -861,21 +747,18 @@ exports[`Storyshots Molecules | Pagination 2 pages 1`] = `
                 transform="rotate(90 12 12)"
               />
             </svg>
-            <div
-              className="c7"
-            >
-              Go to previous page
-            </div>
           </span>
         </button>
       </div>
       <ul
-        className="c8 c9"
+        className="c7 c8 c9"
       >
-        <div
+        <li
           className="c10"
         >
           <button
+            aria-disabled={true}
+            aria-label="Current Page: Page 1"
             className="NormalizedButton__Button-ey7f5x-0 c3 c11"
             onClick={[Function]}
             type="button"
@@ -886,20 +769,17 @@ exports[`Storyshots Molecules | Pagination 2 pages 1`] = `
               <span
                 className="c12"
               >
-                <div
-                  className="c7"
-                >
-                  Go to page
-                </div>
                 1
               </span>
             </span>
           </button>
-        </div>
-        <div
+        </li>
+        <li
           className="c10"
         >
           <button
+            aria-disabled={false}
+            aria-label="Go to Page 2"
             className="NormalizedButton__Button-ey7f5x-0 c3 c13"
             onClick={[Function]}
             type="button"
@@ -910,21 +790,17 @@ exports[`Storyshots Molecules | Pagination 2 pages 1`] = `
               <span
                 className="c14"
               >
-                <div
-                  className="c7"
-                >
-                  Go to page
-                </div>
                 2
               </span>
             </span>
           </button>
-        </div>
+        </li>
       </ul>
       <div
         className="c2"
       >
         <button
+          aria-label="Go to next page"
           className="NormalizedButton__Button-ey7f5x-0 c3 c4"
           onClick={[Function]}
           type="button"
@@ -945,11 +821,6 @@ exports[`Storyshots Molecules | Pagination 2 pages 1`] = `
                 transform="rotate(-90 12 12)"
               />
             </svg>
-            <div
-              className="c7"
-            >
-              Go to next page
-            </div>
           </span>
         </button>
       </div>
@@ -962,6 +833,7 @@ exports[`Storyshots Molecules | Pagination 2 pages 1`] = `
       className="c1 c16"
     >
       <button
+        aria-label="Go to previous page"
         className="NormalizedButton__Button-ey7f5x-0 c3"
         onClick={[Function]}
         type="button"
@@ -982,22 +854,39 @@ exports[`Storyshots Molecules | Pagination 2 pages 1`] = `
               transform="rotate(90 12 12)"
             />
           </svg>
-          <div
-            className="c7"
-          >
-            Go to previous page
-          </div>
         </span>
       </button>
       <ul
         className="c18 c19"
       >
-        <div
+        <li
           className="c10"
         >
           <button
-            className="NormalizedButton__Button-ey7f5x-0 c20"
-            disabled={true}
+            aria-disabled={true}
+            aria-label="Current Page: page 1"
+            className="NormalizedButton__Button-ey7f5x-0 c3"
+            onClick={[Function]}
+            type="button"
+          >
+            <span
+              className="c5"
+            >
+              <span
+                className="c20"
+              >
+                1
+              </span>
+            </span>
+          </button>
+        </li>
+        <li
+          className="c10"
+        >
+          <button
+            aria-disabled={false}
+            aria-label="Go to page 2"
+            className="NormalizedButton__Button-ey7f5x-0 c3"
             onClick={[Function]}
             type="button"
           >
@@ -1007,43 +896,14 @@ exports[`Storyshots Molecules | Pagination 2 pages 1`] = `
               <span
                 className="c21"
               >
-                <div
-                  className="c7"
-                >
-                  Go to page
-                </div>
-                1
-              </span>
-            </span>
-          </button>
-        </div>
-        <div
-          className="c10"
-        >
-          <button
-            className="NormalizedButton__Button-ey7f5x-0 c3"
-            disabled={false}
-            onClick={[Function]}
-            type="button"
-          >
-            <span
-              className="c5"
-            >
-              <span
-                className="c22"
-              >
-                <div
-                  className="c7"
-                >
-                  Go to page
-                </div>
                 2
               </span>
             </span>
           </button>
-        </div>
+        </li>
       </ul>
       <button
+        aria-label="Go to next page"
         className="NormalizedButton__Button-ey7f5x-0 c3"
         onClick={[Function]}
         type="button"
@@ -1064,11 +924,6 @@ exports[`Storyshots Molecules | Pagination 2 pages 1`] = `
               transform="rotate(-90 12 12)"
             />
           </svg>
-          <div
-            className="c7"
-          >
-            Go to next page
-          </div>
         </span>
       </button>
     </div>
@@ -1097,6 +952,18 @@ exports[`Storyshots Molecules | Pagination 12 pages 1`] = `
   align-items: center;
 }
 
+.c8 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
 .c10 {
   box-sizing: border-box;
 }
@@ -1125,15 +992,6 @@ exports[`Storyshots Molecules | Pagination 12 pages 1`] = `
 
 .c21 > *:not(:first-child) {
   padding-top: 0;
-}
-
-.c7 {
-  position: absolute;
-  height: 1px;
-  width: 1px;
-  overflow: hidden;
-  -webkit-clip: rect(1px,1px,1px,1px);
-  clip: rect(1px,1px,1px,1px);
 }
 
 .c6 {
@@ -1201,7 +1059,7 @@ exports[`Storyshots Molecules | Pagination 12 pages 1`] = `
   line-height: 1.4285714285714286;
 }
 
-.c23 {
+.c22 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #0046FF;
   margin: 0;
@@ -1261,57 +1119,6 @@ exports[`Storyshots Molecules | Pagination 12 pages 1`] = `
   outline: 1px dotted ButtonText;
 }
 
-.c22 {
-  font-family: inherit;
-  font-size: 100%;
-  line-height: 1.15;
-  margin: 0;
-  overflow: visible;
-  text-transform: none;
-  position: relative;
-  box-sizing: border-box;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  padding: 0;
-  background-color: transparent;
-  color: #A0A09B;
-  border: none;
-  border-radius: 0;
-  cursor: not-allowed;
-}
-
-.c22,
-.c22[type='button'],
-.c22[type='reset'],
-.c22[type='submit'] {
-  -webkit-appearance: button;
-}
-
-.c22::-moz-focus-inner,
-.c22[type='button']::-moz-focus-inner,
-.c22[type='reset']::-moz-focus-inner,
-.c22[type='submit']::-moz-focus-inner {
-  border-style: none;
-  padding: 0;
-}
-
-.c22:-moz-focusring,
-.c22[type='button']:-moz-focusring,
-.c22[type='reset']:-moz-focusring,
-.c22[type='submit']:-moz-focusring {
-  outline: 1px dotted ButtonText;
-}
-
 .c18 {
   width: 152px;
 }
@@ -1319,6 +1126,7 @@ exports[`Storyshots Molecules | Pagination 12 pages 1`] = `
 .c20 {
   margin: 0;
   padding: 0;
+  list-style-type: none;
 }
 
 .c4 {
@@ -1407,13 +1215,14 @@ exports[`Storyshots Molecules | Pagination 12 pages 1`] = `
   align-items: center;
 }
 
-.c9 {
-  width: 240px;
-}
-
-.c8 {
+.c7 {
   margin: 0;
   padding: 0;
+  list-style-type: none;
+}
+
+.c9 {
+  width: 240px;
 }
 
 @media not all and (max-width:975px) {
@@ -1442,6 +1251,7 @@ exports[`Storyshots Molecules | Pagination 12 pages 1`] = `
         className="c2"
       >
         <button
+          aria-label="Go to previous page"
           className="NormalizedButton__Button-ey7f5x-0 c3 c4"
           onClick={[Function]}
           type="button"
@@ -1462,21 +1272,18 @@ exports[`Storyshots Molecules | Pagination 12 pages 1`] = `
                 transform="rotate(90 12 12)"
               />
             </svg>
-            <div
-              className="c7"
-            >
-              Go to previous page
-            </div>
           </span>
         </button>
       </div>
       <ul
-        className="c8 c9"
+        className="c7 c8 c9"
       >
-        <div
+        <li
           className="c10"
         >
           <button
+            aria-disabled={true}
+            aria-label="Current Page: Page 1"
             className="NormalizedButton__Button-ey7f5x-0 c3 c11"
             onClick={[Function]}
             type="button"
@@ -1487,20 +1294,17 @@ exports[`Storyshots Molecules | Pagination 12 pages 1`] = `
               <span
                 className="c12"
               >
-                <div
-                  className="c7"
-                >
-                  Go to page
-                </div>
                 1
               </span>
             </span>
           </button>
-        </div>
-        <div
+        </li>
+        <li
           className="c10"
         >
           <button
+            aria-disabled={false}
+            aria-label="Go to Page 2"
             className="NormalizedButton__Button-ey7f5x-0 c3 c13"
             onClick={[Function]}
             type="button"
@@ -1511,20 +1315,17 @@ exports[`Storyshots Molecules | Pagination 12 pages 1`] = `
               <span
                 className="c14"
               >
-                <div
-                  className="c7"
-                >
-                  Go to page
-                </div>
                 2
               </span>
             </span>
           </button>
-        </div>
-        <div
+        </li>
+        <li
           className="c10"
         >
           <button
+            aria-disabled={false}
+            aria-label="Go to Page 3"
             className="NormalizedButton__Button-ey7f5x-0 c3 c13"
             onClick={[Function]}
             type="button"
@@ -1535,17 +1336,12 @@ exports[`Storyshots Molecules | Pagination 12 pages 1`] = `
               <span
                 className="c14"
               >
-                <div
-                  className="c7"
-                >
-                  Go to page
-                </div>
                 3
               </span>
             </span>
           </button>
-        </div>
-        <div
+        </li>
+        <li
           className="c15"
         >
           <span
@@ -1553,11 +1349,13 @@ exports[`Storyshots Molecules | Pagination 12 pages 1`] = `
           >
             ...
           </span>
-        </div>
-        <div
+        </li>
+        <li
           className="c10"
         >
           <button
+            aria-disabled={false}
+            aria-label="Go to Page 12"
             className="NormalizedButton__Button-ey7f5x-0 c3 c13"
             onClick={[Function]}
             type="button"
@@ -1568,21 +1366,17 @@ exports[`Storyshots Molecules | Pagination 12 pages 1`] = `
               <span
                 className="c14"
               >
-                <div
-                  className="c7"
-                >
-                  Go to page
-                </div>
                 12
               </span>
             </span>
           </button>
-        </div>
+        </li>
       </ul>
       <div
         className="c2"
       >
         <button
+          aria-label="Go to next page"
           className="NormalizedButton__Button-ey7f5x-0 c3 c4"
           onClick={[Function]}
           type="button"
@@ -1603,11 +1397,6 @@ exports[`Storyshots Molecules | Pagination 12 pages 1`] = `
                 transform="rotate(-90 12 12)"
               />
             </svg>
-            <div
-              className="c7"
-            >
-              Go to next page
-            </div>
           </span>
         </button>
       </div>
@@ -1620,6 +1409,7 @@ exports[`Storyshots Molecules | Pagination 12 pages 1`] = `
       className="c1 c18"
     >
       <button
+        aria-label="Go to previous page"
         className="NormalizedButton__Button-ey7f5x-0 c3"
         onClick={[Function]}
         type="button"
@@ -1640,22 +1430,18 @@ exports[`Storyshots Molecules | Pagination 12 pages 1`] = `
               transform="rotate(90 12 12)"
             />
           </svg>
-          <div
-            className="c7"
-          >
-            Go to previous page
-          </div>
         </span>
       </button>
       <ul
         className="c20 c21"
       >
-        <div
+        <li
           className="c10"
         >
           <button
-            className="NormalizedButton__Button-ey7f5x-0 c22"
-            disabled={true}
+            aria-disabled={true}
+            aria-label="Current Page: page 1"
+            className="NormalizedButton__Button-ey7f5x-0 c3"
             onClick={[Function]}
             type="button"
           >
@@ -1663,24 +1449,20 @@ exports[`Storyshots Molecules | Pagination 12 pages 1`] = `
               className="c5"
             >
               <span
-                className="c23"
+                className="c22"
               >
-                <div
-                  className="c7"
-                >
-                  Go to page
-                </div>
                 1
               </span>
             </span>
           </button>
-        </div>
-        <div
+        </li>
+        <li
           className="c10"
         >
           <button
+            aria-disabled={false}
+            aria-label="Go to page 2"
             className="NormalizedButton__Button-ey7f5x-0 c3"
-            disabled={false}
             onClick={[Function]}
             type="button"
           >
@@ -1690,22 +1472,18 @@ exports[`Storyshots Molecules | Pagination 12 pages 1`] = `
               <span
                 className="c16"
               >
-                <div
-                  className="c7"
-                >
-                  Go to page
-                </div>
                 2
               </span>
             </span>
           </button>
-        </div>
-        <div
+        </li>
+        <li
           className="c10"
         >
           <button
+            aria-disabled={false}
+            aria-label="Go to page 3"
             className="NormalizedButton__Button-ey7f5x-0 c3"
-            disabled={false}
             onClick={[Function]}
             type="button"
           >
@@ -1715,17 +1493,12 @@ exports[`Storyshots Molecules | Pagination 12 pages 1`] = `
               <span
                 className="c16"
               >
-                <div
-                  className="c7"
-                >
-                  Go to page
-                </div>
                 3
               </span>
             </span>
           </button>
-        </div>
-        <div
+        </li>
+        <li
           className="c2"
         >
           <span
@@ -1733,13 +1506,14 @@ exports[`Storyshots Molecules | Pagination 12 pages 1`] = `
           >
             ...
           </span>
-        </div>
-        <div
+        </li>
+        <li
           className="c10"
         >
           <button
+            aria-disabled={false}
+            aria-label="Go to page 12"
             className="NormalizedButton__Button-ey7f5x-0 c3"
-            disabled={false}
             onClick={[Function]}
             type="button"
           >
@@ -1749,18 +1523,14 @@ exports[`Storyshots Molecules | Pagination 12 pages 1`] = `
               <span
                 className="c16"
               >
-                <div
-                  className="c7"
-                >
-                  Go to page
-                </div>
                 12
               </span>
             </span>
           </button>
-        </div>
+        </li>
       </ul>
       <button
+        aria-label="Go to next page"
         className="NormalizedButton__Button-ey7f5x-0 c3"
         onClick={[Function]}
         type="button"
@@ -1781,11 +1551,6 @@ exports[`Storyshots Molecules | Pagination 12 pages 1`] = `
               transform="rotate(-90 12 12)"
             />
           </svg>
-          <div
-            className="c7"
-          >
-            Go to next page
-          </div>
         </span>
       </button>
     </div>
@@ -1814,6 +1579,18 @@ exports[`Storyshots Molecules | Pagination 999 pages 1`] = `
   align-items: center;
 }
 
+.c8 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
 .c10 {
   box-sizing: border-box;
 }
@@ -1842,15 +1619,6 @@ exports[`Storyshots Molecules | Pagination 999 pages 1`] = `
 
 .c21 > *:not(:first-child) {
   padding-top: 0;
-}
-
-.c7 {
-  position: absolute;
-  height: 1px;
-  width: 1px;
-  overflow: hidden;
-  -webkit-clip: rect(1px,1px,1px,1px);
-  clip: rect(1px,1px,1px,1px);
 }
 
 .c6 {
@@ -1918,7 +1686,7 @@ exports[`Storyshots Molecules | Pagination 999 pages 1`] = `
   line-height: 1.4285714285714286;
 }
 
-.c23 {
+.c22 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #0046FF;
   margin: 0;
@@ -1978,57 +1746,6 @@ exports[`Storyshots Molecules | Pagination 999 pages 1`] = `
   outline: 1px dotted ButtonText;
 }
 
-.c22 {
-  font-family: inherit;
-  font-size: 100%;
-  line-height: 1.15;
-  margin: 0;
-  overflow: visible;
-  text-transform: none;
-  position: relative;
-  box-sizing: border-box;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  padding: 0;
-  background-color: transparent;
-  color: #A0A09B;
-  border: none;
-  border-radius: 0;
-  cursor: not-allowed;
-}
-
-.c22,
-.c22[type='button'],
-.c22[type='reset'],
-.c22[type='submit'] {
-  -webkit-appearance: button;
-}
-
-.c22::-moz-focus-inner,
-.c22[type='button']::-moz-focus-inner,
-.c22[type='reset']::-moz-focus-inner,
-.c22[type='submit']::-moz-focus-inner {
-  border-style: none;
-  padding: 0;
-}
-
-.c22:-moz-focusring,
-.c22[type='button']:-moz-focusring,
-.c22[type='reset']:-moz-focusring,
-.c22[type='submit']:-moz-focusring {
-  outline: 1px dotted ButtonText;
-}
-
 .c18 {
   width: 200px;
 }
@@ -2036,6 +1753,7 @@ exports[`Storyshots Molecules | Pagination 999 pages 1`] = `
 .c20 {
   margin: 0;
   padding: 0;
+  list-style-type: none;
 }
 
 .c4 {
@@ -2124,13 +1842,14 @@ exports[`Storyshots Molecules | Pagination 999 pages 1`] = `
   align-items: center;
 }
 
-.c9 {
-  width: 240px;
-}
-
-.c8 {
+.c7 {
   margin: 0;
   padding: 0;
+  list-style-type: none;
+}
+
+.c9 {
+  width: 240px;
 }
 
 @media not all and (max-width:975px) {
@@ -2159,6 +1878,7 @@ exports[`Storyshots Molecules | Pagination 999 pages 1`] = `
         className="c2"
       >
         <button
+          aria-label="Go to previous page"
           className="NormalizedButton__Button-ey7f5x-0 c3 c4"
           onClick={[Function]}
           type="button"
@@ -2179,21 +1899,18 @@ exports[`Storyshots Molecules | Pagination 999 pages 1`] = `
                 transform="rotate(90 12 12)"
               />
             </svg>
-            <div
-              className="c7"
-            >
-              Go to previous page
-            </div>
           </span>
         </button>
       </div>
       <ul
-        className="c8 c9"
+        className="c7 c8 c9"
       >
-        <div
+        <li
           className="c10"
         >
           <button
+            aria-disabled={true}
+            aria-label="Current Page: Page 1"
             className="NormalizedButton__Button-ey7f5x-0 c3 c11"
             onClick={[Function]}
             type="button"
@@ -2204,20 +1921,17 @@ exports[`Storyshots Molecules | Pagination 999 pages 1`] = `
               <span
                 className="c12"
               >
-                <div
-                  className="c7"
-                >
-                  Go to page
-                </div>
                 1
               </span>
             </span>
           </button>
-        </div>
-        <div
+        </li>
+        <li
           className="c10"
         >
           <button
+            aria-disabled={false}
+            aria-label="Go to Page 2"
             className="NormalizedButton__Button-ey7f5x-0 c3 c13"
             onClick={[Function]}
             type="button"
@@ -2228,20 +1942,17 @@ exports[`Storyshots Molecules | Pagination 999 pages 1`] = `
               <span
                 className="c14"
               >
-                <div
-                  className="c7"
-                >
-                  Go to page
-                </div>
                 2
               </span>
             </span>
           </button>
-        </div>
-        <div
+        </li>
+        <li
           className="c10"
         >
           <button
+            aria-disabled={false}
+            aria-label="Go to Page 3"
             className="NormalizedButton__Button-ey7f5x-0 c3 c13"
             onClick={[Function]}
             type="button"
@@ -2252,17 +1963,12 @@ exports[`Storyshots Molecules | Pagination 999 pages 1`] = `
               <span
                 className="c14"
               >
-                <div
-                  className="c7"
-                >
-                  Go to page
-                </div>
                 3
               </span>
             </span>
           </button>
-        </div>
-        <div
+        </li>
+        <li
           className="c15"
         >
           <span
@@ -2270,11 +1976,13 @@ exports[`Storyshots Molecules | Pagination 999 pages 1`] = `
           >
             ...
           </span>
-        </div>
-        <div
+        </li>
+        <li
           className="c10"
         >
           <button
+            aria-disabled={false}
+            aria-label="Go to Page 999"
             className="NormalizedButton__Button-ey7f5x-0 c3 c13"
             onClick={[Function]}
             type="button"
@@ -2285,21 +1993,17 @@ exports[`Storyshots Molecules | Pagination 999 pages 1`] = `
               <span
                 className="c14"
               >
-                <div
-                  className="c7"
-                >
-                  Go to page
-                </div>
                 999
               </span>
             </span>
           </button>
-        </div>
+        </li>
       </ul>
       <div
         className="c2"
       >
         <button
+          aria-label="Go to next page"
           className="NormalizedButton__Button-ey7f5x-0 c3 c4"
           onClick={[Function]}
           type="button"
@@ -2320,11 +2024,6 @@ exports[`Storyshots Molecules | Pagination 999 pages 1`] = `
                 transform="rotate(-90 12 12)"
               />
             </svg>
-            <div
-              className="c7"
-            >
-              Go to next page
-            </div>
           </span>
         </button>
       </div>
@@ -2337,6 +2036,7 @@ exports[`Storyshots Molecules | Pagination 999 pages 1`] = `
       className="c1 c18"
     >
       <button
+        aria-label="Go to previous page"
         className="NormalizedButton__Button-ey7f5x-0 c3"
         onClick={[Function]}
         type="button"
@@ -2357,22 +2057,18 @@ exports[`Storyshots Molecules | Pagination 999 pages 1`] = `
               transform="rotate(90 12 12)"
             />
           </svg>
-          <div
-            className="c7"
-          >
-            Go to previous page
-          </div>
         </span>
       </button>
       <ul
         className="c20 c21"
       >
-        <div
+        <li
           className="c10"
         >
           <button
-            className="NormalizedButton__Button-ey7f5x-0 c22"
-            disabled={true}
+            aria-disabled={true}
+            aria-label="Current Page: page 1"
+            className="NormalizedButton__Button-ey7f5x-0 c3"
             onClick={[Function]}
             type="button"
           >
@@ -2380,24 +2076,20 @@ exports[`Storyshots Molecules | Pagination 999 pages 1`] = `
               className="c5"
             >
               <span
-                className="c23"
+                className="c22"
               >
-                <div
-                  className="c7"
-                >
-                  Go to page
-                </div>
                 1
               </span>
             </span>
           </button>
-        </div>
-        <div
+        </li>
+        <li
           className="c10"
         >
           <button
+            aria-disabled={false}
+            aria-label="Go to page 2"
             className="NormalizedButton__Button-ey7f5x-0 c3"
-            disabled={false}
             onClick={[Function]}
             type="button"
           >
@@ -2407,22 +2099,18 @@ exports[`Storyshots Molecules | Pagination 999 pages 1`] = `
               <span
                 className="c16"
               >
-                <div
-                  className="c7"
-                >
-                  Go to page
-                </div>
                 2
               </span>
             </span>
           </button>
-        </div>
-        <div
+        </li>
+        <li
           className="c10"
         >
           <button
+            aria-disabled={false}
+            aria-label="Go to page 3"
             className="NormalizedButton__Button-ey7f5x-0 c3"
-            disabled={false}
             onClick={[Function]}
             type="button"
           >
@@ -2432,17 +2120,12 @@ exports[`Storyshots Molecules | Pagination 999 pages 1`] = `
               <span
                 className="c16"
               >
-                <div
-                  className="c7"
-                >
-                  Go to page
-                </div>
                 3
               </span>
             </span>
           </button>
-        </div>
-        <div
+        </li>
+        <li
           className="c2"
         >
           <span
@@ -2450,13 +2133,14 @@ exports[`Storyshots Molecules | Pagination 999 pages 1`] = `
           >
             ...
           </span>
-        </div>
-        <div
+        </li>
+        <li
           className="c10"
         >
           <button
+            aria-disabled={false}
+            aria-label="Go to page 999"
             className="NormalizedButton__Button-ey7f5x-0 c3"
-            disabled={false}
             onClick={[Function]}
             type="button"
           >
@@ -2466,18 +2150,14 @@ exports[`Storyshots Molecules | Pagination 999 pages 1`] = `
               <span
                 className="c16"
               >
-                <div
-                  className="c7"
-                >
-                  Go to page
-                </div>
                 999
               </span>
             </span>
           </button>
-        </div>
+        </li>
       </ul>
       <button
+        aria-label="Go to next page"
         className="NormalizedButton__Button-ey7f5x-0 c3"
         onClick={[Function]}
         type="button"
@@ -2498,11 +2178,6 @@ exports[`Storyshots Molecules | Pagination 999 pages 1`] = `
               transform="rotate(-90 12 12)"
             />
           </svg>
-          <div
-            className="c7"
-          >
-            Go to next page
-          </div>
         </span>
       </button>
     </div>
@@ -2531,7 +2206,7 @@ exports[`Storyshots Molecules | Pagination Compact on mobile 1`] = `
   align-items: center;
 }
 
-.c14 {
+.c13 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -2548,26 +2223,17 @@ exports[`Storyshots Molecules | Pagination Compact on mobile 1`] = `
   flex: 1;
 }
 
-.c14 > * {
+.c13 > * {
   padding-left: 4px;
   padding-right: 4px;
 }
 
-.c14 > *:not(:first-child) {
+.c13 > *:not(:first-child) {
   padding-top: 0;
 }
 
-.c15 {
+.c14 {
   box-sizing: border-box;
-}
-
-.c8 {
-  position: absolute;
-  height: 1px;
-  width: 1px;
-  overflow: hidden;
-  -webkit-clip: rect(1px,1px,1px,1px);
-  clip: rect(1px,1px,1px,1px);
 }
 
 .c6 {
@@ -2584,7 +2250,7 @@ exports[`Storyshots Molecules | Pagination Compact on mobile 1`] = `
   display: block;
 }
 
-.c12 {
+.c11 {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -2604,7 +2270,7 @@ exports[`Storyshots Molecules | Pagination Compact on mobile 1`] = `
   transform: rotate(90deg);
 }
 
-.c9 {
+.c8 {
   -webkit-transform: rotate(270deg);
   -ms-transform: rotate(270deg);
   transform: rotate(270deg);
@@ -2619,7 +2285,7 @@ exports[`Storyshots Molecules | Pagination Compact on mobile 1`] = `
   line-height: 1.4285714285714286;
 }
 
-.c17 {
+.c15 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #0046FF;
   margin: 0;
@@ -2628,7 +2294,7 @@ exports[`Storyshots Molecules | Pagination Compact on mobile 1`] = `
   line-height: 1.4285714285714286;
 }
 
-.c18 {
+.c16 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
   margin: 0;
@@ -2688,64 +2354,14 @@ exports[`Storyshots Molecules | Pagination Compact on mobile 1`] = `
   outline: 1px dotted ButtonText;
 }
 
-.c16 {
-  font-family: inherit;
-  font-size: 100%;
-  line-height: 1.15;
-  margin: 0;
-  overflow: visible;
-  text-transform: none;
-  position: relative;
-  box-sizing: border-box;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  padding: 0;
-  background-color: transparent;
-  color: #A0A09B;
-  border: none;
-  border-radius: 0;
-  cursor: not-allowed;
-}
-
-.c16,
-.c16[type='button'],
-.c16[type='reset'],
-.c16[type='submit'] {
-  -webkit-appearance: button;
-}
-
-.c16::-moz-focus-inner,
-.c16[type='button']::-moz-focus-inner,
-.c16[type='reset']::-moz-focus-inner,
-.c16[type='submit']::-moz-focus-inner {
-  border-style: none;
-  padding: 0;
-}
-
-.c16:-moz-focusring,
-.c16[type='button']:-moz-focusring,
-.c16[type='reset']:-moz-focusring,
-.c16[type='submit']:-moz-focusring {
-  outline: 1px dotted ButtonText;
-}
-
-.c11 {
+.c10 {
   width: 152px;
 }
 
-.c13 {
+.c12 {
   margin: 0;
   padding: 0;
+  list-style-type: none;
 }
 
 .c4 {
@@ -2776,7 +2392,7 @@ exports[`Storyshots Molecules | Pagination Compact on mobile 1`] = `
 }
 
 @media not all and (min-width:976px) {
-  .c10 {
+  .c9 {
     display: none;
   }
 }
@@ -2795,6 +2411,7 @@ exports[`Storyshots Molecules | Pagination Compact on mobile 1`] = `
         className="c2"
       >
         <button
+          aria-label="Go to previous page"
           className="NormalizedButton__Button-ey7f5x-0 c3 c4"
           onClick={[Function]}
           type="button"
@@ -2815,11 +2432,6 @@ exports[`Storyshots Molecules | Pagination Compact on mobile 1`] = `
                 points="14.620 3.580, 16.000 5.020, 8.000 12.730, 0.000 5.030, 1.400 3.580, 8.000 9.96"
               />
             </svg>
-            <div
-              className="c8"
-            >
-              Go to previous page
-            </div>
           </span>
         </button>
       </div>
@@ -2827,6 +2439,7 @@ exports[`Storyshots Molecules | Pagination Compact on mobile 1`] = `
         className="c2"
       >
         <button
+          aria-label="Go to next page"
           className="NormalizedButton__Button-ey7f5x-0 c3 c4"
           onClick={[Function]}
           type="button"
@@ -2836,7 +2449,7 @@ exports[`Storyshots Molecules | Pagination Compact on mobile 1`] = `
           >
             <svg
               aria-hidden="true"
-              className="c6 c9"
+              className="c6 c8"
               direction="right"
               focusable="false"
               preserveAspectRatio="xMidYMid meet"
@@ -2847,23 +2460,19 @@ exports[`Storyshots Molecules | Pagination Compact on mobile 1`] = `
                 points="14.620 3.580, 16.000 5.020, 8.000 12.730, 0.000 5.030, 1.400 3.580, 8.000 9.96"
               />
             </svg>
-            <div
-              className="c8"
-            >
-              Go to next page
-            </div>
           </span>
         </button>
       </div>
     </div>
   </div>
   <div
-    className="c10"
+    className="c9"
   >
     <div
-      className="c1 c11"
+      className="c1 c10"
     >
       <button
+        aria-label="Go to previous page"
         className="NormalizedButton__Button-ey7f5x-0 c3"
         onClick={[Function]}
         type="button"
@@ -2873,7 +2482,7 @@ exports[`Storyshots Molecules | Pagination Compact on mobile 1`] = `
         >
           <svg
             aria-hidden="true"
-            className="c12"
+            className="c11"
             focusable="false"
             preserveAspectRatio="xMidYMid meet"
             role="presentation"
@@ -2884,22 +2493,18 @@ exports[`Storyshots Molecules | Pagination Compact on mobile 1`] = `
               transform="rotate(90 12 12)"
             />
           </svg>
-          <div
-            className="c8"
-          >
-            Go to previous page
-          </div>
         </span>
       </button>
       <ul
-        className="c13 c14"
+        className="c12 c13"
       >
-        <div
-          className="c15"
+        <li
+          className="c14"
         >
           <button
-            className="NormalizedButton__Button-ey7f5x-0 c16"
-            disabled={true}
+            aria-disabled={true}
+            aria-label="Current Page: page 1"
+            className="NormalizedButton__Button-ey7f5x-0 c3"
             onClick={[Function]}
             type="button"
           >
@@ -2907,24 +2512,20 @@ exports[`Storyshots Molecules | Pagination Compact on mobile 1`] = `
               className="c5"
             >
               <span
-                className="c17"
+                className="c15"
               >
-                <div
-                  className="c8"
-                >
-                  Go to page
-                </div>
                 1
               </span>
             </span>
           </button>
-        </div>
-        <div
-          className="c15"
+        </li>
+        <li
+          className="c14"
         >
           <button
+            aria-disabled={false}
+            aria-label="Go to page 2"
             className="NormalizedButton__Button-ey7f5x-0 c3"
-            disabled={false}
             onClick={[Function]}
             type="button"
           >
@@ -2932,24 +2533,20 @@ exports[`Storyshots Molecules | Pagination Compact on mobile 1`] = `
               className="c5"
             >
               <span
-                className="c18"
+                className="c16"
               >
-                <div
-                  className="c8"
-                >
-                  Go to page
-                </div>
                 2
               </span>
             </span>
           </button>
-        </div>
-        <div
-          className="c15"
+        </li>
+        <li
+          className="c14"
         >
           <button
+            aria-disabled={false}
+            aria-label="Go to page 3"
             className="NormalizedButton__Button-ey7f5x-0 c3"
-            disabled={false}
             onClick={[Function]}
             type="button"
           >
@@ -2957,33 +2554,29 @@ exports[`Storyshots Molecules | Pagination Compact on mobile 1`] = `
               className="c5"
             >
               <span
-                className="c18"
+                className="c16"
               >
-                <div
-                  className="c8"
-                >
-                  Go to page
-                </div>
                 3
               </span>
             </span>
           </button>
-        </div>
-        <div
+        </li>
+        <li
           className="c2"
         >
           <span
-            className="c18"
+            className="c16"
           >
             ...
           </span>
-        </div>
-        <div
-          className="c15"
+        </li>
+        <li
+          className="c14"
         >
           <button
+            aria-disabled={false}
+            aria-label="Go to page 10"
             className="NormalizedButton__Button-ey7f5x-0 c3"
-            disabled={false}
             onClick={[Function]}
             type="button"
           >
@@ -2991,20 +2584,16 @@ exports[`Storyshots Molecules | Pagination Compact on mobile 1`] = `
               className="c5"
             >
               <span
-                className="c18"
+                className="c16"
               >
-                <div
-                  className="c8"
-                >
-                  Go to page
-                </div>
                 10
               </span>
             </span>
           </button>
-        </div>
+        </li>
       </ul>
       <button
+        aria-label="Go to next page"
         className="NormalizedButton__Button-ey7f5x-0 c3"
         onClick={[Function]}
         type="button"
@@ -3014,7 +2603,7 @@ exports[`Storyshots Molecules | Pagination Compact on mobile 1`] = `
         >
           <svg
             aria-hidden="true"
-            className="c12"
+            className="c11"
             focusable="false"
             preserveAspectRatio="xMidYMid meet"
             role="presentation"
@@ -3025,11 +2614,6 @@ exports[`Storyshots Molecules | Pagination Compact on mobile 1`] = `
               transform="rotate(-90 12 12)"
             />
           </svg>
-          <div
-            className="c8"
-          >
-            Go to next page
-          </div>
         </span>
       </button>
     </div>
@@ -3058,6 +2642,18 @@ exports[`Storyshots Molecules | Pagination Controlled pagination 1`] = `
   align-items: center;
 }
 
+.c8 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
 .c10 {
   box-sizing: border-box;
 }
@@ -3086,15 +2682,6 @@ exports[`Storyshots Molecules | Pagination Controlled pagination 1`] = `
 
 .c21 > *:not(:first-child) {
   padding-top: 0;
-}
-
-.c7 {
-  position: absolute;
-  height: 1px;
-  width: 1px;
-  overflow: hidden;
-  -webkit-clip: rect(1px,1px,1px,1px);
-  clip: rect(1px,1px,1px,1px);
 }
 
 .c6 {
@@ -3162,7 +2749,7 @@ exports[`Storyshots Molecules | Pagination Controlled pagination 1`] = `
   line-height: 1.4285714285714286;
 }
 
-.c23 {
+.c22 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #0046FF;
   margin: 0;
@@ -3222,57 +2809,6 @@ exports[`Storyshots Molecules | Pagination Controlled pagination 1`] = `
   outline: 1px dotted ButtonText;
 }
 
-.c22 {
-  font-family: inherit;
-  font-size: 100%;
-  line-height: 1.15;
-  margin: 0;
-  overflow: visible;
-  text-transform: none;
-  position: relative;
-  box-sizing: border-box;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  padding: 0;
-  background-color: transparent;
-  color: #A0A09B;
-  border: none;
-  border-radius: 0;
-  cursor: not-allowed;
-}
-
-.c22,
-.c22[type='button'],
-.c22[type='reset'],
-.c22[type='submit'] {
-  -webkit-appearance: button;
-}
-
-.c22::-moz-focus-inner,
-.c22[type='button']::-moz-focus-inner,
-.c22[type='reset']::-moz-focus-inner,
-.c22[type='submit']::-moz-focus-inner {
-  border-style: none;
-  padding: 0;
-}
-
-.c22:-moz-focusring,
-.c22[type='button']:-moz-focusring,
-.c22[type='reset']:-moz-focusring,
-.c22[type='submit']:-moz-focusring {
-  outline: 1px dotted ButtonText;
-}
-
 .c18 {
   width: 152px;
 }
@@ -3280,6 +2816,7 @@ exports[`Storyshots Molecules | Pagination Controlled pagination 1`] = `
 .c20 {
   margin: 0;
   padding: 0;
+  list-style-type: none;
 }
 
 .c4 {
@@ -3368,13 +2905,14 @@ exports[`Storyshots Molecules | Pagination Controlled pagination 1`] = `
   align-items: center;
 }
 
-.c9 {
-  width: 240px;
-}
-
-.c8 {
+.c7 {
   margin: 0;
   padding: 0;
+  list-style-type: none;
+}
+
+.c9 {
+  width: 240px;
 }
 
 @media not all and (max-width:975px) {
@@ -3403,6 +2941,7 @@ exports[`Storyshots Molecules | Pagination Controlled pagination 1`] = `
         className="c2"
       >
         <button
+          aria-label="Go to previous page"
           className="NormalizedButton__Button-ey7f5x-0 c3 c4"
           onClick={[Function]}
           type="button"
@@ -3423,21 +2962,18 @@ exports[`Storyshots Molecules | Pagination Controlled pagination 1`] = `
                 transform="rotate(90 12 12)"
               />
             </svg>
-            <div
-              className="c7"
-            >
-              Go to previous page
-            </div>
           </span>
         </button>
       </div>
       <ul
-        className="c8 c9"
+        className="c7 c8 c9"
       >
-        <div
+        <li
           className="c10"
         >
           <button
+            aria-disabled={true}
+            aria-label="Current Page: Page 1"
             className="NormalizedButton__Button-ey7f5x-0 c3 c11"
             onClick={[Function]}
             type="button"
@@ -3448,20 +2984,17 @@ exports[`Storyshots Molecules | Pagination Controlled pagination 1`] = `
               <span
                 className="c12"
               >
-                <div
-                  className="c7"
-                >
-                  Go to page
-                </div>
                 1
               </span>
             </span>
           </button>
-        </div>
-        <div
+        </li>
+        <li
           className="c10"
         >
           <button
+            aria-disabled={false}
+            aria-label="Go to Page 2"
             className="NormalizedButton__Button-ey7f5x-0 c3 c13"
             onClick={[Function]}
             type="button"
@@ -3472,20 +3005,17 @@ exports[`Storyshots Molecules | Pagination Controlled pagination 1`] = `
               <span
                 className="c14"
               >
-                <div
-                  className="c7"
-                >
-                  Go to page
-                </div>
                 2
               </span>
             </span>
           </button>
-        </div>
-        <div
+        </li>
+        <li
           className="c10"
         >
           <button
+            aria-disabled={false}
+            aria-label="Go to Page 3"
             className="NormalizedButton__Button-ey7f5x-0 c3 c13"
             onClick={[Function]}
             type="button"
@@ -3496,17 +3026,12 @@ exports[`Storyshots Molecules | Pagination Controlled pagination 1`] = `
               <span
                 className="c14"
               >
-                <div
-                  className="c7"
-                >
-                  Go to page
-                </div>
                 3
               </span>
             </span>
           </button>
-        </div>
-        <div
+        </li>
+        <li
           className="c15"
         >
           <span
@@ -3514,11 +3039,13 @@ exports[`Storyshots Molecules | Pagination Controlled pagination 1`] = `
           >
             ...
           </span>
-        </div>
-        <div
+        </li>
+        <li
           className="c10"
         >
           <button
+            aria-disabled={false}
+            aria-label="Go to Page 10"
             className="NormalizedButton__Button-ey7f5x-0 c3 c13"
             onClick={[Function]}
             type="button"
@@ -3529,21 +3056,17 @@ exports[`Storyshots Molecules | Pagination Controlled pagination 1`] = `
               <span
                 className="c14"
               >
-                <div
-                  className="c7"
-                >
-                  Go to page
-                </div>
                 10
               </span>
             </span>
           </button>
-        </div>
+        </li>
       </ul>
       <div
         className="c2"
       >
         <button
+          aria-label="Go to next page"
           className="NormalizedButton__Button-ey7f5x-0 c3 c4"
           onClick={[Function]}
           type="button"
@@ -3564,11 +3087,6 @@ exports[`Storyshots Molecules | Pagination Controlled pagination 1`] = `
                 transform="rotate(-90 12 12)"
               />
             </svg>
-            <div
-              className="c7"
-            >
-              Go to next page
-            </div>
           </span>
         </button>
       </div>
@@ -3581,6 +3099,7 @@ exports[`Storyshots Molecules | Pagination Controlled pagination 1`] = `
       className="c1 c18"
     >
       <button
+        aria-label="Go to previous page"
         className="NormalizedButton__Button-ey7f5x-0 c3"
         onClick={[Function]}
         type="button"
@@ -3601,22 +3120,18 @@ exports[`Storyshots Molecules | Pagination Controlled pagination 1`] = `
               transform="rotate(90 12 12)"
             />
           </svg>
-          <div
-            className="c7"
-          >
-            Go to previous page
-          </div>
         </span>
       </button>
       <ul
         className="c20 c21"
       >
-        <div
+        <li
           className="c10"
         >
           <button
-            className="NormalizedButton__Button-ey7f5x-0 c22"
-            disabled={true}
+            aria-disabled={true}
+            aria-label="Current Page: page 1"
+            className="NormalizedButton__Button-ey7f5x-0 c3"
             onClick={[Function]}
             type="button"
           >
@@ -3624,24 +3139,20 @@ exports[`Storyshots Molecules | Pagination Controlled pagination 1`] = `
               className="c5"
             >
               <span
-                className="c23"
+                className="c22"
               >
-                <div
-                  className="c7"
-                >
-                  Go to page
-                </div>
                 1
               </span>
             </span>
           </button>
-        </div>
-        <div
+        </li>
+        <li
           className="c10"
         >
           <button
+            aria-disabled={false}
+            aria-label="Go to page 2"
             className="NormalizedButton__Button-ey7f5x-0 c3"
-            disabled={false}
             onClick={[Function]}
             type="button"
           >
@@ -3651,22 +3162,18 @@ exports[`Storyshots Molecules | Pagination Controlled pagination 1`] = `
               <span
                 className="c16"
               >
-                <div
-                  className="c7"
-                >
-                  Go to page
-                </div>
                 2
               </span>
             </span>
           </button>
-        </div>
-        <div
+        </li>
+        <li
           className="c10"
         >
           <button
+            aria-disabled={false}
+            aria-label="Go to page 3"
             className="NormalizedButton__Button-ey7f5x-0 c3"
-            disabled={false}
             onClick={[Function]}
             type="button"
           >
@@ -3676,17 +3183,12 @@ exports[`Storyshots Molecules | Pagination Controlled pagination 1`] = `
               <span
                 className="c16"
               >
-                <div
-                  className="c7"
-                >
-                  Go to page
-                </div>
                 3
               </span>
             </span>
           </button>
-        </div>
-        <div
+        </li>
+        <li
           className="c2"
         >
           <span
@@ -3694,13 +3196,14 @@ exports[`Storyshots Molecules | Pagination Controlled pagination 1`] = `
           >
             ...
           </span>
-        </div>
-        <div
+        </li>
+        <li
           className="c10"
         >
           <button
+            aria-disabled={false}
+            aria-label="Go to page 10"
             className="NormalizedButton__Button-ey7f5x-0 c3"
-            disabled={false}
             onClick={[Function]}
             type="button"
           >
@@ -3710,18 +3213,14 @@ exports[`Storyshots Molecules | Pagination Controlled pagination 1`] = `
               <span
                 className="c16"
               >
-                <div
-                  className="c7"
-                >
-                  Go to page
-                </div>
                 10
               </span>
             </span>
           </button>
-        </div>
+        </li>
       </ul>
       <button
+        aria-label="Go to next page"
         className="NormalizedButton__Button-ey7f5x-0 c3"
         onClick={[Function]}
         type="button"
@@ -3742,11 +3241,6 @@ exports[`Storyshots Molecules | Pagination Controlled pagination 1`] = `
               transform="rotate(-90 12 12)"
             />
           </svg>
-          <div
-            className="c7"
-          >
-            Go to next page
-          </div>
         </span>
       </button>
     </div>
@@ -3775,6 +3269,18 @@ exports[`Storyshots Molecules | Pagination Regular 1`] = `
   align-items: center;
 }
 
+.c8 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
 .c10 {
   box-sizing: border-box;
 }
@@ -3803,15 +3309,6 @@ exports[`Storyshots Molecules | Pagination Regular 1`] = `
 
 .c21 > *:not(:first-child) {
   padding-top: 0;
-}
-
-.c7 {
-  position: absolute;
-  height: 1px;
-  width: 1px;
-  overflow: hidden;
-  -webkit-clip: rect(1px,1px,1px,1px);
-  clip: rect(1px,1px,1px,1px);
 }
 
 .c6 {
@@ -3879,7 +3376,7 @@ exports[`Storyshots Molecules | Pagination Regular 1`] = `
   line-height: 1.4285714285714286;
 }
 
-.c23 {
+.c22 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #0046FF;
   margin: 0;
@@ -3939,57 +3436,6 @@ exports[`Storyshots Molecules | Pagination Regular 1`] = `
   outline: 1px dotted ButtonText;
 }
 
-.c22 {
-  font-family: inherit;
-  font-size: 100%;
-  line-height: 1.15;
-  margin: 0;
-  overflow: visible;
-  text-transform: none;
-  position: relative;
-  box-sizing: border-box;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  padding: 0;
-  background-color: transparent;
-  color: #A0A09B;
-  border: none;
-  border-radius: 0;
-  cursor: not-allowed;
-}
-
-.c22,
-.c22[type='button'],
-.c22[type='reset'],
-.c22[type='submit'] {
-  -webkit-appearance: button;
-}
-
-.c22::-moz-focus-inner,
-.c22[type='button']::-moz-focus-inner,
-.c22[type='reset']::-moz-focus-inner,
-.c22[type='submit']::-moz-focus-inner {
-  border-style: none;
-  padding: 0;
-}
-
-.c22:-moz-focusring,
-.c22[type='button']:-moz-focusring,
-.c22[type='reset']:-moz-focusring,
-.c22[type='submit']:-moz-focusring {
-  outline: 1px dotted ButtonText;
-}
-
 .c18 {
   width: 152px;
 }
@@ -3997,6 +3443,7 @@ exports[`Storyshots Molecules | Pagination Regular 1`] = `
 .c20 {
   margin: 0;
   padding: 0;
+  list-style-type: none;
 }
 
 .c4 {
@@ -4085,13 +3532,14 @@ exports[`Storyshots Molecules | Pagination Regular 1`] = `
   align-items: center;
 }
 
-.c9 {
-  width: 240px;
-}
-
-.c8 {
+.c7 {
   margin: 0;
   padding: 0;
+  list-style-type: none;
+}
+
+.c9 {
+  width: 240px;
 }
 
 @media not all and (max-width:975px) {
@@ -4120,6 +3568,7 @@ exports[`Storyshots Molecules | Pagination Regular 1`] = `
         className="c2"
       >
         <button
+          aria-label="Go to previous page"
           className="NormalizedButton__Button-ey7f5x-0 c3 c4"
           onClick={[Function]}
           type="button"
@@ -4140,21 +3589,18 @@ exports[`Storyshots Molecules | Pagination Regular 1`] = `
                 transform="rotate(90 12 12)"
               />
             </svg>
-            <div
-              className="c7"
-            >
-              Go to previous page
-            </div>
           </span>
         </button>
       </div>
       <ul
-        className="c8 c9"
+        className="c7 c8 c9"
       >
-        <div
+        <li
           className="c10"
         >
           <button
+            aria-disabled={true}
+            aria-label="Current Page: Page 1"
             className="NormalizedButton__Button-ey7f5x-0 c3 c11"
             onClick={[Function]}
             type="button"
@@ -4165,20 +3611,17 @@ exports[`Storyshots Molecules | Pagination Regular 1`] = `
               <span
                 className="c12"
               >
-                <div
-                  className="c7"
-                >
-                  Go to page
-                </div>
                 1
               </span>
             </span>
           </button>
-        </div>
-        <div
+        </li>
+        <li
           className="c10"
         >
           <button
+            aria-disabled={false}
+            aria-label="Go to Page 2"
             className="NormalizedButton__Button-ey7f5x-0 c3 c13"
             onClick={[Function]}
             type="button"
@@ -4189,20 +3632,17 @@ exports[`Storyshots Molecules | Pagination Regular 1`] = `
               <span
                 className="c14"
               >
-                <div
-                  className="c7"
-                >
-                  Go to page
-                </div>
                 2
               </span>
             </span>
           </button>
-        </div>
-        <div
+        </li>
+        <li
           className="c10"
         >
           <button
+            aria-disabled={false}
+            aria-label="Go to Page 3"
             className="NormalizedButton__Button-ey7f5x-0 c3 c13"
             onClick={[Function]}
             type="button"
@@ -4213,17 +3653,12 @@ exports[`Storyshots Molecules | Pagination Regular 1`] = `
               <span
                 className="c14"
               >
-                <div
-                  className="c7"
-                >
-                  Go to page
-                </div>
                 3
               </span>
             </span>
           </button>
-        </div>
-        <div
+        </li>
+        <li
           className="c15"
         >
           <span
@@ -4231,11 +3666,13 @@ exports[`Storyshots Molecules | Pagination Regular 1`] = `
           >
             ...
           </span>
-        </div>
-        <div
+        </li>
+        <li
           className="c10"
         >
           <button
+            aria-disabled={false}
+            aria-label="Go to Page 10"
             className="NormalizedButton__Button-ey7f5x-0 c3 c13"
             onClick={[Function]}
             type="button"
@@ -4246,21 +3683,17 @@ exports[`Storyshots Molecules | Pagination Regular 1`] = `
               <span
                 className="c14"
               >
-                <div
-                  className="c7"
-                >
-                  Go to page
-                </div>
                 10
               </span>
             </span>
           </button>
-        </div>
+        </li>
       </ul>
       <div
         className="c2"
       >
         <button
+          aria-label="Go to next page"
           className="NormalizedButton__Button-ey7f5x-0 c3 c4"
           onClick={[Function]}
           type="button"
@@ -4281,11 +3714,6 @@ exports[`Storyshots Molecules | Pagination Regular 1`] = `
                 transform="rotate(-90 12 12)"
               />
             </svg>
-            <div
-              className="c7"
-            >
-              Go to next page
-            </div>
           </span>
         </button>
       </div>
@@ -4298,6 +3726,7 @@ exports[`Storyshots Molecules | Pagination Regular 1`] = `
       className="c1 c18"
     >
       <button
+        aria-label="Go to previous page"
         className="NormalizedButton__Button-ey7f5x-0 c3"
         onClick={[Function]}
         type="button"
@@ -4318,22 +3747,18 @@ exports[`Storyshots Molecules | Pagination Regular 1`] = `
               transform="rotate(90 12 12)"
             />
           </svg>
-          <div
-            className="c7"
-          >
-            Go to previous page
-          </div>
         </span>
       </button>
       <ul
         className="c20 c21"
       >
-        <div
+        <li
           className="c10"
         >
           <button
-            className="NormalizedButton__Button-ey7f5x-0 c22"
-            disabled={true}
+            aria-disabled={true}
+            aria-label="Current Page: page 1"
+            className="NormalizedButton__Button-ey7f5x-0 c3"
             onClick={[Function]}
             type="button"
           >
@@ -4341,24 +3766,20 @@ exports[`Storyshots Molecules | Pagination Regular 1`] = `
               className="c5"
             >
               <span
-                className="c23"
+                className="c22"
               >
-                <div
-                  className="c7"
-                >
-                  Go to page
-                </div>
                 1
               </span>
             </span>
           </button>
-        </div>
-        <div
+        </li>
+        <li
           className="c10"
         >
           <button
+            aria-disabled={false}
+            aria-label="Go to page 2"
             className="NormalizedButton__Button-ey7f5x-0 c3"
-            disabled={false}
             onClick={[Function]}
             type="button"
           >
@@ -4368,22 +3789,18 @@ exports[`Storyshots Molecules | Pagination Regular 1`] = `
               <span
                 className="c16"
               >
-                <div
-                  className="c7"
-                >
-                  Go to page
-                </div>
                 2
               </span>
             </span>
           </button>
-        </div>
-        <div
+        </li>
+        <li
           className="c10"
         >
           <button
+            aria-disabled={false}
+            aria-label="Go to page 3"
             className="NormalizedButton__Button-ey7f5x-0 c3"
-            disabled={false}
             onClick={[Function]}
             type="button"
           >
@@ -4393,17 +3810,12 @@ exports[`Storyshots Molecules | Pagination Regular 1`] = `
               <span
                 className="c16"
               >
-                <div
-                  className="c7"
-                >
-                  Go to page
-                </div>
                 3
               </span>
             </span>
           </button>
-        </div>
-        <div
+        </li>
+        <li
           className="c2"
         >
           <span
@@ -4411,13 +3823,14 @@ exports[`Storyshots Molecules | Pagination Regular 1`] = `
           >
             ...
           </span>
-        </div>
-        <div
+        </li>
+        <li
           className="c10"
         >
           <button
+            aria-disabled={false}
+            aria-label="Go to page 10"
             className="NormalizedButton__Button-ey7f5x-0 c3"
-            disabled={false}
             onClick={[Function]}
             type="button"
           >
@@ -4427,18 +3840,14 @@ exports[`Storyshots Molecules | Pagination Regular 1`] = `
               <span
                 className="c16"
               >
-                <div
-                  className="c7"
-                >
-                  Go to page
-                </div>
                 10
               </span>
             </span>
           </button>
-        </div>
+        </li>
       </ul>
       <button
+        aria-label="Go to next page"
         className="NormalizedButton__Button-ey7f5x-0 c3"
         onClick={[Function]}
         type="button"
@@ -4459,11 +3868,6 @@ exports[`Storyshots Molecules | Pagination Regular 1`] = `
               transform="rotate(-90 12 12)"
             />
           </svg>
-          <div
-            className="c7"
-          >
-            Go to next page
-          </div>
         </span>
       </button>
     </div>

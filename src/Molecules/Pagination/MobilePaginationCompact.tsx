@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { Flexbox, Icon, Button, VisuallyHidden } from '../..';
+import { Flexbox, Icon, Button } from '../..';
 import { PaginationCompactProps, BrowseButtonProps } from './Pagination.types';
 
 const StyledButton = styled(Button)`
@@ -17,17 +17,15 @@ const StyledButton = styled(Button)`
 
 const ChevronButton = ({ direction = 'left', onClick }: BrowseButtonProps) => (
   <Flexbox item container alignItems="center">
-    <StyledButton onClick={onClick} variant="neutral">
+    <StyledButton
+      onClick={onClick}
+      variant="neutral"
+      aria-label={direction === 'left' ? 'Go to previous page' : 'Go to next page'}
+    >
       {direction === 'left' ? (
-        <>
-          <Icon.ThinChevron direction="left" size={4} />
-          <VisuallyHidden>Go to previous page</VisuallyHidden>
-        </>
+        <Icon.ThinChevron direction="left" size={4} />
       ) : (
-        <>
-          <Icon.ThinChevron direction="right" size={4} />
-          <VisuallyHidden>Go to next page</VisuallyHidden>
-        </>
+        <Icon.ThinChevron direction="right" size={4} />
       )}
     </StyledButton>
   </Flexbox>

@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { Typography, Icon, Flexbox, Button, VisuallyHidden } from '../..';
+import { Typography, Icon, Flexbox, Button } from '../..';
 import { Props as FlexBoxProps } from '../../Atoms/Flexbox/Flexbox.types';
 import PageItems from './PageItems';
 import { PaginationDefaultProps, PageItemProps, BrowseButtonProps } from './Pagination.types';
@@ -29,11 +29,17 @@ const StyledFlexbox = styled(
 const StyledList = styled.ul`
   margin: 0;
   padding: 0;
+  list-style-type: none;
 `;
 
 const PageNumberItem: React.FC<PageItemProps> = ({ isCurrentPage = false, children, onClick }) => (
-  <Flexbox item>
-    <Button variant="neutral" disabled={isCurrentPage} onClick={onClick}>
+  <Flexbox item as="li">
+    <Button
+      variant="neutral"
+      onClick={!isCurrentPage ? onClick : undefined}
+      aria-label={`${isCurrentPage ? 'Current Page:' : 'Go to'} page ${children}`}
+      aria-disabled={isCurrentPage}
+    >
       <Typography type="secondary" color={(t) => (isCurrentPage ? t.color.cta : t.color.text)}>
         {children}
       </Typography>
@@ -42,24 +48,18 @@ const PageNumberItem: React.FC<PageItemProps> = ({ isCurrentPage = false, childr
 );
 
 const TruncatedPageNumbers = () => (
-  <Flexbox item container alignItems="center">
+  <Flexbox item container alignItems="center" as="li">
     <Typography type="secondary">...</Typography>
   </Flexbox>
 );
 
 const ChevronButton = ({ direction = 'left', onClick }: BrowseButtonProps) => (
-  <Button variant="neutral" onClick={onClick}>
-    {direction === 'left' ? (
-      <>
-        <Icon.ChevronLeft size={2} />
-        <VisuallyHidden>Go to previous page</VisuallyHidden>
-      </>
-    ) : (
-      <>
-        <Icon.ChevronRight size={2} />
-        <VisuallyHidden>Go to next page</VisuallyHidden>
-      </>
-    )}
+  <Button
+    variant="neutral"
+    onClick={onClick}
+    aria-label={direction === 'left' ? 'Go to previous page' : 'Go to next page'}
+  >
+    {direction === 'left' ? <Icon.ChevronLeft size={2} /> : <Icon.ChevronRight size={2} />}
   </Button>
 );
 
