@@ -3,6 +3,7 @@ import styled, { StyledProps } from 'styled-components';
 import { Props } from './Avatar.types';
 
 import { Flexbox, Typography } from '../..';
+import { isFunction } from '../../common/utils';
 
 const getSize = (p: StyledProps<Props>) => {
   switch (p.size) {
@@ -16,7 +17,7 @@ const getSize = (p: StyledProps<Props>) => {
 
 const StyledDiv = styled(Flexbox)<Props>`
   background-color: ${({ theme, backgroundColor }) =>
-    backgroundColor ? backgroundColor(theme) : theme.color.backgroundDark};
+    isFunction(backgroundColor) ? backgroundColor(theme) : theme.color.backgroundDark};
   width: ${getSize}px;
   height: ${getSize}px;
   font-size: ${getSize}px;
