@@ -22,7 +22,7 @@ Array [
   align-items: center;
 }
 
-.c8 {
+.c7 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -34,11 +34,11 @@ Array [
   justify-content: center;
 }
 
-.c10 {
+.c9 {
   box-sizing: border-box;
 }
 
-.c7 {
+.c6 {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -53,7 +53,7 @@ Array [
   vertical-align: middle;
 }
 
-.c6 {
+.c5 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: inherit;
   margin: 0;
@@ -62,7 +62,7 @@ Array [
   line-height: 1.4285714285714286;
 }
 
-.c12 {
+.c11 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #FFFFFF;
   margin: 0;
@@ -92,10 +92,9 @@ Array [
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  padding: 4px 12px;
-  min-height: 32px;
-  background-color: #0046FF;
-  color: #FFFFFF;
+  padding: 0;
+  background-color: transparent;
+  color: #282823;
   border: none;
   border-radius: 0;
   cursor: pointer;
@@ -123,25 +122,6 @@ Array [
   outline: 1px dotted ButtonText;
 }
 
-.c3::before {
-  content: '';
-  display: block;
-  position: absolute;
-  border: 2px solid transparent;
-  top: 0;
-  left: 0;
-  width: calc(100% - 4px);
-  height: calc(100% - 4px);
-}
-
-.c3:hover {
-  background-color: hsl(223.5,100%,45%);
-}
-
-.c3:active {
-  background-color: hsl(223.5,100%,40%);
-}
-
 .c4 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -161,19 +141,34 @@ Array [
   align-items: center;
   background-color: transparent;
   outline: none;
-}
-
-.c5 {
   box-sizing: border-box;
   border: 1px solid #BCBCB6;
 }
 
-.c11 {
+.c10 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 40px;
+  width: 40px;
+  border: none;
+  padding: 0;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: transparent;
+  outline: none;
   background-color: #0046FF;
   cursor: default;
 }
 
-.c9 {
+.c8 {
   width: 40px;
 }
 
@@ -197,53 +192,47 @@ Array [
         className="c2"
       >
         <button
-          className="NormalizedButton__Button-ey7f5x-0 c3 c4 c5"
-          disabled={false}
+          className="NormalizedButton__Button-ey7f5x-0 c3 c4"
           onClick={[Function]}
           type="button"
         >
-          <span>
-            <span
+          <span
+            className="c5"
+          >
+            <svg
+              aria-hidden="true"
               className="c6"
+              focusable="false"
+              preserveAspectRatio="xMidYMid meet"
+              role="presentation"
+              viewBox="0 0 24 24"
             >
-              <svg
-                aria-hidden="true"
-                className="c7"
-                focusable="false"
-                preserveAspectRatio="xMidYMid meet"
-                role="presentation"
-                viewBox="0 0 24 24"
-              >
-                <polygon
-                  points="19.969 4 24 8.027 12 20 0 8.027 4.031 4 12 11.952"
-                  transform="rotate(90 12 12)"
-                />
-              </svg>
-            </span>
+              <polygon
+                points="19.969 4 24 8.027 12 20 0 8.027 4.031 4 12 11.952"
+                transform="rotate(90 12 12)"
+              />
+            </svg>
           </span>
         </button>
       </div>
       <div
-        className="c8 c9"
+        className="c7 c8"
       >
         <div
-          className="c10"
+          className="c9"
         >
           <button
-            className="NormalizedButton__Button-ey7f5x-0 c3 c4 c11"
-            disabled={false}
+            className="NormalizedButton__Button-ey7f5x-0 c3 c10"
             onClick={[Function]}
             type="button"
           >
-            <span>
+            <span
+              className="c5"
+            >
               <span
-                className="c6"
+                className="c11"
               >
-                <span
-                  className="c12"
-                >
-                  1
-                </span>
+                1
               </span>
             </span>
           </button>
@@ -253,29 +242,26 @@ Array [
         className="c2"
       >
         <button
-          className="NormalizedButton__Button-ey7f5x-0 c3 c4 c5"
-          disabled={false}
+          className="NormalizedButton__Button-ey7f5x-0 c3 c4"
           onClick={[Function]}
           type="button"
         >
-          <span>
-            <span
+          <span
+            className="c5"
+          >
+            <svg
+              aria-hidden="true"
               className="c6"
+              focusable="false"
+              preserveAspectRatio="xMidYMid meet"
+              role="presentation"
+              viewBox="0 0 24 24"
             >
-              <svg
-                aria-hidden="true"
-                className="c7"
-                focusable="false"
-                preserveAspectRatio="xMidYMid meet"
-                role="presentation"
-                viewBox="0 0 24 24"
-              >
-                <polygon
-                  points="19.969 4 24 8.027 12 20 0 8.027 4.031 4 12 11.952"
-                  transform="rotate(-90 12 12)"
-                />
-              </svg>
-            </span>
+              <polygon
+                points="19.969 4 24 8.027 12 20 0 8.027 4.031 4 12 11.952"
+                transform="rotate(-90 12 12)"
+              />
+            </svg>
           </span>
         </button>
       </div>
@@ -289,23 +275,11 @@ Array [
   display: flex;
 }
 
-.c3 {
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.c8 {
-  box-sizing: border-box;
-}
-
 .c7 {
+  box-sizing: border-box;
+}
+
+.c6 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -322,16 +296,16 @@ Array [
   flex: 1;
 }
 
-.c7 > * {
+.c6 > * {
   padding-left: 4px;
   padding-right: 4px;
 }
 
-.c7 > *:not(:first-child) {
+.c6 > *:not(:first-child) {
   padding-top: 0;
 }
 
-.c6 {
+.c5 {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -345,7 +319,7 @@ Array [
   display: block;
 }
 
-.c5 {
+.c4 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: inherit;
   margin: 0;
@@ -354,7 +328,7 @@ Array [
   line-height: 1.4285714285714286;
 }
 
-.c10 {
+.c9 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #0046FF;
   margin: 0;
@@ -363,7 +337,7 @@ Array [
   line-height: 1.4285714285714286;
 }
 
-.c4 {
+.c3 {
   font-family: inherit;
   font-size: 100%;
   line-height: 1.15;
@@ -392,29 +366,29 @@ Array [
   cursor: pointer;
 }
 
-.c4,
-.c4[type='button'],
-.c4[type='reset'],
-.c4[type='submit'] {
+.c3,
+.c3[type='button'],
+.c3[type='reset'],
+.c3[type='submit'] {
   -webkit-appearance: button;
 }
 
-.c4::-moz-focus-inner,
-.c4[type='button']::-moz-focus-inner,
-.c4[type='reset']::-moz-focus-inner,
-.c4[type='submit']::-moz-focus-inner {
+.c3::-moz-focus-inner,
+.c3[type='button']::-moz-focus-inner,
+.c3[type='reset']::-moz-focus-inner,
+.c3[type='submit']::-moz-focus-inner {
   border-style: none;
   padding: 0;
 }
 
-.c4:-moz-focusring,
-.c4[type='button']:-moz-focusring,
-.c4[type='reset']:-moz-focusring,
-.c4[type='submit']:-moz-focusring {
+.c3:-moz-focusring,
+.c3[type='button']:-moz-focusring,
+.c3[type='reset']:-moz-focusring,
+.c3[type='submit']:-moz-focusring {
   outline: 1px dotted ButtonText;
 }
 
-.c9 {
+.c8 {
   font-family: inherit;
   font-size: 100%;
   line-height: 1.15;
@@ -443,25 +417,25 @@ Array [
   cursor: not-allowed;
 }
 
-.c9,
-.c9[type='button'],
-.c9[type='reset'],
-.c9[type='submit'] {
+.c8,
+.c8[type='button'],
+.c8[type='reset'],
+.c8[type='submit'] {
   -webkit-appearance: button;
 }
 
-.c9::-moz-focus-inner,
-.c9[type='button']::-moz-focus-inner,
-.c9[type='reset']::-moz-focus-inner,
-.c9[type='submit']::-moz-focus-inner {
+.c8::-moz-focus-inner,
+.c8[type='button']::-moz-focus-inner,
+.c8[type='reset']::-moz-focus-inner,
+.c8[type='submit']::-moz-focus-inner {
   border-style: none;
   padding: 0;
 }
 
-.c9:-moz-focusring,
-.c9[type='button']:-moz-focusring,
-.c9[type='reset']:-moz-focusring,
-.c9[type='submit']:-moz-focusring {
+.c8:-moz-focusring,
+.c8[type='button']:-moz-focusring,
+.c8[type='reset']:-moz-focusring,
+.c8[type='submit']:-moz-focusring {
   outline: 1px dotted ButtonText;
 }
 
@@ -485,52 +459,46 @@ Array [
     <div
       className="c1 c2"
     >
-      <div
-        className="c3"
+      <button
+        className="NormalizedButton__Button-ey7f5x-0 c3"
+        onClick={[Function]}
+        type="button"
       >
-        <button
-          className="NormalizedButton__Button-ey7f5x-0 c4"
-          id="currentPage"
-          onClick={[Function]}
-          type="button"
+        <span
+          className="c4"
         >
-          <span
+          <svg
+            aria-hidden="true"
             className="c5"
+            focusable="false"
+            preserveAspectRatio="xMidYMid meet"
+            role="presentation"
+            viewBox="0 0 24 24"
           >
-            <svg
-              aria-hidden="true"
-              className="c6"
-              focusable="false"
-              preserveAspectRatio="xMidYMid meet"
-              role="presentation"
-              viewBox="0 0 24 24"
-            >
-              <polygon
-                points="19.969 4 24 8.027 12 20 0 8.027 4.031 4 12 11.952"
-                transform="rotate(90 12 12)"
-              />
-            </svg>
-          </span>
-        </button>
-      </div>
+            <polygon
+              points="19.969 4 24 8.027 12 20 0 8.027 4.031 4 12 11.952"
+              transform="rotate(90 12 12)"
+            />
+          </svg>
+        </span>
+      </button>
       <div
-        className="c7"
+        className="c6"
       >
         <div
-          className="c8"
+          className="c7"
         >
           <button
-            className="NormalizedButton__Button-ey7f5x-0 c9"
+            className="NormalizedButton__Button-ey7f5x-0 c8"
             disabled={true}
-            id="currentPage"
             onClick={[Function]}
             type="button"
           >
             <span
-              className="c5"
+              className="c4"
             >
               <span
-                className="c10"
+                className="c9"
               >
                 1
               </span>
@@ -538,34 +506,29 @@ Array [
           </button>
         </div>
       </div>
-      <div
-        className="c3"
+      <button
+        className="NormalizedButton__Button-ey7f5x-0 c3"
+        onClick={[Function]}
+        type="button"
       >
-        <button
-          className="NormalizedButton__Button-ey7f5x-0 c4"
-          id="currentPage"
-          onClick={[Function]}
-          type="button"
+        <span
+          className="c4"
         >
-          <span
+          <svg
+            aria-hidden="true"
             className="c5"
+            focusable="false"
+            preserveAspectRatio="xMidYMid meet"
+            role="presentation"
+            viewBox="0 0 24 24"
           >
-            <svg
-              aria-hidden="true"
-              className="c6"
-              focusable="false"
-              preserveAspectRatio="xMidYMid meet"
-              role="presentation"
-              viewBox="0 0 24 24"
-            >
-              <polygon
-                points="19.969 4 24 8.027 12 20 0 8.027 4.031 4 12 11.952"
-                transform="rotate(-90 12 12)"
-              />
-            </svg>
-          </span>
-        </button>
-      </div>
+            <polygon
+              points="19.969 4 24 8.027 12 20 0 8.027 4.031 4 12 11.952"
+              transform="rotate(-90 12 12)"
+            />
+          </svg>
+        </span>
+      </button>
     </div>
   </div>,
 ]
@@ -593,7 +556,7 @@ Array [
   align-items: center;
 }
 
-.c8 {
+.c7 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -605,11 +568,11 @@ Array [
   justify-content: center;
 }
 
-.c10 {
+.c9 {
   box-sizing: border-box;
 }
 
-.c7 {
+.c6 {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -624,7 +587,7 @@ Array [
   vertical-align: middle;
 }
 
-.c6 {
+.c5 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: inherit;
   margin: 0;
@@ -633,7 +596,7 @@ Array [
   line-height: 1.4285714285714286;
 }
 
-.c12 {
+.c11 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #FFFFFF;
   margin: 0;
@@ -642,7 +605,7 @@ Array [
   line-height: 1.5;
 }
 
-.c14 {
+.c13 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
   margin: 0;
@@ -672,10 +635,9 @@ Array [
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  padding: 4px 12px;
-  min-height: 32px;
-  background-color: #0046FF;
-  color: #FFFFFF;
+  padding: 0;
+  background-color: transparent;
+  color: #282823;
   border: none;
   border-radius: 0;
   cursor: pointer;
@@ -703,89 +665,53 @@ Array [
   outline: 1px dotted ButtonText;
 }
 
-.c3::before {
-  content: '';
-  display: block;
-  position: absolute;
-  border: 2px solid transparent;
-  top: 0;
-  left: 0;
-  width: calc(100% - 4px);
-  height: calc(100% - 4px);
-}
-
-.c3:hover {
-  background-color: hsl(223.5,100%,45%);
-}
-
-.c3:active {
-  background-color: hsl(223.5,100%,40%);
-}
-
-.c13 {
-  font-family: inherit;
-  font-size: 100%;
-  line-height: 1.15;
-  margin: 0;
-  overflow: visible;
-  text-transform: none;
-  position: relative;
-  box-sizing: border-box;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+.c4 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 40px;
+  width: 40px;
+  border: none;
+  padding: 0;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  padding: 4px 12px;
-  min-height: 32px;
-  background-color: #EBEBE8;
-  color: #A0A09B;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: transparent;
+  outline: none;
+  box-sizing: border-box;
+  border: 1px solid #BCBCB6;
+}
+
+.c10 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 40px;
+  width: 40px;
   border: none;
-  border-radius: 0;
-  cursor: not-allowed;
-}
-
-.c13,
-.c13[type='button'],
-.c13[type='reset'],
-.c13[type='submit'] {
-  -webkit-appearance: button;
-}
-
-.c13::-moz-focus-inner,
-.c13[type='button']::-moz-focus-inner,
-.c13[type='reset']::-moz-focus-inner,
-.c13[type='submit']::-moz-focus-inner {
-  border-style: none;
   padding: 0;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: transparent;
+  outline: none;
+  background-color: #0046FF;
+  cursor: default;
 }
 
-.c13:-moz-focusring,
-.c13[type='button']:-moz-focusring,
-.c13[type='reset']:-moz-focusring,
-.c13[type='submit']:-moz-focusring {
-  outline: 1px dotted ButtonText;
-}
-
-.c13::before {
-  content: '';
-  display: block;
-  position: absolute;
-  border: 2px solid transparent;
-  top: 0;
-  left: 0;
-  width: calc(100% - 4px);
-  height: calc(100% - 4px);
-}
-
-.c4 {
+.c12 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -806,17 +732,7 @@ Array [
   outline: none;
 }
 
-.c5 {
-  box-sizing: border-box;
-  border: 1px solid #BCBCB6;
-}
-
-.c11 {
-  background-color: #0046FF;
-  cursor: default;
-}
-
-.c9 {
+.c8 {
   width: 80px;
 }
 
@@ -840,75 +756,66 @@ Array [
         className="c2"
       >
         <button
-          className="NormalizedButton__Button-ey7f5x-0 c3 c4 c5"
-          disabled={false}
+          className="NormalizedButton__Button-ey7f5x-0 c3 c4"
           onClick={[Function]}
           type="button"
         >
-          <span>
-            <span
+          <span
+            className="c5"
+          >
+            <svg
+              aria-hidden="true"
               className="c6"
+              focusable="false"
+              preserveAspectRatio="xMidYMid meet"
+              role="presentation"
+              viewBox="0 0 24 24"
             >
-              <svg
-                aria-hidden="true"
-                className="c7"
-                focusable="false"
-                preserveAspectRatio="xMidYMid meet"
-                role="presentation"
-                viewBox="0 0 24 24"
-              >
-                <polygon
-                  points="19.969 4 24 8.027 12 20 0 8.027 4.031 4 12 11.952"
-                  transform="rotate(90 12 12)"
-                />
-              </svg>
-            </span>
+              <polygon
+                points="19.969 4 24 8.027 12 20 0 8.027 4.031 4 12 11.952"
+                transform="rotate(90 12 12)"
+              />
+            </svg>
           </span>
         </button>
       </div>
       <div
-        className="c8 c9"
+        className="c7 c8"
       >
         <div
-          className="c10"
+          className="c9"
         >
           <button
-            className="NormalizedButton__Button-ey7f5x-0 c3 c4 c11"
-            disabled={false}
+            className="NormalizedButton__Button-ey7f5x-0 c3 c10"
             onClick={[Function]}
             type="button"
           >
-            <span>
+            <span
+              className="c5"
+            >
               <span
-                className="c6"
+                className="c11"
               >
-                <span
-                  className="c12"
-                >
-                  1
-                </span>
+                1
               </span>
             </span>
           </button>
         </div>
         <div
-          className="c10"
+          className="c9"
         >
           <button
-            className="NormalizedButton__Button-ey7f5x-0 c13 c4 "
-            disabled={true}
+            className="NormalizedButton__Button-ey7f5x-0 c3 c12"
             onClick={[Function]}
             type="button"
           >
-            <span>
+            <span
+              className="c5"
+            >
               <span
-                className="c6"
+                className="c13"
               >
-                <span
-                  className="c14"
-                >
-                  2
-                </span>
+                2
               </span>
             </span>
           </button>
@@ -918,29 +825,26 @@ Array [
         className="c2"
       >
         <button
-          className="NormalizedButton__Button-ey7f5x-0 c3 c4 c5"
-          disabled={false}
+          className="NormalizedButton__Button-ey7f5x-0 c3 c4"
           onClick={[Function]}
           type="button"
         >
-          <span>
-            <span
+          <span
+            className="c5"
+          >
+            <svg
+              aria-hidden="true"
               className="c6"
+              focusable="false"
+              preserveAspectRatio="xMidYMid meet"
+              role="presentation"
+              viewBox="0 0 24 24"
             >
-              <svg
-                aria-hidden="true"
-                className="c7"
-                focusable="false"
-                preserveAspectRatio="xMidYMid meet"
-                role="presentation"
-                viewBox="0 0 24 24"
-              >
-                <polygon
-                  points="19.969 4 24 8.027 12 20 0 8.027 4.031 4 12 11.952"
-                  transform="rotate(-90 12 12)"
-                />
-              </svg>
-            </span>
+              <polygon
+                points="19.969 4 24 8.027 12 20 0 8.027 4.031 4 12 11.952"
+                transform="rotate(-90 12 12)"
+              />
+            </svg>
           </span>
         </button>
       </div>
@@ -954,23 +858,11 @@ Array [
   display: flex;
 }
 
-.c3 {
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.c8 {
-  box-sizing: border-box;
-}
-
 .c7 {
+  box-sizing: border-box;
+}
+
+.c6 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -987,16 +879,16 @@ Array [
   flex: 1;
 }
 
-.c7 > * {
+.c6 > * {
   padding-left: 4px;
   padding-right: 4px;
 }
 
-.c7 > *:not(:first-child) {
+.c6 > *:not(:first-child) {
   padding-top: 0;
 }
 
-.c6 {
+.c5 {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -1010,7 +902,7 @@ Array [
   display: block;
 }
 
-.c5 {
+.c4 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: inherit;
   margin: 0;
@@ -1019,7 +911,7 @@ Array [
   line-height: 1.4285714285714286;
 }
 
-.c10 {
+.c9 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #0046FF;
   margin: 0;
@@ -1028,7 +920,7 @@ Array [
   line-height: 1.4285714285714286;
 }
 
-.c11 {
+.c10 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
   margin: 0;
@@ -1037,7 +929,7 @@ Array [
   line-height: 1.4285714285714286;
 }
 
-.c4 {
+.c3 {
   font-family: inherit;
   font-size: 100%;
   line-height: 1.15;
@@ -1066,29 +958,29 @@ Array [
   cursor: pointer;
 }
 
-.c4,
-.c4[type='button'],
-.c4[type='reset'],
-.c4[type='submit'] {
+.c3,
+.c3[type='button'],
+.c3[type='reset'],
+.c3[type='submit'] {
   -webkit-appearance: button;
 }
 
-.c4::-moz-focus-inner,
-.c4[type='button']::-moz-focus-inner,
-.c4[type='reset']::-moz-focus-inner,
-.c4[type='submit']::-moz-focus-inner {
+.c3::-moz-focus-inner,
+.c3[type='button']::-moz-focus-inner,
+.c3[type='reset']::-moz-focus-inner,
+.c3[type='submit']::-moz-focus-inner {
   border-style: none;
   padding: 0;
 }
 
-.c4:-moz-focusring,
-.c4[type='button']:-moz-focusring,
-.c4[type='reset']:-moz-focusring,
-.c4[type='submit']:-moz-focusring {
+.c3:-moz-focusring,
+.c3[type='button']:-moz-focusring,
+.c3[type='reset']:-moz-focusring,
+.c3[type='submit']:-moz-focusring {
   outline: 1px dotted ButtonText;
 }
 
-.c9 {
+.c8 {
   font-family: inherit;
   font-size: 100%;
   line-height: 1.15;
@@ -1117,25 +1009,25 @@ Array [
   cursor: not-allowed;
 }
 
-.c9,
-.c9[type='button'],
-.c9[type='reset'],
-.c9[type='submit'] {
+.c8,
+.c8[type='button'],
+.c8[type='reset'],
+.c8[type='submit'] {
   -webkit-appearance: button;
 }
 
-.c9::-moz-focus-inner,
-.c9[type='button']::-moz-focus-inner,
-.c9[type='reset']::-moz-focus-inner,
-.c9[type='submit']::-moz-focus-inner {
+.c8::-moz-focus-inner,
+.c8[type='button']::-moz-focus-inner,
+.c8[type='reset']::-moz-focus-inner,
+.c8[type='submit']::-moz-focus-inner {
   border-style: none;
   padding: 0;
 }
 
-.c9:-moz-focusring,
-.c9[type='button']:-moz-focusring,
-.c9[type='reset']:-moz-focusring,
-.c9[type='submit']:-moz-focusring {
+.c8:-moz-focusring,
+.c8[type='button']:-moz-focusring,
+.c8[type='reset']:-moz-focusring,
+.c8[type='submit']:-moz-focusring {
   outline: 1px dotted ButtonText;
 }
 
@@ -1159,52 +1051,46 @@ Array [
     <div
       className="c1 c2"
     >
-      <div
-        className="c3"
+      <button
+        className="NormalizedButton__Button-ey7f5x-0 c3"
+        onClick={[Function]}
+        type="button"
       >
-        <button
-          className="NormalizedButton__Button-ey7f5x-0 c4"
-          id="currentPage"
-          onClick={[Function]}
-          type="button"
+        <span
+          className="c4"
         >
-          <span
+          <svg
+            aria-hidden="true"
             className="c5"
+            focusable="false"
+            preserveAspectRatio="xMidYMid meet"
+            role="presentation"
+            viewBox="0 0 24 24"
           >
-            <svg
-              aria-hidden="true"
-              className="c6"
-              focusable="false"
-              preserveAspectRatio="xMidYMid meet"
-              role="presentation"
-              viewBox="0 0 24 24"
-            >
-              <polygon
-                points="19.969 4 24 8.027 12 20 0 8.027 4.031 4 12 11.952"
-                transform="rotate(90 12 12)"
-              />
-            </svg>
-          </span>
-        </button>
-      </div>
+            <polygon
+              points="19.969 4 24 8.027 12 20 0 8.027 4.031 4 12 11.952"
+              transform="rotate(90 12 12)"
+            />
+          </svg>
+        </span>
+      </button>
       <div
-        className="c7"
+        className="c6"
       >
         <div
-          className="c8"
+          className="c7"
         >
           <button
-            className="NormalizedButton__Button-ey7f5x-0 c9"
+            className="NormalizedButton__Button-ey7f5x-0 c8"
             disabled={true}
-            id="currentPage"
             onClick={[Function]}
             type="button"
           >
             <span
-              className="c5"
+              className="c4"
             >
               <span
-                className="c10"
+                className="c9"
               >
                 1
               </span>
@@ -1212,20 +1098,19 @@ Array [
           </button>
         </div>
         <div
-          className="c8"
+          className="c7"
         >
           <button
-            className="NormalizedButton__Button-ey7f5x-0 c4"
+            className="NormalizedButton__Button-ey7f5x-0 c3"
             disabled={false}
-            id="currentPage"
             onClick={[Function]}
             type="button"
           >
             <span
-              className="c5"
+              className="c4"
             >
               <span
-                className="c11"
+                className="c10"
               >
                 2
               </span>
@@ -1233,34 +1118,29 @@ Array [
           </button>
         </div>
       </div>
-      <div
-        className="c3"
+      <button
+        className="NormalizedButton__Button-ey7f5x-0 c3"
+        onClick={[Function]}
+        type="button"
       >
-        <button
-          className="NormalizedButton__Button-ey7f5x-0 c4"
-          id="currentPage"
-          onClick={[Function]}
-          type="button"
+        <span
+          className="c4"
         >
-          <span
+          <svg
+            aria-hidden="true"
             className="c5"
+            focusable="false"
+            preserveAspectRatio="xMidYMid meet"
+            role="presentation"
+            viewBox="0 0 24 24"
           >
-            <svg
-              aria-hidden="true"
-              className="c6"
-              focusable="false"
-              preserveAspectRatio="xMidYMid meet"
-              role="presentation"
-              viewBox="0 0 24 24"
-            >
-              <polygon
-                points="19.969 4 24 8.027 12 20 0 8.027 4.031 4 12 11.952"
-                transform="rotate(-90 12 12)"
-              />
-            </svg>
-          </span>
-        </button>
-      </div>
+            <polygon
+              points="19.969 4 24 8.027 12 20 0 8.027 4.031 4 12 11.952"
+              transform="rotate(-90 12 12)"
+            />
+          </svg>
+        </span>
+      </button>
     </div>
   </div>,
 ]
@@ -1288,7 +1168,7 @@ Array [
   align-items: center;
 }
 
-.c8 {
+.c7 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -1300,11 +1180,11 @@ Array [
   justify-content: center;
 }
 
-.c10 {
+.c9 {
   box-sizing: border-box;
 }
 
-.c7 {
+.c6 {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -1319,7 +1199,7 @@ Array [
   vertical-align: middle;
 }
 
-.c6 {
+.c5 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: inherit;
   margin: 0;
@@ -1328,7 +1208,7 @@ Array [
   line-height: 1.4285714285714286;
 }
 
-.c12 {
+.c11 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #FFFFFF;
   margin: 0;
@@ -1337,7 +1217,7 @@ Array [
   line-height: 1.5;
 }
 
-.c14 {
+.c13 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
   margin: 0;
@@ -1346,7 +1226,7 @@ Array [
   line-height: 1.5;
 }
 
-.c16 {
+.c15 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
   margin: 0;
@@ -1376,10 +1256,9 @@ Array [
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  padding: 4px 12px;
-  min-height: 32px;
-  background-color: #0046FF;
-  color: #FFFFFF;
+  padding: 0;
+  background-color: transparent;
+  color: #282823;
   border: none;
   border-radius: 0;
   cursor: pointer;
@@ -1407,88 +1286,6 @@ Array [
   outline: 1px dotted ButtonText;
 }
 
-.c3::before {
-  content: '';
-  display: block;
-  position: absolute;
-  border: 2px solid transparent;
-  top: 0;
-  left: 0;
-  width: calc(100% - 4px);
-  height: calc(100% - 4px);
-}
-
-.c3:hover {
-  background-color: hsl(223.5,100%,45%);
-}
-
-.c3:active {
-  background-color: hsl(223.5,100%,40%);
-}
-
-.c13 {
-  font-family: inherit;
-  font-size: 100%;
-  line-height: 1.15;
-  margin: 0;
-  overflow: visible;
-  text-transform: none;
-  position: relative;
-  box-sizing: border-box;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  padding: 4px 12px;
-  min-height: 32px;
-  background-color: #EBEBE8;
-  color: #A0A09B;
-  border: none;
-  border-radius: 0;
-  cursor: not-allowed;
-}
-
-.c13,
-.c13[type='button'],
-.c13[type='reset'],
-.c13[type='submit'] {
-  -webkit-appearance: button;
-}
-
-.c13::-moz-focus-inner,
-.c13[type='button']::-moz-focus-inner,
-.c13[type='reset']::-moz-focus-inner,
-.c13[type='submit']::-moz-focus-inner {
-  border-style: none;
-  padding: 0;
-}
-
-.c13:-moz-focusring,
-.c13[type='button']:-moz-focusring,
-.c13[type='reset']:-moz-focusring,
-.c13[type='submit']:-moz-focusring {
-  outline: 1px dotted ButtonText;
-}
-
-.c13::before {
-  content: '';
-  display: block;
-  position: absolute;
-  border: 2px solid transparent;
-  top: 0;
-  left: 0;
-  width: calc(100% - 4px);
-  height: calc(100% - 4px);
-}
-
 .c4 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -1508,19 +1305,11 @@ Array [
   align-items: center;
   background-color: transparent;
   outline: none;
-}
-
-.c5 {
   box-sizing: border-box;
   border: 1px solid #BCBCB6;
 }
 
-.c11 {
-  background-color: #0046FF;
-  cursor: default;
-}
-
-.c15 {
+.c10 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1539,10 +1328,51 @@ Array [
   align-items: center;
   background-color: transparent;
   outline: none;
-  width: 20px;
+  background-color: #0046FF;
+  cursor: default;
 }
 
-.c9 {
+.c12 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 40px;
+  width: 40px;
+  border: none;
+  padding: 0;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: transparent;
+  outline: none;
+}
+
+.c14 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 40px;
+  width: 20px;
+  border: none;
+  padding: 0;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c8 {
   width: 240px;
 }
 
@@ -1566,136 +1396,113 @@ Array [
         className="c2"
       >
         <button
-          className="NormalizedButton__Button-ey7f5x-0 c3 c4 c5"
-          disabled={false}
+          className="NormalizedButton__Button-ey7f5x-0 c3 c4"
           onClick={[Function]}
           type="button"
         >
-          <span>
-            <span
+          <span
+            className="c5"
+          >
+            <svg
+              aria-hidden="true"
               className="c6"
+              focusable="false"
+              preserveAspectRatio="xMidYMid meet"
+              role="presentation"
+              viewBox="0 0 24 24"
             >
-              <svg
-                aria-hidden="true"
-                className="c7"
-                focusable="false"
-                preserveAspectRatio="xMidYMid meet"
-                role="presentation"
-                viewBox="0 0 24 24"
-              >
-                <polygon
-                  points="19.969 4 24 8.027 12 20 0 8.027 4.031 4 12 11.952"
-                  transform="rotate(90 12 12)"
-                />
-              </svg>
-            </span>
+              <polygon
+                points="19.969 4 24 8.027 12 20 0 8.027 4.031 4 12 11.952"
+                transform="rotate(90 12 12)"
+              />
+            </svg>
           </span>
         </button>
       </div>
       <div
-        className="c8 c9"
+        className="c7 c8"
       >
         <div
-          className="c10"
+          className="c9"
         >
           <button
-            className="NormalizedButton__Button-ey7f5x-0 c3 c4 c11"
-            disabled={false}
+            className="NormalizedButton__Button-ey7f5x-0 c3 c10"
             onClick={[Function]}
             type="button"
           >
-            <span>
-              <span
-                className="c6"
-              >
-                <span
-                  className="c12"
-                >
-                  1
-                </span>
-              </span>
-            </span>
-          </button>
-        </div>
-        <div
-          className="c10"
-        >
-          <button
-            className="NormalizedButton__Button-ey7f5x-0 c13 c4 "
-            disabled={true}
-            onClick={[Function]}
-            type="button"
-          >
-            <span>
-              <span
-                className="c6"
-              >
-                <span
-                  className="c14"
-                >
-                  2
-                </span>
-              </span>
-            </span>
-          </button>
-        </div>
-        <div
-          className="c10"
-        >
-          <button
-            className="NormalizedButton__Button-ey7f5x-0 c13 c4 "
-            disabled={true}
-            onClick={[Function]}
-            type="button"
-          >
-            <span>
-              <span
-                className="c6"
-              >
-                <span
-                  className="c14"
-                >
-                  3
-                </span>
-              </span>
-            </span>
-          </button>
-        </div>
-        <button
-          className="NormalizedButton__Button-ey7f5x-0 c3 c15"
-          onClick={[Function]}
-          type="button"
-        >
-          <span>
             <span
-              className="c6"
+              className="c5"
             >
               <span
-                className="c16"
+                className="c11"
               >
-                ...
+                1
               </span>
             </span>
-          </span>
-        </button>
+          </button>
+        </div>
         <div
-          className="c10"
+          className="c9"
         >
           <button
-            className="NormalizedButton__Button-ey7f5x-0 c13 c4 "
-            disabled={true}
+            className="NormalizedButton__Button-ey7f5x-0 c3 c12"
             onClick={[Function]}
             type="button"
           >
-            <span>
+            <span
+              className="c5"
+            >
               <span
-                className="c6"
+                className="c13"
               >
-                <span
-                  className="c14"
-                >
-                  12
-                </span>
+                2
+              </span>
+            </span>
+          </button>
+        </div>
+        <div
+          className="c9"
+        >
+          <button
+            className="NormalizedButton__Button-ey7f5x-0 c3 c12"
+            onClick={[Function]}
+            type="button"
+          >
+            <span
+              className="c5"
+            >
+              <span
+                className="c13"
+              >
+                3
+              </span>
+            </span>
+          </button>
+        </div>
+        <div
+          className="c14"
+        >
+          <span
+            className="c15"
+          >
+            ...
+          </span>
+        </div>
+        <div
+          className="c9"
+        >
+          <button
+            className="NormalizedButton__Button-ey7f5x-0 c3 c12"
+            onClick={[Function]}
+            type="button"
+          >
+            <span
+              className="c5"
+            >
+              <span
+                className="c13"
+              >
+                12
               </span>
             </span>
           </button>
@@ -1705,29 +1512,26 @@ Array [
         className="c2"
       >
         <button
-          className="NormalizedButton__Button-ey7f5x-0 c3 c4 c5"
-          disabled={false}
+          className="NormalizedButton__Button-ey7f5x-0 c3 c4"
           onClick={[Function]}
           type="button"
         >
-          <span>
-            <span
+          <span
+            className="c5"
+          >
+            <svg
+              aria-hidden="true"
               className="c6"
+              focusable="false"
+              preserveAspectRatio="xMidYMid meet"
+              role="presentation"
+              viewBox="0 0 24 24"
             >
-              <svg
-                aria-hidden="true"
-                className="c7"
-                focusable="false"
-                preserveAspectRatio="xMidYMid meet"
-                role="presentation"
-                viewBox="0 0 24 24"
-              >
-                <polygon
-                  points="19.969 4 24 8.027 12 20 0 8.027 4.031 4 12 11.952"
-                  transform="rotate(-90 12 12)"
-                />
-              </svg>
-            </span>
+              <polygon
+                points="19.969 4 24 8.027 12 20 0 8.027 4.031 4 12 11.952"
+                transform="rotate(-90 12 12)"
+              />
+            </svg>
           </span>
         </button>
       </div>
@@ -1741,7 +1545,7 @@ Array [
   display: flex;
 }
 
-.c3 {
+.c11 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -1753,11 +1557,11 @@ Array [
   align-items: center;
 }
 
-.c8 {
+.c7 {
   box-sizing: border-box;
 }
 
-.c7 {
+.c6 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -1774,16 +1578,16 @@ Array [
   flex: 1;
 }
 
-.c7 > * {
+.c6 > * {
   padding-left: 4px;
   padding-right: 4px;
 }
 
-.c7 > *:not(:first-child) {
+.c6 > *:not(:first-child) {
   padding-top: 0;
 }
 
-.c6 {
+.c5 {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -1797,7 +1601,7 @@ Array [
   display: block;
 }
 
-.c5 {
+.c4 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: inherit;
   margin: 0;
@@ -1806,7 +1610,7 @@ Array [
   line-height: 1.4285714285714286;
 }
 
-.c11 {
+.c10 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
   margin: 0;
@@ -1815,7 +1619,7 @@ Array [
   line-height: 1.4285714285714286;
 }
 
-.c10 {
+.c9 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #0046FF;
   margin: 0;
@@ -1824,7 +1628,7 @@ Array [
   line-height: 1.4285714285714286;
 }
 
-.c4 {
+.c3 {
   font-family: inherit;
   font-size: 100%;
   line-height: 1.15;
@@ -1853,29 +1657,29 @@ Array [
   cursor: pointer;
 }
 
-.c4,
-.c4[type='button'],
-.c4[type='reset'],
-.c4[type='submit'] {
+.c3,
+.c3[type='button'],
+.c3[type='reset'],
+.c3[type='submit'] {
   -webkit-appearance: button;
 }
 
-.c4::-moz-focus-inner,
-.c4[type='button']::-moz-focus-inner,
-.c4[type='reset']::-moz-focus-inner,
-.c4[type='submit']::-moz-focus-inner {
+.c3::-moz-focus-inner,
+.c3[type='button']::-moz-focus-inner,
+.c3[type='reset']::-moz-focus-inner,
+.c3[type='submit']::-moz-focus-inner {
   border-style: none;
   padding: 0;
 }
 
-.c4:-moz-focusring,
-.c4[type='button']:-moz-focusring,
-.c4[type='reset']:-moz-focusring,
-.c4[type='submit']:-moz-focusring {
+.c3:-moz-focusring,
+.c3[type='button']:-moz-focusring,
+.c3[type='reset']:-moz-focusring,
+.c3[type='submit']:-moz-focusring {
   outline: 1px dotted ButtonText;
 }
 
-.c9 {
+.c8 {
   font-family: inherit;
   font-size: 100%;
   line-height: 1.15;
@@ -1904,25 +1708,25 @@ Array [
   cursor: not-allowed;
 }
 
-.c9,
-.c9[type='button'],
-.c9[type='reset'],
-.c9[type='submit'] {
+.c8,
+.c8[type='button'],
+.c8[type='reset'],
+.c8[type='submit'] {
   -webkit-appearance: button;
 }
 
-.c9::-moz-focus-inner,
-.c9[type='button']::-moz-focus-inner,
-.c9[type='reset']::-moz-focus-inner,
-.c9[type='submit']::-moz-focus-inner {
+.c8::-moz-focus-inner,
+.c8[type='button']::-moz-focus-inner,
+.c8[type='reset']::-moz-focus-inner,
+.c8[type='submit']::-moz-focus-inner {
   border-style: none;
   padding: 0;
 }
 
-.c9:-moz-focusring,
-.c9[type='button']:-moz-focusring,
-.c9[type='reset']:-moz-focusring,
-.c9[type='submit']:-moz-focusring {
+.c8:-moz-focusring,
+.c8[type='button']:-moz-focusring,
+.c8[type='reset']:-moz-focusring,
+.c8[type='submit']:-moz-focusring {
   outline: 1px dotted ButtonText;
 }
 
@@ -1946,52 +1750,46 @@ Array [
     <div
       className="c1 c2"
     >
-      <div
-        className="c3"
+      <button
+        className="NormalizedButton__Button-ey7f5x-0 c3"
+        onClick={[Function]}
+        type="button"
       >
-        <button
-          className="NormalizedButton__Button-ey7f5x-0 c4"
-          id="currentPage"
-          onClick={[Function]}
-          type="button"
+        <span
+          className="c4"
         >
-          <span
+          <svg
+            aria-hidden="true"
             className="c5"
+            focusable="false"
+            preserveAspectRatio="xMidYMid meet"
+            role="presentation"
+            viewBox="0 0 24 24"
           >
-            <svg
-              aria-hidden="true"
-              className="c6"
-              focusable="false"
-              preserveAspectRatio="xMidYMid meet"
-              role="presentation"
-              viewBox="0 0 24 24"
-            >
-              <polygon
-                points="19.969 4 24 8.027 12 20 0 8.027 4.031 4 12 11.952"
-                transform="rotate(90 12 12)"
-              />
-            </svg>
-          </span>
-        </button>
-      </div>
+            <polygon
+              points="19.969 4 24 8.027 12 20 0 8.027 4.031 4 12 11.952"
+              transform="rotate(90 12 12)"
+            />
+          </svg>
+        </span>
+      </button>
       <div
-        className="c7"
+        className="c6"
       >
         <div
-          className="c8"
+          className="c7"
         >
           <button
-            className="NormalizedButton__Button-ey7f5x-0 c9"
+            className="NormalizedButton__Button-ey7f5x-0 c8"
             disabled={true}
-            id="currentPage"
             onClick={[Function]}
             type="button"
           >
             <span
-              className="c5"
+              className="c4"
             >
               <span
-                className="c10"
+                className="c9"
               >
                 1
               </span>
@@ -1999,20 +1797,19 @@ Array [
           </button>
         </div>
         <div
-          className="c8"
+          className="c7"
         >
           <button
-            className="NormalizedButton__Button-ey7f5x-0 c4"
+            className="NormalizedButton__Button-ey7f5x-0 c3"
             disabled={false}
-            id="currentPage"
             onClick={[Function]}
             type="button"
           >
             <span
-              className="c5"
+              className="c4"
             >
               <span
-                className="c11"
+                className="c10"
               >
                 2
               </span>
@@ -2020,20 +1817,19 @@ Array [
           </button>
         </div>
         <div
-          className="c8"
+          className="c7"
         >
           <button
-            className="NormalizedButton__Button-ey7f5x-0 c4"
+            className="NormalizedButton__Button-ey7f5x-0 c3"
             disabled={false}
-            id="currentPage"
             onClick={[Function]}
             type="button"
           >
             <span
-              className="c5"
+              className="c4"
             >
               <span
-                className="c11"
+                className="c10"
               >
                 3
               </span>
@@ -2041,29 +1837,28 @@ Array [
           </button>
         </div>
         <div
-          className="c3"
+          className="c11"
         >
           <span
-            className="c11"
+            className="c10"
           >
             ...
           </span>
         </div>
         <div
-          className="c8"
+          className="c7"
         >
           <button
-            className="NormalizedButton__Button-ey7f5x-0 c4"
+            className="NormalizedButton__Button-ey7f5x-0 c3"
             disabled={false}
-            id="currentPage"
             onClick={[Function]}
             type="button"
           >
             <span
-              className="c5"
+              className="c4"
             >
               <span
-                className="c11"
+                className="c10"
               >
                 12
               </span>
@@ -2071,34 +1866,29 @@ Array [
           </button>
         </div>
       </div>
-      <div
-        className="c3"
+      <button
+        className="NormalizedButton__Button-ey7f5x-0 c3"
+        onClick={[Function]}
+        type="button"
       >
-        <button
-          className="NormalizedButton__Button-ey7f5x-0 c4"
-          id="currentPage"
-          onClick={[Function]}
-          type="button"
+        <span
+          className="c4"
         >
-          <span
+          <svg
+            aria-hidden="true"
             className="c5"
+            focusable="false"
+            preserveAspectRatio="xMidYMid meet"
+            role="presentation"
+            viewBox="0 0 24 24"
           >
-            <svg
-              aria-hidden="true"
-              className="c6"
-              focusable="false"
-              preserveAspectRatio="xMidYMid meet"
-              role="presentation"
-              viewBox="0 0 24 24"
-            >
-              <polygon
-                points="19.969 4 24 8.027 12 20 0 8.027 4.031 4 12 11.952"
-                transform="rotate(-90 12 12)"
-              />
-            </svg>
-          </span>
-        </button>
-      </div>
+            <polygon
+              points="19.969 4 24 8.027 12 20 0 8.027 4.031 4 12 11.952"
+              transform="rotate(-90 12 12)"
+            />
+          </svg>
+        </span>
+      </button>
     </div>
   </div>,
 ]
@@ -2126,7 +1916,7 @@ Array [
   align-items: center;
 }
 
-.c8 {
+.c7 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -2138,11 +1928,11 @@ Array [
   justify-content: center;
 }
 
-.c10 {
+.c9 {
   box-sizing: border-box;
 }
 
-.c7 {
+.c6 {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -2157,7 +1947,7 @@ Array [
   vertical-align: middle;
 }
 
-.c6 {
+.c5 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: inherit;
   margin: 0;
@@ -2166,7 +1956,7 @@ Array [
   line-height: 1.4285714285714286;
 }
 
-.c12 {
+.c11 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #FFFFFF;
   margin: 0;
@@ -2175,7 +1965,7 @@ Array [
   line-height: 1.5;
 }
 
-.c14 {
+.c13 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
   margin: 0;
@@ -2184,7 +1974,7 @@ Array [
   line-height: 1.5;
 }
 
-.c16 {
+.c15 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
   margin: 0;
@@ -2214,10 +2004,9 @@ Array [
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  padding: 4px 12px;
-  min-height: 32px;
-  background-color: #0046FF;
-  color: #FFFFFF;
+  padding: 0;
+  background-color: transparent;
+  color: #282823;
   border: none;
   border-radius: 0;
   cursor: pointer;
@@ -2245,88 +2034,6 @@ Array [
   outline: 1px dotted ButtonText;
 }
 
-.c3::before {
-  content: '';
-  display: block;
-  position: absolute;
-  border: 2px solid transparent;
-  top: 0;
-  left: 0;
-  width: calc(100% - 4px);
-  height: calc(100% - 4px);
-}
-
-.c3:hover {
-  background-color: hsl(223.5,100%,45%);
-}
-
-.c3:active {
-  background-color: hsl(223.5,100%,40%);
-}
-
-.c13 {
-  font-family: inherit;
-  font-size: 100%;
-  line-height: 1.15;
-  margin: 0;
-  overflow: visible;
-  text-transform: none;
-  position: relative;
-  box-sizing: border-box;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  padding: 4px 12px;
-  min-height: 32px;
-  background-color: #EBEBE8;
-  color: #A0A09B;
-  border: none;
-  border-radius: 0;
-  cursor: not-allowed;
-}
-
-.c13,
-.c13[type='button'],
-.c13[type='reset'],
-.c13[type='submit'] {
-  -webkit-appearance: button;
-}
-
-.c13::-moz-focus-inner,
-.c13[type='button']::-moz-focus-inner,
-.c13[type='reset']::-moz-focus-inner,
-.c13[type='submit']::-moz-focus-inner {
-  border-style: none;
-  padding: 0;
-}
-
-.c13:-moz-focusring,
-.c13[type='button']:-moz-focusring,
-.c13[type='reset']:-moz-focusring,
-.c13[type='submit']:-moz-focusring {
-  outline: 1px dotted ButtonText;
-}
-
-.c13::before {
-  content: '';
-  display: block;
-  position: absolute;
-  border: 2px solid transparent;
-  top: 0;
-  left: 0;
-  width: calc(100% - 4px);
-  height: calc(100% - 4px);
-}
-
 .c4 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -2346,19 +2053,11 @@ Array [
   align-items: center;
   background-color: transparent;
   outline: none;
-}
-
-.c5 {
   box-sizing: border-box;
   border: 1px solid #BCBCB6;
 }
 
-.c11 {
-  background-color: #0046FF;
-  cursor: default;
-}
-
-.c15 {
+.c10 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -2377,10 +2076,51 @@ Array [
   align-items: center;
   background-color: transparent;
   outline: none;
-  width: 20px;
+  background-color: #0046FF;
+  cursor: default;
 }
 
-.c9 {
+.c12 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 40px;
+  width: 40px;
+  border: none;
+  padding: 0;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: transparent;
+  outline: none;
+}
+
+.c14 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 40px;
+  width: 20px;
+  border: none;
+  padding: 0;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c8 {
   width: 240px;
 }
 
@@ -2404,136 +2144,113 @@ Array [
         className="c2"
       >
         <button
-          className="NormalizedButton__Button-ey7f5x-0 c3 c4 c5"
-          disabled={false}
+          className="NormalizedButton__Button-ey7f5x-0 c3 c4"
           onClick={[Function]}
           type="button"
         >
-          <span>
-            <span
+          <span
+            className="c5"
+          >
+            <svg
+              aria-hidden="true"
               className="c6"
+              focusable="false"
+              preserveAspectRatio="xMidYMid meet"
+              role="presentation"
+              viewBox="0 0 24 24"
             >
-              <svg
-                aria-hidden="true"
-                className="c7"
-                focusable="false"
-                preserveAspectRatio="xMidYMid meet"
-                role="presentation"
-                viewBox="0 0 24 24"
-              >
-                <polygon
-                  points="19.969 4 24 8.027 12 20 0 8.027 4.031 4 12 11.952"
-                  transform="rotate(90 12 12)"
-                />
-              </svg>
-            </span>
+              <polygon
+                points="19.969 4 24 8.027 12 20 0 8.027 4.031 4 12 11.952"
+                transform="rotate(90 12 12)"
+              />
+            </svg>
           </span>
         </button>
       </div>
       <div
-        className="c8 c9"
+        className="c7 c8"
       >
         <div
-          className="c10"
+          className="c9"
         >
           <button
-            className="NormalizedButton__Button-ey7f5x-0 c3 c4 c11"
-            disabled={false}
+            className="NormalizedButton__Button-ey7f5x-0 c3 c10"
             onClick={[Function]}
             type="button"
           >
-            <span>
-              <span
-                className="c6"
-              >
-                <span
-                  className="c12"
-                >
-                  1
-                </span>
-              </span>
-            </span>
-          </button>
-        </div>
-        <div
-          className="c10"
-        >
-          <button
-            className="NormalizedButton__Button-ey7f5x-0 c13 c4 "
-            disabled={true}
-            onClick={[Function]}
-            type="button"
-          >
-            <span>
-              <span
-                className="c6"
-              >
-                <span
-                  className="c14"
-                >
-                  2
-                </span>
-              </span>
-            </span>
-          </button>
-        </div>
-        <div
-          className="c10"
-        >
-          <button
-            className="NormalizedButton__Button-ey7f5x-0 c13 c4 "
-            disabled={true}
-            onClick={[Function]}
-            type="button"
-          >
-            <span>
-              <span
-                className="c6"
-              >
-                <span
-                  className="c14"
-                >
-                  3
-                </span>
-              </span>
-            </span>
-          </button>
-        </div>
-        <button
-          className="NormalizedButton__Button-ey7f5x-0 c3 c15"
-          onClick={[Function]}
-          type="button"
-        >
-          <span>
             <span
-              className="c6"
+              className="c5"
             >
               <span
-                className="c16"
+                className="c11"
               >
-                ...
+                1
               </span>
             </span>
-          </span>
-        </button>
+          </button>
+        </div>
         <div
-          className="c10"
+          className="c9"
         >
           <button
-            className="NormalizedButton__Button-ey7f5x-0 c13 c4 "
-            disabled={true}
+            className="NormalizedButton__Button-ey7f5x-0 c3 c12"
             onClick={[Function]}
             type="button"
           >
-            <span>
+            <span
+              className="c5"
+            >
               <span
-                className="c6"
+                className="c13"
               >
-                <span
-                  className="c14"
-                >
-                  999
-                </span>
+                2
+              </span>
+            </span>
+          </button>
+        </div>
+        <div
+          className="c9"
+        >
+          <button
+            className="NormalizedButton__Button-ey7f5x-0 c3 c12"
+            onClick={[Function]}
+            type="button"
+          >
+            <span
+              className="c5"
+            >
+              <span
+                className="c13"
+              >
+                3
+              </span>
+            </span>
+          </button>
+        </div>
+        <div
+          className="c14"
+        >
+          <span
+            className="c15"
+          >
+            ...
+          </span>
+        </div>
+        <div
+          className="c9"
+        >
+          <button
+            className="NormalizedButton__Button-ey7f5x-0 c3 c12"
+            onClick={[Function]}
+            type="button"
+          >
+            <span
+              className="c5"
+            >
+              <span
+                className="c13"
+              >
+                999
               </span>
             </span>
           </button>
@@ -2543,29 +2260,26 @@ Array [
         className="c2"
       >
         <button
-          className="NormalizedButton__Button-ey7f5x-0 c3 c4 c5"
-          disabled={false}
+          className="NormalizedButton__Button-ey7f5x-0 c3 c4"
           onClick={[Function]}
           type="button"
         >
-          <span>
-            <span
+          <span
+            className="c5"
+          >
+            <svg
+              aria-hidden="true"
               className="c6"
+              focusable="false"
+              preserveAspectRatio="xMidYMid meet"
+              role="presentation"
+              viewBox="0 0 24 24"
             >
-              <svg
-                aria-hidden="true"
-                className="c7"
-                focusable="false"
-                preserveAspectRatio="xMidYMid meet"
-                role="presentation"
-                viewBox="0 0 24 24"
-              >
-                <polygon
-                  points="19.969 4 24 8.027 12 20 0 8.027 4.031 4 12 11.952"
-                  transform="rotate(-90 12 12)"
-                />
-              </svg>
-            </span>
+              <polygon
+                points="19.969 4 24 8.027 12 20 0 8.027 4.031 4 12 11.952"
+                transform="rotate(-90 12 12)"
+              />
+            </svg>
           </span>
         </button>
       </div>
@@ -2579,7 +2293,7 @@ Array [
   display: flex;
 }
 
-.c3 {
+.c11 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -2591,11 +2305,11 @@ Array [
   align-items: center;
 }
 
-.c8 {
+.c7 {
   box-sizing: border-box;
 }
 
-.c7 {
+.c6 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -2612,16 +2326,16 @@ Array [
   flex: 1;
 }
 
-.c7 > * {
+.c6 > * {
   padding-left: 4px;
   padding-right: 4px;
 }
 
-.c7 > *:not(:first-child) {
+.c6 > *:not(:first-child) {
   padding-top: 0;
 }
 
-.c6 {
+.c5 {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -2635,7 +2349,7 @@ Array [
   display: block;
 }
 
-.c5 {
+.c4 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: inherit;
   margin: 0;
@@ -2644,7 +2358,7 @@ Array [
   line-height: 1.4285714285714286;
 }
 
-.c11 {
+.c10 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
   margin: 0;
@@ -2653,7 +2367,7 @@ Array [
   line-height: 1.4285714285714286;
 }
 
-.c10 {
+.c9 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #0046FF;
   margin: 0;
@@ -2662,7 +2376,7 @@ Array [
   line-height: 1.4285714285714286;
 }
 
-.c4 {
+.c3 {
   font-family: inherit;
   font-size: 100%;
   line-height: 1.15;
@@ -2691,29 +2405,29 @@ Array [
   cursor: pointer;
 }
 
-.c4,
-.c4[type='button'],
-.c4[type='reset'],
-.c4[type='submit'] {
+.c3,
+.c3[type='button'],
+.c3[type='reset'],
+.c3[type='submit'] {
   -webkit-appearance: button;
 }
 
-.c4::-moz-focus-inner,
-.c4[type='button']::-moz-focus-inner,
-.c4[type='reset']::-moz-focus-inner,
-.c4[type='submit']::-moz-focus-inner {
+.c3::-moz-focus-inner,
+.c3[type='button']::-moz-focus-inner,
+.c3[type='reset']::-moz-focus-inner,
+.c3[type='submit']::-moz-focus-inner {
   border-style: none;
   padding: 0;
 }
 
-.c4:-moz-focusring,
-.c4[type='button']:-moz-focusring,
-.c4[type='reset']:-moz-focusring,
-.c4[type='submit']:-moz-focusring {
+.c3:-moz-focusring,
+.c3[type='button']:-moz-focusring,
+.c3[type='reset']:-moz-focusring,
+.c3[type='submit']:-moz-focusring {
   outline: 1px dotted ButtonText;
 }
 
-.c9 {
+.c8 {
   font-family: inherit;
   font-size: 100%;
   line-height: 1.15;
@@ -2742,25 +2456,25 @@ Array [
   cursor: not-allowed;
 }
 
-.c9,
-.c9[type='button'],
-.c9[type='reset'],
-.c9[type='submit'] {
+.c8,
+.c8[type='button'],
+.c8[type='reset'],
+.c8[type='submit'] {
   -webkit-appearance: button;
 }
 
-.c9::-moz-focus-inner,
-.c9[type='button']::-moz-focus-inner,
-.c9[type='reset']::-moz-focus-inner,
-.c9[type='submit']::-moz-focus-inner {
+.c8::-moz-focus-inner,
+.c8[type='button']::-moz-focus-inner,
+.c8[type='reset']::-moz-focus-inner,
+.c8[type='submit']::-moz-focus-inner {
   border-style: none;
   padding: 0;
 }
 
-.c9:-moz-focusring,
-.c9[type='button']:-moz-focusring,
-.c9[type='reset']:-moz-focusring,
-.c9[type='submit']:-moz-focusring {
+.c8:-moz-focusring,
+.c8[type='button']:-moz-focusring,
+.c8[type='reset']:-moz-focusring,
+.c8[type='submit']:-moz-focusring {
   outline: 1px dotted ButtonText;
 }
 
@@ -2784,52 +2498,46 @@ Array [
     <div
       className="c1 c2"
     >
-      <div
-        className="c3"
+      <button
+        className="NormalizedButton__Button-ey7f5x-0 c3"
+        onClick={[Function]}
+        type="button"
       >
-        <button
-          className="NormalizedButton__Button-ey7f5x-0 c4"
-          id="currentPage"
-          onClick={[Function]}
-          type="button"
+        <span
+          className="c4"
         >
-          <span
+          <svg
+            aria-hidden="true"
             className="c5"
+            focusable="false"
+            preserveAspectRatio="xMidYMid meet"
+            role="presentation"
+            viewBox="0 0 24 24"
           >
-            <svg
-              aria-hidden="true"
-              className="c6"
-              focusable="false"
-              preserveAspectRatio="xMidYMid meet"
-              role="presentation"
-              viewBox="0 0 24 24"
-            >
-              <polygon
-                points="19.969 4 24 8.027 12 20 0 8.027 4.031 4 12 11.952"
-                transform="rotate(90 12 12)"
-              />
-            </svg>
-          </span>
-        </button>
-      </div>
+            <polygon
+              points="19.969 4 24 8.027 12 20 0 8.027 4.031 4 12 11.952"
+              transform="rotate(90 12 12)"
+            />
+          </svg>
+        </span>
+      </button>
       <div
-        className="c7"
+        className="c6"
       >
         <div
-          className="c8"
+          className="c7"
         >
           <button
-            className="NormalizedButton__Button-ey7f5x-0 c9"
+            className="NormalizedButton__Button-ey7f5x-0 c8"
             disabled={true}
-            id="currentPage"
             onClick={[Function]}
             type="button"
           >
             <span
-              className="c5"
+              className="c4"
             >
               <span
-                className="c10"
+                className="c9"
               >
                 1
               </span>
@@ -2837,20 +2545,19 @@ Array [
           </button>
         </div>
         <div
-          className="c8"
+          className="c7"
         >
           <button
-            className="NormalizedButton__Button-ey7f5x-0 c4"
+            className="NormalizedButton__Button-ey7f5x-0 c3"
             disabled={false}
-            id="currentPage"
             onClick={[Function]}
             type="button"
           >
             <span
-              className="c5"
+              className="c4"
             >
               <span
-                className="c11"
+                className="c10"
               >
                 2
               </span>
@@ -2858,20 +2565,19 @@ Array [
           </button>
         </div>
         <div
-          className="c8"
+          className="c7"
         >
           <button
-            className="NormalizedButton__Button-ey7f5x-0 c4"
+            className="NormalizedButton__Button-ey7f5x-0 c3"
             disabled={false}
-            id="currentPage"
             onClick={[Function]}
             type="button"
           >
             <span
-              className="c5"
+              className="c4"
             >
               <span
-                className="c11"
+                className="c10"
               >
                 3
               </span>
@@ -2879,29 +2585,28 @@ Array [
           </button>
         </div>
         <div
-          className="c3"
+          className="c11"
         >
           <span
-            className="c11"
+            className="c10"
           >
             ...
           </span>
         </div>
         <div
-          className="c8"
+          className="c7"
         >
           <button
-            className="NormalizedButton__Button-ey7f5x-0 c4"
+            className="NormalizedButton__Button-ey7f5x-0 c3"
             disabled={false}
-            id="currentPage"
             onClick={[Function]}
             type="button"
           >
             <span
-              className="c5"
+              className="c4"
             >
               <span
-                className="c11"
+                className="c10"
               >
                 999
               </span>
@@ -2909,34 +2614,29 @@ Array [
           </button>
         </div>
       </div>
-      <div
-        className="c3"
+      <button
+        className="NormalizedButton__Button-ey7f5x-0 c3"
+        onClick={[Function]}
+        type="button"
       >
-        <button
-          className="NormalizedButton__Button-ey7f5x-0 c4"
-          id="currentPage"
-          onClick={[Function]}
-          type="button"
+        <span
+          className="c4"
         >
-          <span
+          <svg
+            aria-hidden="true"
             className="c5"
+            focusable="false"
+            preserveAspectRatio="xMidYMid meet"
+            role="presentation"
+            viewBox="0 0 24 24"
           >
-            <svg
-              aria-hidden="true"
-              className="c6"
-              focusable="false"
-              preserveAspectRatio="xMidYMid meet"
-              role="presentation"
-              viewBox="0 0 24 24"
-            >
-              <polygon
-                points="19.969 4 24 8.027 12 20 0 8.027 4.031 4 12 11.952"
-                transform="rotate(-90 12 12)"
-              />
-            </svg>
-          </span>
-        </button>
-      </div>
+            <polygon
+              points="19.969 4 24 8.027 12 20 0 8.027 4.031 4 12 11.952"
+              transform="rotate(-90 12 12)"
+            />
+          </svg>
+        </span>
+      </button>
     </div>
   </div>,
 ]
@@ -2964,7 +2664,7 @@ Array [
   align-items: center;
 }
 
-.c4 {
+.c6 {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -2978,193 +2678,16 @@ Array [
   display: block;
 }
 
-.c5 {
+.c7 {
   -webkit-transform: rotate(90deg);
   -ms-transform: rotate(90deg);
   transform: rotate(90deg);
 }
 
-.c6 {
+.c8 {
   -webkit-transform: rotate(270deg);
   -ms-transform: rotate(270deg);
   transform: rotate(270deg);
-}
-
-.c3 {
-  font-family: inherit;
-  font-size: 100%;
-  line-height: 1.15;
-  margin: 0;
-  overflow: visible;
-  text-transform: none;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  height: 40px;
-  width: 40px;
-  border: none;
-  padding: 0;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  background-color: transparent;
-  outline: none;
-}
-
-.c3,
-.c3[type='button'],
-.c3[type='reset'],
-.c3[type='submit'] {
-  -webkit-appearance: button;
-}
-
-.c3::-moz-focus-inner,
-.c3[type='button']::-moz-focus-inner,
-.c3[type='reset']::-moz-focus-inner,
-.c3[type='submit']::-moz-focus-inner {
-  border-style: none;
-  padding: 0;
-}
-
-.c3:-moz-focusring,
-.c3[type='button']:-moz-focusring,
-.c3[type='reset']:-moz-focusring,
-.c3[type='submit']:-moz-focusring {
-  outline: 1px dotted ButtonText;
-}
-
-@media not all and (max-width:975px) {
-  .c0 {
-    display: none;
-  }
-}
-
-@media not all and (min-width:976px) {
-
-}
-
-<div
-    className="c0"
-  >
-    <div
-      className="c1"
-    >
-      <div
-        className="c2"
-      >
-        <button
-          className="NormalizedButton__Button-ey7f5x-0 c3"
-          href="#"
-          onClick={[Function]}
-        >
-          <svg
-            aria-hidden="true"
-            className="c4 c5"
-            direction="left"
-            focusable="false"
-            preserveAspectRatio="xMidYMid meet"
-            role="presentation"
-            viewBox="0 0 16 16"
-          >
-            <polygon
-              points="14.620 3.580, 16.000 5.020, 8.000 12.730, 0.000 5.030, 1.400 3.580, 8.000 9.96"
-            />
-          </svg>
-        </button>
-      </div>
-      <div
-        className="c2"
-      >
-        <button
-          className="NormalizedButton__Button-ey7f5x-0 c3"
-          href="#"
-          onClick={[Function]}
-        >
-          <svg
-            aria-hidden="true"
-            className="c4 c6"
-            direction="right"
-            focusable="false"
-            preserveAspectRatio="xMidYMid meet"
-            role="presentation"
-            viewBox="0 0 16 16"
-          >
-            <polygon
-              points="14.620 3.580, 16.000 5.020, 8.000 12.730, 0.000 5.030, 1.400 3.580, 8.000 9.96"
-            />
-          </svg>
-        </button>
-      </div>
-    </div>
-  </div>,
-  .c1 {
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.c3 {
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.c7 {
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  margin-left: -4px;
-  margin-right: -4px;
-  -webkit-flex: 1;
-  -ms-flex: 1;
-  flex: 1;
-}
-
-.c7 > * {
-  padding-left: 4px;
-  padding-right: 4px;
-}
-
-.c7 > *:not(:first-child) {
-  padding-top: 0;
-}
-
-.c8 {
-  box-sizing: border-box;
-}
-
-.c6 {
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  width: 8px;
-  height: 8px;
-  fill: #282823;
-  -webkit-flex-shrink: 0;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
-  display: block;
 }
 
 .c5 {
@@ -3176,25 +2699,7 @@ Array [
   line-height: 1.4285714285714286;
 }
 
-.c10 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #0046FF;
-  margin: 0;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
-}
-
-.c11 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #282823;
-  margin: 0;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
-}
-
-.c4 {
+.c3 {
   font-family: inherit;
   font-size: 100%;
   line-height: 1.15;
@@ -3223,29 +2728,264 @@ Array [
   cursor: pointer;
 }
 
-.c4,
-.c4[type='button'],
-.c4[type='reset'],
-.c4[type='submit'] {
+.c3,
+.c3[type='button'],
+.c3[type='reset'],
+.c3[type='submit'] {
   -webkit-appearance: button;
 }
 
-.c4::-moz-focus-inner,
-.c4[type='button']::-moz-focus-inner,
-.c4[type='reset']::-moz-focus-inner,
-.c4[type='submit']::-moz-focus-inner {
+.c3::-moz-focus-inner,
+.c3[type='button']::-moz-focus-inner,
+.c3[type='reset']::-moz-focus-inner,
+.c3[type='submit']::-moz-focus-inner {
   border-style: none;
   padding: 0;
 }
 
-.c4:-moz-focusring,
-.c4[type='button']:-moz-focusring,
-.c4[type='reset']:-moz-focusring,
-.c4[type='submit']:-moz-focusring {
+.c3:-moz-focusring,
+.c3[type='button']:-moz-focusring,
+.c3[type='reset']:-moz-focusring,
+.c3[type='submit']:-moz-focusring {
   outline: 1px dotted ButtonText;
 }
 
+.c4 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 40px;
+  width: 40px;
+  border: none;
+  padding: 0;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: transparent;
+  outline: none;
+}
+
+@media not all and (max-width:975px) {
+  .c0 {
+    display: none;
+  }
+}
+
+@media not all and (min-width:976px) {
+
+}
+
+<div
+    className="c0"
+  >
+    <div
+      className="c1"
+    >
+      <div
+        className="c2"
+      >
+        <button
+          className="NormalizedButton__Button-ey7f5x-0 c3 c4"
+          onClick={[Function]}
+          type="button"
+        >
+          <span
+            className="c5"
+          >
+            <svg
+              aria-hidden="true"
+              className="c6 c7"
+              direction="left"
+              focusable="false"
+              preserveAspectRatio="xMidYMid meet"
+              role="presentation"
+              viewBox="0 0 16 16"
+            >
+              <polygon
+                points="14.620 3.580, 16.000 5.020, 8.000 12.730, 0.000 5.030, 1.400 3.580, 8.000 9.96"
+              />
+            </svg>
+          </span>
+        </button>
+      </div>
+      <div
+        className="c2"
+      >
+        <button
+          className="NormalizedButton__Button-ey7f5x-0 c3 c4"
+          onClick={[Function]}
+          type="button"
+        >
+          <span
+            className="c5"
+          >
+            <svg
+              aria-hidden="true"
+              className="c6 c8"
+              direction="right"
+              focusable="false"
+              preserveAspectRatio="xMidYMid meet"
+              role="presentation"
+              viewBox="0 0 16 16"
+            >
+              <polygon
+                points="14.620 3.580, 16.000 5.020, 8.000 12.730, 0.000 5.030, 1.400 3.580, 8.000 9.96"
+              />
+            </svg>
+          </span>
+        </button>
+      </div>
+    </div>
+  </div>,
+  .c1 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.c11 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c6 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin-left: -4px;
+  margin-right: -4px;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+
+.c6 > * {
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+.c6 > *:not(:first-child) {
+  padding-top: 0;
+}
+
+.c7 {
+  box-sizing: border-box;
+}
+
+.c5 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 8px;
+  height: 8px;
+  fill: #282823;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
+}
+
+.c4 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: inherit;
+  margin: 0;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
 .c9 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #0046FF;
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c10 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c3 {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  overflow: visible;
+  text-transform: none;
+  position: relative;
+  box-sizing: border-box;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  padding: 0;
+  background-color: transparent;
+  color: #282823;
+  border: none;
+  border-radius: 0;
+  cursor: pointer;
+}
+
+.c3,
+.c3[type='button'],
+.c3[type='reset'],
+.c3[type='submit'] {
+  -webkit-appearance: button;
+}
+
+.c3::-moz-focus-inner,
+.c3[type='button']::-moz-focus-inner,
+.c3[type='reset']::-moz-focus-inner,
+.c3[type='submit']::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+.c3:-moz-focusring,
+.c3[type='button']:-moz-focusring,
+.c3[type='reset']:-moz-focusring,
+.c3[type='submit']:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+.c8 {
   font-family: inherit;
   font-size: 100%;
   line-height: 1.15;
@@ -3274,25 +3014,25 @@ Array [
   cursor: not-allowed;
 }
 
-.c9,
-.c9[type='button'],
-.c9[type='reset'],
-.c9[type='submit'] {
+.c8,
+.c8[type='button'],
+.c8[type='reset'],
+.c8[type='submit'] {
   -webkit-appearance: button;
 }
 
-.c9::-moz-focus-inner,
-.c9[type='button']::-moz-focus-inner,
-.c9[type='reset']::-moz-focus-inner,
-.c9[type='submit']::-moz-focus-inner {
+.c8::-moz-focus-inner,
+.c8[type='button']::-moz-focus-inner,
+.c8[type='reset']::-moz-focus-inner,
+.c8[type='submit']::-moz-focus-inner {
   border-style: none;
   padding: 0;
 }
 
-.c9:-moz-focusring,
-.c9[type='button']:-moz-focusring,
-.c9[type='reset']:-moz-focusring,
-.c9[type='submit']:-moz-focusring {
+.c8:-moz-focusring,
+.c8[type='button']:-moz-focusring,
+.c8[type='reset']:-moz-focusring,
+.c8[type='submit']:-moz-focusring {
   outline: 1px dotted ButtonText;
 }
 
@@ -3316,52 +3056,46 @@ Array [
     <div
       className="c1 c2"
     >
-      <div
-        className="c3"
+      <button
+        className="NormalizedButton__Button-ey7f5x-0 c3"
+        onClick={[Function]}
+        type="button"
       >
-        <button
-          className="NormalizedButton__Button-ey7f5x-0 c4"
-          id="currentPage"
-          onClick={[Function]}
-          type="button"
+        <span
+          className="c4"
         >
-          <span
+          <svg
+            aria-hidden="true"
             className="c5"
+            focusable="false"
+            preserveAspectRatio="xMidYMid meet"
+            role="presentation"
+            viewBox="0 0 24 24"
           >
-            <svg
-              aria-hidden="true"
-              className="c6"
-              focusable="false"
-              preserveAspectRatio="xMidYMid meet"
-              role="presentation"
-              viewBox="0 0 24 24"
-            >
-              <polygon
-                points="19.969 4 24 8.027 12 20 0 8.027 4.031 4 12 11.952"
-                transform="rotate(90 12 12)"
-              />
-            </svg>
-          </span>
-        </button>
-      </div>
+            <polygon
+              points="19.969 4 24 8.027 12 20 0 8.027 4.031 4 12 11.952"
+              transform="rotate(90 12 12)"
+            />
+          </svg>
+        </span>
+      </button>
       <div
-        className="c7"
+        className="c6"
       >
         <div
-          className="c8"
+          className="c7"
         >
           <button
-            className="NormalizedButton__Button-ey7f5x-0 c9"
+            className="NormalizedButton__Button-ey7f5x-0 c8"
             disabled={true}
-            id="currentPage"
             onClick={[Function]}
             type="button"
           >
             <span
-              className="c5"
+              className="c4"
             >
               <span
-                className="c10"
+                className="c9"
               >
                 1
               </span>
@@ -3369,20 +3103,19 @@ Array [
           </button>
         </div>
         <div
-          className="c8"
+          className="c7"
         >
           <button
-            className="NormalizedButton__Button-ey7f5x-0 c4"
+            className="NormalizedButton__Button-ey7f5x-0 c3"
             disabled={false}
-            id="currentPage"
             onClick={[Function]}
             type="button"
           >
             <span
-              className="c5"
+              className="c4"
             >
               <span
-                className="c11"
+                className="c10"
               >
                 2
               </span>
@@ -3390,20 +3123,19 @@ Array [
           </button>
         </div>
         <div
-          className="c8"
+          className="c7"
         >
           <button
-            className="NormalizedButton__Button-ey7f5x-0 c4"
+            className="NormalizedButton__Button-ey7f5x-0 c3"
             disabled={false}
-            id="currentPage"
             onClick={[Function]}
             type="button"
           >
             <span
-              className="c5"
+              className="c4"
             >
               <span
-                className="c11"
+                className="c10"
               >
                 3
               </span>
@@ -3411,29 +3143,28 @@ Array [
           </button>
         </div>
         <div
-          className="c3"
+          className="c11"
         >
           <span
-            className="c11"
+            className="c10"
           >
             ...
           </span>
         </div>
         <div
-          className="c8"
+          className="c7"
         >
           <button
-            className="NormalizedButton__Button-ey7f5x-0 c4"
+            className="NormalizedButton__Button-ey7f5x-0 c3"
             disabled={false}
-            id="currentPage"
             onClick={[Function]}
             type="button"
           >
             <span
-              className="c5"
+              className="c4"
             >
               <span
-                className="c11"
+                className="c10"
               >
                 10
               </span>
@@ -3441,34 +3172,29 @@ Array [
           </button>
         </div>
       </div>
-      <div
-        className="c3"
+      <button
+        className="NormalizedButton__Button-ey7f5x-0 c3"
+        onClick={[Function]}
+        type="button"
       >
-        <button
-          className="NormalizedButton__Button-ey7f5x-0 c4"
-          id="currentPage"
-          onClick={[Function]}
-          type="button"
+        <span
+          className="c4"
         >
-          <span
+          <svg
+            aria-hidden="true"
             className="c5"
+            focusable="false"
+            preserveAspectRatio="xMidYMid meet"
+            role="presentation"
+            viewBox="0 0 24 24"
           >
-            <svg
-              aria-hidden="true"
-              className="c6"
-              focusable="false"
-              preserveAspectRatio="xMidYMid meet"
-              role="presentation"
-              viewBox="0 0 24 24"
-            >
-              <polygon
-                points="19.969 4 24 8.027 12 20 0 8.027 4.031 4 12 11.952"
-                transform="rotate(-90 12 12)"
-              />
-            </svg>
-          </span>
-        </button>
-      </div>
+            <polygon
+              points="19.969 4 24 8.027 12 20 0 8.027 4.031 4 12 11.952"
+              transform="rotate(-90 12 12)"
+            />
+          </svg>
+        </span>
+      </button>
     </div>
   </div>,
 ]
@@ -3496,7 +3222,7 @@ Array [
   align-items: center;
 }
 
-.c8 {
+.c7 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -3508,11 +3234,11 @@ Array [
   justify-content: center;
 }
 
-.c10 {
+.c9 {
   box-sizing: border-box;
 }
 
-.c7 {
+.c6 {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -3527,7 +3253,7 @@ Array [
   vertical-align: middle;
 }
 
-.c6 {
+.c5 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: inherit;
   margin: 0;
@@ -3536,7 +3262,7 @@ Array [
   line-height: 1.4285714285714286;
 }
 
-.c12 {
+.c11 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #FFFFFF;
   margin: 0;
@@ -3545,7 +3271,7 @@ Array [
   line-height: 1.5;
 }
 
-.c14 {
+.c13 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
   margin: 0;
@@ -3554,7 +3280,7 @@ Array [
   line-height: 1.5;
 }
 
-.c16 {
+.c15 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
   margin: 0;
@@ -3584,10 +3310,9 @@ Array [
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  padding: 4px 12px;
-  min-height: 32px;
-  background-color: #0046FF;
-  color: #FFFFFF;
+  padding: 0;
+  background-color: transparent;
+  color: #282823;
   border: none;
   border-radius: 0;
   cursor: pointer;
@@ -3615,88 +3340,6 @@ Array [
   outline: 1px dotted ButtonText;
 }
 
-.c3::before {
-  content: '';
-  display: block;
-  position: absolute;
-  border: 2px solid transparent;
-  top: 0;
-  left: 0;
-  width: calc(100% - 4px);
-  height: calc(100% - 4px);
-}
-
-.c3:hover {
-  background-color: hsl(223.5,100%,45%);
-}
-
-.c3:active {
-  background-color: hsl(223.5,100%,40%);
-}
-
-.c13 {
-  font-family: inherit;
-  font-size: 100%;
-  line-height: 1.15;
-  margin: 0;
-  overflow: visible;
-  text-transform: none;
-  position: relative;
-  box-sizing: border-box;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  padding: 4px 12px;
-  min-height: 32px;
-  background-color: #EBEBE8;
-  color: #A0A09B;
-  border: none;
-  border-radius: 0;
-  cursor: not-allowed;
-}
-
-.c13,
-.c13[type='button'],
-.c13[type='reset'],
-.c13[type='submit'] {
-  -webkit-appearance: button;
-}
-
-.c13::-moz-focus-inner,
-.c13[type='button']::-moz-focus-inner,
-.c13[type='reset']::-moz-focus-inner,
-.c13[type='submit']::-moz-focus-inner {
-  border-style: none;
-  padding: 0;
-}
-
-.c13:-moz-focusring,
-.c13[type='button']:-moz-focusring,
-.c13[type='reset']:-moz-focusring,
-.c13[type='submit']:-moz-focusring {
-  outline: 1px dotted ButtonText;
-}
-
-.c13::before {
-  content: '';
-  display: block;
-  position: absolute;
-  border: 2px solid transparent;
-  top: 0;
-  left: 0;
-  width: calc(100% - 4px);
-  height: calc(100% - 4px);
-}
-
 .c4 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -3716,19 +3359,11 @@ Array [
   align-items: center;
   background-color: transparent;
   outline: none;
-}
-
-.c5 {
   box-sizing: border-box;
   border: 1px solid #BCBCB6;
 }
 
-.c11 {
-  background-color: #0046FF;
-  cursor: default;
-}
-
-.c15 {
+.c10 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -3747,10 +3382,51 @@ Array [
   align-items: center;
   background-color: transparent;
   outline: none;
-  width: 20px;
+  background-color: #0046FF;
+  cursor: default;
 }
 
-.c9 {
+.c12 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 40px;
+  width: 40px;
+  border: none;
+  padding: 0;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: transparent;
+  outline: none;
+}
+
+.c14 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 40px;
+  width: 20px;
+  border: none;
+  padding: 0;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c8 {
   width: 240px;
 }
 
@@ -3774,136 +3450,113 @@ Array [
         className="c2"
       >
         <button
-          className="NormalizedButton__Button-ey7f5x-0 c3 c4 c5"
-          disabled={false}
+          className="NormalizedButton__Button-ey7f5x-0 c3 c4"
           onClick={[Function]}
           type="button"
         >
-          <span>
-            <span
+          <span
+            className="c5"
+          >
+            <svg
+              aria-hidden="true"
               className="c6"
+              focusable="false"
+              preserveAspectRatio="xMidYMid meet"
+              role="presentation"
+              viewBox="0 0 24 24"
             >
-              <svg
-                aria-hidden="true"
-                className="c7"
-                focusable="false"
-                preserveAspectRatio="xMidYMid meet"
-                role="presentation"
-                viewBox="0 0 24 24"
-              >
-                <polygon
-                  points="19.969 4 24 8.027 12 20 0 8.027 4.031 4 12 11.952"
-                  transform="rotate(90 12 12)"
-                />
-              </svg>
-            </span>
+              <polygon
+                points="19.969 4 24 8.027 12 20 0 8.027 4.031 4 12 11.952"
+                transform="rotate(90 12 12)"
+              />
+            </svg>
           </span>
         </button>
       </div>
       <div
-        className="c8 c9"
+        className="c7 c8"
       >
         <div
-          className="c10"
+          className="c9"
         >
           <button
-            className="NormalizedButton__Button-ey7f5x-0 c3 c4 c11"
-            disabled={false}
+            className="NormalizedButton__Button-ey7f5x-0 c3 c10"
             onClick={[Function]}
             type="button"
           >
-            <span>
-              <span
-                className="c6"
-              >
-                <span
-                  className="c12"
-                >
-                  1
-                </span>
-              </span>
-            </span>
-          </button>
-        </div>
-        <div
-          className="c10"
-        >
-          <button
-            className="NormalizedButton__Button-ey7f5x-0 c13 c4 "
-            disabled={true}
-            onClick={[Function]}
-            type="button"
-          >
-            <span>
-              <span
-                className="c6"
-              >
-                <span
-                  className="c14"
-                >
-                  2
-                </span>
-              </span>
-            </span>
-          </button>
-        </div>
-        <div
-          className="c10"
-        >
-          <button
-            className="NormalizedButton__Button-ey7f5x-0 c13 c4 "
-            disabled={true}
-            onClick={[Function]}
-            type="button"
-          >
-            <span>
-              <span
-                className="c6"
-              >
-                <span
-                  className="c14"
-                >
-                  3
-                </span>
-              </span>
-            </span>
-          </button>
-        </div>
-        <button
-          className="NormalizedButton__Button-ey7f5x-0 c3 c15"
-          onClick={[Function]}
-          type="button"
-        >
-          <span>
             <span
-              className="c6"
+              className="c5"
             >
               <span
-                className="c16"
+                className="c11"
               >
-                ...
+                1
               </span>
             </span>
-          </span>
-        </button>
+          </button>
+        </div>
         <div
-          className="c10"
+          className="c9"
         >
           <button
-            className="NormalizedButton__Button-ey7f5x-0 c13 c4 "
-            disabled={true}
+            className="NormalizedButton__Button-ey7f5x-0 c3 c12"
             onClick={[Function]}
             type="button"
           >
-            <span>
+            <span
+              className="c5"
+            >
               <span
-                className="c6"
+                className="c13"
               >
-                <span
-                  className="c14"
-                >
-                  10
-                </span>
+                2
+              </span>
+            </span>
+          </button>
+        </div>
+        <div
+          className="c9"
+        >
+          <button
+            className="NormalizedButton__Button-ey7f5x-0 c3 c12"
+            onClick={[Function]}
+            type="button"
+          >
+            <span
+              className="c5"
+            >
+              <span
+                className="c13"
+              >
+                3
+              </span>
+            </span>
+          </button>
+        </div>
+        <div
+          className="c14"
+        >
+          <span
+            className="c15"
+          >
+            ...
+          </span>
+        </div>
+        <div
+          className="c9"
+        >
+          <button
+            className="NormalizedButton__Button-ey7f5x-0 c3 c12"
+            onClick={[Function]}
+            type="button"
+          >
+            <span
+              className="c5"
+            >
+              <span
+                className="c13"
+              >
+                10
               </span>
             </span>
           </button>
@@ -3913,29 +3566,26 @@ Array [
         className="c2"
       >
         <button
-          className="NormalizedButton__Button-ey7f5x-0 c3 c4 c5"
-          disabled={false}
+          className="NormalizedButton__Button-ey7f5x-0 c3 c4"
           onClick={[Function]}
           type="button"
         >
-          <span>
-            <span
+          <span
+            className="c5"
+          >
+            <svg
+              aria-hidden="true"
               className="c6"
+              focusable="false"
+              preserveAspectRatio="xMidYMid meet"
+              role="presentation"
+              viewBox="0 0 24 24"
             >
-              <svg
-                aria-hidden="true"
-                className="c7"
-                focusable="false"
-                preserveAspectRatio="xMidYMid meet"
-                role="presentation"
-                viewBox="0 0 24 24"
-              >
-                <polygon
-                  points="19.969 4 24 8.027 12 20 0 8.027 4.031 4 12 11.952"
-                  transform="rotate(-90 12 12)"
-                />
-              </svg>
-            </span>
+              <polygon
+                points="19.969 4 24 8.027 12 20 0 8.027 4.031 4 12 11.952"
+                transform="rotate(-90 12 12)"
+              />
+            </svg>
           </span>
         </button>
       </div>
@@ -3949,7 +3599,7 @@ Array [
   display: flex;
 }
 
-.c3 {
+.c11 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -3961,11 +3611,11 @@ Array [
   align-items: center;
 }
 
-.c8 {
+.c7 {
   box-sizing: border-box;
 }
 
-.c7 {
+.c6 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -3982,16 +3632,16 @@ Array [
   flex: 1;
 }
 
-.c7 > * {
+.c6 > * {
   padding-left: 4px;
   padding-right: 4px;
 }
 
-.c7 > *:not(:first-child) {
+.c6 > *:not(:first-child) {
   padding-top: 0;
 }
 
-.c6 {
+.c5 {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -4005,7 +3655,7 @@ Array [
   display: block;
 }
 
-.c5 {
+.c4 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: inherit;
   margin: 0;
@@ -4014,7 +3664,7 @@ Array [
   line-height: 1.4285714285714286;
 }
 
-.c11 {
+.c10 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
   margin: 0;
@@ -4023,7 +3673,7 @@ Array [
   line-height: 1.4285714285714286;
 }
 
-.c10 {
+.c9 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #0046FF;
   margin: 0;
@@ -4032,7 +3682,7 @@ Array [
   line-height: 1.4285714285714286;
 }
 
-.c4 {
+.c3 {
   font-family: inherit;
   font-size: 100%;
   line-height: 1.15;
@@ -4061,29 +3711,29 @@ Array [
   cursor: pointer;
 }
 
-.c4,
-.c4[type='button'],
-.c4[type='reset'],
-.c4[type='submit'] {
+.c3,
+.c3[type='button'],
+.c3[type='reset'],
+.c3[type='submit'] {
   -webkit-appearance: button;
 }
 
-.c4::-moz-focus-inner,
-.c4[type='button']::-moz-focus-inner,
-.c4[type='reset']::-moz-focus-inner,
-.c4[type='submit']::-moz-focus-inner {
+.c3::-moz-focus-inner,
+.c3[type='button']::-moz-focus-inner,
+.c3[type='reset']::-moz-focus-inner,
+.c3[type='submit']::-moz-focus-inner {
   border-style: none;
   padding: 0;
 }
 
-.c4:-moz-focusring,
-.c4[type='button']:-moz-focusring,
-.c4[type='reset']:-moz-focusring,
-.c4[type='submit']:-moz-focusring {
+.c3:-moz-focusring,
+.c3[type='button']:-moz-focusring,
+.c3[type='reset']:-moz-focusring,
+.c3[type='submit']:-moz-focusring {
   outline: 1px dotted ButtonText;
 }
 
-.c9 {
+.c8 {
   font-family: inherit;
   font-size: 100%;
   line-height: 1.15;
@@ -4112,25 +3762,25 @@ Array [
   cursor: not-allowed;
 }
 
-.c9,
-.c9[type='button'],
-.c9[type='reset'],
-.c9[type='submit'] {
+.c8,
+.c8[type='button'],
+.c8[type='reset'],
+.c8[type='submit'] {
   -webkit-appearance: button;
 }
 
-.c9::-moz-focus-inner,
-.c9[type='button']::-moz-focus-inner,
-.c9[type='reset']::-moz-focus-inner,
-.c9[type='submit']::-moz-focus-inner {
+.c8::-moz-focus-inner,
+.c8[type='button']::-moz-focus-inner,
+.c8[type='reset']::-moz-focus-inner,
+.c8[type='submit']::-moz-focus-inner {
   border-style: none;
   padding: 0;
 }
 
-.c9:-moz-focusring,
-.c9[type='button']:-moz-focusring,
-.c9[type='reset']:-moz-focusring,
-.c9[type='submit']:-moz-focusring {
+.c8:-moz-focusring,
+.c8[type='button']:-moz-focusring,
+.c8[type='reset']:-moz-focusring,
+.c8[type='submit']:-moz-focusring {
   outline: 1px dotted ButtonText;
 }
 
@@ -4154,52 +3804,46 @@ Array [
     <div
       className="c1 c2"
     >
-      <div
-        className="c3"
+      <button
+        className="NormalizedButton__Button-ey7f5x-0 c3"
+        onClick={[Function]}
+        type="button"
       >
-        <button
-          className="NormalizedButton__Button-ey7f5x-0 c4"
-          id="currentPage"
-          onClick={[Function]}
-          type="button"
+        <span
+          className="c4"
         >
-          <span
+          <svg
+            aria-hidden="true"
             className="c5"
+            focusable="false"
+            preserveAspectRatio="xMidYMid meet"
+            role="presentation"
+            viewBox="0 0 24 24"
           >
-            <svg
-              aria-hidden="true"
-              className="c6"
-              focusable="false"
-              preserveAspectRatio="xMidYMid meet"
-              role="presentation"
-              viewBox="0 0 24 24"
-            >
-              <polygon
-                points="19.969 4 24 8.027 12 20 0 8.027 4.031 4 12 11.952"
-                transform="rotate(90 12 12)"
-              />
-            </svg>
-          </span>
-        </button>
-      </div>
+            <polygon
+              points="19.969 4 24 8.027 12 20 0 8.027 4.031 4 12 11.952"
+              transform="rotate(90 12 12)"
+            />
+          </svg>
+        </span>
+      </button>
       <div
-        className="c7"
+        className="c6"
       >
         <div
-          className="c8"
+          className="c7"
         >
           <button
-            className="NormalizedButton__Button-ey7f5x-0 c9"
+            className="NormalizedButton__Button-ey7f5x-0 c8"
             disabled={true}
-            id="currentPage"
             onClick={[Function]}
             type="button"
           >
             <span
-              className="c5"
+              className="c4"
             >
               <span
-                className="c10"
+                className="c9"
               >
                 1
               </span>
@@ -4207,20 +3851,19 @@ Array [
           </button>
         </div>
         <div
-          className="c8"
+          className="c7"
         >
           <button
-            className="NormalizedButton__Button-ey7f5x-0 c4"
+            className="NormalizedButton__Button-ey7f5x-0 c3"
             disabled={false}
-            id="currentPage"
             onClick={[Function]}
             type="button"
           >
             <span
-              className="c5"
+              className="c4"
             >
               <span
-                className="c11"
+                className="c10"
               >
                 2
               </span>
@@ -4228,20 +3871,19 @@ Array [
           </button>
         </div>
         <div
-          className="c8"
+          className="c7"
         >
           <button
-            className="NormalizedButton__Button-ey7f5x-0 c4"
+            className="NormalizedButton__Button-ey7f5x-0 c3"
             disabled={false}
-            id="currentPage"
             onClick={[Function]}
             type="button"
           >
             <span
-              className="c5"
+              className="c4"
             >
               <span
-                className="c11"
+                className="c10"
               >
                 3
               </span>
@@ -4249,29 +3891,28 @@ Array [
           </button>
         </div>
         <div
-          className="c3"
+          className="c11"
         >
           <span
-            className="c11"
+            className="c10"
           >
             ...
           </span>
         </div>
         <div
-          className="c8"
+          className="c7"
         >
           <button
-            className="NormalizedButton__Button-ey7f5x-0 c4"
+            className="NormalizedButton__Button-ey7f5x-0 c3"
             disabled={false}
-            id="currentPage"
             onClick={[Function]}
             type="button"
           >
             <span
-              className="c5"
+              className="c4"
             >
               <span
-                className="c11"
+                className="c10"
               >
                 10
               </span>
@@ -4279,34 +3920,29 @@ Array [
           </button>
         </div>
       </div>
-      <div
-        className="c3"
+      <button
+        className="NormalizedButton__Button-ey7f5x-0 c3"
+        onClick={[Function]}
+        type="button"
       >
-        <button
-          className="NormalizedButton__Button-ey7f5x-0 c4"
-          id="currentPage"
-          onClick={[Function]}
-          type="button"
+        <span
+          className="c4"
         >
-          <span
+          <svg
+            aria-hidden="true"
             className="c5"
+            focusable="false"
+            preserveAspectRatio="xMidYMid meet"
+            role="presentation"
+            viewBox="0 0 24 24"
           >
-            <svg
-              aria-hidden="true"
-              className="c6"
-              focusable="false"
-              preserveAspectRatio="xMidYMid meet"
-              role="presentation"
-              viewBox="0 0 24 24"
-            >
-              <polygon
-                points="19.969 4 24 8.027 12 20 0 8.027 4.031 4 12 11.952"
-                transform="rotate(-90 12 12)"
-              />
-            </svg>
-          </span>
-        </button>
-      </div>
+            <polygon
+              points="19.969 4 24 8.027 12 20 0 8.027 4.031 4 12 11.952"
+              transform="rotate(-90 12 12)"
+            />
+          </svg>
+        </span>
+      </button>
     </div>
   </div>,
 ]
@@ -4334,7 +3970,7 @@ Array [
   align-items: center;
 }
 
-.c8 {
+.c7 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -4346,11 +3982,11 @@ Array [
   justify-content: center;
 }
 
-.c10 {
+.c9 {
   box-sizing: border-box;
 }
 
-.c7 {
+.c6 {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -4365,7 +4001,7 @@ Array [
   vertical-align: middle;
 }
 
-.c6 {
+.c5 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: inherit;
   margin: 0;
@@ -4374,7 +4010,7 @@ Array [
   line-height: 1.4285714285714286;
 }
 
-.c12 {
+.c11 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #FFFFFF;
   margin: 0;
@@ -4383,7 +4019,7 @@ Array [
   line-height: 1.5;
 }
 
-.c14 {
+.c13 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
   margin: 0;
@@ -4392,7 +4028,7 @@ Array [
   line-height: 1.5;
 }
 
-.c16 {
+.c15 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
   margin: 0;
@@ -4422,10 +4058,9 @@ Array [
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  padding: 4px 12px;
-  min-height: 32px;
-  background-color: #0046FF;
-  color: #FFFFFF;
+  padding: 0;
+  background-color: transparent;
+  color: #282823;
   border: none;
   border-radius: 0;
   cursor: pointer;
@@ -4453,88 +4088,6 @@ Array [
   outline: 1px dotted ButtonText;
 }
 
-.c3::before {
-  content: '';
-  display: block;
-  position: absolute;
-  border: 2px solid transparent;
-  top: 0;
-  left: 0;
-  width: calc(100% - 4px);
-  height: calc(100% - 4px);
-}
-
-.c3:hover {
-  background-color: hsl(223.5,100%,45%);
-}
-
-.c3:active {
-  background-color: hsl(223.5,100%,40%);
-}
-
-.c13 {
-  font-family: inherit;
-  font-size: 100%;
-  line-height: 1.15;
-  margin: 0;
-  overflow: visible;
-  text-transform: none;
-  position: relative;
-  box-sizing: border-box;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  padding: 4px 12px;
-  min-height: 32px;
-  background-color: #EBEBE8;
-  color: #A0A09B;
-  border: none;
-  border-radius: 0;
-  cursor: not-allowed;
-}
-
-.c13,
-.c13[type='button'],
-.c13[type='reset'],
-.c13[type='submit'] {
-  -webkit-appearance: button;
-}
-
-.c13::-moz-focus-inner,
-.c13[type='button']::-moz-focus-inner,
-.c13[type='reset']::-moz-focus-inner,
-.c13[type='submit']::-moz-focus-inner {
-  border-style: none;
-  padding: 0;
-}
-
-.c13:-moz-focusring,
-.c13[type='button']:-moz-focusring,
-.c13[type='reset']:-moz-focusring,
-.c13[type='submit']:-moz-focusring {
-  outline: 1px dotted ButtonText;
-}
-
-.c13::before {
-  content: '';
-  display: block;
-  position: absolute;
-  border: 2px solid transparent;
-  top: 0;
-  left: 0;
-  width: calc(100% - 4px);
-  height: calc(100% - 4px);
-}
-
 .c4 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -4554,19 +4107,11 @@ Array [
   align-items: center;
   background-color: transparent;
   outline: none;
-}
-
-.c5 {
   box-sizing: border-box;
   border: 1px solid #BCBCB6;
 }
 
-.c11 {
-  background-color: #0046FF;
-  cursor: default;
-}
-
-.c15 {
+.c10 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -4585,10 +4130,51 @@ Array [
   align-items: center;
   background-color: transparent;
   outline: none;
-  width: 20px;
+  background-color: #0046FF;
+  cursor: default;
 }
 
-.c9 {
+.c12 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 40px;
+  width: 40px;
+  border: none;
+  padding: 0;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: transparent;
+  outline: none;
+}
+
+.c14 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 40px;
+  width: 20px;
+  border: none;
+  padding: 0;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c8 {
   width: 240px;
 }
 
@@ -4612,136 +4198,113 @@ Array [
         className="c2"
       >
         <button
-          className="NormalizedButton__Button-ey7f5x-0 c3 c4 c5"
-          disabled={false}
+          className="NormalizedButton__Button-ey7f5x-0 c3 c4"
           onClick={[Function]}
           type="button"
         >
-          <span>
-            <span
+          <span
+            className="c5"
+          >
+            <svg
+              aria-hidden="true"
               className="c6"
+              focusable="false"
+              preserveAspectRatio="xMidYMid meet"
+              role="presentation"
+              viewBox="0 0 24 24"
             >
-              <svg
-                aria-hidden="true"
-                className="c7"
-                focusable="false"
-                preserveAspectRatio="xMidYMid meet"
-                role="presentation"
-                viewBox="0 0 24 24"
-              >
-                <polygon
-                  points="19.969 4 24 8.027 12 20 0 8.027 4.031 4 12 11.952"
-                  transform="rotate(90 12 12)"
-                />
-              </svg>
-            </span>
+              <polygon
+                points="19.969 4 24 8.027 12 20 0 8.027 4.031 4 12 11.952"
+                transform="rotate(90 12 12)"
+              />
+            </svg>
           </span>
         </button>
       </div>
       <div
-        className="c8 c9"
+        className="c7 c8"
       >
         <div
-          className="c10"
+          className="c9"
         >
           <button
-            className="NormalizedButton__Button-ey7f5x-0 c3 c4 c11"
-            disabled={false}
+            className="NormalizedButton__Button-ey7f5x-0 c3 c10"
             onClick={[Function]}
             type="button"
           >
-            <span>
-              <span
-                className="c6"
-              >
-                <span
-                  className="c12"
-                >
-                  1
-                </span>
-              </span>
-            </span>
-          </button>
-        </div>
-        <div
-          className="c10"
-        >
-          <button
-            className="NormalizedButton__Button-ey7f5x-0 c13 c4 "
-            disabled={true}
-            onClick={[Function]}
-            type="button"
-          >
-            <span>
-              <span
-                className="c6"
-              >
-                <span
-                  className="c14"
-                >
-                  2
-                </span>
-              </span>
-            </span>
-          </button>
-        </div>
-        <div
-          className="c10"
-        >
-          <button
-            className="NormalizedButton__Button-ey7f5x-0 c13 c4 "
-            disabled={true}
-            onClick={[Function]}
-            type="button"
-          >
-            <span>
-              <span
-                className="c6"
-              >
-                <span
-                  className="c14"
-                >
-                  3
-                </span>
-              </span>
-            </span>
-          </button>
-        </div>
-        <button
-          className="NormalizedButton__Button-ey7f5x-0 c3 c15"
-          onClick={[Function]}
-          type="button"
-        >
-          <span>
             <span
-              className="c6"
+              className="c5"
             >
               <span
-                className="c16"
+                className="c11"
               >
-                ...
+                1
               </span>
             </span>
-          </span>
-        </button>
+          </button>
+        </div>
         <div
-          className="c10"
+          className="c9"
         >
           <button
-            className="NormalizedButton__Button-ey7f5x-0 c13 c4 "
-            disabled={true}
+            className="NormalizedButton__Button-ey7f5x-0 c3 c12"
             onClick={[Function]}
             type="button"
           >
-            <span>
+            <span
+              className="c5"
+            >
               <span
-                className="c6"
+                className="c13"
               >
-                <span
-                  className="c14"
-                >
-                  10
-                </span>
+                2
+              </span>
+            </span>
+          </button>
+        </div>
+        <div
+          className="c9"
+        >
+          <button
+            className="NormalizedButton__Button-ey7f5x-0 c3 c12"
+            onClick={[Function]}
+            type="button"
+          >
+            <span
+              className="c5"
+            >
+              <span
+                className="c13"
+              >
+                3
+              </span>
+            </span>
+          </button>
+        </div>
+        <div
+          className="c14"
+        >
+          <span
+            className="c15"
+          >
+            ...
+          </span>
+        </div>
+        <div
+          className="c9"
+        >
+          <button
+            className="NormalizedButton__Button-ey7f5x-0 c3 c12"
+            onClick={[Function]}
+            type="button"
+          >
+            <span
+              className="c5"
+            >
+              <span
+                className="c13"
+              >
+                10
               </span>
             </span>
           </button>
@@ -4751,29 +4314,26 @@ Array [
         className="c2"
       >
         <button
-          className="NormalizedButton__Button-ey7f5x-0 c3 c4 c5"
-          disabled={false}
+          className="NormalizedButton__Button-ey7f5x-0 c3 c4"
           onClick={[Function]}
           type="button"
         >
-          <span>
-            <span
+          <span
+            className="c5"
+          >
+            <svg
+              aria-hidden="true"
               className="c6"
+              focusable="false"
+              preserveAspectRatio="xMidYMid meet"
+              role="presentation"
+              viewBox="0 0 24 24"
             >
-              <svg
-                aria-hidden="true"
-                className="c7"
-                focusable="false"
-                preserveAspectRatio="xMidYMid meet"
-                role="presentation"
-                viewBox="0 0 24 24"
-              >
-                <polygon
-                  points="19.969 4 24 8.027 12 20 0 8.027 4.031 4 12 11.952"
-                  transform="rotate(-90 12 12)"
-                />
-              </svg>
-            </span>
+              <polygon
+                points="19.969 4 24 8.027 12 20 0 8.027 4.031 4 12 11.952"
+                transform="rotate(-90 12 12)"
+              />
+            </svg>
           </span>
         </button>
       </div>
@@ -4787,7 +4347,7 @@ Array [
   display: flex;
 }
 
-.c3 {
+.c11 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -4799,11 +4359,11 @@ Array [
   align-items: center;
 }
 
-.c8 {
+.c7 {
   box-sizing: border-box;
 }
 
-.c7 {
+.c6 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -4820,16 +4380,16 @@ Array [
   flex: 1;
 }
 
-.c7 > * {
+.c6 > * {
   padding-left: 4px;
   padding-right: 4px;
 }
 
-.c7 > *:not(:first-child) {
+.c6 > *:not(:first-child) {
   padding-top: 0;
 }
 
-.c6 {
+.c5 {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -4843,7 +4403,7 @@ Array [
   display: block;
 }
 
-.c5 {
+.c4 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: inherit;
   margin: 0;
@@ -4852,7 +4412,7 @@ Array [
   line-height: 1.4285714285714286;
 }
 
-.c11 {
+.c10 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
   margin: 0;
@@ -4861,7 +4421,7 @@ Array [
   line-height: 1.4285714285714286;
 }
 
-.c10 {
+.c9 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #0046FF;
   margin: 0;
@@ -4870,7 +4430,7 @@ Array [
   line-height: 1.4285714285714286;
 }
 
-.c4 {
+.c3 {
   font-family: inherit;
   font-size: 100%;
   line-height: 1.15;
@@ -4899,29 +4459,29 @@ Array [
   cursor: pointer;
 }
 
-.c4,
-.c4[type='button'],
-.c4[type='reset'],
-.c4[type='submit'] {
+.c3,
+.c3[type='button'],
+.c3[type='reset'],
+.c3[type='submit'] {
   -webkit-appearance: button;
 }
 
-.c4::-moz-focus-inner,
-.c4[type='button']::-moz-focus-inner,
-.c4[type='reset']::-moz-focus-inner,
-.c4[type='submit']::-moz-focus-inner {
+.c3::-moz-focus-inner,
+.c3[type='button']::-moz-focus-inner,
+.c3[type='reset']::-moz-focus-inner,
+.c3[type='submit']::-moz-focus-inner {
   border-style: none;
   padding: 0;
 }
 
-.c4:-moz-focusring,
-.c4[type='button']:-moz-focusring,
-.c4[type='reset']:-moz-focusring,
-.c4[type='submit']:-moz-focusring {
+.c3:-moz-focusring,
+.c3[type='button']:-moz-focusring,
+.c3[type='reset']:-moz-focusring,
+.c3[type='submit']:-moz-focusring {
   outline: 1px dotted ButtonText;
 }
 
-.c9 {
+.c8 {
   font-family: inherit;
   font-size: 100%;
   line-height: 1.15;
@@ -4950,25 +4510,25 @@ Array [
   cursor: not-allowed;
 }
 
-.c9,
-.c9[type='button'],
-.c9[type='reset'],
-.c9[type='submit'] {
+.c8,
+.c8[type='button'],
+.c8[type='reset'],
+.c8[type='submit'] {
   -webkit-appearance: button;
 }
 
-.c9::-moz-focus-inner,
-.c9[type='button']::-moz-focus-inner,
-.c9[type='reset']::-moz-focus-inner,
-.c9[type='submit']::-moz-focus-inner {
+.c8::-moz-focus-inner,
+.c8[type='button']::-moz-focus-inner,
+.c8[type='reset']::-moz-focus-inner,
+.c8[type='submit']::-moz-focus-inner {
   border-style: none;
   padding: 0;
 }
 
-.c9:-moz-focusring,
-.c9[type='button']:-moz-focusring,
-.c9[type='reset']:-moz-focusring,
-.c9[type='submit']:-moz-focusring {
+.c8:-moz-focusring,
+.c8[type='button']:-moz-focusring,
+.c8[type='reset']:-moz-focusring,
+.c8[type='submit']:-moz-focusring {
   outline: 1px dotted ButtonText;
 }
 
@@ -4992,52 +4552,46 @@ Array [
     <div
       className="c1 c2"
     >
-      <div
-        className="c3"
+      <button
+        className="NormalizedButton__Button-ey7f5x-0 c3"
+        onClick={[Function]}
+        type="button"
       >
-        <button
-          className="NormalizedButton__Button-ey7f5x-0 c4"
-          id="currentPage"
-          onClick={[Function]}
-          type="button"
+        <span
+          className="c4"
         >
-          <span
+          <svg
+            aria-hidden="true"
             className="c5"
+            focusable="false"
+            preserveAspectRatio="xMidYMid meet"
+            role="presentation"
+            viewBox="0 0 24 24"
           >
-            <svg
-              aria-hidden="true"
-              className="c6"
-              focusable="false"
-              preserveAspectRatio="xMidYMid meet"
-              role="presentation"
-              viewBox="0 0 24 24"
-            >
-              <polygon
-                points="19.969 4 24 8.027 12 20 0 8.027 4.031 4 12 11.952"
-                transform="rotate(90 12 12)"
-              />
-            </svg>
-          </span>
-        </button>
-      </div>
+            <polygon
+              points="19.969 4 24 8.027 12 20 0 8.027 4.031 4 12 11.952"
+              transform="rotate(90 12 12)"
+            />
+          </svg>
+        </span>
+      </button>
       <div
-        className="c7"
+        className="c6"
       >
         <div
-          className="c8"
+          className="c7"
         >
           <button
-            className="NormalizedButton__Button-ey7f5x-0 c9"
+            className="NormalizedButton__Button-ey7f5x-0 c8"
             disabled={true}
-            id="currentPage"
             onClick={[Function]}
             type="button"
           >
             <span
-              className="c5"
+              className="c4"
             >
               <span
-                className="c10"
+                className="c9"
               >
                 1
               </span>
@@ -5045,20 +4599,19 @@ Array [
           </button>
         </div>
         <div
-          className="c8"
+          className="c7"
         >
           <button
-            className="NormalizedButton__Button-ey7f5x-0 c4"
+            className="NormalizedButton__Button-ey7f5x-0 c3"
             disabled={false}
-            id="currentPage"
             onClick={[Function]}
             type="button"
           >
             <span
-              className="c5"
+              className="c4"
             >
               <span
-                className="c11"
+                className="c10"
               >
                 2
               </span>
@@ -5066,20 +4619,19 @@ Array [
           </button>
         </div>
         <div
-          className="c8"
+          className="c7"
         >
           <button
-            className="NormalizedButton__Button-ey7f5x-0 c4"
+            className="NormalizedButton__Button-ey7f5x-0 c3"
             disabled={false}
-            id="currentPage"
             onClick={[Function]}
             type="button"
           >
             <span
-              className="c5"
+              className="c4"
             >
               <span
-                className="c11"
+                className="c10"
               >
                 3
               </span>
@@ -5087,29 +4639,28 @@ Array [
           </button>
         </div>
         <div
-          className="c3"
+          className="c11"
         >
           <span
-            className="c11"
+            className="c10"
           >
             ...
           </span>
         </div>
         <div
-          className="c8"
+          className="c7"
         >
           <button
-            className="NormalizedButton__Button-ey7f5x-0 c4"
+            className="NormalizedButton__Button-ey7f5x-0 c3"
             disabled={false}
-            id="currentPage"
             onClick={[Function]}
             type="button"
           >
             <span
-              className="c5"
+              className="c4"
             >
               <span
-                className="c11"
+                className="c10"
               >
                 10
               </span>
@@ -5117,34 +4668,29 @@ Array [
           </button>
         </div>
       </div>
-      <div
-        className="c3"
+      <button
+        className="NormalizedButton__Button-ey7f5x-0 c3"
+        onClick={[Function]}
+        type="button"
       >
-        <button
-          className="NormalizedButton__Button-ey7f5x-0 c4"
-          id="currentPage"
-          onClick={[Function]}
-          type="button"
+        <span
+          className="c4"
         >
-          <span
+          <svg
+            aria-hidden="true"
             className="c5"
+            focusable="false"
+            preserveAspectRatio="xMidYMid meet"
+            role="presentation"
+            viewBox="0 0 24 24"
           >
-            <svg
-              aria-hidden="true"
-              className="c6"
-              focusable="false"
-              preserveAspectRatio="xMidYMid meet"
-              role="presentation"
-              viewBox="0 0 24 24"
-            >
-              <polygon
-                points="19.969 4 24 8.027 12 20 0 8.027 4.031 4 12 11.952"
-                transform="rotate(-90 12 12)"
-              />
-            </svg>
-          </span>
-        </button>
-      </div>
+            <polygon
+              points="19.969 4 24 8.027 12 20 0 8.027 4.031 4 12 11.952"
+              transform="rotate(-90 12 12)"
+            />
+          </svg>
+        </span>
+      </button>
     </div>
   </div>,
 ]

@@ -23,7 +23,7 @@ const PageItems: React.FC<PageItemsProps> = ({
 
   return (
     <>
-      <PageItem onClick={handlePageItemClick(FIRST_PAGE)} active={isFirstPage}>
+      <PageItem onClick={handlePageItemClick(FIRST_PAGE)} isCurrentPage={isFirstPage}>
         {FIRST_PAGE}
       </PageItem>
       {!isWithinFirstThree && !totalLessThanFive && <TruncatedPageNumbers />}
@@ -36,7 +36,7 @@ const PageItems: React.FC<PageItemsProps> = ({
       {!isFirstPage && !isSecondPage && (
         <PageItem onClick={handlePageItemClick(currentPage - 1)}>{currentPage - 1}</PageItem>
       )}
-      {!isFirstPage && !isLastPage && <PageItem active>{currentPage}</PageItem>}
+      {!isFirstPage && !isLastPage && <PageItem isCurrentPage>{currentPage}</PageItem>}
       {!isLastPage && !isSecondLastPage && (
         <PageItem onClick={handlePageItemClick(currentPage + 1)}>{currentPage + 1}</PageItem>
       )}
@@ -46,7 +46,7 @@ const PageItems: React.FC<PageItemsProps> = ({
       )}
       {!isWithinLastThree && !totalLessThanFive && <TruncatedPageNumbers />}
       {!totalIsOnlyOnePage && (
-        <PageItem onClick={handlePageItemClick(numberOfPages)} active={isLastPage}>
+        <PageItem onClick={handlePageItemClick(numberOfPages)} isCurrentPage={isLastPage}>
           {numberOfPages}
         </PageItem>
       )}

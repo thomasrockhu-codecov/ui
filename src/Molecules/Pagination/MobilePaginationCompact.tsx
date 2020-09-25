@@ -1,7 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { Flexbox, Icon } from '../..';
-import { Button } from '../../common/NormalizedElements/NormalizedButton';
+import { Flexbox, Icon, Button } from '../..';
 import { PaginationCompactProps, BrowseButtonProps } from './Pagination.types';
 
 const StyledButton = styled(Button)`
@@ -16,24 +15,15 @@ const StyledButton = styled(Button)`
   outline: none;
 `;
 
-const MobilePaginationButton: React.FC<{
-  children: React.ReactChild;
-  onClick: () => void;
-}> = ({ children, onClick }) => (
-  <StyledButton href="#" onClick={onClick}>
-    {children}
-  </StyledButton>
-);
-
 const ChevronButton = ({ direction = 'left', onClick }: BrowseButtonProps) => (
   <Flexbox item container alignItems="center">
-    <MobilePaginationButton onClick={onClick}>
+    <StyledButton onClick={onClick} variant="neutral">
       {direction === 'left' ? (
         <Icon.ThinChevron direction="left" size={4} />
       ) : (
         <Icon.ThinChevron direction="right" size={4} />
       )}
-    </MobilePaginationButton>
+    </StyledButton>
   </Flexbox>
 );
 

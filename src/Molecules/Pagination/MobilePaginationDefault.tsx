@@ -1,12 +1,14 @@
 import React from 'react';
 import styled from 'styled-components';
-import { Flexbox, Typography, Icon, Button } from '../..';
-import { ButtonProps } from '../Button/Button.types';
+import { Flexbox, Typography, Icon, Button, Box } from '../..';
 import { Props as FlexBoxProps } from '../../Atoms/Flexbox/Flexbox.types';
 import { PageItemProps, PaginationDefaultProps, BrowseButtonProps } from './Pagination.types';
 import PageItems from './PageItems';
 
-const StyledButton = styled(Button)`
+const StyledButton = styled(
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
+  ({ type, isCurrentPage, ...rest }) => <Button variant="neutral" {...rest} />,
+)`
   display: flex;
   height: ${(p) => p.theme.spacing.unit(10)}px;
   width: ${(p) => p.theme.spacing.unit(10)}px;
@@ -16,42 +18,24 @@ const StyledButton = styled(Button)`
   align-items: center;
   background-color: transparent;
   outline: none;
+
+  ${({ type, isCurrentPage, theme }) =>
+    type === 'page-item' &&
+    isCurrentPage &&
+    `background-color: ${theme.color.cta}; cursor: default`}
+  ${({ type, theme }) =>
+    type === 'chevron' && `box-sizing: border-box; border: 1px solid ${theme.color.inputBorder};`}
 `;
 
-const StyledPageItemBox = styled(
-  // eslint-disable-next-line @typescript-eslint/no-unused-vars
-  ({ variant, ...rest }: Omit<ButtonProps, 'variant'> & { variant?: string }) => (
-    <StyledButton {...rest} />
-  ),
-)`
-  ${({ variant, theme }) =>
-    variant === 'selected' && `background-color: ${theme.color.cta}; cursor: default`}
-  ${({ variant, theme }) =>
-    variant === 'chevron' &&
-    `box-sizing: border-box; border: 1px solid ${theme.color.inputBorder};`}
-`;
-
-const StyledTruncatedBox = styled(StyledButton)`
+const StyledTruncatedBox = styled(Box)`
+  display: flex;
+  height: ${(p) => p.theme.spacing.unit(10)}px;
   width: ${(p) => p.theme.spacing.unit(5)}px;
+  border: none;
+  padding: 0;
+  justify-content: center;
+  align-items: center;
 `;
-
-const MobilePaginationButton: React.FC<Omit<PageItemProps, 'active'> & { variant: string }> = ({
-  children,
-  onClick,
-  variant,
-}) => (
-  <StyledPageItemBox
-    disabled={!['selected', 'chevron'].includes(variant)}
-    onClick={() => {
-      if (variant !== 'selected' && onClick) {
-        onClick();
-      }
-    }}
-    variant={variant}
-  >
-    {children}
-  </StyledPageItemBox>
-);
 
 const StyledFlexbox = styled(
   // eslint-disable-next-line @typescript-eslint/no-unused-vars
@@ -74,13 +58,13 @@ const StyledFlexbox = styled(
   }}px;
 `;
 
-const PageItem: React.FC<PageItemProps> = ({ active = false, onClick, children }) => (
+const PageItem: React.FC<PageItemProps> = ({ isCurrentPage = false, onClick, children }) => (
   <Flexbox item>
-    <MobilePaginationButton variant={active ? 'selected' : ''} onClick={onClick}>
-      <Typography type="primary" color={(t) => (active ? t.color.buttonText : t.color.text)}>
+    <StyledButton type="page-item" onClick={onClick} isCurrentPage={isCurrentPage}>
+      <Typography type="primary" color={(t) => (isCurrentPage ? t.color.buttonText : t.color.text)}>
         {children}
       </Typography>
-    </MobilePaginationButton>
+    </StyledButton>
   </Flexbox>
 );
 
@@ -92,13 +76,13 @@ const TruncatedPageNumbers = () => (
 
 const ChevronButton = ({ direction = 'left', onClick }: BrowseButtonProps) => (
   <Flexbox item container alignItems="center">
-    <MobilePaginationButton variant="chevron" onClick={onClick}>
+    <StyledButton type="chevron" onClick={onClick}>
       {direction === 'left' ? (
         <Icon.ChevronLeft inline size={3} />
       ) : (
         <Icon.ChevronRight inline size={3} />
       )}
-    </MobilePaginationButton>
+    </StyledButton>
   </Flexbox>
 );
 

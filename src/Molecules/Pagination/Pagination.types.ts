@@ -7,7 +7,7 @@ export type PaginationProps = {
 };
 
 export type PageItemProps = {
-  active?: boolean;
+  isCurrentPage?: boolean;
   onClick?: () => void;
   children: React.ReactChild;
 };
