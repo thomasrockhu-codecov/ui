@@ -15,8 +15,8 @@ const getSize = (p: StyledProps<Props>) => {
 };
 
 const StyledDiv = styled(Flexbox)<Props>`
-  background-color: ${({ theme, backgroundColors }) =>
-    backgroundColors ? backgroundColors(theme) : theme.color.backgroundDark};
+  background-color: ${({ theme, backgroundColor }) =>
+    backgroundColor ? backgroundColor(theme) : theme.color.backgroundDark};
   width: ${getSize}px;
   height: ${getSize}px;
   font-size: ${getSize}px;
@@ -26,10 +26,10 @@ const StyledDiv = styled(Flexbox)<Props>`
 export const Avatar: React.FunctionComponent<Props> = ({
   children,
   size = 'm',
-  backgroundColors,
+  backgroundColor,
 }) => (
   <StyledDiv
-    backgroundColors={backgroundColors}
+    backgroundColor={backgroundColor}
     container
     alignItems="center"
     justifyContent="center"

@@ -6,5 +6,5 @@ type Values<ObjectType> = ObjectType extends Record<any, infer K> ? K : never; /
 export type Props = {
   size?: 's' | 'm';
   children: React.ReactText | React.ReactNode;
-  backgroundColors?: ColorFn;
+  backgroundColor?: ColorFn;
 };
