@@ -4,6 +4,7 @@ export type PaginationProps = {
   totalItems: number;
   compact?: boolean;
   onPageChange: (newPage: number) => void;
+  title?: string;
 };
 
 export type PageItemProps = {

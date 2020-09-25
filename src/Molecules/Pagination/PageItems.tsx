@@ -1,4 +1,5 @@
 import React, { useCallback } from 'react';
+import { VisuallyHidden } from '../..';
 import { PageItemsProps } from './Pagination.types';
 
 const FIRST_PAGE = 1;
@@ -24,30 +25,63 @@ const PageItems: React.FC<PageItemsProps> = ({
   return (
     <>
       <PageItem onClick={handlePageItemClick(FIRST_PAGE)} isCurrentPage={isFirstPage}>
-        {FIRST_PAGE}
+        <>
+          <VisuallyHidden>Go to page</VisuallyHidden>
+          {FIRST_PAGE}
+        </>
       </PageItem>
       {!isWithinFirstThree && !totalLessThanFive && <TruncatedPageNumbers />}
       {/* Show third page from last if currently on last one */}
       {isLastPage && !isFirstPage && !isWithinFirstThree && (
-        <PageItem onClick={handlePageItemClick(currentPage - 2)}>{currentPage - 2}</PageItem>
+        <PageItem onClick={handlePageItemClick(currentPage - 2)}>
+          <>
+            <VisuallyHidden>Go to page</VisuallyHidden>
+            {currentPage - 2}
+          </>
+        </PageItem>
       )}
 
       {/* Current, last and next page */}
       {!isFirstPage && !isSecondPage && (
-        <PageItem onClick={handlePageItemClick(currentPage - 1)}>{currentPage - 1}</PageItem>
+        <PageItem onClick={handlePageItemClick(currentPage - 1)}>
+          <>
+            <VisuallyHidden>Go to page</VisuallyHidden>
+            {currentPage - 1}
+          </>
+        </PageItem>
       )}
-      {!isFirstPage && !isLastPage && <PageItem isCurrentPage>{currentPage}</PageItem>}
+      {!isFirstPage && !isLastPage && (
+        <PageItem isCurrentPage>
+          <>
+            <VisuallyHidden>Current page</VisuallyHidden>
+            {currentPage}
+          </>
+        </PageItem>
+      )}
       {!isLastPage && !isSecondLastPage && (
-        <PageItem onClick={handlePageItemClick(currentPage + 1)}>{currentPage + 1}</PageItem>
+        <PageItem onClick={handlePageItemClick(currentPage + 1)}>
+          <>
+            <VisuallyHidden>Go to page</VisuallyHidden>
+            {currentPage + 1}
+          </>
+        </PageItem>
       )}
 
       {isFirstPage && !totalLessThanFour && (
-        <PageItem onClick={handlePageItemClick(FIRST_PAGE + 2)}>{FIRST_PAGE + 2}</PageItem>
+        <PageItem onClick={handlePageItemClick(FIRST_PAGE + 2)}>
+          <>
+            <VisuallyHidden>Go to page</VisuallyHidden>
+            {FIRST_PAGE + 2}
+          </>
+        </PageItem>
       )}
       {!isWithinLastThree && !totalLessThanFive && <TruncatedPageNumbers />}
       {!totalIsOnlyOnePage && (
         <PageItem onClick={handlePageItemClick(numberOfPages)} isCurrentPage={isLastPage}>
-          {numberOfPages}
+          <>
+            <VisuallyHidden>Go to page</VisuallyHidden>
+            {numberOfPages}
+          </>
         </PageItem>
       )}
     </>

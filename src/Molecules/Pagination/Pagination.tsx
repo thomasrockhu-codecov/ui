@@ -9,8 +9,9 @@ const Pagination: React.FC<PaginationProps> = ({
   currentPage: currentPageFromProps,
   itemsPerPage,
   totalItems,
-  compact,
+  compact = false,
   onPageChange,
+  title = 'Pagination',
 }) => {
   const [currentPageFromState, setCurrentPageFromState] = useState(1);
 
@@ -40,7 +41,7 @@ const Pagination: React.FC<PaginationProps> = ({
   }, [currentPageFromState, numberOfPages, handlePageChange]);
 
   return (
-    <>
+    <nav role="navigation" aria-label={title}>
       <Media query={(t) => t.media.lessThan(t.breakpoints.md)}>
         {compact ? (
           <MobilePaginationCompact onClickPrevious={onClickPrevious} onClickNext={onClickNext} />
@@ -63,7 +64,7 @@ const Pagination: React.FC<PaginationProps> = ({
           onClickNext={onClickNext}
         />
       </Media>
-    </>
+    </nav>
   );
 };
 

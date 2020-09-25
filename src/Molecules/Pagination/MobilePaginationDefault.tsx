@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { Flexbox, Typography, Icon, Button, Box } from '../..';
+import { Flexbox, Typography, Icon, Button, Box, VisuallyHidden } from '../..';
 import { Props as FlexBoxProps } from '../../Atoms/Flexbox/Flexbox.types';
 import { PageItemProps, PaginationDefaultProps, BrowseButtonProps } from './Pagination.types';
 import PageItems from './PageItems';
@@ -78,9 +78,15 @@ const ChevronButton = ({ direction = 'left', onClick }: BrowseButtonProps) => (
   <Flexbox item container alignItems="center">
     <StyledButton type="chevron" onClick={onClick}>
       {direction === 'left' ? (
-        <Icon.ChevronLeft inline size={3} />
+        <>
+          <Icon.ChevronLeft inline size={3} />
+          <VisuallyHidden>Go to previous page</VisuallyHidden>
+        </>
       ) : (
-        <Icon.ChevronRight inline size={3} />
+        <>
+          <Icon.ChevronRight inline size={3} />
+          <VisuallyHidden>Go to next page</VisuallyHidden>
+        </>
       )}
     </StyledButton>
   </Flexbox>
