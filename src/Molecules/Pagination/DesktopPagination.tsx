@@ -26,6 +26,11 @@ const StyledFlexbox = styled(
   }}px;
 `;
 
+const StyledList = styled.ul`
+  margin: 0;
+  padding: 0;
+`;
+
 const PageNumberItem: React.FC<PageItemProps> = ({ isCurrentPage = false, children, onClick }) => (
   <Flexbox item>
     <Button variant="neutral" disabled={isCurrentPage} onClick={onClick}>
@@ -68,7 +73,7 @@ const DesktopPagination: React.FC<PaginationDefaultProps> = ({
   return (
     <StyledFlexbox container numberOfPages={numberOfPages}>
       <ChevronButton onClick={onClickPrevious} />
-      <Flexbox container item flex="1" justifyContent="center" gutter={2}>
+      <Flexbox container item flex="1" justifyContent="center" gutter={2} as={StyledList}>
         <PageItems
           currentPage={currentPage}
           numberOfPages={numberOfPages}

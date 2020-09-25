@@ -1,0 +1,7 @@
+diff a/src/Molecules/Pagination/MobilePaginationDefault.tsx b/src/Molecules/Pagination/MobilePaginationDefault.tsx	(rejected hunks)
+@@ -82 +82 @@ const ChevronButton = ({ direction = 'left', onClick }: BrowseButtonProps) => (
+-        <Icon.ChevronLeft inline size={3} />
++          <Icon.ChevronLeft inline size={3} />
+@@ -87 +87 @@ const ChevronButton = ({ direction = 'left', onClick }: BrowseButtonProps) => (
+-        <Icon.ChevronRight inline size={3} />
++          <Icon.ChevronRight inline size={3} />

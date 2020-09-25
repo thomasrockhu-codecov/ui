@@ -21,23 +21,11 @@ exports[`Storyshots Molecules | Pagination 1 page 1`] = `
   align-items: center;
 }
 
-.c8 {
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-}
-
 .c10 {
   box-sizing: border-box;
 }
 
-.c16 {
+.c17 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -54,12 +42,12 @@ exports[`Storyshots Molecules | Pagination 1 page 1`] = `
   flex: 1;
 }
 
-.c16 > * {
+.c17 > * {
   padding-left: 4px;
   padding-right: 4px;
 }
 
-.c16 > *:not(:first-child) {
+.c17 > *:not(:first-child) {
   padding-top: 0;
 }
 
@@ -119,7 +107,7 @@ exports[`Storyshots Molecules | Pagination 1 page 1`] = `
   line-height: 1.5;
 }
 
-.c18 {
+.c19 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #0046FF;
   margin: 0;
@@ -179,7 +167,7 @@ exports[`Storyshots Molecules | Pagination 1 page 1`] = `
   outline: 1px dotted ButtonText;
 }
 
-.c17 {
+.c18 {
   font-family: inherit;
   font-size: 100%;
   line-height: 1.15;
@@ -208,30 +196,35 @@ exports[`Storyshots Molecules | Pagination 1 page 1`] = `
   cursor: not-allowed;
 }
 
-.c17,
-.c17[type='button'],
-.c17[type='reset'],
-.c17[type='submit'] {
+.c18,
+.c18[type='button'],
+.c18[type='reset'],
+.c18[type='submit'] {
   -webkit-appearance: button;
 }
 
-.c17::-moz-focus-inner,
-.c17[type='button']::-moz-focus-inner,
-.c17[type='reset']::-moz-focus-inner,
-.c17[type='submit']::-moz-focus-inner {
+.c18::-moz-focus-inner,
+.c18[type='button']::-moz-focus-inner,
+.c18[type='reset']::-moz-focus-inner,
+.c18[type='submit']::-moz-focus-inner {
   border-style: none;
   padding: 0;
 }
 
-.c17:-moz-focusring,
-.c17[type='button']:-moz-focusring,
-.c17[type='reset']:-moz-focusring,
-.c17[type='submit']:-moz-focusring {
+.c18:-moz-focusring,
+.c18[type='button']:-moz-focusring,
+.c18[type='reset']:-moz-focusring,
+.c18[type='submit']:-moz-focusring {
   outline: 1px dotted ButtonText;
 }
 
 .c14 {
   width: 34px;
+}
+
+.c16 {
+  margin: 0;
+  padding: 0;
 }
 
 .c4 {
@@ -282,6 +275,11 @@ exports[`Storyshots Molecules | Pagination 1 page 1`] = `
 
 .c9 {
   width: 40px;
+}
+
+.c8 {
+  margin: 0;
+  padding: 0;
 }
 
 @media not all and (max-width:975px) {
@@ -338,7 +336,7 @@ exports[`Storyshots Molecules | Pagination 1 page 1`] = `
           </span>
         </button>
       </div>
-      <div
+      <ul
         className="c8 c9"
       >
         <div
@@ -365,7 +363,7 @@ exports[`Storyshots Molecules | Pagination 1 page 1`] = `
             </span>
           </button>
         </div>
-      </div>
+      </ul>
       <div
         className="c2"
       >
@@ -434,14 +432,14 @@ exports[`Storyshots Molecules | Pagination 1 page 1`] = `
           </div>
         </span>
       </button>
-      <div
-        className="c16"
+      <ul
+        className="c16 c17"
       >
         <div
           className="c10"
         >
           <button
-            className="NormalizedButton__Button-ey7f5x-0 c17"
+            className="NormalizedButton__Button-ey7f5x-0 c18"
             disabled={true}
             onClick={[Function]}
             type="button"
@@ -450,7 +448,7 @@ exports[`Storyshots Molecules | Pagination 1 page 1`] = `
               className="c5"
             >
               <span
-                className="c18"
+                className="c19"
               >
                 <div
                   className="c7"
@@ -462,7 +460,7 @@ exports[`Storyshots Molecules | Pagination 1 page 1`] = `
             </span>
           </button>
         </div>
-      </div>
+      </ul>
       <button
         className="NormalizedButton__Button-ey7f5x-0 c3"
         onClick={[Function]}
@@ -517,23 +515,11 @@ exports[`Storyshots Molecules | Pagination 2 pages 1`] = `
   align-items: center;
 }
 
-.c8 {
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-}
-
 .c10 {
   box-sizing: border-box;
 }
 
-.c18 {
+.c19 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -550,12 +536,12 @@ exports[`Storyshots Molecules | Pagination 2 pages 1`] = `
   flex: 1;
 }
 
-.c18 > * {
+.c19 > * {
   padding-left: 4px;
   padding-right: 4px;
 }
 
-.c18 > *:not(:first-child) {
+.c19 > *:not(:first-child) {
   padding-top: 0;
 }
 
@@ -624,7 +610,7 @@ exports[`Storyshots Molecules | Pagination 2 pages 1`] = `
   line-height: 1.5;
 }
 
-.c20 {
+.c21 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #0046FF;
   margin: 0;
@@ -633,7 +619,7 @@ exports[`Storyshots Molecules | Pagination 2 pages 1`] = `
   line-height: 1.4285714285714286;
 }
 
-.c21 {
+.c22 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
   margin: 0;
@@ -693,7 +679,7 @@ exports[`Storyshots Molecules | Pagination 2 pages 1`] = `
   outline: 1px dotted ButtonText;
 }
 
-.c19 {
+.c20 {
   font-family: inherit;
   font-size: 100%;
   line-height: 1.15;
@@ -722,30 +708,35 @@ exports[`Storyshots Molecules | Pagination 2 pages 1`] = `
   cursor: not-allowed;
 }
 
-.c19,
-.c19[type='button'],
-.c19[type='reset'],
-.c19[type='submit'] {
+.c20,
+.c20[type='button'],
+.c20[type='reset'],
+.c20[type='submit'] {
   -webkit-appearance: button;
 }
 
-.c19::-moz-focus-inner,
-.c19[type='button']::-moz-focus-inner,
-.c19[type='reset']::-moz-focus-inner,
-.c19[type='submit']::-moz-focus-inner {
+.c20::-moz-focus-inner,
+.c20[type='button']::-moz-focus-inner,
+.c20[type='reset']::-moz-focus-inner,
+.c20[type='submit']::-moz-focus-inner {
   border-style: none;
   padding: 0;
 }
 
-.c19:-moz-focusring,
-.c19[type='button']:-moz-focusring,
-.c19[type='reset']:-moz-focusring,
-.c19[type='submit']:-moz-focusring {
+.c20:-moz-focusring,
+.c20[type='button']:-moz-focusring,
+.c20[type='reset']:-moz-focusring,
+.c20[type='submit']:-moz-focusring {
   outline: 1px dotted ButtonText;
 }
 
 .c16 {
   width: 52px;
+}
+
+.c18 {
+  margin: 0;
+  padding: 0;
 }
 
 .c4 {
@@ -819,6 +810,11 @@ exports[`Storyshots Molecules | Pagination 2 pages 1`] = `
   width: 80px;
 }
 
+.c8 {
+  margin: 0;
+  padding: 0;
+}
+
 @media not all and (max-width:975px) {
   .c0 {
     display: none;
@@ -873,7 +869,7 @@ exports[`Storyshots Molecules | Pagination 2 pages 1`] = `
           </span>
         </button>
       </div>
-      <div
+      <ul
         className="c8 c9"
       >
         <div
@@ -924,7 +920,7 @@ exports[`Storyshots Molecules | Pagination 2 pages 1`] = `
             </span>
           </button>
         </div>
-      </div>
+      </ul>
       <div
         className="c2"
       >
@@ -993,14 +989,14 @@ exports[`Storyshots Molecules | Pagination 2 pages 1`] = `
           </div>
         </span>
       </button>
-      <div
-        className="c18"
+      <ul
+        className="c18 c19"
       >
         <div
           className="c10"
         >
           <button
-            className="NormalizedButton__Button-ey7f5x-0 c19"
+            className="NormalizedButton__Button-ey7f5x-0 c20"
             disabled={true}
             onClick={[Function]}
             type="button"
@@ -1009,7 +1005,7 @@ exports[`Storyshots Molecules | Pagination 2 pages 1`] = `
               className="c5"
             >
               <span
-                className="c20"
+                className="c21"
               >
                 <div
                   className="c7"
@@ -1034,7 +1030,7 @@ exports[`Storyshots Molecules | Pagination 2 pages 1`] = `
               className="c5"
             >
               <span
-                className="c21"
+                className="c22"
               >
                 <div
                   className="c7"
@@ -1046,7 +1042,7 @@ exports[`Storyshots Molecules | Pagination 2 pages 1`] = `
             </span>
           </button>
         </div>
-      </div>
+      </ul>
       <button
         className="NormalizedButton__Button-ey7f5x-0 c3"
         onClick={[Function]}
@@ -1101,23 +1097,11 @@ exports[`Storyshots Molecules | Pagination 12 pages 1`] = `
   align-items: center;
 }
 
-.c8 {
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-}
-
 .c10 {
   box-sizing: border-box;
 }
 
-.c20 {
+.c21 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -1134,12 +1118,12 @@ exports[`Storyshots Molecules | Pagination 12 pages 1`] = `
   flex: 1;
 }
 
-.c20 > * {
+.c21 > * {
   padding-left: 4px;
   padding-right: 4px;
 }
 
-.c20 > *:not(:first-child) {
+.c21 > *:not(:first-child) {
   padding-top: 0;
 }
 
@@ -1217,7 +1201,7 @@ exports[`Storyshots Molecules | Pagination 12 pages 1`] = `
   line-height: 1.4285714285714286;
 }
 
-.c22 {
+.c23 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #0046FF;
   margin: 0;
@@ -1277,7 +1261,7 @@ exports[`Storyshots Molecules | Pagination 12 pages 1`] = `
   outline: 1px dotted ButtonText;
 }
 
-.c21 {
+.c22 {
   font-family: inherit;
   font-size: 100%;
   line-height: 1.15;
@@ -1306,30 +1290,35 @@ exports[`Storyshots Molecules | Pagination 12 pages 1`] = `
   cursor: not-allowed;
 }
 
-.c21,
-.c21[type='button'],
-.c21[type='reset'],
-.c21[type='submit'] {
+.c22,
+.c22[type='button'],
+.c22[type='reset'],
+.c22[type='submit'] {
   -webkit-appearance: button;
 }
 
-.c21::-moz-focus-inner,
-.c21[type='button']::-moz-focus-inner,
-.c21[type='reset']::-moz-focus-inner,
-.c21[type='submit']::-moz-focus-inner {
+.c22::-moz-focus-inner,
+.c22[type='button']::-moz-focus-inner,
+.c22[type='reset']::-moz-focus-inner,
+.c22[type='submit']::-moz-focus-inner {
   border-style: none;
   padding: 0;
 }
 
-.c21:-moz-focusring,
-.c21[type='button']:-moz-focusring,
-.c21[type='reset']:-moz-focusring,
-.c21[type='submit']:-moz-focusring {
+.c22:-moz-focusring,
+.c22[type='button']:-moz-focusring,
+.c22[type='reset']:-moz-focusring,
+.c22[type='submit']:-moz-focusring {
   outline: 1px dotted ButtonText;
 }
 
 .c18 {
   width: 152px;
+}
+
+.c20 {
+  margin: 0;
+  padding: 0;
 }
 
 .c4 {
@@ -1422,6 +1411,11 @@ exports[`Storyshots Molecules | Pagination 12 pages 1`] = `
   width: 240px;
 }
 
+.c8 {
+  margin: 0;
+  padding: 0;
+}
+
 @media not all and (max-width:975px) {
   .c0 {
     display: none;
@@ -1476,7 +1470,7 @@ exports[`Storyshots Molecules | Pagination 12 pages 1`] = `
           </span>
         </button>
       </div>
-      <div
+      <ul
         className="c8 c9"
       >
         <div
@@ -1584,7 +1578,7 @@ exports[`Storyshots Molecules | Pagination 12 pages 1`] = `
             </span>
           </button>
         </div>
-      </div>
+      </ul>
       <div
         className="c2"
       >
@@ -1653,14 +1647,14 @@ exports[`Storyshots Molecules | Pagination 12 pages 1`] = `
           </div>
         </span>
       </button>
-      <div
-        className="c20"
+      <ul
+        className="c20 c21"
       >
         <div
           className="c10"
         >
           <button
-            className="NormalizedButton__Button-ey7f5x-0 c21"
+            className="NormalizedButton__Button-ey7f5x-0 c22"
             disabled={true}
             onClick={[Function]}
             type="button"
@@ -1669,7 +1663,7 @@ exports[`Storyshots Molecules | Pagination 12 pages 1`] = `
               className="c5"
             >
               <span
-                className="c22"
+                className="c23"
               >
                 <div
                   className="c7"
@@ -1765,7 +1759,7 @@ exports[`Storyshots Molecules | Pagination 12 pages 1`] = `
             </span>
           </button>
         </div>
-      </div>
+      </ul>
       <button
         className="NormalizedButton__Button-ey7f5x-0 c3"
         onClick={[Function]}
@@ -1820,23 +1814,11 @@ exports[`Storyshots Molecules | Pagination 999 pages 1`] = `
   align-items: center;
 }
 
-.c8 {
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-}
-
 .c10 {
   box-sizing: border-box;
 }
 
-.c20 {
+.c21 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -1853,12 +1835,12 @@ exports[`Storyshots Molecules | Pagination 999 pages 1`] = `
   flex: 1;
 }
 
-.c20 > * {
+.c21 > * {
   padding-left: 4px;
   padding-right: 4px;
 }
 
-.c20 > *:not(:first-child) {
+.c21 > *:not(:first-child) {
   padding-top: 0;
 }
 
@@ -1936,7 +1918,7 @@ exports[`Storyshots Molecules | Pagination 999 pages 1`] = `
   line-height: 1.4285714285714286;
 }
 
-.c22 {
+.c23 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #0046FF;
   margin: 0;
@@ -1996,7 +1978,7 @@ exports[`Storyshots Molecules | Pagination 999 pages 1`] = `
   outline: 1px dotted ButtonText;
 }
 
-.c21 {
+.c22 {
   font-family: inherit;
   font-size: 100%;
   line-height: 1.15;
@@ -2025,30 +2007,35 @@ exports[`Storyshots Molecules | Pagination 999 pages 1`] = `
   cursor: not-allowed;
 }
 
-.c21,
-.c21[type='button'],
-.c21[type='reset'],
-.c21[type='submit'] {
+.c22,
+.c22[type='button'],
+.c22[type='reset'],
+.c22[type='submit'] {
   -webkit-appearance: button;
 }
 
-.c21::-moz-focus-inner,
-.c21[type='button']::-moz-focus-inner,
-.c21[type='reset']::-moz-focus-inner,
-.c21[type='submit']::-moz-focus-inner {
+.c22::-moz-focus-inner,
+.c22[type='button']::-moz-focus-inner,
+.c22[type='reset']::-moz-focus-inner,
+.c22[type='submit']::-moz-focus-inner {
   border-style: none;
   padding: 0;
 }
 
-.c21:-moz-focusring,
-.c21[type='button']:-moz-focusring,
-.c21[type='reset']:-moz-focusring,
-.c21[type='submit']:-moz-focusring {
+.c22:-moz-focusring,
+.c22[type='button']:-moz-focusring,
+.c22[type='reset']:-moz-focusring,
+.c22[type='submit']:-moz-focusring {
   outline: 1px dotted ButtonText;
 }
 
 .c18 {
   width: 200px;
+}
+
+.c20 {
+  margin: 0;
+  padding: 0;
 }
 
 .c4 {
@@ -2141,6 +2128,11 @@ exports[`Storyshots Molecules | Pagination 999 pages 1`] = `
   width: 240px;
 }
 
+.c8 {
+  margin: 0;
+  padding: 0;
+}
+
 @media not all and (max-width:975px) {
   .c0 {
     display: none;
@@ -2195,7 +2187,7 @@ exports[`Storyshots Molecules | Pagination 999 pages 1`] = `
           </span>
         </button>
       </div>
-      <div
+      <ul
         className="c8 c9"
       >
         <div
@@ -2303,7 +2295,7 @@ exports[`Storyshots Molecules | Pagination 999 pages 1`] = `
             </span>
           </button>
         </div>
-      </div>
+      </ul>
       <div
         className="c2"
       >
@@ -2372,14 +2364,14 @@ exports[`Storyshots Molecules | Pagination 999 pages 1`] = `
           </div>
         </span>
       </button>
-      <div
-        className="c20"
+      <ul
+        className="c20 c21"
       >
         <div
           className="c10"
         >
           <button
-            className="NormalizedButton__Button-ey7f5x-0 c21"
+            className="NormalizedButton__Button-ey7f5x-0 c22"
             disabled={true}
             onClick={[Function]}
             type="button"
@@ -2388,7 +2380,7 @@ exports[`Storyshots Molecules | Pagination 999 pages 1`] = `
               className="c5"
             >
               <span
-                className="c22"
+                className="c23"
               >
                 <div
                   className="c7"
@@ -2484,7 +2476,7 @@ exports[`Storyshots Molecules | Pagination 999 pages 1`] = `
             </span>
           </button>
         </div>
-      </div>
+      </ul>
       <button
         className="NormalizedButton__Button-ey7f5x-0 c3"
         onClick={[Function]}
@@ -2539,7 +2531,7 @@ exports[`Storyshots Molecules | Pagination Compact on mobile 1`] = `
   align-items: center;
 }
 
-.c13 {
+.c14 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -2556,16 +2548,16 @@ exports[`Storyshots Molecules | Pagination Compact on mobile 1`] = `
   flex: 1;
 }
 
-.c13 > * {
+.c14 > * {
   padding-left: 4px;
   padding-right: 4px;
 }
 
-.c13 > *:not(:first-child) {
+.c14 > *:not(:first-child) {
   padding-top: 0;
 }
 
-.c14 {
+.c15 {
   box-sizing: border-box;
 }
 
@@ -2627,7 +2619,7 @@ exports[`Storyshots Molecules | Pagination Compact on mobile 1`] = `
   line-height: 1.4285714285714286;
 }
 
-.c16 {
+.c17 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #0046FF;
   margin: 0;
@@ -2636,7 +2628,7 @@ exports[`Storyshots Molecules | Pagination Compact on mobile 1`] = `
   line-height: 1.4285714285714286;
 }
 
-.c17 {
+.c18 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
   margin: 0;
@@ -2696,7 +2688,7 @@ exports[`Storyshots Molecules | Pagination Compact on mobile 1`] = `
   outline: 1px dotted ButtonText;
 }
 
-.c15 {
+.c16 {
   font-family: inherit;
   font-size: 100%;
   line-height: 1.15;
@@ -2725,30 +2717,35 @@ exports[`Storyshots Molecules | Pagination Compact on mobile 1`] = `
   cursor: not-allowed;
 }
 
-.c15,
-.c15[type='button'],
-.c15[type='reset'],
-.c15[type='submit'] {
+.c16,
+.c16[type='button'],
+.c16[type='reset'],
+.c16[type='submit'] {
   -webkit-appearance: button;
 }
 
-.c15::-moz-focus-inner,
-.c15[type='button']::-moz-focus-inner,
-.c15[type='reset']::-moz-focus-inner,
-.c15[type='submit']::-moz-focus-inner {
+.c16::-moz-focus-inner,
+.c16[type='button']::-moz-focus-inner,
+.c16[type='reset']::-moz-focus-inner,
+.c16[type='submit']::-moz-focus-inner {
   border-style: none;
   padding: 0;
 }
 
-.c15:-moz-focusring,
-.c15[type='button']:-moz-focusring,
-.c15[type='reset']:-moz-focusring,
-.c15[type='submit']:-moz-focusring {
+.c16:-moz-focusring,
+.c16[type='button']:-moz-focusring,
+.c16[type='reset']:-moz-focusring,
+.c16[type='submit']:-moz-focusring {
   outline: 1px dotted ButtonText;
 }
 
 .c11 {
   width: 152px;
+}
+
+.c13 {
+  margin: 0;
+  padding: 0;
 }
 
 .c4 {
@@ -2894,14 +2891,14 @@ exports[`Storyshots Molecules | Pagination Compact on mobile 1`] = `
           </div>
         </span>
       </button>
-      <div
-        className="c13"
+      <ul
+        className="c13 c14"
       >
         <div
-          className="c14"
+          className="c15"
         >
           <button
-            className="NormalizedButton__Button-ey7f5x-0 c15"
+            className="NormalizedButton__Button-ey7f5x-0 c16"
             disabled={true}
             onClick={[Function]}
             type="button"
@@ -2910,7 +2907,7 @@ exports[`Storyshots Molecules | Pagination Compact on mobile 1`] = `
               className="c5"
             >
               <span
-                className="c16"
+                className="c17"
               >
                 <div
                   className="c8"
@@ -2923,7 +2920,7 @@ exports[`Storyshots Molecules | Pagination Compact on mobile 1`] = `
           </button>
         </div>
         <div
-          className="c14"
+          className="c15"
         >
           <button
             className="NormalizedButton__Button-ey7f5x-0 c3"
@@ -2935,7 +2932,7 @@ exports[`Storyshots Molecules | Pagination Compact on mobile 1`] = `
               className="c5"
             >
               <span
-                className="c17"
+                className="c18"
               >
                 <div
                   className="c8"
@@ -2948,7 +2945,7 @@ exports[`Storyshots Molecules | Pagination Compact on mobile 1`] = `
           </button>
         </div>
         <div
-          className="c14"
+          className="c15"
         >
           <button
             className="NormalizedButton__Button-ey7f5x-0 c3"
@@ -2960,7 +2957,7 @@ exports[`Storyshots Molecules | Pagination Compact on mobile 1`] = `
               className="c5"
             >
               <span
-                className="c17"
+                className="c18"
               >
                 <div
                   className="c8"
@@ -2976,13 +2973,13 @@ exports[`Storyshots Molecules | Pagination Compact on mobile 1`] = `
           className="c2"
         >
           <span
-            className="c17"
+            className="c18"
           >
             ...
           </span>
         </div>
         <div
-          className="c14"
+          className="c15"
         >
           <button
             className="NormalizedButton__Button-ey7f5x-0 c3"
@@ -2994,7 +2991,7 @@ exports[`Storyshots Molecules | Pagination Compact on mobile 1`] = `
               className="c5"
             >
               <span
-                className="c17"
+                className="c18"
               >
                 <div
                   className="c8"
@@ -3006,7 +3003,7 @@ exports[`Storyshots Molecules | Pagination Compact on mobile 1`] = `
             </span>
           </button>
         </div>
-      </div>
+      </ul>
       <button
         className="NormalizedButton__Button-ey7f5x-0 c3"
         onClick={[Function]}
@@ -3061,23 +3058,11 @@ exports[`Storyshots Molecules | Pagination Controlled pagination 1`] = `
   align-items: center;
 }
 
-.c8 {
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-}
-
 .c10 {
   box-sizing: border-box;
 }
 
-.c20 {
+.c21 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -3094,12 +3079,12 @@ exports[`Storyshots Molecules | Pagination Controlled pagination 1`] = `
   flex: 1;
 }
 
-.c20 > * {
+.c21 > * {
   padding-left: 4px;
   padding-right: 4px;
 }
 
-.c20 > *:not(:first-child) {
+.c21 > *:not(:first-child) {
   padding-top: 0;
 }
 
@@ -3177,7 +3162,7 @@ exports[`Storyshots Molecules | Pagination Controlled pagination 1`] = `
   line-height: 1.4285714285714286;
 }
 
-.c22 {
+.c23 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #0046FF;
   margin: 0;
@@ -3237,7 +3222,7 @@ exports[`Storyshots Molecules | Pagination Controlled pagination 1`] = `
   outline: 1px dotted ButtonText;
 }
 
-.c21 {
+.c22 {
   font-family: inherit;
   font-size: 100%;
   line-height: 1.15;
@@ -3266,30 +3251,35 @@ exports[`Storyshots Molecules | Pagination Controlled pagination 1`] = `
   cursor: not-allowed;
 }
 
-.c21,
-.c21[type='button'],
-.c21[type='reset'],
-.c21[type='submit'] {
+.c22,
+.c22[type='button'],
+.c22[type='reset'],
+.c22[type='submit'] {
   -webkit-appearance: button;
 }
 
-.c21::-moz-focus-inner,
-.c21[type='button']::-moz-focus-inner,
-.c21[type='reset']::-moz-focus-inner,
-.c21[type='submit']::-moz-focus-inner {
+.c22::-moz-focus-inner,
+.c22[type='button']::-moz-focus-inner,
+.c22[type='reset']::-moz-focus-inner,
+.c22[type='submit']::-moz-focus-inner {
   border-style: none;
   padding: 0;
 }
 
-.c21:-moz-focusring,
-.c21[type='button']:-moz-focusring,
-.c21[type='reset']:-moz-focusring,
-.c21[type='submit']:-moz-focusring {
+.c22:-moz-focusring,
+.c22[type='button']:-moz-focusring,
+.c22[type='reset']:-moz-focusring,
+.c22[type='submit']:-moz-focusring {
   outline: 1px dotted ButtonText;
 }
 
 .c18 {
   width: 152px;
+}
+
+.c20 {
+  margin: 0;
+  padding: 0;
 }
 
 .c4 {
@@ -3382,6 +3372,11 @@ exports[`Storyshots Molecules | Pagination Controlled pagination 1`] = `
   width: 240px;
 }
 
+.c8 {
+  margin: 0;
+  padding: 0;
+}
+
 @media not all and (max-width:975px) {
   .c0 {
     display: none;
@@ -3436,7 +3431,7 @@ exports[`Storyshots Molecules | Pagination Controlled pagination 1`] = `
           </span>
         </button>
       </div>
-      <div
+      <ul
         className="c8 c9"
       >
         <div
@@ -3544,7 +3539,7 @@ exports[`Storyshots Molecules | Pagination Controlled pagination 1`] = `
             </span>
           </button>
         </div>
-      </div>
+      </ul>
       <div
         className="c2"
       >
@@ -3613,14 +3608,14 @@ exports[`Storyshots Molecules | Pagination Controlled pagination 1`] = `
           </div>
         </span>
       </button>
-      <div
-        className="c20"
+      <ul
+        className="c20 c21"
       >
         <div
           className="c10"
         >
           <button
-            className="NormalizedButton__Button-ey7f5x-0 c21"
+            className="NormalizedButton__Button-ey7f5x-0 c22"
             disabled={true}
             onClick={[Function]}
             type="button"
@@ -3629,7 +3624,7 @@ exports[`Storyshots Molecules | Pagination Controlled pagination 1`] = `
               className="c5"
             >
               <span
-                className="c22"
+                className="c23"
               >
                 <div
                   className="c7"
@@ -3725,7 +3720,7 @@ exports[`Storyshots Molecules | Pagination Controlled pagination 1`] = `
             </span>
           </button>
         </div>
-      </div>
+      </ul>
       <button
         className="NormalizedButton__Button-ey7f5x-0 c3"
         onClick={[Function]}
@@ -3780,23 +3775,11 @@ exports[`Storyshots Molecules | Pagination Regular 1`] = `
   align-items: center;
 }
 
-.c8 {
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-}
-
 .c10 {
   box-sizing: border-box;
 }
 
-.c20 {
+.c21 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -3813,12 +3796,12 @@ exports[`Storyshots Molecules | Pagination Regular 1`] = `
   flex: 1;
 }
 
-.c20 > * {
+.c21 > * {
   padding-left: 4px;
   padding-right: 4px;
 }
 
-.c20 > *:not(:first-child) {
+.c21 > *:not(:first-child) {
   padding-top: 0;
 }
 
@@ -3896,7 +3879,7 @@ exports[`Storyshots Molecules | Pagination Regular 1`] = `
   line-height: 1.4285714285714286;
 }
 
-.c22 {
+.c23 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #0046FF;
   margin: 0;
@@ -3956,7 +3939,7 @@ exports[`Storyshots Molecules | Pagination Regular 1`] = `
   outline: 1px dotted ButtonText;
 }
 
-.c21 {
+.c22 {
   font-family: inherit;
   font-size: 100%;
   line-height: 1.15;
@@ -3985,30 +3968,35 @@ exports[`Storyshots Molecules | Pagination Regular 1`] = `
   cursor: not-allowed;
 }
 
-.c21,
-.c21[type='button'],
-.c21[type='reset'],
-.c21[type='submit'] {
+.c22,
+.c22[type='button'],
+.c22[type='reset'],
+.c22[type='submit'] {
   -webkit-appearance: button;
 }
 
-.c21::-moz-focus-inner,
-.c21[type='button']::-moz-focus-inner,
-.c21[type='reset']::-moz-focus-inner,
-.c21[type='submit']::-moz-focus-inner {
+.c22::-moz-focus-inner,
+.c22[type='button']::-moz-focus-inner,
+.c22[type='reset']::-moz-focus-inner,
+.c22[type='submit']::-moz-focus-inner {
   border-style: none;
   padding: 0;
 }
 
-.c21:-moz-focusring,
-.c21[type='button']:-moz-focusring,
-.c21[type='reset']:-moz-focusring,
-.c21[type='submit']:-moz-focusring {
+.c22:-moz-focusring,
+.c22[type='button']:-moz-focusring,
+.c22[type='reset']:-moz-focusring,
+.c22[type='submit']:-moz-focusring {
   outline: 1px dotted ButtonText;
 }
 
 .c18 {
   width: 152px;
+}
+
+.c20 {
+  margin: 0;
+  padding: 0;
 }
 
 .c4 {
@@ -4101,6 +4089,11 @@ exports[`Storyshots Molecules | Pagination Regular 1`] = `
   width: 240px;
 }
 
+.c8 {
+  margin: 0;
+  padding: 0;
+}
+
 @media not all and (max-width:975px) {
   .c0 {
     display: none;
@@ -4155,7 +4148,7 @@ exports[`Storyshots Molecules | Pagination Regular 1`] = `
           </span>
         </button>
       </div>
-      <div
+      <ul
         className="c8 c9"
       >
         <div
@@ -4263,7 +4256,7 @@ exports[`Storyshots Molecules | Pagination Regular 1`] = `
             </span>
           </button>
         </div>
-      </div>
+      </ul>
       <div
         className="c2"
       >
@@ -4332,14 +4325,14 @@ exports[`Storyshots Molecules | Pagination Regular 1`] = `
           </div>
         </span>
       </button>
-      <div
-        className="c20"
+      <ul
+        className="c20 c21"
       >
         <div
           className="c10"
         >
           <button
-            className="NormalizedButton__Button-ey7f5x-0 c21"
+            className="NormalizedButton__Button-ey7f5x-0 c22"
             disabled={true}
             onClick={[Function]}
             type="button"
@@ -4348,7 +4341,7 @@ exports[`Storyshots Molecules | Pagination Regular 1`] = `
               className="c5"
             >
               <span
-                className="c22"
+                className="c23"
               >
                 <div
                   className="c7"
@@ -4444,7 +4437,7 @@ exports[`Storyshots Molecules | Pagination Regular 1`] = `
             </span>
           </button>
         </div>
-      </div>
+      </ul>
       <button
         className="NormalizedButton__Button-ey7f5x-0 c3"
         onClick={[Function]}
