@@ -9,6 +9,7 @@ export type InnerProps = {
   fullScreenMobile?: boolean;
   /** @default false */
   closeOnBackdropClick?: boolean;
+  isStatusModal?: boolean;
 };
 
 export type BackdropProps = {
@@ -20,6 +21,7 @@ export type DialogProps = {
   show: boolean;
   onClick: (e: React.MouseEvent<HTMLElement>) => void;
   fullScreenMobile?: boolean;
+  isStatusModal?: boolean;
 };
 
 export type Props = {

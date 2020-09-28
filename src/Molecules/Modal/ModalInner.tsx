@@ -30,7 +30,9 @@ export const Backdrop = styled(Flexbox)<BackdropProps>`
       : `background-color: ${p.theme.color.modalBackdrop};`}
 `;
 
-const Dialog = styled(motion.div)<DialogProps>`
+const Dialog = styled(motion.div).withConfig({
+  shouldForwardProp: (prop) => !['isStatusModal'].includes(prop),
+})<DialogProps>`
   box-sizing: border-box;
   padding: ${({ theme }) => theme.spacing.unit(PADDING_MOBILE)}px;
   border: 0;
@@ -40,6 +42,7 @@ const Dialog = styled(motion.div)<DialogProps>`
   flex-direction: column;
   max-height: 100vh;
   max-width: 100%;
+  width: 100%;
 
   ${({ theme }) => theme.media.lessThan(theme.breakpoints.sm)} {
     ${(p) =>
@@ -60,13 +63,17 @@ const Dialog = styled(motion.div)<DialogProps>`
     box-shadow: 0 2px 2px 0 ${({ theme }) => theme.color.shadowModal};
   }
 
-  ${({ theme }) => theme.media.greaterThan(theme.breakpoints.md)} {
-    width: ${({ theme }) => theme.spacing.unit(135)}px;
-  }
+  ${({ theme, isStatusModal }) =>
+    !isStatusModal &&
+    `${theme.media.greaterThan(theme.breakpoints.md)} {
+        width: ${theme.spacing.unit(135)}px;
+      }`}
 
-  ${({ theme }) => theme.media.greaterThan(theme.breakpoints.lg)} {
-    width: ${({ theme }) => theme.spacing.unit(170)}px;
-  }
+  ${({ theme, isStatusModal }) =>
+    !isStatusModal &&
+    `${theme.media.greaterThan(theme.breakpoints.lg)} {
+        width: ${theme.spacing.unit(170)}px;
+      }`}
 `;
 
 const CloseButton = styled(NormalizedElements.Button)`
@@ -109,6 +116,7 @@ export const ModalInner: React.FC<Props> = ({
   hideClose = false,
   closeOnBackdropClick = false,
   fullScreenMobile = true,
+  isStatusModal=false
 }) => {
   const [show, setShow] = useState(false);
   const escapePress = useKeyPress('Escape');
@@ -160,6 +168,9 @@ export const ModalInner: React.FC<Props> = ({
     onClose();
   }
 
+  console.log("inner", isStatusModal);
+
+
   return (
     <>
       <FocusLock autoFocus={autoFocus}>
@@ -181,6 +192,7 @@ export const ModalInner: React.FC<Props> = ({
               ref={dialogRef}
               onClick={handleDialogClick}
               fullScreenMobile={fullScreenMobile}
+              isStatusModal={isStatusModal}
             >
               {hasHeader && <Header>{title && <Title title={title} uid={titleId} />}</Header>}
               {children}

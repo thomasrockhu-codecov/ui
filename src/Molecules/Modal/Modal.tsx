@@ -36,6 +36,8 @@ export const Modal: React.FC<Props> & {
 
   const shouldRender = isControlled ? isOpenExternal : isOpenInternal;
 
+
+
   return shouldRender ? (
     <Portal>
       <ModalInner {...rest} onClose={onClose} />
