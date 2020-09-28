@@ -460,6 +460,49 @@ export const notFullScreenMobile = () => {
   return <Example />;
 };
 
+export const statusModal = () => {
+  const Example = () => {
+    const [open, setOpen] = useState(true);
+
+    const onOpen = () => {
+      setOpen(true);
+    };
+
+    const onClose = () => {
+      setOpen(false);
+    };
+
+    return (
+      <div>
+        <button type="button" onClick={onOpen}>
+          Open modal
+        </button>
+        <ScrollMaker />
+        {/* ScrollMaker is just used to show how the Modal locks scrolling when open */}
+        <Modal onClose={onClose} open={open} closeOnBackdropClick isStatusModal fullScreenMobile={false}>
+          <Box md={{ pt: 5 }}>
+            <Flexbox container direction="column" alignItems="center" gutter={6} md={{ gutter: 7 }}>
+              <Icon.CheckMarkCircle color={(t) => t.color.positive} size={24} />
+              <Flexbox container justifyContent="center">
+                <Typography type="title2">Title</Typography>
+              </Flexbox>
+              <Flexbox container justifyContent="center">
+                <Typography type="primary">Lorum ipsum</Typography>
+              </Flexbox>
+              <Flexbox item>
+                <Box pt={2}>
+                  <Button size="l">Ok</Button>
+                </Box>
+              </Flexbox>
+            </Flexbox>
+          </Box>
+        </Modal>
+      </div>
+    );
+  };
+  return <Example />;
+};
+
 notFullScreenMobile.story = {
   name: 'Not full screen mobile',
 };
