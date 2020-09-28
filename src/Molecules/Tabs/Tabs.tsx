@@ -79,6 +79,7 @@ export const Tabs: ContainerComponent = ({
   activeTabIndex,
   className,
   height = 8,
+  TabContentWrapper,
 }) => {
   // eslint-disable-next-line prefer-const
   let [active, setActive] = useState(initialActiveTabIndex);
@@ -122,17 +123,28 @@ export const Tabs: ContainerComponent = ({
         </Flexbox>,
       );
 
+      const tempProps = {
+        id: `tabs-tabpanel-${i}`,
+        role: 'tabpanel',
+        'aria-labelledby': `tabs-tab-${i}`,
+        hidden: !isActive,
+      };
+
+      const Temp = TabContentWrapper ? (
+        <TabContentWrapper {...tempProps}>{c}</TabContentWrapper>
+      ) : (
+        <Content
+          id={`tabs-tabpanel-${i}`}
+          role="tabpanel"
+          aria-labelledby={`tabs-tab-${i}`}
+          hidden={!isActive}
+        >
+          {c}
+        </Content>
+      );
+
       if (isActive) {
-        contents = (
-          <Content
-            id={`tabs-tabpanel-${i}`}
-            role="tabpanel"
-            aria-labelledby={`tabs-tab-${i}`}
-            hidden={!isActive}
-          >
-            {c}
-          </Content>
-        );
+        contents = Temp;
       }
     }
   });

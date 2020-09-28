@@ -23,6 +23,7 @@ export type ContainerProps = {
   children: React.ReactNode;
   className?: string;
   height?: number;
+  TabContentWrapper?: React.ComponentType;
 };
 
 export type ItemComponent = React.FC<ItemProps>;

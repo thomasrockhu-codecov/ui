@@ -6,13 +6,13 @@ import { Tabs, Typography } from '../..';
 import docs from './Tabs.mdx';
 
 const SpacingInside = styled.div`
-  padding-left: ${p => p.theme.spacing.unit(5)}px;
-  padding-right: ${p => p.theme.spacing.unit(5)}px;
-  padding-top: ${p => p.theme.spacing.unit(4)}px;
+  padding-left: ${(p) => p.theme.spacing.unit(5)}px;
+  padding-right: ${(p) => p.theme.spacing.unit(5)}px;
+  padding-top: ${(p) => p.theme.spacing.unit(4)}px;
 `;
 
 const StyledTabs = styled(Tabs)`
-  padding: 0 ${p => p.theme.spacing.unit(5)}px;
+  padding: 0 ${(p) => p.theme.spacing.unit(5)}px;
 `;
 
 export default {
@@ -48,6 +48,34 @@ export const defaultStory = () => (
 
 defaultStory.story = {
   name: 'Default',
+};
+
+export const withCustomContent = () => (
+  <Typography type="secondary">
+    <Tabs TabContentWrapper={styled.section``}>
+      <Tabs.Tab title="One" onTitleClick={action('Clicked title1')}>
+        Ones children
+      </Tabs.Tab>
+      <Tabs.Tab
+        title={
+          <div>
+            Node as well
+            <span role="img" aria-label="goodjob">
+              👍
+            </span>
+          </div>
+        }
+        onTitleClick={action('Clicked title2')}
+      >
+        Moving focus from a tab will put it on the next <a href="#link">focusable</a> Tab in the tab
+        panel.
+      </Tabs.Tab>
+    </Tabs>
+  </Typography>
+);
+
+withCustomContent.story = {
+  name: 'With custom content wrapper',
 };
 
 export const withCustomStylingLikeSpacing = () => (
