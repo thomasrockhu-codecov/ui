@@ -1,3 +1,10 @@
+## [3.27.2](https://github.com/nordnet/ui/compare/v3.27.1...v3.27.2) (2020-09-29)
+
+
+### Bug Fixes
+
+* 🐛 reset pagination if totalItems or itemsPerPage changes ([980085a](https://github.com/nordnet/ui/commit/980085a))
+
 ## [3.27.1](https://github.com/nordnet/ui/compare/v3.27.0...v3.27.1) (2020-09-29)
 
 
