@@ -50,38 +50,28 @@ defaultStory.story = {
   name: 'Default',
 };
 
-const StyledContentTabs = styled(Tabs)`
-  ${Tabs.components.Content} {
-    background: blue;
+const StyledTabsContent = styled(Tabs)`
+  & ~ ${Tabs.components.TabContent} {
+    height: inherit;
+    background: ${({ theme }) => theme.color.sliderBackgroundColor};
   }
 `;
 
-export const withCustomContent = () => (
+export const withStyledTabContent = () => (
   <Typography type="secondary">
-    <StyledContentTabs>
-      <StyledContentTabs.Tab title="One" onTitleClick={action('Clicked title1')}>
-        Ones children
-      </StyledContentTabs.Tab>
-      <StyledContentTabs.Tab
-        title={
-          <div>
-            Node as well
-            <span role="img" aria-label="goodjob">
-              👍
-            </span>
-          </div>
-        }
-        onTitleClick={action('Clicked title2')}
-      >
-        Moving focus from a tab will put it on the next <a href="#link">focusable</a> Tab in the tab
-        panel.
-      </StyledContentTabs.Tab>
-    </StyledContentTabs>
+    <StyledTabsContent>
+      <Tabs.Tab title="One" onTitleClick={action('Clicked title1')}>
+        Tab 1. Content have gray background
+      </Tabs.Tab>
+      <Tabs.Tab title="Two" onTitleClick={action('Clicked title2')}>
+        Tab 2. Content have gray background
+      </Tabs.Tab>
+    </StyledTabsContent>
   </Typography>
 );
 
-withCustomContent.story = {
-  name: 'With custom content wrapper',
+withStyledTabContent.story = {
+  name: 'With styled tab content',
 };
 
 export const withCustomStylingLikeSpacing = () => (
