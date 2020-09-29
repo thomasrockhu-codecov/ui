@@ -123,28 +123,19 @@ export const Tabs: ContainerComponent = ({
         </Flexbox>,
       );
 
-      const tempProps = {
-        id: `tabs-tabpanel-${i}`,
-        role: 'tabpanel',
-        'aria-labelledby': `tabs-tab-${i}`,
-        hidden: !isActive,
-      };
-
-      const Temp = TabContentWrapper ? (
-        <TabContentWrapper {...tempProps}>{c}</TabContentWrapper>
-      ) : (
-        <Content
-          id={`tabs-tabpanel-${i}`}
-          role="tabpanel"
-          aria-labelledby={`tabs-tab-${i}`}
-          hidden={!isActive}
-        >
-          {c}
-        </Content>
-      );
-
       if (isActive) {
-        contents = Temp;
+        const tabContentProps = {
+          id: `tabs-tabpanel-${i}`,
+          role: 'tabpanel',
+          'aria-labelledby': `tabs-tab-${i}`,
+          hidden: !isActive,
+        };
+
+        contents = TabContentWrapper ? (
+          <TabContentWrapper {...tabContentProps}>{c}</TabContentWrapper>
+        ) : (
+          <Content {...tabContentProps}>{c}</Content>
+        );
       }
     }
   });
