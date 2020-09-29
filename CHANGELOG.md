@@ -1,3 +1,11 @@
+## [3.26.8-beta.1](https://github.com/nordnet/ui/compare/v3.26.7...v3.26.8-beta.1@beta) (2020-09-29)
+
+
+### Bug Fixes
+
+* adjust modal widths ([91ff4f9](https://github.com/nordnet/ui/commit/91ff4f9))
+* status modal option ([2acc24f](https://github.com/nordnet/ui/commit/2acc24f))
+
 ## [3.26.7](https://github.com/nordnet/ui/compare/v3.26.6...v3.26.7) (2020-09-25)
 
 
