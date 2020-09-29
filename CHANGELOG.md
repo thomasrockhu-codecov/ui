@@ -1,3 +1,10 @@
+## [3.27.1](https://github.com/nordnet/ui/compare/v3.27.0...v3.27.1) (2020-09-29)
+
+
+### Bug Fixes
+
+* active step can be failed ([01760c6](https://github.com/nordnet/ui/commit/01760c6))
+
 # [3.27.0](https://github.com/nordnet/ui/compare/v3.26.7...v3.27.0) (2020-09-29)
 
 
