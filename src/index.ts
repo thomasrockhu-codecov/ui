@@ -1,5 +1,6 @@
 /** Atoms */
 import { Table, Tbody, Td, Tfoot, Th, Thead, Tr } from './Atoms/Table';
+import Badge from './Atoms/Badge';
 import Box from './Atoms/Box';
 import Card from './Atoms/Card';
 import CssGrid from './Atoms/CssGrid';
@@ -81,6 +82,7 @@ export {
   Accordion,
   AccordionItem,
   Avatar,
+  Badge,
   BarScale,
   Box,
   Button,
