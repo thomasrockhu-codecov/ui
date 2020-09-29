@@ -1,3 +1,25 @@
+# [3.27.0](https://github.com/nordnet/ui/compare/v3.26.7...v3.27.0) (2020-09-29)
+
+
+### Bug Fixes
+
+* 🐛 click on page item on mobile and code cleanup ([3024c70](https://github.com/nordnet/ui/commit/3024c70))
+* 🐛 incorrect condition in if-statement ([efa9a12](https://github.com/nordnet/ui/commit/efa9a12))
+* 🐛 prevent prop leak to DOM in pagination component ([d7dbfae](https://github.com/nordnet/ui/commit/d7dbfae))
+* 🐛 total pagination width goes outside bounderies xs device ([f536bf2](https://github.com/nordnet/ui/commit/f536bf2))
+
+
+### Features
+
+* 🎸 add mobile default and compact pagination components ([ab4c7b5](https://github.com/nordnet/ui/commit/ab4c7b5))
+* 🎸 add navigation role and visually hidden labels ([ac78d20](https://github.com/nordnet/ui/commit/ac78d20))
+* 🎸 add pagination component ([ee0a298](https://github.com/nordnet/ui/commit/ee0a298))
+* 🎸 add stories to pagination ([18d0a23](https://github.com/nordnet/ui/commit/18d0a23))
+* 🎸 dynamic a11y labels ([28ee5ba](https://github.com/nordnet/ui/commit/28ee5ba))
+* 🎸 improve a11y for pagination ([14e4f64](https://github.com/nordnet/ui/commit/14e4f64))
+* 🎸 pagination support uncontrolled behaviour ([cd1ba98](https://github.com/nordnet/ui/commit/cd1ba98))
+* 🎸 wip improved ally ([4a9763a](https://github.com/nordnet/ui/commit/4a9763a))
+
 ## [3.26.7](https://github.com/nordnet/ui/compare/v3.26.6...v3.26.7) (2020-09-25)
 
 
