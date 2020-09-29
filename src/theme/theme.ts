@@ -240,6 +240,7 @@ const createColors = (type: ThemeColorsVersion): ThemeColors<typeof type> => {
     progressBarText: rawColor.white,
     progressBarDone: rawColor.positive,
     progressBarActive: rawColor.cta,
+    progressBarFailure: rawColor.negative,
     progressBarNext: rawColor.gray4,
     indexFundsBackground: rawColor.gray6,
     indexFundsNorwegianAccent: rawColor.brandBlue,
