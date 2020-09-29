@@ -155,5 +155,11 @@ export const Tabs: ContainerComponent = ({
     </>
   );
 };
+
+const components = {
+  Content,
+};
+
 Tabs.displayName = 'Tabs';
 Tabs.Tab = Item;
+Tabs.components = components;
