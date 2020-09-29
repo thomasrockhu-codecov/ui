@@ -1,7 +1,7 @@
 import { Meta, Story, Preview, Props } from '@storybook/addon-docs/blocks';
 import { IntlProvider } from 'react-intl';
 import FlexTable from './FlexTable';
-import { Number } from "../..";
+import { Number } from '../..';
 
 <Meta title="Molecules | FlexTable" component={FlexTable} />
 
@@ -36,11 +36,13 @@ The Flextable component only handles UI states.
 </Preview>
 
 **Table of Contents**
+
 - Customization
 - FlexTable component
+- Table Title
 - Header
   - Sorting
-  - Custom Header 
+  - Custom Header
 - Cell
   - Custom Cell
 - Footer
@@ -49,7 +51,6 @@ The Flextable component only handles UI states.
 - Constants
 - Design Notes
 - Performance
-
 
 ## Customization
 
@@ -129,11 +130,25 @@ This example cell will fit in with the rest of the cells and change its font siz
   </FlexTable>
 </Preview>
 
+## Layout properties
+
+The layout of the table can be customized using the same properties as `FlexBox` uses.
+For performance reason as well as to make the table compatible with server-side rendering (SSR), the layout properties have to be attached to each of the `Header`, `Cell` and `Footer` components with the same `columnId`.
+If no layout properties are specified, some default values will be used.
+
+**NOTE: Previously the layout properties were only attached to the `Header` component, and that would set the layout for the entire column. This API was designed with ease-of-use in mind, but unfortunately it creates
+some performance problems with cells being rendered multiple times and it does not work at all in an SSR context. This API has therefore been deprecated and layout properties should now be added to each of the cells in a column instead.**
+
+## Table Title
+
+Title for the the table can be a string or a react component.
+If a title is set for the table, an id must be set as well. The id will be set as as the id for the whole table, but also used as a base for the id of the table title.
+
+**NOTE: For some reason if Flextable is wrapped as a styled component the TypeScript validation for the id and title props breake. This is important to know because if there is a title prop then there must be an id for a11y reasons.
+
 ## Header
 
-Header sets the layout for the entire column and handles sorting as well.
-The layout is set using the same properties that `Flexbox`uses.
-Setting the same `columnId` on `Cell` and `Footer` makes them inherit the layout properties.
+`Header` uses layout properties from props and handles sorting.
 The `fontSize` defined in the `FlexTable` component is inherited here. If the content does not fit within the `Header`, it will be truncated and produces a tooltip on hover via the molecule `TruncateWithToolTip`.
 
 <Preview>
@@ -149,8 +164,12 @@ The `fontSize` defined in the `FlexTable` component is inherited here. If the co
     </FlexTable.HeaderRow>
     <FlexTable.Row>
       <FlexTable.Cell columnId="instrument-name">Ericsson</FlexTable.Cell>
-      <FlexTable.Cell columnId="currency">SEK</FlexTable.Cell>
-      <FlexTable.Cell columnId="country">SE</FlexTable.Cell>
+      <FlexTable.Cell columnId="currency" flex="0 0 150px">
+        SEK
+      </FlexTable.Cell>
+      <FlexTable.Cell columnId="country" justifyContent="flex-end" flex="2">
+        SE
+      </FlexTable.Cell>
     </FlexTable.Row>
   </FlexTable>
 </Preview>
@@ -170,8 +189,12 @@ The `fontSize` defined in the `FlexTable` component is inherited here. If the co
     </FlexTable.HeaderRow>
     <FlexTable.Row>
       <FlexTable.Cell columnId="instrument-name">Ericsson</FlexTable.Cell>
-      <FlexTable.Cell columnId="currency">SEK</FlexTable.Cell>
-      <FlexTable.Cell columnId="country">SE</FlexTable.Cell>
+      <FlexTable.Cell columnId="currency" hidden md={{ hidden: false }}>
+        SEK
+      </FlexTable.Cell>
+      <FlexTable.Cell columnId="country" md={{ justifyContent: 'flex-end' }}>
+        SE
+      </FlexTable.Cell>
     </FlexTable.Row>
   </FlexTable>
 </Preview>
@@ -179,9 +202,9 @@ The `fontSize` defined in the `FlexTable` component is inherited here. If the co
 ### Sorting
 
 To enable sorting, the `sortable` property has to be set to true. The user can have either a controlled or uncontrolled sorting state by setting the `sortOrder` property.
-In an uncontrolled state the header will unsort the other headers when a header is sorted. The default sorting rotation is _unsorted --> ascending --> descending --> unsorted_. 
+In an uncontrolled state the header will unsort the other headers when a header is sorted. The default sorting rotation is _unsorted --> ascending --> descending --> unsorted_.
 
-Note: To ease sorting, we recommend that the `columnId` for each column has the same name as the data property that the column represents. 
+Note: To ease sorting, we recommend that the `columnId` for each column has the same name as the data property that the column represents.
 In the example below, The `columnId` of the first column represents `instrumentName` field in the data, `columnId` of second column represents `currency` etc.
 
 ```jsx
@@ -225,8 +248,6 @@ const InstrumentTable = () => (
   )
 );
 ```
-
-
 
 ### Custom Header
 
@@ -276,7 +297,7 @@ const StyledFlexboxContainer = styled(Flexbox)
 
 ## Cell
 
-Cell consumes the layout properties of the `Header` with the same `columnId`.
+Cell uses the layout properties from props.
 
 ### Custom Cell
 
@@ -311,16 +332,18 @@ Similar functionality to `Cell`. Has like `Header` the property `isContent = fal
         <FlexTable.Header columnId="amt" hidden md={{ hidden: false }} justifyContent="flex-end">
           Amount
         </FlexTable.Header>
-        <FlexTable.Header columnId="percentage" justifyContent="flex-end">Percentage</FlexTable.Header>
+        <FlexTable.Header columnId="percentage" justifyContent="flex-end">
+          Percentage
+        </FlexTable.Header>
       </FlexTable.HeaderRow>
       <FlexTable.Row>
         <FlexTable.Cell columnId="instrument-name">Ericsson</FlexTable.Cell>
-        <FlexTable.Cell columnId="amt">
+        <FlexTable.Cell columnId="amt" hidden md={{ hidden: false }} justifyContent="flex-end">
           <FlexTable.Cell.TextWrapper>
             <Number value={100} />
           </FlexTable.Cell.TextWrapper>
         </FlexTable.Cell>
-        <FlexTable.Cell columnId="percentage">
+        <FlexTable.Cell columnId="percentage" justifyContent="flex-end">
           <FlexTable.Cell.TextWrapper>
             <Number value={25} percentage />
           </FlexTable.Cell.TextWrapper>
@@ -328,12 +351,12 @@ Similar functionality to `Cell`. Has like `Header` the property `isContent = fal
       </FlexTable.Row>
       <FlexTable.Row>
         <FlexTable.Cell columnId="instrument-name">Apple</FlexTable.Cell>
-        <FlexTable.Cell columnId="amt">
+        <FlexTable.Cell columnId="amt" hidden md={{ hidden: false }} justifyContent="flex-end">
           <FlexTable.Cell.TextWrapper>
             <Number value={300} />
           </FlexTable.Cell.TextWrapper>
         </FlexTable.Cell>
-        <FlexTable.Cell columnId="percentage">
+        <FlexTable.Cell columnId="percentage" justifyContent="flex-end">
           <FlexTable.Cell.TextWrapper>
             <Number value={75} percentage />
           </FlexTable.Cell.TextWrapper>
@@ -341,12 +364,12 @@ Similar functionality to `Cell`. Has like `Header` the property `isContent = fal
       </FlexTable.Row>
       <FlexTable.FooterRow>
         <FlexTable.Footer columnId="instrument-name">Summary</FlexTable.Footer>
-        <FlexTable.Footer columnId="amt">
+        <FlexTable.Footer columnId="amt" hidden md={{ hidden: false }} justifyContent="flex-end">
           <FlexTable.Footer.TextWrapper>
             <Number value={400} />
           </FlexTable.Footer.TextWrapper>
         </FlexTable.Footer>
-        <FlexTable.Footer columnId="percentage">
+        <FlexTable.Footer columnId="percentage" justifyContent="flex-end">
           <FlexTable.Footer.TextWrapper>
             <Number value={100} percentage />
           </FlexTable.Footer.TextWrapper>
@@ -368,7 +391,7 @@ Conditionally expand `expandItems` and/or `expandChildren` can be implemented in
 const ConditionalMediaExpand = () => {
   const columnData = [{ label: 'Country', value: 'SE' }];
   return (
-    <StyledFlexTable expandable md={{ expandable: false }}>
+    <FlexTable expandable md={{ expandable: false }}>
       <FlexTable.HeaderRow>
         <FlexTable.Header columnId="instrumentName">Instrument Name</FlexTable.Header>
         <FlexTable.Header columnId="country" hidden md={{ hidden: false }}>
@@ -378,9 +401,11 @@ const ConditionalMediaExpand = () => {
 
       <FlexTable.Row expandItems={columnData} md={{ expandItems: [] }}>
         <FlexTable.Cell columnId="instrumentName">Ericsson</FlexTable.Cell>
-        <FlexTable.Cell columnId="country">SE</FlexTable.Cell>
+        <FlexTable.Cell columnId="country" hidden md={{ hidden: false }}>
+          SE
+        </FlexTable.Cell>
       </FlexTable.Row>
-    </StyledFlexTable>
+    </FlexTable>
   );
 };
 ```
@@ -406,22 +431,23 @@ This keeps the row from rendering a chevron and instead provides a empty `Header
    The `id` that is assigned to `HeaderRow`'s empty `Header` and `Row`'s chevron.
 
 1. `ICON_COLUMN_DEFAULT_FLEX_PROPS`
-    
-    The layout properties used on the Icon column.
+
+   The layout properties used on the Icon column.
 
 ## Design Notes
+
 These pertain to the design standards of the FlexTable
 
 - In general, columns with cells that use number values should be right aligned, i.e. `justifyContent="flex-end"`
 - When `density` is `s`, `fontSize` value should be `s`. For other `density` values `fontSize` could be either `s` or `m`
 - If the column header ends with a currency, the currency shouldn't truncate. An example of how to truncate the rest can be found in the stories
 
-
 ## Performance
+
 The table should be able to handle large numbers of rows without a hitch. However sorting all the rows creates a lot of unnecessary re-renders. Each row is re-rendered to its new position
 and also each cell. That means for a 50 row table with 10 columns, we will have at least 500 components re-rendering. For this reason we have used `React.memo` on all components to
 smoothen data operations that does not change the table content, only the positioning such as when sorting.
 
-- Use `React.memo` on all custom `Row`, `Cell`, `Header` and `Footer` implementations. 
+- Use `React.memo` on all custom `Row`, `Cell`, `Header` and `Footer` implementations.
 - When sending in media objects, make sure that the objects are memoized. This will stop unnecesary re-renders of rows.
 - If you have more than 100 rows, it's worth looking into virtualization of rows. An example can be found in the `FlexTable` stories.

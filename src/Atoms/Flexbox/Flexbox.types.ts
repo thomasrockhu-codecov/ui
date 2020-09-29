@@ -66,12 +66,12 @@ export type ItemProps = {
   title?: string;
 };
 
-type InternalProps = ItemProps & ContainerProps & { className?: string };
+export type FlexProps = ItemProps & ContainerProps & { className?: string };
 type MediaRelatedProps<T> = {
   sm?: Partial<T>;
   md?: Partial<T>;
   lg?: Partial<T>;
+  xl?: Partial<T>;
 };
 
-export type Props = MediaRelatedProps<InternalProps> &
-  InternalProps & { children?: React.ReactNode };
+export type Props = MediaRelatedProps<FlexProps> & FlexProps & { children?: React.ReactNode };

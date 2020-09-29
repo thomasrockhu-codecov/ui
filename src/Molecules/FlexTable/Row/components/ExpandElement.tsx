@@ -26,6 +26,7 @@ export const ExpandElement: React.FC<
       expanded={expanded}
       onClick={() => (onExpandToggle ? onExpandToggle(!expanded) : setExpand(!expanded))}
       disabled={disabled}
+      {...ICON_COLUMN_DEFAULT_FLEX_PROPS}
     />
   );
 };

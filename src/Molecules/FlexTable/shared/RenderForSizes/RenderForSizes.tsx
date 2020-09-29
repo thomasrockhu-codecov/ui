@@ -16,7 +16,7 @@ export const getScreenMedia: GetScreenMedia = ({ xs, sm, md, lg, xl }) => {
     { size: 'lg' as ScreenSize, ...lg },
     { size: 'xl' as ScreenSize, ...xl },
   ]
-    .filter(media => Object.keys(media).length > 1)
+    .filter((media) => Object.keys(media).length > 1)
     .map((_, index, arr) => {
       const sizesUpToNow = arr.slice(0, index + 1);
       const screenSizeProps = sizesUpToNow.reduce<MediaPropsAndSize>(
@@ -59,15 +59,18 @@ export const RenderForSizes: RenderForSizesComponent = ({
         const { size } = props;
         const nextSize = arr[index + 1] ? arr[index + 1].size : null;
         const component = Component(props);
-        const container = Container({ children: component, ...props });
 
         if (size === 'xs' && !nextSize) {
+          const container = Container({ children: component, ...props });
           return <React.Fragment key={size}>{container}</React.Fragment>;
         }
 
-        const as = (() => container) as React.FC;
+        const as = (({ className }: { className?: string }) =>
+          Container({ children: component, className, ...props })) as React.FC;
 
-        return <IsomorphicMedia key={size} query={t => getMediaQuery(t, size, nextSize)} as={as} />;
+        return (
+          <IsomorphicMedia key={size} query={(t) => getMediaQuery(t, size, nextSize)} as={as} />
+        );
       })}
     </>
   );

@@ -36,8 +36,8 @@ export const HeaderContent: React.FC<Props & UIProps> = ({
         md={mdTable}
         lg={lgTable}
         xl={xlTable}
-        Container={({ fontSize, children: component }) => (
-          <TextWrapper fontSize={fontSize} sorted={false}>
+        Container={({ fontSize, children: component, className: mediaClassName }) => (
+          <TextWrapper className={mediaClassName} fontSize={fontSize} sorted={false}>
             {component}
           </TextWrapper>
         )}
@@ -53,8 +53,10 @@ export const HeaderContent: React.FC<Props & UIProps> = ({
       md={mdTable}
       lg={lgTable}
       xl={xlTable}
-      Container={({ children: component }) => (
-        <SortButton onClick={onSortClick}>{component}</SortButton>
+      Container={({ children: component, className: mediaClassName }) => (
+        <SortButton className={mediaClassName} onClick={onSortClick}>
+          {component}
+        </SortButton>
       )}
       Component={({ fontSize }) => (
         <StyledFlexboxContainer container>

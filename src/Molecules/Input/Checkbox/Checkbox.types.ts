@@ -1,3 +1,5 @@
+type Size = 's' | 'm';
+
 export type Props = {
   autoFocus?: boolean;
   checked?: boolean;
@@ -6,12 +8,13 @@ export type Props = {
   disabled?: boolean;
   error?: string;
   hasError?: boolean;
-  label: string;
+  label: string | JSX.Element;
   name?: string;
   required?: boolean;
   value?: string;
   visuallyEmphasiseRequired?: boolean;
   width?: string | number;
+  size?: Size;
 
   /**
    * To get a visuals of a focused state

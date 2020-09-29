@@ -274,6 +274,12 @@ export type ThemeColors<Version extends ThemeColorsVersion> = {
   progressBarActive: RawColor['cta'];
   /** gray4 */
   progressBarNext: RawColor['gray4'];
+  /** gray6 */
+  indexFundsBackground: RawColor['gray6'];
+  /** brandBlue */
+  indexFundsNorwegianAccent: RawColor['brandBlue'];
+  /** brandPink, brandBlue, complementaryBlue2, black, complementaryTurquoise1 */
+  indexFundsFinnishAccent: string[];
   paletteMap: string[];
   palettePink: string[];
   paletteGreen: string[];

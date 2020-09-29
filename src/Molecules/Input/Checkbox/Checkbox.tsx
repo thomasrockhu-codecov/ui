@@ -5,17 +5,24 @@ import { FormLabel, Icon, Flexbox, Typography, FormField } from '../../..';
 import { CheckboxComponent, Props, InternalInputProps } from './Checkbox.types';
 import { isString } from '../../../common/utils';
 
-const CHECKBOX_SIZE = 5;
+const CHECKBOX_DEFAULT_SIZE = 5;
 const checkIfHasError = (error?: Props['error']) => isString(error) && error !== '';
 
 const CleanInput = React.forwardRef((props: any, ref: React.Ref<HTMLInputElement>) => (
   <input ref={ref} {...R.omit(['hasError', 'visuallyFocused'], props)} />
 ));
 
-const CheckmarkBox = styled(Flexbox)`
-  width: ${p => p.theme.spacing.unit(CHECKBOX_SIZE)}px;
-  height: ${p => p.theme.spacing.unit(CHECKBOX_SIZE)}px;
-  border: 1px solid ${p => p.theme.color.inputBorder};
+const getSize = (size: Props['size']): number => {
+  if (size && size === 's') {
+    return 4;
+  }
+  return CHECKBOX_DEFAULT_SIZE;
+};
+
+const CheckmarkBox = styled(Flexbox)<{ size: number }>`
+  width: ${(p) => p.theme.spacing.unit(p.size)}px;
+  height: ${(p) => p.theme.spacing.unit(p.size)}px;
+  border: 1px solid ${(p) => p.theme.color.inputBorder};
   position: relative;
   flex-shrink: 0;
 
@@ -36,7 +43,7 @@ const StyledFormLabel = styled(FormLabel)`
   position: relative;
 
   &:hover ${CheckmarkBox} {
-    border-color: ${p => p.theme.color.inputBorderHover};
+    border-color: ${(p) => p.theme.color.inputBorderHover};
   }
 `;
 
@@ -48,24 +55,24 @@ const Input = styled(CleanInput).attrs(() => ({ type: 'checkbox' }))<InternalInp
   cursor: pointer;
 
   &:checked + ${CheckmarkBox} {
-    border-color: ${p => p.theme.color.cta};
-    background: ${p => p.theme.color.cta};
+    border-color: ${(p) => p.theme.color.cta};
+    background: ${(p) => p.theme.color.cta};
 
     svg {
-      fill: ${p => p.theme.color.backgroundInput}
+      fill: ${(p) => p.theme.color.backgroundInput};
     }
   }
-  
+
   &[disabled] + ${CheckmarkBox} {
-    border-color: ${p => p.theme.color.disabledBackground};
+    border-color: ${(p) => p.theme.color.disabledBackground};
   }
 
   &:checked[disabled] + ${CheckmarkBox} {
-    border-color: ${p => p.theme.color.disabledBackground};
-    background: ${p => p.theme.color.disabledBackground};
+    border-color: ${(p) => p.theme.color.disabledBackground};
+    background: ${(p) => p.theme.color.disabledBackground};
   }
 
-  ${p =>
+  ${(p) =>
     p.hasError
       ? `
     & + ${CheckmarkBox} {
@@ -77,10 +84,10 @@ const Input = styled(CleanInput).attrs(() => ({ type: 'checkbox' }))<InternalInp
 
   &:focus + ${CheckmarkBox} {
     &::before {
-      border: 1px solid ${p => p.theme.color.cta};
+      border: 1px solid ${(p) => p.theme.color.cta};
     }
   }
-  ${p =>
+  ${(p) =>
     !p.visuallyFocused
       ? ''
       : `& + ${CheckmarkBox} {
@@ -92,7 +99,7 @@ const Input = styled(CleanInput).attrs(() => ({ type: 'checkbox' }))<InternalInp
 `;
 
 const Label = styled(Typography)`
-  padding-left: ${p => p.theme.spacing.unit(2)}px;
+  padding-left: ${(p) => p.theme.spacing.unit(2)}px;
   white-space: initial;
 `;
 
@@ -101,7 +108,7 @@ const components = {
   CheckmarkBox,
 };
 
-const Checkbox: CheckboxComponent & { components: typeof components } = props => {
+const Checkbox: CheckboxComponent & { components: typeof components } = (props) => {
   const {
     autoFocus,
     checked,
@@ -125,6 +132,7 @@ const Checkbox: CheckboxComponent & { components: typeof components } = props =>
     visuallyFocused,
     width,
     readOnly,
+    size = 'm',
   } = props;
 
   return (
@@ -152,10 +160,10 @@ const Checkbox: CheckboxComponent & { components: typeof components } = props =>
               visuallyFocused,
             }}
           />
-          <CheckmarkBox container alignItems="center" justifyContent="center">
+          <CheckmarkBox container alignItems="center" justifyContent="center" size={getSize(size)}>
             <Icon.CheckMark size={3} color="transparent" />
           </CheckmarkBox>
-          <Label type="secondary" color={t => (disabled ? t.color.disabledText : t.color.text)}>
+          <Label type="secondary" color={(t) => (disabled ? t.color.disabledText : t.color.text)}>
             {visuallyEmphasiseRequired ? `${label} *` : label}
           </Label>
         </Flexbox>

@@ -1,5 +1,324 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`Storyshots Molecules | Input / Checkbox Checkboxes with different size 1`] = `
+.c0 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.c0 > *:not(:first-child) {
+  padding-top: 4px;
+}
+
+.c5 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c7 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c2 {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.c10 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 12px;
+  height: 12px;
+  fill: transparent;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
+}
+
+.c4 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #6E6E69;
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c11 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c1 {
+  width: auto;
+  display: inline-block;
+}
+
+.c9 {
+  width: 16px;
+  height: 16px;
+  border: 1px solid #BCBCB6;
+  position: relative;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+}
+
+.c9::before {
+  content: '';
+  display: block;
+  padding: 2px;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+}
+
+.c13 {
+  width: 20px;
+  height: 20px;
+  border: 1px solid #BCBCB6;
+  position: relative;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+}
+
+.c13::before {
+  content: '';
+  display: block;
+  padding: 2px;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+}
+
+.c3 {
+  position: relative;
+}
+
+.c3:hover .c8 {
+  border-color: #4B4B46;
+}
+
+.c6 {
+  position: absolute;
+  opacity: 0;
+  height: 0;
+  width: 0;
+  cursor: pointer;
+}
+
+.c6:checked + .c8 {
+  border-color: #0046FF;
+  background: #0046FF;
+}
+
+.c6:checked + .c8 svg {
+  fill: #FFFFFF;
+}
+
+.c6[disabled] + .c8 {
+  border-color: #EBEBE8;
+}
+
+.c6:checked[disabled] + .c8 {
+  border-color: #EBEBE8;
+  background: #EBEBE8;
+}
+
+.c6:focus + .c8::before {
+  border: 1px solid #0046FF;
+}
+
+.c12 {
+  padding-left: 8px;
+  white-space: initial;
+}
+
+<div
+  className="c0"
+>
+  <div
+    className="c1"
+    width="auto"
+  >
+    <label
+      className="c2 c3"
+      hidden={false}
+    >
+      <span
+        className="c4"
+      >
+        <div
+          className="c5"
+        >
+          <input
+            className="c6"
+            name="small"
+            type="checkbox"
+            value="1"
+          />
+          <div
+            className="c7 c8 c9"
+          >
+            <svg
+              aria-hidden="true"
+              className="c10"
+              focusable="false"
+              preserveAspectRatio="xMidYMid meet"
+              role="presentation"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M8.76083729 16.4144594L2.20525972 9.86336213 0 12.2093109 8.79670106 21 24 5.30897552 21.7583339 3z"
+              />
+            </svg>
+          </div>
+          <span
+            className="c11 c12"
+          >
+            small
+          </span>
+        </div>
+      </span>
+    </label>
+  </div>
+  <div
+    className="c1"
+    width="auto"
+  >
+    <label
+      className="c2 c3"
+      hidden={false}
+    >
+      <span
+        className="c4"
+      >
+        <div
+          className="c5"
+        >
+          <input
+            className="c6"
+            name="medium"
+            type="checkbox"
+            value="2"
+          />
+          <div
+            className="c7 c8 c13"
+          >
+            <svg
+              aria-hidden="true"
+              className="c10"
+              focusable="false"
+              preserveAspectRatio="xMidYMid meet"
+              role="presentation"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M8.76083729 16.4144594L2.20525972 9.86336213 0 12.2093109 8.79670106 21 24 5.30897552 21.7583339 3z"
+              />
+            </svg>
+          </div>
+          <span
+            className="c11 c12"
+          >
+            medium
+          </span>
+        </div>
+      </span>
+    </label>
+  </div>
+  <div
+    className="c1"
+    width="auto"
+  >
+    <label
+      className="c2 c3"
+      hidden={false}
+    >
+      <span
+        className="c4"
+      >
+        <div
+          className="c5"
+        >
+          <input
+            className="c6"
+            name="default"
+            type="checkbox"
+            value="3"
+          />
+          <div
+            className="c7 c8 c13"
+          >
+            <svg
+              aria-hidden="true"
+              className="c10"
+              focusable="false"
+              preserveAspectRatio="xMidYMid meet"
+              role="presentation"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M8.76083729 16.4144594L2.20525972 9.86336213 0 12.2093109 8.79670106 21 24 5.30897552 21.7583339 3z"
+              />
+            </svg>
+          </div>
+          <span
+            className="c11 c12"
+          >
+            default
+          </span>
+        </div>
+      </span>
+    </label>
+  </div>
+</div>
+`;
+
 exports[`Storyshots Molecules | Input / Checkbox Default 1`] = `
 .c4 {
   box-sizing: border-box;
@@ -550,6 +869,211 @@ Array [
     className="c0"
   />,
 ]
+`;
+
+exports[`Storyshots Molecules | Input / Checkbox Element as label 1`] = `
+.c4 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c6 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c1 {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.c9 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 12px;
+  height: 12px;
+  fill: transparent;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
+}
+
+.c3 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #6E6E69;
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c10 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c12 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c0 {
+  width: auto;
+  display: inline-block;
+}
+
+.c8 {
+  width: 20px;
+  height: 20px;
+  border: 1px solid #BCBCB6;
+  position: relative;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+}
+
+.c8::before {
+  content: '';
+  display: block;
+  padding: 2px;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+}
+
+.c2 {
+  position: relative;
+}
+
+.c2:hover .c7 {
+  border-color: #4B4B46;
+}
+
+.c5 {
+  position: absolute;
+  opacity: 0;
+  height: 0;
+  width: 0;
+  cursor: pointer;
+}
+
+.c5:checked + .c7 {
+  border-color: #0046FF;
+  background: #0046FF;
+}
+
+.c5:checked + .c7 svg {
+  fill: #FFFFFF;
+}
+
+.c5[disabled] + .c7 {
+  border-color: #EBEBE8;
+}
+
+.c5:checked[disabled] + .c7 {
+  border-color: #EBEBE8;
+  background: #EBEBE8;
+}
+
+.c5:focus + .c7::before {
+  border: 1px solid #0046FF;
+}
+
+.c11 {
+  padding-left: 8px;
+  white-space: initial;
+}
+
+<div
+  className="c0"
+  width="auto"
+>
+  <label
+    className="c1 c2"
+    hidden={false}
+  >
+    <span
+      className="c3"
+    >
+      <div
+        className="c4"
+      >
+        <input
+          className="c5"
+          name="example"
+          type="checkbox"
+          value="element"
+        />
+        <div
+          className="c6 c7 c8"
+        >
+          <svg
+            aria-hidden="true"
+            className="c9"
+            focusable="false"
+            preserveAspectRatio="xMidYMid meet"
+            role="presentation"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M8.76083729 16.4144594L2.20525972 9.86336213 0 12.2093109 8.79670106 21 24 5.30897552 21.7583339 3z"
+            />
+          </svg>
+        </div>
+        <span
+          className="c10 c11"
+        >
+          <span
+            className="c12"
+          >
+            The first part is bold,
+          </span>
+           
+          <span
+            className="c10"
+          >
+            the second part is regular
+          </span>
+        </span>
+      </div>
+    </span>
+  </label>
+</div>
 `;
 
 exports[`Storyshots Molecules | Input / Checkbox In a group 1`] = `

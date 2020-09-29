@@ -3,13 +3,12 @@ import styled from 'styled-components';
 
 import { Flexbox } from '../..';
 
-const StyledContent = styled.div`
+const Content = styled.div`
   box-sizing: border-box;
   border: 1px solid black;
   background-color: #eee;
   height: 100%;
 `;
-const Content = ({ children }: any) => <StyledContent>{children}</StyledContent>;
 
 export default {
   title: 'Atoms | Flexbox',
@@ -190,22 +189,4 @@ export const withBreakpointProps = () => {
 
 withBreakpointProps.story = {
   name: 'With breakpoint props',
-};
-
-export const withHeightModified = () => (
-  <Flexbox container height={10}>
-    <Flexbox item>
-      <Content>Col 1</Content>
-    </Flexbox>
-    <Flexbox item>
-      <Content>Col 2</Content>
-    </Flexbox>
-    <Flexbox item>
-      <Content>Col 3</Content>
-    </Flexbox>
-  </Flexbox>
-);
-
-withHeightModified.story = {
-  name: 'With height modified',
 };

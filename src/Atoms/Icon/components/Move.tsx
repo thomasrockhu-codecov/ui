@@ -4,9 +4,9 @@ import { BaseProps } from '../IconBase.types';
 
 export const Move = (props: BaseProps) => {
   return (
-    <IconBase {...props} viewBox="0 0 32 28">
+    <IconBase {...props} viewBox="0 0 74 70">
       <g fillRule="evenodd">
-        <path d="M32 25v3H0v-3h32zM18.8161825 0l10.076 10-10.077 10h-4.434l8.51-8.445-19.78336497.0005556V8.44444444L22.8921825 8.444l-8.51-8.444h4.434z" />
+        <path d="M74 66v4H0v-4h74zM46.007169 0l28.002624 28.002623-28.002624 28.002624h-5.410436L66.60198 30H0v-4h66.596733l-26-26h5.410436z" />
       </g>
     </IconBase>
   );

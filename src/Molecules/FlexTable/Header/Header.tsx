@@ -12,7 +12,6 @@ import {
   ACTION_SET_FLEX_PROPS,
   ACTION_SET_SORTING,
   ACTION_SET_INITIAL_SORTING,
-  useColumnLayout,
 } from '../shared/ColumnProvider';
 import { HeaderContent, TextWrapper, SortIcon, SortButton } from './HeaderContent';
 
@@ -34,7 +33,7 @@ const StyledFlexbox = styled(Flexbox)`
   overflow: hidden;
 `;
 
-const Header: HeaderComponent = props => {
+const Header: HeaderComponent = (props) => {
   const {
     children,
     className,
@@ -46,7 +45,6 @@ const Header: HeaderComponent = props => {
   } = props;
 
   const [columnState, columnDispatch] = useColumnData(columnId);
-  const [columnLayout] = useColumnLayout(columnId);
   const sortOrder = sortable
     ? getSortOrder(R.prop('sortOrder', columnState), sortOrderProp, initialSortOrder)
     : null;
@@ -79,19 +77,15 @@ const Header: HeaderComponent = props => {
   };
 
   useLayoutEffect(() => {
-    if (cellFlexProps) {
-      columnDispatch({ type: ACTION_SET_FLEX_PROPS, flexProps: cellFlexProps });
-    }
-  }, [cellFlexProps, columnDispatch]);
+    columnDispatch({ type: ACTION_SET_FLEX_PROPS, flexProps: cellFlexProps });
+    // Using JSON.stringify here to perform a "deep equality" check on cellFlexProps.
+    // Otherwise columnDispatch will re-trigger the hook since it updates the context which leads to a recursive loop
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [JSON.stringify(cellFlexProps), columnDispatch]);
 
   const sorted = !R.isNil(sortOrder) && sortOrder !== SORT_ORDER_NONE;
   return (
-    <StyledFlexbox
-      className={className}
-      role="columnheader"
-      {...ariaSorted}
-      {...R.propOr(cellFlexProps, 'flexProps', columnLayout)}
-    >
+    <StyledFlexbox className={className} role="columnheader" {...ariaSorted} {...cellFlexProps}>
       {isElement(children) && children}
       {isFunction(children)
         ? children({ sortable, sortOrder, onSortClick, sorted, columnId })

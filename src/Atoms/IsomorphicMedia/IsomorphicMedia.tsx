@@ -6,14 +6,10 @@ import useSSR from 'use-ssr';
 import { Props } from './IsomorphicMedia.types';
 import { Theme } from '../../theme/theme.types';
 
-const negateMedia = R.pipe(
-  R.split(' '),
-  R.insert(1, 'not all and'),
-  R.join(' '),
-);
+const negateMedia = R.pipe(R.split(' '), R.insert(1, 'not all and'), R.join(' '));
 
 const StyledDiv = styled.div<{ query: Props['query'] }>`
-  ${p => negateMedia(typeof p.query === 'string' ? p.query : p.query(p.theme))} {
+  ${(p) => negateMedia(typeof p.query === 'string' ? p.query : p.query(p.theme))} {
     display: none;
   }
 `;
@@ -49,7 +45,7 @@ const useIsomorphicMedia = (query: string | ((t: Theme) => string)) => {
   return matches;
 };
 
-const IsomorphicMedia: React.FunctionComponent<Props> = props => {
+const IsomorphicMedia: React.FunctionComponent<Props> = (props) => {
   const { isServer } = useSSR();
   const As = props.as || 'div';
   const matches = useIsomorphicMedia(props.query);

@@ -2,19 +2,19 @@
 
 exports[`Storyshots Molecules | Multi Step Progress Basic Multi Step Progress (With Closing Drawer) 1`] = `
 Array [
-  .c9 {
+  .c10 {
   padding-left: 44px;
   padding-top: 12px;
   padding-right: 12px;
   padding-bottom: 12px;
 }
 
-.c22 {
+.c23 {
   padding-left: 44px;
   padding-right: 12px;
 }
 
-.c26 {
+.c27 {
   padding-left: 44px;
   padding-top: 12px;
   padding-right: 12px;
@@ -26,7 +26,7 @@ Array [
   box-shadow: 0 2px 2px 0 rgba(0,0,0,0.03);
 }
 
-.c31 {
+.c32 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -42,11 +42,11 @@ Array [
   align-items: center;
 }
 
-.c32 {
+.c33 {
   box-sizing: border-box;
 }
 
-.c11 {
+.c12 {
   position: absolute;
   height: 1px;
   width: 1px;
@@ -55,7 +55,7 @@ Array [
   clip: rect(1px,1px,1px,1px);
 }
 
-.c14 {
+.c15 {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -69,7 +69,7 @@ Array [
   display: block;
 }
 
-.c33 {
+.c34 {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -83,17 +83,17 @@ Array [
   display: block;
 }
 
-.c15 {
+.c16 {
   fill: #FFFFFF;
 }
 
-.c34 {
+.c35 {
   -webkit-transform: rotate(0deg);
   -ms-transform: rotate(0deg);
   transform: rotate(0deg);
 }
 
-.c7 {
+.c8 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: inherit;
   margin: 0;
@@ -102,7 +102,7 @@ Array [
   line-height: 1.4285714285714286;
 }
 
-.c8 {
+.c9 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
   margin: 0;
@@ -111,7 +111,7 @@ Array [
   line-height: 1.5;
 }
 
-.c12 {
+.c13 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
   margin: 0;
@@ -120,22 +120,13 @@ Array [
   line-height: 1.4285714285714286;
 }
 
-.c17 {
+.c18 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
   margin: 0;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.5;
-}
-
-.c24 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #A0A09B;
-  margin: 0;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
 }
 
 .c25 {
@@ -143,11 +134,20 @@ Array [
   color: #A0A09B;
   margin: 0;
   font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c26 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #A0A09B;
+  margin: 0;
+  font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
 }
 
-.c5 {
+.c6 {
   font-family: inherit;
   font-size: 100%;
   line-height: 1.15;
@@ -177,29 +177,29 @@ Array [
   cursor: pointer;
 }
 
-.c5,
-.c5[type='button'],
-.c5[type='reset'],
-.c5[type='submit'] {
+.c6,
+.c6[type='button'],
+.c6[type='reset'],
+.c6[type='submit'] {
   -webkit-appearance: button;
 }
 
-.c5::-moz-focus-inner,
-.c5[type='button']::-moz-focus-inner,
-.c5[type='reset']::-moz-focus-inner,
-.c5[type='submit']::-moz-focus-inner {
+.c6::-moz-focus-inner,
+.c6[type='button']::-moz-focus-inner,
+.c6[type='reset']::-moz-focus-inner,
+.c6[type='submit']::-moz-focus-inner {
   border-style: none;
   padding: 0;
 }
 
-.c5:-moz-focusring,
-.c5[type='button']:-moz-focusring,
-.c5[type='reset']:-moz-focusring,
-.c5[type='submit']:-moz-focusring {
+.c6:-moz-focusring,
+.c6[type='button']:-moz-focusring,
+.c6[type='reset']:-moz-focusring,
+.c6[type='submit']:-moz-focusring {
   outline: 1px dotted ButtonText;
 }
 
-.c23 {
+.c24 {
   font-family: inherit;
   font-size: 100%;
   line-height: 1.15;
@@ -228,35 +228,35 @@ Array [
   cursor: pointer;
 }
 
-.c23,
-.c23[type='button'],
-.c23[type='reset'],
-.c23[type='submit'] {
+.c24,
+.c24[type='button'],
+.c24[type='reset'],
+.c24[type='submit'] {
   -webkit-appearance: button;
 }
 
-.c23::-moz-focus-inner,
-.c23[type='button']::-moz-focus-inner,
-.c23[type='reset']::-moz-focus-inner,
-.c23[type='submit']::-moz-focus-inner {
+.c24::-moz-focus-inner,
+.c24[type='button']::-moz-focus-inner,
+.c24[type='reset']::-moz-focus-inner,
+.c24[type='submit']::-moz-focus-inner {
   border-style: none;
   padding: 0;
 }
 
-.c23:-moz-focusring,
-.c23[type='button']:-moz-focusring,
-.c23[type='reset']:-moz-focusring,
-.c23[type='submit']:-moz-focusring {
+.c24:-moz-focusring,
+.c24[type='button']:-moz-focusring,
+.c24[type='reset']:-moz-focusring,
+.c24[type='submit']:-moz-focusring {
   outline: 1px dotted ButtonText;
 }
 
-.c13 {
+.c14 {
   position: absolute;
   top: 12px;
   left: 12px;
 }
 
-.c18 {
+.c19 {
   width: 24px;
   height: 24px;
   background-color: #0046FF;
@@ -276,7 +276,7 @@ Array [
   justify-content: center;
 }
 
-.c27 {
+.c28 {
   width: 24px;
   height: 24px;
   background-color: #EBEBE8;
@@ -296,39 +296,40 @@ Array [
   justify-content: center;
 }
 
-.c19 {
+.c20 {
   list-style: none;
   margin: 0;
   padding: 0;
   padding-bottom: 12px;
 }
 
-.c21 {
+.c22 {
   display: block;
 }
 
-.c21 + .c20 {
+.c22 + .c21 {
   padding-top: 8px;
 }
 
-.c2 {
+.c3 {
   list-style: none;
   margin: 0;
   padding: 0;
 }
 
-.c29 {
+.c30 {
   list-style: none;
   margin: 0;
   padding: 0;
 }
 
-.c4 {
+.c5 {
   display: block;
   position: relative;
+  background-color: #FFFFFF;
 }
 
-.c4::before {
+.c5::before {
   content: '';
   display: block;
   background: #0046FF;
@@ -342,16 +343,13 @@ Array [
   opacity: 0;
 }
 
-.c4 + .c3 {
-  border-top: 8px solid #EBEBE8;
-}
-
-.c16 {
+.c17 {
   display: block;
   position: relative;
+  background-color: #FFFFFF;
 }
 
-.c16::before {
+.c17::before {
   content: '';
   display: block;
   background: #0046FF;
@@ -365,122 +363,150 @@ Array [
   opacity: 1;
 }
 
-.c16 + .c3 {
-  border-top: 8px solid #EBEBE8;
-}
-
-.c10 {
+.c11 {
   position: relative;
 }
 
-.c6 {
+.c7 {
   -webkit-box-pack: start;
   -webkit-justify-content: flex-start;
   -ms-flex-pack: start;
   justify-content: flex-start;
 }
 
-.c30 {
+.c31 {
   -webkit-box-pack: start;
   -webkit-justify-content: flex-start;
   -ms-flex-pack: start;
   justify-content: flex-start;
 }
 
-.c30 > span {
+.c31 > span {
   width: 100%;
 }
 
+.c1 {
+  background: transparent;
+}
+
 @media (min-width:760px) {
-  .c9 {
+  .c10 {
     padding-left: 52px;
     padding-right: 20px;
   }
 }
 
 @media (min-width:760px) {
-  .c22 {
+  .c23 {
     padding-left: 52px;
     padding-right: 20px;
   }
 }
 
 @media (min-width:760px) {
-  .c26 {
+  .c27 {
     padding-left: 52px;
   }
 }
 
 @media not all and (min-width:976px) {
-  .c1 {
+  .c2 {
     display: none;
   }
 }
 
 @media not all and (max-width:975px) {
-  .c28 {
+  .c29 {
     display: none;
   }
 }
 
 @media (min-width:760px) {
-  .c13 {
+  .c14 {
     left: 20px;
   }
 }
 
+@media (max-width:975px) {
+  .c5 + .c4 {
+    border-top: 1px solid #EBEBE8;
+  }
+}
+
+@media (min-width:976px) {
+  .c5 + .c4 {
+    margin-top: 8px;
+  }
+}
+
+@media (max-width:975px) {
+  .c17 + .c4 {
+    border-top: 1px solid #EBEBE8;
+  }
+}
+
+@media (min-width:976px) {
+  .c17 + .c4 {
+    margin-top: 8px;
+  }
+}
+
 <div
-    className="c0"
+    className="c0 c1"
   >
     <div
       aria-label="Progress"
       role="group"
     >
       <div
-        className="c1"
+        className="c2"
       >
         <ol
-          className="c2"
+          className="c3"
         >
           <li
-            className="c3 c4"
+            className="c4 c5"
           >
             <button
-              className="NormalizedButton__Button-ey7f5x-0 c5 c6"
+              className="NormalizedButton__Button-ey7f5x-0 c6 c7"
               onClick={[Function]}
               type="button"
             >
               <span
-                className="c7"
+                className="c8"
               >
                 <span
-                  className="c8"
+                  className="c9"
                 >
                   <div
-                    className="c9 c10"
+                    className="c10 c11"
                   >
                     <div
-                      className="c11"
+                      className="c12"
                     >
                       Completed
                     </div>
                     <span
                       aria-hidden={true}
-                      className="c12 c13"
+                      className="c13 c14"
                     >
                       <svg
                         aria-hidden="true"
-                        className="c14"
+                        className="c15"
                         focusable="false"
                         preserveAspectRatio="xMidYMid meet"
                         role="presentation"
-                        viewBox="0 0 20 20"
+                        viewBox="0 0 92 92"
                       >
                         <path
-                          d="M10,20 C4.4771525,20 0,15.5228475 0,10 C0,4.4771525 4.4771525,0 10,0 C15.5228475,0 20,4.4771525 20,10 C20,15.5228475 15.5228475,20 10,20 Z"
+                          d="M46 91.5c25.4050985 0 46-20.3710439 46-45.5S71.4050985.5 46 .5 0 20.8710439 0 46s20.5949015 45.5 46 45.5z"
+                        />
+                        <path
+                          d="M63.1517377 34l3.573537 3.5568749L42.1676463 62l-14.870943-14.8016051 3.573537-3.5568749 11.297406 11.2447302z"
+                          fill="#FFF"
                         />
                         <polygon
-                          className="c15"
+                          className="c16"
                           points="13.695 6 15 7.314 8.696 13.69 5 9.924 6.319 8.656 8.696 11.059"
                         />
                       </svg>
@@ -492,28 +518,28 @@ Array [
             </button>
           </li>
           <li
-            className="c3 c16"
+            className="c4 c17"
           >
             <button
-              className="NormalizedButton__Button-ey7f5x-0 c5 c6"
+              className="NormalizedButton__Button-ey7f5x-0 c6 c7"
               onClick={[Function]}
               type="button"
             >
               <span
-                className="c7"
+                className="c8"
               >
                 <span
-                  className="c17"
+                  className="c18"
                 >
                   <div
-                    className="c9 c10"
+                    className="c10 c11"
                   >
                     <span
                       aria-hidden={true}
-                      className="c12 c13"
+                      className="c13 c14"
                     >
                       <span
-                        className="c18"
+                        className="c19"
                       >
                         2
                       </span>
@@ -524,27 +550,27 @@ Array [
               </span>
             </button>
             <ol
-              className="c19"
+              className="c20"
             >
               <li
-                className="c20 c21"
+                className="c21 c22"
               >
                 <div
-                  className="c22"
+                  className="c23"
                 >
                   <button
-                    className="NormalizedButton__Button-ey7f5x-0 c23"
+                    className="NormalizedButton__Button-ey7f5x-0 c24"
                     onClick={[Function]}
                     type="button"
                   >
                     <span
-                      className="c7"
+                      className="c8"
                     >
                       <span
-                        className="c24"
+                        className="c25"
                       >
                         <div
-                          className="c11"
+                          className="c12"
                         >
                           Completed
                         </div>
@@ -555,24 +581,24 @@ Array [
                 </div>
               </li>
               <li
-                className="c20 c21"
+                className="c21 c22"
               >
                 <div
-                  className="c22"
+                  className="c23"
                 >
                   <button
-                    className="NormalizedButton__Button-ey7f5x-0 c23"
+                    className="NormalizedButton__Button-ey7f5x-0 c24"
                     onClick={[Function]}
                     type="button"
                   >
                     <span
-                      className="c7"
+                      className="c8"
                     >
                       <span
-                        className="c12"
+                        className="c13"
                       >
                         <div
-                          className="c11"
+                          className="c12"
                         >
                           Not completed
                         </div>
@@ -583,16 +609,16 @@ Array [
                 </div>
               </li>
               <li
-                className="c20 c21"
+                className="c21 c22"
               >
                 <div
-                  className="c22"
+                  className="c23"
                 >
                   <span
-                    className="c24"
+                    className="c25"
                   >
                     <div
-                      className="c11"
+                      className="c12"
                     >
                       Not completed
                     </div>
@@ -603,25 +629,25 @@ Array [
             </ol>
           </li>
           <li
-            className="c3 c4"
+            className="c4 c5"
           >
             <span
-              className="c25"
+              className="c26"
             >
               <div
-                className="c26 c10"
+                className="c27 c11"
               >
                 <div
-                  className="c11"
+                  className="c12"
                 >
                   Not completed
                 </div>
                 <span
                   aria-hidden={true}
-                  className="c12 c13"
+                  className="c13 c14"
                 >
                   <span
-                    className="c27"
+                    className="c28"
                   >
                     3
                   </span>
@@ -633,41 +659,41 @@ Array [
         </ol>
       </div>
       <div
-        className="c28"
+        className="c29"
       >
         <ol
-          className="c29"
+          className="c30"
         >
           <li
-            className="c3 c16"
+            className="c4 c17"
           >
             <button
               aria-expanded={false}
-              className="NormalizedButton__Button-ey7f5x-0 c5 c30"
+              className="NormalizedButton__Button-ey7f5x-0 c6 c31"
               onClick={[Function]}
               type="button"
             >
               <span
-                className="c7"
+                className="c8"
               >
                 <span
-                  className="c17"
+                  className="c18"
                 >
                   <div
-                    className="c9 c10"
+                    className="c10 c11"
                   >
                     <div
-                      className="c31"
+                      className="c32"
                     >
                       <div
-                        className="c32"
+                        className="c33"
                       >
                         <span
                           aria-hidden={true}
-                          className="c12 c13"
+                          className="c13 c14"
                         >
                           <span
-                            className="c18"
+                            className="c19"
                           >
                             2
                           </span>
@@ -675,11 +701,11 @@ Array [
                         Time and risk
                       </div>
                       <div
-                        className="c32"
+                        className="c33"
                       >
                         <svg
                           aria-hidden="true"
-                          className="c33 c34"
+                          className="c34 c35"
                           direction="down"
                           focusable="false"
                           preserveAspectRatio="xMidYMid meet"
@@ -724,6 +750,22 @@ Array [
 }
 
 @media (min-width:760px) {
+
+}
+
+@media (max-width:975px) {
+
+}
+
+@media (min-width:976px) {
+
+}
+
+@media (max-width:975px) {
+
+}
+
+@media (min-width:976px) {
 
 }
 
@@ -735,19 +777,19 @@ Array [
 
 exports[`Storyshots Molecules | Multi Step Progress Basic Multi Step Progress 1`] = `
 Array [
-  .c9 {
+  .c10 {
   padding-left: 44px;
   padding-top: 12px;
   padding-right: 12px;
   padding-bottom: 12px;
 }
 
-.c22 {
+.c23 {
   padding-left: 44px;
   padding-right: 12px;
 }
 
-.c26 {
+.c27 {
   padding-left: 44px;
   padding-top: 12px;
   padding-right: 12px;
@@ -759,7 +801,7 @@ Array [
   box-shadow: 0 2px 2px 0 rgba(0,0,0,0.03);
 }
 
-.c31 {
+.c32 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -775,11 +817,11 @@ Array [
   align-items: center;
 }
 
-.c32 {
+.c33 {
   box-sizing: border-box;
 }
 
-.c11 {
+.c12 {
   position: absolute;
   height: 1px;
   width: 1px;
@@ -788,7 +830,7 @@ Array [
   clip: rect(1px,1px,1px,1px);
 }
 
-.c14 {
+.c15 {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -802,7 +844,7 @@ Array [
   display: block;
 }
 
-.c33 {
+.c34 {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -816,17 +858,17 @@ Array [
   display: block;
 }
 
-.c15 {
+.c16 {
   fill: #FFFFFF;
 }
 
-.c34 {
+.c35 {
   -webkit-transform: rotate(0deg);
   -ms-transform: rotate(0deg);
   transform: rotate(0deg);
 }
 
-.c7 {
+.c8 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: inherit;
   margin: 0;
@@ -835,7 +877,7 @@ Array [
   line-height: 1.4285714285714286;
 }
 
-.c8 {
+.c9 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
   margin: 0;
@@ -844,7 +886,7 @@ Array [
   line-height: 1.5;
 }
 
-.c12 {
+.c13 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
   margin: 0;
@@ -853,22 +895,13 @@ Array [
   line-height: 1.4285714285714286;
 }
 
-.c17 {
+.c18 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
   margin: 0;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.5;
-}
-
-.c24 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #A0A09B;
-  margin: 0;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
 }
 
 .c25 {
@@ -876,11 +909,20 @@ Array [
   color: #A0A09B;
   margin: 0;
   font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c26 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #A0A09B;
+  margin: 0;
+  font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
 }
 
-.c5 {
+.c6 {
   font-family: inherit;
   font-size: 100%;
   line-height: 1.15;
@@ -910,29 +952,29 @@ Array [
   cursor: pointer;
 }
 
-.c5,
-.c5[type='button'],
-.c5[type='reset'],
-.c5[type='submit'] {
+.c6,
+.c6[type='button'],
+.c6[type='reset'],
+.c6[type='submit'] {
   -webkit-appearance: button;
 }
 
-.c5::-moz-focus-inner,
-.c5[type='button']::-moz-focus-inner,
-.c5[type='reset']::-moz-focus-inner,
-.c5[type='submit']::-moz-focus-inner {
+.c6::-moz-focus-inner,
+.c6[type='button']::-moz-focus-inner,
+.c6[type='reset']::-moz-focus-inner,
+.c6[type='submit']::-moz-focus-inner {
   border-style: none;
   padding: 0;
 }
 
-.c5:-moz-focusring,
-.c5[type='button']:-moz-focusring,
-.c5[type='reset']:-moz-focusring,
-.c5[type='submit']:-moz-focusring {
+.c6:-moz-focusring,
+.c6[type='button']:-moz-focusring,
+.c6[type='reset']:-moz-focusring,
+.c6[type='submit']:-moz-focusring {
   outline: 1px dotted ButtonText;
 }
 
-.c23 {
+.c24 {
   font-family: inherit;
   font-size: 100%;
   line-height: 1.15;
@@ -961,35 +1003,35 @@ Array [
   cursor: pointer;
 }
 
-.c23,
-.c23[type='button'],
-.c23[type='reset'],
-.c23[type='submit'] {
+.c24,
+.c24[type='button'],
+.c24[type='reset'],
+.c24[type='submit'] {
   -webkit-appearance: button;
 }
 
-.c23::-moz-focus-inner,
-.c23[type='button']::-moz-focus-inner,
-.c23[type='reset']::-moz-focus-inner,
-.c23[type='submit']::-moz-focus-inner {
+.c24::-moz-focus-inner,
+.c24[type='button']::-moz-focus-inner,
+.c24[type='reset']::-moz-focus-inner,
+.c24[type='submit']::-moz-focus-inner {
   border-style: none;
   padding: 0;
 }
 
-.c23:-moz-focusring,
-.c23[type='button']:-moz-focusring,
-.c23[type='reset']:-moz-focusring,
-.c23[type='submit']:-moz-focusring {
+.c24:-moz-focusring,
+.c24[type='button']:-moz-focusring,
+.c24[type='reset']:-moz-focusring,
+.c24[type='submit']:-moz-focusring {
   outline: 1px dotted ButtonText;
 }
 
-.c13 {
+.c14 {
   position: absolute;
   top: 12px;
   left: 12px;
 }
 
-.c18 {
+.c19 {
   width: 24px;
   height: 24px;
   background-color: #0046FF;
@@ -1009,7 +1051,7 @@ Array [
   justify-content: center;
 }
 
-.c27 {
+.c28 {
   width: 24px;
   height: 24px;
   background-color: #EBEBE8;
@@ -1029,39 +1071,40 @@ Array [
   justify-content: center;
 }
 
-.c19 {
+.c20 {
   list-style: none;
   margin: 0;
   padding: 0;
   padding-bottom: 12px;
 }
 
-.c21 {
+.c22 {
   display: block;
 }
 
-.c21 + .c20 {
+.c22 + .c21 {
   padding-top: 8px;
 }
 
-.c2 {
+.c3 {
   list-style: none;
   margin: 0;
   padding: 0;
 }
 
-.c29 {
+.c30 {
   list-style: none;
   margin: 0;
   padding: 0;
 }
 
-.c4 {
+.c5 {
   display: block;
   position: relative;
+  background-color: #FFFFFF;
 }
 
-.c4::before {
+.c5::before {
   content: '';
   display: block;
   background: #0046FF;
@@ -1075,16 +1118,13 @@ Array [
   opacity: 0;
 }
 
-.c4 + .c3 {
-  border-top: 8px solid #EBEBE8;
-}
-
-.c16 {
+.c17 {
   display: block;
   position: relative;
+  background-color: #FFFFFF;
 }
 
-.c16::before {
+.c17::before {
   content: '';
   display: block;
   background: #0046FF;
@@ -1098,122 +1138,150 @@ Array [
   opacity: 1;
 }
 
-.c16 + .c3 {
-  border-top: 8px solid #EBEBE8;
-}
-
-.c10 {
+.c11 {
   position: relative;
 }
 
-.c6 {
+.c7 {
   -webkit-box-pack: start;
   -webkit-justify-content: flex-start;
   -ms-flex-pack: start;
   justify-content: flex-start;
 }
 
-.c30 {
+.c31 {
   -webkit-box-pack: start;
   -webkit-justify-content: flex-start;
   -ms-flex-pack: start;
   justify-content: flex-start;
 }
 
-.c30 > span {
+.c31 > span {
   width: 100%;
 }
 
+.c1 {
+  background: transparent;
+}
+
 @media (min-width:760px) {
-  .c9 {
+  .c10 {
     padding-left: 52px;
     padding-right: 20px;
   }
 }
 
 @media (min-width:760px) {
-  .c22 {
+  .c23 {
     padding-left: 52px;
     padding-right: 20px;
   }
 }
 
 @media (min-width:760px) {
-  .c26 {
+  .c27 {
     padding-left: 52px;
   }
 }
 
 @media not all and (min-width:976px) {
-  .c1 {
+  .c2 {
     display: none;
   }
 }
 
 @media not all and (max-width:975px) {
-  .c28 {
+  .c29 {
     display: none;
   }
 }
 
 @media (min-width:760px) {
-  .c13 {
+  .c14 {
     left: 20px;
   }
 }
 
+@media (max-width:975px) {
+  .c5 + .c4 {
+    border-top: 1px solid #EBEBE8;
+  }
+}
+
+@media (min-width:976px) {
+  .c5 + .c4 {
+    margin-top: 8px;
+  }
+}
+
+@media (max-width:975px) {
+  .c17 + .c4 {
+    border-top: 1px solid #EBEBE8;
+  }
+}
+
+@media (min-width:976px) {
+  .c17 + .c4 {
+    margin-top: 8px;
+  }
+}
+
 <div
-    className="c0"
+    className="c0 c1"
   >
     <div
       aria-label="Progress"
       role="group"
     >
       <div
-        className="c1"
+        className="c2"
       >
         <ol
-          className="c2"
+          className="c3"
         >
           <li
-            className="c3 c4"
+            className="c4 c5"
           >
             <button
-              className="NormalizedButton__Button-ey7f5x-0 c5 c6"
+              className="NormalizedButton__Button-ey7f5x-0 c6 c7"
               onClick={[Function]}
               type="button"
             >
               <span
-                className="c7"
+                className="c8"
               >
                 <span
-                  className="c8"
+                  className="c9"
                 >
                   <div
-                    className="c9 c10"
+                    className="c10 c11"
                   >
                     <div
-                      className="c11"
+                      className="c12"
                     >
                       Completed
                     </div>
                     <span
                       aria-hidden={true}
-                      className="c12 c13"
+                      className="c13 c14"
                     >
                       <svg
                         aria-hidden="true"
-                        className="c14"
+                        className="c15"
                         focusable="false"
                         preserveAspectRatio="xMidYMid meet"
                         role="presentation"
-                        viewBox="0 0 20 20"
+                        viewBox="0 0 92 92"
                       >
                         <path
-                          d="M10,20 C4.4771525,20 0,15.5228475 0,10 C0,4.4771525 4.4771525,0 10,0 C15.5228475,0 20,4.4771525 20,10 C20,15.5228475 15.5228475,20 10,20 Z"
+                          d="M46 91.5c25.4050985 0 46-20.3710439 46-45.5S71.4050985.5 46 .5 0 20.8710439 0 46s20.5949015 45.5 46 45.5z"
+                        />
+                        <path
+                          d="M63.1517377 34l3.573537 3.5568749L42.1676463 62l-14.870943-14.8016051 3.573537-3.5568749 11.297406 11.2447302z"
+                          fill="#FFF"
                         />
                         <polygon
-                          className="c15"
+                          className="c16"
                           points="13.695 6 15 7.314 8.696 13.69 5 9.924 6.319 8.656 8.696 11.059"
                         />
                       </svg>
@@ -1225,28 +1293,28 @@ Array [
             </button>
           </li>
           <li
-            className="c3 c16"
+            className="c4 c17"
           >
             <button
-              className="NormalizedButton__Button-ey7f5x-0 c5 c6"
+              className="NormalizedButton__Button-ey7f5x-0 c6 c7"
               onClick={[Function]}
               type="button"
             >
               <span
-                className="c7"
+                className="c8"
               >
                 <span
-                  className="c17"
+                  className="c18"
                 >
                   <div
-                    className="c9 c10"
+                    className="c10 c11"
                   >
                     <span
                       aria-hidden={true}
-                      className="c12 c13"
+                      className="c13 c14"
                     >
                       <span
-                        className="c18"
+                        className="c19"
                       >
                         2
                       </span>
@@ -1257,27 +1325,27 @@ Array [
               </span>
             </button>
             <ol
-              className="c19"
+              className="c20"
             >
               <li
-                className="c20 c21"
+                className="c21 c22"
               >
                 <div
-                  className="c22"
+                  className="c23"
                 >
                   <button
-                    className="NormalizedButton__Button-ey7f5x-0 c23"
+                    className="NormalizedButton__Button-ey7f5x-0 c24"
                     onClick={[Function]}
                     type="button"
                   >
                     <span
-                      className="c7"
+                      className="c8"
                     >
                       <span
-                        className="c24"
+                        className="c25"
                       >
                         <div
-                          className="c11"
+                          className="c12"
                         >
                           Completed
                         </div>
@@ -1288,24 +1356,24 @@ Array [
                 </div>
               </li>
               <li
-                className="c20 c21"
+                className="c21 c22"
               >
                 <div
-                  className="c22"
+                  className="c23"
                 >
                   <button
-                    className="NormalizedButton__Button-ey7f5x-0 c23"
+                    className="NormalizedButton__Button-ey7f5x-0 c24"
                     onClick={[Function]}
                     type="button"
                   >
                     <span
-                      className="c7"
+                      className="c8"
                     >
                       <span
-                        className="c12"
+                        className="c13"
                       >
                         <div
-                          className="c11"
+                          className="c12"
                         >
                           Not completed
                         </div>
@@ -1316,16 +1384,16 @@ Array [
                 </div>
               </li>
               <li
-                className="c20 c21"
+                className="c21 c22"
               >
                 <div
-                  className="c22"
+                  className="c23"
                 >
                   <span
-                    className="c24"
+                    className="c25"
                   >
                     <div
-                      className="c11"
+                      className="c12"
                     >
                       Not completed
                     </div>
@@ -1336,25 +1404,25 @@ Array [
             </ol>
           </li>
           <li
-            className="c3 c4"
+            className="c4 c5"
           >
             <span
-              className="c25"
+              className="c26"
             >
               <div
-                className="c26 c10"
+                className="c27 c11"
               >
                 <div
-                  className="c11"
+                  className="c12"
                 >
                   Not completed
                 </div>
                 <span
                   aria-hidden={true}
-                  className="c12 c13"
+                  className="c13 c14"
                 >
                   <span
-                    className="c27"
+                    className="c28"
                   >
                     3
                   </span>
@@ -1366,41 +1434,41 @@ Array [
         </ol>
       </div>
       <div
-        className="c28"
+        className="c29"
       >
         <ol
-          className="c29"
+          className="c30"
         >
           <li
-            className="c3 c16"
+            className="c4 c17"
           >
             <button
               aria-expanded={false}
-              className="NormalizedButton__Button-ey7f5x-0 c5 c30"
+              className="NormalizedButton__Button-ey7f5x-0 c6 c31"
               onClick={[Function]}
               type="button"
             >
               <span
-                className="c7"
+                className="c8"
               >
                 <span
-                  className="c17"
+                  className="c18"
                 >
                   <div
-                    className="c9 c10"
+                    className="c10 c11"
                   >
                     <div
-                      className="c31"
+                      className="c32"
                     >
                       <div
-                        className="c32"
+                        className="c33"
                       >
                         <span
                           aria-hidden={true}
-                          className="c12 c13"
+                          className="c13 c14"
                         >
                           <span
-                            className="c18"
+                            className="c19"
                           >
                             2
                           </span>
@@ -1408,11 +1476,11 @@ Array [
                         Time and risk
                       </div>
                       <div
-                        className="c32"
+                        className="c33"
                       >
                         <svg
                           aria-hidden="true"
-                          className="c33 c34"
+                          className="c34 c35"
                           direction="down"
                           focusable="false"
                           preserveAspectRatio="xMidYMid meet"
@@ -1460,6 +1528,22 @@ Array [
 
 }
 
+@media (max-width:975px) {
+
+}
+
+@media (min-width:976px) {
+
+}
+
+@media (max-width:975px) {
+
+}
+
+@media (min-width:976px) {
+
+}
+
 <div
     className="c0"
   />,
@@ -1468,21 +1552,21 @@ Array [
 
 exports[`Storyshots Molecules | Multi Step Progress Not Started Multi Step Progress 1`] = `
 Array [
-  .c6 {
+  .c7 {
   padding-left: 44px;
   padding-top: 12px;
   padding-right: 12px;
   padding-bottom: 12px;
 }
 
-.c17 {
+.c18 {
   padding-left: 44px;
   padding-top: 12px;
   padding-right: 12px;
   padding-bottom: 12px;
 }
 
-.c22 {
+.c23 {
   padding-left: 44px;
   padding-right: 12px;
 }
@@ -1492,7 +1576,7 @@ Array [
   box-shadow: 0 2px 2px 0 rgba(0,0,0,0.03);
 }
 
-.c27 {
+.c28 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -1508,11 +1592,11 @@ Array [
   align-items: center;
 }
 
-.c28 {
+.c29 {
   box-sizing: border-box;
 }
 
-.c8 {
+.c9 {
   position: absolute;
   height: 1px;
   width: 1px;
@@ -1521,7 +1605,7 @@ Array [
   clip: rect(1px,1px,1px,1px);
 }
 
-.c29 {
+.c30 {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -1535,13 +1619,13 @@ Array [
   display: block;
 }
 
-.c30 {
+.c31 {
   -webkit-transform: rotate(0deg);
   -ms-transform: rotate(0deg);
   transform: rotate(0deg);
 }
 
-.c5 {
+.c6 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #A0A09B;
   margin: 0;
@@ -1550,18 +1634,9 @@ Array [
   line-height: 1.5;
 }
 
-.c9 {
+.c10 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
-  margin: 0;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
-}
-
-.c15 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: inherit;
   margin: 0;
   font-weight: 700;
   font-size: 14px;
@@ -1570,6 +1645,15 @@ Array [
 
 .c16 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: inherit;
+  margin: 0;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c17 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
   margin: 0;
   font-weight: 700;
@@ -1577,7 +1661,7 @@ Array [
   line-height: 1.5;
 }
 
-.c23 {
+.c24 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #A0A09B;
   margin: 0;
@@ -1586,7 +1670,7 @@ Array [
   line-height: 1.4285714285714286;
 }
 
-.c13 {
+.c14 {
   font-family: inherit;
   font-size: 100%;
   line-height: 1.15;
@@ -1616,35 +1700,35 @@ Array [
   cursor: pointer;
 }
 
-.c13,
-.c13[type='button'],
-.c13[type='reset'],
-.c13[type='submit'] {
+.c14,
+.c14[type='button'],
+.c14[type='reset'],
+.c14[type='submit'] {
   -webkit-appearance: button;
 }
 
-.c13::-moz-focus-inner,
-.c13[type='button']::-moz-focus-inner,
-.c13[type='reset']::-moz-focus-inner,
-.c13[type='submit']::-moz-focus-inner {
+.c14::-moz-focus-inner,
+.c14[type='button']::-moz-focus-inner,
+.c14[type='reset']::-moz-focus-inner,
+.c14[type='submit']::-moz-focus-inner {
   border-style: none;
   padding: 0;
 }
 
-.c13:-moz-focusring,
-.c13[type='button']:-moz-focusring,
-.c13[type='reset']:-moz-focusring,
-.c13[type='submit']:-moz-focusring {
+.c14:-moz-focusring,
+.c14[type='button']:-moz-focusring,
+.c14[type='reset']:-moz-focusring,
+.c14[type='submit']:-moz-focusring {
   outline: 1px dotted ButtonText;
 }
 
-.c10 {
+.c11 {
   position: absolute;
   top: 12px;
   left: 12px;
 }
 
-.c11 {
+.c12 {
   width: 24px;
   height: 24px;
   background-color: #EBEBE8;
@@ -1664,7 +1748,7 @@ Array [
   justify-content: center;
 }
 
-.c18 {
+.c19 {
   width: 24px;
   height: 24px;
   background-color: #0046FF;
@@ -1684,39 +1768,40 @@ Array [
   justify-content: center;
 }
 
-.c19 {
+.c20 {
   list-style: none;
   margin: 0;
   padding: 0;
   padding-bottom: 12px;
 }
 
-.c21 {
+.c22 {
   display: block;
 }
 
-.c21 + .c20 {
+.c22 + .c21 {
   padding-top: 8px;
 }
 
-.c2 {
+.c3 {
   list-style: none;
   margin: 0;
   padding: 0;
 }
 
-.c25 {
+.c26 {
   list-style: none;
   margin: 0;
   padding: 0;
 }
 
-.c4 {
+.c5 {
   display: block;
   position: relative;
+  background-color: #FFFFFF;
 }
 
-.c4::before {
+.c5::before {
   content: '';
   display: block;
   background: #0046FF;
@@ -1730,16 +1815,13 @@ Array [
   opacity: 0;
 }
 
-.c4 + .c3 {
-  border-top: 8px solid #EBEBE8;
-}
-
-.c12 {
+.c13 {
   display: block;
   position: relative;
+  background-color: #FFFFFF;
 }
 
-.c12::before {
+.c13::before {
   content: '';
   display: block;
   background: #0046FF;
@@ -1753,103 +1835,127 @@ Array [
   opacity: 1;
 }
 
-.c12 + .c3 {
-  border-top: 8px solid #EBEBE8;
-}
-
-.c7 {
+.c8 {
   position: relative;
 }
 
-.c14 {
+.c15 {
   -webkit-box-pack: start;
   -webkit-justify-content: flex-start;
   -ms-flex-pack: start;
   justify-content: flex-start;
 }
 
-.c26 {
+.c27 {
   -webkit-box-pack: start;
   -webkit-justify-content: flex-start;
   -ms-flex-pack: start;
   justify-content: flex-start;
 }
 
-.c26 > span {
+.c27 > span {
   width: 100%;
 }
 
+.c1 {
+  background: transparent;
+}
+
 @media (min-width:760px) {
-  .c6 {
+  .c7 {
     padding-left: 52px;
   }
 }
 
 @media (min-width:760px) {
-  .c17 {
+  .c18 {
     padding-left: 52px;
     padding-right: 20px;
   }
 }
 
 @media (min-width:760px) {
-  .c22 {
+  .c23 {
     padding-left: 52px;
     padding-right: 20px;
   }
 }
 
 @media not all and (min-width:976px) {
-  .c1 {
+  .c2 {
     display: none;
   }
 }
 
 @media not all and (max-width:975px) {
-  .c24 {
+  .c25 {
     display: none;
   }
 }
 
 @media (min-width:760px) {
-  .c10 {
+  .c11 {
     left: 20px;
   }
 }
 
+@media (max-width:975px) {
+  .c5 + .c4 {
+    border-top: 1px solid #EBEBE8;
+  }
+}
+
+@media (min-width:976px) {
+  .c5 + .c4 {
+    margin-top: 8px;
+  }
+}
+
+@media (max-width:975px) {
+  .c13 + .c4 {
+    border-top: 1px solid #EBEBE8;
+  }
+}
+
+@media (min-width:976px) {
+  .c13 + .c4 {
+    margin-top: 8px;
+  }
+}
+
 <div
-    className="c0"
+    className="c0 c1"
   >
     <div
       aria-label="Progress"
       role="group"
     >
       <div
-        className="c1"
+        className="c2"
       >
         <ol
-          className="c2"
+          className="c3"
         >
           <li
-            className="c3 c4"
+            className="c4 c5"
           >
             <span
-              className="c5"
+              className="c6"
             >
               <div
-                className="c6 c7"
+                className="c7 c8"
               >
                 <div
-                  className="c8"
+                  className="c9"
                 >
                   Not completed
                 </div>
                 <span
                   aria-hidden={true}
-                  className="c9 c10"
+                  className="c10 c11"
                 >
                   <span
-                    className="c11"
+                    className="c12"
                   >
                     1
                   </span>
@@ -1859,28 +1965,28 @@ Array [
             </span>
           </li>
           <li
-            className="c3 c12"
+            className="c4 c13"
           >
             <button
-              className="NormalizedButton__Button-ey7f5x-0 c13 c14"
+              className="NormalizedButton__Button-ey7f5x-0 c14 c15"
               onClick={[Function]}
               type="button"
             >
               <span
-                className="c15"
+                className="c16"
               >
                 <span
-                  className="c16"
+                  className="c17"
                 >
                   <div
-                    className="c17 c7"
+                    className="c18 c8"
                   >
                     <span
                       aria-hidden={true}
-                      className="c9 c10"
+                      className="c10 c11"
                     >
                       <span
-                        className="c18"
+                        className="c19"
                       >
                         2
                       </span>
@@ -1891,19 +1997,19 @@ Array [
               </span>
             </button>
             <ol
-              className="c19"
+              className="c20"
             >
               <li
-                className="c20 c21"
+                className="c21 c22"
               >
                 <div
-                  className="c22"
+                  className="c23"
                 >
                   <span
-                    className="c23"
+                    className="c24"
                   >
                     <div
-                      className="c8"
+                      className="c9"
                     >
                       Not completed
                     </div>
@@ -1912,16 +2018,16 @@ Array [
                 </div>
               </li>
               <li
-                className="c20 c21"
+                className="c21 c22"
               >
                 <div
-                  className="c22"
+                  className="c23"
                 >
                   <span
-                    className="c23"
+                    className="c24"
                   >
                     <div
-                      className="c8"
+                      className="c9"
                     >
                       Not completed
                     </div>
@@ -1930,16 +2036,16 @@ Array [
                 </div>
               </li>
               <li
-                className="c20 c21"
+                className="c21 c22"
               >
                 <div
-                  className="c22"
+                  className="c23"
                 >
                   <span
-                    className="c23"
+                    className="c24"
                   >
                     <div
-                      className="c8"
+                      className="c9"
                     >
                       Not completed
                     </div>
@@ -1950,25 +2056,25 @@ Array [
             </ol>
           </li>
           <li
-            className="c3 c4"
+            className="c4 c5"
           >
             <span
-              className="c5"
+              className="c6"
             >
               <div
-                className="c6 c7"
+                className="c7 c8"
               >
                 <div
-                  className="c8"
+                  className="c9"
                 >
                   Not completed
                 </div>
                 <span
                   aria-hidden={true}
-                  className="c9 c10"
+                  className="c10 c11"
                 >
                   <span
-                    className="c11"
+                    className="c12"
                   >
                     3
                   </span>
@@ -1980,41 +2086,41 @@ Array [
         </ol>
       </div>
       <div
-        className="c24"
+        className="c25"
       >
         <ol
-          className="c25"
+          className="c26"
         >
           <li
-            className="c3 c12"
+            className="c4 c13"
           >
             <button
               aria-expanded={false}
-              className="NormalizedButton__Button-ey7f5x-0 c13 c26"
+              className="NormalizedButton__Button-ey7f5x-0 c14 c27"
               onClick={[Function]}
               type="button"
             >
               <span
-                className="c15"
+                className="c16"
               >
                 <span
-                  className="c16"
+                  className="c17"
                 >
                   <div
-                    className="c17 c7"
+                    className="c18 c8"
                   >
                     <div
-                      className="c27"
+                      className="c28"
                     >
                       <div
-                        className="c28"
+                        className="c29"
                       >
                         <span
                           aria-hidden={true}
-                          className="c9 c10"
+                          className="c10 c11"
                         >
                           <span
-                            className="c18"
+                            className="c19"
                           >
                             2
                           </span>
@@ -2022,11 +2128,11 @@ Array [
                         Time and risk
                       </div>
                       <div
-                        className="c28"
+                        className="c29"
                       >
                         <svg
                           aria-hidden="true"
-                          className="c29 c30"
+                          className="c30 c31"
                           direction="down"
                           focusable="false"
                           preserveAspectRatio="xMidYMid meet"
@@ -2071,6 +2177,22 @@ Array [
 }
 
 @media (min-width:760px) {
+
+}
+
+@media (max-width:975px) {
+
+}
+
+@media (min-width:976px) {
+
+}
+
+@media (max-width:975px) {
+
+}
+
+@media (min-width:976px) {
 
 }
 

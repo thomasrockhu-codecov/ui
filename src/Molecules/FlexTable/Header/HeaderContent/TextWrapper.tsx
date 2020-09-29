@@ -5,14 +5,16 @@ import { Typography } from '../../../..';
 import { StyledTruncateTooltip } from '../../shared';
 import { FontSize } from '../../shared/shared.types';
 
-const Text: React.FC<{ fontSize: FontSize; sorted?: boolean }> = ({
+const Text: React.FC<{ className?: string; fontSize: FontSize; sorted?: boolean }> = ({
+  className,
   children,
   sorted,
   fontSize,
 }) => (
   <Typography
+    className={className}
     type={getFontSizeTypographyType(fontSize)}
-    color={t => (sorted ? t.color.text : t.color.label)}
+    color={(t) => (sorted ? t.color.text : t.color.label)}
     weight={sorted ? 'bold' : 'regular'}
   >
     {children}
@@ -20,6 +22,7 @@ const Text: React.FC<{ fontSize: FontSize; sorted?: boolean }> = ({
 );
 
 export const TextWrapper: TextWrapperComponent = ({
+  className,
   fontSize = 'm',
   sorted,
   children,
@@ -27,14 +30,14 @@ export const TextWrapper: TextWrapperComponent = ({
 }) => {
   if (!truncate) {
     return (
-      <Text fontSize={fontSize} sorted={sorted}>
+      <Text className={className} fontSize={fontSize} sorted={sorted}>
         {children}
       </Text>
     );
   }
 
   return (
-    <StyledTruncateTooltip label={children}>
+    <StyledTruncateTooltip className={className} label={children}>
       <Text fontSize={fontSize} sorted={sorted}>
         {children}
       </Text>

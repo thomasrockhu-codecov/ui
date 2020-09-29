@@ -37,22 +37,29 @@ const MobileProgressLevels = styled.ol`
 const ListItem = styled.li<InternalProps>`
   display: block;
   position: relative;
+  background-color: ${(p) => p.theme.color.backgroundInput};
 
   &::before {
     content: '';
     display: block;
-    background: ${p => p.theme.color.cta};
+    background: ${(p) => p.theme.color.cta};
     width: 2px;
     height: 100%;
     position: absolute;
     top: 0;
     left: 0;
     transition: opacity 0.16s ease-out;
-    opacity: ${p => (p.$current ? 1 : 0)};
+    opacity: ${(p) => (p.$current ? 1 : 0)};
   }
 
   & + & {
-    border-top: ${p => p.theme.spacing.unit(2)}px solid ${p => p.theme.color.divider};
+    ${({ theme }) => theme.media.lessThan(theme.breakpoints.md)} {
+      border-top: ${(p) => p.theme.spacing.unit(0.25)}px solid ${(p) => p.theme.color.divider};
+    }
+
+    ${({ theme }) => theme.media.greaterThan(theme.breakpoints.md)} {
+      margin-top: ${(p) => p.theme.spacing.unit(2)}px;
+    }
   }
 `;
 
@@ -111,7 +118,7 @@ const ProgressLevels: ProgressLevelsComponent = ({
                   </Typography>
                 </StyledButton>
               ) : (
-                <Typography color={t => t.color.disabledText} type="primary">
+                <Typography color={(t) => t.color.disabledText} type="primary">
                   <Content
                     py={VERTICAL_PADDING}
                     pr={HORIZONTAL_PADDING}
@@ -169,7 +176,7 @@ export const TopLevel: TopLevelComponent = ({
 
   return (
     <>
-      <Media query={t => t.media.greaterThan(t.breakpoints.md.size)}>
+      <Media query={(t) => t.media.greaterThan(t.breakpoints.md.size)}>
         <ProgressLevels
           steps={steps}
           onStepClick={onStepClick}
@@ -179,7 +186,7 @@ export const TopLevel: TopLevelComponent = ({
         />
       </Media>
 
-      <Media query={t => t.media.lessThan(t.breakpoints.md)}>
+      <Media query={(t) => t.media.lessThan(t.breakpoints.md)}>
         <MobileProgressLevels>
           {steps &&
             steps.map((step, i) => {

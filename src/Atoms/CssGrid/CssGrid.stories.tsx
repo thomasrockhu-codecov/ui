@@ -99,6 +99,57 @@ cssGridWithCustomGutter.story = {
   name: 'CssGrid with custom gutter',
 };
 
+export const cssGridWithDifferentGutterOnDifferentScreenSizes = () => (
+  <Grid.Container
+    gutter={{ row: 5, col: 5 }}
+    templateColumns={['1fr', '1fr', '1fr']}
+    // prettier-ignore
+    templateRows={[
+        'auto',
+        'auto'
+      ]}
+    // prettier-ignore
+    areas={[
+      ['left', 'top', 'content'],
+      ['left', 'top', 'content'],
+      ]}
+    md={{
+      // prettier-ignore
+      templateRows: [
+          'auto',
+          'auto'
+        ],
+      templateColumns: ['1fr'],
+      areas: [
+        ['left', 'top', 'content'],
+        ['left', 'top', 'content'],
+      ],
+      gutter: { row: 0, col: 0 },
+    }}
+  >
+    <Grid.Item area="left">
+      <Content>Left</Content>
+    </Grid.Item>
+    <Grid.Item area="top">
+      <Content>
+        <ComponentThatDoesSomethingOnMount />
+      </Content>
+    </Grid.Item>
+    <Grid.Item area="content">
+      <Content>
+        <ComponentThatLogsRender>Content</ComponentThatLogsRender>
+      </Content>
+    </Grid.Item>
+    <Grid.Item area="non-existing">
+      <Content>something that doesn&lsquo;t exist</Content>
+    </Grid.Item>
+  </Grid.Container>
+);
+
+cssGridWithDifferentGutterOnDifferentScreenSizes.story = {
+  name: 'Different gutter on different screen sizes',
+};
+
 export const cssGridWithObjectAsGutterAndCustomSizedColumns = () => (
   <Grid.Container
     gutter={{ row: 6, col: 4 }}
@@ -186,7 +237,7 @@ export const cssGridWithDifferentLayoutsForDifferentScreenSizes = () => (
         ['left', 'top',     'sidebar'],
         ['left', 'content', 'sidebar'],
         ['left', 'content', 'sidebar'],
-      ]
+      ],
     }}
   >
     <Grid.Item area="left">
@@ -306,7 +357,7 @@ export const shownOnSmallScreenSizesHiddenOnMd = () => (
       areas: [
           ['left'], 
           ['content']
-        ]
+        ],
     }}
   >
     <Grid.Item area="left">
@@ -485,7 +536,7 @@ conditionallyHiddenWrongWayShown.story = {
 };
 
 const BgContent = styled.div`
-  background-color: ${p => p.theme.color.background};
+  background-color: ${(p) => p.theme.color.background};
 `;
 
 export const itemsWithDifferentPlacements = () => {

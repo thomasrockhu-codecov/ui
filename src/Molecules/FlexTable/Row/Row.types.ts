@@ -41,6 +41,13 @@ interface UncontrolledExpand extends ExpandArea {
   initiallyExpanded?: boolean;
 }
 
+export type ExpandRowProps = ExpandAreaProps &
+  MediaRelatedProps<Pick<ExpandAreaProps, 'expandItems' | 'expandChildren'>> & {
+    separatorColor?: ColorFn;
+  } & HtmlProps;
+
+export type ExpandRowComponent = React.FC<ExpandRowProps>;
+
 export type ExpandAreaProps = UncontrolledExpand | ControlledExpand;
 
 type Props = {
@@ -60,13 +67,13 @@ type Props = {
    * @default true
    */
   isContent?: boolean;
-} & ExpandAreaProps &
-  MediaRelatedProps<Pick<ExpandAreaProps, 'expandItems' | 'expandChildren'>> &
-  HtmlProps;
+} & HtmlProps &
+  ExpandRowProps;
 
 export type RowComponents = {
   ExpandItem: ExpandItemComponent;
   ExpandItems: ExpandItemsComponent;
+  ExpandRow: ExpandRowComponent;
 };
 
 export type RowComponent = React.FC<Props> & RowComponents;
@@ -83,6 +90,11 @@ type HeaderProps = {
    */
   isContent?: boolean;
   separatorColor?: ColorFn;
+  /**
+   *  When the header is sticky, use this number as value for css-top property.
+   * @default 0
+   */
+  stickyOffsetTop?: number;
 } & HtmlProps;
 
 export type HeaderRowComponent = React.FC<HeaderProps>;

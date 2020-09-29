@@ -1,0 +1,1883 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Molecules | FlexTable / FlexTable with different headers Controlled Sortable Headers 1`] = `
+.c3 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-left: -4px;
+  margin-right: -4px;
+}
+
+.c3 > * {
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+.c3 > *:not(:first-child) {
+  padding-top: 0;
+}
+
+.c6 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+
+.c9 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.c11 {
+  box-sizing: border-box;
+}
+
+.c16 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 8px;
+  height: 8px;
+  fill: #6E6E69;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.c1 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.3333333333333333;
+}
+
+.c15 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #6E6E69;
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c13 {
+  display: inline-block;
+  width: 100%;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.c12 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  min-width: 0;
+}
+
+.c14 {
+  width: inherit;
+}
+
+.c4 {
+  background: #FFFFFF;
+  border-bottom: 1px solid #EBEBE8;
+  padding-right: 4px;
+  padding-left: 2px;
+  border-left: 2px solid transparent;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  margin-right: 0;
+  margin-left: 0;
+}
+
+.c4 > *:first-child {
+  padding-left: 0;
+}
+
+.c4 > *:last-child {
+  padding-right: 0;
+}
+
+.c5 {
+  z-index: 1;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0px;
+  border-bottom: 1px solid #282823;
+}
+
+.c17 {
+  margin-left: 4px;
+}
+
+.c8 {
+  -webkit-box-pack: inherit;
+  -webkit-justify-content: inherit;
+  -ms-flex-pack: inherit;
+  justify-content: inherit;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  color: inherit;
+  width: 100%;
+}
+
+.c10 {
+  -webkit-box-pack: inherit;
+  -webkit-justify-content: inherit;
+  -ms-flex-pack: inherit;
+  justify-content: inherit;
+}
+
+.c7 {
+  overflow: hidden;
+}
+
+.c2 {
+  position: relative;
+}
+
+.c0 {
+  background-color: #F5F5F5;
+}
+
+.c0:not(:last-of-type) {
+  margin-bottom: 40px;
+}
+
+@media (min-width:760px) {
+  .c1 {
+    font-size: 20px;
+    line-height: 1.2;
+  }
+}
+
+<div
+  className="c0"
+>
+  <span
+    className="c1"
+  >
+    Controlled Sortable Headers
+  </span>
+  <div
+    className="c2"
+    role="table"
+  >
+    <div
+      className="c3 c4 c5"
+      role="row"
+    >
+      <div
+        aria-sort="none"
+        className="c6 c7"
+        role="columnheader"
+      >
+        <a
+          className="c8"
+          href="#"
+          onClick={[Function]}
+          onKeyDown={[Function]}
+          role="button"
+        >
+          <div
+            className="c9 c10"
+          >
+            <div
+              className="c11 c12"
+            >
+              <div
+                className="c13 c14"
+              >
+                <span
+                  className="c15"
+                >
+                  Controlled1
+                </span>
+              </div>
+            </div>
+            <div
+              className="c11"
+            >
+              <svg
+                aria-hidden="true"
+                className="c16 c17"
+                focusable="false"
+                preserveAspectRatio="xMidYMid meet"
+                role="presentation"
+                viewBox="0 0 24 24"
+              >
+                <polygon
+                  points="19.969 4 24 8.027 12 20 0 8.027 4.031 4 12 11.952"
+                />
+              </svg>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div
+        aria-sort="none"
+        className="c6 c7"
+        role="columnheader"
+      >
+        <a
+          className="c8"
+          href="#"
+          onClick={[Function]}
+          onKeyDown={[Function]}
+          role="button"
+        >
+          <div
+            className="c9 c10"
+          >
+            <div
+              className="c11 c12"
+            >
+              <div
+                className="c13 c14"
+              >
+                <span
+                  className="c15"
+                >
+                  Controlled2
+                </span>
+              </div>
+            </div>
+            <div
+              className="c11"
+            >
+              <svg
+                aria-hidden="true"
+                className="c16 c17"
+                focusable="false"
+                preserveAspectRatio="xMidYMid meet"
+                role="presentation"
+                viewBox="0 0 24 24"
+              >
+                <polygon
+                  points="19.969 4 24 8.027 12 20 0 8.027 4.031 4 12 11.952"
+                />
+              </svg>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div
+        className="c6 c7"
+        role="columnheader"
+      >
+        <div
+          className="c13 c14"
+        >
+          <span
+            className="c15"
+          >
+            Not sortable
+          </span>
+        </div>
+      </div>
+      <div
+        aria-sort="none"
+        className="c6 c7"
+        role="columnheader"
+      >
+        <a
+          className="c8"
+          href="#"
+          onClick={[Function]}
+          onKeyDown={[Function]}
+          role="button"
+        >
+          <div
+            className="c9 c10"
+          >
+            <div
+              className="c11 c12"
+            >
+              <div
+                className="c13 c14"
+              >
+                <span
+                  className="c15"
+                >
+                  Controlled3
+                </span>
+              </div>
+            </div>
+            <div
+              className="c11"
+            >
+              <svg
+                aria-hidden="true"
+                className="c16 c17"
+                focusable="false"
+                preserveAspectRatio="xMidYMid meet"
+                role="presentation"
+                viewBox="0 0 24 24"
+              >
+                <polygon
+                  points="19.969 4 24 8.027 12 20 0 8.027 4.031 4 12 11.952"
+                />
+              </svg>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Molecules | FlexTable / FlexTable with different headers Default Table Headers 1`] = `
+.c16 {
+  height: 12px;
+  box-sizing: border-box;
+  display: inline-block;
+  vertical-align: middle;
+  position: relative;
+  bottom: 1px;
+  width: 16px;
+  overflow: hidden;
+}
+
+.c3 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-left: -4px;
+  margin-right: -4px;
+}
+
+.c3 > * {
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+.c3 > *:not(:first-child) {
+  padding-top: 0;
+}
+
+.c6 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+
+.c11 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -webkit-flex: 3;
+  -ms-flex: 3;
+  flex: 3;
+}
+
+.c13 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.c15 {
+  box-sizing: border-box;
+}
+
+.c18 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 8px;
+  height: 8px;
+  fill: #6E6E69;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.c1 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.3333333333333333;
+}
+
+.c10 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #6E6E69;
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c8 {
+  display: inline-block;
+  width: 100%;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.c17 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  min-width: 0;
+}
+
+.c9 {
+  width: inherit;
+}
+
+.c4 {
+  background: #FFFFFF;
+  border-bottom: 1px solid #EBEBE8;
+  padding-right: 4px;
+  padding-left: 2px;
+  border-left: 2px solid transparent;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  margin-right: 0;
+  margin-left: 0;
+}
+
+.c4 > *:first-child {
+  padding-left: 0;
+}
+
+.c4 > *:last-child {
+  padding-right: 0;
+}
+
+.c5 {
+  z-index: 1;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0px;
+  border-bottom: 1px solid #282823;
+}
+
+.c19 {
+  margin-left: 4px;
+}
+
+.c12 {
+  -webkit-box-pack: inherit;
+  -webkit-justify-content: inherit;
+  -ms-flex-pack: inherit;
+  justify-content: inherit;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  color: inherit;
+  width: 100%;
+}
+
+.c7 {
+  overflow: hidden;
+}
+
+.c2 {
+  position: relative;
+}
+
+.c0 {
+  background-color: #F5F5F5;
+}
+
+.c0:not(:last-of-type) {
+  margin-bottom: 40px;
+}
+
+.c14 {
+  -webkit-box-pack: inherit;
+  -webkit-justify-content: inherit;
+  -ms-flex-pack: inherit;
+  justify-content: inherit;
+}
+
+@media (min-width:760px) {
+  .c1 {
+    font-size: 20px;
+    line-height: 1.2;
+  }
+}
+
+<div
+  className="c0"
+>
+  <span
+    className="c1"
+  >
+    Table Header Variations
+  </span>
+  <div
+    className="c2"
+    role="table"
+  >
+    <div
+      className="c3 c4 c5"
+      role="row"
+    >
+      <div
+        className="c6 c7"
+        role="columnheader"
+      >
+        <div
+          className="c8 c9"
+        >
+          <span
+            className="c10"
+          >
+            Table header 1 flex 1
+          </span>
+        </div>
+      </div>
+      <div
+        className="c11 c7"
+        role="columnheader"
+      >
+        <div
+          className="c8 c9"
+        >
+          <span
+            className="c10"
+          >
+            Table header 2 flex 3
+          </span>
+        </div>
+      </div>
+      <div
+        aria-sort="none"
+        className="c6 c7"
+        role="columnheader"
+      >
+        <a
+          className="c12"
+          href="#"
+          onClick={[Function]}
+          onKeyDown={[Function]}
+          role="button"
+        >
+          <div
+            className="c13 c14"
+          >
+            <div
+              className="c15"
+            >
+              <svg
+                className="c16"
+                focusable="false"
+                role="img"
+                viewBox="0 0 640 480"
+              >
+                <g
+                  transform="translate(50.082) scale(.9375)"
+                >
+                  <g
+                    fillRule="evenodd"
+                    strokeWidth="1pt"
+                  >
+                    <path
+                      d="M-121.103.302h256V205.1h-256zM-121.103 307.178h256v204.8h-256z"
+                      fill="#006aa7"
+                    />
+                    <path
+                      d="M-121.103 204.984h256v102.4h-256z"
+                      fill="#fecc00"
+                    />
+                    <path
+                      d="M133.843.01h102.4v511.997h-102.4z"
+                      fill="#fecc00"
+                    />
+                    <path
+                      d="M232.995 205.013h460.798v102.4H232.995z"
+                      fill="#fecc00"
+                    />
+                    <path
+                      d="M236.155 307.208h460.797v204.799H236.155zM236.155.302h460.797V205.1H236.155z"
+                      fill="#006aa7"
+                    />
+                  </g>
+                </g>
+                <title>
+                  Sweden
+                </title>
+              </svg>
+            </div>
+            <div
+              className="c15 c17"
+            >
+              <div
+                className="c8 c9"
+              >
+                <span
+                  className="c10"
+                >
+                  Customised header
+                </span>
+              </div>
+            </div>
+            <div
+              className="c15"
+            >
+              <svg
+                aria-hidden="true"
+                className="c18 c19"
+                focusable="false"
+                preserveAspectRatio="xMidYMid meet"
+                role="presentation"
+                viewBox="0 0 24 24"
+              >
+                <polygon
+                  points="19.969 4 24 8.027 12 20 0 8.027 4.031 4 12 11.952"
+                />
+              </svg>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div
+        className="c6 c7"
+        role="columnheader"
+      >
+        <div
+          className="c8 c9"
+        >
+          <span
+            className="c10"
+          >
+            Table header 3 no flex
+          </span>
+        </div>
+      </div>
+      <div
+        className="c6 c7"
+        role="columnheader"
+      >
+        <span
+          className="c1"
+        >
+          React component
+        </span>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Molecules | FlexTable / FlexTable with different headers Sortable Header Uncontrolled With Different Alignment 1`] = `
+.c3 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-left: -4px;
+  margin-right: -4px;
+}
+
+.c3 > * {
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+.c3 > *:not(:first-child) {
+  padding-top: 0;
+}
+
+.c6 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+
+.c9 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.c11 {
+  box-sizing: border-box;
+}
+
+.c18 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+
+.c19 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+
+.c16 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 8px;
+  height: 8px;
+  fill: #6E6E69;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.c1 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.3333333333333333;
+}
+
+.c15 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #6E6E69;
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c13 {
+  display: inline-block;
+  width: 100%;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.c12 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  min-width: 0;
+}
+
+.c14 {
+  width: inherit;
+}
+
+.c4 {
+  background: #FFFFFF;
+  border-bottom: 1px solid #EBEBE8;
+  padding-right: 4px;
+  padding-left: 2px;
+  border-left: 2px solid transparent;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  margin-right: 0;
+  margin-left: 0;
+}
+
+.c4 > *:first-child {
+  padding-left: 0;
+}
+
+.c4 > *:last-child {
+  padding-right: 0;
+}
+
+.c5 {
+  z-index: 1;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0px;
+  border-bottom: 1px solid #282823;
+}
+
+.c17 {
+  margin-left: 4px;
+}
+
+.c8 {
+  -webkit-box-pack: inherit;
+  -webkit-justify-content: inherit;
+  -ms-flex-pack: inherit;
+  justify-content: inherit;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  color: inherit;
+  width: 100%;
+}
+
+.c10 {
+  -webkit-box-pack: inherit;
+  -webkit-justify-content: inherit;
+  -ms-flex-pack: inherit;
+  justify-content: inherit;
+}
+
+.c7 {
+  overflow: hidden;
+}
+
+.c2 {
+  position: relative;
+}
+
+.c0 {
+  background-color: #F5F5F5;
+}
+
+.c0:not(:last-of-type) {
+  margin-bottom: 40px;
+}
+
+@media (min-width:760px) {
+  .c1 {
+    font-size: 20px;
+    line-height: 1.2;
+  }
+}
+
+<div
+  className="c0"
+>
+  <span
+    className="c1"
+  >
+    Uncontrolled Sortable Headers With Different Alignments
+  </span>
+  <div
+    className="c2"
+    role="table"
+  >
+    <div
+      className="c3 c4 c5"
+      role="row"
+    >
+      <div
+        aria-sort="none"
+        className="c6 c7"
+        role="columnheader"
+      >
+        <a
+          className="c8"
+          href="#"
+          onClick={[Function]}
+          onKeyDown={[Function]}
+          role="button"
+        >
+          <div
+            className="c9 c10"
+          >
+            <div
+              className="c11 c12"
+            >
+              <div
+                className="c13 c14"
+              >
+                <span
+                  className="c15"
+                >
+                  Uncontrolled center
+                </span>
+              </div>
+            </div>
+            <div
+              className="c11"
+            >
+              <svg
+                aria-hidden="true"
+                className="c16 c17"
+                focusable="false"
+                preserveAspectRatio="xMidYMid meet"
+                role="presentation"
+                viewBox="0 0 24 24"
+              >
+                <polygon
+                  points="19.969 4 24 8.027 12 20 0 8.027 4.031 4 12 11.952"
+                />
+              </svg>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div
+        aria-sort="none"
+        className="c18 c7"
+        role="columnheader"
+      >
+        <a
+          className="c8"
+          href="#"
+          onClick={[Function]}
+          onKeyDown={[Function]}
+          role="button"
+        >
+          <div
+            className="c9 c10"
+          >
+            <div
+              className="c11 c12"
+            >
+              <div
+                className="c13 c14"
+              >
+                <span
+                  className="c15"
+                >
+                  Uncontrolled right
+                </span>
+              </div>
+            </div>
+            <div
+              className="c11"
+            >
+              <svg
+                aria-hidden="true"
+                className="c16 c17"
+                focusable="false"
+                preserveAspectRatio="xMidYMid meet"
+                role="presentation"
+                viewBox="0 0 24 24"
+              >
+                <polygon
+                  points="19.969 4 24 8.027 12 20 0 8.027 4.031 4 12 11.952"
+                />
+              </svg>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div
+        aria-sort="none"
+        className="c19 c7"
+        role="columnheader"
+      >
+        <a
+          className="c8"
+          href="#"
+          onClick={[Function]}
+          onKeyDown={[Function]}
+          role="button"
+        >
+          <div
+            className="c9 c10"
+          >
+            <div
+              className="c11 c12"
+            >
+              <div
+                className="c13 c14"
+              >
+                <span
+                  className="c15"
+                >
+                  Uncontrolled left
+                </span>
+              </div>
+            </div>
+            <div
+              className="c11"
+            >
+              <svg
+                aria-hidden="true"
+                className="c16 c17"
+                focusable="false"
+                preserveAspectRatio="xMidYMid meet"
+                role="presentation"
+                viewBox="0 0 24 24"
+              >
+                <polygon
+                  points="19.969 4 24 8.027 12 20 0 8.027 4.031 4 12 11.952"
+                />
+              </svg>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div
+        className="c19 c7"
+        role="columnheader"
+      >
+        <div
+          className="c13 c14"
+        >
+          <span
+            className="c15"
+          >
+            Not sortable
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Molecules | FlexTable / FlexTable with different headers Sortable Headers Only Ascending Descending 1`] = `
+.c3 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-left: -4px;
+  margin-right: -4px;
+}
+
+.c3 > * {
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+.c3 > *:not(:first-child) {
+  padding-top: 0;
+}
+
+.c6 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+
+.c9 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.c11 {
+  box-sizing: border-box;
+}
+
+.c16 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 12px;
+  height: 12px;
+  fill: #282823;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.c20 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 8px;
+  height: 8px;
+  fill: #6E6E69;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.c17 {
+  -webkit-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  transform: rotate(0deg);
+}
+
+.c1 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.3333333333333333;
+}
+
+.c15 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c19 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #6E6E69;
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c13 {
+  display: inline-block;
+  width: 100%;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.c12 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  min-width: 0;
+}
+
+.c14 {
+  width: inherit;
+}
+
+.c4 {
+  background: #FFFFFF;
+  border-bottom: 1px solid #EBEBE8;
+  padding-right: 4px;
+  padding-left: 2px;
+  border-left: 2px solid transparent;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  margin-right: 0;
+  margin-left: 0;
+}
+
+.c4 > *:first-child {
+  padding-left: 0;
+}
+
+.c4 > *:last-child {
+  padding-right: 0;
+}
+
+.c5 {
+  z-index: 1;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0px;
+  border-bottom: 1px solid #282823;
+}
+
+.c21 {
+  margin-left: 4px;
+}
+
+.c18 {
+  margin-left: 4px;
+}
+
+.c8 {
+  -webkit-box-pack: inherit;
+  -webkit-justify-content: inherit;
+  -ms-flex-pack: inherit;
+  justify-content: inherit;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  color: inherit;
+  width: 100%;
+}
+
+.c10 {
+  -webkit-box-pack: inherit;
+  -webkit-justify-content: inherit;
+  -ms-flex-pack: inherit;
+  justify-content: inherit;
+}
+
+.c7 {
+  overflow: hidden;
+}
+
+.c2 {
+  position: relative;
+}
+
+.c0 {
+  background-color: #F5F5F5;
+}
+
+.c0:not(:last-of-type) {
+  margin-bottom: 40px;
+}
+
+@media (min-width:760px) {
+  .c1 {
+    font-size: 20px;
+    line-height: 1.2;
+  }
+}
+
+<div
+  className="c0"
+>
+  <span
+    className="c1"
+  >
+    Sortable Headers – Only Ascending/Descending
+  </span>
+  <div
+    className="c2"
+    role="table"
+  >
+    <div
+      className="c3 c4 c5"
+      role="row"
+    >
+      <div
+        aria-sort="ascending"
+        className="c6 c7"
+        role="columnheader"
+      >
+        <a
+          className="c8"
+          href="#"
+          onClick={[Function]}
+          onKeyDown={[Function]}
+          role="button"
+        >
+          <div
+            className="c9 c10"
+          >
+            <div
+              className="c11 c12"
+            >
+              <div
+                className="c13 c14"
+              >
+                <span
+                  className="c15"
+                >
+                  Controlled1
+                </span>
+              </div>
+            </div>
+            <div
+              className="c11"
+            >
+              <svg
+                aria-hidden="true"
+                className="c16 c17 c18"
+                direction="ascending"
+                focusable="false"
+                preserveAspectRatio="xMidYMid meet"
+                role="presentation"
+                viewBox="0 0 8 12"
+              >
+                <path
+                  d="M9 2v8.4l1.66-1.62L12 10.1 8 14l-4-3.9 1.34-1.32L7 10.4V2h2z"
+                  fillRule="evenodd"
+                  transform="matrix(1 0 0 -1 -4 14)"
+                />
+              </svg>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div
+        aria-sort="none"
+        className="c6 c7"
+        role="columnheader"
+      >
+        <a
+          className="c8"
+          href="#"
+          onClick={[Function]}
+          onKeyDown={[Function]}
+          role="button"
+        >
+          <div
+            className="c9 c10"
+          >
+            <div
+              className="c11 c12"
+            >
+              <div
+                className="c13 c14"
+              >
+                <span
+                  className="c19"
+                >
+                  Controlled2
+                </span>
+              </div>
+            </div>
+            <div
+              className="c11"
+            >
+              <svg
+                aria-hidden="true"
+                className="c20 c21"
+                focusable="false"
+                preserveAspectRatio="xMidYMid meet"
+                role="presentation"
+                viewBox="0 0 24 24"
+              >
+                <polygon
+                  points="19.969 4 24 8.027 12 20 0 8.027 4.031 4 12 11.952"
+                />
+              </svg>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div
+        className="c6 c7"
+        role="columnheader"
+      >
+        <div
+          className="c13 c14"
+        >
+          <span
+            className="c19"
+          >
+            Not sortable
+          </span>
+        </div>
+      </div>
+      <div
+        aria-sort="none"
+        className="c6 c7"
+        role="columnheader"
+      >
+        <a
+          className="c8"
+          href="#"
+          onClick={[Function]}
+          onKeyDown={[Function]}
+          role="button"
+        >
+          <div
+            className="c9 c10"
+          >
+            <div
+              className="c11 c12"
+            >
+              <div
+                className="c13 c14"
+              >
+                <span
+                  className="c19"
+                >
+                  Controlled3
+                </span>
+              </div>
+            </div>
+            <div
+              className="c11"
+            >
+              <svg
+                aria-hidden="true"
+                className="c20 c21"
+                focusable="false"
+                preserveAspectRatio="xMidYMid meet"
+                role="presentation"
+                viewBox="0 0 24 24"
+              >
+                <polygon
+                  points="19.969 4 24 8.027 12 20 0 8.027 4.031 4 12 11.952"
+                />
+              </svg>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Molecules | FlexTable / FlexTable with different headers Uncontrolled Sortable Headers 1`] = `
+.c3 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-left: -4px;
+  margin-right: -4px;
+}
+
+.c3 > * {
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+.c3 > *:not(:first-child) {
+  padding-top: 0;
+}
+
+.c6 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+
+.c9 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.c11 {
+  box-sizing: border-box;
+}
+
+.c16 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 8px;
+  height: 8px;
+  fill: #6E6E69;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.c19 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 12px;
+  height: 12px;
+  fill: #282823;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.c20 {
+  -webkit-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+
+.c1 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.3333333333333333;
+}
+
+.c15 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #6E6E69;
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c18 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c13 {
+  display: inline-block;
+  width: 100%;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.c12 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  min-width: 0;
+}
+
+.c14 {
+  width: inherit;
+}
+
+.c4 {
+  background: #FFFFFF;
+  border-bottom: 1px solid #EBEBE8;
+  padding-right: 4px;
+  padding-left: 2px;
+  border-left: 2px solid transparent;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  margin-right: 0;
+  margin-left: 0;
+}
+
+.c4 > *:first-child {
+  padding-left: 0;
+}
+
+.c4 > *:last-child {
+  padding-right: 0;
+}
+
+.c5 {
+  z-index: 1;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0px;
+  border-bottom: 1px solid #282823;
+}
+
+.c17 {
+  margin-left: 4px;
+}
+
+.c21 {
+  margin-left: 4px;
+}
+
+.c8 {
+  -webkit-box-pack: inherit;
+  -webkit-justify-content: inherit;
+  -ms-flex-pack: inherit;
+  justify-content: inherit;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  color: inherit;
+  width: 100%;
+}
+
+.c10 {
+  -webkit-box-pack: inherit;
+  -webkit-justify-content: inherit;
+  -ms-flex-pack: inherit;
+  justify-content: inherit;
+}
+
+.c7 {
+  overflow: hidden;
+}
+
+.c2 {
+  position: relative;
+}
+
+.c0 {
+  background-color: #F5F5F5;
+}
+
+.c0:not(:last-of-type) {
+  margin-bottom: 40px;
+}
+
+@media (min-width:760px) {
+  .c1 {
+    font-size: 20px;
+    line-height: 1.2;
+  }
+}
+
+<div
+  className="c0"
+>
+  <span
+    className="c1"
+  >
+    Uncontrolled Sortable Headers
+  </span>
+  <div
+    className="c2"
+    role="table"
+  >
+    <div
+      className="c3 c4 c5"
+      role="row"
+    >
+      <div
+        aria-sort="none"
+        className="c6 c7"
+        role="columnheader"
+      >
+        <a
+          className="c8"
+          href="#"
+          onClick={[Function]}
+          onKeyDown={[Function]}
+          role="button"
+        >
+          <div
+            className="c9 c10"
+          >
+            <div
+              className="c11 c12"
+            >
+              <div
+                className="c13 c14"
+              >
+                <span
+                  className="c15"
+                >
+                  Uncontrolled 1
+                </span>
+              </div>
+            </div>
+            <div
+              className="c11"
+            >
+              <svg
+                aria-hidden="true"
+                className="c16 c17"
+                focusable="false"
+                preserveAspectRatio="xMidYMid meet"
+                role="presentation"
+                viewBox="0 0 24 24"
+              >
+                <polygon
+                  points="19.969 4 24 8.027 12 20 0 8.027 4.031 4 12 11.952"
+                />
+              </svg>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div
+        aria-sort="none"
+        className="c6 c7"
+        role="columnheader"
+      >
+        <a
+          className="c8"
+          href="#"
+          onClick={[Function]}
+          onKeyDown={[Function]}
+          role="button"
+        >
+          <div
+            className="c9 c10"
+          >
+            <div
+              className="c11 c12"
+            >
+              <div
+                className="c13 c14"
+              >
+                <span
+                  className="c15"
+                >
+                  Uncontrolled 2
+                </span>
+              </div>
+            </div>
+            <div
+              className="c11"
+            >
+              <svg
+                aria-hidden="true"
+                className="c16 c17"
+                focusable="false"
+                preserveAspectRatio="xMidYMid meet"
+                role="presentation"
+                viewBox="0 0 24 24"
+              >
+                <polygon
+                  points="19.969 4 24 8.027 12 20 0 8.027 4.031 4 12 11.952"
+                />
+              </svg>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div
+        aria-sort="descending"
+        className="c6 c7"
+        role="columnheader"
+      >
+        <a
+          className="c8"
+          href="#"
+          onClick={[Function]}
+          onKeyDown={[Function]}
+          role="button"
+        >
+          <div
+            className="c9 c10"
+          >
+            <div
+              className="c11 c12"
+            >
+              <div
+                className="c13 c14"
+              >
+                <span
+                  className="c18"
+                >
+                  With initial sort order
+                </span>
+              </div>
+            </div>
+            <div
+              className="c11"
+            >
+              <svg
+                aria-hidden="true"
+                className="c19 c20 c21"
+                direction="descending"
+                focusable="false"
+                preserveAspectRatio="xMidYMid meet"
+                role="presentation"
+                viewBox="0 0 8 12"
+              >
+                <path
+                  d="M9 2v8.4l1.66-1.62L12 10.1 8 14l-4-3.9 1.34-1.32L7 10.4V2h2z"
+                  fillRule="evenodd"
+                  transform="matrix(1 0 0 -1 -4 14)"
+                />
+              </svg>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div
+        className="c6 c7"
+        role="columnheader"
+      >
+        <div
+          className="c13 c14"
+        >
+          <span
+            className="c15"
+          >
+            Non sortable
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

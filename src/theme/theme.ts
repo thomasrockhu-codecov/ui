@@ -117,6 +117,19 @@ const createColors = (type: ThemeColorsVersion): ThemeColors<typeof type> => {
     ...grayScale,
   ];
 
+  const lineColors = [
+    rawColor.complementaryPink1,
+    rawColor.complementaryBlue1,
+    rawColor.complementaryTurquoise1,
+    rawColor.complementaryGreen1,
+    rawColor.brandPink,
+    rawColor.complementaryGreen2,
+    rawColor.complementaryBlue2,
+    rawColor.complementaryPink2,
+    rawColor.complementaryTurquoise2,
+    rawColor.gray1,
+  ];
+
   // prettier-ignore
   return {
     backgroundInput: rawColor.white,
@@ -228,6 +241,9 @@ const createColors = (type: ThemeColorsVersion): ThemeColors<typeof type> => {
     progressBarDone: rawColor.positive,
     progressBarActive: rawColor.cta,
     progressBarNext: rawColor.gray4,
+    indexFundsBackground: rawColor.gray6,
+    indexFundsNorwegianAccent: rawColor.brandBlue,
+    indexFundsFinnishAccent: [rawColor.brandPink, rawColor.brandBlue, rawColor.complementaryBlue2, rawColor.black, rawColor.complementaryTurquoise1],
     paletteMap: [rawColor.complementaryBlue2, rawColor.complementaryBlue1, rawColor.brandBlue,
     rawColor.gray1, rawColor.gray3],
     palettePink: a11yColors ? paletteA11y :
@@ -246,11 +262,8 @@ const createColors = (type: ThemeColorsVersion): ThemeColors<typeof type> => {
       [rawColor.brandTurquoise, rawColor.complementaryTurquoise1, rawColor.complementaryTurquoise2, rawColor.brandBlue,
       rawColor.complementaryBlue1, ...grayScale
       ],
-    paletteLineGraph: [rawColor.cta, rawColor.index, rawColor.complementaryPink1,
-    rawColor.complementaryBlue1, rawColor.complementaryTurquoise1, rawColor.complementaryGreen1,
-    rawColor.brandPink, rawColor.complementaryGreen2, rawColor.complementaryBlue2, rawColor.complementaryPink2,
-    rawColor.complementaryTurquoise2, rawColor.gray1,
-    ],
+    paletteLineGraph: a11yColors ? [rawColor.a11yCta, rawColor.a11yIndex, ...lineColors] :
+      [rawColor.cta, rawColor.index, ...lineColors],
     /** @deprecated  */ creditsPiePrimary: rawColor.complementaryPink1,
     /** @deprecated  */ creditsPieSecondary: rawColor.complementaryPink2,
     /** @deprecated  */ disabled: rawColor.gray3,
@@ -326,13 +339,13 @@ export const createTheme = (config: ThemeConfig = {}): Theme => {
 
         return `@media (min-width: ${number1}px) and (max-width: ${number2 - 1}px)`;
       },
-      greaterThan: s => {
+      greaterThan: (s) => {
         const number = isNumber(s) ? s : s.size;
 
         assert(sizeValues.includes(number), `[theme.media] Unrecognized size value: ${number}`);
         return `@media (min-width: ${number}px)`;
       },
-      lessThan: s => {
+      lessThan: (s) => {
         const number = isNumber(s) ? s : s.size;
 
         assert(sizeValues.includes(number), `[theme.media] Unrecognized size value: ${number}`);

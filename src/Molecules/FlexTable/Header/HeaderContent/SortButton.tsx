@@ -10,15 +10,16 @@ const StyledLink = styled.a`
   width: 100%;
 `;
 
-export const SortButton: React.FC<SortButtonProps> = ({ children, onClick }) => (
+export const SortButton: React.FC<SortButtonProps> = ({ children, onClick, className }) => (
   <StyledLink
+    className={className}
     href="#"
     role="button"
-    onClick={e => {
+    onClick={(e) => {
       e.preventDefault();
       onClick();
     }}
-    onKeyDown={e => {
+    onKeyDown={(e) => {
       // Link should trigger on spacebar clicked like actual button.
       if (e.keyCode === 32) {
         onClick();
