@@ -11,7 +11,11 @@ const Pagination: React.FC<PaginationProps> = ({
   totalItems,
   compact = false,
   onPageChange,
-  title = 'Pagination',
+  label = 'Pagination',
+  nextPageLabel = 'Go to next page',
+  previousPageLabel = 'Go to previous page',
+  currentPageLabel = 'Current Page, page:',
+  pageItemLabel = 'Go to Page',
 }) => {
   const [currentPageFromState, setCurrentPageFromState] = useState(1);
 
@@ -41,10 +45,15 @@ const Pagination: React.FC<PaginationProps> = ({
   }, [currentPageFromState, numberOfPages, handlePageChange]);
 
   return (
-    <nav role="navigation" aria-label={title}>
+    <nav role="navigation" aria-label={label}>
       <Media query={(t) => t.media.lessThan(t.breakpoints.md)}>
         {compact ? (
-          <MobilePaginationCompact onClickPrevious={onClickPrevious} onClickNext={onClickNext} />
+          <MobilePaginationCompact
+            onClickPrevious={onClickPrevious}
+            onClickNext={onClickNext}
+            nextPageLabel={nextPageLabel}
+            previousPageLabel={previousPageLabel}
+          />
         ) : (
           <MobilePaginationDefault
             currentPage={currentPage}
@@ -52,6 +61,10 @@ const Pagination: React.FC<PaginationProps> = ({
             onClickPageItem={handlePageChange}
             onClickPrevious={onClickPrevious}
             onClickNext={onClickNext}
+            nextPageLabel={nextPageLabel}
+            previousPageLabel={previousPageLabel}
+            currentPageLabel={currentPageLabel}
+            pageItemLabel={pageItemLabel}
           />
         )}
       </Media>
@@ -62,6 +75,10 @@ const Pagination: React.FC<PaginationProps> = ({
           onClickPageItem={handlePageChange}
           onClickPrevious={onClickPrevious}
           onClickNext={onClickNext}
+          nextPageLabel={nextPageLabel}
+          previousPageLabel={previousPageLabel}
+          currentPageLabel={currentPageLabel}
+          pageItemLabel={pageItemLabel}
         />
       </Media>
     </nav>

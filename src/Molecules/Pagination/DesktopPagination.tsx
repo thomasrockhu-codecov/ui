@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import { Typography, Icon, Flexbox, Button } from '../..';
 import { Props as FlexBoxProps } from '../../Atoms/Flexbox/Flexbox.types';
-import { List } from '../../Atoms/List/List';
+import List from '../../Atoms/List';
 import PageItems from './PageItems';
 import { PaginationDefaultProps, PageItemProps, BrowseButtonProps } from './Pagination.types';
 
@@ -27,12 +27,17 @@ const StyledFlexbox = styled(
   }}px;
 `;
 
-const PageNumberItem: React.FC<PageItemProps> = ({ isCurrentPage = false, children, onClick }) => (
+const PageNumberItem: React.FC<PageItemProps> = ({
+  isCurrentPage = false,
+  children,
+  onClick,
+  label,
+}) => (
   <Flexbox item as="li">
     <Button
       variant="neutral"
       onClick={!isCurrentPage ? onClick : undefined}
-      aria-label={`${isCurrentPage ? 'Current Page:' : 'Go to'} page ${children}`}
+      aria-label={`${label} ${children}`}
       aria-disabled={isCurrentPage}
     >
       <Typography type="secondary" color={(t) => (isCurrentPage ? t.color.cta : t.color.text)}>
@@ -48,12 +53,8 @@ const TruncatedPageNumbers = () => (
   </Flexbox>
 );
 
-const ChevronButton = ({ direction = 'left', onClick }: BrowseButtonProps) => (
-  <Button
-    variant="neutral"
-    onClick={onClick}
-    aria-label={direction === 'left' ? 'Go to previous page' : 'Go to next page'}
-  >
+const ChevronButton = ({ direction = 'left', onClick, label }: BrowseButtonProps) => (
+  <Button variant="neutral" onClick={onClick} aria-label={label}>
     {direction === 'left' ? <Icon.ChevronLeft size={2} /> : <Icon.ChevronRight size={2} />}
   </Button>
 );
@@ -64,10 +65,14 @@ const DesktopPagination: React.FC<PaginationDefaultProps> = ({
   onClickPageItem,
   onClickPrevious,
   onClickNext,
+  previousPageLabel,
+  nextPageLabel,
+  currentPageLabel,
+  pageItemLabel,
 }) => {
   return (
     <StyledFlexbox container numberOfPages={numberOfPages}>
-      <ChevronButton onClick={onClickPrevious} />
+      <ChevronButton onClick={onClickPrevious} label={previousPageLabel} />
       <Flexbox container item flex="1" justifyContent="center" gutter={2} as={List}>
         <PageItems
           currentPage={currentPage}
@@ -75,9 +80,11 @@ const DesktopPagination: React.FC<PaginationDefaultProps> = ({
           onClickPageItem={onClickPageItem}
           PageItem={PageNumberItem}
           TruncatedPageNumbers={TruncatedPageNumbers}
+          currentPageLabel={currentPageLabel}
+          pageItemLabel={pageItemLabel}
         />
       </Flexbox>
-      <ChevronButton direction="right" onClick={onClickNext} />
+      <ChevronButton direction="right" onClick={onClickNext} label={nextPageLabel} />
     </StyledFlexbox>
   );
 };

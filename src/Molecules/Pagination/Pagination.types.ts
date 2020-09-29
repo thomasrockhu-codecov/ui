@@ -4,13 +4,18 @@ export type PaginationProps = {
   totalItems: number;
   compact?: boolean;
   onPageChange: (newPage: number) => void;
-  title?: string;
+  label?: string;
+  nextPageLabel?: string;
+  previousPageLabel?: string;
+  currentPageLabel?: string;
+  pageItemLabel?: string;
 };
 
 export type PageItemProps = {
   isCurrentPage?: boolean;
   onClick?: () => void;
   children: React.ReactText;
+  label: string;
 };
 
 export type PageItemsProps = {
@@ -19,20 +24,27 @@ export type PageItemsProps = {
   onClickPageItem: (newPage: number) => void;
   PageItem: React.FC<PageItemProps>;
   TruncatedPageNumbers: React.FC<{}>;
+  currentPageLabel: string;
+  pageItemLabel: string;
 };
 
 export type BrowseButtonProps = {
   direction?: 'left' | 'right';
   onClick: () => void;
+  label: string;
 };
 
 export type PaginationCompactProps = {
   onClickPrevious: BrowseButtonProps['onClick'];
   onClickNext: BrowseButtonProps['onClick'];
+  nextPageLabel: string;
+  previousPageLabel: string;
 };
 
 export type PaginationDefaultProps = PaginationCompactProps & {
   currentPage: number;
   numberOfPages: number;
   onClickPageItem: PageItemsProps['onClickPageItem'];
+  currentPageLabel: string;
+  pageItemLabel: string;
 };

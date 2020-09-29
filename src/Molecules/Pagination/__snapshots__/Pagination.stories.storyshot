@@ -37,7 +37,7 @@ exports[`Storyshots Molecules | Pagination 1 page 1`] = `
   box-sizing: border-box;
 }
 
-.c17 {
+.c16 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -54,12 +54,12 @@ exports[`Storyshots Molecules | Pagination 1 page 1`] = `
   flex: 1;
 }
 
-.c17 > * {
+.c16 > * {
   padding-left: 4px;
   padding-right: 4px;
 }
 
-.c17 > *:not(:first-child) {
+.c16 > *:not(:first-child) {
   padding-top: 0;
 }
 
@@ -92,6 +92,12 @@ exports[`Storyshots Molecules | Pagination 1 page 1`] = `
   display: block;
 }
 
+.c7 {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
 .c5 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: inherit;
@@ -110,7 +116,7 @@ exports[`Storyshots Molecules | Pagination 1 page 1`] = `
   line-height: 1.5;
 }
 
-.c18 {
+.c17 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #0046FF;
   margin: 0;
@@ -174,12 +180,6 @@ exports[`Storyshots Molecules | Pagination 1 page 1`] = `
   width: 34px;
 }
 
-.c16 {
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
-}
-
 .c4 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -224,12 +224,6 @@ exports[`Storyshots Molecules | Pagination 1 page 1`] = `
   outline: none;
   background-color: #0046FF;
   cursor: default;
-}
-
-.c7 {
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
 }
 
 .c9 {
@@ -294,7 +288,7 @@ exports[`Storyshots Molecules | Pagination 1 page 1`] = `
         >
           <button
             aria-disabled={true}
-            aria-label="Current Page: Page 1"
+            aria-label="Current Page, page: 1"
             className="NormalizedButton__Button-ey7f5x-0 c3 c11"
             onClick={[Function]}
             type="button"
@@ -372,14 +366,14 @@ exports[`Storyshots Molecules | Pagination 1 page 1`] = `
         </span>
       </button>
       <ul
-        className="c16 c17"
+        className="c7 c16"
       >
         <li
           className="c10"
         >
           <button
             aria-disabled={true}
-            aria-label="Current Page: page 1"
+            aria-label="Current Page, page: 1"
             className="NormalizedButton__Button-ey7f5x-0 c3"
             onClick={[Function]}
             type="button"
@@ -388,7 +382,7 @@ exports[`Storyshots Molecules | Pagination 1 page 1`] = `
               className="c5"
             >
               <span
-                className="c18"
+                className="c17"
               >
                 1
               </span>
@@ -462,7 +456,7 @@ exports[`Storyshots Molecules | Pagination 2 pages 1`] = `
   box-sizing: border-box;
 }
 
-.c19 {
+.c18 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -479,12 +473,12 @@ exports[`Storyshots Molecules | Pagination 2 pages 1`] = `
   flex: 1;
 }
 
-.c19 > * {
+.c18 > * {
   padding-left: 4px;
   padding-right: 4px;
 }
 
-.c19 > *:not(:first-child) {
+.c18 > *:not(:first-child) {
   padding-top: 0;
 }
 
@@ -517,6 +511,12 @@ exports[`Storyshots Molecules | Pagination 2 pages 1`] = `
   display: block;
 }
 
+.c7 {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
 .c5 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: inherit;
@@ -544,7 +544,7 @@ exports[`Storyshots Molecules | Pagination 2 pages 1`] = `
   line-height: 1.5;
 }
 
-.c20 {
+.c19 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #0046FF;
   margin: 0;
@@ -553,7 +553,7 @@ exports[`Storyshots Molecules | Pagination 2 pages 1`] = `
   line-height: 1.4285714285714286;
 }
 
-.c21 {
+.c20 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
   margin: 0;
@@ -615,12 +615,6 @@ exports[`Storyshots Molecules | Pagination 2 pages 1`] = `
 
 .c16 {
   width: 52px;
-}
-
-.c18 {
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
 }
 
 .c4 {
@@ -690,12 +684,6 @@ exports[`Storyshots Molecules | Pagination 2 pages 1`] = `
   outline: none;
 }
 
-.c7 {
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
-}
-
 .c9 {
   width: 80px;
 }
@@ -758,7 +746,7 @@ exports[`Storyshots Molecules | Pagination 2 pages 1`] = `
         >
           <button
             aria-disabled={true}
-            aria-label="Current Page: Page 1"
+            aria-label="Current Page, page: 1"
             className="NormalizedButton__Button-ey7f5x-0 c3 c11"
             onClick={[Function]}
             type="button"
@@ -857,14 +845,14 @@ exports[`Storyshots Molecules | Pagination 2 pages 1`] = `
         </span>
       </button>
       <ul
-        className="c18 c19"
+        className="c7 c18"
       >
         <li
           className="c10"
         >
           <button
             aria-disabled={true}
-            aria-label="Current Page: page 1"
+            aria-label="Current Page, page: 1"
             className="NormalizedButton__Button-ey7f5x-0 c3"
             onClick={[Function]}
             type="button"
@@ -873,7 +861,7 @@ exports[`Storyshots Molecules | Pagination 2 pages 1`] = `
               className="c5"
             >
               <span
-                className="c20"
+                className="c19"
               >
                 1
               </span>
@@ -885,7 +873,7 @@ exports[`Storyshots Molecules | Pagination 2 pages 1`] = `
         >
           <button
             aria-disabled={false}
-            aria-label="Go to page 2"
+            aria-label="Go to Page 2"
             className="NormalizedButton__Button-ey7f5x-0 c3"
             onClick={[Function]}
             type="button"
@@ -894,7 +882,7 @@ exports[`Storyshots Molecules | Pagination 2 pages 1`] = `
               className="c5"
             >
               <span
-                className="c21"
+                className="c20"
               >
                 2
               </span>
@@ -968,7 +956,7 @@ exports[`Storyshots Molecules | Pagination 12 pages 1`] = `
   box-sizing: border-box;
 }
 
-.c21 {
+.c20 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -985,12 +973,12 @@ exports[`Storyshots Molecules | Pagination 12 pages 1`] = `
   flex: 1;
 }
 
-.c21 > * {
+.c20 > * {
   padding-left: 4px;
   padding-right: 4px;
 }
 
-.c21 > *:not(:first-child) {
+.c20 > *:not(:first-child) {
   padding-top: 0;
 }
 
@@ -1021,6 +1009,12 @@ exports[`Storyshots Molecules | Pagination 12 pages 1`] = `
   -ms-flex-negative: 0;
   flex-shrink: 0;
   display: block;
+}
+
+.c7 {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 
 .c5 {
@@ -1059,7 +1053,7 @@ exports[`Storyshots Molecules | Pagination 12 pages 1`] = `
   line-height: 1.4285714285714286;
 }
 
-.c22 {
+.c21 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #0046FF;
   margin: 0;
@@ -1121,12 +1115,6 @@ exports[`Storyshots Molecules | Pagination 12 pages 1`] = `
 
 .c18 {
   width: 152px;
-}
-
-.c20 {
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
 }
 
 .c4 {
@@ -1215,12 +1203,6 @@ exports[`Storyshots Molecules | Pagination 12 pages 1`] = `
   align-items: center;
 }
 
-.c7 {
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
-}
-
 .c9 {
   width: 240px;
 }
@@ -1283,7 +1265,7 @@ exports[`Storyshots Molecules | Pagination 12 pages 1`] = `
         >
           <button
             aria-disabled={true}
-            aria-label="Current Page: Page 1"
+            aria-label="Current Page, page: 1"
             className="NormalizedButton__Button-ey7f5x-0 c3 c11"
             onClick={[Function]}
             type="button"
@@ -1433,14 +1415,14 @@ exports[`Storyshots Molecules | Pagination 12 pages 1`] = `
         </span>
       </button>
       <ul
-        className="c20 c21"
+        className="c7 c20"
       >
         <li
           className="c10"
         >
           <button
             aria-disabled={true}
-            aria-label="Current Page: page 1"
+            aria-label="Current Page, page: 1"
             className="NormalizedButton__Button-ey7f5x-0 c3"
             onClick={[Function]}
             type="button"
@@ -1449,7 +1431,7 @@ exports[`Storyshots Molecules | Pagination 12 pages 1`] = `
               className="c5"
             >
               <span
-                className="c22"
+                className="c21"
               >
                 1
               </span>
@@ -1461,7 +1443,7 @@ exports[`Storyshots Molecules | Pagination 12 pages 1`] = `
         >
           <button
             aria-disabled={false}
-            aria-label="Go to page 2"
+            aria-label="Go to Page 2"
             className="NormalizedButton__Button-ey7f5x-0 c3"
             onClick={[Function]}
             type="button"
@@ -1482,7 +1464,7 @@ exports[`Storyshots Molecules | Pagination 12 pages 1`] = `
         >
           <button
             aria-disabled={false}
-            aria-label="Go to page 3"
+            aria-label="Go to Page 3"
             className="NormalizedButton__Button-ey7f5x-0 c3"
             onClick={[Function]}
             type="button"
@@ -1512,7 +1494,7 @@ exports[`Storyshots Molecules | Pagination 12 pages 1`] = `
         >
           <button
             aria-disabled={false}
-            aria-label="Go to page 12"
+            aria-label="Go to Page 12"
             className="NormalizedButton__Button-ey7f5x-0 c3"
             onClick={[Function]}
             type="button"
@@ -1595,7 +1577,7 @@ exports[`Storyshots Molecules | Pagination 999 pages 1`] = `
   box-sizing: border-box;
 }
 
-.c21 {
+.c20 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -1612,12 +1594,12 @@ exports[`Storyshots Molecules | Pagination 999 pages 1`] = `
   flex: 1;
 }
 
-.c21 > * {
+.c20 > * {
   padding-left: 4px;
   padding-right: 4px;
 }
 
-.c21 > *:not(:first-child) {
+.c20 > *:not(:first-child) {
   padding-top: 0;
 }
 
@@ -1648,6 +1630,12 @@ exports[`Storyshots Molecules | Pagination 999 pages 1`] = `
   -ms-flex-negative: 0;
   flex-shrink: 0;
   display: block;
+}
+
+.c7 {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 
 .c5 {
@@ -1686,7 +1674,7 @@ exports[`Storyshots Molecules | Pagination 999 pages 1`] = `
   line-height: 1.4285714285714286;
 }
 
-.c22 {
+.c21 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #0046FF;
   margin: 0;
@@ -1748,12 +1736,6 @@ exports[`Storyshots Molecules | Pagination 999 pages 1`] = `
 
 .c18 {
   width: 200px;
-}
-
-.c20 {
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
 }
 
 .c4 {
@@ -1842,12 +1824,6 @@ exports[`Storyshots Molecules | Pagination 999 pages 1`] = `
   align-items: center;
 }
 
-.c7 {
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
-}
-
 .c9 {
   width: 240px;
 }
@@ -1910,7 +1886,7 @@ exports[`Storyshots Molecules | Pagination 999 pages 1`] = `
         >
           <button
             aria-disabled={true}
-            aria-label="Current Page: Page 1"
+            aria-label="Current Page, page: 1"
             className="NormalizedButton__Button-ey7f5x-0 c3 c11"
             onClick={[Function]}
             type="button"
@@ -2060,14 +2036,14 @@ exports[`Storyshots Molecules | Pagination 999 pages 1`] = `
         </span>
       </button>
       <ul
-        className="c20 c21"
+        className="c7 c20"
       >
         <li
           className="c10"
         >
           <button
             aria-disabled={true}
-            aria-label="Current Page: page 1"
+            aria-label="Current Page, page: 1"
             className="NormalizedButton__Button-ey7f5x-0 c3"
             onClick={[Function]}
             type="button"
@@ -2076,7 +2052,7 @@ exports[`Storyshots Molecules | Pagination 999 pages 1`] = `
               className="c5"
             >
               <span
-                className="c22"
+                className="c21"
               >
                 1
               </span>
@@ -2088,7 +2064,7 @@ exports[`Storyshots Molecules | Pagination 999 pages 1`] = `
         >
           <button
             aria-disabled={false}
-            aria-label="Go to page 2"
+            aria-label="Go to Page 2"
             className="NormalizedButton__Button-ey7f5x-0 c3"
             onClick={[Function]}
             type="button"
@@ -2109,7 +2085,7 @@ exports[`Storyshots Molecules | Pagination 999 pages 1`] = `
         >
           <button
             aria-disabled={false}
-            aria-label="Go to page 3"
+            aria-label="Go to Page 3"
             className="NormalizedButton__Button-ey7f5x-0 c3"
             onClick={[Function]}
             type="button"
@@ -2139,7 +2115,7 @@ exports[`Storyshots Molecules | Pagination 999 pages 1`] = `
         >
           <button
             aria-disabled={false}
-            aria-label="Go to page 999"
+            aria-label="Go to Page 999"
             className="NormalizedButton__Button-ey7f5x-0 c3"
             onClick={[Function]}
             type="button"
@@ -2276,6 +2252,12 @@ exports[`Storyshots Molecules | Pagination Compact on mobile 1`] = `
   transform: rotate(270deg);
 }
 
+.c12 {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
 .c5 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: inherit;
@@ -2356,12 +2338,6 @@ exports[`Storyshots Molecules | Pagination Compact on mobile 1`] = `
 
 .c10 {
   width: 152px;
-}
-
-.c12 {
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
 }
 
 .c4 {
@@ -2503,7 +2479,7 @@ exports[`Storyshots Molecules | Pagination Compact on mobile 1`] = `
         >
           <button
             aria-disabled={true}
-            aria-label="Current Page: page 1"
+            aria-label="Current Page, page: 1"
             className="NormalizedButton__Button-ey7f5x-0 c3"
             onClick={[Function]}
             type="button"
@@ -2524,7 +2500,7 @@ exports[`Storyshots Molecules | Pagination Compact on mobile 1`] = `
         >
           <button
             aria-disabled={false}
-            aria-label="Go to page 2"
+            aria-label="Go to Page 2"
             className="NormalizedButton__Button-ey7f5x-0 c3"
             onClick={[Function]}
             type="button"
@@ -2545,7 +2521,7 @@ exports[`Storyshots Molecules | Pagination Compact on mobile 1`] = `
         >
           <button
             aria-disabled={false}
-            aria-label="Go to page 3"
+            aria-label="Go to Page 3"
             className="NormalizedButton__Button-ey7f5x-0 c3"
             onClick={[Function]}
             type="button"
@@ -2575,7 +2551,7 @@ exports[`Storyshots Molecules | Pagination Compact on mobile 1`] = `
         >
           <button
             aria-disabled={false}
-            aria-label="Go to page 10"
+            aria-label="Go to Page 10"
             className="NormalizedButton__Button-ey7f5x-0 c3"
             onClick={[Function]}
             type="button"
@@ -2658,7 +2634,7 @@ exports[`Storyshots Molecules | Pagination Controlled pagination 1`] = `
   box-sizing: border-box;
 }
 
-.c21 {
+.c20 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -2675,12 +2651,12 @@ exports[`Storyshots Molecules | Pagination Controlled pagination 1`] = `
   flex: 1;
 }
 
-.c21 > * {
+.c20 > * {
   padding-left: 4px;
   padding-right: 4px;
 }
 
-.c21 > *:not(:first-child) {
+.c20 > *:not(:first-child) {
   padding-top: 0;
 }
 
@@ -2711,6 +2687,12 @@ exports[`Storyshots Molecules | Pagination Controlled pagination 1`] = `
   -ms-flex-negative: 0;
   flex-shrink: 0;
   display: block;
+}
+
+.c7 {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 
 .c5 {
@@ -2749,7 +2731,7 @@ exports[`Storyshots Molecules | Pagination Controlled pagination 1`] = `
   line-height: 1.4285714285714286;
 }
 
-.c22 {
+.c21 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #0046FF;
   margin: 0;
@@ -2811,12 +2793,6 @@ exports[`Storyshots Molecules | Pagination Controlled pagination 1`] = `
 
 .c18 {
   width: 152px;
-}
-
-.c20 {
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
 }
 
 .c4 {
@@ -2905,12 +2881,6 @@ exports[`Storyshots Molecules | Pagination Controlled pagination 1`] = `
   align-items: center;
 }
 
-.c7 {
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
-}
-
 .c9 {
   width: 240px;
 }
@@ -2973,7 +2943,7 @@ exports[`Storyshots Molecules | Pagination Controlled pagination 1`] = `
         >
           <button
             aria-disabled={true}
-            aria-label="Current Page: Page 1"
+            aria-label="Current Page, page: 1"
             className="NormalizedButton__Button-ey7f5x-0 c3 c11"
             onClick={[Function]}
             type="button"
@@ -3123,14 +3093,14 @@ exports[`Storyshots Molecules | Pagination Controlled pagination 1`] = `
         </span>
       </button>
       <ul
-        className="c20 c21"
+        className="c7 c20"
       >
         <li
           className="c10"
         >
           <button
             aria-disabled={true}
-            aria-label="Current Page: page 1"
+            aria-label="Current Page, page: 1"
             className="NormalizedButton__Button-ey7f5x-0 c3"
             onClick={[Function]}
             type="button"
@@ -3139,7 +3109,7 @@ exports[`Storyshots Molecules | Pagination Controlled pagination 1`] = `
               className="c5"
             >
               <span
-                className="c22"
+                className="c21"
               >
                 1
               </span>
@@ -3151,7 +3121,7 @@ exports[`Storyshots Molecules | Pagination Controlled pagination 1`] = `
         >
           <button
             aria-disabled={false}
-            aria-label="Go to page 2"
+            aria-label="Go to Page 2"
             className="NormalizedButton__Button-ey7f5x-0 c3"
             onClick={[Function]}
             type="button"
@@ -3172,7 +3142,7 @@ exports[`Storyshots Molecules | Pagination Controlled pagination 1`] = `
         >
           <button
             aria-disabled={false}
-            aria-label="Go to page 3"
+            aria-label="Go to Page 3"
             className="NormalizedButton__Button-ey7f5x-0 c3"
             onClick={[Function]}
             type="button"
@@ -3202,7 +3172,7 @@ exports[`Storyshots Molecules | Pagination Controlled pagination 1`] = `
         >
           <button
             aria-disabled={false}
-            aria-label="Go to page 10"
+            aria-label="Go to Page 10"
             className="NormalizedButton__Button-ey7f5x-0 c3"
             onClick={[Function]}
             type="button"
@@ -3285,7 +3255,7 @@ exports[`Storyshots Molecules | Pagination Regular 1`] = `
   box-sizing: border-box;
 }
 
-.c21 {
+.c20 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -3302,12 +3272,12 @@ exports[`Storyshots Molecules | Pagination Regular 1`] = `
   flex: 1;
 }
 
-.c21 > * {
+.c20 > * {
   padding-left: 4px;
   padding-right: 4px;
 }
 
-.c21 > *:not(:first-child) {
+.c20 > *:not(:first-child) {
   padding-top: 0;
 }
 
@@ -3338,6 +3308,12 @@ exports[`Storyshots Molecules | Pagination Regular 1`] = `
   -ms-flex-negative: 0;
   flex-shrink: 0;
   display: block;
+}
+
+.c7 {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 
 .c5 {
@@ -3376,7 +3352,7 @@ exports[`Storyshots Molecules | Pagination Regular 1`] = `
   line-height: 1.4285714285714286;
 }
 
-.c22 {
+.c21 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #0046FF;
   margin: 0;
@@ -3438,12 +3414,6 @@ exports[`Storyshots Molecules | Pagination Regular 1`] = `
 
 .c18 {
   width: 152px;
-}
-
-.c20 {
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
 }
 
 .c4 {
@@ -3532,12 +3502,6 @@ exports[`Storyshots Molecules | Pagination Regular 1`] = `
   align-items: center;
 }
 
-.c7 {
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
-}
-
 .c9 {
   width: 240px;
 }
@@ -3600,7 +3564,7 @@ exports[`Storyshots Molecules | Pagination Regular 1`] = `
         >
           <button
             aria-disabled={true}
-            aria-label="Current Page: Page 1"
+            aria-label="Current Page, page: 1"
             className="NormalizedButton__Button-ey7f5x-0 c3 c11"
             onClick={[Function]}
             type="button"
@@ -3750,14 +3714,14 @@ exports[`Storyshots Molecules | Pagination Regular 1`] = `
         </span>
       </button>
       <ul
-        className="c20 c21"
+        className="c7 c20"
       >
         <li
           className="c10"
         >
           <button
             aria-disabled={true}
-            aria-label="Current Page: page 1"
+            aria-label="Current Page, page: 1"
             className="NormalizedButton__Button-ey7f5x-0 c3"
             onClick={[Function]}
             type="button"
@@ -3766,7 +3730,7 @@ exports[`Storyshots Molecules | Pagination Regular 1`] = `
               className="c5"
             >
               <span
-                className="c22"
+                className="c21"
               >
                 1
               </span>
@@ -3778,7 +3742,7 @@ exports[`Storyshots Molecules | Pagination Regular 1`] = `
         >
           <button
             aria-disabled={false}
-            aria-label="Go to page 2"
+            aria-label="Go to Page 2"
             className="NormalizedButton__Button-ey7f5x-0 c3"
             onClick={[Function]}
             type="button"
@@ -3799,7 +3763,7 @@ exports[`Storyshots Molecules | Pagination Regular 1`] = `
         >
           <button
             aria-disabled={false}
-            aria-label="Go to page 3"
+            aria-label="Go to Page 3"
             className="NormalizedButton__Button-ey7f5x-0 c3"
             onClick={[Function]}
             type="button"
@@ -3829,7 +3793,7 @@ exports[`Storyshots Molecules | Pagination Regular 1`] = `
         >
           <button
             aria-disabled={false}
-            aria-label="Go to page 10"
+            aria-label="Go to Page 10"
             className="NormalizedButton__Button-ey7f5x-0 c3"
             onClick={[Function]}
             type="button"

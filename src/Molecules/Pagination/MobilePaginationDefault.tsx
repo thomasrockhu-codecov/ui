@@ -61,13 +61,13 @@ const StyledFlexbox = styled(
   }}px;
 `;
 
-const PageItem: React.FC<PageItemProps> = ({ isCurrentPage = false, onClick, children }) => (
+const PageItem: React.FC<PageItemProps> = ({ isCurrentPage = false, onClick, children, label }) => (
   <Flexbox item as="li">
     <StyledButton
       type="page-item"
       onClick={!isCurrentPage ? onClick : undefined}
       isCurrentPage={isCurrentPage}
-      aria-label={`${isCurrentPage ? 'Current Page:' : 'Go to'} Page ${children}`}
+      aria-label={`${label} ${children}`}
       aria-disabled={isCurrentPage}
     >
       <Typography type="primary" color={(t) => (isCurrentPage ? t.color.buttonText : t.color.text)}>
@@ -83,13 +83,9 @@ const TruncatedPageNumbers = () => (
   </StyledTruncatedBox>
 );
 
-const ChevronButton = ({ direction = 'left', onClick }: BrowseButtonProps) => (
+const ChevronButton = ({ direction = 'left', onClick, label }: BrowseButtonProps) => (
   <Flexbox item container alignItems="center">
-    <StyledButton
-      type="chevron"
-      onClick={onClick}
-      aria-label={direction === 'left' ? 'Go to previous page' : 'Go to next page'}
-    >
+    <StyledButton type="chevron" onClick={onClick} aria-label={label}>
       {direction === 'left' ? (
         <Icon.ChevronLeft inline size={3} />
       ) : (
@@ -105,10 +101,14 @@ const MobilePagination: React.FC<PaginationDefaultProps> = ({
   onClickPageItem,
   onClickPrevious,
   onClickNext,
+  previousPageLabel,
+  nextPageLabel,
+  currentPageLabel,
+  pageItemLabel,
 }) => {
   return (
     <Flexbox container>
-      <ChevronButton onClick={onClickPrevious} />
+      <ChevronButton onClick={onClickPrevious} label={previousPageLabel} />
       <StyledFlexbox container justifyContent="center" numberOfPages={numberOfPages}>
         <PageItems
           currentPage={currentPage}
@@ -116,9 +116,11 @@ const MobilePagination: React.FC<PaginationDefaultProps> = ({
           onClickPageItem={onClickPageItem}
           PageItem={PageItem}
           TruncatedPageNumbers={TruncatedPageNumbers}
+          currentPageLabel={currentPageLabel}
+          pageItemLabel={pageItemLabel}
         />
       </StyledFlexbox>
-      <ChevronButton direction="right" onClick={onClickNext} />
+      <ChevronButton direction="right" onClick={onClickNext} label={nextPageLabel} />
     </Flexbox>
   );
 };

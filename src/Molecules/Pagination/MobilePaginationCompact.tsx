@@ -15,13 +15,9 @@ const StyledButton = styled(Button)`
   outline: none;
 `;
 
-const ChevronButton = ({ direction = 'left', onClick }: BrowseButtonProps) => (
+const ChevronButton = ({ direction = 'left', onClick, label }: BrowseButtonProps) => (
   <Flexbox item container alignItems="center">
-    <StyledButton
-      onClick={onClick}
-      variant="neutral"
-      aria-label={direction === 'left' ? 'Go to previous page' : 'Go to next page'}
-    >
+    <StyledButton onClick={onClick} variant="neutral" aria-label={label}>
       {direction === 'left' ? (
         <Icon.ThinChevron direction="left" size={4} />
       ) : (
@@ -34,11 +30,13 @@ const ChevronButton = ({ direction = 'left', onClick }: BrowseButtonProps) => (
 const MobilePaginationCompact: React.FC<PaginationCompactProps> = ({
   onClickPrevious,
   onClickNext,
+  previousPageLabel,
+  nextPageLabel,
 }) => {
   return (
     <Flexbox container>
-      <ChevronButton onClick={onClickPrevious} />
-      <ChevronButton direction="right" onClick={onClickNext} />
+      <ChevronButton onClick={onClickPrevious} label={previousPageLabel} />
+      <ChevronButton direction="right" onClick={onClickNext} label={nextPageLabel} />
     </Flexbox>
   );
 };
