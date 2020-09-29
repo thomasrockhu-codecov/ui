@@ -1,4 +1,4 @@
-import React, { useCallback, useState } from 'react';
+import React, { useCallback, useEffect, useState } from 'react';
 import { PaginationProps } from './Pagination.types';
 import DesktopPagination from './DesktopPagination';
 import Media from '../../Atoms/Media';
@@ -43,6 +43,10 @@ const Pagination: React.FC<PaginationProps> = ({
       handlePageChange(currentPageFromState + 1);
     }
   }, [currentPageFromState, numberOfPages, handlePageChange]);
+
+  useEffect(() => {
+    handlePageChange(1);
+  }, [totalItems, itemsPerPage, handlePageChange]);
 
   return (
     <nav role="navigation" aria-label={label}>
