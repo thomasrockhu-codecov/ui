@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import { Typography, Icon, Flexbox, Button } from '../..';
 import { Props as FlexBoxProps } from '../../Atoms/Flexbox/Flexbox.types';
+import { List } from '../../Atoms/List/List';
 import PageItems from './PageItems';
 import { PaginationDefaultProps, PageItemProps, BrowseButtonProps } from './Pagination.types';
 
@@ -24,12 +25,6 @@ const StyledFlexbox = styled(
 
     return MORE_THAN_101_PAGES_WIDTH;
   }}px;
-`;
-
-const StyledList = styled.ul`
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
 `;
 
 const PageNumberItem: React.FC<PageItemProps> = ({ isCurrentPage = false, children, onClick }) => (
@@ -73,7 +68,7 @@ const DesktopPagination: React.FC<PaginationDefaultProps> = ({
   return (
     <StyledFlexbox container numberOfPages={numberOfPages}>
       <ChevronButton onClick={onClickPrevious} />
-      <Flexbox container item flex="1" justifyContent="center" gutter={2} as={StyledList}>
+      <Flexbox container item flex="1" justifyContent="center" gutter={2} as={List}>
         <PageItems
           currentPage={currentPage}
           numberOfPages={numberOfPages}

@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import { Flexbox, Typography, Icon, Button } from '../..';
 import { Props as FlexBoxProps } from '../../Atoms/Flexbox/Flexbox.types';
+import { List } from '../../Atoms/List/List';
 import { PageItemProps, PaginationDefaultProps, BrowseButtonProps } from './Pagination.types';
 import PageItems from './PageItems';
 
@@ -37,16 +38,10 @@ const StyledTruncatedBox = styled.li`
   align-items: center;
 `;
 
-const StyledList = styled.ul`
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
-`;
-
 const StyledFlexbox = styled(
   // eslint-disable-next-line @typescript-eslint/no-unused-vars
   ({ numberOfPages, ...rest }: { numberOfPages: number } & FlexBoxProps) => (
-    <Flexbox as={StyledList} {...rest} />
+    <Flexbox as={List} {...rest} />
   ),
 )`
   width: ${(p) => {
