@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import { Flexbox, Typography, Icon, Button } from '../..';
 import { Props as FlexBoxProps } from '../../Atoms/Flexbox/Flexbox.types';
-import { List } from '../../Atoms/List/List';
+import List from '../../Atoms/List';
 import { PageItemProps, PaginationDefaultProps, BrowseButtonProps } from './Pagination.types';
 import PageItems from './PageItems';
 
