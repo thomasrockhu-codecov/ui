@@ -13,18 +13,32 @@ export default {
   },
 };
 
-export const BadgeDefault = () => {
-  const BadgeDefaultExample = () => <Badge>4</Badge>;
-  const NoChildrenBadge = () => <Badge></Badge>;
+export const Badges = () => {
+  const DefaultBadge = () => <Badge>4</Badge>;
+  const DefaultEmptyBadge = () => <Badge />;
+  const CustomBadgeBackgroundGreen = () => (
+    <Badge backgroundColor={(t) => t.color.positive}>5</Badge>
+  );
+  const CustomBadgeBackgroundRed = () => <Badge backgroundColor={(t) => t.color.negative}>7</Badge>;
+  const CustomBadgeBackgroundGray = () => (
+    <Badge backgroundColor={(t) => t.color.disabledText}>6</Badge>
+  );
+  const CustomBadgeColorYellow = () => <Badge color={(t) => t.color.warning}>2</Badge>;
+  const DefaultBadgeLargeNumber = () => <Badge>99</Badge>;
   return (
     <div>
       <Typography type="title3">Badge component</Typography>
-      <BadgeDefaultExample />
-      <NoChildrenBadge />
+      <DefaultBadge />
+      <DefaultEmptyBadge />
+      <CustomBadgeBackgroundGreen />
+      <CustomBadgeBackgroundRed />
+      <CustomBadgeBackgroundGray />
+      <CustomBadgeColorYellow />
+      <DefaultBadgeLargeNumber />
     </div>
   );
 };
 
-BadgeDefault.story = {
+Badges.story = {
   name: 'Default',
 };
