@@ -81,6 +81,8 @@ export const Tabs: ContainerComponent & {
   /**
    * This will allow you to customize
    * inner parts with styled-components
+   * Tabs component does not have a parent html element but consists of 3 elements that are siblings.
+   * Use the ~ selector to access the siblings like TabContent in this example.
    * @example
    * const StyledContentTabs = styled(Tabs)`
    *  & ~ ${Tabs.components.TabContent} {
