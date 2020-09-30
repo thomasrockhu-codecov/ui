@@ -83,7 +83,7 @@ export const Tabs: ContainerComponent & {
    * inner parts with styled-components
    * @example
    * const StyledContentTabs = styled(Tabs)`
-   *  & ~ ${Tabs.components.Content} {
+   *  & ~ ${Tabs.components.TabContent} {
    *    height: inherit;
    *  }
    * `;
