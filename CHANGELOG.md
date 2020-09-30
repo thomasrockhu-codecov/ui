@@ -1,3 +1,11 @@
+# [3.28.0](https://github.com/nordnet/ui/compare/v3.27.2...v3.28.0) (2020-09-30)
+
+
+### Features
+
+* 🎸 add styled tabs content typing and story example ([29e439b](https://github.com/nordnet/ui/commit/29e439b))
+* wip export and style tabs content ([8f04d04](https://github.com/nordnet/ui/commit/8f04d04))
+
 ## [3.27.2](https://github.com/nordnet/ui/compare/v3.27.1...v3.27.2) (2020-09-29)
 
 
