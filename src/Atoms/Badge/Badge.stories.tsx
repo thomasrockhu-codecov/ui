@@ -14,31 +14,23 @@ export default {
 };
 
 export const Badges = () => {
-  const DefaultBadge = () => <Badge>4</Badge>;
-  const DefaultEmptyBadge = () => <Badge />;
-  const CustomBadgeBackgroundGreen = () => (
-    <Badge backgroundColor={(t) => t.color.positive}>5</Badge>
-  );
-  const CustomBadgeBackgroundRed = () => <Badge backgroundColor={(t) => t.color.negative}>7</Badge>;
-  const CustomBadgeBackgroundGray = () => (
-    <Badge backgroundColor={(t) => t.color.disabledText}>6</Badge>
-  );
-  const CustomBadgeColorYellow = () => <Badge color={(t) => t.color.warning}>2</Badge>;
-  const DefaultBadgeLargeNumber = () => <Badge>99</Badge>;
   return (
     <div>
       <Typography type="title3">Badge component</Typography>
-      <DefaultBadge />
-      <DefaultEmptyBadge />
-      <CustomBadgeBackgroundGreen />
-      <CustomBadgeBackgroundRed />
-      <CustomBadgeBackgroundGray />
-      <CustomBadgeColorYellow />
-      <DefaultBadgeLargeNumber />
+      <h2>Default Badge</h2>
+      <Badge>4</Badge>
+      <h3>Default empty Badge</h3>
+      <Badge />
+
+      <h2>Custom color Badge</h2>
+      <Badge backgroundColor={(t) => t.color.positive}>5</Badge>
+      <Badge backgroundColor={(t) => t.color.negative}>7</Badge>
+      <Badge backgroundColor={(t) => t.color.disabledText}>6</Badge>
+      <Badge color={(t) => t.color.warning}>2</Badge>
+
+      <h2>Badge with large number</h2>
+      <Badge>99</Badge>
+      <Badge>999</Badge>
     </div>
   );
-};
-
-Badges.story = {
-  name: 'Default',
 };
