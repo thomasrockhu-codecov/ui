@@ -9,7 +9,7 @@ const MEDIUM_BADGE_SIZE = 5;
 
 const BADGE_PADDING = 1;
 
-const Circle = styled.div<BadgeComponentProps & { size: number }>`
+const Circle: BadgeComponent = styled.div<BadgeComponentProps & { size: number }>`
   display: inline-flex;
   justify-content: center;
   align-items: center;
@@ -20,22 +20,32 @@ const Circle = styled.div<BadgeComponentProps & { size: number }>`
   height: ${(p) => p.theme.spacing.unit(p.size)}px;
   min-width: ${(p) => p.theme.spacing.unit(p.size)}px;
   box-sizing: border-box;
+  ${(p) => (p.color ? `color ${p.color(p.theme)}` : '')}
 `;
 
-export const Badge: BadgeComponent = ({ children, backgroundColor, color }) => {
+export const Badge: BadgeComponent = ({ backgroundColor, color, children, ...props }) => {
+  const CircleContent = () => {
+    if (isFunction(children)) return children();
+    if (isElement(children)) return children;
+
+    return (
+      <Typography type="secondary" color={(t) => (color ? color(t) : t.color.textLight)}>
+        {children}
+      </Typography>
+    );
+  };
+
+  // if child is component, color style should apply to parent since Typography doesn't render
+  const textColorOnParent = isFunction(children) || isElement(children);
+
   return (
     <Circle
       size={typeof children !== 'undefined' ? MEDIUM_BADGE_SIZE : SMALL_BADGE_SIZE}
       backgroundColor={backgroundColor}
+      {...(textColorOnParent && { color })}
+      {...props}
     >
-      {isElement(children) && children}
-      {isFunction(children)
-        ? children()
-        : !isElement(children) && (
-            <Typography type="secondary" color={(t) => (color ? color(t) : t.color.textLight)}>
-              {children}
-            </Typography>
-          )}
+      <CircleContent />
     </Circle>
   );
 };

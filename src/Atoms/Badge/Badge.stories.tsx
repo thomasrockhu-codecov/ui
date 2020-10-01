@@ -1,8 +1,9 @@
 import React from 'react';
+import styled from 'styled-components';
 import { withKnobs } from '@storybook/addon-knobs';
 import { Badge } from './Badge';
 import docs from './Badge.mdx';
-import { Typography } from '../..';
+import { Box, Typography } from '../..';
 
 export default {
   title: 'Atoms | Badge',
@@ -15,22 +16,104 @@ export default {
 
 export const Badges = () => {
   return (
+    <>
+      <Typography type="title1">Badge component</Typography>
+      <Box my={2}>
+        <Typography type="title2">Default Badge</Typography>
+        <Box my={2}>
+          <Badge>4</Badge>
+        </Box>
+      </Box>
+
+      <Box my={2}>
+        <Typography type="title3">Default empty Badge</Typography>
+        <Box my={2}>
+          <Badge />
+        </Box>
+      </Box>
+
+      <Box my={2}>
+        <Typography type="title2">Custom background colors</Typography>
+        <Box my={2}>
+          <Box mb={1}>
+            <Badge backgroundColor={(t) => t.color.positive}>5</Badge>
+          </Box>
+          <Box mb={1}>
+            <Badge backgroundColor={(t) => t.color.disabledText}>6</Badge>
+          </Box>
+          <Box mb={1}>
+            <Badge backgroundColor={(t) => t.color.negative}>7</Badge>
+          </Box>
+        </Box>
+        <Box my={2}>
+          <Box mb={1}>
+            <Badge backgroundColor={(t) => t.color.positive} />
+          </Box>
+          <Box mb={1}>
+            <Badge backgroundColor={(t) => t.color.negative} />
+          </Box>
+          <Box mb={1}>
+            <Badge backgroundColor={(t) => t.color.disabledText} />
+          </Box>
+        </Box>
+      </Box>
+
+      <Box my={2}>
+        <Typography type="title2">Custom text color</Typography>
+        <Box>
+          <Badge color={(t) => t.color.warning}>2</Badge>
+        </Box>
+      </Box>
+
+      <Box my={2}>
+        <Typography type="title2">Badge with large number</Typography>
+        <Box mb={1}>
+          <Badge>99</Badge>
+        </Box>
+        <Box mb={1}>
+          <Badge>999</Badge>
+        </Box>
+      </Box>
+    </>
+  );
+};
+
+export const StyledBadges = () => {
+  const StyledBadge = styled(Badge)`
+    height: 40px;
+    width: 40px;
+    border-radius: 20px;
+  `;
+  return (
+    <>
+      <Typography type="title2">Styled Badge component</Typography>
+      <Box my={2}>
+        <StyledBadge />
+      </Box>
+    </>
+  );
+};
+
+export const ComponentAsChild = () => {
+  return (
+    <>
+      <Typography type="title2">Component as child</Typography>
+      <Box my={2}>
+        <Badge color={(t) => t.color.textLight}>
+          <div>8</div>
+        </Badge>
+      </Box>
+    </>
+  );
+};
+
+export const FunctionAsChild = () => {
+  return (
     <div>
-      <Typography type="title3">Badge component</Typography>
-      <h2>Default Badge</h2>
-      <Badge>4</Badge>
-      <h3>Default empty Badge</h3>
-      <Badge />
-
-      <h2>Custom color Badge</h2>
-      <Badge backgroundColor={(t) => t.color.positive}>5</Badge>
-      <Badge backgroundColor={(t) => t.color.negative}>7</Badge>
-      <Badge backgroundColor={(t) => t.color.disabledText}>6</Badge>
-      <Badge color={(t) => t.color.warning}>2</Badge>
-
-      <h2>Badge with large number</h2>
-      <Badge>99</Badge>
-      <Badge>999</Badge>
+      <Typography type="title2">Function as child</Typography>
+      <Box my={2}>
+        <Badge color={(t) => t.color.textLight}>{() => <div>9</div>}</Badge>
+      </Box>
     </div>
   );
 };
