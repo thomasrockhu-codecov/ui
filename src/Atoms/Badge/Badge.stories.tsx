@@ -126,11 +126,6 @@ export const BadgeAndNumberWithLimit = () => {
       <Box my={2}>
         <Badge>{numberWithLimit(1234567, 99)}</Badge>
       </Box>
-      <Box my={2}>
-        <Badge color={(t) => t.color.textLight}>
-          <Badge.NumberWithLimit amount={987654} limit={200} />
-        </Badge>
-      </Box>
     </>
   );
 };

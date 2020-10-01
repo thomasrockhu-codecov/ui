@@ -2,8 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import { Typography } from '../..';
 import { isElement, isFunction } from '../../common/utils';
-import { BadgeComponent, BadgeComponents, Props as BadgeComponentProps } from './Badge.types';
-import { NumberWithLimit } from './NumberWithLimit/NumberWithLimit';
+import { BadgeComponent, Props as BadgeComponentProps } from './Badge.types';
 
 const SMALL_BADGE_SIZE = 2;
 const MEDIUM_BADGE_SIZE = 5;
@@ -24,12 +23,7 @@ const Circle: BadgeComponent = styled.div<BadgeComponentProps & { size: number }
   ${(p) => (p.color ? `color ${p.color(p.theme)}` : '')}
 `;
 
-export const Badge: BadgeComponent & BadgeComponents = ({
-  backgroundColor,
-  color,
-  children,
-  ...props
-}) => {
+export const Badge: BadgeComponent = ({ backgroundColor, color, children, ...props }) => {
   const CircleContent = () => {
     if (isFunction(children)) return children();
     if (isElement(children)) return children;
@@ -55,5 +49,3 @@ export const Badge: BadgeComponent & BadgeComponents = ({
     </Circle>
   );
 };
-
-Badge.NumberWithLimit = NumberWithLimit;
