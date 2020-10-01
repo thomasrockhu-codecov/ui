@@ -25,6 +25,7 @@ const Circle: BadgeComponent = styled.div<BadgeComponentProps & { size: number }
 
 export const Badge: BadgeComponent = ({ backgroundColor, color, children, ...props }) => {
   const CircleContent = () => {
+    if (typeof children === 'undefined') return null;
     if (isFunction(children)) return children();
     if (isElement(children)) return children;
 
