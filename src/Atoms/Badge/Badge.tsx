@@ -16,11 +16,14 @@ const Circle: BadgeComponent = styled.div<BadgeComponentProps & { size: number }
   background-color: ${(p) => (p.backgroundColor ? p.backgroundColor(p.theme) : p.theme.color.cta)};
   border-radius: ${(p) => p.theme.spacing.unit(p.size)}px;
   text-align: center;
-  padding: 0 ${(p) => p.theme.spacing.unit(BADGE_PADDING)}px;
   height: ${(p) => p.theme.spacing.unit(p.size)}px;
   min-width: ${(p) => p.theme.spacing.unit(p.size)}px;
   box-sizing: border-box;
-  ${(p) => (p.color ? `color ${p.color(p.theme)}` : '')}
+  ${(p) => (p.color ? `color ${p.color(p.theme)};` : '')}
+  ${(p) => {
+    const shouldHavePadding = p.size === MEDIUM_BADGE_SIZE;
+    return shouldHavePadding ? `padding: 0 ${p.theme.spacing.unit(BADGE_PADDING)}px` : '';
+  }};
 `;
 
 export const Badge: BadgeComponent = ({ backgroundColor, color, children, ...props }) => {
