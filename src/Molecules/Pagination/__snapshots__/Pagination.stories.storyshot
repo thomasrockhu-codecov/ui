@@ -2370,6 +2370,9 @@ exports[`Storyshots Molecules | Pagination Compact on mobile 1`] = `
   padding: 0;
   background-color: transparent;
   outline: none;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
   -webkit-box-pack: start;
   -webkit-justify-content: flex-start;
   -ms-flex-pack: start;
@@ -2387,6 +2390,9 @@ exports[`Storyshots Molecules | Pagination Compact on mobile 1`] = `
   padding: 0;
   background-color: transparent;
   outline: none;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
   -webkit-box-pack: end;
   -webkit-justify-content: flex-end;
   -ms-flex-pack: end;
