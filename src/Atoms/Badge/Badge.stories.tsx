@@ -15,7 +15,7 @@ export default {
   },
 };
 
-export const Badges = () => {
+export const CommonBadges = () => {
   return (
     <>
       <Typography type="title1">Badge component</Typography>
@@ -79,17 +79,12 @@ export const Badges = () => {
   );
 };
 
-export const StyledBadges = () => {
-  const StyledBadge = styled(Badge)`
-    height: 40px;
-    width: 40px;
-    border-radius: 20px;
-  `;
+export const BadgeWithNumberLimit = () => {
   return (
     <>
-      <Typography type="title2">Styled Badge component</Typography>
+      <Typography type="title2">Number With Limit</Typography>
       <Box my={2}>
-        <StyledBadge />
+        <Badge>{numberWithLimit(1234567, 99)}</Badge>
       </Box>
     </>
   );
@@ -104,6 +99,9 @@ export const ComponentAsChild = () => {
           <div>8</div>
         </Badge>
       </Box>
+      <Typography as="p" type="caption">
+        * Observe, up to developer to set child component font (family, size, etc.)
+      </Typography>
     </>
   );
 };
@@ -115,16 +113,24 @@ export const FunctionAsChild = () => {
       <Box my={2}>
         <Badge color={(t) => t.color.textLight}>{() => <div>9</div>}</Badge>
       </Box>
+      <Typography as="p" type="caption">
+        * Observe, up to developer to set child function font (family, size, etc.)
+      </Typography>
     </>
   );
 };
 
-export const BadgeAndNumberWithLimit = () => {
+export const StyledBadges = () => {
+  const StyledBadge = styled(Badge)`
+    height: 40px;
+    width: 40px;
+    border-radius: 20px;
+  `;
   return (
     <>
-      <Typography type="title2">Number With Limit</Typography>
+      <Typography type="title2">Styled Badge component</Typography>
       <Box my={2}>
-        <Badge>{numberWithLimit(1234567, 99)}</Badge>
+        <StyledBadge />
       </Box>
     </>
   );
