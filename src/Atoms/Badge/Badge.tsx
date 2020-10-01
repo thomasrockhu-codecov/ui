@@ -7,6 +7,8 @@ import { BadgeComponent, Props as BadgeComponentProps } from './Badge.types';
 const SMALL_BADGE_SIZE = 2;
 const MEDIUM_BADGE_SIZE = 5;
 
+const BADGE_PADDING = 1;
+
 const Circle = styled.div<BadgeComponentProps & { size: number }>`
   display: inline-flex;
   justify-content: center;
@@ -14,8 +16,10 @@ const Circle = styled.div<BadgeComponentProps & { size: number }>`
   background-color: ${(p) => (p.backgroundColor ? p.backgroundColor(p.theme) : p.theme.color.cta)};
   border-radius: ${(p) => p.theme.spacing.unit(p.size)}px;
   text-align: center;
+  padding: 0 ${(p) => p.theme.spacing.unit(BADGE_PADDING)}px;
   height: ${(p) => p.theme.spacing.unit(p.size)}px;
   min-width: ${(p) => p.theme.spacing.unit(p.size)}px;
+  box-sizing: border-box;
 `;
 
 export const Badge: BadgeComponent = ({ children, backgroundColor, color }) => {
