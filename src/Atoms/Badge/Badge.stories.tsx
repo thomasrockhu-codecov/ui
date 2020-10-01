@@ -5,6 +5,7 @@ import { Badge } from './Badge';
 import docs from './Badge.mdx';
 import { Box, Typography } from '../..';
 import { numberWithLimit } from '../../common/utils';
+import { Props as BadgeProps } from './Badge.types';
 
 export default {
   title: 'Atoms | Badge',
@@ -131,6 +132,45 @@ export const StyledBadges = () => {
       <Typography type="title2">Styled Badge component</Typography>
       <Box my={2}>
         <StyledBadge />
+      </Box>
+    </>
+  );
+};
+
+export const CommonBadgeUseCases = () => {
+  const TextWithNumberBadge = () => (
+    <Typography>
+      Orders <Badge>7</Badge>
+    </Typography>
+  );
+  const TextWithSmallBadge: React.FC<BadgeProps> = ({ children, ...badgeProps }) => {
+    return (
+      <Typography type="tertiary">
+        <Badge {...badgeProps} /> {children}
+      </Typography>
+    );
+  };
+
+  return (
+    <>
+      <Typography type="title2">Text with numbered badge</Typography>
+      <Box my={2}>
+        <TextWithNumberBadge />
+      </Box>
+
+      <Typography type="title2">Text with small badge</Typography>
+      <Box my={2}>
+        <TextWithSmallBadge>Buy order</TextWithSmallBadge>
+      </Box>
+      <Box my={2}>
+        <TextWithSmallBadge backgroundColor={(t) => t.color.negative}>
+          Sell order
+        </TextWithSmallBadge>
+      </Box>
+      <Box my={2}>
+        <TextWithSmallBadge backgroundColor={(t) => t.color.disabledText}>
+          Exchange order
+        </TextWithSmallBadge>
       </Box>
     </>
   );
