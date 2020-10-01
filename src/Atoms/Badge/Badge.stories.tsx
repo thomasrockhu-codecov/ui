@@ -4,6 +4,7 @@ import { withKnobs } from '@storybook/addon-knobs';
 import { Badge } from './Badge';
 import docs from './Badge.mdx';
 import { Box, Typography } from '../..';
+import { numberWithLimit } from '../../common/utils';
 
 export default {
   title: 'Atoms | Badge',
@@ -109,11 +110,27 @@ export const ComponentAsChild = () => {
 
 export const FunctionAsChild = () => {
   return (
-    <div>
+    <>
       <Typography type="title2">Function as child</Typography>
       <Box my={2}>
         <Badge color={(t) => t.color.textLight}>{() => <div>9</div>}</Badge>
       </Box>
-    </div>
+    </>
+  );
+};
+
+export const BadgeAndNumberWithLimit = () => {
+  return (
+    <>
+      <Typography type="title2">Number With Limit</Typography>
+      <Box my={2}>
+        <Badge>{numberWithLimit(1234567, 99)}</Badge>
+      </Box>
+      <Box my={2}>
+        <Badge color={(t) => t.color.textLight}>
+          <Badge.NumberWithLimit amount={987654} limit={200} />
+        </Badge>
+      </Box>
+    </>
   );
 };
