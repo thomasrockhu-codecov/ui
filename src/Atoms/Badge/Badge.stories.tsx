@@ -23,7 +23,7 @@ export const CommonBadges = () => {
       <Box my={2}>
         <Typography type="title2">Default Badge</Typography>
         <Box my={2}>
-          <Badge>4</Badge>
+          <Badge>1</Badge>
         </Box>
       </Box>
 
@@ -38,13 +38,13 @@ export const CommonBadges = () => {
         <Typography type="title2">Custom background colors</Typography>
         <Box my={2}>
           <Box mb={1}>
-            <Badge backgroundColor={(t) => t.color.positive}>5</Badge>
+            <Badge backgroundColor={(t) => t.color.positive}>2</Badge>
           </Box>
           <Box mb={1}>
-            <Badge backgroundColor={(t) => t.color.disabledText}>6</Badge>
+            <Badge backgroundColor={(t) => t.color.negative}>3</Badge>
           </Box>
           <Box mb={1}>
-            <Badge backgroundColor={(t) => t.color.negative}>7</Badge>
+            <Badge backgroundColor={(t) => t.color.disabledText}>4</Badge>
           </Box>
         </Box>
         <Box my={2}>
@@ -63,7 +63,7 @@ export const CommonBadges = () => {
       <Box my={2}>
         <Typography type="title2">Custom text color</Typography>
         <Box>
-          <Badge color={(t) => t.color.warning}>2</Badge>
+          <Badge color={(t) => t.color.warning}>5</Badge>
         </Box>
       </Box>
 
@@ -91,13 +91,18 @@ export const BadgeWithNumberLimit = () => {
   );
 };
 
-export const ComponentAsChild = () => {
+export const JSXAsChild = () => {
   return (
     <>
       <Typography type="title2">Component as child</Typography>
       <Box my={2}>
         <Badge color={(t) => t.color.textLight}>
-          <div>8</div>
+          <span>
+            8
+            <Typography type="tertiary" color={(t) => t.color.menuAccent5}>
+              %
+            </Typography>
+          </span>
         </Badge>
       </Box>
       <Typography as="p" type="caption">
@@ -112,7 +117,13 @@ export const FunctionAsChild = () => {
     <>
       <Typography type="title2">Function as child</Typography>
       <Box my={2}>
-        <Badge color={(t) => t.color.textLight}>{() => <div>9</div>}</Badge>
+        <Badge color={(t) => t.color.textLight}>
+          {() => (
+            <Typography type="tertiary" color={(t) => t.color.textLight}>
+              9%
+            </Typography>
+          )}
+        </Badge>
       </Box>
       <Typography as="p" type="caption">
         * Observe, up to developer to set child function font (family, size, etc.)
