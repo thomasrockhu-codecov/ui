@@ -66,5 +66,5 @@ export const getValueFromNumberOrString = (value: number | string, theme: Theme)
 type NumberWithLimit = (amount: number, limit: number) => string;
 export const numberWithLimit: NumberWithLimit = (amount, limit) => {
   const isOverLimit = amount > limit;
-  return isOverLimit ? `${limit}+` : `${amount}}`;
+  return isOverLimit ? `${limit}+` : `${amount}`;
 };
