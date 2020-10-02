@@ -98,8 +98,10 @@ export const JSXAsChild = () => {
       <Box my={2}>
         <Badge color={(t) => t.color.textLight}>
           <span>
-            8
-            <Typography type="tertiary" color={(t) => t.color.menuAccent5}>
+            <Typography type="title3" color={(t) => t.color.textLight}>
+              8
+            </Typography>
+            <Typography type="tertiary" color={(t) => t.color.textLight}>
               %
             </Typography>
           </span>
