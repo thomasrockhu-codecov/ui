@@ -1,3 +1,12 @@
+## [3.28.1](https://github.com/nordnet/ui/compare/v3.28.0...v3.28.1) (2020-10-02)
+
+
+### Bug Fixes
+
+* adjust modal widths ([5e8679c](https://github.com/nordnet/ui/commit/5e8679c))
+* fix padding om mobile ([5cef275](https://github.com/nordnet/ui/commit/5cef275))
+* status modal option ([1a5512f](https://github.com/nordnet/ui/commit/1a5512f))
+
 # [3.28.0](https://github.com/nordnet/ui/compare/v3.27.2...v3.28.0) (2020-09-30)
 
 
