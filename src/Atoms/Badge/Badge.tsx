@@ -9,7 +9,7 @@ const MEDIUM_BADGE_SIZE = 5;
 
 const BADGE_PADDING = 1.5;
 
-const Circle: BadgeComponent = styled.div<BadgeComponentProps & { size: number }>`
+const Circle: BadgeComponent = styled.span<BadgeComponentProps & { size: number }>`
   display: inline-flex;
   justify-content: center;
   align-items: center;
