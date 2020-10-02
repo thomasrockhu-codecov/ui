@@ -30,6 +30,7 @@ export type Props = {
   inputMode?: 'none' | 'numeric' | 'decimal';
   label: string;
   labelTooltip?: string;
+  labelTooltipPosition?: 'top' | 'left' | 'bottom' | 'right';
   leftAddon?: React.ReactNode;
   max?: string | number;
   min?: string | number;
