@@ -52,6 +52,7 @@ import Modal from './Molecules/Modal';
 import MultiStepProgress from './Molecules/MultiStepProgress';
 import Number from './Molecules/Number';
 import PageHeaderCard from './Molecules/PageHeaderCard';
+import Pagination from './Molecules/Pagination';
 import ProgressBar from './Molecules/ProgressBar';
 import PageWrapper from './Molecules/PageWrapper';
 import Rating from './Molecules/Rating';
@@ -123,6 +124,7 @@ export {
   Modal,
   PageHeaderCard,
   PageWrapper,
+  Pagination,
   Portal,
   Pill,
   ProgressBar,
