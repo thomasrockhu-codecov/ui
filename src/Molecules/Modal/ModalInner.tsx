@@ -11,7 +11,7 @@ import { Title } from './Title';
 import { Flexbox, Icon, useKeyPress } from '../..';
 
 const PADDING_DESKTOP = 10;
-const PADDING_MOBILE = 5;
+const PADDING_MOBILE = 3;
 const CLOSE_ICON_SIZE = 5;
 
 export const Backdrop = styled(Flexbox)<BackdropProps>`
@@ -30,7 +30,9 @@ export const Backdrop = styled(Flexbox)<BackdropProps>`
       : `background-color: ${p.theme.color.modalBackdrop};`}
 `;
 
-const Dialog = styled(motion.div)<DialogProps>`
+const Dialog = styled(motion.div).withConfig({
+  shouldForwardProp: (prop) => !['isStatusModal'].includes(prop),
+})<DialogProps>`
   box-sizing: border-box;
   padding: ${({ theme }) => theme.spacing.unit(PADDING_MOBILE)}px;
   border: 0;
@@ -39,6 +41,8 @@ const Dialog = styled(motion.div)<DialogProps>`
   display: flex;
   flex-direction: column;
   max-height: 100vh;
+  max-width: 100%;
+  width: 100%;
 
   ${({ theme }) => theme.media.lessThan(theme.breakpoints.sm)} {
     ${(p) =>
@@ -53,11 +57,23 @@ const Dialog = styled(motion.div)<DialogProps>`
 
   ${({ theme }) => theme.media.greaterThan(theme.breakpoints.sm)} {
     padding: ${({ theme }) => theme.spacing.unit(PADDING_DESKTOP)}px;
-    width: ${({ theme }) => theme.spacing.unit(120)}px;
+    width: ${({ theme }) => theme.spacing.unit(100)}px;
     overflow: auto;
     max-height: 65vh;
     box-shadow: 0 2px 2px 0 ${({ theme }) => theme.color.shadowModal};
   }
+
+  ${({ theme, isStatusModal }) =>
+    !isStatusModal &&
+    `${theme.media.greaterThan(theme.breakpoints.md)} {
+        width: ${theme.spacing.unit(135)}px;
+      }`}
+
+  ${({ theme, isStatusModal }) =>
+    !isStatusModal &&
+    `${theme.media.greaterThan(theme.breakpoints.lg)} {
+        width: ${theme.spacing.unit(170)}px;
+      }`}
 `;
 
 const CloseButton = styled(NormalizedElements.Button)`
@@ -100,6 +116,7 @@ export const ModalInner: React.FC<Props> = ({
   hideClose = false,
   closeOnBackdropClick = false,
   fullScreenMobile = true,
+  isStatusModal=false
 }) => {
   const [show, setShow] = useState(false);
   const escapePress = useKeyPress('Escape');
@@ -172,6 +189,7 @@ export const ModalInner: React.FC<Props> = ({
               ref={dialogRef}
               onClick={handleDialogClick}
               fullScreenMobile={fullScreenMobile}
+              isStatusModal={isStatusModal}
             >
               {hasHeader && <Header>{title && <Title title={title} uid={titleId} />}</Header>}
               {children}
