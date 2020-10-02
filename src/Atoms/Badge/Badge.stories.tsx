@@ -186,3 +186,31 @@ export const CommonBadgeUseCases = () => {
     </>
   );
 };
+
+export const A11yBadgeUseCases = () => {
+  const TextWithNumberBadge = () => (
+    <Typography>
+      Orders <Badge>7</Badge>
+    </Typography>
+  );
+
+  const TextWithNumberBadgeAndA11y = () => (
+    <Typography>
+      Orders <Badge aria-label="7 new orders">7</Badge>
+    </Typography>
+  );
+
+  return (
+    <>
+      <Typography type="title2">Badge with aria-label</Typography>
+      <Box my={2}>
+        <TextWithNumberBadgeAndA11y />
+      </Box>
+
+      <Typography type="title2">Badge without aria-label</Typography>
+      <Box my={2}>
+        <TextWithNumberBadge />
+      </Box>
+    </>
+  );
+};
