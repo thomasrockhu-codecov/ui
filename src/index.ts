@@ -78,6 +78,9 @@ import TrackingContext from './common/tracking';
 
 import { LinkContext, LinkProvider, LinkProviderProps, LinkProps, useLink } from './common/Links';
 
+/** Utils */
+import { numberWithLimit } from './common/utils';
+
 /** Runtime code */
 export {
   Accordion,
@@ -164,4 +167,5 @@ export {
   LinkProviderProps,
   LinkProps,
   useLink,
+  numberWithLimit,
 };
