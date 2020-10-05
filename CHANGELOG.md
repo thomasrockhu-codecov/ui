@@ -1,3 +1,27 @@
+# [3.30.0](https://github.com/nordnet/ui/compare/v3.29.0...v3.30.0) (2020-10-05)
+
+
+### Bug Fixes
+
+* 🐛 add missing storyshot ([04c21b3](https://github.com/nordnet/ui/commit/04c21b3))
+* 🐛 change medium badge size to 20 x 20 px ([2ad0674](https://github.com/nordnet/ui/commit/2ad0674))
+* 🐛 padding fix for large numbers ([cb27cac](https://github.com/nordnet/ui/commit/cb27cac))
+* 🐛 remove curly braces in string ([39eb319](https://github.com/nordnet/ui/commit/39eb319))
+* 🐛 remove padding for small sized badges ([20a0e84](https://github.com/nordnet/ui/commit/20a0e84))
+* 🐛 remove unnessary helper number with limit ([b7d9285](https://github.com/nordnet/ui/commit/b7d9285))
+* 🐛 render no typography when badge is not passed children ([c6f2d04](https://github.com/nordnet/ui/commit/c6f2d04))
+
+
+### Features
+
+* 🎸 add circle functionality ([1f977f7](https://github.com/nordnet/ui/commit/1f977f7))
+* 🎸 add color prop to badge component ([b02e6da](https://github.com/nordnet/ui/commit/b02e6da))
+* 🎸 add export of number with limit in index ([4d96a51](https://github.com/nordnet/ui/commit/4d96a51))
+* 🎸 add html props to badge and handle color prop ([0bf5d48](https://github.com/nordnet/ui/commit/0bf5d48))
+* 🎸 add number with limit function and component ([e8f8ac0](https://github.com/nordnet/ui/commit/e8f8ac0))
+* 🎸 add scaffolding for badge component ([278ce6c](https://github.com/nordnet/ui/commit/278ce6c))
+* 🎸 convert badge component to span ([7b6f9ef](https://github.com/nordnet/ui/commit/7b6f9ef))
+
 # [3.29.0](https://github.com/nordnet/ui/compare/v3.28.1...v3.29.0) (2020-10-05)
 
 
