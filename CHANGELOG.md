@@ -1,3 +1,15 @@
+# [3.29.0](https://github.com/nordnet/ui/compare/v3.28.1...v3.29.0) (2020-10-05)
+
+
+### Bug Fixes
+
+* snapshots ([27d3469](https://github.com/nordnet/ui/commit/27d3469))
+
+
+### Features
+
+* add hidden prop to expand items similar to hidden columns ([609805e](https://github.com/nordnet/ui/commit/609805e))
+
 ## [3.28.1](https://github.com/nordnet/ui/compare/v3.28.0...v3.28.1) (2020-10-02)
 
 
