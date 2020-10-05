@@ -1,3 +1,10 @@
+# [3.31.0](https://github.com/nordnet/ui/compare/v3.30.1...v3.31.0) (2020-10-05)
+
+
+### Features
+
+* 🎸 added proper tooltips to all relevant input components ([788f539](https://github.com/nordnet/ui/commit/788f539))
+
 ## [3.30.1](https://github.com/nordnet/ui/compare/v3.30.0...v3.30.1) (2020-10-05)
 
 
