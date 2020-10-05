@@ -208,3 +208,32 @@ export const TableCustomDataCells = () => {
   };
   return <Story />;
 };
+
+export const FlexTableWithHiddenExpandItem = () => {
+  const FlexTableWithHiddenExpandItemExample = () => (
+    <FlexTable expandable>
+      <FlexTable.HeaderRow>
+        <FlexTable.Header columnId="column1">Header 1</FlexTable.Header>
+        <FlexTable.Header columnId="column2">Header 2</FlexTable.Header>
+        <FlexTable.Header columnId="column3">Header 3</FlexTable.Header>
+      </FlexTable.HeaderRow>
+      <FlexTable.Row
+        expandItems={[
+          { label: 'Always visible', value: 123 },
+          { label: 'Hidden', value: 1000, hidden: true },
+        ]}
+      >
+        <FlexTable.Cell columnId="column1">Value 1</FlexTable.Cell>
+        <FlexTable.Cell columnId="column2">Value 2</FlexTable.Cell>
+        <FlexTable.Cell columnId="column3">Value 3</FlexTable.Cell>
+      </FlexTable.Row>
+    </FlexTable>
+  );
+
+  return (
+    <StyledBackground>
+      <Typography type="title3">FlexTable With Hidden Expand Item</Typography>
+      <FlexTableWithHiddenExpandItemExample />
+    </StyledBackground>
+  );
+};
