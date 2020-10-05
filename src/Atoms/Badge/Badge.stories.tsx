@@ -152,7 +152,7 @@ export const StyledBadges = () => {
 
 export const CommonBadgeUseCases = () => {
   const TextWithNumberBadge = () => (
-    <Typography>
+    <Typography type="tertiary">
       Orders <Badge>7</Badge>
     </Typography>
   );
