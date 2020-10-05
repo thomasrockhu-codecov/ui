@@ -145,7 +145,7 @@ export const withErrorIfValueIsLessThan1 = () => {
         label="Label"
         step="1"
         defaultValue={defaultValue}
-        onChange={x => x && setValue(x)}
+        onChange={(x) => x && setValue(x)}
         {...(showError ? { error: 'Number needs to be greater than 0' } : {})}
       />
     );
@@ -182,7 +182,7 @@ export const withExtraInfoAndError = () => {
         id="insert-unique-id"
         label="Label"
         defaultValue={defaultValue}
-        onChange={x => x && setValue(x)}
+        onChange={(x) => x && setValue(x)}
         extraInfo="Use wisely this space"
         {...(showError ? { error: 'Number needs to be greater than 0' } : {})}
       />
@@ -278,6 +278,24 @@ export const withLabelTooltip = () => (
 
 withLabelTooltip.story = {
   name: 'With label tooltip',
+};
+
+export const withLabelTooltipPositionTop = () => (
+  <>
+    <br />
+    <br />
+    <Input.Number
+      id="insert-unique-id"
+      label="Label"
+      labelTooltip="Tooltip content"
+      labelTooltipPosition="top"
+      onChange={action('onChange')}
+    />
+  </>
+);
+
+withLabelTooltipPositionTop.story = {
+  name: 'With label tooltip (position top)',
 };
 
 export const withPlaceholder = () => (
