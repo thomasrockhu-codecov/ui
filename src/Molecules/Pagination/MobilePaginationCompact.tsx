@@ -3,10 +3,9 @@ import styled from 'styled-components';
 import { Flexbox, Icon, Button } from '../..';
 import { PaginationCompactProps, BrowseButtonProps } from './Pagination.types';
 
-const StyledButton = styled(
-  // eslint-disable-next-line @typescript-eslint/no-unused-vars
-  ({ direction, ...rest }) => <Button {...rest} />,
-)<{ direction: string }>`
+const StyledButton = styled(Button).withConfig({
+  shouldForwardProp: (prop) => !['direction'].includes(prop),
+})<{ direction: 'left' | 'right' }>`
   display: flex;
   height: ${(p) => p.theme.spacing.unit(10)}px;
   width: ${(p) => p.theme.spacing.unit(8)}px;
@@ -18,7 +17,7 @@ const StyledButton = styled(
   justify-content: ${(p) => (p.direction === 'left' ? 'flex-start' : 'flex-end')};
 `;
 
-const ChevronButton = ({ direction = 'left', onClick, label }: BrowseButtonProps) => (
+const ChevronButton: React.FC<BrowseButtonProps> = ({ direction, onClick, label }) => (
   <Flexbox item container alignItems="center">
     <StyledButton onClick={onClick} variant="neutral" aria-label={label} direction={direction}>
       <Icon.ThinChevron direction={direction} size={4} />
@@ -34,7 +33,7 @@ const MobilePaginationCompact: React.FC<PaginationCompactProps> = ({
 }) => {
   return (
     <Flexbox container gutter={1}>
-      <ChevronButton onClick={onClickPrevious} label={previousPageLabel} />
+      <ChevronButton direction="left" onClick={onClickPrevious} label={previousPageLabel} />
       <ChevronButton direction="right" onClick={onClickNext} label={nextPageLabel} />
     </Flexbox>
   );

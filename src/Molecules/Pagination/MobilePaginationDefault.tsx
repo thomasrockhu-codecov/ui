@@ -83,7 +83,7 @@ const TruncatedPageNumbers = () => (
   </StyledTruncatedBox>
 );
 
-const ChevronButton = ({ direction = 'left', onClick, label }: BrowseButtonProps) => (
+const ChevronButton = ({ direction, onClick, label }: BrowseButtonProps) => (
   <Flexbox item container alignItems="center">
     <StyledButton type="chevron" onClick={onClick} aria-label={label}>
       {direction === 'left' ? (
@@ -108,7 +108,7 @@ const MobilePagination: React.FC<PaginationDefaultProps> = ({
 }) => {
   return (
     <Flexbox container>
-      <ChevronButton onClick={onClickPrevious} label={previousPageLabel} />
+      <ChevronButton direction="left" onClick={onClickPrevious} label={previousPageLabel} />
       <StyledFlexbox container justifyContent="center" numberOfPages={numberOfPages}>
         <PageItems
           currentPage={currentPage}

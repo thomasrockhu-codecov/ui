@@ -72,7 +72,7 @@ const DesktopPagination: React.FC<PaginationDefaultProps> = ({
 }) => {
   return (
     <StyledFlexbox container numberOfPages={numberOfPages}>
-      <ChevronButton onClick={onClickPrevious} label={previousPageLabel} />
+      <ChevronButton direction="left" onClick={onClickPrevious} label={previousPageLabel} />
       <Flexbox container item flex="1" justifyContent="center" gutter={2} as={List}>
         <PageItems
           currentPage={currentPage}

@@ -29,7 +29,7 @@ export type PageItemsProps = {
 };
 
 export type BrowseButtonProps = {
-  direction?: 'left' | 'right';
+  direction: 'left' | 'right';
   onClick: () => void;
   label: string;
 };
