@@ -1,3 +1,10 @@
+## [3.30.1](https://github.com/nordnet/ui/compare/v3.30.0...v3.30.1) (2020-10-05)
+
+
+### Bug Fixes
+
+* no recalculation on expand for controlled table examples ([fb36d50](https://github.com/nordnet/ui/commit/fb36d50))
+
 # [3.30.0](https://github.com/nordnet/ui/compare/v3.29.0...v3.30.0) (2020-10-05)
 
 
