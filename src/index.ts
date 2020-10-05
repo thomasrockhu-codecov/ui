@@ -1,5 +1,6 @@
 /** Atoms */
 import { Table, Tbody, Td, Tfoot, Th, Thead, Tr } from './Atoms/Table';
+import Badge from './Atoms/Badge';
 import Box from './Atoms/Box';
 import Card from './Atoms/Card';
 import CssGrid from './Atoms/CssGrid';
@@ -77,11 +78,15 @@ import TrackingContext from './common/tracking';
 
 import { LinkContext, LinkProvider, LinkProviderProps, LinkProps, useLink } from './common/Links';
 
+/** Utils */
+import { numberWithLimit } from './common/utils';
+
 /** Runtime code */
 export {
   Accordion,
   AccordionItem,
   Avatar,
+  Badge,
   BarScale,
   Box,
   Button,
@@ -162,4 +167,5 @@ export {
   LinkProviderProps,
   LinkProps,
   useLink,
+  numberWithLimit,
 };
