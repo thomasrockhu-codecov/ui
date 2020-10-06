@@ -3,9 +3,8 @@ import styled from 'styled-components';
 import { Flexbox, Icon, Button } from '../..';
 import { PaginationCompactProps, BrowseButtonProps } from './Pagination.types';
 
-const StyledButton = styled(Button).withConfig({
-  shouldForwardProp: (prop) => !['direction'].includes(prop),
-})<{ direction: 'left' | 'right' }>`
+// $direction is a transient prop, it will not leak out into the DOM
+const StyledButton = styled(Button)<{ $direction: 'left' | 'right' }>`
   display: flex;
   height: ${(p) => p.theme.spacing.unit(10)}px;
   width: ${(p) => p.theme.spacing.unit(8)}px;
@@ -14,12 +13,12 @@ const StyledButton = styled(Button).withConfig({
   background-color: transparent;
   outline: none;
   flex-direction: row;
-  justify-content: ${(p) => (p.direction === 'left' ? 'flex-start' : 'flex-end')};
+  justify-content: ${(p) => (p.$direction === 'left' ? 'flex-start' : 'flex-end')};
 `;
 
 const ChevronButton: React.FC<BrowseButtonProps> = ({ direction, onClick, label }) => (
   <Flexbox item container alignItems="center">
-    <StyledButton onClick={onClick} variant="neutral" aria-label={label} direction={direction}>
+    <StyledButton onClick={onClick} variant="neutral" aria-label={label} $direction={direction}>
       <Icon.ThinChevron direction={direction} size={4} />
     </StyledButton>
   </Flexbox>
