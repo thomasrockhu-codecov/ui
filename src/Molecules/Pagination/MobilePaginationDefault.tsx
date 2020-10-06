@@ -4,7 +4,6 @@ import { Flexbox, Typography, Icon, Button } from '../..';
 import List from '../../Atoms/List';
 import { PageItemProps, PaginationDefaultProps, BrowseButtonProps } from './Pagination.types';
 import PageItems from './PageItems';
-import { FlexProps } from '../../Atoms/Flexbox/Flexbox.types';
 
 const StyledButton = styled(Button)<{ $type: 'chevron' | 'page-item'; $isCurrentPage?: boolean }>`
   display: flex;
@@ -35,28 +34,31 @@ const StyledTruncatedBox = styled.li`
   align-items: center;
 `;
 
-const FlexboxAsList: React.FC<FlexProps> = ({ children }) => (
-  <Flexbox container justifyContent="center" as={List}>
-    {children}
-  </Flexbox>
-);
+const getWidthForList = (
+  pageItemWith: number,
+  truncatedItemWidth: number,
+  numberOfPages: number,
+) => {
+  const MAX_NUMBER_ITEMS = 7;
+  const NUMBER_OF_CHEVRONS = 2;
 
-const StyledFlexboxAsList = styled(FlexboxAsList)<{ $numberOfPages: number }>`
-  width: ${(p) => {
+  if (numberOfPages <= 5) {
+    return numberOfPages * pageItemWith;
+  }
+  if (numberOfPages === 6) {
+    return numberOfPages * pageItemWith - truncatedItemWidth;
+  }
+  return MAX_NUMBER_ITEMS * pageItemWith - NUMBER_OF_CHEVRONS * truncatedItemWidth;
+};
+
+const StyledList = styled(List)<{ $numberOfPages: number }>`
+  display: flex;
+  justify-content: center;
+  ${(p) => {
     const PAGE_ITEM_WIDTH = p.theme.spacing.unit(10);
     const TRUNCATED_ITEM_WIDTH = p.theme.spacing.unit(5);
-    const MAX_NUMBER_ITEMS = 7;
-
-    let width;
-    if (p.$numberOfPages <= 5) {
-      width = p.$numberOfPages * PAGE_ITEM_WIDTH;
-    } else if (p.$numberOfPages === 6) {
-      width = p.$numberOfPages * PAGE_ITEM_WIDTH - TRUNCATED_ITEM_WIDTH;
-    } else if (p.$numberOfPages >= 7) {
-      width = MAX_NUMBER_ITEMS * PAGE_ITEM_WIDTH - 2 * TRUNCATED_ITEM_WIDTH;
-    }
-    return width;
-  }}px;
+    return `width: ${getWidthForList(PAGE_ITEM_WIDTH, TRUNCATED_ITEM_WIDTH, p.$numberOfPages)}px`;
+  }}
 `;
 
 const PageItem: React.FC<PageItemProps> = ({ isCurrentPage = false, onClick, children, label }) => (
@@ -107,7 +109,7 @@ const MobilePagination: React.FC<PaginationDefaultProps> = ({
   return (
     <Flexbox container>
       <ChevronButton direction="left" onClick={onClickPrevious} label={previousPageLabel} />
-      <StyledFlexboxAsList $numberOfPages={numberOfPages}>
+      <StyledList $numberOfPages={numberOfPages}>
         <PageItems
           currentPage={currentPage}
           numberOfPages={numberOfPages}
@@ -117,7 +119,7 @@ const MobilePagination: React.FC<PaginationDefaultProps> = ({
           currentPageLabel={currentPageLabel}
           pageItemLabel={pageItemLabel}
         />
-      </StyledFlexboxAsList>
+      </StyledList>
       <ChevronButton direction="right" onClick={onClickNext} label={nextPageLabel} />
     </Flexbox>
   );
