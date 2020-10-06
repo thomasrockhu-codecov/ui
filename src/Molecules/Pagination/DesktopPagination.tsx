@@ -5,7 +5,6 @@ import List from '../../Atoms/List';
 import PageItems from './PageItems';
 import { PaginationDefaultProps, PageItemProps, BrowseButtonProps } from './Pagination.types';
 
-// $numberOfPages is a transient prop, it will not leak out into the DOM
 const StyledFlexbox = styled(Flexbox)<{ $numberOfPages: number }>`
   width: ${(p) => {
     const NUMBER_WIDTH = p.theme.spacing.unit(4.5);

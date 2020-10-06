@@ -3,7 +3,6 @@ import styled from 'styled-components';
 import { Flexbox, Icon, Button } from '../..';
 import { PaginationCompactProps, BrowseButtonProps } from './Pagination.types';
 
-// $direction is a transient prop, it will not leak out into the DOM
 const StyledButton = styled(Button)<{ $direction: 'left' | 'right' }>`
   display: flex;
   height: ${(p) => p.theme.spacing.unit(10)}px;
