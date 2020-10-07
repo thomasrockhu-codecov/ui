@@ -45,7 +45,7 @@ paginationWithManyPages.story = {
   name: '999 pages',
 };
 
-const ControlledPaginationWrapper = ({ totalItems = 10, itemsPerPage = 1 }) => {
+const ControlledLargePagination = ({ totalItems = 10, itemsPerPage = 1 }) => {
   const [currentPage, setCurrentPage] = React.useState(5);
 
   return (
@@ -59,4 +59,4 @@ const ControlledPaginationWrapper = ({ totalItems = 10, itemsPerPage = 1 }) => {
   );
 };
 
-export const controlledPagination = () => <ControlledPaginationWrapper />;
+export const controlledPagination = () => <ControlledLargePagination />;
