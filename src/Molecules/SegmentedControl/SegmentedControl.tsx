@@ -13,12 +13,17 @@ const Overlay = styled.div<OverlayProps>`
   position: absolute;
   width: ${(p) => (p.$count === 0 ? 100 : 100 / p.$count)}%;
   height: ${(p) => p.theme.spacing.unit(8)}px;
-  background-color: ${(p) => p.theme.color.backgroundInput};
+  background-color: ${(p) =>
+    p.disabled ? p.theme.color.disabledBackground : p.theme.color.backgroundInput};
   left: ${(p) => (p.$count === 0 ? 0 : p.$selected * (100 / p.$count))}%;
   margin: -1px 0 0 0;
   pointer-events: none;
-  border: 1px solid ${(p) => p.theme.color.sliderBackgroundColor};
-  box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.07);
+  ${(p) =>
+    !p.disabled &&
+    `
+    border: 1px solid ${p.theme.color.sliderBackgroundColor};
+    box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.07);
+  `}
   transition: all 0.3s ease;
 `;
 
@@ -35,8 +40,8 @@ const Button = styled.button`
   border: none;
   padding: 0;
   background-color: transparent;
-  cursor: pointer;
   outline: none;
+  cursor: ${(p) => (p.disabled ? 'not-allowed' : 'pointer')};
 `;
 
 const SegmentedControlContainer = styled(Flexbox)`
@@ -73,6 +78,7 @@ const SegmentedControl: SegmentedControlComponent = ({
   selectedInitially = 0,
   selected: selectedControlled,
   onClick = () => {},
+  disabled = false,
 }) => {
   const isControlled = typeof selectedControlled !== 'undefined';
 
@@ -105,6 +111,7 @@ const SegmentedControl: SegmentedControlComponent = ({
                 : (e) => clickHandler(e, c.props.onItemClick, c.props.itemId)
             }
             className={c.props.className}
+            disabled={disabled}
           >
             <Typography
               type="secondary"
@@ -128,6 +135,7 @@ const SegmentedControl: SegmentedControlComponent = ({
       <Overlay
         $selected={(isControlled ? selectedControlled : selected) || 0}
         $count={items.length}
+        disabled={disabled}
       />
       {items}
     </SegmentedControlContainer>
