@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
-import { Flexbox, Icon, Button } from '../..';
-import { PaginationCompactProps, BrowseButtonProps } from './Pagination.types';
+import { Flexbox, Icon, Button } from '../../../index';
+import { PaginationCompactProps, BrowseButtonProps } from '../Pagination.types';
 
 const StyledButton = styled(Button)<{ $direction: 'left' | 'right' }>`
   display: flex;

@@ -1,15 +1,14 @@
 import React, { useCallback, useEffect, useState } from 'react';
 import { PaginationProps } from './Pagination.types';
-import DesktopPagination from './DesktopPagination';
-import Media from '../../Atoms/Media';
-import MobilePaginationCompact from './MobilePaginationCompact';
-import MobilePaginationDefault from './MobilePaginationDefault';
+import DesktopPagination from './components/DesktopPagination';
+import MobilePaginationCompact from './components/MobilePaginationCompact';
+import MobilePaginationDefault from './components/MobilePaginationDefault';
 
 const Pagination: React.FC<PaginationProps> = ({
   currentPage: currentPageFromProps,
+  variant,
   itemsPerPage,
   totalItems,
-  compact = false,
   onPageChange,
   label = 'Pagination',
   nextPageLabel = 'Go to next page',
@@ -50,29 +49,30 @@ const Pagination: React.FC<PaginationProps> = ({
 
   return (
     <nav role="navigation" aria-label={label}>
-      <Media query={(t) => t.media.lessThan(t.breakpoints.md)}>
-        {compact ? (
-          <MobilePaginationCompact
-            onClickPrevious={onClickPrevious}
-            onClickNext={onClickNext}
-            nextPageLabel={nextPageLabel}
-            previousPageLabel={previousPageLabel}
-          />
-        ) : (
-          <MobilePaginationDefault
-            currentPage={currentPage}
-            numberOfPages={numberOfPages}
-            onClickPageItem={handlePageChange}
-            onClickPrevious={onClickPrevious}
-            onClickNext={onClickNext}
-            nextPageLabel={nextPageLabel}
-            previousPageLabel={previousPageLabel}
-            currentPageLabel={currentPageLabel}
-            pageItemLabel={pageItemLabel}
-          />
-        )}
-      </Media>
-      <Media query={(t) => t.media.greaterThan(t.breakpoints.md)}>
+      {variant === 'compact' && (
+        <MobilePaginationCompact
+          onClickPrevious={onClickPrevious}
+          onClickNext={onClickNext}
+          nextPageLabel={nextPageLabel}
+          previousPageLabel={previousPageLabel}
+        />
+      )}
+
+      {variant === 'large' && (
+        <MobilePaginationDefault
+          currentPage={currentPage}
+          numberOfPages={numberOfPages}
+          onClickPageItem={handlePageChange}
+          onClickPrevious={onClickPrevious}
+          onClickNext={onClickNext}
+          nextPageLabel={nextPageLabel}
+          previousPageLabel={previousPageLabel}
+          currentPageLabel={currentPageLabel}
+          pageItemLabel={pageItemLabel}
+        />
+      )}
+
+      {variant === 'regular' && (
         <DesktopPagination
           currentPage={currentPage}
           numberOfPages={numberOfPages}
@@ -84,7 +84,7 @@ const Pagination: React.FC<PaginationProps> = ({
           currentPageLabel={currentPageLabel}
           pageItemLabel={pageItemLabel}
         />
-      </Media>
+      )}
     </nav>
   );
 };

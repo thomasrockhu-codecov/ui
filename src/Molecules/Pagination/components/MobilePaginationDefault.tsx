@@ -1,9 +1,9 @@
 import React from 'react';
 import styled from 'styled-components';
-import { Flexbox, Typography, Icon, Button } from '../..';
-import List from '../../Atoms/List';
-import { PageItemProps, PaginationDefaultProps, BrowseButtonProps } from './Pagination.types';
-import PageItems from './PageItems';
+import { Flexbox, Typography, Icon, Button } from '../../../index';
+import List from '../../../Atoms/List';
+import { PageItemProps, PaginationDefaultProps, BrowseButtonProps } from '../Pagination.types';
+import PageItems from '../PageItems';
 
 const StyledButton = styled(Button)<{ $type: 'chevron' | 'page-item'; $isCurrentPage?: boolean }>`
   display: flex;
