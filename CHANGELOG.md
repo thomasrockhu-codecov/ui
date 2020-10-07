@@ -1,3 +1,10 @@
+## [3.31.1](https://github.com/nordnet/ui/compare/v3.31.0...v3.31.1) (2020-10-07)
+
+
+### Bug Fixes
+
+* add disabled prop to segmented control ([a2634e0](https://github.com/nordnet/ui/commit/a2634e0))
+
 # [3.31.0](https://github.com/nordnet/ui/compare/v3.30.1...v3.31.0) (2020-10-05)
 
 
