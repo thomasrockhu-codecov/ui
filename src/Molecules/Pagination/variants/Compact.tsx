@@ -23,7 +23,7 @@ const ChevronButton: React.FC<BrowseButtonProps> = ({ direction, onClick, label 
   </Flexbox>
 );
 
-const MobilePaginationCompact: React.FC<PaginationCompactProps> = ({
+const Compact: React.FC<PaginationCompactProps> = ({
   onClickPrevious,
   onClickNext,
   previousPageLabel,
@@ -37,4 +37,4 @@ const MobilePaginationCompact: React.FC<PaginationCompactProps> = ({
   );
 };
 
-export default React.memo(MobilePaginationCompact);
+export default React.memo(Compact);

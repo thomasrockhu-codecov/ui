@@ -95,7 +95,7 @@ const ChevronButton: React.FC<BrowseButtonProps> = ({ direction, onClick, label 
   </Flexbox>
 );
 
-const MobilePagination: React.FC<PaginationDefaultProps> = ({
+const Large: React.FC<PaginationDefaultProps> = ({
   currentPage,
   numberOfPages,
   onClickPageItem,
@@ -125,4 +125,4 @@ const MobilePagination: React.FC<PaginationDefaultProps> = ({
   );
 };
 
-export default React.memo(MobilePagination);
+export default React.memo(Large);

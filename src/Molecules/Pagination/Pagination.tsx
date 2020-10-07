@@ -1,8 +1,8 @@
 import React, { useCallback, useEffect, useState } from 'react';
 import { PaginationProps } from './Pagination.types';
-import DesktopPagination from './components/DesktopPagination';
-import MobilePaginationCompact from './components/MobilePaginationCompact';
-import MobilePaginationDefault from './components/MobilePaginationDefault';
+import Regular from './variants/Regular';
+import Compact from './variants/Compact';
+import Large from './variants/Large';
 
 const Pagination: React.FC<PaginationProps> = ({
   currentPage: currentPageFromProps,
@@ -50,7 +50,7 @@ const Pagination: React.FC<PaginationProps> = ({
   return (
     <nav role="navigation" aria-label={label}>
       {variant === 'compact' && (
-        <MobilePaginationCompact
+        <Compact
           onClickPrevious={onClickPrevious}
           onClickNext={onClickNext}
           nextPageLabel={nextPageLabel}
@@ -59,7 +59,7 @@ const Pagination: React.FC<PaginationProps> = ({
       )}
 
       {variant === 'large' && (
-        <MobilePaginationDefault
+        <Large
           currentPage={currentPage}
           numberOfPages={numberOfPages}
           onClickPageItem={handlePageChange}
@@ -73,7 +73,7 @@ const Pagination: React.FC<PaginationProps> = ({
       )}
 
       {variant === 'regular' && (
-        <DesktopPagination
+        <Regular
           currentPage={currentPage}
           numberOfPages={numberOfPages}
           onClickPageItem={handlePageChange}

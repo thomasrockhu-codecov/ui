@@ -55,7 +55,7 @@ const ChevronButton: React.FC<BrowseButtonProps> = ({ direction = 'left', onClic
   </Button>
 );
 
-const DesktopPagination: React.FC<PaginationDefaultProps> = ({
+const Regular: React.FC<PaginationDefaultProps> = ({
   currentPage,
   numberOfPages,
   onClickPageItem,
@@ -85,4 +85,4 @@ const DesktopPagination: React.FC<PaginationDefaultProps> = ({
   );
 };
 
-export default React.memo(DesktopPagination);
+export default React.memo(Regular);
