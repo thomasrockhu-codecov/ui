@@ -12,10 +12,10 @@ export default {
 
 const LargePagination = ({ totalItems = 10, itemsPerPage = 1 }) => (
   <Pagination
+    variant="large"
     totalItems={totalItems}
     itemsPerPage={itemsPerPage}
     onPageChange={action('Page change')}
-    variant="large"
   />
 );
 
@@ -45,23 +45,18 @@ paginationWithManyPages.story = {
   name: '999 pages',
 };
 
-// const ControlledPaginationWrapper = ({ totalItems = 10, itemsPerPage = 1 }) => {
-//   const [currentPage, setCurrentPage] = React.useState(1);
-//
-//   return (
-//     <RegularPagination
-//       currentPage={currentPage}
-//       totalItems={totalItems}
-//       itemsPerPage={itemsPerPage}
-//       onPageChange={setCurrentPage}
-//     />
-//   );
-// };
+const ControlledPaginationWrapper = ({ totalItems = 10, itemsPerPage = 1 }) => {
+  const [currentPage, setCurrentPage] = React.useState(5);
 
-// export const controlledPagination = () => (
-//   <ControlledPaginationWrapper totalItems={10} itemsPerPage={1} />
-// );
-//
-// controlledPagination.story = {
-//   name: 'Controlled pagination',
-// };
+  return (
+    <Pagination
+      variant="large"
+      currentPage={currentPage}
+      totalItems={totalItems}
+      itemsPerPage={itemsPerPage}
+      onPageChange={setCurrentPage}
+    />
+  );
+};
+
+export const controlledPagination = () => <ControlledPaginationWrapper />;

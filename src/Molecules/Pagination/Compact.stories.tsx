@@ -12,32 +12,27 @@ export default {
 
 const CompactPagination = ({ totalItems = 10, itemsPerPage = 1 }) => (
   <Pagination
+    variant="compact"
     totalItems={totalItems}
     itemsPerPage={itemsPerPage}
     onPageChange={action('Page change')}
-    variant="compact"
   />
 );
 
 export const regular = () => <CompactPagination />;
 
-// const ControlledPaginationWrapper = ({ totalItems = 10, itemsPerPage = 1 }) => {
-//   const [currentPage, setCurrentPage] = React.useState(1);
-//
-//   return (
-//     <RegularPagination
-//       currentPage={currentPage}
-//       totalItems={totalItems}
-//       itemsPerPage={itemsPerPage}
-//       onPageChange={setCurrentPage}
-//     />
-//   );
-// };
+const ControlledPaginationWrapper = ({ totalItems = 10, itemsPerPage = 1 }) => {
+  const [currentPage, setCurrentPage] = React.useState(5);
 
-// export const controlledPagination = () => (
-//   <ControlledPaginationWrapper totalItems={10} itemsPerPage={1} />
-// );
-//
-// controlledPagination.story = {
-//   name: 'Controlled pagination',
-// };
+  return (
+    <Pagination
+      variant="compact"
+      currentPage={currentPage}
+      totalItems={totalItems}
+      itemsPerPage={itemsPerPage}
+      onPageChange={setCurrentPage}
+    />
+  );
+};
+
+export const controlledPagination = () => <ControlledPaginationWrapper />;

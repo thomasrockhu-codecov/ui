@@ -5,8 +5,8 @@ import Compact from './variants/Compact';
 import Large from './variants/Large';
 
 const Pagination: React.FC<PaginationProps> = ({
-  currentPage: currentPageFromProps,
   variant,
+  currentPage: currentPageFromProps,
   itemsPerPage,
   totalItems,
   onPageChange,
@@ -44,8 +44,8 @@ const Pagination: React.FC<PaginationProps> = ({
   }, [currentPageFromState, numberOfPages, handlePageChange]);
 
   useEffect(() => {
-    handlePageChange(1);
-  }, [totalItems, itemsPerPage, handlePageChange]);
+    handlePageChange(currentPageFromProps || 1);
+  }, [totalItems, itemsPerPage, handlePageChange, currentPageFromProps]);
 
   return (
     <nav role="navigation" aria-label={label}>
