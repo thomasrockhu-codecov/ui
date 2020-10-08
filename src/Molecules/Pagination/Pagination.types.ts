@@ -1,8 +1,8 @@
 export type PaginationProps = {
+  variant: 'regular' | 'large' | 'compact';
   currentPage?: number;
   itemsPerPage: number;
   totalItems: number;
-  compact?: boolean;
   onPageChange: (newPage: number) => void;
   label?: string;
   nextPageLabel?: string;
@@ -29,7 +29,7 @@ export type PageItemsProps = {
 };
 
 export type BrowseButtonProps = {
-  direction?: 'left' | 'right';
+  direction: 'left' | 'right';
   onClick: () => void;
   label: string;
 };
