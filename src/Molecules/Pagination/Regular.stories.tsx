@@ -4,7 +4,7 @@ import docs from './Pagination.mdx';
 import Pagination from './Pagination';
 
 export default {
-  title: 'Molecules | Pagination / Regular',
+  title: 'Molecules / Pagination / Regular',
   parameters: {
     ...docs.parameters,
   },
