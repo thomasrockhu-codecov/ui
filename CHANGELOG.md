@@ -1,3 +1,20 @@
+# [3.32.0](https://github.com/nordnet/ui/compare/v3.31.1...v3.32.0) (2020-10-08)
+
+
+### Bug Fixes
+
+* 🐛 controlled state for current page ([c8d46e1](https://github.com/nordnet/ui/commit/c8d46e1))
+* 🐛 correct width and styling for page items list ([328c91e](https://github.com/nordnet/ui/commit/328c91e))
+* 🐛 props from leaking into the DOM ([2ac957c](https://github.com/nordnet/ui/commit/2ac957c))
+* 🐛 props leak into DOM ([70d7325](https://github.com/nordnet/ui/commit/70d7325))
+* 🐛 update storyshots ([ea8bd26](https://github.com/nordnet/ui/commit/ea8bd26))
+
+
+### Features
+
+* 🎸 new style for mobile pagination compact ([e4ec83b](https://github.com/nordnet/ui/commit/e4ec83b))
+* 🎸 replace media with a variant prop to pagination ([1ced442](https://github.com/nordnet/ui/commit/1ced442))
+
 ## [3.31.1](https://github.com/nordnet/ui/compare/v3.31.0...v3.31.1) (2020-10-07)
 
 
