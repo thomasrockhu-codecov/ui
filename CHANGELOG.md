@@ -1,3 +1,11 @@
+## [3.32.1](https://github.com/nordnet/ui/compare/v3.32.0...v3.32.1) (2020-10-09)
+
+
+### Bug Fixes
+
+* 🐛 add focus borders and more story cases ([f17b7dc](https://github.com/nordnet/ui/commit/f17b7dc))
+* 🐛 add quiet variant to input number ([9cab6bd](https://github.com/nordnet/ui/commit/9cab6bd))
+
 # [3.32.0](https://github.com/nordnet/ui/compare/v3.31.1...v3.32.0) (2020-10-08)
 
 
