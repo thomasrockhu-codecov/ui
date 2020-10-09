@@ -454,5 +454,5 @@ export const quietNumber = () => (
   />
 );
 quietNumber.story = {
-  name: 'quiet variant',
+  name: 'Quiet',
 };
