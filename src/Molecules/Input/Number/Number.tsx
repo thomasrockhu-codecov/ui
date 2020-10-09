@@ -21,9 +21,11 @@ const height = css<Pick<Props, 'size'>>`
   height: ${(p) => (p.size === 's' ? p.theme.spacing.unit(8) : p.theme.spacing.unit(10))}px;
 `;
 
-const background = css<Pick<Props, 'disabled'>>`
+const background = css<Pick<Props, 'disabled' | 'variant'>>`
   background-color: ${(p) =>
-    p.disabled ? p.theme.color.disabledBackground : p.theme.color.backgroundInput};
+    p.disabled && p.variant !== 'quiet'
+      ? p.theme.color.disabledBackground
+      : p.theme.color.backgroundInput};
 `;
 
 const hoverBorderStyles = css<Pick<Props, 'disabled'>>`
@@ -45,7 +47,7 @@ const focusBorderStyles = css`
   }
 `;
 
-const borderStyles = css<Pick<Props, 'error' | 'success' | 'variant'>>`
+const borderStyles = css<Pick<Props, 'error' | 'success' | 'variant' | 'disabled'>>`
   outline: none;
   border: 1px solid
     ${(p) => {
@@ -57,7 +59,11 @@ const borderStyles = css<Pick<Props, 'error' | 'success' | 'variant'>>`
   ${hoverBorderStyles}
   ${focusBorderStyles}
   border-width: ${(p) => (p.variant === 'quiet' ? '0 0 2px 0' : '1px')};
-  ${(p) => (p.variant === 'quiet' ? `border-color: ${p.theme.color.disabledBackground};` : '')}
+  &:focus {
+    border-width: 1px;
+  }
+  ${(p) =>
+    p.disabled && p.variant === 'quiet' ? `border-color: ${p.theme.color.disabledBackground};` : ''}
 `;
 
 const Wrapper = styled(Flexbox)`

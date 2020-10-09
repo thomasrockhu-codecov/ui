@@ -222,6 +222,10 @@ Array [
   z-index: 3;
 }
 
+.c8:focus {
+  border-width: 1px;
+}
+
 .c8:first-of-type {
   -webkit-order: -1;
   -ms-flex-order: -1;
@@ -266,6 +270,10 @@ Array [
 .c7:focus {
   border-color: #0046FF;
   z-index: 3;
+}
+
+.c7:focus {
+  border-width: 1px;
 }
 
 .c7::-webkit-input-placeholder {
