@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Storyshots Atoms | Spinner Colors 1`] = `
+exports[`Storyshots Atoms / Spinner Colors 1`] = `
 .c3 {
   display: inline-block;
   -webkit-animation: spinner 1s linear infinite;
@@ -519,7 +519,7 @@ exports[`Storyshots Atoms | Spinner Colors 1`] = `
 </div>
 `;
 
-exports[`Storyshots Atoms | Spinner Regression: 2 spinners with same color and size affects each other in Chrome 1`] = `
+exports[`Storyshots Atoms / Spinner Regression: 2 spinners with same color and size affects each other in Chrome 1`] = `
 .c1 {
   display: inline-block;
   -webkit-animation: spinner 1s linear infinite;
@@ -691,7 +691,7 @@ exports[`Storyshots Atoms | Spinner Regression: 2 spinners with same color and s
 </div>
 `;
 
-exports[`Storyshots Atoms | Spinner Spinner big 1`] = `
+exports[`Storyshots Atoms / Spinner Spinner big 1`] = `
 .c0 {
   display: inline-block;
   -webkit-animation: spinner 1s linear infinite;
@@ -766,7 +766,7 @@ exports[`Storyshots Atoms | Spinner Spinner big 1`] = `
 </span>
 `;
 
-exports[`Storyshots Atoms | Spinner Spinner default 1`] = `
+exports[`Storyshots Atoms / Spinner Spinner default 1`] = `
 .c0 {
   display: inline-block;
   -webkit-animation: spinner 1s linear infinite;
@@ -841,11 +841,11 @@ exports[`Storyshots Atoms | Spinner Spinner default 1`] = `
 </span>
 `;
 
-exports[`Storyshots Atoms | Spinner Spinner with custom 2 sec delay 1`] = `null`;
+exports[`Storyshots Atoms / Spinner Spinner with custom 2 sec delay 1`] = `null`;
 
-exports[`Storyshots Atoms | Spinner Spinner with default delay 1`] = `null`;
+exports[`Storyshots Atoms / Spinner Spinner with default delay 1`] = `null`;
 
-exports[`Storyshots Atoms | Spinner Spinner with delay is set to false 1`] = `
+exports[`Storyshots Atoms / Spinner Spinner with delay is set to false 1`] = `
 .c0 {
   display: inline-block;
   -webkit-animation: spinner 1s linear infinite;
