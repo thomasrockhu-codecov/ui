@@ -204,11 +204,10 @@ const NumberInput: NumberComponent & {
   } = props;
   const [internalValue, setInternalValue] = useState(getNumberAsString(defaultValue));
   const intl = useIntl();
-  const showSteppers = noSteppers !== true && isUndefined(leftAddon) && isUndefined(rightAddon);
-  const placeholder = showSteppers ? undefined : placeholderRaw;
   // Quiet variant only works while there are noSteppers
-  const showQuietVariant = variant === 'quiet' && noSteppers === true;
-
+  const showSteppers =
+    noSteppers !== true && isUndefined(leftAddon) && isUndefined(rightAddon) && variant !== 'quiet';
+  const placeholder = showSteppers ? undefined : placeholderRaw;
   const handleValueChange = (val: string) => {
     setInternalValue(val);
 
@@ -341,7 +340,7 @@ const NumberInput: NumberComponent & {
               value: removeNonNumberCharacters(value),
               inputMode,
               showSteppers,
-              variant: showQuietVariant ? 'quiet' : 'normal',
+              variant,
             }}
             {...(hasError(error) ? { 'aria-invalid': true } : {})}
           />

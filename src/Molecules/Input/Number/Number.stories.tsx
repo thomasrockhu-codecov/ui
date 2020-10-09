@@ -368,7 +368,6 @@ export const quietNumber = () => (
             label="Label"
             onChange={action('onChange')}
             variant="quiet"
-            noSteppers
           />
         ),
         title: 'Default',
