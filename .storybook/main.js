@@ -40,24 +40,24 @@ module.exports = {
       include: [path.resolve(__dirname, '..', 'node_modules', 'use-ssr')],
     });
 
-    config.module.rules.push({
-      test: /\.mdx$/,
-      use: [
-        {
-          loader: 'babel-loader',
-          // may or may not need this line depending on your app's setup
-          options: {
-            plugins: ['@babel/plugin-transform-react-jsx'],
-          },
-        },
-        {
-          loader: '@mdx-js/loader',
-          options: {
-            compilers: [createCompiler({})],
-          },
-        },
-      ],
-    });
+    // config.module.rules.push({
+    //   test: /\.mdx$/,
+    //   use: [
+    //     {
+    //       loader: 'babel-loader',
+    //       // may or may not need this line depending on your app's setup
+    //       options: {
+    //         plugins: ['@babel/plugin-transform-react-jsx'],
+    //       },
+    //     },
+    //     {
+    //       loader: '@mdx-js/loader',
+    //       options: {
+    //         compilers: [createCompiler({})],
+    //       },
+    //     },
+    //   ],
+    // });
 
     config.resolve.extensions.push('.ts', '.tsx', '.d.ts', '.md', '.mdx');
     return config;

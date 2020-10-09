@@ -8,15 +8,15 @@ module.exports = (api) => {
    * See reference: https://github.com/storybookjs/storybook/issues/10939
    */
   projectConfig.plugins = projectConfig.plugins.map((plugin) => {
-    if (['@babel/plugin-proposal-class-properties'].includes(plugin)) {
-      return [plugin, { loose: true }];
-    }
-    if (['@babel/plugin-proposal-private-methods'].includes(plugin)) {
-      return [plugin, { loose: true }];
-    }
-    if (['@babel/plugin-proposal-private-property-in-object'].includes(plugin)) {
-      return [plugin, { loose: true }];
-    }
+    // if (['@babel/plugin-proposal-class-properties'].includes(plugin)) {
+    //   return [plugin, { loose: true }];
+    // }
+    // if (['@babel/plugin-proposal-private-methods'].includes(plugin)) {
+    //   return [plugin, { loose: true }];
+    // }
+    // if (['@babel/plugin-proposal-private-property-in-object'].includes(plugin)) {
+    //   return [plugin, { loose: true }];
+    // }
 
     return plugin;
   });

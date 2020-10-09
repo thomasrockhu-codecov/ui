@@ -15,7 +15,7 @@ module.exports = api => {
   ];
 
   const plugins = [
-    '@babel/plugin-proposal-class-properties',
+    // '@babel/plugin-proposal-class-properties',
     'babel-plugin-styled-components',
     'ramda',
     [
