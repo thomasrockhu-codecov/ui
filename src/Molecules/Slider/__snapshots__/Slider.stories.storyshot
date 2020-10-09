@@ -191,6 +191,7 @@ Array [
   outline: none;
   border: 1px solid #BCBCB6;
   position: relative;
+  border-width: 1px;
   padding: 0;
   cursor: pointer;
   box-sizing: border-box;
@@ -245,7 +246,9 @@ Array [
   outline: none;
   border: 1px solid #BCBCB6;
   position: relative;
+  border-width: 1px;
   height: 40px;
+  padding: 8px;
   width: 100%;
   text-align: center;
   box-sizing: border-box;
@@ -328,6 +331,7 @@ Array [
           step="1"
           type="text"
           value="50"
+          variant="normal"
         />
         <button
           className="c8"

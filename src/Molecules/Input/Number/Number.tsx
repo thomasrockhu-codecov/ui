@@ -45,7 +45,7 @@ const focusBorderStyles = css`
   }
 `;
 
-const borderStyles = css<Pick<Props, 'error' | 'success'>>`
+const borderStyles = css<Pick<Props, 'error' | 'success' | 'variant'>>`
   outline: none;
   border: 1px solid
     ${(p) => {
@@ -56,6 +56,8 @@ const borderStyles = css<Pick<Props, 'error' | 'success'>>`
   position: relative;
   ${hoverBorderStyles}
   ${focusBorderStyles}
+  border-width: ${(p) => (p.variant === 'quiet' ? '0 0 2px 0' : '1px')};
+  ${(p) => (p.variant === 'quiet' ? `border-color: ${p.theme.color.disabledBackground};` : '')}
 `;
 
 const Wrapper = styled(Flexbox)`
@@ -103,6 +105,8 @@ const Input = styled(NormalizedElements.Input).attrs(() => ({ type: 'text' }))<P
   ${borderStyles}
   ${height}
   ${placeholderNormalizaion}
+  padding: ${(p) =>
+    p.theme.spacing.unit(p.variant === 'quiet' ? 0 : 2)}px;
   width: 100%;
   text-align: ${(p) => (p.showSteppers ? 'center' : 'left')};
   box-sizing: border-box;
@@ -120,6 +124,25 @@ const Input = styled(NormalizedElements.Input).attrs(() => ({ type: 'text' }))<P
       min-width: 0;
       z-index: 1;
       `}
+  ${(p) =>
+    p.variant === 'quiet'
+      ? `color: ${p.theme.color.cta}; 
+         &:disabled {
+           color: ${p.theme.color.disabledText};
+         }
+         font-size: 28px; 
+         font-weight: bold;
+         &:focus {
+           padding-left: ${p.theme.spacing.unit(p.leftAddon ? 8 : 2)}px;
+           padding-right: ${p.theme.spacing.unit(p.rightAddon ? 8 : 0)}px;
+         }`
+      : ''}
+  ${(p) =>
+    p.variant === 'quiet' && p.rightAddon
+      ? `&:focus + ${AddonBox} {
+          padding-right: ${p.theme.spacing.unit(2)}px;
+        }`
+      : ''}
 `;
 
 const components = {
@@ -171,11 +194,14 @@ const NumberInput: NumberComponent & {
     success,
     value: controlledValueRaw,
     visuallyEmphasiseRequired,
+    variant = 'normal',
   } = props;
   const [internalValue, setInternalValue] = useState(getNumberAsString(defaultValue));
   const intl = useIntl();
   const showSteppers = noSteppers !== true && isUndefined(leftAddon) && isUndefined(rightAddon);
   const placeholder = showSteppers ? undefined : placeholderRaw;
+  // Quiet variant only works while there are noSteppers
+  const showQuietVariant = variant === 'quiet' && noSteppers === true;
 
   const handleValueChange = (val: string) => {
     setInternalValue(val);
@@ -309,6 +335,7 @@ const NumberInput: NumberComponent & {
               value: removeNonNumberCharacters(value),
               inputMode,
               showSteppers,
+              variant: showQuietVariant ? 'quiet' : 'normal',
             }}
             {...(hasError(error) ? { 'aria-invalid': true } : {})}
           />

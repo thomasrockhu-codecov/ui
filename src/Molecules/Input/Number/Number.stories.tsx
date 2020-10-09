@@ -356,3 +356,17 @@ export const withPlaceholder = () => (
 withPlaceholder.story = {
   name: 'With placeholder',
 };
+
+export const withQuietVariant = () => (
+  <Input.Number
+    id="insert-unique-id"
+    label="Label"
+    onChange={action('onChange')}
+    variant="quiet"
+    noSteppers
+  />
+);
+
+withQuietVariant.story = {
+  name: 'With quiet variant',
+};
