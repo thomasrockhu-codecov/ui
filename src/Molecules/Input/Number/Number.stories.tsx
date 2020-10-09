@@ -356,3 +356,103 @@ export const withPlaceholder = () => (
 withPlaceholder.story = {
   name: 'With placeholder',
 };
+
+export const quietNumber = () => (
+  <Display
+    title={`Variant = "quiet"`}
+    items={[
+      {
+        component: (
+          <Input.Number
+            id="insert-unique-id"
+            label="Label"
+            onChange={action('onChange')}
+            variant="quiet"
+          />
+        ),
+        title: 'Default',
+      },
+      {
+        component: (
+          <Input.Number
+            id="insert-unique-id"
+            label="Label"
+            onChange={action('onChange')}
+            variant="quiet"
+            noSteppers
+            width="100%"
+          />
+        ),
+        title: 'Full width',
+      },
+      {
+        component: (
+          <Input.Number
+            id="insert-unique-id"
+            label="Label"
+            onChange={action('onChange')}
+            variant="quiet"
+            noSteppers
+            disabled
+          />
+        ),
+        title: 'Disabled',
+      },
+      {
+        component: (
+          <Input.Number
+            id="insert-unique-id"
+            label="Label"
+            onChange={action('onChange')}
+            variant="quiet"
+            noSteppers
+            error="Some error text that will wrap itself over couple of lines"
+          />
+        ),
+        title: 'Error',
+      },
+      {
+        component: (
+          <Input.Number
+            id="insert-unique-id"
+            label="Label"
+            onChange={action('onChange')}
+            variant="quiet"
+            noSteppers
+            success
+          />
+        ),
+        title: 'Success',
+      },
+      {
+        component: (
+          <Input.Number
+            id="insert-unique-id"
+            label="Label"
+            onChange={action('onChange')}
+            variant="quiet"
+            noSteppers
+            leftAddon={<Icon.Bolt size={4} />}
+          />
+        ),
+        title: 'Left addon',
+      },
+      {
+        component: (
+          <Input.Number
+            id="insert-unique-id"
+            label="Label"
+            onChange={action('onChange')}
+            variant="quiet"
+            noSteppers
+            rightAddon="%"
+          />
+        ),
+        title: 'Right addon',
+      },
+    ]}
+  />
+);
+quietNumber.story = {
+  name: 'Quiet',
+};

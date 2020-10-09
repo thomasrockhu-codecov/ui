@@ -1,5 +1,7 @@
 import { IntlShape } from 'react-intl';
 
+export type Variant = 'normal' | 'quiet';
+
 export type Props = {
   autoFocus?: boolean;
   className?: string;
@@ -35,7 +37,6 @@ export type Props = {
   max?: string | number;
   min?: string | number;
   name?: string;
-  noSteppers?: boolean;
   placeholder?: string;
   required?: boolean;
   rightAddon?: React.ReactNode;
@@ -44,7 +45,7 @@ export type Props = {
   success?: boolean;
   value?: string | number;
   visuallyEmphasiseRequired?: boolean;
-  width?: string | number;
+  noSteppers?: boolean;
 
   onStepUp?: () => void;
   onStepDown?: () => void;
@@ -55,6 +56,8 @@ export type Props = {
   onKeyDown?: React.KeyboardEventHandler<HTMLInputElement>;
   onKeyUp?: React.KeyboardEventHandler<HTMLInputElement>;
   onKeyPress?: React.KeyboardEventHandler<HTMLInputElement>;
+  width?: string | number;
+  variant?: Variant;
 };
 
 export type NumberComponent = React.FunctionComponent<Props>;
