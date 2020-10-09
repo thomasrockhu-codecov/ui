@@ -4,7 +4,7 @@ import Slider from '.';
 import { Typography, Number, Input } from '../..';
 
 export default {
-  title: 'Molecules | Slider',
+  title: 'Molecules / Slider',
   decorators: [withKnobs],
 };
 

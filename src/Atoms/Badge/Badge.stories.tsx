@@ -8,7 +8,7 @@ import { numberWithLimit } from '../../common/utils';
 import { Props as BadgeProps } from './Badge.types';
 
 export default {
-  title: 'Atoms | Badge',
+  title: 'Atoms / Badge',
   decorators: [withKnobs],
   parameters: {
     component: Badge,

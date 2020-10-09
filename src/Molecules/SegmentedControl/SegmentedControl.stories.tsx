@@ -6,7 +6,7 @@ import Box from '../../Atoms/Box';
 import Button from '../Button';
 
 export default {
-  title: 'Molecules | SegmentedControl',
+  title: 'Molecules / SegmentedControl',
   parameters: {
     component: SegmentedControl,
     ...docs.parameters,

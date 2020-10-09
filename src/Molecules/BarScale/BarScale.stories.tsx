@@ -5,7 +5,7 @@ import docs from './BarScale.mdx';
 import BarScale from '.';
 
 export default {
-  title: 'Molecules | BarScale',
+  title: 'Molecules / BarScale',
   parameters: {
     ...docs.parameters,
   },

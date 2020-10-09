@@ -4,7 +4,7 @@ import docs from './LineScale.mdx';
 import LineScale from '.';
 
 export default {
-  title: 'Molecules | LineScale',
+  title: 'Molecules / LineScale',
   parameters: {
     ...docs.parameters,
   },

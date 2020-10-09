@@ -6,7 +6,7 @@ import docs from './FlexTable.mdx';
 import { StyledBackground } from './storiesShared';
 
 export default {
-  title: 'Molecules | FlexTable / FlexTable with different size props',
+  title: 'Molecules / FlexTable / FlexTable with different size props',
   decorators: [withKnobs],
   parameters: {
     component: FlexTable,

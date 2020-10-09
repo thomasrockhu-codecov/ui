@@ -6,7 +6,7 @@ import { Button, Flexbox, Number } from '../..';
 import { ICON_COLUMN_DEFAULT_FLEX_PROPS } from './shared/constants';
 
 export default {
-  title: 'Molecules | FlexTable / Expandable FlexTable',
+  title: 'Molecules / FlexTable / Expandable FlexTable',
   decorators: [withKnobs],
   parameters: {
     component: FlexTable,

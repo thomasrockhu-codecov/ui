@@ -7,7 +7,7 @@ import docs from './TabsNav.mdx';
 import { LinkProvider, LinkProps } from '../../common/Links';
 
 export default {
-  title: 'Molecules | TabsNav',
+  title: 'Molecules / TabsNav',
   parameters: {
     ...docs.parameters,
   },

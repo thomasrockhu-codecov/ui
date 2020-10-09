@@ -6,7 +6,7 @@ import docs from './Spinner.md';
 import { Spinner, Typography } from '../..';
 
 export default {
-  title: 'Atoms | Spinner',
+  title: 'Atoms / Spinner',
   parameters: {
     component: Spinner,
   },
@@ -62,23 +62,23 @@ export const colors = () => (
       { title: 'Default', component: <Spinner id="defaultSpinner" /> },
       {
         title: 'Color: text',
-        component: <Spinner color={t => t.color.text} id="defaultSpinnerText" />,
+        component: <Spinner color={(t) => t.color.text} id="defaultSpinnerText" />,
       },
       {
         title: 'Color: positive',
-        component: <Spinner color={t => t.color.positive} id="defaultSpinnerPositive" />,
+        component: <Spinner color={(t) => t.color.positive} id="defaultSpinnerPositive" />,
       },
       {
         title: 'Color: negative',
-        component: <Spinner color={t => t.color.negative} id="defaultSpinnerNegative" />,
+        component: <Spinner color={(t) => t.color.negative} id="defaultSpinnerNegative" />,
       },
       {
         title: 'Color: warning',
-        component: <Spinner color={t => t.color.warning} id="defaultSpinnerWarning" />,
+        component: <Spinner color={(t) => t.color.warning} id="defaultSpinnerWarning" />,
       },
       {
         title: 'Color: label',
-        component: <Spinner color={t => t.color.label} id="defaultSpinnerLabel" />,
+        component: <Spinner color={(t) => t.color.label} id="defaultSpinnerLabel" />,
       },
     ]}
   />

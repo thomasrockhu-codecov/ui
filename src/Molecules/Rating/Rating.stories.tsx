@@ -4,7 +4,7 @@ import docs from './Rating.mdx';
 import Rating from '.';
 
 export default {
-  title: 'Molecules | Rating',
+  title: 'Molecules / Rating',
   parameters: {
     ...docs.parameters,
   },

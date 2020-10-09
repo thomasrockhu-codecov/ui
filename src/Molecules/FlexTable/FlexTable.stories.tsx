@@ -8,7 +8,7 @@ import { FlexPropsType } from './shared/ColumnProvider/ColumnProvider.types';
 import { StyledBackground } from './storiesShared';
 
 export default {
-  title: 'Molecules | FlexTable',
+  title: 'Molecules / FlexTable',
   decorators: [withKnobs],
   parameters: {
     component: FlexTable,

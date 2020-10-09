@@ -3,7 +3,7 @@ import { Accordion, AccordionItem, Typography, Spinner } from '../..';
 import docs from './Accordion.mdx';
 
 export default {
-  title: 'Molecules | Accordion',
+  title: 'Molecules / Accordion',
   parameters: {
     ...docs.parameters,
     component: Accordion,
@@ -11,7 +11,7 @@ export default {
 };
 
 const ExampleContent = () => (
-  <Typography as="p" type="secondary" color={t => t.color.accordionText}>
+  <Typography as="p" type="secondary" color={(t) => t.color.accordionText}>
     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
     labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
     laboris nisi ut aliquip ex ea commodo consequat

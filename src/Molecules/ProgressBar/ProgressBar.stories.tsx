@@ -4,7 +4,7 @@ import ProgressBar from '.';
 import { Box, Flexbox } from '../..';
 
 export default {
-  title: 'Molecules | ProgressBar',
+  title: 'Molecules / ProgressBar',
   parameters: {
     component: ProgressBar,
   },

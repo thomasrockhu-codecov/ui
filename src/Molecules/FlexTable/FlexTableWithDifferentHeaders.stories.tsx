@@ -8,7 +8,7 @@ import { OnSort } from './Header/Header.types';
 import { StyledFlexboxContainer, StyledBackground } from './storiesShared';
 
 export default {
-  title: 'Molecules | FlexTable / FlexTable with different headers',
+  title: 'Molecules / FlexTable / FlexTable with different headers',
   decorators: [withKnobs],
   parameters: {
     component: FlexTable,

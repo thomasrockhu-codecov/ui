@@ -7,7 +7,7 @@ import { FlexProps } from '../../Atoms/Flexbox/Flexbox.types';
 import { StyledBackground } from './storiesShared';
 
 export default {
-  title: 'Molecules | FlexTable / FlexTable with different columns',
+  title: 'Molecules / FlexTable / FlexTable with different columns',
   decorators: [withKnobs],
   parameters: {
     component: FlexTable,
