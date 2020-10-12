@@ -217,6 +217,7 @@ const createColors = (type: ThemeColorsVersion): ThemeColors<typeof type> => {
     sliderThumbBackground: rawColor.white,
     sliderBackgroundColor: rawColor.gray6,
     statusFulfilledBackgroundColor: rawColor.cta,
+    statusFulfilledTextColor: rawColor.white,
     dateAvatarBackground1: rawColor.gray6,
     dateAvatarBackground2: rawColor.gray7,
     dateAvatarText1: rawColor.gray2,

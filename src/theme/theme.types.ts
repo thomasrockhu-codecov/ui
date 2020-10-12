@@ -225,6 +225,8 @@ export type ThemeColors<Version extends ThemeColorsVersion> = {
   /** cta */
   statusFulfilledBackgroundColor: RawColor['cta'];
   /** white */
+  statusFulfilledTextColor: RawColor['white'];
+  /** white */
   sliderThumbBackground: RawColor['white'];
   /** gray6 */
   dateAvatarBackground1: RawColor['gray6'];
