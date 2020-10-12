@@ -222,6 +222,8 @@ export type ThemeColors<Version extends ThemeColorsVersion> = {
   sliderDisabled: RawColor['gray6'];
   /** gray6 */
   sliderBackgroundColor: RawColor['gray6'];
+  /** cta */
+  statusFulfilledBackgroundColor: RawColor['cta'];
   /** white */
   sliderThumbBackground: RawColor['white'];
   /** gray6 */
