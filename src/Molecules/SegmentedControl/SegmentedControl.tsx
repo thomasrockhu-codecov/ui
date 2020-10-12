@@ -116,6 +116,7 @@ const SegmentedControl: SegmentedControlComponent = ({
             <Typography
               type="secondary"
               weight={itemSelected === c.props.itemId ? 'bold' : 'regular'}
+              {...(disabled && { color: (t) => t.color.disabledText })}
             >
               {c.props.children}
             </Typography>
