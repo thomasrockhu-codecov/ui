@@ -200,6 +200,8 @@ export type ThemeColors<Version extends ThemeColorsVersion> = {
   orderDepthBackground: RawColor['gray6'];
   /** gray5 */
   orderDepthDarkBackground: RawColor['gray5'];
+  /** complementaryTurquoise1 */
+  listItemBackgroundHover: string;
   /** complementaryBlue2 */
   loanRatesGraphColor2: RawColor['complementaryBlue2'];
   /** brandGreen */
