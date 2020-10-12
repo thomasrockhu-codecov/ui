@@ -1,3 +1,10 @@
+## [3.32.2](https://github.com/nordnet/ui/compare/v3.32.1...v3.32.2) (2020-10-12)
+
+
+### Bug Fixes
+
+* 🐛 change segmented control color when disabled ([a7ee250](https://github.com/nordnet/ui/commit/a7ee250))
+
 ## [3.32.1](https://github.com/nordnet/ui/compare/v3.32.0...v3.32.1) (2020-10-09)
 
 
