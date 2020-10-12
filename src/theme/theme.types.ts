@@ -128,6 +128,8 @@ export type ThemeColors<Version extends ThemeColorsVersion> = {
   divider: RawColor['gray6'];
   /** gray4 */
   emptyState: RawColor['gray4'];
+  /** gray2 */
+  fundExchange: RawColor['gray2'];
   /** gray0 */
   separator: RawColor['gray0'];
   /** gray0 */
