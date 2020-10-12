@@ -73,6 +73,7 @@ type ChangeableColor<
   : A11yColor;
 
 export type ThemeColors<Version extends ThemeColorsVersion> = {
+  /** white */
   backgroundInput: RawColor['white'];
   /** gray7 */
   background: RawColor['gray7'];
@@ -202,6 +203,8 @@ export type ThemeColors<Version extends ThemeColorsVersion> = {
   orderDepthBackground: RawColor['gray6'];
   /** gray5 */
   orderDepthDarkBackground: RawColor['gray5'];
+  /** gray1 */
+  orderAccountLabel: RawColor['gray1'];
   /** complementaryTurquoise1 */
   listItemBackgroundHover: string;
   /** complementaryBlue2 */

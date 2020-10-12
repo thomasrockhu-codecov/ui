@@ -210,6 +210,7 @@ const createColors = (type: ThemeColorsVersion): ThemeColors<typeof type> => {
     generationSavingsTimelineColor4: rawColor.complementaryBlue1,
     orderDepthBackground: rawColor.gray6,
     orderDepthDarkBackground: rawColor.gray5,
+    orderAccountLabel: rawColor.gray1,
     listItemBackgroundHover: Color(rawColor.complementaryTurquoise1).alpha(0.1).rgb().string(), 
     loanRatesGraphColor2: rawColor.complementaryBlue2,
     sliderColor: rawColor.cta,
