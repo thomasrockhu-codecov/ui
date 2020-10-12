@@ -9,14 +9,22 @@ const StyledPolygon = styled.polygon<StyledChildProps>`
     return `fill: ${strokeColor};`;
   }}
 `;
+const StyledCrossPath = styled.path<StyledChildProps>`
+  ${(p) => {
+    const strokeColor = getColor(p.theme, p.theme.color.svgStokeLight, p.strokeColorFn);
+    return `fill: ${
+      strokeColor === p.theme.color.svgStokeLight ? strokeColor : p.theme.color.negative
+    };`;
+  }}
+`;
 
 export const CrossCircle = ({ stroke, ...props }: ChildProps) => {
   return (
     <IconBase {...props} viewBox="0 0 92 92">
       <path d="M46 92.0000003c25.4050985 0 46-20.5949015 46-46S71.4050985 3.3e-7 46 3.3e-7 0 20.5949018 0 46.0000003c0 25.4050985 20.5949015 46 46 46z" />
-      <path
+      <StyledCrossPath
         d="M58.5601262 30.666667l2.710576 2.710576-12.5920355 12.591424 12.5920355 12.5914595-2.710576 2.710576L45.9686667 48.678667l-12.591424 12.5920355-2.710576-2.710576 12.591-12.5914595-12.591-12.591424 2.710576-2.710576 12.591424 12.591 12.5914595-12.591z"
-        fill="#FFF"
+        strokeColorFn={stroke}
       />
       <StyledPolygon
         strokeColorFn={stroke}
