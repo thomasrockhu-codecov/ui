@@ -2,13 +2,15 @@ const path = require('path');
 const createCompiler = require('@storybook/addon-docs/mdx-compiler-plugin');
 
 module.exports = {
-  "stories": [
-    "../src/**/*.stories.mdx",
-    "../src/**/*.stories.@(js|jsx|ts|tsx)"
-  ],
-  "addons": [
-    "@storybook/addon-links",
-    "@storybook/addon-essentials"
+  stories: ['../src/**/*.stories.mdx', '../src/**/*.stories.@(js|jsx|ts|tsx)'],
+  addons: [
+    '@storybook/addon-links',
+    '@storybook/addon-docs',
+    '@storybook/addon-storysource',
+    '@storybook/addon-a11y',
+    '@storybook/addon-actions',
+    '@storybook/addon-knobs',
+    'storybook-addon-intl',
   ],
   webpackFinal: async (config) => {
     config.entry.unshift(require.resolve('core-js/es/weak-set'));
@@ -65,4 +67,4 @@ module.exports = {
   typescript: {
     reactDocgen: 'react-docgen-typescript-plugin',
   },
-}
+};

@@ -1,5 +1,4 @@
 import { ThemeDecorator } from "./ThemeDecorator"
-import { withA11y } from '@storybook/addon-a11y';
 import { setIntlConfig, withIntl } from 'storybook-addon-intl';
 
 export const parameters = {
@@ -16,4 +15,4 @@ setIntlConfig({
 });
 
 
-export const decorators = [ThemeDecorator, withIntl, withA11y];
+export const decorators = [ThemeDecorator, withIntl];
