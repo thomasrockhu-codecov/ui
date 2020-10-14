@@ -107,6 +107,7 @@ const StyledDiv = styled('div').withConfig({
 
   ${(p) =>
     p.tag &&
+    p.text &&
     `padding-top: ${p.theme.spacing.unit(7)}px;
       padding-bottom: ${p.theme.spacing.unit(5)}px;
   `}
@@ -120,8 +121,9 @@ const StyledDiv = styled('div').withConfig({
 `;
 
 export const SelectionCard: SelectionCardComponent = ({
+  title,
+  onChange,
   tag = '',
-  title = '',
   text = '',
   imageUrl = '',
   icon = null,
@@ -132,7 +134,6 @@ export const SelectionCard: SelectionCardComponent = ({
   horizontal = false,
   outline = false,
   selected = false,
-  onChange = () => {},
 }) => {
   const hasIcon = Boolean(icon && !imageUrl);
   const hasFeature = Boolean(imageUrl || icon);

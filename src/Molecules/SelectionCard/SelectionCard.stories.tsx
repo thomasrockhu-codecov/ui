@@ -1,5 +1,6 @@
 import React from 'react';
 import { withKnobs, text, boolean } from '@storybook/addon-knobs';
+import { action } from '@storybook/addon-actions';
 import styled from 'styled-components';
 import { Icon, Flexbox, Typography } from '../..';
 import { SelectionCard } from './SelectionCard';
@@ -8,8 +9,12 @@ const StyledFlexbox = styled(Flexbox)`
   width: 100%;
 `;
 
+const requiredProps = {
+  title: 'Title',
+  onChange: action('on change triggered'),
+};
+
 const getCardProps = () => ({
-  title: text('Title', 'Title'),
   tag: text('Tag', 'Tag'),
   text: text(
     'Text',
@@ -31,7 +36,7 @@ export default {
   decorators: [withKnobs],
 };
 
-export const SelectionCardDefault = () => <SelectionCard {...getCardProps()} />;
+export const SelectionCardDefault = () => <SelectionCard {...getCardProps()} {...requiredProps} />;
 
 SelectionCardDefault.story = {
   name: 'Default',
@@ -40,6 +45,7 @@ SelectionCardDefault.story = {
 export const SelectionCardWithReactNode = () => (
   <SelectionCard
     {...getCardProps()}
+    {...requiredProps}
     title={
       <StyledFlexbox container justifyContent="flex-start">
         <Flexbox item>
@@ -64,7 +70,7 @@ SelectionCardWithReactNode.story = {
 };
 
 export const SelectionCardWithIcon = () => (
-  <SelectionCard {...getCardProps()} icon={<Icon.House size={8} />} />
+  <SelectionCard {...getCardProps()} {...requiredProps} icon={<Icon.House size={8} />} />
 );
 
 SelectionCardWithIcon.story = {
