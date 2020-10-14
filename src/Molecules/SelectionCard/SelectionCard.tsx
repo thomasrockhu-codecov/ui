@@ -8,7 +8,7 @@ import { isElement } from '../../common/utils';
 
 import { SelectionCardComponent } from './SelectionCard.types';
 
-const IEWidthFixFlexbox = styled(Flexbox)`
+const StyledFlexbox = styled(Flexbox)`
   width: 100%;
 `;
 
@@ -24,7 +24,7 @@ const StyledTypography = styled(Typography).withConfig({
   ${(p) => p.inheritColor && `color: inherit`};
 `;
 
-const HiddenInput = styled.input`
+const StyledInput = styled.input`
   visibility: hidden;
   pointer-events: none;
 `;
@@ -139,17 +139,17 @@ export const SelectionCard: SelectionCardComponent = ({
   const titleItem = isElement(title) ? (
     title
   ) : (
-    <IEWidthFixFlexbox item>
+    <StyledFlexbox item>
       <StyledTypography inheritColor={disabled} type="primary" weight="bold">
         {title}
       </StyledTypography>
-    </IEWidthFixFlexbox>
+    </StyledFlexbox>
   );
 
   const textItem = isElement(text) ? (
     text
   ) : (
-    <IEWidthFixFlexbox item>
+    <StyledFlexbox item>
       <StyledTypography
         inheritColor={disabled}
         color={(t) => t.color.selectionCardText}
@@ -157,7 +157,7 @@ export const SelectionCard: SelectionCardComponent = ({
       >
         {text}
       </StyledTypography>
-    </IEWidthFixFlexbox>
+    </StyledFlexbox>
   );
 
   return (
@@ -170,7 +170,7 @@ export const SelectionCard: SelectionCardComponent = ({
           <Box pt={4} pr={5}>
             {!disabled && !selected && outline && <CircleOutline />}
             {!disabled && selected && <Icon.CheckMarkCircle color={(t) => t.color.cta} />}
-            <HiddenInput
+            <StyledInput
               type="checkbox"
               disabled={disabled}
               onChange={disabled ? R.always : onChange}
