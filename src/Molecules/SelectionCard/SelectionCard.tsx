@@ -4,14 +4,15 @@ import R from 'ramda';
 import styled, { css } from 'styled-components';
 
 import { Card, Flexbox, Typography, Box, Icon } from '../..';
+import { isElement } from '../../common/utils';
 
 import { SelectionCardComponent } from './SelectionCard.types';
 
-const StyledImg = styled.img`
+const IEWidthFixFlexbox = styled(Flexbox)`
   width: 100%;
 `;
 
-const IEWidthFixFlexbox = styled(Flexbox)`
+const StyledImg = styled.img`
   width: 100%;
 `;
 
@@ -23,7 +24,12 @@ const StyledTypography = styled(Typography).withConfig({
   ${(p) => p.inheritColor && `color: inherit`};
 `;
 
-const StyledFlexbox = styled(Flexbox)`
+const HiddenInput = styled.input`
+  visibility: hidden;
+  pointer-events: none;
+`;
+
+const AbsoluteFlexbox = styled(Flexbox)`
   position: absolute;
   top: ${(p) => p.theme.spacing.unit(1)}px;
   width: 100%;
@@ -35,11 +41,6 @@ const Tag = styled(Typography)`
   background: ${(p) => p.theme.color.cta};
   color: ${(p) => p.theme.color.textLight};
   box-sizing: border-box;
-`;
-
-const Input = styled.input`
-  opacity: 0;
-  pointer-events: none;
 `;
 
 const CircleOutline = styled.div`
@@ -95,11 +96,9 @@ const StyledLabel = styled.label`
 `;
 
 const StyledDiv = styled('div').withConfig({
-  shouldForwardProp: (prop) =>
-    !['iconPadding', 'imagePadding', 'tagPadding', 'text'].includes(prop),
+  shouldForwardProp: (prop) => !['featurePadding', 'tagPadding', 'leftAlign'].includes(prop),
 })<{
-  iconPadding: boolean;
-  imagePadding: boolean;
+  featurePadding: boolean;
   tagPadding: boolean;
   leftAlign: boolean;
 }>`
@@ -108,39 +107,48 @@ const StyledDiv = styled('div').withConfig({
   ${(p) => `padding:
     ${p.theme.spacing.unit(10)}px
     ${p.theme.spacing.unit(5)}px
-    ${p.theme.spacing.unit(5)}px
-    ${p.theme.spacing.unit(5)}px
   `};
-  ${(p) => (p.iconPadding || p.imagePadding) && `padding-top: ${p.theme.spacing.unit(5)}px;`}
+
+  ${(p) =>
+    p.featurePadding &&
+    `padding-top:${p.theme.spacing.unit(5)}px;
+    padding-bottom:${p.theme.spacing.unit(5)}px;
+    `}
+
   ${(p) => p.tagPadding && `padding-top: ${p.theme.spacing.unit(7)}px;`}
 `;
 
 export const SelectionCard: SelectionCardComponent = ({
+  tag = '',
+  title = '',
+  text = '',
+  imageUrl = '',
+  icon = null,
+  imageAlt = '',
   border = false,
   disabled = false,
   error = false,
   horizontal = false,
-  icon = null,
-  imageUrl = '',
-  imageAlt = '',
-  onChange = () => {},
   outline = false,
   selected = false,
-  tag = '',
-  text = '',
-  title = '',
+  onChange = () => {},
 }) => {
   const hasIcon = Boolean(icon && !imageUrl);
+  const hasFeature = Boolean(imageUrl || icon);
 
-  const titleItem = title && (
+  const titleItem = isElement(title) ? (
+    title
+  ) : (
     <IEWidthFixFlexbox item>
-      <StyledTypography inheritColor={disabled} type="title3">
+      <StyledTypography inheritColor={disabled} type="primary" weight="bold">
         {title}
       </StyledTypography>
     </IEWidthFixFlexbox>
   );
 
-  const textItem = text && (
+  const textItem = isElement(text) ? (
+    text
+  ) : (
     <IEWidthFixFlexbox item>
       <StyledTypography
         inheritColor={disabled}
@@ -157,19 +165,22 @@ export const SelectionCard: SelectionCardComponent = ({
       <StyledCard disabled={disabled} selected={selected} border={border} error={error}>
         {imageUrl && <StyledImg src={imageUrl} alt={imageAlt} />}
 
-        <StyledFlexbox container justifyContent="space-between" direction="row">
+        <AbsoluteFlexbox container justifyContent="space-between" direction="row">
           <Flexbox item>{tag && <Tag type="secondary">{tag}</Tag>}</Flexbox>
           <Box pt={4} pr={5}>
             {!disabled && !selected && outline && <CircleOutline />}
             {!disabled && selected && <Icon.CheckMarkCircle color={(t) => t.color.cta} />}
-            <Input type="checkbox" disabled={disabled} onChange={disabled ? R.always : onChange} />
+            <HiddenInput
+              type="checkbox"
+              disabled={disabled}
+              onChange={disabled ? R.always : onChange}
+            />
           </Box>
-        </StyledFlexbox>
+        </AbsoluteFlexbox>
 
         <StyledDiv
-          iconPadding={hasIcon}
-          imagePadding={Boolean(imageUrl)}
-          tagPadding={Boolean(tag && (text || horizontal))}
+          featurePadding={hasFeature}
+          tagPadding={Boolean(tag && text && hasFeature)}
           leftAlign={Boolean(text)}
         >
           {horizontal && (

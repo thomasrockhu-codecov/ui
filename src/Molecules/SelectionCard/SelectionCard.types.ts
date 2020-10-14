@@ -3,8 +3,8 @@ type SelectionCard = {
   icon?: React.ReactNode;
   imageUrl?: string;
   tag?: string;
-  text?: string;
-  title?: string;
+  text?: string | React.ReactNode;
+  title?: string | React.ReactNode;
   border?: boolean;
   disabled?: boolean;
   error?: boolean;
