@@ -1,10 +1,8 @@
 import React from 'react';
-import { action } from '@storybook/addon-actions';
 import { withKnobs, text, boolean } from '@storybook/addon-knobs';
 import styled from 'styled-components';
 import { Icon, Flexbox, Typography } from '../..';
 import { SelectionCard } from './SelectionCard';
-import picture from './images/person.png';
 
 const StyledFlexbox = styled(Flexbox)`
   width: 100%;
@@ -71,17 +69,4 @@ export const SelectionCardWithIcon = () => (
 
 SelectionCardWithIcon.story = {
   name: 'With icon',
-};
-
-export const SelectionCardWithImage = () => (
-  <SelectionCard
-    {...getCardProps()}
-    imageUrl={picture}
-    imageAlt="A woman drinking coffee"
-    onChange={action('on change triggered')}
-  />
-);
-
-SelectionCardWithImage.story = {
-  name: 'With image',
 };
