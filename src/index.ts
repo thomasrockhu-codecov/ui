@@ -58,6 +58,7 @@ import PageWrapper from './Molecules/PageWrapper';
 import Rating from './Molecules/Rating';
 import SegmentedControl from './Molecules/SegmentedControl';
 import Select from './Molecules/Select';
+import SelectionCard from './Molecules/SelectionCard';
 import Slider from './Molecules/Slider';
 import Switch from './Molecules/Switch';
 import Tabs from './Molecules/Tabs';
@@ -134,6 +135,7 @@ export {
   Rating,
   SegmentedControl,
   /** @deprecated */ Select,
+  SelectionCard,
   Separator,
   Skeleton,
   Slider,
