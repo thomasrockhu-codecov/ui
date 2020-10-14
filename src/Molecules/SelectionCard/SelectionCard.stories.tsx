@@ -1,9 +1,14 @@
 import React from 'react';
 import { action } from '@storybook/addon-actions';
 import { withKnobs, text, boolean } from '@storybook/addon-knobs';
-import { Icon } from '../..';
+import styled from 'styled-components';
+import { Icon, Flexbox, Typography } from '../..';
 import { SelectionCard } from './SelectionCard';
 import picture from './images/person.png';
+
+const StyledFlexbox = styled(Flexbox)`
+  width: 100%;
+`;
 
 const getCardProps = () => ({
   title: text('Title', 'Title'),
@@ -32,6 +37,32 @@ export const SelectionCardDefault = () => <SelectionCard {...getCardProps()} />;
 
 SelectionCardDefault.story = {
   name: 'Default',
+};
+
+export const SelectionCardWithReactNode = () => (
+  <SelectionCard
+    {...getCardProps()}
+    title={
+      <StyledFlexbox container justifyContent="flex-start">
+        <Flexbox item>
+          <Typography type="primary" weight="bold">
+            Title in a flexbox
+          </Typography>
+        </Flexbox>
+      </StyledFlexbox>
+    }
+    text={
+      <StyledFlexbox container justifyContent="flex-end">
+        <Flexbox item>
+          <Typography type="secondary">Text in a flexbox</Typography>
+        </Flexbox>
+      </StyledFlexbox>
+    }
+  />
+);
+
+SelectionCardWithReactNode.story = {
+  name: 'With ReactNode',
 };
 
 export const SelectionCardWithIcon = () => (
