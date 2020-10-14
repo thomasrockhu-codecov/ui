@@ -21,7 +21,7 @@ const StyledTypography = styled(Typography).withConfig({
 })<{
   inheritColor: boolean;
 }>`
-  ${(p) => p.inheritColor && `color: inherit`};
+  ${(p) => p.inheritColor && `color: inherit;`}
 `;
 
 const StyledInput = styled.input`
@@ -30,34 +30,34 @@ const StyledInput = styled.input`
 `;
 
 const AbsoluteFlexbox = styled(Flexbox)`
-  position: absolute;
-  top: ${(p) => p.theme.spacing.unit(1)}px;
-  width: 100%;
   color: inherit;
+  width: 100%;
+  position: absolute;
+  ${(p) => `top:${p.theme.spacing.unit(1)}px;`}
 `;
 
 const Tag = styled(Typography)`
-  padding: 0px ${(p) => p.theme.spacing.unit(1)}px;
-  background: ${(p) => p.theme.color.cta};
-  color: ${(p) => p.theme.color.textLight};
   box-sizing: border-box;
+  ${(p) => `padding: 0px ${p.theme.spacing.unit(1)}px;`}
+  ${(p) => `background: ${p.theme.color.cta};`}
+  ${(p) => `color: ${p.theme.color.textLight};`}
 `;
 
 const CircleOutline = styled.div`
   border: 1px solid ${(p) => p.theme.color.selectionCardBorder};
   border-radius: 100%;
-  height: ${(p) => p.theme.spacing.unit(5)}px;
-  width: ${(p) => p.theme.spacing.unit(5)}px;
+  ${(p) => `height: ${p.theme.spacing.unit(5)}px;`}
+  ${(p) => `width: ${p.theme.spacing.unit(5)}px;`}
 `;
 
 const outlineStyles = css`
-  outline: 2px solid ${(p) => p.theme.color.cta};
+  ${(p) => `outline: 2px solid ${p.theme.color.cta};`}
   outline-offset: -2px;
   vertical-align: top;
 `;
 
 const overlayStyles = css`
-  background: ${(p) => Color(p.theme.color.cta).alpha(0.1).string()};
+  ${(p) => `background: ${Color(p.theme.color.cta).alpha(0.1).string()};`}
   ${outlineStyles}
 `;
 
@@ -74,7 +74,7 @@ const StyledCard = styled(Card).withConfig({
   box-sizing: border-box;
 
   ${(p) => `cursor: ${p.disabled ? 'not-allowed' : 'pointer'}`};
-  ${(p) => `color:${p.disabled ? p.theme.color.disabledText : p.theme.color.text}`};
+  ${(p) => `color: ${p.disabled ? p.theme.color.disabledText : p.theme.color.text}`};
   ${(p) => `background: ${p.disabled ? p.theme.color.disabledBackground : p.theme.color.card}`};
   ${(p) => p.border && `border: 1px solid ${p.theme.color.inputBorder}`};
   ${(p) => p.error && !p.disabled && `border: 1px solid ${p.theme.color.negative}`};
@@ -126,8 +126,8 @@ export const SelectionCard: SelectionCardComponent = ({
   tag = '',
   text = '',
   imageUrl = '',
-  icon = null,
   imageAlt = '',
+  icon = null,
   border = false,
   disabled = false,
   error = false,
