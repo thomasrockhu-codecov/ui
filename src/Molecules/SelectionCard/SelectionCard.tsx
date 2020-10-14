@@ -96,26 +96,27 @@ const StyledLabel = styled.label`
 `;
 
 const StyledDiv = styled('div').withConfig({
-  shouldForwardProp: (prop) => !['featurePadding', 'tagPadding', 'leftAlign'].includes(prop),
+  shouldForwardProp: (prop) => !['feature', 'tag', 'text'].includes(prop),
 })<{
-  featurePadding: boolean;
-  tagPadding: boolean;
-  leftAlign: boolean;
+  feature: boolean;
+  tag: boolean;
+  text: boolean;
 }>`
-  ${(p) => `text-align: ${p.leftAlign ? 'left' : 'center'}`};
-
-  ${(p) => `padding:
-    ${p.theme.spacing.unit(10)}px
-    ${p.theme.spacing.unit(5)}px
-  `};
+  ${(p) => `text-align: ${p.text ? 'left' : 'center'};`}
+  ${(p) => `padding: ${p.theme.spacing.unit(5)}px;`}
 
   ${(p) =>
-    p.featurePadding &&
-    `padding-top:${p.theme.spacing.unit(5)}px;
-    padding-bottom:${p.theme.spacing.unit(5)}px;
-    `}
+    p.tag &&
+    `padding-top: ${p.theme.spacing.unit(7)}px;
+      padding-bottom: ${p.theme.spacing.unit(5)}px;
+  `}
 
-  ${(p) => p.tagPadding && `padding-top: ${p.theme.spacing.unit(7)}px;`}
+  ${(p) =>
+    p.tag &&
+    !p.feature &&
+    `padding-top:${p.theme.spacing.unit(10)}px;
+      padding-bottom:${p.theme.spacing.unit(10)}px;
+  `}
 `;
 
 export const SelectionCard: SelectionCardComponent = ({
@@ -178,11 +179,7 @@ export const SelectionCard: SelectionCardComponent = ({
           </Box>
         </AbsoluteFlexbox>
 
-        <StyledDiv
-          featurePadding={hasFeature}
-          tagPadding={Boolean(tag && text && hasFeature)}
-          leftAlign={Boolean(text)}
-        >
+        <StyledDiv feature={hasFeature} tag={Boolean(tag)} text={Boolean(text)}>
           {horizontal && (
             <Flexbox container direction="row" gutter={5} alignContent="center">
               {hasIcon && (

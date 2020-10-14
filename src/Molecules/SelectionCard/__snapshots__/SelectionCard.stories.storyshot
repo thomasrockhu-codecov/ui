@@ -135,7 +135,11 @@ exports[`Storyshots Molecules | SelectionCard Default 1`] = `
 
 .c12 {
   text-align: left;
-  padding: 40px 20px;
+  padding: 20px;
+  padding-top: 28px;
+  padding-bottom: 20px;
+  padding-top: 40px;
+  padding-bottom: 40px;
 }
 
 <label
@@ -347,7 +351,11 @@ exports[`Storyshots Molecules | SelectionCard With ReactNode 1`] = `
 
 .c12 {
   text-align: left;
-  padding: 40px 20px;
+  padding: 20px;
+  padding-top: 28px;
+  padding-bottom: 20px;
+  padding-top: 40px;
+  padding-bottom: 40px;
 }
 
 .c15 {
@@ -581,10 +589,9 @@ exports[`Storyshots Molecules | SelectionCard With icon 1`] = `
 
 .c12 {
   text-align: left;
-  padding: 40px 20px;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding: 20px;
   padding-top: 28px;
+  padding-bottom: 20px;
 }
 
 <label
