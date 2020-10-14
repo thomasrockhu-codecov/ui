@@ -21,7 +21,7 @@ const StyledTypography = styled(Typography).withConfig({
 })<{
   inheritColor: boolean;
 }>`
-  ${(p) => p.inheritColor && `color: inherit;`}
+  ${(p) => p.inheritColor && `color: inherit`};
 `;
 
 const StyledInput = styled.input`
@@ -33,36 +33,40 @@ const AbsoluteFlexbox = styled(Flexbox)`
   color: inherit;
   width: 100%;
   position: absolute;
-  ${(p) => `top:${p.theme.spacing.unit(1)}px;`}
+  ${(p) => `top: ${p.theme.spacing.unit(1)}px`};
 `;
 
 const Tag = styled(Typography)`
   box-sizing: border-box;
-  ${(p) => `padding: 0px ${p.theme.spacing.unit(1)}px;`}
-  ${(p) => `background: ${p.theme.color.cta};`}
-  ${(p) => `color: ${p.theme.color.textLight};`}
+  ${(p) => `
+    padding: 0px ${p.theme.spacing.unit(1)}px;
+    background: ${p.theme.color.cta};
+    color: ${p.theme.color.textLight};
+  `}
 `;
 
 const CircleOutline = styled.div`
-  border: 1px solid ${(p) => p.theme.color.selectionCardBorder};
   border-radius: 100%;
-  ${(p) => `height: ${p.theme.spacing.unit(5)}px;`}
-  ${(p) => `width: ${p.theme.spacing.unit(5)}px;`}
+  ${(p) => `
+    border: 1px solid ${p.theme.color.selectionCardBorder};
+    height: ${p.theme.spacing.unit(5)}px;
+    width: ${p.theme.spacing.unit(5)}px;
+  `}
 `;
 
 const outlineStyles = css`
-  ${(p) => `outline: 2px solid ${p.theme.color.cta};`}
+  ${(p) => `outline: 2px solid ${p.theme.color.cta}`};
   outline-offset: -2px;
   vertical-align: top;
 `;
 
 const overlayStyles = css`
-  ${(p) => `background: ${Color(p.theme.color.cta).alpha(0.1).string()};`}
+  ${(p) => `background: ${Color(p.theme.color.cta).alpha(0.1).string()}`};
   ${outlineStyles}
 `;
 
 const StyledCard = styled(Card).withConfig({
-  shouldForwardProp: (prop) => !['disabled', 'error', 'border'].includes(prop),
+  shouldForwardProp: (prop) => !['disabled', 'selected', 'border', 'error'].includes(prop),
 })<{
   disabled: boolean;
   selected: boolean;
@@ -73,9 +77,12 @@ const StyledCard = styled(Card).withConfig({
   position: relative;
   box-sizing: border-box;
 
-  ${(p) => `cursor: ${p.disabled ? 'not-allowed' : 'pointer'}`};
-  ${(p) => `color: ${p.disabled ? p.theme.color.disabledText : p.theme.color.text}`};
-  ${(p) => `background: ${p.disabled ? p.theme.color.disabledBackground : p.theme.color.card}`};
+  ${(p) => `
+    cursor: ${p.disabled ? 'not-allowed' : 'pointer'};
+    color: ${p.disabled ? p.theme.color.disabledText : p.theme.color.text};
+    background: ${p.disabled ? p.theme.color.disabledBackground : p.theme.color.card};
+  `}
+
   ${(p) => p.border && `border: 1px solid ${p.theme.color.inputBorder}`};
   ${(p) => p.error && !p.disabled && `border: 1px solid ${p.theme.color.negative}`};
   ${(p) => !p.disabled && p.selected && overlayStyles};
@@ -102,8 +109,10 @@ const StyledDiv = styled('div').withConfig({
   tag: boolean;
   text: boolean;
 }>`
-  ${(p) => `text-align: ${p.text ? 'left' : 'center'};`}
-  ${(p) => `padding: ${p.theme.spacing.unit(5)}px;`}
+  ${(p) => `
+    text-align: ${p.text ? 'left' : 'center'};
+    padding: ${p.theme.spacing.unit(5)}px;
+  `}
 
   ${(p) =>
     p.tag &&
