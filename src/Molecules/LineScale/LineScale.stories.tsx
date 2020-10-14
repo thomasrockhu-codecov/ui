@@ -1,6 +1,6 @@
 import React from 'react';
 import { text, number, withKnobs } from '@storybook/addon-knobs';
-import docs from './LineScale.mdx';
+import docs from './LineScale.stories.mdx';
 import LineScale from '.';
 
 export default {

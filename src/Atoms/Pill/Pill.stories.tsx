@@ -1,7 +1,7 @@
 import React from 'react';
 
 import { Pill } from './Pill';
-import docs from './Pill.mdx';
+import docs from './Pill.stories.mdx';
 import { Flexbox, Icon, Typography, Button } from '../..';
 
 export default {

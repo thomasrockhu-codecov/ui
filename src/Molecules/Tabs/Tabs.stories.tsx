@@ -3,7 +3,7 @@ import { action } from '@storybook/addon-actions';
 import styled from 'styled-components';
 
 import { Tabs, Typography } from '../..';
-import docs from './Tabs.mdx';
+import docs from './Tabs.stories.mdx';
 
 const SpacingInside = styled.div`
   padding-left: ${(p) => p.theme.spacing.unit(5)}px;

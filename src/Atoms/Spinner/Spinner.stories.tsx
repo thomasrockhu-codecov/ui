@@ -2,7 +2,7 @@ import React from 'react';
 import MD from 'react-markdown';
 import { Display } from '../../common/Display';
 
-import docs from './Spinner.md';
+import docs from './Spinner.stories.md';
 import { Spinner, Typography } from '../..';
 
 export default {

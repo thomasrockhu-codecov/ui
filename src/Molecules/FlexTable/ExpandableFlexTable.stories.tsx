@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { withKnobs } from '@storybook/addon-knobs';
 import FlexTable from './FlexTable';
-import docs from './FlexTable.mdx';
+import docs from './FlexTable.stories.mdx';
 import { Button, Flexbox, Number } from '../..';
 import { ICON_COLUMN_DEFAULT_FLEX_PROPS } from './shared/constants';
 

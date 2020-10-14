@@ -1,7 +1,7 @@
 import React, { useState, useRef } from 'react';
 import { action } from '@storybook/addon-actions';
 import MD from 'react-markdown';
-import docs from './Button.md';
+import docs from './Button.stories.md';
 
 import { Button, Flexbox, Typography } from '../..';
 import { Display } from '../../common/Display';

@@ -3,7 +3,7 @@ import { withKnobs } from '@storybook/addon-knobs';
 import FlexTable from './FlexTable';
 import { Button, Typography, Flag, Icon, Flexbox, Box } from '../..';
 import { ICON_COLUMN_DEFAULT_FLEX_PROPS } from './shared/constants';
-import docs from './FlexTable.mdx';
+import docs from './FlexTable.stories.mdx';
 import { StyledBackground } from './storiesShared';
 
 export default {

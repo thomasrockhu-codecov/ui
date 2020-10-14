@@ -1,6 +1,6 @@
 import React from 'react';
 import { number, withKnobs } from '@storybook/addon-knobs';
-import docs from './Rating.mdx';
+import docs from './Rating.stories.mdx';
 import Rating from '.';
 
 export default {

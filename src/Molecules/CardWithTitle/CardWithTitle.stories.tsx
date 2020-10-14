@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import MD from 'react-markdown';
-import docs from './CardWithTitle.md';
+import docs from './CardWithTitle.stories.md';
 
 import { Box, CardWithTitle, FadedScroll, Flexbox, Icon, Typography } from '../..';
 

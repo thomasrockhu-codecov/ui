@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { action } from '@storybook/addon-actions';
 import SegmentedControl from './SegmentedControl';
-import docs from './SegmentedControl.mdx';
+import docs from './SegmentedControl.stories.mdx';
 import Box from '../../Atoms/Box';
 import Button from '../Button';
 

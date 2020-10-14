@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { action } from '@storybook/addon-actions';
-import docs from './CssGrid.mdx';
+import docs from './CssGrid.stories.mdx';
 
 import { CssGrid as Grid } from '../..';
 

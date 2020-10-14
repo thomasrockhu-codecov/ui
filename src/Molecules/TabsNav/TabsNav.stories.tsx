@@ -3,7 +3,7 @@ import { Route, Redirect } from 'react-router';
 import { MemoryRouter, Link, useRouteMatch } from 'react-router-dom';
 import { action } from '@storybook/addon-actions';
 import { TabsNav, Separator, Flexbox, Box } from '../..';
-import docs from './TabsNav.mdx';
+import docs from './TabsNav.stories.mdx';
 import { LinkProvider, LinkProps } from '../../common/Links';
 
 export default {

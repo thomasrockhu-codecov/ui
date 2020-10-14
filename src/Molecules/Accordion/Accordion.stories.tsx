@@ -1,6 +1,6 @@
 import React from 'react';
 import { Accordion, AccordionItem, Typography, Spinner } from '../..';
-import docs from './Accordion.mdx';
+import docs from './Accordion.stories.mdx';
 
 export default {
   title: 'Molecules / Accordion',

@@ -1,6 +1,6 @@
 import React from 'react';
 import MD from 'react-markdown';
-import docs from './PageWrapper.md';
+import docs from './PageWrapper.stories.md';
 
 import { PageWrapper, Typography, Box } from '../..';
 

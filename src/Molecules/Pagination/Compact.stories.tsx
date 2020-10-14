@@ -1,6 +1,6 @@
 import React from 'react';
 import { action } from '@storybook/addon-actions';
-import docs from './Pagination.mdx';
+import docs from './Pagination.stories.mdx';
 import Pagination from './Pagination';
 
 export default {

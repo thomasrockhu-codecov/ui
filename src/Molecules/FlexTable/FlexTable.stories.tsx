@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import { withKnobs } from '@storybook/addon-knobs';
 import FlexTable from './FlexTable';
 import { Typography, Flag, Number, Flexbox, DateTime } from '../..';
-import docs from './FlexTable.mdx';
+import docs from './FlexTable.stories.mdx';
 import { FlexPropsType } from './shared/ColumnProvider/ColumnProvider.types';
 import { StyledBackground } from './storiesShared';
 

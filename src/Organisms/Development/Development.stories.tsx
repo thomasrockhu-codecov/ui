@@ -1,7 +1,7 @@
 import React from 'react';
 import MD from 'react-markdown';
 
-import docs from './Development.md';
+import docs from './Development.stories.md';
 import { Development, Typography } from '../../index';
 import { Display } from '../../common/Display/index';
 import { TYPOGRAPHY_TYPES } from '../../Atoms/Typography/Typography';

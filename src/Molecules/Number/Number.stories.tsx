@@ -2,7 +2,7 @@ import React from 'react';
 import MD from 'react-markdown';
 import { IntlProvider } from 'react-intl';
 import { Number, Typography } from '../..';
-import docs from './Number.md';
+import docs from './Number.stories.md';
 import { Display } from '../../common/Display';
 import { TYPOGRAPHY_TYPES } from '../../Atoms/Typography/Typography';
 

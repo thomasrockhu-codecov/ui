@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { withKnobs } from '@storybook/addon-knobs';
 import FlexTable from './FlexTable';
 import { Typography, Flag, Flexbox } from '../..';
-import docs from './FlexTable.mdx';
+import docs from './FlexTable.stories.mdx';
 import { SortOrder } from './Header/HeaderContent/HeaderContent.types';
 import { OnSort } from './Header/Header.types';
 import { StyledFlexboxContainer, StyledBackground } from './storiesShared';

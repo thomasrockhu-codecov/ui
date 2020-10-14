@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { FadedScroll, List, ListItem } from '../..';
-import docs from './FadedScroll.mdx';
+import docs from './FadedScroll.stories.mdx';
 
 export default {
   title: 'Atoms / FadedScroll',

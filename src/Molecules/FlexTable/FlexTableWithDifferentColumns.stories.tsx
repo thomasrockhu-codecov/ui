@@ -2,7 +2,7 @@ import React from 'react';
 import { withKnobs } from '@storybook/addon-knobs';
 import FlexTable from './FlexTable';
 import { Typography, Flag } from '../..';
-import docs from './FlexTable.mdx';
+import docs from './FlexTable.stories.mdx';
 import { FlexProps } from '../../Atoms/Flexbox/Flexbox.types';
 import { StyledBackground } from './storiesShared';
 

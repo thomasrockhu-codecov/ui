@@ -17,7 +17,7 @@ import {
   TrackingContext,
 } from '../../..';
 import { Display } from '../../../common/Display';
-import docs from './Select.mdx';
+import docs from './Select.stories.mdx';
 
 /* eslint-disable react-hooks/rules-of-hooks */
 const useSelectMachineFromContext = Input.Select.useSelectMachineFromContext;
