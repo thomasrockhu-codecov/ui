@@ -4,12 +4,13 @@ const createCompiler = require('@storybook/addon-docs/mdx-compiler-plugin');
 module.exports = {
   stories: ['../src/**/*.stories.mdx', '../src/**/*.stories.@(js|jsx|ts|tsx)'],
   addons: [
-    '@storybook/addon-links',
-    '@storybook/addon-docs',
-    '@storybook/addon-storysource',
     '@storybook/addon-a11y',
     '@storybook/addon-actions',
+    '@storybook/addon-docs',
     '@storybook/addon-knobs',
+    '@storybook/addon-links',
+    '@storybook/addon-storysource',
+    '@storybook/addon-viewport',
     'storybook-addon-intl',
   ],
   webpackFinal: async (config) => {
