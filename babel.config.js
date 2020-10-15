@@ -15,7 +15,7 @@ module.exports = api => {
   ];
 
   const plugins = [
-    // '@babel/plugin-proposal-class-properties',
+    '@babel/plugin-proposal-class-properties',
     'babel-plugin-styled-components',
     'ramda',
     [
@@ -32,7 +32,6 @@ module.exports = api => {
   return {
     comments: false,
     presets,
-    plugins,
     env: {
       production: {
         plugins: [...plugins, ['react-remove-properties', { properties: ['data-testid'] }]],
