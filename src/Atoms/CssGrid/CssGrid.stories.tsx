@@ -29,9 +29,10 @@ const ComponentThatLogsRender: React.FC<any> = ({ children }) => {
 };
 export default {
   title: 'Atoms / CssGrid',
-
   parameters: {
-    ...docs.parameters,
+    docs: {
+      page: docs,
+    },
   },
 };
 

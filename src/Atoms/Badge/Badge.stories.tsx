@@ -12,7 +12,9 @@ export default {
   decorators: [withKnobs],
   parameters: {
     component: Badge,
-    ...docs.parameters,
+    docs: {
+      page: docs,
+    },
   },
 };
 

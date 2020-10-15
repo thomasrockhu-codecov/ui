@@ -8,7 +8,9 @@ export default {
   title: 'Atoms / Pill',
 
   parameters: {
-    ...docs.parameters,
+    docs: {
+      page: docs,
+    },
     component: Pill,
   },
 };

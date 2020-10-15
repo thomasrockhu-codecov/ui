@@ -10,7 +10,9 @@ export default {
   decorators: [withKnobs],
   parameters: {
     component: FlexTable,
-    ...docs.parameters,
+    docs: {
+      page: docs,
+    },
   },
 };
 

@@ -6,7 +6,9 @@ import docs from './FadedScroll.mdx';
 export default {
   title: 'Atoms / FadedScroll',
   parameters: {
-    ...docs.parameters,
+    docs: {
+      page: docs,
+    },
   },
 };
 

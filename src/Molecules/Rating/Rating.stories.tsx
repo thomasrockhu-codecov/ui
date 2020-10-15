@@ -6,7 +6,9 @@ import Rating from '.';
 export default {
   title: 'Molecules / Rating',
   parameters: {
-    ...docs.parameters,
+    docs: {
+      page: docs,
+    },
   },
   decorators: [withKnobs],
 };

@@ -9,7 +9,9 @@ import { LinkProvider, LinkProps } from '../../common/Links';
 export default {
   title: 'Molecules / TabsNav',
   parameters: {
-    ...docs.parameters,
+    docs: {
+      page: docs,
+    },
   },
 };
 

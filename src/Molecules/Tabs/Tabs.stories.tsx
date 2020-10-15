@@ -18,7 +18,9 @@ const StyledTabs = styled(Tabs)`
 export default {
   title: 'Molecules / Tabs',
   parameters: {
-    ...docs.parameters,
+    docs: {
+      page: docs,
+    },
   },
 };
 

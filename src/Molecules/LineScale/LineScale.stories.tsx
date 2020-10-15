@@ -6,7 +6,9 @@ import LineScale from '.';
 export default {
   title: 'Molecules / LineScale',
   parameters: {
-    ...docs.parameters,
+    docs: {
+      page: docs,
+    },
   },
   decorators: [withKnobs],
 };

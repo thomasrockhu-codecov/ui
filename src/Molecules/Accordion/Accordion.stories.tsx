@@ -5,7 +5,9 @@ import docs from './Accordion.mdx';
 export default {
   title: 'Molecules / Accordion',
   parameters: {
-    ...docs.parameters,
+    docs: {
+      page: docs,
+    },
     component: Accordion,
   },
 };

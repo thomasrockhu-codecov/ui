@@ -9,7 +9,9 @@ export default {
   title: 'Molecules / SegmentedControl',
   parameters: {
     component: SegmentedControl,
-    ...docs.parameters,
+    docs: {
+      page: docs,
+    },
   },
 };
 

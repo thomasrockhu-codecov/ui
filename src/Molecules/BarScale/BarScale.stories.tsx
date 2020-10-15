@@ -7,7 +7,9 @@ import BarScale from '.';
 export default {
   title: 'Molecules / BarScale',
   parameters: {
-    ...docs.parameters,
+    docs: {
+      page: docs,
+    },
   },
   decorators: [withKnobs],
 };

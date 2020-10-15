@@ -39,7 +39,9 @@ export default {
   title: 'Molecules / Multi Step Progress',
 
   parameters: {
-    ...docs.parameters,
+    docs: {
+      page: docs,
+    },
     component: MultiStepProgress,
   },
 };
