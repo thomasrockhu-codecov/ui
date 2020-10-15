@@ -21,9 +21,11 @@ const height = css<Pick<Props, 'size'>>`
   height: ${(p) => (p.size === 's' ? p.theme.spacing.unit(8) : p.theme.spacing.unit(10))}px;
 `;
 
-const background = css<Pick<Props, 'disabled'>>`
+const background = css<Pick<Props, 'disabled' | 'variant'>>`
   background-color: ${(p) =>
-    p.disabled ? p.theme.color.disabledBackground : p.theme.color.backgroundInput};
+    p.disabled && p.variant !== 'quiet'
+      ? p.theme.color.disabledBackground
+      : p.theme.color.backgroundInput};
 `;
 
 const hoverBorderStyles = css<Pick<Props, 'disabled'>>`
@@ -45,7 +47,7 @@ const focusBorderStyles = css`
   }
 `;
 
-const borderStyles = css<Pick<Props, 'error' | 'success'>>`
+const borderStyles = css<Pick<Props, 'error' | 'success' | 'variant' | 'disabled'>>`
   outline: none;
   border: 1px solid
     ${(p) => {
@@ -56,6 +58,12 @@ const borderStyles = css<Pick<Props, 'error' | 'success'>>`
   position: relative;
   ${hoverBorderStyles}
   ${focusBorderStyles}
+  border-width: ${(p) => (p.variant === 'quiet' ? '0 0 2px 0' : '1px')};
+  &:focus {
+    border-width: 1px;
+  }
+  ${(p) =>
+    p.disabled && p.variant === 'quiet' ? `border-color: ${p.theme.color.disabledBackground};` : ''}
 `;
 
 const Wrapper = styled(Flexbox)`
@@ -103,6 +111,8 @@ const Input = styled(NormalizedElements.Input).attrs(() => ({ type: 'text' }))<P
   ${borderStyles}
   ${height}
   ${placeholderNormalizaion}
+  padding: ${(p) =>
+    p.theme.spacing.unit(p.variant === 'quiet' ? 0 : 2)}px;
   width: 100%;
   text-align: ${(p) => (p.showSteppers ? 'center' : 'left')};
   box-sizing: border-box;
@@ -120,6 +130,25 @@ const Input = styled(NormalizedElements.Input).attrs(() => ({ type: 'text' }))<P
       min-width: 0;
       z-index: 1;
       `}
+  ${(p) =>
+    p.variant === 'quiet'
+      ? `color: ${p.theme.color.cta}; 
+         &:disabled {
+           color: ${p.theme.color.disabledText};
+         }
+         font-size: 28px; 
+         font-weight: bold;
+         &:focus {
+           padding-left: ${p.theme.spacing.unit(p.leftAddon ? 8 : 2)}px;
+           padding-right: ${p.theme.spacing.unit(p.rightAddon ? 8 : 0)}px;
+         }`
+      : ''}
+  ${(p) =>
+    p.variant === 'quiet' && p.rightAddon
+      ? `&:focus + ${AddonBox} {
+          padding-right: ${p.theme.spacing.unit(2)}px;
+        }`
+      : ''}
 `;
 
 const components = {
@@ -171,12 +200,14 @@ const NumberInput: NumberComponent & {
     success,
     value: controlledValueRaw,
     visuallyEmphasiseRequired,
+    variant = 'normal',
   } = props;
   const [internalValue, setInternalValue] = useState(getNumberAsString(defaultValue));
   const intl = useIntl();
-  const showSteppers = noSteppers !== true && isUndefined(leftAddon) && isUndefined(rightAddon);
+  // Quiet variant only works while there are noSteppers
+  const showSteppers =
+    noSteppers !== true && isUndefined(leftAddon) && isUndefined(rightAddon) && variant !== 'quiet';
   const placeholder = showSteppers ? undefined : placeholderRaw;
-
   const handleValueChange = (val: string) => {
     setInternalValue(val);
 
@@ -309,6 +340,7 @@ const NumberInput: NumberComponent & {
               value: removeNonNumberCharacters(value),
               inputMode,
               showSteppers,
+              variant,
             }}
             {...(hasError(error) ? { 'aria-invalid': true } : {})}
           />

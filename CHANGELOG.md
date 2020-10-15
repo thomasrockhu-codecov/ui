@@ -1,3 +1,36 @@
+# [3.34.0](https://github.com/nordnet/ui/compare/v3.33.0...v3.34.0) (2020-10-15)
+
+
+### Features
+
+* **Spinner:** spin faster, increase show delay ([a577cc1](https://github.com/nordnet/ui/commit/a577cc1))
+
+# [3.33.0](https://github.com/nordnet/ui/compare/v3.32.2...v3.33.0) (2020-10-13)
+
+
+### Features
+
+* add exchange fund color ([5071492](https://github.com/nordnet/ui/commit/5071492))
+* add list item background hover color ([a808db2](https://github.com/nordnet/ui/commit/a808db2))
+* add order account label color ([1df3709](https://github.com/nordnet/ui/commit/1df3709))
+* add status fulfilled background color ([3e2d0bb](https://github.com/nordnet/ui/commit/3e2d0bb))
+* add status fulfilled text color ([2bf16c5](https://github.com/nordnet/ui/commit/2bf16c5))
+
+## [3.32.2](https://github.com/nordnet/ui/compare/v3.32.1...v3.32.2) (2020-10-12)
+
+
+### Bug Fixes
+
+* 🐛 change segmented control color when disabled ([a7ee250](https://github.com/nordnet/ui/commit/a7ee250))
+
+## [3.32.1](https://github.com/nordnet/ui/compare/v3.32.0...v3.32.1) (2020-10-09)
+
+
+### Bug Fixes
+
+* 🐛 add focus borders and more story cases ([f17b7dc](https://github.com/nordnet/ui/commit/f17b7dc))
+* 🐛 add quiet variant to input number ([9cab6bd](https://github.com/nordnet/ui/commit/9cab6bd))
+
 # [3.32.0](https://github.com/nordnet/ui/compare/v3.31.1...v3.32.0) (2020-10-08)
 
 
