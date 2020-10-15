@@ -76,3 +76,37 @@ export const SelectionCardWithIcon = () => (
 SelectionCardWithIcon.story = {
   name: 'With icon',
 };
+
+export const withValueControlledBehaviour = () => {
+  const Component = () => {
+    const [value, setValue] = React.useState(false);
+
+    return (
+      <>
+        <SelectionCard
+          title="Controlled selection card"
+          text="This component is controlled"
+          selected={value}
+          onChange={() => setValue(!value)}
+        />
+
+        <button type="button" onClick={() => setValue(true)}>
+          Selected
+        </button>
+
+        <button type="button" onClick={() => setValue(false)}>
+          Not selected
+        </button>
+      </>
+    );
+  };
+  return <Component />;
+};
+
+withValueControlledBehaviour.story = {
+  name: 'With controlled behavior',
+};
+
+export const withDefaultValueUncontrolledBehavior = () => (
+  <SelectionCard title="Uncontrolled selection card" text="This component is uncontrolled" />
+);

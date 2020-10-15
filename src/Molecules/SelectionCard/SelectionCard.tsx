@@ -1,10 +1,9 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Color from 'color';
-import R from 'ramda';
 import styled, { css } from 'styled-components';
 
 import { Card, Flexbox, Typography, Box, Icon } from '../..';
-import { isElement } from '../../common/utils';
+import { isElement, isBoolean } from '../../common/utils';
 
 import { SelectionCardComponent } from './SelectionCard.types';
 
@@ -129,9 +128,12 @@ const StyledDiv = styled('div').withConfig({
   `}
 `;
 
+const SPACE = 32;
+const ENTER = 13;
+
 export const SelectionCard: SelectionCardComponent = ({
   title,
-  onChange,
+  onChange = () => {},
   tag = '',
   text = '',
   imageUrl = '',
@@ -142,10 +144,21 @@ export const SelectionCard: SelectionCardComponent = ({
   error = false,
   horizontal = false,
   outline = false,
-  selected = false,
+  selected: controlledSelected,
+  selectedInitially = false,
 }) => {
-  const hasIcon = Boolean(icon && !imageUrl);
-  const hasFeature = Boolean(imageUrl || icon);
+  const [selectedInternal, setSelectedInternal] = useState(selectedInitially);
+  const isControlled = isBoolean(controlledSelected);
+  const selected = (isControlled ? controlledSelected : selectedInternal) as boolean;
+
+  const changeHandler = (val: boolean) => {
+    if (typeof onChange === 'function') {
+      onChange(val);
+    }
+    if (!isControlled) {
+      setSelectedInternal(val);
+    }
+  };
 
   const titleItem = isElement(title) ? (
     title
@@ -171,8 +184,18 @@ export const SelectionCard: SelectionCardComponent = ({
     </StyledFlexbox>
   );
 
+  const hasIcon = Boolean(icon && !imageUrl);
+  const hasFeature = Boolean(imageUrl || icon);
+
   return (
-    <StyledLabel>
+    <StyledLabel
+      tabIndex={0}
+      onKeyDown={(e) => {
+        if ([SPACE, ENTER].includes(e.keyCode)) {
+          changeHandler(!selected);
+        }
+      }}
+    >
       <StyledCard disabled={disabled} selected={selected} border={border} error={error}>
         {imageUrl && <StyledImg src={imageUrl} alt={imageAlt} />}
 
@@ -181,10 +204,12 @@ export const SelectionCard: SelectionCardComponent = ({
           <Box pt={4} pr={5}>
             {!disabled && !selected && outline && <CircleOutline />}
             {!disabled && selected && <Icon.CheckMarkCircle color={(t) => t.color.cta} />}
+
             <StyledInput
               type="checkbox"
               disabled={disabled}
-              onChange={disabled ? R.always : onChange}
+              checked={selected}
+              onChange={() => changeHandler(!selected)}
             />
           </Box>
         </AbsoluteFlexbox>
