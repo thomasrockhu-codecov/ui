@@ -200,7 +200,7 @@ export type ThemeColors<Version extends ThemeColorsVersion> = {
   /** complementaryBlue1 */
   generationSavingsTimelineColor4: RawColor['complementaryBlue1'];
   /** brandPink */
-  guidanceSelectionCardIcons: RawColor['brandPink'];
+  guidanceSelectionCardIcon: RawColor['brandPink'];
   /** gray6 */
   orderDepthBackground: RawColor['gray6'];
   /** gray5 */
