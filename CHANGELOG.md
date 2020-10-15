@@ -1,3 +1,10 @@
+# [3.36.0](https://github.com/nordnet/ui/compare/v3.35.0...v3.36.0) (2020-10-15)
+
+
+### Features
+
+* **Spinner:** make delay opt-out instead of opt-in ([eca8aa2](https://github.com/nordnet/ui/commit/eca8aa2))
+
 # [3.35.0](https://github.com/nordnet/ui/compare/v3.34.0...v3.35.0) (2020-10-15)
 
 
