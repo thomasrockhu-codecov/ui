@@ -1,3 +1,10 @@
+# [3.34.0](https://github.com/nordnet/ui/compare/v3.33.0...v3.34.0) (2020-10-15)
+
+
+### Features
+
+* **Spinner:** spin faster, increase show delay ([a577cc1](https://github.com/nordnet/ui/commit/a577cc1))
+
 # [3.33.0](https://github.com/nordnet/ui/compare/v3.32.2...v3.33.0) (2020-10-13)
 
 
