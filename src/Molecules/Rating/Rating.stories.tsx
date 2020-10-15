@@ -1,5 +1,5 @@
 import React from 'react';
-import { number, withKnobs } from '@storybook/addon-knobs';
+import { number } from '@storybook/addon-knobs';
 import docs from './Rating.mdx';
 import Rating from '.';
 
@@ -10,7 +10,6 @@ export default {
       page: docs,
     },
   },
-  decorators: [withKnobs],
 };
 
 const getRatingProps = ({ rating = 0 } = {}) => ({

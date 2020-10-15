@@ -1,11 +1,10 @@
 import React from 'react';
-import { select, withKnobs } from '@storybook/addon-knobs';
+import { select } from '@storybook/addon-knobs';
 import { Icon } from '../..';
 import { Display } from '../../common/Display';
 
 export default {
   title: 'Atoms / Icon',
-  decorators: [withKnobs],
 };
 
 export const defaultUse = () => <Icon.ArrowRight />;

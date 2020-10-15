@@ -1,5 +1,5 @@
 import React from 'react';
-import { text, number, withKnobs } from '@storybook/addon-knobs';
+import { text, number } from '@storybook/addon-knobs';
 import docs from './LineScale.mdx';
 import LineScale from '.';
 
@@ -10,7 +10,6 @@ export default {
       page: docs,
     },
   },
-  decorators: [withKnobs],
 };
 
 const getLineScaleProps = ({

@@ -1,6 +1,5 @@
 import React from 'react';
 import styled from 'styled-components';
-import { withKnobs } from '@storybook/addon-knobs';
 import FlexTable from './FlexTable';
 import { Typography, Flag, Number, Flexbox, DateTime } from '../..';
 import docs from './FlexTable.mdx';
@@ -9,7 +8,6 @@ import { StyledBackground } from './storiesShared';
 
 export default {
   title: 'Molecules / FlexTable',
-  decorators: [withKnobs],
   parameters: {
     component: FlexTable,
     docs: {

@@ -1,5 +1,5 @@
 import React from 'react';
-import { number, array, withKnobs } from '@storybook/addon-knobs';
+import { number, array } from '@storybook/addon-knobs';
 import ProgressBar from '.';
 import { Box, Flexbox } from '../..';
 
@@ -8,7 +8,6 @@ export default {
   parameters: {
     component: ProgressBar,
   },
-  decorators: [withKnobs],
 };
 
 const getProps = ({ numberOfSteps = 3, currentStep = 1, stepLabels = ['foo', 'bar', 'baz'] }) => ({

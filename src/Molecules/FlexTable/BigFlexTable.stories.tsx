@@ -3,7 +3,7 @@ import R from 'ramda';
 import styled from 'styled-components';
 import { FixedSizeList as List } from 'react-window';
 import AutoSizer from 'react-virtualized-auto-sizer';
-import { withKnobs, number } from '@storybook/addon-knobs';
+import { number } from '@storybook/addon-knobs';
 import FlexTable from './FlexTable';
 import { Typography, Box } from '../..';
 import docs from './FlexTable.mdx';
@@ -11,7 +11,7 @@ import { StyledBackground } from './storiesShared';
 
 export default {
   title: 'Molecules / FlexTable / Big FlexTables example',
-  decorators: [withKnobs],
+
   parameters: {
     component: FlexTable,
     docs: {

@@ -1,5 +1,4 @@
 import React from 'react';
-import { withKnobs } from '@storybook/addon-knobs';
 import FlexTable from './FlexTable';
 import { Typography, Flag } from '../..';
 import docs from './FlexTable.mdx';
@@ -8,7 +7,6 @@ import { StyledBackground } from './storiesShared';
 
 export default {
   title: 'Molecules / FlexTable / FlexTable with different columns',
-  decorators: [withKnobs],
   parameters: {
     component: FlexTable,
     docs: {
