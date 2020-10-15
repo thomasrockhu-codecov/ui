@@ -24,7 +24,7 @@ const StyledTypography = styled(Typography).withConfig({
 `;
 
 const StyledInput = styled.input`
-  visibility: hidden;
+  opacity: 0;
   pointer-events: none;
 `;
 
@@ -128,9 +128,6 @@ const StyledDiv = styled('div').withConfig({
   `}
 `;
 
-const SPACE = 32;
-const ENTER = 13;
-
 export const SelectionCard: SelectionCardComponent = ({
   title,
   onChange = () => {},
@@ -146,7 +143,6 @@ export const SelectionCard: SelectionCardComponent = ({
   outline = false,
   selected: controlledSelected,
   selectedInitially = false,
-  ariaLabel = '',
 }) => {
   const [selectedInternal, setSelectedInternal] = useState(selectedInitially);
   const isControlled = isBoolean(controlledSelected);
@@ -189,15 +185,7 @@ export const SelectionCard: SelectionCardComponent = ({
   const hasFeature = Boolean(imageUrl || icon);
 
   return (
-    <StyledLabel
-      {...(ariaLabel && { 'aria-label': ariaLabel })}
-      tabIndex={0}
-      onKeyDown={(e) => {
-        if ([SPACE, ENTER].includes(e.keyCode)) {
-          changeHandler(!selected);
-        }
-      }}
-    >
+    <StyledLabel>
       <StyledCard disabled={disabled} selected={selected} border={border} error={error}>
         {imageUrl && <StyledImg src={imageUrl} alt={imageAlt} />}
 

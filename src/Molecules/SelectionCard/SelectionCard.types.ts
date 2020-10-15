@@ -1,8 +1,6 @@
 type SelectionCard = {
   title: string | React.ReactNode;
   /** @default '' */
-  ariaLabel?: string;
-  /** @default '' */
   text?: string | React.ReactNode;
   /** @default undefined */
   onChange?: (value: any) => void;

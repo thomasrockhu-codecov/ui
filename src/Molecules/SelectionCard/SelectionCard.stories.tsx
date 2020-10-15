@@ -21,7 +21,6 @@ const getCardProps = () => ({
   disabled: boolean('Disabled', false),
   outline: boolean('Outline', true),
   horizontal: boolean('Horizontal', false),
-  selected: boolean('Selected', false),
   error: boolean('Error', false),
 });
 
@@ -115,26 +114,4 @@ export const withValueControlledBehavior = () => {
 
 withValueControlledBehavior.story = {
   name: 'With controlled behavior',
-};
-
-export const withDefaultValueUncontrolledBehavior = () => {
-  const Component = () => {
-    const selectedInitially = false;
-    const [value, setValue] = useState(selectedInitially);
-    const onChangeHandler = (val: boolean) => setValue(val);
-
-    return (
-      <>
-        <SelectionCard
-          title="Uncontrolled selection card"
-          text="This component is uncontrolled"
-          onChange={onChangeHandler}
-          selectedInitially={selectedInitially}
-        />
-
-        <span>value: {value.toString()} </span>
-      </>
-    );
-  };
-  return <Component />;
 };
