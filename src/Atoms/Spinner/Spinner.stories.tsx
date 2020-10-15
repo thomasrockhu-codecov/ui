@@ -36,18 +36,10 @@ spinnerBig.story = {
   name: 'Spinner big',
 };
 
-export const spinnerWithDefaultDelay = () => <Spinner size={16} id="mySpinner" delay />;
+export const spinnerWithoutDefaultDelay = () => <Spinner size={16} id="mySpinner" delay={false} />;
 
-spinnerWithDefaultDelay.story = {
-  name: 'Spinner with default delay',
-};
-
-export const spinnerWithDelayIsSetToFalse = () => (
-  <Spinner size={16} id="mySpinner" delay={false} />
-);
-
-spinnerWithDelayIsSetToFalse.story = {
-  name: 'Spinner with delay is set to false',
+spinnerWithoutDefaultDelay.story = {
+  name: 'Spinner without default delay',
 };
 
 export const spinnerWithCustom2SecDelay = () => <Spinner size={16} id="mySpinner" delay={2000} />;

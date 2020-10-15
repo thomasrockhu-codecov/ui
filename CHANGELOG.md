@@ -1,3 +1,10 @@
+# [3.35.0](https://github.com/nordnet/ui/compare/v3.34.0...v3.35.0) (2020-10-15)
+
+
+### Features
+
+* 🎸 add maxWidth prop to Tooltip ([f27aeaf](https://github.com/nordnet/ui/commit/f27aeaf))
+
 # [3.34.0](https://github.com/nordnet/ui/compare/v3.33.0...v3.34.0) (2020-10-15)
 
 
