@@ -2,7 +2,9 @@ type SelectionCard = {
   title: string | React.ReactNode;
   /** @default '' */
   text?: string | React.ReactNode;
+  /** @default undefined */
   onChange?: (value: any) => void;
+  /** @default null */
   icon?: React.ReactNode;
   /** @default '' */
   imageUrl?: string;
@@ -17,7 +19,7 @@ type SelectionCard = {
   disabled?: boolean;
   /** @default false */
   error?: boolean;
-  /** using this prop will enabled controlled behavior */
+  /** @default undefined using this prop will enabled controlled behavior */
   selected?: boolean;
   /** @default false */
   outline?: boolean;

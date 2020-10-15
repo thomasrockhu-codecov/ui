@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { withKnobs, text, boolean } from '@storybook/addon-knobs';
 import { action } from '@storybook/addon-actions';
 import styled from 'styled-components';
@@ -9,10 +9,7 @@ const StyledFlexbox = styled(Flexbox)`
   width: 100%;
 `;
 
-const requiredProps = {
-  title: 'Title',
-  onChange: action('on change triggered'),
-};
+const onChange = action('on change triggered');
 
 const getCardProps = () => ({
   tag: text('Tag', 'Tag'),
@@ -36,7 +33,9 @@ export default {
   decorators: [withKnobs],
 };
 
-export const SelectionCardDefault = () => <SelectionCard {...getCardProps()} {...requiredProps} />;
+export const SelectionCardDefault = () => (
+  <SelectionCard {...getCardProps()} title="Selection Card Default" onChange={onChange} />
+);
 
 SelectionCardDefault.story = {
   name: 'Default',
@@ -45,7 +44,7 @@ SelectionCardDefault.story = {
 export const SelectionCardWithReactNode = () => (
   <SelectionCard
     {...getCardProps()}
-    {...requiredProps}
+    onChange={onChange}
     title={
       <StyledFlexbox container justifyContent="flex-start">
         <Flexbox item>
@@ -69,17 +68,26 @@ SelectionCardWithReactNode.story = {
   name: 'With ReactNode',
 };
 
-export const SelectionCardWithIcon = () => (
-  <SelectionCard {...getCardProps()} {...requiredProps} icon={<Icon.House size={8} />} />
-);
+export const SelectionCardWithIcon = () => {
+  return (
+    <>
+      <SelectionCard
+        {...getCardProps()}
+        title="With Icon"
+        onChange={onChange}
+        icon={<Icon.House size={8} />}
+      />
+    </>
+  );
+};
 
 SelectionCardWithIcon.story = {
   name: 'With icon',
 };
 
-export const withValueControlledBehaviour = () => {
+export const withValueControlledBehavior = () => {
   const Component = () => {
-    const [value, setValue] = React.useState(false);
+    const [value, setValue] = useState(false);
 
     return (
       <>
@@ -97,16 +105,36 @@ export const withValueControlledBehaviour = () => {
         <button type="button" onClick={() => setValue(false)}>
           Not selected
         </button>
+
+        <span>value: {value.toString()}</span>
       </>
     );
   };
   return <Component />;
 };
 
-withValueControlledBehaviour.story = {
+withValueControlledBehavior.story = {
   name: 'With controlled behavior',
 };
 
-export const withDefaultValueUncontrolledBehavior = () => (
-  <SelectionCard title="Uncontrolled selection card" text="This component is uncontrolled" />
-);
+export const withDefaultValueUncontrolledBehavior = () => {
+  const Component = () => {
+    const selectedInitially = false;
+    const [value, setValue] = useState(selectedInitially);
+    const onChangeHandler = (val: boolean) => setValue(val);
+
+    return (
+      <>
+        <SelectionCard
+          title="Uncontrolled selection card"
+          text="This component is uncontrolled"
+          onChange={onChangeHandler}
+          selectedInitially={selectedInitially}
+        />
+
+        <span>value: {value.toString()} </span>
+      </>
+    );
+  };
+  return <Component />;
+};
