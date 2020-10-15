@@ -146,6 +146,7 @@ export const SelectionCard: SelectionCardComponent = ({
   outline = false,
   selected: controlledSelected,
   selectedInitially = false,
+  ariaLabel = '',
 }) => {
   const [selectedInternal, setSelectedInternal] = useState(selectedInitially);
   const isControlled = isBoolean(controlledSelected);
@@ -189,6 +190,7 @@ export const SelectionCard: SelectionCardComponent = ({
 
   return (
     <StyledLabel
+      {...(ariaLabel && { 'aria-label': ariaLabel })}
       tabIndex={0}
       onKeyDown={(e) => {
         if ([SPACE, ENTER].includes(e.keyCode)) {
