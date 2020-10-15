@@ -1,6 +1,7 @@
-import { INITIAL_VIEWPORTS} from "@storybook/addon-viewport";
-import { ThemeDecorator } from "./ThemeDecorator"
+import { INITIAL_VIEWPORTS } from '@storybook/addon-viewport';
+import { ThemeDecorator, DocsWrapper } from './ThemeDecorator';
 import { setIntlConfig, withIntl } from 'storybook-addon-intl';
+import { DocsPage } from '@storybook/addon-docs/blocks';
 
 const customViewports = {
   desktopLg: {
@@ -20,9 +21,13 @@ const customViewports = {
 };
 
 export const parameters = {
-  actions: { argTypesRegex: "^on[A-Z].*" },
-  viewport: { viewports: { ...INITIAL_VIEWPORTS, ...customViewports } }
-}
+  actions: { argTypesRegex: '^on[A-Z].*' },
+  viewport: { viewports: { ...INITIAL_VIEWPORTS, ...customViewports } },
+  docs: {
+    container: DocsWrapper,
+    page: DocsPage,
+  },
+};
 
 setIntlConfig({
   locales: ['sv', 'nb', 'da', 'fi', 'en'],

@@ -1,8 +1,7 @@
 const path = require('path');
-const createCompiler = require('@storybook/addon-docs/mdx-compiler-plugin');
 
 module.exports = {
-  stories: ['../src/**/*.stories.mdx', '../src/**/*.stories.@(js|jsx|ts|tsx)'],
+  stories: ['../src/**/*.stories.@(js|jsx|ts|tsx|mdx)'],
   addons: [
     '@storybook/addon-a11y',
     '@storybook/addon-actions',
@@ -35,6 +34,7 @@ module.exports = {
             presets: [['react-app', { flow: false, typescript: true }]],
           },
         },
+        { loader: 'react-docgen-typescript-loader' },
       ],
     });
     config.module.rules.push({
@@ -43,29 +43,7 @@ module.exports = {
       include: [path.resolve(__dirname, '..', 'node_modules', 'use-ssr')],
     });
 
-    // config.module.rules.push({
-    //   test: /\.mdx$/,
-    //   use: [
-    //     {
-    //       loader: 'babel-loader',
-    //       // may or may not need this line depending on your app's setup
-    //       options: {
-    //         plugins: ['@babel/plugin-transform-react-jsx'],
-    //       },
-    //     },
-    //     {
-    //       loader: '@mdx-js/loader',
-    //       options: {
-    //         compilers: [createCompiler({})],
-    //       },
-    //     },
-    //   ],
-    // });
-
     config.resolve.extensions.push('.ts', '.tsx', '.d.ts', '.md', '.mdx');
     return config;
-  },
-  typescript: {
-    reactDocgen: 'react-docgen-typescript-plugin',
   },
 };
