@@ -219,6 +219,10 @@ export type ThemeColors<Version extends ThemeColorsVersion> = {
   menuAccent4: RawColor['brandPink'];
   /** brandBlue */
   menuAccent5: RawColor['brandBlue'];
+  /** gray5 */
+  selectionCardBorder: RawColor['gray5'];
+  /** gray2 */
+  selectionCardText: RawColor['gray2'];
   /** cta */
   sliderColor: RawColor['cta'];
   /** brandGreen */
