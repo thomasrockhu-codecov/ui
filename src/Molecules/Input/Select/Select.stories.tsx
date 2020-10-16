@@ -18,6 +18,7 @@ import {
 } from '../../..';
 import { Display } from '../../../common/Display';
 import docs from './Select.mdx';
+import { Option } from './Select.types';
 
 /* eslint-disable react-hooks/rules-of-hooks */
 const useSelectMachineFromContext = Input.Select.useSelectMachineFromContext;
@@ -568,16 +569,15 @@ export const multiselectActions = () =>
     );
   });
 
-const accountOptionsAndSelectAll = [
+const accountOptionsAndSelectAll: Option[] = [
   {
     label: 'Select All',
     value: undefined,
     [Input.Select.SYMBOL_ALL]: true,
   },
-]
-  // @ts-ignore
-  .concat(accountOptions)
-  .concat({ label: 'Disabled', value: 'Doesnt matter', disabled: true });
+  ...accountOptions,
+  { label: 'Disabled', value: 'Doesnt matter', disabled: true },
+];
 
 export const multiselectSelectAll = () =>
   React.createElement(() => {
