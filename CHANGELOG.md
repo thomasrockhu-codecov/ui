@@ -1,3 +1,17 @@
+# [3.37.0](https://github.com/nordnet/ui/compare/v3.36.0...v3.37.0) (2020-10-16)
+
+
+### Bug Fixes
+
+* add colors ([3d7c96b](https://github.com/nordnet/ui/commit/3d7c96b))
+* add png declaration ([641dfb7](https://github.com/nordnet/ui/commit/641dfb7))
+* support for screen reader ([622899b](https://github.com/nordnet/ui/commit/622899b))
+
+
+### Features
+
+* add selection card component ([bb98dd5](https://github.com/nordnet/ui/commit/bb98dd5))
+
 # [3.36.0](https://github.com/nordnet/ui/compare/v3.35.0...v3.36.0) (2020-10-15)
 
 
