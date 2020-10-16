@@ -208,6 +208,7 @@ const createColors = (type: ThemeColorsVersion): ThemeColors<typeof type> => {
     generationSavingsTimelineColor2: rawColor.complementaryPink1,
     generationSavingsTimelineColor3: rawColor.brandBlue,
     generationSavingsTimelineColor4: rawColor.complementaryBlue1,
+    guidanceSelectionCardIcon: rawColor.brandPink,
     orderDepthBackground: rawColor.gray6,
     orderDepthDarkBackground: rawColor.gray5,
     orderAccountLabel: rawColor.gray1,

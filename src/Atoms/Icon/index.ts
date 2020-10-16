@@ -49,8 +49,10 @@ import { Globe } from './components/Globe';
 import { Growth } from './components/Growth';
 import { Hamburger } from './components/Hamburger';
 import { HandWithCoin } from './components/HandWithCoin';
+import { HandWithCoinFilled } from './components/HandWithCoinFilled';
 import { Healthcare } from './components/Healthcare';
 import { Heart } from './components/Heart';
+import { HeartFilled } from './components/HeartFilled';
 import { HighRisk } from './components/HighRisk';
 import { House } from './components/House';
 import { Import } from './components/Import';
@@ -89,6 +91,7 @@ import { SolidCircle } from './components/Circle';
 import { SortArrow } from './components/SortArrow';
 import { Star } from './components/Star';
 import { Star24 } from './components/Star24';
+import { StarAboveBars } from './components/StarAboveBars';
 import { StarOutline } from './components/StarOutline';
 import { Tax } from './components/Tax';
 import { Technology } from './components/Technology';
@@ -96,6 +99,7 @@ import { ThinArrow } from './components/ThinArrow';
 import { ThinChevron } from './components/ThinChevron';
 import { ThreeDots } from './components/ThreeDots';
 import { Trash } from './components/Trash';
+import { TrendlineArrowhead } from './components/TrendlineArrowhead';
 import { Utilities } from './components/Utilities';
 import { WarningTriangle } from './components/WarningTriangle';
 
@@ -151,8 +155,10 @@ export default {
   Growth,
   Hamburger,
   HandWithCoin,
+  HandWithCoinFilled,
   Healthcare,
   Heart,
+  HeartFilled,
   HighRisk,
   House,
   Import,
@@ -191,6 +197,7 @@ export default {
   SortArrow,
   Star,
   Star24,
+  StarAboveBars,
   StarOutline,
   Tax,
   Technology,
@@ -198,6 +205,7 @@ export default {
   ThinChevron,
   ThreeDots,
   Trash,
+  TrendlineArrowhead,
   Utilities,
   WarningTriangle,
 };
