@@ -1,3 +1,11 @@
+## [3.37.1](https://github.com/nordnet/ui/compare/v3.37.0...v3.37.1) (2020-10-16)
+
+
+### Bug Fixes
+
+* add color ([f0d30d0](https://github.com/nordnet/ui/commit/f0d30d0))
+* add icons ([41230c8](https://github.com/nordnet/ui/commit/41230c8))
+
 # [3.37.0](https://github.com/nordnet/ui/compare/v3.36.0...v3.37.0) (2020-10-16)
 
 
