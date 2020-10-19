@@ -73,6 +73,7 @@ type ChangeableColor<
   : A11yColor;
 
 export type ThemeColors<Version extends ThemeColorsVersion> = {
+  /** white */
   backgroundInput: RawColor['white'];
   /** gray7 */
   background: RawColor['gray7'];
@@ -128,6 +129,8 @@ export type ThemeColors<Version extends ThemeColorsVersion> = {
   divider: RawColor['gray6'];
   /** gray4 */
   emptyState: RawColor['gray4'];
+  /** gray2 */
+  fundExchange: RawColor['gray2'];
   /** gray0 */
   separator: RawColor['gray0'];
   /** gray0 */
@@ -196,10 +199,16 @@ export type ThemeColors<Version extends ThemeColorsVersion> = {
   generationSavingsTimelineColor3: RawColor['brandBlue'];
   /** complementaryBlue1 */
   generationSavingsTimelineColor4: RawColor['complementaryBlue1'];
+  /** brandPink */
+  guidanceSelectionCardIcon: RawColor['brandPink'];
   /** gray6 */
   orderDepthBackground: RawColor['gray6'];
   /** gray5 */
   orderDepthDarkBackground: RawColor['gray5'];
+  /** gray1 */
+  orderAccountLabel: RawColor['gray1'];
+  /** complementaryTurquoise1 */
+  listItemBackgroundHover: string;
   /** complementaryBlue2 */
   loanRatesGraphColor2: RawColor['complementaryBlue2'];
   /** brandGreen */
@@ -212,6 +221,10 @@ export type ThemeColors<Version extends ThemeColorsVersion> = {
   menuAccent4: RawColor['brandPink'];
   /** brandBlue */
   menuAccent5: RawColor['brandBlue'];
+  /** gray5 */
+  selectionCardBorder: RawColor['gray5'];
+  /** gray2 */
+  selectionCardText: RawColor['gray2'];
   /** cta */
   sliderColor: RawColor['cta'];
   /** brandGreen */
@@ -220,6 +233,10 @@ export type ThemeColors<Version extends ThemeColorsVersion> = {
   sliderDisabled: RawColor['gray6'];
   /** gray6 */
   sliderBackgroundColor: RawColor['gray6'];
+  /** cta */
+  statusFulfilledBackgroundColor: RawColor['cta'];
+  /** white */
+  statusFulfilledTextColor: RawColor['white'];
   /** white */
   sliderThumbBackground: RawColor['white'];
   /** gray6 */
@@ -270,6 +287,8 @@ export type ThemeColors<Version extends ThemeColorsVersion> = {
   progressBarText: RawColor['white'];
   /** positive */
   progressBarDone: RawColor['positive'];
+  /** positive */
+  progressBarFailure: RawColor['negative'];
   /** cta */
   progressBarActive: RawColor['cta'];
   /** gray4 */

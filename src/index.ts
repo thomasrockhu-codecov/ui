@@ -1,5 +1,6 @@
 /** Atoms */
 import { Table, Tbody, Td, Tfoot, Th, Thead, Tr } from './Atoms/Table';
+import Badge from './Atoms/Badge';
 import Box from './Atoms/Box';
 import Card from './Atoms/Card';
 import CssGrid from './Atoms/CssGrid';
@@ -51,11 +52,13 @@ import Modal from './Molecules/Modal';
 import MultiStepProgress from './Molecules/MultiStepProgress';
 import Number from './Molecules/Number';
 import PageHeaderCard from './Molecules/PageHeaderCard';
+import Pagination from './Molecules/Pagination';
 import ProgressBar from './Molecules/ProgressBar';
 import PageWrapper from './Molecules/PageWrapper';
 import Rating from './Molecules/Rating';
 import SegmentedControl from './Molecules/SegmentedControl';
 import Select from './Molecules/Select';
+import SelectionCard from './Molecules/SelectionCard';
 import Slider from './Molecules/Slider';
 import Switch from './Molecules/Switch';
 import Tabs from './Molecules/Tabs';
@@ -76,11 +79,15 @@ import TrackingContext from './common/tracking';
 
 import { LinkContext, LinkProvider, LinkProviderProps, LinkProps, useLink } from './common/Links';
 
+/** Utils */
+import { numberWithLimit } from './common/utils';
+
 /** Runtime code */
 export {
   Accordion,
   AccordionItem,
   Avatar,
+  Badge,
   BarScale,
   Box,
   Button,
@@ -121,12 +128,14 @@ export {
   Modal,
   PageHeaderCard,
   PageWrapper,
+  Pagination,
   Portal,
   Pill,
   ProgressBar,
   Rating,
   SegmentedControl,
   /** @deprecated */ Select,
+  SelectionCard,
   Separator,
   Skeleton,
   Slider,
@@ -160,4 +169,5 @@ export {
   LinkProviderProps,
   LinkProps,
   useLink,
+  numberWithLimit,
 };

@@ -11,7 +11,7 @@ import { Title } from './Title';
 import { Flexbox, Icon, useKeyPress } from '../..';
 
 const PADDING_DESKTOP = 10;
-const PADDING_MOBILE = 5;
+const PADDING_MOBILE = 3;
 const CLOSE_ICON_SIZE = 5;
 
 export const Backdrop = styled(Flexbox)<BackdropProps>`
@@ -116,7 +116,7 @@ export const ModalInner: React.FC<Props> = ({
   hideClose = false,
   closeOnBackdropClick = false,
   fullScreenMobile = true,
-  isStatusModal=false
+  isStatusModal = false,
 }) => {
   const [show, setShow] = useState(false);
   const escapePress = useKeyPress('Escape');
@@ -167,9 +167,6 @@ export const ModalInner: React.FC<Props> = ({
   if (escapePress && isFunction(onClose)) {
     onClose();
   }
-
-  console.log("inner", isStatusModal);
-
 
   return (
     <>

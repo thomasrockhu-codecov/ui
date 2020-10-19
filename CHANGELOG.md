@@ -1,10 +1,198 @@
-## [3.26.8-beta.1](https://github.com/nordnet/ui/compare/v3.26.7...v3.26.8-beta.1@beta) (2020-09-29)
+## [3.37.1](https://github.com/nordnet/ui/compare/v3.37.0...v3.37.1) (2020-10-16)
 
 
 ### Bug Fixes
 
-* adjust modal widths ([91ff4f9](https://github.com/nordnet/ui/commit/91ff4f9))
-* status modal option ([2acc24f](https://github.com/nordnet/ui/commit/2acc24f))
+* add color ([f0d30d0](https://github.com/nordnet/ui/commit/f0d30d0))
+* add icons ([41230c8](https://github.com/nordnet/ui/commit/41230c8))
+
+# [3.37.0](https://github.com/nordnet/ui/compare/v3.36.0...v3.37.0) (2020-10-16)
+
+
+### Bug Fixes
+
+* add colors ([3d7c96b](https://github.com/nordnet/ui/commit/3d7c96b))
+* add png declaration ([641dfb7](https://github.com/nordnet/ui/commit/641dfb7))
+* support for screen reader ([622899b](https://github.com/nordnet/ui/commit/622899b))
+
+
+### Features
+
+* add selection card component ([bb98dd5](https://github.com/nordnet/ui/commit/bb98dd5))
+
+# [3.36.0](https://github.com/nordnet/ui/compare/v3.35.0...v3.36.0) (2020-10-15)
+
+
+### Features
+
+* **Spinner:** make delay opt-out instead of opt-in ([eca8aa2](https://github.com/nordnet/ui/commit/eca8aa2))
+
+# [3.35.0](https://github.com/nordnet/ui/compare/v3.34.0...v3.35.0) (2020-10-15)
+
+
+### Features
+
+* 🎸 add maxWidth prop to Tooltip ([f27aeaf](https://github.com/nordnet/ui/commit/f27aeaf))
+
+# [3.34.0](https://github.com/nordnet/ui/compare/v3.33.0...v3.34.0) (2020-10-15)
+
+
+### Features
+
+* **Spinner:** spin faster, increase show delay ([a577cc1](https://github.com/nordnet/ui/commit/a577cc1))
+
+# [3.33.0](https://github.com/nordnet/ui/compare/v3.32.2...v3.33.0) (2020-10-13)
+
+
+### Features
+
+* add exchange fund color ([5071492](https://github.com/nordnet/ui/commit/5071492))
+* add list item background hover color ([a808db2](https://github.com/nordnet/ui/commit/a808db2))
+* add order account label color ([1df3709](https://github.com/nordnet/ui/commit/1df3709))
+* add status fulfilled background color ([3e2d0bb](https://github.com/nordnet/ui/commit/3e2d0bb))
+* add status fulfilled text color ([2bf16c5](https://github.com/nordnet/ui/commit/2bf16c5))
+
+## [3.32.2](https://github.com/nordnet/ui/compare/v3.32.1...v3.32.2) (2020-10-12)
+
+
+### Bug Fixes
+
+* 🐛 change segmented control color when disabled ([a7ee250](https://github.com/nordnet/ui/commit/a7ee250))
+
+## [3.32.1](https://github.com/nordnet/ui/compare/v3.32.0...v3.32.1) (2020-10-09)
+
+
+### Bug Fixes
+
+* 🐛 add focus borders and more story cases ([f17b7dc](https://github.com/nordnet/ui/commit/f17b7dc))
+* 🐛 add quiet variant to input number ([9cab6bd](https://github.com/nordnet/ui/commit/9cab6bd))
+
+# [3.32.0](https://github.com/nordnet/ui/compare/v3.31.1...v3.32.0) (2020-10-08)
+
+
+### Bug Fixes
+
+* 🐛 controlled state for current page ([c8d46e1](https://github.com/nordnet/ui/commit/c8d46e1))
+* 🐛 correct width and styling for page items list ([328c91e](https://github.com/nordnet/ui/commit/328c91e))
+* 🐛 props from leaking into the DOM ([2ac957c](https://github.com/nordnet/ui/commit/2ac957c))
+* 🐛 props leak into DOM ([70d7325](https://github.com/nordnet/ui/commit/70d7325))
+* 🐛 update storyshots ([ea8bd26](https://github.com/nordnet/ui/commit/ea8bd26))
+
+
+### Features
+
+* 🎸 new style for mobile pagination compact ([e4ec83b](https://github.com/nordnet/ui/commit/e4ec83b))
+* 🎸 replace media with a variant prop to pagination ([1ced442](https://github.com/nordnet/ui/commit/1ced442))
+
+## [3.31.1](https://github.com/nordnet/ui/compare/v3.31.0...v3.31.1) (2020-10-07)
+
+
+### Bug Fixes
+
+* add disabled prop to segmented control ([a2634e0](https://github.com/nordnet/ui/commit/a2634e0))
+
+# [3.31.0](https://github.com/nordnet/ui/compare/v3.30.1...v3.31.0) (2020-10-05)
+
+
+### Features
+
+* 🎸 added proper tooltips to all relevant input components ([788f539](https://github.com/nordnet/ui/commit/788f539))
+
+## [3.30.1](https://github.com/nordnet/ui/compare/v3.30.0...v3.30.1) (2020-10-05)
+
+
+### Bug Fixes
+
+* no recalculation on expand for controlled table examples ([fb36d50](https://github.com/nordnet/ui/commit/fb36d50))
+
+# [3.30.0](https://github.com/nordnet/ui/compare/v3.29.0...v3.30.0) (2020-10-05)
+
+
+### Bug Fixes
+
+* 🐛 add missing storyshot ([04c21b3](https://github.com/nordnet/ui/commit/04c21b3))
+* 🐛 change medium badge size to 20 x 20 px ([2ad0674](https://github.com/nordnet/ui/commit/2ad0674))
+* 🐛 padding fix for large numbers ([cb27cac](https://github.com/nordnet/ui/commit/cb27cac))
+* 🐛 remove curly braces in string ([39eb319](https://github.com/nordnet/ui/commit/39eb319))
+* 🐛 remove padding for small sized badges ([20a0e84](https://github.com/nordnet/ui/commit/20a0e84))
+* 🐛 remove unnessary helper number with limit ([b7d9285](https://github.com/nordnet/ui/commit/b7d9285))
+* 🐛 render no typography when badge is not passed children ([c6f2d04](https://github.com/nordnet/ui/commit/c6f2d04))
+
+
+### Features
+
+* 🎸 add circle functionality ([1f977f7](https://github.com/nordnet/ui/commit/1f977f7))
+* 🎸 add color prop to badge component ([b02e6da](https://github.com/nordnet/ui/commit/b02e6da))
+* 🎸 add export of number with limit in index ([4d96a51](https://github.com/nordnet/ui/commit/4d96a51))
+* 🎸 add html props to badge and handle color prop ([0bf5d48](https://github.com/nordnet/ui/commit/0bf5d48))
+* 🎸 add number with limit function and component ([e8f8ac0](https://github.com/nordnet/ui/commit/e8f8ac0))
+* 🎸 add scaffolding for badge component ([278ce6c](https://github.com/nordnet/ui/commit/278ce6c))
+* 🎸 convert badge component to span ([7b6f9ef](https://github.com/nordnet/ui/commit/7b6f9ef))
+
+# [3.29.0](https://github.com/nordnet/ui/compare/v3.28.1...v3.29.0) (2020-10-05)
+
+
+### Bug Fixes
+
+* snapshots ([27d3469](https://github.com/nordnet/ui/commit/27d3469))
+
+
+### Features
+
+* add hidden prop to expand items similar to hidden columns ([609805e](https://github.com/nordnet/ui/commit/609805e))
+
+## [3.28.1](https://github.com/nordnet/ui/compare/v3.28.0...v3.28.1) (2020-10-02)
+
+
+### Bug Fixes
+
+* adjust modal widths ([5e8679c](https://github.com/nordnet/ui/commit/5e8679c))
+* fix padding om mobile ([5cef275](https://github.com/nordnet/ui/commit/5cef275))
+* status modal option ([1a5512f](https://github.com/nordnet/ui/commit/1a5512f))
+
+# [3.28.0](https://github.com/nordnet/ui/compare/v3.27.2...v3.28.0) (2020-09-30)
+
+
+### Features
+
+* 🎸 add styled tabs content typing and story example ([29e439b](https://github.com/nordnet/ui/commit/29e439b))
+* wip export and style tabs content ([8f04d04](https://github.com/nordnet/ui/commit/8f04d04))
+
+## [3.27.2](https://github.com/nordnet/ui/compare/v3.27.1...v3.27.2) (2020-09-29)
+
+
+### Bug Fixes
+
+* 🐛 reset pagination if totalItems or itemsPerPage changes ([980085a](https://github.com/nordnet/ui/commit/980085a))
+
+## [3.27.1](https://github.com/nordnet/ui/compare/v3.27.0...v3.27.1) (2020-09-29)
+
+
+### Bug Fixes
+
+* active step can be failed ([01760c6](https://github.com/nordnet/ui/commit/01760c6))
+
+# [3.27.0](https://github.com/nordnet/ui/compare/v3.26.7...v3.27.0) (2020-09-29)
+
+
+### Bug Fixes
+
+* 🐛 click on page item on mobile and code cleanup ([3024c70](https://github.com/nordnet/ui/commit/3024c70))
+* 🐛 incorrect condition in if-statement ([efa9a12](https://github.com/nordnet/ui/commit/efa9a12))
+* 🐛 prevent prop leak to DOM in pagination component ([d7dbfae](https://github.com/nordnet/ui/commit/d7dbfae))
+* 🐛 total pagination width goes outside bounderies xs device ([f536bf2](https://github.com/nordnet/ui/commit/f536bf2))
+
+
+### Features
+
+* 🎸 add mobile default and compact pagination components ([ab4c7b5](https://github.com/nordnet/ui/commit/ab4c7b5))
+* 🎸 add navigation role and visually hidden labels ([ac78d20](https://github.com/nordnet/ui/commit/ac78d20))
+* 🎸 add pagination component ([ee0a298](https://github.com/nordnet/ui/commit/ee0a298))
+* 🎸 add stories to pagination ([18d0a23](https://github.com/nordnet/ui/commit/18d0a23))
+* 🎸 dynamic a11y labels ([28ee5ba](https://github.com/nordnet/ui/commit/28ee5ba))
+* 🎸 improve a11y for pagination ([14e4f64](https://github.com/nordnet/ui/commit/14e4f64))
+* 🎸 pagination support uncontrolled behaviour ([cd1ba98](https://github.com/nordnet/ui/commit/cd1ba98))
+* 🎸 wip improved ally ([4a9763a](https://github.com/nordnet/ui/commit/4a9763a))
 
 ## [3.26.7](https://github.com/nordnet/ui/compare/v3.26.6...v3.26.7) (2020-09-25)
 
