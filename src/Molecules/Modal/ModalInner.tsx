@@ -168,8 +168,6 @@ export const ModalInner: React.FC<Props> = ({
     onClose();
   }
 
-  console.log('inner', isStatusModal);
-
   return (
     <>
       <FocusLock autoFocus={autoFocus}>
