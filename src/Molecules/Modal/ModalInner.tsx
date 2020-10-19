@@ -116,7 +116,7 @@ export const ModalInner: React.FC<Props> = ({
   hideClose = false,
   closeOnBackdropClick = false,
   fullScreenMobile = true,
-  isStatusModal=false
+  isStatusModal = false,
 }) => {
   const [show, setShow] = useState(false);
   const escapePress = useKeyPress('Escape');
@@ -167,6 +167,8 @@ export const ModalInner: React.FC<Props> = ({
   if (escapePress && isFunction(onClose)) {
     onClose();
   }
+
+  console.log('inner', isStatusModal);
 
   return (
     <>
