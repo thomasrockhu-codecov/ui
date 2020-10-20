@@ -8,7 +8,7 @@ import { TextWrapperLabel } from './TextWrapperLabel';
 import { TextWrapperValue } from './TextWrapperValue';
 import { FontSize } from '../../../shared/shared.types';
 import { useFlexTable } from '../../../shared/FlexTableProvider';
-import { RenderForSizes } from '../../../shared';
+import { RenderForSizes3 as RenderForSizes } from '../../../shared';
 
 const StyledOverflowItem = styled(Flexbox)<{ textAlign?: string }>`
   overflow: hidden;
@@ -79,15 +79,15 @@ export const ExpandItem: ExpandItemComponent = ({ item }) => {
       md={{ ...md, mobileItem: false }}
       lg={lg}
       xl={xl}
-      Container={({ fontSize, mobileItem, className: mediaClassName }) => {
+    >
+      {({ fontSize, mobileItem, className: mediaClassName }) => {
         if (mobileItem) {
           return <MobileItem className={mediaClassName} item={item} fontSize={fontSize} />;
         }
 
         return <DesktopItem className={mediaClassName} item={item} fontSize={fontSize} />;
       }}
-      Component={({ children }) => children}
-    />
+    </RenderForSizes>
   );
 };
 
