@@ -7,7 +7,7 @@ import { getDensityPaddings } from '../shared/textUtils';
 import { Density } from '../shared/shared.types';
 import { useFlexTable } from '../shared/FlexTableProvider';
 import { ExpandItems, ExpandItem } from './components/ExpandItems';
-import { RenderForSizes } from '../shared/RenderForSizes2';
+import { RenderForSizes } from '../shared/RenderForSizes3';
 import { ExpandElement, ExpandArea } from './components';
 
 /* the cells are padded by row gutter 1 unit (4px) */
@@ -70,13 +70,6 @@ const StyledExpandedRow = styled('div').withConfig({
   border-bottom: 1px solid ${(p) => p.separatorColor(p.theme)};
 `;
 
-const ExpandComponent = ({ expandChildren, expandItems }) => {
-  if (expandItems && expandItems.length === 0 && !expandChildren) {
-    return null;
-  }
-  return <ExpandArea expandItems={expandItems} expandChildren={expandChildren} />;
-};
-
 const ExpandRow: ExpandRowComponent = ({
   expandItems: expandItemsXs,
   expandChildren: expandChildrenXs,
@@ -96,67 +89,18 @@ const ExpandRow: ExpandRowComponent = ({
     md={md}
     lg={lg}
     xl={xl}
-    containerProps={{ role: 'row', separatorColor, htmlProps }}
-    Container={StyledExpandedRow}
-    // @ts-ignore
-    Component={ExpandComponent}
-    componentProps={{}}
-  />
-);
-
-const Container = ({
-  className,
-  density,
-  columnDistance,
-  expandable,
-  children: component,
-  hoverHighlight,
-  hideSeparator,
-  expanded,
-  separatorColor,
-  htmlProps,
-}) => (
-  <StyledRow
-    className={className}
-    container
-    alignItems="center"
-    hoverHighlight={hoverHighlight}
-    hideSeparator={hideSeparator}
-    role="row"
-    // TODO: Remove type assertion when typescript is able to assert undefined from constants, in this case controlledExpand
-    expanded={!!expanded}
-    separatorColor={separatorColor}
-    density={density}
-    expandable={expandable}
-    gutter={columnDistance}
-    {...htmlProps}
   >
-    {component}
-  </StyledRow>
-);
-
-const Component = ({
-  expandable,
-  children,
-  isContent,
-  expanded,
-  onExpandToggle,
-  expandChildrenXs,
-  setExpand,
-  expandItemsXs,
-}) => (
-  <>
-    {children}
-    {expandable && (
-      <ExpandElement
-        isContent={isContent}
-        expanded={expanded}
-        onExpandToggle={onExpandToggle}
-        disabled={!expandChildrenXs && !expandItemsXs}
-        setExpand={setExpand}
-      />
+    {({ className, expandChildren, expandItems }) => (
+      <StyledExpandedRow
+        role="row"
+        separatorColor={separatorColor}
+        className={className}
+        {...htmlProps}
+      >
+        <ExpandArea expandItems={expandItems} expandChildren={expandChildren} />
+      </StyledExpandedRow>
     )}
-  </>
+  </RenderForSizes>
 );
 
 const Row: RowComponent = ({
@@ -190,20 +134,20 @@ const Row: RowComponent = ({
   const controlledExpand = expanded !== undefined;
   const [expand, setExpand] = useState(controlledExpand ? expanded : initiallyExpanded);
 
-  const onExpandToggleClick = React.useCallback(() => {
+  const onExpandToggleClick = () => {
     if (onExpandToggle) {
       onExpandToggle(!expand);
     }
     if (!controlledExpand) {
       setExpand(!expand);
     }
-  }, [expand, controlledExpand, onExpandToggle]);
+  };
 
   useEffect(() => {
     if (controlledExpand) {
       setExpand(expanded);
     }
-  }, [expanded, controlledExpand]);
+  }, [expanded]);
 
   return (
     <>
@@ -213,31 +157,37 @@ const Row: RowComponent = ({
         md={mdTable}
         lg={lgTable}
         xl={xlTable}
-        // @ts-ignore
-        Container={Container}
-        containerProps={{
-          className,
-          container: true,
-          alignItems: 'center',
-          hoverHighlight,
-          hideSeparator,
-          role: 'row',
-          expanded: !!expand,
-          separatorColor,
-          ...htmlProps,
-        }}
-        // @ts-ignore
-        Component={Component}
-        componentProps={{
-          isContent,
-          children,
-          expanded: expand,
-          onExpandToggle: onExpandToggleClick,
-          expandChildrenXs,
-          expandItemsXs,
-          setExpand,
-        }}
-      />
+      >
+        {({ className: mediaClassName, density, expandable, columnDistance }) => (
+          <StyledRow
+            className={mediaClassName ? `${className} ${mediaClassName}` : className}
+            container
+            alignItems="center"
+            hoverHighlight={hoverHighlight}
+            hideSeparator={hideSeparator}
+            role="row"
+            expanded={!!expand}
+            separatorColor={separatorColor}
+            density={density}
+            expandable={expandable}
+            gutter={columnDistance}
+            {...htmlProps}
+          >
+            <>
+              {children}
+              {expandable && (
+                <ExpandElement
+                  isContent={isContent}
+                  expanded={expand}
+                  onExpandToggle={onExpandToggleClick}
+                  disabled={!expandChildrenXs && !expandItemsXs}
+                  setExpand={setExpand}
+                />
+              )}
+            </>
+          </StyledRow>
+        )}
+      </RenderForSizes>
 
       {expand && (
         <ExpandRow
