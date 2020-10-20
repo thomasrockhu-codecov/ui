@@ -5,7 +5,7 @@ import { DatePicker } from './DatePicker';
 import { Flexbox } from '../..';
 
 export default {
-  title: 'Molecules | DatePicker',
+  title: 'Molecules / DatePicker',
   parameters: {
     component: DatePicker,
   },
