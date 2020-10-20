@@ -42,15 +42,7 @@ const getMediaQuery: GetMediaQuery = (theme, currentSize, nextSize) => {
   return theme.media.greaterThan(theme.breakpoints[currentSize]);
 };
 
-export const RenderForSizes: RenderForSizesComponent = ({
-  xs,
-  sm,
-  md,
-  lg,
-  xl,
-  Component,
-  Container,
-}) => {
+export const RenderForSizes: RenderForSizesComponent = ({ xs, sm, md, lg, xl, children }) => {
   const propsPerMedia = getScreenMedia({ xs, sm, md, lg, xl });
 
   return (
@@ -58,18 +50,17 @@ export const RenderForSizes: RenderForSizesComponent = ({
       {propsPerMedia.map((props, index, arr) => {
         const { size } = props;
         const nextSize = arr[index + 1] ? arr[index + 1].size : null;
-        const component = Component(props);
 
         if (size === 'xs' && !nextSize) {
-          const container = Container({ children: component, ...props });
-          return <React.Fragment key={size}>{container}</React.Fragment>;
+          return <React.Fragment key={size}>{children(props)}</React.Fragment>;
         }
-
-        const as = (({ className }: { className?: string }) =>
-          Container({ children: component, className, ...props })) as React.FC;
-
         return (
-          <IsomorphicMedia key={size} query={(t) => getMediaQuery(t, size, nextSize)} as={as} />
+          <IsomorphicMedia
+            key={size}
+            query={(t) => getMediaQuery(t, size, nextSize)}
+            as={children}
+            {...props}
+          />
         );
       })}
     </>

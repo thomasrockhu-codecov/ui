@@ -8,7 +8,7 @@ import { SortIcon } from './SortIcon';
 import { SortButton } from './SortButton';
 import { useFlexTable } from '../../shared/FlexTableProvider';
 import { Flexbox } from '../../../..';
-import { CellInlineContainer, RenderForSizes3 as RenderForSizes } from '../../shared';
+import { CellInlineContainer, RenderForSizes } from '../../shared';
 
 const StyledFlexboxContainer = styled(Flexbox)`
   justify-content: inherit;

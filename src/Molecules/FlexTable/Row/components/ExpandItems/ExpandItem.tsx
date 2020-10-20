@@ -8,7 +8,7 @@ import { TextWrapperLabel } from './TextWrapperLabel';
 import { TextWrapperValue } from './TextWrapperValue';
 import { FontSize } from '../../../shared/shared.types';
 import { useFlexTable } from '../../../shared/FlexTableProvider';
-import { RenderForSizes3 as RenderForSizes } from '../../../shared';
+import { RenderForSizes } from '../../../shared';
 
 const StyledOverflowItem = styled(Flexbox)<{ textAlign?: string }>`
   overflow: hidden;

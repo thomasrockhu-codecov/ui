@@ -6,7 +6,7 @@ import { useFlexCellProps } from '../shared/ColumnProvider';
 import { FooterComponent } from './Footer.types';
 import { TextWrapper } from './TextWrapper';
 import { useFlexTable } from '../shared/FlexTableProvider';
-import { RenderForSizes3 as RenderForSizes } from '../shared';
+import { RenderForSizes } from '../shared';
 
 const StyledFlexbox = styled(Flexbox)`
   overflow: hidden;

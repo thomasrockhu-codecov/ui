@@ -7,7 +7,7 @@ import { getDensityPaddings } from '../shared/textUtils';
 import { Density } from '../shared/shared.types';
 import { useFlexTable } from '../shared/FlexTableProvider';
 import { ExpandItems, ExpandItem } from './components/ExpandItems';
-import { RenderForSizes } from '../shared/RenderForSizes3';
+import { RenderForSizes } from '../shared';
 import { ExpandElement, ExpandArea } from './components';
 
 /* the cells are padded by row gutter 1 unit (4px) */

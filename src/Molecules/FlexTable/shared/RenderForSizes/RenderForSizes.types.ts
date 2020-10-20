@@ -20,7 +20,6 @@ export type GetScreenMedia = (mediaProps: MediaProps) => Array<MediaPropsAndSize
 
 export type RenderForSizesComponent = React.FC<
   MediaProps & {
-    Component: (props: MediaPropsAndSize) => React.ReactNode;
-    Container: (props: MediaPropsAndSize) => React.ReactNode;
+    children: React.FC<MediaPropsAndSize>;
   }
 >;
