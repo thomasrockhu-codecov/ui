@@ -9,6 +9,7 @@ export type Props = {
   enableDate?: (date: Date) => boolean;
   id: string;
   selectedDate?: Date;
+  inputSize?: 's';
   width?: number;
   ref?: React.Ref<HTMLDivElement>;
   as?: keyof JSX.IntrinsicElements | React.ComponentType<any>;
