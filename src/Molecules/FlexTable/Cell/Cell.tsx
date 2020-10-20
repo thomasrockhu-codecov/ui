@@ -6,7 +6,7 @@ import { useFlexCellProps } from '../shared/ColumnProvider';
 import { CellComponent, InnerCellComponent } from './Cell.types';
 import { TextWrapper } from './TextWrapper';
 import { useFlexTable } from '../shared/FlexTableProvider';
-import { RenderForSizes } from '../shared';
+import { RenderForSizes3 as RenderForSizes } from '../shared';
 
 const StyledFlexbox = styled(Flexbox)`
   overflow: hidden;
@@ -42,18 +42,18 @@ const Cell: CellComponent = (props) => {
       md={mdTable}
       lg={lgTable}
       xl={xlTable}
-      Container={({ fontSize, children: component, className: mediaClassName }) => (
+    >
+      {({ fontSize, className: mediaClassName }) => (
         <InnerCell
           className={mediaClassName ? `${className} ${mediaClassName}` : className}
           columnId={columnId}
           flexProps={flexProps}
           fontSize={fontSize}
         >
-          {component}
+          {children}
         </InnerCell>
       )}
-      Component={() => children}
-    />
+    </RenderForSizes>
   );
 };
 
