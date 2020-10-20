@@ -1,3 +1,10 @@
+## [3.39.2](https://github.com/nordnet/ui/compare/v3.39.1...v3.39.2) (2020-10-20)
+
+
+### Bug Fixes
+
+* use transient prop for width on form field ([8233b3f](https://github.com/nordnet/ui/commit/8233b3f))
+
 ## [3.39.1](https://github.com/nordnet/ui/compare/v3.39.0...v3.39.1) (2020-10-20)
 
 
