@@ -48,6 +48,7 @@ export const DatePicker = (React.forwardRef<HTMLDivElement, Props>((props, ref) 
     open: openProp = false,
     selectedDate: selectedDateProp,
     width = 78,
+    inputSize,
   } = props;
 
   assert(Boolean(props.id), `DatePicker: "id" is required.`);
@@ -187,6 +188,7 @@ export const DatePicker = (React.forwardRef<HTMLDivElement, Props>((props, ref) 
   return (
     <div ref={(ref || selfRef) as React.Ref<HTMLDivElement>}>
       <StyledInputText
+        size={inputSize}
         label={label}
         disabled={disabled}
         id={id}
