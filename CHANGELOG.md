@@ -1,3 +1,10 @@
+# [3.40.0](https://github.com/nordnet/ui/compare/v3.39.2...v3.40.0) (2020-10-20)
+
+
+### Features
+
+* forward inputSize prop to input ([d5cbc9a](https://github.com/nordnet/ui/commit/d5cbc9a))
+
 ## [3.39.2](https://github.com/nordnet/ui/compare/v3.39.1...v3.39.2) (2020-10-20)
 
 
