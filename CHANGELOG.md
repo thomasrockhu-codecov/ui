@@ -1,3 +1,15 @@
+# [3.39.0](https://github.com/nordnet/ui/compare/v3.38.0...v3.39.0) (2020-10-20)
+
+
+### Bug Fixes
+
+* storybook folder for datepicker ([e010af5](https://github.com/nordnet/ui/commit/e010af5))
+
+
+### Features
+
+* add datepicker component ([5903b30](https://github.com/nordnet/ui/commit/5903b30))
+
 # [3.38.0](https://github.com/nordnet/ui/compare/v3.37.1...v3.38.0) (2020-10-19)
 
 
