@@ -1,3 +1,20 @@
+## [4.0.2](https://github.com/nordnet/ui/compare/v4.0.1...v4.0.2) (2020-10-21)
+
+
+### Bug Fixes
+
+* 🐛 isomorphic media render class components ([5970058](https://github.com/nordnet/ui/commit/5970058))
+
+
+### Performance Improvements
+
+* ⚡️ update render for sizes for cell ([a3ed7a2](https://github.com/nordnet/ui/commit/a3ed7a2))
+* ⚡️ update render for sizes for expand item ([77286a1](https://github.com/nordnet/ui/commit/77286a1))
+* ⚡️ update render for sizes for footer ([201be66](https://github.com/nordnet/ui/commit/201be66))
+* ⚡️ update render for sizes for header content ([1c236c7](https://github.com/nordnet/ui/commit/1c236c7))
+* ⚡️ update render for sizes for row ([a51f0b4](https://github.com/nordnet/ui/commit/a51f0b4))
+* ⚡️ wip render for sizes prevent remounts ([9f6f2f2](https://github.com/nordnet/ui/commit/9f6f2f2))
+
 ## [4.0.1](https://github.com/nordnet/ui/compare/v4.0.0...v4.0.1) (2020-10-21)
 
 
