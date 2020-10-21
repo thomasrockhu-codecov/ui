@@ -1,3 +1,22 @@
+# [4.0.0](https://github.com/nordnet/ui/compare/v3.40.0...v4.0.0) (2020-10-21)
+
+
+### Bug Fixes
+
+* adjust modal widths ([91ff4f9](https://github.com/nordnet/ui/commit/91ff4f9))
+* remove console log ([38adc16](https://github.com/nordnet/ui/commit/38adc16))
+* status modal option ([2acc24f](https://github.com/nordnet/ui/commit/2acc24f))
+
+
+### Performance Improvements
+
+* ⚡️ remove deprecated column layout context in flextable ([7e894a7](https://github.com/nordnet/ui/commit/7e894a7))
+
+
+### BREAKING CHANGES
+
+* 🧨 flextable no longer supports styling columns only via headers
+
 # [3.40.0](https://github.com/nordnet/ui/compare/v3.39.2...v3.40.0) (2020-10-20)
 
 
