@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Storyshots Molecules | Fieldset Default 1`] = `
+exports[`Storyshots Molecules / Fieldset Default 1`] = `
 .c7 {
   box-sizing: border-box;
   display: -webkit-box;
@@ -86,17 +86,6 @@ exports[`Storyshots Molecules | Fieldset Default 1`] = `
   line-height: 1.4285714285714286;
 }
 
-.c0 {
-  padding: 0;
-  margin: 0;
-  border: 0;
-}
-
-.c3 {
-  width: auto;
-  display: inline-block;
-}
-
 .c11 {
   width: 20px;
   height: 20px;
@@ -164,6 +153,17 @@ exports[`Storyshots Molecules | Fieldset Default 1`] = `
   white-space: initial;
 }
 
+.c0 {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+.c3 {
+  width: auto;
+  display: inline-block;
+}
+
 @media (min-width:760px) {
   .c2 {
     font-size: 20px;
@@ -185,7 +185,6 @@ exports[`Storyshots Molecules | Fieldset Default 1`] = `
   </legend>
   <div
     className="c3"
-    width="auto"
   >
     <label
       className="c4 c5"
@@ -230,7 +229,6 @@ exports[`Storyshots Molecules | Fieldset Default 1`] = `
   </div>
   <div
     className="c3"
-    width="auto"
   >
     <label
       className="c4 c5"
@@ -275,7 +273,6 @@ exports[`Storyshots Molecules | Fieldset Default 1`] = `
   </div>
   <div
     className="c3"
-    width="auto"
   >
     <label
       className="c4 c5"
@@ -321,7 +318,7 @@ exports[`Storyshots Molecules | Fieldset Default 1`] = `
 </fieldset>
 `;
 
-exports[`Storyshots Molecules | Fieldset Docs 1`] = `
+exports[`Storyshots Molecules / Fieldset Docs 1`] = `
 <p>
   The Fieldset component is used to group related elements in a form.
 </p>

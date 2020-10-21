@@ -1,3 +1,62 @@
+# [3.40.0](https://github.com/nordnet/ui/compare/v3.39.2...v3.40.0) (2020-10-20)
+
+
+### Features
+
+* forward inputSize prop to input ([d5cbc9a](https://github.com/nordnet/ui/commit/d5cbc9a))
+
+## [3.39.2](https://github.com/nordnet/ui/compare/v3.39.1...v3.39.2) (2020-10-20)
+
+
+### Bug Fixes
+
+* use transient prop for width on form field ([8233b3f](https://github.com/nordnet/ui/commit/8233b3f))
+
+## [3.39.1](https://github.com/nordnet/ui/compare/v3.39.0...v3.39.1) (2020-10-20)
+
+
+### Bug Fixes
+
+* set cross color to negative if stroke color is not white ([9d3727b](https://github.com/nordnet/ui/commit/9d3727b))
+
+# [3.39.0](https://github.com/nordnet/ui/compare/v3.38.0...v3.39.0) (2020-10-20)
+
+
+### Bug Fixes
+
+* storybook folder for datepicker ([e010af5](https://github.com/nordnet/ui/commit/e010af5))
+
+
+### Features
+
+* add datepicker component ([5903b30](https://github.com/nordnet/ui/commit/5903b30))
+
+# [3.38.0](https://github.com/nordnet/ui/compare/v3.37.1...v3.38.0) (2020-10-19)
+
+
+### Bug Fixes
+
+* 🐛 add themedecorator for storybook ([f41c539](https://github.com/nordnet/ui/commit/f41c539))
+* 🐛 docs and revert unwanted config changes ([aab59c0](https://github.com/nordnet/ui/commit/aab59c0))
+* 🐛 escape quotes in page.tsx ([6616572](https://github.com/nordnet/ui/commit/6616572))
+* 🐛 migrate *.mdx docs to new storybook 6 api ([1edc162](https://github.com/nordnet/ui/commit/1edc162))
+* 🐛 migrate docs parameter to new format ([0d290ef](https://github.com/nordnet/ui/commit/0d290ef))
+* 🐛 migrate to new hierarchy separator for stories ([3817aab](https://github.com/nordnet/ui/commit/3817aab))
+* 🐛 remove stories dir and old config files ([2a644d9](https://github.com/nordnet/ui/commit/2a644d9))
+* 🐛 remove unnecessary withKnobs decorator ([209c5d9](https://github.com/nordnet/ui/commit/209c5d9))
+* 🐛 update storyshots & add missing a11y & intl decorators ([136bc7a](https://github.com/nordnet/ui/commit/136bc7a))
+* add missing addons, remove deprecated decorator ([dc5f310](https://github.com/nordnet/ui/commit/dc5f310))
+* bump dependencies, fix ts problems, add missing dependencies ([eca55a2](https://github.com/nordnet/ui/commit/eca55a2))
+* snapshots ([d7e4cd8](https://github.com/nordnet/ui/commit/d7e4cd8))
+* wip get storybook running ([780a10c](https://github.com/nordnet/ui/commit/780a10c))
+
+
+### Features
+
+* 🎸 enable loading stories from specific directory ([e37e095](https://github.com/nordnet/ui/commit/e37e095))
+* add viewport settings to storybook ([b2874a5](https://github.com/nordnet/ui/commit/b2874a5))
+* wip upgrade storybook to latest ([2e3b0f4](https://github.com/nordnet/ui/commit/2e3b0f4))
+
 ## [3.37.1](https://github.com/nordnet/ui/compare/v3.37.0...v3.37.1) (2020-10-16)
 
 
