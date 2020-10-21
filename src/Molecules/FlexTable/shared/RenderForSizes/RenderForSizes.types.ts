@@ -6,9 +6,9 @@ export interface ScreenSizeProps {
   [key: string]: any;
 }
 
-export type MediaProps = { [size in ScreenSize]?: ScreenSizeProps };
+export type PropsForScreenSizes = { [size in ScreenSize]?: ScreenSizeProps };
 
-export type MediaPropsAndSize = ScreenSizeProps & { size: ScreenSize };
+export type ScreenSizePropsAndSize = ScreenSizeProps & { size: ScreenSize };
 
 export type GetMediaQuery = (
   theme: Theme,
@@ -16,10 +16,12 @@ export type GetMediaQuery = (
   nextSize: ScreenSize | null,
 ) => MediaQuery;
 
-export type GetScreenMedia = (mediaProps: MediaProps) => Array<MediaPropsAndSize>;
+export type GetPropsForScreenSizes = (
+  propsForScreenSizes: PropsForScreenSizes,
+) => Array<ScreenSizePropsAndSize>;
 
 export type RenderForSizesComponent = React.FC<
-  MediaProps & {
-    children: React.FC<MediaPropsAndSize>;
+  PropsForScreenSizes & {
+    children: React.FC<ScreenSizePropsAndSize>;
   }
 >;
