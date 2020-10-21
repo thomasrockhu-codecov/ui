@@ -45,9 +45,6 @@ const useIsomorphicMedia = (query: string | ((t: Theme) => string)) => {
   return matches;
 };
 
-const isFunctionalComponent = (As: Props['as']): As is React.FC =>
-  typeof As === 'function' && !As.prototype.isReactComponent;
-
 const IsomorphicMedia: React.FunctionComponent<Props> = (props) => {
   const { isServer } = useSSR();
   const As = props.as || 'div';
@@ -56,12 +53,6 @@ const IsomorphicMedia: React.FunctionComponent<Props> = (props) => {
   // matches === null implies SSR or first client render, also need isServer to verify SSR.
   // Show css fallback in SSR
   if (isServer && matches === null) return <StyledDiv {...props} />;
-
-  if (isFunctionalComponent(As)) {
-    // This is a special case when As is a render prop to prevent unnecessary re-mounts
-    // I.e. RenderForSizes in FlexTable
-    return matches ? As(componentProps) : null;
-  }
   return matches ? <As {...componentProps} /> : null;
 };
 

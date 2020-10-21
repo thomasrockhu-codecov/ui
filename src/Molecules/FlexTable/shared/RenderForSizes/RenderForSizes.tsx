@@ -5,6 +5,7 @@ import {
   GetMediaQuery,
   GetPropsForScreenSizes,
   RenderForSizesComponent,
+  ChildWrapperComponent,
 } from './RenderForSizes.types';
 import IsomorphicMedia from '../../../../Atoms/IsomorphicMedia';
 
@@ -39,6 +40,8 @@ const getMediaQuery: GetMediaQuery = (theme, currentSize, nextSize) => {
   return theme.media.greaterThan(theme.breakpoints[currentSize]);
 };
 
+const ChildWrapper: ChildWrapperComponent = ({ children, ...props }) => <>{children(props)}</>;
+
 export const RenderForSizes: RenderForSizesComponent = ({ xs, sm, md, lg, xl, children }) => {
   const propsForScreenSizes = getPropsForScreenSizes({ xs, sm, md, lg, xl });
 
@@ -51,15 +54,21 @@ export const RenderForSizes: RenderForSizesComponent = ({ xs, sm, md, lg, xl, ch
           : null;
 
         if (size === 'xs' && !nextSize) {
-          return <React.Fragment key={size}>{children(screenSizeProps)}</React.Fragment>;
+          return (
+            <ChildWrapper key={size} {...screenSizeProps}>
+              {children}
+            </ChildWrapper>
+          );
         }
         return (
           <IsomorphicMedia
             key={size}
             query={(t) => getMediaQuery(t, size, nextSize)}
-            as={children}
+            as={ChildWrapper}
             {...screenSizeProps}
-          />
+          >
+            {children}
+          </IsomorphicMedia>
         );
       })}
     </>

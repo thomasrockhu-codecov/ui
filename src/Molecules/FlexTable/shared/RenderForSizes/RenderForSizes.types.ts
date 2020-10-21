@@ -25,3 +25,7 @@ export type RenderForSizesComponent = React.FC<
     children: React.FC<ScreenSizePropsAndSize>;
   }
 >;
+
+export type ChildWrapperComponent = React.FC<
+  ScreenSizePropsAndSize & { children: React.FC<ScreenSizePropsAndSize> }
+>;
