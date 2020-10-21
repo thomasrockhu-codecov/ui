@@ -1,3 +1,10 @@
+## [4.0.1](https://github.com/nordnet/ui/compare/v4.0.0...v4.0.1) (2020-10-21)
+
+
+### Bug Fixes
+
+* 🐛 update addon tab order ([2543b50](https://github.com/nordnet/ui/commit/2543b50))
+
 # [4.0.0](https://github.com/nordnet/ui/compare/v3.40.0...v4.0.0) (2020-10-21)
 
 
