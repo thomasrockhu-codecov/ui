@@ -45,7 +45,8 @@ const useIsomorphicMedia = (query: string | ((t: Theme) => string)) => {
   return matches;
 };
 
-const isReactFC = (As: Props['as']): As is React.FC => typeof As === 'function';
+const isFunctionalComponent = (As: Props['as']): As is React.FC =>
+  typeof As === 'function' && !As.prototype.isReactComponent;
 
 const IsomorphicMedia: React.FunctionComponent<Props> = (props) => {
   const { isServer } = useSSR();
@@ -56,7 +57,7 @@ const IsomorphicMedia: React.FunctionComponent<Props> = (props) => {
   // Show css fallback in SSR
   if (isServer && matches === null) return <StyledDiv {...props} />;
 
-  if (isReactFC(As)) {
+  if (isFunctionalComponent(As)) {
     return matches ? As(componentProps) : null;
   }
   return matches ? <As {...componentProps} /> : null;
