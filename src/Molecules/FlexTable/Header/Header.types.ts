@@ -1,5 +1,4 @@
 import React, { ReactNode } from 'react';
-import { FlexProps } from '../../../Atoms/Flexbox/Flexbox.types';
 import {
   SortOrder,
   SortButtonProps,
@@ -9,7 +8,7 @@ import {
   SortButtonComponent,
   SortIconProps,
 } from './HeaderContent/HeaderContent.types';
-import { MediaRelatedProps } from '../shared/shared.types';
+import { FlexPropsType } from '../shared/shared.types';
 
 export type OnSort = (columnId: string, newSortOrder: SortOrder) => void;
 
@@ -63,8 +62,7 @@ export type Props = {
    * Set column id, used to share layout between header and cells in the column
    */
   columnId: string;
-} & MediaRelatedProps<FlexProps> &
-  FlexProps &
+} & FlexPropsType &
   SortedProps;
 
 export type HeaderComponents = {
