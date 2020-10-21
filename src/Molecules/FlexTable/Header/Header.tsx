@@ -53,16 +53,11 @@ const Header: HeaderComponent = (props) => {
   const controlledSort = sortOrderProp !== undefined;
 
   useEffect(() => {
-    console.log('Mount:', columnId);
-
     columnDispatch({
       type: ACTION_SET_INITIAL_SORTING,
       sortOrder,
       controlledSort,
     });
-    return () => {
-      console.log('Unmount:', columnId);
-    };
   }, []);
 
   useEffect(() => {
