@@ -22,10 +22,10 @@ export type GetPropsForScreenSizes = (
 
 export type RenderForSizesComponent = React.FC<
   PropsForScreenSizes & {
-    children: React.FC<ScreenSizePropsAndSize>;
+    children: (props: ScreenSizePropsAndSize) => React.ReactNode;
   }
 >;
 
 export type ChildWrapperComponent = React.FC<
-  ScreenSizePropsAndSize & { children: React.FC<ScreenSizePropsAndSize> }
+  ScreenSizePropsAndSize & { children: (props: ScreenSizePropsAndSize) => React.ReactNode }
 >;
