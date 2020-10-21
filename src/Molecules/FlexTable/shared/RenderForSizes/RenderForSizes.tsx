@@ -8,7 +8,7 @@ import {
 } from './RenderForSizes.types';
 import IsomorphicMedia from '../../../../Atoms/IsomorphicMedia';
 
-export const getPropsForScreenSizes: GetPropsForScreenSizes = ({ xs, sm, md, lg, xl }) =>
+const getPropsForScreenSizes: GetPropsForScreenSizes = ({ xs, sm, md, lg, xl }) =>
   [
     { size: 'xs' as ScreenSize, ...xs },
     { size: 'sm' as ScreenSize, ...sm },
