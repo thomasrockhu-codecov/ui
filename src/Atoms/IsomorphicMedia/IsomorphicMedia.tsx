@@ -58,6 +58,8 @@ const IsomorphicMedia: React.FunctionComponent<Props> = (props) => {
   if (isServer && matches === null) return <StyledDiv {...props} />;
 
   if (isFunctionalComponent(As)) {
+    // This is a special case when As is a render prop to prevent unnecessary re-mounts
+    // I.e. RenderForSizes in FlexTable
     return matches ? As(componentProps) : null;
   }
   return matches ? <As {...componentProps} /> : null;

@@ -54,8 +54,8 @@ export const HeaderContent: React.FC<Props & UIProps> = ({
       lg={lgTable}
       xl={xlTable}
     >
-      {({ className: mediaClassName, fontSize }) => (
-        <SortButton className={mediaClassName} onClick={onSortClick}>
+      {({ className, fontSize }) => (
+        <SortButton className={className} onClick={onSortClick}>
           <StyledFlexboxContainer container>
             <CellInlineContainer item>
               <TextWrapper
