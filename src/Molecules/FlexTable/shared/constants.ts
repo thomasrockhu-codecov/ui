@@ -1,4 +1,4 @@
-import { FlexPropsType } from './ColumnProvider/ColumnProvider.types';
+import { FlexPropsType } from './shared.types';
 
 export const SORT_ORDER_NONE = 'none';
 export const SORT_ORDER_ASCENDING = 'ascending';

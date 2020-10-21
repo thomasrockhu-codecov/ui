@@ -1,4 +1,4 @@
-import React, { useEffect, useLayoutEffect } from 'react';
+import React, { useEffect } from 'react';
 import * as R from 'ramda';
 import styled from 'styled-components';
 import { HeaderComponent } from './Header.types';
@@ -9,7 +9,6 @@ import { SORT_ORDER_ASCENDING, SORT_ORDER_DESCENDING, SORT_ORDER_NONE } from '..
 import {
   useFlexCellProps,
   useColumnData,
-  ACTION_SET_FLEX_PROPS,
   ACTION_SET_SORTING,
   ACTION_SET_INITIAL_SORTING,
 } from '../shared/ColumnProvider';
@@ -75,13 +74,6 @@ const Header: HeaderComponent = (props) => {
       columnDispatch({ type: ACTION_SET_SORTING, sortOrder: newSortOrder });
     }
   };
-
-  useLayoutEffect(() => {
-    columnDispatch({ type: ACTION_SET_FLEX_PROPS, flexProps: cellFlexProps });
-    // Using JSON.stringify here to perform a "deep equality" check on cellFlexProps.
-    // Otherwise columnDispatch will re-trigger the hook since it updates the context which leads to a recursive loop
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [JSON.stringify(cellFlexProps), columnDispatch]);
 
   const sorted = !R.isNil(sortOrder) && sortOrder !== SORT_ORDER_NONE;
   return (

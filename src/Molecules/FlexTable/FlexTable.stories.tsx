@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import FlexTable from './FlexTable';
 import { Typography, Flag, Number, Flexbox, DateTime } from '../..';
 import docs from './FlexTable.mdx';
-import { FlexPropsType } from './shared/ColumnProvider/ColumnProvider.types';
+import { FlexPropsType } from './shared/shared.types';
 import { StyledBackground } from './storiesShared';
 
 export default {
