@@ -101,7 +101,7 @@ const ProgressLevels: ProgressLevelsComponent = ({
           return (
             <ListItem key={label} $current={current}>
               {current || done ? (
-                <Wrapper>
+                <Wrapper $current={current}>
                   <StyledButton
                     onClick={() => onStepClick && onStepClick(name)}
                     variant="neutral"
