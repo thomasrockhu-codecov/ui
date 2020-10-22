@@ -4,12 +4,7 @@ import styled from 'styled-components';
 import Box from '../../../Atoms/Box';
 import Button from '../../Button';
 import Typography from '../../../Atoms/Typography';
-import {
-  InternalProps,
-  TopLevelComponent,
-  InternalOLProps,
-  ProgressLevelsComponent,
-} from './TopLevel.types';
+import { InternalProps, TopLevelComponent, ProgressLevelsComponent } from './TopLevel.types';
 import { SubLevel } from '../SubLevel';
 import Status from '../Status';
 import {
@@ -26,7 +21,7 @@ const contentLeftPadding = HORIZONTAL_PADDING + STEP_NUMBER_SIZE + SPACE_TO_STEP
 const contentLeftPaddingDesktop =
   HORIZONTAL_PADDING_DESKTOP + STEP_NUMBER_SIZE + SPACE_TO_STEP_NUMBER;
 
-const StyledOrderedList = styled.ol<InternalOLProps>`
+const StyledOrderedList = styled.ol`
   ${listReset}
 `;
 
@@ -67,7 +62,7 @@ const ListItem = styled.li<InternalProps>`
   }
 `;
 
-const Wrapper = styled(Box)`
+const Wrapper = styled(Box)<InternalProps>`
   ${({ theme }) => theme.media.greaterThan(theme.breakpoints.md)} {
     ${ListItem} + ${ListItem} & {
       margin-top: ${(p) => p.theme.spacing.unit(2)}px;

@@ -7,10 +7,6 @@ export type InternalProps = {
   $isInDrawer?: boolean;
 };
 
-export type InternalOLProps = {
-  $isInDrawer?: boolean;
-};
-
 export type StepTopLevelProps = {
   steps?: StepSubLevelProps[];
 } & StepBaseProps;
