@@ -51,15 +51,27 @@ const ListItem = styled.li<InternalProps>`
     transition: opacity 0.16s ease-out;
     opacity: ${(p) => (p.$current ? 1 : 0)};
   }
+
+  ${({ theme }) => theme.media.lessThan(theme.breakpoints.md)} {
+    & + &::after {
+      content: '';
+      display: block;
+      height: 1px;
+      box-sizing: border-box;
+      background-color: ${(p) => p.theme.color.divider};
+      position: absolute;
+      top: 0;
+      left: ${({ theme }) => theme.spacing.unit(3)}px;
+      right: ${({ theme }) => theme.spacing.unit(3)}px;
+    }
+  }
 `;
 
 const Wrapper = styled(Box)`
-  ${({ theme }) => theme.media.lessThan(theme.breakpoints.md)} {
-    margin: 0 ${({ theme }) => theme.spacing.unit(3)}px;
-    border-top: ${(p) => p.theme.spacing.unit(0.25)}px solid ${(p) => p.theme.color.divider};
-  }
   ${({ theme }) => theme.media.greaterThan(theme.breakpoints.md)} {
-    margin-top: ${(p) => p.theme.spacing.unit(2)}px;
+    ${ListItem} + ${ListItem} & {
+      margin-top: ${(p) => p.theme.spacing.unit(2)}px;
+    }
   }
 `;
 
@@ -69,9 +81,6 @@ const Content = styled(Box)`
 
 const StyledButton = styled(Button)<InternalProps>`
   justify-content: flex-start;
-  ${({ theme }) => theme.media.lessThan(theme.breakpoints.md)} {
-    margin-left: ${(p) => (p.$isInDrawer ? -p.theme.spacing.unit(3) : 0)}px;
-  }
 `;
 
 const StyledMobileButton = styled(StyledButton)`
@@ -125,23 +134,25 @@ const ProgressLevels: ProgressLevelsComponent = ({
                   </StyledButton>
                 </Wrapper>
               ) : (
-                <Typography color={(t) => t.color.disabledText} type="primary">
-                  <Content
-                    py={VERTICAL_PADDING}
-                    pr={HORIZONTAL_PADDING}
-                    pl={contentLeftPadding}
-                    sm={{ pl: contentLeftPaddingDesktop }}
-                  >
-                    <Status
-                      current={current}
-                      done={done}
-                      number={number}
-                      titleDone={titleDone}
-                      titleNotDone={titleNotDone}
-                    />
-                    {label}
-                  </Content>
-                </Typography>
+                <Wrapper>
+                  <Typography color={(t) => t.color.disabledText} type="primary">
+                    <Content
+                      py={VERTICAL_PADDING}
+                      pr={HORIZONTAL_PADDING}
+                      pl={contentLeftPadding}
+                      sm={{ pl: contentLeftPaddingDesktop }}
+                    >
+                      <Status
+                        current={current}
+                        done={done}
+                        number={number}
+                        titleDone={titleDone}
+                        titleNotDone={titleNotDone}
+                      />
+                      {label}
+                    </Content>
+                  </Typography>
+                </Wrapper>
               )}
               {substeps.length > 0 && current && (
                 <SubLevel
