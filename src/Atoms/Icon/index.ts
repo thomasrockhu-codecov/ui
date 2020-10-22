@@ -69,6 +69,7 @@ import { Minimize } from './components/Minimize';
 import { Minus } from './components/Minus';
 import { Money } from './components/Money';
 import { Move } from './components/Move';
+import { MoveBig } from './components/MoveBig';
 import { NoFee } from './components/NoFee';
 import { Other } from './components/Other';
 import { Pen } from './components/Pen';
@@ -176,6 +177,7 @@ export default {
   Minus,
   Money,
   Move,
+  MoveBig,
   NoFee,
   Other,
   Pen,
