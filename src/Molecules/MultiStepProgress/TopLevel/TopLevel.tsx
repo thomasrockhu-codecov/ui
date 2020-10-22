@@ -53,7 +53,7 @@ const ListItem = styled.li<InternalProps>`
   }
 `;
 
-const Wrapper = styled(Box)<InternalProps>`
+const Wrapper = styled(Box)`
   ${({ theme }) => theme.media.lessThan(theme.breakpoints.md)} {
     margin: 0 ${({ theme }) => theme.spacing.unit(3)}px;
     border-top: ${(p) => p.theme.spacing.unit(0.25)}px solid ${(p) => p.theme.color.divider};
