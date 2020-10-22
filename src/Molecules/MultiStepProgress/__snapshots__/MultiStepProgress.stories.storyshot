@@ -323,13 +323,13 @@ Array [
   padding: 0;
 }
 
-.c5 {
+.c4 {
   display: block;
   position: relative;
   background-color: #FFFFFF;
 }
 
-.c5::before {
+.c4::before {
   content: '';
   display: block;
   background: #0046FF;
@@ -428,26 +428,27 @@ Array [
 }
 
 @media (max-width:975px) {
-  .c5 + .c4 {
+  .c5 {
+    margin: 0 12px;
     border-top: 1px solid #EBEBE8;
   }
 }
 
 @media (min-width:976px) {
-  .c5 + .c4 {
+  .c5 {
     margin-top: 8px;
   }
 }
 
 @media (max-width:975px) {
-  .c17 + .c4 {
-    border-top: 1px solid #EBEBE8;
+  .c7 {
+    margin-left: 0px;
   }
 }
 
-@media (min-width:976px) {
-  .c17 + .c4 {
-    margin-top: 8px;
+@media (max-width:975px) {
+  .c31 {
+    margin-left: 0px;
   }
 }
 
@@ -465,90 +466,98 @@ Array [
           className="c3"
         >
           <li
-            className="c4 c5"
+            className="c4"
           >
-            <button
-              className="NormalizedButton__Button-ey7f5x-0 c6 c7"
-              onClick={[Function]}
-              type="button"
+            <div
+              className="c5"
             >
-              <span
-                className="c8"
+              <button
+                className="NormalizedButton__Button-ey7f5x-0 c6 c7"
+                onClick={[Function]}
+                type="button"
               >
                 <span
-                  className="c9"
+                  className="c8"
                 >
-                  <div
-                    className="c10 c11"
+                  <span
+                    className="c9"
                   >
                     <div
-                      className="c12"
+                      className="c10 c11"
                     >
-                      Completed
-                    </div>
-                    <span
-                      aria-hidden={true}
-                      className="c13 c14"
-                    >
-                      <svg
-                        aria-hidden="true"
-                        className="c15"
-                        focusable="false"
-                        preserveAspectRatio="xMidYMid meet"
-                        role="presentation"
-                        viewBox="0 0 92 92"
+                      <div
+                        className="c12"
                       >
-                        <path
-                          d="M46 91.5c25.4050985 0 46-20.3710439 46-45.5S71.4050985.5 46 .5 0 20.8710439 0 46s20.5949015 45.5 46 45.5z"
-                        />
-                        <path
-                          d="M63.1517377 34l3.573537 3.5568749L42.1676463 62l-14.870943-14.8016051 3.573537-3.5568749 11.297406 11.2447302z"
-                          fill="#FFF"
-                        />
-                        <polygon
-                          className="c16"
-                          points="13.695 6 15 7.314 8.696 13.69 5 9.924 6.319 8.656 8.696 11.059"
-                        />
-                      </svg>
-                    </span>
-                    Investment objective
-                  </div>
+                        Completed
+                      </div>
+                      <span
+                        aria-hidden={true}
+                        className="c13 c14"
+                      >
+                        <svg
+                          aria-hidden="true"
+                          className="c15"
+                          focusable="false"
+                          preserveAspectRatio="xMidYMid meet"
+                          role="presentation"
+                          viewBox="0 0 92 92"
+                        >
+                          <path
+                            d="M46 91.5c25.4050985 0 46-20.3710439 46-45.5S71.4050985.5 46 .5 0 20.8710439 0 46s20.5949015 45.5 46 45.5z"
+                          />
+                          <path
+                            d="M63.1517377 34l3.573537 3.5568749L42.1676463 62l-14.870943-14.8016051 3.573537-3.5568749 11.297406 11.2447302z"
+                            fill="#FFF"
+                          />
+                          <polygon
+                            className="c16"
+                            points="13.695 6 15 7.314 8.696 13.69 5 9.924 6.319 8.656 8.696 11.059"
+                          />
+                        </svg>
+                      </span>
+                      Investment objective
+                    </div>
+                  </span>
                 </span>
-              </span>
-            </button>
+              </button>
+            </div>
           </li>
           <li
-            className="c4 c17"
+            className="c17"
           >
-            <button
-              className="NormalizedButton__Button-ey7f5x-0 c6 c7"
-              onClick={[Function]}
-              type="button"
+            <div
+              className="c5"
             >
-              <span
-                className="c8"
+              <button
+                className="NormalizedButton__Button-ey7f5x-0 c6 c7"
+                onClick={[Function]}
+                type="button"
               >
                 <span
-                  className="c18"
+                  className="c8"
                 >
-                  <div
-                    className="c10 c11"
+                  <span
+                    className="c18"
                   >
-                    <span
-                      aria-hidden={true}
-                      className="c13 c14"
+                    <div
+                      className="c10 c11"
                     >
                       <span
-                        className="c19"
+                        aria-hidden={true}
+                        className="c13 c14"
                       >
-                        2
+                        <span
+                          className="c19"
+                        >
+                          2
+                        </span>
                       </span>
-                    </span>
-                    Time and risk
-                  </div>
+                      Time and risk
+                    </div>
+                  </span>
                 </span>
-              </span>
-            </button>
+              </button>
+            </div>
             <ol
               className="c20"
             >
@@ -629,7 +638,7 @@ Array [
             </ol>
           </li>
           <li
-            className="c4 c5"
+            className="c4"
           >
             <span
               className="c26"
@@ -665,7 +674,7 @@ Array [
           className="c30"
         >
           <li
-            className="c4 c17"
+            className="c17"
           >
             <button
               aria-expanded={false}
@@ -765,7 +774,7 @@ Array [
 
 }
 
-@media (min-width:976px) {
+@media (max-width:975px) {
 
 }
 
@@ -1098,13 +1107,13 @@ Array [
   padding: 0;
 }
 
-.c5 {
+.c4 {
   display: block;
   position: relative;
   background-color: #FFFFFF;
 }
 
-.c5::before {
+.c4::before {
   content: '';
   display: block;
   background: #0046FF;
@@ -1203,26 +1212,27 @@ Array [
 }
 
 @media (max-width:975px) {
-  .c5 + .c4 {
+  .c5 {
+    margin: 0 12px;
     border-top: 1px solid #EBEBE8;
   }
 }
 
 @media (min-width:976px) {
-  .c5 + .c4 {
+  .c5 {
     margin-top: 8px;
   }
 }
 
 @media (max-width:975px) {
-  .c17 + .c4 {
-    border-top: 1px solid #EBEBE8;
+  .c7 {
+    margin-left: 0px;
   }
 }
 
-@media (min-width:976px) {
-  .c17 + .c4 {
-    margin-top: 8px;
+@media (max-width:975px) {
+  .c31 {
+    margin-left: 0px;
   }
 }
 
@@ -1240,90 +1250,98 @@ Array [
           className="c3"
         >
           <li
-            className="c4 c5"
+            className="c4"
           >
-            <button
-              className="NormalizedButton__Button-ey7f5x-0 c6 c7"
-              onClick={[Function]}
-              type="button"
+            <div
+              className="c5"
             >
-              <span
-                className="c8"
+              <button
+                className="NormalizedButton__Button-ey7f5x-0 c6 c7"
+                onClick={[Function]}
+                type="button"
               >
                 <span
-                  className="c9"
+                  className="c8"
                 >
-                  <div
-                    className="c10 c11"
+                  <span
+                    className="c9"
                   >
                     <div
-                      className="c12"
+                      className="c10 c11"
                     >
-                      Completed
-                    </div>
-                    <span
-                      aria-hidden={true}
-                      className="c13 c14"
-                    >
-                      <svg
-                        aria-hidden="true"
-                        className="c15"
-                        focusable="false"
-                        preserveAspectRatio="xMidYMid meet"
-                        role="presentation"
-                        viewBox="0 0 92 92"
+                      <div
+                        className="c12"
                       >
-                        <path
-                          d="M46 91.5c25.4050985 0 46-20.3710439 46-45.5S71.4050985.5 46 .5 0 20.8710439 0 46s20.5949015 45.5 46 45.5z"
-                        />
-                        <path
-                          d="M63.1517377 34l3.573537 3.5568749L42.1676463 62l-14.870943-14.8016051 3.573537-3.5568749 11.297406 11.2447302z"
-                          fill="#FFF"
-                        />
-                        <polygon
-                          className="c16"
-                          points="13.695 6 15 7.314 8.696 13.69 5 9.924 6.319 8.656 8.696 11.059"
-                        />
-                      </svg>
-                    </span>
-                    Investment objective
-                  </div>
+                        Completed
+                      </div>
+                      <span
+                        aria-hidden={true}
+                        className="c13 c14"
+                      >
+                        <svg
+                          aria-hidden="true"
+                          className="c15"
+                          focusable="false"
+                          preserveAspectRatio="xMidYMid meet"
+                          role="presentation"
+                          viewBox="0 0 92 92"
+                        >
+                          <path
+                            d="M46 91.5c25.4050985 0 46-20.3710439 46-45.5S71.4050985.5 46 .5 0 20.8710439 0 46s20.5949015 45.5 46 45.5z"
+                          />
+                          <path
+                            d="M63.1517377 34l3.573537 3.5568749L42.1676463 62l-14.870943-14.8016051 3.573537-3.5568749 11.297406 11.2447302z"
+                            fill="#FFF"
+                          />
+                          <polygon
+                            className="c16"
+                            points="13.695 6 15 7.314 8.696 13.69 5 9.924 6.319 8.656 8.696 11.059"
+                          />
+                        </svg>
+                      </span>
+                      Investment objective
+                    </div>
+                  </span>
                 </span>
-              </span>
-            </button>
+              </button>
+            </div>
           </li>
           <li
-            className="c4 c17"
+            className="c17"
           >
-            <button
-              className="NormalizedButton__Button-ey7f5x-0 c6 c7"
-              onClick={[Function]}
-              type="button"
+            <div
+              className="c5"
             >
-              <span
-                className="c8"
+              <button
+                className="NormalizedButton__Button-ey7f5x-0 c6 c7"
+                onClick={[Function]}
+                type="button"
               >
                 <span
-                  className="c18"
+                  className="c8"
                 >
-                  <div
-                    className="c10 c11"
+                  <span
+                    className="c18"
                   >
-                    <span
-                      aria-hidden={true}
-                      className="c13 c14"
+                    <div
+                      className="c10 c11"
                     >
                       <span
-                        className="c19"
+                        aria-hidden={true}
+                        className="c13 c14"
                       >
-                        2
+                        <span
+                          className="c19"
+                        >
+                          2
+                        </span>
                       </span>
-                    </span>
-                    Time and risk
-                  </div>
+                      Time and risk
+                    </div>
+                  </span>
                 </span>
-              </span>
-            </button>
+              </button>
+            </div>
             <ol
               className="c20"
             >
@@ -1404,7 +1422,7 @@ Array [
             </ol>
           </li>
           <li
-            className="c4 c5"
+            className="c4"
           >
             <span
               className="c26"
@@ -1440,7 +1458,7 @@ Array [
           className="c30"
         >
           <li
-            className="c4 c17"
+            className="c17"
           >
             <button
               aria-expanded={false}
@@ -1540,7 +1558,7 @@ Array [
 
 }
 
-@media (min-width:976px) {
+@media (max-width:975px) {
 
 }
 
@@ -1552,7 +1570,7 @@ Array [
 
 exports[`Storyshots Molecules / Multi Step Progress Not Started Multi Step Progress 1`] = `
 Array [
-  .c7 {
+  .c6 {
   padding-left: 44px;
   padding-top: 12px;
   padding-right: 12px;
@@ -1596,7 +1614,7 @@ Array [
   box-sizing: border-box;
 }
 
-.c9 {
+.c8 {
   position: absolute;
   height: 1px;
   width: 1px;
@@ -1625,7 +1643,7 @@ Array [
   transform: rotate(0deg);
 }
 
-.c6 {
+.c5 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #A0A09B;
   margin: 0;
@@ -1634,7 +1652,7 @@ Array [
   line-height: 1.5;
 }
 
-.c10 {
+.c9 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
   margin: 0;
@@ -1722,13 +1740,13 @@ Array [
   outline: 1px dotted ButtonText;
 }
 
-.c11 {
+.c10 {
   position: absolute;
   top: 12px;
   left: 12px;
 }
 
-.c12 {
+.c11 {
   width: 24px;
   height: 24px;
   background-color: #EBEBE8;
@@ -1795,13 +1813,13 @@ Array [
   padding: 0;
 }
 
-.c5 {
+.c4 {
   display: block;
   position: relative;
   background-color: #FFFFFF;
 }
 
-.c5::before {
+.c4::before {
   content: '';
   display: block;
   background: #0046FF;
@@ -1815,13 +1833,13 @@ Array [
   opacity: 0;
 }
 
-.c13 {
+.c12 {
   display: block;
   position: relative;
   background-color: #FFFFFF;
 }
 
-.c13::before {
+.c12::before {
   content: '';
   display: block;
   background: #0046FF;
@@ -1835,7 +1853,7 @@ Array [
   opacity: 1;
 }
 
-.c8 {
+.c7 {
   position: relative;
 }
 
@@ -1862,7 +1880,7 @@ Array [
 }
 
 @media (min-width:760px) {
-  .c7 {
+  .c6 {
     padding-left: 52px;
   }
 }
@@ -1894,32 +1912,33 @@ Array [
 }
 
 @media (min-width:760px) {
-  .c11 {
+  .c10 {
     left: 20px;
   }
 }
 
 @media (max-width:975px) {
-  .c5 + .c4 {
+  .c13 {
+    margin: 0 12px;
     border-top: 1px solid #EBEBE8;
   }
 }
 
 @media (min-width:976px) {
-  .c5 + .c4 {
+  .c13 {
     margin-top: 8px;
   }
 }
 
 @media (max-width:975px) {
-  .c13 + .c4 {
-    border-top: 1px solid #EBEBE8;
+  .c15 {
+    margin-left: 0px;
   }
 }
 
-@media (min-width:976px) {
-  .c13 + .c4 {
-    margin-top: 8px;
+@media (max-width:975px) {
+  .c27 {
+    margin-left: 0px;
   }
 }
 
@@ -1937,25 +1956,25 @@ Array [
           className="c3"
         >
           <li
-            className="c4 c5"
+            className="c4"
           >
             <span
-              className="c6"
+              className="c5"
             >
               <div
-                className="c7 c8"
+                className="c6 c7"
               >
                 <div
-                  className="c9"
+                  className="c8"
                 >
                   Not completed
                 </div>
                 <span
                   aria-hidden={true}
-                  className="c10 c11"
+                  className="c9 c10"
                 >
                   <span
-                    className="c12"
+                    className="c11"
                   >
                     1
                   </span>
@@ -1965,37 +1984,41 @@ Array [
             </span>
           </li>
           <li
-            className="c4 c13"
+            className="c12"
           >
-            <button
-              className="NormalizedButton__Button-ey7f5x-0 c14 c15"
-              onClick={[Function]}
-              type="button"
+            <div
+              className="c13"
             >
-              <span
-                className="c16"
+              <button
+                className="NormalizedButton__Button-ey7f5x-0 c14 c15"
+                onClick={[Function]}
+                type="button"
               >
                 <span
-                  className="c17"
+                  className="c16"
                 >
-                  <div
-                    className="c18 c8"
+                  <span
+                    className="c17"
                   >
-                    <span
-                      aria-hidden={true}
-                      className="c10 c11"
+                    <div
+                      className="c18 c7"
                     >
                       <span
-                        className="c19"
+                        aria-hidden={true}
+                        className="c9 c10"
                       >
-                        2
+                        <span
+                          className="c19"
+                        >
+                          2
+                        </span>
                       </span>
-                    </span>
-                    Time and risk
-                  </div>
+                      Time and risk
+                    </div>
+                  </span>
                 </span>
-              </span>
-            </button>
+              </button>
+            </div>
             <ol
               className="c20"
             >
@@ -2009,7 +2032,7 @@ Array [
                     className="c24"
                   >
                     <div
-                      className="c9"
+                      className="c8"
                     >
                       Not completed
                     </div>
@@ -2027,7 +2050,7 @@ Array [
                     className="c24"
                   >
                     <div
-                      className="c9"
+                      className="c8"
                     >
                       Not completed
                     </div>
@@ -2045,7 +2068,7 @@ Array [
                     className="c24"
                   >
                     <div
-                      className="c9"
+                      className="c8"
                     >
                       Not completed
                     </div>
@@ -2056,25 +2079,25 @@ Array [
             </ol>
           </li>
           <li
-            className="c4 c5"
+            className="c4"
           >
             <span
-              className="c6"
+              className="c5"
             >
               <div
-                className="c7 c8"
+                className="c6 c7"
               >
                 <div
-                  className="c9"
+                  className="c8"
                 >
                   Not completed
                 </div>
                 <span
                   aria-hidden={true}
-                  className="c10 c11"
+                  className="c9 c10"
                 >
                   <span
-                    className="c12"
+                    className="c11"
                   >
                     3
                   </span>
@@ -2092,7 +2115,7 @@ Array [
           className="c26"
         >
           <li
-            className="c4 c13"
+            className="c12"
           >
             <button
               aria-expanded={false}
@@ -2107,7 +2130,7 @@ Array [
                   className="c17"
                 >
                   <div
-                    className="c18 c8"
+                    className="c18 c7"
                   >
                     <div
                       className="c28"
@@ -2117,7 +2140,7 @@ Array [
                       >
                         <span
                           aria-hidden={true}
-                          className="c10 c11"
+                          className="c9 c10"
                         >
                           <span
                             className="c19"
@@ -2192,7 +2215,7 @@ Array [
 
 }
 
-@media (min-width:976px) {
+@media (max-width:975px) {
 
 }
 
