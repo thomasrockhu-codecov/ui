@@ -456,7 +456,7 @@ Array [
 }
 
 @media (min-width:976px) {
-  ListItem + ListItem .c6 {
+  li + li .c6 {
     margin-top: 8px;
   }
 }
@@ -1249,7 +1249,7 @@ Array [
 }
 
 @media (min-width:976px) {
-  ListItem + ListItem .c6 {
+  li + li .c6 {
     margin-top: 8px;
   }
 }
@@ -1964,7 +1964,7 @@ Array [
 }
 
 @media (min-width:976px) {
-  ListItem + ListItem .c6 {
+  li + li .c6 {
     margin-top: 8px;
   }
 }
