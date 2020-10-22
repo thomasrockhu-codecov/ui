@@ -1,3 +1,10 @@
+## [4.0.3](https://github.com/nordnet/ui/compare/v4.0.2...v4.0.3) (2020-10-22)
+
+
+### Bug Fixes
+
+* 🐛 safari input type search bug ([22b19ec](https://github.com/nordnet/ui/commit/22b19ec))
+
 ## [4.0.2](https://github.com/nordnet/ui/compare/v4.0.1...v4.0.2) (2020-10-21)
 
 
