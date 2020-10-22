@@ -8,7 +8,6 @@ export type InternalProps = {
 };
 
 export type InternalOLProps = {
-  $isDesktop?: boolean;
   $isInDrawer?: boolean;
 };
 

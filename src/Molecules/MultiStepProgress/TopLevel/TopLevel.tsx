@@ -95,7 +95,6 @@ const ProgressLevels: ProgressLevelsComponent = ({
   onSubStepClick,
   titleDone,
   titleNotDone,
-  isInDrawer,
 }) => {
   return (
     <StyledOrderedList>
@@ -112,7 +111,6 @@ const ProgressLevels: ProgressLevelsComponent = ({
                     onClick={() => onStepClick && onStepClick(name)}
                     variant="neutral"
                     fullWidth
-                    $isInDrawer={isInDrawer}
                   >
                     <Typography type="primary" weight={current ? 'bold' : 'regular'}>
                       <Content
