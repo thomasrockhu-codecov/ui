@@ -1,3 +1,10 @@
+## [4.0.5](https://github.com/nordnet/ui/compare/v4.0.4...v4.0.5) (2020-10-22)
+
+
+### Bug Fixes
+
+* 🐛 change chevron left to correct display name ([e1e14ce](https://github.com/nordnet/ui/commit/e1e14ce))
+
 ## [4.0.4](https://github.com/nordnet/ui/compare/v4.0.3...v4.0.4) (2020-10-22)
 
 
