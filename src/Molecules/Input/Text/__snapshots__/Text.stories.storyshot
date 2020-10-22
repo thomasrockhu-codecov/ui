@@ -252,6 +252,71 @@ exports[`Storyshots Molecules / Input / Text Alternating Types 1`] = `
   opacity: 1;
 }
 
+.c7 {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  overflow: visible;
+  border: 0;
+  width: 100%;
+  padding: 8px;
+  margin: 0;
+  line-height: inherit;
+  box-sizing: border-box;
+  height: 40px;
+  outline: none;
+  border: solid;
+  border-color: #BCBCB6;
+  border-width: 1px;
+  position: relative;
+  background-color: #FFFFFF;
+}
+
+.c7:focus {
+  border-width: 1px;
+}
+
+.c7:hover {
+  border-color: #4B4B46;
+}
+
+.c7:focus {
+  border-color: #0046FF;
+}
+
+.c7::-webkit-input-placeholder {
+  color: #6E6E69;
+  height: inherit;
+  line-height: inherit;
+  opacity: 1;
+}
+
+.c7::-moz-placeholder {
+  color: #6E6E69;
+  height: inherit;
+  line-height: inherit;
+  opacity: 1;
+}
+
+.c7:-ms-input-placeholder {
+  color: #6E6E69;
+  height: inherit;
+  line-height: inherit;
+  opacity: 1;
+}
+
+.c7::placeholder {
+  color: #6E6E69;
+  height: inherit;
+  line-height: inherit;
+  opacity: 1;
+}
+
+.c7[type="search"] {
+  -webkit-appearance: textfield;
+}
+
 .c5 {
   position: relative;
   padding: 0px 0;
@@ -354,7 +419,7 @@ exports[`Storyshots Molecules / Input / Text Alternating Types 1`] = `
               className="c5"
             >
               <input
-                className="NormalizedInput__Input-sc-1m4kmh9-0 c6"
+                className="NormalizedInput__Input-sc-1m4kmh9-0 c7"
                 type="search"
                 variant="normal"
               />
