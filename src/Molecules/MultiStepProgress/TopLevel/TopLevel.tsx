@@ -79,7 +79,7 @@ const Content = styled(Box)`
   position: relative;
 `;
 
-const StyledButton = styled(Button)<InternalProps>`
+const StyledButton = styled(Button)`
   justify-content: flex-start;
 `;
 
