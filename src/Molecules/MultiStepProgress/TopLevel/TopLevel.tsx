@@ -51,15 +51,15 @@ const ListItem = styled.li<InternalProps>`
     transition: opacity 0.16s ease-out;
     opacity: ${(p) => (p.$current ? 1 : 0)};
   }
+`;
 
-  & + & {
-    ${({ theme }) => theme.media.lessThan(theme.breakpoints.md)} {
-      border-top: ${(p) => p.theme.spacing.unit(0.25)}px solid ${(p) => p.theme.color.divider};
-    }
-
-    ${({ theme }) => theme.media.greaterThan(theme.breakpoints.md)} {
-      margin-top: ${(p) => p.theme.spacing.unit(2)}px;
-    }
+const Wrapper = styled(Box)<InternalProps>`
+  ${({ theme }) => theme.media.lessThan(theme.breakpoints.md)} {
+    margin: 0 ${({ theme }) => theme.spacing.unit(3)}px;
+    border-top: ${(p) => p.theme.spacing.unit(0.25)}px solid ${(p) => p.theme.color.divider};
+  }
+  ${({ theme }) => theme.media.greaterThan(theme.breakpoints.md)} {
+    margin-top: ${(p) => p.theme.spacing.unit(2)}px;
   }
 `;
 
@@ -67,8 +67,11 @@ const Content = styled(Box)`
   position: relative;
 `;
 
-const StyledButton = styled(Button)`
+const StyledButton = styled(Button)<InternalProps>`
   justify-content: flex-start;
+  ${({ theme }) => theme.media.lessThan(theme.breakpoints.md)} {
+    margin-left: ${(p) => (p.$isInDrawer ? -p.theme.spacing.unit(3) : 0)}px;
+  }
 `;
 
 const StyledMobileButton = styled(StyledButton)`
@@ -76,6 +79,7 @@ const StyledMobileButton = styled(StyledButton)`
     width: 100%;
   }
 `;
+
 const ProgressLevels: ProgressLevelsComponent = ({
   steps,
   onStepClick,
@@ -92,31 +96,34 @@ const ProgressLevels: ProgressLevelsComponent = ({
           const number = i + 1;
 
           return (
-            <ListItem key={label} $current={current} $isInDrawer={isInDrawer}>
+            <ListItem key={label} $current={current}>
               {current || done ? (
-                <StyledButton
-                  onClick={() => onStepClick && onStepClick(name)}
-                  variant="neutral"
-                  fullWidth
-                >
-                  <Typography type="primary" weight={current ? 'bold' : 'regular'}>
-                    <Content
-                      py={VERTICAL_PADDING}
-                      pr={HORIZONTAL_PADDING}
-                      pl={contentLeftPadding}
-                      sm={{ pl: contentLeftPaddingDesktop, pr: HORIZONTAL_PADDING_DESKTOP }}
-                    >
-                      <Status
-                        current={current}
-                        done={done}
-                        number={number}
-                        titleDone={titleDone}
-                        titleNotDone={titleNotDone}
-                      />
-                      {label}
-                    </Content>
-                  </Typography>
-                </StyledButton>
+                <Wrapper>
+                  <StyledButton
+                    onClick={() => onStepClick && onStepClick(name)}
+                    variant="neutral"
+                    fullWidth
+                    $isInDrawer={isInDrawer}
+                  >
+                    <Typography type="primary" weight={current ? 'bold' : 'regular'}>
+                      <Content
+                        py={VERTICAL_PADDING}
+                        pr={HORIZONTAL_PADDING}
+                        pl={contentLeftPadding}
+                        sm={{ pl: contentLeftPaddingDesktop, pr: HORIZONTAL_PADDING_DESKTOP }}
+                      >
+                        <Status
+                          current={current}
+                          done={done}
+                          number={number}
+                          titleDone={titleDone}
+                          titleNotDone={titleNotDone}
+                        />
+                        {label}
+                      </Content>
+                    </Typography>
+                  </StyledButton>
+                </Wrapper>
               ) : (
                 <Typography color={(t) => t.color.disabledText} type="primary">
                   <Content
