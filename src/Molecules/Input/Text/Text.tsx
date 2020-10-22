@@ -125,6 +125,14 @@ const Input = styled(NormalizedElements.Input).attrs((p) => ({ type: p.type || '
           padding-right: ${p.theme.spacing.unit(2)}px;
         }`
       : ''}
+
+    ${(p) =>
+    p.type === 'search' &&
+    ` 
+    &[type="search"] {
+      -webkit-appearance: textfield;
+    }
+    `}
 `;
 
 const Wrapper = styled.div<{ variant?: Variant }>`
