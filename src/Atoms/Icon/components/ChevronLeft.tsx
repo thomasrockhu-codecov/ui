@@ -13,4 +13,4 @@ export const ChevronLeft = (props: BaseProps) => {
   );
 };
 
-ChevronLeft.displayName = 'Icon.ChevronRight';
+ChevronLeft.displayName = 'Icon.ChevronLeft';
