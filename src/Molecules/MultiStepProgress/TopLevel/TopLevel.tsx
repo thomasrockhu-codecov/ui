@@ -64,7 +64,7 @@ const ListItem = styled.li<InternalProps>`
 
 const Wrapper = styled(Box)<InternalProps>`
   ${({ theme }) => theme.media.greaterThan(theme.breakpoints.md)} {
-    ${ListItem} + ${ListItem} & {
+    ListItem + ListItem & {
       margin-top: ${(p) => p.theme.spacing.unit(2)}px;
     }
   }
@@ -101,7 +101,7 @@ const ProgressLevels: ProgressLevelsComponent = ({
           return (
             <ListItem key={label} $current={current}>
               {current || done ? (
-                <Wrapper $current={current}>
+                <Wrapper>
                   <StyledButton
                     onClick={() => onStepClick && onStepClick(name)}
                     variant="neutral"
