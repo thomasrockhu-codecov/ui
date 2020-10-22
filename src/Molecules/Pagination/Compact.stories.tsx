@@ -26,13 +26,18 @@ export const regular = () => <CompactPagination />;
 const ControlledCompactPagination = ({ totalItems = 10, itemsPerPage = 1 }) => {
   const [currentPage, setCurrentPage] = React.useState(5);
 
+  const onPageChange = (newPage: number) => {
+    action('Page change')(newPage);
+    setCurrentPage(newPage);
+  };
+
   return (
     <Pagination
       variant="compact"
       currentPage={currentPage}
       totalItems={totalItems}
       itemsPerPage={itemsPerPage}
-      onPageChange={setCurrentPage}
+      onPageChange={onPageChange}
     />
   );
 };
