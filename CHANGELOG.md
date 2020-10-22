@@ -1,3 +1,10 @@
+## [4.0.4](https://github.com/nordnet/ui/compare/v4.0.3...v4.0.4) (2020-10-22)
+
+
+### Bug Fixes
+
+* 🐛 pagination component maximum depth error ([176a329](https://github.com/nordnet/ui/commit/176a329))
+
 ## [4.0.3](https://github.com/nordnet/ui/compare/v4.0.2...v4.0.3) (2020-10-22)
 
 
