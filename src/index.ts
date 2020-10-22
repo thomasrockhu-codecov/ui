@@ -61,6 +61,7 @@ import SegmentedControl from './Molecules/SegmentedControl';
 import Select from './Molecules/Select';
 import SelectionCard from './Molecules/SelectionCard';
 import Slider from './Molecules/Slider';
+import StatusModal from './Molecules/StatusModal';
 import Switch from './Molecules/Switch';
 import Tabs from './Molecules/Tabs';
 import TabsNav from './Molecules/TabsNav';
@@ -142,6 +143,7 @@ export {
   Skeleton,
   Slider,
   Spinner,
+  StatusModal,
   Switch,
   Table,
   Tabs,
