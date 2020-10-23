@@ -441,6 +441,12 @@ Array [
   }
 }
 
+@media (min-width:976px) {
+  .c5 + .c4 .c6 {
+    margin-top: 8px;
+  }
+}
+
 @media (max-width:975px) {
   .c18 + .c4::after {
     content: '';
@@ -456,7 +462,7 @@ Array [
 }
 
 @media (min-width:976px) {
-  .c4 + .c4 .c6 {
+  .c18 + .c4 .c6 {
     margin-top: 8px;
   }
 }
@@ -478,7 +484,7 @@ Array [
             className="c4 c5"
           >
             <div
-              className="c6"
+              className="c6 "
             >
               <button
                 className="NormalizedButton__Button-ey7f5x-0 c7 c8"
@@ -535,7 +541,7 @@ Array [
             className="c4 c18"
           >
             <div
-              className="c6"
+              className="c6 "
             >
               <button
                 className="NormalizedButton__Button-ey7f5x-0 c7 c8"
@@ -650,7 +656,7 @@ Array [
             className="c4 c5"
           >
             <div
-              className="c6"
+              className="c6 "
             >
               <span
                 className="c27"
@@ -776,6 +782,10 @@ Array [
 }
 
 @media (max-width:975px) {
+
+}
+
+@media (min-width:976px) {
 
 }
 
@@ -1234,6 +1244,12 @@ Array [
   }
 }
 
+@media (min-width:976px) {
+  .c5 + .c4 .c6 {
+    margin-top: 8px;
+  }
+}
+
 @media (max-width:975px) {
   .c18 + .c4::after {
     content: '';
@@ -1249,7 +1265,7 @@ Array [
 }
 
 @media (min-width:976px) {
-  .c4 + .c4 .c6 {
+  .c18 + .c4 .c6 {
     margin-top: 8px;
   }
 }
@@ -1271,7 +1287,7 @@ Array [
             className="c4 c5"
           >
             <div
-              className="c6"
+              className="c6 "
             >
               <button
                 className="NormalizedButton__Button-ey7f5x-0 c7 c8"
@@ -1328,7 +1344,7 @@ Array [
             className="c4 c18"
           >
             <div
-              className="c6"
+              className="c6 "
             >
               <button
                 className="NormalizedButton__Button-ey7f5x-0 c7 c8"
@@ -1443,7 +1459,7 @@ Array [
             className="c4 c5"
           >
             <div
-              className="c6"
+              className="c6 "
             >
               <span
                 className="c27"
@@ -1569,6 +1585,10 @@ Array [
 }
 
 @media (max-width:975px) {
+
+}
+
+@media (min-width:976px) {
 
 }
 
@@ -1949,6 +1969,12 @@ Array [
   }
 }
 
+@media (min-width:976px) {
+  .c5 + .c4 .c6 {
+    margin-top: 8px;
+  }
+}
+
 @media (max-width:975px) {
   .c14 + .c4::after {
     content: '';
@@ -1964,7 +1990,7 @@ Array [
 }
 
 @media (min-width:976px) {
-  .c4 + .c4 .c6 {
+  .c14 + .c4 .c6 {
     margin-top: 8px;
   }
 }
@@ -1986,7 +2012,7 @@ Array [
             className="c4 c5"
           >
             <div
-              className="c6"
+              className="c6 "
             >
               <span
                 className="c7"
@@ -2018,7 +2044,7 @@ Array [
             className="c4 c14"
           >
             <div
-              className="c6"
+              className="c6 "
             >
               <button
                 className="NormalizedButton__Button-ey7f5x-0 c15 c16"
@@ -2113,7 +2139,7 @@ Array [
             className="c4 c5"
           >
             <div
-              className="c6"
+              className="c6 "
             >
               <span
                 className="c7"
@@ -2239,6 +2265,10 @@ Array [
 }
 
 @media (max-width:975px) {
+
+}
+
+@media (min-width:976px) {
 
 }
 
