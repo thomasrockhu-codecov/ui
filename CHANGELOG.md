@@ -1,3 +1,13 @@
+## [4.0.6](https://github.com/nordnet/ui/compare/v4.0.5...v4.0.6) (2020-10-23)
+
+
+### Bug Fixes
+
+* 🐛 add move big icon ([a055696](https://github.com/nordnet/ui/commit/a055696))
+* 🐛 change increase icon ([7e82f37](https://github.com/nordnet/ui/commit/7e82f37))
+* 🐛 change move icon ([8280ca7](https://github.com/nordnet/ui/commit/8280ca7))
+* 🐛 change plusthin icon ([44b4de2](https://github.com/nordnet/ui/commit/44b4de2))
+
 ## [4.0.5](https://github.com/nordnet/ui/compare/v4.0.4...v4.0.5) (2020-10-22)
 
 
