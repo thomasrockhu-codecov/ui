@@ -29,6 +29,8 @@ const MobileProgressLevels = styled.ol`
   ${listReset}
 `;
 
+const Wrapper = styled.div``;
+
 const ListItem = styled.li<InternalProps>`
   display: block;
   position: relative;
@@ -60,11 +62,9 @@ const ListItem = styled.li<InternalProps>`
       right: ${({ theme }) => theme.spacing.unit(3)}px;
     }
   }
-`;
 
-const Wrapper = styled(Box)<InternalProps>`
-  ${ListItem} + ${ListItem} & {
-    ${({ theme }) => theme.media.greaterThan(theme.breakpoints.md)} {
+  ${({ theme }) => theme.media.greaterThan(theme.breakpoints.md)} {
+    & + & ${Wrapper} {
       margin-top: ${(p) => p.theme.spacing.unit(2)}px;
     }
   }
