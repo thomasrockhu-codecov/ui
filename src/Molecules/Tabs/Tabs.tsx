@@ -75,6 +75,7 @@ const isItemOrUndefined = (x: any): x is { type: typeof Item; props: ItemProps }
 
 const components = {
   TabContent,
+  TabBar: StyledUl,
 };
 
 export const Tabs: ContainerComponent & {
