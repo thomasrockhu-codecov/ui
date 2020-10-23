@@ -61,7 +61,6 @@ import SegmentedControl from './Molecules/SegmentedControl';
 import Select from './Molecules/Select';
 import SelectionCard from './Molecules/SelectionCard';
 import Slider from './Molecules/Slider';
-import StatusModal from './Molecules/StatusModal';
 import Switch from './Molecules/Switch';
 import Tabs from './Molecules/Tabs';
 import TabsNav from './Molecules/TabsNav';
@@ -72,6 +71,7 @@ import TruncateWithTooltip from './Molecules/TruncateWithTooltip';
 /** Organisms */
 import CardWithTabs from './Organisms/CardWithTabs';
 import Development from './Organisms/Development';
+import StatusModal from './Organisms/StatusModal';
 
 /** Hooks */
 import { useKeyPress, useOnClickOutside } from './common/Hooks';
