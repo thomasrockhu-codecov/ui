@@ -1,3 +1,25 @@
+## [4.0.7](https://github.com/nordnet/ui/compare/v4.0.6...v4.0.7) (2020-10-23)
+
+
+### Bug Fixes
+
+* change selector ([73b551d](https://github.com/nordnet/ui/commit/73b551d))
+* change selector ([070ec00](https://github.com/nordnet/ui/commit/070ec00))
+* change selector ([5ebbe25](https://github.com/nordnet/ui/commit/5ebbe25))
+* change selector ([637d46b](https://github.com/nordnet/ui/commit/637d46b))
+* multistepprogress border-top on mobile ([ca993ed](https://github.com/nordnet/ui/commit/ca993ed))
+* props ([3e3beab](https://github.com/nordnet/ui/commit/3e3beab))
+* props ([9920932](https://github.com/nordnet/ui/commit/9920932))
+* rebuild styling ([b969d66](https://github.com/nordnet/ui/commit/b969d66))
+* rm redundant import ([b255bf6](https://github.com/nordnet/ui/commit/b255bf6))
+* rm unnecessary props ([4bfc461](https://github.com/nordnet/ui/commit/4bfc461))
+* update snapshots ([22319da](https://github.com/nordnet/ui/commit/22319da))
+* update snapshots ([106f42c](https://github.com/nordnet/ui/commit/106f42c))
+* update snapshots ([88138ae](https://github.com/nordnet/ui/commit/88138ae))
+* update snapshots ([cbc3425](https://github.com/nordnet/ui/commit/cbc3425))
+* update snapshots ([f71fb70](https://github.com/nordnet/ui/commit/f71fb70))
+* update storyshots ([a0c79b5](https://github.com/nordnet/ui/commit/a0c79b5))
+
 ## [4.0.6](https://github.com/nordnet/ui/compare/v4.0.5...v4.0.6) (2020-10-23)
 
 
