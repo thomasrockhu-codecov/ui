@@ -1,3 +1,10 @@
+## [4.0.8](https://github.com/nordnet/ui/compare/v4.0.7...v4.0.8) (2020-10-23)
+
+
+### Bug Fixes
+
+* 🐛 export styled ul as tab bar ([2d9214e](https://github.com/nordnet/ui/commit/2d9214e))
+
 ## [4.0.7](https://github.com/nordnet/ui/compare/v4.0.6...v4.0.7) (2020-10-23)
 
 
