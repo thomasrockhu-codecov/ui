@@ -64,7 +64,7 @@ const ListItem = styled.li<InternalProps>`
 
 const Wrapper = styled(Box)<InternalProps>`
   ${({ theme }) => theme.media.greaterThan(theme.breakpoints.md)} {
-    li + li & {
+    ${ListItem} + ${ListItem} & {
       margin-top: ${(p) => p.theme.spacing.unit(2)}px;
     }
   }
