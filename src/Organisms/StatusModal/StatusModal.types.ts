@@ -1,5 +1,7 @@
+export type Status = 'SUCCESS' | 'ERROR' | 'WARNING';
+
 type Option = {
-  status: string;
+  status?: Status;
   title: string;
   text: string;
   textConfirm: string;
