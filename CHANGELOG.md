@@ -1,3 +1,10 @@
+# [4.1.0](https://github.com/nordnet/ui/compare/v4.0.8...v4.1.0) (2020-10-26)
+
+
+### Features
+
+* **Typography:** add semibold to secondary typography type ([bc953ed](https://github.com/nordnet/ui/commit/bc953ed))
+
 ## [4.0.8](https://github.com/nordnet/ui/compare/v4.0.7...v4.0.8) (2020-10-23)
 
 
