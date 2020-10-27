@@ -71,6 +71,7 @@ import TruncateWithTooltip from './Molecules/TruncateWithTooltip';
 /** Organisms */
 import CardWithTabs from './Organisms/CardWithTabs';
 import Development from './Organisms/Development';
+import StatusModal from './Organisms/StatusModal';
 
 /** Hooks */
 import { useKeyPress, useOnClickOutside } from './common/Hooks';
@@ -142,6 +143,7 @@ export {
   Skeleton,
   Slider,
   Spinner,
+  StatusModal,
   Switch,
   Table,
   Tabs,
