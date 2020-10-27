@@ -1,3 +1,16 @@
+# [4.2.0](https://github.com/nordnet/ui/compare/v4.1.0...v4.2.0) (2020-10-27)
+
+
+### Bug Fixes
+
+* 🐛 improve types & cleanup ([75eb251](https://github.com/nordnet/ui/commit/75eb251))
+* 🐛 pr fixes, change api ([f1e9bbb](https://github.com/nordnet/ui/commit/f1e9bbb))
+
+
+### Features
+
+* 🎸 implement status modal ([e2d0768](https://github.com/nordnet/ui/commit/e2d0768))
+
 # [4.1.0](https://github.com/nordnet/ui/compare/v4.0.8...v4.1.0) (2020-10-26)
 
 
