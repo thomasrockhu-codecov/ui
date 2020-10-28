@@ -118,7 +118,7 @@ export const Button: ButtonComponent = React.forwardRef<
   );
 
   if (cms) {
-    assert(false, 'Link: the prop cms is deprecated, please use fullServerRedirect instead.', {
+    assert(false, 'Button: the prop cms is deprecated, please use fullServerRedirect instead.', {
       level: 'warn',
     });
   }
