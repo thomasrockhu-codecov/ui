@@ -1,3 +1,10 @@
+# [4.3.0](https://github.com/nordnet/ui/compare/v4.2.0...v4.3.0) (2020-10-28)
+
+
+### Features
+
+* 🎸 added on mouse leave to input text ([8db0896](https://github.com/nordnet/ui/commit/8db0896))
+
 # [4.2.0](https://github.com/nordnet/ui/compare/v4.1.0...v4.2.0) (2020-10-27)
 
 
