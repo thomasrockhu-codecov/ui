@@ -1,41 +1,5 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Storyshots Molecules / Link Cms link with its default values 1`] = `
-.c0 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #282823;
-  margin: 0;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
-}
-
-.c1 {
-  display: inline;
-  padding: 0;
-  color: #0046FF;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-}
-
-.c1:hover {
-  -webkit-text-decoration: underline;
-  text-decoration: underline;
-}
-
-<span
-  className="c0"
->
-  <a
-    className="c1"
-    href="https://example.com"
-    onClick={[Function]}
-  >
-    Example CMS
-  </a>
-</span>
-`;
-
 exports[`Storyshots Molecules / Link Default usage 1`] = `
 Array [
   .c0 {
@@ -140,7 +104,7 @@ exports[`Storyshots Molecules / Link External link with its default values 1`] =
     rel="noopener noreferrer nofollow"
     target="_blank"
   >
-    Example
+    Example external link
   </a>
 </span>
 `;
@@ -178,7 +142,43 @@ exports[`Storyshots Molecules / Link External link with rel and target overriden
     rel="nofollow"
     target="_self"
   >
-    Example CMS
+    Example external link
+  </a>
+</span>
+`;
+
+exports[`Storyshots Molecules / Link Full server redirect link with its default values 1`] = `
+.c0 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c1 {
+  display: inline;
+  padding: 0;
+  color: #0046FF;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c1:hover {
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+<span
+  className="c0"
+>
+  <a
+    className="c1"
+    href="https://example.com"
+    onClick={[Function]}
+  >
+    Example full server redirect link
   </a>
 </span>
 `;
