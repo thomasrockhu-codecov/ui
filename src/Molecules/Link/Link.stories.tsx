@@ -63,7 +63,7 @@ export const externalLinkWithItsDefaultValues = () => (
   <Provider>
     <Typography type="secondary" weight="bold">
       <Link to="https://example.com" onClick={action('clicked')} external>
-        Example
+        Example external link
       </Link>
     </Typography>
   </Provider>
@@ -73,18 +73,18 @@ externalLinkWithItsDefaultValues.story = {
   name: 'External link with its default values',
 };
 
-export const cmsLinkWithItsDefaultValues = () => (
+export const fullServerRedirectLinkWithItsDefaultValues = () => (
   <Provider>
     <Typography type="secondary" weight="bold">
-      <Link to="https://example.com" onClick={action('clicked')} cms>
-        Example CMS
+      <Link to="https://example.com" onClick={action('clicked')} fullServerRedirect>
+        Example full server redirect link
       </Link>
     </Typography>
   </Provider>
 );
 
-cmsLinkWithItsDefaultValues.story = {
-  name: 'Cms link with its default values',
+fullServerRedirectLinkWithItsDefaultValues.story = {
+  name: 'Full server redirect link with its default values',
 };
 
 export const externalLinkWithRelAndTargetOverriden = () => (
@@ -97,7 +97,7 @@ export const externalLinkWithRelAndTargetOverriden = () => (
         target="_self"
         external
       >
-        Example CMS
+        Example external link
       </Link>
     </Typography>
   </Provider>

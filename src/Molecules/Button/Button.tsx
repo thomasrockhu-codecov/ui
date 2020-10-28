@@ -13,7 +13,7 @@ const isSecondary = (variant: ButtonProps['variant']) => variant === 'secondary'
 const isNeutral = (variant: ButtonProps['variant']) => variant === 'neutral';
 
 const StyledButton = styled(NormalizedElements.Button)<InnerProps>`
-  ${p => {
+  ${(p) => {
     if (isSecondary(p.$variant)) {
       return secondaryStyles;
     }
@@ -26,16 +26,16 @@ const StyledButton = styled(NormalizedElements.Button)<InnerProps>`
   }}
   border: none;
   border-radius: 0;
-  cursor: ${p => (p.disabled ? 'not-allowed' : 'pointer')};
+  cursor: ${(p) => (p.disabled ? 'not-allowed' : 'pointer')};
 `;
 
-const CleanLink: FC<RawLinkProps> = props => {
+const CleanLink: FC<RawLinkProps> = (props) => {
   const RawLink = useLink();
   return <RawLink {...props} />;
 };
 
 const StyledLink = styled(CleanLink)<InnerProps>`
-  ${p => {
+  ${(p) => {
     if (isSecondary(p.$variant)) {
       return secondaryStyles;
     }
@@ -71,6 +71,7 @@ export const Button: ButtonComponent = React.forwardRef<
     loading,
     external,
     cms,
+    fullServerRedirect,
     onMouseEnter,
     onMouseLeave,
     onMouseOver,
@@ -116,6 +117,12 @@ export const Button: ButtonComponent = React.forwardRef<
     },
   );
 
+  if (cms) {
+    assert(false, 'Link: the prop cms is deprecated, please use fullServerRedirect instead.', {
+      level: 'warn',
+    });
+  }
+
   assert(
     toAndDisabledAreNotPresentTogether,
     "You're using `to` prop together with `disabled` prop. `Disabled` prop won't be propagated to the dom node, because <a> element can't be disabled",
@@ -130,6 +137,7 @@ export const Button: ButtonComponent = React.forwardRef<
         innerRef={ref as React.Ref<HTMLAnchorElement>}
         external={external}
         cms={cms}
+        fullServerRedirect={fullServerRedirect}
         to={to}
         as={as}
         target={target}

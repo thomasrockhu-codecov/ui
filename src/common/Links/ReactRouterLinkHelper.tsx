@@ -2,19 +2,20 @@ import React, { FC } from 'react';
 import { MemoryRouter, Link as RRLink } from 'react-router-dom';
 import { LinkProvider, LinkProps } from '.';
 
-export const RawLink: FC<LinkProps> = props => {
+export const RawLink: FC<LinkProps> = (props) => {
   const {
     innerRef,
     to,
     external,
     cms,
+    fullServerRedirect,
     children,
     className,
     target = external ? '_blank' : undefined,
     rel = external ? 'noopener noreferrer nofollow' : undefined,
     ...rest
   } = props;
-  if (cms || external) {
+  if (cms || fullServerRedirect || external) {
     return (
       <a href={to} ref={innerRef} target={target} rel={rel} className={className} {...rest}>
         {children}
