@@ -2,7 +2,7 @@ import React, { useContext, FC } from 'react';
 import styled, { ThemedStyledProps } from 'styled-components';
 import { LinkComponent, LinkProps } from './Link.types';
 import { Theme } from '../../theme/theme.types';
-import { isUndefined } from '../../common/utils';
+import { isUndefined, assert } from '../../common/utils';
 import NormalizedElements from '../../common/NormalizedElements';
 import TrackingContext from '../../common/tracking';
 import { useLink, LinkProps as RawLinkProps } from '../../common/Links';
@@ -42,18 +42,18 @@ const getSharedStyle = (
   `;
 };
 
-const CleanLink: FC<RawLinkProps> = props => {
+const CleanLink: FC<RawLinkProps> = (props) => {
   const RawLink = useLink();
   return <RawLink {...props} />;
 };
 
 const StyledLink = styled(CleanLink)<LinkProps>`
-  ${p => getSharedStyle(p)}
+  ${(p) => getSharedStyle(p)}
   text-decoration: none;
 `;
 
 const StyledButton = styled(NormalizedElements.Button)<LinkProps>`
-  ${p => getSharedStyle(p)}
+  ${(p) => getSharedStyle(p)}
   /* resetting button styles */
   border: none;
   background: transparent;
@@ -62,7 +62,7 @@ const StyledButton = styled(NormalizedElements.Button)<LinkProps>`
   -webkit-appearance: none !important; /* stylelint-disable-line property-no-vendor-prefix */
   /* resetting button styles end */
 
-  cursor: ${p => (p.disabled ? 'not-allowed' : 'pointer')};
+  cursor: ${(p) => (p.disabled ? 'not-allowed' : 'pointer')};
 
   font-weight: inherit; /* remove when and if typography is handled inside the component */
 `;
@@ -77,6 +77,7 @@ export const Link: LinkComponent = React.forwardRef<any, LinkProps>((props, ref)
     onClick,
     external,
     cms,
+    fullServerRedirect,
     as, // FIXME Might have broken as functionallity, needs verification.
     color,
     onMouseEnter,
@@ -108,6 +109,12 @@ export const Link: LinkComponent = React.forwardRef<any, LinkProps>((props, ref)
     );
   }
 
+  if (cms) {
+    assert(false, 'Link: the prop cms is deprecated, please use fullServerRedirect instead.', {
+      level: 'warn',
+    });
+  }
+
   return (
     <StyledLink
       innerRef={ref}
@@ -116,6 +123,7 @@ export const Link: LinkComponent = React.forwardRef<any, LinkProps>((props, ref)
       to={to}
       external={external}
       cms={cms}
+      fullServerRedirect={fullServerRedirect}
       as={as}
       $color={color}
       $display={display}

@@ -23,7 +23,9 @@ export type ButtonProps = {
   type?: 'button' | 'reset' | 'submit';
   to?: any; // TODO define this, used to be LinkProps.to from 'react-router-dom' types.
   external?: boolean;
+  /** @deprecated use fullServerRedirect instead */
   cms?: boolean;
+  fullServerRedirect?: boolean;
   rel?: string;
   target?: '_blank' | '_self';
   colorFn?: ColorFn;
