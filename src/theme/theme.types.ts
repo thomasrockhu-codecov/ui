@@ -289,6 +289,8 @@ export type ThemeColors<Version extends ThemeColorsVersion> = {
   progressBarDone: RawColor['positive'];
   /** positive */
   progressBarFailure: RawColor['negative'];
+  /** index */
+  progressBarWarning: RawColor['index'];
   /** cta */
   progressBarActive: RawColor['cta'];
   /** gray4 */

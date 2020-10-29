@@ -57,6 +57,17 @@ export const FailureStep = () => {
   );
 };
 
+export const WarningStep = () => {
+  const stepLabels = ['One', 'Two', 'Step with warning', 'Four'];
+  return (
+    <Box px={10}>
+      <Flexbox container direction="column" gutter={2}>
+        <ProgressBar numberOfSteps={4} currentStep={3} stepLabels={stepLabels} warning />
+      </Flexbox>
+    </Box>
+  );
+};
+
 export const LotsOfSteps = () => {
   const stepLabels = ['Lorem', 'Ipsum', 'Dolor', 'Sit', 'Amet', 'Ego', 'Sum'];
   return (

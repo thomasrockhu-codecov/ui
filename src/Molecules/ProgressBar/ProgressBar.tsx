@@ -17,13 +17,21 @@ const StyledContainer = styled(Flexbox).withConfig({
 
 const StyledBubble = styled(Flexbox).withConfig({
   shouldForwardProp: (prop) =>
-    !['done', 'active', 'failed', 'colorDone', 'colorActive', 'colorNext', 'colorFailure'].includes(
-      prop,
-    ),
+    ![
+      'done',
+      'active',
+      'failed',
+      'warning',
+      'colorDone',
+      'colorActive',
+      'colorNext',
+      'colorFailure',
+    ].includes(prop),
 })<{
   done: boolean;
   active: boolean;
   failed: boolean;
+  warning: boolean;
   colorDone: Props['colorDone'];
   colorActive: Props['colorActive'];
   colorNext: Props['colorNext'];
@@ -39,6 +47,7 @@ const StyledBubble = styled(Flexbox).withConfig({
     done,
     active,
     failed,
+    warning,
     colorDone,
     colorActive,
     colorNext,
@@ -49,6 +58,9 @@ const StyledBubble = styled(Flexbox).withConfig({
     }
     if (active && failed) {
       return colorFailure ? colorFailure(theme) : theme.color.progressBarFailure;
+    }
+    if (active && warning) {
+      return colorFailure ? colorFailure(theme) : theme.color.progressBarWarning;
     }
     if (active) {
       return colorActive ? colorActive(theme) : theme.color.progressBarActive;
@@ -90,6 +102,7 @@ const ProgressBar: FC<Props> = ({
   currentStep,
   stepLabels,
   failed = false,
+  warning = false,
   colorDone,
   colorActive,
   colorNext,
@@ -116,6 +129,9 @@ const ProgressBar: FC<Props> = ({
       if (failed) {
         return titleFailure || 'failure step';
       }
+      if (warning) {
+        return titleFailure || 'warning step';
+      }
       return titleNext || 'step not done';
     };
 
@@ -134,6 +150,14 @@ const ProgressBar: FC<Props> = ({
           <Icon.Cross color={(t) => (colorText ? colorText(t) : t.color.textLight)} size={3} />
         );
       }
+      if (stepActive && warning) {
+        return (
+          <Icon.WarningTriangleHollow
+            color={(t) => (colorText ? colorText(t) : t.color.textLight)}
+            size={4}
+          />
+        );
+      }
       return stepNumber;
     };
 
@@ -148,6 +172,7 @@ const ProgressBar: FC<Props> = ({
           done={stepDone}
           active={stepActive}
           failed={failed}
+          warning={warning}
           title={title}
           colorDone={colorDone}
           colorActive={colorActive}
