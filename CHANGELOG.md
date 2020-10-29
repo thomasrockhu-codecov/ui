@@ -1,3 +1,12 @@
+## [4.4.1](https://github.com/nordnet/ui/compare/v4.4.0...v4.4.1) (2020-10-29)
+
+
+### Bug Fixes
+
+* 🐛 add two new variants of warning triangle icon ([1d165fb](https://github.com/nordnet/ui/commit/1d165fb))
+* 🐛 add warning step variant to ProgressBar ([6a71271](https://github.com/nordnet/ui/commit/6a71271))
+* 🐛 adjust line color of active step in ProgressBar ([e4e6587](https://github.com/nordnet/ui/commit/e4e6587))
+
 # [4.4.0](https://github.com/nordnet/ui/compare/v4.3.0...v4.4.0) (2020-10-29)
 
 
