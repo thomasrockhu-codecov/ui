@@ -1,3 +1,10 @@
+# [4.4.0](https://github.com/nordnet/ui/compare/v4.3.0...v4.4.0) (2020-10-29)
+
+
+### Features
+
+* 🎸 add fullServerRedirect prop to Link and Button ([f3ac610](https://github.com/nordnet/ui/commit/f3ac610))
+
 # [4.3.0](https://github.com/nordnet/ui/compare/v4.2.0...v4.3.0) (2020-10-28)
 
 
