@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import styled from 'styled-components';
-import { ExpandRowComponent, RowComponent } from './Row.types';
+import { ExpandRowComponent, ExpandRowProps, Props, RowComponent } from './Row.types';
 import { Flexbox } from '../../..';
 import { ColorFn } from '../../../common/Types/sharedTypes';
 import { getDensityPaddings } from '../shared/textUtils';
@@ -70,58 +70,65 @@ const StyledExpandedRow = styled('div').withConfig({
   border-bottom: 1px solid ${(p) => p.separatorColor(p.theme)};
 `;
 
-const ExpandRow: ExpandRowComponent = ({
-  expandItems: expandItemsXs,
-  expandChildren: expandChildrenXs,
-  sm,
-  md,
-  lg,
-  xl,
-  separatorColor = (theme) => theme.color.divider,
-  ...htmlProps
-}) => (
-  <RenderForSizes
-    xs={{
-      expandItems: expandItemsXs,
-      expandChildren: expandChildrenXs,
-    }}
-    sm={sm}
-    md={md}
-    lg={lg}
-    xl={xl}
-  >
-    {({ className, expandChildren, expandItems }) => (
-      <StyledExpandedRow
-        role="row"
-        separatorColor={separatorColor}
-        className={className}
-        {...htmlProps}
-      >
-        <ExpandArea expandItems={expandItems} expandChildren={expandChildren} />
-      </StyledExpandedRow>
-    )}
-  </RenderForSizes>
-);
+const ExpandRow: ExpandRowComponent = React.forwardRef<HTMLDivElement, ExpandRowProps>((props, ref) => {
+  const {
+    expandItems: expandItemsXs,
+    expandChildren: expandChildrenXs,
+    sm,
+    md,
+    lg,
+    xl,
+    separatorColor = (theme) => theme.color.divider,
+    ...htmlProps
+  } = props;
 
-const Row: RowComponent = ({
-  className,
-  expanded,
-  initiallyExpanded = false,
-  hoverHighlight = true,
-  hideSeparator = false,
-  // If false means that it's a header
-  isContent = true,
-  separatorColor = (theme) => theme.color.divider,
-  onExpandToggle,
-  expandChildren: expandChildrenXs,
-  expandItems: expandItemsXs,
-  children,
-  sm,
-  md,
-  lg,
-  xl,
-  ...htmlProps
-}) => {
+  return (
+    <RenderForSizes
+      xs={{
+        expandItems: expandItemsXs,
+        expandChildren: expandChildrenXs,
+      }}
+      sm={sm}
+      md={md}
+      lg={lg}
+      xl={xl}
+    >
+      {({ className, expandChildren, expandItems }) => (
+        <StyledExpandedRow
+          ref={ref}
+          role="row"
+          separatorColor={separatorColor}
+          className={className}
+          {...htmlProps}
+        >
+          <ExpandArea expandItems={expandItems} expandChildren={expandChildren} />
+        </StyledExpandedRow>
+      )}
+    </RenderForSizes>
+  );
+});
+
+const Row: RowComponent = React.forwardRef<any, Props>((props, ref) => {
+  const {
+    className,
+    expanded,
+    initiallyExpanded = false,
+    hoverHighlight = true,
+    hideSeparator = false,
+    // If false means that it's a header
+    isContent = true,
+    separatorColor = (theme) => theme.color.divider,
+    onExpandToggle,
+    expandChildren: expandChildrenXs,
+    expandItems: expandItemsXs,
+    children,
+    sm,
+    md,
+    lg,
+    xl,
+    ...htmlProps
+  } = props;
+
   const {
     density: xsDensity,
     columnDistance: xsColumnDistance,
@@ -160,6 +167,7 @@ const Row: RowComponent = ({
       >
         {({ className: mediaClassName, density, expandable, columnDistance }) => (
           <StyledRow
+            ref={ref}
             className={mediaClassName ? `${className} ${mediaClassName}` : className}
             container
             alignItems="center"
@@ -202,7 +210,7 @@ const Row: RowComponent = ({
       )}
     </>
   );
-};
+});
 
 Row.ExpandItem = ExpandItem;
 Row.ExpandItems = ExpandItems;
