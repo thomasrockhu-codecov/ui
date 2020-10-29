@@ -81,15 +81,28 @@ const StyledTypography = styled(Typography)`
 `;
 
 const StyledLine = styled.div.withConfig({
-  shouldForwardProp: (prop) => !['done', 'colorDone', 'colorNext'].includes(prop),
+  shouldForwardProp: (prop) =>
+    !['done', 'active', 'failed', 'warning', 'colorDone', 'colorNext'].includes(prop),
 })<{
   done: boolean;
+  active: boolean;
+  failed: boolean;
+  warning: boolean;
   colorDone: Props['colorDone'];
   colorNext: Props['colorNext'];
 }>`
   width: 100%;
   height: 2px;
-  background: ${({ theme, done, colorDone, colorNext }) => {
+  background: ${({ theme, done, active, failed, warning, colorDone, colorNext }) => {
+    if (active && failed) {
+      return theme.color.progressBarFailure;
+    }
+    if (active && warning) {
+      return theme.color.progressBarWarning;
+    }
+    if (active) {
+      return theme.color.cta;
+    }
     if (done) {
       return colorDone ? colorDone(theme) : theme.color.progressBarDone;
     }
@@ -118,6 +131,7 @@ const ProgressBar: FC<Props> = ({
   const stepBubble = (stepNumber: number) => {
     const stepDone = stepNumber < currentStep;
     const stepActive = stepNumber === currentStep;
+    const lineActive = stepNumber + 1 === currentStep;
 
     const titleProgress = () => {
       if (stepDone) {
@@ -196,7 +210,14 @@ const ProgressBar: FC<Props> = ({
           </StyledTypography>
         </StyledBubble>
         {stepNumber < numberOfSteps && (
-          <StyledLine done={stepDone} colorDone={colorDone} colorNext={colorNext} />
+          <StyledLine
+            done={stepDone}
+            active={lineActive}
+            failed={failed}
+            warning={warning}
+            colorDone={colorDone}
+            colorNext={colorNext}
+          />
         )}
       </React.Fragment>
     );
