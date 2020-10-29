@@ -103,7 +103,9 @@ import { ThreeDots } from './components/ThreeDots';
 import { Trash } from './components/Trash';
 import { TrendlineArrowhead } from './components/TrendlineArrowhead';
 import { Utilities } from './components/Utilities';
+import { WarningCircle } from './components/WarningCircle';
 import { WarningTriangle } from './components/WarningTriangle';
+import { WarningTriangleHollow } from './components/WarningTriangleHollow';
 
 export default {
   AccountNumbers,
@@ -211,5 +213,7 @@ export default {
   Trash,
   TrendlineArrowhead,
   Utilities,
+  WarningCircle,
   WarningTriangle,
+  WarningTriangleHollow,
 };

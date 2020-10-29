@@ -4226,6 +4226,54 @@ Array [
       focusable="false"
       preserveAspectRatio="xMidYMid meet"
       role="presentation"
+      viewBox="0 0 32 32"
+    >
+      <path
+        d="M16 32c8.837 0 16-7.163 16-16S24.837 0 16 0 0 7.163 0 16s7.163 16 16 16z"
+      />
+      <g
+        fill="#FFF"
+      >
+        <path
+          d="M25.122 22L16.015 5.274 6.876 22h18.246zm-9.11-13.941l6.865 12.608H9.123l6.889-12.608z"
+        />
+        <path
+          d="M15.333 17.333h1.333v1.333h-1.333z"
+        />
+        <path
+          d="M16.733 11.439v4.667H15.4v-4.667z"
+        />
+      </g>
+    </svg>
+  </div>,
+  .c0 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 20px;
+  height: 20px;
+  fill: #0046FF;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
+}
+
+<div
+    style={
+      Object {
+        "display": "inline-block",
+        "outline": "1px dashed #bbb",
+      }
+    }
+  >
+    <svg
+      aria-hidden="true"
+      className="c0"
+      focusable="false"
+      preserveAspectRatio="xMidYMid meet"
+      role="presentation"
       viewBox="0 0 92 90"
     >
       <path
@@ -4234,6 +4282,49 @@ Array [
       <path
         d="M50 63.8333333v8h-8v-8h8zm0-28v24h-8v-24h8z"
         fill="#FFF"
+      />
+    </svg>
+  </div>,
+  .c0 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 20px;
+  height: 20px;
+  fill: #0046FF;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
+}
+
+<div
+    style={
+      Object {
+        "display": "inline-block",
+        "outline": "1px dashed #bbb",
+      }
+    }
+  >
+    <svg
+      aria-hidden="true"
+      className="c0"
+      focusable="false"
+      preserveAspectRatio="xMidYMid meet"
+      role="presentation"
+      viewBox="2 2 34 34"
+    >
+      <path
+        d="M35.104 32.25L18.029.89.893 32.25h34.21zM18.022 6.11l12.873 23.64H5.105L18.022 6.11z"
+        fillRule="nonzero"
+      />
+      <path
+        d="M16.75 23.5h2.5V26h-2.5z"
+      />
+      <path
+        d="M19.375 12.448v8.75h-2.5v-8.75z"
+        fillRule="nonzero"
       />
     </svg>
   </div>,
@@ -8365,6 +8456,52 @@ exports[`Storyshots Atoms / Icon Available icons 1`] = `
     <div
       className="c2"
     >
+      WarningCircle
+    </div>
+    <div>
+      <div
+        style={
+          Object {
+            "display": "inline-block",
+            "outline": "1px dashed #bbb",
+          }
+        }
+      >
+        <svg
+          aria-hidden="true"
+          className="c3"
+          focusable="false"
+          preserveAspectRatio="xMidYMid meet"
+          role="presentation"
+          viewBox="0 0 32 32"
+        >
+          <path
+            d="M16 32c8.837 0 16-7.163 16-16S24.837 0 16 0 0 7.163 0 16s7.163 16 16 16z"
+          />
+          <g
+            fill="#FFF"
+          >
+            <path
+              d="M25.122 22L16.015 5.274 6.876 22h18.246zm-9.11-13.941l6.865 12.608H9.123l6.889-12.608z"
+            />
+            <path
+              d="M15.333 17.333h1.333v1.333h-1.333z"
+            />
+            <path
+              d="M16.733 11.439v4.667H15.4v-4.667z"
+            />
+          </g>
+        </svg>
+      </div>
+    </div>
+  </div>
+  <div
+    className="c1"
+    direction="row"
+  >
+    <div
+      className="c2"
+    >
       WarningTriangle
     </div>
     <div>
@@ -8390,6 +8527,47 @@ exports[`Storyshots Atoms / Icon Available icons 1`] = `
           <path
             d="M50 63.8333333v8h-8v-8h8zm0-28v24h-8v-24h8z"
             fill="#FFF"
+          />
+        </svg>
+      </div>
+    </div>
+  </div>
+  <div
+    className="c1"
+    direction="row"
+  >
+    <div
+      className="c2"
+    >
+      WarningTriangleHollow
+    </div>
+    <div>
+      <div
+        style={
+          Object {
+            "display": "inline-block",
+            "outline": "1px dashed #bbb",
+          }
+        }
+      >
+        <svg
+          aria-hidden="true"
+          className="c3"
+          focusable="false"
+          preserveAspectRatio="xMidYMid meet"
+          role="presentation"
+          viewBox="2 2 34 34"
+        >
+          <path
+            d="M35.104 32.25L18.029.89.893 32.25h34.21zM18.022 6.11l12.873 23.64H5.105L18.022 6.11z"
+            fillRule="nonzero"
+          />
+          <path
+            d="M16.75 23.5h2.5V26h-2.5z"
+          />
+          <path
+            d="M19.375 12.448v8.75h-2.5v-8.75z"
+            fillRule="nonzero"
           />
         </svg>
       </div>

@@ -12,6 +12,8 @@ export type Props = {
   currentStep: number;
   /** Marks active step as failed */
   failed?: boolean;
+  /** Marks active step with a warning */
+  warning?: boolean;
   /** Label that will be rendered together with each corresponding step bubble
    * The array must be same length as numberOfSteps
    * Labels will be hidden on smaller screen widths */
