@@ -4,6 +4,7 @@ import parse from 'date-fns/parse';
 import format from 'date-fns/format';
 import isMatch from 'date-fns/isMatch';
 import { useIntl } from 'react-intl';
+import { closestTo, isAfter, isSameDay, startOfDay } from 'date-fns';
 import { Props } from './DatePicker.types';
 
 /**
@@ -16,6 +17,7 @@ import { useOnClickOutside } from '../../common/Hooks';
 import { newDate, getLocale, isValid, getDateFormat } from './shared/dateUtils';
 import Header from './Header';
 import Calendar from './Calendar';
+import { REGULAR_DATE_PICKER } from './shared/constants';
 
 const StyledInputText = styled(Input.Text)`
   z-index: 1;
@@ -47,6 +49,8 @@ export const DatePicker = (React.forwardRef<HTMLDivElement, Props>((props, ref) 
     id,
     open: openProp = false,
     selectedDate: selectedDateProp,
+    selectedEndDate: selectedEndDateProp,
+    variant = REGULAR_DATE_PICKER,
     width = 78,
     inputSize,
   } = props;
@@ -78,8 +82,10 @@ export const DatePicker = (React.forwardRef<HTMLDivElement, Props>((props, ref) 
   const initialInputValue = selectedDateProp ? format(selectedDateProp, dateFormat, opts) : '';
 
   const [open, setOpen] = useState<boolean>(openProp);
-  const [viewedDate, setViewedDate] = useState<Date>(selectedDateProp || newDate());
+  const [viewedDate, setViewedDate] = useState<Date>(selectedDateProp || startOfDay(new Date()));
   const [selectedDate, setSelectedDate] = useState<Date>(selectedDateProp || viewedDate);
+  const [selectedEndDate, setSelectedEndDate] = useState<Date | null>(selectedEndDateProp || null);
+
   const [inputValue, setInputValue] = useState<string>(initialInputValue);
 
   const theme = useTheme();
@@ -88,18 +94,55 @@ export const DatePicker = (React.forwardRef<HTMLDivElement, Props>((props, ref) 
     setOpen(openProp);
   }, [openProp]);
 
-  const handleOnDateCliked = useCallback(
+  const handleRangeDateClick = useCallback(
+    (date: Date) => {
+      if (!selectedDate) {
+        setInputValue(format(date, dateFormat, opts));
+        setSelectedDate(date);
+        return;
+      }
+      if (!selectedEndDate) {
+        if (isAfter(date, selectedDate)) {
+          setSelectedEndDate(date);
+        } else {
+          setSelectedEndDate(selectedDate);
+          setSelectedDate(date);
+        }
+        return;
+      }
+
+      if (isSameDay(selectedDate, closestTo(date, [selectedEndDate, selectedDate]))) {
+        setSelectedDate(date);
+      } else {
+        setSelectedEndDate(date);
+      }
+    },
+    [selectedDate, selectedEndDate, dateFormat, opts],
+  );
+
+  const handleRegularDateClick = useCallback(
     (date: Date) => {
       setInputValue(format(date, dateFormat, opts));
       setSelectedDate(date);
 
+      setOpen(false);
+    },
+    [dateFormat, opts, setOpen],
+  );
+
+  const handleOnDateClick = useCallback(
+    (date: Date) => {
+      if (variant === REGULAR_DATE_PICKER) {
+        handleRegularDateClick(date);
+      } else {
+        handleRangeDateClick(date);
+      }
+
       if (onChange) {
         onChange(date);
       }
-
-      setOpen(false);
     },
-    [dateFormat, opts, onChange, setSelectedDate, setOpen],
+    [variant, onChange, handleRegularDateClick, handleRangeDateClick],
   );
 
   const handleOnMonthChange = useCallback(
@@ -161,8 +204,9 @@ export const DatePicker = (React.forwardRef<HTMLDivElement, Props>((props, ref) 
         enableDate={enableDate}
         viewedDate={viewedDate}
         locale={locale}
-        onClick={handleOnDateCliked}
+        onClick={handleOnDateClick}
         selectedDate={selectedDate as Date}
+        selectedEndDate={selectedEndDate as Date}
       />
     </Box>
   );

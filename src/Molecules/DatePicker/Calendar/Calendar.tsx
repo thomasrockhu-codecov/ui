@@ -109,6 +109,7 @@ const Calendar: React.FC<Props> = ({
   viewedDate,
   onClick,
   selectedDate,
+  selectedEndDate,
 }) => {
   const arrowLeft = useKeyPress('ArrowLeft');
   const arrowRight = useKeyPress('ArrowRight');
@@ -160,7 +161,10 @@ const Calendar: React.FC<Props> = ({
               enabled={enableDate && enableDate(d)}
               disabled={disableDate && disableDate(d)}
               onClick={() => onClick(d)}
-              selected={selectedDate && isSameDay(selectedDate, d)}
+              selected={
+                (selectedDate && isSameDay(selectedDate, d)) ||
+                (selectedEndDate && isSameDay(selectedEndDate, d))
+              }
               sameMonth={isSameMonth(viewedDate, d)}
               locale={localeObj}
               hover={hoverDate && isSameDay(hoverDate, d)}

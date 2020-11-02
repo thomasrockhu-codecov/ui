@@ -17,4 +17,5 @@ export type Props = {
   viewedDate: Date;
   onClick: (date: Date) => void;
   selectedDate: Date;
+  selectedEndDate?: Date;
 };
