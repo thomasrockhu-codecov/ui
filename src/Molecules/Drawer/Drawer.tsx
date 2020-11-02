@@ -36,28 +36,28 @@ const Container = styled(motion.div)`
 
 const CloseButton = styled(Button)`
   position: absolute;
-  top: ${p => p.theme.spacing.unit(PADDING)}px;
-  right: ${p => p.theme.spacing.unit(PADDING)}px;
+  top: ${(p) => p.theme.spacing.unit(PADDING)}px;
+  right: ${(p) => p.theme.spacing.unit(PADDING)}px;
 `;
 
 const Content = styled.div`
   overflow-y: auto;
   overflow-x: hidden;
-  margin-bottom: ${p => p.theme.spacing.unit(PADDING)}px;
-  padding: 0 ${p => p.theme.spacing.unit(PADDING)}px;
+  margin-bottom: ${(p) => p.theme.spacing.unit(PADDING)}px;
+  padding: 0 ${(p) => p.theme.spacing.unit(PADDING)}px;
 `;
 
 const H2 = styled.h2`
-  padding-right: ${p => p.theme.spacing.unit(4)}px;
+  padding-right: ${(p) => p.theme.spacing.unit(4)}px;
 `;
 
 const TitleWrapper = styled.div`
-  padding: ${p =>
+  padding: ${(p) =>
     `${p.theme.spacing.unit(PADDING)}px ${p.theme.spacing.unit(PADDING)}px 0 ${p.theme.spacing.unit(
       PADDING,
     )}px`};
-  margin-bottom: ${p => p.theme.spacing.unit(2)}px;
-  min-height: ${p => p.theme.spacing.unit(CROSS_SIZE)}px;
+  margin-bottom: ${(p) => p.theme.spacing.unit(2)}px;
+  min-height: ${(p) => p.theme.spacing.unit(CROSS_SIZE)}px;
   flex: 0 0 auto;
 `;
 
@@ -102,18 +102,30 @@ const Title: React.FC<TitleProps> = ({ title, uid }) => {
 };
 
 export const Drawer = (React.forwardRef<HTMLDivElement, Props>(
-  ({ as, className, children, disableContentStyle, onClose, open: isOpenExternal, title }, ref) => {
+  (
+    {
+      as,
+      className,
+      children,
+      disableContentStyle,
+      onClose,
+      open: isOpenExternal,
+      title,
+      onExitAnimationComplete,
+    },
+    ref,
+  ) => {
     const isControlled = isBoolean(isOpenExternal);
     const escapePress = useKeyPress('Escape');
     const [isOpenInternal, setIsOpenInternal] = useState(true);
     const isOpen = isControlled ? isOpenExternal : isOpenInternal;
-    const isDesktop = useMedia(t => t.media.greaterThan(t.breakpoints.sm)) || false;
+    const isDesktop = useMedia((t) => t.media.greaterThan(t.breakpoints.sm)) || false;
     const seed = useUIDSeed();
     const uid = seed(displayName);
     const dragControls = useDragControls();
 
     const startDrag = useCallback(
-      event => {
+      (event) => {
         dragControls.start(event, {
           snapToCursor: false,
         });
@@ -140,7 +152,7 @@ export const Drawer = (React.forwardRef<HTMLDivElement, Props>(
     }, [escapePress, handleCloseClick, isOpen]);
 
     return (
-      <AnimatePresence>
+      <AnimatePresence onExitComplete={onExitAnimationComplete}>
         {isOpen ? (
           <Portal>
             <FocusLock disabled={isDesktop}>
