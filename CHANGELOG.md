@@ -1,3 +1,10 @@
+## [4.4.2](https://github.com/nordnet/ui/compare/v4.4.1...v4.4.2) (2020-11-02)
+
+
+### Bug Fixes
+
+* 🐛 receive exit complete callback ([48eb328](https://github.com/nordnet/ui/commit/48eb328))
+
 ## [4.4.1](https://github.com/nordnet/ui/compare/v4.4.0...v4.4.1) (2020-10-29)
 
 
