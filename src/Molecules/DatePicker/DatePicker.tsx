@@ -101,21 +101,25 @@ export const DatePicker = (React.forwardRef<HTMLDivElement, Props>((props, ref) 
         setSelectedDate(date);
         return;
       }
-      if (!selectedEndDate) {
-        if (isAfter(date, selectedDate)) {
-          setSelectedEndDate(date);
-        } else {
-          setSelectedEndDate(selectedDate);
-          setSelectedDate(date);
-        }
-        return;
-      }
 
-      if (isSameDay(selectedDate, closestTo(date, [selectedEndDate, selectedDate]))) {
-        setSelectedDate(date);
-      } else {
-        setSelectedEndDate(date);
-      }
+      const [startDate, endDate] = ((): [Date, Date | null] => {
+        const swapDate = !selectedEndDate && !isAfter(date, selectedDate);
+        const moveSelectedDate =
+          selectedEndDate &&
+          isSameDay(selectedDate, closestTo(date, [selectedEndDate, selectedDate]));
+
+        if (swapDate) {
+          return [date, selectedDate];
+        }
+        if (moveSelectedDate) {
+          return [date, selectedEndDate];
+        }
+        return [selectedDate, date];
+      })();
+
+      setSelectedDate(startDate);
+      setSelectedEndDate(endDate);
+      setInputValue(format(startDate, dateFormat, opts));
     },
     [selectedDate, selectedEndDate, dateFormat, opts],
   );
