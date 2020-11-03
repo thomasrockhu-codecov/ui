@@ -1,3 +1,11 @@
+## [4.4.3](https://github.com/nordnet/ui/compare/v4.4.2...v4.4.3) (2020-11-03)
+
+
+### Bug Fixes
+
+* 🐛 add sellingpoint icons ([73755ba](https://github.com/nordnet/ui/commit/73755ba))
+* 🐛 allow passing color to sellingpoint icons ([691e7d0](https://github.com/nordnet/ui/commit/691e7d0))
+
 ## [4.4.2](https://github.com/nordnet/ui/compare/v4.4.1...v4.4.2) (2020-11-02)
 
 
