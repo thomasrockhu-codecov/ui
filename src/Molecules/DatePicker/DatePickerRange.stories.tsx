@@ -4,7 +4,7 @@ import DatePicker from '.';
 import { RANGE_DATE_PICKER } from './shared/constants';
 
 export default {
-  title: 'Molecules / DatePicker with range',
+  title: 'Molecules / DatePicker / DatePicker with range',
   parameters: {
     component: DatePicker,
   },
@@ -15,6 +15,6 @@ export const Default = () => (
     variant={RANGE_DATE_PICKER}
     id="input-id"
     label="Label"
-    onChange={action('onChange')}
+    onChange={action('Range date')}
   />
 );

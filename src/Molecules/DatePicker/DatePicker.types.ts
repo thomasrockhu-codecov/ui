@@ -9,7 +9,7 @@ export type Props = {
   ariaLabelPrevious?: string;
   ariaLabelNext?: string;
   open?: boolean;
-  onChange?: (date: Date) => void;
+  onChange?: (date: Date, endDate?: Date | null) => void;
   label: string;
   disableDate?: (date: Date) => boolean;
   disabled?: boolean;

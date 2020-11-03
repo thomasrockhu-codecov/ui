@@ -119,7 +119,9 @@ export const DatePicker = (React.forwardRef<HTMLDivElement, Props>((props, ref) 
       const rangeDateString = !endDate
         ? `${format(startDate, dateFormat, opts)} -`
         : `${format(startDate, dateFormat, opts)} - ${format(endDate, dateFormat, opts)}`;
-
+      if (onChange) {
+        onChange(startDate, endDate);
+      }
       setInputValue(rangeDateString);
     },
     [selectedDate, selectedEndDate, dateFormat, opts],
@@ -129,7 +131,9 @@ export const DatePicker = (React.forwardRef<HTMLDivElement, Props>((props, ref) 
     (date: Date) => {
       setInputValue(format(date, dateFormat, opts));
       setSelectedDate(date);
-
+      if (onChange) {
+        onChange(date);
+      }
       setOpen(false);
     },
     [dateFormat, opts, setOpen],
@@ -141,10 +145,6 @@ export const DatePicker = (React.forwardRef<HTMLDivElement, Props>((props, ref) 
         handleRegularDateClick(date);
       } else {
         handleRangeDateClick(date);
-      }
-
-      if (onChange) {
-        onChange(date);
       }
     },
     [variant, onChange, handleRegularDateClick, handleRangeDateClick],
