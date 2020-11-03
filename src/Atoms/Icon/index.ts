@@ -83,6 +83,12 @@ import { Raising } from './components/Raising';
 import { RealEstate } from './components/RealEstate';
 import { Rtmt } from './components/Rtmt';
 import { Search } from './components/Search';
+import { SellingpointFunds } from './components/SellingpointFunds';
+import { SellingpointGlobal } from './components/SellingpointGlobal';
+import { SellingpointMoney } from './components/SellingpointMoney';
+import { SellingpointRate } from './components/SellingpointRate';
+import { SellingpointShareville } from './components/SellingpointShareville';
+import { SellingpointStocks } from './components/SellingpointStocks';
 import { Shapes } from './components/Shapes';
 import { SharevilleLogo } from './components/SharevilleLogo';
 import { SocialFacebook } from './components/SocialFacebook';
@@ -193,6 +199,12 @@ export default {
   RealEstate,
   Rtmt,
   Search,
+  SellingpointFunds,
+  SellingpointGlobal,
+  SellingpointMoney,
+  SellingpointRate,
+  SellingpointShareville,
+  SellingpointStocks,
   Shapes,
   SharevilleLogo,
   SocialFacebook,
