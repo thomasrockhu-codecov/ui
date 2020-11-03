@@ -119,7 +119,12 @@ export const DatePicker = (React.forwardRef<HTMLDivElement, Props>((props, ref) 
 
       setSelectedDate(startDate);
       setSelectedEndDate(endDate);
-      setInputValue(format(startDate, dateFormat, opts));
+
+      const singleDateString = `${format(startDate, dateFormat, opts)} -`;
+      const rangeDateString = !endDate
+        ? singleDateString
+        : `${singleDateString} ${format(endDate, dateFormat, opts)}`;
+      setInputValue(rangeDateString);
     },
     [selectedDate, selectedEndDate, dateFormat, opts],
   );
