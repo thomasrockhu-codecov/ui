@@ -1,8 +1,5 @@
 import React, { useCallback, useEffect, useState } from 'react';
-import format from 'date-fns/format';
-import isSameDay from 'date-fns/isSameDay';
-import isSameMonth from 'date-fns/isSameMonth';
-import isToday from 'date-fns/isToday';
+import { format, isSameDay, isSameMonth, isToday, isWithinInterval } from 'date-fns';
 import styled from 'styled-components';
 import { Box, Flexbox, Typography } from '../../..';
 import { useKeyPress } from '../../../common/Hooks';
@@ -29,6 +26,10 @@ const StyledCalendarDay = styled(Box)`
 
   &.today {
     border: 1px solid ${({ theme }) => theme.color.inputBorder};
+  }
+
+  &.within-range {
+    background: ${({ theme }) => theme.color.datePickerWithinRangeBackground};
   }
 
   &:hover,
@@ -58,11 +59,13 @@ const CalendarDay: React.FC<CalendarDayProps> = ({
   sameMonth = true,
   hover = false,
   selected,
+  withinRange = false,
 }) => {
   const classNames: Array<string> = [
     disabled || (typeof enabled === 'boolean' && !enabled) ? 'disabled' : '',
     selected ? 'selected' : '',
     !selected && hover ? 'hover' : '',
+    withinRange ? 'within-range' : '',
     isToday(date) ? 'today' : '',
   ].concat(className);
 
@@ -132,7 +135,7 @@ const Calendar: React.FC<Props> = ({
       hoverDate.setDate(hoverDate.getDate() + 7);
       setHoverDate(hoverDate);
     } else if (enter) {
-      onClick(hoverDate);
+      onClick(new Date(hoverDate));
     }
   }, [hoverDate, arrowLeft, arrowRight, arrowUp, arrowDown, enter, onClick, setHoverDate]);
 
@@ -168,6 +171,10 @@ const Calendar: React.FC<Props> = ({
               sameMonth={isSameMonth(viewedDate, d)}
               locale={localeObj}
               hover={hoverDate && isSameDay(hoverDate, d)}
+              withinRange={
+                selectedEndDate &&
+                isWithinInterval(d, { start: selectedDate, end: selectedEndDate })
+              }
             />
           ))}
         </Flexbox>

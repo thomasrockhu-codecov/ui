@@ -8,6 +8,7 @@ export type CalendarDayProps = {
   onClick?: (date: Date) => void;
   sameMonth?: boolean;
   selected?: boolean;
+  withinRange?: boolean;
 };
 
 export type Props = {

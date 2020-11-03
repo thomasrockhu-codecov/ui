@@ -108,22 +108,18 @@ export const DatePicker = (React.forwardRef<HTMLDivElement, Props>((props, ref) 
           selectedEndDate &&
           isSameDay(selectedDate, closestTo(date, [selectedEndDate, selectedDate]));
 
-        if (swapDate) {
-          return [date, selectedDate];
-        }
-        if (moveSelectedDate) {
-          return [date, selectedEndDate];
-        }
+        if (swapDate) return [date, selectedDate];
+        if (moveSelectedDate) return [date, selectedEndDate];
         return [selectedDate, date];
       })();
 
       setSelectedDate(startDate);
       setSelectedEndDate(endDate);
 
-      const singleDateString = `${format(startDate, dateFormat, opts)} -`;
       const rangeDateString = !endDate
-        ? singleDateString
-        : `${singleDateString} ${format(endDate, dateFormat, opts)}`;
+        ? `${format(startDate, dateFormat, opts)} -`
+        : `${format(startDate, dateFormat, opts)} - ${format(endDate, dateFormat, opts)}`;
+
       setInputValue(rangeDateString);
     },
     [selectedDate, selectedEndDate, dateFormat, opts],
