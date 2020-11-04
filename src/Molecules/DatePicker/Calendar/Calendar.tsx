@@ -149,6 +149,16 @@ const Calendar: React.FC<Props> = ({
     }
   }, [hoverDate, arrowLeft, arrowRight, arrowUp, arrowDown, enter, onClick, setHoverDate]);
 
+  useEffect(() => {
+    setHoverDate(new Date(selectedDate));
+  }, [selectedDate]);
+
+  useEffect(() => {
+    if (selectedEndDate) {
+      setHoverDate(new Date(selectedEndDate));
+    }
+  }, [selectedEndDate]);
+
   const localeObj = getLocale(locale);
   const calendar = getCalendar(viewedDate, {
     locale: localeObj,
