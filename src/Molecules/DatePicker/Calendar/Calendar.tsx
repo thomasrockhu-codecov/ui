@@ -14,7 +14,13 @@ const StyledWeekDay = styled(Box)`
   margin-top: ${({ theme }) => theme.spacing.unit(3)}px;
 `;
 
-const StyledCalendarDay = styled(Box)`
+const StyledCalendarDay = styled(Box)<{
+  $disabled?: boolean;
+  $selected?: boolean;
+  $focus?: boolean;
+  $withinRange?: boolean;
+  $isToday?: boolean;
+}>`
   background: ${({ theme }) => theme.color.backgroundInput};
   min-width: ${({ theme }) => theme.spacing.unit(10)}px;
   min-height: ${({ theme }) => theme.spacing.unit(10)}px;
@@ -24,28 +30,28 @@ const StyledCalendarDay = styled(Box)`
   display: flex;
   cursor: pointer;
 
-  &.today {
-    border: 1px solid ${({ theme }) => theme.color.inputBorder};
-  }
-
-  &.within-range {
-    background: ${({ theme }) => theme.color.datePickerWithinRangeBackground};
-  }
-
-  &:hover,
-  &.hover {
+  ${({ $disabled, $selected, $focus, $withinRange, $isToday, theme }) => `
+    ${$isToday ? `border: 1px solid ${theme.color.inputBorder};` : ''}
+    ${$withinRange ? `background: ${theme.color.datePickerWithinRangeBackground};` : ''}
+    ${$focus ? `border: 1px solid ${theme.color.cta};` : ''}
+    ${
+      $selected
+        ? `
+          background: ${theme.color.cta};
+          border: 1px solid transparent;`
+        : ''
+    }
+    ${
+      $disabled
+        ? `
+          color: ${theme.color.disabledText};
+          cursor: not-allowed;
+          border: 1px solid transparent;`
+        : ''
+    }
+  `}
+  &:hover {
     border: 1px solid ${({ theme }) => theme.color.cta};
-  }
-
-  &.selected {
-    background: ${({ theme }) => theme.color.cta};
-    border: 1px solid transparent;
-  }
-
-  &.disabled {
-    color: ${({ theme }) => theme.color.disabledText};
-    cursor: not-allowed;
-    border: 1px solid transparent;
   }
 `;
 
@@ -61,22 +67,21 @@ const CalendarDay: React.FC<CalendarDayProps> = ({
   selected,
   withinRange = false,
 }) => {
-  const classNames: Array<string> = [
-    disabled || (typeof enabled === 'boolean' && !enabled) ? 'disabled' : '',
-    selected ? 'selected' : '',
-    !selected && hover ? 'hover' : '',
-    withinRange ? 'within-range' : '',
-    isToday(date) ? 'today' : '',
-  ].concat(className);
-
-  const textColor: string | undefined = [
-    disabled || (typeof enabled === 'boolean' && !enabled) ? 'label' : '',
-    !sameMonth && !selected ? 'label' : '',
-    selected ? 'buttonText' : '',
-    !selected && hover ? 'text' : '',
-  ]
-    .filter((c) => c)
-    .shift();
+  const textColor = (() => {
+    if (disabled || (typeof enabled === 'boolean' && !enabled)) {
+      return 'label';
+    }
+    if (!sameMonth && !selected) {
+      return 'label';
+    }
+    if (selected) {
+      return 'buttonText';
+    }
+    if (!selected && hover) {
+      return 'text';
+    }
+    return '';
+  })();
 
   const handleOnClick = useCallback(() => {
     if (disabled) {
@@ -94,7 +99,12 @@ const CalendarDay: React.FC<CalendarDayProps> = ({
 
   return (
     <StyledCalendarDay
-      className={classNames.join(' ')}
+      className={className}
+      $disabled={disabled || (typeof enabled === 'boolean' && !enabled)}
+      $selected={selected}
+      $focus={!selected && hover}
+      $withinRange={withinRange}
+      $isToday={isToday(date)}
       onClick={handleOnClick}
       aria-label={ariaLabel}
     >

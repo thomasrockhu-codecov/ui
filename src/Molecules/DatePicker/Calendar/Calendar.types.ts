@@ -1,5 +1,5 @@
 export type CalendarDayProps = {
-  className?: string | Array<string>;
+  className?: string;
   date: Date;
   disabled?: boolean;
   enabled?: boolean;
