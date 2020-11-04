@@ -4,6 +4,7 @@ import '@testing-library/jest-dom/extend-expect';
 import { advanceTo, clear } from 'jest-date-mock';
 import { DatePicker } from '../DatePicker';
 import { PageProviders } from '../../../common/testUtils';
+import theme from '../../../theme';
 
 afterEach(cleanup);
 
@@ -180,8 +181,7 @@ test('Disable certain dates', async () => {
 
   const date = getByText('20');
   fireEvent.click(date);
-
-  expect(date.parentElement.className).toContain('disabled');
+  expect(date.parentElement).toHaveStyle('cursor: not-allowed;');
 });
 
 test('Select previous date with arrow left', async () => {
@@ -333,5 +333,5 @@ test('Enter date manually', async () => {
   fireEvent.change(input, { target: { value: '19/08/2020' } });
 
   const date = getByText('19');
-  expect(date.parentElement.className).toContain('selected');
+  expect(date.parentElement).toHaveStyle(`background: ${theme.color.cta}`);
 });
