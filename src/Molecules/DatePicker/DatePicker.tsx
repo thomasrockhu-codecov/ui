@@ -83,7 +83,7 @@ export const DatePicker = (React.forwardRef<HTMLDivElement, Props>((props, ref) 
 
   const [open, setOpen] = useState<boolean>(openProp);
   const [viewedDate, setViewedDate] = useState<Date>(selectedDateProp || startOfDay(new Date()));
-  const [selectedDate, setSelectedDate] = useState<Date>(selectedDateProp || viewedDate);
+  const [selectedDate, setSelectedDate] = useState<Date | null>(selectedDateProp || null);
   const [selectedEndDate, setSelectedEndDate] = useState<Date | null>(selectedEndDateProp || null);
 
   const [inputValue, setInputValue] = useState<string>(initialInputValue);
@@ -96,13 +96,11 @@ export const DatePicker = (React.forwardRef<HTMLDivElement, Props>((props, ref) 
 
   const handleRangeDateClick = useCallback(
     (date: Date) => {
-      if (!selectedDate) {
-        setInputValue(format(date, dateFormat, opts));
-        setSelectedDate(date);
-        return;
-      }
-
       const [startDate, endDate] = ((): [Date, Date | null] => {
+        if (!selectedDate) {
+          return [date, endDate];
+        }
+
         const swapDate = !selectedEndDate && !isAfter(date, selectedDate);
         const moveSelectedDate =
           selectedEndDate &&
@@ -122,9 +120,10 @@ export const DatePicker = (React.forwardRef<HTMLDivElement, Props>((props, ref) 
       if (onChange) {
         onChange(startDate, endDate);
       }
+
       setInputValue(rangeDateString);
     },
-    [selectedDate, selectedEndDate, dateFormat, opts],
+    [selectedDate, dateFormat, opts, onChange, selectedEndDate],
   );
 
   const handleRegularDateClick = useCallback(
@@ -136,7 +135,7 @@ export const DatePicker = (React.forwardRef<HTMLDivElement, Props>((props, ref) 
       }
       setOpen(false);
     },
-    [dateFormat, opts, setOpen],
+    [dateFormat, onChange, opts],
   );
 
   const handleOnDateClick = useCallback(
@@ -147,7 +146,7 @@ export const DatePicker = (React.forwardRef<HTMLDivElement, Props>((props, ref) 
         handleRangeDateClick(date);
       }
     },
-    [variant, onChange, handleRegularDateClick, handleRangeDateClick],
+    [variant, handleRegularDateClick, handleRangeDateClick],
   );
 
   const handleOnMonthChange = useCallback(
