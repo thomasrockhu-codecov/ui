@@ -1,3 +1,5 @@
+export type EdgeDay = 'FIRST_DAY' | 'LAST_DAY';
+
 export type CalendarDayProps = {
   className?: string;
   date: Date;
@@ -9,6 +11,7 @@ export type CalendarDayProps = {
   sameMonth?: boolean;
   selected?: boolean;
   withinRange?: boolean;
+  edgeDay: EdgeDay | null;
 };
 
 export type Props = {

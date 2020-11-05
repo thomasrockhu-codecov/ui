@@ -4,7 +4,10 @@ import styled from 'styled-components';
 import { Box, Flexbox, Typography } from '../../..';
 import { useKeyPress } from '../../../common/Hooks';
 import { getCalendar, getLocale, newDate } from '../shared/dateUtils';
-import { CalendarDayProps, Props } from './Calendar.types';
+import { CalendarDayProps, Props, EdgeDay } from './Calendar.types';
+
+const FIRST_DAY = 'FIRST_DAY';
+const LAST_DAY = 'LAST_DAY';
 
 const StyledWeekDay = styled(Box)`
   border: 1px solid transparent;
@@ -20,6 +23,7 @@ const StyledCalendarDay = styled(Box)<{
   $focus?: boolean;
   $withinRange?: boolean;
   $isToday?: boolean;
+  $edgeDay?: EdgeDay;
 }>`
   background: ${({ theme }) => theme.color.backgroundInput};
   min-width: ${({ theme }) => theme.spacing.unit(10)}px;
@@ -30,9 +34,21 @@ const StyledCalendarDay = styled(Box)<{
   display: flex;
   cursor: pointer;
 
-  ${({ $disabled, $selected, $focus, $withinRange, $isToday, theme }) => `
+  ${({ $disabled, $selected, $focus, $withinRange, $isToday, $edgeDay, theme }) => `
     ${$isToday ? `border: 1px solid ${theme.color.inputBorder};` : ''}
     ${$withinRange ? `background: ${theme.color.datePickerWithinRangeBackground};` : ''}
+    ${
+      $edgeDay === FIRST_DAY
+        ? `background: linear-gradient(to right, ${theme.color.datePickerWithinRangeBackground}33,${theme.color.datePickerWithinRangeBackground});
+        background-repeat: no-repeat;`
+        : ''
+    }
+    ${
+      $edgeDay === LAST_DAY
+        ? `background: linear-gradient(to left, ${theme.color.datePickerWithinRangeBackground}33, ${theme.color.datePickerWithinRangeBackground});
+        background-repeat: no-repeat;`
+        : ''
+    }
     ${$focus ? `border: 1px solid ${theme.color.cta};` : ''}
     ${
       $selected
@@ -66,6 +82,7 @@ const CalendarDay: React.FC<CalendarDayProps> = ({
   hover = false,
   selected,
   withinRange = false,
+  edgeDay = null,
 }) => {
   const textColor = (() => {
     if (disabled || (typeof enabled === 'boolean' && !enabled)) {
@@ -105,6 +122,7 @@ const CalendarDay: React.FC<CalendarDayProps> = ({
       $focus={!selected && hover}
       $withinRange={withinRange}
       $isToday={isToday(date)}
+      $edgeDay={edgeDay}
       onClick={handleOnClick}
       aria-label={ariaLabel}
     >
@@ -175,28 +193,38 @@ const Calendar: React.FC<Props> = ({
           </Flexbox>
         ))}
       </Flexbox>
-      {calendar.dates.map((week) => (
+      {calendar.dates.map((week, weekIndex) => (
         <Flexbox container key={week.toString()}>
-          {week.map((d) => (
-            <CalendarDay
-              key={d.toString()}
-              date={d}
-              enabled={enableDate && enableDate(d)}
-              disabled={disableDate && disableDate(d)}
-              onClick={() => onClick(d)}
-              selected={
-                (selectedDate && isSameDay(selectedDate, d)) ||
-                (selectedEndDate && isSameDay(selectedEndDate, d))
-              }
-              sameMonth={isSameMonth(viewedDate, d)}
-              locale={localeObj}
-              hover={hoverDate && isSameDay(hoverDate, d)}
-              withinRange={
-                selectedEndDate &&
-                isWithinInterval(d, { start: selectedDate, end: selectedEndDate })
-              }
-            />
-          ))}
+          {week.map((d, dayIndex) => {
+            const edgeDay = (() => {
+              if (weekIndex === 0 && dayIndex === 0) return FIRST_DAY;
+              if (weekIndex === calendar.dates.length - 1 && dayIndex === week.length - 1)
+                return LAST_DAY;
+              return null;
+            })();
+
+            return (
+              <CalendarDay
+                key={d.toString()}
+                date={d}
+                enabled={enableDate && enableDate(d)}
+                disabled={disableDate && disableDate(d)}
+                onClick={() => onClick(d)}
+                selected={
+                  (selectedDate && isSameDay(selectedDate, d)) ||
+                  (selectedEndDate && isSameDay(selectedEndDate, d))
+                }
+                sameMonth={isSameMonth(viewedDate, d)}
+                locale={localeObj}
+                hover={hoverDate && isSameDay(hoverDate, d)}
+                withinRange={
+                  selectedEndDate &&
+                  isWithinInterval(d, { start: selectedDate, end: selectedEndDate })
+                }
+                edgeDay={edgeDay}
+              />
+            );
+          })}
         </Flexbox>
       ))}
     </Flexbox>
