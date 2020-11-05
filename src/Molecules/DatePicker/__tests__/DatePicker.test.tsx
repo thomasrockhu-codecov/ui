@@ -193,7 +193,12 @@ test('Select previous date with arrow left', async () => {
 
   const { getByTestId } = render(
     <PageProviders>
-      <DatePicker id={INPUT_ID} label="Label" onChange={onChange} />
+      <DatePicker
+        id={INPUT_ID}
+        selectedDate={new Date(2020, 8, 29, 0, 0, 0)}
+        label="Label"
+        onChange={onChange}
+      />
     </PageProviders>,
   );
 
@@ -226,7 +231,12 @@ test('Select next date with arrow right', async () => {
 
   const { getByTestId } = render(
     <PageProviders>
-      <DatePicker id={INPUT_ID} label="Label" onChange={onChange} />
+      <DatePicker
+        id={INPUT_ID}
+        selectedDate={new Date(2020, 8, 29, 0, 0, 0)}
+        label="Label"
+        onChange={onChange}
+      />
     </PageProviders>,
   );
 
@@ -259,7 +269,12 @@ test('Select previous week date with arrow up', async () => {
 
   const { getByTestId } = render(
     <PageProviders>
-      <DatePicker id={INPUT_ID} label="Label" onChange={onChange} />
+      <DatePicker
+        id={INPUT_ID}
+        selectedDate={new Date(2020, 8, 29, 0, 0, 0)}
+        label="Label"
+        onChange={onChange}
+      />
     </PageProviders>,
   );
 
@@ -283,7 +298,7 @@ test('Select previous week date with arrow up', async () => {
   });
 });
 
-test('Select next week date with arrow up', async () => {
+test('Select next week date with arrow down', async () => {
   const INPUT_ID = 'datepicker-input';
   const onChange = (date: Date) => {
     expect(date.getMonth()).toBe(9);
@@ -292,7 +307,12 @@ test('Select next week date with arrow up', async () => {
 
   const { getByTestId } = render(
     <PageProviders>
-      <DatePicker id={INPUT_ID} label="Label" onChange={onChange} />
+      <DatePicker
+        id={INPUT_ID}
+        selectedDate={new Date(2020, 8, 29, 0, 0, 0)}
+        label="Label"
+        onChange={onChange}
+      />
     </PageProviders>,
   );
 
