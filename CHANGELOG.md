@@ -1,3 +1,11 @@
+## [4.4.4](https://github.com/nordnet/ui/compare/v4.4.3...v4.4.4) (2020-11-05)
+
+
+### Bug Fixes
+
+* change stroke of modal cross icon ([23e6250](https://github.com/nordnet/ui/commit/23e6250))
+* update storyshots ([ce9bf19](https://github.com/nordnet/ui/commit/ce9bf19))
+
 ## [4.4.3](https://github.com/nordnet/ui/compare/v4.4.2...v4.4.3) (2020-11-03)
 
 
