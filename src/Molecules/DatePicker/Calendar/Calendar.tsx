@@ -26,27 +26,25 @@ const StyledCalendarDay = styled(Box)<{
   $edgeDay: EdgeDay | null;
 }>`
   background: ${({ theme }) => theme.color.backgroundInput};
-  min-width: ${({ theme }) => theme.spacing.unit(10)}px;
-  min-height: ${({ theme }) => theme.spacing.unit(10)}px;
-  border: 1px solid transparent;
+  min-width: ${({ theme }) => theme.spacing.unit(10) + 2}px;
+  min-height: ${({ theme }) => theme.spacing.unit(10) + 2}px;
   justify-content: center;
   align-items: center;
   display: flex;
   cursor: pointer;
+  box-sizing: border-box;
 
   ${({ $disabled, $selected, $focus, $withinRange, $isToday, $edgeDay, theme }) => `
     ${$isToday ? `border: 1px solid ${theme.color.inputBorder};` : ''}
     ${$withinRange ? `background: ${theme.color.datePickerWithinRangeBackground};` : ''}
     ${
-      $edgeDay === FIRST_DAY
-        ? `background: linear-gradient(to right, ${theme.color.datePickerWithinRangeBackground}33,${theme.color.datePickerWithinRangeBackground});
-        background-repeat: no-repeat;`
+      $withinRange && $edgeDay === FIRST_DAY
+        ? `background: linear-gradient(to right, ${theme.color.datePickerWithinRangeBackground}33,${theme.color.datePickerWithinRangeBackground});`
         : ''
     }
     ${
-      $edgeDay === LAST_DAY
-        ? `background: linear-gradient(to left, ${theme.color.datePickerWithinRangeBackground}33, ${theme.color.datePickerWithinRangeBackground});
-        background-repeat: no-repeat;`
+      $withinRange && $edgeDay === LAST_DAY
+        ? `background: linear-gradient(to left, ${theme.color.datePickerWithinRangeBackground}33, ${theme.color.datePickerWithinRangeBackground});`
         : ''
     }
     ${$focus ? `border: 1px solid ${theme.color.cta};` : ''}
