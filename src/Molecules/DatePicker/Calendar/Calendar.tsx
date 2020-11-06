@@ -23,7 +23,7 @@ const StyledCalendarDay = styled(Box)<{
   $focus?: boolean;
   $withinRange?: boolean;
   $isToday?: boolean;
-  $edgeDay?: EdgeDay;
+  $edgeDay: EdgeDay | null;
 }>`
   background: ${({ theme }) => theme.color.backgroundInput};
   min-width: ${({ theme }) => theme.spacing.unit(10)}px;
@@ -82,7 +82,7 @@ const CalendarDay: React.FC<CalendarDayProps> = ({
   hover = false,
   selected,
   withinRange = false,
-  edgeDay = null,
+  edgeDay,
 }) => {
   const textColor = (() => {
     if (disabled || (typeof enabled === 'boolean' && !enabled)) {
