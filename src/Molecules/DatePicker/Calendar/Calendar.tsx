@@ -28,6 +28,7 @@ const StyledCalendarDay = styled(Box)<{
   background: ${({ theme }) => theme.color.backgroundInput};
   min-width: ${({ theme }) => theme.spacing.unit(10) + 2}px;
   min-height: ${({ theme }) => theme.spacing.unit(10) + 2}px;
+  margin: ${({ theme }) => theme.spacing.unit(0.5)}px 0;
   justify-content: center;
   align-items: center;
   display: flex;
@@ -39,12 +40,12 @@ const StyledCalendarDay = styled(Box)<{
     ${$withinRange ? `background: ${theme.color.datePickerWithinRangeBackground};` : ''}
     ${
       $withinRange && $edgeDay === FIRST_DAY
-        ? `background: linear-gradient(to right, ${theme.color.datePickerWithinRangeBackground}33,${theme.color.datePickerWithinRangeBackground});`
+        ? `background: linear-gradient(to right, ${theme.color.backgroundInput}, ${theme.color.datePickerWithinRangeBackground});`
         : ''
     }
     ${
       $withinRange && $edgeDay === LAST_DAY
-        ? `background: linear-gradient(to left, ${theme.color.datePickerWithinRangeBackground}33, ${theme.color.datePickerWithinRangeBackground});`
+        ? `background: linear-gradient(to left, ${theme.color.backgroundInput}, ${theme.color.datePickerWithinRangeBackground});`
         : ''
     }
     ${$focus ? `border: 1px solid ${theme.color.cta};` : ''}
