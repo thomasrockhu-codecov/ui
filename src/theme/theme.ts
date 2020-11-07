@@ -136,10 +136,12 @@ const createColors = (type: ThemeColorsVersion): ThemeColors<typeof type> => {
     background: rawColor.gray7,
     backgroundBlack: rawColor.black,
     backgroundDark: rawColor.gray0,
+    searchBackground: rawColor.gray1,
     barScaleActiveBar: rawColor.complementaryBlue1,
     barScaleInactiveBar: rawColor.gray6,
     bubbleBackground: rawColor.white,
     bubbleBorder: rawColor.gray4,
+    tableBorder: rawColor.gray0,
     buttonSecondaryBackground: rawColor.white,
     buttonText: rawColor.white,
     buy: a11yColors ? rawColor.a11yCta : rawColor.cta,
@@ -168,22 +170,10 @@ const createColors = (type: ThemeColorsVersion): ThemeColors<typeof type> => {
     sell: a11yColors ? rawColor.a11yNegative : rawColor.negative,
     sellActive: a11yColors ? rawColor.a11yNegativePressed : rawColor.negativePressed,
     separator: rawColor.gray0,
-    shadowCard: Color(rawColor.black)
-      .alpha(0.03)
-      .rgb()
-      .string(),
-    shadowModal: Color(rawColor.black)
-      .alpha(0.16)
-      .rgb()
-      .string(),
-    shadowInput: Color(rawColor.black)
-      .alpha(0.03)
-      .rgb()
-      .string(),
-    shadowSwitch: Color(rawColor.black)
-      .alpha(0.05)
-      .rgb()
-      .string(),
+    shadowCard: Color(rawColor.black).alpha(0.03).rgb().string(),
+    shadowModal: Color(rawColor.black).alpha(0.16).rgb().string(),
+    shadowInput: Color(rawColor.black).alpha(0.03).rgb().string(),
+    shadowSwitch: Color(rawColor.black).alpha(0.05).rgb().string(),
     shareville: rawColor.complementaryGreen1,
     skeleton: rawColor.gray6,
     spinnerBlack: rawColor.black,
@@ -253,27 +243,63 @@ const createColors = (type: ThemeColorsVersion): ThemeColors<typeof type> => {
     progressBarNext: rawColor.gray4,
     indexFundsBackground: rawColor.gray6,
     indexFundsNorwegianAccent: rawColor.brandBlue,
-    indexFundsFinnishAccent: [rawColor.brandPink, rawColor.brandBlue, rawColor.complementaryBlue2, rawColor.black, rawColor.complementaryTurquoise1],
-    paletteMap: [rawColor.complementaryBlue2, rawColor.complementaryBlue1, rawColor.brandBlue,
-    rawColor.gray1, rawColor.gray3],
-    palettePink: a11yColors ? paletteA11y :
-      [rawColor.brandPink, rawColor.complementaryPink1, rawColor.complementaryPink2, rawColor.brandTurquoise,
-      rawColor.complementaryTurquoise1, ...grayScale
-      ],
-    paletteGreen: a11yColors ? paletteA11y :
-      [rawColor.brandGreen, rawColor.complementaryGreen1, rawColor.complementaryGreen2,
-      rawColor.brandTurquoise, rawColor.complementaryTurquoise1, ...grayScale
-      ],
-    paletteBlue: a11yColors ? paletteA11y :
-      [rawColor.brandBlue, rawColor.complementaryBlue1, rawColor.complementaryBlue2, rawColor.brandTurquoise,
-      rawColor.complementaryTurquoise1, ...grayScale
-      ],
-    paletteTurquoise: a11yColors ? paletteA11y :
-      [rawColor.brandTurquoise, rawColor.complementaryTurquoise1, rawColor.complementaryTurquoise2, rawColor.brandBlue,
-      rawColor.complementaryBlue1, ...grayScale
-      ],
-    paletteLineGraph: a11yColors ? [rawColor.a11yCta, rawColor.a11yIndex, ...lineColors] :
-      [rawColor.cta, rawColor.index, ...lineColors],
+    indexFundsFinnishAccent: [
+      rawColor.brandPink,
+      rawColor.brandBlue,
+      rawColor.complementaryBlue2,
+      rawColor.black,
+      rawColor.complementaryTurquoise1,
+    ],
+    paletteMap: [
+      rawColor.complementaryBlue2,
+      rawColor.complementaryBlue1,
+      rawColor.brandBlue,
+      rawColor.gray1,
+      rawColor.gray3,
+    ],
+    palettePink: a11yColors
+      ? paletteA11y
+      : [
+          rawColor.brandPink,
+          rawColor.complementaryPink1,
+          rawColor.complementaryPink2,
+          rawColor.brandTurquoise,
+          rawColor.complementaryTurquoise1,
+          ...grayScale,
+        ],
+    paletteGreen: a11yColors
+      ? paletteA11y
+      : [
+          rawColor.brandGreen,
+          rawColor.complementaryGreen1,
+          rawColor.complementaryGreen2,
+          rawColor.brandTurquoise,
+          rawColor.complementaryTurquoise1,
+          ...grayScale,
+        ],
+    paletteBlue: a11yColors
+      ? paletteA11y
+      : [
+          rawColor.brandBlue,
+          rawColor.complementaryBlue1,
+          rawColor.complementaryBlue2,
+          rawColor.brandTurquoise,
+          rawColor.complementaryTurquoise1,
+          ...grayScale,
+        ],
+    paletteTurquoise: a11yColors
+      ? paletteA11y
+      : [
+          rawColor.brandTurquoise,
+          rawColor.complementaryTurquoise1,
+          rawColor.complementaryTurquoise2,
+          rawColor.brandBlue,
+          rawColor.complementaryBlue1,
+          ...grayScale,
+        ],
+    paletteLineGraph: a11yColors
+      ? [rawColor.a11yCta, rawColor.a11yIndex, ...lineColors]
+      : [rawColor.cta, rawColor.index, ...lineColors],
     /** @deprecated  */ creditsPiePrimary: rawColor.complementaryPink1,
     /** @deprecated  */ creditsPieSecondary: rawColor.complementaryPink2,
     /** @deprecated  */ disabled: rawColor.gray3,
