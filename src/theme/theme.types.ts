@@ -101,6 +101,8 @@ export type ThemeColors<Version extends ThemeColorsVersion> = {
   bubbleBackground: RawColor['white'];
   /** gray4 */
   bubbleBorder: RawColor['gray4'];
+  /** gray0 */
+  tableBorder: RawColor['gray0'];
   /** negative */
   sell: ChangeableColor<RawColor['negative'], RawColor['a11yNegative'], Version>;
   /** negativePressed */
@@ -135,6 +137,8 @@ export type ThemeColors<Version extends ThemeColorsVersion> = {
   separator: RawColor['gray0'];
   /** gray0 */
   backgroundDark: RawColor['gray0'];
+  /** gray1 */
+  searchBackground: RawColor['gray1'];
   /** gray3 */
   disabledText: RawColor['gray3'];
   /** gray6 */
