@@ -348,10 +348,11 @@ test('Enter date manually', async () => {
     </PageProviders>,
   );
 
-  const input = getByTestId(INPUT_ID);
-  fireEvent.focus(input);
-  fireEvent.change(input, { target: { value: '19/08/2020' } });
+  const inputElement = getByTestId(INPUT_ID);
+  fireEvent.focus(inputElement);
+  fireEvent.change(inputElement, { target: { value: '19/08/2020' } });
+  fireEvent.keyDown(inputElement, { key: 'Enter', code: 'Enter' });
 
-  const date = getByText('19');
-  expect(date.parentElement).toHaveStyle(`background: ${theme.color.cta}`);
+  const dateElement = getByText('19');
+  expect(dateElement.parentElement).toHaveStyle(`background: ${theme.color.cta}`);
 });
