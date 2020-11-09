@@ -17,7 +17,7 @@ import { useOnClickOutside } from '../../common/Hooks';
 import { newDate, getLocale, isValid, getDateFormat } from './shared/dateUtils';
 import Header from './Header';
 import Calendar from './Calendar';
-import { REGULAR_DATE_PICKER } from './shared/constants';
+import { RANGE_DATE_PICKER, REGULAR_DATE_PICKER } from './shared/constants';
 
 const StyledInputText = styled(Input.Text)`
   z-index: 1;
@@ -73,13 +73,13 @@ export const DatePicker = (React.forwardRef<HTMLDivElement, Props>((props, ref) 
 
   const { locale } = useIntl();
 
-  const opts = {
+  const options = {
     locale: getLocale(locale),
   };
 
   const dateFormat = getDateFormat(locale);
 
-  const initialInputValue = selectedDateProp ? format(selectedDateProp, dateFormat, opts) : '';
+  const initialInputValue = selectedDateProp ? format(selectedDateProp, dateFormat, options) : '';
 
   const [open, setOpen] = useState<boolean>(openProp);
   const [viewedDate, setViewedDate] = useState<Date>(selectedDateProp || startOfDay(new Date()));
@@ -115,27 +115,27 @@ export const DatePicker = (React.forwardRef<HTMLDivElement, Props>((props, ref) 
       setSelectedEndDate(endDate);
 
       const rangeDateString = !endDate
-        ? `${format(startDate, dateFormat, opts)} -`
-        : `${format(startDate, dateFormat, opts)} - ${format(endDate, dateFormat, opts)}`;
+        ? `${format(startDate, dateFormat, options)} -`
+        : `${format(startDate, dateFormat, options)} - ${format(endDate, dateFormat, options)}`;
       if (onChange) {
         onChange(startDate, endDate);
       }
 
       setInputValue(rangeDateString);
     },
-    [selectedDate, dateFormat, opts, onChange, selectedEndDate],
+    [selectedDate, dateFormat, options, onChange, selectedEndDate],
   );
 
   const handleRegularDateClick = useCallback(
     (date: Date) => {
-      setInputValue(format(date, dateFormat, opts));
+      setInputValue(format(date, dateFormat, options));
       setSelectedDate(date);
       if (onChange) {
         onChange(date);
       }
       setOpen(false);
     },
-    [dateFormat, onChange, opts],
+    [dateFormat, onChange, options],
   );
 
   const handleOnDateClick = useCallback(
@@ -165,21 +165,69 @@ export const DatePicker = (React.forwardRef<HTMLDivElement, Props>((props, ref) 
     [viewedDate, setViewedDate],
   );
 
-  const handleInputOnChange = useCallback(
-    (event: React.ChangeEvent<HTMLInputElement>) => {
-      const { value } = event.target;
-      setInputValue(value);
+  const parseDateString = useCallback(
+    (dateString: string): null | Date => {
+      if (!isMatch(dateString, dateFormat, options)) return null;
 
-      if (!isMatch(value, dateFormat, opts)) {
-        return;
+      const date = parse(dateString, dateFormat, newDate());
+
+      if (!isValid(date)) return null;
+
+      return date;
+    },
+    [dateFormat, options],
+  );
+
+  const handleRangeInputSubmit = useCallback(
+    (dateString: string) => {
+      const [startDateString, endDateString] = dateString.split(' - ');
+      const [startDate, endDate] = (() => {
+        const parsedStartDate = parseDateString(startDateString);
+        const parsedEndDate = parseDateString(endDateString);
+
+        if (parsedStartDate && parsedEndDate)
+          return parsedStartDate < parsedEndDate
+            ? [parsedStartDate, parsedEndDate]
+            : [parsedEndDate, parsedStartDate];
+
+        return [parsedStartDate, parsedEndDate];
+      })();
+
+      if (startDate && !endDate) {
+        setSelectedDate(startDate);
+        setSelectedEndDate(endDate);
+        setViewedDate(newDate(startDate));
+
+        if (onChange) {
+          onChange(startDate, endDate);
+        }
+      } else if (startDate && endDate) {
+        const rangeDateString = `${format(startDate, dateFormat, options)} - ${format(
+          endDate,
+          dateFormat,
+          options,
+        )}`;
+
+        setSelectedDate(startDate);
+        setSelectedEndDate(endDate);
+        setViewedDate(newDate(endDate));
+
+        setInputValue(rangeDateString);
+
+        if (onChange) {
+          onChange(startDate, endDate);
+        }
       }
+    },
+    [dateFormat, onChange, options, parseDateString],
+  );
 
-      const date = parse(value, dateFormat, newDate());
-      if (!isValid(date)) {
-        return;
-      }
+  const handleRegularInputSubmit = useCallback(
+    (dateString: string) => {
+      const date = parseDateString(dateString);
+      if (!date) return;
 
-      setInputValue(format(date, dateFormat, opts));
+      setInputValue(format(date, dateFormat, options));
       setSelectedDate(date);
       setViewedDate(newDate(date));
 
@@ -187,8 +235,22 @@ export const DatePicker = (React.forwardRef<HTMLDivElement, Props>((props, ref) 
         onChange(date);
       }
     },
-    [opts, dateFormat, onChange, setSelectedDate, setInputValue],
+    [dateFormat, onChange, options, parseDateString],
   );
+
+  const handleInputOnChange = useCallback((event: React.ChangeEvent<HTMLInputElement>) => {
+    const { value } = event.target;
+    setInputValue(value);
+  }, []);
+
+  const handleInputSubmit = (event: React.KeyboardEvent<HTMLInputElement>) => {
+    event.stopPropagation();
+    const { value } = event.target as HTMLInputElement;
+    if (event.key === 'Enter') {
+      if (variant === RANGE_DATE_PICKER) handleRangeInputSubmit(value);
+      else handleRegularInputSubmit(value);
+    }
+  };
 
   const handleInputOnFocus = useCallback(() => setOpen(true), [setOpen]);
 
@@ -246,6 +308,7 @@ export const DatePicker = (React.forwardRef<HTMLDivElement, Props>((props, ref) 
         leftAddon={inputLeftAddon}
         rightAddon={inputRightAddon}
         onChange={handleInputOnChange}
+        onKeyDown={handleInputSubmit}
         onFocus={handleInputOnFocus}
         width={width ? `${theme.spacing.unit(width)}px` : ''}
         autoComplete="off"

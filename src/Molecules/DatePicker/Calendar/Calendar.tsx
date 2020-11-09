@@ -100,13 +100,8 @@ const CalendarDay: React.FC<CalendarDayProps> = ({
   })();
 
   const handleOnClick = useCallback(() => {
-    if (disabled) {
-      return;
-    }
-
-    if (onClick) {
-      onClick(date);
-    }
+    if (disabled) return;
+    if (onClick) onClick(date);
   }, [date, disabled, onClick]);
 
   const ariaLabel = format(date, 'cccc co MMMM, yyyy', {
