@@ -78,7 +78,7 @@ const CalendarDay: React.FC<CalendarDayProps> = ({
   locale,
   onClick,
   sameMonth = true,
-  hover = false,
+  focus = false,
   selected,
   withinRange = false,
   edgeDay,
@@ -93,7 +93,7 @@ const CalendarDay: React.FC<CalendarDayProps> = ({
     if (selected) {
       return 'buttonText';
     }
-    if (!selected && hover) {
+    if (!selected && focus) {
       return 'text';
     }
     return '';
@@ -118,7 +118,7 @@ const CalendarDay: React.FC<CalendarDayProps> = ({
       className={className}
       $disabled={disabled || (typeof enabled === 'boolean' && !enabled)}
       $selected={selected}
-      $focus={!selected && hover}
+      $focus={!selected && focus}
       $withinRange={withinRange}
       $isToday={isToday(date)}
       $edgeDay={edgeDay}
@@ -146,33 +146,33 @@ const Calendar: React.FC<Props> = ({
   const arrowUp = useKeyPress('ArrowUp');
   const arrowDown = useKeyPress('ArrowDown');
   const enter = useKeyPress('Enter');
-  const [hoverDate, setHoverDate] = useState<Date>(newDate(selectedDate || viewedDate));
+  const [focusDate, setFocusDate] = useState<Date>(newDate(selectedDate || viewedDate));
 
   useEffect(() => {
     if (arrowLeft) {
-      hoverDate.setDate(hoverDate.getDate() - 1);
-      setHoverDate(hoverDate);
+      focusDate.setDate(focusDate.getDate() - 1);
+      setFocusDate(focusDate);
     } else if (arrowRight) {
-      hoverDate.setDate(hoverDate.getDate() + 1);
-      setHoverDate(hoverDate);
+      focusDate.setDate(focusDate.getDate() + 1);
+      setFocusDate(focusDate);
     } else if (arrowUp) {
-      hoverDate.setDate(hoverDate.getDate() - 7);
-      setHoverDate(hoverDate);
+      focusDate.setDate(focusDate.getDate() - 7);
+      setFocusDate(focusDate);
     } else if (arrowDown) {
-      hoverDate.setDate(hoverDate.getDate() + 7);
-      setHoverDate(hoverDate);
+      focusDate.setDate(focusDate.getDate() + 7);
+      setFocusDate(focusDate);
     } else if (enter) {
-      onClick(new Date(hoverDate));
+      onClick(new Date(focusDate));
     }
-  }, [hoverDate, arrowLeft, arrowRight, arrowUp, arrowDown, enter, onClick, setHoverDate]);
+  }, [focusDate, arrowLeft, arrowRight, arrowUp, arrowDown, enter, onClick, setFocusDate]);
 
   useEffect(() => {
-    setHoverDate(new Date(selectedDate));
+    setFocusDate(new Date(selectedDate));
   }, [selectedDate]);
 
   useEffect(() => {
     if (selectedEndDate) {
-      setHoverDate(new Date(selectedEndDate));
+      setFocusDate(new Date(selectedEndDate));
     }
   }, [selectedEndDate]);
 
@@ -215,7 +215,7 @@ const Calendar: React.FC<Props> = ({
                 }
                 sameMonth={isSameMonth(viewedDate, d)}
                 locale={localeObj}
-                hover={hoverDate && isSameDay(hoverDate, d)}
+                focus={focusDate && isSameDay(focusDate, d)}
                 withinRange={
                   selectedEndDate &&
                   isWithinInterval(d, { start: selectedDate, end: selectedEndDate })

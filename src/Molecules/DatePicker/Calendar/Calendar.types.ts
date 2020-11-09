@@ -5,7 +5,7 @@ export type CalendarDayProps = {
   date: Date;
   disabled?: boolean;
   enabled?: boolean;
-  hover?: boolean;
+  focus?: boolean;
   locale: any;
   onClick?: (date: Date) => void;
   sameMonth?: boolean;
