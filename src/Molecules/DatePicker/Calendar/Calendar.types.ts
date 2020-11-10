@@ -5,9 +5,10 @@ export type CalendarDayProps = {
   date: Date;
   disabled?: boolean;
   enabled?: boolean;
-  focus?: boolean;
   locale: any;
   onClick?: (date: Date) => void;
+  onKeyDown: (event: React.KeyboardEvent) => void;
+  onFocus: () => void;
   sameMonth?: boolean;
   selected?: boolean;
   withinRange?: boolean;
