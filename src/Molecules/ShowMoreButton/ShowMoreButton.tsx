@@ -1,10 +1,8 @@
 import React from 'react';
-import { useIntl } from 'react-intl';
 
 import { Icon, Link, Flexbox, Spinner } from '../..';
 
 import { ShowMoreButtonComponent } from './ShowMoreButton.types';
-import messages from './ShowMoreButton.messages';
 
 export const ShowMoreButton: React.FC<ShowMoreButtonComponent> = ({
   onClick = () => {},
@@ -12,15 +10,14 @@ export const ShowMoreButton: React.FC<ShowMoreButtonComponent> = ({
   disabled = false,
   loading = false,
   align = 'center',
+  showMoreText,
+  showLessText,
 }) => {
-  const { formatMessage } = useIntl();
-  const noop = () => {};
-
   return (
     <Flexbox container justifyContent={align === 'left' ? 'flex-start' : 'center'}>
       <Flexbox item>
         {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-        <Link onClick={!disabled ? onClick : noop} disabled={disabled} aria-expanded={expanded}>
+        <Link onClick={!disabled ? onClick : () => {}} disabled={disabled} aria-expanded={expanded}>
           {/* eslint-disable-next-line no-nested-ternary */}
           {!expanded ? (
             loading ? (
@@ -30,13 +27,13 @@ export const ShowMoreButton: React.FC<ShowMoreButtonComponent> = ({
               />
             ) : (
               <>
-                {formatMessage(messages.showMore)}&nbsp;
+                {showMoreText}&nbsp;
                 <Icon.ChevronDown size={2} inline fill="currentColor" />
               </>
             )
           ) : (
             <>
-              {formatMessage(messages.showLess)}&nbsp;
+              {showLessText}&nbsp;
               <Icon.ChevronUp size={2} inline fill="currentColor" />
             </>
           )}

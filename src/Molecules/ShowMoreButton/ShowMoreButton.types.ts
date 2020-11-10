@@ -4,4 +4,6 @@ export type ShowMoreButtonComponent = {
   disabled?: boolean;
   loading?: boolean;
   align?: 'left' | 'center';
+  showMoreText: string;
+  showLessText: string;
 };

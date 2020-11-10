@@ -23,7 +23,13 @@ export const MockedShowMoreButton = () => {
           amet, consectetur adipisicing elit.
         </Typography>
       )}
-      <ShowMoreButton onClick={() => setShowMoreA(!showMoreA)} expanded={showMoreA} align="left" />
+      <ShowMoreButton
+        onClick={() => setShowMoreA(!showMoreA)}
+        expanded={showMoreA}
+        align="left"
+        showMoreText="Show more"
+        showLessText="Show less"
+      />
       <br />
       <Typography>
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur distinctio dolore iure
@@ -43,21 +49,35 @@ export const MockedShowMoreButton = () => {
         onClick={() => setShowMoreB(!showMoreB)}
         expanded={showMoreB}
         align="center"
+        showMoreText="Show more"
+        showLessText="Show less"
       />
     </>
   );
 };
 
 export const DisabledMockedShowMoreButton = () => {
-  const [showMore] = useState(false);
-
-  return <ShowMoreButton onClick={() => {}} expanded={showMore} disabled />;
+  return (
+    <ShowMoreButton
+      onClick={() => {}}
+      expanded={false}
+      disabled
+      showMoreText="Show more"
+      showLessText="Show less"
+    />
+  );
 };
 
 export const LoadingShowMoreButton = () => {
-  const [showMore] = useState(false);
-
-  return <ShowMoreButton onClick={() => {}} expanded={showMore} loading />;
+  return (
+    <ShowMoreButton
+      onClick={() => {}}
+      expanded={false}
+      loading
+      showMoreText="Show more"
+      showLessText="Show less"
+    />
+  );
 };
 
 storiesOf('Guidance / Show More Button', module)
