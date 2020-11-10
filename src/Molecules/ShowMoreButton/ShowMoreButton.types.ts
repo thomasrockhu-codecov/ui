@@ -1,5 +1,5 @@
 export type ShowMoreButtonComponent = {
-  onClick?: (val: any) => void;
+  onClick?: (e: React.MouseEvent) => void;
   expanded?: boolean;
   disabled?: boolean;
   loading?: boolean;

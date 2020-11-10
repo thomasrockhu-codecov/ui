@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Storyshots Guidance / Show More Button Default 1`] = `
+exports[`Storyshots Molecules / ShowMoreButton Aligned Left 1`] = `
 Array [
   .c0 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
@@ -14,7 +14,7 @@ Array [
 <span
     className="c0"
   >
-    Consectetur distinctio dolore iure nihil quam quis vel. Aut autem consequatur ex impedit magni molestias obcaecati omnis possimus! Consectetur distinctio dolore iure nihil quam quis vel. Aut autem consequatur ex impedit magni molestias obcaecati omnis possimus! Ex fugit nulla veritatis!
+    Ex fugit nulla veritatis! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur distinctio dolore iure nihil quam quis vel. Aut autem consequatur ex impedit magni molestias obcaecati omnis possimus! Consectetur distinctio dolore iure nihil quam quis vel. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores assumenda corporis dolorum, facilis id illum ipsam ipsum maxime modi necessitatibus nemo nostrum odio odit officia praesentium provident quod totam vero.
   </span>,
   .c0 {
   box-sizing: border-box;
@@ -47,6 +47,12 @@ Array [
   vertical-align: middle;
 }
 
+.c4 {
+  -webkit-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  transform: rotate(0deg);
+}
+
 .c2 {
   font-family: inherit;
   font-size: 100%;
@@ -92,6 +98,10 @@ Array [
   text-decoration: underline;
 }
 
+.c5 {
+  margin-left: 4px;
+}
+
 <div
     className="c0"
   >
@@ -105,24 +115,28 @@ Array [
         onClick={[Function]}
         type="button"
       >
-        Show more
-         
+        Show less
         <svg
           aria-hidden="true"
-          className="c3"
+          className="c3 c4 c5"
+          direction="down"
           focusable="false"
           preserveAspectRatio="xMidYMid meet"
           role="presentation"
-          viewBox="0 0 24 24"
+          viewBox="0 0 16 16"
         >
           <polygon
-            points="19.969 4 24 8.027 12 20 0 8.027 4.031 4 12 11.952"
+            points="14.620 3.580, 16.000 5.020, 8.000 12.730, 0.000 5.030, 1.400 3.580, 8.000 9.96"
           />
         </svg>
       </button>
     </div>
   </div>,
-  <br />,
+]
+`;
+
+exports[`Storyshots Molecules / ShowMoreButton Default 1`] = `
+Array [
   .c0 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
@@ -135,13 +149,9 @@ Array [
 <span
     className="c0"
   >
-    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur distinctio dolore iure nihil quam quis vel. Aut autem consequatur ex impedit magni molestias obcaecati omnis possimus! Consectetur distinctio dolore iure nihil quam quis vel. Aut autem consequatur ex impedit magni molestias obcaecati omnis possimus! Ex fugit nulla veritatis!
+    Consectetur distinctio dolore iure nihil quam quis vel. Aut autem consequatur ex impedit magni molestias obcaecati omnis possimus! Consectetur distinctio dolore iure nihil quam quis vel. Aut autem consequatur ex impedit magni molestias obcaecati omnis possimus! Ex fugit nulla veritatis!
   </span>,
-  .c1 {
-  box-sizing: border-box;
-}
-
-.c0 {
+  .c0 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -151,6 +161,10 @@ Array [
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
+}
+
+.c1 {
+  box-sizing: border-box;
 }
 
 .c3 {
@@ -168,6 +182,12 @@ Array [
   vertical-align: middle;
 }
 
+.c4 {
+  -webkit-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  transform: rotate(0deg);
+}
+
 .c2 {
   font-family: inherit;
   font-size: 100%;
@@ -213,6 +233,10 @@ Array [
   text-decoration: underline;
 }
 
+.c5 {
+  margin-left: 4px;
+}
+
 <div
     className="c0"
   >
@@ -226,18 +250,18 @@ Array [
         onClick={[Function]}
         type="button"
       >
-        Show more
-         
+        Show less
         <svg
           aria-hidden="true"
-          className="c3"
+          className="c3 c4 c5"
+          direction="down"
           focusable="false"
           preserveAspectRatio="xMidYMid meet"
           role="presentation"
-          viewBox="0 0 24 24"
+          viewBox="0 0 16 16"
         >
           <polygon
-            points="19.969 4 24 8.027 12 20 0 8.027 4.031 4 12 11.952"
+            points="14.620 3.580, 16.000 5.020, 8.000 12.730, 0.000 5.030, 1.400 3.580, 8.000 9.96"
           />
         </svg>
       </button>
@@ -246,7 +270,7 @@ Array [
 ]
 `;
 
-exports[`Storyshots Guidance / Show More Button Disabled 1`] = `
+exports[`Storyshots Molecules / ShowMoreButton Disabled 1`] = `
 .c0 {
   box-sizing: border-box;
   display: -webkit-box;
@@ -276,6 +300,12 @@ exports[`Storyshots Guidance / Show More Button Disabled 1`] = `
   flex-shrink: 0;
   display: inline-block;
   vertical-align: middle;
+}
+
+.c4 {
+  -webkit-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  transform: rotate(0deg);
 }
 
 .c2 {
@@ -323,6 +353,10 @@ exports[`Storyshots Guidance / Show More Button Disabled 1`] = `
   text-decoration: underline;
 }
 
+.c5 {
+  margin-left: 4px;
+}
+
 <div
   className="c0"
 >
@@ -336,18 +370,18 @@ exports[`Storyshots Guidance / Show More Button Disabled 1`] = `
       onClick={[Function]}
       type="button"
     >
-      Show more
-       
+      Show less
       <svg
         aria-hidden="true"
-        className="c3"
+        className="c3 c4 c5"
+        direction="down"
         focusable="false"
         preserveAspectRatio="xMidYMid meet"
         role="presentation"
-        viewBox="0 0 24 24"
+        viewBox="0 0 16 16"
       >
         <polygon
-          points="19.969 4 24 8.027 12 20 0 8.027 4.031 4 12 11.952"
+          points="14.620 3.580, 16.000 5.020, 8.000 12.730, 0.000 5.030, 1.400 3.580, 8.000 9.96"
         />
       </svg>
     </button>
@@ -355,7 +389,7 @@ exports[`Storyshots Guidance / Show More Button Disabled 1`] = `
 </div>
 `;
 
-exports[`Storyshots Guidance / Show More Button Loading 1`] = `
+exports[`Storyshots Molecules / ShowMoreButton Loading 1`] = `
 .c0 {
   box-sizing: border-box;
   display: -webkit-box;
@@ -370,6 +404,16 @@ exports[`Storyshots Guidance / Show More Button Loading 1`] = `
 
 .c1 {
   box-sizing: border-box;
+}
+
+.c3 {
+  display: inline-block;
+  -webkit-animation: spinner 0.6s linear infinite;
+  animation: spinner 0.6s linear infinite;
+}
+
+.c4 {
+  display: block;
 }
 
 .c2 {
@@ -429,7 +473,70 @@ exports[`Storyshots Guidance / Show More Button Loading 1`] = `
       disabled={false}
       onClick={[Function]}
       type="button"
-    />
+    >
+      <span
+        className="c3"
+      >
+        <svg
+          className="c4"
+          height={16}
+          viewBox="0 0 24 24"
+          width={16}
+        >
+          <defs>
+            <linearGradient
+              id="spinner-38val-ShowMoreButton-1"
+              x1="50%"
+              x2="50%"
+              y1="0%"
+              y2="100%"
+            >
+              <stop
+                offset="0%"
+                stopColor="#0046FF"
+                stopOpacity="0"
+              />
+              <stop
+                offset="100%"
+                stopColor="#0046FF"
+                stopOpacity=".5"
+              />
+            </linearGradient>
+            <linearGradient
+              id="spinner-38val-ShowMoreButton-2"
+              x1="50%"
+              x2="50%"
+              y1="0%"
+              y2="100%"
+            >
+              <stop
+                offset="0%"
+                stopColor="#0046FF"
+                stopOpacity=".5"
+              />
+              <stop
+                offset="100%"
+                stopColor="#0046FF"
+              />
+            </linearGradient>
+          </defs>
+          <g
+            fill="none"
+            fillRule="evenodd"
+          >
+            <path
+              d="M12,0 C18.627417,0 24,5.372583 24,12 C24,18.627417 18.627417,24 12,24 M12,21 C16.9705627,21 21,16.9705627 21,12 C21,7.02943725 16.9705627,3 12,3"
+              fill="url(#spinner-38val-ShowMoreButton-1)"
+            />
+            <path
+              d="M0,0 C6.627417,0 12,5.372583 12,12 C12,18.627417 6.627417,24 0,24 M0,21 C4.97056275,21 9,16.9705627 9,12 C9,7.02943725 4.97056275,3 0,3"
+              fill="url(#spinner-38val-ShowMoreButton-2)"
+              transform="rotate(-180 6 12)"
+            />
+          </g>
+        </svg>
+      </span>
+    </button>
   </div>
 </div>
 `;

@@ -1,12 +1,13 @@
 import React, { useState } from 'react';
-import { storiesOf } from '@storybook/react';
 import { Typography } from '../..';
 import { ShowMoreButton } from './ShowMoreButton';
 
-export const MockedShowMoreButton = () => {
-  const [showMoreA, setShowMoreA] = useState(false);
-  const [showMoreB, setShowMoreB] = useState(false);
+export default {
+  title: 'Molecules / ShowMoreButton',
+};
 
+export const Default = () => {
+  const [showMore, setShowMore] = useState(false);
   return (
     <>
       <Typography>
@@ -15,7 +16,7 @@ export const MockedShowMoreButton = () => {
         vel. Aut autem consequatur ex impedit magni molestias obcaecati omnis possimus! Ex fugit
         nulla veritatis!
       </Typography>
-      {showMoreA && (
+      {showMore && (
         <Typography>
           Ex fugit nulla veritatis! Lorem ipsum dolor sit amet, consectetur adipisicing elit.
           Consectetur distinctio dolore iure nihil quam quis vel. Aut autem consequatur ex impedit
@@ -24,31 +25,8 @@ export const MockedShowMoreButton = () => {
         </Typography>
       )}
       <ShowMoreButton
-        onClick={() => setShowMoreA(!showMoreA)}
-        expanded={showMoreA}
-        align="left"
-        showMoreText="Show more"
-        showLessText="Show less"
-      />
-      <br />
-      <Typography>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur distinctio dolore iure
-        nihil quam quis vel. Aut autem consequatur ex impedit magni molestias obcaecati omnis
-        possimus! Consectetur distinctio dolore iure nihil quam quis vel. Aut autem consequatur ex
-        impedit magni molestias obcaecati omnis possimus! Ex fugit nulla veritatis!
-      </Typography>
-      {showMoreB && (
-        <Typography>
-          Ex fugit nulla veritatis! Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-          Consectetur distinctio dolore iure nihil quam quis vel. Aut autem consequatur ex impedit
-          magni molestias obcaecati omnis possimus! Ex fugit nulla veritatis! Lorem ipsum dolor sit
-          amet, consectetur adipisicing elit.
-        </Typography>
-      )}
-      <ShowMoreButton
-        onClick={() => setShowMoreB(!showMoreB)}
-        expanded={showMoreB}
-        align="center"
+        onClick={() => setShowMore(!showMore)}
+        expanded={showMore}
         showMoreText="Show more"
         showLessText="Show less"
       />
@@ -56,7 +34,39 @@ export const MockedShowMoreButton = () => {
   );
 };
 
-export const DisabledMockedShowMoreButton = () => {
+export const AlignedLeft = () => {
+  const [showMore, setShowMore] = useState(false);
+  return (
+    <>
+      <Typography>
+        Ex fugit nulla veritatis! Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+        Consectetur distinctio dolore iure nihil quam quis vel. Aut autem consequatur ex impedit
+        magni molestias obcaecati omnis possimus! Consectetur distinctio dolore iure nihil quam quis
+        vel. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores assumenda corporis
+        dolorum, facilis id illum ipsam ipsum maxime modi necessitatibus nemo nostrum odio odit
+        officia praesentium provident quod totam vero.
+      </Typography>
+      {showMore && (
+        <Typography>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam beatae reiciendis vero.
+          Aliquid dolore, doloremque error facere illum ipsa magnam nam nemo neque non pariatur quas
+          sapiente tempore ullam voluptates. Ex fugit nulla veritatis! Lorem ipsum dolor sit amet,
+          consectetur adipisicing elit. Consectetur distinctio dolore iure nihil quam quis vel. Aut
+          autem consequatur ex impedit magni molestias obcaecati omnis possimus!
+        </Typography>
+      )}
+      <ShowMoreButton
+        onClick={() => setShowMore(!showMore)}
+        expanded={showMore}
+        align="left"
+        showMoreText="Show more"
+        showLessText="Show less"
+      />
+    </>
+  );
+};
+
+export const Disabled = () => {
   return (
     <ShowMoreButton
       onClick={() => {}}
@@ -68,7 +78,7 @@ export const DisabledMockedShowMoreButton = () => {
   );
 };
 
-export const LoadingShowMoreButton = () => {
+export const Loading = () => {
   return (
     <ShowMoreButton
       onClick={() => {}}
@@ -79,8 +89,3 @@ export const LoadingShowMoreButton = () => {
     />
   );
 };
-
-storiesOf('Guidance / Show More Button', module)
-  .add('Default', () => <MockedShowMoreButton />)
-  .add('Disabled', () => <DisabledMockedShowMoreButton />)
-  .add('Loading', () => <LoadingShowMoreButton />);
