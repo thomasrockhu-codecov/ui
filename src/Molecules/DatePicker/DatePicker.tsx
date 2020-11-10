@@ -303,7 +303,11 @@ export const DatePicker = (React.forwardRef<HTMLDivElement, Props>((props, ref) 
         disabled={disabled}
         id={id}
         data-testid="datepicker-input"
-        placeholder={dateFormat.toLowerCase()}
+        placeholder={
+          variant === REGULAR_DATE_PICKER
+            ? dateFormat.toLowerCase()
+            : `${dateFormat.toLowerCase()} - ${dateFormat.toLowerCase()}`
+        }
         value={inputValue}
         leftAddon={inputLeftAddon}
         rightAddon={inputRightAddon}
