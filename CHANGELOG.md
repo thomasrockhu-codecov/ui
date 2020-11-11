@@ -1,3 +1,10 @@
+## [4.5.1](https://github.com/nordnet/ui/compare/v4.5.0...v4.5.1) (2020-11-11)
+
+
+### Bug Fixes
+
+* change order of strings ([5edf419](https://github.com/nordnet/ui/commit/5edf419))
+
 # [4.5.0](https://github.com/nordnet/ui/compare/v4.4.5...v4.5.0) (2020-11-11)
 
 
