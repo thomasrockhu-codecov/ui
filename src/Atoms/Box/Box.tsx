@@ -76,22 +76,24 @@ const getStyles = (props: Props) => {
 };
 
 const getStylesForSize = (size: string) => css<Partial<Props>>`
-  ${p => p.theme.media.greaterThan(p.theme.breakpoints[size])} {
-    ${p => getStyles(p[size])}
+  ${(p) => p.theme.media.greaterThan(p.theme.breakpoints[size])} {
+    ${(p) => getStyles(p[size])}
   }
 `;
 const StyledDiv = styled.div<Props>`
-  ${p => getStyles(p)}
-  ${p => (p.sm ? getStylesForSize('sm') : '')}
-  ${p => (p.md ? getStylesForSize('md') : '')}
-  ${p => (p.xl ? getStylesForSize('xl') : '')}
-  ${p => (p.lg ? getStylesForSize('lg') : '')}
+  ${(p) => getStyles(p)}
+  ${(p) => (p.sm ? getStylesForSize('sm') : '')}
+  ${(p) =>
+    p.md ? getStylesForSize('md') : ''}
+  ${(p) => (p.xl ? getStylesForSize('xl') : '')}
+  ${(p) =>
+    p.lg ? getStylesForSize('lg') : ''}
 `;
 
 /**
  * Use `Box` component to handle margins/paddings.
  */
-export const Box: React.FC<Props> = React.forwardRef<HTMLDivElement, Props>(
+export const Box = React.forwardRef<HTMLDivElement, Props>(
   (
     {
       as,

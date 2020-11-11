@@ -1,3 +1,53 @@
+## [4.5.2](https://github.com/nordnet/ui/compare/v4.5.1...v4.5.2) (2020-11-11)
+
+
+### Bug Fixes
+
+* 🐛 allow ref prop in box component ([9d39407](https://github.com/nordnet/ui/commit/9d39407))
+
+## [4.5.1](https://github.com/nordnet/ui/compare/v4.5.0...v4.5.1) (2020-11-11)
+
+
+### Bug Fixes
+
+* change order of strings ([5edf419](https://github.com/nordnet/ui/commit/5edf419))
+
+# [4.5.0](https://github.com/nordnet/ui/compare/v4.4.5...v4.5.0) (2020-11-11)
+
+
+### Bug Fixes
+
+* add localization props ([4192e5f](https://github.com/nordnet/ui/commit/4192e5f))
+* showmorebutton rebuild ([cb8d5c1](https://github.com/nordnet/ui/commit/cb8d5c1))
+
+
+### Features
+
+* new molecule: showmorebutton ([94128a8](https://github.com/nordnet/ui/commit/94128a8))
+
+## [4.4.5](https://github.com/nordnet/ui/compare/v4.4.4...v4.4.5) (2020-11-09)
+
+
+### Bug Fixes
+
+* add some missing colors ([3b52e20](https://github.com/nordnet/ui/commit/3b52e20))
+
+## [4.4.4](https://github.com/nordnet/ui/compare/v4.4.3...v4.4.4) (2020-11-05)
+
+
+### Bug Fixes
+
+* change stroke of modal cross icon ([23e6250](https://github.com/nordnet/ui/commit/23e6250))
+* update storyshots ([ce9bf19](https://github.com/nordnet/ui/commit/ce9bf19))
+
+## [4.4.3](https://github.com/nordnet/ui/compare/v4.4.2...v4.4.3) (2020-11-03)
+
+
+### Bug Fixes
+
+* 🐛 add sellingpoint icons ([73755ba](https://github.com/nordnet/ui/commit/73755ba))
+* 🐛 allow passing color to sellingpoint icons ([691e7d0](https://github.com/nordnet/ui/commit/691e7d0))
+
 ## [4.4.2](https://github.com/nordnet/ui/compare/v4.4.1...v4.4.2) (2020-11-02)
 
 

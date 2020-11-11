@@ -30,7 +30,7 @@ export const separatorsWithDifferentColor = () => (
   <Container>
     <Separator color={(t) => t.color.negative} />
     <br />
-    <Separator color={(t) => t.color.backgroundDark} />
+    <Separator color={(t) => t.color.separator} />
   </Container>
 );
 

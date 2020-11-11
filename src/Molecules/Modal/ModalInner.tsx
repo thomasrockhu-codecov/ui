@@ -196,7 +196,7 @@ export const ModalInner: React.FC<Props> = ({
               {footer && <Footer>{footer}</Footer>}
               {!hideClose && (
                 <CloseButton type="button" onClick={onClose}>
-                  <Icon.CrossThin size={5} title={closeTitle} />
+                  <Icon.CrossThin size={5} title={closeTitle} stroke={(t) => t.color.svgFill} />
                 </CloseButton>
               )}
             </Dialog>
