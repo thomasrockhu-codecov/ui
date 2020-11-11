@@ -1,3 +1,16 @@
+# [4.5.0](https://github.com/nordnet/ui/compare/v4.4.5...v4.5.0) (2020-11-11)
+
+
+### Bug Fixes
+
+* add localization props ([4192e5f](https://github.com/nordnet/ui/commit/4192e5f))
+* showmorebutton rebuild ([cb8d5c1](https://github.com/nordnet/ui/commit/cb8d5c1))
+
+
+### Features
+
+* new molecule: showmorebutton ([94128a8](https://github.com/nordnet/ui/commit/94128a8))
+
 ## [4.4.5](https://github.com/nordnet/ui/compare/v4.4.4...v4.4.5) (2020-11-09)
 
 
