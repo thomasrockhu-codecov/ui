@@ -1,3 +1,10 @@
+## [4.5.2](https://github.com/nordnet/ui/compare/v4.5.1...v4.5.2) (2020-11-11)
+
+
+### Bug Fixes
+
+* 🐛 allow ref prop in box component ([9d39407](https://github.com/nordnet/ui/commit/9d39407))
+
 ## [4.5.1](https://github.com/nordnet/ui/compare/v4.5.0...v4.5.1) (2020-11-11)
 
 
