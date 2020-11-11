@@ -18,7 +18,7 @@ export const ShowMoreButton: React.FC<ShowMoreButtonComponent> = ({
   showLessText = 'Show less',
 }) => {
   const seed = useUIDSeed();
-  const spinnerId = seed('ShowMoreButton');
+  const spinnerId = seed('Spinner');
   return (
     <Flexbox container justifyContent={align === 'left' ? 'flex-start' : 'center'}>
       <Flexbox item>
@@ -31,7 +31,7 @@ export const ShowMoreButton: React.FC<ShowMoreButtonComponent> = ({
             />
           ) : (
             <>
-              {expanded ? showMoreText : showLessText}
+              {expanded ? showLessText : showMoreText}
               <StyledIconThinChevron
                 size={2}
                 inline
