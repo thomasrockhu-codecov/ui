@@ -10,6 +10,7 @@ import enLocale from 'date-fns/locale/en-US';
 import nbLocale from 'date-fns/locale/nb';
 import daLocale from 'date-fns/locale/da';
 import fiLocale from 'date-fns/locale/fi';
+import { isMatch, parse } from 'date-fns';
 import { capitalize } from './textUtils';
 
 type Options = {
@@ -58,6 +59,16 @@ export const newDate = (value: any = new Date()): Date => {
       ? parseISO(value as string)
       : toDate(value);
   return isValid(d) ? d : new Date();
+};
+
+export const parseDateString = (dateString: string, locale: string): null | Date => {
+  if (!isMatch(dateString, getDateFormat(locale), getLocale(locale))) return null;
+
+  const date = parse(dateString, getDateFormat(locale), newDate());
+
+  if (!isValid(date)) return null;
+
+  return date;
 };
 
 export type CalendarType = {
