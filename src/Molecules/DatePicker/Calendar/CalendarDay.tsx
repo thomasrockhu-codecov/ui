@@ -99,8 +99,7 @@ export const CalendarDay = React.forwardRef<HTMLDivElement, CalendarDayProps>(
 
     return (
       <StyledCalendarDay
-        // @ts-ignore
-        ref={ref} // TODO: ref should be allowed here, seems to be an issue with Styled Components
+        ref={ref}
         className={className}
         $disabled={disabled || (typeof enabled === 'boolean' && !enabled)}
         $selected={selected}
