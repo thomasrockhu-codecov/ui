@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import styled, { css } from 'styled-components';
-import { ExpandRowComponent, ExpandRowProps, RowComponent } from './Row.types';
+import { ExpandRowComponent, RowComponent } from './Row.types';
 import { Flexbox } from '../../..';
 import { ColorFn } from '../../../common/Types/sharedTypes';
 import { getDensityPaddings } from '../shared/textUtils';
@@ -8,7 +8,7 @@ import { Density, MediaRelatedProps } from '../shared/shared.types';
 import { useFlexTable } from '../shared/FlexTableProvider';
 import { ExpandItems, ExpandItem } from './components/ExpandItems';
 import { RenderForSizes } from '../shared';
-import { ExpandElement, ExpandArea } from './components';
+import { ExpandArea } from './components';
 import { Theme } from '../../../theme/theme.types';
 
 const getDensityStyles = (density: Density) => `
@@ -26,53 +26,47 @@ const getExpandableStyles = (p: { expandable: boolean; expanded: boolean } & { t
 
 const getStylesForSize = (size: string) => css<StyledRowProps>`
   ${(p) => p.theme.media.greaterThan(p.theme.breakpoints[size])} {
-    ${(p) => (p['$' + size].density ? getDensityStyles(p['$' + size].density) : '')}
-    ${(p) => (p['$' + size].expandable ? getExpandableStyles({ ...p, ...p['$' + size] }) : '')}
+    ${(p) => (p[`$${size}`].density ? getDensityStyles(p[`$${size}`].density) : '')}
+    ${(p) => (p[`$${size}`].expandable ? getExpandableStyles({ ...p, ...p[`$${size}`] }) : '')}
   }
 `;
 
 type StyledRowProps = {
-  hideSeparator: boolean;
-  expanded: boolean;
-  separatorColor: ColorFn;
-  hoverHighlight: boolean;
-  density: Density;
-  expandable: boolean;
-  columnDistance: number;
+  $hideSeparator: boolean;
+  $expanded: boolean;
+  $separatorColor: ColorFn;
+  $hoverHighlight: boolean;
+  $density: Density;
+  $expandable: boolean;
+  $sm: any;
+  $md: any;
+  $lg: any;
+  $xl: any;
 } & MediaRelatedProps<{ density: Density; expandable: boolean; columnDistance: number }>;
 
 /* the cells are padded by row gutter 1 unit (4px) */
-
-const StyledRow = styled(Flexbox).withConfig({
-  shouldForwardProp: (prop) =>
-    ![
-      'hideSeparator',
-      'expanded',
-      'separatorColor',
-      'density',
-      'hoverHighlight',
-      'expandable',
-    ].includes(prop),
-})<StyledRowProps>`
+const StyledRow = styled(Flexbox)<StyledRowProps>`
   background: ${(p) => p.theme.color.tableRowBackground};
   ${(p) =>
-    !p.hideSeparator && !p.expanded ? `border-bottom: 1px solid ${p.separatorColor(p.theme)}` : ''};
+    !p.$hideSeparator && !p.$expanded
+      ? `border-bottom: 1px solid ${p.$separatorColor(p.theme)}`
+      : ''};
 
-  padding-right: ${(p) => (p.expandable ? p.theme.spacing.unit(2) : p.theme.spacing.unit(1))}px;
-  padding-left: ${(p) => (p.expandable ? p.theme.spacing.unit(1.5) : p.theme.spacing.unit(0.5))}px;
+  padding-right: ${(p) => (p.$expandable ? p.theme.spacing.unit(2) : p.theme.spacing.unit(1))}px;
+  padding-left: ${(p) => (p.$expandable ? p.theme.spacing.unit(1.5) : p.theme.spacing.unit(0.5))}px;
 
   border-left: ${(p) => p.theme.spacing.unit(0.5)}px solid
-    ${(p) => (p.expanded && p.expandable ? p.theme.color.cta : 'transparent')};
+    ${(p) => (p.$expanded && p.$expandable ? p.theme.color.cta : 'transparent')};
 
   ${(p) =>
-    p.hoverHighlight &&
-    !p.expanded &&
+    p.$hoverHighlight &&
+    !p.$expanded &&
     `&:hover {
       background: ${p.theme.color.tableRowHover};
     }`};
 
-  padding-top: ${(p) => getDensityPaddings(p.density)}px;
-  padding-bottom: ${(p) => getDensityPaddings(p.density)}px;
+  padding-top: ${(p) => getDensityPaddings(p.$density)}px;
+  padding-bottom: ${(p) => getDensityPaddings(p.$density)}px;
 
   margin-right: 0;
   margin-left: 0;
@@ -86,14 +80,11 @@ const StyledRow = styled(Flexbox).withConfig({
       padding-right: 0;
     }
   }
-  // @ts-ignore
-  ${(p) => p.$sm ? getStylesForSize('sm') : ''}
-  // @ts-ignore
-  ${(p) => p.$md ? getStylesForSize('md') : ''}
-  // @ts-ignore
-  ${(p) => p.$lg ? getStylesForSize('lg') : ''}
-  // @ts-ignore
-  ${(p) => p.$xl ? getStylesForSize('xl') : ''}
+  ${(p) => (p.$sm ? getStylesForSize('sm') : '')}
+  ${(p) => (p.$md ? getStylesForSize('md') : '')}
+  ${(p) =>
+    p.$lg ? getStylesForSize('lg') : ''}
+  ${(p) => (p.$xl ? getStylesForSize('xl') : '')}
 `;
 
 const StyledExpandedRow = styled('div').withConfig({
@@ -149,21 +140,13 @@ const Row: RowComponent = ({
   expandChildren: expandChildrenXs,
   expandItems: expandItemsXs,
   children,
-  sm,
-  md,
-  lg,
-  xl,
+  sm: smExpandProps,
+  md: mdExpandProps,
+  lg: lgExpandProps,
+  xl: xlExpandProps,
   ...htmlProps
 }) => {
-  const {
-    density: xsDensity,
-    columnDistance: xsColumnDistance,
-    expandable: xsExpandable,
-    sm: smTable,
-    md: mdTable,
-    lg: lgTable,
-    xl: xlTable,
-  } = useFlexTable();
+  const { density, columnDistance: gutter, expandable, sm, md, lg, xl } = useFlexTable();
   const controlledExpand = expanded !== undefined;
   const [expand, setExpand] = useState(controlledExpand ? expanded : initiallyExpanded);
 
@@ -180,32 +163,30 @@ const Row: RowComponent = ({
     if (controlledExpand) {
       setExpand(expanded);
     }
-  }, [expanded]);
+  }, [controlledExpand, expanded]);
 
   return (
     <>
       <StyledRow
-        density={xsDensity}
-        expandable={xsExpandable}
-        gutter={xsColumnDistance}
-        columnDistance={xsColumnDistance}
-        // @ts-ignore
-        $sm={smTable}
-        $md={mdTable}
-        $lg={lgTable}
-        $xl={xlTable}
-        sm={{ gutter: smTable?.columnDistance }}
-        md={{ gutter: mdTable?.columnDistance }}
-        lg={{ gutter: lgTable?.columnDistance }}
-        xl={{ gutter: xlTable?.columnDistance }}
-        className={className}
+        $density={density}
+        $expandable={expandable}
+        $expanded={!!expand}
+        $hideSeparator={hideSeparator}
+        $hoverHighlight={hoverHighlight}
+        $separatorColor={separatorColor}
+        $sm={sm}
+        $md={md}
+        $lg={lg}
+        $xl={xl}
         container
-        alignItems="center"
-        hoverHighlight={hoverHighlight}
-        hideSeparator={hideSeparator}
         role="row"
-        expanded={!!expand}
-        separatorColor={separatorColor}
+        className={className}
+        alignItems="center"
+        gutter={gutter}
+        lg={{ gutter: lg?.columnDistance }}
+        md={{ gutter: md?.columnDistance }}
+        sm={{ gutter: sm?.columnDistance }}
+        xl={{ gutter: xl?.columnDistance }}
         {...htmlProps}
       >
         {children}
@@ -226,10 +207,10 @@ const Row: RowComponent = ({
         <ExpandRow
           expandItems={expandItemsXs}
           expandChildren={expandChildrenXs}
-          sm={sm}
-          md={md}
-          lg={lg}
-          xl={xl}
+          sm={smExpandProps}
+          md={mdExpandProps}
+          lg={lgExpandProps}
+          xl={xlExpandProps}
           separatorColor={separatorColor}
         />
       )}
