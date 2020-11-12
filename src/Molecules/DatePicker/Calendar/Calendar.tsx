@@ -8,12 +8,6 @@ import { Props } from './Calendar.types';
 import { FIRST_DAY, LAST_DAY, NUMBER_OF_VISIBLE_DAYS, NUMBER_OF_VISIBLE_WEEKS } from './constants';
 import { CalendarDay } from './CalendarDay';
 
-const calendarDayRefs = [...Array(NUMBER_OF_VISIBLE_WEEKS)].map(() => {
-  return [...Array(NUMBER_OF_VISIBLE_DAYS)].reduce((acc) => {
-    return [...acc, React.createRef()];
-  }, []);
-});
-
 export const StyledBox = styled(Box)`
   border: 1px solid transparent;
   min-width: ${({ theme }) => theme.spacing.unit(10)}px;
@@ -36,6 +30,14 @@ const Calendar: React.FC<Props> = ({
     null,
   ]);
   const focusedDateObjRef = useRef<Date | null>(null);
+
+  const calendarDayRefs = useRef(
+    [...Array(NUMBER_OF_VISIBLE_WEEKS)].map(() => {
+      return [...Array(NUMBER_OF_VISIBLE_DAYS)].reduce((acc) => {
+        return [...acc, React.createRef()];
+      }, []);
+    }),
+  );
 
   const handleKeyPress = (event: React.KeyboardEvent) => {
     if (R.isNil(focusedWeek) || R.isNil(focusedDay)) {
@@ -85,9 +87,9 @@ const Calendar: React.FC<Props> = ({
     if (
       !R.isNil(focusedWeek) &&
       !R.isNil(focusedDay) &&
-      !R.isNil(calendarDayRefs[focusedWeek][focusedDay])
+      !R.isNil(calendarDayRefs.current[focusedWeek][focusedDay].current)
     ) {
-      calendarDayRefs[focusedWeek][focusedDay].current.focus();
+      calendarDayRefs.current[focusedWeek][focusedDay].current.focus();
     }
   }, [focusedDay, focusedWeek]);
 
@@ -119,7 +121,7 @@ const Calendar: React.FC<Props> = ({
 
             return (
               <CalendarDay
-                ref={calendarDayRefs[weekIndex][dayIndex]}
+                ref={calendarDayRefs.current[weekIndex][dayIndex]}
                 onFocus={() => {
                   setFocused([weekIndex, dayIndex]);
                   focusedDateObjRef.current = d;
