@@ -89,7 +89,18 @@ export const DatePicker = (React.forwardRef<HTMLDivElement, Props>((props, ref) 
     setOpen(openProp);
   }, [openProp]);
 
-  const handleRangeDateClick = useCallback(
+  const handleDateClickRegular = useCallback(
+    (date: Date) => {
+      setInputValue(format(date, dateFormat, options));
+      setSelectedDate(date);
+      setOpen(false);
+
+      if (onChange) onChange(date);
+    },
+    [dateFormat, onChange, options],
+  );
+
+  const handleDateClickRange = useCallback(
     (date: Date) => {
       const [startDate, endDate] = ((): [Date, Date | null] => {
         if (!selectedDate) return [date, endDate];
@@ -126,42 +137,30 @@ export const DatePicker = (React.forwardRef<HTMLDivElement, Props>((props, ref) 
     [selectedDate, dateFormat, options, onChange, selectedEndDate],
   );
 
-  const handleRegularDateClick = useCallback(
+  const onDateClick = useCallback(
     (date: Date) => {
+      if (variant === REGULAR_DATE_PICKER) handleDateClickRegular(date);
+      else handleDateClickRange(date);
+    },
+    [variant, handleDateClickRegular, handleDateClickRange],
+  );
+
+  const handleInputSubmitRegular = useCallback(
+    (dateString: string) => {
+      const date = parseDateString(dateString, locale);
+      if (!date) return;
+      if (selectedDate && isSameDay(date, selectedDate)) return;
+
       setInputValue(format(date, dateFormat, options));
       setSelectedDate(date);
-      setOpen(false);
+      setViewedDate(newDate(date));
 
       if (onChange) onChange(date);
     },
-    [dateFormat, onChange, options],
+    [dateFormat, locale, onChange, options, selectedDate],
   );
 
-  const handleOnDateClick = useCallback(
-    (date: Date) => {
-      if (variant === REGULAR_DATE_PICKER) handleRegularDateClick(date);
-      else handleRangeDateClick(date);
-    },
-    [variant, handleRegularDateClick, handleRangeDateClick],
-  );
-
-  const handleOnMonthChange = useCallback(
-    (index: number) => {
-      viewedDate.setMonth(index);
-      setViewedDate(newDate(viewedDate));
-    },
-    [viewedDate, setViewedDate],
-  );
-
-  const handleOnYearChange = useCallback(
-    (year: number) => {
-      viewedDate.setFullYear(year);
-      setViewedDate(newDate(viewedDate));
-    },
-    [viewedDate, setViewedDate],
-  );
-
-  const handleRangeInputSubmit = useCallback(
+  const handleInputSubmitRange = useCallback(
     (dateString: string) => {
       const [startDateString, endDateString] = dateString.split(' - ');
       const [startDate, endDate] = (() => {
@@ -214,35 +213,36 @@ export const DatePicker = (React.forwardRef<HTMLDivElement, Props>((props, ref) 
     [locale, selectedDate, onChange, selectedEndDate, dateFormat, options],
   );
 
-  const handleRegularInputSubmit = useCallback(
-    (dateString: string) => {
-      const date = parseDateString(dateString, locale);
-      if (!date) return;
-      if (selectedDate && isSameDay(date, selectedDate)) return;
+  const onInputSubmit = (event: React.KeyboardEvent<HTMLInputElement>) => {
+    const { value } = event.target as HTMLInputElement;
+    if (event.key === 'Enter') {
+      if (variant === RANGE_DATE_PICKER) handleInputSubmitRange(value);
+      else handleInputSubmitRegular(value);
+    }
+  };
 
-      setInputValue(format(date, dateFormat, options));
-      setSelectedDate(date);
-      setViewedDate(newDate(date));
-
-      if (onChange) onChange(date);
-    },
-    [dateFormat, locale, onChange, options, selectedDate],
-  );
+  const handleInputOnFocus = useCallback(() => setOpen(true), [setOpen]);
 
   const handleInputOnChange = useCallback((event: React.ChangeEvent<HTMLInputElement>) => {
     const { value } = event.target;
     setInputValue(value);
   }, []);
 
-  const handleInputSubmit = (event: React.KeyboardEvent<HTMLInputElement>) => {
-    const { value } = event.target as HTMLInputElement;
-    if (event.key === 'Enter') {
-      if (variant === RANGE_DATE_PICKER) handleRangeInputSubmit(value);
-      else handleRegularInputSubmit(value);
-    }
-  };
+  const onMonthChange = useCallback(
+    (index: number) => {
+      viewedDate.setMonth(index);
+      setViewedDate(newDate(viewedDate));
+    },
+    [viewedDate, setViewedDate],
+  );
 
-  const handleInputOnFocus = useCallback(() => setOpen(true), [setOpen]);
+  const onYearChange = useCallback(
+    (year: number) => {
+      viewedDate.setFullYear(year);
+      setViewedDate(newDate(viewedDate));
+    },
+    [viewedDate, setViewedDate],
+  );
 
   const datepicker = (
     <Box my={3} mx={2}>
@@ -252,15 +252,15 @@ export const DatePicker = (React.forwardRef<HTMLDivElement, Props>((props, ref) 
         id={id}
         viewedDate={viewedDate}
         locale={locale}
-        onMonthChange={handleOnMonthChange}
-        onYearChange={handleOnYearChange}
+        onMonthChange={onMonthChange}
+        onYearChange={onYearChange}
       />
       <Calendar
         disableDate={disableDate}
         enableDate={enableDate}
         viewedDate={viewedDate}
         locale={locale}
-        onClick={handleOnDateClick}
+        onClick={onDateClick}
         selectedDate={selectedDate as Date}
         selectedEndDate={selectedEndDate as Date}
       />
@@ -302,7 +302,7 @@ export const DatePicker = (React.forwardRef<HTMLDivElement, Props>((props, ref) 
         leftAddon={inputLeftAddon}
         rightAddon={inputRightAddon}
         onChange={handleInputOnChange}
-        onKeyDown={handleInputSubmit}
+        onKeyDown={onInputSubmit}
         onFocus={handleInputOnFocus}
         width={width ? `${theme.spacing.unit(width)}px` : ''}
         autoComplete="off"
