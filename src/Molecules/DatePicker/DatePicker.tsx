@@ -103,7 +103,7 @@ export const DatePicker = (React.forwardRef<HTMLDivElement, Props>((props, ref) 
   const handleDateClickRange = useCallback(
     (date: Date) => {
       const [startDate, endDate] = ((): [Date, Date | null] => {
-        if (!selectedDate) return [date, endDate];
+        if (!selectedDate) return [date, null];
 
         const swapDate = !selectedEndDate && !isAfter(date, selectedDate);
         const moveSelectedDate =
@@ -132,6 +132,7 @@ export const DatePicker = (React.forwardRef<HTMLDivElement, Props>((props, ref) 
       setSelectedDate(startDate);
       setSelectedEndDate(endDate);
       setInputValue(rangeDateString);
+
       if (onChange) onChange(startDate, endDate);
     },
     [selectedDate, dateFormat, options, onChange, selectedEndDate],
