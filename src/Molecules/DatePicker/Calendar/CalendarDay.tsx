@@ -80,8 +80,10 @@ export const CalendarDay = React.forwardRef<HTMLDivElement, CalendarDayProps>(
     },
     ref,
   ) => {
+    const DISABLED_OR_NOT_ENABLED = disabled || !enabled;
+
     const textColor = (() => {
-      if (disabled || (typeof enabled === 'boolean' && !enabled)) return 'label';
+      if (DISABLED_OR_NOT_ENABLED) return 'label';
       if (!sameMonth && !selected) return 'label';
       if (selected) return 'buttonText';
       if (!selected) return 'text';
@@ -101,7 +103,7 @@ export const CalendarDay = React.forwardRef<HTMLDivElement, CalendarDayProps>(
       <StyledCalendarDay
         ref={ref}
         className={className}
-        $disabled={disabled || (typeof enabled === 'boolean' && !enabled)}
+        $disabled={DISABLED_OR_NOT_ENABLED}
         $selected={selected}
         $withinRange={withinRange}
         $isToday={isToday(date)}
