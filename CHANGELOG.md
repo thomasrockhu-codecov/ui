@@ -1,3 +1,15 @@
+# [4.6.0](https://github.com/nordnet/ui/compare/v4.5.3...v4.6.0) (2020-11-13)
+
+
+### Bug Fixes
+
+* add missing options ([655dc3d](https://github.com/nordnet/ui/commit/655dc3d))
+
+
+### Features
+
+* add chevron icon with direction props ([15ce2aa](https://github.com/nordnet/ui/commit/15ce2aa))
+
 ## [4.5.3](https://github.com/nordnet/ui/compare/v4.5.2...v4.5.3) (2020-11-13)
 
 
