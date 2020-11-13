@@ -1,3 +1,10 @@
+## [4.5.3](https://github.com/nordnet/ui/compare/v4.5.2...v4.5.3) (2020-11-13)
+
+
+### Bug Fixes
+
+* make showLessText optional ([b0ff27f](https://github.com/nordnet/ui/commit/b0ff27f))
+
 ## [4.5.2](https://github.com/nordnet/ui/compare/v4.5.1...v4.5.2) (2020-11-11)
 
 
