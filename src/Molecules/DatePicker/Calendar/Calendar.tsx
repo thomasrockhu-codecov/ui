@@ -40,6 +40,7 @@ const Calendar: React.FC<Props> = ({
   );
 
   const handleKeyPress = (event: React.KeyboardEvent) => {
+    event.stopPropagation();
     if (R.isNil(focusedWeek) || R.isNil(focusedDay)) {
       setFocused([0, 0]);
     } else {
