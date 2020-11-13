@@ -69,13 +69,13 @@ export const thinChevronRight = () => (
 
 export const chevronUp = () => (
   <span>
-    <Icon.Chevron direction={select('Direction', ['up', 'down'], 'up')} />
+    <Icon.Chevron direction={select('Direction', ['up', 'down', 'left', 'right'], 'up')} />
   </span>
 );
 
 export const chevronDown = () => (
   <span>
-    <Icon.Chevron direction={select('Direction', ['up', 'down'], 'down')} />
+    <Icon.Chevron direction={select('Direction', ['up', 'down', 'left', 'right'], 'down')} />
   </span>
 );
 
