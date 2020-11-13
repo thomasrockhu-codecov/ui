@@ -47,7 +47,7 @@ const Calendar: React.FC<Props> = ({
         case 'ArrowLeft':
           if (focusedDay > 0) {
             setFocused([focusedWeek, focusedDay - 1]);
-          } else if (focusedWeek !== 0) {
+          } else if (focusedWeek > 0) {
             setFocused([focusedWeek - 1, NUMBER_OF_VISIBLE_DAYS - 1]);
           }
           break;
@@ -55,7 +55,7 @@ const Calendar: React.FC<Props> = ({
         case 'ArrowRight':
           if (focusedDay < NUMBER_OF_VISIBLE_DAYS - 1) {
             setFocused([focusedWeek, focusedDay + 1]);
-          } else if (focusedWeek !== NUMBER_OF_VISIBLE_WEEKS - 1) {
+          } else if (focusedWeek < NUMBER_OF_VISIBLE_WEEKS - 1) {
             setFocused([focusedWeek + 1, 0]);
           }
           break;
