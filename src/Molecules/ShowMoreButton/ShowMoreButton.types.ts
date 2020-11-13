@@ -5,5 +5,5 @@ export type ShowMoreButtonComponent = {
   loading?: boolean;
   align?: 'left' | 'center';
   showMoreText: string;
-  showLessText: string;
+  showLessText?: string;
 };
