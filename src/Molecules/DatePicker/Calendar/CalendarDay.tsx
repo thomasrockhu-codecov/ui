@@ -110,7 +110,7 @@ export const CalendarDay = React.forwardRef<HTMLDivElement, CalendarDayProps>(
         $edgeDay={edgeDay}
         onClick={handleOnClick}
         onKeyDown={onKeyDown}
-        onFocus={() => onFocus()}
+        onFocus={onFocus}
         aria-label={ariaLabel}
         tabIndex={0}
       >
