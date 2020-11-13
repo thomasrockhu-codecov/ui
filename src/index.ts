@@ -72,6 +72,7 @@ import TruncateWithTooltip from './Molecules/TruncateWithTooltip';
 /** Organisms */
 import CardWithTabs from './Organisms/CardWithTabs';
 import Development from './Organisms/Development';
+import ShowMore from './Organisms/ShowMore';
 import StatusModal from './Organisms/StatusModal';
 
 /** Hooks */
@@ -144,6 +145,7 @@ export {
   SegmentedControl,
   SelectionCard,
   Separator,
+  ShowMore,
   ShowMoreButton,
   Skeleton,
   Slider,
