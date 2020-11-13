@@ -111,7 +111,7 @@ const Calendar: React.FC<Props> = ({
       </Flexbox>
       {calendar.dates.map((week, weekIndex) => (
         <Flexbox container key={week.toString()}>
-          {week.map((d, dayIndex) => {
+          {week.map((day, dayIndex) => {
             const edgeDay = (() => {
               if (weekIndex === 0 && dayIndex === 0) return FIRST_DAY;
               if (weekIndex === calendar.dates.length - 1 && dayIndex === week.length - 1)
@@ -124,23 +124,23 @@ const Calendar: React.FC<Props> = ({
                 ref={calendarDayRefs.current[weekIndex][dayIndex]}
                 onFocus={() => {
                   setFocused([weekIndex, dayIndex]);
-                  focusedDateObjRef.current = d;
+                  focusedDateObjRef.current = day;
                 }}
-                key={d.toString()}
-                date={d}
-                enabled={enableDate && enableDate(d)}
-                disabled={disableDate && disableDate(d)}
-                onClick={() => onClick(d)}
+                key={day.toString()}
+                date={day}
+                enabled={enableDate && enableDate(day)}
+                disabled={disableDate && disableDate(day)}
+                onClick={() => onClick(day)}
                 onKeyDown={handleKeyPress}
                 selected={
-                  (selectedDate && isSameDay(selectedDate, d)) ||
-                  (selectedEndDate && isSameDay(selectedEndDate, d))
+                  (selectedDate && isSameDay(selectedDate, day)) ||
+                  (selectedEndDate && isSameDay(selectedEndDate, day))
                 }
-                sameMonth={isSameMonth(viewedDate, d)}
+                sameMonth={isSameMonth(viewedDate, day)}
                 locale={localeObj}
                 withinRange={
                   selectedEndDate &&
-                  isWithinInterval(d, { start: selectedDate, end: selectedEndDate })
+                  isWithinInterval(day, { start: selectedDate, end: selectedEndDate })
                 }
                 edgeDay={edgeDay}
               />
