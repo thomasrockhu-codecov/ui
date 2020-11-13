@@ -2661,208 +2661,6 @@ exports[`Storyshots Molecules / Input / Text Hidden label 1`] = `
 </div>
 `;
 
-exports[`Storyshots Molecules / Input / Text Left addon 1`] = `
-.c3 {
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.c7 {
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.c1 {
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  cursor: pointer;
-}
-
-.c9 {
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  width: 16px;
-  height: 16px;
-  fill: #282823;
-  -webkit-flex-shrink: 0;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
-  display: block;
-}
-
-.c2 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #6E6E69;
-  margin: 0;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
-}
-
-.c4 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #282823;
-  margin: 0;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
-}
-
-.c8 {
-  width: 32px;
-  top: 0;
-  height: 100%;
-  padding-left: 4px;
-  padding-right: 4px;
-  position: absolute;
-  left: 0;
-}
-
-.c6 {
-  font-family: inherit;
-  font-size: 100%;
-  line-height: 1.15;
-  margin: 0;
-  overflow: visible;
-  border: 0;
-  width: 100%;
-  padding: 8px;
-  margin: 0;
-  line-height: inherit;
-  box-sizing: border-box;
-  height: 40px;
-  outline: none;
-  border: solid;
-  border-color: #BCBCB6;
-  border-width: 1px;
-  position: relative;
-  background-color: #FFFFFF;
-  padding-left: 32px;
-}
-
-.c6:focus {
-  border-width: 1px;
-}
-
-.c6:hover {
-  border-color: #4B4B46;
-}
-
-.c6:focus {
-  border-color: #0046FF;
-}
-
-.c6::-webkit-input-placeholder {
-  color: #6E6E69;
-  height: inherit;
-  line-height: inherit;
-  opacity: 1;
-}
-
-.c6::-moz-placeholder {
-  color: #6E6E69;
-  height: inherit;
-  line-height: inherit;
-  opacity: 1;
-}
-
-.c6:-ms-input-placeholder {
-  color: #6E6E69;
-  height: inherit;
-  line-height: inherit;
-  opacity: 1;
-}
-
-.c6::placeholder {
-  color: #6E6E69;
-  height: inherit;
-  line-height: inherit;
-  opacity: 1;
-}
-
-.c5 {
-  position: relative;
-  padding: 0px 0;
-}
-
-.c0 {
-  width: 200px;
-  display: inline-block;
-}
-
-<div
-  className="c0"
->
-  <label
-    className="c1"
-    hidden={false}
-  >
-    <span
-      className="c2"
-    >
-      <div
-        className="c3"
-      >
-        Label 
-      </div>
-      <span
-        className="c4"
-      >
-        <div
-          className="c5"
-        >
-          <input
-            className="NormalizedInput__Input-sc-1m4kmh9-0 c6"
-            placeholder="Placeholder"
-            type="text"
-            variant="normal"
-          />
-          <div
-            className="c7 c8"
-            position="left"
-            variant="normal"
-          >
-            <svg
-              aria-hidden="true"
-              className="c9"
-              focusable="false"
-              preserveAspectRatio="xMidYMid meet"
-              role="presentation"
-              viewBox="0 0 24 24"
-            >
-              <path
-                d="M15 0L3 13.5h7.5L9 24l12-13.5h-7.5z"
-                id="a"
-              />
-            </svg>
-          </div>
-        </div>
-      </span>
-    </span>
-  </label>
-</div>
-`;
-
 exports[`Storyshots Molecules / Input / Text Quiet 1`] = `
 Array [
   .c0 {
@@ -2912,22 +2710,6 @@ Array [
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.c23 {
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-pack: end;
   -webkit-justify-content: flex-end;
   -ms-flex-pack: end;
@@ -2951,20 +2733,6 @@ Array [
   text-overflow: ellipsis;
   white-space: nowrap;
   cursor: pointer;
-}
-
-.c21 {
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  width: 16px;
-  height: 16px;
-  fill: #282823;
-  -webkit-flex-shrink: 0;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
-  display: block;
 }
 
 .c5 {
@@ -3010,7 +2778,7 @@ Array [
   padding-left: 4px;
   padding-right: 4px;
   position: absolute;
-  left: 0;
+  right: 4px;
 }
 
 .c20:not(:focus) {
@@ -3018,22 +2786,7 @@ Array [
   padding-right: 0;
 }
 
-.c24 {
-  width: 32px;
-  top: 0;
-  height: 100%;
-  padding-left: 4px;
-  padding-right: 4px;
-  position: absolute;
-  right: 4px;
-}
-
-.c24:not(:focus) {
-  padding-left: 0;
-  padding-right: 0;
-}
-
-.c24:not(:focus) {
+.c20:not(:focus) {
   right: 0;
 }
 
@@ -3345,7 +3098,7 @@ Array [
   border-width: 0 0 2px 0;
   position: relative;
   background-color: #FFFFFF;
-  padding-left: 32px;
+  padding-right: 40px;
   color: #0046FF;
   font-size: 28px;
   font-weight: bold;
@@ -3396,85 +3149,11 @@ Array [
 }
 
 .c17:focus {
-  padding-left: 32px;
-  padding-right: 0px;
-}
-
-.c22 {
-  font-family: inherit;
-  font-size: 100%;
-  line-height: 1.15;
-  margin: 0;
-  overflow: visible;
-  border: 0;
-  width: 100%;
-  padding: 0px;
-  margin: 0;
-  line-height: inherit;
-  box-sizing: border-box;
-  height: 40px;
-  outline: none;
-  border: solid;
-  border-color: #BCBCB6;
-  border-width: 0 0 2px 0;
-  position: relative;
-  background-color: #FFFFFF;
-  padding-right: 40px;
-  color: #0046FF;
-  font-size: 28px;
-  font-weight: bold;
-}
-
-.c22:focus {
-  border-width: 1px;
-}
-
-.c22:hover {
-  border-color: #4B4B46;
-}
-
-.c22:focus {
-  border-color: #0046FF;
-}
-
-.c22::-webkit-input-placeholder {
-  color: #0046FF;
-  height: inherit;
-  line-height: inherit;
-  opacity: 1;
-}
-
-.c22::-moz-placeholder {
-  color: #0046FF;
-  height: inherit;
-  line-height: inherit;
-  opacity: 1;
-}
-
-.c22:-ms-input-placeholder {
-  color: #0046FF;
-  height: inherit;
-  line-height: inherit;
-  opacity: 1;
-}
-
-.c22::placeholder {
-  color: #0046FF;
-  height: inherit;
-  line-height: inherit;
-  opacity: 1;
-}
-
-.c22:disabled {
-  color: #A0A09B;
-}
-
-.c22:focus {
   padding-left: 8px;
   padding-right: 32px;
 }
 
-.c22:focus + .c19 {
+.c17:focus + .c19 {
   padding-right: 8px;
 }
 
@@ -3799,7 +3478,7 @@ Array [
       <div
         className="c2"
       >
-        Left addon
+        Right addon
       </div>
       <div>
         <div
@@ -3831,69 +3510,6 @@ Array [
                   />
                   <div
                     className="c18 c19 c20"
-                    position="left"
-                    variant="quiet"
-                  >
-                    <svg
-                      aria-hidden="true"
-                      className="c21"
-                      focusable="false"
-                      preserveAspectRatio="xMidYMid meet"
-                      role="presentation"
-                      viewBox="0 0 24 24"
-                    >
-                      <path
-                        d="M15 0L3 13.5h7.5L9 24l12-13.5h-7.5z"
-                        id="a"
-                      />
-                    </svg>
-                  </div>
-                </div>
-              </span>
-            </span>
-          </label>
-        </div>
-      </div>
-    </div>
-    <div
-      className="c1"
-      direction="row"
-    >
-      <div
-        className="c2"
-      >
-        Right addon
-      </div>
-      <div>
-        <div
-          className="c3"
-        >
-          <label
-            className="c4"
-            hidden={false}
-          >
-            <span
-              className="c5"
-            >
-              <div
-                className="c6"
-              >
-                Label 
-              </div>
-              <span
-                className="c7"
-              >
-                <div
-                  className="c8"
-                >
-                  <input
-                    className="NormalizedInput__Input-sc-1m4kmh9-0 c22"
-                    placeholder="Placeholder"
-                    type="text"
-                    variant="quiet"
-                  />
-                  <div
-                    className="c23 c19 c24"
                     position="right"
                     variant="quiet"
                   >

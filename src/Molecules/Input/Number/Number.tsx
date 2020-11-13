@@ -76,8 +76,7 @@ const AddonBox = styled(Flexbox)<{ position?: 'left' | 'right' }>`
   top: 0;
   height: 100%;
   z-index: 3;
-  ${(p) => (p.position === 'left' ? `left: ${p.theme.spacing.unit(2)}px;` : '')}
-  ${(p) => (p.position === 'right' ? `right: ${p.theme.spacing.unit(2)}px;` : '')}
+  ${(p) => (p.position === 'right' ? `right: ${p.theme.spacing.unit(0)}px;` : '')}
 `;
 
 const Stepper = styled.button.attrs(() => ({ type: 'button' }))<Partial<Props>>`
@@ -121,11 +120,8 @@ const Input = styled(NormalizedElements.Input).attrs(() => ({ type: 'text' }))<P
       ? `
       padding-top: ${p.theme.spacing.unit(2)}px;
       padding-bottom: ${p.theme.spacing.unit(2)}px;
-      padding-left: ${p.leftAddon ? p.theme.spacing.unit(8) : p.theme.spacing.unit(2)}px;
-      padding-right: ${p.rightAddon ? p.theme.spacing.unit(10) : p.theme.spacing.unit(2)}px;
       `
       : `
-      padding: ${p.theme.spacing.unit(2)}px;
       margin: 0 -1px;
       min-width: 0;
       z-index: 1;
@@ -139,7 +135,7 @@ const Input = styled(NormalizedElements.Input).attrs(() => ({ type: 'text' }))<P
          font-size: 28px; 
          font-weight: bold;
          &:focus {
-           padding-left: ${p.theme.spacing.unit(p.leftAddon ? 8 : 2)}px;
+           padding-left: ${p.theme.spacing.unit(p.leftAddon ? 3 : 2)}px;
            padding-right: ${p.theme.spacing.unit(p.rightAddon ? 8 : 0)}px;
          }`
       : ''}

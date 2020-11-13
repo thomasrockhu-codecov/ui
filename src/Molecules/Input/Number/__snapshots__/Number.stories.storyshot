@@ -153,7 +153,6 @@ exports[`Storyshots Molecules / Input / Number Default 1`] = `
   width: 100%;
   text-align: center;
   box-sizing: border-box;
-  padding: 8px;
   margin: 0 -1px;
   min-width: 0;
   z-index: 1;
@@ -445,7 +444,6 @@ exports[`Storyshots Molecules / Input / Number Disabled 1`] = `
   width: 100%;
   text-align: center;
   box-sizing: border-box;
-  padding: 8px;
   margin: 0 -1px;
   min-width: 0;
   z-index: 1;
@@ -677,20 +675,6 @@ Array [
   cursor: pointer;
 }
 
-.c21 {
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  width: 16px;
-  height: 16px;
-  fill: #282823;
-  -webkit-flex-shrink: 0;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
-  display: block;
-}
-
 .c5 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #6E6E69;
@@ -728,15 +712,7 @@ Array [
   top: 0;
   height: 100%;
   z-index: 3;
-  left: 8px;
-}
-
-.c23 {
-  position: absolute;
-  top: 0;
-  height: 100%;
-  z-index: 3;
-  right: 8px;
+  right: 0px;
 }
 
 .c10 {
@@ -755,7 +731,6 @@ Array [
   width: 100%;
   text-align: left;
   box-sizing: border-box;
-  padding: 8px;
   margin: 0 -1px;
   min-width: 0;
   z-index: 1;
@@ -832,7 +807,6 @@ Array [
   width: 100%;
   text-align: left;
   box-sizing: border-box;
-  padding: 8px;
   margin: 0 -1px;
   min-width: 0;
   z-index: 1;
@@ -903,7 +877,6 @@ Array [
   width: 100%;
   text-align: left;
   box-sizing: border-box;
-  padding: 8px;
   margin: 0 -1px;
   min-width: 0;
   z-index: 1;
@@ -979,7 +952,6 @@ Array [
   width: 100%;
   text-align: left;
   box-sizing: border-box;
-  padding: 8px;
   margin: 0 -1px;
   min-width: 0;
   z-index: 1;
@@ -1057,8 +1029,6 @@ Array [
   box-sizing: border-box;
   padding-top: 8px;
   padding-bottom: 8px;
-  padding-left: 32px;
-  padding-right: 8px;
   color: #0046FF;
   font-size: 28px;
   font-weight: bold;
@@ -1111,87 +1081,11 @@ Array [
 }
 
 .c17:focus {
-  padding-left: 32px;
-  padding-right: 0px;
-}
-
-.c22 {
-  font-family: inherit;
-  font-size: 100%;
-  line-height: 1.15;
-  margin: 0;
-  overflow: visible;
-  background-color: #FFFFFF;
-  outline: none;
-  border: 1px solid #BCBCB6;
-  position: relative;
-  border-width: 0 0 2px 0;
-  height: 40px;
-  padding: 0px;
-  width: 100%;
-  text-align: left;
-  box-sizing: border-box;
-  padding-top: 8px;
-  padding-bottom: 8px;
-  padding-left: 8px;
-  padding-right: 40px;
-  color: #0046FF;
-  font-size: 28px;
-  font-weight: bold;
-}
-
-.c22:hover {
-  border-color: #4B4B46;
-  z-index: 2;
-}
-
-.c22:focus {
-  border-color: #0046FF;
-  z-index: 3;
-}
-
-.c22:focus {
-  border-width: 1px;
-}
-
-.c22::-webkit-input-placeholder {
-  color: #0046FF;
-  height: inherit;
-  line-height: inherit;
-  opacity: 1;
-}
-
-.c22::-moz-placeholder {
-  color: #0046FF;
-  height: inherit;
-  line-height: inherit;
-  opacity: 1;
-}
-
-.c22:-ms-input-placeholder {
-  color: #0046FF;
-  height: inherit;
-  line-height: inherit;
-  opacity: 1;
-}
-
-.c22::placeholder {
-  color: #0046FF;
-  height: inherit;
-  line-height: inherit;
-  opacity: 1;
-}
-
-.c22:disabled {
-  color: #A0A09B;
-}
-
-.c22:focus {
   padding-left: 8px;
   padding-right: 32px;
 }
 
-.c22:focus + .c19 {
+.c17:focus + .c19 {
   padding-right: 8px;
 }
 
@@ -1546,7 +1440,7 @@ Array [
       <div
         className="c2"
       >
-        Left addon
+        Right addon
       </div>
       <div>
         <div
@@ -1587,75 +1481,6 @@ Array [
               />
               <div
                 className="c18 c19 c20"
-                position="left"
-              >
-                <svg
-                  aria-hidden="true"
-                  className="c21"
-                  focusable="false"
-                  preserveAspectRatio="xMidYMid meet"
-                  role="presentation"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    d="M15 0L3 13.5h7.5L9 24l12-13.5h-7.5z"
-                    id="a"
-                  />
-                </svg>
-              </div>
-            </div>
-          </span>
-        </div>
-      </div>
-    </div>
-    <div
-      className="c1"
-      direction="row"
-    >
-      <div
-        className="c2"
-      >
-        Right addon
-      </div>
-      <div>
-        <div
-          className="c3"
-        >
-          <label
-            className="c4"
-            hidden={false}
-            htmlFor="insert-unique-id"
-          >
-            <span
-              className="c5"
-            >
-              <div
-                className="c6"
-              >
-                Label 
-              </div>
-            </span>
-          </label>
-          <span
-            className="c7"
-          >
-            <div
-              className="c8 c9"
-            >
-              <input
-                className="NormalizedInput__Input-sc-1m4kmh9-0 c22"
-                id="insert-unique-id"
-                inputMode="decimal"
-                min={0}
-                onChange={[Function]}
-                onKeyDown={[Function]}
-                step={1}
-                type="text"
-                value="1"
-                variant="quiet"
-              />
-              <div
-                className="c18 c19 c23"
                 position="right"
               >
                 %
@@ -1863,7 +1688,6 @@ Array [
   width: 100%;
   text-align: center;
   box-sizing: border-box;
-  padding: 8px;
   margin: 0 -1px;
   min-width: 0;
   z-index: 1;
@@ -2353,7 +2177,6 @@ exports[`Storyshots Molecules / Input / Number With a smaller step 1`] = `
   width: 100%;
   text-align: center;
   box-sizing: border-box;
-  padding: 8px;
   margin: 0 -1px;
   min-width: 0;
   z-index: 1;
@@ -2650,7 +2473,6 @@ exports[`Storyshots Molecules / Input / Number With all actions 1`] = `
   width: 100%;
   text-align: center;
   box-sizing: border-box;
-  padding: 8px;
   margin: 0 -1px;
   min-width: 0;
   z-index: 1;
@@ -2952,7 +2774,6 @@ exports[`Storyshots Molecules / Input / Number With auto focus 1`] = `
   width: 100%;
   text-align: center;
   box-sizing: border-box;
-  padding: 8px;
   margin: 0 -1px;
   min-width: 0;
   z-index: 1;
@@ -3190,7 +3011,6 @@ exports[`Storyshots Molecules / Input / Number With both addons 1`] = `
   top: 0;
   height: 100%;
   z-index: 3;
-  left: 8px;
 }
 
 .c11 {
@@ -3198,7 +3018,7 @@ exports[`Storyshots Molecules / Input / Number With both addons 1`] = `
   top: 0;
   height: 100%;
   z-index: 3;
-  right: 8px;
+  right: 0px;
 }
 
 .c7 {
@@ -3219,8 +3039,6 @@ exports[`Storyshots Molecules / Input / Number With both addons 1`] = `
   box-sizing: border-box;
   padding-top: 8px;
   padding-bottom: 8px;
-  padding-left: 32px;
-  padding-right: 40px;
 }
 
 .c7:hover {
@@ -3488,7 +3306,6 @@ exports[`Storyshots Molecules / Input / Number With default value (Uncontrolled 
   width: 100%;
   text-align: center;
   box-sizing: border-box;
-  padding: 8px;
   margin: 0 -1px;
   min-width: 0;
   z-index: 1;
@@ -3794,7 +3611,6 @@ exports[`Storyshots Molecules / Input / Number With error if value is less than 
   width: 100%;
   text-align: center;
   box-sizing: border-box;
-  padding: 8px;
   margin: 0 -1px;
   min-width: 0;
   z-index: 1;
@@ -4113,7 +3929,6 @@ exports[`Storyshots Molecules / Input / Number With extra info and error 1`] = `
   width: 100%;
   text-align: center;
   box-sizing: border-box;
-  padding: 8px;
   margin: 0 -1px;
   min-width: 0;
   z-index: 1;
@@ -4432,7 +4247,6 @@ exports[`Storyshots Molecules / Input / Number With extra info below 1`] = `
   width: 100%;
   text-align: center;
   box-sizing: border-box;
-  padding: 8px;
   margin: 0 -1px;
   min-width: 0;
   z-index: 1;
@@ -4730,7 +4544,6 @@ exports[`Storyshots Molecules / Input / Number With hidden label 1`] = `
   width: 100%;
   text-align: center;
   box-sizing: border-box;
-  padding: 8px;
   margin: 0 -1px;
   min-width: 0;
   z-index: 1;
@@ -5044,7 +4857,6 @@ Array [
   width: 100%;
   text-align: center;
   box-sizing: border-box;
-  padding: 8px;
   margin: 0 -1px;
   min-width: 0;
   z-index: 1;
@@ -5397,7 +5209,6 @@ exports[`Storyshots Molecules / Input / Number With label tooltip 1`] = `
   width: 100%;
   text-align: center;
   box-sizing: border-box;
-  padding: 8px;
   margin: 0 -1px;
   min-width: 0;
   z-index: 1;
@@ -5578,230 +5389,6 @@ exports[`Storyshots Molecules / Input / Number With label tooltip 1`] = `
 </div>
 `;
 
-exports[`Storyshots Molecules / Input / Number With left addon 1`] = `
-.c3 {
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.c5 {
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-flex: 1;
-  -webkit-flex-grow: 1;
-  -ms-flex-positive: 1;
-  flex-grow: 1;
-}
-
-.c8 {
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.c1 {
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  cursor: pointer;
-}
-
-.c10 {
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  width: 16px;
-  height: 16px;
-  fill: #282823;
-  -webkit-flex-shrink: 0;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
-  display: block;
-}
-
-.c2 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #6E6E69;
-  margin: 0;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
-}
-
-.c4 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #282823;
-  margin: 0;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
-}
-
-.c6 {
-  position: relative;
-  box-shadow: 0 1px 3px rgba(0,0,0,0.03);
-}
-
-.c9 {
-  position: absolute;
-  top: 0;
-  height: 100%;
-  z-index: 3;
-  left: 8px;
-}
-
-.c7 {
-  font-family: inherit;
-  font-size: 100%;
-  line-height: 1.15;
-  margin: 0;
-  overflow: visible;
-  background-color: #FFFFFF;
-  outline: none;
-  border: 1px solid #BCBCB6;
-  position: relative;
-  border-width: 1px;
-  height: 40px;
-  padding: 8px;
-  width: 100%;
-  text-align: left;
-  box-sizing: border-box;
-  padding-top: 8px;
-  padding-bottom: 8px;
-  padding-left: 32px;
-  padding-right: 8px;
-}
-
-.c7:hover {
-  border-color: #4B4B46;
-  z-index: 2;
-}
-
-.c7:focus {
-  border-color: #0046FF;
-  z-index: 3;
-}
-
-.c7:focus {
-  border-width: 1px;
-}
-
-.c7::-webkit-input-placeholder {
-  color: #6E6E69;
-  height: inherit;
-  line-height: inherit;
-  opacity: 1;
-}
-
-.c7::-moz-placeholder {
-  color: #6E6E69;
-  height: inherit;
-  line-height: inherit;
-  opacity: 1;
-}
-
-.c7:-ms-input-placeholder {
-  color: #6E6E69;
-  height: inherit;
-  line-height: inherit;
-  opacity: 1;
-}
-
-.c7::placeholder {
-  color: #6E6E69;
-  height: inherit;
-  line-height: inherit;
-  opacity: 1;
-}
-
-.c0 {
-  width: 200px;
-  display: inline-block;
-}
-
-<div
-  className="c0"
->
-  <label
-    className="c1"
-    hidden={false}
-    htmlFor="insert-unique-id"
-  >
-    <span
-      className="c2"
-    >
-      <div
-        className="c3"
-      >
-        Label 
-      </div>
-    </span>
-  </label>
-  <span
-    className="c4"
-  >
-    <div
-      className="c5 c6"
-    >
-      <input
-        className="NormalizedInput__Input-sc-1m4kmh9-0 c7"
-        id="insert-unique-id"
-        inputMode="decimal"
-        min={0}
-        onChange={[Function]}
-        onKeyDown={[Function]}
-        step={1}
-        type="text"
-        value="1"
-        variant="normal"
-      />
-      <div
-        className="c8 c9"
-        position="left"
-      >
-        <svg
-          aria-hidden="true"
-          className="c10"
-          focusable="false"
-          preserveAspectRatio="xMidYMid meet"
-          role="presentation"
-          viewBox="0 0 24 24"
-        >
-          <path
-            d="M15 0L3 13.5h7.5L9 24l12-13.5h-7.5z"
-            id="a"
-          />
-        </svg>
-      </div>
-    </div>
-  </span>
-</div>
-`;
-
 exports[`Storyshots Molecules / Input / Number With max and min 1`] = `
 .c3 {
   box-sizing: border-box;
@@ -5955,7 +5542,6 @@ exports[`Storyshots Molecules / Input / Number With max and min 1`] = `
   width: 100%;
   text-align: center;
   box-sizing: border-box;
-  padding: 8px;
   margin: 0 -1px;
   min-width: 0;
   z-index: 1;
@@ -6174,7 +5760,6 @@ exports[`Storyshots Molecules / Input / Number With no steppers 1`] = `
   width: 100%;
   text-align: left;
   box-sizing: border-box;
-  padding: 8px;
   margin: 0 -1px;
   min-width: 0;
   z-index: 1;
@@ -6343,7 +5928,7 @@ Array [
   align-items: center;
 }
 
-.c19 {
+.c18 {
   position: absolute;
   height: 1px;
   width: 1px;
@@ -6358,7 +5943,7 @@ Array [
   cursor: pointer;
 }
 
-.c16 {
+.c15 {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -6372,7 +5957,7 @@ Array [
   display: block;
 }
 
-.c20 {
+.c19 {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -6414,18 +5999,17 @@ Array [
   top: 0;
   height: 100%;
   z-index: 3;
-  right: 8px;
+  right: 0px;
 }
 
-.c15 {
+.c14 {
   position: absolute;
   top: 0;
   height: 100%;
   z-index: 3;
-  left: 8px;
 }
 
-.c18 {
+.c17 {
   width: 40px;
   height: 40px;
   background-color: #FFFFFF;
@@ -6453,31 +6037,31 @@ Array [
   flex: 1 0 auto;
 }
 
-.c18:hover {
+.c17:hover {
   border-color: #4B4B46;
   z-index: 2;
 }
 
-.c18:focus {
+.c17:focus {
   border-color: #0046FF;
   z-index: 3;
 }
 
-.c18:focus {
+.c17:focus {
   border-width: 1px;
 }
 
-.c18:first-of-type {
+.c17:first-of-type {
   -webkit-order: -1;
   -ms-flex-order: -1;
   order: -1;
 }
 
-.c18:active:enabled {
+.c17:active:enabled {
   background-color: #0046FF;
 }
 
-.c18:active:enabled svg {
+.c17:active:enabled svg {
   fill: #FFFFFF;
 }
 
@@ -6497,7 +6081,6 @@ Array [
   width: 100%;
   text-align: left;
   box-sizing: border-box;
-  padding: 8px;
   margin: 0 -1px;
   min-width: 0;
   z-index: 1;
@@ -6563,8 +6146,6 @@ Array [
   box-sizing: border-box;
   padding-top: 8px;
   padding-bottom: 8px;
-  padding-left: 8px;
-  padding-right: 40px;
 }
 
 .c11:hover {
@@ -6609,71 +6190,7 @@ Array [
   opacity: 1;
 }
 
-.c14 {
-  font-family: inherit;
-  font-size: 100%;
-  line-height: 1.15;
-  margin: 0;
-  overflow: visible;
-  background-color: #FFFFFF;
-  outline: none;
-  border: 1px solid #BCBCB6;
-  position: relative;
-  border-width: 1px;
-  height: 40px;
-  padding: 8px;
-  width: 100%;
-  text-align: left;
-  box-sizing: border-box;
-  padding-top: 8px;
-  padding-bottom: 8px;
-  padding-left: 32px;
-  padding-right: 8px;
-}
-
-.c14:hover {
-  border-color: #4B4B46;
-  z-index: 2;
-}
-
-.c14:focus {
-  border-color: #0046FF;
-  z-index: 3;
-}
-
-.c14:focus {
-  border-width: 1px;
-}
-
-.c14::-webkit-input-placeholder {
-  color: #6E6E69;
-  height: inherit;
-  line-height: inherit;
-  opacity: 1;
-}
-
-.c14::-moz-placeholder {
-  color: #6E6E69;
-  height: inherit;
-  line-height: inherit;
-  opacity: 1;
-}
-
-.c14:-ms-input-placeholder {
-  color: #6E6E69;
-  height: inherit;
-  line-height: inherit;
-  opacity: 1;
-}
-
-.c14::placeholder {
-  color: #6E6E69;
-  height: inherit;
-  line-height: inherit;
-  opacity: 1;
-}
-
-.c17 {
+.c16 {
   font-family: inherit;
   font-size: 100%;
   line-height: 1.15;
@@ -6689,48 +6206,47 @@ Array [
   width: 100%;
   text-align: center;
   box-sizing: border-box;
-  padding: 8px;
   margin: 0 -1px;
   min-width: 0;
   z-index: 1;
 }
 
-.c17:hover {
+.c16:hover {
   border-color: #4B4B46;
   z-index: 2;
 }
 
-.c17:focus {
+.c16:focus {
   border-color: #0046FF;
   z-index: 3;
 }
 
-.c17:focus {
+.c16:focus {
   border-width: 1px;
 }
 
-.c17::-webkit-input-placeholder {
+.c16::-webkit-input-placeholder {
   color: #6E6E69;
   height: inherit;
   line-height: inherit;
   opacity: 1;
 }
 
-.c17::-moz-placeholder {
+.c16::-moz-placeholder {
   color: #6E6E69;
   height: inherit;
   line-height: inherit;
   opacity: 1;
 }
 
-.c17:-ms-input-placeholder {
+.c16:-ms-input-placeholder {
   color: #6E6E69;
   height: inherit;
   line-height: inherit;
   opacity: 1;
 }
 
-.c17::placeholder {
+.c16::placeholder {
   color: #6E6E69;
   height: inherit;
   line-height: inherit;
@@ -6952,7 +6468,7 @@ Array [
               className="c8 c9"
             >
               <input
-                className="NormalizedInput__Input-sc-1m4kmh9-0 c14"
+                className="NormalizedInput__Input-sc-1m4kmh9-0 c11"
                 id="insert-unique-id"
                 inputMode="decimal"
                 min={0}
@@ -6965,12 +6481,12 @@ Array [
                 variant="normal"
               />
               <div
-                className="c12 c15"
+                className="c12 c14"
                 position="left"
               >
                 <svg
                   aria-hidden="true"
-                  className="c16"
+                  className="c15"
                   focusable="false"
                   preserveAspectRatio="xMidYMid meet"
                   role="presentation"
@@ -7022,7 +6538,7 @@ Array [
               className="c8 c9"
             >
               <input
-                className="NormalizedInput__Input-sc-1m4kmh9-0 c17"
+                className="NormalizedInput__Input-sc-1m4kmh9-0 c16"
                 id="insert-unique-id"
                 inputMode="decimal"
                 min={0}
@@ -7034,19 +6550,19 @@ Array [
                 variant="normal"
               />
               <button
-                className="c18"
+                className="c17"
                 onClick={[Function]}
                 type="button"
               >
                 <div
-                  className="c19"
+                  className="c18"
                 >
                   decrease number by 
                   1
                 </div>
                 <svg
                   aria-hidden="true"
-                  className="c20"
+                  className="c19"
                   focusable="false"
                   preserveAspectRatio="xMidYMid meet"
                   role="presentation"
@@ -7059,19 +6575,19 @@ Array [
                 </svg>
               </button>
               <button
-                className="c18"
+                className="c17"
                 onClick={[Function]}
                 type="button"
               >
                 <div
-                  className="c19"
+                  className="c18"
                 >
                   increase number by 
                   1
                 </div>
                 <svg
                   aria-hidden="true"
-                  className="c20"
+                  className="c19"
                   focusable="false"
                   preserveAspectRatio="xMidYMid meet"
                   role="presentation"
@@ -7182,7 +6698,7 @@ exports[`Storyshots Molecules / Input / Number With right addon 1`] = `
   top: 0;
   height: 100%;
   z-index: 3;
-  right: 8px;
+  right: 0px;
 }
 
 .c7 {
@@ -7203,8 +6719,6 @@ exports[`Storyshots Molecules / Input / Number With right addon 1`] = `
   box-sizing: border-box;
   padding-top: 8px;
   padding-bottom: 8px;
-  padding-left: 8px;
-  padding-right: 40px;
 }
 
 .c7:hover {
@@ -7493,7 +7007,6 @@ Array [
   width: 100%;
   text-align: center;
   box-sizing: border-box;
-  padding: 8px;
   margin: 0 -1px;
   min-width: 0;
   z-index: 1;
@@ -7557,7 +7070,6 @@ Array [
   width: 100%;
   text-align: left;
   box-sizing: border-box;
-  padding: 8px;
   margin: 0 -1px;
   min-width: 0;
   z-index: 1;
@@ -7621,7 +7133,6 @@ Array [
   width: 100%;
   text-align: center;
   box-sizing: border-box;
-  padding: 8px;
   margin: 0 -1px;
   min-width: 0;
   z-index: 1;
@@ -8177,7 +7688,6 @@ exports[`Storyshots Molecules / Input / Number With success 1`] = `
   width: 100%;
   text-align: center;
   box-sizing: border-box;
-  padding: 8px;
   margin: 0 -1px;
   min-width: 0;
   z-index: 1;
@@ -8475,7 +7985,6 @@ Array [
   width: 100%;
   text-align: center;
   box-sizing: border-box;
-  padding: 8px;
   margin: 0 -1px;
   min-width: 0;
   z-index: 1;
