@@ -65,6 +65,224 @@ Array [
 .c3 {
   width: 56px;
   height: 56px;
+  background-color: #00C8F5;
+  border: 1px solid #eee;
+}
+
+.c4 {
+  width: 56px;
+  height: 56px;
+  background-color: #D2F500;
+  border: 1px solid #eee;
+}
+
+.c5 {
+  width: 56px;
+  height: 56px;
+  background-color: #FF2B83;
+  border: 1px solid #eee;
+}
+
+.c6 {
+  width: 56px;
+  height: 56px;
+  background-color: #00F0E1;
+  border: 1px solid #eee;
+}
+
+.c7 {
+  width: 56px;
+  height: 56px;
+  background-color: #385E9D;
+  border: 1px solid #eee;
+}
+
+.c8 {
+  width: 56px;
+  height: 56px;
+  background-color: #131F4F;
+  border: 1px solid #eee;
+}
+
+.c9 {
+  width: 56px;
+  height: 56px;
+  background-color: #3A913F;
+  border: 1px solid #eee;
+}
+
+.c10 {
+  width: 56px;
+  height: 56px;
+  background-color: #023C00;
+  border: 1px solid #eee;
+}
+
+.c11 {
+  width: 56px;
+  height: 56px;
+  background-color: #AC135A;
+  border: 1px solid #eee;
+}
+
+.c12 {
+  width: 56px;
+  height: 56px;
+  background-color: #78013A;
+  border: 1px solid #eee;
+}
+
+.c13 {
+  width: 56px;
+  height: 56px;
+  background-color: #009195;
+  border: 1px solid #eee;
+}
+
+.c14 {
+  width: 56px;
+  height: 56px;
+  background-color: #01424C;
+  border: 1px solid #eee;
+}
+
+.c15 {
+  width: 56px;
+  height: 56px;
+  background-color: #000000;
+  border: 1px solid #eee;
+}
+
+.c16 {
+  width: 56px;
+  height: 56px;
+  background-color: #282823;
+  border: 1px solid #eee;
+}
+
+.c17 {
+  width: 56px;
+  height: 56px;
+  background-color: #4B4B46;
+  border: 1px solid #eee;
+}
+
+.c18 {
+  width: 56px;
+  height: 56px;
+  background-color: #6E6E69;
+  border: 1px solid #eee;
+}
+
+.c19 {
+  width: 56px;
+  height: 56px;
+  background-color: #A0A09B;
+  border: 1px solid #eee;
+}
+
+.c20 {
+  width: 56px;
+  height: 56px;
+  background-color: #BCBCB6;
+  border: 1px solid #eee;
+}
+
+.c21 {
+  width: 56px;
+  height: 56px;
+  background-color: #D7D7D2;
+  border: 1px solid #eee;
+}
+
+.c22 {
+  width: 56px;
+  height: 56px;
+  background-color: #EBEBE8;
+  border: 1px solid #eee;
+}
+
+.c23 {
+  width: 56px;
+  height: 56px;
+  background-color: #F5F5F5;
+  border: 1px solid #eee;
+}
+
+.c24 {
+  width: 56px;
+  height: 56px;
+  background-color: #FFFFFF;
+  border: 1px solid #eee;
+}
+
+.c25 {
+  width: 56px;
+  height: 56px;
+  background-color: #0046FF;
+  border: 1px solid #eee;
+}
+
+.c26 {
+  width: 56px;
+  height: 56px;
+  background-color: #003BD9;
+  border: 1px solid #eee;
+}
+
+.c27 {
+  width: 56px;
+  height: 56px;
+  background-color: #0030B2;
+  border: 1px solid #eee;
+}
+
+.c28 {
+  width: 56px;
+  height: 56px;
+  background-color: #00D200;
+  border: 1px solid #eee;
+}
+
+.c29 {
+  width: 56px;
+  height: 56px;
+  background-color: #FF1900;
+  border: 1px solid #eee;
+}
+
+.c30 {
+  width: 56px;
+  height: 56px;
+  background-color: #D90E00;
+  border: 1px solid #eee;
+}
+
+.c31 {
+  width: 56px;
+  height: 56px;
+  background-color: #B20300;
+  border: 1px solid #eee;
+}
+
+.c32 {
+  width: 56px;
+  height: 56px;
+  background-color: #FFCF00;
+  border: 1px solid #eee;
+}
+
+.c33 {
+  width: 56px;
+  height: 56px;
+  background-color: #008A00;
+  border: 1px solid #eee;
+}
+
+.c34 {
+  width: 56px;
+  height: 56px;
+  background-color: #DFC700;
   border: 1px solid #eee;
 }
 
@@ -84,7 +302,6 @@ Array [
       <div>
         <div
           className="c3"
-          color="#00C8F5"
         />
         <div>
           #00C8F5
@@ -102,8 +319,7 @@ Array [
       </div>
       <div>
         <div
-          className="c3"
-          color="#D2F500"
+          className="c4"
         />
         <div>
           #D2F500
@@ -121,8 +337,7 @@ Array [
       </div>
       <div>
         <div
-          className="c3"
-          color="#FF2B83"
+          className="c5"
         />
         <div>
           #FF2B83
@@ -140,8 +355,7 @@ Array [
       </div>
       <div>
         <div
-          className="c3"
-          color="#00F0E1"
+          className="c6"
         />
         <div>
           #00F0E1
@@ -159,8 +373,7 @@ Array [
       </div>
       <div>
         <div
-          className="c3"
-          color="#385E9D"
+          className="c7"
         />
         <div>
           #385E9D
@@ -178,8 +391,7 @@ Array [
       </div>
       <div>
         <div
-          className="c3"
-          color="#131F4F"
+          className="c8"
         />
         <div>
           #131F4F
@@ -197,8 +409,7 @@ Array [
       </div>
       <div>
         <div
-          className="c3"
-          color="#3A913F"
+          className="c9"
         />
         <div>
           #3A913F
@@ -216,8 +427,7 @@ Array [
       </div>
       <div>
         <div
-          className="c3"
-          color="#023C00"
+          className="c10"
         />
         <div>
           #023C00
@@ -235,8 +445,7 @@ Array [
       </div>
       <div>
         <div
-          className="c3"
-          color="#AC135A"
+          className="c11"
         />
         <div>
           #AC135A
@@ -254,8 +463,7 @@ Array [
       </div>
       <div>
         <div
-          className="c3"
-          color="#78013A"
+          className="c12"
         />
         <div>
           #78013A
@@ -273,8 +481,7 @@ Array [
       </div>
       <div>
         <div
-          className="c3"
-          color="#009195"
+          className="c13"
         />
         <div>
           #009195
@@ -292,8 +499,7 @@ Array [
       </div>
       <div>
         <div
-          className="c3"
-          color="#01424C"
+          className="c14"
         />
         <div>
           #01424C
@@ -311,8 +517,7 @@ Array [
       </div>
       <div>
         <div
-          className="c3"
-          color="#000000"
+          className="c15"
         />
         <div>
           #000000
@@ -330,8 +535,7 @@ Array [
       </div>
       <div>
         <div
-          className="c3"
-          color="#282823"
+          className="c16"
         />
         <div>
           #282823
@@ -349,8 +553,7 @@ Array [
       </div>
       <div>
         <div
-          className="c3"
-          color="#4B4B46"
+          className="c17"
         />
         <div>
           #4B4B46
@@ -368,8 +571,7 @@ Array [
       </div>
       <div>
         <div
-          className="c3"
-          color="#6E6E69"
+          className="c18"
         />
         <div>
           #6E6E69
@@ -387,8 +589,7 @@ Array [
       </div>
       <div>
         <div
-          className="c3"
-          color="#A0A09B"
+          className="c19"
         />
         <div>
           #A0A09B
@@ -406,8 +607,7 @@ Array [
       </div>
       <div>
         <div
-          className="c3"
-          color="#BCBCB6"
+          className="c20"
         />
         <div>
           #BCBCB6
@@ -425,8 +625,7 @@ Array [
       </div>
       <div>
         <div
-          className="c3"
-          color="#D7D7D2"
+          className="c21"
         />
         <div>
           #D7D7D2
@@ -444,8 +643,7 @@ Array [
       </div>
       <div>
         <div
-          className="c3"
-          color="#EBEBE8"
+          className="c22"
         />
         <div>
           #EBEBE8
@@ -463,8 +661,7 @@ Array [
       </div>
       <div>
         <div
-          className="c3"
-          color="#F5F5F5"
+          className="c23"
         />
         <div>
           #F5F5F5
@@ -482,8 +679,7 @@ Array [
       </div>
       <div>
         <div
-          className="c3"
-          color="#FFFFFF"
+          className="c24"
         />
         <div>
           #FFFFFF
@@ -501,8 +697,7 @@ Array [
       </div>
       <div>
         <div
-          className="c3"
-          color="#0046FF"
+          className="c25"
         />
         <div>
           #0046FF
@@ -520,8 +715,7 @@ Array [
       </div>
       <div>
         <div
-          className="c3"
-          color="#003BD9"
+          className="c26"
         />
         <div>
           #003BD9
@@ -539,8 +733,7 @@ Array [
       </div>
       <div>
         <div
-          className="c3"
-          color="#0030B2"
+          className="c27"
         />
         <div>
           #0030B2
@@ -558,8 +751,7 @@ Array [
       </div>
       <div>
         <div
-          className="c3"
-          color="#00D200"
+          className="c28"
         />
         <div>
           #00D200
@@ -577,8 +769,7 @@ Array [
       </div>
       <div>
         <div
-          className="c3"
-          color="#FF1900"
+          className="c29"
         />
         <div>
           #FF1900
@@ -596,8 +787,7 @@ Array [
       </div>
       <div>
         <div
-          className="c3"
-          color="#D90E00"
+          className="c30"
         />
         <div>
           #D90E00
@@ -615,8 +805,7 @@ Array [
       </div>
       <div>
         <div
-          className="c3"
-          color="#B20300"
+          className="c31"
         />
         <div>
           #B20300
@@ -634,8 +823,7 @@ Array [
       </div>
       <div>
         <div
-          className="c3"
-          color="#FFCF00"
+          className="c32"
         />
         <div>
           #FFCF00
@@ -653,8 +841,7 @@ Array [
       </div>
       <div>
         <div
-          className="c3"
-          color="#0046FF"
+          className="c25"
         />
         <div>
           #0046FF
@@ -672,8 +859,7 @@ Array [
       </div>
       <div>
         <div
-          className="c3"
-          color="#003BD9"
+          className="c26"
         />
         <div>
           #003BD9
@@ -691,8 +877,7 @@ Array [
       </div>
       <div>
         <div
-          className="c3"
-          color="#008A00"
+          className="c33"
         />
         <div>
           #008A00
@@ -710,8 +895,7 @@ Array [
       </div>
       <div>
         <div
-          className="c3"
-          color="#AC135A"
+          className="c11"
         />
         <div>
           #AC135A
@@ -729,8 +913,7 @@ Array [
       </div>
       <div>
         <div
-          className="c3"
-          color="#78013A"
+          className="c12"
         />
         <div>
           #78013A
@@ -748,8 +931,7 @@ Array [
       </div>
       <div>
         <div
-          className="c3"
-          color="#DFC700"
+          className="c34"
         />
         <div>
           #DFC700

@@ -83,7 +83,7 @@ export const colorsPalette = () => {
           title,
           component: (
             <>
-              <Color color={color} />
+              <Color $color={color} />
               <div>{color}</div>
             </>
           ),
