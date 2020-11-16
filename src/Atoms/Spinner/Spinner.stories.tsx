@@ -30,6 +30,12 @@ spinnerDefault.story = {
   name: 'Spinner default',
 };
 
+export const spinnerMedium = () => <Spinner size={7} id="mySpinner" />;
+
+spinnerMedium.story = {
+  name: 'Spinner medium',
+};
+
 export const spinnerBig = () => <Spinner size={16} id="mySpinner" />;
 
 spinnerBig.story = {
