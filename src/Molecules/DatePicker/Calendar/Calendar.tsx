@@ -41,11 +41,9 @@ const Calendar: React.FC<Props> = ({
   };
 
   const calendarDayRefs = useRef(
-    [...Array(NUMBER_OF_VISIBLE_WEEKS)].map(() => {
-      return [...Array(NUMBER_OF_VISIBLE_DAYS)].reduce((acc) => {
-        return [...acc, React.createRef()];
-      }, []);
-    }),
+    [...Array(NUMBER_OF_VISIBLE_WEEKS)].map(() =>
+      [...Array(NUMBER_OF_VISIBLE_DAYS)].map(() => React.createRef<HTMLDivElement>()),
+    ),
   );
 
   const handleKeyPress = (event: React.KeyboardEvent) => {
@@ -102,7 +100,7 @@ const Calendar: React.FC<Props> = ({
       !R.isNil(focusedDay) &&
       !R.isNil(calendarDayRefs.current[focusedWeek][focusedDay].current)
     ) {
-      calendarDayRefs.current[focusedWeek][focusedDay].current.focus();
+      calendarDayRefs.current[focusedWeek][focusedDay].current?.focus();
     }
   }, [focusedDay, focusedWeek]);
 
