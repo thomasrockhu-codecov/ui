@@ -61,7 +61,7 @@ export const newDate = (value: any = new Date()): Date => {
   return isValid(d) ? d : new Date();
 };
 
-export const parseDateString = (dateString: string, locale: string): null | Date => {
+export const parseDateString = (dateString: string, locale?: string): null | Date => {
   if (!isMatch(dateString, getDateFormat(locale), getLocale(locale))) return null;
 
   const date = parse(dateString, getDateFormat(locale), newDate());
@@ -69,6 +69,22 @@ export const parseDateString = (dateString: string, locale: string): null | Date
   if (!isValid(date)) return null;
 
   return date;
+};
+
+export const parseDateStrings: (
+  startDateString: string,
+  endDateString: string,
+  locale?: string,
+) => [Date | null, Date | null] = (startDateString, endDateString, locale) => {
+  const parsedStartDate = parseDateString(startDateString, locale);
+  const parsedEndDate = parseDateString(endDateString, locale);
+
+  if (parsedStartDate && parsedEndDate)
+    return parsedStartDate < parsedEndDate
+      ? [parsedStartDate, parsedEndDate]
+      : [parsedEndDate, parsedStartDate];
+
+  return [parsedStartDate, parsedEndDate];
 };
 
 export type CalendarType = {

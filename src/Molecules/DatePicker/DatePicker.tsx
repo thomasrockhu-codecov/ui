@@ -12,7 +12,13 @@ import Input from '../Input';
 import { Box, Icon, DropdownBubble } from '../..';
 import { assert, isUndefined } from '../../common/utils';
 import { useOnClickOutside } from '../../common/Hooks';
-import { newDate, getLocale, getDateFormat, parseDateString } from './shared/dateUtils';
+import {
+  newDate,
+  getLocale,
+  getDateFormat,
+  parseDateString,
+  parseDateStrings,
+} from './shared/dateUtils';
 import Header from './Header';
 import Calendar from './Calendar';
 import { RANGE_DATE_PICKER, REGULAR_DATE_PICKER } from './shared/constants';
@@ -171,17 +177,7 @@ export const DatePicker = (React.forwardRef<HTMLDivElement, Props>((props, ref) 
   const handleInputSubmitRange = useCallback(
     (dateString: string) => {
       const [startDateString, endDateString] = dateString.split(' - ');
-      const [startDate, endDate] = (() => {
-        const parsedStartDate = parseDateString(startDateString, locale);
-        const parsedEndDate = parseDateString(endDateString, locale);
-
-        if (parsedStartDate && parsedEndDate)
-          return parsedStartDate < parsedEndDate
-            ? [parsedStartDate, parsedEndDate]
-            : [parsedEndDate, parsedStartDate];
-
-        return [parsedStartDate, parsedEndDate];
-      })();
+      const [startDate, endDate] = parseDateStrings(startDateString, endDateString, locale);
 
       if (startDate && !endDate) {
         const selectedDateReselected = selectedDate && isSameDay(startDate, selectedDate);
