@@ -1,25 +1,18 @@
 import { useState, useLayoutEffect } from 'react';
-import { throttle } from 'lodash';
 
-const useOverflow = (ref: React.RefObject<HTMLElement>, deps = []) => {
+const useOverflow = (ref: React.RefObject<HTMLElement>, deps: React.ReactNode = null) => {
   const [isOverflowing, setIsOverflowing] = useState(false);
 
   useLayoutEffect(() => {
-    const checkIfOverflowing = throttle(() => {
+    const checkIfOverflowing = () => {
       if (ref.current) {
         setIsOverflowing(ref.current.clientHeight < ref.current.scrollHeight);
       }
-    }, 50);
-
-    checkIfOverflowing();
-
-    const handleResize = () => {
-      checkIfOverflowing();
     };
 
-    window.addEventListener('resize', handleResize);
-    return () => window.removeEventListener('resize', handleResize);
-  }, [ref.current, ...deps]);
+    window.addEventListener('resize', checkIfOverflowing);
+    return () => window.removeEventListener('resize', checkIfOverflowing);
+  }, [ref.current, deps]);
 
   return isOverflowing;
 };

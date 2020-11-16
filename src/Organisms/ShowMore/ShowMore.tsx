@@ -40,8 +40,7 @@ export const ShowMore: React.FC<Props> = ({
     [onShowMore],
   );
 
-  // @ts-ignore
-  const isOverflowing = useOverflow(containerRef, [children]);
+  const isOverflowing = useOverflow(containerRef, children);
   const showMoreButton = isOverflowing && !showMoreClicked;
 
   return (
