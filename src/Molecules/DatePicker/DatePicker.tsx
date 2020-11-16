@@ -1,4 +1,4 @@
-import React, { useRef, useState, useCallback, useEffect, SyntheticEvent } from 'react';
+import React, { useRef, useState, useCallback, useEffect } from 'react';
 import styled, { useTheme } from 'styled-components';
 import format from 'date-fns/format';
 import { useIntl } from 'react-intl';
@@ -9,7 +9,7 @@ import { Props } from './DatePicker.types';
  * Imported seperately because when imported in src/index.ts, Input will not have been imported yet and an error will be thrown
  */
 import Input from '../Input';
-import { Box, Icon, DropdownBubble, Button } from '../..';
+import { Box, Icon, DropdownBubble } from '../..';
 import { assert, isUndefined } from '../../common/utils';
 import { useOnClickOutside } from '../../common/Hooks';
 import { newDate, getLocale, getDateFormat, parseDateString } from './shared/dateUtils';
@@ -268,19 +268,6 @@ export const DatePicker = (React.forwardRef<HTMLDivElement, Props>((props, ref) 
     </Box>
   );
 
-  const inputLeftAddon = open ? (
-    <Button
-      variant="neutral"
-      type="button"
-      onClick={(e: SyntheticEvent) => {
-        // prevent default to avoid triggering focus on the input element
-        e.preventDefault();
-        setOpen(false);
-      }}
-    >
-      <Icon.CrossThin size={3} />
-    </Button>
-  ) : null;
   const inputRightAddon = <Icon.CalendarTwoRows size={6} />;
 
   const selfRef = useRef<HTMLDivElement>(null);
@@ -300,7 +287,6 @@ export const DatePicker = (React.forwardRef<HTMLDivElement, Props>((props, ref) 
             : `${dateFormat.toLowerCase()} - ${dateFormat.toLowerCase()}`
         }
         value={inputValue}
-        leftAddon={inputLeftAddon}
         rightAddon={inputRightAddon}
         onChange={handleInputOnChange}
         onKeyDown={onInputSubmit}
