@@ -1,3 +1,17 @@
+# [4.7.0](https://github.com/nordnet/ui/compare/v4.6.0...v4.7.0) (2020-11-16)
+
+
+### Bug Fixes
+
+* add types/lodash ([e6e9eca](https://github.com/nordnet/ui/commit/e6e9eca))
+* ignore ([59d973c](https://github.com/nordnet/ui/commit/59d973c))
+* make ts happy ([15b36b2](https://github.com/nordnet/ui/commit/15b36b2))
+
+
+### Features
+
+* showmore organism - fist sketch ([6bb9fec](https://github.com/nordnet/ui/commit/6bb9fec))
+
 # [4.6.0](https://github.com/nordnet/ui/compare/v4.5.3...v4.6.0) (2020-11-13)
 
 
