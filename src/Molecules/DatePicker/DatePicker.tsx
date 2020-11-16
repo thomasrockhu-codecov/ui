@@ -89,6 +89,13 @@ export const DatePicker = (React.forwardRef<HTMLDivElement, Props>((props, ref) 
     setOpen(openProp);
   }, [openProp]);
 
+  useEffect(() => {
+    if (!inputValue) {
+      setSelectedDate(null);
+      setSelectedEndDate(null);
+    }
+  }, [inputValue]);
+
   const handleDateClickRegular = useCallback(
     (date: Date) => {
       setInputValue(format(date, dateFormat, options));
