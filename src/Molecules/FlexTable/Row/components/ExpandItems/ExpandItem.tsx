@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import * as R from 'ramda';
 import { isElement, isFunction } from '../../../../../common/utils';
 import { Flexbox, LabeledValue } from '../../../../..';
 import { ExpandItemComponent, ExpandItemProps, RenderFunc } from './ExpandItems.types';
@@ -37,57 +38,61 @@ const ExpandRenderer: React.FC<{
   );
 };
 
-const MobileItem: React.FC<{ className?: string; item: ExpandItemProps; fontSize: FontSize }> = ({
-  item,
-  fontSize,
-}) => (
+const MobileItem: React.FC<{
+  className?: string;
+  label: ExpandItemProps['label'];
+  value: ExpandItemProps['value'];
+  fontSize: FontSize;
+}> = ({ label, value, fontSize }) => (
   <Flexbox container justifyContent="space-between" as="li">
     <StyledOverflowItem item flex="0 0 50%">
       <ExpandRenderer fontSize={fontSize} isLabel>
-        {item.label}
+        {label}
       </ExpandRenderer>
     </StyledOverflowItem>
     <StyledOverflowItem item flex="0 0 50%" textAlign="right">
-      <ExpandRenderer fontSize={fontSize}>{item.value}</ExpandRenderer>
+      <ExpandRenderer fontSize={fontSize}>{value}</ExpandRenderer>
     </StyledOverflowItem>
   </Flexbox>
 );
 
-const DesktopItem: React.FC<{ className?: string; item: ExpandItemProps; fontSize: FontSize }> = ({
-  item,
-  fontSize,
-}) => (
+const DesktopItem: React.FC<{
+  className?: string;
+  label: ExpandItemProps['label'];
+  value: ExpandItemProps['value'];
+  fontSize: FontSize;
+}> = ({ label, value, fontSize }) => (
   <StyledFlexboxItem item as="li">
     <LabeledValue
       label={
         <ExpandRenderer fontSize={fontSize} isLabel>
-          {item.label}
+          {label}
         </ExpandRenderer>
       }
     >
-      <ExpandRenderer fontSize={fontSize}>{item.value}</ExpandRenderer>
+      <ExpandRenderer fontSize={fontSize}>{value}</ExpandRenderer>
     </LabeledValue>
   </StyledFlexboxItem>
 );
 
-export const ExpandItem: ExpandItemComponent = ({ item }) => {
-  const { fontSize: xsFontSize, sm, md, lg, xl } = useFlexTable();
-  return (
-    <RenderForSizes
-      xs={{ fontSize: xsFontSize, mobileItem: true }}
-      sm={sm}
-      md={{ ...md, mobileItem: false }}
-      lg={lg}
-      xl={xl}
-    >
-      {({ fontSize, mobileItem, className }) => {
-        if (mobileItem) {
-          return <MobileItem className={className} item={item} fontSize={fontSize} />;
-        }
+export const ExpandItem: ExpandItemComponent = ({ item, mobileItem }) => {
+  const { label, value, hidden, sm: smItem, md: mdItem, lg: lgItem, xl: xlItem } = item;
+  const {
+    fontSize,
+    sm: smFontSize,
+    md: mdFontSize,
+    lg: lgFontSize,
+    xl: xlFontSize,
+  } = useFlexTable();
+  const sm = { fontSize: R.propOr(null, 'fontSize', smFontSize), ...smItem };
+  const md = { fontSize: R.propOr(null, 'fontSize', mdFontSize), ...mdItem };
+  const lg = { fontSize: R.propOr(null, 'fontSize', lgFontSize), ...lgItem };
+  const xl = { fontSize: R.propOr(null, 'fontSize', xlFontSize), ...xlItem };
 
-        return <DesktopItem className={className} item={item} fontSize={fontSize} />;
-      }}
-    </RenderForSizes>
+  return mobileItem ? (
+    <MobileItem label={label} value={value} fontSize={fontSize} />
+  ) : (
+    <DesktopItem label={label} value={value} fontSize={fontSize} />
   );
 };
 

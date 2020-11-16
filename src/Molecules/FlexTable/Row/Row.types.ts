@@ -9,7 +9,7 @@ import { MediaRelatedProps } from '../shared/shared.types';
 
 type HtmlProps = {} & React.HTMLAttributes<HTMLDivElement>;
 
-interface ExpandArea {
+type ExpandArea = {
   /**
    * Sets expand state, makes expansion controlled
    */
@@ -28,7 +28,7 @@ interface ExpandArea {
    */
   expandItems?: ExpandItems;
   onExpandToggle?: (newExpanded: boolean) => void | undefined;
-}
+} & MediaRelatedProps<{ expandChildren?: ReactNode; expandItems?: ExpandItems }>;
 
 interface ControlledExpand extends ExpandArea {
   expanded: boolean;
@@ -41,10 +41,9 @@ interface UncontrolledExpand extends ExpandArea {
   initiallyExpanded?: boolean;
 }
 
-export type ExpandRowProps = ExpandAreaProps &
-  MediaRelatedProps<Pick<ExpandAreaProps, 'expandItems' | 'expandChildren'>> & {
-    separatorColor?: ColorFn;
-  } & HtmlProps;
+export type ExpandRowProps = ExpandAreaProps & {
+  separatorColor?: ColorFn;
+} & HtmlProps;
 
 export type ExpandRowComponent = React.FC<ExpandRowProps>;
 

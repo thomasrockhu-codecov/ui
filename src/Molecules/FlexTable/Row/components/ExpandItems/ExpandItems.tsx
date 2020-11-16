@@ -20,7 +20,7 @@ export const ExpandItems: ExpandItemsComponent = ({ items }) => {
           {items
             .filter((item) => !item.hidden)
             .map((item, index) => (
-              <ExpandItem key={`expandItem_mobile_${index + 1}`} item={item} />
+              <ExpandItem key={`expandItem_mobile_${index + 1}`} item={item} mobileItem />
             ))}
         </List>
       </Media>

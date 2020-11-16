@@ -5,10 +5,17 @@ import { Box } from '../../../..';
 import { ExpandItems } from '.';
 
 const StyledBox = styled(Box)`
-  background: ${p => p.theme.color.tableRowBackground};
+  background: ${(p) => p.theme.color.tableRowBackground};
 `;
 
-export const ExpandArea: React.FC<ExpandAreaProps> = ({ expandChildren, expandItems }) => (
+export const ExpandArea: React.FC<ExpandAreaProps> = ({
+  expandChildren,
+  expandItems,
+  sm,
+  md,
+  lg,
+  xl,
+}) => (
   <StyledBox px={5} pb={2} md={{ px: 5, pt: 5, pb: 0 }} role="cell">
     {/* TODO should we rather have padding specified in ExpandItems? */}
     {expandItems && expandItems.length ? <ExpandItems items={expandItems} /> : null}

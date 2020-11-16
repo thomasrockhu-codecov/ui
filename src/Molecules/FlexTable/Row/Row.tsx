@@ -8,7 +8,7 @@ import { Density, MediaRelatedProps } from '../shared/shared.types';
 import { useFlexTable } from '../shared/FlexTableProvider';
 import { ExpandItems, ExpandItem } from './components/ExpandItems';
 import { RenderForSizes } from '../shared';
-import { ExpandArea } from './components';
+import { ExpandArea, ExpandElement } from './components';
 import { Theme } from '../../../theme/theme.types';
 
 const getDensityStyles = (density: Density) => `
@@ -95,8 +95,8 @@ const StyledExpandedRow = styled('div').withConfig({
 `;
 
 const ExpandRow: ExpandRowComponent = ({
-  expandItems: expandItemsXs,
-  expandChildren: expandChildrenXs,
+  expandItems,
+  expandChildren,
   sm,
   md,
   lg,
@@ -104,27 +104,16 @@ const ExpandRow: ExpandRowComponent = ({
   separatorColor = (theme) => theme.color.divider,
   ...htmlProps
 }) => (
-  <RenderForSizes
-    xs={{
-      expandItems: expandItemsXs,
-      expandChildren: expandChildrenXs,
-    }}
-    sm={sm}
-    md={md}
-    lg={lg}
-    xl={xl}
-  >
-    {({ className, expandChildren, expandItems }) => (
-      <StyledExpandedRow
-        role="row"
-        separatorColor={separatorColor}
-        className={className}
-        {...htmlProps}
-      >
-        <ExpandArea expandItems={expandItems} expandChildren={expandChildren} />
-      </StyledExpandedRow>
-    )}
-  </RenderForSizes>
+  <StyledExpandedRow role="row" separatorColor={separatorColor} {...htmlProps}>
+    <ExpandArea
+      expandItems={expandItems}
+      expandChildren={expandChildren}
+      sm={sm}
+      md={md}
+      lg={lg}
+      xl={xl}
+    />
+  </StyledExpandedRow>
 );
 
 const Row: RowComponent = ({
@@ -137,8 +126,8 @@ const Row: RowComponent = ({
   isContent = true,
   separatorColor = (theme) => theme.color.divider,
   onExpandToggle,
-  expandChildren: expandChildrenXs,
-  expandItems: expandItemsXs,
+  expandChildren,
+  expandItems,
   children,
   sm: smExpandProps,
   md: mdExpandProps,
@@ -183,30 +172,25 @@ const Row: RowComponent = ({
         className={className}
         alignItems="center"
         gutter={gutter}
-        lg={{ gutter: lg?.columnDistance }}
-        md={{ gutter: md?.columnDistance }}
         sm={{ gutter: sm?.columnDistance }}
+        md={{ gutter: md?.columnDistance }}
+        lg={{ gutter: lg?.columnDistance }}
         xl={{ gutter: xl?.columnDistance }}
         {...htmlProps}
       >
         {children}
-        {/* <ExpandElement
-            xs={xs}
-            sm={smTable}
-            md={mdTable}
-            lg={lgTable}
-            xl={xlTable}
-            isContent={isContent}
-            expanded={expand}
-            onExpandToggle={onExpandToggleClick}
-            disabled={!expandChildrenXs && !expandItemsXs}
-            setExpand={setExpand}
-          /> */}
+        <ExpandElement
+          isContent={isContent}
+          expanded={expand}
+          onExpandToggle={onExpandToggleClick}
+          disabled={!expandChildren && !expandItems}
+          setExpand={setExpand}
+        />
       </StyledRow>
       {expand && (
         <ExpandRow
-          expandItems={expandItemsXs}
-          expandChildren={expandChildrenXs}
+          expandItems={expandItems}
+          expandChildren={expandChildren}
           sm={smExpandProps}
           md={mdExpandProps}
           lg={lgExpandProps}
