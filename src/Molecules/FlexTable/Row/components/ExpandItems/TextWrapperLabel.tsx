@@ -1,11 +1,11 @@
 import React from 'react';
-import { FontSize, MediaRelatedProps } from '../../../shared/shared.types';
-import { getFontSizeTypographyType } from '../../../shared/textUtils';
+import styled, { css } from 'styled-components';
 import { Typography, TruncateWithTooltip } from '../../../../..';
 import { TextComponent, TextWrapperComponent } from './ExpandItems.types';
-import styled, { css } from 'styled-components';
+import { FontSize } from '../../../shared/shared.types';
+import { Theme } from '../../../../../theme/theme.types';
 
-const getFontSizeStyles = (fontSize, theme) => {
+const getFontSizeStyles = (fontSize: FontSize, theme: Theme) => {
   if (fontSize !== 'm') {
     return `
       font-size: 12px;
@@ -26,7 +26,13 @@ const getStylesForSize = (size: string) => css`
   }
 `;
 
-const StyledTypography = styled(Typography)<{ $fontSize; $sm: any; $md: any; $lg: any; $xl: any }>`
+const StyledTypography = styled(Typography)<{
+  $fontSize: FontSize;
+  $sm: any;
+  $md: any;
+  $lg: any;
+  $xl: any;
+}>`
   ${(p) => getFontSizeStyles(p.$fontSize, p.theme)}
   ${(p) => (p.$sm ? getStylesForSize('sm') : '')}
   ${(p) =>
