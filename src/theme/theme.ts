@@ -141,6 +141,7 @@ const createColors = (type: ThemeColorsVersion): ThemeColors<typeof type> => {
     barScaleInactiveBar: rawColor.gray6,
     bubbleBackground: rawColor.white,
     bubbleBorder: rawColor.gray4,
+    bubbleSecondaryText: rawColor.gray2,
     tableBorder: rawColor.gray0,
     buttonSecondaryBackground: rawColor.white,
     buttonText: rawColor.white,
