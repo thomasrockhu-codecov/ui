@@ -1,3 +1,16 @@
+# [4.8.0](https://github.com/nordnet/ui/compare/v4.7.0...v4.8.0) (2020-11-16)
+
+
+### Bug Fixes
+
+* update snaps ([f850c9f](https://github.com/nordnet/ui/commit/f850c9f))
+* update snaps ([c71d72c](https://github.com/nordnet/ui/commit/c71d72c))
+
+
+### Features
+
+* add bubblesecondarytext color to theme ([c9d75bd](https://github.com/nordnet/ui/commit/c9d75bd))
+
 # [4.7.0](https://github.com/nordnet/ui/compare/v4.6.0...v4.7.0) (2020-11-16)
 
 
