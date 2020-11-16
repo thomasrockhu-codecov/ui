@@ -91,6 +91,9 @@ export const DatePicker = (React.forwardRef<HTMLDivElement, Props>((props, ref) 
   const [selectedEndDate, setSelectedEndDate] = useState<Date | null>(selectedEndDateProp || null);
   const [inputValue, setInputValue] = useState<string>(initialInputValue);
 
+  const focusedState = useState<[number | null, number | null]>([null, null]);
+  const setFocused = focusedState[1];
+
   useEffect(() => {
     setOpen(openProp);
   }, [openProp]);
@@ -217,11 +220,24 @@ export const DatePicker = (React.forwardRef<HTMLDivElement, Props>((props, ref) 
     [locale, selectedDate, onChange, selectedEndDate, dateFormat, options],
   );
 
-  const onInputSubmit = (event: React.KeyboardEvent<HTMLInputElement>) => {
+  const handleInputKeyDown = (event: React.KeyboardEvent<HTMLInputElement>) => {
     const { value } = event.target as HTMLInputElement;
-    if (event.key === 'Enter') {
-      if (variant === RANGE_DATE_PICKER) handleInputSubmitRange(value);
-      else handleInputSubmitRegular(value);
+
+    switch (event.key) {
+      case 'ArrowUp':
+      case 'ArrowRight':
+      case 'ArrowDown':
+      case 'ArrowLeft':
+        if (!inputValue) setFocused([0, 0]);
+        break;
+
+      case 'Enter':
+        if (variant === RANGE_DATE_PICKER) handleInputSubmitRange(value);
+        else handleInputSubmitRegular(value);
+        break;
+
+      default:
+        break;
     }
   };
 
@@ -249,7 +265,13 @@ export const DatePicker = (React.forwardRef<HTMLDivElement, Props>((props, ref) 
   );
 
   const datepicker = (
-    <Box my={3} mx={2}>
+    <Box
+      my={3}
+      mx={2}
+      onBlur={() => {
+        setFocused([null, null]);
+      }}
+    >
       <Header
         ariaLabelPrevious={ariaLabelPrevious}
         ariaLabelNext={ariaLabelNext}
@@ -267,6 +289,7 @@ export const DatePicker = (React.forwardRef<HTMLDivElement, Props>((props, ref) 
         onClick={onDateClick}
         selectedDate={selectedDate as Date}
         selectedEndDate={selectedEndDate as Date}
+        focusedState={focusedState}
       />
     </Box>
   );
@@ -274,7 +297,10 @@ export const DatePicker = (React.forwardRef<HTMLDivElement, Props>((props, ref) 
   const inputRightAddon = <Icon.CalendarTwoRows size={6} />;
 
   const selfRef = useRef<HTMLDivElement>(null);
-  useOnClickOutside(selfRef, () => setOpen(false));
+  useOnClickOutside(selfRef, () => {
+    setFocused([null, null]);
+    setOpen(false);
+  });
 
   return (
     <div ref={(ref || selfRef) as React.Ref<HTMLDivElement>}>
@@ -292,7 +318,7 @@ export const DatePicker = (React.forwardRef<HTMLDivElement, Props>((props, ref) 
         value={inputValue}
         rightAddon={inputRightAddon}
         onChange={handleInputOnChange}
-        onKeyDown={onInputSubmit}
+        onKeyDown={handleInputKeyDown}
         onFocus={handleInputOnFocus}
         width={width ? `${theme.spacing.unit(width)}px` : ''}
         autoComplete="off"

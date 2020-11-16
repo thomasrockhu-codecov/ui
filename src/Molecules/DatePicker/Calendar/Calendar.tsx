@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from 'react';
+import React, { useEffect, useRef } from 'react';
 import styled from 'styled-components';
 import * as R from 'ramda';
 import { isSameDay, isSameMonth, isWithinInterval } from 'date-fns';
@@ -24,11 +24,10 @@ const Calendar: React.FC<Props> = ({
   onClick,
   selectedDate,
   selectedEndDate,
+  focusedState,
 }) => {
-  const [[focusedWeek, focusedDay], setFocused] = useState<[number | null, number | null]>([
-    null,
-    null,
-  ]);
+  const [[focusedWeek, focusedDay], setFocused] = focusedState;
+
   const focusedDateObjRef = useRef<Date | null>(null);
 
   const dateIsDisabled = (dateToCheck: Date | null) => {
@@ -51,6 +50,7 @@ const Calendar: React.FC<Props> = ({
 
   const handleKeyPress = (event: React.KeyboardEvent) => {
     event.stopPropagation();
+
     if (R.isNil(focusedWeek) || R.isNil(focusedDay)) {
       setFocused([0, 0]);
     } else {
