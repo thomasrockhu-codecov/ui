@@ -5,7 +5,7 @@ import { isSameDay, isSameMonth, isWithinInterval } from 'date-fns';
 import { Box, Flexbox, Typography } from '../../..';
 import { getCalendar, getLocale } from '../shared/dateUtils';
 import { Props } from './Calendar.types';
-import { FIRST_DAY, LAST_DAY, NUMBER_OF_VISIBLE_DAYS, NUMBER_OF_VISIBLE_WEEKS } from './constants';
+import { NUMBER_OF_VISIBLE_DAYS, NUMBER_OF_VISIBLE_WEEKS } from './constants';
 import { CalendarDay } from './CalendarDay';
 
 export const StyledBox = styled(Box)`
@@ -124,42 +124,34 @@ const Calendar: React.FC<Props> = ({
       </Flexbox>
       {calendar.dates.map((week, weekIndex) => (
         <Flexbox container key={week.toString()}>
-          {week.map((day, dayIndex) => {
-            const edgeDay = (() => {
-              if (weekIndex === 0 && dayIndex === 0) return FIRST_DAY;
-              if (weekIndex === calendar.dates.length - 1 && dayIndex === week.length - 1)
-                return LAST_DAY;
-              return null;
-            })();
-
-            return (
-              <CalendarDay
-                ref={calendarDayRefs.current[weekIndex][dayIndex]}
-                onFocus={() => {
-                  setFocused([weekIndex, dayIndex]);
-                  focusedDateObjRef.current = day;
-                }}
-                key={day.toString()}
-                date={day}
-                disabled={!!dateIsDisabled(day)}
-                onClick={() => {
-                  if (!dateIsDisabled(day)) onClick(day);
-                }}
-                onKeyDown={handleKeyPress}
-                selected={
-                  (selectedDate && isSameDay(selectedDate, day)) ||
-                  (selectedEndDate && isSameDay(selectedEndDate, day))
-                }
-                sameMonth={isSameMonth(viewedDate, day)}
-                locale={localeObj}
-                withinRange={
-                  selectedEndDate &&
-                  isWithinInterval(day, { start: selectedDate, end: selectedEndDate })
-                }
-                edgeDay={edgeDay}
-              />
-            );
-          })}
+          {week.map((day, dayIndex) => (
+            <CalendarDay
+              ref={calendarDayRefs.current[weekIndex][dayIndex]}
+              onFocus={() => {
+                setFocused([weekIndex, dayIndex]);
+                focusedDateObjRef.current = day;
+              }}
+              key={day.toString()}
+              date={day}
+              disabled={!!dateIsDisabled(day)}
+              onClick={() => {
+                if (!dateIsDisabled(day)) onClick(day);
+              }}
+              onKeyDown={handleKeyPress}
+              selected={
+                (selectedDate && isSameDay(selectedDate, day)) ||
+                (selectedEndDate && isSameDay(selectedEndDate, day))
+              }
+              sameMonth={isSameMonth(viewedDate, day)}
+              locale={localeObj}
+              withinRange={
+                selectedEndDate &&
+                isWithinInterval(day, { start: selectedDate, end: selectedEndDate })
+              }
+              isFirstDay={weekIndex === 0 && dayIndex === 0}
+              isLastDay={weekIndex === calendar.dates.length - 1 && dayIndex === week.length - 1}
+            />
+          ))}
         </Flexbox>
       ))}
     </Flexbox>

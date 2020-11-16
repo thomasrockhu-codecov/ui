@@ -2,8 +2,7 @@ import React, { useCallback } from 'react';
 import styled from 'styled-components';
 import { format, isToday } from 'date-fns';
 import { Box, Typography } from '../../..';
-import { EdgeDay, CalendarDayProps } from './Calendar.types';
-import { FIRST_DAY, LAST_DAY } from './constants';
+import { CalendarDayProps } from './Calendar.types';
 
 const StyledCalendarDay = styled(Box)<{
   $disabled?: boolean;
@@ -11,7 +10,8 @@ const StyledCalendarDay = styled(Box)<{
   $withinRange?: boolean;
   $isToday?: boolean;
   $isSameMonth?: boolean;
-  $edgeDay: EdgeDay | null;
+  $isFirstDay?: boolean;
+  $isLastDay?: boolean;
 }>`
   background: ${({ theme }) => theme.color.backgroundInput};
   min-width: ${({ theme }) => theme.spacing.unit(10) + 2}px;
@@ -23,7 +23,7 @@ const StyledCalendarDay = styled(Box)<{
   cursor: pointer;
   box-sizing: border-box;
 
-  ${({ $disabled, $selected, $withinRange, $isToday, $edgeDay, theme }) => `
+  ${({ $disabled, $selected, $withinRange, $isToday, $isFirstDay, $isLastDay, theme }) => `
   ${
     $disabled
       ? `cursor: not-allowed;
@@ -45,12 +45,12 @@ const StyledCalendarDay = styled(Box)<{
   }
   ${$withinRange ? `background: ${theme.color.datePickerWithinRangeBackground};` : ''}
   ${
-    $withinRange && $edgeDay === FIRST_DAY
+    $withinRange && $isFirstDay
       ? `background: linear-gradient(to right, ${theme.color.backgroundInput} 10%, ${theme.color.datePickerWithinRangeBackground});`
       : ''
   }
   ${
-    $withinRange && $edgeDay === LAST_DAY
+    $withinRange && $isLastDay
       ? `background: linear-gradient(to left, ${theme.color.backgroundInput} 10%, ${theme.color.datePickerWithinRangeBackground});`
       : ''
   }
@@ -72,7 +72,8 @@ export const CalendarDay = React.forwardRef<HTMLDivElement, CalendarDayProps>(
       sameMonth = true,
       selected,
       withinRange = false,
-      edgeDay,
+      isFirstDay = false,
+      isLastDay = false,
     },
     ref,
   ) => {
@@ -102,7 +103,8 @@ export const CalendarDay = React.forwardRef<HTMLDivElement, CalendarDayProps>(
         $withinRange={withinRange}
         $isToday={isToday(date)}
         $isSameMonth={sameMonth}
-        $edgeDay={edgeDay}
+        $isFirstDay={isFirstDay}
+        $isLastDay={isLastDay}
         onClick={handleOnClick}
         onKeyDown={onKeyDown}
         onFocus={onFocus}

@@ -12,7 +12,8 @@ export type CalendarDayProps = {
   sameMonth?: boolean;
   selected?: boolean;
   withinRange?: boolean;
-  edgeDay: EdgeDay | null;
+  isFirstDay?: boolean;
+  isLastDay?: boolean;
 };
 
 export type Props = {
