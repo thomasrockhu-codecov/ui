@@ -31,6 +31,16 @@ const Calendar: React.FC<Props> = ({
   ]);
   const focusedDateObjRef = useRef<Date | null>(null);
 
+  const dateIsDisabled = (dateToCheck: Date | null) => {
+    const isEnabled = dateToCheck && enableDate && enableDate(dateToCheck);
+    const isDisabled = dateToCheck && disableDate && disableDate(dateToCheck);
+
+    if (R.isNil(isEnabled) && R.isNil(isDisabled)) return false;
+    if (R.isNil(isEnabled)) return isDisabled;
+    if (R.isNil(isDisabled)) return !isEnabled;
+    return false;
+  };
+
   const calendarDayRefs = useRef(
     [...Array(NUMBER_OF_VISIBLE_WEEKS)].map(() => {
       return [...Array(NUMBER_OF_VISIBLE_DAYS)].reduce((acc) => {
@@ -75,7 +85,9 @@ const Calendar: React.FC<Props> = ({
 
         case ' ': // Spacebar
         case 'Enter':
-          if (!R.isNil(focusedDateObjRef.current)) onClick(new Date(focusedDateObjRef.current));
+          if (focusedDateObjRef.current && !dateIsDisabled(focusedDateObjRef.current)) {
+            onClick(new Date(focusedDateObjRef.current));
+          }
           break;
 
         default:
@@ -129,9 +141,10 @@ const Calendar: React.FC<Props> = ({
                 }}
                 key={day.toString()}
                 date={day}
-                enabled={enableDate && enableDate(day)}
-                disabled={disableDate && disableDate(day)}
-                onClick={() => onClick(day)}
+                disabled={!!dateIsDisabled(day)}
+                onClick={() => {
+                  if (!dateIsDisabled(day)) onClick(day);
+                }}
                 onKeyDown={handleKeyPress}
                 selected={
                   (selectedDate && isSameDay(selectedDate, day)) ||

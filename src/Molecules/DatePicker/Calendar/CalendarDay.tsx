@@ -10,6 +10,7 @@ const StyledCalendarDay = styled(Box)<{
   $selected?: boolean;
   $withinRange?: boolean;
   $isToday?: boolean;
+  $isSameMonth?: boolean;
   $edgeDay: EdgeDay | null;
 }>`
   background: ${({ theme }) => theme.color.backgroundInput};
@@ -23,7 +24,25 @@ const StyledCalendarDay = styled(Box)<{
   box-sizing: border-box;
 
   ${({ $disabled, $selected, $withinRange, $isToday, $edgeDay, theme }) => `
-  ${$isToday ? `border: 1px solid ${theme.color.inputBorder};` : ''}
+  ${
+    $disabled
+      ? `cursor: not-allowed;
+        background: ${theme.color.shadowInput};
+
+        &:focus {
+          outline: none;
+          border: 1px solid ${theme.color.inputBorder};
+        }`
+      : `
+      &:focus {
+        outline: none;
+        border: 1px solid ${theme.color.cta};
+      }
+
+      &:hover {
+        border: 1px solid ${theme.color.cta};
+      }`
+  }
   ${$withinRange ? `background: ${theme.color.datePickerWithinRangeBackground};` : ''}
   ${
     $withinRange && $edgeDay === FIRST_DAY
@@ -35,31 +54,9 @@ const StyledCalendarDay = styled(Box)<{
       ? `background: linear-gradient(to left, ${theme.color.backgroundInput} 10%, ${theme.color.datePickerWithinRangeBackground});`
       : ''
   }
-  ${
-    $selected
-      ? `
-        background: ${theme.color.cta};
-        border: 1px solid transparent;`
-      : ''
-  }
-  ${
-    $disabled
-      ? `
-        color: ${theme.color.disabledText};
-        cursor: not-allowed;
-        border: 1px solid transparent;`
-      : ''
-  }
+  ${$isToday ? `border: 1px solid ${theme.color.label};` : ''}
+  ${$selected ? `background: ${theme.color.cta};` : ''}
 `}
-
-  &:focus {
-    outline: none;
-    border: 1px solid ${({ theme }) => theme.color.cta};
-  }
-
-  &:hover {
-    border: 1px solid ${({ theme }) => theme.color.cta};
-  }
 `;
 
 export const CalendarDay = React.forwardRef<HTMLDivElement, CalendarDayProps>(
@@ -68,7 +65,6 @@ export const CalendarDay = React.forwardRef<HTMLDivElement, CalendarDayProps>(
       onFocus,
       className = '',
       date,
-      enabled = true,
       disabled = false,
       locale,
       onClick,
@@ -80,11 +76,9 @@ export const CalendarDay = React.forwardRef<HTMLDivElement, CalendarDayProps>(
     },
     ref,
   ) => {
-    const DISABLED_OR_NOT_ENABLED = disabled || !enabled;
-
     const textColor = (() => {
-      if (DISABLED_OR_NOT_ENABLED) return 'label';
-      if (!sameMonth && !selected) return 'label';
+      if (!sameMonth && !selected) return 'otherMonthDateText';
+      if (disabled) return 'disabledText';
       if (selected) return 'buttonText';
       if (!selected) return 'text';
       return '';
@@ -103,16 +97,17 @@ export const CalendarDay = React.forwardRef<HTMLDivElement, CalendarDayProps>(
       <StyledCalendarDay
         ref={ref}
         className={className}
-        $disabled={DISABLED_OR_NOT_ENABLED}
+        $disabled={disabled}
         $selected={selected}
         $withinRange={withinRange}
         $isToday={isToday(date)}
+        $isSameMonth={sameMonth}
         $edgeDay={edgeDay}
         onClick={handleOnClick}
         onKeyDown={onKeyDown}
         onFocus={onFocus}
         aria-label={ariaLabel}
-        tabIndex={0}
+        tabIndex={disabled ? -1 : 0} // should not be focusable if disabled
       >
         <Typography type="tertiary" color={(t) => t.color[textColor || 'text']}>
           {format(date, 'd')}

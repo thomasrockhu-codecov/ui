@@ -117,6 +117,8 @@ export type ThemeColors<Version extends ThemeColorsVersion> = {
   creditsPiePrimary: RawColor['complementaryPink1'];
   /** creditsPieSecondary */
   creditsPieSecondary: RawColor['complementaryPink2'];
+  /** otherMonthDateText */
+  otherMonthDateText: RawColor['gray4'];
   /** positive */
   positive: ChangeableColor<RawColor['positive'], RawColor['a11yPositive'], Version>;
   /** negative */
