@@ -46,12 +46,12 @@ const StyledCalendarDay = styled(Box)<{
   ${$withinRange ? `background: ${theme.color.datePickerWithinRangeBackground};` : ''}
   ${
     $withinRange && $isFirstDay
-      ? `background: linear-gradient(to right, ${theme.color.backgroundInput} 10%, ${theme.color.datePickerWithinRangeBackground});`
+      ? `background: linear-gradient(to right, ${theme.color.datePickerWithinRangeFade}, ${theme.color.datePickerWithinRangeBackground});`
       : ''
   }
   ${
     $withinRange && $isLastDay
-      ? `background: linear-gradient(to left, ${theme.color.backgroundInput} 10%, ${theme.color.datePickerWithinRangeBackground});`
+      ? `background: linear-gradient(to left, ${theme.color.datePickerWithinRangeFade}, ${theme.color.datePickerWithinRangeBackground});`
       : ''
   }
   ${$isToday ? `border: 1px solid ${theme.color.label};` : ''}

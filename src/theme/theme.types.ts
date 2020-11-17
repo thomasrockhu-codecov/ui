@@ -191,6 +191,8 @@ export type ThemeColors<Version extends ThemeColorsVersion> = {
   tableRowHover: RawColor['gray7'];
   /** gray2 */
   datePickerWithinRangeBackground: string;
+  /** gray2 */
+  datePickerWithinRangeFade: string;
   /** negative */
   inputBorderError: RawColor['negative'];
   /** positive */

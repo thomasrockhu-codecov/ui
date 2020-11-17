@@ -193,6 +193,7 @@ const createColors = (type: ThemeColorsVersion): ThemeColors<typeof type> => {
     tableRowBackground: rawColor.white,
     tableRowHover: rawColor.gray7,
     datePickerWithinRangeBackground: Color(rawColor.gray2).alpha(0.1).rgb().string(),
+    datePickerWithinRangeFade: Color(rawColor.gray2).alpha(0.01).rgb().string(),
     flagBorder: rawColor.gray6,
     inputBorderError: rawColor.negative,
     inputBorderSuccess: rawColor.positive,
