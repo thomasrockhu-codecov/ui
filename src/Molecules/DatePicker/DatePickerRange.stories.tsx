@@ -64,7 +64,7 @@ export const Controlled = () => {
       <DatePicker
         id="controlled"
         variant={RANGE_DATE_PICKER}
-        label="Label"
+        label="Controlled"
         selectedDate={startDate}
         selectedEndDate={endDate}
         onChange={(selectedDate, selectedEndDate) => {

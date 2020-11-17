@@ -87,13 +87,13 @@ export const DatePicker = (React.forwardRef<HTMLDivElement, Props>((props, ref) 
     [locale],
   );
 
-  const initialInputValue = selectedDateProp ? format(selectedDateProp, dateFormat, options) : '';
-
   const [open, setOpen] = useState<boolean>(openProp);
-  const [viewedDate, setViewedDate] = useState<Date>(selectedDateProp || startOfDay(new Date()));
+  const [viewedDate, setViewedDate] = useState<Date>(
+    (selectedDateProp && new Date(selectedDateProp)) || startOfDay(new Date()),
+  );
   const [selectedDate, setSelectedDate] = useState<Date | null>(selectedDateProp || null);
   const [selectedEndDate, setSelectedEndDate] = useState<Date | null>(selectedEndDateProp || null);
-  const [inputValue, setInputValue] = useState<string>(inputValueProp || initialInputValue);
+  const [inputValue, setInputValue] = useState<string>(inputValueProp || '');
 
   const focusedState = useState<[number | null, number | null]>([null, null]);
   const setFocused = focusedState[1];
