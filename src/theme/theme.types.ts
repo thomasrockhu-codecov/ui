@@ -101,6 +101,8 @@ export type ThemeColors<Version extends ThemeColorsVersion> = {
   bubbleBackground: RawColor['white'];
   /** gray4 */
   bubbleBorder: RawColor['gray4'];
+  /** gray2 */
+  bubbleSecondaryText: RawColor['gray2'];
   /** gray0 */
   tableBorder: RawColor['gray0'];
   /** negative */

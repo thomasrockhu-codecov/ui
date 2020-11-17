@@ -18,6 +18,7 @@ import { CalendarTwoRows } from './components/CalendarTwoRows';
 import { CandleSticks } from './components/CandleSticks';
 import { CheckMark } from './components/CheckMark';
 import { CheckMarkCircle } from './components/CheckMarkCircle';
+import { Chevron } from './components/Chevron';
 import { ChevronDown } from './components/ChevronDown';
 import { ChevronLeft } from './components/ChevronLeft';
 import { ChevronRight } from './components/ChevronRight';
@@ -134,6 +135,7 @@ export default {
   CandleSticks,
   CheckMark,
   CheckMarkCircle,
+  Chevron,
   ChevronDown,
   ChevronLeft,
   ChevronRight,
