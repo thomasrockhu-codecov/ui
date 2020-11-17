@@ -1,50 +1,91 @@
 import React from 'react';
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 import * as R from 'ramda';
 import { isElement, isFunction } from '../../../../../common/utils';
 import { Flexbox, LabeledValue } from '../../../../..';
-import { ExpandItemComponent, ExpandItemProps, RenderFunc } from './ExpandItems.types';
+import {
+  ExpandItemComponent,
+  ExpandItemMediaConfigurableProps,
+  ExpandItemProps,
+  RenderFunc,
+} from './ExpandItems.types';
 import { Props as FlexBoxProps } from '../../../../../Atoms/Flexbox/Flexbox.types';
 import { TextWrapperLabel } from './TextWrapperLabel';
 import { TextWrapperValue } from './TextWrapperValue';
-import { FontSize } from '../../../shared/shared.types';
+import { FontSize, MediaRelatedProps } from '../../../shared/shared.types';
 import { useFlexTable } from '../../../shared/FlexTableProvider';
-import { RenderForSizes } from '../../../shared';
+
+type StyledFlexboxProps = {
+  $sm: any;
+  $md: any;
+  $lg: any;
+  $xl: any;
+  $hidden?: boolean;
+} & FlexBoxProps;
+
+const getStylesForSize = (size: string) => css<StyledFlexboxProps>`
+  ${(p) => p.theme.media.greaterThan(p.theme.breakpoints[size])} {
+    ${(p) => (p[`$${size}`].hidden ? 'display: none;' : '')}
+  }
+`;
 
 const StyledOverflowItem = styled(Flexbox)<{ textAlign?: string }>`
   overflow: hidden;
   text-align: ${({ textAlign = 'left' }) => textAlign};
 `;
 
-const StyledFlexboxItem = styled(Flexbox)<FlexBoxProps>`
+const StyledFlexbox = styled(Flexbox)<StyledFlexboxProps>`
+  ${(p) => (p.$sm ? getStylesForSize('sm') : '')}
+  ${(p) => (p.$md ? getStylesForSize('md') : '')}
+  ${(p) =>
+    p.$lg ? getStylesForSize('lg') : ''}
+  ${(p) => (p.$xl ? getStylesForSize('xl') : '')}
+`;
+
+const StyledFlexboxItem = styled(StyledFlexbox)<StyledFlexboxProps>`
   max-width: ${(p) => p.theme.spacing.unit(75)}px;
   padding-bottom: ${(p) => p.theme.spacing.unit(5)}px;
 `;
 
-const ExpandRenderer: React.FC<{
-  children: React.ReactNode | RenderFunc;
-  fontSize: FontSize;
-  isLabel?: boolean;
-}> = ({ children, fontSize, isLabel = false }) => {
+const ExpandRenderer: React.FC<
+  {
+    children: React.ReactNode | RenderFunc;
+    fontSize: FontSize;
+    isLabel?: boolean;
+  } & MediaRelatedProps<{ fontSize: FontSize }>
+> = ({ isLabel = false, fontSize, sm, md, lg, xl, children }) => {
   const Wrapper = isLabel ? TextWrapperLabel : TextWrapperValue;
 
   return (
     <>
       {isElement(children) && children}
       {isFunction(children)
-        ? children({ fontSize })
-        : !isElement(children) && <Wrapper fontSize={fontSize}>{children}</Wrapper>}
+        ? children({ fontSize, sm, md, lg, xl })
+        : !isElement(children) && (
+            <Wrapper fontSize={fontSize} sm={sm} md={md} lg={lg} xl={xl}>
+              {children}
+            </Wrapper>
+          )}
     </>
   );
 };
 
-const MobileItem: React.FC<{
-  className?: string;
-  label: ExpandItemProps['label'];
-  value: ExpandItemProps['value'];
-  fontSize: FontSize;
-}> = ({ label, value, fontSize }) => (
-  <Flexbox container justifyContent="space-between" as="li">
+const MobileItem: React.FC<
+  {
+    label: ExpandItemProps['label'];
+    value: ExpandItemProps['value'];
+  } & ExpandItemMediaConfigurableProps
+> = ({ label, value, hidden, fontSize, sm, md, lg, xl }) => (
+  <StyledFlexbox
+    forwardedAs="li"
+    container
+    justifyContent="space-between"
+    $hidden={hidden}
+    $sm={sm}
+    $md={md}
+    $lg={lg}
+    $xl={xl}
+  >
     <StyledOverflowItem item flex="0 0 50%">
       <ExpandRenderer fontSize={fontSize} isLabel>
         {label}
@@ -53,19 +94,26 @@ const MobileItem: React.FC<{
     <StyledOverflowItem item flex="0 0 50%" textAlign="right">
       <ExpandRenderer fontSize={fontSize}>{value}</ExpandRenderer>
     </StyledOverflowItem>
-  </Flexbox>
+  </StyledFlexbox>
 );
 
-const DesktopItem: React.FC<{
-  className?: string;
-  label: ExpandItemProps['label'];
-  value: ExpandItemProps['value'];
-  fontSize: FontSize;
-}> = ({ label, value, fontSize }) => (
-  <StyledFlexboxItem item as="li">
+const DesktopItem: React.FC<
+  {
+    label: ExpandItemProps['label'];
+    value: ExpandItemProps['value'];
+  } & ExpandItemMediaConfigurableProps
+> = ({ label, value, hidden, fontSize, sm, md, lg, xl }) => (
+  <StyledFlexboxItem item $hidden={hidden} $sm={sm} $md={md} $lg={lg} $xl={xl}>
     <LabeledValue
       label={
-        <ExpandRenderer fontSize={fontSize} isLabel>
+        <ExpandRenderer
+          fontSize={fontSize}
+          sm={{ ...R.pick(['fontSize'], sm) }}
+          md={{ ...R.pick(['fontSize'], md) }}
+          lg={{ ...R.pick(['fontSize'], lg) }}
+          xl={{ ...R.pick(['fontSize'], xl) }}
+          isLabel
+        >
           {label}
         </ExpandRenderer>
       }
@@ -76,23 +124,49 @@ const DesktopItem: React.FC<{
 );
 
 export const ExpandItem: ExpandItemComponent = ({ item, mobileItem }) => {
-  const { label, value, hidden, sm: smItem, md: mdItem, lg: lgItem, xl: xlItem } = item;
+  const {
+    label,
+    value,
+    hidden,
+    sm: smItemProps,
+    md: mdItemProps,
+    lg: lgItemProps,
+    xl: xlItemProps,
+  } = item;
   const {
     fontSize,
-    sm: smFontSize,
-    md: mdFontSize,
-    lg: lgFontSize,
-    xl: xlFontSize,
+    sm: smTableProps = {},
+    md: mdTableProps = {},
+    lg: lgTableProps = {},
+    xl: xlTableProps = {},
   } = useFlexTable();
-  const sm = { fontSize: R.propOr(null, 'fontSize', smFontSize), ...smItem };
-  const md = { fontSize: R.propOr(null, 'fontSize', mdFontSize), ...mdItem };
-  const lg = { fontSize: R.propOr(null, 'fontSize', lgFontSize), ...lgItem };
-  const xl = { fontSize: R.propOr(null, 'fontSize', xlFontSize), ...xlItem };
+  const sm = { ...R.pick(['fontSize'], smTableProps), ...smItemProps };
+  const md = { ...R.pick(['fontSize'], mdTableProps), ...mdItemProps };
+  const lg = { ...R.pick(['fontSize'], lgTableProps), ...lgItemProps };
+  const xl = { ...R.pick(['fontSize'], xlTableProps), ...xlItemProps };
 
   return mobileItem ? (
-    <MobileItem label={label} value={value} fontSize={fontSize} />
+    <MobileItem
+      label={label}
+      value={value}
+      fontSize={fontSize}
+      hidden={hidden}
+      sm={sm}
+      md={md}
+      lg={lg}
+      xl={xl}
+    />
   ) : (
-    <DesktopItem label={label} value={value} fontSize={fontSize} />
+    <DesktopItem
+      label={label}
+      value={value}
+      fontSize={fontSize}
+      hidden={hidden}
+      sm={sm}
+      md={md}
+      lg={lg}
+      xl={xl}
+    />
   );
 };
 
