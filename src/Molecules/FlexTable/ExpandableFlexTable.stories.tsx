@@ -111,7 +111,7 @@ export const OnlyExpandableOnMobileTable = () => {
     { label: 'Header 7', value: 'Expandable 7' },
   ];
   return (
-    <FlexTable expandable>
+    <FlexTable expandable md={{ expandable: false }}>
       <FlexTable.HeaderRow>
         <FlexTable.Header columnId="column1">Header 1</FlexTable.Header>
         <FlexTable.Header columnId="column2">Header 2</FlexTable.Header>

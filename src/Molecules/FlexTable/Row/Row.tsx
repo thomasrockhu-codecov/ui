@@ -179,6 +179,11 @@ const Row: RowComponent = ({
       >
         {children}
         <ExpandElement
+          expandable={expandable}
+          sm={sm}
+          md={md}
+          lg={lg}
+          xl={xl}
           isContent={isContent}
           expanded={expand}
           onExpandToggle={onExpandToggleClick}

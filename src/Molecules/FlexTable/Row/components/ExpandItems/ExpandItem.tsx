@@ -25,7 +25,8 @@ type StyledFlexboxProps = {
 
 const getStylesForSize = (size: string) => css<StyledFlexboxProps>`
   ${(p) => p.theme.media.greaterThan(p.theme.breakpoints[size])} {
-    ${(p) => (p[`$${size}`].hidden ? 'display: none;' : '')}
+    ${(p) => (p[`$${size}`].hidden === true ? 'display: none;' : '')}
+    ${(p) => (p[`$${size}`].hidden === false ? 'display: unset;' : '')}
   }
 `;
 
@@ -35,11 +36,13 @@ const StyledOverflowItem = styled(Flexbox)<{ textAlign?: string }>`
 `;
 
 const StyledFlexbox = styled(Flexbox)<StyledFlexboxProps>`
+  ${(p) => (p.$hidden ? 'display: none;' : '')}
   ${(p) => (p.$sm ? getStylesForSize('sm') : '')}
-  ${(p) => (p.$md ? getStylesForSize('md') : '')}
   ${(p) =>
-    p.$lg ? getStylesForSize('lg') : ''}
-  ${(p) => (p.$xl ? getStylesForSize('xl') : '')}
+    p.$md ? getStylesForSize('md') : ''}
+  ${(p) => (p.$lg ? getStylesForSize('lg') : '')}
+  ${(p) =>
+    p.$xl ? getStylesForSize('xl') : ''}
 `;
 
 const StyledFlexboxItem = styled(StyledFlexbox)<StyledFlexboxProps>`
