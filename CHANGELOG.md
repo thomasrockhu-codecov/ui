@@ -1,3 +1,42 @@
+# [4.9.0](https://github.com/nordnet/ui/compare/v4.8.0...v4.9.0) (2020-11-17)
+
+
+### Bug Fixes
+
+* 🐛 add correct border to edge days ([b1c95f1](https://github.com/nordnet/ui/commit/b1c95f1))
+* 🐛 add top and bottom margin to dates ([813bee7](https://github.com/nordnet/ui/commit/813bee7))
+* 🐛 date and year weight for date picker with range ([02c5ede](https://github.com/nordnet/ui/commit/02c5ede))
+* 🐛 date picker tests to look at style instead of class ([daadcb3](https://github.com/nordnet/ui/commit/daadcb3))
+* 🐛 date range picker input text ([3bfe84b](https://github.com/nordnet/ui/commit/3bfe84b))
+* 🐛 descriptive name for date picker ([6283fd4](https://github.com/nordnet/ui/commit/6283fd4))
+* 🐛 disabled dates functionality and styling ([5952941](https://github.com/nordnet/ui/commit/5952941))
+* 🐛 edge day types for date picker with range ([9cc9789](https://github.com/nordnet/ui/commit/9cc9789))
+* 🐛 first and last date picker day range styling for safari ([9471053](https://github.com/nordnet/ui/commit/9471053))
+* 🐛 handle date picker input key presses ([b7a9ee4](https://github.com/nordnet/ui/commit/b7a9ee4))
+* 🐛 handle range date picker hover date placement ([fc9880c](https://github.com/nordnet/ui/commit/fc9880c))
+* 🐛 handle range value ([0c8d89c](https://github.com/nordnet/ui/commit/0c8d89c))
+* 🐛 input placeholder for range date picker ([f7b7169](https://github.com/nordnet/ui/commit/f7b7169))
+* 🐛 make each calendar day focusable in date picker ([dad9a49](https://github.com/nordnet/ui/commit/dad9a49))
+* 🐛 range fade styling for date picker ([d266624](https://github.com/nordnet/ui/commit/d266624))
+* 🐛 remove initial date picker date set ([5e0891a](https://github.com/nordnet/ui/commit/5e0891a))
+* 🐛 remove selected dates in date picker if input is cleared ([cc6be37](https://github.com/nordnet/ui/commit/cc6be37))
+* 🐛 reselect issues ([af4eec3](https://github.com/nordnet/ui/commit/af4eec3))
+* 🐛 return end date as null on first click in date picker ([2af817d](https://github.com/nordnet/ui/commit/2af817d))
+* 🐛 rewrite date picker calendar day and text color ([a193805](https://github.com/nordnet/ui/commit/a193805))
+* 🐛 stop propagation in date picker handle key press ([3df067a](https://github.com/nordnet/ui/commit/3df067a))
+* 🐛 update storyshots ([e5b9a21](https://github.com/nordnet/ui/commit/e5b9a21))
+* 🐛 viewed date init reference and init input value string ([679282c](https://github.com/nordnet/ui/commit/679282c))
+
+
+### Features
+
+* 🎸 add edge of month styling functionality to date picker ([e262f74](https://github.com/nordnet/ui/commit/e262f74))
+* 🎸 add interval styling to date picker with range ([7681916](https://github.com/nordnet/ui/commit/7681916))
+* 🎸 add simple date picker with range ([1ade834](https://github.com/nordnet/ui/commit/1ade834))
+* 🎸 implement exhaustive date picker controlled state ([8a3e141](https://github.com/nordnet/ui/commit/8a3e141))
+* 🎸 move focus on initial arrow press in date picker input ([1b09645](https://github.com/nordnet/ui/commit/1b09645))
+* 🎸 remove close button in date picker input field ([6fab3af](https://github.com/nordnet/ui/commit/6fab3af))
+
 # [4.8.0](https://github.com/nordnet/ui/compare/v4.7.0...v4.8.0) (2020-11-16)
 
 
