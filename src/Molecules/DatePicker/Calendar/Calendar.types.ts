@@ -11,7 +11,7 @@ export type CalendarDayProps = {
   onFocus: () => void;
   sameMonth?: boolean;
   selected?: boolean;
-  withinRange?: boolean;
+  isWithinRange?: boolean;
   isFirstDay?: boolean;
   isLastDay?: boolean;
 };

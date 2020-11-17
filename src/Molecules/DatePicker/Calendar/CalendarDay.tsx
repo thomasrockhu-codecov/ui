@@ -7,7 +7,7 @@ import { CalendarDayProps } from './Calendar.types';
 const StyledCalendarDay = styled(Box)<{
   $disabled?: boolean;
   $selected?: boolean;
-  $withinRange?: boolean;
+  $isWithinRange?: boolean;
   $isToday?: boolean;
   $isSameMonth?: boolean;
   $isFirstDay?: boolean;
@@ -23,7 +23,7 @@ const StyledCalendarDay = styled(Box)<{
   cursor: pointer;
   box-sizing: border-box;
 
-  ${({ $disabled, $selected, $withinRange, $isToday, $isFirstDay, $isLastDay, theme }) => `
+  ${({ $disabled, $selected, $isWithinRange, $isToday, $isFirstDay, $isLastDay, theme }) => `
   ${
     $disabled
       ? `cursor: not-allowed;
@@ -43,14 +43,14 @@ const StyledCalendarDay = styled(Box)<{
         border: 1px solid ${theme.color.cta};
       }`
   }
-  ${$withinRange ? `background: ${theme.color.datePickerWithinRangeBackground};` : ''}
+  ${$isWithinRange ? `background: ${theme.color.datePickerWithinRangeBackground};` : ''}
   ${
-    $withinRange && $isFirstDay
+    $isWithinRange && $isFirstDay
       ? `background: linear-gradient(to right, ${theme.color.datePickerWithinRangeFade}, ${theme.color.datePickerWithinRangeBackground});`
       : ''
   }
   ${
-    $withinRange && $isLastDay
+    $isWithinRange && $isLastDay
       ? `background: linear-gradient(to left, ${theme.color.datePickerWithinRangeFade}, ${theme.color.datePickerWithinRangeBackground});`
       : ''
   }
@@ -71,7 +71,7 @@ export const CalendarDay = React.forwardRef<HTMLDivElement, CalendarDayProps>(
       onKeyDown,
       sameMonth = true,
       selected,
-      withinRange = false,
+      isWithinRange = false,
       isFirstDay = false,
       isLastDay = false,
     },
@@ -100,7 +100,7 @@ export const CalendarDay = React.forwardRef<HTMLDivElement, CalendarDayProps>(
         className={className}
         $disabled={disabled}
         $selected={selected}
-        $withinRange={withinRange}
+        $isWithinRange={isWithinRange}
         $isToday={isToday(date)}
         $isSameMonth={sameMonth}
         $isFirstDay={isFirstDay}
