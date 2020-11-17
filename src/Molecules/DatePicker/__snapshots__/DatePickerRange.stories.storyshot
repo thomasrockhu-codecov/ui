@@ -309,7 +309,7 @@ Array [
           <div
             className="c4"
           >
-            Label 
+            Controlled 
           </div>
           <span
             className="c5"
@@ -327,7 +327,7 @@ Array [
                 onKeyDown={[Function]}
                 placeholder="dd/mm/yyyy - dd/mm/yyyy"
                 type="text"
-                value="17/11/2020"
+                value=""
                 variant="normal"
               />
               <div
