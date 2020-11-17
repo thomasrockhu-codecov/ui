@@ -119,6 +119,8 @@ export type ThemeColors<Version extends ThemeColorsVersion> = {
   creditsPiePrimary: RawColor['complementaryPink1'];
   /** creditsPieSecondary */
   creditsPieSecondary: RawColor['complementaryPink2'];
+  /** otherMonthDateText */
+  otherMonthDateText: RawColor['gray4'];
   /** positive */
   positive: ChangeableColor<RawColor['positive'], RawColor['a11yPositive'], Version>;
   /** negative */
@@ -189,6 +191,10 @@ export type ThemeColors<Version extends ThemeColorsVersion> = {
   tableRowBackground: RawColor['white'];
   /** gray7 */
   tableRowHover: RawColor['gray7'];
+  /** gray2 */
+  datePickerWithinRangeBackground: string;
+  /** gray2 */
+  datePickerWithinRangeFade: string;
   /** negative */
   inputBorderError: RawColor['negative'];
   /** positive */

@@ -1,106 +1,20 @@
-import React, { useCallback, useEffect, useState } from 'react';
-import format from 'date-fns/format';
-import isSameDay from 'date-fns/isSameDay';
-import isSameMonth from 'date-fns/isSameMonth';
-import isToday from 'date-fns/isToday';
+import React, { useEffect, useRef } from 'react';
 import styled from 'styled-components';
+import * as R from 'ramda';
+import { isSameDay, isSameMonth, isWithinInterval } from 'date-fns';
 import { Box, Flexbox, Typography } from '../../..';
-import { useKeyPress } from '../../../common/Hooks';
-import { getCalendar, getLocale, newDate } from '../shared/dateUtils';
-import { CalendarDayProps, Props } from './Calendar.types';
+import { getCalendar, getLocale } from '../shared/dateUtils';
+import { Props } from './Calendar.types';
+import { NUMBER_OF_VISIBLE_DAYS, NUMBER_OF_VISIBLE_WEEKS } from './constants';
+import { CalendarDay } from './CalendarDay';
 
-const StyledWeekDay = styled(Box)`
+export const StyledBox = styled(Box)`
   border: 1px solid transparent;
   min-width: ${({ theme }) => theme.spacing.unit(10)}px;
   text-align: center;
   margin-bottom: ${({ theme }) => theme.spacing.unit(2)}px;
   margin-top: ${({ theme }) => theme.spacing.unit(3)}px;
 `;
-
-const StyledCalendarDay = styled(Box)`
-  background: ${({ theme }) => theme.color.backgroundInput};
-  min-width: ${({ theme }) => theme.spacing.unit(10)}px;
-  min-height: ${({ theme }) => theme.spacing.unit(10)}px;
-  border: 1px solid transparent;
-  justify-content: center;
-  align-items: center;
-  display: flex;
-  cursor: pointer;
-
-  &.today {
-    border: 1px solid ${({ theme }) => theme.color.inputBorder};
-  }
-
-  &:hover,
-  &.hover {
-    border: 1px solid ${({ theme }) => theme.color.cta};
-  }
-
-  &.selected {
-    background: ${({ theme }) => theme.color.cta};
-    border: 1px solid transparent;
-  }
-
-  &.disabled {
-    color: ${({ theme }) => theme.color.disabledText};
-    cursor: not-allowed;
-    border: 1px solid transparent;
-  }
-`;
-
-const CalendarDay: React.FC<CalendarDayProps> = ({
-  className = '',
-  date,
-  enabled = true,
-  disabled = false,
-  locale,
-  onClick,
-  sameMonth = true,
-  hover = false,
-  selected,
-}) => {
-  const classNames: Array<string> = [
-    disabled || (typeof enabled === 'boolean' && !enabled) ? 'disabled' : '',
-    selected ? 'selected' : '',
-    !selected && hover ? 'hover' : '',
-    isToday(date) ? 'today' : '',
-  ].concat(className);
-
-  const textColor: string | undefined = [
-    disabled || (typeof enabled === 'boolean' && !enabled) ? 'label' : '',
-    !sameMonth && !selected ? 'label' : '',
-    selected ? 'buttonText' : '',
-    !selected && hover ? 'text' : '',
-  ]
-    .filter((c) => c)
-    .shift();
-
-  const handleOnClick = useCallback(() => {
-    if (disabled) {
-      return;
-    }
-
-    if (onClick) {
-      onClick(date);
-    }
-  }, [date, disabled, onClick]);
-
-  const ariaLabel = format(date, 'cccc co MMMM, yyyy', {
-    locale,
-  });
-
-  return (
-    <StyledCalendarDay
-      className={classNames.join(' ')}
-      onClick={handleOnClick}
-      aria-label={ariaLabel}
-    >
-      <Typography type="tertiary" color={(t) => t.color[textColor || 'text']}>
-        {format(date, 'd')}
-      </Typography>
-    </StyledCalendarDay>
-  );
-};
 
 const Calendar: React.FC<Props> = ({
   disableDate,
@@ -109,31 +23,86 @@ const Calendar: React.FC<Props> = ({
   viewedDate,
   onClick,
   selectedDate,
+  selectedEndDate,
+  focusedState,
 }) => {
-  const arrowLeft = useKeyPress('ArrowLeft');
-  const arrowRight = useKeyPress('ArrowRight');
-  const arrowUp = useKeyPress('ArrowUp');
-  const arrowDown = useKeyPress('ArrowDown');
-  const enter = useKeyPress('Enter');
-  const [hoverDate, setHoverDate] = useState<Date>(newDate(selectedDate || viewedDate));
+  const [[focusedWeek, focusedDay], setFocused] = focusedState;
+
+  const focusedDateObjRef = useRef<Date | null>(null);
+
+  const dateIsDisabled = (dateToCheck: Date | null) => {
+    const isEnabled = dateToCheck && enableDate && enableDate(dateToCheck);
+    const isDisabled = dateToCheck && disableDate && disableDate(dateToCheck);
+
+    if (R.isNil(isEnabled) && R.isNil(isDisabled)) return false;
+    if (R.isNil(isEnabled)) return isDisabled;
+    if (R.isNil(isDisabled)) return !isEnabled;
+    return false;
+  };
+
+  const calendarDayRefs = useRef(
+    [...Array(NUMBER_OF_VISIBLE_WEEKS)].map(() =>
+      [...Array(NUMBER_OF_VISIBLE_DAYS)].map(() => React.createRef<HTMLDivElement>()),
+    ),
+  );
+
+  const handleKeyPress = (event: React.KeyboardEvent) => {
+    event.stopPropagation();
+
+    if (R.isNil(focusedWeek) || R.isNil(focusedDay)) {
+      setFocused([0, 0]);
+    } else {
+      switch (event.key) {
+        case 'ArrowLeft':
+          if (focusedDay > 0) {
+            setFocused([focusedWeek, focusedDay - 1]);
+          } else if (focusedWeek > 0) {
+            setFocused([focusedWeek - 1, NUMBER_OF_VISIBLE_DAYS - 1]);
+          }
+          break;
+
+        case 'ArrowRight':
+          if (focusedDay < NUMBER_OF_VISIBLE_DAYS - 1) {
+            setFocused([focusedWeek, focusedDay + 1]);
+          } else if (focusedWeek < NUMBER_OF_VISIBLE_WEEKS - 1) {
+            setFocused([focusedWeek + 1, 0]);
+          }
+          break;
+
+        case 'ArrowUp':
+          if (focusedWeek > 0) {
+            setFocused([focusedWeek - 1, focusedDay]);
+          }
+          break;
+
+        case 'ArrowDown':
+          if (focusedWeek < NUMBER_OF_VISIBLE_WEEKS - 1) {
+            setFocused([focusedWeek + 1, focusedDay]);
+          }
+          break;
+
+        case ' ': // Spacebar
+        case 'Enter':
+          if (focusedDateObjRef.current && !dateIsDisabled(focusedDateObjRef.current)) {
+            onClick(new Date(focusedDateObjRef.current));
+          }
+          break;
+
+        default:
+          break;
+      }
+    }
+  };
 
   useEffect(() => {
-    if (arrowLeft) {
-      hoverDate.setDate(hoverDate.getDate() - 1);
-      setHoverDate(hoverDate);
-    } else if (arrowRight) {
-      hoverDate.setDate(hoverDate.getDate() + 1);
-      setHoverDate(hoverDate);
-    } else if (arrowUp) {
-      hoverDate.setDate(hoverDate.getDate() - 7);
-      setHoverDate(hoverDate);
-    } else if (arrowDown) {
-      hoverDate.setDate(hoverDate.getDate() + 7);
-      setHoverDate(hoverDate);
-    } else if (enter) {
-      onClick(hoverDate);
+    if (
+      !R.isNil(focusedWeek) &&
+      !R.isNil(focusedDay) &&
+      !R.isNil(calendarDayRefs.current[focusedWeek][focusedDay].current)
+    ) {
+      calendarDayRefs.current[focusedWeek][focusedDay].current?.focus();
     }
-  }, [hoverDate, arrowLeft, arrowRight, arrowUp, arrowDown, enter, onClick, setHoverDate]);
+  }, [focusedDay, focusedWeek]);
 
   const localeObj = getLocale(locale);
   const calendar = getCalendar(viewedDate, {
@@ -145,25 +114,43 @@ const Calendar: React.FC<Props> = ({
       <Flexbox container aria-hidden>
         {calendar.weekDays.map((n) => (
           <Flexbox item justifyContent="center" alignItems="center" key={n}>
-            <StyledWeekDay>
+            <StyledBox>
               <Typography type="tertiary">{n}</Typography>
-            </StyledWeekDay>
+            </StyledBox>
           </Flexbox>
         ))}
       </Flexbox>
-      {calendar.dates.map((week) => (
+      {calendar.dates.map((week, weekIndex) => (
         <Flexbox container key={week.toString()}>
-          {week.map((d) => (
+          {week.map((day, dayIndex) => (
             <CalendarDay
-              key={d.toString()}
-              date={d}
-              enabled={enableDate && enableDate(d)}
-              disabled={disableDate && disableDate(d)}
-              onClick={() => onClick(d)}
-              selected={selectedDate && isSameDay(selectedDate, d)}
-              sameMonth={isSameMonth(viewedDate, d)}
+              ref={calendarDayRefs.current[weekIndex][dayIndex]}
+              onFocus={() => {
+                setFocused([weekIndex, dayIndex]);
+                focusedDateObjRef.current = day;
+              }}
+              key={day.toString()}
+              date={day}
+              disabled={!!dateIsDisabled(day)}
+              onClick={() => {
+                if (!dateIsDisabled(day)) onClick(day);
+              }}
+              onKeyDown={handleKeyPress}
+              selected={
+                (selectedDate && isSameDay(selectedDate, day)) ||
+                (selectedEndDate && isSameDay(selectedEndDate, day))
+              }
+              sameMonth={isSameMonth(viewedDate, day)}
               locale={localeObj}
-              hover={hoverDate && isSameDay(hoverDate, d)}
+              isWithinRange={(() => {
+                if (selectedEndDate && selectedDate < selectedEndDate)
+                  return isWithinInterval(day, { start: selectedDate, end: selectedEndDate });
+                if (selectedEndDate && selectedDate > selectedEndDate)
+                  return isWithinInterval(day, { start: selectedEndDate, end: selectedDate });
+                return false;
+              })()}
+              isFirstDay={weekIndex === 0 && dayIndex === 0}
+              isLastDay={weekIndex === calendar.dates.length - 1 && dayIndex === week.length - 1}
             />
           ))}
         </Flexbox>

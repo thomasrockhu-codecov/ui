@@ -57,7 +57,7 @@ const SelectMonth: React.FC<Props> = ({ id, locale, viewedDate, onChange }) => {
           <Flexbox container data-testid="datepicker-select-month">
             <Flexbox item>
               <Box pr={1}>
-                <Typography weight="bold">
+                <Typography type="primary" weight="semibold">
                   {capitalize(format(viewedDate, 'MMMM', opts))}
                 </Typography>
               </Box>

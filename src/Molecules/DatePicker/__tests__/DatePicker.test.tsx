@@ -4,6 +4,7 @@ import '@testing-library/jest-dom/extend-expect';
 import { advanceTo, clear } from 'jest-date-mock';
 import { DatePicker } from '../DatePicker';
 import { PageProviders } from '../../../common/testUtils';
+import theme from '../../../theme';
 
 afterEach(cleanup);
 
@@ -180,8 +181,7 @@ test('Disable certain dates', async () => {
 
   const date = getByText('20');
   fireEvent.click(date);
-
-  expect(date.parentElement.className).toContain('disabled');
+  expect(date.parentElement).toHaveStyle('cursor: not-allowed;');
 });
 
 test('Select previous date with arrow left', async () => {
@@ -193,7 +193,12 @@ test('Select previous date with arrow left', async () => {
 
   const { getByTestId } = render(
     <PageProviders>
-      <DatePicker id={INPUT_ID} label="Label" onChange={onChange} />
+      <DatePicker
+        id={INPUT_ID}
+        selectedDate={new Date(2020, 8, 29, 0, 0, 0)}
+        label="Label"
+        onChange={onChange}
+      />
     </PageProviders>,
   );
 
@@ -226,7 +231,12 @@ test('Select next date with arrow right', async () => {
 
   const { getByTestId } = render(
     <PageProviders>
-      <DatePicker id={INPUT_ID} label="Label" onChange={onChange} />
+      <DatePicker
+        id={INPUT_ID}
+        selectedDate={new Date(2020, 8, 29, 0, 0, 0)}
+        label="Label"
+        onChange={onChange}
+      />
     </PageProviders>,
   );
 
@@ -259,7 +269,12 @@ test('Select previous week date with arrow up', async () => {
 
   const { getByTestId } = render(
     <PageProviders>
-      <DatePicker id={INPUT_ID} label="Label" onChange={onChange} />
+      <DatePicker
+        id={INPUT_ID}
+        selectedDate={new Date(2020, 8, 29, 0, 0, 0)}
+        label="Label"
+        onChange={onChange}
+      />
     </PageProviders>,
   );
 
@@ -283,7 +298,7 @@ test('Select previous week date with arrow up', async () => {
   });
 });
 
-test('Select next week date with arrow up', async () => {
+test('Select next week date with arrow down', async () => {
   const INPUT_ID = 'datepicker-input';
   const onChange = (date: Date) => {
     expect(date.getMonth()).toBe(9);
@@ -292,7 +307,12 @@ test('Select next week date with arrow up', async () => {
 
   const { getByTestId } = render(
     <PageProviders>
-      <DatePicker id={INPUT_ID} label="Label" onChange={onChange} />
+      <DatePicker
+        id={INPUT_ID}
+        selectedDate={new Date(2020, 8, 29, 0, 0, 0)}
+        label="Label"
+        onChange={onChange}
+      />
     </PageProviders>,
   );
 
@@ -328,10 +348,11 @@ test('Enter date manually', async () => {
     </PageProviders>,
   );
 
-  const input = getByTestId(INPUT_ID);
-  fireEvent.focus(input);
-  fireEvent.change(input, { target: { value: '19/08/2020' } });
+  const inputElement = getByTestId(INPUT_ID);
+  fireEvent.focus(inputElement);
+  fireEvent.change(inputElement, { target: { value: '19/08/2020' } });
+  fireEvent.keyDown(inputElement, { key: 'Enter', code: 'Enter' });
 
-  const date = getByText('19');
-  expect(date.parentElement.className).toContain('selected');
+  const dateElement = getByText('19');
+  expect(dateElement.parentElement).toHaveStyle(`background: ${theme.color.cta}`);
 });

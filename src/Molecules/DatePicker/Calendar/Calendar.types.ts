@@ -1,14 +1,22 @@
+export type EdgeDay = 'FIRST_DAY' | 'LAST_DAY';
+
 export type CalendarDayProps = {
-  className?: string | Array<string>;
+  className?: string;
   date: Date;
   disabled?: boolean;
   enabled?: boolean;
-  hover?: boolean;
   locale: any;
   onClick?: (date: Date) => void;
+  onKeyDown: (event: React.KeyboardEvent) => void;
+  onFocus: () => void;
   sameMonth?: boolean;
   selected?: boolean;
+  isWithinRange?: boolean;
+  isFirstDay?: boolean;
+  isLastDay?: boolean;
 };
+
+type FocusedState = [number | null, number | null];
 
 export type Props = {
   disableDate?: (date: Date) => boolean;
@@ -17,4 +25,6 @@ export type Props = {
   viewedDate: Date;
   onClick: (date: Date) => void;
   selectedDate: Date;
+  selectedEndDate?: Date;
+  focusedState: [FocusedState, React.Dispatch<React.SetStateAction<FocusedState>>];
 };
