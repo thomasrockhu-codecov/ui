@@ -1,7 +1,8 @@
 import { action } from '@storybook/addon-actions';
-import { isSameWeek } from 'date-fns';
-import React from 'react';
+import { add, isSameWeek } from 'date-fns';
+import React, { useState } from 'react';
 import DatePicker from '.';
+import { Button, Flexbox } from '../..';
 import { RANGE_DATE_PICKER } from './shared/constants';
 
 export default {
@@ -43,6 +44,36 @@ export const SameWeekEnabled = () => {
       enableDate={(date) => isSameWeek(dateNow, date)}
       onChange={action('onChange')}
     />
+  );
+};
+
+export const Controlled = () => {
+  const [startDate, setStartDate] = useState(new Date());
+  const [endDate, setEndDate] = useState(add(startDate, { days: 4 }));
+
+  return (
+    <>
+      <Flexbox container gutter={2}>
+        <Flexbox item>
+          <Button onClick={() => setStartDate(add(startDate, { days: 1 }))}>Next Date</Button>
+        </Flexbox>
+        <Flexbox item>
+          <Button onClick={() => setEndDate(add(endDate, { days: 1 }))}>Next End Date</Button>
+        </Flexbox>
+      </Flexbox>
+      <DatePicker
+        id="controlled"
+        variant={RANGE_DATE_PICKER}
+        label="Label"
+        selectedDate={startDate}
+        selectedEndDate={endDate}
+        onChange={(selectedDate, selectedEndDate) => {
+          setStartDate(selectedDate);
+          if (selectedEndDate) setEndDate(selectedEndDate);
+          action('onChange');
+        }}
+      />
+    </>
   );
 };
 

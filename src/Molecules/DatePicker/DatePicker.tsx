@@ -1,4 +1,4 @@
-import React, { useRef, useState, useCallback, useEffect } from 'react';
+import React, { useRef, useState, useCallback, useEffect, useMemo } from 'react';
 import styled, { useTheme } from 'styled-components';
 import format from 'date-fns/format';
 import { useIntl } from 'react-intl';
@@ -54,6 +54,7 @@ export const DatePicker = (React.forwardRef<HTMLDivElement, Props>((props, ref) 
     open: openProp = false,
     selectedDate: selectedDateProp,
     selectedEndDate: selectedEndDateProp,
+    inputValue: inputValueProp,
     variant = REGULAR_DATE_PICKER,
     width = 78,
     inputSize,
@@ -79,9 +80,12 @@ export const DatePicker = (React.forwardRef<HTMLDivElement, Props>((props, ref) 
   const { locale } = useIntl();
   const dateFormat = getDateFormat(locale);
 
-  const options = {
-    locale: getLocale(locale),
-  };
+  const options = useMemo(
+    () => ({
+      locale: getLocale(locale),
+    }),
+    [locale],
+  );
 
   const initialInputValue = selectedDateProp ? format(selectedDateProp, dateFormat, options) : '';
 
@@ -89,7 +93,7 @@ export const DatePicker = (React.forwardRef<HTMLDivElement, Props>((props, ref) 
   const [viewedDate, setViewedDate] = useState<Date>(selectedDateProp || startOfDay(new Date()));
   const [selectedDate, setSelectedDate] = useState<Date | null>(selectedDateProp || null);
   const [selectedEndDate, setSelectedEndDate] = useState<Date | null>(selectedEndDateProp || null);
-  const [inputValue, setInputValue] = useState<string>(initialInputValue);
+  const [inputValue, setInputValue] = useState<string>(inputValueProp || initialInputValue);
 
   const focusedState = useState<[number | null, number | null]>([null, null]);
   const setFocused = focusedState[1];
@@ -97,6 +101,32 @@ export const DatePicker = (React.forwardRef<HTMLDivElement, Props>((props, ref) 
   useEffect(() => {
     setOpen(openProp);
   }, [openProp]);
+
+  useEffect(() => {
+    if (selectedDateProp) setSelectedDate(selectedDateProp);
+    if (selectedEndDateProp) setSelectedEndDate(selectedEndDateProp);
+    if (inputValueProp) {
+      setInputValue(inputValueProp);
+    } else {
+      const controlledInputValue = (() => {
+        if (variant === REGULAR_DATE_PICKER && selectedDateProp) {
+          return format(selectedDateProp, dateFormat, options);
+        }
+        if (variant === RANGE_DATE_PICKER && selectedDateProp) {
+          return !selectedEndDateProp
+            ? `${format(selectedDateProp, dateFormat, options)} - `
+            : `${format(selectedDateProp, dateFormat, options)} - ${format(
+                selectedEndDateProp,
+                dateFormat,
+                options,
+              )}`;
+        }
+        return '';
+      })();
+
+      setInputValue(controlledInputValue);
+    }
+  }, [dateFormat, inputValueProp, options, selectedDateProp, selectedEndDateProp, variant]);
 
   useEffect(() => {
     if (!inputValue) {

@@ -1,7 +1,8 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { action } from '@storybook/addon-actions';
-import { isSameWeek } from 'date-fns';
+import { add, isSameWeek } from 'date-fns';
 import { DatePicker } from './DatePicker';
+import { Button } from '../..';
 
 export default {
   title: 'Molecules / DatePicker',
@@ -13,14 +14,14 @@ export default {
 const dateNow = new Date();
 
 export const Default = () => {
-  return <DatePicker id="input-id" label="Label" onChange={action('onChange')} />;
+  return <DatePicker id="input-id" label="Default" onChange={action('onChange')} />;
 };
 
 export const SameWeekDisabled = () => {
   return (
     <DatePicker
       id="disable-dates-input"
-      label="Label"
+      label="Disabled dates on same week"
       disableDate={(date) => isSameWeek(dateNow, date)}
       onChange={action('onChange')}
     />
@@ -31,10 +32,29 @@ export const SameWeekEnabled = () => {
   return (
     <DatePicker
       id="enable-dates-input"
-      label="Label"
+      label="Enabled dates on same week"
       enableDate={(date) => isSameWeek(dateNow, date)}
       onChange={action('onChange')}
     />
+  );
+};
+
+export const Controlled = () => {
+  const [date, setDate] = useState(new Date());
+
+  return (
+    <>
+      <Button onClick={() => setDate(add(date, { days: 1 }))}>Next Date</Button>
+      <DatePicker
+        id="controlled"
+        label="Label"
+        selectedDate={date}
+        onChange={(selectedDate) => {
+          setDate(selectedDate);
+          action('onChange');
+        }}
+      />
+    </>
   );
 };
 

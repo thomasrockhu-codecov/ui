@@ -17,6 +17,7 @@ export type Props = {
   id: string;
   selectedDate?: Date;
   selectedEndDate?: Date;
+  inputValue?: string;
   variant?: DatePickerVariant;
   inputSize?: 's';
   width?: number;

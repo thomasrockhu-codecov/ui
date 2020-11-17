@@ -142,10 +142,13 @@ const Calendar: React.FC<Props> = ({
               }
               sameMonth={isSameMonth(viewedDate, day)}
               locale={localeObj}
-              withinRange={
-                selectedEndDate &&
-                isWithinInterval(day, { start: selectedDate, end: selectedEndDate })
-              }
+              withinRange={(() => {
+                if (selectedEndDate && selectedDate < selectedEndDate)
+                  return isWithinInterval(day, { start: selectedDate, end: selectedEndDate });
+                if (selectedEndDate && selectedDate > selectedEndDate)
+                  return isWithinInterval(day, { start: selectedEndDate, end: selectedDate });
+                return false;
+              })()}
               isFirstDay={weekIndex === 0 && dayIndex === 0}
               isLastDay={weekIndex === calendar.dates.length - 1 && dayIndex === week.length - 1}
             />
