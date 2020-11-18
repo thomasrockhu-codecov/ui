@@ -10,6 +10,8 @@ const useOverflow = (ref: React.RefObject<HTMLElement>, deps: React.ReactNode = 
       }
     };
 
+    checkIfOverflowing();
+
     window.addEventListener('resize', checkIfOverflowing);
     return () => window.removeEventListener('resize', checkIfOverflowing);
   }, [ref.current, deps]);
