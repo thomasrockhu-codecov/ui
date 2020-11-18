@@ -2,7 +2,7 @@ import React, { useRef, useState, useCallback, useEffect, useMemo } from 'react'
 import styled, { useTheme } from 'styled-components';
 import format from 'date-fns/format';
 import { useIntl } from 'react-intl';
-import { closestTo, isAfter, isSameDay, startOfDay } from 'date-fns';
+import { isBefore, isSameDay, startOfDay } from 'date-fns';
 import { Props } from './DatePicker.types';
 
 /**
@@ -151,13 +151,11 @@ export const DatePicker = (React.forwardRef<HTMLDivElement, Props>((props, ref) 
       const [startDate, endDate] = ((): [Date, Date | null] => {
         if (!selectedDate) return [date, null];
 
-        const swapDate = !selectedEndDate && !isAfter(date, selectedDate);
-        const moveSelectedDate =
-          selectedEndDate &&
-          isSameDay(selectedDate, closestTo(date, [selectedEndDate, selectedDate]));
-
+        if (selectedDate && isBefore(date, selectedDate)) return [date, selectedEndDate];
+        const swapDate = !selectedEndDate && isBefore(date, selectedDate);
         if (swapDate) return [date, selectedDate];
-        if (moveSelectedDate) return [date, selectedEndDate];
+        if (selectedDate) return [selectedDate, date];
+
         return [selectedDate, date];
       })();
 
