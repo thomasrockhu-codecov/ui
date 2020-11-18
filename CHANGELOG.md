@@ -1,3 +1,10 @@
+## [4.9.1](https://github.com/nordnet/ui/compare/v4.9.0...v4.9.1) (2020-11-18)
+
+
+### Bug Fixes
+
+* 🐛 date picker range click handling ([9936f2f](https://github.com/nordnet/ui/commit/9936f2f))
+
 # [4.9.0](https://github.com/nordnet/ui/compare/v4.8.0...v4.9.0) (2020-11-17)
 
 
