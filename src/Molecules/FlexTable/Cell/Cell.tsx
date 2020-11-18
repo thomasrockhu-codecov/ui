@@ -5,7 +5,6 @@ import { Flexbox } from '../../..';
 import { useFlexCellProps } from '../shared/ColumnProvider';
 import { CellComponent } from './Cell.types';
 import { TextWrapper } from './TextWrapper';
-import { useFlexTable } from '../shared/FlexTableProvider';
 
 const StyledFlexbox = styled(Flexbox)`
   overflow: hidden;
@@ -13,20 +12,15 @@ const StyledFlexbox = styled(Flexbox)`
 
 const Cell: CellComponent = (props) => {
   const { children, columnId, className } = props;
-  const { fontSize, sm, md, lg, xl } = useFlexTable();
   const flexProps = useFlexCellProps(props);
 
   return (
     <StyledFlexbox className={className} role="cell" {...flexProps}>
       {isElement(children) && children}
       {isFunction(children)
-        ? children({ columnId, fontSize, sm, md, lg, xl })
+        ? children({ columnId })
         : // Truncate? exists on CellComponent through TextWrapper props
-          !isElement(children) && (
-            <TextWrapper fontSize={fontSize} sm={sm} md={md} lg={lg} xl={xl}>
-              {children}
-            </TextWrapper>
-          )}
+          !isElement(children) && <TextWrapper>{children}</TextWrapper>}
     </StyledFlexbox>
   );
 };

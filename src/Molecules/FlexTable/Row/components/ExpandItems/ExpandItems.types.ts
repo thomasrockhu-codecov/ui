@@ -27,7 +27,12 @@ export type ExpandItemMediaConfigurableProps = {
   hidden?: boolean;
 } & MediaRelatedProps<{ fontSize: FontSize; hidden?: boolean }>;
 
-type TextProps = { fontSize: FontSize; color?: ColorFn } & MediaRelatedProps<{
+type TextProps = {
+  className?: string;
+  fontSize: FontSize;
+  color?: ColorFn;
+  weight?: string;
+} & MediaRelatedProps<{
   fontSize: FontSize;
 }>;
 

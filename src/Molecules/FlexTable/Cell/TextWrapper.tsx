@@ -1,20 +1,15 @@
 import React from 'react';
 import { StyledTruncateTooltip } from '../shared';
-import { Text } from '../Row/components/ExpandItems';
-import { TextWrapperComponent } from '../Row/components/ExpandItems/ExpandItems.types';
+import Text from '../shared/TextWrapper/Text';
 
-export const TextWrapper: TextWrapperComponent = ({
-  fontSize = 'm',
-  sm,
-  md,
-  lg,
-  xl,
-  truncate = true,
-  children,
-}) => {
+export const TextWrapper: React.FC<{
+  className?: string;
+  truncate?: boolean;
+  children: React.ReactNode;
+}> = ({ className, truncate = true, children }) => {
   if (!truncate) {
     return (
-      <Text fontSize={fontSize} sm={sm} md={md} lg={lg} xl={xl} color={(t) => t.color.text}>
+      <Text className={className} color={(t) => t.color.text}>
         {children}
       </Text>
     );
@@ -22,7 +17,7 @@ export const TextWrapper: TextWrapperComponent = ({
 
   return (
     <StyledTruncateTooltip label={children}>
-      <Text fontSize={fontSize} sm={sm} md={md} lg={lg} xl={xl} color={(t) => t.color.text}>
+      <Text className={className} color={(t) => t.color.text}>
         {children}
       </Text>
     </StyledTruncateTooltip>

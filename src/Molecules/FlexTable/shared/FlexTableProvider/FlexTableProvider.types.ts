@@ -1,6 +1,6 @@
 import { Density, FontSize, MediaRelatedProps } from '../shared.types';
 
-type FlexTableState = {
+export type FlexTableState = {
   /**
    * Set vertical padding for rows.
    * @default 'm'
@@ -28,7 +28,8 @@ type FlexTableState = {
   expandable: boolean;
 };
 
-export type Props = MediaRelatedProps<FlexTableState> & FlexTableState;
+// TODO: `& FlexTableState` is kept only for backwards compatibility, it should be removed once all consumers are migrated
+export type Props = { xs?: FlexTableState } & MediaRelatedProps<FlexTableState> & FlexTableState;
 
 export type FlexTableContextProps = Props | undefined;
 

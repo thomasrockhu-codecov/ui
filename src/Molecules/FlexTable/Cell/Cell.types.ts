@@ -1,6 +1,6 @@
 import React, { ReactNode } from 'react';
 import { FontSize, Density, FlexPropsType } from '../shared/shared.types';
-import { TextWrapperComponent } from '../Row/components/ExpandItems/ExpandItems.types';
+import { TextWrapper } from './TextWrapper';
 
 type RenderPropArguments = { density: Density; fontSize: FontSize; columnId: string };
 type RenderFunc = (props: RenderPropArguments) => ReactNode;
@@ -14,24 +14,10 @@ export type Props = {
   columnId: string;
 } & FlexPropsType;
 
-export type TextWrapperProps = {
-  /**
-   * Set font size
-   * @default 'm'
-   */
-  fontSize?: FontSize;
-  /**
-   * Truncate the text inside and a tooltip on hover when truncated
-   * @default true
-   */
-  truncate?: boolean;
-};
+export type CellComponents = { TextWrapper: typeof TextWrapper };
 
-export type CellComponents = { TextWrapper: TextWrapperComponent };
-
-export type CellComponent = React.FC<Props & TextWrapperProps> & CellComponents;
-
-export type InnerCellComponent = React.FC<Props & TextWrapperProps & { flexProps: FlexPropsType }>;
+export type CellComponent = React.FC<Props & React.ComponentProps<typeof TextWrapper>> &
+  CellComponents;
 
 type ExpandCellProps = {
   /**

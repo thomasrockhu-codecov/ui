@@ -42,8 +42,17 @@ const StyledTypography = styled(Typography)<{
     p.$xl ? getStylesForSize('xl') : ''}
 `;
 
-const Text: TextComponent = ({ fontSize, sm, md, lg, xl, color, children }) => (
-  <StyledTypography color={color} $fontSize={fontSize} $sm={sm} $md={md} $lg={lg} $xl={xl}>
+const Text: TextComponent = ({ className, color, weight, fontSize, sm, md, lg, xl, children }) => (
+  <StyledTypography
+    className={className}
+    color={color}
+    weight={weight}
+    $fontSize={fontSize}
+    $sm={sm}
+    $md={md}
+    $lg={lg}
+    $xl={xl}
+  >
     {children}
   </StyledTypography>
 );

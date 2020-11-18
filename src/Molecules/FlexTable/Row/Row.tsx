@@ -46,22 +46,24 @@ type StyledRowProps = {
   $xl: any;
 } & MediaRelatedProps<{ density: Density; expandable: boolean; columnDistance: number }>;
 
-const getStyles = (size: string) => css<StyledRowProps>`
-  ${(p) => (p[`$${size}`].density ? getDensityStyles(p[`$${size}`].density) : '')}
-  ${(p) =>
-    p[`$${size}`].expandable
-      ? getExpandableStyles({ expanded: p.$expanded, theme: p.theme, ...p[`$${size}`] })
-      : ''}
-`;
+const getStyles = (size: string, p: StyledRowProps & { theme: Theme }) => {
+  return `
+    ${p[`$${size}`].density ? getDensityStyles(p[`$${size}`].density) : ''}
+    ${
+      p[`$${size}`].expandable
+        ? getExpandableStyles({ expanded: p.$expanded, theme: p.theme, ...p[`$${size}`] })
+        : ''
+    }
+  `;
+};
 
 const getStylesForSize = (size: string) => css<StyledRowProps>`
   ${(p) => {
+    const styles = getStyles(size, p);
     if (size !== 'xs') {
-      return `${p.theme.media.greaterThan(p.theme.breakpoints[size])} {
-        ${getStyles(size)}
-      }`;
+      return `${p.theme.media.greaterThan(p.theme.breakpoints[size])} { ${styles} }`;
     }
-    return getStyles('xs');
+    return styles;
   }}
 `;
 
@@ -140,7 +142,18 @@ const Row: RowComponent = ({
   xl: xlExpandProps,
   ...htmlProps
 }) => {
-  const { density, columnDistance: gutter, expandable, sm, md, lg, xl } = useFlexTable();
+  const { xs: xsRow, sm: smRow, md: mdRow, lg: lgRow, xl: xlRow } = useFlexTable(
+    'density',
+    'expandable',
+  );
+  const {
+    xs: xsFlexbox,
+    sm: smFlexbox,
+    md: mdFlexbox,
+    lg: lgFlexbox,
+    xl: xlFlexbox,
+  } = useFlexTable('columnDistance');
+
   const controlledExpand = expanded !== undefined;
   const [expand, setExpand] = useState(controlledExpand ? expanded : initiallyExpanded);
 
@@ -166,29 +179,29 @@ const Row: RowComponent = ({
         $hideSeparator={hideSeparator}
         $hoverHighlight={hoverHighlight}
         $separatorColor={separatorColor}
-        $xs={{ density, expandable }}
-        $sm={sm}
-        $md={md}
-        $lg={lg}
-        $xl={xl}
+        $xs={xsRow}
+        $sm={smRow}
+        $md={mdRow}
+        $lg={lgRow}
+        $xl={xlRow}
         container
         role="row"
         className={className}
         alignItems="center"
-        gutter={gutter}
-        sm={{ gutter: sm?.columnDistance }}
-        md={{ gutter: md?.columnDistance }}
-        lg={{ gutter: lg?.columnDistance }}
-        xl={{ gutter: xl?.columnDistance }}
+        gutter={xsFlexbox?.columnDistance}
+        sm={{ gutter: smFlexbox?.columnDistance }}
+        md={{ gutter: mdFlexbox?.columnDistance }}
+        lg={{ gutter: lgFlexbox?.columnDistance }}
+        xl={{ gutter: xlFlexbox?.columnDistance }}
         {...htmlProps}
       >
         {children}
         <ExpandElement
-          expandable={expandable}
-          sm={sm}
-          md={md}
-          lg={lg}
-          xl={xl}
+          expandable={xsRow?.expandable}
+          sm={smRow}
+          md={mdRow}
+          lg={lgRow}
+          xl={xlRow}
           isContent={isContent}
           expanded={expand}
           onExpandToggle={onExpandToggleClick}
