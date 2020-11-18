@@ -11,22 +11,26 @@ import { ExpandArea, ExpandElement } from './components';
 import { Theme } from '../../../theme/theme.types';
 
 const getDensityStyles = (density: Density) => `
-  padding-top: ${getDensityPaddings(density)}px
-  padding-bottom: ${getDensityPaddings(density)}px
+  padding-top: ${getDensityPaddings(density)}px;
+  padding-bottom: ${getDensityPaddings(density)}px;
 `;
 
 const getExpandableStyles = (p: { expandable: boolean; expanded: boolean } & { theme: Theme }) => `
   padding-right: ${p.expandable ? p.theme.spacing.unit(2) : p.theme.spacing.unit(1)}px;
   padding-left: ${p.expandable ? p.theme.spacing.unit(1.5) : p.theme.spacing.unit(0.5)}px;
 
-  border-left: ${p.theme.spacing.unit(0.5)}px solid
-    ${p.expanded && p.expandable ? p.theme.color.cta : 'transparent'};
-`;
+  border-left: ${p.theme.spacing.unit(0.5)}px solid ${
+  p.expanded && p.expandable ? p.theme.color.cta : 'transparent'
+};
+   
+  & > * {
+    &:first-child {
+      padding-left: 0;
+    }
 
-const getStylesForSize = (size: string) => css<StyledRowProps>`
-  ${(p) => p.theme.media.greaterThan(p.theme.breakpoints[size])} {
-    ${(p) => (p[`$${size}`].density ? getDensityStyles(p[`$${size}`].density) : '')}
-    ${(p) => (p[`$${size}`].expandable ? getExpandableStyles({ ...p, ...p[`$${size}`] }) : '')}
+    &:nth-last-child(${p.expandable ? 1 : 2}) {
+      padding-right: 0;
+    }
   }
 `;
 
@@ -35,55 +39,57 @@ type StyledRowProps = {
   $expanded: boolean;
   $separatorColor: ColorFn;
   $hoverHighlight: boolean;
-  $density: Density;
-  $expandable: boolean;
+  $xs: any;
   $sm: any;
   $md: any;
   $lg: any;
   $xl: any;
 } & MediaRelatedProps<{ density: Density; expandable: boolean; columnDistance: number }>;
 
+const getStyles = (size: string) => css<StyledRowProps>`
+  ${(p) => (p[`$${size}`].density ? getDensityStyles(p[`$${size}`].density) : '')}
+  ${(p) =>
+    p[`$${size}`].expandable
+      ? getExpandableStyles({ expanded: p.$expanded, theme: p.theme, ...p[`$${size}`] })
+      : ''}
+`;
+
+const getStylesForSize = (size: string) => css<StyledRowProps>`
+  ${(p) => {
+    if (size !== 'xs') {
+      return `${p.theme.media.greaterThan(p.theme.breakpoints[size])} {
+        ${getStyles(size)}
+      }`;
+    }
+    return getStyles('xs');
+  }}
+`;
+
 /* the cells are padded by row gutter 1 unit (4px) */
 const StyledRow = styled(Flexbox)<StyledRowProps>`
   background: ${(p) => p.theme.color.tableRowBackground};
   ${(p) =>
     !p.$hideSeparator && !p.$expanded
-      ? `border-bottom: 1px solid ${p.$separatorColor(p.theme)}`
-      : ''};
-
-  padding-right: ${(p) => (p.$expandable ? p.theme.spacing.unit(2) : p.theme.spacing.unit(1))}px;
-  padding-left: ${(p) => (p.$expandable ? p.theme.spacing.unit(1.5) : p.theme.spacing.unit(0.5))}px;
-
-  border-left: ${(p) => p.theme.spacing.unit(0.5)}px solid
-    ${(p) => (p.$expanded && p.$expandable ? p.theme.color.cta : 'transparent')};
+      ? `border-bottom: 1px solid ${p.$separatorColor(p.theme)};`
+      : ''}
 
   ${(p) =>
     p.$hoverHighlight &&
     !p.$expanded &&
     `&:hover {
       background: ${p.theme.color.tableRowHover};
-    }`};
-
-  padding-top: ${(p) => getDensityPaddings(p.$density)}px;
-  padding-bottom: ${(p) => getDensityPaddings(p.$density)}px;
+    }`}
 
   margin-right: 0;
   margin-left: 0;
 
-  & > * {
-    &:first-child {
-      padding-left: 0;
-    }
-
-    &:last-child {
-      padding-right: 0;
-    }
-  }
+  ${(p) => (p.$xs ? getStylesForSize('xs') : '')}
   ${(p) => (p.$sm ? getStylesForSize('sm') : '')}
-  ${(p) => (p.$md ? getStylesForSize('md') : '')}
   ${(p) =>
-    p.$lg ? getStylesForSize('lg') : ''}
-  ${(p) => (p.$xl ? getStylesForSize('xl') : '')}
+    p.$md ? getStylesForSize('md') : ''}
+  ${(p) => (p.$lg ? getStylesForSize('lg') : '')}
+  ${(p) =>
+    p.$xl ? getStylesForSize('xl') : ''}
 `;
 
 const StyledExpandedRow = styled('div').withConfig({
@@ -156,12 +162,11 @@ const Row: RowComponent = ({
   return (
     <>
       <StyledRow
-        $density={density}
-        $expandable={expandable}
         $expanded={!!expand}
         $hideSeparator={hideSeparator}
         $hoverHighlight={hoverHighlight}
         $separatorColor={separatorColor}
+        $xs={{ density, expandable }}
         $sm={sm}
         $md={md}
         $lg={lg}

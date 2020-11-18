@@ -1,5 +1,6 @@
 import React, { ReactNode } from 'react';
 import { FontSize, Density, FlexPropsType } from '../shared/shared.types';
+import { TextWrapperComponent } from '../Row/components/ExpandItems/ExpandItems.types';
 
 type RenderPropArguments = { density: Density; fontSize: FontSize; columnId: string };
 type RenderFunc = (props: RenderPropArguments) => ReactNode;
@@ -25,8 +26,6 @@ export type TextWrapperProps = {
    */
   truncate?: boolean;
 };
-
-export type TextWrapperComponent = React.FC<TextWrapperProps>;
 
 export type CellComponents = { TextWrapper: TextWrapperComponent };
 

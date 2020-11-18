@@ -16,13 +16,13 @@ type StyledExpandCellProps = {
 
 const getStylesForSize = (size: string) => css<StyledExpandCellProps>`
   ${(p) => p.theme.media.greaterThan(p.theme.breakpoints[size])} {
-    ${(p) => (p[`$${size}`].expandable === true ? 'display: unset;' : '')}
+    ${(p) => (p[`$${size}`].expandable === true ? 'display: flex;' : '')}
     ${(p) => (p[`$${size}`].expandable === false ? 'display: none;' : '')}
   }
 `;
 
 const StyledExpandCell = styled(ExpandCell)<StyledExpandCellProps>`
-  ${(p) => (p.$expandable === true ? 'display: unset;' : '')}
+  ${(p) => (p.$expandable === true ? 'display: flex;' : '')}
   ${(p) => (p.$expandable === false ? 'display: none;' : '')}
   ${(p) =>
     p.$sm ? getStylesForSize('sm') : ''}

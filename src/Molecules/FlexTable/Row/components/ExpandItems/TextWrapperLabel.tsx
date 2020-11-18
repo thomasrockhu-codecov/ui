@@ -3,14 +3,15 @@ import { TruncateWithTooltip } from '../../../../..';
 import { TextWrapperComponent } from './ExpandItems.types';
 import { Text } from '.';
 
+// FIXME do we really need TextWrapperLabel and TextWrapperValue? only differnece is optional color...
 export const TextWrapperLabel: TextWrapperComponent = ({
   fontSize,
   sm,
   md,
   lg,
   xl,
-  children,
   truncate = true,
+  children,
 }) => {
   if (!truncate) {
     return (
