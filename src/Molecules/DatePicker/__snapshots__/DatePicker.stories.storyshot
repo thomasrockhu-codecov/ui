@@ -181,7 +181,7 @@ Array [
   width: 100%;
   padding: 8px;
   margin: 0;
-  line-height: inherit;
+  line-height: 40px;
   box-sizing: border-box;
   height: 40px;
   outline: none;
@@ -396,7 +396,7 @@ exports[`Storyshots Molecules / DatePicker Default 1`] = `
   width: 100%;
   padding: 8px;
   margin: 0;
-  line-height: inherit;
+  line-height: 40px;
   box-sizing: border-box;
   height: 40px;
   outline: none;
@@ -610,7 +610,7 @@ exports[`Storyshots Molecules / DatePicker Disabled Input 1`] = `
   width: 100%;
   padding: 8px;
   margin: 0;
-  line-height: inherit;
+  line-height: 40px;
   box-sizing: border-box;
   height: 40px;
   outline: none;
@@ -821,7 +821,7 @@ exports[`Storyshots Molecules / DatePicker Same Week Disabled 1`] = `
   width: 100%;
   padding: 8px;
   margin: 0;
-  line-height: inherit;
+  line-height: 40px;
   box-sizing: border-box;
   height: 40px;
   outline: none;
@@ -1035,7 +1035,7 @@ exports[`Storyshots Molecules / DatePicker Same Week Enabled 1`] = `
   width: 100%;
   padding: 8px;
   margin: 0;
-  line-height: inherit;
+  line-height: 40px;
   box-sizing: border-box;
   height: 40px;
   outline: none;
