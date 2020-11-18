@@ -39,7 +39,7 @@ const StatusModal: React.FC<Props> = ({ id = '', loading = false, onClose, optio
           sm={{ gutter: 7 }}
           justifyContent="center"
         >
-          {loading && <Spinner id={`${id}-spinner`} size={23} />}
+          {loading && <Spinner id={`${id}-spinner`} size={16} />}
           {status === 'SUCCESS' && (
             <Icon.CheckMarkCircle color={(t) => t.color.positive} size={23} />
           )}
