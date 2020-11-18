@@ -1,3 +1,10 @@
+## [4.10.1](https://github.com/nordnet/ui/compare/v4.10.0...v4.10.1) (2020-11-18)
+
+
+### Bug Fixes
+
+* run check also without resizing ([71856c2](https://github.com/nordnet/ui/commit/71856c2))
+
 # [4.10.0](https://github.com/nordnet/ui/compare/v4.9.1...v4.10.0) (2020-11-18)
 
 
