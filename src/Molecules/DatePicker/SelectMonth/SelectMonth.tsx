@@ -43,15 +43,12 @@ const SelectMonth: React.FC<Props> = ({ id, locale, viewedDate, onChange }) => {
       // @ts-ignore
       SelectedValue: () => {
         const [state] = useSelectMachineFromContext();
-        let icon = null;
-
-        if ((state.value as any).open === 'on') {
-          icon = <Icon.ChevronUp size={2} color={(t: any) => t.color.black} />;
-        } else if (isHover) {
-          icon = <Icon.ChevronDown size={2} color={(t: any) => t.color.cta} />;
-        } else {
-          icon = <Box px={1} />;
-        }
+        const icon = (() => {
+          if ((state.value as any).open === 'on')
+            return <Icon.ChevronUp size={2} color={(t: any) => t.color.black} />;
+          if (isHover) return <Icon.ChevronDown size={2} color={(t: any) => t.color.cta} />;
+          return <Box px={1} />;
+        })();
 
         return (
           <Flexbox container data-testid="datepicker-select-month">
