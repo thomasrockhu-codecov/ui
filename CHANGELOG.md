@@ -1,3 +1,11 @@
+# [4.10.0](https://github.com/nordnet/ui/compare/v4.9.1...v4.10.0) (2020-11-18)
+
+
+### Features
+
+* add bulb in circle icon ([0a9cf3b](https://github.com/nordnet/ui/commit/0a9cf3b))
+* add correct background color ([1325842](https://github.com/nordnet/ui/commit/1325842))
+
 ## [4.9.1](https://github.com/nordnet/ui/compare/v4.9.0...v4.9.1) (2020-11-18)
 
 
