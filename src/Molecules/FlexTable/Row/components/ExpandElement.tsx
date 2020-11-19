@@ -1,35 +1,51 @@
 import React from 'react';
-import styled, { css } from 'styled-components';
+import styled from 'styled-components';
 import FlexTable from '../..';
 import { ExpandAreaProps } from '../Row.types';
 import { ExpandCell } from '../../Cell/ExpandCell';
 import { ICON_COLUMN_DEFAULT_FLEX_PROPS, COLUMN_ID_EXPAND } from '../../shared/constants';
 import { MediaRelatedProps } from '../../shared/shared.types';
+import { useFlexTable } from '../../shared/FlexTableProvider';
+import { getStylesForSizes } from '../../shared';
 
-type StyledExpandCellProps = {
-  $sm: any;
-  $md: any;
-  $lg: any;
-  $xl: any;
-  $expandable?: boolean;
+type ScreenSizeConfigurableProps = {
+  expandable: boolean;
 };
 
-const getStylesForSize = (size: string) => css<StyledExpandCellProps>`
-  ${(p) => p.theme.media.greaterThan(p.theme.breakpoints[size])} {
-    ${(p) => (p[`$${size}`].expandable === true ? 'display: flex;' : '')}
-    ${(p) => (p[`$${size}`].expandable === false ? 'display: none;' : '')}
+type StyledExpandCellProps = {
+  $xs: any;
+  $sm?: Partial<ScreenSizeConfigurableProps>;
+  $md?: Partial<ScreenSizeConfigurableProps>;
+  $lg?: Partial<ScreenSizeConfigurableProps>;
+  $xl?: Partial<ScreenSizeConfigurableProps>;
+};
+
+const getExpandableStyles = ({ expandable }: ScreenSizeConfigurableProps) => {
+  if (expandable === true) {
+    return 'display: flex;';
   }
-`;
+  if (expandable === false) {
+    return 'display: none;';
+  }
+  return '';
+};
 
 const StyledExpandCell = styled(ExpandCell)<StyledExpandCellProps>`
-  ${(p) => (p.$expandable === true ? 'display: flex;' : '')}
-  ${(p) => (p.$expandable === false ? 'display: none;' : '')}
   ${(p) =>
-    p.$sm ? getStylesForSize('sm') : ''}
-  ${(p) => (p.$md ? getStylesForSize('md') : '')}
-  ${(p) =>
-    p.$lg ? getStylesForSize('lg') : ''}
-  ${(p) => (p.$xl ? getStylesForSize('xl') : '')}
+    getStylesForSizes<
+      { xs: ScreenSizeConfigurableProps } & MediaRelatedProps<ScreenSizeConfigurableProps>
+    >(
+      {
+        xs: p.$xs,
+        sm: p.$sm,
+        md: p.$md,
+        lg: p.$lg,
+        xl: p.$xl,
+      },
+      {
+        expandable: getExpandableStyles,
+      },
+    )}
 `;
 
 export const ExpandElement: React.FC<
@@ -37,20 +53,10 @@ export const ExpandElement: React.FC<
     isContent: boolean;
     disabled?: boolean;
     setExpand: (expanded: boolean) => void;
-    expandable?: boolean;
-  } & MediaRelatedProps<{ expandable: boolean }>
-> = ({
-  isContent,
-  expanded = false,
-  onExpandToggle,
-  setExpand,
-  disabled,
-  expandable,
-  sm,
-  md,
-  lg,
-  xl,
-}) => {
+  }
+> = ({ isContent, expanded = false, onExpandToggle, setExpand, disabled }) => {
+  const { xs, sm, md, lg, xl } = useFlexTable('expandable');
+
   if (!isContent) {
     return (
       <FlexTable.Header
@@ -66,7 +72,7 @@ export const ExpandElement: React.FC<
       expanded={expanded}
       onClick={() => (onExpandToggle ? onExpandToggle(!expanded) : setExpand(!expanded))}
       disabled={disabled}
-      $expandable={expandable}
+      $xs={xs}
       $sm={sm}
       $md={md}
       $lg={lg}

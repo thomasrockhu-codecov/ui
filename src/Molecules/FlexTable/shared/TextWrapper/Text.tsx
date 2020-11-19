@@ -1,20 +1,25 @@
 import React from 'react';
-import styled, { css } from 'styled-components';
+import styled from 'styled-components';
 import { TextComponent } from './TextWrapper.types';
-import { FontSize } from '../shared.types';
+import { FontSize, MediaRelatedProps } from '../shared.types';
 import { Theme } from '../../../../theme/theme.types';
 import { Typography } from '../../../../index';
 import { useFlexTable } from '../FlexTableProvider';
+import getStylesForSizes from '../getStylesForSizes';
 
-type StyledTypographyProps = {
-  $xs: any;
-  $sm: any;
-  $md: any;
-  $lg: any;
-  $xl: any;
+type ScreenSizeConfigurableProps = {
+  fontSize: FontSize;
 };
 
-const getFontSizeStyles = (fontSize: FontSize, theme: Theme) => {
+type StyledTypographyProps = {
+  $xs: ScreenSizeConfigurableProps;
+  $sm?: Partial<ScreenSizeConfigurableProps>;
+  $md?: Partial<ScreenSizeConfigurableProps>;
+  $lg?: Partial<ScreenSizeConfigurableProps>;
+  $xl?: Partial<ScreenSizeConfigurableProps>;
+};
+
+const getFontSizeStyles = ({ fontSize, theme }: ScreenSizeConfigurableProps & { theme: Theme }) => {
   if (fontSize === 's') {
     return `
       font-size: 12px;
@@ -29,28 +34,25 @@ const getFontSizeStyles = (fontSize: FontSize, theme: Theme) => {
   `;
 };
 
-const getStyles = (size: string, p: StyledTypographyProps & { theme: Theme }) => {
-  return `${p[`$${size}`].fontSize ? getFontSizeStyles(p[`$${size}`].fontSize, p.theme) : ''}`;
-};
-
-const getStylesForSize = (size: string) => css<StyledTypographyProps>`
-  ${(p) => {
-    const styles = getStyles(size, p);
-    if (size !== 'xs') {
-      return `${p.theme.media.greaterThan(p.theme.breakpoints[size])} { ${styles} }`;
-    }
-    return styles;
-  }}
-`;
-
 const StyledTypography = styled(Typography)<StyledTypographyProps>`
-  ${getStylesForSize('xs')}
-  ${(p) => (p.$sm ? getStylesForSize('sm') : '')}
   ${(p) =>
-    p.$md ? getStylesForSize('md') : ''}
-  ${(p) => (p.$lg ? getStylesForSize('lg') : '')}
-  ${(p) =>
-    p.$xl ? getStylesForSize('xl') : ''}
+    getStylesForSizes<
+      { theme: Theme; xs: ScreenSizeConfigurableProps } & MediaRelatedProps<
+        ScreenSizeConfigurableProps
+      >
+    >(
+      {
+        theme: p.theme,
+        xs: p.$xs,
+        sm: p.$sm,
+        md: p.$md,
+        lg: p.$lg,
+        xl: p.$xl,
+      },
+      {
+        fontSize: getFontSizeStyles,
+      },
+    )}
 `;
 
 const Text: TextComponent = ({ className, color, weight, children }) => {

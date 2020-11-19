@@ -28,8 +28,7 @@ export type FlexTableState = {
   expandable: boolean;
 };
 
-// TODO: `& FlexTableState` is kept only for backwards compatibility, it should be removed once all consumers are migrated
-export type Props = { xs?: FlexTableState } & MediaRelatedProps<FlexTableState> & FlexTableState;
+export type Props = MediaRelatedProps<FlexTableState> & FlexTableState;
 
 export type FlexTableContextProps = Props | undefined;
 

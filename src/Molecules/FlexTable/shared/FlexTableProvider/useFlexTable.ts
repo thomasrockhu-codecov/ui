@@ -1,9 +1,12 @@
 import { useContext } from 'react';
 import * as R from 'ramda';
 import { FlexTableContext } from './FlexTableProvider';
-import { Props as FlexTableProviderProps, FlexTableState } from './FlexTableProvider.types';
+import { FlexTableState } from './FlexTableProvider.types';
+import { MediaRelatedProps } from '../shared.types';
 
-export const useFlexTable = (...args: Array<keyof FlexTableState>): FlexTableProviderProps => {
+type FlexTableStateReturnType = { xs: FlexTableState } & MediaRelatedProps<FlexTableState>;
+
+export const useFlexTable = (...args: Array<keyof FlexTableState>): FlexTableStateReturnType => {
   const contextData = useContext(FlexTableContext);
   if (contextData === undefined) {
     throw Error('No FlexTable provider, FlexTable rows can only be children of a FlexTable');
@@ -12,7 +15,6 @@ export const useFlexTable = (...args: Array<keyof FlexTableState>): FlexTablePro
   const { sm = {}, md = {}, lg = {}, xl = {}, ...xs } = contextData;
 
   return {
-    ...xs, // <-- TODO: `...xs` is only for backwards compatibility, it should be removed once all consumers have migrated
     xs: R.pick(args, xs),
     ...R.reject(R.isEmpty, {
       sm: R.pick(args, sm),

@@ -14,8 +14,8 @@ export type ExpandItemProps = {
 export type ExpandItems = Array<ExpandItemProps>;
 
 type Items = {
-  TextWrapperLabel: React.FC<{ fontSize: FontSize }>;
-  TextWrapperValue: React.FC<{ fontSize: FontSize }>;
+  TextWrapperLabel: React.FC;
+  TextWrapperValue: React.FC;
 };
 
 export type ExpandItemComponent = React.FC<{ item: ExpandItemProps; mobileItem?: boolean }> & Items;
@@ -23,19 +23,14 @@ export type ExpandItemComponent = React.FC<{ item: ExpandItemProps; mobileItem?:
 export type ExpandItemsComponent = React.FC<{ items: ExpandItems }>;
 
 export type ExpandItemMediaConfigurableProps = {
-  fontSize: FontSize;
   hidden?: boolean;
-} & MediaRelatedProps<{ fontSize: FontSize; hidden?: boolean }>;
+} & MediaRelatedProps<{ hidden?: boolean }>;
 
 type TextProps = {
   className?: string;
-  fontSize: FontSize;
   color?: ColorFn;
   weight?: string;
-} & MediaRelatedProps<{
-  fontSize: FontSize;
-}>;
-
+};
 export type TextComponent = React.FC<TextProps>;
 
 export type TextWrapperComponent = React.FC<TextProps & { truncate?: boolean }>;

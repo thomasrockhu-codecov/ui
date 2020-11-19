@@ -1,6 +1,5 @@
 import React from 'react';
 import styled, { css } from 'styled-components';
-import * as R from 'ramda';
 import { isElement, isFunction } from '../../../../../common/utils';
 import { Flexbox, LabeledValue } from '../../../../..';
 import {
@@ -12,8 +11,6 @@ import {
 import { Props as FlexBoxProps } from '../../../../../Atoms/Flexbox/Flexbox.types';
 import { TextWrapperLabel } from './TextWrapperLabel';
 import { TextWrapperValue } from './TextWrapperValue';
-import { FontSize, MediaRelatedProps } from '../../../shared/shared.types';
-import { useFlexTable } from '../../../shared/FlexTableProvider';
 
 type StyledFlexboxProps = {
   $sm: any;
@@ -50,25 +47,16 @@ const StyledFlexboxItem = styled(StyledFlexbox)<StyledFlexboxProps>`
   padding-bottom: ${(p) => p.theme.spacing.unit(5)}px;
 `;
 
-const ExpandRenderer: React.FC<
-  {
-    children: React.ReactNode | RenderFunc;
-    fontSize: FontSize;
-    isLabel?: boolean;
-  } & MediaRelatedProps<{ fontSize: FontSize }>
-> = ({ isLabel = false, fontSize, sm, md, lg, xl, children }) => {
+const ExpandRenderer: React.FC<{
+  children: React.ReactNode | RenderFunc;
+  isLabel?: boolean;
+}> = ({ isLabel = false, children }) => {
   const Wrapper = isLabel ? TextWrapperLabel : TextWrapperValue;
 
   return (
     <>
       {isElement(children) && children}
-      {isFunction(children)
-        ? children({ fontSize, sm, md, lg, xl })
-        : !isElement(children) && (
-            <Wrapper fontSize={fontSize} sm={sm} md={md} lg={lg} xl={xl}>
-              {children}
-            </Wrapper>
-          )}
+      {isFunction(children) ? children() : !isElement(children) && <Wrapper>{children}</Wrapper>}
     </>
   );
 };
@@ -78,7 +66,7 @@ const MobileItem: React.FC<
     label: ExpandItemProps['label'];
     value: ExpandItemProps['value'];
   } & ExpandItemMediaConfigurableProps
-> = ({ label, value, hidden, fontSize, sm, md, lg, xl }) => (
+> = ({ label, value, hidden, sm, md, lg, xl }) => (
   <StyledFlexbox
     forwardedAs="li"
     container
@@ -90,12 +78,10 @@ const MobileItem: React.FC<
     $xl={xl}
   >
     <StyledOverflowItem item flex="0 0 50%">
-      <ExpandRenderer fontSize={fontSize} isLabel>
-        {label}
-      </ExpandRenderer>
+      <ExpandRenderer isLabel>{label}</ExpandRenderer>
     </StyledOverflowItem>
     <StyledOverflowItem item flex="0 0 50%" textAlign="right">
-      <ExpandRenderer fontSize={fontSize}>{value}</ExpandRenderer>
+      <ExpandRenderer>{value}</ExpandRenderer>
     </StyledOverflowItem>
   </StyledFlexbox>
 );
@@ -105,71 +91,20 @@ const DesktopItem: React.FC<
     label: ExpandItemProps['label'];
     value: ExpandItemProps['value'];
   } & ExpandItemMediaConfigurableProps
-> = ({ label, value, hidden, fontSize, sm, md, lg, xl }) => (
+> = ({ label, value, hidden, sm, md, lg, xl }) => (
   <StyledFlexboxItem item $hidden={hidden} $sm={sm} $md={md} $lg={lg} $xl={xl}>
-    <LabeledValue
-      label={
-        <ExpandRenderer
-          fontSize={fontSize}
-          sm={{ ...R.pick(['fontSize'], sm) }}
-          md={{ ...R.pick(['fontSize'], md) }}
-          lg={{ ...R.pick(['fontSize'], lg) }}
-          xl={{ ...R.pick(['fontSize'], xl) }}
-          isLabel
-        >
-          {label}
-        </ExpandRenderer>
-      }
-    >
-      <ExpandRenderer fontSize={fontSize}>{value}</ExpandRenderer>
+    <LabeledValue label={<ExpandRenderer isLabel>{label}</ExpandRenderer>}>
+      <ExpandRenderer>{value}</ExpandRenderer>
     </LabeledValue>
   </StyledFlexboxItem>
 );
 
 export const ExpandItem: ExpandItemComponent = ({ item, mobileItem }) => {
-  const {
-    label,
-    value,
-    hidden,
-    sm: smItemProps,
-    md: mdItemProps,
-    lg: lgItemProps,
-    xl: xlItemProps,
-  } = item;
-  const {
-    fontSize,
-    sm: smTableProps = {},
-    md: mdTableProps = {},
-    lg: lgTableProps = {},
-    xl: xlTableProps = {},
-  } = useFlexTable();
-  const sm = { ...R.pick(['fontSize'], smTableProps), ...smItemProps };
-  const md = { ...R.pick(['fontSize'], mdTableProps), ...mdItemProps };
-  const lg = { ...R.pick(['fontSize'], lgTableProps), ...lgItemProps };
-  const xl = { ...R.pick(['fontSize'], xlTableProps), ...xlItemProps };
-
+  const { label, value, hidden, sm, md, lg, xl } = item;
   return mobileItem ? (
-    <MobileItem
-      label={label}
-      value={value}
-      fontSize={fontSize}
-      hidden={hidden}
-      sm={sm}
-      md={md}
-      lg={lg}
-      xl={xl}
-    />
+    <MobileItem label={label} value={value} hidden={hidden} sm={sm} md={md} lg={lg} xl={xl} />
   ) : (
-    <DesktopItem
-      label={label}
-      value={value}
-      fontSize={fontSize}
-      hidden={hidden}
-      sm={sm}
-      md={md}
-      lg={lg}
-      xl={xl}
-    />
+    <DesktopItem label={label} value={value} hidden={hidden} sm={sm} md={md} lg={lg} xl={xl} />
   );
 };
 

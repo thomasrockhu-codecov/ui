@@ -1,29 +1,15 @@
 import React from 'react';
 import { TruncateWithTooltip } from '../../../../..';
 import { TextWrapperComponent } from './ExpandItems.types';
-import { Text } from '.';
+import Text from '../../../shared/TextWrapper/Text';
 
-export const TextWrapperValue: TextWrapperComponent = ({
-  fontSize,
-  sm,
-  md,
-  lg,
-  xl,
-  truncate = true,
-  children,
-}) => {
+export const TextWrapperValue: TextWrapperComponent = ({ truncate = true, children }) => {
   if (!truncate) {
-    return (
-      <Text fontSize={fontSize} sm={sm} md={md} lg={lg} xl={xl}>
-        {children}
-      </Text>
-    );
+    return <Text>{children}</Text>;
   }
   return (
     <TruncateWithTooltip label={children}>
-      <Text fontSize={fontSize} sm={sm} md={md} lg={lg} xl={xl}>
-        {children}
-      </Text>
+      <Text>{children}</Text>
     </TruncateWithTooltip>
   );
 };
