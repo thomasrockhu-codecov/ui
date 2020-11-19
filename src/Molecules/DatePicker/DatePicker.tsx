@@ -57,6 +57,7 @@ export const DatePicker = (React.forwardRef<HTMLDivElement, Props>((props, ref) 
     inputValue: inputValueProp,
     variant = REGULAR_DATE_PICKER,
     width = 78,
+    yearSelectLength,
     inputSize,
   } = props;
 
@@ -311,6 +312,7 @@ export const DatePicker = (React.forwardRef<HTMLDivElement, Props>((props, ref) 
         locale={locale}
         onMonthChange={onMonthChange}
         onYearChange={onYearChange}
+        yearSelectLength={yearSelectLength}
       />
       <Calendar
         disableDate={disableDate}

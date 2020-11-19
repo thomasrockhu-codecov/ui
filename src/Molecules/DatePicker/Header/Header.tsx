@@ -9,13 +9,14 @@ import SelectMonth from '../SelectMonth';
 import SelectYear from '../SelectYear';
 
 const Header: React.FC<Props> = ({
-  ariaLabelPrevious = 'Previous month {date}, button',
-  ariaLabelNext = 'Next month {date}, button',
+  ariaLabelPrevious = 'Previous month {date}',
+  ariaLabelNext = 'Next month {date}',
   id,
   locale,
   viewedDate,
   onMonthChange,
   onYearChange,
+  yearSelectLength,
 }) => {
   const opts = {
     locale: getLocale(locale),
@@ -51,7 +52,13 @@ const Header: React.FC<Props> = ({
           <SelectMonth id={id} locale={locale} viewedDate={viewedDate} onChange={onMonthChange} />
         </Flexbox>
         <Flexbox item>
-          <SelectYear id={id} locale={locale} viewedDate={viewedDate} onChange={onYearChange} />
+          <SelectYear
+            id={id}
+            locale={locale}
+            viewedDate={viewedDate}
+            years={yearSelectLength}
+            onChange={onYearChange}
+          />
         </Flexbox>
       </Flexbox>
       <Flexbox item>

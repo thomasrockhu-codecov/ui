@@ -17,7 +17,7 @@ const StyledInputSelect = styled((props) => <Input.Select {...props} />)`
   }
 `;
 
-const SelectYear: React.FC<Props> = ({ id, viewedDate, onChange, years = 10 }) => {
+const SelectYear: React.FC<Props> = ({ id, viewedDate, onChange, years = 100 }) => {
   const [isHover, setIsHover] = useState(false);
   const today = newDate();
   const yearOptions = [...Array(years).keys()].map((index: number) => ({
