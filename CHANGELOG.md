@@ -1,3 +1,11 @@
+## [4.10.2](https://github.com/nordnet/ui/compare/v4.10.1...v4.10.2) (2020-11-19)
+
+
+### Bug Fixes
+
+* 🐛 add correct date format and skip typography for aria ([0e6a16a](https://github.com/nordnet/ui/commit/0e6a16a))
+* 🐛 removed double button label for aria ([0478b3b](https://github.com/nordnet/ui/commit/0478b3b))
+
 ## [4.10.1](https://github.com/nordnet/ui/compare/v4.10.0...v4.10.1) (2020-11-18)
 
 
