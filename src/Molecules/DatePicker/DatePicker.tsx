@@ -155,6 +155,9 @@ export const DatePicker = (React.forwardRef<HTMLDivElement, Props>((props, ref) 
         if (selectedDate && isBefore(date, selectedDate)) return [date, selectedEndDate];
         const swapDate = !selectedEndDate && isBefore(date, selectedDate);
         if (swapDate) return [date, selectedDate];
+        if (selectedDate && isSameDay(date, selectedDate)) return [date, null];
+        if (selectedDate && selectedEndDate && isSameDay(date, selectedEndDate))
+          return [date, null];
         if (selectedDate) return [selectedDate, date];
 
         return [selectedDate, date];
@@ -171,7 +174,7 @@ export const DatePicker = (React.forwardRef<HTMLDivElement, Props>((props, ref) 
         return;
 
       const rangeDateString = !endDate
-        ? `${format(startDate, dateFormat, options)} - `
+        ? `${format(startDate, dateFormat, options)}`
         : `${format(startDate, dateFormat, options)} - ${format(endDate, dateFormat, options)}`;
 
       setSelectedDate(startDate);
