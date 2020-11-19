@@ -1,3 +1,10 @@
+## [4.10.3](https://github.com/nordnet/ui/compare/v4.10.2...v4.10.3) (2020-11-19)
+
+
+### Bug Fixes
+
+* 🐛 drill down prop for number of visible years in dropdown ([3b2190b](https://github.com/nordnet/ui/commit/3b2190b))
+
 ## [4.10.2](https://github.com/nordnet/ui/compare/v4.10.1...v4.10.2) (2020-11-19)
 
 
