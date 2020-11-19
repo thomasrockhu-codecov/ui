@@ -110,12 +110,8 @@ export const Header = styled.div`
   flex: 0 0 auto;
 `;
 
-export const ContentContainer = styled.div`
-  flex-grow: 1;
-  overflow: hidden;
-`;
-
 export const Footer = styled.div`
+  margin-top: auto;
   padding-top: ${(p) => p.theme.spacing.unit(4)}px;
   flex: 0 0 auto;
 `;
@@ -207,7 +203,7 @@ export const ModalInner: React.FC<Props> = ({
               isStatusModal={isStatusModal}
             >
               {hasHeader && <Header>{title && <Title title={title} uid={titleId} />}</Header>}
-              <ContentContainer>{children}</ContentContainer>
+              {children}
               {footer && <Footer>{footer}</Footer>}
               {!hideClose && (
                 <CloseButton type="button" onClick={onClose} fullScreenMobile={fullScreenMobile}>
