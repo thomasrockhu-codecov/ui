@@ -189,7 +189,7 @@ export const DatePicker = (React.forwardRef<HTMLDivElement, Props>((props, ref) 
   const onDateClick = useCallback(
     (date: Date) => {
       if (date && !isSameMonth(date, viewedDate)) {
-        setViewedDate(date);
+        setViewedDate(newDate(date));
         setFocused([null, null]);
       }
       if (variant === REGULAR_DATE_PICKER) handleDateClickRegular(date);
