@@ -37,9 +37,7 @@ const getFontSizeStyles = ({ fontSize, theme }: ScreenSizeConfigurableProps & { 
 const StyledTypography = styled(Typography)<StyledTypographyProps>`
   ${(p) =>
     getStylesForSizes<
-      { theme: Theme; xs: ScreenSizeConfigurableProps } & MediaRelatedProps<
-        ScreenSizeConfigurableProps
-      >
+      { xs: ScreenSizeConfigurableProps } & MediaRelatedProps<ScreenSizeConfigurableProps>
     >(
       {
         theme: p.theme,

@@ -41,6 +41,7 @@ const StyledExpandCell = styled(ExpandCell)<StyledExpandCellProps>`
         md: p.$md,
         lg: p.$lg,
         xl: p.$xl,
+        theme: p.theme,
       },
       {
         expandable: getExpandableStyles,

@@ -71,7 +71,6 @@ const StyledRow = styled(Flexbox)<StyledRowProps>`
   ${(p) =>
     getStylesForSizes<
       {
-        theme: Theme;
         expanded: StyledRowProps['$expanded'];
         xs: ScreenSizeConfigurableProps;
       } & MediaRelatedProps<ScreenSizeConfigurableProps>

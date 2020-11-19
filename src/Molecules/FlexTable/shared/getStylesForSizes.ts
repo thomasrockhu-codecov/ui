@@ -1,3 +1,4 @@
+import { Theme } from '../../../theme/theme.types';
 import { MediaRelatedProps } from './shared.types';
 
 type GenericBaseProps = { [key: string]: any };
@@ -21,9 +22,11 @@ function getStyles<T, P>(props: P, getStylesPerProp: { [K in keyof T]?: (props: 
 }
 
 function getStylesForSizes<P extends GenericBaseProps & GenericMediaRelatedPropsWithXs>(
-  props: P,
+  props: P & { theme: Theme },
   getStylesPerProp: {
-    [K in keyof P['xs']]: (props: BasePropsMergedWithScreenSizeProps<P>) => string;
+    [K in keyof P['xs']]: (
+      props: BasePropsMergedWithScreenSizeProps<P & { theme: Theme }>,
+    ) => string;
   },
 ) {
   const { xs, sm, md, lg, xl, ...baseProps } = props;
@@ -36,7 +39,7 @@ function getStylesForSizes<P extends GenericBaseProps & GenericMediaRelatedProps
   ]
     .filter((screenSizeProps) => Object.keys(screenSizeProps).length > 1)
     .map(({ size, ...sizeSpecificProps }) => {
-      const styles = getStyles<P['xs'], BasePropsMergedWithScreenSizeProps<P>>(
+      const styles = getStyles<P['xs'], BasePropsMergedWithScreenSizeProps<P & { theme: Theme }>>(
         { ...sizeSpecificProps, ...baseProps },
         getStylesPerProp,
       );
