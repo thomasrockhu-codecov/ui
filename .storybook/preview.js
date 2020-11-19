@@ -4,6 +4,27 @@ import { setIntlConfig, withIntl } from 'storybook-addon-intl';
 import { DocsPage } from '@storybook/addon-docs/blocks';
 
 const customViewports = {
+  tablet: {
+    name: 'Tablet',
+    styles: {
+      width: '760px',
+      height: '100%',
+    },
+  },
+  tabletLg: {
+    name: 'Tablet Lg',
+    styles: {
+      width: '976px',
+      height: '100%',
+    },
+  },
+  desktopSm: {
+    name: 'Desktop Sm',
+    styles: {
+      width: '1280px',
+      height: '100%',
+    },
+  },
   desktopLg: {
     name: 'Desktop Lg',
     styles: {

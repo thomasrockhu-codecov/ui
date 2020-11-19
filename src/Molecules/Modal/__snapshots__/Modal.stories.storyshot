@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Storyshots Molecules / Modal Close On Backdrop Click Story 1`] = `
-.c6 {
+.c7 {
   margin-bottom: 8px;
 }
 
@@ -21,7 +21,7 @@ exports[`Storyshots Molecules / Modal Close On Backdrop Click Story 1`] = `
   align-items: center;
 }
 
-.c9 {
+.c10 {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -35,7 +35,7 @@ exports[`Storyshots Molecules / Modal Close On Backdrop Click Story 1`] = `
   display: block;
 }
 
-.c10 {
+.c11 {
   stroke: #282823;
 }
 
@@ -48,7 +48,7 @@ exports[`Storyshots Molecules / Modal Close On Backdrop Click Story 1`] = `
   line-height: 1.2;
 }
 
-.c7 {
+.c8 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
   margin: 0;
@@ -70,7 +70,7 @@ exports[`Storyshots Molecules / Modal Close On Backdrop Click Story 1`] = `
   z-index: 500;
 }
 
-.c8 {
+.c9 {
   font-family: inherit;
   font-size: 100%;
   line-height: 1.15;
@@ -86,29 +86,29 @@ exports[`Storyshots Molecules / Modal Close On Backdrop Click Story 1`] = `
   -webkit-transform: translateY(3px);
   -ms-transform: translateY(3px);
   transform: translateY(3px);
-  top: 12px;
+  top: 20px;
   right: 12px;
 }
 
-.c8,
-.c8[type='button'],
-.c8[type='reset'],
-.c8[type='submit'] {
+.c9,
+.c9[type='button'],
+.c9[type='reset'],
+.c9[type='submit'] {
   -webkit-appearance: button;
 }
 
-.c8::-moz-focus-inner,
-.c8[type='button']::-moz-focus-inner,
-.c8[type='reset']::-moz-focus-inner,
-.c8[type='submit']::-moz-focus-inner {
+.c9::-moz-focus-inner,
+.c9[type='button']::-moz-focus-inner,
+.c9[type='reset']::-moz-focus-inner,
+.c9[type='submit']::-moz-focus-inner {
   border-style: none;
   padding: 0;
 }
 
-.c8:-moz-focusring,
-.c8[type='button']:-moz-focusring,
-.c8[type='reset']:-moz-focusring,
-.c8[type='submit']:-moz-focusring {
+.c9:-moz-focusring,
+.c9[type='button']:-moz-focusring,
+.c9[type='reset']:-moz-focusring,
+.c9[type='submit']:-moz-focusring {
   outline: 1px dotted ButtonText;
 }
 
@@ -119,6 +119,14 @@ exports[`Storyshots Molecules / Modal Close On Backdrop Click Story 1`] = `
   -webkit-flex: 0 0 auto;
   -ms-flex: 0 0 auto;
   flex: 0 0 auto;
+}
+
+.c6 {
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  overflow: hidden;
 }
 
 .c0 {
@@ -160,7 +168,7 @@ exports[`Storyshots Molecules / Modal Close On Backdrop Click Story 1`] = `
 }
 
 @media (min-width:760px) {
-  .c8 {
+  .c9 {
     top: 40px;
     right: 40px;
   }
@@ -239,54 +247,59 @@ exports[`Storyshots Molecules / Modal Close On Backdrop Click Story 1`] = `
             <div
               className="c6"
             >
-              <p
+              <div
                 className="c7"
               >
-                Modals should be used with care as they are quite intrusive on the user experience and demand immediate attention (while also blocking all other actions on the site). Always consider if you can solve a problem in another way first before you choose to go with the modal.
-              </p>
-            </div>
-            <div
-              className="c6"
-            >
-              <p
+                <p
+                  className="c8"
+                >
+                  Modals should be used with care as they are quite intrusive on the user experience and demand immediate attention (while also blocking all other actions on the site). Always consider if you can solve a problem in another way first before you choose to go with the modal.
+                </p>
+              </div>
+              <div
                 className="c7"
               >
-                That being said they are a good tool if you need to grab the users attention, either to communicate something very important or make them take an action before proceeding.
-              </p>
-            </div>
-            <div
-              className="c6"
-            >
-              <p
+                <p
+                  className="c8"
+                >
+                  That being said they are a good tool if you need to grab the users attention, either to communicate something very important or make them take an action before proceeding.
+                </p>
+              </div>
+              <div
                 className="c7"
               >
-                Nielsen/Norman has an excellent article about their usage here
+                <p
+                  className="c8"
+                >
+                  Nielsen/Norman has an excellent article about their usage here
+                </p>
+              </div>
+              <p
+                className="c8"
+              >
+                <a
+                  href="https:// www.nngroup.com/articles/modal-nonmodal-dialog/"
+                >
+                  https:// www.nngroup.com/articles/modal-nonmodal-dialog/
+                </a>
               </p>
             </div>
-            <p
-              className="c7"
-            >
-              <a
-                href="https:// www.nngroup.com/articles/modal-nonmodal-dialog/"
-              >
-                https:// www.nngroup.com/articles/modal-nonmodal-dialog/
-              </a>
-            </p>
             <button
-              className="NormalizedButton__Button-ey7f5x-0 c8"
+              className="NormalizedButton__Button-ey7f5x-0 c9"
+              fullScreenMobile={true}
               onClick={[Function]}
               type="button"
             >
               <svg
                 aria-hidden="false"
-                className="c9"
+                className="c10"
                 focusable="false"
                 preserveAspectRatio="xMidYMid meet"
                 role="img"
                 viewBox="0 0 24 24"
               >
                 <path
-                  className="c10"
+                  className="c11"
                   d="m 1 1 l 22 22 m -22 0 l 22 -22"
                   strokeWidth={2}
                 />
@@ -319,7 +332,7 @@ exports[`Storyshots Molecules / Modal Close On Backdrop Click Story 1`] = `
 `;
 
 exports[`Storyshots Molecules / Modal Default 1`] = `
-.c6 {
+.c7 {
   margin-bottom: 8px;
 }
 
@@ -339,7 +352,7 @@ exports[`Storyshots Molecules / Modal Default 1`] = `
   align-items: center;
 }
 
-.c9 {
+.c10 {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -353,7 +366,7 @@ exports[`Storyshots Molecules / Modal Default 1`] = `
   display: block;
 }
 
-.c10 {
+.c11 {
   stroke: #282823;
 }
 
@@ -366,7 +379,7 @@ exports[`Storyshots Molecules / Modal Default 1`] = `
   line-height: 1.2;
 }
 
-.c7 {
+.c8 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
   margin: 0;
@@ -388,7 +401,7 @@ exports[`Storyshots Molecules / Modal Default 1`] = `
   z-index: 500;
 }
 
-.c8 {
+.c9 {
   font-family: inherit;
   font-size: 100%;
   line-height: 1.15;
@@ -404,29 +417,29 @@ exports[`Storyshots Molecules / Modal Default 1`] = `
   -webkit-transform: translateY(3px);
   -ms-transform: translateY(3px);
   transform: translateY(3px);
-  top: 12px;
+  top: 20px;
   right: 12px;
 }
 
-.c8,
-.c8[type='button'],
-.c8[type='reset'],
-.c8[type='submit'] {
+.c9,
+.c9[type='button'],
+.c9[type='reset'],
+.c9[type='submit'] {
   -webkit-appearance: button;
 }
 
-.c8::-moz-focus-inner,
-.c8[type='button']::-moz-focus-inner,
-.c8[type='reset']::-moz-focus-inner,
-.c8[type='submit']::-moz-focus-inner {
+.c9::-moz-focus-inner,
+.c9[type='button']::-moz-focus-inner,
+.c9[type='reset']::-moz-focus-inner,
+.c9[type='submit']::-moz-focus-inner {
   border-style: none;
   padding: 0;
 }
 
-.c8:-moz-focusring,
-.c8[type='button']:-moz-focusring,
-.c8[type='reset']:-moz-focusring,
-.c8[type='submit']:-moz-focusring {
+.c9:-moz-focusring,
+.c9[type='button']:-moz-focusring,
+.c9[type='reset']:-moz-focusring,
+.c9[type='submit']:-moz-focusring {
   outline: 1px dotted ButtonText;
 }
 
@@ -437,6 +450,14 @@ exports[`Storyshots Molecules / Modal Default 1`] = `
   -webkit-flex: 0 0 auto;
   -ms-flex: 0 0 auto;
   flex: 0 0 auto;
+}
+
+.c6 {
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  overflow: hidden;
 }
 
 .c0 {
@@ -478,7 +499,7 @@ exports[`Storyshots Molecules / Modal Default 1`] = `
 }
 
 @media (min-width:760px) {
-  .c8 {
+  .c9 {
     top: 40px;
     right: 40px;
   }
@@ -557,54 +578,59 @@ exports[`Storyshots Molecules / Modal Default 1`] = `
             <div
               className="c6"
             >
-              <p
+              <div
                 className="c7"
               >
-                Modals should be used with care as they are quite intrusive on the user experience and demand immediate attention (while also blocking all other actions on the site). Always consider if you can solve a problem in another way first before you choose to go with the modal.
-              </p>
-            </div>
-            <div
-              className="c6"
-            >
-              <p
+                <p
+                  className="c8"
+                >
+                  Modals should be used with care as they are quite intrusive on the user experience and demand immediate attention (while also blocking all other actions on the site). Always consider if you can solve a problem in another way first before you choose to go with the modal.
+                </p>
+              </div>
+              <div
                 className="c7"
               >
-                That being said they are a good tool if you need to grab the users attention, either to communicate something very important or make them take an action before proceeding.
-              </p>
-            </div>
-            <div
-              className="c6"
-            >
-              <p
+                <p
+                  className="c8"
+                >
+                  That being said they are a good tool if you need to grab the users attention, either to communicate something very important or make them take an action before proceeding.
+                </p>
+              </div>
+              <div
                 className="c7"
               >
-                Nielsen/Norman has an excellent article about their usage here
+                <p
+                  className="c8"
+                >
+                  Nielsen/Norman has an excellent article about their usage here
+                </p>
+              </div>
+              <p
+                className="c8"
+              >
+                <a
+                  href="https:// www.nngroup.com/articles/modal-nonmodal-dialog/"
+                >
+                  https:// www.nngroup.com/articles/modal-nonmodal-dialog/
+                </a>
               </p>
             </div>
-            <p
-              className="c7"
-            >
-              <a
-                href="https:// www.nngroup.com/articles/modal-nonmodal-dialog/"
-              >
-                https:// www.nngroup.com/articles/modal-nonmodal-dialog/
-              </a>
-            </p>
             <button
-              className="NormalizedButton__Button-ey7f5x-0 c8"
+              className="NormalizedButton__Button-ey7f5x-0 c9"
+              fullScreenMobile={true}
               onClick={[Function]}
               type="button"
             >
               <svg
                 aria-hidden="false"
-                className="c9"
+                className="c10"
                 focusable="false"
                 preserveAspectRatio="xMidYMid meet"
                 role="img"
                 viewBox="0 0 24 24"
               >
                 <path
-                  className="c10"
+                  className="c11"
                   d="m 1 1 l 22 22 m -22 0 l 22 -22"
                   strokeWidth={2}
                 />
@@ -637,7 +663,7 @@ exports[`Storyshots Molecules / Modal Default 1`] = `
 `;
 
 exports[`Storyshots Molecules / Modal Hide Close button 1`] = `
-.c6 {
+.c7 {
   margin-bottom: 8px;
 }
 
@@ -666,7 +692,7 @@ exports[`Storyshots Molecules / Modal Hide Close button 1`] = `
   line-height: 1.2;
 }
 
-.c7 {
+.c8 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
   margin: 0;
@@ -695,6 +721,14 @@ exports[`Storyshots Molecules / Modal Hide Close button 1`] = `
   -webkit-flex: 0 0 auto;
   -ms-flex: 0 0 auto;
   flex: 0 0 auto;
+}
+
+.c6 {
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  overflow: hidden;
 }
 
 .c0 {
@@ -808,11 +842,15 @@ exports[`Storyshots Molecules / Modal Hide Close button 1`] = `
             <div
               className="c6"
             >
-              <p
+              <div
                 className="c7"
               >
-                The close button in the upper right corner is now hidden because the prop hideClose is true.
-              </p>
+                <p
+                  className="c8"
+                >
+                  The close button in the upper right corner is now hidden because the prop hideClose is true.
+                </p>
+              </div>
             </div>
           </div>
         </div>
@@ -838,11 +876,11 @@ exports[`Storyshots Molecules / Modal Hide Close button 1`] = `
 `;
 
 exports[`Storyshots Molecules / Modal Integration: Modal with a footer and Button 1`] = `
-.c10 {
+.c11 {
   margin-bottom: 8px;
 }
 
-.c6 {
+.c7 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -863,7 +901,7 @@ exports[`Storyshots Molecules / Modal Integration: Modal with a footer and Butto
   position: relative;
 }
 
-.c6::before {
+.c7::before {
   content: '';
   display: block;
   width: 100%;
@@ -878,7 +916,7 @@ exports[`Storyshots Molecules / Modal Integration: Modal with a footer and Butto
   background: linear-gradient(0deg,#ffffff00 0%,#ffffffff 100%);
 }
 
-.c6::after {
+.c7::after {
   content: '';
   display: block;
   width: 100%;
@@ -893,7 +931,7 @@ exports[`Storyshots Molecules / Modal Integration: Modal with a footer and Butto
   background: linear-gradient(0deg,#ffffffff 0%,#ffffff00 100%);
 }
 
-.c7 {
+.c8 {
   -webkit-box-flex: 1;
   -webkit-flex-grow: 1;
   -ms-flex-positive: 1;
@@ -914,12 +952,12 @@ exports[`Storyshots Molecules / Modal Integration: Modal with a footer and Butto
   width: 100%;
 }
 
-.c8 {
+.c9 {
   position: relative;
   overflow-x: hidden;
 }
 
-.c12 {
+.c13 {
   height: 16px;
   width: 4px;
   position: absolute;
@@ -928,7 +966,7 @@ exports[`Storyshots Molecules / Modal Integration: Modal with a footer and Butto
   bottom: 0;
 }
 
-.c9 {
+.c10 {
   height: 16px;
   width: 4px;
   position: absolute;
@@ -953,7 +991,7 @@ exports[`Storyshots Molecules / Modal Integration: Modal with a footer and Butto
   align-items: center;
 }
 
-.c17 {
+.c18 {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -967,7 +1005,7 @@ exports[`Storyshots Molecules / Modal Integration: Modal with a footer and Butto
   display: block;
 }
 
-.c18 {
+.c19 {
   stroke: #282823;
 }
 
@@ -980,7 +1018,7 @@ exports[`Storyshots Molecules / Modal Integration: Modal with a footer and Butto
   line-height: 1.2;
 }
 
-.c11 {
+.c12 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
   margin: 0;
@@ -989,7 +1027,7 @@ exports[`Storyshots Molecules / Modal Integration: Modal with a footer and Butto
   line-height: 1.5;
 }
 
-.c15 {
+.c16 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: inherit;
   margin: 0;
@@ -998,7 +1036,7 @@ exports[`Storyshots Molecules / Modal Integration: Modal with a footer and Butto
   line-height: 1.4285714285714286;
 }
 
-.c14 {
+.c15 {
   font-family: inherit;
   font-size: 100%;
   line-height: 1.15;
@@ -1028,29 +1066,29 @@ exports[`Storyshots Molecules / Modal Integration: Modal with a footer and Butto
   cursor: pointer;
 }
 
-.c14,
-.c14[type='button'],
-.c14[type='reset'],
-.c14[type='submit'] {
+.c15,
+.c15[type='button'],
+.c15[type='reset'],
+.c15[type='submit'] {
   -webkit-appearance: button;
 }
 
-.c14::-moz-focus-inner,
-.c14[type='button']::-moz-focus-inner,
-.c14[type='reset']::-moz-focus-inner,
-.c14[type='submit']::-moz-focus-inner {
+.c15::-moz-focus-inner,
+.c15[type='button']::-moz-focus-inner,
+.c15[type='reset']::-moz-focus-inner,
+.c15[type='submit']::-moz-focus-inner {
   border-style: none;
   padding: 0;
 }
 
-.c14:-moz-focusring,
-.c14[type='button']:-moz-focusring,
-.c14[type='reset']:-moz-focusring,
-.c14[type='submit']:-moz-focusring {
+.c15:-moz-focusring,
+.c15[type='button']:-moz-focusring,
+.c15[type='reset']:-moz-focusring,
+.c15[type='submit']:-moz-focusring {
   outline: 1px dotted ButtonText;
 }
 
-.c14::before {
+.c15::before {
   content: '';
   display: block;
   position: absolute;
@@ -1061,11 +1099,11 @@ exports[`Storyshots Molecules / Modal Integration: Modal with a footer and Butto
   height: calc(100% - 4px);
 }
 
-.c14:hover {
+.c15:hover {
   background-color: hsl(223.5,100%,45%);
 }
 
-.c14:active {
+.c15:active {
   background-color: hsl(223.5,100%,40%);
 }
 
@@ -1082,7 +1120,7 @@ exports[`Storyshots Molecules / Modal Integration: Modal with a footer and Butto
   z-index: 500;
 }
 
-.c16 {
+.c17 {
   font-family: inherit;
   font-size: 100%;
   line-height: 1.15;
@@ -1098,29 +1136,29 @@ exports[`Storyshots Molecules / Modal Integration: Modal with a footer and Butto
   -webkit-transform: translateY(3px);
   -ms-transform: translateY(3px);
   transform: translateY(3px);
-  top: 12px;
+  top: 20px;
   right: 12px;
 }
 
-.c16,
-.c16[type='button'],
-.c16[type='reset'],
-.c16[type='submit'] {
+.c17,
+.c17[type='button'],
+.c17[type='reset'],
+.c17[type='submit'] {
   -webkit-appearance: button;
 }
 
-.c16::-moz-focus-inner,
-.c16[type='button']::-moz-focus-inner,
-.c16[type='reset']::-moz-focus-inner,
-.c16[type='submit']::-moz-focus-inner {
+.c17::-moz-focus-inner,
+.c17[type='button']::-moz-focus-inner,
+.c17[type='reset']::-moz-focus-inner,
+.c17[type='submit']::-moz-focus-inner {
   border-style: none;
   padding: 0;
 }
 
-.c16:-moz-focusring,
-.c16[type='button']:-moz-focusring,
-.c16[type='reset']:-moz-focusring,
-.c16[type='submit']:-moz-focusring {
+.c17:-moz-focusring,
+.c17[type='button']:-moz-focusring,
+.c17[type='reset']:-moz-focusring,
+.c17[type='submit']:-moz-focusring {
   outline: 1px dotted ButtonText;
 }
 
@@ -1133,7 +1171,15 @@ exports[`Storyshots Molecules / Modal Integration: Modal with a footer and Butto
   flex: 0 0 auto;
 }
 
-.c13 {
+.c6 {
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  overflow: hidden;
+}
+
+.c14 {
   padding-top: 16px;
   -webkit-flex: 0 0 auto;
   -ms-flex: 0 0 auto;
@@ -1179,7 +1225,7 @@ exports[`Storyshots Molecules / Modal Integration: Modal with a footer and Butto
 }
 
 @media (min-width:760px) {
-  .c16 {
+  .c17 {
     top: 40px;
     right: 40px;
   }
@@ -1266,84 +1312,88 @@ exports[`Storyshots Molecules / Modal Integration: Modal with a footer and Butto
                 >
                   <div
                     className="c9"
-                  />
-                  <div
-                    className="c10"
                   >
-                    <p
+                    <div
+                      className="c10"
+                    />
+                    <div
                       className="c11"
                     >
-                      Modals should be used with care as they are quite intrusive on the user experience and demand immediate attention (while also blocking all other actions on the site). Always consider if you can solve a problem in another way first before you choose to go with the modal. Modals should be used with care as they are quite intrusive on the user experience and demand immediate attention (while also blocking all other actions on the site). Always consider if you can solve a problem in another way first before you choose to go with the modal.
-                    </p>
-                  </div>
-                  <div
-                    className="c10"
-                  >
-                    <p
+                      <p
+                        className="c12"
+                      >
+                        Modals should be used with care as they are quite intrusive on the user experience and demand immediate attention (while also blocking all other actions on the site). Always consider if you can solve a problem in another way first before you choose to go with the modal. Modals should be used with care as they are quite intrusive on the user experience and demand immediate attention (while also blocking all other actions on the site). Always consider if you can solve a problem in another way first before you choose to go with the modal.
+                      </p>
+                    </div>
+                    <div
                       className="c11"
                     >
-                      That being said they are a good tool if you need to grab the users attention, either to communicate something very important or make them take an action before proceeding. That being said they are a good tool if you need to grab the users attention, either to communicate something very important or make them take an action before proceeding.
-                    </p>
-                  </div>
-                  <div
-                    className="c10"
-                  >
-                    <p
+                      <p
+                        className="c12"
+                      >
+                        That being said they are a good tool if you need to grab the users attention, either to communicate something very important or make them take an action before proceeding. That being said they are a good tool if you need to grab the users attention, either to communicate something very important or make them take an action before proceeding.
+                      </p>
+                    </div>
+                    <div
                       className="c11"
                     >
-                      Modals should be used with care as they are quite intrusive on the user experience and demand immediate attention (while also blocking all other actions on the site). Always consider if you can solve a problem in another way first before you choose to go with the modal. Modals should be used with care as they are quite intrusive on the user experience and demand immediate attention (while also blocking all other actions on the site). Always consider if you can solve a problem in another way first before you choose to go with the modal.
-                    </p>
-                  </div>
-                  <div
-                    className="c10"
-                  >
-                    <p
+                      <p
+                        className="c12"
+                      >
+                        Modals should be used with care as they are quite intrusive on the user experience and demand immediate attention (while also blocking all other actions on the site). Always consider if you can solve a problem in another way first before you choose to go with the modal. Modals should be used with care as they are quite intrusive on the user experience and demand immediate attention (while also blocking all other actions on the site). Always consider if you can solve a problem in another way first before you choose to go with the modal.
+                      </p>
+                    </div>
+                    <div
                       className="c11"
                     >
-                      Modals should be used with care as they are quite intrusive on the user experience and demand immediate attention (while also blocking all other actions on the site). Always consider if you can solve a problem in another way first before you choose to go with the modal. Modals should be used with care as they are quite intrusive on the user experience and demand immediate attention (while also blocking all other actions on the site). Always consider if you can solve a problem in another way first before you choose to go with the modal.
-                    </p>
-                  </div>
-                  <div
-                    className="c10"
-                  >
-                    <p
+                      <p
+                        className="c12"
+                      >
+                        Modals should be used with care as they are quite intrusive on the user experience and demand immediate attention (while also blocking all other actions on the site). Always consider if you can solve a problem in another way first before you choose to go with the modal. Modals should be used with care as they are quite intrusive on the user experience and demand immediate attention (while also blocking all other actions on the site). Always consider if you can solve a problem in another way first before you choose to go with the modal.
+                      </p>
+                    </div>
+                    <div
                       className="c11"
                     >
-                      Nielsen/Norman has an excellent article about their usage here
-                    </p>
-                  </div>
-                  <p
-                    className="c11"
-                  >
-                    <a
-                      href="https:// www.nngroup.com/articles/modal-nonmodal-dialog/"
+                      <p
+                        className="c12"
+                      >
+                        Nielsen/Norman has an excellent article about their usage here
+                      </p>
+                    </div>
+                    <p
+                      className="c12"
                     >
-                      https:// www.nngroup.com/articles/modal-nonmodal-dialog/
-                    </a>
-                  </p>
-                  <div
-                    className="c12"
-                  />
+                      <a
+                        href="https:// www.nngroup.com/articles/modal-nonmodal-dialog/"
+                      >
+                        https:// www.nngroup.com/articles/modal-nonmodal-dialog/
+                      </a>
+                    </p>
+                    <div
+                      className="c13"
+                    />
+                  </div>
                 </div>
               </div>
             </div>
             <div
-              className="c13"
+              className="c14"
             >
               <div>
                 <p
-                  className="c11"
+                  className="c12"
                 >
                   This is a footer which is a ReactNode, which could e.g. contain a button or only text
                 </p>
                 <button
-                  className="NormalizedButton__Button-ey7f5x-0 c14"
+                  className="NormalizedButton__Button-ey7f5x-0 c15"
                   onClick={[Function]}
                   type="button"
                 >
                   <span>
                     <span
-                      className="c15"
+                      className="c16"
                     >
                       Button
                     </span>
@@ -1352,20 +1402,21 @@ exports[`Storyshots Molecules / Modal Integration: Modal with a footer and Butto
               </div>
             </div>
             <button
-              className="NormalizedButton__Button-ey7f5x-0 c16"
+              className="NormalizedButton__Button-ey7f5x-0 c17"
+              fullScreenMobile={true}
               onClick={[Function]}
               type="button"
             >
               <svg
                 aria-hidden="false"
-                className="c17"
+                className="c18"
                 focusable="false"
                 preserveAspectRatio="xMidYMid meet"
                 role="img"
                 viewBox="0 0 24 24"
               >
                 <path
-                  className="c18"
+                  className="c19"
                   d="m 1 1 l 22 22 m -22 0 l 22 -22"
                   strokeWidth={2}
                 />
@@ -1397,12 +1448,12 @@ exports[`Storyshots Molecules / Modal Integration: Modal with a footer and Butto
 </div>
 `;
 
-exports[`Storyshots Molecules / Modal Node as Title 1`] = `
-.c7 {
-  margin-bottom: 8px;
+exports[`Storyshots Molecules / Modal Modal Standard Large 1`] = `
+.c10 {
+  margin-right: 8px;
 }
 
-.c1 {
+.c0 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -1418,7 +1469,23 @@ exports[`Storyshots Molecules / Modal Node as Title 1`] = `
   align-items: center;
 }
 
-.c4 {
+.c8 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c9 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -1428,20 +1495,31 @@ exports[`Storyshots Molecules / Modal Node as Title 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  margin-left: -4px;
-  margin-right: -4px;
 }
 
-.c4 > * {
-  padding-left: 4px;
-  padding-right: 4px;
+.c14 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
 }
 
-.c4 > *:not(:first-child) {
-  padding-top: 0;
+.c11 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 16px;
+  height: 16px;
+  fill: #0046FF;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
 }
 
-.c5 {
+.c19 {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -1455,11 +1533,17 @@ exports[`Storyshots Molecules / Modal Node as Title 1`] = `
   display: block;
 }
 
-.c10 {
+.c20 {
   stroke: #282823;
 }
 
-.c6 {
+.c12 {
+  -webkit-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  transform: rotate(0deg);
+}
+
+.c4 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
   margin: 0;
@@ -1468,7 +1552,7 @@ exports[`Storyshots Molecules / Modal Node as Title 1`] = `
   line-height: 1.2;
 }
 
-.c8 {
+.c6 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
   margin: 0;
@@ -1477,16 +1561,189 @@ exports[`Storyshots Molecules / Modal Node as Title 1`] = `
   line-height: 1.5;
 }
 
-.c2 {
+.c13 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.c16 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: inherit;
+  margin: 0;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.c15 {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  overflow: visible;
+  text-transform: none;
+  position: relative;
+  box-sizing: border-box;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  padding: 8px 16px;
+  min-height: 40px;
+  background-color: #FFFFFF;
+  color: #0046FF;
+  border: none;
+  border-radius: 0;
+  cursor: pointer;
+}
+
+.c15,
+.c15[type='button'],
+.c15[type='reset'],
+.c15[type='submit'] {
+  -webkit-appearance: button;
+}
+
+.c15::-moz-focus-inner,
+.c15[type='button']::-moz-focus-inner,
+.c15[type='reset']::-moz-focus-inner,
+.c15[type='submit']::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+.c15:-moz-focusring,
+.c15[type='button']:-moz-focusring,
+.c15[type='reset']:-moz-focusring,
+.c15[type='submit']:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+.c15::before {
+  content: '';
+  display: block;
+  position: absolute;
+  border: 2px solid #0046FF;
+  top: 0;
+  left: 0;
+  width: calc(100% - 4px);
+  height: calc(100% - 4px);
+}
+
+.c15:hover {
+  color: hsl(223.5,100%,40%);
+}
+
+.c15:hover::before {
+  border-color: hsl(223.5,100%,40%);
+}
+
+.c15:active {
+  color: hsl(223.5,100%,35%);
+}
+
+.c15:active::before {
+  border-color: hsl(223.5,100%,35%);
+}
+
+.c17 {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  overflow: visible;
+  text-transform: none;
+  position: relative;
+  box-sizing: border-box;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  padding: 8px 16px;
+  min-height: 40px;
+  background-color: #0046FF;
+  color: #FFFFFF;
+  border: none;
+  border-radius: 0;
+  cursor: pointer;
+}
+
+.c17,
+.c17[type='button'],
+.c17[type='reset'],
+.c17[type='submit'] {
+  -webkit-appearance: button;
+}
+
+.c17::-moz-focus-inner,
+.c17[type='button']::-moz-focus-inner,
+.c17[type='reset']::-moz-focus-inner,
+.c17[type='submit']::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+.c17:-moz-focusring,
+.c17[type='button']:-moz-focusring,
+.c17[type='reset']:-moz-focusring,
+.c17[type='submit']:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+.c17::before {
+  content: '';
+  display: block;
+  position: absolute;
+  border: 2px solid transparent;
+  top: 0;
+  left: 0;
+  width: calc(100% - 4px);
+  height: calc(100% - 4px);
+}
+
+.c17:hover {
+  background-color: hsl(223.5,100%,45%);
+}
+
+.c17:active {
+  background-color: hsl(223.5,100%,40%);
+}
+
+.c3 {
+  padding-right: 16px;
+}
+
+.c1 {
   position: fixed;
   top: 0;
   left: 0;
   height: 100%;
   width: 100%;
   z-index: 500;
+  background-color: rgba(110,110,105,0.63);
 }
 
-.c9 {
+.c18 {
   font-family: inherit;
   font-size: 100%;
   line-height: 1.15;
@@ -1506,25 +1763,702 @@ exports[`Storyshots Molecules / Modal Node as Title 1`] = `
   right: 12px;
 }
 
-.c9,
-.c9[type='button'],
-.c9[type='reset'],
-.c9[type='submit'] {
+.c18,
+.c18[type='button'],
+.c18[type='reset'],
+.c18[type='submit'] {
   -webkit-appearance: button;
 }
 
-.c9::-moz-focus-inner,
-.c9[type='button']::-moz-focus-inner,
-.c9[type='reset']::-moz-focus-inner,
-.c9[type='submit']::-moz-focus-inner {
+.c18::-moz-focus-inner,
+.c18[type='button']::-moz-focus-inner,
+.c18[type='reset']::-moz-focus-inner,
+.c18[type='submit']::-moz-focus-inner {
   border-style: none;
   padding: 0;
 }
 
-.c9:-moz-focusring,
-.c9[type='button']:-moz-focusring,
-.c9[type='reset']:-moz-focusring,
-.c9[type='submit']:-moz-focusring {
+.c18:-moz-focusring,
+.c18[type='button']:-moz-focusring,
+.c18[type='reset']:-moz-focusring,
+.c18[type='submit']:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+.c2 {
+  padding-bottom: 16px;
+  padding-right: 28px;
+  min-height: 20px;
+  -webkit-flex: 0 0 auto;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+}
+
+.c5 {
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  overflow: hidden;
+}
+
+.c7 {
+  padding-top: 16px;
+  -webkit-flex: 0 0 auto;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+}
+
+@media (min-width:760px) {
+  .c4 {
+    font-size: 24px;
+    line-height: 1.1666666666666667;
+  }
+}
+
+@media (max-width:759px) {
+
+}
+
+@media (min-width:760px) {
+
+}
+
+@media (min-width:976px) {
+
+}
+
+@media (min-width:1280px) {
+
+}
+
+@media (min-width:760px) {
+  .c18 {
+    top: 40px;
+    right: 40px;
+  }
+}
+
+<portal-dummy>
+  <div
+    data-focus-guard={true}
+    style={
+      Object {
+        "height": "0px",
+        "left": "1px",
+        "overflow": "hidden",
+        "padding": 0,
+        "position": "fixed",
+        "top": "1px",
+        "width": "1px",
+      }
+    }
+    tabIndex={0}
+  />
+  <div
+    data-focus-guard={true}
+    style={
+      Object {
+        "height": "0px",
+        "left": "1px",
+        "overflow": "hidden",
+        "padding": 0,
+        "position": "fixed",
+        "top": "1px",
+        "width": "1px",
+      }
+    }
+    tabIndex={1}
+  />
+  <div
+    data-focus-lock-disabled={false}
+    onBlur={[Function]}
+    onFocus={[Function]}
+  >
+    <div
+      onScrollCapture={[Function]}
+      onTouchMoveCapture={[Function]}
+      onWheelCapture={[Function]}
+    >
+      <div
+        className="c0 c1"
+        fullScreenMobile={false}
+        onClick={[Function]}
+      >
+        <div>
+          <div
+            className="c2"
+          >
+            <span
+              id="36val-ModalTitle"
+            >
+              <h2
+                className="c3 c4"
+              >
+                Header
+              </h2>
+            </span>
+          </div>
+          <div
+            className="c5"
+          >
+            <div
+              className=""
+            >
+              <p
+                className="c6"
+              >
+                Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of de Finibus Bonorum et Malorum (The Extremes of Good and
+              </p>
+            </div>
+          </div>
+          <div
+            className="c7"
+          >
+            <div
+              className="c8"
+            >
+              <div
+                className="c9"
+              >
+                <div
+                  className="c10"
+                >
+                  <svg
+                    aria-hidden="true"
+                    className="c11 c12"
+                    direction="left"
+                    focusable="false"
+                    preserveAspectRatio="xMidYMid meet"
+                    role="presentation"
+                    viewBox="0 0 15 16"
+                  >
+                    <path
+                      d="M9.179 1l-6.21 6.222h12.873v1.556L2.97 8.777 9.18 15H6.984L0 8l6.984-7h2.195z"
+                    />
+                  </svg>
+                </div>
+                <span
+                  className="c13"
+                >
+                  Back
+                </span>
+              </div>
+              <div
+                className="c14"
+              >
+                <div
+                  className="c10"
+                >
+                  <button
+                    className="NormalizedButton__Button-ey7f5x-0 c15"
+                    onClick={[Function]}
+                    type="button"
+                  >
+                    <span>
+                      <span
+                        className="c16"
+                      >
+                        Button
+                      </span>
+                    </span>
+                  </button>
+                </div>
+                <button
+                  className="NormalizedButton__Button-ey7f5x-0 c17"
+                  onClick={[Function]}
+                  type="button"
+                >
+                  <span>
+                    <span
+                      className="c16"
+                    >
+                      Button
+                    </span>
+                  </span>
+                </button>
+              </div>
+            </div>
+          </div>
+          <button
+            className="NormalizedButton__Button-ey7f5x-0 c18"
+            fullScreenMobile={false}
+            onClick={[Function]}
+            type="button"
+          >
+            <svg
+              aria-hidden="false"
+              className="c19"
+              focusable="false"
+              preserveAspectRatio="xMidYMid meet"
+              role="img"
+              viewBox="0 0 24 24"
+            >
+              <path
+                className="c20"
+                d="m 1 1 l 22 22 m -22 0 l 22 -22"
+                strokeWidth={2}
+              />
+              <title>
+                Close this modal
+              </title>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    data-focus-guard={true}
+    style={
+      Object {
+        "height": "0px",
+        "left": "1px",
+        "overflow": "hidden",
+        "padding": 0,
+        "position": "fixed",
+        "top": "1px",
+        "width": "1px",
+      }
+    }
+    tabIndex={0}
+  />
+</portal-dummy>
+`;
+
+exports[`Storyshots Molecules / Modal Modal Standard Large with scroll 1`] = `
+.c11 {
+  margin-bottom: 8px;
+}
+
+.c17 {
+  margin-right: 8px;
+}
+
+.c7 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  min-height: 0;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  -webkit-flex-shrink: 1;
+  -ms-flex-negative: 1;
+  flex-shrink: 1;
+  -webkit-flex-basis: auto;
+  -ms-flex-preferred-size: auto;
+  flex-basis: auto;
+  position: relative;
+  position: relative;
+}
+
+.c7::before {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 52px;
+  position: absolute;
+  left: 0;
+  pointer-events: none;
+  background: transparent;
+  z-index: 1;
+  opacity: 0;
+  top: 0;
+  background: linear-gradient(0deg,#ffffff00 0%,#ffffffff 100%);
+}
+
+.c7::after {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 52px;
+  position: absolute;
+  left: 0;
+  pointer-events: none;
+  background: transparent;
+  z-index: 1;
+  opacity: 0;
+  bottom: 0;
+  background: linear-gradient(0deg,#ffffffff 0%,#ffffff00 100%);
+}
+
+.c8 {
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  width: 100%;
+  min-height: 0;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  -webkit-flex-shrink: 1;
+  -ms-flex-negative: 1;
+  flex-shrink: 1;
+  -webkit-flex-basis: auto;
+  -ms-flex-preferred-size: auto;
+  flex-basis: auto;
+  overflow-y: auto;
+  width: 100%;
+}
+
+.c9 {
+  position: relative;
+  overflow-x: hidden;
+}
+
+.c13 {
+  height: 16px;
+  width: 4px;
+  position: absolute;
+  right: 0;
+  pointer-events: none;
+  bottom: 0;
+}
+
+.c10 {
+  height: 16px;
+  width: 4px;
+  position: absolute;
+  right: 0;
+  pointer-events: none;
+  top: 0;
+}
+
+.c1 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c15 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c16 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c21 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.c18 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 16px;
+  height: 16px;
+  fill: #0046FF;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
+}
+
+.c26 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 20px;
+  height: 20px;
+  fill: #282823;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
+}
+
+.c27 {
+  stroke: #282823;
+}
+
+.c19 {
+  -webkit-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  transform: rotate(0deg);
+}
+
+.c5 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 1.2;
+}
+
+.c12 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.c20 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.c23 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: inherit;
+  margin: 0;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.c22 {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  overflow: visible;
+  text-transform: none;
+  position: relative;
+  box-sizing: border-box;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  padding: 8px 16px;
+  min-height: 40px;
+  background-color: #FFFFFF;
+  color: #0046FF;
+  border: none;
+  border-radius: 0;
+  cursor: pointer;
+}
+
+.c22,
+.c22[type='button'],
+.c22[type='reset'],
+.c22[type='submit'] {
+  -webkit-appearance: button;
+}
+
+.c22::-moz-focus-inner,
+.c22[type='button']::-moz-focus-inner,
+.c22[type='reset']::-moz-focus-inner,
+.c22[type='submit']::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+.c22:-moz-focusring,
+.c22[type='button']:-moz-focusring,
+.c22[type='reset']:-moz-focusring,
+.c22[type='submit']:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+.c22::before {
+  content: '';
+  display: block;
+  position: absolute;
+  border: 2px solid #0046FF;
+  top: 0;
+  left: 0;
+  width: calc(100% - 4px);
+  height: calc(100% - 4px);
+}
+
+.c22:hover {
+  color: hsl(223.5,100%,40%);
+}
+
+.c22:hover::before {
+  border-color: hsl(223.5,100%,40%);
+}
+
+.c22:active {
+  color: hsl(223.5,100%,35%);
+}
+
+.c22:active::before {
+  border-color: hsl(223.5,100%,35%);
+}
+
+.c24 {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  overflow: visible;
+  text-transform: none;
+  position: relative;
+  box-sizing: border-box;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  padding: 8px 16px;
+  min-height: 40px;
+  background-color: #0046FF;
+  color: #FFFFFF;
+  border: none;
+  border-radius: 0;
+  cursor: pointer;
+}
+
+.c24,
+.c24[type='button'],
+.c24[type='reset'],
+.c24[type='submit'] {
+  -webkit-appearance: button;
+}
+
+.c24::-moz-focus-inner,
+.c24[type='button']::-moz-focus-inner,
+.c24[type='reset']::-moz-focus-inner,
+.c24[type='submit']::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+.c24:-moz-focusring,
+.c24[type='button']:-moz-focusring,
+.c24[type='reset']:-moz-focusring,
+.c24[type='submit']:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+.c24::before {
+  content: '';
+  display: block;
+  position: absolute;
+  border: 2px solid transparent;
+  top: 0;
+  left: 0;
+  width: calc(100% - 4px);
+  height: calc(100% - 4px);
+}
+
+.c24:hover {
+  background-color: hsl(223.5,100%,45%);
+}
+
+.c24:active {
+  background-color: hsl(223.5,100%,40%);
+}
+
+.c4 {
+  padding-right: 16px;
+}
+
+.c2 {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 500;
+  background-color: rgba(110,110,105,0.63);
+}
+
+.c25 {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  overflow: visible;
+  text-transform: none;
+  display: block;
+  background: none;
+  padding: 0;
+  border: 0;
+  cursor: pointer;
+  position: absolute;
+  -webkit-transform: translateY(3px);
+  -ms-transform: translateY(3px);
+  transform: translateY(3px);
+  top: 12px;
+  right: 12px;
+}
+
+.c25,
+.c25[type='button'],
+.c25[type='reset'],
+.c25[type='submit'] {
+  -webkit-appearance: button;
+}
+
+.c25::-moz-focus-inner,
+.c25[type='button']::-moz-focus-inner,
+.c25[type='reset']::-moz-focus-inner,
+.c25[type='submit']::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+.c25:-moz-focusring,
+.c25[type='button']:-moz-focusring,
+.c25[type='reset']:-moz-focusring,
+.c25[type='submit']:-moz-focusring {
   outline: 1px dotted ButtonText;
 }
 
@@ -1532,6 +2466,21 @@ exports[`Storyshots Molecules / Modal Node as Title 1`] = `
   padding-bottom: 16px;
   padding-right: 28px;
   min-height: 20px;
+  -webkit-flex: 0 0 auto;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+}
+
+.c6 {
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  overflow: hidden;
+}
+
+.c14 {
+  padding-top: 16px;
   -webkit-flex: 0 0 auto;
   -ms-flex: 0 0 auto;
   flex: 0 0 auto;
@@ -1547,7 +2496,1207 @@ exports[`Storyshots Molecules / Modal Node as Title 1`] = `
 }
 
 @media (min-width:760px) {
-  .c6 {
+  .c5 {
+    font-size: 24px;
+    line-height: 1.1666666666666667;
+  }
+}
+
+@media (max-width:759px) {
+
+}
+
+@media (min-width:760px) {
+
+}
+
+@media (min-width:976px) {
+
+}
+
+@media (min-width:1280px) {
+
+}
+
+@media (min-width:760px) {
+  .c25 {
+    top: 40px;
+    right: 40px;
+  }
+}
+
+<div>
+  <button
+    onClick={[Function]}
+    type="button"
+  >
+    Open modal
+  </button>
+  <div
+    className="c0"
+  />
+  <portal-dummy>
+    <div
+      data-focus-guard={true}
+      style={
+        Object {
+          "height": "0px",
+          "left": "1px",
+          "overflow": "hidden",
+          "padding": 0,
+          "position": "fixed",
+          "top": "1px",
+          "width": "1px",
+        }
+      }
+      tabIndex={0}
+    />
+    <div
+      data-focus-guard={true}
+      style={
+        Object {
+          "height": "0px",
+          "left": "1px",
+          "overflow": "hidden",
+          "padding": 0,
+          "position": "fixed",
+          "top": "1px",
+          "width": "1px",
+        }
+      }
+      tabIndex={1}
+    />
+    <div
+      data-focus-lock-disabled={false}
+      onBlur={[Function]}
+      onFocus={[Function]}
+    >
+      <div
+        onScrollCapture={[Function]}
+        onTouchMoveCapture={[Function]}
+        onWheelCapture={[Function]}
+      >
+        <div
+          className="c1 c2"
+          fullScreenMobile={false}
+          onClick={[Function]}
+        >
+          <div>
+            <div
+              className="c3"
+            >
+              <span
+                id="38val-ModalTitle"
+              >
+                <h2
+                  className="c4 c5"
+                >
+                  Header
+                </h2>
+              </span>
+            </div>
+            <div
+              className="c6"
+            >
+              <div
+                className="c7"
+              >
+                <div
+                  className="c8"
+                >
+                  <div
+                    className="c9"
+                  >
+                    <div
+                      className="c10"
+                    />
+                    <div
+                      className="c11"
+                    >
+                      <p
+                        className="c12"
+                      >
+                        Modals should be used with care as they are quite intrusive on the user experience and demand immediate attention (while also blocking all other actions on the site). Always consider if you can solve a problem in another way first before you choose to go with the modal. Modals should be used with care as they are quite intrusive on the user experience and demand immediate attention (while also blocking all other actions on the site). Always consider if you can solve a problem in another way first before you choose to go with the modal.
+                      </p>
+                    </div>
+                    <div
+                      className="c11"
+                    >
+                      <p
+                        className="c12"
+                      >
+                        That being said they are a good tool if you need to grab the users attention, either to communicate something very important or make them take an action before proceeding. That being said they are a good tool if you need to grab the users attention, either to communicate something very important or make them take an action before proceeding.
+                      </p>
+                    </div>
+                    <div
+                      className="c11"
+                    >
+                      <p
+                        className="c12"
+                      >
+                        Modals should be used with care as they are quite intrusive on the user experience and demand immediate attention (while also blocking all other actions on the site). Always consider if you can solve a problem in another way first before you choose to go with the modal. Modals should be used with care as they are quite intrusive on the user experience and demand immediate attention (while also blocking all other actions on the site). Always consider if you can solve a problem in another way first before you choose to go with the modal.
+                      </p>
+                    </div>
+                    <div
+                      className="c11"
+                    >
+                      <p
+                        className="c12"
+                      >
+                        Modals should be used with care as they are quite intrusive on the user experience and demand immediate attention (while also blocking all other actions on the site). Always consider if you can solve a problem in another way first before you choose to go with the modal. Modals should be used with care as they are quite intrusive on the user experience and demand immediate attention (while also blocking all other actions on the site). Always consider if you can solve a problem in another way first before you choose to go with the modal.
+                      </p>
+                    </div>
+                    <div
+                      className="c11"
+                    >
+                      <p
+                        className="c12"
+                      >
+                        Nielsen/Norman has an excellent article about their usage here
+                      </p>
+                    </div>
+                    <div
+                      className="c13"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              className="c14"
+            >
+              <div
+                className="c15"
+              >
+                <div
+                  className="c16"
+                >
+                  <div
+                    className="c17"
+                  >
+                    <svg
+                      aria-hidden="true"
+                      className="c18 c19"
+                      direction="left"
+                      focusable="false"
+                      preserveAspectRatio="xMidYMid meet"
+                      role="presentation"
+                      viewBox="0 0 15 16"
+                    >
+                      <path
+                        d="M9.179 1l-6.21 6.222h12.873v1.556L2.97 8.777 9.18 15H6.984L0 8l6.984-7h2.195z"
+                      />
+                    </svg>
+                  </div>
+                  <span
+                    className="c20"
+                  >
+                    Back
+                  </span>
+                </div>
+                <div
+                  className="c21"
+                >
+                  <div
+                    className="c17"
+                  >
+                    <button
+                      className="NormalizedButton__Button-ey7f5x-0 c22"
+                      onClick={[Function]}
+                      type="button"
+                    >
+                      <span>
+                        <span
+                          className="c23"
+                        >
+                          Button
+                        </span>
+                      </span>
+                    </button>
+                  </div>
+                  <button
+                    className="NormalizedButton__Button-ey7f5x-0 c24"
+                    onClick={[Function]}
+                    type="button"
+                  >
+                    <span>
+                      <span
+                        className="c23"
+                      >
+                        Button
+                      </span>
+                    </span>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <button
+              className="NormalizedButton__Button-ey7f5x-0 c25"
+              fullScreenMobile={false}
+              onClick={[Function]}
+              type="button"
+            >
+              <svg
+                aria-hidden="false"
+                className="c26"
+                focusable="false"
+                preserveAspectRatio="xMidYMid meet"
+                role="img"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  className="c27"
+                  d="m 1 1 l 22 22 m -22 0 l 22 -22"
+                  strokeWidth={2}
+                />
+                <title>
+                  Close this modal
+                </title>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      data-focus-guard={true}
+      style={
+        Object {
+          "height": "0px",
+          "left": "1px",
+          "overflow": "hidden",
+          "padding": 0,
+          "position": "fixed",
+          "top": "1px",
+          "width": "1px",
+        }
+      }
+      tabIndex={0}
+    />
+  </portal-dummy>
+</div>
+`;
+
+exports[`Storyshots Molecules / Modal Modal Standard Medium 1`] = `
+.c10 {
+  margin-right: 8px;
+}
+
+.c0 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c8 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c9 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c14 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.c11 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 16px;
+  height: 16px;
+  fill: #0046FF;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
+}
+
+.c19 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 20px;
+  height: 20px;
+  fill: #282823;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
+}
+
+.c20 {
+  stroke: #282823;
+}
+
+.c12 {
+  -webkit-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  transform: rotate(0deg);
+}
+
+.c4 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 1.2;
+}
+
+.c6 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.c13 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.c16 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: inherit;
+  margin: 0;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.c15 {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  overflow: visible;
+  text-transform: none;
+  position: relative;
+  box-sizing: border-box;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  padding: 8px 16px;
+  min-height: 40px;
+  background-color: #FFFFFF;
+  color: #0046FF;
+  border: none;
+  border-radius: 0;
+  cursor: pointer;
+}
+
+.c15,
+.c15[type='button'],
+.c15[type='reset'],
+.c15[type='submit'] {
+  -webkit-appearance: button;
+}
+
+.c15::-moz-focus-inner,
+.c15[type='button']::-moz-focus-inner,
+.c15[type='reset']::-moz-focus-inner,
+.c15[type='submit']::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+.c15:-moz-focusring,
+.c15[type='button']:-moz-focusring,
+.c15[type='reset']:-moz-focusring,
+.c15[type='submit']:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+.c15::before {
+  content: '';
+  display: block;
+  position: absolute;
+  border: 2px solid #0046FF;
+  top: 0;
+  left: 0;
+  width: calc(100% - 4px);
+  height: calc(100% - 4px);
+}
+
+.c15:hover {
+  color: hsl(223.5,100%,40%);
+}
+
+.c15:hover::before {
+  border-color: hsl(223.5,100%,40%);
+}
+
+.c15:active {
+  color: hsl(223.5,100%,35%);
+}
+
+.c15:active::before {
+  border-color: hsl(223.5,100%,35%);
+}
+
+.c17 {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  overflow: visible;
+  text-transform: none;
+  position: relative;
+  box-sizing: border-box;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  padding: 8px 16px;
+  min-height: 40px;
+  background-color: #0046FF;
+  color: #FFFFFF;
+  border: none;
+  border-radius: 0;
+  cursor: pointer;
+}
+
+.c17,
+.c17[type='button'],
+.c17[type='reset'],
+.c17[type='submit'] {
+  -webkit-appearance: button;
+}
+
+.c17::-moz-focus-inner,
+.c17[type='button']::-moz-focus-inner,
+.c17[type='reset']::-moz-focus-inner,
+.c17[type='submit']::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+.c17:-moz-focusring,
+.c17[type='button']:-moz-focusring,
+.c17[type='reset']:-moz-focusring,
+.c17[type='submit']:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+.c17::before {
+  content: '';
+  display: block;
+  position: absolute;
+  border: 2px solid transparent;
+  top: 0;
+  left: 0;
+  width: calc(100% - 4px);
+  height: calc(100% - 4px);
+}
+
+.c17:hover {
+  background-color: hsl(223.5,100%,45%);
+}
+
+.c17:active {
+  background-color: hsl(223.5,100%,40%);
+}
+
+.c3 {
+  padding-right: 16px;
+}
+
+.c1 {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 500;
+  background-color: rgba(110,110,105,0.63);
+}
+
+.c18 {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  overflow: visible;
+  text-transform: none;
+  display: block;
+  background: none;
+  padding: 0;
+  border: 0;
+  cursor: pointer;
+  position: absolute;
+  -webkit-transform: translateY(3px);
+  -ms-transform: translateY(3px);
+  transform: translateY(3px);
+  top: 12px;
+  right: 12px;
+}
+
+.c18,
+.c18[type='button'],
+.c18[type='reset'],
+.c18[type='submit'] {
+  -webkit-appearance: button;
+}
+
+.c18::-moz-focus-inner,
+.c18[type='button']::-moz-focus-inner,
+.c18[type='reset']::-moz-focus-inner,
+.c18[type='submit']::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+.c18:-moz-focusring,
+.c18[type='button']:-moz-focusring,
+.c18[type='reset']:-moz-focusring,
+.c18[type='submit']:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+.c2 {
+  padding-bottom: 16px;
+  padding-right: 28px;
+  min-height: 20px;
+  -webkit-flex: 0 0 auto;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+}
+
+.c5 {
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  overflow: hidden;
+}
+
+.c7 {
+  padding-top: 16px;
+  -webkit-flex: 0 0 auto;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+}
+
+@media (min-width:760px) {
+  .c4 {
+    font-size: 24px;
+    line-height: 1.1666666666666667;
+  }
+}
+
+@media (max-width:759px) {
+
+}
+
+@media (min-width:760px) {
+
+}
+
+@media (min-width:976px) {
+
+}
+
+@media (min-width:1280px) {
+
+}
+
+@media (min-width:760px) {
+  .c18 {
+    top: 40px;
+    right: 40px;
+  }
+}
+
+<portal-dummy>
+  <div
+    data-focus-guard={true}
+    style={
+      Object {
+        "height": "0px",
+        "left": "1px",
+        "overflow": "hidden",
+        "padding": 0,
+        "position": "fixed",
+        "top": "1px",
+        "width": "1px",
+      }
+    }
+    tabIndex={0}
+  />
+  <div
+    data-focus-guard={true}
+    style={
+      Object {
+        "height": "0px",
+        "left": "1px",
+        "overflow": "hidden",
+        "padding": 0,
+        "position": "fixed",
+        "top": "1px",
+        "width": "1px",
+      }
+    }
+    tabIndex={1}
+  />
+  <div
+    data-focus-lock-disabled={false}
+    onBlur={[Function]}
+    onFocus={[Function]}
+  >
+    <div
+      onScrollCapture={[Function]}
+      onTouchMoveCapture={[Function]}
+      onWheelCapture={[Function]}
+    >
+      <div
+        className="c0 c1"
+        fullScreenMobile={false}
+        onClick={[Function]}
+      >
+        <div>
+          <div
+            className="c2"
+          >
+            <span
+              id="34val-ModalTitle"
+            >
+              <h2
+                className="c3 c4"
+              >
+                Header
+              </h2>
+            </span>
+          </div>
+          <div
+            className="c5"
+          >
+            <div
+              className=""
+            >
+              <p
+                className="c6"
+              >
+                Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of de Finibus Bonorum et Malorum (The Extremes of Good and
+              </p>
+            </div>
+          </div>
+          <div
+            className="c7"
+          >
+            <div
+              className="c8"
+            >
+              <div
+                className="c9"
+              >
+                <div
+                  className="c10"
+                >
+                  <svg
+                    aria-hidden="true"
+                    className="c11 c12"
+                    direction="left"
+                    focusable="false"
+                    preserveAspectRatio="xMidYMid meet"
+                    role="presentation"
+                    viewBox="0 0 15 16"
+                  >
+                    <path
+                      d="M9.179 1l-6.21 6.222h12.873v1.556L2.97 8.777 9.18 15H6.984L0 8l6.984-7h2.195z"
+                    />
+                  </svg>
+                </div>
+                <span
+                  className="c13"
+                >
+                  Back
+                </span>
+              </div>
+              <div
+                className="c14"
+              >
+                <div
+                  className="c10"
+                >
+                  <button
+                    className="NormalizedButton__Button-ey7f5x-0 c15"
+                    onClick={[Function]}
+                    type="button"
+                  >
+                    <span>
+                      <span
+                        className="c16"
+                      >
+                        Button
+                      </span>
+                    </span>
+                  </button>
+                </div>
+                <button
+                  className="NormalizedButton__Button-ey7f5x-0 c17"
+                  onClick={[Function]}
+                  type="button"
+                >
+                  <span>
+                    <span
+                      className="c16"
+                    >
+                      Button
+                    </span>
+                  </span>
+                </button>
+              </div>
+            </div>
+          </div>
+          <button
+            className="NormalizedButton__Button-ey7f5x-0 c18"
+            fullScreenMobile={false}
+            onClick={[Function]}
+            type="button"
+          >
+            <svg
+              aria-hidden="false"
+              className="c19"
+              focusable="false"
+              preserveAspectRatio="xMidYMid meet"
+              role="img"
+              viewBox="0 0 24 24"
+            >
+              <path
+                className="c20"
+                d="m 1 1 l 22 22 m -22 0 l 22 -22"
+                strokeWidth={2}
+              />
+              <title>
+                Close this modal
+              </title>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    data-focus-guard={true}
+    style={
+      Object {
+        "height": "0px",
+        "left": "1px",
+        "overflow": "hidden",
+        "padding": 0,
+        "position": "fixed",
+        "top": "1px",
+        "width": "1px",
+      }
+    }
+    tabIndex={0}
+  />
+</portal-dummy>
+`;
+
+exports[`Storyshots Molecules / Modal Modal Standard Mobile With Scroll, One Button, Fullscreen 1`] = `
+.c11 {
+  margin-bottom: 8px;
+}
+
+.c7 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  min-height: 0;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  -webkit-flex-shrink: 1;
+  -ms-flex-negative: 1;
+  flex-shrink: 1;
+  -webkit-flex-basis: auto;
+  -ms-flex-preferred-size: auto;
+  flex-basis: auto;
+  position: relative;
+  position: relative;
+}
+
+.c7::before {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 52px;
+  position: absolute;
+  left: 0;
+  pointer-events: none;
+  background: transparent;
+  z-index: 1;
+  opacity: 0;
+  top: 0;
+  background: linear-gradient(0deg,#ffffff00 0%,#ffffffff 100%);
+}
+
+.c7::after {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 52px;
+  position: absolute;
+  left: 0;
+  pointer-events: none;
+  background: transparent;
+  z-index: 1;
+  opacity: 0;
+  bottom: 0;
+  background: linear-gradient(0deg,#ffffffff 0%,#ffffff00 100%);
+}
+
+.c8 {
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  width: 100%;
+  min-height: 0;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  -webkit-flex-shrink: 1;
+  -ms-flex-negative: 1;
+  flex-shrink: 1;
+  -webkit-flex-basis: auto;
+  -ms-flex-preferred-size: auto;
+  flex-basis: auto;
+  overflow-y: auto;
+  width: 100%;
+}
+
+.c9 {
+  position: relative;
+  overflow-x: hidden;
+}
+
+.c13 {
+  height: 16px;
+  width: 4px;
+  position: absolute;
+  right: 0;
+  pointer-events: none;
+  bottom: 0;
+}
+
+.c10 {
+  height: 16px;
+  width: 4px;
+  position: absolute;
+  right: 0;
+  pointer-events: none;
+  top: 0;
+}
+
+.c1 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c15 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.c16 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+
+.c20 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 20px;
+  height: 20px;
+  fill: #282823;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
+}
+
+.c21 {
+  stroke: #282823;
+}
+
+.c5 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 1.2;
+}
+
+.c12 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.c18 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: inherit;
+  margin: 0;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.c17 {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  overflow: visible;
+  text-transform: none;
+  position: relative;
+  box-sizing: border-box;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  padding: 8px 16px;
+  min-height: 40px;
+  background-color: #0046FF;
+  color: #FFFFFF;
+  border: none;
+  border-radius: 0;
+  cursor: pointer;
+}
+
+.c17,
+.c17[type='button'],
+.c17[type='reset'],
+.c17[type='submit'] {
+  -webkit-appearance: button;
+}
+
+.c17::-moz-focus-inner,
+.c17[type='button']::-moz-focus-inner,
+.c17[type='reset']::-moz-focus-inner,
+.c17[type='submit']::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+.c17:-moz-focusring,
+.c17[type='button']:-moz-focusring,
+.c17[type='reset']:-moz-focusring,
+.c17[type='submit']:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+.c17::before {
+  content: '';
+  display: block;
+  position: absolute;
+  border: 2px solid transparent;
+  top: 0;
+  left: 0;
+  width: calc(100% - 4px);
+  height: calc(100% - 4px);
+}
+
+.c17:hover {
+  background-color: hsl(223.5,100%,45%);
+}
+
+.c17:active {
+  background-color: hsl(223.5,100%,40%);
+}
+
+.c4 {
+  padding-right: 16px;
+}
+
+.c2 {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 500;
+}
+
+.c19 {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  overflow: visible;
+  text-transform: none;
+  display: block;
+  background: none;
+  padding: 0;
+  border: 0;
+  cursor: pointer;
+  position: absolute;
+  -webkit-transform: translateY(3px);
+  -ms-transform: translateY(3px);
+  transform: translateY(3px);
+  top: 20px;
+  right: 12px;
+}
+
+.c19,
+.c19[type='button'],
+.c19[type='reset'],
+.c19[type='submit'] {
+  -webkit-appearance: button;
+}
+
+.c19::-moz-focus-inner,
+.c19[type='button']::-moz-focus-inner,
+.c19[type='reset']::-moz-focus-inner,
+.c19[type='submit']::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+.c19:-moz-focusring,
+.c19[type='button']:-moz-focusring,
+.c19[type='reset']:-moz-focusring,
+.c19[type='submit']:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+.c3 {
+  padding-bottom: 16px;
+  padding-right: 28px;
+  min-height: 20px;
+  -webkit-flex: 0 0 auto;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+}
+
+.c6 {
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  overflow: hidden;
+}
+
+.c14 {
+  padding-top: 16px;
+  -webkit-flex: 0 0 auto;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+}
+
+.c0 {
+  background-image: linear-gradient( #00D200,#FF1900 );
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 20px;
+  height: 200vh;
+}
+
+@media (min-width:760px) {
+  .c5 {
     font-size: 24px;
     line-height: 1.1666666666666667;
   }
@@ -1576,13 +3725,19 @@ exports[`Storyshots Molecules / Modal Node as Title 1`] = `
 }
 
 @media (min-width:760px) {
-  .c9 {
+  .c19 {
     top: 40px;
     right: 40px;
   }
 }
 
 <div>
+  <button
+    onClick={[Function]}
+    type="button"
+  >
+    Open modal
+  </button>
   <div
     className="c0"
   />
@@ -1637,96 +3792,123 @@ exports[`Storyshots Molecules / Modal Node as Title 1`] = `
               className="c3"
             >
               <span
-                id="26val-ModalTitle"
+                id="50val-ModalTitle"
               >
-                <div
-                  className="c4"
+                <h2
+                  className="c4 c5"
                 >
-                  <svg
-                    aria-hidden="true"
-                    className="c5"
-                    focusable="false"
-                    preserveAspectRatio="xMidYMid meet"
-                    role="presentation"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      d="M15 0L3 13.5h7.5L9 24l12-13.5h-7.5z"
-                      id="a"
-                    />
-                  </svg>
-                  <h2
-                    className="c6"
-                  >
-                    React Node Title
-                  </h2>
-                  <svg
-                    aria-hidden="true"
-                    className="c5"
-                    focusable="false"
-                    preserveAspectRatio="xMidYMid meet"
-                    role="presentation"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      d="M15 0L3 13.5h7.5L9 24l12-13.5h-7.5z"
-                      id="a"
-                    />
-                  </svg>
-                </div>
+                  Header
+                </h2>
               </span>
             </div>
             <div
-              className="c7"
+              className="c6"
             >
-              <p
-                className="c8"
+              <div
+                className="c7"
               >
-                Modals should be used with care as they are quite intrusive on the user experience and demand immediate attention (while also blocking all other actions on the site). Always consider if you can solve a problem in another way first before you choose to go with the modal.
-              </p>
+                <div
+                  className="c8"
+                >
+                  <div
+                    className="c9"
+                  >
+                    <div
+                      className="c10"
+                    />
+                    <div
+                      className="c11"
+                    >
+                      <p
+                        className="c12"
+                      >
+                        Modals should be used with care as they are quite intrusive on the user experience and demand immediate attention (while also blocking all other actions on the site). Always consider if you can solve a problem in another way first before you choose to go with the modal. Modals should be used with care as they are quite intrusive on the user experience and demand immediate attention (while also blocking all other actions on the site). Always consider if you can solve a problem in another way first before you choose to go with the modal.
+                      </p>
+                    </div>
+                    <div
+                      className="c11"
+                    >
+                      <p
+                        className="c12"
+                      >
+                        That being said they are a good tool if you need to grab the users attention, either to communicate something very important or make them take an action before proceeding. That being said they are a good tool if you need to grab the users attention, either to communicate something very important or make them take an action before proceeding.
+                      </p>
+                    </div>
+                    <div
+                      className="c11"
+                    >
+                      <p
+                        className="c12"
+                      >
+                        Modals should be used with care as they are quite intrusive on the user experience and demand immediate attention (while also blocking all other actions on the site). Always consider if you can solve a problem in another way first before you choose to go with the modal. Modals should be used with care as they are quite intrusive on the user experience and demand immediate attention (while also blocking all other actions on the site). Always consider if you can solve a problem in another way first before you choose to go with the modal.
+                      </p>
+                    </div>
+                    <div
+                      className="c11"
+                    >
+                      <p
+                        className="c12"
+                      >
+                        Modals should be used with care as they are quite intrusive on the user experience and demand immediate attention (while also blocking all other actions on the site). Always consider if you can solve a problem in another way first before you choose to go with the modal. Modals should be used with care as they are quite intrusive on the user experience and demand immediate attention (while also blocking all other actions on the site). Always consider if you can solve a problem in another way first before you choose to go with the modal.
+                      </p>
+                    </div>
+                    <div
+                      className="c11"
+                    >
+                      <p
+                        className="c12"
+                      >
+                        Nielsen/Norman has an excellent article about their usage here
+                      </p>
+                    </div>
+                    <div
+                      className="c13"
+                    />
+                  </div>
+                </div>
+              </div>
             </div>
             <div
-              className="c7"
+              className="c14"
             >
-              <p
-                className="c8"
+              <div
+                className="c15"
               >
-                That being said they are a good tool if you need to grab the users attention, either to communicate something very important or make them take an action before proceeding.
-              </p>
+                <div
+                  className="c16"
+                >
+                  <button
+                    className="NormalizedButton__Button-ey7f5x-0 c17"
+                    onClick={[Function]}
+                    type="button"
+                  >
+                    <span>
+                      <span
+                        className="c18"
+                      >
+                        Button
+                      </span>
+                    </span>
+                  </button>
+                </div>
+              </div>
             </div>
-            <div
-              className="c7"
-            >
-              <p
-                className="c8"
-              >
-                Nielsen/Norman has an excellent article about their usage here
-              </p>
-            </div>
-            <p
-              className="c8"
-            >
-              <a
-                href="https:// www.nngroup.com/articles/modal-nonmodal-dialog/"
-              >
-                https:// www.nngroup.com/articles/modal-nonmodal-dialog/
-              </a>
-            </p>
             <button
-              className="NormalizedButton__Button-ey7f5x-0 c9"
+              className="NormalizedButton__Button-ey7f5x-0 c19"
+              fullScreenMobile={true}
               onClick={[Function]}
               type="button"
             >
               <svg
                 aria-hidden="false"
-                className="c5"
+                className="c20"
                 focusable="false"
                 preserveAspectRatio="xMidYMid meet"
                 role="img"
                 viewBox="0 0 24 24"
               >
                 <path
-                  className="c10"
+                  className="c21"
                   d="m 1 1 l 22 22 m -22 0 l 22 -22"
                   strokeWidth={2}
                 />
@@ -1758,13 +3940,104 @@ exports[`Storyshots Molecules / Modal Node as Title 1`] = `
 </div>
 `;
 
-exports[`Storyshots Molecules / Modal Not full screen mobile 1`] = `
-.c6 {
+exports[`Storyshots Molecules / Modal Modal Standard Mobile with scroll, Fullscreen 1`] = `
+.c11 {
   margin-bottom: 8px;
 }
 
+.c7 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  min-height: 0;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  -webkit-flex-shrink: 1;
+  -ms-flex-negative: 1;
+  flex-shrink: 1;
+  -webkit-flex-basis: auto;
+  -ms-flex-preferred-size: auto;
+  flex-basis: auto;
+  position: relative;
+  position: relative;
+}
+
+.c7::before {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 52px;
+  position: absolute;
+  left: 0;
+  pointer-events: none;
+  background: transparent;
+  z-index: 1;
+  opacity: 0;
+  top: 0;
+  background: linear-gradient(0deg,#ffffff00 0%,#ffffffff 100%);
+}
+
+.c7::after {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 52px;
+  position: absolute;
+  left: 0;
+  pointer-events: none;
+  background: transparent;
+  z-index: 1;
+  opacity: 0;
+  bottom: 0;
+  background: linear-gradient(0deg,#ffffffff 0%,#ffffff00 100%);
+}
+
+.c8 {
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  width: 100%;
+  min-height: 0;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  -webkit-flex-shrink: 1;
+  -ms-flex-negative: 1;
+  flex-shrink: 1;
+  -webkit-flex-basis: auto;
+  -ms-flex-preferred-size: auto;
+  flex-basis: auto;
+  overflow-y: auto;
+  width: 100%;
+}
+
+.c9 {
+  position: relative;
+  overflow-x: hidden;
+}
+
+.c13 {
+  height: 16px;
+  width: 4px;
+  position: absolute;
+  right: 0;
+  pointer-events: none;
+  bottom: 0;
+}
+
 .c10 {
-  margin-right: 8px;
+  height: 16px;
+  width: 4px;
+  position: absolute;
+  right: 0;
+  pointer-events: none;
+  top: 0;
 }
 
 .c1 {
@@ -1783,16 +4056,612 @@ exports[`Storyshots Molecules / Modal Not full screen mobile 1`] = `
   align-items: center;
 }
 
-.c9 {
+.c15 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: end;
-  -webkit-justify-content: flex-end;
-  -ms-flex-pack: end;
-  justify-content: flex-end;
+  margin-left: -4px;
+  margin-right: -4px;
+}
+
+.c15 > * {
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+.c15 > *:not(:first-child) {
+  padding-top: 0;
+}
+
+.c16 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+
+.c21 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 20px;
+  height: 20px;
+  fill: #282823;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
+}
+
+.c22 {
+  stroke: #282823;
+}
+
+.c5 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 1.2;
+}
+
+.c12 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.c18 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: inherit;
+  margin: 0;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.c17 {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  overflow: visible;
+  text-transform: none;
+  position: relative;
+  box-sizing: border-box;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  padding: 8px 16px;
+  min-height: 40px;
+  background-color: #FFFFFF;
+  color: #0046FF;
+  border: none;
+  border-radius: 0;
+  cursor: pointer;
+}
+
+.c17,
+.c17[type='button'],
+.c17[type='reset'],
+.c17[type='submit'] {
+  -webkit-appearance: button;
+}
+
+.c17::-moz-focus-inner,
+.c17[type='button']::-moz-focus-inner,
+.c17[type='reset']::-moz-focus-inner,
+.c17[type='submit']::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+.c17:-moz-focusring,
+.c17[type='button']:-moz-focusring,
+.c17[type='reset']:-moz-focusring,
+.c17[type='submit']:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+.c17::before {
+  content: '';
+  display: block;
+  position: absolute;
+  border: 2px solid #0046FF;
+  top: 0;
+  left: 0;
+  width: calc(100% - 4px);
+  height: calc(100% - 4px);
+}
+
+.c17:hover {
+  color: hsl(223.5,100%,40%);
+}
+
+.c17:hover::before {
+  border-color: hsl(223.5,100%,40%);
+}
+
+.c17:active {
+  color: hsl(223.5,100%,35%);
+}
+
+.c17:active::before {
+  border-color: hsl(223.5,100%,35%);
+}
+
+.c19 {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  overflow: visible;
+  text-transform: none;
+  position: relative;
+  box-sizing: border-box;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  padding: 8px 16px;
+  min-height: 40px;
+  background-color: #0046FF;
+  color: #FFFFFF;
+  border: none;
+  border-radius: 0;
+  cursor: pointer;
+}
+
+.c19,
+.c19[type='button'],
+.c19[type='reset'],
+.c19[type='submit'] {
+  -webkit-appearance: button;
+}
+
+.c19::-moz-focus-inner,
+.c19[type='button']::-moz-focus-inner,
+.c19[type='reset']::-moz-focus-inner,
+.c19[type='submit']::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+.c19:-moz-focusring,
+.c19[type='button']:-moz-focusring,
+.c19[type='reset']:-moz-focusring,
+.c19[type='submit']:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+.c19::before {
+  content: '';
+  display: block;
+  position: absolute;
+  border: 2px solid transparent;
+  top: 0;
+  left: 0;
+  width: calc(100% - 4px);
+  height: calc(100% - 4px);
+}
+
+.c19:hover {
+  background-color: hsl(223.5,100%,45%);
+}
+
+.c19:active {
+  background-color: hsl(223.5,100%,40%);
+}
+
+.c4 {
+  padding-right: 16px;
+}
+
+.c2 {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 500;
+}
+
+.c20 {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  overflow: visible;
+  text-transform: none;
+  display: block;
+  background: none;
+  padding: 0;
+  border: 0;
+  cursor: pointer;
+  position: absolute;
+  -webkit-transform: translateY(3px);
+  -ms-transform: translateY(3px);
+  transform: translateY(3px);
+  top: 20px;
+  right: 12px;
+}
+
+.c20,
+.c20[type='button'],
+.c20[type='reset'],
+.c20[type='submit'] {
+  -webkit-appearance: button;
+}
+
+.c20::-moz-focus-inner,
+.c20[type='button']::-moz-focus-inner,
+.c20[type='reset']::-moz-focus-inner,
+.c20[type='submit']::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+.c20:-moz-focusring,
+.c20[type='button']:-moz-focusring,
+.c20[type='reset']:-moz-focusring,
+.c20[type='submit']:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+.c3 {
+  padding-bottom: 16px;
+  padding-right: 28px;
+  min-height: 20px;
+  -webkit-flex: 0 0 auto;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+}
+
+.c6 {
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  overflow: hidden;
+}
+
+.c14 {
+  padding-top: 16px;
+  -webkit-flex: 0 0 auto;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+}
+
+.c0 {
+  background-image: linear-gradient( #00D200,#FF1900 );
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 20px;
+  height: 200vh;
+}
+
+@media (min-width:760px) {
+  .c5 {
+    font-size: 24px;
+    line-height: 1.1666666666666667;
+  }
+}
+
+@media (min-width:760px) {
+  .c2 {
+    background-color: rgba(110,110,105,0.63);
+  }
+}
+
+@media (max-width:759px) {
+
+}
+
+@media (min-width:760px) {
+
+}
+
+@media (min-width:976px) {
+
+}
+
+@media (min-width:1280px) {
+
+}
+
+@media (min-width:760px) {
+  .c20 {
+    top: 40px;
+    right: 40px;
+  }
+}
+
+<div>
+  <button
+    onClick={[Function]}
+    type="button"
+  >
+    Open modal
+  </button>
+  <div
+    className="c0"
+  />
+  <portal-dummy>
+    <div
+      data-focus-guard={true}
+      style={
+        Object {
+          "height": "0px",
+          "left": "1px",
+          "overflow": "hidden",
+          "padding": 0,
+          "position": "fixed",
+          "top": "1px",
+          "width": "1px",
+        }
+      }
+      tabIndex={0}
+    />
+    <div
+      data-focus-guard={true}
+      style={
+        Object {
+          "height": "0px",
+          "left": "1px",
+          "overflow": "hidden",
+          "padding": 0,
+          "position": "fixed",
+          "top": "1px",
+          "width": "1px",
+        }
+      }
+      tabIndex={1}
+    />
+    <div
+      data-focus-lock-disabled={false}
+      onBlur={[Function]}
+      onFocus={[Function]}
+    >
+      <div
+        onScrollCapture={[Function]}
+        onTouchMoveCapture={[Function]}
+        onWheelCapture={[Function]}
+      >
+        <div
+          className="c1 c2"
+          fullScreenMobile={true}
+          onClick={[Function]}
+        >
+          <div>
+            <div
+              className="c3"
+            >
+              <span
+                id="48val-ModalTitle"
+              >
+                <h2
+                  className="c4 c5"
+                >
+                  Header
+                </h2>
+              </span>
+            </div>
+            <div
+              className="c6"
+            >
+              <div
+                className="c7"
+              >
+                <div
+                  className="c8"
+                >
+                  <div
+                    className="c9"
+                  >
+                    <div
+                      className="c10"
+                    />
+                    <div
+                      className="c11"
+                    >
+                      <p
+                        className="c12"
+                      >
+                        Modals should be used with care as they are quite intrusive on the user experience and demand immediate attention (while also blocking all other actions on the site). Always consider if you can solve a problem in another way first before you choose to go with the modal. Modals should be used with care as they are quite intrusive on the user experience and demand immediate attention (while also blocking all other actions on the site). Always consider if you can solve a problem in another way first before you choose to go with the modal.
+                      </p>
+                    </div>
+                    <div
+                      className="c11"
+                    >
+                      <p
+                        className="c12"
+                      >
+                        That being said they are a good tool if you need to grab the users attention, either to communicate something very important or make them take an action before proceeding. That being said they are a good tool if you need to grab the users attention, either to communicate something very important or make them take an action before proceeding.
+                      </p>
+                    </div>
+                    <div
+                      className="c11"
+                    >
+                      <p
+                        className="c12"
+                      >
+                        Modals should be used with care as they are quite intrusive on the user experience and demand immediate attention (while also blocking all other actions on the site). Always consider if you can solve a problem in another way first before you choose to go with the modal. Modals should be used with care as they are quite intrusive on the user experience and demand immediate attention (while also blocking all other actions on the site). Always consider if you can solve a problem in another way first before you choose to go with the modal.
+                      </p>
+                    </div>
+                    <div
+                      className="c11"
+                    >
+                      <p
+                        className="c12"
+                      >
+                        Modals should be used with care as they are quite intrusive on the user experience and demand immediate attention (while also blocking all other actions on the site). Always consider if you can solve a problem in another way first before you choose to go with the modal. Modals
+                      </p>
+                    </div>
+                    <div
+                      className="c13"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              className="c14"
+            >
+              <div
+                className="c15"
+              >
+                <div
+                  className="c16"
+                >
+                  <button
+                    className="NormalizedButton__Button-ey7f5x-0 c17"
+                    onClick={[Function]}
+                    type="button"
+                  >
+                    <span>
+                      <span
+                        className="c18"
+                      >
+                        Button
+                      </span>
+                    </span>
+                  </button>
+                </div>
+                <div
+                  className="c16"
+                >
+                  <button
+                    className="NormalizedButton__Button-ey7f5x-0 c19"
+                    onClick={[Function]}
+                    type="button"
+                  >
+                    <span>
+                      <span
+                        className="c18"
+                      >
+                        Button
+                      </span>
+                    </span>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <button
+              className="NormalizedButton__Button-ey7f5x-0 c20"
+              fullScreenMobile={true}
+              onClick={[Function]}
+              type="button"
+            >
+              <svg
+                aria-hidden="false"
+                className="c21"
+                focusable="false"
+                preserveAspectRatio="xMidYMid meet"
+                role="img"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  className="c22"
+                  d="m 1 1 l 22 22 m -22 0 l 22 -22"
+                  strokeWidth={2}
+                />
+                <title>
+                  Close this modal
+                </title>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      data-focus-guard={true}
+      style={
+        Object {
+          "height": "0px",
+          "left": "1px",
+          "overflow": "hidden",
+          "padding": 0,
+          "position": "fixed",
+          "top": "1px",
+          "width": "1px",
+        }
+      }
+      tabIndex={0}
+    />
+  </portal-dummy>
+</div>
+`;
+
+exports[`Storyshots Molecules / Modal Modal Standard Mobile, 1 Button, Fullscreen 1`] = `
+.c7 {
+  margin-bottom: 8px;
+}
+
+.c1 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c10 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.c11 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
 }
 
 .c15 {
@@ -1822,7 +4691,7 @@ exports[`Storyshots Molecules / Modal Not full screen mobile 1`] = `
   line-height: 1.2;
 }
 
-.c7 {
+.c8 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
   margin: 0;
@@ -1831,7 +4700,7 @@ exports[`Storyshots Molecules / Modal Not full screen mobile 1`] = `
   line-height: 1.5;
 }
 
-.c12 {
+.c13 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: inherit;
   margin: 0;
@@ -1840,7 +4709,7 @@ exports[`Storyshots Molecules / Modal Not full screen mobile 1`] = `
   line-height: 1.5;
 }
 
-.c11 {
+.c12 {
   font-family: inherit;
   font-size: 100%;
   line-height: 1.15;
@@ -1857,89 +4726,11 @@ exports[`Storyshots Molecules / Modal Not full screen mobile 1`] = `
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  padding: 8px 16px;
-  min-height: 40px;
-  background-color: #FFFFFF;
-  color: #0046FF;
-  border: none;
-  border-radius: 0;
-  cursor: pointer;
-}
-
-.c11,
-.c11[type='button'],
-.c11[type='reset'],
-.c11[type='submit'] {
-  -webkit-appearance: button;
-}
-
-.c11::-moz-focus-inner,
-.c11[type='button']::-moz-focus-inner,
-.c11[type='reset']::-moz-focus-inner,
-.c11[type='submit']::-moz-focus-inner {
-  border-style: none;
-  padding: 0;
-}
-
-.c11:-moz-focusring,
-.c11[type='button']:-moz-focusring,
-.c11[type='reset']:-moz-focusring,
-.c11[type='submit']:-moz-focusring {
-  outline: 1px dotted ButtonText;
-}
-
-.c11::before {
-  content: '';
-  display: block;
-  position: absolute;
-  border: 2px solid #0046FF;
-  top: 0;
-  left: 0;
-  width: calc(100% - 4px);
-  height: calc(100% - 4px);
-}
-
-.c11:hover {
-  color: hsl(223.5,100%,40%);
-}
-
-.c11:hover::before {
-  border-color: hsl(223.5,100%,40%);
-}
-
-.c11:active {
-  color: hsl(223.5,100%,35%);
-}
-
-.c11:active::before {
-  border-color: hsl(223.5,100%,35%);
-}
-
-.c13 {
-  font-family: inherit;
-  font-size: 100%;
-  line-height: 1.15;
-  margin: 0;
-  overflow: visible;
-  text-transform: none;
-  position: relative;
-  box-sizing: border-box;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
   padding: 8px 16px;
   min-height: 40px;
   background-color: #0046FF;
@@ -1949,29 +4740,29 @@ exports[`Storyshots Molecules / Modal Not full screen mobile 1`] = `
   cursor: pointer;
 }
 
-.c13,
-.c13[type='button'],
-.c13[type='reset'],
-.c13[type='submit'] {
+.c12,
+.c12[type='button'],
+.c12[type='reset'],
+.c12[type='submit'] {
   -webkit-appearance: button;
 }
 
-.c13::-moz-focus-inner,
-.c13[type='button']::-moz-focus-inner,
-.c13[type='reset']::-moz-focus-inner,
-.c13[type='submit']::-moz-focus-inner {
+.c12::-moz-focus-inner,
+.c12[type='button']::-moz-focus-inner,
+.c12[type='reset']::-moz-focus-inner,
+.c12[type='submit']::-moz-focus-inner {
   border-style: none;
   padding: 0;
 }
 
-.c13:-moz-focusring,
-.c13[type='button']:-moz-focusring,
-.c13[type='reset']:-moz-focusring,
-.c13[type='submit']:-moz-focusring {
+.c12:-moz-focusring,
+.c12[type='button']:-moz-focusring,
+.c12[type='reset']:-moz-focusring,
+.c12[type='submit']:-moz-focusring {
   outline: 1px dotted ButtonText;
 }
 
-.c13::before {
+.c12::before {
   content: '';
   display: block;
   position: absolute;
@@ -1982,11 +4773,456 @@ exports[`Storyshots Molecules / Modal Not full screen mobile 1`] = `
   height: calc(100% - 4px);
 }
 
-.c13:hover {
+.c12:hover {
   background-color: hsl(223.5,100%,45%);
 }
 
-.c13:active {
+.c12:active {
+  background-color: hsl(223.5,100%,40%);
+}
+
+.c4 {
+  padding-right: 16px;
+}
+
+.c2 {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 500;
+}
+
+.c14 {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  overflow: visible;
+  text-transform: none;
+  display: block;
+  background: none;
+  padding: 0;
+  border: 0;
+  cursor: pointer;
+  position: absolute;
+  -webkit-transform: translateY(3px);
+  -ms-transform: translateY(3px);
+  transform: translateY(3px);
+  top: 20px;
+  right: 12px;
+}
+
+.c14,
+.c14[type='button'],
+.c14[type='reset'],
+.c14[type='submit'] {
+  -webkit-appearance: button;
+}
+
+.c14::-moz-focus-inner,
+.c14[type='button']::-moz-focus-inner,
+.c14[type='reset']::-moz-focus-inner,
+.c14[type='submit']::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+.c14:-moz-focusring,
+.c14[type='button']:-moz-focusring,
+.c14[type='reset']:-moz-focusring,
+.c14[type='submit']:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+.c3 {
+  padding-bottom: 16px;
+  padding-right: 28px;
+  min-height: 20px;
+  -webkit-flex: 0 0 auto;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+}
+
+.c6 {
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  overflow: hidden;
+}
+
+.c9 {
+  padding-top: 16px;
+  -webkit-flex: 0 0 auto;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+}
+
+.c0 {
+  background-image: linear-gradient( #00D200,#FF1900 );
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 20px;
+  height: 200vh;
+}
+
+@media (min-width:760px) {
+  .c5 {
+    font-size: 24px;
+    line-height: 1.1666666666666667;
+  }
+}
+
+@media (min-width:760px) {
+  .c2 {
+    background-color: rgba(110,110,105,0.63);
+  }
+}
+
+@media (max-width:759px) {
+
+}
+
+@media (min-width:760px) {
+
+}
+
+@media (min-width:976px) {
+
+}
+
+@media (min-width:1280px) {
+
+}
+
+@media (min-width:760px) {
+  .c14 {
+    top: 40px;
+    right: 40px;
+  }
+}
+
+<div>
+  <button
+    onClick={[Function]}
+    type="button"
+  >
+    Open modal
+  </button>
+  <div
+    className="c0"
+  />
+  <portal-dummy>
+    <div
+      data-focus-guard={true}
+      style={
+        Object {
+          "height": "0px",
+          "left": "1px",
+          "overflow": "hidden",
+          "padding": 0,
+          "position": "fixed",
+          "top": "1px",
+          "width": "1px",
+        }
+      }
+      tabIndex={0}
+    />
+    <div
+      data-focus-guard={true}
+      style={
+        Object {
+          "height": "0px",
+          "left": "1px",
+          "overflow": "hidden",
+          "padding": 0,
+          "position": "fixed",
+          "top": "1px",
+          "width": "1px",
+        }
+      }
+      tabIndex={1}
+    />
+    <div
+      data-focus-lock-disabled={false}
+      onBlur={[Function]}
+      onFocus={[Function]}
+    >
+      <div
+        onScrollCapture={[Function]}
+        onTouchMoveCapture={[Function]}
+        onWheelCapture={[Function]}
+      >
+        <div
+          className="c1 c2"
+          fullScreenMobile={true}
+          onClick={[Function]}
+        >
+          <div>
+            <div
+              className="c3"
+            >
+              <span
+                id="42val-ModalTitle"
+              >
+                <h2
+                  className="c4 c5"
+                >
+                  Dialog information
+                </h2>
+              </span>
+            </div>
+            <div
+              className="c6"
+            >
+              <div
+                className="c7"
+              >
+                <p
+                  className="c8"
+                >
+                  Modals should be used with care as they are quite intrusive on the user experience and demand immediate attention (while also blocking all other actions on the site). Always consider if you can solve a problem in another way first before you choose to go with the modal. Modals should be used with care as they are quite intrusive on the user experience and demand immediate attention (while also blocking all other actions on the site). Always consider if you can solve a problem in another way first before you choose to go with the modal.
+                </p>
+              </div>
+              <div
+                className="c7"
+              >
+                <p
+                  className="c8"
+                >
+                  Modals should be used with care as they are quite intrusive on the user experience and demand immediate attention (while also blocking all other actions on the site). Always consider if you can solve a problem in another way first before you choose to go with the modal. Modals should be used with care as they are quite intrusive on the user experience. Modals should be used with care as they are
+                </p>
+              </div>
+            </div>
+            <div
+              className="c9"
+            >
+              <div
+                className="c10"
+              >
+                <div
+                  className="c11"
+                >
+                  <button
+                    className="NormalizedButton__Button-ey7f5x-0 c12"
+                    onClick={[Function]}
+                    type="button"
+                  >
+                    <span>
+                      <span
+                        className="c13"
+                      >
+                        Confirm
+                      </span>
+                    </span>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <button
+              className="NormalizedButton__Button-ey7f5x-0 c14"
+              fullScreenMobile={true}
+              onClick={[Function]}
+              type="button"
+            >
+              <svg
+                aria-hidden="false"
+                className="c15"
+                focusable="false"
+                preserveAspectRatio="xMidYMid meet"
+                role="img"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  className="c16"
+                  d="m 1 1 l 22 22 m -22 0 l 22 -22"
+                  strokeWidth={2}
+                />
+                <title>
+                  Close this modal
+                </title>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      data-focus-guard={true}
+      style={
+        Object {
+          "height": "0px",
+          "left": "1px",
+          "overflow": "hidden",
+          "padding": 0,
+          "position": "fixed",
+          "top": "1px",
+          "width": "1px",
+        }
+      }
+      tabIndex={0}
+    />
+  </portal-dummy>
+</div>
+`;
+
+exports[`Storyshots Molecules / Modal Modal Standard Mobile, 1 Button, Small 1`] = `
+.c7 {
+  margin-bottom: 8px;
+}
+
+.c1 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c10 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.c11 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+
+.c15 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 20px;
+  height: 20px;
+  fill: #282823;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
+}
+
+.c16 {
+  stroke: #282823;
+}
+
+.c5 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 1.2;
+}
+
+.c8 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.c13 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: inherit;
+  margin: 0;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.c12 {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  overflow: visible;
+  text-transform: none;
+  position: relative;
+  box-sizing: border-box;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  padding: 8px 16px;
+  min-height: 40px;
+  background-color: #0046FF;
+  color: #FFFFFF;
+  border: none;
+  border-radius: 0;
+  cursor: pointer;
+}
+
+.c12,
+.c12[type='button'],
+.c12[type='reset'],
+.c12[type='submit'] {
+  -webkit-appearance: button;
+}
+
+.c12::-moz-focus-inner,
+.c12[type='button']::-moz-focus-inner,
+.c12[type='reset']::-moz-focus-inner,
+.c12[type='submit']::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+.c12:-moz-focusring,
+.c12[type='button']:-moz-focusring,
+.c12[type='reset']:-moz-focusring,
+.c12[type='submit']:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+.c12::before {
+  content: '';
+  display: block;
+  position: absolute;
+  border: 2px solid transparent;
+  top: 0;
+  left: 0;
+  width: calc(100% - 4px);
+  height: calc(100% - 4px);
+}
+
+.c12:hover {
+  background-color: hsl(223.5,100%,45%);
+}
+
+.c12:active {
   background-color: hsl(223.5,100%,40%);
 }
 
@@ -2055,7 +5291,15 @@ exports[`Storyshots Molecules / Modal Not full screen mobile 1`] = `
   flex: 0 0 auto;
 }
 
-.c8 {
+.c6 {
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  overflow: hidden;
+}
+
+.c9 {
   padding-top: 16px;
   -webkit-flex: 0 0 auto;
   -ms-flex: 0 0 auto;
@@ -2162,64 +5406,56 @@ exports[`Storyshots Molecules / Modal Not full screen mobile 1`] = `
               className="c3"
             >
               <span
-                id="30val-ModalTitle"
+                id="46val-ModalTitle"
               >
                 <h2
                   className="c4 c5"
                 >
-                  Dialog information
+                  Header
                 </h2>
               </span>
             </div>
             <div
               className="c6"
             >
-              <p
+              <div
                 className="c7"
               >
-                Resize the window to see the result of setting fullScreenMobile to false.
-              </p>
+                <p
+                  className="c8"
+                >
+                  Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable
+                </p>
+              </div>
             </div>
             <div
-              className="c8"
+              className="c9"
             >
               <div
-                className="c9"
+                className="c10"
               >
                 <div
-                  className="c10"
+                  className="c11"
                 >
                   <button
-                    className="NormalizedButton__Button-ey7f5x-0 c11"
+                    className="NormalizedButton__Button-ey7f5x-0 c12"
                     onClick={[Function]}
                     type="button"
                   >
                     <span>
                       <span
-                        className="c12"
+                        className="c13"
                       >
-                        Cancel
+                        Button
                       </span>
                     </span>
                   </button>
                 </div>
-                <button
-                  className="NormalizedButton__Button-ey7f5x-0 c13"
-                  onClick={[Function]}
-                  type="button"
-                >
-                  <span>
-                    <span
-                      className="c12"
-                    >
-                      Confirm
-                    </span>
-                  </span>
-                </button>
               </div>
             </div>
             <button
               className="NormalizedButton__Button-ey7f5x-0 c14"
+              fullScreenMobile={false}
               onClick={[Function]}
               type="button"
             >
@@ -2264,8 +5500,8 @@ exports[`Storyshots Molecules / Modal Not full screen mobile 1`] = `
 </div>
 `;
 
-exports[`Storyshots Molecules / Modal Uncontrolled behavior 1`] = `
-.c6 {
+exports[`Storyshots Molecules / Modal Modal Standard Mobile, 2 Buttons, Fullscreen 1`] = `
+.c7 {
   margin-bottom: 8px;
 }
 
@@ -2285,7 +5521,37 @@ exports[`Storyshots Molecules / Modal Uncontrolled behavior 1`] = `
   align-items: center;
 }
 
-.c9 {
+.c10 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: -4px;
+  margin-right: -4px;
+}
+
+.c10 > * {
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+.c10 > *:not(:first-child) {
+  padding-top: 0;
+}
+
+.c11 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+
+.c16 {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -2299,7 +5565,7 @@ exports[`Storyshots Molecules / Modal Uncontrolled behavior 1`] = `
   display: block;
 }
 
-.c10 {
+.c17 {
   stroke: #282823;
 }
 
@@ -2312,13 +5578,174 @@ exports[`Storyshots Molecules / Modal Uncontrolled behavior 1`] = `
   line-height: 1.2;
 }
 
-.c7 {
+.c8 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
   margin: 0;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
+}
+
+.c13 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: inherit;
+  margin: 0;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.c12 {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  overflow: visible;
+  text-transform: none;
+  position: relative;
+  box-sizing: border-box;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  padding: 8px 16px;
+  min-height: 40px;
+  background-color: #FFFFFF;
+  color: #0046FF;
+  border: none;
+  border-radius: 0;
+  cursor: pointer;
+}
+
+.c12,
+.c12[type='button'],
+.c12[type='reset'],
+.c12[type='submit'] {
+  -webkit-appearance: button;
+}
+
+.c12::-moz-focus-inner,
+.c12[type='button']::-moz-focus-inner,
+.c12[type='reset']::-moz-focus-inner,
+.c12[type='submit']::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+.c12:-moz-focusring,
+.c12[type='button']:-moz-focusring,
+.c12[type='reset']:-moz-focusring,
+.c12[type='submit']:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+.c12::before {
+  content: '';
+  display: block;
+  position: absolute;
+  border: 2px solid #0046FF;
+  top: 0;
+  left: 0;
+  width: calc(100% - 4px);
+  height: calc(100% - 4px);
+}
+
+.c12:hover {
+  color: hsl(223.5,100%,40%);
+}
+
+.c12:hover::before {
+  border-color: hsl(223.5,100%,40%);
+}
+
+.c12:active {
+  color: hsl(223.5,100%,35%);
+}
+
+.c12:active::before {
+  border-color: hsl(223.5,100%,35%);
+}
+
+.c14 {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  overflow: visible;
+  text-transform: none;
+  position: relative;
+  box-sizing: border-box;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  padding: 8px 16px;
+  min-height: 40px;
+  background-color: #0046FF;
+  color: #FFFFFF;
+  border: none;
+  border-radius: 0;
+  cursor: pointer;
+}
+
+.c14,
+.c14[type='button'],
+.c14[type='reset'],
+.c14[type='submit'] {
+  -webkit-appearance: button;
+}
+
+.c14::-moz-focus-inner,
+.c14[type='button']::-moz-focus-inner,
+.c14[type='reset']::-moz-focus-inner,
+.c14[type='submit']::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+.c14:-moz-focusring,
+.c14[type='button']:-moz-focusring,
+.c14[type='reset']:-moz-focusring,
+.c14[type='submit']:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+.c14::before {
+  content: '';
+  display: block;
+  position: absolute;
+  border: 2px solid transparent;
+  top: 0;
+  left: 0;
+  width: calc(100% - 4px);
+  height: calc(100% - 4px);
+}
+
+.c14:hover {
+  background-color: hsl(223.5,100%,45%);
+}
+
+.c14:active {
+  background-color: hsl(223.5,100%,40%);
 }
 
 .c4 {
@@ -2334,7 +5761,7 @@ exports[`Storyshots Molecules / Modal Uncontrolled behavior 1`] = `
   z-index: 500;
 }
 
-.c8 {
+.c15 {
   font-family: inherit;
   font-size: 100%;
   line-height: 1.15;
@@ -2350,29 +5777,29 @@ exports[`Storyshots Molecules / Modal Uncontrolled behavior 1`] = `
   -webkit-transform: translateY(3px);
   -ms-transform: translateY(3px);
   transform: translateY(3px);
-  top: 12px;
+  top: 20px;
   right: 12px;
 }
 
-.c8,
-.c8[type='button'],
-.c8[type='reset'],
-.c8[type='submit'] {
+.c15,
+.c15[type='button'],
+.c15[type='reset'],
+.c15[type='submit'] {
   -webkit-appearance: button;
 }
 
-.c8::-moz-focus-inner,
-.c8[type='button']::-moz-focus-inner,
-.c8[type='reset']::-moz-focus-inner,
-.c8[type='submit']::-moz-focus-inner {
+.c15::-moz-focus-inner,
+.c15[type='button']::-moz-focus-inner,
+.c15[type='reset']::-moz-focus-inner,
+.c15[type='submit']::-moz-focus-inner {
   border-style: none;
   padding: 0;
 }
 
-.c8:-moz-focusring,
-.c8[type='button']:-moz-focusring,
-.c8[type='reset']:-moz-focusring,
-.c8[type='submit']:-moz-focusring {
+.c15:-moz-focusring,
+.c15[type='button']:-moz-focusring,
+.c15[type='reset']:-moz-focusring,
+.c15[type='submit']:-moz-focusring {
   outline: 1px dotted ButtonText;
 }
 
@@ -2380,6 +5807,21 @@ exports[`Storyshots Molecules / Modal Uncontrolled behavior 1`] = `
   padding-bottom: 16px;
   padding-right: 28px;
   min-height: 20px;
+  -webkit-flex: 0 0 auto;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+}
+
+.c6 {
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  overflow: hidden;
+}
+
+.c9 {
+  padding-top: 16px;
   -webkit-flex: 0 0 auto;
   -ms-flex: 0 0 auto;
   flex: 0 0 auto;
@@ -2424,7 +5866,2392 @@ exports[`Storyshots Molecules / Modal Uncontrolled behavior 1`] = `
 }
 
 @media (min-width:760px) {
-  .c8 {
+  .c15 {
+    top: 40px;
+    right: 40px;
+  }
+}
+
+<div>
+  <button
+    onClick={[Function]}
+    type="button"
+  >
+    Open modal
+  </button>
+  <div
+    className="c0"
+  />
+  <portal-dummy>
+    <div
+      data-focus-guard={true}
+      style={
+        Object {
+          "height": "0px",
+          "left": "1px",
+          "overflow": "hidden",
+          "padding": 0,
+          "position": "fixed",
+          "top": "1px",
+          "width": "1px",
+        }
+      }
+      tabIndex={0}
+    />
+    <div
+      data-focus-guard={true}
+      style={
+        Object {
+          "height": "0px",
+          "left": "1px",
+          "overflow": "hidden",
+          "padding": 0,
+          "position": "fixed",
+          "top": "1px",
+          "width": "1px",
+        }
+      }
+      tabIndex={1}
+    />
+    <div
+      data-focus-lock-disabled={false}
+      onBlur={[Function]}
+      onFocus={[Function]}
+    >
+      <div
+        onScrollCapture={[Function]}
+        onTouchMoveCapture={[Function]}
+        onWheelCapture={[Function]}
+      >
+        <div
+          className="c1 c2"
+          fullScreenMobile={true}
+          onClick={[Function]}
+        >
+          <div>
+            <div
+              className="c3"
+            >
+              <span
+                id="40val-ModalTitle"
+              >
+                <h2
+                  className="c4 c5"
+                >
+                  Dialog information
+                </h2>
+              </span>
+            </div>
+            <div
+              className="c6"
+            >
+              <div
+                className="c7"
+              >
+                <p
+                  className="c8"
+                >
+                  Modals should be used with care as they are quite intrusive on the user experience and demand immediate attention (while also blocking all other actions on the site). Always consider if you can solve a problem in another way first before you choose to go with the modal. Modals should be used with care as they are quite intrusive on the user experience and demand immediate attention (while also blocking all other actions on the site). Always consider if you can solve a problem in another way first before you choose to go with the modal.
+                </p>
+              </div>
+              <div
+                className="c7"
+              >
+                <p
+                  className="c8"
+                >
+                  Modals should be used with care as they are quite intrusive on the user experience and demand immediate attention (while also blocking all other actions on the site). Always consider if you can solve a problem in another way first before you choose to go with the modal. Modals should be used with care as they are quite intrusive on the user experience. Modals should be used with care as they are
+                </p>
+              </div>
+            </div>
+            <div
+              className="c9"
+            >
+              <div
+                className="c10"
+              >
+                <div
+                  className="c11"
+                >
+                  <button
+                    className="NormalizedButton__Button-ey7f5x-0 c12"
+                    onClick={[Function]}
+                    type="button"
+                  >
+                    <span>
+                      <span
+                        className="c13"
+                      >
+                        Cancel
+                      </span>
+                    </span>
+                  </button>
+                </div>
+                <div
+                  className="c11"
+                >
+                  <button
+                    className="NormalizedButton__Button-ey7f5x-0 c14"
+                    onClick={[Function]}
+                    type="button"
+                  >
+                    <span>
+                      <span
+                        className="c13"
+                      >
+                        Confirm
+                      </span>
+                    </span>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <button
+              className="NormalizedButton__Button-ey7f5x-0 c15"
+              fullScreenMobile={true}
+              onClick={[Function]}
+              type="button"
+            >
+              <svg
+                aria-hidden="false"
+                className="c16"
+                focusable="false"
+                preserveAspectRatio="xMidYMid meet"
+                role="img"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  className="c17"
+                  d="m 1 1 l 22 22 m -22 0 l 22 -22"
+                  strokeWidth={2}
+                />
+                <title>
+                  Close this modal
+                </title>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      data-focus-guard={true}
+      style={
+        Object {
+          "height": "0px",
+          "left": "1px",
+          "overflow": "hidden",
+          "padding": 0,
+          "position": "fixed",
+          "top": "1px",
+          "width": "1px",
+        }
+      }
+      tabIndex={0}
+    />
+  </portal-dummy>
+</div>
+`;
+
+exports[`Storyshots Molecules / Modal Modal Standard Mobile, 2 Buttons, Small 1`] = `
+.c7 {
+  margin-bottom: 8px;
+}
+
+.c1 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c10 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: -4px;
+  margin-right: -4px;
+}
+
+.c10 > * {
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+.c10 > *:not(:first-child) {
+  padding-top: 0;
+}
+
+.c11 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+
+.c16 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 20px;
+  height: 20px;
+  fill: #282823;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
+}
+
+.c17 {
+  stroke: #282823;
+}
+
+.c5 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 1.2;
+}
+
+.c8 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.c13 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: inherit;
+  margin: 0;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.c12 {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  overflow: visible;
+  text-transform: none;
+  position: relative;
+  box-sizing: border-box;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  padding: 8px 16px;
+  min-height: 40px;
+  background-color: #FFFFFF;
+  color: #0046FF;
+  border: none;
+  border-radius: 0;
+  cursor: pointer;
+}
+
+.c12,
+.c12[type='button'],
+.c12[type='reset'],
+.c12[type='submit'] {
+  -webkit-appearance: button;
+}
+
+.c12::-moz-focus-inner,
+.c12[type='button']::-moz-focus-inner,
+.c12[type='reset']::-moz-focus-inner,
+.c12[type='submit']::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+.c12:-moz-focusring,
+.c12[type='button']:-moz-focusring,
+.c12[type='reset']:-moz-focusring,
+.c12[type='submit']:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+.c12::before {
+  content: '';
+  display: block;
+  position: absolute;
+  border: 2px solid #0046FF;
+  top: 0;
+  left: 0;
+  width: calc(100% - 4px);
+  height: calc(100% - 4px);
+}
+
+.c12:hover {
+  color: hsl(223.5,100%,40%);
+}
+
+.c12:hover::before {
+  border-color: hsl(223.5,100%,40%);
+}
+
+.c12:active {
+  color: hsl(223.5,100%,35%);
+}
+
+.c12:active::before {
+  border-color: hsl(223.5,100%,35%);
+}
+
+.c14 {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  overflow: visible;
+  text-transform: none;
+  position: relative;
+  box-sizing: border-box;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  padding: 8px 16px;
+  min-height: 40px;
+  background-color: #0046FF;
+  color: #FFFFFF;
+  border: none;
+  border-radius: 0;
+  cursor: pointer;
+}
+
+.c14,
+.c14[type='button'],
+.c14[type='reset'],
+.c14[type='submit'] {
+  -webkit-appearance: button;
+}
+
+.c14::-moz-focus-inner,
+.c14[type='button']::-moz-focus-inner,
+.c14[type='reset']::-moz-focus-inner,
+.c14[type='submit']::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+.c14:-moz-focusring,
+.c14[type='button']:-moz-focusring,
+.c14[type='reset']:-moz-focusring,
+.c14[type='submit']:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+.c14::before {
+  content: '';
+  display: block;
+  position: absolute;
+  border: 2px solid transparent;
+  top: 0;
+  left: 0;
+  width: calc(100% - 4px);
+  height: calc(100% - 4px);
+}
+
+.c14:hover {
+  background-color: hsl(223.5,100%,45%);
+}
+
+.c14:active {
+  background-color: hsl(223.5,100%,40%);
+}
+
+.c4 {
+  padding-right: 16px;
+}
+
+.c2 {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 500;
+  background-color: rgba(110,110,105,0.63);
+}
+
+.c15 {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  overflow: visible;
+  text-transform: none;
+  display: block;
+  background: none;
+  padding: 0;
+  border: 0;
+  cursor: pointer;
+  position: absolute;
+  -webkit-transform: translateY(3px);
+  -ms-transform: translateY(3px);
+  transform: translateY(3px);
+  top: 12px;
+  right: 12px;
+}
+
+.c15,
+.c15[type='button'],
+.c15[type='reset'],
+.c15[type='submit'] {
+  -webkit-appearance: button;
+}
+
+.c15::-moz-focus-inner,
+.c15[type='button']::-moz-focus-inner,
+.c15[type='reset']::-moz-focus-inner,
+.c15[type='submit']::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+.c15:-moz-focusring,
+.c15[type='button']:-moz-focusring,
+.c15[type='reset']:-moz-focusring,
+.c15[type='submit']:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+.c3 {
+  padding-bottom: 16px;
+  padding-right: 28px;
+  min-height: 20px;
+  -webkit-flex: 0 0 auto;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+}
+
+.c6 {
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  overflow: hidden;
+}
+
+.c9 {
+  padding-top: 16px;
+  -webkit-flex: 0 0 auto;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+}
+
+.c0 {
+  background-image: linear-gradient( #00D200,#FF1900 );
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 20px;
+  height: 200vh;
+}
+
+@media (min-width:760px) {
+  .c5 {
+    font-size: 24px;
+    line-height: 1.1666666666666667;
+  }
+}
+
+@media (max-width:759px) {
+
+}
+
+@media (min-width:760px) {
+
+}
+
+@media (min-width:976px) {
+
+}
+
+@media (min-width:1280px) {
+
+}
+
+@media (min-width:760px) {
+  .c15 {
+    top: 40px;
+    right: 40px;
+  }
+}
+
+<div>
+  <button
+    onClick={[Function]}
+    type="button"
+  >
+    Open modal
+  </button>
+  <div
+    className="c0"
+  />
+  <portal-dummy>
+    <div
+      data-focus-guard={true}
+      style={
+        Object {
+          "height": "0px",
+          "left": "1px",
+          "overflow": "hidden",
+          "padding": 0,
+          "position": "fixed",
+          "top": "1px",
+          "width": "1px",
+        }
+      }
+      tabIndex={0}
+    />
+    <div
+      data-focus-guard={true}
+      style={
+        Object {
+          "height": "0px",
+          "left": "1px",
+          "overflow": "hidden",
+          "padding": 0,
+          "position": "fixed",
+          "top": "1px",
+          "width": "1px",
+        }
+      }
+      tabIndex={1}
+    />
+    <div
+      data-focus-lock-disabled={false}
+      onBlur={[Function]}
+      onFocus={[Function]}
+    >
+      <div
+        onScrollCapture={[Function]}
+        onTouchMoveCapture={[Function]}
+        onWheelCapture={[Function]}
+      >
+        <div
+          className="c1 c2"
+          fullScreenMobile={false}
+          onClick={[Function]}
+        >
+          <div>
+            <div
+              className="c3"
+            >
+              <span
+                id="44val-ModalTitle"
+              >
+                <h2
+                  className="c4 c5"
+                >
+                  Header
+                </h2>
+              </span>
+            </div>
+            <div
+              className="c6"
+            >
+              <div
+                className="c7"
+              >
+                <p
+                  className="c8"
+                >
+                  Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable
+                </p>
+              </div>
+            </div>
+            <div
+              className="c9"
+            >
+              <div
+                className="c10"
+              >
+                <div
+                  className="c11"
+                >
+                  <button
+                    className="NormalizedButton__Button-ey7f5x-0 c12"
+                    onClick={[Function]}
+                    type="button"
+                  >
+                    <span>
+                      <span
+                        className="c13"
+                      >
+                        Button
+                      </span>
+                    </span>
+                  </button>
+                </div>
+                <div
+                  className="c11"
+                >
+                  <button
+                    className="NormalizedButton__Button-ey7f5x-0 c14"
+                    onClick={[Function]}
+                    type="button"
+                  >
+                    <span>
+                      <span
+                        className="c13"
+                      >
+                        Button
+                      </span>
+                    </span>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <button
+              className="NormalizedButton__Button-ey7f5x-0 c15"
+              fullScreenMobile={false}
+              onClick={[Function]}
+              type="button"
+            >
+              <svg
+                aria-hidden="false"
+                className="c16"
+                focusable="false"
+                preserveAspectRatio="xMidYMid meet"
+                role="img"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  className="c17"
+                  d="m 1 1 l 22 22 m -22 0 l 22 -22"
+                  strokeWidth={2}
+                />
+                <title>
+                  Close this modal
+                </title>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      data-focus-guard={true}
+      style={
+        Object {
+          "height": "0px",
+          "left": "1px",
+          "overflow": "hidden",
+          "padding": 0,
+          "position": "fixed",
+          "top": "1px",
+          "width": "1px",
+        }
+      }
+      tabIndex={0}
+    />
+  </portal-dummy>
+</div>
+`;
+
+exports[`Storyshots Molecules / Modal Modal Standard Small 1`] = `
+.c11 {
+  margin-right: 8px;
+}
+
+.c1 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c9 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c10 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c15 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.c12 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 16px;
+  height: 16px;
+  fill: #0046FF;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
+}
+
+.c20 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 20px;
+  height: 20px;
+  fill: #282823;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
+}
+
+.c21 {
+  stroke: #282823;
+}
+
+.c13 {
+  -webkit-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  transform: rotate(0deg);
+}
+
+.c5 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 1.2;
+}
+
+.c7 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.c14 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.c17 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: inherit;
+  margin: 0;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.c16 {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  overflow: visible;
+  text-transform: none;
+  position: relative;
+  box-sizing: border-box;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  padding: 8px 16px;
+  min-height: 40px;
+  background-color: #FFFFFF;
+  color: #0046FF;
+  border: none;
+  border-radius: 0;
+  cursor: pointer;
+}
+
+.c16,
+.c16[type='button'],
+.c16[type='reset'],
+.c16[type='submit'] {
+  -webkit-appearance: button;
+}
+
+.c16::-moz-focus-inner,
+.c16[type='button']::-moz-focus-inner,
+.c16[type='reset']::-moz-focus-inner,
+.c16[type='submit']::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+.c16:-moz-focusring,
+.c16[type='button']:-moz-focusring,
+.c16[type='reset']:-moz-focusring,
+.c16[type='submit']:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+.c16::before {
+  content: '';
+  display: block;
+  position: absolute;
+  border: 2px solid #0046FF;
+  top: 0;
+  left: 0;
+  width: calc(100% - 4px);
+  height: calc(100% - 4px);
+}
+
+.c16:hover {
+  color: hsl(223.5,100%,40%);
+}
+
+.c16:hover::before {
+  border-color: hsl(223.5,100%,40%);
+}
+
+.c16:active {
+  color: hsl(223.5,100%,35%);
+}
+
+.c16:active::before {
+  border-color: hsl(223.5,100%,35%);
+}
+
+.c18 {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  overflow: visible;
+  text-transform: none;
+  position: relative;
+  box-sizing: border-box;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  padding: 8px 16px;
+  min-height: 40px;
+  background-color: #0046FF;
+  color: #FFFFFF;
+  border: none;
+  border-radius: 0;
+  cursor: pointer;
+}
+
+.c18,
+.c18[type='button'],
+.c18[type='reset'],
+.c18[type='submit'] {
+  -webkit-appearance: button;
+}
+
+.c18::-moz-focus-inner,
+.c18[type='button']::-moz-focus-inner,
+.c18[type='reset']::-moz-focus-inner,
+.c18[type='submit']::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+.c18:-moz-focusring,
+.c18[type='button']:-moz-focusring,
+.c18[type='reset']:-moz-focusring,
+.c18[type='submit']:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+.c18::before {
+  content: '';
+  display: block;
+  position: absolute;
+  border: 2px solid transparent;
+  top: 0;
+  left: 0;
+  width: calc(100% - 4px);
+  height: calc(100% - 4px);
+}
+
+.c18:hover {
+  background-color: hsl(223.5,100%,45%);
+}
+
+.c18:active {
+  background-color: hsl(223.5,100%,40%);
+}
+
+.c4 {
+  padding-right: 16px;
+}
+
+.c2 {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 500;
+  background-color: rgba(110,110,105,0.63);
+}
+
+.c19 {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  overflow: visible;
+  text-transform: none;
+  display: block;
+  background: none;
+  padding: 0;
+  border: 0;
+  cursor: pointer;
+  position: absolute;
+  -webkit-transform: translateY(3px);
+  -ms-transform: translateY(3px);
+  transform: translateY(3px);
+  top: 12px;
+  right: 12px;
+}
+
+.c19,
+.c19[type='button'],
+.c19[type='reset'],
+.c19[type='submit'] {
+  -webkit-appearance: button;
+}
+
+.c19::-moz-focus-inner,
+.c19[type='button']::-moz-focus-inner,
+.c19[type='reset']::-moz-focus-inner,
+.c19[type='submit']::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+.c19:-moz-focusring,
+.c19[type='button']:-moz-focusring,
+.c19[type='reset']:-moz-focusring,
+.c19[type='submit']:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+.c3 {
+  padding-bottom: 16px;
+  padding-right: 28px;
+  min-height: 20px;
+  -webkit-flex: 0 0 auto;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+}
+
+.c6 {
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  overflow: hidden;
+}
+
+.c8 {
+  padding-top: 16px;
+  -webkit-flex: 0 0 auto;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+}
+
+.c0 {
+  background-image: linear-gradient( #00D200,#FF1900 );
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 20px;
+  height: 200vh;
+}
+
+@media (min-width:760px) {
+  .c5 {
+    font-size: 24px;
+    line-height: 1.1666666666666667;
+  }
+}
+
+@media (max-width:759px) {
+
+}
+
+@media (min-width:760px) {
+
+}
+
+@media (min-width:976px) {
+
+}
+
+@media (min-width:1280px) {
+
+}
+
+@media (min-width:760px) {
+  .c19 {
+    top: 40px;
+    right: 40px;
+  }
+}
+
+<div>
+  <button
+    onClick={[Function]}
+    type="button"
+  >
+    Open modal
+  </button>
+  <div
+    className="c0"
+  />
+  <portal-dummy>
+    <div
+      data-focus-guard={true}
+      style={
+        Object {
+          "height": "0px",
+          "left": "1px",
+          "overflow": "hidden",
+          "padding": 0,
+          "position": "fixed",
+          "top": "1px",
+          "width": "1px",
+        }
+      }
+      tabIndex={0}
+    />
+    <div
+      data-focus-guard={true}
+      style={
+        Object {
+          "height": "0px",
+          "left": "1px",
+          "overflow": "hidden",
+          "padding": 0,
+          "position": "fixed",
+          "top": "1px",
+          "width": "1px",
+        }
+      }
+      tabIndex={1}
+    />
+    <div
+      data-focus-lock-disabled={false}
+      onBlur={[Function]}
+      onFocus={[Function]}
+    >
+      <div
+        onScrollCapture={[Function]}
+        onTouchMoveCapture={[Function]}
+        onWheelCapture={[Function]}
+      >
+        <div
+          className="c1 c2"
+          fullScreenMobile={false}
+          onClick={[Function]}
+        >
+          <div>
+            <div
+              className="c3"
+            >
+              <span
+                id="32val-ModalTitle"
+              >
+                <h2
+                  className="c4 c5"
+                >
+                  Header
+                </h2>
+              </span>
+            </div>
+            <div
+              className="c6"
+            >
+              <div
+                className=""
+              >
+                <p
+                  className="c7"
+                >
+                  Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of de Finibus Bonorum et Malorum (The Extremes of Good and
+                </p>
+              </div>
+            </div>
+            <div
+              className="c8"
+            >
+              <div
+                className="c9"
+              >
+                <div
+                  className="c10"
+                >
+                  <div
+                    className="c11"
+                  >
+                    <svg
+                      aria-hidden="true"
+                      className="c12 c13"
+                      direction="left"
+                      focusable="false"
+                      preserveAspectRatio="xMidYMid meet"
+                      role="presentation"
+                      viewBox="0 0 15 16"
+                    >
+                      <path
+                        d="M9.179 1l-6.21 6.222h12.873v1.556L2.97 8.777 9.18 15H6.984L0 8l6.984-7h2.195z"
+                      />
+                    </svg>
+                  </div>
+                  <span
+                    className="c14"
+                  >
+                    Back
+                  </span>
+                </div>
+                <div
+                  className="c15"
+                >
+                  <div
+                    className="c11"
+                  >
+                    <button
+                      className="NormalizedButton__Button-ey7f5x-0 c16"
+                      onClick={[Function]}
+                      type="button"
+                    >
+                      <span>
+                        <span
+                          className="c17"
+                        >
+                          Button
+                        </span>
+                      </span>
+                    </button>
+                  </div>
+                  <button
+                    className="NormalizedButton__Button-ey7f5x-0 c18"
+                    onClick={[Function]}
+                    type="button"
+                  >
+                    <span>
+                      <span
+                        className="c17"
+                      >
+                        Button
+                      </span>
+                    </span>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <button
+              className="NormalizedButton__Button-ey7f5x-0 c19"
+              fullScreenMobile={false}
+              onClick={[Function]}
+              type="button"
+            >
+              <svg
+                aria-hidden="false"
+                className="c20"
+                focusable="false"
+                preserveAspectRatio="xMidYMid meet"
+                role="img"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  className="c21"
+                  d="m 1 1 l 22 22 m -22 0 l 22 -22"
+                  strokeWidth={2}
+                />
+                <title>
+                  Close this modal
+                </title>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      data-focus-guard={true}
+      style={
+        Object {
+          "height": "0px",
+          "left": "1px",
+          "overflow": "hidden",
+          "padding": 0,
+          "position": "fixed",
+          "top": "1px",
+          "width": "1px",
+        }
+      }
+      tabIndex={0}
+    />
+  </portal-dummy>
+</div>
+`;
+
+exports[`Storyshots Molecules / Modal Node as Title 1`] = `
+.c8 {
+  margin-bottom: 8px;
+}
+
+.c1 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c4 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-left: -4px;
+  margin-right: -4px;
+}
+
+.c4 > * {
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+.c4 > *:not(:first-child) {
+  padding-top: 0;
+}
+
+.c5 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 20px;
+  height: 20px;
+  fill: #282823;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
+}
+
+.c11 {
+  stroke: #282823;
+}
+
+.c6 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 1.2;
+}
+
+.c9 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.c2 {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 500;
+}
+
+.c10 {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  overflow: visible;
+  text-transform: none;
+  display: block;
+  background: none;
+  padding: 0;
+  border: 0;
+  cursor: pointer;
+  position: absolute;
+  -webkit-transform: translateY(3px);
+  -ms-transform: translateY(3px);
+  transform: translateY(3px);
+  top: 20px;
+  right: 12px;
+}
+
+.c10,
+.c10[type='button'],
+.c10[type='reset'],
+.c10[type='submit'] {
+  -webkit-appearance: button;
+}
+
+.c10::-moz-focus-inner,
+.c10[type='button']::-moz-focus-inner,
+.c10[type='reset']::-moz-focus-inner,
+.c10[type='submit']::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+.c10:-moz-focusring,
+.c10[type='button']:-moz-focusring,
+.c10[type='reset']:-moz-focusring,
+.c10[type='submit']:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+.c3 {
+  padding-bottom: 16px;
+  padding-right: 28px;
+  min-height: 20px;
+  -webkit-flex: 0 0 auto;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+}
+
+.c7 {
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  overflow: hidden;
+}
+
+.c0 {
+  background-image: linear-gradient( #00D200,#FF1900 );
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 20px;
+  height: 200vh;
+}
+
+@media (min-width:760px) {
+  .c6 {
+    font-size: 24px;
+    line-height: 1.1666666666666667;
+  }
+}
+
+@media (min-width:760px) {
+  .c2 {
+    background-color: rgba(110,110,105,0.63);
+  }
+}
+
+@media (max-width:759px) {
+
+}
+
+@media (min-width:760px) {
+
+}
+
+@media (min-width:976px) {
+
+}
+
+@media (min-width:1280px) {
+
+}
+
+@media (min-width:760px) {
+  .c10 {
+    top: 40px;
+    right: 40px;
+  }
+}
+
+<div>
+  <div
+    className="c0"
+  />
+  <portal-dummy>
+    <div
+      data-focus-guard={true}
+      style={
+        Object {
+          "height": "0px",
+          "left": "1px",
+          "overflow": "hidden",
+          "padding": 0,
+          "position": "fixed",
+          "top": "1px",
+          "width": "1px",
+        }
+      }
+      tabIndex={0}
+    />
+    <div
+      data-focus-guard={true}
+      style={
+        Object {
+          "height": "0px",
+          "left": "1px",
+          "overflow": "hidden",
+          "padding": 0,
+          "position": "fixed",
+          "top": "1px",
+          "width": "1px",
+        }
+      }
+      tabIndex={1}
+    />
+    <div
+      data-focus-lock-disabled={false}
+      onBlur={[Function]}
+      onFocus={[Function]}
+    >
+      <div
+        onScrollCapture={[Function]}
+        onTouchMoveCapture={[Function]}
+        onWheelCapture={[Function]}
+      >
+        <div
+          className="c1 c2"
+          fullScreenMobile={true}
+          onClick={[Function]}
+        >
+          <div>
+            <div
+              className="c3"
+            >
+              <span
+                id="26val-ModalTitle"
+              >
+                <div
+                  className="c4"
+                >
+                  <svg
+                    aria-hidden="true"
+                    className="c5"
+                    focusable="false"
+                    preserveAspectRatio="xMidYMid meet"
+                    role="presentation"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M15 0L3 13.5h7.5L9 24l12-13.5h-7.5z"
+                      id="a"
+                    />
+                  </svg>
+                  <h2
+                    className="c6"
+                  >
+                    React Node Title
+                  </h2>
+                  <svg
+                    aria-hidden="true"
+                    className="c5"
+                    focusable="false"
+                    preserveAspectRatio="xMidYMid meet"
+                    role="presentation"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M15 0L3 13.5h7.5L9 24l12-13.5h-7.5z"
+                      id="a"
+                    />
+                  </svg>
+                </div>
+              </span>
+            </div>
+            <div
+              className="c7"
+            >
+              <div
+                className="c8"
+              >
+                <p
+                  className="c9"
+                >
+                  Modals should be used with care as they are quite intrusive on the user experience and demand immediate attention (while also blocking all other actions on the site). Always consider if you can solve a problem in another way first before you choose to go with the modal.
+                </p>
+              </div>
+              <div
+                className="c8"
+              >
+                <p
+                  className="c9"
+                >
+                  That being said they are a good tool if you need to grab the users attention, either to communicate something very important or make them take an action before proceeding.
+                </p>
+              </div>
+              <div
+                className="c8"
+              >
+                <p
+                  className="c9"
+                >
+                  Nielsen/Norman has an excellent article about their usage here
+                </p>
+              </div>
+              <p
+                className="c9"
+              >
+                <a
+                  href="https:// www.nngroup.com/articles/modal-nonmodal-dialog/"
+                >
+                  https:// www.nngroup.com/articles/modal-nonmodal-dialog/
+                </a>
+              </p>
+            </div>
+            <button
+              className="NormalizedButton__Button-ey7f5x-0 c10"
+              fullScreenMobile={true}
+              onClick={[Function]}
+              type="button"
+            >
+              <svg
+                aria-hidden="false"
+                className="c5"
+                focusable="false"
+                preserveAspectRatio="xMidYMid meet"
+                role="img"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  className="c11"
+                  d="m 1 1 l 22 22 m -22 0 l 22 -22"
+                  strokeWidth={2}
+                />
+                <title>
+                  Close this modal
+                </title>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      data-focus-guard={true}
+      style={
+        Object {
+          "height": "0px",
+          "left": "1px",
+          "overflow": "hidden",
+          "padding": 0,
+          "position": "fixed",
+          "top": "1px",
+          "width": "1px",
+        }
+      }
+      tabIndex={0}
+    />
+  </portal-dummy>
+</div>
+`;
+
+exports[`Storyshots Molecules / Modal Not full screen mobile 1`] = `
+.c7 {
+  margin-bottom: 8px;
+}
+
+.c11 {
+  margin-right: 8px;
+}
+
+.c1 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c10 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+}
+
+.c16 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 20px;
+  height: 20px;
+  fill: #282823;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
+}
+
+.c17 {
+  stroke: #282823;
+}
+
+.c5 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 1.2;
+}
+
+.c8 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.c13 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: inherit;
+  margin: 0;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.c12 {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  overflow: visible;
+  text-transform: none;
+  position: relative;
+  box-sizing: border-box;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  padding: 8px 16px;
+  min-height: 40px;
+  background-color: #FFFFFF;
+  color: #0046FF;
+  border: none;
+  border-radius: 0;
+  cursor: pointer;
+}
+
+.c12,
+.c12[type='button'],
+.c12[type='reset'],
+.c12[type='submit'] {
+  -webkit-appearance: button;
+}
+
+.c12::-moz-focus-inner,
+.c12[type='button']::-moz-focus-inner,
+.c12[type='reset']::-moz-focus-inner,
+.c12[type='submit']::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+.c12:-moz-focusring,
+.c12[type='button']:-moz-focusring,
+.c12[type='reset']:-moz-focusring,
+.c12[type='submit']:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+.c12::before {
+  content: '';
+  display: block;
+  position: absolute;
+  border: 2px solid #0046FF;
+  top: 0;
+  left: 0;
+  width: calc(100% - 4px);
+  height: calc(100% - 4px);
+}
+
+.c12:hover {
+  color: hsl(223.5,100%,40%);
+}
+
+.c12:hover::before {
+  border-color: hsl(223.5,100%,40%);
+}
+
+.c12:active {
+  color: hsl(223.5,100%,35%);
+}
+
+.c12:active::before {
+  border-color: hsl(223.5,100%,35%);
+}
+
+.c14 {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  overflow: visible;
+  text-transform: none;
+  position: relative;
+  box-sizing: border-box;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  padding: 8px 16px;
+  min-height: 40px;
+  background-color: #0046FF;
+  color: #FFFFFF;
+  border: none;
+  border-radius: 0;
+  cursor: pointer;
+}
+
+.c14,
+.c14[type='button'],
+.c14[type='reset'],
+.c14[type='submit'] {
+  -webkit-appearance: button;
+}
+
+.c14::-moz-focus-inner,
+.c14[type='button']::-moz-focus-inner,
+.c14[type='reset']::-moz-focus-inner,
+.c14[type='submit']::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+.c14:-moz-focusring,
+.c14[type='button']:-moz-focusring,
+.c14[type='reset']:-moz-focusring,
+.c14[type='submit']:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+.c14::before {
+  content: '';
+  display: block;
+  position: absolute;
+  border: 2px solid transparent;
+  top: 0;
+  left: 0;
+  width: calc(100% - 4px);
+  height: calc(100% - 4px);
+}
+
+.c14:hover {
+  background-color: hsl(223.5,100%,45%);
+}
+
+.c14:active {
+  background-color: hsl(223.5,100%,40%);
+}
+
+.c4 {
+  padding-right: 16px;
+}
+
+.c2 {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 500;
+  background-color: rgba(110,110,105,0.63);
+}
+
+.c15 {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  overflow: visible;
+  text-transform: none;
+  display: block;
+  background: none;
+  padding: 0;
+  border: 0;
+  cursor: pointer;
+  position: absolute;
+  -webkit-transform: translateY(3px);
+  -ms-transform: translateY(3px);
+  transform: translateY(3px);
+  top: 12px;
+  right: 12px;
+}
+
+.c15,
+.c15[type='button'],
+.c15[type='reset'],
+.c15[type='submit'] {
+  -webkit-appearance: button;
+}
+
+.c15::-moz-focus-inner,
+.c15[type='button']::-moz-focus-inner,
+.c15[type='reset']::-moz-focus-inner,
+.c15[type='submit']::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+.c15:-moz-focusring,
+.c15[type='button']:-moz-focusring,
+.c15[type='reset']:-moz-focusring,
+.c15[type='submit']:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+.c3 {
+  padding-bottom: 16px;
+  padding-right: 28px;
+  min-height: 20px;
+  -webkit-flex: 0 0 auto;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+}
+
+.c6 {
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  overflow: hidden;
+}
+
+.c9 {
+  padding-top: 16px;
+  -webkit-flex: 0 0 auto;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+}
+
+.c0 {
+  background-image: linear-gradient( #00D200,#FF1900 );
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 20px;
+  height: 200vh;
+}
+
+@media (min-width:760px) {
+  .c5 {
+    font-size: 24px;
+    line-height: 1.1666666666666667;
+  }
+}
+
+@media (max-width:759px) {
+
+}
+
+@media (min-width:760px) {
+
+}
+
+@media (min-width:976px) {
+
+}
+
+@media (min-width:1280px) {
+
+}
+
+@media (min-width:760px) {
+  .c15 {
+    top: 40px;
+    right: 40px;
+  }
+}
+
+<div>
+  <button
+    onClick={[Function]}
+    type="button"
+  >
+    Open modal
+  </button>
+  <div
+    className="c0"
+  />
+  <portal-dummy>
+    <div
+      data-focus-guard={true}
+      style={
+        Object {
+          "height": "0px",
+          "left": "1px",
+          "overflow": "hidden",
+          "padding": 0,
+          "position": "fixed",
+          "top": "1px",
+          "width": "1px",
+        }
+      }
+      tabIndex={0}
+    />
+    <div
+      data-focus-guard={true}
+      style={
+        Object {
+          "height": "0px",
+          "left": "1px",
+          "overflow": "hidden",
+          "padding": 0,
+          "position": "fixed",
+          "top": "1px",
+          "width": "1px",
+        }
+      }
+      tabIndex={1}
+    />
+    <div
+      data-focus-lock-disabled={false}
+      onBlur={[Function]}
+      onFocus={[Function]}
+    >
+      <div
+        onScrollCapture={[Function]}
+        onTouchMoveCapture={[Function]}
+        onWheelCapture={[Function]}
+      >
+        <div
+          className="c1 c2"
+          fullScreenMobile={false}
+          onClick={[Function]}
+        >
+          <div>
+            <div
+              className="c3"
+            >
+              <span
+                id="30val-ModalTitle"
+              >
+                <h2
+                  className="c4 c5"
+                >
+                  Dialog information
+                </h2>
+              </span>
+            </div>
+            <div
+              className="c6"
+            >
+              <div
+                className="c7"
+              >
+                <p
+                  className="c8"
+                >
+                  Resize the window to see the result of setting fullScreenMobile to false.
+                </p>
+              </div>
+            </div>
+            <div
+              className="c9"
+            >
+              <div
+                className="c10"
+              >
+                <div
+                  className="c11"
+                >
+                  <button
+                    className="NormalizedButton__Button-ey7f5x-0 c12"
+                    onClick={[Function]}
+                    type="button"
+                  >
+                    <span>
+                      <span
+                        className="c13"
+                      >
+                        Cancel
+                      </span>
+                    </span>
+                  </button>
+                </div>
+                <button
+                  className="NormalizedButton__Button-ey7f5x-0 c14"
+                  onClick={[Function]}
+                  type="button"
+                >
+                  <span>
+                    <span
+                      className="c13"
+                    >
+                      Confirm
+                    </span>
+                  </span>
+                </button>
+              </div>
+            </div>
+            <button
+              className="NormalizedButton__Button-ey7f5x-0 c15"
+              fullScreenMobile={false}
+              onClick={[Function]}
+              type="button"
+            >
+              <svg
+                aria-hidden="false"
+                className="c16"
+                focusable="false"
+                preserveAspectRatio="xMidYMid meet"
+                role="img"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  className="c17"
+                  d="m 1 1 l 22 22 m -22 0 l 22 -22"
+                  strokeWidth={2}
+                />
+                <title>
+                  Close this modal
+                </title>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      data-focus-guard={true}
+      style={
+        Object {
+          "height": "0px",
+          "left": "1px",
+          "overflow": "hidden",
+          "padding": 0,
+          "position": "fixed",
+          "top": "1px",
+          "width": "1px",
+        }
+      }
+      tabIndex={0}
+    />
+  </portal-dummy>
+</div>
+`;
+
+exports[`Storyshots Molecules / Modal Uncontrolled behavior 1`] = `
+.c7 {
+  margin-bottom: 8px;
+}
+
+.c1 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c10 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 20px;
+  height: 20px;
+  fill: #282823;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
+}
+
+.c11 {
+  stroke: #282823;
+}
+
+.c5 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 1.2;
+}
+
+.c8 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.c4 {
+  padding-right: 16px;
+}
+
+.c2 {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 500;
+}
+
+.c9 {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  overflow: visible;
+  text-transform: none;
+  display: block;
+  background: none;
+  padding: 0;
+  border: 0;
+  cursor: pointer;
+  position: absolute;
+  -webkit-transform: translateY(3px);
+  -ms-transform: translateY(3px);
+  transform: translateY(3px);
+  top: 20px;
+  right: 12px;
+}
+
+.c9,
+.c9[type='button'],
+.c9[type='reset'],
+.c9[type='submit'] {
+  -webkit-appearance: button;
+}
+
+.c9::-moz-focus-inner,
+.c9[type='button']::-moz-focus-inner,
+.c9[type='reset']::-moz-focus-inner,
+.c9[type='submit']::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+.c9:-moz-focusring,
+.c9[type='button']:-moz-focusring,
+.c9[type='reset']:-moz-focusring,
+.c9[type='submit']:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+.c3 {
+  padding-bottom: 16px;
+  padding-right: 28px;
+  min-height: 20px;
+  -webkit-flex: 0 0 auto;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+}
+
+.c6 {
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  overflow: hidden;
+}
+
+.c0 {
+  background-image: linear-gradient( #00D200,#FF1900 );
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 20px;
+  height: 200vh;
+}
+
+@media (min-width:760px) {
+  .c5 {
+    font-size: 24px;
+    line-height: 1.1666666666666667;
+  }
+}
+
+@media (min-width:760px) {
+  .c2 {
+    background-color: rgba(110,110,105,0.63);
+  }
+}
+
+@media (max-width:759px) {
+
+}
+
+@media (min-width:760px) {
+
+}
+
+@media (min-width:976px) {
+
+}
+
+@media (min-width:1280px) {
+
+}
+
+@media (min-width:760px) {
+  .c9 {
     top: 40px;
     right: 40px;
   }
@@ -2497,54 +8324,59 @@ exports[`Storyshots Molecules / Modal Uncontrolled behavior 1`] = `
             <div
               className="c6"
             >
-              <p
+              <div
                 className="c7"
               >
-                Modals should be used with care as they are quite intrusive on the user experience and demand immediate attention (while also blocking all other actions on the site). Always consider if you can solve a problem in another way first before you choose to go with the modal.
-              </p>
-            </div>
-            <div
-              className="c6"
-            >
-              <p
+                <p
+                  className="c8"
+                >
+                  Modals should be used with care as they are quite intrusive on the user experience and demand immediate attention (while also blocking all other actions on the site). Always consider if you can solve a problem in another way first before you choose to go with the modal.
+                </p>
+              </div>
+              <div
                 className="c7"
               >
-                That being said they are a good tool if you need to grab the users attention, either to communicate something very important or make them take an action before proceeding.
-              </p>
-            </div>
-            <div
-              className="c6"
-            >
-              <p
+                <p
+                  className="c8"
+                >
+                  That being said they are a good tool if you need to grab the users attention, either to communicate something very important or make them take an action before proceeding.
+                </p>
+              </div>
+              <div
                 className="c7"
               >
-                Nielsen/Norman has an excellent article about their usage here
+                <p
+                  className="c8"
+                >
+                  Nielsen/Norman has an excellent article about their usage here
+                </p>
+              </div>
+              <p
+                className="c8"
+              >
+                <a
+                  href="https:// www.nngroup.com/articles/modal-nonmodal-dialog/"
+                >
+                  https:// www.nngroup.com/articles/modal-nonmodal-dialog/
+                </a>
               </p>
             </div>
-            <p
-              className="c7"
-            >
-              <a
-                href="https:// www.nngroup.com/articles/modal-nonmodal-dialog/"
-              >
-                https:// www.nngroup.com/articles/modal-nonmodal-dialog/
-              </a>
-            </p>
             <button
-              className="NormalizedButton__Button-ey7f5x-0 c8"
+              className="NormalizedButton__Button-ey7f5x-0 c9"
+              fullScreenMobile={true}
               onClick={[Function]}
               type="button"
             >
               <svg
                 aria-hidden="false"
-                className="c9"
+                className="c10"
                 focusable="false"
                 preserveAspectRatio="xMidYMid meet"
                 role="img"
                 viewBox="0 0 24 24"
               >
                 <path
-                  className="c10"
+                  className="c11"
                   d="m 1 1 l 22 22 m -22 0 l 22 -22"
                   strokeWidth={2}
                 />
@@ -2577,7 +8409,7 @@ exports[`Storyshots Molecules / Modal Uncontrolled behavior 1`] = `
 `;
 
 exports[`Storyshots Molecules / Modal Without header 1`] = `
-.c4 {
+.c5 {
   margin-bottom: 8px;
 }
 
@@ -2597,7 +8429,7 @@ exports[`Storyshots Molecules / Modal Without header 1`] = `
   align-items: center;
 }
 
-.c7 {
+.c8 {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -2611,11 +8443,11 @@ exports[`Storyshots Molecules / Modal Without header 1`] = `
   display: block;
 }
 
-.c8 {
+.c9 {
   stroke: #282823;
 }
 
-.c5 {
+.c6 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
   margin: 0;
@@ -2633,7 +8465,7 @@ exports[`Storyshots Molecules / Modal Without header 1`] = `
   z-index: 500;
 }
 
-.c6 {
+.c7 {
   font-family: inherit;
   font-size: 100%;
   line-height: 1.15;
@@ -2649,29 +8481,29 @@ exports[`Storyshots Molecules / Modal Without header 1`] = `
   -webkit-transform: translateY(3px);
   -ms-transform: translateY(3px);
   transform: translateY(3px);
-  top: 12px;
+  top: 20px;
   right: 12px;
 }
 
-.c6,
-.c6[type='button'],
-.c6[type='reset'],
-.c6[type='submit'] {
+.c7,
+.c7[type='button'],
+.c7[type='reset'],
+.c7[type='submit'] {
   -webkit-appearance: button;
 }
 
-.c6::-moz-focus-inner,
-.c6[type='button']::-moz-focus-inner,
-.c6[type='reset']::-moz-focus-inner,
-.c6[type='submit']::-moz-focus-inner {
+.c7::-moz-focus-inner,
+.c7[type='button']::-moz-focus-inner,
+.c7[type='reset']::-moz-focus-inner,
+.c7[type='submit']::-moz-focus-inner {
   border-style: none;
   padding: 0;
 }
 
-.c6:-moz-focusring,
-.c6[type='button']:-moz-focusring,
-.c6[type='reset']:-moz-focusring,
-.c6[type='submit']:-moz-focusring {
+.c7:-moz-focusring,
+.c7[type='button']:-moz-focusring,
+.c7[type='reset']:-moz-focusring,
+.c7[type='submit']:-moz-focusring {
   outline: 1px dotted ButtonText;
 }
 
@@ -2682,6 +8514,14 @@ exports[`Storyshots Molecules / Modal Without header 1`] = `
   -webkit-flex: 0 0 auto;
   -ms-flex: 0 0 auto;
   flex: 0 0 auto;
+}
+
+.c4 {
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  overflow: hidden;
 }
 
 .c0 {
@@ -2716,7 +8556,7 @@ exports[`Storyshots Molecules / Modal Without header 1`] = `
 }
 
 @media (min-width:760px) {
-  .c6 {
+  .c7 {
     top: 40px;
     right: 40px;
   }
@@ -2785,54 +8625,59 @@ exports[`Storyshots Molecules / Modal Without header 1`] = `
             <div
               className="c4"
             >
-              <p
+              <div
                 className="c5"
               >
-                Modals should be used with care as they are quite intrusive on the user experience and demand immediate attention (while also blocking all other actions on the site). Always consider if you can solve a problem in another way first before you choose to go with the modal.
-              </p>
-            </div>
-            <div
-              className="c4"
-            >
-              <p
+                <p
+                  className="c6"
+                >
+                  Modals should be used with care as they are quite intrusive on the user experience and demand immediate attention (while also blocking all other actions on the site). Always consider if you can solve a problem in another way first before you choose to go with the modal.
+                </p>
+              </div>
+              <div
                 className="c5"
               >
-                That being said they are a good tool if you need to grab the users attention, either to communicate something very important or make them take an action before proceeding.
-              </p>
-            </div>
-            <div
-              className="c4"
-            >
-              <p
+                <p
+                  className="c6"
+                >
+                  That being said they are a good tool if you need to grab the users attention, either to communicate something very important or make them take an action before proceeding.
+                </p>
+              </div>
+              <div
                 className="c5"
               >
-                Nielsen/Norman has an excellent article about their usage here
+                <p
+                  className="c6"
+                >
+                  Nielsen/Norman has an excellent article about their usage here
+                </p>
+              </div>
+              <p
+                className="c6"
+              >
+                <a
+                  href="https:// www.nngroup.com/articles/modal-nonmodal-dialog/"
+                >
+                  https:// www.nngroup.com/articles/modal-nonmodal-dialog/
+                </a>
               </p>
             </div>
-            <p
-              className="c5"
-            >
-              <a
-                href="https:// www.nngroup.com/articles/modal-nonmodal-dialog/"
-              >
-                https:// www.nngroup.com/articles/modal-nonmodal-dialog/
-              </a>
-            </p>
             <button
-              className="NormalizedButton__Button-ey7f5x-0 c6"
+              className="NormalizedButton__Button-ey7f5x-0 c7"
+              fullScreenMobile={true}
               onClick={[Function]}
               type="button"
             >
               <svg
                 aria-hidden="false"
-                className="c7"
+                className="c8"
                 focusable="false"
                 preserveAspectRatio="xMidYMid meet"
                 role="img"
                 viewBox="0 0 24 24"
               >
                 <path
-                  className="c8"
+                  className="c9"
                   d="m 1 1 l 22 22 m -22 0 l 22 -22"
                   strokeWidth={2}
                 />
