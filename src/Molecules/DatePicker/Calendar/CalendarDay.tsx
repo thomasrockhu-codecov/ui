@@ -90,7 +90,7 @@ export const CalendarDay = React.forwardRef<HTMLDivElement, CalendarDayProps>(
       if (onClick) onClick(date);
     }, [date, disabled, onClick]);
 
-    const ariaLabel = format(date, 'cccc co MMMM, yyyy', {
+    const ariaLabel = format(date, 'EEEE dd MMMM, yyyy', {
       locale,
     });
 
@@ -111,7 +111,7 @@ export const CalendarDay = React.forwardRef<HTMLDivElement, CalendarDayProps>(
         aria-label={ariaLabel}
         tabIndex={disabled ? -1 : 0} // should not be focusable if disabled
       >
-        <Typography type="tertiary" color={(t) => t.color[textColor || 'text']}>
+        <Typography type="tertiary" aria-hidden color={(t) => t.color[textColor || 'text']}>
           {format(date, 'd')}
         </Typography>
       </StyledCalendarDay>

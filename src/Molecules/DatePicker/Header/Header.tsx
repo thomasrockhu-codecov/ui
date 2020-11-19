@@ -9,8 +9,8 @@ import SelectMonth from '../SelectMonth';
 import SelectYear from '../SelectYear';
 
 const Header: React.FC<Props> = ({
-  ariaLabelPrevious = 'Previous month {date}, button',
-  ariaLabelNext = 'Next month {date}, button',
+  ariaLabelPrevious = 'Previous month {date}',
+  ariaLabelNext = 'Next month {date}',
   id,
   locale,
   viewedDate,
