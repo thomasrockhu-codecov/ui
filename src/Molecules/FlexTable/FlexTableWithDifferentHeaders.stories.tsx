@@ -260,3 +260,46 @@ export const SortableHeaderUncontrolledWithDifferentAlignment = () => {
     </StyledBackground>
   );
 };
+
+export const StickyHeadersForDifferentScreenSizes = () => {
+  const StickyHeadersForDifferentScreenSizesExample = () => {
+    return (
+      <FlexTable
+        stickyHeader
+        sm={{ stickyHeader: false }}
+        md={{ stickyHeader: true }}
+        lg={{ stickyHeader: false }}
+        xl={{ stickyHeader: true }}
+      >
+        <FlexTable.HeaderRow>
+          <FlexTable.Header columnId="column1">Header 1</FlexTable.Header>
+          <FlexTable.Header columnId="column2">Header 2</FlexTable.Header>
+          <FlexTable.Header columnId="column3">Header 3</FlexTable.Header>
+          <FlexTable.Header columnId="column4">Header 4</FlexTable.Header>
+        </FlexTable.HeaderRow>
+
+        {[...Array(50)].map((_, index) => (
+          // eslint-disable-next-line react/no-array-index-key
+          <FlexTable.Row key={index}>
+            <FlexTable.Cell columnId="column1">Cell {index}-1</FlexTable.Cell>
+            <FlexTable.Cell columnId="column2" justifyContent="flex-end">
+              Cell {index}-2
+            </FlexTable.Cell>
+            <FlexTable.Cell columnId="column3" justifyContent="flex-end">
+              Cell {index}-3
+            </FlexTable.Cell>
+            <FlexTable.Cell columnId="column4" justifyContent="center">
+              Cell {index}-4
+            </FlexTable.Cell>
+          </FlexTable.Row>
+        ))}
+      </FlexTable>
+    );
+  };
+  return (
+    <StyledBackground>
+      <Typography type="title3">Sticky Headers For Different ScreenSizes</Typography>
+      <StickyHeadersForDifferentScreenSizesExample />
+    </StyledBackground>
+  );
+};
