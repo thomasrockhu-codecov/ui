@@ -1,3 +1,10 @@
+## [4.10.4](https://github.com/nordnet/ui/compare/v4.10.3...v4.10.4) (2020-11-19)
+
+
+### Bug Fixes
+
+* 🐛 support selecting a single date with range picker ([4fecda4](https://github.com/nordnet/ui/commit/4fecda4))
+
 ## [4.10.3](https://github.com/nordnet/ui/compare/v4.10.2...v4.10.3) (2020-11-19)
 
 
