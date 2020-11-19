@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import styled, { css } from 'styled-components';
+import styled from 'styled-components';
 import { ExpandRowComponent, RowComponent } from './Row.types';
 import { Flexbox } from '../../..';
 import { ColorFn } from '../../../common/Types/sharedTypes';
@@ -9,13 +9,16 @@ import { useFlexTable } from '../shared/FlexTableProvider';
 import { ExpandItems, ExpandItem } from './components/ExpandItems';
 import { ExpandArea, ExpandElement } from './components';
 import { Theme } from '../../../theme/theme.types';
+import { getStylesForSizes } from '../shared';
 
-const getDensityStyles = (density: Density) => `
+const getDensityStyles = ({ density }: { density: Density }) => `
   padding-top: ${getDensityPaddings(density)}px;
   padding-bottom: ${getDensityPaddings(density)}px;
 `;
 
-const getExpandableStyles = (p: { expandable: boolean; expanded: boolean } & { theme: Theme }) => `
+const getExpandableStyles = (
+  p: { expandable?: boolean; expanded?: boolean } & { theme: Theme },
+) => `
   padding-right: ${p.expandable ? p.theme.spacing.unit(2) : p.theme.spacing.unit(1)}px;
   padding-left: ${p.expandable ? p.theme.spacing.unit(1.5) : p.theme.spacing.unit(0.5)}px;
 
@@ -34,39 +37,19 @@ const getExpandableStyles = (p: { expandable: boolean; expanded: boolean } & { t
   }
 `;
 
+type ScreenSizeConfigurableProps = { density: Density; expandable: boolean };
+
 type StyledRowProps = {
   $hideSeparator: boolean;
   $expanded: boolean;
   $separatorColor: ColorFn;
   $hoverHighlight: boolean;
-  $xs: any;
-  $sm: any;
-  $md: any;
-  $lg: any;
-  $xl: any;
-} & MediaRelatedProps<{ density: Density; expandable: boolean; columnDistance: number }>;
-
-const getStyles = (size: string, p: StyledRowProps & { theme: Theme }) => {
-  return `
-    ${p[`$${size}`].density ? getDensityStyles(p[`$${size}`].density) : ''}
-    ${
-      p[`$${size}`].expandable
-        ? getExpandableStyles({ expanded: p.$expanded, theme: p.theme, ...p[`$${size}`] })
-        : ''
-    }
-  `;
+  $xs: ScreenSizeConfigurableProps;
+  $sm?: Partial<ScreenSizeConfigurableProps>;
+  $md?: Partial<ScreenSizeConfigurableProps>;
+  $lg?: Partial<ScreenSizeConfigurableProps>;
+  $xl?: Partial<ScreenSizeConfigurableProps>;
 };
-
-const getStylesForSize = (size: string) => css<StyledRowProps>`
-  ${(p) => {
-    const styles = getStyles(size, p);
-    if (size !== 'xs') {
-      return `${p.theme.media.greaterThan(p.theme.breakpoints[size])} { ${styles} }`;
-    }
-    return styles;
-  }}
-`;
-
 /* the cells are padded by row gutter 1 unit (4px) */
 const StyledRow = styled(Flexbox)<StyledRowProps>`
   background: ${(p) => p.theme.color.tableRowBackground};
@@ -85,13 +68,28 @@ const StyledRow = styled(Flexbox)<StyledRowProps>`
   margin-right: 0;
   margin-left: 0;
 
-  ${(p) => (p.$xs ? getStylesForSize('xs') : '')}
-  ${(p) => (p.$sm ? getStylesForSize('sm') : '')}
   ${(p) =>
-    p.$md ? getStylesForSize('md') : ''}
-  ${(p) => (p.$lg ? getStylesForSize('lg') : '')}
-  ${(p) =>
-    p.$xl ? getStylesForSize('xl') : ''}
+    getStylesForSizes<
+      {
+        theme: Theme;
+        expanded: StyledRowProps['$expanded'];
+        xs: ScreenSizeConfigurableProps;
+      } & MediaRelatedProps<ScreenSizeConfigurableProps>
+    >(
+      {
+        expanded: p.$expanded,
+        xs: p.$xs,
+        sm: p.$sm,
+        md: p.$md,
+        lg: p.$lg,
+        xl: p.$xl,
+        theme: p.theme,
+      },
+      {
+        density: getDensityStyles,
+        expandable: getExpandableStyles,
+      },
+    )}
 `;
 
 const StyledExpandedRow = styled('div').withConfig({
