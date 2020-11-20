@@ -56,7 +56,7 @@ export const ExpandElement: React.FC<
     setExpand: (expanded: boolean) => void;
   }
 > = ({ isContent, expanded = false, onExpandToggle, setExpand, disabled }) => {
-  const { xs, sm, md, lg, xl } = useFlexTable('expandable');
+  const { xs, sm, md, lg, xl } = useFlexTable<'expandable'>('expandable');
 
   if (!isContent) {
     return (

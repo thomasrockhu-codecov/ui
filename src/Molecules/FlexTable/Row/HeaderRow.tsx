@@ -77,7 +77,7 @@ export const HeaderRow: HeaderRowComponent = ({
   stickyOffsetTop = 0,
   ...htmlProps
 }) => {
-  const { xs, sm, md, lg, xl } = useFlexTable('stickyHeader');
+  const { xs, sm, md, lg, xl } = useFlexTable<'stickyHeader'>('stickyHeader');
   return (
     <StyledHeaderRow
       $hideSeparator={hideSeparator}

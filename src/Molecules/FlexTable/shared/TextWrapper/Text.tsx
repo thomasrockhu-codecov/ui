@@ -54,7 +54,7 @@ const StyledTypography = styled(Typography)<StyledTypographyProps>`
 `;
 
 const Text: TextComponent = ({ className, color, weight, children }) => {
-  const { xs, sm, md, lg, xl } = useFlexTable('fontSize');
+  const { xs, sm, md, lg, xl } = useFlexTable<'fontSize'>('fontSize');
   return (
     <StyledTypography
       className={className}

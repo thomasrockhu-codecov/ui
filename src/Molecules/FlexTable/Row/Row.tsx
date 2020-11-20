@@ -139,17 +139,16 @@ const Row: RowComponent = ({
   xl: xlExpandProps,
   ...htmlProps
 }) => {
-  const { xs: xsRow, sm: smRow, md: mdRow, lg: lgRow, xl: xlRow } = useFlexTable(
-    'density',
-    'expandable',
-  );
+  const { xs: xsRow, sm: smRow, md: mdRow, lg: lgRow, xl: xlRow } = useFlexTable<
+    'density' | 'expandable'
+  >('density', 'expandable');
   const {
     xs: xsFlexbox,
     sm: smFlexbox,
     md: mdFlexbox,
     lg: lgFlexbox,
     xl: xlFlexbox,
-  } = useFlexTable('columnDistance');
+  } = useFlexTable<'columnDistance'>('columnDistance');
 
   const controlledExpand = expanded !== undefined;
   const [expand, setExpand] = useState(controlledExpand ? expanded : initiallyExpanded);
