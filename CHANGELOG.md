@@ -1,3 +1,10 @@
+## [4.10.6](https://github.com/nordnet/ui/compare/v4.10.5...v4.10.6) (2020-11-20)
+
+
+### Bug Fixes
+
+* 🐛 date picker disabled dates via text input ([77e89b5](https://github.com/nordnet/ui/commit/77e89b5))
+
 ## [4.10.5](https://github.com/nordnet/ui/compare/v4.10.4...v4.10.5) (2020-11-19)
 
 
