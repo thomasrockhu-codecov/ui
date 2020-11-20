@@ -2,7 +2,7 @@ import React, { useRef, useState, useCallback, useEffect, useMemo } from 'react'
 import styled, { useTheme } from 'styled-components';
 import format from 'date-fns/format';
 import { useIntl } from 'react-intl';
-import { isBefore, isSameDay, startOfDay } from 'date-fns';
+import { isBefore, isSameDay, isSameMonth, startOfDay } from 'date-fns';
 import { Props } from './DatePicker.types';
 
 /**
@@ -188,10 +188,14 @@ export const DatePicker = (React.forwardRef<HTMLDivElement, Props>((props, ref) 
 
   const onDateClick = useCallback(
     (date: Date) => {
+      if (date && !isSameMonth(date, viewedDate)) {
+        setViewedDate(newDate(date));
+        setFocused([null, null]);
+      }
       if (variant === REGULAR_DATE_PICKER) handleDateClickRegular(date);
       else handleDateClickRange(date);
     },
-    [variant, handleDateClickRegular, handleDateClickRange],
+    [viewedDate, variant, handleDateClickRegular, handleDateClickRange, setFocused],
   );
 
   const allowedDate = useCallback(

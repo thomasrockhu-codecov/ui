@@ -1,3 +1,11 @@
+## [4.10.5](https://github.com/nordnet/ui/compare/v4.10.4...v4.10.5) (2020-11-19)
+
+
+### Bug Fixes
+
+* 🐛 add new date to avoid potential memory reference issues ([821ebdb](https://github.com/nordnet/ui/commit/821ebdb))
+* 🐛 swap month if date is clicked outside of current month ([cd80a59](https://github.com/nordnet/ui/commit/cd80a59))
+
 ## [4.10.4](https://github.com/nordnet/ui/compare/v4.10.3...v4.10.4) (2020-11-19)
 
 
