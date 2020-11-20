@@ -17,7 +17,7 @@ type BasePropsMergedWithScreenSizeProps<P extends GenericMediaRelatedPropsWithXs
 
 function getStyles<T, P>(props: P, getStylesPerProp: { [K in keyof T]?: (props: P) => string }) {
   return Object.keys(getStylesPerProp)
-    .map((key) => getStylesPerProp[key](props))
+    .map((key) => (props[key] !== undefined ? getStylesPerProp[key](props) : ''))
     .join('\n');
 }
 

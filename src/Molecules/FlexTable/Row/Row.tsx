@@ -16,9 +16,7 @@ const getDensityStyles = ({ density }: { density: Density }) => `
   padding-bottom: ${getDensityPaddings(density)}px;
 `;
 
-const getExpandableStyles = (
-  p: { expandable?: boolean; expanded?: boolean } & { theme: Theme },
-) => `
+const getExpandableStyles = (p: { expandable: boolean; expanded: boolean } & { theme: Theme }) => `
   padding-right: ${p.expandable ? p.theme.spacing.unit(2) : p.theme.spacing.unit(1)}px;
   padding-left: ${p.expandable ? p.theme.spacing.unit(1.5) : p.theme.spacing.unit(0.5)}px;
 
@@ -126,8 +124,7 @@ const Row: RowComponent = ({
   initiallyExpanded = false,
   hoverHighlight = true,
   hideSeparator = false,
-  // If false means that it's a header
-  isContent = true,
+  rowType = 'content',
   separatorColor = (theme) => theme.color.divider,
   onExpandToggle,
   expandChildren,
@@ -193,7 +190,7 @@ const Row: RowComponent = ({
       >
         {children}
         <ExpandElement
-          isContent={isContent}
+          rowType={rowType}
           expanded={expand}
           onExpandToggle={onExpandToggleClick}
           disabled={!expandChildren && !expandItems}

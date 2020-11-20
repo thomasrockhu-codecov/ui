@@ -13,7 +13,7 @@ type ScreenSizeConfigurableProps = {
 };
 
 type StyledExpandCellProps = {
-  $xs: any;
+  $xs: ScreenSizeConfigurableProps;
   $sm?: Partial<ScreenSizeConfigurableProps>;
   $md?: Partial<ScreenSizeConfigurableProps>;
   $lg?: Partial<ScreenSizeConfigurableProps>;
@@ -21,13 +21,10 @@ type StyledExpandCellProps = {
 };
 
 const getExpandableStyles = ({ expandable }: ScreenSizeConfigurableProps) => {
-  if (expandable === true) {
+  if (expandable) {
     return 'display: flex;';
   }
-  if (expandable === false) {
-    return 'display: none;';
-  }
-  return '';
+  return 'display: none;';
 };
 
 const StyledExpandCell = styled(ExpandCell)<StyledExpandCellProps>`
@@ -51,33 +48,33 @@ const StyledExpandCell = styled(ExpandCell)<StyledExpandCellProps>`
 
 export const ExpandElement: React.FC<
   ExpandAreaProps & {
-    isContent: boolean;
+    rowType: 'header' | 'content' | 'footer';
     disabled?: boolean;
     setExpand: (expanded: boolean) => void;
   }
-> = ({ isContent, expanded = false, onExpandToggle, setExpand, disabled }) => {
+> = ({ rowType, expanded = false, onExpandToggle, setExpand, disabled }) => {
   const { xs, sm, md, lg, xl } = useFlexTable<'expandable'>('expandable');
 
-  if (!isContent) {
-    return (
-      <FlexTable.Header
-        columnId={FlexTable.CONSTANTS.COLUMN_ID_EXPAND}
-        {...ICON_COLUMN_DEFAULT_FLEX_PROPS}
-      />
-    );
-  }
+  const expandProps =
+    rowType === 'content'
+      ? {
+          expanded,
+          onClick: () => (onExpandToggle ? onExpandToggle(!expanded) : setExpand(!expanded)),
+          disabled,
+        }
+      : {
+          as: rowType === 'header' ? FlexTable.Header : FlexTable.Footer,
+        };
 
   return (
     <StyledExpandCell
       columnId={COLUMN_ID_EXPAND}
-      expanded={expanded}
-      onClick={() => (onExpandToggle ? onExpandToggle(!expanded) : setExpand(!expanded))}
-      disabled={disabled}
       $xs={xs}
       $sm={sm}
       $md={md}
       $lg={lg}
       $xl={xl}
+      {...expandProps}
       {...ICON_COLUMN_DEFAULT_FLEX_PROPS}
     />
   );

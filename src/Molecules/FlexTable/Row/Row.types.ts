@@ -62,10 +62,10 @@ type Props = {
   hoverHighlight?: boolean;
   separatorColor?: ColorFn;
   /**
-   * Decides if it should render empty `Header` or chevron when table is expandable
-   * @default true
+   * Decides if it should render empty `Header`, `Footer` or chevron when table is expandable
+   * @default 'content'
    */
-  isContent?: boolean;
+  rowType?: 'header' | 'content' | 'footer';
 } & HtmlProps &
   ExpandRowProps;
 
@@ -84,10 +84,10 @@ type HeaderProps = {
    */
   hideSeparator?: boolean;
   /**
-   * Decides if it should render empty `Header` or chevron when table is expandable
-   * @default true
+   * Decides if it should render empty `Header`, `Footer` or chevron when table is expandable
+   * @default 'content'
    */
-  isContent?: boolean;
+  rowType?: 'header' | 'content' | 'footer';
   separatorColor?: ColorFn;
   /**
    *  When the header is sticky, use this number as value for css-top property.

@@ -14,21 +14,19 @@ const getStickyHeaderStyles = ({
   stickyHeader: boolean;
   stickyOffsetTop: number;
 }) => {
-  if (stickyHeader === true) {
+  if (stickyHeader) {
     return `
       z-index: 1;
       position: sticky;
       top: ${stickyOffsetTop}px;
     `;
   }
-  if (stickyHeader === false) {
-    return `
+
+  return `
       z-index: 0;
       position: static;
       top: unset;
     `;
-  }
-  return '';
 };
 
 type ScreenSizeConfigurableProps = { stickyHeader: boolean };
@@ -90,7 +88,7 @@ export const HeaderRow: HeaderRowComponent = ({
       $stickyOffsetTop={stickyOffsetTop}
       className={className}
       hoverHighlight={false}
-      isContent={false}
+      rowType="header"
       {...htmlProps}
     >
       {children}

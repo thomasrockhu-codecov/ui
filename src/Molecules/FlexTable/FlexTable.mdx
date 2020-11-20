@@ -322,7 +322,7 @@ More info regarding this can be found under _Performance_.
 
 ## Footer
 
-Similar functionality to `Cell`. Has like `Header` the property `isContent = false` to render empty cell instead of chevron.
+Similar functionality to `Cell`.
 
 <Canvas>
   <IntlProvider locale="en-UK">
@@ -415,7 +415,7 @@ Several Media breakpoints can be used. The properties `expandItems` and `expandC
 ### Header Row & Footer Row
 
 Header Row and Footer Row has the same functionality as an ordinary `Row` but with other default properties to fulfill their purpose.
-Most notably, the property `isContent` is set to `false`.
+Most notably, the property `rowType` is set to either `'header'` or `'footer'`, instead of the default value `'content'`.
 This keeps the row from rendering a chevron and instead provides a empty `Header` with fixed properties with the same `columnId` as all the chevrons in the table.
 
 ## Constants
