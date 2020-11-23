@@ -119,11 +119,9 @@ export const TableCustomDataCells = () => {
       } & FlexPropsType
     > = React.memo(({ columnId, value, percentage = false, ...cellProps }) => (
       <FlexTable.Footer columnId={columnId} {...cellProps}>
-        {({ fontSize }) => (
-          <FlexTable.Footer.TextWrapper fontSize={fontSize}>
-            <Number value={value} percentage={percentage} />
-          </FlexTable.Footer.TextWrapper>
-        )}
+        <FlexTable.Footer.TextWrapper>
+          <Number value={value} percentage={percentage} />
+        </FlexTable.Footer.TextWrapper>
       </FlexTable.Footer>
     ));
 
