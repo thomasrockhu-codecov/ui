@@ -4,31 +4,65 @@ import { HeaderRow, FooterRow, Row } from './Row';
 import { Header } from './Header';
 import { Footer } from './Footer';
 import { Cell } from './Cell';
-import { constants, ColumnProvider, CellInlineContainer } from './shared';
+import { constants, ColumnProvider, CellInlineContainer, getStylesForSizes } from './shared';
 import { FlexTableComponents, FlexTableComponent } from './FlexTable.types';
 import { FlexTableProvider, useFlexTable } from './shared/FlexTableProvider';
 import { ExpandCell } from './Cell/ExpandCell';
 import { Typography } from '../..';
 import { isElement } from '../../common/utils';
 import { ExpandItem, ExpandItems } from './Row/components';
+import { MediaRelatedProps } from './shared/shared.types';
 
 type HtmlDivProps = {} & React.HTMLAttributes<HTMLDivElement>;
 
-const StyledDiv = styled('div').withConfig({
-  shouldForwardProp: (prop) => !['stickyHeader'].includes(prop),
-})<
-  HtmlDivProps & {
-    stickyHeader: boolean;
-  }
->`
-  ${(p) => (p.stickyHeader ? 'position: relative;' : '')}
+type ScreenSizeConfigurableProps = {
+  stickyHeader: boolean;
+};
+
+type StyledDivProps = {
+  $xs: ScreenSizeConfigurableProps;
+  $sm: Partial<ScreenSizeConfigurableProps>;
+  $md: Partial<ScreenSizeConfigurableProps>;
+  $lg: Partial<ScreenSizeConfigurableProps>;
+  $xl: Partial<ScreenSizeConfigurableProps>;
+} & HtmlDivProps;
+
+const getStickyHeaderStyles = ({ stickyHeader }: ScreenSizeConfigurableProps) =>
+  stickyHeader ? 'position: relative;' : '';
+
+const StyledDiv = styled('div')<StyledDivProps>`
+  ${(p) =>
+    getStylesForSizes<
+      { xs: ScreenSizeConfigurableProps } & MediaRelatedProps<ScreenSizeConfigurableProps>
+    >(
+      {
+        theme: p.theme,
+        xs: p.$xs,
+        sm: p.$sm,
+        md: p.$md,
+        lg: p.$lg,
+        xl: p.$xl,
+      },
+      {
+        stickyHeader: getStickyHeaderStyles,
+      },
+    )}
 `;
 
 const FlexTableContainer: React.FC<HtmlDivProps> = ({ className, children, ...htmlDivProps }) => {
-  const { stickyHeader } = useFlexTable();
+  const { xs, sm, md, lg, xl } = useFlexTable<'stickyHeader'>('stickyHeader');
 
   return (
-    <StyledDiv className={className} role="table" stickyHeader={stickyHeader} {...htmlDivProps}>
+    <StyledDiv
+      className={className}
+      role="table"
+      $xs={xs}
+      $sm={sm}
+      $md={md}
+      $lg={lg}
+      $xl={xl}
+      {...htmlDivProps}
+    >
       {children}
     </StyledDiv>
   );

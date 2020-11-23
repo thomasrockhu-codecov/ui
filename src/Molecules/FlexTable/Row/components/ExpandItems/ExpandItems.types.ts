@@ -35,6 +35,6 @@ export type ExpandItemComponent = React.FC<{ item: ExpandItemProps; mobileItem?:
 
 export type ExpandItemsComponent = React.FC<{ items: ExpandItems }>;
 
-export type ExpandItemMediaConfigurableProps = {
-  hidden?: boolean;
-} & MediaRelatedProps<{ hidden?: boolean }>;
+export type ExpandItemMediaProps = {
+  xs: { hidden?: boolean };
+} & MediaRelatedProps<{ hidden: boolean }>;
