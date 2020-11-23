@@ -337,6 +337,7 @@ export const DatePicker = (React.forwardRef<HTMLDivElement, Props>((props, ref) 
         disableDate={disableDate}
         enableDate={enableDate}
         viewedDate={viewedDate}
+        setViewedDate={setViewedDate}
         locale={locale}
         onClick={onDateClick}
         selectedDate={selectedDate as Date}
