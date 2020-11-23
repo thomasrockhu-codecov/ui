@@ -35,4 +35,14 @@ type ExpandCellProps = {
   columnId: string;
 };
 
+type TextWrapperProps = {
+  /**
+   * Truncate the text inside and a tooltip on hover when truncated
+   * @default true
+   */
+  truncate?: boolean;
+};
+
+export type TextWrapperComponent = React.FC<TextWrapperProps>;
+
 export type ExpandCellComponent = React.FC<ExpandCellProps & FlexPropsType>;

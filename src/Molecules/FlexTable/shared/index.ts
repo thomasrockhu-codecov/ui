@@ -4,6 +4,7 @@ import { RenderForSizes } from './RenderForSizes';
 import * as constants from './constants';
 import { StyledTruncateTooltip } from './StyledTruncateTooltip';
 import getStylesForSizes from './getStylesForSizes';
+import { Text } from './Text';
 
 export {
   constants,
@@ -12,4 +13,5 @@ export {
   CellInlineContainer,
   StyledTruncateTooltip,
   getStylesForSizes,
+  Text,
 };

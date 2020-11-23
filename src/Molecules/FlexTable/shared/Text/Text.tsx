@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { TextComponent } from './TextWrapper.types';
+import { TextComponent } from './Text.types';
 import { FontSize, MediaRelatedProps } from '../shared.types';
 import { Theme } from '../../../../theme/theme.types';
 import { Typography } from '../../../../index';

@@ -9,8 +9,7 @@ import {
   RenderFunc,
 } from './ExpandItems.types';
 import { Props as FlexBoxProps } from '../../../../../Atoms/Flexbox/Flexbox.types';
-import { TextWrapperLabel } from './TextWrapperLabel';
-import { TextWrapperValue } from './TextWrapperValue';
+import { TextWrapper } from './TextWrapper';
 
 type StyledFlexboxProps = {
   $sm: any;
@@ -50,16 +49,14 @@ const StyledFlexboxItem = styled(StyledFlexbox)<StyledFlexboxProps>`
 const ExpandRenderer: React.FC<{
   children: React.ReactNode | RenderFunc;
   isLabel?: boolean;
-}> = ({ isLabel = false, children }) => {
-  const Wrapper = isLabel ? TextWrapperLabel : TextWrapperValue;
-
-  return (
-    <>
-      {isElement(children) && children}
-      {isFunction(children) ? children() : !isElement(children) && <Wrapper>{children}</Wrapper>}
-    </>
-  );
-};
+}> = ({ isLabel = false, children }) => (
+  <>
+    {isElement(children) && children}
+    {isFunction(children)
+      ? children()
+      : !isElement(children) && <TextWrapper isLabel={isLabel}>{children}</TextWrapper>}
+  </>
+);
 
 const MobileItem: React.FC<
   {
@@ -108,5 +105,4 @@ export const ExpandItem: ExpandItemComponent = ({ item, mobileItem }) => {
   );
 };
 
-ExpandItem.TextWrapperValue = TextWrapperValue;
-ExpandItem.TextWrapperLabel = TextWrapperLabel;
+ExpandItem.TextWrapper = TextWrapper;

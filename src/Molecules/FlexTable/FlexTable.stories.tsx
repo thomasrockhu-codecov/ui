@@ -105,11 +105,9 @@ export const TableCustomDataCells = () => {
       } & FlexPropsType
     > = React.memo(({ columnId, value, percentage = false, ...cellProps }) => (
       <FlexTable.Cell columnId={columnId} {...cellProps}>
-        {({ fontSize }) => (
-          <FlexTable.Cell.TextWrapper fontSize={fontSize}>
-            <Number value={value} percentage={percentage} />
-          </FlexTable.Cell.TextWrapper>
-        )}
+        <FlexTable.Cell.TextWrapper>
+          <Number value={value} percentage={percentage} />
+        </FlexTable.Cell.TextWrapper>
       </FlexTable.Cell>
     ));
 
@@ -132,11 +130,9 @@ export const TableCustomDataCells = () => {
     const DateCell: React.FC<{ columnId: string; value: number } & FlexPropsType> = React.memo(
       ({ columnId, value, ...cellProps }) => (
         <FlexTable.Cell columnId={columnId} {...cellProps}>
-          {({ fontSize }) => (
-            <FlexTable.Cell.TextWrapper fontSize={fontSize}>
-              <DateTime value={value} />
-            </FlexTable.Cell.TextWrapper>
-          )}
+          <FlexTable.Cell.TextWrapper>
+            <DateTime value={value} />
+          </FlexTable.Cell.TextWrapper>
         </FlexTable.Cell>
       ),
     );
@@ -144,11 +140,9 @@ export const TableCustomDataCells = () => {
     const FlagCell: React.FC<{ columnId: string; country: string } & FlexPropsType> = React.memo(
       ({ columnId, country, ...cellProps }) => (
         <FlexTable.Cell columnId={columnId} {...cellProps}>
-          {({ fontSize }) => (
-            <FlexTable.Cell.TextWrapper fontSize={fontSize}>
-              <Flag country={country} />
-            </FlexTable.Cell.TextWrapper>
-          )}
+          <FlexTable.Cell.TextWrapper>
+            <Flag country={country} />
+          </FlexTable.Cell.TextWrapper>
         </FlexTable.Cell>
       ),
     );
@@ -189,7 +183,7 @@ export const TableCustomDataCells = () => {
             justifyContent="flex-end"
             flex="0 0 150px"
           />
-          <FlagCell columnId="country" country="UK" />
+          <FlagCell columnId="country" country="NO" />
           <NumberCell columnId="percentage" value={25} percentage justifyContent="flex-end" />
         </FlexTable.Row>
         <FlexTable.FooterRow>

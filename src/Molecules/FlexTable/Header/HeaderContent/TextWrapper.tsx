@@ -1,7 +1,6 @@
 import React from 'react';
 import { TextWrapperComponent } from './HeaderContent.types';
-import { StyledTruncateTooltip } from '../../shared';
-import Text from '../../shared/TextWrapper/Text';
+import { StyledTruncateTooltip, Text } from '../../shared';
 
 export const TextWrapper: TextWrapperComponent = ({
   className,

@@ -15,11 +15,6 @@ export type Props = {
 
 export type TextWrapperProps = {
   /**
-   * Set font size
-   * @default 'm'
-   */
-  fontSize?: FontSize;
-  /**
    * Set font weight
    * @default 'bold'
    */

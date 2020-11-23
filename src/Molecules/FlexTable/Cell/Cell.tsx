@@ -19,8 +19,7 @@ const Cell: CellComponent = (props) => {
       {isElement(children) && children}
       {isFunction(children)
         ? children({ columnId })
-        : // Truncate? exists on CellComponent through TextWrapper props
-          !isElement(children) && <TextWrapper>{children}</TextWrapper>}
+        : !isElement(children) && <TextWrapper>{children}</TextWrapper>}
     </StyledFlexbox>
   );
 };
