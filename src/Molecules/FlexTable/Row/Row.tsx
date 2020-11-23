@@ -1,13 +1,13 @@
 import React, { useState, useEffect } from 'react';
 import styled from 'styled-components';
-import { ExpandRowComponent, RowComponent } from './Row.types';
+import { RowComponent } from './Row.types';
 import { Flexbox } from '../../..';
 import { ColorFn } from '../../../common/Types/sharedTypes';
 import { getDensityPaddings } from '../shared/textUtils';
 import { Density, MediaRelatedProps } from '../shared/shared.types';
 import { useFlexTable } from '../shared/FlexTableProvider';
 import { ExpandItems, ExpandItem } from './components/ExpandItems';
-import { ExpandArea, ExpandElement } from './components';
+import { ExpandElement, ExpandRow } from './components';
 import { Theme } from '../../../theme/theme.types';
 import { getStylesForSizes } from '../shared';
 
@@ -16,13 +16,27 @@ const getDensityStyles = ({ density }: { density: Density }) => `
   padding-bottom: ${getDensityPaddings(density)}px;
 `;
 
-const getExpandableStyles = (p: { expandable: boolean; expanded: boolean } & { theme: Theme }) => `
+const getExpandableStyles = (
+  p: { expandable: boolean; expanded: boolean; hideSeparator: boolean; separatorColor: ColorFn } & {
+    theme: Theme;
+  },
+) => `
   padding-right: ${p.expandable ? p.theme.spacing.unit(2) : p.theme.spacing.unit(1)}px;
   padding-left: ${p.expandable ? p.theme.spacing.unit(1.5) : p.theme.spacing.unit(0.5)}px;
 
   border-left: ${p.theme.spacing.unit(0.5)}px solid ${
   p.expanded && p.expandable ? p.theme.color.cta : 'transparent'
 };
+   
+ ${(() => {
+   if (p.hideSeparator) {
+     return '';
+   }
+   if (p.expandable && p.expanded) {
+     return '';
+   }
+   return `border-bottom: 1px solid ${p.separatorColor(p.theme)};`;
+ })()}
    
   & > * {
     &:first-child {
@@ -51,10 +65,6 @@ type StyledRowProps = {
 /* the cells are padded by row gutter 1 unit (4px) */
 const StyledRow = styled(Flexbox)<StyledRowProps>`
   background: ${(p) => p.theme.color.tableRowBackground};
-  ${(p) =>
-    !p.$hideSeparator && !p.$expanded
-      ? `border-bottom: 1px solid ${p.$separatorColor(p.theme)};`
-      : ''}
 
   ${(p) =>
     p.$hoverHighlight &&
@@ -70,11 +80,15 @@ const StyledRow = styled(Flexbox)<StyledRowProps>`
     getStylesForSizes<
       {
         expanded: StyledRowProps['$expanded'];
+        hideSeparator: StyledRowProps['$hideSeparator'];
+        separatorColor: StyledRowProps['$separatorColor'];
         xs: ScreenSizeConfigurableProps;
       } & MediaRelatedProps<ScreenSizeConfigurableProps>
     >(
       {
         expanded: p.$expanded,
+        hideSeparator: p.$hideSeparator,
+        separatorColor: p.$separatorColor,
         xs: p.$xs,
         sm: p.$sm,
         md: p.$md,
@@ -88,35 +102,6 @@ const StyledRow = styled(Flexbox)<StyledRowProps>`
       },
     )}
 `;
-
-const StyledExpandedRow = styled('div').withConfig({
-  shouldForwardProp: (prop) => !['separatorColor'].includes(prop),
-})<{ separatorColor: ColorFn }>`
-  border-left: ${(p) => p.theme.spacing.unit(0.5)}px solid ${(p) => p.theme.color.cta};
-  border-bottom: 1px solid ${(p) => p.separatorColor(p.theme)};
-`;
-
-const ExpandRow: ExpandRowComponent = ({
-  expandItems,
-  expandChildren,
-  sm,
-  md,
-  lg,
-  xl,
-  separatorColor = (theme) => theme.color.divider,
-  ...htmlProps
-}) => (
-  <StyledExpandedRow role="row" separatorColor={separatorColor} {...htmlProps}>
-    <ExpandArea
-      expandItems={expandItems}
-      expandChildren={expandChildren}
-      sm={sm}
-      md={md}
-      lg={lg}
-      xl={xl}
-    />
-  </StyledExpandedRow>
-);
 
 const Row: RowComponent = ({
   className,

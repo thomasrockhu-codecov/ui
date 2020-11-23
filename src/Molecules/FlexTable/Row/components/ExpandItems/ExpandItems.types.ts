@@ -10,7 +10,11 @@ type TextWrapperProps = {
    * @default true
    */
   truncate?: boolean;
-  isLabel: boolean;
+  /**
+   * Sets text color to ´label´ when true
+   * @default false
+   */
+  isLabel?: boolean;
 };
 
 export type TextWrapperComponent = React.FC<TextWrapperProps>;

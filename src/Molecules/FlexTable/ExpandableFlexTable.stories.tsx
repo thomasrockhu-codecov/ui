@@ -26,15 +26,15 @@ const expandedItemsGenerator = (renderComponent = false) =>
     const labelText = `Label ${keyName}`;
     const label = renderComponent
       ? () => (
-          <FlexTable.ExpandItem.TextWrapperLabel>{labelText}</FlexTable.ExpandItem.TextWrapperLabel>
+          <FlexTable.ExpandItem.TextWrapper isLabel>{labelText}</FlexTable.ExpandItem.TextWrapper>
         )
       : labelText;
     const valueText = Math.floor(10 ** (20 - Math.ceil(Math.random() * 20)) * Math.random());
     const value = renderComponent
       ? () => (
-          <FlexTable.ExpandItem.TextWrapperValue>
+          <FlexTable.ExpandItem.TextWrapper>
             <Number value={valueText} />
-          </FlexTable.ExpandItem.TextWrapperValue>
+          </FlexTable.ExpandItem.TextWrapper>
         )
       : valueText.toString();
     return [...acc, { label, value }];
