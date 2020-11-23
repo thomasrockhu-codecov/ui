@@ -1,3 +1,11 @@
+## [4.10.7](https://github.com/nordnet/ui/compare/v4.10.6...v4.10.7) (2020-11-23)
+
+
+### Bug Fixes
+
+* 🐛 conflict merge fix with modalinner and storyshots ([658b6d6](https://github.com/nordnet/ui/commit/658b6d6))
+* 🐛 margin top auto instead of flex grow container, safari ([3fccb3a](https://github.com/nordnet/ui/commit/3fccb3a))
+
 ## [4.10.6](https://github.com/nordnet/ui/compare/v4.10.5...v4.10.6) (2020-11-20)
 
 
