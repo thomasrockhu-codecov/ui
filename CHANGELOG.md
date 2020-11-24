@@ -1,3 +1,15 @@
+# [4.11.0](https://github.com/nordnet/ui/compare/v4.10.7...v4.11.0) (2020-11-24)
+
+
+### Bug Fixes
+
+* travis plz ([bf347ca](https://github.com/nordnet/ui/commit/bf347ca))
+
+
+### Features
+
+* 🎸 step to next/prev month with arrow keys ([8e0b9c7](https://github.com/nordnet/ui/commit/8e0b9c7))
+
 ## [4.10.7](https://github.com/nordnet/ui/compare/v4.10.6...v4.10.7) (2020-11-23)
 
 
