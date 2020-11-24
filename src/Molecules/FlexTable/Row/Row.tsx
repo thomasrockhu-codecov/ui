@@ -4,7 +4,7 @@ import { RowComponent } from './Row.types';
 import { Flexbox } from '../../..';
 import { ColorFn } from '../../../common/Types/sharedTypes';
 import { getDensityPaddings } from '../shared/textUtils';
-import { Density, MediaRelatedProps } from '../shared/shared.types';
+import { Density } from '../shared/shared.types';
 import { useFlexTable } from '../shared/FlexTableProvider';
 import { ExpandItems, ExpandItem } from './components/ExpandItems';
 import { ExpandElement, ExpandRow } from './components';
@@ -57,10 +57,10 @@ type StyledRowProps = {
   $separatorColor: ColorFn;
   $hoverHighlight: boolean;
   $xs: ScreenSizeConfigurableProps;
-  $sm?: Partial<ScreenSizeConfigurableProps>;
-  $md?: Partial<ScreenSizeConfigurableProps>;
-  $lg?: Partial<ScreenSizeConfigurableProps>;
-  $xl?: Partial<ScreenSizeConfigurableProps>;
+  $sm: Partial<ScreenSizeConfigurableProps>;
+  $md: Partial<ScreenSizeConfigurableProps>;
+  $lg: Partial<ScreenSizeConfigurableProps>;
+  $xl: Partial<ScreenSizeConfigurableProps>;
 };
 /* the cells are padded by row gutter 1 unit (4px) */
 const StyledRow = styled(Flexbox)<StyledRowProps>`
@@ -76,31 +76,29 @@ const StyledRow = styled(Flexbox)<StyledRowProps>`
   margin-right: 0;
   margin-left: 0;
 
-  ${(p) =>
-    getStylesForSizes<
-      {
-        expanded: StyledRowProps['$expanded'];
-        hideSeparator: StyledRowProps['$hideSeparator'];
-        separatorColor: StyledRowProps['$separatorColor'];
-        xs: ScreenSizeConfigurableProps;
-      } & MediaRelatedProps<ScreenSizeConfigurableProps>
-    >(
-      {
-        expanded: p.$expanded,
-        hideSeparator: p.$hideSeparator,
-        separatorColor: p.$separatorColor,
-        xs: p.$xs,
-        sm: p.$sm,
-        md: p.$md,
-        lg: p.$lg,
-        xl: p.$xl,
-        theme: p.theme,
-      },
-      {
-        density: getDensityStyles,
-        expandable: getExpandableStyles,
-      },
-    )}
+  ${getStylesForSizes<
+    {
+      expanded: StyledRowProps['$expanded'];
+      hideSeparator: StyledRowProps['$hideSeparator'];
+      separatorColor: StyledRowProps['$separatorColor'];
+    },
+    ScreenSizeConfigurableProps
+  >(
+    (p: StyledRowProps) => ({
+      expanded: p.$expanded,
+      hideSeparator: p.$hideSeparator,
+      separatorColor: p.$separatorColor,
+      xs: p.$xs,
+      sm: p.$sm,
+      md: p.$md,
+      lg: p.$lg,
+      xl: p.$xl,
+    }),
+    {
+      density: getDensityStyles,
+      expandable: getExpandableStyles,
+    },
+  )}
 `;
 
 const Row: RowComponent = ({

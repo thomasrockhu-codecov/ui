@@ -11,7 +11,6 @@ import {
 import { Props as FlexBoxProps } from '../../../../../Atoms/Flexbox/Flexbox.types';
 import { TextWrapper } from './TextWrapper';
 import { getStylesForSizes } from '../../../shared';
-import { MediaRelatedProps } from '../../../shared/shared.types';
 
 type ScreenSizeConfigurableProps = {
   hidden?: boolean;
@@ -34,22 +33,18 @@ const StyledOverflowItem = styled(Flexbox)<{ textAlign?: string }>`
 `;
 
 const StyledFlexbox = styled(Flexbox)<StyledFlexboxProps>`
-  ${(p) =>
-    getStylesForSizes<
-      { xs: ScreenSizeConfigurableProps } & MediaRelatedProps<ScreenSizeConfigurableProps>
-    >(
-      {
-        theme: p.theme,
-        xs: p.$xs,
-        sm: p.$sm,
-        md: p.$md,
-        lg: p.$lg,
-        xl: p.$xl,
-      },
-      {
-        hidden: getHiddenStyles,
-      },
-    )}
+  ${getStylesForSizes<{}, ScreenSizeConfigurableProps>(
+    (p: StyledFlexboxProps) => ({
+      xs: p.$xs,
+      sm: p.$sm,
+      md: p.$md,
+      lg: p.$lg,
+      xl: p.$xl,
+    }),
+    {
+      hidden: getHiddenStyles,
+    },
+  )}
 `;
 
 const StyledFlexboxItem = styled(StyledFlexbox)<StyledFlexboxProps>`

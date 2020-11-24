@@ -4,7 +4,6 @@ import { ExpandArea } from '.';
 import { ColorFn } from '../../../../common/Types/sharedTypes';
 import { getStylesForSizes } from '../../shared';
 import { useFlexTable } from '../../shared/FlexTableProvider';
-import { MediaRelatedProps } from '../../shared/shared.types';
 import { ExpandRowComponent } from '../Row.types';
 
 type ScreenSizeConfigurableProps = {
@@ -21,34 +20,28 @@ const getExpandableStyles = ({ expandable }: ScreenSizeConfigurableProps) => {
 type StyledExpandedRow = {
   $separatorColor: ColorFn;
   $xs: ScreenSizeConfigurableProps;
-  $sm?: Partial<ScreenSizeConfigurableProps>;
-  $md?: Partial<ScreenSizeConfigurableProps>;
-  $lg?: Partial<ScreenSizeConfigurableProps>;
-  $xl?: Partial<ScreenSizeConfigurableProps>;
+  $sm: Partial<ScreenSizeConfigurableProps>;
+  $md: Partial<ScreenSizeConfigurableProps>;
+  $lg: Partial<ScreenSizeConfigurableProps>;
+  $xl: Partial<ScreenSizeConfigurableProps>;
 };
 
 const StyledExpandedRow = styled('div')<StyledExpandedRow>`
   border-left: ${(p) => p.theme.spacing.unit(0.5)}px solid ${(p) => p.theme.color.cta};
   border-bottom: 1px solid ${(p) => p.$separatorColor(p.theme)};
 
-  ${(p) =>
-    getStylesForSizes<
-      {
-        xs: ScreenSizeConfigurableProps;
-      } & MediaRelatedProps<ScreenSizeConfigurableProps>
-    >(
-      {
-        xs: p.$xs,
-        sm: p.$sm,
-        md: p.$md,
-        lg: p.$lg,
-        xl: p.$xl,
-        theme: p.theme,
-      },
-      {
-        expandable: getExpandableStyles,
-      },
-    )}
+  ${getStylesForSizes<{}, ScreenSizeConfigurableProps>(
+    (p: StyledExpandedRow) => ({
+      xs: p.$xs,
+      sm: p.$sm,
+      md: p.$md,
+      lg: p.$lg,
+      xl: p.$xl,
+    }),
+    {
+      expandable: getExpandableStyles,
+    },
+  )}
 `;
 
 export const ExpandRow: ExpandRowComponent = ({

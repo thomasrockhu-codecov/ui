@@ -11,7 +11,6 @@ import { ExpandCell } from './Cell/ExpandCell';
 import { Typography } from '../..';
 import { isElement } from '../../common/utils';
 import { ExpandItem, ExpandItems } from './Row/components';
-import { MediaRelatedProps } from './shared/shared.types';
 
 type HtmlDivProps = {} & React.HTMLAttributes<HTMLDivElement>;
 
@@ -31,22 +30,18 @@ const getStickyHeaderStyles = ({ stickyHeader }: ScreenSizeConfigurableProps) =>
   stickyHeader ? 'position: relative;' : '';
 
 const StyledDiv = styled('div')<StyledDivProps>`
-  ${(p) =>
-    getStylesForSizes<
-      { xs: ScreenSizeConfigurableProps } & MediaRelatedProps<ScreenSizeConfigurableProps>
-    >(
-      {
-        theme: p.theme,
-        xs: p.$xs,
-        sm: p.$sm,
-        md: p.$md,
-        lg: p.$lg,
-        xl: p.$xl,
-      },
-      {
-        stickyHeader: getStickyHeaderStyles,
-      },
-    )}
+  ${getStylesForSizes<{}, ScreenSizeConfigurableProps>(
+    (p: StyledDivProps) => ({
+      xs: p.$xs,
+      sm: p.$sm,
+      md: p.$md,
+      lg: p.$lg,
+      xl: p.$xl,
+    }),
+    {
+      stickyHeader: getStickyHeaderStyles,
+    },
+  )}
 `;
 
 const FlexTableContainer: React.FC<HtmlDivProps> = ({ className, children, ...htmlDivProps }) => {

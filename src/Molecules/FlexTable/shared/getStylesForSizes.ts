@@ -1,35 +1,29 @@
 import { Theme } from '../../../theme/theme.types';
 import { MediaRelatedProps } from './shared.types';
 
-type GenericBaseProps = { [key: string]: any };
-
-type GenericScreenSizeProps = { [key: string]: any };
-
-type GenericMediaRelatedPropsWithXs = {
-  xs: GenericScreenSizeProps & MediaRelatedProps<GenericScreenSizeProps>;
-};
-
-type BasePropsMergedWithScreenSizeProps<P extends GenericMediaRelatedPropsWithXs> = Exclude<
-  P,
-  'xs' | 'sm' | 'md' | 'lg' | 'xl'
-> &
-  P['xs'];
-
-function getStyles<T, P>(props: P, getStylesPerProp: { [K in keyof T]?: (props: P) => string }) {
-  return Object.keys(getStylesPerProp)
-    .map((key) => (props[key] !== undefined ? getStylesPerProp[key](props) : ''))
-    .join('\n');
-}
-
-function getStylesForSizes<P extends GenericBaseProps & GenericMediaRelatedPropsWithXs>(
-  props: P & { theme: Theme },
-  getStylesPerProp: {
-    [K in keyof P['xs']]: (
-      props: BasePropsMergedWithScreenSizeProps<P & { theme: Theme }>,
+/**
+ * Generates styles for different screen sizes based on props.
+ * @param getProps function that returns the required props from all the component props, which are then used to create styles for different screen sizes
+ * @param stylesPerPropCallbacks object with callbacks that returns the respective styles for each key.
+ * @returns styles for all different screen sizes, where all the styles for a specific screen size are wrapped in their respective media query. For example: all md styles will be wrapped in a `theme.media.greaterThan(p.theme.breakpoints['md'])` media query.
+ */
+const getStylesForSizes = <BaseProps, ScreenSizeConfigurableProps>(
+  getProps: (
+    p: any,
+  ) => BaseProps & {
+    xs: ScreenSizeConfigurableProps;
+  } & MediaRelatedProps<ScreenSizeConfigurableProps>,
+  stylesPerPropCallbacks: {
+    [K in keyof ScreenSizeConfigurableProps]: (
+      props: BaseProps & ScreenSizeConfigurableProps & { theme: Theme },
     ) => string;
   },
-) {
+) => (p: { [key: string]: any; theme: Theme }) => {
+  // Get all the required props
+  const props = getProps(p);
+  // Extract the screen size configurable props
   const { xs, sm, md, lg, xl, ...baseProps } = props;
+  // Map over all the screen sizes and generate the styles for each size
   return [
     { size: 'xs', ...xs },
     { size: 'sm', ...sm },
@@ -39,16 +33,19 @@ function getStylesForSizes<P extends GenericBaseProps & GenericMediaRelatedProps
   ]
     .filter((screenSizeProps) => Object.keys(screenSizeProps).length > 1)
     .map(({ size, ...sizeSpecificProps }) => {
-      const styles = getStyles<P['xs'], BasePropsMergedWithScreenSizeProps<P & { theme: Theme }>>(
-        { ...sizeSpecificProps, ...baseProps },
-        getStylesPerProp,
-      );
+      // Generate styles for each key in the `sizeSpecificProps`
+      const styles = Object.keys(sizeSpecificProps)
+        .map((key) =>
+          stylesPerPropCallbacks[key]({ ...baseProps, ...sizeSpecificProps, theme: p.theme }),
+        )
+        .join('\n');
+      // Wrap styles in media query, unless the current size is `xs`
       if (size !== 'xs') {
-        return `${props.theme.media.greaterThan(props.theme.breakpoints[size])} { ${styles} }`;
+        return `${p.theme.media.greaterThan(p.theme.breakpoints[size])} { ${styles} }`;
       }
       return styles;
     })
     .join('\n');
-}
+};
 
 export default getStylesForSizes;

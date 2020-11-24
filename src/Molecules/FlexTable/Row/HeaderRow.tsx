@@ -4,7 +4,6 @@ import Row from './Row';
 import { HeaderRowComponent } from './Row.types';
 import { ColorFn } from '../../../common/Types/sharedTypes';
 import { useFlexTable } from '../shared/FlexTableProvider';
-import { MediaRelatedProps } from '../shared/shared.types';
 import { getStylesForSizes } from '../shared';
 
 const getStickyHeaderStyles = ({
@@ -35,36 +34,34 @@ type StyledHeaderProps = {
   $hideSeparator: boolean;
   $separatorColor: ColorFn;
   $xs: ScreenSizeConfigurableProps;
-  $sm?: Partial<ScreenSizeConfigurableProps>;
-  $md?: Partial<ScreenSizeConfigurableProps>;
-  $lg?: Partial<ScreenSizeConfigurableProps>;
-  $xl?: Partial<ScreenSizeConfigurableProps>;
+  $sm: Partial<ScreenSizeConfigurableProps>;
+  $md: Partial<ScreenSizeConfigurableProps>;
+  $lg: Partial<ScreenSizeConfigurableProps>;
+  $xl: Partial<ScreenSizeConfigurableProps>;
   $stickyOffsetTop: number;
 };
 
 const StyledHeaderRow = styled(Row)<StyledHeaderProps>`
   ${(p) => (!p.$hideSeparator ? `border-bottom: 1px solid ${p.$separatorColor(p.theme)}` : '')};
 
-  ${(p) =>
-    getStylesForSizes<
-      {
-        stickyOffsetTop: number;
-        xs: ScreenSizeConfigurableProps;
-      } & MediaRelatedProps<ScreenSizeConfigurableProps>
-    >(
-      {
-        stickyOffsetTop: p.$stickyOffsetTop,
-        xs: p.$xs,
-        sm: p.$sm,
-        md: p.$md,
-        lg: p.$lg,
-        xl: p.$xl,
-        theme: p.theme,
-      },
-      {
-        stickyHeader: getStickyHeaderStyles,
-      },
-    )}
+  ${getStylesForSizes<
+    {
+      stickyOffsetTop: number;
+    },
+    ScreenSizeConfigurableProps
+  >(
+    (p: StyledHeaderProps) => ({
+      stickyOffsetTop: p.$stickyOffsetTop,
+      xs: p.$xs,
+      sm: p.$sm,
+      md: p.$md,
+      lg: p.$lg,
+      xl: p.$xl,
+    }),
+    {
+      stickyHeader: getStickyHeaderStyles,
+    },
+  )}
 `;
 
 export const HeaderRow: HeaderRowComponent = ({

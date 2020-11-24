@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { TextComponent } from './Text.types';
-import { FontSize, MediaRelatedProps } from '../shared.types';
+import { FontSize } from '../shared.types';
 import { Theme } from '../../../../theme/theme.types';
 import { Typography } from '../../../../index';
 import { useFlexTable } from '../FlexTableProvider';
@@ -13,10 +13,10 @@ type ScreenSizeConfigurableProps = {
 
 type StyledTypographyProps = {
   $xs: ScreenSizeConfigurableProps;
-  $sm?: Partial<ScreenSizeConfigurableProps>;
-  $md?: Partial<ScreenSizeConfigurableProps>;
-  $lg?: Partial<ScreenSizeConfigurableProps>;
-  $xl?: Partial<ScreenSizeConfigurableProps>;
+  $sm: Partial<ScreenSizeConfigurableProps>;
+  $md: Partial<ScreenSizeConfigurableProps>;
+  $lg: Partial<ScreenSizeConfigurableProps>;
+  $xl: Partial<ScreenSizeConfigurableProps>;
 };
 
 const getFontSizeStyles = ({ fontSize, theme }: ScreenSizeConfigurableProps & { theme: Theme }) => {
@@ -35,22 +35,18 @@ const getFontSizeStyles = ({ fontSize, theme }: ScreenSizeConfigurableProps & { 
 };
 
 const StyledTypography = styled(Typography)<StyledTypographyProps>`
-  ${(p) =>
-    getStylesForSizes<
-      { xs: ScreenSizeConfigurableProps } & MediaRelatedProps<ScreenSizeConfigurableProps>
-    >(
-      {
-        theme: p.theme,
-        xs: p.$xs,
-        sm: p.$sm,
-        md: p.$md,
-        lg: p.$lg,
-        xl: p.$xl,
-      },
-      {
-        fontSize: getFontSizeStyles,
-      },
-    )}
+  ${getStylesForSizes<{}, ScreenSizeConfigurableProps>(
+    (p: StyledTypographyProps) => ({
+      xs: p.$xs,
+      sm: p.$sm,
+      md: p.$md,
+      lg: p.$lg,
+      xl: p.$xl,
+    }),
+    {
+      fontSize: getFontSizeStyles,
+    },
+  )}
 `;
 
 const Text: TextComponent = ({ className, color, weight, children }) => {
