@@ -9,7 +9,7 @@ import { Props } from './DatePicker.types';
  * Imported seperately because when imported in src/index.ts, Input will not have been imported yet and an error will be thrown
  */
 import Input from '../Input';
-import { Box, Icon, DropdownBubble, Flexbox } from '../..';
+import { Box, Icon, DropdownBubble } from '../..';
 import { assert, isUndefined } from '../../common/utils';
 import { useOnClickOutside } from '../../common/Hooks';
 import {
@@ -19,17 +19,25 @@ import {
   parseDateString,
   parseDateStrings,
 } from './shared/dateUtils';
-import Header from './Header';
+import { DoubleHeader } from './Header';
 import Calendar from './Calendar';
 import { RANGE_DATE_PICKER, REGULAR_DATE_PICKER } from './shared/constants';
 
-const StyledInputText = styled(Input.Text)`
+const INPUT_SPACING = 4;
+
+const StyledInputTextRight = styled(Input.Text)`
   z-index: 1;
+  padding-left: ${({ theme }) => theme.spacing.unit(INPUT_SPACING / 2)}px;
+`;
+const StyledInputTextLeft = styled(Input.Text)`
+  z-index: 1;
+  padding-right: ${({ theme }) => theme.spacing.unit(INPUT_SPACING / 2)}px;
 `;
 
 const StyledDropdownBubble = styled(DropdownBubble)`
-  max-width: ${({ theme }) => theme.spacing.unit(78)}px;
+  width: ${({ theme }) => theme.spacing.unit(156 + INPUT_SPACING)}px;
   z-index: ${({ theme }) => theme.zIndex.overlay};
+  box-sizing: border-box;
   top: -10px;
   &:after,
   &:before {
@@ -59,7 +67,6 @@ export const DoubleDatePicker = (React.forwardRef<HTMLDivElement, Props>((props,
     width = 78,
     yearSelectLength,
     inputSize,
-    gutterProp = 4,
   } = props;
 
   assert(Boolean(props.id), `DatePicker: "id" is required.`);
@@ -293,7 +300,7 @@ export const DoubleDatePicker = (React.forwardRef<HTMLDivElement, Props>((props,
         setFocused([null, null]);
       }}
     >
-      <Header
+      <DoubleHeader
         ariaLabelPrevious={ariaLabelPrevious}
         ariaLabelNext={ariaLabelNext}
         id={id}
@@ -325,8 +332,8 @@ export const DoubleDatePicker = (React.forwardRef<HTMLDivElement, Props>((props,
   });
 
   return (
-    <Flexbox container gutter={gutterProp} ref={(ref || selfRef) as React.Ref<HTMLDivElement>}>
-      <StyledInputText
+    <div ref={(ref || selfRef) as React.Ref<HTMLDivElement>}>
+      <StyledInputTextLeft
         size={inputSize}
         label={label}
         disabled={disabled}
@@ -341,7 +348,7 @@ export const DoubleDatePicker = (React.forwardRef<HTMLDivElement, Props>((props,
         width={width ? `${theme.spacing.unit(width)}px` : ''}
         autoComplete="off"
       />
-      <StyledInputText
+      <StyledInputTextRight
         size={inputSize}
         label={label}
         disabled={disabled}
@@ -361,6 +368,6 @@ export const DoubleDatePicker = (React.forwardRef<HTMLDivElement, Props>((props,
           <StyledDropdownBubble>{datepicker}</StyledDropdownBubble>
         </StyledDropdownBubbleWrapper>
       ) : null}
-    </Flexbox>
+    </div>
   );
 }) as any) as React.FC<Props> & {};
