@@ -1,9 +1,9 @@
 import React, { useEffect, useRef } from 'react';
 import styled from 'styled-components';
 import * as R from 'ramda';
-import { isSameDay, isSameMonth, isWithinInterval } from 'date-fns';
+import { addMonths, isSameDay, isSameMonth, isWithinInterval, subMonths } from 'date-fns';
 import { Box, Flexbox, Typography } from '../../..';
-import { getCalendar, getLocale } from '../shared/dateUtils';
+import { getCalendar, getCalendarIndex, getLocale, newDate } from '../shared/dateUtils';
 import { Props } from './Calendar.types';
 import { NUMBER_OF_VISIBLE_DAYS, NUMBER_OF_VISIBLE_WEEKS } from './constants';
 import { CalendarDay } from './CalendarDay';
@@ -21,12 +21,17 @@ const Calendar: React.FC<Props> = ({
   enableDate,
   locale,
   viewedDate,
+  setViewedDate,
   onClick,
   selectedDate,
   selectedEndDate,
   focusedState,
 }) => {
   const [[focusedWeek, focusedDay], setFocused] = focusedState;
+  const localeObj = getLocale(locale);
+  const calendar = getCalendar(viewedDate, {
+    locale: localeObj,
+  });
 
   const focusedDateObjRef = useRef<Date | null>(null);
 
@@ -46,6 +51,14 @@ const Calendar: React.FC<Props> = ({
     ),
   );
 
+  const stepToCalendarPage = (focusDate: Date, viewDate: Date = focusDate) => {
+    setViewedDate(viewDate);
+    const newCalendar = getCalendar(viewDate, {
+      locale: localeObj,
+    });
+    setFocused(getCalendarIndex(focusDate, newCalendar));
+  };
+
   const handleKeyPress = (event: React.KeyboardEvent) => {
     event.stopPropagation();
 
@@ -58,6 +71,10 @@ const Calendar: React.FC<Props> = ({
             setFocused([focusedWeek, focusedDay - 1]);
           } else if (focusedWeek > 0) {
             setFocused([focusedWeek - 1, NUMBER_OF_VISIBLE_DAYS - 1]);
+          } else {
+            // we are in the top left corner of calendar
+            const focusDate = newDate(calendar.dates[focusedWeek][focusedDay]);
+            stepToCalendarPage(focusDate);
           }
           break;
 
@@ -66,18 +83,36 @@ const Calendar: React.FC<Props> = ({
             setFocused([focusedWeek, focusedDay + 1]);
           } else if (focusedWeek < NUMBER_OF_VISIBLE_WEEKS - 1) {
             setFocused([focusedWeek + 1, 0]);
+          } else {
+            // we are in the bottom right corner of calendar
+            const focusDate = newDate(calendar.dates[focusedWeek][focusedDay]);
+            stepToCalendarPage(focusDate);
           }
           break;
 
         case 'ArrowUp':
           if (focusedWeek > 0) {
             setFocused([focusedWeek - 1, focusedDay]);
+          } else {
+            // we are in the top row
+            const focusDate = newDate(calendar.dates[focusedWeek][focusedDay]);
+            const viewDate = isSameMonth(viewedDate, focusDate)
+              ? subMonths(focusDate, 1)
+              : focusDate;
+            stepToCalendarPage(focusDate, viewDate);
           }
           break;
 
         case 'ArrowDown':
           if (focusedWeek < NUMBER_OF_VISIBLE_WEEKS - 1) {
             setFocused([focusedWeek + 1, focusedDay]);
+          } else {
+            // we are in the bottom row
+            const focusDate = newDate(calendar.dates[focusedWeek][focusedDay]);
+            const viewDate = isSameMonth(viewedDate, focusDate)
+              ? addMonths(focusDate, 1)
+              : focusDate;
+            stepToCalendarPage(focusDate, viewDate);
           }
           break;
 
@@ -103,11 +138,6 @@ const Calendar: React.FC<Props> = ({
       calendarDayRefs.current[focusedWeek][focusedDay].current?.focus();
     }
   }, [focusedDay, focusedWeek]);
-
-  const localeObj = getLocale(locale);
-  const calendar = getCalendar(viewedDate, {
-    locale: localeObj,
-  });
 
   return (
     <Flexbox container direction="column" data-testid="datepicker-calendar">

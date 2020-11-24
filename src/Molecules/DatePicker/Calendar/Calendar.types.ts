@@ -1,5 +1,3 @@
-export type EdgeDay = 'FIRST_DAY' | 'LAST_DAY';
-
 export type CalendarDayProps = {
   className?: string;
   date: Date;
@@ -27,4 +25,5 @@ export type Props = {
   selectedDate: Date;
   selectedEndDate?: Date;
   focusedState: [FocusedState, React.Dispatch<React.SetStateAction<FocusedState>>];
+  setViewedDate: (date: Date) => void;
 };
