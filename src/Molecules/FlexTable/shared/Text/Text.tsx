@@ -24,13 +24,11 @@ const getFontSizeStyles = ({ fontSize, theme }: ScreenSizeConfigurableProps & { 
     return `
       font-size: 12px;
       line-height: ${theme.spacing.unit(4)}px;
-      font-weight: 400;
     `;
   }
   return `
     font-size: 14px;
     line-height: ${theme.spacing.unit(5)}px;
-    font-weight: 400;
   `;
 };
 
