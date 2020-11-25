@@ -58,7 +58,7 @@ const BigTableRow = ({ data }: any) => {
 export const BigTable = () => {
   const BigTableExample = () => {
     const ReactComponent = () => {
-      const rowsLength = number('Number of rows', 500);
+      const rowsLength = number('Number of rows', 100);
       const columnsLength = number('Number of columns', 10);
       const [sort, setSort] = useState<any>({});
       const tableData = useMemo(() => generateTableData(rowsLength, columnsLength), [
