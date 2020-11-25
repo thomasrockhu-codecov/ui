@@ -20,7 +20,7 @@ import {
   parseDateStrings,
 } from './shared/dateUtils';
 import { Header } from './Header';
-import Calendar from './Calendar';
+import { Calendar } from './Calendar';
 import { RANGE_DATE_PICKER, REGULAR_DATE_PICKER } from './shared/constants';
 
 const StyledInputText = styled(Input.Text)`

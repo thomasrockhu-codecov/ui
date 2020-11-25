@@ -1,7 +1,6 @@
 import { action } from '@storybook/addon-actions';
 import React from 'react';
 import { DoubleDatePicker } from './DoubleDatePicker';
-import { DOUBLE_DATE_PICKER } from './shared/constants';
 
 export default {
   title: 'Molecules / DatePicker / Double DatePicker',
@@ -11,10 +10,5 @@ export default {
 };
 
 export const Default = () => (
-  <DoubleDatePicker
-    id="input-id"
-    variant={DOUBLE_DATE_PICKER}
-    label="Label"
-    onChange={action('Range date')}
-  />
+  <DoubleDatePicker id="input-id" label="Label" onChange={action('Range date')} />
 );

@@ -3,7 +3,7 @@ import styled, { useTheme } from 'styled-components';
 import format from 'date-fns/format';
 import { useIntl } from 'react-intl';
 import { isBefore, isSameDay, startOfDay } from 'date-fns';
-import { Props } from './DatePicker.types';
+import { Props } from './DoubleDatePicker.types';
 
 /**
  * Imported seperately because when imported in src/index.ts, Input will not have been imported yet and an error will be thrown
@@ -12,16 +12,10 @@ import Input from '../Input';
 import { Box, Icon, DropdownBubble } from '../..';
 import { assert, isUndefined } from '../../common/utils';
 import { useOnClickOutside } from '../../common/Hooks';
-import {
-  newDate,
-  getLocale,
-  getDateFormat,
-  parseDateString,
-  parseDateStrings,
-} from './shared/dateUtils';
+import { newDate, getLocale, getDateFormat, parseDateString } from './shared/dateUtils';
+
 import { DoubleHeader } from './Header';
-import Calendar from './Calendar';
-import { RANGE_DATE_PICKER, REGULAR_DATE_PICKER } from './shared/constants';
+import { DoubleCalendar } from './Calendar';
 
 const INPUT_SPACING = 4;
 
@@ -60,10 +54,10 @@ export const DoubleDatePicker = (React.forwardRef<HTMLDivElement, Props>((props,
     enableDate,
     id,
     open: openProp = false,
-    selectedDate: selectedDateProp,
+    selectedStartDate: selectedStartDateProp,
     selectedEndDate: selectedEndDateProp,
-    inputValue: inputValueProp,
-    variant = REGULAR_DATE_PICKER,
+    inputValueStart: inputValueStartProp,
+    inputValueEnd: inputValueEndProp,
     width = 78,
     yearSelectLength,
     inputSize,
@@ -85,6 +79,9 @@ export const DoubleDatePicker = (React.forwardRef<HTMLDivElement, Props>((props,
     );
   }
 
+  const INPUT_ID_START = `${id}-start`;
+  const INPUT_ID_END = `${id}-end`;
+
   const theme = useTheme();
   const { locale } = useIntl();
   const dateFormat = getDateFormat(locale);
@@ -98,11 +95,14 @@ export const DoubleDatePicker = (React.forwardRef<HTMLDivElement, Props>((props,
 
   const [open, setOpen] = useState<boolean>(openProp);
   const [viewedDate, setViewedDate] = useState<Date>(
-    (selectedDateProp && new Date(selectedDateProp)) || startOfDay(new Date()),
+    (selectedStartDateProp && new Date(selectedStartDateProp)) || startOfDay(new Date()),
   );
-  const [selectedDate, setSelectedDate] = useState<Date | null>(selectedDateProp || null);
+  const [selectedStartDate, setSelectedStartDate] = useState<Date | null>(
+    selectedStartDateProp || null,
+  );
   const [selectedEndDate, setSelectedEndDate] = useState<Date | null>(selectedEndDateProp || null);
-  const [inputValue, setInputValue] = useState<string>(inputValueProp || '');
+  const [inputValueStart, setInputValueStart] = useState<string>(inputValueStartProp || '');
+  const [inputValueEnd, setInputValueEnd] = useState<string>(inputValueEndProp || '');
 
   const focusedState = useState<[number | null, number | null]>([null, null]);
   const setFocused = focusedState[1];
@@ -112,75 +112,89 @@ export const DoubleDatePicker = (React.forwardRef<HTMLDivElement, Props>((props,
   }, [openProp]);
 
   useEffect(() => {
-    if (selectedDateProp) setSelectedDate(selectedDateProp);
+    if (selectedStartDateProp) setSelectedStartDate(selectedStartDateProp);
     if (selectedEndDateProp) setSelectedEndDate(selectedEndDateProp);
-    if (inputValueProp) {
-      setInputValue(inputValueProp);
+
+    if (inputValueStartProp) {
+      setInputValueStart(inputValueStartProp);
     } else {
       const controlledInputValue = (() => {
-        if (variant === REGULAR_DATE_PICKER && selectedDateProp) {
-          return format(selectedDateProp, dateFormat, options);
-        }
-        if (variant === RANGE_DATE_PICKER && selectedDateProp) {
-          return !selectedEndDateProp
-            ? `${format(selectedDateProp, dateFormat, options)} - `
-            : `${format(selectedDateProp, dateFormat, options)} - ${format(
-                selectedEndDateProp,
-                dateFormat,
-                options,
-              )}`;
+        if (selectedStartDateProp) {
+          return format(selectedStartDateProp, dateFormat, options);
         }
         return '';
       })();
 
-      setInputValue(controlledInputValue);
+      setInputValueStart(controlledInputValue);
     }
-  }, [dateFormat, inputValueProp, options, selectedDateProp, selectedEndDateProp, variant]);
+
+    if (inputValueEndProp) {
+      setInputValueEnd(inputValueEndProp);
+    } else {
+      const controlledInputValue = (() => {
+        if (selectedEndDateProp) {
+          return format(selectedEndDateProp, dateFormat, options);
+        }
+        return '';
+      })();
+
+      setInputValueEnd(controlledInputValue);
+    }
+  }, [
+    dateFormat,
+    options,
+    selectedStartDateProp,
+    selectedEndDateProp,
+    inputValueStartProp,
+    inputValueEndProp,
+  ]);
 
   useEffect(() => {
-    if (!inputValue) {
-      setSelectedDate(null);
+    if (!inputValueStart) {
+      setSelectedStartDate(null);
+    }
+    if (!inputValueEnd) {
       setSelectedEndDate(null);
     }
-  }, [inputValue]);
+  }, [inputValueEnd, inputValueStart]);
 
   const handleDateClickRange = useCallback(
     (date: Date) => {
       const [startDate, endDate] = ((): [Date, Date | null] => {
-        if (!selectedDate) return [date, null];
+        if (!selectedStartDate) return [date, null];
 
-        if (selectedDate && isBefore(date, selectedDate)) return [date, selectedEndDate];
-        const swapDate = !selectedEndDate && isBefore(date, selectedDate);
-        if (swapDate) return [date, selectedDate];
-        if (selectedDate && isSameDay(date, selectedDate)) return [date, null];
-        if (selectedDate && selectedEndDate && isSameDay(date, selectedEndDate))
+        if (selectedStartDate && isBefore(date, selectedStartDate)) return [date, selectedEndDate];
+        const swapDate = !selectedEndDate && isBefore(date, selectedStartDate);
+        if (swapDate) return [date, selectedStartDate];
+        if (selectedStartDate && isSameDay(date, selectedStartDate)) return [date, null];
+        if (selectedStartDate && selectedEndDate && isSameDay(date, selectedEndDate))
           return [date, null];
-        if (selectedDate) return [selectedDate, date];
+        if (selectedStartDate) return [selectedStartDate, date];
 
-        return [selectedDate, date];
+        return [selectedStartDate, date];
       })();
 
       if (endDate && isSameDay(startDate, endDate)) return;
       if (
-        selectedDate &&
-        isSameDay(startDate, selectedDate) &&
+        selectedStartDate &&
+        isSameDay(startDate, selectedStartDate) &&
         endDate &&
         selectedEndDate &&
         isSameDay(endDate, selectedEndDate)
       )
         return;
 
-      const rangeDateString = !endDate
-        ? `${format(startDate, dateFormat, options)}`
-        : `${format(startDate, dateFormat, options)} - ${format(endDate, dateFormat, options)}`;
+      const rangeDateStringStart = `${format(startDate, dateFormat, options)}`;
+      const rangeDateStringEnd = endDate ? `${format(endDate, dateFormat, options)}` : '';
 
-      setSelectedDate(startDate);
+      setSelectedStartDate(startDate);
       setSelectedEndDate(endDate);
-      setInputValue(rangeDateString);
+      setInputValueStart(rangeDateStringStart);
+      setInputValueEnd(rangeDateStringEnd);
 
       if (onChange) onChange(startDate, endDate);
     },
-    [selectedDate, dateFormat, options, onChange, selectedEndDate],
+    [selectedStartDate, dateFormat, options, onChange, selectedEndDate],
   );
 
   const onDateClick = useCallback(
@@ -190,78 +204,39 @@ export const DoubleDatePicker = (React.forwardRef<HTMLDivElement, Props>((props,
     [handleDateClickRange],
   );
 
-  const handleInputSubmitRegular = useCallback(
-    (dateString: string) => {
+  const handleInputSubmit = useCallback(
+    (dateString: string, elementId: string) => {
       const date = parseDateString(dateString, locale);
       if (!date) return;
-      if (selectedDate && isSameDay(date, selectedDate)) return;
-
-      setInputValue(format(date, dateFormat, options));
-      setSelectedDate(date);
-      setViewedDate(newDate(date));
-
+      if (elementId === INPUT_ID_START) {
+        if (selectedStartDate && isSameDay(date, selectedStartDate)) return;
+        setInputValueStart(format(date, dateFormat, options));
+        setSelectedStartDate(date);
+        setViewedDate(newDate(date));
+      } else if (elementId === INPUT_ID_END) {
+        if (selectedStartDate && isSameDay(date, selectedStartDate)) return;
+        setInputValueEnd(format(date, dateFormat, options));
+        setSelectedStartDate(date);
+        setViewedDate(newDate(date));
+      }
       if (onChange) onChange(date);
     },
-    [dateFormat, locale, onChange, options, selectedDate],
-  );
-
-  const handleInputSubmitRange = useCallback(
-    (dateString: string) => {
-      const [startDateString, endDateString] = dateString.split(' - ');
-      const [startDate, endDate] = parseDateStrings(startDateString, endDateString, locale);
-
-      if (startDate && !endDate) {
-        const selectedDateReselected = selectedDate && isSameDay(startDate, selectedDate);
-
-        if (selectedDateReselected) return;
-
-        setSelectedDate(startDate);
-        setSelectedEndDate(endDate);
-        setViewedDate(newDate(startDate));
-
-        if (onChange) onChange(startDate, endDate);
-      } else if (startDate && endDate) {
-        const selectedDatesReselected =
-          selectedDate &&
-          selectedEndDate &&
-          isSameDay(startDate, selectedDate) &&
-          isSameDay(endDate, selectedEndDate);
-
-        if (isSameDay(startDate, endDate)) return;
-        if (selectedDatesReselected) return;
-
-        const rangeDateString = `${format(startDate, dateFormat, options)} - ${format(
-          endDate,
-          dateFormat,
-          options,
-        )}`;
-
-        setSelectedDate(startDate);
-        setSelectedEndDate(endDate);
-        setViewedDate(newDate(endDate));
-
-        setInputValue(rangeDateString);
-
-        if (onChange) onChange(startDate, endDate);
-      }
-    },
-    [locale, selectedDate, onChange, selectedEndDate, dateFormat, options],
+    [INPUT_ID_END, INPUT_ID_START, dateFormat, locale, onChange, options, selectedStartDate],
   );
 
   const handleInputKeyDown = (event: React.KeyboardEvent<HTMLInputElement>) => {
-    const { value } = event.target as HTMLInputElement;
+    const { value, id: elementId } = event.target as HTMLInputElement;
 
     switch (event.key) {
       case 'ArrowUp':
       case 'ArrowRight':
       case 'ArrowDown':
       case 'ArrowLeft':
-        if (!inputValue) setFocused([0, 0]);
+        if (!inputValueEnd) setFocused([0, 0]);
         break;
 
       case 'Enter':
-        if (variant === RANGE_DATE_PICKER) handleInputSubmitRange(value);
-        else handleInputSubmitRegular(value);
+        handleInputSubmit(value, elementId);
         break;
 
       default:
@@ -271,10 +246,17 @@ export const DoubleDatePicker = (React.forwardRef<HTMLDivElement, Props>((props,
 
   const handleInputOnFocus = useCallback(() => setOpen(true), [setOpen]);
 
-  const handleInputOnChange = useCallback((event: React.ChangeEvent<HTMLInputElement>) => {
-    const { value } = event.target;
-    setInputValue(value);
-  }, []);
+  const handleInputOnChange = useCallback(
+    (event: React.ChangeEvent<HTMLInputElement>) => {
+      const { value, id: elementId } = event.target;
+      if (elementId === INPUT_ID_START) {
+        setInputValueStart(value);
+      } else if (elementId === INPUT_ID_END) {
+        setInputValueEnd(value);
+      }
+    },
+    [INPUT_ID_END, INPUT_ID_START],
+  );
 
   const onMonthChange = useCallback(
     (index: number) => {
@@ -310,13 +292,13 @@ export const DoubleDatePicker = (React.forwardRef<HTMLDivElement, Props>((props,
         onYearChange={onYearChange}
         yearSelectLength={yearSelectLength}
       />
-      <Calendar
+      <DoubleCalendar
         disableDate={disableDate}
         enableDate={enableDate}
         viewedDate={viewedDate}
         locale={locale}
         onClick={onDateClick}
-        selectedDate={selectedDate as Date}
+        selectedDate={selectedStartDate as Date}
         selectedEndDate={selectedEndDate as Date}
         focusedState={focusedState}
       />
@@ -337,10 +319,10 @@ export const DoubleDatePicker = (React.forwardRef<HTMLDivElement, Props>((props,
         size={inputSize}
         label={label}
         disabled={disabled}
-        id={id}
-        data-testid="datepicker-input"
+        id={INPUT_ID_START}
+        data-testid="datepicker-input-start"
         placeholder={dateFormat.toLowerCase()}
-        value={inputValue}
+        value={inputValueStart}
         rightAddon={inputRightAddon}
         onChange={handleInputOnChange}
         onKeyDown={handleInputKeyDown}
@@ -352,10 +334,10 @@ export const DoubleDatePicker = (React.forwardRef<HTMLDivElement, Props>((props,
         size={inputSize}
         label={label}
         disabled={disabled}
-        id={id}
-        data-testid="datepicker-input"
+        id={INPUT_ID_END}
+        data-testid="datepicker-input-end"
         placeholder={dateFormat.toLowerCase()}
-        value={inputValue}
+        value={inputValueEnd}
         rightAddon={inputRightAddon}
         onChange={handleInputOnChange}
         onKeyDown={handleInputKeyDown}
