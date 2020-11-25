@@ -1,2 +1,4 @@
 export const NUMBER_OF_VISIBLE_WEEKS = 6;
 export const NUMBER_OF_VISIBLE_DAYS = 7;
+export const NUMBER_OF_VISIBLE_WEEKS_DOUBLE = 12;
+export const NUMBER_OF_VISIBLE_DAYS_DOUBLE = 14;

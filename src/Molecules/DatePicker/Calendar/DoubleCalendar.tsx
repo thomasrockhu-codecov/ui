@@ -1,12 +1,25 @@
 import React, { useEffect, useRef } from 'react';
 import styled from 'styled-components';
 import * as R from 'ramda';
-import { addMonths, isSameDay, isSameMonth, isWithinInterval } from 'date-fns';
+import {
+  addMonths,
+  isFirstDayOfMonth,
+  isLastDayOfMonth,
+  isSameDay,
+  isSameMonth,
+  isWithinInterval,
+} from 'date-fns';
 import { Box, Flexbox, Typography } from '../../..';
 import { getCalendar, getLocale } from '../shared/dateUtils';
 import { Props } from './Calendar.types';
-import { NUMBER_OF_VISIBLE_DAYS, NUMBER_OF_VISIBLE_WEEKS } from './constants';
+import {
+  NUMBER_OF_VISIBLE_DAYS,
+  NUMBER_OF_VISIBLE_WEEKS,
+  NUMBER_OF_VISIBLE_DAYS_DOUBLE,
+  NUMBER_OF_VISIBLE_WEEKS_DOUBLE,
+} from './constants';
 import { CalendarDay } from './CalendarDay';
+import { FlexProps } from '../../../Atoms/Flexbox/Flexbox.types';
 
 export const StyledBox = styled(Box)`
   border: 1px solid transparent;
@@ -14,6 +27,17 @@ export const StyledBox = styled(Box)`
   text-align: center;
   margin-bottom: ${({ theme }) => theme.spacing.unit(2)}px;
   margin-top: ${({ theme }) => theme.spacing.unit(3)}px;
+`;
+
+const HiddenDate = styled.div<{ $withGutter?: boolean }>`
+  min-width: ${({ theme }) => theme.spacing.unit(10) + 2}px;
+  min-height: ${({ theme }) => theme.spacing.unit(10) + 2}px;
+  margin: ${({ theme }) => theme.spacing.unit(0.5)}px 0;
+  ${({ $withGutter = false }) => ($withGutter ? 'margin-right: 34px;' : '')}
+`;
+
+const StyledCalendarContainer = styled(Flexbox)<FlexProps & { $withGutter: boolean }>`
+  ${({ $withGutter = false }) => ($withGutter ? 'margin-right: 34px;' : '')}
 `;
 
 const DoubleCalendar: React.FC<Props> = ({
@@ -40,8 +64,8 @@ const DoubleCalendar: React.FC<Props> = ({
   };
 
   const calendarDayRefs = useRef(
-    [...Array(NUMBER_OF_VISIBLE_WEEKS)].map(() =>
-      [...Array(NUMBER_OF_VISIBLE_DAYS)].map(() => React.createRef<HTMLDivElement>()),
+    [...Array(NUMBER_OF_VISIBLE_WEEKS_DOUBLE)].map(() =>
+      [...Array(NUMBER_OF_VISIBLE_DAYS_DOUBLE)].map(() => React.createRef<HTMLDivElement>()),
     ),
   );
 
@@ -113,6 +137,13 @@ const DoubleCalendar: React.FC<Props> = ({
   const rightCalendar = getCalendar(addMonths(viewedDate, 1), {
     locale: localeObj,
   });
+  const calendar = {
+    weekDays: [...leftCalendar.weekDays, ...rightCalendar.weekDays],
+    dates: leftCalendar.dates.map((leftWeek, index) => [
+      ...leftWeek,
+      ...rightCalendar.dates[index],
+    ]),
+  };
 
   return (
     <Flexbox
@@ -121,22 +152,38 @@ const DoubleCalendar: React.FC<Props> = ({
       justifyContent="space-between"
       data-testid="datepicker-calendars"
     >
-      <Flexbox container direction="column" data-testid="datepicker-calendar-left">
-        <Flexbox container aria-hidden>
-          {leftCalendar.weekDays.map((n) => (
-            <Flexbox item justifyContent="center" alignItems="center" key={n}>
+      <Flexbox container direction="column" aria-hidden>
+        <Flexbox container>
+          {calendar.weekDays.map((n, index) => (
+            <StyledCalendarContainer
+              item
+              justifyContent="center"
+              alignItems="center"
+              key={n}
+              $withGutter={index === 6}
+            >
               <StyledBox>
                 <Typography type="tertiary">{n}</Typography>
               </StyledBox>
-            </Flexbox>
+            </StyledCalendarContainer>
           ))}
         </Flexbox>
-        {leftCalendar.dates.map((week, weekIndex) => (
+        {calendar.dates.map((week, weekIndex) => (
           <Flexbox container justifyContent="flex-start" key={week.toString()}>
-            {week.map((day, dayIndex) =>
-              !isSameMonth(day, rightViewedDate) ? (
+            {week.map((day, dayIndex) => {
+              const shouldNotRender =
+                (!isSameMonth(leftViewedDate, day) &&
+                  isSameMonth(rightViewedDate, day) &&
+                  dayIndex < 7) ||
+                (!isSameMonth(rightViewedDate, day) &&
+                  isSameMonth(leftViewedDate, day) &&
+                  dayIndex >= 7);
+              return shouldNotRender ? (
+                <HiddenDate $withGutter={dayIndex === 6} aria-hidden />
+              ) : (
                 <CalendarDay
                   ref={calendarDayRefs.current[weekIndex][dayIndex]}
+                  withGutter={dayIndex === 6}
                   onFocus={() => {
                     setFocused([weekIndex, dayIndex]);
                     focusedDateObjRef.current = day;
@@ -152,7 +199,7 @@ const DoubleCalendar: React.FC<Props> = ({
                     (selectedDate && isSameDay(selectedDate, day)) ||
                     (selectedEndDate && isSameDay(selectedEndDate, day))
                   }
-                  sameMonth={isSameMonth(viewedDate, day)}
+                  sameMonth={isSameMonth(leftViewedDate, day) || isSameMonth(rightViewedDate, day)}
                   locale={localeObj}
                   isWithinRange={(() => {
                     if (selectedEndDate && selectedDate < selectedEndDate)
@@ -161,63 +208,17 @@ const DoubleCalendar: React.FC<Props> = ({
                       return isWithinInterval(day, { start: selectedEndDate, end: selectedDate });
                     return false;
                   })()}
-                  isFirstDay={weekIndex === 0 && dayIndex === 0}
+                  isFirstDay={
+                    (weekIndex === 0 && dayIndex === 0) ||
+                    (isFirstDayOfMonth(day) && isSameMonth(rightViewedDate, day))
+                  }
                   isLastDay={
-                    weekIndex === leftCalendar.dates.length - 1 && dayIndex === week.length - 1
+                    (weekIndex === calendar.dates.length - 1 && dayIndex === week.length - 1) ||
+                    (isLastDayOfMonth(day) && isSameMonth(leftViewedDate, day))
                   }
                 />
-              ) : null,
-            )}
-          </Flexbox>
-        ))}
-      </Flexbox>
-      <Flexbox container direction="column" data-testid="datepicker-calendar-right">
-        <Flexbox container aria-hidden>
-          {rightCalendar.weekDays.map((n) => (
-            <Flexbox item justifyContent="center" alignItems="center" key={n}>
-              <StyledBox>
-                <Typography type="tertiary">{n}</Typography>
-              </StyledBox>
-            </Flexbox>
-          ))}
-        </Flexbox>
-        {rightCalendar.dates.map((week, weekIndex) => (
-          <Flexbox justifyContent="flex-end" container key={week.toString()}>
-            {week.map((day, dayIndex) =>
-              !isSameMonth(day, leftViewedDate) ? (
-                <CalendarDay
-                  ref={calendarDayRefs.current[weekIndex][dayIndex]}
-                  onFocus={() => {
-                    setFocused([weekIndex, dayIndex]);
-                    focusedDateObjRef.current = day;
-                  }}
-                  key={day.toString()}
-                  date={day}
-                  disabled={!!dateIsDisabled(day)}
-                  onClick={() => {
-                    if (!dateIsDisabled(day)) onClick(day);
-                  }}
-                  onKeyDown={handleKeyPress}
-                  selected={
-                    (selectedDate && isSameDay(selectedDate, day)) ||
-                    (selectedEndDate && isSameDay(selectedEndDate, day))
-                  }
-                  sameMonth={isSameMonth(rightViewedDate, day)}
-                  locale={localeObj}
-                  isWithinRange={(() => {
-                    if (selectedEndDate && selectedDate < selectedEndDate)
-                      return isWithinInterval(day, { start: selectedDate, end: selectedEndDate });
-                    if (selectedEndDate && selectedDate > selectedEndDate)
-                      return isWithinInterval(day, { start: selectedEndDate, end: selectedDate });
-                    return false;
-                  })()}
-                  isFirstDay={weekIndex === 0 && dayIndex === 0}
-                  isLastDay={
-                    weekIndex === rightCalendar.dates.length - 1 && dayIndex === week.length - 1
-                  }
-                />
-              ) : null,
-            )}
+              );
+            })}
           </Flexbox>
         ))}
       </Flexbox>

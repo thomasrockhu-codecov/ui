@@ -12,11 +12,13 @@ const StyledCalendarDay = styled(Box)<{
   $isSameMonth?: boolean;
   $isFirstDay?: boolean;
   $isLastDay?: boolean;
+  $withGutter?: boolean;
 }>`
   background: ${({ theme }) => theme.color.backgroundInput};
   min-width: ${({ theme }) => theme.spacing.unit(10) + 2}px;
   min-height: ${({ theme }) => theme.spacing.unit(10) + 2}px;
   margin: ${({ theme }) => theme.spacing.unit(0.5)}px 0;
+  ${({ $withGutter = false }) => ($withGutter ? 'margin-right: 34px;' : '')}
   justify-content: center;
   align-items: center;
   display: flex;
@@ -74,6 +76,7 @@ export const CalendarDay = React.forwardRef<HTMLDivElement, CalendarDayProps>(
       isWithinRange = false,
       isFirstDay = false,
       isLastDay = false,
+      withGutter = false,
     },
     ref,
   ) => {
@@ -110,6 +113,7 @@ export const CalendarDay = React.forwardRef<HTMLDivElement, CalendarDayProps>(
         onFocus={onFocus}
         aria-label={ariaLabel}
         tabIndex={disabled ? -1 : 0} // should not be focusable if disabled
+        $withGutter={withGutter}
       >
         <Typography type="tertiary" aria-hidden color={(t) => t.color[textColor || 'text']}>
           {format(date, 'd')}

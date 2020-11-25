@@ -14,6 +14,7 @@ export type CalendarDayProps = {
   isWithinRange?: boolean;
   isFirstDay?: boolean;
   isLastDay?: boolean;
+  withGutter?: boolean;
 };
 
 type FocusedState = [number | null, number | null];
