@@ -1,13 +1,12 @@
 import React from 'react';
 import styled from 'styled-components';
-import FlexTable from './FlexTable';
-import { Typography, Flag, Number, Flexbox, DateTime } from '../..';
-import docs from './FlexTable.mdx';
-import { FlexPropsType } from './shared/shared.types';
-import { StyledBackground } from './storiesShared';
+import { DateTime, Flag, Flexbox, Number } from '../../..';
+import { FlexPropsType } from '../shared/shared.types';
+import FlexTable from '../FlexTable';
+import docs from '../FlexTable.mdx';
 
 export default {
-  title: 'Molecules / FlexTable',
+  title: 'Molecules / FlexTable / With Custom Cells',
   parameters: {
     component: FlexTable,
     docs: {
@@ -16,55 +15,11 @@ export default {
   },
 };
 
-export const FlexTableWithDifferentRows = () => {
-  const FlexTableWithDifferentRowsExample = () => (
-    <FlexTable>
-      <FlexTable.HeaderRow>
-        <FlexTable.Header columnId="column1">Header 1</FlexTable.Header>
-        <FlexTable.Header columnId="column2">Header 2</FlexTable.Header>
-        <FlexTable.Header columnId="column3">Header 3</FlexTable.Header>
-      </FlexTable.HeaderRow>
-      <FlexTable.Row>
-        <FlexTable.Cell columnId="column1">Default</FlexTable.Cell>
-        <FlexTable.Cell columnId="column2">Default</FlexTable.Cell>
-        <FlexTable.Cell columnId="column3">Default</FlexTable.Cell>
-      </FlexTable.Row>
-      <FlexTable.Row hoverHighlight={false}>
-        <FlexTable.Cell columnId="column1">No highlight</FlexTable.Cell>
-        <FlexTable.Cell columnId="column2">No highlight</FlexTable.Cell>
-        <FlexTable.Cell columnId="column3">No highlight</FlexTable.Cell>
-      </FlexTable.Row>
-      <FlexTable.Row hideSeparator>
-        <FlexTable.Cell columnId="column1">Separator hidden</FlexTable.Cell>
-        <FlexTable.Cell columnId="column2">Separator hidden</FlexTable.Cell>
-        <FlexTable.Cell columnId="column3">Separator hidden</FlexTable.Cell>
-      </FlexTable.Row>
-      <FlexTable.Row hoverHighlight={false} hideSeparator>
-        <FlexTable.Cell columnId="column1">No highlight and separator hidden</FlexTable.Cell>
-        <FlexTable.Cell columnId="column2">No highlight and separator hidden</FlexTable.Cell>
-        <FlexTable.Cell columnId="column3">No highlight and separator hidden</FlexTable.Cell>
-      </FlexTable.Row>
-      <FlexTable.Row separatorColor={(t) => t.color.barChartColor1}>
-        <FlexTable.Cell columnId="column1">Separator color set</FlexTable.Cell>
-        <FlexTable.Cell columnId="column2">Separator color set</FlexTable.Cell>
-        <FlexTable.Cell columnId="column3">Separator color set</FlexTable.Cell>
-      </FlexTable.Row>
-    </FlexTable>
-  );
-
-  return (
-    <StyledBackground>
-      <Typography type="title3">FlexTable With Different Rows</Typography>
-      <FlexTableWithDifferentRowsExample />
-    </StyledBackground>
-  );
-};
-
 const StyledFlexboxContainer = styled(Flexbox)`
   justify-content: inherit;
 `;
 
-export const TableCustomDataCells = () => {
+export const CustomCells = () => {
   const Story = () => {
     const TruncateStartHeader: React.FC<{
       currency: string;
@@ -199,33 +154,4 @@ export const TableCustomDataCells = () => {
     );
   };
   return <Story />;
-};
-
-export const FlexTableWithHiddenExpandItem = () => {
-  const FlexTableWithHiddenExpandItemExample = () => (
-    <FlexTable expandable>
-      <FlexTable.HeaderRow>
-        <FlexTable.Header columnId="column1">Header 1</FlexTable.Header>
-        <FlexTable.Header columnId="column2">Header 2</FlexTable.Header>
-        <FlexTable.Header columnId="column3">Header 3</FlexTable.Header>
-      </FlexTable.HeaderRow>
-      <FlexTable.Row
-        expandItems={[
-          { label: 'Always visible', value: 123 },
-          { label: 'Hidden', value: 1000, hidden: true },
-        ]}
-      >
-        <FlexTable.Cell columnId="column1">Value 1</FlexTable.Cell>
-        <FlexTable.Cell columnId="column2">Value 2</FlexTable.Cell>
-        <FlexTable.Cell columnId="column3">Value 3</FlexTable.Cell>
-      </FlexTable.Row>
-    </FlexTable>
-  );
-
-  return (
-    <StyledBackground>
-      <Typography type="title3">FlexTable With Hidden Expand Item</Typography>
-      <FlexTableWithHiddenExpandItemExample />
-    </StyledBackground>
-  );
 };

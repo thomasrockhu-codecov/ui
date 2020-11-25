@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
-import FlexTable from './FlexTable';
-import { Typography, Flag, Flexbox } from '../..';
-import docs from './FlexTable.mdx';
-import { SortOrder } from './Header/HeaderContent/HeaderContent.types';
-import { OnSort } from './Header/Header.types';
+import FlexTable from '../FlexTable';
+import { Typography, Flag, Flexbox } from '../../..';
+import docs from '../FlexTable.mdx';
+import { SortOrder } from '../Header/HeaderContent/HeaderContent.types';
+import { OnSort } from '../Header/Header.types';
 import { StyledFlexboxContainer, StyledBackground } from './storiesShared';
 
 export default {

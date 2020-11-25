@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { Flexbox } from '../..';
+import { Flexbox } from '../../..';
 
 export const StyledBackground = styled.div`
   background-color: ${(p) => p.theme.color.background};

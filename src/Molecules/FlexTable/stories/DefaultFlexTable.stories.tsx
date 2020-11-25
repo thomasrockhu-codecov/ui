@@ -1,8 +1,8 @@
 import React from 'react';
-import FlexTable from './FlexTable';
-import { Button, Typography, Flag, Icon, Flexbox, Box } from '../..';
-import { ICON_COLUMN_DEFAULT_FLEX_PROPS } from './shared/constants';
-import docs from './FlexTable.mdx';
+import FlexTable from '../FlexTable';
+import { Button, Typography, Flag, Icon, Flexbox, Box } from '../../..';
+import { ICON_COLUMN_DEFAULT_FLEX_PROPS } from '../shared/constants';
+import docs from '../FlexTable.mdx';
 import { StyledBackground } from './storiesShared';
 
 export default {

@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
-import FlexTable from './FlexTable';
-import docs from './FlexTable.mdx';
-import { Button, Flexbox, Number } from '../..';
+import styled from 'styled-components';
+import FlexTable from '../FlexTable';
+import docs from '../FlexTable.mdx';
+import { Button, Flexbox, Number } from '../../..';
 
 export default {
   title: 'Molecules / FlexTable / Expandable FlexTable',
@@ -219,6 +220,60 @@ export const ControlledExpandedTable = () => {
   return <ControlledExpandedTableExample />;
 };
 
+export const ControlledExpandableTableWithClickableRows = () => {
+  const RowWithPointer = styled(FlexTable.Row)`
+    :hover {
+      cursor: pointer;
+    }
+  `;
+  const expandItems = expandedItemsGenerator();
+  const ControlledExpandedTableExample = () => {
+    const [expandedRows, setExpandedRows] = useState<string[]>([]);
+    const isExpanded = (rowId: string) => expandedRows.includes(rowId);
+    const onExpandClick = (rowId: string) => (newExpanded: boolean) =>
+      newExpanded
+        ? setExpandedRows([...expandedRows, rowId])
+        : setExpandedRows(expandedRows.filter((row) => row !== rowId));
+    return (
+      <FlexTable expandable>
+        <FlexTable.HeaderRow>
+          <FlexTable.Header columnId="column1">Header 1</FlexTable.Header>
+          <FlexTable.Header columnId="column2">Header 2</FlexTable.Header>
+          <FlexTable.Header columnId="column3">Header 3</FlexTable.Header>
+        </FlexTable.HeaderRow>
+
+        <FlexTable.Row>
+          <FlexTable.Cell columnId="column1">Disabled</FlexTable.Cell>
+          <FlexTable.Cell columnId="column2">Disabled</FlexTable.Cell>
+          <FlexTable.Cell columnId="column3">Disabled</FlexTable.Cell>
+        </FlexTable.Row>
+
+        <RowWithPointer
+          expandItems={expandItems}
+          expanded={isExpanded('row2')}
+          onClick={() => onExpandClick('row2')(!isExpanded('row2'))}
+        >
+          <FlexTable.Cell columnId="column1">Entire...</FlexTable.Cell>
+          <FlexTable.Cell columnId="column2">...row...</FlexTable.Cell>
+          <FlexTable.Cell columnId="column3">...clickable</FlexTable.Cell>
+        </RowWithPointer>
+
+        <RowWithPointer
+          expandItems={expandItems}
+          expanded={isExpanded('row3')}
+          onClick={() => onExpandClick('row3')(!isExpanded('row3'))}
+        >
+          <FlexTable.Cell columnId="column1">Entire...</FlexTable.Cell>
+          <FlexTable.Cell columnId="column2">...row...</FlexTable.Cell>
+          <FlexTable.Cell columnId="column3">...clickable</FlexTable.Cell>
+        </RowWithPointer>
+      </FlexTable>
+    );
+  };
+
+  return <ControlledExpandedTableExample />;
+};
+
 export const ExpandedTableDifferentFontSizeOnMobile = () => {
   const expandItemsText = expandedItemsGenerator();
   return (
@@ -233,6 +288,29 @@ export const ExpandedTableDifferentFontSizeOnMobile = () => {
         <FlexTable.Cell columnId="column1">Expandable</FlexTable.Cell>
         <FlexTable.Cell columnId="column2">Expandable</FlexTable.Cell>
         <FlexTable.Cell columnId="column3">Expandable</FlexTable.Cell>
+      </FlexTable.Row>
+    </FlexTable>
+  );
+};
+
+export const HiddenExpandItemOnDesktop = () => {
+  return (
+    <FlexTable expandable>
+      <FlexTable.HeaderRow>
+        <FlexTable.Header columnId="column1">Header 1</FlexTable.Header>
+        <FlexTable.Header columnId="column2">Header 2</FlexTable.Header>
+        <FlexTable.Header columnId="column3">Header 3</FlexTable.Header>
+      </FlexTable.HeaderRow>
+      <FlexTable.Row
+        initiallyExpanded
+        expandItems={[
+          { label: 'Always visible', value: 123 },
+          { label: 'Hidden on desktop', value: 1000, md: { hidden: true } },
+        ]}
+      >
+        <FlexTable.Cell columnId="column1">Value 1</FlexTable.Cell>
+        <FlexTable.Cell columnId="column2">Value 2</FlexTable.Cell>
+        <FlexTable.Cell columnId="column3">Value 3</FlexTable.Cell>
       </FlexTable.Row>
     </FlexTable>
   );
