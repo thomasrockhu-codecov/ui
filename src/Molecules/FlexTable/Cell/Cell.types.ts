@@ -41,6 +41,7 @@ type TextWrapperProps = {
    * @default true
    */
   truncate?: boolean;
+  className?: string;
 };
 
 export type TextWrapperComponent = React.FC<TextWrapperProps>;

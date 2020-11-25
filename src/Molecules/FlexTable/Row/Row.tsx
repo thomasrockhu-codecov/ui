@@ -113,10 +113,6 @@ const Row: RowComponent = ({
   expandChildren,
   expandItems,
   children,
-  sm: smExpandProps,
-  md: mdExpandProps,
-  lg: lgExpandProps,
-  xl: xlExpandProps,
   ...htmlProps
 }) => {
   const { xs: xsRow, sm: smRow, md: mdRow, lg: lgRow, xl: xlRow } = useFlexTable<
@@ -151,6 +147,10 @@ const Row: RowComponent = ({
   return (
     <>
       <StyledRow
+        container
+        role="row"
+        className={className}
+        alignItems="center"
         $expanded={!!expand}
         $hideSeparator={hideSeparator}
         $hoverHighlight={hoverHighlight}
@@ -160,10 +160,6 @@ const Row: RowComponent = ({
         $md={mdRow}
         $lg={lgRow}
         $xl={xlRow}
-        container
-        role="row"
-        className={className}
-        alignItems="center"
         gutter={xsFlexbox?.columnDistance}
         sm={{ gutter: smFlexbox?.columnDistance }}
         md={{ gutter: mdFlexbox?.columnDistance }}
@@ -184,10 +180,6 @@ const Row: RowComponent = ({
         <ExpandRow
           expandItems={expandItems}
           expandChildren={expandChildren}
-          sm={smExpandProps}
-          md={mdExpandProps}
-          lg={lgExpandProps}
-          xl={xlExpandProps}
           separatorColor={separatorColor}
         />
       )}

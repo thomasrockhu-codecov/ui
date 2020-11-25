@@ -19,7 +19,7 @@ const Footer: FooterComponent = (props) => {
       {isElement(children) && children}
       {isFunction(children)
         ? children({ columnId })
-        : !isElement(children) && <TextWrapper weight="bold">{children}</TextWrapper>}
+        : !isElement(children) && <TextWrapper>{children}</TextWrapper>}
     </StyledFlexbox>
   );
 };

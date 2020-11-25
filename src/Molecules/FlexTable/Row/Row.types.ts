@@ -5,7 +5,6 @@ import {
   ExpandItemsComponent,
 } from './components/ExpandItems/ExpandItems.types';
 import { ColorFn } from '../../../common/Types/sharedTypes';
-import { MediaRelatedProps } from '../shared/shared.types';
 
 type HtmlProps = {} & React.HTMLAttributes<HTMLDivElement>;
 
@@ -28,7 +27,7 @@ type ExpandArea = {
    */
   expandItems?: ExpandItems;
   onExpandToggle?: (newExpanded: boolean) => void | undefined;
-} & MediaRelatedProps<{ expandChildren?: ReactNode; expandItems?: ExpandItems }>;
+};
 
 interface ControlledExpand extends ExpandArea {
   expanded: boolean;

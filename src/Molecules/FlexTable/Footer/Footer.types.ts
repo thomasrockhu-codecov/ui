@@ -19,7 +19,12 @@ export type TextWrapperProps = {
    * @default 'bold'
    */
   weight?: string;
+  /**
+   * Truncate the text inside and a tooltip on hover when truncated
+   * @default true
+   */
   truncate?: boolean;
+  className?: string;
 };
 
 export type TextWrapperComponent = React.FC<TextWrapperProps>;

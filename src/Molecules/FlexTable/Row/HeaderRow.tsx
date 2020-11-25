@@ -42,7 +42,7 @@ type StyledHeaderProps = {
 };
 
 const StyledHeaderRow = styled(Row)<StyledHeaderProps>`
-  ${(p) => (!p.$hideSeparator ? `border-bottom: 1px solid ${p.$separatorColor(p.theme)}` : '')};
+  ${(p) => (!p.$hideSeparator ? `border-bottom: 1px solid ${p.$separatorColor(p.theme)};` : '')}
 
   ${getStylesForSizes<
     {
@@ -75,17 +75,17 @@ export const HeaderRow: HeaderRowComponent = ({
   const { xs, sm, md, lg, xl } = useFlexTable<'stickyHeader'>('stickyHeader');
   return (
     <StyledHeaderRow
+      className={className}
+      hoverHighlight={false}
+      rowType="header"
       $hideSeparator={hideSeparator}
       $separatorColor={separatorColor}
+      $stickyOffsetTop={stickyOffsetTop}
       $xs={xs}
       $sm={sm}
       $md={md}
       $lg={lg}
       $xl={xl}
-      $stickyOffsetTop={stickyOffsetTop}
-      className={className}
-      hoverHighlight={false}
-      rowType="header"
       {...htmlProps}
     >
       {children}

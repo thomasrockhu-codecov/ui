@@ -22,7 +22,7 @@ export const DifferentAlignmentsTable = () => (
       <FlexTable.HeaderRow>
         <FlexTable.Header columnId="column1">Left</FlexTable.Header>
         <FlexTable.Header columnId="column2" justifyContent="flex-end">
-          <FlexTable.Header.TextWrapper truncate>Right</FlexTable.Header.TextWrapper>
+          Right
         </FlexTable.Header>
         <FlexTable.Header columnId="column3" justifyContent="flex-end">
           Right

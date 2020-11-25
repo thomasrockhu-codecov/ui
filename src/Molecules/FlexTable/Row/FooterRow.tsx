@@ -7,7 +7,7 @@ import { FooterRowComponent } from './Row.types';
 const StyledRow = styled(Row).withConfig({
   shouldForwardProp: (prop) => !['hideSeparator', 'separatorColor'].includes(prop),
 })<{ separatorColor: ColorFn; hideSeparator: boolean }>`
-  ${(p) => (!p.hideSeparator ? `border-top: 1px solid ${p.separatorColor(p.theme)}` : '')};
+  ${(p) => (!p.hideSeparator ? `border-top: 1px solid ${p.separatorColor(p.theme)};` : '')}
   border-bottom: 0;
 `;
 

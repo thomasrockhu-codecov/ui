@@ -2,14 +2,20 @@ import React from 'react';
 import { TextWrapperComponent } from './Cell.types';
 import { StyledTruncateTooltip, Text } from '../shared';
 
-export const TextWrapper: TextWrapperComponent = ({ truncate = true, children }) => {
+export const TextWrapper: TextWrapperComponent = ({ className, truncate = true, children }) => {
   if (!truncate) {
-    return <Text color={(t) => t.color.text}>{children}</Text>;
+    return (
+      <Text className={className} color={(t) => t.color.text}>
+        {children}
+      </Text>
+    );
   }
 
   return (
     <StyledTruncateTooltip label={children}>
-      <Text color={(t) => t.color.text}>{children}</Text>
+      <Text className={className} color={(t) => t.color.text}>
+        {children}
+      </Text>
     </StyledTruncateTooltip>
   );
 };

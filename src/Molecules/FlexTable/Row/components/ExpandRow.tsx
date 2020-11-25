@@ -47,10 +47,6 @@ const StyledExpandedRow = styled('div')<StyledExpandedRow>`
 export const ExpandRow: ExpandRowComponent = ({
   expandItems,
   expandChildren,
-  sm,
-  md,
-  lg,
-  xl,
   separatorColor = (theme) => theme.color.divider,
   ...htmlProps
 }) => {
@@ -66,14 +62,7 @@ export const ExpandRow: ExpandRowComponent = ({
       $lg={$lg}
       $xl={$xl}
     >
-      <ExpandArea
-        expandItems={expandItems}
-        expandChildren={expandChildren}
-        sm={sm}
-        md={md}
-        lg={lg}
-        xl={xl}
-      />
+      <ExpandArea expandItems={expandItems} expandChildren={expandChildren} />
     </StyledExpandedRow>
   );
 };

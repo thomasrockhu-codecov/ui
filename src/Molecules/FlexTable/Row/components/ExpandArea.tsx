@@ -12,7 +12,6 @@ export const ExpandArea: React.FC<ExpandAreaProps> = ({ expandChildren, expandIt
   <StyledBox px={5} pb={2} md={{ px: 5, pt: 5, pb: 0 }} role="cell">
     {/* TODO should we rather have padding specified in ExpandItems? */}
     {expandItems && expandItems.length ? <ExpandItems items={expandItems} /> : null}
-    {/* TODO: Handle screen size props for expand children */}
     {expandChildren && (
       <Box pt={2} md={{ px: 5, pt: 0, pb: 5 }}>
         {expandChildren}

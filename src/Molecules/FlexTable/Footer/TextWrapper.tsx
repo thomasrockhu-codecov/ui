@@ -6,10 +6,11 @@ export const TextWrapper: TextWrapperComponent = ({
   children,
   weight = 'bold',
   truncate = true,
+  className,
 }) => {
   if (!truncate) {
     return (
-      <Text weight={weight} color={(t) => t.color.text}>
+      <Text className={className} weight={weight} color={(t) => t.color.text}>
         {children}
       </Text>
     );
@@ -17,7 +18,7 @@ export const TextWrapper: TextWrapperComponent = ({
 
   return (
     <StyledTruncateTooltip label={children}>
-      <Text weight={weight} color={(t) => t.color.text}>
+      <Text className={className} weight={weight} color={(t) => t.color.text}>
         {children}
       </Text>
     </StyledTruncateTooltip>

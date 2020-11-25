@@ -5,6 +5,7 @@ type RenderPropArguments = { fontSize: FontSize };
 export type RenderFunc = (props: RenderPropArguments) => ReactNode;
 
 type TextWrapperProps = {
+  className?: string;
   /**
    * Truncate the text inside and a tooltip on hover when truncated
    * @default true
@@ -37,4 +38,4 @@ export type ExpandItemsComponent = React.FC<{ items: ExpandItems }>;
 
 export type ExpandItemMediaProps = {
   xs: { hidden?: boolean };
-} & MediaRelatedProps<{ hidden: boolean }>;
+} & MediaRelatedProps<{ hidden?: boolean }>;
