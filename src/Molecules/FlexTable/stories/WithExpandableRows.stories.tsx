@@ -5,7 +5,7 @@ import docs from '../FlexTable.mdx';
 import { Button, Flexbox, Number } from '../../..';
 
 export default {
-  title: 'Molecules / FlexTable / Expandable FlexTable',
+  title: 'Molecules / FlexTable / With expandable rows',
   parameters: {
     component: FlexTable,
     docs: {
@@ -226,7 +226,11 @@ export const ControlledExpandableTableWithClickableRows = () => {
       cursor: pointer;
     }
   `;
-  const expandItems = expandedItemsGenerator();
+  const expandItems = [
+    { label: 'Expand item 1', value: 123 },
+    { label: 'Expand item 2', value: 456 },
+    { label: 'Expand item 3', value: 789 },
+  ];
   const ControlledExpandedTableExample = () => {
     const [expandedRows, setExpandedRows] = useState<string[]>([]);
     const isExpanded = (rowId: string) => expandedRows.includes(rowId);
@@ -252,16 +256,6 @@ export const ControlledExpandableTableWithClickableRows = () => {
           expandItems={expandItems}
           expanded={isExpanded('row2')}
           onClick={() => onExpandClick('row2')(!isExpanded('row2'))}
-        >
-          <FlexTable.Cell columnId="column1">Entire...</FlexTable.Cell>
-          <FlexTable.Cell columnId="column2">...row...</FlexTable.Cell>
-          <FlexTable.Cell columnId="column3">...clickable</FlexTable.Cell>
-        </RowWithPointer>
-
-        <RowWithPointer
-          expandItems={expandItems}
-          expanded={isExpanded('row3')}
-          onClick={() => onExpandClick('row3')(!isExpanded('row3'))}
         >
           <FlexTable.Cell columnId="column1">Entire...</FlexTable.Cell>
           <FlexTable.Cell columnId="column2">...row...</FlexTable.Cell>

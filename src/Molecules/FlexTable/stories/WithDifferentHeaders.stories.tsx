@@ -19,7 +19,7 @@ export default {
 export const DefaultTableHeaders = () => {
   const DefaultTableHeadersExample = () => {
     const CustomisedTableHeader: React.FC = ({ children }) => (
-      <FlexTable.Header columnId="column3" sortable flex="2">
+      <FlexTable.Header columnId="column3" sortable>
         {({ sortable, sorted, fontSize, onSortClick, sortOrder }) => (
           <FlexTable.Header.SortButton onClick={onSortClick}>
             <StyledFlexboxContainer container>

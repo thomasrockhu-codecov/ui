@@ -5,7 +5,7 @@ import docs from '../FlexTable.mdx';
 import { StyledBackground } from './storiesShared';
 
 export default {
-  title: 'Molecules / FlexTable / FlexTable with different size props',
+  title: 'Molecules / FlexTable / With different size props',
   parameters: {
     component: FlexTable,
     docs: {
@@ -16,7 +16,7 @@ export default {
 
 export const TablesWithDifferentDensities = () => (
   <StyledBackground>
-    <Typography type="title3">Tables With Different Densities</Typography>
+    <Typography type="title3">Tables With Different Densities</Typography>&nbsp;
     <Typography type="primary">Default (Medium)</Typography>
     <Box mb={10}>
       <FlexTable>
@@ -37,7 +37,6 @@ export const TablesWithDifferentDensities = () => (
         </FlexTable.Row>
       </FlexTable>
     </Box>
-
     <Box mb={10}>
       <Typography type="primary">Small</Typography>
       <FlexTable density="s">
@@ -58,7 +57,6 @@ export const TablesWithDifferentDensities = () => (
         </FlexTable.Row>
       </FlexTable>
     </Box>
-
     <Box mb={10}>
       <Typography type="primary">Medium</Typography>
       <FlexTable>
@@ -79,7 +77,6 @@ export const TablesWithDifferentDensities = () => (
         </FlexTable.Row>
       </FlexTable>
     </Box>
-
     <Typography type="primary">Large</Typography>
     <FlexTable density="l">
       <FlexTable.HeaderRow>
@@ -177,7 +174,7 @@ export const TablesWithDifferentFontSizes = () => {
 
 export const TablesWithDifferentSizesInMobile = () => (
   <StyledBackground>
-    <Typography type="title3">Tables With Different Sizes on mobile</Typography>
+    <Typography type="title3">Tables With Different Sizes on mobile</Typography>&nbsp;
     <Typography type="primary">Small density and font on desktop, large on mobile</Typography>
     <FlexTable density="l" fontSize="m" md={{ density: 's', fontSize: 's' }}>
       <FlexTable.HeaderRow>

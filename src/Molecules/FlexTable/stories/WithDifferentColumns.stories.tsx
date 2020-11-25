@@ -198,35 +198,35 @@ export const ColumnWidthSortableTable = () => (
   </StyledBackground>
 );
 
-export const MediaColumns = () => (
+export const HiddenColumnOnXsAndSmScreens = () => (
   <StyledBackground>
-    <Typography type="title3">Table With Columns Hidden Based On Screen Size</Typography>
+    <Typography type="title3">Hidden Column On Extra Small And Small Screens</Typography>
     <FlexTable>
       <FlexTable.HeaderRow>
         <FlexTable.Header columnId="column1">Header 1</FlexTable.Header>
         <FlexTable.Header columnId="column2" hidden md={{ hidden: false }}>
-          Hidden column on mobile
+          Hidden on xs and sm
         </FlexTable.Header>
         <FlexTable.Header columnId="column3">Header 3</FlexTable.Header>
       </FlexTable.HeaderRow>
       <FlexTable.Row>
         <FlexTable.Cell columnId="column1">Cell 1-1</FlexTable.Cell>
         <FlexTable.Cell columnId="column2" hidden md={{ hidden: false }}>
-          Hidden on mobile
+          Hidden on xs and sm
         </FlexTable.Cell>
         <FlexTable.Cell columnId="column3">Cell 1-3</FlexTable.Cell>
       </FlexTable.Row>
       <FlexTable.Row>
         <FlexTable.Cell columnId="column1">Cell 2-1</FlexTable.Cell>
         <FlexTable.Cell columnId="column2" hidden md={{ hidden: false }}>
-          Hidden on mobile
+          Hidden on xs and sm
         </FlexTable.Cell>
         <FlexTable.Cell columnId="column3">Cell 2-3</FlexTable.Cell>
       </FlexTable.Row>
       <FlexTable.Row>
         <FlexTable.Cell columnId="column1">Cell 3-1</FlexTable.Cell>
         <FlexTable.Cell columnId="column2" hidden md={{ hidden: false }}>
-          Hidden on mobile
+          Hidden on xs and sm
         </FlexTable.Cell>
         <FlexTable.Cell columnId="column3">Cell 3-3</FlexTable.Cell>
       </FlexTable.Row>

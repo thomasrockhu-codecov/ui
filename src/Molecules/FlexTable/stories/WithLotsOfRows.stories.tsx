@@ -10,7 +10,7 @@ import docs from '../FlexTable.mdx';
 import { StyledBackground } from './storiesShared';
 
 export default {
-  title: 'Molecules / FlexTable / Big FlexTables example',
+  title: 'Molecules / FlexTable / With lots of rows',
 
   parameters: {
     component: FlexTable,
