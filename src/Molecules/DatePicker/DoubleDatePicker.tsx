@@ -214,14 +214,23 @@ export const DoubleDatePicker = (React.forwardRef<HTMLDivElement, Props>((props,
         setSelectedStartDate(date);
         setViewedDate(newDate(date));
       } else if (elementId === INPUT_ID_END) {
-        if (selectedStartDate && isSameDay(date, selectedStartDate)) return;
+        if (selectedEndDate && isSameDay(date, selectedEndDate)) return;
         setInputValueEnd(format(date, dateFormat, options));
-        setSelectedStartDate(date);
+        setSelectedEndDate(date);
         setViewedDate(newDate(date));
       }
       if (onChange) onChange(date);
     },
-    [INPUT_ID_END, INPUT_ID_START, dateFormat, locale, onChange, options, selectedStartDate],
+    [
+      INPUT_ID_END,
+      INPUT_ID_START,
+      dateFormat,
+      locale,
+      onChange,
+      options,
+      selectedEndDate,
+      selectedStartDate,
+    ],
   );
 
   const handleInputKeyDown = (event: React.KeyboardEvent<HTMLInputElement>) => {
