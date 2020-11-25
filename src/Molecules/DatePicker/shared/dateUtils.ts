@@ -10,7 +10,13 @@ import enLocale from 'date-fns/locale/en-US';
 import nbLocale from 'date-fns/locale/nb';
 import daLocale from 'date-fns/locale/da';
 import fiLocale from 'date-fns/locale/fi';
-import { isMatch, parse } from 'date-fns';
+import {
+  addWeeks,
+  differenceInCalendarDays,
+  differenceInCalendarWeeks,
+  isMatch,
+  parse,
+} from 'date-fns';
 import { capitalize } from './textUtils';
 
 type Options = {
@@ -116,4 +122,13 @@ export const getCalendar = (now: Date, opts?: Options): CalendarType => {
   );
 
   return calendar;
+};
+
+export const getCalendarIndex = (now: Date, calendar: CalendarType): [number, number] => {
+  // the difference in weeks from [0][0] will be the week index.
+  // the difference in days from [0+weekIndex][0] will be the days index.
+  const calendarStartDate = calendar.dates[0][0];
+  const weekIndex = differenceInCalendarWeeks(now, calendarStartDate, { weekStartsOn: 1 });
+  const dayIndex = differenceInCalendarDays(now, addWeeks(calendarStartDate, weekIndex));
+  return [weekIndex, dayIndex];
 };

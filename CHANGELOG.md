@@ -1,3 +1,45 @@
+# [4.11.0](https://github.com/nordnet/ui/compare/v4.10.7...v4.11.0) (2020-11-24)
+
+
+### Bug Fixes
+
+* travis plz ([bf347ca](https://github.com/nordnet/ui/commit/bf347ca))
+
+
+### Features
+
+* 🎸 step to next/prev month with arrow keys ([8e0b9c7](https://github.com/nordnet/ui/commit/8e0b9c7))
+
+## [4.10.7](https://github.com/nordnet/ui/compare/v4.10.6...v4.10.7) (2020-11-23)
+
+
+### Bug Fixes
+
+* 🐛 conflict merge fix with modalinner and storyshots ([658b6d6](https://github.com/nordnet/ui/commit/658b6d6))
+* 🐛 margin top auto instead of flex grow container, safari ([3fccb3a](https://github.com/nordnet/ui/commit/3fccb3a))
+
+## [4.10.6](https://github.com/nordnet/ui/compare/v4.10.5...v4.10.6) (2020-11-20)
+
+
+### Bug Fixes
+
+* 🐛 date picker disabled dates via text input ([77e89b5](https://github.com/nordnet/ui/commit/77e89b5))
+
+## [4.10.5](https://github.com/nordnet/ui/compare/v4.10.4...v4.10.5) (2020-11-19)
+
+
+### Bug Fixes
+
+* 🐛 add new date to avoid potential memory reference issues ([821ebdb](https://github.com/nordnet/ui/commit/821ebdb))
+* 🐛 swap month if date is clicked outside of current month ([cd80a59](https://github.com/nordnet/ui/commit/cd80a59))
+
+## [4.10.4](https://github.com/nordnet/ui/compare/v4.10.3...v4.10.4) (2020-11-19)
+
+
+### Bug Fixes
+
+* 🐛 support selecting a single date with range picker ([4fecda4](https://github.com/nordnet/ui/commit/4fecda4))
+
 ## [4.10.3](https://github.com/nordnet/ui/compare/v4.10.2...v4.10.3) (2020-11-19)
 
 

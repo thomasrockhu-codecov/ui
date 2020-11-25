@@ -2,7 +2,7 @@ import React, { useRef, useState, useCallback, useEffect, useMemo } from 'react'
 import styled, { useTheme } from 'styled-components';
 import format from 'date-fns/format';
 import { useIntl } from 'react-intl';
-import { isBefore, isSameDay, startOfDay } from 'date-fns';
+import { isBefore, isSameDay, isSameMonth, startOfDay } from 'date-fns';
 import { Props } from './DatePicker.types';
 
 /**
@@ -188,15 +188,29 @@ export const DatePicker = (React.forwardRef<HTMLDivElement, Props>((props, ref) 
 
   const onDateClick = useCallback(
     (date: Date) => {
+      if (date && !isSameMonth(date, viewedDate)) {
+        setViewedDate(newDate(date));
+        setFocused([null, null]);
+      }
       if (variant === REGULAR_DATE_PICKER) handleDateClickRegular(date);
       else handleDateClickRange(date);
     },
-    [variant, handleDateClickRegular, handleDateClickRange],
+    [viewedDate, variant, handleDateClickRegular, handleDateClickRange, setFocused],
+  );
+
+  const allowedDate = useCallback(
+    (date: Date | null) => {
+      if (date && disableDate && disableDate(date)) return null;
+      if (date && enableDate && !enableDate(date)) return null;
+      return date;
+    },
+    [disableDate, enableDate],
   );
 
   const handleInputSubmitRegular = useCallback(
     (dateString: string) => {
-      const date = parseDateString(dateString, locale);
+      const parsedDate = parseDateString(dateString, locale);
+      const date = allowedDate(parsedDate);
       if (!date) return;
       if (selectedDate && isSameDay(date, selectedDate)) return;
 
@@ -206,13 +220,18 @@ export const DatePicker = (React.forwardRef<HTMLDivElement, Props>((props, ref) 
 
       if (onChange) onChange(date);
     },
-    [dateFormat, locale, onChange, options, selectedDate],
+    [allowedDate, dateFormat, locale, onChange, options, selectedDate],
   );
 
   const handleInputSubmitRange = useCallback(
     (dateString: string) => {
       const [startDateString, endDateString] = dateString.split(' - ');
-      const [startDate, endDate] = parseDateStrings(startDateString, endDateString, locale);
+      const [parsedStartDate, parsedEndDate] = parseDateStrings(
+        startDateString,
+        endDateString,
+        locale,
+      );
+      const [startDate, endDate] = [allowedDate(parsedStartDate), allowedDate(parsedEndDate)];
 
       if (startDate && !endDate) {
         const selectedDateReselected = selectedDate && isSameDay(startDate, selectedDate);
@@ -249,7 +268,7 @@ export const DatePicker = (React.forwardRef<HTMLDivElement, Props>((props, ref) 
         if (onChange) onChange(startDate, endDate);
       }
     },
-    [locale, selectedDate, onChange, selectedEndDate, dateFormat, options],
+    [allowedDate, dateFormat, locale, onChange, options, selectedDate, selectedEndDate],
   );
 
   const handleInputKeyDown = (event: React.KeyboardEvent<HTMLInputElement>) => {
@@ -318,6 +337,7 @@ export const DatePicker = (React.forwardRef<HTMLDivElement, Props>((props, ref) 
         disableDate={disableDate}
         enableDate={enableDate}
         viewedDate={viewedDate}
+        setViewedDate={setViewedDate}
         locale={locale}
         onClick={onDateClick}
         selectedDate={selectedDate as Date}
