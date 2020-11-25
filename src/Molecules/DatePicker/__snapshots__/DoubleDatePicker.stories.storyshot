@@ -184,8 +184,8 @@ exports[`Storyshots Molecules / DatePicker / Double DatePicker Default 1`] = `
             <input
               autoComplete="off"
               className="NormalizedInput__Input-sc-1m4kmh9-0 c7"
-              data-testid="datepicker-input"
-              id="input-id"
+              data-testid="datepicker-input-start"
+              id="input-id-start"
               onChange={[Function]}
               onFocus={[Function]}
               onKeyDown={[Function]}
@@ -241,8 +241,8 @@ exports[`Storyshots Molecules / DatePicker / Double DatePicker Default 1`] = `
             <input
               autoComplete="off"
               className="NormalizedInput__Input-sc-1m4kmh9-0 c7"
-              data-testid="datepicker-input"
-              id="input-id"
+              data-testid="datepicker-input-end"
+              id="input-id-end"
               onChange={[Function]}
               onFocus={[Function]}
               onKeyDown={[Function]}
