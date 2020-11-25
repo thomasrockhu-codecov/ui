@@ -24,7 +24,10 @@ type StyledFlexboxProps = {
   $xl?: ScreenSizeConfigurableProps;
 } & FlexBoxProps;
 
-const getHiddenStyles = ({ hidden }: ScreenSizeConfigurableProps) =>
+const getHiddenStylesDesktop = ({ hidden }: ScreenSizeConfigurableProps) =>
+  hidden === true ? 'display: none;' : 'display: list-item;';
+
+const getHiddenStylesMobile = ({ hidden }: ScreenSizeConfigurableProps) =>
   hidden === true ? 'display: none;' : 'display: flex;';
 
 const StyledOverflowItem = styled(Flexbox)<{ textAlign?: string }>`
@@ -32,7 +35,9 @@ const StyledOverflowItem = styled(Flexbox)<{ textAlign?: string }>`
   text-align: ${({ textAlign = 'left' }) => textAlign};
 `;
 
-const StyledFlexbox = styled(Flexbox)<StyledFlexboxProps>`
+const StyledDesktopItem = styled(Flexbox)<StyledFlexboxProps>`
+  max-width: ${(p) => p.theme.spacing.unit(75)}px;
+  padding-bottom: ${(p) => p.theme.spacing.unit(5)}px;
   ${getStylesForSizes<{}, ScreenSizeConfigurableProps>(
     (p: StyledFlexboxProps) => ({
       xs: p.$xs,
@@ -42,14 +47,24 @@ const StyledFlexbox = styled(Flexbox)<StyledFlexboxProps>`
       xl: p.$xl,
     }),
     {
-      hidden: getHiddenStyles,
+      hidden: getHiddenStylesDesktop,
     },
   )}
 `;
 
-const StyledFlexboxItem = styled(StyledFlexbox)<StyledFlexboxProps>`
-  max-width: ${(p) => p.theme.spacing.unit(75)}px;
-  padding-bottom: ${(p) => p.theme.spacing.unit(5)}px;
+const StyledMobileItem = styled(Flexbox)<StyledFlexboxProps>`
+  ${getStylesForSizes<{}, ScreenSizeConfigurableProps>(
+    (p: StyledFlexboxProps) => ({
+      xs: p.$xs,
+      sm: p.$sm,
+      md: p.$md,
+      lg: p.$lg,
+      xl: p.$xl,
+    }),
+    {
+      hidden: getHiddenStylesMobile,
+    },
+  )}
 `;
 
 const ExpandRenderer: React.FC<{
@@ -70,7 +85,7 @@ const MobileItem: React.FC<
     value: ExpandItemProps['value'];
   } & ExpandItemMediaProps
 > = ({ label, value, xs, sm, md, lg, xl }) => (
-  <StyledFlexbox
+  <StyledMobileItem
     forwardedAs="li"
     container
     justifyContent="space-between"
@@ -86,7 +101,7 @@ const MobileItem: React.FC<
     <StyledOverflowItem item flex="0 0 50%" textAlign="right">
       <ExpandRenderer>{value}</ExpandRenderer>
     </StyledOverflowItem>
-  </StyledFlexbox>
+  </StyledMobileItem>
 );
 
 const DesktopItem: React.FC<
@@ -95,11 +110,11 @@ const DesktopItem: React.FC<
     value: ExpandItemProps['value'];
   } & ExpandItemMediaProps
 > = ({ label, value, xs, sm, md, lg, xl }) => (
-  <StyledFlexboxItem item $xs={xs} $sm={sm} $md={md} $lg={lg} $xl={xl}>
+  <StyledDesktopItem item $xs={xs} $sm={sm} $md={md} $lg={lg} $xl={xl} forwardedAs="li">
     <LabeledValue label={<ExpandRenderer isLabel>{label}</ExpandRenderer>}>
       <ExpandRenderer>{value}</ExpandRenderer>
     </LabeledValue>
-  </StyledFlexboxItem>
+  </StyledDesktopItem>
 );
 
 export const ExpandItem: ExpandItemComponent = ({ item, mobileItem }) => {

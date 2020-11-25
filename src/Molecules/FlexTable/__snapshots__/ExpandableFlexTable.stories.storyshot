@@ -338,20 +338,17 @@ exports[`Storyshots Molecules / FlexTable / Expandable FlexTable Controlled Expa
   text-align: right;
 }
 
+.c38 {
+  max-width: 300px;
+  padding-bottom: 20px;
+  display: list-item;
+}
+
 .c32 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-}
-
-.c38 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  max-width: 300px;
-  padding-bottom: 20px;
 }
 
 .c13 {
@@ -1740,7 +1737,7 @@ exports[`Storyshots Molecules / FlexTable / Expandable FlexTable Controlled Expa
         <ul
           className="c30 c36"
         >
-          <div
+          <li
             className="c37 c38"
           >
             <div
@@ -1769,8 +1766,8 @@ exports[`Storyshots Molecules / FlexTable / Expandable FlexTable Controlled Expa
                 </span>
               </div>
             </div>
-          </div>
-          <div
+          </li>
+          <li
             className="c37 c38"
           >
             <div
@@ -1799,8 +1796,8 @@ exports[`Storyshots Molecules / FlexTable / Expandable FlexTable Controlled Expa
                 </span>
               </div>
             </div>
-          </div>
-          <div
+          </li>
+          <li
             className="c37 c38"
           >
             <div
@@ -1829,8 +1826,8 @@ exports[`Storyshots Molecules / FlexTable / Expandable FlexTable Controlled Expa
                 </span>
               </div>
             </div>
-          </div>
-          <div
+          </li>
+          <li
             className="c37 c38"
           >
             <div
@@ -1859,8 +1856,8 @@ exports[`Storyshots Molecules / FlexTable / Expandable FlexTable Controlled Expa
                 </span>
               </div>
             </div>
-          </div>
-          <div
+          </li>
+          <li
             className="c37 c38"
           >
             <div
@@ -1889,8 +1886,8 @@ exports[`Storyshots Molecules / FlexTable / Expandable FlexTable Controlled Expa
                 </span>
               </div>
             </div>
-          </div>
-          <div
+          </li>
+          <li
             className="c37 c38"
           >
             <div
@@ -1919,8 +1916,8 @@ exports[`Storyshots Molecules / FlexTable / Expandable FlexTable Controlled Expa
                 </span>
               </div>
             </div>
-          </div>
-          <div
+          </li>
+          <li
             className="c37 c38"
           >
             <div
@@ -1949,8 +1946,8 @@ exports[`Storyshots Molecules / FlexTable / Expandable FlexTable Controlled Expa
                 </span>
               </div>
             </div>
-          </div>
-          <div
+          </li>
+          <li
             className="c37 c38"
           >
             <div
@@ -1979,8 +1976,8 @@ exports[`Storyshots Molecules / FlexTable / Expandable FlexTable Controlled Expa
                 </span>
               </div>
             </div>
-          </div>
-          <div
+          </li>
+          <li
             className="c37 c38"
           >
             <div
@@ -2009,8 +2006,8 @@ exports[`Storyshots Molecules / FlexTable / Expandable FlexTable Controlled Expa
                 </span>
               </div>
             </div>
-          </div>
-          <div
+          </li>
+          <li
             className="c37 c38"
           >
             <div
@@ -2039,8 +2036,8 @@ exports[`Storyshots Molecules / FlexTable / Expandable FlexTable Controlled Expa
                 </span>
               </div>
             </div>
-          </div>
-          <div
+          </li>
+          <li
             className="c37 c38"
           >
             <div
@@ -2069,8 +2066,8 @@ exports[`Storyshots Molecules / FlexTable / Expandable FlexTable Controlled Expa
                 </span>
               </div>
             </div>
-          </div>
-          <div
+          </li>
+          <li
             className="c37 c38"
           >
             <div
@@ -2099,8 +2096,8 @@ exports[`Storyshots Molecules / FlexTable / Expandable FlexTable Controlled Expa
                 </span>
               </div>
             </div>
-          </div>
-          <div
+          </li>
+          <li
             className="c37 c38"
           >
             <div
@@ -2129,8 +2126,8 @@ exports[`Storyshots Molecules / FlexTable / Expandable FlexTable Controlled Expa
                 </span>
               </div>
             </div>
-          </div>
-          <div
+          </li>
+          <li
             className="c37 c38"
           >
             <div
@@ -2159,8 +2156,8 @@ exports[`Storyshots Molecules / FlexTable / Expandable FlexTable Controlled Expa
                 </span>
               </div>
             </div>
-          </div>
-          <div
+          </li>
+          <li
             className="c37 c38"
           >
             <div
@@ -2189,8 +2186,8 @@ exports[`Storyshots Molecules / FlexTable / Expandable FlexTable Controlled Expa
                 </span>
               </div>
             </div>
-          </div>
-          <div
+          </li>
+          <li
             className="c37 c38"
           >
             <div
@@ -2219,8 +2216,8 @@ exports[`Storyshots Molecules / FlexTable / Expandable FlexTable Controlled Expa
                 </span>
               </div>
             </div>
-          </div>
-          <div
+          </li>
+          <li
             className="c37 c38"
           >
             <div
@@ -2249,8 +2246,8 @@ exports[`Storyshots Molecules / FlexTable / Expandable FlexTable Controlled Expa
                 </span>
               </div>
             </div>
-          </div>
-          <div
+          </li>
+          <li
             className="c37 c38"
           >
             <div
@@ -2279,8 +2276,8 @@ exports[`Storyshots Molecules / FlexTable / Expandable FlexTable Controlled Expa
                 </span>
               </div>
             </div>
-          </div>
-          <div
+          </li>
+          <li
             className="c37 c38"
           >
             <div
@@ -2309,8 +2306,8 @@ exports[`Storyshots Molecules / FlexTable / Expandable FlexTable Controlled Expa
                 </span>
               </div>
             </div>
-          </div>
-          <div
+          </li>
+          <li
             className="c37 c38"
           >
             <div
@@ -2339,7 +2336,7 @@ exports[`Storyshots Molecules / FlexTable / Expandable FlexTable Controlled Expa
                 </span>
               </div>
             </div>
-          </div>
+          </li>
         </ul>
       </div>
     </div>
@@ -3027,20 +3024,17 @@ exports[`Storyshots Molecules / FlexTable / Expandable FlexTable Controlled Expa
   text-align: right;
 }
 
+.c39 {
+  max-width: 300px;
+  padding-bottom: 20px;
+  display: list-item;
+}
+
 .c33 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-}
-
-.c39 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  max-width: 300px;
-  padding-bottom: 20px;
 }
 
 .c13 {
@@ -4254,7 +4248,7 @@ exports[`Storyshots Molecules / FlexTable / Expandable FlexTable Controlled Expa
         <ul
           className="c31 c37"
         >
-          <div
+          <li
             className="c38 c39"
           >
             <div
@@ -4283,8 +4277,8 @@ exports[`Storyshots Molecules / FlexTable / Expandable FlexTable Controlled Expa
                 </span>
               </div>
             </div>
-          </div>
-          <div
+          </li>
+          <li
             className="c38 c39"
           >
             <div
@@ -4313,8 +4307,8 @@ exports[`Storyshots Molecules / FlexTable / Expandable FlexTable Controlled Expa
                 </span>
               </div>
             </div>
-          </div>
-          <div
+          </li>
+          <li
             className="c38 c39"
           >
             <div
@@ -4343,8 +4337,8 @@ exports[`Storyshots Molecules / FlexTable / Expandable FlexTable Controlled Expa
                 </span>
               </div>
             </div>
-          </div>
-          <div
+          </li>
+          <li
             className="c38 c39"
           >
             <div
@@ -4373,8 +4367,8 @@ exports[`Storyshots Molecules / FlexTable / Expandable FlexTable Controlled Expa
                 </span>
               </div>
             </div>
-          </div>
-          <div
+          </li>
+          <li
             className="c38 c39"
           >
             <div
@@ -4403,8 +4397,8 @@ exports[`Storyshots Molecules / FlexTable / Expandable FlexTable Controlled Expa
                 </span>
               </div>
             </div>
-          </div>
-          <div
+          </li>
+          <li
             className="c38 c39"
           >
             <div
@@ -4433,8 +4427,8 @@ exports[`Storyshots Molecules / FlexTable / Expandable FlexTable Controlled Expa
                 </span>
               </div>
             </div>
-          </div>
-          <div
+          </li>
+          <li
             className="c38 c39"
           >
             <div
@@ -4463,8 +4457,8 @@ exports[`Storyshots Molecules / FlexTable / Expandable FlexTable Controlled Expa
                 </span>
               </div>
             </div>
-          </div>
-          <div
+          </li>
+          <li
             className="c38 c39"
           >
             <div
@@ -4493,8 +4487,8 @@ exports[`Storyshots Molecules / FlexTable / Expandable FlexTable Controlled Expa
                 </span>
               </div>
             </div>
-          </div>
-          <div
+          </li>
+          <li
             className="c38 c39"
           >
             <div
@@ -4523,8 +4517,8 @@ exports[`Storyshots Molecules / FlexTable / Expandable FlexTable Controlled Expa
                 </span>
               </div>
             </div>
-          </div>
-          <div
+          </li>
+          <li
             className="c38 c39"
           >
             <div
@@ -4553,8 +4547,8 @@ exports[`Storyshots Molecules / FlexTable / Expandable FlexTable Controlled Expa
                 </span>
               </div>
             </div>
-          </div>
-          <div
+          </li>
+          <li
             className="c38 c39"
           >
             <div
@@ -4583,8 +4577,8 @@ exports[`Storyshots Molecules / FlexTable / Expandable FlexTable Controlled Expa
                 </span>
               </div>
             </div>
-          </div>
-          <div
+          </li>
+          <li
             className="c38 c39"
           >
             <div
@@ -4613,8 +4607,8 @@ exports[`Storyshots Molecules / FlexTable / Expandable FlexTable Controlled Expa
                 </span>
               </div>
             </div>
-          </div>
-          <div
+          </li>
+          <li
             className="c38 c39"
           >
             <div
@@ -4643,8 +4637,8 @@ exports[`Storyshots Molecules / FlexTable / Expandable FlexTable Controlled Expa
                 </span>
               </div>
             </div>
-          </div>
-          <div
+          </li>
+          <li
             className="c38 c39"
           >
             <div
@@ -4673,8 +4667,8 @@ exports[`Storyshots Molecules / FlexTable / Expandable FlexTable Controlled Expa
                 </span>
               </div>
             </div>
-          </div>
-          <div
+          </li>
+          <li
             className="c38 c39"
           >
             <div
@@ -4703,8 +4697,8 @@ exports[`Storyshots Molecules / FlexTable / Expandable FlexTable Controlled Expa
                 </span>
               </div>
             </div>
-          </div>
-          <div
+          </li>
+          <li
             className="c38 c39"
           >
             <div
@@ -4733,8 +4727,8 @@ exports[`Storyshots Molecules / FlexTable / Expandable FlexTable Controlled Expa
                 </span>
               </div>
             </div>
-          </div>
-          <div
+          </li>
+          <li
             className="c38 c39"
           >
             <div
@@ -4763,8 +4757,8 @@ exports[`Storyshots Molecules / FlexTable / Expandable FlexTable Controlled Expa
                 </span>
               </div>
             </div>
-          </div>
-          <div
+          </li>
+          <li
             className="c38 c39"
           >
             <div
@@ -4793,8 +4787,8 @@ exports[`Storyshots Molecules / FlexTable / Expandable FlexTable Controlled Expa
                 </span>
               </div>
             </div>
-          </div>
-          <div
+          </li>
+          <li
             className="c38 c39"
           >
             <div
@@ -4823,8 +4817,8 @@ exports[`Storyshots Molecules / FlexTable / Expandable FlexTable Controlled Expa
                 </span>
               </div>
             </div>
-          </div>
-          <div
+          </li>
+          <li
             className="c38 c39"
           >
             <div
@@ -4853,7 +4847,7 @@ exports[`Storyshots Molecules / FlexTable / Expandable FlexTable Controlled Expa
                 </span>
               </div>
             </div>
-          </div>
+          </li>
         </ul>
       </div>
     </div>
@@ -5417,20 +5411,17 @@ exports[`Storyshots Molecules / FlexTable / Expandable FlexTable Expanded Table 
   text-align: right;
 }
 
+.c39 {
+  max-width: 300px;
+  padding-bottom: 20px;
+  display: list-item;
+}
+
 .c33 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-}
-
-.c39 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  max-width: 300px;
-  padding-bottom: 20px;
 }
 
 .c13 {
@@ -6645,7 +6636,7 @@ exports[`Storyshots Molecules / FlexTable / Expandable FlexTable Expanded Table 
           <ul
             className="c31 c37"
           >
-            <div
+            <li
               className="c38 c39"
             >
               <div
@@ -6674,8 +6665,8 @@ exports[`Storyshots Molecules / FlexTable / Expandable FlexTable Expanded Table 
                   </span>
                 </div>
               </div>
-            </div>
-            <div
+            </li>
+            <li
               className="c38 c39"
             >
               <div
@@ -6704,8 +6695,8 @@ exports[`Storyshots Molecules / FlexTable / Expandable FlexTable Expanded Table 
                   </span>
                 </div>
               </div>
-            </div>
-            <div
+            </li>
+            <li
               className="c38 c39"
             >
               <div
@@ -6734,8 +6725,8 @@ exports[`Storyshots Molecules / FlexTable / Expandable FlexTable Expanded Table 
                   </span>
                 </div>
               </div>
-            </div>
-            <div
+            </li>
+            <li
               className="c38 c39"
             >
               <div
@@ -6764,8 +6755,8 @@ exports[`Storyshots Molecules / FlexTable / Expandable FlexTable Expanded Table 
                   </span>
                 </div>
               </div>
-            </div>
-            <div
+            </li>
+            <li
               className="c38 c39"
             >
               <div
@@ -6794,8 +6785,8 @@ exports[`Storyshots Molecules / FlexTable / Expandable FlexTable Expanded Table 
                   </span>
                 </div>
               </div>
-            </div>
-            <div
+            </li>
+            <li
               className="c38 c39"
             >
               <div
@@ -6824,8 +6815,8 @@ exports[`Storyshots Molecules / FlexTable / Expandable FlexTable Expanded Table 
                   </span>
                 </div>
               </div>
-            </div>
-            <div
+            </li>
+            <li
               className="c38 c39"
             >
               <div
@@ -6854,8 +6845,8 @@ exports[`Storyshots Molecules / FlexTable / Expandable FlexTable Expanded Table 
                   </span>
                 </div>
               </div>
-            </div>
-            <div
+            </li>
+            <li
               className="c38 c39"
             >
               <div
@@ -6884,8 +6875,8 @@ exports[`Storyshots Molecules / FlexTable / Expandable FlexTable Expanded Table 
                   </span>
                 </div>
               </div>
-            </div>
-            <div
+            </li>
+            <li
               className="c38 c39"
             >
               <div
@@ -6914,8 +6905,8 @@ exports[`Storyshots Molecules / FlexTable / Expandable FlexTable Expanded Table 
                   </span>
                 </div>
               </div>
-            </div>
-            <div
+            </li>
+            <li
               className="c38 c39"
             >
               <div
@@ -6944,8 +6935,8 @@ exports[`Storyshots Molecules / FlexTable / Expandable FlexTable Expanded Table 
                   </span>
                 </div>
               </div>
-            </div>
-            <div
+            </li>
+            <li
               className="c38 c39"
             >
               <div
@@ -6974,8 +6965,8 @@ exports[`Storyshots Molecules / FlexTable / Expandable FlexTable Expanded Table 
                   </span>
                 </div>
               </div>
-            </div>
-            <div
+            </li>
+            <li
               className="c38 c39"
             >
               <div
@@ -7004,8 +6995,8 @@ exports[`Storyshots Molecules / FlexTable / Expandable FlexTable Expanded Table 
                   </span>
                 </div>
               </div>
-            </div>
-            <div
+            </li>
+            <li
               className="c38 c39"
             >
               <div
@@ -7034,8 +7025,8 @@ exports[`Storyshots Molecules / FlexTable / Expandable FlexTable Expanded Table 
                   </span>
                 </div>
               </div>
-            </div>
-            <div
+            </li>
+            <li
               className="c38 c39"
             >
               <div
@@ -7064,8 +7055,8 @@ exports[`Storyshots Molecules / FlexTable / Expandable FlexTable Expanded Table 
                   </span>
                 </div>
               </div>
-            </div>
-            <div
+            </li>
+            <li
               className="c38 c39"
             >
               <div
@@ -7094,8 +7085,8 @@ exports[`Storyshots Molecules / FlexTable / Expandable FlexTable Expanded Table 
                   </span>
                 </div>
               </div>
-            </div>
-            <div
+            </li>
+            <li
               className="c38 c39"
             >
               <div
@@ -7124,8 +7115,8 @@ exports[`Storyshots Molecules / FlexTable / Expandable FlexTable Expanded Table 
                   </span>
                 </div>
               </div>
-            </div>
-            <div
+            </li>
+            <li
               className="c38 c39"
             >
               <div
@@ -7154,8 +7145,8 @@ exports[`Storyshots Molecules / FlexTable / Expandable FlexTable Expanded Table 
                   </span>
                 </div>
               </div>
-            </div>
-            <div
+            </li>
+            <li
               className="c38 c39"
             >
               <div
@@ -7184,8 +7175,8 @@ exports[`Storyshots Molecules / FlexTable / Expandable FlexTable Expanded Table 
                   </span>
                 </div>
               </div>
-            </div>
-            <div
+            </li>
+            <li
               className="c38 c39"
             >
               <div
@@ -7214,8 +7205,8 @@ exports[`Storyshots Molecules / FlexTable / Expandable FlexTable Expanded Table 
                   </span>
                 </div>
               </div>
-            </div>
-            <div
+            </li>
+            <li
               className="c38 c39"
             >
               <div
@@ -7244,7 +7235,7 @@ exports[`Storyshots Molecules / FlexTable / Expandable FlexTable Expanded Table 
                   </span>
                 </div>
               </div>
-            </div>
+            </li>
           </ul>
         </div>
       </div>
@@ -7724,20 +7715,17 @@ exports[`Storyshots Molecules / FlexTable / Expandable FlexTable Expanded Table 
   text-align: right;
 }
 
+.c34 {
+  max-width: 300px;
+  padding-bottom: 20px;
+  display: list-item;
+}
+
 .c28 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-}
-
-.c34 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  max-width: 300px;
-  padding-bottom: 20px;
 }
 
 .c13 {
@@ -8717,7 +8705,7 @@ exports[`Storyshots Molecules / FlexTable / Expandable FlexTable Expanded Table 
         <ul
           className="c26 c32"
         >
-          <div
+          <li
             className="c33 c34"
           >
             <div
@@ -8746,8 +8734,8 @@ exports[`Storyshots Molecules / FlexTable / Expandable FlexTable Expanded Table 
                 </span>
               </div>
             </div>
-          </div>
-          <div
+          </li>
+          <li
             className="c33 c34"
           >
             <div
@@ -8776,8 +8764,8 @@ exports[`Storyshots Molecules / FlexTable / Expandable FlexTable Expanded Table 
                 </span>
               </div>
             </div>
-          </div>
-          <div
+          </li>
+          <li
             className="c33 c34"
           >
             <div
@@ -8806,8 +8794,8 @@ exports[`Storyshots Molecules / FlexTable / Expandable FlexTable Expanded Table 
                 </span>
               </div>
             </div>
-          </div>
-          <div
+          </li>
+          <li
             className="c33 c34"
           >
             <div
@@ -8836,8 +8824,8 @@ exports[`Storyshots Molecules / FlexTable / Expandable FlexTable Expanded Table 
                 </span>
               </div>
             </div>
-          </div>
-          <div
+          </li>
+          <li
             className="c33 c34"
           >
             <div
@@ -8866,8 +8854,8 @@ exports[`Storyshots Molecules / FlexTable / Expandable FlexTable Expanded Table 
                 </span>
               </div>
             </div>
-          </div>
-          <div
+          </li>
+          <li
             className="c33 c34"
           >
             <div
@@ -8896,8 +8884,8 @@ exports[`Storyshots Molecules / FlexTable / Expandable FlexTable Expanded Table 
                 </span>
               </div>
             </div>
-          </div>
-          <div
+          </li>
+          <li
             className="c33 c34"
           >
             <div
@@ -8926,8 +8914,8 @@ exports[`Storyshots Molecules / FlexTable / Expandable FlexTable Expanded Table 
                 </span>
               </div>
             </div>
-          </div>
-          <div
+          </li>
+          <li
             className="c33 c34"
           >
             <div
@@ -8956,8 +8944,8 @@ exports[`Storyshots Molecules / FlexTable / Expandable FlexTable Expanded Table 
                 </span>
               </div>
             </div>
-          </div>
-          <div
+          </li>
+          <li
             className="c33 c34"
           >
             <div
@@ -8986,8 +8974,8 @@ exports[`Storyshots Molecules / FlexTable / Expandable FlexTable Expanded Table 
                 </span>
               </div>
             </div>
-          </div>
-          <div
+          </li>
+          <li
             className="c33 c34"
           >
             <div
@@ -9016,8 +9004,8 @@ exports[`Storyshots Molecules / FlexTable / Expandable FlexTable Expanded Table 
                 </span>
               </div>
             </div>
-          </div>
-          <div
+          </li>
+          <li
             className="c33 c34"
           >
             <div
@@ -9046,8 +9034,8 @@ exports[`Storyshots Molecules / FlexTable / Expandable FlexTable Expanded Table 
                 </span>
               </div>
             </div>
-          </div>
-          <div
+          </li>
+          <li
             className="c33 c34"
           >
             <div
@@ -9076,8 +9064,8 @@ exports[`Storyshots Molecules / FlexTable / Expandable FlexTable Expanded Table 
                 </span>
               </div>
             </div>
-          </div>
-          <div
+          </li>
+          <li
             className="c33 c34"
           >
             <div
@@ -9106,8 +9094,8 @@ exports[`Storyshots Molecules / FlexTable / Expandable FlexTable Expanded Table 
                 </span>
               </div>
             </div>
-          </div>
-          <div
+          </li>
+          <li
             className="c33 c34"
           >
             <div
@@ -9136,8 +9124,8 @@ exports[`Storyshots Molecules / FlexTable / Expandable FlexTable Expanded Table 
                 </span>
               </div>
             </div>
-          </div>
-          <div
+          </li>
+          <li
             className="c33 c34"
           >
             <div
@@ -9166,8 +9154,8 @@ exports[`Storyshots Molecules / FlexTable / Expandable FlexTable Expanded Table 
                 </span>
               </div>
             </div>
-          </div>
-          <div
+          </li>
+          <li
             className="c33 c34"
           >
             <div
@@ -9196,8 +9184,8 @@ exports[`Storyshots Molecules / FlexTable / Expandable FlexTable Expanded Table 
                 </span>
               </div>
             </div>
-          </div>
-          <div
+          </li>
+          <li
             className="c33 c34"
           >
             <div
@@ -9226,8 +9214,8 @@ exports[`Storyshots Molecules / FlexTable / Expandable FlexTable Expanded Table 
                 </span>
               </div>
             </div>
-          </div>
-          <div
+          </li>
+          <li
             className="c33 c34"
           >
             <div
@@ -9256,8 +9244,8 @@ exports[`Storyshots Molecules / FlexTable / Expandable FlexTable Expanded Table 
                 </span>
               </div>
             </div>
-          </div>
-          <div
+          </li>
+          <li
             className="c33 c34"
           >
             <div
@@ -9286,8 +9274,8 @@ exports[`Storyshots Molecules / FlexTable / Expandable FlexTable Expanded Table 
                 </span>
               </div>
             </div>
-          </div>
-          <div
+          </li>
+          <li
             className="c33 c34"
           >
             <div
@@ -9316,7 +9304,7 @@ exports[`Storyshots Molecules / FlexTable / Expandable FlexTable Expanded Table 
                 </span>
               </div>
             </div>
-          </div>
+          </li>
         </ul>
       </div>
     </div>
