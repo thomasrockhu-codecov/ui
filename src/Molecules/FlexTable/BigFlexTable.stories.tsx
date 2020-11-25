@@ -40,7 +40,7 @@ const BigTableRow = ({ data }: any) => {
     {},
   );
   return (
-    <FlexTable.Row expandItems={expandItems} md={{ expandItems: [] }}>
+    <FlexTable.Row expandItems={expandItems}>
       {Object.keys(R.omit(['rowId'], data)).map((valueKey, index) => (
         <FlexTable.Cell
           key={data[valueKey].id}
