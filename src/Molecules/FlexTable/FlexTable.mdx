@@ -54,10 +54,10 @@ The Flextable component only handles UI states.
 
 ## Customization
 
-To enable users to customise their components, `FlexTable` and its components are developed to support plain strings, components and functions as children.
+To enable users to customise their components, `FlexTable` and its components supports plain strings, components and functions as children.
 Sending in a plain string as a child will wrap the string with content wrappers to set e.g. the correct font, font size and padding.
-If the user sends in a component it will be rendered without content wrappers, enabling full customisability. To simplify reuse of the table standards,
-the components export all their content wrappers as building stones, to create your own custom component. See the example below
+If the user sends in a component it will be rendered without content wrappers. To simplify reuse of the table standards,
+the components export all their content wrappers as building blocks, to create your own custom component. Please see the example below.
 
 ```jsx
 <FlexTable.Cell>String</FlexTable.Cell>
@@ -82,7 +82,7 @@ the components export all their content wrappers as building stones, to create y
 ```
 
 In this example `Cell` exports its building block `TextWrapper`. `TextWrapper` includes the font size and truncation used when supplying a plain string as a child.
-This allows building custom components that fulfill the FlexTable standards, see below
+This allows building custom components that fulfill the FlexTable standards, see below.
 
 ```jsx
 const FlagNumberCell = React.memo(({ value, country, currency }) => (
