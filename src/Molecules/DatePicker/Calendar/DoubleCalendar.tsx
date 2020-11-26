@@ -159,7 +159,7 @@ const DoubleCalendar: React.FC<Props> = ({
               item
               justifyContent="center"
               alignItems="center"
-              key={n}
+              key={`${n}-${index < NUMBER_OF_VISIBLE_WEEKDAYS_SINGLE ? 'left' : 'right'}`}
               $withGutter={index === NUMBER_OF_VISIBLE_WEEKDAYS_SINGLE - 1}
             >
               <StyledBox>
@@ -171,15 +171,16 @@ const DoubleCalendar: React.FC<Props> = ({
         {calendar.dates.map((week, weekIndex) => (
           <Flexbox container justifyContent="flex-start" key={week.toString()}>
             {week.map((day, dayIndex) => {
-              const shouldNotRender =
+              const hideDate =
                 (!isSameMonth(leftViewedDate, day) &&
                   isSameMonth(rightViewedDate, day) &&
                   dayIndex < NUMBER_OF_VISIBLE_WEEKDAYS_SINGLE) ||
                 (!isSameMonth(rightViewedDate, day) &&
                   isSameMonth(leftViewedDate, day) &&
                   dayIndex >= NUMBER_OF_VISIBLE_WEEKDAYS_SINGLE);
-              return shouldNotRender ? (
+              return hideDate ? (
                 <HiddenDate
+                  key={day.toString()}
                   $withGutter={dayIndex === NUMBER_OF_VISIBLE_WEEKDAYS_SINGLE - 1}
                   aria-hidden
                 />
