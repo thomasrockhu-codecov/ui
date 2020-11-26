@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from 'react';
+import React, { useEffect, useRef, useMemo, useState } from 'react';
 import styled from 'styled-components';
 import * as R from 'ramda';
 import {
@@ -48,9 +48,12 @@ const DoubleCalendar: React.FC<Props> = ({
   onClick,
   selectedStartDate,
   selectedEndDate,
-  focusedState,
+  controlledFocus,
 }) => {
-  const [[focusedWeek, focusedDay], setFocused] = focusedState;
+  const [[focusedWeek, focusedDay], setFocused] = useState<[number | null, number | null]>([
+    null,
+    null,
+  ]);
   const focusedDateObjRef = useRef<Date | null>(null);
 
   const dateIsDisabled = (dateToCheck: Date | null) => {
@@ -64,9 +67,11 @@ const DoubleCalendar: React.FC<Props> = ({
   };
 
   const calendarDayRefs = useRef(
-    [...Array(NUMBER_OF_VISIBLE_ROWS_DOUBLE)].map(() =>
-      [...Array(NUMBER_OF_VISIBLE_WEEKDAYS_DOUBLE)].map(() => React.createRef<HTMLDivElement>()),
-    ),
+    useMemo(() => {
+      return [...Array(NUMBER_OF_VISIBLE_ROWS_DOUBLE)].map(() =>
+        [...Array(NUMBER_OF_VISIBLE_WEEKDAYS_DOUBLE)].map(() => React.createRef<HTMLDivElement>()),
+      );
+    }, []),
   );
 
   const handleKeyPress = (event: React.KeyboardEvent) => {
@@ -131,19 +136,26 @@ const DoubleCalendar: React.FC<Props> = ({
   const rightViewedDate = addMonths(leftViewedDate, 1);
 
   const localeObj = getLocale(locale);
-  const leftCalendar = getCalendar(viewedDate, {
-    locale: localeObj,
-  });
-  const rightCalendar = getCalendar(addMonths(viewedDate, 1), {
-    locale: localeObj,
-  });
-  const calendar = {
-    weekDays: [...leftCalendar.weekDays, ...rightCalendar.weekDays],
-    dates: leftCalendar.dates.map((leftWeek, index) => [
-      ...leftWeek,
-      ...rightCalendar.dates[index],
-    ]),
-  };
+
+  const calendar = useMemo(() => {
+    const leftCalendar = getCalendar(viewedDate, {
+      locale: localeObj,
+    });
+    const rightCalendar = getCalendar(addMonths(viewedDate, 1), {
+      locale: localeObj,
+    });
+    return {
+      weekDays: [...leftCalendar.weekDays, ...rightCalendar.weekDays],
+      dates: leftCalendar.dates.map((leftWeek, index) => [
+        ...leftWeek,
+        ...rightCalendar.dates[index],
+      ]),
+    };
+  }, [localeObj, viewedDate]);
+
+  useEffect(() => {
+    if (controlledFocus) setFocused([0, 0]);
+  }, [controlledFocus, setFocused]);
 
   return (
     <Flexbox

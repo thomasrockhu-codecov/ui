@@ -1,5 +1,3 @@
-type FocusedState = [number | null, number | null];
-
 export type Props = {
   disableDate?: (date: Date) => boolean;
   enableDate?: (date: Date) => boolean;
@@ -8,6 +6,6 @@ export type Props = {
   onClick: (date: Date) => void;
   selectedStartDate: Date;
   selectedEndDate?: Date;
-  focusedState: [FocusedState, React.Dispatch<React.SetStateAction<FocusedState>>];
+  controlledFocus: boolean;
   setViewedDate: (date: Date) => void;
 };

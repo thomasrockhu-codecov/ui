@@ -104,8 +104,7 @@ export const DoubleDatePicker = (React.forwardRef<HTMLDivElement, Props>((props,
   const [inputValueStart, setInputValueStart] = useState<string>(inputValueStartProp || '');
   const [inputValueEnd, setInputValueEnd] = useState<string>(inputValueEndProp || '');
 
-  const focusedState = useState<[number | null, number | null]>([null, null]);
-  const setFocused = focusedState[1];
+  const [controlledFocus, setControlledFocus] = useState<boolean>(false);
 
   useEffect(() => {
     setOpen(openProp);
@@ -229,7 +228,7 @@ export const DoubleDatePicker = (React.forwardRef<HTMLDivElement, Props>((props,
       case 'ArrowRight':
       case 'ArrowDown':
       case 'ArrowLeft':
-        if (!inputValueEnd) setFocused([0, 0]);
+        if (!inputValueStart && !inputValueEnd) setControlledFocus(true);
         break;
 
       case 'Enter':
@@ -272,13 +271,7 @@ export const DoubleDatePicker = (React.forwardRef<HTMLDivElement, Props>((props,
   );
 
   const datepicker = (
-    <Box
-      my={3}
-      mx={2}
-      onBlur={() => {
-        setFocused([null, null]);
-      }}
-    >
+    <Box my={3} mx={2} onBlur={() => setControlledFocus(false)}>
       <DoubleHeader
         ariaLabelPrevious={ariaLabelPrevious}
         ariaLabelNext={ariaLabelNext}
@@ -297,8 +290,8 @@ export const DoubleDatePicker = (React.forwardRef<HTMLDivElement, Props>((props,
         onClick={onDateClick}
         selectedStartDate={selectedStartDate as Date}
         selectedEndDate={selectedEndDate as Date}
-        focusedState={focusedState}
         setViewedDate={() => ({})}
+        controlledFocus={controlledFocus}
       />
     </Box>
   );
@@ -307,7 +300,7 @@ export const DoubleDatePicker = (React.forwardRef<HTMLDivElement, Props>((props,
 
   const selfRef = useRef<HTMLDivElement>(null);
   useOnClickOutside(selfRef, () => {
-    setFocused([null, null]);
+    setControlledFocus(false);
     setOpen(false);
   });
 
