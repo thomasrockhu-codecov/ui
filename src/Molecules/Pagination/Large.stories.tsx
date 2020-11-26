@@ -6,7 +6,9 @@ import Pagination from './Pagination';
 export default {
   title: 'Molecules / Pagination / Large',
   parameters: {
-    ...docs.parameters,
+    docs: {
+      page: docs,
+    },
   },
 };
 
@@ -48,13 +50,18 @@ paginationWithManyPages.story = {
 const ControlledLargePagination = ({ totalItems = 10, itemsPerPage = 1 }) => {
   const [currentPage, setCurrentPage] = React.useState(5);
 
+  const onPageChange = (newPage: number) => {
+    action('Page change')(newPage);
+    setCurrentPage(newPage);
+  };
+
   return (
     <Pagination
       variant="large"
       currentPage={currentPage}
       totalItems={totalItems}
       itemsPerPage={itemsPerPage}
-      onPageChange={setCurrentPage}
+      onPageChange={onPageChange}
     />
   );
 };

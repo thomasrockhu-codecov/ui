@@ -79,15 +79,15 @@ export const ExpandItem: ExpandItemComponent = ({ item }) => {
       md={{ ...md, mobileItem: false }}
       lg={lg}
       xl={xl}
-      Container={({ fontSize, mobileItem, className: mediaClassName }) => {
+    >
+      {({ fontSize, mobileItem, className }) => {
         if (mobileItem) {
-          return <MobileItem className={mediaClassName} item={item} fontSize={fontSize} />;
+          return <MobileItem className={className} item={item} fontSize={fontSize} />;
         }
 
-        return <DesktopItem className={mediaClassName} item={item} fontSize={fontSize} />;
+        return <DesktopItem className={className} item={item} fontSize={fontSize} />;
       }}
-      Component={({ children }) => children}
-    />
+    </RenderForSizes>
   );
 };
 

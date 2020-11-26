@@ -89,23 +89,18 @@ const ExpandRow: ExpandRowComponent = ({
     md={md}
     lg={lg}
     xl={xl}
-    Container={({ children: component, className: mediaClassName }) => (
+  >
+    {({ className, expandChildren, expandItems }) => (
       <StyledExpandedRow
         role="row"
         separatorColor={separatorColor}
-        className={mediaClassName}
+        className={className}
         {...htmlProps}
       >
-        {component}
+        <ExpandArea expandItems={expandItems} expandChildren={expandChildren} />
       </StyledExpandedRow>
     )}
-    Component={({ expandChildren, expandItems }) => {
-      if (expandItems && expandItems.length === 0 && !expandChildren) {
-        return null;
-      }
-      return <ExpandArea expandItems={expandItems} expandChildren={expandChildren} />;
-    }}
-  />
+  </RenderForSizes>
 );
 
 const Row: RowComponent = ({
@@ -162,13 +157,8 @@ const Row: RowComponent = ({
         md={mdTable}
         lg={lgTable}
         xl={xlTable}
-        Container={({
-          density,
-          columnDistance,
-          expandable,
-          children: component,
-          className: mediaClassName,
-        }) => (
+      >
+        {({ className: mediaClassName, density, expandable, columnDistance }) => (
           <StyledRow
             className={mediaClassName ? `${className} ${mediaClassName}` : className}
             container
@@ -176,32 +166,28 @@ const Row: RowComponent = ({
             hoverHighlight={hoverHighlight}
             hideSeparator={hideSeparator}
             role="row"
-            // TODO: Remove type assertion when typescript is able to assert undefined from constants, in this case controlledExpand
-            expanded={expand as boolean}
+            expanded={!!expand}
             separatorColor={separatorColor}
             density={density}
             expandable={expandable}
             gutter={columnDistance}
             {...htmlProps}
           >
-            {component}
+            <>
+              {children}
+              {expandable && (
+                <ExpandElement
+                  isContent={isContent}
+                  expanded={expand}
+                  onExpandToggle={onExpandToggleClick}
+                  disabled={!expandChildrenXs && !expandItemsXs}
+                  setExpand={setExpand}
+                />
+              )}
+            </>
           </StyledRow>
         )}
-        Component={({ expandable }) => (
-          <>
-            {children}
-            {expandable && (
-              <ExpandElement
-                isContent={isContent}
-                expanded={expand}
-                onExpandToggle={onExpandToggleClick}
-                disabled={!expandChildrenXs && !expandItemsXs}
-                setExpand={setExpand}
-              />
-            )}
-          </>
-        )}
-      />
+      </RenderForSizes>
 
       {expand && (
         <ExpandRow

@@ -12,6 +12,9 @@ import { Flexbox, Icon, useKeyPress } from '../..';
 
 const PADDING_DESKTOP = 10;
 const PADDING_MOBILE = 3;
+const PADDING_TOP_MOBILE = 4;
+const PADDING_TOP_MOBILE_FULLSCREEN = 5;
+const PADDING_BOTTOM_MOBILE_FULLSCREEN = 5;
 const CLOSE_ICON_SIZE = 5;
 
 export const Backdrop = styled(Flexbox)<BackdropProps>`
@@ -51,8 +54,12 @@ const Dialog = styled(motion.div).withConfig({
           width: 100%;
           height: 100%;
           transform: none !important; /* disables the appear animation */
+          padding-top: ${p.theme.spacing.unit(PADDING_TOP_MOBILE_FULLSCREEN)}px;
+          padding-bottom: ${p.theme.spacing.unit(PADDING_BOTTOM_MOBILE_FULLSCREEN)}px;
         `
-        : `margin: ${p.theme.spacing.unit(2)}px`}
+        : `margin: ${p.theme.spacing.unit(2)}px;
+           padding-top: ${p.theme.spacing.unit(PADDING_TOP_MOBILE)}px;
+        `}
   }
 
   ${({ theme }) => theme.media.greaterThan(theme.breakpoints.sm)} {
@@ -84,7 +91,10 @@ const CloseButton = styled(NormalizedElements.Button)`
   cursor: pointer;
   position: absolute;
   transform: translateY(3px); /* to align with header */
-  top: ${(p) => p.theme.spacing.unit(PADDING_MOBILE)}px;
+  top: ${(p) =>
+    p.fullScreenMobile
+      ? p.theme.spacing.unit(PADDING_TOP_MOBILE_FULLSCREEN)
+      : p.theme.spacing.unit(PADDING_MOBILE)}px;
   right: ${(p) => p.theme.spacing.unit(PADDING_MOBILE)}px;
 
   ${({ theme }) => theme.media.greaterThan(theme.breakpoints.sm)} {
@@ -101,6 +111,7 @@ export const Header = styled.div`
 `;
 
 export const Footer = styled.div`
+  margin-top: auto;
   padding-top: ${(p) => p.theme.spacing.unit(4)}px;
   flex: 0 0 auto;
 `;
@@ -195,8 +206,8 @@ export const ModalInner: React.FC<Props> = ({
               {children}
               {footer && <Footer>{footer}</Footer>}
               {!hideClose && (
-                <CloseButton type="button" onClick={onClose}>
-                  <Icon.CrossThin size={5} title={closeTitle} />
+                <CloseButton type="button" onClick={onClose} fullScreenMobile={fullScreenMobile}>
+                  <Icon.CrossThin size={5} title={closeTitle} stroke={(t) => t.color.text} />
                 </CloseButton>
               )}
             </Dialog>

@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Storyshots Molecules | Input / Number Default 1`] = `
+exports[`Storyshots Molecules / Input / Number Default 1`] = `
 .c3 {
   box-sizing: border-box;
   display: -webkit-box;
@@ -74,11 +74,6 @@ exports[`Storyshots Molecules | Input / Number Default 1`] = `
   font-weight: 400;
   font-size: 14px;
   line-height: 1.4285714285714286;
-}
-
-.c0 {
-  width: 200px;
-  display: inline-block;
 }
 
 .c6 {
@@ -206,6 +201,11 @@ exports[`Storyshots Molecules | Input / Number Default 1`] = `
   opacity: 1;
 }
 
+.c0 {
+  width: 200px;
+  display: inline-block;
+}
+
 <div
   className="c0"
 >
@@ -297,7 +297,7 @@ exports[`Storyshots Molecules | Input / Number Default 1`] = `
 </div>
 `;
 
-exports[`Storyshots Molecules | Input / Number Disabled 1`] = `
+exports[`Storyshots Molecules / Input / Number Disabled 1`] = `
 .c3 {
   box-sizing: border-box;
   display: -webkit-box;
@@ -371,11 +371,6 @@ exports[`Storyshots Molecules | Input / Number Disabled 1`] = `
   font-weight: 400;
   font-size: 14px;
   line-height: 1.4285714285714286;
-}
-
-.c0 {
-  width: 200px;
-  display: inline-block;
 }
 
 .c6 {
@@ -493,6 +488,11 @@ exports[`Storyshots Molecules | Input / Number Disabled 1`] = `
   opacity: 1;
 }
 
+.c0 {
+  width: 200px;
+  display: inline-block;
+}
+
 <div
   className="c0"
 >
@@ -587,7 +587,7 @@ exports[`Storyshots Molecules | Input / Number Disabled 1`] = `
 </div>
 `;
 
-exports[`Storyshots Molecules | Input / Number Quiet 1`] = `
+exports[`Storyshots Molecules / Input / Number Quiet 1`] = `
 Array [
   .c0 {
   margin-bottom: 16px;
@@ -716,16 +716,6 @@ Array [
   font-weight: 400;
   font-size: 12px;
   line-height: 1.3333333333333333;
-}
-
-.c3 {
-  width: 200px;
-  display: inline-block;
-}
-
-.c11 {
-  width: 100%;
-  display: inline-block;
 }
 
 .c9 {
@@ -1205,6 +1195,16 @@ Array [
   padding-right: 8px;
 }
 
+.c3 {
+  width: 200px;
+  display: inline-block;
+}
+
+.c11 {
+  width: 100%;
+  display: inline-block;
+}
+
 .c0 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -1333,7 +1333,6 @@ Array [
       <div>
         <div
           className="c11"
-          width="100%"
         >
           <label
             className="c4"
@@ -1681,7 +1680,7 @@ Array [
 ]
 `;
 
-exports[`Storyshots Molecules | Input / Number Required 1`] = `
+exports[`Storyshots Molecules / Input / Number Required 1`] = `
 Array [
   .c0 {
   margin-bottom: 16px;
@@ -1785,11 +1784,6 @@ Array [
   font-weight: 400;
   font-size: 14px;
   line-height: 1.4285714285714286;
-}
-
-.c3 {
-  width: 200px;
-  display: inline-block;
 }
 
 .c9 {
@@ -1915,6 +1909,11 @@ Array [
   height: inherit;
   line-height: inherit;
   opacity: 1;
+}
+
+.c3 {
+  width: 200px;
+  display: inline-block;
 }
 
 .c0 {
@@ -2201,7 +2200,7 @@ Array [
 ]
 `;
 
-exports[`Storyshots Molecules | Input / Number With a smaller step 1`] = `
+exports[`Storyshots Molecules / Input / Number With a smaller step 1`] = `
 .c3 {
   box-sizing: border-box;
   display: -webkit-box;
@@ -2275,11 +2274,6 @@ exports[`Storyshots Molecules | Input / Number With a smaller step 1`] = `
   font-weight: 400;
   font-size: 14px;
   line-height: 1.4285714285714286;
-}
-
-.c0 {
-  width: 200px;
-  display: inline-block;
 }
 
 .c6 {
@@ -2405,6 +2399,11 @@ exports[`Storyshots Molecules | Input / Number With a smaller step 1`] = `
   height: inherit;
   line-height: inherit;
   opacity: 1;
+}
+
+.c0 {
+  width: 200px;
+  display: inline-block;
 }
 
 <div
@@ -2498,7 +2497,7 @@ exports[`Storyshots Molecules | Input / Number With a smaller step 1`] = `
 </div>
 `;
 
-exports[`Storyshots Molecules | Input / Number With all actions 1`] = `
+exports[`Storyshots Molecules / Input / Number With all actions 1`] = `
 .c3 {
   box-sizing: border-box;
   display: -webkit-box;
@@ -2572,11 +2571,6 @@ exports[`Storyshots Molecules | Input / Number With all actions 1`] = `
   font-weight: 400;
   font-size: 14px;
   line-height: 1.4285714285714286;
-}
-
-.c0 {
-  width: 200px;
-  display: inline-block;
 }
 
 .c6 {
@@ -2702,6 +2696,11 @@ exports[`Storyshots Molecules | Input / Number With all actions 1`] = `
   height: inherit;
   line-height: inherit;
   opacity: 1;
+}
+
+.c0 {
+  width: 200px;
+  display: inline-block;
 }
 
 <div
@@ -2800,7 +2799,7 @@ exports[`Storyshots Molecules | Input / Number With all actions 1`] = `
 </div>
 `;
 
-exports[`Storyshots Molecules | Input / Number With auto focus 1`] = `
+exports[`Storyshots Molecules / Input / Number With auto focus 1`] = `
 .c3 {
   box-sizing: border-box;
   display: -webkit-box;
@@ -2874,11 +2873,6 @@ exports[`Storyshots Molecules | Input / Number With auto focus 1`] = `
   font-weight: 400;
   font-size: 14px;
   line-height: 1.4285714285714286;
-}
-
-.c0 {
-  width: 200px;
-  display: inline-block;
 }
 
 .c6 {
@@ -3004,6 +2998,11 @@ exports[`Storyshots Molecules | Input / Number With auto focus 1`] = `
   height: inherit;
   line-height: inherit;
   opacity: 1;
+}
+
+.c0 {
+  width: 200px;
+  display: inline-block;
 }
 
 <div
@@ -3098,7 +3097,7 @@ exports[`Storyshots Molecules | Input / Number With auto focus 1`] = `
 </div>
 `;
 
-exports[`Storyshots Molecules | Input / Number With both addons 1`] = `
+exports[`Storyshots Molecules / Input / Number With both addons 1`] = `
 .c3 {
   box-sizing: border-box;
   display: -webkit-box;
@@ -3179,11 +3178,6 @@ exports[`Storyshots Molecules | Input / Number With both addons 1`] = `
   font-weight: 400;
   font-size: 14px;
   line-height: 1.4285714285714286;
-}
-
-.c0 {
-  width: 200px;
-  display: inline-block;
 }
 
 .c6 {
@@ -3271,6 +3265,11 @@ exports[`Storyshots Molecules | Input / Number With both addons 1`] = `
   opacity: 1;
 }
 
+.c0 {
+  width: 200px;
+  display: inline-block;
+}
+
 <div
   className="c0"
 >
@@ -3336,7 +3335,7 @@ exports[`Storyshots Molecules | Input / Number With both addons 1`] = `
 </div>
 `;
 
-exports[`Storyshots Molecules | Input / Number With default value (Uncontrolled behaviour) 1`] = `
+exports[`Storyshots Molecules / Input / Number With default value (Uncontrolled behaviour) 1`] = `
 .c3 {
   box-sizing: border-box;
   display: -webkit-box;
@@ -3410,11 +3409,6 @@ exports[`Storyshots Molecules | Input / Number With default value (Uncontrolled 
   font-weight: 400;
   font-size: 14px;
   line-height: 1.4285714285714286;
-}
-
-.c0 {
-  width: 200px;
-  display: inline-block;
 }
 
 .c6 {
@@ -3542,6 +3536,11 @@ exports[`Storyshots Molecules | Input / Number With default value (Uncontrolled 
   opacity: 1;
 }
 
+.c0 {
+  width: 200px;
+  display: inline-block;
+}
+
 <div
   className="c0"
 >
@@ -3633,7 +3632,7 @@ exports[`Storyshots Molecules | Input / Number With default value (Uncontrolled 
 </div>
 `;
 
-exports[`Storyshots Molecules | Input / Number With error if value is less than 1 1`] = `
+exports[`Storyshots Molecules / Input / Number With error if value is less than 1 1`] = `
 .c3 {
   box-sizing: border-box;
   display: -webkit-box;
@@ -3716,11 +3715,6 @@ exports[`Storyshots Molecules | Input / Number With error if value is less than 
   font-weight: 400;
   font-size: 12px;
   line-height: 1.3333333333333333;
-}
-
-.c0 {
-  width: 200px;
-  display: inline-block;
 }
 
 .c6 {
@@ -3846,6 +3840,11 @@ exports[`Storyshots Molecules | Input / Number With error if value is less than 
   height: inherit;
   line-height: inherit;
   opacity: 1;
+}
+
+.c0 {
+  width: 200px;
+  display: inline-block;
 }
 
 <div
@@ -3952,7 +3951,7 @@ exports[`Storyshots Molecules | Input / Number With error if value is less than 
 </div>
 `;
 
-exports[`Storyshots Molecules | Input / Number With extra info and error 1`] = `
+exports[`Storyshots Molecules / Input / Number With extra info and error 1`] = `
 .c3 {
   box-sizing: border-box;
   display: -webkit-box;
@@ -4035,11 +4034,6 @@ exports[`Storyshots Molecules | Input / Number With extra info and error 1`] = `
   font-weight: 400;
   font-size: 12px;
   line-height: 1.3333333333333333;
-}
-
-.c0 {
-  width: 200px;
-  display: inline-block;
 }
 
 .c6 {
@@ -4167,6 +4161,11 @@ exports[`Storyshots Molecules | Input / Number With extra info and error 1`] = `
   opacity: 1;
 }
 
+.c0 {
+  width: 200px;
+  display: inline-block;
+}
+
 <div
   className="c0"
 >
@@ -4271,7 +4270,7 @@ exports[`Storyshots Molecules | Input / Number With extra info and error 1`] = `
 </div>
 `;
 
-exports[`Storyshots Molecules | Input / Number With extra info below 1`] = `
+exports[`Storyshots Molecules / Input / Number With extra info below 1`] = `
 .c3 {
   box-sizing: border-box;
   display: -webkit-box;
@@ -4354,11 +4353,6 @@ exports[`Storyshots Molecules | Input / Number With extra info below 1`] = `
   font-weight: 400;
   font-size: 12px;
   line-height: 1.3333333333333333;
-}
-
-.c0 {
-  width: 200px;
-  display: inline-block;
 }
 
 .c6 {
@@ -4486,6 +4480,11 @@ exports[`Storyshots Molecules | Input / Number With extra info below 1`] = `
   opacity: 1;
 }
 
+.c0 {
+  width: 200px;
+  display: inline-block;
+}
+
 <div
   className="c0"
 >
@@ -4584,7 +4583,7 @@ exports[`Storyshots Molecules | Input / Number With extra info below 1`] = `
 </div>
 `;
 
-exports[`Storyshots Molecules | Input / Number With hidden label 1`] = `
+exports[`Storyshots Molecules / Input / Number With hidden label 1`] = `
 .c4 {
   box-sizing: border-box;
   display: -webkit-box;
@@ -4652,11 +4651,6 @@ exports[`Storyshots Molecules | Input / Number With hidden label 1`] = `
   font-weight: 400;
   font-size: 14px;
   line-height: 1.4285714285714286;
-}
-
-.c0 {
-  width: 200px;
-  display: inline-block;
 }
 
 .c5 {
@@ -4784,6 +4778,11 @@ exports[`Storyshots Molecules | Input / Number With hidden label 1`] = `
   opacity: 1;
 }
 
+.c0 {
+  width: 200px;
+  display: inline-block;
+}
+
 <div
   className="c0"
 >
@@ -4871,7 +4870,7 @@ exports[`Storyshots Molecules | Input / Number With hidden label 1`] = `
 </div>
 `;
 
-exports[`Storyshots Molecules | Input / Number With label tooltip (position top) 1`] = `
+exports[`Storyshots Molecules / Input / Number With label tooltip (position top) 1`] = `
 Array [
   <br />,
   <br />,
@@ -4966,15 +4965,6 @@ Array [
   font-weight: 400;
   font-size: 14px;
   line-height: 1.4285714285714286;
-}
-
-.c0 {
-  width: 200px;
-  display: inline-block;
-}
-
-.c5 {
-  margin-left: 4px;
 }
 
 .c9 {
@@ -5100,6 +5090,15 @@ Array [
   height: inherit;
   line-height: inherit;
   opacity: 1;
+}
+
+.c0 {
+  width: 200px;
+  display: inline-block;
+}
+
+.c5 {
+  margin-left: 4px;
 }
 
 <div
@@ -5227,7 +5226,7 @@ Array [
 ]
 `;
 
-exports[`Storyshots Molecules | Input / Number With label tooltip 1`] = `
+exports[`Storyshots Molecules / Input / Number With label tooltip 1`] = `
 .c3 {
   box-sizing: border-box;
   display: -webkit-box;
@@ -5319,15 +5318,6 @@ exports[`Storyshots Molecules | Input / Number With label tooltip 1`] = `
   font-weight: 400;
   font-size: 14px;
   line-height: 1.4285714285714286;
-}
-
-.c0 {
-  width: 200px;
-  display: inline-block;
-}
-
-.c5 {
-  margin-left: 4px;
 }
 
 .c9 {
@@ -5455,6 +5445,15 @@ exports[`Storyshots Molecules | Input / Number With label tooltip 1`] = `
   opacity: 1;
 }
 
+.c0 {
+  width: 200px;
+  display: inline-block;
+}
+
+.c5 {
+  margin-left: 4px;
+}
+
 <div
   className="c0"
 >
@@ -5579,7 +5578,7 @@ exports[`Storyshots Molecules | Input / Number With label tooltip 1`] = `
 </div>
 `;
 
-exports[`Storyshots Molecules | Input / Number With left addon 1`] = `
+exports[`Storyshots Molecules / Input / Number With left addon 1`] = `
 .c3 {
   box-sizing: border-box;
   display: -webkit-box;
@@ -5662,11 +5661,6 @@ exports[`Storyshots Molecules | Input / Number With left addon 1`] = `
   line-height: 1.4285714285714286;
 }
 
-.c0 {
-  width: 200px;
-  display: inline-block;
-}
-
 .c6 {
   position: relative;
   box-shadow: 0 1px 3px rgba(0,0,0,0.03);
@@ -5744,6 +5738,11 @@ exports[`Storyshots Molecules | Input / Number With left addon 1`] = `
   opacity: 1;
 }
 
+.c0 {
+  width: 200px;
+  display: inline-block;
+}
+
 <div
   className="c0"
 >
@@ -5803,7 +5802,7 @@ exports[`Storyshots Molecules | Input / Number With left addon 1`] = `
 </div>
 `;
 
-exports[`Storyshots Molecules | Input / Number With max and min 1`] = `
+exports[`Storyshots Molecules / Input / Number With max and min 1`] = `
 .c3 {
   box-sizing: border-box;
   display: -webkit-box;
@@ -5877,11 +5876,6 @@ exports[`Storyshots Molecules | Input / Number With max and min 1`] = `
   font-weight: 400;
   font-size: 14px;
   line-height: 1.4285714285714286;
-}
-
-.c0 {
-  width: 200px;
-  display: inline-block;
 }
 
 .c6 {
@@ -6009,6 +6003,11 @@ exports[`Storyshots Molecules | Input / Number With max and min 1`] = `
   opacity: 1;
 }
 
+.c0 {
+  width: 200px;
+  display: inline-block;
+}
+
 <div
   className="c0"
 >
@@ -6101,7 +6100,7 @@ exports[`Storyshots Molecules | Input / Number With max and min 1`] = `
 </div>
 `;
 
-exports[`Storyshots Molecules | Input / Number With no steppers 1`] = `
+exports[`Storyshots Molecules / Input / Number With no steppers 1`] = `
 .c3 {
   box-sizing: border-box;
   display: -webkit-box;
@@ -6152,11 +6151,6 @@ exports[`Storyshots Molecules | Input / Number With no steppers 1`] = `
   font-weight: 400;
   font-size: 14px;
   line-height: 1.4285714285714286;
-}
-
-.c0 {
-  width: 200px;
-  display: inline-block;
 }
 
 .c6 {
@@ -6228,6 +6222,11 @@ exports[`Storyshots Molecules | Input / Number With no steppers 1`] = `
   opacity: 1;
 }
 
+.c0 {
+  width: 200px;
+  display: inline-block;
+}
+
 <div
   className="c0"
 >
@@ -6269,7 +6268,7 @@ exports[`Storyshots Molecules | Input / Number With no steppers 1`] = `
 </div>
 `;
 
-exports[`Storyshots Molecules | Input / Number With placeholder 1`] = `
+exports[`Storyshots Molecules / Input / Number With placeholder 1`] = `
 Array [
   .c0 {
   margin-bottom: 16px;
@@ -6403,11 +6402,6 @@ Array [
   font-weight: 400;
   font-size: 14px;
   line-height: 1.4285714285714286;
-}
-
-.c3 {
-  width: 200px;
-  display: inline-block;
 }
 
 .c9 {
@@ -6741,6 +6735,11 @@ Array [
   height: inherit;
   line-height: inherit;
   opacity: 1;
+}
+
+.c3 {
+  width: 200px;
+  display: inline-block;
 }
 
 .c0 {
@@ -7104,7 +7103,7 @@ Array [
 ]
 `;
 
-exports[`Storyshots Molecules | Input / Number With right addon 1`] = `
+exports[`Storyshots Molecules / Input / Number With right addon 1`] = `
 .c3 {
   box-sizing: border-box;
   display: -webkit-box;
@@ -7171,11 +7170,6 @@ exports[`Storyshots Molecules | Input / Number With right addon 1`] = `
   font-weight: 400;
   font-size: 14px;
   line-height: 1.4285714285714286;
-}
-
-.c0 {
-  width: 200px;
-  display: inline-block;
 }
 
 .c6 {
@@ -7255,6 +7249,11 @@ exports[`Storyshots Molecules | Input / Number With right addon 1`] = `
   opacity: 1;
 }
 
+.c0 {
+  width: 200px;
+  display: inline-block;
+}
+
 <div
   className="c0"
 >
@@ -7302,7 +7301,7 @@ exports[`Storyshots Molecules | Input / Number With right addon 1`] = `
 </div>
 `;
 
-exports[`Storyshots Molecules | Input / Number With size small 1`] = `
+exports[`Storyshots Molecules / Input / Number With size small 1`] = `
 Array [
   .c0 {
   margin-bottom: 16px;
@@ -7415,11 +7414,6 @@ Array [
   font-weight: 400;
   font-size: 12px;
   line-height: 1.3333333333333333;
-}
-
-.c3 {
-  width: 200px;
-  display: inline-block;
 }
 
 .c9 {
@@ -7673,6 +7667,11 @@ Array [
   height: inherit;
   line-height: inherit;
   opacity: 1;
+}
+
+.c3 {
+  width: 200px;
+  display: inline-block;
 }
 
 .c0 {
@@ -8025,7 +8024,7 @@ Array [
 ]
 `;
 
-exports[`Storyshots Molecules | Input / Number With success 1`] = `
+exports[`Storyshots Molecules / Input / Number With success 1`] = `
 .c3 {
   box-sizing: border-box;
   display: -webkit-box;
@@ -8099,11 +8098,6 @@ exports[`Storyshots Molecules | Input / Number With success 1`] = `
   font-weight: 400;
   font-size: 14px;
   line-height: 1.4285714285714286;
-}
-
-.c0 {
-  width: 200px;
-  display: inline-block;
 }
 
 .c6 {
@@ -8231,6 +8225,11 @@ exports[`Storyshots Molecules | Input / Number With success 1`] = `
   opacity: 1;
 }
 
+.c0 {
+  width: 200px;
+  display: inline-block;
+}
+
 <div
   className="c0"
 >
@@ -8322,7 +8321,7 @@ exports[`Storyshots Molecules | Input / Number With success 1`] = `
 </div>
 `;
 
-exports[`Storyshots Molecules | Input / Number With value (Controlled behaviour) 1`] = `
+exports[`Storyshots Molecules / Input / Number With value (Controlled behaviour) 1`] = `
 Array [
   .c3 {
   box-sizing: border-box;
@@ -8397,11 +8396,6 @@ Array [
   font-weight: 400;
   font-size: 14px;
   line-height: 1.4285714285714286;
-}
-
-.c0 {
-  width: 200px;
-  display: inline-block;
 }
 
 .c6 {
@@ -8527,6 +8521,11 @@ Array [
   height: inherit;
   line-height: inherit;
   opacity: 1;
+}
+
+.c0 {
+  width: 200px;
+  display: inline-block;
 }
 
 <div

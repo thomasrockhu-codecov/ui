@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Storyshots Molecules | Input / Radio Default 1`] = `
+exports[`Storyshots Molecules / Input / Radio Default 1`] = `
 .c4 {
   box-sizing: border-box;
   display: -webkit-box;
@@ -35,11 +35,6 @@ exports[`Storyshots Molecules | Input / Radio Default 1`] = `
   font-weight: 400;
   font-size: 14px;
   line-height: 1.4285714285714286;
-}
-
-.c0 {
-  width: auto;
-  display: inline-block;
 }
 
 .c7 {
@@ -119,9 +114,13 @@ exports[`Storyshots Molecules | Input / Radio Default 1`] = `
   white-space: initial;
 }
 
+.c0 {
+  width: auto;
+  display: inline-block;
+}
+
 <div
   className="c0"
-  width="auto"
 >
   <label
     className="c1 c2"
@@ -153,7 +152,7 @@ exports[`Storyshots Molecules | Input / Radio Default 1`] = `
 </div>
 `;
 
-exports[`Storyshots Molecules | Input / Radio Disabled 1`] = `
+exports[`Storyshots Molecules / Input / Radio Disabled 1`] = `
 Array [
   .c0 {
   margin-bottom: 16px;
@@ -218,11 +217,6 @@ Array [
   font-weight: 400;
   font-size: 14px;
   line-height: 1.4285714285714286;
-}
-
-.c3 {
-  width: auto;
-  display: inline-block;
 }
 
 .c10 {
@@ -302,6 +296,11 @@ Array [
   white-space: initial;
 }
 
+.c3 {
+  width: auto;
+  display: inline-block;
+}
+
 .c0 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -379,7 +378,6 @@ Array [
       <div>
         <div
           className="c3"
-          width="auto"
         >
           <label
             className="c4 c5"
@@ -425,7 +423,6 @@ Array [
       <div>
         <div
           className="c3"
-          width="auto"
         >
           <label
             className="c4 c5"
@@ -473,7 +470,7 @@ Array [
 ]
 `;
 
-exports[`Storyshots Molecules | Input / Radio In a group 1`] = `
+exports[`Storyshots Molecules / Input / Radio In a group 1`] = `
 .c2 {
   box-sizing: border-box;
   display: -webkit-box;
@@ -537,22 +534,6 @@ exports[`Storyshots Molecules | Input / Radio In a group 1`] = `
   font-weight: 400;
   font-size: 14px;
   line-height: 1.4285714285714286;
-}
-
-.c1 {
-  padding: 0;
-  margin: 0;
-  border: 0;
-}
-
-.c0 {
-  width: 200px;
-  display: inline-block;
-}
-
-.c7 {
-  width: auto;
-  display: inline-block;
 }
 
 .c11 {
@@ -632,6 +613,22 @@ exports[`Storyshots Molecules | Input / Radio In a group 1`] = `
   white-space: initial;
 }
 
+.c1 {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+.c0 {
+  width: 200px;
+  display: inline-block;
+}
+
+.c7 {
+  width: auto;
+  display: inline-block;
+}
+
 <div
   className="c0"
 >
@@ -657,7 +654,6 @@ exports[`Storyshots Molecules | Input / Radio In a group 1`] = `
     >
       <div
         className="c7"
-        width="auto"
       >
         <label
           className="c4 c8"
@@ -689,7 +685,6 @@ exports[`Storyshots Molecules | Input / Radio In a group 1`] = `
       </div>
       <div
         className="c7"
-        width="auto"
       >
         <label
           className="c4 c8"
@@ -721,7 +716,6 @@ exports[`Storyshots Molecules | Input / Radio In a group 1`] = `
       </div>
       <div
         className="c7"
-        width="auto"
       >
         <label
           className="c4 c8"
@@ -756,7 +750,7 @@ exports[`Storyshots Molecules | Input / Radio In a group 1`] = `
 </div>
 `;
 
-exports[`Storyshots Molecules | Input / Radio In a group with error 1`] = `
+exports[`Storyshots Molecules / Input / Radio In a group with error 1`] = `
 .c2 {
   box-sizing: border-box;
   display: -webkit-box;
@@ -840,22 +834,6 @@ exports[`Storyshots Molecules | Input / Radio In a group with error 1`] = `
   line-height: 1.3333333333333333;
 }
 
-.c1 {
-  padding: 0;
-  margin: 0;
-  border: 0;
-}
-
-.c0 {
-  width: 200px;
-  display: inline-block;
-}
-
-.c7 {
-  width: auto;
-  display: inline-block;
-}
-
 .c11 {
   width: 18px;
   height: 18px;
@@ -937,6 +915,22 @@ exports[`Storyshots Molecules | Input / Radio In a group with error 1`] = `
   white-space: initial;
 }
 
+.c1 {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+.c0 {
+  width: 200px;
+  display: inline-block;
+}
+
+.c7 {
+  width: auto;
+  display: inline-block;
+}
+
 <div
   className="c0"
 >
@@ -962,7 +956,6 @@ exports[`Storyshots Molecules | Input / Radio In a group with error 1`] = `
     >
       <div
         className="c7"
-        width="auto"
       >
         <label
           className="c4 c8"
@@ -996,7 +989,6 @@ exports[`Storyshots Molecules | Input / Radio In a group with error 1`] = `
       </div>
       <div
         className="c7"
-        width="auto"
       >
         <label
           className="c4 c8"
@@ -1030,7 +1022,6 @@ exports[`Storyshots Molecules | Input / Radio In a group with error 1`] = `
       </div>
       <div
         className="c7"
-        width="auto"
       >
         <label
           className="c4 c8"
@@ -1079,7 +1070,7 @@ exports[`Storyshots Molecules | Input / Radio In a group with error 1`] = `
 </div>
 `;
 
-exports[`Storyshots Molecules | Input / Radio In a group with tooltip (position top) 1`] = `
+exports[`Storyshots Molecules / Input / Radio In a group with tooltip (position top) 1`] = `
 Array [
   <br />,
   <br />,
@@ -1166,26 +1157,6 @@ Array [
   line-height: 1.4285714285714286;
 }
 
-.c1 {
-  padding: 0;
-  margin: 0;
-  border: 0;
-}
-
-.c0 {
-  width: 200px;
-  display: inline-block;
-}
-
-.c10 {
-  width: auto;
-  display: inline-block;
-}
-
-.c7 {
-  margin-left: 4px;
-}
-
 .c14 {
   width: 18px;
   height: 18px;
@@ -1263,6 +1234,26 @@ Array [
   white-space: initial;
 }
 
+.c1 {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+.c0 {
+  width: 200px;
+  display: inline-block;
+}
+
+.c10 {
+  width: auto;
+  display: inline-block;
+}
+
+.c7 {
+  margin-left: 4px;
+}
+
 <div
     className="c0"
   >
@@ -1321,7 +1312,6 @@ Array [
       >
         <div
           className="c10"
-          width="auto"
         >
           <label
             className="c4 c11"
@@ -1353,7 +1343,6 @@ Array [
         </div>
         <div
           className="c10"
-          width="auto"
         >
           <label
             className="c4 c11"
@@ -1385,7 +1374,6 @@ Array [
         </div>
         <div
           className="c10"
-          width="auto"
         >
           <label
             className="c4 c11"
@@ -1421,7 +1409,7 @@ Array [
 ]
 `;
 
-exports[`Storyshots Molecules | Input / Radio In a group with tooltip 1`] = `
+exports[`Storyshots Molecules / Input / Radio In a group with tooltip 1`] = `
 .c2 {
   box-sizing: border-box;
   display: -webkit-box;
@@ -1505,26 +1493,6 @@ exports[`Storyshots Molecules | Input / Radio In a group with tooltip 1`] = `
   line-height: 1.4285714285714286;
 }
 
-.c1 {
-  padding: 0;
-  margin: 0;
-  border: 0;
-}
-
-.c0 {
-  width: 200px;
-  display: inline-block;
-}
-
-.c10 {
-  width: auto;
-  display: inline-block;
-}
-
-.c7 {
-  margin-left: 4px;
-}
-
 .c14 {
   width: 18px;
   height: 18px;
@@ -1602,6 +1570,26 @@ exports[`Storyshots Molecules | Input / Radio In a group with tooltip 1`] = `
   white-space: initial;
 }
 
+.c1 {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+.c0 {
+  width: 200px;
+  display: inline-block;
+}
+
+.c10 {
+  width: auto;
+  display: inline-block;
+}
+
+.c7 {
+  margin-left: 4px;
+}
+
 <div
   className="c0"
 >
@@ -1660,7 +1648,6 @@ exports[`Storyshots Molecules | Input / Radio In a group with tooltip 1`] = `
     >
       <div
         className="c10"
-        width="auto"
       >
         <label
           className="c4 c11"
@@ -1692,7 +1679,6 @@ exports[`Storyshots Molecules | Input / Radio In a group with tooltip 1`] = `
       </div>
       <div
         className="c10"
-        width="auto"
       >
         <label
           className="c4 c11"
@@ -1724,7 +1710,6 @@ exports[`Storyshots Molecules | Input / Radio In a group with tooltip 1`] = `
       </div>
       <div
         className="c10"
-        width="auto"
       >
         <label
           className="c4 c11"
@@ -1759,7 +1744,7 @@ exports[`Storyshots Molecules | Input / Radio In a group with tooltip 1`] = `
 </div>
 `;
 
-exports[`Storyshots Molecules | Input / Radio Required 1`] = `
+exports[`Storyshots Molecules / Input / Radio Required 1`] = `
 Array [
   .c0 {
   margin-bottom: 16px;
@@ -1824,11 +1809,6 @@ Array [
   font-weight: 400;
   font-size: 14px;
   line-height: 1.4285714285714286;
-}
-
-.c3 {
-  width: auto;
-  display: inline-block;
 }
 
 .c10 {
@@ -1908,6 +1888,11 @@ Array [
   white-space: initial;
 }
 
+.c3 {
+  width: auto;
+  display: inline-block;
+}
+
 .c0 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -1985,7 +1970,6 @@ Array [
       <div>
         <div
           className="c3"
-          width="auto"
         >
           <label
             className="c4 c5"
@@ -2030,7 +2014,6 @@ Array [
       <div>
         <div
           className="c3"
-          width="auto"
         >
           <label
             className="c4 c5"
@@ -2078,7 +2061,7 @@ Array [
 ]
 `;
 
-exports[`Storyshots Molecules | Input / Radio With all actions 1`] = `
+exports[`Storyshots Molecules / Input / Radio With all actions 1`] = `
 .c4 {
   box-sizing: border-box;
   display: -webkit-box;
@@ -2113,11 +2096,6 @@ exports[`Storyshots Molecules | Input / Radio With all actions 1`] = `
   font-weight: 400;
   font-size: 14px;
   line-height: 1.4285714285714286;
-}
-
-.c0 {
-  width: auto;
-  display: inline-block;
 }
 
 .c7 {
@@ -2197,9 +2175,13 @@ exports[`Storyshots Molecules | Input / Radio With all actions 1`] = `
   white-space: initial;
 }
 
+.c0 {
+  width: auto;
+  display: inline-block;
+}
+
 <div
   className="c0"
-  width="auto"
 >
   <label
     className="c1 c2"
@@ -2238,7 +2220,7 @@ exports[`Storyshots Molecules | Input / Radio With all actions 1`] = `
 </div>
 `;
 
-exports[`Storyshots Molecules | Input / Radio With an error if not checked 1`] = `
+exports[`Storyshots Molecules / Input / Radio With an error if not checked 1`] = `
 .c4 {
   box-sizing: border-box;
   display: -webkit-box;
@@ -2291,11 +2273,6 @@ exports[`Storyshots Molecules | Input / Radio With an error if not checked 1`] =
   font-weight: 400;
   font-size: 12px;
   line-height: 1.3333333333333333;
-}
-
-.c0 {
-  width: auto;
-  display: inline-block;
 }
 
 .c7 {
@@ -2379,9 +2356,13 @@ exports[`Storyshots Molecules | Input / Radio With an error if not checked 1`] =
   white-space: initial;
 }
 
+.c0 {
+  width: auto;
+  display: inline-block;
+}
+
 <div
   className="c0"
-  width="auto"
 >
   <label
     className="c1 c2"
@@ -2427,7 +2408,7 @@ exports[`Storyshots Molecules | Input / Radio With an error if not checked 1`] =
 </div>
 `;
 
-exports[`Storyshots Molecules | Input / Radio With auto focus 1`] = `
+exports[`Storyshots Molecules / Input / Radio With auto focus 1`] = `
 .c4 {
   box-sizing: border-box;
   display: -webkit-box;
@@ -2462,11 +2443,6 @@ exports[`Storyshots Molecules | Input / Radio With auto focus 1`] = `
   font-weight: 400;
   font-size: 14px;
   line-height: 1.4285714285714286;
-}
-
-.c0 {
-  width: auto;
-  display: inline-block;
 }
 
 .c7 {
@@ -2546,9 +2522,13 @@ exports[`Storyshots Molecules | Input / Radio With auto focus 1`] = `
   white-space: initial;
 }
 
+.c0 {
+  width: auto;
+  display: inline-block;
+}
+
 <div
   className="c0"
-  width="auto"
 >
   <label
     className="c1 c2"
@@ -2581,7 +2561,7 @@ exports[`Storyshots Molecules | Input / Radio With auto focus 1`] = `
 </div>
 `;
 
-exports[`Storyshots Molecules | Input / Radio With checked (Controlled behaviour) 1`] = `
+exports[`Storyshots Molecules / Input / Radio With checked (Controlled behaviour) 1`] = `
 Array [
   .c4 {
   box-sizing: border-box;
@@ -2619,11 +2599,6 @@ Array [
   line-height: 1.4285714285714286;
 }
 
-.c0 {
-  width: auto;
-  display: inline-block;
-}
-
 .c7 {
   width: 18px;
   height: 18px;
@@ -2701,9 +2676,13 @@ Array [
   white-space: initial;
 }
 
+.c0 {
+  width: auto;
+  display: inline-block;
+}
+
 <div
     className="c0"
-    width="auto"
   >
     <label
       className="c1 c2"
@@ -2744,7 +2723,7 @@ Array [
 ]
 `;
 
-exports[`Storyshots Molecules | Input / Radio With default checked 1`] = `
+exports[`Storyshots Molecules / Input / Radio With default checked 1`] = `
 .c4 {
   box-sizing: border-box;
   display: -webkit-box;
@@ -2779,11 +2758,6 @@ exports[`Storyshots Molecules | Input / Radio With default checked 1`] = `
   font-weight: 400;
   font-size: 14px;
   line-height: 1.4285714285714286;
-}
-
-.c0 {
-  width: auto;
-  display: inline-block;
 }
 
 .c7 {
@@ -2863,9 +2837,13 @@ exports[`Storyshots Molecules | Input / Radio With default checked 1`] = `
   white-space: initial;
 }
 
+.c0 {
+  width: auto;
+  display: inline-block;
+}
+
 <div
   className="c0"
-  width="auto"
 >
   <label
     className="c1 c2"

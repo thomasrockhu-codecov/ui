@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Storyshots Molecules | FeedbackBanner Complex children 1`] = `
+exports[`Storyshots Molecules / FeedbackBanner Complex children 1`] = `
 .c1 {
   box-sizing: border-box;
   display: -webkit-box;
@@ -131,7 +131,7 @@ exports[`Storyshots Molecules | FeedbackBanner Complex children 1`] = `
 </div>
 `;
 
-exports[`Storyshots Molecules | FeedbackBanner Default usage 1`] = `
+exports[`Storyshots Molecules / FeedbackBanner Default usage 1`] = `
 .c1 {
   box-sizing: border-box;
   display: -webkit-box;
@@ -258,7 +258,7 @@ exports[`Storyshots Molecules | FeedbackBanner Default usage 1`] = `
 </div>
 `;
 
-exports[`Storyshots Molecules | FeedbackBanner Different variant 1`] = `
+exports[`Storyshots Molecules / FeedbackBanner Different variant 1`] = `
 .c4 {
   box-sizing: border-box;
   display: -webkit-box;
@@ -324,7 +324,7 @@ exports[`Storyshots Molecules | FeedbackBanner Different variant 1`] = `
   display: block;
 }
 
-.c15 {
+.c16 {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -338,7 +338,7 @@ exports[`Storyshots Molecules | FeedbackBanner Different variant 1`] = `
   display: block;
 }
 
-.c17 {
+.c18 {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -352,7 +352,11 @@ exports[`Storyshots Molecules | FeedbackBanner Different variant 1`] = `
   display: block;
 }
 
-.c18 {
+.c19 {
+  fill: #FFFFFF;
+}
+
+.c14 {
   fill: #FFFFFF;
 }
 
@@ -396,14 +400,14 @@ exports[`Storyshots Molecules | FeedbackBanner Different variant 1`] = `
   box-sizing: border-box;
 }
 
-.c14 {
+.c15 {
   background-color: #F5F5F5;
   border-left: 4px solid #FFCF00;
   padding: 4px 12px;
   box-sizing: border-box;
 }
 
-.c16 {
+.c17 {
   background-color: #F5F5F5;
   border-left: 4px solid #00D200;
   padding: 4px 12px;
@@ -556,11 +560,11 @@ exports[`Storyshots Molecules | FeedbackBanner Different variant 1`] = `
                 d="M46 92.0000003c25.4050985 0 46-20.5949015 46-46S71.4050985 3.3e-7 46 3.3e-7 0 20.5949018 0 46.0000003c0 25.4050985 20.5949015 46 46 46z"
               />
               <path
+                className="c13"
                 d="M58.5601262 30.666667l2.710576 2.710576-12.5920355 12.591424 12.5920355 12.5914595-2.710576 2.710576L45.9686667 48.678667l-12.591424 12.5920355-2.710576-2.710576 12.591-12.5914595-12.591-12.591424 2.710576-2.710576 12.591424 12.591 12.5914595-12.591z"
-                fill="#FFF"
               />
               <polygon
-                className="c13"
+                className="c14"
                 points="8.681 9.967 5.073 6.333 6.396 5 10.004 8.634 13.604 5.007 14.916 6.329 11.316 9.956 15 13.667 13.677 15 9.993 11.289 6.312 14.997 5 13.675"
               />
             </svg>
@@ -594,7 +598,7 @@ exports[`Storyshots Molecules | FeedbackBanner Different variant 1`] = `
     </div>
     <div>
       <div
-        className="c14"
+        className="c15"
       >
         <div
           className="c4"
@@ -602,7 +606,7 @@ exports[`Storyshots Molecules | FeedbackBanner Different variant 1`] = `
           <span>
             <svg
               aria-hidden="true"
-              className="c15"
+              className="c16"
               focusable="false"
               preserveAspectRatio="xMidYMid meet"
               role="presentation"
@@ -646,7 +650,7 @@ exports[`Storyshots Molecules | FeedbackBanner Different variant 1`] = `
     </div>
     <div>
       <div
-        className="c16"
+        className="c17"
       >
         <div
           className="c4"
@@ -654,7 +658,7 @@ exports[`Storyshots Molecules | FeedbackBanner Different variant 1`] = `
           <span>
             <svg
               aria-hidden="true"
-              className="c17"
+              className="c18"
               focusable="false"
               preserveAspectRatio="xMidYMid meet"
               role="presentation"
@@ -668,7 +672,7 @@ exports[`Storyshots Molecules | FeedbackBanner Different variant 1`] = `
                 fill="#FFF"
               />
               <polygon
-                className="c18"
+                className="c19"
                 points="13.695 6 15 7.314 8.696 13.69 5 9.924 6.319 8.656 8.696 11.059"
               />
             </svg>
@@ -694,7 +698,7 @@ exports[`Storyshots Molecules | FeedbackBanner Different variant 1`] = `
 </div>
 `;
 
-exports[`Storyshots Molecules | FeedbackBanner Displaying title 1`] = `
+exports[`Storyshots Molecules / FeedbackBanner Displaying title 1`] = `
 .c4 {
   box-sizing: border-box;
   display: -webkit-box;

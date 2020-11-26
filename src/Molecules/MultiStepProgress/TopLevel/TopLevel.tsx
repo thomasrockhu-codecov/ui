@@ -4,12 +4,7 @@ import styled from 'styled-components';
 import Box from '../../../Atoms/Box';
 import Button from '../../Button';
 import Typography from '../../../Atoms/Typography';
-import {
-  InternalProps,
-  TopLevelComponent,
-  InternalOLProps,
-  ProgressLevelsComponent,
-} from './TopLevel.types';
+import { InternalProps, TopLevelComponent, ProgressLevelsComponent } from './TopLevel.types';
 import { SubLevel } from '../SubLevel';
 import Status from '../Status';
 import {
@@ -26,13 +21,15 @@ const contentLeftPadding = HORIZONTAL_PADDING + STEP_NUMBER_SIZE + SPACE_TO_STEP
 const contentLeftPaddingDesktop =
   HORIZONTAL_PADDING_DESKTOP + STEP_NUMBER_SIZE + SPACE_TO_STEP_NUMBER;
 
-const StyledOrderedList = styled.ol<InternalOLProps>`
+const StyledOrderedList = styled.ol`
   ${listReset}
 `;
 
 const MobileProgressLevels = styled.ol`
   ${listReset}
 `;
+
+const Wrapper = styled.div``;
 
 const ListItem = styled.li<InternalProps>`
   display: block;
@@ -52,12 +49,22 @@ const ListItem = styled.li<InternalProps>`
     opacity: ${(p) => (p.$current ? 1 : 0)};
   }
 
-  & + & {
-    ${({ theme }) => theme.media.lessThan(theme.breakpoints.md)} {
-      border-top: ${(p) => p.theme.spacing.unit(0.25)}px solid ${(p) => p.theme.color.divider};
+  ${({ theme }) => theme.media.lessThan(theme.breakpoints.md)} {
+    & + &::after {
+      content: '';
+      display: block;
+      height: 1px;
+      box-sizing: border-box;
+      background-color: ${(p) => p.theme.color.divider};
+      position: absolute;
+      top: 0;
+      left: ${({ theme }) => theme.spacing.unit(3)}px;
+      right: ${({ theme }) => theme.spacing.unit(3)}px;
     }
+  }
 
-    ${({ theme }) => theme.media.greaterThan(theme.breakpoints.md)} {
+  ${({ theme }) => theme.media.greaterThan(theme.breakpoints.md)} {
+    & + & ${Wrapper} {
       margin-top: ${(p) => p.theme.spacing.unit(2)}px;
     }
   }
@@ -76,13 +83,13 @@ const StyledMobileButton = styled(StyledButton)`
     width: 100%;
   }
 `;
+
 const ProgressLevels: ProgressLevelsComponent = ({
   steps,
   onStepClick,
   onSubStepClick,
   titleDone,
   titleNotDone,
-  isInDrawer,
 }) => {
   return (
     <StyledOrderedList>
@@ -92,19 +99,41 @@ const ProgressLevels: ProgressLevelsComponent = ({
           const number = i + 1;
 
           return (
-            <ListItem key={label} $current={current} $isInDrawer={isInDrawer}>
+            <ListItem key={label} $current={current}>
               {current || done ? (
-                <StyledButton
-                  onClick={() => onStepClick && onStepClick(name)}
-                  variant="neutral"
-                  fullWidth
-                >
-                  <Typography type="primary" weight={current ? 'bold' : 'regular'}>
+                <Wrapper>
+                  <StyledButton
+                    onClick={() => onStepClick && onStepClick(name)}
+                    variant="neutral"
+                    fullWidth
+                  >
+                    <Typography type="primary" weight={current ? 'bold' : 'regular'}>
+                      <Content
+                        py={VERTICAL_PADDING}
+                        pr={HORIZONTAL_PADDING}
+                        pl={contentLeftPadding}
+                        sm={{ pl: contentLeftPaddingDesktop, pr: HORIZONTAL_PADDING_DESKTOP }}
+                      >
+                        <Status
+                          current={current}
+                          done={done}
+                          number={number}
+                          titleDone={titleDone}
+                          titleNotDone={titleNotDone}
+                        />
+                        {label}
+                      </Content>
+                    </Typography>
+                  </StyledButton>
+                </Wrapper>
+              ) : (
+                <Wrapper>
+                  <Typography color={(t) => t.color.disabledText} type="primary">
                     <Content
                       py={VERTICAL_PADDING}
                       pr={HORIZONTAL_PADDING}
                       pl={contentLeftPadding}
-                      sm={{ pl: contentLeftPaddingDesktop, pr: HORIZONTAL_PADDING_DESKTOP }}
+                      sm={{ pl: contentLeftPaddingDesktop }}
                     >
                       <Status
                         current={current}
@@ -116,25 +145,7 @@ const ProgressLevels: ProgressLevelsComponent = ({
                       {label}
                     </Content>
                   </Typography>
-                </StyledButton>
-              ) : (
-                <Typography color={(t) => t.color.disabledText} type="primary">
-                  <Content
-                    py={VERTICAL_PADDING}
-                    pr={HORIZONTAL_PADDING}
-                    pl={contentLeftPadding}
-                    sm={{ pl: contentLeftPaddingDesktop }}
-                  >
-                    <Status
-                      current={current}
-                      done={done}
-                      number={number}
-                      titleDone={titleDone}
-                      titleNotDone={titleNotDone}
-                    />
-                    {label}
-                  </Content>
-                </Typography>
+                </Wrapper>
               )}
               {substeps.length > 0 && current && (
                 <SubLevel

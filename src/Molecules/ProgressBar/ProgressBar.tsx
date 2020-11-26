@@ -17,13 +17,21 @@ const StyledContainer = styled(Flexbox).withConfig({
 
 const StyledBubble = styled(Flexbox).withConfig({
   shouldForwardProp: (prop) =>
-    !['done', 'active', 'failed', 'colorDone', 'colorActive', 'colorNext', 'colorFailure'].includes(
-      prop,
-    ),
+    ![
+      'done',
+      'active',
+      'failed',
+      'warning',
+      'colorDone',
+      'colorActive',
+      'colorNext',
+      'colorFailure',
+    ].includes(prop),
 })<{
   done: boolean;
   active: boolean;
   failed: boolean;
+  warning: boolean;
   colorDone: Props['colorDone'];
   colorActive: Props['colorActive'];
   colorNext: Props['colorNext'];
@@ -39,6 +47,7 @@ const StyledBubble = styled(Flexbox).withConfig({
     done,
     active,
     failed,
+    warning,
     colorDone,
     colorActive,
     colorNext,
@@ -49,6 +58,9 @@ const StyledBubble = styled(Flexbox).withConfig({
     }
     if (active && failed) {
       return colorFailure ? colorFailure(theme) : theme.color.progressBarFailure;
+    }
+    if (active && warning) {
+      return colorFailure ? colorFailure(theme) : theme.color.progressBarWarning;
     }
     if (active) {
       return colorActive ? colorActive(theme) : theme.color.progressBarActive;
@@ -69,15 +81,28 @@ const StyledTypography = styled(Typography)`
 `;
 
 const StyledLine = styled.div.withConfig({
-  shouldForwardProp: (prop) => !['done', 'colorDone', 'colorNext'].includes(prop),
+  shouldForwardProp: (prop) =>
+    !['done', 'active', 'failed', 'warning', 'colorDone', 'colorNext'].includes(prop),
 })<{
   done: boolean;
+  active: boolean;
+  failed: boolean;
+  warning: boolean;
   colorDone: Props['colorDone'];
   colorNext: Props['colorNext'];
 }>`
   width: 100%;
   height: 2px;
-  background: ${({ theme, done, colorDone, colorNext }) => {
+  background: ${({ theme, done, active, failed, warning, colorDone, colorNext }) => {
+    if (active && failed) {
+      return theme.color.progressBarFailure;
+    }
+    if (active && warning) {
+      return theme.color.progressBarWarning;
+    }
+    if (active) {
+      return theme.color.cta;
+    }
     if (done) {
       return colorDone ? colorDone(theme) : theme.color.progressBarDone;
     }
@@ -90,6 +115,7 @@ const ProgressBar: FC<Props> = ({
   currentStep,
   stepLabels,
   failed = false,
+  warning = false,
   colorDone,
   colorActive,
   colorNext,
@@ -105,6 +131,7 @@ const ProgressBar: FC<Props> = ({
   const stepBubble = (stepNumber: number) => {
     const stepDone = stepNumber < currentStep;
     const stepActive = stepNumber === currentStep;
+    const lineActive = stepNumber + 1 === currentStep;
 
     const titleProgress = () => {
       if (stepDone) {
@@ -115,6 +142,9 @@ const ProgressBar: FC<Props> = ({
       }
       if (failed) {
         return titleFailure || 'failure step';
+      }
+      if (warning) {
+        return titleFailure || 'warning step';
       }
       return titleNext || 'step not done';
     };
@@ -134,6 +164,14 @@ const ProgressBar: FC<Props> = ({
           <Icon.Cross color={(t) => (colorText ? colorText(t) : t.color.textLight)} size={3} />
         );
       }
+      if (stepActive && warning) {
+        return (
+          <Icon.WarningTriangleHollow
+            color={(t) => (colorText ? colorText(t) : t.color.textLight)}
+            size={4}
+          />
+        );
+      }
       return stepNumber;
     };
 
@@ -148,6 +186,7 @@ const ProgressBar: FC<Props> = ({
           done={stepDone}
           active={stepActive}
           failed={failed}
+          warning={warning}
           title={title}
           colorDone={colorDone}
           colorActive={colorActive}
@@ -171,7 +210,14 @@ const ProgressBar: FC<Props> = ({
           </StyledTypography>
         </StyledBubble>
         {stepNumber < numberOfSteps && (
-          <StyledLine done={stepDone} colorDone={colorDone} colorNext={colorNext} />
+          <StyledLine
+            done={stepDone}
+            active={lineActive}
+            failed={failed}
+            warning={warning}
+            colorDone={colorDone}
+            colorNext={colorNext}
+          />
         )}
       </React.Fragment>
     );
