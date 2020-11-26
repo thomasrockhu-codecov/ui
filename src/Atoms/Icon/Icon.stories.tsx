@@ -209,6 +209,7 @@ export const allIconsColored = () => (
       <div style={{ outline: '1px dashed #bbb', display: 'inline-block' }}>
         <IconComponent
           color={(t: any) => t.color.cta}
+          fill={(t: any) => t.color.cta}
           {...(key === 'SharevilleLogo' ? { id: 'shareville-logo' } : {})}
         />
       </div>
