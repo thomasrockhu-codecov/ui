@@ -11,12 +11,12 @@ import {
 } from 'date-fns';
 import { Box, Flexbox, Typography } from '../../..';
 import { getCalendar, getLocale } from '../shared/dateUtils';
-import { Props } from './Calendar.types';
+import { Props } from './DoubleCalendar.types';
 import {
-  NUMBER_OF_VISIBLE_DAYS,
-  NUMBER_OF_VISIBLE_WEEKS,
-  NUMBER_OF_VISIBLE_DAYS_DOUBLE,
-  NUMBER_OF_VISIBLE_WEEKS_DOUBLE,
+  NUMBER_OF_VISIBLE_WEEKDAYS_SINGLE,
+  NUMBER_OF_VISIBLE_WEEKS_SINGLE,
+  NUMBER_OF_VISIBLE_WEEKDAYS_DOUBLE,
+  NUMBER_OF_VISIBLE_ROWS_DOUBLE,
 } from './constants';
 import { CalendarDay } from './CalendarDay';
 import { FlexProps } from '../../../Atoms/Flexbox/Flexbox.types';
@@ -46,7 +46,7 @@ const DoubleCalendar: React.FC<Props> = ({
   locale,
   viewedDate,
   onClick,
-  selectedDate,
+  selectedStartDate,
   selectedEndDate,
   focusedState,
 }) => {
@@ -64,8 +64,8 @@ const DoubleCalendar: React.FC<Props> = ({
   };
 
   const calendarDayRefs = useRef(
-    [...Array(NUMBER_OF_VISIBLE_WEEKS_DOUBLE)].map(() =>
-      [...Array(NUMBER_OF_VISIBLE_DAYS_DOUBLE)].map(() => React.createRef<HTMLDivElement>()),
+    [...Array(NUMBER_OF_VISIBLE_ROWS_DOUBLE)].map(() =>
+      [...Array(NUMBER_OF_VISIBLE_WEEKDAYS_DOUBLE)].map(() => React.createRef<HTMLDivElement>()),
     ),
   );
 
@@ -80,14 +80,14 @@ const DoubleCalendar: React.FC<Props> = ({
           if (focusedDay > 0) {
             setFocused([focusedWeek, focusedDay - 1]);
           } else if (focusedWeek > 0) {
-            setFocused([focusedWeek - 1, NUMBER_OF_VISIBLE_DAYS - 1]);
+            setFocused([focusedWeek - 1, NUMBER_OF_VISIBLE_WEEKDAYS_SINGLE - 1]);
           }
           break;
 
         case 'ArrowRight':
-          if (focusedDay < NUMBER_OF_VISIBLE_DAYS - 1) {
+          if (focusedDay < NUMBER_OF_VISIBLE_WEEKDAYS_SINGLE - 1) {
             setFocused([focusedWeek, focusedDay + 1]);
-          } else if (focusedWeek < NUMBER_OF_VISIBLE_WEEKS - 1) {
+          } else if (focusedWeek < NUMBER_OF_VISIBLE_WEEKS_SINGLE - 1) {
             setFocused([focusedWeek + 1, 0]);
           }
           break;
@@ -99,7 +99,7 @@ const DoubleCalendar: React.FC<Props> = ({
           break;
 
         case 'ArrowDown':
-          if (focusedWeek < NUMBER_OF_VISIBLE_WEEKS - 1) {
+          if (focusedWeek < NUMBER_OF_VISIBLE_WEEKS_SINGLE - 1) {
             setFocused([focusedWeek + 1, focusedDay]);
           }
           break;
@@ -160,7 +160,7 @@ const DoubleCalendar: React.FC<Props> = ({
               justifyContent="center"
               alignItems="center"
               key={n}
-              $withGutter={index === 6}
+              $withGutter={index === NUMBER_OF_VISIBLE_WEEKDAYS_SINGLE - 1}
             >
               <StyledBox>
                 <Typography type="tertiary">{n}</Typography>
@@ -174,16 +174,19 @@ const DoubleCalendar: React.FC<Props> = ({
               const shouldNotRender =
                 (!isSameMonth(leftViewedDate, day) &&
                   isSameMonth(rightViewedDate, day) &&
-                  dayIndex < 7) ||
+                  dayIndex < NUMBER_OF_VISIBLE_WEEKDAYS_SINGLE) ||
                 (!isSameMonth(rightViewedDate, day) &&
                   isSameMonth(leftViewedDate, day) &&
-                  dayIndex >= 7);
+                  dayIndex >= NUMBER_OF_VISIBLE_WEEKDAYS_SINGLE);
               return shouldNotRender ? (
-                <HiddenDate $withGutter={dayIndex === 6} aria-hidden />
+                <HiddenDate
+                  $withGutter={dayIndex === NUMBER_OF_VISIBLE_WEEKDAYS_SINGLE - 1}
+                  aria-hidden
+                />
               ) : (
                 <CalendarDay
                   ref={calendarDayRefs.current[weekIndex][dayIndex]}
-                  withGutter={dayIndex === 6}
+                  withGutter={dayIndex === NUMBER_OF_VISIBLE_WEEKDAYS_SINGLE - 1}
                   onFocus={() => {
                     setFocused([weekIndex, dayIndex]);
                     focusedDateObjRef.current = day;
@@ -196,16 +199,22 @@ const DoubleCalendar: React.FC<Props> = ({
                   }}
                   onKeyDown={handleKeyPress}
                   selected={
-                    (selectedDate && isSameDay(selectedDate, day)) ||
+                    (selectedStartDate && isSameDay(selectedStartDate, day)) ||
                     (selectedEndDate && isSameDay(selectedEndDate, day))
                   }
                   sameMonth={isSameMonth(leftViewedDate, day) || isSameMonth(rightViewedDate, day)}
                   locale={localeObj}
                   isWithinRange={(() => {
-                    if (selectedEndDate && selectedDate < selectedEndDate)
-                      return isWithinInterval(day, { start: selectedDate, end: selectedEndDate });
-                    if (selectedEndDate && selectedDate > selectedEndDate)
-                      return isWithinInterval(day, { start: selectedEndDate, end: selectedDate });
+                    if (selectedStartDate && selectedEndDate && selectedStartDate < selectedEndDate)
+                      return isWithinInterval(day, {
+                        start: selectedStartDate,
+                        end: selectedEndDate,
+                      });
+                    if (selectedStartDate && selectedEndDate && selectedStartDate > selectedEndDate)
+                      return isWithinInterval(day, {
+                        start: selectedEndDate,
+                        end: selectedStartDate,
+                      });
                     return false;
                   })()}
                   isFirstDay={

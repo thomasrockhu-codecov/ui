@@ -204,26 +204,38 @@ export const DoubleDatePicker = (React.forwardRef<HTMLDivElement, Props>((props,
     [handleDateClickRange],
   );
 
+  const allowedDate = useCallback(
+    (date: Date | null) => {
+      if (date && disableDate && disableDate(date)) return null;
+      if (date && enableDate && !enableDate(date)) return null;
+      return date;
+    },
+    [disableDate, enableDate],
+  );
+
   const handleInputSubmit = useCallback(
     (dateString: string, elementId: string) => {
-      const date = parseDateString(dateString, locale);
+      const parsedDate = parseDateString(dateString, locale);
+      const date = allowedDate(parsedDate);
       if (!date) return;
       if (elementId === INPUT_ID_START) {
         if (selectedStartDate && isSameDay(date, selectedStartDate)) return;
         setInputValueStart(format(date, dateFormat, options));
         setSelectedStartDate(date);
         setViewedDate(newDate(date));
+        if (onChange) onChange(date, selectedEndDate);
       } else if (elementId === INPUT_ID_END) {
         if (selectedEndDate && isSameDay(date, selectedEndDate)) return;
         setInputValueEnd(format(date, dateFormat, options));
         setSelectedEndDate(date);
         setViewedDate(newDate(date));
+        if (onChange) onChange(selectedStartDate, date);
       }
-      if (onChange) onChange(date);
     },
     [
       INPUT_ID_END,
       INPUT_ID_START,
+      allowedDate,
       dateFormat,
       locale,
       onChange,
@@ -307,7 +319,7 @@ export const DoubleDatePicker = (React.forwardRef<HTMLDivElement, Props>((props,
         viewedDate={viewedDate}
         locale={locale}
         onClick={onDateClick}
-        selectedDate={selectedStartDate as Date}
+        selectedStartDate={selectedStartDate as Date}
         selectedEndDate={selectedEndDate as Date}
         focusedState={focusedState}
         setViewedDate={() => ({})}
