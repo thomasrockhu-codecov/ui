@@ -213,41 +213,17 @@ export const DoubleDatePicker = (React.forwardRef<HTMLDivElement, Props>((props,
     [disableDate, enableDate],
   );
 
-  const handleInputSubmit = useCallback(
-    (dateString: string, elementId: string) => {
-      const parsedDate = parseDateString(dateString, locale);
-      const date = allowedDate(parsedDate);
-      if (!date) return;
-      if (elementId === INPUT_ID_START) {
-        if (selectedStartDate && isSameDay(date, selectedStartDate)) return;
-        setInputValueStart(format(date, dateFormat, options));
-        setSelectedStartDate(date);
-        setViewedDate(newDate(date));
-        if (onChange) onChange(date, selectedEndDate);
-      } else if (elementId === INPUT_ID_END) {
-        if (selectedEndDate && isSameDay(date, selectedEndDate)) return;
-        setInputValueEnd(format(date, dateFormat, options));
-        setSelectedEndDate(date);
-        setViewedDate(newDate(date));
-        if (onChange) onChange(selectedStartDate, date);
-      }
-    },
-    [
-      INPUT_ID_END,
-      INPUT_ID_START,
-      allowedDate,
-      dateFormat,
-      locale,
-      onChange,
-      options,
-      selectedEndDate,
-      selectedStartDate,
-    ],
-  );
+  const handleInputSubmit = useCallback(() => {
+    const parsedStartDate = parseDateString(inputValueStart, locale);
+    const parsedEndDate = parseDateString(inputValueEnd, locale);
+    const startDate = allowedDate(parsedStartDate);
+    const endDate = allowedDate(parsedEndDate);
+    setSelectedStartDate(startDate);
+    setSelectedEndDate(endDate);
+    if (onChange) onChange(startDate, endDate);
+  }, [allowedDate, inputValueEnd, inputValueStart, locale, onChange]);
 
   const handleInputKeyDown = (event: React.KeyboardEvent<HTMLInputElement>) => {
-    const { value, id: elementId } = event.target as HTMLInputElement;
-
     switch (event.key) {
       case 'ArrowUp':
       case 'ArrowRight':
@@ -257,7 +233,7 @@ export const DoubleDatePicker = (React.forwardRef<HTMLDivElement, Props>((props,
         break;
 
       case 'Enter':
-        handleInputSubmit(value, elementId);
+        handleInputSubmit();
         break;
 
       default:
@@ -349,6 +325,7 @@ export const DoubleDatePicker = (React.forwardRef<HTMLDivElement, Props>((props,
         onChange={handleInputOnChange}
         onKeyDown={handleInputKeyDown}
         onFocus={handleInputOnFocus}
+        onBlur={handleInputSubmit}
         width={width ? `${theme.spacing.unit(width)}px` : ''}
         autoComplete="off"
       />
@@ -364,6 +341,7 @@ export const DoubleDatePicker = (React.forwardRef<HTMLDivElement, Props>((props,
         onChange={handleInputOnChange}
         onKeyDown={handleInputKeyDown}
         onFocus={handleInputOnFocus}
+        onBlur={handleInputSubmit}
         width={width ? `${theme.spacing.unit(width)}px` : ''}
         autoComplete="off"
       />
