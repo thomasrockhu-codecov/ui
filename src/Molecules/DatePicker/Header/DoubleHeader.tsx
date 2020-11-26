@@ -50,13 +50,13 @@ const DoubleHeader: React.FC<Props> = ({
       <Flexbox container item justifyContent="space-around" flex="1">
         <Flexbox container item>
           <SelectMonth
-            id={id}
+            id={`${id}-left`}
             locale={locale}
             viewedDate={leftViewedDate}
             onChange={onMonthChange}
           />
           <SelectYear
-            id={id}
+            id={`${id}-left`}
             locale={locale}
             viewedDate={leftViewedDate}
             years={yearSelectLength}
@@ -66,13 +66,13 @@ const DoubleHeader: React.FC<Props> = ({
 
         <Flexbox container item>
           <SelectMonth
-            id={id}
+            id={`${id}-right`}
             locale={locale}
             viewedDate={rightViewedDate}
             onChange={onMonthChange}
           />
           <SelectYear
-            id={id}
+            id={`${id}-right`}
             locale={locale}
             viewedDate={rightViewedDate}
             years={yearSelectLength}
