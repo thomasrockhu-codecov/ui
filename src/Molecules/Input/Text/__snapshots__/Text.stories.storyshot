@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Storyshots Molecules | Input / Text Actions 1`] = `
+exports[`Storyshots Molecules / Input / Text Actions 1`] = `
 Array [
   <p>
     Actions are a bit laggy because of the @storybook/addon-actions. Prod performance is not affected.
@@ -39,11 +39,6 @@ Array [
   font-weight: 400;
   font-size: 14px;
   line-height: 1.4285714285714286;
-}
-
-.c0 {
-  width: 200px;
-  display: inline-block;
 }
 
 .c6 {
@@ -110,6 +105,11 @@ Array [
 .c5 {
   position: relative;
   padding: 0px 0;
+}
+
+.c0 {
+  width: 200px;
+  display: inline-block;
 }
 
 <div
@@ -154,7 +154,7 @@ Array [
 ]
 `;
 
-exports[`Storyshots Molecules | Input / Text Alternating Types 1`] = `
+exports[`Storyshots Molecules / Input / Text Alternating Types 1`] = `
 .c3 {
   box-sizing: border-box;
   display: -webkit-box;
@@ -189,11 +189,6 @@ exports[`Storyshots Molecules | Input / Text Alternating Types 1`] = `
   font-weight: 400;
   font-size: 14px;
   line-height: 1.4285714285714286;
-}
-
-.c0 {
-  width: 200px;
-  display: inline-block;
 }
 
 .c6 {
@@ -257,9 +252,79 @@ exports[`Storyshots Molecules | Input / Text Alternating Types 1`] = `
   opacity: 1;
 }
 
+.c7 {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  overflow: visible;
+  border: 0;
+  width: 100%;
+  padding: 8px;
+  margin: 0;
+  line-height: inherit;
+  box-sizing: border-box;
+  height: 40px;
+  outline: none;
+  border: solid;
+  border-color: #BCBCB6;
+  border-width: 1px;
+  position: relative;
+  background-color: #FFFFFF;
+}
+
+.c7:focus {
+  border-width: 1px;
+}
+
+.c7:hover {
+  border-color: #4B4B46;
+}
+
+.c7:focus {
+  border-color: #0046FF;
+}
+
+.c7::-webkit-input-placeholder {
+  color: #6E6E69;
+  height: inherit;
+  line-height: inherit;
+  opacity: 1;
+}
+
+.c7::-moz-placeholder {
+  color: #6E6E69;
+  height: inherit;
+  line-height: inherit;
+  opacity: 1;
+}
+
+.c7:-ms-input-placeholder {
+  color: #6E6E69;
+  height: inherit;
+  line-height: inherit;
+  opacity: 1;
+}
+
+.c7::placeholder {
+  color: #6E6E69;
+  height: inherit;
+  line-height: inherit;
+  opacity: 1;
+}
+
+.c7[type="search"] {
+  -webkit-appearance: textfield;
+}
+
 .c5 {
   position: relative;
   padding: 0px 0;
+}
+
+.c0 {
+  width: 200px;
+  display: inline-block;
 }
 
 <form
@@ -354,7 +419,7 @@ exports[`Storyshots Molecules | Input / Text Alternating Types 1`] = `
               className="c5"
             >
               <input
-                className="NormalizedInput__Input-sc-1m4kmh9-0 c6"
+                className="NormalizedInput__Input-sc-1m4kmh9-0 c7"
                 type="search"
                 variant="normal"
               />
@@ -400,7 +465,7 @@ exports[`Storyshots Molecules | Input / Text Alternating Types 1`] = `
 </form>
 `;
 
-exports[`Storyshots Molecules | Input / Text Both addons 1`] = `
+exports[`Storyshots Molecules / Input / Text Both addons 1`] = `
 .c3 {
   box-sizing: border-box;
   display: -webkit-box;
@@ -465,11 +530,6 @@ exports[`Storyshots Molecules | Input / Text Both addons 1`] = `
   font-weight: 400;
   font-size: 14px;
   line-height: 1.4285714285714286;
-}
-
-.c0 {
-  width: 200px;
-  display: inline-block;
 }
 
 .c8 {
@@ -560,6 +620,11 @@ exports[`Storyshots Molecules | Input / Text Both addons 1`] = `
   padding: 0px 0;
 }
 
+.c0 {
+  width: 200px;
+  display: inline-block;
+}
+
 <div
   className="c0"
 >
@@ -620,7 +685,7 @@ exports[`Storyshots Molecules | Input / Text Both addons 1`] = `
 </div>
 `;
 
-exports[`Storyshots Molecules | Input / Text Default 1`] = `
+exports[`Storyshots Molecules / Input / Text Default 1`] = `
 .c3 {
   box-sizing: border-box;
   display: -webkit-box;
@@ -655,11 +720,6 @@ exports[`Storyshots Molecules | Input / Text Default 1`] = `
   font-weight: 400;
   font-size: 14px;
   line-height: 1.4285714285714286;
-}
-
-.c0 {
-  width: 200px;
-  display: inline-block;
 }
 
 .c6 {
@@ -728,6 +788,11 @@ exports[`Storyshots Molecules | Input / Text Default 1`] = `
   padding: 0px 0;
 }
 
+.c0 {
+  width: 200px;
+  display: inline-block;
+}
+
 <div
   className="c0"
 >
@@ -762,7 +827,7 @@ exports[`Storyshots Molecules | Input / Text Default 1`] = `
 </div>
 `;
 
-exports[`Storyshots Molecules | Input / Text Disabled +addon 1`] = `
+exports[`Storyshots Molecules / Input / Text Disabled +addon 1`] = `
 .c3 {
   box-sizing: border-box;
   display: -webkit-box;
@@ -827,11 +892,6 @@ exports[`Storyshots Molecules | Input / Text Disabled +addon 1`] = `
   font-weight: 400;
   font-size: 14px;
   line-height: 1.4285714285714286;
-}
-
-.c0 {
-  width: 200px;
-  display: inline-block;
 }
 
 .c8 {
@@ -918,6 +978,11 @@ exports[`Storyshots Molecules | Input / Text Disabled +addon 1`] = `
   padding: 0px 0;
 }
 
+.c0 {
+  width: 200px;
+  display: inline-block;
+}
+
 <div
   className="c0"
 >
@@ -979,7 +1044,7 @@ exports[`Storyshots Molecules | Input / Text Disabled +addon 1`] = `
 </div>
 `;
 
-exports[`Storyshots Molecules | Input / Text Disabled 1`] = `
+exports[`Storyshots Molecules / Input / Text Disabled 1`] = `
 .c3 {
   box-sizing: border-box;
   display: -webkit-box;
@@ -1014,11 +1079,6 @@ exports[`Storyshots Molecules | Input / Text Disabled 1`] = `
   font-weight: 400;
   font-size: 14px;
   line-height: 1.4285714285714286;
-}
-
-.c0 {
-  width: 200px;
-  display: inline-block;
 }
 
 .c6 {
@@ -1083,6 +1143,11 @@ exports[`Storyshots Molecules | Input / Text Disabled 1`] = `
   padding: 0px 0;
 }
 
+.c0 {
+  width: 200px;
+  display: inline-block;
+}
+
 <div
   className="c0"
 >
@@ -1118,7 +1183,7 @@ exports[`Storyshots Molecules | Input / Text Disabled 1`] = `
 </div>
 `;
 
-exports[`Storyshots Molecules | Input / Text Edge cases 1`] = `
+exports[`Storyshots Molecules / Input / Text Edge cases 1`] = `
 .c6 {
   box-sizing: border-box;
   display: -webkit-box;
@@ -1162,11 +1227,6 @@ exports[`Storyshots Molecules | Input / Text Edge cases 1`] = `
   font-weight: 400;
   font-size: 12px;
   line-height: 1.3333333333333333;
-}
-
-.c3 {
-  width: 200px;
-  display: inline-block;
 }
 
 .c9 {
@@ -1233,6 +1293,11 @@ exports[`Storyshots Molecules | Input / Text Edge cases 1`] = `
 .c8 {
   position: relative;
   padding: 0px 0;
+}
+
+.c3 {
+  width: 200px;
+  display: inline-block;
 }
 
 .c0 {
@@ -1401,7 +1466,7 @@ exports[`Storyshots Molecules | Input / Text Edge cases 1`] = `
 </div>
 `;
 
-exports[`Storyshots Molecules | Input / Text Error if empty text 1`] = `
+exports[`Storyshots Molecules / Input / Text Error if empty text 1`] = `
 .c3 {
   box-sizing: border-box;
   display: -webkit-box;
@@ -1454,11 +1519,6 @@ exports[`Storyshots Molecules | Input / Text Error if empty text 1`] = `
   font-weight: 400;
   font-size: 12px;
   line-height: 1.3333333333333333;
-}
-
-.c0 {
-  width: 200px;
-  display: inline-block;
 }
 
 .c6 {
@@ -1527,6 +1587,11 @@ exports[`Storyshots Molecules | Input / Text Error if empty text 1`] = `
   padding: 0px 0;
 }
 
+.c0 {
+  width: 200px;
+  display: inline-block;
+}
+
 <div
   className="c0"
 >
@@ -1575,7 +1640,7 @@ exports[`Storyshots Molecules | Input / Text Error if empty text 1`] = `
 </div>
 `;
 
-exports[`Storyshots Molecules | Input / Text Extra info below 1`] = `
+exports[`Storyshots Molecules / Input / Text Extra info below 1`] = `
 .c3 {
   box-sizing: border-box;
   display: -webkit-box;
@@ -1619,11 +1684,6 @@ exports[`Storyshots Molecules | Input / Text Extra info below 1`] = `
   font-weight: 400;
   font-size: 12px;
   line-height: 1.3333333333333333;
-}
-
-.c0 {
-  width: 200px;
-  display: inline-block;
 }
 
 .c6 {
@@ -1692,6 +1752,11 @@ exports[`Storyshots Molecules | Input / Text Extra info below 1`] = `
   padding: 0px 0;
 }
 
+.c0 {
+  width: 200px;
+  display: inline-block;
+}
+
 <div
   className="c0"
 >
@@ -1733,7 +1798,7 @@ exports[`Storyshots Molecules | Input / Text Extra info below 1`] = `
 </div>
 `;
 
-exports[`Storyshots Molecules | Input / Text Extra info with error 1`] = `
+exports[`Storyshots Molecules / Input / Text Extra info with error 1`] = `
 .c3 {
   box-sizing: border-box;
   display: -webkit-box;
@@ -1786,11 +1851,6 @@ exports[`Storyshots Molecules | Input / Text Extra info with error 1`] = `
   font-weight: 400;
   font-size: 12px;
   line-height: 1.3333333333333333;
-}
-
-.c0 {
-  width: 200px;
-  display: inline-block;
 }
 
 .c6 {
@@ -1859,6 +1919,11 @@ exports[`Storyshots Molecules | Input / Text Extra info with error 1`] = `
   padding: 0px 0;
 }
 
+.c0 {
+  width: 200px;
+  display: inline-block;
+}
+
 <div
   className="c0"
 >
@@ -1907,7 +1972,7 @@ exports[`Storyshots Molecules | Input / Text Extra info with error 1`] = `
 </div>
 `;
 
-exports[`Storyshots Molecules | Input / Text Full width 1`] = `
+exports[`Storyshots Molecules / Input / Text Full width 1`] = `
 Array [
   .c0 {
   margin-bottom: 16px;
@@ -2002,11 +2067,6 @@ Array [
   font-weight: 400;
   font-size: 14px;
   line-height: 1.4285714285714286;
-}
-
-.c3 {
-  width: 100%;
-  display: inline-block;
 }
 
 .c12 {
@@ -2219,6 +2279,11 @@ Array [
   padding: 0px 0;
 }
 
+.c3 {
+  width: 100%;
+  display: inline-block;
+}
+
 .c0 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -2296,7 +2361,6 @@ Array [
       <div>
         <div
           className="c3"
-          width="100%"
         >
           <label
             className="c4"
@@ -2341,7 +2405,6 @@ Array [
       <div>
         <div
           className="c3"
-          width="100%"
         >
           <label
             className="c4"
@@ -2405,7 +2468,6 @@ Array [
       <div>
         <div
           className="c3"
-          width="100%"
         >
           <label
             className="c4"
@@ -2460,7 +2522,7 @@ Array [
 ]
 `;
 
-exports[`Storyshots Molecules | Input / Text Hidden label 1`] = `
+exports[`Storyshots Molecules / Input / Text Hidden label 1`] = `
 .c3 {
   position: absolute;
   height: 1px;
@@ -2492,11 +2554,6 @@ exports[`Storyshots Molecules | Input / Text Hidden label 1`] = `
   font-weight: 400;
   font-size: 14px;
   line-height: 1.4285714285714286;
-}
-
-.c0 {
-  width: 200px;
-  display: inline-block;
 }
 
 .c6 {
@@ -2565,6 +2622,11 @@ exports[`Storyshots Molecules | Input / Text Hidden label 1`] = `
   padding: 0px 0;
 }
 
+.c0 {
+  width: 200px;
+  display: inline-block;
+}
+
 <div
   className="c0"
 >
@@ -2599,7 +2661,7 @@ exports[`Storyshots Molecules | Input / Text Hidden label 1`] = `
 </div>
 `;
 
-exports[`Storyshots Molecules | Input / Text Left addon 1`] = `
+exports[`Storyshots Molecules / Input / Text Left addon 1`] = `
 .c3 {
   box-sizing: border-box;
   display: -webkit-box;
@@ -2664,11 +2726,6 @@ exports[`Storyshots Molecules | Input / Text Left addon 1`] = `
   font-weight: 400;
   font-size: 14px;
   line-height: 1.4285714285714286;
-}
-
-.c0 {
-  width: 200px;
-  display: inline-block;
 }
 
 .c8 {
@@ -2748,6 +2805,11 @@ exports[`Storyshots Molecules | Input / Text Left addon 1`] = `
   padding: 0px 0;
 }
 
+.c0 {
+  width: 200px;
+  display: inline-block;
+}
+
 <div
   className="c0"
 >
@@ -2801,7 +2863,7 @@ exports[`Storyshots Molecules | Input / Text Left addon 1`] = `
 </div>
 `;
 
-exports[`Storyshots Molecules | Input / Text Quiet 1`] = `
+exports[`Storyshots Molecules / Input / Text Quiet 1`] = `
 Array [
   .c0 {
   margin-bottom: 16px;
@@ -2939,16 +3001,6 @@ Array [
   font-weight: 400;
   font-size: 12px;
   line-height: 1.3333333333333333;
-}
-
-.c3 {
-  width: 200px;
-  display: inline-block;
-}
-
-.c10 {
-  width: 100%;
-  display: inline-block;
 }
 
 .c20 {
@@ -3431,6 +3483,16 @@ Array [
   padding: 0px 0;
 }
 
+.c3 {
+  width: 200px;
+  display: inline-block;
+}
+
+.c10 {
+  width: 100%;
+  display: inline-block;
+}
+
 .c0 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -3552,7 +3614,6 @@ Array [
       <div>
         <div
           className="c10"
-          width="100%"
         >
           <label
             className="c4"
@@ -3597,7 +3658,6 @@ Array [
       <div>
         <div
           className="c10"
-          width="100%"
         >
           <label
             className="c4"
@@ -3861,7 +3921,7 @@ Array [
 ]
 `;
 
-exports[`Storyshots Molecules | Input / Text Required 1`] = `
+exports[`Storyshots Molecules / Input / Text Required 1`] = `
 Array [
   .c0 {
   margin-bottom: 16px;
@@ -3928,11 +3988,6 @@ Array [
   line-height: 1.4285714285714286;
 }
 
-.c3 {
-  width: 200px;
-  display: inline-block;
-}
-
 .c9 {
   font-family: inherit;
   font-size: 100%;
@@ -3997,6 +4052,11 @@ Array [
 .c8 {
   position: relative;
   padding: 0px 0;
+}
+
+.c3 {
+  width: 200px;
+  display: inline-block;
 }
 
 .c0 {
@@ -4169,7 +4229,7 @@ Array [
 ]
 `;
 
-exports[`Storyshots Molecules | Input / Text Right addon 1`] = `
+exports[`Storyshots Molecules / Input / Text Right addon 1`] = `
 .c3 {
   box-sizing: border-box;
   display: -webkit-box;
@@ -4220,11 +4280,6 @@ exports[`Storyshots Molecules | Input / Text Right addon 1`] = `
   font-weight: 400;
   font-size: 14px;
   line-height: 1.4285714285714286;
-}
-
-.c0 {
-  width: 200px;
-  display: inline-block;
 }
 
 .c8 {
@@ -4304,6 +4359,11 @@ exports[`Storyshots Molecules | Input / Text Right addon 1`] = `
   padding: 0px 0;
 }
 
+.c0 {
+  width: 200px;
+  display: inline-block;
+}
+
 <div
   className="c0"
 >
@@ -4345,7 +4405,7 @@ exports[`Storyshots Molecules | Input / Text Right addon 1`] = `
 </div>
 `;
 
-exports[`Storyshots Molecules | Input / Text Simple login form 1`] = `
+exports[`Storyshots Molecules / Input / Text Simple login form 1`] = `
 .c0 {
   box-sizing: border-box;
   display: -webkit-box;
@@ -4547,11 +4607,6 @@ exports[`Storyshots Molecules | Input / Text Simple login form 1`] = `
   background-color: hsl(223.5,100%,40%);
 }
 
-.c3 {
-  width: 100%;
-  display: inline-block;
-}
-
 .c9 {
   font-family: inherit;
   font-size: 100%;
@@ -4679,6 +4734,11 @@ exports[`Storyshots Molecules | Input / Text Simple login form 1`] = `
   padding: 0px 0;
 }
 
+.c3 {
+  width: 100%;
+  display: inline-block;
+}
+
 <div
   className="c0"
 >
@@ -4690,7 +4750,6 @@ exports[`Storyshots Molecules | Input / Text Simple login form 1`] = `
     >
       <div
         className="c3"
-        width="100%"
       >
         <label
           className="c4"
@@ -4734,7 +4793,6 @@ exports[`Storyshots Molecules | Input / Text Simple login form 1`] = `
     >
       <div
         className="c3"
-        width="100%"
       >
         <label
           className="c4"
@@ -4800,7 +4858,7 @@ exports[`Storyshots Molecules | Input / Text Simple login form 1`] = `
 </div>
 `;
 
-exports[`Storyshots Molecules | Input / Text Small 1`] = `
+exports[`Storyshots Molecules / Input / Text Small 1`] = `
 Array [
   .c0 {
   margin-bottom: 16px;
@@ -4913,16 +4971,6 @@ Array [
   font-weight: 400;
   font-size: 12px;
   line-height: 1.3333333333333333;
-}
-
-.c3 {
-  width: 200px;
-  display: inline-block;
-}
-
-.c10 {
-  width: 100%;
-  display: inline-block;
 }
 
 .c16 {
@@ -5196,6 +5244,16 @@ Array [
   padding: 0px 0;
 }
 
+.c3 {
+  width: 200px;
+  display: inline-block;
+}
+
+.c10 {
+  width: 100%;
+  display: inline-block;
+}
+
 .c0 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -5317,7 +5375,6 @@ Array [
       <div>
         <div
           className="c10"
-          width="100%"
         >
           <label
             className="c4"
@@ -5536,7 +5593,7 @@ Array [
 ]
 `;
 
-exports[`Storyshots Molecules | Input / Text Success 1`] = `
+exports[`Storyshots Molecules / Input / Text Success 1`] = `
 .c3 {
   box-sizing: border-box;
   display: -webkit-box;
@@ -5571,11 +5628,6 @@ exports[`Storyshots Molecules | Input / Text Success 1`] = `
   font-weight: 400;
   font-size: 14px;
   line-height: 1.4285714285714286;
-}
-
-.c0 {
-  width: 200px;
-  display: inline-block;
 }
 
 .c6 {
@@ -5644,6 +5696,11 @@ exports[`Storyshots Molecules | Input / Text Success 1`] = `
   padding: 0px 0;
 }
 
+.c0 {
+  width: 200px;
+  display: inline-block;
+}
+
 <div
   className="c0"
 >
@@ -5678,7 +5735,7 @@ exports[`Storyshots Molecules | Input / Text Success 1`] = `
 </div>
 `;
 
-exports[`Storyshots Molecules | Input / Text With auto complete 1`] = `
+exports[`Storyshots Molecules / Input / Text With auto complete 1`] = `
 Array [
   .c3 {
   box-sizing: border-box;
@@ -5714,11 +5771,6 @@ Array [
   font-weight: 400;
   font-size: 14px;
   line-height: 1.4285714285714286;
-}
-
-.c0 {
-  width: 200px;
-  display: inline-block;
 }
 
 .c6 {
@@ -5785,6 +5837,11 @@ Array [
 .c5 {
   position: relative;
   padding: 0px 0;
+}
+
+.c0 {
+  width: 200px;
+  display: inline-block;
 }
 
 <div
@@ -5856,11 +5913,6 @@ Array [
   line-height: 1.4285714285714286;
 }
 
-.c0 {
-  width: 200px;
-  display: inline-block;
-}
-
 .c6 {
   font-family: inherit;
   font-size: 100%;
@@ -5925,6 +5977,11 @@ Array [
 .c5 {
   position: relative;
   padding: 0px 0;
+}
+
+.c0 {
+  width: 200px;
+  display: inline-block;
 }
 
 <div
@@ -5996,11 +6053,6 @@ Array [
   line-height: 1.4285714285714286;
 }
 
-.c0 {
-  width: 200px;
-  display: inline-block;
-}
-
 .c6 {
   font-family: inherit;
   font-size: 100%;
@@ -6065,6 +6117,11 @@ Array [
 .c5 {
   position: relative;
   padding: 0px 0;
+}
+
+.c0 {
+  width: 200px;
+  display: inline-block;
 }
 
 <div
@@ -6103,7 +6160,7 @@ Array [
 ]
 `;
 
-exports[`Storyshots Molecules | Input / Text With auto focus 1`] = `
+exports[`Storyshots Molecules / Input / Text With auto focus 1`] = `
 .c3 {
   box-sizing: border-box;
   display: -webkit-box;
@@ -6138,11 +6195,6 @@ exports[`Storyshots Molecules | Input / Text With auto focus 1`] = `
   font-weight: 400;
   font-size: 14px;
   line-height: 1.4285714285714286;
-}
-
-.c0 {
-  width: 200px;
-  display: inline-block;
 }
 
 .c6 {
@@ -6209,6 +6261,11 @@ exports[`Storyshots Molecules | Input / Text With auto focus 1`] = `
 .c5 {
   position: relative;
   padding: 0px 0;
+}
+
+.c0 {
+  width: 200px;
+  display: inline-block;
 }
 
 <div
@@ -6246,7 +6303,7 @@ exports[`Storyshots Molecules | Input / Text With auto focus 1`] = `
 </div>
 `;
 
-exports[`Storyshots Molecules | Input / Text With default value (Uncontrolled behaviour) 1`] = `
+exports[`Storyshots Molecules / Input / Text With default value (Uncontrolled behaviour) 1`] = `
 .c3 {
   box-sizing: border-box;
   display: -webkit-box;
@@ -6281,11 +6338,6 @@ exports[`Storyshots Molecules | Input / Text With default value (Uncontrolled be
   font-weight: 400;
   font-size: 14px;
   line-height: 1.4285714285714286;
-}
-
-.c0 {
-  width: 200px;
-  display: inline-block;
 }
 
 .c6 {
@@ -6352,6 +6404,11 @@ exports[`Storyshots Molecules | Input / Text With default value (Uncontrolled be
 .c5 {
   position: relative;
   padding: 0px 0;
+}
+
+.c0 {
+  width: 200px;
+  display: inline-block;
 }
 
 <div
@@ -6389,7 +6446,7 @@ exports[`Storyshots Molecules | Input / Text With default value (Uncontrolled be
 </div>
 `;
 
-exports[`Storyshots Molecules | Input / Text With maxLength 1`] = `
+exports[`Storyshots Molecules / Input / Text With maxLength 1`] = `
 .c3 {
   box-sizing: border-box;
   display: -webkit-box;
@@ -6424,11 +6481,6 @@ exports[`Storyshots Molecules | Input / Text With maxLength 1`] = `
   font-weight: 400;
   font-size: 14px;
   line-height: 1.4285714285714286;
-}
-
-.c0 {
-  width: 200px;
-  display: inline-block;
 }
 
 .c6 {
@@ -6497,6 +6549,11 @@ exports[`Storyshots Molecules | Input / Text With maxLength 1`] = `
   padding: 0px 0;
 }
 
+.c0 {
+  width: 200px;
+  display: inline-block;
+}
+
 <div
   className="c0"
 >
@@ -6532,7 +6589,7 @@ exports[`Storyshots Molecules | Input / Text With maxLength 1`] = `
 </div>
 `;
 
-exports[`Storyshots Molecules | Input / Text With tooltip (position top) as label addon 1`] = `
+exports[`Storyshots Molecules / Input / Text With tooltip (position top) as label addon 1`] = `
 Array [
   <br />,
   <br />,
@@ -6588,15 +6645,6 @@ Array [
   font-weight: 400;
   font-size: 14px;
   line-height: 1.4285714285714286;
-}
-
-.c0 {
-  width: 200px;
-  display: inline-block;
-}
-
-.c5 {
-  margin-left: 4px;
 }
 
 .c9 {
@@ -6663,6 +6711,15 @@ Array [
 .c8 {
   position: relative;
   padding: 0px 0;
+}
+
+.c0 {
+  width: 200px;
+  display: inline-block;
+}
+
+.c5 {
+  margin-left: 4px;
 }
 
 <div
@@ -6733,7 +6790,7 @@ Array [
 ]
 `;
 
-exports[`Storyshots Molecules | Input / Text With tooltip as label addon 1`] = `
+exports[`Storyshots Molecules / Input / Text With tooltip as label addon 1`] = `
 .c3 {
   box-sizing: border-box;
   display: -webkit-box;
@@ -6786,15 +6843,6 @@ exports[`Storyshots Molecules | Input / Text With tooltip as label addon 1`] = `
   font-weight: 400;
   font-size: 14px;
   line-height: 1.4285714285714286;
-}
-
-.c0 {
-  width: 200px;
-  display: inline-block;
-}
-
-.c5 {
-  margin-left: 4px;
 }
 
 .c9 {
@@ -6861,6 +6909,15 @@ exports[`Storyshots Molecules | Input / Text With tooltip as label addon 1`] = `
 .c8 {
   position: relative;
   padding: 0px 0;
+}
+
+.c0 {
+  width: 200px;
+  display: inline-block;
+}
+
+.c5 {
+  margin-left: 4px;
 }
 
 <div
@@ -6930,7 +6987,7 @@ exports[`Storyshots Molecules | Input / Text With tooltip as label addon 1`] = `
 </div>
 `;
 
-exports[`Storyshots Molecules | Input / Text With value (Controlled behaviour) 1`] = `
+exports[`Storyshots Molecules / Input / Text With value (Controlled behaviour) 1`] = `
 .c3 {
   box-sizing: border-box;
   display: -webkit-box;
@@ -6965,11 +7022,6 @@ exports[`Storyshots Molecules | Input / Text With value (Controlled behaviour) 1
   font-weight: 400;
   font-size: 14px;
   line-height: 1.4285714285714286;
-}
-
-.c0 {
-  width: 200px;
-  display: inline-block;
 }
 
 .c6 {
@@ -7036,6 +7088,11 @@ exports[`Storyshots Molecules | Input / Text With value (Controlled behaviour) 1
 .c5 {
   position: relative;
   padding: 0px 0;
+}
+
+.c0 {
+  width: 200px;
+  display: inline-block;
 }
 
 <div

@@ -1,4 +1,5 @@
 import React, { useCallback, useEffect, useState } from 'react';
+import R from 'ramda';
 import { PaginationProps } from './Pagination.types';
 import Regular from './variants/Regular';
 import Compact from './variants/Compact';
@@ -16,36 +17,47 @@ const Pagination: React.FC<PaginationProps> = ({
   currentPageLabel = 'Current Page, page:',
   pageItemLabel = 'Go to Page',
 }) => {
-  const [currentPageFromState, setCurrentPageFromState] = useState(1);
+  const [currentPage, setCurrentPage] = useState(1);
 
-  // use current page value from props if provided (controlled), otherwise use current page from state (uncontrolled)
-  const currentPage = currentPageFromProps ?? currentPageFromState;
+  const controlled = !R.isNil(currentPageFromProps);
 
   const numberOfPages = Math.ceil(totalItems / itemsPerPage) || 1;
 
   const handlePageChange = useCallback(
     (newPage) => {
-      setCurrentPageFromState(newPage);
+      setCurrentPage(newPage);
       onPageChange(newPage);
     },
-    [setCurrentPageFromState, onPageChange],
+    [setCurrentPage, onPageChange],
   );
 
   const onClickPrevious = useCallback(() => {
-    if (currentPageFromState > 1) {
-      handlePageChange(currentPageFromState - 1);
+    if (currentPage > 1) {
+      handlePageChange(currentPage - 1);
     }
-  }, [currentPageFromState, handlePageChange]);
+  }, [currentPage, handlePageChange]);
 
   const onClickNext = useCallback(() => {
-    if (currentPageFromState < numberOfPages) {
-      handlePageChange(currentPageFromState + 1);
+    if (currentPage < numberOfPages) {
+      handlePageChange(currentPage + 1);
     }
-  }, [currentPageFromState, numberOfPages, handlePageChange]);
+  }, [currentPage, numberOfPages, handlePageChange]);
+
+  /**
+   * Resets the current page to 1 if it's uncontrolled and number of pages changes.
+   * Prevents the component from remaining on a page that might not exist if the data is swapped.
+   */
+  useEffect(() => {
+    if (!controlled) {
+      handlePageChange(1);
+    }
+  }, [controlled, handlePageChange, numberOfPages]);
 
   useEffect(() => {
-    handlePageChange(currentPageFromProps || 1);
-  }, [totalItems, itemsPerPage, handlePageChange, currentPageFromProps]);
+    if (controlled) {
+      setCurrentPage(currentPageFromProps as number);
+    }
+  }, [controlled, currentPageFromProps]);
 
   return (
     <nav role="navigation" aria-label={label}>

@@ -1,3 +1,3 @@
-import { RenderForSizes, getScreenMedia } from './RenderForSizes';
+import { RenderForSizes } from './RenderForSizes';
 
-export { RenderForSizes, getScreenMedia };
+export { RenderForSizes };

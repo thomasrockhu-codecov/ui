@@ -36,13 +36,13 @@ export const HeaderContent: React.FC<Props & UIProps> = ({
         md={mdTable}
         lg={lgTable}
         xl={xlTable}
-        Container={({ fontSize, children: component, className: mediaClassName }) => (
-          <TextWrapper className={mediaClassName} fontSize={fontSize} sorted={false}>
-            {component}
+      >
+        {({ fontSize, className }) => (
+          <TextWrapper className={className} fontSize={fontSize} sorted={false}>
+            {children}
           </TextWrapper>
         )}
-        Component={() => children}
-      />
+      </RenderForSizes>
     );
   }
 
@@ -53,26 +53,24 @@ export const HeaderContent: React.FC<Props & UIProps> = ({
       md={mdTable}
       lg={lgTable}
       xl={xlTable}
-      Container={({ children: component, className: mediaClassName }) => (
-        <SortButton className={mediaClassName} onClick={onSortClick}>
-          {component}
+    >
+      {({ className, fontSize }) => (
+        <SortButton className={className} onClick={onSortClick}>
+          <StyledFlexboxContainer container>
+            <CellInlineContainer item>
+              <TextWrapper
+                fontSize={fontSize}
+                sorted={!R.isNil(sortOrder) && sortOrder !== SORT_ORDER_NONE}
+              >
+                {children}
+              </TextWrapper>
+            </CellInlineContainer>
+            <Flexbox item>
+              <SortIcon sortOrder={sortOrder} />
+            </Flexbox>
+          </StyledFlexboxContainer>
         </SortButton>
       )}
-      Component={({ fontSize }) => (
-        <StyledFlexboxContainer container>
-          <CellInlineContainer item>
-            <TextWrapper
-              fontSize={fontSize}
-              sorted={!R.isNil(sortOrder) && sortOrder !== SORT_ORDER_NONE}
-            >
-              {children}
-            </TextWrapper>
-          </CellInlineContainer>
-          <Flexbox item>
-            <SortIcon sortOrder={sortOrder} />
-          </Flexbox>
-        </StyledFlexboxContainer>
-      )}
-    />
+    </RenderForSizes>
   );
 };

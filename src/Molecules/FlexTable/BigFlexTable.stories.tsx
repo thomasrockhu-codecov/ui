@@ -3,18 +3,20 @@ import R from 'ramda';
 import styled from 'styled-components';
 import { FixedSizeList as List } from 'react-window';
 import AutoSizer from 'react-virtualized-auto-sizer';
-import { withKnobs, number } from '@storybook/addon-knobs';
+import { number } from '@storybook/addon-knobs';
 import FlexTable from './FlexTable';
 import { Typography, Box } from '../..';
 import docs from './FlexTable.mdx';
 import { StyledBackground } from './storiesShared';
 
 export default {
-  title: 'Molecules | FlexTable / Big FlexTables example',
-  decorators: [withKnobs],
+  title: 'Molecules / FlexTable / Big FlexTables example',
+
   parameters: {
     component: FlexTable,
-    ...docs.parameters,
+    docs: {
+      page: docs,
+    },
   },
 };
 
@@ -143,7 +145,7 @@ const FullHeightDiv = styled.div`
 export const VirtualizedTable = () => {
   const VirtualizedTableExample = () => {
     const ReactComponent = () => {
-      const rowsLength = number('Number of rows', 500);
+      const rowsLength = number('Number of rows', 100);
       const columnsLength = number('Number of columns', 10);
       const [sort, setSort] = useState<any>({});
       const tableData = useMemo(() => generateTableData(rowsLength, columnsLength), [

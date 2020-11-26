@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Storyshots Molecules | Input / Select / MultiSelectList Item default 1`] = `
+exports[`Storyshots Molecules / Input / Select / MultiSelectList Item default 1`] = `
 .c1 {
   box-sizing: border-box;
   display: -webkit-box;
@@ -121,11 +121,6 @@ exports[`Storyshots Molecules | Input / Select / MultiSelectList Item default 1`
   line-height: 1.4285714285714286;
 }
 
-.c4 {
-  width: 16px;
-  display: inline-block;
-}
-
 .c13 {
   width: 20px;
   height: 20px;
@@ -233,6 +228,11 @@ exports[`Storyshots Molecules | Input / Select / MultiSelectList Item default 1`
   overflow: hidden;
 }
 
+.c4 {
+  width: 16px;
+  display: inline-block;
+}
+
 <div
   className="c0"
 >
@@ -244,7 +244,6 @@ exports[`Storyshots Molecules | Input / Select / MultiSelectList Item default 1`
     >
       <div
         className="c4"
-        width="16px"
       >
         <label
           className="c5 c6 c7"
@@ -301,7 +300,7 @@ exports[`Storyshots Molecules | Input / Select / MultiSelectList Item default 1`
 </div>
 `;
 
-exports[`Storyshots Molecules | Input / Select / MultiSelectList Item disabled 1`] = `
+exports[`Storyshots Molecules / Input / Select / MultiSelectList Item disabled 1`] = `
 .c1 {
   box-sizing: border-box;
   display: -webkit-box;
@@ -431,11 +430,6 @@ exports[`Storyshots Molecules | Input / Select / MultiSelectList Item disabled 1
   line-height: 1.4285714285714286;
 }
 
-.c4 {
-  width: 16px;
-  display: inline-block;
-}
-
 .c13 {
   width: 20px;
   height: 20px;
@@ -536,6 +530,11 @@ exports[`Storyshots Molecules | Input / Select / MultiSelectList Item disabled 1
   overflow: hidden;
 }
 
+.c4 {
+  width: 16px;
+  display: inline-block;
+}
+
 <div
   className="c0"
   disabled={true}
@@ -548,7 +547,6 @@ exports[`Storyshots Molecules | Input / Select / MultiSelectList Item disabled 1
     >
       <div
         className="c4"
-        width="16px"
       >
         <label
           className="c5 c6 c7"
@@ -605,7 +603,7 @@ exports[`Storyshots Molecules | Input / Select / MultiSelectList Item disabled 1
 </div>
 `;
 
-exports[`Storyshots Molecules | Input / Select / MultiSelectList Item selected 1`] = `
+exports[`Storyshots Molecules / Input / Select / MultiSelectList Item selected 1`] = `
 .c1 {
   box-sizing: border-box;
   display: -webkit-box;
@@ -726,11 +724,6 @@ exports[`Storyshots Molecules | Input / Select / MultiSelectList Item selected 1
   line-height: 1.4285714285714286;
 }
 
-.c4 {
-  width: 16px;
-  display: inline-block;
-}
-
 .c13 {
   width: 20px;
   height: 20px;
@@ -838,6 +831,11 @@ exports[`Storyshots Molecules | Input / Select / MultiSelectList Item selected 1
   overflow: hidden;
 }
 
+.c4 {
+  width: 16px;
+  display: inline-block;
+}
+
 <div
   className="c0"
   selected={true}
@@ -850,7 +848,6 @@ exports[`Storyshots Molecules | Input / Select / MultiSelectList Item selected 1
     >
       <div
         className="c4"
-        width="16px"
       >
         <label
           className="c5 c6 c7"
@@ -908,7 +905,7 @@ exports[`Storyshots Molecules | Input / Select / MultiSelectList Item selected 1
 </div>
 `;
 
-exports[`Storyshots Molecules | Input / Select / MultiSelectList List with different arrow positions 1`] = `
+exports[`Storyshots Molecules / Input / Select / MultiSelectList List with different arrow positions 1`] = `
 .c4 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -1133,11 +1130,6 @@ exports[`Storyshots Molecules | Input / Select / MultiSelectList List with diffe
   line-height: 1.4285714285714286;
 }
 
-.c12 {
-  width: 16px;
-  display: inline-block;
-}
-
 .c21 {
   width: 20px;
   height: 20px;
@@ -1253,6 +1245,11 @@ exports[`Storyshots Molecules | Input / Select / MultiSelectList List with diffe
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
+}
+
+.c12 {
+  width: 16px;
+  display: inline-block;
 }
 
 .c0 {
@@ -1502,7 +1499,6 @@ exports[`Storyshots Molecules | Input / Select / MultiSelectList List with diffe
                   >
                     <div
                       className="c12"
-                      width="16px"
                     >
                       <label
                         className="c13 c14 c15"
@@ -1569,7 +1565,6 @@ exports[`Storyshots Molecules | Input / Select / MultiSelectList List with diffe
                   >
                     <div
                       className="c12"
-                      width="16px"
                     >
                       <label
                         className="c13 c14 c15"
@@ -1636,7 +1631,6 @@ exports[`Storyshots Molecules | Input / Select / MultiSelectList List with diffe
                   >
                     <div
                       className="c12"
-                      width="16px"
                     >
                       <label
                         className="c13 c14 c15"
@@ -1703,7 +1697,6 @@ exports[`Storyshots Molecules | Input / Select / MultiSelectList List with diffe
                   >
                     <div
                       className="c12"
-                      width="16px"
                     >
                       <label
                         className="c13 c14 c15"
@@ -1770,7 +1763,6 @@ exports[`Storyshots Molecules | Input / Select / MultiSelectList List with diffe
                   >
                     <div
                       className="c12"
-                      width="16px"
                     >
                       <label
                         className="c13 c14 c15"
@@ -1837,7 +1829,6 @@ exports[`Storyshots Molecules | Input / Select / MultiSelectList List with diffe
                   >
                     <div
                       className="c12"
-                      width="16px"
                     >
                       <label
                         className="c13 c14 c15"
@@ -1904,7 +1895,6 @@ exports[`Storyshots Molecules | Input / Select / MultiSelectList List with diffe
                   >
                     <div
                       className="c12"
-                      width="16px"
                     >
                       <label
                         className="c13 c14 c15"
@@ -1971,7 +1961,6 @@ exports[`Storyshots Molecules | Input / Select / MultiSelectList List with diffe
                   >
                     <div
                       className="c12"
-                      width="16px"
                     >
                       <label
                         className="c13 c14 c15"
@@ -2038,7 +2027,6 @@ exports[`Storyshots Molecules | Input / Select / MultiSelectList List with diffe
                   >
                     <div
                       className="c12"
-                      width="16px"
                     >
                       <label
                         className="c13 c14 c15"
@@ -2105,7 +2093,6 @@ exports[`Storyshots Molecules | Input / Select / MultiSelectList List with diffe
                   >
                     <div
                       className="c12"
-                      width="16px"
                     >
                       <label
                         className="c13 c14 c15"
@@ -2172,7 +2159,6 @@ exports[`Storyshots Molecules | Input / Select / MultiSelectList List with diffe
                   >
                     <div
                       className="c12"
-                      width="16px"
                     >
                       <label
                         className="c13 c14 c15"
@@ -2239,7 +2225,6 @@ exports[`Storyshots Molecules | Input / Select / MultiSelectList List with diffe
                   >
                     <div
                       className="c12"
-                      width="16px"
                     >
                       <label
                         className="c13 c14 c15"
@@ -2306,7 +2291,6 @@ exports[`Storyshots Molecules | Input / Select / MultiSelectList List with diffe
                   >
                     <div
                       className="c12"
-                      width="16px"
                     >
                       <label
                         className="c13 c14 c15"
@@ -2406,7 +2390,6 @@ exports[`Storyshots Molecules | Input / Select / MultiSelectList List with diffe
                   >
                     <div
                       className="c12"
-                      width="16px"
                     >
                       <label
                         className="c13 c14 c15"
@@ -2473,7 +2456,6 @@ exports[`Storyshots Molecules | Input / Select / MultiSelectList List with diffe
                   >
                     <div
                       className="c12"
-                      width="16px"
                     >
                       <label
                         className="c13 c14 c15"
@@ -2541,7 +2523,6 @@ exports[`Storyshots Molecules | Input / Select / MultiSelectList List with diffe
                   >
                     <div
                       className="c12"
-                      width="16px"
                     >
                       <label
                         className="c13 c14 c15"
@@ -2608,7 +2589,6 @@ exports[`Storyshots Molecules | Input / Select / MultiSelectList List with diffe
                   >
                     <div
                       className="c12"
-                      width="16px"
                     >
                       <label
                         className="c13 c14 c15"
@@ -2675,7 +2655,6 @@ exports[`Storyshots Molecules | Input / Select / MultiSelectList List with diffe
                   >
                     <div
                       className="c12"
-                      width="16px"
                     >
                       <label
                         className="c13 c14 c15"
@@ -2742,7 +2721,6 @@ exports[`Storyshots Molecules | Input / Select / MultiSelectList List with diffe
                   >
                     <div
                       className="c12"
-                      width="16px"
                     >
                       <label
                         className="c13 c14 c15"
@@ -2809,7 +2787,6 @@ exports[`Storyshots Molecules | Input / Select / MultiSelectList List with diffe
                   >
                     <div
                       className="c12"
-                      width="16px"
                     >
                       <label
                         className="c13 c14 c15"
@@ -2876,7 +2853,6 @@ exports[`Storyshots Molecules | Input / Select / MultiSelectList List with diffe
                   >
                     <div
                       className="c12"
-                      width="16px"
                     >
                       <label
                         className="c13 c14 c15"
@@ -2943,7 +2919,6 @@ exports[`Storyshots Molecules | Input / Select / MultiSelectList List with diffe
                   >
                     <div
                       className="c12"
-                      width="16px"
                     >
                       <label
                         className="c13 c14 c15"
@@ -3010,7 +2985,6 @@ exports[`Storyshots Molecules | Input / Select / MultiSelectList List with diffe
                   >
                     <div
                       className="c12"
-                      width="16px"
                     >
                       <label
                         className="c13 c14 c15"
@@ -3077,7 +3051,6 @@ exports[`Storyshots Molecules | Input / Select / MultiSelectList List with diffe
                   >
                     <div
                       className="c12"
-                      width="16px"
                     >
                       <label
                         className="c13 c14 c15"
@@ -3144,7 +3117,6 @@ exports[`Storyshots Molecules | Input / Select / MultiSelectList List with diffe
                   >
                     <div
                       className="c12"
-                      width="16px"
                     >
                       <label
                         className="c13 c14 c15"
@@ -3244,7 +3216,6 @@ exports[`Storyshots Molecules | Input / Select / MultiSelectList List with diffe
                   >
                     <div
                       className="c12"
-                      width="16px"
                     >
                       <label
                         className="c13 c14 c15"
@@ -3311,7 +3282,6 @@ exports[`Storyshots Molecules | Input / Select / MultiSelectList List with diffe
                   >
                     <div
                       className="c12"
-                      width="16px"
                     >
                       <label
                         className="c13 c14 c15"
@@ -3378,7 +3348,6 @@ exports[`Storyshots Molecules | Input / Select / MultiSelectList List with diffe
                   >
                     <div
                       className="c12"
-                      width="16px"
                     >
                       <label
                         className="c13 c14 c15"
@@ -3445,7 +3414,6 @@ exports[`Storyshots Molecules | Input / Select / MultiSelectList List with diffe
                   >
                     <div
                       className="c12"
-                      width="16px"
                     >
                       <label
                         className="c13 c14 c15"
@@ -3512,7 +3480,6 @@ exports[`Storyshots Molecules | Input / Select / MultiSelectList List with diffe
                   >
                     <div
                       className="c12"
-                      width="16px"
                     >
                       <label
                         className="c13 c14 c15"
@@ -3579,7 +3546,6 @@ exports[`Storyshots Molecules | Input / Select / MultiSelectList List with diffe
                   >
                     <div
                       className="c12"
-                      width="16px"
                     >
                       <label
                         className="c13 c14 c15"
@@ -3646,7 +3612,6 @@ exports[`Storyshots Molecules | Input / Select / MultiSelectList List with diffe
                   >
                     <div
                       className="c12"
-                      width="16px"
                     >
                       <label
                         className="c13 c14 c15"
@@ -3713,7 +3678,6 @@ exports[`Storyshots Molecules | Input / Select / MultiSelectList List with diffe
                   >
                     <div
                       className="c12"
-                      width="16px"
                     >
                       <label
                         className="c13 c14 c15"
@@ -3780,7 +3744,6 @@ exports[`Storyshots Molecules | Input / Select / MultiSelectList List with diffe
                   >
                     <div
                       className="c12"
-                      width="16px"
                     >
                       <label
                         className="c13 c14 c15"
@@ -3847,7 +3810,6 @@ exports[`Storyshots Molecules | Input / Select / MultiSelectList List with diffe
                   >
                     <div
                       className="c12"
-                      width="16px"
                     >
                       <label
                         className="c13 c14 c15"
@@ -3914,7 +3876,6 @@ exports[`Storyshots Molecules | Input / Select / MultiSelectList List with diffe
                   >
                     <div
                       className="c12"
-                      width="16px"
                     >
                       <label
                         className="c13 c14 c15"
@@ -3981,7 +3942,6 @@ exports[`Storyshots Molecules | Input / Select / MultiSelectList List with diffe
                   >
                     <div
                       className="c12"
-                      width="16px"
                     >
                       <label
                         className="c13 c14 c15"
@@ -4048,7 +4008,6 @@ exports[`Storyshots Molecules | Input / Select / MultiSelectList List with diffe
                   >
                     <div
                       className="c12"
-                      width="16px"
                     >
                       <label
                         className="c13 c14 c15"

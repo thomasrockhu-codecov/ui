@@ -1546,7 +1546,7 @@ exports[`Storyshots Molecules / Pagination / Large Controlled Pagination 1`] = `
 
 .c10 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #282823;
+  color: #FFFFFF;
   margin: 0;
   font-weight: 400;
   font-size: 16px;
@@ -1558,17 +1558,17 @@ exports[`Storyshots Molecules / Pagination / Large Controlled Pagination 1`] = `
   color: #282823;
   margin: 0;
   font-weight: 400;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
+  font-size: 16px;
+  line-height: 1.5;
 }
 
 .c14 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #FFFFFF;
+  color: #282823;
   margin: 0;
   font-weight: 400;
-  font-size: 16px;
-  line-height: 1.5;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
 }
 
 .c2 {
@@ -1684,9 +1684,11 @@ exports[`Storyshots Molecules / Pagination / Large Controlled Pagination 1`] = `
   align-items: center;
   background-color: transparent;
   outline: none;
+  background-color: #0046FF;
+  cursor: default;
 }
 
-.c13 {
+.c11 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1705,11 +1707,9 @@ exports[`Storyshots Molecules / Pagination / Large Controlled Pagination 1`] = `
   align-items: center;
   background-color: transparent;
   outline: none;
-  background-color: #0046FF;
-  cursor: default;
 }
 
-.c11 {
+.c13 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1784,8 +1784,8 @@ exports[`Storyshots Molecules / Pagination / Large Controlled Pagination 1`] = `
         className="c8"
       >
         <button
-          aria-disabled={false}
-          aria-label="Go to Page 1"
+          aria-disabled={true}
+          aria-label="Current Page, page: 1"
           className="NormalizedButton__Button-ey7f5x-0 c2 c9"
           onClick={[Function]}
           type="button"
@@ -1804,21 +1804,12 @@ exports[`Storyshots Molecules / Pagination / Large Controlled Pagination 1`] = `
         </button>
       </li>
       <li
-        className="c11"
-      >
-        <span
-          className="c12"
-        >
-          ...
-        </span>
-      </li>
-      <li
         className="c8"
       >
         <button
           aria-disabled={false}
-          aria-label="Go to Page 4"
-          className="NormalizedButton__Button-ey7f5x-0 c2 c9"
+          aria-label="Go to Page 2"
+          className="NormalizedButton__Button-ey7f5x-0 c2 c11"
           onClick={[Function]}
           type="button"
         >
@@ -1827,32 +1818,9 @@ exports[`Storyshots Molecules / Pagination / Large Controlled Pagination 1`] = `
               className="c4"
             >
               <span
-                className="c10"
+                className="c12"
               >
-                4
-              </span>
-            </span>
-          </span>
-        </button>
-      </li>
-      <li
-        className="c8"
-      >
-        <button
-          aria-disabled={true}
-          aria-label="Current Page, page: 5"
-          className="NormalizedButton__Button-ey7f5x-0 c2 c13"
-          onClick={[Function]}
-          type="button"
-        >
-          <span>
-            <span
-              className="c4"
-            >
-              <span
-                className="c14"
-              >
-                5
+                2
               </span>
             </span>
           </span>
@@ -1863,8 +1831,8 @@ exports[`Storyshots Molecules / Pagination / Large Controlled Pagination 1`] = `
       >
         <button
           aria-disabled={false}
-          aria-label="Go to Page 6"
-          className="NormalizedButton__Button-ey7f5x-0 c2 c9"
+          aria-label="Go to Page 3"
+          className="NormalizedButton__Button-ey7f5x-0 c2 c11"
           onClick={[Function]}
           type="button"
         >
@@ -1873,19 +1841,19 @@ exports[`Storyshots Molecules / Pagination / Large Controlled Pagination 1`] = `
               className="c4"
             >
               <span
-                className="c10"
+                className="c12"
               >
-                6
+                3
               </span>
             </span>
           </span>
         </button>
       </li>
       <li
-        className="c11"
+        className="c13"
       >
         <span
-          className="c12"
+          className="c14"
         >
           ...
         </span>
@@ -1896,7 +1864,7 @@ exports[`Storyshots Molecules / Pagination / Large Controlled Pagination 1`] = `
         <button
           aria-disabled={false}
           aria-label="Go to Page 10"
-          className="NormalizedButton__Button-ey7f5x-0 c2 c9"
+          className="NormalizedButton__Button-ey7f5x-0 c2 c11"
           onClick={[Function]}
           type="button"
         >
@@ -1905,7 +1873,7 @@ exports[`Storyshots Molecules / Pagination / Large Controlled Pagination 1`] = `
               className="c4"
             >
               <span
-                className="c10"
+                className="c12"
               >
                 10
               </span>

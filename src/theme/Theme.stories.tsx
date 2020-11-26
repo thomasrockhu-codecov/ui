@@ -7,19 +7,19 @@ import { rawColor } from './theme';
 import colorDocs from './Colors.md';
 import { Display } from '../common/Display';
 
-const Color = styled.div`
+const Color = styled.div<{ $color: string }>`
   width: ${(p) => p.theme.spacing.unit(14)}px;
   height: ${(p) => p.theme.spacing.unit(14)}px;
-  background-color: ${(p) => p.color};
+  background-color: ${(p) => p.$color};
   border: 1px solid #eee;
   display: ;
 `;
 
-const ColorInArray = styled.div`
+const ColorInArray = styled.div<{ $color: string }>`
   width: ${(p) => p.theme.spacing.unit(4)}px;
   height: ${(p) => p.theme.spacing.unit(4)}px;
   padding: 0;
-  background-color: ${(p) => p.color};
+  background-color: ${(p) => p.$color};
   border: 1px solid #eee;
   display: ;
 `;
@@ -27,20 +27,20 @@ const ColorInArray = styled.div`
 const colorWithValue = (color: string | string[]) =>
   typeof color === 'string' ? (
     <>
-      <Color color={color} />
+      <Color $color={color} />
       <div>{color}</div>
     </>
   ) : (
     color.map((c: string) => (
       <Flexbox container gutter={1}>
-        <ColorInArray color={c} />
+        <ColorInArray $color={c} />
         <div>{c}</div>
       </Flexbox>
     ))
   );
 
 export default {
-  title: 'Theme',
+  title: 'Others / Theme',
 };
 
 export const documentation = () => <MD source={colorDocs} />;
@@ -83,7 +83,7 @@ export const colorsPalette = () => {
           title,
           component: (
             <>
-              <Color color={color} />
+              <Color $color={color} />
               <div>{color}</div>
             </>
           ),

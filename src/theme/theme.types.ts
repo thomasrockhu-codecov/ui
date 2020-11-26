@@ -89,6 +89,8 @@ export type ThemeColors<Version extends ThemeColorsVersion> = {
   textLight: RawColor['white'];
   /** gray2 */
   label: RawColor['gray2'];
+  /** brandGreen */
+  bulbBackground: RawColor['brandGreen'];
   /** cta */
   buy: ChangeableColor<RawColor['cta'], RawColor['a11yCta'], Version>;
   /** ctaPressed */
@@ -101,6 +103,10 @@ export type ThemeColors<Version extends ThemeColorsVersion> = {
   bubbleBackground: RawColor['white'];
   /** gray4 */
   bubbleBorder: RawColor['gray4'];
+  /** gray2 */
+  bubbleSecondaryText: RawColor['gray2'];
+  /** gray0 */
+  tableBorder: RawColor['gray0'];
   /** negative */
   sell: ChangeableColor<RawColor['negative'], RawColor['a11yNegative'], Version>;
   /** negativePressed */
@@ -115,6 +121,8 @@ export type ThemeColors<Version extends ThemeColorsVersion> = {
   creditsPiePrimary: RawColor['complementaryPink1'];
   /** creditsPieSecondary */
   creditsPieSecondary: RawColor['complementaryPink2'];
+  /** otherMonthDateText */
+  otherMonthDateText: RawColor['gray4'];
   /** positive */
   positive: ChangeableColor<RawColor['positive'], RawColor['a11yPositive'], Version>;
   /** negative */
@@ -135,6 +143,8 @@ export type ThemeColors<Version extends ThemeColorsVersion> = {
   separator: RawColor['gray0'];
   /** gray0 */
   backgroundDark: RawColor['gray0'];
+  /** gray1 */
+  searchBackground: RawColor['gray1'];
   /** gray3 */
   disabledText: RawColor['gray3'];
   /** gray6 */
@@ -183,6 +193,10 @@ export type ThemeColors<Version extends ThemeColorsVersion> = {
   tableRowBackground: RawColor['white'];
   /** gray7 */
   tableRowHover: RawColor['gray7'];
+  /** gray2 */
+  datePickerWithinRangeBackground: string;
+  /** gray2 */
+  datePickerWithinRangeFade: string;
   /** negative */
   inputBorderError: RawColor['negative'];
   /** positive */
@@ -289,6 +303,8 @@ export type ThemeColors<Version extends ThemeColorsVersion> = {
   progressBarDone: RawColor['positive'];
   /** positive */
   progressBarFailure: RawColor['negative'];
+  /** index */
+  progressBarWarning: RawColor['index'];
   /** cta */
   progressBarActive: RawColor['cta'];
   /** gray4 */

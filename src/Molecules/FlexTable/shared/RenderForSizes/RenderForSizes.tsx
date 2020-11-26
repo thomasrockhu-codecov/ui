@@ -1,15 +1,16 @@
 import React from 'react';
 import {
   ScreenSize,
-  MediaPropsAndSize,
+  ScreenSizePropsAndSize,
   GetMediaQuery,
-  GetScreenMedia,
+  GetPropsForScreenSizes,
   RenderForSizesComponent,
+  ChildWrapperComponent,
 } from './RenderForSizes.types';
 import IsomorphicMedia from '../../../../Atoms/IsomorphicMedia';
 
-export const getScreenMedia: GetScreenMedia = ({ xs, sm, md, lg, xl }) => {
-  const screenMedia = [
+const getPropsForScreenSizes: GetPropsForScreenSizes = ({ xs, sm, md, lg, xl }) =>
+  [
     { size: 'xs' as ScreenSize, ...xs },
     { size: 'sm' as ScreenSize, ...sm },
     { size: 'md' as ScreenSize, ...md },
@@ -19,18 +20,15 @@ export const getScreenMedia: GetScreenMedia = ({ xs, sm, md, lg, xl }) => {
     .filter((media) => Object.keys(media).length > 1)
     .map((_, index, arr) => {
       const sizesUpToNow = arr.slice(0, index + 1);
-      const screenSizeProps = sizesUpToNow.reduce<MediaPropsAndSize>(
+      const screenSizeProps = sizesUpToNow.reduce<ScreenSizePropsAndSize>(
         (acc, values) => ({
           ...acc,
           ...values,
         }),
-        {} as MediaPropsAndSize,
+        {} as ScreenSizePropsAndSize,
       );
       return screenSizeProps;
     });
-
-  return screenMedia;
-};
 
 const getMediaQuery: GetMediaQuery = (theme, currentSize, nextSize) => {
   if (currentSize === 'xs' && nextSize) {
@@ -42,34 +40,35 @@ const getMediaQuery: GetMediaQuery = (theme, currentSize, nextSize) => {
   return theme.media.greaterThan(theme.breakpoints[currentSize]);
 };
 
-export const RenderForSizes: RenderForSizesComponent = ({
-  xs,
-  sm,
-  md,
-  lg,
-  xl,
-  Component,
-  Container,
-}) => {
-  const propsPerMedia = getScreenMedia({ xs, sm, md, lg, xl });
+const ChildWrapper: ChildWrapperComponent = ({ children, ...props }) => <>{children(props)}</>;
+
+export const RenderForSizes: RenderForSizesComponent = ({ xs, sm, md, lg, xl, children }) => {
+  const propsForScreenSizes = getPropsForScreenSizes({ xs, sm, md, lg, xl });
 
   return (
     <>
-      {propsPerMedia.map((props, index, arr) => {
-        const { size } = props;
-        const nextSize = arr[index + 1] ? arr[index + 1].size : null;
-        const component = Component(props);
+      {propsForScreenSizes.map((screenSizeProps, index) => {
+        const { size } = screenSizeProps;
+        const nextSize = propsForScreenSizes[index + 1]
+          ? propsForScreenSizes[index + 1].size
+          : null;
 
         if (size === 'xs' && !nextSize) {
-          const container = Container({ children: component, ...props });
-          return <React.Fragment key={size}>{container}</React.Fragment>;
+          return (
+            <ChildWrapper key={size} {...screenSizeProps}>
+              {children}
+            </ChildWrapper>
+          );
         }
-
-        const as = (({ className }: { className?: string }) =>
-          Container({ children: component, className, ...props })) as React.FC;
-
         return (
-          <IsomorphicMedia key={size} query={(t) => getMediaQuery(t, size, nextSize)} as={as} />
+          <IsomorphicMedia
+            key={size}
+            query={(t) => getMediaQuery(t, size, nextSize)}
+            as={ChildWrapper}
+            {...screenSizeProps}
+          >
+            {children}
+          </IsomorphicMedia>
         );
       })}
     </>

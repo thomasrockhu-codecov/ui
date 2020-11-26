@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Storyshots Molecules | Drawer Default 1`] = `
+exports[`Storyshots Molecules / Drawer Default 1`] = `
 .c6 {
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -188,7 +188,7 @@ exports[`Storyshots Molecules | Drawer Default 1`] = `
             onTouchStart={[Function]}
           >
             <span
-              id="1val-Drawer"
+              id="11val-Drawer"
             >
               <h2
                 className="c1 c2"
@@ -279,7 +279,7 @@ exports[`Storyshots Molecules | Drawer Default 1`] = `
 </div>
 `;
 
-exports[`Storyshots Molecules | Drawer Integration: With FadedScroll 1`] = `
+exports[`Storyshots Molecules / Drawer Integration: With FadedScroll 1`] = `
 .c8 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -562,7 +562,7 @@ exports[`Storyshots Molecules | Drawer Integration: With FadedScroll 1`] = `
             onTouchStart={[Function]}
           >
             <span
-              id="4val-Drawer"
+              id="14val-Drawer"
             >
               <h2
                 className="c1 c2"
@@ -671,7 +671,7 @@ exports[`Storyshots Molecules | Drawer Integration: With FadedScroll 1`] = `
 </div>
 `;
 
-exports[`Storyshots Molecules | Drawer With a custom title 1`] = `
+exports[`Storyshots Molecules / Drawer With a custom title 1`] = `
 .c1 {
   box-sizing: border-box;
   display: -webkit-box;
@@ -892,7 +892,7 @@ exports[`Storyshots Molecules | Drawer With a custom title 1`] = `
             onTouchStart={[Function]}
           >
             <span
-              id="2val-Drawer"
+              id="12val-Drawer"
             >
               <div
                 className="c1"
@@ -976,7 +976,7 @@ exports[`Storyshots Molecules | Drawer With a custom title 1`] = `
 </div>
 `;
 
-exports[`Storyshots Molecules | Drawer With no title 1`] = `
+exports[`Storyshots Molecules / Drawer With no title 1`] = `
 .c4 {
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -1203,7 +1203,7 @@ exports[`Storyshots Molecules | Drawer With no title 1`] = `
 </div>
 `;
 
-exports[`Storyshots Molecules | Drawer With ref story 1`] = `
+exports[`Storyshots Molecules / Drawer With ref story 1`] = `
 .c6 {
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -1391,7 +1391,7 @@ exports[`Storyshots Molecules | Drawer With ref story 1`] = `
             onTouchStart={[Function]}
           >
             <span
-              id="5val-Drawer"
+              id="15val-Drawer"
             >
               <h2
                 className="c1 c2"

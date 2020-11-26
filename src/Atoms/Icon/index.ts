@@ -13,10 +13,13 @@ import { BellInactive } from './components/BellInactive';
 import { BellPlain } from './components/BellPlain';
 import { Bolt } from './components/Bolt';
 import { BrowserWindow } from './components/BrowserWindow';
+import { BulbInCircle } from './components/BulbInCircle';
 import { Calendar } from './components/Calendar';
+import { CalendarTwoRows } from './components/CalendarTwoRows';
 import { CandleSticks } from './components/CandleSticks';
 import { CheckMark } from './components/CheckMark';
 import { CheckMarkCircle } from './components/CheckMarkCircle';
+import { Chevron } from './components/Chevron';
 import { ChevronDown } from './components/ChevronDown';
 import { ChevronLeft } from './components/ChevronLeft';
 import { ChevronRight } from './components/ChevronRight';
@@ -68,6 +71,7 @@ import { Minimize } from './components/Minimize';
 import { Minus } from './components/Minus';
 import { Money } from './components/Money';
 import { Move } from './components/Move';
+import { MoveBig } from './components/MoveBig';
 import { NoFee } from './components/NoFee';
 import { Other } from './components/Other';
 import { Pen } from './components/Pen';
@@ -81,6 +85,12 @@ import { Raising } from './components/Raising';
 import { RealEstate } from './components/RealEstate';
 import { Rtmt } from './components/Rtmt';
 import { Search } from './components/Search';
+import { SellingpointFunds } from './components/SellingpointFunds';
+import { SellingpointGlobal } from './components/SellingpointGlobal';
+import { SellingpointMoney } from './components/SellingpointMoney';
+import { SellingpointRate } from './components/SellingpointRate';
+import { SellingpointShareville } from './components/SellingpointShareville';
+import { SellingpointStocks } from './components/SellingpointStocks';
 import { Shapes } from './components/Shapes';
 import { SharevilleLogo } from './components/SharevilleLogo';
 import { SocialFacebook } from './components/SocialFacebook';
@@ -101,7 +111,9 @@ import { ThreeDots } from './components/ThreeDots';
 import { Trash } from './components/Trash';
 import { TrendlineArrowhead } from './components/TrendlineArrowhead';
 import { Utilities } from './components/Utilities';
+import { WarningCircle } from './components/WarningCircle';
 import { WarningTriangle } from './components/WarningTriangle';
+import { WarningTriangleHollow } from './components/WarningTriangleHollow';
 
 export default {
   AccountNumbers,
@@ -119,10 +131,13 @@ export default {
   BellPlain,
   Bolt,
   BrowserWindow,
+  BulbInCircle,
   Calendar,
+  CalendarTwoRows,
   CandleSticks,
   CheckMark,
   CheckMarkCircle,
+  Chevron,
   ChevronDown,
   ChevronLeft,
   ChevronRight,
@@ -174,6 +189,7 @@ export default {
   Minus,
   Money,
   Move,
+  MoveBig,
   NoFee,
   Other,
   Pen,
@@ -187,6 +203,12 @@ export default {
   RealEstate,
   Rtmt,
   Search,
+  SellingpointFunds,
+  SellingpointGlobal,
+  SellingpointMoney,
+  SellingpointRate,
+  SellingpointShareville,
+  SellingpointStocks,
   Shapes,
   SharevilleLogo,
   SocialFacebook,
@@ -207,5 +229,7 @@ export default {
   Trash,
   TrendlineArrowhead,
   Utilities,
+  WarningCircle,
   WarningTriangle,
+  WarningTriangleHollow,
 };

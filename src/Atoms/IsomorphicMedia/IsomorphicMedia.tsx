@@ -49,10 +49,11 @@ const IsomorphicMedia: React.FunctionComponent<Props> = (props) => {
   const { isServer } = useSSR();
   const As = props.as || 'div';
   const matches = useIsomorphicMedia(props.query);
+  const componentProps = R.omit(['query', 'as'], props);
   // matches === null implies SSR or first client render, also need isServer to verify SSR.
   // Show css fallback in SSR
   if (isServer && matches === null) return <StyledDiv {...props} />;
-  return matches ? <As>{props.children}</As> : null;
+  return matches ? <As {...componentProps} /> : null;
 };
 
 export { IsomorphicMedia, useIsomorphicMedia };

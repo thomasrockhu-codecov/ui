@@ -42,18 +42,18 @@ const Cell: CellComponent = (props) => {
       md={mdTable}
       lg={lgTable}
       xl={xlTable}
-      Container={({ fontSize, children: component, className: mediaClassName }) => (
+    >
+      {({ fontSize, className: mediaClassName }) => (
         <InnerCell
           className={mediaClassName ? `${className} ${mediaClassName}` : className}
           columnId={columnId}
           flexProps={flexProps}
           fontSize={fontSize}
         >
-          {component}
+          {children}
         </InnerCell>
       )}
-      Component={() => children}
-    />
+    </RenderForSizes>
   );
 };
 
