@@ -28,16 +28,16 @@ export const CustomCells = () => {
       justifyContent?: FlexPropsType['justifyContent'];
     }> = ({ children, columnId, flex, currency, justifyContent }) => (
       <FlexTable.Header columnId={columnId} flex={flex} justifyContent={justifyContent} sortable>
-        {({ sortable, sorted, fontSize, onSortClick, sortOrder }) => (
+        {({ sortable, sorted, onSortClick, sortOrder }) => (
           <FlexTable.Header.SortButton onClick={onSortClick}>
             <StyledFlexboxContainer container>
               <FlexTable.CellInlineContainer item>
-                <FlexTable.Header.TextWrapper fontSize={fontSize} sorted={sorted}>
+                <FlexTable.Header.TextWrapper sorted={sorted}>
                   {children}
                 </FlexTable.Header.TextWrapper>
               </FlexTable.CellInlineContainer>
               <Flexbox item>
-                <FlexTable.Header.TextWrapper fontSize={fontSize} sorted={sorted} truncate={false}>
+                <FlexTable.Header.TextWrapper sorted={sorted} truncate={false}>
                   {currency}
                 </FlexTable.Header.TextWrapper>
               </Flexbox>

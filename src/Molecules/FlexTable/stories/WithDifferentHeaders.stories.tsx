@@ -20,14 +20,14 @@ export const DefaultTableHeaders = () => {
   const DefaultTableHeadersExample = () => {
     const CustomisedTableHeader: React.FC = ({ children }) => (
       <FlexTable.Header columnId="column3" sortable>
-        {({ sortable, sorted, fontSize, onSortClick, sortOrder }) => (
+        {({ sortable, sorted, onSortClick, sortOrder }) => (
           <FlexTable.Header.SortButton onClick={onSortClick}>
             <StyledFlexboxContainer container>
               <Flexbox item>
                 <Flag country="SE" inline height={3} />
               </Flexbox>
               <FlexTable.CellInlineContainer item>
-                <FlexTable.Header.TextWrapper fontSize={fontSize} sorted={sorted}>
+                <FlexTable.Header.TextWrapper sorted={sorted}>
                   {children}
                 </FlexTable.Header.TextWrapper>
               </FlexTable.CellInlineContainer>

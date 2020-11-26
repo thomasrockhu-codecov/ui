@@ -1,8 +1,7 @@
 import React, { ReactNode } from 'react';
-import { FontSize, MediaRelatedProps } from '../../../shared/shared.types';
+import { MediaRelatedProps } from '../../../shared/shared.types';
 
-type RenderPropArguments = { fontSize: FontSize };
-export type RenderFunc = (props: RenderPropArguments) => ReactNode;
+export type RenderFunc = () => ReactNode;
 
 type TextWrapperProps = {
   className?: string;

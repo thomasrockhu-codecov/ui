@@ -1,7 +1,7 @@
 import React, { ReactNode } from 'react';
-import { FontSize, Density, FlexPropsType } from '../shared/shared.types';
+import { FlexPropsType } from '../shared/shared.types';
 
-type RenderPropArguments = { density: Density; fontSize: FontSize; columnId: string };
+type RenderPropArguments = { columnId: string };
 type RenderFunc = (props: RenderPropArguments) => ReactNode;
 type Children = ReactNode | RenderFunc;
 
