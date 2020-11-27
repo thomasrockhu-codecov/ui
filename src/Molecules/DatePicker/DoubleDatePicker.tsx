@@ -216,10 +216,13 @@ export const DoubleDatePicker = (React.forwardRef<HTMLDivElement, Props>((props,
     const parsedEndDate = parseDateString(inputValueEnd, locale);
     const startDate = allowedDate(parsedStartDate);
     const endDate = allowedDate(parsedEndDate);
+    if (disallowSingleDayRange && startDate && endDate && isSameDay(startDate, endDate)) {
+      return;
+    }
     setSelectedStartDate(startDate);
     setSelectedEndDate(endDate);
     if (onChange) onChange(startDate, endDate);
-  }, [allowedDate, inputValueEnd, inputValueStart, locale, onChange]);
+  }, [allowedDate, disallowSingleDayRange, inputValueEnd, inputValueStart, locale, onChange]);
 
   const handleInputKeyDown = (event: React.KeyboardEvent<HTMLInputElement>) => {
     switch (event.key) {
