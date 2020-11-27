@@ -5,7 +5,7 @@ import { Box } from '../../../..';
 import { ExpandItems } from '.';
 
 const StyledBox = styled(Box)`
-  background: ${p => p.theme.color.tableRowBackground};
+  background: ${(p) => p.theme.color.tableRowBackground};
 `;
 
 export const ExpandArea: React.FC<ExpandAreaProps> = ({ expandChildren, expandItems }) => (

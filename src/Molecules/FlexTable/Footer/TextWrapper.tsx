@@ -1,25 +1,16 @@
 import React from 'react';
-import { Typography } from '../../..';
 import { TextWrapperComponent } from './Footer.types';
-import { getFontSizeTypographyType } from '../shared/textUtils';
-import { StyledTruncateTooltip } from '../shared';
-import { FontSize } from '../shared/shared.types';
-
-const Text: React.FC<{ fontSize: FontSize; weight: string }> = ({ children, weight, fontSize }) => (
-  <Typography type={getFontSizeTypographyType(fontSize)} color={t => t.color.text} weight={weight}>
-    {children}
-  </Typography>
-);
+import { StyledTruncateTooltip, Text } from '../shared';
 
 export const TextWrapper: TextWrapperComponent = ({
-  fontSize = 'm',
   children,
   weight = 'bold',
   truncate = true,
+  className,
 }) => {
   if (!truncate) {
     return (
-      <Text fontSize={fontSize} weight={weight}>
+      <Text className={className} weight={weight} color={(t) => t.color.text}>
         {children}
       </Text>
     );
@@ -27,7 +18,7 @@ export const TextWrapper: TextWrapperComponent = ({
 
   return (
     <StyledTruncateTooltip label={children}>
-      <Text fontSize={fontSize} weight={weight}>
+      <Text className={className} weight={weight} color={(t) => t.color.text}>
         {children}
       </Text>
     </StyledTruncateTooltip>
