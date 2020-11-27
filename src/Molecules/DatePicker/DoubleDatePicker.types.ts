@@ -17,4 +17,5 @@ export type Props = {
   ref?: React.Ref<HTMLDivElement>;
   yearSelectLength?: number;
   as?: keyof JSX.IntrinsicElements | React.ComponentType<any>;
+  disallowSingleDayRange?: boolean;
 };

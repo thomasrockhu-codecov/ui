@@ -61,6 +61,7 @@ export const DoubleDatePicker = (React.forwardRef<HTMLDivElement, Props>((props,
     width = 78,
     yearSelectLength,
     inputSize,
+    disallowSingleDayRange = false,
   } = props;
 
   assert(Boolean(props.id), `DatePicker: "id" is required.`);
@@ -165,23 +166,21 @@ export const DoubleDatePicker = (React.forwardRef<HTMLDivElement, Props>((props,
         if (selectedStartDate && isBefore(date, selectedStartDate)) return [date, selectedEndDate];
         const swapDate = !selectedEndDate && isBefore(date, selectedStartDate);
         if (swapDate) return [date, selectedStartDate];
-        if (selectedStartDate && isSameDay(date, selectedStartDate)) return [date, null];
-        if (selectedStartDate && selectedEndDate && isSameDay(date, selectedEndDate))
-          return [date, null];
-        if (selectedStartDate) return [selectedStartDate, date];
+        if (selectedStartDate && isSameDay(date, selectedStartDate)) {
+          if (disallowSingleDayRange) {
+            return [selectedStartDate, selectedEndDate];
+          }
+          return [selectedStartDate, selectedStartDate];
+        }
+        if (selectedStartDate && selectedEndDate && isSameDay(date, selectedEndDate)) {
+          if (disallowSingleDayRange) {
+            return [selectedStartDate, selectedEndDate];
+          }
+          return [selectedEndDate, selectedEndDate];
+        }
 
         return [selectedStartDate, date];
       })();
-
-      if (endDate && isSameDay(startDate, endDate)) return;
-      if (
-        selectedStartDate &&
-        isSameDay(startDate, selectedStartDate) &&
-        endDate &&
-        selectedEndDate &&
-        isSameDay(endDate, selectedEndDate)
-      )
-        return;
 
       const rangeDateStringStart = `${format(startDate, dateFormat, options)}`;
       const rangeDateStringEnd = endDate ? `${format(endDate, dateFormat, options)}` : '';
@@ -193,7 +192,7 @@ export const DoubleDatePicker = (React.forwardRef<HTMLDivElement, Props>((props,
 
       if (onChange) onChange(startDate, endDate);
     },
-    [selectedStartDate, dateFormat, options, onChange, selectedEndDate],
+    [dateFormat, options, onChange, selectedStartDate, selectedEndDate, disallowSingleDayRange],
   );
 
   const onDateClick = useCallback(

@@ -72,11 +72,11 @@ export const DisabledInput = () => {
   return <DoubleDatePicker id="disabled-input" label="Disabled input" disabled />;
 };
 
-export const DisallowOneDayRange = () => (
+export const DisallowSingleDayRange = () => (
   <DoubleDatePicker
     id="input-id"
     label="Label"
     onChange={action('Range date')}
-    disallowOneDayRange
+    disallowSingleDayRange
   />
 );
