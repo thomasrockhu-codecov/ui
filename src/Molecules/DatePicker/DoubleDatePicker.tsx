@@ -161,7 +161,7 @@ export const DoubleDatePicker = (React.forwardRef<HTMLDivElement, Props>((props,
   const handleDateClickRange = useCallback(
     (date: Date) => {
       const [startDate, endDate] = ((): [Date, Date | null] => {
-        if (!selectedStartDate) return [date, null];
+        if (!selectedStartDate) return [date, selectedEndDate];
 
         if (selectedStartDate && isBefore(date, selectedStartDate)) return [date, selectedEndDate];
         const swapDate = !selectedEndDate && isBefore(date, selectedStartDate);
