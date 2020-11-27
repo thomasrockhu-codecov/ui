@@ -1,3 +1,38 @@
+# [5.0.0-beta.1](https://github.com/nordnet/ui/compare/v4.11.0...v5.0.0-beta.1@beta) (2020-11-27)
+
+
+### Bug Fixes
+
+* 🐛 bold footer ([9fc6a1a](https://github.com/nordnet/ui/commit/9fc6a1a))
+* 🐛 display value for expand content based on screen size ([475902a](https://github.com/nordnet/ui/commit/475902a))
+* 🐛 expand item truncation ([2a0648b](https://github.com/nordnet/ui/commit/2a0648b))
+* 🐛 remove deprecated fontSize in flextable footer story ([40cbcd9](https://github.com/nordnet/ui/commit/40cbcd9))
+* 🐛 remove non supported md prop from row ([16dd52f](https://github.com/nordnet/ui/commit/16dd52f))
+* 🐛 remove unsupported fontSize prop in types ([4d98bc9](https://github.com/nordnet/ui/commit/4d98bc9))
+
+
+### Features
+
+* 🎸 change flextable api ([9060296](https://github.com/nordnet/ui/commit/9060296))
+* 🎸 header alignment and only get styles for defined props ([99cf7cb](https://github.com/nordnet/ui/commit/99cf7cb))
+* 🎸 hide expand row when table not is not expandable ([02b4edc](https://github.com/nordnet/ui/commit/02b4edc))
+* 🎸 make a generic get styles for sizes function ([40f9fb6](https://github.com/nordnet/ui/commit/40f9fb6))
+* 🎸 migrate footer and bring back text wrappers ([473bd5c](https://github.com/nordnet/ui/commit/473bd5c))
+* 🎸 migrate to generic styles function and new useFlexTable ([f6f7d0f](https://github.com/nordnet/ui/commit/f6f7d0f))
+* 🎸 remove render for sizes for cell component ([a43ac02](https://github.com/nordnet/ui/commit/a43ac02))
+* 🎸 remove render for sizes for expandable row content ([32358e0](https://github.com/nordnet/ui/commit/32358e0))
+* 🎸 sticky header for different screen sizes ([46d34c6](https://github.com/nordnet/ui/commit/46d34c6))
+* 🎸 wip updated flex table hook, fix get styles bug ([7580ca7](https://github.com/nordnet/ui/commit/7580ca7))
+* wip rebuild render for sizes ([e9023af](https://github.com/nordnet/ui/commit/e9023af))
+* wip rebuild render for sizes for expand item ([1011f18](https://github.com/nordnet/ui/commit/1011f18))
+
+
+### BREAKING CHANGES
+
+* 🧨 removed the possibility to use fontSize as a render prop for cell
+content, Row no longer accepts media related props for expandItems and
+expandChildren
+
 # [4.11.0](https://github.com/nordnet/ui/compare/v4.10.7...v4.11.0) (2020-11-24)
 
 
