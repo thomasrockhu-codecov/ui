@@ -9,17 +9,17 @@ import {
   isSameMonth,
   isWithinInterval,
 } from 'date-fns';
-import { Box, Flexbox, Typography } from '../../..';
-import { getCalendar, getLocale } from '../shared/dateUtils';
+import { Box, Flexbox, Typography } from '../../../..';
+import { getCalendar, getLocale } from '../../shared/dateUtils';
+import { FlexProps } from '../../../../Atoms/Flexbox/Flexbox.types';
 import { Props } from './DoubleCalendar.types';
 import {
   NUMBER_OF_VISIBLE_WEEKDAYS_SINGLE,
   NUMBER_OF_VISIBLE_WEEKS_SINGLE,
   NUMBER_OF_VISIBLE_WEEKDAYS_DOUBLE,
   NUMBER_OF_VISIBLE_ROWS_DOUBLE,
-} from './constants';
-import { CalendarDay } from './CalendarDay';
-import { FlexProps } from '../../../Atoms/Flexbox/Flexbox.types';
+} from '../../shared/constants';
+import CalendarDay from '../../shared/components/CalendarDay';
 
 export const StyledBox = styled(Box)`
   border: 1px solid transparent;

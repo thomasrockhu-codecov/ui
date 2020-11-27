@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
 import { action } from '@storybook/addon-actions';
 import { add, isSameWeek } from 'date-fns';
-import { DatePicker } from './DatePicker';
-import { Button } from '../..';
+import DatePicker from './DatePicker';
+import { Button } from '../../..';
 
 export default {
-  title: 'Molecules / DatePicker',
+  title: 'Molecules / DatePicker / DatePicker',
   parameters: {
     component: DatePicker,
   },

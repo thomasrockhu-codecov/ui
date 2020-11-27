@@ -1,48 +1,42 @@
 import { action } from '@storybook/addon-actions';
 import { add, isSameWeek } from 'date-fns';
 import React, { useState } from 'react';
-import DatePicker from '.';
-import { Button, Flexbox } from '../..';
-import { RANGE_DATE_PICKER } from './shared/constants';
+import { Button, Flexbox } from '../../..';
+import DoubleDatePicker from './DoubleDatePicker';
 
 export default {
-  title: 'Molecules / DatePicker / DatePicker with range',
+  title: 'Molecules / DatePicker / DoubleDatePicker',
   parameters: {
-    component: DatePicker,
+    component: DoubleDatePicker,
   },
 };
 
 const dateNow = new Date();
 
 export const Default = () => (
-  <DatePicker
-    id="input-id"
-    variant={RANGE_DATE_PICKER}
-    label="Label"
-    onChange={action('Range date')}
-  />
+  <DoubleDatePicker id="input-id" label="Label" onChange={action('Range date')} variant="DOUBLE" />
 );
 
 export const SameWeekDisabled = () => {
   return (
-    <DatePicker
+    <DoubleDatePicker
       id="disable-dates-input"
-      variant={RANGE_DATE_PICKER}
       label="Disabled dates on same week"
       disableDate={(date) => isSameWeek(dateNow, date)}
       onChange={action('onChange')}
+      variant="DOUBLE"
     />
   );
 };
 
 export const SameWeekEnabled = () => {
   return (
-    <DatePicker
+    <DoubleDatePicker
       id="enable-dates-input"
-      variant={RANGE_DATE_PICKER}
       label="Only enabled dates in same week"
       enableDate={(date) => isSameWeek(dateNow, date)}
       onChange={action('onChange')}
+      variant="DOUBLE"
     />
   );
 };
@@ -61,24 +55,32 @@ export const Controlled = () => {
           <Button onClick={() => setEndDate(add(endDate, { days: 1 }))}>Next End Date</Button>
         </Flexbox>
       </Flexbox>
-      <DatePicker
+      <DoubleDatePicker
         id="controlled"
-        variant={RANGE_DATE_PICKER}
         label="Controlled"
-        selectedDate={startDate}
+        selectedStartDate={startDate}
         selectedEndDate={endDate}
-        onChange={(selectedDate, selectedEndDate) => {
-          setStartDate(selectedDate);
+        onChange={(selectedStartDate, selectedEndDate) => {
+          if (selectedStartDate) setStartDate(selectedStartDate);
           if (selectedEndDate) setEndDate(selectedEndDate);
           action('onChange');
         }}
+        variant="DOUBLE"
       />
     </>
   );
 };
 
 export const DisabledInput = () => {
-  return (
-    <DatePicker id="disabled-input" variant={RANGE_DATE_PICKER} label="Disabled input" disabled />
-  );
+  return <DoubleDatePicker id="disabled-input" label="Disabled input" disabled variant="DOUBLE" />;
 };
+
+export const DisallowSingleDayRange = () => (
+  <DoubleDatePicker
+    id="input-id"
+    label="Label"
+    onChange={action('Range date')}
+    disallowSingleDayRange
+    variant="DOUBLE"
+  />
+);

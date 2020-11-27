@@ -1,8 +1,8 @@
 import React, { useCallback } from 'react';
 import styled from 'styled-components';
 import { format, isToday } from 'date-fns';
-import { Box, Typography } from '../../..';
-import { CalendarDayProps } from './Calendar.types';
+import { Box, Typography } from '../../../../..';
+import { CalendarDayProps } from './CalendarDay.types';
 
 const StyledCalendarDay = styled(Box)<{
   $disabled?: boolean;
@@ -61,7 +61,7 @@ const StyledCalendarDay = styled(Box)<{
 `}
 `;
 
-export const CalendarDay = React.forwardRef<HTMLDivElement, CalendarDayProps>(
+const CalendarDay = React.forwardRef<HTMLDivElement, CalendarDayProps>(
   (
     {
       onFocus,
@@ -122,3 +122,5 @@ export const CalendarDay = React.forwardRef<HTMLDivElement, CalendarDayProps>(
     );
   },
 );
+
+export default CalendarDay;

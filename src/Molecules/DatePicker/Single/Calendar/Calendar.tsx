@@ -2,11 +2,14 @@ import React, { useEffect, useRef } from 'react';
 import styled from 'styled-components';
 import * as R from 'ramda';
 import { addMonths, isSameDay, isSameMonth, isWithinInterval, subMonths } from 'date-fns';
-import { Box, Flexbox, Typography } from '../../..';
-import { getCalendar, getCalendarIndex, getLocale, newDate } from '../shared/dateUtils';
+import { Box, Flexbox, Typography } from '../../../..';
+import { getCalendar, getCalendarIndex, getLocale, newDate } from '../../shared/dateUtils';
 import { Props } from './Calendar.types';
-import { NUMBER_OF_VISIBLE_WEEKDAYS_SINGLE, NUMBER_OF_VISIBLE_WEEKS_SINGLE } from './constants';
-import { CalendarDay } from './CalendarDay';
+import {
+  NUMBER_OF_VISIBLE_WEEKDAYS_SINGLE,
+  NUMBER_OF_VISIBLE_WEEKS_SINGLE,
+} from '../../shared/constants';
+import CalendarDay from '../../shared/components/CalendarDay';
 
 export const StyledBox = styled(Box)`
   border: 1px solid transparent;

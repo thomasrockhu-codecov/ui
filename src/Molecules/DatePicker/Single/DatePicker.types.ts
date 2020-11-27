@@ -1,21 +1,24 @@
+import { REGULAR_DATE_PICKER, RANGE_DATE_PICKER } from '../shared/constants';
+
+type DatePickerVariant = typeof REGULAR_DATE_PICKER | typeof RANGE_DATE_PICKER;
+
 export type Props = {
   ariaLabelPrevious?: string;
   ariaLabelNext?: string;
   open?: boolean;
-  onChange?: (startDate: Date | null, endDate?: Date | null) => void;
+  onChange?: (date: Date, endDate?: Date | null) => void;
   label: string;
   disableDate?: (date: Date) => boolean;
   disabled?: boolean;
   enableDate?: (date: Date) => boolean;
   id: string;
-  selectedStartDate?: Date;
+  selectedDate?: Date;
   selectedEndDate?: Date;
-  inputValueStart?: string;
-  inputValueEnd?: string;
+  inputValue?: string;
+  variant?: DatePickerVariant;
   inputSize?: 's';
   width?: number;
   ref?: React.Ref<HTMLDivElement>;
   yearSelectLength?: number;
   as?: keyof JSX.IntrinsicElements | React.ComponentType<any>;
-  disallowSingleDayRange?: boolean;
 };

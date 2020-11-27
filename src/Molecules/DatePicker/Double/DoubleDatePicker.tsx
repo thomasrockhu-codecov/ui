@@ -8,14 +8,14 @@ import { Props } from './DoubleDatePicker.types';
 /**
  * Imported seperately because when imported in src/index.ts, Input will not have been imported yet and an error will be thrown
  */
-import Input from '../Input';
-import { Box, Icon, DropdownBubble } from '../..';
-import { assert, isUndefined } from '../../common/utils';
-import { useOnClickOutside } from '../../common/Hooks';
-import { newDate, getLocale, getDateFormat, parseDateString } from './shared/dateUtils';
+import Input from '../../Input';
+import { Box, Icon, DropdownBubble } from '../../..';
+import { assert, isUndefined } from '../../../common/utils';
+import { useOnClickOutside } from '../../../common/Hooks';
+import { newDate, getLocale, getDateFormat, parseDateString } from '../shared/dateUtils';
 
-import { DoubleHeader } from './Header';
-import { DoubleCalendar } from './Calendar';
+import DoubleHeader from './Header';
+import DoubleCalendar from './Calendar';
 
 const INPUT_SPACING = 4;
 
@@ -43,7 +43,7 @@ const StyledDropdownBubbleWrapper = styled.div`
   position: absolute;
 `;
 
-export const DoubleDatePicker = (React.forwardRef<HTMLDivElement, Props>((props, ref) => {
+const DoubleDatePicker = (React.forwardRef<HTMLDivElement, Props>((props, ref) => {
   const {
     ariaLabelPrevious,
     ariaLabelNext,
@@ -348,3 +348,5 @@ export const DoubleDatePicker = (React.forwardRef<HTMLDivElement, Props>((props,
     </div>
   );
 }) as any) as React.FC<Props> & {};
+
+export default DoubleDatePicker;

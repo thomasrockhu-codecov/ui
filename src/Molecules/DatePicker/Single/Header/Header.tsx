@@ -3,10 +3,10 @@ import format from 'date-fns/format';
 import sub from 'date-fns/sub';
 import add from 'date-fns/add';
 import { Props } from './Header.types';
-import { Box, Flexbox, Link, Icon } from '../../..';
-import { getLocale } from '../shared/dateUtils';
-import SelectMonth from '../SelectMonth';
-import SelectYear from '../SelectYear';
+import { Box, Flexbox, Link, Icon } from '../../../..';
+import { getLocale } from '../../shared/dateUtils';
+import SelectMonth from '../../shared/components/SelectMonth';
+import SelectYear from '../../shared/components/SelectYear';
 
 const Header: React.FC<Props> = ({
   ariaLabelPrevious = 'Previous month {date}',

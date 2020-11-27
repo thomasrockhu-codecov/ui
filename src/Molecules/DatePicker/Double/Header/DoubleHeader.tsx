@@ -2,11 +2,11 @@ import React from 'react';
 import styled from 'styled-components';
 import format from 'date-fns/format';
 import { addMonths, subMonths } from 'date-fns';
-import { Props } from './Header.types';
-import { Box, Flexbox, Link, Icon } from '../../..';
-import { getLocale } from '../shared/dateUtils';
-import SelectMonth from '../SelectMonth';
-import SelectYear from '../SelectYear';
+import { Props } from './DoubleHeader.types';
+import { Box, Flexbox, Link, Icon } from '../../../..';
+import { getLocale } from '../../shared/dateUtils';
+import SelectMonth from '../../shared/components/SelectMonth';
+import SelectYear from '../../shared/components/SelectYear';
 
 const YearMonthContainer = styled(Flexbox)`
   width: ${({ theme }) => theme.spacing.unit(76)}px;

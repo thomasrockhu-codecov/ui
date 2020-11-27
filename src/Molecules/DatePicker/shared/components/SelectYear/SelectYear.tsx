@@ -4,9 +4,9 @@ import { Props } from './SelectYear.types';
 /**
  * Imported seperately because when imported in src/index.ts, Input will not have been imported yet and error will be thrown
  */
-import Input from '../../Input';
-import { Box, Flexbox, Icon, Typography } from '../../..';
-import { newDate } from '../shared/dateUtils';
+import Input from '../../../../Input';
+import { Box, Flexbox, Icon, Typography } from '../../../../..';
+import { newDate } from '../../dateUtils';
 
 /* using styled like this as a workaround for 
  Select.test.tsx failing because Input.Select is undefined */
