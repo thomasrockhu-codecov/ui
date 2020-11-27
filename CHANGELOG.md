@@ -1,3 +1,15 @@
+# [4.12.0](https://github.com/nordnet/ui/compare/v4.11.0...v4.12.0) (2020-11-27)
+
+
+### Bug Fixes
+
+* 🐛 adjust icons with incorrect paths ([6911b32](https://github.com/nordnet/ui/commit/6911b32))
+
+
+### Features
+
+* 🎸 add props to remove top/bot padding from CardWithTitle ([45ad3db](https://github.com/nordnet/ui/commit/45ad3db))
+
 # [4.11.0](https://github.com/nordnet/ui/compare/v4.10.7...v4.11.0) (2020-11-24)
 
 
