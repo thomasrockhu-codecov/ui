@@ -1,4 +1,5 @@
 import React from 'react';
+import styled from 'styled-components';
 import format from 'date-fns/format';
 import { addMonths, subMonths } from 'date-fns';
 import { Props } from './Header.types';
@@ -6,6 +7,15 @@ import { Box, Flexbox, Link, Icon } from '../../..';
 import { getLocale } from '../shared/dateUtils';
 import SelectMonth from '../SelectMonth';
 import SelectYear from '../SelectYear';
+
+const YearMonthContainer = styled(Flexbox)`
+  width: ${({ theme }) => theme.spacing.unit(76)}px;
+`;
+
+const ChevronContainer = styled(Box)<{ $align: 'left' | 'right' }>`
+  position: absolute;
+  ${({ $align, theme }) => `${$align}: ${theme.spacing.unit(2)}px;`}
+`;
 
 const DoubleHeader: React.FC<Props> = ({
   ariaLabelPrevious = 'Previous month {date}',
@@ -36,18 +46,18 @@ const DoubleHeader: React.FC<Props> = ({
 
   return (
     <Flexbox container justifyContent="space-between">
-      <Box mt={1}>
-        <Link
-          aria-label={ariaLabelPreviousText}
-          data-testid="datepicker-arrow-left"
-          onClick={() => {
-            onMonthChange(viewedDate.getMonth() - 1);
-          }}
-        >
-          <Icon.ThinChevron size={4} direction="left" />
-        </Link>
-      </Box>
-      <Flexbox container item justifyContent="space-around" flex="1">
+      <YearMonthContainer container justifyContent="center" flex="1">
+        <ChevronContainer mt={1} $align="left">
+          <Link
+            aria-label={ariaLabelPreviousText}
+            data-testid="datepicker-arrow-left"
+            onClick={() => {
+              onMonthChange(viewedDate.getMonth() - 1);
+            }}
+          >
+            <Icon.ThinChevron size={4} direction="left" />
+          </Link>
+        </ChevronContainer>
         <Flexbox container item>
           <SelectMonth
             id={`${id}-left`}
@@ -63,7 +73,9 @@ const DoubleHeader: React.FC<Props> = ({
             onChange={onYearChange}
           />
         </Flexbox>
+      </YearMonthContainer>
 
+      <YearMonthContainer container justifyContent="center" flex="1">
         <Flexbox container item>
           <SelectMonth
             id={`${id}-right`}
@@ -79,18 +91,18 @@ const DoubleHeader: React.FC<Props> = ({
             onChange={onYearChange}
           />
         </Flexbox>
-      </Flexbox>
-      <Box mt={1}>
-        <Link
-          aria-label={ariaLabelNextText}
-          data-testid="datepicker-arrow-right"
-          onClick={() => {
-            onMonthChange(viewedDate.getMonth() + 1);
-          }}
-        >
-          <Icon.ThinChevron size={4} direction="right" />
-        </Link>
-      </Box>
+        <ChevronContainer $align="right" mt={1}>
+          <Link
+            aria-label={ariaLabelNextText}
+            data-testid="datepicker-arrow-right"
+            onClick={() => {
+              onMonthChange(viewedDate.getMonth() + 1);
+            }}
+          >
+            <Icon.ThinChevron size={4} direction="right" />
+          </Link>
+        </ChevronContainer>
+      </YearMonthContainer>
     </Flexbox>
   );
 };
