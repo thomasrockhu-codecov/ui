@@ -2,7 +2,7 @@ import React from 'react';
 import { render, fireEvent, cleanup } from '@testing-library/react';
 import '@testing-library/jest-dom/extend-expect';
 import { advanceTo, clear } from 'jest-date-mock';
-import DatePicker from '../Single/DatePicker';
+import { DatePicker } from '../../..';
 import { PageProviders } from '../../../common/testUtils';
 import theme from '../../../theme';
 
