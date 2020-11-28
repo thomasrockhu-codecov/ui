@@ -3,7 +3,8 @@ export type Props = {
   ariaLabelNext?: string;
   open?: boolean;
   onChange?: (startDate: Date | null, endDate?: Date | null) => void;
-  label: string;
+  labelFrom: string;
+  labelTo?: string;
   disableDate?: (date: Date) => boolean;
   disabled?: boolean;
   enableDate?: (date: Date) => boolean;

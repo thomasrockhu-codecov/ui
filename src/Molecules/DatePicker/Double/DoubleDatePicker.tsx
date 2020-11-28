@@ -48,7 +48,8 @@ const DoubleDatePicker = (React.forwardRef<HTMLDivElement, Props>((props, ref) =
     ariaLabelPrevious,
     ariaLabelNext,
     onChange,
-    label,
+    labelFrom,
+    labelTo,
     disabled,
     disableDate,
     enableDate,
@@ -310,7 +311,7 @@ const DoubleDatePicker = (React.forwardRef<HTMLDivElement, Props>((props, ref) =
     <div ref={(ref || selfRef) as React.Ref<HTMLDivElement>}>
       <StyledInputTextLeft
         size={inputSize}
-        label={label}
+        label={labelFrom}
         disabled={disabled}
         id={INPUT_ID_START}
         data-testid="datepicker-input-start"
@@ -326,7 +327,7 @@ const DoubleDatePicker = (React.forwardRef<HTMLDivElement, Props>((props, ref) =
       />
       <StyledInputTextRight
         size={inputSize}
-        label={label}
+        label={labelTo}
         disabled={disabled}
         id={INPUT_ID_END}
         data-testid="datepicker-input-end"
