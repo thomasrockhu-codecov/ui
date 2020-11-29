@@ -173,7 +173,7 @@ exports[`Storyshots Molecules / DatePicker / Unified Double 1`] = `
         <div
           className="c4"
         >
-          Default 
+          Date from 
         </div>
         <span
           className="c5"
@@ -185,7 +185,7 @@ exports[`Storyshots Molecules / DatePicker / Unified Double 1`] = `
               autoComplete="off"
               className="NormalizedInput__Input-sc-1m4kmh9-0 c7"
               data-testid="datepicker-input-start"
-              id="input-id-start"
+              id="double-datepicker-start"
               onBlur={[Function]}
               onChange={[Function]}
               onFocus={[Function]}
@@ -231,7 +231,7 @@ exports[`Storyshots Molecules / DatePicker / Unified Double 1`] = `
         <div
           className="c4"
         >
-          Default 
+          Date to 
         </div>
         <span
           className="c5"
@@ -243,7 +243,7 @@ exports[`Storyshots Molecules / DatePicker / Unified Double 1`] = `
               autoComplete="off"
               className="NormalizedInput__Input-sc-1m4kmh9-0 c7"
               data-testid="datepicker-input-end"
-              id="input-id-end"
+              id="double-datepicker-end"
               onBlur={[Function]}
               onChange={[Function]}
               onFocus={[Function]}
@@ -446,7 +446,7 @@ exports[`Storyshots Molecules / DatePicker / Unified Range 1`] = `
         <div
           className="c4"
         >
-          Default 
+          Range 
         </div>
         <span
           className="c5"
@@ -458,7 +458,7 @@ exports[`Storyshots Molecules / DatePicker / Unified Range 1`] = `
               autoComplete="off"
               className="NormalizedInput__Input-sc-1m4kmh9-0 c7"
               data-testid="datepicker-input"
-              id="input-id"
+              id="range-datepicker"
               onChange={[Function]}
               onFocus={[Function]}
               onKeyDown={[Function]}
@@ -493,7 +493,7 @@ exports[`Storyshots Molecules / DatePicker / Unified Range 1`] = `
 </div>
 `;
 
-exports[`Storyshots Molecules / DatePicker / Unified Single 1`] = `
+exports[`Storyshots Molecules / DatePicker / Unified Regular 1`] = `
 .c4 {
   box-sizing: border-box;
   display: -webkit-box;
@@ -660,7 +660,7 @@ exports[`Storyshots Molecules / DatePicker / Unified Single 1`] = `
         <div
           className="c4"
         >
-          Default 
+          Regular 
         </div>
         <span
           className="c5"
@@ -672,7 +672,7 @@ exports[`Storyshots Molecules / DatePicker / Unified Single 1`] = `
               autoComplete="off"
               className="NormalizedInput__Input-sc-1m4kmh9-0 c7"
               data-testid="datepicker-input"
-              id="input-id"
+              id="regular-datepicker"
               onChange={[Function]}
               onFocus={[Function]}
               onKeyDown={[Function]}

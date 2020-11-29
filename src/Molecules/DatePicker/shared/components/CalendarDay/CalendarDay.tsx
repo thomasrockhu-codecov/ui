@@ -108,6 +108,7 @@ const CalendarDay = React.forwardRef<HTMLDivElement, CalendarDayProps>(
         $isSameMonth={sameMonth}
         $isFirstDay={isFirstDay}
         $isLastDay={isLastDay}
+        data-testid={`${format(date, 'MMMM d', { locale })}`}
         onClick={handleOnClick}
         onKeyDown={onKeyDown}
         onFocus={onFocus}
