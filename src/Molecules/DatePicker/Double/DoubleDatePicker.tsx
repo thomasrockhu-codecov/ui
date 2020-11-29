@@ -49,7 +49,7 @@ const DoubleDatePicker = (React.forwardRef<HTMLDivElement, Props>((props, ref) =
     ariaLabelNext,
     onChange,
     labelFrom,
-    labelTo,
+    labelTo = '',
     disabled,
     disableDate,
     enableDate,
