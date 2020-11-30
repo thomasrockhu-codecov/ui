@@ -1,27 +1,10 @@
-import { REGULAR_DATE_PICKER, RANGE_DATE_PICKER, DOUBLE_DATE_PICKER } from './shared/constants';
+import { Props as SingleDatePickerProps } from './Single/DatePicker.types';
+import { Props as DoubleDatePickerProps } from './Double/DoubleDatePicker.types';
 
-type DatePickerVariant =
-  | typeof REGULAR_DATE_PICKER
-  | typeof RANGE_DATE_PICKER
-  | typeof DOUBLE_DATE_PICKER;
+export { SingleDatePickerProps, DoubleDatePickerProps };
 
-export type Props = {
-  ariaLabelPrevious?: string;
-  ariaLabelNext?: string;
-  open?: boolean;
-  onChange?: (date: Date, endDate?: Date | null) => void;
-  label: string;
-  disableDate?: (date: Date) => boolean;
-  disabled?: boolean;
-  enableDate?: (date: Date) => boolean;
-  id: string;
-  selectedDate?: Date;
-  selectedEndDate?: Date;
-  inputValue?: string;
-  variant?: DatePickerVariant;
-  inputSize?: 's';
-  width?: number;
-  ref?: React.Ref<HTMLDivElement>;
-  yearSelectLength?: number;
-  as?: keyof JSX.IntrinsicElements | React.ComponentType<any>;
-};
+export type DatePickerComponentType =
+  | React.FC<SingleDatePickerProps>
+  | React.FC<DoubleDatePickerProps>;
+
+export type DatePickerComponent = React.FC<SingleDatePickerProps | DoubleDatePickerProps>;

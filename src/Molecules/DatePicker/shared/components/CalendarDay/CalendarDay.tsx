@@ -1,8 +1,9 @@
 import React, { useCallback } from 'react';
 import styled from 'styled-components';
 import { format, isToday } from 'date-fns';
-import { Box, Typography } from '../../..';
-import { CalendarDayProps } from './Calendar.types';
+import { Box, Typography } from '../../../../..';
+import { CalendarDayProps } from './CalendarDay.types';
+import { DOUBLE_CALENDAR_GUTTER } from '../../constants';
 
 const StyledCalendarDay = styled(Box)<{
   $disabled?: boolean;
@@ -12,11 +13,13 @@ const StyledCalendarDay = styled(Box)<{
   $isSameMonth?: boolean;
   $isFirstDay?: boolean;
   $isLastDay?: boolean;
+  $withGutter?: boolean;
 }>`
   background: ${({ theme }) => theme.color.backgroundInput};
   min-width: ${({ theme }) => theme.spacing.unit(10) + 2}px;
   min-height: ${({ theme }) => theme.spacing.unit(10) + 2}px;
   margin: ${({ theme }) => theme.spacing.unit(0.5)}px 0;
+  ${({ $withGutter }) => ($withGutter ? `margin-right: ${DOUBLE_CALENDAR_GUTTER}px;` : '')}
   justify-content: center;
   align-items: center;
   display: flex;
@@ -59,7 +62,7 @@ const StyledCalendarDay = styled(Box)<{
 `}
 `;
 
-export const CalendarDay = React.forwardRef<HTMLDivElement, CalendarDayProps>(
+const CalendarDay = React.forwardRef<HTMLDivElement, CalendarDayProps>(
   (
     {
       onFocus,
@@ -74,6 +77,7 @@ export const CalendarDay = React.forwardRef<HTMLDivElement, CalendarDayProps>(
       isWithinRange = false,
       isFirstDay = false,
       isLastDay = false,
+      withGutter,
     },
     ref,
   ) => {
@@ -105,11 +109,13 @@ export const CalendarDay = React.forwardRef<HTMLDivElement, CalendarDayProps>(
         $isSameMonth={sameMonth}
         $isFirstDay={isFirstDay}
         $isLastDay={isLastDay}
+        data-testid={`${format(date, 'MMMM d', { locale })}`}
         onClick={handleOnClick}
         onKeyDown={onKeyDown}
         onFocus={onFocus}
         aria-label={ariaLabel}
         tabIndex={disabled ? -1 : 0} // should not be focusable if disabled
+        $withGutter={withGutter}
       >
         <Typography type="tertiary" aria-hidden color={(t) => t.color[textColor || 'text']}>
           {format(date, 'd')}
@@ -118,3 +124,5 @@ export const CalendarDay = React.forwardRef<HTMLDivElement, CalendarDayProps>(
     );
   },
 );
+
+export default CalendarDay;

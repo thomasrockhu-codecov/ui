@@ -31,7 +31,7 @@ const dateFormat = {
   en: 'dd/MM/yyyy',
 };
 
-const locales: { [key: string]: any } = {
+const locales: { [key: string]: Locale } = {
   sv: svLocale,
   nb: nbLocale,
   da: daLocale,
@@ -39,7 +39,7 @@ const locales: { [key: string]: any } = {
   en: enLocale,
 };
 
-export const getLocale = (locale: string = ''): any => {
+export const getLocale = (locale: string = ''): Locale => {
   if (locales[locale]) {
     return locales[locale];
   }
@@ -47,7 +47,7 @@ export const getLocale = (locale: string = ''): any => {
   return locales.en;
 };
 
-export const getDateFormat = (locale: string = ''): any => {
+export const getDateFormat = (locale: string = ''): string => {
   if (dateFormat[locale]) {
     return dateFormat[locale];
   }
@@ -59,16 +59,17 @@ export const isValid = (date: Date) => {
   return isValidDate(date) && isAfter(date, new Date('1/1/1000'));
 };
 
-export const newDate = (value: any = new Date()): Date => {
-  const d =
-    typeof value === 'string' || value instanceof String
-      ? parseISO(value as string)
-      : toDate(value);
+function isString(value: any): value is string {
+  return typeof value === 'string' || value instanceof String;
+}
+
+export const newDate = (value: string | Date | number = new Date()): Date => {
+  const d = isString(value) ? parseISO(value) : toDate(value);
   return isValid(d) ? d : new Date();
 };
 
 export const parseDateString = (dateString: string, locale?: string): null | Date => {
-  if (!isMatch(dateString, getDateFormat(locale), getLocale(locale))) return null;
+  if (!isMatch(dateString, getDateFormat(locale), { locale: getLocale(locale) })) return null;
 
   const date = parse(dateString, getDateFormat(locale), newDate());
 

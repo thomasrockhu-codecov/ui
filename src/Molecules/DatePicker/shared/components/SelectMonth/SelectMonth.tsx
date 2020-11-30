@@ -1,15 +1,16 @@
 import React, { useMemo, useState } from 'react';
 import format from 'date-fns/format';
 import styled, { useTheme } from 'styled-components';
-import { getLocale } from '../shared/dateUtils';
+import { getLocale } from '../../dateUtils';
 import { Props } from './SelectMonth.types';
 
 /**
  * Imported seperately because when imported in src/index.ts, Input will not have been imported yet and error will be thrown
  */
-import Input from '../../Input';
-import { Box, Icon, Flexbox, Typography } from '../../..';
-import { capitalize } from '../shared/textUtils';
+import Input from '../../../../Input';
+import { Box, Icon, Flexbox, Typography } from '../../../../..';
+import { capitalize } from '../../textUtils';
+import { Theme } from '../../../../../theme/theme.types';
 
 const months = [...Array(12).keys()];
 
@@ -46,9 +47,9 @@ const SelectMonth: React.FC<Props> = ({ id, locale, viewedDate, onChange }) => {
         let icon = null;
 
         if ((state.value as any).open === 'on') {
-          icon = <Icon.ChevronUp size={2} color={(t: any) => t.color.black} />;
+          icon = <Icon.ChevronUp size={2} color={(t: Theme) => t.color.svgFill} />;
         } else if (isHover) {
-          icon = <Icon.ChevronDown size={2} color={(t: any) => t.color.cta} />;
+          icon = <Icon.ChevronDown size={2} color={(t: Theme) => t.color.cta} />;
         } else {
           icon = <Box px={1} />;
         }
