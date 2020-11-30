@@ -2,6 +2,8 @@ export const REGULAR_DATE_PICKER = 'REGULAR';
 export const RANGE_DATE_PICKER = 'RANGE';
 export const DOUBLE_DATE_PICKER = 'DOUBLE';
 
+export const DEFAULT_INPUT_WIDTH = 78;
+
 export const NUMBER_OF_VISIBLE_WEEKS_SINGLE = 6;
 export const NUMBER_OF_VISIBLE_WEEKDAYS_SINGLE = 7;
 export const NUMBER_OF_VISIBLE_ROWS_DOUBLE = 6;

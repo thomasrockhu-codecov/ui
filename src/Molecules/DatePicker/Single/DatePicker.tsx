@@ -21,7 +21,7 @@ import {
 } from '../shared/dateUtils';
 import Header from './Header';
 import Calendar from './Calendar';
-import { RANGE_DATE_PICKER, REGULAR_DATE_PICKER } from '../shared/constants';
+import { RANGE_DATE_PICKER, REGULAR_DATE_PICKER, DEFAULT_INPUT_WIDTH } from '../shared/constants';
 
 const StyledInputText = styled(Input.Text)`
   z-index: 1;
@@ -56,7 +56,7 @@ const DatePicker = (React.forwardRef<HTMLDivElement, Props>((props, ref) => {
     selectedEndDate: selectedEndDateProp,
     inputValue: inputValueProp,
     variant = REGULAR_DATE_PICKER,
-    width = 78,
+    width = DEFAULT_INPUT_WIDTH,
     yearSelectLength,
     inputSize,
   } = props;
