@@ -1,8 +1,12 @@
 import React from 'react';
 import DoubleDatePicker from './Double';
-import DatePicker from './Single';
+import SingleDatePicker from './Single';
 import { DOUBLE_DATE_PICKER } from './shared/constants';
-import { SingleDatePickerProps, DoubleDatePickerProps } from './DatePicker.types';
+import {
+  DatePickerComponent,
+  SingleDatePickerProps,
+  DoubleDatePickerProps,
+} from './DatePicker.types';
 
 export function isDoubleDatePicker(
   props: SingleDatePickerProps | DoubleDatePickerProps,
@@ -10,11 +14,11 @@ export function isDoubleDatePicker(
   return props.variant === DOUBLE_DATE_PICKER;
 }
 
-const DatePickerComponent = (props: SingleDatePickerProps | DoubleDatePickerProps) => {
+const DatePicker: DatePickerComponent = (props: SingleDatePickerProps | DoubleDatePickerProps) => {
   if (isDoubleDatePicker(props)) {
     return <DoubleDatePicker {...props} />;
   }
-  return <DatePicker {...props} />;
+  return <SingleDatePicker {...props} />;
 };
 
-export default DatePickerComponent;
+export default DatePicker;

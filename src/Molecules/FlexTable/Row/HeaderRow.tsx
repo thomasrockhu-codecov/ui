@@ -4,24 +4,64 @@ import Row from './Row';
 import { HeaderRowComponent } from './Row.types';
 import { ColorFn } from '../../../common/Types/sharedTypes';
 import { useFlexTable } from '../shared/FlexTableProvider';
+import { getStylesForSizes } from '../shared';
 
-const StyledHeaderRow = styled(Row).withConfig({
-  shouldForwardProp: (prop) =>
-    !['hideSeparator', 'separatorColor', 'sticky', 'stickyOffsetTop'].includes(prop),
-})<{
-  hideSeparator: boolean;
-  separatorColor: ColorFn;
-  sticky: boolean;
+const getStickyHeaderStyles = ({
+  stickyHeader,
+  stickyOffsetTop,
+}: {
+  stickyHeader: boolean;
   stickyOffsetTop: number;
-}>`
-  ${(p) =>
-    p.sticky
-      ? `
-        z-index: 1;
-        position: sticky;
-        top: ${p.stickyOffsetTop}px;`
-      : ''};
-  ${(p) => (!p.hideSeparator ? `border-bottom: 1px solid ${p.separatorColor(p.theme)}` : '')};
+}) => {
+  if (stickyHeader) {
+    return `
+      z-index: 1;
+      position: sticky;
+      top: ${stickyOffsetTop}px;
+    `;
+  }
+
+  return `
+      z-index: 0;
+      position: static;
+      top: unset;
+    `;
+};
+
+type ScreenSizeConfigurableProps = { stickyHeader: boolean };
+
+type StyledHeaderProps = {
+  $hideSeparator: boolean;
+  $separatorColor: ColorFn;
+  $xs: ScreenSizeConfigurableProps;
+  $sm: Partial<ScreenSizeConfigurableProps>;
+  $md: Partial<ScreenSizeConfigurableProps>;
+  $lg: Partial<ScreenSizeConfigurableProps>;
+  $xl: Partial<ScreenSizeConfigurableProps>;
+  $stickyOffsetTop: number;
+};
+
+const StyledHeaderRow = styled(Row)<StyledHeaderProps>`
+  ${(p) => (!p.$hideSeparator ? `border-bottom: 1px solid ${p.$separatorColor(p.theme)};` : '')}
+
+  ${getStylesForSizes<
+    {
+      stickyOffsetTop: number;
+    },
+    ScreenSizeConfigurableProps
+  >(
+    (p: StyledHeaderProps) => ({
+      stickyOffsetTop: p.$stickyOffsetTop,
+      xs: p.$xs,
+      sm: p.$sm,
+      md: p.$md,
+      lg: p.$lg,
+      xl: p.$xl,
+    }),
+    {
+      stickyHeader: getStickyHeaderStyles,
+    },
+  )}
 `;
 
 export const HeaderRow: HeaderRowComponent = ({
@@ -32,17 +72,20 @@ export const HeaderRow: HeaderRowComponent = ({
   stickyOffsetTop = 0,
   ...htmlProps
 }) => {
-  const { stickyHeader } = useFlexTable();
-
+  const { xs, sm, md, lg, xl } = useFlexTable<'stickyHeader'>('stickyHeader');
   return (
     <StyledHeaderRow
       className={className}
       hoverHighlight={false}
-      hideSeparator={hideSeparator}
-      isContent={false}
-      separatorColor={separatorColor}
-      sticky={stickyHeader}
-      stickyOffsetTop={stickyOffsetTop}
+      rowType="header"
+      $hideSeparator={hideSeparator}
+      $separatorColor={separatorColor}
+      $stickyOffsetTop={stickyOffsetTop}
+      $xs={xs}
+      $sm={sm}
+      $md={md}
+      $lg={lg}
+      $xl={xl}
       {...htmlProps}
     >
       {children}

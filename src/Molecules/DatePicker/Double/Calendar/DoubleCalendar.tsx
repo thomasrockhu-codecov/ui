@@ -18,6 +18,7 @@ import {
   NUMBER_OF_VISIBLE_WEEKS_SINGLE,
   NUMBER_OF_VISIBLE_WEEKDAYS_DOUBLE,
   NUMBER_OF_VISIBLE_ROWS_DOUBLE,
+  DOUBLE_CALENDAR_GUTTER,
 } from '../../shared/constants';
 import CalendarDay from '../../shared/components/CalendarDay';
 
@@ -33,11 +34,11 @@ const HiddenDate = styled.div<{ $withGutter?: boolean }>`
   min-width: ${({ theme }) => theme.spacing.unit(10) + 2}px;
   min-height: ${({ theme }) => theme.spacing.unit(10) + 2}px;
   margin: ${({ theme }) => theme.spacing.unit(0.5)}px 0;
-  ${({ $withGutter = false }) => ($withGutter ? 'margin-right: 34px;' : '')}
+  ${({ $withGutter }) => ($withGutter ? `margin-right: ${DOUBLE_CALENDAR_GUTTER}px;` : '')}
 `;
 
 const StyledCalendarContainer = styled(Flexbox)<FlexProps & { $withGutter: boolean }>`
-  ${({ $withGutter = false }) => ($withGutter ? 'margin-right: 34px;' : '')}
+  ${({ $withGutter }) => ($withGutter ? `margin-right: ${DOUBLE_CALENDAR_GUTTER}px;` : '')}
 `;
 
 const DoubleCalendar: React.FC<Props> = ({
@@ -57,8 +58,8 @@ const DoubleCalendar: React.FC<Props> = ({
   const focusedDateObjRef = useRef<Date | null>(null);
 
   const dateIsDisabled = (dateToCheck: Date | null) => {
-    const isEnabled = dateToCheck && enableDate && enableDate(dateToCheck);
-    const isDisabled = dateToCheck && disableDate && disableDate(dateToCheck);
+    const isEnabled = dateToCheck && enableDate?.(dateToCheck);
+    const isDisabled = dateToCheck && disableDate?.(dateToCheck);
 
     if (R.isNil(isEnabled) && R.isNil(isDisabled)) return false;
     if (R.isNil(isEnabled)) return isDisabled;

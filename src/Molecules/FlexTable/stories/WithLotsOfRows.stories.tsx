@@ -4,13 +4,13 @@ import styled from 'styled-components';
 import { FixedSizeList as List } from 'react-window';
 import AutoSizer from 'react-virtualized-auto-sizer';
 import { number } from '@storybook/addon-knobs';
-import FlexTable from './FlexTable';
-import { Typography, Box } from '../..';
-import docs from './FlexTable.mdx';
+import FlexTable from '../FlexTable';
+import { Typography, Box } from '../../..';
+import docs from '../FlexTable.mdx';
 import { StyledBackground } from './storiesShared';
 
 export default {
-  title: 'Molecules / FlexTable / Big FlexTables example',
+  title: 'Molecules / FlexTable / With lots of rows',
 
   parameters: {
     component: FlexTable,
@@ -40,7 +40,7 @@ const BigTableRow = ({ data }: any) => {
     {},
   );
   return (
-    <FlexTable.Row expandItems={expandItems} md={{ expandItems: [] }}>
+    <FlexTable.Row expandItems={expandItems}>
       {Object.keys(R.omit(['rowId'], data)).map((valueKey, index) => (
         <FlexTable.Cell
           key={data[valueKey].id}
@@ -58,7 +58,7 @@ const BigTableRow = ({ data }: any) => {
 export const BigTable = () => {
   const BigTableExample = () => {
     const ReactComponent = () => {
-      const rowsLength = number('Number of rows', 500);
+      const rowsLength = number('Number of rows', 100);
       const columnsLength = number('Number of columns', 10);
       const [sort, setSort] = useState<any>({});
       const tableData = useMemo(() => generateTableData(rowsLength, columnsLength), [

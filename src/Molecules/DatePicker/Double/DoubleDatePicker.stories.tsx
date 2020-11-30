@@ -2,19 +2,19 @@ import { action } from '@storybook/addon-actions';
 import { add, isSameWeek } from 'date-fns';
 import React, { useState } from 'react';
 import { Button, Flexbox } from '../../..';
-import DoubleDatePicker from './DoubleDatePicker';
+import DatePicker from '../DatePicker';
 
 export default {
-  title: 'Molecules / DatePicker / DoubleDatePicker',
+  title: 'Molecules / DatePicker / Double DatePicker',
   parameters: {
-    component: DoubleDatePicker,
+    component: DatePicker,
   },
 };
 
 const dateNow = new Date();
 
 export const Default = () => (
-  <DoubleDatePicker
+  <DatePicker
     id="input-id"
     labelFrom="Label"
     labelTo=""
@@ -25,7 +25,7 @@ export const Default = () => (
 
 export const SameWeekDisabled = () => {
   return (
-    <DoubleDatePicker
+    <DatePicker
       id="disable-dates-input"
       labelFrom="Disabled dates on same week"
       labelTo=""
@@ -38,7 +38,7 @@ export const SameWeekDisabled = () => {
 
 export const SameWeekEnabled = () => {
   return (
-    <DoubleDatePicker
+    <DatePicker
       id="enable-dates-input"
       labelFrom="Only enabled dates in same week"
       labelTo=""
@@ -63,7 +63,7 @@ export const Controlled = () => {
           <Button onClick={() => setEndDate(add(endDate, { days: 1 }))}>Next End Date</Button>
         </Flexbox>
       </Flexbox>
-      <DoubleDatePicker
+      <DatePicker
         id="controlled"
         labelFrom="Controlled"
         labelTo="Controlled"
@@ -82,7 +82,7 @@ export const Controlled = () => {
 
 export const DisabledInput = () => {
   return (
-    <DoubleDatePicker
+    <DatePicker
       id="disabled-input"
       labelFrom="Disabled input"
       labelTo=""
@@ -93,7 +93,7 @@ export const DisabledInput = () => {
 };
 
 export const DisallowSingleDayRange = () => (
-  <DoubleDatePicker
+  <DatePicker
     id="input-id"
     labelFrom="Label"
     labelTo=""

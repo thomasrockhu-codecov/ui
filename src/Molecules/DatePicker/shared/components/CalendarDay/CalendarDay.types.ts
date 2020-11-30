@@ -1,9 +1,11 @@
+import { Locale } from 'date-fns';
+
 export type CalendarDayProps = {
   className?: string;
   date: Date;
   disabled?: boolean;
   enabled?: boolean;
-  locale: any;
+  locale: Locale;
   onClick?: (date: Date) => void;
   onKeyDown: (event: React.KeyboardEvent) => void;
   onFocus: () => void;

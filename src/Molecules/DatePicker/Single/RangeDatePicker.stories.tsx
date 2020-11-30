@@ -1,9 +1,8 @@
 import { action } from '@storybook/addon-actions';
 import { add, isSameWeek } from 'date-fns';
 import React, { useState } from 'react';
-import DatePicker from './DatePicker';
+import DatePicker from '../DatePicker';
 import { Button, Flexbox } from '../../..';
-import { RANGE_DATE_PICKER } from '../shared/constants';
 
 export default {
   title: 'Molecules / DatePicker / DatePicker with range',
@@ -15,19 +14,14 @@ export default {
 const dateNow = new Date();
 
 export const Default = () => (
-  <DatePicker
-    id="input-id"
-    variant={RANGE_DATE_PICKER}
-    label="Label"
-    onChange={action('Range date')}
-  />
+  <DatePicker id="input-id" label="Label" onChange={action('Range date')} variant="RANGE" />
 );
 
 export const SameWeekDisabled = () => {
   return (
     <DatePicker
       id="disable-dates-input"
-      variant={RANGE_DATE_PICKER}
+      variant="RANGE"
       label="Disabled dates on same week"
       disableDate={(date) => isSameWeek(dateNow, date)}
       onChange={action('onChange')}
@@ -39,7 +33,7 @@ export const SameWeekEnabled = () => {
   return (
     <DatePicker
       id="enable-dates-input"
-      variant={RANGE_DATE_PICKER}
+      variant="RANGE"
       label="Only enabled dates in same week"
       enableDate={(date) => isSameWeek(dateNow, date)}
       onChange={action('onChange')}
@@ -63,7 +57,7 @@ export const Controlled = () => {
       </Flexbox>
       <DatePicker
         id="controlled"
-        variant={RANGE_DATE_PICKER}
+        variant="RANGE"
         label="Controlled"
         selectedDate={startDate}
         selectedEndDate={endDate}
@@ -78,7 +72,5 @@ export const Controlled = () => {
 };
 
 export const DisabledInput = () => {
-  return (
-    <DatePicker id="disabled-input" variant={RANGE_DATE_PICKER} label="Disabled input" disabled />
-  );
+  return <DatePicker id="disabled-input" variant="RANGE" label="Disabled input" disabled />;
 };

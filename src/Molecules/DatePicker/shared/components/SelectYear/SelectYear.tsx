@@ -7,6 +7,7 @@ import { Props } from './SelectYear.types';
 import Input from '../../../../Input';
 import { Box, Flexbox, Icon, Typography } from '../../../../..';
 import { newDate } from '../../dateUtils';
+import { Theme } from '../../../../../theme/theme.types';
 
 /* using styled like this as a workaround for 
  Select.test.tsx failing because Input.Select is undefined */
@@ -39,9 +40,9 @@ const SelectYear: React.FC<Props> = ({ id, viewedDate, onChange, years = 100 }) 
         let icon = null;
 
         if ((state.value as any).open === 'on') {
-          icon = <Icon.ChevronUp size={2} color={(t: any) => t.color.black} />;
+          icon = <Icon.ChevronUp size={2} color={(t: Theme) => t.color.svgFill} />;
         } else if (isHover) {
-          icon = <Icon.ChevronDown size={2} color={(t: any) => t.color.cta} />;
+          icon = <Icon.ChevronDown size={2} color={(t: Theme) => t.color.cta} />;
         } else {
           icon = <Box px={1} />;
         }

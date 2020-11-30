@@ -1,13 +1,13 @@
 import React, { useState } from 'react';
-import FlexTable from './FlexTable';
-import { Typography, Flag, Flexbox } from '../..';
-import docs from './FlexTable.mdx';
-import { SortOrder } from './Header/HeaderContent/HeaderContent.types';
-import { OnSort } from './Header/Header.types';
+import FlexTable from '../FlexTable';
+import { Typography, Flag, Flexbox } from '../../..';
+import docs from '../FlexTable.mdx';
+import { SortOrder } from '../Header/HeaderContent/HeaderContent.types';
+import { OnSort } from '../Header/Header.types';
 import { StyledFlexboxContainer, StyledBackground } from './storiesShared';
 
 export default {
-  title: 'Molecules / FlexTable / FlexTable with different headers',
+  title: 'Molecules / FlexTable / With different headers',
   parameters: {
     component: FlexTable,
     docs: {
@@ -20,14 +20,14 @@ export const DefaultTableHeaders = () => {
   const DefaultTableHeadersExample = () => {
     const CustomisedTableHeader: React.FC = ({ children }) => (
       <FlexTable.Header columnId="column3" sortable>
-        {({ sortable, sorted, fontSize, onSortClick, sortOrder }) => (
+        {({ sortable, sorted, onSortClick, sortOrder }) => (
           <FlexTable.Header.SortButton onClick={onSortClick}>
             <StyledFlexboxContainer container>
               <Flexbox item>
                 <Flag country="SE" inline height={3} />
               </Flexbox>
               <FlexTable.CellInlineContainer item>
-                <FlexTable.Header.TextWrapper fontSize={fontSize} sorted={sorted}>
+                <FlexTable.Header.TextWrapper sorted={sorted}>
                   {children}
                 </FlexTable.Header.TextWrapper>
               </FlexTable.CellInlineContainer>
@@ -87,8 +87,8 @@ export const UncontrolledSortableHeaders = () => {
           >
             With initial sort order
           </FlexTable.Header>
-          <FlexTable.Header columnId="column4" sortable={false}>
-            Non sortable
+          <FlexTable.Header columnId="column4" sortable justifyContent="flex-end">
+            Uncontrolled 3
           </FlexTable.Header>
         </FlexTable.HeaderRow>
       </FlexTable>
@@ -233,21 +233,21 @@ export const SortableHeadersOnlyAscendingDescending = () => {
 };
 
 export const SortableHeaderUncontrolledWithDifferentAlignment = () => {
-  const SortableHeaderUncontrolledWithDifferentAlignmentExample = () => {
+  const SortableUncontrolledHeaderWithDifferentAlignmentExample = () => {
     return (
       <FlexTable>
         <FlexTable.HeaderRow>
           <FlexTable.Header columnId="column1" sortable justifyContent="center">
-            Uncontrolled center
+            Center
           </FlexTable.Header>
           <FlexTable.Header columnId="column2" sortable justifyContent="flex-end">
-            Uncontrolled right
+            Right
           </FlexTable.Header>
           <FlexTable.Header columnId="column3" sortable>
-            Uncontrolled left
+            Left
           </FlexTable.Header>
-          <FlexTable.Header columnId="column4" sortable={false}>
-            Not sortable
+          <FlexTable.Header columnId="column4" sortable justifyContent="flex-start">
+            Left
           </FlexTable.Header>
         </FlexTable.HeaderRow>
       </FlexTable>
@@ -256,7 +256,56 @@ export const SortableHeaderUncontrolledWithDifferentAlignment = () => {
   return (
     <StyledBackground>
       <Typography type="title3">Uncontrolled Sortable Headers With Different Alignments</Typography>
-      <SortableHeaderUncontrolledWithDifferentAlignmentExample />
+      <SortableUncontrolledHeaderWithDifferentAlignmentExample />
+    </StyledBackground>
+  );
+};
+
+export const StickyHeadersForDifferentScreenSizes = () => {
+  const StickyHeadersForDifferentScreenSizesExample = () => {
+    return (
+      <FlexTable
+        stickyHeader
+        sm={{ stickyHeader: false }}
+        md={{ stickyHeader: true }}
+        lg={{ stickyHeader: false }}
+        xl={{ stickyHeader: true }}
+      >
+        <FlexTable.HeaderRow>
+          <FlexTable.Header columnId="column1">Header 1</FlexTable.Header>
+          <FlexTable.Header columnId="column2" justifyContent="flex-end">
+            Header 2
+          </FlexTable.Header>
+          <FlexTable.Header columnId="column3" justifyContent="flex-end">
+            Header 3
+          </FlexTable.Header>
+          <FlexTable.Header columnId="column4" justifyContent="flex-end">
+            Header 4
+          </FlexTable.Header>
+        </FlexTable.HeaderRow>
+
+        {[...Array(50)].map((_, index) => (
+          // eslint-disable-next-line react/no-array-index-key
+          <FlexTable.Row key={index}>
+            <FlexTable.Cell columnId="column1">Cell {index + 1}-1</FlexTable.Cell>
+            <FlexTable.Cell columnId="column2" justifyContent="flex-end">
+              Cell {index + 1}-2
+            </FlexTable.Cell>
+            <FlexTable.Cell columnId="column3" justifyContent="flex-end">
+              Cell {index + 1}-3
+            </FlexTable.Cell>
+            <FlexTable.Cell columnId="column4" justifyContent="flex-end">
+              Cell {index + 1}-4
+            </FlexTable.Cell>
+          </FlexTable.Row>
+        ))}
+      </FlexTable>
+    );
+  };
+  return (
+    <StyledBackground>
+      <Typography type="title3">Sticky Headers For Different ScreenSizes</Typography>
+      <StickyHeadersForDifferentScreenSizesExample />
     </StyledBackground>
   );
 };

@@ -21,7 +21,7 @@ import {
 } from '../shared/dateUtils';
 import Header from './Header';
 import Calendar from './Calendar';
-import { RANGE_DATE_PICKER, REGULAR_DATE_PICKER } from '../shared/constants';
+import { RANGE_DATE_PICKER, REGULAR_DATE_PICKER, DEFAULT_INPUT_WIDTH } from '../shared/constants';
 
 const StyledInputText = styled(Input.Text)`
   z-index: 1;
@@ -41,7 +41,7 @@ const StyledDropdownBubbleWrapper = styled.div`
   position: absolute;
 `;
 
-const DatePicker = (React.forwardRef<HTMLDivElement, Props>((props, ref) => {
+const DatePicker = React.forwardRef<HTMLDivElement, Props>((props, ref) => {
   const {
     ariaLabelPrevious,
     ariaLabelNext,
@@ -56,7 +56,7 @@ const DatePicker = (React.forwardRef<HTMLDivElement, Props>((props, ref) => {
     selectedEndDate: selectedEndDateProp,
     inputValue: inputValueProp,
     variant = REGULAR_DATE_PICKER,
-    width = 78,
+    width = DEFAULT_INPUT_WIDTH,
     yearSelectLength,
     inputSize,
   } = props;
@@ -67,13 +67,6 @@ const DatePicker = (React.forwardRef<HTMLDivElement, Props>((props, ref) => {
     assert(
       isUndefined(enableDate),
       `DatePicker: "enableDate" cannot be used at the same time as "disableDate".`,
-    );
-  }
-
-  if (enableDate) {
-    assert(
-      isUndefined(disableDate),
-      `DatePicker: "disableDate" cannot be used at the same time as "enableDate".`,
     );
   }
 
@@ -383,6 +376,6 @@ const DatePicker = (React.forwardRef<HTMLDivElement, Props>((props, ref) => {
       ) : null}
     </div>
   );
-}) as any) as React.FC<Props> & {};
+});
 
 export default DatePicker;

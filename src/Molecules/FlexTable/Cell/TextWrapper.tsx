@@ -1,28 +1,21 @@
 import React from 'react';
-import { Typography } from '../../..';
 import { TextWrapperComponent } from './Cell.types';
-import { getFontSizeTypographyType } from '../shared/textUtils';
-import { StyledTruncateTooltip } from '../shared';
-import { FontSize } from '../shared/shared.types';
+import { StyledTruncateTooltip, Text } from '../shared';
 
-const Text: React.FC<{ fontSize: FontSize }> = ({ fontSize, children }) => (
-  <Typography type={getFontSizeTypographyType(fontSize)} color={t => t.color.text}>
-    {children}
-  </Typography>
-);
-
-export const TextWrapper: TextWrapperComponent = ({
-  fontSize = 'm',
-  truncate = true,
-  children,
-}) => {
+export const TextWrapper: TextWrapperComponent = ({ className, truncate = true, children }) => {
   if (!truncate) {
-    return <Text fontSize={fontSize}>{children}</Text>;
+    return (
+      <Text className={className} color={(t) => t.color.text}>
+        {children}
+      </Text>
+    );
   }
 
   return (
     <StyledTruncateTooltip label={children}>
-      <Text fontSize={fontSize}>{children}</Text>
+      <Text className={className} color={(t) => t.color.text}>
+        {children}
+      </Text>
     </StyledTruncateTooltip>
   );
 };

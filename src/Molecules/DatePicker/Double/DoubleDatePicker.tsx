@@ -16,6 +16,7 @@ import { newDate, getLocale, getDateFormat, parseDateString } from '../shared/da
 
 import DoubleHeader from './Header';
 import DoubleCalendar from './Calendar';
+import { DEFAULT_INPUT_WIDTH } from '../shared/constants';
 
 const INPUT_SPACING = 4;
 
@@ -43,7 +44,7 @@ const StyledDropdownBubbleWrapper = styled.div`
   position: absolute;
 `;
 
-const DoubleDatePicker = (React.forwardRef<HTMLDivElement, Props>((props, ref) => {
+const DoubleDatePicker = React.forwardRef<HTMLDivElement, Props>((props, ref) => {
   const {
     ariaLabelPrevious,
     ariaLabelNext,
@@ -59,7 +60,7 @@ const DoubleDatePicker = (React.forwardRef<HTMLDivElement, Props>((props, ref) =
     selectedEndDate: selectedEndDateProp,
     inputValueStart: inputValueStartProp,
     inputValueEnd: inputValueEndProp,
-    width = 78,
+    width = DEFAULT_INPUT_WIDTH,
     yearSelectLength,
     inputSize,
     disallowSingleDayRange = false,
@@ -71,13 +72,6 @@ const DoubleDatePicker = (React.forwardRef<HTMLDivElement, Props>((props, ref) =
     assert(
       isUndefined(enableDate),
       `DatePicker: "enableDate" cannot be used at the same time as "disableDate".`,
-    );
-  }
-
-  if (enableDate) {
-    assert(
-      isUndefined(disableDate),
-      `DatePicker: "disableDate" cannot be used at the same time as "enableDate".`,
     );
   }
 
@@ -348,6 +342,6 @@ const DoubleDatePicker = (React.forwardRef<HTMLDivElement, Props>((props, ref) =
       ) : null}
     </div>
   );
-}) as any) as React.FC<Props> & {};
+});
 
 export default DoubleDatePicker;
