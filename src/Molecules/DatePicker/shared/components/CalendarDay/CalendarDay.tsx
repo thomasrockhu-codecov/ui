@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import { format, isToday } from 'date-fns';
 import { Box, Typography } from '../../../../..';
 import { CalendarDayProps } from './CalendarDay.types';
+import { DOUBLE_CALENDAR_GUTTER } from '../../constants';
 
 const StyledCalendarDay = styled(Box)<{
   $disabled?: boolean;
@@ -18,7 +19,7 @@ const StyledCalendarDay = styled(Box)<{
   min-width: ${({ theme }) => theme.spacing.unit(10) + 2}px;
   min-height: ${({ theme }) => theme.spacing.unit(10) + 2}px;
   margin: ${({ theme }) => theme.spacing.unit(0.5)}px 0;
-  ${({ $withGutter = false }) => ($withGutter ? 'margin-right: 34px;' : '')}
+  ${({ $withGutter = false }) => ($withGutter ? `margin-right: ${DOUBLE_CALENDAR_GUTTER}px;` : '')}
   justify-content: center;
   align-items: center;
   display: flex;

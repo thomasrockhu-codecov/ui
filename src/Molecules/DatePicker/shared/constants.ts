@@ -3,6 +3,7 @@ export const RANGE_DATE_PICKER = 'RANGE';
 export const DOUBLE_DATE_PICKER = 'DOUBLE';
 
 export const DEFAULT_INPUT_WIDTH = 78;
+export const DOUBLE_CALENDAR_GUTTER = 34;
 
 export const NUMBER_OF_VISIBLE_WEEKS_SINGLE = 6;
 export const NUMBER_OF_VISIBLE_WEEKDAYS_SINGLE = 7;
