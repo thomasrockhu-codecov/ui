@@ -70,13 +70,6 @@ const DatePicker = (React.forwardRef<HTMLDivElement, Props>((props, ref) => {
     );
   }
 
-  if (enableDate) {
-    assert(
-      isUndefined(disableDate),
-      `DatePicker: "disableDate" cannot be used at the same time as "enableDate".`,
-    );
-  }
-
   const theme = useTheme();
   const { locale } = useIntl();
   const dateFormat = getDateFormat(locale);

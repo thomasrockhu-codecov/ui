@@ -74,13 +74,6 @@ const DoubleDatePicker = (React.forwardRef<HTMLDivElement, Props>((props, ref) =
     );
   }
 
-  if (enableDate) {
-    assert(
-      isUndefined(disableDate),
-      `DatePicker: "disableDate" cannot be used at the same time as "enableDate".`,
-    );
-  }
-
   const INPUT_ID_START = `${id}-start`;
   const INPUT_ID_END = `${id}-end`;
 
