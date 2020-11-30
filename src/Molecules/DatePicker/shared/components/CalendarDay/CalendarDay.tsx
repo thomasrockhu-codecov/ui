@@ -77,7 +77,7 @@ const CalendarDay = React.forwardRef<HTMLDivElement, CalendarDayProps>(
       isWithinRange = false,
       isFirstDay = false,
       isLastDay = false,
-      withGutter = false,
+      withGutter,
     },
     ref,
   ) => {
