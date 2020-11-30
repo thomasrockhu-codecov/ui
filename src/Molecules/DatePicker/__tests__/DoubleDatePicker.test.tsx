@@ -21,7 +21,7 @@ const startInputId = 'datepicker-input-start';
 const endInputId = 'datepicker-input-end';
 
 describe('Double date picker', () => {
-  it('click to select a range on both calendars', async () => {
+  it('select a range by clicking on both calendars', async () => {
     const onChange = jest.fn((first: Date | null, second: Date | null) => {
       if (first && !second) return [format(first, 'MMMM d'), null];
       if (first && second) return [format(first, 'MMMM d'), format(second, 'MMMM d')];
@@ -50,7 +50,7 @@ describe('Double date picker', () => {
     expect(onChange).toHaveLastReturnedWith([expectedStart, expectedEnd]);
   });
 
-  it('click to select a range on one calendar', async () => {
+  it('select a range by clicking on one calendar', async () => {
     const onChange = jest.fn((first: Date | null, second: Date | null) => {
       if (first && !second) return [format(first, 'MMMM d'), null];
       if (first && second) return [format(first, 'MMMM d'), format(second, 'MMMM d')];
@@ -79,7 +79,7 @@ describe('Double date picker', () => {
     expect(onChange).toHaveLastReturnedWith([expectedStart, expectedEnd]);
   });
 
-  it('click first date and input second date', async () => {
+  it('select a range by clicking on first date and input second date', async () => {
     const onChange = jest.fn((first: Date | null, second: Date | null) => {
       if (first && !second) return [format(first, 'MMMM d'), null];
       if (first && second) return [format(first, 'MMMM d'), format(second, 'MMMM d')];
@@ -110,7 +110,7 @@ describe('Double date picker', () => {
     expect(onChange).toHaveLastReturnedWith([expectedStart, expectedEnd]);
   });
 
-  it('input first date and click second date', async () => {
+  it('select a range by input first date and click second date', async () => {
     const onChange = jest.fn((first: Date | null, second: Date | null) => {
       if (first && !second) return [format(first, 'MMMM d'), null];
       if (first && second) return [format(first, 'MMMM d'), format(second, 'MMMM d')];
@@ -139,7 +139,7 @@ describe('Double date picker', () => {
     expect(onChange).toHaveLastReturnedWith([expectedStart, expectedEnd]);
   });
 
-  it('use input for both dates', async () => {
+  it('select a range by using input for both dates', async () => {
     const onChange = jest.fn((first: Date | null, second: Date | null) => {
       if (first && !second) return [format(first, 'MMMM d'), null];
       if (first && second) return [format(first, 'MMMM d'), format(second, 'MMMM d')];
@@ -168,7 +168,7 @@ describe('Double date picker', () => {
     expect(onChange).toHaveLastReturnedWith([expectedStart, expectedEnd]);
   });
 
-  it('use arrowkeys', async () => {
+  it('select a range by using arrowkeys', async () => {
     const onChange = jest.fn((first: Date | null, second: Date | null) => {
       if (first && !second) return [format(first, 'MMMM d'), null];
       if (first && second) return [format(first, 'MMMM d'), format(second, 'MMMM d')];
@@ -216,7 +216,7 @@ describe('Double date picker', () => {
     expect(onChange).toHaveLastReturnedWith([expectedStart, expectedEnd]);
   });
 
-  it('should be possible to select a one day range by clicking', async () => {
+  it('select a range of one day by clicking', async () => {
     const onChange = jest.fn((first: Date | null, second: Date | null) => {
       if (first && !second) return [format(first, 'MMMM d'), null];
       if (first && second) return [format(first, 'MMMM d'), format(second, 'MMMM d')];
@@ -242,7 +242,7 @@ describe('Double date picker', () => {
     expect(onChange).toHaveLastReturnedWith([expectedDate, expectedDate]);
   });
 
-  it('should be possible to select a one day range by using arrow keys', async () => {
+  it('select a range of one day by using arrow keys', async () => {
     const onChange = jest.fn((first: Date | null, second: Date | null) => {
       if (first && !second) return [format(first, 'MMMM d'), null];
       if (first && second) return [format(first, 'MMMM d'), format(second, 'MMMM d')];
@@ -283,7 +283,7 @@ describe('Double date picker', () => {
     expect(onChange).toHaveLastReturnedWith([expectedDate, expectedDate]);
   });
 
-  it('should be possible to select a one day range by using text input', async () => {
+  it('select a range of one day by using text input', async () => {
     const onChange = jest.fn((first: Date | null, second: Date | null) => {
       if (first && !second) return [format(first, 'MMMM d'), null];
       if (first && second) return [format(first, 'MMMM d'), format(second, 'MMMM d')];
@@ -314,5 +314,123 @@ describe('Double date picker', () => {
     fireEvent.keyDown(endInput, { key: 'Enter', code: 'Enter' });
 
     expect(onChange).toHaveLastReturnedWith([expectedDate, expectedDate]);
+  });
+
+  it('not select a range of one day by clicking', async () => {
+    const onChange = jest.fn((first: Date | null, second: Date | null) => {
+      if (first && !second) return [format(first, 'MMMM d'), null];
+      if (first && second) return [format(first, 'MMMM d'), format(second, 'MMMM d')];
+      return [null, null];
+    });
+
+    const { getByTestId, findByTestId } = render(
+      <PageProviders>
+        <DatePicker
+          id={ID}
+          labelFrom="Label"
+          onChange={onChange}
+          variant={DOUBLE_DATE_PICKER}
+          disallowSingleDayRange
+        />
+      </PageProviders>,
+    );
+
+    const expectedDate = 'September 1';
+
+    const startInput = getByTestId(startInputId);
+    fireEvent.focus(startInput);
+
+    const dayToSelect = await findByTestId(expectedDate);
+    fireEvent.click(dayToSelect);
+    expect(onChange).toHaveLastReturnedWith([expectedDate, null]);
+
+    fireEvent.click(dayToSelect);
+    expect(onChange).toHaveLastReturnedWith([expectedDate, null]);
+  });
+
+  it('not select a range of one day by using arrow keys', async () => {
+    const onChange = jest.fn((first: Date | null, second: Date | null) => {
+      if (first && !second) return [format(first, 'MMMM d'), null];
+      if (first && second) return [format(first, 'MMMM d'), format(second, 'MMMM d')];
+      return [null, null];
+    });
+
+    const { getByTestId, findByTestId } = render(
+      <PageProviders>
+        <DatePicker
+          id={ID}
+          labelFrom="Label"
+          onChange={onChange}
+          variant={DOUBLE_DATE_PICKER}
+          disallowSingleDayRange
+        />
+      </PageProviders>,
+    );
+
+    const expectedDate = 'September 7';
+    const tempDate = 'August 31';
+
+    const startInput = getByTestId(startInputId);
+    fireEvent.focus(startInput);
+
+    const dayToSelect = await findByTestId(expectedDate);
+    const tempDay = await findByTestId(tempDate);
+
+    // focus 31 august
+    fireEvent.keyDown(startInput, {
+      key: 'ArrowDown',
+      keyCode: 40,
+    });
+    // focus 7 september
+    fireEvent.keyDown(tempDay, {
+      key: 'ArrowDown',
+      keyCode: 40,
+    });
+    // select
+    fireEvent.keyDown(dayToSelect, { key: 'Enter', code: 'Enter' });
+    expect(onChange).toHaveLastReturnedWith([expectedDate, null]);
+
+    // select again
+    fireEvent.keyDown(dayToSelect, { key: 'Enter', code: 'Enter' });
+    expect(onChange).toHaveLastReturnedWith([expectedDate, null]);
+  });
+
+  it('not select a one range of day by using text input', async () => {
+    const onChange = jest.fn((first: Date | null, second: Date | null) => {
+      if (first && !second) return [format(first, 'MMMM d'), null];
+      if (first && second) return [format(first, 'MMMM d'), format(second, 'MMMM d')];
+      return [null, null];
+    });
+
+    const { getByTestId } = render(
+      <PageProviders>
+        <DatePicker
+          id={ID}
+          labelFrom="Label"
+          onChange={onChange}
+          variant={DOUBLE_DATE_PICKER}
+          disallowSingleDayRange
+        />
+      </PageProviders>,
+    );
+
+    const expectedDate = 'September 1';
+
+    const startInput = getByTestId(startInputId);
+    fireEvent.focus(startInput);
+    fireEvent.change(startInput, { target: { value: '01/09/2020' } });
+    fireEvent.keyDown(startInput, { key: 'Enter', code: 'Enter' });
+    expect(onChange).toHaveLastReturnedWith([expectedDate, null]);
+
+    // The user leaves the left textinput, and onBlur is called.
+    fireEvent.blur(startInput);
+    expect(onChange).toHaveLastReturnedWith([expectedDate, null]);
+
+    const endInput = getByTestId(endInputId);
+    fireEvent.focus(endInput);
+    fireEvent.change(endInput, { target: { value: '01/09/2020' } });
+    fireEvent.keyDown(endInput, { key: 'Enter', code: 'Enter' });
+
+    expect(onChange).toHaveLastReturnedWith([expectedDate, null]);
   });
 });
