@@ -1,7 +1,7 @@
 import React, { ReactNode } from 'react';
-import { FontSize, Density, FlexPropsType } from '../shared/shared.types';
+import { FlexPropsType } from '../shared/shared.types';
 
-type RenderPropArguments = { density: Density; fontSize: FontSize; columnId: string };
+type RenderPropArguments = { columnId: string };
 type RenderFunc = (props: RenderPropArguments) => ReactNode;
 type Children = ReactNode | RenderFunc;
 
@@ -15,16 +15,16 @@ export type Props = {
 
 export type TextWrapperProps = {
   /**
-   * Set font size
-   * @default 'm'
-   */
-  fontSize?: FontSize;
-  /**
    * Set font weight
    * @default 'bold'
    */
   weight?: string;
+  /**
+   * Truncate the text inside and a tooltip on hover when truncated
+   * @default true
+   */
   truncate?: boolean;
+  className?: string;
 };
 
 export type TextWrapperComponent = React.FC<TextWrapperProps>;

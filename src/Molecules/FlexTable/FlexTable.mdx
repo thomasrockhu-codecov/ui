@@ -56,7 +56,7 @@ The Flextable component only handles UI states.
 
 To enable users to customise their components, `FlexTable` and its components are developed to support plain strings, components and functions as children.
 Sending in a plain string as a child will wrap the string with content wrappers to set e.g. the correct font, font size and padding.
-If the user sends in a component it will be rendered without content wrappers, enabling full customisability. To simplify reuse of the table standards,
+If the user sends in a component it will be rendered without content wrappers, enabling full customizability. To simplify reuse of the table standards,
 the components export all their content wrappers as building stones, to create your own custom component. See the example below
 
 ```jsx
@@ -65,34 +65,22 @@ the components export all their content wrappers as building stones, to create y
 // is equivalent to writing
 
 <FlexTable.Cell>
-  <FlexTable.Cell.TextWrapper fontSize="m">
+  <FlexTable.Cell.TextWrapper>
     String
   </FlexTable.Cell.TextWrapper>
 </FlexTable.Cell>
-
-// or with render props
-
-<FlexTable.Cell>
-  {({fontSize}) => (
-    <FlexTable.Cell.TextWrapper fontSize={fontSize}>
-      String
-    </FlexTable.Cell.TextWrapper>
-  )}
-</FlexTable.Cell>
 ```
 
-In this example `Cell` exports its building block `TextWrapper`. `TextWrapper` includes the font size and truncation used when supplying a plain string as a child.
+In this example `Cell` exports its building block `TextWrapper`. `TextWrapper` includes the font size and truncation used when supplying a plain string as a child.
 This allows building custom components that fulfill the FlexTable standards, see below
 
 ```jsx
 const FlagNumberCell = React.memo(({ value, country, currency }) => (
   <FlexTable.Cell>
-    {({ fontSize }) => (
-      <FlexTable.Cell.TextWrapper fontSize={fontSize}>
-        <Flag country={country} />
-        <Number value={value} currency={currency} />
-      </FlexTable.Cell.TextWrapper>
-    )}
+    <FlexTable.Cell.TextWrapper>
+      <Flag country={country} />
+      <Number value={value} currency={currency} />
+    </FlexTable.Cell.TextWrapper>
   </FlexTable.Cell>
 ));
 
@@ -256,14 +244,14 @@ const InstrumentTable = () => (
 ```jsx
 const CustomisedTableHeader = React.memo(({ flag, country }) => (
   <FlexTable.Header columnId="CountryAndCurrency" sortable>
-    {({ sortable, sorted, fontSize, onSortClick, sortOrder }) => (
+    {({ sortable, sorted, onSortClick, sortOrder }) => (
       <FlexTable.Header.SortButton onClick={onSortClick}>
         <Flexbox container>
           <Flexbox item>
             <Flag country={flag} inline height={3} />
           </Flexbox>
           <FlexTable.CellInlineContainer item>
-            <FlexTable.Header.TextWrapper fontSize={fontSize} sorted={sorted}>
+            <FlexTable.Header.TextWrapper sorted={sorted}>
               {country}
             </FlexTable.Header.TextWrapper>
           </FlexTable.CellInlineContainer>
@@ -301,28 +289,25 @@ Cell uses the layout properties from props.
 
 ### Custom Cell
 
-By using Render Props when creating your custom cell, you enable `FlexTable` to communicate the properties set by it.
-In this example below we automatically get the `fontSize` from the table.
+You can pass any valid React Element as children to Cell.
+In the example below we are using Cell's TextWrapper component, which automatically gets the fontSize from the FlexTable component.
 
 ```jsx
 const NumberCell: React.FC<{ columnId: string }> = React.memo(({ value, columnId }) => (
   <FlexTable.Cell columnId={columnId}>
-    {({ fontSize }) => (
-      <FlexTable.Cell.TextWrapper fontSize={fontSize}>
-        <Number value={value} />
-      </FlexTable.Cell.TextWrapper>
-    )}
+    <FlexTable.Cell.TextWrapper>
+      <Number value={value} />
+    </FlexTable.Cell.TextWrapper>
   </FlexTable.Cell>
 ));
 ```
 
-You could also skip using Render Props and supply the values for `fontSize` yourself in the example above.
 Note the use of `React.memo`, this is important to include to improve sorting speed.
 More info regarding this can be found under _Performance_.
 
 ## Footer
 
-Similar functionality to `Cell`. Has like `Header` the property `isContent = false` to render empty cell instead of chevron.
+Similar functionality to `Cell`.
 
 <Canvas>
   <IntlProvider locale="en-UK">
@@ -385,11 +370,14 @@ Row has the important feature of managing expand states.
 For it to know how to handle an out-of-the-box-expand it needs `expandItems` and/or `expandChildren`, alongside the parent `FlexTable` having `expandable = true`.
 If neither `expandItems` or `expandChildren` are supplied, the chevron will be disabled.
 
-Conditionally expand `expandItems` and/or `expandChildren` can be implemented in the following way:
+Conditionally hiding `expandItems` for different screen sizes can be implemented in the following way:
 
 ```jsx
 const ConditionalMediaExpand = () => {
-  const columnData = [{ label: 'Country', value: 'SE' }];
+  const columnData = [
+    { label: 'Country', value: 'SE' }, // visible in all screen sizes having `expandable = true`
+    { label: 'Currency', value: 'SEK', sm: { hidden: true } }, // this expand item will be hidden on sm devices (and up)
+  ];
   return (
     <FlexTable expandable md={{ expandable: false }}>
       <FlexTable.HeaderRow>
@@ -397,12 +385,18 @@ const ConditionalMediaExpand = () => {
         <FlexTable.Header columnId="country" hidden md={{ hidden: false }}>
           Country
         </FlexTable.Header>
+        <FlexTable.Header columnId="currency" hidden sm={{ hidden: false }}>
+          Currency
+        </FlexTable.Header>
       </FlexTable.HeaderRow>
 
-      <FlexTable.Row expandItems={columnData} md={{ expandItems: [] }}>
+      <FlexTable.Row expandItems={columnData}>
         <FlexTable.Cell columnId="instrumentName">Ericsson</FlexTable.Cell>
         <FlexTable.Cell columnId="country" hidden md={{ hidden: false }}>
           SE
+        </FlexTable.Cell>
+        <FlexTable.Cell columnId="currency" hidden sm={{ hidden: false }}>
+          SEK
         </FlexTable.Cell>
       </FlexTable.Row>
     </FlexTable>
@@ -410,12 +404,12 @@ const ConditionalMediaExpand = () => {
 };
 ```
 
-Several Media breakpoints can be used. The properties `expandItems` and `expandChildren` defaults to `xs`.
+Several Media breakpoints can be used inside `expandItems`.
 
 ### Header Row & Footer Row
 
 Header Row and Footer Row has the same functionality as an ordinary `Row` but with other default properties to fulfill their purpose.
-Most notably, the property `isContent` is set to `false`.
+Most notably, the property `rowType` is set to either `'header'` or `'footer'`, instead of the default value `'content'`.
 This keeps the row from rendering a chevron and instead provides a empty `Header` with fixed properties with the same `columnId` as all the chevrons in the table.
 
 ## Constants

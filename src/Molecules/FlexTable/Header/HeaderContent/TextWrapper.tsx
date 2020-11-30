@@ -1,44 +1,32 @@
 import React from 'react';
-import { getFontSizeTypographyType } from '../../shared/textUtils';
 import { TextWrapperComponent } from './HeaderContent.types';
-import { Typography } from '../../../..';
-import { StyledTruncateTooltip } from '../../shared';
-import { FontSize } from '../../shared/shared.types';
-
-const Text: React.FC<{ className?: string; fontSize: FontSize; sorted?: boolean }> = ({
-  className,
-  children,
-  sorted,
-  fontSize,
-}) => (
-  <Typography
-    className={className}
-    type={getFontSizeTypographyType(fontSize)}
-    color={(t) => (sorted ? t.color.text : t.color.label)}
-    weight={sorted ? 'bold' : 'regular'}
-  >
-    {children}
-  </Typography>
-);
+import { StyledTruncateTooltip, Text } from '../../shared';
 
 export const TextWrapper: TextWrapperComponent = ({
   className,
-  fontSize = 'm',
   sorted,
-  children,
   truncate = true,
+  children,
 }) => {
   if (!truncate) {
     return (
-      <Text className={className} fontSize={fontSize} sorted={sorted}>
+      <Text
+        className={className}
+        color={(t) => (sorted ? t.color.text : t.color.label)}
+        weight={sorted ? 'bold' : 'regular'}
+      >
         {children}
       </Text>
     );
   }
 
   return (
-    <StyledTruncateTooltip className={className} label={children}>
-      <Text fontSize={fontSize} sorted={sorted}>
+    <StyledTruncateTooltip label={children}>
+      <Text
+        className={className}
+        color={(t) => (sorted ? t.color.text : t.color.label)}
+        weight={sorted ? 'bold' : 'regular'}
+      >
         {children}
       </Text>
     </StyledTruncateTooltip>

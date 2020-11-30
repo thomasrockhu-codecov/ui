@@ -2,94 +2,128 @@ import React from 'react';
 import styled from 'styled-components';
 import { isElement, isFunction } from '../../../../../common/utils';
 import { Flexbox, LabeledValue } from '../../../../..';
-import { ExpandItemComponent, ExpandItemProps, RenderFunc } from './ExpandItems.types';
+import {
+  ExpandItemComponent,
+  ExpandItemMediaProps,
+  ExpandItemProps,
+  RenderFunc,
+} from './ExpandItems.types';
 import { Props as FlexBoxProps } from '../../../../../Atoms/Flexbox/Flexbox.types';
-import { TextWrapperLabel } from './TextWrapperLabel';
-import { TextWrapperValue } from './TextWrapperValue';
-import { FontSize } from '../../../shared/shared.types';
-import { useFlexTable } from '../../../shared/FlexTableProvider';
-import { RenderForSizes } from '../../../shared';
+import { TextWrapper } from './TextWrapper';
+import { getStylesForSizes } from '../../../shared';
+
+type ScreenSizeConfigurableProps = {
+  hidden?: boolean;
+};
+
+type StyledFlexboxProps = {
+  $xs: ScreenSizeConfigurableProps;
+  $sm?: ScreenSizeConfigurableProps;
+  $md?: ScreenSizeConfigurableProps;
+  $lg?: ScreenSizeConfigurableProps;
+  $xl?: ScreenSizeConfigurableProps;
+} & FlexBoxProps;
+
+const getHiddenStylesDesktop = ({ hidden }: ScreenSizeConfigurableProps) =>
+  hidden === true ? 'display: none;' : 'display: list-item;';
+
+const getHiddenStylesMobile = ({ hidden }: ScreenSizeConfigurableProps) =>
+  hidden === true ? 'display: none;' : 'display: flex;';
 
 const StyledOverflowItem = styled(Flexbox)<{ textAlign?: string }>`
   overflow: hidden;
   text-align: ${({ textAlign = 'left' }) => textAlign};
 `;
 
-const StyledFlexboxItem = styled(Flexbox)<FlexBoxProps>`
+const StyledDesktopItem = styled(Flexbox)<StyledFlexboxProps>`
   max-width: ${(p) => p.theme.spacing.unit(75)}px;
   padding-bottom: ${(p) => p.theme.spacing.unit(5)}px;
+  ${getStylesForSizes<{}, ScreenSizeConfigurableProps>(
+    (p: StyledFlexboxProps) => ({
+      xs: p.$xs,
+      sm: p.$sm,
+      md: p.$md,
+      lg: p.$lg,
+      xl: p.$xl,
+    }),
+    {
+      hidden: getHiddenStylesDesktop,
+    },
+  )}
+`;
+
+const StyledMobileItem = styled(Flexbox)<StyledFlexboxProps>`
+  ${getStylesForSizes<{}, ScreenSizeConfigurableProps>(
+    (p: StyledFlexboxProps) => ({
+      xs: p.$xs,
+      sm: p.$sm,
+      md: p.$md,
+      lg: p.$lg,
+      xl: p.$xl,
+    }),
+    {
+      hidden: getHiddenStylesMobile,
+    },
+  )}
 `;
 
 const ExpandRenderer: React.FC<{
   children: React.ReactNode | RenderFunc;
-  fontSize: FontSize;
   isLabel?: boolean;
-}> = ({ children, fontSize, isLabel = false }) => {
-  const Wrapper = isLabel ? TextWrapperLabel : TextWrapperValue;
+}> = ({ isLabel = false, children }) => (
+  <>
+    {isElement(children) && children}
+    {isFunction(children)
+      ? children()
+      : !isElement(children) && <TextWrapper isLabel={isLabel}>{children}</TextWrapper>}
+  </>
+);
 
-  return (
-    <>
-      {isElement(children) && children}
-      {isFunction(children)
-        ? children({ fontSize })
-        : !isElement(children) && <Wrapper fontSize={fontSize}>{children}</Wrapper>}
-    </>
-  );
-};
-
-const MobileItem: React.FC<{ className?: string; item: ExpandItemProps; fontSize: FontSize }> = ({
-  item,
-  fontSize,
-}) => (
-  <Flexbox container justifyContent="space-between" as="li">
+const MobileItem: React.FC<
+  {
+    label: ExpandItemProps['label'];
+    value: ExpandItemProps['value'];
+  } & ExpandItemMediaProps
+> = ({ label, value, xs, sm, md, lg, xl }) => (
+  <StyledMobileItem
+    forwardedAs="li"
+    container
+    justifyContent="space-between"
+    $xs={xs}
+    $sm={sm}
+    $md={md}
+    $lg={lg}
+    $xl={xl}
+  >
     <StyledOverflowItem item flex="0 0 50%">
-      <ExpandRenderer fontSize={fontSize} isLabel>
-        {item.label}
-      </ExpandRenderer>
+      <ExpandRenderer isLabel>{label}</ExpandRenderer>
     </StyledOverflowItem>
     <StyledOverflowItem item flex="0 0 50%" textAlign="right">
-      <ExpandRenderer fontSize={fontSize}>{item.value}</ExpandRenderer>
+      <ExpandRenderer>{value}</ExpandRenderer>
     </StyledOverflowItem>
-  </Flexbox>
+  </StyledMobileItem>
 );
 
-const DesktopItem: React.FC<{ className?: string; item: ExpandItemProps; fontSize: FontSize }> = ({
-  item,
-  fontSize,
-}) => (
-  <StyledFlexboxItem item as="li">
-    <LabeledValue
-      label={
-        <ExpandRenderer fontSize={fontSize} isLabel>
-          {item.label}
-        </ExpandRenderer>
-      }
-    >
-      <ExpandRenderer fontSize={fontSize}>{item.value}</ExpandRenderer>
+const DesktopItem: React.FC<
+  {
+    label: ExpandItemProps['label'];
+    value: ExpandItemProps['value'];
+  } & ExpandItemMediaProps
+> = ({ label, value, xs, sm, md, lg, xl }) => (
+  <StyledDesktopItem item $xs={xs} $sm={sm} $md={md} $lg={lg} $xl={xl} forwardedAs="li">
+    <LabeledValue label={<ExpandRenderer isLabel>{label}</ExpandRenderer>}>
+      <ExpandRenderer>{value}</ExpandRenderer>
     </LabeledValue>
-  </StyledFlexboxItem>
+  </StyledDesktopItem>
 );
 
-export const ExpandItem: ExpandItemComponent = ({ item }) => {
-  const { fontSize: xsFontSize, sm, md, lg, xl } = useFlexTable();
-  return (
-    <RenderForSizes
-      xs={{ fontSize: xsFontSize, mobileItem: true }}
-      sm={sm}
-      md={{ ...md, mobileItem: false }}
-      lg={lg}
-      xl={xl}
-    >
-      {({ fontSize, mobileItem, className }) => {
-        if (mobileItem) {
-          return <MobileItem className={className} item={item} fontSize={fontSize} />;
-        }
-
-        return <DesktopItem className={className} item={item} fontSize={fontSize} />;
-      }}
-    </RenderForSizes>
+export const ExpandItem: ExpandItemComponent = ({ item, mobileItem }) => {
+  const { label, value, hidden, sm, md, lg, xl } = item;
+  return mobileItem ? (
+    <MobileItem label={label} value={value} xs={{ hidden }} sm={sm} md={md} lg={lg} xl={xl} />
+  ) : (
+    <DesktopItem label={label} value={value} xs={{ hidden }} sm={sm} md={md} lg={lg} xl={xl} />
   );
 };
 
-ExpandItem.TextWrapperValue = TextWrapperValue;
-ExpandItem.TextWrapperLabel = TextWrapperLabel;
+ExpandItem.TextWrapper = TextWrapper;

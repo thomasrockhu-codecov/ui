@@ -1,14 +1,10 @@
 import React from 'react';
-import { FontSize } from '../../shared/shared.types';
 
 export type TextWrapperProps = {
   className?: string;
   /**
    * Set font size
    * @default 'm'
-   */
-  fontSize?: FontSize;
-  /**
    * Set TextWrapper font weight to bold
    * @default false
    */

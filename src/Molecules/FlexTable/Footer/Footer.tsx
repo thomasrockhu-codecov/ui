@@ -5,8 +5,6 @@ import { Flexbox } from '../../..';
 import { useFlexCellProps } from '../shared/ColumnProvider';
 import { FooterComponent } from './Footer.types';
 import { TextWrapper } from './TextWrapper';
-import { useFlexTable } from '../shared/FlexTableProvider';
-import { RenderForSizes } from '../shared';
 
 const StyledFlexbox = styled(Flexbox)`
   overflow: hidden;
@@ -14,38 +12,15 @@ const StyledFlexbox = styled(Flexbox)`
 
 const Footer: FooterComponent = (props) => {
   const { children, className, columnId } = props;
-
-  const {
-    fontSize: xsFontSize,
-    sm: smTable,
-    md: mdTable,
-    lg: lgTable,
-    xl: xlTable,
-  } = useFlexTable();
-
   const flexProps = useFlexCellProps(props);
 
   return (
-    <RenderForSizes
-      xs={{ fontSize: xsFontSize }}
-      sm={smTable}
-      md={mdTable}
-      lg={lgTable}
-      xl={xlTable}
-    >
-      {({ fontSize, className: mediaClassName }) => (
-        <StyledFlexbox
-          className={mediaClassName ? `${className} ${mediaClassName}` : className}
-          role="cell"
-          {...flexProps}
-        >
-          {isElement(children) && children}
-          {isFunction(children)
-            ? children({ fontSize, columnId })
-            : !isElement(children) && <TextWrapper fontSize={fontSize}>{children}</TextWrapper>}
-        </StyledFlexbox>
-      )}
-    </RenderForSizes>
+    <StyledFlexbox className={className} role="cell" {...flexProps}>
+      {isElement(children) && children}
+      {isFunction(children)
+        ? children({ columnId })
+        : !isElement(children) && <TextWrapper>{children}</TextWrapper>}
+    </StyledFlexbox>
   );
 };
 

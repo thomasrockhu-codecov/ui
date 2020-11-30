@@ -1,6 +1,6 @@
 import { Density, FontSize, MediaRelatedProps } from '../shared.types';
 
-type FlexTableState = {
+export type FlexTableState = {
   /**
    * Set vertical padding for rows.
    * @default 'm'

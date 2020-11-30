@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Storyshots Molecules / FlexTable / FlexTable with different columns Column Width Sortable Table 1`] = `
+exports[`Storyshots Molecules / FlexTable / With different columns Column Width Sortable Table 1`] = `
 .c35 {
   height: 20px;
   box-sizing: border-box;
@@ -1062,7 +1062,7 @@ exports[`Storyshots Molecules / FlexTable / FlexTable with different columns Col
 </div>
 `;
 
-exports[`Storyshots Molecules / FlexTable / FlexTable with different columns Column Width Table With Custom Flag Cell 1`] = `
+exports[`Storyshots Molecules / FlexTable / With different columns Column Width Table With Custom Flag Cell 1`] = `
 .c29 {
   height: 20px;
   box-sizing: border-box;
@@ -1943,7 +1943,7 @@ exports[`Storyshots Molecules / FlexTable / FlexTable with different columns Col
 </div>
 `;
 
-exports[`Storyshots Molecules / FlexTable / FlexTable with different columns Different Alignments Table 1`] = `
+exports[`Storyshots Molecules / FlexTable / With different columns Different Alignments Table 1`] = `
 .c3 {
   box-sizing: border-box;
   display: -webkit-box;
@@ -2769,7 +2769,7 @@ exports[`Storyshots Molecules / FlexTable / FlexTable with different columns Dif
 </div>
 `;
 
-exports[`Storyshots Molecules / FlexTable / FlexTable with different columns Media Columns 1`] = `
+exports[`Storyshots Molecules / FlexTable / With different columns Hidden Column On Xs And Sm Screens 1`] = `
 .c3 {
   box-sizing: border-box;
   display: -webkit-box;
@@ -3134,7 +3134,7 @@ exports[`Storyshots Molecules / FlexTable / FlexTable with different columns Med
   <span
     className="c1"
   >
-    Table With Columns Hidden Based On Screen Size
+    Hidden Column On Extra Small And Small Screens
   </span>
   <div
     className="c2"
@@ -3169,7 +3169,7 @@ exports[`Storyshots Molecules / FlexTable / FlexTable with different columns Med
           <span
             className="c10 c11"
           >
-            Hidden column on mobile
+            Hidden on xs and sm
           </span>
         </div>
       </div>
@@ -3229,7 +3229,7 @@ exports[`Storyshots Molecules / FlexTable / FlexTable with different columns Med
           <span
             className="c17 c11"
           >
-            Hidden on mobile
+            Hidden on xs and sm
           </span>
         </div>
       </div>
@@ -3339,7 +3339,7 @@ exports[`Storyshots Molecules / FlexTable / FlexTable with different columns Med
           <span
             className="c17 c11"
           >
-            Hidden on mobile
+            Hidden on xs and sm
           </span>
         </div>
       </div>
@@ -3449,7 +3449,7 @@ exports[`Storyshots Molecules / FlexTable / FlexTable with different columns Med
           <span
             className="c17 c11"
           >
-            Hidden on mobile
+            Hidden on xs and sm
           </span>
         </div>
       </div>
