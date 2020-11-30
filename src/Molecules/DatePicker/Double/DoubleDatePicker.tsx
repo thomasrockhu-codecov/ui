@@ -44,7 +44,7 @@ const StyledDropdownBubbleWrapper = styled.div`
   position: absolute;
 `;
 
-const DoubleDatePicker = (React.forwardRef<HTMLDivElement, Props>((props, ref) => {
+const DoubleDatePicker = React.forwardRef<HTMLDivElement, Props>((props, ref) => {
   const {
     ariaLabelPrevious,
     ariaLabelNext,
@@ -342,6 +342,6 @@ const DoubleDatePicker = (React.forwardRef<HTMLDivElement, Props>((props, ref) =
       ) : null}
     </div>
   );
-}) as any) as React.FC<Props> & {};
+});
 
 export default DoubleDatePicker;
