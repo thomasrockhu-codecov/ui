@@ -1,3 +1,31 @@
+# [5.1.0](https://github.com/nordnet/ui/compare/v5.0.0...v5.1.0) (2020-11-30)
+
+
+### Bug Fixes
+
+* 🐛 add placeholder function ([df8f6f3](https://github.com/nordnet/ui/commit/df8f6f3))
+* 🐛 align header with input field ([1875eda](https://github.com/nordnet/ui/commit/1875eda))
+* 🐛 allow user to enter end date first and refactor ([9a74e2a](https://github.com/nordnet/ui/commit/9a74e2a))
+* 🐛 default to-label to empty string ([01c9259](https://github.com/nordnet/ui/commit/01c9259))
+* 🐛 disallow single day range with prop in input submit ([d8f5353](https://github.com/nordnet/ui/commit/d8f5353))
+* 🐛 mix click/input submit handling ([0fa977d](https://github.com/nordnet/ui/commit/0fa977d))
+* 🐛 remove obsolete assertion ([3973b97](https://github.com/nordnet/ui/commit/3973b97))
+* 🐛 remvoe unnecessary default ([a3ab43c](https://github.com/nordnet/ui/commit/a3ab43c))
+* 🐛 set date with input ([13a8e41](https://github.com/nordnet/ui/commit/13a8e41))
+* 🐛 story naming and story structure ([f403850](https://github.com/nordnet/ui/commit/f403850))
+* 🐛 unify input fields submit and submit on blur ([af649b6](https://github.com/nordnet/ui/commit/af649b6))
+* 🐛 unique ids ([ab8a8cf](https://github.com/nordnet/ui/commit/ab8a8cf))
+* 🐛 unique keys ([379e9ec](https://github.com/nordnet/ui/commit/379e9ec))
+* 🐛 use one or two labels for inputs ([3789235](https://github.com/nordnet/ui/commit/3789235))
+
+
+### Features
+
+* 🎸 add double header ([66ad2e9](https://github.com/nordnet/ui/commit/66ad2e9))
+* 🎸 add double inputs with a gutter ([71a4f86](https://github.com/nordnet/ui/commit/71a4f86))
+* 🎸 disallow single date range with prop ([cc1fdf9](https://github.com/nordnet/ui/commit/cc1fdf9))
+* 🎸 wip working click range functionality ([b2aff67](https://github.com/nordnet/ui/commit/b2aff67))
+
 # [5.0.0](https://github.com/nordnet/ui/compare/v4.12.0...v5.0.0) (2020-11-30)
 
 
