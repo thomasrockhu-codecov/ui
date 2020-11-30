@@ -82,3 +82,89 @@ export const notStartedMultiStepProgress = () => (
 notStartedMultiStepProgress.story = {
   name: 'Not Started Multi Step Progress',
 };
+
+export const multiStepProgressWithLongContent = () => (
+  <>
+    <h1>Lorem ipsum dolor</h1>
+    <MultiStepProgress
+      steps={mockedStepsNotStarted}
+      onStepClick={action(`step click`)}
+      onSubStepClick={action(`sub step click`)}
+      sticky
+    />
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium animi autem debitis
+      dolorem ducimus explicabo facilis fugiat impedit incidunt iusto laborum molestiae natus,
+      obcaecati, officiis provident quae, quaerat quia soluta.
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. At commodi dolor dolorum eius
+      molestiae qui repudiandae, voluptate. Ad aliquam dolor, labore natus necessitatibus nesciunt
+      temporibus. Ad deserunt eius recusandae? Aspernatur.
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium animi autem debitis
+      dolorem ducimus explicabo facilis fugiat impedit incidunt iusto laborum molestiae natus,
+      obcaecati, officiis provident quae, quaerat quia soluta.
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. At commodi dolor dolorum eius
+      molestiae qui repudiandae, voluptate. Ad aliquam dolor, labore natus necessitatibus nesciunt
+      temporibus. Ad deserunt eius recusandae? Aspernatur.
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium animi autem debitis
+      dolorem ducimus explicabo facilis fugiat impedit incidunt iusto laborum molestiae natus,
+      obcaecati, officiis provident quae, quaerat quia soluta.
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. At commodi dolor dolorum eius
+      molestiae qui repudiandae, voluptate. Ad aliquam dolor, labore natus necessitatibus nesciunt
+      temporibus. Ad deserunt eius recusandae? Aspernatur.
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium animi autem debitis
+      dolorem ducimus explicabo facilis fugiat impedit incidunt iusto laborum molestiae natus,
+      obcaecati, officiis provident quae, quaerat quia soluta.
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. At commodi dolor dolorum eius
+      molestiae qui repudiandae, voluptate. Ad aliquam dolor, labore natus necessitatibus nesciunt
+      temporibus. Ad deserunt eius recusandae? Aspernatur.
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium animi autem debitis
+      dolorem ducimus explicabo facilis fugiat impedit incidunt iusto laborum molestiae natus,
+      obcaecati, officiis provident quae, quaerat quia soluta.
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. At commodi dolor dolorum eius
+      molestiae qui repudiandae, voluptate. Ad aliquam dolor, labore natus necessitatibus nesciunt
+      temporibus. Ad deserunt eius recusandae? Aspernatur.
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium animi autem debitis
+      dolorem ducimus explicabo facilis fugiat impedit incidunt iusto laborum molestiae natus,
+      obcaecati, officiis provident quae, quaerat quia soluta.
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. At commodi dolor dolorum eius
+      molestiae qui repudiandae, voluptate. Ad aliquam dolor, labore natus necessitatibus nesciunt
+      temporibus. Ad deserunt eius recusandae? Aspernatur.
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium animi autem debitis
+      dolorem ducimus explicabo facilis fugiat impedit incidunt iusto laborum molestiae natus,
+      obcaecati, officiis provident quae, quaerat quia soluta.
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. At commodi dolor dolorum eius
+      molestiae qui repudiandae, voluptate. Ad aliquam dolor, labore natus necessitatibus nesciunt
+      temporibus. Ad deserunt eius recusandae? Aspernatur.
+    </p>
+  </>
+);
+
+multiStepProgressWithLongContent.story = {
+  name: 'Multi Step Progress With Long Content',
+};
