@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { action } from '@storybook/addon-actions';
 import { add, isSameWeek } from 'date-fns';
-import DatePicker from './DatePicker';
+import DatePicker from '../DatePicker';
 import { Button } from '../../..';
 
 export default {
@@ -14,7 +14,9 @@ export default {
 const dateNow = new Date();
 
 export const Default = () => {
-  return <DatePicker id="input-id" label="Default" onChange={action('onChange')} />;
+  return (
+    <DatePicker id="input-id" label="Default" onChange={action('onChange')} variant="REGULAR" />
+  );
 };
 
 export const SameWeekDisabled = () => {
@@ -24,6 +26,7 @@ export const SameWeekDisabled = () => {
       label="Disabled dates on same week"
       disableDate={(date) => isSameWeek(dateNow, date)}
       onChange={action('onChange')}
+      variant="REGULAR"
     />
   );
 };
@@ -35,6 +38,7 @@ export const SameWeekEnabled = () => {
       label="Enabled dates on same week"
       enableDate={(date) => isSameWeek(dateNow, date)}
       onChange={action('onChange')}
+      variant="REGULAR"
     />
   );
 };
@@ -49,6 +53,7 @@ export const Controlled = () => {
         id="controlled"
         label="Label"
         selectedDate={date}
+        variant="REGULAR"
         onChange={(selectedDate) => {
           setDate(selectedDate);
           action('onChange');
@@ -59,5 +64,5 @@ export const Controlled = () => {
 };
 
 export const DisabledInput = () => {
-  return <DatePicker id="disabled-input" label="Label" disabled />;
+  return <DatePicker id="disabled-input" label="Label" disabled variant="REGULAR" />;
 };
