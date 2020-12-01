@@ -123,10 +123,12 @@ const DoubleCalendar: React.FC<Props> = ({
           break;
 
         case 'ArrowRight':
-          if (focusedDay < NUMBER_OF_VISIBLE_WEEKDAYS_SINGLE - 1) {
-            setFocused([focusedWeek, focusedDay + 1]);
-          } else if (focusedWeek < NUMBER_OF_VISIBLE_WEEKS_SINGLE - 1) {
+          if (focusedDay === NUMBER_OF_VISIBLE_WEEKDAYS_SINGLE - 1) {
             setFocused([focusedWeek + 1, 0]);
+          } else if (focusedDay === NUMBER_OF_VISIBLE_WEEKDAYS_DOUBLE - 1) {
+            setFocused([focusedWeek + 1, 7]);
+          } else {
+            setFocused([focusedWeek, focusedDay + 1]);
           }
           break;
 
