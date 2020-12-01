@@ -95,12 +95,28 @@ const DoubleCalendar: React.FC<Props> = ({
     }, []),
   );
 
-  const stepToCalendarPage = (focusDate: Date, viewDate: Date = focusDate) => {
-    setViewedDate(viewDate);
-    const leftCalendar = getCalendar(subMonths(viewedDate, 1), {
-      locale: localeObj,
-    });
-    setFocused(getCalendarIndex(focusDate, leftCalendar));
+  const stepToCalendarPage = (focusDate: Date, steppingDirection: 'left' | 'right') => {
+    switch (steppingDirection) {
+      case 'left':
+        setViewedDate(focusDate);
+        // eslint-disable-next-line no-case-declarations
+        const newCalendarLeft = getCalendar(subMonths(viewedDate, 1), {
+          locale: localeObj,
+        });
+        setFocused(getCalendarIndex(focusDate, newCalendarLeft));
+        break;
+      case 'right':
+        setViewedDate(focusDate);
+        // eslint-disable-next-line no-case-declarations
+        const newCalendarRight = getCalendar(addMonths(viewedDate, 2), {
+          locale: localeObj,
+        });
+        setFocused(getCalendarIndex(focusDate, newCalendarRight));
+        break;
+
+      default:
+        break;
+    }
   };
 
   const handleKeyPress = (event: React.KeyboardEvent) => {
@@ -109,6 +125,7 @@ const DoubleCalendar: React.FC<Props> = ({
     if (R.isNil(focusedWeek) || R.isNil(focusedDay)) {
       setFocused([0, 0]);
     } else {
+      const focusDate = newDate(calendar.dates[focusedWeek][focusedDay]);
       switch (event.key) {
         case 'ArrowLeft':
           if (focusedDay > 0) {
@@ -117,13 +134,19 @@ const DoubleCalendar: React.FC<Props> = ({
             setFocused([focusedWeek - 1, NUMBER_OF_VISIBLE_WEEKDAYS_SINGLE - 1]);
           } else {
             // we are in the top left corner of calendar
-            const focusDate = newDate(calendar.dates[focusedWeek][focusedDay]);
-            stepToCalendarPage(focusDate);
+            stepToCalendarPage(focusDate, 'left');
           }
           break;
 
         case 'ArrowRight':
-          if (focusedDay === NUMBER_OF_VISIBLE_WEEKDAYS_SINGLE - 1) {
+          if (
+            focusedDay === NUMBER_OF_VISIBLE_WEEKDAYS_DOUBLE - 1 &&
+            focusedWeek === NUMBER_OF_VISIBLE_ROWS_DOUBLE - 1
+          ) {
+            stepToCalendarPage(focusDate, 'right');
+          } else if (isLastDayOfMonth(focusDate) && isSameMonth(focusDate, viewedDate)) {
+            setFocused([0, 11]);
+          } else if (focusedDay === NUMBER_OF_VISIBLE_WEEKDAYS_SINGLE - 1) {
             setFocused([focusedWeek + 1, 0]);
           } else if (focusedDay === NUMBER_OF_VISIBLE_WEEKDAYS_DOUBLE - 1) {
             setFocused([focusedWeek + 1, 7]);
@@ -212,6 +235,7 @@ const DoubleCalendar: React.FC<Props> = ({
                   key={day.toString()}
                   $withGutter={dayIndex === NUMBER_OF_VISIBLE_WEEKDAYS_SINGLE - 1}
                   aria-hidden
+                  tabIndex={-1}
                 />
               ) : (
                 <CalendarDay
