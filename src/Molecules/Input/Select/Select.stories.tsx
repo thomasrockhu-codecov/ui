@@ -900,7 +900,7 @@ export const linkWithDropdownAndSearchBoxSecondary = () =>
               label: x.label + counter.next(),
             })),
           ),
-      [accountOptions],
+      [accountOptions], // eslint-disable-line
     );
 
     // @ts-ignore

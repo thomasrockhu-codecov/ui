@@ -153,11 +153,11 @@ test('Multi select with actions (also disabled actions)', async () => {
 
   fireEvent.click(option0);
 
-  expect(handleChange).toBeCalledWith([options[0]]);
+  expect(handleChange).toHaveBeenCalledWith([options[0]]);
 
   fireEvent.click(option0);
 
-  expect(handleChange).toBeCalledWith([]);
+  expect(handleChange).toHaveBeenCalledWith([]);
 
   // After another double ArrowDown we should be on the 3rd ACTION
   // Which is disabled
@@ -170,20 +170,20 @@ test('Multi select with actions (also disabled actions)', async () => {
   expect(getCurrentActiveDescendant()).toBe(`${INPUT_ID}-action-2`);
 
   const preselectedAction = getByText(actions[2].label);
-  expect(actions[2].onSelect).not.toBeCalled();
+  expect(actions[2].onSelect).not.toHaveBeenCalled();
   fireEvent.click(preselectedAction);
   // Disabled => onSelect not called
-  expect(actions[2].onSelect).not.toBeCalled();
+  expect(actions[2].onSelect).not.toHaveBeenCalled();
 
   // Disabled => dont collapse after click
   const searchInput2 = queryByTestId('input-select-search-field');
   expect(searchInput2).not.toBeNull();
 
   const preselectedAction2 = getByText(actions[0].label);
-  expect(actions[0].onSelect).not.toBeCalled();
+  expect(actions[0].onSelect).not.toHaveBeenCalled();
   fireEvent.click(preselectedAction2);
   // This action is enabled => onSelect called
-  expect(actions[0].onSelect).toBeCalled();
+  expect(actions[0].onSelect).toHaveBeenCalled();
 
   // And dropdown collapsed
   const searchInput3 = queryByTestId('input-select-search-field');
@@ -241,13 +241,13 @@ test('Single select with actions', async () => {
   expect(getCurrentActiveDescendant()).toBe(`${INPUT_ID}-action-0`);
 
   const preselectedAction = getByText(actions[0].label);
-  expect(actions[0].onSelect).not.toBeCalled();
+  expect(actions[0].onSelect).not.toHaveBeenCalled();
   fireEvent.click(preselectedAction);
 
   // Selected item => dropdown in collapsed state
   const searchInput2 = queryByTestId('input-select-search-field');
   expect(searchInput2).toBeNull();
-  expect(actions[0].onSelect).toBeCalled();
+  expect(actions[0].onSelect).toHaveBeenCalled();
 });
 
 test('Multiselect without custom components and with select all', async () => {
@@ -466,7 +466,7 @@ test('onBlur, onChange, onFocus', async () => {
   await act(async () => {
     getByTestId('other-tabbable').focus();
     // Giving tick to update activeElement
-    await new Promise(res => setTimeout(res, 1));
+    await new Promise((res) => setTimeout(res, 1));
   });
 
   expect(handleBlur).toHaveBeenCalledTimes(1);

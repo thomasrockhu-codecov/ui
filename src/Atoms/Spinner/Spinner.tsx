@@ -86,7 +86,7 @@ const TimeoutSpinner: React.FC<PropsWithTheme> = ({ delay, ...restProps }) => {
       setSpinning(true);
     }, getDelay(delay));
     return () => clearTimeout(timer);
-  }, []);
+  }, []); // eslint-disable-line
 
   if (noDelay || spinning) {
     return <RawSpinner {...restProps} />;
