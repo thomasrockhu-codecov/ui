@@ -1,3 +1,16 @@
+# [5.2.0](https://github.com/nordnet/ui/compare/v5.1.0...v5.2.0) (2020-12-01)
+
+
+### Bug Fixes
+
+* 🐛 set input lineheight equal to height ([175f37b](https://github.com/nordnet/ui/commit/175f37b))
+* update snaphots ([bd85040](https://github.com/nordnet/ui/commit/bd85040))
+
+
+### Features
+
+* sticky multistepprogress on mobile devices ([66e0392](https://github.com/nordnet/ui/commit/66e0392))
+
 # [5.1.0](https://github.com/nordnet/ui/compare/v5.0.0...v5.1.0) (2020-11-30)
 
 
