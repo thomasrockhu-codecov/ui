@@ -900,7 +900,7 @@ export const linkWithDropdownAndSearchBoxSecondary = () =>
               label: x.label + counter.next(),
             })),
           ),
-      [accountOptions], // eslint-disable-line
+      [accountOptions], // eslint-disable-line react-hooks/exhaustive-deps
     );
 
     // @ts-ignore
@@ -980,7 +980,7 @@ export const linkWithDropdownAndSearchBoxTertiary = () =>
               label: x.label + counter.next(),
             })),
           ),
-      [accountOptions],
+      [accountOptions], // eslint-disable-line react-hooks/exhaustive-deps
     );
 
     // @ts-ignore
@@ -1060,7 +1060,7 @@ export const linkWithDropdownAndSearchBoxMultiselect = () =>
               label: x.label + counter.next(),
             })),
           ),
-      [accountOptions],
+      [accountOptions], // eslint-disable-line react-hooks/exhaustive-deps
     );
 
     // @ts-ignore
@@ -1156,7 +1156,7 @@ export const listPositionedToTheLeft = () =>
               label: x.label + counter.next(),
             })),
           ),
-      [accountOptions],
+      [accountOptions], // eslint-disable-line react-hooks/exhaustive-deps
     );
 
     // @ts-ignore
