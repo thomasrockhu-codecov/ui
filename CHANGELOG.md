@@ -1,3 +1,10 @@
+## [5.2.2](https://github.com/nordnet/ui/compare/v5.2.1...v5.2.2) (2020-12-01)
+
+
+### Bug Fixes
+
+* pagination large hover color contrast ([f504420](https://github.com/nordnet/ui/commit/f504420))
+
 ## [5.2.1](https://github.com/nordnet/ui/compare/v5.2.0...v5.2.1) (2020-12-01)
 
 
