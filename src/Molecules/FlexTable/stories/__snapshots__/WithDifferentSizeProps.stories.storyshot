@@ -214,6 +214,8 @@ exports[`Storyshots Molecules / FlexTable / With different size props Tables Wit
 
 .c16 {
   overflow: hidden;
+  padding-top: 4px !important;
+  padding-bottom: 4px;
 }
 
 .c20:focus {
@@ -228,8 +230,6 @@ exports[`Storyshots Molecules / FlexTable / With different size props Tables Wit
   background: #FFFFFF;
   margin-right: 0;
   margin-left: 0;
-  padding-top: 4px;
-  padding-bottom: 4px;
   padding-right: 4px;
   padding-left: 2px;
   border-left: 2px solid transparent;
@@ -248,8 +248,6 @@ exports[`Storyshots Molecules / FlexTable / With different size props Tables Wit
   background: #FFFFFF;
   margin-right: 0;
   margin-left: 0;
-  padding-top: 4px;
-  padding-bottom: 4px;
   padding-right: 4px;
   padding-left: 2px;
   border-left: 2px solid transparent;
@@ -278,6 +276,8 @@ exports[`Storyshots Molecules / FlexTable / With different size props Tables Wit
 
 .c7 {
   overflow: hidden;
+  padding-top: 4px !important;
+  padding-bottom: 4px;
 }
 
 .c2 {
@@ -854,6 +854,20 @@ exports[`Storyshots Molecules / FlexTable / With different size props Tables Wit
 
 .c17 {
   overflow: hidden;
+  padding-top: 4px !important;
+  padding-bottom: 4px;
+}
+
+.c27 {
+  overflow: hidden;
+  padding-top: 0px !important;
+  padding-bottom: 0px;
+}
+
+.c29 {
+  overflow: hidden;
+  padding-top: 8px !important;
+  padding-bottom: 8px;
 }
 
 .c20:focus {
@@ -868,8 +882,6 @@ exports[`Storyshots Molecules / FlexTable / With different size props Tables Wit
   background: #FFFFFF;
   margin-right: 0;
   margin-left: 0;
-  padding-top: 4px;
-  padding-bottom: 4px;
   padding-right: 4px;
   padding-left: 2px;
   border-left: 2px solid transparent;
@@ -888,8 +900,6 @@ exports[`Storyshots Molecules / FlexTable / With different size props Tables Wit
   background: #FFFFFF;
   margin-right: 0;
   margin-left: 0;
-  padding-top: 4px;
-  padding-bottom: 4px;
   padding-right: 4px;
   padding-left: 2px;
   border-left: 2px solid transparent;
@@ -908,94 +918,6 @@ exports[`Storyshots Molecules / FlexTable / With different size props Tables Wit
   padding-right: 0;
 }
 
-.c26 {
-  background: #FFFFFF;
-  margin-right: 0;
-  margin-left: 0;
-  padding-top: 0px;
-  padding-bottom: 0px;
-  padding-right: 4px;
-  padding-left: 2px;
-  border-left: 2px solid transparent;
-  border-bottom: 1px solid #EBEBE8;
-}
-
-.c26 > *:first-child {
-  padding-left: 0;
-}
-
-.c26 > *:nth-last-child(2) {
-  padding-right: 0;
-}
-
-.c27 {
-  background: #FFFFFF;
-  margin-right: 0;
-  margin-left: 0;
-  padding-top: 0px;
-  padding-bottom: 0px;
-  padding-right: 4px;
-  padding-left: 2px;
-  border-left: 2px solid transparent;
-  border-bottom: 1px solid #EBEBE8;
-}
-
-.c27:hover {
-  background: #F5F5F5;
-}
-
-.c27 > *:first-child {
-  padding-left: 0;
-}
-
-.c27 > *:nth-last-child(2) {
-  padding-right: 0;
-}
-
-.c28 {
-  background: #FFFFFF;
-  margin-right: 0;
-  margin-left: 0;
-  padding-top: 8px;
-  padding-bottom: 8px;
-  padding-right: 4px;
-  padding-left: 2px;
-  border-left: 2px solid transparent;
-  border-bottom: 1px solid #EBEBE8;
-}
-
-.c28 > *:first-child {
-  padding-left: 0;
-}
-
-.c28 > *:nth-last-child(2) {
-  padding-right: 0;
-}
-
-.c29 {
-  background: #FFFFFF;
-  margin-right: 0;
-  margin-left: 0;
-  padding-top: 8px;
-  padding-bottom: 8px;
-  padding-right: 4px;
-  padding-left: 2px;
-  border-left: 2px solid transparent;
-  border-bottom: 1px solid #EBEBE8;
-}
-
-.c29:hover {
-  background: #F5F5F5;
-}
-
-.c29 > *:first-child {
-  padding-left: 0;
-}
-
-.c29 > *:nth-last-child(2) {
-  padding-right: 0;
-}
-
 .c7 {
   border-bottom: 1px solid #282823;
   z-index: 1;
@@ -1006,6 +928,20 @@ exports[`Storyshots Molecules / FlexTable / With different size props Tables Wit
 
 .c9 {
   overflow: hidden;
+  padding-top: 4px !important;
+  padding-bottom: 4px;
+}
+
+.c26 {
+  overflow: hidden;
+  padding-top: 0px !important;
+  padding-bottom: 0px;
+}
+
+.c28 {
+  overflow: hidden;
+  padding-top: 8px !important;
+  padding-bottom: 8px;
 }
 
 .c4 {
@@ -1391,11 +1327,11 @@ exports[`Storyshots Molecules / FlexTable / With different size props Tables Wit
       role="table"
     >
       <div
-        className="c5 c26 c7"
+        className="c5 c6 c7"
         role="row"
       >
         <div
-          className="c8 c9"
+          className="c8 c26"
           role="columnheader"
         >
           <div
@@ -1409,7 +1345,7 @@ exports[`Storyshots Molecules / FlexTable / With different size props Tables Wit
           </div>
         </div>
         <div
-          className="c8 c9"
+          className="c8 c26"
           role="columnheader"
         >
           <div
@@ -1423,7 +1359,7 @@ exports[`Storyshots Molecules / FlexTable / With different size props Tables Wit
           </div>
         </div>
         <div
-          className="c8 c9"
+          className="c8 c26"
           role="columnheader"
         >
           <div
@@ -1437,7 +1373,7 @@ exports[`Storyshots Molecules / FlexTable / With different size props Tables Wit
           </div>
         </div>
         <div
-          className="c14 c9 c15"
+          className="c14 c26 c15"
           role="columnheader"
         >
           <div
@@ -1450,11 +1386,11 @@ exports[`Storyshots Molecules / FlexTable / With different size props Tables Wit
         </div>
       </div>
       <div
-        className="c5 c27"
+        className="c5 c16"
         role="row"
       >
         <div
-          className="c8 c17"
+          className="c8 c27"
           role="cell"
         >
           <div
@@ -1468,7 +1404,7 @@ exports[`Storyshots Molecules / FlexTable / With different size props Tables Wit
           </div>
         </div>
         <div
-          className="c8 c17"
+          className="c8 c27"
           role="cell"
         >
           <div
@@ -1482,7 +1418,7 @@ exports[`Storyshots Molecules / FlexTable / With different size props Tables Wit
           </div>
         </div>
         <div
-          className="c8 c17"
+          className="c8 c27"
           role="cell"
         >
           <div
@@ -1496,7 +1432,7 @@ exports[`Storyshots Molecules / FlexTable / With different size props Tables Wit
           </div>
         </div>
         <div
-          className="c14 c17 c15"
+          className="c14 c27 c15"
           role="cell"
         >
           <div
@@ -1559,11 +1495,11 @@ exports[`Storyshots Molecules / FlexTable / With different size props Tables Wit
         </div>
       </div>
       <div
-        className="c5 c27"
+        className="c5 c16"
         role="row"
       >
         <div
-          className="c8 c17"
+          className="c8 c27"
           role="cell"
         >
           <div
@@ -1577,7 +1513,7 @@ exports[`Storyshots Molecules / FlexTable / With different size props Tables Wit
           </div>
         </div>
         <div
-          className="c8 c17"
+          className="c8 c27"
           role="cell"
         >
           <div
@@ -1591,7 +1527,7 @@ exports[`Storyshots Molecules / FlexTable / With different size props Tables Wit
           </div>
         </div>
         <div
-          className="c8 c17"
+          className="c8 c27"
           role="cell"
         >
           <div
@@ -1605,7 +1541,7 @@ exports[`Storyshots Molecules / FlexTable / With different size props Tables Wit
           </div>
         </div>
         <div
-          className="c14 c17 c15"
+          className="c14 c27 c15"
           role="cell"
         >
           <div
@@ -1970,11 +1906,11 @@ exports[`Storyshots Molecules / FlexTable / With different size props Tables Wit
     role="table"
   >
     <div
-      className="c5 c28 c7"
+      className="c5 c6 c7"
       role="row"
     >
       <div
-        className="c8 c9"
+        className="c8 c28"
         role="columnheader"
       >
         <div
@@ -1988,7 +1924,7 @@ exports[`Storyshots Molecules / FlexTable / With different size props Tables Wit
         </div>
       </div>
       <div
-        className="c8 c9"
+        className="c8 c28"
         role="columnheader"
       >
         <div
@@ -2002,7 +1938,7 @@ exports[`Storyshots Molecules / FlexTable / With different size props Tables Wit
         </div>
       </div>
       <div
-        className="c8 c9"
+        className="c8 c28"
         role="columnheader"
       >
         <div
@@ -2016,7 +1952,7 @@ exports[`Storyshots Molecules / FlexTable / With different size props Tables Wit
         </div>
       </div>
       <div
-        className="c14 c9 c15"
+        className="c14 c28 c15"
         role="columnheader"
       >
         <div
@@ -2029,11 +1965,11 @@ exports[`Storyshots Molecules / FlexTable / With different size props Tables Wit
       </div>
     </div>
     <div
-      className="c5 c29"
+      className="c5 c16"
       role="row"
     >
       <div
-        className="c8 c17"
+        className="c8 c29"
         role="cell"
       >
         <div
@@ -2047,7 +1983,7 @@ exports[`Storyshots Molecules / FlexTable / With different size props Tables Wit
         </div>
       </div>
       <div
-        className="c8 c17"
+        className="c8 c29"
         role="cell"
       >
         <div
@@ -2061,7 +1997,7 @@ exports[`Storyshots Molecules / FlexTable / With different size props Tables Wit
         </div>
       </div>
       <div
-        className="c8 c17"
+        className="c8 c29"
         role="cell"
       >
         <div
@@ -2075,7 +2011,7 @@ exports[`Storyshots Molecules / FlexTable / With different size props Tables Wit
         </div>
       </div>
       <div
-        className="c14 c17 c15"
+        className="c14 c29 c15"
         role="cell"
       >
         <div
@@ -2138,11 +2074,11 @@ exports[`Storyshots Molecules / FlexTable / With different size props Tables Wit
       </div>
     </div>
     <div
-      className="c5 c29"
+      className="c5 c16"
       role="row"
     >
       <div
-        className="c8 c17"
+        className="c8 c29"
         role="cell"
       >
         <div
@@ -2156,7 +2092,7 @@ exports[`Storyshots Molecules / FlexTable / With different size props Tables Wit
         </div>
       </div>
       <div
-        className="c8 c17"
+        className="c8 c29"
         role="cell"
       >
         <div
@@ -2170,7 +2106,7 @@ exports[`Storyshots Molecules / FlexTable / With different size props Tables Wit
         </div>
       </div>
       <div
-        className="c8 c17"
+        className="c8 c29"
         role="cell"
       >
         <div
@@ -2184,7 +2120,7 @@ exports[`Storyshots Molecules / FlexTable / With different size props Tables Wit
         </div>
       </div>
       <div
-        className="c14 c17 c15"
+        className="c14 c29 c15"
         role="cell"
       >
         <div
@@ -2455,6 +2391,8 @@ exports[`Storyshots Molecules / FlexTable / With different size props Tables Wit
 
 .c17 {
   overflow: hidden;
+  padding-top: 4px !important;
+  padding-bottom: 4px;
 }
 
 .c20:focus {
@@ -2469,8 +2407,6 @@ exports[`Storyshots Molecules / FlexTable / With different size props Tables Wit
   background: #FFFFFF;
   margin-right: 0;
   margin-left: 0;
-  padding-top: 4px;
-  padding-bottom: 4px;
   padding-right: 4px;
   padding-left: 2px;
   border-left: 2px solid transparent;
@@ -2489,8 +2425,6 @@ exports[`Storyshots Molecules / FlexTable / With different size props Tables Wit
   background: #FFFFFF;
   margin-right: 0;
   margin-left: 0;
-  padding-top: 4px;
-  padding-bottom: 4px;
   padding-right: 4px;
   padding-left: 2px;
   border-left: 2px solid transparent;
@@ -2519,6 +2453,8 @@ exports[`Storyshots Molecules / FlexTable / With different size props Tables Wit
 
 .c9 {
   overflow: hidden;
+  padding-top: 4px !important;
+  padding-bottom: 4px;
 }
 
 .c4 {
@@ -3680,6 +3616,8 @@ exports[`Storyshots Molecules / FlexTable / With different size props Tables Wit
 
 .c16 {
   overflow: hidden;
+  padding-top: 8px !important;
+  padding-bottom: 8px;
 }
 
 .c19:focus {
@@ -3694,8 +3632,6 @@ exports[`Storyshots Molecules / FlexTable / With different size props Tables Wit
   background: #FFFFFF;
   margin-right: 0;
   margin-left: 0;
-  padding-top: 8px;
-  padding-bottom: 8px;
   padding-right: 4px;
   padding-left: 2px;
   border-left: 2px solid transparent;
@@ -3714,8 +3650,6 @@ exports[`Storyshots Molecules / FlexTable / With different size props Tables Wit
   background: #FFFFFF;
   margin-right: 0;
   margin-left: 0;
-  padding-top: 8px;
-  padding-bottom: 8px;
   padding-right: 4px;
   padding-left: 2px;
   border-left: 2px solid transparent;
@@ -3749,10 +3683,14 @@ exports[`Storyshots Molecules / FlexTable / With different size props Tables Wit
 
 .c8 {
   overflow: hidden;
+  padding-top: 8px !important;
+  padding-bottom: 8px;
 }
 
 .c26 {
   overflow: hidden;
+  padding-top: 8px !important;
+  padding-bottom: 8px;
 }
 
 .c3 {
@@ -3833,15 +3771,22 @@ exports[`Storyshots Molecules / FlexTable / With different size props Tables Wit
 }
 
 @media (min-width:976px) {
-  .c5 {
-    padding-top: 0px;
+  .c16 {
+    padding-top: 0px !important;
     padding-bottom: 0px;
   }
 }
 
 @media (min-width:976px) {
-  .c15 {
-    padding-top: 0px;
+  .c8 {
+    padding-top: 0px !important;
+    padding-bottom: 0px;
+  }
+}
+
+@media (min-width:976px) {
+  .c26 {
+    padding-top: 0px !important;
     padding-bottom: 0px;
   }
 }

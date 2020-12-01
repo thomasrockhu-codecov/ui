@@ -275,6 +275,8 @@ exports[`Storyshots Molecules / FlexTable / With Custom Cells Custom Cells 1`] =
 
 .c22 {
   overflow: hidden;
+  padding-top: 4px !important;
+  padding-bottom: 4px;
 }
 
 .c27:focus {
@@ -289,8 +291,6 @@ exports[`Storyshots Molecules / FlexTable / With Custom Cells Custom Cells 1`] =
   background: #FFFFFF;
   margin-right: 0;
   margin-left: 0;
-  padding-top: 4px;
-  padding-bottom: 4px;
   padding-right: 4px;
   padding-left: 2px;
   border-left: 2px solid transparent;
@@ -309,8 +309,6 @@ exports[`Storyshots Molecules / FlexTable / With Custom Cells Custom Cells 1`] =
   background: #FFFFFF;
   margin-right: 0;
   margin-left: 0;
-  padding-top: 4px;
-  padding-bottom: 4px;
   padding-right: 4px;
   padding-left: 2px;
   border-left: 2px solid transparent;
@@ -359,10 +357,14 @@ exports[`Storyshots Molecules / FlexTable / With Custom Cells Custom Cells 1`] =
 
 .c5 {
   overflow: hidden;
+  padding-top: 4px !important;
+  padding-bottom: 4px;
 }
 
 .c34 {
   overflow: hidden;
+  padding-top: 4px !important;
+  padding-bottom: 4px;
 }
 
 .c0 {
