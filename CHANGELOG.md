@@ -1,3 +1,10 @@
+## [5.2.1](https://github.com/nordnet/ui/compare/v5.2.0...v5.2.1) (2020-12-01)
+
+
+### Bug Fixes
+
+* colors for Private banking marketing card ([f1c0a47](https://github.com/nordnet/ui/commit/f1c0a47))
+
 # [5.2.0](https://github.com/nordnet/ui/compare/v5.1.0...v5.2.0) (2020-12-01)
 
 
