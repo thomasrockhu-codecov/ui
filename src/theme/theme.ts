@@ -255,6 +255,9 @@ const createColors = (type: ThemeColorsVersion): ThemeColors<typeof type> => {
       rawColor.black,
       rawColor.complementaryTurquoise1,
     ],
+    privateBankingBannerTitle:rawColor.gray6,
+    privateBankingBannerText:rawColor.white,
+    privateBankingBannerBackground:rawColor.gray6,
     paletteMap: [
       rawColor.complementaryBlue2,
       rawColor.complementaryBlue1,

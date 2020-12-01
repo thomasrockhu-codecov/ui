@@ -321,6 +321,12 @@ export type ThemeColors<Version extends ThemeColorsVersion> = {
   paletteBlue: string[];
   paletteTurquoise: string[];
   paletteLineGraph: string[];
+  /** gray6 */
+  privateBankingBannerTitle: RawColor['gray6'];
+  /** white */
+  privateBankingBannerText: RawColor['white'];
+  /** gray6 */
+  privateBankingBannerBackground: RawColor['gray6'];
   /** @deprecated
    * gray3 */
   disabled: RawColor['gray3'];
