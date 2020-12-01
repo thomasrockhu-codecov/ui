@@ -158,6 +158,14 @@ exports[`Storyshots Molecules / Pagination / Large 1 page 1`] = `
   border: 1px solid #BCBCB6;
 }
 
+.c3:hover span {
+  color: #FFFFFF;
+}
+
+.c3:hover svg {
+  fill: #FFFFFF;
+}
+
 .c9 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -178,7 +186,14 @@ exports[`Storyshots Molecules / Pagination / Large 1 page 1`] = `
   background-color: transparent;
   outline: none;
   background-color: #0046FF;
-  cursor: default;
+}
+
+cursor:default .c9:hover span {
+  color: #FFFFFF;
+}
+
+cursor:default .c9:hover svg {
+  fill: #FFFFFF;
 }
 
 .c7 {
@@ -458,6 +473,14 @@ exports[`Storyshots Molecules / Pagination / Large 2 pages 1`] = `
   border: 1px solid #BCBCB6;
 }
 
+.c3:hover span {
+  color: #FFFFFF;
+}
+
+.c3:hover svg {
+  fill: #FFFFFF;
+}
+
 .c9 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -478,7 +501,14 @@ exports[`Storyshots Molecules / Pagination / Large 2 pages 1`] = `
   background-color: transparent;
   outline: none;
   background-color: #0046FF;
-  cursor: default;
+}
+
+cursor:default .c9:hover span {
+  color: #FFFFFF;
+}
+
+cursor:default .c9:hover svg {
+  fill: #FFFFFF;
 }
 
 .c11 {
@@ -500,6 +530,14 @@ exports[`Storyshots Molecules / Pagination / Large 2 pages 1`] = `
   align-items: center;
   background-color: transparent;
   outline: none;
+}
+
+.c11:hover span {
+  color: #FFFFFF;
+}
+
+.c11:hover svg {
+  fill: #FFFFFF;
 }
 
 .c7 {
@@ -811,6 +849,14 @@ exports[`Storyshots Molecules / Pagination / Large 12 pages 1`] = `
   border: 1px solid #BCBCB6;
 }
 
+.c3:hover span {
+  color: #FFFFFF;
+}
+
+.c3:hover svg {
+  fill: #FFFFFF;
+}
+
 .c9 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -831,7 +877,14 @@ exports[`Storyshots Molecules / Pagination / Large 12 pages 1`] = `
   background-color: transparent;
   outline: none;
   background-color: #0046FF;
-  cursor: default;
+}
+
+cursor:default .c9:hover span {
+  color: #FFFFFF;
+}
+
+cursor:default .c9:hover svg {
+  fill: #FFFFFF;
 }
 
 .c11 {
@@ -853,6 +906,14 @@ exports[`Storyshots Molecules / Pagination / Large 12 pages 1`] = `
   align-items: center;
   background-color: transparent;
   outline: none;
+}
+
+.c11:hover span {
+  color: #FFFFFF;
+}
+
+.c11:hover svg {
+  fill: #FFFFFF;
 }
 
 .c13 {
@@ -1238,6 +1299,14 @@ exports[`Storyshots Molecules / Pagination / Large 999 pages 1`] = `
   border: 1px solid #BCBCB6;
 }
 
+.c3:hover span {
+  color: #FFFFFF;
+}
+
+.c3:hover svg {
+  fill: #FFFFFF;
+}
+
 .c9 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -1258,7 +1327,14 @@ exports[`Storyshots Molecules / Pagination / Large 999 pages 1`] = `
   background-color: transparent;
   outline: none;
   background-color: #0046FF;
-  cursor: default;
+}
+
+cursor:default .c9:hover span {
+  color: #FFFFFF;
+}
+
+cursor:default .c9:hover svg {
+  fill: #FFFFFF;
 }
 
 .c11 {
@@ -1280,6 +1356,14 @@ exports[`Storyshots Molecules / Pagination / Large 999 pages 1`] = `
   align-items: center;
   background-color: transparent;
   outline: none;
+}
+
+.c11:hover span {
+  color: #FFFFFF;
+}
+
+.c11:hover svg {
+  fill: #FFFFFF;
 }
 
 .c13 {
@@ -1665,6 +1749,14 @@ exports[`Storyshots Molecules / Pagination / Large Controlled Pagination 1`] = `
   border: 1px solid #BCBCB6;
 }
 
+.c3:hover span {
+  color: #FFFFFF;
+}
+
+.c3:hover svg {
+  fill: #FFFFFF;
+}
+
 .c9 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -1685,7 +1777,14 @@ exports[`Storyshots Molecules / Pagination / Large Controlled Pagination 1`] = `
   background-color: transparent;
   outline: none;
   background-color: #0046FF;
-  cursor: default;
+}
+
+cursor:default .c9:hover span {
+  color: #FFFFFF;
+}
+
+cursor:default .c9:hover svg {
+  fill: #FFFFFF;
 }
 
 .c11 {
@@ -1707,6 +1806,14 @@ exports[`Storyshots Molecules / Pagination / Large Controlled Pagination 1`] = `
   align-items: center;
   background-color: transparent;
   outline: none;
+}
+
+.c11:hover span {
+  color: #FFFFFF;
+}
+
+.c11:hover svg {
+  fill: #FFFFFF;
 }
 
 .c13 {
@@ -2092,6 +2199,14 @@ exports[`Storyshots Molecules / Pagination / Large Large 1`] = `
   border: 1px solid #BCBCB6;
 }
 
+.c3:hover span {
+  color: #FFFFFF;
+}
+
+.c3:hover svg {
+  fill: #FFFFFF;
+}
+
 .c9 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -2112,7 +2227,14 @@ exports[`Storyshots Molecules / Pagination / Large Large 1`] = `
   background-color: transparent;
   outline: none;
   background-color: #0046FF;
-  cursor: default;
+}
+
+cursor:default .c9:hover span {
+  color: #FFFFFF;
+}
+
+cursor:default .c9:hover svg {
+  fill: #FFFFFF;
 }
 
 .c11 {
@@ -2134,6 +2256,14 @@ exports[`Storyshots Molecules / Pagination / Large Large 1`] = `
   align-items: center;
   background-color: transparent;
   outline: none;
+}
+
+.c11:hover span {
+  color: #FFFFFF;
+}
+
+.c11:hover svg {
+  fill: #FFFFFF;
 }
 
 .c13 {
