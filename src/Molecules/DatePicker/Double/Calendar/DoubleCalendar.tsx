@@ -8,9 +8,10 @@ import {
   isSameDay,
   isSameMonth,
   isWithinInterval,
+  subMonths,
 } from 'date-fns';
 import { Box, Flexbox, Typography } from '../../../..';
-import { getCalendar, getLocale } from '../../shared/dateUtils';
+import { getCalendar, getCalendarIndex, getLocale, newDate } from '../../shared/dateUtils';
 import { FlexProps } from '../../../../Atoms/Flexbox/Flexbox.types';
 import { Props } from './DoubleCalendar.types';
 import {
@@ -50,6 +51,7 @@ const DoubleCalendar: React.FC<Props> = ({
   selectedStartDate,
   selectedEndDate,
   controlledFocus,
+  setViewedDate,
 }) => {
   const [[focusedWeek, focusedDay], setFocused] = useState<[number | null, number | null]>([
     null,
@@ -67,6 +69,24 @@ const DoubleCalendar: React.FC<Props> = ({
     return false;
   };
 
+  const localeObj = getLocale(locale);
+
+  const calendar = useMemo(() => {
+    const leftCalendar = getCalendar(viewedDate, {
+      locale: localeObj,
+    });
+    const rightCalendar = getCalendar(addMonths(viewedDate, 1), {
+      locale: localeObj,
+    });
+    return {
+      weekDays: [...leftCalendar.weekDays, ...rightCalendar.weekDays],
+      dates: leftCalendar.dates.map((leftWeek, index) => [
+        ...leftWeek,
+        ...rightCalendar.dates[index],
+      ]),
+    };
+  }, [localeObj, viewedDate]);
+
   const calendarDayRefs = useRef(
     useMemo(() => {
       return [...Array(NUMBER_OF_VISIBLE_ROWS_DOUBLE)].map(() =>
@@ -74,6 +94,14 @@ const DoubleCalendar: React.FC<Props> = ({
       );
     }, []),
   );
+
+  const stepToCalendarPage = (focusDate: Date, viewDate: Date = focusDate) => {
+    setViewedDate(viewDate);
+    const leftCalendar = getCalendar(subMonths(viewedDate, 1), {
+      locale: localeObj,
+    });
+    setFocused(getCalendarIndex(focusDate, leftCalendar));
+  };
 
   const handleKeyPress = (event: React.KeyboardEvent) => {
     event.stopPropagation();
@@ -87,6 +115,10 @@ const DoubleCalendar: React.FC<Props> = ({
             setFocused([focusedWeek, focusedDay - 1]);
           } else if (focusedWeek > 0) {
             setFocused([focusedWeek - 1, NUMBER_OF_VISIBLE_WEEKDAYS_SINGLE - 1]);
+          } else {
+            // we are in the top left corner of calendar
+            const focusDate = newDate(calendar.dates[focusedWeek][focusedDay]);
+            stepToCalendarPage(focusDate);
           }
           break;
 
@@ -135,24 +167,6 @@ const DoubleCalendar: React.FC<Props> = ({
 
   const leftViewedDate = viewedDate;
   const rightViewedDate = addMonths(leftViewedDate, 1);
-
-  const localeObj = getLocale(locale);
-
-  const calendar = useMemo(() => {
-    const leftCalendar = getCalendar(viewedDate, {
-      locale: localeObj,
-    });
-    const rightCalendar = getCalendar(addMonths(viewedDate, 1), {
-      locale: localeObj,
-    });
-    return {
-      weekDays: [...leftCalendar.weekDays, ...rightCalendar.weekDays],
-      dates: leftCalendar.dates.map((leftWeek, index) => [
-        ...leftWeek,
-        ...rightCalendar.dates[index],
-      ]),
-    };
-  }, [localeObj, viewedDate]);
 
   useEffect(() => {
     if (controlledFocus) setFocused([0, 0]);

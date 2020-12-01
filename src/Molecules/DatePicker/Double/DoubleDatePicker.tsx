@@ -287,7 +287,7 @@ const DoubleDatePicker = React.forwardRef<HTMLDivElement, Props>((props, ref) =>
         onClick={onDateClick}
         selectedStartDate={selectedStartDate as Date}
         selectedEndDate={selectedEndDate as Date}
-        setViewedDate={() => ({})}
+        setViewedDate={setViewedDate}
         controlledFocus={controlledFocus}
       />
     </Box>
