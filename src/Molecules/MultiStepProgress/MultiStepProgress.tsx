@@ -1,8 +1,9 @@
-import React, { useState } from 'react';
+import React, { useState, useRef } from 'react';
 import styled from 'styled-components';
 import Card from '../../Atoms/Card';
 import { TopLevel } from './TopLevel';
 import { MultiStepProgressComponent } from './MultiStepProgress.types';
+import { useIntersect } from '../../common/Hooks';
 import { Drawer, Media, Flexbox, Typography } from '../..';
 
 const StyledDrawer = styled(Drawer)`
@@ -11,22 +12,49 @@ const StyledDrawer = styled(Drawer)`
   }
 `;
 
-const StyledCard = styled(Card)`
+const StyledCard = styled(Card)<{ $isSticky: boolean }>`
+  ${(p) => p.theme.media.lessThan(p.theme.breakpoints.md)} {
+    position: ${(p) => (p.$isSticky ? 'fixed' : 'static')};
+    top: 0;
+    left: 0;
+    width: 100%;
+  }
   background: transparent;
+`;
+
+const StyledPlaceholderDiv = styled.div<{ $isSticky: boolean; $elementHeight: number }>`
+  ${(p) => p.theme.media.lessThan(p.theme.breakpoints.md)} {
+    padding-top: ${(p) => (p.$isSticky ? p.$elementHeight : 0)}px;
+  }
+`;
+
+const IntersectionTop = styled.div`
+  ${(p) => p.theme.media.lessThan(p.theme.breakpoints.md)} {
+    height: 1px;
+    width: 1px;
+    pointer-events: none;
+  }
 `;
 
 export const MultiStepProgress: MultiStepProgressComponent = ({
   onStepClick,
   onSubStepClick,
   steps,
-  title = 'Progress',
-  titleDone = 'Completed',
-  titleNotDone = 'Not completed',
-  mobileDrawerTitle = 'Start monthly savings',
+  title = '',
+  titleDone = '',
+  titleNotDone = '',
+  mobileDrawerTitle = '',
   closeDrawerOnStepClick = false,
+  sticky = false,
 }) => {
   // TODO: use context to pass these lovely props down the rabbit hole
   const [open, setOpen] = useState(false);
+  const [setIntersectionTopRef, intersectionTopRatio] = useIntersect<HTMLDivElement>();
+  const styledCard = useRef<HTMLDivElement>(null);
+
+  const isSticky = intersectionTopRatio === 0 && sticky;
+
+  const elementHeight = styledCard?.current?.getBoundingClientRect()?.height || 0;
 
   const toggleDrawer = () => {
     setOpen(!open);
@@ -43,7 +71,10 @@ export const MultiStepProgress: MultiStepProgressComponent = ({
 
   return (
     <>
-      <StyledCard>
+      {sticky && <IntersectionTop ref={setIntersectionTopRef} />}
+
+      {sticky && <StyledPlaceholderDiv $elementHeight={elementHeight} $isSticky={isSticky} />}
+      <StyledCard $isSticky={isSticky} ref={styledCard}>
         <div role="group" aria-label={title}>
           <TopLevel
             drawerOpen={open}
@@ -56,7 +87,6 @@ export const MultiStepProgress: MultiStepProgressComponent = ({
           />
         </div>
       </StyledCard>
-
       <Media query={(t) => t.media.lessThan(t.breakpoints.md)}>
         <StyledDrawer
           onClose={onDrawerClose}
