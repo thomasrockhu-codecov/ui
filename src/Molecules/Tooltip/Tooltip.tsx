@@ -23,6 +23,7 @@ const StyledTooltip = styled(CleanTooltipPopup)`
   background: ${(p) => p.theme.color.bubbleBackground};
   border: solid ${BORDER_SIZE}px ${(p) => p.theme.color.bubbleBorder};
   max-width: ${(p) => p.theme.spacing.unit(p.maxWidth)}px;
+  word-break: break-all;
 `;
 
 const positionOver: Position = (triggerRect, tooltipRect) => {
