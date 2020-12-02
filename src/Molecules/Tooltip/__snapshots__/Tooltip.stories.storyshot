@@ -276,6 +276,27 @@ exports[`Storyshots Molecules / Tooltip Integration: With Drawer and Modal 1`] =
 </portal-dummy>
 `;
 
+exports[`Storyshots Molecules / Tooltip With Very Long Word 1`] = `
+.c0 {
+  display: block;
+}
+
+<button
+  className="c0"
+  data-reach-tooltip-trigger=""
+  onBlur={[Function]}
+  onFocus={[Function]}
+  onKeyDown={[Function]}
+  onMouseDown={[Function]}
+  onMouseEnter={[Function]}
+  onMouseLeave={[Function]}
+  onMouseMove={[Function]}
+  type="button"
+>
+  Hover me
+</button>
+`;
+
 exports[`Storyshots Molecules / Tooltip With position defined 1`] = `
 .c0 {
   display: -webkit-box;
