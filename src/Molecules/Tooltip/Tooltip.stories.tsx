@@ -10,7 +10,7 @@ export default {
   },
 };
 
-const label = 'Informationina Tooltip should not be vital for the user to complete a task';
+const label = 'Information in a Tooltip should not be vital for the user to complete a task';
 
 const Button = styled.button`
   display: block;
