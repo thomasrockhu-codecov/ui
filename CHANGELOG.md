@@ -1,3 +1,10 @@
+## [5.3.2](https://github.com/nordnet/ui/compare/v5.3.1...v5.3.2) (2020-12-02)
+
+
+### Bug Fixes
+
+* fix skip ([3738080](https://github.com/nordnet/ui/commit/3738080))
+
 ## [5.3.1](https://github.com/nordnet/ui/compare/v5.3.0...v5.3.1) (2020-12-02)
 
 
