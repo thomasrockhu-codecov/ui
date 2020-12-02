@@ -11,6 +11,8 @@ on:
 
 env:
   CI: true
+  GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
+  NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
 
 jobs:
   validate:
@@ -22,6 +24,9 @@ jobs:
     steps:
       - name: checkout
         uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
+          persist-credentials: false
       - name: setup Node.js ${{ matrix.node-version }}
         uses: actions/setup-node@v1
         with:
@@ -42,6 +47,9 @@ jobs:
     steps:
       - name: checkout
         uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
+          persist-credentials: false
       - name: setup Node.js ${{ matrix.node-version }}
         uses: actions/setup-node@v1
         with:
