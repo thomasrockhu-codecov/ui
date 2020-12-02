@@ -1,7 +1,17 @@
 name: build
-on: [push, pull_request]
+
+on:
+  push:
+    branches:
+      - master
+      - beta
+
+  # Run tests for any PRs.
+  pull_request:
+
 env:
   CI: true
+
 jobs:
   validate:
     name: 'Validate'
