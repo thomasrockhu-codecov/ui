@@ -20,9 +20,9 @@ jobs:
         run: yarn install --ignore-engines
       - name: Validate
         run: |
-          commitlint
-          npm run lint
-          npm run test-ci
+          yarn commitlint
+          yarn lint
+          yarn test-ci
   release:
     name: 'Release'
     needs: validate
@@ -35,9 +35,9 @@ jobs:
         if: ${{ github.event_name != 'pull_request' && github.ref == 'refs/heads/master' }}
         run: |
           node -v && npm -v && yarn -v
-          npm run semantic-release
+          yarn semantic-release
       - name: Beta release
         if: ${{ github.event_name != 'pull_request' && github.ref == 'refs/heads/beta' }}
         run: |
           node -v && npm -v && yarn -v
-          npm run semantic-release
+          yarn semantic-release
