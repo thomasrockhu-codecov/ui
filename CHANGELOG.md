@@ -1,3 +1,26 @@
+# [5.3.0](https://github.com/nordnet/ui/compare/v5.2.2...v5.3.0) (2020-12-02)
+
+
+### Bug Fixes
+
+* add checkout step to release job ([416aa27](https://github.com/nordnet/ui/commit/416aa27))
+* add e flag to commitlint ([2969b1a](https://github.com/nordnet/ui/commit/2969b1a))
+* add fill instead of color for icons ([67cac2b](https://github.com/nordnet/ui/commit/67cac2b))
+* add needs to release job ([adf5229](https://github.com/nordnet/ui/commit/adf5229))
+* add tokens and checkout options to github actions ([6342942](https://github.com/nordnet/ui/commit/6342942))
+* added word-break break-all for longer words ([4295d78](https://github.com/nordnet/ui/commit/4295d78))
+* make commitlint run on validate ([50a5ac7](https://github.com/nordnet/ui/commit/50a5ac7))
+* missing storyshot ([45d34cb](https://github.com/nordnet/ui/commit/45d34cb))
+* move release job to own step ([3656881](https://github.com/nordnet/ui/commit/3656881))
+* remove commitlint from github actions for now ([572384c](https://github.com/nordnet/ui/commit/572384c))
+* run push event only on master and beta branches ([265e351](https://github.com/nordnet/ui/commit/265e351))
+* word ([e1eea43](https://github.com/nordnet/ui/commit/e1eea43))
+
+
+### Features
+
+* migrate to github actions instead of travis ([400dd97](https://github.com/nordnet/ui/commit/400dd97))
+
 ## [5.2.2](https://github.com/nordnet/ui/compare/v5.2.1...v5.2.2) (2020-12-01)
 
 
