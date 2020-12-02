@@ -15,7 +15,13 @@ const dateNow = new Date();
 
 export const Default = () => {
   return (
-    <DatePicker id="input-id" label="Default" onChange={action('onChange')} variant="REGULAR" />
+    <DatePicker
+      id="input-id"
+      label="Default"
+      onChange={action('onChange')}
+      variant="REGULAR"
+      open
+    />
   );
 };
 

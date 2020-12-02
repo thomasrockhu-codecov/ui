@@ -20,7 +20,7 @@ import {
   parseDateStrings,
 } from '../shared/dateUtils';
 import Header from './Header';
-import Calendar from './Calendar';
+import { CalendarV2 } from './Calendar';
 import { RANGE_DATE_PICKER, REGULAR_DATE_PICKER, DEFAULT_INPUT_WIDTH } from '../shared/constants';
 
 const StyledInputText = styled(Input.Text)`
@@ -89,7 +89,11 @@ const DatePicker = React.forwardRef<HTMLDivElement, Props>((props, ref) => {
   const [selectedEndDate, setSelectedEndDate] = useState<Date | null>(selectedEndDateProp || null);
   const [inputValue, setInputValue] = useState<string>(inputValueProp || '');
 
-  const focusedState = useState<[number | null, number | null]>([null, null]);
+  // Old soliution, remove these two lines
+  // const focusedState = useState<[number | null, number | null]>([null, null]);
+  // const setFocused = focusedState[1];
+
+  const focusedState = useState<number | null>(null);
   const setFocused = focusedState[1];
 
   useEffect(() => {
@@ -183,7 +187,8 @@ const DatePicker = React.forwardRef<HTMLDivElement, Props>((props, ref) => {
     (date: Date) => {
       if (date && !isSameMonth(date, viewedDate)) {
         setViewedDate(newDate(date));
-        setFocused([null, null]);
+        // setFocused([null, null]);
+        setFocused(null);
       }
       if (variant === REGULAR_DATE_PICKER) handleDateClickRegular(date);
       else handleDateClickRange(date);
@@ -272,7 +277,8 @@ const DatePicker = React.forwardRef<HTMLDivElement, Props>((props, ref) => {
       case 'ArrowRight':
       case 'ArrowDown':
       case 'ArrowLeft':
-        if (!inputValue) setFocused([0, 0]);
+        // if (!inputValue) setFocused([0, 0]);
+        if (!inputValue) setFocused(0);
         break;
 
       case 'Enter':
@@ -313,7 +319,8 @@ const DatePicker = React.forwardRef<HTMLDivElement, Props>((props, ref) => {
       my={3}
       mx={2}
       onBlur={() => {
-        setFocused([null, null]);
+        // setFocused([null, null]);
+        setFocused(null);
       }}
     >
       <Header
@@ -326,15 +333,10 @@ const DatePicker = React.forwardRef<HTMLDivElement, Props>((props, ref) => {
         onYearChange={onYearChange}
         yearSelectLength={yearSelectLength}
       />
-      <Calendar
-        disableDate={disableDate}
-        enableDate={enableDate}
+      <CalendarV2
         viewedDate={viewedDate}
         setViewedDate={setViewedDate}
-        locale={locale}
         onClick={onDateClick}
-        selectedDate={selectedDate as Date}
-        selectedEndDate={selectedEndDate as Date}
         focusedState={focusedState}
       />
     </Box>
@@ -344,7 +346,8 @@ const DatePicker = React.forwardRef<HTMLDivElement, Props>((props, ref) => {
 
   const selfRef = useRef<HTMLDivElement>(null);
   useOnClickOutside(selfRef, () => {
-    setFocused([null, null]);
+    // setFocused([null, null]);
+    setFocused(null);
     setOpen(false);
   });
 

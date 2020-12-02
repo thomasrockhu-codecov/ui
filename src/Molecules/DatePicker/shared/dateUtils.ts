@@ -125,6 +125,16 @@ export const getCalendar = (now: Date, opts?: Options): CalendarType => {
   return calendar;
 };
 
+export const getCalendarV2 = (now: Date, opts?: Options): any => {
+  const firstCalDay = startOfWeek(new Date(now.getFullYear(), now.getMonth(), 0), {
+    locale: opts?.locale,
+    weekStartsOn: 1,
+  });
+  const calendar = [...Array(42)].map((_, i) => addDays(firstCalDay, i));
+
+  return calendar;
+};
+
 export const getCalendarIndex = (now: Date, calendar: CalendarType): [number, number] => {
   // the difference in weeks from [0][0] will be the week index.
   // the difference in days from [0+weekIndex][0] will be the days index.
