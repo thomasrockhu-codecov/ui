@@ -1,3 +1,12 @@
+## [5.3.1](https://github.com/nordnet/ui/compare/v5.3.0...v5.3.1) (2020-12-02)
+
+
+### Bug Fixes
+
+* remove dublicated changelog version ([3f1fb80](https://github.com/nordnet/ui/commit/3f1fb80))
+* renable validate job again and update build badge ([f4392c7](https://github.com/nordnet/ui/commit/f4392c7))
+* try to fix release skip ([052f360](https://github.com/nordnet/ui/commit/052f360))
+
 # [5.3.0](https://github.com/nordnet/ui/compare/v5.2.2...v5.3.0) (2020-12-02)
 
 
