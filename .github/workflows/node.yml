@@ -20,7 +20,7 @@ jobs:
         run: yarn install --ignore-engines
       - name: Validate
         run: |
-          yarn commitlint
+          yarn commitlint -e
           yarn lint
           yarn test-ci
   release:
