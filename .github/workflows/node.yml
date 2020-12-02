@@ -18,7 +18,6 @@ jobs:
   validate:
     name: 'Validate'
     runs-on: ubuntu-latest
-    if: "contains(toJSON(github.event.commits.*.message), '[ignore]')" # skip validate for now
     strategy:
       matrix:
         node-version: [12.18.2]
@@ -40,7 +39,7 @@ jobs:
           yarn test-ci
   release:
     name: 'Release'
-    # needs: validate
+    needs: validate
     runs-on: ubuntu-latest
     if: "! contains(toJSON(github.event.commits.*.message), '[skip ci]')"
     strategy:
