@@ -10,7 +10,7 @@ export default {
   },
 };
 
-const label = 'Information in a Tooltip should not be vital for the user to complete a task';
+const label = 'Informationina Tooltip should not be vital for the user to complete a task';
 
 const Button = styled.button`
   display: block;
@@ -24,6 +24,18 @@ export const defaultStory = () => (
 
 defaultStory.story = {
   name: 'Default',
+};
+
+const veryLongLabel = 'Llanfairpwllgwyngyllgogerychwyrndrob';
+
+export const withVeryLongWord = () => (
+  <Tooltip label={veryLongLabel}>
+    <Button type="button">Hover me</Button>
+  </Tooltip>
+);
+
+withVeryLongWord.story = {
+  name: 'With Very Long Word',
 };
 
 export const withPosition = () => (
