@@ -3,8 +3,8 @@ on: [push, pull_request]
 env:
   CI: true
 jobs:
-  test:
-    name: 'Validate and release'
+  validate:
+    name: 'Validate'
     runs-on: ubuntu-latest
     strategy:
       matrix:
@@ -20,9 +20,16 @@ jobs:
         run: yarn install --ignore-engines
       - name: Validate
         run: |
-          commitlint-travis
+          commitlint
           npm run lint
           npm run test-ci
+  release:
+    name: 'Release'
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node-version: [12]
+    steps:
       - name: Release
         if: ${{ github.event_name != 'pull_request' && github.ref == 'refs/heads/master' }}
         run: |
