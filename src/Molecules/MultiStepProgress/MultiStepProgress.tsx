@@ -13,13 +13,15 @@ const StyledDrawer = styled(Drawer)`
 `;
 
 const StyledCard = styled(Card)<{ $isSticky: boolean }>`
+  background: transparent;
   ${(p) => p.theme.media.lessThan(p.theme.breakpoints.md)} {
     position: ${(p) => (p.$isSticky ? 'fixed' : 'static')};
     top: 0;
     left: 0;
     width: 100%;
+    z-index: ${(p) => p.theme.zIndex.header};
+    background: ${(p) => p.theme.color.card};
   }
-  background: transparent;
 `;
 
 const StyledPlaceholderDiv = styled.div<{ $isSticky: boolean; $elementHeight: number }>`
