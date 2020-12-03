@@ -1,3 +1,10 @@
+## [5.3.4](https://github.com/nordnet/ui/compare/v5.3.3...v5.3.4) (2020-12-03)
+
+
+### Bug Fixes
+
+* add background color and z-index ([f320bf1](https://github.com/nordnet/ui/commit/f320bf1))
+
 ## [5.3.3](https://github.com/nordnet/ui/compare/v5.3.2...v5.3.3) (2020-12-03)
 
 
