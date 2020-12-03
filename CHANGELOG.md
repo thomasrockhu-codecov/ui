@@ -1,3 +1,10 @@
+## [5.3.3](https://github.com/nordnet/ui/compare/v5.3.2...v5.3.3) (2020-12-03)
+
+
+### Bug Fixes
+
+* remove skip ci check from github actions ([e5bcda9](https://github.com/nordnet/ui/commit/e5bcda9))
+
 ## [5.3.2](https://github.com/nordnet/ui/compare/v5.3.1...v5.3.2) (2020-12-02)
 
 
