@@ -1944,7 +1944,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
   display: block;
 }
 
-.c24 {
+.c23 {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -1958,7 +1958,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
   display: block;
 }
 
-.c25 {
+.c24 {
   -webkit-transform: rotate(0deg);
   -ms-transform: rotate(0deg);
   transform: rotate(0deg);
@@ -2074,8 +2074,26 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
   padding-bottom: 4px;
 }
 
+.c20 {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+}
+
 .c20:focus {
   outline: none;
+}
+
+.c18 {
+  padding-top: 0 !important;
+  padding-bottom: 0;
+  -webkit-align-self: stretch;
+  -ms-flex-item-align: stretch;
+  align-self: stretch;
 }
 
 .c14 {
@@ -2188,15 +2206,11 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
 }
 
 @media not all and (max-width:975px) {
-  .c18 {
-    display: none;
-  }
+
 }
 
 @media not all and (min-width:976px) {
-  .c23 {
-    display: none;
-  }
+
 }
 
 @media (min-width:760px) {
@@ -2414,66 +2428,58 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
         </div>
       </div>
       <div
-        className="c13 c16 c14"
+        className="c13 c16 c18 c14"
         role="cell"
       >
-        <div
-          className="c18"
+        <button
+          aria-expanded={false}
+          className="NormalizedButton__Button-ey7f5x-0 c19 c20"
+          disabled={true}
+          onClick={[Function]}
+          type="button"
         >
-          <button
-            aria-expanded={false}
-            className="NormalizedButton__Button-ey7f5x-0 c19 c20"
-            disabled={true}
-            onClick={[Function]}
-            type="button"
+          <span
+            className="c21"
           >
-            <span
-              className="c21"
+            <svg
+              aria-hidden="true"
+              className="c22"
+              focusable="false"
+              preserveAspectRatio="xMidYMid meet"
+              role="presentation"
+              viewBox="0 0 24 24"
             >
-              <svg
-                aria-hidden="true"
-                className="c22"
-                focusable="false"
-                preserveAspectRatio="xMidYMid meet"
-                role="presentation"
-                viewBox="0 0 24 24"
-              >
-                <polygon
-                  points="19.969 4 24 8.027 12 20 0 8.027 4.031 4 12 11.952"
-                />
-              </svg>
-            </span>
-          </button>
-        </div>
-        <div
-          className="c23"
+              <polygon
+                points="19.969 4 24 8.027 12 20 0 8.027 4.031 4 12 11.952"
+              />
+            </svg>
+          </span>
+        </button>
+        <button
+          aria-expanded={false}
+          className="NormalizedButton__Button-ey7f5x-0 c19 c20"
+          disabled={true}
+          onClick={[Function]}
+          type="button"
         >
-          <button
-            aria-expanded={false}
-            className="NormalizedButton__Button-ey7f5x-0 c19 c20"
-            disabled={true}
-            onClick={[Function]}
-            type="button"
+          <span
+            className="c21"
           >
-            <span
-              className="c21"
+            <svg
+              aria-hidden="true"
+              className="c23 c24"
+              direction="down"
+              focusable="false"
+              preserveAspectRatio="xMidYMid meet"
+              role="presentation"
+              viewBox="0 0 16 16"
             >
-              <svg
-                aria-hidden="true"
-                className="c24 c25"
-                direction="down"
-                focusable="false"
-                preserveAspectRatio="xMidYMid meet"
-                role="presentation"
-                viewBox="0 0 16 16"
-              >
-                <polygon
-                  points="14.620 3.580, 16.000 5.020, 8.000 12.730, 0.000 5.030, 1.400 3.580, 8.000 9.96"
-                />
-              </svg>
-            </span>
-          </button>
-        </div>
+              <polygon
+                points="14.620 3.580, 16.000 5.020, 8.000 12.730, 0.000 5.030, 1.400 3.580, 8.000 9.96"
+              />
+            </svg>
+          </span>
+        </button>
       </div>
     </div>
     <div
@@ -2545,66 +2551,58 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
         </div>
       </div>
       <div
-        className="c13 c16 c14"
+        className="c13 c16 c18 c14"
         role="cell"
       >
-        <div
-          className="c18"
+        <button
+          aria-expanded={false}
+          className="NormalizedButton__Button-ey7f5x-0 c19 c20"
+          disabled={true}
+          onClick={[Function]}
+          type="button"
         >
-          <button
-            aria-expanded={false}
-            className="NormalizedButton__Button-ey7f5x-0 c19 c20"
-            disabled={true}
-            onClick={[Function]}
-            type="button"
+          <span
+            className="c21"
           >
-            <span
-              className="c21"
+            <svg
+              aria-hidden="true"
+              className="c22"
+              focusable="false"
+              preserveAspectRatio="xMidYMid meet"
+              role="presentation"
+              viewBox="0 0 24 24"
             >
-              <svg
-                aria-hidden="true"
-                className="c22"
-                focusable="false"
-                preserveAspectRatio="xMidYMid meet"
-                role="presentation"
-                viewBox="0 0 24 24"
-              >
-                <polygon
-                  points="19.969 4 24 8.027 12 20 0 8.027 4.031 4 12 11.952"
-                />
-              </svg>
-            </span>
-          </button>
-        </div>
-        <div
-          className="c23"
+              <polygon
+                points="19.969 4 24 8.027 12 20 0 8.027 4.031 4 12 11.952"
+              />
+            </svg>
+          </span>
+        </button>
+        <button
+          aria-expanded={false}
+          className="NormalizedButton__Button-ey7f5x-0 c19 c20"
+          disabled={true}
+          onClick={[Function]}
+          type="button"
         >
-          <button
-            aria-expanded={false}
-            className="NormalizedButton__Button-ey7f5x-0 c19 c20"
-            disabled={true}
-            onClick={[Function]}
-            type="button"
+          <span
+            className="c21"
           >
-            <span
-              className="c21"
+            <svg
+              aria-hidden="true"
+              className="c23 c24"
+              direction="down"
+              focusable="false"
+              preserveAspectRatio="xMidYMid meet"
+              role="presentation"
+              viewBox="0 0 16 16"
             >
-              <svg
-                aria-hidden="true"
-                className="c24 c25"
-                direction="down"
-                focusable="false"
-                preserveAspectRatio="xMidYMid meet"
-                role="presentation"
-                viewBox="0 0 16 16"
-              >
-                <polygon
-                  points="14.620 3.580, 16.000 5.020, 8.000 12.730, 0.000 5.030, 1.400 3.580, 8.000 9.96"
-                />
-              </svg>
-            </span>
-          </button>
-        </div>
+              <polygon
+                points="14.620 3.580, 16.000 5.020, 8.000 12.730, 0.000 5.030, 1.400 3.580, 8.000 9.96"
+              />
+            </svg>
+          </span>
+        </button>
       </div>
     </div>
     <div
@@ -2676,66 +2674,58 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
         </div>
       </div>
       <div
-        className="c13 c16 c14"
+        className="c13 c16 c18 c14"
         role="cell"
       >
-        <div
-          className="c18"
+        <button
+          aria-expanded={false}
+          className="NormalizedButton__Button-ey7f5x-0 c19 c20"
+          disabled={true}
+          onClick={[Function]}
+          type="button"
         >
-          <button
-            aria-expanded={false}
-            className="NormalizedButton__Button-ey7f5x-0 c19 c20"
-            disabled={true}
-            onClick={[Function]}
-            type="button"
+          <span
+            className="c21"
           >
-            <span
-              className="c21"
+            <svg
+              aria-hidden="true"
+              className="c22"
+              focusable="false"
+              preserveAspectRatio="xMidYMid meet"
+              role="presentation"
+              viewBox="0 0 24 24"
             >
-              <svg
-                aria-hidden="true"
-                className="c22"
-                focusable="false"
-                preserveAspectRatio="xMidYMid meet"
-                role="presentation"
-                viewBox="0 0 24 24"
-              >
-                <polygon
-                  points="19.969 4 24 8.027 12 20 0 8.027 4.031 4 12 11.952"
-                />
-              </svg>
-            </span>
-          </button>
-        </div>
-        <div
-          className="c23"
+              <polygon
+                points="19.969 4 24 8.027 12 20 0 8.027 4.031 4 12 11.952"
+              />
+            </svg>
+          </span>
+        </button>
+        <button
+          aria-expanded={false}
+          className="NormalizedButton__Button-ey7f5x-0 c19 c20"
+          disabled={true}
+          onClick={[Function]}
+          type="button"
         >
-          <button
-            aria-expanded={false}
-            className="NormalizedButton__Button-ey7f5x-0 c19 c20"
-            disabled={true}
-            onClick={[Function]}
-            type="button"
+          <span
+            className="c21"
           >
-            <span
-              className="c21"
+            <svg
+              aria-hidden="true"
+              className="c23 c24"
+              direction="down"
+              focusable="false"
+              preserveAspectRatio="xMidYMid meet"
+              role="presentation"
+              viewBox="0 0 16 16"
             >
-              <svg
-                aria-hidden="true"
-                className="c24 c25"
-                direction="down"
-                focusable="false"
-                preserveAspectRatio="xMidYMid meet"
-                role="presentation"
-                viewBox="0 0 16 16"
-              >
-                <polygon
-                  points="14.620 3.580, 16.000 5.020, 8.000 12.730, 0.000 5.030, 1.400 3.580, 8.000 9.96"
-                />
-              </svg>
-            </span>
-          </button>
-        </div>
+              <polygon
+                points="14.620 3.580, 16.000 5.020, 8.000 12.730, 0.000 5.030, 1.400 3.580, 8.000 9.96"
+              />
+            </svg>
+          </span>
+        </button>
       </div>
     </div>
     <div
@@ -2807,66 +2797,58 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
         </div>
       </div>
       <div
-        className="c13 c16 c14"
+        className="c13 c16 c18 c14"
         role="cell"
       >
-        <div
-          className="c18"
+        <button
+          aria-expanded={false}
+          className="NormalizedButton__Button-ey7f5x-0 c19 c20"
+          disabled={true}
+          onClick={[Function]}
+          type="button"
         >
-          <button
-            aria-expanded={false}
-            className="NormalizedButton__Button-ey7f5x-0 c19 c20"
-            disabled={true}
-            onClick={[Function]}
-            type="button"
+          <span
+            className="c21"
           >
-            <span
-              className="c21"
+            <svg
+              aria-hidden="true"
+              className="c22"
+              focusable="false"
+              preserveAspectRatio="xMidYMid meet"
+              role="presentation"
+              viewBox="0 0 24 24"
             >
-              <svg
-                aria-hidden="true"
-                className="c22"
-                focusable="false"
-                preserveAspectRatio="xMidYMid meet"
-                role="presentation"
-                viewBox="0 0 24 24"
-              >
-                <polygon
-                  points="19.969 4 24 8.027 12 20 0 8.027 4.031 4 12 11.952"
-                />
-              </svg>
-            </span>
-          </button>
-        </div>
-        <div
-          className="c23"
+              <polygon
+                points="19.969 4 24 8.027 12 20 0 8.027 4.031 4 12 11.952"
+              />
+            </svg>
+          </span>
+        </button>
+        <button
+          aria-expanded={false}
+          className="NormalizedButton__Button-ey7f5x-0 c19 c20"
+          disabled={true}
+          onClick={[Function]}
+          type="button"
         >
-          <button
-            aria-expanded={false}
-            className="NormalizedButton__Button-ey7f5x-0 c19 c20"
-            disabled={true}
-            onClick={[Function]}
-            type="button"
+          <span
+            className="c21"
           >
-            <span
-              className="c21"
+            <svg
+              aria-hidden="true"
+              className="c23 c24"
+              direction="down"
+              focusable="false"
+              preserveAspectRatio="xMidYMid meet"
+              role="presentation"
+              viewBox="0 0 16 16"
             >
-              <svg
-                aria-hidden="true"
-                className="c24 c25"
-                direction="down"
-                focusable="false"
-                preserveAspectRatio="xMidYMid meet"
-                role="presentation"
-                viewBox="0 0 16 16"
-              >
-                <polygon
-                  points="14.620 3.580, 16.000 5.020, 8.000 12.730, 0.000 5.030, 1.400 3.580, 8.000 9.96"
-                />
-              </svg>
-            </span>
-          </button>
-        </div>
+              <polygon
+                points="14.620 3.580, 16.000 5.020, 8.000 12.730, 0.000 5.030, 1.400 3.580, 8.000 9.96"
+              />
+            </svg>
+          </span>
+        </button>
       </div>
     </div>
     <div
@@ -2938,66 +2920,58 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
         </div>
       </div>
       <div
-        className="c13 c16 c14"
+        className="c13 c16 c18 c14"
         role="cell"
       >
-        <div
-          className="c18"
+        <button
+          aria-expanded={false}
+          className="NormalizedButton__Button-ey7f5x-0 c19 c20"
+          disabled={true}
+          onClick={[Function]}
+          type="button"
         >
-          <button
-            aria-expanded={false}
-            className="NormalizedButton__Button-ey7f5x-0 c19 c20"
-            disabled={true}
-            onClick={[Function]}
-            type="button"
+          <span
+            className="c21"
           >
-            <span
-              className="c21"
+            <svg
+              aria-hidden="true"
+              className="c22"
+              focusable="false"
+              preserveAspectRatio="xMidYMid meet"
+              role="presentation"
+              viewBox="0 0 24 24"
             >
-              <svg
-                aria-hidden="true"
-                className="c22"
-                focusable="false"
-                preserveAspectRatio="xMidYMid meet"
-                role="presentation"
-                viewBox="0 0 24 24"
-              >
-                <polygon
-                  points="19.969 4 24 8.027 12 20 0 8.027 4.031 4 12 11.952"
-                />
-              </svg>
-            </span>
-          </button>
-        </div>
-        <div
-          className="c23"
+              <polygon
+                points="19.969 4 24 8.027 12 20 0 8.027 4.031 4 12 11.952"
+              />
+            </svg>
+          </span>
+        </button>
+        <button
+          aria-expanded={false}
+          className="NormalizedButton__Button-ey7f5x-0 c19 c20"
+          disabled={true}
+          onClick={[Function]}
+          type="button"
         >
-          <button
-            aria-expanded={false}
-            className="NormalizedButton__Button-ey7f5x-0 c19 c20"
-            disabled={true}
-            onClick={[Function]}
-            type="button"
+          <span
+            className="c21"
           >
-            <span
-              className="c21"
+            <svg
+              aria-hidden="true"
+              className="c23 c24"
+              direction="down"
+              focusable="false"
+              preserveAspectRatio="xMidYMid meet"
+              role="presentation"
+              viewBox="0 0 16 16"
             >
-              <svg
-                aria-hidden="true"
-                className="c24 c25"
-                direction="down"
-                focusable="false"
-                preserveAspectRatio="xMidYMid meet"
-                role="presentation"
-                viewBox="0 0 16 16"
-              >
-                <polygon
-                  points="14.620 3.580, 16.000 5.020, 8.000 12.730, 0.000 5.030, 1.400 3.580, 8.000 9.96"
-                />
-              </svg>
-            </span>
-          </button>
-        </div>
+              <polygon
+                points="14.620 3.580, 16.000 5.020, 8.000 12.730, 0.000 5.030, 1.400 3.580, 8.000 9.96"
+              />
+            </svg>
+          </span>
+        </button>
       </div>
     </div>
     <div
@@ -3069,66 +3043,58 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
         </div>
       </div>
       <div
-        className="c13 c16 c14"
+        className="c13 c16 c18 c14"
         role="cell"
       >
-        <div
-          className="c18"
+        <button
+          aria-expanded={false}
+          className="NormalizedButton__Button-ey7f5x-0 c19 c20"
+          disabled={true}
+          onClick={[Function]}
+          type="button"
         >
-          <button
-            aria-expanded={false}
-            className="NormalizedButton__Button-ey7f5x-0 c19 c20"
-            disabled={true}
-            onClick={[Function]}
-            type="button"
+          <span
+            className="c21"
           >
-            <span
-              className="c21"
+            <svg
+              aria-hidden="true"
+              className="c22"
+              focusable="false"
+              preserveAspectRatio="xMidYMid meet"
+              role="presentation"
+              viewBox="0 0 24 24"
             >
-              <svg
-                aria-hidden="true"
-                className="c22"
-                focusable="false"
-                preserveAspectRatio="xMidYMid meet"
-                role="presentation"
-                viewBox="0 0 24 24"
-              >
-                <polygon
-                  points="19.969 4 24 8.027 12 20 0 8.027 4.031 4 12 11.952"
-                />
-              </svg>
-            </span>
-          </button>
-        </div>
-        <div
-          className="c23"
+              <polygon
+                points="19.969 4 24 8.027 12 20 0 8.027 4.031 4 12 11.952"
+              />
+            </svg>
+          </span>
+        </button>
+        <button
+          aria-expanded={false}
+          className="NormalizedButton__Button-ey7f5x-0 c19 c20"
+          disabled={true}
+          onClick={[Function]}
+          type="button"
         >
-          <button
-            aria-expanded={false}
-            className="NormalizedButton__Button-ey7f5x-0 c19 c20"
-            disabled={true}
-            onClick={[Function]}
-            type="button"
+          <span
+            className="c21"
           >
-            <span
-              className="c21"
+            <svg
+              aria-hidden="true"
+              className="c23 c24"
+              direction="down"
+              focusable="false"
+              preserveAspectRatio="xMidYMid meet"
+              role="presentation"
+              viewBox="0 0 16 16"
             >
-              <svg
-                aria-hidden="true"
-                className="c24 c25"
-                direction="down"
-                focusable="false"
-                preserveAspectRatio="xMidYMid meet"
-                role="presentation"
-                viewBox="0 0 16 16"
-              >
-                <polygon
-                  points="14.620 3.580, 16.000 5.020, 8.000 12.730, 0.000 5.030, 1.400 3.580, 8.000 9.96"
-                />
-              </svg>
-            </span>
-          </button>
-        </div>
+              <polygon
+                points="14.620 3.580, 16.000 5.020, 8.000 12.730, 0.000 5.030, 1.400 3.580, 8.000 9.96"
+              />
+            </svg>
+          </span>
+        </button>
       </div>
     </div>
     <div
@@ -3200,66 +3166,58 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
         </div>
       </div>
       <div
-        className="c13 c16 c14"
+        className="c13 c16 c18 c14"
         role="cell"
       >
-        <div
-          className="c18"
+        <button
+          aria-expanded={false}
+          className="NormalizedButton__Button-ey7f5x-0 c19 c20"
+          disabled={true}
+          onClick={[Function]}
+          type="button"
         >
-          <button
-            aria-expanded={false}
-            className="NormalizedButton__Button-ey7f5x-0 c19 c20"
-            disabled={true}
-            onClick={[Function]}
-            type="button"
+          <span
+            className="c21"
           >
-            <span
-              className="c21"
+            <svg
+              aria-hidden="true"
+              className="c22"
+              focusable="false"
+              preserveAspectRatio="xMidYMid meet"
+              role="presentation"
+              viewBox="0 0 24 24"
             >
-              <svg
-                aria-hidden="true"
-                className="c22"
-                focusable="false"
-                preserveAspectRatio="xMidYMid meet"
-                role="presentation"
-                viewBox="0 0 24 24"
-              >
-                <polygon
-                  points="19.969 4 24 8.027 12 20 0 8.027 4.031 4 12 11.952"
-                />
-              </svg>
-            </span>
-          </button>
-        </div>
-        <div
-          className="c23"
+              <polygon
+                points="19.969 4 24 8.027 12 20 0 8.027 4.031 4 12 11.952"
+              />
+            </svg>
+          </span>
+        </button>
+        <button
+          aria-expanded={false}
+          className="NormalizedButton__Button-ey7f5x-0 c19 c20"
+          disabled={true}
+          onClick={[Function]}
+          type="button"
         >
-          <button
-            aria-expanded={false}
-            className="NormalizedButton__Button-ey7f5x-0 c19 c20"
-            disabled={true}
-            onClick={[Function]}
-            type="button"
+          <span
+            className="c21"
           >
-            <span
-              className="c21"
+            <svg
+              aria-hidden="true"
+              className="c23 c24"
+              direction="down"
+              focusable="false"
+              preserveAspectRatio="xMidYMid meet"
+              role="presentation"
+              viewBox="0 0 16 16"
             >
-              <svg
-                aria-hidden="true"
-                className="c24 c25"
-                direction="down"
-                focusable="false"
-                preserveAspectRatio="xMidYMid meet"
-                role="presentation"
-                viewBox="0 0 16 16"
-              >
-                <polygon
-                  points="14.620 3.580, 16.000 5.020, 8.000 12.730, 0.000 5.030, 1.400 3.580, 8.000 9.96"
-                />
-              </svg>
-            </span>
-          </button>
-        </div>
+              <polygon
+                points="14.620 3.580, 16.000 5.020, 8.000 12.730, 0.000 5.030, 1.400 3.580, 8.000 9.96"
+              />
+            </svg>
+          </span>
+        </button>
       </div>
     </div>
     <div
@@ -3331,66 +3289,58 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
         </div>
       </div>
       <div
-        className="c13 c16 c14"
+        className="c13 c16 c18 c14"
         role="cell"
       >
-        <div
-          className="c18"
+        <button
+          aria-expanded={false}
+          className="NormalizedButton__Button-ey7f5x-0 c19 c20"
+          disabled={true}
+          onClick={[Function]}
+          type="button"
         >
-          <button
-            aria-expanded={false}
-            className="NormalizedButton__Button-ey7f5x-0 c19 c20"
-            disabled={true}
-            onClick={[Function]}
-            type="button"
+          <span
+            className="c21"
           >
-            <span
-              className="c21"
+            <svg
+              aria-hidden="true"
+              className="c22"
+              focusable="false"
+              preserveAspectRatio="xMidYMid meet"
+              role="presentation"
+              viewBox="0 0 24 24"
             >
-              <svg
-                aria-hidden="true"
-                className="c22"
-                focusable="false"
-                preserveAspectRatio="xMidYMid meet"
-                role="presentation"
-                viewBox="0 0 24 24"
-              >
-                <polygon
-                  points="19.969 4 24 8.027 12 20 0 8.027 4.031 4 12 11.952"
-                />
-              </svg>
-            </span>
-          </button>
-        </div>
-        <div
-          className="c23"
+              <polygon
+                points="19.969 4 24 8.027 12 20 0 8.027 4.031 4 12 11.952"
+              />
+            </svg>
+          </span>
+        </button>
+        <button
+          aria-expanded={false}
+          className="NormalizedButton__Button-ey7f5x-0 c19 c20"
+          disabled={true}
+          onClick={[Function]}
+          type="button"
         >
-          <button
-            aria-expanded={false}
-            className="NormalizedButton__Button-ey7f5x-0 c19 c20"
-            disabled={true}
-            onClick={[Function]}
-            type="button"
+          <span
+            className="c21"
           >
-            <span
-              className="c21"
+            <svg
+              aria-hidden="true"
+              className="c23 c24"
+              direction="down"
+              focusable="false"
+              preserveAspectRatio="xMidYMid meet"
+              role="presentation"
+              viewBox="0 0 16 16"
             >
-              <svg
-                aria-hidden="true"
-                className="c24 c25"
-                direction="down"
-                focusable="false"
-                preserveAspectRatio="xMidYMid meet"
-                role="presentation"
-                viewBox="0 0 16 16"
-              >
-                <polygon
-                  points="14.620 3.580, 16.000 5.020, 8.000 12.730, 0.000 5.030, 1.400 3.580, 8.000 9.96"
-                />
-              </svg>
-            </span>
-          </button>
-        </div>
+              <polygon
+                points="14.620 3.580, 16.000 5.020, 8.000 12.730, 0.000 5.030, 1.400 3.580, 8.000 9.96"
+              />
+            </svg>
+          </span>
+        </button>
       </div>
     </div>
     <div
@@ -3462,66 +3412,58 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
         </div>
       </div>
       <div
-        className="c13 c16 c14"
+        className="c13 c16 c18 c14"
         role="cell"
       >
-        <div
-          className="c18"
+        <button
+          aria-expanded={false}
+          className="NormalizedButton__Button-ey7f5x-0 c19 c20"
+          disabled={true}
+          onClick={[Function]}
+          type="button"
         >
-          <button
-            aria-expanded={false}
-            className="NormalizedButton__Button-ey7f5x-0 c19 c20"
-            disabled={true}
-            onClick={[Function]}
-            type="button"
+          <span
+            className="c21"
           >
-            <span
-              className="c21"
+            <svg
+              aria-hidden="true"
+              className="c22"
+              focusable="false"
+              preserveAspectRatio="xMidYMid meet"
+              role="presentation"
+              viewBox="0 0 24 24"
             >
-              <svg
-                aria-hidden="true"
-                className="c22"
-                focusable="false"
-                preserveAspectRatio="xMidYMid meet"
-                role="presentation"
-                viewBox="0 0 24 24"
-              >
-                <polygon
-                  points="19.969 4 24 8.027 12 20 0 8.027 4.031 4 12 11.952"
-                />
-              </svg>
-            </span>
-          </button>
-        </div>
-        <div
-          className="c23"
+              <polygon
+                points="19.969 4 24 8.027 12 20 0 8.027 4.031 4 12 11.952"
+              />
+            </svg>
+          </span>
+        </button>
+        <button
+          aria-expanded={false}
+          className="NormalizedButton__Button-ey7f5x-0 c19 c20"
+          disabled={true}
+          onClick={[Function]}
+          type="button"
         >
-          <button
-            aria-expanded={false}
-            className="NormalizedButton__Button-ey7f5x-0 c19 c20"
-            disabled={true}
-            onClick={[Function]}
-            type="button"
+          <span
+            className="c21"
           >
-            <span
-              className="c21"
+            <svg
+              aria-hidden="true"
+              className="c23 c24"
+              direction="down"
+              focusable="false"
+              preserveAspectRatio="xMidYMid meet"
+              role="presentation"
+              viewBox="0 0 16 16"
             >
-              <svg
-                aria-hidden="true"
-                className="c24 c25"
-                direction="down"
-                focusable="false"
-                preserveAspectRatio="xMidYMid meet"
-                role="presentation"
-                viewBox="0 0 16 16"
-              >
-                <polygon
-                  points="14.620 3.580, 16.000 5.020, 8.000 12.730, 0.000 5.030, 1.400 3.580, 8.000 9.96"
-                />
-              </svg>
-            </span>
-          </button>
-        </div>
+              <polygon
+                points="14.620 3.580, 16.000 5.020, 8.000 12.730, 0.000 5.030, 1.400 3.580, 8.000 9.96"
+              />
+            </svg>
+          </span>
+        </button>
       </div>
     </div>
     <div
@@ -3593,66 +3535,58 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
         </div>
       </div>
       <div
-        className="c13 c16 c14"
+        className="c13 c16 c18 c14"
         role="cell"
       >
-        <div
-          className="c18"
+        <button
+          aria-expanded={false}
+          className="NormalizedButton__Button-ey7f5x-0 c19 c20"
+          disabled={true}
+          onClick={[Function]}
+          type="button"
         >
-          <button
-            aria-expanded={false}
-            className="NormalizedButton__Button-ey7f5x-0 c19 c20"
-            disabled={true}
-            onClick={[Function]}
-            type="button"
+          <span
+            className="c21"
           >
-            <span
-              className="c21"
+            <svg
+              aria-hidden="true"
+              className="c22"
+              focusable="false"
+              preserveAspectRatio="xMidYMid meet"
+              role="presentation"
+              viewBox="0 0 24 24"
             >
-              <svg
-                aria-hidden="true"
-                className="c22"
-                focusable="false"
-                preserveAspectRatio="xMidYMid meet"
-                role="presentation"
-                viewBox="0 0 24 24"
-              >
-                <polygon
-                  points="19.969 4 24 8.027 12 20 0 8.027 4.031 4 12 11.952"
-                />
-              </svg>
-            </span>
-          </button>
-        </div>
-        <div
-          className="c23"
+              <polygon
+                points="19.969 4 24 8.027 12 20 0 8.027 4.031 4 12 11.952"
+              />
+            </svg>
+          </span>
+        </button>
+        <button
+          aria-expanded={false}
+          className="NormalizedButton__Button-ey7f5x-0 c19 c20"
+          disabled={true}
+          onClick={[Function]}
+          type="button"
         >
-          <button
-            aria-expanded={false}
-            className="NormalizedButton__Button-ey7f5x-0 c19 c20"
-            disabled={true}
-            onClick={[Function]}
-            type="button"
+          <span
+            className="c21"
           >
-            <span
-              className="c21"
+            <svg
+              aria-hidden="true"
+              className="c23 c24"
+              direction="down"
+              focusable="false"
+              preserveAspectRatio="xMidYMid meet"
+              role="presentation"
+              viewBox="0 0 16 16"
             >
-              <svg
-                aria-hidden="true"
-                className="c24 c25"
-                direction="down"
-                focusable="false"
-                preserveAspectRatio="xMidYMid meet"
-                role="presentation"
-                viewBox="0 0 16 16"
-              >
-                <polygon
-                  points="14.620 3.580, 16.000 5.020, 8.000 12.730, 0.000 5.030, 1.400 3.580, 8.000 9.96"
-                />
-              </svg>
-            </span>
-          </button>
-        </div>
+              <polygon
+                points="14.620 3.580, 16.000 5.020, 8.000 12.730, 0.000 5.030, 1.400 3.580, 8.000 9.96"
+              />
+            </svg>
+          </span>
+        </button>
       </div>
     </div>
     <div
@@ -3724,66 +3658,58 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
         </div>
       </div>
       <div
-        className="c13 c16 c14"
+        className="c13 c16 c18 c14"
         role="cell"
       >
-        <div
-          className="c18"
+        <button
+          aria-expanded={false}
+          className="NormalizedButton__Button-ey7f5x-0 c19 c20"
+          disabled={true}
+          onClick={[Function]}
+          type="button"
         >
-          <button
-            aria-expanded={false}
-            className="NormalizedButton__Button-ey7f5x-0 c19 c20"
-            disabled={true}
-            onClick={[Function]}
-            type="button"
+          <span
+            className="c21"
           >
-            <span
-              className="c21"
+            <svg
+              aria-hidden="true"
+              className="c22"
+              focusable="false"
+              preserveAspectRatio="xMidYMid meet"
+              role="presentation"
+              viewBox="0 0 24 24"
             >
-              <svg
-                aria-hidden="true"
-                className="c22"
-                focusable="false"
-                preserveAspectRatio="xMidYMid meet"
-                role="presentation"
-                viewBox="0 0 24 24"
-              >
-                <polygon
-                  points="19.969 4 24 8.027 12 20 0 8.027 4.031 4 12 11.952"
-                />
-              </svg>
-            </span>
-          </button>
-        </div>
-        <div
-          className="c23"
+              <polygon
+                points="19.969 4 24 8.027 12 20 0 8.027 4.031 4 12 11.952"
+              />
+            </svg>
+          </span>
+        </button>
+        <button
+          aria-expanded={false}
+          className="NormalizedButton__Button-ey7f5x-0 c19 c20"
+          disabled={true}
+          onClick={[Function]}
+          type="button"
         >
-          <button
-            aria-expanded={false}
-            className="NormalizedButton__Button-ey7f5x-0 c19 c20"
-            disabled={true}
-            onClick={[Function]}
-            type="button"
+          <span
+            className="c21"
           >
-            <span
-              className="c21"
+            <svg
+              aria-hidden="true"
+              className="c23 c24"
+              direction="down"
+              focusable="false"
+              preserveAspectRatio="xMidYMid meet"
+              role="presentation"
+              viewBox="0 0 16 16"
             >
-              <svg
-                aria-hidden="true"
-                className="c24 c25"
-                direction="down"
-                focusable="false"
-                preserveAspectRatio="xMidYMid meet"
-                role="presentation"
-                viewBox="0 0 16 16"
-              >
-                <polygon
-                  points="14.620 3.580, 16.000 5.020, 8.000 12.730, 0.000 5.030, 1.400 3.580, 8.000 9.96"
-                />
-              </svg>
-            </span>
-          </button>
-        </div>
+              <polygon
+                points="14.620 3.580, 16.000 5.020, 8.000 12.730, 0.000 5.030, 1.400 3.580, 8.000 9.96"
+              />
+            </svg>
+          </span>
+        </button>
       </div>
     </div>
     <div
@@ -3855,66 +3781,58 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
         </div>
       </div>
       <div
-        className="c13 c16 c14"
+        className="c13 c16 c18 c14"
         role="cell"
       >
-        <div
-          className="c18"
+        <button
+          aria-expanded={false}
+          className="NormalizedButton__Button-ey7f5x-0 c19 c20"
+          disabled={true}
+          onClick={[Function]}
+          type="button"
         >
-          <button
-            aria-expanded={false}
-            className="NormalizedButton__Button-ey7f5x-0 c19 c20"
-            disabled={true}
-            onClick={[Function]}
-            type="button"
+          <span
+            className="c21"
           >
-            <span
-              className="c21"
+            <svg
+              aria-hidden="true"
+              className="c22"
+              focusable="false"
+              preserveAspectRatio="xMidYMid meet"
+              role="presentation"
+              viewBox="0 0 24 24"
             >
-              <svg
-                aria-hidden="true"
-                className="c22"
-                focusable="false"
-                preserveAspectRatio="xMidYMid meet"
-                role="presentation"
-                viewBox="0 0 24 24"
-              >
-                <polygon
-                  points="19.969 4 24 8.027 12 20 0 8.027 4.031 4 12 11.952"
-                />
-              </svg>
-            </span>
-          </button>
-        </div>
-        <div
-          className="c23"
+              <polygon
+                points="19.969 4 24 8.027 12 20 0 8.027 4.031 4 12 11.952"
+              />
+            </svg>
+          </span>
+        </button>
+        <button
+          aria-expanded={false}
+          className="NormalizedButton__Button-ey7f5x-0 c19 c20"
+          disabled={true}
+          onClick={[Function]}
+          type="button"
         >
-          <button
-            aria-expanded={false}
-            className="NormalizedButton__Button-ey7f5x-0 c19 c20"
-            disabled={true}
-            onClick={[Function]}
-            type="button"
+          <span
+            className="c21"
           >
-            <span
-              className="c21"
+            <svg
+              aria-hidden="true"
+              className="c23 c24"
+              direction="down"
+              focusable="false"
+              preserveAspectRatio="xMidYMid meet"
+              role="presentation"
+              viewBox="0 0 16 16"
             >
-              <svg
-                aria-hidden="true"
-                className="c24 c25"
-                direction="down"
-                focusable="false"
-                preserveAspectRatio="xMidYMid meet"
-                role="presentation"
-                viewBox="0 0 16 16"
-              >
-                <polygon
-                  points="14.620 3.580, 16.000 5.020, 8.000 12.730, 0.000 5.030, 1.400 3.580, 8.000 9.96"
-                />
-              </svg>
-            </span>
-          </button>
-        </div>
+              <polygon
+                points="14.620 3.580, 16.000 5.020, 8.000 12.730, 0.000 5.030, 1.400 3.580, 8.000 9.96"
+              />
+            </svg>
+          </span>
+        </button>
       </div>
     </div>
     <div
@@ -3986,66 +3904,58 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
         </div>
       </div>
       <div
-        className="c13 c16 c14"
+        className="c13 c16 c18 c14"
         role="cell"
       >
-        <div
-          className="c18"
+        <button
+          aria-expanded={false}
+          className="NormalizedButton__Button-ey7f5x-0 c19 c20"
+          disabled={true}
+          onClick={[Function]}
+          type="button"
         >
-          <button
-            aria-expanded={false}
-            className="NormalizedButton__Button-ey7f5x-0 c19 c20"
-            disabled={true}
-            onClick={[Function]}
-            type="button"
+          <span
+            className="c21"
           >
-            <span
-              className="c21"
+            <svg
+              aria-hidden="true"
+              className="c22"
+              focusable="false"
+              preserveAspectRatio="xMidYMid meet"
+              role="presentation"
+              viewBox="0 0 24 24"
             >
-              <svg
-                aria-hidden="true"
-                className="c22"
-                focusable="false"
-                preserveAspectRatio="xMidYMid meet"
-                role="presentation"
-                viewBox="0 0 24 24"
-              >
-                <polygon
-                  points="19.969 4 24 8.027 12 20 0 8.027 4.031 4 12 11.952"
-                />
-              </svg>
-            </span>
-          </button>
-        </div>
-        <div
-          className="c23"
+              <polygon
+                points="19.969 4 24 8.027 12 20 0 8.027 4.031 4 12 11.952"
+              />
+            </svg>
+          </span>
+        </button>
+        <button
+          aria-expanded={false}
+          className="NormalizedButton__Button-ey7f5x-0 c19 c20"
+          disabled={true}
+          onClick={[Function]}
+          type="button"
         >
-          <button
-            aria-expanded={false}
-            className="NormalizedButton__Button-ey7f5x-0 c19 c20"
-            disabled={true}
-            onClick={[Function]}
-            type="button"
+          <span
+            className="c21"
           >
-            <span
-              className="c21"
+            <svg
+              aria-hidden="true"
+              className="c23 c24"
+              direction="down"
+              focusable="false"
+              preserveAspectRatio="xMidYMid meet"
+              role="presentation"
+              viewBox="0 0 16 16"
             >
-              <svg
-                aria-hidden="true"
-                className="c24 c25"
-                direction="down"
-                focusable="false"
-                preserveAspectRatio="xMidYMid meet"
-                role="presentation"
-                viewBox="0 0 16 16"
-              >
-                <polygon
-                  points="14.620 3.580, 16.000 5.020, 8.000 12.730, 0.000 5.030, 1.400 3.580, 8.000 9.96"
-                />
-              </svg>
-            </span>
-          </button>
-        </div>
+              <polygon
+                points="14.620 3.580, 16.000 5.020, 8.000 12.730, 0.000 5.030, 1.400 3.580, 8.000 9.96"
+              />
+            </svg>
+          </span>
+        </button>
       </div>
     </div>
     <div
@@ -4117,66 +4027,58 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
         </div>
       </div>
       <div
-        className="c13 c16 c14"
+        className="c13 c16 c18 c14"
         role="cell"
       >
-        <div
-          className="c18"
+        <button
+          aria-expanded={false}
+          className="NormalizedButton__Button-ey7f5x-0 c19 c20"
+          disabled={true}
+          onClick={[Function]}
+          type="button"
         >
-          <button
-            aria-expanded={false}
-            className="NormalizedButton__Button-ey7f5x-0 c19 c20"
-            disabled={true}
-            onClick={[Function]}
-            type="button"
+          <span
+            className="c21"
           >
-            <span
-              className="c21"
+            <svg
+              aria-hidden="true"
+              className="c22"
+              focusable="false"
+              preserveAspectRatio="xMidYMid meet"
+              role="presentation"
+              viewBox="0 0 24 24"
             >
-              <svg
-                aria-hidden="true"
-                className="c22"
-                focusable="false"
-                preserveAspectRatio="xMidYMid meet"
-                role="presentation"
-                viewBox="0 0 24 24"
-              >
-                <polygon
-                  points="19.969 4 24 8.027 12 20 0 8.027 4.031 4 12 11.952"
-                />
-              </svg>
-            </span>
-          </button>
-        </div>
-        <div
-          className="c23"
+              <polygon
+                points="19.969 4 24 8.027 12 20 0 8.027 4.031 4 12 11.952"
+              />
+            </svg>
+          </span>
+        </button>
+        <button
+          aria-expanded={false}
+          className="NormalizedButton__Button-ey7f5x-0 c19 c20"
+          disabled={true}
+          onClick={[Function]}
+          type="button"
         >
-          <button
-            aria-expanded={false}
-            className="NormalizedButton__Button-ey7f5x-0 c19 c20"
-            disabled={true}
-            onClick={[Function]}
-            type="button"
+          <span
+            className="c21"
           >
-            <span
-              className="c21"
+            <svg
+              aria-hidden="true"
+              className="c23 c24"
+              direction="down"
+              focusable="false"
+              preserveAspectRatio="xMidYMid meet"
+              role="presentation"
+              viewBox="0 0 16 16"
             >
-              <svg
-                aria-hidden="true"
-                className="c24 c25"
-                direction="down"
-                focusable="false"
-                preserveAspectRatio="xMidYMid meet"
-                role="presentation"
-                viewBox="0 0 16 16"
-              >
-                <polygon
-                  points="14.620 3.580, 16.000 5.020, 8.000 12.730, 0.000 5.030, 1.400 3.580, 8.000 9.96"
-                />
-              </svg>
-            </span>
-          </button>
-        </div>
+              <polygon
+                points="14.620 3.580, 16.000 5.020, 8.000 12.730, 0.000 5.030, 1.400 3.580, 8.000 9.96"
+              />
+            </svg>
+          </span>
+        </button>
       </div>
     </div>
     <div
@@ -4248,66 +4150,58 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
         </div>
       </div>
       <div
-        className="c13 c16 c14"
+        className="c13 c16 c18 c14"
         role="cell"
       >
-        <div
-          className="c18"
+        <button
+          aria-expanded={false}
+          className="NormalizedButton__Button-ey7f5x-0 c19 c20"
+          disabled={true}
+          onClick={[Function]}
+          type="button"
         >
-          <button
-            aria-expanded={false}
-            className="NormalizedButton__Button-ey7f5x-0 c19 c20"
-            disabled={true}
-            onClick={[Function]}
-            type="button"
+          <span
+            className="c21"
           >
-            <span
-              className="c21"
+            <svg
+              aria-hidden="true"
+              className="c22"
+              focusable="false"
+              preserveAspectRatio="xMidYMid meet"
+              role="presentation"
+              viewBox="0 0 24 24"
             >
-              <svg
-                aria-hidden="true"
-                className="c22"
-                focusable="false"
-                preserveAspectRatio="xMidYMid meet"
-                role="presentation"
-                viewBox="0 0 24 24"
-              >
-                <polygon
-                  points="19.969 4 24 8.027 12 20 0 8.027 4.031 4 12 11.952"
-                />
-              </svg>
-            </span>
-          </button>
-        </div>
-        <div
-          className="c23"
+              <polygon
+                points="19.969 4 24 8.027 12 20 0 8.027 4.031 4 12 11.952"
+              />
+            </svg>
+          </span>
+        </button>
+        <button
+          aria-expanded={false}
+          className="NormalizedButton__Button-ey7f5x-0 c19 c20"
+          disabled={true}
+          onClick={[Function]}
+          type="button"
         >
-          <button
-            aria-expanded={false}
-            className="NormalizedButton__Button-ey7f5x-0 c19 c20"
-            disabled={true}
-            onClick={[Function]}
-            type="button"
+          <span
+            className="c21"
           >
-            <span
-              className="c21"
+            <svg
+              aria-hidden="true"
+              className="c23 c24"
+              direction="down"
+              focusable="false"
+              preserveAspectRatio="xMidYMid meet"
+              role="presentation"
+              viewBox="0 0 16 16"
             >
-              <svg
-                aria-hidden="true"
-                className="c24 c25"
-                direction="down"
-                focusable="false"
-                preserveAspectRatio="xMidYMid meet"
-                role="presentation"
-                viewBox="0 0 16 16"
-              >
-                <polygon
-                  points="14.620 3.580, 16.000 5.020, 8.000 12.730, 0.000 5.030, 1.400 3.580, 8.000 9.96"
-                />
-              </svg>
-            </span>
-          </button>
-        </div>
+              <polygon
+                points="14.620 3.580, 16.000 5.020, 8.000 12.730, 0.000 5.030, 1.400 3.580, 8.000 9.96"
+              />
+            </svg>
+          </span>
+        </button>
       </div>
     </div>
     <div
@@ -4379,66 +4273,58 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
         </div>
       </div>
       <div
-        className="c13 c16 c14"
+        className="c13 c16 c18 c14"
         role="cell"
       >
-        <div
-          className="c18"
+        <button
+          aria-expanded={false}
+          className="NormalizedButton__Button-ey7f5x-0 c19 c20"
+          disabled={true}
+          onClick={[Function]}
+          type="button"
         >
-          <button
-            aria-expanded={false}
-            className="NormalizedButton__Button-ey7f5x-0 c19 c20"
-            disabled={true}
-            onClick={[Function]}
-            type="button"
+          <span
+            className="c21"
           >
-            <span
-              className="c21"
+            <svg
+              aria-hidden="true"
+              className="c22"
+              focusable="false"
+              preserveAspectRatio="xMidYMid meet"
+              role="presentation"
+              viewBox="0 0 24 24"
             >
-              <svg
-                aria-hidden="true"
-                className="c22"
-                focusable="false"
-                preserveAspectRatio="xMidYMid meet"
-                role="presentation"
-                viewBox="0 0 24 24"
-              >
-                <polygon
-                  points="19.969 4 24 8.027 12 20 0 8.027 4.031 4 12 11.952"
-                />
-              </svg>
-            </span>
-          </button>
-        </div>
-        <div
-          className="c23"
+              <polygon
+                points="19.969 4 24 8.027 12 20 0 8.027 4.031 4 12 11.952"
+              />
+            </svg>
+          </span>
+        </button>
+        <button
+          aria-expanded={false}
+          className="NormalizedButton__Button-ey7f5x-0 c19 c20"
+          disabled={true}
+          onClick={[Function]}
+          type="button"
         >
-          <button
-            aria-expanded={false}
-            className="NormalizedButton__Button-ey7f5x-0 c19 c20"
-            disabled={true}
-            onClick={[Function]}
-            type="button"
+          <span
+            className="c21"
           >
-            <span
-              className="c21"
+            <svg
+              aria-hidden="true"
+              className="c23 c24"
+              direction="down"
+              focusable="false"
+              preserveAspectRatio="xMidYMid meet"
+              role="presentation"
+              viewBox="0 0 16 16"
             >
-              <svg
-                aria-hidden="true"
-                className="c24 c25"
-                direction="down"
-                focusable="false"
-                preserveAspectRatio="xMidYMid meet"
-                role="presentation"
-                viewBox="0 0 16 16"
-              >
-                <polygon
-                  points="14.620 3.580, 16.000 5.020, 8.000 12.730, 0.000 5.030, 1.400 3.580, 8.000 9.96"
-                />
-              </svg>
-            </span>
-          </button>
-        </div>
+              <polygon
+                points="14.620 3.580, 16.000 5.020, 8.000 12.730, 0.000 5.030, 1.400 3.580, 8.000 9.96"
+              />
+            </svg>
+          </span>
+        </button>
       </div>
     </div>
     <div
@@ -4510,66 +4396,58 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
         </div>
       </div>
       <div
-        className="c13 c16 c14"
+        className="c13 c16 c18 c14"
         role="cell"
       >
-        <div
-          className="c18"
+        <button
+          aria-expanded={false}
+          className="NormalizedButton__Button-ey7f5x-0 c19 c20"
+          disabled={true}
+          onClick={[Function]}
+          type="button"
         >
-          <button
-            aria-expanded={false}
-            className="NormalizedButton__Button-ey7f5x-0 c19 c20"
-            disabled={true}
-            onClick={[Function]}
-            type="button"
+          <span
+            className="c21"
           >
-            <span
-              className="c21"
+            <svg
+              aria-hidden="true"
+              className="c22"
+              focusable="false"
+              preserveAspectRatio="xMidYMid meet"
+              role="presentation"
+              viewBox="0 0 24 24"
             >
-              <svg
-                aria-hidden="true"
-                className="c22"
-                focusable="false"
-                preserveAspectRatio="xMidYMid meet"
-                role="presentation"
-                viewBox="0 0 24 24"
-              >
-                <polygon
-                  points="19.969 4 24 8.027 12 20 0 8.027 4.031 4 12 11.952"
-                />
-              </svg>
-            </span>
-          </button>
-        </div>
-        <div
-          className="c23"
+              <polygon
+                points="19.969 4 24 8.027 12 20 0 8.027 4.031 4 12 11.952"
+              />
+            </svg>
+          </span>
+        </button>
+        <button
+          aria-expanded={false}
+          className="NormalizedButton__Button-ey7f5x-0 c19 c20"
+          disabled={true}
+          onClick={[Function]}
+          type="button"
         >
-          <button
-            aria-expanded={false}
-            className="NormalizedButton__Button-ey7f5x-0 c19 c20"
-            disabled={true}
-            onClick={[Function]}
-            type="button"
+          <span
+            className="c21"
           >
-            <span
-              className="c21"
+            <svg
+              aria-hidden="true"
+              className="c23 c24"
+              direction="down"
+              focusable="false"
+              preserveAspectRatio="xMidYMid meet"
+              role="presentation"
+              viewBox="0 0 16 16"
             >
-              <svg
-                aria-hidden="true"
-                className="c24 c25"
-                direction="down"
-                focusable="false"
-                preserveAspectRatio="xMidYMid meet"
-                role="presentation"
-                viewBox="0 0 16 16"
-              >
-                <polygon
-                  points="14.620 3.580, 16.000 5.020, 8.000 12.730, 0.000 5.030, 1.400 3.580, 8.000 9.96"
-                />
-              </svg>
-            </span>
-          </button>
-        </div>
+              <polygon
+                points="14.620 3.580, 16.000 5.020, 8.000 12.730, 0.000 5.030, 1.400 3.580, 8.000 9.96"
+              />
+            </svg>
+          </span>
+        </button>
       </div>
     </div>
     <div
@@ -4641,66 +4519,58 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
         </div>
       </div>
       <div
-        className="c13 c16 c14"
+        className="c13 c16 c18 c14"
         role="cell"
       >
-        <div
-          className="c18"
+        <button
+          aria-expanded={false}
+          className="NormalizedButton__Button-ey7f5x-0 c19 c20"
+          disabled={true}
+          onClick={[Function]}
+          type="button"
         >
-          <button
-            aria-expanded={false}
-            className="NormalizedButton__Button-ey7f5x-0 c19 c20"
-            disabled={true}
-            onClick={[Function]}
-            type="button"
+          <span
+            className="c21"
           >
-            <span
-              className="c21"
+            <svg
+              aria-hidden="true"
+              className="c22"
+              focusable="false"
+              preserveAspectRatio="xMidYMid meet"
+              role="presentation"
+              viewBox="0 0 24 24"
             >
-              <svg
-                aria-hidden="true"
-                className="c22"
-                focusable="false"
-                preserveAspectRatio="xMidYMid meet"
-                role="presentation"
-                viewBox="0 0 24 24"
-              >
-                <polygon
-                  points="19.969 4 24 8.027 12 20 0 8.027 4.031 4 12 11.952"
-                />
-              </svg>
-            </span>
-          </button>
-        </div>
-        <div
-          className="c23"
+              <polygon
+                points="19.969 4 24 8.027 12 20 0 8.027 4.031 4 12 11.952"
+              />
+            </svg>
+          </span>
+        </button>
+        <button
+          aria-expanded={false}
+          className="NormalizedButton__Button-ey7f5x-0 c19 c20"
+          disabled={true}
+          onClick={[Function]}
+          type="button"
         >
-          <button
-            aria-expanded={false}
-            className="NormalizedButton__Button-ey7f5x-0 c19 c20"
-            disabled={true}
-            onClick={[Function]}
-            type="button"
+          <span
+            className="c21"
           >
-            <span
-              className="c21"
+            <svg
+              aria-hidden="true"
+              className="c23 c24"
+              direction="down"
+              focusable="false"
+              preserveAspectRatio="xMidYMid meet"
+              role="presentation"
+              viewBox="0 0 16 16"
             >
-              <svg
-                aria-hidden="true"
-                className="c24 c25"
-                direction="down"
-                focusable="false"
-                preserveAspectRatio="xMidYMid meet"
-                role="presentation"
-                viewBox="0 0 16 16"
-              >
-                <polygon
-                  points="14.620 3.580, 16.000 5.020, 8.000 12.730, 0.000 5.030, 1.400 3.580, 8.000 9.96"
-                />
-              </svg>
-            </span>
-          </button>
-        </div>
+              <polygon
+                points="14.620 3.580, 16.000 5.020, 8.000 12.730, 0.000 5.030, 1.400 3.580, 8.000 9.96"
+              />
+            </svg>
+          </span>
+        </button>
       </div>
     </div>
     <div
@@ -4772,66 +4642,58 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
         </div>
       </div>
       <div
-        className="c13 c16 c14"
+        className="c13 c16 c18 c14"
         role="cell"
       >
-        <div
-          className="c18"
+        <button
+          aria-expanded={false}
+          className="NormalizedButton__Button-ey7f5x-0 c19 c20"
+          disabled={true}
+          onClick={[Function]}
+          type="button"
         >
-          <button
-            aria-expanded={false}
-            className="NormalizedButton__Button-ey7f5x-0 c19 c20"
-            disabled={true}
-            onClick={[Function]}
-            type="button"
+          <span
+            className="c21"
           >
-            <span
-              className="c21"
+            <svg
+              aria-hidden="true"
+              className="c22"
+              focusable="false"
+              preserveAspectRatio="xMidYMid meet"
+              role="presentation"
+              viewBox="0 0 24 24"
             >
-              <svg
-                aria-hidden="true"
-                className="c22"
-                focusable="false"
-                preserveAspectRatio="xMidYMid meet"
-                role="presentation"
-                viewBox="0 0 24 24"
-              >
-                <polygon
-                  points="19.969 4 24 8.027 12 20 0 8.027 4.031 4 12 11.952"
-                />
-              </svg>
-            </span>
-          </button>
-        </div>
-        <div
-          className="c23"
+              <polygon
+                points="19.969 4 24 8.027 12 20 0 8.027 4.031 4 12 11.952"
+              />
+            </svg>
+          </span>
+        </button>
+        <button
+          aria-expanded={false}
+          className="NormalizedButton__Button-ey7f5x-0 c19 c20"
+          disabled={true}
+          onClick={[Function]}
+          type="button"
         >
-          <button
-            aria-expanded={false}
-            className="NormalizedButton__Button-ey7f5x-0 c19 c20"
-            disabled={true}
-            onClick={[Function]}
-            type="button"
+          <span
+            className="c21"
           >
-            <span
-              className="c21"
+            <svg
+              aria-hidden="true"
+              className="c23 c24"
+              direction="down"
+              focusable="false"
+              preserveAspectRatio="xMidYMid meet"
+              role="presentation"
+              viewBox="0 0 16 16"
             >
-              <svg
-                aria-hidden="true"
-                className="c24 c25"
-                direction="down"
-                focusable="false"
-                preserveAspectRatio="xMidYMid meet"
-                role="presentation"
-                viewBox="0 0 16 16"
-              >
-                <polygon
-                  points="14.620 3.580, 16.000 5.020, 8.000 12.730, 0.000 5.030, 1.400 3.580, 8.000 9.96"
-                />
-              </svg>
-            </span>
-          </button>
-        </div>
+              <polygon
+                points="14.620 3.580, 16.000 5.020, 8.000 12.730, 0.000 5.030, 1.400 3.580, 8.000 9.96"
+              />
+            </svg>
+          </span>
+        </button>
       </div>
     </div>
     <div
@@ -4903,66 +4765,58 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
         </div>
       </div>
       <div
-        className="c13 c16 c14"
+        className="c13 c16 c18 c14"
         role="cell"
       >
-        <div
-          className="c18"
+        <button
+          aria-expanded={false}
+          className="NormalizedButton__Button-ey7f5x-0 c19 c20"
+          disabled={true}
+          onClick={[Function]}
+          type="button"
         >
-          <button
-            aria-expanded={false}
-            className="NormalizedButton__Button-ey7f5x-0 c19 c20"
-            disabled={true}
-            onClick={[Function]}
-            type="button"
+          <span
+            className="c21"
           >
-            <span
-              className="c21"
+            <svg
+              aria-hidden="true"
+              className="c22"
+              focusable="false"
+              preserveAspectRatio="xMidYMid meet"
+              role="presentation"
+              viewBox="0 0 24 24"
             >
-              <svg
-                aria-hidden="true"
-                className="c22"
-                focusable="false"
-                preserveAspectRatio="xMidYMid meet"
-                role="presentation"
-                viewBox="0 0 24 24"
-              >
-                <polygon
-                  points="19.969 4 24 8.027 12 20 0 8.027 4.031 4 12 11.952"
-                />
-              </svg>
-            </span>
-          </button>
-        </div>
-        <div
-          className="c23"
+              <polygon
+                points="19.969 4 24 8.027 12 20 0 8.027 4.031 4 12 11.952"
+              />
+            </svg>
+          </span>
+        </button>
+        <button
+          aria-expanded={false}
+          className="NormalizedButton__Button-ey7f5x-0 c19 c20"
+          disabled={true}
+          onClick={[Function]}
+          type="button"
         >
-          <button
-            aria-expanded={false}
-            className="NormalizedButton__Button-ey7f5x-0 c19 c20"
-            disabled={true}
-            onClick={[Function]}
-            type="button"
+          <span
+            className="c21"
           >
-            <span
-              className="c21"
+            <svg
+              aria-hidden="true"
+              className="c23 c24"
+              direction="down"
+              focusable="false"
+              preserveAspectRatio="xMidYMid meet"
+              role="presentation"
+              viewBox="0 0 16 16"
             >
-              <svg
-                aria-hidden="true"
-                className="c24 c25"
-                direction="down"
-                focusable="false"
-                preserveAspectRatio="xMidYMid meet"
-                role="presentation"
-                viewBox="0 0 16 16"
-              >
-                <polygon
-                  points="14.620 3.580, 16.000 5.020, 8.000 12.730, 0.000 5.030, 1.400 3.580, 8.000 9.96"
-                />
-              </svg>
-            </span>
-          </button>
-        </div>
+              <polygon
+                points="14.620 3.580, 16.000 5.020, 8.000 12.730, 0.000 5.030, 1.400 3.580, 8.000 9.96"
+              />
+            </svg>
+          </span>
+        </button>
       </div>
     </div>
     <div
@@ -5034,66 +4888,58 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
         </div>
       </div>
       <div
-        className="c13 c16 c14"
+        className="c13 c16 c18 c14"
         role="cell"
       >
-        <div
-          className="c18"
+        <button
+          aria-expanded={false}
+          className="NormalizedButton__Button-ey7f5x-0 c19 c20"
+          disabled={true}
+          onClick={[Function]}
+          type="button"
         >
-          <button
-            aria-expanded={false}
-            className="NormalizedButton__Button-ey7f5x-0 c19 c20"
-            disabled={true}
-            onClick={[Function]}
-            type="button"
+          <span
+            className="c21"
           >
-            <span
-              className="c21"
+            <svg
+              aria-hidden="true"
+              className="c22"
+              focusable="false"
+              preserveAspectRatio="xMidYMid meet"
+              role="presentation"
+              viewBox="0 0 24 24"
             >
-              <svg
-                aria-hidden="true"
-                className="c22"
-                focusable="false"
-                preserveAspectRatio="xMidYMid meet"
-                role="presentation"
-                viewBox="0 0 24 24"
-              >
-                <polygon
-                  points="19.969 4 24 8.027 12 20 0 8.027 4.031 4 12 11.952"
-                />
-              </svg>
-            </span>
-          </button>
-        </div>
-        <div
-          className="c23"
+              <polygon
+                points="19.969 4 24 8.027 12 20 0 8.027 4.031 4 12 11.952"
+              />
+            </svg>
+          </span>
+        </button>
+        <button
+          aria-expanded={false}
+          className="NormalizedButton__Button-ey7f5x-0 c19 c20"
+          disabled={true}
+          onClick={[Function]}
+          type="button"
         >
-          <button
-            aria-expanded={false}
-            className="NormalizedButton__Button-ey7f5x-0 c19 c20"
-            disabled={true}
-            onClick={[Function]}
-            type="button"
+          <span
+            className="c21"
           >
-            <span
-              className="c21"
+            <svg
+              aria-hidden="true"
+              className="c23 c24"
+              direction="down"
+              focusable="false"
+              preserveAspectRatio="xMidYMid meet"
+              role="presentation"
+              viewBox="0 0 16 16"
             >
-              <svg
-                aria-hidden="true"
-                className="c24 c25"
-                direction="down"
-                focusable="false"
-                preserveAspectRatio="xMidYMid meet"
-                role="presentation"
-                viewBox="0 0 16 16"
-              >
-                <polygon
-                  points="14.620 3.580, 16.000 5.020, 8.000 12.730, 0.000 5.030, 1.400 3.580, 8.000 9.96"
-                />
-              </svg>
-            </span>
-          </button>
-        </div>
+              <polygon
+                points="14.620 3.580, 16.000 5.020, 8.000 12.730, 0.000 5.030, 1.400 3.580, 8.000 9.96"
+              />
+            </svg>
+          </span>
+        </button>
       </div>
     </div>
     <div
@@ -5165,66 +5011,58 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
         </div>
       </div>
       <div
-        className="c13 c16 c14"
+        className="c13 c16 c18 c14"
         role="cell"
       >
-        <div
-          className="c18"
+        <button
+          aria-expanded={false}
+          className="NormalizedButton__Button-ey7f5x-0 c19 c20"
+          disabled={true}
+          onClick={[Function]}
+          type="button"
         >
-          <button
-            aria-expanded={false}
-            className="NormalizedButton__Button-ey7f5x-0 c19 c20"
-            disabled={true}
-            onClick={[Function]}
-            type="button"
+          <span
+            className="c21"
           >
-            <span
-              className="c21"
+            <svg
+              aria-hidden="true"
+              className="c22"
+              focusable="false"
+              preserveAspectRatio="xMidYMid meet"
+              role="presentation"
+              viewBox="0 0 24 24"
             >
-              <svg
-                aria-hidden="true"
-                className="c22"
-                focusable="false"
-                preserveAspectRatio="xMidYMid meet"
-                role="presentation"
-                viewBox="0 0 24 24"
-              >
-                <polygon
-                  points="19.969 4 24 8.027 12 20 0 8.027 4.031 4 12 11.952"
-                />
-              </svg>
-            </span>
-          </button>
-        </div>
-        <div
-          className="c23"
+              <polygon
+                points="19.969 4 24 8.027 12 20 0 8.027 4.031 4 12 11.952"
+              />
+            </svg>
+          </span>
+        </button>
+        <button
+          aria-expanded={false}
+          className="NormalizedButton__Button-ey7f5x-0 c19 c20"
+          disabled={true}
+          onClick={[Function]}
+          type="button"
         >
-          <button
-            aria-expanded={false}
-            className="NormalizedButton__Button-ey7f5x-0 c19 c20"
-            disabled={true}
-            onClick={[Function]}
-            type="button"
+          <span
+            className="c21"
           >
-            <span
-              className="c21"
+            <svg
+              aria-hidden="true"
+              className="c23 c24"
+              direction="down"
+              focusable="false"
+              preserveAspectRatio="xMidYMid meet"
+              role="presentation"
+              viewBox="0 0 16 16"
             >
-              <svg
-                aria-hidden="true"
-                className="c24 c25"
-                direction="down"
-                focusable="false"
-                preserveAspectRatio="xMidYMid meet"
-                role="presentation"
-                viewBox="0 0 16 16"
-              >
-                <polygon
-                  points="14.620 3.580, 16.000 5.020, 8.000 12.730, 0.000 5.030, 1.400 3.580, 8.000 9.96"
-                />
-              </svg>
-            </span>
-          </button>
-        </div>
+              <polygon
+                points="14.620 3.580, 16.000 5.020, 8.000 12.730, 0.000 5.030, 1.400 3.580, 8.000 9.96"
+              />
+            </svg>
+          </span>
+        </button>
       </div>
     </div>
     <div
@@ -5296,66 +5134,58 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
         </div>
       </div>
       <div
-        className="c13 c16 c14"
+        className="c13 c16 c18 c14"
         role="cell"
       >
-        <div
-          className="c18"
+        <button
+          aria-expanded={false}
+          className="NormalizedButton__Button-ey7f5x-0 c19 c20"
+          disabled={true}
+          onClick={[Function]}
+          type="button"
         >
-          <button
-            aria-expanded={false}
-            className="NormalizedButton__Button-ey7f5x-0 c19 c20"
-            disabled={true}
-            onClick={[Function]}
-            type="button"
+          <span
+            className="c21"
           >
-            <span
-              className="c21"
+            <svg
+              aria-hidden="true"
+              className="c22"
+              focusable="false"
+              preserveAspectRatio="xMidYMid meet"
+              role="presentation"
+              viewBox="0 0 24 24"
             >
-              <svg
-                aria-hidden="true"
-                className="c22"
-                focusable="false"
-                preserveAspectRatio="xMidYMid meet"
-                role="presentation"
-                viewBox="0 0 24 24"
-              >
-                <polygon
-                  points="19.969 4 24 8.027 12 20 0 8.027 4.031 4 12 11.952"
-                />
-              </svg>
-            </span>
-          </button>
-        </div>
-        <div
-          className="c23"
+              <polygon
+                points="19.969 4 24 8.027 12 20 0 8.027 4.031 4 12 11.952"
+              />
+            </svg>
+          </span>
+        </button>
+        <button
+          aria-expanded={false}
+          className="NormalizedButton__Button-ey7f5x-0 c19 c20"
+          disabled={true}
+          onClick={[Function]}
+          type="button"
         >
-          <button
-            aria-expanded={false}
-            className="NormalizedButton__Button-ey7f5x-0 c19 c20"
-            disabled={true}
-            onClick={[Function]}
-            type="button"
+          <span
+            className="c21"
           >
-            <span
-              className="c21"
+            <svg
+              aria-hidden="true"
+              className="c23 c24"
+              direction="down"
+              focusable="false"
+              preserveAspectRatio="xMidYMid meet"
+              role="presentation"
+              viewBox="0 0 16 16"
             >
-              <svg
-                aria-hidden="true"
-                className="c24 c25"
-                direction="down"
-                focusable="false"
-                preserveAspectRatio="xMidYMid meet"
-                role="presentation"
-                viewBox="0 0 16 16"
-              >
-                <polygon
-                  points="14.620 3.580, 16.000 5.020, 8.000 12.730, 0.000 5.030, 1.400 3.580, 8.000 9.96"
-                />
-              </svg>
-            </span>
-          </button>
-        </div>
+              <polygon
+                points="14.620 3.580, 16.000 5.020, 8.000 12.730, 0.000 5.030, 1.400 3.580, 8.000 9.96"
+              />
+            </svg>
+          </span>
+        </button>
       </div>
     </div>
     <div
@@ -5427,66 +5257,58 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
         </div>
       </div>
       <div
-        className="c13 c16 c14"
+        className="c13 c16 c18 c14"
         role="cell"
       >
-        <div
-          className="c18"
+        <button
+          aria-expanded={false}
+          className="NormalizedButton__Button-ey7f5x-0 c19 c20"
+          disabled={true}
+          onClick={[Function]}
+          type="button"
         >
-          <button
-            aria-expanded={false}
-            className="NormalizedButton__Button-ey7f5x-0 c19 c20"
-            disabled={true}
-            onClick={[Function]}
-            type="button"
+          <span
+            className="c21"
           >
-            <span
-              className="c21"
+            <svg
+              aria-hidden="true"
+              className="c22"
+              focusable="false"
+              preserveAspectRatio="xMidYMid meet"
+              role="presentation"
+              viewBox="0 0 24 24"
             >
-              <svg
-                aria-hidden="true"
-                className="c22"
-                focusable="false"
-                preserveAspectRatio="xMidYMid meet"
-                role="presentation"
-                viewBox="0 0 24 24"
-              >
-                <polygon
-                  points="19.969 4 24 8.027 12 20 0 8.027 4.031 4 12 11.952"
-                />
-              </svg>
-            </span>
-          </button>
-        </div>
-        <div
-          className="c23"
+              <polygon
+                points="19.969 4 24 8.027 12 20 0 8.027 4.031 4 12 11.952"
+              />
+            </svg>
+          </span>
+        </button>
+        <button
+          aria-expanded={false}
+          className="NormalizedButton__Button-ey7f5x-0 c19 c20"
+          disabled={true}
+          onClick={[Function]}
+          type="button"
         >
-          <button
-            aria-expanded={false}
-            className="NormalizedButton__Button-ey7f5x-0 c19 c20"
-            disabled={true}
-            onClick={[Function]}
-            type="button"
+          <span
+            className="c21"
           >
-            <span
-              className="c21"
+            <svg
+              aria-hidden="true"
+              className="c23 c24"
+              direction="down"
+              focusable="false"
+              preserveAspectRatio="xMidYMid meet"
+              role="presentation"
+              viewBox="0 0 16 16"
             >
-              <svg
-                aria-hidden="true"
-                className="c24 c25"
-                direction="down"
-                focusable="false"
-                preserveAspectRatio="xMidYMid meet"
-                role="presentation"
-                viewBox="0 0 16 16"
-              >
-                <polygon
-                  points="14.620 3.580, 16.000 5.020, 8.000 12.730, 0.000 5.030, 1.400 3.580, 8.000 9.96"
-                />
-              </svg>
-            </span>
-          </button>
-        </div>
+              <polygon
+                points="14.620 3.580, 16.000 5.020, 8.000 12.730, 0.000 5.030, 1.400 3.580, 8.000 9.96"
+              />
+            </svg>
+          </span>
+        </button>
       </div>
     </div>
     <div
@@ -5558,66 +5380,58 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
         </div>
       </div>
       <div
-        className="c13 c16 c14"
+        className="c13 c16 c18 c14"
         role="cell"
       >
-        <div
-          className="c18"
+        <button
+          aria-expanded={false}
+          className="NormalizedButton__Button-ey7f5x-0 c19 c20"
+          disabled={true}
+          onClick={[Function]}
+          type="button"
         >
-          <button
-            aria-expanded={false}
-            className="NormalizedButton__Button-ey7f5x-0 c19 c20"
-            disabled={true}
-            onClick={[Function]}
-            type="button"
+          <span
+            className="c21"
           >
-            <span
-              className="c21"
+            <svg
+              aria-hidden="true"
+              className="c22"
+              focusable="false"
+              preserveAspectRatio="xMidYMid meet"
+              role="presentation"
+              viewBox="0 0 24 24"
             >
-              <svg
-                aria-hidden="true"
-                className="c22"
-                focusable="false"
-                preserveAspectRatio="xMidYMid meet"
-                role="presentation"
-                viewBox="0 0 24 24"
-              >
-                <polygon
-                  points="19.969 4 24 8.027 12 20 0 8.027 4.031 4 12 11.952"
-                />
-              </svg>
-            </span>
-          </button>
-        </div>
-        <div
-          className="c23"
+              <polygon
+                points="19.969 4 24 8.027 12 20 0 8.027 4.031 4 12 11.952"
+              />
+            </svg>
+          </span>
+        </button>
+        <button
+          aria-expanded={false}
+          className="NormalizedButton__Button-ey7f5x-0 c19 c20"
+          disabled={true}
+          onClick={[Function]}
+          type="button"
         >
-          <button
-            aria-expanded={false}
-            className="NormalizedButton__Button-ey7f5x-0 c19 c20"
-            disabled={true}
-            onClick={[Function]}
-            type="button"
+          <span
+            className="c21"
           >
-            <span
-              className="c21"
+            <svg
+              aria-hidden="true"
+              className="c23 c24"
+              direction="down"
+              focusable="false"
+              preserveAspectRatio="xMidYMid meet"
+              role="presentation"
+              viewBox="0 0 16 16"
             >
-              <svg
-                aria-hidden="true"
-                className="c24 c25"
-                direction="down"
-                focusable="false"
-                preserveAspectRatio="xMidYMid meet"
-                role="presentation"
-                viewBox="0 0 16 16"
-              >
-                <polygon
-                  points="14.620 3.580, 16.000 5.020, 8.000 12.730, 0.000 5.030, 1.400 3.580, 8.000 9.96"
-                />
-              </svg>
-            </span>
-          </button>
-        </div>
+              <polygon
+                points="14.620 3.580, 16.000 5.020, 8.000 12.730, 0.000 5.030, 1.400 3.580, 8.000 9.96"
+              />
+            </svg>
+          </span>
+        </button>
       </div>
     </div>
     <div
@@ -5689,66 +5503,58 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
         </div>
       </div>
       <div
-        className="c13 c16 c14"
+        className="c13 c16 c18 c14"
         role="cell"
       >
-        <div
-          className="c18"
+        <button
+          aria-expanded={false}
+          className="NormalizedButton__Button-ey7f5x-0 c19 c20"
+          disabled={true}
+          onClick={[Function]}
+          type="button"
         >
-          <button
-            aria-expanded={false}
-            className="NormalizedButton__Button-ey7f5x-0 c19 c20"
-            disabled={true}
-            onClick={[Function]}
-            type="button"
+          <span
+            className="c21"
           >
-            <span
-              className="c21"
+            <svg
+              aria-hidden="true"
+              className="c22"
+              focusable="false"
+              preserveAspectRatio="xMidYMid meet"
+              role="presentation"
+              viewBox="0 0 24 24"
             >
-              <svg
-                aria-hidden="true"
-                className="c22"
-                focusable="false"
-                preserveAspectRatio="xMidYMid meet"
-                role="presentation"
-                viewBox="0 0 24 24"
-              >
-                <polygon
-                  points="19.969 4 24 8.027 12 20 0 8.027 4.031 4 12 11.952"
-                />
-              </svg>
-            </span>
-          </button>
-        </div>
-        <div
-          className="c23"
+              <polygon
+                points="19.969 4 24 8.027 12 20 0 8.027 4.031 4 12 11.952"
+              />
+            </svg>
+          </span>
+        </button>
+        <button
+          aria-expanded={false}
+          className="NormalizedButton__Button-ey7f5x-0 c19 c20"
+          disabled={true}
+          onClick={[Function]}
+          type="button"
         >
-          <button
-            aria-expanded={false}
-            className="NormalizedButton__Button-ey7f5x-0 c19 c20"
-            disabled={true}
-            onClick={[Function]}
-            type="button"
+          <span
+            className="c21"
           >
-            <span
-              className="c21"
+            <svg
+              aria-hidden="true"
+              className="c23 c24"
+              direction="down"
+              focusable="false"
+              preserveAspectRatio="xMidYMid meet"
+              role="presentation"
+              viewBox="0 0 16 16"
             >
-              <svg
-                aria-hidden="true"
-                className="c24 c25"
-                direction="down"
-                focusable="false"
-                preserveAspectRatio="xMidYMid meet"
-                role="presentation"
-                viewBox="0 0 16 16"
-              >
-                <polygon
-                  points="14.620 3.580, 16.000 5.020, 8.000 12.730, 0.000 5.030, 1.400 3.580, 8.000 9.96"
-                />
-              </svg>
-            </span>
-          </button>
-        </div>
+              <polygon
+                points="14.620 3.580, 16.000 5.020, 8.000 12.730, 0.000 5.030, 1.400 3.580, 8.000 9.96"
+              />
+            </svg>
+          </span>
+        </button>
       </div>
     </div>
     <div
@@ -5820,66 +5626,58 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
         </div>
       </div>
       <div
-        className="c13 c16 c14"
+        className="c13 c16 c18 c14"
         role="cell"
       >
-        <div
-          className="c18"
+        <button
+          aria-expanded={false}
+          className="NormalizedButton__Button-ey7f5x-0 c19 c20"
+          disabled={true}
+          onClick={[Function]}
+          type="button"
         >
-          <button
-            aria-expanded={false}
-            className="NormalizedButton__Button-ey7f5x-0 c19 c20"
-            disabled={true}
-            onClick={[Function]}
-            type="button"
+          <span
+            className="c21"
           >
-            <span
-              className="c21"
+            <svg
+              aria-hidden="true"
+              className="c22"
+              focusable="false"
+              preserveAspectRatio="xMidYMid meet"
+              role="presentation"
+              viewBox="0 0 24 24"
             >
-              <svg
-                aria-hidden="true"
-                className="c22"
-                focusable="false"
-                preserveAspectRatio="xMidYMid meet"
-                role="presentation"
-                viewBox="0 0 24 24"
-              >
-                <polygon
-                  points="19.969 4 24 8.027 12 20 0 8.027 4.031 4 12 11.952"
-                />
-              </svg>
-            </span>
-          </button>
-        </div>
-        <div
-          className="c23"
+              <polygon
+                points="19.969 4 24 8.027 12 20 0 8.027 4.031 4 12 11.952"
+              />
+            </svg>
+          </span>
+        </button>
+        <button
+          aria-expanded={false}
+          className="NormalizedButton__Button-ey7f5x-0 c19 c20"
+          disabled={true}
+          onClick={[Function]}
+          type="button"
         >
-          <button
-            aria-expanded={false}
-            className="NormalizedButton__Button-ey7f5x-0 c19 c20"
-            disabled={true}
-            onClick={[Function]}
-            type="button"
+          <span
+            className="c21"
           >
-            <span
-              className="c21"
+            <svg
+              aria-hidden="true"
+              className="c23 c24"
+              direction="down"
+              focusable="false"
+              preserveAspectRatio="xMidYMid meet"
+              role="presentation"
+              viewBox="0 0 16 16"
             >
-              <svg
-                aria-hidden="true"
-                className="c24 c25"
-                direction="down"
-                focusable="false"
-                preserveAspectRatio="xMidYMid meet"
-                role="presentation"
-                viewBox="0 0 16 16"
-              >
-                <polygon
-                  points="14.620 3.580, 16.000 5.020, 8.000 12.730, 0.000 5.030, 1.400 3.580, 8.000 9.96"
-                />
-              </svg>
-            </span>
-          </button>
-        </div>
+              <polygon
+                points="14.620 3.580, 16.000 5.020, 8.000 12.730, 0.000 5.030, 1.400 3.580, 8.000 9.96"
+              />
+            </svg>
+          </span>
+        </button>
       </div>
     </div>
     <div
@@ -5951,66 +5749,58 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
         </div>
       </div>
       <div
-        className="c13 c16 c14"
+        className="c13 c16 c18 c14"
         role="cell"
       >
-        <div
-          className="c18"
+        <button
+          aria-expanded={false}
+          className="NormalizedButton__Button-ey7f5x-0 c19 c20"
+          disabled={true}
+          onClick={[Function]}
+          type="button"
         >
-          <button
-            aria-expanded={false}
-            className="NormalizedButton__Button-ey7f5x-0 c19 c20"
-            disabled={true}
-            onClick={[Function]}
-            type="button"
+          <span
+            className="c21"
           >
-            <span
-              className="c21"
+            <svg
+              aria-hidden="true"
+              className="c22"
+              focusable="false"
+              preserveAspectRatio="xMidYMid meet"
+              role="presentation"
+              viewBox="0 0 24 24"
             >
-              <svg
-                aria-hidden="true"
-                className="c22"
-                focusable="false"
-                preserveAspectRatio="xMidYMid meet"
-                role="presentation"
-                viewBox="0 0 24 24"
-              >
-                <polygon
-                  points="19.969 4 24 8.027 12 20 0 8.027 4.031 4 12 11.952"
-                />
-              </svg>
-            </span>
-          </button>
-        </div>
-        <div
-          className="c23"
+              <polygon
+                points="19.969 4 24 8.027 12 20 0 8.027 4.031 4 12 11.952"
+              />
+            </svg>
+          </span>
+        </button>
+        <button
+          aria-expanded={false}
+          className="NormalizedButton__Button-ey7f5x-0 c19 c20"
+          disabled={true}
+          onClick={[Function]}
+          type="button"
         >
-          <button
-            aria-expanded={false}
-            className="NormalizedButton__Button-ey7f5x-0 c19 c20"
-            disabled={true}
-            onClick={[Function]}
-            type="button"
+          <span
+            className="c21"
           >
-            <span
-              className="c21"
+            <svg
+              aria-hidden="true"
+              className="c23 c24"
+              direction="down"
+              focusable="false"
+              preserveAspectRatio="xMidYMid meet"
+              role="presentation"
+              viewBox="0 0 16 16"
             >
-              <svg
-                aria-hidden="true"
-                className="c24 c25"
-                direction="down"
-                focusable="false"
-                preserveAspectRatio="xMidYMid meet"
-                role="presentation"
-                viewBox="0 0 16 16"
-              >
-                <polygon
-                  points="14.620 3.580, 16.000 5.020, 8.000 12.730, 0.000 5.030, 1.400 3.580, 8.000 9.96"
-                />
-              </svg>
-            </span>
-          </button>
-        </div>
+              <polygon
+                points="14.620 3.580, 16.000 5.020, 8.000 12.730, 0.000 5.030, 1.400 3.580, 8.000 9.96"
+              />
+            </svg>
+          </span>
+        </button>
       </div>
     </div>
     <div
@@ -6082,66 +5872,58 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
         </div>
       </div>
       <div
-        className="c13 c16 c14"
+        className="c13 c16 c18 c14"
         role="cell"
       >
-        <div
-          className="c18"
+        <button
+          aria-expanded={false}
+          className="NormalizedButton__Button-ey7f5x-0 c19 c20"
+          disabled={true}
+          onClick={[Function]}
+          type="button"
         >
-          <button
-            aria-expanded={false}
-            className="NormalizedButton__Button-ey7f5x-0 c19 c20"
-            disabled={true}
-            onClick={[Function]}
-            type="button"
+          <span
+            className="c21"
           >
-            <span
-              className="c21"
+            <svg
+              aria-hidden="true"
+              className="c22"
+              focusable="false"
+              preserveAspectRatio="xMidYMid meet"
+              role="presentation"
+              viewBox="0 0 24 24"
             >
-              <svg
-                aria-hidden="true"
-                className="c22"
-                focusable="false"
-                preserveAspectRatio="xMidYMid meet"
-                role="presentation"
-                viewBox="0 0 24 24"
-              >
-                <polygon
-                  points="19.969 4 24 8.027 12 20 0 8.027 4.031 4 12 11.952"
-                />
-              </svg>
-            </span>
-          </button>
-        </div>
-        <div
-          className="c23"
+              <polygon
+                points="19.969 4 24 8.027 12 20 0 8.027 4.031 4 12 11.952"
+              />
+            </svg>
+          </span>
+        </button>
+        <button
+          aria-expanded={false}
+          className="NormalizedButton__Button-ey7f5x-0 c19 c20"
+          disabled={true}
+          onClick={[Function]}
+          type="button"
         >
-          <button
-            aria-expanded={false}
-            className="NormalizedButton__Button-ey7f5x-0 c19 c20"
-            disabled={true}
-            onClick={[Function]}
-            type="button"
+          <span
+            className="c21"
           >
-            <span
-              className="c21"
+            <svg
+              aria-hidden="true"
+              className="c23 c24"
+              direction="down"
+              focusable="false"
+              preserveAspectRatio="xMidYMid meet"
+              role="presentation"
+              viewBox="0 0 16 16"
             >
-              <svg
-                aria-hidden="true"
-                className="c24 c25"
-                direction="down"
-                focusable="false"
-                preserveAspectRatio="xMidYMid meet"
-                role="presentation"
-                viewBox="0 0 16 16"
-              >
-                <polygon
-                  points="14.620 3.580, 16.000 5.020, 8.000 12.730, 0.000 5.030, 1.400 3.580, 8.000 9.96"
-                />
-              </svg>
-            </span>
-          </button>
-        </div>
+              <polygon
+                points="14.620 3.580, 16.000 5.020, 8.000 12.730, 0.000 5.030, 1.400 3.580, 8.000 9.96"
+              />
+            </svg>
+          </span>
+        </button>
       </div>
     </div>
     <div
@@ -6213,66 +5995,58 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
         </div>
       </div>
       <div
-        className="c13 c16 c14"
+        className="c13 c16 c18 c14"
         role="cell"
       >
-        <div
-          className="c18"
+        <button
+          aria-expanded={false}
+          className="NormalizedButton__Button-ey7f5x-0 c19 c20"
+          disabled={true}
+          onClick={[Function]}
+          type="button"
         >
-          <button
-            aria-expanded={false}
-            className="NormalizedButton__Button-ey7f5x-0 c19 c20"
-            disabled={true}
-            onClick={[Function]}
-            type="button"
+          <span
+            className="c21"
           >
-            <span
-              className="c21"
+            <svg
+              aria-hidden="true"
+              className="c22"
+              focusable="false"
+              preserveAspectRatio="xMidYMid meet"
+              role="presentation"
+              viewBox="0 0 24 24"
             >
-              <svg
-                aria-hidden="true"
-                className="c22"
-                focusable="false"
-                preserveAspectRatio="xMidYMid meet"
-                role="presentation"
-                viewBox="0 0 24 24"
-              >
-                <polygon
-                  points="19.969 4 24 8.027 12 20 0 8.027 4.031 4 12 11.952"
-                />
-              </svg>
-            </span>
-          </button>
-        </div>
-        <div
-          className="c23"
+              <polygon
+                points="19.969 4 24 8.027 12 20 0 8.027 4.031 4 12 11.952"
+              />
+            </svg>
+          </span>
+        </button>
+        <button
+          aria-expanded={false}
+          className="NormalizedButton__Button-ey7f5x-0 c19 c20"
+          disabled={true}
+          onClick={[Function]}
+          type="button"
         >
-          <button
-            aria-expanded={false}
-            className="NormalizedButton__Button-ey7f5x-0 c19 c20"
-            disabled={true}
-            onClick={[Function]}
-            type="button"
+          <span
+            className="c21"
           >
-            <span
-              className="c21"
+            <svg
+              aria-hidden="true"
+              className="c23 c24"
+              direction="down"
+              focusable="false"
+              preserveAspectRatio="xMidYMid meet"
+              role="presentation"
+              viewBox="0 0 16 16"
             >
-              <svg
-                aria-hidden="true"
-                className="c24 c25"
-                direction="down"
-                focusable="false"
-                preserveAspectRatio="xMidYMid meet"
-                role="presentation"
-                viewBox="0 0 16 16"
-              >
-                <polygon
-                  points="14.620 3.580, 16.000 5.020, 8.000 12.730, 0.000 5.030, 1.400 3.580, 8.000 9.96"
-                />
-              </svg>
-            </span>
-          </button>
-        </div>
+              <polygon
+                points="14.620 3.580, 16.000 5.020, 8.000 12.730, 0.000 5.030, 1.400 3.580, 8.000 9.96"
+              />
+            </svg>
+          </span>
+        </button>
       </div>
     </div>
     <div
@@ -6344,66 +6118,58 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
         </div>
       </div>
       <div
-        className="c13 c16 c14"
+        className="c13 c16 c18 c14"
         role="cell"
       >
-        <div
-          className="c18"
+        <button
+          aria-expanded={false}
+          className="NormalizedButton__Button-ey7f5x-0 c19 c20"
+          disabled={true}
+          onClick={[Function]}
+          type="button"
         >
-          <button
-            aria-expanded={false}
-            className="NormalizedButton__Button-ey7f5x-0 c19 c20"
-            disabled={true}
-            onClick={[Function]}
-            type="button"
+          <span
+            className="c21"
           >
-            <span
-              className="c21"
+            <svg
+              aria-hidden="true"
+              className="c22"
+              focusable="false"
+              preserveAspectRatio="xMidYMid meet"
+              role="presentation"
+              viewBox="0 0 24 24"
             >
-              <svg
-                aria-hidden="true"
-                className="c22"
-                focusable="false"
-                preserveAspectRatio="xMidYMid meet"
-                role="presentation"
-                viewBox="0 0 24 24"
-              >
-                <polygon
-                  points="19.969 4 24 8.027 12 20 0 8.027 4.031 4 12 11.952"
-                />
-              </svg>
-            </span>
-          </button>
-        </div>
-        <div
-          className="c23"
+              <polygon
+                points="19.969 4 24 8.027 12 20 0 8.027 4.031 4 12 11.952"
+              />
+            </svg>
+          </span>
+        </button>
+        <button
+          aria-expanded={false}
+          className="NormalizedButton__Button-ey7f5x-0 c19 c20"
+          disabled={true}
+          onClick={[Function]}
+          type="button"
         >
-          <button
-            aria-expanded={false}
-            className="NormalizedButton__Button-ey7f5x-0 c19 c20"
-            disabled={true}
-            onClick={[Function]}
-            type="button"
+          <span
+            className="c21"
           >
-            <span
-              className="c21"
+            <svg
+              aria-hidden="true"
+              className="c23 c24"
+              direction="down"
+              focusable="false"
+              preserveAspectRatio="xMidYMid meet"
+              role="presentation"
+              viewBox="0 0 16 16"
             >
-              <svg
-                aria-hidden="true"
-                className="c24 c25"
-                direction="down"
-                focusable="false"
-                preserveAspectRatio="xMidYMid meet"
-                role="presentation"
-                viewBox="0 0 16 16"
-              >
-                <polygon
-                  points="14.620 3.580, 16.000 5.020, 8.000 12.730, 0.000 5.030, 1.400 3.580, 8.000 9.96"
-                />
-              </svg>
-            </span>
-          </button>
-        </div>
+              <polygon
+                points="14.620 3.580, 16.000 5.020, 8.000 12.730, 0.000 5.030, 1.400 3.580, 8.000 9.96"
+              />
+            </svg>
+          </span>
+        </button>
       </div>
     </div>
     <div
@@ -6475,66 +6241,58 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
         </div>
       </div>
       <div
-        className="c13 c16 c14"
+        className="c13 c16 c18 c14"
         role="cell"
       >
-        <div
-          className="c18"
+        <button
+          aria-expanded={false}
+          className="NormalizedButton__Button-ey7f5x-0 c19 c20"
+          disabled={true}
+          onClick={[Function]}
+          type="button"
         >
-          <button
-            aria-expanded={false}
-            className="NormalizedButton__Button-ey7f5x-0 c19 c20"
-            disabled={true}
-            onClick={[Function]}
-            type="button"
+          <span
+            className="c21"
           >
-            <span
-              className="c21"
+            <svg
+              aria-hidden="true"
+              className="c22"
+              focusable="false"
+              preserveAspectRatio="xMidYMid meet"
+              role="presentation"
+              viewBox="0 0 24 24"
             >
-              <svg
-                aria-hidden="true"
-                className="c22"
-                focusable="false"
-                preserveAspectRatio="xMidYMid meet"
-                role="presentation"
-                viewBox="0 0 24 24"
-              >
-                <polygon
-                  points="19.969 4 24 8.027 12 20 0 8.027 4.031 4 12 11.952"
-                />
-              </svg>
-            </span>
-          </button>
-        </div>
-        <div
-          className="c23"
+              <polygon
+                points="19.969 4 24 8.027 12 20 0 8.027 4.031 4 12 11.952"
+              />
+            </svg>
+          </span>
+        </button>
+        <button
+          aria-expanded={false}
+          className="NormalizedButton__Button-ey7f5x-0 c19 c20"
+          disabled={true}
+          onClick={[Function]}
+          type="button"
         >
-          <button
-            aria-expanded={false}
-            className="NormalizedButton__Button-ey7f5x-0 c19 c20"
-            disabled={true}
-            onClick={[Function]}
-            type="button"
+          <span
+            className="c21"
           >
-            <span
-              className="c21"
+            <svg
+              aria-hidden="true"
+              className="c23 c24"
+              direction="down"
+              focusable="false"
+              preserveAspectRatio="xMidYMid meet"
+              role="presentation"
+              viewBox="0 0 16 16"
             >
-              <svg
-                aria-hidden="true"
-                className="c24 c25"
-                direction="down"
-                focusable="false"
-                preserveAspectRatio="xMidYMid meet"
-                role="presentation"
-                viewBox="0 0 16 16"
-              >
-                <polygon
-                  points="14.620 3.580, 16.000 5.020, 8.000 12.730, 0.000 5.030, 1.400 3.580, 8.000 9.96"
-                />
-              </svg>
-            </span>
-          </button>
-        </div>
+              <polygon
+                points="14.620 3.580, 16.000 5.020, 8.000 12.730, 0.000 5.030, 1.400 3.580, 8.000 9.96"
+              />
+            </svg>
+          </span>
+        </button>
       </div>
     </div>
     <div
@@ -6606,66 +6364,58 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
         </div>
       </div>
       <div
-        className="c13 c16 c14"
+        className="c13 c16 c18 c14"
         role="cell"
       >
-        <div
-          className="c18"
+        <button
+          aria-expanded={false}
+          className="NormalizedButton__Button-ey7f5x-0 c19 c20"
+          disabled={true}
+          onClick={[Function]}
+          type="button"
         >
-          <button
-            aria-expanded={false}
-            className="NormalizedButton__Button-ey7f5x-0 c19 c20"
-            disabled={true}
-            onClick={[Function]}
-            type="button"
+          <span
+            className="c21"
           >
-            <span
-              className="c21"
+            <svg
+              aria-hidden="true"
+              className="c22"
+              focusable="false"
+              preserveAspectRatio="xMidYMid meet"
+              role="presentation"
+              viewBox="0 0 24 24"
             >
-              <svg
-                aria-hidden="true"
-                className="c22"
-                focusable="false"
-                preserveAspectRatio="xMidYMid meet"
-                role="presentation"
-                viewBox="0 0 24 24"
-              >
-                <polygon
-                  points="19.969 4 24 8.027 12 20 0 8.027 4.031 4 12 11.952"
-                />
-              </svg>
-            </span>
-          </button>
-        </div>
-        <div
-          className="c23"
+              <polygon
+                points="19.969 4 24 8.027 12 20 0 8.027 4.031 4 12 11.952"
+              />
+            </svg>
+          </span>
+        </button>
+        <button
+          aria-expanded={false}
+          className="NormalizedButton__Button-ey7f5x-0 c19 c20"
+          disabled={true}
+          onClick={[Function]}
+          type="button"
         >
-          <button
-            aria-expanded={false}
-            className="NormalizedButton__Button-ey7f5x-0 c19 c20"
-            disabled={true}
-            onClick={[Function]}
-            type="button"
+          <span
+            className="c21"
           >
-            <span
-              className="c21"
+            <svg
+              aria-hidden="true"
+              className="c23 c24"
+              direction="down"
+              focusable="false"
+              preserveAspectRatio="xMidYMid meet"
+              role="presentation"
+              viewBox="0 0 16 16"
             >
-              <svg
-                aria-hidden="true"
-                className="c24 c25"
-                direction="down"
-                focusable="false"
-                preserveAspectRatio="xMidYMid meet"
-                role="presentation"
-                viewBox="0 0 16 16"
-              >
-                <polygon
-                  points="14.620 3.580, 16.000 5.020, 8.000 12.730, 0.000 5.030, 1.400 3.580, 8.000 9.96"
-                />
-              </svg>
-            </span>
-          </button>
-        </div>
+              <polygon
+                points="14.620 3.580, 16.000 5.020, 8.000 12.730, 0.000 5.030, 1.400 3.580, 8.000 9.96"
+              />
+            </svg>
+          </span>
+        </button>
       </div>
     </div>
     <div
@@ -6737,66 +6487,58 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
         </div>
       </div>
       <div
-        className="c13 c16 c14"
+        className="c13 c16 c18 c14"
         role="cell"
       >
-        <div
-          className="c18"
+        <button
+          aria-expanded={false}
+          className="NormalizedButton__Button-ey7f5x-0 c19 c20"
+          disabled={true}
+          onClick={[Function]}
+          type="button"
         >
-          <button
-            aria-expanded={false}
-            className="NormalizedButton__Button-ey7f5x-0 c19 c20"
-            disabled={true}
-            onClick={[Function]}
-            type="button"
+          <span
+            className="c21"
           >
-            <span
-              className="c21"
+            <svg
+              aria-hidden="true"
+              className="c22"
+              focusable="false"
+              preserveAspectRatio="xMidYMid meet"
+              role="presentation"
+              viewBox="0 0 24 24"
             >
-              <svg
-                aria-hidden="true"
-                className="c22"
-                focusable="false"
-                preserveAspectRatio="xMidYMid meet"
-                role="presentation"
-                viewBox="0 0 24 24"
-              >
-                <polygon
-                  points="19.969 4 24 8.027 12 20 0 8.027 4.031 4 12 11.952"
-                />
-              </svg>
-            </span>
-          </button>
-        </div>
-        <div
-          className="c23"
+              <polygon
+                points="19.969 4 24 8.027 12 20 0 8.027 4.031 4 12 11.952"
+              />
+            </svg>
+          </span>
+        </button>
+        <button
+          aria-expanded={false}
+          className="NormalizedButton__Button-ey7f5x-0 c19 c20"
+          disabled={true}
+          onClick={[Function]}
+          type="button"
         >
-          <button
-            aria-expanded={false}
-            className="NormalizedButton__Button-ey7f5x-0 c19 c20"
-            disabled={true}
-            onClick={[Function]}
-            type="button"
+          <span
+            className="c21"
           >
-            <span
-              className="c21"
+            <svg
+              aria-hidden="true"
+              className="c23 c24"
+              direction="down"
+              focusable="false"
+              preserveAspectRatio="xMidYMid meet"
+              role="presentation"
+              viewBox="0 0 16 16"
             >
-              <svg
-                aria-hidden="true"
-                className="c24 c25"
-                direction="down"
-                focusable="false"
-                preserveAspectRatio="xMidYMid meet"
-                role="presentation"
-                viewBox="0 0 16 16"
-              >
-                <polygon
-                  points="14.620 3.580, 16.000 5.020, 8.000 12.730, 0.000 5.030, 1.400 3.580, 8.000 9.96"
-                />
-              </svg>
-            </span>
-          </button>
-        </div>
+              <polygon
+                points="14.620 3.580, 16.000 5.020, 8.000 12.730, 0.000 5.030, 1.400 3.580, 8.000 9.96"
+              />
+            </svg>
+          </span>
+        </button>
       </div>
     </div>
     <div
@@ -6868,66 +6610,58 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
         </div>
       </div>
       <div
-        className="c13 c16 c14"
+        className="c13 c16 c18 c14"
         role="cell"
       >
-        <div
-          className="c18"
+        <button
+          aria-expanded={false}
+          className="NormalizedButton__Button-ey7f5x-0 c19 c20"
+          disabled={true}
+          onClick={[Function]}
+          type="button"
         >
-          <button
-            aria-expanded={false}
-            className="NormalizedButton__Button-ey7f5x-0 c19 c20"
-            disabled={true}
-            onClick={[Function]}
-            type="button"
+          <span
+            className="c21"
           >
-            <span
-              className="c21"
+            <svg
+              aria-hidden="true"
+              className="c22"
+              focusable="false"
+              preserveAspectRatio="xMidYMid meet"
+              role="presentation"
+              viewBox="0 0 24 24"
             >
-              <svg
-                aria-hidden="true"
-                className="c22"
-                focusable="false"
-                preserveAspectRatio="xMidYMid meet"
-                role="presentation"
-                viewBox="0 0 24 24"
-              >
-                <polygon
-                  points="19.969 4 24 8.027 12 20 0 8.027 4.031 4 12 11.952"
-                />
-              </svg>
-            </span>
-          </button>
-        </div>
-        <div
-          className="c23"
+              <polygon
+                points="19.969 4 24 8.027 12 20 0 8.027 4.031 4 12 11.952"
+              />
+            </svg>
+          </span>
+        </button>
+        <button
+          aria-expanded={false}
+          className="NormalizedButton__Button-ey7f5x-0 c19 c20"
+          disabled={true}
+          onClick={[Function]}
+          type="button"
         >
-          <button
-            aria-expanded={false}
-            className="NormalizedButton__Button-ey7f5x-0 c19 c20"
-            disabled={true}
-            onClick={[Function]}
-            type="button"
+          <span
+            className="c21"
           >
-            <span
-              className="c21"
+            <svg
+              aria-hidden="true"
+              className="c23 c24"
+              direction="down"
+              focusable="false"
+              preserveAspectRatio="xMidYMid meet"
+              role="presentation"
+              viewBox="0 0 16 16"
             >
-              <svg
-                aria-hidden="true"
-                className="c24 c25"
-                direction="down"
-                focusable="false"
-                preserveAspectRatio="xMidYMid meet"
-                role="presentation"
-                viewBox="0 0 16 16"
-              >
-                <polygon
-                  points="14.620 3.580, 16.000 5.020, 8.000 12.730, 0.000 5.030, 1.400 3.580, 8.000 9.96"
-                />
-              </svg>
-            </span>
-          </button>
-        </div>
+              <polygon
+                points="14.620 3.580, 16.000 5.020, 8.000 12.730, 0.000 5.030, 1.400 3.580, 8.000 9.96"
+              />
+            </svg>
+          </span>
+        </button>
       </div>
     </div>
     <div
@@ -6999,66 +6733,58 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
         </div>
       </div>
       <div
-        className="c13 c16 c14"
+        className="c13 c16 c18 c14"
         role="cell"
       >
-        <div
-          className="c18"
+        <button
+          aria-expanded={false}
+          className="NormalizedButton__Button-ey7f5x-0 c19 c20"
+          disabled={true}
+          onClick={[Function]}
+          type="button"
         >
-          <button
-            aria-expanded={false}
-            className="NormalizedButton__Button-ey7f5x-0 c19 c20"
-            disabled={true}
-            onClick={[Function]}
-            type="button"
+          <span
+            className="c21"
           >
-            <span
-              className="c21"
+            <svg
+              aria-hidden="true"
+              className="c22"
+              focusable="false"
+              preserveAspectRatio="xMidYMid meet"
+              role="presentation"
+              viewBox="0 0 24 24"
             >
-              <svg
-                aria-hidden="true"
-                className="c22"
-                focusable="false"
-                preserveAspectRatio="xMidYMid meet"
-                role="presentation"
-                viewBox="0 0 24 24"
-              >
-                <polygon
-                  points="19.969 4 24 8.027 12 20 0 8.027 4.031 4 12 11.952"
-                />
-              </svg>
-            </span>
-          </button>
-        </div>
-        <div
-          className="c23"
+              <polygon
+                points="19.969 4 24 8.027 12 20 0 8.027 4.031 4 12 11.952"
+              />
+            </svg>
+          </span>
+        </button>
+        <button
+          aria-expanded={false}
+          className="NormalizedButton__Button-ey7f5x-0 c19 c20"
+          disabled={true}
+          onClick={[Function]}
+          type="button"
         >
-          <button
-            aria-expanded={false}
-            className="NormalizedButton__Button-ey7f5x-0 c19 c20"
-            disabled={true}
-            onClick={[Function]}
-            type="button"
+          <span
+            className="c21"
           >
-            <span
-              className="c21"
+            <svg
+              aria-hidden="true"
+              className="c23 c24"
+              direction="down"
+              focusable="false"
+              preserveAspectRatio="xMidYMid meet"
+              role="presentation"
+              viewBox="0 0 16 16"
             >
-              <svg
-                aria-hidden="true"
-                className="c24 c25"
-                direction="down"
-                focusable="false"
-                preserveAspectRatio="xMidYMid meet"
-                role="presentation"
-                viewBox="0 0 16 16"
-              >
-                <polygon
-                  points="14.620 3.580, 16.000 5.020, 8.000 12.730, 0.000 5.030, 1.400 3.580, 8.000 9.96"
-                />
-              </svg>
-            </span>
-          </button>
-        </div>
+              <polygon
+                points="14.620 3.580, 16.000 5.020, 8.000 12.730, 0.000 5.030, 1.400 3.580, 8.000 9.96"
+              />
+            </svg>
+          </span>
+        </button>
       </div>
     </div>
     <div
@@ -7130,66 +6856,58 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
         </div>
       </div>
       <div
-        className="c13 c16 c14"
+        className="c13 c16 c18 c14"
         role="cell"
       >
-        <div
-          className="c18"
+        <button
+          aria-expanded={false}
+          className="NormalizedButton__Button-ey7f5x-0 c19 c20"
+          disabled={true}
+          onClick={[Function]}
+          type="button"
         >
-          <button
-            aria-expanded={false}
-            className="NormalizedButton__Button-ey7f5x-0 c19 c20"
-            disabled={true}
-            onClick={[Function]}
-            type="button"
+          <span
+            className="c21"
           >
-            <span
-              className="c21"
+            <svg
+              aria-hidden="true"
+              className="c22"
+              focusable="false"
+              preserveAspectRatio="xMidYMid meet"
+              role="presentation"
+              viewBox="0 0 24 24"
             >
-              <svg
-                aria-hidden="true"
-                className="c22"
-                focusable="false"
-                preserveAspectRatio="xMidYMid meet"
-                role="presentation"
-                viewBox="0 0 24 24"
-              >
-                <polygon
-                  points="19.969 4 24 8.027 12 20 0 8.027 4.031 4 12 11.952"
-                />
-              </svg>
-            </span>
-          </button>
-        </div>
-        <div
-          className="c23"
+              <polygon
+                points="19.969 4 24 8.027 12 20 0 8.027 4.031 4 12 11.952"
+              />
+            </svg>
+          </span>
+        </button>
+        <button
+          aria-expanded={false}
+          className="NormalizedButton__Button-ey7f5x-0 c19 c20"
+          disabled={true}
+          onClick={[Function]}
+          type="button"
         >
-          <button
-            aria-expanded={false}
-            className="NormalizedButton__Button-ey7f5x-0 c19 c20"
-            disabled={true}
-            onClick={[Function]}
-            type="button"
+          <span
+            className="c21"
           >
-            <span
-              className="c21"
+            <svg
+              aria-hidden="true"
+              className="c23 c24"
+              direction="down"
+              focusable="false"
+              preserveAspectRatio="xMidYMid meet"
+              role="presentation"
+              viewBox="0 0 16 16"
             >
-              <svg
-                aria-hidden="true"
-                className="c24 c25"
-                direction="down"
-                focusable="false"
-                preserveAspectRatio="xMidYMid meet"
-                role="presentation"
-                viewBox="0 0 16 16"
-              >
-                <polygon
-                  points="14.620 3.580, 16.000 5.020, 8.000 12.730, 0.000 5.030, 1.400 3.580, 8.000 9.96"
-                />
-              </svg>
-            </span>
-          </button>
-        </div>
+              <polygon
+                points="14.620 3.580, 16.000 5.020, 8.000 12.730, 0.000 5.030, 1.400 3.580, 8.000 9.96"
+              />
+            </svg>
+          </span>
+        </button>
       </div>
     </div>
     <div
@@ -7261,66 +6979,58 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
         </div>
       </div>
       <div
-        className="c13 c16 c14"
+        className="c13 c16 c18 c14"
         role="cell"
       >
-        <div
-          className="c18"
+        <button
+          aria-expanded={false}
+          className="NormalizedButton__Button-ey7f5x-0 c19 c20"
+          disabled={true}
+          onClick={[Function]}
+          type="button"
         >
-          <button
-            aria-expanded={false}
-            className="NormalizedButton__Button-ey7f5x-0 c19 c20"
-            disabled={true}
-            onClick={[Function]}
-            type="button"
+          <span
+            className="c21"
           >
-            <span
-              className="c21"
+            <svg
+              aria-hidden="true"
+              className="c22"
+              focusable="false"
+              preserveAspectRatio="xMidYMid meet"
+              role="presentation"
+              viewBox="0 0 24 24"
             >
-              <svg
-                aria-hidden="true"
-                className="c22"
-                focusable="false"
-                preserveAspectRatio="xMidYMid meet"
-                role="presentation"
-                viewBox="0 0 24 24"
-              >
-                <polygon
-                  points="19.969 4 24 8.027 12 20 0 8.027 4.031 4 12 11.952"
-                />
-              </svg>
-            </span>
-          </button>
-        </div>
-        <div
-          className="c23"
+              <polygon
+                points="19.969 4 24 8.027 12 20 0 8.027 4.031 4 12 11.952"
+              />
+            </svg>
+          </span>
+        </button>
+        <button
+          aria-expanded={false}
+          className="NormalizedButton__Button-ey7f5x-0 c19 c20"
+          disabled={true}
+          onClick={[Function]}
+          type="button"
         >
-          <button
-            aria-expanded={false}
-            className="NormalizedButton__Button-ey7f5x-0 c19 c20"
-            disabled={true}
-            onClick={[Function]}
-            type="button"
+          <span
+            className="c21"
           >
-            <span
-              className="c21"
+            <svg
+              aria-hidden="true"
+              className="c23 c24"
+              direction="down"
+              focusable="false"
+              preserveAspectRatio="xMidYMid meet"
+              role="presentation"
+              viewBox="0 0 16 16"
             >
-              <svg
-                aria-hidden="true"
-                className="c24 c25"
-                direction="down"
-                focusable="false"
-                preserveAspectRatio="xMidYMid meet"
-                role="presentation"
-                viewBox="0 0 16 16"
-              >
-                <polygon
-                  points="14.620 3.580, 16.000 5.020, 8.000 12.730, 0.000 5.030, 1.400 3.580, 8.000 9.96"
-                />
-              </svg>
-            </span>
-          </button>
-        </div>
+              <polygon
+                points="14.620 3.580, 16.000 5.020, 8.000 12.730, 0.000 5.030, 1.400 3.580, 8.000 9.96"
+              />
+            </svg>
+          </span>
+        </button>
       </div>
     </div>
     <div
@@ -7392,66 +7102,58 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
         </div>
       </div>
       <div
-        className="c13 c16 c14"
+        className="c13 c16 c18 c14"
         role="cell"
       >
-        <div
-          className="c18"
+        <button
+          aria-expanded={false}
+          className="NormalizedButton__Button-ey7f5x-0 c19 c20"
+          disabled={true}
+          onClick={[Function]}
+          type="button"
         >
-          <button
-            aria-expanded={false}
-            className="NormalizedButton__Button-ey7f5x-0 c19 c20"
-            disabled={true}
-            onClick={[Function]}
-            type="button"
+          <span
+            className="c21"
           >
-            <span
-              className="c21"
+            <svg
+              aria-hidden="true"
+              className="c22"
+              focusable="false"
+              preserveAspectRatio="xMidYMid meet"
+              role="presentation"
+              viewBox="0 0 24 24"
             >
-              <svg
-                aria-hidden="true"
-                className="c22"
-                focusable="false"
-                preserveAspectRatio="xMidYMid meet"
-                role="presentation"
-                viewBox="0 0 24 24"
-              >
-                <polygon
-                  points="19.969 4 24 8.027 12 20 0 8.027 4.031 4 12 11.952"
-                />
-              </svg>
-            </span>
-          </button>
-        </div>
-        <div
-          className="c23"
+              <polygon
+                points="19.969 4 24 8.027 12 20 0 8.027 4.031 4 12 11.952"
+              />
+            </svg>
+          </span>
+        </button>
+        <button
+          aria-expanded={false}
+          className="NormalizedButton__Button-ey7f5x-0 c19 c20"
+          disabled={true}
+          onClick={[Function]}
+          type="button"
         >
-          <button
-            aria-expanded={false}
-            className="NormalizedButton__Button-ey7f5x-0 c19 c20"
-            disabled={true}
-            onClick={[Function]}
-            type="button"
+          <span
+            className="c21"
           >
-            <span
-              className="c21"
+            <svg
+              aria-hidden="true"
+              className="c23 c24"
+              direction="down"
+              focusable="false"
+              preserveAspectRatio="xMidYMid meet"
+              role="presentation"
+              viewBox="0 0 16 16"
             >
-              <svg
-                aria-hidden="true"
-                className="c24 c25"
-                direction="down"
-                focusable="false"
-                preserveAspectRatio="xMidYMid meet"
-                role="presentation"
-                viewBox="0 0 16 16"
-              >
-                <polygon
-                  points="14.620 3.580, 16.000 5.020, 8.000 12.730, 0.000 5.030, 1.400 3.580, 8.000 9.96"
-                />
-              </svg>
-            </span>
-          </button>
-        </div>
+              <polygon
+                points="14.620 3.580, 16.000 5.020, 8.000 12.730, 0.000 5.030, 1.400 3.580, 8.000 9.96"
+              />
+            </svg>
+          </span>
+        </button>
       </div>
     </div>
     <div
@@ -7523,66 +7225,58 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
         </div>
       </div>
       <div
-        className="c13 c16 c14"
+        className="c13 c16 c18 c14"
         role="cell"
       >
-        <div
-          className="c18"
+        <button
+          aria-expanded={false}
+          className="NormalizedButton__Button-ey7f5x-0 c19 c20"
+          disabled={true}
+          onClick={[Function]}
+          type="button"
         >
-          <button
-            aria-expanded={false}
-            className="NormalizedButton__Button-ey7f5x-0 c19 c20"
-            disabled={true}
-            onClick={[Function]}
-            type="button"
+          <span
+            className="c21"
           >
-            <span
-              className="c21"
+            <svg
+              aria-hidden="true"
+              className="c22"
+              focusable="false"
+              preserveAspectRatio="xMidYMid meet"
+              role="presentation"
+              viewBox="0 0 24 24"
             >
-              <svg
-                aria-hidden="true"
-                className="c22"
-                focusable="false"
-                preserveAspectRatio="xMidYMid meet"
-                role="presentation"
-                viewBox="0 0 24 24"
-              >
-                <polygon
-                  points="19.969 4 24 8.027 12 20 0 8.027 4.031 4 12 11.952"
-                />
-              </svg>
-            </span>
-          </button>
-        </div>
-        <div
-          className="c23"
+              <polygon
+                points="19.969 4 24 8.027 12 20 0 8.027 4.031 4 12 11.952"
+              />
+            </svg>
+          </span>
+        </button>
+        <button
+          aria-expanded={false}
+          className="NormalizedButton__Button-ey7f5x-0 c19 c20"
+          disabled={true}
+          onClick={[Function]}
+          type="button"
         >
-          <button
-            aria-expanded={false}
-            className="NormalizedButton__Button-ey7f5x-0 c19 c20"
-            disabled={true}
-            onClick={[Function]}
-            type="button"
+          <span
+            className="c21"
           >
-            <span
-              className="c21"
+            <svg
+              aria-hidden="true"
+              className="c23 c24"
+              direction="down"
+              focusable="false"
+              preserveAspectRatio="xMidYMid meet"
+              role="presentation"
+              viewBox="0 0 16 16"
             >
-              <svg
-                aria-hidden="true"
-                className="c24 c25"
-                direction="down"
-                focusable="false"
-                preserveAspectRatio="xMidYMid meet"
-                role="presentation"
-                viewBox="0 0 16 16"
-              >
-                <polygon
-                  points="14.620 3.580, 16.000 5.020, 8.000 12.730, 0.000 5.030, 1.400 3.580, 8.000 9.96"
-                />
-              </svg>
-            </span>
-          </button>
-        </div>
+              <polygon
+                points="14.620 3.580, 16.000 5.020, 8.000 12.730, 0.000 5.030, 1.400 3.580, 8.000 9.96"
+              />
+            </svg>
+          </span>
+        </button>
       </div>
     </div>
     <div
@@ -7654,66 +7348,58 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
         </div>
       </div>
       <div
-        className="c13 c16 c14"
+        className="c13 c16 c18 c14"
         role="cell"
       >
-        <div
-          className="c18"
+        <button
+          aria-expanded={false}
+          className="NormalizedButton__Button-ey7f5x-0 c19 c20"
+          disabled={true}
+          onClick={[Function]}
+          type="button"
         >
-          <button
-            aria-expanded={false}
-            className="NormalizedButton__Button-ey7f5x-0 c19 c20"
-            disabled={true}
-            onClick={[Function]}
-            type="button"
+          <span
+            className="c21"
           >
-            <span
-              className="c21"
+            <svg
+              aria-hidden="true"
+              className="c22"
+              focusable="false"
+              preserveAspectRatio="xMidYMid meet"
+              role="presentation"
+              viewBox="0 0 24 24"
             >
-              <svg
-                aria-hidden="true"
-                className="c22"
-                focusable="false"
-                preserveAspectRatio="xMidYMid meet"
-                role="presentation"
-                viewBox="0 0 24 24"
-              >
-                <polygon
-                  points="19.969 4 24 8.027 12 20 0 8.027 4.031 4 12 11.952"
-                />
-              </svg>
-            </span>
-          </button>
-        </div>
-        <div
-          className="c23"
+              <polygon
+                points="19.969 4 24 8.027 12 20 0 8.027 4.031 4 12 11.952"
+              />
+            </svg>
+          </span>
+        </button>
+        <button
+          aria-expanded={false}
+          className="NormalizedButton__Button-ey7f5x-0 c19 c20"
+          disabled={true}
+          onClick={[Function]}
+          type="button"
         >
-          <button
-            aria-expanded={false}
-            className="NormalizedButton__Button-ey7f5x-0 c19 c20"
-            disabled={true}
-            onClick={[Function]}
-            type="button"
+          <span
+            className="c21"
           >
-            <span
-              className="c21"
+            <svg
+              aria-hidden="true"
+              className="c23 c24"
+              direction="down"
+              focusable="false"
+              preserveAspectRatio="xMidYMid meet"
+              role="presentation"
+              viewBox="0 0 16 16"
             >
-              <svg
-                aria-hidden="true"
-                className="c24 c25"
-                direction="down"
-                focusable="false"
-                preserveAspectRatio="xMidYMid meet"
-                role="presentation"
-                viewBox="0 0 16 16"
-              >
-                <polygon
-                  points="14.620 3.580, 16.000 5.020, 8.000 12.730, 0.000 5.030, 1.400 3.580, 8.000 9.96"
-                />
-              </svg>
-            </span>
-          </button>
-        </div>
+              <polygon
+                points="14.620 3.580, 16.000 5.020, 8.000 12.730, 0.000 5.030, 1.400 3.580, 8.000 9.96"
+              />
+            </svg>
+          </span>
+        </button>
       </div>
     </div>
     <div
@@ -7785,66 +7471,58 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
         </div>
       </div>
       <div
-        className="c13 c16 c14"
+        className="c13 c16 c18 c14"
         role="cell"
       >
-        <div
-          className="c18"
+        <button
+          aria-expanded={false}
+          className="NormalizedButton__Button-ey7f5x-0 c19 c20"
+          disabled={true}
+          onClick={[Function]}
+          type="button"
         >
-          <button
-            aria-expanded={false}
-            className="NormalizedButton__Button-ey7f5x-0 c19 c20"
-            disabled={true}
-            onClick={[Function]}
-            type="button"
+          <span
+            className="c21"
           >
-            <span
-              className="c21"
+            <svg
+              aria-hidden="true"
+              className="c22"
+              focusable="false"
+              preserveAspectRatio="xMidYMid meet"
+              role="presentation"
+              viewBox="0 0 24 24"
             >
-              <svg
-                aria-hidden="true"
-                className="c22"
-                focusable="false"
-                preserveAspectRatio="xMidYMid meet"
-                role="presentation"
-                viewBox="0 0 24 24"
-              >
-                <polygon
-                  points="19.969 4 24 8.027 12 20 0 8.027 4.031 4 12 11.952"
-                />
-              </svg>
-            </span>
-          </button>
-        </div>
-        <div
-          className="c23"
+              <polygon
+                points="19.969 4 24 8.027 12 20 0 8.027 4.031 4 12 11.952"
+              />
+            </svg>
+          </span>
+        </button>
+        <button
+          aria-expanded={false}
+          className="NormalizedButton__Button-ey7f5x-0 c19 c20"
+          disabled={true}
+          onClick={[Function]}
+          type="button"
         >
-          <button
-            aria-expanded={false}
-            className="NormalizedButton__Button-ey7f5x-0 c19 c20"
-            disabled={true}
-            onClick={[Function]}
-            type="button"
+          <span
+            className="c21"
           >
-            <span
-              className="c21"
+            <svg
+              aria-hidden="true"
+              className="c23 c24"
+              direction="down"
+              focusable="false"
+              preserveAspectRatio="xMidYMid meet"
+              role="presentation"
+              viewBox="0 0 16 16"
             >
-              <svg
-                aria-hidden="true"
-                className="c24 c25"
-                direction="down"
-                focusable="false"
-                preserveAspectRatio="xMidYMid meet"
-                role="presentation"
-                viewBox="0 0 16 16"
-              >
-                <polygon
-                  points="14.620 3.580, 16.000 5.020, 8.000 12.730, 0.000 5.030, 1.400 3.580, 8.000 9.96"
-                />
-              </svg>
-            </span>
-          </button>
-        </div>
+              <polygon
+                points="14.620 3.580, 16.000 5.020, 8.000 12.730, 0.000 5.030, 1.400 3.580, 8.000 9.96"
+              />
+            </svg>
+          </span>
+        </button>
       </div>
     </div>
     <div
@@ -7916,66 +7594,58 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
         </div>
       </div>
       <div
-        className="c13 c16 c14"
+        className="c13 c16 c18 c14"
         role="cell"
       >
-        <div
-          className="c18"
+        <button
+          aria-expanded={false}
+          className="NormalizedButton__Button-ey7f5x-0 c19 c20"
+          disabled={true}
+          onClick={[Function]}
+          type="button"
         >
-          <button
-            aria-expanded={false}
-            className="NormalizedButton__Button-ey7f5x-0 c19 c20"
-            disabled={true}
-            onClick={[Function]}
-            type="button"
+          <span
+            className="c21"
           >
-            <span
-              className="c21"
+            <svg
+              aria-hidden="true"
+              className="c22"
+              focusable="false"
+              preserveAspectRatio="xMidYMid meet"
+              role="presentation"
+              viewBox="0 0 24 24"
             >
-              <svg
-                aria-hidden="true"
-                className="c22"
-                focusable="false"
-                preserveAspectRatio="xMidYMid meet"
-                role="presentation"
-                viewBox="0 0 24 24"
-              >
-                <polygon
-                  points="19.969 4 24 8.027 12 20 0 8.027 4.031 4 12 11.952"
-                />
-              </svg>
-            </span>
-          </button>
-        </div>
-        <div
-          className="c23"
+              <polygon
+                points="19.969 4 24 8.027 12 20 0 8.027 4.031 4 12 11.952"
+              />
+            </svg>
+          </span>
+        </button>
+        <button
+          aria-expanded={false}
+          className="NormalizedButton__Button-ey7f5x-0 c19 c20"
+          disabled={true}
+          onClick={[Function]}
+          type="button"
         >
-          <button
-            aria-expanded={false}
-            className="NormalizedButton__Button-ey7f5x-0 c19 c20"
-            disabled={true}
-            onClick={[Function]}
-            type="button"
+          <span
+            className="c21"
           >
-            <span
-              className="c21"
+            <svg
+              aria-hidden="true"
+              className="c23 c24"
+              direction="down"
+              focusable="false"
+              preserveAspectRatio="xMidYMid meet"
+              role="presentation"
+              viewBox="0 0 16 16"
             >
-              <svg
-                aria-hidden="true"
-                className="c24 c25"
-                direction="down"
-                focusable="false"
-                preserveAspectRatio="xMidYMid meet"
-                role="presentation"
-                viewBox="0 0 16 16"
-              >
-                <polygon
-                  points="14.620 3.580, 16.000 5.020, 8.000 12.730, 0.000 5.030, 1.400 3.580, 8.000 9.96"
-                />
-              </svg>
-            </span>
-          </button>
-        </div>
+              <polygon
+                points="14.620 3.580, 16.000 5.020, 8.000 12.730, 0.000 5.030, 1.400 3.580, 8.000 9.96"
+              />
+            </svg>
+          </span>
+        </button>
       </div>
     </div>
     <div
@@ -8047,66 +7717,58 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
         </div>
       </div>
       <div
-        className="c13 c16 c14"
+        className="c13 c16 c18 c14"
         role="cell"
       >
-        <div
-          className="c18"
+        <button
+          aria-expanded={false}
+          className="NormalizedButton__Button-ey7f5x-0 c19 c20"
+          disabled={true}
+          onClick={[Function]}
+          type="button"
         >
-          <button
-            aria-expanded={false}
-            className="NormalizedButton__Button-ey7f5x-0 c19 c20"
-            disabled={true}
-            onClick={[Function]}
-            type="button"
+          <span
+            className="c21"
           >
-            <span
-              className="c21"
+            <svg
+              aria-hidden="true"
+              className="c22"
+              focusable="false"
+              preserveAspectRatio="xMidYMid meet"
+              role="presentation"
+              viewBox="0 0 24 24"
             >
-              <svg
-                aria-hidden="true"
-                className="c22"
-                focusable="false"
-                preserveAspectRatio="xMidYMid meet"
-                role="presentation"
-                viewBox="0 0 24 24"
-              >
-                <polygon
-                  points="19.969 4 24 8.027 12 20 0 8.027 4.031 4 12 11.952"
-                />
-              </svg>
-            </span>
-          </button>
-        </div>
-        <div
-          className="c23"
+              <polygon
+                points="19.969 4 24 8.027 12 20 0 8.027 4.031 4 12 11.952"
+              />
+            </svg>
+          </span>
+        </button>
+        <button
+          aria-expanded={false}
+          className="NormalizedButton__Button-ey7f5x-0 c19 c20"
+          disabled={true}
+          onClick={[Function]}
+          type="button"
         >
-          <button
-            aria-expanded={false}
-            className="NormalizedButton__Button-ey7f5x-0 c19 c20"
-            disabled={true}
-            onClick={[Function]}
-            type="button"
+          <span
+            className="c21"
           >
-            <span
-              className="c21"
+            <svg
+              aria-hidden="true"
+              className="c23 c24"
+              direction="down"
+              focusable="false"
+              preserveAspectRatio="xMidYMid meet"
+              role="presentation"
+              viewBox="0 0 16 16"
             >
-              <svg
-                aria-hidden="true"
-                className="c24 c25"
-                direction="down"
-                focusable="false"
-                preserveAspectRatio="xMidYMid meet"
-                role="presentation"
-                viewBox="0 0 16 16"
-              >
-                <polygon
-                  points="14.620 3.580, 16.000 5.020, 8.000 12.730, 0.000 5.030, 1.400 3.580, 8.000 9.96"
-                />
-              </svg>
-            </span>
-          </button>
-        </div>
+              <polygon
+                points="14.620 3.580, 16.000 5.020, 8.000 12.730, 0.000 5.030, 1.400 3.580, 8.000 9.96"
+              />
+            </svg>
+          </span>
+        </button>
       </div>
     </div>
     <div
@@ -8178,66 +7840,58 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
         </div>
       </div>
       <div
-        className="c13 c16 c14"
+        className="c13 c16 c18 c14"
         role="cell"
       >
-        <div
-          className="c18"
+        <button
+          aria-expanded={false}
+          className="NormalizedButton__Button-ey7f5x-0 c19 c20"
+          disabled={true}
+          onClick={[Function]}
+          type="button"
         >
-          <button
-            aria-expanded={false}
-            className="NormalizedButton__Button-ey7f5x-0 c19 c20"
-            disabled={true}
-            onClick={[Function]}
-            type="button"
+          <span
+            className="c21"
           >
-            <span
-              className="c21"
+            <svg
+              aria-hidden="true"
+              className="c22"
+              focusable="false"
+              preserveAspectRatio="xMidYMid meet"
+              role="presentation"
+              viewBox="0 0 24 24"
             >
-              <svg
-                aria-hidden="true"
-                className="c22"
-                focusable="false"
-                preserveAspectRatio="xMidYMid meet"
-                role="presentation"
-                viewBox="0 0 24 24"
-              >
-                <polygon
-                  points="19.969 4 24 8.027 12 20 0 8.027 4.031 4 12 11.952"
-                />
-              </svg>
-            </span>
-          </button>
-        </div>
-        <div
-          className="c23"
+              <polygon
+                points="19.969 4 24 8.027 12 20 0 8.027 4.031 4 12 11.952"
+              />
+            </svg>
+          </span>
+        </button>
+        <button
+          aria-expanded={false}
+          className="NormalizedButton__Button-ey7f5x-0 c19 c20"
+          disabled={true}
+          onClick={[Function]}
+          type="button"
         >
-          <button
-            aria-expanded={false}
-            className="NormalizedButton__Button-ey7f5x-0 c19 c20"
-            disabled={true}
-            onClick={[Function]}
-            type="button"
+          <span
+            className="c21"
           >
-            <span
-              className="c21"
+            <svg
+              aria-hidden="true"
+              className="c23 c24"
+              direction="down"
+              focusable="false"
+              preserveAspectRatio="xMidYMid meet"
+              role="presentation"
+              viewBox="0 0 16 16"
             >
-              <svg
-                aria-hidden="true"
-                className="c24 c25"
-                direction="down"
-                focusable="false"
-                preserveAspectRatio="xMidYMid meet"
-                role="presentation"
-                viewBox="0 0 16 16"
-              >
-                <polygon
-                  points="14.620 3.580, 16.000 5.020, 8.000 12.730, 0.000 5.030, 1.400 3.580, 8.000 9.96"
-                />
-              </svg>
-            </span>
-          </button>
-        </div>
+              <polygon
+                points="14.620 3.580, 16.000 5.020, 8.000 12.730, 0.000 5.030, 1.400 3.580, 8.000 9.96"
+              />
+            </svg>
+          </span>
+        </button>
       </div>
     </div>
     <div
@@ -8309,66 +7963,58 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
         </div>
       </div>
       <div
-        className="c13 c16 c14"
+        className="c13 c16 c18 c14"
         role="cell"
       >
-        <div
-          className="c18"
+        <button
+          aria-expanded={false}
+          className="NormalizedButton__Button-ey7f5x-0 c19 c20"
+          disabled={true}
+          onClick={[Function]}
+          type="button"
         >
-          <button
-            aria-expanded={false}
-            className="NormalizedButton__Button-ey7f5x-0 c19 c20"
-            disabled={true}
-            onClick={[Function]}
-            type="button"
+          <span
+            className="c21"
           >
-            <span
-              className="c21"
+            <svg
+              aria-hidden="true"
+              className="c22"
+              focusable="false"
+              preserveAspectRatio="xMidYMid meet"
+              role="presentation"
+              viewBox="0 0 24 24"
             >
-              <svg
-                aria-hidden="true"
-                className="c22"
-                focusable="false"
-                preserveAspectRatio="xMidYMid meet"
-                role="presentation"
-                viewBox="0 0 24 24"
-              >
-                <polygon
-                  points="19.969 4 24 8.027 12 20 0 8.027 4.031 4 12 11.952"
-                />
-              </svg>
-            </span>
-          </button>
-        </div>
-        <div
-          className="c23"
+              <polygon
+                points="19.969 4 24 8.027 12 20 0 8.027 4.031 4 12 11.952"
+              />
+            </svg>
+          </span>
+        </button>
+        <button
+          aria-expanded={false}
+          className="NormalizedButton__Button-ey7f5x-0 c19 c20"
+          disabled={true}
+          onClick={[Function]}
+          type="button"
         >
-          <button
-            aria-expanded={false}
-            className="NormalizedButton__Button-ey7f5x-0 c19 c20"
-            disabled={true}
-            onClick={[Function]}
-            type="button"
+          <span
+            className="c21"
           >
-            <span
-              className="c21"
+            <svg
+              aria-hidden="true"
+              className="c23 c24"
+              direction="down"
+              focusable="false"
+              preserveAspectRatio="xMidYMid meet"
+              role="presentation"
+              viewBox="0 0 16 16"
             >
-              <svg
-                aria-hidden="true"
-                className="c24 c25"
-                direction="down"
-                focusable="false"
-                preserveAspectRatio="xMidYMid meet"
-                role="presentation"
-                viewBox="0 0 16 16"
-              >
-                <polygon
-                  points="14.620 3.580, 16.000 5.020, 8.000 12.730, 0.000 5.030, 1.400 3.580, 8.000 9.96"
-                />
-              </svg>
-            </span>
-          </button>
-        </div>
+              <polygon
+                points="14.620 3.580, 16.000 5.020, 8.000 12.730, 0.000 5.030, 1.400 3.580, 8.000 9.96"
+              />
+            </svg>
+          </span>
+        </button>
       </div>
     </div>
     <div
@@ -8440,66 +8086,58 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
         </div>
       </div>
       <div
-        className="c13 c16 c14"
+        className="c13 c16 c18 c14"
         role="cell"
       >
-        <div
-          className="c18"
+        <button
+          aria-expanded={false}
+          className="NormalizedButton__Button-ey7f5x-0 c19 c20"
+          disabled={true}
+          onClick={[Function]}
+          type="button"
         >
-          <button
-            aria-expanded={false}
-            className="NormalizedButton__Button-ey7f5x-0 c19 c20"
-            disabled={true}
-            onClick={[Function]}
-            type="button"
+          <span
+            className="c21"
           >
-            <span
-              className="c21"
+            <svg
+              aria-hidden="true"
+              className="c22"
+              focusable="false"
+              preserveAspectRatio="xMidYMid meet"
+              role="presentation"
+              viewBox="0 0 24 24"
             >
-              <svg
-                aria-hidden="true"
-                className="c22"
-                focusable="false"
-                preserveAspectRatio="xMidYMid meet"
-                role="presentation"
-                viewBox="0 0 24 24"
-              >
-                <polygon
-                  points="19.969 4 24 8.027 12 20 0 8.027 4.031 4 12 11.952"
-                />
-              </svg>
-            </span>
-          </button>
-        </div>
-        <div
-          className="c23"
+              <polygon
+                points="19.969 4 24 8.027 12 20 0 8.027 4.031 4 12 11.952"
+              />
+            </svg>
+          </span>
+        </button>
+        <button
+          aria-expanded={false}
+          className="NormalizedButton__Button-ey7f5x-0 c19 c20"
+          disabled={true}
+          onClick={[Function]}
+          type="button"
         >
-          <button
-            aria-expanded={false}
-            className="NormalizedButton__Button-ey7f5x-0 c19 c20"
-            disabled={true}
-            onClick={[Function]}
-            type="button"
+          <span
+            className="c21"
           >
-            <span
-              className="c21"
+            <svg
+              aria-hidden="true"
+              className="c23 c24"
+              direction="down"
+              focusable="false"
+              preserveAspectRatio="xMidYMid meet"
+              role="presentation"
+              viewBox="0 0 16 16"
             >
-              <svg
-                aria-hidden="true"
-                className="c24 c25"
-                direction="down"
-                focusable="false"
-                preserveAspectRatio="xMidYMid meet"
-                role="presentation"
-                viewBox="0 0 16 16"
-              >
-                <polygon
-                  points="14.620 3.580, 16.000 5.020, 8.000 12.730, 0.000 5.030, 1.400 3.580, 8.000 9.96"
-                />
-              </svg>
-            </span>
-          </button>
-        </div>
+              <polygon
+                points="14.620 3.580, 16.000 5.020, 8.000 12.730, 0.000 5.030, 1.400 3.580, 8.000 9.96"
+              />
+            </svg>
+          </span>
+        </button>
       </div>
     </div>
     <div
@@ -8571,66 +8209,58 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
         </div>
       </div>
       <div
-        className="c13 c16 c14"
+        className="c13 c16 c18 c14"
         role="cell"
       >
-        <div
-          className="c18"
+        <button
+          aria-expanded={false}
+          className="NormalizedButton__Button-ey7f5x-0 c19 c20"
+          disabled={true}
+          onClick={[Function]}
+          type="button"
         >
-          <button
-            aria-expanded={false}
-            className="NormalizedButton__Button-ey7f5x-0 c19 c20"
-            disabled={true}
-            onClick={[Function]}
-            type="button"
+          <span
+            className="c21"
           >
-            <span
-              className="c21"
+            <svg
+              aria-hidden="true"
+              className="c22"
+              focusable="false"
+              preserveAspectRatio="xMidYMid meet"
+              role="presentation"
+              viewBox="0 0 24 24"
             >
-              <svg
-                aria-hidden="true"
-                className="c22"
-                focusable="false"
-                preserveAspectRatio="xMidYMid meet"
-                role="presentation"
-                viewBox="0 0 24 24"
-              >
-                <polygon
-                  points="19.969 4 24 8.027 12 20 0 8.027 4.031 4 12 11.952"
-                />
-              </svg>
-            </span>
-          </button>
-        </div>
-        <div
-          className="c23"
+              <polygon
+                points="19.969 4 24 8.027 12 20 0 8.027 4.031 4 12 11.952"
+              />
+            </svg>
+          </span>
+        </button>
+        <button
+          aria-expanded={false}
+          className="NormalizedButton__Button-ey7f5x-0 c19 c20"
+          disabled={true}
+          onClick={[Function]}
+          type="button"
         >
-          <button
-            aria-expanded={false}
-            className="NormalizedButton__Button-ey7f5x-0 c19 c20"
-            disabled={true}
-            onClick={[Function]}
-            type="button"
+          <span
+            className="c21"
           >
-            <span
-              className="c21"
+            <svg
+              aria-hidden="true"
+              className="c23 c24"
+              direction="down"
+              focusable="false"
+              preserveAspectRatio="xMidYMid meet"
+              role="presentation"
+              viewBox="0 0 16 16"
             >
-              <svg
-                aria-hidden="true"
-                className="c24 c25"
-                direction="down"
-                focusable="false"
-                preserveAspectRatio="xMidYMid meet"
-                role="presentation"
-                viewBox="0 0 16 16"
-              >
-                <polygon
-                  points="14.620 3.580, 16.000 5.020, 8.000 12.730, 0.000 5.030, 1.400 3.580, 8.000 9.96"
-                />
-              </svg>
-            </span>
-          </button>
-        </div>
+              <polygon
+                points="14.620 3.580, 16.000 5.020, 8.000 12.730, 0.000 5.030, 1.400 3.580, 8.000 9.96"
+              />
+            </svg>
+          </span>
+        </button>
       </div>
     </div>
     <div
@@ -8702,66 +8332,58 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
         </div>
       </div>
       <div
-        className="c13 c16 c14"
+        className="c13 c16 c18 c14"
         role="cell"
       >
-        <div
-          className="c18"
+        <button
+          aria-expanded={false}
+          className="NormalizedButton__Button-ey7f5x-0 c19 c20"
+          disabled={true}
+          onClick={[Function]}
+          type="button"
         >
-          <button
-            aria-expanded={false}
-            className="NormalizedButton__Button-ey7f5x-0 c19 c20"
-            disabled={true}
-            onClick={[Function]}
-            type="button"
+          <span
+            className="c21"
           >
-            <span
-              className="c21"
+            <svg
+              aria-hidden="true"
+              className="c22"
+              focusable="false"
+              preserveAspectRatio="xMidYMid meet"
+              role="presentation"
+              viewBox="0 0 24 24"
             >
-              <svg
-                aria-hidden="true"
-                className="c22"
-                focusable="false"
-                preserveAspectRatio="xMidYMid meet"
-                role="presentation"
-                viewBox="0 0 24 24"
-              >
-                <polygon
-                  points="19.969 4 24 8.027 12 20 0 8.027 4.031 4 12 11.952"
-                />
-              </svg>
-            </span>
-          </button>
-        </div>
-        <div
-          className="c23"
+              <polygon
+                points="19.969 4 24 8.027 12 20 0 8.027 4.031 4 12 11.952"
+              />
+            </svg>
+          </span>
+        </button>
+        <button
+          aria-expanded={false}
+          className="NormalizedButton__Button-ey7f5x-0 c19 c20"
+          disabled={true}
+          onClick={[Function]}
+          type="button"
         >
-          <button
-            aria-expanded={false}
-            className="NormalizedButton__Button-ey7f5x-0 c19 c20"
-            disabled={true}
-            onClick={[Function]}
-            type="button"
+          <span
+            className="c21"
           >
-            <span
-              className="c21"
+            <svg
+              aria-hidden="true"
+              className="c23 c24"
+              direction="down"
+              focusable="false"
+              preserveAspectRatio="xMidYMid meet"
+              role="presentation"
+              viewBox="0 0 16 16"
             >
-              <svg
-                aria-hidden="true"
-                className="c24 c25"
-                direction="down"
-                focusable="false"
-                preserveAspectRatio="xMidYMid meet"
-                role="presentation"
-                viewBox="0 0 16 16"
-              >
-                <polygon
-                  points="14.620 3.580, 16.000 5.020, 8.000 12.730, 0.000 5.030, 1.400 3.580, 8.000 9.96"
-                />
-              </svg>
-            </span>
-          </button>
-        </div>
+              <polygon
+                points="14.620 3.580, 16.000 5.020, 8.000 12.730, 0.000 5.030, 1.400 3.580, 8.000 9.96"
+              />
+            </svg>
+          </span>
+        </button>
       </div>
     </div>
     <div
@@ -8833,66 +8455,58 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
         </div>
       </div>
       <div
-        className="c13 c16 c14"
+        className="c13 c16 c18 c14"
         role="cell"
       >
-        <div
-          className="c18"
+        <button
+          aria-expanded={false}
+          className="NormalizedButton__Button-ey7f5x-0 c19 c20"
+          disabled={true}
+          onClick={[Function]}
+          type="button"
         >
-          <button
-            aria-expanded={false}
-            className="NormalizedButton__Button-ey7f5x-0 c19 c20"
-            disabled={true}
-            onClick={[Function]}
-            type="button"
+          <span
+            className="c21"
           >
-            <span
-              className="c21"
+            <svg
+              aria-hidden="true"
+              className="c22"
+              focusable="false"
+              preserveAspectRatio="xMidYMid meet"
+              role="presentation"
+              viewBox="0 0 24 24"
             >
-              <svg
-                aria-hidden="true"
-                className="c22"
-                focusable="false"
-                preserveAspectRatio="xMidYMid meet"
-                role="presentation"
-                viewBox="0 0 24 24"
-              >
-                <polygon
-                  points="19.969 4 24 8.027 12 20 0 8.027 4.031 4 12 11.952"
-                />
-              </svg>
-            </span>
-          </button>
-        </div>
-        <div
-          className="c23"
+              <polygon
+                points="19.969 4 24 8.027 12 20 0 8.027 4.031 4 12 11.952"
+              />
+            </svg>
+          </span>
+        </button>
+        <button
+          aria-expanded={false}
+          className="NormalizedButton__Button-ey7f5x-0 c19 c20"
+          disabled={true}
+          onClick={[Function]}
+          type="button"
         >
-          <button
-            aria-expanded={false}
-            className="NormalizedButton__Button-ey7f5x-0 c19 c20"
-            disabled={true}
-            onClick={[Function]}
-            type="button"
+          <span
+            className="c21"
           >
-            <span
-              className="c21"
+            <svg
+              aria-hidden="true"
+              className="c23 c24"
+              direction="down"
+              focusable="false"
+              preserveAspectRatio="xMidYMid meet"
+              role="presentation"
+              viewBox="0 0 16 16"
             >
-              <svg
-                aria-hidden="true"
-                className="c24 c25"
-                direction="down"
-                focusable="false"
-                preserveAspectRatio="xMidYMid meet"
-                role="presentation"
-                viewBox="0 0 16 16"
-              >
-                <polygon
-                  points="14.620 3.580, 16.000 5.020, 8.000 12.730, 0.000 5.030, 1.400 3.580, 8.000 9.96"
-                />
-              </svg>
-            </span>
-          </button>
-        </div>
+              <polygon
+                points="14.620 3.580, 16.000 5.020, 8.000 12.730, 0.000 5.030, 1.400 3.580, 8.000 9.96"
+              />
+            </svg>
+          </span>
+        </button>
       </div>
     </div>
   </div>
