@@ -17,8 +17,9 @@ const width = css<Pick<Props, 'size'>>`
   width: ${(p) => (p.size === 's' ? p.theme.spacing.unit(8) : p.theme.spacing.unit(10))}px;
 `;
 
-const height = css<Pick<Props, 'size'>>`
-  height: ${(p) => p.size === 's' && p.theme.spacing.unit(8)}px;
+const height = css<Pick<Props, 'variant' | 'size'>>`
+  height: ${(p) => (p.size === 's' ? p.theme.spacing.unit(8) : p.theme.spacing.unit(10))}px;
+  height: ${(p) => (p.variant === 'quiet' ? 'auto' : '')};
 `;
 
 const background = css<Pick<Props, 'disabled' | 'variant'>>`
