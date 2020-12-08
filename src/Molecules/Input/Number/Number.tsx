@@ -18,7 +18,7 @@ const width = css<Pick<Props, 'size'>>`
 `;
 
 const height = css<Pick<Props, 'size'>>`
-  height: ${(p) => (p.size === 's' ? p.theme.spacing.unit(8) : p.theme.spacing.unit(10))}px;
+  height: ${(p) => p.size === 's' && p.theme.spacing.unit(8)}px;
 `;
 
 const background = css<Pick<Props, 'disabled' | 'variant'>>`
@@ -173,7 +173,7 @@ const NumberInput: NumberComponent & {
 } = (props) => {
   const {
     autoFocus,
-    defaultValue = 1,
+    defaultValue,
     disabled,
     error,
     id,
