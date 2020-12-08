@@ -241,72 +241,6 @@ Array [
   padding-right: 40px;
 }
 
-.c7 {
-  font-family: inherit;
-  font-size: 100%;
-  line-height: 1.15;
-  margin: 0;
-  overflow: visible;
-  border: 0;
-  width: 100%;
-  padding: 8px;
-  margin: 0;
-  line-height: 40px;
-  box-sizing: border-box;
-  height: 40px;
-  outline: none;
-  border: solid;
-  border-color: #BCBCB6;
-  border-width: 1px;
-  position: relative;
-  background-color: #FFFFFF;
-  padding-right: 40px;
-}
-
-.c7 {
-  font-family: inherit;
-  font-size: 100%;
-  line-height: 1.15;
-  margin: 0;
-  overflow: visible;
-  border: 0;
-  width: 100%;
-  padding: 8px;
-  margin: 0;
-  line-height: 40px;
-  box-sizing: border-box;
-  height: 40px;
-  outline: none;
-  border: solid;
-  border-color: #BCBCB6;
-  border-width: 1px;
-  position: relative;
-  background-color: #FFFFFF;
-  padding-right: 40px;
-}
-
-.c7 {
-  font-family: inherit;
-  font-size: 100%;
-  line-height: 1.15;
-  margin: 0;
-  overflow: visible;
-  border: 0;
-  width: 100%;
-  padding: 8px;
-  margin: 0;
-  line-height: 40px;
-  box-sizing: border-box;
-  height: 40px;
-  outline: none;
-  border: solid;
-  border-color: #BCBCB6;
-  border-width: 1px;
-  position: relative;
-  background-color: #FFFFFF;
-  padding-right: 40px;
-}
-
 .c7:focus {
   border-width: 1px;
 }
@@ -498,72 +432,6 @@ exports[`Storyshots Molecules / DatePicker / DatePicker with range Default 1`] =
   padding-right: 4px;
   position: absolute;
   right: 4px;
-}
-
-.c7 {
-  font-family: inherit;
-  font-size: 100%;
-  line-height: 1.15;
-  margin: 0;
-  overflow: visible;
-  border: 0;
-  width: 100%;
-  padding: 8px;
-  margin: 0;
-  line-height: 40px;
-  box-sizing: border-box;
-  height: 40px;
-  outline: none;
-  border: solid;
-  border-color: #BCBCB6;
-  border-width: 1px;
-  position: relative;
-  background-color: #FFFFFF;
-  padding-right: 40px;
-}
-
-.c7 {
-  font-family: inherit;
-  font-size: 100%;
-  line-height: 1.15;
-  margin: 0;
-  overflow: visible;
-  border: 0;
-  width: 100%;
-  padding: 8px;
-  margin: 0;
-  line-height: 40px;
-  box-sizing: border-box;
-  height: 40px;
-  outline: none;
-  border: solid;
-  border-color: #BCBCB6;
-  border-width: 1px;
-  position: relative;
-  background-color: #FFFFFF;
-  padding-right: 40px;
-}
-
-.c7 {
-  font-family: inherit;
-  font-size: 100%;
-  line-height: 1.15;
-  margin: 0;
-  overflow: visible;
-  border: 0;
-  width: 100%;
-  padding: 8px;
-  margin: 0;
-  line-height: 40px;
-  box-sizing: border-box;
-  height: 40px;
-  outline: none;
-  border: solid;
-  border-color: #BCBCB6;
-  border-width: 1px;
-  position: relative;
-  background-color: #FFFFFF;
-  padding-right: 40px;
 }
 
 .c7 {
@@ -802,72 +670,6 @@ exports[`Storyshots Molecules / DatePicker / DatePicker with range Disabled Inpu
   padding-right: 40px;
 }
 
-.c7 {
-  font-family: inherit;
-  font-size: 100%;
-  line-height: 1.15;
-  margin: 0;
-  overflow: visible;
-  border: 0;
-  width: 100%;
-  padding: 8px;
-  margin: 0;
-  line-height: 40px;
-  box-sizing: border-box;
-  height: 40px;
-  outline: none;
-  border: solid;
-  border-color: #BCBCB6;
-  border-width: 1px;
-  position: relative;
-  background-color: #EBEBE8;
-  padding-right: 40px;
-}
-
-.c7 {
-  font-family: inherit;
-  font-size: 100%;
-  line-height: 1.15;
-  margin: 0;
-  overflow: visible;
-  border: 0;
-  width: 100%;
-  padding: 8px;
-  margin: 0;
-  line-height: 40px;
-  box-sizing: border-box;
-  height: 40px;
-  outline: none;
-  border: solid;
-  border-color: #BCBCB6;
-  border-width: 1px;
-  position: relative;
-  background-color: #EBEBE8;
-  padding-right: 40px;
-}
-
-.c7 {
-  font-family: inherit;
-  font-size: 100%;
-  line-height: 1.15;
-  margin: 0;
-  overflow: visible;
-  border: 0;
-  width: 100%;
-  padding: 8px;
-  margin: 0;
-  line-height: 40px;
-  box-sizing: border-box;
-  height: 40px;
-  outline: none;
-  border: solid;
-  border-color: #BCBCB6;
-  border-width: 1px;
-  position: relative;
-  background-color: #EBEBE8;
-  padding-right: 40px;
-}
-
 .c7:focus {
   border-width: 1px;
 }
@@ -902,6 +704,22 @@ exports[`Storyshots Molecules / DatePicker / DatePicker with range Disabled Inpu
   height: inherit;
   line-height: inherit;
   opacity: 1;
+}
+
+.c7:disabled::-webkit-input-placeholder {
+  color: #A0A09B;
+}
+
+.c7:disabled::-moz-placeholder {
+  color: #A0A09B;
+}
+
+.c7:disabled:-ms-input-placeholder {
+  color: #A0A09B;
+}
+
+.c7:disabled::placeholder {
+  color: #A0A09B;
 }
 
 .c6 {
@@ -1055,72 +873,6 @@ exports[`Storyshots Molecules / DatePicker / DatePicker with range Same Week Dis
   padding-right: 4px;
   position: absolute;
   right: 4px;
-}
-
-.c7 {
-  font-family: inherit;
-  font-size: 100%;
-  line-height: 1.15;
-  margin: 0;
-  overflow: visible;
-  border: 0;
-  width: 100%;
-  padding: 8px;
-  margin: 0;
-  line-height: 40px;
-  box-sizing: border-box;
-  height: 40px;
-  outline: none;
-  border: solid;
-  border-color: #BCBCB6;
-  border-width: 1px;
-  position: relative;
-  background-color: #FFFFFF;
-  padding-right: 40px;
-}
-
-.c7 {
-  font-family: inherit;
-  font-size: 100%;
-  line-height: 1.15;
-  margin: 0;
-  overflow: visible;
-  border: 0;
-  width: 100%;
-  padding: 8px;
-  margin: 0;
-  line-height: 40px;
-  box-sizing: border-box;
-  height: 40px;
-  outline: none;
-  border: solid;
-  border-color: #BCBCB6;
-  border-width: 1px;
-  position: relative;
-  background-color: #FFFFFF;
-  padding-right: 40px;
-}
-
-.c7 {
-  font-family: inherit;
-  font-size: 100%;
-  line-height: 1.15;
-  margin: 0;
-  overflow: visible;
-  border: 0;
-  width: 100%;
-  padding: 8px;
-  margin: 0;
-  line-height: 40px;
-  box-sizing: border-box;
-  height: 40px;
-  outline: none;
-  border: solid;
-  border-color: #BCBCB6;
-  border-width: 1px;
-  position: relative;
-  background-color: #FFFFFF;
-  padding-right: 40px;
 }
 
 .c7 {
@@ -1335,72 +1087,6 @@ exports[`Storyshots Molecules / DatePicker / DatePicker with range Same Week Ena
   padding-right: 4px;
   position: absolute;
   right: 4px;
-}
-
-.c7 {
-  font-family: inherit;
-  font-size: 100%;
-  line-height: 1.15;
-  margin: 0;
-  overflow: visible;
-  border: 0;
-  width: 100%;
-  padding: 8px;
-  margin: 0;
-  line-height: 40px;
-  box-sizing: border-box;
-  height: 40px;
-  outline: none;
-  border: solid;
-  border-color: #BCBCB6;
-  border-width: 1px;
-  position: relative;
-  background-color: #FFFFFF;
-  padding-right: 40px;
-}
-
-.c7 {
-  font-family: inherit;
-  font-size: 100%;
-  line-height: 1.15;
-  margin: 0;
-  overflow: visible;
-  border: 0;
-  width: 100%;
-  padding: 8px;
-  margin: 0;
-  line-height: 40px;
-  box-sizing: border-box;
-  height: 40px;
-  outline: none;
-  border: solid;
-  border-color: #BCBCB6;
-  border-width: 1px;
-  position: relative;
-  background-color: #FFFFFF;
-  padding-right: 40px;
-}
-
-.c7 {
-  font-family: inherit;
-  font-size: 100%;
-  line-height: 1.15;
-  margin: 0;
-  overflow: visible;
-  border: 0;
-  width: 100%;
-  padding: 8px;
-  margin: 0;
-  line-height: 40px;
-  box-sizing: border-box;
-  height: 40px;
-  outline: none;
-  border: solid;
-  border-color: #BCBCB6;
-  border-width: 1px;
-  position: relative;
-  background-color: #FFFFFF;
-  padding-right: 40px;
 }
 
 .c7 {

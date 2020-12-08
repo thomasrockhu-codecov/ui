@@ -58,16 +58,16 @@ const borderStyles = css<Pick<Props, 'error' | 'success' | 'disabled' | 'variant
     p.disabled && p.variant === 'quiet' ? `border-color: ${p.theme.color.disabledBackground};` : ''}
 `;
 
-export const placeholderNormalizaion = css<Pick<Props, 'variant'>>`
+export const placeholderNormalizaion = css<Pick<Props, 'variant' | 'disabled'>>`
   &::placeholder {
     color: ${(p) => (p.variant === 'quiet' ? p.theme.color.cta : p.theme.color.label)};
     height: inherit;
     line-height: inherit;
     opacity: 1;
   }
-  &:focus::placeholder {
-    color: ${(p) => p.variant === 'quiet' && p.theme.color.disabledText};
-  }
+  ${(p) =>
+    p.variant === 'quiet' ? `&:focus::placeholder { color: ${p.theme.color.disabledText}}` : ''};
+  ${(p) => (p.disabled ? `&:disabled::placeholder { color: ${p.theme.color.disabledText}}` : '')}
 `;
 
 const AddonBox = styled(Flexbox)<{ position?: 'left' | 'right'; variant?: Variant }>`

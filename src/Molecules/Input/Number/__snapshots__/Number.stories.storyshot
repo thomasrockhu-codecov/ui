@@ -159,72 +159,6 @@ exports[`Storyshots Molecules / Input / Number Default 1`] = `
   z-index: 1;
 }
 
-.c7 {
-  font-family: inherit;
-  font-size: 100%;
-  line-height: 1.15;
-  margin: 0;
-  overflow: visible;
-  background-color: #FFFFFF;
-  outline: none;
-  border: 1px solid #BCBCB6;
-  position: relative;
-  border-width: 1px;
-  height: 40px;
-  padding: 8px;
-  width: 100%;
-  text-align: center;
-  box-sizing: border-box;
-  padding: 8px;
-  margin: 0 -1px;
-  min-width: 0;
-  z-index: 1;
-}
-
-.c7 {
-  font-family: inherit;
-  font-size: 100%;
-  line-height: 1.15;
-  margin: 0;
-  overflow: visible;
-  background-color: #FFFFFF;
-  outline: none;
-  border: 1px solid #BCBCB6;
-  position: relative;
-  border-width: 1px;
-  height: 40px;
-  padding: 8px;
-  width: 100%;
-  text-align: center;
-  box-sizing: border-box;
-  padding: 8px;
-  margin: 0 -1px;
-  min-width: 0;
-  z-index: 1;
-}
-
-.c7 {
-  font-family: inherit;
-  font-size: 100%;
-  line-height: 1.15;
-  margin: 0;
-  overflow: visible;
-  background-color: #FFFFFF;
-  outline: none;
-  border: 1px solid #BCBCB6;
-  position: relative;
-  border-width: 1px;
-  height: 40px;
-  padding: 8px;
-  width: 100%;
-  text-align: center;
-  box-sizing: border-box;
-  padding: 8px;
-  margin: 0 -1px;
-  min-width: 0;
-  z-index: 1;
-}
-
 .c7:hover {
   border-color: #4B4B46;
   z-index: 2;
@@ -517,72 +451,6 @@ exports[`Storyshots Molecules / Input / Number Disabled 1`] = `
   z-index: 1;
 }
 
-.c7 {
-  font-family: inherit;
-  font-size: 100%;
-  line-height: 1.15;
-  margin: 0;
-  overflow: visible;
-  background-color: #EBEBE8;
-  outline: none;
-  border: 1px solid #BCBCB6;
-  position: relative;
-  border-width: 1px;
-  height: 40px;
-  padding: 8px;
-  width: 100%;
-  text-align: center;
-  box-sizing: border-box;
-  padding: 8px;
-  margin: 0 -1px;
-  min-width: 0;
-  z-index: 1;
-}
-
-.c7 {
-  font-family: inherit;
-  font-size: 100%;
-  line-height: 1.15;
-  margin: 0;
-  overflow: visible;
-  background-color: #EBEBE8;
-  outline: none;
-  border: 1px solid #BCBCB6;
-  position: relative;
-  border-width: 1px;
-  height: 40px;
-  padding: 8px;
-  width: 100%;
-  text-align: center;
-  box-sizing: border-box;
-  padding: 8px;
-  margin: 0 -1px;
-  min-width: 0;
-  z-index: 1;
-}
-
-.c7 {
-  font-family: inherit;
-  font-size: 100%;
-  line-height: 1.15;
-  margin: 0;
-  overflow: visible;
-  background-color: #EBEBE8;
-  outline: none;
-  border: 1px solid #BCBCB6;
-  position: relative;
-  border-width: 1px;
-  height: 40px;
-  padding: 8px;
-  width: 100%;
-  text-align: center;
-  box-sizing: border-box;
-  padding: 8px;
-  margin: 0 -1px;
-  min-width: 0;
-  z-index: 1;
-}
-
 .c7:focus {
   border-color: #0046FF;
   z-index: 3;
@@ -618,6 +486,22 @@ exports[`Storyshots Molecules / Input / Number Disabled 1`] = `
   height: inherit;
   line-height: inherit;
   opacity: 1;
+}
+
+.c7:disabled::-webkit-input-placeholder {
+  color: #A0A09B;
+}
+
+.c7:disabled::-moz-placeholder {
+  color: #A0A09B;
+}
+
+.c7:disabled:-ms-input-placeholder {
+  color: #A0A09B;
+}
+
+.c7:disabled::placeholder {
+  color: #A0A09B;
 }
 
 .c0 {
@@ -1041,6 +925,22 @@ Array [
 }
 
 .c12:focus::placeholder {
+  color: #A0A09B;
+}
+
+.c12:disabled::-webkit-input-placeholder {
+  color: #A0A09B;
+}
+
+.c12:disabled::-moz-placeholder {
+  color: #A0A09B;
+}
+
+.c12:disabled:-ms-input-placeholder {
+  color: #A0A09B;
+}
+
+.c12:disabled::placeholder {
   color: #A0A09B;
 }
 
@@ -2110,72 +2010,6 @@ Array [
   z-index: 1;
 }
 
-.c10 {
-  font-family: inherit;
-  font-size: 100%;
-  line-height: 1.15;
-  margin: 0;
-  overflow: visible;
-  background-color: #FFFFFF;
-  outline: none;
-  border: 1px solid #BCBCB6;
-  position: relative;
-  border-width: 1px;
-  height: 40px;
-  padding: 8px;
-  width: 100%;
-  text-align: center;
-  box-sizing: border-box;
-  padding: 8px;
-  margin: 0 -1px;
-  min-width: 0;
-  z-index: 1;
-}
-
-.c10 {
-  font-family: inherit;
-  font-size: 100%;
-  line-height: 1.15;
-  margin: 0;
-  overflow: visible;
-  background-color: #FFFFFF;
-  outline: none;
-  border: 1px solid #BCBCB6;
-  position: relative;
-  border-width: 1px;
-  height: 40px;
-  padding: 8px;
-  width: 100%;
-  text-align: center;
-  box-sizing: border-box;
-  padding: 8px;
-  margin: 0 -1px;
-  min-width: 0;
-  z-index: 1;
-}
-
-.c10 {
-  font-family: inherit;
-  font-size: 100%;
-  line-height: 1.15;
-  margin: 0;
-  overflow: visible;
-  background-color: #FFFFFF;
-  outline: none;
-  border: 1px solid #BCBCB6;
-  position: relative;
-  border-width: 1px;
-  height: 40px;
-  padding: 8px;
-  width: 100%;
-  text-align: center;
-  box-sizing: border-box;
-  padding: 8px;
-  margin: 0 -1px;
-  min-width: 0;
-  z-index: 1;
-}
-
 .c10:hover {
   border-color: #4B4B46;
   z-index: 2;
@@ -2666,72 +2500,6 @@ exports[`Storyshots Molecules / Input / Number With a smaller step 1`] = `
   z-index: 1;
 }
 
-.c7 {
-  font-family: inherit;
-  font-size: 100%;
-  line-height: 1.15;
-  margin: 0;
-  overflow: visible;
-  background-color: #FFFFFF;
-  outline: none;
-  border: 1px solid #BCBCB6;
-  position: relative;
-  border-width: 1px;
-  height: 40px;
-  padding: 8px;
-  width: 100%;
-  text-align: center;
-  box-sizing: border-box;
-  padding: 8px;
-  margin: 0 -1px;
-  min-width: 0;
-  z-index: 1;
-}
-
-.c7 {
-  font-family: inherit;
-  font-size: 100%;
-  line-height: 1.15;
-  margin: 0;
-  overflow: visible;
-  background-color: #FFFFFF;
-  outline: none;
-  border: 1px solid #BCBCB6;
-  position: relative;
-  border-width: 1px;
-  height: 40px;
-  padding: 8px;
-  width: 100%;
-  text-align: center;
-  box-sizing: border-box;
-  padding: 8px;
-  margin: 0 -1px;
-  min-width: 0;
-  z-index: 1;
-}
-
-.c7 {
-  font-family: inherit;
-  font-size: 100%;
-  line-height: 1.15;
-  margin: 0;
-  overflow: visible;
-  background-color: #FFFFFF;
-  outline: none;
-  border: 1px solid #BCBCB6;
-  position: relative;
-  border-width: 1px;
-  height: 40px;
-  padding: 8px;
-  width: 100%;
-  text-align: center;
-  box-sizing: border-box;
-  padding: 8px;
-  margin: 0 -1px;
-  min-width: 0;
-  z-index: 1;
-}
-
 .c7:hover {
   border-color: #4B4B46;
   z-index: 2;
@@ -3005,72 +2773,6 @@ exports[`Storyshots Molecules / Input / Number With all actions 1`] = `
 
 .c8:active:enabled svg {
   fill: #FFFFFF;
-}
-
-.c7 {
-  font-family: inherit;
-  font-size: 100%;
-  line-height: 1.15;
-  margin: 0;
-  overflow: visible;
-  background-color: #FFFFFF;
-  outline: none;
-  border: 1px solid #BCBCB6;
-  position: relative;
-  border-width: 1px;
-  height: 40px;
-  padding: 8px;
-  width: 100%;
-  text-align: center;
-  box-sizing: border-box;
-  padding: 8px;
-  margin: 0 -1px;
-  min-width: 0;
-  z-index: 1;
-}
-
-.c7 {
-  font-family: inherit;
-  font-size: 100%;
-  line-height: 1.15;
-  margin: 0;
-  overflow: visible;
-  background-color: #FFFFFF;
-  outline: none;
-  border: 1px solid #BCBCB6;
-  position: relative;
-  border-width: 1px;
-  height: 40px;
-  padding: 8px;
-  width: 100%;
-  text-align: center;
-  box-sizing: border-box;
-  padding: 8px;
-  margin: 0 -1px;
-  min-width: 0;
-  z-index: 1;
-}
-
-.c7 {
-  font-family: inherit;
-  font-size: 100%;
-  line-height: 1.15;
-  margin: 0;
-  overflow: visible;
-  background-color: #FFFFFF;
-  outline: none;
-  border: 1px solid #BCBCB6;
-  position: relative;
-  border-width: 1px;
-  height: 40px;
-  padding: 8px;
-  width: 100%;
-  text-align: center;
-  box-sizing: border-box;
-  padding: 8px;
-  margin: 0 -1px;
-  min-width: 0;
-  z-index: 1;
 }
 
 .c7 {
@@ -3397,72 +3099,6 @@ exports[`Storyshots Molecules / Input / Number With auto focus 1`] = `
   z-index: 1;
 }
 
-.c7 {
-  font-family: inherit;
-  font-size: 100%;
-  line-height: 1.15;
-  margin: 0;
-  overflow: visible;
-  background-color: #FFFFFF;
-  outline: none;
-  border: 1px solid #BCBCB6;
-  position: relative;
-  border-width: 1px;
-  height: 40px;
-  padding: 8px;
-  width: 100%;
-  text-align: center;
-  box-sizing: border-box;
-  padding: 8px;
-  margin: 0 -1px;
-  min-width: 0;
-  z-index: 1;
-}
-
-.c7 {
-  font-family: inherit;
-  font-size: 100%;
-  line-height: 1.15;
-  margin: 0;
-  overflow: visible;
-  background-color: #FFFFFF;
-  outline: none;
-  border: 1px solid #BCBCB6;
-  position: relative;
-  border-width: 1px;
-  height: 40px;
-  padding: 8px;
-  width: 100%;
-  text-align: center;
-  box-sizing: border-box;
-  padding: 8px;
-  margin: 0 -1px;
-  min-width: 0;
-  z-index: 1;
-}
-
-.c7 {
-  font-family: inherit;
-  font-size: 100%;
-  line-height: 1.15;
-  margin: 0;
-  overflow: visible;
-  background-color: #FFFFFF;
-  outline: none;
-  border: 1px solid #BCBCB6;
-  position: relative;
-  border-width: 1px;
-  height: 40px;
-  padding: 8px;
-  width: 100%;
-  text-align: center;
-  box-sizing: border-box;
-  padding: 8px;
-  margin: 0 -1px;
-  min-width: 0;
-  z-index: 1;
-}
-
 .c7:hover {
   border-color: #4B4B46;
   z-index: 2;
@@ -3704,72 +3340,6 @@ exports[`Storyshots Molecules / Input / Number With both addons 1`] = `
   height: 100%;
   z-index: 3;
   right: 8px;
-}
-
-.c7 {
-  font-family: inherit;
-  font-size: 100%;
-  line-height: 1.15;
-  margin: 0;
-  overflow: visible;
-  background-color: #FFFFFF;
-  outline: none;
-  border: 1px solid #BCBCB6;
-  position: relative;
-  border-width: 1px;
-  height: 40px;
-  padding: 8px;
-  width: 100%;
-  text-align: left;
-  box-sizing: border-box;
-  padding-top: 8px;
-  padding-bottom: 8px;
-  padding-left: 32px;
-  padding-right: 40px;
-}
-
-.c7 {
-  font-family: inherit;
-  font-size: 100%;
-  line-height: 1.15;
-  margin: 0;
-  overflow: visible;
-  background-color: #FFFFFF;
-  outline: none;
-  border: 1px solid #BCBCB6;
-  position: relative;
-  border-width: 1px;
-  height: 40px;
-  padding: 8px;
-  width: 100%;
-  text-align: left;
-  box-sizing: border-box;
-  padding-top: 8px;
-  padding-bottom: 8px;
-  padding-left: 32px;
-  padding-right: 40px;
-}
-
-.c7 {
-  font-family: inherit;
-  font-size: 100%;
-  line-height: 1.15;
-  margin: 0;
-  overflow: visible;
-  background-color: #FFFFFF;
-  outline: none;
-  border: 1px solid #BCBCB6;
-  position: relative;
-  border-width: 1px;
-  height: 40px;
-  padding: 8px;
-  width: 100%;
-  text-align: left;
-  box-sizing: border-box;
-  padding-top: 8px;
-  padding-bottom: 8px;
-  padding-left: 32px;
-  padding-right: 40px;
 }
 
 .c7 {
@@ -4041,72 +3611,6 @@ exports[`Storyshots Molecules / Input / Number With default value (Uncontrolled 
 
 .c8:active:enabled svg {
   fill: #FFFFFF;
-}
-
-.c7 {
-  font-family: inherit;
-  font-size: 100%;
-  line-height: 1.15;
-  margin: 0;
-  overflow: visible;
-  background-color: #FFFFFF;
-  outline: none;
-  border: 1px solid #BCBCB6;
-  position: relative;
-  border-width: 1px;
-  height: 40px;
-  padding: 8px;
-  width: 100%;
-  text-align: center;
-  box-sizing: border-box;
-  padding: 8px;
-  margin: 0 -1px;
-  min-width: 0;
-  z-index: 1;
-}
-
-.c7 {
-  font-family: inherit;
-  font-size: 100%;
-  line-height: 1.15;
-  margin: 0;
-  overflow: visible;
-  background-color: #FFFFFF;
-  outline: none;
-  border: 1px solid #BCBCB6;
-  position: relative;
-  border-width: 1px;
-  height: 40px;
-  padding: 8px;
-  width: 100%;
-  text-align: center;
-  box-sizing: border-box;
-  padding: 8px;
-  margin: 0 -1px;
-  min-width: 0;
-  z-index: 1;
-}
-
-.c7 {
-  font-family: inherit;
-  font-size: 100%;
-  line-height: 1.15;
-  margin: 0;
-  overflow: visible;
-  background-color: #FFFFFF;
-  outline: none;
-  border: 1px solid #BCBCB6;
-  position: relative;
-  border-width: 1px;
-  height: 40px;
-  padding: 8px;
-  width: 100%;
-  text-align: center;
-  box-sizing: border-box;
-  padding: 8px;
-  margin: 0 -1px;
-  min-width: 0;
-  z-index: 1;
 }
 
 .c7 {
@@ -4413,72 +3917,6 @@ exports[`Storyshots Molecules / Input / Number With error if value is less than 
 
 .c8:active:enabled svg {
   fill: #FFFFFF;
-}
-
-.c7 {
-  font-family: inherit;
-  font-size: 100%;
-  line-height: 1.15;
-  margin: 0;
-  overflow: visible;
-  background-color: #FFFFFF;
-  outline: none;
-  border: 1px solid #FF1900;
-  position: relative;
-  border-width: 1px;
-  height: 40px;
-  padding: 8px;
-  width: 100%;
-  text-align: center;
-  box-sizing: border-box;
-  padding: 8px;
-  margin: 0 -1px;
-  min-width: 0;
-  z-index: 1;
-}
-
-.c7 {
-  font-family: inherit;
-  font-size: 100%;
-  line-height: 1.15;
-  margin: 0;
-  overflow: visible;
-  background-color: #FFFFFF;
-  outline: none;
-  border: 1px solid #FF1900;
-  position: relative;
-  border-width: 1px;
-  height: 40px;
-  padding: 8px;
-  width: 100%;
-  text-align: center;
-  box-sizing: border-box;
-  padding: 8px;
-  margin: 0 -1px;
-  min-width: 0;
-  z-index: 1;
-}
-
-.c7 {
-  font-family: inherit;
-  font-size: 100%;
-  line-height: 1.15;
-  margin: 0;
-  overflow: visible;
-  background-color: #FFFFFF;
-  outline: none;
-  border: 1px solid #FF1900;
-  position: relative;
-  border-width: 1px;
-  height: 40px;
-  padding: 8px;
-  width: 100%;
-  text-align: center;
-  box-sizing: border-box;
-  padding: 8px;
-  margin: 0 -1px;
-  min-width: 0;
-  z-index: 1;
 }
 
 .c7 {
@@ -4822,72 +4260,6 @@ exports[`Storyshots Molecules / Input / Number With extra info and error 1`] = `
   z-index: 1;
 }
 
-.c7 {
-  font-family: inherit;
-  font-size: 100%;
-  line-height: 1.15;
-  margin: 0;
-  overflow: visible;
-  background-color: #FFFFFF;
-  outline: none;
-  border: 1px solid #FF1900;
-  position: relative;
-  border-width: 1px;
-  height: 40px;
-  padding: 8px;
-  width: 100%;
-  text-align: center;
-  box-sizing: border-box;
-  padding: 8px;
-  margin: 0 -1px;
-  min-width: 0;
-  z-index: 1;
-}
-
-.c7 {
-  font-family: inherit;
-  font-size: 100%;
-  line-height: 1.15;
-  margin: 0;
-  overflow: visible;
-  background-color: #FFFFFF;
-  outline: none;
-  border: 1px solid #FF1900;
-  position: relative;
-  border-width: 1px;
-  height: 40px;
-  padding: 8px;
-  width: 100%;
-  text-align: center;
-  box-sizing: border-box;
-  padding: 8px;
-  margin: 0 -1px;
-  min-width: 0;
-  z-index: 1;
-}
-
-.c7 {
-  font-family: inherit;
-  font-size: 100%;
-  line-height: 1.15;
-  margin: 0;
-  overflow: visible;
-  background-color: #FFFFFF;
-  outline: none;
-  border: 1px solid #FF1900;
-  position: relative;
-  border-width: 1px;
-  height: 40px;
-  padding: 8px;
-  width: 100%;
-  text-align: center;
-  box-sizing: border-box;
-  padding: 8px;
-  margin: 0 -1px;
-  min-width: 0;
-  z-index: 1;
-}
-
 .c7:hover {
   border-color: #4B4B46;
   z-index: 2;
@@ -5183,72 +4555,6 @@ exports[`Storyshots Molecules / Input / Number With extra info below 1`] = `
 
 .c8:active:enabled svg {
   fill: #FFFFFF;
-}
-
-.c7 {
-  font-family: inherit;
-  font-size: 100%;
-  line-height: 1.15;
-  margin: 0;
-  overflow: visible;
-  background-color: #FFFFFF;
-  outline: none;
-  border: 1px solid #BCBCB6;
-  position: relative;
-  border-width: 1px;
-  height: 40px;
-  padding: 8px;
-  width: 100%;
-  text-align: center;
-  box-sizing: border-box;
-  padding: 8px;
-  margin: 0 -1px;
-  min-width: 0;
-  z-index: 1;
-}
-
-.c7 {
-  font-family: inherit;
-  font-size: 100%;
-  line-height: 1.15;
-  margin: 0;
-  overflow: visible;
-  background-color: #FFFFFF;
-  outline: none;
-  border: 1px solid #BCBCB6;
-  position: relative;
-  border-width: 1px;
-  height: 40px;
-  padding: 8px;
-  width: 100%;
-  text-align: center;
-  box-sizing: border-box;
-  padding: 8px;
-  margin: 0 -1px;
-  min-width: 0;
-  z-index: 1;
-}
-
-.c7 {
-  font-family: inherit;
-  font-size: 100%;
-  line-height: 1.15;
-  margin: 0;
-  overflow: visible;
-  background-color: #FFFFFF;
-  outline: none;
-  border: 1px solid #BCBCB6;
-  position: relative;
-  border-width: 1px;
-  height: 40px;
-  padding: 8px;
-  width: 100%;
-  text-align: center;
-  box-sizing: border-box;
-  padding: 8px;
-  margin: 0 -1px;
-  min-width: 0;
-  z-index: 1;
 }
 
 .c7 {
@@ -5571,72 +4877,6 @@ exports[`Storyshots Molecules / Input / Number With hidden label 1`] = `
   z-index: 1;
 }
 
-.c6 {
-  font-family: inherit;
-  font-size: 100%;
-  line-height: 1.15;
-  margin: 0;
-  overflow: visible;
-  background-color: #FFFFFF;
-  outline: none;
-  border: 1px solid #BCBCB6;
-  position: relative;
-  border-width: 1px;
-  height: 40px;
-  padding: 8px;
-  width: 100%;
-  text-align: center;
-  box-sizing: border-box;
-  padding: 8px;
-  margin: 0 -1px;
-  min-width: 0;
-  z-index: 1;
-}
-
-.c6 {
-  font-family: inherit;
-  font-size: 100%;
-  line-height: 1.15;
-  margin: 0;
-  overflow: visible;
-  background-color: #FFFFFF;
-  outline: none;
-  border: 1px solid #BCBCB6;
-  position: relative;
-  border-width: 1px;
-  height: 40px;
-  padding: 8px;
-  width: 100%;
-  text-align: center;
-  box-sizing: border-box;
-  padding: 8px;
-  margin: 0 -1px;
-  min-width: 0;
-  z-index: 1;
-}
-
-.c6 {
-  font-family: inherit;
-  font-size: 100%;
-  line-height: 1.15;
-  margin: 0;
-  overflow: visible;
-  background-color: #FFFFFF;
-  outline: none;
-  border: 1px solid #BCBCB6;
-  position: relative;
-  border-width: 1px;
-  height: 40px;
-  padding: 8px;
-  width: 100%;
-  text-align: center;
-  box-sizing: border-box;
-  padding: 8px;
-  margin: 0 -1px;
-  min-width: 0;
-  z-index: 1;
-}
-
 .c6:hover {
   border-color: #4B4B46;
   z-index: 2;
@@ -5927,72 +5167,6 @@ Array [
 
 .c11:active:enabled svg {
   fill: #FFFFFF;
-}
-
-.c10 {
-  font-family: inherit;
-  font-size: 100%;
-  line-height: 1.15;
-  margin: 0;
-  overflow: visible;
-  background-color: #FFFFFF;
-  outline: none;
-  border: 1px solid #BCBCB6;
-  position: relative;
-  border-width: 1px;
-  height: 40px;
-  padding: 8px;
-  width: 100%;
-  text-align: center;
-  box-sizing: border-box;
-  padding: 8px;
-  margin: 0 -1px;
-  min-width: 0;
-  z-index: 1;
-}
-
-.c10 {
-  font-family: inherit;
-  font-size: 100%;
-  line-height: 1.15;
-  margin: 0;
-  overflow: visible;
-  background-color: #FFFFFF;
-  outline: none;
-  border: 1px solid #BCBCB6;
-  position: relative;
-  border-width: 1px;
-  height: 40px;
-  padding: 8px;
-  width: 100%;
-  text-align: center;
-  box-sizing: border-box;
-  padding: 8px;
-  margin: 0 -1px;
-  min-width: 0;
-  z-index: 1;
-}
-
-.c10 {
-  font-family: inherit;
-  font-size: 100%;
-  line-height: 1.15;
-  margin: 0;
-  overflow: visible;
-  background-color: #FFFFFF;
-  outline: none;
-  border: 1px solid #BCBCB6;
-  position: relative;
-  border-width: 1px;
-  height: 40px;
-  padding: 8px;
-  width: 100%;
-  text-align: center;
-  box-sizing: border-box;
-  padding: 8px;
-  margin: 0 -1px;
-  min-width: 0;
-  z-index: 1;
 }
 
 .c10 {
@@ -6370,72 +5544,6 @@ exports[`Storyshots Molecules / Input / Number With label tooltip 1`] = `
   z-index: 1;
 }
 
-.c10 {
-  font-family: inherit;
-  font-size: 100%;
-  line-height: 1.15;
-  margin: 0;
-  overflow: visible;
-  background-color: #FFFFFF;
-  outline: none;
-  border: 1px solid #BCBCB6;
-  position: relative;
-  border-width: 1px;
-  height: 40px;
-  padding: 8px;
-  width: 100%;
-  text-align: center;
-  box-sizing: border-box;
-  padding: 8px;
-  margin: 0 -1px;
-  min-width: 0;
-  z-index: 1;
-}
-
-.c10 {
-  font-family: inherit;
-  font-size: 100%;
-  line-height: 1.15;
-  margin: 0;
-  overflow: visible;
-  background-color: #FFFFFF;
-  outline: none;
-  border: 1px solid #BCBCB6;
-  position: relative;
-  border-width: 1px;
-  height: 40px;
-  padding: 8px;
-  width: 100%;
-  text-align: center;
-  box-sizing: border-box;
-  padding: 8px;
-  margin: 0 -1px;
-  min-width: 0;
-  z-index: 1;
-}
-
-.c10 {
-  font-family: inherit;
-  font-size: 100%;
-  line-height: 1.15;
-  margin: 0;
-  overflow: visible;
-  background-color: #FFFFFF;
-  outline: none;
-  border: 1px solid #BCBCB6;
-  position: relative;
-  border-width: 1px;
-  height: 40px;
-  padding: 8px;
-  width: 100%;
-  text-align: center;
-  box-sizing: border-box;
-  padding: 8px;
-  margin: 0 -1px;
-  min-width: 0;
-  z-index: 1;
-}
-
 .c10:hover {
   border-color: #4B4B46;
   z-index: 2;
@@ -6729,72 +5837,6 @@ exports[`Storyshots Molecules / Input / Number With left addon 1`] = `
   padding-right: 8px;
 }
 
-.c7 {
-  font-family: inherit;
-  font-size: 100%;
-  line-height: 1.15;
-  margin: 0;
-  overflow: visible;
-  background-color: #FFFFFF;
-  outline: none;
-  border: 1px solid #BCBCB6;
-  position: relative;
-  border-width: 1px;
-  height: 40px;
-  padding: 8px;
-  width: 100%;
-  text-align: left;
-  box-sizing: border-box;
-  padding-top: 8px;
-  padding-bottom: 8px;
-  padding-left: 32px;
-  padding-right: 8px;
-}
-
-.c7 {
-  font-family: inherit;
-  font-size: 100%;
-  line-height: 1.15;
-  margin: 0;
-  overflow: visible;
-  background-color: #FFFFFF;
-  outline: none;
-  border: 1px solid #BCBCB6;
-  position: relative;
-  border-width: 1px;
-  height: 40px;
-  padding: 8px;
-  width: 100%;
-  text-align: left;
-  box-sizing: border-box;
-  padding-top: 8px;
-  padding-bottom: 8px;
-  padding-left: 32px;
-  padding-right: 8px;
-}
-
-.c7 {
-  font-family: inherit;
-  font-size: 100%;
-  line-height: 1.15;
-  margin: 0;
-  overflow: visible;
-  background-color: #FFFFFF;
-  outline: none;
-  border: 1px solid #BCBCB6;
-  position: relative;
-  border-width: 1px;
-  height: 40px;
-  padding: 8px;
-  width: 100%;
-  text-align: left;
-  box-sizing: border-box;
-  padding-top: 8px;
-  padding-bottom: 8px;
-  padding-left: 32px;
-  padding-right: 8px;
-}
-
 .c7:hover {
   border-color: #4B4B46;
   z-index: 2;
@@ -7060,72 +6102,6 @@ exports[`Storyshots Molecules / Input / Number With max and min 1`] = `
   z-index: 1;
 }
 
-.c7 {
-  font-family: inherit;
-  font-size: 100%;
-  line-height: 1.15;
-  margin: 0;
-  overflow: visible;
-  background-color: #FFFFFF;
-  outline: none;
-  border: 1px solid #BCBCB6;
-  position: relative;
-  border-width: 1px;
-  height: 40px;
-  padding: 8px;
-  width: 100%;
-  text-align: center;
-  box-sizing: border-box;
-  padding: 8px;
-  margin: 0 -1px;
-  min-width: 0;
-  z-index: 1;
-}
-
-.c7 {
-  font-family: inherit;
-  font-size: 100%;
-  line-height: 1.15;
-  margin: 0;
-  overflow: visible;
-  background-color: #FFFFFF;
-  outline: none;
-  border: 1px solid #BCBCB6;
-  position: relative;
-  border-width: 1px;
-  height: 40px;
-  padding: 8px;
-  width: 100%;
-  text-align: center;
-  box-sizing: border-box;
-  padding: 8px;
-  margin: 0 -1px;
-  min-width: 0;
-  z-index: 1;
-}
-
-.c7 {
-  font-family: inherit;
-  font-size: 100%;
-  line-height: 1.15;
-  margin: 0;
-  overflow: visible;
-  background-color: #FFFFFF;
-  outline: none;
-  border: 1px solid #BCBCB6;
-  position: relative;
-  border-width: 1px;
-  height: 40px;
-  padding: 8px;
-  width: 100%;
-  text-align: center;
-  box-sizing: border-box;
-  padding: 8px;
-  margin: 0 -1px;
-  min-width: 0;
-  z-index: 1;
-}
-
 .c7:hover {
   border-color: #4B4B46;
   z-index: 2;
@@ -7321,72 +6297,6 @@ exports[`Storyshots Molecules / Input / Number With no steppers 1`] = `
 .c6 {
   position: relative;
   box-shadow: 0 1px 3px rgba(0,0,0,0.03);
-}
-
-.c7 {
-  font-family: inherit;
-  font-size: 100%;
-  line-height: 1.15;
-  margin: 0;
-  overflow: visible;
-  background-color: #FFFFFF;
-  outline: none;
-  border: 1px solid #BCBCB6;
-  position: relative;
-  border-width: 1px;
-  height: 40px;
-  padding: 8px;
-  width: 100%;
-  text-align: left;
-  box-sizing: border-box;
-  padding: 8px;
-  margin: 0 -1px;
-  min-width: 0;
-  z-index: 1;
-}
-
-.c7 {
-  font-family: inherit;
-  font-size: 100%;
-  line-height: 1.15;
-  margin: 0;
-  overflow: visible;
-  background-color: #FFFFFF;
-  outline: none;
-  border: 1px solid #BCBCB6;
-  position: relative;
-  border-width: 1px;
-  height: 40px;
-  padding: 8px;
-  width: 100%;
-  text-align: left;
-  box-sizing: border-box;
-  padding: 8px;
-  margin: 0 -1px;
-  min-width: 0;
-  z-index: 1;
-}
-
-.c7 {
-  font-family: inherit;
-  font-size: 100%;
-  line-height: 1.15;
-  margin: 0;
-  overflow: visible;
-  background-color: #FFFFFF;
-  outline: none;
-  border: 1px solid #BCBCB6;
-  position: relative;
-  border-width: 1px;
-  height: 40px;
-  padding: 8px;
-  width: 100%;
-  text-align: left;
-  box-sizing: border-box;
-  padding: 8px;
-  margin: 0 -1px;
-  min-width: 0;
-  z-index: 1;
 }
 
 .c7 {
@@ -7734,72 +6644,6 @@ Array [
   z-index: 1;
 }
 
-.c10 {
-  font-family: inherit;
-  font-size: 100%;
-  line-height: 1.15;
-  margin: 0;
-  overflow: visible;
-  background-color: #FFFFFF;
-  outline: none;
-  border: 1px solid #BCBCB6;
-  position: relative;
-  border-width: 1px;
-  height: 40px;
-  padding: 8px;
-  width: 100%;
-  text-align: left;
-  box-sizing: border-box;
-  padding: 8px;
-  margin: 0 -1px;
-  min-width: 0;
-  z-index: 1;
-}
-
-.c10 {
-  font-family: inherit;
-  font-size: 100%;
-  line-height: 1.15;
-  margin: 0;
-  overflow: visible;
-  background-color: #FFFFFF;
-  outline: none;
-  border: 1px solid #BCBCB6;
-  position: relative;
-  border-width: 1px;
-  height: 40px;
-  padding: 8px;
-  width: 100%;
-  text-align: left;
-  box-sizing: border-box;
-  padding: 8px;
-  margin: 0 -1px;
-  min-width: 0;
-  z-index: 1;
-}
-
-.c10 {
-  font-family: inherit;
-  font-size: 100%;
-  line-height: 1.15;
-  margin: 0;
-  overflow: visible;
-  background-color: #FFFFFF;
-  outline: none;
-  border: 1px solid #BCBCB6;
-  position: relative;
-  border-width: 1px;
-  height: 40px;
-  padding: 8px;
-  width: 100%;
-  text-align: left;
-  box-sizing: border-box;
-  padding: 8px;
-  margin: 0 -1px;
-  min-width: 0;
-  z-index: 1;
-}
-
 .c10:hover {
   border-color: #4B4B46;
   z-index: 2;
@@ -7840,72 +6684,6 @@ Array [
   height: inherit;
   line-height: inherit;
   opacity: 1;
-}
-
-.c11 {
-  font-family: inherit;
-  font-size: 100%;
-  line-height: 1.15;
-  margin: 0;
-  overflow: visible;
-  background-color: #FFFFFF;
-  outline: none;
-  border: 1px solid #BCBCB6;
-  position: relative;
-  border-width: 1px;
-  height: 40px;
-  padding: 8px;
-  width: 100%;
-  text-align: left;
-  box-sizing: border-box;
-  padding-top: 8px;
-  padding-bottom: 8px;
-  padding-left: 8px;
-  padding-right: 40px;
-}
-
-.c11 {
-  font-family: inherit;
-  font-size: 100%;
-  line-height: 1.15;
-  margin: 0;
-  overflow: visible;
-  background-color: #FFFFFF;
-  outline: none;
-  border: 1px solid #BCBCB6;
-  position: relative;
-  border-width: 1px;
-  height: 40px;
-  padding: 8px;
-  width: 100%;
-  text-align: left;
-  box-sizing: border-box;
-  padding-top: 8px;
-  padding-bottom: 8px;
-  padding-left: 8px;
-  padding-right: 40px;
-}
-
-.c11 {
-  font-family: inherit;
-  font-size: 100%;
-  line-height: 1.15;
-  margin: 0;
-  overflow: visible;
-  background-color: #FFFFFF;
-  outline: none;
-  border: 1px solid #BCBCB6;
-  position: relative;
-  border-width: 1px;
-  height: 40px;
-  padding: 8px;
-  width: 100%;
-  text-align: left;
-  box-sizing: border-box;
-  padding-top: 8px;
-  padding-bottom: 8px;
-  padding-left: 8px;
-  padding-right: 40px;
 }
 
 .c11 {
@@ -7994,72 +6772,6 @@ Array [
   padding-right: 8px;
 }
 
-.c14 {
-  font-family: inherit;
-  font-size: 100%;
-  line-height: 1.15;
-  margin: 0;
-  overflow: visible;
-  background-color: #FFFFFF;
-  outline: none;
-  border: 1px solid #BCBCB6;
-  position: relative;
-  border-width: 1px;
-  height: 40px;
-  padding: 8px;
-  width: 100%;
-  text-align: left;
-  box-sizing: border-box;
-  padding-top: 8px;
-  padding-bottom: 8px;
-  padding-left: 32px;
-  padding-right: 8px;
-}
-
-.c14 {
-  font-family: inherit;
-  font-size: 100%;
-  line-height: 1.15;
-  margin: 0;
-  overflow: visible;
-  background-color: #FFFFFF;
-  outline: none;
-  border: 1px solid #BCBCB6;
-  position: relative;
-  border-width: 1px;
-  height: 40px;
-  padding: 8px;
-  width: 100%;
-  text-align: left;
-  box-sizing: border-box;
-  padding-top: 8px;
-  padding-bottom: 8px;
-  padding-left: 32px;
-  padding-right: 8px;
-}
-
-.c14 {
-  font-family: inherit;
-  font-size: 100%;
-  line-height: 1.15;
-  margin: 0;
-  overflow: visible;
-  background-color: #FFFFFF;
-  outline: none;
-  border: 1px solid #BCBCB6;
-  position: relative;
-  border-width: 1px;
-  height: 40px;
-  padding: 8px;
-  width: 100%;
-  text-align: left;
-  box-sizing: border-box;
-  padding-top: 8px;
-  padding-bottom: 8px;
-  padding-left: 32px;
-  padding-right: 8px;
-}
-
 .c14:hover {
   border-color: #4B4B46;
   z-index: 2;
@@ -8100,72 +6812,6 @@ Array [
   height: inherit;
   line-height: inherit;
   opacity: 1;
-}
-
-.c17 {
-  font-family: inherit;
-  font-size: 100%;
-  line-height: 1.15;
-  margin: 0;
-  overflow: visible;
-  background-color: #FFFFFF;
-  outline: none;
-  border: 1px solid #BCBCB6;
-  position: relative;
-  border-width: 1px;
-  height: 40px;
-  padding: 8px;
-  width: 100%;
-  text-align: center;
-  box-sizing: border-box;
-  padding: 8px;
-  margin: 0 -1px;
-  min-width: 0;
-  z-index: 1;
-}
-
-.c17 {
-  font-family: inherit;
-  font-size: 100%;
-  line-height: 1.15;
-  margin: 0;
-  overflow: visible;
-  background-color: #FFFFFF;
-  outline: none;
-  border: 1px solid #BCBCB6;
-  position: relative;
-  border-width: 1px;
-  height: 40px;
-  padding: 8px;
-  width: 100%;
-  text-align: center;
-  box-sizing: border-box;
-  padding: 8px;
-  margin: 0 -1px;
-  min-width: 0;
-  z-index: 1;
-}
-
-.c17 {
-  font-family: inherit;
-  font-size: 100%;
-  line-height: 1.15;
-  margin: 0;
-  overflow: visible;
-  background-color: #FFFFFF;
-  outline: none;
-  border: 1px solid #BCBCB6;
-  position: relative;
-  border-width: 1px;
-  height: 40px;
-  padding: 8px;
-  width: 100%;
-  text-align: center;
-  box-sizing: border-box;
-  padding: 8px;
-  margin: 0 -1px;
-  min-width: 0;
-  z-index: 1;
 }
 
 .c17 {
@@ -8702,72 +7348,6 @@ exports[`Storyshots Molecules / Input / Number With right addon 1`] = `
   padding-right: 40px;
 }
 
-.c7 {
-  font-family: inherit;
-  font-size: 100%;
-  line-height: 1.15;
-  margin: 0;
-  overflow: visible;
-  background-color: #FFFFFF;
-  outline: none;
-  border: 1px solid #BCBCB6;
-  position: relative;
-  border-width: 1px;
-  height: 40px;
-  padding: 8px;
-  width: 100%;
-  text-align: left;
-  box-sizing: border-box;
-  padding-top: 8px;
-  padding-bottom: 8px;
-  padding-left: 8px;
-  padding-right: 40px;
-}
-
-.c7 {
-  font-family: inherit;
-  font-size: 100%;
-  line-height: 1.15;
-  margin: 0;
-  overflow: visible;
-  background-color: #FFFFFF;
-  outline: none;
-  border: 1px solid #BCBCB6;
-  position: relative;
-  border-width: 1px;
-  height: 40px;
-  padding: 8px;
-  width: 100%;
-  text-align: left;
-  box-sizing: border-box;
-  padding-top: 8px;
-  padding-bottom: 8px;
-  padding-left: 8px;
-  padding-right: 40px;
-}
-
-.c7 {
-  font-family: inherit;
-  font-size: 100%;
-  line-height: 1.15;
-  margin: 0;
-  overflow: visible;
-  background-color: #FFFFFF;
-  outline: none;
-  border: 1px solid #BCBCB6;
-  position: relative;
-  border-width: 1px;
-  height: 40px;
-  padding: 8px;
-  width: 100%;
-  text-align: left;
-  box-sizing: border-box;
-  padding-top: 8px;
-  padding-bottom: 8px;
-  padding-left: 8px;
-  padding-right: 40px;
-}
-
 .c7:hover {
   border-color: #4B4B46;
   z-index: 2;
@@ -9060,72 +7640,6 @@ Array [
   z-index: 1;
 }
 
-.c10 {
-  font-family: inherit;
-  font-size: 100%;
-  line-height: 1.15;
-  margin: 0;
-  overflow: visible;
-  background-color: #FFFFFF;
-  outline: none;
-  border: 1px solid #BCBCB6;
-  position: relative;
-  border-width: 1px;
-  height: 32px;
-  padding: 8px;
-  width: 100%;
-  text-align: center;
-  box-sizing: border-box;
-  padding: 8px;
-  margin: 0 -1px;
-  min-width: 0;
-  z-index: 1;
-}
-
-.c10 {
-  font-family: inherit;
-  font-size: 100%;
-  line-height: 1.15;
-  margin: 0;
-  overflow: visible;
-  background-color: #FFFFFF;
-  outline: none;
-  border: 1px solid #BCBCB6;
-  position: relative;
-  border-width: 1px;
-  height: 32px;
-  padding: 8px;
-  width: 100%;
-  text-align: center;
-  box-sizing: border-box;
-  padding: 8px;
-  margin: 0 -1px;
-  min-width: 0;
-  z-index: 1;
-}
-
-.c10 {
-  font-family: inherit;
-  font-size: 100%;
-  line-height: 1.15;
-  margin: 0;
-  overflow: visible;
-  background-color: #FFFFFF;
-  outline: none;
-  border: 1px solid #BCBCB6;
-  position: relative;
-  border-width: 1px;
-  height: 32px;
-  padding: 8px;
-  width: 100%;
-  text-align: center;
-  box-sizing: border-box;
-  padding: 8px;
-  margin: 0 -1px;
-  min-width: 0;
-  z-index: 1;
-}
-
 .c10:hover {
   border-color: #4B4B46;
   z-index: 2;
@@ -9190,72 +7704,6 @@ Array [
   z-index: 1;
 }
 
-.c14 {
-  font-family: inherit;
-  font-size: 100%;
-  line-height: 1.15;
-  margin: 0;
-  overflow: visible;
-  background-color: #FFFFFF;
-  outline: none;
-  border: 1px solid #BCBCB6;
-  position: relative;
-  border-width: 1px;
-  height: 32px;
-  padding: 8px;
-  width: 100%;
-  text-align: left;
-  box-sizing: border-box;
-  padding: 8px;
-  margin: 0 -1px;
-  min-width: 0;
-  z-index: 1;
-}
-
-.c14 {
-  font-family: inherit;
-  font-size: 100%;
-  line-height: 1.15;
-  margin: 0;
-  overflow: visible;
-  background-color: #FFFFFF;
-  outline: none;
-  border: 1px solid #BCBCB6;
-  position: relative;
-  border-width: 1px;
-  height: 32px;
-  padding: 8px;
-  width: 100%;
-  text-align: left;
-  box-sizing: border-box;
-  padding: 8px;
-  margin: 0 -1px;
-  min-width: 0;
-  z-index: 1;
-}
-
-.c14 {
-  font-family: inherit;
-  font-size: 100%;
-  line-height: 1.15;
-  margin: 0;
-  overflow: visible;
-  background-color: #FFFFFF;
-  outline: none;
-  border: 1px solid #BCBCB6;
-  position: relative;
-  border-width: 1px;
-  height: 32px;
-  padding: 8px;
-  width: 100%;
-  text-align: left;
-  box-sizing: border-box;
-  padding: 8px;
-  margin: 0 -1px;
-  min-width: 0;
-  z-index: 1;
-}
-
 .c14:hover {
   border-color: #4B4B46;
   z-index: 2;
@@ -9296,72 +7744,6 @@ Array [
   height: inherit;
   line-height: inherit;
   opacity: 1;
-}
-
-.c15 {
-  font-family: inherit;
-  font-size: 100%;
-  line-height: 1.15;
-  margin: 0;
-  overflow: visible;
-  background-color: #FFFFFF;
-  outline: none;
-  border: 1px solid #FF1900;
-  position: relative;
-  border-width: 1px;
-  height: 32px;
-  padding: 8px;
-  width: 100%;
-  text-align: center;
-  box-sizing: border-box;
-  padding: 8px;
-  margin: 0 -1px;
-  min-width: 0;
-  z-index: 1;
-}
-
-.c15 {
-  font-family: inherit;
-  font-size: 100%;
-  line-height: 1.15;
-  margin: 0;
-  overflow: visible;
-  background-color: #FFFFFF;
-  outline: none;
-  border: 1px solid #FF1900;
-  position: relative;
-  border-width: 1px;
-  height: 32px;
-  padding: 8px;
-  width: 100%;
-  text-align: center;
-  box-sizing: border-box;
-  padding: 8px;
-  margin: 0 -1px;
-  min-width: 0;
-  z-index: 1;
-}
-
-.c15 {
-  font-family: inherit;
-  font-size: 100%;
-  line-height: 1.15;
-  margin: 0;
-  overflow: visible;
-  background-color: #FFFFFF;
-  outline: none;
-  border: 1px solid #FF1900;
-  position: relative;
-  border-width: 1px;
-  height: 32px;
-  padding: 8px;
-  width: 100%;
-  text-align: center;
-  box-sizing: border-box;
-  padding: 8px;
-  margin: 0 -1px;
-  min-width: 0;
-  z-index: 1;
 }
 
 .c15 {
@@ -9942,72 +8324,6 @@ exports[`Storyshots Molecules / Input / Number With success 1`] = `
   z-index: 1;
 }
 
-.c7 {
-  font-family: inherit;
-  font-size: 100%;
-  line-height: 1.15;
-  margin: 0;
-  overflow: visible;
-  background-color: #FFFFFF;
-  outline: none;
-  border: 1px solid #00D200;
-  position: relative;
-  border-width: 1px;
-  height: 40px;
-  padding: 8px;
-  width: 100%;
-  text-align: center;
-  box-sizing: border-box;
-  padding: 8px;
-  margin: 0 -1px;
-  min-width: 0;
-  z-index: 1;
-}
-
-.c7 {
-  font-family: inherit;
-  font-size: 100%;
-  line-height: 1.15;
-  margin: 0;
-  overflow: visible;
-  background-color: #FFFFFF;
-  outline: none;
-  border: 1px solid #00D200;
-  position: relative;
-  border-width: 1px;
-  height: 40px;
-  padding: 8px;
-  width: 100%;
-  text-align: center;
-  box-sizing: border-box;
-  padding: 8px;
-  margin: 0 -1px;
-  min-width: 0;
-  z-index: 1;
-}
-
-.c7 {
-  font-family: inherit;
-  font-size: 100%;
-  line-height: 1.15;
-  margin: 0;
-  overflow: visible;
-  background-color: #FFFFFF;
-  outline: none;
-  border: 1px solid #00D200;
-  position: relative;
-  border-width: 1px;
-  height: 40px;
-  padding: 8px;
-  width: 100%;
-  text-align: center;
-  box-sizing: border-box;
-  padding: 8px;
-  margin: 0 -1px;
-  min-width: 0;
-  z-index: 1;
-}
-
 .c7:hover {
   border-color: #4B4B46;
   z-index: 2;
@@ -10282,72 +8598,6 @@ Array [
 
 .c8:active:enabled svg {
   fill: #FFFFFF;
-}
-
-.c7 {
-  font-family: inherit;
-  font-size: 100%;
-  line-height: 1.15;
-  margin: 0;
-  overflow: visible;
-  background-color: #FFFFFF;
-  outline: none;
-  border: 1px solid #BCBCB6;
-  position: relative;
-  border-width: 1px;
-  height: 40px;
-  padding: 8px;
-  width: 100%;
-  text-align: center;
-  box-sizing: border-box;
-  padding: 8px;
-  margin: 0 -1px;
-  min-width: 0;
-  z-index: 1;
-}
-
-.c7 {
-  font-family: inherit;
-  font-size: 100%;
-  line-height: 1.15;
-  margin: 0;
-  overflow: visible;
-  background-color: #FFFFFF;
-  outline: none;
-  border: 1px solid #BCBCB6;
-  position: relative;
-  border-width: 1px;
-  height: 40px;
-  padding: 8px;
-  width: 100%;
-  text-align: center;
-  box-sizing: border-box;
-  padding: 8px;
-  margin: 0 -1px;
-  min-width: 0;
-  z-index: 1;
-}
-
-.c7 {
-  font-family: inherit;
-  font-size: 100%;
-  line-height: 1.15;
-  margin: 0;
-  overflow: visible;
-  background-color: #FFFFFF;
-  outline: none;
-  border: 1px solid #BCBCB6;
-  position: relative;
-  border-width: 1px;
-  height: 40px;
-  padding: 8px;
-  width: 100%;
-  text-align: center;
-  box-sizing: border-box;
-  padding: 8px;
-  margin: 0 -1px;
-  min-width: 0;
-  z-index: 1;
 }
 
 .c7 {
