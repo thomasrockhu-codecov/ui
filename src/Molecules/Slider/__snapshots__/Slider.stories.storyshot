@@ -181,7 +181,7 @@ Array [
 
 .c8 {
   width: 40px;
-  height: 40px;
+  height: px;
   background-color: #FFFFFF;
   outline: none;
   border: 1px solid #BCBCB6;
@@ -246,7 +246,73 @@ Array [
   border: 1px solid #BCBCB6;
   position: relative;
   border-width: 1px;
-  height: 40px;
+  height: px;
+  padding: 8px;
+  width: 100%;
+  text-align: center;
+  box-sizing: border-box;
+  padding: 8px;
+  margin: 0 -1px;
+  min-width: 0;
+  z-index: 1;
+}
+
+.c7 {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  overflow: visible;
+  background-color: #FFFFFF;
+  outline: none;
+  border: 1px solid #BCBCB6;
+  position: relative;
+  border-width: 1px;
+  height: px;
+  padding: 8px;
+  width: 100%;
+  text-align: center;
+  box-sizing: border-box;
+  padding: 8px;
+  margin: 0 -1px;
+  min-width: 0;
+  z-index: 1;
+}
+
+.c7 {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  overflow: visible;
+  background-color: #FFFFFF;
+  outline: none;
+  border: 1px solid #BCBCB6;
+  position: relative;
+  border-width: 1px;
+  height: px;
+  padding: 8px;
+  width: 100%;
+  text-align: center;
+  box-sizing: border-box;
+  padding: 8px;
+  margin: 0 -1px;
+  min-width: 0;
+  z-index: 1;
+}
+
+.c7 {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  overflow: visible;
+  background-color: #FFFFFF;
+  outline: none;
+  border: 1px solid #BCBCB6;
+  position: relative;
+  border-width: 1px;
+  height: px;
   padding: 8px;
   width: 100%;
   text-align: center;
