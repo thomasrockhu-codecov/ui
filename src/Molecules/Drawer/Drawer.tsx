@@ -10,6 +10,7 @@ import { Typography, Icon, useKeyPress, Portal, useMedia, Button } from '../..';
 
 const CROSS_SIZE = 5;
 const PADDING = 5;
+const PADDING_TOP = 4;
 const displayName = 'Drawer';
 
 const Container = styled(motion.div)`
@@ -53,9 +54,9 @@ const H2 = styled.h2`
 
 const TitleWrapper = styled.div`
   padding: ${(p) =>
-    `${p.theme.spacing.unit(PADDING)}px ${p.theme.spacing.unit(PADDING)}px 0 ${p.theme.spacing.unit(
+    `${p.theme.spacing.unit(PADDING_TOP)}px ${p.theme.spacing.unit(
       PADDING,
-    )}px`};
+    )}px 0 ${p.theme.spacing.unit(PADDING)}px`};
   margin-bottom: ${(p) => p.theme.spacing.unit(2)}px;
   min-height: ${(p) => p.theme.spacing.unit(CROSS_SIZE)}px;
   flex: 0 0 auto;
