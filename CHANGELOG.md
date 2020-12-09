@@ -1,3 +1,10 @@
+## [5.4.2](https://github.com/nordnet/ui/compare/v5.4.1...v5.4.2) (2020-12-09)
+
+
+### Bug Fixes
+
+* placeholder alignment in different browsers ([6cc7709](https://github.com/nordnet/ui/commit/6cc7709))
+
 ## [5.4.1](https://github.com/nordnet/ui/compare/v5.4.0...v5.4.1) (2020-12-09)
 
 
