@@ -273,28 +273,24 @@ Array [
 
 .c7::-webkit-input-placeholder {
   color: #6E6E69;
-  height: inherit;
   line-height: inherit;
   opacity: 1;
 }
 
 .c7::-moz-placeholder {
   color: #6E6E69;
-  height: inherit;
   line-height: inherit;
   opacity: 1;
 }
 
 .c7:-ms-input-placeholder {
   color: #6E6E69;
-  height: inherit;
   line-height: inherit;
   opacity: 1;
 }
 
 .c7::placeholder {
   color: #6E6E69;
-  height: inherit;
   line-height: inherit;
   opacity: 1;
 }

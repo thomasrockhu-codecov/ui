@@ -88,7 +88,7 @@ Array [
   width: 100%;
   padding: 8px;
   margin: 0;
-  line-height: 40px;
+  line-height: inherit;
   box-sizing: border-box;
   height: 40px;
   outline: none;
@@ -114,28 +114,24 @@ Array [
 
 .c7::-webkit-input-placeholder {
   color: #6E6E69;
-  height: inherit;
   line-height: inherit;
   opacity: 1;
 }
 
 .c7::-moz-placeholder {
   color: #6E6E69;
-  height: inherit;
   line-height: inherit;
   opacity: 1;
 }
 
 .c7:-ms-input-placeholder {
   color: #6E6E69;
-  height: inherit;
   line-height: inherit;
   opacity: 1;
 }
 
 .c7::placeholder {
   color: #6E6E69;
-  height: inherit;
   line-height: inherit;
   opacity: 1;
 }
@@ -315,7 +311,7 @@ Array [
   width: 100%;
   padding: 8px;
   margin: 0;
-  line-height: 40px;
+  line-height: inherit;
   box-sizing: border-box;
   height: 40px;
   outline: none;
@@ -341,28 +337,24 @@ Array [
 
 .c7::-webkit-input-placeholder {
   color: #6E6E69;
-  height: inherit;
   line-height: inherit;
   opacity: 1;
 }
 
 .c7::-moz-placeholder {
   color: #6E6E69;
-  height: inherit;
   line-height: inherit;
   opacity: 1;
 }
 
 .c7:-ms-input-placeholder {
   color: #6E6E69;
-  height: inherit;
   line-height: inherit;
   opacity: 1;
 }
 
 .c7::placeholder {
   color: #6E6E69;
-  height: inherit;
   line-height: inherit;
   opacity: 1;
 }
@@ -542,7 +534,7 @@ Array [
   width: 100%;
   padding: 8px;
   margin: 0;
-  line-height: 40px;
+  line-height: inherit;
   box-sizing: border-box;
   height: 40px;
   outline: none;
@@ -568,28 +560,24 @@ Array [
 
 .c7::-webkit-input-placeholder {
   color: #6E6E69;
-  height: inherit;
   line-height: inherit;
   opacity: 1;
 }
 
 .c7::-moz-placeholder {
   color: #6E6E69;
-  height: inherit;
   line-height: inherit;
   opacity: 1;
 }
 
 .c7:-ms-input-placeholder {
   color: #6E6E69;
-  height: inherit;
   line-height: inherit;
   opacity: 1;
 }
 
 .c7::placeholder {
   color: #6E6E69;
-  height: inherit;
   line-height: inherit;
   opacity: 1;
 }
