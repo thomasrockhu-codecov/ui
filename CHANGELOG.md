@@ -1,3 +1,12 @@
+## [5.4.1](https://github.com/nordnet/ui/compare/v5.4.0...v5.4.1) (2020-12-09)
+
+
+### Bug Fixes
+
+* adjust quiet input height ([386e18e](https://github.com/nordnet/ui/commit/386e18e))
+* disabled placeholder should be greyed out ([d793eb0](https://github.com/nordnet/ui/commit/d793eb0))
+* grey out the quiet placeholder on focus ([29ad23a](https://github.com/nordnet/ui/commit/29ad23a))
+
 # [5.4.0](https://github.com/nordnet/ui/compare/v5.3.4...v5.4.0) (2020-12-09)
 
 
