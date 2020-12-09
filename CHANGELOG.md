@@ -1,3 +1,12 @@
+## [5.4.3](https://github.com/nordnet/ui/compare/v5.4.2...v5.4.3) (2020-12-09)
+
+
+### Bug Fixes
+
+* 🐛 remove left padding for quiet number input ([55b13c8](https://github.com/nordnet/ui/commit/55b13c8))
+* remove right from rightAddon when quiet ([3a761e0](https://github.com/nordnet/ui/commit/3a761e0))
+* restore correct paddings and right/left for regular number input ([285f9dc](https://github.com/nordnet/ui/commit/285f9dc))
+
 ## [5.4.2](https://github.com/nordnet/ui/compare/v5.4.1...v5.4.2) (2020-12-09)
 
 
