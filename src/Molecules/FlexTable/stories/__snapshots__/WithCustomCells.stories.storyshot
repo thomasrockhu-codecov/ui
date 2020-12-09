@@ -141,7 +141,7 @@ exports[`Storyshots Molecules / FlexTable / With Custom Cells Custom Cells 1`] =
   display: block;
 }
 
-.c31 {
+.c30 {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -155,7 +155,7 @@ exports[`Storyshots Molecules / FlexTable / With Custom Cells Custom Cells 1`] =
   display: block;
 }
 
-.c32 {
+.c31 {
   -webkit-transform: rotate(0deg);
   -ms-transform: rotate(0deg);
   transform: rotate(0deg);
@@ -188,7 +188,7 @@ exports[`Storyshots Molecules / FlexTable / With Custom Cells Custom Cells 1`] =
   line-height: 1.4285714285714286;
 }
 
-.c35 {
+.c34 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
   margin: 0;
@@ -275,10 +275,30 @@ exports[`Storyshots Molecules / FlexTable / With Custom Cells Custom Cells 1`] =
 
 .c22 {
   overflow: hidden;
+  padding-top: 4px !important;
+  padding-bottom: 4px;
+}
+
+.c27 {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
 }
 
 .c27:focus {
   outline: none;
+}
+
+.c25 {
+  padding-top: 0 !important;
+  padding-bottom: 0;
+  -webkit-align-self: stretch;
+  -ms-flex-item-align: stretch;
+  align-self: stretch;
 }
 
 .c20 {
@@ -289,8 +309,6 @@ exports[`Storyshots Molecules / FlexTable / With Custom Cells Custom Cells 1`] =
   background: #FFFFFF;
   margin-right: 0;
   margin-left: 0;
-  padding-top: 4px;
-  padding-bottom: 4px;
   padding-right: 4px;
   padding-left: 2px;
   border-left: 2px solid transparent;
@@ -309,8 +327,6 @@ exports[`Storyshots Molecules / FlexTable / With Custom Cells Custom Cells 1`] =
   background: #FFFFFF;
   margin-right: 0;
   margin-left: 0;
-  padding-top: 4px;
-  padding-bottom: 4px;
   padding-right: 4px;
   padding-left: 2px;
   border-left: 2px solid transparent;
@@ -337,7 +353,7 @@ exports[`Storyshots Molecules / FlexTable / With Custom Cells Custom Cells 1`] =
   top: 0px;
 }
 
-.c33 {
+.c32 {
   border-top: 1px solid #282823;
   border-bottom: 0;
 }
@@ -359,10 +375,14 @@ exports[`Storyshots Molecules / FlexTable / With Custom Cells Custom Cells 1`] =
 
 .c5 {
   overflow: hidden;
+  padding-top: 4px !important;
+  padding-bottom: 4px;
 }
 
-.c34 {
+.c33 {
   overflow: hidden;
+  padding-top: 4px !important;
+  padding-bottom: 4px;
 }
 
 .c0 {
@@ -416,15 +436,11 @@ exports[`Storyshots Molecules / FlexTable / With Custom Cells Custom Cells 1`] =
 }
 
 @media not all and (max-width:975px) {
-  .c25 {
-    display: none;
-  }
+
 }
 
 @media not all and (min-width:976px) {
-  .c30 {
-    display: none;
-  }
+
 }
 
 <div
@@ -650,66 +666,58 @@ exports[`Storyshots Molecules / FlexTable / With Custom Cells Custom Cells 1`] =
       </div>
     </div>
     <div
-      className="c19 c22 c20"
+      className="c19 c22 c25 c20"
       role="cell"
     >
-      <div
-        className="c25"
+      <button
+        aria-expanded={false}
+        className="NormalizedButton__Button-ey7f5x-0 c26 c27"
+        disabled={true}
+        onClick={[Function]}
+        type="button"
       >
-        <button
-          aria-expanded={false}
-          className="NormalizedButton__Button-ey7f5x-0 c26 c27"
-          disabled={true}
-          onClick={[Function]}
-          type="button"
+        <span
+          className="c28"
         >
-          <span
-            className="c28"
+          <svg
+            aria-hidden="true"
+            className="c29"
+            focusable="false"
+            preserveAspectRatio="xMidYMid meet"
+            role="presentation"
+            viewBox="0 0 24 24"
           >
-            <svg
-              aria-hidden="true"
-              className="c29"
-              focusable="false"
-              preserveAspectRatio="xMidYMid meet"
-              role="presentation"
-              viewBox="0 0 24 24"
-            >
-              <polygon
-                points="19.969 4 24 8.027 12 20 0 8.027 4.031 4 12 11.952"
-              />
-            </svg>
-          </span>
-        </button>
-      </div>
-      <div
-        className="c30"
+            <polygon
+              points="19.969 4 24 8.027 12 20 0 8.027 4.031 4 12 11.952"
+            />
+          </svg>
+        </span>
+      </button>
+      <button
+        aria-expanded={false}
+        className="NormalizedButton__Button-ey7f5x-0 c26 c27"
+        disabled={true}
+        onClick={[Function]}
+        type="button"
       >
-        <button
-          aria-expanded={false}
-          className="NormalizedButton__Button-ey7f5x-0 c26 c27"
-          disabled={true}
-          onClick={[Function]}
-          type="button"
+        <span
+          className="c28"
         >
-          <span
-            className="c28"
+          <svg
+            aria-hidden="true"
+            className="c30 c31"
+            direction="down"
+            focusable="false"
+            preserveAspectRatio="xMidYMid meet"
+            role="presentation"
+            viewBox="0 0 16 16"
           >
-            <svg
-              aria-hidden="true"
-              className="c31 c32"
-              direction="down"
-              focusable="false"
-              preserveAspectRatio="xMidYMid meet"
-              role="presentation"
-              viewBox="0 0 16 16"
-            >
-              <polygon
-                points="14.620 3.580, 16.000 5.020, 8.000 12.730, 0.000 5.030, 1.400 3.580, 8.000 9.96"
-              />
-            </svg>
-          </span>
-        </button>
-      </div>
+            <polygon
+              points="14.620 3.580, 16.000 5.020, 8.000 12.730, 0.000 5.030, 1.400 3.580, 8.000 9.96"
+            />
+          </svg>
+        </span>
+      </button>
     </div>
   </div>
   <div
@@ -807,93 +815,85 @@ exports[`Storyshots Molecules / FlexTable / With Custom Cells Custom Cells 1`] =
       </div>
     </div>
     <div
-      className="c19 c22 c20"
+      className="c19 c22 c25 c20"
       role="cell"
     >
-      <div
-        className="c25"
+      <button
+        aria-expanded={false}
+        className="NormalizedButton__Button-ey7f5x-0 c26 c27"
+        disabled={true}
+        onClick={[Function]}
+        type="button"
       >
-        <button
-          aria-expanded={false}
-          className="NormalizedButton__Button-ey7f5x-0 c26 c27"
-          disabled={true}
-          onClick={[Function]}
-          type="button"
+        <span
+          className="c28"
         >
-          <span
-            className="c28"
+          <svg
+            aria-hidden="true"
+            className="c29"
+            focusable="false"
+            preserveAspectRatio="xMidYMid meet"
+            role="presentation"
+            viewBox="0 0 24 24"
           >
-            <svg
-              aria-hidden="true"
-              className="c29"
-              focusable="false"
-              preserveAspectRatio="xMidYMid meet"
-              role="presentation"
-              viewBox="0 0 24 24"
-            >
-              <polygon
-                points="19.969 4 24 8.027 12 20 0 8.027 4.031 4 12 11.952"
-              />
-            </svg>
-          </span>
-        </button>
-      </div>
-      <div
-        className="c30"
+            <polygon
+              points="19.969 4 24 8.027 12 20 0 8.027 4.031 4 12 11.952"
+            />
+          </svg>
+        </span>
+      </button>
+      <button
+        aria-expanded={false}
+        className="NormalizedButton__Button-ey7f5x-0 c26 c27"
+        disabled={true}
+        onClick={[Function]}
+        type="button"
       >
-        <button
-          aria-expanded={false}
-          className="NormalizedButton__Button-ey7f5x-0 c26 c27"
-          disabled={true}
-          onClick={[Function]}
-          type="button"
+        <span
+          className="c28"
         >
-          <span
-            className="c28"
+          <svg
+            aria-hidden="true"
+            className="c30 c31"
+            direction="down"
+            focusable="false"
+            preserveAspectRatio="xMidYMid meet"
+            role="presentation"
+            viewBox="0 0 16 16"
           >
-            <svg
-              aria-hidden="true"
-              className="c31 c32"
-              direction="down"
-              focusable="false"
-              preserveAspectRatio="xMidYMid meet"
-              role="presentation"
-              viewBox="0 0 16 16"
-            >
-              <polygon
-                points="14.620 3.580, 16.000 5.020, 8.000 12.730, 0.000 5.030, 1.400 3.580, 8.000 9.96"
-              />
-            </svg>
-          </span>
-        </button>
-      </div>
+            <polygon
+              points="14.620 3.580, 16.000 5.020, 8.000 12.730, 0.000 5.030, 1.400 3.580, 8.000 9.96"
+            />
+          </svg>
+        </span>
+      </button>
     </div>
   </div>
   <div
-    className="c1 c2 c33"
+    className="c1 c2 c32"
     role="row"
   >
     <div
-      className="c4 c34"
+      className="c4 c33"
       role="cell"
     >
       <div
         className="c6 c7"
       >
         <span
-          className="c35 c9"
+          className="c34 c9"
         />
       </div>
     </div>
     <div
-      className="c10 c34"
+      className="c10 c33"
       role="cell"
     >
       <div
         className="c6 c7"
       >
         <span
-          className="c35 c9"
+          className="c34 c9"
         >
           
           400
@@ -901,26 +901,26 @@ exports[`Storyshots Molecules / FlexTable / With Custom Cells Custom Cells 1`] =
       </div>
     </div>
     <div
-      className="c4 c34"
+      className="c4 c33"
       role="cell"
     >
       <div
         className="c6 c7"
       >
         <span
-          className="c35 c9"
+          className="c34 c9"
         />
       </div>
     </div>
     <div
-      className="c18 c34"
+      className="c18 c33"
       role="cell"
     >
       <div
         className="c6 c7"
       >
         <span
-          className="c35 c9"
+          className="c34 c9"
         >
           
           25
@@ -929,14 +929,14 @@ exports[`Storyshots Molecules / FlexTable / With Custom Cells Custom Cells 1`] =
       </div>
     </div>
     <div
-      className="c19 c34 c20"
+      className="c19 c33 c20"
       role="cell"
     >
       <div
         className="c6 c7"
       >
         <span
-          className="c35 c9"
+          className="c34 c9"
         />
       </div>
     </div>

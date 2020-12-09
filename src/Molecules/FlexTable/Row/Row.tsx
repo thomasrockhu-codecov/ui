@@ -3,18 +3,11 @@ import styled from 'styled-components';
 import { RowComponent } from './Row.types';
 import { Flexbox } from '../../..';
 import { ColorFn } from '../../../common/Types/sharedTypes';
-import { getDensityPaddings } from '../shared/textUtils';
-import { Density } from '../shared/shared.types';
 import { useFlexTable } from '../shared/FlexTableProvider';
 import { ExpandItems, ExpandItem } from './components/ExpandItems';
 import { ExpandElement, ExpandRow } from './components';
 import { Theme } from '../../../theme/theme.types';
 import { getStylesForSizes } from '../shared';
-
-const getDensityStyles = ({ density }: { density: Density }) => `
-  padding-top: ${getDensityPaddings(density)}px;
-  padding-bottom: ${getDensityPaddings(density)}px;
-`;
 
 const getExpandableStyles = (
   p: { expandable: boolean; expanded: boolean; hideSeparator: boolean; separatorColor: ColorFn } & {
@@ -49,7 +42,7 @@ const getExpandableStyles = (
   }
 `;
 
-type ScreenSizeConfigurableProps = { density: Density; expandable: boolean };
+type ScreenSizeConfigurableProps = { expandable: boolean };
 
 type StyledRowProps = {
   $hideSeparator: boolean;
@@ -95,7 +88,6 @@ const StyledRow = styled(Flexbox)<StyledRowProps>`
       xl: p.$xl,
     }),
     {
-      density: getDensityStyles,
       expandable: getExpandableStyles,
     },
   )}
@@ -115,9 +107,9 @@ const Row: RowComponent = ({
   children,
   ...htmlProps
 }) => {
-  const { xs: xsRow, sm: smRow, md: mdRow, lg: lgRow, xl: xlRow } = useFlexTable<
-    'density' | 'expandable'
-  >('density', 'expandable');
+  const { xs: xsRow, sm: smRow, md: mdRow, lg: lgRow, xl: xlRow } = useFlexTable<'expandable'>(
+    'expandable',
+  );
   const {
     xs: xsFlexbox,
     sm: smFlexbox,
