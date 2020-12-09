@@ -1,16 +1,10 @@
-export type Props = {
-  ariaLabelPrevious?: string;
-  ariaLabelNext?: string;
-  open?: boolean;
-  onChange?: (date: Date) => void;
-  label: string;
-  disableDate?: (date: Date) => boolean;
-  disabled?: boolean;
-  enableDate?: (date: Date) => boolean;
-  id: string;
-  selectedDate?: Date;
-  inputSize?: 's';
-  width?: number;
-  ref?: React.Ref<HTMLDivElement>;
-  as?: keyof JSX.IntrinsicElements | React.ComponentType<any>;
-};
+import { Props as SingleDatePickerProps } from './Single/DatePicker.types';
+import { Props as DoubleDatePickerProps } from './Double/DoubleDatePicker.types';
+
+export { SingleDatePickerProps, DoubleDatePickerProps };
+
+export type DatePickerComponentType =
+  | React.FC<SingleDatePickerProps>
+  | React.FC<DoubleDatePickerProps>;
+
+export type DatePickerComponent = React.FC<SingleDatePickerProps | DoubleDatePickerProps>;

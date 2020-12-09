@@ -1,4 +1,5 @@
 export type Variant = 'normal' | 'quiet';
+export type Size = Pick<Props, 'size'>;
 
 export type Props = {
   className?: string;

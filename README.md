@@ -1,7 +1,7 @@
 # @nordnet/ui
 
 [![NPM version][npm-image]][npm-url]
-[![Build Status][travis-image]][travis-url]
+[![Build Status](https://github.com/nordnet/ui/workflows/build/badge.svg)](https://github.com/nordnet/ui/actions)
 [![Coverage Status][codecov-image]][codecov-url]
 [![Dependency Status][depstat-image]][depstat-url]
 
@@ -30,7 +30,7 @@ ReactDOM.render(Root, document.getElementById('app'));
 // src/App.js
 import { Button } from '@nordnet/ui';
 
-const App = props => (
+const App = (props) => (
   <div>
     <Button size="l" variant="secondary">
       Hit me
@@ -53,7 +53,7 @@ Everyone is welcome to contribute. Please take a moment to review the [contribut
 
 To upgrade to latest `17.1.1` you need to upgrade away from `beta` first:
 
-* https://github.com/semantic-release/semantic-release/releases/tag/v16.0.0
+- https://github.com/semantic-release/semantic-release/releases/tag/v16.0.0
 
   This is the most troublesome part:
 
@@ -62,8 +62,7 @@ To upgrade to latest `17.1.1` you need to upgrade away from `beta` first:
 
   and it essentially will ask you to fix some git internals yourself, but there is a better way. [v16.0.0-beta.39 release notes](https://github.com/semantic-release/semantic-release/releases/tag/v16.0.0-beta.39) offers a script in this gist file https://gist.github.com/pvdlg/6b19e529ee5c1a20645675a44e5b3239. You will have to go through it and make it work.
 
-
-* https://github.com/semantic-release/semantic-release/releases/tag/v17.0.0
+- https://github.com/semantic-release/semantic-release/releases/tag/v17.0.0
 
   afaik, it only seems to drop support for non-lts node 10
 

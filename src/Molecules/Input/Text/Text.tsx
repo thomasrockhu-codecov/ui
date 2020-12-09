@@ -1,14 +1,18 @@
 import React from 'react';
-import styled, { css } from 'styled-components';
+import styled, { css, ThemedStyledProps } from 'styled-components';
 import * as R from 'ramda';
-import { Props, Variant } from './Text.types';
+import { Props, Variant, Size } from './Text.types';
 import { Flexbox, Typography, FormField } from '../../..';
 import NormalizedElements from '../../../common/NormalizedElements';
+import { Theme } from '../../../theme/theme.types';
 
 const hasError = (error?: Props['error']) => error && error !== '';
 
-const height = css<Pick<Props, 'size'>>`
-  height: ${(p) => (p.size === 's' ? p.theme.spacing.unit(8) : p.theme.spacing.unit(10))}px;
+const getHeight = (p: ThemedStyledProps<Size, Theme>) =>
+  p.size === 's' ? p.theme.spacing.unit(8) : p.theme.spacing.unit(10);
+
+const height = css<Size>`
+  height: ${getHeight}px;
 `;
 
 const background = css<Pick<Props, 'disabled' | 'variant'>>`
@@ -54,12 +58,17 @@ const borderStyles = css<Pick<Props, 'error' | 'success' | 'disabled' | 'variant
     p.disabled && p.variant === 'quiet' ? `border-color: ${p.theme.color.disabledBackground};` : ''}
 `;
 
-export const placeholderNormalizaion = css<Pick<Props, 'variant'>>`
+export const placeholderNormalizaion = css<Pick<Props, 'variant' | 'disabled'>>`
   &::placeholder {
     color: ${(p) => (p.variant === 'quiet' ? p.theme.color.cta : p.theme.color.label)};
     height: inherit;
     line-height: inherit;
     opacity: 1;
+  }
+  ${(p) =>
+    p.variant === 'quiet' ? `&:focus::placeholder { color: ${p.theme.color.disabledText}}` : ''};
+  &:disabled::placeholder {
+    color: ${(p) => p.theme.color.disabledText};
   }
 `;
 
@@ -94,7 +103,7 @@ const Input = styled(NormalizedElements.Input).attrs((p) => ({ type: p.type || '
   width: 100%;
   padding: ${(p) => p.theme.spacing.unit(p.variant === 'quiet' ? 0 : 2)}px;
   margin: 0;
-  line-height: inherit;
+  line-height: ${getHeight}px;
   box-sizing: border-box;
   ${height}
   ${borderStyles}

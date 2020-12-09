@@ -2,7 +2,7 @@ import React, { useState, useRef } from 'react';
 import { useIntl } from 'react-intl';
 import styled, { css } from 'styled-components';
 import * as R from 'ramda';
-import { Props, NumberComponent } from './Number.types';
+import { Props, NumberComponent, Variant } from './Number.types';
 import { Flexbox, VisuallyHidden, Icon, Typography, FormField } from '../../..';
 import NormalizedElements from '../../../common/NormalizedElements';
 import { getStringAsNumber, getNumberAsString } from './utils';
@@ -12,13 +12,17 @@ import { placeholderNormalizaion } from '../Text/Text';
 
 const hasError = (error?: Props['error']) => error && error !== '';
 const removeNonNumberCharacters = R.replace(/[^0-9\-.,]+/, '');
+const calculateHeight = (p: any, variant: Variant | undefined, size: 's' | undefined) => {
+  if (variant === 'quiet') return 'auto';
+  return size === 's' ? `${p.theme.spacing.unit(8)}px` : `${p.theme.spacing.unit(10)}px`;
+};
 
 const width = css<Pick<Props, 'size'>>`
   width: ${(p) => (p.size === 's' ? p.theme.spacing.unit(8) : p.theme.spacing.unit(10))}px;
 `;
 
-const height = css<Pick<Props, 'size'>>`
-  height: ${(p) => (p.size === 's' ? p.theme.spacing.unit(8) : p.theme.spacing.unit(10))}px;
+const height = css<Pick<Props, 'variant' | 'size'>>`
+  height: ${(p) => calculateHeight(p, p.variant, p.size)};
 `;
 
 const background = css<Pick<Props, 'disabled' | 'variant'>>`
@@ -76,7 +80,8 @@ const AddonBox = styled(Flexbox)<{ position?: 'left' | 'right' }>`
   top: 0;
   height: 100%;
   z-index: 3;
-  ${(p) => (p.position === 'right' ? `right: ${p.theme.spacing.unit(0)}px;` : '')}
+  ${(p) => (p.position === 'right' ? `right: ${p.theme.spacing.unit(2)}px;` : '')}
+  ${(p) => (p.position === 'left' ? `left: ${p.theme.spacing.unit(2)}px;` : '')}
 `;
 
 const Stepper = styled.button.attrs(() => ({ type: 'button' }))<Partial<Props>>`
@@ -127,6 +132,12 @@ const Input = styled(NormalizedElements.Input).attrs(() => ({ type: 'text' }))<P
       z-index: 1;
       `}
   ${(p) =>
+    p.leftAddon
+      ? `
+      padding-left: ${p.theme.spacing.unit(8)}px;
+    `
+      : ''}
+  ${(p) =>
     p.variant === 'quiet'
       ? `color: ${p.theme.color.cta}; 
          &:disabled {
@@ -135,7 +146,7 @@ const Input = styled(NormalizedElements.Input).attrs(() => ({ type: 'text' }))<P
          font-size: 28px; 
          font-weight: bold;
          &:focus {
-           padding-left: ${p.theme.spacing.unit(p.leftAddon ? 3 : 2)}px;
+           padding-left: ${p.theme.spacing.unit(2)}px;
            padding-right: ${p.theme.spacing.unit(p.rightAddon ? 8 : 0)}px;
          }`
       : ''}
@@ -169,7 +180,7 @@ const NumberInput: NumberComponent & {
 } = (props) => {
   const {
     autoFocus,
-    defaultValue = 1,
+    defaultValue,
     disabled,
     error,
     id,

@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Storyshots Molecules / FlexTable / FlexTable with different columns Column Width Sortable Table 1`] = `
-.c24 {
+.c35 {
   height: 20px;
   box-sizing: border-box;
   display: block;
@@ -58,7 +58,7 @@ exports[`Storyshots Molecules / FlexTable / FlexTable with different columns Col
   box-sizing: border-box;
 }
 
-.c18 {
+.c19 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -72,7 +72,7 @@ exports[`Storyshots Molecules / FlexTable / FlexTable with different columns Col
   flex: 0 15%;
 }
 
-.c19 {
+.c20 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -86,11 +86,29 @@ exports[`Storyshots Molecules / FlexTable / FlexTable with different columns Col
   flex: 0 100px;
 }
 
-.c23 {
+.c21 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  -webkit-flex: 0 20px;
+  -ms-flex: 0 20px;
+  flex: 0 20px;
+}
+
+.c34 {
   box-sizing: border-box;
 }
 
-.c16 {
+.c17 {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -103,6 +121,40 @@ exports[`Storyshots Molecules / FlexTable / FlexTable with different columns Col
   flex-shrink: 0;
   display: inline-block;
   vertical-align: middle;
+}
+
+.c30 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 8px;
+  height: 8px;
+  fill: #A0A09B;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
+}
+
+.c32 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 16px;
+  height: 16px;
+  fill: #A0A09B;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
+}
+
+.c33 {
+  -webkit-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  transform: rotate(0deg);
 }
 
 .c1 {
@@ -119,15 +171,24 @@ exports[`Storyshots Molecules / FlexTable / FlexTable with different columns Col
   color: #6E6E69;
   margin: 0;
   font-weight: 400;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
+  font-size: 16px;
+  line-height: 1.5;
 }
 
-.c22 {
+.c25 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
   margin: 0;
   font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.c29 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: inherit;
+  margin: 0;
+  font-weight: 700;
   font-size: 14px;
   line-height: 1.4285714285714286;
 }
@@ -138,6 +199,57 @@ exports[`Storyshots Molecules / FlexTable / FlexTable with different columns Col
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
+}
+
+.c27 {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  overflow: visible;
+  text-transform: none;
+  position: relative;
+  box-sizing: border-box;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  padding: 0;
+  background-color: transparent;
+  color: #A0A09B;
+  border: none;
+  border-radius: 0;
+  cursor: not-allowed;
+}
+
+.c27,
+.c27[type='button'],
+.c27[type='reset'],
+.c27[type='submit'] {
+  -webkit-appearance: button;
+}
+
+.c27::-moz-focus-inner,
+.c27[type='button']::-moz-focus-inner,
+.c27[type='reset']::-moz-focus-inner,
+.c27[type='submit']::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+.c27:-moz-focusring,
+.c27[type='button']:-moz-focusring,
+.c27[type='reset']:-moz-focusring,
+.c27[type='submit']:-moz-focusring {
+  outline: 1px dotted ButtonText;
 }
 
 .c12 {
@@ -152,63 +264,76 @@ exports[`Storyshots Molecules / FlexTable / FlexTable with different columns Col
   width: inherit;
 }
 
-.c21 {
+.c16 {
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.c24 {
   overflow: hidden;
+}
+
+.c28:focus {
+  outline: none;
+}
+
+.c22 {
+  display: none;
 }
 
 .c4 {
   background: #FFFFFF;
-  border-bottom: 1px solid #EBEBE8;
+  margin-right: 0;
+  margin-left: 0;
+  padding-top: 4px;
+  padding-bottom: 4px;
   padding-right: 4px;
   padding-left: 2px;
   border-left: 2px solid transparent;
-  padding-top: 4px;
-  padding-bottom: 4px;
-  margin-right: 0;
-  margin-left: 0;
+  border-bottom: 1px solid #EBEBE8;
 }
 
 .c4 > *:first-child {
   padding-left: 0;
 }
 
-.c4 > *:last-child {
+.c4 > *:nth-last-child(2) {
   padding-right: 0;
 }
 
-.c20 {
+.c23 {
   background: #FFFFFF;
-  border-bottom: 1px solid #EBEBE8;
+  margin-right: 0;
+  margin-left: 0;
+  padding-top: 4px;
+  padding-bottom: 4px;
   padding-right: 4px;
   padding-left: 2px;
   border-left: 2px solid transparent;
-  padding-top: 4px;
-  padding-bottom: 4px;
-  margin-right: 0;
-  margin-left: 0;
+  border-bottom: 1px solid #EBEBE8;
 }
 
-.c20:hover {
+.c23:hover {
   background: #F5F5F5;
 }
 
-.c20 > *:first-child {
+.c23 > *:first-child {
   padding-left: 0;
 }
 
-.c20 > *:last-child {
+.c23 > *:nth-last-child(2) {
   padding-right: 0;
 }
 
 .c5 {
+  border-bottom: 1px solid #282823;
   z-index: 1;
   position: -webkit-sticky;
   position: sticky;
   top: 0px;
-  border-bottom: 1px solid #282823;
 }
 
-.c17 {
+.c18 {
   margin-left: 4px;
 }
 
@@ -244,6 +369,57 @@ exports[`Storyshots Molecules / FlexTable / FlexTable with different columns Col
 
 .c0:not(:last-of-type) {
   margin-bottom: 40px;
+}
+
+@media (min-width:760px) {
+  .c3 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+}
+
+@media (min-width:976px) {
+  .c3 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+}
+
+@media (min-width:1280px) {
+  .c3 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+}
+
+@media not all and (max-width:975px) {
+  .c26 {
+    display: none;
+  }
+}
+
+@media not all and (min-width:976px) {
+  .c31 {
+    display: none;
+  }
 }
 
 @media (min-width:760px) {
@@ -291,7 +467,7 @@ exports[`Storyshots Molecules / FlexTable / FlexTable with different columns Col
                 className="c13 c14"
               >
                 <span
-                  className="c15"
+                  className="c15 c16"
                 >
                   Flex 1
                 </span>
@@ -302,54 +478,7 @@ exports[`Storyshots Molecules / FlexTable / FlexTable with different columns Col
             >
               <svg
                 aria-hidden="true"
-                className="c16 c17"
-                focusable="false"
-                preserveAspectRatio="xMidYMid meet"
-                role="presentation"
-                viewBox="0 0 24 24"
-              >
-                <polygon
-                  points="19.969 4 24 8.027 12 20 0 8.027 4.031 4 12 11.952"
-                />
-              </svg>
-            </div>
-          </div>
-        </a>
-      </div>
-      <div
-        aria-sort="none"
-        className="c18 c7"
-        role="columnheader"
-      >
-        <a
-          className="c8"
-          href="#"
-          onClick={[Function]}
-          onKeyDown={[Function]}
-          role="button"
-        >
-          <div
-            className="c9 c10"
-          >
-            <div
-              className="c11 c12"
-            >
-              <div
-                className="c13 c14"
-              >
-                <span
-                  className="c15"
-                >
-                  Fifteen percent
-                </span>
-              </div>
-            </div>
-            <div
-              className="c11"
-            >
-              <svg
-                aria-hidden="true"
-                className="c16 c17"
+                className="c17 c18"
                 focusable="false"
                 preserveAspectRatio="xMidYMid meet"
                 role="presentation"
@@ -385,7 +514,54 @@ exports[`Storyshots Molecules / FlexTable / FlexTable with different columns Col
                 className="c13 c14"
               >
                 <span
-                  className="c15"
+                  className="c15 c16"
+                >
+                  Fifteen percent
+                </span>
+              </div>
+            </div>
+            <div
+              className="c11"
+            >
+              <svg
+                aria-hidden="true"
+                className="c17 c18"
+                focusable="false"
+                preserveAspectRatio="xMidYMid meet"
+                role="presentation"
+                viewBox="0 0 24 24"
+              >
+                <polygon
+                  points="19.969 4 24 8.027 12 20 0 8.027 4.031 4 12 11.952"
+                />
+              </svg>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div
+        aria-sort="none"
+        className="c20 c7"
+        role="columnheader"
+      >
+        <a
+          className="c8"
+          href="#"
+          onClick={[Function]}
+          onKeyDown={[Function]}
+          role="button"
+        >
+          <div
+            className="c9 c10"
+          >
+            <div
+              className="c11 c12"
+            >
+              <div
+                className="c13 c14"
+              >
+                <span
+                  className="c15 c16"
                 >
                   Loooooooooooooong header set width
                 </span>
@@ -396,7 +572,7 @@ exports[`Storyshots Molecules / FlexTable / FlexTable with different columns Col
             >
               <svg
                 aria-hidden="true"
-                className="c16 c17"
+                className="c17 c18"
                 focusable="false"
                 preserveAspectRatio="xMidYMid meet"
                 role="presentation"
@@ -432,7 +608,7 @@ exports[`Storyshots Molecules / FlexTable / FlexTable with different columns Col
                 className="c13 c14"
               >
                 <span
-                  className="c15"
+                  className="c15 c16"
                 >
                   Default
                 </span>
@@ -443,7 +619,7 @@ exports[`Storyshots Molecules / FlexTable / FlexTable with different columns Col
             >
               <svg
                 aria-hidden="true"
-                className="c16 c17"
+                className="c17 c18"
                 focusable="false"
                 preserveAspectRatio="xMidYMid meet"
                 role="presentation"
@@ -457,118 +633,192 @@ exports[`Storyshots Molecules / FlexTable / FlexTable with different columns Col
           </div>
         </a>
       </div>
+      <div
+        className="c21 c7 c22"
+        role="columnheader"
+      >
+        <div
+          className="c13 c14"
+        >
+          <span
+            className="c15 c16"
+          />
+        </div>
+      </div>
     </div>
     <div
-      className="c3 c20"
+      className="c3 c23"
       role="row"
     >
       <div
-        className="c6 c21"
+        className="c6 c24"
         role="cell"
       >
         <div
           className="c13 c14"
         >
           <span
-            className="c22"
+            className="c25 c16"
           >
             Cell 1-1
           </span>
         </div>
       </div>
       <div
-        className="c18 c21"
+        className="c19 c24"
         role="cell"
       >
         <div
           className="c13 c14"
         >
           <span
-            className="c22"
+            className="c25 c16"
           >
             Very long cell content that should be truncated or ellipsized depepending on your language preferences
           </span>
         </div>
       </div>
       <div
-        className="c19 c21"
+        className="c20 c24"
         role="cell"
       >
         <div
           className="c13 c14"
         >
           <span
-            className="c22"
+            className="c25 c16"
           >
             Cell 1-3
           </span>
         </div>
       </div>
       <div
-        className="c6 c21"
+        className="c6 c24"
         role="cell"
       >
         <div
           className="c13 c14"
         >
           <span
-            className="c22"
+            className="c25 c16"
           >
             Cell 1-4
           </span>
         </div>
       </div>
+      <div
+        className="c21 c24 c22"
+        role="cell"
+      >
+        <div
+          className="c26"
+        >
+          <button
+            aria-expanded={false}
+            className="NormalizedButton__Button-ey7f5x-0 c27 c28"
+            disabled={true}
+            onClick={[Function]}
+            type="button"
+          >
+            <span
+              className="c29"
+            >
+              <svg
+                aria-hidden="true"
+                className="c30"
+                focusable="false"
+                preserveAspectRatio="xMidYMid meet"
+                role="presentation"
+                viewBox="0 0 24 24"
+              >
+                <polygon
+                  points="19.969 4 24 8.027 12 20 0 8.027 4.031 4 12 11.952"
+                />
+              </svg>
+            </span>
+          </button>
+        </div>
+        <div
+          className="c31"
+        >
+          <button
+            aria-expanded={false}
+            className="NormalizedButton__Button-ey7f5x-0 c27 c28"
+            disabled={true}
+            onClick={[Function]}
+            type="button"
+          >
+            <span
+              className="c29"
+            >
+              <svg
+                aria-hidden="true"
+                className="c32 c33"
+                direction="down"
+                focusable="false"
+                preserveAspectRatio="xMidYMid meet"
+                role="presentation"
+                viewBox="0 0 16 16"
+              >
+                <polygon
+                  points="14.620 3.580, 16.000 5.020, 8.000 12.730, 0.000 5.030, 1.400 3.580, 8.000 9.96"
+                />
+              </svg>
+            </span>
+          </button>
+        </div>
+      </div>
     </div>
     <div
-      className="c3 c20"
+      className="c3 c23"
       role="row"
     >
       <div
-        className="c6 c21"
+        className="c6 c24"
         role="cell"
       >
         <div
           className="c13 c14"
         >
           <span
-            className="c22"
+            className="c25 c16"
           >
             Cell 2-1
           </span>
         </div>
       </div>
       <div
-        className="c18 c21"
+        className="c19 c24"
         role="cell"
       >
         <div
           className="c13 c14"
         >
           <span
-            className="c22"
+            className="c25 c16"
           >
             Cell 2-2
           </span>
         </div>
       </div>
       <div
-        className="c19 c21"
+        className="c20 c24"
         role="cell"
       >
         <div
-          className="c23 c12"
+          className="c34 c12"
         >
           <div
             className="c13 c14"
           >
             <span
-              className="c22"
+              className="c25 c16"
             >
               Long cell with flag
             </span>
           </div>
           <svg
-            className="c24"
+            className="c35"
             focusable="false"
             role="img"
             viewBox="0 0 640 480"
@@ -609,78 +859,202 @@ exports[`Storyshots Molecules / FlexTable / FlexTable with different columns Col
         </div>
       </div>
       <div
-        className="c6 c21"
+        className="c6 c24"
         role="cell"
       >
         <div
           className="c13 c14"
         >
           <span
-            className="c22"
+            className="c25 c16"
           >
             Cell 2-4
           </span>
         </div>
       </div>
+      <div
+        className="c21 c24 c22"
+        role="cell"
+      >
+        <div
+          className="c26"
+        >
+          <button
+            aria-expanded={false}
+            className="NormalizedButton__Button-ey7f5x-0 c27 c28"
+            disabled={true}
+            onClick={[Function]}
+            type="button"
+          >
+            <span
+              className="c29"
+            >
+              <svg
+                aria-hidden="true"
+                className="c30"
+                focusable="false"
+                preserveAspectRatio="xMidYMid meet"
+                role="presentation"
+                viewBox="0 0 24 24"
+              >
+                <polygon
+                  points="19.969 4 24 8.027 12 20 0 8.027 4.031 4 12 11.952"
+                />
+              </svg>
+            </span>
+          </button>
+        </div>
+        <div
+          className="c31"
+        >
+          <button
+            aria-expanded={false}
+            className="NormalizedButton__Button-ey7f5x-0 c27 c28"
+            disabled={true}
+            onClick={[Function]}
+            type="button"
+          >
+            <span
+              className="c29"
+            >
+              <svg
+                aria-hidden="true"
+                className="c32 c33"
+                direction="down"
+                focusable="false"
+                preserveAspectRatio="xMidYMid meet"
+                role="presentation"
+                viewBox="0 0 16 16"
+              >
+                <polygon
+                  points="14.620 3.580, 16.000 5.020, 8.000 12.730, 0.000 5.030, 1.400 3.580, 8.000 9.96"
+                />
+              </svg>
+            </span>
+          </button>
+        </div>
+      </div>
     </div>
     <div
-      className="c3 c20"
+      className="c3 c23"
       role="row"
     >
       <div
-        className="c6 c21"
+        className="c6 c24"
         role="cell"
       >
         <div
           className="c13 c14"
         >
           <span
-            className="c22"
+            className="c25 c16"
           >
             Cell 3-1
           </span>
         </div>
       </div>
       <div
-        className="c18 c21"
+        className="c19 c24"
         role="cell"
       >
         <div
           className="c13 c14"
         >
           <span
-            className="c22"
+            className="c25 c16"
           >
             Cell 3-2
           </span>
         </div>
       </div>
       <div
-        className="c19 c21"
+        className="c20 c24"
         role="cell"
       >
         <div
           className="c13 c14"
         >
           <span
-            className="c22"
+            className="c25 c16"
           >
             Cell 3-3
           </span>
         </div>
       </div>
       <div
-        className="c6 c21"
+        className="c6 c24"
         role="cell"
       >
         <div
           className="c13 c14"
         >
           <span
-            className="c22"
+            className="c25 c16"
           >
             Cell 3-4
           </span>
+        </div>
+      </div>
+      <div
+        className="c21 c24 c22"
+        role="cell"
+      >
+        <div
+          className="c26"
+        >
+          <button
+            aria-expanded={false}
+            className="NormalizedButton__Button-ey7f5x-0 c27 c28"
+            disabled={true}
+            onClick={[Function]}
+            type="button"
+          >
+            <span
+              className="c29"
+            >
+              <svg
+                aria-hidden="true"
+                className="c30"
+                focusable="false"
+                preserveAspectRatio="xMidYMid meet"
+                role="presentation"
+                viewBox="0 0 24 24"
+              >
+                <polygon
+                  points="19.969 4 24 8.027 12 20 0 8.027 4.031 4 12 11.952"
+                />
+              </svg>
+            </span>
+          </button>
+        </div>
+        <div
+          className="c31"
+        >
+          <button
+            aria-expanded={false}
+            className="NormalizedButton__Button-ey7f5x-0 c27 c28"
+            disabled={true}
+            onClick={[Function]}
+            type="button"
+          >
+            <span
+              className="c29"
+            >
+              <svg
+                aria-hidden="true"
+                className="c32 c33"
+                direction="down"
+                focusable="false"
+                preserveAspectRatio="xMidYMid meet"
+                role="presentation"
+                viewBox="0 0 16 16"
+              >
+                <polygon
+                  points="14.620 3.580, 16.000 5.020, 8.000 12.730, 0.000 5.030, 1.400 3.580, 8.000 9.96"
+                />
+              </svg>
+            </span>
+          </button>
         </div>
       </div>
     </div>
@@ -689,7 +1063,7 @@ exports[`Storyshots Molecules / FlexTable / FlexTable with different columns Col
 `;
 
 exports[`Storyshots Molecules / FlexTable / FlexTable with different columns Column Width Table With Custom Flag Cell 1`] = `
-.c18 {
+.c29 {
   height: 20px;
   box-sizing: border-box;
   display: block;
@@ -734,7 +1108,7 @@ exports[`Storyshots Molecules / FlexTable / FlexTable with different columns Col
   flex: 1;
 }
 
-.c11 {
+.c12 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -748,7 +1122,7 @@ exports[`Storyshots Molecules / FlexTable / FlexTable with different columns Col
   flex: 0 15%;
 }
 
-.c12 {
+.c13 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -762,8 +1136,60 @@ exports[`Storyshots Molecules / FlexTable / FlexTable with different columns Col
   flex: 0 100px;
 }
 
-.c16 {
+.c14 {
   box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  -webkit-flex: 0 20px;
+  -ms-flex: 0 20px;
+  flex: 0 20px;
+}
+
+.c27 {
+  box-sizing: border-box;
+}
+
+.c23 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 8px;
+  height: 8px;
+  fill: #A0A09B;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
+}
+
+.c25 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 16px;
+  height: 16px;
+  fill: #A0A09B;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
+}
+
+.c26 {
+  -webkit-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  transform: rotate(0deg);
 }
 
 .c1 {
@@ -780,15 +1206,24 @@ exports[`Storyshots Molecules / FlexTable / FlexTable with different columns Col
   color: #6E6E69;
   margin: 0;
   font-weight: 400;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
+  font-size: 16px;
+  line-height: 1.5;
 }
 
-.c15 {
+.c18 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
   margin: 0;
   font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.c22 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: inherit;
+  margin: 0;
+  font-weight: 700;
   font-size: 14px;
   line-height: 1.4285714285714286;
 }
@@ -801,7 +1236,58 @@ exports[`Storyshots Molecules / FlexTable / FlexTable with different columns Col
   overflow: hidden;
 }
 
-.c17 {
+.c20 {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  overflow: visible;
+  text-transform: none;
+  position: relative;
+  box-sizing: border-box;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  padding: 0;
+  background-color: transparent;
+  color: #A0A09B;
+  border: none;
+  border-radius: 0;
+  cursor: not-allowed;
+}
+
+.c20,
+.c20[type='button'],
+.c20[type='reset'],
+.c20[type='submit'] {
+  -webkit-appearance: button;
+}
+
+.c20::-moz-focus-inner,
+.c20[type='button']::-moz-focus-inner,
+.c20[type='reset']::-moz-focus-inner,
+.c20[type='submit']::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+.c20:-moz-focusring,
+.c20[type='button']:-moz-focusring,
+.c20[type='reset']:-moz-focusring,
+.c20[type='submit']:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+.c28 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -813,60 +1299,73 @@ exports[`Storyshots Molecules / FlexTable / FlexTable with different columns Col
   width: inherit;
 }
 
-.c14 {
+.c11 {
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.c17 {
   overflow: hidden;
+}
+
+.c21:focus {
+  outline: none;
+}
+
+.c15 {
+  display: none;
 }
 
 .c4 {
   background: #FFFFFF;
-  border-bottom: 1px solid #EBEBE8;
+  margin-right: 0;
+  margin-left: 0;
+  padding-top: 4px;
+  padding-bottom: 4px;
   padding-right: 4px;
   padding-left: 2px;
   border-left: 2px solid transparent;
-  padding-top: 4px;
-  padding-bottom: 4px;
-  margin-right: 0;
-  margin-left: 0;
+  border-bottom: 1px solid #EBEBE8;
 }
 
 .c4 > *:first-child {
   padding-left: 0;
 }
 
-.c4 > *:last-child {
+.c4 > *:nth-last-child(2) {
   padding-right: 0;
 }
 
-.c13 {
+.c16 {
   background: #FFFFFF;
-  border-bottom: 1px solid #EBEBE8;
+  margin-right: 0;
+  margin-left: 0;
+  padding-top: 4px;
+  padding-bottom: 4px;
   padding-right: 4px;
   padding-left: 2px;
   border-left: 2px solid transparent;
-  padding-top: 4px;
-  padding-bottom: 4px;
-  margin-right: 0;
-  margin-left: 0;
+  border-bottom: 1px solid #EBEBE8;
 }
 
-.c13:hover {
+.c16:hover {
   background: #F5F5F5;
 }
 
-.c13 > *:first-child {
+.c16 > *:first-child {
   padding-left: 0;
 }
 
-.c13 > *:last-child {
+.c16 > *:nth-last-child(2) {
   padding-right: 0;
 }
 
 .c5 {
+  border-bottom: 1px solid #282823;
   z-index: 1;
   position: -webkit-sticky;
   position: sticky;
   top: 0px;
-  border-bottom: 1px solid #282823;
 }
 
 .c7 {
@@ -883,6 +1382,57 @@ exports[`Storyshots Molecules / FlexTable / FlexTable with different columns Col
 
 .c0:not(:last-of-type) {
   margin-bottom: 40px;
+}
+
+@media (min-width:760px) {
+  .c3 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+}
+
+@media (min-width:976px) {
+  .c3 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+}
+
+@media (min-width:1280px) {
+  .c3 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+}
+
+@media not all and (max-width:975px) {
+  .c19 {
+    display: none;
+  }
+}
+
+@media not all and (min-width:976px) {
+  .c24 {
+    display: none;
+  }
 }
 
 @media (min-width:760px) {
@@ -916,23 +1466,9 @@ exports[`Storyshots Molecules / FlexTable / FlexTable with different columns Col
           className="c8 c9"
         >
           <span
-            className="c10"
+            className="c10 c11"
           >
             Flex 1
-          </span>
-        </div>
-      </div>
-      <div
-        className="c11 c7"
-        role="columnheader"
-      >
-        <div
-          className="c8 c9"
-        >
-          <span
-            className="c10"
-          >
-            Fifteen percent
           </span>
         </div>
       </div>
@@ -944,7 +1480,21 @@ exports[`Storyshots Molecules / FlexTable / FlexTable with different columns Col
           className="c8 c9"
         >
           <span
-            className="c10"
+            className="c10 c11"
+          >
+            Fifteen percent
+          </span>
+        </div>
+      </div>
+      <div
+        className="c13 c7"
+        role="columnheader"
+      >
+        <div
+          className="c8 c9"
+        >
+          <span
+            className="c10 c11"
           >
             Loooooooooooooong header set width
           </span>
@@ -958,124 +1508,198 @@ exports[`Storyshots Molecules / FlexTable / FlexTable with different columns Col
           className="c8 c9"
         >
           <span
-            className="c10"
+            className="c10 c11"
           >
             Default
           </span>
         </div>
       </div>
+      <div
+        className="c14 c7 c15"
+        role="columnheader"
+      >
+        <div
+          className="c8 c9"
+        >
+          <span
+            className="c10 c11"
+          />
+        </div>
+      </div>
     </div>
     <div
-      className="c3 c13"
+      className="c3 c16"
       role="row"
     >
       <div
-        className="c6 c14"
+        className="c6 c17"
         role="cell"
       >
         <div
           className="c8 c9"
         >
           <span
-            className="c15"
+            className="c18 c11"
           >
             Cell 1-1
           </span>
         </div>
       </div>
       <div
-        className="c11 c14"
+        className="c12 c17"
         role="cell"
       >
         <div
           className="c8 c9"
         >
           <span
-            className="c15"
+            className="c18 c11"
           >
             Very long cell content that should be truncated or ellipsized depepending on your language preferences
           </span>
         </div>
       </div>
       <div
-        className="c12 c14"
+        className="c13 c17"
         role="cell"
       >
         <div
           className="c8 c9"
         >
           <span
-            className="c15"
+            className="c18 c11"
           >
             Cell 1-3
           </span>
         </div>
       </div>
       <div
-        className="c6 c14"
+        className="c6 c17"
         role="cell"
       >
         <div
           className="c8 c9"
         >
           <span
-            className="c15"
+            className="c18 c11"
           >
             Cell 1-4
           </span>
         </div>
       </div>
+      <div
+        className="c14 c17 c15"
+        role="cell"
+      >
+        <div
+          className="c19"
+        >
+          <button
+            aria-expanded={false}
+            className="NormalizedButton__Button-ey7f5x-0 c20 c21"
+            disabled={true}
+            onClick={[Function]}
+            type="button"
+          >
+            <span
+              className="c22"
+            >
+              <svg
+                aria-hidden="true"
+                className="c23"
+                focusable="false"
+                preserveAspectRatio="xMidYMid meet"
+                role="presentation"
+                viewBox="0 0 24 24"
+              >
+                <polygon
+                  points="19.969 4 24 8.027 12 20 0 8.027 4.031 4 12 11.952"
+                />
+              </svg>
+            </span>
+          </button>
+        </div>
+        <div
+          className="c24"
+        >
+          <button
+            aria-expanded={false}
+            className="NormalizedButton__Button-ey7f5x-0 c20 c21"
+            disabled={true}
+            onClick={[Function]}
+            type="button"
+          >
+            <span
+              className="c22"
+            >
+              <svg
+                aria-hidden="true"
+                className="c25 c26"
+                direction="down"
+                focusable="false"
+                preserveAspectRatio="xMidYMid meet"
+                role="presentation"
+                viewBox="0 0 16 16"
+              >
+                <polygon
+                  points="14.620 3.580, 16.000 5.020, 8.000 12.730, 0.000 5.030, 1.400 3.580, 8.000 9.96"
+                />
+              </svg>
+            </span>
+          </button>
+        </div>
+      </div>
     </div>
     <div
-      className="c3 c13"
+      className="c3 c16"
       role="row"
     >
       <div
-        className="c6 c14"
+        className="c6 c17"
         role="cell"
       >
         <div
           className="c8 c9"
         >
           <span
-            className="c15"
+            className="c18 c11"
           >
             Cell 2-1
           </span>
         </div>
       </div>
       <div
-        className="c11 c14"
+        className="c12 c17"
         role="cell"
       >
         <div
           className="c8 c9"
         >
           <span
-            className="c15"
+            className="c18 c11"
           >
             Cell 2-2
           </span>
         </div>
       </div>
       <div
-        className="c12 c14"
+        className="c13 c17"
         role="cell"
       >
         <div
-          className="c16 c17"
+          className="c27 c28"
         >
           <div
             className="c8 c9"
           >
             <span
-              className="c15"
+              className="c18 c11"
             >
               Long cell with flag
             </span>
           </div>
           <svg
-            className="c18"
+            className="c29"
             focusable="false"
             role="img"
             viewBox="0 0 640 480"
@@ -1116,78 +1740,202 @@ exports[`Storyshots Molecules / FlexTable / FlexTable with different columns Col
         </div>
       </div>
       <div
-        className="c6 c14"
+        className="c6 c17"
         role="cell"
       >
         <div
           className="c8 c9"
         >
           <span
-            className="c15"
+            className="c18 c11"
           >
             Cell 2-4
           </span>
         </div>
       </div>
+      <div
+        className="c14 c17 c15"
+        role="cell"
+      >
+        <div
+          className="c19"
+        >
+          <button
+            aria-expanded={false}
+            className="NormalizedButton__Button-ey7f5x-0 c20 c21"
+            disabled={true}
+            onClick={[Function]}
+            type="button"
+          >
+            <span
+              className="c22"
+            >
+              <svg
+                aria-hidden="true"
+                className="c23"
+                focusable="false"
+                preserveAspectRatio="xMidYMid meet"
+                role="presentation"
+                viewBox="0 0 24 24"
+              >
+                <polygon
+                  points="19.969 4 24 8.027 12 20 0 8.027 4.031 4 12 11.952"
+                />
+              </svg>
+            </span>
+          </button>
+        </div>
+        <div
+          className="c24"
+        >
+          <button
+            aria-expanded={false}
+            className="NormalizedButton__Button-ey7f5x-0 c20 c21"
+            disabled={true}
+            onClick={[Function]}
+            type="button"
+          >
+            <span
+              className="c22"
+            >
+              <svg
+                aria-hidden="true"
+                className="c25 c26"
+                direction="down"
+                focusable="false"
+                preserveAspectRatio="xMidYMid meet"
+                role="presentation"
+                viewBox="0 0 16 16"
+              >
+                <polygon
+                  points="14.620 3.580, 16.000 5.020, 8.000 12.730, 0.000 5.030, 1.400 3.580, 8.000 9.96"
+                />
+              </svg>
+            </span>
+          </button>
+        </div>
+      </div>
     </div>
     <div
-      className="c3 c13"
+      className="c3 c16"
       role="row"
     >
       <div
-        className="c6 c14"
+        className="c6 c17"
         role="cell"
       >
         <div
           className="c8 c9"
         >
           <span
-            className="c15"
+            className="c18 c11"
           >
             Cell 3-1
           </span>
         </div>
       </div>
       <div
-        className="c11 c14"
+        className="c12 c17"
         role="cell"
       >
         <div
           className="c8 c9"
         >
           <span
-            className="c15"
+            className="c18 c11"
           >
             Cell 3-2
           </span>
         </div>
       </div>
       <div
-        className="c12 c14"
+        className="c13 c17"
         role="cell"
       >
         <div
           className="c8 c9"
         >
           <span
-            className="c15"
+            className="c18 c11"
           >
             Cell 3-3
           </span>
         </div>
       </div>
       <div
-        className="c6 c14"
+        className="c6 c17"
         role="cell"
       >
         <div
           className="c8 c9"
         >
           <span
-            className="c15"
+            className="c18 c11"
           >
             Cell 3-4
           </span>
+        </div>
+      </div>
+      <div
+        className="c14 c17 c15"
+        role="cell"
+      >
+        <div
+          className="c19"
+        >
+          <button
+            aria-expanded={false}
+            className="NormalizedButton__Button-ey7f5x-0 c20 c21"
+            disabled={true}
+            onClick={[Function]}
+            type="button"
+          >
+            <span
+              className="c22"
+            >
+              <svg
+                aria-hidden="true"
+                className="c23"
+                focusable="false"
+                preserveAspectRatio="xMidYMid meet"
+                role="presentation"
+                viewBox="0 0 24 24"
+              >
+                <polygon
+                  points="19.969 4 24 8.027 12 20 0 8.027 4.031 4 12 11.952"
+                />
+              </svg>
+            </span>
+          </button>
+        </div>
+        <div
+          className="c24"
+        >
+          <button
+            aria-expanded={false}
+            className="NormalizedButton__Button-ey7f5x-0 c20 c21"
+            disabled={true}
+            onClick={[Function]}
+            type="button"
+          >
+            <span
+              className="c22"
+            >
+              <svg
+                aria-hidden="true"
+                className="c25 c26"
+                direction="down"
+                focusable="false"
+                preserveAspectRatio="xMidYMid meet"
+                role="presentation"
+                viewBox="0 0 16 16"
+              >
+                <polygon
+                  points="14.620 3.580, 16.000 5.020, 8.000 12.730, 0.000 5.030, 1.400 3.580, 8.000 9.96"
+                />
+              </svg>
+            </span>
+          </button>
         </div>
       </div>
     </div>
@@ -1233,7 +1981,7 @@ exports[`Storyshots Molecules / FlexTable / FlexTable with different columns Dif
   flex: 1;
 }
 
-.c11 {
+.c12 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -1251,7 +1999,7 @@ exports[`Storyshots Molecules / FlexTable / FlexTable with different columns Dif
   flex: 1;
 }
 
-.c12 {
+.c13 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -1269,6 +2017,58 @@ exports[`Storyshots Molecules / FlexTable / FlexTable with different columns Dif
   flex: 1;
 }
 
+.c14 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  -webkit-flex: 0 20px;
+  -ms-flex: 0 20px;
+  flex: 0 20px;
+}
+
+.c23 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 8px;
+  height: 8px;
+  fill: #A0A09B;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
+}
+
+.c25 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 16px;
+  height: 16px;
+  fill: #A0A09B;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
+}
+
+.c26 {
+  -webkit-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  transform: rotate(0deg);
+}
+
 .c1 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
@@ -1283,15 +2083,24 @@ exports[`Storyshots Molecules / FlexTable / FlexTable with different columns Dif
   color: #6E6E69;
   margin: 0;
   font-weight: 400;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
+  font-size: 16px;
+  line-height: 1.5;
 }
 
-.c15 {
+.c18 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
   margin: 0;
   font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.c22 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: inherit;
+  margin: 0;
+  font-weight: 700;
   font-size: 14px;
   line-height: 1.4285714285714286;
 }
@@ -1304,64 +2113,128 @@ exports[`Storyshots Molecules / FlexTable / FlexTable with different columns Dif
   overflow: hidden;
 }
 
+.c20 {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  overflow: visible;
+  text-transform: none;
+  position: relative;
+  box-sizing: border-box;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  padding: 0;
+  background-color: transparent;
+  color: #A0A09B;
+  border: none;
+  border-radius: 0;
+  cursor: not-allowed;
+}
+
+.c20,
+.c20[type='button'],
+.c20[type='reset'],
+.c20[type='submit'] {
+  -webkit-appearance: button;
+}
+
+.c20::-moz-focus-inner,
+.c20[type='button']::-moz-focus-inner,
+.c20[type='reset']::-moz-focus-inner,
+.c20[type='submit']::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+.c20:-moz-focusring,
+.c20[type='button']:-moz-focusring,
+.c20[type='reset']:-moz-focusring,
+.c20[type='submit']:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
 .c9 {
   width: inherit;
 }
 
-.c14 {
+.c11 {
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.c17 {
   overflow: hidden;
+}
+
+.c21:focus {
+  outline: none;
+}
+
+.c15 {
+  display: none;
 }
 
 .c4 {
   background: #FFFFFF;
-  border-bottom: 1px solid #EBEBE8;
+  margin-right: 0;
+  margin-left: 0;
+  padding-top: 4px;
+  padding-bottom: 4px;
   padding-right: 4px;
   padding-left: 2px;
   border-left: 2px solid transparent;
-  padding-top: 4px;
-  padding-bottom: 4px;
-  margin-right: 0;
-  margin-left: 0;
+  border-bottom: 1px solid #EBEBE8;
 }
 
 .c4 > *:first-child {
   padding-left: 0;
 }
 
-.c4 > *:last-child {
+.c4 > *:nth-last-child(2) {
   padding-right: 0;
 }
 
-.c13 {
+.c16 {
   background: #FFFFFF;
-  border-bottom: 1px solid #EBEBE8;
+  margin-right: 0;
+  margin-left: 0;
+  padding-top: 4px;
+  padding-bottom: 4px;
   padding-right: 4px;
   padding-left: 2px;
   border-left: 2px solid transparent;
-  padding-top: 4px;
-  padding-bottom: 4px;
-  margin-right: 0;
-  margin-left: 0;
+  border-bottom: 1px solid #EBEBE8;
 }
 
-.c13:hover {
+.c16:hover {
   background: #F5F5F5;
 }
 
-.c13 > *:first-child {
+.c16 > *:first-child {
   padding-left: 0;
 }
 
-.c13 > *:last-child {
+.c16 > *:nth-last-child(2) {
   padding-right: 0;
 }
 
 .c5 {
+  border-bottom: 1px solid #282823;
   z-index: 1;
   position: -webkit-sticky;
   position: sticky;
   top: 0px;
-  border-bottom: 1px solid #282823;
 }
 
 .c7 {
@@ -1378,6 +2251,57 @@ exports[`Storyshots Molecules / FlexTable / FlexTable with different columns Dif
 
 .c0:not(:last-of-type) {
   margin-bottom: 40px;
+}
+
+@media (min-width:760px) {
+  .c3 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+}
+
+@media (min-width:976px) {
+  .c3 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+}
+
+@media (min-width:1280px) {
+  .c3 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+}
+
+@media not all and (max-width:975px) {
+  .c19 {
+    display: none;
+  }
+}
+
+@media not all and (min-width:976px) {
+  .c24 {
+    display: none;
+  }
 }
 
 @media (min-width:760px) {
@@ -1411,35 +2335,21 @@ exports[`Storyshots Molecules / FlexTable / FlexTable with different columns Dif
           className="c8 c9"
         >
           <span
-            className="c10"
+            className="c10 c11"
           >
             Left
           </span>
         </div>
       </div>
       <div
-        className="c11 c7"
+        className="c12 c7"
         role="columnheader"
       >
         <div
           className="c8 c9"
         >
           <span
-            className="c10"
-          >
-            Right
-          </span>
-        </div>
-      </div>
-      <div
-        className="c11 c7"
-        role="columnheader"
-      >
-        <div
-          className="c8 c9"
-        >
-          <span
-            className="c10"
+            className="c10 c11"
           >
             Right
           </span>
@@ -1453,193 +2363,405 @@ exports[`Storyshots Molecules / FlexTable / FlexTable with different columns Dif
           className="c8 c9"
         >
           <span
-            className="c10"
+            className="c10 c11"
+          >
+            Right
+          </span>
+        </div>
+      </div>
+      <div
+        className="c13 c7"
+        role="columnheader"
+      >
+        <div
+          className="c8 c9"
+        >
+          <span
+            className="c10 c11"
           >
             Center
           </span>
         </div>
       </div>
+      <div
+        className="c14 c7 c15"
+        role="columnheader"
+      >
+        <div
+          className="c8 c9"
+        >
+          <span
+            className="c10 c11"
+          />
+        </div>
+      </div>
     </div>
     <div
-      className="c3 c13"
+      className="c3 c16"
       role="row"
     >
       <div
-        className="c6 c14"
+        className="c6 c17"
         role="cell"
       >
         <div
           className="c8 c9"
         >
           <span
-            className="c15"
+            className="c18 c11"
           >
             Cell 1-1
           </span>
         </div>
       </div>
       <div
-        className="c11 c14"
+        className="c12 c17"
         role="cell"
       >
         <div
           className="c8 c9"
         >
           <span
-            className="c15"
+            className="c18 c11"
           >
             Cell 1-2
           </span>
         </div>
       </div>
       <div
-        className="c11 c14"
+        className="c12 c17"
         role="cell"
       >
         <div
           className="c8 c9"
         >
           <span
-            className="c15"
+            className="c18 c11"
           >
             Cell 1-3
           </span>
         </div>
       </div>
       <div
-        className="c12 c14"
+        className="c13 c17"
         role="cell"
       >
         <div
           className="c8 c9"
         >
           <span
-            className="c15"
+            className="c18 c11"
           >
             Cell 1-4
           </span>
         </div>
       </div>
+      <div
+        className="c14 c17 c15"
+        role="cell"
+      >
+        <div
+          className="c19"
+        >
+          <button
+            aria-expanded={false}
+            className="NormalizedButton__Button-ey7f5x-0 c20 c21"
+            disabled={true}
+            onClick={[Function]}
+            type="button"
+          >
+            <span
+              className="c22"
+            >
+              <svg
+                aria-hidden="true"
+                className="c23"
+                focusable="false"
+                preserveAspectRatio="xMidYMid meet"
+                role="presentation"
+                viewBox="0 0 24 24"
+              >
+                <polygon
+                  points="19.969 4 24 8.027 12 20 0 8.027 4.031 4 12 11.952"
+                />
+              </svg>
+            </span>
+          </button>
+        </div>
+        <div
+          className="c24"
+        >
+          <button
+            aria-expanded={false}
+            className="NormalizedButton__Button-ey7f5x-0 c20 c21"
+            disabled={true}
+            onClick={[Function]}
+            type="button"
+          >
+            <span
+              className="c22"
+            >
+              <svg
+                aria-hidden="true"
+                className="c25 c26"
+                direction="down"
+                focusable="false"
+                preserveAspectRatio="xMidYMid meet"
+                role="presentation"
+                viewBox="0 0 16 16"
+              >
+                <polygon
+                  points="14.620 3.580, 16.000 5.020, 8.000 12.730, 0.000 5.030, 1.400 3.580, 8.000 9.96"
+                />
+              </svg>
+            </span>
+          </button>
+        </div>
+      </div>
     </div>
     <div
-      className="c3 c13"
+      className="c3 c16"
       role="row"
     >
       <div
-        className="c6 c14"
+        className="c6 c17"
         role="cell"
       >
         <div
           className="c8 c9"
         >
           <span
-            className="c15"
+            className="c18 c11"
           >
             Cell 2-1
           </span>
         </div>
       </div>
       <div
-        className="c11 c14"
+        className="c12 c17"
         role="cell"
       >
         <div
           className="c8 c9"
         >
           <span
-            className="c15"
+            className="c18 c11"
           >
             Cell 2-2
           </span>
         </div>
       </div>
       <div
-        className="c11 c14"
+        className="c12 c17"
         role="cell"
       >
         <div
           className="c8 c9"
         >
           <span
-            className="c15"
+            className="c18 c11"
           >
             Cell 2-3
           </span>
         </div>
       </div>
       <div
-        className="c12 c14"
+        className="c13 c17"
         role="cell"
       >
         <div
           className="c8 c9"
         >
           <span
-            className="c15"
+            className="c18 c11"
           >
             Cell 2-4
           </span>
         </div>
       </div>
+      <div
+        className="c14 c17 c15"
+        role="cell"
+      >
+        <div
+          className="c19"
+        >
+          <button
+            aria-expanded={false}
+            className="NormalizedButton__Button-ey7f5x-0 c20 c21"
+            disabled={true}
+            onClick={[Function]}
+            type="button"
+          >
+            <span
+              className="c22"
+            >
+              <svg
+                aria-hidden="true"
+                className="c23"
+                focusable="false"
+                preserveAspectRatio="xMidYMid meet"
+                role="presentation"
+                viewBox="0 0 24 24"
+              >
+                <polygon
+                  points="19.969 4 24 8.027 12 20 0 8.027 4.031 4 12 11.952"
+                />
+              </svg>
+            </span>
+          </button>
+        </div>
+        <div
+          className="c24"
+        >
+          <button
+            aria-expanded={false}
+            className="NormalizedButton__Button-ey7f5x-0 c20 c21"
+            disabled={true}
+            onClick={[Function]}
+            type="button"
+          >
+            <span
+              className="c22"
+            >
+              <svg
+                aria-hidden="true"
+                className="c25 c26"
+                direction="down"
+                focusable="false"
+                preserveAspectRatio="xMidYMid meet"
+                role="presentation"
+                viewBox="0 0 16 16"
+              >
+                <polygon
+                  points="14.620 3.580, 16.000 5.020, 8.000 12.730, 0.000 5.030, 1.400 3.580, 8.000 9.96"
+                />
+              </svg>
+            </span>
+          </button>
+        </div>
+      </div>
     </div>
     <div
-      className="c3 c13"
+      className="c3 c16"
       role="row"
     >
       <div
-        className="c6 c14"
+        className="c6 c17"
         role="cell"
       >
         <div
           className="c8 c9"
         >
           <span
-            className="c15"
+            className="c18 c11"
           >
             Cell 3-1
           </span>
         </div>
       </div>
       <div
-        className="c11 c14"
+        className="c12 c17"
         role="cell"
       >
         <div
           className="c8 c9"
         >
           <span
-            className="c15"
+            className="c18 c11"
           >
             Cell 3-2
           </span>
         </div>
       </div>
       <div
-        className="c11 c14"
+        className="c12 c17"
         role="cell"
       >
         <div
           className="c8 c9"
         >
           <span
-            className="c15"
+            className="c18 c11"
           >
             Cell 3-3
           </span>
         </div>
       </div>
       <div
-        className="c12 c14"
+        className="c13 c17"
         role="cell"
       >
         <div
           className="c8 c9"
         >
           <span
-            className="c15"
+            className="c18 c11"
           >
             Cell 3-4
           </span>
+        </div>
+      </div>
+      <div
+        className="c14 c17 c15"
+        role="cell"
+      >
+        <div
+          className="c19"
+        >
+          <button
+            aria-expanded={false}
+            className="NormalizedButton__Button-ey7f5x-0 c20 c21"
+            disabled={true}
+            onClick={[Function]}
+            type="button"
+          >
+            <span
+              className="c22"
+            >
+              <svg
+                aria-hidden="true"
+                className="c23"
+                focusable="false"
+                preserveAspectRatio="xMidYMid meet"
+                role="presentation"
+                viewBox="0 0 24 24"
+              >
+                <polygon
+                  points="19.969 4 24 8.027 12 20 0 8.027 4.031 4 12 11.952"
+                />
+              </svg>
+            </span>
+          </button>
+        </div>
+        <div
+          className="c24"
+        >
+          <button
+            aria-expanded={false}
+            className="NormalizedButton__Button-ey7f5x-0 c20 c21"
+            disabled={true}
+            onClick={[Function]}
+            type="button"
+          >
+            <span
+              className="c22"
+            >
+              <svg
+                aria-hidden="true"
+                className="c25 c26"
+                direction="down"
+                focusable="false"
+                preserveAspectRatio="xMidYMid meet"
+                role="presentation"
+                viewBox="0 0 16 16"
+              >
+                <polygon
+                  points="14.620 3.580, 16.000 5.020, 8.000 12.730, 0.000 5.030, 1.400 3.580, 8.000 9.96"
+                />
+              </svg>
+            </span>
+          </button>
         </div>
       </div>
     </div>
@@ -1685,7 +2807,7 @@ exports[`Storyshots Molecules / FlexTable / FlexTable with different columns Med
   flex: 1;
 }
 
-.c11 {
+.c12 {
   box-sizing: border-box;
   display: none;
   -webkit-flex-wrap: nowrap;
@@ -1695,6 +2817,58 @@ exports[`Storyshots Molecules / FlexTable / FlexTable with different columns Med
   -ms-flex: 1;
   flex: 1;
   display: none;
+}
+
+.c13 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  -webkit-flex: 0 20px;
+  -ms-flex: 0 20px;
+  flex: 0 20px;
+}
+
+.c22 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 8px;
+  height: 8px;
+  fill: #A0A09B;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
+}
+
+.c24 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 16px;
+  height: 16px;
+  fill: #A0A09B;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
+}
+
+.c25 {
+  -webkit-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  transform: rotate(0deg);
 }
 
 .c1 {
@@ -1711,15 +2885,24 @@ exports[`Storyshots Molecules / FlexTable / FlexTable with different columns Med
   color: #6E6E69;
   margin: 0;
   font-weight: 400;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
+  font-size: 16px;
+  line-height: 1.5;
 }
 
-.c14 {
+.c17 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
   margin: 0;
   font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.c21 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: inherit;
+  margin: 0;
+  font-weight: 700;
   font-size: 14px;
   line-height: 1.4285714285714286;
 }
@@ -1732,64 +2915,128 @@ exports[`Storyshots Molecules / FlexTable / FlexTable with different columns Med
   overflow: hidden;
 }
 
+.c19 {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  overflow: visible;
+  text-transform: none;
+  position: relative;
+  box-sizing: border-box;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  padding: 0;
+  background-color: transparent;
+  color: #A0A09B;
+  border: none;
+  border-radius: 0;
+  cursor: not-allowed;
+}
+
+.c19,
+.c19[type='button'],
+.c19[type='reset'],
+.c19[type='submit'] {
+  -webkit-appearance: button;
+}
+
+.c19::-moz-focus-inner,
+.c19[type='button']::-moz-focus-inner,
+.c19[type='reset']::-moz-focus-inner,
+.c19[type='submit']::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+.c19:-moz-focusring,
+.c19[type='button']:-moz-focusring,
+.c19[type='reset']:-moz-focusring,
+.c19[type='submit']:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
 .c9 {
   width: inherit;
 }
 
-.c13 {
+.c11 {
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.c16 {
   overflow: hidden;
+}
+
+.c20:focus {
+  outline: none;
+}
+
+.c14 {
+  display: none;
 }
 
 .c4 {
   background: #FFFFFF;
-  border-bottom: 1px solid #EBEBE8;
+  margin-right: 0;
+  margin-left: 0;
+  padding-top: 4px;
+  padding-bottom: 4px;
   padding-right: 4px;
   padding-left: 2px;
   border-left: 2px solid transparent;
-  padding-top: 4px;
-  padding-bottom: 4px;
-  margin-right: 0;
-  margin-left: 0;
+  border-bottom: 1px solid #EBEBE8;
 }
 
 .c4 > *:first-child {
   padding-left: 0;
 }
 
-.c4 > *:last-child {
+.c4 > *:nth-last-child(2) {
   padding-right: 0;
 }
 
-.c12 {
+.c15 {
   background: #FFFFFF;
-  border-bottom: 1px solid #EBEBE8;
+  margin-right: 0;
+  margin-left: 0;
+  padding-top: 4px;
+  padding-bottom: 4px;
   padding-right: 4px;
   padding-left: 2px;
   border-left: 2px solid transparent;
-  padding-top: 4px;
-  padding-bottom: 4px;
-  margin-right: 0;
-  margin-left: 0;
+  border-bottom: 1px solid #EBEBE8;
 }
 
-.c12:hover {
+.c15:hover {
   background: #F5F5F5;
 }
 
-.c12 > *:first-child {
+.c15 > *:first-child {
   padding-left: 0;
 }
 
-.c12 > *:last-child {
+.c15 > *:nth-last-child(2) {
   padding-right: 0;
 }
 
 .c5 {
+  border-bottom: 1px solid #282823;
   z-index: 1;
   position: -webkit-sticky;
   position: sticky;
   top: 0px;
-  border-bottom: 1px solid #282823;
 }
 
 .c7 {
@@ -1808,8 +3055,47 @@ exports[`Storyshots Molecules / FlexTable / FlexTable with different columns Med
   margin-bottom: 40px;
 }
 
+@media (min-width:760px) {
+  .c3 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+}
+
 @media (min-width:976px) {
-  .c11 {
+  .c3 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+}
+
+@media (min-width:1280px) {
+  .c3 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+}
+
+@media (min-width:976px) {
+  .c12 {
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -1820,6 +3106,18 @@ exports[`Storyshots Molecules / FlexTable / FlexTable with different columns Med
     -webkit-flex: 1;
     -ms-flex: 1;
     flex: 1;
+  }
+}
+
+@media not all and (max-width:975px) {
+  .c18 {
+    display: none;
+  }
+}
+
+@media not all and (min-width:976px) {
+  .c23 {
+    display: none;
   }
 }
 
@@ -1854,14 +3152,14 @@ exports[`Storyshots Molecules / FlexTable / FlexTable with different columns Med
           className="c8 c9"
         >
           <span
-            className="c10"
+            className="c10 c11"
           >
             Header 1
           </span>
         </div>
       </div>
       <div
-        className="c11 c7"
+        className="c12 c7"
         hidden={true}
         role="columnheader"
       >
@@ -1869,7 +3167,7 @@ exports[`Storyshots Molecules / FlexTable / FlexTable with different columns Med
           className="c8 c9"
         >
           <span
-            className="c10"
+            className="c10 c11"
           >
             Hidden column on mobile
           </span>
@@ -1883,33 +3181,45 @@ exports[`Storyshots Molecules / FlexTable / FlexTable with different columns Med
           className="c8 c9"
         >
           <span
-            className="c10"
+            className="c10 c11"
           >
             Header 3
           </span>
         </div>
       </div>
+      <div
+        className="c13 c7 c14"
+        role="columnheader"
+      >
+        <div
+          className="c8 c9"
+        >
+          <span
+            className="c10 c11"
+          />
+        </div>
+      </div>
     </div>
     <div
-      className="c3 c12"
+      className="c3 c15"
       role="row"
     >
       <div
-        className="c6 c13"
+        className="c6 c16"
         role="cell"
       >
         <div
           className="c8 c9"
         >
           <span
-            className="c14"
+            className="c17 c11"
           >
             Cell 1-1
           </span>
         </div>
       </div>
       <div
-        className="c11 c13"
+        className="c12 c16"
         hidden={true}
         role="cell"
       >
@@ -1917,47 +3227,109 @@ exports[`Storyshots Molecules / FlexTable / FlexTable with different columns Med
           className="c8 c9"
         >
           <span
-            className="c14"
+            className="c17 c11"
           >
             Hidden on mobile
           </span>
         </div>
       </div>
       <div
-        className="c6 c13"
+        className="c6 c16"
         role="cell"
       >
         <div
           className="c8 c9"
         >
           <span
-            className="c14"
+            className="c17 c11"
           >
             Cell 1-3
           </span>
         </div>
       </div>
+      <div
+        className="c13 c16 c14"
+        role="cell"
+      >
+        <div
+          className="c18"
+        >
+          <button
+            aria-expanded={false}
+            className="NormalizedButton__Button-ey7f5x-0 c19 c20"
+            disabled={true}
+            onClick={[Function]}
+            type="button"
+          >
+            <span
+              className="c21"
+            >
+              <svg
+                aria-hidden="true"
+                className="c22"
+                focusable="false"
+                preserveAspectRatio="xMidYMid meet"
+                role="presentation"
+                viewBox="0 0 24 24"
+              >
+                <polygon
+                  points="19.969 4 24 8.027 12 20 0 8.027 4.031 4 12 11.952"
+                />
+              </svg>
+            </span>
+          </button>
+        </div>
+        <div
+          className="c23"
+        >
+          <button
+            aria-expanded={false}
+            className="NormalizedButton__Button-ey7f5x-0 c19 c20"
+            disabled={true}
+            onClick={[Function]}
+            type="button"
+          >
+            <span
+              className="c21"
+            >
+              <svg
+                aria-hidden="true"
+                className="c24 c25"
+                direction="down"
+                focusable="false"
+                preserveAspectRatio="xMidYMid meet"
+                role="presentation"
+                viewBox="0 0 16 16"
+              >
+                <polygon
+                  points="14.620 3.580, 16.000 5.020, 8.000 12.730, 0.000 5.030, 1.400 3.580, 8.000 9.96"
+                />
+              </svg>
+            </span>
+          </button>
+        </div>
+      </div>
     </div>
     <div
-      className="c3 c12"
+      className="c3 c15"
       role="row"
     >
       <div
-        className="c6 c13"
+        className="c6 c16"
         role="cell"
       >
         <div
           className="c8 c9"
         >
           <span
-            className="c14"
+            className="c17 c11"
           >
             Cell 2-1
           </span>
         </div>
       </div>
       <div
-        className="c11 c13"
+        className="c12 c16"
         hidden={true}
         role="cell"
       >
@@ -1965,47 +3337,109 @@ exports[`Storyshots Molecules / FlexTable / FlexTable with different columns Med
           className="c8 c9"
         >
           <span
-            className="c14"
+            className="c17 c11"
           >
             Hidden on mobile
           </span>
         </div>
       </div>
       <div
-        className="c6 c13"
+        className="c6 c16"
         role="cell"
       >
         <div
           className="c8 c9"
         >
           <span
-            className="c14"
+            className="c17 c11"
           >
             Cell 2-3
           </span>
         </div>
       </div>
+      <div
+        className="c13 c16 c14"
+        role="cell"
+      >
+        <div
+          className="c18"
+        >
+          <button
+            aria-expanded={false}
+            className="NormalizedButton__Button-ey7f5x-0 c19 c20"
+            disabled={true}
+            onClick={[Function]}
+            type="button"
+          >
+            <span
+              className="c21"
+            >
+              <svg
+                aria-hidden="true"
+                className="c22"
+                focusable="false"
+                preserveAspectRatio="xMidYMid meet"
+                role="presentation"
+                viewBox="0 0 24 24"
+              >
+                <polygon
+                  points="19.969 4 24 8.027 12 20 0 8.027 4.031 4 12 11.952"
+                />
+              </svg>
+            </span>
+          </button>
+        </div>
+        <div
+          className="c23"
+        >
+          <button
+            aria-expanded={false}
+            className="NormalizedButton__Button-ey7f5x-0 c19 c20"
+            disabled={true}
+            onClick={[Function]}
+            type="button"
+          >
+            <span
+              className="c21"
+            >
+              <svg
+                aria-hidden="true"
+                className="c24 c25"
+                direction="down"
+                focusable="false"
+                preserveAspectRatio="xMidYMid meet"
+                role="presentation"
+                viewBox="0 0 16 16"
+              >
+                <polygon
+                  points="14.620 3.580, 16.000 5.020, 8.000 12.730, 0.000 5.030, 1.400 3.580, 8.000 9.96"
+                />
+              </svg>
+            </span>
+          </button>
+        </div>
+      </div>
     </div>
     <div
-      className="c3 c12"
+      className="c3 c15"
       role="row"
     >
       <div
-        className="c6 c13"
+        className="c6 c16"
         role="cell"
       >
         <div
           className="c8 c9"
         >
           <span
-            className="c14"
+            className="c17 c11"
           >
             Cell 3-1
           </span>
         </div>
       </div>
       <div
-        className="c11 c13"
+        className="c12 c16"
         hidden={true}
         role="cell"
       >
@@ -2013,24 +3447,86 @@ exports[`Storyshots Molecules / FlexTable / FlexTable with different columns Med
           className="c8 c9"
         >
           <span
-            className="c14"
+            className="c17 c11"
           >
             Hidden on mobile
           </span>
         </div>
       </div>
       <div
-        className="c6 c13"
+        className="c6 c16"
         role="cell"
       >
         <div
           className="c8 c9"
         >
           <span
-            className="c14"
+            className="c17 c11"
           >
             Cell 3-3
           </span>
+        </div>
+      </div>
+      <div
+        className="c13 c16 c14"
+        role="cell"
+      >
+        <div
+          className="c18"
+        >
+          <button
+            aria-expanded={false}
+            className="NormalizedButton__Button-ey7f5x-0 c19 c20"
+            disabled={true}
+            onClick={[Function]}
+            type="button"
+          >
+            <span
+              className="c21"
+            >
+              <svg
+                aria-hidden="true"
+                className="c22"
+                focusable="false"
+                preserveAspectRatio="xMidYMid meet"
+                role="presentation"
+                viewBox="0 0 24 24"
+              >
+                <polygon
+                  points="19.969 4 24 8.027 12 20 0 8.027 4.031 4 12 11.952"
+                />
+              </svg>
+            </span>
+          </button>
+        </div>
+        <div
+          className="c23"
+        >
+          <button
+            aria-expanded={false}
+            className="NormalizedButton__Button-ey7f5x-0 c19 c20"
+            disabled={true}
+            onClick={[Function]}
+            type="button"
+          >
+            <span
+              className="c21"
+            >
+              <svg
+                aria-hidden="true"
+                className="c24 c25"
+                direction="down"
+                focusable="false"
+                preserveAspectRatio="xMidYMid meet"
+                role="presentation"
+                viewBox="0 0 16 16"
+              >
+                <polygon
+                  points="14.620 3.580, 16.000 5.020, 8.000 12.730, 0.000 5.030, 1.400 3.580, 8.000 9.96"
+                />
+              </svg>
+            </span>
+          </button>
         </div>
       </div>
     </div>

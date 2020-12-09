@@ -21,8 +21,8 @@ const barStyles = css<Props>`
     content: '';
     display: block;
     width: 100%;
-    height: ${p => p.theme.spacing.unit(1)}px;
-    background: ${p => getColor(p)};
+    height: ${(p) => p.theme.spacing.unit(1)}px;
+    background: ${(p) => getColor(p)};
     position: absolute;
     top: 0;
     left: 0;
@@ -32,12 +32,14 @@ const barStyles = css<Props>`
 const StyledCard = styled.div<Props>`
   background: ${({ theme }) => theme.color.card};
   box-shadow: 0 2px 2px 0 ${({ theme }) => theme.color.shadowCard};
-  ${p => (p.barColor ? barStyles : ``)}
+  ${(p) => (p.barColor ? barStyles : ``)}
 `;
 
-export const Card: React.FC<Props> = ({ as, barColor, children, className }) => (
-  <StyledCard className={className} as={as} barColor={barColor}>
-    {children}
-  </StyledCard>
+export const Card: React.FC<Props> = React.forwardRef<HTMLDivElement, Props>(
+  ({ as, barColor, children, className }, ref) => (
+    <StyledCard className={className} as={as} barColor={barColor} ref={ref}>
+      {children}
+    </StyledCard>
+  ),
 );
 Card.displayName = 'Card';

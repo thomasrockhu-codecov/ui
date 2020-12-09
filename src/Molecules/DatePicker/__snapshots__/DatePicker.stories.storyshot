@@ -1,7 +1,8 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Storyshots Molecules / DatePicker Default 1`] = `
-.c4 {
+exports[`Storyshots Molecules / DatePicker All 1`] = `
+Array [
+  .c4 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -87,7 +88,7 @@ exports[`Storyshots Molecules / DatePicker Default 1`] = `
   width: 100%;
   padding: 8px;
   margin: 0;
-  line-height: inherit;
+  line-height: 40px;
   box-sizing: border-box;
   height: 40px;
   outline: none;
@@ -139,426 +140,20 @@ exports[`Storyshots Molecules / DatePicker Default 1`] = `
   opacity: 1;
 }
 
-.c6 {
-  position: relative;
-  padding: 0px 0;
-}
-
-.c1 {
-  z-index: 1;
-}
-
-.c0 {
-  width: 312px;
-  display: inline-block;
-}
-
-<div>
-  <div
-    className="c0 c1"
-  >
-    <label
-      className="c2"
-      hidden={false}
-    >
-      <span
-        className="c3"
-      >
-        <div
-          className="c4"
-        >
-          Label 
-        </div>
-        <span
-          className="c5"
-        >
-          <div
-            className="c6"
-          >
-            <input
-              autoComplete="off"
-              className="NormalizedInput__Input-sc-1m4kmh9-0 c7"
-              data-testid="datepicker-input"
-              id="input-id"
-              onChange={[Function]}
-              onFocus={[Function]}
-              placeholder="dd/mm/yyyy"
-              type="text"
-              value=""
-              variant="normal"
-            />
-            <div
-              className="c8 c9"
-              position="right"
-              variant="normal"
-            >
-              <svg
-                aria-hidden="true"
-                className="c10"
-                focusable="false"
-                preserveAspectRatio="xMidYMid meet"
-                role="presentation"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  d="M8 3v2h8V3h2v2h4v16H2V5h4V3h2zm12 7H4v9h16v-9zM7 15v2H5v-2h2zm3 0v2H8v-2h2zm3 0v2h-2v-2h2zm3 0v2h-2v-2h2zm3 0v2h-2v-2h2zM7 12v2H5v-2h2zm3 0v2H8v-2h2zm3 0v2h-2v-2h2zm3 0v2h-2v-2h2zm3 0v2h-2v-2h2zm1-5H4v1h16V7z"
-                />
-              </svg>
-            </div>
-          </div>
-        </span>
-      </span>
-    </label>
-  </div>
-</div>
-`;
-
-exports[`Storyshots Molecules / DatePicker Disable certain dates 1`] = `
-.c4 {
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.c8 {
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.c2 {
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  cursor: pointer;
-}
-
-.c10 {
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  width: 24px;
-  height: 24px;
-  fill: #282823;
-  -webkit-flex-shrink: 0;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
-  display: block;
-}
-
-.c3 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #6E6E69;
-  margin: 0;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
-}
-
-.c5 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #282823;
-  margin: 0;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
-}
-
-.c9 {
-  width: 32px;
-  top: 0;
-  height: 100%;
-  padding-left: 4px;
-  padding-right: 4px;
-  position: absolute;
-  right: 4px;
-}
-
-.c7 {
-  font-family: inherit;
-  font-size: 100%;
-  line-height: 1.15;
-  margin: 0;
-  overflow: visible;
-  border: 0;
-  width: 100%;
-  padding: 8px;
-  margin: 0;
-  line-height: inherit;
-  box-sizing: border-box;
-  height: 40px;
-  outline: none;
-  border: solid;
-  border-color: #BCBCB6;
-  border-width: 1px;
-  position: relative;
-  background-color: #FFFFFF;
-  padding-right: 40px;
-}
-
-.c7:focus {
-  border-width: 1px;
-}
-
-.c7:hover {
-  border-color: #4B4B46;
-}
-
-.c7:focus {
-  border-color: #0046FF;
-}
-
-.c7::-webkit-input-placeholder {
-  color: #6E6E69;
-  height: inherit;
-  line-height: inherit;
-  opacity: 1;
-}
-
-.c7::-moz-placeholder {
-  color: #6E6E69;
-  height: inherit;
-  line-height: inherit;
-  opacity: 1;
-}
-
-.c7:-ms-input-placeholder {
-  color: #6E6E69;
-  height: inherit;
-  line-height: inherit;
-  opacity: 1;
-}
-
-.c7::placeholder {
-  color: #6E6E69;
-  height: inherit;
-  line-height: inherit;
-  opacity: 1;
-}
-
-.c6 {
-  position: relative;
-  padding: 0px 0;
-}
-
-.c1 {
-  z-index: 1;
-}
-
-.c0 {
-  width: 312px;
-  display: inline-block;
-}
-
-<div>
-  <div
-    className="c0 c1"
-  >
-    <label
-      className="c2"
-      hidden={false}
-    >
-      <span
-        className="c3"
-      >
-        <div
-          className="c4"
-        >
-          Label 
-        </div>
-        <span
-          className="c5"
-        >
-          <div
-            className="c6"
-          >
-            <input
-              autoComplete="off"
-              className="NormalizedInput__Input-sc-1m4kmh9-0 c7"
-              data-testid="datepicker-input"
-              id="disable-dates-input"
-              onChange={[Function]}
-              onFocus={[Function]}
-              placeholder="dd/mm/yyyy"
-              type="text"
-              value=""
-              variant="normal"
-            />
-            <div
-              className="c8 c9"
-              position="right"
-              variant="normal"
-            >
-              <svg
-                aria-hidden="true"
-                className="c10"
-                focusable="false"
-                preserveAspectRatio="xMidYMid meet"
-                role="presentation"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  d="M8 3v2h8V3h2v2h4v16H2V5h4V3h2zm12 7H4v9h16v-9zM7 15v2H5v-2h2zm3 0v2H8v-2h2zm3 0v2h-2v-2h2zm3 0v2h-2v-2h2zm3 0v2h-2v-2h2zM7 12v2H5v-2h2zm3 0v2H8v-2h2zm3 0v2h-2v-2h2zm3 0v2h-2v-2h2zm3 0v2h-2v-2h2zm1-5H4v1h16V7z"
-                />
-              </svg>
-            </div>
-          </div>
-        </span>
-      </span>
-    </label>
-  </div>
-</div>
-`;
-
-exports[`Storyshots Molecules / DatePicker Disabled input 1`] = `
-.c4 {
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.c8 {
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.c2 {
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  cursor: pointer;
-}
-
-.c10 {
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  width: 24px;
-  height: 24px;
-  fill: #282823;
-  -webkit-flex-shrink: 0;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
-  display: block;
-}
-
-.c3 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+.c7:disabled::-webkit-input-placeholder {
   color: #A0A09B;
-  margin: 0;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
 }
 
-.c5 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #282823;
-  margin: 0;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
+.c7:disabled::-moz-placeholder {
+  color: #A0A09B;
 }
 
-.c9 {
-  width: 32px;
-  top: 0;
-  height: 100%;
-  padding-left: 4px;
-  padding-right: 4px;
-  position: absolute;
-  right: 4px;
+.c7:disabled:-ms-input-placeholder {
+  color: #A0A09B;
 }
 
-.c7 {
-  font-family: inherit;
-  font-size: 100%;
-  line-height: 1.15;
-  margin: 0;
-  overflow: visible;
-  border: 0;
-  width: 100%;
-  padding: 8px;
-  margin: 0;
-  line-height: inherit;
-  box-sizing: border-box;
-  height: 40px;
-  outline: none;
-  border: solid;
-  border-color: #BCBCB6;
-  border-width: 1px;
-  position: relative;
-  background-color: #EBEBE8;
-  padding-right: 40px;
-}
-
-.c7:focus {
-  border-width: 1px;
-}
-
-.c7:focus {
-  border-color: #0046FF;
-}
-
-.c7::-webkit-input-placeholder {
-  color: #6E6E69;
-  height: inherit;
-  line-height: inherit;
-  opacity: 1;
-}
-
-.c7::-moz-placeholder {
-  color: #6E6E69;
-  height: inherit;
-  line-height: inherit;
-  opacity: 1;
-}
-
-.c7:-ms-input-placeholder {
-  color: #6E6E69;
-  height: inherit;
-  line-height: inherit;
-  opacity: 1;
-}
-
-.c7::placeholder {
-  color: #6E6E69;
-  height: inherit;
-  line-height: inherit;
-  opacity: 1;
+.c7:disabled::placeholder {
+  color: #A0A09B;
 }
 
 .c6 {
@@ -576,68 +171,65 @@ exports[`Storyshots Molecules / DatePicker Disabled input 1`] = `
 }
 
 <div>
-  <div
-    className="c0 c1"
-  >
-    <label
-      className="c2"
-      hidden={false}
+    <div
+      className="c0 c1"
     >
-      <span
-        className="c3"
+      <label
+        className="c2"
+        hidden={false}
       >
-        <div
-          className="c4"
-        >
-          Label 
-        </div>
         <span
-          className="c5"
+          className="c3"
         >
           <div
-            className="c6"
+            className="c4"
           >
-            <input
-              autoComplete="off"
-              className="NormalizedInput__Input-sc-1m4kmh9-0 c7"
-              data-testid="datepicker-input"
-              disabled={true}
-              id="disabled-input"
-              onChange={[Function]}
-              onFocus={[Function]}
-              placeholder="dd/mm/yyyy"
-              type="text"
-              value=""
-              variant="normal"
-            />
-            <div
-              className="c8 c9"
-              position="right"
-              variant="normal"
-            >
-              <svg
-                aria-hidden="true"
-                className="c10"
-                focusable="false"
-                preserveAspectRatio="xMidYMid meet"
-                role="presentation"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  d="M8 3v2h8V3h2v2h4v16H2V5h4V3h2zm12 7H4v9h16v-9zM7 15v2H5v-2h2zm3 0v2H8v-2h2zm3 0v2h-2v-2h2zm3 0v2h-2v-2h2zm3 0v2h-2v-2h2zM7 12v2H5v-2h2zm3 0v2H8v-2h2zm3 0v2h-2v-2h2zm3 0v2h-2v-2h2zm3 0v2h-2v-2h2zm1-5H4v1h16V7z"
-                />
-              </svg>
-            </div>
+            Regular 
           </div>
+          <span
+            className="c5"
+          >
+            <div
+              className="c6"
+            >
+              <input
+                autoComplete="off"
+                className="NormalizedInput__Input-sc-1m4kmh9-0 c7"
+                data-testid="datepicker-input"
+                id="regular-datepicker"
+                onChange={[Function]}
+                onFocus={[Function]}
+                onKeyDown={[Function]}
+                placeholder="dd/mm/yyyy"
+                type="text"
+                value=""
+                variant="normal"
+              />
+              <div
+                className="c8 c9"
+                position="right"
+                variant="normal"
+              >
+                <svg
+                  aria-hidden="true"
+                  className="c10"
+                  focusable="false"
+                  preserveAspectRatio="xMidYMid meet"
+                  role="presentation"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M8 3v2h8V3h2v2h4v16H2V5h4V3h2zm12 7H4v9h16v-9zM7 15v2H5v-2h2zm3 0v2H8v-2h2zm3 0v2h-2v-2h2zm3 0v2h-2v-2h2zm3 0v2h-2v-2h2zM7 12v2H5v-2h2zm3 0v2H8v-2h2zm3 0v2h-2v-2h2zm3 0v2h-2v-2h2zm3 0v2h-2v-2h2zm1-5H4v1h16V7z"
+                  />
+                </svg>
+              </div>
+            </div>
+          </span>
         </span>
-      </span>
-    </label>
-  </div>
-</div>
-`;
-
-exports[`Storyshots Molecules / DatePicker Enable certain dates 1`] = `
-.c4 {
+      </label>
+    </div>
+  </div>,
+  .c4 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -723,7 +315,7 @@ exports[`Storyshots Molecules / DatePicker Enable certain dates 1`] = `
   width: 100%;
   padding: 8px;
   margin: 0;
-  line-height: inherit;
+  line-height: 40px;
   box-sizing: border-box;
   height: 40px;
   outline: none;
@@ -775,6 +367,22 @@ exports[`Storyshots Molecules / DatePicker Enable certain dates 1`] = `
   opacity: 1;
 }
 
+.c7:disabled::-webkit-input-placeholder {
+  color: #A0A09B;
+}
+
+.c7:disabled::-moz-placeholder {
+  color: #A0A09B;
+}
+
+.c7:disabled:-ms-input-placeholder {
+  color: #A0A09B;
+}
+
+.c7:disabled::placeholder {
+  color: #A0A09B;
+}
+
 .c6 {
   position: relative;
   padding: 0px 0;
@@ -790,79 +398,65 @@ exports[`Storyshots Molecules / DatePicker Enable certain dates 1`] = `
 }
 
 <div>
-  <div
-    className="c0 c1"
-  >
-    <label
-      className="c2"
-      hidden={false}
+    <div
+      className="c0 c1"
     >
-      <span
-        className="c3"
+      <label
+        className="c2"
+        hidden={false}
       >
-        <div
-          className="c4"
-        >
-          Label 
-        </div>
         <span
-          className="c5"
+          className="c3"
         >
           <div
-            className="c6"
+            className="c4"
           >
-            <input
-              autoComplete="off"
-              className="NormalizedInput__Input-sc-1m4kmh9-0 c7"
-              data-testid="datepicker-input"
-              id="enable-dates-input"
-              onChange={[Function]}
-              onFocus={[Function]}
-              placeholder="dd/mm/yyyy"
-              type="text"
-              value=""
-              variant="normal"
-            />
-            <div
-              className="c8 c9"
-              position="right"
-              variant="normal"
-            >
-              <svg
-                aria-hidden="true"
-                className="c10"
-                focusable="false"
-                preserveAspectRatio="xMidYMid meet"
-                role="presentation"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  d="M8 3v2h8V3h2v2h4v16H2V5h4V3h2zm12 7H4v9h16v-9zM7 15v2H5v-2h2zm3 0v2H8v-2h2zm3 0v2h-2v-2h2zm3 0v2h-2v-2h2zm3 0v2h-2v-2h2zM7 12v2H5v-2h2zm3 0v2H8v-2h2zm3 0v2h-2v-2h2zm3 0v2h-2v-2h2zm3 0v2h-2v-2h2zm1-5H4v1h16V7z"
-                />
-              </svg>
-            </div>
+            Range 
           </div>
+          <span
+            className="c5"
+          >
+            <div
+              className="c6"
+            >
+              <input
+                autoComplete="off"
+                className="NormalizedInput__Input-sc-1m4kmh9-0 c7"
+                data-testid="datepicker-input"
+                id="range-datepicker"
+                onChange={[Function]}
+                onFocus={[Function]}
+                onKeyDown={[Function]}
+                placeholder="dd/mm/yyyy - dd/mm/yyyy"
+                type="text"
+                value=""
+                variant="normal"
+              />
+              <div
+                className="c8 c9"
+                position="right"
+                variant="normal"
+              >
+                <svg
+                  aria-hidden="true"
+                  className="c10"
+                  focusable="false"
+                  preserveAspectRatio="xMidYMid meet"
+                  role="presentation"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M8 3v2h8V3h2v2h4v16H2V5h4V3h2zm12 7H4v9h16v-9zM7 15v2H5v-2h2zm3 0v2H8v-2h2zm3 0v2h-2v-2h2zm3 0v2h-2v-2h2zm3 0v2h-2v-2h2zM7 12v2H5v-2h2zm3 0v2H8v-2h2zm3 0v2h-2v-2h2zm3 0v2h-2v-2h2zm3 0v2h-2v-2h2zm1-5H4v1h16V7z"
+                  />
+                </svg>
+              </div>
+            </div>
+          </span>
         </span>
-      </span>
-    </label>
-  </div>
-</div>
-`;
-
-exports[`Storyshots Molecules / DatePicker Side by side 1`] = `
-.c0 {
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.c1 {
-  box-sizing: border-box;
-}
-
-.c6 {
+      </label>
+    </div>
+  </div>,
+  .c4 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -874,7 +468,7 @@ exports[`Storyshots Molecules / DatePicker Side by side 1`] = `
   align-items: center;
 }
 
-.c10 {
+.c8 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -890,13 +484,13 @@ exports[`Storyshots Molecules / DatePicker Side by side 1`] = `
   align-items: center;
 }
 
-.c4 {
+.c2 {
   text-overflow: ellipsis;
   white-space: nowrap;
   cursor: pointer;
 }
 
-.c12 {
+.c10 {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -910,7 +504,7 @@ exports[`Storyshots Molecules / DatePicker Side by side 1`] = `
   display: block;
 }
 
-.c5 {
+.c3 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #6E6E69;
   margin: 0;
@@ -919,227 +513,240 @@ exports[`Storyshots Molecules / DatePicker Side by side 1`] = `
   line-height: 1.4285714285714286;
 }
 
-.c7 {
+.c5 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
   margin: 0;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.4285714285714286;
+}
+
+.c9 {
+  width: 32px;
+  top: 0;
+  height: 100%;
+  padding-left: 4px;
+  padding-right: 4px;
+  position: absolute;
+  right: 4px;
+}
+
+.c7 {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  overflow: visible;
+  border: 0;
+  width: 100%;
+  padding: 8px;
+  margin: 0;
+  line-height: 40px;
+  box-sizing: border-box;
+  height: 40px;
+  outline: none;
+  border: solid;
+  border-color: #BCBCB6;
+  border-width: 1px;
+  position: relative;
+  background-color: #FFFFFF;
+  padding-right: 40px;
+}
+
+.c7:focus {
+  border-width: 1px;
+}
+
+.c7:hover {
+  border-color: #4B4B46;
+}
+
+.c7:focus {
+  border-color: #0046FF;
+}
+
+.c7::-webkit-input-placeholder {
+  color: #6E6E69;
+  height: inherit;
+  line-height: inherit;
+  opacity: 1;
+}
+
+.c7::-moz-placeholder {
+  color: #6E6E69;
+  height: inherit;
+  line-height: inherit;
+  opacity: 1;
+}
+
+.c7:-ms-input-placeholder {
+  color: #6E6E69;
+  height: inherit;
+  line-height: inherit;
+  opacity: 1;
+}
+
+.c7::placeholder {
+  color: #6E6E69;
+  height: inherit;
+  line-height: inherit;
+  opacity: 1;
+}
+
+.c7:disabled::-webkit-input-placeholder {
+  color: #A0A09B;
+}
+
+.c7:disabled::-moz-placeholder {
+  color: #A0A09B;
+}
+
+.c7:disabled:-ms-input-placeholder {
+  color: #A0A09B;
+}
+
+.c7:disabled::placeholder {
+  color: #A0A09B;
+}
+
+.c6 {
+  position: relative;
+  padding: 0px 0;
 }
 
 .c11 {
-  width: 32px;
-  top: 0;
-  height: 100%;
-  padding-left: 4px;
-  padding-right: 4px;
-  position: absolute;
-  right: 4px;
-}
-
-.c9 {
-  font-family: inherit;
-  font-size: 100%;
-  line-height: 1.15;
-  margin: 0;
-  overflow: visible;
-  border: 0;
-  width: 100%;
-  padding: 8px;
-  margin: 0;
-  line-height: inherit;
-  box-sizing: border-box;
-  height: 40px;
-  outline: none;
-  border: solid;
-  border-color: #BCBCB6;
-  border-width: 1px;
-  position: relative;
-  background-color: #FFFFFF;
-  padding-right: 40px;
-}
-
-.c9:focus {
-  border-width: 1px;
-}
-
-.c9:hover {
-  border-color: #4B4B46;
-}
-
-.c9:focus {
-  border-color: #0046FF;
-}
-
-.c9::-webkit-input-placeholder {
-  color: #6E6E69;
-  height: inherit;
-  line-height: inherit;
-  opacity: 1;
-}
-
-.c9::-moz-placeholder {
-  color: #6E6E69;
-  height: inherit;
-  line-height: inherit;
-  opacity: 1;
-}
-
-.c9:-ms-input-placeholder {
-  color: #6E6E69;
-  height: inherit;
-  line-height: inherit;
-  opacity: 1;
-}
-
-.c9::placeholder {
-  color: #6E6E69;
-  height: inherit;
-  line-height: inherit;
-  opacity: 1;
-}
-
-.c8 {
-  position: relative;
-  padding: 0px 0;
-}
-
-.c3 {
   z-index: 1;
+  padding-left: 8px;
 }
 
-.c2 {
+.c1 {
+  z-index: 1;
+  padding-right: 8px;
+}
+
+.c0 {
   width: 312px;
   display: inline-block;
 }
 
-<div
-  className="c0"
->
-  <div
-    className="c1"
-  >
-    <div>
-      <div
-        className="c2 c3"
+<div>
+    <div
+      className="c0 c1"
+    >
+      <label
+        className="c2"
+        hidden={false}
       >
-        <label
-          className="c4"
-          hidden={false}
+        <span
+          className="c3"
         >
+          <div
+            className="c4"
+          >
+            Date from 
+          </div>
           <span
             className="c5"
           >
             <div
               className="c6"
             >
-              Label 
-            </div>
-            <span
-              className="c7"
-            >
+              <input
+                autoComplete="off"
+                className="NormalizedInput__Input-sc-1m4kmh9-0 c7"
+                data-testid="datepicker-input-start"
+                id="double-datepicker-start"
+                onBlur={[Function]}
+                onChange={[Function]}
+                onFocus={[Function]}
+                onKeyDown={[Function]}
+                placeholder="dd/mm/yyyy"
+                type="text"
+                value=""
+                variant="normal"
+              />
               <div
-                className="c8"
+                className="c8 c9"
+                position="right"
+                variant="normal"
               >
-                <input
-                  autoComplete="off"
-                  className="NormalizedInput__Input-sc-1m4kmh9-0 c9"
-                  data-testid="datepicker-input"
-                  id="input-id-side-one"
-                  onChange={[Function]}
-                  onFocus={[Function]}
-                  placeholder="dd/mm/yyyy"
-                  type="text"
-                  value=""
-                  variant="normal"
-                />
-                <div
-                  className="c10 c11"
-                  position="right"
-                  variant="normal"
+                <svg
+                  aria-hidden="true"
+                  className="c10"
+                  focusable="false"
+                  preserveAspectRatio="xMidYMid meet"
+                  role="presentation"
+                  viewBox="0 0 24 24"
                 >
-                  <svg
-                    aria-hidden="true"
-                    className="c12"
-                    focusable="false"
-                    preserveAspectRatio="xMidYMid meet"
-                    role="presentation"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      d="M8 3v2h8V3h2v2h4v16H2V5h4V3h2zm12 7H4v9h16v-9zM7 15v2H5v-2h2zm3 0v2H8v-2h2zm3 0v2h-2v-2h2zm3 0v2h-2v-2h2zm3 0v2h-2v-2h2zM7 12v2H5v-2h2zm3 0v2H8v-2h2zm3 0v2h-2v-2h2zm3 0v2h-2v-2h2zm3 0v2h-2v-2h2zm1-5H4v1h16V7z"
-                    />
-                  </svg>
-                </div>
+                  <path
+                    d="M8 3v2h8V3h2v2h4v16H2V5h4V3h2zm12 7H4v9h16v-9zM7 15v2H5v-2h2zm3 0v2H8v-2h2zm3 0v2h-2v-2h2zm3 0v2h-2v-2h2zm3 0v2h-2v-2h2zM7 12v2H5v-2h2zm3 0v2H8v-2h2zm3 0v2h-2v-2h2zm3 0v2h-2v-2h2zm3 0v2h-2v-2h2zm1-5H4v1h16V7z"
+                  />
+                </svg>
               </div>
-            </span>
+            </div>
           </span>
-        </label>
-      </div>
+        </span>
+      </label>
     </div>
-  </div>
-  <div
-    className="c1"
-  >
-    <div>
-      <div
-        className="c2 c3"
+    <div
+      className="c0 c11"
+    >
+      <label
+        className="c2"
+        hidden={false}
       >
-        <label
-          className="c4"
-          hidden={false}
+        <span
+          className="c3"
         >
+          <div
+            className="c4"
+          >
+            Date to 
+          </div>
           <span
             className="c5"
           >
             <div
               className="c6"
             >
-              Label 
-            </div>
-            <span
-              className="c7"
-            >
+              <input
+                autoComplete="off"
+                className="NormalizedInput__Input-sc-1m4kmh9-0 c7"
+                data-testid="datepicker-input-end"
+                id="double-datepicker-end"
+                onBlur={[Function]}
+                onChange={[Function]}
+                onFocus={[Function]}
+                onKeyDown={[Function]}
+                placeholder="dd/mm/yyyy"
+                type="text"
+                value=""
+                variant="normal"
+              />
               <div
-                className="c8"
+                className="c8 c9"
+                position="right"
+                variant="normal"
               >
-                <input
-                  autoComplete="off"
-                  className="NormalizedInput__Input-sc-1m4kmh9-0 c9"
-                  data-testid="datepicker-input"
-                  id="input-id-side-two"
-                  onChange={[Function]}
-                  onFocus={[Function]}
-                  placeholder="dd/mm/yyyy"
-                  type="text"
-                  value=""
-                  variant="normal"
-                />
-                <div
-                  className="c10 c11"
-                  position="right"
-                  variant="normal"
+                <svg
+                  aria-hidden="true"
+                  className="c10"
+                  focusable="false"
+                  preserveAspectRatio="xMidYMid meet"
+                  role="presentation"
+                  viewBox="0 0 24 24"
                 >
-                  <svg
-                    aria-hidden="true"
-                    className="c12"
-                    focusable="false"
-                    preserveAspectRatio="xMidYMid meet"
-                    role="presentation"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      d="M8 3v2h8V3h2v2h4v16H2V5h4V3h2zm12 7H4v9h16v-9zM7 15v2H5v-2h2zm3 0v2H8v-2h2zm3 0v2h-2v-2h2zm3 0v2h-2v-2h2zm3 0v2h-2v-2h2zM7 12v2H5v-2h2zm3 0v2H8v-2h2zm3 0v2h-2v-2h2zm3 0v2h-2v-2h2zm3 0v2h-2v-2h2zm1-5H4v1h16V7z"
-                    />
-                  </svg>
-                </div>
+                  <path
+                    d="M8 3v2h8V3h2v2h4v16H2V5h4V3h2zm12 7H4v9h16v-9zM7 15v2H5v-2h2zm3 0v2H8v-2h2zm3 0v2h-2v-2h2zm3 0v2h-2v-2h2zm3 0v2h-2v-2h2zM7 12v2H5v-2h2zm3 0v2H8v-2h2zm3 0v2h-2v-2h2zm3 0v2h-2v-2h2zm3 0v2h-2v-2h2zm1-5H4v1h16V7z"
+                  />
+                </svg>
               </div>
-            </span>
+            </div>
           </span>
-        </label>
-      </div>
+        </span>
+      </label>
     </div>
-  </div>
-</div>
+  </div>,
+]
 `;

@@ -11,7 +11,6 @@ import Flag from './Atoms/Flag';
 import Flexbox from './Atoms/Flexbox';
 import FormLabel from './Atoms/FormLabel';
 import Icon from './Atoms/Icon';
-import IsomorphicMedia, { useIsomorphicMedia } from './Atoms/IsomorphicMedia';
 import Legend from './Atoms/Legend';
 import List from './Atoms/List';
 import ListItem from './Atoms/ListItem';
@@ -72,6 +71,7 @@ import TruncateWithTooltip from './Molecules/TruncateWithTooltip';
 /** Organisms */
 import CardWithTabs from './Organisms/CardWithTabs';
 import Development from './Organisms/Development';
+import ShowMore from './Organisms/ShowMore';
 import StatusModal from './Organisms/StatusModal';
 
 /** Hooks */
@@ -116,7 +116,6 @@ export {
   Icon,
   InfoBar,
   Input,
-  IsomorphicMedia,
   LabeledValue,
   Legend,
   LineScale,
@@ -144,6 +143,7 @@ export {
   SegmentedControl,
   SelectionCard,
   Separator,
+  ShowMore,
   ShowMoreButton,
   Skeleton,
   Slider,
@@ -171,7 +171,6 @@ export {
   createTheme,
   numberWithLimit,
   theme,
-  useIsomorphicMedia,
   useKeyPress,
   useLink,
   useMedia,

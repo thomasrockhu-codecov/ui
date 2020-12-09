@@ -1,0 +1,3465 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Molecules / FlexTable / With different table props Default 1`] = `
+.c1 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-left: -4px;
+  margin-right: -4px;
+}
+
+.c1 > * {
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+.c1 > *:not(:first-child) {
+  padding-top: 0;
+}
+
+.c4 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+
+.c10 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  -webkit-flex: 0 20px;
+  -ms-flex: 0 20px;
+  flex: 0 20px;
+}
+
+.c19 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 8px;
+  height: 8px;
+  fill: #A0A09B;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
+}
+
+.c20 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 16px;
+  height: 16px;
+  fill: #A0A09B;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
+}
+
+.c21 {
+  -webkit-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  transform: rotate(0deg);
+}
+
+.c8 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #6E6E69;
+  margin: 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.c14 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.c18 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: inherit;
+  margin: 0;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c6 {
+  display: inline-block;
+  width: 100%;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.c16 {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  overflow: visible;
+  text-transform: none;
+  position: relative;
+  box-sizing: border-box;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  padding: 0;
+  background-color: transparent;
+  color: #A0A09B;
+  border: none;
+  border-radius: 0;
+  cursor: not-allowed;
+}
+
+.c16,
+.c16[type='button'],
+.c16[type='reset'],
+.c16[type='submit'] {
+  -webkit-appearance: button;
+}
+
+.c16::-moz-focus-inner,
+.c16[type='button']::-moz-focus-inner,
+.c16[type='reset']::-moz-focus-inner,
+.c16[type='submit']::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+.c16:-moz-focusring,
+.c16[type='button']:-moz-focusring,
+.c16[type='reset']:-moz-focusring,
+.c16[type='submit']:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+.c7 {
+  width: inherit;
+}
+
+.c9 {
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.c13 {
+  overflow: hidden;
+  padding-top: 4px !important;
+  padding-bottom: 4px;
+}
+
+.c17 {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+}
+
+.c17:focus {
+  outline: none;
+}
+
+.c15 {
+  padding-top: 0 !important;
+  padding-bottom: 0;
+  -webkit-align-self: stretch;
+  -ms-flex-item-align: stretch;
+  align-self: stretch;
+}
+
+.c11 {
+  display: none;
+}
+
+.c2 {
+  background: #FFFFFF;
+  margin-right: 0;
+  margin-left: 0;
+  padding-right: 4px;
+  padding-left: 2px;
+  border-left: 2px solid transparent;
+  border-bottom: 1px solid #EBEBE8;
+}
+
+.c2 > *:first-child {
+  padding-left: 0;
+}
+
+.c2 > *:nth-last-child(2) {
+  padding-right: 0;
+}
+
+.c12 {
+  background: #FFFFFF;
+  margin-right: 0;
+  margin-left: 0;
+  padding-right: 4px;
+  padding-left: 2px;
+  border-left: 2px solid transparent;
+  border-bottom: 1px solid #EBEBE8;
+}
+
+.c12:hover {
+  background: #F5F5F5;
+}
+
+.c12 > *:first-child {
+  padding-left: 0;
+}
+
+.c12 > *:nth-last-child(2) {
+  padding-right: 0;
+}
+
+.c3 {
+  border-bottom: 1px solid #282823;
+  z-index: 1;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0px;
+}
+
+.c5 {
+  overflow: hidden;
+  padding-top: 4px !important;
+  padding-bottom: 4px;
+}
+
+.c0 {
+  position: relative;
+}
+
+@media (min-width:760px) {
+  .c1 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+}
+
+@media (min-width:976px) {
+  .c1 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+}
+
+@media (min-width:1280px) {
+  .c1 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+}
+
+@media not all and (max-width:975px) {
+
+}
+
+@media not all and (min-width:976px) {
+
+}
+
+<div
+  className="c0"
+  role="table"
+>
+  <div
+    className="c1 c2 c3"
+    role="row"
+  >
+    <div
+      className="c4 c5"
+      role="columnheader"
+    >
+      <div
+        className="c6 c7"
+      >
+        <span
+          className="c8 c9"
+        >
+          Header 1
+        </span>
+      </div>
+    </div>
+    <div
+      className="c4 c5"
+      role="columnheader"
+    >
+      <div
+        className="c6 c7"
+      >
+        <span
+          className="c8 c9"
+        >
+          Header 2
+        </span>
+      </div>
+    </div>
+    <div
+      className="c4 c5"
+      role="columnheader"
+    >
+      <div
+        className="c6 c7"
+      >
+        <span
+          className="c8 c9"
+        >
+          Header 3
+        </span>
+      </div>
+    </div>
+    <div
+      className="c10 c5 c11"
+      role="columnheader"
+    >
+      <div
+        className="c6 c7"
+      >
+        <span
+          className="c8 c9"
+        />
+      </div>
+    </div>
+  </div>
+  <div
+    className="c1 c12"
+    role="row"
+  >
+    <div
+      className="c4 c13"
+      role="cell"
+    >
+      <div
+        className="c6 c7"
+      >
+        <span
+          className="c14 c9"
+        >
+          Cell 1-1
+        </span>
+      </div>
+    </div>
+    <div
+      className="c4 c13"
+      role="cell"
+    >
+      <div
+        className="c6 c7"
+      >
+        <span
+          className="c14 c9"
+        >
+          Cell 1-2
+        </span>
+      </div>
+    </div>
+    <div
+      className="c4 c13"
+      role="cell"
+    >
+      <div
+        className="c6 c7"
+      >
+        <span
+          className="c14 c9"
+        >
+          Cell 1-3
+        </span>
+      </div>
+    </div>
+    <div
+      className="c10 c13 c15 c11"
+      role="cell"
+    >
+      <button
+        aria-expanded={false}
+        className="NormalizedButton__Button-ey7f5x-0 c16 c17"
+        disabled={true}
+        onClick={[Function]}
+        type="button"
+      >
+        <span
+          className="c18"
+        >
+          <svg
+            aria-hidden="true"
+            className="c19"
+            focusable="false"
+            preserveAspectRatio="xMidYMid meet"
+            role="presentation"
+            viewBox="0 0 24 24"
+          >
+            <polygon
+              points="19.969 4 24 8.027 12 20 0 8.027 4.031 4 12 11.952"
+            />
+          </svg>
+        </span>
+      </button>
+      <button
+        aria-expanded={false}
+        className="NormalizedButton__Button-ey7f5x-0 c16 c17"
+        disabled={true}
+        onClick={[Function]}
+        type="button"
+      >
+        <span
+          className="c18"
+        >
+          <svg
+            aria-hidden="true"
+            className="c20 c21"
+            direction="down"
+            focusable="false"
+            preserveAspectRatio="xMidYMid meet"
+            role="presentation"
+            viewBox="0 0 16 16"
+          >
+            <polygon
+              points="14.620 3.580, 16.000 5.020, 8.000 12.730, 0.000 5.030, 1.400 3.580, 8.000 9.96"
+            />
+          </svg>
+        </span>
+      </button>
+    </div>
+  </div>
+  <div
+    className="c1 c12"
+    role="row"
+  >
+    <div
+      className="c4 c13"
+      role="cell"
+    >
+      <div
+        className="c6 c7"
+      >
+        <span
+          className="c14 c9"
+        >
+          Cell 2-1
+        </span>
+      </div>
+    </div>
+    <div
+      className="c4 c13"
+      role="cell"
+    >
+      <div
+        className="c6 c7"
+      >
+        <span
+          className="c14 c9"
+        >
+          Cell 2-2
+        </span>
+      </div>
+    </div>
+    <div
+      className="c4 c13"
+      role="cell"
+    >
+      <div
+        className="c6 c7"
+      >
+        <span
+          className="c14 c9"
+        >
+          Cell 2-3
+        </span>
+      </div>
+    </div>
+    <div
+      className="c10 c13 c15 c11"
+      role="cell"
+    >
+      <button
+        aria-expanded={false}
+        className="NormalizedButton__Button-ey7f5x-0 c16 c17"
+        disabled={true}
+        onClick={[Function]}
+        type="button"
+      >
+        <span
+          className="c18"
+        >
+          <svg
+            aria-hidden="true"
+            className="c19"
+            focusable="false"
+            preserveAspectRatio="xMidYMid meet"
+            role="presentation"
+            viewBox="0 0 24 24"
+          >
+            <polygon
+              points="19.969 4 24 8.027 12 20 0 8.027 4.031 4 12 11.952"
+            />
+          </svg>
+        </span>
+      </button>
+      <button
+        aria-expanded={false}
+        className="NormalizedButton__Button-ey7f5x-0 c16 c17"
+        disabled={true}
+        onClick={[Function]}
+        type="button"
+      >
+        <span
+          className="c18"
+        >
+          <svg
+            aria-hidden="true"
+            className="c20 c21"
+            direction="down"
+            focusable="false"
+            preserveAspectRatio="xMidYMid meet"
+            role="presentation"
+            viewBox="0 0 16 16"
+          >
+            <polygon
+              points="14.620 3.580, 16.000 5.020, 8.000 12.730, 0.000 5.030, 1.400 3.580, 8.000 9.96"
+            />
+          </svg>
+        </span>
+      </button>
+    </div>
+  </div>
+  <div
+    className="c1 c12"
+    role="row"
+  >
+    <div
+      className="c4 c13"
+      role="cell"
+    >
+      <div
+        className="c6 c7"
+      >
+        <span
+          className="c14 c9"
+        >
+          Cell 3-1
+        </span>
+      </div>
+    </div>
+    <div
+      className="c4 c13"
+      role="cell"
+    >
+      <div
+        className="c6 c7"
+      >
+        <span
+          className="c14 c9"
+        >
+          Cell 3-2
+        </span>
+      </div>
+    </div>
+    <div
+      className="c4 c13"
+      role="cell"
+    >
+      <div
+        className="c6 c7"
+      >
+        <span
+          className="c14 c9"
+        >
+          Cell 3-3
+        </span>
+      </div>
+    </div>
+    <div
+      className="c10 c13 c15 c11"
+      role="cell"
+    >
+      <button
+        aria-expanded={false}
+        className="NormalizedButton__Button-ey7f5x-0 c16 c17"
+        disabled={true}
+        onClick={[Function]}
+        type="button"
+      >
+        <span
+          className="c18"
+        >
+          <svg
+            aria-hidden="true"
+            className="c19"
+            focusable="false"
+            preserveAspectRatio="xMidYMid meet"
+            role="presentation"
+            viewBox="0 0 24 24"
+          >
+            <polygon
+              points="19.969 4 24 8.027 12 20 0 8.027 4.031 4 12 11.952"
+            />
+          </svg>
+        </span>
+      </button>
+      <button
+        aria-expanded={false}
+        className="NormalizedButton__Button-ey7f5x-0 c16 c17"
+        disabled={true}
+        onClick={[Function]}
+        type="button"
+      >
+        <span
+          className="c18"
+        >
+          <svg
+            aria-hidden="true"
+            className="c20 c21"
+            direction="down"
+            focusable="false"
+            preserveAspectRatio="xMidYMid meet"
+            role="presentation"
+            viewBox="0 0 16 16"
+          >
+            <polygon
+              points="14.620 3.580, 16.000 5.020, 8.000 12.730, 0.000 5.030, 1.400 3.580, 8.000 9.96"
+            />
+          </svg>
+        </span>
+      </button>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Molecules / FlexTable / With different table props With Actions Column 1`] = `
+.c1 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-left: -4px;
+  margin-right: -4px;
+}
+
+.c1 > * {
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+.c1 > *:not(:first-child) {
+  padding-top: 0;
+}
+
+.c4 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+
+.c10 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  -webkit-flex: 0 20px;
+  -ms-flex: 0 20px;
+  flex: 0 20px;
+}
+
+.c17 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 20px;
+  height: 20px;
+  fill: #282823;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
+}
+
+.c21 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 8px;
+  height: 8px;
+  fill: #A0A09B;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
+}
+
+.c22 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 16px;
+  height: 16px;
+  fill: #A0A09B;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
+}
+
+.c23 {
+  -webkit-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  transform: rotate(0deg);
+}
+
+.c8 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #6E6E69;
+  margin: 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.c14 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.c16 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: inherit;
+  margin: 0;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c6 {
+  display: inline-block;
+  width: 100%;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.c15 {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  overflow: visible;
+  text-transform: none;
+  position: relative;
+  box-sizing: border-box;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  padding: 0;
+  background-color: transparent;
+  color: #282823;
+  border: none;
+  border-radius: 0;
+  cursor: pointer;
+}
+
+.c15,
+.c15[type='button'],
+.c15[type='reset'],
+.c15[type='submit'] {
+  -webkit-appearance: button;
+}
+
+.c15::-moz-focus-inner,
+.c15[type='button']::-moz-focus-inner,
+.c15[type='reset']::-moz-focus-inner,
+.c15[type='submit']::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+.c15:-moz-focusring,
+.c15[type='button']:-moz-focusring,
+.c15[type='reset']:-moz-focusring,
+.c15[type='submit']:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+.c19 {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  overflow: visible;
+  text-transform: none;
+  position: relative;
+  box-sizing: border-box;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  padding: 0;
+  background-color: transparent;
+  color: #A0A09B;
+  border: none;
+  border-radius: 0;
+  cursor: not-allowed;
+}
+
+.c19,
+.c19[type='button'],
+.c19[type='reset'],
+.c19[type='submit'] {
+  -webkit-appearance: button;
+}
+
+.c19::-moz-focus-inner,
+.c19[type='button']::-moz-focus-inner,
+.c19[type='reset']::-moz-focus-inner,
+.c19[type='submit']::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+.c19:-moz-focusring,
+.c19[type='button']:-moz-focusring,
+.c19[type='reset']:-moz-focusring,
+.c19[type='submit']:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+.c7 {
+  width: inherit;
+}
+
+.c9 {
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.c13 {
+  overflow: hidden;
+  padding-top: 4px !important;
+  padding-bottom: 4px;
+}
+
+.c20 {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+}
+
+.c20:focus {
+  outline: none;
+}
+
+.c18 {
+  padding-top: 0 !important;
+  padding-bottom: 0;
+  -webkit-align-self: stretch;
+  -ms-flex-item-align: stretch;
+  align-self: stretch;
+}
+
+.c11 {
+  display: none;
+}
+
+.c2 {
+  background: #FFFFFF;
+  margin-right: 0;
+  margin-left: 0;
+  padding-right: 4px;
+  padding-left: 2px;
+  border-left: 2px solid transparent;
+  border-bottom: 1px solid #EBEBE8;
+}
+
+.c2 > *:first-child {
+  padding-left: 0;
+}
+
+.c2 > *:nth-last-child(2) {
+  padding-right: 0;
+}
+
+.c12 {
+  background: #FFFFFF;
+  margin-right: 0;
+  margin-left: 0;
+  padding-right: 4px;
+  padding-left: 2px;
+  border-left: 2px solid transparent;
+  border-bottom: 1px solid #EBEBE8;
+}
+
+.c12:hover {
+  background: #F5F5F5;
+}
+
+.c12 > *:first-child {
+  padding-left: 0;
+}
+
+.c12 > *:nth-last-child(2) {
+  padding-right: 0;
+}
+
+.c3 {
+  border-bottom: 1px solid #282823;
+  z-index: 1;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0px;
+}
+
+.c5 {
+  overflow: hidden;
+  padding-top: 4px !important;
+  padding-bottom: 4px;
+}
+
+.c0 {
+  position: relative;
+}
+
+@media (min-width:760px) {
+  .c1 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+}
+
+@media (min-width:976px) {
+  .c1 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+}
+
+@media (min-width:1280px) {
+  .c1 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+}
+
+@media not all and (max-width:975px) {
+
+}
+
+@media not all and (min-width:976px) {
+
+}
+
+<div
+  className="c0"
+  role="table"
+>
+  <div
+    className="c1 c2 c3"
+    role="row"
+  >
+    <div
+      className="c4 c5"
+      role="columnheader"
+    >
+      <div
+        className="c6 c7"
+      >
+        <span
+          className="c8 c9"
+        >
+          Header 1
+        </span>
+      </div>
+    </div>
+    <div
+      className="c4 c5"
+      role="columnheader"
+    >
+      <div
+        className="c6 c7"
+      >
+        <span
+          className="c8 c9"
+        >
+          Header 2
+        </span>
+      </div>
+    </div>
+    <div
+      className="c4 c5"
+      role="columnheader"
+    >
+      <div
+        className="c6 c7"
+      >
+        <span
+          className="c8 c9"
+        >
+          Header 3
+        </span>
+      </div>
+    </div>
+    <div
+      className="c10 c5"
+      role="columnheader"
+    >
+      <div
+        className="c6 c7"
+      >
+        <span
+          className="c8 c9"
+        />
+      </div>
+    </div>
+    <div
+      className="c10 c5 c11"
+      role="columnheader"
+    >
+      <div
+        className="c6 c7"
+      >
+        <span
+          className="c8 c9"
+        />
+      </div>
+    </div>
+  </div>
+  <div
+    className="c1 c12"
+    role="row"
+  >
+    <div
+      className="c4 c13"
+      role="cell"
+    >
+      <div
+        className="c6 c7"
+      >
+        <span
+          className="c14 c9"
+        >
+          Cell 1-1
+        </span>
+      </div>
+    </div>
+    <div
+      className="c4 c13"
+      role="cell"
+    >
+      <div
+        className="c6 c7"
+      >
+        <span
+          className="c14 c9"
+        >
+          Cell 1-2
+        </span>
+      </div>
+    </div>
+    <div
+      className="c4 c13"
+      role="cell"
+    >
+      <div
+        className="c6 c7"
+      >
+        <span
+          className="c14 c9"
+        >
+          Cell 1-3
+        </span>
+      </div>
+    </div>
+    <div
+      className="c10 c13"
+      role="cell"
+    >
+      <button
+        className="NormalizedButton__Button-ey7f5x-0 c15"
+        onClick={[Function]}
+        type="button"
+      >
+        <span
+          className="c16"
+        >
+          <svg
+            aria-hidden="true"
+            className="c17"
+            focusable="false"
+            preserveAspectRatio="xMidYMid meet"
+            role="presentation"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M21 9a3 3 0 1 1 0 6 3 3 0 0 1 0-6zM3 9a3 3 0 1 1 0 6 3 3 0 0 1 0-6zm9 0a3 3 0 1 1 0 6 3 3 0 0 1 0-6z"
+              fillRule="evenodd"
+            />
+          </svg>
+        </span>
+      </button>
+    </div>
+    <div
+      className="c10 c13 c18 c11"
+      role="cell"
+    >
+      <button
+        aria-expanded={false}
+        className="NormalizedButton__Button-ey7f5x-0 c19 c20"
+        disabled={true}
+        onClick={[Function]}
+        type="button"
+      >
+        <span
+          className="c16"
+        >
+          <svg
+            aria-hidden="true"
+            className="c21"
+            focusable="false"
+            preserveAspectRatio="xMidYMid meet"
+            role="presentation"
+            viewBox="0 0 24 24"
+          >
+            <polygon
+              points="19.969 4 24 8.027 12 20 0 8.027 4.031 4 12 11.952"
+            />
+          </svg>
+        </span>
+      </button>
+      <button
+        aria-expanded={false}
+        className="NormalizedButton__Button-ey7f5x-0 c19 c20"
+        disabled={true}
+        onClick={[Function]}
+        type="button"
+      >
+        <span
+          className="c16"
+        >
+          <svg
+            aria-hidden="true"
+            className="c22 c23"
+            direction="down"
+            focusable="false"
+            preserveAspectRatio="xMidYMid meet"
+            role="presentation"
+            viewBox="0 0 16 16"
+          >
+            <polygon
+              points="14.620 3.580, 16.000 5.020, 8.000 12.730, 0.000 5.030, 1.400 3.580, 8.000 9.96"
+            />
+          </svg>
+        </span>
+      </button>
+    </div>
+  </div>
+  <div
+    className="c1 c12"
+    role="row"
+  >
+    <div
+      className="c4 c13"
+      role="cell"
+    >
+      <div
+        className="c6 c7"
+      >
+        <span
+          className="c14 c9"
+        >
+          Cell 2-1
+        </span>
+      </div>
+    </div>
+    <div
+      className="c4 c13"
+      role="cell"
+    >
+      <div
+        className="c6 c7"
+      >
+        <span
+          className="c14 c9"
+        >
+          Cell 2-2
+        </span>
+      </div>
+    </div>
+    <div
+      className="c4 c13"
+      role="cell"
+    >
+      <div
+        className="c6 c7"
+      >
+        <span
+          className="c14 c9"
+        >
+          Cell 2-3
+        </span>
+      </div>
+    </div>
+    <div
+      className="c10 c13"
+      role="cell"
+    >
+      <button
+        className="NormalizedButton__Button-ey7f5x-0 c15"
+        onClick={[Function]}
+        type="button"
+      >
+        <span
+          className="c16"
+        >
+          <svg
+            aria-hidden="true"
+            className="c17"
+            focusable="false"
+            preserveAspectRatio="xMidYMid meet"
+            role="presentation"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M21 9a3 3 0 1 1 0 6 3 3 0 0 1 0-6zM3 9a3 3 0 1 1 0 6 3 3 0 0 1 0-6zm9 0a3 3 0 1 1 0 6 3 3 0 0 1 0-6z"
+              fillRule="evenodd"
+            />
+          </svg>
+        </span>
+      </button>
+    </div>
+    <div
+      className="c10 c13 c18 c11"
+      role="cell"
+    >
+      <button
+        aria-expanded={false}
+        className="NormalizedButton__Button-ey7f5x-0 c19 c20"
+        disabled={true}
+        onClick={[Function]}
+        type="button"
+      >
+        <span
+          className="c16"
+        >
+          <svg
+            aria-hidden="true"
+            className="c21"
+            focusable="false"
+            preserveAspectRatio="xMidYMid meet"
+            role="presentation"
+            viewBox="0 0 24 24"
+          >
+            <polygon
+              points="19.969 4 24 8.027 12 20 0 8.027 4.031 4 12 11.952"
+            />
+          </svg>
+        </span>
+      </button>
+      <button
+        aria-expanded={false}
+        className="NormalizedButton__Button-ey7f5x-0 c19 c20"
+        disabled={true}
+        onClick={[Function]}
+        type="button"
+      >
+        <span
+          className="c16"
+        >
+          <svg
+            aria-hidden="true"
+            className="c22 c23"
+            direction="down"
+            focusable="false"
+            preserveAspectRatio="xMidYMid meet"
+            role="presentation"
+            viewBox="0 0 16 16"
+          >
+            <polygon
+              points="14.620 3.580, 16.000 5.020, 8.000 12.730, 0.000 5.030, 1.400 3.580, 8.000 9.96"
+            />
+          </svg>
+        </span>
+      </button>
+    </div>
+  </div>
+  <div
+    className="c1 c12"
+    role="row"
+  >
+    <div
+      className="c4 c13"
+      role="cell"
+    >
+      <div
+        className="c6 c7"
+      >
+        <span
+          className="c14 c9"
+        >
+          Cell 3-1
+        </span>
+      </div>
+    </div>
+    <div
+      className="c4 c13"
+      role="cell"
+    >
+      <div
+        className="c6 c7"
+      >
+        <span
+          className="c14 c9"
+        >
+          Cell 3-2
+        </span>
+      </div>
+    </div>
+    <div
+      className="c4 c13"
+      role="cell"
+    >
+      <div
+        className="c6 c7"
+      >
+        <span
+          className="c14 c9"
+        >
+          Cell 3-3
+        </span>
+      </div>
+    </div>
+    <div
+      className="c10 c13"
+      role="cell"
+    >
+      <button
+        className="NormalizedButton__Button-ey7f5x-0 c15"
+        onClick={[Function]}
+        type="button"
+      >
+        <span
+          className="c16"
+        >
+          <svg
+            aria-hidden="true"
+            className="c17"
+            focusable="false"
+            preserveAspectRatio="xMidYMid meet"
+            role="presentation"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M21 9a3 3 0 1 1 0 6 3 3 0 0 1 0-6zM3 9a3 3 0 1 1 0 6 3 3 0 0 1 0-6zm9 0a3 3 0 1 1 0 6 3 3 0 0 1 0-6z"
+              fillRule="evenodd"
+            />
+          </svg>
+        </span>
+      </button>
+    </div>
+    <div
+      className="c10 c13 c18 c11"
+      role="cell"
+    >
+      <button
+        aria-expanded={false}
+        className="NormalizedButton__Button-ey7f5x-0 c19 c20"
+        disabled={true}
+        onClick={[Function]}
+        type="button"
+      >
+        <span
+          className="c16"
+        >
+          <svg
+            aria-hidden="true"
+            className="c21"
+            focusable="false"
+            preserveAspectRatio="xMidYMid meet"
+            role="presentation"
+            viewBox="0 0 24 24"
+          >
+            <polygon
+              points="19.969 4 24 8.027 12 20 0 8.027 4.031 4 12 11.952"
+            />
+          </svg>
+        </span>
+      </button>
+      <button
+        aria-expanded={false}
+        className="NormalizedButton__Button-ey7f5x-0 c19 c20"
+        disabled={true}
+        onClick={[Function]}
+        type="button"
+      >
+        <span
+          className="c16"
+        >
+          <svg
+            aria-hidden="true"
+            className="c22 c23"
+            direction="down"
+            focusable="false"
+            preserveAspectRatio="xMidYMid meet"
+            role="presentation"
+            viewBox="0 0 16 16"
+          >
+            <polygon
+              points="14.620 3.580, 16.000 5.020, 8.000 12.730, 0.000 5.030, 1.400 3.580, 8.000 9.96"
+            />
+          </svg>
+        </span>
+      </button>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Molecules / FlexTable / With different table props With Custom Title 1`] = `
+.c4 {
+  height: 12px;
+  box-sizing: border-box;
+  display: block;
+  width: 16px;
+  overflow: hidden;
+}
+
+.c2 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: baseline;
+  -webkit-box-align: baseline;
+  -ms-flex-align: baseline;
+  align-items: baseline;
+  margin-left: -2px;
+  margin-right: -2px;
+}
+
+.c2 > * {
+  padding-left: 2px;
+  padding-right: 2px;
+}
+
+.c2 > *:not(:first-child) {
+  padding-top: 0;
+}
+
+.c3 {
+  box-sizing: border-box;
+}
+
+.c7 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-left: -4px;
+  margin-right: -4px;
+}
+
+.c7 > * {
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+.c7 > *:not(:first-child) {
+  padding-top: 0;
+}
+
+.c10 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+
+.c16 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  -webkit-flex: 0 20px;
+  -ms-flex: 0 20px;
+  flex: 0 20px;
+}
+
+.c25 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 8px;
+  height: 8px;
+  fill: #A0A09B;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
+}
+
+.c26 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 16px;
+  height: 16px;
+  fill: #A0A09B;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
+}
+
+.c27 {
+  -webkit-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  transform: rotate(0deg);
+}
+
+.c5 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c6 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #6E6E69;
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c14 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #6E6E69;
+  margin: 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.c20 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.c24 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: inherit;
+  margin: 0;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c12 {
+  display: inline-block;
+  width: 100%;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.c22 {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  overflow: visible;
+  text-transform: none;
+  position: relative;
+  box-sizing: border-box;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  padding: 0;
+  background-color: transparent;
+  color: #A0A09B;
+  border: none;
+  border-radius: 0;
+  cursor: not-allowed;
+}
+
+.c22,
+.c22[type='button'],
+.c22[type='reset'],
+.c22[type='submit'] {
+  -webkit-appearance: button;
+}
+
+.c22::-moz-focus-inner,
+.c22[type='button']::-moz-focus-inner,
+.c22[type='reset']::-moz-focus-inner,
+.c22[type='submit']::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+.c22:-moz-focusring,
+.c22[type='button']:-moz-focusring,
+.c22[type='reset']:-moz-focusring,
+.c22[type='submit']:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+.c13 {
+  width: inherit;
+}
+
+.c15 {
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.c19 {
+  overflow: hidden;
+  padding-top: 4px !important;
+  padding-bottom: 4px;
+}
+
+.c23 {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+}
+
+.c23:focus {
+  outline: none;
+}
+
+.c21 {
+  padding-top: 0 !important;
+  padding-bottom: 0;
+  -webkit-align-self: stretch;
+  -ms-flex-item-align: stretch;
+  align-self: stretch;
+}
+
+.c17 {
+  display: none;
+}
+
+.c8 {
+  background: #FFFFFF;
+  margin-right: 0;
+  margin-left: 0;
+  padding-right: 4px;
+  padding-left: 2px;
+  border-left: 2px solid transparent;
+  border-bottom: 1px solid #EBEBE8;
+}
+
+.c8 > *:first-child {
+  padding-left: 0;
+}
+
+.c8 > *:nth-last-child(2) {
+  padding-right: 0;
+}
+
+.c18 {
+  background: #FFFFFF;
+  margin-right: 0;
+  margin-left: 0;
+  padding-right: 4px;
+  padding-left: 2px;
+  border-left: 2px solid transparent;
+  border-bottom: 1px solid #EBEBE8;
+}
+
+.c18:hover {
+  background: #F5F5F5;
+}
+
+.c18 > *:first-child {
+  padding-left: 0;
+}
+
+.c18 > *:nth-last-child(2) {
+  padding-right: 0;
+}
+
+.c9 {
+  border-bottom: 1px solid #282823;
+  z-index: 1;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0px;
+}
+
+.c11 {
+  overflow: hidden;
+  padding-top: 4px !important;
+  padding-bottom: 4px;
+}
+
+.c0 {
+  position: relative;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@media (min-width:760px) {
+  .c7 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+}
+
+@media (min-width:976px) {
+  .c7 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+}
+
+@media (min-width:1280px) {
+  .c7 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+}
+
+@media not all and (max-width:975px) {
+
+}
+
+@media not all and (min-width:976px) {
+
+}
+
+<div
+  aria-labelledby="custom-title-title"
+  className="c0"
+  id="custom-title"
+  role="table"
+>
+  <div
+    className="c1"
+    id="custom-title-title"
+  >
+    <div
+      className="c2"
+    >
+      <div
+        className="c3"
+      >
+        <svg
+          className="c4"
+          focusable="false"
+          role="img"
+          viewBox="0 0 640 480"
+        >
+          <g
+            transform="translate(50.082) scale(.9375)"
+          >
+            <g
+              fillRule="evenodd"
+              strokeWidth="1pt"
+            >
+              <path
+                d="M-121.103.302h256V205.1h-256zM-121.103 307.178h256v204.8h-256z"
+                fill="#006aa7"
+              />
+              <path
+                d="M-121.103 204.984h256v102.4h-256z"
+                fill="#fecc00"
+              />
+              <path
+                d="M133.843.01h102.4v511.997h-102.4z"
+                fill="#fecc00"
+              />
+              <path
+                d="M232.995 205.013h460.798v102.4H232.995z"
+                fill="#fecc00"
+              />
+              <path
+                d="M236.155 307.208h460.797v204.799H236.155zM236.155.302h460.797V205.1H236.155z"
+                fill="#006aa7"
+              />
+            </g>
+          </g>
+          <title>
+            Sweden
+          </title>
+        </svg>
+      </div>
+      <div
+        className="c3"
+      >
+        <span
+          className="c5"
+        >
+          Ericsson Corporation
+        </span>
+      </div>
+      <div
+        className="c3"
+      >
+        <span
+          className="c6"
+        >
+          (
+          ERICSSON
+          )
+        </span>
+      </div>
+    </div>
+  </div>
+  <div
+    className="c7 c8 c9"
+    role="row"
+  >
+    <div
+      className="c10 c11"
+      role="columnheader"
+    >
+      <div
+        className="c12 c13"
+      >
+        <span
+          className="c14 c15"
+        >
+          Header 1
+        </span>
+      </div>
+    </div>
+    <div
+      className="c10 c11"
+      role="columnheader"
+    >
+      <div
+        className="c12 c13"
+      >
+        <span
+          className="c14 c15"
+        >
+          Header 2
+        </span>
+      </div>
+    </div>
+    <div
+      className="c10 c11"
+      role="columnheader"
+    >
+      <div
+        className="c12 c13"
+      >
+        <span
+          className="c14 c15"
+        >
+          Header 3
+        </span>
+      </div>
+    </div>
+    <div
+      className="c16 c11 c17"
+      role="columnheader"
+    >
+      <div
+        className="c12 c13"
+      >
+        <span
+          className="c14 c15"
+        />
+      </div>
+    </div>
+  </div>
+  <div
+    className="c7 c18"
+    role="row"
+  >
+    <div
+      className="c10 c19"
+      role="cell"
+    >
+      <div
+        className="c12 c13"
+      >
+        <span
+          className="c20 c15"
+        >
+          Cell 1-1
+        </span>
+      </div>
+    </div>
+    <div
+      className="c10 c19"
+      role="cell"
+    >
+      <div
+        className="c12 c13"
+      >
+        <span
+          className="c20 c15"
+        >
+          Cell 1-2
+        </span>
+      </div>
+    </div>
+    <div
+      className="c10 c19"
+      role="cell"
+    >
+      <div
+        className="c12 c13"
+      >
+        <span
+          className="c20 c15"
+        >
+          Cell 1-3
+        </span>
+      </div>
+    </div>
+    <div
+      className="c16 c19 c21 c17"
+      role="cell"
+    >
+      <button
+        aria-expanded={false}
+        className="NormalizedButton__Button-ey7f5x-0 c22 c23"
+        disabled={true}
+        onClick={[Function]}
+        type="button"
+      >
+        <span
+          className="c24"
+        >
+          <svg
+            aria-hidden="true"
+            className="c25"
+            focusable="false"
+            preserveAspectRatio="xMidYMid meet"
+            role="presentation"
+            viewBox="0 0 24 24"
+          >
+            <polygon
+              points="19.969 4 24 8.027 12 20 0 8.027 4.031 4 12 11.952"
+            />
+          </svg>
+        </span>
+      </button>
+      <button
+        aria-expanded={false}
+        className="NormalizedButton__Button-ey7f5x-0 c22 c23"
+        disabled={true}
+        onClick={[Function]}
+        type="button"
+      >
+        <span
+          className="c24"
+        >
+          <svg
+            aria-hidden="true"
+            className="c26 c27"
+            direction="down"
+            focusable="false"
+            preserveAspectRatio="xMidYMid meet"
+            role="presentation"
+            viewBox="0 0 16 16"
+          >
+            <polygon
+              points="14.620 3.580, 16.000 5.020, 8.000 12.730, 0.000 5.030, 1.400 3.580, 8.000 9.96"
+            />
+          </svg>
+        </span>
+      </button>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Molecules / FlexTable / With different table props With Footer 1`] = `
+.c1 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-left: -4px;
+  margin-right: -4px;
+}
+
+.c1 > * {
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+.c1 > *:not(:first-child) {
+  padding-top: 0;
+}
+
+.c4 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+
+.c10 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  -webkit-flex: 0 20px;
+  -ms-flex: 0 20px;
+  flex: 0 20px;
+}
+
+.c19 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 8px;
+  height: 8px;
+  fill: #A0A09B;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
+}
+
+.c20 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 16px;
+  height: 16px;
+  fill: #A0A09B;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
+}
+
+.c21 {
+  -webkit-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  transform: rotate(0deg);
+}
+
+.c8 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #6E6E69;
+  margin: 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.c14 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.c18 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: inherit;
+  margin: 0;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c24 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.c6 {
+  display: inline-block;
+  width: 100%;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.c16 {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  overflow: visible;
+  text-transform: none;
+  position: relative;
+  box-sizing: border-box;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  padding: 0;
+  background-color: transparent;
+  color: #A0A09B;
+  border: none;
+  border-radius: 0;
+  cursor: not-allowed;
+}
+
+.c16,
+.c16[type='button'],
+.c16[type='reset'],
+.c16[type='submit'] {
+  -webkit-appearance: button;
+}
+
+.c16::-moz-focus-inner,
+.c16[type='button']::-moz-focus-inner,
+.c16[type='reset']::-moz-focus-inner,
+.c16[type='submit']::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+.c16:-moz-focusring,
+.c16[type='button']:-moz-focusring,
+.c16[type='reset']:-moz-focusring,
+.c16[type='submit']:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+.c7 {
+  width: inherit;
+}
+
+.c9 {
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.c13 {
+  overflow: hidden;
+  padding-top: 4px !important;
+  padding-bottom: 4px;
+}
+
+.c17 {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+}
+
+.c17:focus {
+  outline: none;
+}
+
+.c15 {
+  padding-top: 0 !important;
+  padding-bottom: 0;
+  -webkit-align-self: stretch;
+  -ms-flex-item-align: stretch;
+  align-self: stretch;
+}
+
+.c11 {
+  display: none;
+}
+
+.c2 {
+  background: #FFFFFF;
+  margin-right: 0;
+  margin-left: 0;
+  padding-right: 4px;
+  padding-left: 2px;
+  border-left: 2px solid transparent;
+  border-bottom: 1px solid #EBEBE8;
+}
+
+.c2 > *:first-child {
+  padding-left: 0;
+}
+
+.c2 > *:nth-last-child(2) {
+  padding-right: 0;
+}
+
+.c12 {
+  background: #FFFFFF;
+  margin-right: 0;
+  margin-left: 0;
+  padding-right: 4px;
+  padding-left: 2px;
+  border-left: 2px solid transparent;
+  border-bottom: 1px solid #EBEBE8;
+}
+
+.c12:hover {
+  background: #F5F5F5;
+}
+
+.c12 > *:first-child {
+  padding-left: 0;
+}
+
+.c12 > *:nth-last-child(2) {
+  padding-right: 0;
+}
+
+.c3 {
+  border-bottom: 1px solid #282823;
+  z-index: 1;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0px;
+}
+
+.c22 {
+  border-top: 1px solid #282823;
+  border-bottom: 0;
+}
+
+.c5 {
+  overflow: hidden;
+  padding-top: 4px !important;
+  padding-bottom: 4px;
+}
+
+.c23 {
+  overflow: hidden;
+  padding-top: 4px !important;
+  padding-bottom: 4px;
+}
+
+.c0 {
+  position: relative;
+}
+
+@media (min-width:760px) {
+  .c1 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+}
+
+@media (min-width:976px) {
+  .c1 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+}
+
+@media (min-width:1280px) {
+  .c1 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+}
+
+@media not all and (max-width:975px) {
+
+}
+
+@media not all and (min-width:976px) {
+
+}
+
+<div
+  className="c0"
+  role="table"
+>
+  <div
+    className="c1 c2 c3"
+    role="row"
+  >
+    <div
+      className="c4 c5"
+      role="columnheader"
+    >
+      <div
+        className="c6 c7"
+      >
+        <span
+          className="c8 c9"
+        >
+          Header 1
+        </span>
+      </div>
+    </div>
+    <div
+      className="c4 c5"
+      role="columnheader"
+    >
+      <div
+        className="c6 c7"
+      >
+        <span
+          className="c8 c9"
+        >
+          Header 2
+        </span>
+      </div>
+    </div>
+    <div
+      className="c4 c5"
+      role="columnheader"
+    >
+      <div
+        className="c6 c7"
+      >
+        <span
+          className="c8 c9"
+        >
+          Header 3
+        </span>
+      </div>
+    </div>
+    <div
+      className="c10 c5 c11"
+      role="columnheader"
+    >
+      <div
+        className="c6 c7"
+      >
+        <span
+          className="c8 c9"
+        />
+      </div>
+    </div>
+  </div>
+  <div
+    className="c1 c12"
+    role="row"
+  >
+    <div
+      className="c4 c13"
+      role="cell"
+    >
+      <div
+        className="c6 c7"
+      >
+        <span
+          className="c14 c9"
+        >
+          Cell 1-1
+        </span>
+      </div>
+    </div>
+    <div
+      className="c4 c13"
+      role="cell"
+    >
+      <div
+        className="c6 c7"
+      >
+        <span
+          className="c14 c9"
+        >
+          Cell 1-2
+        </span>
+      </div>
+    </div>
+    <div
+      className="c4 c13"
+      role="cell"
+    >
+      <div
+        className="c6 c7"
+      >
+        <span
+          className="c14 c9"
+        >
+          Cell 1-3
+        </span>
+      </div>
+    </div>
+    <div
+      className="c10 c13 c15 c11"
+      role="cell"
+    >
+      <button
+        aria-expanded={false}
+        className="NormalizedButton__Button-ey7f5x-0 c16 c17"
+        disabled={true}
+        onClick={[Function]}
+        type="button"
+      >
+        <span
+          className="c18"
+        >
+          <svg
+            aria-hidden="true"
+            className="c19"
+            focusable="false"
+            preserveAspectRatio="xMidYMid meet"
+            role="presentation"
+            viewBox="0 0 24 24"
+          >
+            <polygon
+              points="19.969 4 24 8.027 12 20 0 8.027 4.031 4 12 11.952"
+            />
+          </svg>
+        </span>
+      </button>
+      <button
+        aria-expanded={false}
+        className="NormalizedButton__Button-ey7f5x-0 c16 c17"
+        disabled={true}
+        onClick={[Function]}
+        type="button"
+      >
+        <span
+          className="c18"
+        >
+          <svg
+            aria-hidden="true"
+            className="c20 c21"
+            direction="down"
+            focusable="false"
+            preserveAspectRatio="xMidYMid meet"
+            role="presentation"
+            viewBox="0 0 16 16"
+          >
+            <polygon
+              points="14.620 3.580, 16.000 5.020, 8.000 12.730, 0.000 5.030, 1.400 3.580, 8.000 9.96"
+            />
+          </svg>
+        </span>
+      </button>
+    </div>
+  </div>
+  <div
+    className="c1 c12"
+    role="row"
+  >
+    <div
+      className="c4 c13"
+      role="cell"
+    >
+      <div
+        className="c6 c7"
+      >
+        <span
+          className="c14 c9"
+        >
+          Cell 2-1
+        </span>
+      </div>
+    </div>
+    <div
+      className="c4 c13"
+      role="cell"
+    >
+      <div
+        className="c6 c7"
+      >
+        <span
+          className="c14 c9"
+        >
+          Cell 2-2
+        </span>
+      </div>
+    </div>
+    <div
+      className="c4 c13"
+      role="cell"
+    >
+      <div
+        className="c6 c7"
+      >
+        <span
+          className="c14 c9"
+        >
+          Cell 2-3
+        </span>
+      </div>
+    </div>
+    <div
+      className="c10 c13 c15 c11"
+      role="cell"
+    >
+      <button
+        aria-expanded={false}
+        className="NormalizedButton__Button-ey7f5x-0 c16 c17"
+        disabled={true}
+        onClick={[Function]}
+        type="button"
+      >
+        <span
+          className="c18"
+        >
+          <svg
+            aria-hidden="true"
+            className="c19"
+            focusable="false"
+            preserveAspectRatio="xMidYMid meet"
+            role="presentation"
+            viewBox="0 0 24 24"
+          >
+            <polygon
+              points="19.969 4 24 8.027 12 20 0 8.027 4.031 4 12 11.952"
+            />
+          </svg>
+        </span>
+      </button>
+      <button
+        aria-expanded={false}
+        className="NormalizedButton__Button-ey7f5x-0 c16 c17"
+        disabled={true}
+        onClick={[Function]}
+        type="button"
+      >
+        <span
+          className="c18"
+        >
+          <svg
+            aria-hidden="true"
+            className="c20 c21"
+            direction="down"
+            focusable="false"
+            preserveAspectRatio="xMidYMid meet"
+            role="presentation"
+            viewBox="0 0 16 16"
+          >
+            <polygon
+              points="14.620 3.580, 16.000 5.020, 8.000 12.730, 0.000 5.030, 1.400 3.580, 8.000 9.96"
+            />
+          </svg>
+        </span>
+      </button>
+    </div>
+  </div>
+  <div
+    className="c1 c12"
+    role="row"
+  >
+    <div
+      className="c4 c13"
+      role="cell"
+    >
+      <div
+        className="c6 c7"
+      >
+        <span
+          className="c14 c9"
+        >
+          Cell 3-1
+        </span>
+      </div>
+    </div>
+    <div
+      className="c4 c13"
+      role="cell"
+    >
+      <div
+        className="c6 c7"
+      >
+        <span
+          className="c14 c9"
+        >
+          Cell 3-2
+        </span>
+      </div>
+    </div>
+    <div
+      className="c4 c13"
+      role="cell"
+    >
+      <div
+        className="c6 c7"
+      >
+        <span
+          className="c14 c9"
+        >
+          Cell 3-3
+        </span>
+      </div>
+    </div>
+    <div
+      className="c10 c13 c15 c11"
+      role="cell"
+    >
+      <button
+        aria-expanded={false}
+        className="NormalizedButton__Button-ey7f5x-0 c16 c17"
+        disabled={true}
+        onClick={[Function]}
+        type="button"
+      >
+        <span
+          className="c18"
+        >
+          <svg
+            aria-hidden="true"
+            className="c19"
+            focusable="false"
+            preserveAspectRatio="xMidYMid meet"
+            role="presentation"
+            viewBox="0 0 24 24"
+          >
+            <polygon
+              points="19.969 4 24 8.027 12 20 0 8.027 4.031 4 12 11.952"
+            />
+          </svg>
+        </span>
+      </button>
+      <button
+        aria-expanded={false}
+        className="NormalizedButton__Button-ey7f5x-0 c16 c17"
+        disabled={true}
+        onClick={[Function]}
+        type="button"
+      >
+        <span
+          className="c18"
+        >
+          <svg
+            aria-hidden="true"
+            className="c20 c21"
+            direction="down"
+            focusable="false"
+            preserveAspectRatio="xMidYMid meet"
+            role="presentation"
+            viewBox="0 0 16 16"
+          >
+            <polygon
+              points="14.620 3.580, 16.000 5.020, 8.000 12.730, 0.000 5.030, 1.400 3.580, 8.000 9.96"
+            />
+          </svg>
+        </span>
+      </button>
+    </div>
+  </div>
+  <div
+    className="c1 c2 c22"
+    role="row"
+  >
+    <div
+      className="c4 c23"
+      role="cell"
+    >
+      <div
+        className="c6 c7"
+      >
+        <span
+          className="c24 c9"
+        >
+          Footer 1
+        </span>
+      </div>
+    </div>
+    <div
+      className="c4 c23"
+      role="cell"
+    >
+      <div
+        className="c6 c7"
+      >
+        <span
+          className="c24 c9"
+        >
+          Footer 2
+        </span>
+      </div>
+    </div>
+    <div
+      className="c4 c23"
+      role="cell"
+    >
+      <div
+        className="c6 c7"
+      >
+        <span
+          className="c24 c9"
+        >
+          Footer 3
+        </span>
+      </div>
+    </div>
+    <div
+      className="c10 c23 c11"
+      role="cell"
+    >
+      <div
+        className="c6 c7"
+      >
+        <span
+          className="c24 c9"
+        />
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Molecules / FlexTable / With different table props With Title 1`] = `
+.c4 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-left: -4px;
+  margin-right: -4px;
+}
+
+.c4 > * {
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+.c4 > *:not(:first-child) {
+  padding-top: 0;
+}
+
+.c7 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+
+.c13 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  -webkit-flex: 0 20px;
+  -ms-flex: 0 20px;
+  flex: 0 20px;
+}
+
+.c22 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 8px;
+  height: 8px;
+  fill: #A0A09B;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
+}
+
+.c23 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 16px;
+  height: 16px;
+  fill: #A0A09B;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
+}
+
+.c24 {
+  -webkit-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  transform: rotate(0deg);
+}
+
+.c2 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.3333333333333333;
+}
+
+.c11 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #6E6E69;
+  margin: 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.c17 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.c21 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: inherit;
+  margin: 0;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c9 {
+  display: inline-block;
+  width: 100%;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.c19 {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  overflow: visible;
+  text-transform: none;
+  position: relative;
+  box-sizing: border-box;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  padding: 0;
+  background-color: transparent;
+  color: #A0A09B;
+  border: none;
+  border-radius: 0;
+  cursor: not-allowed;
+}
+
+.c19,
+.c19[type='button'],
+.c19[type='reset'],
+.c19[type='submit'] {
+  -webkit-appearance: button;
+}
+
+.c19::-moz-focus-inner,
+.c19[type='button']::-moz-focus-inner,
+.c19[type='reset']::-moz-focus-inner,
+.c19[type='submit']::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+.c19:-moz-focusring,
+.c19[type='button']:-moz-focusring,
+.c19[type='reset']:-moz-focusring,
+.c19[type='submit']:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+.c10 {
+  width: inherit;
+}
+
+.c12 {
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.c16 {
+  overflow: hidden;
+  padding-top: 4px !important;
+  padding-bottom: 4px;
+}
+
+.c20 {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+}
+
+.c20:focus {
+  outline: none;
+}
+
+.c18 {
+  padding-top: 0 !important;
+  padding-bottom: 0;
+  -webkit-align-self: stretch;
+  -ms-flex-item-align: stretch;
+  align-self: stretch;
+}
+
+.c14 {
+  display: none;
+}
+
+.c5 {
+  background: #FFFFFF;
+  margin-right: 0;
+  margin-left: 0;
+  padding-right: 4px;
+  padding-left: 2px;
+  border-left: 2px solid transparent;
+  border-bottom: 1px solid #EBEBE8;
+}
+
+.c5 > *:first-child {
+  padding-left: 0;
+}
+
+.c5 > *:nth-last-child(2) {
+  padding-right: 0;
+}
+
+.c15 {
+  background: #FFFFFF;
+  margin-right: 0;
+  margin-left: 0;
+  padding-right: 4px;
+  padding-left: 2px;
+  border-left: 2px solid transparent;
+  border-bottom: 1px solid #EBEBE8;
+}
+
+.c15:hover {
+  background: #F5F5F5;
+}
+
+.c15 > *:first-child {
+  padding-left: 0;
+}
+
+.c15 > *:nth-last-child(2) {
+  padding-right: 0;
+}
+
+.c6 {
+  border-bottom: 1px solid #282823;
+  z-index: 1;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0px;
+}
+
+.c8 {
+  overflow: hidden;
+  padding-top: 4px !important;
+  padding-bottom: 4px;
+}
+
+.c0 {
+  position: relative;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.c3 {
+  padding-left: 4px;
+}
+
+@media (min-width:760px) {
+  .c4 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+}
+
+@media (min-width:976px) {
+  .c4 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+}
+
+@media (min-width:1280px) {
+  .c4 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+}
+
+@media not all and (max-width:975px) {
+
+}
+
+@media not all and (min-width:976px) {
+
+}
+
+@media (min-width:760px) {
+  .c2 {
+    font-size: 20px;
+    line-height: 1.2;
+  }
+}
+
+<div
+  aria-labelledby="table-with-title-title"
+  className="c0"
+  id="table-with-title"
+  role="table"
+>
+  <div
+    className="c1"
+    id="table-with-title-title"
+  >
+    <span
+      className="c2 c3"
+    >
+      A Title
+    </span>
+  </div>
+  <div
+    className="c4 c5 c6"
+    role="row"
+  >
+    <div
+      className="c7 c8"
+      role="columnheader"
+    >
+      <div
+        className="c9 c10"
+      >
+        <span
+          className="c11 c12"
+        >
+          Header 1
+        </span>
+      </div>
+    </div>
+    <div
+      className="c7 c8"
+      role="columnheader"
+    >
+      <div
+        className="c9 c10"
+      >
+        <span
+          className="c11 c12"
+        >
+          Header 2
+        </span>
+      </div>
+    </div>
+    <div
+      className="c7 c8"
+      role="columnheader"
+    >
+      <div
+        className="c9 c10"
+      >
+        <span
+          className="c11 c12"
+        >
+          Header 3
+        </span>
+      </div>
+    </div>
+    <div
+      className="c13 c8 c14"
+      role="columnheader"
+    >
+      <div
+        className="c9 c10"
+      >
+        <span
+          className="c11 c12"
+        />
+      </div>
+    </div>
+  </div>
+  <div
+    className="c4 c15"
+    role="row"
+  >
+    <div
+      className="c7 c16"
+      role="cell"
+    >
+      <div
+        className="c9 c10"
+      >
+        <span
+          className="c17 c12"
+        >
+          Cell 1-1
+        </span>
+      </div>
+    </div>
+    <div
+      className="c7 c16"
+      role="cell"
+    >
+      <div
+        className="c9 c10"
+      >
+        <span
+          className="c17 c12"
+        >
+          Cell 1-2
+        </span>
+      </div>
+    </div>
+    <div
+      className="c7 c16"
+      role="cell"
+    >
+      <div
+        className="c9 c10"
+      >
+        <span
+          className="c17 c12"
+        >
+          Cell 1-3
+        </span>
+      </div>
+    </div>
+    <div
+      className="c13 c16 c18 c14"
+      role="cell"
+    >
+      <button
+        aria-expanded={false}
+        className="NormalizedButton__Button-ey7f5x-0 c19 c20"
+        disabled={true}
+        onClick={[Function]}
+        type="button"
+      >
+        <span
+          className="c21"
+        >
+          <svg
+            aria-hidden="true"
+            className="c22"
+            focusable="false"
+            preserveAspectRatio="xMidYMid meet"
+            role="presentation"
+            viewBox="0 0 24 24"
+          >
+            <polygon
+              points="19.969 4 24 8.027 12 20 0 8.027 4.031 4 12 11.952"
+            />
+          </svg>
+        </span>
+      </button>
+      <button
+        aria-expanded={false}
+        className="NormalizedButton__Button-ey7f5x-0 c19 c20"
+        disabled={true}
+        onClick={[Function]}
+        type="button"
+      >
+        <span
+          className="c21"
+        >
+          <svg
+            aria-hidden="true"
+            className="c23 c24"
+            direction="down"
+            focusable="false"
+            preserveAspectRatio="xMidYMid meet"
+            role="presentation"
+            viewBox="0 0 16 16"
+          >
+            <polygon
+              points="14.620 3.580, 16.000 5.020, 8.000 12.730, 0.000 5.030, 1.400 3.580, 8.000 9.96"
+            />
+          </svg>
+        </span>
+      </button>
+    </div>
+  </div>
+</div>
+`;

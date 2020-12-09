@@ -26,6 +26,18 @@ defaultStory.story = {
   name: 'Default',
 };
 
+const veryLongLabel = 'Llanfairpwllgwyngyllgogerychwyrndrob';
+
+export const withVeryLongWord = () => (
+  <Tooltip label={veryLongLabel}>
+    <Button type="button">Hover me</Button>
+  </Tooltip>
+);
+
+withVeryLongWord.story = {
+  name: 'With Very Long Word',
+};
+
 export const withPosition = () => (
   <Display
     items={[

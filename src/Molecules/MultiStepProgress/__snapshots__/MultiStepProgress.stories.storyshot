@@ -9,12 +9,12 @@ Array [
   padding-bottom: 12px;
 }
 
-.c24 {
+.c25 {
   padding-left: 44px;
   padding-right: 12px;
 }
 
-.c28 {
+.c29 {
   padding-left: 44px;
   padding-top: 12px;
   padding-right: 12px;
@@ -26,7 +26,7 @@ Array [
   box-shadow: 0 2px 2px 0 rgba(0,0,0,0.03);
 }
 
-.c33 {
+.c34 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -42,7 +42,7 @@ Array [
   align-items: center;
 }
 
-.c34 {
+.c35 {
   box-sizing: border-box;
 }
 
@@ -62,14 +62,14 @@ Array [
   user-select: none;
   width: 24px;
   height: 24px;
-  fill: #00D200;
+  fill: #282823;
   -webkit-flex-shrink: 0;
   -ms-flex-negative: 0;
   flex-shrink: 0;
   display: block;
 }
 
-.c35 {
+.c36 {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -84,10 +84,14 @@ Array [
 }
 
 .c17 {
-  fill: #FFFFFF;
+  fill: #00D200;
 }
 
-.c36 {
+.c18 {
+  fill: #FFF;
+}
+
+.c37 {
   -webkit-transform: rotate(0deg);
   -ms-transform: rotate(0deg);
   transform: rotate(0deg);
@@ -120,7 +124,7 @@ Array [
   line-height: 1.4285714285714286;
 }
 
-.c19 {
+.c20 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
   margin: 0;
@@ -129,7 +133,7 @@ Array [
   line-height: 1.5;
 }
 
-.c26 {
+.c27 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #A0A09B;
   margin: 0;
@@ -138,7 +142,7 @@ Array [
   line-height: 1.4285714285714286;
 }
 
-.c27 {
+.c28 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #A0A09B;
   margin: 0;
@@ -199,7 +203,7 @@ Array [
   outline: 1px dotted ButtonText;
 }
 
-.c25 {
+.c26 {
   font-family: inherit;
   font-size: 100%;
   line-height: 1.15;
@@ -228,25 +232,25 @@ Array [
   cursor: pointer;
 }
 
-.c25,
-.c25[type='button'],
-.c25[type='reset'],
-.c25[type='submit'] {
+.c26,
+.c26[type='button'],
+.c26[type='reset'],
+.c26[type='submit'] {
   -webkit-appearance: button;
 }
 
-.c25::-moz-focus-inner,
-.c25[type='button']::-moz-focus-inner,
-.c25[type='reset']::-moz-focus-inner,
-.c25[type='submit']::-moz-focus-inner {
+.c26::-moz-focus-inner,
+.c26[type='button']::-moz-focus-inner,
+.c26[type='reset']::-moz-focus-inner,
+.c26[type='submit']::-moz-focus-inner {
   border-style: none;
   padding: 0;
 }
 
-.c25:-moz-focusring,
-.c25[type='button']:-moz-focusring,
-.c25[type='reset']:-moz-focusring,
-.c25[type='submit']:-moz-focusring {
+.c26:-moz-focusring,
+.c26[type='button']:-moz-focusring,
+.c26[type='reset']:-moz-focusring,
+.c26[type='submit']:-moz-focusring {
   outline: 1px dotted ButtonText;
 }
 
@@ -256,7 +260,7 @@ Array [
   left: 12px;
 }
 
-.c20 {
+.c21 {
   width: 24px;
   height: 24px;
   background-color: #0046FF;
@@ -276,7 +280,7 @@ Array [
   justify-content: center;
 }
 
-.c29 {
+.c30 {
   width: 24px;
   height: 24px;
   background-color: #EBEBE8;
@@ -296,18 +300,18 @@ Array [
   justify-content: center;
 }
 
-.c21 {
+.c22 {
   list-style: none;
   margin: 0;
   padding: 0;
   padding-bottom: 12px;
 }
 
-.c23 {
+.c24 {
   display: block;
 }
 
-.c23 + .c22 {
+.c24 + .c23 {
   padding-top: 8px;
 }
 
@@ -317,7 +321,7 @@ Array [
   padding: 0;
 }
 
-.c31 {
+.c32 {
   list-style: none;
   margin: 0;
   padding: 0;
@@ -343,13 +347,13 @@ Array [
   opacity: 0;
 }
 
-.c18 {
+.c19 {
   display: block;
   position: relative;
   background-color: #FFFFFF;
 }
 
-.c18::before {
+.c19::before {
   content: '';
   display: block;
   background: #0046FF;
@@ -374,14 +378,14 @@ Array [
   justify-content: flex-start;
 }
 
-.c32 {
+.c33 {
   -webkit-box-pack: start;
   -webkit-justify-content: flex-start;
   -ms-flex-pack: start;
   justify-content: flex-start;
 }
 
-.c32 > span {
+.c33 > span {
   width: 100%;
 }
 
@@ -397,14 +401,14 @@ Array [
 }
 
 @media (min-width:760px) {
-  .c24 {
+  .c25 {
     padding-left: 52px;
     padding-right: 20px;
   }
 }
 
 @media (min-width:760px) {
-  .c28 {
+  .c29 {
     padding-left: 52px;
   }
 }
@@ -416,7 +420,7 @@ Array [
 }
 
 @media not all and (max-width:975px) {
-  .c30 {
+  .c31 {
     display: none;
   }
 }
@@ -448,7 +452,7 @@ Array [
 }
 
 @media (max-width:975px) {
-  .c18 + .c4::after {
+  .c19 + .c4::after {
     content: '';
     display: block;
     height: 1px;
@@ -462,8 +466,19 @@ Array [
 }
 
 @media (min-width:976px) {
-  .c18 + .c4 .c6 {
+  .c19 + .c4 .c6 {
     margin-top: 8px;
+  }
+}
+
+@media (max-width:975px) {
+  .c1 {
+    position: static;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 200;
+    background: #FFFFFF;
   }
 }
 
@@ -471,7 +486,7 @@ Array [
     className="c0 c1"
   >
     <div
-      aria-label="Progress"
+      aria-label=""
       role="group"
     >
       <div
@@ -503,7 +518,7 @@ Array [
                       <div
                         className="c13"
                       >
-                        Completed
+                        
                       </div>
                       <span
                         aria-hidden={true}
@@ -515,19 +530,21 @@ Array [
                           focusable="false"
                           preserveAspectRatio="xMidYMid meet"
                           role="presentation"
-                          viewBox="0 0 92 92"
+                          viewBox="0 0 24 24"
                         >
-                          <path
-                            d="M46 91.5c25.4050985 0 46-20.3710439 46-45.5S71.4050985.5 46 .5 0 20.8710439 0 46s20.5949015 45.5 46 45.5z"
-                          />
-                          <path
-                            d="M63.1517377 34l3.573537 3.5568749L42.1676463 62l-14.870943-14.8016051 3.573537-3.5568749 11.297406 11.2447302z"
-                            fill="#FFF"
-                          />
-                          <polygon
-                            className="c17"
-                            points="13.695 6 15 7.314 8.696 13.69 5 9.924 6.319 8.656 8.696 11.059"
-                          />
+                          <g
+                            fill="none"
+                            fillRule="evenodd"
+                          >
+                            <path
+                              className="c17"
+                              d="M12 23.87c6.627 0 12-5.315 12-11.87C24 5.445 18.627.13 12 .13S0 5.445 0 12c0 6.555 5.373 11.87 12 11.87z"
+                            />
+                            <path
+                              className="c18"
+                              d="M16.474 8.87l.933.927L11 16.174l-3.88-3.861.933-.928L11 14.318z"
+                            />
+                          </g>
                         </svg>
                       </span>
                       Investment objective
@@ -538,7 +555,7 @@ Array [
             </div>
           </li>
           <li
-            className="c4 c18"
+            className="c4 c19"
           >
             <div
               className="c6 "
@@ -552,7 +569,7 @@ Array [
                   className="c9"
                 >
                   <span
-                    className="c19"
+                    className="c20"
                   >
                     <div
                       className="c11 c12"
@@ -562,7 +579,7 @@ Array [
                         className="c14 c15"
                       >
                         <span
-                          className="c20"
+                          className="c21"
                         >
                           2
                         </span>
@@ -574,16 +591,16 @@ Array [
               </button>
             </div>
             <ol
-              className="c21"
+              className="c22"
             >
               <li
-                className="c22 c23"
+                className="c23 c24"
               >
                 <div
-                  className="c24"
+                  className="c25"
                 >
                   <button
-                    className="NormalizedButton__Button-ey7f5x-0 c25"
+                    className="NormalizedButton__Button-ey7f5x-0 c26"
                     onClick={[Function]}
                     type="button"
                   >
@@ -591,12 +608,12 @@ Array [
                       className="c9"
                     >
                       <span
-                        className="c26"
+                        className="c27"
                       >
                         <div
                           className="c13"
                         >
-                          Completed
+                          
                         </div>
                         Investment period
                       </span>
@@ -605,13 +622,13 @@ Array [
                 </div>
               </li>
               <li
-                className="c22 c23"
+                className="c23 c24"
               >
                 <div
-                  className="c24"
+                  className="c25"
                 >
                   <button
-                    className="NormalizedButton__Button-ey7f5x-0 c25"
+                    className="NormalizedButton__Button-ey7f5x-0 c26"
                     onClick={[Function]}
                     type="button"
                   >
@@ -624,7 +641,7 @@ Array [
                         <div
                           className="c13"
                         >
-                          Not completed
+                          
                         </div>
                         Frequency
                       </span>
@@ -633,18 +650,18 @@ Array [
                 </div>
               </li>
               <li
-                className="c22 c23"
+                className="c23 c24"
               >
                 <div
-                  className="c24"
+                  className="c25"
                 >
                   <span
-                    className="c26"
+                    className="c27"
                   >
                     <div
                       className="c13"
                     >
-                      Not completed
+                      
                     </div>
                     Amount
                   </span>
@@ -659,22 +676,22 @@ Array [
               className="c6 "
             >
               <span
-                className="c27"
+                className="c28"
               >
                 <div
-                  className="c28 c12"
+                  className="c29 c12"
                 >
                   <div
                     className="c13"
                   >
-                    Not completed
+                    
                   </div>
                   <span
                     aria-hidden={true}
                     className="c14 c15"
                   >
                     <span
-                      className="c29"
+                      className="c30"
                     >
                       3
                     </span>
@@ -687,17 +704,17 @@ Array [
         </ol>
       </div>
       <div
-        className="c30"
+        className="c31"
       >
         <ol
-          className="c31"
+          className="c32"
         >
           <li
-            className="c4 c18"
+            className="c4 c19"
           >
             <button
               aria-expanded={false}
-              className="NormalizedButton__Button-ey7f5x-0 c7 c32"
+              className="NormalizedButton__Button-ey7f5x-0 c7 c33"
               onClick={[Function]}
               type="button"
             >
@@ -705,23 +722,23 @@ Array [
                 className="c9"
               >
                 <span
-                  className="c19"
+                  className="c20"
                 >
                   <div
                     className="c11 c12"
                   >
                     <div
-                      className="c33"
+                      className="c34"
                     >
                       <div
-                        className="c34"
+                        className="c35"
                       >
                         <span
                           aria-hidden={true}
                           className="c14 c15"
                         >
                           <span
-                            className="c20"
+                            className="c21"
                           >
                             2
                           </span>
@@ -729,11 +746,11 @@ Array [
                         Time and risk
                       </div>
                       <div
-                        className="c34"
+                        className="c35"
                       >
                         <svg
                           aria-hidden="true"
-                          className="c35 c36"
+                          className="c36 c37"
                           direction="down"
                           focusable="false"
                           preserveAspectRatio="xMidYMid meet"
@@ -794,6 +811,10 @@ Array [
 }
 
 @media (min-width:976px) {
+
+}
+
+@media (max-width:975px) {
 
 }
 
@@ -812,12 +833,12 @@ Array [
   padding-bottom: 12px;
 }
 
-.c24 {
+.c25 {
   padding-left: 44px;
   padding-right: 12px;
 }
 
-.c28 {
+.c29 {
   padding-left: 44px;
   padding-top: 12px;
   padding-right: 12px;
@@ -829,7 +850,7 @@ Array [
   box-shadow: 0 2px 2px 0 rgba(0,0,0,0.03);
 }
 
-.c33 {
+.c34 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -845,7 +866,7 @@ Array [
   align-items: center;
 }
 
-.c34 {
+.c35 {
   box-sizing: border-box;
 }
 
@@ -865,14 +886,14 @@ Array [
   user-select: none;
   width: 24px;
   height: 24px;
-  fill: #00D200;
+  fill: #282823;
   -webkit-flex-shrink: 0;
   -ms-flex-negative: 0;
   flex-shrink: 0;
   display: block;
 }
 
-.c35 {
+.c36 {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -887,10 +908,14 @@ Array [
 }
 
 .c17 {
-  fill: #FFFFFF;
+  fill: #00D200;
 }
 
-.c36 {
+.c18 {
+  fill: #FFF;
+}
+
+.c37 {
   -webkit-transform: rotate(0deg);
   -ms-transform: rotate(0deg);
   transform: rotate(0deg);
@@ -923,7 +948,7 @@ Array [
   line-height: 1.4285714285714286;
 }
 
-.c19 {
+.c20 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
   margin: 0;
@@ -932,7 +957,7 @@ Array [
   line-height: 1.5;
 }
 
-.c26 {
+.c27 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #A0A09B;
   margin: 0;
@@ -941,7 +966,7 @@ Array [
   line-height: 1.4285714285714286;
 }
 
-.c27 {
+.c28 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #A0A09B;
   margin: 0;
@@ -1002,7 +1027,7 @@ Array [
   outline: 1px dotted ButtonText;
 }
 
-.c25 {
+.c26 {
   font-family: inherit;
   font-size: 100%;
   line-height: 1.15;
@@ -1031,25 +1056,25 @@ Array [
   cursor: pointer;
 }
 
-.c25,
-.c25[type='button'],
-.c25[type='reset'],
-.c25[type='submit'] {
+.c26,
+.c26[type='button'],
+.c26[type='reset'],
+.c26[type='submit'] {
   -webkit-appearance: button;
 }
 
-.c25::-moz-focus-inner,
-.c25[type='button']::-moz-focus-inner,
-.c25[type='reset']::-moz-focus-inner,
-.c25[type='submit']::-moz-focus-inner {
+.c26::-moz-focus-inner,
+.c26[type='button']::-moz-focus-inner,
+.c26[type='reset']::-moz-focus-inner,
+.c26[type='submit']::-moz-focus-inner {
   border-style: none;
   padding: 0;
 }
 
-.c25:-moz-focusring,
-.c25[type='button']:-moz-focusring,
-.c25[type='reset']:-moz-focusring,
-.c25[type='submit']:-moz-focusring {
+.c26:-moz-focusring,
+.c26[type='button']:-moz-focusring,
+.c26[type='reset']:-moz-focusring,
+.c26[type='submit']:-moz-focusring {
   outline: 1px dotted ButtonText;
 }
 
@@ -1059,7 +1084,7 @@ Array [
   left: 12px;
 }
 
-.c20 {
+.c21 {
   width: 24px;
   height: 24px;
   background-color: #0046FF;
@@ -1079,7 +1104,7 @@ Array [
   justify-content: center;
 }
 
-.c29 {
+.c30 {
   width: 24px;
   height: 24px;
   background-color: #EBEBE8;
@@ -1099,18 +1124,18 @@ Array [
   justify-content: center;
 }
 
-.c21 {
+.c22 {
   list-style: none;
   margin: 0;
   padding: 0;
   padding-bottom: 12px;
 }
 
-.c23 {
+.c24 {
   display: block;
 }
 
-.c23 + .c22 {
+.c24 + .c23 {
   padding-top: 8px;
 }
 
@@ -1120,7 +1145,7 @@ Array [
   padding: 0;
 }
 
-.c31 {
+.c32 {
   list-style: none;
   margin: 0;
   padding: 0;
@@ -1146,13 +1171,13 @@ Array [
   opacity: 0;
 }
 
-.c18 {
+.c19 {
   display: block;
   position: relative;
   background-color: #FFFFFF;
 }
 
-.c18::before {
+.c19::before {
   content: '';
   display: block;
   background: #0046FF;
@@ -1177,14 +1202,14 @@ Array [
   justify-content: flex-start;
 }
 
-.c32 {
+.c33 {
   -webkit-box-pack: start;
   -webkit-justify-content: flex-start;
   -ms-flex-pack: start;
   justify-content: flex-start;
 }
 
-.c32 > span {
+.c33 > span {
   width: 100%;
 }
 
@@ -1200,14 +1225,14 @@ Array [
 }
 
 @media (min-width:760px) {
-  .c24 {
+  .c25 {
     padding-left: 52px;
     padding-right: 20px;
   }
 }
 
 @media (min-width:760px) {
-  .c28 {
+  .c29 {
     padding-left: 52px;
   }
 }
@@ -1219,7 +1244,7 @@ Array [
 }
 
 @media not all and (max-width:975px) {
-  .c30 {
+  .c31 {
     display: none;
   }
 }
@@ -1251,7 +1276,7 @@ Array [
 }
 
 @media (max-width:975px) {
-  .c18 + .c4::after {
+  .c19 + .c4::after {
     content: '';
     display: block;
     height: 1px;
@@ -1265,8 +1290,19 @@ Array [
 }
 
 @media (min-width:976px) {
-  .c18 + .c4 .c6 {
+  .c19 + .c4 .c6 {
     margin-top: 8px;
+  }
+}
+
+@media (max-width:975px) {
+  .c1 {
+    position: static;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 200;
+    background: #FFFFFF;
   }
 }
 
@@ -1274,7 +1310,7 @@ Array [
     className="c0 c1"
   >
     <div
-      aria-label="Progress"
+      aria-label=""
       role="group"
     >
       <div
@@ -1306,7 +1342,7 @@ Array [
                       <div
                         className="c13"
                       >
-                        Completed
+                        
                       </div>
                       <span
                         aria-hidden={true}
@@ -1318,19 +1354,21 @@ Array [
                           focusable="false"
                           preserveAspectRatio="xMidYMid meet"
                           role="presentation"
-                          viewBox="0 0 92 92"
+                          viewBox="0 0 24 24"
                         >
-                          <path
-                            d="M46 91.5c25.4050985 0 46-20.3710439 46-45.5S71.4050985.5 46 .5 0 20.8710439 0 46s20.5949015 45.5 46 45.5z"
-                          />
-                          <path
-                            d="M63.1517377 34l3.573537 3.5568749L42.1676463 62l-14.870943-14.8016051 3.573537-3.5568749 11.297406 11.2447302z"
-                            fill="#FFF"
-                          />
-                          <polygon
-                            className="c17"
-                            points="13.695 6 15 7.314 8.696 13.69 5 9.924 6.319 8.656 8.696 11.059"
-                          />
+                          <g
+                            fill="none"
+                            fillRule="evenodd"
+                          >
+                            <path
+                              className="c17"
+                              d="M12 23.87c6.627 0 12-5.315 12-11.87C24 5.445 18.627.13 12 .13S0 5.445 0 12c0 6.555 5.373 11.87 12 11.87z"
+                            />
+                            <path
+                              className="c18"
+                              d="M16.474 8.87l.933.927L11 16.174l-3.88-3.861.933-.928L11 14.318z"
+                            />
+                          </g>
                         </svg>
                       </span>
                       Investment objective
@@ -1341,7 +1379,7 @@ Array [
             </div>
           </li>
           <li
-            className="c4 c18"
+            className="c4 c19"
           >
             <div
               className="c6 "
@@ -1355,7 +1393,7 @@ Array [
                   className="c9"
                 >
                   <span
-                    className="c19"
+                    className="c20"
                   >
                     <div
                       className="c11 c12"
@@ -1365,7 +1403,7 @@ Array [
                         className="c14 c15"
                       >
                         <span
-                          className="c20"
+                          className="c21"
                         >
                           2
                         </span>
@@ -1377,16 +1415,16 @@ Array [
               </button>
             </div>
             <ol
-              className="c21"
+              className="c22"
             >
               <li
-                className="c22 c23"
+                className="c23 c24"
               >
                 <div
-                  className="c24"
+                  className="c25"
                 >
                   <button
-                    className="NormalizedButton__Button-ey7f5x-0 c25"
+                    className="NormalizedButton__Button-ey7f5x-0 c26"
                     onClick={[Function]}
                     type="button"
                   >
@@ -1394,12 +1432,12 @@ Array [
                       className="c9"
                     >
                       <span
-                        className="c26"
+                        className="c27"
                       >
                         <div
                           className="c13"
                         >
-                          Completed
+                          
                         </div>
                         Investment period
                       </span>
@@ -1408,13 +1446,13 @@ Array [
                 </div>
               </li>
               <li
-                className="c22 c23"
+                className="c23 c24"
               >
                 <div
-                  className="c24"
+                  className="c25"
                 >
                   <button
-                    className="NormalizedButton__Button-ey7f5x-0 c25"
+                    className="NormalizedButton__Button-ey7f5x-0 c26"
                     onClick={[Function]}
                     type="button"
                   >
@@ -1427,7 +1465,7 @@ Array [
                         <div
                           className="c13"
                         >
-                          Not completed
+                          
                         </div>
                         Frequency
                       </span>
@@ -1436,18 +1474,18 @@ Array [
                 </div>
               </li>
               <li
-                className="c22 c23"
+                className="c23 c24"
               >
                 <div
-                  className="c24"
+                  className="c25"
                 >
                   <span
-                    className="c26"
+                    className="c27"
                   >
                     <div
                       className="c13"
                     >
-                      Not completed
+                      
                     </div>
                     Amount
                   </span>
@@ -1462,22 +1500,22 @@ Array [
               className="c6 "
             >
               <span
-                className="c27"
+                className="c28"
               >
                 <div
-                  className="c28 c12"
+                  className="c29 c12"
                 >
                   <div
                     className="c13"
                   >
-                    Not completed
+                    
                   </div>
                   <span
                     aria-hidden={true}
                     className="c14 c15"
                   >
                     <span
-                      className="c29"
+                      className="c30"
                     >
                       3
                     </span>
@@ -1490,17 +1528,17 @@ Array [
         </ol>
       </div>
       <div
-        className="c30"
+        className="c31"
       >
         <ol
-          className="c31"
+          className="c32"
         >
           <li
-            className="c4 c18"
+            className="c4 c19"
           >
             <button
               aria-expanded={false}
-              className="NormalizedButton__Button-ey7f5x-0 c7 c32"
+              className="NormalizedButton__Button-ey7f5x-0 c7 c33"
               onClick={[Function]}
               type="button"
             >
@@ -1508,23 +1546,23 @@ Array [
                 className="c9"
               >
                 <span
-                  className="c19"
+                  className="c20"
                 >
                   <div
                     className="c11 c12"
                   >
                     <div
-                      className="c33"
+                      className="c34"
                     >
                       <div
-                        className="c34"
+                        className="c35"
                       >
                         <span
                           aria-hidden={true}
                           className="c14 c15"
                         >
                           <span
-                            className="c20"
+                            className="c21"
                           >
                             2
                           </span>
@@ -1532,11 +1570,11 @@ Array [
                         Time and risk
                       </div>
                       <div
-                        className="c34"
+                        className="c35"
                       >
                         <svg
                           aria-hidden="true"
-                          className="c35 c36"
+                          className="c36 c37"
                           direction="down"
                           focusable="false"
                           preserveAspectRatio="xMidYMid meet"
@@ -1600,9 +1638,1665 @@ Array [
 
 }
 
+@media (max-width:975px) {
+
+}
+
 <div
     className="c0"
   />,
+]
+`;
+
+exports[`Storyshots Molecules / Multi Step Progress Multi Step Progress With Long Content 1`] = `
+Array [
+  @media (min-width:760px) {
+
+}
+
+@media (min-width:760px) {
+
+}
+
+@media (min-width:760px) {
+
+}
+
+@media not all and (min-width:976px) {
+
+}
+
+@media not all and (max-width:975px) {
+
+}
+
+@media (min-width:760px) {
+
+}
+
+@media (max-width:975px) {
+
+}
+
+@media (min-width:976px) {
+
+}
+
+@media (max-width:975px) {
+
+}
+
+@media (min-width:976px) {
+
+}
+
+@media (max-width:975px) {
+
+}
+
+@media (max-width:975px) {
+
+}
+
+@media (max-width:975px) {
+
+}
+
+<h1>
+    Lorem ipsum dolor
+  </h1>,
+  @media (min-width:760px) {
+
+}
+
+@media (min-width:760px) {
+
+}
+
+@media (min-width:760px) {
+
+}
+
+@media not all and (min-width:976px) {
+
+}
+
+@media not all and (max-width:975px) {
+
+}
+
+@media (min-width:760px) {
+
+}
+
+@media (max-width:975px) {
+
+}
+
+@media (min-width:976px) {
+
+}
+
+@media (max-width:975px) {
+
+}
+
+@media (min-width:976px) {
+
+}
+
+@media (max-width:975px) {
+
+}
+
+@media (max-width:975px) {
+
+}
+
+@media (max-width:975px) {
+  .c0 {
+    height: 1px;
+    width: 1px;
+    pointer-events: none;
+  }
+}
+
+<div
+    className="c0"
+  />,
+  @media (min-width:760px) {
+
+}
+
+@media (min-width:760px) {
+
+}
+
+@media (min-width:760px) {
+
+}
+
+@media not all and (min-width:976px) {
+
+}
+
+@media not all and (max-width:975px) {
+
+}
+
+@media (min-width:760px) {
+
+}
+
+@media (max-width:975px) {
+
+}
+
+@media (min-width:976px) {
+
+}
+
+@media (max-width:975px) {
+
+}
+
+@media (min-width:976px) {
+
+}
+
+@media (max-width:975px) {
+
+}
+
+@media (max-width:975px) {
+  .c0 {
+    padding-top: 0px;
+  }
+}
+
+@media (max-width:975px) {
+
+}
+
+<div
+    className="c0"
+  />,
+  .c8 {
+  padding-left: 44px;
+  padding-top: 12px;
+  padding-right: 12px;
+  padding-bottom: 12px;
+}
+
+.c19 {
+  padding-left: 44px;
+  padding-top: 12px;
+  padding-right: 12px;
+  padding-bottom: 12px;
+}
+
+.c24 {
+  padding-left: 44px;
+  padding-right: 12px;
+}
+
+.c0 {
+  background: #FFFFFF;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.03);
+}
+
+.c29 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c30 {
+  box-sizing: border-box;
+}
+
+.c10 {
+  position: absolute;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  -webkit-clip: rect(1px,1px,1px,1px);
+  clip: rect(1px,1px,1px,1px);
+}
+
+.c31 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 20px;
+  height: 20px;
+  fill: #282823;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
+}
+
+.c32 {
+  -webkit-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  transform: rotate(0deg);
+}
+
+.c7 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #A0A09B;
+  margin: 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.c11 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c17 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: inherit;
+  margin: 0;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c18 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.c25 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #A0A09B;
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c15 {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  overflow: visible;
+  text-transform: none;
+  position: relative;
+  box-sizing: border-box;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  padding: 0;
+  background-color: transparent;
+  color: #282823;
+  border: none;
+  border-radius: 0;
+  cursor: pointer;
+}
+
+.c15,
+.c15[type='button'],
+.c15[type='reset'],
+.c15[type='submit'] {
+  -webkit-appearance: button;
+}
+
+.c15::-moz-focus-inner,
+.c15[type='button']::-moz-focus-inner,
+.c15[type='reset']::-moz-focus-inner,
+.c15[type='submit']::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+.c15:-moz-focusring,
+.c15[type='button']:-moz-focusring,
+.c15[type='reset']:-moz-focusring,
+.c15[type='submit']:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+.c12 {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+}
+
+.c13 {
+  width: 24px;
+  height: 24px;
+  background-color: #EBEBE8;
+  color: #A0A09B;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.c20 {
+  width: 24px;
+  height: 24px;
+  background-color: #0046FF;
+  color: #FFFFFF;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.c21 {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  padding-bottom: 12px;
+}
+
+.c23 {
+  display: block;
+}
+
+.c23 + .c22 {
+  padding-top: 8px;
+}
+
+.c3 {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.c27 {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.c5 {
+  display: block;
+  position: relative;
+  background-color: #FFFFFF;
+}
+
+.c5::before {
+  content: '';
+  display: block;
+  background: #0046FF;
+  width: 2px;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  -webkit-transition: opacity 0.16s ease-out;
+  transition: opacity 0.16s ease-out;
+  opacity: 0;
+}
+
+.c14 {
+  display: block;
+  position: relative;
+  background-color: #FFFFFF;
+}
+
+.c14::before {
+  content: '';
+  display: block;
+  background: #0046FF;
+  width: 2px;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  -webkit-transition: opacity 0.16s ease-out;
+  transition: opacity 0.16s ease-out;
+  opacity: 1;
+}
+
+.c9 {
+  position: relative;
+}
+
+.c16 {
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+}
+
+.c28 {
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+}
+
+.c28 > span {
+  width: 100%;
+}
+
+.c1 {
+  background: transparent;
+}
+
+@media (min-width:760px) {
+  .c8 {
+    padding-left: 52px;
+  }
+}
+
+@media (min-width:760px) {
+  .c19 {
+    padding-left: 52px;
+    padding-right: 20px;
+  }
+}
+
+@media (min-width:760px) {
+  .c24 {
+    padding-left: 52px;
+    padding-right: 20px;
+  }
+}
+
+@media not all and (min-width:976px) {
+  .c2 {
+    display: none;
+  }
+}
+
+@media not all and (max-width:975px) {
+  .c26 {
+    display: none;
+  }
+}
+
+@media (min-width:760px) {
+  .c12 {
+    left: 20px;
+  }
+}
+
+@media (max-width:975px) {
+  .c5 + .c4::after {
+    content: '';
+    display: block;
+    height: 1px;
+    box-sizing: border-box;
+    background-color: #EBEBE8;
+    position: absolute;
+    top: 0;
+    left: 12px;
+    right: 12px;
+  }
+}
+
+@media (min-width:976px) {
+  .c5 + .c4 .c6 {
+    margin-top: 8px;
+  }
+}
+
+@media (max-width:975px) {
+  .c14 + .c4::after {
+    content: '';
+    display: block;
+    height: 1px;
+    box-sizing: border-box;
+    background-color: #EBEBE8;
+    position: absolute;
+    top: 0;
+    left: 12px;
+    right: 12px;
+  }
+}
+
+@media (min-width:976px) {
+  .c14 + .c4 .c6 {
+    margin-top: 8px;
+  }
+}
+
+@media (max-width:975px) {
+  .c1 {
+    position: static;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 200;
+    background: #FFFFFF;
+  }
+}
+
+@media (max-width:975px) {
+
+}
+
+@media (max-width:975px) {
+
+}
+
+<div
+    className="c0 c1"
+  >
+    <div
+      aria-label=""
+      role="group"
+    >
+      <div
+        className="c2"
+      >
+        <ol
+          className="c3"
+        >
+          <li
+            className="c4 c5"
+          >
+            <div
+              className="c6 "
+            >
+              <span
+                className="c7"
+              >
+                <div
+                  className="c8 c9"
+                >
+                  <div
+                    className="c10"
+                  >
+                    
+                  </div>
+                  <span
+                    aria-hidden={true}
+                    className="c11 c12"
+                  >
+                    <span
+                      className="c13"
+                    >
+                      1
+                    </span>
+                  </span>
+                  Investment objective
+                </div>
+              </span>
+            </div>
+          </li>
+          <li
+            className="c4 c14"
+          >
+            <div
+              className="c6 "
+            >
+              <button
+                className="NormalizedButton__Button-ey7f5x-0 c15 c16"
+                onClick={[Function]}
+                type="button"
+              >
+                <span
+                  className="c17"
+                >
+                  <span
+                    className="c18"
+                  >
+                    <div
+                      className="c19 c9"
+                    >
+                      <span
+                        aria-hidden={true}
+                        className="c11 c12"
+                      >
+                        <span
+                          className="c20"
+                        >
+                          2
+                        </span>
+                      </span>
+                      Time and risk
+                    </div>
+                  </span>
+                </span>
+              </button>
+            </div>
+            <ol
+              className="c21"
+            >
+              <li
+                className="c22 c23"
+              >
+                <div
+                  className="c24"
+                >
+                  <span
+                    className="c25"
+                  >
+                    <div
+                      className="c10"
+                    >
+                      
+                    </div>
+                    Investment period
+                  </span>
+                </div>
+              </li>
+              <li
+                className="c22 c23"
+              >
+                <div
+                  className="c24"
+                >
+                  <span
+                    className="c25"
+                  >
+                    <div
+                      className="c10"
+                    >
+                      
+                    </div>
+                    Frequency
+                  </span>
+                </div>
+              </li>
+              <li
+                className="c22 c23"
+              >
+                <div
+                  className="c24"
+                >
+                  <span
+                    className="c25"
+                  >
+                    <div
+                      className="c10"
+                    >
+                      
+                    </div>
+                    Amount
+                  </span>
+                </div>
+              </li>
+            </ol>
+          </li>
+          <li
+            className="c4 c5"
+          >
+            <div
+              className="c6 "
+            >
+              <span
+                className="c7"
+              >
+                <div
+                  className="c8 c9"
+                >
+                  <div
+                    className="c10"
+                  >
+                    
+                  </div>
+                  <span
+                    aria-hidden={true}
+                    className="c11 c12"
+                  >
+                    <span
+                      className="c13"
+                    >
+                      3
+                    </span>
+                  </span>
+                  Allocations
+                </div>
+              </span>
+            </div>
+          </li>
+        </ol>
+      </div>
+      <div
+        className="c26"
+      >
+        <ol
+          className="c27"
+        >
+          <li
+            className="c4 c14"
+          >
+            <button
+              aria-expanded={false}
+              className="NormalizedButton__Button-ey7f5x-0 c15 c28"
+              onClick={[Function]}
+              type="button"
+            >
+              <span
+                className="c17"
+              >
+                <span
+                  className="c18"
+                >
+                  <div
+                    className="c19 c9"
+                  >
+                    <div
+                      className="c29"
+                    >
+                      <div
+                        className="c30"
+                      >
+                        <span
+                          aria-hidden={true}
+                          className="c11 c12"
+                        >
+                          <span
+                            className="c20"
+                          >
+                            2
+                          </span>
+                        </span>
+                        Time and risk
+                      </div>
+                      <div
+                        className="c30"
+                      >
+                        <svg
+                          aria-hidden="true"
+                          className="c31 c32"
+                          direction="down"
+                          focusable="false"
+                          preserveAspectRatio="xMidYMid meet"
+                          role="presentation"
+                          viewBox="0 0 16 16"
+                        >
+                          <polygon
+                            points="14.620 3.580, 16.000 5.020, 8.000 12.730, 0.000 5.030, 1.400 3.580, 8.000 9.96"
+                          />
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                </span>
+              </span>
+            </button>
+          </li>
+        </ol>
+      </div>
+    </div>
+  </div>,
+  @media (min-width:760px) {
+
+}
+
+@media (min-width:760px) {
+
+}
+
+@media (min-width:760px) {
+
+}
+
+@media not all and (min-width:976px) {
+
+}
+
+@media not all and (max-width:975px) {
+  .c0 {
+    display: none;
+  }
+}
+
+@media (min-width:760px) {
+
+}
+
+@media (max-width:975px) {
+
+}
+
+@media (min-width:976px) {
+
+}
+
+@media (max-width:975px) {
+
+}
+
+@media (min-width:976px) {
+
+}
+
+@media (max-width:975px) {
+
+}
+
+@media (max-width:975px) {
+
+}
+
+@media (max-width:975px) {
+
+}
+
+<div
+    className="c0"
+  />,
+  @media (min-width:760px) {
+
+}
+
+@media (min-width:760px) {
+
+}
+
+@media (min-width:760px) {
+
+}
+
+@media not all and (min-width:976px) {
+
+}
+
+@media not all and (max-width:975px) {
+
+}
+
+@media (min-width:760px) {
+
+}
+
+@media (max-width:975px) {
+
+}
+
+@media (min-width:976px) {
+
+}
+
+@media (max-width:975px) {
+
+}
+
+@media (min-width:976px) {
+
+}
+
+@media (max-width:975px) {
+
+}
+
+@media (max-width:975px) {
+
+}
+
+@media (max-width:975px) {
+
+}
+
+<p>
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium animi autem debitis dolorem ducimus explicabo facilis fugiat impedit incidunt iusto laborum molestiae natus, obcaecati, officiis provident quae, quaerat quia soluta.
+  </p>,
+  @media (min-width:760px) {
+
+}
+
+@media (min-width:760px) {
+
+}
+
+@media (min-width:760px) {
+
+}
+
+@media not all and (min-width:976px) {
+
+}
+
+@media not all and (max-width:975px) {
+
+}
+
+@media (min-width:760px) {
+
+}
+
+@media (max-width:975px) {
+
+}
+
+@media (min-width:976px) {
+
+}
+
+@media (max-width:975px) {
+
+}
+
+@media (min-width:976px) {
+
+}
+
+@media (max-width:975px) {
+
+}
+
+@media (max-width:975px) {
+
+}
+
+@media (max-width:975px) {
+
+}
+
+<p>
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. At commodi dolor dolorum eius molestiae qui repudiandae, voluptate. Ad aliquam dolor, labore natus necessitatibus nesciunt temporibus. Ad deserunt eius recusandae? Aspernatur.
+  </p>,
+  @media (min-width:760px) {
+
+}
+
+@media (min-width:760px) {
+
+}
+
+@media (min-width:760px) {
+
+}
+
+@media not all and (min-width:976px) {
+
+}
+
+@media not all and (max-width:975px) {
+
+}
+
+@media (min-width:760px) {
+
+}
+
+@media (max-width:975px) {
+
+}
+
+@media (min-width:976px) {
+
+}
+
+@media (max-width:975px) {
+
+}
+
+@media (min-width:976px) {
+
+}
+
+@media (max-width:975px) {
+
+}
+
+@media (max-width:975px) {
+
+}
+
+@media (max-width:975px) {
+
+}
+
+<p>
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium animi autem debitis dolorem ducimus explicabo facilis fugiat impedit incidunt iusto laborum molestiae natus, obcaecati, officiis provident quae, quaerat quia soluta.
+  </p>,
+  @media (min-width:760px) {
+
+}
+
+@media (min-width:760px) {
+
+}
+
+@media (min-width:760px) {
+
+}
+
+@media not all and (min-width:976px) {
+
+}
+
+@media not all and (max-width:975px) {
+
+}
+
+@media (min-width:760px) {
+
+}
+
+@media (max-width:975px) {
+
+}
+
+@media (min-width:976px) {
+
+}
+
+@media (max-width:975px) {
+
+}
+
+@media (min-width:976px) {
+
+}
+
+@media (max-width:975px) {
+
+}
+
+@media (max-width:975px) {
+
+}
+
+@media (max-width:975px) {
+
+}
+
+<p>
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. At commodi dolor dolorum eius molestiae qui repudiandae, voluptate. Ad aliquam dolor, labore natus necessitatibus nesciunt temporibus. Ad deserunt eius recusandae? Aspernatur.
+  </p>,
+  @media (min-width:760px) {
+
+}
+
+@media (min-width:760px) {
+
+}
+
+@media (min-width:760px) {
+
+}
+
+@media not all and (min-width:976px) {
+
+}
+
+@media not all and (max-width:975px) {
+
+}
+
+@media (min-width:760px) {
+
+}
+
+@media (max-width:975px) {
+
+}
+
+@media (min-width:976px) {
+
+}
+
+@media (max-width:975px) {
+
+}
+
+@media (min-width:976px) {
+
+}
+
+@media (max-width:975px) {
+
+}
+
+@media (max-width:975px) {
+
+}
+
+@media (max-width:975px) {
+
+}
+
+<p>
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium animi autem debitis dolorem ducimus explicabo facilis fugiat impedit incidunt iusto laborum molestiae natus, obcaecati, officiis provident quae, quaerat quia soluta.
+  </p>,
+  @media (min-width:760px) {
+
+}
+
+@media (min-width:760px) {
+
+}
+
+@media (min-width:760px) {
+
+}
+
+@media not all and (min-width:976px) {
+
+}
+
+@media not all and (max-width:975px) {
+
+}
+
+@media (min-width:760px) {
+
+}
+
+@media (max-width:975px) {
+
+}
+
+@media (min-width:976px) {
+
+}
+
+@media (max-width:975px) {
+
+}
+
+@media (min-width:976px) {
+
+}
+
+@media (max-width:975px) {
+
+}
+
+@media (max-width:975px) {
+
+}
+
+@media (max-width:975px) {
+
+}
+
+<p>
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. At commodi dolor dolorum eius molestiae qui repudiandae, voluptate. Ad aliquam dolor, labore natus necessitatibus nesciunt temporibus. Ad deserunt eius recusandae? Aspernatur.
+  </p>,
+  @media (min-width:760px) {
+
+}
+
+@media (min-width:760px) {
+
+}
+
+@media (min-width:760px) {
+
+}
+
+@media not all and (min-width:976px) {
+
+}
+
+@media not all and (max-width:975px) {
+
+}
+
+@media (min-width:760px) {
+
+}
+
+@media (max-width:975px) {
+
+}
+
+@media (min-width:976px) {
+
+}
+
+@media (max-width:975px) {
+
+}
+
+@media (min-width:976px) {
+
+}
+
+@media (max-width:975px) {
+
+}
+
+@media (max-width:975px) {
+
+}
+
+@media (max-width:975px) {
+
+}
+
+<p>
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium animi autem debitis dolorem ducimus explicabo facilis fugiat impedit incidunt iusto laborum molestiae natus, obcaecati, officiis provident quae, quaerat quia soluta.
+  </p>,
+  @media (min-width:760px) {
+
+}
+
+@media (min-width:760px) {
+
+}
+
+@media (min-width:760px) {
+
+}
+
+@media not all and (min-width:976px) {
+
+}
+
+@media not all and (max-width:975px) {
+
+}
+
+@media (min-width:760px) {
+
+}
+
+@media (max-width:975px) {
+
+}
+
+@media (min-width:976px) {
+
+}
+
+@media (max-width:975px) {
+
+}
+
+@media (min-width:976px) {
+
+}
+
+@media (max-width:975px) {
+
+}
+
+@media (max-width:975px) {
+
+}
+
+@media (max-width:975px) {
+
+}
+
+<p>
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. At commodi dolor dolorum eius molestiae qui repudiandae, voluptate. Ad aliquam dolor, labore natus necessitatibus nesciunt temporibus. Ad deserunt eius recusandae? Aspernatur.
+  </p>,
+  @media (min-width:760px) {
+
+}
+
+@media (min-width:760px) {
+
+}
+
+@media (min-width:760px) {
+
+}
+
+@media not all and (min-width:976px) {
+
+}
+
+@media not all and (max-width:975px) {
+
+}
+
+@media (min-width:760px) {
+
+}
+
+@media (max-width:975px) {
+
+}
+
+@media (min-width:976px) {
+
+}
+
+@media (max-width:975px) {
+
+}
+
+@media (min-width:976px) {
+
+}
+
+@media (max-width:975px) {
+
+}
+
+@media (max-width:975px) {
+
+}
+
+@media (max-width:975px) {
+
+}
+
+<p>
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium animi autem debitis dolorem ducimus explicabo facilis fugiat impedit incidunt iusto laborum molestiae natus, obcaecati, officiis provident quae, quaerat quia soluta.
+  </p>,
+  @media (min-width:760px) {
+
+}
+
+@media (min-width:760px) {
+
+}
+
+@media (min-width:760px) {
+
+}
+
+@media not all and (min-width:976px) {
+
+}
+
+@media not all and (max-width:975px) {
+
+}
+
+@media (min-width:760px) {
+
+}
+
+@media (max-width:975px) {
+
+}
+
+@media (min-width:976px) {
+
+}
+
+@media (max-width:975px) {
+
+}
+
+@media (min-width:976px) {
+
+}
+
+@media (max-width:975px) {
+
+}
+
+@media (max-width:975px) {
+
+}
+
+@media (max-width:975px) {
+
+}
+
+<p>
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. At commodi dolor dolorum eius molestiae qui repudiandae, voluptate. Ad aliquam dolor, labore natus necessitatibus nesciunt temporibus. Ad deserunt eius recusandae? Aspernatur.
+  </p>,
+  @media (min-width:760px) {
+
+}
+
+@media (min-width:760px) {
+
+}
+
+@media (min-width:760px) {
+
+}
+
+@media not all and (min-width:976px) {
+
+}
+
+@media not all and (max-width:975px) {
+
+}
+
+@media (min-width:760px) {
+
+}
+
+@media (max-width:975px) {
+
+}
+
+@media (min-width:976px) {
+
+}
+
+@media (max-width:975px) {
+
+}
+
+@media (min-width:976px) {
+
+}
+
+@media (max-width:975px) {
+
+}
+
+@media (max-width:975px) {
+
+}
+
+@media (max-width:975px) {
+
+}
+
+<p>
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium animi autem debitis dolorem ducimus explicabo facilis fugiat impedit incidunt iusto laborum molestiae natus, obcaecati, officiis provident quae, quaerat quia soluta.
+  </p>,
+  @media (min-width:760px) {
+
+}
+
+@media (min-width:760px) {
+
+}
+
+@media (min-width:760px) {
+
+}
+
+@media not all and (min-width:976px) {
+
+}
+
+@media not all and (max-width:975px) {
+
+}
+
+@media (min-width:760px) {
+
+}
+
+@media (max-width:975px) {
+
+}
+
+@media (min-width:976px) {
+
+}
+
+@media (max-width:975px) {
+
+}
+
+@media (min-width:976px) {
+
+}
+
+@media (max-width:975px) {
+
+}
+
+@media (max-width:975px) {
+
+}
+
+@media (max-width:975px) {
+
+}
+
+<p>
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. At commodi dolor dolorum eius molestiae qui repudiandae, voluptate. Ad aliquam dolor, labore natus necessitatibus nesciunt temporibus. Ad deserunt eius recusandae? Aspernatur.
+  </p>,
+  @media (min-width:760px) {
+
+}
+
+@media (min-width:760px) {
+
+}
+
+@media (min-width:760px) {
+
+}
+
+@media not all and (min-width:976px) {
+
+}
+
+@media not all and (max-width:975px) {
+
+}
+
+@media (min-width:760px) {
+
+}
+
+@media (max-width:975px) {
+
+}
+
+@media (min-width:976px) {
+
+}
+
+@media (max-width:975px) {
+
+}
+
+@media (min-width:976px) {
+
+}
+
+@media (max-width:975px) {
+
+}
+
+@media (max-width:975px) {
+
+}
+
+@media (max-width:975px) {
+
+}
+
+<p>
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium animi autem debitis dolorem ducimus explicabo facilis fugiat impedit incidunt iusto laborum molestiae natus, obcaecati, officiis provident quae, quaerat quia soluta.
+  </p>,
+  @media (min-width:760px) {
+
+}
+
+@media (min-width:760px) {
+
+}
+
+@media (min-width:760px) {
+
+}
+
+@media not all and (min-width:976px) {
+
+}
+
+@media not all and (max-width:975px) {
+
+}
+
+@media (min-width:760px) {
+
+}
+
+@media (max-width:975px) {
+
+}
+
+@media (min-width:976px) {
+
+}
+
+@media (max-width:975px) {
+
+}
+
+@media (min-width:976px) {
+
+}
+
+@media (max-width:975px) {
+
+}
+
+@media (max-width:975px) {
+
+}
+
+@media (max-width:975px) {
+
+}
+
+<p>
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. At commodi dolor dolorum eius molestiae qui repudiandae, voluptate. Ad aliquam dolor, labore natus necessitatibus nesciunt temporibus. Ad deserunt eius recusandae? Aspernatur.
+  </p>,
 ]
 `;
 
@@ -1995,11 +3689,22 @@ Array [
   }
 }
 
+@media (max-width:975px) {
+  .c1 {
+    position: static;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 200;
+    background: #FFFFFF;
+  }
+}
+
 <div
     className="c0 c1"
   >
     <div
-      aria-label="Progress"
+      aria-label=""
       role="group"
     >
       <div
@@ -2023,7 +3728,7 @@ Array [
                   <div
                     className="c10"
                   >
-                    Not completed
+                    
                   </div>
                   <span
                     aria-hidden={true}
@@ -2091,7 +3796,7 @@ Array [
                     <div
                       className="c10"
                     >
-                      Not completed
+                      
                     </div>
                     Investment period
                   </span>
@@ -2109,7 +3814,7 @@ Array [
                     <div
                       className="c10"
                     >
-                      Not completed
+                      
                     </div>
                     Frequency
                   </span>
@@ -2127,7 +3832,7 @@ Array [
                     <div
                       className="c10"
                     >
-                      Not completed
+                      
                     </div>
                     Amount
                   </span>
@@ -2150,7 +3855,7 @@ Array [
                   <div
                     className="c10"
                   >
-                    Not completed
+                    
                   </div>
                   <span
                     aria-hidden={true}
@@ -2277,6 +3982,10 @@ Array [
 }
 
 @media (min-width:976px) {
+
+}
+
+@media (max-width:975px) {
 
 }
 

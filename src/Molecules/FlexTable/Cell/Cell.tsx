@@ -3,57 +3,65 @@ import styled from 'styled-components';
 import { isElement, isFunction } from '../../../common/utils';
 import { Flexbox } from '../../..';
 import { useFlexCellProps } from '../shared/ColumnProvider';
-import { CellComponent, InnerCellComponent } from './Cell.types';
+import { CellComponent } from './Cell.types';
 import { TextWrapper } from './TextWrapper';
+import { Density } from '../shared/shared.types';
+import { getDensityPaddings } from '../shared/textUtils';
+import getStylesForSizes from '../shared/getStylesForSizes';
 import { useFlexTable } from '../shared/FlexTableProvider';
-import { RenderForSizes } from '../shared';
 
-const StyledFlexbox = styled(Flexbox)`
-  overflow: hidden;
+type ScreenSizeConfigurableProps = { density: Density };
+type StyledFlexboxProps = {
+  $xs: ScreenSizeConfigurableProps;
+  $sm: Partial<ScreenSizeConfigurableProps>;
+  $md: Partial<ScreenSizeConfigurableProps>;
+  $lg: Partial<ScreenSizeConfigurableProps>;
+  $xl: Partial<ScreenSizeConfigurableProps>;
+};
+
+// TODO: using '!important' here because Flexbox (used in Row) sets padding-top: 0 on its children, investigate how / if this can be solved in a better way.
+const getDensityStyles = ({ density }: { density: Density }) => `
+  padding-top: ${getDensityPaddings(density)}px !important;
+  padding-bottom: ${getDensityPaddings(density)}px;
 `;
 
-const InnerCell: InnerCellComponent = React.memo(
-  ({ children, className, columnId, flexProps, fontSize }) => (
-    <StyledFlexbox className={className} role="cell" {...flexProps}>
-      {isElement(children) && children}
-      {isFunction(children)
-        ? children({ fontSize, columnId })
-        : !isElement(children) && <TextWrapper fontSize={fontSize}>{children}</TextWrapper>}
-    </StyledFlexbox>
-  ),
-);
+const StyledFlexbox = styled(Flexbox)<StyledFlexboxProps>`
+  overflow: hidden;
+  ${getStylesForSizes<{}, ScreenSizeConfigurableProps>(
+    (p: StyledFlexboxProps) => ({
+      xs: p.$xs,
+      sm: p.$sm,
+      md: p.$md,
+      lg: p.$lg,
+      xl: p.$xl,
+    }),
+    {
+      density: getDensityStyles,
+    },
+  )}
+`;
 
 const Cell: CellComponent = (props) => {
-  const { children, className, columnId } = props;
-  const {
-    fontSize: xsFontSize,
-    sm: smTable,
-    md: mdTable,
-    lg: lgTable,
-    xl: xlTable,
-  } = useFlexTable();
-
+  const { children, columnId, className } = props;
   const flexProps = useFlexCellProps(props);
+  const { xs, sm, md, lg, xl } = useFlexTable<'density'>('density');
 
   return (
-    <RenderForSizes
-      xs={{ fontSize: xsFontSize }}
-      sm={smTable}
-      md={mdTable}
-      lg={lgTable}
-      xl={xlTable}
+    <StyledFlexbox
+      className={className}
+      role="cell"
+      $xs={xs}
+      $sm={sm}
+      $md={md}
+      $lg={lg}
+      $xl={xl}
+      {...flexProps}
     >
-      {({ fontSize, className: mediaClassName }) => (
-        <InnerCell
-          className={mediaClassName ? `${className} ${mediaClassName}` : className}
-          columnId={columnId}
-          flexProps={flexProps}
-          fontSize={fontSize}
-        >
-          {children}
-        </InnerCell>
-      )}
-    </RenderForSizes>
+      {isElement(children) && children}
+      {isFunction(children)
+        ? children({ columnId })
+        : !isElement(children) && <TextWrapper>{children}</TextWrapper>}
+    </StyledFlexbox>
   );
 };
 

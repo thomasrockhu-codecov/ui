@@ -13,11 +13,13 @@ import { BellInactive } from './components/BellInactive';
 import { BellPlain } from './components/BellPlain';
 import { Bolt } from './components/Bolt';
 import { BrowserWindow } from './components/BrowserWindow';
+import { BulbInCircle } from './components/BulbInCircle';
 import { Calendar } from './components/Calendar';
 import { CalendarTwoRows } from './components/CalendarTwoRows';
 import { CandleSticks } from './components/CandleSticks';
 import { CheckMark } from './components/CheckMark';
 import { CheckMarkCircle } from './components/CheckMarkCircle';
+import { Chevron } from './components/Chevron';
 import { ChevronDown } from './components/ChevronDown';
 import { ChevronLeft } from './components/ChevronLeft';
 import { ChevronRight } from './components/ChevronRight';
@@ -129,11 +131,13 @@ export default {
   BellPlain,
   Bolt,
   BrowserWindow,
+  BulbInCircle,
   Calendar,
   CalendarTwoRows,
   CandleSticks,
   CheckMark,
   CheckMarkCircle,
+  Chevron,
   ChevronDown,
   ChevronLeft,
   ChevronRight,

@@ -13,6 +13,10 @@ import {
   ACTION_SET_INITIAL_SORTING,
 } from '../shared/ColumnProvider';
 import { HeaderContent, TextWrapper, SortIcon, SortButton } from './HeaderContent';
+import { getStylesForSizes } from '../shared';
+import { useFlexTable } from '../shared/FlexTableProvider';
+import { Density } from '../shared/shared.types';
+import { getDensityPaddings } from '../shared/textUtils';
 
 const SORT_ORDERS: SortOrder[] = [SORT_ORDER_NONE, SORT_ORDER_ASCENDING, SORT_ORDER_DESCENDING];
 
@@ -28,8 +32,35 @@ const getSortOrder = (
   initialSortOrder: SortOrder,
 ) => stateSortOrder || sortOrderProp || initialSortOrder;
 
-const StyledFlexbox = styled(Flexbox)`
+type ScreenSizeConfigurableProps = { density: Density };
+type StyledFlexboxProps = {
+  $xs: ScreenSizeConfigurableProps;
+  $sm: Partial<ScreenSizeConfigurableProps>;
+  $md: Partial<ScreenSizeConfigurableProps>;
+  $lg: Partial<ScreenSizeConfigurableProps>;
+  $xl: Partial<ScreenSizeConfigurableProps>;
+};
+
+// TODO: using '!important' here because Flexbox (used in Row) sets padding-top: 0 on its children, investigate how / if this can be solved in a better way.
+const getDensityStyles = ({ density }: { density: Density }) => `
+  padding-top: ${getDensityPaddings(density)}px !important;
+  padding-bottom: ${getDensityPaddings(density)}px;
+`;
+
+const StyledFlexbox = styled(Flexbox)<StyledFlexboxProps>`
   overflow: hidden;
+  ${getStylesForSizes<{}, ScreenSizeConfigurableProps>(
+    (p: StyledFlexboxProps) => ({
+      xs: p.$xs,
+      sm: p.$sm,
+      md: p.$md,
+      lg: p.$lg,
+      xl: p.$xl,
+    }),
+    {
+      density: getDensityStyles,
+    },
+  )}
 `;
 
 const Header: HeaderComponent = (props) => {
@@ -42,6 +73,8 @@ const Header: HeaderComponent = (props) => {
     onSort = () => {},
     columnId,
   } = props;
+
+  const { xs, sm, md, lg, xl } = useFlexTable<'density'>('density');
 
   const [columnState, columnDispatch] = useColumnData(columnId);
   const sortOrder = sortable
@@ -77,7 +110,17 @@ const Header: HeaderComponent = (props) => {
 
   const sorted = !R.isNil(sortOrder) && sortOrder !== SORT_ORDER_NONE;
   return (
-    <StyledFlexbox className={className} role="columnheader" {...ariaSorted} {...cellFlexProps}>
+    <StyledFlexbox
+      className={className}
+      role="columnheader"
+      $xs={xs}
+      $sm={sm}
+      $md={md}
+      $lg={lg}
+      $xl={xl}
+      {...ariaSorted}
+      {...cellFlexProps}
+    >
       {isElement(children) && children}
       {isFunction(children)
         ? children({ sortable, sortOrder, onSortClick, sorted, columnId })

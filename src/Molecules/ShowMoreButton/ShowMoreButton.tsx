@@ -4,7 +4,7 @@ import styled from 'styled-components';
 import { Icon, Link, Flexbox, Spinner } from '../..';
 import { ShowMoreButtonComponent } from './ShowMoreButton.types';
 
-const StyledIconThinChevron = styled(Icon.ThinChevron)`
+const StyledIconThinChevron = styled(Icon.Chevron)`
   margin-left: ${(p) => p.theme.spacing.unit(1)}px;
 `;
 

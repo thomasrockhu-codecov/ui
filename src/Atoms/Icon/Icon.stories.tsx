@@ -45,13 +45,49 @@ export const thinArrowLeft = () => (
 
 export const thinChevronUp = () => (
   <span>
-    <Icon.ThinChevron direction={select('Direction', ['up', 'down'], 'up')} />
+    <Icon.ThinChevron direction={select('Direction', ['up', 'right', 'down', 'left'], 'up')} />
   </span>
 );
 
 export const thinChevronDown = () => (
   <span>
-    <Icon.ThinChevron direction={select('Direction', ['up', 'down'], 'down')} />
+    <Icon.ThinChevron direction={select('Direction', ['up', 'right', 'down', 'left'], 'down')} />
+  </span>
+);
+
+export const thinChevronLeft = () => (
+  <span>
+    <Icon.ThinChevron direction={select('Direction', ['up', 'right', 'down', 'left'], 'left')} />
+  </span>
+);
+
+export const thinChevronRight = () => (
+  <span>
+    <Icon.ThinChevron direction={select('Direction', ['up', 'right', 'down', 'left'], 'right')} />
+  </span>
+);
+
+export const chevronUp = () => (
+  <span>
+    <Icon.Chevron direction={select('Direction', ['up', 'down', 'left', 'right'], 'up')} />
+  </span>
+);
+
+export const chevronDown = () => (
+  <span>
+    <Icon.Chevron direction={select('Direction', ['up', 'down', 'left', 'right'], 'down')} />
+  </span>
+);
+
+export const chevronLeft = () => (
+  <span>
+    <Icon.Chevron direction={select('Direction', ['up', 'down', 'left', 'right'], 'left')} />
+  </span>
+);
+
+export const chevronRight = () => (
+  <span>
+    <Icon.Chevron direction={select('Direction', ['up', 'down', 'left', 'right'], 'right')} />
   </span>
 );
 
@@ -173,6 +209,7 @@ export const allIconsColored = () => (
       <div style={{ outline: '1px dashed #bbb', display: 'inline-block' }}>
         <IconComponent
           color={(t: any) => t.color.cta}
+          fill={(t: any) => t.color.cta}
           {...(key === 'SharevilleLogo' ? { id: 'shareville-logo' } : {})}
         />
       </div>

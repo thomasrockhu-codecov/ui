@@ -193,7 +193,7 @@ export const SelectionCard: SelectionCardComponent = ({
           <Flexbox item>{tag && <Tag type="secondary">{tag}</Tag>}</Flexbox>
           <Box pt={4} pr={5}>
             {!disabled && !selected && outline && <CircleOutline />}
-            {!disabled && selected && <Icon.CheckMarkCircle color={(t) => t.color.cta} />}
+            {!disabled && selected && <Icon.CheckMarkCircle fill={(t) => t.color.cta} />}
 
             <StyledInput
               type="checkbox"

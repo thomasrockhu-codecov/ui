@@ -360,6 +360,7 @@ export const quietNumber = () => (
             label="Label"
             onChange={action('onChange')}
             variant="quiet"
+            placeholder="0"
           />
         ),
         title: 'Default',
@@ -373,6 +374,7 @@ export const quietNumber = () => (
             variant="quiet"
             noSteppers
             width="100%"
+            placeholder="0"
           />
         ),
         title: 'Full width',
@@ -386,6 +388,7 @@ export const quietNumber = () => (
             variant="quiet"
             noSteppers
             disabled
+            placeholder="0"
           />
         ),
         title: 'Disabled',
@@ -399,6 +402,7 @@ export const quietNumber = () => (
             variant="quiet"
             noSteppers
             error="Some error text that will wrap itself over couple of lines"
+            placeholder="0"
           />
         ),
         title: 'Error',
@@ -411,6 +415,7 @@ export const quietNumber = () => (
             onChange={action('onChange')}
             variant="quiet"
             noSteppers
+            placeholder="0"
             success
           />
         ),

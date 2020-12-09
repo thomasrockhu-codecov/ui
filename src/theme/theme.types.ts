@@ -89,6 +89,8 @@ export type ThemeColors<Version extends ThemeColorsVersion> = {
   textLight: RawColor['white'];
   /** gray2 */
   label: RawColor['gray2'];
+  /** brandGreen */
+  bulbBackground: RawColor['brandGreen'];
   /** cta */
   buy: ChangeableColor<RawColor['cta'], RawColor['a11yCta'], Version>;
   /** ctaPressed */
@@ -101,6 +103,8 @@ export type ThemeColors<Version extends ThemeColorsVersion> = {
   bubbleBackground: RawColor['white'];
   /** gray4 */
   bubbleBorder: RawColor['gray4'];
+  /** gray2 */
+  bubbleSecondaryText: RawColor['gray2'];
   /** gray0 */
   tableBorder: RawColor['gray0'];
   /** negative */
@@ -117,6 +121,8 @@ export type ThemeColors<Version extends ThemeColorsVersion> = {
   creditsPiePrimary: RawColor['complementaryPink1'];
   /** creditsPieSecondary */
   creditsPieSecondary: RawColor['complementaryPink2'];
+  /** otherMonthDateText */
+  otherMonthDateText: RawColor['gray4'];
   /** positive */
   positive: ChangeableColor<RawColor['positive'], RawColor['a11yPositive'], Version>;
   /** negative */
@@ -187,6 +193,10 @@ export type ThemeColors<Version extends ThemeColorsVersion> = {
   tableRowBackground: RawColor['white'];
   /** gray7 */
   tableRowHover: RawColor['gray7'];
+  /** gray2 */
+  datePickerWithinRangeBackground: string;
+  /** gray2 */
+  datePickerWithinRangeFade: string;
   /** negative */
   inputBorderError: RawColor['negative'];
   /** positive */
@@ -311,6 +321,12 @@ export type ThemeColors<Version extends ThemeColorsVersion> = {
   paletteBlue: string[];
   paletteTurquoise: string[];
   paletteLineGraph: string[];
+  /** gray6 */
+  privateBankingBannerTitle: RawColor['gray6'];
+  /** white */
+  privateBankingBannerText: RawColor['white'];
+  /** gray6 */
+  privateBankingBannerBackground: RawColor['gray6'];
   /** @deprecated
    * gray3 */
   disabled: RawColor['gray3'];

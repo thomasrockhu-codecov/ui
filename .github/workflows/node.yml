@@ -1,0 +1,68 @@
+name: build
+
+on:
+  push:
+    branches:
+      - master
+      - beta
+
+  # Run tests for any PRs.
+  pull_request:
+
+env:
+  CI: true
+  GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
+  NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+
+jobs:
+  validate:
+    name: 'Validate'
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node-version: [12.18.2]
+    steps:
+      - name: checkout
+        uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
+          persist-credentials: false
+      - name: setup Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v1
+        with:
+          node-version: ${{ matrix.node-version }}
+      - name: Install
+        run: yarn install --ignore-engines
+      - name: Validate
+        run: |
+          yarn lint
+          yarn test-ci
+  release:
+    name: 'Release'
+    needs: validate
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node-version: [12.18.2]
+    steps:
+      - name: checkout
+        uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
+          persist-credentials: false
+      - name: setup Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v1
+        with:
+          node-version: ${{ matrix.node-version }}
+      - name: Install
+        run: yarn install --ignore-engines
+      - name: Release
+        if: ${{ github.event_name != 'pull_request' && github.ref == 'refs/heads/master' }}
+        run: |
+          node -v && npm -v && yarn -v
+          yarn semantic-release
+      - name: Beta release
+        if: ${{ github.event_name != 'pull_request' && github.ref == 'refs/heads/beta' }}
+        run: |
+          node -v && npm -v && yarn -v
+          yarn semantic-release

@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import MD from 'react-markdown';
+import { withKnobs, select, text, boolean } from '@storybook/addon-knobs';
 import docs from './CardWithTitle.md';
 
 import { Box, CardWithTitle, FadedScroll, Flexbox, Icon, Typography } from '../..';
@@ -42,6 +43,7 @@ export default {
   parameters: {
     component: CardWithTitle,
   },
+  decorators: [withKnobs],
 };
 
 export const documentation = () => <MD source={docs} />;
@@ -170,4 +172,22 @@ export const integrationFadedScrollWithHeightFromParent = () => {
 integrationFadedScrollWithHeightFromParent.story = {
   name:
     'Integration: with FadedScroll of content and height being whatever is available left of parents height.',
+};
+
+export const withoutAllVerticalPadding = () => (
+  <CardWithTitle
+    variant={select('Variant', ['normal', 'big'], 'normal')}
+    title={text('Title', 'This card has neither top nor bottom padding')}
+    noTopPadding={boolean('NoTopPadding', true)}
+    noBottomPadding={boolean('NoBottomPadding', true)}
+  >
+    {text(
+      'Content',
+      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed feugiat turpis erat, sit amet tincidunt purus tempus sit amet. Nullam porttitor lorem a nibh efficitur condimentum. Etiam ac dolor eget felis hendrerit pellentesque. Cras efficitur libero quis mattis condimentum. Vestibulum rhoncus nibh et euismod consequat. Etiam semper leo nisl, id aliquet libero consectetur in. Nunc vulputate nec mi eu iaculis. Quisque vel pellentesque odio. Donec tempus turpis nec vehicula tempor. Nulla facilisi. Suspendisse magna ex, vulputate quis risus non, eleifend tincidunt dui. Nam blandit vitae velit non consequat.',
+    )}
+  </CardWithTitle>
+);
+
+withoutAllVerticalPadding.story = {
+  name: 'Cards without padding',
 };

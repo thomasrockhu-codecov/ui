@@ -1,3 +1,334 @@
+## [5.4.1](https://github.com/nordnet/ui/compare/v5.4.0...v5.4.1) (2020-12-09)
+
+
+### Bug Fixes
+
+* adjust quiet input height ([386e18e](https://github.com/nordnet/ui/commit/386e18e))
+* disabled placeholder should be greyed out ([d793eb0](https://github.com/nordnet/ui/commit/d793eb0))
+* grey out the quiet placeholder on focus ([29ad23a](https://github.com/nordnet/ui/commit/29ad23a))
+
+# [5.4.0](https://github.com/nordnet/ui/compare/v5.3.4...v5.4.0) (2020-12-09)
+
+
+### Features
+
+* 🎸 make expand cell button fill up entire cell ([1388268](https://github.com/nordnet/ui/commit/1388268))
+
+## [5.3.4](https://github.com/nordnet/ui/compare/v5.3.3...v5.3.4) (2020-12-03)
+
+
+### Bug Fixes
+
+* add background color and z-index ([f320bf1](https://github.com/nordnet/ui/commit/f320bf1))
+
+## [5.3.3](https://github.com/nordnet/ui/compare/v5.3.2...v5.3.3) (2020-12-03)
+
+
+### Bug Fixes
+
+* remove skip ci check from github actions ([e5bcda9](https://github.com/nordnet/ui/commit/e5bcda9))
+
+## [5.3.2](https://github.com/nordnet/ui/compare/v5.3.1...v5.3.2) (2020-12-02)
+
+
+### Bug Fixes
+
+* fix skip ([3738080](https://github.com/nordnet/ui/commit/3738080))
+
+## [5.3.1](https://github.com/nordnet/ui/compare/v5.3.0...v5.3.1) (2020-12-02)
+
+
+### Bug Fixes
+
+* remove dublicated changelog version ([3f1fb80](https://github.com/nordnet/ui/commit/3f1fb80))
+* renable validate job again and update build badge ([f4392c7](https://github.com/nordnet/ui/commit/f4392c7))
+* try to fix release skip ([052f360](https://github.com/nordnet/ui/commit/052f360))
+
+# [5.3.0](https://github.com/nordnet/ui/compare/v5.2.2...v5.3.0) (2020-12-02)
+
+
+### Bug Fixes
+
+* add checkout step to release job ([416aa27](https://github.com/nordnet/ui/commit/416aa27))
+* add e flag to commitlint ([2969b1a](https://github.com/nordnet/ui/commit/2969b1a))
+* add fill instead of color for icons ([67cac2b](https://github.com/nordnet/ui/commit/67cac2b))
+* add needs to release job ([adf5229](https://github.com/nordnet/ui/commit/adf5229))
+* add tokens and checkout options to github actions ([6342942](https://github.com/nordnet/ui/commit/6342942))
+* added word-break break-all for longer words ([4295d78](https://github.com/nordnet/ui/commit/4295d78))
+* make commitlint run on validate ([50a5ac7](https://github.com/nordnet/ui/commit/50a5ac7))
+* missing storyshot ([45d34cb](https://github.com/nordnet/ui/commit/45d34cb))
+* move release job to own step ([3656881](https://github.com/nordnet/ui/commit/3656881))
+* pin node version ([f8f39b4](https://github.com/nordnet/ui/commit/f8f39b4))
+* remove commitlint from github actions for now ([572384c](https://github.com/nordnet/ui/commit/572384c))
+* run push event only on master and beta branches ([265e351](https://github.com/nordnet/ui/commit/265e351))
+* try to skip ci in release step ([4357aeb](https://github.com/nordnet/ui/commit/4357aeb))
+* try to skip ci in release step ([0c5146f](https://github.com/nordnet/ui/commit/0c5146f))
+* word ([e1eea43](https://github.com/nordnet/ui/commit/e1eea43))
+
+
+### Features
+
+* migrate to github actions instead of travis ([400dd97](https://github.com/nordnet/ui/commit/400dd97))
+
+## [5.2.2](https://github.com/nordnet/ui/compare/v5.2.1...v5.2.2) (2020-12-01)
+
+
+### Bug Fixes
+
+* pagination large hover color contrast ([f504420](https://github.com/nordnet/ui/commit/f504420))
+
+## [5.2.1](https://github.com/nordnet/ui/compare/v5.2.0...v5.2.1) (2020-12-01)
+
+
+### Bug Fixes
+
+* colors for Private banking marketing card ([f1c0a47](https://github.com/nordnet/ui/commit/f1c0a47))
+
+# [5.2.0](https://github.com/nordnet/ui/compare/v5.1.0...v5.2.0) (2020-12-01)
+
+
+### Bug Fixes
+
+* 🐛 set input lineheight equal to height ([175f37b](https://github.com/nordnet/ui/commit/175f37b))
+* update snaphots ([bd85040](https://github.com/nordnet/ui/commit/bd85040))
+
+
+### Features
+
+* sticky multistepprogress on mobile devices ([66e0392](https://github.com/nordnet/ui/commit/66e0392))
+
+# [5.1.0](https://github.com/nordnet/ui/compare/v5.0.0...v5.1.0) (2020-11-30)
+
+
+### Bug Fixes
+
+* 🐛 add placeholder function ([df8f6f3](https://github.com/nordnet/ui/commit/df8f6f3))
+* 🐛 align header with input field ([1875eda](https://github.com/nordnet/ui/commit/1875eda))
+* 🐛 allow user to enter end date first and refactor ([9a74e2a](https://github.com/nordnet/ui/commit/9a74e2a))
+* 🐛 default to-label to empty string ([01c9259](https://github.com/nordnet/ui/commit/01c9259))
+* 🐛 disallow single day range with prop in input submit ([d8f5353](https://github.com/nordnet/ui/commit/d8f5353))
+* 🐛 mix click/input submit handling ([0fa977d](https://github.com/nordnet/ui/commit/0fa977d))
+* 🐛 remove obsolete assertion ([3973b97](https://github.com/nordnet/ui/commit/3973b97))
+* 🐛 remvoe unnecessary default ([a3ab43c](https://github.com/nordnet/ui/commit/a3ab43c))
+* 🐛 set date with input ([13a8e41](https://github.com/nordnet/ui/commit/13a8e41))
+* 🐛 story naming and story structure ([f403850](https://github.com/nordnet/ui/commit/f403850))
+* 🐛 unify input fields submit and submit on blur ([af649b6](https://github.com/nordnet/ui/commit/af649b6))
+* 🐛 unique ids ([ab8a8cf](https://github.com/nordnet/ui/commit/ab8a8cf))
+* 🐛 unique keys ([379e9ec](https://github.com/nordnet/ui/commit/379e9ec))
+* 🐛 use one or two labels for inputs ([3789235](https://github.com/nordnet/ui/commit/3789235))
+
+
+### Features
+
+* 🎸 add double header ([66ad2e9](https://github.com/nordnet/ui/commit/66ad2e9))
+* 🎸 add double inputs with a gutter ([71a4f86](https://github.com/nordnet/ui/commit/71a4f86))
+* 🎸 disallow single date range with prop ([cc1fdf9](https://github.com/nordnet/ui/commit/cc1fdf9))
+* 🎸 wip working click range functionality ([b2aff67](https://github.com/nordnet/ui/commit/b2aff67))
+
+# [5.0.0](https://github.com/nordnet/ui/compare/v4.12.0...v5.0.0) (2020-11-30)
+
+
+### Bug Fixes
+
+* 🐛 bold footer ([9fc6a1a](https://github.com/nordnet/ui/commit/9fc6a1a))
+* 🐛 display value for expand content based on screen size ([475902a](https://github.com/nordnet/ui/commit/475902a))
+* 🐛 expand item truncation ([2a0648b](https://github.com/nordnet/ui/commit/2a0648b))
+* 🐛 remove deprecated fontSize in flextable footer story ([40cbcd9](https://github.com/nordnet/ui/commit/40cbcd9))
+* 🐛 remove non supported md prop from row ([16dd52f](https://github.com/nordnet/ui/commit/16dd52f))
+* 🐛 remove unsupported fontSize prop in types ([4d98bc9](https://github.com/nordnet/ui/commit/4d98bc9))
+
+
+### Features
+
+* 🎸 change flextable api ([9060296](https://github.com/nordnet/ui/commit/9060296))
+* 🎸 header alignment and only get styles for defined props ([99cf7cb](https://github.com/nordnet/ui/commit/99cf7cb))
+* 🎸 hide expand row when table not is not expandable ([02b4edc](https://github.com/nordnet/ui/commit/02b4edc))
+* 🎸 make a generic get styles for sizes function ([40f9fb6](https://github.com/nordnet/ui/commit/40f9fb6))
+* 🎸 migrate footer and bring back text wrappers ([473bd5c](https://github.com/nordnet/ui/commit/473bd5c))
+* 🎸 migrate to generic styles function and new useFlexTable ([f6f7d0f](https://github.com/nordnet/ui/commit/f6f7d0f))
+* 🎸 remove render for sizes for cell component ([a43ac02](https://github.com/nordnet/ui/commit/a43ac02))
+* 🎸 remove render for sizes for expandable row content ([32358e0](https://github.com/nordnet/ui/commit/32358e0))
+* 🎸 sticky header for different screen sizes ([46d34c6](https://github.com/nordnet/ui/commit/46d34c6))
+* 🎸 wip updated flex table hook, fix get styles bug ([7580ca7](https://github.com/nordnet/ui/commit/7580ca7))
+* wip rebuild render for sizes ([e9023af](https://github.com/nordnet/ui/commit/e9023af))
+* wip rebuild render for sizes for expand item ([1011f18](https://github.com/nordnet/ui/commit/1011f18))
+
+
+### BREAKING CHANGES
+
+* 🧨 removed the possibility to use fontSize as a render prop for cell
+content, Row no longer accepts media related props for expandItems and
+expandChildren
+
+# [4.12.0](https://github.com/nordnet/ui/compare/v4.11.0...v4.12.0) (2020-11-27)
+
+
+### Bug Fixes
+
+* 🐛 adjust icons with incorrect paths ([6911b32](https://github.com/nordnet/ui/commit/6911b32))
+
+
+### Features
+
+* 🎸 add props to remove top/bot padding from CardWithTitle ([45ad3db](https://github.com/nordnet/ui/commit/45ad3db))
+
+# [4.11.0](https://github.com/nordnet/ui/compare/v4.10.7...v4.11.0) (2020-11-24)
+
+
+### Bug Fixes
+
+* travis plz ([bf347ca](https://github.com/nordnet/ui/commit/bf347ca))
+
+
+### Features
+
+* 🎸 step to next/prev month with arrow keys ([8e0b9c7](https://github.com/nordnet/ui/commit/8e0b9c7))
+
+## [4.10.7](https://github.com/nordnet/ui/compare/v4.10.6...v4.10.7) (2020-11-23)
+
+
+### Bug Fixes
+
+* 🐛 conflict merge fix with modalinner and storyshots ([658b6d6](https://github.com/nordnet/ui/commit/658b6d6))
+* 🐛 margin top auto instead of flex grow container, safari ([3fccb3a](https://github.com/nordnet/ui/commit/3fccb3a))
+
+## [4.10.6](https://github.com/nordnet/ui/compare/v4.10.5...v4.10.6) (2020-11-20)
+
+
+### Bug Fixes
+
+* 🐛 date picker disabled dates via text input ([77e89b5](https://github.com/nordnet/ui/commit/77e89b5))
+
+## [4.10.5](https://github.com/nordnet/ui/compare/v4.10.4...v4.10.5) (2020-11-19)
+
+
+### Bug Fixes
+
+* 🐛 add new date to avoid potential memory reference issues ([821ebdb](https://github.com/nordnet/ui/commit/821ebdb))
+* 🐛 swap month if date is clicked outside of current month ([cd80a59](https://github.com/nordnet/ui/commit/cd80a59))
+
+## [4.10.4](https://github.com/nordnet/ui/compare/v4.10.3...v4.10.4) (2020-11-19)
+
+
+### Bug Fixes
+
+* 🐛 support selecting a single date with range picker ([4fecda4](https://github.com/nordnet/ui/commit/4fecda4))
+
+## [4.10.3](https://github.com/nordnet/ui/compare/v4.10.2...v4.10.3) (2020-11-19)
+
+
+### Bug Fixes
+
+* 🐛 drill down prop for number of visible years in dropdown ([3b2190b](https://github.com/nordnet/ui/commit/3b2190b))
+
+## [4.10.2](https://github.com/nordnet/ui/compare/v4.10.1...v4.10.2) (2020-11-19)
+
+
+### Bug Fixes
+
+* 🐛 add correct date format and skip typography for aria ([0e6a16a](https://github.com/nordnet/ui/commit/0e6a16a))
+* 🐛 removed double button label for aria ([0478b3b](https://github.com/nordnet/ui/commit/0478b3b))
+
+## [4.10.1](https://github.com/nordnet/ui/compare/v4.10.0...v4.10.1) (2020-11-18)
+
+
+### Bug Fixes
+
+* run check also without resizing ([71856c2](https://github.com/nordnet/ui/commit/71856c2))
+
+# [4.10.0](https://github.com/nordnet/ui/compare/v4.9.1...v4.10.0) (2020-11-18)
+
+
+### Features
+
+* add bulb in circle icon ([0a9cf3b](https://github.com/nordnet/ui/commit/0a9cf3b))
+* add correct background color ([1325842](https://github.com/nordnet/ui/commit/1325842))
+
+## [4.9.1](https://github.com/nordnet/ui/compare/v4.9.0...v4.9.1) (2020-11-18)
+
+
+### Bug Fixes
+
+* 🐛 date picker range click handling ([9936f2f](https://github.com/nordnet/ui/commit/9936f2f))
+
+# [4.9.0](https://github.com/nordnet/ui/compare/v4.8.0...v4.9.0) (2020-11-17)
+
+
+### Bug Fixes
+
+* 🐛 add correct border to edge days ([b1c95f1](https://github.com/nordnet/ui/commit/b1c95f1))
+* 🐛 add top and bottom margin to dates ([813bee7](https://github.com/nordnet/ui/commit/813bee7))
+* 🐛 date and year weight for date picker with range ([02c5ede](https://github.com/nordnet/ui/commit/02c5ede))
+* 🐛 date picker tests to look at style instead of class ([daadcb3](https://github.com/nordnet/ui/commit/daadcb3))
+* 🐛 date range picker input text ([3bfe84b](https://github.com/nordnet/ui/commit/3bfe84b))
+* 🐛 descriptive name for date picker ([6283fd4](https://github.com/nordnet/ui/commit/6283fd4))
+* 🐛 disabled dates functionality and styling ([5952941](https://github.com/nordnet/ui/commit/5952941))
+* 🐛 edge day types for date picker with range ([9cc9789](https://github.com/nordnet/ui/commit/9cc9789))
+* 🐛 first and last date picker day range styling for safari ([9471053](https://github.com/nordnet/ui/commit/9471053))
+* 🐛 handle date picker input key presses ([b7a9ee4](https://github.com/nordnet/ui/commit/b7a9ee4))
+* 🐛 handle range date picker hover date placement ([fc9880c](https://github.com/nordnet/ui/commit/fc9880c))
+* 🐛 handle range value ([0c8d89c](https://github.com/nordnet/ui/commit/0c8d89c))
+* 🐛 input placeholder for range date picker ([f7b7169](https://github.com/nordnet/ui/commit/f7b7169))
+* 🐛 make each calendar day focusable in date picker ([dad9a49](https://github.com/nordnet/ui/commit/dad9a49))
+* 🐛 range fade styling for date picker ([d266624](https://github.com/nordnet/ui/commit/d266624))
+* 🐛 remove initial date picker date set ([5e0891a](https://github.com/nordnet/ui/commit/5e0891a))
+* 🐛 remove selected dates in date picker if input is cleared ([cc6be37](https://github.com/nordnet/ui/commit/cc6be37))
+* 🐛 reselect issues ([af4eec3](https://github.com/nordnet/ui/commit/af4eec3))
+* 🐛 return end date as null on first click in date picker ([2af817d](https://github.com/nordnet/ui/commit/2af817d))
+* 🐛 rewrite date picker calendar day and text color ([a193805](https://github.com/nordnet/ui/commit/a193805))
+* 🐛 stop propagation in date picker handle key press ([3df067a](https://github.com/nordnet/ui/commit/3df067a))
+* 🐛 update storyshots ([e5b9a21](https://github.com/nordnet/ui/commit/e5b9a21))
+* 🐛 viewed date init reference and init input value string ([679282c](https://github.com/nordnet/ui/commit/679282c))
+
+
+### Features
+
+* 🎸 add edge of month styling functionality to date picker ([e262f74](https://github.com/nordnet/ui/commit/e262f74))
+* 🎸 add interval styling to date picker with range ([7681916](https://github.com/nordnet/ui/commit/7681916))
+* 🎸 add simple date picker with range ([1ade834](https://github.com/nordnet/ui/commit/1ade834))
+* 🎸 implement exhaustive date picker controlled state ([8a3e141](https://github.com/nordnet/ui/commit/8a3e141))
+* 🎸 move focus on initial arrow press in date picker input ([1b09645](https://github.com/nordnet/ui/commit/1b09645))
+* 🎸 remove close button in date picker input field ([6fab3af](https://github.com/nordnet/ui/commit/6fab3af))
+
+# [4.8.0](https://github.com/nordnet/ui/compare/v4.7.0...v4.8.0) (2020-11-16)
+
+
+### Bug Fixes
+
+* update snaps ([f850c9f](https://github.com/nordnet/ui/commit/f850c9f))
+* update snaps ([c71d72c](https://github.com/nordnet/ui/commit/c71d72c))
+
+
+### Features
+
+* add bubblesecondarytext color to theme ([c9d75bd](https://github.com/nordnet/ui/commit/c9d75bd))
+
+# [4.7.0](https://github.com/nordnet/ui/compare/v4.6.0...v4.7.0) (2020-11-16)
+
+
+### Bug Fixes
+
+* add types/lodash ([e6e9eca](https://github.com/nordnet/ui/commit/e6e9eca))
+* ignore ([59d973c](https://github.com/nordnet/ui/commit/59d973c))
+* make ts happy ([15b36b2](https://github.com/nordnet/ui/commit/15b36b2))
+
+
+### Features
+
+* showmore organism - fist sketch ([6bb9fec](https://github.com/nordnet/ui/commit/6bb9fec))
+
+# [4.6.0](https://github.com/nordnet/ui/compare/v4.5.3...v4.6.0) (2020-11-13)
+
+
+### Bug Fixes
+
+* add missing options ([655dc3d](https://github.com/nordnet/ui/commit/655dc3d))
+
+
+### Features
+
+* add chevron icon with direction props ([15ce2aa](https://github.com/nordnet/ui/commit/15ce2aa))
+
 ## [4.5.3](https://github.com/nordnet/ui/compare/v4.5.2...v4.5.3) (2020-11-13)
 
 
