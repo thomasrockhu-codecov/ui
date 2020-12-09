@@ -229,7 +229,7 @@ Array [
   width: 100%;
   padding: 8px;
   margin: 0;
-  line-height: 40px;
+  line-height: inherit;
   box-sizing: border-box;
   height: 40px;
   outline: none;
@@ -255,28 +255,24 @@ Array [
 
 .c7::-webkit-input-placeholder {
   color: #6E6E69;
-  height: inherit;
   line-height: inherit;
   opacity: 1;
 }
 
 .c7::-moz-placeholder {
   color: #6E6E69;
-  height: inherit;
   line-height: inherit;
   opacity: 1;
 }
 
 .c7:-ms-input-placeholder {
   color: #6E6E69;
-  height: inherit;
   line-height: inherit;
   opacity: 1;
 }
 
 .c7::placeholder {
   color: #6E6E69;
-  height: inherit;
   line-height: inherit;
   opacity: 1;
 }
@@ -460,7 +456,7 @@ exports[`Storyshots Molecules / DatePicker / DatePicker with range Default 1`] =
   width: 100%;
   padding: 8px;
   margin: 0;
-  line-height: 40px;
+  line-height: inherit;
   box-sizing: border-box;
   height: 40px;
   outline: none;
@@ -486,28 +482,24 @@ exports[`Storyshots Molecules / DatePicker / DatePicker with range Default 1`] =
 
 .c7::-webkit-input-placeholder {
   color: #6E6E69;
-  height: inherit;
   line-height: inherit;
   opacity: 1;
 }
 
 .c7::-moz-placeholder {
   color: #6E6E69;
-  height: inherit;
   line-height: inherit;
   opacity: 1;
 }
 
 .c7:-ms-input-placeholder {
   color: #6E6E69;
-  height: inherit;
   line-height: inherit;
   opacity: 1;
 }
 
 .c7::placeholder {
   color: #6E6E69;
-  height: inherit;
   line-height: inherit;
   opacity: 1;
 }
@@ -690,7 +682,7 @@ exports[`Storyshots Molecules / DatePicker / DatePicker with range Disabled Inpu
   width: 100%;
   padding: 8px;
   margin: 0;
-  line-height: 40px;
+  line-height: inherit;
   box-sizing: border-box;
   height: 40px;
   outline: none;
@@ -712,28 +704,24 @@ exports[`Storyshots Molecules / DatePicker / DatePicker with range Disabled Inpu
 
 .c7::-webkit-input-placeholder {
   color: #6E6E69;
-  height: inherit;
   line-height: inherit;
   opacity: 1;
 }
 
 .c7::-moz-placeholder {
   color: #6E6E69;
-  height: inherit;
   line-height: inherit;
   opacity: 1;
 }
 
 .c7:-ms-input-placeholder {
   color: #6E6E69;
-  height: inherit;
   line-height: inherit;
   opacity: 1;
 }
 
 .c7::placeholder {
   color: #6E6E69;
-  height: inherit;
   line-height: inherit;
   opacity: 1;
 }
@@ -917,7 +905,7 @@ exports[`Storyshots Molecules / DatePicker / DatePicker with range Same Week Dis
   width: 100%;
   padding: 8px;
   margin: 0;
-  line-height: 40px;
+  line-height: inherit;
   box-sizing: border-box;
   height: 40px;
   outline: none;
@@ -943,28 +931,24 @@ exports[`Storyshots Molecules / DatePicker / DatePicker with range Same Week Dis
 
 .c7::-webkit-input-placeholder {
   color: #6E6E69;
-  height: inherit;
   line-height: inherit;
   opacity: 1;
 }
 
 .c7::-moz-placeholder {
   color: #6E6E69;
-  height: inherit;
   line-height: inherit;
   opacity: 1;
 }
 
 .c7:-ms-input-placeholder {
   color: #6E6E69;
-  height: inherit;
   line-height: inherit;
   opacity: 1;
 }
 
 .c7::placeholder {
   color: #6E6E69;
-  height: inherit;
   line-height: inherit;
   opacity: 1;
 }
@@ -1147,7 +1131,7 @@ exports[`Storyshots Molecules / DatePicker / DatePicker with range Same Week Ena
   width: 100%;
   padding: 8px;
   margin: 0;
-  line-height: 40px;
+  line-height: inherit;
   box-sizing: border-box;
   height: 40px;
   outline: none;
@@ -1173,28 +1157,24 @@ exports[`Storyshots Molecules / DatePicker / DatePicker with range Same Week Ena
 
 .c7::-webkit-input-placeholder {
   color: #6E6E69;
-  height: inherit;
   line-height: inherit;
   opacity: 1;
 }
 
 .c7::-moz-placeholder {
   color: #6E6E69;
-  height: inherit;
   line-height: inherit;
   opacity: 1;
 }
 
 .c7:-ms-input-placeholder {
   color: #6E6E69;
-  height: inherit;
   line-height: inherit;
   opacity: 1;
 }
 
 .c7::placeholder {
   color: #6E6E69;
-  height: inherit;
   line-height: inherit;
   opacity: 1;
 }
