@@ -75,13 +75,19 @@ const Wrapper = styled(Flexbox)`
   box-shadow: 0 1px 3px ${(p) => p.theme.color.shadowInput};
 `;
 
-const AddonBox = styled(Flexbox)<{ position?: 'left' | 'right' }>`
+const getPositionStyles = (p: any) => {
+  if (p.variant === 'quiet') return 'right: 0px;';
+  if (p.position === 'right') return `right: ${p.theme.spacing.unit(2)}px;`;
+  if (p.position === 'left') return `left: ${p.theme.spacing.unit(2)}px;`;
+  return '';
+};
+
+const AddonBox = styled(Flexbox)<{ position?: 'left' | 'right'; variant?: 'quiet' | 'normal' }>`
   position: absolute;
   top: 0;
   height: 100%;
   z-index: 3;
-  ${(p) => (p.position === 'left' ? `left: ${p.theme.spacing.unit(2)}px;` : '')}
-  ${(p) => (p.position === 'right' ? `right: ${p.theme.spacing.unit(2)}px;` : '')}
+  ${getPositionStyles}
 `;
 
 const Stepper = styled.button.attrs(() => ({ type: 'button' }))<Partial<Props>>`
@@ -125,15 +131,18 @@ const Input = styled(NormalizedElements.Input).attrs(() => ({ type: 'text' }))<P
       ? `
       padding-top: ${p.theme.spacing.unit(2)}px;
       padding-bottom: ${p.theme.spacing.unit(2)}px;
-      padding-left: ${p.leftAddon ? p.theme.spacing.unit(8) : p.theme.spacing.unit(2)}px;
-      padding-right: ${p.rightAddon ? p.theme.spacing.unit(10) : p.theme.spacing.unit(2)}px;
       `
       : `
-      padding: ${p.theme.spacing.unit(2)}px;
       margin: 0 -1px;
       min-width: 0;
       z-index: 1;
       `}
+  ${(p) =>
+    p.leftAddon
+      ? `
+      padding-left: ${p.theme.spacing.unit(8)}px;
+    `
+      : ''}
   ${(p) =>
     p.variant === 'quiet'
       ? `color: ${p.theme.color.cta}; 
@@ -143,7 +152,7 @@ const Input = styled(NormalizedElements.Input).attrs(() => ({ type: 'text' }))<P
          font-size: 28px; 
          font-weight: bold;
          &:focus {
-           padding-left: ${p.theme.spacing.unit(p.leftAddon ? 8 : 2)}px;
+           padding-left: ${p.theme.spacing.unit(2)}px;
            padding-right: ${p.theme.spacing.unit(p.rightAddon ? 8 : 0)}px;
          }`
       : ''}
@@ -366,7 +375,13 @@ const NumberInput: NumberComponent & {
             </AddonBox>
           )}
           {rightAddon && (
-            <AddonBox container justifyContent="center" alignItems="center" position="right">
+            <AddonBox
+              container
+              justifyContent="center"
+              alignItems="center"
+              position="right"
+              variant={variant}
+            >
               {rightAddon}
             </AddonBox>
           )}

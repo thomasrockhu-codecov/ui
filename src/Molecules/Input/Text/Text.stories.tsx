@@ -236,14 +236,6 @@ fullWidthStory.story = {
   name: 'Full width',
 };
 
-export const leftAddonStory = () => (
-  <Input.Text label="Label" placeholder="Placeholder" leftAddon={<Icon.Bolt size={4} />} />
-);
-
-leftAddonStory.story = {
-  name: 'Left addon',
-};
-
 export const rightAddonStory = () => (
   <Input.Text label="Label" placeholder="Placeholder" rightAddon="SEK" />
 );
@@ -371,17 +363,7 @@ export const quiet = () => (
         component: <Input.Text variant="quiet" label="Label" placeholder="Placeholder" success />,
         title: 'Success',
       },
-      {
-        component: (
-          <Input.Text
-            variant="quiet"
-            label="Label"
-            placeholder="Placeholder"
-            leftAddon={<Icon.Bolt size={4} />}
-          />
-        ),
-        title: 'Left addon',
-      },
+
       {
         component: (
           <Input.Text variant="quiet" label="Label" placeholder="Placeholder" rightAddon="%" />

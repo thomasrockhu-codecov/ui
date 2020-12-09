@@ -201,14 +201,6 @@ withNoSteppers.story = {
   name: 'With no steppers',
 };
 
-export const withLeftAddon = () => (
-  <Input.Number id="insert-unique-id" label="Label" leftAddon={<Icon.Bolt size={4} />} />
-);
-
-withLeftAddon.story = {
-  name: 'With left addon',
-};
-
 export const withRightAddon = () => (
   <Input.Number id="insert-unique-id" label="Label" rightAddon="SEK" />
 );
@@ -437,21 +429,6 @@ export const quietNumber = () => (
             onChange={action('onChange')}
             variant="quiet"
             noSteppers
-            leftAddon={<Icon.Bolt size={4} />}
-            placeholder="0"
-          />
-        ),
-        title: 'Left addon',
-      },
-      {
-        component: (
-          <Input.Number
-            id="insert-unique-id"
-            label="Label"
-            onChange={action('onChange')}
-            variant="quiet"
-            noSteppers
-            placeholder="0"
             rightAddon="%"
           />
         ),
