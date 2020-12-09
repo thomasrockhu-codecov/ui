@@ -1,18 +1,14 @@
 import React from 'react';
-import styled, { css, ThemedStyledProps } from 'styled-components';
+import styled, { css } from 'styled-components';
 import * as R from 'ramda';
 import { Props, Variant, Size } from './Text.types';
 import { Flexbox, Typography, FormField } from '../../..';
 import NormalizedElements from '../../../common/NormalizedElements';
-import { Theme } from '../../../theme/theme.types';
 
 const hasError = (error?: Props['error']) => error && error !== '';
 
-const getHeight = (p: ThemedStyledProps<Size, Theme>) =>
-  p.size === 's' ? p.theme.spacing.unit(8) : p.theme.spacing.unit(10);
-
 const height = css<Size>`
-  height: ${getHeight}px;
+  height: ${(p) => (p.size === 's' ? p.theme.spacing.unit(8) : p.theme.spacing.unit(10))}px;
 `;
 
 const background = css<Pick<Props, 'disabled' | 'variant'>>`
@@ -61,7 +57,6 @@ const borderStyles = css<Pick<Props, 'error' | 'success' | 'disabled' | 'variant
 export const placeholderNormalizaion = css<Pick<Props, 'variant' | 'disabled'>>`
   &::placeholder {
     color: ${(p) => (p.variant === 'quiet' ? p.theme.color.cta : p.theme.color.label)};
-    height: inherit;
     line-height: inherit;
     opacity: 1;
   }
@@ -103,7 +98,7 @@ const Input = styled(NormalizedElements.Input).attrs((p) => ({ type: p.type || '
   width: 100%;
   padding: ${(p) => p.theme.spacing.unit(p.variant === 'quiet' ? 0 : 2)}px;
   margin: 0;
-  line-height: ${getHeight}px;
+  line-height: inherit;
   box-sizing: border-box;
   ${height}
   ${borderStyles}
