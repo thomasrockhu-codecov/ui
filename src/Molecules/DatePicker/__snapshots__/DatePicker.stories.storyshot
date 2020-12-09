@@ -140,6 +140,22 @@ Array [
   opacity: 1;
 }
 
+.c7:disabled::-webkit-input-placeholder {
+  color: #A0A09B;
+}
+
+.c7:disabled::-moz-placeholder {
+  color: #A0A09B;
+}
+
+.c7:disabled:-ms-input-placeholder {
+  color: #A0A09B;
+}
+
+.c7:disabled::placeholder {
+  color: #A0A09B;
+}
+
 .c6 {
   position: relative;
   padding: 0px 0;
@@ -351,6 +367,22 @@ Array [
   opacity: 1;
 }
 
+.c7:disabled::-webkit-input-placeholder {
+  color: #A0A09B;
+}
+
+.c7:disabled::-moz-placeholder {
+  color: #A0A09B;
+}
+
+.c7:disabled:-ms-input-placeholder {
+  color: #A0A09B;
+}
+
+.c7:disabled::placeholder {
+  color: #A0A09B;
+}
+
 .c6 {
   position: relative;
   padding: 0px 0;
@@ -560,6 +592,22 @@ Array [
   height: inherit;
   line-height: inherit;
   opacity: 1;
+}
+
+.c7:disabled::-webkit-input-placeholder {
+  color: #A0A09B;
+}
+
+.c7:disabled::-moz-placeholder {
+  color: #A0A09B;
+}
+
+.c7:disabled:-ms-input-placeholder {
+  color: #A0A09B;
+}
+
+.c7:disabled::placeholder {
+  color: #A0A09B;
 }
 
 .c6 {

@@ -58,12 +58,17 @@ const borderStyles = css<Pick<Props, 'error' | 'success' | 'disabled' | 'variant
     p.disabled && p.variant === 'quiet' ? `border-color: ${p.theme.color.disabledBackground};` : ''}
 `;
 
-export const placeholderNormalizaion = css<Pick<Props, 'variant'>>`
+export const placeholderNormalizaion = css<Pick<Props, 'variant' | 'disabled'>>`
   &::placeholder {
     color: ${(p) => (p.variant === 'quiet' ? p.theme.color.cta : p.theme.color.label)};
     height: inherit;
     line-height: inherit;
     opacity: 1;
+  }
+  ${(p) =>
+    p.variant === 'quiet' ? `&:focus::placeholder { color: ${p.theme.color.disabledText}}` : ''};
+  &:disabled::placeholder {
+    color: ${(p) => p.theme.color.disabledText};
   }
 `;
 
