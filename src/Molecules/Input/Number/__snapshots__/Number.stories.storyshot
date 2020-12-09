@@ -744,7 +744,7 @@ Array [
   top: 0;
   height: 100%;
   z-index: 3;
-  right: 8px;
+  right: 0px;
 }
 
 .c10 {
@@ -1679,6 +1679,7 @@ Array [
               <div
                 className="c18 c19 c20"
                 position="right"
+                variant="quiet"
               >
                 %
               </div>
@@ -3424,6 +3425,7 @@ exports[`Storyshots Molecules / Input / Number With both addons 1`] = `
       <div
         className="c8 c11"
         position="right"
+        variant="normal"
       >
         SEK
       </div>
@@ -6976,6 +6978,7 @@ Array [
               <div
                 className="c12 c13"
                 position="right"
+                variant="normal"
               >
                 EUR
               </div>
@@ -7374,6 +7377,7 @@ exports[`Storyshots Molecules / Input / Number With right addon 1`] = `
       <div
         className="c8 c9"
         position="right"
+        variant="normal"
       >
         SEK
       </div>

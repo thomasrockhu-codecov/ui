@@ -75,13 +75,19 @@ const Wrapper = styled(Flexbox)`
   box-shadow: 0 1px 3px ${(p) => p.theme.color.shadowInput};
 `;
 
-const AddonBox = styled(Flexbox)<{ position?: 'left' | 'right' }>`
+const getPositionStyles = (p: any) => {
+  if (p.variant === 'quiet') return 'right: 0px;';
+  if (p.position === 'right') return `right: ${p.theme.spacing.unit(2)}px;`;
+  if (p.position === 'left') return `left: ${p.theme.spacing.unit(2)}px;`;
+  return '';
+};
+
+const AddonBox = styled(Flexbox)<{ position?: 'left' | 'right'; variant?: 'quiet' | 'normal' }>`
   position: absolute;
   top: 0;
   height: 100%;
   z-index: 3;
-  ${(p) => (p.position === 'right' ? `right: ${p.theme.spacing.unit(2)}px;` : '')}
-  ${(p) => (p.position === 'left' ? `left: ${p.theme.spacing.unit(2)}px;` : '')}
+  ${getPositionStyles}
 `;
 
 const Stepper = styled.button.attrs(() => ({ type: 'button' }))<Partial<Props>>`
@@ -369,7 +375,13 @@ const NumberInput: NumberComponent & {
             </AddonBox>
           )}
           {rightAddon && (
-            <AddonBox container justifyContent="center" alignItems="center" position="right">
+            <AddonBox
+              container
+              justifyContent="center"
+              alignItems="center"
+              position="right"
+              variant={variant}
+            >
               {rightAddon}
             </AddonBox>
           )}
