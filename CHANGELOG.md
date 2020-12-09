@@ -1,3 +1,10 @@
+# [5.4.0](https://github.com/nordnet/ui/compare/v5.3.4...v5.4.0) (2020-12-09)
+
+
+### Features
+
+* 🎸 make expand cell button fill up entire cell ([1388268](https://github.com/nordnet/ui/commit/1388268))
+
 ## [5.3.4](https://github.com/nordnet/ui/compare/v5.3.3...v5.3.4) (2020-12-03)
 
 
