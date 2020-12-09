@@ -299,6 +299,22 @@ Array [
   opacity: 1;
 }
 
+.c7:disabled::-webkit-input-placeholder {
+  color: #A0A09B;
+}
+
+.c7:disabled::-moz-placeholder {
+  color: #A0A09B;
+}
+
+.c7:disabled:-ms-input-placeholder {
+  color: #A0A09B;
+}
+
+.c7:disabled::placeholder {
+  color: #A0A09B;
+}
+
 .c0 {
   width: 200px;
   display: inline-block;

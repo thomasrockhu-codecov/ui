@@ -95,6 +95,22 @@ Array [
   opacity: 1;
 }
 
+.c5:disabled::-webkit-input-placeholder {
+  color: #A0A09B;
+}
+
+.c5:disabled::-moz-placeholder {
+  color: #A0A09B;
+}
+
+.c5:disabled:-ms-input-placeholder {
+  color: #A0A09B;
+}
+
+.c5:disabled::placeholder {
+  color: #A0A09B;
+}
+
 .c0 {
   width: 200px;
   display: inline-block;
@@ -228,6 +244,22 @@ exports[`Storyshots Molecules / Input / Textarea Default 1`] = `
   height: inherit;
   line-height: inherit;
   opacity: 1;
+}
+
+.c5:disabled::-webkit-input-placeholder {
+  color: #A0A09B;
+}
+
+.c5:disabled::-moz-placeholder {
+  color: #A0A09B;
+}
+
+.c5:disabled:-ms-input-placeholder {
+  color: #A0A09B;
+}
+
+.c5:disabled::placeholder {
+  color: #A0A09B;
 }
 
 .c0 {
@@ -506,6 +538,22 @@ exports[`Storyshots Molecules / Input / Textarea Edge cases 1`] = `
   opacity: 1;
 }
 
+.c8:disabled::-webkit-input-placeholder {
+  color: #A0A09B;
+}
+
+.c8:disabled::-moz-placeholder {
+  color: #A0A09B;
+}
+
+.c8:disabled:-ms-input-placeholder {
+  color: #A0A09B;
+}
+
+.c8:disabled::placeholder {
+  color: #A0A09B;
+}
+
 .c3 {
   width: 200px;
   display: inline-block;
@@ -780,6 +828,22 @@ exports[`Storyshots Molecules / Input / Textarea Error if empty text 1`] = `
   opacity: 1;
 }
 
+.c5:disabled::-webkit-input-placeholder {
+  color: #A0A09B;
+}
+
+.c5:disabled::-moz-placeholder {
+  color: #A0A09B;
+}
+
+.c5:disabled:-ms-input-placeholder {
+  color: #A0A09B;
+}
+
+.c5:disabled::placeholder {
+  color: #A0A09B;
+}
+
 .c0 {
   width: 200px;
   display: inline-block;
@@ -928,6 +992,22 @@ exports[`Storyshots Molecules / Input / Textarea Extra info below 1`] = `
   height: inherit;
   line-height: inherit;
   opacity: 1;
+}
+
+.c5:disabled::-webkit-input-placeholder {
+  color: #A0A09B;
+}
+
+.c5:disabled::-moz-placeholder {
+  color: #A0A09B;
+}
+
+.c5:disabled:-ms-input-placeholder {
+  color: #A0A09B;
+}
+
+.c5:disabled::placeholder {
+  color: #A0A09B;
 }
 
 .c0 {
@@ -1082,6 +1162,22 @@ exports[`Storyshots Molecules / Input / Textarea Extra info with error 1`] = `
   opacity: 1;
 }
 
+.c5:disabled::-webkit-input-placeholder {
+  color: #A0A09B;
+}
+
+.c5:disabled::-moz-placeholder {
+  color: #A0A09B;
+}
+
+.c5:disabled:-ms-input-placeholder {
+  color: #A0A09B;
+}
+
+.c5:disabled::placeholder {
+  color: #A0A09B;
+}
+
 .c0 {
   width: 200px;
   display: inline-block;
@@ -1223,6 +1319,22 @@ exports[`Storyshots Molecules / Input / Textarea Full width 1`] = `
   opacity: 1;
 }
 
+.c5:disabled::-webkit-input-placeholder {
+  color: #A0A09B;
+}
+
+.c5:disabled::-moz-placeholder {
+  color: #A0A09B;
+}
+
+.c5:disabled:-ms-input-placeholder {
+  color: #A0A09B;
+}
+
+.c5:disabled::placeholder {
+  color: #A0A09B;
+}
+
 .c0 {
   width: 100%;
   display: inline-block;
@@ -1345,6 +1457,22 @@ exports[`Storyshots Molecules / Input / Textarea Hidden label 1`] = `
   height: inherit;
   line-height: inherit;
   opacity: 1;
+}
+
+.c5:disabled::-webkit-input-placeholder {
+  color: #A0A09B;
+}
+
+.c5:disabled::-moz-placeholder {
+  color: #A0A09B;
+}
+
+.c5:disabled:-ms-input-placeholder {
+  color: #A0A09B;
+}
+
+.c5:disabled::placeholder {
+  color: #A0A09B;
 }
 
 .c0 {
@@ -1502,6 +1630,22 @@ Array [
   height: inherit;
   line-height: inherit;
   opacity: 1;
+}
+
+.c8:disabled::-webkit-input-placeholder {
+  color: #A0A09B;
+}
+
+.c8:disabled::-moz-placeholder {
+  color: #A0A09B;
+}
+
+.c8:disabled:-ms-input-placeholder {
+  color: #A0A09B;
+}
+
+.c8:disabled::placeholder {
+  color: #A0A09B;
 }
 
 .c3 {
@@ -1764,6 +1908,22 @@ exports[`Storyshots Molecules / Input / Textarea Specific width 1`] = `
   opacity: 1;
 }
 
+.c5:disabled::-webkit-input-placeholder {
+  color: #A0A09B;
+}
+
+.c5:disabled::-moz-placeholder {
+  color: #A0A09B;
+}
+
+.c5:disabled:-ms-input-placeholder {
+  color: #A0A09B;
+}
+
+.c5:disabled::placeholder {
+  color: #A0A09B;
+}
+
 .c0 {
   width: 400px;
   display: inline-block;
@@ -1889,6 +2049,22 @@ exports[`Storyshots Molecules / Input / Textarea Success 1`] = `
   height: inherit;
   line-height: inherit;
   opacity: 1;
+}
+
+.c5:disabled::-webkit-input-placeholder {
+  color: #A0A09B;
+}
+
+.c5:disabled::-moz-placeholder {
+  color: #A0A09B;
+}
+
+.c5:disabled:-ms-input-placeholder {
+  color: #A0A09B;
+}
+
+.c5:disabled::placeholder {
+  color: #A0A09B;
 }
 
 .c0 {
@@ -2018,6 +2194,22 @@ exports[`Storyshots Molecules / Input / Textarea With auto focus 1`] = `
   opacity: 1;
 }
 
+.c5:disabled::-webkit-input-placeholder {
+  color: #A0A09B;
+}
+
+.c5:disabled::-moz-placeholder {
+  color: #A0A09B;
+}
+
+.c5:disabled:-ms-input-placeholder {
+  color: #A0A09B;
+}
+
+.c5:disabled::placeholder {
+  color: #A0A09B;
+}
+
 .c0 {
   width: 200px;
   display: inline-block;
@@ -2144,6 +2336,22 @@ exports[`Storyshots Molecules / Input / Textarea With default value (Uncontrolle
   height: inherit;
   line-height: inherit;
   opacity: 1;
+}
+
+.c5:disabled::-webkit-input-placeholder {
+  color: #A0A09B;
+}
+
+.c5:disabled::-moz-placeholder {
+  color: #A0A09B;
+}
+
+.c5:disabled:-ms-input-placeholder {
+  color: #A0A09B;
+}
+
+.c5:disabled::placeholder {
+  color: #A0A09B;
 }
 
 .c0 {
@@ -2293,6 +2501,22 @@ Array [
   height: inherit;
   line-height: inherit;
   opacity: 1;
+}
+
+.c8:disabled::-webkit-input-placeholder {
+  color: #A0A09B;
+}
+
+.c8:disabled::-moz-placeholder {
+  color: #A0A09B;
+}
+
+.c8:disabled:-ms-input-placeholder {
+  color: #A0A09B;
+}
+
+.c8:disabled::placeholder {
+  color: #A0A09B;
 }
 
 .c0 {
@@ -2478,6 +2702,22 @@ exports[`Storyshots Molecules / Input / Textarea With tooltip as label addon 1`]
   opacity: 1;
 }
 
+.c8:disabled::-webkit-input-placeholder {
+  color: #A0A09B;
+}
+
+.c8:disabled::-moz-placeholder {
+  color: #A0A09B;
+}
+
+.c8:disabled:-ms-input-placeholder {
+  color: #A0A09B;
+}
+
+.c8:disabled::placeholder {
+  color: #A0A09B;
+}
+
 .c0 {
   width: 200px;
   display: inline-block;
@@ -2640,6 +2880,22 @@ exports[`Storyshots Molecules / Input / Textarea With value (Controlled behaviou
   height: inherit;
   line-height: inherit;
   opacity: 1;
+}
+
+.c5:disabled::-webkit-input-placeholder {
+  color: #A0A09B;
+}
+
+.c5:disabled::-moz-placeholder {
+  color: #A0A09B;
+}
+
+.c5:disabled:-ms-input-placeholder {
+  color: #A0A09B;
+}
+
+.c5:disabled::placeholder {
+  color: #A0A09B;
 }
 
 .c0 {

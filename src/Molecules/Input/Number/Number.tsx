@@ -2,7 +2,7 @@ import React, { useState, useRef } from 'react';
 import { useIntl } from 'react-intl';
 import styled, { css } from 'styled-components';
 import * as R from 'ramda';
-import { Props, NumberComponent } from './Number.types';
+import { Props, NumberComponent, Variant } from './Number.types';
 import { Flexbox, VisuallyHidden, Icon, Typography, FormField } from '../../..';
 import NormalizedElements from '../../../common/NormalizedElements';
 import { getStringAsNumber, getNumberAsString } from './utils';
@@ -12,14 +12,17 @@ import { placeholderNormalizaion } from '../Text/Text';
 
 const hasError = (error?: Props['error']) => error && error !== '';
 const removeNonNumberCharacters = R.replace(/[^0-9\-.,]+/, '');
+const calculateHeight = (p: any, variant: Variant | undefined, size: 's' | undefined) => {
+  if (variant === 'quiet') return 'auto';
+  return size === 's' ? `${p.theme.spacing.unit(8)}px` : `${p.theme.spacing.unit(10)}px`;
+};
 
 const width = css<Pick<Props, 'size'>>`
   width: ${(p) => (p.size === 's' ? p.theme.spacing.unit(8) : p.theme.spacing.unit(10))}px;
 `;
 
 const height = css<Pick<Props, 'variant' | 'size'>>`
-  height: ${(p) => (p.size === 's' ? p.theme.spacing.unit(8) : p.theme.spacing.unit(10))}px;
-  height: ${(p) => (p.variant === 'quiet' ? 'auto' : '')};
+  height: ${(p) => calculateHeight(p, p.variant, p.size)};
 `;
 
 const background = css<Pick<Props, 'disabled' | 'variant'>>`

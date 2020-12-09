@@ -102,6 +102,22 @@ Array [
   opacity: 1;
 }
 
+.c6:disabled::-webkit-input-placeholder {
+  color: #A0A09B;
+}
+
+.c6:disabled::-moz-placeholder {
+  color: #A0A09B;
+}
+
+.c6:disabled:-ms-input-placeholder {
+  color: #A0A09B;
+}
+
+.c6:disabled::placeholder {
+  color: #A0A09B;
+}
+
 .c5 {
   position: relative;
   padding: 0px 0;
@@ -252,6 +268,22 @@ exports[`Storyshots Molecules / Input / Text Alternating Types 1`] = `
   opacity: 1;
 }
 
+.c6:disabled::-webkit-input-placeholder {
+  color: #A0A09B;
+}
+
+.c6:disabled::-moz-placeholder {
+  color: #A0A09B;
+}
+
+.c6:disabled:-ms-input-placeholder {
+  color: #A0A09B;
+}
+
+.c6:disabled::placeholder {
+  color: #A0A09B;
+}
+
 .c7 {
   font-family: inherit;
   font-size: 100%;
@@ -311,6 +343,22 @@ exports[`Storyshots Molecules / Input / Text Alternating Types 1`] = `
   height: inherit;
   line-height: inherit;
   opacity: 1;
+}
+
+.c7:disabled::-webkit-input-placeholder {
+  color: #A0A09B;
+}
+
+.c7:disabled::-moz-placeholder {
+  color: #A0A09B;
+}
+
+.c7:disabled:-ms-input-placeholder {
+  color: #A0A09B;
+}
+
+.c7:disabled::placeholder {
+  color: #A0A09B;
 }
 
 .c7[type="search"] {
@@ -615,6 +663,22 @@ exports[`Storyshots Molecules / Input / Text Both addons 1`] = `
   opacity: 1;
 }
 
+.c6:disabled::-webkit-input-placeholder {
+  color: #A0A09B;
+}
+
+.c6:disabled::-moz-placeholder {
+  color: #A0A09B;
+}
+
+.c6:disabled:-ms-input-placeholder {
+  color: #A0A09B;
+}
+
+.c6:disabled::placeholder {
+  color: #A0A09B;
+}
+
 .c5 {
   position: relative;
   padding: 0px 0;
@@ -781,6 +845,22 @@ exports[`Storyshots Molecules / Input / Text Default 1`] = `
   height: inherit;
   line-height: inherit;
   opacity: 1;
+}
+
+.c6:disabled::-webkit-input-placeholder {
+  color: #A0A09B;
+}
+
+.c6:disabled::-moz-placeholder {
+  color: #A0A09B;
+}
+
+.c6:disabled:-ms-input-placeholder {
+  color: #A0A09B;
+}
+
+.c6:disabled::placeholder {
+  color: #A0A09B;
 }
 
 .c5 {
@@ -1322,6 +1402,22 @@ exports[`Storyshots Molecules / Input / Text Edge cases 1`] = `
   opacity: 1;
 }
 
+.c9:disabled::-webkit-input-placeholder {
+  color: #A0A09B;
+}
+
+.c9:disabled::-moz-placeholder {
+  color: #A0A09B;
+}
+
+.c9:disabled:-ms-input-placeholder {
+  color: #A0A09B;
+}
+
+.c9:disabled::placeholder {
+  color: #A0A09B;
+}
+
 .c8 {
   position: relative;
   padding: 0px 0;
@@ -1614,6 +1710,22 @@ exports[`Storyshots Molecules / Input / Text Error if empty text 1`] = `
   opacity: 1;
 }
 
+.c6:disabled::-webkit-input-placeholder {
+  color: #A0A09B;
+}
+
+.c6:disabled::-moz-placeholder {
+  color: #A0A09B;
+}
+
+.c6:disabled:-ms-input-placeholder {
+  color: #A0A09B;
+}
+
+.c6:disabled::placeholder {
+  color: #A0A09B;
+}
+
 .c5 {
   position: relative;
   padding: 0px 0;
@@ -1777,6 +1889,22 @@ exports[`Storyshots Molecules / Input / Text Extra info below 1`] = `
   height: inherit;
   line-height: inherit;
   opacity: 1;
+}
+
+.c6:disabled::-webkit-input-placeholder {
+  color: #A0A09B;
+}
+
+.c6:disabled::-moz-placeholder {
+  color: #A0A09B;
+}
+
+.c6:disabled:-ms-input-placeholder {
+  color: #A0A09B;
+}
+
+.c6:disabled::placeholder {
+  color: #A0A09B;
 }
 
 .c5 {
@@ -1944,6 +2072,22 @@ exports[`Storyshots Molecules / Input / Text Extra info with error 1`] = `
   height: inherit;
   line-height: inherit;
   opacity: 1;
+}
+
+.c6:disabled::-webkit-input-placeholder {
+  color: #A0A09B;
+}
+
+.c6:disabled::-moz-placeholder {
+  color: #A0A09B;
+}
+
+.c6:disabled:-ms-input-placeholder {
+  color: #A0A09B;
+}
+
+.c6:disabled::placeholder {
+  color: #A0A09B;
 }
 
 .c5 {
@@ -2182,6 +2326,22 @@ Array [
   opacity: 1;
 }
 
+.c9:disabled::-webkit-input-placeholder {
+  color: #A0A09B;
+}
+
+.c9:disabled::-moz-placeholder {
+  color: #A0A09B;
+}
+
+.c9:disabled:-ms-input-placeholder {
+  color: #A0A09B;
+}
+
+.c9:disabled::placeholder {
+  color: #A0A09B;
+}
+
 .c10 {
   font-family: inherit;
   font-size: 100%;
@@ -2244,6 +2404,22 @@ Array [
   opacity: 1;
 }
 
+.c10:disabled::-webkit-input-placeholder {
+  color: #A0A09B;
+}
+
+.c10:disabled::-moz-placeholder {
+  color: #A0A09B;
+}
+
+.c10:disabled:-ms-input-placeholder {
+  color: #A0A09B;
+}
+
+.c10:disabled::placeholder {
+  color: #A0A09B;
+}
+
 .c14 {
   font-family: inherit;
   font-size: 100%;
@@ -2304,6 +2480,22 @@ Array [
   height: inherit;
   line-height: inherit;
   opacity: 1;
+}
+
+.c14:disabled::-webkit-input-placeholder {
+  color: #A0A09B;
+}
+
+.c14:disabled::-moz-placeholder {
+  color: #A0A09B;
+}
+
+.c14:disabled:-ms-input-placeholder {
+  color: #A0A09B;
+}
+
+.c14:disabled::placeholder {
+  color: #A0A09B;
 }
 
 .c8 {
@@ -2649,6 +2841,22 @@ exports[`Storyshots Molecules / Input / Text Hidden label 1`] = `
   opacity: 1;
 }
 
+.c6:disabled::-webkit-input-placeholder {
+  color: #A0A09B;
+}
+
+.c6:disabled::-moz-placeholder {
+  color: #A0A09B;
+}
+
+.c6:disabled:-ms-input-placeholder {
+  color: #A0A09B;
+}
+
+.c6:disabled::placeholder {
+  color: #A0A09B;
+}
+
 .c5 {
   position: relative;
   padding: 0px 0;
@@ -2830,6 +3038,22 @@ exports[`Storyshots Molecules / Input / Text Left addon 1`] = `
   height: inherit;
   line-height: inherit;
   opacity: 1;
+}
+
+.c6:disabled::-webkit-input-placeholder {
+  color: #A0A09B;
+}
+
+.c6:disabled::-moz-placeholder {
+  color: #A0A09B;
+}
+
+.c6:disabled:-ms-input-placeholder {
+  color: #A0A09B;
+}
+
+.c6:disabled::placeholder {
+  color: #A0A09B;
 }
 
 .c5 {
@@ -3149,6 +3373,22 @@ Array [
   color: #A0A09B;
 }
 
+.c9:disabled::-webkit-input-placeholder {
+  color: #A0A09B;
+}
+
+.c9:disabled::-moz-placeholder {
+  color: #A0A09B;
+}
+
+.c9:disabled:-ms-input-placeholder {
+  color: #A0A09B;
+}
+
+.c9:disabled::placeholder {
+  color: #A0A09B;
+}
+
 .c9:disabled {
   color: #A0A09B;
 }
@@ -3340,6 +3580,22 @@ Array [
   color: #A0A09B;
 }
 
+.c13:disabled::-webkit-input-placeholder {
+  color: #A0A09B;
+}
+
+.c13:disabled::-moz-placeholder {
+  color: #A0A09B;
+}
+
+.c13:disabled:-ms-input-placeholder {
+  color: #A0A09B;
+}
+
+.c13:disabled::placeholder {
+  color: #A0A09B;
+}
+
 .c13:disabled {
   color: #A0A09B;
 }
@@ -3426,6 +3682,22 @@ Array [
 }
 
 .c16:focus::placeholder {
+  color: #A0A09B;
+}
+
+.c16:disabled::-webkit-input-placeholder {
+  color: #A0A09B;
+}
+
+.c16:disabled::-moz-placeholder {
+  color: #A0A09B;
+}
+
+.c16:disabled:-ms-input-placeholder {
+  color: #A0A09B;
+}
+
+.c16:disabled::placeholder {
   color: #A0A09B;
 }
 
@@ -3519,6 +3791,22 @@ Array [
   color: #A0A09B;
 }
 
+.c17:disabled::-webkit-input-placeholder {
+  color: #A0A09B;
+}
+
+.c17:disabled::-moz-placeholder {
+  color: #A0A09B;
+}
+
+.c17:disabled:-ms-input-placeholder {
+  color: #A0A09B;
+}
+
+.c17:disabled::placeholder {
+  color: #A0A09B;
+}
+
 .c17:disabled {
   color: #A0A09B;
 }
@@ -3606,6 +3894,22 @@ Array [
 }
 
 .c22:focus::placeholder {
+  color: #A0A09B;
+}
+
+.c22:disabled::-webkit-input-placeholder {
+  color: #A0A09B;
+}
+
+.c22:disabled::-moz-placeholder {
+  color: #A0A09B;
+}
+
+.c22:disabled:-ms-input-placeholder {
+  color: #A0A09B;
+}
+
+.c22:disabled::placeholder {
   color: #A0A09B;
 }
 
@@ -4193,6 +4497,22 @@ Array [
   opacity: 1;
 }
 
+.c9:disabled::-webkit-input-placeholder {
+  color: #A0A09B;
+}
+
+.c9:disabled::-moz-placeholder {
+  color: #A0A09B;
+}
+
+.c9:disabled:-ms-input-placeholder {
+  color: #A0A09B;
+}
+
+.c9:disabled::placeholder {
+  color: #A0A09B;
+}
+
 .c8 {
   position: relative;
   padding: 0px 0;
@@ -4496,6 +4816,22 @@ exports[`Storyshots Molecules / Input / Text Right addon 1`] = `
   height: inherit;
   line-height: inherit;
   opacity: 1;
+}
+
+.c6:disabled::-webkit-input-placeholder {
+  color: #A0A09B;
+}
+
+.c6:disabled::-moz-placeholder {
+  color: #A0A09B;
+}
+
+.c6:disabled:-ms-input-placeholder {
+  color: #A0A09B;
+}
+
+.c6:disabled::placeholder {
+  color: #A0A09B;
 }
 
 .c5 {
@@ -4812,6 +5148,22 @@ exports[`Storyshots Molecules / Input / Text Simple login form 1`] = `
   opacity: 1;
 }
 
+.c9:disabled::-webkit-input-placeholder {
+  color: #A0A09B;
+}
+
+.c9:disabled::-moz-placeholder {
+  color: #A0A09B;
+}
+
+.c9:disabled:-ms-input-placeholder {
+  color: #A0A09B;
+}
+
+.c9:disabled::placeholder {
+  color: #A0A09B;
+}
+
 .c11 {
   font-family: inherit;
   font-size: 100%;
@@ -4871,6 +5223,22 @@ exports[`Storyshots Molecules / Input / Text Simple login form 1`] = `
   height: inherit;
   line-height: inherit;
   opacity: 1;
+}
+
+.c11:disabled::-webkit-input-placeholder {
+  color: #A0A09B;
+}
+
+.c11:disabled::-moz-placeholder {
+  color: #A0A09B;
+}
+
+.c11:disabled:-ms-input-placeholder {
+  color: #A0A09B;
+}
+
+.c11:disabled::placeholder {
+  color: #A0A09B;
 }
 
 .c8 {
@@ -5198,6 +5566,22 @@ Array [
   opacity: 1;
 }
 
+.c9:disabled::-webkit-input-placeholder {
+  color: #A0A09B;
+}
+
+.c9:disabled::-moz-placeholder {
+  color: #A0A09B;
+}
+
+.c9:disabled:-ms-input-placeholder {
+  color: #A0A09B;
+}
+
+.c9:disabled::placeholder {
+  color: #A0A09B;
+}
+
 .c11 {
   font-family: inherit;
   font-size: 100%;
@@ -5257,6 +5641,22 @@ Array [
   height: inherit;
   line-height: inherit;
   opacity: 1;
+}
+
+.c11:disabled::-webkit-input-placeholder {
+  color: #A0A09B;
+}
+
+.c11:disabled::-moz-placeholder {
+  color: #A0A09B;
+}
+
+.c11:disabled:-ms-input-placeholder {
+  color: #A0A09B;
+}
+
+.c11:disabled::placeholder {
+  color: #A0A09B;
 }
 
 .c14 {
@@ -5321,6 +5721,22 @@ Array [
   opacity: 1;
 }
 
+.c14:disabled::-webkit-input-placeholder {
+  color: #A0A09B;
+}
+
+.c14:disabled::-moz-placeholder {
+  color: #A0A09B;
+}
+
+.c14:disabled:-ms-input-placeholder {
+  color: #A0A09B;
+}
+
+.c14:disabled::placeholder {
+  color: #A0A09B;
+}
+
 .c18 {
   font-family: inherit;
   font-size: 100%;
@@ -5381,6 +5797,22 @@ Array [
   height: inherit;
   line-height: inherit;
   opacity: 1;
+}
+
+.c18:disabled::-webkit-input-placeholder {
+  color: #A0A09B;
+}
+
+.c18:disabled::-moz-placeholder {
+  color: #A0A09B;
+}
+
+.c18:disabled:-ms-input-placeholder {
+  color: #A0A09B;
+}
+
+.c18:disabled::placeholder {
+  color: #A0A09B;
 }
 
 .c8 {
@@ -5835,6 +6267,22 @@ exports[`Storyshots Molecules / Input / Text Success 1`] = `
   opacity: 1;
 }
 
+.c6:disabled::-webkit-input-placeholder {
+  color: #A0A09B;
+}
+
+.c6:disabled::-moz-placeholder {
+  color: #A0A09B;
+}
+
+.c6:disabled:-ms-input-placeholder {
+  color: #A0A09B;
+}
+
+.c6:disabled::placeholder {
+  color: #A0A09B;
+}
+
 .c5 {
   position: relative;
   padding: 0px 0;
@@ -5978,6 +6426,22 @@ Array [
   opacity: 1;
 }
 
+.c6:disabled::-webkit-input-placeholder {
+  color: #A0A09B;
+}
+
+.c6:disabled::-moz-placeholder {
+  color: #A0A09B;
+}
+
+.c6:disabled:-ms-input-placeholder {
+  color: #A0A09B;
+}
+
+.c6:disabled::placeholder {
+  color: #A0A09B;
+}
+
 .c5 {
   position: relative;
   padding: 0px 0;
@@ -6118,6 +6582,22 @@ Array [
   opacity: 1;
 }
 
+.c6:disabled::-webkit-input-placeholder {
+  color: #A0A09B;
+}
+
+.c6:disabled::-moz-placeholder {
+  color: #A0A09B;
+}
+
+.c6:disabled:-ms-input-placeholder {
+  color: #A0A09B;
+}
+
+.c6:disabled::placeholder {
+  color: #A0A09B;
+}
+
 .c5 {
   position: relative;
   padding: 0px 0;
@@ -6256,6 +6736,22 @@ Array [
   height: inherit;
   line-height: inherit;
   opacity: 1;
+}
+
+.c6:disabled::-webkit-input-placeholder {
+  color: #A0A09B;
+}
+
+.c6:disabled::-moz-placeholder {
+  color: #A0A09B;
+}
+
+.c6:disabled:-ms-input-placeholder {
+  color: #A0A09B;
+}
+
+.c6:disabled::placeholder {
+  color: #A0A09B;
 }
 
 .c5 {
@@ -6402,6 +6898,22 @@ exports[`Storyshots Molecules / Input / Text With auto focus 1`] = `
   opacity: 1;
 }
 
+.c6:disabled::-webkit-input-placeholder {
+  color: #A0A09B;
+}
+
+.c6:disabled::-moz-placeholder {
+  color: #A0A09B;
+}
+
+.c6:disabled:-ms-input-placeholder {
+  color: #A0A09B;
+}
+
+.c6:disabled::placeholder {
+  color: #A0A09B;
+}
+
 .c5 {
   position: relative;
   padding: 0px 0;
@@ -6545,6 +7057,22 @@ exports[`Storyshots Molecules / Input / Text With default value (Uncontrolled be
   opacity: 1;
 }
 
+.c6:disabled::-webkit-input-placeholder {
+  color: #A0A09B;
+}
+
+.c6:disabled::-moz-placeholder {
+  color: #A0A09B;
+}
+
+.c6:disabled:-ms-input-placeholder {
+  color: #A0A09B;
+}
+
+.c6:disabled::placeholder {
+  color: #A0A09B;
+}
+
 .c5 {
   position: relative;
   padding: 0px 0;
@@ -6686,6 +7214,22 @@ exports[`Storyshots Molecules / Input / Text With maxLength 1`] = `
   height: inherit;
   line-height: inherit;
   opacity: 1;
+}
+
+.c6:disabled::-webkit-input-placeholder {
+  color: #A0A09B;
+}
+
+.c6:disabled::-moz-placeholder {
+  color: #A0A09B;
+}
+
+.c6:disabled:-ms-input-placeholder {
+  color: #A0A09B;
+}
+
+.c6:disabled::placeholder {
+  color: #A0A09B;
 }
 
 .c5 {
@@ -6850,6 +7394,22 @@ Array [
   height: inherit;
   line-height: inherit;
   opacity: 1;
+}
+
+.c9:disabled::-webkit-input-placeholder {
+  color: #A0A09B;
+}
+
+.c9:disabled::-moz-placeholder {
+  color: #A0A09B;
+}
+
+.c9:disabled:-ms-input-placeholder {
+  color: #A0A09B;
+}
+
+.c9:disabled::placeholder {
+  color: #A0A09B;
 }
 
 .c8 {
@@ -7050,6 +7610,22 @@ exports[`Storyshots Molecules / Input / Text With tooltip as label addon 1`] = `
   opacity: 1;
 }
 
+.c9:disabled::-webkit-input-placeholder {
+  color: #A0A09B;
+}
+
+.c9:disabled::-moz-placeholder {
+  color: #A0A09B;
+}
+
+.c9:disabled:-ms-input-placeholder {
+  color: #A0A09B;
+}
+
+.c9:disabled::placeholder {
+  color: #A0A09B;
+}
+
 .c8 {
   position: relative;
   padding: 0px 0;
@@ -7227,6 +7803,22 @@ exports[`Storyshots Molecules / Input / Text With value (Controlled behaviour) 1
   height: inherit;
   line-height: inherit;
   opacity: 1;
+}
+
+.c6:disabled::-webkit-input-placeholder {
+  color: #A0A09B;
+}
+
+.c6:disabled::-moz-placeholder {
+  color: #A0A09B;
+}
+
+.c6:disabled:-ms-input-placeholder {
+  color: #A0A09B;
+}
+
+.c6:disabled::placeholder {
+  color: #A0A09B;
 }
 
 .c5 {

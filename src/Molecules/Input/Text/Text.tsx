@@ -67,7 +67,9 @@ export const placeholderNormalizaion = css<Pick<Props, 'variant' | 'disabled'>>`
   }
   ${(p) =>
     p.variant === 'quiet' ? `&:focus::placeholder { color: ${p.theme.color.disabledText}}` : ''};
-  ${(p) => (p.disabled ? `&:disabled::placeholder { color: ${p.theme.color.disabledText}}` : '')}
+  &:disabled::placeholder {
+    color: ${(p) => p.theme.color.disabledText};
+  }
 `;
 
 const AddonBox = styled(Flexbox)<{ position?: 'left' | 'right'; variant?: Variant }>`
