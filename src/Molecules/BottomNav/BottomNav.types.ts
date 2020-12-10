@@ -4,6 +4,7 @@ export type Props = {
   onForward: React.MouseEventHandler;
   onSubmit?: React.MouseEventHandler;
   /** Switches forward button to submit */
+  hidePreviousButton?: boolean;
   isLastStep?: boolean;
   isLoading?: boolean;
   isEmbedded?: boolean;
