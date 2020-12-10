@@ -2,6 +2,13 @@ import React from 'react';
 import { action } from '@storybook/addon-actions';
 import BottomNav from './BottomNav';
 
+export default {
+  title: 'Molecules / Bottom Navigation',
+  parameters: {
+    component: BottomNav,
+  },
+};
+
 export const bottomNavigation = ({ isLastStep = false, isLoading = false }) => (
   <BottomNav
     isLastStep={isLastStep}

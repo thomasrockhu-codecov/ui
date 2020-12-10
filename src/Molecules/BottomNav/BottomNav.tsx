@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
-import { Button, Flexbox } from '../..';
+import { Flexbox } from '../..';
+import Button from '../Button';
 import { Props } from './BottomNav.types';
 
 const ForwardButton = styled(Button)`
