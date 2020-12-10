@@ -1,3 +1,10 @@
+## [5.4.4](https://github.com/nordnet/ui/compare/v5.4.3...v5.4.4) (2020-12-10)
+
+
+### Bug Fixes
+
+* 🐛 remove unfinished arrow navigation for double datepicker ([2ef0f23](https://github.com/nordnet/ui/commit/2ef0f23))
+
 ## [5.4.3](https://github.com/nordnet/ui/compare/v5.4.2...v5.4.3) (2020-12-09)
 
 
