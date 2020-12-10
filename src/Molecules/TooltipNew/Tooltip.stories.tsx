@@ -35,9 +35,32 @@ export const defaultStory = () => (
       Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, molestias. Libero
       adipisci, laboriosam id consequatur perferendis illo magnam. Provident, aut?
     </p>
-    <Tooltip label={label}>
-      <Button type="button">Hover me</Button>
-    </Tooltip>
+    <Flexbox container justifyContent="flex-end">
+      <Tooltip label={label} position="left">
+        <Button type="button">Hover me</Button>
+      </Tooltip>
+    </Flexbox>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, molestias. Libero
+      adipisci, laboriosam id consequatur perferendis illo magnam. Provident, aut?
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, molestias. Libero
+      adipisci, laboriosam id consequatur perferendis illo magnam. Provident, aut?
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, molestias. Libero
+      adipisci, laboriosam id consequatur perferendis illo magnam. Provident, aut?
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, molestias. Libero
+      adipisci, laboriosam id consequatur perferendis illo magnam. Provident, aut?
+    </p>
+    <Flexbox container justifyContent="flex-start">
+      <Tooltip label={label} position="right">
+        <Button type="button">Hover me</Button>
+      </Tooltip>
+    </Flexbox>
     <p>
       Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, molestias. Libero
       adipisci, laboriosam id consequatur perferendis illo magnam. Provident, aut?
@@ -55,7 +78,7 @@ export const defaultStory = () => (
       adipisci, laboriosam id consequatur perferendis illo magnam. Provident, aut?
     </p>
     <Flexbox container justifyContent="center">
-      <Tooltip label={label}>
+      <Tooltip label={label} position="top">
         <Button type="button">Hover me</Button>
       </Tooltip>
     </Flexbox>
@@ -193,7 +216,7 @@ export const zindexWars = () => {
     return (
       <Drawer>
         <Box mb={4}>
-          <Tooltip label={label}>
+          <Tooltip label={label} position="left">
             <Button>Hover me</Button>
           </Tooltip>
         </Box>
@@ -216,6 +239,17 @@ zindexWars.story = {
 
 export const customMaxWidth = () => (
   <Tooltip label={label} maxWidth={100}>
+    <Button type="button">Hover me</Button>
+  </Tooltip>
+);
+
+customMaxWidth.story = {
+  name: 'Custom max-width',
+};
+
+
+export const insideOfModal = () => (
+  <Tooltip label={label} position="top">
     <Button type="button">Hover me</Button>
   </Tooltip>
 );
