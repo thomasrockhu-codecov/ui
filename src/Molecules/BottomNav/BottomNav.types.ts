@@ -6,6 +6,7 @@ export type Props = {
   /** Switches forward button to submit */
   isLastStep?: boolean;
   isLoading?: boolean;
+  isEmbedded?: boolean;
   titleText?: string;
   cancelText: string;
   previousText: string;

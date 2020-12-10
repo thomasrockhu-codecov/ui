@@ -24,3 +24,20 @@ export const Default = () => (
     submitText="Submit"
   />
 );
+
+export const WebviewEmbedded = () => (
+  <BottomNav
+    isLastStep={false}
+    isLoading={false}
+    isEmbedded
+    onCancel={action('cancel')}
+    onForward={action('forward')}
+    onPrev={action('previous')}
+    onSubmit={action('submit')}
+    titleText="Title"
+    cancelText="Cancel"
+    previousText="Previous"
+    nextText="Next"
+    submitText="Submit"
+  />
+);

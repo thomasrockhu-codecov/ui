@@ -16,6 +16,7 @@ const BottomNav: React.FC<Props> = ({
   onForward,
   onPrev,
   onSubmit,
+  isEmbedded = false,
   isLoading,
   titleText,
   cancelText,
@@ -33,49 +34,60 @@ const BottomNav: React.FC<Props> = ({
         justifyContent="space-between"
         alignItems="center"
       >
-        <Flexbox item>
-          <Button
-            onClick={onCancel}
-            disabled={isLoading}
-            size="l"
-            variant="neutral"
-            color={(t) => t.color.cta}
-          >
-            {cancelText}
-          </Button>
-        </Flexbox>
-        <Flexbox
-          gutter={4}
-          sm={{ gutter: 8 }}
-          container
-          item
-          alignItems="center"
-          justifyContent="space-between"
-        >
+        {!isEmbedded && (
           <Flexbox item>
             <Button
-              onClick={onPrev}
+              onClick={onCancel}
               disabled={isLoading}
               size="l"
               variant="neutral"
               color={(t) => t.color.cta}
             >
+              {cancelText}
+            </Button>
+          </Flexbox>
+        )}
+        <Flexbox
+          gutter={4}
+          sm={{ gutter: 8 }}
+          container
+          item
+          {...(isEmbedded && { flex: '1' })}
+          alignItems="center"
+          justifyContent="space-between"
+        >
+          <Flexbox item {...(isEmbedded && { flex: '1' })}>
+            <Button
+              onClick={onPrev}
+              disabled={isLoading}
+              size="l"
+              variant="neutral"
+              fullWidth={isEmbedded}
+              color={(t) => t.color.cta}
+            >
               {previousText}
             </Button>
           </Flexbox>
-          <Flexbox item>
+          <Flexbox item {...(isEmbedded && { flex: '1' })}>
             {isLastStep ? (
               <ForwardButton
                 loading={isLoading}
                 type="submit"
                 variant="primary"
                 size="l"
+                fullWidth={isEmbedded}
                 onClick={onSubmit}
               >
                 {submitText}
               </ForwardButton>
             ) : (
-              <ForwardButton loading={isLoading} variant="primary" size="l" onClick={onForward}>
+              <ForwardButton
+                loading={isLoading}
+                variant="primary"
+                size="l"
+                onClick={onForward}
+                fullWidth={isEmbedded}
+              >
                 {nextText}
               </ForwardButton>
             )}
