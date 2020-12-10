@@ -9,10 +9,10 @@ export default {
   },
 };
 
-export const bottomNavigation = ({ isLastStep = false, isLoading = false }) => (
+export const Default = () => (
   <BottomNav
-    isLastStep={isLastStep}
-    isLoading={isLoading}
+    isLastStep={false}
+    isLoading={false}
     onCancel={action('cancel')}
     onForward={action('forward')}
     onPrev={action('previous')}
@@ -24,7 +24,3 @@ export const bottomNavigation = ({ isLastStep = false, isLoading = false }) => (
     submitText="Submit"
   />
 );
-
-bottomNavigation.story = {
-  name: 'Bottom Navigation',
-};
