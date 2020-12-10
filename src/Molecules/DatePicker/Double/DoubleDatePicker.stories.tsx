@@ -1,7 +1,7 @@
 import { action } from '@storybook/addon-actions';
 import { add, isSameWeek } from 'date-fns';
 import React, { useState } from 'react';
-import { Button, Flexbox } from '../../..';
+import { Button, Flexbox, Typography } from '../../..';
 import DatePicker from '../DatePicker';
 
 export default {
@@ -14,13 +14,16 @@ export default {
 const dateNow = new Date();
 
 export const Default = () => (
-  <DatePicker
-    id="input-id"
-    labelFrom="Label"
-    labelTo=""
-    onChange={action('Range date')}
-    variant="DOUBLE"
-  />
+  <>
+    <Typography>Observe! Arrow navigation is yet to be implemented</Typography>
+    <DatePicker
+      id="input-id"
+      labelFrom="Label"
+      labelTo=""
+      onChange={action('Range date')}
+      variant="DOUBLE"
+    />
+  </>
 );
 
 export const SameWeekDisabled = () => {

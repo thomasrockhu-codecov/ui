@@ -168,7 +168,8 @@ describe('Double date picker', () => {
     expect(onChange).toHaveLastReturnedWith([expectedStart, expectedEnd]);
   });
 
-  it('select a range by using arrowkeys', async () => {
+  // TODO: Re-implement this test when arrow navigation is added.
+  it.skip('select a range by using arrowkeys', async () => {
     const onChange = jest.fn((first: Date | null, second: Date | null) => {
       if (first && !second) return [format(first, 'MMMM d'), null];
       if (first && second) return [format(first, 'MMMM d'), format(second, 'MMMM d')];
@@ -242,7 +243,8 @@ describe('Double date picker', () => {
     expect(onChange).toHaveLastReturnedWith([expectedDate, expectedDate]);
   });
 
-  it('select a range of one day by using arrow keys', async () => {
+  // TODO: Re-implement this test when arrow navigation is added.
+  it.skip('select a range of one day by using arrow keys', async () => {
     const onChange = jest.fn((first: Date | null, second: Date | null) => {
       if (first && !second) return [format(first, 'MMMM d'), null];
       if (first && second) return [format(first, 'MMMM d'), format(second, 'MMMM d')];
@@ -348,7 +350,8 @@ describe('Double date picker', () => {
     expect(onChange).toHaveLastReturnedWith([expectedDate, null]);
   });
 
-  it('not select a range of one day by using arrow keys', async () => {
+  // TODO: Re-implement this test when arrow navigation is added.
+  it.skip('not select a range of one day by using arrow keys', async () => {
     const onChange = jest.fn((first: Date | null, second: Date | null) => {
       if (first && !second) return [format(first, 'MMMM d'), null];
       if (first && second) return [format(first, 'MMMM d'), format(second, 'MMMM d')];

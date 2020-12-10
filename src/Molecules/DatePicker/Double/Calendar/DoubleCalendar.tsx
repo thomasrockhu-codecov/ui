@@ -15,7 +15,7 @@ import { FlexProps } from '../../../../Atoms/Flexbox/Flexbox.types';
 import { Props } from './DoubleCalendar.types';
 import {
   NUMBER_OF_VISIBLE_WEEKDAYS_SINGLE,
-  NUMBER_OF_VISIBLE_WEEKS_SINGLE,
+  // NUMBER_OF_VISIBLE_WEEKS_SINGLE,
   NUMBER_OF_VISIBLE_WEEKDAYS_DOUBLE,
   NUMBER_OF_VISIBLE_ROWS_DOUBLE,
   DOUBLE_CALENDAR_GUTTER,
@@ -77,7 +77,9 @@ const DoubleCalendar: React.FC<Props> = ({
 
   const handleKeyPress = (event: React.KeyboardEvent) => {
     event.stopPropagation();
-
+    // TODO: Implement arrow navigation. Re-implement tests.
+    // Arrow navigation is temporarilty removed as it is not completely finished yet.
+    /* 
     if (R.isNil(focusedWeek) || R.isNil(focusedDay)) {
       setFocused([0, 0]);
     } else {
@@ -121,6 +123,7 @@ const DoubleCalendar: React.FC<Props> = ({
           break;
       }
     }
+    */
   };
 
   useEffect(() => {
