@@ -1,13 +1,30 @@
 import React, { cloneElement, useState } from 'react';
 import { usePopper } from 'react-popper';
 import styled from 'styled-components';
-import { TooltipComponent } from './Tooltip.types';
+import { TooltipComponent, Props } from './Tooltip.types';
 import { Typography } from '../..';
-import { BORDER_SIZE } from './consts';
+import { BORDER_SIZE, TRIANGLE_SIZE } from './consts';
 import RootPortal from './lib/RootPortal';
 
-const StyledArrow = styled.span`
-  padding: 20px;
+const StyledArrow = styled.span<{ inModal: Props['inModal'] }>`
+  &::before,
+  &::after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 0;
+    height: 0;
+  }
+
+  &::before {
+    z-index: ${(p) => (p.inModal ? p.theme.zIndex.overlayInModal : p.theme.zIndex.overlay)};
+    left: 0;
+    top: 0;
+  }
+
+  &::after {
+    z-index: ${(p) => (p.inModal ? p.theme.zIndex.overlayInModal : p.theme.zIndex.overlay)};
+  }
 `;
 
 const StyledTooltip = styled.span<any>`
@@ -20,25 +37,76 @@ const StyledTooltip = styled.span<any>`
   border: solid ${BORDER_SIZE}px ${(p) => p.theme.color.bubbleBorder};
   max-width: ${(p) => p.theme.spacing.unit(p.maxWidth)}px;
   word-break: break-all;
+`;
 
+const StyledTooltipContainer = styled.span<any>`
   &[data-popper-placement^='top'] > ${StyledArrow} {
-    bottom: -4px;
-    background: red;
-  }
-  
-  &[data-popper-placement^='bottom'] > ${StyledArrow}{
-    top: -4px;
-    background: blue;
-  }
-  
-  &[data-popper-placement^='left'] > ${StyledArrow}{
-    right: -4px;
-  }
-  
-  &[data-popper-placement^='right'] > ${StyledArrow} {
-    left: -4px;
+    &::before {
+      border-left: ${TRIANGLE_SIZE}px solid transparent;
+      border-right: ${TRIANGLE_SIZE}px solid transparent;
+      border-top: ${TRIANGLE_SIZE}px solid ${(p) => p.theme.color.bubbleBorder};
+    }
+
+    &::after {
+      left: ${BORDER_SIZE * 2}px;
+      top: 0;
+      border-left: ${TRIANGLE_SIZE - BORDER_SIZE * 2}px solid transparent;
+      border-right: ${TRIANGLE_SIZE - BORDER_SIZE * 2}px solid transparent;
+      border-top: ${TRIANGLE_SIZE - BORDER_SIZE * 2}px solid
+        ${(p) => p.theme.color.bubbleBackground};
+    }
   }
 
+  &[data-popper-placement^='bottom'] > ${StyledArrow} {
+    &::before {
+      border-left: ${TRIANGLE_SIZE}px solid transparent;
+      border-right: ${TRIANGLE_SIZE}px solid transparent;
+      border-top: ${TRIANGLE_SIZE}px solid ${(p) => p.theme.color.bubbleBorder};
+    }
+
+    &::after {
+      left: ${BORDER_SIZE * 2}px;
+      top: 0;
+      border-left: ${TRIANGLE_SIZE - BORDER_SIZE * 2}px solid transparent;
+      border-right: ${TRIANGLE_SIZE - BORDER_SIZE * 2}px solid transparent;
+      border-top: ${TRIANGLE_SIZE - BORDER_SIZE * 2}px solid
+        ${(p) => p.theme.color.bubbleBackground};
+    }
+  }
+
+  &[data-popper-placement^='left'] > ${StyledArrow} {
+    &::before {
+      border-top: ${TRIANGLE_SIZE}px solid transparent;
+      border-bottom: ${TRIANGLE_SIZE}px solid transparent;
+      border-left: ${TRIANGLE_SIZE}px solid ${(p) => p.theme.color.bubbleBorder};
+    }
+
+    &::after {
+      left: 0;
+      top: ${BORDER_SIZE * 2}px;
+      border-top: ${TRIANGLE_SIZE - BORDER_SIZE * 2}px solid transparent;
+      border-bottom: ${TRIANGLE_SIZE - BORDER_SIZE * 2}px solid transparent;
+      border-left: ${TRIANGLE_SIZE - BORDER_SIZE * 2}px solid
+        ${(p) => p.theme.color.bubbleBackground};
+    }
+  }
+
+  &[data-popper-placement^='right'] > ${StyledArrow} {
+    &::before {
+      border-top: ${TRIANGLE_SIZE}px solid transparent;
+      border-bottom: ${TRIANGLE_SIZE}px solid transparent;
+      border-right: ${TRIANGLE_SIZE}px solid ${(p) => p.theme.color.bubbleBorder};
+    }
+
+    &::after {
+      left: ${BORDER_SIZE * 2}px;
+      top: ${BORDER_SIZE * 2}px;
+      border-top: ${TRIANGLE_SIZE - BORDER_SIZE * 2}px solid transparent;
+      border-bottom: ${TRIANGLE_SIZE - BORDER_SIZE * 2}px solid transparent;
+      border-right: ${TRIANGLE_SIZE - BORDER_SIZE * 2}px solid
+        ${(p) => p.theme.color.bubbleBackground};
+    }
+  }
 `;
 
 export const Tooltip: TooltipComponent = ({
@@ -64,7 +132,7 @@ export const Tooltip: TooltipComponent = ({
       })}
 
       <RootPortal>
-        <StyledTooltip
+        <StyledTooltipContainer
           ref={setPopperElement}
           aria-label={ariaLabel}
           position={position}
@@ -73,9 +141,11 @@ export const Tooltip: TooltipComponent = ({
           style={styles.popper}
           {...attributes.popper}
         >
-           <StyledArrow ref={setArrowElement} style={styles.arrow} />
-          <Typography type="tertiary">{label}</Typography>
-        </StyledTooltip>
+          <StyledArrow ref={setArrowElement as any} inModal={inModal} style={styles.arrow} />
+          <StyledTooltip inModal={inModal}>
+            <Typography type="tertiary">{label}</Typography>
+          </StyledTooltip>
+        </StyledTooltipContainer>
       </RootPortal>
     </>
   );
