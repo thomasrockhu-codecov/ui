@@ -94,6 +94,28 @@ export const defaultStory = () => (
       Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, molestias. Libero
       adipisci, laboriosam id consequatur perferendis illo magnam. Provident, aut?
     </p>
+    <h3>Overflow hidden below</h3>
+    <div style={{ overflow: 'hidden', position: 'relative' }}>
+      <Tooltip label={label}>
+        <Button type="button">Hover me</Button>
+      </Tooltip>
+    </div>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, molestias. Libero
+      adipisci, laboriosam id consequatur perferendis illo magnam. Provident, aut?
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, molestias. Libero
+      adipisci, laboriosam id consequatur perferendis illo magnam. Provident, aut?
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, molestias. Libero
+      adipisci, laboriosam id consequatur perferendis illo magnam. Provident, aut?
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, molestias. Libero
+      adipisci, laboriosam id consequatur perferendis illo magnam. Provident, aut?
+    </p>
   </>
 );
 

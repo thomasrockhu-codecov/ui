@@ -4,6 +4,7 @@ import styled from 'styled-components';
 import { TooltipComponent } from './Tooltip.types';
 import { Typography } from '../..';
 import { BORDER_SIZE } from './consts';
+import RootPortal from './lib/RootPortal';
 
 const StyledTooltip = styled.span<any>`
   z-index: ${(p) => (p.inModal ? p.theme.zIndex.overlayInModal : p.theme.zIndex.overlay)};
@@ -36,17 +37,19 @@ export const Tooltip: TooltipComponent = ({
         ref: setReferenceElement,
       })}
 
-      <StyledTooltip
-        ref={setPopperElement}
-        aria-label={ariaLabel}
-        position={position}
-        inModal={inModal}
-        maxWidth={maxWidth}
-        style={styles.popper}
-        {...attributes.popper}
-      >
-        <Typography type="tertiary">{label}</Typography>
-      </StyledTooltip>
+      <RootPortal>
+        <StyledTooltip
+          ref={setPopperElement}
+          aria-label={ariaLabel}
+          position={position}
+          inModal={inModal}
+          maxWidth={maxWidth}
+          style={styles.popper}
+          {...attributes.popper}
+        >
+          <Typography type="tertiary">{label}</Typography>
+        </StyledTooltip>
+      </RootPortal>
     </>
   );
 };
