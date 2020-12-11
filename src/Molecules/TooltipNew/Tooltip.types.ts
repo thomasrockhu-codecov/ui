@@ -9,6 +9,7 @@ export type Props = {
   inModal?: boolean;
   /** max-width in units */
   maxWidth?: number;
+  mode?: 'hover' | 'click';
 };
 
 export type TooltipComponent = React.FC<Props>;

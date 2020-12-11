@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import styled from 'styled-components';
 import { Box, Modal, Drawer, Flexbox } from '../..';
 import Tooltip from '.';
+import OldTooltip from '../Tooltip';
 import { Display } from '../../common/Display';
 
 export default {
@@ -52,6 +53,19 @@ export const defaultStory = () => (
       Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, molestias. Libero
       adipisci, laboriosam id consequatur perferendis illo magnam. Provident, aut?
     </p>
+    <Flexbox container justifyContent="flex-end">
+      <StyledTooltip label={label} position="left">
+        <span>Touch me</span>
+      </StyledTooltip>
+    </Flexbox>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, molestias. Libero
+      adipisci, laboriosam id consequatur perferendis illo magnam. Provident, aut?
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, molestias. Libero
+      adipisci, laboriosam id consequatur perferendis illo magnam. Provident, aut?
+    </p>
     <p>
       Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, molestias. Libero
       adipisci, laboriosam id consequatur perferendis illo magnam. Provident, aut?
@@ -85,6 +99,11 @@ export const defaultStory = () => (
       <Tooltip label={label} position="top">
         <Button type="button">Hover me</Button>
       </Tooltip>
+    </Flexbox>
+    <Flexbox container justifyContent="center">
+      <OldTooltip label={label} position="top">
+        <Button type="button">Old tooltip hover me</Button>
+      </OldTooltip>
     </Flexbox>
     <p>
       Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, molestias. Libero
