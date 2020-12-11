@@ -17,6 +17,10 @@ const Button = styled.button`
   display: block;
 `;
 
+const StyledTooltip = styled(Tooltip)`
+  background: red;
+`;
+
 export const defaultStory = () => (
   <>
     <p>
@@ -36,9 +40,9 @@ export const defaultStory = () => (
       adipisci, laboriosam id consequatur perferendis illo magnam. Provident, aut?
     </p>
     <Flexbox container justifyContent="flex-end">
-      <Tooltip label={label} position="left">
+      <StyledTooltip label={label} position="left">
         <Button type="button">Hover me</Button>
-      </Tooltip>
+      </StyledTooltip>
     </Flexbox>
     <p>
       Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, molestias. Libero
@@ -216,7 +220,7 @@ export const zindexWars = () => {
     return (
       <Drawer>
         <Box mb={4}>
-          <Tooltip label={label} position="left">
+          <Tooltip inModal label={label} position="left">
             <Button>Hover me</Button>
           </Tooltip>
         </Box>
@@ -246,7 +250,6 @@ export const customMaxWidth = () => (
 customMaxWidth.story = {
   name: 'Custom max-width',
 };
-
 
 export const insideOfModal = () => (
   <Tooltip label={label} position="top">
