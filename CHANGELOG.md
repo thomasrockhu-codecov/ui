@@ -1,3 +1,17 @@
+# [5.5.0](https://github.com/nordnet/ui/compare/v5.4.4...v5.5.0) (2020-12-11)
+
+
+### Bug Fixes
+
+* add embedded styles for bottom navigation ([8966af6](https://github.com/nordnet/ui/commit/8966af6))
+* fix story for bottom navigation ([4a1a4f2](https://github.com/nordnet/ui/commit/4a1a4f2))
+* mobile styles form bottom nav ([cc1fc92](https://github.com/nordnet/ui/commit/cc1fc92))
+
+
+### Features
+
+* new molecule - bottom navigation ([199f031](https://github.com/nordnet/ui/commit/199f031))
+
 ## [5.4.4](https://github.com/nordnet/ui/compare/v5.4.3...v5.4.4) (2020-12-10)
 
 
