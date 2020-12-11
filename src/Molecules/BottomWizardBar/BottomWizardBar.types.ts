@@ -1,9 +1,9 @@
 export type Props = {
   onCancel: React.MouseEventHandler;
-  onPrev: React.MouseEventHandler;
-  onForward: React.MouseEventHandler;
+  onPrevious: React.MouseEventHandler;
+  onNext: React.MouseEventHandler;
   onSubmit?: React.MouseEventHandler;
-  /** Switches forward button to submit */
+  /** ^ Switches forward button to submit */
   hidePreviousButton?: boolean;
   isLastStep?: boolean;
   isLoading?: boolean;
@@ -13,4 +13,8 @@ export type Props = {
   previousText: string;
   nextText: string;
   submitText: string;
+  cancelButtonLink?: string;
+  previousButtonLink?: string;
+  submitButtonLink?: string;
+  nextButtonLink?: string;
 };

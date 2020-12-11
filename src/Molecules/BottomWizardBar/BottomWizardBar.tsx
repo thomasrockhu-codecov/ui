@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import { Flexbox, useMedia, Box } from '../..';
 import Button from '../Button';
-import { Props } from './BottomNav.types';
+import { Props } from './BottomWizardBar.types';
 
 const ForwardButton = styled(Button)`
   ${(p) => p.theme.media.greaterThan(p.theme.breakpoints.sm)} {
@@ -10,11 +10,11 @@ const ForwardButton = styled(Button)`
   }
 `;
 
-const BottomNav: React.FC<Props> = ({
+const BottomWizardBar: React.FC<Props> = ({
   isLastStep = false,
   onCancel,
-  onForward,
-  onPrev,
+  onNext,
+  onPrevious,
   onSubmit,
   isEmbedded = false,
   isLoading = false,
@@ -24,6 +24,10 @@ const BottomNav: React.FC<Props> = ({
   nextText,
   submitText,
   hidePreviousButton = false,
+  cancelButtonLink = '',
+  previousButtonLink = '',
+  submitButtonLink = '',
+  nextButtonLink = '',
 }) => {
   const isMobile = useMedia((t) => t.media.lessThan(t.breakpoints.sm));
 
@@ -46,6 +50,8 @@ const BottomNav: React.FC<Props> = ({
                 size="l"
                 variant="neutral"
                 color={(t) => t.color.cta}
+                type="reset"
+                {...(cancelButtonLink && { to: cancelButtonLink })}
               >
                 {cancelText}
               </Button>
@@ -63,12 +69,13 @@ const BottomNav: React.FC<Props> = ({
             {(!isMobile || isEmbedded) && !hidePreviousButton && (
               <Flexbox item {...(isEmbedded && { flex: '1' })}>
                 <Button
-                  onClick={onPrev}
+                  onClick={onPrevious}
                   disabled={isLoading}
                   size="l"
                   variant="neutral"
                   fullWidth={isEmbedded}
                   color={(t) => t.color.cta}
+                  {...(previousButtonLink && { to: previousButtonLink })}
                 >
                   {previousText}
                 </Button>
@@ -85,6 +92,7 @@ const BottomNav: React.FC<Props> = ({
                   onClick={(e) => {
                     if (onSubmit && !isLoading) onSubmit(e);
                   }}
+                  {...(submitButtonLink && { to: submitButtonLink })}
                 >
                   {submitText}
                 </ForwardButton>
@@ -94,9 +102,10 @@ const BottomNav: React.FC<Props> = ({
                   variant="primary"
                   size="l"
                   onClick={(e) => {
-                    if (onForward && !isLoading) onForward(e);
+                    if (onNext && !isLoading) onNext(e);
                   }}
                   fullWidth={isEmbedded}
+                  {...(nextButtonLink && { to: nextButtonLink })}
                 >
                   {nextText}
                 </ForwardButton>
@@ -109,4 +118,4 @@ const BottomNav: React.FC<Props> = ({
   );
 };
 
-export default BottomNav;
+export default BottomWizardBar;
