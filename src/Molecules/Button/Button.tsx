@@ -167,3 +167,4 @@ export const Button: ButtonComponent = React.forwardRef<
     </StyledButton>
   );
 });
+Button.displayName = 'Button';
