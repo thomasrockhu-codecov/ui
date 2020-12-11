@@ -2,9 +2,8 @@ import React, { cloneElement, useState } from 'react';
 import { usePopper } from 'react-popper';
 import styled from 'styled-components';
 import { TooltipComponent, Props } from './Tooltip.types';
-import { Typography } from '../..';
+import { Typography, Portal } from '../..';
 import { BORDER_SIZE, TRIANGLE_SIZE } from './consts';
-import RootPortal from './lib/RootPortal';
 
 const StyledArrow = styled.span<{ inModal: Props['inModal'] }>`
   &::before,
@@ -38,7 +37,7 @@ const StyledTooltip = styled.div<any>`
 `;
 
 const StyledTooltipContainer = styled.span<any>`
-z-index: ${(p) => p.theme.zIndex.overlayInModal};
+  z-index: ${(p) => p.theme.zIndex.overlayInModal};
   &[data-popper-placement^='top'] > ${StyledTooltip} {
     margin-bottom: ${(p) => p.theme.spacing.unit(3)}px;
   }
@@ -54,7 +53,6 @@ z-index: ${(p) => p.theme.zIndex.overlayInModal};
   &[data-popper-placement^='right'] > ${StyledTooltip} {
     margin-left: ${(p) => p.theme.spacing.unit(3)}px;
   }
-
 
   &[data-popper-placement^='top'] > ${StyledArrow} {
     bottom: 13px;
@@ -141,14 +139,14 @@ export const Tooltip: TooltipComponent = ({
   position = 'bottom',
   inModal,
   maxWidth = 50,
-  
 }) => {
   const [referenceElement, setReferenceElement] = useState(null);
   const [popperElement, setPopperElement] = useState(null);
   const [arrowElement, setArrowElement] = useState(null);
 
   const { styles, attributes } = usePopper(referenceElement, popperElement, {
-    modifiers: [{ name: 'arrow', options: { element: arrowElement }, }], placement: position
+    modifiers: [{ name: 'arrow', options: { element: arrowElement } }],
+    placement: position,
   });
 
   return (
@@ -157,7 +155,7 @@ export const Tooltip: TooltipComponent = ({
         ref: setReferenceElement,
       })}
 
-      <RootPortal>
+      <Portal>
         <StyledTooltipContainer
           ref={setPopperElement}
           aria-label={ariaLabel}
@@ -172,7 +170,7 @@ export const Tooltip: TooltipComponent = ({
             <Typography type="tertiary">{label}</Typography>
           </StyledTooltip>
         </StyledTooltipContainer>
-      </RootPortal>
+      </Portal>
     </>
   );
 };
