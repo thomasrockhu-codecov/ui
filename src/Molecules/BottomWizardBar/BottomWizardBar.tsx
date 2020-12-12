@@ -10,6 +10,10 @@ const ForwardButton = styled(Button)`
   }
 `;
 
+const StyledNav = styled.nav`
+  background-color: ${(p) => p.theme.color.card};
+`;
+
 const BottomWizardBar: React.FC<Props> = ({
   isLastStep = false,
   onCancel,
@@ -32,7 +36,7 @@ const BottomWizardBar: React.FC<Props> = ({
   const isMobile = useMedia((t) => t.media.lessThan(t.breakpoints.sm));
 
   return (
-    <nav aria-label={titleText}>
+    <StyledNav aria-label={titleText}>
       <Box py={isEmbedded ? 3 : 2} px={isEmbedded ? 4 : 3} sm={{ py: 2, px: 0 }}>
         <Flexbox
           container
@@ -113,7 +117,7 @@ const BottomWizardBar: React.FC<Props> = ({
           </Flexbox>
         </Flexbox>
       </Box>
-    </nav>
+    </StyledNav>
   );
 };
 
