@@ -31,7 +31,6 @@ const BottomWizardBar: React.FC<Props> = ({
 }) => {
   const isMobile = useMedia((t) => t.media.lessThan(t.breakpoints.sm));
 
-  /* eslint-disable jsx-a11y/anchor-is-valid */
   return (
     <nav aria-label={titleText}>
       <Box py={isEmbedded ? 3 : 2} px={isEmbedded ? 4 : 3} sm={{ py: 2, px: 0 }}>
