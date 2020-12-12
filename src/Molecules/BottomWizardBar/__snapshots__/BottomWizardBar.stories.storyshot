@@ -1,14 +1,14 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Storyshots Molecules / Bottom Wizard Bar Default 1`] = `
-.c0 {
+.c1 {
   padding-left: 12px;
   padding-top: 8px;
   padding-right: 12px;
   padding-bottom: 8px;
 }
 
-.c1 {
+.c2 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -26,47 +26,47 @@ exports[`Storyshots Molecules / Bottom Wizard Bar Default 1`] = `
   margin-right: -8px;
 }
 
-.c1 > * {
+.c2 > * {
   padding-left: 8px;
   padding-right: 8px;
 }
 
-.c1 > *:not(:first-child) {
+.c2 > *:not(:first-child) {
   padding-top: 0;
 }
 
-.c2 {
+.c3 {
   box-sizing: border-box;
+}
+
+.c6 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-left: -8px;
+  margin-right: -8px;
+}
+
+.c6 > * {
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+.c6 > *:not(:first-child) {
+  padding-top: 0;
 }
 
 .c5 {
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  margin-left: -8px;
-  margin-right: -8px;
-}
-
-.c5 > * {
-  padding-left: 8px;
-  padding-right: 8px;
-}
-
-.c5 > *:not(:first-child) {
-  padding-top: 0;
-}
-
-.c4 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: inherit;
   margin: 0;
@@ -75,7 +75,7 @@ exports[`Storyshots Molecules / Bottom Wizard Bar Default 1`] = `
   line-height: 1.5;
 }
 
-.c3 {
+.c4 {
   position: relative;
   box-sizing: border-box;
   -webkit-align-items: center;
@@ -97,7 +97,7 @@ exports[`Storyshots Molecules / Bottom Wizard Bar Default 1`] = `
   text-decoration: none;
 }
 
-.c6 {
+.c7 {
   position: relative;
   box-sizing: border-box;
   -webkit-align-items: center;
@@ -120,7 +120,7 @@ exports[`Storyshots Molecules / Bottom Wizard Bar Default 1`] = `
   text-decoration: none;
 }
 
-.c6::before {
+.c7::before {
   content: '';
   display: block;
   position: absolute;
@@ -131,16 +131,20 @@ exports[`Storyshots Molecules / Bottom Wizard Bar Default 1`] = `
   height: calc(100% - 4px);
 }
 
-.c6:hover {
+.c7:hover {
   background-color: hsl(223.5,100%,45%);
 }
 
-.c6:active {
+.c7:active {
   background-color: hsl(223.5,100%,40%);
 }
 
+.c0 {
+  background-color: #FFFFFF;
+}
+
 @media (min-width:760px) {
-  .c0 {
+  .c1 {
     padding-left: 0px;
     padding-top: 8px;
     padding-right: 0px;
@@ -149,7 +153,7 @@ exports[`Storyshots Molecules / Bottom Wizard Bar Default 1`] = `
 }
 
 @media (min-width:760px) {
-  .c1 {
+  .c2 {
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -166,18 +170,18 @@ exports[`Storyshots Molecules / Bottom Wizard Bar Default 1`] = `
     margin-right: -16px;
   }
 
-  .c1 > * {
+  .c2 > * {
     padding-left: 16px;
     padding-right: 16px;
   }
 
-  .c1 > *:not(:first-child) {
+  .c2 > *:not(:first-child) {
     padding-top: 0;
   }
 }
 
 @media (min-width:760px) {
-  .c5 {
+  .c6 {
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -194,75 +198,76 @@ exports[`Storyshots Molecules / Bottom Wizard Bar Default 1`] = `
     margin-right: -16px;
   }
 
-  .c5 > * {
+  .c6 > * {
     padding-left: 16px;
     padding-right: 16px;
   }
 
-  .c5 > *:not(:first-child) {
+  .c6 > *:not(:first-child) {
     padding-top: 0;
   }
 }
 
 @media (min-width:760px) {
-  .c7 {
+  .c8 {
     min-width: 160px;
   }
 }
 
 <nav
   aria-label="Title"
+  className="c0"
 >
   <div
-    className="c0"
+    className="c1"
   >
     <div
-      className="c1"
+      className="c2"
     >
       <div
-        className="c2"
+        className="c3"
       >
         <a
-          className="c3"
+          className="c4"
           href="https://nordnet.se/cancel"
           onClick={[Function]}
         >
           <span
-            className="c4"
+            className="c5"
           >
             Cancel
           </span>
         </a>
       </div>
       <div
-        className="c5"
+        className="c6"
       >
         <div
-          className="c2"
+          className="c3"
         >
           <a
-            className="c3"
+            className="c4"
             href="https://nordnet.se/previous"
             onClick={[Function]}
           >
             <span
-              className="c4"
+              className="c5"
             >
               Previous
             </span>
           </a>
         </div>
         <div
-          className="c2"
+          className="c3"
         >
           <a
-            className="c6 c7"
+            className="c7 c8"
             href="https://nordnet.se/next"
             onClick={[Function]}
           >
             <span>
               <span
-                className="c4"
+                className="c5"
               >
                 Next
               </span>
@@ -276,14 +281,14 @@ exports[`Storyshots Molecules / Bottom Wizard Bar Default 1`] = `
 `;
 
 exports[`Storyshots Molecules / Bottom Wizard Bar Last Step And Loading 1`] = `
-.c0 {
+.c1 {
   padding-left: 12px;
   padding-top: 8px;
   padding-right: 12px;
   padding-bottom: 8px;
 }
 
-.c1 {
+.c2 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -301,47 +306,47 @@ exports[`Storyshots Molecules / Bottom Wizard Bar Last Step And Loading 1`] = `
   margin-right: -8px;
 }
 
-.c1 > * {
+.c2 > * {
   padding-left: 8px;
   padding-right: 8px;
 }
 
-.c1 > *:not(:first-child) {
+.c2 > *:not(:first-child) {
   padding-top: 0;
 }
 
-.c2 {
+.c3 {
   box-sizing: border-box;
+}
+
+.c6 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-left: -8px;
+  margin-right: -8px;
+}
+
+.c6 > * {
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+.c6 > *:not(:first-child) {
+  padding-top: 0;
 }
 
 .c5 {
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  margin-left: -8px;
-  margin-right: -8px;
-}
-
-.c5 > * {
-  padding-left: 8px;
-  padding-right: 8px;
-}
-
-.c5 > *:not(:first-child) {
-  padding-top: 0;
-}
-
-.c4 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: inherit;
   margin: 0;
@@ -350,7 +355,7 @@ exports[`Storyshots Molecules / Bottom Wizard Bar Last Step And Loading 1`] = `
   line-height: 1.5;
 }
 
-.c3 {
+.c4 {
   font-family: inherit;
   font-size: 100%;
   line-height: 1.15;
@@ -379,29 +384,29 @@ exports[`Storyshots Molecules / Bottom Wizard Bar Last Step And Loading 1`] = `
   cursor: not-allowed;
 }
 
-.c3,
-.c3[type='button'],
-.c3[type='reset'],
-.c3[type='submit'] {
+.c4,
+.c4[type='button'],
+.c4[type='reset'],
+.c4[type='submit'] {
   -webkit-appearance: button;
 }
 
-.c3::-moz-focus-inner,
-.c3[type='button']::-moz-focus-inner,
-.c3[type='reset']::-moz-focus-inner,
-.c3[type='submit']::-moz-focus-inner {
+.c4::-moz-focus-inner,
+.c4[type='button']::-moz-focus-inner,
+.c4[type='reset']::-moz-focus-inner,
+.c4[type='submit']::-moz-focus-inner {
   border-style: none;
   padding: 0;
 }
 
-.c3:-moz-focusring,
-.c3[type='button']:-moz-focusring,
-.c3[type='reset']:-moz-focusring,
-.c3[type='submit']:-moz-focusring {
+.c4:-moz-focusring,
+.c4[type='button']:-moz-focusring,
+.c4[type='reset']:-moz-focusring,
+.c4[type='submit']:-moz-focusring {
   outline: 1px dotted ButtonText;
 }
 
-.c6 {
+.c7 {
   font-family: inherit;
   font-size: 100%;
   line-height: 1.15;
@@ -431,29 +436,29 @@ exports[`Storyshots Molecules / Bottom Wizard Bar Last Step And Loading 1`] = `
   cursor: pointer;
 }
 
-.c6,
-.c6[type='button'],
-.c6[type='reset'],
-.c6[type='submit'] {
+.c7,
+.c7[type='button'],
+.c7[type='reset'],
+.c7[type='submit'] {
   -webkit-appearance: button;
 }
 
-.c6::-moz-focus-inner,
-.c6[type='button']::-moz-focus-inner,
-.c6[type='reset']::-moz-focus-inner,
-.c6[type='submit']::-moz-focus-inner {
+.c7::-moz-focus-inner,
+.c7[type='button']::-moz-focus-inner,
+.c7[type='reset']::-moz-focus-inner,
+.c7[type='submit']::-moz-focus-inner {
   border-style: none;
   padding: 0;
 }
 
-.c6:-moz-focusring,
-.c6[type='button']:-moz-focusring,
-.c6[type='reset']:-moz-focusring,
-.c6[type='submit']:-moz-focusring {
+.c7:-moz-focusring,
+.c7[type='button']:-moz-focusring,
+.c7[type='reset']:-moz-focusring,
+.c7[type='submit']:-moz-focusring {
   outline: 1px dotted ButtonText;
 }
 
-.c6::before {
+.c7::before {
   content: '';
   display: block;
   position: absolute;
@@ -464,16 +469,20 @@ exports[`Storyshots Molecules / Bottom Wizard Bar Last Step And Loading 1`] = `
   height: calc(100% - 4px);
 }
 
-.c6:hover {
+.c7:hover {
   background-color: hsl(223.5,100%,45%);
 }
 
-.c6:active {
+.c7:active {
   background-color: hsl(223.5,100%,40%);
 }
 
+.c0 {
+  background-color: #FFFFFF;
+}
+
 @media (min-width:760px) {
-  .c0 {
+  .c1 {
     padding-left: 0px;
     padding-top: 8px;
     padding-right: 0px;
@@ -482,7 +491,7 @@ exports[`Storyshots Molecules / Bottom Wizard Bar Last Step And Loading 1`] = `
 }
 
 @media (min-width:760px) {
-  .c1 {
+  .c2 {
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -499,18 +508,18 @@ exports[`Storyshots Molecules / Bottom Wizard Bar Last Step And Loading 1`] = `
     margin-right: -16px;
   }
 
-  .c1 > * {
+  .c2 > * {
     padding-left: 16px;
     padding-right: 16px;
   }
 
-  .c1 > *:not(:first-child) {
+  .c2 > *:not(:first-child) {
     padding-top: 0;
   }
 }
 
 @media (min-width:760px) {
-  .c5 {
+  .c6 {
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -527,77 +536,78 @@ exports[`Storyshots Molecules / Bottom Wizard Bar Last Step And Loading 1`] = `
     margin-right: -16px;
   }
 
-  .c5 > * {
+  .c6 > * {
     padding-left: 16px;
     padding-right: 16px;
   }
 
-  .c5 > *:not(:first-child) {
+  .c6 > *:not(:first-child) {
     padding-top: 0;
   }
 }
 
 @media (min-width:760px) {
-  .c7 {
+  .c8 {
     min-width: 160px;
   }
 }
 
 <nav
   aria-label="Title"
+  className="c0"
 >
   <div
-    className="c0"
+    className="c1"
   >
     <div
-      className="c1"
+      className="c2"
     >
       <div
-        className="c2"
+        className="c3"
       >
         <button
-          className="NormalizedButton__Button-ey7f5x-0 c3"
+          className="NormalizedButton__Button-ey7f5x-0 c4"
           disabled={true}
           onClick={[Function]}
           type="reset"
         >
           <span
-            className="c4"
+            className="c5"
           >
             Cancel
           </span>
         </button>
       </div>
       <div
-        className="c5"
+        className="c6"
       >
         <div
-          className="c2"
+          className="c3"
         >
           <button
-            className="NormalizedButton__Button-ey7f5x-0 c3"
+            className="NormalizedButton__Button-ey7f5x-0 c4"
             disabled={true}
             onClick={[Function]}
             type="button"
           >
             <span
-              className="c4"
+              className="c5"
             >
               Previous
             </span>
           </button>
         </div>
         <div
-          className="c2"
+          className="c3"
         >
           <button
-            className="NormalizedButton__Button-ey7f5x-0 c6 c7"
+            className="NormalizedButton__Button-ey7f5x-0 c7 c8"
             onClick={[Function]}
             type="submit"
           >
             <span>
               <span
-                className="c4"
+                className="c5"
               >
                 Submit
               </span>
@@ -612,38 +622,11 @@ exports[`Storyshots Molecules / Bottom Wizard Bar Last Step And Loading 1`] = `
 `;
 
 exports[`Storyshots Molecules / Bottom Wizard Bar Previous Button Disabled 1`] = `
-.c0 {
+.c1 {
   padding-left: 16px;
   padding-top: 12px;
   padding-right: 16px;
   padding-bottom: 12px;
-}
-
-.c1 {
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  margin-left: -8px;
-  margin-right: -8px;
-}
-
-.c1 > * {
-  padding-left: 8px;
-  padding-right: 8px;
-}
-
-.c1 > *:not(:first-child) {
-  padding-top: 0;
 }
 
 .c2 {
@@ -662,9 +645,6 @@ exports[`Storyshots Molecules / Bottom Wizard Bar Previous Button Disabled 1`] =
   align-items: center;
   margin-left: -8px;
   margin-right: -8px;
-  -webkit-flex: 1;
-  -ms-flex: 1;
-  flex: 1;
 }
 
 .c2 > * {
@@ -678,12 +658,42 @@ exports[`Storyshots Molecules / Bottom Wizard Bar Previous Button Disabled 1`] =
 
 .c3 {
   box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-left: -8px;
+  margin-right: -8px;
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
 }
 
-.c6 {
+.c3 > * {
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+.c3 > *:not(:first-child) {
+  padding-top: 0;
+}
+
+.c4 {
+  box-sizing: border-box;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+
+.c7 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: inherit;
   margin: 0;
@@ -692,7 +702,7 @@ exports[`Storyshots Molecules / Bottom Wizard Bar Previous Button Disabled 1`] =
   line-height: 1.5;
 }
 
-.c4 {
+.c5 {
   font-family: inherit;
   font-size: 100%;
   line-height: 1.15;
@@ -723,29 +733,29 @@ exports[`Storyshots Molecules / Bottom Wizard Bar Previous Button Disabled 1`] =
   cursor: pointer;
 }
 
-.c4,
-.c4[type='button'],
-.c4[type='reset'],
-.c4[type='submit'] {
+.c5,
+.c5[type='button'],
+.c5[type='reset'],
+.c5[type='submit'] {
   -webkit-appearance: button;
 }
 
-.c4::-moz-focus-inner,
-.c4[type='button']::-moz-focus-inner,
-.c4[type='reset']::-moz-focus-inner,
-.c4[type='submit']::-moz-focus-inner {
+.c5::-moz-focus-inner,
+.c5[type='button']::-moz-focus-inner,
+.c5[type='reset']::-moz-focus-inner,
+.c5[type='submit']::-moz-focus-inner {
   border-style: none;
   padding: 0;
 }
 
-.c4:-moz-focusring,
-.c4[type='button']:-moz-focusring,
-.c4[type='reset']:-moz-focusring,
-.c4[type='submit']:-moz-focusring {
+.c5:-moz-focusring,
+.c5[type='button']:-moz-focusring,
+.c5[type='reset']:-moz-focusring,
+.c5[type='submit']:-moz-focusring {
   outline: 1px dotted ButtonText;
 }
 
-.c4::before {
+.c5::before {
   content: '';
   display: block;
   position: absolute;
@@ -756,48 +766,24 @@ exports[`Storyshots Molecules / Bottom Wizard Bar Previous Button Disabled 1`] =
   height: calc(100% - 4px);
 }
 
-.c4:hover {
+.c5:hover {
   background-color: hsl(223.5,100%,45%);
 }
 
-.c4:active {
+.c5:active {
   background-color: hsl(223.5,100%,40%);
 }
 
-@media (min-width:760px) {
-  .c0 {
-    padding-left: 0px;
-    padding-top: 8px;
-    padding-right: 0px;
-    padding-bottom: 8px;
-  }
+.c0 {
+  background-color: #FFFFFF;
 }
 
 @media (min-width:760px) {
   .c1 {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-    -webkit-justify-content: space-between;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
-    -webkit-align-items: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    margin-left: -16px;
-    margin-right: -16px;
-  }
-
-  .c1 > * {
-    padding-left: 16px;
-    padding-right: 16px;
-  }
-
-  .c1 > *:not(:first-child) {
-    padding-top: 0;
+    padding-left: 0px;
+    padding-top: 8px;
+    padding-right: 0px;
+    padding-bottom: 8px;
   }
 }
 
@@ -817,9 +803,6 @@ exports[`Storyshots Molecules / Bottom Wizard Bar Previous Button Disabled 1`] =
     align-items: center;
     margin-left: -16px;
     margin-right: -16px;
-    -webkit-flex: 1;
-    -ms-flex: 1;
-    flex: 1;
   }
 
   .c2 > * {
@@ -833,28 +816,395 @@ exports[`Storyshots Molecules / Bottom Wizard Bar Previous Button Disabled 1`] =
 }
 
 @media (min-width:760px) {
-  .c5 {
+  .c3 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin-left: -16px;
+    margin-right: -16px;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+  }
+
+  .c3 > * {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .c3 > *:not(:first-child) {
+    padding-top: 0;
+  }
+}
+
+@media (min-width:760px) {
+  .c6 {
     min-width: 160px;
   }
 }
 
 <nav
   aria-label="Title"
+  className="c0"
 >
   <div
-    className="c0"
+    className="c1"
   >
     <div
-      className="c1"
+      className="c2"
     >
       <div
-        className="c2"
+        className="c3"
       >
         <div
-          className="c3"
+          className="c4"
         >
           <button
-            className="NormalizedButton__Button-ey7f5x-0 c4 c5"
+            className="NormalizedButton__Button-ey7f5x-0 c5 c6"
+            onClick={[Function]}
+            type="button"
+          >
+            <span>
+              <span
+                className="c7"
+              >
+                Next
+              </span>
+            </span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</nav>
+`;
+
+exports[`Storyshots Molecules / Bottom Wizard Bar Webview Embedded 1`] = `
+.c1 {
+  padding-left: 16px;
+  padding-top: 12px;
+  padding-right: 16px;
+  padding-bottom: 12px;
+}
+
+.c2 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-left: -8px;
+  margin-right: -8px;
+}
+
+.c2 > * {
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+.c2 > *:not(:first-child) {
+  padding-top: 0;
+}
+
+.c3 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-left: -8px;
+  margin-right: -8px;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+
+.c3 > * {
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+.c3 > *:not(:first-child) {
+  padding-top: 0;
+}
+
+.c4 {
+  box-sizing: border-box;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+
+.c6 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: inherit;
+  margin: 0;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.c5 {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  overflow: visible;
+  text-transform: none;
+  position: relative;
+  box-sizing: border-box;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  padding: 0;
+  background-color: transparent;
+  color: #0046FF;
+  border: none;
+  border-radius: 0;
+  cursor: pointer;
+}
+
+.c5,
+.c5[type='button'],
+.c5[type='reset'],
+.c5[type='submit'] {
+  -webkit-appearance: button;
+}
+
+.c5::-moz-focus-inner,
+.c5[type='button']::-moz-focus-inner,
+.c5[type='reset']::-moz-focus-inner,
+.c5[type='submit']::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+.c5:-moz-focusring,
+.c5[type='button']:-moz-focusring,
+.c5[type='reset']:-moz-focusring,
+.c5[type='submit']:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+.c7 {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  overflow: visible;
+  text-transform: none;
+  position: relative;
+  box-sizing: border-box;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  padding: 8px 16px;
+  min-height: 40px;
+  background-color: #0046FF;
+  color: #FFFFFF;
+  border: none;
+  border-radius: 0;
+  cursor: pointer;
+}
+
+.c7,
+.c7[type='button'],
+.c7[type='reset'],
+.c7[type='submit'] {
+  -webkit-appearance: button;
+}
+
+.c7::-moz-focus-inner,
+.c7[type='button']::-moz-focus-inner,
+.c7[type='reset']::-moz-focus-inner,
+.c7[type='submit']::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+.c7:-moz-focusring,
+.c7[type='button']:-moz-focusring,
+.c7[type='reset']:-moz-focusring,
+.c7[type='submit']:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+.c7::before {
+  content: '';
+  display: block;
+  position: absolute;
+  border: 2px solid transparent;
+  top: 0;
+  left: 0;
+  width: calc(100% - 4px);
+  height: calc(100% - 4px);
+}
+
+.c7:hover {
+  background-color: hsl(223.5,100%,45%);
+}
+
+.c7:active {
+  background-color: hsl(223.5,100%,40%);
+}
+
+.c0 {
+  background-color: #FFFFFF;
+}
+
+@media (min-width:760px) {
+  .c1 {
+    padding-left: 0px;
+    padding-top: 8px;
+    padding-right: 0px;
+    padding-bottom: 8px;
+  }
+}
+
+@media (min-width:760px) {
+  .c2 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin-left: -16px;
+    margin-right: -16px;
+  }
+
+  .c2 > * {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .c2 > *:not(:first-child) {
+    padding-top: 0;
+  }
+}
+
+@media (min-width:760px) {
+  .c3 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin-left: -16px;
+    margin-right: -16px;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+  }
+
+  .c3 > * {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .c3 > *:not(:first-child) {
+    padding-top: 0;
+  }
+}
+
+@media (min-width:760px) {
+  .c8 {
+    min-width: 160px;
+  }
+}
+
+<nav
+  aria-label="Title"
+  className="c0"
+>
+  <div
+    className="c1"
+  >
+    <div
+      className="c2"
+    >
+      <div
+        className="c3"
+      >
+        <div
+          className="c4"
+        >
+          <button
+            className="NormalizedButton__Button-ey7f5x-0 c5"
+            disabled={false}
+            onClick={[Function]}
+            type="button"
+          >
+            <span
+              className="c6"
+            >
+              Previous
+            </span>
+          </button>
+        </div>
+        <div
+          className="c4"
+        >
+          <button
+            className="NormalizedButton__Button-ey7f5x-0 c7 c8"
             onClick={[Function]}
             type="button"
           >
@@ -873,39 +1223,12 @@ exports[`Storyshots Molecules / Bottom Wizard Bar Previous Button Disabled 1`] =
 </nav>
 `;
 
-exports[`Storyshots Molecules / Bottom Wizard Bar Webview Embedded 1`] = `
-.c0 {
+exports[`Storyshots Molecules / Bottom Wizard Bar Webview Embedded Last Step And Loading 1`] = `
+.c1 {
   padding-left: 16px;
   padding-top: 12px;
   padding-right: 16px;
   padding-bottom: 12px;
-}
-
-.c1 {
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  margin-left: -8px;
-  margin-right: -8px;
-}
-
-.c1 > * {
-  padding-left: 8px;
-  padding-right: 8px;
-}
-
-.c1 > *:not(:first-child) {
-  padding-top: 0;
 }
 
 .c2 {
@@ -924,9 +1247,6 @@ exports[`Storyshots Molecules / Bottom Wizard Bar Webview Embedded 1`] = `
   align-items: center;
   margin-left: -8px;
   margin-right: -8px;
-  -webkit-flex: 1;
-  -ms-flex: 1;
-  flex: 1;
 }
 
 .c2 > * {
@@ -940,342 +1260,42 @@ exports[`Storyshots Molecules / Bottom Wizard Bar Webview Embedded 1`] = `
 
 .c3 {
   box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-left: -8px;
+  margin-right: -8px;
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
 }
 
-.c5 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: inherit;
-  margin: 0;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.5;
+.c3 > * {
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+.c3 > *:not(:first-child) {
+  padding-top: 0;
 }
 
 .c4 {
-  font-family: inherit;
-  font-size: 100%;
-  line-height: 1.15;
-  margin: 0;
-  overflow: visible;
-  text-transform: none;
-  position: relative;
   box-sizing: border-box;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  width: 100%;
-  padding: 0;
-  background-color: transparent;
-  color: #0046FF;
-  border: none;
-  border-radius: 0;
-  cursor: pointer;
-}
-
-.c4,
-.c4[type='button'],
-.c4[type='reset'],
-.c4[type='submit'] {
-  -webkit-appearance: button;
-}
-
-.c4::-moz-focus-inner,
-.c4[type='button']::-moz-focus-inner,
-.c4[type='reset']::-moz-focus-inner,
-.c4[type='submit']::-moz-focus-inner {
-  border-style: none;
-  padding: 0;
-}
-
-.c4:-moz-focusring,
-.c4[type='button']:-moz-focusring,
-.c4[type='reset']:-moz-focusring,
-.c4[type='submit']:-moz-focusring {
-  outline: 1px dotted ButtonText;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
 }
 
 .c6 {
-  font-family: inherit;
-  font-size: 100%;
-  line-height: 1.15;
-  margin: 0;
-  overflow: visible;
-  text-transform: none;
-  position: relative;
-  box-sizing: border-box;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  width: 100%;
-  padding: 8px 16px;
-  min-height: 40px;
-  background-color: #0046FF;
-  color: #FFFFFF;
-  border: none;
-  border-radius: 0;
-  cursor: pointer;
-}
-
-.c6,
-.c6[type='button'],
-.c6[type='reset'],
-.c6[type='submit'] {
-  -webkit-appearance: button;
-}
-
-.c6::-moz-focus-inner,
-.c6[type='button']::-moz-focus-inner,
-.c6[type='reset']::-moz-focus-inner,
-.c6[type='submit']::-moz-focus-inner {
-  border-style: none;
-  padding: 0;
-}
-
-.c6:-moz-focusring,
-.c6[type='button']:-moz-focusring,
-.c6[type='reset']:-moz-focusring,
-.c6[type='submit']:-moz-focusring {
-  outline: 1px dotted ButtonText;
-}
-
-.c6::before {
-  content: '';
-  display: block;
-  position: absolute;
-  border: 2px solid transparent;
-  top: 0;
-  left: 0;
-  width: calc(100% - 4px);
-  height: calc(100% - 4px);
-}
-
-.c6:hover {
-  background-color: hsl(223.5,100%,45%);
-}
-
-.c6:active {
-  background-color: hsl(223.5,100%,40%);
-}
-
-@media (min-width:760px) {
-  .c0 {
-    padding-left: 0px;
-    padding-top: 8px;
-    padding-right: 0px;
-    padding-bottom: 8px;
-  }
-}
-
-@media (min-width:760px) {
-  .c1 {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-    -webkit-justify-content: space-between;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
-    -webkit-align-items: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    margin-left: -16px;
-    margin-right: -16px;
-  }
-
-  .c1 > * {
-    padding-left: 16px;
-    padding-right: 16px;
-  }
-
-  .c1 > *:not(:first-child) {
-    padding-top: 0;
-  }
-}
-
-@media (min-width:760px) {
-  .c2 {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-    -webkit-justify-content: space-between;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
-    -webkit-align-items: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    margin-left: -16px;
-    margin-right: -16px;
-    -webkit-flex: 1;
-    -ms-flex: 1;
-    flex: 1;
-  }
-
-  .c2 > * {
-    padding-left: 16px;
-    padding-right: 16px;
-  }
-
-  .c2 > *:not(:first-child) {
-    padding-top: 0;
-  }
-}
-
-@media (min-width:760px) {
-  .c7 {
-    min-width: 160px;
-  }
-}
-
-<nav
-  aria-label="Title"
->
-  <div
-    className="c0"
-  >
-    <div
-      className="c1"
-    >
-      <div
-        className="c2"
-      >
-        <div
-          className="c3"
-        >
-          <button
-            className="NormalizedButton__Button-ey7f5x-0 c4"
-            disabled={false}
-            onClick={[Function]}
-            type="button"
-          >
-            <span
-              className="c5"
-            >
-              Previous
-            </span>
-          </button>
-        </div>
-        <div
-          className="c3"
-        >
-          <button
-            className="NormalizedButton__Button-ey7f5x-0 c6 c7"
-            onClick={[Function]}
-            type="button"
-          >
-            <span>
-              <span
-                className="c5"
-              >
-                Next
-              </span>
-            </span>
-          </button>
-        </div>
-      </div>
-    </div>
-  </div>
-</nav>
-`;
-
-exports[`Storyshots Molecules / Bottom Wizard Bar Webview Embedded Last Step And Loading 1`] = `
-.c0 {
-  padding-left: 16px;
-  padding-top: 12px;
-  padding-right: 16px;
-  padding-bottom: 12px;
-}
-
-.c1 {
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  margin-left: -8px;
-  margin-right: -8px;
-}
-
-.c1 > * {
-  padding-left: 8px;
-  padding-right: 8px;
-}
-
-.c1 > *:not(:first-child) {
-  padding-top: 0;
-}
-
-.c2 {
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  margin-left: -8px;
-  margin-right: -8px;
-  -webkit-flex: 1;
-  -ms-flex: 1;
-  flex: 1;
-}
-
-.c2 > * {
-  padding-left: 8px;
-  padding-right: 8px;
-}
-
-.c2 > *:not(:first-child) {
-  padding-top: 0;
-}
-
-.c3 {
-  box-sizing: border-box;
-  -webkit-flex: 1;
-  -ms-flex: 1;
-  flex: 1;
-}
-
-.c5 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: inherit;
   margin: 0;
@@ -1284,7 +1304,7 @@ exports[`Storyshots Molecules / Bottom Wizard Bar Webview Embedded Last Step And
   line-height: 1.5;
 }
 
-.c4 {
+.c5 {
   font-family: inherit;
   font-size: 100%;
   line-height: 1.15;
@@ -1314,29 +1334,29 @@ exports[`Storyshots Molecules / Bottom Wizard Bar Webview Embedded Last Step And
   cursor: not-allowed;
 }
 
-.c4,
-.c4[type='button'],
-.c4[type='reset'],
-.c4[type='submit'] {
+.c5,
+.c5[type='button'],
+.c5[type='reset'],
+.c5[type='submit'] {
   -webkit-appearance: button;
 }
 
-.c4::-moz-focus-inner,
-.c4[type='button']::-moz-focus-inner,
-.c4[type='reset']::-moz-focus-inner,
-.c4[type='submit']::-moz-focus-inner {
+.c5::-moz-focus-inner,
+.c5[type='button']::-moz-focus-inner,
+.c5[type='reset']::-moz-focus-inner,
+.c5[type='submit']::-moz-focus-inner {
   border-style: none;
   padding: 0;
 }
 
-.c4:-moz-focusring,
-.c4[type='button']:-moz-focusring,
-.c4[type='reset']:-moz-focusring,
-.c4[type='submit']:-moz-focusring {
+.c5:-moz-focusring,
+.c5[type='button']:-moz-focusring,
+.c5[type='reset']:-moz-focusring,
+.c5[type='submit']:-moz-focusring {
   outline: 1px dotted ButtonText;
 }
 
-.c6 {
+.c7 {
   font-family: inherit;
   font-size: 100%;
   line-height: 1.15;
@@ -1367,29 +1387,29 @@ exports[`Storyshots Molecules / Bottom Wizard Bar Webview Embedded Last Step And
   cursor: pointer;
 }
 
-.c6,
-.c6[type='button'],
-.c6[type='reset'],
-.c6[type='submit'] {
+.c7,
+.c7[type='button'],
+.c7[type='reset'],
+.c7[type='submit'] {
   -webkit-appearance: button;
 }
 
-.c6::-moz-focus-inner,
-.c6[type='button']::-moz-focus-inner,
-.c6[type='reset']::-moz-focus-inner,
-.c6[type='submit']::-moz-focus-inner {
+.c7::-moz-focus-inner,
+.c7[type='button']::-moz-focus-inner,
+.c7[type='reset']::-moz-focus-inner,
+.c7[type='submit']::-moz-focus-inner {
   border-style: none;
   padding: 0;
 }
 
-.c6:-moz-focusring,
-.c6[type='button']:-moz-focusring,
-.c6[type='reset']:-moz-focusring,
-.c6[type='submit']:-moz-focusring {
+.c7:-moz-focusring,
+.c7[type='button']:-moz-focusring,
+.c7[type='reset']:-moz-focusring,
+.c7[type='submit']:-moz-focusring {
   outline: 1px dotted ButtonText;
 }
 
-.c6::before {
+.c7::before {
   content: '';
   display: block;
   position: absolute;
@@ -1400,48 +1420,24 @@ exports[`Storyshots Molecules / Bottom Wizard Bar Webview Embedded Last Step And
   height: calc(100% - 4px);
 }
 
-.c6:hover {
+.c7:hover {
   background-color: hsl(223.5,100%,45%);
 }
 
-.c6:active {
+.c7:active {
   background-color: hsl(223.5,100%,40%);
 }
 
-@media (min-width:760px) {
-  .c0 {
-    padding-left: 0px;
-    padding-top: 8px;
-    padding-right: 0px;
-    padding-bottom: 8px;
-  }
+.c0 {
+  background-color: #FFFFFF;
 }
 
 @media (min-width:760px) {
   .c1 {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-    -webkit-justify-content: space-between;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
-    -webkit-align-items: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    margin-left: -16px;
-    margin-right: -16px;
-  }
-
-  .c1 > * {
-    padding-left: 16px;
-    padding-right: 16px;
-  }
-
-  .c1 > *:not(:first-child) {
-    padding-top: 0;
+    padding-left: 0px;
+    padding-top: 8px;
+    padding-right: 0px;
+    padding-bottom: 8px;
   }
 }
 
@@ -1461,9 +1457,6 @@ exports[`Storyshots Molecules / Bottom Wizard Bar Webview Embedded Last Step And
     align-items: center;
     margin-left: -16px;
     margin-right: -16px;
-    -webkit-flex: 1;
-    -ms-flex: 1;
-    flex: 1;
   }
 
   .c2 > * {
@@ -1477,50 +1470,82 @@ exports[`Storyshots Molecules / Bottom Wizard Bar Webview Embedded Last Step And
 }
 
 @media (min-width:760px) {
-  .c7 {
+  .c3 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin-left: -16px;
+    margin-right: -16px;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+  }
+
+  .c3 > * {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .c3 > *:not(:first-child) {
+    padding-top: 0;
+  }
+}
+
+@media (min-width:760px) {
+  .c8 {
     min-width: 160px;
   }
 }
 
 <nav
   aria-label="Title"
+  className="c0"
 >
   <div
-    className="c0"
+    className="c1"
   >
     <div
-      className="c1"
+      className="c2"
     >
       <div
-        className="c2"
+        className="c3"
       >
         <div
-          className="c3"
+          className="c4"
         >
           <button
-            className="NormalizedButton__Button-ey7f5x-0 c4"
+            className="NormalizedButton__Button-ey7f5x-0 c5"
             disabled={true}
             onClick={[Function]}
             type="button"
           >
             <span
-              className="c5"
+              className="c6"
             >
               Previous
             </span>
           </button>
         </div>
         <div
-          className="c3"
+          className="c4"
         >
           <button
-            className="NormalizedButton__Button-ey7f5x-0 c6 c7"
+            className="NormalizedButton__Button-ey7f5x-0 c7 c8"
             onClick={[Function]}
             type="submit"
           >
             <span>
               <span
-                className="c5"
+                className="c6"
               >
                 Submit
               </span>
