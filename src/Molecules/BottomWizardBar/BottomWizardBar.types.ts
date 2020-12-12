@@ -3,13 +3,9 @@ export type Props = {
   onPrevious: React.MouseEventHandler;
   onNext: React.MouseEventHandler;
   onSubmit?: React.MouseEventHandler;
-  /** @default false */
   hidePreviousButton?: boolean;
-  /** @default false */
   isLastStep?: boolean;
-  /** @default false */
   isLoading?: boolean;
-  /** @default false */
   isEmbedded?: boolean;
   titleText?: string;
   cancelText: string;
