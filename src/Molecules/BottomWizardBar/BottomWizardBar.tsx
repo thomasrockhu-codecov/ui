@@ -12,6 +12,7 @@ const ForwardButton = styled(Button)`
 
 const StyledNav = styled.nav`
   background-color: ${(p) => p.theme.color.card};
+  border-top: 1px solid ${(p) => p.theme.color.divider};
 `;
 
 const BottomWizardBar: React.FC<Props> = ({
