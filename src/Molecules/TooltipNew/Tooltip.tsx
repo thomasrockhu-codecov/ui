@@ -1,7 +1,7 @@
 import React, { cloneElement, useState, forwardRef } from 'react';
 import { TooltipComponent } from './Tooltip.types';
 import { TooltipPopup } from './TooltipPopup';
-import { wrapEvent } from '../../common/utils';
+import { wrapEvent, mergeRefs } from '../../common/utils';
 import { useTooltip } from './hooks';
 
 export const Tooltip: TooltipComponent = forwardRef(
@@ -12,6 +12,7 @@ export const Tooltip: TooltipComponent = forwardRef(
     const child = React.Children.only(children) as any;
     const [triggerElement, setTriggerElement] = useState(undefined);
     const {
+      triggerElementRef,
       isOpen,
       handleMouseEnter,
       handleMouseMove,
@@ -25,7 +26,7 @@ export const Tooltip: TooltipComponent = forwardRef(
     return (
       <>
         {cloneElement(child, {
-          ref: setTriggerElement,
+          ref: mergeRefs([setTriggerElement, triggerElementRef]),
           onMouseEnter: wrapEvent(child.props.onMouseEnter, handleMouseEnter),
           onMouseMove: wrapEvent(child.props.onMouseMove, handleMouseMove),
           onFocus: wrapEvent(child.props.onFocus, handleFocus),

@@ -1,11 +1,13 @@
-import { useState, useCallback, useEffect } from 'react';
+import { useState, useCallback, useEffect, useRef } from 'react';
 import { Props as TooltipProps } from '../Tooltip.types';
 import { useId } from './useId';
 import { store, State } from '../Tooltip.store';
+import { useOnClickOutside } from '../../../common/Hooks';
 
 export const useTooltip = (mode: TooltipProps['mode']) => {
   const id = useId();
   const [isOpen, setIsOpen] = useState(false);
+  const triggerElementRef = useRef(null);
 
   useEffect(() => {
     return store.subscribe(() => {
@@ -49,9 +51,7 @@ export const useTooltip = (mode: TooltipProps['mode']) => {
   }, [mode]);
 
   const handleFocus = useCallback(() => {
-    if (!store.isVisible()) {
-      store.setState(State.VISIBLE, id);
-    }
+    store.setState(State.VISIBLE, id);
   }, [id]);
 
   const handleBlur = useCallback(() => {
@@ -77,7 +77,12 @@ export const useTooltip = (mode: TooltipProps['mode']) => {
     }
   }, [id]);
 
+  useOnClickOutside(triggerElementRef, () => {
+    if (id === store.contextId) store.setState(State.IDLE);
+  });
+
   return {
+    triggerElementRef,
     isOpen,
     handleMouseEnter,
     handleMouseMove,

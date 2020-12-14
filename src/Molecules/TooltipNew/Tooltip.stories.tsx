@@ -41,7 +41,7 @@ export const defaultStory = () => (
       adipisci, laboriosam id consequatur perferendis illo magnam. Provident, aut?
     </p>
     <Flexbox container justifyContent="flex-end">
-      <StyledTooltip label={label} position="left">
+      <StyledTooltip mode="click" label={label} position="left">
         <Button type="button">Hover me</Button>
       </StyledTooltip>
     </Flexbox>
