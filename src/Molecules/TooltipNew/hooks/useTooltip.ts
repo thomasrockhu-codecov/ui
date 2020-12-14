@@ -1,4 +1,4 @@
-import { useState, useCallback, useMemo, useRef } from 'react';
+import { useState, useCallback, useEffect } from 'react';
 import { Props as TooltipProps } from '../Tooltip.types';
 
 enum State {
@@ -11,103 +11,144 @@ enum State {
 const OPEN_DELAY: number = 100;
 const CLOSE_DELAY: number = 500;
 
-export const useTooltip = (mode: TooltipProps['mode']) => {
-  const timeoutIds = useRef<{ openDelay: any; closeDelay: any }>({ openDelay: 0, closeDelay: 0 });
-  const [state, setState] = useState<State>(State.IDLE);
-  const isOpen = useMemo(() => {
-    return state === State.VISIBLE || state === State.LEAVING_VISIBLE;
-  }, [state]);
+let idGenerator = 0;
+let leavingVisibleTimeout: number;
+let becomingVisibleTimeout: number;
+const context: { id: number | null } = { id: null };
+let state: State = State.IDLE;
 
-  const clearTimeouts = useCallback(() => {
-    clearTimeout(timeoutIds.current.openDelay);
-    clearTimeout(timeoutIds.current.closeDelay);
-  }, []);
+/** Subscriptions */
+const subscriptions: Function[] = [];
+function subscribe(fn: Function) {
+  subscriptions.push(fn);
+  return () => {
+    subscriptions.splice(subscriptions.indexOf(fn), 1);
+  };
+}
+function notify() {
+  subscriptions.forEach((fn) => fn(state, context));
+}
 
-  const open = useCallback(() => {
-    clearTimeouts();
-    setState(State.VISIBLE);
-  }, [clearTimeouts]);
+function clearBecomingVisibleTimeout() {
+  window.clearTimeout(becomingVisibleTimeout);
+}
 
-  const close = useCallback(() => {
-    clearTimeouts();
+function clearLeavingVisibleTimeout() {
+  window.clearTimeout(leavingVisibleTimeout);
+}
+
+const setState = (newState: State, contextId?: number) => {
+  const prevState = state;
+
+  if (prevState === State.BECOMING_VISIBLE) {
+    clearBecomingVisibleTimeout();
+  } else if (prevState === State.LEAVING_VISIBLE) {
+    clearLeavingVisibleTimeout();
+    context.id = null;
+  }
+
+  state = newState;
+
+  if (newState === State.IDLE) {
+    context.id = null;
+  }
+
+  if (contextId) {
+    context.id = contextId;
+  }
+  notify();
+};
+
+function startBecomingVisibleTimeout(id: number) {
+  window.clearTimeout(becomingVisibleTimeout);
+  setState(State.BECOMING_VISIBLE, id);
+  becomingVisibleTimeout = window.setTimeout(() => {
+    setState(State.VISIBLE, id);
+  }, OPEN_DELAY);
+}
+
+function startLeavingVisibleTimeout() {
+  window.clearTimeout(leavingVisibleTimeout);
+  setState(State.LEAVING_VISIBLE);
+  leavingVisibleTimeout = window.setTimeout(() => {
     setState(State.IDLE);
-  }, [clearTimeouts]);
+  }, CLOSE_DELAY);
+}
 
-  const openWithDelay = useCallback(() => {
-    setState(State.BECOMING_VISIBLE);
-    clearTimeouts();
-    timeoutIds.current.openDelay = setTimeout(() => {
-      open();
-    }, OPEN_DELAY);
-  }, [clearTimeouts, open]);
+export const useTooltip = (mode: TooltipProps['mode']) => {
+  // eslint-disable-next-line no-plusplus
+  const [id] = useState(++idGenerator);
+  const [isOpen, setIsOpen] = useState(false);
 
-  const closeWithDelay = useCallback(() => {
-    setState(State.LEAVING_VISIBLE);
-    clearTimeouts();
-    timeoutIds.current.closeDelay = setTimeout(() => {
-      close();
-    }, CLOSE_DELAY);
-  }, [clearTimeouts, close]);
+  useEffect(() => {
+    return subscribe(() => {
+      if (context.id === id && (state === State.VISIBLE || state === State.LEAVING_VISIBLE)) {
+        setIsOpen(true);
+      } else {
+        setIsOpen(false);
+      }
+    });
+  }, [id]);
 
   const handleMouseEnter = useCallback(() => {
     if (mode !== 'hover') return;
 
-    if (!isOpen) {
-      openWithDelay();
+    if (![State.LEAVING_VISIBLE, State.VISIBLE].includes(state)) {
+      startBecomingVisibleTimeout(id);
     } else if (state === State.LEAVING_VISIBLE) {
-      open();
+      setState(State.VISIBLE, id);
     }
-  }, [mode, isOpen, state, openWithDelay, open]);
+  }, [id, mode]);
 
   const handleMouseMove = useCallback(() => {
     if (mode !== 'hover') return;
 
-    if (!isOpen) {
-      openWithDelay();
+    if (![State.LEAVING_VISIBLE, State.VISIBLE].includes(state)) {
+      startBecomingVisibleTimeout(id);
     } else if (state === State.LEAVING_VISIBLE) {
-      open();
+      setState(State.VISIBLE, id);
     }
-  }, [mode, isOpen, state, openWithDelay, open]);
+  }, [id, mode]);
 
   const handleMouseLeave = useCallback(() => {
     if (mode !== 'hover') return;
 
-    if (isOpen) {
-      closeWithDelay();
+    if ([State.LEAVING_VISIBLE, State.VISIBLE].includes(state)) {
+      startLeavingVisibleTimeout();
     }
-  }, [mode, isOpen, closeWithDelay]);
+  }, [mode]);
 
   const handleFocus = useCallback(() => {
-    if (!isOpen) {
-      open();
+    if (![State.LEAVING_VISIBLE, State.VISIBLE].includes(state)) {
+      setState(State.VISIBLE, id);
     }
-  }, [isOpen, open]);
+  }, [id]);
 
   const handleBlur = useCallback(() => {
-    if (isOpen) {
-      closeWithDelay();
+    if ([State.LEAVING_VISIBLE, State.VISIBLE].includes(state)) {
+      startLeavingVisibleTimeout();
     }
-  }, [isOpen, closeWithDelay]);
+  }, []);
 
-  const handleKeyDown = useCallback(
-    (event: KeyboardEvent) => {
-      if (isOpen && (event.key === 'Escape' || event.key === 'Esc' || event.key === 'Enter')) {
-        close();
-      }
-    },
-    [close, isOpen],
-  );
+  const handleKeyDown = useCallback((event: KeyboardEvent) => {
+    if (
+      [State.LEAVING_VISIBLE, State.VISIBLE].includes(state) &&
+      (event.key === 'Escape' || event.key === 'Esc' || event.key === 'Enter')
+    ) {
+      setState(State.IDLE);
+    }
+  }, []);
 
   const handleMouseDown = useCallback(() => {
-    if (isOpen) {
-      close();
+    if ([State.LEAVING_VISIBLE, State.VISIBLE].includes(state)) {
+      setState(State.IDLE);
     } else {
-      open();
+      setState(State.VISIBLE, id);
     }
-  }, [close, isOpen, open]);
+  }, []);
 
   return {
-    isOpen: state === State.VISIBLE || state === State.LEAVING_VISIBLE,
+    isOpen,
     handleMouseEnter,
     handleMouseMove,
     handleFocus,

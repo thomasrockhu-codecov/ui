@@ -9,6 +9,7 @@ import { mergeRefs } from '../../../common/utils';
 
 const StyledTooltipPopup = styled.span<StyledTooltipPopupProps>`
   z-index: ${(p) => (p.inModal ? p.theme.zIndex.overlayInModal : p.theme.zIndex.overlay)};
+  pointer-events: none;
 
   &[data-popper-placement^='top'] {
     padding-bottom: ${(p) => p.theme.spacing.unit(3)}px;
