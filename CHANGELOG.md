@@ -1,3 +1,14 @@
+## [5.5.1](https://github.com/nordnet/ui/compare/v5.5.0...v5.5.1) (2020-12-14)
+
+
+### Bug Fixes
+
+* add bordertop to nav ([25befd1](https://github.com/nordnet/ui/commit/25befd1))
+* add default values back ([a5b0ee5](https://github.com/nordnet/ui/commit/a5b0ee5))
+* add missing background color ([7ced196](https://github.com/nordnet/ui/commit/7ced196))
+* delete default types declaration ([efdb8c7](https://github.com/nordnet/ui/commit/efdb8c7))
+* remove reduntant eslint-disabled rule ([1145599](https://github.com/nordnet/ui/commit/1145599))
+
 # [5.5.0](https://github.com/nordnet/ui/compare/v5.4.4...v5.5.0) (2020-12-11)
 
 
