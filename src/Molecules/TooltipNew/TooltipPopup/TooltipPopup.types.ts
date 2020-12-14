@@ -1,8 +1,9 @@
 import { Props as TooltipProps } from '../Tooltip.types';
 
 export type StyledTooltipPopupProps = {
+  id: string;
   inModal: TooltipProps['inModal'];
-  maxWidth: TooltipProps['maxWidth'];
+  maxWidth: number;
 };
 
 export type Props = {

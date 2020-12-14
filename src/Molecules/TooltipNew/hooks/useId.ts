@@ -6,12 +6,12 @@ const generateNewId = () => {
   return ++idGenerator;
 };
 
-export const useId = () => {
-  const [id, setId] = useState<number>(0);
+export const useId = (prefix: string) => {
+  const [id, setId] = useState<string>('');
 
   useEffect(() => {
-    setId(generateNewId());
-  }, []);
+    setId(`${prefix}${generateNewId()}`);
+  }, [prefix]);
 
   return id;
 };

@@ -12,6 +12,7 @@ export const Tooltip: TooltipComponent = forwardRef(
     const child = React.Children.only(children) as any;
     const [triggerElement, setTriggerElement] = useState(undefined);
     const {
+      id,
       triggerElementRef,
       isOpen,
       handleMouseEnter,
@@ -26,6 +27,7 @@ export const Tooltip: TooltipComponent = forwardRef(
     return (
       <>
         {cloneElement(child, {
+          'aria-describedby': isOpen ? id : undefined,
           ref: mergeRefs([setTriggerElement, triggerElementRef]),
           onMouseEnter: wrapEvent(child.props.onMouseEnter, handleMouseEnter),
           onMouseMove: wrapEvent(child.props.onMouseMove, handleMouseMove),
@@ -38,6 +40,7 @@ export const Tooltip: TooltipComponent = forwardRef(
 
         {isOpen && (
           <TooltipPopup
+            id={id}
             ref={ref as any}
             triggerElement={triggerElement}
             ariaLabel={ariaLabel}

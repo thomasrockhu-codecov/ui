@@ -5,7 +5,7 @@ import { store, State } from '../Tooltip.store';
 import { useOnClickOutside } from '../../../common/Hooks';
 
 export const useTooltip = (mode: TooltipProps['mode']) => {
-  const id = useId();
+  const id = useId('nn-tooltip-');
   const [isOpen, setIsOpen] = useState(false);
   const triggerElementRef = useRef(null);
 
@@ -82,6 +82,7 @@ export const useTooltip = (mode: TooltipProps['mode']) => {
   });
 
   return {
+    id,
     triggerElementRef,
     isOpen,
     handleMouseEnter,

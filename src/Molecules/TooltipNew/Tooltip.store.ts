@@ -10,7 +10,7 @@ export enum State {
 class TooltipStore {
   state: State;
 
-  contextId: number | null;
+  contextId: string | null;
 
   becomingVisibleTimeout: number | undefined;
 
@@ -37,7 +37,7 @@ class TooltipStore {
     this.subscriptions.forEach((fn) => fn());
   };
 
-  setState = (newState: State, contextId?: number) => {
+  setState = (newState: State, contextId?: string) => {
     const prevState = this.state;
 
     if (prevState === State.BECOMING_VISIBLE) {
@@ -60,7 +60,7 @@ class TooltipStore {
     this.notify();
   };
 
-  startBecomingVisibleTimeout = (id: number) => {
+  startBecomingVisibleTimeout = (id: string) => {
     window.clearTimeout(this.becomingVisibleTimeout);
     this.setState(State.BECOMING_VISIBLE, id);
 

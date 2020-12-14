@@ -29,7 +29,7 @@ const StyledTooltipPopup = styled.span<StyledTooltipPopupProps>`
 `;
 
 const TooltipPopup: TooltipPopupComponent = forwardRef(
-  ({ label, ariaLabel, position, inModal, maxWidth, triggerElement }, ref) => {
+  ({ id, label, ariaLabel, position, inModal, maxWidth, triggerElement }, ref) => {
     const [popperElement, setPopperElement] = useState(null);
     const [arrowElement, setArrowElement] = useState(null);
 
@@ -41,6 +41,7 @@ const TooltipPopup: TooltipPopupComponent = forwardRef(
     return (
       <Portal>
         <StyledTooltipPopup
+          id={id}
           ref={mergeRefs([setPopperElement, ref])}
           inModal={inModal}
           maxWidth={maxWidth}

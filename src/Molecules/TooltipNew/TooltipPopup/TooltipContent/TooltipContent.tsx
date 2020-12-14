@@ -17,7 +17,12 @@ const StyledTooltip = styled.div<StyledTooltipProps>`
 const TooltipContent: TooltipContentComponent = forwardRef(
   ({ label, ariaLabel, maxWidth }, ref) => {
     return (
-      <StyledTooltip ref={ref as any} maxWidth={maxWidth} ariaLabel={ariaLabel}>
+      <StyledTooltip
+        ref={ref as any}
+        maxWidth={maxWidth}
+        aria-label={ariaLabel}
+        role={ariaLabel ? 'tooltip' : undefined}
+      >
         <Typography type="tertiary">{label}</Typography>
       </StyledTooltip>
     );
