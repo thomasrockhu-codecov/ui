@@ -1,3 +1,10 @@
+## [5.5.2](https://github.com/nordnet/ui/compare/v5.5.1...v5.5.2) (2020-12-14)
+
+
+### Bug Fixes
+
+* rm unnecessary bordertop ([672a8ad](https://github.com/nordnet/ui/commit/672a8ad))
+
 ## [5.5.1](https://github.com/nordnet/ui/compare/v5.5.0...v5.5.1) (2020-12-14)
 
 
