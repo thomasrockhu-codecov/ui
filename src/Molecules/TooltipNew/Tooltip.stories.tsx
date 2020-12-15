@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
-import { Box, Modal, Drawer, Flexbox } from '../..';
+import { Box, Modal, Drawer } from '../..';
 import Tooltip from '.';
-import OldTooltip from '../Tooltip';
 import { Display } from '../../common/Display';
+import { useEffect } from '@storybook/addons';
 
 export default {
   title: 'Molecules / TooltipNew',
@@ -18,155 +18,27 @@ const Button = styled.button`
   display: block;
 `;
 
-const StyledTooltip = styled(Tooltip)`
-  background: red;
-`;
+
+
 
 export const defaultStory = () => (
-  <>
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, molestias. Libero
-      adipisci, laboriosam id consequatur perferendis illo magnam. Provident, aut?
-    </p>
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, molestias. Libero
-      adipisci, laboriosam id consequatur perferendis illo magnam. Provident, aut?
-    </p>
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, molestias. Libero
-      adipisci, laboriosam id consequatur perferendis illo magnam. Provident, aut?
-    </p>
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, molestias. Libero
-      adipisci, laboriosam id consequatur perferendis illo magnam. Provident, aut?
-    </p>
-    <Flexbox container justifyContent="flex-end">
-      <StyledTooltip mode="click" label={label} position="left">
-        <Button type="button">Hover me</Button>
-      </StyledTooltip>
-    </Flexbox>
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, molestias. Libero
-      adipisci, laboriosam id consequatur perferendis illo magnam. Provident, aut?
-    </p>
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, molestias. Libero
-      adipisci, laboriosam id consequatur perferendis illo magnam. Provident, aut?
-    </p>
-    <Flexbox container justifyContent="flex-end">
-      <StyledTooltip label={label} position="left">
-        <span>Touch me</span>
-      </StyledTooltip>
-    </Flexbox>
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, molestias. Libero
-      adipisci, laboriosam id consequatur perferendis illo magnam. Provident, aut?
-    </p>
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, molestias. Libero
-      adipisci, laboriosam id consequatur perferendis illo magnam. Provident, aut?
-    </p>
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, molestias. Libero
-      adipisci, laboriosam id consequatur perferendis illo magnam. Provident, aut?
-    </p>
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, molestias. Libero
-      adipisci, laboriosam id consequatur perferendis illo magnam. Provident, aut?
-    </p>
-    <Flexbox container justifyContent="flex-start">
-      <Tooltip label={label} position="right">
-        <Button type="button">Hover me</Button>
-      </Tooltip>
-    </Flexbox>
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, molestias. Libero
-      adipisci, laboriosam id consequatur perferendis illo magnam. Provident, aut?
-    </p>
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, molestias. Libero
-      adipisci, laboriosam id consequatur perferendis illo magnam. Provident, aut?
-    </p>
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, molestias. Libero
-      adipisci, laboriosam id consequatur perferendis illo magnam. Provident, aut?
-    </p>
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, molestias. Libero
-      adipisci, laboriosam id consequatur perferendis illo magnam. Provident, aut?
-    </p>
-    <Flexbox container justifyContent="center">
-      <Tooltip label={label} position="top">
-        <Button type="button">Hover me</Button>
-      </Tooltip>
-    </Flexbox>
-    <Flexbox container justifyContent="center">
-      <OldTooltip label={label} position="top">
-        <Button type="button">Old tooltip hover me</Button>
-      </OldTooltip>
-    </Flexbox>
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, molestias. Libero
-      adipisci, laboriosam id consequatur perferendis illo magnam. Provident, aut?
-    </p>
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, molestias. Libero
-      adipisci, laboriosam id consequatur perferendis illo magnam. Provident, aut?
-    </p>
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, molestias. Libero
-      adipisci, laboriosam id consequatur perferendis illo magnam. Provident, aut?
-    </p>
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, molestias. Libero
-      adipisci, laboriosam id consequatur perferendis illo magnam. Provident, aut?
-    </p>
-    <Tooltip label={label}>
-      <Button type="button">Hover me</Button>
-    </Tooltip>
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, molestias. Libero
-      adipisci, laboriosam id consequatur perferendis illo magnam. Provident, aut?
-    </p>
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, molestias. Libero
-      adipisci, laboriosam id consequatur perferendis illo magnam. Provident, aut?
-    </p>
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, molestias. Libero
-      adipisci, laboriosam id consequatur perferendis illo magnam. Provident, aut?
-    </p>
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, molestias. Libero
-      adipisci, laboriosam id consequatur perferendis illo magnam. Provident, aut?
-    </p>
-    <h3>Overflow hidden below</h3>
-    <div style={{ overflow: 'hidden', position: 'relative' }}>
-      <Tooltip label={label}>
-        <Button type="button">Hover me</Button>
-      </Tooltip>
-    </div>
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, molestias. Libero
-      adipisci, laboriosam id consequatur perferendis illo magnam. Provident, aut?
-    </p>
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, molestias. Libero
-      adipisci, laboriosam id consequatur perferendis illo magnam. Provident, aut?
-    </p>
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, molestias. Libero
-      adipisci, laboriosam id consequatur perferendis illo magnam. Provident, aut?
-    </p>
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, molestias. Libero
-      adipisci, laboriosam id consequatur perferendis illo magnam. Provident, aut?
-    </p>
-  </>
+  <Tooltip label={label}>
+    <Button type="button">Hover me</Button>
+  </Tooltip>
 );
 
 defaultStory.story = {
   name: 'Default',
+};
+
+export const withMode = () => (
+  <Tooltip label={label} mode="click">
+    <Button type="button">Click me</Button>
+  </Tooltip>
+);
+
+withMode.story = {
+  name: 'With Mode',
 };
 
 const veryLongLabel = 'Llanfairpwllgwyngyllgogerychwyrndrob';
@@ -278,4 +150,58 @@ export const insideOfModal = () => (
 
 customMaxWidth.story = {
   name: 'Custom max-width',
+};
+
+const ScrollMaker = styled.div`
+  background-image: linear-gradient(
+    ${(p) => p.theme.color.positive},
+    ${(p) => p.theme.color.negative}
+  );
+  width: 400px;
+  height: 400px;
+  overflow: scroll;
+`;
+
+const StyledBox = styled(Box)`
+    width: 800px;
+    height: 800px;
+`;
+
+
+
+export const extraFeatures = () => {
+
+
+  const Default = () => {
+
+    // const ref = React.useRef(null);
+
+    // React.useEffect(() => {
+
+    //   if(ref.current) {
+    //     ref.current?.scrollTo({
+    //       top: 0,
+    //       behaviour: 'smooth'
+    //     })
+    //   }
+
+
+    // }, [ref]);
+    
+    
+    return (
+    <ScrollMaker >
+      <StyledBox p={40}>
+        <Tooltip label={label} position="top">
+          <Button type="button">Hover me</Button>
+        </Tooltip>
+      </StyledBox>
+    </ScrollMaker>
+  )};
+
+  return Default;
+};
+
+extraFeatures.story = {
+  name: 'Extra features',
 };
