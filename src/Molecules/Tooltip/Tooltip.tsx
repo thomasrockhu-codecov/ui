@@ -1,118 +1,58 @@
-import React, { cloneElement } from 'react';
-import styled from 'styled-components';
-import * as R from 'ramda';
-import { useTooltip, TooltipPopup, Position } from '@reach/tooltip';
-import { TooltipComponent, Props } from './Tooltip.types';
-import { Typography } from '../..';
-import Triangle from './Triangle';
-import { leftAfter, leftCenter, leftBefore, topCenter, topOver, topUnder } from './utils';
-import { BORDER_SIZE } from './consts';
+import React, { cloneElement, useState, forwardRef } from 'react';
+import { TooltipComponent } from './Tooltip.types';
+import { TooltipPopup } from './TooltipPopup';
+import { wrapEvent, mergeRefs } from '../../common/utils';
+import { useTooltip } from './hooks';
 
-// TODO: Remove CleanTooltipPopup on next release of Styled-Components. Use shouldForwardProp
-const CleanTooltipPopup = React.forwardRef<HTMLDivElement, any>(
-  // @ts-ignore
-  (props, ref) => <TooltipPopup ref={ref} as={props.forwardedAs} {...R.omit(['inModal'])(props)} />,
+export const Tooltip: TooltipComponent = forwardRef(
+  (
+    { children, label, ariaLabel, position = 'bottom', mode = 'hover', inModal, maxWidth = 50 },
+    ref,
+  ) => {
+    const child = React.Children.only(children) as any;
+    const [triggerElement, setTriggerElement] = useState(undefined);
+    const {
+      id,
+      triggerElementRef,
+      isOpen,
+      handleMouseEnter,
+      handleMouseMove,
+      handleFocus,
+      handleBlur,
+      handleMouseLeave,
+      handleKeyDown,
+      handleMouseDown,
+    } = useTooltip(mode);
+
+    return (
+      <>
+        {cloneElement(child, {
+          'aria-describedby': isOpen ? id : undefined,
+          ref: mergeRefs([setTriggerElement, triggerElementRef]),
+          onMouseEnter: wrapEvent(child.props.onMouseEnter, handleMouseEnter),
+          onMouseMove: wrapEvent(child.props.onMouseMove, handleMouseMove),
+          onFocus: wrapEvent(child.props.onFocus, handleFocus),
+          onBlur: wrapEvent(child.props.onBlur, handleBlur),
+          onMouseLeave: wrapEvent(child.props.onMouseLeave, handleMouseLeave),
+          onKeyDown: wrapEvent(child.props.onKeyDown, handleKeyDown),
+          onMouseDown: wrapEvent(child.props.onMouseDown, handleMouseDown),
+        })}
+
+        {isOpen && (
+          <TooltipPopup
+            id={id}
+            ref={ref as any}
+            triggerElement={triggerElement}
+            ariaLabel={ariaLabel}
+            label={label}
+            position={position}
+            inModal={inModal}
+            maxWidth={maxWidth}
+          />
+        )}
+      </>
+    );
+  },
 );
-
-const StyledTooltip = styled(CleanTooltipPopup)`
-  z-index: ${(p) => (p.inModal ? p.theme.zIndex.overlayInModal : p.theme.zIndex.overlay)};
-  pointer-events: none;
-  position: absolute;
-  padding: ${(p) => p.theme.spacing.unit(1)}px ${(p) => p.theme.spacing.unit(2)}px;
-  box-shadow: 0 10px 16px ${(p) => p.theme.color.shadowModal};
-  background: ${(p) => p.theme.color.bubbleBackground};
-  border: solid ${BORDER_SIZE}px ${(p) => p.theme.color.bubbleBorder};
-  max-width: ${(p) => p.theme.spacing.unit(p.maxWidth)}px;
-  word-break: break-all;
-`;
-
-const positionOver: Position = (triggerRect, tooltipRect) => {
-  if (!triggerRect || !tooltipRect) {
-    return {};
-  }
-
-  return {
-    left: `${leftCenter(triggerRect, tooltipRect)}px`,
-    top: `${topOver(triggerRect, tooltipRect)}px`,
-  };
-};
-
-const positionUnder: Position = (triggerRect, tooltipRect) => {
-  if (!triggerRect || !tooltipRect) {
-    return {};
-  }
-
-  return {
-    left: `${leftCenter(triggerRect, tooltipRect)}px`,
-    top: `${topUnder(triggerRect, tooltipRect)}px`,
-  };
-};
-
-const positionBefore: Position = (triggerRect, tooltipRect) => {
-  if (!triggerRect || !tooltipRect) {
-    return {};
-  }
-
-  return {
-    left: `${leftBefore(triggerRect, tooltipRect)}px`,
-    top: `${topCenter(triggerRect, tooltipRect)}px`,
-  };
-};
-
-const positionAfter: Position = (triggerRect, tooltipRect) => {
-  if (!triggerRect || !tooltipRect) {
-    return {};
-  }
-
-  return {
-    left: `${leftAfter(triggerRect, tooltipRect)}px`,
-    top: `${topCenter(triggerRect, tooltipRect)}px`,
-  };
-};
-
-const getToolTipPosition = (position: Props['position']) => {
-  switch (position) {
-    case 'top':
-      return positionOver;
-    case 'right':
-      return positionAfter;
-    case 'left':
-      return positionBefore;
-    case 'bottom':
-    default:
-      return positionUnder;
-  }
-};
-
-export const Tooltip: TooltipComponent = ({
-  children,
-  label,
-  ariaLabel,
-  position = 'bottom',
-  inModal,
-  maxWidth = 50,
-}) => {
-  const [trigger, tooltip] = useTooltip();
-  const { isVisible, triggerRect } = tooltip;
-  const tooltipPosition = getToolTipPosition(position);
-
-  return (
-    <>
-      {cloneElement(children as React.ReactElement, trigger)}
-
-      {isVisible && triggerRect && (
-        <Triangle triggerRect={triggerRect} tooltipPosition={position} inModal={inModal} />
-      )}
-      <StyledTooltip
-        {...tooltip}
-        label={<Typography type="tertiary">{label}</Typography>}
-        aria-label={ariaLabel}
-        position={tooltipPosition}
-        inModal={inModal}
-        maxWidth={maxWidth}
-      />
-    </>
-  );
-};
 
 Tooltip.displayName = 'Tooltip';
