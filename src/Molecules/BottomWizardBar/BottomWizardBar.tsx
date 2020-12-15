@@ -2,7 +2,10 @@ import React from 'react';
 import styled from 'styled-components';
 import { Flexbox, useMedia, Box } from '../..';
 import Button from '../Button';
+import PageWrapper from '../PageWrapper';
 import { Props } from './BottomWizardBar.types';
+
+const tenColumns = `${(10 / 12) * 100}%`; // we want to utilize 10 out of 12 columns
 
 const ForwardButton = styled(Button)`
   ${(p) => p.theme.media.greaterThan(p.theme.breakpoints.sm)} {
@@ -10,8 +13,20 @@ const ForwardButton = styled(Button)`
   }
 `;
 
-const StyledNav = styled.nav`
-  background-color: ${(p) => p.theme.color.card};
+const StyledFooterPageWrapper = styled(PageWrapper)`
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: ${(p) => p.theme.zIndex.overlay};
+  border-top: 1px solid ${(p) => p.theme.color.divider};
+`;
+
+const StyledBox = styled(Box)`
+  margin: 0 auto;
+  ${(p) => p.theme.media.greaterThan(p.theme.breakpoints.xl)} {
+    width: ${tenColumns};
+  }
 `;
 
 const BottomWizardBar: React.FC<Props> = ({
@@ -27,7 +42,7 @@ const BottomWizardBar: React.FC<Props> = ({
   previousText,
   nextText,
   submitText,
-  hidePreviousButton = false,
+  hidePreviousButtonOnMobile = false,
   cancelButtonLink = '',
   previousButtonLink = '',
   submitButtonLink = '',
@@ -36,88 +51,90 @@ const BottomWizardBar: React.FC<Props> = ({
   const isMobile = useMedia((t) => t.media.lessThan(t.breakpoints.sm));
 
   return (
-    <StyledNav aria-label={titleText}>
-      <Box py={isEmbedded ? 3 : 2} px={isEmbedded ? 4 : 3} sm={{ py: 2, px: 0 }}>
-        <Flexbox
-          container
-          gutter={4}
-          sm={{ gutter: 8 }}
-          justifyContent="space-between"
-          alignItems="center"
-        >
-          {!isEmbedded && (
-            <Flexbox item>
-              <Button
-                onClick={onCancel}
-                disabled={isLoading}
-                size="l"
-                variant="neutral"
-                color={(t) => t.color.cta}
-                type="reset"
-                {...(cancelButtonLink && { to: cancelButtonLink })}
-              >
-                {cancelText}
-              </Button>
-            </Flexbox>
-          )}
+    <StyledFooterPageWrapper background={(t) => t.color.card}>
+      <StyledBox py={isEmbedded ? 3 : 2} px={isEmbedded ? 4 : 3} sm={{ py: 2, px: 0 }}>
+        <nav aria-label={titleText}>
           <Flexbox
+            container
             gutter={4}
             sm={{ gutter: 8 }}
-            container
-            item
-            {...(isEmbedded && { flex: '1' })}
-            alignItems="center"
             justifyContent="space-between"
+            alignItems="center"
           >
-            {(!isMobile || isEmbedded) && !hidePreviousButton && (
-              <Flexbox item {...(isEmbedded && { flex: '1' })}>
+            {!isEmbedded && (
+              <Flexbox item>
                 <Button
-                  onClick={onPrevious}
+                  onClick={onCancel}
                   disabled={isLoading}
                   size="l"
                   variant="neutral"
-                  fullWidth={isEmbedded}
                   color={(t) => t.color.cta}
-                  {...(previousButtonLink && { to: previousButtonLink })}
+                  type="reset"
+                  {...(cancelButtonLink && { to: cancelButtonLink })}
                 >
-                  {previousText}
+                  {cancelText}
                 </Button>
               </Flexbox>
             )}
-            <Flexbox item {...(isEmbedded && { flex: '1' })}>
-              {isLastStep ? (
-                <ForwardButton
-                  loading={isLoading}
-                  type="submit"
-                  variant="primary"
-                  size="l"
-                  fullWidth={isEmbedded}
-                  onClick={(e) => {
-                    if (onSubmit && !isLoading) onSubmit(e);
-                  }}
-                  {...(submitButtonLink && { to: submitButtonLink })}
-                >
-                  {submitText}
-                </ForwardButton>
-              ) : (
-                <ForwardButton
-                  loading={isLoading}
-                  variant="primary"
-                  size="l"
-                  onClick={(e) => {
-                    if (onNext && !isLoading) onNext(e);
-                  }}
-                  fullWidth={isEmbedded}
-                  {...(nextButtonLink && { to: nextButtonLink })}
-                >
-                  {nextText}
-                </ForwardButton>
+            <Flexbox
+              gutter={4}
+              sm={{ gutter: 8 }}
+              container
+              item
+              {...(isEmbedded && { flex: '1' })}
+              alignItems="center"
+              justifyContent="space-between"
+            >
+              {(!isMobile || isEmbedded) && !hidePreviousButtonOnMobile && (
+                <Flexbox item {...(isEmbedded && { flex: '1' })}>
+                  <Button
+                    onClick={onPrevious}
+                    disabled={isLoading}
+                    size="l"
+                    variant="neutral"
+                    fullWidth={isEmbedded}
+                    color={(t) => t.color.cta}
+                    {...(previousButtonLink && { to: previousButtonLink })}
+                  >
+                    {previousText}
+                  </Button>
+                </Flexbox>
               )}
+              <Flexbox item {...(isEmbedded && { flex: '1' })}>
+                {isLastStep ? (
+                  <ForwardButton
+                    loading={isLoading}
+                    type="submit"
+                    variant="primary"
+                    size="l"
+                    fullWidth={isEmbedded}
+                    onClick={(e) => {
+                      if (onSubmit && !isLoading) onSubmit(e);
+                    }}
+                    {...(submitButtonLink && { to: submitButtonLink })}
+                  >
+                    {submitText}
+                  </ForwardButton>
+                ) : (
+                  <ForwardButton
+                    loading={isLoading}
+                    variant="primary"
+                    size="l"
+                    onClick={(e) => {
+                      if (onNext && !isLoading) onNext(e);
+                    }}
+                    fullWidth={isEmbedded}
+                    {...(nextButtonLink && { to: nextButtonLink })}
+                  >
+                    {nextText}
+                  </ForwardButton>
+                )}
+              </Flexbox>
             </Flexbox>
           </Flexbox>
-        </Flexbox>
-      </Box>
-    </StyledNav>
+        </nav>
+      </StyledBox>
+    </StyledFooterPageWrapper>
   );
 };
 
