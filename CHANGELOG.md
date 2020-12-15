@@ -1,3 +1,12 @@
+## [5.5.3](https://github.com/nordnet/ui/compare/v5.5.2...v5.5.3) (2020-12-15)
+
+
+### Bug Fixes
+
+* complete bottomwizardbar ([ebffc51](https://github.com/nordnet/ui/commit/ebffc51))
+* complete bottomwizardbar ([9052086](https://github.com/nordnet/ui/commit/9052086))
+* rm unnecessary component ([743690d](https://github.com/nordnet/ui/commit/743690d))
+
 ## [5.5.2](https://github.com/nordnet/ui/compare/v5.5.1...v5.5.2) (2020-12-14)
 
 
