@@ -3,7 +3,6 @@ import styled from 'styled-components';
 import { Box, Modal, Drawer } from '../..';
 import Tooltip from '.';
 import { Display } from '../../common/Display';
-import { useEffect } from '@storybook/addons';
 
 export default {
   title: 'Molecules / TooltipNew',
@@ -18,11 +17,8 @@ const Button = styled.button`
   display: block;
 `;
 
-
-
-
 export const defaultStory = () => (
-  <Tooltip label={label}>
+  <Tooltip label={label} position="top">
     <Button type="button">Hover me</Button>
   </Tooltip>
 );
@@ -38,7 +34,7 @@ export const withMode = () => (
 );
 
 withMode.story = {
-  name: 'With Mode',
+  name: 'With On Click Mode',
 };
 
 const veryLongLabel = 'Llanfairpwllgwyngyllgogerychwyrndrob';
@@ -140,68 +136,4 @@ export const customMaxWidth = () => (
 
 customMaxWidth.story = {
   name: 'Custom max-width',
-};
-
-export const insideOfModal = () => (
-  <Tooltip label={label} position="top">
-    <Button type="button">Hover me</Button>
-  </Tooltip>
-);
-
-customMaxWidth.story = {
-  name: 'Custom max-width',
-};
-
-const ScrollMaker = styled.div`
-  background-image: linear-gradient(
-    ${(p) => p.theme.color.positive},
-    ${(p) => p.theme.color.negative}
-  );
-  width: 400px;
-  height: 400px;
-  overflow: scroll;
-`;
-
-const StyledBox = styled(Box)`
-    width: 800px;
-    height: 800px;
-`;
-
-
-
-export const extraFeatures = () => {
-
-
-  const Default = () => {
-
-    // const ref = React.useRef(null);
-
-    // React.useEffect(() => {
-
-    //   if(ref.current) {
-    //     ref.current?.scrollTo({
-    //       top: 0,
-    //       behaviour: 'smooth'
-    //     })
-    //   }
-
-
-    // }, [ref]);
-    
-    
-    return (
-    <ScrollMaker >
-      <StyledBox p={40}>
-        <Tooltip label={label} position="top">
-          <Button type="button">Hover me</Button>
-        </Tooltip>
-      </StyledBox>
-    </ScrollMaker>
-  )};
-
-  return Default;
-};
-
-extraFeatures.story = {
-  name: 'Extra features',
 };
