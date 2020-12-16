@@ -76,7 +76,6 @@ const Wrapper = styled(Flexbox)`
 `;
 
 const getPositionStyles = (p: any) => {
-  if (p.variant === 'quiet') return 'right: 0px;';
   if (p.position === 'right') return `right: ${p.theme.spacing.unit(2)}px;`;
   if (p.position === 'left') return `left: ${p.theme.spacing.unit(2)}px;`;
   return '';
@@ -152,7 +151,7 @@ const Input = styled(NormalizedElements.Input).attrs(() => ({ type: 'text' }))<P
          font-size: 28px; 
          font-weight: bold;
          &:focus {
-           padding-left: ${p.theme.spacing.unit(2)}px;
+           padding-left: ${p.theme.spacing.unit(p.leftAddon ? 8 : 2)}px;
            padding-right: ${p.theme.spacing.unit(p.rightAddon ? 8 : 0)}px;
          }`
       : ''}

@@ -434,6 +434,20 @@ export const quietNumber = () => (
         ),
         title: 'Right addon',
       },
+      {
+        component: (
+          <Input.Number
+            id="insert-unique-id"
+            label="Label"
+            onChange={action('onChange')}
+            variant="quiet"
+            noSteppers
+            rightAddon="%"
+            leftAddon={<Icon.Plus color={(t) => t.color.cta} size={4} />}
+          />
+        ),
+        title: 'Left addon',
+      },
     ]}
   />
 );
