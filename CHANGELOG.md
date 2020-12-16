@@ -1,3 +1,11 @@
+## [5.6.2](https://github.com/nordnet/ui/compare/v5.6.1...v5.6.2) (2020-12-16)
+
+
+### Bug Fixes
+
+* condition ([b6f0b44](https://github.com/nordnet/ui/commit/b6f0b44))
+* rename prop ([cfe5148](https://github.com/nordnet/ui/commit/cfe5148))
+
 ## [5.6.1](https://github.com/nordnet/ui/compare/v5.6.0...v5.6.1) (2020-12-16)
 
 
