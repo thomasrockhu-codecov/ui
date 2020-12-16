@@ -1,3 +1,10 @@
+## [5.6.1](https://github.com/nordnet/ui/compare/v5.6.0...v5.6.1) (2020-12-16)
+
+
+### Bug Fixes
+
+* add left addon support for quiet number input ([a18110e](https://github.com/nordnet/ui/commit/a18110e))
+
 # [5.6.0](https://github.com/nordnet/ui/compare/v5.5.3...v5.6.0) (2020-12-16)
 
 
