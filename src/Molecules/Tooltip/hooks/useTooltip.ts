@@ -1,7 +1,7 @@
 import { useState, useCallback, useEffect, useRef } from 'react';
 import { Props as TooltipProps } from '../Tooltip.types';
 import { useId } from './useId';
-import { store, State } from '../Tooltip.store';
+import { store, State } from './useTooltip.store';
 import { useOnClickOutside } from '../../../common/Hooks';
 
 export const useTooltip = (mode: TooltipProps['mode']) => {

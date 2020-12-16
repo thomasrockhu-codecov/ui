@@ -33,6 +33,10 @@ const TooltipPopup: TooltipPopupComponent = forwardRef(
     const [popperElement, setPopperElement] = useState(null);
     const [arrowElement, setArrowElement] = useState(null);
 
+    /**
+      We're using Popper.js for convenient tooltip placement.
+    */
+
     const { styles, attributes, state } = usePopper(triggerElement, popperElement, {
       modifiers: [{ name: 'arrow', options: { element: arrowElement } }],
       placement: position,

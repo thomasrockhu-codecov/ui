@@ -1,4 +1,4 @@
-import { OPEN_DELAY, CLOSE_DELAY } from './consts';
+import { OPEN_DELAY, CLOSE_DELAY } from '../consts';
 
 export enum State {
   IDLE,
@@ -10,11 +10,26 @@ export enum State {
 class TooltipStore {
   state: State;
 
+  /** 
+    ContextId allows us to persist some data around, in Tooltip all we use
+    is the id of the current tooltip being interacted with.
+  */
+
   contextId: string | null;
 
   becomingVisibleTimeout: number | undefined;
 
   leavingVisibleTimeout: number | undefined;
+
+  /** 
+    Subscriptions:
+    We could require apps to render a <TooltipProvider> around the app and use
+    React context to notify Tooltips of changes to our state machine, instead
+    we manage subscriptions ourselves and simplify the Tooltip API.
+    
+    Maybe if default context could take a hook (instead of just a static value)
+    that was rendered at the root for us, that'd be cool! But it doesn't. 
+  */
 
   subscriptions: Function[];
 
@@ -59,6 +74,12 @@ class TooltipStore {
 
     this.notify();
   };
+
+  /**  
+    Timeouts:
+    Manages when the user "rests" on an element. Keeps the interface from being
+    flashing tooltips all the time as the user moves the mouse around the screen.
+  */
 
   startBecomingVisibleTimeout = (id: string) => {
     window.clearTimeout(this.becomingVisibleTimeout);
