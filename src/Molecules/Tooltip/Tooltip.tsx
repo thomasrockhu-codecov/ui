@@ -8,7 +8,7 @@ import { useTooltip } from './hooks';
   There are a few features that are important to understand.
   
   1. Tooltips don't show up until the user has rested on one, we don't
-     want tooltips popupping up as you move your mouse around the page.
+     want tooltips popping up as you move your mouse around the page.
   
   2. Once any tooltip becomes visible, other tooltips nearby should skip
      resting and display immediately.
