@@ -1,3 +1,15 @@
+# [5.6.0](https://github.com/nordnet/ui/compare/v5.5.3...v5.6.0) (2020-12-16)
+
+
+### Bug Fixes
+
+* prop name ([4cfc3ab](https://github.com/nordnet/ui/commit/4cfc3ab))
+
+
+### Features
+
+* close drawer when clicking outside and add disabling prop ([32da3e1](https://github.com/nordnet/ui/commit/32da3e1))
+
 ## [5.5.3](https://github.com/nordnet/ui/compare/v5.5.2...v5.5.3) (2020-12-15)
 
 
