@@ -107,7 +107,7 @@ export const zindexWars = () => {
     return (
       <Drawer>
         <Box mb={4}>
-          <Tooltip inModal label={label} position="left">
+          <Tooltip label={label}>
             <Button>Hover me</Button>
           </Tooltip>
         </Box>
