@@ -1,3 +1,11 @@
+## [5.6.3](https://github.com/nordnet/ui/compare/v5.6.2...v5.6.3) (2020-12-16)
+
+
+### Bug Fixes
+
+* add snaps ([b2c3faa](https://github.com/nordnet/ui/commit/b2c3faa))
+* remove mobile check for previous button ([eaf4f66](https://github.com/nordnet/ui/commit/eaf4f66))
+
 ## [5.6.2](https://github.com/nordnet/ui/compare/v5.6.1...v5.6.2) (2020-12-16)
 
 
