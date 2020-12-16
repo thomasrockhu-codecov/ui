@@ -1,6 +1,7 @@
 import React from 'react';
 import { action } from '@storybook/addon-actions';
 import BottomWizardBar from './BottomWizardBar';
+import { useMedia } from '../../Atoms/Media';
 
 export default {
   title: 'Molecules / Bottom Wizard Bar',
@@ -8,6 +9,8 @@ export default {
     component: BottomWizardBar,
   },
 };
+
+const isMobile = useMedia((t) => t.media.lessThan(t.breakpoints.sm));
 
 export const Default = () => (
   <BottomWizardBar
@@ -77,7 +80,7 @@ export const PreviousButtonDisabled = () => (
     previousText="Previous"
     nextText="Next"
     submitText="Submit"
-    hidePreviousButtonOnMobile
+    hidePreviousButton={isMobile}
   />
 );
 

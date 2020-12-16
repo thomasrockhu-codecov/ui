@@ -42,7 +42,7 @@ const BottomWizardBar: React.FC<Props> = ({
   previousText,
   nextText,
   submitText,
-  hidePreviousButtonOnMobile = false,
+  hidePreviousButton = false,
   cancelButtonLink = '',
   previousButtonLink = '',
   submitButtonLink = '',
@@ -85,7 +85,7 @@ const BottomWizardBar: React.FC<Props> = ({
               alignItems="center"
               justifyContent="space-between"
             >
-              {(!isMobile || isEmbedded) && !hidePreviousButtonOnMobile && (
+              {(!isMobile || isEmbedded) && !hidePreviousButton && (
                 <Flexbox item {...(isEmbedded && { flex: '1' })}>
                   <Button
                     onClick={onPrevious}
