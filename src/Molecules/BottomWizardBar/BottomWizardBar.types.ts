@@ -4,7 +4,7 @@ export type Props = {
   onNext: React.MouseEventHandler;
   onSubmit?: React.MouseEventHandler;
   /** @default false */
-  hidePreviousButtonOnMobile?: boolean;
+  hidePreviousButton?: boolean | null;
   /** @default false */
   isLastStep?: boolean;
   /** @default false */

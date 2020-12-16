@@ -77,7 +77,7 @@ export const PreviousButtonDisabled = () => (
     previousText="Previous"
     nextText="Next"
     submitText="Submit"
-    hidePreviousButtonOnMobile
+    hidePreviousButton
   />
 );
 
