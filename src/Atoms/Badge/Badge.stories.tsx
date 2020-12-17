@@ -1,8 +1,8 @@
-import React from 'react';
+import React, { useState } from 'react';
 import styled from 'styled-components';
 import { Badge } from './Badge';
 import docs from './Badge.mdx';
-import { Box, Typography } from '../..';
+import { Box, Button, Typography } from '../..';
 import { numberWithLimit } from '../../common/utils';
 import { Props as BadgeProps } from './Badge.types';
 
@@ -213,6 +213,20 @@ export const A11yBadgeUseCases = () => {
       <Box my={2}>
         <TextWithNumberBadge />
       </Box>
+    </>
+  );
+};
+
+export const BadgeWithAnimation = () => {
+  const [nofifications, setNotifications] = useState(0);
+
+  return (
+    <>
+      <Badge>{nofifications}</Badge>
+      <div>
+        <Button onClick={() => setNotifications(nofifications - 1)}>-</Button>
+        <Button onClick={() => setNotifications(nofifications + 1)}>+</Button>
+      </div>
     </>
   );
 };

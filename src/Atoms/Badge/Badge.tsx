@@ -1,4 +1,5 @@
-import React from 'react';
+// import { useEffect } from '@storybook/addons';
+import React, { useEffect, useState } from 'react';
 import styled from 'styled-components';
 import { Typography } from '../..';
 import { isElement, isFunction } from '../../common/utils';
@@ -9,7 +10,21 @@ const MEDIUM_BADGE_SIZE = 5;
 
 const BADGE_PADDING = 1.5;
 
-const Circle: BadgeComponent = styled.span<BadgeComponentProps & { size: number }>`
+const Circle: BadgeComponent = styled.span<
+  BadgeComponentProps & { size: number; $animate: boolean }
+>`
+  @keyframes scale {
+    0% {
+      transform: scale(1);
+    }
+    5% {
+      transform: scale(2);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+
   display: inline-flex;
   justify-content: center;
   align-items: center;
@@ -24,9 +39,12 @@ const Circle: BadgeComponent = styled.span<BadgeComponentProps & { size: number 
     const shouldHavePadding = p.size === MEDIUM_BADGE_SIZE;
     return shouldHavePadding ? `padding: 0 ${p.theme.spacing.unit(BADGE_PADDING)}px` : '';
   }};
+  ${($animate) => ($animate ? `animation: scale 2s ease-in-out;` : '')}
 `;
 
 export const Badge: BadgeComponent = ({ backgroundColor, color, children, ...props }) => {
+  const [animate, setAnimate] = useState(true);
+
   const CircleContent = () => {
     if (typeof children === 'undefined') return null;
     if (isFunction(children)) return children();
@@ -38,12 +56,17 @@ export const Badge: BadgeComponent = ({ backgroundColor, color, children, ...pro
       </Typography>
     );
   };
+  useEffect(() => {
+    setAnimate(true);
+  }, [children]);
 
   // if child is component, color style should apply to parent since Typography doesn't render
   const textColorOnParent = isFunction(children) || isElement(children);
 
   return (
     <Circle
+      $animate={animate}
+      onAnimationEnd={() => setAnimate(false)}
       size={typeof children !== 'undefined' ? MEDIUM_BADGE_SIZE : SMALL_BADGE_SIZE}
       backgroundColor={backgroundColor}
       {...(textColorOnParent && { color })}
