@@ -1,3 +1,15 @@
+## [5.6.4](https://github.com/nordnet/ui/compare/v5.6.3...v5.6.4) (2020-12-17)
+
+
+### Bug Fixes
+
+* add fallback values to the prop ([c7d94cc](https://github.com/nordnet/ui/commit/c7d94cc))
+* add missing chevron icon on previous button ([6b8e790](https://github.com/nordnet/ui/commit/6b8e790))
+* add sub ([6f86581](https://github.com/nordnet/ui/commit/6f86581))
+* gutter ([3ddfd36](https://github.com/nordnet/ui/commit/3ddfd36))
+* remove spinner animation delay from loading states on buttons ([75e6359](https://github.com/nordnet/ui/commit/75e6359))
+* rm redundant flexbox and styling ([2a48838](https://github.com/nordnet/ui/commit/2a48838))
+
 ## [5.6.3](https://github.com/nordnet/ui/compare/v5.6.2...v5.6.3) (2020-12-16)
 
 
