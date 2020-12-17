@@ -10,9 +10,7 @@ const MEDIUM_BADGE_SIZE = 5;
 
 const BADGE_PADDING = 1.5;
 
-const Circle: BadgeComponent = styled.span<
-  BadgeComponentProps & { size: number; $animate: boolean }
->`
+const Circle: BadgeComponent = styled.span<BadgeComponentProps & { size: number }>`
   @keyframes scale {
     0% {
       transform: scale(1);
