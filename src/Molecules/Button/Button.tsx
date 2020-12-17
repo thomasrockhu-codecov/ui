@@ -75,6 +75,7 @@ export const Button: ButtonComponent = React.forwardRef<
     onMouseEnter,
     onMouseLeave,
     onMouseOver,
+    delayLoadingSpinnerAnimation,
     ...rest
   } = props;
   const externalIsNotPresent = typeof external === 'undefined';
@@ -142,7 +143,13 @@ export const Button: ButtonComponent = React.forwardRef<
         as={as}
         target={target}
       >
-        <ButtonContent loading={loading} variant={variant} size={size} colorFn={color}>
+        <ButtonContent
+          loading={loading}
+          variant={variant}
+          size={size}
+          colorFn={color}
+          delayLoadingSpinnerAnimation={delayLoadingSpinnerAnimation}
+        >
           {children}
         </ButtonContent>
       </StyledLink>
@@ -161,7 +168,13 @@ export const Button: ButtonComponent = React.forwardRef<
       as={as}
       ref={ref as React.Ref<HTMLButtonElement>}
     >
-      <ButtonContent loading={loading} variant={variant} size={size} colorFn={color}>
+      <ButtonContent
+        loading={loading}
+        variant={variant}
+        size={size}
+        colorFn={color}
+        delayLoadingSpinnerAnimation={delayLoadingSpinnerAnimation}
+      >
         {children}
       </ButtonContent>
     </StyledButton>

@@ -62,6 +62,7 @@ const BottomWizardBar: React.FC<Props> = ({
             {!isEmbedded && (
               <Flexbox item>
                 <Button
+                  delayLoadingSpinnerAnimation={false}
                   onClick={onCancel}
                   disabled={isLoading}
                   size="l"
@@ -86,6 +87,7 @@ const BottomWizardBar: React.FC<Props> = ({
               {!hidePreviousButton && (
                 <Flexbox item {...(isEmbedded && { flex: '1' })}>
                   <Button
+                    delayLoadingSpinnerAnimation={false}
                     onClick={onPrevious}
                     disabled={isLoading}
                     size="l"
@@ -101,6 +103,7 @@ const BottomWizardBar: React.FC<Props> = ({
               <Flexbox item {...(isEmbedded && { flex: '1' })}>
                 {isLastStep ? (
                   <ForwardButton
+                    delayLoadingSpinnerAnimation={false}
                     loading={isLoading}
                     type="submit"
                     variant="primary"
@@ -115,6 +118,7 @@ const BottomWizardBar: React.FC<Props> = ({
                   </ForwardButton>
                 ) : (
                   <ForwardButton
+                    delayLoadingSpinnerAnimation={false}
                     loading={isLoading}
                     variant="primary"
                     size="l"

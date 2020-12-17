@@ -352,6 +352,16 @@ buttonWithLoadingState.story = {
   name: 'Button with loading state',
 };
 
+export const buttonWithLoadingStateWithoutTheSpinnerAnimationDelay = () => (
+  <Button onClick={action('clicked')} loading delayLoadingSpinnerAnimation={false}>
+    Button
+  </Button>
+);
+
+buttonWithLoadingStateWithoutTheSpinnerAnimationDelay.story = {
+  name: 'Button with loading state without the spinner animation delay',
+};
+
 export const buttonWithTypeModified = () => (
   <Display
     items={[

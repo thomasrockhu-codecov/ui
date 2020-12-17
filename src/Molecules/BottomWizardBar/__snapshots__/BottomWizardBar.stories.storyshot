@@ -411,6 +411,16 @@ exports[`Storyshots Molecules / Bottom Wizard Bar Last Step And Loading 1`] = `
   padding-top: 0;
 }
 
+.c12 {
+  display: inline-block;
+  -webkit-animation: spinner 0.6s linear infinite;
+  animation: spinner 0.6s linear infinite;
+}
+
+.c13 {
+  display: block;
+}
+
 .c8 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: inherit;
@@ -740,7 +750,70 @@ exports[`Storyshots Molecules / Bottom Wizard Bar Last Step And Loading 1`] = `
                     Submit
                   </span>
                 </span>
-                <span />
+                <span>
+                  <span
+                    className="c12"
+                  >
+                    <svg
+                      className="c13"
+                      height={24}
+                      viewBox="0 0 24 24"
+                      width={24}
+                    >
+                      <defs>
+                        <linearGradient
+                          id="spinner-spinner-primary-l-undefined-1"
+                          x1="50%"
+                          x2="50%"
+                          y1="0%"
+                          y2="100%"
+                        >
+                          <stop
+                            offset="0%"
+                            stopColor="#FFFFFF"
+                            stopOpacity="0"
+                          />
+                          <stop
+                            offset="100%"
+                            stopColor="#FFFFFF"
+                            stopOpacity=".5"
+                          />
+                        </linearGradient>
+                        <linearGradient
+                          id="spinner-spinner-primary-l-undefined-2"
+                          x1="50%"
+                          x2="50%"
+                          y1="0%"
+                          y2="100%"
+                        >
+                          <stop
+                            offset="0%"
+                            stopColor="#FFFFFF"
+                            stopOpacity=".5"
+                          />
+                          <stop
+                            offset="100%"
+                            stopColor="#FFFFFF"
+                          />
+                        </linearGradient>
+                      </defs>
+                      <g
+                        fill="none"
+                        fillRule="evenodd"
+                      >
+                        <path
+                          d="M12,0 C18.627417,0 24,5.372583 24,12 C24,18.627417 18.627417,24 12,24 M12,21 C16.9705627,21 21,16.9705627 21,12 C21,7.02943725 16.9705627,3 12,3"
+                          fill="url(#spinner-spinner-primary-l-undefined-1)"
+                        />
+                        <path
+                          d="M0,0 C6.627417,0 12,5.372583 12,12 C12,18.627417 6.627417,24 0,24 M0,21 C4.97056275,21 9,16.9705627 9,12 C9,7.02943725 4.97056275,3 0,3"
+                          fill="url(#spinner-spinner-primary-l-undefined-2)"
+                          transform="rotate(-180 6 12)"
+                        />
+                      </g>
+                    </svg>
+                  </span>
+                </span>
               </button>
             </div>
           </div>
@@ -1944,6 +2017,16 @@ exports[`Storyshots Molecules / Bottom Wizard Bar Webview Embedded Last Step And
   flex: 1;
 }
 
+.c12 {
+  display: inline-block;
+  -webkit-animation: spinner 0.6s linear infinite;
+  animation: spinner 0.6s linear infinite;
+}
+
+.c13 {
+  display: block;
+}
+
 .c9 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: inherit;
@@ -2262,7 +2345,70 @@ exports[`Storyshots Molecules / Bottom Wizard Bar Webview Embedded Last Step And
                     Submit
                   </span>
                 </span>
-                <span />
+                <span>
+                  <span
+                    className="c12"
+                  >
+                    <svg
+                      className="c13"
+                      height={24}
+                      viewBox="0 0 24 24"
+                      width={24}
+                    >
+                      <defs>
+                        <linearGradient
+                          id="spinner-spinner-primary-l-undefined-1"
+                          x1="50%"
+                          x2="50%"
+                          y1="0%"
+                          y2="100%"
+                        >
+                          <stop
+                            offset="0%"
+                            stopColor="#FFFFFF"
+                            stopOpacity="0"
+                          />
+                          <stop
+                            offset="100%"
+                            stopColor="#FFFFFF"
+                            stopOpacity=".5"
+                          />
+                        </linearGradient>
+                        <linearGradient
+                          id="spinner-spinner-primary-l-undefined-2"
+                          x1="50%"
+                          x2="50%"
+                          y1="0%"
+                          y2="100%"
+                        >
+                          <stop
+                            offset="0%"
+                            stopColor="#FFFFFF"
+                            stopOpacity=".5"
+                          />
+                          <stop
+                            offset="100%"
+                            stopColor="#FFFFFF"
+                          />
+                        </linearGradient>
+                      </defs>
+                      <g
+                        fill="none"
+                        fillRule="evenodd"
+                      >
+                        <path
+                          d="M12,0 C18.627417,0 24,5.372583 24,12 C24,18.627417 18.627417,24 12,24 M12,21 C16.9705627,21 21,16.9705627 21,12 C21,7.02943725 16.9705627,3 12,3"
+                          fill="url(#spinner-spinner-primary-l-undefined-1)"
+                        />
+                        <path
+                          d="M0,0 C6.627417,0 12,5.372583 12,12 C12,18.627417 6.627417,24 0,24 M0,21 C4.97056275,21 9,16.9705627 9,12 C9,7.02943725 4.97056275,3 0,3"
+                          fill="url(#spinner-spinner-primary-l-undefined-2)"
+                          transform="rotate(-180 6 12)"
+                        />
+                      </g>
+                    </svg>
+                  </span>
+                </span>
               </button>
             </div>
           </div>

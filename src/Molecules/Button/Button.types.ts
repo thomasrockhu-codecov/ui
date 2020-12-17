@@ -32,6 +32,8 @@ export type ButtonProps = {
   id?: string;
   as?: any;
   loading?: boolean;
+  /** @default true */
+  delayLoadingSpinnerAnimation?: boolean;
   ref?: React.Ref<HTMLAnchorElement> | React.Ref<HTMLButtonElement>;
 } & Pick<
   React.DOMAttributes<HTMLButtonElement | HTMLAnchorElement>,
