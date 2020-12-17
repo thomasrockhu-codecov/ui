@@ -100,7 +100,7 @@ exports[`Storyshots Molecules / Bottom Wizard Bar Default 1`] = `
   user-select: none;
   width: 16px;
   height: 16px;
-  fill: #0046FF;
+  fill: currentColor;
   -webkit-flex-shrink: 0;
   -ms-flex-negative: 0;
   flex-shrink: 0;
@@ -510,7 +510,7 @@ exports[`Storyshots Molecules / Bottom Wizard Bar Last Step And Loading 1`] = `
   user-select: none;
   width: 16px;
   height: 16px;
-  fill: #0046FF;
+  fill: currentColor;
   -webkit-flex-shrink: 0;
   -ms-flex-negative: 0;
   flex-shrink: 0;
@@ -1781,7 +1781,7 @@ exports[`Storyshots Molecules / Bottom Wizard Bar Webview Embedded 1`] = `
   user-select: none;
   width: 16px;
   height: 16px;
-  fill: #0046FF;
+  fill: currentColor;
   -webkit-flex-shrink: 0;
   -ms-flex-negative: 0;
   flex-shrink: 0;
@@ -2246,7 +2246,7 @@ exports[`Storyshots Molecules / Bottom Wizard Bar Webview Embedded Last Step And
   user-select: none;
   width: 16px;
   height: 16px;
-  fill: #0046FF;
+  fill: currentColor;
   -webkit-flex-shrink: 0;
   -ms-flex-negative: 0;
   flex-shrink: 0;

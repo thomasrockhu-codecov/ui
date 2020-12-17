@@ -97,12 +97,7 @@ const BottomWizardBar: React.FC<Props> = ({
                     {...(previousButtonLink && { to: previousButtonLink })}
                   >
                     <Flexbox container justifyContent="center" alignItems="center" gutter={2}>
-                      <Icon.ThinChevron
-                        direction="left"
-                        inline
-                        color={(t) => t.color.cta}
-                        size={4}
-                      />
+                      <Icon.ThinChevron direction="left" inline color="currentColor" size={4} />
                       {previousText}
                     </Flexbox>
                   </Button>
