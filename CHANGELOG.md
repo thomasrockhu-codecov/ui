@@ -1,3 +1,12 @@
+## [5.6.5](https://github.com/nordnet/ui/compare/v5.6.4...v5.6.5) (2020-12-17)
+
+
+### Bug Fixes
+
+* get rid of unnecessary useMemo ([e511dba](https://github.com/nordnet/ui/commit/e511dba))
+* make datepicker width aprop accept a string type as well ([6339533](https://github.com/nordnet/ui/commit/6339533))
+* regenerate snapshots ([cd6c9db](https://github.com/nordnet/ui/commit/cd6c9db))
+
 ## [5.6.4](https://github.com/nordnet/ui/compare/v5.6.3...v5.6.4) (2020-12-17)
 
 
