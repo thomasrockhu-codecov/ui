@@ -348,6 +348,10 @@ const DatePicker = React.forwardRef<HTMLDivElement, Props>((props, ref) => {
     setOpen(false);
   });
 
+  const inputWidth = useMemo(() => {
+    return typeof width === 'string' ? width : `${theme.spacing.unit(width)}px`;
+  }, [width, theme]);
+
   return (
     <div ref={(ref || selfRef) as React.Ref<HTMLDivElement>}>
       <StyledInputText
@@ -366,7 +370,7 @@ const DatePicker = React.forwardRef<HTMLDivElement, Props>((props, ref) => {
         onChange={handleInputOnChange}
         onKeyDown={handleInputKeyDown}
         onFocus={handleInputOnFocus}
-        width={width ? `${theme.spacing.unit(width)}px` : ''}
+        width={inputWidth}
         autoComplete="off"
       />
       {open ? (
