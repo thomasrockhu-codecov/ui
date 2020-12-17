@@ -67,6 +67,33 @@ exports[`Storyshots Molecules / Bottom Wizard Bar Default 1`] = `
 }
 
 .c10 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-left: -4px;
+  margin-right: -4px;
+}
+
+.c10 > * {
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+.c10 > *:not(:first-child) {
+  padding-top: 0;
+}
+
+.c11 {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -81,7 +108,7 @@ exports[`Storyshots Molecules / Bottom Wizard Bar Default 1`] = `
   vertical-align: middle;
 }
 
-.c11 {
+.c12 {
   -webkit-transform: rotate(90deg);
   -ms-transform: rotate(90deg);
   transform: rotate(90deg);
@@ -180,11 +207,6 @@ exports[`Storyshots Molecules / Bottom Wizard Bar Default 1`] = `
 
 .c4 {
   margin: 0 auto;
-}
-
-.c12 {
-  margin-right: 4px;
-  vertical-align: sub;
 }
 
 @media (min-width:760px) {
@@ -342,20 +364,24 @@ exports[`Storyshots Molecules / Bottom Wizard Bar Default 1`] = `
                 <span
                   className="c8"
                 >
-                  <svg
-                    aria-hidden="true"
-                    className="c10 c11 c12"
-                    direction="left"
-                    focusable="false"
-                    preserveAspectRatio="xMidYMid meet"
-                    role="presentation"
-                    viewBox="0 0 16 16"
+                  <div
+                    className="c10"
                   >
-                    <polygon
-                      points="14.620 3.580, 16.000 5.020, 8.000 12.730, 0.000 5.030, 1.400 3.580, 8.000 9.96"
-                    />
-                  </svg>
-                  Previous
+                    <svg
+                      aria-hidden="true"
+                      className="c11 c12"
+                      direction="left"
+                      focusable="false"
+                      preserveAspectRatio="xMidYMid meet"
+                      role="presentation"
+                      viewBox="0 0 16 16"
+                    >
+                      <polygon
+                        points="14.620 3.580, 16.000 5.020, 8.000 12.730, 0.000 5.030, 1.400 3.580, 8.000 9.96"
+                      />
+                    </svg>
+                    Previous
+                  </div>
                 </span>
               </a>
             </div>
@@ -451,6 +477,33 @@ exports[`Storyshots Molecules / Bottom Wizard Bar Last Step And Loading 1`] = `
 }
 
 .c10 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-left: -4px;
+  margin-right: -4px;
+}
+
+.c10 > * {
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+.c10 > *:not(:first-child) {
+  padding-top: 0;
+}
+
+.c11 {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -465,7 +518,7 @@ exports[`Storyshots Molecules / Bottom Wizard Bar Last Step And Loading 1`] = `
   vertical-align: middle;
 }
 
-.c11 {
+.c12 {
   -webkit-transform: rotate(90deg);
   -ms-transform: rotate(90deg);
   transform: rotate(90deg);
@@ -634,11 +687,6 @@ exports[`Storyshots Molecules / Bottom Wizard Bar Last Step And Loading 1`] = `
   margin: 0 auto;
 }
 
-.c12 {
-  margin-right: 4px;
-  vertical-align: sub;
-}
-
 @media (min-width:760px) {
   .c3 {
     padding-left: 0px;
@@ -796,20 +844,24 @@ exports[`Storyshots Molecules / Bottom Wizard Bar Last Step And Loading 1`] = `
                 <span
                   className="c8"
                 >
-                  <svg
-                    aria-hidden="true"
-                    className="c10 c11 c12"
-                    direction="left"
-                    focusable="false"
-                    preserveAspectRatio="xMidYMid meet"
-                    role="presentation"
-                    viewBox="0 0 16 16"
+                  <div
+                    className="c10"
                   >
-                    <polygon
-                      points="14.620 3.580, 16.000 5.020, 8.000 12.730, 0.000 5.030, 1.400 3.580, 8.000 9.96"
-                    />
-                  </svg>
-                  Previous
+                    <svg
+                      aria-hidden="true"
+                      className="c11 c12"
+                      direction="left"
+                      focusable="false"
+                      preserveAspectRatio="xMidYMid meet"
+                      role="presentation"
+                      viewBox="0 0 16 16"
+                    >
+                      <polygon
+                        points="14.620 3.580, 16.000 5.020, 8.000 12.730, 0.000 5.030, 1.400 3.580, 8.000 9.96"
+                      />
+                    </svg>
+                    Previous
+                  </div>
                 </span>
               </button>
             </div>
@@ -1696,6 +1748,33 @@ exports[`Storyshots Molecules / Bottom Wizard Bar Webview Embedded 1`] = `
 }
 
 .c10 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-left: -4px;
+  margin-right: -4px;
+}
+
+.c10 > * {
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+.c10 > *:not(:first-child) {
+  padding-top: 0;
+}
+
+.c11 {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -1710,7 +1789,7 @@ exports[`Storyshots Molecules / Bottom Wizard Bar Webview Embedded 1`] = `
   vertical-align: middle;
 }
 
-.c11 {
+.c12 {
   -webkit-transform: rotate(90deg);
   -ms-transform: rotate(90deg);
   transform: rotate(90deg);
@@ -1871,11 +1950,6 @@ exports[`Storyshots Molecules / Bottom Wizard Bar Webview Embedded 1`] = `
   margin: 0 auto;
 }
 
-.c12 {
-  margin-right: 4px;
-  vertical-align: sub;
-}
-
 @media (min-width:760px) {
   .c3 {
     padding-left: 0px;
@@ -2020,20 +2094,24 @@ exports[`Storyshots Molecules / Bottom Wizard Bar Webview Embedded 1`] = `
                 <span
                   className="c9"
                 >
-                  <svg
-                    aria-hidden="true"
-                    className="c10 c11 c12"
-                    direction="left"
-                    focusable="false"
-                    preserveAspectRatio="xMidYMid meet"
-                    role="presentation"
-                    viewBox="0 0 16 16"
+                  <div
+                    className="c10"
                   >
-                    <polygon
-                      points="14.620 3.580, 16.000 5.020, 8.000 12.730, 0.000 5.030, 1.400 3.580, 8.000 9.96"
-                    />
-                  </svg>
-                  Previous
+                    <svg
+                      aria-hidden="true"
+                      className="c11 c12"
+                      direction="left"
+                      focusable="false"
+                      preserveAspectRatio="xMidYMid meet"
+                      role="presentation"
+                      viewBox="0 0 16 16"
+                    >
+                      <polygon
+                        points="14.620 3.580, 16.000 5.020, 8.000 12.730, 0.000 5.030, 1.400 3.580, 8.000 9.96"
+                      />
+                    </svg>
+                    Previous
+                  </div>
                 </span>
               </button>
             </div>
@@ -2135,6 +2213,33 @@ exports[`Storyshots Molecules / Bottom Wizard Bar Webview Embedded Last Step And
 }
 
 .c10 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-left: -4px;
+  margin-right: -4px;
+}
+
+.c10 > * {
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+.c10 > *:not(:first-child) {
+  padding-top: 0;
+}
+
+.c11 {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -2149,7 +2254,7 @@ exports[`Storyshots Molecules / Bottom Wizard Bar Webview Embedded Last Step And
   vertical-align: middle;
 }
 
-.c11 {
+.c12 {
   -webkit-transform: rotate(90deg);
   -ms-transform: rotate(90deg);
   transform: rotate(90deg);
@@ -2320,11 +2425,6 @@ exports[`Storyshots Molecules / Bottom Wizard Bar Webview Embedded Last Step And
   margin: 0 auto;
 }
 
-.c12 {
-  margin-right: 4px;
-  vertical-align: sub;
-}
-
 @media (min-width:760px) {
   .c3 {
     padding-left: 0px;
@@ -2469,20 +2569,24 @@ exports[`Storyshots Molecules / Bottom Wizard Bar Webview Embedded Last Step And
                 <span
                   className="c9"
                 >
-                  <svg
-                    aria-hidden="true"
-                    className="c10 c11 c12"
-                    direction="left"
-                    focusable="false"
-                    preserveAspectRatio="xMidYMid meet"
-                    role="presentation"
-                    viewBox="0 0 16 16"
+                  <div
+                    className="c10"
                   >
-                    <polygon
-                      points="14.620 3.580, 16.000 5.020, 8.000 12.730, 0.000 5.030, 1.400 3.580, 8.000 9.96"
-                    />
-                  </svg>
-                  Previous
+                    <svg
+                      aria-hidden="true"
+                      className="c11 c12"
+                      direction="left"
+                      focusable="false"
+                      preserveAspectRatio="xMidYMid meet"
+                      role="presentation"
+                      viewBox="0 0 16 16"
+                    >
+                      <polygon
+                        points="14.620 3.580, 16.000 5.020, 8.000 12.730, 0.000 5.030, 1.400 3.580, 8.000 9.96"
+                      />
+                    </svg>
+                    Previous
+                  </div>
                 </span>
               </button>
             </div>
