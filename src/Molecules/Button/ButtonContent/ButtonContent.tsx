@@ -29,7 +29,7 @@ const SpinnerAnimation = styled(motion.span)`
 `;
 
 export const ButtonContent: ButtonContentComponent = (props) => {
-  const { children, colorFn, loading, variant, size, delayLoadingSpinnerAnimation } = props;
+  const { children, colorFn, loading, variant, size, delayLoadingSpinnerAnimation = true } = props;
   const theme = useContext(ThemeContext);
 
   const content = (

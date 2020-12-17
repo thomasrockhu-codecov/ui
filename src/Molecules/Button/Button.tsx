@@ -75,7 +75,7 @@ export const Button: ButtonComponent = React.forwardRef<
     onMouseEnter,
     onMouseLeave,
     onMouseOver,
-    delayLoadingSpinnerAnimation,
+    delayLoadingSpinnerAnimation = true,
     ...rest
   } = props;
   const externalIsNotPresent = typeof external === 'undefined';
