@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { Flexbox, Box } from '../..';
+import { Flexbox, Box, Icon } from '../..';
 import Button from '../Button';
 import PageWrapper from '../PageWrapper';
 import { Props } from './BottomWizardBar.types';
@@ -27,6 +27,11 @@ const StyledBox = styled(Box)`
   ${(p) => p.theme.media.greaterThan(p.theme.breakpoints.xl)} {
     width: ${tenColumns};
   }
+`;
+
+const StyledIcon = styled(Icon.ThinChevron)`
+  margin-right: ${(p) => p.theme.spacing.unit(1)}px;
+  vertical-align: sub;
 `;
 
 const BottomWizardBar: React.FC<Props> = ({
@@ -96,7 +101,12 @@ const BottomWizardBar: React.FC<Props> = ({
                     color={(t) => t.color.cta}
                     {...(previousButtonLink && { to: previousButtonLink })}
                   >
-                    {previousText}
+                    <Flexbox container justifyContent="space-between" alignItems="center">
+                      <Flexbox item>
+                        <StyledIcon direction="left" inline color={(t) => t.color.cta} size={4} />
+                      </Flexbox>
+                      <Flexbox item>{previousText}</Flexbox>
+                    </Flexbox>
                   </Button>
                 </Flexbox>
               )}
