@@ -66,6 +66,54 @@ exports[`Storyshots Molecules / Bottom Wizard Bar Default 1`] = `
   padding-top: 0;
 }
 
+.c10 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-left: -4px;
+  margin-right: -4px;
+}
+
+.c10 > * {
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+.c10 > *:not(:first-child) {
+  padding-top: 0;
+}
+
+.c11 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 16px;
+  height: 16px;
+  fill: #0046FF;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.c12 {
+  -webkit-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+
 .c8 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: inherit;
@@ -97,7 +145,7 @@ exports[`Storyshots Molecules / Bottom Wizard Bar Default 1`] = `
   text-decoration: none;
 }
 
-.c10 {
+.c13 {
   position: relative;
   box-sizing: border-box;
   -webkit-align-items: center;
@@ -120,7 +168,7 @@ exports[`Storyshots Molecules / Bottom Wizard Bar Default 1`] = `
   text-decoration: none;
 }
 
-.c10::before {
+.c13::before {
   content: '';
   display: block;
   position: absolute;
@@ -131,11 +179,11 @@ exports[`Storyshots Molecules / Bottom Wizard Bar Default 1`] = `
   height: calc(100% - 4px);
 }
 
-.c10:hover {
+.c13:hover {
   background-color: hsl(223.5,100%,45%);
 }
 
-.c10:active {
+.c13:active {
   background-color: hsl(223.5,100%,40%);
 }
 
@@ -261,7 +309,7 @@ exports[`Storyshots Molecules / Bottom Wizard Bar Default 1`] = `
 }
 
 @media (min-width:760px) {
-  .c11 {
+  .c14 {
     min-width: 160px;
   }
 }
@@ -316,7 +364,24 @@ exports[`Storyshots Molecules / Bottom Wizard Bar Default 1`] = `
                 <span
                   className="c8"
                 >
-                  Previous
+                  <div
+                    className="c10"
+                  >
+                    <svg
+                      aria-hidden="true"
+                      className="c11 c12"
+                      direction="left"
+                      focusable="false"
+                      preserveAspectRatio="xMidYMid meet"
+                      role="presentation"
+                      viewBox="0 0 16 16"
+                    >
+                      <polygon
+                        points="14.620 3.580, 16.000 5.020, 8.000 12.730, 0.000 5.030, 1.400 3.580, 8.000 9.96"
+                      />
+                    </svg>
+                    Previous
+                  </div>
                 </span>
               </a>
             </div>
@@ -324,7 +389,7 @@ exports[`Storyshots Molecules / Bottom Wizard Bar Default 1`] = `
               className="c6"
             >
               <a
-                className="c10 c11"
+                className="c13 c14"
                 href="https://nordnet.se/next"
                 onClick={[Function]}
               >
@@ -411,6 +476,64 @@ exports[`Storyshots Molecules / Bottom Wizard Bar Last Step And Loading 1`] = `
   padding-top: 0;
 }
 
+.c10 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-left: -4px;
+  margin-right: -4px;
+}
+
+.c10 > * {
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+.c10 > *:not(:first-child) {
+  padding-top: 0;
+}
+
+.c11 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 16px;
+  height: 16px;
+  fill: #0046FF;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.c12 {
+  -webkit-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+
+.c15 {
+  display: inline-block;
+  -webkit-animation: spinner 0.6s linear infinite;
+  animation: spinner 0.6s linear infinite;
+}
+
+.c16 {
+  display: block;
+}
+
 .c8 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: inherit;
@@ -471,7 +594,7 @@ exports[`Storyshots Molecules / Bottom Wizard Bar Last Step And Loading 1`] = `
   outline: 1px dotted ButtonText;
 }
 
-.c10 {
+.c13 {
   font-family: inherit;
   font-size: 100%;
   line-height: 1.15;
@@ -501,29 +624,29 @@ exports[`Storyshots Molecules / Bottom Wizard Bar Last Step And Loading 1`] = `
   cursor: pointer;
 }
 
-.c10,
-.c10[type='button'],
-.c10[type='reset'],
-.c10[type='submit'] {
+.c13,
+.c13[type='button'],
+.c13[type='reset'],
+.c13[type='submit'] {
   -webkit-appearance: button;
 }
 
-.c10::-moz-focus-inner,
-.c10[type='button']::-moz-focus-inner,
-.c10[type='reset']::-moz-focus-inner,
-.c10[type='submit']::-moz-focus-inner {
+.c13::-moz-focus-inner,
+.c13[type='button']::-moz-focus-inner,
+.c13[type='reset']::-moz-focus-inner,
+.c13[type='submit']::-moz-focus-inner {
   border-style: none;
   padding: 0;
 }
 
-.c10:-moz-focusring,
-.c10[type='button']:-moz-focusring,
-.c10[type='reset']:-moz-focusring,
-.c10[type='submit']:-moz-focusring {
+.c13:-moz-focusring,
+.c13[type='button']:-moz-focusring,
+.c13[type='reset']:-moz-focusring,
+.c13[type='submit']:-moz-focusring {
   outline: 1px dotted ButtonText;
 }
 
-.c10::before {
+.c13::before {
   content: '';
   display: block;
   position: absolute;
@@ -534,11 +657,11 @@ exports[`Storyshots Molecules / Bottom Wizard Bar Last Step And Loading 1`] = `
   height: calc(100% - 4px);
 }
 
-.c10:hover {
+.c13:hover {
   background-color: hsl(223.5,100%,45%);
 }
 
-.c10:active {
+.c13:active {
   background-color: hsl(223.5,100%,40%);
 }
 
@@ -664,7 +787,7 @@ exports[`Storyshots Molecules / Bottom Wizard Bar Last Step And Loading 1`] = `
 }
 
 @media (min-width:760px) {
-  .c11 {
+  .c14 {
     min-width: 160px;
   }
 }
@@ -721,7 +844,24 @@ exports[`Storyshots Molecules / Bottom Wizard Bar Last Step And Loading 1`] = `
                 <span
                   className="c8"
                 >
-                  Previous
+                  <div
+                    className="c10"
+                  >
+                    <svg
+                      aria-hidden="true"
+                      className="c11 c12"
+                      direction="left"
+                      focusable="false"
+                      preserveAspectRatio="xMidYMid meet"
+                      role="presentation"
+                      viewBox="0 0 16 16"
+                    >
+                      <polygon
+                        points="14.620 3.580, 16.000 5.020, 8.000 12.730, 0.000 5.030, 1.400 3.580, 8.000 9.96"
+                      />
+                    </svg>
+                    Previous
+                  </div>
                 </span>
               </button>
             </div>
@@ -729,7 +869,7 @@ exports[`Storyshots Molecules / Bottom Wizard Bar Last Step And Loading 1`] = `
               className="c6"
             >
               <button
-                className="NormalizedButton__Button-ey7f5x-0 c10 c11"
+                className="NormalizedButton__Button-ey7f5x-0 c13 c14"
                 onClick={[Function]}
                 type="submit"
               >
@@ -740,7 +880,70 @@ exports[`Storyshots Molecules / Bottom Wizard Bar Last Step And Loading 1`] = `
                     Submit
                   </span>
                 </span>
-                <span />
+                <span>
+                  <span
+                    className="c15"
+                  >
+                    <svg
+                      className="c16"
+                      height={24}
+                      viewBox="0 0 24 24"
+                      width={24}
+                    >
+                      <defs>
+                        <linearGradient
+                          id="spinner-spinner-primary-l-undefined-1"
+                          x1="50%"
+                          x2="50%"
+                          y1="0%"
+                          y2="100%"
+                        >
+                          <stop
+                            offset="0%"
+                            stopColor="#FFFFFF"
+                            stopOpacity="0"
+                          />
+                          <stop
+                            offset="100%"
+                            stopColor="#FFFFFF"
+                            stopOpacity=".5"
+                          />
+                        </linearGradient>
+                        <linearGradient
+                          id="spinner-spinner-primary-l-undefined-2"
+                          x1="50%"
+                          x2="50%"
+                          y1="0%"
+                          y2="100%"
+                        >
+                          <stop
+                            offset="0%"
+                            stopColor="#FFFFFF"
+                            stopOpacity=".5"
+                          />
+                          <stop
+                            offset="100%"
+                            stopColor="#FFFFFF"
+                          />
+                        </linearGradient>
+                      </defs>
+                      <g
+                        fill="none"
+                        fillRule="evenodd"
+                      >
+                        <path
+                          d="M12,0 C18.627417,0 24,5.372583 24,12 C24,18.627417 18.627417,24 12,24 M12,21 C16.9705627,21 21,16.9705627 21,12 C21,7.02943725 16.9705627,3 12,3"
+                          fill="url(#spinner-spinner-primary-l-undefined-1)"
+                        />
+                        <path
+                          d="M0,0 C6.627417,0 12,5.372583 12,12 C12,18.627417 6.627417,24 0,24 M0,21 C4.97056275,21 9,16.9705627 9,12 C9,7.02943725 4.97056275,3 0,3"
+                          fill="url(#spinner-spinner-primary-l-undefined-2)"
+                          transform="rotate(-180 6 12)"
+                        />
+                      </g>
+                    </svg>
+                  </span>
+                </span>
               </button>
             </div>
           </div>
@@ -1544,6 +1747,54 @@ exports[`Storyshots Molecules / Bottom Wizard Bar Webview Embedded 1`] = `
   flex: 1;
 }
 
+.c10 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-left: -4px;
+  margin-right: -4px;
+}
+
+.c10 > * {
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+.c10 > *:not(:first-child) {
+  padding-top: 0;
+}
+
+.c11 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 16px;
+  height: 16px;
+  fill: #0046FF;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.c12 {
+  -webkit-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+
 .c9 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: inherit;
@@ -1605,7 +1856,7 @@ exports[`Storyshots Molecules / Bottom Wizard Bar Webview Embedded 1`] = `
   outline: 1px dotted ButtonText;
 }
 
-.c10 {
+.c13 {
   font-family: inherit;
   font-size: 100%;
   line-height: 1.15;
@@ -1636,29 +1887,29 @@ exports[`Storyshots Molecules / Bottom Wizard Bar Webview Embedded 1`] = `
   cursor: pointer;
 }
 
-.c10,
-.c10[type='button'],
-.c10[type='reset'],
-.c10[type='submit'] {
+.c13,
+.c13[type='button'],
+.c13[type='reset'],
+.c13[type='submit'] {
   -webkit-appearance: button;
 }
 
-.c10::-moz-focus-inner,
-.c10[type='button']::-moz-focus-inner,
-.c10[type='reset']::-moz-focus-inner,
-.c10[type='submit']::-moz-focus-inner {
+.c13::-moz-focus-inner,
+.c13[type='button']::-moz-focus-inner,
+.c13[type='reset']::-moz-focus-inner,
+.c13[type='submit']::-moz-focus-inner {
   border-style: none;
   padding: 0;
 }
 
-.c10:-moz-focusring,
-.c10[type='button']:-moz-focusring,
-.c10[type='reset']:-moz-focusring,
-.c10[type='submit']:-moz-focusring {
+.c13:-moz-focusring,
+.c13[type='button']:-moz-focusring,
+.c13[type='reset']:-moz-focusring,
+.c13[type='submit']:-moz-focusring {
   outline: 1px dotted ButtonText;
 }
 
-.c10::before {
+.c13::before {
   content: '';
   display: block;
   position: absolute;
@@ -1669,11 +1920,11 @@ exports[`Storyshots Molecules / Bottom Wizard Bar Webview Embedded 1`] = `
   height: calc(100% - 4px);
 }
 
-.c10:hover {
+.c13:hover {
   background-color: hsl(223.5,100%,45%);
 }
 
-.c10:active {
+.c13:active {
   background-color: hsl(223.5,100%,40%);
 }
 
@@ -1802,7 +2053,7 @@ exports[`Storyshots Molecules / Bottom Wizard Bar Webview Embedded 1`] = `
 }
 
 @media (min-width:760px) {
-  .c11 {
+  .c14 {
     min-width: 160px;
   }
 }
@@ -1843,7 +2094,24 @@ exports[`Storyshots Molecules / Bottom Wizard Bar Webview Embedded 1`] = `
                 <span
                   className="c9"
                 >
-                  Previous
+                  <div
+                    className="c10"
+                  >
+                    <svg
+                      aria-hidden="true"
+                      className="c11 c12"
+                      direction="left"
+                      focusable="false"
+                      preserveAspectRatio="xMidYMid meet"
+                      role="presentation"
+                      viewBox="0 0 16 16"
+                    >
+                      <polygon
+                        points="14.620 3.580, 16.000 5.020, 8.000 12.730, 0.000 5.030, 1.400 3.580, 8.000 9.96"
+                      />
+                    </svg>
+                    Previous
+                  </div>
                 </span>
               </button>
             </div>
@@ -1851,7 +2119,7 @@ exports[`Storyshots Molecules / Bottom Wizard Bar Webview Embedded 1`] = `
               className="c7"
             >
               <button
-                className="NormalizedButton__Button-ey7f5x-0 c10 c11"
+                className="NormalizedButton__Button-ey7f5x-0 c13 c14"
                 onClick={[Function]}
                 type="button"
               >
@@ -1944,6 +2212,64 @@ exports[`Storyshots Molecules / Bottom Wizard Bar Webview Embedded Last Step And
   flex: 1;
 }
 
+.c10 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-left: -4px;
+  margin-right: -4px;
+}
+
+.c10 > * {
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+.c10 > *:not(:first-child) {
+  padding-top: 0;
+}
+
+.c11 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 16px;
+  height: 16px;
+  fill: #0046FF;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.c12 {
+  -webkit-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+
+.c15 {
+  display: inline-block;
+  -webkit-animation: spinner 0.6s linear infinite;
+  animation: spinner 0.6s linear infinite;
+}
+
+.c16 {
+  display: block;
+}
+
 .c9 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: inherit;
@@ -2005,7 +2331,7 @@ exports[`Storyshots Molecules / Bottom Wizard Bar Webview Embedded Last Step And
   outline: 1px dotted ButtonText;
 }
 
-.c10 {
+.c13 {
   font-family: inherit;
   font-size: 100%;
   line-height: 1.15;
@@ -2036,29 +2362,29 @@ exports[`Storyshots Molecules / Bottom Wizard Bar Webview Embedded Last Step And
   cursor: pointer;
 }
 
-.c10,
-.c10[type='button'],
-.c10[type='reset'],
-.c10[type='submit'] {
+.c13,
+.c13[type='button'],
+.c13[type='reset'],
+.c13[type='submit'] {
   -webkit-appearance: button;
 }
 
-.c10::-moz-focus-inner,
-.c10[type='button']::-moz-focus-inner,
-.c10[type='reset']::-moz-focus-inner,
-.c10[type='submit']::-moz-focus-inner {
+.c13::-moz-focus-inner,
+.c13[type='button']::-moz-focus-inner,
+.c13[type='reset']::-moz-focus-inner,
+.c13[type='submit']::-moz-focus-inner {
   border-style: none;
   padding: 0;
 }
 
-.c10:-moz-focusring,
-.c10[type='button']:-moz-focusring,
-.c10[type='reset']:-moz-focusring,
-.c10[type='submit']:-moz-focusring {
+.c13:-moz-focusring,
+.c13[type='button']:-moz-focusring,
+.c13[type='reset']:-moz-focusring,
+.c13[type='submit']:-moz-focusring {
   outline: 1px dotted ButtonText;
 }
 
-.c10::before {
+.c13::before {
   content: '';
   display: block;
   position: absolute;
@@ -2069,11 +2395,11 @@ exports[`Storyshots Molecules / Bottom Wizard Bar Webview Embedded Last Step And
   height: calc(100% - 4px);
 }
 
-.c10:hover {
+.c13:hover {
   background-color: hsl(223.5,100%,45%);
 }
 
-.c10:active {
+.c13:active {
   background-color: hsl(223.5,100%,40%);
 }
 
@@ -2202,7 +2528,7 @@ exports[`Storyshots Molecules / Bottom Wizard Bar Webview Embedded Last Step And
 }
 
 @media (min-width:760px) {
-  .c11 {
+  .c14 {
     min-width: 160px;
   }
 }
@@ -2243,7 +2569,24 @@ exports[`Storyshots Molecules / Bottom Wizard Bar Webview Embedded Last Step And
                 <span
                   className="c9"
                 >
-                  Previous
+                  <div
+                    className="c10"
+                  >
+                    <svg
+                      aria-hidden="true"
+                      className="c11 c12"
+                      direction="left"
+                      focusable="false"
+                      preserveAspectRatio="xMidYMid meet"
+                      role="presentation"
+                      viewBox="0 0 16 16"
+                    >
+                      <polygon
+                        points="14.620 3.580, 16.000 5.020, 8.000 12.730, 0.000 5.030, 1.400 3.580, 8.000 9.96"
+                      />
+                    </svg>
+                    Previous
+                  </div>
                 </span>
               </button>
             </div>
@@ -2251,7 +2594,7 @@ exports[`Storyshots Molecules / Bottom Wizard Bar Webview Embedded Last Step And
               className="c7"
             >
               <button
-                className="NormalizedButton__Button-ey7f5x-0 c10 c11"
+                className="NormalizedButton__Button-ey7f5x-0 c13 c14"
                 onClick={[Function]}
                 type="submit"
               >
@@ -2262,7 +2605,70 @@ exports[`Storyshots Molecules / Bottom Wizard Bar Webview Embedded Last Step And
                     Submit
                   </span>
                 </span>
-                <span />
+                <span>
+                  <span
+                    className="c15"
+                  >
+                    <svg
+                      className="c16"
+                      height={24}
+                      viewBox="0 0 24 24"
+                      width={24}
+                    >
+                      <defs>
+                        <linearGradient
+                          id="spinner-spinner-primary-l-undefined-1"
+                          x1="50%"
+                          x2="50%"
+                          y1="0%"
+                          y2="100%"
+                        >
+                          <stop
+                            offset="0%"
+                            stopColor="#FFFFFF"
+                            stopOpacity="0"
+                          />
+                          <stop
+                            offset="100%"
+                            stopColor="#FFFFFF"
+                            stopOpacity=".5"
+                          />
+                        </linearGradient>
+                        <linearGradient
+                          id="spinner-spinner-primary-l-undefined-2"
+                          x1="50%"
+                          x2="50%"
+                          y1="0%"
+                          y2="100%"
+                        >
+                          <stop
+                            offset="0%"
+                            stopColor="#FFFFFF"
+                            stopOpacity=".5"
+                          />
+                          <stop
+                            offset="100%"
+                            stopColor="#FFFFFF"
+                          />
+                        </linearGradient>
+                      </defs>
+                      <g
+                        fill="none"
+                        fillRule="evenodd"
+                      >
+                        <path
+                          d="M12,0 C18.627417,0 24,5.372583 24,12 C24,18.627417 18.627417,24 12,24 M12,21 C16.9705627,21 21,16.9705627 21,12 C21,7.02943725 16.9705627,3 12,3"
+                          fill="url(#spinner-spinner-primary-l-undefined-1)"
+                        />
+                        <path
+                          d="M0,0 C6.627417,0 12,5.372583 12,12 C12,18.627417 6.627417,24 0,24 M0,21 C4.97056275,21 9,16.9705627 9,12 C9,7.02943725 4.97056275,3 0,3"
+                          fill="url(#spinner-spinner-primary-l-undefined-2)"
+                          transform="rotate(-180 6 12)"
+                        />
+                      </g>
+                    </svg>
+                  </span>
+                </span>
               </button>
             </div>
           </div>

@@ -5,6 +5,7 @@ type ColorFn = (t: Theme) => Colors['cta'] | Colors['negative'];
 
 export type ButtonContentProps = {
   loading?: boolean;
+  delayLoadingSpinnerAnimation?: boolean;
   variant: 'primary' | 'secondary' | 'neutral';
   size: 's' | 'm' | 'l';
   colorFn?: ColorFn;

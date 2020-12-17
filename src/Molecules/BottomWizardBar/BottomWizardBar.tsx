@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { Flexbox, Box } from '../..';
+import { Flexbox, Box, Icon } from '../..';
 import Button from '../Button';
 import PageWrapper from '../PageWrapper';
 import { Props } from './BottomWizardBar.types';
@@ -62,6 +62,7 @@ const BottomWizardBar: React.FC<Props> = ({
             {!isEmbedded && (
               <Flexbox item>
                 <Button
+                  delayLoadingSpinnerAnimation={false}
                   onClick={onCancel}
                   disabled={isLoading}
                   size="l"
@@ -86,6 +87,7 @@ const BottomWizardBar: React.FC<Props> = ({
               {!hidePreviousButton && (
                 <Flexbox item {...(isEmbedded && { flex: '1' })}>
                   <Button
+                    delayLoadingSpinnerAnimation={false}
                     onClick={onPrevious}
                     disabled={isLoading}
                     size="l"
@@ -94,13 +96,22 @@ const BottomWizardBar: React.FC<Props> = ({
                     color={(t) => t.color.cta}
                     {...(previousButtonLink && { to: previousButtonLink })}
                   >
-                    {previousText}
+                    <Flexbox container justifyContent="center" alignItems="center" gutter={2}>
+                      <Icon.ThinChevron
+                        direction="left"
+                        inline
+                        color={(t) => t.color.cta}
+                        size={4}
+                      />
+                      {previousText}
+                    </Flexbox>
                   </Button>
                 </Flexbox>
               )}
               <Flexbox item {...(isEmbedded && { flex: '1' })}>
                 {isLastStep ? (
                   <ForwardButton
+                    delayLoadingSpinnerAnimation={false}
                     loading={isLoading}
                     type="submit"
                     variant="primary"
@@ -115,6 +126,7 @@ const BottomWizardBar: React.FC<Props> = ({
                   </ForwardButton>
                 ) : (
                   <ForwardButton
+                    delayLoadingSpinnerAnimation={false}
                     loading={isLoading}
                     variant="primary"
                     size="l"

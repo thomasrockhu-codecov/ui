@@ -28,8 +28,8 @@ const SpinnerAnimation = styled(motion.span)`
   justify-content: center;
 `;
 
-export const ButtonContent: ButtonContentComponent = props => {
-  const { children, colorFn, loading, variant, size } = props;
+export const ButtonContent: ButtonContentComponent = (props) => {
+  const { children, colorFn, loading, variant, size, delayLoadingSpinnerAnimation = true } = props;
   const theme = useContext(ThemeContext);
 
   const content = (
@@ -62,9 +62,10 @@ export const ButtonContent: ButtonContentComponent = props => {
             <Spinner
               id={`spinner-${variant}-${size}-${colorFn && colorFn(theme)}`} // TODO: replace with unique id
               color={
-                variant === 'primary' ? t => t.color.buttonText : colorFn || (t => t.color.cta)
+                variant === 'primary' ? (t) => t.color.buttonText : colorFn || ((t) => t.color.cta)
               }
               size={getSpinnerSize(size)}
+              delay={delayLoadingSpinnerAnimation}
             />
           </SpinnerAnimation>
         )}
