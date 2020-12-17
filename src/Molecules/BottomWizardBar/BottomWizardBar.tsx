@@ -29,11 +29,6 @@ const StyledBox = styled(Box)`
   }
 `;
 
-const StyledIcon = styled(Icon.ThinChevron)`
-  margin-right: ${(p) => p.theme.spacing.unit(1)}px;
-  vertical-align: sub;
-`;
-
 const BottomWizardBar: React.FC<Props> = ({
   isLastStep = false,
   onCancel,
@@ -101,8 +96,15 @@ const BottomWizardBar: React.FC<Props> = ({
                     color={(t) => t.color.cta}
                     {...(previousButtonLink && { to: previousButtonLink })}
                   >
-                    <StyledIcon direction="left" inline color={(t) => t.color.cta} size={4} />
-                    {previousText}
+                    <Flexbox container justifyContent="center" alignItems="center" gutter={2}>
+                      <Icon.ThinChevron
+                        direction="left"
+                        inline
+                        color={(t) => t.color.cta}
+                        size={4}
+                      />
+                      {previousText}
+                    </Flexbox>
                   </Button>
                 </Flexbox>
               )}
