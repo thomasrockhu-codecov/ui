@@ -301,10 +301,6 @@ const DoubleDatePicker = React.forwardRef<HTMLDivElement, Props>((props, ref) =>
     setOpen(false);
   });
 
-  const inputWidth = useMemo(() => {
-    return typeof width === 'string' ? width : `${theme.spacing.unit(width)}px`;
-  }, [width, theme]);
-
   return (
     <div ref={(ref || selfRef) as React.Ref<HTMLDivElement>}>
       <StyledInputTextLeft
@@ -320,7 +316,7 @@ const DoubleDatePicker = React.forwardRef<HTMLDivElement, Props>((props, ref) =>
         onKeyDown={handleInputKeyDown}
         onFocus={handleInputOnFocus}
         onBlur={handleInputSubmit}
-        width={inputWidth}
+        width={typeof width === 'string' ? width : `${theme.spacing.unit(width)}px`}
         autoComplete="off"
       />
       <StyledInputTextRight
@@ -336,7 +332,7 @@ const DoubleDatePicker = React.forwardRef<HTMLDivElement, Props>((props, ref) =>
         onKeyDown={handleInputKeyDown}
         onFocus={handleInputOnFocus}
         onBlur={handleInputSubmit}
-        width={inputWidth}
+        width={typeof width === 'string' ? width : `${theme.spacing.unit(width)}px`}
         autoComplete="off"
       />
       {open ? (
