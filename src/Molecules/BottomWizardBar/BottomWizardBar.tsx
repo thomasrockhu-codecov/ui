@@ -31,6 +31,7 @@ const StyledBox = styled(Box)`
 
 const StyledIcon = styled(Icon.ThinChevron)`
   margin-right: ${(p) => p.theme.spacing.unit(1)}px;
+  vertical-align: sub;
 `;
 
 const BottomWizardBar: React.FC<Props> = ({
