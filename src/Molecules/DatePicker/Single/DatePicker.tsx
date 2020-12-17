@@ -366,7 +366,7 @@ const DatePicker = React.forwardRef<HTMLDivElement, Props>((props, ref) => {
         onChange={handleInputOnChange}
         onKeyDown={handleInputKeyDown}
         onFocus={handleInputOnFocus}
-        width={width ? `${theme.spacing.unit(width)}px` : ''}
+        width={typeof width === 'string' ? width : `${theme.spacing.unit(width)}px`}
         autoComplete="off"
       />
       {open ? (

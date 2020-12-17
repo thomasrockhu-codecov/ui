@@ -316,7 +316,7 @@ const DoubleDatePicker = React.forwardRef<HTMLDivElement, Props>((props, ref) =>
         onKeyDown={handleInputKeyDown}
         onFocus={handleInputOnFocus}
         onBlur={handleInputSubmit}
-        width={width ? `${theme.spacing.unit(width)}px` : ''}
+        width={typeof width === 'string' ? width : `${theme.spacing.unit(width)}px`}
         autoComplete="off"
       />
       <StyledInputTextRight
@@ -332,7 +332,7 @@ const DoubleDatePicker = React.forwardRef<HTMLDivElement, Props>((props, ref) =>
         onKeyDown={handleInputKeyDown}
         onFocus={handleInputOnFocus}
         onBlur={handleInputSubmit}
-        width={width ? `${theme.spacing.unit(width)}px` : ''}
+        width={typeof width === 'string' ? width : `${theme.spacing.unit(width)}px`}
         autoComplete="off"
       />
       {open ? (

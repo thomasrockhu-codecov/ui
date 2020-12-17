@@ -66,3 +66,7 @@ export const Controlled = () => {
 export const DisabledInput = () => {
   return <DatePicker id="disabled-input" label="Label" disabled variant="REGULAR" />;
 };
+
+export const FullWidthInput = () => {
+  return <DatePicker id="full-width-input" label="Label" variant="REGULAR" width="100%" />;
+};

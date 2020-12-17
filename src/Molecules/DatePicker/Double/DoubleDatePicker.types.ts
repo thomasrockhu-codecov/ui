@@ -15,7 +15,7 @@ export type Props = {
   inputValueEnd?: string;
   inputSize?: 's';
   variant: 'DOUBLE';
-  width?: number;
+  width?: number | string;
   ref?: React.Ref<HTMLDivElement>;
   yearSelectLength?: number;
   disallowSingleDayRange?: boolean;

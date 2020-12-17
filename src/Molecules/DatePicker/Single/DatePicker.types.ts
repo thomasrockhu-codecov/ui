@@ -17,7 +17,7 @@ export type Props = {
   inputValue?: string;
   variant?: DatePickerVariant;
   inputSize?: 's';
-  width?: number;
+  width?: number | string;
   ref?: React.Ref<HTMLDivElement>;
   yearSelectLength?: number;
 };
