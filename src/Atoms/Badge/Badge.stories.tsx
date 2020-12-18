@@ -222,7 +222,9 @@ export const BadgeWithAnimation = () => {
 
   return (
     <>
-      <Badge>{nofifications}</Badge>
+      <Badge key={nofifications} animateOnChange>
+        {nofifications}
+      </Badge>
       <div>
         <Button onClick={() => setNotifications(nofifications - 1)}>-</Button>
         <Button onClick={() => setNotifications(nofifications + 1)}>+</Button>

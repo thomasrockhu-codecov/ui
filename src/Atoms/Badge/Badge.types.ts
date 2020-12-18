@@ -6,7 +6,13 @@ type HtmlProps = {} & Omit<React.HTMLProps<HTMLSpanElement>, 'color'>;
 export type Props = {
   backgroundColor?: ColorFn;
   color?: ColorFn;
-  $animate?: boolean;
+  animateOnChange?: boolean;
 } & HtmlProps;
 
+export type Circle = Props & {
+  $animateOnChange?: boolean;
+  size: number;
+};
+
 export type BadgeComponent = React.FC<Props>;
+export type CircleComponent = React.FC<Circle>;
