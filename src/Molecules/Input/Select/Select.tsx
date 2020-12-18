@@ -7,6 +7,7 @@ import { useOnClickOutside } from '../../../common/Hooks';
 import {
   ListItemWrapper,
   ListWrapper,
+  ListWrapperWithPortal,
   SelectedValueWrapper,
   FormFieldOrFragment,
   SearchWrapper,
@@ -215,6 +216,8 @@ const Select = (props: Props) => {
   const selectedItems = machineState.context.selectedItems;
   const multiselect = machineState.context.multiselect;
 
+  const ListWrapperComponent = props.inModal ? ListWrapperWithPortal : ListWrapper;
+
   return (
     <div className={props.className}>
       <HiddenSelect
@@ -247,8 +250,8 @@ const Select = (props: Props) => {
           extraInfo={extraInfo}
           id={props.id}
           size={props.size}
-          onBlur={handleBlur}
           onFocus={handleFocus}
+          onBlur={!props.inModal ? handleBlur : undefined}
           width={props.width}
         >
           <SelectedValueWrapper
@@ -265,8 +268,9 @@ const Select = (props: Props) => {
             id={props.id}
           />
           {isOpen && (
-            <ListWrapper
+            <ListWrapperComponent
               component={List}
+              triggerElement={formFieldRef}
               noFormField={props.noFormField}
               onKeyDown={handleKeyDown}
               onMouseMove={handleMouseMove}
@@ -293,7 +297,7 @@ const Select = (props: Props) => {
                   component={ListItem}
                 />
               ))}
-            </ListWrapper>
+            </ListWrapperComponent>
           )}
         </FormFieldOrFragment>
       </SelectStateContext.Provider>
