@@ -9,6 +9,7 @@ type ListProps = {
   actionsComponent?: React.ReactNode;
   maxHeight?: string;
   noFormField?: boolean;
+  placement?: 'bottom' | 'top';
 };
 
 const StyledList = styled(UIList)<any>`
@@ -62,6 +63,7 @@ export const List: React.FC<ListProps> = ({
   maxHeight,
   listPosition,
   noFormField,
+  placement,
 }) => {
   const areOptionsProvided = React.Children.count(children) > 0;
   // media query for IE10+
@@ -70,6 +72,7 @@ export const List: React.FC<ListProps> = ({
     <IE11Wrapper>
       <StyledDropdownBubble
         position={noFormField ? getTrianglePosition(listPosition) : 'right'}
+        placement={placement}
         maxHeight={maxHeight || '240px'}
       >
         {searchComponent}

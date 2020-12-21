@@ -49,7 +49,7 @@ export const ListWrapperWithPortal = React.forwardRef<HTMLDivElement, any>(
   ) => {
     const [popperElement, setPopperElement] = React.useState(null);
 
-    const { styles, attributes } = usePopper(triggerElement.current, popperElement, {
+    const { styles, attributes, state } = usePopper(triggerElement.current, popperElement, {
       placement: 'bottom',
     });
 
@@ -75,6 +75,7 @@ export const ListWrapperWithPortal = React.forwardRef<HTMLDivElement, any>(
             maxHeight={maxHeight}
             listPosition={listPosition}
             noFormField={noFormField}
+            placement={state?.placement as any}
           >
             {children}
           </Component>
