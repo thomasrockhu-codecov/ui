@@ -5,7 +5,7 @@ const TRIANGLE_SIZE = 6;
 const TOP_OFFSET = 10;
 
 const leftAndRightCss = css<Props>`
-  ${p => {
+  ${(p) => {
     switch (p.position) {
       case 'left':
         return 'left: 20px;';
@@ -14,6 +14,18 @@ const leftAndRightCss = css<Props>`
       case 'right':
       default:
         return 'right: 20px;';
+    }
+  }}
+`;
+
+const bottomAndTopPlacementCss = css<Props>`
+  ${(p) => {
+    switch (p.placement) {
+      case 'top':
+        return `transform: translateY(-${TOP_OFFSET}px);`;
+      case 'bottom':
+      default:
+        return `transform: translateY(${TOP_OFFSET}px);`;
     }
   }}
 `;
@@ -28,33 +40,52 @@ const commonTriangleCss = css<any>`
   border-right: ${TRIANGLE_SIZE}px solid transparent;
 `;
 
+const getTrianglePositionAndColor = (
+  placement: string | undefined,
+  color: string,
+  offset: number = 0,
+) => {
+  switch (placement) {
+    case 'top':
+      return `
+        top: ${offset ? `calc(100% - ${offset}px)` : '100%'};
+        border-top: ${TRIANGLE_SIZE}px solid;
+        border-top-color: ${color};
+      `;
+    case 'bottom':
+    default:
+      return `
+        bottom: ${offset ? `calc(100% - ${offset}px)` : '100%'};
+        border-bottom: ${TRIANGLE_SIZE}px solid;
+        border-bottom-color: ${color};
+      `;
+  }
+};
+
 const triangleCss = css`
   &:before {
     ${leftAndRightCss}
     ${commonTriangleCss}
-    bottom: 100%;
-    border-bottom: ${TRIANGLE_SIZE}px solid;
-    border-bottom-color: ${p => p.theme.color.bubbleBorder};
+    ${(p) =>
+      getTrianglePositionAndColor(p.placement, p.theme.color.bubbleBorder)}
   }
   &:after {
     ${leftAndRightCss}
     ${commonTriangleCss}
-    bottom: calc(100% - 1px);
-    border-bottom: ${TRIANGLE_SIZE}px solid;
-    border-bottom-color: ${p => p.theme.color.bubbleBackground};
+    ${(p) =>
+      getTrianglePositionAndColor(p.placement, p.theme.color.bubbleBackground, 1)}
   }
 `;
 
 export const DropdownBubble = styled.div<Props>`
   position: relative;
-  ${p => (p.maxHeight ? `max-height: ${p.maxHeight};` : '')}
-
+  ${(p) => (p.maxHeight ? `max-height: ${p.maxHeight};` : '')}
   display: flex;
   flex-direction: column;
   min-height: 0;
-  transform: translateY(${TOP_OFFSET}px);
-  border: 1px solid ${p => p.theme.color.bubbleBorder};
-  background-color: ${p => p.theme.color.bubbleBackground};
+  border: 1px solid ${(p) => p.theme.color.bubbleBorder};
+  background-color: ${(p) => p.theme.color.bubbleBackground};
   box-shadow: 0 2px 4px 0 rgba(40, 40, 35, 0.15);
+  ${bottomAndTopPlacementCss}
   ${triangleCss}
 `;
