@@ -15,6 +15,7 @@ import {
   Icon,
   Link,
   TrackingContext,
+  Modal,
 } from '../../..';
 import { Display } from '../../../common/Display';
 import docs from './Select.mdx';
@@ -1214,6 +1215,7 @@ export const onSearchQueryChange = () => (
     placeholder="Select account"
   />
 );
+
 export const focusWithoutScrolling = () => (
   <>
     <br />
@@ -1264,6 +1266,58 @@ export const focusWithoutScrolling = () => (
     <br />
   </>
 );
+
+export const insideModal = () => (
+  <Modal open>
+    <Input.Select
+      id="no-scroll-select"
+      options={accountOptions}
+      label="User account"
+      placeholder="Select account"
+      withPortal
+    />
+  </Modal>
+);
+
+export const placementTopWithAutoPlacement = () => (
+  <Flexbox container alignItems="flex-end" style={{ height: '100vh' }}>
+    <Box pb={5}>
+      <Input.Select
+        id="no-scroll-select"
+        options={accountOptions}
+        label="User account"
+        placeholder="Select account"
+        withPortal
+      />
+    </Box>
+  </Flexbox>
+);
+
+export const placementTop = () => (
+  <Box pt={40}>
+    <Input.Select
+      id="no-scroll-select"
+      options={accountOptions}
+      label="User account"
+      placeholder="Select account"
+      placement="top"
+    />
+  </Box>
+);
+
+export const placementTopWithPortal = () => (
+  <Box pt={40}>
+    <Input.Select
+      id="no-scroll-select"
+      options={accountOptions}
+      label="User account"
+      placeholder="Select account"
+      withPortal
+      placement="top"
+    />
+  </Box>
+);
+
 export default {
   title: 'Molecules / Input / Select',
   parameters: {
