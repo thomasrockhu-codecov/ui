@@ -25,6 +25,10 @@ export type Props = {
   placeholder?: string;
   label: string;
   name?: string;
+  /**
+   * @default 'bottom'
+   */
+  placement?: 'top' | 'bottom';
 
   /**
    * @default 'm'

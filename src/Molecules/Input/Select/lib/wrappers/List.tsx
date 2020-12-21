@@ -18,10 +18,19 @@ const getStylesForPosition = (listPosition: string) => {
   }
 };
 
+const getStylesForPlacement = (placement: string) => {
+  switch (placement) {
+    case 'top':
+      return `bottom: 100%;`;
+    default:
+      return `top: 100%;`;
+  }
+};
+
 const StyledListWrapper = styled.div<any>`
   transform: translate3d(0, 0, 0);
   position: absolute;
-  top: 100%;
+  ${p => getStylesForPlacement(p.placement)}
   ${p => getStylesForPosition(p.listPosition)}
   z-index: 4;
   margin: -4px;
@@ -44,6 +53,7 @@ export const ListWrapper = React.forwardRef<HTMLDivElement, any>(
       'data-testid': dataTestId,
       maxHeight,
       listPosition,
+      placement
     },
     ref,
   ) => {
@@ -58,6 +68,7 @@ export const ListWrapper = React.forwardRef<HTMLDivElement, any>(
         onBlur={onBlur}
         width={width}
         listPosition={listPosition}
+        placement={placement}
       >
         <Component
           searchComponent={searchComponent}
@@ -65,6 +76,7 @@ export const ListWrapper = React.forwardRef<HTMLDivElement, any>(
           maxHeight={maxHeight}
           listPosition={listPosition}
           noFormField={noFormField}
+          placement={placement}
         >
           {children}
         </Component>

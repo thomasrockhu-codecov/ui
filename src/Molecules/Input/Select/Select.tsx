@@ -281,6 +281,7 @@ const Select = (props: Props) => {
               data-testid="input-select-list"
               searchComponent={<SearchWrapper ref={searchRef} component={Search} />}
               listPosition={props.listPosition}
+              placement={props.placement}
               actionsComponent={
                 machineState.context.actions.length > 0 ? (
                   <ActionsWrapper component={Action} onClickFactory={handleClickActionItem} />

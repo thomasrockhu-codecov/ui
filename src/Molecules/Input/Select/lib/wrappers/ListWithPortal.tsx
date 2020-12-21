@@ -44,13 +44,14 @@ export const ListWrapperWithPortal = React.forwardRef<HTMLDivElement, any>(
       'data-testid': dataTestId,
       maxHeight,
       listPosition,
+      placement
     },
     ref,
   ) => {
     const [popperElement, setPopperElement] = React.useState(null);
 
     const { styles, attributes, state } = usePopper(triggerElement.current, popperElement, {
-      placement: 'bottom',
+      placement: placement || 'bottom',
     });
 
     return (
