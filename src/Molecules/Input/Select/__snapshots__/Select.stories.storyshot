@@ -11431,7 +11431,6 @@ exports[`Storyshots Molecules / Input / Select With Label Tooltip 1`] = `
   <select
     aria-hidden="true"
     className="c0"
-    disabled={false}
     onChange={[Function]}
   >
     <option
@@ -11475,7 +11474,6 @@ exports[`Storyshots Molecules / Input / Select With Label Tooltip 1`] = `
               <svg
                 aria-hidden="true"
                 className="c6 c7"
-                data-reach-tooltip-trigger=""
                 focusable="false"
                 onBlur={[Function]}
                 onFocus={[Function]}
@@ -11510,7 +11508,6 @@ exports[`Storyshots Molecules / Input / Select With Label Tooltip 1`] = `
         </label>
         <div
           className="c9"
-          disabled={false}
           label="Label"
           onBlur={[Function]}
           onFocus={[Function]}
@@ -11525,7 +11522,6 @@ exports[`Storyshots Molecules / Input / Select With Label Tooltip 1`] = `
               aria-label="Label: Placeholder"
               className="c11 c12"
               data-testid="input-select-button"
-              disabled={false}
               form=""
               id="input-1"
               onClick={[Function]}
@@ -11562,7 +11558,6 @@ exports[`Storyshots Molecules / Input / Select With Label Tooltip 1`] = `
             />
           </svg>
         </div>
-        
       </div>
     </div>
   </div>
@@ -11795,7 +11790,6 @@ Array [
     <select
       aria-hidden="true"
       className="c0"
-      disabled={false}
       onChange={[Function]}
     >
       <option
@@ -11839,7 +11833,6 @@ Array [
                 <svg
                   aria-hidden="true"
                   className="c6 c7"
-                  data-reach-tooltip-trigger=""
                   focusable="false"
                   onBlur={[Function]}
                   onFocus={[Function]}
@@ -11874,7 +11867,6 @@ Array [
           </label>
           <div
             className="c9"
-            disabled={false}
             label="Label"
             onBlur={[Function]}
             onFocus={[Function]}
@@ -11889,7 +11881,6 @@ Array [
                 aria-label="Label: Placeholder"
                 className="c11 c12"
                 data-testid="input-select-button"
-                disabled={false}
                 form=""
                 id="input-1"
                 onClick={[Function]}
@@ -11926,7 +11917,6 @@ Array [
               />
             </svg>
           </div>
-          
         </div>
       </div>
     </div>
