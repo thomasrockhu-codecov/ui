@@ -179,6 +179,7 @@ const Select = (props: Props) => {
   const [itemRefs, setItemRef] = useMultiRef();
   const listRef = React.useRef(null);
   const formFieldRef = React.useRef(null);
+  const selectWrapperRef = React.useRef(null);
   const inputRef = React.useRef(null);
   const searchRef = React.useRef(null);
 
@@ -194,6 +195,7 @@ const Select = (props: Props) => {
     formFieldRef,
     isFirstRender,
     inputRef,
+    listRef,
   );
 
   /******      Renderers      ******/
@@ -216,7 +218,7 @@ const Select = (props: Props) => {
   const selectedItems = machineState.context.selectedItems;
   const multiselect = machineState.context.multiselect;
 
-  const ListWrapperComponent = props.inModal ? ListWrapperWithPortal : ListWrapper;
+  const ListWrapperComponent = props.withPortal ? ListWrapperWithPortal : ListWrapper;
 
   return (
     <div className={props.className}>
@@ -242,6 +244,7 @@ const Select = (props: Props) => {
           labelTooltipPosition={props.labelTooltipPosition}
           noFormField={props.noFormField}
           ref={formFieldRef}
+          innerRef={selectWrapperRef}
           disabled={isDisabled}
           open={isOpen}
           fullWidth={props.fullWidth}
@@ -251,7 +254,7 @@ const Select = (props: Props) => {
           id={props.id}
           size={props.size}
           onFocus={handleFocus}
-          onBlur={!props.inModal ? handleBlur : undefined}
+          onBlur={handleBlur}
           width={props.width}
         >
           <SelectedValueWrapper
@@ -270,7 +273,7 @@ const Select = (props: Props) => {
           {isOpen && (
             <ListWrapperComponent
               component={List}
-              triggerElement={formFieldRef}
+              triggerElement={selectWrapperRef}
               noFormField={props.noFormField}
               onKeyDown={handleKeyDown}
               onMouseMove={handleMouseMove}

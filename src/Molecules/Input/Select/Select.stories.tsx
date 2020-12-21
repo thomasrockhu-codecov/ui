@@ -910,18 +910,20 @@ export const linkWithDropdownAndSearchBoxSecondary = () =>
     };
 
     return (
-      <Input.Select
-        options={hugeOptionsList}
-        label="User account"
-        id="input-select-search-inside"
-        placeholder="Select account"
-        noFormField
-        showSearch
-        value={value}
-        components={customComponents}
-        onChange={handleChange}
-        width="150px"
-      />
+      <Flexbox container justifyContent="flex-start">
+        <Input.Select
+          options={hugeOptionsList}
+          label="User account"
+          id="input-select-search-inside"
+          placeholder="Select account"
+          noFormField
+          showSearch
+          value={value}
+          components={customComponents}
+          onChange={handleChange}
+          width="150px"
+        />
+      </Flexbox>
     );
   });
 
@@ -990,18 +992,20 @@ export const linkWithDropdownAndSearchBoxTertiary = () =>
     };
 
     return (
-      <Input.Select
-        options={hugeOptionsList}
-        label="User account"
-        id="input-select-search-inside"
-        placeholder="Select account"
-        noFormField
-        showSearch
-        value={value}
-        components={customComponents}
-        onChange={handleChange}
-        width="250px"
-      />
+      <Flexbox container justifyContent="flex-start">
+        <Input.Select
+          options={hugeOptionsList}
+          label="User account"
+          id="input-select-search-inside"
+          placeholder="Select account"
+          noFormField
+          showSearch
+          value={value}
+          components={customComponents}
+          onChange={handleChange}
+          width="250px"
+        />
+      </Flexbox>
     );
   });
 
@@ -1077,26 +1081,28 @@ export const linkWithDropdownAndSearchBoxMultiselect = () =>
             action('Tracking')(componentName, e.type, e.payload, props),
         }}
       >
-        <Input.Select
-          options={hugeOptionsList}
-          label="User account"
-          id="input-select-search-inside"
-          placeholder="Select account"
-          noFormField
-          showSearch
-          multiselect
-          value={value}
-          width="300px"
-          listMaxHeight="400px"
-          components={customComponents}
-          onChange={handleChange}
-          actions={[
-            {
-              label: 'Action',
-              onSelect: action('Action triggered'),
-            },
-          ]}
-        />
+        <Flexbox container justifyContent="flex-start">
+          <Input.Select
+            options={hugeOptionsList}
+            label="User account"
+            id="input-select-search-inside"
+            placeholder="Select account"
+            noFormField
+            showSearch
+            multiselect
+            value={value}
+            width="300px"
+            listMaxHeight="400px"
+            components={customComponents}
+            onChange={handleChange}
+            actions={[
+              {
+                label: 'Action',
+                onSelect: action('Action triggered'),
+              },
+            ]}
+          />
+        </Flexbox>
       </TrackingContext.Provider>
     );
   });

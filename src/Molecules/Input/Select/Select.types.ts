@@ -81,7 +81,7 @@ export type Props = {
   /**
    * Will use React Portal to render the dropdown if set to true
    */
-  inModal?: boolean;
+  withPortal?: boolean;
   /**
    * Controlled mode for search field
    * Use with showSearch only
