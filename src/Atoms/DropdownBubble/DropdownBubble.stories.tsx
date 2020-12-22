@@ -15,7 +15,7 @@ export const defaultStory = () => (
   </DropdownBubble>
 );
 
-export const differentTrianglePosition = () => (
+export const differentPlacementAndTrianglePosition = () => (
   <Display
     items={[
       {
@@ -24,7 +24,7 @@ export const differentTrianglePosition = () => (
             <Typography type="hero">Hello world!</Typography>
           </DropdownBubble>
         ),
-        title: 'left',
+        title: 'Placement Bottom, Arrow Left',
       },
       {
         component: (
@@ -32,7 +32,7 @@ export const differentTrianglePosition = () => (
             <Typography type="hero">Hello world!</Typography>
           </DropdownBubble>
         ),
-        title: 'right',
+        title: 'Placement Bottom, Arrow Right',
       },
       {
         component: (
@@ -40,7 +40,31 @@ export const differentTrianglePosition = () => (
             <Typography type="hero">Hello world!</Typography>
           </DropdownBubble>
         ),
-        title: 'center',
+        title: 'Placement Bottom, Arrow Center',
+      },
+      {
+        component: (
+          <DropdownBubble position="left" placement="top">
+            <Typography type="hero">Hello world!</Typography>
+          </DropdownBubble>
+        ),
+        title: 'Placement Top, Arrow Left',
+      },
+      {
+        component: (
+          <DropdownBubble position="right" placement="top">
+            <Typography type="hero">Hello world!</Typography>
+          </DropdownBubble>
+        ),
+        title: 'Placement Top, Arrow Right',
+      },
+      {
+        component: (
+          <DropdownBubble position="center" placement="top">
+            <Typography type="hero">Hello world!</Typography>
+          </DropdownBubble>
+        ),
+        title: 'Placement Top, Arrow Center',
       },
     ]}
   />
