@@ -203,6 +203,7 @@ export const useOnBlurAndOnFocus = (
         if (
           formFieldRef.current &&
           !formFieldRef.current.contains(document.activeElement) &&
+          // needed for when list is rendered inside of Portal
           !listRef.current.contains(document.activeElement)
         ) {
           send('BLUR');
