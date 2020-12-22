@@ -1279,20 +1279,6 @@ export const insideModal = () => (
   </Modal>
 );
 
-export const placementTopWithAutoPlacement = () => (
-  <Flexbox container alignItems="flex-end" style={{ height: '100vh' }}>
-    <Box pb={5}>
-      <Input.Select
-        id="no-scroll-select"
-        options={accountOptions}
-        label="User account"
-        placeholder="Select account"
-        withPortal
-      />
-    </Box>
-  </Flexbox>
-);
-
 export const placementTop = () => (
   <Box pt={40}>
     <Input.Select
@@ -1305,17 +1291,19 @@ export const placementTop = () => (
   </Box>
 );
 
-export const placementTopWithPortal = () => (
-  <Box pt={40}>
-    <Input.Select
-      id="no-scroll-select"
-      options={accountOptions}
-      label="User account"
-      placeholder="Select account"
-      withPortal
-      placement="top"
-    />
-  </Box>
+export const autoPlacement = () => (
+  <div>
+    <h1>Open the Select and scroll down</h1>
+    <div style={{ display: 'flex', alignItems: 'center', height: '160vh' }}>
+      <Input.Select
+        id="no-scroll-select"
+        options={accountOptions}
+        label="User account"
+        placeholder="Select account"
+        withPortal
+      />
+    </div>
+  </div>
 );
 
 export default {

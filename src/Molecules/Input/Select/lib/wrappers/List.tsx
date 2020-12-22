@@ -30,8 +30,8 @@ const getStylesForPlacement = (placement: string) => {
 const StyledListWrapper = styled.div<any>`
   transform: translate3d(0, 0, 0);
   position: absolute;
-  ${p => getStylesForPlacement(p.placement)}
-  ${p => getStylesForPosition(p.listPosition)}
+  ${(p) => getStylesForPlacement(p.placement)}
+  ${(p) => getStylesForPosition(p.listPosition)}
   z-index: 4;
   margin: -4px;
   padding: 4px;
@@ -53,7 +53,7 @@ export const ListWrapper = React.forwardRef<HTMLDivElement, any>(
       'data-testid': dataTestId,
       maxHeight,
       listPosition,
-      placement
+      placement,
     },
     ref,
   ) => {
