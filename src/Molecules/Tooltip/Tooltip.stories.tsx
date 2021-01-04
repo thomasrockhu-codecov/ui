@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
-import { Box, Tooltip, Modal, Drawer } from '../..';
+import { Box, Modal, Drawer } from '../..';
+import Tooltip from '.';
 import { Display } from '../../common/Display';
 
 export default {
@@ -17,13 +18,23 @@ const Button = styled.button`
 `;
 
 export const defaultStory = () => (
-  <Tooltip label={label}>
+  <Tooltip label={label} position="top">
     <Button type="button">Hover me</Button>
   </Tooltip>
 );
 
 defaultStory.story = {
   name: 'Default',
+};
+
+export const withMode = () => (
+  <Tooltip label={label} mode="click">
+    <Button type="button">Click me</Button>
+  </Tooltip>
+);
+
+withMode.story = {
+  name: 'With On Click Mode',
 };
 
 const veryLongLabel = 'Llanfairpwllgwyngyllgogerychwyrndrob';

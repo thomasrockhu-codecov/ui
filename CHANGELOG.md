@@ -1,3 +1,37 @@
+## [5.6.6](https://github.com/nordnet/ui/compare/v5.6.5...v5.6.6) (2020-12-21)
+
+
+### Bug Fixes
+
+* 🐛 add --no-dll to build script ([f236aaa](https://github.com/nordnet/ui/commit/f236aaa))
+* 🐛 correct story ([6ff1af7](https://github.com/nordnet/ui/commit/6ff1af7))
+* 🐛 spelling correction in comment ([542e18f](https://github.com/nordnet/ui/commit/542e18f))
+* add --no-dll to now build script as well ([435d5db](https://github.com/nordnet/ui/commit/435d5db))
+* add react portal for tooltips ([678a911](https://github.com/nordnet/ui/commit/678a911))
+* add useTooltip hook for managing state ([491dd17](https://github.com/nordnet/ui/commit/491dd17))
+* add utility for merging refs ([5d3bbcd](https://github.com/nordnet/ui/commit/5d3bbcd))
+* breakdown the Tooltip component into smaller components ([02a44f2](https://github.com/nordnet/ui/commit/02a44f2))
+* breakdown the Tooltip component into smaller components ([fdecf03](https://github.com/nordnet/ui/commit/fdecf03))
+* create a store for tooltip state ([3c0d0c5](https://github.com/nordnet/ui/commit/3c0d0c5))
+* generate storyshoots ([df7b43d](https://github.com/nordnet/ui/commit/df7b43d))
+* move store to make apparent it belongs to the hook & add comments ([2be6502](https://github.com/nordnet/ui/commit/2be6502))
+* new tooltip stories ([e44f1d4](https://github.com/nordnet/ui/commit/e44f1d4))
+* new tooltip WIP ([ea19109](https://github.com/nordnet/ui/commit/ea19109))
+* remove @reach/tooltip ([e39f56b](https://github.com/nordnet/ui/commit/e39f56b))
+* remove accidentaly added code ([ed843d7](https://github.com/nordnet/ui/commit/ed843d7))
+* replace the old tooltip with new one ([486ede6](https://github.com/nordnet/ui/commit/486ede6))
+* resolve conflicts ([6add2b4](https://github.com/nordnet/ui/commit/6add2b4))
+* separate tooltip into TooltipContainer and Tooltip components ([f64e850](https://github.com/nordnet/ui/commit/f64e850))
+* start aligning arrow ([b3dbf91](https://github.com/nordnet/ui/commit/b3dbf91))
+* storybook build script --no-dll ([ee02303](https://github.com/nordnet/ui/commit/ee02303))
+* style arrow ([58b1dfc](https://github.com/nordnet/ui/commit/58b1dfc))
+* switched to existing atom component for Portal ([9f3a8ad](https://github.com/nordnet/ui/commit/9f3a8ad))
+* tooltip a11y ([3ecce9f](https://github.com/nordnet/ui/commit/3ecce9f))
+* tooltip on click outside close ([e4915f3](https://github.com/nordnet/ui/commit/e4915f3))
+* tooltip shared state ([4167e0d](https://github.com/nordnet/ui/commit/4167e0d))
+* tooltip snapshots ([af6b745](https://github.com/nordnet/ui/commit/af6b745))
+* work on stories ([279ba2b](https://github.com/nordnet/ui/commit/279ba2b))
+
 ## [5.6.5](https://github.com/nordnet/ui/compare/v5.6.4...v5.6.5) (2020-12-17)
 
 

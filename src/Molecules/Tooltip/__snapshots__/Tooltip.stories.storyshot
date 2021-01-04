@@ -7,7 +7,6 @@ exports[`Storyshots Molecules / Tooltip Custom max-width 1`] = `
 
 <button
   className="c0"
-  data-reach-tooltip-trigger=""
   onBlur={[Function]}
   onFocus={[Function]}
   onKeyDown={[Function]}
@@ -28,7 +27,6 @@ exports[`Storyshots Molecules / Tooltip Default 1`] = `
 
 <button
   className="c0"
-  data-reach-tooltip-trigger=""
   onBlur={[Function]}
   onFocus={[Function]}
   onKeyDown={[Function]}
@@ -236,7 +234,6 @@ exports[`Storyshots Molecules / Tooltip Integration: With Drawer and Modal 1`] =
           >
             <button
               className="c7"
-              data-reach-tooltip-trigger=""
               onBlur={[Function]}
               onFocus={[Function]}
               onKeyDown={[Function]}
@@ -276,6 +273,26 @@ exports[`Storyshots Molecules / Tooltip Integration: With Drawer and Modal 1`] =
 </portal-dummy>
 `;
 
+exports[`Storyshots Molecules / Tooltip With On Click Mode 1`] = `
+.c0 {
+  display: block;
+}
+
+<button
+  className="c0"
+  onBlur={[Function]}
+  onFocus={[Function]}
+  onKeyDown={[Function]}
+  onMouseDown={[Function]}
+  onMouseEnter={[Function]}
+  onMouseLeave={[Function]}
+  onMouseMove={[Function]}
+  type="button"
+>
+  Click me
+</button>
+`;
+
 exports[`Storyshots Molecules / Tooltip With Very Long Word 1`] = `
 .c0 {
   display: block;
@@ -283,7 +300,6 @@ exports[`Storyshots Molecules / Tooltip With Very Long Word 1`] = `
 
 <button
   className="c0"
-  data-reach-tooltip-trigger=""
   onBlur={[Function]}
   onFocus={[Function]}
   onKeyDown={[Function]}
@@ -375,7 +391,6 @@ exports[`Storyshots Molecules / Tooltip With position defined 1`] = `
     <div>
       <button
         className="c3"
-        data-reach-tooltip-trigger=""
         onBlur={[Function]}
         onFocus={[Function]}
         onKeyDown={[Function]}
@@ -401,7 +416,6 @@ exports[`Storyshots Molecules / Tooltip With position defined 1`] = `
     <div>
       <button
         className="c3"
-        data-reach-tooltip-trigger=""
         onBlur={[Function]}
         onFocus={[Function]}
         onKeyDown={[Function]}
@@ -427,7 +441,6 @@ exports[`Storyshots Molecules / Tooltip With position defined 1`] = `
     <div>
       <button
         className="c3"
-        data-reach-tooltip-trigger=""
         onBlur={[Function]}
         onFocus={[Function]}
         onKeyDown={[Function]}
@@ -453,7 +466,6 @@ exports[`Storyshots Molecules / Tooltip With position defined 1`] = `
     <div>
       <button
         className="c3"
-        data-reach-tooltip-trigger=""
         onBlur={[Function]}
         onFocus={[Function]}
         onKeyDown={[Function]}
