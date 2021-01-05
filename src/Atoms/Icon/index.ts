@@ -19,6 +19,7 @@ import { CalendarTwoRows } from './components/CalendarTwoRows';
 import { CandleSticks } from './components/CandleSticks';
 import { CheckMark } from './components/CheckMark';
 import { CheckMarkCircle } from './components/CheckMarkCircle';
+import { CheckMarkCircleLight } from './components/CheckMarkCircleLight';
 import { Chevron } from './components/Chevron';
 import { ChevronDown } from './components/ChevronDown';
 import { ChevronLeft } from './components/ChevronLeft';
@@ -28,6 +29,8 @@ import { Clicks } from './components/Clicks';
 import { Cogwheel } from './components/Cogwheel';
 import { Commodities } from './components/Commodities';
 import { Communication } from './components/Communication';
+import { CommunicationApprove } from './components/CommunicationApprove';
+import { CommunicationMail } from './components/CommunicationMail';
 import { Compass } from './components/Compass';
 import { ConfigurationSliders } from './components/ConfigurationSliders';
 import { ConsumerCyclic } from './components/ConsumerCyclic';
@@ -83,11 +86,13 @@ import { Printer } from './components/Printer';
 import { Questionmark } from './components/Questionmark';
 import { Raising } from './components/Raising';
 import { RealEstate } from './components/RealEstate';
+import { RiskMeter } from './components/RiskMeter';
 import { Rtmt } from './components/Rtmt';
 import { Search } from './components/Search';
 import { SellingpointFunds } from './components/SellingpointFunds';
 import { SellingpointGlobal } from './components/SellingpointGlobal';
 import { SellingpointMoney } from './components/SellingpointMoney';
+import { SellingpointTransfer } from './components/SellingpointTransfer';
 import { SellingpointRate } from './components/SellingpointRate';
 import { SellingpointShareville } from './components/SellingpointShareville';
 import { SellingpointStocks } from './components/SellingpointStocks';
@@ -137,6 +142,7 @@ export default {
   CandleSticks,
   CheckMark,
   CheckMarkCircle,
+  CheckMarkCircleLight,
   Chevron,
   ChevronDown,
   ChevronLeft,
@@ -146,6 +152,8 @@ export default {
   Cogwheel,
   Commodities,
   Communication,
+  CommunicationApprove,
+  CommunicationMail,
   Compass,
   ConfigurationSliders,
   ConsumerCyclic,
@@ -201,6 +209,7 @@ export default {
   Questionmark,
   Raising,
   RealEstate,
+  RiskMeter,
   Rtmt,
   Search,
   SellingpointFunds,
@@ -209,6 +218,7 @@ export default {
   SellingpointRate,
   SellingpointShareville,
   SellingpointStocks,
+  SellingpointTransfer,
   Shapes,
   SharevilleLogo,
   SocialFacebook,
