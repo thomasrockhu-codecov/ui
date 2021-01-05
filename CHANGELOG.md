@@ -1,3 +1,15 @@
+# [5.7.0](https://github.com/nordnet/ui/compare/v5.6.6...v5.7.0) (2021-01-05)
+
+
+### Bug Fixes
+
+* regenerate snapshots for new icons ([2a7bd0a](https://github.com/nordnet/ui/commit/2a7bd0a))
+
+
+### Features
+
+* new icons for EPK project ([3c1c87a](https://github.com/nordnet/ui/commit/3c1c87a))
+
 ## [5.6.6](https://github.com/nordnet/ui/compare/v5.6.5...v5.6.6) (2020-12-21)
 
 
