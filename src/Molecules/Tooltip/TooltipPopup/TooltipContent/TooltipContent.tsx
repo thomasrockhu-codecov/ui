@@ -11,7 +11,7 @@ const StyledTooltip = styled.div<StyledTooltipProps>`
   background: ${(p) => p.theme.color.bubbleBackground};
   border: solid ${BORDER_SIZE}px ${(p) => p.theme.color.bubbleBorder};
   ${(p) => (p.maxWidth ? `max-width: ${p.theme.spacing.unit(p.maxWidth)}px;` : '')}
-  word-break: break-all;
+  overflow-wrap: break-word;
 `;
 
 const TooltipContent: TooltipContentComponent = forwardRef(
