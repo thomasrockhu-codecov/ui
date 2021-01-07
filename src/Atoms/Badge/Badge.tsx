@@ -16,13 +16,13 @@ const animation = css`
       transform: scale(1);
     }
     1% {
-      transform: scale(2);
+      transform: scale(1.4);
     }
     100% {
       transform: scale(1);
     }
   }
-  animation: scale 0.5s ease;
+  animation: scale 0.5s ease-out;
 `;
 
 const Circle: CircleComponent = styled.span<CircleComponentProps>`
