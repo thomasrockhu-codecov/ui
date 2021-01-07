@@ -1,3 +1,11 @@
+## [5.7.1](https://github.com/nordnet/ui/compare/v5.7.0...v5.7.1) (2021-01-05)
+
+
+### Bug Fixes
+
+* bump version number ([0a4e7c1](https://github.com/nordnet/ui/commit/0a4e7c1))
+* change tooltip css property word-break to overflow-wrap ([7b33499](https://github.com/nordnet/ui/commit/7b33499))
+
 # [5.7.0](https://github.com/nordnet/ui/compare/v5.6.6...v5.7.0) (2021-01-05)
 
 
