@@ -2,9 +2,13 @@ import React, { useState } from 'react';
 import styled from 'styled-components';
 import { Badge } from './Badge';
 import docs from './Badge.mdx';
-import { Box, Button, Typography } from '../..';
+import { Box, Button, Typography, Flexbox } from '../..';
 import { numberWithLimit } from '../../common/utils';
 import { Props as BadgeProps } from './Badge.types';
+
+const StyledFlexbox = styled(Flexbox)`
+  width: 200px;
+`;
 
 export default {
   title: 'Atoms / Badge',
@@ -222,13 +226,20 @@ export const BadgeWithAnimation = () => {
 
   return (
     <>
-      <Badge key={nofifications} animateOnChange>
-        {nofifications}
-      </Badge>
-      <div>
-        <Button onClick={() => setNotifications(nofifications - 1)}>-</Button>
-        <Button onClick={() => setNotifications(nofifications + 1)}>+</Button>
-      </div>
+      <Typography type="title2">Badge with animation</Typography>
+      <Box py={3}>
+        <StyledFlexbox container justifyContent="space-between">
+          <Button variant="secondary" onClick={() => setNotifications(nofifications - 1)}>
+            -
+          </Button>
+          <Badge key={nofifications} animateOnChange>
+            {nofifications}
+          </Badge>
+          <Button variant="secondary" onClick={() => setNotifications(nofifications + 1)}>
+            +
+          </Button>
+        </StyledFlexbox>
+      </Box>
     </>
   );
 };
