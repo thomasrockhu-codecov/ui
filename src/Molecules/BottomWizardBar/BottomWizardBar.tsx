@@ -37,6 +37,8 @@ const BottomWizardBar: React.FC<Props> = ({
   onSubmit,
   isEmbedded = false,
   isLoading = false,
+  isNextDisabled = false,
+  isSubmitDisabled = false,
   titleText,
   cancelText,
   previousText,
@@ -115,6 +117,7 @@ const BottomWizardBar: React.FC<Props> = ({
                     onClick={(e) => {
                       if (onSubmit && !isLoading) onSubmit(e);
                     }}
+                    disabled={isSubmitDisabled}
                     {...(submitButtonLink && { to: submitButtonLink })}
                   >
                     {submitText}
@@ -129,6 +132,7 @@ const BottomWizardBar: React.FC<Props> = ({
                       if (onNext && !isLoading) onNext(e);
                     }}
                     fullWidth={isEmbedded}
+                    disabled={isNextDisabled}
                     {...(nextButtonLink && { to: nextButtonLink })}
                   >
                     {nextText}

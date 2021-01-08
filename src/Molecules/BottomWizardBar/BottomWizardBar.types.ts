@@ -11,6 +11,10 @@ export type Props = {
   isLoading?: boolean;
   /** @default false */
   isEmbedded?: boolean;
+  /** @default false */
+  isNextDisabled?: boolean;
+  /** @default false */
+  isSubmitDisabled?: boolean;
   titleText?: string;
   cancelText: string;
   previousText: string;
