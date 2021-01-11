@@ -3,25 +3,26 @@
 exports[`Storyshots Atoms / FadedScroll Default, using maxHeight prop 1`] = `
 .c2 {
   position: relative;
-  overflow-x: hidden;
-}
-
-.c7 {
-  height: 16px;
-  width: 4px;
-  position: absolute;
-  right: 0;
-  pointer-events: none;
-  bottom: 0;
 }
 
 .c3 {
-  height: 16px;
-  width: 4px;
+  height: 1px;
+  width: 1px;
   position: absolute;
   right: 0;
   pointer-events: none;
+  background-color: blue;
   top: 0;
+}
+
+.c7 {
+  height: 1px;
+  width: 1px;
+  position: absolute;
+  right: 0;
+  pointer-events: none;
+  background-color: blue;
+  bottom: 0;
 }
 
 .c4 {
@@ -51,7 +52,7 @@ exports[`Storyshots Atoms / FadedScroll Default, using maxHeight prop 1`] = `
     position: absolute;
     left: 0;
     pointer-events: none;
-    background: transparent;
+    background: red;
     z-index: 1;
     opacity: 0;
     top: 0;
@@ -72,7 +73,7 @@ exports[`Storyshots Atoms / FadedScroll Default, using maxHeight prop 1`] = `
     position: absolute;
     left: 0;
     pointer-events: none;
-    background: transparent;
+    background: red;
     z-index: 1;
     opacity: 0;
     bottom: 0;
@@ -81,9 +82,52 @@ exports[`Storyshots Atoms / FadedScroll Default, using maxHeight prop 1`] = `
 }
 
 @media (min-width:976px) {
+  .c0 {
+    position: relative;
+  }
+
+  .c0::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 52px;
+    position: absolute;
+    left: 0;
+    pointer-events: none;
+    background: red;
+    z-index: 1;
+    opacity: 0;
+    right: 0;
+    background: linear-gradient(0deg,#ffffffff 0%,#ffffff00 100%);
+  }
+}
+
+@media (min-width:976px) {
+  .c0 {
+    position: relative;
+  }
+
+  .c0::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 52px;
+    position: absolute;
+    left: 0;
+    pointer-events: none;
+    background: red;
+    z-index: 1;
+    opacity: 0;
+    left: 0;
+    background: linear-gradient(0deg,#ffffffff 0%,#ffffff00 100%);
+  }
+}
+
+@media (min-width:976px) {
   .c1 {
     max-height: 160px;
     overflow-y: auto;
+    overflow-x: auto;
     width: 100%;
   }
 }
@@ -275,25 +319,26 @@ exports[`Storyshots Atoms / FadedScroll Default, using maxHeight prop 1`] = `
 exports[`Storyshots Atoms / FadedScroll With height of fade changed 1`] = `
 .c2 {
   position: relative;
-  overflow-x: hidden;
-}
-
-.c7 {
-  height: 16px;
-  width: 4px;
-  position: absolute;
-  right: 0;
-  pointer-events: none;
-  bottom: 0;
 }
 
 .c3 {
-  height: 16px;
-  width: 4px;
+  height: 1px;
+  width: 1px;
   position: absolute;
   right: 0;
   pointer-events: none;
+  background-color: blue;
   top: 0;
+}
+
+.c7 {
+  height: 1px;
+  width: 1px;
+  position: absolute;
+  right: 0;
+  pointer-events: none;
+  background-color: blue;
+  bottom: 0;
 }
 
 .c4 {
@@ -323,7 +368,7 @@ exports[`Storyshots Atoms / FadedScroll With height of fade changed 1`] = `
     position: absolute;
     left: 0;
     pointer-events: none;
-    background: transparent;
+    background: red;
     z-index: 1;
     opacity: 0;
     top: 0;
@@ -344,7 +389,7 @@ exports[`Storyshots Atoms / FadedScroll With height of fade changed 1`] = `
     position: absolute;
     left: 0;
     pointer-events: none;
-    background: transparent;
+    background: red;
     z-index: 1;
     opacity: 0;
     bottom: 0;
@@ -353,9 +398,52 @@ exports[`Storyshots Atoms / FadedScroll With height of fade changed 1`] = `
 }
 
 @media (min-width:976px) {
+  .c0 {
+    position: relative;
+  }
+
+  .c0::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 20px;
+    position: absolute;
+    left: 0;
+    pointer-events: none;
+    background: red;
+    z-index: 1;
+    opacity: 0;
+    right: 0;
+    background: linear-gradient(0deg,#ffffffff 0%,#ffffff00 100%);
+  }
+}
+
+@media (min-width:976px) {
+  .c0 {
+    position: relative;
+  }
+
+  .c0::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 20px;
+    position: absolute;
+    left: 0;
+    pointer-events: none;
+    background: red;
+    z-index: 1;
+    opacity: 0;
+    left: 0;
+    background: linear-gradient(0deg,#ffffffff 0%,#ffffff00 100%);
+  }
+}
+
+@media (min-width:976px) {
   .c1 {
     max-height: 180px;
     overflow-y: auto;
+    overflow-x: auto;
     width: 100%;
   }
 }
@@ -574,25 +662,26 @@ exports[`Storyshots Atoms / FadedScroll With height of scrollable area being wha
 
 .c3 {
   position: relative;
-  overflow-x: hidden;
-}
-
-.c8 {
-  height: 16px;
-  width: 4px;
-  position: absolute;
-  right: 0;
-  pointer-events: none;
-  bottom: 0;
 }
 
 .c4 {
-  height: 16px;
-  width: 4px;
+  height: 1px;
+  width: 1px;
   position: absolute;
   right: 0;
   pointer-events: none;
+  background-color: blue;
   top: 0;
+}
+
+.c8 {
+  height: 1px;
+  width: 1px;
+  position: absolute;
+  right: 0;
+  pointer-events: none;
+  background-color: blue;
+  bottom: 0;
 }
 
 .c5 {
@@ -622,7 +711,7 @@ exports[`Storyshots Atoms / FadedScroll With height of scrollable area being wha
     position: absolute;
     left: 0;
     pointer-events: none;
-    background: transparent;
+    background: red;
     z-index: 1;
     opacity: 0;
     top: 0;
@@ -643,10 +732,52 @@ exports[`Storyshots Atoms / FadedScroll With height of scrollable area being wha
     position: absolute;
     left: 0;
     pointer-events: none;
-    background: transparent;
+    background: red;
     z-index: 1;
     opacity: 0;
     bottom: 0;
+    background: linear-gradient(0deg,#ffffffff 0%,#ffffff00 100%);
+  }
+}
+
+@media (min-width:976px) {
+  .c0 {
+    position: relative;
+  }
+
+  .c0::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 52px;
+    position: absolute;
+    left: 0;
+    pointer-events: none;
+    background: red;
+    z-index: 1;
+    opacity: 0;
+    right: 0;
+    background: linear-gradient(0deg,#ffffffff 0%,#ffffff00 100%);
+  }
+}
+
+@media (min-width:976px) {
+  .c0 {
+    position: relative;
+  }
+
+  .c0::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 52px;
+    position: absolute;
+    left: 0;
+    pointer-events: none;
+    background: red;
+    z-index: 1;
+    opacity: 0;
+    left: 0;
     background: linear-gradient(0deg,#ffffffff 0%,#ffffff00 100%);
   }
 }
@@ -665,6 +796,7 @@ exports[`Storyshots Atoms / FadedScroll With height of scrollable area being wha
     -ms-flex-preferred-size: auto;
     flex-basis: auto;
     overflow-y: auto;
+    overflow-x: auto;
     width: 100%;
   }
 }
@@ -859,6 +991,263 @@ exports[`Storyshots Atoms / FadedScroll With height of scrollable area being wha
 </div>
 `;
 
+exports[`Storyshots Atoms / FadedScroll With left fade 1`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  min-height: 0;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  -webkit-flex-shrink: 1;
+  -ms-flex-negative: 1;
+  flex-shrink: 1;
+  -webkit-flex-basis: auto;
+  -ms-flex-preferred-size: auto;
+  flex-basis: auto;
+  position: relative;
+}
+
+.c0::after {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 52px;
+  position: absolute;
+  left: 0;
+  pointer-events: none;
+  background: red;
+  z-index: 1;
+  opacity: 0;
+  left: 0;
+  background: linear-gradient(0deg,#ffffffff 0%,#ffffff00 100%);
+}
+
+.c1 {
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  width: 100%;
+  min-height: 0;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  -webkit-flex-shrink: 1;
+  -ms-flex-negative: 1;
+  flex-shrink: 1;
+  -webkit-flex-basis: auto;
+  -ms-flex-preferred-size: auto;
+  flex-basis: auto;
+  overflow-y: auto;
+  overflow-x: auto;
+  width: 100%;
+}
+
+.c2 {
+  position: relative;
+}
+
+.c3 {
+  height: 1px;
+  width: 1px;
+  position: absolute;
+  right: 0;
+  pointer-events: none;
+  background-color: blue;
+  left: 0;
+}
+
+.c4 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.c6 {
+  box-sizing: border-box;
+}
+
+.c5 {
+  overflow-x: auto;
+}
+
+@media (min-width:976px) {
+  .c0 {
+    position: relative;
+  }
+
+  .c0::before {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 52px;
+    position: absolute;
+    left: 0;
+    pointer-events: none;
+    background: red;
+    z-index: 1;
+    opacity: 0;
+    top: 0;
+    background: linear-gradient(0deg,#ffffff00 0%,#ffffffff 100%);
+  }
+}
+
+@media (min-width:976px) {
+  .c0 {
+    position: relative;
+  }
+
+  .c0::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 52px;
+    position: absolute;
+    left: 0;
+    pointer-events: none;
+    background: red;
+    z-index: 1;
+    opacity: 0;
+    bottom: 0;
+    background: linear-gradient(0deg,#ffffffff 0%,#ffffff00 100%);
+  }
+}
+
+@media (min-width:976px) {
+  .c0 {
+    position: relative;
+  }
+
+  .c0::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 52px;
+    position: absolute;
+    left: 0;
+    pointer-events: none;
+    background: red;
+    z-index: 1;
+    opacity: 0;
+    right: 0;
+    background: linear-gradient(0deg,#ffffffff 0%,#ffffff00 100%);
+  }
+}
+
+<div
+  className="c0"
+>
+  <div
+    className="c1"
+  >
+    <div
+      className="c2"
+    >
+      <div
+        className="c3"
+      />
+      <div
+        className="c4 c5"
+      >
+        <div
+          className="c6"
+        >
+          Lorem ipsum dolor ssit amet
+        </div>
+        <div
+          className="c6"
+        >
+          nesciunt, nobis dnulla
+        </div>
+        <div
+          className="c6"
+        >
+          Adipisci aliquifd animi
+        </div>
+        <div
+          className="c6"
+        >
+          odio perferevndis quaerat quam
+        </div>
+        <div
+          className="c6"
+        >
+          consequunturs delectus excepturi
+        </div>
+        <div
+          className="c6"
+        >
+          incidunt iapsa libero magni
+        </div>
+        <div
+          className="c6"
+        >
+          nesciuvnt, nobis nulla
+        </div>
+        <div
+          className="c6"
+        >
+          consecbtetur avdipisicing elit
+        </div>
+        <div
+          className="c6"
+        >
+          Adipisnci aliquid animi
+        </div>
+        <div
+          className="c6"
+        >
+          consequuntur del, ectus excepturi
+        </div>
+        <div
+          className="c6"
+        >
+          incidunt ipsa liabero magni
+        </div>
+        <div
+          className="c6"
+        >
+          nesciunt, nobsis nulla
+        </div>
+        <div
+          className="c6"
+        >
+          odio perferenddis quaerat quam
+        </div>
+        <div
+          className="c6"
+        >
+          consequuntur delectusg excepturi
+        </div>
+        <div
+          className="c6"
+        >
+          incirdunt ipsa libero magni
+        </div>
+        <div
+          className="c6"
+        >
+          nesciunt, nobuis nulla
+        </div>
+        <div
+          className="c6"
+        >
+          reiciendis totarm vel vitae voluptates
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
 exports[`Storyshots Atoms / FadedScroll With mobile fade enabled 1`] = `
 .c0 {
   display: -webkit-box;
@@ -889,7 +1278,7 @@ exports[`Storyshots Atoms / FadedScroll With mobile fade enabled 1`] = `
   position: absolute;
   left: 0;
   pointer-events: none;
-  background: transparent;
+  background: red;
   z-index: 1;
   opacity: 0;
   top: 0;
@@ -904,7 +1293,7 @@ exports[`Storyshots Atoms / FadedScroll With mobile fade enabled 1`] = `
   position: absolute;
   left: 0;
   pointer-events: none;
-  background: transparent;
+  background: red;
   z-index: 1;
   opacity: 0;
   bottom: 0;
@@ -929,30 +1318,32 @@ exports[`Storyshots Atoms / FadedScroll With mobile fade enabled 1`] = `
   -ms-flex-preferred-size: auto;
   flex-basis: auto;
   overflow-y: auto;
+  overflow-x: auto;
   width: 100%;
 }
 
 .c3 {
   position: relative;
-  overflow-x: hidden;
-}
-
-.c8 {
-  height: 16px;
-  width: 4px;
-  position: absolute;
-  right: 0;
-  pointer-events: none;
-  bottom: 0;
 }
 
 .c4 {
-  height: 16px;
-  width: 4px;
+  height: 1px;
+  width: 1px;
   position: absolute;
   right: 0;
   pointer-events: none;
+  background-color: blue;
   top: 0;
+}
+
+.c8 {
+  height: 1px;
+  width: 1px;
+  position: absolute;
+  right: 0;
+  pointer-events: none;
+  background-color: blue;
+  bottom: 0;
 }
 
 .c5 {
@@ -971,6 +1362,48 @@ exports[`Storyshots Atoms / FadedScroll With mobile fade enabled 1`] = `
 
 .c7 {
   padding: 8px;
+}
+
+@media (min-width:976px) {
+  .c0 {
+    position: relative;
+  }
+
+  .c0::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 52px;
+    position: absolute;
+    left: 0;
+    pointer-events: none;
+    background: red;
+    z-index: 1;
+    opacity: 0;
+    right: 0;
+    background: linear-gradient(0deg,#ffffffff 0%,#ffffff00 100%);
+  }
+}
+
+@media (min-width:976px) {
+  .c0 {
+    position: relative;
+  }
+
+  .c0::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 52px;
+    position: absolute;
+    left: 0;
+    pointer-events: none;
+    background: red;
+    z-index: 1;
+    opacity: 0;
+    left: 0;
+    background: linear-gradient(0deg,#ffffffff 0%,#ffffff00 100%);
+  }
 }
 
 <div
@@ -1157,18 +1590,275 @@ exports[`Storyshots Atoms / FadedScroll With mobile fade enabled 1`] = `
 </div>
 `;
 
-exports[`Storyshots Atoms / FadedScroll With top fade disabled 1`] = `
+exports[`Storyshots Atoms / FadedScroll With right fade 1`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  min-height: 0;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  -webkit-flex-shrink: 1;
+  -ms-flex-negative: 1;
+  flex-shrink: 1;
+  -webkit-flex-basis: auto;
+  -ms-flex-preferred-size: auto;
+  flex-basis: auto;
+  position: relative;
+}
+
+.c0::after {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 52px;
+  position: absolute;
+  left: 0;
+  pointer-events: none;
+  background: red;
+  z-index: 1;
+  opacity: 0;
+  right: 0;
+  background: linear-gradient(0deg,#ffffffff 0%,#ffffff00 100%);
+}
+
+.c1 {
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  width: 100%;
+  min-height: 0;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  -webkit-flex-shrink: 1;
+  -ms-flex-negative: 1;
+  flex-shrink: 1;
+  -webkit-flex-basis: auto;
+  -ms-flex-preferred-size: auto;
+  flex-basis: auto;
+  overflow-y: auto;
+  overflow-x: auto;
+  width: 100%;
+}
+
 .c2 {
   position: relative;
-  overflow-x: hidden;
 }
 
 .c6 {
-  height: 16px;
-  width: 4px;
+  height: 1px;
+  width: 1px;
   position: absolute;
   right: 0;
   pointer-events: none;
+  background-color: blue;
+  right: 0;
+}
+
+.c3 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.c5 {
+  box-sizing: border-box;
+}
+
+.c4 {
+  overflow-x: auto;
+}
+
+@media (min-width:976px) {
+  .c0 {
+    position: relative;
+  }
+
+  .c0::before {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 52px;
+    position: absolute;
+    left: 0;
+    pointer-events: none;
+    background: red;
+    z-index: 1;
+    opacity: 0;
+    top: 0;
+    background: linear-gradient(0deg,#ffffff00 0%,#ffffffff 100%);
+  }
+}
+
+@media (min-width:976px) {
+  .c0 {
+    position: relative;
+  }
+
+  .c0::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 52px;
+    position: absolute;
+    left: 0;
+    pointer-events: none;
+    background: red;
+    z-index: 1;
+    opacity: 0;
+    bottom: 0;
+    background: linear-gradient(0deg,#ffffffff 0%,#ffffff00 100%);
+  }
+}
+
+@media (min-width:976px) {
+  .c0 {
+    position: relative;
+  }
+
+  .c0::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 52px;
+    position: absolute;
+    left: 0;
+    pointer-events: none;
+    background: red;
+    z-index: 1;
+    opacity: 0;
+    left: 0;
+    background: linear-gradient(0deg,#ffffffff 0%,#ffffff00 100%);
+  }
+}
+
+<div
+  className="c0"
+>
+  <div
+    className="c1"
+  >
+    <div
+      className="c2"
+    >
+      <div
+        className="c3 c4"
+      >
+        <div
+          className="c5"
+        >
+          Lorem ipsum dolor ssit amet
+        </div>
+        <div
+          className="c5"
+        >
+          nesciunt, nobis dnulla
+        </div>
+        <div
+          className="c5"
+        >
+          Adipisci aliquifd animi
+        </div>
+        <div
+          className="c5"
+        >
+          odio perferevndis quaerat quam
+        </div>
+        <div
+          className="c5"
+        >
+          consequunturs delectus excepturi
+        </div>
+        <div
+          className="c5"
+        >
+          incidunt iapsa libero magni
+        </div>
+        <div
+          className="c5"
+        >
+          nesciuvnt, nobis nulla
+        </div>
+        <div
+          className="c5"
+        >
+          consecbtetur avdipisicing elit
+        </div>
+        <div
+          className="c5"
+        >
+          Adipisnci aliquid animi
+        </div>
+        <div
+          className="c5"
+        >
+          consequuntur del, ectus excepturi
+        </div>
+        <div
+          className="c5"
+        >
+          incidunt ipsa liabero magni
+        </div>
+        <div
+          className="c5"
+        >
+          nesciunt, nobsis nulla
+        </div>
+        <div
+          className="c5"
+        >
+          odio perferenddis quaerat quam
+        </div>
+        <div
+          className="c5"
+        >
+          consequuntur delectusg excepturi
+        </div>
+        <div
+          className="c5"
+        >
+          incirdunt ipsa libero magni
+        </div>
+        <div
+          className="c5"
+        >
+          nesciunt, nobuis nulla
+        </div>
+        <div
+          className="c5"
+        >
+          reiciendis totarm vel vitae voluptates
+        </div>
+      </div>
+      <div
+        className="c6"
+      />
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Atoms / FadedScroll With top fade disabled 1`] = `
+.c2 {
+  position: relative;
+}
+
+.c6 {
+  height: 1px;
+  width: 1px;
+  position: absolute;
+  right: 0;
+  pointer-events: none;
+  background-color: blue;
   bottom: 0;
 }
 
@@ -1191,6 +1881,27 @@ exports[`Storyshots Atoms / FadedScroll With top fade disabled 1`] = `
     position: relative;
   }
 
+  .c0::before {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 52px;
+    position: absolute;
+    left: 0;
+    pointer-events: none;
+    background: red;
+    z-index: 1;
+    opacity: 0;
+    top: 0;
+    background: linear-gradient(0deg,#ffffff00 0%,#ffffffff 100%);
+  }
+}
+
+@media (min-width:976px) {
+  .c0 {
+    position: relative;
+  }
+
   .c0::after {
     content: '';
     display: block;
@@ -1199,7 +1910,7 @@ exports[`Storyshots Atoms / FadedScroll With top fade disabled 1`] = `
     position: absolute;
     left: 0;
     pointer-events: none;
-    background: transparent;
+    background: red;
     z-index: 1;
     opacity: 0;
     bottom: 0;
@@ -1208,9 +1919,52 @@ exports[`Storyshots Atoms / FadedScroll With top fade disabled 1`] = `
 }
 
 @media (min-width:976px) {
+  .c0 {
+    position: relative;
+  }
+
+  .c0::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 52px;
+    position: absolute;
+    left: 0;
+    pointer-events: none;
+    background: red;
+    z-index: 1;
+    opacity: 0;
+    right: 0;
+    background: linear-gradient(0deg,#ffffffff 0%,#ffffff00 100%);
+  }
+}
+
+@media (min-width:976px) {
+  .c0 {
+    position: relative;
+  }
+
+  .c0::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 52px;
+    position: absolute;
+    left: 0;
+    pointer-events: none;
+    background: red;
+    z-index: 1;
+    opacity: 0;
+    left: 0;
+    background: linear-gradient(0deg,#ffffffff 0%,#ffffff00 100%);
+  }
+}
+
+@media (min-width:976px) {
   .c1 {
     max-height: 180px;
     overflow-y: auto;
+    overflow-x: auto;
     width: 100%;
   }
 }

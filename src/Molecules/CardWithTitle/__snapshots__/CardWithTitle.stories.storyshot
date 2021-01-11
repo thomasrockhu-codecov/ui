@@ -620,25 +620,26 @@ exports[`Storyshots Molecules / CardWithTitle Integration: with FadedScroll 1`] 
 
 .c7 {
   position: relative;
-  overflow-x: hidden;
-}
-
-.c11 {
-  height: 16px;
-  width: 4px;
-  position: absolute;
-  right: 0;
-  pointer-events: none;
-  bottom: 0;
 }
 
 .c8 {
-  height: 16px;
-  width: 4px;
+  height: 1px;
+  width: 1px;
   position: absolute;
   right: 0;
   pointer-events: none;
+  background-color: blue;
   top: 0;
+}
+
+.c11 {
+  height: 1px;
+  width: 1px;
+  position: absolute;
+  right: 0;
+  pointer-events: none;
+  background-color: blue;
+  bottom: 0;
 }
 
 .c3 {
@@ -694,7 +695,7 @@ exports[`Storyshots Molecules / CardWithTitle Integration: with FadedScroll 1`] 
     position: absolute;
     left: 0;
     pointer-events: none;
-    background: transparent;
+    background: red;
     z-index: 1;
     opacity: 0;
     top: 0;
@@ -715,7 +716,7 @@ exports[`Storyshots Molecules / CardWithTitle Integration: with FadedScroll 1`] 
     position: absolute;
     left: 0;
     pointer-events: none;
-    background: transparent;
+    background: red;
     z-index: 1;
     opacity: 0;
     bottom: 0;
@@ -724,9 +725,52 @@ exports[`Storyshots Molecules / CardWithTitle Integration: with FadedScroll 1`] 
 }
 
 @media (min-width:976px) {
+  .c5 {
+    position: relative;
+  }
+
+  .c5::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 52px;
+    position: absolute;
+    left: 0;
+    pointer-events: none;
+    background: red;
+    z-index: 1;
+    opacity: 0;
+    right: 0;
+    background: linear-gradient(0deg,#ffffffff 0%,#ffffff00 100%);
+  }
+}
+
+@media (min-width:976px) {
+  .c5 {
+    position: relative;
+  }
+
+  .c5::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 52px;
+    position: absolute;
+    left: 0;
+    pointer-events: none;
+    background: red;
+    z-index: 1;
+    opacity: 0;
+    left: 0;
+    background: linear-gradient(0deg,#ffffffff 0%,#ffffff00 100%);
+  }
+}
+
+@media (min-width:976px) {
   .c6 {
     max-height: 200px;
     overflow-y: auto;
+    overflow-x: auto;
     width: 100%;
   }
 }
@@ -837,25 +881,26 @@ exports[`Storyshots Molecules / CardWithTitle Integration: with FadedScroll of c
 
 .c8 {
   position: relative;
-  overflow-x: hidden;
-}
-
-.c12 {
-  height: 16px;
-  width: 4px;
-  position: absolute;
-  right: 0;
-  pointer-events: none;
-  bottom: 0;
 }
 
 .c9 {
-  height: 16px;
-  width: 4px;
+  height: 1px;
+  width: 1px;
   position: absolute;
   right: 0;
   pointer-events: none;
+  background-color: blue;
   top: 0;
+}
+
+.c12 {
+  height: 1px;
+  width: 1px;
+  position: absolute;
+  right: 0;
+  pointer-events: none;
+  background-color: blue;
+  bottom: 0;
 }
 
 .c4 {
@@ -911,7 +956,7 @@ exports[`Storyshots Molecules / CardWithTitle Integration: with FadedScroll of c
     position: absolute;
     left: 0;
     pointer-events: none;
-    background: transparent;
+    background: red;
     z-index: 1;
     opacity: 0;
     top: 0;
@@ -932,10 +977,52 @@ exports[`Storyshots Molecules / CardWithTitle Integration: with FadedScroll of c
     position: absolute;
     left: 0;
     pointer-events: none;
-    background: transparent;
+    background: red;
     z-index: 1;
     opacity: 0;
     bottom: 0;
+    background: linear-gradient(0deg,#ffffffff 0%,#ffffff00 100%);
+  }
+}
+
+@media (min-width:976px) {
+  .c6 {
+    position: relative;
+  }
+
+  .c6::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 52px;
+    position: absolute;
+    left: 0;
+    pointer-events: none;
+    background: red;
+    z-index: 1;
+    opacity: 0;
+    right: 0;
+    background: linear-gradient(0deg,#ffffffff 0%,#ffffff00 100%);
+  }
+}
+
+@media (min-width:976px) {
+  .c6 {
+    position: relative;
+  }
+
+  .c6::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 52px;
+    position: absolute;
+    left: 0;
+    pointer-events: none;
+    background: red;
+    z-index: 1;
+    opacity: 0;
+    left: 0;
     background: linear-gradient(0deg,#ffffffff 0%,#ffffff00 100%);
   }
 }
@@ -954,6 +1041,7 @@ exports[`Storyshots Molecules / CardWithTitle Integration: with FadedScroll of c
     -ms-flex-preferred-size: auto;
     flex-basis: auto;
     overflow-y: auto;
+    overflow-x: auto;
     width: 100%;
   }
 }
