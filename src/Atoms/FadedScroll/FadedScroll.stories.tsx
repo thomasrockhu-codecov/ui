@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { FadedScroll, List, ListItem } from '../..';
+import { FadedScroll, List, ListItem, Flexbox } from '../..';
 import docs from './FadedScroll.mdx';
 
 export default {
@@ -24,6 +24,10 @@ const FadedScrollWithHeight = styled(FadedScroll)`
 
 const StyledListItem = styled(ListItem)`
   padding: ${(p) => p.theme.spacing.unit(2)}px;
+`;
+
+const StyledFlexbox = styled(Flexbox)`
+  overflow-x: auto;
 `;
 
 const content = (
@@ -103,4 +107,56 @@ export const withTopFadeDisabled = () => (
 
 withTopFadeDisabled.story = {
   name: 'With top fade disabled',
+};
+
+const horizontalContent = [
+  'Lorem ipsum dolor ssit amet',
+  'nesciunt, nobis dnulla',
+  'Adipisci aliquifd animi',
+  'odio perferevndis quaerat quam',
+  'consequunturs delectus excepturi',
+  'incidunt iapsa libero magni',
+  'nesciuvnt, nobis nulla',
+  'consecbtetur avdipisicing elit',
+  'Adipisnci aliquid animi',
+  'consequuntur del, ectus excepturi',
+  'incidunt ipsa liabero magni',
+  'nesciunt, nobsis nulla',
+  'odio perferenddis quaerat quam',
+  'consequuntur delectusg excepturi',
+  'incirdunt ipsa libero magni',
+  'nesciunt, nobuis nulla',
+  'reiciendis totarm vel vitae voluptates',
+];
+
+export const withRightFade = () => (
+  <FadedScroll disableTopFade disableBottomFade rightFade enableMobileFade>
+    <StyledFlexbox container>
+      {horizontalContent.map((item) => (
+        <Flexbox item key={item}>
+          {item}
+        </Flexbox>
+      ))}
+    </StyledFlexbox>
+  </FadedScroll>
+);
+
+withRightFade.story = {
+  name: 'With right fade',
+};
+
+export const withLeftFade = () => (
+  <FadedScroll disableTopFade disableBottomFade leftFade enableMobileFade>
+    <StyledFlexbox container>
+      {horizontalContent.map((item) => (
+        <Flexbox item key={item}>
+          {item}
+        </Flexbox>
+      ))}
+    </StyledFlexbox>
+  </FadedScroll>
+);
+
+withLeftFade.story = {
+  name: 'With left fade',
 };

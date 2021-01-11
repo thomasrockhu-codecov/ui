@@ -1,6 +1,8 @@
 export type InternalProps = {
   intersectionTopRatio: number | null;
   intersectionBottomRatio: number | null;
+  intersectionRightRatio: number | null;
+  intersectionLeftRatio: number | null;
 };
 
 export type Props = {
@@ -10,12 +12,14 @@ export type Props = {
   maxHeight?: string | number;
   /** @default 13 units */
   fadeHeight?: string | number;
-  /** ⚠️Warning, you will most likely have double scrollbars on the page which is bad UX. This could still be valid in cases like Modal where the page scrollbar is locked when open,
+  /** ⚠️ Warning, you will most likely have double scrollbars on the page which is bad UX. This could still be valid in cases like Modal where the page scrollbar is locked when open,
    * @default false
    */
   enableMobileFade?: boolean;
   disableTopFade?: boolean;
-  ref?: React.Ref<HTMLDivElement>;
+  disableBottomFade?: boolean;
+  leftFade?: boolean;
+  rightFade?: boolean;
 };
 
 export type Component = React.FC<Props>;
