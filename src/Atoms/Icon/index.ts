@@ -51,6 +51,7 @@ import { File } from './components/File';
 import { Filter } from './components/Filter';
 import { Financial } from './components/Financial';
 import { Flag } from './components/Flag';
+import { Glasses } from './components/Glasses';
 import { Globe } from './components/Globe';
 import { Growth } from './components/Growth';
 import { Hamburger } from './components/Hamburger';
@@ -174,6 +175,7 @@ export default {
   Filter,
   Financial,
   Flag,
+  Glasses,
   Globe,
   Growth,
   Hamburger,

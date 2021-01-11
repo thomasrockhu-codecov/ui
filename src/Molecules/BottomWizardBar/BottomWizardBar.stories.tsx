@@ -114,3 +114,34 @@ export const LastStepAndLoading = () => (
     submitText="Submit"
   />
 );
+
+export const DisabledNextButton = () => (
+  <BottomWizardBar
+    isNextDisabled
+    onCancel={action('cancel')}
+    onNext={action('next')}
+    onPrevious={action('previous')}
+    onSubmit={action('submit')}
+    titleText="Title"
+    cancelText="Cancel"
+    previousText="Previous"
+    nextText="Next"
+    submitText="Submit"
+  />
+);
+
+export const DisabledSubmitButton = () => (
+  <BottomWizardBar
+    isLastStep
+    isSubmitDisabled
+    onCancel={action('cancel')}
+    onNext={action('next')}
+    onPrevious={action('previous')}
+    onSubmit={action('submit')}
+    titleText="Title"
+    cancelText="Cancel"
+    previousText="Previous"
+    nextText="Next"
+    submitText="Submit"
+  />
+);

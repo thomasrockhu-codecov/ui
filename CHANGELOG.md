@@ -1,3 +1,18 @@
+## [5.8.1](https://github.com/nordnet/ui/compare/v5.8.0...v5.8.1) (2021-01-08)
+
+
+### Bug Fixes
+
+* add disabled props for next and submit buttons in bottom wizard bar ([538910d](https://github.com/nordnet/ui/commit/538910d))
+* add stories for disabled Submit and Next buttons ([10faaa6](https://github.com/nordnet/ui/commit/10faaa6))
+
+# [5.8.0](https://github.com/nordnet/ui/compare/v5.7.1...v5.8.0) (2021-01-07)
+
+
+### Features
+
+* add Harry Potter glasses to Icon component ([ba0629a](https://github.com/nordnet/ui/commit/ba0629a))
+
 ## [5.7.1](https://github.com/nordnet/ui/compare/v5.7.0...v5.7.1) (2021-01-05)
 
 
