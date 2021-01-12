@@ -1,3 +1,18 @@
+# [5.9.0](https://github.com/nordnet/ui/compare/v5.8.2...v5.9.0) (2021-01-12)
+
+
+### Bug Fixes
+
+* 🐛 badge animation scale and direction tweaks ([9de556b](https://github.com/nordnet/ui/commit/9de556b))
+* 🐛 fix typescript error ([f99619d](https://github.com/nordnet/ui/commit/f99619d))
+* 🐛 rerender badge animation ([d8075b3](https://github.com/nordnet/ui/commit/d8075b3))
+
+
+### Features
+
+* 🎸 add example for handling new notifications ([4b52c96](https://github.com/nordnet/ui/commit/4b52c96))
+* 🎸 begun implementation ([54d859e](https://github.com/nordnet/ui/commit/54d859e))
+
 ## [5.8.2](https://github.com/nordnet/ui/compare/v5.8.1...v5.8.2) (2021-01-12)
 
 
