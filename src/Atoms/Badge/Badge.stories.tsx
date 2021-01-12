@@ -222,23 +222,63 @@ export const A11yBadgeUseCases = () => {
 };
 
 export const BadgeWithAnimation = () => {
-  const [nofifications, setNotifications] = useState(0);
+  const [notificationsExampleOne, setNotificationsExampleOne] = useState(4);
+  const [notificationsExampleTwo, setNotificationsExampleTwo] = useState(4);
+  const [isNewNotifications, setIsNewNotifications] = useState(false);
 
   return (
     <>
-      <Typography type="title2">Badge with animation</Typography>
-      <Box py={3}>
-        <StyledFlexbox container justifyContent="space-between">
-          <Button variant="secondary" onClick={() => setNotifications(nofifications - 1)}>
-            -
-          </Button>
-          <Badge key={nofifications} animateOnChange>
-            {nofifications}
-          </Badge>
-          <Button variant="secondary" onClick={() => setNotifications(nofifications + 1)}>
-            +
-          </Button>
-        </StyledFlexbox>
+      <Box pb={5}>
+        <Typography type="title2">Badge with animation</Typography>
+        <Box py={3}>
+          <StyledFlexbox container justifyContent="space-between">
+            <Button
+              variant="secondary"
+              onClick={() => setNotificationsExampleOne(notificationsExampleOne - 1)}
+            >
+              -
+            </Button>
+            <Badge key={notificationsExampleOne} animateOnChange>
+              {notificationsExampleOne}
+            </Badge>
+            <Button
+              variant="secondary"
+              onClick={() => setNotificationsExampleOne(notificationsExampleOne + 1)}
+            >
+              +
+            </Button>
+          </StyledFlexbox>
+        </Box>
+      </Box>
+      <Box pb={5}>
+        <Typography type="title2">
+          Badge with animation, but without inital animation example
+        </Typography>
+        <Box py={3}>
+          <StyledFlexbox container justifyContent="space-between">
+            <Button
+              variant="secondary"
+              onClick={() => {
+                setNotificationsExampleTwo(notificationsExampleTwo - 1);
+                setIsNewNotifications(true);
+              }}
+            >
+              -
+            </Button>
+            <Badge key={notificationsExampleTwo} animateOnChange={isNewNotifications}>
+              {notificationsExampleTwo}
+            </Badge>
+            <Button
+              variant="secondary"
+              onClick={() => {
+                setNotificationsExampleTwo(notificationsExampleTwo + 1);
+                setIsNewNotifications(true);
+              }}
+            >
+              +
+            </Button>
+          </StyledFlexbox>
+        </Box>
       </Box>
     </>
   );
