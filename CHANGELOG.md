@@ -1,3 +1,10 @@
+## [5.8.2](https://github.com/nordnet/ui/compare/v5.8.1...v5.8.2) (2021-01-12)
+
+
+### Bug Fixes
+
+* 🐛 add new phone sellingpoint icon ([c0b39a3](https://github.com/nordnet/ui/commit/c0b39a3))
+
 ## [5.8.1](https://github.com/nordnet/ui/compare/v5.8.0...v5.8.1) (2021-01-08)
 
 
