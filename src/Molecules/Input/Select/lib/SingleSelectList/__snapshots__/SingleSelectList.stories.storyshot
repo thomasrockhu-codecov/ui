@@ -496,12 +496,12 @@ exports[`Storyshots Molecules / Input / Select / SingleSelectList List with diff
   -ms-flex-direction: column;
   flex-direction: column;
   min-height: 0;
-  -webkit-transform: translateY(10px);
-  -ms-transform: translateY(10px);
-  transform: translateY(10px);
   border: 1px solid #BCBCB6;
   background-color: #FFFFFF;
   box-shadow: 0 2px 4px 0 rgba(40,40,35,0.15);
+  -webkit-transform: translateY(10px);
+  -ms-transform: translateY(10px);
+  transform: translateY(10px);
   padding-top: 12px;
   padding-bottom: 12px;
   width: 300px;
@@ -546,12 +546,12 @@ exports[`Storyshots Molecules / Input / Select / SingleSelectList List with diff
   -ms-flex-direction: column;
   flex-direction: column;
   min-height: 0;
-  -webkit-transform: translateY(10px);
-  -ms-transform: translateY(10px);
-  transform: translateY(10px);
   border: 1px solid #BCBCB6;
   background-color: #FFFFFF;
   box-shadow: 0 2px 4px 0 rgba(40,40,35,0.15);
+  -webkit-transform: translateY(10px);
+  -ms-transform: translateY(10px);
+  transform: translateY(10px);
   padding-top: 12px;
   padding-bottom: 12px;
   width: 300px;
@@ -596,12 +596,12 @@ exports[`Storyshots Molecules / Input / Select / SingleSelectList List with diff
   -ms-flex-direction: column;
   flex-direction: column;
   min-height: 0;
-  -webkit-transform: translateY(10px);
-  -ms-transform: translateY(10px);
-  transform: translateY(10px);
   border: 1px solid #BCBCB6;
   background-color: #FFFFFF;
   box-shadow: 0 2px 4px 0 rgba(40,40,35,0.15);
+  -webkit-transform: translateY(10px);
+  -ms-transform: translateY(10px);
+  transform: translateY(10px);
   padding-top: 12px;
   padding-bottom: 12px;
   width: 300px;
@@ -635,6 +635,156 @@ exports[`Storyshots Molecules / Input / Select / SingleSelectList List with diff
   border-bottom-color: #FFFFFF;
 }
 
+.c19 {
+  position: relative;
+  max-height: 200px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  min-height: 0;
+  border: 1px solid #BCBCB6;
+  background-color: #FFFFFF;
+  box-shadow: 0 2px 4px 0 rgba(40,40,35,0.15);
+  -webkit-transform: translateY(-10px);
+  -ms-transform: translateY(-10px);
+  transform: translateY(-10px);
+  padding-top: 12px;
+  padding-bottom: 12px;
+  width: 300px;
+}
+
+.c19:before {
+  right: 20px;
+  position: absolute;
+  width: 0;
+  height: 0;
+  content: '';
+  speak: none;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  top: 100%;
+  border-top: 6px solid;
+  border-top-color: #BCBCB6;
+}
+
+.c19:after {
+  right: 20px;
+  position: absolute;
+  width: 0;
+  height: 0;
+  content: '';
+  speak: none;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  top: calc(100% - 1px);
+  border-top: 6px solid;
+  border-top-color: #FFFFFF;
+}
+
+.c20 {
+  position: relative;
+  max-height: 200px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  min-height: 0;
+  border: 1px solid #BCBCB6;
+  background-color: #FFFFFF;
+  box-shadow: 0 2px 4px 0 rgba(40,40,35,0.15);
+  -webkit-transform: translateY(-10px);
+  -ms-transform: translateY(-10px);
+  transform: translateY(-10px);
+  padding-top: 12px;
+  padding-bottom: 12px;
+  width: 300px;
+}
+
+.c20:before {
+  left: 20px;
+  position: absolute;
+  width: 0;
+  height: 0;
+  content: '';
+  speak: none;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  top: 100%;
+  border-top: 6px solid;
+  border-top-color: #BCBCB6;
+}
+
+.c20:after {
+  left: 20px;
+  position: absolute;
+  width: 0;
+  height: 0;
+  content: '';
+  speak: none;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  top: calc(100% - 1px);
+  border-top: 6px solid;
+  border-top-color: #FFFFFF;
+}
+
+.c21 {
+  position: relative;
+  max-height: 200px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  min-height: 0;
+  border: 1px solid #BCBCB6;
+  background-color: #FFFFFF;
+  box-shadow: 0 2px 4px 0 rgba(40,40,35,0.15);
+  -webkit-transform: translateY(-10px);
+  -ms-transform: translateY(-10px);
+  transform: translateY(-10px);
+  padding-top: 12px;
+  padding-bottom: 12px;
+  width: 300px;
+}
+
+.c21:before {
+  left: 50%;
+  position: absolute;
+  width: 0;
+  height: 0;
+  content: '';
+  speak: none;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  top: 100%;
+  border-top: 6px solid;
+  border-top-color: #BCBCB6;
+}
+
+.c21:after {
+  left: 50%;
+  position: absolute;
+  width: 0;
+  height: 0;
+  content: '';
+  speak: none;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  top: calc(100% - 1px);
+  border-top: 6px solid;
+  border-top-color: #FFFFFF;
+}
+
 <div
   className="c0"
   direction="column"
@@ -646,7 +796,7 @@ exports[`Storyshots Molecules / Input / Select / SingleSelectList List with diff
     <div
       className="c2"
     >
-      Default (right)
+      Placement Bottom, Arrow Default (right)
     </div>
     <div>
       <div
@@ -817,7 +967,7 @@ exports[`Storyshots Molecules / Input / Select / SingleSelectList List with diff
     <div
       className="c2"
     >
-      Left
+      Placement Bottom, Arrow Left
     </div>
     <div>
       <div
@@ -979,11 +1129,515 @@ exports[`Storyshots Molecules / Input / Select / SingleSelectList List with diff
     <div
       className="c2"
     >
-      Center
+      Placement Bottom, Arrow Center
     </div>
     <div>
       <div
         className="DropdownBubble-sc-16ly6j0-0 c18"
+      >
+        <div
+          className="c4"
+        >
+          <div
+            className="c5"
+          >
+            <div
+              className="c6"
+            >
+              <div
+                className="c7"
+              />
+              <span
+                className="c8 c9"
+              >
+                <span
+                  className="c10"
+                >
+                  Default?
+                </span>
+              </span>
+              <span
+                className="c8 c11"
+              >
+                <span
+                  className="c10"
+                >
+                  First
+                </span>
+                <div
+                  className="c12"
+                >
+                  <div
+                    className="c13"
+                  >
+                    <svg
+                      aria-hidden="true"
+                      className="c14"
+                      focusable="false"
+                      preserveAspectRatio="xMidYMid meet"
+                      role="presentation"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M8.76083729 16.4144594L2.20525972 9.86336213 0 12.2093109 8.79670106 21 24 5.30897552 21.7583339 3z"
+                      />
+                    </svg>
+                  </div>
+                </div>
+              </span>
+              <span
+                className="c8 c9"
+              >
+                <span
+                  className="c10"
+                >
+                  Second
+                </span>
+              </span>
+              <span
+                className="c8 c15"
+              >
+                <span
+                  className="c10"
+                >
+                  Disabled
+                </span>
+              </span>
+              <span
+                className="c8 c15"
+              >
+                <span
+                  className="c10"
+                >
+                  Disabled
+                </span>
+              </span>
+              <span
+                className="c8 c15"
+              >
+                <span
+                  className="c10"
+                >
+                  Disabled
+                </span>
+              </span>
+              <span
+                className="c8 c15"
+              >
+                <span
+                  className="c10"
+                >
+                  Disabled
+                </span>
+              </span>
+              <span
+                className="c8 c15"
+              >
+                <span
+                  className="c10"
+                >
+                  Disabled
+                </span>
+              </span>
+              <span
+                className="c8 c15"
+              >
+                <span
+                  className="c10"
+                >
+                  Disabled
+                </span>
+              </span>
+              <span
+                className="c8 c15"
+              >
+                <span
+                  className="c10"
+                >
+                  Disabled
+                </span>
+              </span>
+              <span
+                className="c8 c15"
+              >
+                <span
+                  className="c10"
+                >
+                  Disabled
+                </span>
+              </span>
+              <span
+                className="c8 c15"
+              >
+                <span
+                  className="c10"
+                >
+                  Disabled
+                </span>
+              </span>
+              <span
+                className="c8 c15"
+              >
+                <span
+                  className="c10"
+                >
+                  Disabled
+                </span>
+              </span>
+              <div
+                className="c16"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    className="c1"
+    direction="row"
+  >
+    <div
+      className="c2"
+    >
+      Placement Top, Arrow Default (right)
+    </div>
+    <div>
+      <div
+        className="DropdownBubble-sc-16ly6j0-0 c19"
+      >
+        <div
+          className="c4"
+        >
+          <div
+            className="c5"
+          >
+            <div
+              className="c6"
+            >
+              <div
+                className="c7"
+              />
+              <span
+                className="c8 c9"
+              >
+                <span
+                  className="c10"
+                >
+                  Default?
+                </span>
+              </span>
+              <span
+                className="c8 c11"
+              >
+                <span
+                  className="c10"
+                >
+                  First
+                </span>
+                <div
+                  className="c12"
+                >
+                  <div
+                    className="c13"
+                  >
+                    <svg
+                      aria-hidden="true"
+                      className="c14"
+                      focusable="false"
+                      preserveAspectRatio="xMidYMid meet"
+                      role="presentation"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M8.76083729 16.4144594L2.20525972 9.86336213 0 12.2093109 8.79670106 21 24 5.30897552 21.7583339 3z"
+                      />
+                    </svg>
+                  </div>
+                </div>
+              </span>
+              <span
+                className="c8 c9"
+              >
+                <span
+                  className="c10"
+                >
+                  SecondSecondSecondSecondSecondSecondSecondSecondSecondSecondSecondSecondSecondSecondSecond
+                </span>
+              </span>
+              <span
+                className="c8 c15"
+              >
+                <span
+                  className="c10"
+                >
+                  Disabled
+                </span>
+              </span>
+              <span
+                className="c8 c15"
+              >
+                <span
+                  className="c10"
+                >
+                  Disabled
+                </span>
+              </span>
+              <span
+                className="c8 c15"
+              >
+                <span
+                  className="c10"
+                >
+                  Disabled
+                </span>
+              </span>
+              <span
+                className="c8 c15"
+              >
+                <span
+                  className="c10"
+                >
+                  Disabled
+                </span>
+              </span>
+              <span
+                className="c8 c15"
+              >
+                <span
+                  className="c10"
+                >
+                  Disabled
+                </span>
+              </span>
+              <span
+                className="c8 c15"
+              >
+                <span
+                  className="c10"
+                >
+                  Disabled
+                </span>
+              </span>
+              <span
+                className="c8 c15"
+              >
+                <span
+                  className="c10"
+                >
+                  Disabled
+                </span>
+              </span>
+              <span
+                className="c8 c15"
+              >
+                <span
+                  className="c10"
+                >
+                  Disabled
+                </span>
+              </span>
+              <span
+                className="c8 c15"
+              >
+                <span
+                  className="c10"
+                >
+                  Disabled
+                </span>
+              </span>
+              <span
+                className="c8 c15"
+              >
+                <span
+                  className="c10"
+                >
+                  Disabled
+                </span>
+              </span>
+              <div
+                className="c16"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    className="c1"
+    direction="row"
+  >
+    <div
+      className="c2"
+    >
+      Placement Top, Arrow Left
+    </div>
+    <div>
+      <div
+        className="DropdownBubble-sc-16ly6j0-0 c20"
+      >
+        <div
+          className="c4"
+        >
+          <div
+            className="c5"
+          >
+            <div
+              className="c6"
+            >
+              <div
+                className="c7"
+              />
+              <span
+                className="c8 c9"
+              >
+                <span
+                  className="c10"
+                >
+                  Default?
+                </span>
+              </span>
+              <span
+                className="c8 c11"
+              >
+                <span
+                  className="c10"
+                >
+                  First
+                </span>
+                <div
+                  className="c12"
+                >
+                  <div
+                    className="c13"
+                  >
+                    <svg
+                      aria-hidden="true"
+                      className="c14"
+                      focusable="false"
+                      preserveAspectRatio="xMidYMid meet"
+                      role="presentation"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M8.76083729 16.4144594L2.20525972 9.86336213 0 12.2093109 8.79670106 21 24 5.30897552 21.7583339 3z"
+                      />
+                    </svg>
+                  </div>
+                </div>
+              </span>
+              <span
+                className="c8 c15"
+              >
+                <span
+                  className="c10"
+                >
+                  Disabled
+                </span>
+              </span>
+              <span
+                className="c8 c15"
+              >
+                <span
+                  className="c10"
+                >
+                  Disabled
+                </span>
+              </span>
+              <span
+                className="c8 c15"
+              >
+                <span
+                  className="c10"
+                >
+                  Disabled
+                </span>
+              </span>
+              <span
+                className="c8 c15"
+              >
+                <span
+                  className="c10"
+                >
+                  Disabled
+                </span>
+              </span>
+              <span
+                className="c8 c15"
+              >
+                <span
+                  className="c10"
+                >
+                  Disabled
+                </span>
+              </span>
+              <span
+                className="c8 c15"
+              >
+                <span
+                  className="c10"
+                >
+                  Disabled
+                </span>
+              </span>
+              <span
+                className="c8 c15"
+              >
+                <span
+                  className="c10"
+                >
+                  Disabled
+                </span>
+              </span>
+              <span
+                className="c8 c15"
+              >
+                <span
+                  className="c10"
+                >
+                  Disabled
+                </span>
+              </span>
+              <span
+                className="c8 c15"
+              >
+                <span
+                  className="c10"
+                >
+                  Disabled
+                </span>
+              </span>
+              <span
+                className="c8 c15"
+              >
+                <span
+                  className="c10"
+                >
+                  Disabled
+                </span>
+              </span>
+              <div
+                className="c16"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    className="c1"
+    direction="row"
+  >
+    <div
+      className="c2"
+    >
+      Placement Top, Arrow Center
+    </div>
+    <div>
+      <div
+        className="DropdownBubble-sc-16ly6j0-0 c21"
       >
         <div
           className="c4"

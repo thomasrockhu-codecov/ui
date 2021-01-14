@@ -79,6 +79,7 @@ export const FormFieldOrFragment = React.forwardRef<HTMLDivElement, any>(
       size,
       labelToolTip,
       labelTooltipPosition,
+      innerRef,
       ...props
     },
     ref,
@@ -92,7 +93,12 @@ export const FormFieldOrFragment = React.forwardRef<HTMLDivElement, any>(
           onBlur={onBlur}
           onFocus={onFocus}
         >
-          <Flexbox container alignItems="center" {...(fullWidth ? { width: '100%' } : {})}>
+          <Flexbox
+            ref={innerRef}
+            container
+            alignItems="center"
+            {...(fullWidth ? { width: '100%' } : {})}
+          >
             {children}
           </Flexbox>
         </StyledRelativeDiv>
@@ -109,7 +115,14 @@ export const FormFieldOrFragment = React.forwardRef<HTMLDivElement, any>(
             {...(fullWidth ? { width: '100%' } : {})}
             ref={ref}
           >
-            <SelectWrapper onBlur={onBlur} onFocus={onFocus} size={size} {...props} tabIndex={0}>
+            <SelectWrapper
+              ref={innerRef}
+              onBlur={onBlur}
+              onFocus={onFocus}
+              size={size}
+              {...props}
+              tabIndex={0}
+            >
               {children}
               <Chevron open={open} />
             </SelectWrapper>

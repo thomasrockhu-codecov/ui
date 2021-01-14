@@ -25,6 +25,10 @@ export type Props = {
   placeholder?: string;
   label: string;
   name?: string;
+  /**
+   * @default 'bottom'
+   */
+  placement?: 'top' | 'bottom';
 
   /**
    * @default 'm'
@@ -78,6 +82,10 @@ export type Props = {
    * Use with showSearch only
    */
   searchQuery?: string;
+  /**
+   * Will use React Portal to render the dropdown if set to true
+   */
+  withPortal?: boolean;
   /**
    * Controlled mode for search field
    * Use with showSearch only
