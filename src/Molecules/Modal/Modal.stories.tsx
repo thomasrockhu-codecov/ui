@@ -1234,3 +1234,30 @@ modalMobileFullscreenWithScrollTwoButtons.parameters = {
     defaultViewport: 'iphone6',
   },
 };
+
+export const modalWithAnimationComplete = () => {
+  const Example = () => {
+    const [text, setText] = useState('initial text');
+
+    return (
+      <div>
+        <ScrollMaker />
+        <Modal
+          title="Dialog information"
+          onAnimationComplete={() => setText('animation complete text')}
+        >
+          <Box mb={2}>
+            <Typography type="primary" as="p">
+              {text}
+            </Typography>
+          </Box>
+        </Modal>
+      </div>
+    );
+  };
+  return <Example />;
+};
+
+modalWithAnimationComplete.story = {
+  name: 'Animation Complete',
+};
