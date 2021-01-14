@@ -1,3 +1,13 @@
+## [5.9.1](https://github.com/nordnet/ui/compare/v5.9.0...v5.9.1) (2021-01-14)
+
+
+### Bug Fixes
+
+* add shots with generated ids ([3a1b0c5](https://github.com/nordnet/ui/commit/3a1b0c5))
+* add storyshot ([8bce3dd](https://github.com/nordnet/ui/commit/8bce3dd))
+* expose on animation complete on modal ([80d11a4](https://github.com/nordnet/ui/commit/80d11a4))
+* trigger build ([faa49f1](https://github.com/nordnet/ui/commit/faa49f1))
+
 # [5.9.0](https://github.com/nordnet/ui/compare/v5.8.2...v5.9.0) (2021-01-12)
 
 
