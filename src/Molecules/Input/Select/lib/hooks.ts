@@ -148,7 +148,7 @@ export const usePropagateChangesThroughOnChange = (
     if (isChangeUncommitted) {
       const changes = machineState.context.uncommitedSelectedItems;
 
-      const action = changes.find(x => typeof x.onSelect === 'function');
+      const action = changes.find((x) => typeof x.onSelect === 'function');
       if (action) {
         action.onSelect();
         send(['CHANGE_COMMIT_ABORT', 'CLOSE']);
@@ -171,6 +171,7 @@ export const useOnBlurAndOnFocus = (
   formFieldRef: React.RefObject<any>,
   isFirstRender: boolean,
   selectRef: React.RefObject<any>,
+  listRef: React.RefObject<any>,
 ) => {
   const isPassive = machineState.matches('interaction.enabled.idle');
   React.useEffect(() => {
@@ -187,24 +188,29 @@ export const useOnBlurAndOnFocus = (
   }, [isActive]); // eslint-disable-line react-hooks/exhaustive-deps
 
   const handleFocus = React.useCallback(
-    _ => {
+    (_) => {
       send('FOCUS');
     },
     [send],
   );
 
   const handleBlur = React.useCallback(
-    _ => {
+    (_) => {
       setTimeout(() => {
         // Need setTimeout for activeElement to be correct
         // Using formFieldRef to check if the blur event's target
         // is within the whole component subtree
-        if (formFieldRef.current && !formFieldRef.current.contains(document.activeElement)) {
+        if (
+          formFieldRef.current &&
+          !formFieldRef.current.contains(document.activeElement) &&
+          // needed for when list is rendered inside of Portal
+          !listRef.current?.contains(document.activeElement)
+        ) {
           send('BLUR');
         }
       }, 1);
     },
-    [send, formFieldRef],
+    [send, formFieldRef, listRef],
   );
 
   return { handleFocus, handleBlur };

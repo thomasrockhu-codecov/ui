@@ -184,6 +184,439 @@ Array [
 ]
 `;
 
+exports[`Storyshots Atoms / Badge Badge With Animation 1`] = `
+Array [
+  .c7 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: #0046FF;
+  border-radius: 20px;
+  text-align: center;
+  height: 20px;
+  min-width: 20px;
+  box-sizing: border-box;
+  padding: 0 6px;
+  -webkit-animation: scale 0.5s ease-out;
+  animation: scale 0.5s ease-out;
+}
+
+.c0 {
+  padding-bottom: 20px;
+}
+
+.c2 {
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+
+.c3 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.c1 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 1.2;
+}
+
+.c6 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: inherit;
+  margin: 0;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c8 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #FFFFFF;
+  margin: 0;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.3333333333333333;
+}
+
+.c5 {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  overflow: visible;
+  text-transform: none;
+  position: relative;
+  box-sizing: border-box;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  padding: 4px 12px;
+  min-height: 32px;
+  background-color: #FFFFFF;
+  color: #0046FF;
+  border: none;
+  border-radius: 0;
+  cursor: pointer;
+}
+
+.c5,
+.c5[type='button'],
+.c5[type='reset'],
+.c5[type='submit'] {
+  -webkit-appearance: button;
+}
+
+.c5::-moz-focus-inner,
+.c5[type='button']::-moz-focus-inner,
+.c5[type='reset']::-moz-focus-inner,
+.c5[type='submit']::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+.c5:-moz-focusring,
+.c5[type='button']:-moz-focusring,
+.c5[type='reset']:-moz-focusring,
+.c5[type='submit']:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+.c5::before {
+  content: '';
+  display: block;
+  position: absolute;
+  border: 2px solid #0046FF;
+  top: 0;
+  left: 0;
+  width: calc(100% - 4px);
+  height: calc(100% - 4px);
+}
+
+.c5:hover {
+  color: hsl(223.5,100%,40%);
+}
+
+.c5:hover::before {
+  border-color: hsl(223.5,100%,40%);
+}
+
+.c5:active {
+  color: hsl(223.5,100%,35%);
+}
+
+.c5:active::before {
+  border-color: hsl(223.5,100%,35%);
+}
+
+.c4 {
+  width: 200px;
+}
+
+@media (min-width:760px) {
+  .c1 {
+    font-size: 24px;
+    line-height: 1.1666666666666667;
+  }
+}
+
+<div
+    className="c0"
+  >
+    <span
+      className="c1"
+    >
+      Badge with animation
+    </span>
+    <div
+      className="c2"
+    >
+      <div
+        className="c3 c4"
+      >
+        <button
+          className="NormalizedButton__Button-ey7f5x-0 c5"
+          onClick={[Function]}
+          type="button"
+        >
+          <span>
+            <span
+              className="c6"
+            >
+              -
+            </span>
+          </span>
+        </button>
+        <span
+          className="c7"
+          size={5}
+        >
+          <span
+            className="c8"
+          >
+            4
+          </span>
+        </span>
+        <button
+          className="NormalizedButton__Button-ey7f5x-0 c5"
+          onClick={[Function]}
+          type="button"
+        >
+          <span>
+            <span
+              className="c6"
+            >
+              +
+            </span>
+          </span>
+        </button>
+      </div>
+    </div>
+  </div>,
+  .c7 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: #0046FF;
+  border-radius: 20px;
+  text-align: center;
+  height: 20px;
+  min-width: 20px;
+  box-sizing: border-box;
+  padding: 0 6px;
+}
+
+.c0 {
+  padding-bottom: 20px;
+}
+
+.c2 {
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+
+.c3 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.c1 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 1.2;
+}
+
+.c6 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: inherit;
+  margin: 0;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c8 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #FFFFFF;
+  margin: 0;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.3333333333333333;
+}
+
+.c5 {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  overflow: visible;
+  text-transform: none;
+  position: relative;
+  box-sizing: border-box;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  padding: 4px 12px;
+  min-height: 32px;
+  background-color: #FFFFFF;
+  color: #0046FF;
+  border: none;
+  border-radius: 0;
+  cursor: pointer;
+}
+
+.c5,
+.c5[type='button'],
+.c5[type='reset'],
+.c5[type='submit'] {
+  -webkit-appearance: button;
+}
+
+.c5::-moz-focus-inner,
+.c5[type='button']::-moz-focus-inner,
+.c5[type='reset']::-moz-focus-inner,
+.c5[type='submit']::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+.c5:-moz-focusring,
+.c5[type='button']:-moz-focusring,
+.c5[type='reset']:-moz-focusring,
+.c5[type='submit']:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+.c5::before {
+  content: '';
+  display: block;
+  position: absolute;
+  border: 2px solid #0046FF;
+  top: 0;
+  left: 0;
+  width: calc(100% - 4px);
+  height: calc(100% - 4px);
+}
+
+.c5:hover {
+  color: hsl(223.5,100%,40%);
+}
+
+.c5:hover::before {
+  border-color: hsl(223.5,100%,40%);
+}
+
+.c5:active {
+  color: hsl(223.5,100%,35%);
+}
+
+.c5:active::before {
+  border-color: hsl(223.5,100%,35%);
+}
+
+.c4 {
+  width: 200px;
+}
+
+@media (min-width:760px) {
+  .c1 {
+    font-size: 24px;
+    line-height: 1.1666666666666667;
+  }
+}
+
+<div
+    className="c0"
+  >
+    <span
+      className="c1"
+    >
+      Badge with animation, but without inital animation example
+    </span>
+    <div
+      className="c2"
+    >
+      <div
+        className="c3 c4"
+      >
+        <button
+          className="NormalizedButton__Button-ey7f5x-0 c5"
+          onClick={[Function]}
+          type="button"
+        >
+          <span>
+            <span
+              className="c6"
+            >
+              -
+            </span>
+          </span>
+        </button>
+        <span
+          className="c7"
+          size={5}
+        >
+          <span
+            className="c8"
+          >
+            4
+          </span>
+        </span>
+        <button
+          className="NormalizedButton__Button-ey7f5x-0 c5"
+          onClick={[Function]}
+          type="button"
+        >
+          <span>
+            <span
+              className="c6"
+            >
+              +
+            </span>
+          </span>
+        </button>
+      </div>
+    </div>
+  </div>,
+]
+`;
+
 exports[`Storyshots Atoms / Badge Badge With Number Limit 1`] = `
 Array [
   .c0 {

@@ -1,3 +1,35 @@
+## [5.9.1](https://github.com/nordnet/ui/compare/v5.9.0...v5.9.1) (2021-01-14)
+
+
+### Bug Fixes
+
+* add shots with generated ids ([3a1b0c5](https://github.com/nordnet/ui/commit/3a1b0c5))
+* add storyshot ([8bce3dd](https://github.com/nordnet/ui/commit/8bce3dd))
+* expose on animation complete on modal ([80d11a4](https://github.com/nordnet/ui/commit/80d11a4))
+* trigger build ([faa49f1](https://github.com/nordnet/ui/commit/faa49f1))
+
+# [5.9.0](https://github.com/nordnet/ui/compare/v5.8.2...v5.9.0) (2021-01-12)
+
+
+### Bug Fixes
+
+* 🐛 badge animation scale and direction tweaks ([9de556b](https://github.com/nordnet/ui/commit/9de556b))
+* 🐛 fix typescript error ([f99619d](https://github.com/nordnet/ui/commit/f99619d))
+* 🐛 rerender badge animation ([d8075b3](https://github.com/nordnet/ui/commit/d8075b3))
+
+
+### Features
+
+* 🎸 add example for handling new notifications ([4b52c96](https://github.com/nordnet/ui/commit/4b52c96))
+* 🎸 begun implementation ([54d859e](https://github.com/nordnet/ui/commit/54d859e))
+
+## [5.8.2](https://github.com/nordnet/ui/compare/v5.8.1...v5.8.2) (2021-01-12)
+
+
+### Bug Fixes
+
+* 🐛 add new phone sellingpoint icon ([c0b39a3](https://github.com/nordnet/ui/commit/c0b39a3))
+
 ## [5.8.1](https://github.com/nordnet/ui/compare/v5.8.0...v5.8.1) (2021-01-08)
 
 

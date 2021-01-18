@@ -1220,6 +1220,327 @@ exports[`Storyshots Molecules / Input / Select Auto Focus 1`] = `
 </div>
 `;
 
+exports[`Storyshots Molecules / Input / Select Auto Placement 1`] = `
+.c12 {
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+.c2 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c10 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.c4 {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.c15 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 20px;
+  height: 20px;
+  fill: #282823;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
+}
+
+.c8 {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  overflow: visible;
+  text-transform: none;
+}
+
+.c8,
+.c8[type='button'],
+.c8[type='reset'],
+.c8[type='submit'] {
+  -webkit-appearance: button;
+}
+
+.c8::-moz-focus-inner,
+.c8[type='button']::-moz-focus-inner,
+.c8[type='reset']::-moz-focus-inner,
+.c8[type='submit']::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+.c8:-moz-focusring,
+.c8[type='button']:-moz-focusring,
+.c8[type='reset']:-moz-focusring,
+.c8[type='submit']:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+.c5 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #6E6E69;
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c7 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c16 {
+  -webkit-transform: translateY(-50%) rotate(0);
+  -ms-transform: translateY(-50%) rotate(0);
+  transform: translateY(-50%) rotate(0);
+  -webkit-transform-origin: center center;
+  -ms-transform-origin: center center;
+  transform-origin: center center;
+  -webkit-transition: -webkit-transform 0.16s ease-out;
+  -webkit-transition: transform 0.16s ease-out;
+  transition: transform 0.16s ease-out;
+  position: absolute;
+  height: 8px;
+  top: 50%;
+  right: 4px;
+  pointer-events: none;
+}
+
+.c1 {
+  position: relative;
+  display: block;
+  width: auto;
+}
+
+.c6 {
+  height: 40px;
+  outline: none;
+  border: 1px solid #BCBCB6;
+  position: relative;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.c6:hover {
+  border-color: #4B4B46;
+}
+
+.c6:focus-within {
+  border-color: #0046FF;
+}
+
+.c6.focus-within {
+  border-color: #0046FF;
+}
+
+.c11 {
+  height: 100%;
+  width: 100%;
+}
+
+.c9 {
+  background: transparent;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  padding: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  border: 0;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  outline: 0;
+  text-align: initial;
+}
+
+.c9:active {
+  color: inherit;
+}
+
+.c14 {
+  width: 100%;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  text-align: left;
+}
+
+.c13 {
+  width: calc(100% - 20px - 4px);
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c0 {
+  display: none;
+}
+
+.c3 {
+  width: 200px;
+  display: inline-block;
+}
+
+<div>
+  <h1>
+    Open the Select and scroll down
+  </h1>
+  <div
+    style={
+      Object {
+        "alignItems": "center",
+        "display": "flex",
+        "height": "160vh",
+      }
+    }
+  >
+    <div>
+      <select
+        aria-hidden="true"
+        className="c0"
+        disabled={false}
+        onChange={[Function]}
+      >
+        <option
+          label="Select account"
+          value=""
+        />
+        <option
+          label="First account"
+          value="1"
+        />
+        <option
+          label="Second acc 2"
+          value="2"
+        />
+        <option
+          label="Third 3"
+          value="3"
+        />
+      </select>
+      <div
+        className="c1"
+      >
+        <div
+          className="c2"
+        >
+          <div
+            className="c3"
+          >
+            <label
+              className="c4"
+              hidden={false}
+              htmlFor="no-scroll-select"
+            >
+              <span
+                className="c5"
+              >
+                <div
+                  className="c2"
+                >
+                  User account 
+                </div>
+              </span>
+            </label>
+            <div
+              className="c6"
+              disabled={false}
+              label="User account"
+              onBlur={[Function]}
+              onFocus={[Function]}
+              tabIndex={0}
+            >
+              <span
+                className="c7"
+              >
+                <button
+                  aria-expanded="false"
+                  aria-haspopup="listbox"
+                  aria-label="User account: Select account"
+                  className="c8 c9"
+                  data-testid="input-select-button"
+                  disabled={false}
+                  form=""
+                  id="no-scroll-select"
+                  onClick={[Function]}
+                  tabIndex={0}
+                  type="button"
+                >
+                  <div
+                    aria-hidden="true"
+                    className="c10 c11"
+                  >
+                    <div
+                      className="c12 c13"
+                    >
+                      <span
+                        className="c14"
+                      >
+                        Select account
+                      </span>
+                    </div>
+                  </div>
+                </button>
+              </span>
+              <svg
+                aria-hidden="true"
+                className="c15 c16"
+                focusable="false"
+                open={false}
+                preserveAspectRatio="xMidYMid meet"
+                role="presentation"
+                viewBox="0 0 24 24"
+              >
+                <polygon
+                  points="19.969 4 24 8.027 12 20 0 8.027 4.031 4 12 11.952"
+                />
+              </svg>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
 exports[`Storyshots Molecules / Input / Select Changes From Props 1`] = `
 Array [
   <button
@@ -4925,8 +5246,29 @@ exports[`Storyshots Molecules / Input / Select Hide Label 1`] = `
 </div>
 `;
 
-exports[`Storyshots Molecules / Input / Select Link With Dropdown And Search Box Multiselect 1`] = `
-.c2 {
+exports[`Storyshots Molecules / Input / Select Inside Modal 1`] = `
+.c15 {
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+.c0 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c5 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -4938,7 +5280,7 @@ exports[`Storyshots Molecules / Input / Select Link With Dropdown And Search Box
   align-items: center;
 }
 
-.c6 {
+.c13 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -4946,7 +5288,503 @@ exports[`Storyshots Molecules / Input / Select Link With Dropdown And Search Box
   display: flex;
 }
 
+.c7 {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.c18 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 20px;
+  height: 20px;
+  fill: #282823;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
+}
+
+.c21 {
+  stroke: #282823;
+}
+
+.c11 {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  overflow: visible;
+  text-transform: none;
+}
+
+.c11,
+.c11[type='button'],
+.c11[type='reset'],
+.c11[type='submit'] {
+  -webkit-appearance: button;
+}
+
+.c11::-moz-focus-inner,
+.c11[type='button']::-moz-focus-inner,
+.c11[type='reset']::-moz-focus-inner,
+.c11[type='submit']::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+.c11:-moz-focusring,
+.c11[type='button']:-moz-focusring,
+.c11[type='reset']:-moz-focusring,
+.c11[type='submit']:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+.c8 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #6E6E69;
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c10 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c19 {
+  -webkit-transform: translateY(-50%) rotate(0);
+  -ms-transform: translateY(-50%) rotate(0);
+  transform: translateY(-50%) rotate(0);
+  -webkit-transform-origin: center center;
+  -ms-transform-origin: center center;
+  transform-origin: center center;
+  -webkit-transition: -webkit-transform 0.16s ease-out;
+  -webkit-transition: transform 0.16s ease-out;
+  transition: transform 0.16s ease-out;
+  position: absolute;
+  height: 8px;
+  top: 50%;
+  right: 4px;
+  pointer-events: none;
+}
+
+.c4 {
+  position: relative;
+  display: block;
+  width: auto;
+}
+
 .c9 {
+  height: 40px;
+  outline: none;
+  border: 1px solid #BCBCB6;
+  position: relative;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.c9:hover {
+  border-color: #4B4B46;
+}
+
+.c9:focus-within {
+  border-color: #0046FF;
+}
+
+.c9.focus-within {
+  border-color: #0046FF;
+}
+
+.c14 {
+  height: 100%;
+  width: 100%;
+}
+
+.c12 {
+  background: transparent;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  padding: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  border: 0;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  outline: 0;
+  text-align: initial;
+}
+
+.c12:active {
+  color: inherit;
+}
+
+.c17 {
+  width: 100%;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  text-align: left;
+}
+
+.c16 {
+  width: calc(100% - 20px - 4px);
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c3 {
+  display: none;
+}
+
+.c6 {
+  width: 200px;
+  display: inline-block;
+}
+
+.c1 {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 500;
+}
+
+.c20 {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  overflow: visible;
+  text-transform: none;
+  display: block;
+  background: none;
+  padding: 0;
+  border: 0;
+  cursor: pointer;
+  position: absolute;
+  -webkit-transform: translateY(3px);
+  -ms-transform: translateY(3px);
+  transform: translateY(3px);
+  top: 20px;
+  right: 12px;
+}
+
+.c20,
+.c20[type='button'],
+.c20[type='reset'],
+.c20[type='submit'] {
+  -webkit-appearance: button;
+}
+
+.c20::-moz-focus-inner,
+.c20[type='button']::-moz-focus-inner,
+.c20[type='reset']::-moz-focus-inner,
+.c20[type='submit']::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+.c20:-moz-focusring,
+.c20[type='button']:-moz-focusring,
+.c20[type='reset']:-moz-focusring,
+.c20[type='submit']:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+.c2 {
+  padding-bottom: 16px;
+  padding-right: 28px;
+  min-height: 20px;
+  -webkit-flex: 0 0 auto;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+}
+
+@media (min-width:760px) {
+  .c1 {
+    background-color: rgba(110,110,105,0.63);
+  }
+}
+
+@media (max-width:759px) {
+
+}
+
+@media (min-width:760px) {
+
+}
+
+@media (min-width:976px) {
+
+}
+
+@media (min-width:1280px) {
+
+}
+
+@media (min-width:760px) {
+  .c20 {
+    top: 40px;
+    right: 40px;
+  }
+}
+
+<portal-dummy>
+  <div
+    data-focus-guard={true}
+    style={
+      Object {
+        "height": "0px",
+        "left": "1px",
+        "overflow": "hidden",
+        "padding": 0,
+        "position": "fixed",
+        "top": "1px",
+        "width": "1px",
+      }
+    }
+    tabIndex={0}
+  />
+  <div
+    data-focus-guard={true}
+    style={
+      Object {
+        "height": "0px",
+        "left": "1px",
+        "overflow": "hidden",
+        "padding": 0,
+        "position": "fixed",
+        "top": "1px",
+        "width": "1px",
+      }
+    }
+    tabIndex={1}
+  />
+  <div
+    data-focus-lock-disabled={false}
+    onBlur={[Function]}
+    onFocus={[Function]}
+  >
+    <div
+      onScrollCapture={[Function]}
+      onTouchMoveCapture={[Function]}
+      onWheelCapture={[Function]}
+    >
+      <div
+        className="c0 c1"
+        fullScreenMobile={true}
+        onClick={[Function]}
+      >
+        <div>
+          <div
+            className="c2"
+          />
+          <div>
+            <select
+              aria-hidden="true"
+              className="c3"
+              onChange={[Function]}
+            >
+              <option
+                label="Select account"
+                value=""
+              />
+              <option
+                label="First account"
+                value="1"
+              />
+              <option
+                label="Second acc 2"
+                value="2"
+              />
+              <option
+                label="Third 3"
+                value="3"
+              />
+            </select>
+            <div
+              className="c4"
+            >
+              <div
+                className="c5"
+              >
+                <div
+                  className="c6"
+                >
+                  <label
+                    className="c7"
+                    hidden={false}
+                    htmlFor="no-scroll-select"
+                  >
+                    <span
+                      className="c8"
+                    >
+                      <div
+                        className="c5"
+                      >
+                        User account 
+                      </div>
+                    </span>
+                  </label>
+                  <div
+                    className="c9"
+                    label="User account"
+                    onBlur={[Function]}
+                    onFocus={[Function]}
+                    tabIndex={0}
+                  >
+                    <span
+                      className="c10"
+                    >
+                      <button
+                        aria-expanded="false"
+                        aria-haspopup="listbox"
+                        aria-label="User account: Select account"
+                        className="c11 c12"
+                        data-testid="input-select-button"
+                        form=""
+                        id="no-scroll-select"
+                        onClick={[Function]}
+                        tabIndex={0}
+                        type="button"
+                      >
+                        <div
+                          aria-hidden="true"
+                          className="c13 c14"
+                        >
+                          <div
+                            className="c15 c16"
+                          >
+                            <span
+                              className="c17"
+                            >
+                              Select account
+                            </span>
+                          </div>
+                        </div>
+                      </button>
+                    </span>
+                    <svg
+                      aria-hidden="true"
+                      className="c18 c19"
+                      focusable="false"
+                      open={false}
+                      preserveAspectRatio="xMidYMid meet"
+                      role="presentation"
+                      viewBox="0 0 24 24"
+                    >
+                      <polygon
+                        points="19.969 4 24 8.027 12 20 0 8.027 4.031 4 12 11.952"
+                      />
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button
+            className="c20"
+            fullScreenMobile={true}
+            onClick={[Function]}
+            type="button"
+          >
+            <svg
+              aria-hidden="false"
+              className="c18"
+              focusable="false"
+              preserveAspectRatio="xMidYMid meet"
+              role="img"
+              viewBox="0 0 24 24"
+            >
+              <path
+                className="c21"
+                d="m 1 1 l 22 22 m -22 0 l 22 -22"
+                strokeWidth={2}
+              />
+              <title>
+                Close this modal
+              </title>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    data-focus-guard={true}
+    style={
+      Object {
+        "height": "0px",
+        "left": "1px",
+        "overflow": "hidden",
+        "padding": 0,
+        "position": "fixed",
+        "top": "1px",
+        "width": "1px",
+      }
+    }
+    tabIndex={0}
+  />
+</portal-dummy>
+`;
+
+exports[`Storyshots Molecules / Input / Select Link With Dropdown And Search Box Multiselect 1`] = `
+.c0 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+}
+
+.c3 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c7 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.c10 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -4960,16 +5798,16 @@ exports[`Storyshots Molecules / Input / Select Link With Dropdown And Search Box
   margin-right: -2px;
 }
 
-.c9 > * {
+.c10 > * {
   padding-left: 2px;
   padding-right: 2px;
 }
 
-.c9 > *:not(:first-child) {
+.c10 > *:not(:first-child) {
   padding-top: 0;
 }
 
-.c10 {
+.c11 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -4981,11 +5819,11 @@ exports[`Storyshots Molecules / Input / Select Link With Dropdown And Search Box
   align-items: center;
 }
 
-.c12 {
+.c13 {
   box-sizing: border-box;
 }
 
-.c11 {
+.c12 {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -5000,7 +5838,7 @@ exports[`Storyshots Molecules / Input / Select Link With Dropdown And Search Box
   vertical-align: middle;
 }
 
-.c4 {
+.c5 {
   font-family: inherit;
   font-size: 100%;
   line-height: 1.15;
@@ -5009,29 +5847,29 @@ exports[`Storyshots Molecules / Input / Select Link With Dropdown And Search Box
   text-transform: none;
 }
 
-.c4,
-.c4[type='button'],
-.c4[type='reset'],
-.c4[type='submit'] {
+.c5,
+.c5[type='button'],
+.c5[type='reset'],
+.c5[type='submit'] {
   -webkit-appearance: button;
 }
 
-.c4::-moz-focus-inner,
-.c4[type='button']::-moz-focus-inner,
-.c4[type='reset']::-moz-focus-inner,
-.c4[type='submit']::-moz-focus-inner {
+.c5::-moz-focus-inner,
+.c5[type='button']::-moz-focus-inner,
+.c5[type='reset']::-moz-focus-inner,
+.c5[type='submit']::-moz-focus-inner {
   border-style: none;
   padding: 0;
 }
 
-.c4:-moz-focusring,
-.c4[type='button']:-moz-focusring,
-.c4[type='reset']:-moz-focusring,
-.c4[type='submit']:-moz-focusring {
+.c5:-moz-focusring,
+.c5[type='button']:-moz-focusring,
+.c5[type='reset']:-moz-focusring,
+.c5[type='submit']:-moz-focusring {
   outline: 1px dotted ButtonText;
 }
 
-.c3 {
+.c4 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
   margin: 0;
@@ -5040,7 +5878,7 @@ exports[`Storyshots Molecules / Input / Select Link With Dropdown And Search Box
   line-height: 1.4285714285714286;
 }
 
-.c13 {
+.c14 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
   margin: 0;
@@ -5049,18 +5887,18 @@ exports[`Storyshots Molecules / Input / Select Link With Dropdown And Search Box
   line-height: 1.3333333333333333;
 }
 
-.c1 {
+.c2 {
   position: relative;
   display: block;
   width: auto;
 }
 
-.c7 {
+.c8 {
   height: 100%;
   width: 100%;
 }
 
-.c5 {
+.c6 {
   background: transparent;
   width: 100%;
   height: 100%;
@@ -5073,15 +5911,15 @@ exports[`Storyshots Molecules / Input / Select Link With Dropdown And Search Box
   border: 0;
 }
 
-.c5:active {
+.c6:active {
   color: inherit;
 }
 
-.c0 {
+.c1 {
   display: none;
 }
 
-.c8 {
+.c9 {
   font-family: inherit;
   font-size: 100%;
   line-height: 1.15;
@@ -5099,169 +5937,185 @@ exports[`Storyshots Molecules / Input / Select Link With Dropdown And Search Box
   font-weight: inherit;
 }
 
-.c8,
-.c8[type='button'],
-.c8[type='reset'],
-.c8[type='submit'] {
+.c9,
+.c9[type='button'],
+.c9[type='reset'],
+.c9[type='submit'] {
   -webkit-appearance: button;
 }
 
-.c8::-moz-focus-inner,
-.c8[type='button']::-moz-focus-inner,
-.c8[type='reset']::-moz-focus-inner,
-.c8[type='submit']::-moz-focus-inner {
+.c9::-moz-focus-inner,
+.c9[type='button']::-moz-focus-inner,
+.c9[type='reset']::-moz-focus-inner,
+.c9[type='submit']::-moz-focus-inner {
   border-style: none;
   padding: 0;
 }
 
-.c8:-moz-focusring,
-.c8[type='button']:-moz-focusring,
-.c8[type='reset']:-moz-focusring,
-.c8[type='submit']:-moz-focusring {
+.c9:-moz-focusring,
+.c9[type='button']:-moz-focusring,
+.c9[type='reset']:-moz-focusring,
+.c9[type='submit']:-moz-focusring {
   outline: 1px dotted ButtonText;
 }
 
-.c8:hover {
+.c9:hover {
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 
-<div>
-  <select
-    aria-hidden="true"
-    className="c0"
-    disabled={false}
-    multiple={true}
-    onChange={[Function]}
-    value={Array []}
-  >
-    <option
-      label="Select account"
-      value=""
-    />
-    <option
-      label="First account"
-      value="1"
-    />
-    <option
-      label="Second acc 2"
-      value="2"
-    />
-    <option
-      label="Third 3"
-      value="3"
-    />
-    <option
-      label="First account1"
-      value="10"
-    />
-    <option
-      label="Second acc 23"
-      value="22"
-    />
-    <option
-      label="Third 35"
-      value="34"
-    />
-    <option
-      label="First account7"
-      value="16"
-    />
-    <option
-      label="Second acc 29"
-      value="28"
-    />
-    <option
-      label="Third 311"
-      value="310"
-    />
-    <option
-      label="First account13"
-      value="112"
-    />
-    <option
-      label="Second acc 215"
-      value="214"
-    />
-    <option
-      label="Third 317"
-      value="316"
-    />
-  </select>
-  <div
-    className="c1"
-    onBlur={[Function]}
-    onFocus={[Function]}
-    width="300px"
-  >
+<div
+  className="c0"
+>
+  <div>
+    <select
+      aria-hidden="true"
+      className="c1"
+      disabled={false}
+      multiple={true}
+      onChange={[Function]}
+      value={Array []}
+    >
+      <option
+        label="Select account"
+        value=""
+      />
+      <option
+        label="First account"
+        value="1"
+      />
+      <option
+        label="Second acc 2"
+        value="2"
+      />
+      <option
+        label="Third 3"
+        value="3"
+      />
+      <option
+        label="First account1"
+        value="10"
+      />
+      <option
+        label="Second acc 23"
+        value="22"
+      />
+      <option
+        label="Third 35"
+        value="34"
+      />
+      <option
+        label="First account7"
+        value="16"
+      />
+      <option
+        label="Second acc 29"
+        value="28"
+      />
+      <option
+        label="Third 311"
+        value="310"
+      />
+      <option
+        label="First account13"
+        value="112"
+      />
+      <option
+        label="Second acc 215"
+        value="214"
+      />
+      <option
+        label="Third 317"
+        value="316"
+      />
+    </select>
     <div
       className="c2"
+      onBlur={[Function]}
+      onFocus={[Function]}
+      width="300px"
     >
-      <span
+      <div
         className="c3"
       >
-        <button
-          aria-expanded="false"
-          aria-haspopup="listbox"
-          aria-label="User account: Select account"
-          className="c4 c5"
-          data-testid="input-select-button"
-          disabled={false}
-          form=""
-          id="input-select-search-inside"
-          onClick={[Function]}
-          tabIndex={0}
-          type="button"
+        <span
+          className="c4"
         >
-          <div
-            aria-hidden="true"
-            className="c6 c7"
+          <button
+            aria-expanded="false"
+            aria-haspopup="listbox"
+            aria-label="User account: Select account"
+            className="c5 c6"
+            data-testid="input-select-button"
+            disabled={false}
+            form=""
+            id="input-select-search-inside"
+            onClick={[Function]}
+            tabIndex={0}
+            type="button"
           >
             <div
-              className="c8"
-              onClick={[Function]}
-              type="button"
+              aria-hidden="true"
+              className="c7 c8"
             >
               <div
                 className="c9"
+                onClick={[Function]}
+                type="button"
               >
                 <div
                   className="c10"
                 >
-                  <svg
-                    aria-hidden="true"
+                  <div
                     className="c11"
-                    focusable="false"
-                    preserveAspectRatio="xMidYMid meet"
-                    role="presentation"
-                    viewBox="0 0 24 24"
                   >
-                    <path
-                      d="M12,0 C18.627417,0 24,5.372583 24,12 C24,18.627417 18.627417,24 12,24 C5.372583,24 0,18.627417 0,12 C0,5.372583 5.372583,0 12,0 Z M12,2 C6.4771525,2 2,6.4771525 2,12 C2,17.5228475 6.4771525,22 12,22 C17.5228475,22 22,17.5228475 22,12 C22,6.4771525 17.5228475,2 12,2 Z M13,4 L13,11 L20,11 L20,13 L13,13 L13,20 L11,20 L11,12.999 L4,13 L4,11 L11,10.999 L11,4 L13,4 Z"
-                    />
-                  </svg>
-                </div>
-                <div
-                  className="c12"
-                >
-                  <span
+                    <svg
+                      aria-hidden="true"
+                      className="c12"
+                      focusable="false"
+                      preserveAspectRatio="xMidYMid meet"
+                      role="presentation"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M12,0 C18.627417,0 24,5.372583 24,12 C24,18.627417 18.627417,24 12,24 C5.372583,24 0,18.627417 0,12 C0,5.372583 5.372583,0 12,0 Z M12,2 C6.4771525,2 2,6.4771525 2,12 C2,17.5228475 6.4771525,22 12,22 C17.5228475,22 22,17.5228475 22,12 C22,6.4771525 17.5228475,2 12,2 Z M13,4 L13,11 L20,11 L20,13 L13,13 L13,20 L11,20 L11,12.999 L4,13 L4,11 L11,10.999 L11,4 L13,4 Z"
+                      />
+                    </svg>
+                  </div>
+                  <div
                     className="c13"
                   >
-                    Select account
-                  </span>
+                    <span
+                      className="c14"
+                    >
+                      Select account
+                    </span>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-        </button>
-      </span>
+          </button>
+        </span>
+      </div>
     </div>
   </div>
 </div>
 `;
 
 exports[`Storyshots Molecules / Input / Select Link With Dropdown And Search Box Secondary 1`] = `
-.c2 {
+.c0 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+}
+
+.c3 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -5273,7 +6127,7 @@ exports[`Storyshots Molecules / Input / Select Link With Dropdown And Search Box
   align-items: center;
 }
 
-.c6 {
+.c7 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -5281,7 +6135,7 @@ exports[`Storyshots Molecules / Input / Select Link With Dropdown And Search Box
   display: flex;
 }
 
-.c9 {
+.c10 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -5295,16 +6149,16 @@ exports[`Storyshots Molecules / Input / Select Link With Dropdown And Search Box
   margin-right: -2px;
 }
 
-.c9 > * {
+.c10 > * {
   padding-left: 2px;
   padding-right: 2px;
 }
 
-.c9 > *:not(:first-child) {
+.c10 > *:not(:first-child) {
   padding-top: 0;
 }
 
-.c10 {
+.c11 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -5316,11 +6170,11 @@ exports[`Storyshots Molecules / Input / Select Link With Dropdown And Search Box
   align-items: center;
 }
 
-.c12 {
+.c13 {
   box-sizing: border-box;
 }
 
-.c11 {
+.c12 {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -5335,7 +6189,7 @@ exports[`Storyshots Molecules / Input / Select Link With Dropdown And Search Box
   vertical-align: middle;
 }
 
-.c4 {
+.c5 {
   font-family: inherit;
   font-size: 100%;
   line-height: 1.15;
@@ -5344,29 +6198,29 @@ exports[`Storyshots Molecules / Input / Select Link With Dropdown And Search Box
   text-transform: none;
 }
 
-.c4,
-.c4[type='button'],
-.c4[type='reset'],
-.c4[type='submit'] {
+.c5,
+.c5[type='button'],
+.c5[type='reset'],
+.c5[type='submit'] {
   -webkit-appearance: button;
 }
 
-.c4::-moz-focus-inner,
-.c4[type='button']::-moz-focus-inner,
-.c4[type='reset']::-moz-focus-inner,
-.c4[type='submit']::-moz-focus-inner {
+.c5::-moz-focus-inner,
+.c5[type='button']::-moz-focus-inner,
+.c5[type='reset']::-moz-focus-inner,
+.c5[type='submit']::-moz-focus-inner {
   border-style: none;
   padding: 0;
 }
 
-.c4:-moz-focusring,
-.c4[type='button']:-moz-focusring,
-.c4[type='reset']:-moz-focusring,
-.c4[type='submit']:-moz-focusring {
+.c5:-moz-focusring,
+.c5[type='button']:-moz-focusring,
+.c5[type='reset']:-moz-focusring,
+.c5[type='submit']:-moz-focusring {
   outline: 1px dotted ButtonText;
 }
 
-.c3 {
+.c4 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
   margin: 0;
@@ -5375,18 +6229,18 @@ exports[`Storyshots Molecules / Input / Select Link With Dropdown And Search Box
   line-height: 1.4285714285714286;
 }
 
-.c1 {
+.c2 {
   position: relative;
   display: block;
   width: auto;
 }
 
-.c7 {
+.c8 {
   height: 100%;
   width: 100%;
 }
 
-.c5 {
+.c6 {
   background: transparent;
   width: 100%;
   height: 100%;
@@ -5399,15 +6253,15 @@ exports[`Storyshots Molecules / Input / Select Link With Dropdown And Search Box
   border: 0;
 }
 
-.c5:active {
+.c6:active {
   color: inherit;
 }
 
-.c0 {
+.c1 {
   display: none;
 }
 
-.c8 {
+.c9 {
   font-family: inherit;
   font-size: 100%;
   line-height: 1.15;
@@ -5425,167 +6279,183 @@ exports[`Storyshots Molecules / Input / Select Link With Dropdown And Search Box
   font-weight: inherit;
 }
 
-.c8,
-.c8[type='button'],
-.c8[type='reset'],
-.c8[type='submit'] {
+.c9,
+.c9[type='button'],
+.c9[type='reset'],
+.c9[type='submit'] {
   -webkit-appearance: button;
 }
 
-.c8::-moz-focus-inner,
-.c8[type='button']::-moz-focus-inner,
-.c8[type='reset']::-moz-focus-inner,
-.c8[type='submit']::-moz-focus-inner {
+.c9::-moz-focus-inner,
+.c9[type='button']::-moz-focus-inner,
+.c9[type='reset']::-moz-focus-inner,
+.c9[type='submit']::-moz-focus-inner {
   border-style: none;
   padding: 0;
 }
 
-.c8:-moz-focusring,
-.c8[type='button']:-moz-focusring,
-.c8[type='reset']:-moz-focusring,
-.c8[type='submit']:-moz-focusring {
+.c9:-moz-focusring,
+.c9[type='button']:-moz-focusring,
+.c9[type='reset']:-moz-focusring,
+.c9[type='submit']:-moz-focusring {
   outline: 1px dotted ButtonText;
 }
 
-.c8:hover {
+.c9:hover {
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 
-<div>
-  <select
-    aria-hidden="true"
-    className="c0"
-    disabled={false}
-    onChange={[Function]}
-  >
-    <option
-      label="Select account"
-      value=""
-    />
-    <option
-      label="First account"
-      value="1"
-    />
-    <option
-      label="Second acc 2"
-      value="2"
-    />
-    <option
-      label="Third 3"
-      value="3"
-    />
-    <option
-      label="First account1"
-      value="10"
-    />
-    <option
-      label="Second acc 23"
-      value="22"
-    />
-    <option
-      label="Third 35"
-      value="34"
-    />
-    <option
-      label="First account7"
-      value="16"
-    />
-    <option
-      label="Second acc 29"
-      value="28"
-    />
-    <option
-      label="Third 311"
-      value="310"
-    />
-    <option
-      label="First account13"
-      value="112"
-    />
-    <option
-      label="Second acc 215"
-      value="214"
-    />
-    <option
-      label="Third 317"
-      value="316"
-    />
-  </select>
-  <div
-    className="c1"
-    onBlur={[Function]}
-    onFocus={[Function]}
-    width="150px"
-  >
+<div
+  className="c0"
+>
+  <div>
+    <select
+      aria-hidden="true"
+      className="c1"
+      disabled={false}
+      onChange={[Function]}
+    >
+      <option
+        label="Select account"
+        value=""
+      />
+      <option
+        label="First account"
+        value="1"
+      />
+      <option
+        label="Second acc 2"
+        value="2"
+      />
+      <option
+        label="Third 3"
+        value="3"
+      />
+      <option
+        label="First account1"
+        value="10"
+      />
+      <option
+        label="Second acc 23"
+        value="22"
+      />
+      <option
+        label="Third 35"
+        value="34"
+      />
+      <option
+        label="First account7"
+        value="16"
+      />
+      <option
+        label="Second acc 29"
+        value="28"
+      />
+      <option
+        label="Third 311"
+        value="310"
+      />
+      <option
+        label="First account13"
+        value="112"
+      />
+      <option
+        label="Second acc 215"
+        value="214"
+      />
+      <option
+        label="Third 317"
+        value="316"
+      />
+    </select>
     <div
       className="c2"
+      onBlur={[Function]}
+      onFocus={[Function]}
+      width="150px"
     >
-      <span
+      <div
         className="c3"
       >
-        <button
-          aria-expanded="false"
-          aria-haspopup="listbox"
-          aria-label="User account: Select account"
-          className="c4 c5"
-          data-testid="input-select-button"
-          disabled={false}
-          form=""
-          id="input-select-search-inside"
-          onClick={[Function]}
-          tabIndex={0}
-          type="button"
+        <span
+          className="c4"
         >
-          <div
-            aria-hidden="true"
-            className="c6 c7"
+          <button
+            aria-expanded="false"
+            aria-haspopup="listbox"
+            aria-label="User account: Select account"
+            className="c5 c6"
+            data-testid="input-select-button"
+            disabled={false}
+            form=""
+            id="input-select-search-inside"
+            onClick={[Function]}
+            tabIndex={0}
+            type="button"
           >
             <div
-              className="c8"
-              onClick={[Function]}
-              type="button"
+              aria-hidden="true"
+              className="c7 c8"
             >
               <div
                 className="c9"
+                onClick={[Function]}
+                type="button"
               >
                 <div
                   className="c10"
                 >
-                  <svg
-                    aria-hidden="true"
+                  <div
                     className="c11"
-                    focusable="false"
-                    preserveAspectRatio="xMidYMid meet"
-                    role="presentation"
-                    viewBox="0 0 24 24"
                   >
-                    <path
-                      d="M12,0 C18.627417,0 24,5.372583 24,12 C24,18.627417 18.627417,24 12,24 C5.372583,24 0,18.627417 0,12 C0,5.372583 5.372583,0 12,0 Z M12,2 C6.4771525,2 2,6.4771525 2,12 C2,17.5228475 6.4771525,22 12,22 C17.5228475,22 22,17.5228475 22,12 C22,6.4771525 17.5228475,2 12,2 Z M13,4 L13,11 L20,11 L20,13 L13,13 L13,20 L11,20 L11,12.999 L4,13 L4,11 L11,10.999 L11,4 L13,4 Z"
-                    />
-                  </svg>
-                </div>
-                <div
-                  className="c12"
-                >
-                  <span
-                    className="c3"
+                    <svg
+                      aria-hidden="true"
+                      className="c12"
+                      focusable="false"
+                      preserveAspectRatio="xMidYMid meet"
+                      role="presentation"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M12,0 C18.627417,0 24,5.372583 24,12 C24,18.627417 18.627417,24 12,24 C5.372583,24 0,18.627417 0,12 C0,5.372583 5.372583,0 12,0 Z M12,2 C6.4771525,2 2,6.4771525 2,12 C2,17.5228475 6.4771525,22 12,22 C17.5228475,22 22,17.5228475 22,12 C22,6.4771525 17.5228475,2 12,2 Z M13,4 L13,11 L20,11 L20,13 L13,13 L13,20 L11,20 L11,12.999 L4,13 L4,11 L11,10.999 L11,4 L13,4 Z"
+                      />
+                    </svg>
+                  </div>
+                  <div
+                    className="c13"
                   >
-                    Select account
-                  </span>
+                    <span
+                      className="c4"
+                    >
+                      Select account
+                    </span>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-        </button>
-      </span>
+          </button>
+        </span>
+      </div>
     </div>
   </div>
 </div>
 `;
 
 exports[`Storyshots Molecules / Input / Select Link With Dropdown And Search Box Tertiary 1`] = `
-.c2 {
+.c0 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+}
+
+.c3 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -5597,7 +6467,7 @@ exports[`Storyshots Molecules / Input / Select Link With Dropdown And Search Box
   align-items: center;
 }
 
-.c6 {
+.c7 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -5605,7 +6475,7 @@ exports[`Storyshots Molecules / Input / Select Link With Dropdown And Search Box
   display: flex;
 }
 
-.c9 {
+.c10 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -5619,16 +6489,16 @@ exports[`Storyshots Molecules / Input / Select Link With Dropdown And Search Box
   margin-right: -2px;
 }
 
-.c9 > * {
+.c10 > * {
   padding-left: 2px;
   padding-right: 2px;
 }
 
-.c9 > *:not(:first-child) {
+.c10 > *:not(:first-child) {
   padding-top: 0;
 }
 
-.c10 {
+.c11 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -5640,11 +6510,11 @@ exports[`Storyshots Molecules / Input / Select Link With Dropdown And Search Box
   align-items: center;
 }
 
-.c12 {
+.c13 {
   box-sizing: border-box;
 }
 
-.c11 {
+.c12 {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -5659,7 +6529,7 @@ exports[`Storyshots Molecules / Input / Select Link With Dropdown And Search Box
   vertical-align: middle;
 }
 
-.c4 {
+.c5 {
   font-family: inherit;
   font-size: 100%;
   line-height: 1.15;
@@ -5668,29 +6538,29 @@ exports[`Storyshots Molecules / Input / Select Link With Dropdown And Search Box
   text-transform: none;
 }
 
-.c4,
-.c4[type='button'],
-.c4[type='reset'],
-.c4[type='submit'] {
+.c5,
+.c5[type='button'],
+.c5[type='reset'],
+.c5[type='submit'] {
   -webkit-appearance: button;
 }
 
-.c4::-moz-focus-inner,
-.c4[type='button']::-moz-focus-inner,
-.c4[type='reset']::-moz-focus-inner,
-.c4[type='submit']::-moz-focus-inner {
+.c5::-moz-focus-inner,
+.c5[type='button']::-moz-focus-inner,
+.c5[type='reset']::-moz-focus-inner,
+.c5[type='submit']::-moz-focus-inner {
   border-style: none;
   padding: 0;
 }
 
-.c4:-moz-focusring,
-.c4[type='button']:-moz-focusring,
-.c4[type='reset']:-moz-focusring,
-.c4[type='submit']:-moz-focusring {
+.c5:-moz-focusring,
+.c5[type='button']:-moz-focusring,
+.c5[type='reset']:-moz-focusring,
+.c5[type='submit']:-moz-focusring {
   outline: 1px dotted ButtonText;
 }
 
-.c3 {
+.c4 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
   margin: 0;
@@ -5699,7 +6569,7 @@ exports[`Storyshots Molecules / Input / Select Link With Dropdown And Search Box
   line-height: 1.4285714285714286;
 }
 
-.c13 {
+.c14 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
   margin: 0;
@@ -5708,18 +6578,18 @@ exports[`Storyshots Molecules / Input / Select Link With Dropdown And Search Box
   line-height: 1.3333333333333333;
 }
 
-.c1 {
+.c2 {
   position: relative;
   display: block;
   width: auto;
 }
 
-.c7 {
+.c8 {
   height: 100%;
   width: 100%;
 }
 
-.c5 {
+.c6 {
   background: transparent;
   width: 100%;
   height: 100%;
@@ -5732,15 +6602,15 @@ exports[`Storyshots Molecules / Input / Select Link With Dropdown And Search Box
   border: 0;
 }
 
-.c5:active {
+.c6:active {
   color: inherit;
 }
 
-.c0 {
+.c1 {
   display: none;
 }
 
-.c8 {
+.c9 {
   font-family: inherit;
   font-size: 100%;
   line-height: 1.15;
@@ -5758,160 +6628,164 @@ exports[`Storyshots Molecules / Input / Select Link With Dropdown And Search Box
   font-weight: inherit;
 }
 
-.c8,
-.c8[type='button'],
-.c8[type='reset'],
-.c8[type='submit'] {
+.c9,
+.c9[type='button'],
+.c9[type='reset'],
+.c9[type='submit'] {
   -webkit-appearance: button;
 }
 
-.c8::-moz-focus-inner,
-.c8[type='button']::-moz-focus-inner,
-.c8[type='reset']::-moz-focus-inner,
-.c8[type='submit']::-moz-focus-inner {
+.c9::-moz-focus-inner,
+.c9[type='button']::-moz-focus-inner,
+.c9[type='reset']::-moz-focus-inner,
+.c9[type='submit']::-moz-focus-inner {
   border-style: none;
   padding: 0;
 }
 
-.c8:-moz-focusring,
-.c8[type='button']:-moz-focusring,
-.c8[type='reset']:-moz-focusring,
-.c8[type='submit']:-moz-focusring {
+.c9:-moz-focusring,
+.c9[type='button']:-moz-focusring,
+.c9[type='reset']:-moz-focusring,
+.c9[type='submit']:-moz-focusring {
   outline: 1px dotted ButtonText;
 }
 
-.c8:hover {
+.c9:hover {
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 
-<div>
-  <select
-    aria-hidden="true"
-    className="c0"
-    disabled={false}
-    onChange={[Function]}
-  >
-    <option
-      label="Select account"
-      value=""
-    />
-    <option
-      label="First account"
-      value="1"
-    />
-    <option
-      label="Second acc 2"
-      value="2"
-    />
-    <option
-      label="Third 3"
-      value="3"
-    />
-    <option
-      label="First account1"
-      value="10"
-    />
-    <option
-      label="Second acc 23"
-      value="22"
-    />
-    <option
-      label="Third 35"
-      value="34"
-    />
-    <option
-      label="First account7"
-      value="16"
-    />
-    <option
-      label="Second acc 29"
-      value="28"
-    />
-    <option
-      label="Third 311"
-      value="310"
-    />
-    <option
-      label="First account13"
-      value="112"
-    />
-    <option
-      label="Second acc 215"
-      value="214"
-    />
-    <option
-      label="Third 317"
-      value="316"
-    />
-  </select>
-  <div
-    className="c1"
-    onBlur={[Function]}
-    onFocus={[Function]}
-    width="250px"
-  >
+<div
+  className="c0"
+>
+  <div>
+    <select
+      aria-hidden="true"
+      className="c1"
+      disabled={false}
+      onChange={[Function]}
+    >
+      <option
+        label="Select account"
+        value=""
+      />
+      <option
+        label="First account"
+        value="1"
+      />
+      <option
+        label="Second acc 2"
+        value="2"
+      />
+      <option
+        label="Third 3"
+        value="3"
+      />
+      <option
+        label="First account1"
+        value="10"
+      />
+      <option
+        label="Second acc 23"
+        value="22"
+      />
+      <option
+        label="Third 35"
+        value="34"
+      />
+      <option
+        label="First account7"
+        value="16"
+      />
+      <option
+        label="Second acc 29"
+        value="28"
+      />
+      <option
+        label="Third 311"
+        value="310"
+      />
+      <option
+        label="First account13"
+        value="112"
+      />
+      <option
+        label="Second acc 215"
+        value="214"
+      />
+      <option
+        label="Third 317"
+        value="316"
+      />
+    </select>
     <div
       className="c2"
+      onBlur={[Function]}
+      onFocus={[Function]}
+      width="250px"
     >
-      <span
+      <div
         className="c3"
       >
-        <button
-          aria-expanded="false"
-          aria-haspopup="listbox"
-          aria-label="User account: Select account"
-          className="c4 c5"
-          data-testid="input-select-button"
-          disabled={false}
-          form=""
-          id="input-select-search-inside"
-          onClick={[Function]}
-          tabIndex={0}
-          type="button"
+        <span
+          className="c4"
         >
-          <div
-            aria-hidden="true"
-            className="c6 c7"
+          <button
+            aria-expanded="false"
+            aria-haspopup="listbox"
+            aria-label="User account: Select account"
+            className="c5 c6"
+            data-testid="input-select-button"
+            disabled={false}
+            form=""
+            id="input-select-search-inside"
+            onClick={[Function]}
+            tabIndex={0}
+            type="button"
           >
             <div
-              className="c8"
-              onClick={[Function]}
-              type="button"
+              aria-hidden="true"
+              className="c7 c8"
             >
               <div
                 className="c9"
+                onClick={[Function]}
+                type="button"
               >
                 <div
                   className="c10"
                 >
-                  <svg
-                    aria-hidden="true"
+                  <div
                     className="c11"
-                    focusable="false"
-                    preserveAspectRatio="xMidYMid meet"
-                    role="presentation"
-                    viewBox="0 0 24 24"
                   >
-                    <path
-                      d="M12,0 C18.627417,0 24,5.372583 24,12 C24,18.627417 18.627417,24 12,24 C5.372583,24 0,18.627417 0,12 C0,5.372583 5.372583,0 12,0 Z M12,2 C6.4771525,2 2,6.4771525 2,12 C2,17.5228475 6.4771525,22 12,22 C17.5228475,22 22,17.5228475 22,12 C22,6.4771525 17.5228475,2 12,2 Z M13,4 L13,11 L20,11 L20,13 L13,13 L13,20 L11,20 L11,12.999 L4,13 L4,11 L11,10.999 L11,4 L13,4 Z"
-                    />
-                  </svg>
-                </div>
-                <div
-                  className="c12"
-                >
-                  <span
+                    <svg
+                      aria-hidden="true"
+                      className="c12"
+                      focusable="false"
+                      preserveAspectRatio="xMidYMid meet"
+                      role="presentation"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M12,0 C18.627417,0 24,5.372583 24,12 C24,18.627417 18.627417,24 12,24 C5.372583,24 0,18.627417 0,12 C0,5.372583 5.372583,0 12,0 Z M12,2 C6.4771525,2 2,6.4771525 2,12 C2,17.5228475 6.4771525,22 12,22 C17.5228475,22 22,17.5228475 22,12 C22,6.4771525 17.5228475,2 12,2 Z M13,4 L13,11 L20,11 L20,13 L13,13 L13,20 L11,20 L11,12.999 L4,13 L4,11 L11,10.999 L11,4 L13,4 Z"
+                      />
+                    </svg>
+                  </div>
+                  <div
                     className="c13"
                   >
-                    Select account
-                  </span>
+                    <span
+                      className="c14"
+                    >
+                      Select account
+                    </span>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-        </button>
-      </span>
+          </button>
+        </span>
+      </div>
     </div>
   </div>
 </div>
@@ -8787,6 +9661,320 @@ exports[`Storyshots Molecules / Input / Select Overflow Story 1`] = `
           </svg>
         </div>
         
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Molecules / Input / Select Placement Top 1`] = `
+.c0 {
+  padding-top: 160px;
+}
+
+.c13 {
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+.c3 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c11 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.c5 {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.c16 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 20px;
+  height: 20px;
+  fill: #282823;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
+}
+
+.c9 {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  overflow: visible;
+  text-transform: none;
+}
+
+.c9,
+.c9[type='button'],
+.c9[type='reset'],
+.c9[type='submit'] {
+  -webkit-appearance: button;
+}
+
+.c9::-moz-focus-inner,
+.c9[type='button']::-moz-focus-inner,
+.c9[type='reset']::-moz-focus-inner,
+.c9[type='submit']::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+.c9:-moz-focusring,
+.c9[type='button']:-moz-focusring,
+.c9[type='reset']:-moz-focusring,
+.c9[type='submit']:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+.c6 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #6E6E69;
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c8 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c17 {
+  -webkit-transform: translateY(-50%) rotate(0);
+  -ms-transform: translateY(-50%) rotate(0);
+  transform: translateY(-50%) rotate(0);
+  -webkit-transform-origin: center center;
+  -ms-transform-origin: center center;
+  transform-origin: center center;
+  -webkit-transition: -webkit-transform 0.16s ease-out;
+  -webkit-transition: transform 0.16s ease-out;
+  transition: transform 0.16s ease-out;
+  position: absolute;
+  height: 8px;
+  top: 50%;
+  right: 4px;
+  pointer-events: none;
+}
+
+.c2 {
+  position: relative;
+  display: block;
+  width: auto;
+}
+
+.c7 {
+  height: 40px;
+  outline: none;
+  border: 1px solid #BCBCB6;
+  position: relative;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.c7:hover {
+  border-color: #4B4B46;
+}
+
+.c7:focus-within {
+  border-color: #0046FF;
+}
+
+.c7.focus-within {
+  border-color: #0046FF;
+}
+
+.c12 {
+  height: 100%;
+  width: 100%;
+}
+
+.c10 {
+  background: transparent;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  padding: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  border: 0;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  outline: 0;
+  text-align: initial;
+}
+
+.c10:active {
+  color: inherit;
+}
+
+.c15 {
+  width: 100%;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  text-align: left;
+}
+
+.c14 {
+  width: calc(100% - 20px - 4px);
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c1 {
+  display: none;
+}
+
+.c4 {
+  width: 200px;
+  display: inline-block;
+}
+
+<div
+  className="c0"
+>
+  <div>
+    <select
+      aria-hidden="true"
+      className="c1"
+      disabled={false}
+      onChange={[Function]}
+    >
+      <option
+        label="Select account"
+        value=""
+      />
+      <option
+        label="First account"
+        value="1"
+      />
+      <option
+        label="Second acc 2"
+        value="2"
+      />
+      <option
+        label="Third 3"
+        value="3"
+      />
+    </select>
+    <div
+      className="c2"
+    >
+      <div
+        className="c3"
+      >
+        <div
+          className="c4"
+        >
+          <label
+            className="c5"
+            hidden={false}
+            htmlFor="no-scroll-select"
+          >
+            <span
+              className="c6"
+            >
+              <div
+                className="c3"
+              >
+                User account 
+              </div>
+            </span>
+          </label>
+          <div
+            className="c7"
+            disabled={false}
+            label="User account"
+            onBlur={[Function]}
+            onFocus={[Function]}
+            tabIndex={0}
+          >
+            <span
+              className="c8"
+            >
+              <button
+                aria-expanded="false"
+                aria-haspopup="listbox"
+                aria-label="User account: Select account"
+                className="c9 c10"
+                data-testid="input-select-button"
+                disabled={false}
+                form=""
+                id="no-scroll-select"
+                onClick={[Function]}
+                tabIndex={0}
+                type="button"
+              >
+                <div
+                  aria-hidden="true"
+                  className="c11 c12"
+                >
+                  <div
+                    className="c13 c14"
+                  >
+                    <span
+                      className="c15"
+                    >
+                      Select account
+                    </span>
+                  </div>
+                </div>
+              </button>
+            </span>
+            <svg
+              aria-hidden="true"
+              className="c16 c17"
+              focusable="false"
+              open={false}
+              preserveAspectRatio="xMidYMid meet"
+              role="presentation"
+              viewBox="0 0 24 24"
+            >
+              <polygon
+                points="19.969 4 24 8.027 12 20 0 8.027 4.031 4 12 11.952"
+              />
+            </svg>
+          </div>
+          
+        </div>
       </div>
     </div>
   </div>

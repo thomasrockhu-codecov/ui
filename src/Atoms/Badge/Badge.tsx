@@ -1,15 +1,31 @@
+// import { useEffect } from '@storybook/addons';
 import React from 'react';
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 import { Typography } from '../..';
 import { isElement, isFunction } from '../../common/utils';
-import { BadgeComponent, Props as BadgeComponentProps } from './Badge.types';
+import { BadgeComponent, Circle as CircleComponentProps, CircleComponent } from './Badge.types';
 
 const SMALL_BADGE_SIZE = 2;
 const MEDIUM_BADGE_SIZE = 5;
 
 const BADGE_PADDING = 1.5;
 
-const Circle: BadgeComponent = styled.span<BadgeComponentProps & { size: number }>`
+const animation = css`
+  @keyframes scale {
+    0% {
+      transform: scale(1);
+    }
+    1% {
+      transform: scale(1.4);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  animation: scale 0.5s ease-out;
+`;
+
+const Circle: CircleComponent = styled.span<CircleComponentProps>`
   display: inline-flex;
   justify-content: center;
   align-items: center;
@@ -24,9 +40,16 @@ const Circle: BadgeComponent = styled.span<BadgeComponentProps & { size: number 
     const shouldHavePadding = p.size === MEDIUM_BADGE_SIZE;
     return shouldHavePadding ? `padding: 0 ${p.theme.spacing.unit(BADGE_PADDING)}px` : '';
   }};
+  ${({ $animateOnChange }) => ($animateOnChange ? animation : '')}
 `;
 
-export const Badge: BadgeComponent = ({ backgroundColor, color, children, ...props }) => {
+export const Badge: BadgeComponent = ({
+  backgroundColor,
+  color,
+  children,
+  animateOnChange = false,
+  ...props
+}) => {
   const CircleContent = () => {
     if (typeof children === 'undefined') return null;
     if (isFunction(children)) return children();
@@ -44,6 +67,7 @@ export const Badge: BadgeComponent = ({ backgroundColor, color, children, ...pro
 
   return (
     <Circle
+      $animateOnChange={animateOnChange}
       size={typeof children !== 'undefined' ? MEDIUM_BADGE_SIZE : SMALL_BADGE_SIZE}
       backgroundColor={backgroundColor}
       {...(textColorOnParent && { color })}

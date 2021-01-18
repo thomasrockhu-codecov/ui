@@ -7,6 +7,7 @@ import { useOnClickOutside } from '../../../common/Hooks';
 import {
   ListItemWrapper,
   ListWrapper,
+  ListWrapperWithPortal,
   SelectedValueWrapper,
   FormFieldOrFragment,
   SearchWrapper,
@@ -178,6 +179,7 @@ const Select = (props: Props) => {
   const [itemRefs, setItemRef] = useMultiRef();
   const listRef = React.useRef(null);
   const formFieldRef = React.useRef(null);
+  const selectWrapperRef = React.useRef(null);
   const inputRef = React.useRef(null);
   const searchRef = React.useRef(null);
 
@@ -193,6 +195,7 @@ const Select = (props: Props) => {
     formFieldRef,
     isFirstRender,
     inputRef,
+    listRef,
   );
 
   /******      Renderers      ******/
@@ -214,6 +217,8 @@ const Select = (props: Props) => {
   const options = machineState.context.visibleOptions;
   const selectedItems = machineState.context.selectedItems;
   const multiselect = machineState.context.multiselect;
+
+  const ListWrapperComponent = props.withPortal ? ListWrapperWithPortal : ListWrapper;
 
   return (
     <div className={props.className}>
@@ -239,6 +244,7 @@ const Select = (props: Props) => {
           labelTooltipPosition={props.labelTooltipPosition}
           noFormField={props.noFormField}
           ref={formFieldRef}
+          innerRef={selectWrapperRef}
           disabled={isDisabled}
           open={isOpen}
           fullWidth={props.fullWidth}
@@ -247,8 +253,8 @@ const Select = (props: Props) => {
           extraInfo={extraInfo}
           id={props.id}
           size={props.size}
-          onBlur={handleBlur}
           onFocus={handleFocus}
+          onBlur={handleBlur}
           width={props.width}
         >
           <SelectedValueWrapper
@@ -265,8 +271,9 @@ const Select = (props: Props) => {
             id={props.id}
           />
           {isOpen && (
-            <ListWrapper
+            <ListWrapperComponent
               component={List}
+              triggerElement={selectWrapperRef}
               noFormField={props.noFormField}
               onKeyDown={handleKeyDown}
               onMouseMove={handleMouseMove}
@@ -274,6 +281,7 @@ const Select = (props: Props) => {
               data-testid="input-select-list"
               searchComponent={<SearchWrapper ref={searchRef} component={Search} />}
               listPosition={props.listPosition}
+              placement={props.placement}
               actionsComponent={
                 machineState.context.actions.length > 0 ? (
                   <ActionsWrapper component={Action} onClickFactory={handleClickActionItem} />
@@ -293,7 +301,7 @@ const Select = (props: Props) => {
                   component={ListItem}
                 />
               ))}
-            </ListWrapper>
+            </ListWrapperComponent>
           )}
         </FormFieldOrFragment>
       </SelectStateContext.Provider>

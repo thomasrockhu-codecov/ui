@@ -33,7 +33,11 @@ const DropdownBubbleWithPadding = styled(DropdownBubble)`
 `;
 // @ts-ignore
 const Wrapper = (props) => (
-  <DropdownBubbleWithPadding position={props.position} maxHeight="200px">
+  <DropdownBubbleWithPadding
+    position={props.position}
+    placement={props.placement}
+    maxHeight="200px"
+  >
     <FadedScroll enableMobileFade>{props.children}</FadedScroll>
   </DropdownBubbleWithPadding>
 );
@@ -55,7 +59,7 @@ export const listWithDifferentArrowPositions = () => (
             ))}
           </Wrapper>
         ),
-        title: 'Default (right)',
+        title: 'Placement Bottom, Arrow Default (right)',
       },
 
       {
@@ -69,7 +73,7 @@ export const listWithDifferentArrowPositions = () => (
             ))}
           </Wrapper>
         ),
-        title: 'Left',
+        title: 'Placement Bottom, Arrow Left',
       },
       {
         component: (
@@ -83,7 +87,51 @@ export const listWithDifferentArrowPositions = () => (
             ))}
           </Wrapper>
         ),
-        title: 'Center',
+        title: 'Placement Bottom, Arrow Center',
+      },
+      {
+        component: (
+          <Wrapper placement="top">
+            <Option value={-1} label="Default?" />
+            <Option value={0} label="First" selected />
+            <Option
+              value={2}
+              label="SecondSecondSecondSecondSecondSecondSecondSecondSecondSecondSecondSecondSecondSecondSecond"
+            />
+            {new Array(10).fill(null).map((_, i) => (
+              // eslint-disable-next-line react/no-array-index-key
+              <Option key={i} value={i + 3} label="Disabled" disabled />
+            ))}
+          </Wrapper>
+        ),
+        title: 'Placement Top, Arrow Default (right)',
+      },
+      {
+        component: (
+          <Wrapper position="left" placement="top">
+            <Option value={-1} label="Default?" />
+            <Option value={0} label="First" selected />
+            {new Array(10).fill(null).map((_, i) => (
+              // eslint-disable-next-line react/no-array-index-key
+              <Option key={i} value={i + 2} label="Disabled" disabled />
+            ))}
+          </Wrapper>
+        ),
+        title: 'Placement Top, Arrow Left',
+      },
+      {
+        component: (
+          <Wrapper position="center" placement="top">
+            <Option value={-1} label="Default?" />
+            <Option value={0} label="First" selected />
+            <Option value={2} label="Second" />
+            {new Array(10).fill(null).map((_, i) => (
+              // eslint-disable-next-line react/no-array-index-key
+              <Option key={i} value={i + 3} label="Disabled" disabled />
+            ))}
+          </Wrapper>
+        ),
+        title: 'Placement Top, Arrow Center',
       },
     ]}
   />

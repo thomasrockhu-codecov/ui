@@ -93,10 +93,11 @@ import { Search } from './components/Search';
 import { SellingpointFunds } from './components/SellingpointFunds';
 import { SellingpointGlobal } from './components/SellingpointGlobal';
 import { SellingpointMoney } from './components/SellingpointMoney';
-import { SellingpointTransfer } from './components/SellingpointTransfer';
+import { SellingpointPhone } from './components/SellingpointPhone';
 import { SellingpointRate } from './components/SellingpointRate';
 import { SellingpointShareville } from './components/SellingpointShareville';
 import { SellingpointStocks } from './components/SellingpointStocks';
+import { SellingpointTransfer } from './components/SellingpointTransfer';
 import { Shapes } from './components/Shapes';
 import { SharevilleLogo } from './components/SharevilleLogo';
 import { SocialFacebook } from './components/SocialFacebook';
@@ -217,6 +218,7 @@ export default {
   SellingpointFunds,
   SellingpointGlobal,
   SellingpointMoney,
+  SellingpointPhone,
   SellingpointRate,
   SellingpointShareville,
   SellingpointStocks,
