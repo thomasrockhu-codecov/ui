@@ -8,7 +8,7 @@ import NormalizedElements from '../../../common/NormalizedElements';
 import { getStringAsNumber, getNumberAsString } from './utils';
 import { isNumber, isString, isUndefined, assert } from '../../../common/utils';
 import adjustValue from './adjustValue';
-import { placeholderNormalizaion } from '../Text/Text';
+import { placeholderNormalization } from '../Text/Text';
 
 const hasError = (error?: Props['error']) => error && error !== '';
 const removeNonNumberCharacters = R.replace(/[^0-9\-.,]+/, '');
@@ -119,7 +119,7 @@ const Input = styled(NormalizedElements.Input).attrs(() => ({ type: 'text' }))<P
   ${background}
   ${borderStyles}
   ${height}
-  ${placeholderNormalizaion}
+  ${placeholderNormalization}
   padding: ${(p) =>
     p.theme.spacing.unit(p.variant === 'quiet' ? 0 : 2)}px;
   width: 100%;
@@ -145,15 +145,19 @@ const Input = styled(NormalizedElements.Input).attrs(() => ({ type: 'text' }))<P
   ${(p) =>
     p.variant === 'quiet'
       ? `color: ${p.theme.color.cta}; 
-         &:disabled {
-           color: ${p.theme.color.disabledText};
-         }
-         font-size: 28px; 
-         font-weight: bold;
-         &:focus {
-           padding-left: ${p.theme.spacing.unit(p.leftAddon ? 8 : 2)}px;
-           padding-right: ${p.theme.spacing.unit(p.rightAddon ? 8 : 0)}px;
-         }`
+        &:disabled {
+          color: ${p.theme.color.disabledText};
+        }
+        font-size: 28px; 
+        font-weight: bold;
+        &:focus {
+          padding-left: ${p.theme.spacing.unit(p.leftAddon ? 8 : 2)}px;
+          padding-right: ${p.theme.spacing.unit(p.rightAddon ? 8 : 0)}px;
+        }
+        &:-webkit-autofill {
+         -webkit-text-fill-color: ${p.theme.color.cta};
+        }
+        `
       : ''}
   ${(p) =>
     p.variant === 'quiet' && p.rightAddon

@@ -54,7 +54,7 @@ const borderStyles = css<Pick<Props, 'error' | 'success' | 'disabled' | 'variant
     p.disabled && p.variant === 'quiet' ? `border-color: ${p.theme.color.disabledBackground};` : ''}
 `;
 
-export const placeholderNormalizaion = css<Pick<Props, 'variant' | 'disabled'>>`
+export const placeholderNormalization = css<Pick<Props, 'variant' | 'disabled'>>`
   &::placeholder {
     color: ${(p) => (p.variant === 'quiet' ? p.theme.color.cta : p.theme.color.label)};
     line-height: inherit;
@@ -103,7 +103,7 @@ const Input = styled(NormalizedElements.Input).attrs((p) => ({ type: p.type || '
   ${height}
   ${borderStyles}
   ${background}
-  ${placeholderNormalizaion}
+  ${placeholderNormalization}
   ${(p) =>
     p.leftAddon ? `padding-left: ${p.theme.spacing.unit(8)}px;` : ''}
   ${(p) =>

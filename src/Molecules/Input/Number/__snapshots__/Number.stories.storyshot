@@ -864,6 +864,10 @@ Array [
   padding-right: 0px;
 }
 
+.c10:-webkit-autofill {
+  -webkit-text-fill-color: #0046FF;
+}
+
 .c12 {
   font-family: inherit;
   font-size: 100%;
@@ -961,6 +965,10 @@ Array [
 .c12:focus {
   padding-left: 8px;
   padding-right: 0px;
+}
+
+.c12:-webkit-autofill {
+  -webkit-text-fill-color: #0046FF;
 }
 
 .c13 {
@@ -1066,6 +1074,10 @@ Array [
   padding-right: 0px;
 }
 
+.c13:-webkit-autofill {
+  -webkit-text-fill-color: #0046FF;
+}
+
 .c16 {
   font-family: inherit;
   font-size: 100%;
@@ -1169,6 +1181,10 @@ Array [
   padding-right: 0px;
 }
 
+.c16:-webkit-autofill {
+  -webkit-text-fill-color: #0046FF;
+}
+
 .c17 {
   font-family: inherit;
   font-size: 100%;
@@ -1269,6 +1285,10 @@ Array [
 .c17:focus {
   padding-left: 8px;
   padding-right: 32px;
+}
+
+.c17:-webkit-autofill {
+  -webkit-text-fill-color: #0046FF;
 }
 
 .c17:focus + .c19 {
@@ -1376,6 +1396,10 @@ Array [
 .c21:focus {
   padding-left: 32px;
   padding-right: 32px;
+}
+
+.c21:-webkit-autofill {
+  -webkit-text-fill-color: #0046FF;
 }
 
 .c21:focus + .c19 {

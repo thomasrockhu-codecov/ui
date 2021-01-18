@@ -3,7 +3,7 @@ import styled, { css } from 'styled-components';
 import * as R from 'ramda';
 import { Props } from './Textarea.types';
 import { Typography, FormField } from '../../..';
-import { placeholderNormalizaion } from '../Text/Text';
+import { placeholderNormalization } from '../Text/Text';
 import NormalizedElements from '../../../common/NormalizedElements';
 
 const hasError = (error?: Props['error']) => error && error !== '';
@@ -53,7 +53,7 @@ const StyledTextarea = styled(NormalizedElements.Textarea)`
 
   ${borderStyles}
   ${background}
-  ${placeholderNormalizaion}
+  ${placeholderNormalization}
 `;
 
 const components = {
