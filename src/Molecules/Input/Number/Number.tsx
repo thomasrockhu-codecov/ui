@@ -8,7 +8,7 @@ import NormalizedElements from '../../../common/NormalizedElements';
 import { getStringAsNumber, getNumberAsString } from './utils';
 import { isNumber, isString, isUndefined, assert } from '../../../common/utils';
 import adjustValue from './adjustValue';
-import { placeholderNormalizaion } from '../Text/Text';
+import { placeholderNormalization } from '../Text/Text';
 
 const hasError = (error?: Props['error']) => error && error !== '';
 const removeNonNumberCharacters = R.replace(/[^0-9\-.,]+/, '');
@@ -119,7 +119,7 @@ const Input = styled(NormalizedElements.Input).attrs(() => ({ type: 'text' }))<P
   ${background}
   ${borderStyles}
   ${height}
-  ${placeholderNormalizaion}
+  ${placeholderNormalization}
   padding: ${(p) =>
     p.theme.spacing.unit(p.variant === 'quiet' ? 0 : 2)}px;
   width: 100%;
