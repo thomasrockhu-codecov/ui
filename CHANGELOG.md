@@ -1,3 +1,21 @@
+## [5.9.2](https://github.com/nordnet/ui/compare/v5.9.1...v5.9.2) (2021-01-18)
+
+
+### Bug Fixes
+
+* add a comment about Select handleBlur patch for Portal ([bff6fef](https://github.com/nordnet/ui/commit/bff6fef))
+* add placement prop ([9c11259](https://github.com/nordnet/ui/commit/9c11259))
+* add stories for new dropdown bubble placement ([5816203](https://github.com/nordnet/ui/commit/5816203))
+* add support for top placement of dropdown bubble ([171a467](https://github.com/nordnet/ui/commit/171a467))
+* add top placement support for Input.Select ([441ac63](https://github.com/nordnet/ui/commit/441ac63))
+* additional stories for withportal & placement ([83700d1](https://github.com/nordnet/ui/commit/83700d1))
+* make showmore button bold ([53bd8e0](https://github.com/nordnet/ui/commit/53bd8e0))
+* onBlur triggered immediatley when dropdown is inside of a Portal ([1574dca](https://github.com/nordnet/ui/commit/1574dca))
+* ref check in hook ([f549663](https://github.com/nordnet/ui/commit/f549663))
+* regenerate snapshots ([23bf0ed](https://github.com/nordnet/ui/commit/23bf0ed))
+* select dropdown with popperjs WIP ([cd423b5](https://github.com/nordnet/ui/commit/cd423b5))
+* update the autoplacement story for Select ([a6fbd36](https://github.com/nordnet/ui/commit/a6fbd36))
+
 ## [5.9.1](https://github.com/nordnet/ui/compare/v5.9.0...v5.9.1) (2021-01-14)
 
 
