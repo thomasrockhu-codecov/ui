@@ -1,3 +1,11 @@
+## [5.9.3](https://github.com/nordnet/ui/compare/v5.9.2...v5.9.3) (2021-01-18)
+
+
+### Bug Fixes
+
+* set cta color after clicking from cached choices ([c504519](https://github.com/nordnet/ui/commit/c504519))
+* typo ([6d8beb2](https://github.com/nordnet/ui/commit/6d8beb2))
+
 ## [5.9.2](https://github.com/nordnet/ui/compare/v5.9.1...v5.9.2) (2021-01-18)
 
 
