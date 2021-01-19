@@ -81,6 +81,13 @@ const animationProps = {
   },
 };
 
+const noInitialAnimationProps = {
+  initial: {
+    opacity: 1,
+    x: '0%',
+  },
+};
+
 const components = {
   CloseButton,
   Container,
@@ -114,6 +121,7 @@ export const Drawer = (React.forwardRef<HTMLDivElement, Props>(
       open: isOpenExternal,
       title,
       onExitAnimationComplete,
+      disableInitialAnimation,
     },
     ref,
   ) => {
@@ -172,6 +180,7 @@ export const Drawer = (React.forwardRef<HTMLDivElement, Props>(
                   className={className}
                   aria-labelledby={uid}
                   {...animationProps}
+                  {...(disableInitialAnimation ? noInitialAnimationProps : {})}
                   ref={drawerRef}
                   dragControls={dragControls}
                   dragListener={false}

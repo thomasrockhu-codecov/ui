@@ -220,3 +220,33 @@ export const WithoutCloseOnClickOutside = () => {
 WithoutCloseOnClickOutside.story = {
   name: 'Without closing the drawer when clicking outside',
 };
+
+export const noInitialAnimationStory = () => {
+  const Example = () => {
+    const [open, setOpen] = useState(true);
+
+    const toggle = () => {
+      setOpen(!open);
+    };
+
+    const onClose = () => {
+      setOpen(false);
+    };
+
+    return (
+      <div>
+        <button type="button" onClick={toggle}>
+          Toggle drawer
+        </button>
+        <Drawer onClose={onClose} title="Drawer title" open={open} disableInitialAnimation>
+          {contentLarge}
+        </Drawer>
+      </div>
+    );
+  };
+  return <Example />;
+};
+
+defaultStory.story = {
+  name: 'Disabled initial animation',
+};
