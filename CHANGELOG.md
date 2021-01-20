@@ -1,3 +1,10 @@
+# [5.10.0](https://github.com/nordnet/ui/compare/v5.9.3...v5.10.0) (2021-01-20)
+
+
+### Features
+
+* 🎸 add disable initial animation functionality ([1d0c8ef](https://github.com/nordnet/ui/commit/1d0c8ef))
+
 ## [5.9.3](https://github.com/nordnet/ui/compare/v5.9.2...v5.9.3) (2021-01-18)
 
 
