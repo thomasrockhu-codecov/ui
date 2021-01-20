@@ -10,6 +10,7 @@ export type Props = {
   ref?: React.Ref<HTMLDivElement>;
   as?: keyof JSX.IntrinsicElements | React.ComponentType<any>;
   onExitAnimationComplete?: () => void;
+  disableInitialAnimation?: boolean;
 };
 
 export type TitleProps = {
