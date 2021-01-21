@@ -106,6 +106,34 @@ Array [
       Hover me
     </button>
   </div>,
+  .c1 {
+  display: block;
+}
+
+.c0 {
+  margin: 20px 0 20px 20px;
+}
+
+<div
+    className="c0"
+  >
+    <span>
+      Open delay: 0ms; Close delay: 0ms
+    </span>
+    <button
+      className="c1"
+      onBlur={[Function]}
+      onFocus={[Function]}
+      onKeyDown={[Function]}
+      onMouseDown={[Function]}
+      onMouseEnter={[Function]}
+      onMouseLeave={[Function]}
+      onMouseMove={[Function]}
+      type="button"
+    >
+      Hover me
+    </button>
+  </div>,
 ]
 `;
 

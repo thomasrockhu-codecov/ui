@@ -88,6 +88,10 @@ class TooltipStore {
     }, openDelay);
   };
 
+  clearBecomingVisibleTimeout = () => {
+    window.clearTimeout(this.becomingVisibleTimeout);
+  };
+
   startLeavingVisibleTimeout = (closeDelay?: number) => {
     window.clearTimeout(this.leavingVisibleTimeout);
     this.setState(State.LEAVING_VISIBLE);

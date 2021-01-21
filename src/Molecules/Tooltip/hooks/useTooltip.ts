@@ -44,6 +44,7 @@ export const useTooltip = (mode: TooltipProps['mode'], openDelay?: number, close
 
   const handleMouseLeave = useCallback(() => {
     if (mode !== 'hover') return;
+    store.clearBecomingVisibleTimeout();
 
     if (store.isVisible()) {
       store.startLeavingVisibleTimeout(closeDelay);
