@@ -1,3 +1,10 @@
+## [5.12.1](https://github.com/nordnet/ui/compare/v5.12.0...v5.12.1) (2021-01-21)
+
+
+### Bug Fixes
+
+* clear become visible timeout on mouse leave ([e364c9c](https://github.com/nordnet/ui/commit/e364c9c))
+
 # [5.12.0](https://github.com/nordnet/ui/compare/v5.11.0...v5.12.0) (2021-01-21)
 
 
