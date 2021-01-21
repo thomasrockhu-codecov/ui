@@ -18,7 +18,17 @@ import { useTooltip } from './hooks';
 
 export const Tooltip: TooltipComponent = forwardRef(
   (
-    { children, label, ariaLabel, position = 'bottom', mode = 'hover', inModal, maxWidth = 50 },
+    {
+      children,
+      label,
+      ariaLabel,
+      position = 'bottom',
+      mode = 'hover',
+      inModal,
+      maxWidth = 50,
+      openDelay = 100,
+      closeDelay = 500,
+    },
     ref,
   ) => {
     const child = React.Children.only(children) as any;
@@ -34,7 +44,7 @@ export const Tooltip: TooltipComponent = forwardRef(
       handleMouseLeave,
       handleKeyDown,
       handleMouseDown,
-    } = useTooltip(mode);
+    } = useTooltip(mode, openDelay, closeDelay);
 
     return (
       <>

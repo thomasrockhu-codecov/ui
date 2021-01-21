@@ -4,7 +4,7 @@ import { useId } from './useId';
 import { store, State } from './useTooltip.store';
 import { useOnClickOutside } from '../../../common/Hooks';
 
-export const useTooltip = (mode: TooltipProps['mode']) => {
+export const useTooltip = (mode: TooltipProps['mode'], openDelay?: number, closeDelay?: number) => {
   const id = useId('nn-tooltip-');
   const [isOpen, setIsOpen] = useState(false);
   const triggerElementRef = useRef(null);
@@ -24,19 +24,20 @@ export const useTooltip = (mode: TooltipProps['mode']) => {
 
   const handleMouseEnter = useCallback(() => {
     if (mode !== 'hover') return;
+    console.log('store', store);
 
     if (!store.isVisible()) {
-      store.startBecomingVisibleTimeout(id);
+      store.startBecomingVisibleTimeout(id, openDelay);
     } else if (store.state === State.LEAVING_VISIBLE) {
       store.setState(State.VISIBLE, id);
     }
-  }, [id, mode]);
+  }, [id, mode, openDelay]);
 
   const handleMouseMove = useCallback(() => {
     if (mode !== 'hover') return;
 
     if (!store.isVisible()) {
-      store.startBecomingVisibleTimeout(id);
+      store.startBecomingVisibleTimeout(id, openDelay);
     } else if (store.state === State.LEAVING_VISIBLE) {
       store.setState(State.VISIBLE, id);
     }
@@ -46,9 +47,9 @@ export const useTooltip = (mode: TooltipProps['mode']) => {
     if (mode !== 'hover') return;
 
     if (store.isVisible()) {
-      store.startLeavingVisibleTimeout();
+      store.startLeavingVisibleTimeout(closeDelay);
     }
-  }, [mode]);
+  }, [mode, closeDelay]);
 
   const handleFocus = useCallback(() => {
     store.setState(State.VISIBLE, id);
@@ -56,9 +57,9 @@ export const useTooltip = (mode: TooltipProps['mode']) => {
 
   const handleBlur = useCallback(() => {
     if (store.isVisible()) {
-      store.startLeavingVisibleTimeout();
+      store.startLeavingVisibleTimeout(closeDelay);
     }
-  }, []);
+  }, [closeDelay]);
 
   const handleKeyDown = useCallback((event: KeyboardEvent) => {
     if (

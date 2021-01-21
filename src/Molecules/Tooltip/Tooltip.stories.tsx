@@ -17,10 +17,31 @@ const Button = styled.button`
   display: block;
 `;
 
+const StyledDiv = styled.div`
+  margin: 20px 0 20px 20px;
+`;
+
 export const defaultStory = () => (
-  <Tooltip label={label} position="top">
-    <Button type="button">Hover me</Button>
-  </Tooltip>
+  <>
+    <StyledDiv>
+      <span>Default delays</span>
+      <Tooltip label={label} position="top">
+        <Button type="button">Hover me</Button>
+      </Tooltip>
+    </StyledDiv>
+    <StyledDiv>
+      <span>Open delay: 2000ms; Close delay: 3000ms</span>
+      <Tooltip label={label} position="top" openDelay={2000} closeDelay={3000}>
+        <Button type="button">Hover me</Button>
+      </Tooltip>
+    </StyledDiv>
+    <StyledDiv>
+      <span>Open delay: 10ms; Close delay: 10ms</span>
+      <Tooltip label={label} position="top" openDelay={10} closeDelay={10}>
+        <Button type="button">Hover me</Button>
+      </Tooltip>
+    </StyledDiv>
+  </>
 );
 
 defaultStory.story = {
