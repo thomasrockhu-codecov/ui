@@ -24,7 +24,6 @@ export const useTooltip = (mode: TooltipProps['mode'], openDelay?: number, close
 
   const handleMouseEnter = useCallback(() => {
     if (mode !== 'hover') return;
-    console.log('store', store);
 
     if (!store.isVisible()) {
       store.startBecomingVisibleTimeout(id, openDelay);
@@ -41,7 +40,7 @@ export const useTooltip = (mode: TooltipProps['mode'], openDelay?: number, close
     } else if (store.state === State.LEAVING_VISIBLE) {
       store.setState(State.VISIBLE, id);
     }
-  }, [id, mode]);
+  }, [id, mode, openDelay]);
 
   const handleMouseLeave = useCallback(() => {
     if (mode !== 'hover') return;
