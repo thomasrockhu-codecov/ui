@@ -21,23 +21,92 @@ exports[`Storyshots Molecules / Tooltip Custom max-width 1`] = `
 `;
 
 exports[`Storyshots Molecules / Tooltip Default 1`] = `
-.c0 {
+Array [
+  .c1 {
   display: block;
 }
 
-<button
-  className="c0"
-  onBlur={[Function]}
-  onFocus={[Function]}
-  onKeyDown={[Function]}
-  onMouseDown={[Function]}
-  onMouseEnter={[Function]}
-  onMouseLeave={[Function]}
-  onMouseMove={[Function]}
-  type="button"
->
-  Hover me
-</button>
+.c0 {
+  margin: 20px 0 20px 20px;
+}
+
+<div
+    className="c0"
+  >
+    <span>
+      Default delays
+    </span>
+    <button
+      className="c1"
+      onBlur={[Function]}
+      onFocus={[Function]}
+      onKeyDown={[Function]}
+      onMouseDown={[Function]}
+      onMouseEnter={[Function]}
+      onMouseLeave={[Function]}
+      onMouseMove={[Function]}
+      type="button"
+    >
+      Hover me
+    </button>
+  </div>,
+  .c1 {
+  display: block;
+}
+
+.c0 {
+  margin: 20px 0 20px 20px;
+}
+
+<div
+    className="c0"
+  >
+    <span>
+      Open delay: 2000ms; Close delay: 3000ms
+    </span>
+    <button
+      className="c1"
+      onBlur={[Function]}
+      onFocus={[Function]}
+      onKeyDown={[Function]}
+      onMouseDown={[Function]}
+      onMouseEnter={[Function]}
+      onMouseLeave={[Function]}
+      onMouseMove={[Function]}
+      type="button"
+    >
+      Hover me
+    </button>
+  </div>,
+  .c1 {
+  display: block;
+}
+
+.c0 {
+  margin: 20px 0 20px 20px;
+}
+
+<div
+    className="c0"
+  >
+    <span>
+      Open delay: 10ms; Close delay: 10ms
+    </span>
+    <button
+      className="c1"
+      onBlur={[Function]}
+      onFocus={[Function]}
+      onKeyDown={[Function]}
+      onMouseDown={[Function]}
+      onMouseEnter={[Function]}
+      onMouseLeave={[Function]}
+      onMouseMove={[Function]}
+      type="button"
+    >
+      Hover me
+    </button>
+  </div>,
+]
 `;
 
 exports[`Storyshots Molecules / Tooltip Integration: With Drawer and Modal 1`] = `

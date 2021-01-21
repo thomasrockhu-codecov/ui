@@ -1,5 +1,3 @@
-import { OPEN_DELAY, CLOSE_DELAY } from '../consts';
-
 export enum State {
   IDLE,
   BECOMING_VISIBLE,
@@ -81,22 +79,22 @@ class TooltipStore {
     flashing tooltips all the time as the user moves the mouse around the screen.
   */
 
-  startBecomingVisibleTimeout = (id: string) => {
+  startBecomingVisibleTimeout = (id: string, openDelay?: number) => {
     window.clearTimeout(this.becomingVisibleTimeout);
     this.setState(State.BECOMING_VISIBLE, id);
 
     this.becomingVisibleTimeout = window.setTimeout(() => {
       this.setState(State.VISIBLE, id);
-    }, OPEN_DELAY);
+    }, openDelay);
   };
 
-  startLeavingVisibleTimeout = () => {
+  startLeavingVisibleTimeout = (closeDelay?: number) => {
     window.clearTimeout(this.leavingVisibleTimeout);
     this.setState(State.LEAVING_VISIBLE);
 
     this.leavingVisibleTimeout = window.setTimeout(() => {
       this.setState(State.IDLE);
-    }, CLOSE_DELAY);
+    }, closeDelay);
   };
 
   isVisible = () => {

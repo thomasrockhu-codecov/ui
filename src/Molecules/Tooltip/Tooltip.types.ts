@@ -10,6 +10,8 @@ export type Props = {
   /** max-width in units */
   maxWidth?: number;
   mode?: 'hover' | 'click';
+  openDelay?: number;
+  closeDelay?: number;
 };
 
 export type TooltipComponent = React.FC<Props>;
