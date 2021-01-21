@@ -1,3 +1,15 @@
+# [5.11.0](https://github.com/nordnet/ui/compare/v5.10.0...v5.11.0) (2021-01-21)
+
+
+### Bug Fixes
+
+* remove log and fix dep array ([b45ecd1](https://github.com/nordnet/ui/commit/b45ecd1))
+
+
+### Features
+
+* add open and close delay props to tooltip ([631fc2b](https://github.com/nordnet/ui/commit/631fc2b))
+
 # [5.10.0](https://github.com/nordnet/ui/compare/v5.9.3...v5.10.0) (2021-01-20)
 
 
