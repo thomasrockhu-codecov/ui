@@ -41,6 +41,12 @@ export const defaultStory = () => (
         <Button type="button">Hover me</Button>
       </Tooltip>
     </StyledDiv>
+    <StyledDiv>
+      <span>Open delay: 0ms; Close delay: 0ms</span>
+      <Tooltip label={label} position="top" openDelay={0} closeDelay={0}>
+        <Button type="button">Hover me</Button>
+      </Tooltip>
+    </StyledDiv>
   </>
 );
 
