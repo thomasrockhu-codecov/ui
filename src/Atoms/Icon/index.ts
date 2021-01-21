@@ -87,7 +87,9 @@ import { Printer } from './components/Printer';
 import { Questionmark } from './components/Questionmark';
 import { Raising } from './components/Raising';
 import { RealEstate } from './components/RealEstate';
-import { RiskMeter } from './components/RiskMeter';
+import { RiskLow } from './components/RiskLow';
+import { RiskMedium } from './components/RiskMedium';
+import { RiskHigh } from './components/RiskHigh';
 import { Rtmt } from './components/Rtmt';
 import { Search } from './components/Search';
 import { SellingpointFunds } from './components/SellingpointFunds';
@@ -212,7 +214,9 @@ export default {
   Questionmark,
   Raising,
   RealEstate,
-  RiskMeter,
+  RiskLow,
+  RiskMedium,
+  RiskHigh,
   Rtmt,
   Search,
   SellingpointFunds,
