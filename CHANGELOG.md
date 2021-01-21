@@ -1,3 +1,15 @@
+# [5.12.0](https://github.com/nordnet/ui/compare/v5.11.0...v5.12.0) (2021-01-21)
+
+
+### Bug Fixes
+
+* missing snapshot ([57c9fdc](https://github.com/nordnet/ui/commit/57c9fdc))
+
+
+### Features
+
+* risk low, medium, high icons ([60aab98](https://github.com/nordnet/ui/commit/60aab98))
+
 # [5.11.0](https://github.com/nordnet/ui/compare/v5.10.0...v5.11.0) (2021-01-21)
 
 
