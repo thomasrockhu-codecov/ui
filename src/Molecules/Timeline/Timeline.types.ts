@@ -14,7 +14,7 @@ export type StepProps = {
   date: Date;
   text: React.ReactNode;
   button?: ButtonProps;
-  status?: 'SUCCESS' | 'FAILURE' | 'ACTIVE';
+  status?: 'SUCCESS' | 'FAILURE' | 'ACTIVE' | 'PENDING';
 };
 
 export type Props = {

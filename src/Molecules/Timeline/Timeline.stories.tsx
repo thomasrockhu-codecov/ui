@@ -17,6 +17,7 @@ export const Default = () => {
           { text: 'Newest', date: new Date(2020, 6, 3) },
           { text: 'Kinda new', date: new Date(2020, 3, 1), status: 'FAILURE' },
           { text: 'Old', date: new Date(2020, 2, 1), status: 'ACTIVE' },
+          { text: 'Waiting for information', date: new Date(2020, 2, 1), status: 'PENDING' },
         ]}
       />
     </Box>

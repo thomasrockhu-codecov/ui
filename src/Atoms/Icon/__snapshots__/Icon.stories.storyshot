@@ -2626,6 +2626,49 @@ Array [
   display: block;
 }
 
+.c1 {
+  fill: #FFFFFF;
+}
+
+<div
+    style={
+      Object {
+        "display": "inline-block",
+        "outline": "1px dashed #bbb",
+      }
+    }
+  >
+    <svg
+      aria-hidden="true"
+      className="c0"
+      focusable="false"
+      preserveAspectRatio="xMidYMid meet"
+      role="presentation"
+      viewBox="0 0 20 20"
+    >
+      <path
+        className="c1"
+        d="M10 20C4.4771525 20 0 15.5228475 0 10S4.4771525 0 10 0s10 4.4771525 10 10-4.4771525 10-10 10z"
+      />
+      <path
+        d="M10 0c5.5228475 0 10 4.4771525 10 10s-4.4771525 10-10 10S0 15.5228475 0 10 4.4771525 0 10 0zm0 8c-1.1045695 0-2 .8954305-2 2s.8954305 2 2 2 2-.8954305 2-2-.8954305-2-2-2zM4 8c-1.1045695 0-2 .8954305-2 2s.8954305 2 2 2 2-.8954305 2-2-.8954305-2-2-2zm12 0c-1.1045695 0-2 .8954305-2 2s.8954305 2 2 2 2-.8954305 2-2-.8954305-2-2-2z"
+      />
+    </svg>
+  </div>,
+  .c0 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 20px;
+  height: 20px;
+  fill: #0046FF;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
+}
+
 <div
     style={
       Object {
@@ -5058,7 +5101,7 @@ exports[`Storyshots Atoms / Icon Available icons 1`] = `
   display: block;
 }
 
-.c21 {
+.c22 {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -5072,7 +5115,7 @@ exports[`Storyshots Atoms / Icon Available icons 1`] = `
   display: block;
 }
 
-.c22 {
+.c23 {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -5086,7 +5129,7 @@ exports[`Storyshots Atoms / Icon Available icons 1`] = `
   display: block;
 }
 
-.c23 {
+.c24 {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -5100,7 +5143,7 @@ exports[`Storyshots Atoms / Icon Available icons 1`] = `
   display: block;
 }
 
-.c24 {
+.c25 {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -5157,11 +5200,11 @@ exports[`Storyshots Atoms / Icon Available icons 1`] = `
 }
 
 .c14 {
-  stroke: #6E6E69;
+  fill: #FFFFFF;
 }
 
 .c15 {
-  stroke: #28282A;
+  stroke: #6E6E69;
 }
 
 .c16 {
@@ -5169,11 +5212,11 @@ exports[`Storyshots Atoms / Icon Available icons 1`] = `
 }
 
 .c17 {
-  fill: #28282A;
+  stroke: #28282A;
 }
 
 .c18 {
-  stroke: #28282A;
+  fill: #28282A;
 }
 
 .c19 {
@@ -5184,14 +5227,14 @@ exports[`Storyshots Atoms / Icon Available icons 1`] = `
   stroke: #28282A;
 }
 
-.c25 {
-  -webkit-transform: rotate(0deg);
-  -ms-transform: rotate(0deg);
-  transform: rotate(0deg);
+.c21 {
+  stroke: #28282A;
 }
 
 .c26 {
-  stroke: #6E6E69;
+  -webkit-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  transform: rotate(0deg);
 }
 
 .c27 {
@@ -5199,12 +5242,16 @@ exports[`Storyshots Atoms / Icon Available icons 1`] = `
 }
 
 .c28 {
+  stroke: #6E6E69;
+}
+
+.c29 {
   -webkit-transform: rotate(90deg);
   -ms-transform: rotate(90deg);
   transform: rotate(90deg);
 }
 
-.c29 {
+.c30 {
   -webkit-transform: rotate(0deg);
   -ms-transform: rotate(0deg);
   transform: rotate(0deg);
@@ -7710,6 +7757,43 @@ exports[`Storyshots Atoms / Icon Available icons 1`] = `
     <div
       className="c2"
     >
+      InfoPending
+    </div>
+    <div>
+      <div
+        style={
+          Object {
+            "display": "inline-block",
+            "outline": "1px dashed #bbb",
+          }
+        }
+      >
+        <svg
+          aria-hidden="true"
+          className="c3"
+          focusable="false"
+          preserveAspectRatio="xMidYMid meet"
+          role="presentation"
+          viewBox="0 0 20 20"
+        >
+          <path
+            className="c14"
+            d="M10 20C4.4771525 20 0 15.5228475 0 10S4.4771525 0 10 0s10 4.4771525 10 10-4.4771525 10-10 10z"
+          />
+          <path
+            d="M10 0c5.5228475 0 10 4.4771525 10 10s-4.4771525 10-10 10S0 15.5228475 0 10 4.4771525 0 10 0zm0 8c-1.1045695 0-2 .8954305-2 2s.8954305 2 2 2 2-.8954305 2-2-.8954305-2-2-2zM4 8c-1.1045695 0-2 .8954305-2 2s.8954305 2 2 2 2-.8954305 2-2-.8954305-2-2-2zm12 0c-1.1045695 0-2 .8954305-2 2s.8954305 2 2 2 2-.8954305 2-2-.8954305-2-2-2z"
+          />
+        </svg>
+      </div>
+    </div>
+  </div>
+  <div
+    className="c1"
+    direction="row"
+  >
+    <div
+      className="c2"
+    >
       Leaf
     </div>
     <div>
@@ -8363,7 +8447,7 @@ exports[`Storyshots Atoms / Icon Available icons 1`] = `
             transform="translate(1 1)"
           >
             <circle
-              className="c14"
+              className="c15"
               cx="11"
               cy="11"
               fill="none"
@@ -8668,7 +8752,7 @@ exports[`Storyshots Atoms / Icon Available icons 1`] = `
           viewBox="0 0 22 22"
         >
           <g
-            className="c15"
+            className="c16"
             fill="none"
             fillRule="evenodd"
             strokeWidth="2"
@@ -8748,7 +8832,7 @@ exports[`Storyshots Atoms / Icon Available icons 1`] = `
           viewBox="0 0 24 16"
         >
           <g
-            className="c16"
+            className="c17"
             fill="none"
             fillRule="evenodd"
             strokeWidth="2"
@@ -8794,7 +8878,7 @@ exports[`Storyshots Atoms / Icon Available icons 1`] = `
           viewBox="0 0 24 24"
         >
           <path
-            className="c17"
+            className="c18"
             d="M6.708 1.545L10.862 5.7l-2.41 3.664 6.291 6.291 3.797-2.278 3.994 3.995-4.078 5.216-.59-.007c-4.12-.044-7.472-1.67-11.022-5.385-3.738-3.912-5.22-7.284-5-11.405l.03-.55 4.834-3.696zM6.54 4.077L3.738 6.218l-.005.424c.018 3.083 1.23 5.715 4.135 8.856l.357.38c3.016 3.156 5.708 4.546 8.888 4.764l.424.021 2.452-3.137-1.746-1.745-3.796 2.279-8.445-8.445 2.41-3.666L6.54 4.077z"
             fillRule="nonzero"
           />
@@ -8829,7 +8913,7 @@ exports[`Storyshots Atoms / Icon Available icons 1`] = `
           viewBox="0 0 20 20"
         >
           <g
-            className="c18"
+            className="c19"
             fill="none"
             fillRule="evenodd"
             strokeWidth="2"
@@ -8880,7 +8964,7 @@ exports[`Storyshots Atoms / Icon Available icons 1`] = `
           viewBox="0 0 20 25"
         >
           <g
-            className="c19"
+            className="c20"
             fill="none"
             fillRule="evenodd"
             strokeWidth="2"
@@ -8923,7 +9007,7 @@ exports[`Storyshots Atoms / Icon Available icons 1`] = `
           viewBox="0 0 24 15"
         >
           <g
-            className="c20"
+            className="c21"
             fill="none"
             fillRule="evenodd"
             strokeWidth="2"
@@ -9183,7 +9267,7 @@ exports[`Storyshots Atoms / Icon Available icons 1`] = `
       >
         <svg
           aria-hidden="true"
-          className="c21"
+          className="c22"
           focusable="false"
           preserveAspectRatio="xMidYMid meet"
           role="presentation"
@@ -9222,7 +9306,7 @@ exports[`Storyshots Atoms / Icon Available icons 1`] = `
       >
         <svg
           aria-hidden="true"
-          className="c22"
+          className="c23"
           focusable="false"
           preserveAspectRatio="xMidYMid meet"
           role="presentation"
@@ -9266,7 +9350,7 @@ exports[`Storyshots Atoms / Icon Available icons 1`] = `
       >
         <svg
           aria-hidden="true"
-          className="c23"
+          className="c24"
           focusable="false"
           preserveAspectRatio="xMidYMid meet"
           role="presentation"
@@ -9305,7 +9389,7 @@ exports[`Storyshots Atoms / Icon Available icons 1`] = `
       >
         <svg
           aria-hidden="true"
-          className="c24"
+          className="c25"
           focusable="false"
           preserveAspectRatio="xMidYMid meet"
           role="presentation"
@@ -9379,7 +9463,7 @@ exports[`Storyshots Atoms / Icon Available icons 1`] = `
       >
         <svg
           aria-hidden="true"
-          className="c3 c25"
+          className="c3 c26"
           direction="ascending"
           focusable="false"
           preserveAspectRatio="xMidYMid meet"
@@ -9422,7 +9506,7 @@ exports[`Storyshots Atoms / Icon Available icons 1`] = `
           viewBox="0 0 24 24"
         >
           <path
-            className="c26"
+            className="c27"
             d="M12,1.64454792 L9.3866076,9.8333333 L1.47495162,9.8333333 L7.76482663,14.6514827 L5.15238966,22.6910996 L12,17.7166602 L18.8476103,22.6910996 L16.2351733,14.6514827 L22.5250484,9.8333333 L14.6133924,9.8333333 L12,1.64454792 Z"
             strokeWidth="1"
           />
@@ -9457,7 +9541,7 @@ exports[`Storyshots Atoms / Icon Available icons 1`] = `
           viewBox="0 0 24 24"
         >
           <path
-            className="c27"
+            className="c28"
             d="M12,3.28909585 L9.7518819,10.3333333 L2.94990324,10.3333333 L8.34965326,14.4696321 L6.10344598,21.3821992 L12,17.0986537 L17.896554,21.3821992 L15.6503467,14.4696321 L21.0500967,10.3333333 L14.2481181,10.3333333 L12,3.28909585 Z"
             strokeWidth="2"
           />
@@ -9656,7 +9740,7 @@ exports[`Storyshots Atoms / Icon Available icons 1`] = `
       >
         <svg
           aria-hidden="true"
-          className="c3 c28"
+          className="c3 c29"
           direction="up"
           focusable="false"
           preserveAspectRatio="xMidYMid meet"
@@ -9690,7 +9774,7 @@ exports[`Storyshots Atoms / Icon Available icons 1`] = `
       >
         <svg
           aria-hidden="true"
-          className="c3 c29"
+          className="c3 c30"
           direction="down"
           focusable="false"
           preserveAspectRatio="xMidYMid meet"
