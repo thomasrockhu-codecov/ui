@@ -5,13 +5,15 @@ import { Box, Icon, Flexbox, Button, Typography, ListItem, DateTime } from '../.
 
 const getStatusIcon = (status?: string) => {
   switch (status) {
+    case 'PENDING':
+      return <Icon.InfoPending size={5} fill={(t) => t.color.emptyState} />;
     case 'ACTIVE':
-      return <Icon.InfoCircle size={5} fill={t => t.color.cta} />;
+      return <Icon.InfoCircle size={5} fill={(t) => t.color.cta} />;
     case 'FAILURE':
-      return <Icon.CrossCircle size={5} fill={t => t.color.negative} />;
+      return <Icon.CrossCircle size={5} fill={(t) => t.color.negative} />;
     case 'SUCCESS':
     default:
-      return <Icon.CheckMarkCircle size={5} fill={t => t.color.positive} />;
+      return <Icon.CheckMarkCircle size={5} fill={(t) => t.color.positive} />;
   }
 };
 
@@ -31,8 +33,8 @@ const StyledContainer = styled(Flexbox)`
 
 const StyledFlexbox = styled(Flexbox)`
   width: 100%;
-  padding-top: ${t => t.theme.spacing.unit(1)}px;
-  padding-bottom: ${t => t.theme.spacing.unit(1)}px;
+  padding-top: ${(t) => t.theme.spacing.unit(1)}px;
+  padding-bottom: ${(t) => t.theme.spacing.unit(1)}px;
 `;
 
 const lineStyles = (status: StepProps['status'], props: any) => {
@@ -59,7 +61,7 @@ const lineStyles = (status: StepProps['status'], props: any) => {
 };
 
 const StyledListItem = styled(ListItem).withConfig({
-  shouldForwardProp: prop =>
+  shouldForwardProp: (prop) =>
     !['previousStatus', 'currentStatus', 'colorSuccess', 'colorNext'].includes(prop),
 })<{
   previousStatus: StepProps['status'];
@@ -69,19 +71,19 @@ const StyledListItem = styled(ListItem).withConfig({
 }>`
   /* Divider of each element except last one */
   &:not(:last-of-type) > div > div:nth-child(2) {
-    border-bottom: 1px solid ${t => t.theme.color.divider};
+    border-bottom: 1px solid ${(t) => t.theme.color.divider};
   }
 
   position: relative;
   & ::before {
-    ${props => lineStyles(props.previousStatus, props)};
+    ${(props) => lineStyles(props.previousStatus, props)};
   }
   /** Remove line from top element */
   & :first-child::before {
     content: none;
   }
   & ::after {
-    ${props => lineStyles(props.currentStatus, props)};
+    ${(props) => lineStyles(props.currentStatus, props)};
     bottom: 0;
   }
   /** Remove line from bottom element */
@@ -121,7 +123,7 @@ const Timeline: React.FC<Props> = ({ steps, colorSuccess, colorNext }) => {
 
               <StyledFlexbox item container direction="row" alignItems="center">
                 <Flexbox item container direction="column">
-                  <Typography type="tertiary" color={t => t.color.label}>
+                  <Typography type="tertiary" color={(t) => t.color.label}>
                     <DateTime options={dateTimeOptions} value={date.toUTCString()} />
                   </Typography>
                   <Typography type="secondary">{text}</Typography>

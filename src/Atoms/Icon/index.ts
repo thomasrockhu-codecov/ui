@@ -66,6 +66,7 @@ import { Import } from './components/Import';
 import { Increase } from './components/Increase';
 import { Industrial } from './components/Industrial';
 import { InfoCircle } from './components/InfoCircle';
+import { InfoPending } from './components/InfoPending';
 import { Leaf } from './components/Leaf';
 import { LineGraph } from './components/LineGraph';
 import { LowRisk } from './components/LowRisk';
@@ -193,6 +194,7 @@ export default {
   Increase,
   Industrial,
   InfoCircle,
+  InfoPending,
   Leaf,
   LineGraph,
   LowRisk,
