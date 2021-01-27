@@ -1,3 +1,10 @@
+## [5.12.2](https://github.com/nordnet/ui/compare/v5.12.1...v5.12.2) (2021-01-27)
+
+
+### Bug Fixes
+
+* new timeline state for pending ([4b74e15](https://github.com/nordnet/ui/commit/4b74e15))
+
 ## [5.12.1](https://github.com/nordnet/ui/compare/v5.12.0...v5.12.1) (2021-01-21)
 
 
