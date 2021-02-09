@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { action } from '@storybook/addon-actions';
 import { Drawer, Typography, Icon, Flexbox, FadedScroll } from '../../index';
 
 export default {
@@ -247,6 +248,41 @@ export const noInitialAnimationStory = () => {
   return <Example />;
 };
 
-defaultStory.story = {
-  name: 'Disabled initial animation',
+noInitialAnimationStory.story = {
+  name: 'No initial animation',
+};
+
+export const onAnimationCompleteStory = () => {
+  const Example = () => {
+    const [open, setOpen] = useState(true);
+
+    const toggle = () => {
+      setOpen(!open);
+    };
+
+    const onClose = () => {
+      setOpen(false);
+    };
+
+    return (
+      <div>
+        <button type="button" onClick={toggle}>
+          Toggle drawer
+        </button>
+        <Drawer
+          onClose={onClose}
+          title="Drawer title"
+          open={open}
+          onAnimationComplete={action('Animation complete')}
+        >
+          {contentLarge}
+        </Drawer>
+      </div>
+    );
+  };
+  return <Example />;
+};
+
+onAnimationCompleteStory.story = {
+  name: 'With on animation complete',
 };
