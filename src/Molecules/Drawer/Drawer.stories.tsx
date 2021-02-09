@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { action } from '@storybook/addon-actions';
 import { Drawer, Typography, Icon, Flexbox, FadedScroll } from '../../index';
 
 export default {
@@ -247,8 +248,8 @@ export const noInitialAnimationStory = () => {
   return <Example />;
 };
 
-WithoutCloseOnClickOutside.story = {
-  name: 'Without closing the drawer when clicking outside',
+noInitialAnimationStory.story = {
+  name: 'No initial animation',
 };
 
 export const onAnimationCompleteStory = () => {
@@ -272,7 +273,7 @@ export const onAnimationCompleteStory = () => {
           onClose={onClose}
           title="Drawer title"
           open={open}
-          onAnimationComplete={() => console.log('onAnimationComplete runs')}
+          onAnimationComplete={action('Animation complete')}
         >
           {contentLarge}
         </Drawer>
@@ -282,6 +283,6 @@ export const onAnimationCompleteStory = () => {
   return <Example />;
 };
 
-defaultStory.story = {
-  name: 'Disabled initial animation',
+onAnimationCompleteStory.story = {
+  name: 'With on animation complete',
 };
