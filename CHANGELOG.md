@@ -1,3 +1,10 @@
+# [5.13.0](https://github.com/nordnet/ui/compare/v5.12.2...v5.13.0) (2021-02-09)
+
+
+### Features
+
+* 🎸 add on animation complete prop to drawer ([14a5222](https://github.com/nordnet/ui/commit/14a5222))
+
 ## [5.12.2](https://github.com/nordnet/ui/compare/v5.12.1...v5.12.2) (2021-01-27)
 
 
