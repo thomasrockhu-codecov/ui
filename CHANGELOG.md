@@ -1,3 +1,10 @@
+## [5.13.1](https://github.com/nordnet/ui/compare/v5.13.0...v5.13.1) (2021-02-10)
+
+
+### Bug Fixes
+
+* make double date picker wrap better ([3bf72ab](https://github.com/nordnet/ui/commit/3bf72ab))
+
 # [5.13.0](https://github.com/nordnet/ui/compare/v5.12.2...v5.13.0) (2021-02-09)
 
 
