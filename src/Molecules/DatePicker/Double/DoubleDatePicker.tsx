@@ -9,7 +9,7 @@ import { Props } from './DoubleDatePicker.types';
  * Imported seperately because when imported in src/index.ts, Input will not have been imported yet and an error will be thrown
  */
 import Input from '../../Input';
-import { Box, Icon, DropdownBubble } from '../../..';
+import { Box, Icon, DropdownBubble, Flexbox } from '../../..';
 import { assert, isUndefined } from '../../../common/utils';
 import { useOnClickOutside } from '../../../common/Hooks';
 import { newDate, getLocale, getDateFormat, parseDateString } from '../shared/dateUtils';
@@ -20,13 +20,9 @@ import { DEFAULT_INPUT_WIDTH } from '../shared/constants';
 
 const INPUT_SPACING = 4;
 
-const StyledInputTextRight = styled(Input.Text)`
+const StyledInputText = styled(Input.Text)`
   z-index: 1;
-  padding-left: ${({ theme }) => theme.spacing.unit(INPUT_SPACING / 2)}px;
-`;
-const StyledInputTextLeft = styled(Input.Text)`
-  z-index: 1;
-  padding-right: ${({ theme }) => theme.spacing.unit(INPUT_SPACING / 2)}px;
+  margin-bottom: ${(p) => p.theme.spacing.unit(1)}px;
 `;
 
 const StyledDropdownBubble = styled(DropdownBubble)`
@@ -303,38 +299,40 @@ const DoubleDatePicker = React.forwardRef<HTMLDivElement, Props>((props, ref) =>
 
   return (
     <div ref={(ref || selfRef) as React.Ref<HTMLDivElement>}>
-      <StyledInputTextLeft
-        size={inputSize}
-        label={labelFrom}
-        disabled={disabled}
-        id={INPUT_ID_START}
-        data-testid="datepicker-input-start"
-        placeholder={dateFormat.toLowerCase()}
-        value={inputValueStart}
-        rightAddon={inputRightAddon}
-        onChange={handleInputOnChange}
-        onKeyDown={handleInputKeyDown}
-        onFocus={handleInputOnFocus}
-        onBlur={handleInputSubmit}
-        width={typeof width === 'string' ? width : `${theme.spacing.unit(width)}px`}
-        autoComplete="off"
-      />
-      <StyledInputTextRight
-        size={inputSize}
-        label={labelTo}
-        disabled={disabled}
-        id={INPUT_ID_END}
-        data-testid="datepicker-input-end"
-        placeholder={dateFormat.toLowerCase()}
-        value={inputValueEnd}
-        rightAddon={inputRightAddon}
-        onChange={handleInputOnChange}
-        onKeyDown={handleInputKeyDown}
-        onFocus={handleInputOnFocus}
-        onBlur={handleInputSubmit}
-        width={typeof width === 'string' ? width : `${theme.spacing.unit(width)}px`}
-        autoComplete="off"
-      />
+      <Flexbox container wrap="wrap" gutter={1} alignItems="flex-end">
+        <StyledInputText
+          size={inputSize}
+          label={labelFrom}
+          disabled={disabled}
+          id={INPUT_ID_START}
+          data-testid="datepicker-input-start"
+          placeholder={dateFormat.toLowerCase()}
+          value={inputValueStart}
+          rightAddon={inputRightAddon}
+          onChange={handleInputOnChange}
+          onKeyDown={handleInputKeyDown}
+          onFocus={handleInputOnFocus}
+          onBlur={handleInputSubmit}
+          width={typeof width === 'string' ? width : `${theme.spacing.unit(width)}px`}
+          autoComplete="off"
+        />
+        <StyledInputText
+          size={inputSize}
+          label={labelTo}
+          disabled={disabled}
+          id={INPUT_ID_END}
+          data-testid="datepicker-input-end"
+          placeholder={dateFormat.toLowerCase()}
+          value={inputValueEnd}
+          rightAddon={inputRightAddon}
+          onChange={handleInputOnChange}
+          onKeyDown={handleInputKeyDown}
+          onFocus={handleInputOnFocus}
+          onBlur={handleInputSubmit}
+          width={typeof width === 'string' ? width : `${theme.spacing.unit(width)}px`}
+          autoComplete="off"
+        />
+      </Flexbox>
       {open ? (
         <StyledDropdownBubbleWrapper>
           <StyledDropdownBubble>{datepicker}</StyledDropdownBubble>
