@@ -1,3 +1,11 @@
+## [5.14.1](https://github.com/nordnet/ui/compare/v5.14.0...v5.14.1) (2021-02-17)
+
+
+### Bug Fixes
+
+* adjust coach mark backdrop on window resize ([79d0798](https://github.com/nordnet/ui/commit/79d0798))
+* rename usewindowsize hook ([9a370f4](https://github.com/nordnet/ui/commit/9a370f4))
+
 # [5.14.0](https://github.com/nordnet/ui/compare/v5.13.1...v5.14.0) (2021-02-16)
 
 
