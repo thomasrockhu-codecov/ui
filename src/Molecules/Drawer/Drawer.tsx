@@ -158,8 +158,15 @@ export const Drawer = (React.forwardRef<HTMLDivElement, Props>(
       handleClose();
     }, [handleClose]);
 
-    useOnClickOutside(drawerRef, () => {
-      if (closeOnClickOutside) {
+    // TODO: cleanup, fix typescript
+    useOnClickOutside(drawerRef, (e) => {
+      const drawerDontCloseOnClickOutside = e.path.some(
+        (target) =>
+          target.dataset?.hasOwnProperty('drawerDontCloseOnClickOutside') &&
+          target.dataset?.drawerDontCloseOnClickOutside,
+      );
+
+      if (closeOnClickOutside && !drawerDontCloseOnClickOutside) {
         handleClose();
       }
     });

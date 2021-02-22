@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import { action } from '@storybook/addon-actions';
+import styled from 'styled-components';
 import { Drawer, Typography, Icon, Flexbox, FadedScroll } from '../../index';
+import Box from '../../Atoms/Box';
 
 export default {
   title: 'Molecules / Drawer',
@@ -220,6 +222,65 @@ export const WithoutCloseOnClickOutside = () => {
 
 WithoutCloseOnClickOutside.story = {
   name: 'Without closing the drawer when clicking outside',
+};
+
+export const WithoutCloseOnSpecificElementClick = () => {
+  const StyledBox = styled(Box)`
+    background: ${(p) => p.theme.color.paletteBlue[3]};
+  `;
+  const Example = () => {
+    const [open, setOpen] = useState(true);
+
+    const toggle = () => {
+      setOpen(!open);
+    };
+
+    const onClose = () => {
+      setOpen(false);
+    };
+
+    return (
+      <div>
+        <Box>
+          <button type="button" onClick={toggle}>
+            Toggle drawer (Buggy with close on click outside)
+          </button>
+        </Box>
+        <Box>
+          <button type="button" onClick={toggle} data-drawer-dont-close-on-click-outside>
+            Toggle drawer (Drawer click outside disabled on this element)
+          </button>
+        </Box>
+        <Box>
+          <button type="button">Random button</button>
+        </Box>
+        <StyledBox data-drawer-dont-close-on-click-outside p={8}>
+          <div>
+            <Typography type="title3">Random area</Typography>
+          </div>
+          <div>
+            <Typography type="primary">Clicking anywhere here does not close the drawer</Typography>
+          </div>
+          <Box>
+            <button type="button">Random button</button>
+          </Box>
+        </StyledBox>
+
+        <Drawer onClose={onClose} title="Drawer title" open={open}>
+          <Typography>
+            Certain elements on this page has a &quot;data-drawer-dont-close-on-click-outside&quot;
+            prop, which is an opt-out from drawer close. Try clicking on those elements and compare
+            with clicking somewhere else.
+          </Typography>
+        </Drawer>
+      </div>
+    );
+  };
+  return <Example />;
+};
+
+WithoutCloseOnSpecificElementClick.story = {
+  name: 'Without closing the drawer when clicking outside on specified elements',
 };
 
 export const noInitialAnimationStory = () => {
