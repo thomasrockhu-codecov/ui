@@ -247,14 +247,15 @@ export const WithoutCloseOnSpecificElementClick = () => {
           </button>
         </Box>
         <Box>
-          <button type="button" onClick={toggle} data-drawer-dont-close-on-click-outside>
+          <button type="button" onClick={toggle} data-drawer-prevent-click-outside>
             Toggle drawer (Drawer click outside disabled on this element)
           </button>
         </Box>
         <Box>
           <button type="button">Random button</button>
         </Box>
-        <StyledBox data-drawer-dont-close-on-click-outside p={8}>
+        drawerPreventOnClickOutside
+        <StyledBox data-drawer-prevent-click-outside p={8}>
           <div>
             <Typography type="title3">Random area</Typography>
           </div>
@@ -265,12 +266,11 @@ export const WithoutCloseOnSpecificElementClick = () => {
             <button type="button">Random button</button>
           </Box>
         </StyledBox>
-
         <Drawer onClose={onClose} title="Drawer title" open={open}>
           <Typography>
-            Certain elements on this page has a &quot;data-drawer-dont-close-on-click-outside&quot;
-            prop, which is an opt-out from drawer close. Try clicking on those elements and compare
-            with clicking somewhere else.
+            Certain elements on this page has a &quot;data-drawer-prevent-click-outside&quot; prop,
+            which is an opt-out from drawer close. Try clicking on those elements and compare with
+            clicking somewhere else.
           </Typography>
         </Drawer>
       </div>
