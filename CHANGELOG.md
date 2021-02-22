@@ -1,3 +1,10 @@
+## [5.14.2](https://github.com/nordnet/ui/compare/v5.14.1...v5.14.2) (2021-02-22)
+
+
+### Bug Fixes
+
+* 🐛 Make AccordionItem titles bold ([491d3f4](https://github.com/nordnet/ui/commit/491d3f4))
+
 ## [5.14.1](https://github.com/nordnet/ui/compare/v5.14.0...v5.14.1) (2021-02-17)
 
 
