@@ -1,3 +1,10 @@
+## [5.14.3](https://github.com/nordnet/ui/compare/v5.14.2...v5.14.3) (2021-02-23)
+
+
+### Bug Fixes
+
+* split locale for datepicker ([45e5de0](https://github.com/nordnet/ui/commit/45e5de0))
+
 ## [5.14.2](https://github.com/nordnet/ui/compare/v5.14.1...v5.14.2) (2021-02-22)
 
 
