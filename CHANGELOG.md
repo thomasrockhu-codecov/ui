@@ -1,3 +1,10 @@
+## [5.14.4](https://github.com/nordnet/ui/compare/v5.14.3...v5.14.4) (2021-02-24)
+
+
+### Bug Fixes
+
+* 🐛 add large Avatar size ([13b6352](https://github.com/nordnet/ui/commit/13b6352))
+
 ## [5.14.3](https://github.com/nordnet/ui/compare/v5.14.2...v5.14.3) (2021-02-23)
 
 
