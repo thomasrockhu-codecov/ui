@@ -9,6 +9,8 @@ const getSize = (p: StyledProps<Props>) => {
   switch (p.size) {
     case 's':
       return p.theme.spacing.unit(6);
+    case 'l':
+      return p.theme.spacing.unit(14);
     case 'm':
     default:
       return p.theme.spacing.unit(8);
@@ -24,6 +26,18 @@ const StyledDiv = styled(Flexbox)<Props>`
   border-radius: 50%;
 `;
 
+const fontSize = (size: 's' | 'm' | 'l') => {
+  switch (size) {
+    case 's':
+      return 'caption';
+    case 'l':
+      return 'title3';
+    case 'm':
+    default:
+      return 'tertiary';
+  }
+};
+
 export const Avatar: React.FunctionComponent<Props> = ({
   children,
   size = 'm',
@@ -36,7 +50,7 @@ export const Avatar: React.FunctionComponent<Props> = ({
     justifyContent="center"
     size={size}
   >
-    <Typography type={size === 'm' ? 'tertiary' : 'caption'} color={(t) => t.color.textLight}>
+    <Typography type={fontSize(size)} weight="regular" color={(t) => t.color.textLight}>
       {children}
     </Typography>
   </StyledDiv>
