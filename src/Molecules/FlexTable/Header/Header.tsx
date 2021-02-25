@@ -67,8 +67,11 @@ const StyledFlexbox = styled(Flexbox)<StyledFlexboxProps>`
 
 const persistedSortOrderLocalStorageKey = 'flexTableSortOrder';
 
-const tableHasSavedPersistedSortOrder = (persistSortingOrder: boolean, tableId: string) => {
-  if (!persistSortingOrder) {
+const tableHasSavedPersistedSortOrder = (
+  persistSortingOrder: boolean,
+  tableId: string | undefined,
+) => {
+  if (!persistSortingOrder || !tableId) {
     return false;
   }
 
@@ -84,21 +87,44 @@ const tableHasSavedPersistedSortOrder = (persistSortingOrder: boolean, tableId: 
   return !!parsed[tableId];
 };
 
-const getPersistedSortOrder = (persistSortingOrder: boolean, tableId: string, columnId: string) => {
-  if (tableHasSavedPersistedSortOrder(persistSortingOrder, tableId)) {
+const getPersistedSortOrder = (
+  persistSortingOrder: boolean,
+  tableId: string | undefined,
+  columnId: string,
+) => {
+  if (tableId && tableHasSavedPersistedSortOrder(persistSortingOrder, tableId)) {
     const sortedSortOrders = localStorage.getItem(persistedSortOrderLocalStorageKey);
     const parsed = sortedSortOrders ? JSON.parse(sortedSortOrders) : {};
-    return parsed[tableId]?.[columnId] ?? null;
+    if (parsed[tableId].columnId === columnId) {
+      return parsed[tableId].sortOrder ?? null;
+    }
   }
   return null;
 };
 
-const setPersistedSortOrder = (tableId: string, columnId: string, newSortOrder: SortOrder) => {
+const setPersistedSortOrder = (
+  tableId: string | undefined,
+  columnId: string,
+  newSortOrder: SortOrder,
+) => {
   try {
-    const flexTableSortOrder = {
-      [`${tableId}`]: { [columnId]: newSortOrder },
-    };
-    localStorage.setItem(persistedSortOrderLocalStorageKey, JSON.stringify(flexTableSortOrder));
+    if (tableId) {
+      const flexTableSortOrder = {
+        [`${tableId}`]: { columnId, sortOrder: newSortOrder },
+      };
+      const sortedSortOrders = localStorage.getItem(persistedSortOrderLocalStorageKey);
+      if (sortedSortOrders) {
+        const parsed = JSON.parse(sortedSortOrders);
+        if (parsed) {
+          localStorage.setItem(
+            persistedSortOrderLocalStorageKey,
+            JSON.stringify({ ...parsed, ...flexTableSortOrder }),
+          );
+        }
+      } else {
+        localStorage.setItem(persistedSortOrderLocalStorageKey, JSON.stringify(flexTableSortOrder));
+      }
+    }
   } catch {
     // eslint-disable-next-line no-empty
     // Do nothing, fail silently
@@ -117,7 +143,11 @@ const Header: HeaderComponent = (props) => {
   } = props;
 
   const { xs, sm, md, lg, xl } = useFlexTable<'density'>('density');
-  const { id: tableId, persistSortingOrder } = useContext(FlexTableContext);
+  const contextData = useContext(FlexTableContext);
+  if (contextData === undefined) {
+    throw Error('No FlexTable provider, FlexTable rows can only be children of a FlexTable');
+  }
+  const { id: tableId, persistSortingOrder } = contextData;
 
   const [columnState, columnDispatch] = useColumnData(columnId);
 
@@ -132,7 +162,7 @@ const Header: HeaderComponent = (props) => {
         R.prop('sortOrder', columnState),
         sortOrderProp,
         persistedSortOrder,
-        savedSortOrderExists ? null : initialSortOrder,
+        savedSortOrderExists ? 'none' : initialSortOrder,
       )
     : null;
   const ariaSorted = sortable ? { 'aria-sort': sortOrder } : {};
