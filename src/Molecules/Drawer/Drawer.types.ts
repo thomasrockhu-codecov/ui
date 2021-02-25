@@ -12,6 +12,7 @@ export type Props = {
   onExitAnimationComplete?: () => void;
   onAnimationComplete?: () => void;
   disableInitialAnimation?: boolean;
+  preventOnClickOutsideDataAttributes?: string[];
 };
 
 export type TitleProps = {
