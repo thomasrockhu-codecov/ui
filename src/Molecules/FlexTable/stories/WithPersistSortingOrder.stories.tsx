@@ -5,6 +5,7 @@ import docs from '../FlexTable.mdx';
 import { SortOrder } from '../Header/HeaderContent/HeaderContent.types';
 import { OnSort } from '../Header/Header.types';
 import { StyledBackground } from './storiesShared';
+import { getPersistedSortOrder } from '../shared';
 
 export default {
   title: 'Molecules / FlexTable / With persist sorting order',
@@ -53,10 +54,16 @@ export const UncontrolledSortableHeadersThatSavesLastSorted = () => {
 export const ControlledSortableHeadersThatSavesLastSorted = () => {
   const ControlledSortableHeadersExample = () => {
     const ReactComponent = () => {
-      const [columnSort, setColumnSort] = useState<{ columnId: string; sortOrder: SortOrder }>({
+      const tableId = 'constrolled-table-saves-last-sorted';
+      const storedSortOrder = getPersistedSortOrder(tableId);
+      const initialSortOrder = storedSortOrder || {
         columnId: 'column1',
         sortOrder: FlexTable.CONSTANTS.SORT_ORDER_NONE,
-      });
+      };
+
+      const [columnSort, setColumnSort] = useState<{ columnId: string; sortOrder: SortOrder }>(
+        initialSortOrder,
+      );
 
       const getSort = (columnId: string) =>
         columnSort.columnId === columnId
@@ -68,7 +75,7 @@ export const ControlledSortableHeadersThatSavesLastSorted = () => {
       };
 
       return (
-        <FlexTable id="constrolled-table-saves-last-sorted" persistSortingOrder>
+        <FlexTable id={tableId} persistSortingOrder>
           <FlexTable.HeaderRow>
             <FlexTable.Header
               columnId="column1"

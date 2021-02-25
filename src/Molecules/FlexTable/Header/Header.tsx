@@ -5,7 +5,12 @@ import { HeaderComponent } from './Header.types';
 import { SortOrder } from './HeaderContent/HeaderContent.types';
 import { isElement, isFunction } from '../../../common/utils';
 import { Flexbox } from '../../..';
-import { SORT_ORDER_ASCENDING, SORT_ORDER_DESCENDING, SORT_ORDER_NONE } from '../shared/constants';
+import {
+  persistedSortOrderLocalStorageKey,
+  SORT_ORDER_ASCENDING,
+  SORT_ORDER_DESCENDING,
+  SORT_ORDER_NONE,
+} from '../shared/constants';
 import {
   useFlexCellProps,
   useColumnData,
@@ -13,7 +18,11 @@ import {
   ACTION_SET_INITIAL_SORTING,
 } from '../shared/ColumnProvider';
 import { HeaderContent, TextWrapper, SortIcon, SortButton } from './HeaderContent';
-import { getStylesForSizes } from '../shared';
+import {
+  getStylesForSizes,
+  getPersistedSortOrder,
+  tableHasSavedPersistedSortOrder,
+} from '../shared';
 import { useFlexTable } from '../shared/FlexTableProvider';
 import { Density } from '../shared/shared.types';
 import { getDensityPaddings } from '../shared/textUtils';
@@ -65,43 +74,6 @@ const StyledFlexbox = styled(Flexbox)<StyledFlexboxProps>`
   )}
 `;
 
-const persistedSortOrderLocalStorageKey = 'flexTableSortOrder';
-
-const tableHasSavedPersistedSortOrder = (
-  persistSortingOrder: boolean,
-  tableId: string | undefined,
-) => {
-  if (!persistSortingOrder || !tableId) {
-    return false;
-  }
-
-  const sortedSortOrders = localStorage.getItem(persistedSortOrderLocalStorageKey);
-  if (!sortedSortOrders) {
-    return false;
-  }
-
-  const parsed = JSON.parse(sortedSortOrders);
-  if (!parsed) {
-    return false;
-  }
-  return !!parsed[tableId];
-};
-
-const getPersistedSortOrder = (
-  persistSortingOrder: boolean,
-  tableId: string | undefined,
-  columnId: string,
-) => {
-  if (tableId && tableHasSavedPersistedSortOrder(persistSortingOrder, tableId)) {
-    const sortedSortOrders = localStorage.getItem(persistedSortOrderLocalStorageKey);
-    const parsed = sortedSortOrders ? JSON.parse(sortedSortOrders) : {};
-    if (parsed[tableId].columnId === columnId) {
-      return parsed[tableId].sortOrder ?? null;
-    }
-  }
-  return null;
-};
-
 const setPersistedSortOrder = (
   tableId: string | undefined,
   columnId: string,
@@ -151,11 +123,11 @@ const Header: HeaderComponent = (props) => {
 
   const [columnState, columnDispatch] = useColumnData(columnId);
 
-  const persistedSortOrder = persistSortingOrder
-    ? getPersistedSortOrder(persistSortingOrder, tableId, columnId)
-    : null;
+  const storedSortOrder = persistSortingOrder ? getPersistedSortOrder(tableId) : null;
+  const persistedSortOrder =
+    storedSortOrder && storedSortOrder.columnId === columnId ? storedSortOrder.sortOrder : null;
 
-  const savedSortOrderExists = tableHasSavedPersistedSortOrder(persistSortingOrder, tableId);
+  const savedSortOrderExists = persistSortingOrder && tableHasSavedPersistedSortOrder(tableId);
 
   const sortOrder = sortable
     ? getSortOrder(

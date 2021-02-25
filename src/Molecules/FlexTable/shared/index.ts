@@ -4,6 +4,7 @@ import * as constants from './constants';
 import { StyledTruncateTooltip } from './StyledTruncateTooltip';
 import getStylesForSizes from './getStylesForSizes';
 import { Text } from './Text';
+import { getPersistedSortOrder, tableHasSavedPersistedSortOrder } from './persistedSortOrder';
 
 export {
   constants,
@@ -12,4 +13,6 @@ export {
   StyledTruncateTooltip,
   getStylesForSizes,
   Text,
+  getPersistedSortOrder,
+  tableHasSavedPersistedSortOrder,
 };
