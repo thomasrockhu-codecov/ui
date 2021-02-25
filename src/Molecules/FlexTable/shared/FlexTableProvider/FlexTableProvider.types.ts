@@ -1,6 +1,11 @@
 import { Density, FontSize, MediaRelatedProps } from '../shared.types';
 
 export type FlexTableState = {
+  id?: string;
+  /**
+   * Flex table id.
+   * @default undefined
+   */
   /**
    * Set vertical padding for rows.
    * @default 'm'
@@ -26,6 +31,11 @@ export type FlexTableState = {
    * @default false
    */
   expandable: boolean;
+  /**
+   * Remember last sorted column. The last sorted column will be stored in local storage and be the initial sorted column.
+   * @default false
+   */
+  persistSortingOrder: boolean;
 };
 
 export type Props = MediaRelatedProps<FlexTableState> & FlexTableState;

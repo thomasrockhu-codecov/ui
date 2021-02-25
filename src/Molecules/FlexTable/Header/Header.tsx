@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useContext, useEffect } from 'react';
 import * as R from 'ramda';
 import styled from 'styled-components';
 import { HeaderComponent } from './Header.types';
@@ -17,6 +17,7 @@ import { getStylesForSizes } from '../shared';
 import { useFlexTable } from '../shared/FlexTableProvider';
 import { Density } from '../shared/shared.types';
 import { getDensityPaddings } from '../shared/textUtils';
+import { FlexTableContext } from '../shared/FlexTableProvider/FlexTableProvider';
 
 const SORT_ORDERS: SortOrder[] = [SORT_ORDER_NONE, SORT_ORDER_ASCENDING, SORT_ORDER_DESCENDING];
 
@@ -75,6 +76,14 @@ const Header: HeaderComponent = (props) => {
   } = props;
 
   const { xs, sm, md, lg, xl } = useFlexTable<'density'>('density');
+  const { id } = useContext(FlexTableContext);
+  const {
+    xs: xsPersistSortingOrder,
+    sm: smPersistSortingOrder,
+    md: mdPersistSortingOrder,
+    lg: lgPersistSortingOrder,
+    xl: xlPersistSortingOrder,
+  } = useFlexTable<'persistSortingOrder'>('persistSortingOrder');
 
   const [columnState, columnDispatch] = useColumnData(columnId);
   const sortOrder = sortable
@@ -106,6 +115,11 @@ const Header: HeaderComponent = (props) => {
     if (!controlledSort) {
       columnDispatch({ type: ACTION_SET_SORTING, sortOrder: newSortOrder });
     }
+    // TODO make into function and get localstorage and parse.
+    const flexTableSortOrder = {
+      [`${id}`]: { column: columnId, sortOrder: newSortOrder },
+    };
+    localStorage.setItem('flexTableSortOrder', JSON.stringify(flexTableSortOrder));
   };
 
   const sorted = !R.isNil(sortOrder) && sortOrder !== SORT_ORDER_NONE;

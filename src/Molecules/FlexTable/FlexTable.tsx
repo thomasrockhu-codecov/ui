@@ -80,6 +80,7 @@ const FlexTable: FlexTableComponent & FlexTableComponents = ({
   children,
   title,
   fontSize = 'm',
+  persistSortingOrder = false,
   sm,
   md,
   lg,
@@ -87,11 +88,13 @@ const FlexTable: FlexTableComponent & FlexTableComponents = ({
   ...htmlProps
 }) => (
   <FlexTableProvider
+    id={htmlProps.id}
     density={density}
     columnDistance={columnDistance}
     stickyHeader={stickyHeader}
     fontSize={fontSize}
     expandable={expandable}
+    persistSortingOrder={persistSortingOrder}
     sm={sm}
     md={md}
     lg={lg}

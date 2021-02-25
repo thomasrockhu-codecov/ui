@@ -34,9 +34,27 @@ interface PropsWithoutTitle extends Title {
 
 type TitleProps = PropsWithTitle | PropsWithoutTitle;
 
+interface PersistSortingOrder {
+  id?: string;
+  persistSortingOrder?: boolean;
+}
+
+interface PropsWithPersistSortingOrder extends PersistSortingOrder {
+  id: string;
+  persistSortingOrder: boolean;
+}
+
+interface PropsWithoutPersistSortingOrder extends PersistSortingOrder {
+  id?: string;
+  persistSortingOrder?: never;
+}
+
+type PersistSortingOrderProps = PropsWithPersistSortingOrder | PropsWithoutPersistSortingOrder;
+
 export type Props = {
   className?: string;
 } & TitleProps &
+  PersistSortingOrderProps &
   Partial<FlexTableProviderProps> &
   Omit<HtmlProps, 'title' | 'id'>;
 
