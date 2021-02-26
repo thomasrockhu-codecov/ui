@@ -87,6 +87,7 @@ import { PlusWithCircle } from './components/PlusWithCircle';
 import { Printer } from './components/Printer';
 import { Questionmark } from './components/Questionmark';
 import { Raising } from './components/Raising';
+import { Refresh } from './components/Refresh';
 import { RealEstate } from './components/RealEstate';
 import { RiskLow } from './components/RiskLow';
 import { RiskMedium } from './components/RiskMedium';
@@ -215,6 +216,7 @@ export default {
   Printer,
   Questionmark,
   Raising,
+  Refresh,
   RealEstate,
   RiskLow,
   RiskMedium,
