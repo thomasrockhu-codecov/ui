@@ -1,3 +1,10 @@
+# [5.15.0](https://github.com/nordnet/ui/compare/v5.14.4...v5.15.0) (2021-02-26)
+
+
+### Features
+
+* add refresh icon ([8c5070f](https://github.com/nordnet/ui/commit/8c5070f))
+
 ## [5.14.4](https://github.com/nordnet/ui/compare/v5.14.3...v5.14.4) (2021-02-24)
 
 
