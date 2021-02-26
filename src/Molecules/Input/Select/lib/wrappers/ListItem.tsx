@@ -9,7 +9,7 @@ const StyledListItemWrapper = styled.li`
   outline: none;
 `;
 
-type ListItemComponent = React.ComponentType<{ index: number }>;
+type ListItemComponent = React.ComponentType<{ index: number; option: any }>;
 
 export const ListItemWrapper = React.forwardRef<
   HTMLLIElement,
@@ -17,30 +17,35 @@ export const ListItemWrapper = React.forwardRef<
     component: ListItemComponent;
     option: Option;
     index: number;
-    onClick: React.MouseEventHandler;
+    onClick: (option: any) => React.MouseEventHandler;
     id: string;
   }
->((props, ref) => {
+>((props, ref): any => {
   const [current] = useSelectMachineFromContext();
-  const selected =
-    current.context.selectedItems.includes(props.option) ||
-    current.context.selectedItems.some(x => x.value === props.option.value);
-  const disabled = props.option.disabled;
+  const selected = (option: any) =>
+    option.options
+      ? false
+      : current.context.selectedItems.includes(option) ||
+        current.context.selectedItems.some(
+          (x) => x.value === option.value || x.options?.some((y: any) => y.value === option.value),
+        );
+
+  const allOptions = [props.option].concat(props.option.options ? props.option.options : []);
 
   const Component = props.component;
-  return (
+  return allOptions.map((option, childIndex) => (
     <StyledListItemWrapper
       ref={ref}
-      onClick={props.onClick}
+      onClick={props.onClick(option)}
       role="option"
-      aria-selected={selected}
-      aria-disabled={disabled}
-      id={`${props.id}-option-${props.index}`}
+      aria-selected={selected(option)}
+      aria-disabled={option.disabled}
+      id={`${props.id}-option-${props.index}-${childIndex}`}
       // This tabIndex needed for focus and blur
       // during onClick to behave correctly
       tabIndex={0}
     >
-      <Component index={props.index} />
+      <Component index={props.index} option={option} />
     </StyledListItemWrapper>
-  );
+  ));
 });

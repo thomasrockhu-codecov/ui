@@ -1312,7 +1312,6 @@ export const groupedOptions = () => {
   const options = [
     {
       label: 'Group 1',
-      group: true,
       options: new Array(5).fill(null).map((_, i) => ({
         label: `Child 1 ${i}`,
         value: `c1-${i}`,
@@ -1320,13 +1319,23 @@ export const groupedOptions = () => {
     },
     {
       label: 'Group 2',
-      group: true,
       options: new Array(5).fill(null).map((_, i) => ({
         label: `Child 2 ${i}`,
         value: `c2-${i}`,
       })),
     },
   ];
+
+  const valueToSelected = (_value: any) =>
+    options
+      .map((option) => ({
+        ...option,
+        options: option.options.filter((child) =>
+          _value.find((val: any) => val.value === child.value),
+        ),
+      }))
+      .filter((option) => option.options.length);
+
   return (
     <div>
       <Input.Select
@@ -1334,11 +1343,8 @@ export const groupedOptions = () => {
         options={options}
         label="Grouped options single"
         placeholder="Select option"
-        value={value}
-        onChange={(v) => {
-          setValue(v);
-          console.log('setValue', v);
-        }}
+        value={valueToSelected(value)}
+        onChange={setValue}
       />
     </div>
   );

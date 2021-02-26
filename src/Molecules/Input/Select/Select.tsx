@@ -1,6 +1,7 @@
 import React from 'react';
 import { useMachine } from '@xstate/react';
 import styled from 'styled-components';
+import * as R from 'ramda';
 
 import { useOnClickOutside } from '../../../common/Hooks';
 
@@ -36,6 +37,7 @@ import {
 } from './lib/hooks';
 import { SYMBOL_ALL } from './lib/constants';
 import TrackingContext from '../../../common/tracking';
+import { getSingleSelectValue } from './lib/utils';
 
 /* eslint-disable spaced-comment */
 const HiddenSelect = styled.select`
@@ -43,25 +45,25 @@ const HiddenSelect = styled.select`
 `;
 const noop = () => {};
 
-const getValuesForNativeSelect = (selectedItems: { value: any }[], isMultiselect: boolean) => {
+const getValuesForNativeSelect = (
+  selectedItems: { options?: any[]; value: any }[],
+  isMultiselect: boolean,
+) => {
   if (isMultiselect) {
     return selectedItems.map((x) => x.value);
   }
-  return selectedItems.length > 0 ? selectedItems[0].value : undefined;
+
+  const value = getSingleSelectValue(selectedItems);
+
+  return R.pathOr(undefined, ['value'], R.head(value));
 };
 
 const Select = (props: Props) => {
   assert(Boolean(props.id), `Input.Select: "id" is required.`);
   assert(
-    typeof props.value !== 'undefined'
-      ? typeof props.onChange !== 'undefined'
-      : typeof props.options === 'undefined',
+    typeof props.value !== 'undefined' ? typeof props.onChange !== 'undefined' : true,
     `Input.Select: You can't use 'value' prop without onChange. It makes sense only if you want a readonly Input.Select, which is really weird. Don't do that.`,
   );
-  // assert(
-  //   typeof props.value === 'undefined' && typeof props.options === 'undefined',
-  //   'Input.Select requires either value or options array',
-  // );
 
   const trackContext = React.useContext(TrackingContext);
 
@@ -225,6 +227,7 @@ const Select = (props: Props) => {
   const multiselect = machineState.context.multiselect;
 
   const ListWrapperComponent = props.withPortal ? ListWrapperWithPortal : ListWrapper;
+  const hiddenSelectValues = getValuesForNativeSelect(selectedItems, multiselect);
 
   return (
     <div className={props.className}>
@@ -234,7 +237,7 @@ const Select = (props: Props) => {
         ref={inputRef}
         aria-hidden="true"
         {...(multiselect ? { multiple: true } : {})}
-        value={getValuesForNativeSelect(selectedItems, multiselect)}
+        value={hiddenSelectValues}
         onChange={noop}
       >
         {placeholder && <option label={placeholder} value="" />}
@@ -311,7 +314,7 @@ const Select = (props: Props) => {
                   ref={setItemRef(index) as any}
                   option={x}
                   id={props.id}
-                  onClick={x.disabled ? noop : handleClickListItem(x)}
+                  onClick={(option: any) => (option.disabled ? noop : handleClickListItem(option))}
                   component={ListItem}
                 />
               ))}
