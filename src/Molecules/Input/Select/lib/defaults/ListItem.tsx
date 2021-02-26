@@ -11,18 +11,23 @@ export const ListItem: React.FC<{
 
   const selected =
     state.context.selectedItems.includes(option) ||
-    state.context.selectedItems.some(x => x.value === option.value);
+    state.context.selectedItems.some((x) => x.value === option.value);
 
   const focused = state.context.itemFocusIdx === index;
+  const allOptions = [option].concat(option?.options);
 
-  return (
-    <Option
-      selected={selected}
-      disabled={option.disabled}
-      label={option.label}
-      value={option.value}
-      focused={focused}
-      isKeyboardNavigation={isKeyboardNavigation}
-    />
+  return allOptions.map((option) =>
+    option.options ? (
+      <p>{option.label}</p>
+    ) : (
+      <Option
+        selected={selected}
+        disabled={option.disabled}
+        label={option.label}
+        value={option.value}
+        focused={focused}
+        isKeyboardNavigation={isKeyboardNavigation}
+      />
+    ),
   );
 };

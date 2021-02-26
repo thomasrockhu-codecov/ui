@@ -53,9 +53,15 @@ const getValuesForNativeSelect = (selectedItems: { value: any }[], isMultiselect
 const Select = (props: Props) => {
   assert(Boolean(props.id), `Input.Select: "id" is required.`);
   assert(
-    typeof props.value !== 'undefined' ? typeof props.onChange !== 'undefined' : true,
+    typeof props.value !== 'undefined'
+      ? typeof props.onChange !== 'undefined'
+      : typeof props.options === 'undefined',
     `Input.Select: You can't use 'value' prop without onChange. It makes sense only if you want a readonly Input.Select, which is really weird. Don't do that.`,
   );
+  // assert(
+  //   typeof props.value === 'undefined' && typeof props.options === 'undefined',
+  //   'Input.Select requires either value or options array',
+  // );
 
   const trackContext = React.useContext(TrackingContext);
 
@@ -232,9 +238,17 @@ const Select = (props: Props) => {
         onChange={noop}
       >
         {placeholder && <option label={placeholder} value="" />}
-        {options.map((x) => (
-          <option label={x.label} value={x.value} key={`${x.label}${x.value}`} />
-        ))}
+        {options.map((x: any) =>
+          x.options ? (
+            <optgroup label={x.label} key={x.label}>
+              {x.options.map((y: any) => (
+                <option label={y.label} value={y.value} key={`${y.label}${y.value}`} />
+              ))}
+            </optgroup>
+          ) : (
+            <option label={x.label} value={x.value} key={`${x.label}${x.value}`} />
+          ),
+        )}
       </HiddenSelect>
       <SelectStateContext.Provider value={machineHandlers}>
         <FormFieldOrFragment

@@ -1306,6 +1306,44 @@ export const autoPlacement = () => (
   </div>
 );
 
+export const groupedOptions = () => {
+  const [value, setValue] = React.useState([]);
+
+  const options = [
+    {
+      label: 'Group 1',
+      group: true,
+      options: new Array(5).fill(null).map((_, i) => ({
+        label: `Child 1 ${i}`,
+        value: `c1-${i}`,
+      })),
+    },
+    {
+      label: 'Group 2',
+      group: true,
+      options: new Array(5).fill(null).map((_, i) => ({
+        label: `Child 2 ${i}`,
+        value: `c2-${i}`,
+      })),
+    },
+  ];
+  return (
+    <div>
+      <Input.Select
+        id="grouped-options-single"
+        options={options}
+        label="Grouped options single"
+        placeholder="Select option"
+        value={value}
+        onChange={(v) => {
+          setValue(v);
+          console.log('setValue', v);
+        }}
+      />
+    </div>
+  );
+};
+
 export default {
   title: 'Molecules / Input / Select',
   parameters: {
