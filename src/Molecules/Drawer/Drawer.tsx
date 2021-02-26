@@ -161,6 +161,8 @@ export const Drawer = (React.forwardRef<HTMLDivElement, Props>(
     }, [handleClose]);
 
     useOnClickOutside(drawerRef, (e) => {
+      if (!closeOnClickOutside) return;
+
       const preventingDataAttributes = [
         PREVENT_CLICK_OUTSIDE_ATTRIBUTE,
         ...(preventOnClickOutsideDataAttributes || []),
@@ -180,9 +182,7 @@ export const Drawer = (React.forwardRef<HTMLDivElement, Props>(
           });
         });
 
-      if (closeOnClickOutside && !preventOnClickOutside) {
-        handleClose();
-      }
+      if (!preventOnClickOutside) handleClose();
     });
 
     useEffect(() => {
