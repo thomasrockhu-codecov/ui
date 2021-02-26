@@ -1,3 +1,10 @@
+## [5.15.1](https://github.com/nordnet/ui/compare/v5.15.0...v5.15.1) (2021-02-26)
+
+
+### Bug Fixes
+
+* add circle to refresh icon ([d69551c](https://github.com/nordnet/ui/commit/d69551c))
+
 # [5.15.0](https://github.com/nordnet/ui/compare/v5.14.4...v5.15.0) (2021-02-26)
 
 
