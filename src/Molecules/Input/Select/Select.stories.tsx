@@ -1326,6 +1326,7 @@ export const groupedOptions = () => {
     },
   ];
 
+  // selected -> group with selected
   const valueToSelected = (_value: any) =>
     options
       .map((option) => ({
@@ -1336,6 +1337,12 @@ export const groupedOptions = () => {
       }))
       .filter((option) => option.options.length);
 
+  // @ts-ignore
+  const handleChange = (newVal) => {
+    action('change')(newVal);
+    setValue(newVal);
+  };
+
   return (
     <div>
       <Input.Select
@@ -1344,7 +1351,7 @@ export const groupedOptions = () => {
         label="Grouped options single"
         placeholder="Select option"
         value={valueToSelected(value)}
-        onChange={setValue}
+        onChange={handleChange}
       />
     </div>
   );

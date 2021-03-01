@@ -101,6 +101,4 @@ type OptionItem = {
   [SYMBOL_ALL]?: boolean;
 };
 
-export type Option = OptionItem & {
-  options?: Array<OptionItem>;
-};
+export type Option = OptionItem & {};

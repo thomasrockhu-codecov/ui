@@ -1,17 +1,16 @@
 import * as React from 'react';
 import { useSelectMachineFromContext } from '../context';
-import { Option } from '../SingleSelectList/SingleSelectList';
-import { Option as OptionType } from '../../Select.types';
+import { Option, Optgroup } from '../SingleSelectList/SingleSelectList';
 
 export const ListItem: React.FC<{
   index: number;
-  option: OptionType;
-  onClick: React.MouseEventHandler;
-}> = ({ index, option }) => {
+}> = ({ index }) => {
   const [state] = useSelectMachineFromContext();
   const isKeyboardNavigation = state.matches('interaction.enabled.active.navigation.keyboard');
 
+  const option = state.context.visibleOptions[index];
   const focused = state.context.itemFocusIdx === index;
+
   const selected = option.options
     ? false
     : state.context.selectedItems.includes(option) ||
@@ -20,7 +19,7 @@ export const ListItem: React.FC<{
       );
 
   return option.options ? (
-    <p>{option.label}</p>
+    <Optgroup label={option.label} index={index} />
   ) : (
     <Option
       selected={selected}

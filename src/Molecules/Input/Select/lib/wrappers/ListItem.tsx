@@ -9,7 +9,7 @@ const StyledListItemWrapper = styled.li`
   outline: none;
 `;
 
-type ListItemComponent = React.ComponentType<{ index: number; option: any }>;
+type ListItemComponent = React.ComponentType<{ index: number }>;
 
 export const ListItemWrapper = React.forwardRef<
   HTMLLIElement,
@@ -17,35 +17,35 @@ export const ListItemWrapper = React.forwardRef<
     component: ListItemComponent;
     option: Option;
     index: number;
-    onClick: (option: any) => React.MouseEventHandler;
+    onClick: React.MouseEventHandler;
     id: string;
   }
->((props, ref): any => {
+>((props, ref) => {
   const [current] = useSelectMachineFromContext();
-  const selected = (option: any) =>
-    option.options
-      ? false
-      : current.context.selectedItems.includes(option) ||
-        current.context.selectedItems.some(
-          (x) => x.value === option.value || x.options?.some((y: any) => y.value === option.value),
-        );
-
-  const allOptions = [props.option].concat(props.option.options ? props.option.options : []);
+  const selected = props.option.options
+    ? false
+    : current.context.selectedItems.includes(props.option) ||
+      current.context.selectedItems.some(
+        (x) =>
+          x.value === props.option.value ||
+          x.options?.some((y: any) => y.value === props.option.value),
+      );
 
   const Component = props.component;
-  return allOptions.map((option, childIndex) => (
+
+  return (
     <StyledListItemWrapper
       ref={ref}
-      onClick={props.onClick(option)}
+      onClick={props.onClick}
       role="option"
-      aria-selected={selected(option)}
-      aria-disabled={option.disabled}
-      id={`${props.id}-option-${props.index}-${childIndex}`}
+      aria-selected={selected}
+      aria-disabled={props.option.disabled}
+      id={`${props.id}-option-${props.index}`}
       // This tabIndex needed for focus and blur
       // during onClick to behave correctly
       tabIndex={0}
     >
-      <Component index={props.index} option={option} />
+      <Component index={props.index} />
     </StyledListItemWrapper>
-  ));
+  );
 });

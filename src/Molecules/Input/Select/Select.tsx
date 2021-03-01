@@ -1,7 +1,7 @@
-import React from 'react';
+import React, { useMemo } from 'react';
 import { useMachine } from '@xstate/react';
 import styled from 'styled-components';
-import * as R from 'ramda';
+import R from 'ramda';
 
 import { useOnClickOutside } from '../../../common/Hooks';
 
@@ -69,13 +69,22 @@ const Select = (props: Props) => {
 
   const isFirstRender = useIsFirstRender();
 
+  const allOptions = useMemo(
+    () =>
+      R.pipe(
+        R.map((option: any) => (option.options ? [option, option.options] : option)),
+        R.flatten,
+      )(props.options),
+    [props.options],
+  );
+
   /******      Machine instantiation      ******/
   const machineHandlers = useMachine(SelectMachine, {
     context: {
       label: props.label,
       error: props.error || '',
       success: props.success || false,
-      options: props.options,
+      options: allOptions,
       selectedItems: [],
       disabled: props.disabled || false,
       open: false,
@@ -85,7 +94,7 @@ const Select = (props: Props) => {
       extraInfo: props.extraInfo || '',
       multiselect: props.multiselect || false,
       lastNavigationType: null,
-      visibleOptions: props.options,
+      visibleOptions: allOptions,
       showSearch: props.showSearch || false,
       id: props.id,
       valueFromProps: props.value,
@@ -127,7 +136,7 @@ const Select = (props: Props) => {
     {
       searchQuery: props.searchQuery || machineState.context.searchQuery,
       label: props.label,
-      options: props.options,
+      options: allOptions,
       placeholder: props.placeholder,
       error: props.error,
       valueFromProps: props.value,
@@ -142,7 +151,7 @@ const Select = (props: Props) => {
     [
       send,
       props.label,
-      props.options,
+      allOptions,
       props.placeholder,
       props.error,
       props.success,
@@ -307,14 +316,15 @@ const Select = (props: Props) => {
               maxHeight={props.listMaxHeight}
               width={props.width}
             >
-              {options.map((x: any, index: number) => (
+              {allOptions.map((x: any, index: number) => (
                 <ListItemWrapper
-                  key={x.value}
+                  // eslint-disable-next-line react/no-array-index-key
+                  key={index}
                   index={index}
                   ref={setItemRef(index) as any}
                   option={x}
                   id={props.id}
-                  onClick={(option: any) => (option.disabled ? noop : handleClickListItem(option))}
+                  onClick={x.disabled ? noop : handleClickListItem(x)}
                   component={ListItem}
                 />
               ))}
