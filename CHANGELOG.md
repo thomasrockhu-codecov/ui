@@ -1,3 +1,12 @@
+## [5.15.2](https://github.com/nordnet/ui/compare/v5.15.1...v5.15.2) (2021-03-01)
+
+
+### Bug Fixes
+
+* add missing options type to option type ([b66f7d2](https://github.com/nordnet/ui/commit/b66f7d2))
+* merge grouped options to fix issues with focused ([349b8ed](https://github.com/nordnet/ui/commit/349b8ed))
+* select single grouped value ([c3e0bf8](https://github.com/nordnet/ui/commit/c3e0bf8))
+
 ## [5.15.1](https://github.com/nordnet/ui/compare/v5.15.0...v5.15.1) (2021-02-26)
 
 
