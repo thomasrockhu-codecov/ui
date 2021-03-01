@@ -93,10 +93,14 @@ export type Props = {
   onSearchQueryChange?: (e: { type: string; payload: string }) => void;
 };
 
-export type Option = {
+type OptionItem = {
   [K: string]: any;
   label: string;
-  value: any;
+  value?: any;
   disabled?: boolean;
   [SYMBOL_ALL]?: boolean;
+};
+
+export type Option = OptionItem & {
+  options?: Array<OptionItem>;
 };

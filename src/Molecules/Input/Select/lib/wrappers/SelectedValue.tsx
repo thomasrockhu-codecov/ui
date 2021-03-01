@@ -4,6 +4,7 @@ import styled from 'styled-components';
 import { Typography, Flexbox } from '../../../../..';
 import { useSelectMachineFromContext } from '../context';
 import NormalizedElements from '../../../../../common/NormalizedElements';
+import { getSingleSelectValue } from '../utils';
 
 const FullWidthFlexbox = styled(Flexbox)`
   height: 100%;
@@ -14,17 +15,17 @@ const CleanNormalizedButton = React.forwardRef((props: any, ref: React.Ref<any>)
 ));
 
 const StyledA11yButton = styled(CleanNormalizedButton)`
-  background: ${p => (p.disabled ? p.theme.color.disabledBackground : 'transparent')};
+  background: ${(p) => (p.disabled ? p.theme.color.disabledBackground : 'transparent')};
   width: 100%;
   height: 100%;
-  cursor: ${p => (p.disabled ? 'not-allowed' : 'pointer')};
+  cursor: ${(p) => (p.disabled ? 'not-allowed' : 'pointer')};
   padding: 0;
   display: flex;
   border: 0;
   &:active {
     color: inherit;
   }
-  ${p =>
+  ${(p) =>
     !p.absolutePositioning
       ? ''
       : `
@@ -53,13 +54,15 @@ export const SelectedValueWrapper = React.forwardRef<any, any>(
     ref,
   ) => {
     const [state, send] = useSelectMachineFromContext();
-    const value = state.context.selectedItems;
+
+    const value = getSingleSelectValue(state.context.selectedItems);
+
     const screenReaderTextSelection =
       value.length === 1 ? R.pathOr('', [0, 'label'], value) : `${value.length} items`;
     const screenReaderText =
       value.length > 0 ? `${label}: ${screenReaderTextSelection}` : `${label}: ${placeholder}`;
 
-    const handleClick: React.MouseEventHandler = e => {
+    const handleClick: React.MouseEventHandler = (e) => {
       e.preventDefault();
       send({ type: 'TOGGLE' });
     };

@@ -22,19 +22,24 @@ export const ListItemWrapper = React.forwardRef<
   }
 >((props, ref) => {
   const [current] = useSelectMachineFromContext();
-  const selected =
-    current.context.selectedItems.includes(props.option) ||
-    current.context.selectedItems.some(x => x.value === props.option.value);
-  const disabled = props.option.disabled;
+  const selected = props.option.options
+    ? false
+    : current.context.selectedItems.includes(props.option) ||
+      current.context.selectedItems.some(
+        (x) =>
+          x.value === props.option.value ||
+          x.options?.some((y: any) => y.value === props.option.value),
+      );
 
   const Component = props.component;
+
   return (
     <StyledListItemWrapper
       ref={ref}
       onClick={props.onClick}
       role="option"
       aria-selected={selected}
-      aria-disabled={disabled}
+      aria-disabled={props.option.disabled}
       id={`${props.id}-option-${props.index}`}
       // This tabIndex needed for focus and blur
       // during onClick to behave correctly
