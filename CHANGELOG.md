@@ -1,3 +1,10 @@
+# [5.16.0](https://github.com/nordnet/ui/compare/v5.15.2...v5.16.0) (2021-03-02)
+
+
+### Features
+
+* 🎸 add neutral status and string type on date ([58604dc](https://github.com/nordnet/ui/commit/58604dc))
+
 ## [5.15.2](https://github.com/nordnet/ui/compare/v5.15.1...v5.15.2) (2021-03-01)
 
 
