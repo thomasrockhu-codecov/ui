@@ -1,3 +1,15 @@
+# [5.17.0](https://github.com/nordnet/ui/compare/v5.16.0...v5.17.0) (2021-03-02)
+
+
+### Bug Fixes
+
+* expose drawer footer ([3d2e2e3](https://github.com/nordnet/ui/commit/3d2e2e3))
+
+
+### Features
+
+* add footer prop to drawer ([1fea68a](https://github.com/nordnet/ui/commit/1fea68a))
+
 # [5.16.0](https://github.com/nordnet/ui/compare/v5.15.2...v5.16.0) (2021-03-02)
 
 
