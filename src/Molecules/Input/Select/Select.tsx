@@ -324,7 +324,7 @@ const Select = (props: Props) => {
                   ref={setItemRef(index) as any}
                   option={x}
                   id={props.id}
-                  onClick={x.disabled ? noop : handleClickListItem(x)}
+                  onClick={x.disabled || x.options ? noop : handleClickListItem(x)}
                   component={ListItem}
                 />
               ))}
