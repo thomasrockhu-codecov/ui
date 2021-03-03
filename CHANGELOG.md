@@ -1,3 +1,10 @@
+## [5.17.2](https://github.com/nordnet/ui/compare/v5.17.1...v5.17.2) (2021-03-03)
+
+
+### Bug Fixes
+
+* 🐛 make options group non-interactive ([72510cf](https://github.com/nordnet/ui/commit/72510cf))
+
 ## [5.17.1](https://github.com/nordnet/ui/compare/v5.17.0...v5.17.1) (2021-03-03)
 
 
