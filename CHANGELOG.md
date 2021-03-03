@@ -1,3 +1,10 @@
+## [5.17.3](https://github.com/nordnet/ui/compare/v5.17.2...v5.17.3) (2021-03-03)
+
+
+### Bug Fixes
+
+* drawer allow html props ([8dcb22c](https://github.com/nordnet/ui/commit/8dcb22c))
+
 ## [5.17.2](https://github.com/nordnet/ui/compare/v5.17.1...v5.17.2) (2021-03-03)
 
 
