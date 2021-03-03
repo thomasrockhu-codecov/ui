@@ -48,8 +48,16 @@ const StatusModal: React.FC<Props> = ({ id = '', loading = false, onClose, optio
             <Icon.WarningTriangle color={(t) => t.color.warning} size={23} />
           )}
           <Flexbox container direction="column" alignItems="center" gutter={2}>
-            {title && <Typography type="title2">{title}</Typography>}
-            {text && <Typography type="primary">{text}</Typography>}
+            {title && (
+              <Typography type="title2" textAlign="center">
+                {title}
+              </Typography>
+            )}
+            {text && (
+              <Typography type="primary" textAlign="center">
+                {text}
+              </Typography>
+            )}
             {textConfirm && !textCancel && (
               <Flexbox item>
                 <Box pt={2}>
