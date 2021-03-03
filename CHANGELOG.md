@@ -1,3 +1,10 @@
+## [5.17.1](https://github.com/nordnet/ui/compare/v5.17.0...v5.17.1) (2021-03-03)
+
+
+### Bug Fixes
+
+* 🐛 adjust type for group option items ([c32ee50](https://github.com/nordnet/ui/commit/c32ee50))
+
 # [5.17.0](https://github.com/nordnet/ui/compare/v5.16.0...v5.17.0) (2021-03-02)
 
 
