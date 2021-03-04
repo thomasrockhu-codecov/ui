@@ -5,12 +5,7 @@ import { HeaderComponent } from './Header.types';
 import { SortOrder } from './HeaderContent/HeaderContent.types';
 import { isElement, isFunction } from '../../../common/utils';
 import { Flexbox } from '../../..';
-import {
-  persistedSortOrderLocalStorageKey,
-  SORT_ORDER_ASCENDING,
-  SORT_ORDER_DESCENDING,
-  SORT_ORDER_NONE,
-} from '../shared/constants';
+import { SORT_ORDER_ASCENDING, SORT_ORDER_DESCENDING, SORT_ORDER_NONE } from '../shared/constants';
 import {
   useFlexCellProps,
   useColumnData,
@@ -27,6 +22,7 @@ import { useFlexTable } from '../shared/FlexTableProvider';
 import { Density } from '../shared/shared.types';
 import { getDensityPaddings } from '../shared/textUtils';
 import { FlexTableContext } from '../shared/FlexTableProvider/FlexTableProvider';
+import { setPersistedSortOrder } from '../shared/persistedSortOrder';
 
 const SORT_ORDERS: SortOrder[] = [SORT_ORDER_NONE, SORT_ORDER_ASCENDING, SORT_ORDER_DESCENDING];
 
@@ -74,35 +70,6 @@ const StyledFlexbox = styled(Flexbox)<StyledFlexboxProps>`
   )}
 `;
 
-const setPersistedSortOrder = (
-  tableId: string | undefined,
-  columnId: string,
-  newSortOrder: SortOrder,
-) => {
-  try {
-    if (tableId) {
-      const flexTableSortOrder = {
-        [`${tableId}`]: { columnId, sortOrder: newSortOrder },
-      };
-      const sortedSortOrders = localStorage.getItem(persistedSortOrderLocalStorageKey);
-      if (sortedSortOrders) {
-        const parsed = JSON.parse(sortedSortOrders);
-        if (parsed) {
-          localStorage.setItem(
-            persistedSortOrderLocalStorageKey,
-            JSON.stringify({ ...parsed, ...flexTableSortOrder }),
-          );
-        }
-      } else {
-        localStorage.setItem(persistedSortOrderLocalStorageKey, JSON.stringify(flexTableSortOrder));
-      }
-    }
-  } catch {
-    // eslint-disable-next-line no-empty
-    // Do nothing, fail silently
-  }
-};
-
 const Header: HeaderComponent = (props) => {
   const {
     children,
@@ -134,9 +101,10 @@ const Header: HeaderComponent = (props) => {
         R.prop('sortOrder', columnState),
         sortOrderProp,
         persistedSortOrder,
-        savedSortOrderExists ? 'none' : initialSortOrder,
+        savedSortOrderExists ? initialSortOrder : SORT_ORDER_NONE,
       )
     : null;
+
   const ariaSorted = sortable ? { 'aria-sort': sortOrder } : {};
   const cellFlexProps = useFlexCellProps(props);
   const controlledSort = sortOrderProp !== undefined;
@@ -163,8 +131,8 @@ const Header: HeaderComponent = (props) => {
     onSort(columnId, newSortOrder);
     if (!controlledSort) {
       columnDispatch({ type: ACTION_SET_SORTING, sortOrder: newSortOrder });
+      setPersistedSortOrder(tableId, columnId, newSortOrder);
     }
-    setPersistedSortOrder(tableId, columnId, newSortOrder);
   };
 
   const sorted = !R.isNil(sortOrder) && sortOrder !== SORT_ORDER_NONE;
