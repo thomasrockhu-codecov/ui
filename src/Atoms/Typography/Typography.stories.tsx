@@ -285,3 +285,15 @@ export const colors = () => (
     ]}
   />
 );
+
+export const textAlign = () => (
+  <Flexbox container direction="column">
+    <Typography type="primary">Default</Typography>
+    <Typography type="primary" textAlign="center">
+      Text align center
+    </Typography>
+    <Typography type="primary" textAlign="right">
+      Text align right
+    </Typography>
+  </Flexbox>
+);

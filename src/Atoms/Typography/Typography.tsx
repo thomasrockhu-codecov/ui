@@ -176,7 +176,7 @@ const CleanSpan = React.forwardRef<HTMLSpanElement, any>((props, ref) => (
   <Span
     ref={ref}
     as={props.forwardedAs}
-    {...R.omit(['color', 'type', 'weight', 'lineHeight'])(props)}
+    {...R.omit(['color', 'type', 'weight', 'lineHeight', 'textAlign'])(props)}
   />
 ));
 
@@ -185,23 +185,25 @@ const StyledTypography = styled(CleanSpan)<Props>`
     sans-serif;
   color: ${(p) => getColor(p)};
   margin: 0;
+  ${(p) => (p.textAlign ? `text-align: ${p.textAlign};` : '')}
   ${(p) => getTypeStyles(p)}
 `;
 
 export const Typography: React.FC<Props> = React.forwardRef<HTMLElement, Props>((props, ref) => {
-  const { as, className, children, color, id, type, weight, lineHeight } = props;
+  const { as, className, id, type, color, lineHeight, weight, textAlign, children } = props;
 
   return (
     <StyledTypography
+      ref={ref}
       className={className}
       id={id}
       forwardedAs={as}
-      color={color}
       type={type}
-      weight={weight}
+      color={color}
       lineHeight={lineHeight}
+      weight={weight}
+      textAlign={textAlign}
       {...pickAriaAttributes(props)}
-      ref={ref}
     >
       {children}
     </StyledTypography>
