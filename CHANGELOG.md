@@ -1,3 +1,15 @@
+# [5.18.0](https://github.com/nordnet/ui/compare/v5.17.3...v5.18.0) (2021-03-04)
+
+
+### Bug Fixes
+
+* 🐛 text align center in status modal ([b648992](https://github.com/nordnet/ui/commit/b648992))
+
+
+### Features
+
+* 🎸 add text align prop to typography ([f40d926](https://github.com/nordnet/ui/commit/f40d926))
+
 ## [5.17.3](https://github.com/nordnet/ui/compare/v5.17.2...v5.17.3) (2021-03-03)
 
 
