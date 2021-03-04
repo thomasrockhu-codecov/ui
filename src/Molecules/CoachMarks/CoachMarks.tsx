@@ -63,7 +63,6 @@ export const CoachMarks: Component = ({
   doneText = 'Done',
   multiStepIndicatorText = 'of',
   closeOnClickOutside = true,
-  ref,
 }) => {
   const [currentStep, setCurrentStep] = useState(0);
   const [referenceElementRect, setReferenceElementRect] = useState<ClientRect | null>(null);
@@ -84,7 +83,6 @@ export const CoachMarks: Component = ({
   });
 
   const internalCoachMarkRef = useRef<HTMLDivElement>(null);
-  const coachMarkRef = (ref || internalCoachMarkRef) as React.RefObject<HTMLDivElement>;
   const windowSize = useWindowSize();
   const hasMultipleSteps = steps.length > 1;
   const hasPrevStep = currentStep > 0;
@@ -129,7 +127,7 @@ export const CoachMarks: Component = ({
     }
   };
 
-  useOnClickOutside(coachMarkRef, () => {
+  useOnClickOutside(internalCoachMarkRef, () => {
     if (closeOnClickOutside) {
       handleClose();
     }
@@ -141,7 +139,14 @@ export const CoachMarks: Component = ({
         <RemoveScroll>
           <Bubble ref={setPopperElement} style={styles.popper} {...attributes.popper}>
             <BubbleArrow ref={setArrowElement} style={styles.arrow} bubblePlacement={placement} />
-            <Flexbox container item direction="column" flex="1" gutter={5} ref={coachMarkRef}>
+            <Flexbox
+              container
+              item
+              direction="column"
+              flex="1"
+              gutter={5}
+              ref={internalCoachMarkRef}
+            >
               {body || (
                 <Flexbox container direction="column" gutter={1}>
                   {icon && <IconFlex item>{icon}</IconFlex>}
