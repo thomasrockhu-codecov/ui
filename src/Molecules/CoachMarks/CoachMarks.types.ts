@@ -23,6 +23,8 @@ export type Props = {
   nextText?: string;
   doneText?: string;
   multiStepIndicatorText?: string;
+  closeOnClickOutside?: boolean;
+  ref?: React.Ref<HTMLDivElement>;
 };
 
 export type Component = React.FC<Props>;

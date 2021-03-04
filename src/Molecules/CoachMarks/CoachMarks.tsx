@@ -1,4 +1,4 @@
-import React, { useLayoutEffect, useState } from 'react';
+import React, { useLayoutEffect, useState, useRef } from 'react';
 import styled from 'styled-components';
 import { usePopper } from 'react-popper';
 import { RemoveScroll } from 'react-remove-scroll';
@@ -6,7 +6,7 @@ import FocusLock from 'react-focus-lock';
 import { Button, Icon, Flexbox, Media, Typography } from '../..';
 import { Component, ColsTrimmerProps } from './CoachMarks.types';
 import { makeBackdropPath } from './utils';
-import { useWindowSize } from '../../common/Hooks';
+import { useWindowSize, useOnClickOutside } from '../../common/Hooks';
 import Bubble from './Bubble';
 import BubbleArrow from './BubbleArrow';
 import { OFFSET_AWAY_FROM_REFERENCE } from './Bubble/consts';
@@ -62,6 +62,8 @@ export const CoachMarks: Component = ({
   nextText = 'Next',
   doneText = 'Done',
   multiStepIndicatorText = 'of',
+  closeOnClickOutside = true,
+  ref,
 }) => {
   const [currentStep, setCurrentStep] = useState(0);
   const [referenceElementRect, setReferenceElementRect] = useState<ClientRect | null>(null);
@@ -81,6 +83,8 @@ export const CoachMarks: Component = ({
     ],
   });
 
+  const internalCoachMarkRef = useRef<HTMLDivElement>(null);
+  const coachMarkRef = (ref || internalCoachMarkRef) as React.RefObject<HTMLDivElement>;
   const windowSize = useWindowSize();
   const hasMultipleSteps = steps.length > 1;
   const hasPrevStep = currentStep > 0;
@@ -125,13 +129,19 @@ export const CoachMarks: Component = ({
     }
   };
 
+  useOnClickOutside(coachMarkRef, () => {
+    if (closeOnClickOutside) {
+      handleClose();
+    }
+  });
+
   return referenceElementRect ? (
     <Media query={(t) => t.media.greaterThan(t.breakpoints.lg)}>
       <FocusLock>
         <RemoveScroll>
           <Bubble ref={setPopperElement} style={styles.popper} {...attributes.popper}>
             <BubbleArrow ref={setArrowElement} style={styles.arrow} bubblePlacement={placement} />
-            <Flexbox container item direction="column" flex="1" gutter={5}>
+            <Flexbox container item direction="column" flex="1" gutter={5} ref={coachMarkRef}>
               {body || (
                 <Flexbox container direction="column" gutter={1}>
                   {icon && <IconFlex item>{icon}</IconFlex>}
