@@ -1,3 +1,15 @@
+# [5.19.0](https://github.com/nordnet/ui/compare/v5.18.0...v5.19.0) (2021-03-04)
+
+
+### Bug Fixes
+
+* remove external ref ([473a81f](https://github.com/nordnet/ui/commit/473a81f))
+
+
+### Features
+
+* close coachmark on click outside ([740ac24](https://github.com/nordnet/ui/commit/740ac24))
+
 # [5.18.0](https://github.com/nordnet/ui/compare/v5.17.3...v5.18.0) (2021-03-04)
 
 
