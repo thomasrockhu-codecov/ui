@@ -1,3 +1,10 @@
+# [5.20.0](https://github.com/nordnet/ui/compare/v5.19.0...v5.20.0) (2021-03-04)
+
+
+### Features
+
+* add readonly prop to switch component ([1529548](https://github.com/nordnet/ui/commit/1529548))
+
 # [5.19.0](https://github.com/nordnet/ui/compare/v5.18.0...v5.19.0) (2021-03-04)
 
 
