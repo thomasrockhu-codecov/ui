@@ -11,10 +11,10 @@ export type ButtonProps = {
 };
 
 export type StepProps = {
-  date: Date;
+  date: Date | string;
   text: React.ReactNode;
   button?: ButtonProps;
-  status?: 'SUCCESS' | 'FAILURE' | 'ACTIVE' | 'PENDING';
+  status?: 'SUCCESS' | 'FAILURE' | 'ACTIVE' | 'PENDING' | 'NEUTRAL';
 };
 
 export type Props = {

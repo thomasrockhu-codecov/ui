@@ -3,11 +3,14 @@ import R from 'ramda';
 import styled from 'styled-components';
 import { useSelectMachineFromContext, ContextType } from '../context';
 import { Box } from '../../../../..';
+import { getSingleSelectValue } from '../utils';
 
 const getLabelOrPlaceholder = (state: ContextType[0]) => {
   if (state.context.selectedItems.length === 0) return state.context.placeholder;
 
-  const selectedOptionLabel = R.pathOr('', [0, 'label'], state.context.selectedItems);
+  const value = getSingleSelectValue(state.context.selectedItems);
+
+  const selectedOptionLabel = R.pathOr('', [0, 'label'], value);
   return selectedOptionLabel;
 };
 

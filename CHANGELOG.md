@@ -1,3 +1,45 @@
+# [5.17.0](https://github.com/nordnet/ui/compare/v5.16.0...v5.17.0) (2021-03-02)
+
+
+### Bug Fixes
+
+* expose drawer footer ([3d2e2e3](https://github.com/nordnet/ui/commit/3d2e2e3))
+
+
+### Features
+
+* add footer prop to drawer ([1fea68a](https://github.com/nordnet/ui/commit/1fea68a))
+
+# [5.16.0](https://github.com/nordnet/ui/compare/v5.15.2...v5.16.0) (2021-03-02)
+
+
+### Features
+
+* 🎸 add neutral status and string type on date ([58604dc](https://github.com/nordnet/ui/commit/58604dc))
+
+## [5.15.2](https://github.com/nordnet/ui/compare/v5.15.1...v5.15.2) (2021-03-01)
+
+
+### Bug Fixes
+
+* add missing options type to option type ([b66f7d2](https://github.com/nordnet/ui/commit/b66f7d2))
+* merge grouped options to fix issues with focused ([349b8ed](https://github.com/nordnet/ui/commit/349b8ed))
+* select single grouped value ([c3e0bf8](https://github.com/nordnet/ui/commit/c3e0bf8))
+
+## [5.15.1](https://github.com/nordnet/ui/compare/v5.15.0...v5.15.1) (2021-02-26)
+
+
+### Bug Fixes
+
+* add circle to refresh icon ([d69551c](https://github.com/nordnet/ui/commit/d69551c))
+
+# [5.15.0](https://github.com/nordnet/ui/compare/v5.14.4...v5.15.0) (2021-02-26)
+
+
+### Features
+
+* add refresh icon ([8c5070f](https://github.com/nordnet/ui/commit/8c5070f))
+
 ## [5.14.4](https://github.com/nordnet/ui/compare/v5.14.3...v5.14.4) (2021-02-24)
 
 

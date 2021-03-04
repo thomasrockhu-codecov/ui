@@ -102,7 +102,7 @@ type OptionProps = {
 };
 
 const hoverIfNotKeyboardNav = css<{ isKeyboardNavigation?: boolean }>`
-  ${p =>
+  ${(p) =>
     p.isKeyboardNavigation
       ? ''
       : `
@@ -114,28 +114,28 @@ const hoverIfNotKeyboardNav = css<{ isKeyboardNavigation?: boolean }>`
 const StyledOption = styled(Typography)<Partial<OptionProps>>`
   display: flex;
   align-items: center;
-  padding-right: ${p => p.theme.spacing.unit(3)}px;
-  padding-left: ${p => p.theme.spacing.unit(3)}px;
-  padding-top:${p => p.theme.spacing.unit(1)}px;
-  padding-bottom:${p => p.theme.spacing.unit(1)}px;
-  color: ${p => (p.selected ? p.theme.color.cta : p.theme.color.text)};
-  height: ${p => p.theme.spacing.unit(6)}px;
+  padding-right: ${(p) => p.theme.spacing.unit(3)}px;
+  padding-left: ${(p) => p.theme.spacing.unit(3)}px;
+  padding-top: ${(p) => p.theme.spacing.unit(1)}px;
+  padding-bottom: ${(p) => p.theme.spacing.unit(1)}px;
+  color: ${(p) => (p.selected ? p.theme.color.cta : p.theme.color.text)};
+  height: ${(p) => p.theme.spacing.unit(6)}px;
   outline: none;
 
   white-space: nowrap;
-  ${p =>
+  ${(p) =>
     p.focused
       ? `
     transform: translateZ(0);
   `
       : ''}
-  background: ${p => {
+  background: ${(p) => {
     if (p.focused && p.isKeyboardNavigation) return p.theme.color.background;
     return p.theme.color.selectOptionBackground;
   }};
   ${hoverIfNotKeyboardNav}
   cursor: pointer;
-  ${p =>
+  ${(p) =>
     p.disabled
       ? `
         color: ${p.theme.color.disabledText}
@@ -172,9 +172,27 @@ export const Option: React.FC<OptionProps> = ({
     {selected && (
       <Flexbox item container alignItems="center">
         <Box pl={2}>
-          <Icon.CheckMark size={4} color={t => t.color.cta} />
+          <Icon.CheckMark size={4} color={(t) => t.color.cta} />
         </Box>
       </Flexbox>
     )}
   </StyledOption>
 );
+
+const StyledOptgroup = styled(Typography)<{ index: number }>`
+  display: flex;
+  align-items: center;
+  padding-right: ${(p) => p.theme.spacing.unit(3)}px;
+  padding-left: ${(p) => p.theme.spacing.unit(3)}px;
+  padding-top: ${(p) => p.theme.spacing.unit(p.index === 0 ? 1 : 3)}px;
+  padding-bottom: ${(p) => p.theme.spacing.unit(1)}px;
+  color: ${(p) => p.theme.color.label};
+`;
+
+export const Optgroup: React.FC<{ index: number; label: string }> = ({ index, label }) => {
+  return (
+    <StyledOptgroup index={index} type="tertiary">
+      {label}
+    </StyledOptgroup>
+  );
+};
