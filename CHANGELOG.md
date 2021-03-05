@@ -1,3 +1,55 @@
+# [5.20.0](https://github.com/nordnet/ui/compare/v5.19.0...v5.20.0) (2021-03-04)
+
+
+### Features
+
+* add readonly prop to switch component ([1529548](https://github.com/nordnet/ui/commit/1529548))
+
+# [5.19.0](https://github.com/nordnet/ui/compare/v5.18.0...v5.19.0) (2021-03-04)
+
+
+### Bug Fixes
+
+* remove external ref ([473a81f](https://github.com/nordnet/ui/commit/473a81f))
+
+
+### Features
+
+* close coachmark on click outside ([740ac24](https://github.com/nordnet/ui/commit/740ac24))
+
+# [5.18.0](https://github.com/nordnet/ui/compare/v5.17.3...v5.18.0) (2021-03-04)
+
+
+### Bug Fixes
+
+* 🐛 text align center in status modal ([b648992](https://github.com/nordnet/ui/commit/b648992))
+
+
+### Features
+
+* 🎸 add text align prop to typography ([f40d926](https://github.com/nordnet/ui/commit/f40d926))
+
+## [5.17.3](https://github.com/nordnet/ui/compare/v5.17.2...v5.17.3) (2021-03-03)
+
+
+### Bug Fixes
+
+* drawer allow html props ([8dcb22c](https://github.com/nordnet/ui/commit/8dcb22c))
+
+## [5.17.2](https://github.com/nordnet/ui/compare/v5.17.1...v5.17.2) (2021-03-03)
+
+
+### Bug Fixes
+
+* 🐛 make options group non-interactive ([72510cf](https://github.com/nordnet/ui/commit/72510cf))
+
+## [5.17.1](https://github.com/nordnet/ui/compare/v5.17.0...v5.17.1) (2021-03-03)
+
+
+### Bug Fixes
+
+* 🐛 adjust type for group option items ([c32ee50](https://github.com/nordnet/ui/commit/c32ee50))
+
 # [5.17.0](https://github.com/nordnet/ui/compare/v5.16.0...v5.17.0) (2021-03-02)
 
 

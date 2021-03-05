@@ -23,6 +23,7 @@ export type Props = {
   nextText?: string;
   doneText?: string;
   multiStepIndicatorText?: string;
+  closeOnClickOutside?: boolean;
 };
 
 export type Component = React.FC<Props>;

@@ -187,6 +187,8 @@ const StyledOptgroup = styled(Typography)<{ index: number }>`
   padding-top: ${(p) => p.theme.spacing.unit(p.index === 0 ? 1 : 3)}px;
   padding-bottom: ${(p) => p.theme.spacing.unit(1)}px;
   color: ${(p) => p.theme.color.label};
+  pointer-events: none;
+  user-select: none;
 `;
 
 export const Optgroup: React.FC<{ index: number; label: string }> = ({ index, label }) => {

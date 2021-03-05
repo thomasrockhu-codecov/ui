@@ -1,4 +1,5 @@
 import React from 'react';
+import { Property } from 'csstype';
 import { Theme } from '../../theme/theme.types';
 
 type Values<ObjectType> = ObjectType extends Record<any, infer K> ? K : never; // can move it to util types
@@ -65,6 +66,7 @@ export type Props = {
    */
   type?: Types;
   lineHeight?: 'inherit';
+  textAlign?: Property.TextAlign;
   children: React.ReactNode;
 };
 
