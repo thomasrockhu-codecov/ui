@@ -72,6 +72,7 @@ export const ControlledSortableHeadersThatSavesLastSorted = () => {
 
       const onSort: OnSort = (columnId, nextSortOrder) => {
         setColumnSort({ columnId, sortOrder: nextSortOrder });
+        setPersistedSortOrder(tableId, columnId, nextSortOrder);
       };
 
       return (
@@ -138,10 +139,6 @@ export const OnlyAscendingDescendingThatSavesLastSorted = () => {
         columnSort.columnId === columnId
           ? columnSort.sortOrder
           : FlexTable.CONSTANTS.SORT_ORDER_NONE;
-
-      // const onSort: OnSort = (columnId, nextSortOrder) => {
-      //   setColumnSort({ columnId, sortOrder: nextSortOrder });
-      // };
 
       const onSort: OnSort = (columnId) => {
         let nextSortOrder: SortOrder = FlexTable.CONSTANTS.SORT_ORDER_ASCENDING;
