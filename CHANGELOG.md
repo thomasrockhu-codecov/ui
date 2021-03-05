@@ -1,3 +1,10 @@
+## [5.21.1](https://github.com/nordnet/ui/compare/v5.21.0...v5.21.1) (2021-03-05)
+
+
+### Bug Fixes
+
+* fix crash for options in input multiselect ([380d5c8](https://github.com/nordnet/ui/commit/380d5c8))
+
 # [5.21.0](https://github.com/nordnet/ui/compare/v5.20.0...v5.21.0) (2021-03-05)
 
 
