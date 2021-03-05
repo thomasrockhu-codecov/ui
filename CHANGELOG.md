@@ -1,3 +1,20 @@
+# [5.21.0](https://github.com/nordnet/ui/compare/v5.20.0...v5.21.0) (2021-03-05)
+
+
+### Bug Fixes
+
+* 🐛 handle persisted sort order for controlled sort ([7f78bf4](https://github.com/nordnet/ui/commit/7f78bf4))
+* 🐛 only set intial sorted column if no persisted column ([ae2dc9a](https://github.com/nordnet/ui/commit/ae2dc9a))
+* add missing snapshots ([2eb8da6](https://github.com/nordnet/ui/commit/2eb8da6))
+* add try statement when using local storage ([9628a4a](https://github.com/nordnet/ui/commit/9628a4a))
+* typing and localstorage value structure ([eaa5ba3](https://github.com/nordnet/ui/commit/eaa5ba3))
+
+
+### Features
+
+* extract get function for stored sorted order ([06d72d2](https://github.com/nordnet/ui/commit/06d72d2))
+* **flextable:** wip att persist prop ([6e12bc4](https://github.com/nordnet/ui/commit/6e12bc4))
+
 # [5.20.0](https://github.com/nordnet/ui/compare/v5.19.0...v5.20.0) (2021-03-04)
 
 
