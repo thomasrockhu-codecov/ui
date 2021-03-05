@@ -309,3 +309,61 @@ export const HiddenExpandItemOnDesktop = () => {
     </FlexTable>
   );
 };
+
+export const WholeRowExpandalbeTable = () => {
+  const expandItemsText = expandedItemsGenerator();
+  return (
+    <div>
+      <FlexTable expandable>
+        <FlexTable.HeaderRow>
+          <FlexTable.Header columnId="column1">Header 1</FlexTable.Header>
+          <FlexTable.Header columnId="column2">Header 2</FlexTable.Header>
+          <FlexTable.Header columnId="column3">Header 3</FlexTable.Header>
+        </FlexTable.HeaderRow>
+
+        <FlexTable.Row expandItems={expandItemsText} clickRowToExpand>
+          <FlexTable.Cell columnId="column1">Click anywhere</FlexTable.Cell>
+          <FlexTable.Cell columnId="column2">on this row</FlexTable.Cell>
+          <FlexTable.Cell columnId="column3">to toggle expand</FlexTable.Cell>
+        </FlexTable.Row>
+
+        <FlexTable.Row
+          expandItems={expandItemsText}
+          expandChildren={expandChildrenComponents}
+          clickRowToExpand
+        >
+          <FlexTable.Cell columnId="column1">Click anywhere</FlexTable.Cell>
+          <FlexTable.Cell columnId="column2">on this row</FlexTable.Cell>
+          <FlexTable.Cell columnId="column3">to toggle expand</FlexTable.Cell>
+        </FlexTable.Row>
+        <FlexTable.Row expandItems={expandItemsText} clickRowToExpand>
+          <FlexTable.Cell columnId="column1">Click anywhere</FlexTable.Cell>
+          <FlexTable.Cell columnId="column2">on this row</FlexTable.Cell>
+          <FlexTable.Cell columnId="column3">to toggle expand</FlexTable.Cell>
+        </FlexTable.Row>
+
+        <FlexTable.Row
+          expandItems={expandItemsText}
+          expandChildren={expandChildrenComponents}
+          clickRowToExpand
+        >
+          <FlexTable.Cell columnId="column1">Click anywhere</FlexTable.Cell>
+          <FlexTable.Cell columnId="column2">on this row</FlexTable.Cell>
+          <FlexTable.Cell columnId="column3">to toggle expand</FlexTable.Cell>
+        </FlexTable.Row>
+
+        <FlexTable.Row expandItems={expandItemsText}>
+          <FlexTable.Cell columnId="column1">This row is NOT clickable!</FlexTable.Cell>
+          <FlexTable.Cell columnId="column2">Except for on</FlexTable.Cell>
+          <FlexTable.Cell columnId="column3">the chevron...</FlexTable.Cell>
+        </FlexTable.Row>
+
+        <FlexTable.Row expandItems={expandItemsText} expandChildren={expandChildrenComponents}>
+          <FlexTable.Cell columnId="column1">This row is NOT clickable!</FlexTable.Cell>
+          <FlexTable.Cell columnId="column2">Except for on</FlexTable.Cell>
+          <FlexTable.Cell columnId="column3">the chevron...</FlexTable.Cell>
+        </FlexTable.Row>
+      </FlexTable>
+    </div>
+  );
+};

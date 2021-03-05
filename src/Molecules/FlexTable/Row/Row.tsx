@@ -49,6 +49,7 @@ type StyledRowProps = {
   $expanded: boolean;
   $separatorColor: ColorFn;
   $hoverHighlight: boolean;
+  $clickRowToExpand: boolean;
   $xs: ScreenSizeConfigurableProps;
   $sm: Partial<ScreenSizeConfigurableProps>;
   $md: Partial<ScreenSizeConfigurableProps>;
@@ -68,6 +69,8 @@ const StyledRow = styled(Flexbox)<StyledRowProps>`
 
   margin-right: 0;
   margin-left: 0;
+
+  cursor: ${({ $clickRowToExpand }) => ($clickRowToExpand ? 'pointer' : 'auto')};
 
   ${getStylesForSizes<
     {
@@ -99,6 +102,7 @@ const Row: RowComponent = ({
   initiallyExpanded = false,
   hoverHighlight = true,
   hideSeparator = false,
+  clickRowToExpand = false,
   rowType = 'content',
   separatorColor = (theme) => theme.color.divider,
   onExpandToggle,
@@ -147,6 +151,7 @@ const Row: RowComponent = ({
         $hideSeparator={hideSeparator}
         $hoverHighlight={hoverHighlight}
         $separatorColor={separatorColor}
+        $clickRowToExpand={clickRowToExpand}
         $xs={xsRow}
         $sm={smRow}
         $md={mdRow}
@@ -157,6 +162,7 @@ const Row: RowComponent = ({
         md={{ gutter: mdFlexbox?.columnDistance }}
         lg={{ gutter: lgFlexbox?.columnDistance }}
         xl={{ gutter: xlFlexbox?.columnDistance }}
+        onClick={clickRowToExpand ? onExpandToggleClick : undefined}
         {...htmlProps}
       >
         {children}
