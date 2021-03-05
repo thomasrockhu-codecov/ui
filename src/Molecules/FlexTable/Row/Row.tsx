@@ -8,6 +8,7 @@ import { ExpandItems, ExpandItem } from './components/ExpandItems';
 import { ExpandElement, ExpandRow } from './components';
 import { Theme } from '../../../theme/theme.types';
 import { getStylesForSizes } from '../shared';
+import { assert } from '../../../common/utils';
 
 const getExpandableStyles = (
   p: { expandable: boolean; expanded: boolean; hideSeparator: boolean; separatorColor: ColorFn } & {
@@ -111,6 +112,13 @@ const Row: RowComponent = ({
   children,
   ...htmlProps
 }) => {
+  if (clickRowToExpand && 'onClick' in htmlProps) {
+    assert(
+      false,
+      'FlexTable.Row: You can not use clickRowToExpand in combination with a custom onClick function',
+    );
+  }
+
   const { xs: xsRow, sm: smRow, md: mdRow, lg: lgRow, xl: xlRow } = useFlexTable<'expandable'>(
     'expandable',
   );

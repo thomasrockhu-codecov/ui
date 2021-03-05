@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
 import FlexTable from '../FlexTable';
+import { RowComponent } from '../Row/Row.types';
 import docs from '../FlexTable.mdx';
 import { Button, Flexbox, Number } from '../../..';
 
@@ -363,6 +364,50 @@ export const WholeRowExpandalbeTable = () => {
           <FlexTable.Cell columnId="column2">Except for on</FlexTable.Cell>
           <FlexTable.Cell columnId="column3">the chevron...</FlexTable.Cell>
         </FlexTable.Row>
+      </FlexTable>
+    </div>
+  );
+};
+
+export const ControlledWholeRowExpandalbeTable = () => {
+  // @ts-ignore
+  const ControlledRow: RowComponent = ({ children, ...rowProps }) => {
+    const [expanded, setExpanded] = useState(false);
+
+    return (
+      // @ts-ignore
+      <FlexTable.Row
+        {...rowProps}
+        expanded={expanded}
+        onExpandToggle={() => setExpanded(!expanded)}
+        clickRowToExpand
+      >
+        {children}
+      </FlexTable.Row>
+    );
+  };
+
+  const expandItemsText = expandedItemsGenerator();
+  return (
+    <div>
+      <FlexTable expandable>
+        <FlexTable.HeaderRow>
+          <FlexTable.Header columnId="column1">Header 1</FlexTable.Header>
+          <FlexTable.Header columnId="column2">Header 2</FlexTable.Header>
+          <FlexTable.Header columnId="column3">Header 3</FlexTable.Header>
+        </FlexTable.HeaderRow>
+
+        <ControlledRow expandItems={expandItemsText} expandChildren={expandChildrenComponents}>
+          <FlexTable.Cell columnId="column1">This row is</FlexTable.Cell>
+          <FlexTable.Cell columnId="column2">a controlled example</FlexTable.Cell>
+          <FlexTable.Cell columnId="column3">that handles the expansion</FlexTable.Cell>
+        </ControlledRow>
+
+        <ControlledRow expandItems={expandItemsText}>
+          <FlexTable.Cell columnId="column1">This row is</FlexTable.Cell>
+          <FlexTable.Cell columnId="column2">a controlled example</FlexTable.Cell>
+          <FlexTable.Cell columnId="column3">that handles the expansion</FlexTable.Cell>
+        </ControlledRow>
       </FlexTable>
     </div>
   );
