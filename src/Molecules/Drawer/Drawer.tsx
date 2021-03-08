@@ -5,13 +5,14 @@ import FocusLock from 'react-focus-lock';
 import { RemoveScroll } from 'react-remove-scroll';
 import { motion, useDragControls, AnimatePresence } from 'framer-motion';
 import { Props, TitleProps } from './Drawer.types';
-import { isBoolean, isElement } from '../../common/utils';
+import { isBoolean, isElement, fromKebabToCamelCase } from '../../common/utils';
 import { useOnClickOutside } from '../../common/Hooks';
 import { Typography, Icon, useKeyPress, Portal, useMedia, Button } from '../..';
 
 const CROSS_SIZE = 5;
 const PADDING = 5;
 const displayName = 'Drawer';
+const PREVENT_CLICK_OUTSIDE_ATTRIBUTE = 'drawerPreventClickOutside';
 
 const Container = styled(motion.div)`
   box-sizing: border-box;
@@ -131,6 +132,7 @@ export const Drawer = (React.forwardRef<HTMLDivElement, Props>(
       onExitAnimationComplete,
       onAnimationComplete,
       disableInitialAnimation,
+      preventOnClickOutsideDataAttributes,
       ...rest
     },
     ref,
@@ -167,10 +169,29 @@ export const Drawer = (React.forwardRef<HTMLDivElement, Props>(
       handleClose();
     }, [handleClose]);
 
-    useOnClickOutside(drawerRef, () => {
-      if (closeOnClickOutside) {
-        handleClose();
-      }
+    useOnClickOutside(drawerRef, (e) => {
+      if (!closeOnClickOutside) return;
+
+      const preventingDataAttributes = [
+        PREVENT_CLICK_OUTSIDE_ATTRIBUTE,
+        ...(preventOnClickOutsideDataAttributes || []),
+      ];
+
+      // look for data attributes in all elements above the clicked one to see if any prevents click outside
+      const preventOnClickOutside =
+        e instanceof Event && // e.composedPath() is not available in MouseEvent for some reason
+        e.composedPath().some((target) => {
+          // avoid click event target being window or document (= no dataset)
+          if (!(target instanceof HTMLElement)) return false;
+
+          return preventingDataAttributes.some((dataAttribute) => {
+            // remove data-prefix and camelcase attributes to match them to dataset keys
+            const formattedDataAttribute = fromKebabToCamelCase(dataAttribute.replace('data-', ''));
+            return target.dataset?.[formattedDataAttribute];
+          });
+        });
+
+      if (!preventOnClickOutside) handleClose();
     });
 
     useEffect(() => {

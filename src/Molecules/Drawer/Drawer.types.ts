@@ -15,6 +15,7 @@ export type Props = {
   onExitAnimationComplete?: () => void;
   onAnimationComplete?: () => void;
   disableInitialAnimation?: boolean;
+  preventOnClickOutsideDataAttributes?: string[];
 } & Omit<HtmlDivProps, 'title'>;
 
 export type TitleProps = {

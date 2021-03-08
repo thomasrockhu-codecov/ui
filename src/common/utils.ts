@@ -95,3 +95,6 @@ export function wrapEvent<EventType extends React.SyntheticEvent | Event>(
     }
   };
 }
+
+export const fromKebabToCamelCase = (str: string) =>
+  str.replace(/-./g, (match) => match[1].toUpperCase());
