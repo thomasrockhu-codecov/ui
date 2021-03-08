@@ -59,6 +59,12 @@ type Props = {
    * @default true
    */
   hoverHighlight?: boolean;
+  /**
+   * Extends the expand toggle functionallity from the chevron to the entire row
+   * Can not be used in combination with a custom onClick function
+   * @default false
+   */
+  clickRowToExpand?: boolean;
   separatorColor?: ColorFn;
   /**
    * Decides if it should render empty `Header`, `Footer` or chevron when table is expandable

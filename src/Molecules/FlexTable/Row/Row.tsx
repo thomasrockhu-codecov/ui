@@ -8,6 +8,7 @@ import { ExpandItems, ExpandItem } from './components/ExpandItems';
 import { ExpandElement, ExpandRow } from './components';
 import { Theme } from '../../../theme/theme.types';
 import { getStylesForSizes } from '../shared';
+import { assert } from '../../../common/utils';
 
 const getExpandableStyles = (
   p: { expandable: boolean; expanded: boolean; hideSeparator: boolean; separatorColor: ColorFn } & {
@@ -49,6 +50,7 @@ type StyledRowProps = {
   $expanded: boolean;
   $separatorColor: ColorFn;
   $hoverHighlight: boolean;
+  $clickRowToExpand: boolean;
   $xs: ScreenSizeConfigurableProps;
   $sm: Partial<ScreenSizeConfigurableProps>;
   $md: Partial<ScreenSizeConfigurableProps>;
@@ -68,6 +70,8 @@ const StyledRow = styled(Flexbox)<StyledRowProps>`
 
   margin-right: 0;
   margin-left: 0;
+
+  cursor: ${({ $clickRowToExpand }) => ($clickRowToExpand ? 'pointer' : 'auto')};
 
   ${getStylesForSizes<
     {
@@ -99,6 +103,7 @@ const Row: RowComponent = ({
   initiallyExpanded = false,
   hoverHighlight = true,
   hideSeparator = false,
+  clickRowToExpand = false,
   rowType = 'content',
   separatorColor = (theme) => theme.color.divider,
   onExpandToggle,
@@ -107,6 +112,13 @@ const Row: RowComponent = ({
   children,
   ...htmlProps
 }) => {
+  if (clickRowToExpand && 'onClick' in htmlProps) {
+    assert(
+      false,
+      'FlexTable.Row: You can not use clickRowToExpand in combination with a custom onClick function',
+    );
+  }
+
   const { xs: xsRow, sm: smRow, md: mdRow, lg: lgRow, xl: xlRow } = useFlexTable<'expandable'>(
     'expandable',
   );
@@ -147,6 +159,7 @@ const Row: RowComponent = ({
         $hideSeparator={hideSeparator}
         $hoverHighlight={hoverHighlight}
         $separatorColor={separatorColor}
+        $clickRowToExpand={clickRowToExpand}
         $xs={xsRow}
         $sm={smRow}
         $md={mdRow}
@@ -157,6 +170,7 @@ const Row: RowComponent = ({
         md={{ gutter: mdFlexbox?.columnDistance }}
         lg={{ gutter: lgFlexbox?.columnDistance }}
         xl={{ gutter: xlFlexbox?.columnDistance }}
+        onClick={clickRowToExpand ? onExpandToggleClick : undefined}
         {...htmlProps}
       >
         {children}
