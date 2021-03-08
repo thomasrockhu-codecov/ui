@@ -224,14 +224,14 @@ WithoutCloseOnClickOutside.story = {
   name: 'Without closing the drawer when clicking outside',
 };
 
-export const WithoutCloseOnSpecificElementClick = () => {
-  const StyledBoxBlue = styled(Box)`
-    background: ${(p) => p.theme.color.paletteBlue[3]};
-  `;
-  const StyledBoxGreen = styled(Box)`
-    background: ${(p) => p.theme.color.paletteGreen[4]};
-  `;
+const StyledBoxBlue = styled(Box)`
+  background: ${(p) => p.theme.color.paletteBlue[3]};
+`;
+const StyledBoxGreen = styled(Box)`
+  background: ${(p) => p.theme.color.paletteGreen[4]};
+`;
 
+export const WithoutCloseOnSpecificElementClick = () => {
   const Example = () => {
     const [open, setOpen] = useState(true);
 
@@ -263,12 +263,15 @@ export const WithoutCloseOnSpecificElementClick = () => {
             <Typography type="title3">Random area</Typography>
           </div>
           <div>
-            <Typography type="primary">
-              Clicking anywhere here does not close the drawer, using the default
-              &quot;data-drawer-prevent-click-outside&quot;-attribute.
-            </Typography>
+            <Box>
+              <Typography type="primary">
+                Clicking anywhere here does not close the drawer, using the default{' '}
+                <Typography weight="bold">&quot;data-drawer-prevent-click-outside&quot;</Typography>
+                -attribute.
+              </Typography>
+            </Box>
           </div>
-          <Box>
+          <Box mt={4}>
             <button type="button">Random button</button>
           </Box>
         </StyledBoxBlue>
@@ -282,14 +285,14 @@ export const WithoutCloseOnSpecificElementClick = () => {
               &quot;data-custom-prevent-click-outside&quot;-attribute, which is passed to the Drawer
               to recognize it.
             </Typography>
-            <Box my={4}>
+            <Box mt={4}>
               <Typography type="primary">
                 Useful for when multiple drawers might be open but only one should remain open while
                 clicking this area.
               </Typography>
             </Box>
           </div>
-          <Box>
+          <Box mt={4}>
             <input placeholder="Random text input" />
           </Box>
         </StyledBoxGreen>
@@ -299,11 +302,20 @@ export const WithoutCloseOnSpecificElementClick = () => {
           open={open}
           preventOnClickOutsideDataAttributes={['data-custom-prevent-click-outside']}
         >
-          <Typography>
-            Certain elements on this page has special data-attributes attached to them, which
-            prevents the Drawer from closing. Try clicking on those elements and compare with
-            clicking somewhere else.
-          </Typography>
+          <Box>
+            <Typography>
+              Certain elements on this page has special data-attributes attached to them, which
+              prevents the Drawer from closing. Try clicking on those elements and compare with
+              clicking somewhere else.
+            </Typography>
+          </Box>
+          <Box mt={4}>
+            <Typography type="primary">
+              Observe that ALL drawers&apos; remain open when clicking on elements with the default
+              attribute (
+              <Typography weight="bold">&quot;data-drawer-prevent-click-outside&quot;</Typography>).
+            </Typography>
+          </Box>
         </Drawer>
       </div>
     );
