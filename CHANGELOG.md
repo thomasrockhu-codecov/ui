@@ -1,3 +1,154 @@
+# [5.22.0](https://github.com/nordnet/ui/compare/v5.21.1...v5.22.0) (2021-03-08)
+
+
+### Bug Fixes
+
+* 🐛 ensure onClick and clickRowToExpand aren't used together ([808ef12](https://github.com/nordnet/ui/commit/808ef12))
+
+
+### Features
+
+* 🎸 add clickRowToExpand prop to FlexTable.Row ([a89e324](https://github.com/nordnet/ui/commit/a89e324))
+
+## [5.21.1](https://github.com/nordnet/ui/compare/v5.21.0...v5.21.1) (2021-03-05)
+
+
+### Bug Fixes
+
+* fix crash for options in input multiselect ([380d5c8](https://github.com/nordnet/ui/commit/380d5c8))
+
+# [5.21.0](https://github.com/nordnet/ui/compare/v5.20.0...v5.21.0) (2021-03-05)
+
+
+### Bug Fixes
+
+* 🐛 handle persisted sort order for controlled sort ([7f78bf4](https://github.com/nordnet/ui/commit/7f78bf4))
+* 🐛 only set intial sorted column if no persisted column ([ae2dc9a](https://github.com/nordnet/ui/commit/ae2dc9a))
+* add missing snapshots ([2eb8da6](https://github.com/nordnet/ui/commit/2eb8da6))
+* add try statement when using local storage ([9628a4a](https://github.com/nordnet/ui/commit/9628a4a))
+* typing and localstorage value structure ([eaa5ba3](https://github.com/nordnet/ui/commit/eaa5ba3))
+
+
+### Features
+
+* extract get function for stored sorted order ([06d72d2](https://github.com/nordnet/ui/commit/06d72d2))
+* **flextable:** wip att persist prop ([6e12bc4](https://github.com/nordnet/ui/commit/6e12bc4))
+
+# [5.20.0](https://github.com/nordnet/ui/compare/v5.19.0...v5.20.0) (2021-03-04)
+
+
+### Features
+
+* add readonly prop to switch component ([1529548](https://github.com/nordnet/ui/commit/1529548))
+
+# [5.19.0](https://github.com/nordnet/ui/compare/v5.18.0...v5.19.0) (2021-03-04)
+
+
+### Bug Fixes
+
+* remove external ref ([473a81f](https://github.com/nordnet/ui/commit/473a81f))
+
+
+### Features
+
+* close coachmark on click outside ([740ac24](https://github.com/nordnet/ui/commit/740ac24))
+
+# [5.18.0](https://github.com/nordnet/ui/compare/v5.17.3...v5.18.0) (2021-03-04)
+
+
+### Bug Fixes
+
+* 🐛 text align center in status modal ([b648992](https://github.com/nordnet/ui/commit/b648992))
+
+
+### Features
+
+* 🎸 add text align prop to typography ([f40d926](https://github.com/nordnet/ui/commit/f40d926))
+
+## [5.17.3](https://github.com/nordnet/ui/compare/v5.17.2...v5.17.3) (2021-03-03)
+
+
+### Bug Fixes
+
+* drawer allow html props ([8dcb22c](https://github.com/nordnet/ui/commit/8dcb22c))
+
+## [5.17.2](https://github.com/nordnet/ui/compare/v5.17.1...v5.17.2) (2021-03-03)
+
+
+### Bug Fixes
+
+* 🐛 make options group non-interactive ([72510cf](https://github.com/nordnet/ui/commit/72510cf))
+
+## [5.17.1](https://github.com/nordnet/ui/compare/v5.17.0...v5.17.1) (2021-03-03)
+
+
+### Bug Fixes
+
+* 🐛 adjust type for group option items ([c32ee50](https://github.com/nordnet/ui/commit/c32ee50))
+
+# [5.17.0](https://github.com/nordnet/ui/compare/v5.16.0...v5.17.0) (2021-03-02)
+
+
+### Bug Fixes
+
+* expose drawer footer ([3d2e2e3](https://github.com/nordnet/ui/commit/3d2e2e3))
+
+
+### Features
+
+* add footer prop to drawer ([1fea68a](https://github.com/nordnet/ui/commit/1fea68a))
+
+# [5.16.0](https://github.com/nordnet/ui/compare/v5.15.2...v5.16.0) (2021-03-02)
+
+
+### Features
+
+* 🎸 add neutral status and string type on date ([58604dc](https://github.com/nordnet/ui/commit/58604dc))
+
+## [5.15.2](https://github.com/nordnet/ui/compare/v5.15.1...v5.15.2) (2021-03-01)
+
+
+### Bug Fixes
+
+* add missing options type to option type ([b66f7d2](https://github.com/nordnet/ui/commit/b66f7d2))
+* merge grouped options to fix issues with focused ([349b8ed](https://github.com/nordnet/ui/commit/349b8ed))
+* select single grouped value ([c3e0bf8](https://github.com/nordnet/ui/commit/c3e0bf8))
+
+## [5.15.1](https://github.com/nordnet/ui/compare/v5.15.0...v5.15.1) (2021-02-26)
+
+
+### Bug Fixes
+
+* add circle to refresh icon ([d69551c](https://github.com/nordnet/ui/commit/d69551c))
+
+# [5.15.0](https://github.com/nordnet/ui/compare/v5.14.4...v5.15.0) (2021-02-26)
+
+
+### Features
+
+* add refresh icon ([8c5070f](https://github.com/nordnet/ui/commit/8c5070f))
+
+## [5.14.4](https://github.com/nordnet/ui/compare/v5.14.3...v5.14.4) (2021-02-24)
+
+
+### Bug Fixes
+
+* 🐛 add large Avatar size ([13b6352](https://github.com/nordnet/ui/commit/13b6352))
+
+## [5.14.3](https://github.com/nordnet/ui/compare/v5.14.2...v5.14.3) (2021-02-23)
+
+
+### Bug Fixes
+
+* split locale for datepicker ([45e5de0](https://github.com/nordnet/ui/commit/45e5de0))
+
+## [5.14.2](https://github.com/nordnet/ui/compare/v5.14.1...v5.14.2) (2021-02-22)
+
+
+### Bug Fixes
+
+* 🐛 Make AccordionItem titles bold ([491d3f4](https://github.com/nordnet/ui/commit/491d3f4))
+
 ## [5.14.1](https://github.com/nordnet/ui/compare/v5.14.0...v5.14.1) (2021-02-17)
 
 

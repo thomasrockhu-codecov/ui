@@ -1,6 +1,7 @@
-import React from 'react';
+import React, { useMemo } from 'react';
 import { useMachine } from '@xstate/react';
 import styled from 'styled-components';
+import R from 'ramda';
 
 import { useOnClickOutside } from '../../../common/Hooks';
 
@@ -36,6 +37,7 @@ import {
 } from './lib/hooks';
 import { SYMBOL_ALL } from './lib/constants';
 import TrackingContext from '../../../common/tracking';
+import { getSingleSelectValue } from './lib/utils';
 
 /* eslint-disable spaced-comment */
 const HiddenSelect = styled.select`
@@ -43,11 +45,17 @@ const HiddenSelect = styled.select`
 `;
 const noop = () => {};
 
-const getValuesForNativeSelect = (selectedItems: { value: any }[], isMultiselect: boolean) => {
+const getValuesForNativeSelect = (
+  selectedItems: { options?: any[]; value: any }[],
+  isMultiselect: boolean,
+) => {
   if (isMultiselect) {
     return selectedItems.map((x) => x.value);
   }
-  return selectedItems.length > 0 ? selectedItems[0].value : undefined;
+
+  const value = getSingleSelectValue(selectedItems);
+
+  return R.pathOr(undefined, ['value'], R.head(value));
 };
 
 const Select = (props: Props) => {
@@ -61,13 +69,22 @@ const Select = (props: Props) => {
 
   const isFirstRender = useIsFirstRender();
 
+  const allOptions = useMemo(
+    () =>
+      R.pipe(
+        R.map((option: any) => (option.options ? [option, option.options] : option)),
+        R.flatten,
+      )(props.options),
+    [props.options],
+  );
+
   /******      Machine instantiation      ******/
   const machineHandlers = useMachine(SelectMachine, {
     context: {
       label: props.label,
       error: props.error || '',
       success: props.success || false,
-      options: props.options,
+      options: allOptions,
       selectedItems: [],
       disabled: props.disabled || false,
       open: false,
@@ -77,7 +94,7 @@ const Select = (props: Props) => {
       extraInfo: props.extraInfo || '',
       multiselect: props.multiselect || false,
       lastNavigationType: null,
-      visibleOptions: props.options,
+      visibleOptions: allOptions,
       showSearch: props.showSearch || false,
       id: props.id,
       valueFromProps: props.value,
@@ -119,7 +136,7 @@ const Select = (props: Props) => {
     {
       searchQuery: props.searchQuery || machineState.context.searchQuery,
       label: props.label,
-      options: props.options,
+      options: allOptions,
       placeholder: props.placeholder,
       error: props.error,
       valueFromProps: props.value,
@@ -134,7 +151,7 @@ const Select = (props: Props) => {
     [
       send,
       props.label,
-      props.options,
+      allOptions,
       props.placeholder,
       props.error,
       props.success,
@@ -219,6 +236,7 @@ const Select = (props: Props) => {
   const multiselect = machineState.context.multiselect;
 
   const ListWrapperComponent = props.withPortal ? ListWrapperWithPortal : ListWrapper;
+  const hiddenSelectValues = getValuesForNativeSelect(selectedItems, multiselect);
 
   return (
     <div className={props.className}>
@@ -228,13 +246,21 @@ const Select = (props: Props) => {
         ref={inputRef}
         aria-hidden="true"
         {...(multiselect ? { multiple: true } : {})}
-        value={getValuesForNativeSelect(selectedItems, multiselect)}
+        value={hiddenSelectValues}
         onChange={noop}
       >
         {placeholder && <option label={placeholder} value="" />}
-        {options.map((x) => (
-          <option label={x.label} value={x.value} key={`${x.label}${x.value}`} />
-        ))}
+        {options.map((x: any) =>
+          x.options ? (
+            <optgroup label={x.label} key={x.label}>
+              {x.options.map((y: any) => (
+                <option label={y.label} value={y.value} key={`${y.label}${y.value}`} />
+              ))}
+            </optgroup>
+          ) : (
+            <option label={x.label} value={x.value} key={`${x.label}${x.value}`} />
+          ),
+        )}
       </HiddenSelect>
       <SelectStateContext.Provider value={machineHandlers}>
         <FormFieldOrFragment
@@ -290,14 +316,15 @@ const Select = (props: Props) => {
               maxHeight={props.listMaxHeight}
               width={props.width}
             >
-              {options.map((x: any, index: number) => (
+              {allOptions.map((x: any, index: number) => (
                 <ListItemWrapper
-                  key={x.value}
+                  // eslint-disable-next-line react/no-array-index-key
+                  key={index}
                   index={index}
                   ref={setItemRef(index) as any}
                   option={x}
                   id={props.id}
-                  onClick={x.disabled ? noop : handleClickListItem(x)}
+                  onClick={x.disabled || x.options ? noop : handleClickListItem(x)}
                   component={ListItem}
                 />
               ))}

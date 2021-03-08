@@ -134,6 +134,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Controlled So
   background: #FFFFFF;
   margin-right: 0;
   margin-left: 0;
+  cursor: auto;
   padding-right: 4px;
   padding-left: 2px;
   border-left: 2px solid transparent;
@@ -589,6 +590,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Default Table
   background: #FFFFFF;
   margin-right: 0;
   margin-left: 0;
+  cursor: auto;
   padding-right: 4px;
   padding-left: 2px;
   border-left: 2px solid transparent;
@@ -1060,6 +1062,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sortable Head
   background: #FFFFFF;
   margin-right: 0;
   margin-left: 0;
+  cursor: auto;
   padding-right: 4px;
   padding-left: 2px;
   border-left: 2px solid transparent;
@@ -1553,6 +1556,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sortable Head
   background: #FFFFFF;
   margin-right: 0;
   margin-left: 0;
+  cursor: auto;
   padding-right: 4px;
   padding-left: 2px;
   border-left: 2px solid transparent;
@@ -2104,6 +2108,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
   background: #FFFFFF;
   margin-right: 0;
   margin-left: 0;
+  cursor: auto;
   padding-right: 4px;
   padding-left: 2px;
   border-left: 2px solid transparent;
@@ -2122,6 +2127,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
   background: #FFFFFF;
   margin-right: 0;
   margin-left: 0;
+  cursor: auto;
   padding-right: 4px;
   padding-left: 2px;
   border-left: 2px solid transparent;
@@ -8563,7 +8569,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Uncontrolled 
   box-sizing: border-box;
 }
 
-.c23 {
+.c19 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -8581,7 +8587,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Uncontrolled 
   flex: 1;
 }
 
-.c24 {
+.c20 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -8614,27 +8620,6 @@ exports[`Storyshots Molecules / FlexTable / With different headers Uncontrolled 
   vertical-align: middle;
 }
 
-.c20 {
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  width: 12px;
-  height: 12px;
-  fill: #282823;
-  -webkit-flex-shrink: 0;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
-  display: inline-block;
-  vertical-align: middle;
-}
-
-.c21 {
-  -webkit-transform: rotate(180deg);
-  -ms-transform: rotate(180deg);
-  transform: rotate(180deg);
-}
-
 .c1 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
@@ -8649,15 +8634,6 @@ exports[`Storyshots Molecules / FlexTable / With different headers Uncontrolled 
   color: #6E6E69;
   margin: 0;
   font-weight: 400;
-  font-size: 16px;
-  line-height: 1.5;
-}
-
-.c19 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #282823;
-  margin: 0;
-  font-weight: 700;
   font-size: 16px;
   line-height: 1.5;
 }
@@ -8687,7 +8663,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Uncontrolled 
   line-height: 20px;
 }
 
-.c25 {
+.c21 {
   display: none;
 }
 
@@ -8695,6 +8671,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Uncontrolled 
   background: #FFFFFF;
   margin-right: 0;
   margin-left: 0;
+  cursor: auto;
   padding-right: 4px;
   padding-left: 2px;
   border-left: 2px solid transparent;
@@ -8718,10 +8695,6 @@ exports[`Storyshots Molecules / FlexTable / With different headers Uncontrolled 
 }
 
 .c18 {
-  margin-left: 4px;
-}
-
-.c22 {
   margin-left: 4px;
 }
 
@@ -8918,7 +8891,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Uncontrolled 
         </a>
       </div>
       <div
-        aria-sort="descending"
+        aria-sort="none"
         className="c6 c7"
         role="columnheader"
       >
@@ -8939,7 +8912,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Uncontrolled 
                 className="c13 c14"
               >
                 <span
-                  className="c19 c16"
+                  className="c15 c16"
                 >
                   With initial sort order
                 </span>
@@ -8950,17 +8923,14 @@ exports[`Storyshots Molecules / FlexTable / With different headers Uncontrolled 
             >
               <svg
                 aria-hidden="true"
-                className="c20 c21 c22"
-                direction="descending"
+                className="c17 c18"
                 focusable="false"
                 preserveAspectRatio="xMidYMid meet"
                 role="presentation"
-                viewBox="0 0 8 12"
+                viewBox="0 0 24 24"
               >
-                <path
-                  d="M9 2v8.4l1.66-1.62L12 10.1 8 14l-4-3.9 1.34-1.32L7 10.4V2h2z"
-                  fillRule="evenodd"
-                  transform="matrix(1 0 0 -1 -4 14)"
+                <polygon
+                  points="19.969 4 24 8.027 12 20 0 8.027 4.031 4 12 11.952"
                 />
               </svg>
             </div>
@@ -8969,7 +8939,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Uncontrolled 
       </div>
       <div
         aria-sort="none"
-        className="c23 c7"
+        className="c19 c7"
         role="columnheader"
       >
         <a
@@ -9015,7 +8985,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Uncontrolled 
         </a>
       </div>
       <div
-        className="c24 c7 c25"
+        className="c20 c7 c21"
         role="columnheader"
       >
         <div

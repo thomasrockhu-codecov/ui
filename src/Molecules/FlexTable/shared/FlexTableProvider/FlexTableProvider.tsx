@@ -5,18 +5,32 @@ export const FlexTableContext = React.createContext<FlexTableContextProps>(undef
 
 export const FlexTableProvider: FlexTableProviderComponent = ({
   children,
+  id,
   density,
   columnDistance,
   expandable,
   fontSize,
   stickyHeader,
+  persistSortingOrder,
   sm,
   md,
   lg,
   xl,
 }) => (
   <FlexTableContext.Provider
-    value={{ density, columnDistance, stickyHeader, fontSize, expandable, sm, md, lg, xl }}
+    value={{
+      id,
+      density,
+      columnDistance,
+      stickyHeader,
+      fontSize,
+      expandable,
+      persistSortingOrder,
+      sm,
+      md,
+      lg,
+      xl,
+    }}
   >
     {children}
   </FlexTableContext.Provider>

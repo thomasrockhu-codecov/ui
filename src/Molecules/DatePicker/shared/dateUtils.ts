@@ -40,16 +40,16 @@ const locales: { [key: string]: Locale } = {
 };
 
 export const getLocale = (locale: string = ''): Locale => {
-  if (locales[locale]) {
-    return locales[locale];
+  if (locales[locale.split('-')[0]]) {
+    return locales[locale.split('-')[0]];
   }
 
   return locales.en;
 };
 
 export const getDateFormat = (locale: string = ''): string => {
-  if (dateFormat[locale]) {
-    return dateFormat[locale];
+  if (dateFormat[locale.split('-')[0]]) {
+    return dateFormat[locale.split('-')[0]];
   }
 
   return dateFormat.en;

@@ -35,7 +35,7 @@ export type Props = {
    */
   size?: 's' | 'm';
   disabled?: boolean;
-  onChange?: (newValue: Option[]) => void;
+  onChange?: (newValue: OptionItem[]) => void;
   onFocus?: React.FocusEventHandler;
   onBlur?: React.FocusEventHandler;
   fullWidth?: boolean;
@@ -93,10 +93,19 @@ export type Props = {
   onSearchQueryChange?: (e: { type: string; payload: string }) => void;
 };
 
-export type Option = {
+type OptionItem = {
   [K: string]: any;
   label: string;
   value: any;
   disabled?: boolean;
   [SYMBOL_ALL]?: boolean;
 };
+
+type GroupOptionItem = {
+  label: string;
+  value?: never;
+  disabled?: boolean;
+  options?: Array<OptionItem>;
+};
+
+export type Option = OptionItem | GroupOptionItem;

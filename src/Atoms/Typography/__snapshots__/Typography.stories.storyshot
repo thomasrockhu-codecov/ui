@@ -1021,6 +1021,68 @@ exports[`Storyshots Atoms / Typography Tertiary 1`] = `
 </div>
 `;
 
+exports[`Storyshots Atoms / Typography Text Align 1`] = `
+.c0 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.c1 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.c2 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  text-align: center;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.c3 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  text-align: right;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+<div
+  className="c0"
+>
+  <span
+    className="c1"
+  >
+    Default
+  </span>
+  <span
+    className="c2"
+  >
+    Text align center
+  </span>
+  <span
+    className="c3"
+  >
+    Text align right
+  </span>
+</div>
+`;
+
 exports[`Storyshots Atoms / Typography Title1 1`] = `
 .c3 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;

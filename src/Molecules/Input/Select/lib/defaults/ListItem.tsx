@@ -1,21 +1,26 @@
 import * as React from 'react';
 import { useSelectMachineFromContext } from '../context';
-import { Option } from '../SingleSelectList/SingleSelectList';
+import { Option, Optgroup } from '../SingleSelectList/SingleSelectList';
 
 export const ListItem: React.FC<{
   index: number;
 }> = ({ index }) => {
   const [state] = useSelectMachineFromContext();
-  const option = state.context.visibleOptions[index];
   const isKeyboardNavigation = state.matches('interaction.enabled.active.navigation.keyboard');
 
-  const selected =
-    state.context.selectedItems.includes(option) ||
-    state.context.selectedItems.some(x => x.value === option.value);
-
+  const option = state.context.visibleOptions[index];
   const focused = state.context.itemFocusIdx === index;
 
-  return (
+  const selected = option.options
+    ? false
+    : state.context.selectedItems.includes(option) ||
+      state.context.selectedItems.some(
+        (x) => x.value === option.value || x.options?.some((y: any) => y.value === option.value),
+      );
+
+  return option.options ? (
+    <Optgroup label={option.label} index={index} />
+  ) : (
     <Option
       selected={selected}
       disabled={option.disabled}

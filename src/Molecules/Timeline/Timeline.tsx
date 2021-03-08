@@ -5,6 +5,8 @@ import { Box, Icon, Flexbox, Button, Typography, ListItem, DateTime } from '../.
 
 const getStatusIcon = (status?: string) => {
   switch (status) {
+    case 'NEUTRAL':
+      return <Icon.SolidCircle size={5} fill={(t) => t.color.emptyState} />;
     case 'PENDING':
       return <Icon.InfoPending size={5} fill={(t) => t.color.emptyState} />;
     case 'ACTIVE':
@@ -49,6 +51,7 @@ const lineStyles = (status: StepProps['status'], props: any) => {
     z-index: 1;
     background: ${(() => {
       switch (status) {
+        case 'NEUTRAL':
         case 'ACTIVE':
         case 'FAILURE':
           return colorNext ? colorNext(theme) : theme.color.timelineNext;
@@ -124,7 +127,11 @@ const Timeline: React.FC<Props> = ({ steps, colorSuccess, colorNext }) => {
               <StyledFlexbox item container direction="row" alignItems="center">
                 <Flexbox item container direction="column">
                   <Typography type="tertiary" color={(t) => t.color.label}>
-                    <DateTime options={dateTimeOptions} value={date.toUTCString()} />
+                    {date instanceof Date ? (
+                      <DateTime options={dateTimeOptions} value={date.toUTCString()} />
+                    ) : (
+                      date
+                    )}
                   </Typography>
                   <Typography type="secondary">{text}</Typography>
                 </Flexbox>

@@ -11,3 +11,5 @@ export const ICON_COLUMN_DEFAULT_FLEX_PROPS: Pick<FlexPropsType, 'justifyContent
   // TODO: use theme spacing
   flex: `0 20px`,
 };
+
+export const persistedSortOrderLocalStorageKey = 'flexTableSortOrder';

@@ -20,6 +20,7 @@ export const differentSizes = () => (
     items={[
       { title: 'Size `s`', component: <Avatar size="s">ASK</Avatar> },
       { title: 'Size `m` (default)', component: <Avatar size="m">ASK</Avatar> },
+      { title: 'Size `l`', component: <Avatar size="l">ASK</Avatar> },
     ]}
   />
 );

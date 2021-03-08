@@ -84,6 +84,11 @@ import TrackingContext from './common/tracking';
 
 import { LinkContext, LinkProvider, LinkProviderProps, LinkProps, useLink } from './common/Links';
 
+import {
+  getPersistedSortOrder,
+  setPersistedSortOrder,
+} from './Molecules/FlexTable/shared/persistedSortOrder';
+
 /** Utils */
 import { numberWithLimit } from './common/utils';
 
@@ -179,4 +184,6 @@ export {
   useLink,
   useMedia,
   useOnClickOutside,
+  getPersistedSortOrder,
+  setPersistedSortOrder,
 };
