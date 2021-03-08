@@ -1,3 +1,13 @@
+# [5.23.0](https://github.com/nordnet/ui/compare/v5.22.0...v5.23.0) (2021-03-08)
+
+
+### Features
+
+* allow custom data attributes to prevent drawer click outside close ([6188126](https://github.com/nordnet/ui/commit/6188126))
+* avoid drawer close when clicking on specific data tag ([badf4c5](https://github.com/nordnet/ui/commit/badf4c5))
+* skip costly logic straight away if drawer clickoutside is disabled ([e6a0fcb](https://github.com/nordnet/ui/commit/e6a0fcb))
+* wip avoid drawer close when clicking on specific data tag ([3c489b8](https://github.com/nordnet/ui/commit/3c489b8))
+
 # [5.22.0](https://github.com/nordnet/ui/compare/v5.21.1...v5.22.0) (2021-03-08)
 
 
