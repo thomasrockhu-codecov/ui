@@ -1,3 +1,15 @@
+# [5.22.0](https://github.com/nordnet/ui/compare/v5.21.1...v5.22.0) (2021-03-08)
+
+
+### Bug Fixes
+
+* 🐛 ensure onClick and clickRowToExpand aren't used together ([808ef12](https://github.com/nordnet/ui/commit/808ef12))
+
+
+### Features
+
+* 🎸 add clickRowToExpand prop to FlexTable.Row ([a89e324](https://github.com/nordnet/ui/commit/a89e324))
+
 ## [5.21.1](https://github.com/nordnet/ui/compare/v5.21.0...v5.21.1) (2021-03-05)
 
 
