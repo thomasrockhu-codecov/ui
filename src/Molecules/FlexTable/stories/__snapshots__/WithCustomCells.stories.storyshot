@@ -1,5 +1,505 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`Storyshots Molecules / FlexTable / With Custom Cells Bold Cells 1`] = `
+.c1 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-left: -4px;
+  margin-right: -4px;
+}
+
+.c1 > * {
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+.c1 > *:not(:first-child) {
+  padding-top: 0;
+}
+
+.c4 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+
+.c10 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  -webkit-flex: 0 20px;
+  -ms-flex: 0 20px;
+  flex: 0 20px;
+}
+
+.c20 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 8px;
+  height: 8px;
+  fill: #A0A09B;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
+}
+
+.c21 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 16px;
+  height: 16px;
+  fill: #A0A09B;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
+}
+
+.c22 {
+  -webkit-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  transform: rotate(0deg);
+}
+
+.c8 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #6E6E69;
+  margin: 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.c14 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.c15 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.c19 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: inherit;
+  margin: 0;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c6 {
+  display: inline-block;
+  width: 100%;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.c17 {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  overflow: visible;
+  text-transform: none;
+  position: relative;
+  box-sizing: border-box;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  padding: 0;
+  background-color: transparent;
+  color: #A0A09B;
+  border: none;
+  border-radius: 0;
+  cursor: not-allowed;
+}
+
+.c17,
+.c17[type='button'],
+.c17[type='reset'],
+.c17[type='submit'] {
+  -webkit-appearance: button;
+}
+
+.c17::-moz-focus-inner,
+.c17[type='button']::-moz-focus-inner,
+.c17[type='reset']::-moz-focus-inner,
+.c17[type='submit']::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+.c17:-moz-focusring,
+.c17[type='button']:-moz-focusring,
+.c17[type='reset']:-moz-focusring,
+.c17[type='submit']:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+.c7 {
+  width: inherit;
+}
+
+.c9 {
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.c13 {
+  overflow: hidden;
+  padding-top: 4px !important;
+  padding-bottom: 4px;
+}
+
+.c18 {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+}
+
+.c18:focus {
+  outline: none;
+}
+
+.c16 {
+  padding-top: 0 !important;
+  padding-bottom: 0;
+  -webkit-align-self: stretch;
+  -ms-flex-item-align: stretch;
+  align-self: stretch;
+}
+
+.c11 {
+  display: none;
+}
+
+.c2 {
+  background: #FFFFFF;
+  margin-right: 0;
+  margin-left: 0;
+  cursor: auto;
+  padding-right: 4px;
+  padding-left: 2px;
+  border-left: 2px solid transparent;
+  border-bottom: 1px solid #EBEBE8;
+}
+
+.c2 > *:first-child {
+  padding-left: 0;
+}
+
+.c2 > *:nth-last-child(2) {
+  padding-right: 0;
+}
+
+.c12 {
+  background: #FFFFFF;
+  margin-right: 0;
+  margin-left: 0;
+  cursor: auto;
+  padding-right: 4px;
+  padding-left: 2px;
+  border-left: 2px solid transparent;
+  border-bottom: 1px solid #EBEBE8;
+}
+
+.c12:hover {
+  background: #F5F5F5;
+}
+
+.c12 > *:first-child {
+  padding-left: 0;
+}
+
+.c12 > *:nth-last-child(2) {
+  padding-right: 0;
+}
+
+.c3 {
+  border-bottom: 1px solid #282823;
+  z-index: 1;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0px;
+}
+
+.c5 {
+  overflow: hidden;
+  padding-top: 4px !important;
+  padding-bottom: 4px;
+}
+
+.c0 {
+  position: relative;
+}
+
+@media (min-width:760px) {
+  .c1 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+}
+
+@media (min-width:976px) {
+  .c1 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+}
+
+@media (min-width:1280px) {
+  .c1 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+}
+
+@media not all and (max-width:975px) {
+
+}
+
+@media not all and (min-width:976px) {
+
+}
+
+<div
+  className="c0"
+  role="table"
+>
+  <div
+    className="c1 c2 c3"
+    role="row"
+  >
+    <div
+      className="c4 c5"
+      role="columnheader"
+    >
+      <div
+        className="c6 c7"
+      >
+        <span
+          className="c8 c9"
+        >
+          Column 1
+        </span>
+      </div>
+    </div>
+    <div
+      className="c4 c5"
+      role="columnheader"
+    >
+      <div
+        className="c6 c7"
+      >
+        <span
+          className="c8 c9"
+        >
+          Column 2
+        </span>
+      </div>
+    </div>
+    <div
+      className="c4 c5"
+      role="columnheader"
+    >
+      <div
+        className="c6 c7"
+      >
+        <span
+          className="c8 c9"
+        >
+          Column 3
+        </span>
+      </div>
+    </div>
+    <div
+      className="c10 c5 c11"
+      role="columnheader"
+    >
+      <div
+        className="c6 c7"
+      >
+        <span
+          className="c8 c9"
+        />
+      </div>
+    </div>
+  </div>
+  <div
+    className="c1 c12"
+    role="row"
+  >
+    <div
+      className="c4 c13"
+      role="cell"
+    >
+      <div
+        className="c6 c7"
+      >
+        <span
+          className="c14 c9"
+        >
+          123
+        </span>
+      </div>
+    </div>
+    <div
+      className="c4 c13"
+      role="cell"
+    >
+      <div
+        className="c6 c7"
+      >
+        <span
+          className="c15 c9"
+        >
+          123
+        </span>
+      </div>
+    </div>
+    <div
+      className="c4 c13"
+      role="cell"
+    >
+      <div
+        className="c6 c7"
+      >
+        <span
+          className="c14 c9"
+        >
+          123
+        </span>
+      </div>
+    </div>
+    <div
+      className="c10 c13 c16 c11"
+      role="cell"
+    >
+      <button
+        aria-expanded={false}
+        className="NormalizedButton__Button-ey7f5x-0 c17 c18"
+        disabled={true}
+        onClick={[Function]}
+        type="button"
+      >
+        <span
+          className="c19"
+        >
+          <svg
+            aria-hidden="true"
+            className="c20"
+            focusable="false"
+            preserveAspectRatio="xMidYMid meet"
+            role="presentation"
+            viewBox="0 0 24 24"
+          >
+            <polygon
+              points="19.969 4 24 8.027 12 20 0 8.027 4.031 4 12 11.952"
+            />
+          </svg>
+        </span>
+      </button>
+      <button
+        aria-expanded={false}
+        className="NormalizedButton__Button-ey7f5x-0 c17 c18"
+        disabled={true}
+        onClick={[Function]}
+        type="button"
+      >
+        <span
+          className="c19"
+        >
+          <svg
+            aria-hidden="true"
+            className="c21 c22"
+            direction="down"
+            focusable="false"
+            preserveAspectRatio="xMidYMid meet"
+            role="presentation"
+            viewBox="0 0 16 16"
+          >
+            <polygon
+              points="14.620 3.580, 16.000 5.020, 8.000 12.730, 0.000 5.030, 1.400 3.580, 8.000 9.96"
+            />
+          </svg>
+        </span>
+      </button>
+    </div>
+  </div>
+</div>
+`;
+
 exports[`Storyshots Molecules / FlexTable / With Custom Cells Custom Cells 1`] = `
 .c24 {
   height: 20px;
