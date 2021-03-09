@@ -1,3 +1,10 @@
+# [5.24.0](https://github.com/nordnet/ui/compare/v5.23.0...v5.24.0) (2021-03-09)
+
+
+### Features
+
+* 🎸 add weight prop to text wrapper and add story ([47ae086](https://github.com/nordnet/ui/commit/47ae086))
+
 # [5.23.0](https://github.com/nordnet/ui/compare/v5.22.0...v5.23.0) (2021-03-08)
 
 
