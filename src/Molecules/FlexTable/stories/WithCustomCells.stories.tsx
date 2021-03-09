@@ -155,3 +155,31 @@ export const CustomCells = () => {
   };
   return <Story />;
 };
+
+export const BoldCells = () => {
+  const Story = () => {
+    const BoldCell: React.FC<{ columnId: string } & FlexPropsType> = React.memo(
+      ({ columnId, children, ...cellProps }) => (
+        <FlexTable.Cell columnId={columnId} {...cellProps}>
+          <FlexTable.Cell.TextWrapper weight="bold">{children}</FlexTable.Cell.TextWrapper>
+        </FlexTable.Cell>
+      ),
+    );
+
+    return (
+      <FlexTable>
+        <FlexTable.HeaderRow>
+          <FlexTable.Header columnId="column1">Column 1</FlexTable.Header>
+          <FlexTable.Header columnId="column2">Column 2</FlexTable.Header>
+          <FlexTable.Header columnId="column3">Column 3</FlexTable.Header>
+        </FlexTable.HeaderRow>
+        <FlexTable.Row>
+          <FlexTable.Cell columnId="column1">123</FlexTable.Cell>
+          <BoldCell columnId="column2">123</BoldCell>
+          <FlexTable.Cell columnId="column3">123</FlexTable.Cell>
+        </FlexTable.Row>
+      </FlexTable>
+    );
+  };
+  return <Story />;
+};
