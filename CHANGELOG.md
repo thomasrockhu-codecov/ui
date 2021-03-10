@@ -1,3 +1,10 @@
+## [5.25.1](https://github.com/nordnet/ui/compare/v5.25.0...v5.25.1) (2021-03-10)
+
+
+### Bug Fixes
+
+* adjust read only and disabled colors ([c0eb879](https://github.com/nordnet/ui/commit/c0eb879))
+
 # [5.25.0](https://github.com/nordnet/ui/compare/v5.24.0...v5.25.0) (2021-03-10)
 
 
