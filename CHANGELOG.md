@@ -1,3 +1,15 @@
+# [5.25.0](https://github.com/nordnet/ui/compare/v5.24.0...v5.25.0) (2021-03-10)
+
+
+### Bug Fixes
+
+* stories ([9cbe9c6](https://github.com/nordnet/ui/commit/9cbe9c6))
+
+
+### Features
+
+* add underlined prop to link ([2e285fd](https://github.com/nordnet/ui/commit/2e285fd))
+
 # [5.24.0](https://github.com/nordnet/ui/compare/v5.23.0...v5.24.0) (2021-03-09)
 
 
