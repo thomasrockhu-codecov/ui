@@ -33,6 +33,7 @@ const Button = styled.button`
   padding-left: ${(p) => p.theme.spacing.unit(6)}px;
   background-color: transparent;
   cursor: pointer;
+  text-align: start;
 
   &:hover,
   &:focus {
