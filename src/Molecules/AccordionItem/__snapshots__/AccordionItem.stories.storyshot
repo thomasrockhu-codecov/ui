@@ -213,6 +213,7 @@ Array [
   padding-left: 24px;
   background-color: transparent;
   cursor: pointer;
+  text-align: start;
 }
 
 .c3:hover,
@@ -331,6 +332,7 @@ Array [
   padding-left: 24px;
   background-color: transparent;
   cursor: pointer;
+  text-align: start;
 }
 
 .c3:hover,
@@ -453,6 +455,7 @@ exports[`Storyshots Molecules / AccordionItem Default Collapsed 1`] = `
   padding-left: 24px;
   background-color: transparent;
   cursor: pointer;
+  text-align: start;
 }
 
 .c3:hover,
@@ -495,7 +498,7 @@ exports[`Storyshots Molecules / AccordionItem Default Collapsed 1`] = `
           />
         </svg>
       </div>
-      Låg CO₂ risk
+      Lemon drops and several cakes for two persons or more
     </button>
   </h3>
   <div
@@ -574,6 +577,7 @@ exports[`Storyshots Molecules / AccordionItem Expanded 1`] = `
   padding-left: 24px;
   background-color: transparent;
   cursor: pointer;
+  text-align: start;
 }
 
 .c3:hover,
