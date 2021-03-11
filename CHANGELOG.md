@@ -1,3 +1,11 @@
+## [5.25.2](https://github.com/nordnet/ui/compare/v5.25.1...v5.25.2) (2021-03-11)
+
+
+### Bug Fixes
+
+* 🐛 Avoid auto-centering text when more than one line ([f019db9](https://github.com/nordnet/ui/commit/f019db9))
+* 🐛 update storyshots ([460aa25](https://github.com/nordnet/ui/commit/460aa25))
+
 ## [5.25.1](https://github.com/nordnet/ui/compare/v5.25.0...v5.25.1) (2021-03-10)
 
 
