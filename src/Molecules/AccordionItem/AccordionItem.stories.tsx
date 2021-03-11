@@ -18,7 +18,7 @@ const ExampleContent = () => (
 
 export const defaultCollapsed = () => (
   <>
-    <AccordionItem title="Låg CO₂ risk">
+    <AccordionItem title="Lemon drops and several cakes for two persons or more">
       <ExampleContent />
     </AccordionItem>
   </>
