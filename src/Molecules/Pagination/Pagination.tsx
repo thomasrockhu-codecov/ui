@@ -53,12 +53,6 @@ const Pagination: React.FC<PaginationProps> = ({
     }
   }, [controlled, handlePageChange, numberOfPages]);
 
-  useEffect(() => {
-    if (controlled) {
-      setCurrentPage(currentPageFromProps as number);
-    }
-  }, [controlled, currentPageFromProps]);
-
   return (
     <nav role="navigation" aria-label={label}>
       {variant === 'compact' && (
@@ -72,7 +66,7 @@ const Pagination: React.FC<PaginationProps> = ({
 
       {variant === 'large' && (
         <Large
-          currentPage={currentPage}
+          currentPage={currentPageFromProps || currentPage}
           numberOfPages={numberOfPages}
           onClickPageItem={handlePageChange}
           onClickPrevious={onClickPrevious}
@@ -86,7 +80,7 @@ const Pagination: React.FC<PaginationProps> = ({
 
       {variant === 'regular' && (
         <Regular
-          currentPage={currentPage}
+          currentPage={currentPageFromProps || currentPage}
           numberOfPages={numberOfPages}
           onClickPageItem={handlePageChange}
           onClickPrevious={onClickPrevious}
