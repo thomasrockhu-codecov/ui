@@ -1,3 +1,10 @@
+## [5.25.3](https://github.com/nordnet/ui/compare/v5.25.2...v5.25.3) (2021-03-15)
+
+
+### Bug Fixes
+
+* enable ssr for pagination ([a68d3e3](https://github.com/nordnet/ui/commit/a68d3e3))
+
 ## [5.25.2](https://github.com/nordnet/ui/compare/v5.25.1...v5.25.2) (2021-03-11)
 
 
