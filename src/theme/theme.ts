@@ -190,6 +190,7 @@ const createColors = (type: ThemeColorsVersion): ThemeColors<typeof type> => {
     text: rawColor.gray0,
     textLight: rawColor.white, // FIXME: to be removed later
     warning: a11yColors ? rawColor.a11yIndex : rawColor.index,
+    iconBackdropCta: Color(rawColor.cta).alpha(0.1).rgb().string(),
     inputBorder: rawColor.gray4,
     inputBorderHover: rawColor.gray1,
     tableRowBackground: rawColor.white,
