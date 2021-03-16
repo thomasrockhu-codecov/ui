@@ -1,3 +1,10 @@
+## [5.25.4](https://github.com/nordnet/ui/compare/v5.25.3...v5.25.4) (2021-03-16)
+
+
+### Bug Fixes
+
+* add risk icon background color ([5974aec](https://github.com/nordnet/ui/commit/5974aec))
+
 ## [5.25.3](https://github.com/nordnet/ui/compare/v5.25.2...v5.25.3) (2021-03-15)
 
 
