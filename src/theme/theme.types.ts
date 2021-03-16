@@ -189,6 +189,8 @@ export type ThemeColors<Version extends ThemeColorsVersion> = {
   switchReadOnlyTrackBg: string;
   /** gray7 */
   switchReadOnlyKnobBg: RawColor['gray7'];
+  /** 10 percent of cta */
+  iconBackdropCta: string;
   /** gray4 */
   inputBorder: RawColor['gray4'];
   /** gray1 */
