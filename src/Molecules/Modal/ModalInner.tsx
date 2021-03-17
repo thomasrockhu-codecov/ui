@@ -118,6 +118,28 @@ export const Footer = styled.div`
 
 const noop = () => {};
 
+const BackdropWrapper: React.FC<BackdropWrapperProps> = ({
+  children,
+  showBackdrop,
+  backdropRef,
+  onClick,
+  fullScreenMobile,
+}) =>
+  showBackdrop ? (
+    <Backdrop
+      container
+      alignItems="center"
+      justifyContent="center"
+      ref={backdropRef}
+      onClick={onClick}
+      fullScreenMobile={fullScreenMobile}
+    >
+      {children}
+    </Backdrop>
+  ) : (
+    <React.Fragment>{children}</React.Fragment>
+  );
+
 export const ModalInner: React.FC<Props> = ({
   autoFocus = false,
   children,
@@ -130,6 +152,7 @@ export const ModalInner: React.FC<Props> = ({
   closeOnBackdropClick = false,
   fullScreenMobile = true,
   isStatusModal = false,
+  showBackdrop = true,
   onAnimationComplete,
 }) => {
   const [show, setShow] = useState(false);
@@ -186,12 +209,10 @@ export const ModalInner: React.FC<Props> = ({
     <>
       <FocusLock autoFocus={autoFocus}>
         <RemoveScroll>
-          <Backdrop
-            container
-            alignItems="center"
-            justifyContent="center"
-            ref={backdropRef}
+          <BackdropWrapper
+            showBackdrop={showBackdrop}
             onClick={handleBackdropClick}
+            backdropRef={backdropRef}
             fullScreenMobile={fullScreenMobile}
           >
             <Dialog
@@ -215,7 +236,7 @@ export const ModalInner: React.FC<Props> = ({
                 </CloseButton>
               )}
             </Dialog>
-          </Backdrop>
+          </BackdropWrapper>
         </RemoveScroll>
       </FocusLock>
     </>

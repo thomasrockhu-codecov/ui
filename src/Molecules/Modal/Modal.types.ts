@@ -1,3 +1,5 @@
+import React from 'react';
+
 export type InnerProps = {
   className?: string;
   closeTitle?: string;
@@ -11,6 +13,7 @@ export type InnerProps = {
   closeOnBackdropClick?: boolean;
   isStatusModal?: boolean;
   onAnimationComplete?: () => void;
+  showBackdrop?: boolean;
 };
 
 export type BackdropProps = {
@@ -30,3 +33,8 @@ export type Props = {
   /** @default false */
   autoFocus?: boolean;
 } & InnerProps;
+
+export type BackdropWrapperProps = BackdropProps & {
+  showBackdrop: boolean;
+  backdropRef: React.RefObject<HTMLDivElement>;
+};
