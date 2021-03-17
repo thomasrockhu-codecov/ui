@@ -1261,3 +1261,42 @@ export const modalWithAnimationComplete = () => {
 modalWithAnimationComplete.story = {
   name: 'Animation Complete',
 };
+
+export const modalWithoutBackdrop = () => {
+  const Example = () => {
+    const [open, setOpen] = useState(true);
+
+    const onOpen = () => {
+      setOpen(true);
+    };
+
+    const onClose = () => {
+      setOpen(false);
+    };
+
+    return (
+      <div>
+        <button type="button" onClick={onOpen}>
+          Open modal
+        </button>
+        <ScrollMaker />
+        {/* ScrollMaker is just used to show how the Modal locks scrolling when open */}
+        <Modal onClose={onClose} title="Dialog information" open={open} showBackdrop={false}>
+          <Box mb={2}>
+            <Typography type="primary" as="p">
+              Modals should be used with care as they are quite intrusive on the user experience and
+              demand immediate attention (while also blocking all other actions on the site). Always
+              consider if you can solve a problem in another way first before you choose to go with
+              the modal.
+            </Typography>
+          </Box>
+        </Modal>
+      </div>
+    );
+  };
+  return <Example />;
+};
+
+modalWithoutBackdrop.story = {
+  name: 'Modal without backdrop',
+};
