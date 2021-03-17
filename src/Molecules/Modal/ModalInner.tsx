@@ -4,7 +4,7 @@ import { RemoveScroll } from 'react-remove-scroll';
 import FocusLock from 'react-focus-lock';
 import styled from 'styled-components';
 import { motion } from 'framer-motion';
-import { DialogProps, BackdropProps, Props } from './Modal.types';
+import { DialogProps, BackdropProps, Props, BackdropWrapperProps } from './Modal.types';
 import NormalizedElements from '../../common/NormalizedElements';
 import { isFunction } from '../../common/utils';
 import { Title } from './Title';
@@ -16,6 +16,15 @@ const PADDING_TOP_MOBILE = 4;
 const PADDING_TOP_MOBILE_FULLSCREEN = 5;
 const PADDING_BOTTOM_MOBILE_FULLSCREEN = 5;
 const CLOSE_ICON_SIZE = 5;
+
+export const Fixedrop = styled(Flexbox)`
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: ${({ theme }) => theme.zIndex.modal};
+`;
 
 export const Backdrop = styled(Flexbox)<BackdropProps>`
   position: fixed;
@@ -137,7 +146,9 @@ const BackdropWrapper: React.FC<BackdropWrapperProps> = ({
       {children}
     </Backdrop>
   ) : (
-    <React.Fragment>{children}</React.Fragment>
+    <Fixedrop container alignItems="center" justifyContent="center">
+      {children}
+    </Fixedrop>
   );
 
 export const ModalInner: React.FC<Props> = ({
