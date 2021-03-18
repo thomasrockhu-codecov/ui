@@ -1,6 +1,6 @@
 import React from 'react';
 import { action, actions } from '@storybook/addon-actions';
-import { Icon, Input } from '../../..';
+import { Icon, Input, Box } from '../../..';
 import { Display } from '../../../common/Display';
 
 const handlers = actions(
@@ -453,4 +453,14 @@ export const quietNumber = () => (
 );
 quietNumber.story = {
   name: 'Quiet',
+};
+
+export const onAColouredBackground = () => (
+  <Box p={5} backgroundColor={(t) => t.color.disabledBackground}>
+    <Input.Number id="unique-id-for-coloured-background" label="On a coloured background" />
+  </Box>
+);
+
+onAColouredBackground.story = {
+  name: 'On a coloured background',
 };
