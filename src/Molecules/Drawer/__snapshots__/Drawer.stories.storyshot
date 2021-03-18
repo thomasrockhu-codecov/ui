@@ -2511,14 +2511,20 @@ exports[`Storyshots Molecules / Drawer Without closing the drawer when clicking 
 
 exports[`Storyshots Molecules / Drawer Without closing the drawer when clicking outside on specified elements 1`] = `
 .c0 {
+  background-color: transparent;
+}
+
+.c1 {
   padding: 32px;
+  background-color: transparent;
 }
 
-.c5 {
+.c6 {
   margin-top: 16px;
+  background-color: transparent;
 }
 
-.c13 {
+.c14 {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -2532,7 +2538,7 @@ exports[`Storyshots Molecules / Drawer Without closing the drawer when clicking 
   display: block;
 }
 
-.c2 {
+.c3 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
   margin: 0;
@@ -2541,7 +2547,7 @@ exports[`Storyshots Molecules / Drawer Without closing the drawer when clicking 
   line-height: 1.3333333333333333;
 }
 
-.c3 {
+.c4 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
   margin: 0;
@@ -2550,7 +2556,7 @@ exports[`Storyshots Molecules / Drawer Without closing the drawer when clicking 
   line-height: 1.5;
 }
 
-.c4 {
+.c5 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
   margin: 0;
@@ -2559,7 +2565,7 @@ exports[`Storyshots Molecules / Drawer Without closing the drawer when clicking 
   line-height: 1.5;
 }
 
-.c9 {
+.c10 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
   margin: 0;
@@ -2568,7 +2574,7 @@ exports[`Storyshots Molecules / Drawer Without closing the drawer when clicking 
   line-height: 1.2;
 }
 
-.c12 {
+.c13 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: inherit;
   margin: 0;
@@ -2577,7 +2583,7 @@ exports[`Storyshots Molecules / Drawer Without closing the drawer when clicking 
   line-height: 1.4285714285714286;
 }
 
-.c10 {
+.c11 {
   font-family: inherit;
   font-size: 100%;
   line-height: 1.15;
@@ -2606,46 +2612,46 @@ exports[`Storyshots Molecules / Drawer Without closing the drawer when clicking 
   cursor: pointer;
 }
 
-.c10,
-.c10[type='button'],
-.c10[type='reset'],
-.c10[type='submit'] {
+.c11,
+.c11[type='button'],
+.c11[type='reset'],
+.c11[type='submit'] {
   -webkit-appearance: button;
 }
 
-.c10::-moz-focus-inner,
-.c10[type='button']::-moz-focus-inner,
-.c10[type='reset']::-moz-focus-inner,
-.c10[type='submit']::-moz-focus-inner {
+.c11::-moz-focus-inner,
+.c11[type='button']::-moz-focus-inner,
+.c11[type='reset']::-moz-focus-inner,
+.c11[type='submit']::-moz-focus-inner {
   border-style: none;
   padding: 0;
 }
 
-.c10:-moz-focusring,
-.c10[type='button']:-moz-focusring,
-.c10[type='reset']:-moz-focusring,
-.c10[type='submit']:-moz-focusring {
+.c11:-moz-focusring,
+.c11[type='button']:-moz-focusring,
+.c11[type='reset']:-moz-focusring,
+.c11[type='submit']:-moz-focusring {
   outline: 1px dotted ButtonText;
 }
 
-.c11 {
+.c12 {
   position: absolute;
   top: 20px;
   right: 20px;
 }
 
-.c14 {
+.c15 {
   overflow-y: auto;
   overflow-x: hidden;
   margin-bottom: 20px;
   padding: 0 20px;
 }
 
-.c8 {
+.c9 {
   padding-right: 16px;
 }
 
-.c7 {
+.c8 {
   padding: 20px 20px 0 20px;
   margin-bottom: 8px;
   min-height: 20px;
@@ -2654,23 +2660,23 @@ exports[`Storyshots Molecules / Drawer Without closing the drawer when clicking 
   flex: 0 0 auto;
 }
 
-.c1 {
+.c2 {
   background: #00F0E1;
 }
 
-.c6 {
+.c7 {
   background: #009195;
 }
 
 @media (min-width:760px) {
-  .c2 {
+  .c3 {
     font-size: 20px;
     line-height: 1.2;
   }
 }
 
 @media (min-width:760px) {
-  .c9 {
+  .c10 {
     font-size: 24px;
     line-height: 1.1666666666666667;
   }
@@ -2686,7 +2692,7 @@ exports[`Storyshots Molecules / Drawer Without closing the drawer when clicking 
 
 <div>
   <div
-    className=""
+    className="c0"
   >
     <button
       onClick={[Function]}
@@ -2696,7 +2702,7 @@ exports[`Storyshots Molecules / Drawer Without closing the drawer when clicking 
     </button>
   </div>
   <div
-    className=""
+    className="c0"
   >
     <button
       data-drawer-prevent-click-outside={true}
@@ -2707,7 +2713,7 @@ exports[`Storyshots Molecules / Drawer Without closing the drawer when clicking 
     </button>
   </div>
   <div
-    className=""
+    className="c0"
   >
     <button
       type="button"
@@ -2716,27 +2722,27 @@ exports[`Storyshots Molecules / Drawer Without closing the drawer when clicking 
     </button>
   </div>
   <div
-    className="c0 c1"
+    className="c1 c2"
     data-drawer-prevent-click-outside={true}
   >
     <div>
       <span
-        className="c2"
+        className="c3"
       >
         Random area
       </span>
     </div>
     <div>
       <div
-        className=""
+        className="c0"
       >
         <span
-          className="c3"
+          className="c4"
         >
           Clicking anywhere here does not close the drawer, using the default
            
           <span
-            className="c4"
+            className="c5"
           >
             "data-drawer-prevent-click-outside"
           </span>
@@ -2745,7 +2751,7 @@ exports[`Storyshots Molecules / Drawer Without closing the drawer when clicking 
       </div>
     </div>
     <div
-      className="c5"
+      className="c6"
     >
       <button
         type="button"
@@ -2755,34 +2761,34 @@ exports[`Storyshots Molecules / Drawer Without closing the drawer when clicking 
     </div>
   </div>
   <div
-    className="c0 c6"
+    className="c1 c7"
     data-custom-prevent-click-outside={true}
   >
     <div>
       <span
-        className="c2"
+        className="c3"
       >
         Another random area
       </span>
     </div>
     <div>
       <span
-        className="c3"
+        className="c4"
       >
         Clicking anywhere here does not close the drawer as well. But this area uses a custom "data-custom-prevent-click-outside"-attribute, which is passed to the Drawer to recognize it.
       </span>
       <div
-        className="c5"
+        className="c6"
       >
         <span
-          className="c3"
+          className="c4"
         >
           Useful for when multiple drawers might be open but only one should remain open while clicking this area.
         </span>
       </div>
     </div>
     <div
-      className="c5"
+      className="c6"
     >
       <input
         placeholder="Random text input"
@@ -2832,29 +2838,29 @@ exports[`Storyshots Molecules / Drawer Without closing the drawer when clicking 
       >
         <div>
           <div
-            className="c7"
+            className="c8"
             onTouchStart={[Function]}
           >
             <span
               id="17val-Drawer"
             >
               <h2
-                className="c8 c9"
+                className="c9 c10"
               >
                 Drawer title
               </h2>
             </span>
             <button
-              className="NormalizedButton__Button-ey7f5x-0 c10 c11"
+              className="NormalizedButton__Button-ey7f5x-0 c11 c12"
               onClick={[Function]}
               type="button"
             >
               <span
-                className="c12"
+                className="c13"
               >
                 <svg
                   aria-hidden="false"
-                  className="c13"
+                  className="c14"
                   focusable="false"
                   preserveAspectRatio="xMidYMid meet"
                   role="img"
@@ -2872,26 +2878,26 @@ exports[`Storyshots Molecules / Drawer Without closing the drawer when clicking 
             </button>
           </div>
           <div
-            className="c14"
+            className="c15"
           >
             <div
-              className=""
+              className="c0"
             >
               <span
-                className="c3"
+                className="c4"
               >
                 Certain elements on this page has special data-attributes attached to them, which prevents the Drawer from closing. Try clicking on those elements and compare with clicking somewhere else.
               </span>
             </div>
             <div
-              className="c5"
+              className="c6"
             >
               <span
-                className="c3"
+                className="c4"
               >
                 Observe that ALL drawers' remain open when clicking on elements with the default attribute (
                 <span
-                  className="c4"
+                  className="c5"
                 >
                   "data-drawer-prevent-click-outside"
                 </span>
