@@ -3,6 +3,7 @@
 exports[`Storyshots Molecules / Modal Animation Complete 1`] = `
 .c6 {
   margin-bottom: 8px;
+  background-color: transparent;
 }
 
 .c1 {
@@ -289,6 +290,7 @@ exports[`Storyshots Molecules / Modal Animation Complete 1`] = `
 exports[`Storyshots Molecules / Modal Close On Backdrop Click Story 1`] = `
 .c6 {
   margin-bottom: 8px;
+  background-color: transparent;
 }
 
 .c1 {
@@ -608,6 +610,7 @@ exports[`Storyshots Molecules / Modal Close On Backdrop Click Story 1`] = `
 exports[`Storyshots Molecules / Modal Default 1`] = `
 .c6 {
   margin-bottom: 8px;
+  background-color: transparent;
 }
 
 .c1 {
@@ -927,6 +930,7 @@ exports[`Storyshots Molecules / Modal Default 1`] = `
 exports[`Storyshots Molecules / Modal Hide Close button 1`] = `
 .c6 {
   margin-bottom: 8px;
+  background-color: transparent;
 }
 
 .c1 {
@@ -1128,6 +1132,7 @@ exports[`Storyshots Molecules / Modal Hide Close button 1`] = `
 exports[`Storyshots Molecules / Modal Integration: Modal with a footer and Button 1`] = `
 .c10 {
   margin-bottom: 8px;
+  background-color: transparent;
 }
 
 .c6 {
@@ -1688,8 +1693,13 @@ exports[`Storyshots Molecules / Modal Integration: Modal with a footer and Butto
 `;
 
 exports[`Storyshots Molecules / Modal Modal Standard Large 1`] = `
-.c9 {
+.c5 {
+  background-color: transparent;
+}
+
+.c10 {
   margin-right: 8px;
+  background-color: transparent;
 }
 
 .c0 {
@@ -1708,7 +1718,7 @@ exports[`Storyshots Molecules / Modal Modal Standard Large 1`] = `
   align-items: center;
 }
 
-.c7 {
+.c8 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -1724,7 +1734,7 @@ exports[`Storyshots Molecules / Modal Modal Standard Large 1`] = `
   align-items: center;
 }
 
-.c8 {
+.c9 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -1736,7 +1746,7 @@ exports[`Storyshots Molecules / Modal Modal Standard Large 1`] = `
   align-items: center;
 }
 
-.c13 {
+.c14 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -1744,7 +1754,7 @@ exports[`Storyshots Molecules / Modal Modal Standard Large 1`] = `
   display: flex;
 }
 
-.c10 {
+.c11 {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -1758,7 +1768,7 @@ exports[`Storyshots Molecules / Modal Modal Standard Large 1`] = `
   display: block;
 }
 
-.c18 {
+.c19 {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -1772,11 +1782,11 @@ exports[`Storyshots Molecules / Modal Modal Standard Large 1`] = `
   display: block;
 }
 
-.c19 {
+.c20 {
   stroke: #282823;
 }
 
-.c11 {
+.c12 {
   -webkit-transform: rotate(0deg);
   -ms-transform: rotate(0deg);
   transform: rotate(0deg);
@@ -1791,7 +1801,7 @@ exports[`Storyshots Molecules / Modal Modal Standard Large 1`] = `
   line-height: 1.2;
 }
 
-.c5 {
+.c6 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
   margin: 0;
@@ -1800,7 +1810,7 @@ exports[`Storyshots Molecules / Modal Modal Standard Large 1`] = `
   line-height: 1.5;
 }
 
-.c12 {
+.c13 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
   margin: 0;
@@ -1809,7 +1819,7 @@ exports[`Storyshots Molecules / Modal Modal Standard Large 1`] = `
   line-height: 1.5;
 }
 
-.c15 {
+.c16 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: inherit;
   margin: 0;
@@ -1818,7 +1828,7 @@ exports[`Storyshots Molecules / Modal Modal Standard Large 1`] = `
   line-height: 1.5;
 }
 
-.c14 {
+.c15 {
   font-family: inherit;
   font-size: 100%;
   line-height: 1.15;
@@ -1848,29 +1858,29 @@ exports[`Storyshots Molecules / Modal Modal Standard Large 1`] = `
   cursor: pointer;
 }
 
-.c14,
-.c14[type='button'],
-.c14[type='reset'],
-.c14[type='submit'] {
+.c15,
+.c15[type='button'],
+.c15[type='reset'],
+.c15[type='submit'] {
   -webkit-appearance: button;
 }
 
-.c14::-moz-focus-inner,
-.c14[type='button']::-moz-focus-inner,
-.c14[type='reset']::-moz-focus-inner,
-.c14[type='submit']::-moz-focus-inner {
+.c15::-moz-focus-inner,
+.c15[type='button']::-moz-focus-inner,
+.c15[type='reset']::-moz-focus-inner,
+.c15[type='submit']::-moz-focus-inner {
   border-style: none;
   padding: 0;
 }
 
-.c14:-moz-focusring,
-.c14[type='button']:-moz-focusring,
-.c14[type='reset']:-moz-focusring,
-.c14[type='submit']:-moz-focusring {
+.c15:-moz-focusring,
+.c15[type='button']:-moz-focusring,
+.c15[type='reset']:-moz-focusring,
+.c15[type='submit']:-moz-focusring {
   outline: 1px dotted ButtonText;
 }
 
-.c14::before {
+.c15::before {
   content: '';
   display: block;
   position: absolute;
@@ -1881,23 +1891,23 @@ exports[`Storyshots Molecules / Modal Modal Standard Large 1`] = `
   height: calc(100% - 4px);
 }
 
-.c14:hover {
+.c15:hover {
   color: hsl(223.5,100%,40%);
 }
 
-.c14:hover::before {
+.c15:hover::before {
   border-color: hsl(223.5,100%,40%);
 }
 
-.c14:active {
+.c15:active {
   color: hsl(223.5,100%,35%);
 }
 
-.c14:active::before {
+.c15:active::before {
   border-color: hsl(223.5,100%,35%);
 }
 
-.c16 {
+.c17 {
   font-family: inherit;
   font-size: 100%;
   line-height: 1.15;
@@ -1927,81 +1937,6 @@ exports[`Storyshots Molecules / Modal Modal Standard Large 1`] = `
   cursor: pointer;
 }
 
-.c16,
-.c16[type='button'],
-.c16[type='reset'],
-.c16[type='submit'] {
-  -webkit-appearance: button;
-}
-
-.c16::-moz-focus-inner,
-.c16[type='button']::-moz-focus-inner,
-.c16[type='reset']::-moz-focus-inner,
-.c16[type='submit']::-moz-focus-inner {
-  border-style: none;
-  padding: 0;
-}
-
-.c16:-moz-focusring,
-.c16[type='button']:-moz-focusring,
-.c16[type='reset']:-moz-focusring,
-.c16[type='submit']:-moz-focusring {
-  outline: 1px dotted ButtonText;
-}
-
-.c16::before {
-  content: '';
-  display: block;
-  position: absolute;
-  border: 2px solid transparent;
-  top: 0;
-  left: 0;
-  width: calc(100% - 4px);
-  height: calc(100% - 4px);
-}
-
-.c16:hover {
-  background-color: hsl(223.5,100%,45%);
-}
-
-.c16:active {
-  background-color: hsl(223.5,100%,40%);
-}
-
-.c3 {
-  padding-right: 16px;
-}
-
-.c1 {
-  position: fixed;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  z-index: 500;
-  background-color: rgba(110,110,105,0.63);
-}
-
-.c17 {
-  font-family: inherit;
-  font-size: 100%;
-  line-height: 1.15;
-  margin: 0;
-  overflow: visible;
-  text-transform: none;
-  display: block;
-  background: none;
-  padding: 0;
-  border: 0;
-  cursor: pointer;
-  position: absolute;
-  -webkit-transform: translateY(3px);
-  -ms-transform: translateY(3px);
-  transform: translateY(3px);
-  top: 12px;
-  right: 12px;
-}
-
 .c17,
 .c17[type='button'],
 .c17[type='reset'],
@@ -2024,6 +1959,81 @@ exports[`Storyshots Molecules / Modal Modal Standard Large 1`] = `
   outline: 1px dotted ButtonText;
 }
 
+.c17::before {
+  content: '';
+  display: block;
+  position: absolute;
+  border: 2px solid transparent;
+  top: 0;
+  left: 0;
+  width: calc(100% - 4px);
+  height: calc(100% - 4px);
+}
+
+.c17:hover {
+  background-color: hsl(223.5,100%,45%);
+}
+
+.c17:active {
+  background-color: hsl(223.5,100%,40%);
+}
+
+.c3 {
+  padding-right: 16px;
+}
+
+.c1 {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 500;
+  background-color: rgba(110,110,105,0.63);
+}
+
+.c18 {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  overflow: visible;
+  text-transform: none;
+  display: block;
+  background: none;
+  padding: 0;
+  border: 0;
+  cursor: pointer;
+  position: absolute;
+  -webkit-transform: translateY(3px);
+  -ms-transform: translateY(3px);
+  transform: translateY(3px);
+  top: 12px;
+  right: 12px;
+}
+
+.c18,
+.c18[type='button'],
+.c18[type='reset'],
+.c18[type='submit'] {
+  -webkit-appearance: button;
+}
+
+.c18::-moz-focus-inner,
+.c18[type='button']::-moz-focus-inner,
+.c18[type='reset']::-moz-focus-inner,
+.c18[type='submit']::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+.c18:-moz-focusring,
+.c18[type='button']:-moz-focusring,
+.c18[type='reset']:-moz-focusring,
+.c18[type='submit']:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
 .c2 {
   padding-bottom: 16px;
   padding-right: 28px;
@@ -2033,7 +2043,7 @@ exports[`Storyshots Molecules / Modal Modal Standard Large 1`] = `
   flex: 0 0 auto;
 }
 
-.c6 {
+.c7 {
   margin-top: auto;
   padding-top: 16px;
   -webkit-flex: 0 0 auto;
@@ -2065,7 +2075,7 @@ exports[`Storyshots Molecules / Modal Modal Standard Large 1`] = `
 }
 
 @media (min-width:760px) {
-  .c17 {
+  .c18 {
     top: 40px;
     right: 40px;
   }
@@ -2132,29 +2142,29 @@ exports[`Storyshots Molecules / Modal Modal Standard Large 1`] = `
             </span>
           </div>
           <div
-            className=""
+            className="c5"
           >
             <p
-              className="c5"
+              className="c6"
             >
               Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of de Finibus Bonorum et Malorum (The Extremes of Good and
             </p>
           </div>
           <div
-            className="c6"
+            className="c7"
           >
             <div
-              className="c7"
+              className="c8"
             >
               <div
-                className="c8"
+                className="c9"
               >
                 <div
-                  className="c9"
+                  className="c10"
                 >
                   <svg
                     aria-hidden="true"
-                    className="c10 c11"
+                    className="c11 c12"
                     direction="left"
                     focusable="false"
                     preserveAspectRatio="xMidYMid meet"
@@ -2167,25 +2177,25 @@ exports[`Storyshots Molecules / Modal Modal Standard Large 1`] = `
                   </svg>
                 </div>
                 <span
-                  className="c12"
+                  className="c13"
                 >
                   Back
                 </span>
               </div>
               <div
-                className="c13"
+                className="c14"
               >
                 <div
-                  className="c9"
+                  className="c10"
                 >
                   <button
-                    className="NormalizedButton__Button-ey7f5x-0 c14"
+                    className="NormalizedButton__Button-ey7f5x-0 c15"
                     onClick={[Function]}
                     type="button"
                   >
                     <span>
                       <span
-                        className="c15"
+                        className="c16"
                       >
                         Button
                       </span>
@@ -2193,13 +2203,13 @@ exports[`Storyshots Molecules / Modal Modal Standard Large 1`] = `
                   </button>
                 </div>
                 <button
-                  className="NormalizedButton__Button-ey7f5x-0 c16"
+                  className="NormalizedButton__Button-ey7f5x-0 c17"
                   onClick={[Function]}
                   type="button"
                 >
                   <span>
                     <span
-                      className="c15"
+                      className="c16"
                     >
                       Button
                     </span>
@@ -2209,21 +2219,21 @@ exports[`Storyshots Molecules / Modal Modal Standard Large 1`] = `
             </div>
           </div>
           <button
-            className="NormalizedButton__Button-ey7f5x-0 c17"
+            className="NormalizedButton__Button-ey7f5x-0 c18"
             fullScreenMobile={false}
             onClick={[Function]}
             type="button"
           >
             <svg
               aria-hidden="false"
-              className="c18"
+              className="c19"
               focusable="false"
               preserveAspectRatio="xMidYMid meet"
               role="img"
               viewBox="0 0 24 24"
             >
               <path
-                className="c19"
+                className="c20"
                 d="m 1 1 l 22 22 m -22 0 l 22 -22"
                 strokeWidth={2}
               />
@@ -2257,10 +2267,12 @@ exports[`Storyshots Molecules / Modal Modal Standard Large 1`] = `
 exports[`Storyshots Molecules / Modal Modal Standard Large with scroll 1`] = `
 .c10 {
   margin-bottom: 8px;
+  background-color: transparent;
 }
 
 .c16 {
   margin-right: 8px;
+  background-color: transparent;
 }
 
 .c6 {
@@ -2995,8 +3007,13 @@ exports[`Storyshots Molecules / Modal Modal Standard Large with scroll 1`] = `
 `;
 
 exports[`Storyshots Molecules / Modal Modal Standard Medium 1`] = `
-.c9 {
+.c5 {
+  background-color: transparent;
+}
+
+.c10 {
   margin-right: 8px;
+  background-color: transparent;
 }
 
 .c0 {
@@ -3015,7 +3032,7 @@ exports[`Storyshots Molecules / Modal Modal Standard Medium 1`] = `
   align-items: center;
 }
 
-.c7 {
+.c8 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -3031,7 +3048,7 @@ exports[`Storyshots Molecules / Modal Modal Standard Medium 1`] = `
   align-items: center;
 }
 
-.c8 {
+.c9 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -3043,7 +3060,7 @@ exports[`Storyshots Molecules / Modal Modal Standard Medium 1`] = `
   align-items: center;
 }
 
-.c13 {
+.c14 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -3051,7 +3068,7 @@ exports[`Storyshots Molecules / Modal Modal Standard Medium 1`] = `
   display: flex;
 }
 
-.c10 {
+.c11 {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -3065,7 +3082,7 @@ exports[`Storyshots Molecules / Modal Modal Standard Medium 1`] = `
   display: block;
 }
 
-.c18 {
+.c19 {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -3079,11 +3096,11 @@ exports[`Storyshots Molecules / Modal Modal Standard Medium 1`] = `
   display: block;
 }
 
-.c19 {
+.c20 {
   stroke: #282823;
 }
 
-.c11 {
+.c12 {
   -webkit-transform: rotate(0deg);
   -ms-transform: rotate(0deg);
   transform: rotate(0deg);
@@ -3098,7 +3115,7 @@ exports[`Storyshots Molecules / Modal Modal Standard Medium 1`] = `
   line-height: 1.2;
 }
 
-.c5 {
+.c6 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
   margin: 0;
@@ -3107,7 +3124,7 @@ exports[`Storyshots Molecules / Modal Modal Standard Medium 1`] = `
   line-height: 1.5;
 }
 
-.c12 {
+.c13 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
   margin: 0;
@@ -3116,7 +3133,7 @@ exports[`Storyshots Molecules / Modal Modal Standard Medium 1`] = `
   line-height: 1.5;
 }
 
-.c15 {
+.c16 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: inherit;
   margin: 0;
@@ -3125,7 +3142,7 @@ exports[`Storyshots Molecules / Modal Modal Standard Medium 1`] = `
   line-height: 1.5;
 }
 
-.c14 {
+.c15 {
   font-family: inherit;
   font-size: 100%;
   line-height: 1.15;
@@ -3155,29 +3172,29 @@ exports[`Storyshots Molecules / Modal Modal Standard Medium 1`] = `
   cursor: pointer;
 }
 
-.c14,
-.c14[type='button'],
-.c14[type='reset'],
-.c14[type='submit'] {
+.c15,
+.c15[type='button'],
+.c15[type='reset'],
+.c15[type='submit'] {
   -webkit-appearance: button;
 }
 
-.c14::-moz-focus-inner,
-.c14[type='button']::-moz-focus-inner,
-.c14[type='reset']::-moz-focus-inner,
-.c14[type='submit']::-moz-focus-inner {
+.c15::-moz-focus-inner,
+.c15[type='button']::-moz-focus-inner,
+.c15[type='reset']::-moz-focus-inner,
+.c15[type='submit']::-moz-focus-inner {
   border-style: none;
   padding: 0;
 }
 
-.c14:-moz-focusring,
-.c14[type='button']:-moz-focusring,
-.c14[type='reset']:-moz-focusring,
-.c14[type='submit']:-moz-focusring {
+.c15:-moz-focusring,
+.c15[type='button']:-moz-focusring,
+.c15[type='reset']:-moz-focusring,
+.c15[type='submit']:-moz-focusring {
   outline: 1px dotted ButtonText;
 }
 
-.c14::before {
+.c15::before {
   content: '';
   display: block;
   position: absolute;
@@ -3188,23 +3205,23 @@ exports[`Storyshots Molecules / Modal Modal Standard Medium 1`] = `
   height: calc(100% - 4px);
 }
 
-.c14:hover {
+.c15:hover {
   color: hsl(223.5,100%,40%);
 }
 
-.c14:hover::before {
+.c15:hover::before {
   border-color: hsl(223.5,100%,40%);
 }
 
-.c14:active {
+.c15:active {
   color: hsl(223.5,100%,35%);
 }
 
-.c14:active::before {
+.c15:active::before {
   border-color: hsl(223.5,100%,35%);
 }
 
-.c16 {
+.c17 {
   font-family: inherit;
   font-size: 100%;
   line-height: 1.15;
@@ -3234,81 +3251,6 @@ exports[`Storyshots Molecules / Modal Modal Standard Medium 1`] = `
   cursor: pointer;
 }
 
-.c16,
-.c16[type='button'],
-.c16[type='reset'],
-.c16[type='submit'] {
-  -webkit-appearance: button;
-}
-
-.c16::-moz-focus-inner,
-.c16[type='button']::-moz-focus-inner,
-.c16[type='reset']::-moz-focus-inner,
-.c16[type='submit']::-moz-focus-inner {
-  border-style: none;
-  padding: 0;
-}
-
-.c16:-moz-focusring,
-.c16[type='button']:-moz-focusring,
-.c16[type='reset']:-moz-focusring,
-.c16[type='submit']:-moz-focusring {
-  outline: 1px dotted ButtonText;
-}
-
-.c16::before {
-  content: '';
-  display: block;
-  position: absolute;
-  border: 2px solid transparent;
-  top: 0;
-  left: 0;
-  width: calc(100% - 4px);
-  height: calc(100% - 4px);
-}
-
-.c16:hover {
-  background-color: hsl(223.5,100%,45%);
-}
-
-.c16:active {
-  background-color: hsl(223.5,100%,40%);
-}
-
-.c3 {
-  padding-right: 16px;
-}
-
-.c1 {
-  position: fixed;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  z-index: 500;
-  background-color: rgba(110,110,105,0.63);
-}
-
-.c17 {
-  font-family: inherit;
-  font-size: 100%;
-  line-height: 1.15;
-  margin: 0;
-  overflow: visible;
-  text-transform: none;
-  display: block;
-  background: none;
-  padding: 0;
-  border: 0;
-  cursor: pointer;
-  position: absolute;
-  -webkit-transform: translateY(3px);
-  -ms-transform: translateY(3px);
-  transform: translateY(3px);
-  top: 12px;
-  right: 12px;
-}
-
 .c17,
 .c17[type='button'],
 .c17[type='reset'],
@@ -3331,6 +3273,81 @@ exports[`Storyshots Molecules / Modal Modal Standard Medium 1`] = `
   outline: 1px dotted ButtonText;
 }
 
+.c17::before {
+  content: '';
+  display: block;
+  position: absolute;
+  border: 2px solid transparent;
+  top: 0;
+  left: 0;
+  width: calc(100% - 4px);
+  height: calc(100% - 4px);
+}
+
+.c17:hover {
+  background-color: hsl(223.5,100%,45%);
+}
+
+.c17:active {
+  background-color: hsl(223.5,100%,40%);
+}
+
+.c3 {
+  padding-right: 16px;
+}
+
+.c1 {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 500;
+  background-color: rgba(110,110,105,0.63);
+}
+
+.c18 {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  overflow: visible;
+  text-transform: none;
+  display: block;
+  background: none;
+  padding: 0;
+  border: 0;
+  cursor: pointer;
+  position: absolute;
+  -webkit-transform: translateY(3px);
+  -ms-transform: translateY(3px);
+  transform: translateY(3px);
+  top: 12px;
+  right: 12px;
+}
+
+.c18,
+.c18[type='button'],
+.c18[type='reset'],
+.c18[type='submit'] {
+  -webkit-appearance: button;
+}
+
+.c18::-moz-focus-inner,
+.c18[type='button']::-moz-focus-inner,
+.c18[type='reset']::-moz-focus-inner,
+.c18[type='submit']::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+.c18:-moz-focusring,
+.c18[type='button']:-moz-focusring,
+.c18[type='reset']:-moz-focusring,
+.c18[type='submit']:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
 .c2 {
   padding-bottom: 16px;
   padding-right: 28px;
@@ -3340,7 +3357,7 @@ exports[`Storyshots Molecules / Modal Modal Standard Medium 1`] = `
   flex: 0 0 auto;
 }
 
-.c6 {
+.c7 {
   margin-top: auto;
   padding-top: 16px;
   -webkit-flex: 0 0 auto;
@@ -3372,7 +3389,7 @@ exports[`Storyshots Molecules / Modal Modal Standard Medium 1`] = `
 }
 
 @media (min-width:760px) {
-  .c17 {
+  .c18 {
     top: 40px;
     right: 40px;
   }
@@ -3439,29 +3456,29 @@ exports[`Storyshots Molecules / Modal Modal Standard Medium 1`] = `
             </span>
           </div>
           <div
-            className=""
+            className="c5"
           >
             <p
-              className="c5"
+              className="c6"
             >
               Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of de Finibus Bonorum et Malorum (The Extremes of Good and
             </p>
           </div>
           <div
-            className="c6"
+            className="c7"
           >
             <div
-              className="c7"
+              className="c8"
             >
               <div
-                className="c8"
+                className="c9"
               >
                 <div
-                  className="c9"
+                  className="c10"
                 >
                   <svg
                     aria-hidden="true"
-                    className="c10 c11"
+                    className="c11 c12"
                     direction="left"
                     focusable="false"
                     preserveAspectRatio="xMidYMid meet"
@@ -3474,25 +3491,25 @@ exports[`Storyshots Molecules / Modal Modal Standard Medium 1`] = `
                   </svg>
                 </div>
                 <span
-                  className="c12"
+                  className="c13"
                 >
                   Back
                 </span>
               </div>
               <div
-                className="c13"
+                className="c14"
               >
                 <div
-                  className="c9"
+                  className="c10"
                 >
                   <button
-                    className="NormalizedButton__Button-ey7f5x-0 c14"
+                    className="NormalizedButton__Button-ey7f5x-0 c15"
                     onClick={[Function]}
                     type="button"
                   >
                     <span>
                       <span
-                        className="c15"
+                        className="c16"
                       >
                         Button
                       </span>
@@ -3500,13 +3517,13 @@ exports[`Storyshots Molecules / Modal Modal Standard Medium 1`] = `
                   </button>
                 </div>
                 <button
-                  className="NormalizedButton__Button-ey7f5x-0 c16"
+                  className="NormalizedButton__Button-ey7f5x-0 c17"
                   onClick={[Function]}
                   type="button"
                 >
                   <span>
                     <span
-                      className="c15"
+                      className="c16"
                     >
                       Button
                     </span>
@@ -3516,21 +3533,21 @@ exports[`Storyshots Molecules / Modal Modal Standard Medium 1`] = `
             </div>
           </div>
           <button
-            className="NormalizedButton__Button-ey7f5x-0 c17"
+            className="NormalizedButton__Button-ey7f5x-0 c18"
             fullScreenMobile={false}
             onClick={[Function]}
             type="button"
           >
             <svg
               aria-hidden="false"
-              className="c18"
+              className="c19"
               focusable="false"
               preserveAspectRatio="xMidYMid meet"
               role="img"
               viewBox="0 0 24 24"
             >
               <path
-                className="c19"
+                className="c20"
                 d="m 1 1 l 22 22 m -22 0 l 22 -22"
                 strokeWidth={2}
               />
@@ -3564,6 +3581,7 @@ exports[`Storyshots Molecules / Modal Modal Standard Medium 1`] = `
 exports[`Storyshots Molecules / Modal Modal Standard Mobile With Scroll, One Button, Fullscreen 1`] = `
 .c10 {
   margin-bottom: 8px;
+  background-color: transparent;
 }
 
 .c6 {
@@ -4138,6 +4156,7 @@ exports[`Storyshots Molecules / Modal Modal Standard Mobile With Scroll, One But
 exports[`Storyshots Molecules / Modal Modal Standard Mobile with scroll, Fullscreen 1`] = `
 .c10 {
   margin-bottom: 8px;
+  background-color: transparent;
 }
 
 .c6 {
@@ -4811,6 +4830,7 @@ exports[`Storyshots Molecules / Modal Modal Standard Mobile with scroll, Fullscr
 exports[`Storyshots Molecules / Modal Modal Standard Mobile, 1 Button, Fullscreen 1`] = `
 .c6 {
   margin-bottom: 8px;
+  background-color: transparent;
 }
 
 .c1 {
@@ -5245,6 +5265,7 @@ exports[`Storyshots Molecules / Modal Modal Standard Mobile, 1 Button, Fullscree
 exports[`Storyshots Molecules / Modal Modal Standard Mobile, 1 Button, Small 1`] = `
 .c6 {
   margin-bottom: 8px;
+  background-color: transparent;
 }
 
 .c1 {
@@ -5665,6 +5686,7 @@ exports[`Storyshots Molecules / Modal Modal Standard Mobile, 1 Button, Small 1`]
 exports[`Storyshots Molecules / Modal Modal Standard Mobile, 2 Buttons, Fullscreen 1`] = `
 .c6 {
   margin-bottom: 8px;
+  background-color: transparent;
 }
 
 .c1 {
@@ -6207,6 +6229,7 @@ exports[`Storyshots Molecules / Modal Modal Standard Mobile, 2 Buttons, Fullscre
 exports[`Storyshots Molecules / Modal Modal Standard Mobile, 2 Buttons, Small 1`] = `
 .c6 {
   margin-bottom: 8px;
+  background-color: transparent;
 }
 
 .c1 {
@@ -6733,8 +6756,13 @@ exports[`Storyshots Molecules / Modal Modal Standard Mobile, 2 Buttons, Small 1`
 `;
 
 exports[`Storyshots Molecules / Modal Modal Standard Small 1`] = `
-.c10 {
+.c6 {
+  background-color: transparent;
+}
+
+.c11 {
   margin-right: 8px;
+  background-color: transparent;
 }
 
 .c1 {
@@ -6753,7 +6781,7 @@ exports[`Storyshots Molecules / Modal Modal Standard Small 1`] = `
   align-items: center;
 }
 
-.c8 {
+.c9 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -6769,7 +6797,7 @@ exports[`Storyshots Molecules / Modal Modal Standard Small 1`] = `
   align-items: center;
 }
 
-.c9 {
+.c10 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -6781,7 +6809,7 @@ exports[`Storyshots Molecules / Modal Modal Standard Small 1`] = `
   align-items: center;
 }
 
-.c14 {
+.c15 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -6789,7 +6817,7 @@ exports[`Storyshots Molecules / Modal Modal Standard Small 1`] = `
   display: flex;
 }
 
-.c11 {
+.c12 {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -6803,7 +6831,7 @@ exports[`Storyshots Molecules / Modal Modal Standard Small 1`] = `
   display: block;
 }
 
-.c19 {
+.c20 {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -6817,11 +6845,11 @@ exports[`Storyshots Molecules / Modal Modal Standard Small 1`] = `
   display: block;
 }
 
-.c20 {
+.c21 {
   stroke: #282823;
 }
 
-.c12 {
+.c13 {
   -webkit-transform: rotate(0deg);
   -ms-transform: rotate(0deg);
   transform: rotate(0deg);
@@ -6836,7 +6864,7 @@ exports[`Storyshots Molecules / Modal Modal Standard Small 1`] = `
   line-height: 1.2;
 }
 
-.c6 {
+.c7 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
   margin: 0;
@@ -6845,7 +6873,7 @@ exports[`Storyshots Molecules / Modal Modal Standard Small 1`] = `
   line-height: 1.5;
 }
 
-.c13 {
+.c14 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
   margin: 0;
@@ -6854,7 +6882,7 @@ exports[`Storyshots Molecules / Modal Modal Standard Small 1`] = `
   line-height: 1.5;
 }
 
-.c16 {
+.c17 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: inherit;
   margin: 0;
@@ -6863,7 +6891,7 @@ exports[`Storyshots Molecules / Modal Modal Standard Small 1`] = `
   line-height: 1.5;
 }
 
-.c15 {
+.c16 {
   font-family: inherit;
   font-size: 100%;
   line-height: 1.15;
@@ -6893,29 +6921,29 @@ exports[`Storyshots Molecules / Modal Modal Standard Small 1`] = `
   cursor: pointer;
 }
 
-.c15,
-.c15[type='button'],
-.c15[type='reset'],
-.c15[type='submit'] {
+.c16,
+.c16[type='button'],
+.c16[type='reset'],
+.c16[type='submit'] {
   -webkit-appearance: button;
 }
 
-.c15::-moz-focus-inner,
-.c15[type='button']::-moz-focus-inner,
-.c15[type='reset']::-moz-focus-inner,
-.c15[type='submit']::-moz-focus-inner {
+.c16::-moz-focus-inner,
+.c16[type='button']::-moz-focus-inner,
+.c16[type='reset']::-moz-focus-inner,
+.c16[type='submit']::-moz-focus-inner {
   border-style: none;
   padding: 0;
 }
 
-.c15:-moz-focusring,
-.c15[type='button']:-moz-focusring,
-.c15[type='reset']:-moz-focusring,
-.c15[type='submit']:-moz-focusring {
+.c16:-moz-focusring,
+.c16[type='button']:-moz-focusring,
+.c16[type='reset']:-moz-focusring,
+.c16[type='submit']:-moz-focusring {
   outline: 1px dotted ButtonText;
 }
 
-.c15::before {
+.c16::before {
   content: '';
   display: block;
   position: absolute;
@@ -6926,23 +6954,23 @@ exports[`Storyshots Molecules / Modal Modal Standard Small 1`] = `
   height: calc(100% - 4px);
 }
 
-.c15:hover {
+.c16:hover {
   color: hsl(223.5,100%,40%);
 }
 
-.c15:hover::before {
+.c16:hover::before {
   border-color: hsl(223.5,100%,40%);
 }
 
-.c15:active {
+.c16:active {
   color: hsl(223.5,100%,35%);
 }
 
-.c15:active::before {
+.c16:active::before {
   border-color: hsl(223.5,100%,35%);
 }
 
-.c17 {
+.c18 {
   font-family: inherit;
   font-size: 100%;
   line-height: 1.15;
@@ -6972,81 +7000,6 @@ exports[`Storyshots Molecules / Modal Modal Standard Small 1`] = `
   cursor: pointer;
 }
 
-.c17,
-.c17[type='button'],
-.c17[type='reset'],
-.c17[type='submit'] {
-  -webkit-appearance: button;
-}
-
-.c17::-moz-focus-inner,
-.c17[type='button']::-moz-focus-inner,
-.c17[type='reset']::-moz-focus-inner,
-.c17[type='submit']::-moz-focus-inner {
-  border-style: none;
-  padding: 0;
-}
-
-.c17:-moz-focusring,
-.c17[type='button']:-moz-focusring,
-.c17[type='reset']:-moz-focusring,
-.c17[type='submit']:-moz-focusring {
-  outline: 1px dotted ButtonText;
-}
-
-.c17::before {
-  content: '';
-  display: block;
-  position: absolute;
-  border: 2px solid transparent;
-  top: 0;
-  left: 0;
-  width: calc(100% - 4px);
-  height: calc(100% - 4px);
-}
-
-.c17:hover {
-  background-color: hsl(223.5,100%,45%);
-}
-
-.c17:active {
-  background-color: hsl(223.5,100%,40%);
-}
-
-.c4 {
-  padding-right: 16px;
-}
-
-.c2 {
-  position: fixed;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  z-index: 500;
-  background-color: rgba(110,110,105,0.63);
-}
-
-.c18 {
-  font-family: inherit;
-  font-size: 100%;
-  line-height: 1.15;
-  margin: 0;
-  overflow: visible;
-  text-transform: none;
-  display: block;
-  background: none;
-  padding: 0;
-  border: 0;
-  cursor: pointer;
-  position: absolute;
-  -webkit-transform: translateY(3px);
-  -ms-transform: translateY(3px);
-  transform: translateY(3px);
-  top: 12px;
-  right: 12px;
-}
-
 .c18,
 .c18[type='button'],
 .c18[type='reset'],
@@ -7069,6 +7022,81 @@ exports[`Storyshots Molecules / Modal Modal Standard Small 1`] = `
   outline: 1px dotted ButtonText;
 }
 
+.c18::before {
+  content: '';
+  display: block;
+  position: absolute;
+  border: 2px solid transparent;
+  top: 0;
+  left: 0;
+  width: calc(100% - 4px);
+  height: calc(100% - 4px);
+}
+
+.c18:hover {
+  background-color: hsl(223.5,100%,45%);
+}
+
+.c18:active {
+  background-color: hsl(223.5,100%,40%);
+}
+
+.c4 {
+  padding-right: 16px;
+}
+
+.c2 {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 500;
+  background-color: rgba(110,110,105,0.63);
+}
+
+.c19 {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  overflow: visible;
+  text-transform: none;
+  display: block;
+  background: none;
+  padding: 0;
+  border: 0;
+  cursor: pointer;
+  position: absolute;
+  -webkit-transform: translateY(3px);
+  -ms-transform: translateY(3px);
+  transform: translateY(3px);
+  top: 12px;
+  right: 12px;
+}
+
+.c19,
+.c19[type='button'],
+.c19[type='reset'],
+.c19[type='submit'] {
+  -webkit-appearance: button;
+}
+
+.c19::-moz-focus-inner,
+.c19[type='button']::-moz-focus-inner,
+.c19[type='reset']::-moz-focus-inner,
+.c19[type='submit']::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+.c19:-moz-focusring,
+.c19[type='button']:-moz-focusring,
+.c19[type='reset']:-moz-focusring,
+.c19[type='submit']:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
 .c3 {
   padding-bottom: 16px;
   padding-right: 28px;
@@ -7078,7 +7106,7 @@ exports[`Storyshots Molecules / Modal Modal Standard Small 1`] = `
   flex: 0 0 auto;
 }
 
-.c7 {
+.c8 {
   margin-top: auto;
   padding-top: 16px;
   -webkit-flex: 0 0 auto;
@@ -7119,7 +7147,7 @@ exports[`Storyshots Molecules / Modal Modal Standard Small 1`] = `
 }
 
 @media (min-width:760px) {
-  .c18 {
+  .c19 {
     top: 40px;
     right: 40px;
   }
@@ -7196,29 +7224,29 @@ exports[`Storyshots Molecules / Modal Modal Standard Small 1`] = `
               </span>
             </div>
             <div
-              className=""
+              className="c6"
             >
               <p
-                className="c6"
+                className="c7"
               >
                 Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of de Finibus Bonorum et Malorum (The Extremes of Good and
               </p>
             </div>
             <div
-              className="c7"
+              className="c8"
             >
               <div
-                className="c8"
+                className="c9"
               >
                 <div
-                  className="c9"
+                  className="c10"
                 >
                   <div
-                    className="c10"
+                    className="c11"
                   >
                     <svg
                       aria-hidden="true"
-                      className="c11 c12"
+                      className="c12 c13"
                       direction="left"
                       focusable="false"
                       preserveAspectRatio="xMidYMid meet"
@@ -7231,25 +7259,25 @@ exports[`Storyshots Molecules / Modal Modal Standard Small 1`] = `
                     </svg>
                   </div>
                   <span
-                    className="c13"
+                    className="c14"
                   >
                     Back
                   </span>
                 </div>
                 <div
-                  className="c14"
+                  className="c15"
                 >
                   <div
-                    className="c10"
+                    className="c11"
                   >
                     <button
-                      className="NormalizedButton__Button-ey7f5x-0 c15"
+                      className="NormalizedButton__Button-ey7f5x-0 c16"
                       onClick={[Function]}
                       type="button"
                     >
                       <span>
                         <span
-                          className="c16"
+                          className="c17"
                         >
                           Button
                         </span>
@@ -7257,13 +7285,13 @@ exports[`Storyshots Molecules / Modal Modal Standard Small 1`] = `
                     </button>
                   </div>
                   <button
-                    className="NormalizedButton__Button-ey7f5x-0 c17"
+                    className="NormalizedButton__Button-ey7f5x-0 c18"
                     onClick={[Function]}
                     type="button"
                   >
                     <span>
                       <span
-                        className="c16"
+                        className="c17"
                       >
                         Button
                       </span>
@@ -7273,21 +7301,21 @@ exports[`Storyshots Molecules / Modal Modal Standard Small 1`] = `
               </div>
             </div>
             <button
-              className="NormalizedButton__Button-ey7f5x-0 c18"
+              className="NormalizedButton__Button-ey7f5x-0 c19"
               fullScreenMobile={false}
               onClick={[Function]}
               type="button"
             >
               <svg
                 aria-hidden="false"
-                className="c19"
+                className="c20"
                 focusable="false"
                 preserveAspectRatio="xMidYMid meet"
                 role="img"
                 viewBox="0 0 24 24"
               >
                 <path
-                  className="c20"
+                  className="c21"
                   d="m 1 1 l 22 22 m -22 0 l 22 -22"
                   strokeWidth={2}
                 />
@@ -7322,6 +7350,7 @@ exports[`Storyshots Molecules / Modal Modal Standard Small 1`] = `
 exports[`Storyshots Molecules / Modal Modal without backdrop 1`] = `
 .c6 {
   margin-bottom: 8px;
+  background-color: transparent;
 }
 
 .c1 {
@@ -7606,6 +7635,7 @@ exports[`Storyshots Molecules / Modal Modal without backdrop 1`] = `
 exports[`Storyshots Molecules / Modal Node as Title 1`] = `
 .c7 {
   margin-bottom: 8px;
+  background-color: transparent;
 }
 
 .c1 {
@@ -7968,10 +7998,12 @@ exports[`Storyshots Molecules / Modal Node as Title 1`] = `
 exports[`Storyshots Molecules / Modal Not full screen mobile 1`] = `
 .c6 {
   margin-bottom: 8px;
+  background-color: transparent;
 }
 
 .c10 {
   margin-right: 8px;
+  background-color: transparent;
 }
 
 .c1 {
@@ -8476,6 +8508,7 @@ exports[`Storyshots Molecules / Modal Not full screen mobile 1`] = `
 exports[`Storyshots Molecules / Modal Uncontrolled behavior 1`] = `
 .c6 {
   margin-bottom: 8px;
+  background-color: transparent;
 }
 
 .c1 {
@@ -8789,6 +8822,7 @@ exports[`Storyshots Molecules / Modal Uncontrolled behavior 1`] = `
 exports[`Storyshots Molecules / Modal Without header 1`] = `
 .c4 {
   margin-bottom: 8px;
+  background-color: transparent;
 }
 
 .c1 {

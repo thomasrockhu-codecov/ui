@@ -86,3 +86,17 @@ export const differentPaddingForDifferentScreenSizes = () => (
 differentPaddingForDifferentScreenSizes.story = {
   name: 'Different padding for different screen sizes ',
 };
+
+export const withBackgroundColor = () => (
+  <Outer>
+    <Box p={0} sm={{ p: 4 }} backgroundColor={(t) => t.color.cta}>
+      <Typography type="primary" color={(t) => t.color.textLight}>
+        Lorem ipsum dolor sit amet.
+      </Typography>
+    </Box>
+  </Outer>
+);
+
+differentPaddingForDifferentScreenSizes.story = {
+  name: 'With background color',
+};

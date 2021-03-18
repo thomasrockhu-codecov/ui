@@ -1,7 +1,8 @@
 import React from 'react';
-import styled, { css } from 'styled-components';
+import styled, { css, ThemedStyledProps } from 'styled-components';
 import * as R from 'ramda';
 import { Props, Spacings } from './Box.types';
+import { Theme } from '../../theme/theme.types';
 import { isString, isNumber } from '../../common/utils';
 
 const isPropPresentedIn = (props: Props) => (prop: keyof Props) =>
@@ -80,6 +81,21 @@ const getStylesForSize = (size: string) => css<Partial<Props>>`
     ${(p) => getStyles(p[size])}
   }
 `;
+
+const getColor = (props: ThemedStyledProps<Props, Theme>) => {
+  const { backgroundColor, theme } = props;
+
+  if (backgroundColor && typeof backgroundColor === 'function') {
+    return backgroundColor(theme);
+  }
+
+  if (backgroundColor === 'inherit') {
+    return 'inherit';
+  }
+
+  return 'transparent';
+};
+
 const StyledDiv = styled.div<Props>`
   ${(p) => getStyles(p)}
   ${(p) => (p.sm ? getStylesForSize('sm') : '')}
@@ -88,6 +104,7 @@ const StyledDiv = styled.div<Props>`
   ${(p) => (p.xl ? getStylesForSize('xl') : '')}
   ${(p) =>
     p.lg ? getStylesForSize('lg') : ''}
+    background-color: ${(p) => getColor(p)};
 `;
 
 /**
@@ -97,6 +114,7 @@ export const Box = React.forwardRef<HTMLDivElement, Props>(
   (
     {
       as,
+      backgroundColor,
       children,
       m,
       mb,
@@ -125,6 +143,7 @@ export const Box = React.forwardRef<HTMLDivElement, Props>(
       ref={ref}
       {...{
         as,
+        backgroundColor,
         children,
         m,
         mb,

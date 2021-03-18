@@ -6,10 +6,12 @@ exports[`Storyshots Molecules / InfoBar Default usage 1`] = `
   padding-top: 4px;
   padding-right: 12px;
   padding-bottom: 4px;
+  background-color: transparent;
 }
 
 .c6 {
   padding-right: 8px;
+  background-color: transparent;
 }
 
 .c4 {
@@ -199,10 +201,12 @@ exports[`Storyshots Molecules / InfoBar Different variants 1`] = `
   padding-top: 4px;
   padding-right: 12px;
   padding-bottom: 4px;
+  background-color: transparent;
 }
 
 .c6 {
   padding-right: 8px;
+  background-color: transparent;
 }
 
 .c4 {
@@ -753,14 +757,17 @@ exports[`Storyshots Molecules / InfoBar onClose prop demo 1`] = `
   padding-top: 4px;
   padding-right: 12px;
   padding-bottom: 4px;
+  background-color: transparent;
 }
 
 .c6 {
   padding-right: 8px;
+  background-color: transparent;
 }
 
 .c11 {
   padding-left: 8px;
+  background-color: transparent;
 }
 
 .c4 {
