@@ -97,6 +97,6 @@ export const withBackgroundColor = () => (
   </Outer>
 );
 
-differentPaddingForDifferentScreenSizes.story = {
+withBackgroundColor.story = {
   name: 'With background color',
 };
