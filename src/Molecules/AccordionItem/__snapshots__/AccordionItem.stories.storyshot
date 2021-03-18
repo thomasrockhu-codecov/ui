@@ -183,6 +183,10 @@ Array [
   border-top: 1px solid #EBEBE8;
 }
 
+.c1:hover {
+  background-color: #F5F5F5;
+}
+
 .c3 {
   font: inherit;
   box-sizing: border-box;
@@ -274,6 +278,10 @@ Array [
 
 .c1 + .c0 {
   border-top: 1px solid #EBEBE8;
+}
+
+.c1:hover {
+  background-color: #F5F5F5;
 }
 
 .c3 {
@@ -371,6 +379,10 @@ exports[`Storyshots Molecules / AccordionItem Default Collapsed 1`] = `
 
 .c1 + .c0 {
   border-top: 1px solid #EBEBE8;
+}
+
+.c1:hover {
+  background-color: #F5F5F5;
 }
 
 .c3 {
@@ -484,6 +496,10 @@ exports[`Storyshots Molecules / AccordionItem Expanded 1`] = `
   border-top: 1px solid #EBEBE8;
 }
 
+.c1:hover {
+  background-color: #F5F5F5;
+}
+
 .c3 {
   font: inherit;
   box-sizing: border-box;
@@ -592,6 +608,10 @@ Array [
   border-top: 1px solid #EBEBE8;
 }
 
+.c1:hover {
+  background-color: #F5F5F5;
+}
+
 .c3 {
   font: inherit;
   box-sizing: border-box;
@@ -683,6 +703,10 @@ Array [
 
 .c1 + .c0 {
   border-top: 1px solid #EBEBE8;
+}
+
+.c1:hover {
+  background-color: #F5F5F5;
 }
 
 .c3 {
