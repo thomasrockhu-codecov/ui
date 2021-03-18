@@ -1,3 +1,12 @@
+## [5.25.5](https://github.com/nordnet/ui/compare/v5.25.4...v5.25.5) (2021-03-18)
+
+
+### Bug Fixes
+
+* add fixedrop component and storybook example without backdrop ([95a05b2](https://github.com/nordnet/ui/commit/95a05b2))
+* add fixedrop component and storybook example without backdrop ([31ee4fb](https://github.com/nordnet/ui/commit/31ee4fb))
+* storyshots ([ebe0af1](https://github.com/nordnet/ui/commit/ebe0af1))
+
 ## [5.25.4](https://github.com/nordnet/ui/compare/v5.25.3...v5.25.4) (2021-03-16)
 
 
