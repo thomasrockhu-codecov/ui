@@ -25,27 +25,13 @@ Array [
   line-height: 1.4285714285714286;
 }
 
-.c7 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #6E6E69;
-  margin: 0;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
+.c1 {
+  outline: none;
+  background-color: transparent;
 }
 
 .c1 + .c0 {
   border-top: 1px solid #EBEBE8;
-}
-
-.c6 {
-  padding-top: 4px;
-  padding-bottom: 12px;
-  padding-left: 24px;
-}
-
-.c6[hidden] {
-  display: none;
 }
 
 .c3 {
@@ -65,11 +51,7 @@ Array [
   background-color: transparent;
   cursor: pointer;
   text-align: start;
-}
-
-.c3:hover,
-.c3:focus {
-  background-color: #F5F5F5;
+  outline: none;
 }
 
 .c4 {
@@ -79,15 +61,17 @@ Array [
 }
 
 <div
+    aria-expanded={false}
     className="c0 c1"
   >
     <h3
       className="c2"
     >
       <button
-        aria-expanded={false}
         className="c3"
+        onBlur={[Function]}
         onClick={[Function]}
+        onFocus={[Function]}
         type="button"
       >
         <div
@@ -110,16 +94,6 @@ Array [
         Låg CO₂ risk
       </button>
     </h3>
-    <div
-      className="c6"
-      hidden={true}
-    >
-      <p
-        className="c7"
-      >
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat
-      </p>
-    </div>
   </div>,
   .c5 {
   -webkit-user-select: none;
@@ -144,27 +118,13 @@ Array [
   line-height: 1.4285714285714286;
 }
 
-.c7 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #6E6E69;
-  margin: 0;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
+.c1 {
+  outline: none;
+  background-color: transparent;
 }
 
 .c1 + .c0 {
   border-top: 1px solid #EBEBE8;
-}
-
-.c6 {
-  padding-top: 4px;
-  padding-bottom: 12px;
-  padding-left: 24px;
-}
-
-.c6[hidden] {
-  display: none;
 }
 
 .c3 {
@@ -184,11 +144,7 @@ Array [
   background-color: transparent;
   cursor: pointer;
   text-align: start;
-}
-
-.c3:hover,
-.c3:focus {
-  background-color: #F5F5F5;
+  outline: none;
 }
 
 .c4 {
@@ -198,15 +154,17 @@ Array [
 }
 
 <div
+    aria-expanded={false}
     className="c0 c1"
   >
     <h3
       className="c2"
     >
       <button
-        aria-expanded={false}
         className="c3"
+        onBlur={[Function]}
         onClick={[Function]}
+        onFocus={[Function]}
         type="button"
       >
         <div
@@ -229,16 +187,6 @@ Array [
         Sustainability score
       </button>
     </h3>
-    <div
-      className="c6"
-      hidden={true}
-    >
-      <p
-        className="c7"
-      >
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat
-      </p>
-    </div>
   </div>,
 ]
 `;
@@ -268,27 +216,13 @@ Array [
   line-height: 1.4285714285714286;
 }
 
-.c7 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #6E6E69;
-  margin: 0;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
+.c1 {
+  outline: none;
+  background-color: transparent;
 }
 
 .c1 + .c0 {
   border-top: 1px solid #EBEBE8;
-}
-
-.c6 {
-  padding-top: 4px;
-  padding-bottom: 12px;
-  padding-left: 24px;
-}
-
-.c6[hidden] {
-  display: none;
 }
 
 .c3 {
@@ -308,11 +242,7 @@ Array [
   background-color: transparent;
   cursor: pointer;
   text-align: start;
-}
-
-.c3:hover,
-.c3:focus {
-  background-color: #F5F5F5;
+  outline: none;
 }
 
 .c4 {
@@ -322,15 +252,17 @@ Array [
 }
 
 <div
+    aria-expanded={false}
     className="c0 c1"
   >
     <h3
       className="c2"
     >
       <button
-        aria-expanded={false}
         className="c3"
+        onBlur={[Function]}
         onClick={[Function]}
+        onFocus={[Function]}
         type="button"
       >
         <div
@@ -353,16 +285,6 @@ Array [
         Låg CO₂ risk
       </button>
     </h3>
-    <div
-      className="c6"
-      hidden={true}
-    >
-      <p
-        className="c7"
-      >
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat
-      </p>
-    </div>
   </div>,
   .c5 {
   -webkit-user-select: none;
@@ -387,27 +309,13 @@ Array [
   line-height: 1.4285714285714286;
 }
 
-.c7 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #6E6E69;
-  margin: 0;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
+.c1 {
+  outline: none;
+  background-color: transparent;
 }
 
 .c1 + .c0 {
   border-top: 1px solid #EBEBE8;
-}
-
-.c6 {
-  padding-top: 4px;
-  padding-bottom: 12px;
-  padding-left: 24px;
-}
-
-.c6[hidden] {
-  display: none;
 }
 
 .c3 {
@@ -427,11 +335,7 @@ Array [
   background-color: transparent;
   cursor: pointer;
   text-align: start;
-}
-
-.c3:hover,
-.c3:focus {
-  background-color: #F5F5F5;
+  outline: none;
 }
 
 .c4 {
@@ -441,15 +345,17 @@ Array [
 }
 
 <div
+    aria-expanded={false}
     className="c0 c1"
   >
     <h3
       className="c2"
     >
       <button
-        aria-expanded={false}
         className="c3"
+        onBlur={[Function]}
         onClick={[Function]}
+        onFocus={[Function]}
         type="button"
       >
         <div
@@ -472,16 +378,6 @@ Array [
         Sustainability score
       </button>
     </h3>
-    <div
-      className="c6"
-      hidden={true}
-    >
-      <p
-        className="c7"
-      >
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat
-      </p>
-    </div>
   </div>,
   .c0 {
   width: 100%;

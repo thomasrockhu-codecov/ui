@@ -14,7 +14,7 @@ test('Panel is not visible', () => {
     </PageProviders>,
   );
 
-  expect(screen.getByText(content)).not.toBeVisible();
+  expect(screen.queryByText(content)).toBeNull();
 });
 
 test('Panel is visible', () => {
@@ -23,7 +23,6 @@ test('Panel is visible', () => {
       <AccordionItem title={buttonText}>{content}</AccordionItem>
     </PageProviders>,
   );
-
   fireEvent.click(screen.getByText(buttonText));
 
   expect(screen.getByText(content)).toBeVisible();
@@ -50,5 +49,5 @@ test('Panel is not visible controlled', () => {
     </PageProviders>,
   );
 
-  expect(screen.getByText(content)).not.toBeVisible();
+  expect(screen.queryByText(content)).toBeNull();
 });

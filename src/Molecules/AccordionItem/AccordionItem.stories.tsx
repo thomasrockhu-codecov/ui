@@ -81,3 +81,12 @@ export const controlled = () => {
 
   return <ControlledExample />;
 };
+
+export const TextOnlyContentIsFormattedCorrect = () => (
+  <>
+    <AccordionItem title="Content is text only">Plain vanilla text content</AccordionItem>
+    <AccordionItem title="Content is a component">
+      <div>Content is wrapped in a div and does not get default text styling</div>
+    </AccordionItem>
+  </>
+);

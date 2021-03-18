@@ -13,7 +13,7 @@ addSerializer(styleSheetSerializer);
 
 // Workaround for https://github.com/facebook/react/issues/11565#issuecomment-3688771492
 // @ts-ignore
-ReactDOM.createPortal = node => React.createElement('portal-dummy', null, node);
+ReactDOM.createPortal = (node) => React.createElement('portal-dummy', null, node);
 
 jest.mock('framer-motion', () => {
   const React = require('react'); // eslint-disable-line global-require,no-shadow
@@ -24,6 +24,7 @@ jest.mock('framer-motion', () => {
     motion: {
       span: Dummy('span'),
       div: Dummy('div'),
+      section: Dummy('section'),
     },
     useDragControls: () => ({}),
     AnimatePresence: Dummy(),

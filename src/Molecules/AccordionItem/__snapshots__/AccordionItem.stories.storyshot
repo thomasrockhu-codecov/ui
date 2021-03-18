@@ -174,27 +174,13 @@ Array [
   line-height: 1.4285714285714286;
 }
 
-.c7 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #6E6E69;
-  margin: 0;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
+.c1 {
+  outline: none;
+  background-color: transparent;
 }
 
 .c1 + .c0 {
   border-top: 1px solid #EBEBE8;
-}
-
-.c6 {
-  padding-top: 4px;
-  padding-bottom: 12px;
-  padding-left: 24px;
-}
-
-.c6[hidden] {
-  display: none;
 }
 
 .c3 {
@@ -214,11 +200,7 @@ Array [
   background-color: transparent;
   cursor: pointer;
   text-align: start;
-}
-
-.c3:hover,
-.c3:focus {
-  background-color: #F5F5F5;
+  outline: none;
 }
 
 .c4 {
@@ -228,15 +210,17 @@ Array [
 }
 
 <div
+    aria-expanded={false}
     className="c0 c1"
   >
     <h3
       className="c2"
     >
       <button
-        aria-expanded={false}
         className="c3"
+        onBlur={[Function]}
         onClick={[Function]}
+        onFocus={[Function]}
         type="button"
       >
         <div
@@ -259,16 +243,6 @@ Array [
         Låg CO₂ risk
       </button>
     </h3>
-    <div
-      className="c6"
-      hidden={true}
-    >
-      <p
-        className="c7"
-      >
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat
-      </p>
-    </div>
   </div>,
   .c5 {
   -webkit-user-select: none;
@@ -293,27 +267,13 @@ Array [
   line-height: 1.4285714285714286;
 }
 
-.c7 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #6E6E69;
-  margin: 0;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
+.c1 {
+  outline: none;
+  background-color: transparent;
 }
 
 .c1 + .c0 {
   border-top: 1px solid #EBEBE8;
-}
-
-.c6 {
-  padding-top: 4px;
-  padding-bottom: 12px;
-  padding-left: 24px;
-}
-
-.c6[hidden] {
-  display: none;
 }
 
 .c3 {
@@ -333,11 +293,7 @@ Array [
   background-color: transparent;
   cursor: pointer;
   text-align: start;
-}
-
-.c3:hover,
-.c3:focus {
-  background-color: #F5F5F5;
+  outline: none;
 }
 
 .c4 {
@@ -347,15 +303,17 @@ Array [
 }
 
 <div
+    aria-expanded={false}
     className="c0 c1"
   >
     <h3
       className="c2"
     >
       <button
-        aria-expanded={false}
         className="c3"
+        onBlur={[Function]}
         onClick={[Function]}
+        onFocus={[Function]}
         type="button"
       >
         <div
@@ -378,16 +336,6 @@ Array [
         Sustainability score
       </button>
     </h3>
-    <div
-      className="c6"
-      hidden={true}
-    >
-      <p
-        className="c7"
-      >
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat
-      </p>
-    </div>
   </div>,
 ]
 `;
@@ -416,27 +364,13 @@ exports[`Storyshots Molecules / AccordionItem Default Collapsed 1`] = `
   line-height: 1.4285714285714286;
 }
 
-.c7 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #6E6E69;
-  margin: 0;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
+.c1 {
+  outline: none;
+  background-color: transparent;
 }
 
 .c1 + .c0 {
   border-top: 1px solid #EBEBE8;
-}
-
-.c6 {
-  padding-top: 4px;
-  padding-bottom: 12px;
-  padding-left: 24px;
-}
-
-.c6[hidden] {
-  display: none;
 }
 
 .c3 {
@@ -456,11 +390,7 @@ exports[`Storyshots Molecules / AccordionItem Default Collapsed 1`] = `
   background-color: transparent;
   cursor: pointer;
   text-align: start;
-}
-
-.c3:hover,
-.c3:focus {
-  background-color: #F5F5F5;
+  outline: none;
 }
 
 .c4 {
@@ -470,15 +400,17 @@ exports[`Storyshots Molecules / AccordionItem Default Collapsed 1`] = `
 }
 
 <div
+  aria-expanded={false}
   className="c0 c1"
 >
   <h3
     className="c2"
   >
     <button
-      aria-expanded={false}
       className="c3"
+      onBlur={[Function]}
       onClick={[Function]}
+      onFocus={[Function]}
       type="button"
     >
       <div
@@ -501,20 +433,16 @@ exports[`Storyshots Molecules / AccordionItem Default Collapsed 1`] = `
       Lemon drops and several cakes for two persons or more
     </button>
   </h3>
-  <div
-    className="c6"
-    hidden={true}
-  >
-    <p
-      className="c7"
-    >
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat
-    </p>
-  </div>
 </div>
 `;
 
 exports[`Storyshots Molecules / AccordionItem Expanded 1`] = `
+.c6 {
+  padding-left: 24px;
+  padding-top: 4px;
+  padding-bottom: 12px;
+}
+
 .c5 {
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -547,18 +475,13 @@ exports[`Storyshots Molecules / AccordionItem Expanded 1`] = `
   line-height: 1.4285714285714286;
 }
 
+.c1 {
+  outline: none;
+  background-color: transparent;
+}
+
 .c1 + .c0 {
   border-top: 1px solid #EBEBE8;
-}
-
-.c6 {
-  padding-top: 4px;
-  padding-bottom: 12px;
-  padding-left: 24px;
-}
-
-.c6[hidden] {
-  display: none;
 }
 
 .c3 {
@@ -578,11 +501,7 @@ exports[`Storyshots Molecules / AccordionItem Expanded 1`] = `
   background-color: transparent;
   cursor: pointer;
   text-align: start;
-}
-
-.c3:hover,
-.c3:focus {
-  background-color: #F5F5F5;
+  outline: none;
 }
 
 .c4 {
@@ -592,15 +511,17 @@ exports[`Storyshots Molecules / AccordionItem Expanded 1`] = `
 }
 
 <div
+  aria-expanded={true}
   className="c0 c1"
 >
   <h3
     className="c2"
   >
     <button
-      aria-expanded={true}
       className="c3"
+      onBlur={[Function]}
       onClick={[Function]}
+      onFocus={[Function]}
       type="button"
     >
       <div
@@ -623,15 +544,207 @@ exports[`Storyshots Molecules / AccordionItem Expanded 1`] = `
       Låg CO₂ risk
     </button>
   </h3>
-  <div
-    className="c6"
-    hidden={false}
-  >
-    <p
-      className="c7"
+  <section>
+    <div
+      className="c6"
     >
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat
-    </p>
-  </div>
+      <p
+        className="c7"
+      >
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat
+      </p>
+    </div>
+  </section>
 </div>
+`;
+
+exports[`Storyshots Molecules / AccordionItem Text Only Content Is Formatted Correct 1`] = `
+Array [
+  .c5 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 12px;
+  height: 12px;
+  fill: #0046FF;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
+}
+
+.c2 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c1 {
+  outline: none;
+  background-color: transparent;
+}
+
+.c1 + .c0 {
+  border-top: 1px solid #EBEBE8;
+}
+
+.c3 {
+  font: inherit;
+  box-sizing: border-box;
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  border: 0;
+  padding-top: 12px;
+  padding-right: 0;
+  padding-bottom: 12px;
+  padding-left: 24px;
+  background-color: transparent;
+  cursor: pointer;
+  text-align: start;
+  outline: none;
+}
+
+.c4 {
+  position: absolute;
+  top: 15px;
+  left: 0;
+}
+
+<div
+    aria-expanded={false}
+    className="c0 c1"
+  >
+    <h3
+      className="c2"
+    >
+      <button
+        className="c3"
+        onBlur={[Function]}
+        onClick={[Function]}
+        onFocus={[Function]}
+        type="button"
+      >
+        <div
+          className="c4"
+        >
+          <svg
+            aria-hidden="true"
+            className="c5"
+            focusable="false"
+            preserveAspectRatio="xMidYMid meet"
+            role="presentation"
+            viewBox="0 0 12 12"
+          >
+            <path
+              d="M7.166 0v5h5v2h-5v5h-2V6.999L.166 7V5l5-.001V0h2z"
+              fillRule="evenodd"
+            />
+          </svg>
+        </div>
+        Content is text only
+      </button>
+    </h3>
+  </div>,
+  .c5 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 12px;
+  height: 12px;
+  fill: #0046FF;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
+}
+
+.c2 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c1 {
+  outline: none;
+  background-color: transparent;
+}
+
+.c1 + .c0 {
+  border-top: 1px solid #EBEBE8;
+}
+
+.c3 {
+  font: inherit;
+  box-sizing: border-box;
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  border: 0;
+  padding-top: 12px;
+  padding-right: 0;
+  padding-bottom: 12px;
+  padding-left: 24px;
+  background-color: transparent;
+  cursor: pointer;
+  text-align: start;
+  outline: none;
+}
+
+.c4 {
+  position: absolute;
+  top: 15px;
+  left: 0;
+}
+
+<div
+    aria-expanded={false}
+    className="c0 c1"
+  >
+    <h3
+      className="c2"
+    >
+      <button
+        className="c3"
+        onBlur={[Function]}
+        onClick={[Function]}
+        onFocus={[Function]}
+        type="button"
+      >
+        <div
+          className="c4"
+        >
+          <svg
+            aria-hidden="true"
+            className="c5"
+            focusable="false"
+            preserveAspectRatio="xMidYMid meet"
+            role="presentation"
+            viewBox="0 0 12 12"
+          >
+            <path
+              d="M7.166 0v5h5v2h-5v5h-2V6.999L.166 7V5l5-.001V0h2z"
+              fillRule="evenodd"
+            />
+          </svg>
+        </div>
+        Content is a component
+      </button>
+    </h3>
+  </div>,
+]
 `;

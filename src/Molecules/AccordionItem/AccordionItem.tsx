@@ -1,23 +1,24 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
-import { Typography, Icon } from '../..';
-import { isBoolean, isFunction } from '../../common/utils';
+import { AnimatePresence, motion } from 'framer-motion';
+
+import { Typography, Icon, Box } from '../..';
+import { isBoolean, isFunction, isString } from '../../common/utils';
 import { AccordionItemComponent } from './AccordionItem.types';
 
-const Item = styled.div`
+const Item = styled.div<{ $hasFocus: boolean }>`
   & + & {
     border-top: 1px solid ${(p) => p.theme.color.divider};
   }
-`;
 
-const Panel = styled.div`
-  padding-top: ${(p) => p.theme.spacing.unit(1)}px;
-  padding-bottom: ${(p) => p.theme.spacing.unit(3)}px;
-  padding-left: ${(p) => p.theme.spacing.unit(6)}px;
-
-  &[hidden] {
-    display: none;
+  &:hover {
+    background-color: ${({ theme }) => theme.color.background};
   }
+
+  outline: ${({ $hasFocus, theme }) => ($hasFocus ? `1px solid ${theme.color.cta}` : 'none')};
+
+  background-color: ${({ $hasFocus, theme }) =>
+    $hasFocus ? `${theme.color.background}` : 'transparent'};
 `;
 
 const Button = styled.button`
@@ -34,11 +35,7 @@ const Button = styled.button`
   background-color: transparent;
   cursor: pointer;
   text-align: start;
-
-  &:hover,
-  &:focus {
-    background-color: ${(p) => p.theme.color.background};
-  }
+  outline: none;
 `;
 
 const IconWrapper = styled.div`
@@ -62,6 +59,7 @@ export const AccordionItem: AccordionItemComponent = React.forwardRef(
     ref,
   ) => {
     const [expandedInternal, setExpandedInternal] = useState(expandedInitial || false);
+    const [hasFocus, setHasFocus] = useState(false);
     const isControlled = isBoolean(controlledExpand);
     const expanded = isControlled ? controlledExpand : expandedInternal;
 
@@ -80,9 +78,15 @@ export const AccordionItem: AccordionItemComponent = React.forwardRef(
     };
 
     return (
-      <Item className={className}>
+      <Item className={className} aria-expanded={expanded} $hasFocus={hasFocus}>
         <Typography as={as} type="secondary" weight="bold">
-          <Button type="button" aria-expanded={expanded} onClick={clickHandler} ref={ref}>
+          <Button
+            type="button"
+            onClick={clickHandler}
+            ref={ref}
+            onFocus={() => setHasFocus(true)}
+            onBlur={() => setHasFocus(false)}
+          >
             <IconWrapper>
               {expanded ? (
                 <Icon.Minus size={3} fill={(t) => t.color.cta} />
@@ -93,7 +97,30 @@ export const AccordionItem: AccordionItemComponent = React.forwardRef(
             {title}
           </Button>
         </Typography>
-        <Panel hidden={!expanded}>{children}</Panel>
+        <AnimatePresence initial={false}>
+          {expanded && (
+            <motion.section
+              initial="collapsed"
+              animate="open"
+              exit="collapsed"
+              variants={{
+                open: { opacity: 1, height: 'auto' },
+                collapsed: { opacity: 0, height: 0 },
+              }}
+              transition={{ duration: 0.16, ease: 'easeOut' }}
+            >
+              <Box pt={1} pb={3} pl={6}>
+                {isString(children) ? (
+                  <Typography as="p" type="secondary" color={(t) => t.color.accordionText}>
+                    {children}
+                  </Typography>
+                ) : (
+                  children
+                )}
+              </Box>
+            </motion.section>
+          )}
+        </AnimatePresence>
       </Item>
     );
   },
