@@ -1,3 +1,16 @@
+# [5.27.0](https://github.com/nordnet/ui/compare/v5.26.1...v5.27.0) (2021-03-19)
+
+
+### Bug Fixes
+
+* 🐛 snapshot ([05df171](https://github.com/nordnet/ui/commit/05df171))
+* snapshots ([a9089d7](https://github.com/nordnet/ui/commit/a9089d7))
+
+
+### Features
+
+* 🎸 animate and fix styling for accordion component ([45280da](https://github.com/nordnet/ui/commit/45280da))
+
 ## [5.26.1](https://github.com/nordnet/ui/compare/v5.26.0...v5.26.1) (2021-03-19)
 
 
