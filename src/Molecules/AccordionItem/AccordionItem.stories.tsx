@@ -17,19 +17,15 @@ const ExampleContent = () => (
 );
 
 export const defaultCollapsed = () => (
-  <>
-    <AccordionItem title="Lemon drops and several cakes for two persons or more">
-      <ExampleContent />
-    </AccordionItem>
-  </>
+  <AccordionItem title="Lemon drops and several cakes for two persons or more">
+    <ExampleContent />
+  </AccordionItem>
 );
 
 export const expanded = () => (
-  <>
-    <AccordionItem title="Låg CO₂ risk" expandedInitial>
-      <ExampleContent />
-    </AccordionItem>
-  </>
+  <AccordionItem title="Låg CO₂ risk" expandedInitial>
+    <ExampleContent />
+  </AccordionItem>
 );
 
 export const controlled = () => {
