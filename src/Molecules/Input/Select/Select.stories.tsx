@@ -1357,6 +1357,20 @@ export const groupedOptions = () => {
   );
 };
 
+export const onAColouredBackground = () => (
+  <Box p={5} backgroundColor={(t) => t.color.disabledBackground}>
+    <Input.Select
+      id="input-on-coloured-background"
+      label="On a colored background"
+      placeholder="Select an option"
+      options={[
+        { label: 'foo', value: 1 },
+        { label: 'bar', value: 2 },
+      ]}
+    />
+  </Box>
+);
+
 export default {
   title: 'Molecules / Input / Select',
   parameters: {

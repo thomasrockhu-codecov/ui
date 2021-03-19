@@ -1,6 +1,6 @@
 import React from 'react';
 import { actions } from '@storybook/addon-actions';
-import { Input, Icon, Flexbox, Button } from '../../..';
+import { Input, Icon, Flexbox, Button, Box } from '../../..';
 import { Display } from '../../../common/Display';
 
 // A bit laggy for now, let's optimize later
@@ -427,3 +427,13 @@ export const alternatingTypes = () => (
     </div>
   </form>
 );
+
+export const onAColouredBackground = () => (
+  <Box p={5} backgroundColor={(t) => t.color.disabledBackground}>
+    <Input.Text label="On a colored background" placeholder="Placeholder" />
+  </Box>
+);
+
+onAColouredBackground.story = {
+  name: 'On a coloured background',
+};

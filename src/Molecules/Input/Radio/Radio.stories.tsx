@@ -1,6 +1,6 @@
 import React from 'react';
 import { actions } from '@storybook/addon-actions';
-import { Input, Flexbox, FormField } from '../../..';
+import { Input, Flexbox, FormField, Box } from '../../..';
 import { Display } from '../../../common/Display';
 
 const handlers = actions(
@@ -243,4 +243,14 @@ export const withAllActions = () => (
 
 withAllActions.story = {
   name: 'With all actions',
+};
+
+export const onAColouredBackground = () => (
+  <Box p={5} backgroundColor={(t) => t.color.disabledBackground}>
+    <Input.Radio name="background" value="background" label="On a colored background" />
+  </Box>
+);
+
+onAColouredBackground.story = {
+  name: 'On a coloured background',
 };

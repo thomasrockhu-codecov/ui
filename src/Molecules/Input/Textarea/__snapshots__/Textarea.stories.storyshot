@@ -1475,6 +1475,154 @@ exports[`Storyshots Molecules / Input / Textarea Hidden label 1`] = `
 </div>
 `;
 
+exports[`Storyshots Molecules / Input / Textarea On a coloured background 1`] = `
+.c0 {
+  padding: 20px;
+  background-color: #EBEBE8;
+}
+
+.c4 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c2 {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.c3 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #6E6E69;
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c5 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c6 {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  overflow: auto;
+  border: 0;
+  width: 100%;
+  padding: 8px;
+  margin: 0;
+  vertical-align: top;
+  box-sizing: border-box;
+  outline: none;
+  border: 1px solid #BCBCB6;
+  position: relative;
+  background-color: #FFFFFF;
+}
+
+.c6:hover {
+  border-color: #4B4B46;
+}
+
+.c6:focus {
+  border-color: #0046FF;
+}
+
+.c6::-webkit-input-placeholder {
+  color: #6E6E69;
+  line-height: inherit;
+  opacity: 1;
+}
+
+.c6::-moz-placeholder {
+  color: #6E6E69;
+  line-height: inherit;
+  opacity: 1;
+}
+
+.c6:-ms-input-placeholder {
+  color: #6E6E69;
+  line-height: inherit;
+  opacity: 1;
+}
+
+.c6::placeholder {
+  color: #6E6E69;
+  line-height: inherit;
+  opacity: 1;
+}
+
+.c6:disabled::-webkit-input-placeholder {
+  color: #A0A09B;
+}
+
+.c6:disabled::-moz-placeholder {
+  color: #A0A09B;
+}
+
+.c6:disabled:-ms-input-placeholder {
+  color: #A0A09B;
+}
+
+.c6:disabled::placeholder {
+  color: #A0A09B;
+}
+
+.c1 {
+  width: 200px;
+  display: inline-block;
+}
+
+<div
+  className="c0"
+>
+  <div
+    className="c1"
+  >
+    <label
+      className="c2"
+      hidden={false}
+    >
+      <span
+        className="c3"
+      >
+        <div
+          className="c4"
+        >
+          On a colored background 
+        </div>
+        <div>
+          <span
+            className="c5"
+          >
+            <textarea
+              className="NormalizedTextarea__Textarea-i5on9-0 c6"
+              placeholder="Placeholder"
+              rows={3}
+            />
+          </span>
+        </div>
+      </span>
+    </label>
+  </div>
+</div>
+`;
+
 exports[`Storyshots Molecules / Input / Textarea Required 1`] = `
 Array [
   .c0 {
