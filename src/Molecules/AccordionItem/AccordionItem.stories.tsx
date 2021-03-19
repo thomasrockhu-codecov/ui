@@ -17,19 +17,15 @@ const ExampleContent = () => (
 );
 
 export const defaultCollapsed = () => (
-  <>
-    <AccordionItem title="Lemon drops and several cakes for two persons or more">
-      <ExampleContent />
-    </AccordionItem>
-  </>
+  <AccordionItem title="Lemon drops and several cakes for two persons or more">
+    <ExampleContent />
+  </AccordionItem>
 );
 
 export const expanded = () => (
-  <>
-    <AccordionItem title="Låg CO₂ risk" expandedInitial>
-      <ExampleContent />
-    </AccordionItem>
-  </>
+  <AccordionItem title="Låg CO₂ risk" expandedInitial>
+    <ExampleContent />
+  </AccordionItem>
 );
 
 export const controlled = () => {
@@ -81,3 +77,12 @@ export const controlled = () => {
 
   return <ControlledExample />;
 };
+
+export const TextOnlyContentIsFormattedCorrect = () => (
+  <>
+    <AccordionItem title="Content is text only">Plain vanilla text content</AccordionItem>
+    <AccordionItem title="Content is a component">
+      <div>Content is wrapped in a div and does not get default text styling</div>
+    </AccordionItem>
+  </>
+);
