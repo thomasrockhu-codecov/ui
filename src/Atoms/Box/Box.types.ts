@@ -1,3 +1,5 @@
+import { ColorFn } from '../../common/Types';
+
 // The space utility converts shorthand margin and padding props to margin and padding CSS declarations. The props are named using the format {property}{sides}.
 
 // Where property is one of:
@@ -14,6 +16,7 @@
 // x - for classes that set both *-left and *-right
 // y - for classes that set both *-top and *-bottom
 // blank - for classes that set a margin or padding on all 4 sides of the element
+
 type Margins = {
   mt?: number | string;
   mb?: number | string;
@@ -53,6 +56,7 @@ export type Props = {
    * @default div
    * */
   as?: keyof JSX.IntrinsicElements | React.ComponentType<any>;
+  backgroundColor?: 'inherit' | ColorFn;
   className?: string;
 } & Paddings &
   Margins &

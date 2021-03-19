@@ -609,10 +609,328 @@ exports[`Storyshots Molecules / Input / Number Disabled 1`] = `
 </div>
 `;
 
+exports[`Storyshots Molecules / Input / Number On a coloured background 1`] = `
+.c0 {
+  padding: 20px;
+  background-color: #EBEBE8;
+}
+
+.c4 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c6 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+}
+
+.c10 {
+  position: absolute;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  -webkit-clip: rect(1px,1px,1px,1px);
+  clip: rect(1px,1px,1px,1px);
+}
+
+.c2 {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.c11 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 12px;
+  height: 12px;
+  fill: #282823;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
+}
+
+.c3 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #6E6E69;
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c5 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c7 {
+  position: relative;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.03);
+}
+
+.c9 {
+  width: 40px;
+  height: 40px;
+  background-color: #FFFFFF;
+  outline: none;
+  border: 1px solid #BCBCB6;
+  position: relative;
+  border-width: 1px;
+  padding: 0;
+  cursor: pointer;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-flex: 1 0 auto;
+  -ms-flex: 1 0 auto;
+  flex: 1 0 auto;
+}
+
+.c9:hover {
+  border-color: #4B4B46;
+  z-index: 2;
+}
+
+.c9:focus {
+  border-color: #0046FF;
+  z-index: 3;
+}
+
+.c9:focus {
+  border-width: 1px;
+}
+
+.c9:first-of-type {
+  -webkit-order: -1;
+  -ms-flex-order: -1;
+  order: -1;
+}
+
+.c9:active:enabled {
+  background-color: #0046FF;
+}
+
+.c9:active:enabled svg {
+  fill: #FFFFFF;
+}
+
+.c8 {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  overflow: visible;
+  background-color: #FFFFFF;
+  outline: none;
+  border: 1px solid #BCBCB6;
+  position: relative;
+  border-width: 1px;
+  height: 40px;
+  padding: 8px;
+  width: 100%;
+  text-align: center;
+  box-sizing: border-box;
+  margin: 0 -1px;
+  min-width: 0;
+  z-index: 1;
+}
+
+.c8:hover {
+  border-color: #4B4B46;
+  z-index: 2;
+}
+
+.c8:focus {
+  border-color: #0046FF;
+  z-index: 3;
+}
+
+.c8:focus {
+  border-width: 1px;
+}
+
+.c8::-webkit-input-placeholder {
+  color: #6E6E69;
+  line-height: inherit;
+  opacity: 1;
+}
+
+.c8::-moz-placeholder {
+  color: #6E6E69;
+  line-height: inherit;
+  opacity: 1;
+}
+
+.c8:-ms-input-placeholder {
+  color: #6E6E69;
+  line-height: inherit;
+  opacity: 1;
+}
+
+.c8::placeholder {
+  color: #6E6E69;
+  line-height: inherit;
+  opacity: 1;
+}
+
+.c8:disabled::-webkit-input-placeholder {
+  color: #A0A09B;
+}
+
+.c8:disabled::-moz-placeholder {
+  color: #A0A09B;
+}
+
+.c8:disabled:-ms-input-placeholder {
+  color: #A0A09B;
+}
+
+.c8:disabled::placeholder {
+  color: #A0A09B;
+}
+
+.c1 {
+  width: 200px;
+  display: inline-block;
+}
+
+<div
+  className="c0"
+>
+  <div
+    className="c1"
+  >
+    <label
+      className="c2"
+      hidden={false}
+      htmlFor="unique-id-for-coloured-background"
+    >
+      <span
+        className="c3"
+      >
+        <div
+          className="c4"
+        >
+          On a coloured background 
+        </div>
+      </span>
+    </label>
+    <span
+      className="c5"
+    >
+      <div
+        className="c6 c7"
+      >
+        <input
+          className="NormalizedInput__Input-sc-1m4kmh9-0 c8"
+          id="unique-id-for-coloured-background"
+          inputMode="decimal"
+          min={0}
+          onChange={[Function]}
+          onKeyDown={[Function]}
+          step={1}
+          type="text"
+          value=""
+          variant="normal"
+        />
+        <button
+          className="c9"
+          onClick={[Function]}
+          type="button"
+        >
+          <div
+            className="c10"
+          >
+            decrease number by 
+            1
+          </div>
+          <svg
+            aria-hidden="true"
+            className="c11"
+            focusable="false"
+            preserveAspectRatio="xMidYMid meet"
+            role="presentation"
+            viewBox="0 0 12 2"
+          >
+            <path
+              d="M12.166 0v2h-12V0z"
+              fillRule="evenodd"
+            />
+          </svg>
+        </button>
+        <button
+          className="c9"
+          onClick={[Function]}
+          type="button"
+        >
+          <div
+            className="c10"
+          >
+            increase number by 
+            1
+          </div>
+          <svg
+            aria-hidden="true"
+            className="c11"
+            focusable="false"
+            preserveAspectRatio="xMidYMid meet"
+            role="presentation"
+            viewBox="0 0 12 12"
+          >
+            <path
+              d="M7.166 0v5h5v2h-5v5h-2V6.999L.166 7V5l5-.001V0h2z"
+              fillRule="evenodd"
+            />
+          </svg>
+        </button>
+      </div>
+    </span>
+  </div>
+</div>
+`;
+
 exports[`Storyshots Molecules / Input / Number Quiet 1`] = `
 Array [
   .c0 {
   margin-bottom: 16px;
+  background-color: transparent;
 }
 
 .c1 {
@@ -1892,6 +2210,7 @@ Array [
   </div>,
   .c0 {
   margin-bottom: 32px;
+  background-color: transparent;
 }
 
 @media (min-width:760px) {
@@ -1908,6 +2227,7 @@ exports[`Storyshots Molecules / Input / Number Required 1`] = `
 Array [
   .c0 {
   margin-bottom: 16px;
+  background-color: transparent;
 }
 
 .c1 {
@@ -2423,6 +2743,7 @@ Array [
   </div>,
   .c0 {
   margin-bottom: 32px;
+  background-color: transparent;
 }
 
 @media (min-width:760px) {
@@ -6425,6 +6746,7 @@ exports[`Storyshots Molecules / Input / Number With placeholder 1`] = `
 Array [
   .c0 {
   margin-bottom: 16px;
+  background-color: transparent;
 }
 
 .c1 {
@@ -7288,6 +7610,7 @@ Array [
   </div>,
   .c0 {
   margin-bottom: 32px;
+  background-color: transparent;
 }
 
 @media (min-width:760px) {
@@ -7513,6 +7836,7 @@ exports[`Storyshots Molecules / Input / Number With size small 1`] = `
 Array [
   .c0 {
   margin-bottom: 16px;
+  background-color: transparent;
 }
 
 .c1 {
@@ -8253,6 +8577,7 @@ Array [
   </div>,
   .c0 {
   margin-bottom: 32px;
+  background-color: transparent;
 }
 
 @media (min-width:760px) {

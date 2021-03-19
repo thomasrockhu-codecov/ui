@@ -1,3 +1,22 @@
+## [5.26.1](https://github.com/nordnet/ui/compare/v5.26.0...v5.26.1) (2021-03-19)
+
+
+### Bug Fixes
+
+* 🐛 ensure all input types use the correct background color ([5cd8675](https://github.com/nordnet/ui/commit/5cd8675))
+
+# [5.26.0](https://github.com/nordnet/ui/compare/v5.25.5...v5.26.0) (2021-03-18)
+
+
+### Bug Fixes
+
+* 🐛 incorrectly named story ([896f5d4](https://github.com/nordnet/ui/commit/896f5d4))
+
+
+### Features
+
+* 🎸 add backgroundColor prop to Box ([849eac0](https://github.com/nordnet/ui/commit/849eac0))
+
 ## [5.25.5](https://github.com/nordnet/ui/compare/v5.25.4...v5.25.5) (2021-03-18)
 
 

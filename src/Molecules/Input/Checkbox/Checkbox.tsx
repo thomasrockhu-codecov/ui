@@ -29,6 +29,7 @@ const CheckmarkBox = styled(Flexbox)<{ size: number }>`
   width: ${(p) => p.theme.spacing.unit(p.size)}px;
   height: ${(p) => p.theme.spacing.unit(p.size)}px;
   border: 1px solid ${(p) => p.theme.color.inputBorder};
+  background: ${(p) => p.theme.color.backgroundInput};
   position: relative;
   flex-shrink: 0;
 

@@ -1,6 +1,6 @@
 import React from 'react';
 import { actions } from '@storybook/addon-actions';
-import { Input } from '../../..';
+import { Input, Box } from '../../..';
 import { Display } from '../../../common/Display';
 
 // A bit laggy for now, let's optimize later
@@ -235,4 +235,14 @@ export const withLabelTooltipPositionTop = () => (
 
 withLabelTooltipPositionTop.story = {
   name: 'With tooltip (position top) as label addon',
+};
+
+export const onAColouredBackground = () => (
+  <Box p={5} backgroundColor={(t) => t.color.disabledBackground}>
+    <Input.Textarea label="On a colored background" placeholder="Placeholder" />
+  </Box>
+);
+
+onAColouredBackground.story = {
+  name: 'On a coloured background',
 };
