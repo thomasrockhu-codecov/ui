@@ -1,3 +1,10 @@
+## [5.26.1](https://github.com/nordnet/ui/compare/v5.26.0...v5.26.1) (2021-03-19)
+
+
+### Bug Fixes
+
+* 🐛 ensure all input types use the correct background color ([5cd8675](https://github.com/nordnet/ui/commit/5cd8675))
+
 # [5.26.0](https://github.com/nordnet/ui/compare/v5.25.5...v5.26.0) (2021-03-18)
 
 
