@@ -1,3 +1,10 @@
+## [5.27.1](https://github.com/nordnet/ui/compare/v5.27.0...v5.27.1) (2021-03-23)
+
+
+### Bug Fixes
+
+* **Icon.CircleCross:** update icon ([cd202b4](https://github.com/nordnet/ui/commit/cd202b4))
+
 # [5.27.0](https://github.com/nordnet/ui/compare/v5.26.1...v5.27.0) (2021-03-19)
 
 
