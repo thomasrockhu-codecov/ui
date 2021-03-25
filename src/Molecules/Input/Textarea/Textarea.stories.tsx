@@ -246,3 +246,15 @@ export const onAColouredBackground = () => (
 onAColouredBackground.story = {
   name: 'On a coloured background',
 };
+
+export const withMaxLength = () => (
+  <>
+    <br />
+    <br />
+    <Input.Textarea label="Label" maxLength={20} />
+  </>
+);
+
+withMaxLength.story = {
+  name: 'With max length 20 characters',
+};
