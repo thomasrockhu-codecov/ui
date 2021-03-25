@@ -184,6 +184,7 @@
     "websocket-extensions": "^0.1.4"
   },
   "loki": {
+    "diffingEngine": "gm",
     "configurations": {
       "chrome.laptop": {
         "target": "chrome.docker",
