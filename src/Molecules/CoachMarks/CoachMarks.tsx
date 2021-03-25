@@ -63,6 +63,7 @@ export const CoachMarks: Component = ({
   doneText = 'Done',
   multiStepIndicatorText = 'of',
   closeOnClickOutside = true,
+  barColor,
 }) => {
   const [currentStep, setCurrentStep] = useState(0);
   const [referenceElementRect, setReferenceElementRect] = useState<ClientRect | null>(null);
@@ -137,7 +138,12 @@ export const CoachMarks: Component = ({
     <Media query={(t) => t.media.greaterThan(t.breakpoints.lg)}>
       <FocusLock>
         <RemoveScroll>
-          <Bubble ref={setPopperElement} style={styles.popper} {...attributes.popper}>
+          <Bubble
+            ref={setPopperElement}
+            style={styles.popper}
+            {...attributes.popper}
+            barColor={barColor}
+          >
             <BubbleArrow ref={setArrowElement} style={styles.arrow} bubblePlacement={placement} />
             <Flexbox
               container
