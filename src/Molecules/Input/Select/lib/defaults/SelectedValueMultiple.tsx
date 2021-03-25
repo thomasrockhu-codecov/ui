@@ -12,7 +12,7 @@ const EllipsizingText = styled.span`
 `;
 
 const StyledFlexedBox = styled(Box)`
-  width: ${p => `calc(100% - ${p.theme.spacing.unit(6)}px)`};
+  width: ${(p) => `calc(100% - ${p.theme.spacing.unit(6)}px)`};
   display: flex;
   align-items: center;
 `;

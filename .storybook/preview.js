@@ -1,5 +1,5 @@
 import { INITIAL_VIEWPORTS } from '@storybook/addon-viewport';
-import { ThemeDecorator, DocsWrapper } from './ThemeDecorator';
+import { DocsWrapper, ThemeDecorator } from './ThemeDecorator';
 import { setIntlConfig, withIntl } from 'storybook-addon-intl';
 import { DocsPage } from '@storybook/addon-docs/blocks';
 
@@ -53,8 +53,10 @@ export const parameters = {
 setIntlConfig({
   locales: ['sv', 'nb', 'da', 'fi', 'en'],
   defaultLocale: 'en',
-  getMessages: () => {},
-  getFormats: () => {},
+  getMessages: () => {
+  },
+  getFormats: () => {
+  },
   // Solves problem with snapshots for time component
   timeZone: 'UTC',
 });

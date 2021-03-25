@@ -1,7 +1,7 @@
 import React from 'react';
 import styled, { DefaultTheme } from 'styled-components';
 import * as R from 'ramda';
-import { InternalProps, StyledIconBaseProps, ColorFn } from './IconBase.types';
+import { ColorFn, InternalProps, StyledIconBaseProps } from './IconBase.types';
 import { assert } from '../../common/utils';
 
 const ALLOWED_COLOR_STRINGS = ['transparent', 'inherit', 'currentColor'];
@@ -35,7 +35,7 @@ const CleanSvg = React.forwardRef<SVGSVGElement, React.SVGProps<SVGSVGElement>>(
 ));
 
 const StyledIconBase = styled(CleanSvg)<StyledIconBaseProps>`
-  ${p => {
+  ${(p) => {
     const size = p.size || 5;
     const fill = getColor(p.theme, p.theme.color.svgFill, p.colorFn);
 

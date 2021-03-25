@@ -1,16 +1,16 @@
 import React from 'react';
-import { render, cleanup } from '@testing-library/react';
+import { cleanup, render } from '@testing-library/react';
 import { ThemeProvider } from 'styled-components';
 import { renderToString } from 'react-dom/server';
 import ReactDOM from 'react-dom';
-import { Media, useMedia, createTheme } from '../..';
+import { createTheme, Media, useMedia } from '../..';
 import { Theme } from '../../theme/theme.types';
 
 afterEach(cleanup);
 beforeEach(() => {
   const theme = createTheme();
   // Mocking matchMedia API
-  window.matchMedia = media => ({
+  window.matchMedia = (media) => ({
     media,
     addListener: () => null,
     dispatchEvent: () => null,
@@ -26,7 +26,7 @@ test('useMedia hook: returns true if matches', () => {
   const theme = createTheme();
 
   const ConsumerThatMatches = () => {
-    const matches = useMedia(t => t.media.greaterThan(t.breakpoints.sm));
+    const matches = useMedia((t) => t.media.greaterThan(t.breakpoints.sm));
     return <div data-testid="consumer">{`${matches}`}</div>;
   };
 
@@ -43,7 +43,7 @@ test('useMedia hook: returns true if matches', () => {
 test('useMedia hook: returns null if SSR', () => {
   const theme = createTheme();
   const ConsumerThatDoesntMatch = () => {
-    const matches = useMedia(t => t.media.greaterThan(t.breakpoints.lg));
+    const matches = useMedia((t) => t.media.greaterThan(t.breakpoints.lg));
     return <div data-testid="consumer">{`${matches}`}</div>;
   };
 
@@ -59,7 +59,7 @@ test('useMedia hook: returns false if doesnt match', async () => {
   const theme = createTheme();
 
   const ConsumerThatDoesntMatch = () => {
-    const matches = useMedia(t => t.media.greaterThan(t.breakpoints.lg));
+    const matches = useMedia((t) => t.media.greaterThan(t.breakpoints.lg));
     return <div data-testid="consumer">{`${matches}`}</div>;
   };
 
@@ -78,8 +78,10 @@ test('Server-side rendering works: rendering all medias with CSS workaround', ()
   const html = renderToString(
     <ThemeProvider theme={createTheme()}>
       <>
-        <Media query={t => t.media.greaterThan(t.breakpoints.sm)}>This shows on and above sm</Media>
-        <Media query={t => t.media.lessThan(t.breakpoints.sm)}>This shows below sm</Media>
+        <Media query={(t) => t.media.greaterThan(t.breakpoints.sm)}>
+          This shows on and above sm
+        </Media>
+        <Media query={(t) => t.media.lessThan(t.breakpoints.sm)}>This shows below sm</Media>
       </>
     </ThemeProvider>,
   );
@@ -90,10 +92,10 @@ test('Client-side rendering works: not rendering non-matched media', async () =>
   const { getByTestId } = render(
     <ThemeProvider theme={createTheme()}>
       <>
-        <Media query={t => t.media.greaterThan(t.breakpoints.sm)}>
+        <Media query={(t) => t.media.greaterThan(t.breakpoints.sm)}>
           <div data-testid="one">This shows on and above sm</div>
         </Media>
-        <Media query={t => t.media.lessThan(t.breakpoints.sm)}>
+        <Media query={(t) => t.media.lessThan(t.breakpoints.sm)}>
           <div data-testid="two">This shows below sm</div>
         </Media>
       </>
@@ -110,8 +112,8 @@ test('Hydration', async () => {
   const Element = () => (
     <ThemeProvider theme={createTheme()}>
       <>
-        <Media query={t => t.media.greaterThan(t.breakpoints.sm)}>gt sm</Media>
-        <Media query={t => t.media.lessThan(t.breakpoints.sm)}>lt sm</Media>
+        <Media query={(t) => t.media.greaterThan(t.breakpoints.sm)}>gt sm</Media>
+        <Media query={(t) => t.media.lessThan(t.breakpoints.sm)}>lt sm</Media>
       </>
     </ThemeProvider>
   );
@@ -125,7 +127,7 @@ test('Hydration', async () => {
 
   const htmlBeforeEffect = main.innerHTML;
 
-  await new Promise(res => setTimeout(res, 0)); // wait for effect to be invoked
+  await new Promise((res) => setTimeout(res, 0)); // wait for effect to be invoked
 
   const htmlAfterEffect = main.innerHTML;
 

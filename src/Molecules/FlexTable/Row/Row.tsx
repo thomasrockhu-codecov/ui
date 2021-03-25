@@ -1,10 +1,10 @@
-import React, { useState, useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import styled from 'styled-components';
 import { RowComponent } from './Row.types';
 import { Flexbox } from '../../..';
 import { ColorFn } from '../../../common/Types/sharedTypes';
 import { useFlexTable } from '../shared/FlexTableProvider';
-import { ExpandItems, ExpandItem } from './components/ExpandItems';
+import { ExpandItem, ExpandItems } from './components/ExpandItems';
 import { ExpandElement, ExpandRow } from './components';
 import { Theme } from '../../../theme/theme.types';
 import { getStylesForSizes } from '../shared';

@@ -18,7 +18,7 @@ export const Rating: RatingComponent = ({ rating = 0, size = 5 }) => {
   return (
     <Flexbox container gutter={1}>
       <VisuallyHidden>{screenReaderText}</VisuallyHidden>
-      {[...Array(5)].map((_, index) => (
+      {[...Array(5)]?.map((_, index) => (
         <Icon.Star
           key={index} // eslint-disable-line react/no-array-index-key
           size={size}

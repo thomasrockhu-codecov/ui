@@ -4,12 +4,15 @@ This component will render either a `<button>` or a `<a>` tag depending on what 
 
 ## Button vs Link
 
-If the expected behaviour on click is to navigate the user somewhere then we should always be using links, even if it's styled to look like a button. Therefore this component can output links that looks like buttons.
+If the expected behaviour on click is to navigate the user somewhere then we should always be using links, even if it's
+styled to look like a button. Therefore this component can output links that looks like buttons.
 
 ## Props
 
-Because the component can output two different elements we need to devide the props into two camps.
-If the `to` prop is specified then the output will always be a link and all the button props will be disregarded. Also if the `disabled` prop is specified then the output will be a button and all the link props will be disregarded. This because a link can't really be disabled and then you probably want to have a button which can be disabled.
+Because the component can output two different elements we need to devide the props into two camps. If the `to` prop is
+specified then the output will always be a link and all the button props will be disregarded. Also if the `disabled`
+prop is specified then the output will be a button and all the link props will be disregarded. This because a link can't
+really be disabled and then you probably want to have a button which can be disabled.
 
 ### Shared props
 
@@ -42,7 +45,8 @@ Basic usage
 
 ### With disabled prop
 
-Disable your button just by passing the prop disabled. When the disabled prop is present, the `<Button>` will no longer be able to become a link. Because a html link can't really be disabled.
+Disable your button just by passing the prop disabled. When the disabled prop is present, the `<Button>` will no longer
+be able to become a link. Because a html link can't really be disabled.
 
 ```javascript
 <Button type="submit" onClick={action('clicked')} disabled>
@@ -62,7 +66,8 @@ Variant, Size and fullWidth all changes the looks of the button. These props can
 
 ### With to prop
 
-Turn your `<Button>` into a link by passing the `to` prop. When doing this the `type` prop will be omitted because this is a html `<button>` specific prop.
+Turn your `<Button>` into a link by passing the `to` prop. When doing this the `type` prop will be omitted because this
+is a html `<button>` specific prop.
 
 ```javascript
 <Button to="www.nordnet.se">To Nordnet</Button>

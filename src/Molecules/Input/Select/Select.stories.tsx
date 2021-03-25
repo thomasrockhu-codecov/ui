@@ -5,18 +5,7 @@ import R from 'ramda';
 import styled from 'styled-components';
 import { StateChart } from '@statecharts/xstate-viz';
 import { SelectMachine } from './machine';
-import {
-  Input,
-  Avatar,
-  Flexbox,
-  Number,
-  Typography,
-  Box,
-  Icon,
-  Link,
-  TrackingContext,
-  Modal,
-} from '../../..';
+import { Avatar, Box, Flexbox, Icon, Input, Link, Modal, Number, TrackingContext, Typography } from '../../..';
 import { Display } from '../../../common/Display';
 import docs from './Select.mdx';
 import { Option } from './Select.types';
@@ -88,17 +77,17 @@ const AccountValue = () => {
 const StyledBox = styled(Box)`
   cursor: pointer;
   background: ${(p) =>
-    // @ts-ignore
-    p.focused ? p.theme.color.background : p.theme.color.card};
+  // @ts-ignore
+  p.focused ? p.theme.color.background : p.theme.color.card};
   ${(p) =>
-    // @ts-ignore
-    !p.isKeyboardNavigation
-      ? `
+  // @ts-ignore
+  !p.isKeyboardNavigation
+    ? `
   &: hover {
     background: ${p.theme.color.background};
     }
   `
-      : ''}
+    : ''}
 `;
 // @ts-ignore
 const AccountListItem = ({ index }) => {
@@ -204,7 +193,7 @@ export const hideLabel = () => (
 export const overflowStory = () => (
   <Input.Select
     id="input-1"
-    options={new Array(100).fill(null).map((_, i) => ({
+    options={new Array(100).fill(null)?.map((_, i) => ({
       value: i,
       label: `${i}${i}${i}${i}${i}${i}${i}${i}${i}${i}${i}${i}${i}${i}${i}${i}${i}${i}${i}${i}`,
     }))}
@@ -363,7 +352,7 @@ export const disabledItems = () => {
   return (
     <Input.Select
       id="onchange-select"
-      options={accountOptions.map((acc, i) =>
+      options={accountOptions?.map((acc, i) =>
         i === 1 || i === 2 ? { ...acc, disabled: true } : acc,
       )}
       label="User account"
@@ -881,21 +870,21 @@ export const linkWithDropdownAndSearchBoxSecondary = () =>
       () =>
         accountOptions
           .concat(
-            accountOptions.map((x) => ({
+            accountOptions?.map((x) => ({
               ...x,
               value: x.value + counter.next(),
               label: x.label + counter.next(),
             })),
           )
           .concat(
-            accountOptions.map((x) => ({
+            accountOptions?.map((x) => ({
               ...x,
               value: x.value + counter.next(),
               label: x.label + counter.next(),
             })),
           )
           .concat(
-            accountOptions.map((x) => ({
+            accountOptions?.map((x) => ({
               ...x,
               value: x.value + counter.next(),
               label: x.label + counter.next(),
@@ -963,21 +952,21 @@ export const linkWithDropdownAndSearchBoxTertiary = () =>
       () =>
         accountOptions
           .concat(
-            accountOptions.map((x) => ({
+            accountOptions?.map((x) => ({
               ...x,
               value: x.value + counter.next(),
               label: x.label + counter.next(),
             })),
           )
           .concat(
-            accountOptions.map((x) => ({
+            accountOptions?.map((x) => ({
               ...x,
               value: x.value + counter.next(),
               label: x.label + counter.next(),
             })),
           )
           .concat(
-            accountOptions.map((x) => ({
+            accountOptions?.map((x) => ({
               ...x,
               value: x.value + counter.next(),
               label: x.label + counter.next(),
@@ -1045,21 +1034,21 @@ export const linkWithDropdownAndSearchBoxMultiselect = () =>
       () =>
         accountOptions
           .concat(
-            accountOptions.map((x) => ({
+            accountOptions?.map((x) => ({
               ...x,
               value: x.value + counter.next(),
               label: x.label + counter.next(),
             })),
           )
           .concat(
-            accountOptions.map((x) => ({
+            accountOptions?.map((x) => ({
               ...x,
               value: x.value + counter.next(),
               label: x.label + counter.next(),
             })),
           )
           .concat(
-            accountOptions.map((x) => ({
+            accountOptions?.map((x) => ({
               ...x,
               value: x.value + counter.next(),
               label: x.label + counter.next(),
@@ -1143,21 +1132,21 @@ export const listPositionedToTheLeft = () =>
       () =>
         accountOptions
           .concat(
-            accountOptions.map((x) => ({
+            accountOptions?.map((x) => ({
               ...x,
               value: x.value + counter.next(),
               label: x.label + counter.next(),
             })),
           )
           .concat(
-            accountOptions.map((x) => ({
+            accountOptions?.map((x) => ({
               ...x,
               value: x.value + counter.next(),
               label: x.label + counter.next(),
             })),
           )
           .concat(
-            accountOptions.map((x) => ({
+            accountOptions?.map((x) => ({
               ...x,
               value: x.value + counter.next(),
               label: x.label + counter.next(),
@@ -1199,7 +1188,8 @@ export const listPositionedToTheLeft = () =>
     );
   });
 
-export const DocumentationCore = () => <StateChart machine={SelectMachine} onSave={() => {}} />;
+export const DocumentationCore = () => <StateChart machine={SelectMachine} onSave={() => {
+}} />;
 DocumentationCore.story = {
   name: 'Documentation: Core',
 };
@@ -1312,14 +1302,14 @@ export const groupedOptions = () => {
   const options = [
     {
       label: 'Group 1',
-      options: new Array(5).fill(null).map((_, i) => ({
+      options: new Array(5).fill(null)?.map((_, i) => ({
         label: `Child 1 ${i}`,
         value: `c1-${i}`,
       })),
     },
     {
       label: 'Group 2',
-      options: new Array(5).fill(null).map((_, i) => ({
+      options: new Array(5).fill(null)?.map((_, i) => ({
         label: `Child 2 ${i}`,
         value: `c2-${i}`,
       })),
@@ -1329,7 +1319,7 @@ export const groupedOptions = () => {
   // selected -> group with selected
   const valueToSelected = (_value: any) =>
     options
-      .map((option) => ({
+      ?.map((option) => ({
         ...option,
         options: option.options.filter((child) =>
           _value.find((val: any) => val.value === child.value),

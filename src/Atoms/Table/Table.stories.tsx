@@ -1,6 +1,6 @@
 /* eslint-disable react/no-array-index-key */
 import React from 'react';
-import { Typography, Flag, Table, Thead, Tbody, Tfoot, Tr, Th, Td } from '../..';
+import { Flag, Table, Tbody, Td, Tfoot, Th, Thead, Tr, Typography } from '../..';
 import { data } from './Table.stories.data';
 
 let tableData: (string | number)[][] = [];
@@ -22,7 +22,7 @@ export const defaultStory = () => (
       </Tr>
     </Thead>
     <Tbody>
-      {tableData.map((instrument, index) => (
+      {tableData?.map((instrument, index) => (
         <Tr key={`${instrument[0]}_${index}`}>
           <Td>{instrument[1]}</Td>
           <Td>{instrument[2]}</Td>
@@ -59,7 +59,7 @@ export const integrationTableWithTypography = () => {
           </Tr>
         </Thead>
         <Tbody>
-          {tableData.map((instrument, index) => (
+          {tableData?.map((instrument, index) => (
             <Tr key={`${instrument[0]}_${index}`}>
               <Td>{instrument[1]}</Td>
               <Td>{instrument[2]}</Td>
@@ -108,7 +108,7 @@ export const integrationTableWithTypographyAndEllipsisOnName = () => {
           </Tr>
         </Thead>
         <Tbody>
-          {tableData.map((instrument, index) => (
+          {tableData?.map((instrument, index) => (
             <Tr key={`${instrument[0]}_${index}`}>
               <Td>{instrument[1]}</Td>
               <Td ellipsis>{instrument[2]}</Td>
@@ -157,7 +157,7 @@ export const integrationTableStickyHeaderWithTypography = () => {
           </Tr>
         </Thead>
         <Tbody>
-          {tableData.map((instrument, index) => (
+          {tableData?.map((instrument, index) => (
             <Tr key={`${instrument[0]}_${index}`}>
               <Td>{instrument[1]}</Td>
               <Td>{instrument[2]}</Td>

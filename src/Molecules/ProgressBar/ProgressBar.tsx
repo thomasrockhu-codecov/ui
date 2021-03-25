@@ -43,30 +43,30 @@ const StyledBubble = styled(Flexbox).withConfig({
   height: ${({ theme }) => theme.spacing.unit(8)}px;
   color: ${({ theme }) => theme.color.progressBarText};
   background: ${({
-    theme,
-    done,
-    active,
-    failed,
-    warning,
-    colorDone,
-    colorActive,
-    colorNext,
-    colorFailure,
-  }) => {
-    if (done) {
-      return colorDone ? colorDone(theme) : theme.color.progressBarDone;
-    }
-    if (active && failed) {
-      return colorFailure ? colorFailure(theme) : theme.color.progressBarFailure;
-    }
-    if (active && warning) {
-      return colorFailure ? colorFailure(theme) : theme.color.progressBarWarning;
-    }
-    if (active) {
-      return colorActive ? colorActive(theme) : theme.color.progressBarActive;
-    }
-    return colorNext ? colorNext(theme) : theme.color.progressBarNext;
-  }};
+                                                                                                                                                                             theme,
+                                                                                                                                                                             done,
+                                                                                                                                                                             active,
+                                                                                                                                                                             failed,
+                                                                                                                                                                             warning,
+                                                                                                                                                                             colorDone,
+                                                                                                                                                                             colorActive,
+                                                                                                                                                                             colorNext,
+                                                                                                                                                                             colorFailure,
+                                                                                                                                                                           }) => {
+  if (done) {
+    return colorDone ? colorDone(theme) : theme.color.progressBarDone;
+  }
+  if (active && failed) {
+    return colorFailure ? colorFailure(theme) : theme.color.progressBarFailure;
+  }
+  if (active && warning) {
+    return colorFailure ? colorFailure(theme) : theme.color.progressBarWarning;
+  }
+  if (active) {
+    return colorActive ? colorActive(theme) : theme.color.progressBarActive;
+  }
+  return colorNext ? colorNext(theme) : theme.color.progressBarNext;
+}};
 `;
 
 const StyledTypography = styled(Typography)`
@@ -94,40 +94,40 @@ const StyledLine = styled.div.withConfig({
   width: 100%;
   height: 2px;
   background: ${({ theme, done, active, failed, warning, colorDone, colorNext }) => {
-    if (active && failed) {
-      return theme.color.progressBarFailure;
-    }
-    if (active && warning) {
-      return theme.color.progressBarWarning;
-    }
-    if (active) {
-      return theme.color.cta;
-    }
-    if (done) {
-      return colorDone ? colorDone(theme) : theme.color.progressBarDone;
-    }
-    return colorNext ? colorNext(theme) : theme.color.progressBarNext;
-  }};
+  if (active && failed) {
+    return theme.color.progressBarFailure;
+  }
+  if (active && warning) {
+    return theme.color.progressBarWarning;
+  }
+  if (active) {
+    return theme.color.cta;
+  }
+  if (done) {
+    return colorDone ? colorDone(theme) : theme.color.progressBarDone;
+  }
+  return colorNext ? colorNext(theme) : theme.color.progressBarNext;
+}};
 `;
 
 const ProgressBar: FC<Props> = ({
-  numberOfSteps,
-  currentStep,
-  stepLabels,
-  failed = false,
-  warning = false,
-  colorDone,
-  colorActive,
-  colorNext,
-  colorFailure,
-  colorText,
-  colorLabel,
-  titleContainer,
-  titleDone,
-  titleActive,
-  titleNext,
-  titleFailure,
-}) => {
+                                  numberOfSteps,
+                                  currentStep,
+                                  stepLabels,
+                                  failed = false,
+                                  warning = false,
+                                  colorDone,
+                                  colorActive,
+                                  colorNext,
+                                  colorFailure,
+                                  colorText,
+                                  colorLabel,
+                                  titleContainer,
+                                  titleDone,
+                                  titleActive,
+                                  titleNext,
+                                  titleFailure,
+                                }) => {
   const stepBubble = (stepNumber: number) => {
     const stepDone = stepNumber < currentStep;
     const stepActive = stepNumber === currentStep;
@@ -225,7 +225,7 @@ const ProgressBar: FC<Props> = ({
 
   const generateSteps = () => {
     const steps = R.range(1, numberOfSteps + 1);
-    return steps.map((step: number) => stepBubble(step));
+    return steps?.map((step: number) => stepBubble(step));
   };
 
   return (

@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
-import { Modal, Typography, Box, Button, Flexbox, Icon, FadedScroll } from '../..';
+import { Box, Button, FadedScroll, Flexbox, Icon, Modal, Typography } from '../..';
 
 const ScrollMaker = styled.div`
   background-image: linear-gradient(

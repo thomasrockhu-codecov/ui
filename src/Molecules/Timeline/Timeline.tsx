@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { Props, StepProps } from './Timeline.types';
-import { Box, Icon, Flexbox, Button, Typography, ListItem, DateTime } from '../..';
+import { Box, Button, DateTime, Flexbox, Icon, ListItem, Typography } from '../..';
 
 const getStatusIcon = (status?: string) => {
   switch (status) {
@@ -50,16 +50,16 @@ const lineStyles = (status: StepProps['status'], props: any) => {
     width: 2px;
     z-index: 1;
     background: ${(() => {
-      switch (status) {
-        case 'NEUTRAL':
-        case 'ACTIVE':
-        case 'FAILURE':
-          return colorNext ? colorNext(theme) : theme.color.timelineNext;
-        case 'SUCCESS':
-        default:
-          return colorSuccess ? colorSuccess(theme) : theme.color.timelineSuccess;
-      }
-    })()};
+    switch (status) {
+      case 'NEUTRAL':
+      case 'ACTIVE':
+      case 'FAILURE':
+        return colorNext ? colorNext(theme) : theme.color.timelineNext;
+      case 'SUCCESS':
+      default:
+        return colorSuccess ? colorSuccess(theme) : theme.color.timelineSuccess;
+    }
+  })()};
   `;
 };
 
@@ -95,18 +95,23 @@ const StyledListItem = styled(ListItem).withConfig({
   }
 `;
 
+type FormatDateOptionYear = 'numeric';
+type FormatDateOptionMonth = 'short';
+type FormatDateOptionDay = 'numeric';
+type FormatDateOptionWeekDay = 'short';
+
 const dateTimeOptions = {
-  year: 'numeric',
-  month: 'short',
-  day: 'numeric',
-  weekday: 'short',
+  year: 'numeric' as FormatDateOptionYear,
+  month: 'short' as FormatDateOptionMonth,
+  day: 'numeric' as FormatDateOptionDay,
+  weekday: 'short' as FormatDateOptionWeekDay,
 };
 
 const Timeline: React.FC<Props> = ({ steps, colorSuccess, colorNext }) => {
   let previousStatus: StepProps['status'];
   return (
     <StyledUl>
-      {steps.reverse().map((step, index) => {
+      {steps.reverse()?.map((step, index) => {
         const { date, text, status, button } = step;
         const statusIcon = getStatusIcon(status);
         if (index > 0 && steps.length > 0) {

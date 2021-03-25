@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { TdComponent, Props } from './Td.types';
+import { Props, TdComponent } from './Td.types';
 
 // prettier-ignore
 const StyledTd = styled.td<Props>`
@@ -16,10 +16,10 @@ const StyledTd = styled.td<Props>`
   }
 
   ${p => p.ellipsis ?
-    `white-space: nowrap;
+  `white-space: nowrap;
      overflow: hidden;
      text-overflow: ellipsis;
-    ` : '' }
+    ` : ''}
 `;
 
 export const Td: TdComponent = ({ textAlign = 'left', ellipsis = false, className, children }) => (

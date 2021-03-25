@@ -1,7 +1,7 @@
 import * as React from 'react';
 import R from 'ramda';
 import styled from 'styled-components';
-import { useSelectMachineFromContext, ContextType } from '../context';
+import { ContextType, useSelectMachineFromContext } from '../context';
 import { Box } from '../../../../..';
 import { getSingleSelectValue } from '../utils';
 

@@ -6,9 +6,9 @@ import { Icon, Typography, Flexbox } from '../..';
 import { Theme } from '../../theme/theme.types';
 
 const getBorderColor = ({
-  variant,
-  theme,
-}: {
+                          variant,
+                          theme,
+                        }: {
   variant?: FeedbackBannerProps['variant'];
   theme: Theme;
 }) => {

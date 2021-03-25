@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import FlexTable from '../..';
 import { ExpandAreaProps } from '../Row.types';
 import { ExpandCell } from '../../Cell/ExpandCell';
-import { ICON_COLUMN_DEFAULT_FLEX_PROPS, COLUMN_ID_EXPAND } from '../../shared/constants';
+import { COLUMN_ID_EXPAND, ICON_COLUMN_DEFAULT_FLEX_PROPS } from '../../shared/constants';
 import { useFlexTable } from '../../shared/FlexTableProvider';
 import { getStylesForSizes } from '../../shared';
 

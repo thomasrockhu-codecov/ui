@@ -7,7 +7,7 @@ const BaseList = styled.ul<Props>`
   margin: 0;
   padding: 0;
 
-  ${p =>
+  ${(p) =>
     p.separated
       ? `
         li + li {

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Fieldset, Legend, Input } from '../..';
+import { Fieldset, Input, Legend } from '../..';
 
 export default {
   title: 'Molecules / Fieldset',

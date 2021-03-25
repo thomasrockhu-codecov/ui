@@ -30,7 +30,7 @@ export const PageHeaderCard: PageHeaderCardComponent = ({ title, className, chil
             </Box>
           </Flexbox>
           {children && (
-            <Media query={t => t.media.lessThan(t.breakpoints.sm)}>
+            <Media query={(t) => t.media.lessThan(t.breakpoints.sm)}>
               <Flexbox item>
                 <Separator />
               </Flexbox>

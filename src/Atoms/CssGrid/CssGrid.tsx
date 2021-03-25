@@ -16,8 +16,8 @@ import { getAreasInfo, getMsRawTemplateColumnOrRowStyles } from './utils';
 
 const formatAreas = (areas: Props['areas']) =>
   areas
-    .map((areaRow) => areaRow.join(' '))
-    .map((area) => `"${area}"`)
+    ?.map((areaRow) => areaRow.join(' '))
+    ?.map((area) => `"${area}"`)
     .join(' ');
 
 const isNumber = (x: any): x is number => x === parseInt(x, 10);
@@ -75,7 +75,7 @@ const getTemplateColumns = (props: { templateColumns?: TemplateColumn; size: Siz
   }
 
   return `grid-template-columns: ${templateColumns
-    .map((x: number) => `${x * oneColSize}fr`)
+    ?.map((x: number) => `${x * oneColSize}fr`)
     .join(' ')};`;
 };
 
@@ -253,7 +253,7 @@ const StyledDiv = styled.div<Props>`
 
     const styles = Object.entries({ sm, md, lg, xl })
       .filter(([_, sizeProps]) => sizeProps !== undefined)
-      .map(([size, sizeProps]) => createStyles(sizeProps!, size as Size));
+      ?.map(([size, sizeProps]) => createStyles(sizeProps!, size as Size));
     styles.unshift(createStyles(props, undefined));
     return styles.join('\n');
   }}
@@ -308,7 +308,7 @@ const RawCssGridItem = styled.div<ItemProps & { css?: any }>`
   ${(p) =>
     Object.keys(p.theme.breakpoints)
       .filter((breakpoint) => p[breakpoint])
-      .map(
+      ?.map(
         (breakpoint) =>
           `${p.theme.media.greaterThan(p.theme.breakpoints[breakpoint])} {
           ${getCssGridItemStylesFromProps(p[breakpoint])}
@@ -368,7 +368,7 @@ const RawCSSGridContainer: React.FC<Props & { theme: Theme }> = ({ theme, childr
         ['xl', xl],
       ] as SizeAreaTuple[])
         .filter(([_, sizeProps]) => sizeProps !== undefined)
-        .map(([size], currentSizeIdx, allSizes) => {
+        ?.map(([size], currentSizeIdx, allSizes) => {
           const currentAreas = allSizes
             .slice(0, currentSizeIdx + 1)
             .reverse()
@@ -384,9 +384,9 @@ const RawCSSGridContainer: React.FC<Props & { theme: Theme }> = ({ theme, childr
   );
 
   const stylesFnForChild = (areaName: string) =>
-    stylesFnsForChild.map((f) => f(areaName)).join('\n');
+    stylesFnsForChild?.map((f) => f(areaName)).join('\n');
 
-  const renderedChildren = React.Children.map<JSX.Element | null, React.ReactElement<ItemProps>>(
+  const renderedChildren = React.Children?.map<JSX.Element | null, React.ReactElement<ItemProps>>(
     children as any,
     (child, childIndex) => {
       if (!child) {

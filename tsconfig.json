@@ -1,5 +1,6 @@
 {
   "compilerOptions": {
+    "module": "commonjs", // maybe needed, maybe not
     "target": "es2018",
     "lib": ["es2018", "dom"],
     "allowJs": false,
@@ -14,7 +15,6 @@
     "types": ["./src/common/injectTheme", "./src/common/allowMd", "node"],
     "allowSyntheticDefaultImports": true,
     "esModuleInterop": true,
-
     "experimentalDecorators": true,
     "emitDecoratorMetadata": true,
     "skipLibCheck": true,

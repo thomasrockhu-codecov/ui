@@ -7,5 +7,3 @@ export type StyledTooltipProps = {
 export type Props = {
   label: React.ReactNode;
 } & StyledTooltipProps;
-
-export type TooltipContentComponent = React.FC<Props>;

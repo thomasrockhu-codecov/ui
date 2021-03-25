@@ -1,18 +1,18 @@
 import React from 'react';
 import styled from 'styled-components';
 import { Props } from './Legend.types';
-import { Typography, FormLabel } from '../..';
+import { FormLabel, Typography } from '../..';
 import NormalizedElements from '../../common/NormalizedElements';
 
 const StyledLegendAsCaption = styled(NormalizedElements.Legend)<Props>`
-  margin: 0 0 ${p => p.theme.spacing.unit(4)}px 0;
+  margin: 0 0 ${(p) => p.theme.spacing.unit(4)}px 0;
 `;
 
 const StyledLegendAsLabel = styled(NormalizedElements.Legend)<Props>`
   cursor: auto;
 `;
 
-export const Legend: React.FC<Props> = props => {
+export const Legend: React.FC<Props> = (props) => {
   const { className, children, styleType = 'caption' } = props;
 
   if (styleType === 'caption') {

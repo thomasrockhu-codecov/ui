@@ -1,6 +1,6 @@
 import * as React from 'react';
 import styled, { css } from 'styled-components';
-import { Flexbox, Icon, FormField } from '../../../../..';
+import { Flexbox, FormField, Icon } from '../../../../..';
 import { Props } from '../../Select.types';
 
 const Chevron = styled(Icon.ChevronDown)<{ open: boolean }>`

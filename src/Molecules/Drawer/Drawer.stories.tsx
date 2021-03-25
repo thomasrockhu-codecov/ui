@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { action } from '@storybook/addon-actions';
 import styled from 'styled-components';
 import Box from '../../Atoms/Box';
-import { Button, Drawer, Typography, Icon, Flexbox, FadedScroll } from '../../index';
+import { Button, Drawer, FadedScroll, Flexbox, Icon, Typography } from '../../index';
 
 export default {
   title: 'Molecules / Drawer',

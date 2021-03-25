@@ -4,8 +4,8 @@ import SingleDatePicker from './Single';
 import { DOUBLE_DATE_PICKER } from './shared/constants';
 import {
   DatePickerComponent,
-  SingleDatePickerProps,
   DoubleDatePickerProps,
+  SingleDatePickerProps,
 } from './DatePicker.types';
 
 export function isDoubleDatePicker(

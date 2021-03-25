@@ -1,10 +1,10 @@
 import React from 'react';
 import styled from 'styled-components';
-import { TheadComponent, Props } from './Thead.types';
+import { Props, TheadComponent } from './Thead.types';
 
 const StyledThead = styled.thead<Props>`
   width: 100%;
-  border-bottom: 1px solid ${p => p.theme.color.divider};
+  border-bottom: 1px solid ${(p) => p.theme.color.divider};
 `;
 
 const StyledStickyThead = styled(StyledThead)<Props>`
@@ -13,7 +13,7 @@ const StyledStickyThead = styled(StyledThead)<Props>`
     position: sticky;
     top: 0;
     z-index: 1;
-    background-color: ${p => p.theme.color.card};
+    background-color: ${(p) => p.theme.color.card};
   }
   th:before {
     left: 0;
@@ -22,7 +22,7 @@ const StyledStickyThead = styled(StyledThead)<Props>`
     height: 100%;
     content: '';
     position: absolute;
-    border-bottom: 1px solid ${p => p.theme.color.divider};
+    border-bottom: 1px solid ${(p) => p.theme.color.divider};
   }
 `;
 

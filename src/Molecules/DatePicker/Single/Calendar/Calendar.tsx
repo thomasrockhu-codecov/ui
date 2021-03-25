@@ -5,10 +5,7 @@ import { addMonths, isSameDay, isSameMonth, isWithinInterval, subMonths } from '
 import { Box, Flexbox, Typography } from '../../../..';
 import { getCalendar, getCalendarIndex, getLocale, newDate } from '../../shared/dateUtils';
 import { Props } from './Calendar.types';
-import {
-  NUMBER_OF_VISIBLE_WEEKDAYS_SINGLE,
-  NUMBER_OF_VISIBLE_WEEKS_SINGLE,
-} from '../../shared/constants';
+import { NUMBER_OF_VISIBLE_WEEKDAYS_SINGLE, NUMBER_OF_VISIBLE_WEEKS_SINGLE } from '../../shared/constants';
 import CalendarDay from '../../shared/components/CalendarDay';
 
 export const StyledBox = styled(Box)`
@@ -20,16 +17,16 @@ export const StyledBox = styled(Box)`
 `;
 
 const Calendar: React.FC<Props> = ({
-  disableDate,
-  enableDate,
-  locale,
-  viewedDate,
-  setViewedDate,
-  onClick,
-  selectedDate,
-  selectedEndDate,
-  focusedState,
-}) => {
+                                     disableDate,
+                                     enableDate,
+                                     locale,
+                                     viewedDate,
+                                     setViewedDate,
+                                     onClick,
+                                     selectedDate,
+                                     selectedEndDate,
+                                     focusedState,
+                                   }) => {
   const [[focusedWeek, focusedDay], setFocused] = focusedState;
   const localeObj = getLocale(locale);
   const calendar = getCalendar(viewedDate, {
@@ -49,8 +46,8 @@ const Calendar: React.FC<Props> = ({
   };
 
   const calendarDayRefs = useRef(
-    [...Array(NUMBER_OF_VISIBLE_WEEKS_SINGLE)].map(() =>
-      [...Array(NUMBER_OF_VISIBLE_WEEKDAYS_SINGLE)].map(() => React.createRef<HTMLDivElement>()),
+    [...Array(NUMBER_OF_VISIBLE_WEEKS_SINGLE)]?.map(() =>
+      [...Array(NUMBER_OF_VISIBLE_WEEKDAYS_SINGLE)]?.map(() => React.createRef<HTMLDivElement>()),
     ),
   );
 
@@ -145,7 +142,7 @@ const Calendar: React.FC<Props> = ({
   return (
     <Flexbox container direction="column" data-testid="datepicker-calendar">
       <Flexbox container aria-hidden>
-        {calendar.weekDays.map((n) => (
+        {calendar.weekDays?.map((n) => (
           <Flexbox item justifyContent="center" alignItems="center" key={n}>
             <StyledBox>
               <Typography type="tertiary">{n}</Typography>
@@ -153,9 +150,9 @@ const Calendar: React.FC<Props> = ({
           </Flexbox>
         ))}
       </Flexbox>
-      {calendar.dates.map((week, weekIndex) => (
+      {calendar.dates?.map((week, weekIndex) => (
         <Flexbox container key={week.toString()}>
-          {week.map((day, dayIndex) => (
+          {week?.map((day, dayIndex) => (
             <CalendarDay
               ref={calendarDayRefs.current[weekIndex][dayIndex]}
               onFocus={() => {

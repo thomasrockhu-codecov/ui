@@ -1,7 +1,7 @@
 import adjustValue from './adjustValue';
 
 const intl = {
-  formatNumber: x => x.toString(),
+  formatNumber: (x) => x.toString(),
 } as any;
 
 describe('adjustValue', () => {

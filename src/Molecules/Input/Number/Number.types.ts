@@ -17,17 +17,17 @@ export type Props = {
   id: string;
   /** inputMode:
    * none
-     No virtual keyboard;
-     this is useful when the application or site
-     implements its own keyboard input control.
+   No virtual keyboard;
+   this is useful when the application or site
+   implements its own keyboard input control.
    * decimal
-      Fractional numeric input keyboard containing the digits
-      and the appropriate separator character for the user's
-      locale (typically either "." or ",").
-      Devices may or may not show a minus key.
-    numeric
-      Numeric input keyboard; all that is needed are the digits 0 through 9.
-      Devices may or may not show a minus key.
+   Fractional numeric input keyboard containing the digits
+   and the appropriate separator character for the user's
+   locale (typically either "." or ",").
+   Devices may or may not show a minus key.
+   numeric
+   Numeric input keyboard; all that is needed are the digits 0 through 9.
+   Devices may or may not show a minus key.
    */
   inputMode?: 'none' | 'numeric' | 'decimal';
   label: string;

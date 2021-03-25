@@ -1,5 +1,5 @@
 import React from 'react';
-import { Accordion, AccordionItem, Typography, Spinner } from '../..';
+import { Accordion, AccordionItem, Spinner, Typography } from '../..';
 import docs from './Accordion.mdx';
 
 export default {

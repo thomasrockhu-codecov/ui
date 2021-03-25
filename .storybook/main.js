@@ -6,6 +6,7 @@ const storiesDir = process.env.STORYBOOK_DIRECTORY
   : srcPath;
 
 module.exports = {
+  mode: 'none', // add conditionally development / production
   stories: ['../docs/**/*.stories.mdx', path.join(storiesDir, '**/*.stories.@(js|jsx|ts|tsx|mdx)')],
   addons: [
     '@storybook/addon-storysource',
@@ -15,6 +16,7 @@ module.exports = {
     '@storybook/addon-a11y',
     '@storybook/addon-links',
     '@storybook/addon-viewport',
+    '@storybook/addon-postcss',
     'storybook-addon-intl',
   ],
   webpackFinal: async (config) => {

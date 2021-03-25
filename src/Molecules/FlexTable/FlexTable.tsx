@@ -1,11 +1,11 @@
 import React from 'react';
 import styled from 'styled-components';
-import { HeaderRow, FooterRow, Row } from './Row';
+import { FooterRow, HeaderRow, Row } from './Row';
 import { Header } from './Header';
 import { Footer } from './Footer';
 import { Cell } from './Cell';
-import { constants, ColumnProvider, CellInlineContainer, getStylesForSizes } from './shared';
-import { FlexTableComponents, FlexTableComponent } from './FlexTable.types';
+import { CellInlineContainer, ColumnProvider, constants, getStylesForSizes } from './shared';
+import { FlexTableComponent, FlexTableComponents } from './FlexTable.types';
 import { FlexTableProvider, useFlexTable } from './shared/FlexTableProvider';
 import { ExpandCell } from './Cell/ExpandCell';
 import { Typography } from '../..';

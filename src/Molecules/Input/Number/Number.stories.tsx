@@ -1,6 +1,6 @@
 import React from 'react';
 import { action, actions } from '@storybook/addon-actions';
-import { Icon, Input, Box } from '../../..';
+import { Box, Icon, Input } from '../../..';
 import { Display } from '../../../common/Display';
 
 const handlers = actions(

@@ -1,10 +1,10 @@
-import { useContext, useCallback } from 'react';
+import { useCallback, useContext } from 'react';
 import { ColumnDataContext, ColumnDispatchContext } from './ColumnProvider';
 import {
-  ColumnsDispatch,
-  ColumnsDataState,
-  ColumnDispatch,
   ColumnDataTypes,
+  ColumnDispatch,
+  ColumnsDataState,
+  ColumnsDispatch,
 } from './ColumnProvider.types';
 
 const useColumnDataProvider = (): [ColumnsDataState, ColumnsDispatch] => {

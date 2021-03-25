@@ -10,13 +10,7 @@ import enLocale from 'date-fns/locale/en-US';
 import nbLocale from 'date-fns/locale/nb';
 import daLocale from 'date-fns/locale/da';
 import fiLocale from 'date-fns/locale/fi';
-import {
-  addWeeks,
-  differenceInCalendarDays,
-  differenceInCalendarWeeks,
-  isMatch,
-  parse,
-} from 'date-fns';
+import { addWeeks, differenceInCalendarDays, differenceInCalendarWeeks, isMatch, parse } from 'date-fns';
 import { capitalize } from './textUtils';
 
 type Options = {
@@ -110,7 +104,7 @@ export const getCalendar = (now: Date, opts?: Options): CalendarType => {
     weekStartsOn: 1,
   });
 
-  calendar.weekDays = [...Array(7).keys()].map((w) =>
+  calendar.weekDays = [...Array(7).keys()]?.map((w) =>
     capitalize(
       format(addDays(firstCalDay, w), 'EEE', {
         locale: opts?.locale,
@@ -118,8 +112,8 @@ export const getCalendar = (now: Date, opts?: Options): CalendarType => {
     ),
   );
 
-  calendar.dates = [...Array(6).keys()].map((w) =>
-    [...Array(7).keys()].map((d) => addDays(firstCalDay, w * 7 + d)),
+  calendar.dates = [...Array(6).keys()]?.map((w) =>
+    [...Array(7).keys()]?.map((d) => addDays(firstCalDay, w * 7 + d)),
   );
 
   return calendar;

@@ -1,7 +1,7 @@
 import React, { forwardRef } from 'react';
-import styled, { css } from 'styled-components';
-import { TooltipArrowComponent, Props } from './TooltipArrow.types';
-import { TRIANGLE_SIZE, BORDER_SIZE } from '../../consts';
+import styled, { css, CSSProperties } from 'styled-components';
+import { Props } from './TooltipArrow.types';
+import { BORDER_SIZE, TRIANGLE_SIZE } from '../../consts';
 
 const arrowTop = css`
   top: 3px;
@@ -100,8 +100,11 @@ const StyledArrow = styled.span<Props>`
   ${(p) => (p.position === 'right' ? arrowLeft : '')}
 `;
 
-const TooltipArrow: TooltipArrowComponent = forwardRef(({ position, ...props }, ref) => {
-  return <StyledArrow ref={ref as any} position={position} {...props} />;
+const TooltipArrow: React.ForwardRefExoticComponent<
+  React.PropsWithoutRef<{ readonly position?: any; style?: CSSProperties }> &
+    React.RefAttributes<unknown>
+> = forwardRef(({ position, style }, ref) => {
+  return <StyledArrow ref={ref as any} position={position} style={style} />;
 });
 
 export default TooltipArrow;

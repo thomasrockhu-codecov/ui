@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import R from 'ramda';
 import styled, { withTheme } from 'styled-components';
 import { isArray, isString } from '../../common/utils';
-import { Props, PropsWithTheme, ColorFn } from './Spinner.types';
+import { ColorFn, Props, PropsWithTheme } from './Spinner.types';
 import { Theme } from '../../theme/theme.types';
 
 const Animation = styled.span`

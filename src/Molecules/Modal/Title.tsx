@@ -5,7 +5,7 @@ import { isElement } from '../../common/utils';
 import { Typography } from '../..';
 
 const H2 = styled.h2`
-  padding-right: ${p => p.theme.spacing.unit(4)}px;
+  padding-right: ${(p) => p.theme.spacing.unit(4)}px;
 `;
 
 export const Title: React.FC<TitleProps> = ({ title, uid }) => {

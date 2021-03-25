@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import format from 'date-fns/format';
 import { addMonths, subMonths } from 'date-fns';
 import { Props } from './DoubleHeader.types';
-import { Box, Flexbox, Link, Icon } from '../../../..';
+import { Box, Flexbox, Icon, Link } from '../../../..';
 import { getLocale } from '../../shared/dateUtils';
 import SelectMonth from '../../shared/components/SelectMonth';
 import SelectYear from '../../shared/components/SelectYear';

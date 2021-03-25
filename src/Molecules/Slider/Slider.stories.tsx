@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { number } from '@storybook/addon-knobs';
 import Slider from '.';
-import { Typography, Number, Input } from '../..';
+import { Input, Number, Typography } from '../..';
 
 export default {
   title: 'Molecules / Slider',

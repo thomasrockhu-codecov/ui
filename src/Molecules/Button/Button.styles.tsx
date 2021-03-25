@@ -34,18 +34,18 @@ const shared = css<InnerProps>`
   box-sizing: border-box;
   align-items: center;
   justify-content: center;
-  ${p => (p.$fullWidth ? `display: flex; width: 100%;` : `display: inline-flex;`)}
+  ${(p) => (p.$fullWidth ? `display: flex; width: 100%;` : `display: inline-flex;`)}
 `;
 
 const minHeight = css<InnerProps>`
-  ${p =>
+  ${(p) =>
     p.$size === 'm' || p.$size === 'l'
       ? `min-height: ${p.theme.spacing.unit(HEIGHT[p.$size])}px;`
       : ''}
 `;
 
 const padding = css<InnerProps>`
-  ${p => `
+  ${(p) => `
     padding:
       ${p.theme.spacing.unit(PADDING_VERTICAL[p.$size])}px
       ${p.theme.spacing.unit(PADDING_HORIZONTAL[p.$size])}px;
@@ -56,16 +56,16 @@ export const primaryStyles = css<InnerProps>`
   ${shared}
   ${padding}
   ${minHeight}
-  background-color: ${p => {
+  background-color: ${(p) => {
     const customColor = p.$colorFn && p.$colorFn(p.theme);
     const background = customColor || p.theme.color.cta;
 
     return p.disabled ? p.theme.color.disabledBackground : background;
   }};
-  color: ${p => (p.disabled ? p.theme.color.disabledText : p.theme.color.buttonText)};
+  color: ${(p) => (p.disabled ? p.theme.color.disabledText : p.theme.color.buttonText)};
   ${getBorder('transparent')}
 
-  ${p => {
+  ${(p) => {
     const customColor = p.$colorFn && p.$colorFn(p.theme);
     const background = customColor || p.theme.color.cta;
 
@@ -86,10 +86,10 @@ export const secondaryStyles = css<InnerProps>`
   ${shared}
   ${padding}
   ${minHeight}
-  background-color: ${p =>
+  background-color: ${(p) =>
     p.disabled ? p.theme.color.disabledBackground : p.theme.color.buttonSecondaryBackground};
 
-  ${p => {
+  ${(p) => {
     const customColor = p.$colorFn && p.$colorFn(p.theme);
     const color = customColor || p.theme.color.cta;
 
@@ -127,7 +127,7 @@ export const neutralStyles = css<InnerProps>`
   padding: 0;
   background-color: transparent;
 
-  ${p => {
+  ${(p) => {
     const color = p.$colorFn && p.$colorFn(p.theme);
 
     return `

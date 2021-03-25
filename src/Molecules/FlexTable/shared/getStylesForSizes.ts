@@ -32,10 +32,10 @@ const getStylesForSizes = <BaseProps, ScreenSizeConfigurableProps>(
     { size: 'xl', ...xl },
   ]
     .filter((screenSizeProps) => Object.keys(screenSizeProps).length > 1)
-    .map(({ size, ...sizeSpecificProps }) => {
+    ?.map(({ size, ...sizeSpecificProps }) => {
       // Generate styles for each key in the `sizeSpecificProps`
       const styles = Object.keys(sizeSpecificProps)
-        .map((key) =>
+        ?.map((key) =>
           stylesPerPropCallbacks[key]({ ...baseProps, ...sizeSpecificProps, theme: p.theme }),
         )
         .join('\n');

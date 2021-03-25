@@ -1,4 +1,4 @@
-import React, { useRef, useState, useCallback, useEffect, useMemo } from 'react';
+import React, { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import styled, { useTheme } from 'styled-components';
 import format from 'date-fns/format';
 import { useIntl } from 'react-intl';
@@ -9,10 +9,10 @@ import { Props } from './DoubleDatePicker.types';
  * Imported seperately because when imported in src/index.ts, Input will not have been imported yet and an error will be thrown
  */
 import Input from '../../Input';
-import { Box, Icon, DropdownBubble, Flexbox } from '../../..';
+import { Box, DropdownBubble, Flexbox, Icon } from '../../..';
 import { assert, isUndefined } from '../../../common/utils';
 import { useOnClickOutside } from '../../../common/Hooks';
-import { newDate, getLocale, getDateFormat, parseDateString } from '../shared/dateUtils';
+import { getDateFormat, getLocale, newDate, parseDateString } from '../shared/dateUtils';
 
 import DoubleHeader from './Header';
 import DoubleCalendar from './Calendar';

@@ -15,13 +15,13 @@ type BaseProps = {
   children: React.ReactNode;
   height?: string;
 
-  /** 
+  /**
    * @example const x:Areas = [
-          ['header', 'header', 'header'],
-          ['left', 'content', 'side'],
-          ['left', 'header', 'header'],
-      ]
-    @example const x:Areas = {
+   ['header', 'header', 'header'],
+   ['left', 'content', 'side'],
+   ['left', 'header', 'header'],
+   ]
+   @example const x:Areas = {
       xs: [
         ['header', 'header', 'header'],
         ['left', 'content', 'side'],
@@ -33,8 +33,8 @@ type BaseProps = {
         ['content', 'content'],
       ]
     }
-        
-      */
+
+   */
   areas: Areas;
   templateRows?: string[];
   gutter?: Gutter;

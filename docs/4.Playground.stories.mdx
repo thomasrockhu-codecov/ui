@@ -13,7 +13,7 @@ All of the components are available in the playground!
     <UI.Box p={4}>
         <UI.Typography>
             <UI.FadedScroll maxHeight={50} >
-            {Object.keys(UI).sort().map(c => (
+            {Object.keys(UI).sort()?.map(c => (
                 <React.Fragment><UI.ListItem key={c}>{c}</UI.ListItem>
                 <UI.Separator/></React.Fragment>
             ))}

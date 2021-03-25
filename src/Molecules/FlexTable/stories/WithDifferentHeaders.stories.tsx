@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
 import FlexTable from '../FlexTable';
-import { Typography, Flag, Flexbox } from '../../..';
+import { Flag, Flexbox, Typography } from '../../..';
 import docs from '../FlexTable.mdx';
 import { SortOrder } from '../Header/HeaderContent/HeaderContent.types';
 import { OnSort } from '../Header/Header.types';
-import { StyledFlexboxContainer, StyledBackground } from './storiesShared';
+import { StyledBackground, StyledFlexboxContainer } from './storiesShared';
 
 export default {
   title: 'Molecules / FlexTable / With different headers',
@@ -284,7 +284,7 @@ export const StickyHeadersForDifferentScreenSizes = () => {
           </FlexTable.Header>
         </FlexTable.HeaderRow>
 
-        {[...Array(50)].map((_, index) => (
+        {[...Array(50)]?.map((_, index) => (
           // eslint-disable-next-line react/no-array-index-key
           <FlexTable.Row key={index}>
             <FlexTable.Cell columnId="column1">Cell {index + 1}-1</FlexTable.Cell>

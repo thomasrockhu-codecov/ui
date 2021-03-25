@@ -1,17 +1,17 @@
-import React, { useRef, useLayoutEffect, useState } from 'react';
+import React, { useLayoutEffect, useRef, useState } from 'react';
 import R from 'ramda';
 import styled, { css } from 'styled-components';
-import { isNumber, isHTMLElement } from '../../common/utils';
-import { Props, IndicatorProps, BarProps, CheckCollision } from './BarScale.types';
-import { Flexbox, Typography, Box } from '../..';
+import { isHTMLElement, isNumber } from '../../common/utils';
+import { BarProps, CheckCollision, IndicatorProps, Props } from './BarScale.types';
+import { Box, Flexbox, Typography } from '../..';
 
 const TRIANGLE_TOP_BORDER_SIZE = 2;
 const TRIANGLE_SIDE_BORDER_SIZE = 6;
 const TRIANGLE_OFFSET = 1;
 
 export const intersectionStyles = css`
-  height: ${p => p.theme.spacing.unit(1)}px;
-  width: ${p => p.theme.spacing.unit(1)}px;
+  height: ${(p) => p.theme.spacing.unit(1)}px;
+  width: ${(p) => p.theme.spacing.unit(1)}px;
   position: absolute;
   bottom: 100%;
   margin-bottom: ${({ theme }) => theme.spacing.unit(TRIANGLE_OFFSET + TRIANGLE_TOP_BORDER_SIZE)}px;
@@ -34,13 +34,14 @@ const rightCollisionStyle = css`
 `;
 
 const Indicator = styled('span').withConfig({
-  shouldForwardProp: prop => !['leftCollision', 'rightCollision'].includes(prop),
+  shouldForwardProp: (prop) => !['leftCollision', 'rightCollision'].includes(prop),
 })<IndicatorProps>`
   position: absolute;
   bottom: 100%;
-  ${p => p.leftCollision && leftCollisionStyle}
-  ${p => p.rightCollision && rightCollisionStyle}
-  margin-bottom: ${({ theme }) => theme.spacing.unit(TRIANGLE_OFFSET + TRIANGLE_TOP_BORDER_SIZE)}px;
+  ${(p) => p.leftCollision && leftCollisionStyle}
+  ${(p) => p.rightCollision && rightCollisionStyle}
+  margin-bottom: ${({ theme }) =>
+    theme.spacing.unit(TRIANGLE_OFFSET + TRIANGLE_TOP_BORDER_SIZE)}px;
   padding: 0 ${({ theme }) => theme.spacing.unit(2)}px;
   height: ${({ theme }) => theme.spacing.unit(5)}px;
   white-space: nowrap;
@@ -50,15 +51,15 @@ const Indicator = styled('span').withConfig({
 `;
 
 const StyledFlexbox = styled(Flexbox).withConfig({
-  shouldForwardProp: prop => !['isActive'].includes(prop),
+  shouldForwardProp: (prop) => !['isActive'].includes(prop),
 })<BarProps>`
   position: relative;
   height: ${({ theme }) => theme.spacing.unit(4)}px;
-  background: ${p =>
+  background: ${(p) =>
     p.isActive ? p.theme.color.barScaleActiveBar : p.theme.color.barScaleInactiveBar};
 
   &::after {
-    display: ${p => (p.isActive ? 'block' : 'none')};
+    display: ${(p) => (p.isActive ? 'block' : 'none')};
     content: '';
     position: absolute;
     bottom: 100%;
@@ -119,7 +120,7 @@ export const BarScale: React.FC<Props> = ({
         <IntersectionLeft ref={intersectionLeft} />
         <IntersectionRight ref={intersectionRight} />
 
-        {R.range(1, verifiedMaxRating + 1).map(bar => (
+        {R.range(1, verifiedMaxRating + 1)?.map((bar) => (
           <Flexbox key={bar} item flex="1 1 auto">
             <StyledFlexbox
               container
@@ -129,19 +130,17 @@ export const BarScale: React.FC<Props> = ({
             >
               {isActive(bar) && (
                 <>
-                  {
-                    <Indicator
-                      leftCollision={leftCollision}
-                      rightCollision={rightCollision}
-                      ref={indicatorRef}
-                    >
-                      <Typography type="tertiary" color={t => t.color.textLight}>
-                        {indicatorText}
-                      </Typography>
-                    </Indicator>
-                  }
+                  <Indicator
+                    leftCollision={leftCollision}
+                    rightCollision={rightCollision}
+                    ref={indicatorRef}
+                  >
+                    <Typography type="tertiary" color={(t) => t.color.textLight}>
+                      {indicatorText}
+                    </Typography>
+                  </Indicator>
 
-                  <Typography type="tertiary" color={t => t.color.textLight}>
+                  <Typography type="tertiary" color={(t) => t.color.textLight}>
                     {isActive(bar) && showValue && clampedValue}
                   </Typography>
                 </>

@@ -1,8 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
-import { Box, Flexbox, Typography, Icon } from '../..';
+import { Box, Flexbox, Icon, Typography } from '../..';
 import PageWrapper from '../PageWrapper';
-import { InfoBarProps, InfoBarIconProps, FnHelper } from './InfoBar.types';
+import { FnHelper, InfoBarIconProps, InfoBarProps } from './InfoBar.types';
 
 /*
 Categories:
@@ -76,36 +76,36 @@ const InfoBarIcon: React.FC<InfoBarIconProps> = ({ variant }) => {
     case 'success':
       return (
         <Icon.CheckMarkCircle
-          fill={theme => textLinkFn({ variant, theme })}
-          stroke={theme => bgFn({ variant, theme })}
+          fill={(theme) => textLinkFn({ variant, theme })}
+          stroke={(theme) => bgFn({ variant, theme })}
         />
       );
     case 'error':
       return (
         <Icon.CrossCircle
-          fill={theme => textLinkFn({ variant, theme })}
-          stroke={theme => bgFn({ variant, theme })}
+          fill={(theme) => textLinkFn({ variant, theme })}
+          stroke={(theme) => bgFn({ variant, theme })}
         />
       );
     case 'warning':
       return (
         <Icon.WarningTriangle
-          fill={theme => textLinkFn({ variant, theme })}
-          stroke={theme => bgFn({ variant, theme })}
+          fill={(theme) => textLinkFn({ variant, theme })}
+          stroke={(theme) => bgFn({ variant, theme })}
         />
       );
     case 'general':
       return (
         <Icon.InfoCircle
-          fill={theme => textLinkFn({ variant, theme })}
-          stroke={theme => bgFn({ variant, theme })}
+          fill={(theme) => textLinkFn({ variant, theme })}
+          stroke={(theme) => bgFn({ variant, theme })}
         />
       );
     default:
       return (
         <Icon.InfoCircle
-          fill={theme => textLinkFn({ variant, theme })}
-          stroke={theme => bgFn({ variant, theme })}
+          fill={(theme) => textLinkFn({ variant, theme })}
+          stroke={(theme) => bgFn({ variant, theme })}
         />
       );
   }
@@ -128,7 +128,7 @@ export const InfoBar: React.FC<InfoBarProps> = ({ variant, onClose, className, c
             <Flexbox item>
               <Box pl={2}>
                 <button type="button" onClick={onClose}>
-                  <Icon.Cross size={3} fill={theme => textFn({ variant, theme })} />
+                  <Icon.Cross size={3} fill={(theme) => textFn({ variant, theme })} />
                 </button>
               </Box>
             </Flexbox>

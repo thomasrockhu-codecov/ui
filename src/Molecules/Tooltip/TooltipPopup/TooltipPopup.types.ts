@@ -13,5 +13,3 @@ export type Props = {
   ariaLabel?: string;
   ref?: React.RefObject<any>;
 } & StyledTooltipPopupProps;
-
-export type TooltipPopupComponent = React.FC<Props>;
