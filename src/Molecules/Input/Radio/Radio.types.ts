@@ -6,6 +6,7 @@ export type Props = {
   disabled?: boolean;
   error?: string;
   hasError?: boolean;
+  id?: string;
   label: string;
   name?: string;
   required?: boolean;
@@ -20,7 +21,7 @@ export type Props = {
   onKeyDown?: React.KeyboardEventHandler<HTMLInputElement>;
   onKeyPress?: React.KeyboardEventHandler<HTMLInputElement>;
   onKeyUp?: React.KeyboardEventHandler<HTMLInputElement>;
-  hasRadioCircle?: boolean;
+  noRadioCircle?: boolean;
   children?: React.ReactNode;
 };
 

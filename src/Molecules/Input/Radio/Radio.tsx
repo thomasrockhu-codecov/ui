@@ -107,6 +107,7 @@ const Radio: RadioComponent = (props) => {
     disabled,
     error,
     hasError,
+    id,
     label,
     name,
     onBlur,
@@ -120,7 +121,7 @@ const Radio: RadioComponent = (props) => {
     value,
     visuallyEmphasiseRequired,
     width,
-    hasRadioCircle,
+    noRadioCircle,
     children,
   } = props;
 
@@ -135,6 +136,7 @@ const Radio: RadioComponent = (props) => {
               defaultChecked,
               disabled,
               hasError: hasError || checkIfHasError(error),
+              id,
               name,
               onBlur,
               onChange,
@@ -147,7 +149,7 @@ const Radio: RadioComponent = (props) => {
               value,
             }}
           />
-          {hasRadioCircle && <Circle />}
+          {!noRadioCircle && <Circle />}
           {children || (
             <Label type="secondary" color={(t) => (disabled ? t.color.disabledText : t.color.text)}>
               {visuallyEmphasiseRequired ? `${label} *` : label}

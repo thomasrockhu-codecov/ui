@@ -157,32 +157,6 @@ inAGroupWithTooltip.story = {
   name: 'In a group with tooltip',
 };
 
-export const inAGroupWithCustomLabel = () => (
-  <FormField label="Colors" labelTooltip="Checkbox tooltip" group>
-    <Flexbox container gutter={5}>
-      <Input.Radio name="example" value="green" label="Green" hasRadioCircle={false}>
-        <StyledRadioLabel htmlFor="Green" checked>
-          Green
-        </StyledRadioLabel>
-      </Input.Radio>
-      <Input.Radio name="example" value="blue" label="Blue" hasRadioCircle={false}>
-        <StyledRadioLabel htmlFor="Blue" checked={false}>
-          Blue
-        </StyledRadioLabel>
-      </Input.Radio>
-      <Input.Radio name="example" value="yellow" label="Yellow" hasRadioCircle={false}>
-        <StyledRadioLabel htmlFor="Yellow" checked={false}>
-          Yellow
-        </StyledRadioLabel>
-      </Input.Radio>
-    </Flexbox>
-  </FormField>
-);
-
-inAGroupWithCustomLabel.story = {
-  name: 'In a group with custom label',
-};
-
 export const inAGroupWithTooltipPositionTop = () => (
   <>
     <br />
@@ -296,4 +270,30 @@ export const onAColouredBackground = () => (
 
 onAColouredBackground.story = {
   name: 'On a coloured background',
+};
+
+export const inAGroupWithCustomLabel = () => (
+  <FormField label="Colors" labelTooltip="Checkbox tooltip" group>
+    <Flexbox container gutter={5}>
+      <Input.Radio id="Green" name="example" value="green" label="Green" noRadioCircle>
+        <StyledRadioLabel htmlFor="Green" checked>
+          Green
+        </StyledRadioLabel>
+      </Input.Radio>
+      <Input.Radio id="Blue" name="example" value="blue" label="Blue" noRadioCircle>
+        <StyledRadioLabel htmlFor="Blue" checked={false}>
+          Blue
+        </StyledRadioLabel>
+      </Input.Radio>
+      <Input.Radio id="Yellow" name="example" value="yellow" label="Yellow" noRadioCircle>
+        <StyledRadioLabel htmlFor="Yellow" checked={false}>
+          Yellow
+        </StyledRadioLabel>
+      </Input.Radio>
+    </Flexbox>
+  </FormField>
+);
+
+inAGroupWithCustomLabel.story = {
+  name: 'In a group with custom label',
 };
