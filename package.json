@@ -156,6 +156,7 @@
     "jest-styled-components": "^7.0.0",
     "lint-staged": "8.1.7",
     "lodash": "^4.17.20",
+    "loki": "^0.28.1",
     "prettier": "^2.1.1",
     "react": "^16.13.1",
     "react-docgen-typescript-loader": "^3.3.0",
@@ -181,5 +182,16 @@
   "resolutions": {
     "styled-components": "^5.1.0",
     "websocket-extensions": "^0.1.4"
+  },
+  "loki": {
+    "configurations": {
+      "chrome.laptop": {
+        "target": "chrome.docker",
+        "width": 1366,
+        "height": 768,
+        "deviceScaleFactor": 1,
+        "mobile": false
+      }
+    }
   }
 }
