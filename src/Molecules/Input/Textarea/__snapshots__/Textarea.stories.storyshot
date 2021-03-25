@@ -2485,6 +2485,149 @@ exports[`Storyshots Molecules / Input / Textarea With default value (Uncontrolle
 </div>
 `;
 
+exports[`Storyshots Molecules / Input / Textarea With max length 20 characters 1`] = `
+Array [
+  <br />,
+  <br />,
+  .c3 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c1 {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.c2 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #6E6E69;
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c4 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c5 {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  overflow: auto;
+  border: 0;
+  width: 100%;
+  padding: 8px;
+  margin: 0;
+  vertical-align: top;
+  box-sizing: border-box;
+  outline: none;
+  border: 1px solid #BCBCB6;
+  position: relative;
+  background-color: #FFFFFF;
+}
+
+.c5:hover {
+  border-color: #4B4B46;
+}
+
+.c5:focus {
+  border-color: #0046FF;
+}
+
+.c5::-webkit-input-placeholder {
+  color: #6E6E69;
+  line-height: inherit;
+  opacity: 1;
+}
+
+.c5::-moz-placeholder {
+  color: #6E6E69;
+  line-height: inherit;
+  opacity: 1;
+}
+
+.c5:-ms-input-placeholder {
+  color: #6E6E69;
+  line-height: inherit;
+  opacity: 1;
+}
+
+.c5::placeholder {
+  color: #6E6E69;
+  line-height: inherit;
+  opacity: 1;
+}
+
+.c5:disabled::-webkit-input-placeholder {
+  color: #A0A09B;
+}
+
+.c5:disabled::-moz-placeholder {
+  color: #A0A09B;
+}
+
+.c5:disabled:-ms-input-placeholder {
+  color: #A0A09B;
+}
+
+.c5:disabled::placeholder {
+  color: #A0A09B;
+}
+
+.c0 {
+  width: 200px;
+  display: inline-block;
+}
+
+<div
+    className="c0"
+  >
+    <label
+      className="c1"
+      hidden={false}
+    >
+      <span
+        className="c2"
+      >
+        <div
+          className="c3"
+        >
+          Label 
+        </div>
+        <div>
+          <span
+            className="c4"
+          >
+            <textarea
+              className="NormalizedTextarea__Textarea-i5on9-0 c5"
+              maxLength={20}
+              rows={3}
+            />
+          </span>
+        </div>
+      </span>
+    </label>
+  </div>,
+]
+`;
+
 exports[`Storyshots Molecules / Input / Textarea With tooltip (position top) as label addon 1`] = `
 Array [
   <br />,

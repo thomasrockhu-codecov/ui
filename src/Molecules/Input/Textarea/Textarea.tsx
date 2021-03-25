@@ -43,13 +43,14 @@ const borderStyles = css<Pick<Props, 'error' | 'success'>>`
   ${focusBorderStyles}
 `;
 
-const StyledTextarea = styled(NormalizedElements.Textarea)`
+const StyledTextarea = styled(NormalizedElements.Textarea)<Pick<Props, 'noResize'>>`
   border: 0;
   width: 100%;
   padding: ${(p) => p.theme.spacing.unit(2)}px;
   margin: 0;
   vertical-align: top; /* removes space underneath */
   box-sizing: border-box;
+  resize: ${(p) => p.noResize && 'none'};
 
   ${borderStyles}
   ${background}
@@ -80,6 +81,7 @@ export const Textarea: React.FC<Props> & {
     error,
     maxLength,
     name,
+    noResize,
     onBlur,
     onChange,
     onClick,
@@ -134,6 +136,7 @@ export const Textarea: React.FC<Props> & {
               success,
               value,
             }}
+            noResize={noResize}
             {...(hasError(error) ? { 'aria-invalid': true } : {})}
           />
         </Typography>

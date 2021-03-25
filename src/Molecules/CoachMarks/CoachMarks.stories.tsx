@@ -185,7 +185,7 @@ export const withBarColor = () => {
                 icon: <Icon.Bank size={8} />,
                 title: 'New feature',
                 content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-                placement: 'bottom',
+                placement: 'right',
               },
             ]}
           />
