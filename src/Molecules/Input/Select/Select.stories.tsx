@@ -204,7 +204,7 @@ export const hideLabel = () => (
 export const overflowStory = () => (
   <Input.Select
     id="input-1"
-    options={new Array(100).fill(null).map((_, i) => ({
+    options={new Array(100).fill(null)?.map((_, i) => ({
       value: i,
       label: `${i}${i}${i}${i}${i}${i}${i}${i}${i}${i}${i}${i}${i}${i}${i}${i}${i}${i}${i}${i}`,
     }))}
@@ -363,7 +363,7 @@ export const disabledItems = () => {
   return (
     <Input.Select
       id="onchange-select"
-      options={accountOptions.map((acc, i) =>
+      options={accountOptions?.map((acc, i) =>
         i === 1 || i === 2 ? { ...acc, disabled: true } : acc,
       )}
       label="User account"
@@ -881,21 +881,21 @@ export const linkWithDropdownAndSearchBoxSecondary = () =>
       () =>
         accountOptions
           .concat(
-            accountOptions.map((x) => ({
+            accountOptions?.map((x) => ({
               ...x,
               value: x.value + counter.next(),
               label: x.label + counter.next(),
             })),
           )
           .concat(
-            accountOptions.map((x) => ({
+            accountOptions?.map((x) => ({
               ...x,
               value: x.value + counter.next(),
               label: x.label + counter.next(),
             })),
           )
           .concat(
-            accountOptions.map((x) => ({
+            accountOptions?.map((x) => ({
               ...x,
               value: x.value + counter.next(),
               label: x.label + counter.next(),
@@ -963,21 +963,21 @@ export const linkWithDropdownAndSearchBoxTertiary = () =>
       () =>
         accountOptions
           .concat(
-            accountOptions.map((x) => ({
+            accountOptions?.map((x) => ({
               ...x,
               value: x.value + counter.next(),
               label: x.label + counter.next(),
             })),
           )
           .concat(
-            accountOptions.map((x) => ({
+            accountOptions?.map((x) => ({
               ...x,
               value: x.value + counter.next(),
               label: x.label + counter.next(),
             })),
           )
           .concat(
-            accountOptions.map((x) => ({
+            accountOptions?.map((x) => ({
               ...x,
               value: x.value + counter.next(),
               label: x.label + counter.next(),
@@ -1045,21 +1045,21 @@ export const linkWithDropdownAndSearchBoxMultiselect = () =>
       () =>
         accountOptions
           .concat(
-            accountOptions.map((x) => ({
+            accountOptions?.map((x) => ({
               ...x,
               value: x.value + counter.next(),
               label: x.label + counter.next(),
             })),
           )
           .concat(
-            accountOptions.map((x) => ({
+            accountOptions?.map((x) => ({
               ...x,
               value: x.value + counter.next(),
               label: x.label + counter.next(),
             })),
           )
           .concat(
-            accountOptions.map((x) => ({
+            accountOptions?.map((x) => ({
               ...x,
               value: x.value + counter.next(),
               label: x.label + counter.next(),
@@ -1143,21 +1143,21 @@ export const listPositionedToTheLeft = () =>
       () =>
         accountOptions
           .concat(
-            accountOptions.map((x) => ({
+            accountOptions?.map((x) => ({
               ...x,
               value: x.value + counter.next(),
               label: x.label + counter.next(),
             })),
           )
           .concat(
-            accountOptions.map((x) => ({
+            accountOptions?.map((x) => ({
               ...x,
               value: x.value + counter.next(),
               label: x.label + counter.next(),
             })),
           )
           .concat(
-            accountOptions.map((x) => ({
+            accountOptions?.map((x) => ({
               ...x,
               value: x.value + counter.next(),
               label: x.label + counter.next(),
@@ -1312,14 +1312,14 @@ export const groupedOptions = () => {
   const options = [
     {
       label: 'Group 1',
-      options: new Array(5).fill(null).map((_, i) => ({
+      options: new Array(5).fill(null)?.map((_, i) => ({
         label: `Child 1 ${i}`,
         value: `c1-${i}`,
       })),
     },
     {
       label: 'Group 2',
-      options: new Array(5).fill(null).map((_, i) => ({
+      options: new Array(5).fill(null)?.map((_, i) => ({
         label: `Child 2 ${i}`,
         value: `c2-${i}`,
       })),
@@ -1329,7 +1329,7 @@ export const groupedOptions = () => {
   // selected -> group with selected
   const valueToSelected = (_value: any) =>
     options
-      .map((option) => ({
+      ?.map((option) => ({
         ...option,
         options: option.options.filter((child) =>
           _value.find((val: any) => val.value === child.value),

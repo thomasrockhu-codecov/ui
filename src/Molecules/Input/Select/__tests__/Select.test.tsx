@@ -23,7 +23,7 @@ test('Single select without custom components', async () => {
     <ThemeProvider theme={theme}>
       <Select
         id={INPUT_ID}
-        options={new Array(3).fill(null).map((_, i) => ({ label: `${testMessage}${i}`, value: i }))}
+        options={new Array(3).fill(null)?.map((_, i) => ({ label: `${testMessage}${i}`, value: i }))}
         label="Label"
         placeholder="Placeholder"
       />
@@ -98,7 +98,7 @@ test('Multi select with actions (also disabled actions)', async () => {
   const handleChange = jest.fn();
   const options = new Array(3)
     .fill(null)
-    .map((_, i) => ({ label: `${testMessage}${i}`, value: i }));
+    ?.map((_, i) => ({ label: `${testMessage}${i}`, value: i }));
   const { getByLabelText, getByTestId, getByText, queryByTestId } = render(
     <ThemeProvider theme={theme}>
       <Select
@@ -199,7 +199,7 @@ test('Single select with actions', async () => {
   ];
   const options = new Array(3)
     .fill(null)
-    .map((_, i) => ({ label: `${testMessage}${i}`, value: i }));
+    ?.map((_, i) => ({ label: `${testMessage}${i}`, value: i }));
   const { getByLabelText, getByTestId, getByText, queryByTestId } = render(
     <ThemeProvider theme={theme}>
       <Select
@@ -259,7 +259,7 @@ test('Multiselect without custom components and with select all', async () => {
       <Select
         id={INPUT_ID}
         options={[{ label: selectAllLabel, value: null, [Select.SYMBOL_ALL]: true } as any].concat(
-          new Array(3).fill(null).map((_, i) => ({ label: `${testMessage}${i}`, value: i })),
+          new Array(3).fill(null)?.map((_, i) => ({ label: `${testMessage}${i}`, value: i })),
         )}
         multiselect
         components={{
@@ -329,7 +329,7 @@ test('Props changes are propagated', () => {
 
   const commonProps = {
     id: INPUT_ID,
-    options: new Array(3).fill(null).map((_, i) => ({ label: `${testMessage}${i}`, value: i })),
+    options: new Array(3).fill(null)?.map((_, i) => ({ label: `${testMessage}${i}`, value: i })),
     label: 'Label',
     placeholder: 'Placeholder',
   };
@@ -379,7 +379,7 @@ test('Autofocus', () => {
           autoFocus={false}
           options={new Array(3)
             .fill(null)
-            .map((_, i) => ({ label: `${testMessage}${i}`, value: i }))}
+            ?.map((_, i) => ({ label: `${testMessage}${i}`, value: i }))}
           label="Label"
           placeholder="Placeholder"
         />
@@ -398,7 +398,7 @@ test('Autofocus', () => {
           autoFocus
           options={new Array(3)
             .fill(null)
-            .map((_, i) => ({ label: `${testMessage}${i}`, value: i }))}
+            ?.map((_, i) => ({ label: `${testMessage}${i}`, value: i }))}
           label="Label"
           placeholder="Placeholder"
         />
@@ -429,7 +429,7 @@ test('onBlur, onChange, onFocus', async () => {
           onFocus={handleFocus}
           options={new Array(3)
             .fill(null)
-            .map((_, i) => ({ label: `${testMessage}${i}`, value: i }))}
+            ?.map((_, i) => ({ label: `${testMessage}${i}`, value: i }))}
           label="Label"
           placeholder="Placeholder"
         />

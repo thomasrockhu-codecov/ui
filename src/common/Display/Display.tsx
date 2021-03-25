@@ -35,7 +35,7 @@ export const Display: React.FC<Props> = ({ items, horizontal, title: displayTitl
       </Box>
     )}
     <Flex direction={horizontal ? 'row' : 'column'}>
-      {items.map(({ title, component }) => (
+      {items?.map(({ title, component }) => (
         <Flex direction={horizontal ? 'column' : 'row'} margin={5} key={`${title}`} addBorder>
           <DivWithBorder horizontal={horizontal}>{title}</DivWithBorder>
           <div>{component}</div>

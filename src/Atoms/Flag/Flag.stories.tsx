@@ -41,7 +41,7 @@ rendersNothingIfWrongCountryCode.story = {
 
 export const availableFlags = () => (
   <Display
-    items={Object.keys(flags).map((flagName: string) => ({
+    items={Object.keys(flags)?.map((flagName: string) => ({
       title: flagName,
       component: <Flag country={flagName} />,
     }))}

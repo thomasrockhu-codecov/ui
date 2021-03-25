@@ -146,7 +146,7 @@ const getTypeStyles = (props: ThemedStyledProps<Props, Theme>) => {
   assert(
     allowedWeights.includes(weight || defaultWeight),
     `"${weight}" is not one of the allowed weights for ${type}: ${allowedWeights
-      .map((s) => `"${s}"`)
+      ?.map((s) => `"${s}"`)
       .join(', ')}`,
   );
 
@@ -167,7 +167,7 @@ const getTypeStyles = (props: ThemedStyledProps<Props, Theme>) => {
         `
         : ''
     }
-    
+
   `;
 };
 const Span = styled.span``;

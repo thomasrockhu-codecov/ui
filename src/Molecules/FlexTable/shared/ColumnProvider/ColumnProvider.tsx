@@ -16,7 +16,7 @@ export const ColumnDispatchContext = React.createContext<ColumnsDispatch | undef
 
 // We need to set the rest of the sorting to none when sorting a new header
 const setRestOfSortingState = (data: ColumnsDataState): ColumnsDataState =>
-  R.map((columnData) => {
+  R?.map((columnData) => {
     // Null sortOrder means that it's not sortable
     if (columnData.sortOrder === null) {
       return { ...columnData, sortOrder: null };

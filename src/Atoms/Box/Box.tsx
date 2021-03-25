@@ -59,10 +59,10 @@ const getStyles = (props: Props) => {
   if (isPropPresented('pl')) spacings.paddings[left] = props.pl;
   if (isPropPresented('pr')) spacings.paddings[right] = props.pr;
 
-  const marginsStyles = spacings.margins.map(
+  const marginsStyles = spacings.margins?.map(
     (v, idx) => v !== undefined && getCssString(`margin-${DIRECTION[idx]}`, v),
   );
-  const paddingsStyles = spacings.paddings.map(
+  const paddingsStyles = spacings.paddings?.map(
     (v, idx) => v !== undefined && getCssString(`padding-${DIRECTION[idx]}`, v),
   );
 

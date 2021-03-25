@@ -119,7 +119,7 @@ export const BarScale: React.FC<Props> = ({
         <IntersectionLeft ref={intersectionLeft} />
         <IntersectionRight ref={intersectionRight} />
 
-        {R.range(1, verifiedMaxRating + 1).map(bar => (
+        {R.range(1, verifiedMaxRating + 1)?.map(bar => (
           <Flexbox key={bar} item flex="1 1 auto">
             <StyledFlexbox
               container

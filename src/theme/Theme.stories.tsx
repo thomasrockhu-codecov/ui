@@ -31,7 +31,7 @@ const colorWithValue = (color: string | string[]) =>
       <div>{color}</div>
     </>
   ) : (
-    color.map((c: string) => (
+    color?.map((c: string) => (
       <Flexbox container gutter={1}>
         <ColorInArray $color={c} />
         <div>{c}</div>
@@ -57,7 +57,7 @@ export const colorsSemantic = () => {
         </Tr>
       </Thead>
       <Tbody>
-        {Object.keys(theme.color).map((title) => (
+        {Object.keys(theme.color)?.map((title) => (
           <Tr key={`theme-${title}`}>
             <Td>{title}</Td>
             <Td>{colorWithValue(theme.color[title])}</Td>
@@ -79,7 +79,7 @@ export const colorsPalette = () => {
       {/* eslint-disable-next-line jsx-a11y/accessible-emoji */}
       <h1>⚠️ Internal object, use colors (semantic)</h1>
       <Display
-        items={Object.entries(rawColor).map(([title, color]) => ({
+        items={Object.entries(rawColor)?.map(([title, color]) => ({
           title,
           component: (
             <>
@@ -107,7 +107,7 @@ export const screenSizes = () => (
       </Tr>
     </Thead>
     <Tbody>
-      {Object.entries(theme.breakpoints).map(([title, breakpoint]) => (
+      {Object.entries(theme.breakpoints)?.map(([title, breakpoint]) => (
         <Tr key={`breakpoints-${title}`}>
           <Td>{title}</Td>
           <Td>

@@ -158,7 +158,7 @@ regressionValueIsNonZeroButRoundedValueIs0.story = {
 };
 
 export const integrationWithDifferentTypographies = () => {
-  const items = Object.values(TYPOGRAPHY_TYPES).map((type) => ({
+  const items = Object.values(TYPOGRAPHY_TYPES)?.map((type) => ({
     title: type,
     component: (
       <Typography type={type}>

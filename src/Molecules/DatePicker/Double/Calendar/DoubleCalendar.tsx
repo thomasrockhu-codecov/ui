@@ -69,8 +69,8 @@ const DoubleCalendar: React.FC<Props> = ({
 
   const calendarDayRefs = useRef(
     useMemo(() => {
-      return [...Array(NUMBER_OF_VISIBLE_ROWS_DOUBLE)].map(() =>
-        [...Array(NUMBER_OF_VISIBLE_WEEKDAYS_DOUBLE)].map(() => React.createRef<HTMLDivElement>()),
+      return [...Array(NUMBER_OF_VISIBLE_ROWS_DOUBLE)]?.map(() =>
+        [...Array(NUMBER_OF_VISIBLE_WEEKDAYS_DOUBLE)]?.map(() => React.createRef<HTMLDivElement>()),
       );
     }, []),
   );
@@ -79,7 +79,7 @@ const DoubleCalendar: React.FC<Props> = ({
     event.stopPropagation();
     // TODO: Implement arrow navigation. Re-implement tests.
     // Arrow navigation is temporarilty removed as it is not completely finished yet.
-    /* 
+    /*
     if (R.isNil(focusedWeek) || R.isNil(focusedDay)) {
       setFocused([0, 0]);
     } else {
@@ -150,7 +150,7 @@ const DoubleCalendar: React.FC<Props> = ({
     });
     return {
       weekDays: [...leftCalendar.weekDays, ...rightCalendar.weekDays],
-      dates: leftCalendar.dates.map((leftWeek, index) => [
+      dates: leftCalendar.dates?.map((leftWeek, index) => [
         ...leftWeek,
         ...rightCalendar.dates[index],
       ]),
@@ -170,7 +170,7 @@ const DoubleCalendar: React.FC<Props> = ({
     >
       <Flexbox container direction="column" aria-hidden>
         <Flexbox container>
-          {calendar.weekDays.map((n, index) => (
+          {calendar.weekDays?.map((n, index) => (
             <StyledCalendarContainer
               item
               justifyContent="center"
@@ -184,9 +184,9 @@ const DoubleCalendar: React.FC<Props> = ({
             </StyledCalendarContainer>
           ))}
         </Flexbox>
-        {calendar.dates.map((week, weekIndex) => (
+        {calendar.dates?.map((week, weekIndex) => (
           <Flexbox container justifyContent="flex-start" key={week.toString()}>
-            {week.map((day, dayIndex) => {
+            {week?.map((day, dayIndex) => {
               const hideDate =
                 (!isSameMonth(leftViewedDate, day) &&
                   isSameMonth(rightViewedDate, day) &&

@@ -39,7 +39,7 @@ export const SubLevel: SubLevelComponent = ({
 
   return (
     <OrderedList>
-      {steps.map(step => {
+      {steps?.map(step => {
         const { current, done, name, label } = step;
 
         return (

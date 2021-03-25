@@ -284,7 +284,7 @@ export const StickyHeadersForDifferentScreenSizes = () => {
           </FlexTable.Header>
         </FlexTable.HeaderRow>
 
-        {[...Array(50)].map((_, index) => (
+        {[...Array(50)]?.map((_, index) => (
           // eslint-disable-next-line react/no-array-index-key
           <FlexTable.Row key={index}>
             <FlexTable.Cell columnId="column1">Cell {index + 1}-1</FlexTable.Cell>

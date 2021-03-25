@@ -49,8 +49,8 @@ const Calendar: React.FC<Props> = ({
   };
 
   const calendarDayRefs = useRef(
-    [...Array(NUMBER_OF_VISIBLE_WEEKS_SINGLE)].map(() =>
-      [...Array(NUMBER_OF_VISIBLE_WEEKDAYS_SINGLE)].map(() => React.createRef<HTMLDivElement>()),
+    [...Array(NUMBER_OF_VISIBLE_WEEKS_SINGLE)]?.map(() =>
+      [...Array(NUMBER_OF_VISIBLE_WEEKDAYS_SINGLE)]?.map(() => React.createRef<HTMLDivElement>()),
     ),
   );
 
@@ -145,7 +145,7 @@ const Calendar: React.FC<Props> = ({
   return (
     <Flexbox container direction="column" data-testid="datepicker-calendar">
       <Flexbox container aria-hidden>
-        {calendar.weekDays.map((n) => (
+        {calendar.weekDays?.map((n) => (
           <Flexbox item justifyContent="center" alignItems="center" key={n}>
             <StyledBox>
               <Typography type="tertiary">{n}</Typography>
@@ -153,9 +153,9 @@ const Calendar: React.FC<Props> = ({
           </Flexbox>
         ))}
       </Flexbox>
-      {calendar.dates.map((week, weekIndex) => (
+      {calendar.dates?.map((week, weekIndex) => (
         <Flexbox container key={week.toString()}>
-          {week.map((day, dayIndex) => (
+          {week?.map((day, dayIndex) => (
             <CalendarDay
               ref={calendarDayRefs.current[weekIndex][dayIndex]}
               onFocus={() => {

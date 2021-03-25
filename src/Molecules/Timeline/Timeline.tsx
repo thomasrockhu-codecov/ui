@@ -106,7 +106,7 @@ const Timeline: React.FC<Props> = ({ steps, colorSuccess, colorNext }) => {
   let previousStatus: StepProps['status'];
   return (
     <StyledUl>
-      {steps.reverse().map((step, index) => {
+      {steps.reverse()?.map((step, index) => {
         const { date, text, status, button } = step;
         const statusIcon = getStatusIcon(status);
         if (index > 0 && steps.length > 0) {

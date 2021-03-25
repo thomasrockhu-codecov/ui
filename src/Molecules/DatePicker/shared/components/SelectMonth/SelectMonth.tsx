@@ -14,7 +14,7 @@ import { Theme } from '../../../../../theme/theme.types';
 
 const months = [...Array(12).keys()];
 
-/* using styled like this as a workaround for 
+/* using styled like this as a workaround for
  Select.test.tsx failing because Input.Select is undefined */
 const StyledInputSelect = styled((props) => <Input.Select {...props} />)`
   margin-right: ${({ theme }) => theme.spacing.unit(3)}px;
@@ -28,7 +28,7 @@ const StyledInputSelect = styled((props) => <Input.Select {...props} />)`
 const SelectMonth: React.FC<Props> = ({ id, locale, viewedDate, onChange }) => {
   const [isHover, setIsHover] = useState(false);
   const opts = { locale: getLocale(locale) };
-  const monthOptions = months.map((index: number) => ({
+  const monthOptions = months?.map((index: number) => ({
     value: index,
     label: capitalize(format(new Date(viewedDate.getFullYear(), index), 'MMMM', opts)),
   }));

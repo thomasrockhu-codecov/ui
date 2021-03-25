@@ -50,7 +50,7 @@ const getValuesForNativeSelect = (
   isMultiselect: boolean,
 ) => {
   if (isMultiselect) {
-    return selectedItems.map((x) => x.value);
+    return selectedItems?.map((x) => x.value);
   }
 
   const value = getSingleSelectValue(selectedItems);
@@ -72,7 +72,7 @@ const Select = (props: Props) => {
   const allOptions = useMemo(
     () =>
       R.pipe(
-        R.map((option: any) => (option.options ? [option, option.options] : option)),
+        R?.map((option: any) => (option.options ? [option, option.options] : option)),
         R.flatten,
       )(props.options),
     [props.options],
@@ -250,10 +250,10 @@ const Select = (props: Props) => {
         onChange={noop}
       >
         {placeholder && <option label={placeholder} value="" />}
-        {options.map((x: any) =>
+        {options?.map((x: any) =>
           x.options ? (
             <optgroup label={x.label} key={x.label}>
-              {x.options.map((y: any) => (
+              {x.options?.map((y: any) => (
                 <option label={y.label} value={y.value} key={`${y.label}${y.value}`} />
               ))}
             </optgroup>
@@ -316,7 +316,7 @@ const Select = (props: Props) => {
               maxHeight={props.listMaxHeight}
               width={props.width}
             >
-              {allOptions.map((x: any, index: number) => (
+              {allOptions?.map((x: any, index: number) => (
                 <ListItemWrapper
                   // eslint-disable-next-line react/no-array-index-key
                   key={index}
