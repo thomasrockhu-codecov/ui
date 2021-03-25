@@ -1,12 +1,12 @@
-import React, { useContext, FC } from 'react';
+import React, { FC, useContext } from 'react';
 import styled, { ThemeContext } from 'styled-components';
-import { ButtonComponent, ButtonProps, InnerProps } from './Button.types';
+import { ButtonProps, InnerProps } from './Button.types';
 import { assert } from '../../common/utils';
 import NormalizedElements from '../../common/NormalizedElements';
 import TrackingContext from '../../common/tracking';
 import ButtonContent from './ButtonContent';
 import { neutralStyles, primaryStyles, secondaryStyles } from './Button.styles';
-import { useLink, LinkProps as RawLinkProps } from '../../common/Links';
+import { LinkProps as RawLinkProps, useLink } from '../../common/Links';
 
 const isPrimary = (variant: ButtonProps['variant']) => variant === 'primary';
 const isSecondary = (variant: ButtonProps['variant']) => variant === 'secondary';
@@ -49,10 +49,9 @@ const StyledLink = styled(CleanLink)<InnerProps>`
   text-decoration: none;
 `;
 
-export const Button: ButtonComponent = React.forwardRef<
-  HTMLAnchorElement | HTMLButtonElement,
-  ButtonProps
->((props, ref) => {
+export const Button: React.ForwardRefExoticComponent<
+  React.PropsWithoutRef<ButtonProps> & React.RefAttributes<HTMLAnchorElement | HTMLButtonElement>
+> = React.forwardRef<HTMLAnchorElement | HTMLButtonElement, ButtonProps>((props, ref) => {
   const {
     className,
     disabled,

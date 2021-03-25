@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import * as R from 'ramda';
 import styled from 'styled-components';
-import { VisuallyHidden, Icon, Typography } from '../..';
-import { SelectComponent, Props } from './Select.types';
+import { Icon, Typography, VisuallyHidden } from '../..';
+import { Props, SelectComponent } from './Select.types';
 
 const SELECT_HEIGHT = 8;
 const ARROW_SPACE = 7;
@@ -54,18 +54,18 @@ const SelectedValue = styled(Typography)`
 `;
 
 const Select: SelectComponent = ({
-  options = [],
-  disabled = false,
-  hideLabel = false,
-  placeholder,
-  name,
-  label,
-  className,
-  value: valueFromProps,
-  onChange: onChangeFromProps,
-  onBlur: onBlurFromProps,
-  onFocus: onFocusFromProps,
-}) => {
+                                   options = [],
+                                   disabled = false,
+                                   hideLabel = false,
+                                   placeholder,
+                                   name,
+                                   label,
+                                   className,
+                                   value: valueFromProps,
+                                   onChange: onChangeFromProps,
+                                   onBlur: onBlurFromProps,
+                                   onFocus: onFocusFromProps,
+                                 }) => {
   const [focus, setFocus] = useState(false);
   const [value, setValue] = useState<Props['value']>(undefined);
 
@@ -122,7 +122,7 @@ const Select: SelectComponent = ({
               {placeholder}
             </option>
           )}
-          {options.map(option => (
+          {options?.map(option => (
             <option key={option.value} value={option.value}>
               {option.label}
             </option>

@@ -1,6 +1,6 @@
 import * as React from 'react';
 import styled from 'styled-components';
-import { List as UIList, FadedScroll, DropdownBubble, Separator, Box } from '../../../../..';
+import { Box, DropdownBubble, FadedScroll, List as UIList, Separator } from '../../../../..';
 import { useMedia } from '../../../../../Atoms/Media';
 
 type ListProps = {

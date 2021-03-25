@@ -1,7 +1,7 @@
-import { filter, values, mapObjIndexed, pipe, prop as Rprop } from 'ramda';
+import { filter, mapObjIndexed, pipe, prop as Rprop, values } from 'ramda';
 import Color from 'color';
-import { assert, isNumber, deprecate } from '../common/utils'; // eslint-disable-line import/no-unresolved
-import { ThemeConfig, Theme, RawColor, ThemeColors, ThemeColorsVersion } from './theme.types';
+import { assert, deprecate, isNumber } from '../common/utils'; // eslint-disable-line import/no-unresolved
+import { RawColor, Theme, ThemeColors, ThemeColorsVersion, ThemeConfig } from './theme.types';
 
 // Export from here for showing in story,
 // but don't export from index.ts
@@ -271,43 +271,43 @@ const createColors = (type: ThemeColorsVersion): ThemeColors<typeof type> => {
     palettePink: a11yColors
       ? paletteA11y
       : [
-          rawColor.brandPink,
-          rawColor.complementaryPink1,
-          rawColor.complementaryPink2,
-          rawColor.brandTurquoise,
-          rawColor.complementaryTurquoise1,
-          ...grayScale,
-        ],
+        rawColor.brandPink,
+        rawColor.complementaryPink1,
+        rawColor.complementaryPink2,
+        rawColor.brandTurquoise,
+        rawColor.complementaryTurquoise1,
+        ...grayScale,
+      ],
     paletteGreen: a11yColors
       ? paletteA11y
       : [
-          rawColor.brandGreen,
-          rawColor.complementaryGreen1,
-          rawColor.complementaryGreen2,
-          rawColor.brandTurquoise,
-          rawColor.complementaryTurquoise1,
-          ...grayScale,
-        ],
+        rawColor.brandGreen,
+        rawColor.complementaryGreen1,
+        rawColor.complementaryGreen2,
+        rawColor.brandTurquoise,
+        rawColor.complementaryTurquoise1,
+        ...grayScale,
+      ],
     paletteBlue: a11yColors
       ? paletteA11y
       : [
-          rawColor.brandBlue,
-          rawColor.complementaryBlue1,
-          rawColor.complementaryBlue2,
-          rawColor.brandTurquoise,
-          rawColor.complementaryTurquoise1,
-          ...grayScale,
-        ],
+        rawColor.brandBlue,
+        rawColor.complementaryBlue1,
+        rawColor.complementaryBlue2,
+        rawColor.brandTurquoise,
+        rawColor.complementaryTurquoise1,
+        ...grayScale,
+      ],
     paletteTurquoise: a11yColors
       ? paletteA11y
       : [
-          rawColor.brandTurquoise,
-          rawColor.complementaryTurquoise1,
-          rawColor.complementaryTurquoise2,
-          rawColor.brandBlue,
-          rawColor.complementaryBlue1,
-          ...grayScale,
-        ],
+        rawColor.brandTurquoise,
+        rawColor.complementaryTurquoise1,
+        rawColor.complementaryTurquoise2,
+        rawColor.brandBlue,
+        rawColor.complementaryBlue1,
+        ...grayScale,
+      ],
     paletteLineGraph: a11yColors
       ? [rawColor.a11yCta, rawColor.a11yIndex, ...lineColors]
       : [rawColor.cta, rawColor.index, ...lineColors],

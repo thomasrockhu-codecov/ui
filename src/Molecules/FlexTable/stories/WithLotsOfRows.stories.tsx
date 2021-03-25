@@ -5,7 +5,7 @@ import { FixedSizeList as List } from 'react-window';
 import AutoSizer from 'react-virtualized-auto-sizer';
 import { number } from '@storybook/addon-knobs';
 import FlexTable from '../FlexTable';
-import { Typography, Box } from '../../..';
+import { Box, Typography } from '../../..';
 import docs from '../FlexTable.mdx';
 import { StyledBackground } from './storiesShared';
 
@@ -24,7 +24,7 @@ const generateUniqueId = (rowIndex: number) =>
   `${rowIndex}_${Math.random().toString(36).substr(2, 9)}`;
 
 const generateTableData = (rowsLength: number, columnsLength: number) =>
-  [...Array(rowsLength)].map((_, rowIndex) => {
+  [...Array(rowsLength)]?.map((_, rowIndex) => {
     const rowId = generateUniqueId(rowIndex);
     return [...Array(columnsLength)].reduce((acc, __, columnIndex) => {
       const keyName = `value${columnIndex + 1}`;
@@ -35,13 +35,13 @@ const generateTableData = (rowsLength: number, columnsLength: number) =>
 
 const BigTableRow = ({ data }: any) => {
   const xsColumnKeys = Object.keys(data).filter((_, index) => Boolean(index % 2));
-  const expandItems = xsColumnKeys.map(
+  const expandItems = xsColumnKeys?.map(
     (key, index) => ({ label: `Header ${index * 2 + 1}`, value: data[key].value }),
     {},
   );
   return (
     <FlexTable.Row expandItems={expandItems}>
-      {Object.keys(R.omit(['rowId'], data)).map((valueKey, index) => (
+      {Object.keys(R.omit(['rowId'], data))?.map((valueKey, index) => (
         <FlexTable.Cell
           key={data[valueKey].id}
           columnId={`column${index + 1}`}
@@ -87,7 +87,7 @@ export const BigTable = () => {
       return (
         <FlexTable expandable md={{ expandable: false }}>
           <FlexTable.HeaderRow>
-            {[...Array(columnsLength)].map((_, index) => (
+            {[...Array(columnsLength)]?.map((_, index) => (
               <FlexTable.Header
                 columnId={`column${index + 1}`}
                 key={`column${index + 1}`}
@@ -102,7 +102,7 @@ export const BigTable = () => {
               </FlexTable.Header>
             ))}
           </FlexTable.HeaderRow>
-          {sortedData.map((data) => (
+          {sortedData?.map((data) => (
             <BigTableRow key={data.rowId} data={data} />
           ))}
         </FlexTable>
@@ -124,7 +124,7 @@ const VirtualizedRow: any = styled(FlexTable.Row).attrs({
 
 const VirtualizedTableRow = React.memo(({ data, style }: any) => (
   <VirtualizedRow style={style}>
-    {Object.keys(R.omit(['rowId'], data)).map((valueKey, index) => (
+    {Object.keys(R.omit(['rowId'], data))?.map((valueKey, index) => (
       <FlexTable.Cell key={data[valueKey].id} columnId={`column${index + 1}`}>
         {data[valueKey].value}
       </FlexTable.Cell>
@@ -175,7 +175,7 @@ export const VirtualizedTable = () => {
         <FullHeightDiv>
           <FlexTable>
             <FlexTable.HeaderRow>
-              {[...Array(columnsLength)].map((_, index) => (
+              {[...Array(columnsLength)]?.map((_, index) => (
                 <FlexTable.Header
                   columnId={`column${index + 1}`}
                   key={`column${index + 1}`}
@@ -245,7 +245,7 @@ export const BigTableWithoutStickyHeader = () => {
       return (
         <FlexTable stickyHeader={false}>
           <FlexTable.HeaderRow>
-            {[...Array(columnsLength)].map((_, index) => (
+            {[...Array(columnsLength)]?.map((_, index) => (
               <FlexTable.Header
                 columnId={`column${index + 1}`}
                 sortable
@@ -257,7 +257,7 @@ export const BigTableWithoutStickyHeader = () => {
               </FlexTable.Header>
             ))}
           </FlexTable.HeaderRow>
-          {sortedData.map((data) => (
+          {sortedData?.map((data) => (
             <BigTableRow key={data.rowId} data={data} />
           ))}
         </FlexTable>
@@ -304,7 +304,7 @@ export const MultipleBigTablesWithStickyHeaders = () => {
         <Box mb={10}>
           <FlexTable>
             <FlexTable.HeaderRow>
-              {[...Array(columnsLength)].map((_, index) => (
+              {[...Array(columnsLength)]?.map((_, index) => (
                 <FlexTable.Header
                   columnId={`column${index + 1}`}
                   sortable
@@ -316,7 +316,7 @@ export const MultipleBigTablesWithStickyHeaders = () => {
                 </FlexTable.Header>
               ))}
             </FlexTable.HeaderRow>
-            {sortedData.map((data) => (
+            {sortedData?.map((data) => (
               <BigTableRow key={data.rowId} data={data} />
             ))}
           </FlexTable>
@@ -326,7 +326,7 @@ export const MultipleBigTablesWithStickyHeaders = () => {
         </Typography>
         <FlexTable>
           <FlexTable.HeaderRow>
-            {[...Array(columnsLength)].map((_, index) => (
+            {[...Array(columnsLength)]?.map((_, index) => (
               <FlexTable.Header
                 columnId={`column${index + 1}`}
                 sortable
@@ -338,7 +338,7 @@ export const MultipleBigTablesWithStickyHeaders = () => {
               </FlexTable.Header>
             ))}
           </FlexTable.HeaderRow>
-          {sortedData.map((data) => (
+          {sortedData?.map((data) => (
             <BigTableRow key={data.rowId} data={data} />
           ))}
         </FlexTable>

@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { TabTitle, Flexbox } from '../..';
+import { Flexbox, TabTitle } from '../..';
 
 const Container = styled.div`
   display: inline-flex;

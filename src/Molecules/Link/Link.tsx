@@ -1,11 +1,11 @@
-import React, { useContext, FC } from 'react';
+import React, { FC, useContext } from 'react';
 import styled, { ThemedStyledProps } from 'styled-components';
 import { LinkComponent, LinkProps } from './Link.types';
 import { Theme } from '../../theme/theme.types';
-import { isUndefined, assert } from '../../common/utils';
+import { assert, isUndefined } from '../../common/utils';
 import NormalizedElements from '../../common/NormalizedElements';
 import TrackingContext from '../../common/tracking';
-import { useLink, LinkProps as RawLinkProps } from '../../common/Links';
+import { LinkProps as RawLinkProps, useLink } from '../../common/Links';
 
 const getEnabledColor = (color: LinkProps['color'], theme: Theme): string => {
   if (color === 'black') {
@@ -82,7 +82,7 @@ export const Link: LinkComponent = React.forwardRef<any, LinkProps>((props, ref)
     external,
     cms,
     fullServerRedirect,
-    as, // FIXME Might have broken as functionallity, needs verification.
+    as, // FIXME Might have broken as functionality, needs verification.
     color,
     underlined,
     onMouseEnter,

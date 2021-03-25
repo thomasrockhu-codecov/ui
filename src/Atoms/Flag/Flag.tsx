@@ -11,16 +11,26 @@ const CleanSvg: React.FC<Partial<React.SVGProps<any>>> = ({
   focusable,
   role,
   viewBox,
-}) => <svg {...{ className, children, focusable, role, viewBox }} />;
+}) => (
+  <svg
+    {...{
+      className,
+      children,
+      focusable,
+      role,
+      viewBox,
+    }}
+  />
+);
 
 const VIEWBOX_HEIGHT = 480;
 const VIEWBOX_WIDTH = 640;
 const StyledSvg = styled(CleanSvg)<InternalProps>`
-  height: ${p => p.theme.spacing.unit(p.height)}px;
-  ${p => (p.grayBorder ? `border: 1px solid ${p.theme.color.flagBorder};` : '')} 
+  height: ${(p) => p.theme.spacing.unit(p.height)}px;
+  ${(p) => (p.grayBorder ? `border: 1px solid ${p.theme.color.flagBorder};` : '')}
   box-sizing: border-box;
-  display: ${p => (p.inline ? 'inline-block' : 'block')};
-  ${p =>
+  display: ${(p) => (p.inline ? 'inline-block' : 'block')};
+  ${(p) =>
     p.inline
       ? `
   vertical-align: middle;
@@ -29,7 +39,7 @@ const StyledSvg = styled(CleanSvg)<InternalProps>`
   `
       : ''};
   ${/** IE11 fixes below */ ''}
-  width: ${p => (p.theme.spacing.unit(p.height) * VIEWBOX_WIDTH) / VIEWBOX_HEIGHT}px;
+  width: ${(p) => (p.theme.spacing.unit(p.height) * VIEWBOX_WIDTH) / VIEWBOX_HEIGHT}px;
   overflow: hidden;
 `;
 

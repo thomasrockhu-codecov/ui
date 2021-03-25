@@ -91,7 +91,7 @@ export const differentVariants = () => (
     <InfoBar>{variants[0].children}</InfoBar>
     <br />
     <br />
-    {variants.map(({ variant, children }) => (
+    {variants?.map(({ variant, children }) => (
       <>
         <code>variant={variant}</code>
         <br />

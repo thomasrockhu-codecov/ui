@@ -50,8 +50,8 @@ export const getAreasInfo = (
       area: { coordinates: Array<{ row: number; col: number }>; name: string; id: number },
     ) => {
       const { coordinates, name, id } = area;
-      const rows = coordinates.map(R.prop('row'));
-      const cols = coordinates.map(R.prop('col'));
+      const rows = coordinates?.map(R.prop('row'));
+      const cols = coordinates?.map(R.prop('col'));
       let rowStart = minimal(rows) as number;
       let rowSpan = (maximal(rows) as number) - rowStart;
       if (isGapPresented.row) {

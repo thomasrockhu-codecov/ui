@@ -4,7 +4,7 @@ import { Separator } from '../..';
 import { Component } from './Accordion.types';
 
 const Footer = styled.div`
-  padding-top: ${p => p.theme.spacing.unit(3)}px;
+  padding-top: ${(p) => p.theme.spacing.unit(3)}px;
 `;
 
 export const Accordion: Component = ({ children, footer }) => {

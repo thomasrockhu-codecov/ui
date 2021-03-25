@@ -1,7 +1,7 @@
 import React, { ReactNode } from 'react';
 import {
-  ExpandItems,
   ExpandItemComponent,
+  ExpandItems,
   ExpandItemsComponent,
 } from './components/ExpandItems/ExpandItems.types';
 import { ColorFn } from '../../../common/Types/sharedTypes';

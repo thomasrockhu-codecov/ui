@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import styled from 'styled-components';
 import { Badge } from './Badge';
 import docs from './Badge.mdx';
-import { Box, Button, Typography, Flexbox } from '../..';
+import { Box, Button, Flexbox, Typography } from '../..';
 import { numberWithLimit } from '../../common/utils';
 import { Props as BadgeProps } from './Badge.types';
 

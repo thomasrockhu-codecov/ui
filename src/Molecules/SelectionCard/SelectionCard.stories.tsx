@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
-import { withKnobs, text, boolean } from '@storybook/addon-knobs';
+import { boolean, text, withKnobs } from '@storybook/addon-knobs';
 import { action } from '@storybook/addon-actions';
 import styled from 'styled-components';
-import { Icon, Flexbox, Typography } from '../..';
+import { Flexbox, Icon, Typography } from '../..';
 import { SelectionCard } from './SelectionCard';
 
 const StyledFlexbox = styled(Flexbox)`

@@ -1,20 +1,20 @@
-import React, { cloneElement, useState, forwardRef } from 'react';
+import React, { cloneElement, forwardRef, useState } from 'react';
 import { TooltipComponent } from './Tooltip.types';
 import { TooltipPopup } from './TooltipPopup';
-import { wrapEvent, mergeRefs } from '../../common/utils';
+import { mergeRefs, wrapEvent } from '../../common/utils';
 import { useTooltip } from './hooks';
 
-/** 
-  There are a few features that are important to understand.
-  
-  1. Tooltips don't show up until the user has rested on one, we don't
-     want tooltips popping up as you move your mouse around the page.
-  
-  2. Once any tooltip becomes visible, other tooltips nearby should skip
-     resting and display immediately.
-  
-  3. Tooltips stick around for a little bit after blur/mouseleave. 
-*/
+/**
+ There are a few features that are important to understand.
+
+ 1. Tooltips don't show up until the user has rested on one, we don't
+ want tooltips popping up as you move your mouse around the page.
+
+ 2. Once any tooltip becomes visible, other tooltips nearby should skip
+ resting and display immediately.
+
+ 3. Tooltips stick around for a little bit after blur/mouseleave.
+ */
 
 export const Tooltip: TooltipComponent = forwardRef(
   (

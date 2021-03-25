@@ -1,7 +1,7 @@
 /* eslint-disable react/no-unescaped-entities */
 import React from 'react';
 
-import { Typography, Flexbox } from '../..';
+import { Flexbox, Typography } from '../..';
 import { Display } from '../../common/Display';
 
 export default {

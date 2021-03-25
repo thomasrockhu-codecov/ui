@@ -186,7 +186,7 @@ withModifiedStroke.story = {
 
 export const availableIcons = () => (
   <Display
-    items={Object.entries(Icon).map(
+    items={Object.entries(Icon)?.map(
       ([iconName, IconComponent]: [string, React.ComponentType<any>]) => ({
         title: iconName,
         component: (
@@ -205,7 +205,7 @@ availableIcons.story = {
 
 export const allIconsColored = () => (
   <>
-    {Object.entries(Icon).map(([key, IconComponent]: [string, React.ComponentType<any>]) => (
+    {Object.entries(Icon)?.map(([key, IconComponent]: [string, React.ComponentType<any>]) => (
       <div style={{ outline: '1px dashed #bbb', display: 'inline-block' }}>
         <IconComponent
           color={(t: any) => t.color.cta}

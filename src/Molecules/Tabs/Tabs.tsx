@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
-import { Flexbox, Typography, Separator, TabTitle } from '../..';
+import { Flexbox, Separator, TabTitle, Typography } from '../..';
 import NormalizedElements from '../../common/NormalizedElements/index';
 import { assert } from '../../common/utils';
 import { useKeyboardNavigation } from './useKeyboardNavigation';
 
-import { ContainerComponent, TitleComponent, ItemProps } from './Tabs.types';
+import { ContainerComponent, ItemProps, TitleComponent } from './Tabs.types';
 
 export const Item: React.FC<ItemProps> = ({ children }) => {
   return <>{children}</>;

@@ -38,7 +38,7 @@ export const ActionsWrapper: React.FC<{
   const isKeyboardNavigation = state.matches('interaction.enabled.active.navigation.keyboard');
   return (
     <StyledList role="listbox">
-      {actions.map((a, index) => (
+      {actions?.map((a, index) => (
         // Because it has keyboard navigation from Input.Select itself
         // eslint-disable-next-line jsx-a11y/click-events-have-key-events
         <StyledLi

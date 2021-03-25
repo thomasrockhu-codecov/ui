@@ -1,6 +1,6 @@
 import React from 'react';
 import styled, { css } from 'styled-components';
-import { Component, Props, InternalProps } from './BubbleArrow.types';
+import { Component, InternalProps, Props } from './BubbleArrow.types';
 import { TRIANGLE_INDENTATION, TRIANGLE_SIZE } from './consts';
 import { BORDER_SIZE } from '../Bubble/consts';
 

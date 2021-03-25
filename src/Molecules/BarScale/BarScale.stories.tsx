@@ -1,5 +1,5 @@
 import React from 'react';
-import { boolean, text, number } from '@storybook/addon-knobs';
+import { boolean, number, text } from '@storybook/addon-knobs';
 import { Flexbox } from '../..';
 import docs from './BarScale.mdx';
 import BarScale from '.';

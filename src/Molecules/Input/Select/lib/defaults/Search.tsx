@@ -5,7 +5,7 @@ import { Text } from '../../../Text';
 import { visuallyHiddenCss } from '../../../../../Atoms/VisuallyHidden';
 
 const StyledInputText = styled(Text)<{ hidden?: boolean; ref?: React.Ref<HTMLInputElement> }>`
-  ${p => (p.hidden ? `${visuallyHiddenCss}` : '')}
+  ${(p) => (p.hidden ? `${visuallyHiddenCss}` : '')}
 `;
 
 export const Search = React.forwardRef<

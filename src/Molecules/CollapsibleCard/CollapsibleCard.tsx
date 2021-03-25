@@ -50,7 +50,7 @@ const AnimatedChevronUp = styled(Icon.ChevronUp)<IndicatorsProps>`
 export const CollapsibleCard: React.FC<CollapsibleProps> = ({
   title,
   children,
-  collapsedInitial: collapsedInitial = false,
+  collapsedInitial = false,
   heading = 'h2',
   noIndicator = false,
   onClick = () => {},

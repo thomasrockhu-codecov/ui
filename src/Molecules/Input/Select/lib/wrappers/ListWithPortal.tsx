@@ -44,7 +44,7 @@ export const ListWrapperWithPortal = React.forwardRef<HTMLDivElement, any>(
       'data-testid': dataTestId,
       maxHeight,
       listPosition,
-      placement
+      placement,
     },
     ref,
   ) => {

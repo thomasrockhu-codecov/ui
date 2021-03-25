@@ -1,5 +1,5 @@
 import React from 'react';
-import { render, fireEvent, cleanup } from '@testing-library/react';
+import { cleanup, fireEvent, render } from '@testing-library/react';
 import '@testing-library/jest-dom/extend-expect';
 import { advanceTo, clear } from 'jest-date-mock';
 import { DatePicker } from '../../..';

@@ -1,5 +1,5 @@
 import React, { ReactElement } from 'react';
-import { RowComponent, FooterRowComponent, HeaderRowComponent } from './Row/Row.types';
+import { FooterRowComponent, HeaderRowComponent, RowComponent } from './Row/Row.types';
 import { HeaderComponent } from './Header/Header.types';
 import { FooterComponent } from './Footer/Footer.types';
 import { constants } from './shared';

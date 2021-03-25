@@ -1,6 +1,6 @@
 import React from 'react';
 import { actions } from '@storybook/addon-actions';
-import { Input, Icon, Flexbox, Button, Box } from '../../..';
+import { Box, Button, Flexbox, Icon, Input } from '../../..';
 import { Display } from '../../../common/Display';
 
 // A bit laggy for now, let's optimize later

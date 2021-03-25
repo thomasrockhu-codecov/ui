@@ -9,7 +9,7 @@ import { Box, Flexbox, Icon, Typography } from '../../../../..';
 import { newDate } from '../../dateUtils';
 import { Theme } from '../../../../../theme/theme.types';
 
-/* using styled like this as a workaround for 
+/* using styled like this as a workaround for
  Select.test.tsx failing because Input.Select is undefined */
 const StyledInputSelect = styled((props) => <Input.Select {...props} />)`
   > div > div > div {
@@ -21,7 +21,7 @@ const StyledInputSelect = styled((props) => <Input.Select {...props} />)`
 const SelectYear: React.FC<Props> = ({ id, viewedDate, onChange, years = 100 }) => {
   const [isHover, setIsHover] = useState(false);
   const today = newDate();
-  const yearOptions = [...Array(years).keys()].map((index: number) => ({
+  const yearOptions = [...Array(years).keys()]?.map((index: number) => ({
     value: today.getFullYear() - index,
     label: (today.getFullYear() - index).toString(),
   }));

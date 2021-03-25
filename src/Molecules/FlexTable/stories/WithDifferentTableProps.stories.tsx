@@ -1,6 +1,6 @@
 import React from 'react';
 import FlexTable from '../FlexTable';
-import { Button, Typography, Flag, Icon, Flexbox } from '../../..';
+import { Button, Flag, Flexbox, Icon, Typography } from '../../..';
 import { ICON_COLUMN_DEFAULT_FLEX_PROPS } from '../shared/constants';
 import docs from '../FlexTable.mdx';
 

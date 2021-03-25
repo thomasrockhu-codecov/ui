@@ -3,7 +3,7 @@ import styled, { css, ThemedStyledProps } from 'styled-components';
 import * as R from 'ramda';
 import { Props, Spacings } from './Box.types';
 import { Theme } from '../../theme/theme.types';
-import { isString, isNumber } from '../../common/utils';
+import { isNumber, isString } from '../../common/utils';
 
 const isPropPresentedIn = (props: Props) => (prop: keyof Props) =>
   typeof props[prop] !== 'undefined';
@@ -39,9 +39,15 @@ const getStyles = (props: Props) => {
 
   if (isPropPresented('m')) spacings.margin = props.m;
   // prettier-ignore
-  if (isPropPresented('mx')) { spacings.margins[right] = props.mx; spacings.margins[left] = props.mx; }
+  if (isPropPresented('mx')) {
+    spacings.margins[right] = props.mx;
+    spacings.margins[left] = props.mx;
+  }
   // prettier-ignore
-  if (isPropPresented('my')) { spacings.margins[top] = props.my; spacings.margins[bottom] = props.my; }
+  if (isPropPresented('my')) {
+    spacings.margins[top] = props.my;
+    spacings.margins[bottom] = props.my;
+  }
 
   if (isPropPresented('mt')) spacings.margins[top] = props.mt;
   if (isPropPresented('mb')) spacings.margins[bottom] = props.mb;
@@ -50,19 +56,25 @@ const getStyles = (props: Props) => {
 
   if (isPropPresented('p')) spacings.padding = props.p;
   // prettier-ignore
-  if (isPropPresented('px')) { spacings.paddings[right] = props.px; spacings.paddings[left] = props.px; }
+  if (isPropPresented('px')) {
+    spacings.paddings[right] = props.px;
+    spacings.paddings[left] = props.px;
+  }
   // prettier-ignore
-  if (isPropPresented('py')) { spacings.paddings[top] = props.py; spacings.paddings[bottom] = props.py; }
+  if (isPropPresented('py')) {
+    spacings.paddings[top] = props.py;
+    spacings.paddings[bottom] = props.py;
+  }
 
   if (isPropPresented('pt')) spacings.paddings[top] = props.pt;
   if (isPropPresented('pb')) spacings.paddings[bottom] = props.pb;
   if (isPropPresented('pl')) spacings.paddings[left] = props.pl;
   if (isPropPresented('pr')) spacings.paddings[right] = props.pr;
 
-  const marginsStyles = spacings.margins.map(
+  const marginsStyles = spacings.margins?.map(
     (v, idx) => v !== undefined && getCssString(`margin-${DIRECTION[idx]}`, v),
   );
-  const paddingsStyles = spacings.paddings.map(
+  const paddingsStyles = spacings.paddings?.map(
     (v, idx) => v !== undefined && getCssString(`padding-${DIRECTION[idx]}`, v),
   );
 
@@ -100,10 +112,10 @@ const StyledDiv = styled.div<Props>`
   ${(p) => getStyles(p)}
   ${(p) => (p.sm ? getStylesForSize('sm') : '')}
   ${(p) =>
-    p.md ? getStylesForSize('md') : ''}
+  p.md ? getStylesForSize('md') : ''}
   ${(p) => (p.xl ? getStylesForSize('xl') : '')}
   ${(p) =>
-    p.lg ? getStylesForSize('lg') : ''}
+  p.lg ? getStylesForSize('lg') : ''}
     background-color: ${(p) => getColor(p)};
 `;
 

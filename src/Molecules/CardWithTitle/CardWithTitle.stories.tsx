@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import MD from 'react-markdown';
-import { withKnobs, select, text, boolean } from '@storybook/addon-knobs';
+import { boolean, select, text, withKnobs } from '@storybook/addon-knobs';
 import docs from './CardWithTitle.md';
 
 import { Box, CardWithTitle, FadedScroll, Flexbox, Icon, Typography } from '../..';

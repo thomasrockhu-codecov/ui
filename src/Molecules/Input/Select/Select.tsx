@@ -6,22 +6,22 @@ import R from 'ramda';
 import { useOnClickOutside } from '../../../common/Hooks';
 
 import {
+  ActionsWrapper,
+  FormFieldOrFragment,
   ListItemWrapper,
   ListWrapper,
   ListWrapperWithPortal,
-  SelectedValueWrapper,
-  FormFieldOrFragment,
   SearchWrapper,
-  ActionsWrapper,
+  SelectedValueWrapper,
 } from './lib/wrappers';
-import { useSelectMachineFromContext, SelectStateContext } from './lib/context';
+import { SelectStateContext, useSelectMachineFromContext } from './lib/context';
 import {
-  useComponentsWithDefaults,
   defaultComponents,
   defaultComponentsMultiselect,
+  useComponentsWithDefaults,
 } from './lib/defaults';
-import { SelectMachine, OptionLike, ACTION_TYPES } from './machine';
-import { Props, Action as ActionType } from './Select.types';
+import { ACTION_TYPES, OptionLike, SelectMachine } from './machine';
+import { Action as ActionType, Props } from './Select.types';
 
 import { assert } from '../../../common/utils';
 
@@ -31,9 +31,9 @@ import {
   useFocusFromMachine,
   useIsFirstRender,
   useMultiRef,
+  useOnBlurAndOnFocus,
   usePropagateChangesThroughOnChange,
   useSyncPropsWithMachine,
-  useOnBlurAndOnFocus,
 } from './lib/hooks';
 import { SYMBOL_ALL } from './lib/constants';
 import TrackingContext from '../../../common/tracking';
@@ -50,7 +50,7 @@ const getValuesForNativeSelect = (
   isMultiselect: boolean,
 ) => {
   if (isMultiselect) {
-    return selectedItems.map((x) => x.value);
+    return selectedItems?.map((x) => x.value);
   }
 
   const value = getSingleSelectValue(selectedItems);
@@ -250,10 +250,10 @@ const Select = (props: Props) => {
         onChange={noop}
       >
         {placeholder && <option label={placeholder} value="" />}
-        {options.map((x: any) =>
+        {options?.map((x: any) =>
           x.options ? (
             <optgroup label={x.label} key={x.label}>
-              {x.options.map((y: any) => (
+              {x.options?.map((y: any) => (
                 <option label={y.label} value={y.value} key={`${y.label}${y.value}`} />
               ))}
             </optgroup>
@@ -316,7 +316,7 @@ const Select = (props: Props) => {
               maxHeight={props.listMaxHeight}
               width={props.width}
             >
-              {allOptions.map((x: any, index: number) => (
+              {allOptions?.map((x: any, index: number) => (
                 <ListItemWrapper
                   // eslint-disable-next-line react/no-array-index-key
                   key={index}

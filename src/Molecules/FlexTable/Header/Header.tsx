@@ -7,15 +7,15 @@ import { isElement, isFunction } from '../../../common/utils';
 import { Flexbox } from '../../..';
 import { SORT_ORDER_ASCENDING, SORT_ORDER_DESCENDING, SORT_ORDER_NONE } from '../shared/constants';
 import {
-  useFlexCellProps,
-  useColumnData,
-  ACTION_SET_SORTING,
   ACTION_SET_INITIAL_SORTING,
+  ACTION_SET_SORTING,
+  useColumnData,
+  useFlexCellProps,
 } from '../shared/ColumnProvider';
-import { HeaderContent, TextWrapper, SortIcon, SortButton } from './HeaderContent';
+import { HeaderContent, SortButton, SortIcon, TextWrapper } from './HeaderContent';
 import {
-  getStylesForSizes,
   getPersistedSortOrder,
+  getStylesForSizes,
   tableHasSavedPersistedSortOrder,
 } from '../shared';
 import { useFlexTable } from '../shared/FlexTableProvider';

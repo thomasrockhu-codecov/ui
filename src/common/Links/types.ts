@@ -1,4 +1,4 @@
-import { ReactNode, FC, Ref, HTMLProps } from 'react';
+import { FC, HTMLProps, ReactNode, Ref } from 'react';
 
 export type LinkProps = Partial<HTMLProps<HTMLAnchorElement>> & {
   to: any;

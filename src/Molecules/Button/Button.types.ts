@@ -46,5 +46,3 @@ export type InnerProps = Omit<ButtonProps, 'variant' | 'size' | 'fullWidth' | 'c
   $size: Exclude<ButtonProps['size'], undefined>;
   $colorFn?: ColorFn;
 };
-
-export type ButtonComponent = React.FC<ButtonProps>;

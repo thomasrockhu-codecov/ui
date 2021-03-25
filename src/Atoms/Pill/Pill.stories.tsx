@@ -2,7 +2,7 @@ import React from 'react';
 
 import { Pill } from './Pill';
 import docs from './Pill.mdx';
-import { Flexbox, Icon, Typography, Button } from '../..';
+import { Button, Flexbox, Icon, Typography } from '../..';
 
 export default {
   title: 'Atoms / Pill',

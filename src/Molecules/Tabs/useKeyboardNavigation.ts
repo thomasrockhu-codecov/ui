@@ -6,7 +6,7 @@ export const useKeyboardNavigation = ({
 }: UseKeyboardNavigationArgs) => {
   const tabRefs: HTMLElement[] = [];
 
-  const getActive = () => Object.values(tabRefs).findIndex(tab => tab === document.activeElement);
+  const getActive = () => Object.values(tabRefs).findIndex((tab) => tab === document.activeElement);
 
   const onKeyDown = (e: React.KeyboardEvent): void => {
     const active = getActive();

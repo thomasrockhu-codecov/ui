@@ -1,14 +1,14 @@
 import * as React from 'react';
 import styled, { css } from 'styled-components';
 import {
+  Box,
+  DropdownBubble,
+  FadedScroll,
   Flexbox,
-  Typography,
   Icon,
   List as UIList,
-  Box,
-  FadedScroll,
-  DropdownBubble,
   Separator,
+  Typography,
 } from '../../../../..';
 
 type ListProps = {

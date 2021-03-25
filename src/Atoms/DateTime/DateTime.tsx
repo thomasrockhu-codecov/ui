@@ -1,21 +1,25 @@
-import { useIntl } from 'react-intl';
 import React from 'react';
+import { useIntl } from 'react-intl';
 import { DateTimeComponent } from './DateTime.types';
 import { isValidDateTimeNumber } from '../../common/utils';
 
+type FormatDateOptionYear = 'numeric';
+type FormatDateOptionMonth = 'numeric';
+type FormatDateOptionDay = 'numeric';
+
 const dateTimeOptions = {
-  year: 'numeric',
-  month: 'numeric',
-  day: 'numeric',
+  year: 'numeric' as FormatDateOptionYear,
+  month: 'numeric' as FormatDateOptionMonth,
+  day: 'numeric' as FormatDateOptionDay,
   hour12: false,
   hour: 'numeric',
   minute: 'numeric',
 };
 
 const dateOptions = {
-  year: 'numeric',
-  month: 'numeric',
-  day: 'numeric',
+  year: 'numeric' as FormatDateOptionYear,
+  month: 'numeric' as FormatDateOptionMonth,
+  day: 'numeric' as FormatDateOptionDay,
 };
 
 const DateTime: DateTimeComponent = ({ value, onlyDate, options, invalidValue = '-' }) => {

@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import styled from 'styled-components';
 import { AnimatePresence, motion } from 'framer-motion';
 
-import { Typography, Icon, Box } from '../..';
+import { Box, Icon, Typography } from '../..';
 import { isBoolean, isFunction, isString } from '../../common/utils';
 import { AccordionItemComponent } from './AccordionItem.types';
 

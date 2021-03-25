@@ -21,16 +21,16 @@ const getColor = (props: ThemedStyledProps<Props, Theme>) => {
 };
 
 const barStyles = css<Props>`
-  border-left: 2px solid ${p => getColor(p)};
+  border-left: 2px solid ${(p) => getColor(p)};
 `;
 
 const StyledDiv = styled(CleanDiv)<Props>`
   display: inline-block;
-  ${p => (p.noPadding ? `` : `padding: 0 ${p.theme.spacing.unit(1)}px`)};
+  ${(p) => (p.noPadding ? `` : `padding: 0 ${p.theme.spacing.unit(1)}px`)};
   box-sizing: border-box;
   background: ${({ theme }) => theme.color.card};
   box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.21);
-  ${p => (p.barColor ? barStyles : ``)}
+  ${(p) => (p.barColor ? barStyles : ``)}
 `;
 
 export const Pill: React.FC<Props> = ({ barColor, className, children, noPadding }) => (

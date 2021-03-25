@@ -1,11 +1,6 @@
 import React, { useReducer } from 'react';
 import * as R from 'ramda';
-import {
-  ColumnActions,
-  ColumnsState,
-  ColumnsDataState,
-  ColumnsDispatch,
-} from './ColumnProvider.types';
+import { ColumnActions, ColumnsDataState, ColumnsDispatch, ColumnsState } from './ColumnProvider.types';
 import { SORT_ORDER_NONE } from '../constants';
 
 export const ACTION_SET_SORTING = 'SET_SORTING';
@@ -16,7 +11,7 @@ export const ColumnDispatchContext = React.createContext<ColumnsDispatch | undef
 
 // We need to set the rest of the sorting to none when sorting a new header
 const setRestOfSortingState = (data: ColumnsDataState): ColumnsDataState =>
-  R.map((columnData) => {
+  R?.map((columnData) => {
     // Null sortOrder means that it's not sortable
     if (columnData.sortOrder === null) {
       return { ...columnData, sortOrder: null };

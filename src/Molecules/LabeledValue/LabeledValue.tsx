@@ -10,7 +10,7 @@ const StyledLabeledValue = styled.div`
 `;
 
 const StyledLabel = styled.div`
-  margin-bottom: ${p => p.theme.spacing.unit(1)}px;
+  margin-bottom: ${(p) => p.theme.spacing.unit(1)}px;
 `;
 
 export const LabeledValue: LabeledValueComponent = ({ children, className, label }) => {
@@ -19,7 +19,7 @@ export const LabeledValue: LabeledValueComponent = ({ children, className, label
       return label;
     }
     return (
-      <Typography type="secondary" color={t => t.color.label}>
+      <Typography type="secondary" color={(t) => t.color.label}>
         {label}
       </Typography>
     );

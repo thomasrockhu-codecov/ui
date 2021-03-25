@@ -1,10 +1,10 @@
-import React, { useEffect, useState, useRef } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import { useUIDSeed } from 'react-uid';
 import { RemoveScroll } from 'react-remove-scroll';
 import FocusLock from 'react-focus-lock';
 import styled from 'styled-components';
 import { motion } from 'framer-motion';
-import { DialogProps, BackdropProps, Props, BackdropWrapperProps } from './Modal.types';
+import { BackdropProps, BackdropWrapperProps, DialogProps, Props } from './Modal.types';
 import NormalizedElements from '../../common/NormalizedElements';
 import { isFunction } from '../../common/utils';
 import { Title } from './Title';

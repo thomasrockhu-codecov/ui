@@ -1,5 +1,5 @@
 import React from 'react';
-import { number, array } from '@storybook/addon-knobs';
+import { array, number } from '@storybook/addon-knobs';
 import ProgressBar from '.';
 import { Box, Flexbox } from '../..';
 

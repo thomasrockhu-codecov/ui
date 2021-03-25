@@ -1,8 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
 import * as R from 'ramda';
-import { FormLabel, Flexbox, Typography, FormField } from '../../..';
-import { RadioComponent, Props, InternalInputProps } from './Radio.types';
+import { Flexbox, FormField, FormLabel, Typography } from '../../..';
+import { InternalInputProps, Props, RadioComponent } from './Radio.types';
 import { isString } from '../../../common/utils';
 
 const RADIO_SIZE = 5;
@@ -13,10 +13,10 @@ const CleanInput = React.forwardRef((props: any, ref: React.Ref<HTMLInputElement
 ));
 
 const Circle = styled.div`
-  width: ${p => p.theme.spacing.unit(RADIO_SIZE) - 2}px;
-  height: ${p => p.theme.spacing.unit(RADIO_SIZE) - 2}px;
-  border: 1px solid ${p => p.theme.color.inputBorder};
-  background-color: ${p => p.theme.color.backgroundInput};
+  width: ${(p) => p.theme.spacing.unit(RADIO_SIZE) - 2}px;
+  height: ${(p) => p.theme.spacing.unit(RADIO_SIZE) - 2}px;
+  border: 1px solid ${(p) => p.theme.color.inputBorder};
+  background-color: ${(p) => p.theme.color.backgroundInput};
   position: relative;
   border-radius: 50%;
   flex-shrink: 0;
@@ -39,8 +39,8 @@ const Circle = styled.div`
   }
 
   &::after {
-    width: ${p => p.theme.spacing.unit(RADIO_SIZE - 2) - 1}px;
-    height: ${p => p.theme.spacing.unit(RADIO_SIZE - 2) - 1}px;
+    width: ${(p) => p.theme.spacing.unit(RADIO_SIZE - 2) - 1}px;
+    height: ${(p) => p.theme.spacing.unit(RADIO_SIZE - 2) - 1}px;
   }
 `;
 
@@ -48,7 +48,7 @@ const StyledFormLabel = styled(FormLabel)`
   position: relative;
 
   &:hover ${Circle} {
-    border-color: ${p => p.theme.color.inputBorderHover};
+    border-color: ${(p) => p.theme.color.inputBorderHover};
   }
 `;
 
@@ -60,19 +60,23 @@ const Input = styled(CleanInput).attrs(() => ({ type: 'radio' }))<InternalInputP
   cursor: pointer;
 
   &:checked + ${Circle} {
-    &::after {background: ${p => p.theme.color.cta};}
+    &::after {
+      background: ${(p) => p.theme.color.cta};
+    }
   }
 
   &[disabled] + ${Circle} {
-    border-color: ${p => p.theme.color.disabledBackground};
+    border-color: ${(p) => p.theme.color.disabledBackground};
   }
 
   &:checked[disabled] + ${Circle} {
-    border-color: ${p => p.theme.color.disabledBackground};
-    &::after {background: ${p => p.theme.color.disabledBackground};}
+    border-color: ${(p) => p.theme.color.disabledBackground};
+    &::after {
+      background: ${(p) => p.theme.color.disabledBackground};
+    }
   }
 
-  ${p =>
+  ${(p) =>
     p.hasError
       ? `
     & + ${Circle} {
@@ -84,17 +88,17 @@ const Input = styled(CleanInput).attrs(() => ({ type: 'radio' }))<InternalInputP
 
   &:focus + ${Circle} {
     &::before {
-      border: 1px solid ${p => p.theme.color.cta};
+      border: 1px solid ${(p) => p.theme.color.cta};
     }
   }
 `;
 
 const Label = styled(Typography)`
-  padding-left: ${p => p.theme.spacing.unit(2)}px;
+  padding-left: ${(p) => p.theme.spacing.unit(2)}px;
   white-space: initial;
 `;
 
-const Radio: RadioComponent = props => {
+const Radio: RadioComponent = (props) => {
   const {
     autoFocus,
     checked,
@@ -142,7 +146,7 @@ const Radio: RadioComponent = props => {
             }}
           />
           <Circle />
-          <Label type="secondary" color={t => (disabled ? t.color.disabledText : t.color.text)}>
+          <Label type="secondary" color={(t) => (disabled ? t.color.disabledText : t.color.text)}>
             {visuallyEmphasiseRequired ? `${label} *` : label}
           </Label>
         </Flexbox>
