@@ -1,9 +1,9 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { actions } from '@storybook/addon-actions';
 import { Box, Input } from '../../..';
 import { Display } from '../../../common/Display';
 
-// A bit laggy for now, let's optimize later
+// TODO: A bit laggy for now, let's optimize later
 const handlers = actions(
   'onBlur',
   'onClick',
@@ -45,7 +45,7 @@ withDefaultValueUncontrolledBehaviour.story = {
 
 export const errorIfEmptyText = () => {
   const Component = () => {
-    const [value, setValue] = React.useState('');
+    const [value, setValue] = useState('');
 
     return (
       <Input.Textarea
@@ -129,7 +129,7 @@ actionsStory.story = {
 };
 
 export const extraInfoBelow = () => (
-  <Input.Textarea label="Label" placeholder="Placeholder" extraInfo="Use wisely this space" />
+  <Input.Textarea label="Label" placeholder="Placeholder" extraInfo="Use this space wisely" />
 );
 
 extraInfoBelow.story = {
@@ -138,13 +138,13 @@ extraInfoBelow.story = {
 
 export const extraInfoWithError = () => {
   const Component = () => {
-    const [value, setValue] = React.useState('');
+    const [value, setValue] = useState('');
 
     return (
       <Input.Textarea
         label="My awesome text field"
         placeholder="This is a placeholder"
-        extraInfo="Use wisely this space"
+        extraInfo="Use this space wisely"
         onChange={(e) => setValue(e.target.value)}
         {...(value === '' ? { error: 'Enter text' } : {})}
       />

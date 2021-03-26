@@ -2,9 +2,9 @@ import React, { useState } from 'react';
 import styled from 'styled-components';
 import { assert } from '../../common/utils';
 import {
-  OverlayProps,
   ItemProps,
   MouseEventProps,
+  OverlayProps,
   SegmentedControlComponent,
 } from './SegmentedControl.types';
 import { Flexbox, Typography } from '../..';
@@ -40,7 +40,6 @@ const Button = styled.button`
   border: none;
   padding: 0;
   background-color: transparent;
-  outline: none;
   cursor: ${(p) => (p.disabled ? 'not-allowed' : 'pointer')};
 `;
 

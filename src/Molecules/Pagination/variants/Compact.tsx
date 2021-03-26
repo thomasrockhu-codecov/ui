@@ -10,7 +10,6 @@ const StyledButton = styled(Button)<{ $direction: 'left' | 'right' }>`
   border: none;
   padding: 0;
   background-color: transparent;
-  outline: none;
   flex-direction: row;
   justify-content: ${(p) => (p.$direction === 'left' ? 'flex-start' : 'flex-end')};
 `;

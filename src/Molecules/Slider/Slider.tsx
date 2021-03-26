@@ -72,10 +72,6 @@ const Container = styled.div<InternalProps>`
   align-items: center;
   height: ${(p) =>
     p.$variant === VARIANT_TYPES.SMALL ? `${THUMB_SMALL_PX}px` : `${THUMB_BIG_PX}px`};
-
-  &:focus {
-    outline: none;
-  }
 `;
 
 const Slider: Component = ({

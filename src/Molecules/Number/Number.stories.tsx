@@ -59,14 +59,14 @@ numberWith2Decimals.story = {
 
 export const numberWithMinMaxDigits = () => {
   return (
-    <div>
+    <>
       <Number value={10.378} maximumDecimals={2} />
       <Number value={10.1} minimumDecimals={2} />
       <Number value={10.333} minimumDecimals={2} maximumDecimals={4} />
       <Number value={10.1} minimumDecimals={2} maximumDecimals={4} />
       <Number value={10.66666} minimumDecimals={2} maximumDecimals={4} />
       <Number value={10} minimumDecimals={2} maximumDecimals={4} />
-    </div>
+    </>
   );
 };
 

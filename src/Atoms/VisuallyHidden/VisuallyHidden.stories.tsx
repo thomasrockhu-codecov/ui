@@ -1,4 +1,3 @@
-/* eslint-disable react/no-unescaped-entities */
 import React from 'react';
 import { VisuallyHidden } from '../..';
 
@@ -10,8 +9,8 @@ export default {
 };
 export const visuallyHiddenLabel = () => (
   <>
-    There's text here that's only displayed for screen readers:
-    <VisuallyHidden>I'm only shown for screen readers.</VisuallyHidden>
+    There&apos;s text here that&apos;s only displayed for screen readers:
+    <VisuallyHidden>I&apos;m only shown for screen readers.</VisuallyHidden>
   </>
 );
 

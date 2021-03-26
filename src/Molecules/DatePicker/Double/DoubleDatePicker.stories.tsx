@@ -15,7 +15,7 @@ const dateNow = new Date();
 
 export const Default = () => (
   <>
-    <Typography>Observe! Arrow navigation is yet to be implemented</Typography>
+    <Typography>Watch out! Arrow navigation is yet to be implemented</Typography>
     <DatePicker
       id="input-id"
       labelFrom="Label"
@@ -60,10 +60,10 @@ export const Controlled = () => {
     <>
       <Flexbox container gutter={2}>
         <Flexbox item>
-          <Button onClick={() => setStartDate(add(startDate, { days: 1 }))}>Next Date</Button>
+          <Button onClick={() => setStartDate(add(startDate, { days: 1 }))}>Next date</Button>
         </Flexbox>
         <Flexbox item>
-          <Button onClick={() => setEndDate(add(endDate, { days: 1 }))}>Next End Date</Button>
+          <Button onClick={() => setEndDate(add(endDate, { days: 1 }))}>Next end date</Button>
         </Flexbox>
       </Flexbox>
       <DatePicker

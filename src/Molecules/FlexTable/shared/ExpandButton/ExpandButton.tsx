@@ -5,9 +5,6 @@ import { Button, Icon, Media } from '../../../../index';
 const StyledButton = styled(Button)`
   flex: 1;
   justify-content: flex-end;
-  &:focus {
-    outline: none;
-  }
 `;
 
 const SmallScreenExpandButton: React.FC<{

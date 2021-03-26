@@ -31,7 +31,6 @@ const focusBorderStyles = css`
 `;
 
 const borderStyles = css<Pick<Props, 'error' | 'success'>>`
-  outline: none;
   border: 1px solid
     ${(p) => {
       if (hasError(p.error)) return p.theme.color.inputBorderError;
@@ -110,32 +109,30 @@ export const Textarea: React.FC<Props> & {
       )}
       required={visuallyEmphasiseRequired}
     >
-      <div>
-        <Typography type="secondary" color={(t) => t.color.text}>
-          <StyledTextarea
-            {...{
-              autoFocus,
-              defaultValue,
-              disabled,
-              error,
-              name,
-              onBlur,
-              onChange,
-              onClick,
-              onFocus,
-              onKeyDown,
-              onKeyPress,
-              onKeyUp,
-              placeholder,
-              required,
-              rows,
-              success,
-              value,
-            }}
-            {...(hasError(error) ? { 'aria-invalid': true } : {})}
-          />
-        </Typography>
-      </div>
+      <Typography type="secondary" color={(t) => t.color.text}>
+        <StyledTextarea
+          {...{
+            autoFocus,
+            defaultValue,
+            disabled,
+            error,
+            name,
+            onBlur,
+            onChange,
+            onClick,
+            onFocus,
+            onKeyDown,
+            onKeyPress,
+            onKeyUp,
+            placeholder,
+            required,
+            rows,
+            success,
+            value,
+          }}
+          {...(hasError(error) ? { 'aria-invalid': true } : {})}
+        />
+      </Typography>
     </FormField>
   );
 };

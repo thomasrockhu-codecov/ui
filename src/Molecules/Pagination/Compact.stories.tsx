@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { action } from '@storybook/addon-actions';
 import docs from './Pagination.mdx';
 import Pagination from './Pagination';
@@ -24,7 +24,7 @@ const CompactPagination = ({ totalItems = 10, itemsPerPage = 1 }) => (
 export const regular = () => <CompactPagination />;
 
 const ControlledCompactPagination = ({ totalItems = 10, itemsPerPage = 1 }) => {
-  const [currentPage, setCurrentPage] = React.useState(5);
+  const [currentPage, setCurrentPage] = useState(5);
 
   const onPageChange = (newPage: number) => {
     action('Page change')(newPage);

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useContext, useEffect, useState } from 'react';
 import styled, { ThemeContext } from 'styled-components';
 import R from 'ramda';
 
@@ -13,12 +13,12 @@ const StyledDiv = styled.div<{ query: Props['query'] }>`
   }
 `;
 const useMedia = (query: string | ((t: Theme) => string)) => {
-  const theme = React.useContext(ThemeContext);
-  const [matches, setMatches] = React.useState<boolean | null>(null);
+  const theme = useContext(ThemeContext);
+  const [matches, setMatches] = useState<boolean | null>(null);
   const mediaQuery = (typeof query === 'string' ? query : query(theme)).replace('@media ', '');
 
   // Effect won't run during SSR
-  React.useEffect(() => {
+  useEffect(() => {
     if (typeof window === 'undefined' || typeof window.matchMedia !== 'function') {
       return undefined;
     }

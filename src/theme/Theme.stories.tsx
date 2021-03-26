@@ -28,13 +28,13 @@ const colorWithValue = (color: string | string[]) =>
   typeof color === 'string' ? (
     <>
       <Color $color={color} />
-      <div>{color}</div>
+      <>{color}</>
     </>
   ) : (
     color?.map((c: string) => (
       <Flexbox container gutter={1}>
         <ColorInArray $color={c} />
-        <div>{c}</div>
+        <>{c}</>
       </Flexbox>
     ))
   );
@@ -76,7 +76,6 @@ colorsSemantic.story = {
 export const colorsPalette = () => {
   return (
     <>
-      {/* eslint-disable-next-line jsx-a11y/accessible-emoji */}
       <h1>⚠️ Internal object, use colors (semantic)</h1>
       <Display
         items={Object.entries(rawColor)?.map(([title, color]) => ({
@@ -84,7 +83,7 @@ export const colorsPalette = () => {
           component: (
             <>
               <Color $color={color} />
-              <div>{color}</div>
+              <>{color}</>
             </>
           ),
         }))}

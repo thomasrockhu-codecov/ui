@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 
 import { FeedbackBannerComponent, FeedbackBannerProps } from './FeedbackBanner.types';
-import { Icon, Typography, Flexbox } from '../..';
+import { Flexbox, Icon, Typography } from '../..';
 import { Theme } from '../../theme/theme.types';
 
 const getBorderColor = ({
@@ -55,7 +55,7 @@ export const FeedbackBanner: FeedbackBannerComponent = (props) => {
   return (
     <StyledContainer className={className} variant={variant}>
       <Flexbox container direction="row" alignItems="center" gutter={3}>
-        <span>{getIcon(variant)}</span>
+        <>{getIcon(variant)}</>
         <TextFlexbox container item direction="column">
           {title && (
             <Typography type="secondary" weight="bold">

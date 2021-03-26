@@ -1219,7 +1219,9 @@ exports[`Storyshots Atoms / Flag Different size  1`] = `
 `;
 
 exports[`Storyshots Atoms / Flag Inline 1`] = `
-.c0 {
+Array [
+  "You can put the ",
+  .c0 {
   height: 20px;
   box-sizing: border-box;
   display: inline-block;
@@ -1230,9 +1232,7 @@ exports[`Storyshots Atoms / Flag Inline 1`] = `
   overflow: hidden;
 }
 
-<span>
-  You can put the 
-  <svg
+<svg
     className="c0"
     focusable="false"
     role="img"
@@ -1270,9 +1270,9 @@ exports[`Storyshots Atoms / Flag Inline 1`] = `
     <title>
       Sweden
     </title>
-  </svg>
-   directly in the text with inline prop!
-</span>
+  </svg>,
+  " directly in the text with inline prop!",
+]
 `;
 
 exports[`Storyshots Atoms / Flag Renders nothing if wrong country code 1`] = `null`;

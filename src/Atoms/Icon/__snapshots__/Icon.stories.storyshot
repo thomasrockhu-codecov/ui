@@ -10343,7 +10343,9 @@ exports[`Storyshots Atoms / Icon Different size and fill 1`] = `
 `;
 
 exports[`Storyshots Atoms / Icon Inline 1`] = `
-.c0 {
+Array [
+  "You can put the ",
+  .c0 {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -10358,9 +10360,7 @@ exports[`Storyshots Atoms / Icon Inline 1`] = `
   vertical-align: middle;
 }
 
-<span>
-  You can put the 
-  <svg
+<svg
     aria-hidden="true"
     className="c0"
     focusable="false"
@@ -10371,9 +10371,9 @@ exports[`Storyshots Atoms / Icon Inline 1`] = `
     <polygon
       points="16.278 14 0 14 0 10 16.278 10 8.211 2 13.916 2 24 12 21.148 14.828 13.916 22 8.211 22"
     />
-  </svg>
-   directly in the text with inline prop!
-</span>
+  </svg>,
+  " directly in the text with inline prop!",
+]
 `;
 
 exports[`Storyshots Atoms / Icon Sort Arrow Ascending 1`] = `

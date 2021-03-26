@@ -1,4 +1,5 @@
-import * as React from 'react';
+/* eslint-disable react/no-array-index-key */
+import React from 'react';
 import styled from 'styled-components';
 import { Option } from './MultiSelectList';
 import { Display } from '../../../../../common/Display';
@@ -31,6 +32,7 @@ const DropdownBubbleWithPadding = styled(DropdownBubble)`
   padding-bottom: 12px;
   width: 300px;
 `;
+
 // @ts-ignore
 const Wrapper = (props) => (
   <DropdownBubbleWithPadding
@@ -41,6 +43,7 @@ const Wrapper = (props) => (
     <FadedScroll enableMobileFade>{props.children}</FadedScroll>
   </DropdownBubbleWithPadding>
 );
+
 export const listWithDifferentArrowPositions = () => (
   <Display
     items={[
@@ -54,7 +57,6 @@ export const listWithDifferentArrowPositions = () => (
               label="SecondSecondSecondSecondSecondSecondSecondSecondSecondSecondSecondSecondSecondSecondSecond"
             />
             {new Array(10).fill(null)?.map((_, i) => (
-              // eslint-disable-next-line react/no-array-index-key
               <Option key={i} value={i + 3} label="Disabled" disabled />
             ))}
           </Wrapper>
@@ -68,7 +70,6 @@ export const listWithDifferentArrowPositions = () => (
             <Option value={-1} label="Default?" />
             <Option value={0} label="First" selected />
             {new Array(10).fill(null)?.map((_, i) => (
-              // eslint-disable-next-line react/no-array-index-key
               <Option key={i} value={i + 2} label="Disabled" disabled />
             ))}
           </Wrapper>
@@ -82,7 +83,6 @@ export const listWithDifferentArrowPositions = () => (
             <Option value={0} label="First" selected />
             <Option value={2} label="Second" />
             {new Array(10).fill(null)?.map((_, i) => (
-              // eslint-disable-next-line react/no-array-index-key
               <Option key={i} value={i + 3} label="Disabled" disabled />
             ))}
           </Wrapper>
@@ -99,21 +99,18 @@ export const listWithDifferentArrowPositions = () => (
               label="SecondSecondSecondSecondSecondSecondSecondSecondSecondSecondSecondSecondSecondSecondSecond"
             />
             {new Array(10).fill(null)?.map((_, i) => (
-              // eslint-disable-next-line react/no-array-index-key
               <Option key={i} value={i + 3} label="Disabled" disabled />
             ))}
           </Wrapper>
         ),
         title: 'Placement Top, Arrow Default (right)',
       },
-
       {
         component: (
           <Wrapper position="left" placement="top">
             <Option value={-1} label="Default?" />
             <Option value={0} label="First" selected />
             {new Array(10).fill(null)?.map((_, i) => (
-              // eslint-disable-next-line react/no-array-index-key
               <Option key={i} value={i + 2} label="Disabled" disabled />
             ))}
           </Wrapper>
@@ -127,7 +124,6 @@ export const listWithDifferentArrowPositions = () => (
             <Option value={0} label="First" selected />
             <Option value={2} label="Second" />
             {new Array(10).fill(null)?.map((_, i) => (
-              // eslint-disable-next-line react/no-array-index-key
               <Option key={i} value={i + 3} label="Disabled" disabled />
             ))}
           </Wrapper>

@@ -1,6 +1,6 @@
 import { filter, mapObjIndexed, pipe, prop as Rprop, values } from 'ramda';
 import Color from 'color';
-import { assert, deprecate, isNumber } from '../common/utils'; // eslint-disable-line import/no-unresolved
+import { assert, deprecate, isNumber } from '../common/utils';
 import { RawColor, Theme, ThemeColors, ThemeColorsVersion, ThemeConfig } from './theme.types';
 
 // Export from here for showing in story,
@@ -347,7 +347,6 @@ const createColors = (type: ThemeColorsVersion): ThemeColors<typeof type> => {
   };
 };
 
-// eslint-disable-next-line @typescript-eslint/no-unused-vars
 export const createTheme = (config: ThemeConfig = {}): Theme => {
   const { a11yColors = false } = config;
   const type = a11yColors ? 'a11y' : 'default';

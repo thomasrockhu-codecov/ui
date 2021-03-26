@@ -1,4 +1,4 @@
-import * as React from 'react';
+import React from 'react';
 import styled from 'styled-components';
 
 import { useSelectMachineFromContext } from '../context';
@@ -6,7 +6,6 @@ import { Option } from '../../Select.types';
 
 const StyledListItemWrapper = styled.li`
   width: 100%;
-  outline: none;
 `;
 
 type ListItemComponent = React.ComponentType<{ index: number }>;

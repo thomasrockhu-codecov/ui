@@ -20,7 +20,7 @@ export const Rating: RatingComponent = ({ rating = 0, size = 5 }) => {
       <VisuallyHidden>{screenReaderText}</VisuallyHidden>
       {[...Array(5)]?.map((_, index) => (
         <Icon.Star
-          key={index} // eslint-disable-line react/no-array-index-key
+          key={`${size}${index}`} // eslint-disable-line react/no-array-index-key
           size={size}
           stroke={(t) => (index >= finalRating ? t.color.starRatingOff : t.color.starRating)}
           fill={(t) => (index >= finalRating ? t.color.starRatingOff : t.color.starRating)}

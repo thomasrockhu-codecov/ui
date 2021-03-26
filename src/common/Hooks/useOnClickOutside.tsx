@@ -1,10 +1,10 @@
-import * as React from 'react';
+import React, { useEffect } from 'react';
 
 export default function useOnClickOutside(
   _refs: React.MutableRefObject<any> | Array<React.MutableRefObject<any>>,
   handler: React.MouseEventHandler<any>,
 ) {
-  React.useEffect(() => {
+  useEffect(() => {
     const listener: React.EventHandler<any> = (event) => {
       const refs = Array.isArray(_refs) ? _refs : [_refs];
       // Do nothing if clicking ref's element or descendent elements

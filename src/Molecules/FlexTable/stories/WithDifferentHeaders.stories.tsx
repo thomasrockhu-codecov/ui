@@ -63,7 +63,7 @@ export const DefaultTableHeaders = () => {
 
   return (
     <StyledBackground>
-      <Typography type="title3">Table Header Variations</Typography>
+      <Typography type="title3">Table header variations</Typography>
       <DefaultTableHeadersExample />
     </StyledBackground>
   );
@@ -96,7 +96,7 @@ export const UncontrolledSortableHeaders = () => {
   };
   return (
     <StyledBackground>
-      <Typography type="title3">Uncontrolled Sortable Headers</Typography>
+      <Typography type="title3">Uncontrolled sortable headers</Typography>
       <UncontrolledSortableHeadersExample />
     </StyledBackground>
   );
@@ -158,7 +158,7 @@ export const ControlledSortableHeaders = () => {
 
   return (
     <StyledBackground>
-      <Typography type="title3">Controlled Sortable Headers</Typography>
+      <Typography type="title3">Controlled sortable headers</Typography>
       <ControlledSortableHeadersExample />
     </StyledBackground>
   );
@@ -226,7 +226,7 @@ export const SortableHeadersOnlyAscendingDescending = () => {
   };
   return (
     <StyledBackground>
-      <Typography type="title3">Sortable Headers – Only Ascending/Descending</Typography>
+      <Typography type="title3">Sortable headers – only ascending/descending</Typography>
       <SortableHeadersOnlyAscendingDescendingExample />
     </StyledBackground>
   );
@@ -255,7 +255,7 @@ export const SortableHeaderUncontrolledWithDifferentAlignment = () => {
   };
   return (
     <StyledBackground>
-      <Typography type="title3">Uncontrolled Sortable Headers With Different Alignments</Typography>
+      <Typography type="title3">Uncontrolled sortable headers with different alignments</Typography>
       <SortableUncontrolledHeaderWithDifferentAlignmentExample />
     </StyledBackground>
   );
@@ -304,7 +304,7 @@ export const StickyHeadersForDifferentScreenSizes = () => {
   };
   return (
     <StyledBackground>
-      <Typography type="title3">Sticky Headers For Different ScreenSizes</Typography>
+      <Typography type="title3">Sticky headers for different screen sizes</Typography>
       <StickyHeadersForDifferentScreenSizesExample />
     </StyledBackground>
   );

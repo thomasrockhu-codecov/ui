@@ -96,16 +96,13 @@ export const withValueControlledBehavior = () => {
           selected={value}
           onChange={() => setValue(!value)}
         />
-
         <button type="button" onClick={() => setValue(true)}>
           Selected
         </button>
-
         <button type="button" onClick={() => setValue(false)}>
           Not selected
         </button>
-
-        <span>value: {value.toString()}</span>
+        value: {value.toString()}
       </>
     );
   };

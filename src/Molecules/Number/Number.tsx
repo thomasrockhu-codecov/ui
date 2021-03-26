@@ -10,7 +10,6 @@ const getPrefix = (sign: boolean, value: number) => (sign && value > 0 ? '+' : '
 
 const getTickDecimals = (value: number, ticks: Ticks) => {
   if (process.env.NODE_ENV !== 'production') {
-    // @ts-ignore
     const wrongTick = ticks.find(R.or(R.has('from_price'), R.has('to_price')));
     assert(!wrongTick, `Found ticks with snake cased keys, they should be in camelcase.`);
   }

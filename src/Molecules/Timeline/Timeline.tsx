@@ -119,7 +119,7 @@ const Timeline: React.FC<Props> = ({ steps, colorSuccess, colorNext }) => {
         }
         return (
           <StyledListItem
-            /* eslint-disable-next-line react/no-array-index-key */
+            // eslint-disable-next-line react/no-array-index-key
             key={`${date}_${index}`}
             previousStatus={previousStatus}
             currentStatus={status}

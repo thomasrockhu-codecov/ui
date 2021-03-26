@@ -1,4 +1,4 @@
-import React, { useMemo } from 'react';
+import React, { useCallback, useContext, useEffect, useMemo, useRef } from 'react';
 import { useMachine } from '@xstate/react';
 import styled from 'styled-components';
 import R from 'ramda';
@@ -65,7 +65,7 @@ const Select = (props: Props) => {
     `Input.Select: You can't use 'value' prop without onChange. It makes sense only if you want a readonly Input.Select, which is really weird. Don't do that.`,
   );
 
-  const trackContext = React.useContext(TrackingContext);
+  const trackContext = useContext(TrackingContext);
 
   const isFirstRender = useIsFirstRender();
 
@@ -105,9 +105,9 @@ const Select = (props: Props) => {
   const [machineState, send, service] = machineHandlers;
 
   /******      Tracking      ******/
-  const currentPropsRef = React.useRef(props);
+  const currentPropsRef = useRef(props);
   currentPropsRef.current = props;
-  React.useEffect(() => {
+  useEffect(() => {
     const listener = (e: any) =>
       trackContext && trackContext.track('Input.Select', e as any, currentPropsRef.current);
 
@@ -118,7 +118,7 @@ const Select = (props: Props) => {
     };
   }, [trackContext, service]);
 
-  React.useEffect(() => {
+  useEffect(() => {
     if (!props.onSearchQueryChange) return;
     const listener = (e: { type: string; payload: string }) =>
       e.type === ACTION_TYPES.SEARCH_QUERY_UPDATE && props.onSearchQueryChange!(e);
@@ -185,20 +185,20 @@ const Select = (props: Props) => {
     'interaction.enabled.active.navigation.keyboard',
   );
 
-  const handleMouseMove = React.useCallback(() => {
+  const handleMouseMove = useCallback(() => {
     if (isKeyboardNavigation) {
       send('MOUSE_MOVE');
     }
   }, [send, isKeyboardNavigation]);
 
   /******      Refs      ******/
-  const buttonRef = React.useRef(null);
+  const buttonRef = useRef(null);
   const [itemRefs, setItemRef] = useMultiRef();
-  const listRef = React.useRef(null);
-  const formFieldRef = React.useRef(null);
-  const selectWrapperRef = React.useRef(null);
-  const inputRef = React.useRef(null);
-  const searchRef = React.useRef(null);
+  const listRef = useRef(null);
+  const formFieldRef = useRef(null);
+  const selectWrapperRef = useRef(null);
+  const inputRef = useRef(null);
+  const searchRef = useRef(null);
 
   /******      Focus management      ******/
   useAutofocus(buttonRef, props.autoFocus);

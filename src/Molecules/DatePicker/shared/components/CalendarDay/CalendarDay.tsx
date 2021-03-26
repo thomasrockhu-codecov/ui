@@ -33,12 +33,10 @@ const StyledCalendarDay = styled(Box)<{
         background: ${theme.color.shadowInput};
 
         &:focus {
-          outline: none;
           border: 1px solid ${theme.color.inputBorder};
         }`
       : `
       &:focus {
-        outline: none;
         border: 1px solid ${theme.color.cta};
       }
 

@@ -210,10 +210,6 @@ exports[`Storyshots Molecules / FlexTable / With Custom Cells Bold Cells 1`] = `
   justify-content: flex-end;
 }
 
-.c18:focus {
-  outline: none;
-}
-
 .c16 {
   padding-top: 0 !important;
   padding-bottom: 0;
@@ -789,10 +785,6 @@ exports[`Storyshots Molecules / FlexTable / With Custom Cells Custom Cells 1`] =
   justify-content: flex-end;
 }
 
-.c27:focus {
-  outline: none;
-}
-
 .c25 {
   padding-top: 0 !important;
   padding-bottom: 0;
@@ -991,7 +983,7 @@ exports[`Storyshots Molecules / FlexTable / With Custom Cells Custom Cells 1`] =
               <span
                 className="c8 c9"
               >
-                Transferable Quantity
+                Transferable quantity
               </span>
             </div>
           </div>

@@ -36,7 +36,6 @@ const focusBorderStyles = css`
 `;
 
 const borderStyles = css<Pick<Props, 'error' | 'success' | 'disabled' | 'variant'>>`
-  outline: none;
   border: solid;
   border-color: ${(p) => {
     if (hasError(p.error)) return p.theme.color.inputBorderError;

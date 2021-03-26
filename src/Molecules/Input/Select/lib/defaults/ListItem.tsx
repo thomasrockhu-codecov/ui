@@ -1,4 +1,4 @@
-import * as React from 'react';
+import React from 'react';
 import { useSelectMachineFromContext } from '../context';
 import { Optgroup, Option } from '../SingleSelectList/SingleSelectList';
 

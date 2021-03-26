@@ -14,9 +14,9 @@ defaultUse.story = {
 };
 
 export const inlineStory = () => (
-  <span>
+  <>
     You can put the <Icon.ArrowRight inline /> directly in the text with inline prop!
-  </span>
+  </>
 );
 
 export const thinArrowUp = () => (

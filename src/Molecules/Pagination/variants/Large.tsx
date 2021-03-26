@@ -14,8 +14,6 @@ const StyledButton = styled(Button)<{ $type: 'chevron' | 'page-item'; $isCurrent
   justify-content: center;
   align-items: center;
   background-color: transparent;
-  outline: none;
-
   ${({ $type, $isCurrentPage, theme }) =>
     $type === 'page-item' &&
     $isCurrentPage &&

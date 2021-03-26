@@ -24,25 +24,25 @@ const StyledDiv = styled.div`
 export const defaultStory = () => (
   <>
     <StyledDiv>
-      <span>Default delays</span>
+      Default delays
       <Tooltip label={label} position="top">
         <Button type="button">Hover me</Button>
       </Tooltip>
     </StyledDiv>
     <StyledDiv>
-      <span>Open delay: 2000ms; Close delay: 3000ms</span>
+      Open delay: 2000ms; Close delay: 3000ms
       <Tooltip label={label} position="top" openDelay={2000} closeDelay={3000}>
         <Button type="button">Hover me</Button>
       </Tooltip>
     </StyledDiv>
     <StyledDiv>
-      <span>Open delay: 10ms; Close delay: 10ms</span>
+      Open delay: 10ms; Close delay: 10ms
       <Tooltip label={label} position="top" openDelay={10} closeDelay={10}>
         <Button type="button">Hover me</Button>
       </Tooltip>
     </StyledDiv>
     <StyledDiv>
-      <span>Open delay: 0ms; Close delay: 0ms</span>
+      Open delay: 0ms; Close delay: 0ms
       <Tooltip label={label} position="top" openDelay={0} closeDelay={0}>
         <Button type="button">Hover me</Button>
       </Tooltip>

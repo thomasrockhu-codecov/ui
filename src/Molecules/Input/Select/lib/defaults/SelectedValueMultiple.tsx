@@ -1,4 +1,4 @@
-import * as React from 'react';
+import React, { useEffect } from 'react';
 import styled from 'styled-components';
 import { assert } from '../../../../../common/utils';
 import { Box } from '../../../../..';
@@ -18,7 +18,7 @@ const StyledFlexedBox = styled(Box)`
 `;
 
 export const SelectedValue = () => {
-  React.useEffect(() => {
+  useEffect(() => {
     assert(
       false,
       'Input.Select: You probably want to redefine default SelectedValue message for your case.',

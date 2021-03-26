@@ -35,7 +35,6 @@ const Button = styled.button`
   background-color: transparent;
   cursor: pointer;
   text-align: start;
-  outline: none;
 `;
 
 const IconWrapper = styled.div`

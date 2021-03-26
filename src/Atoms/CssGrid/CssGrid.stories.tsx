@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import styled from 'styled-components';
 import { action } from '@storybook/addon-actions';
 import docs from './CssGrid.mdx';
@@ -15,11 +15,11 @@ const StyledContent = styled.div`
 const Content = ({ children }: any) => <StyledContent>{children}</StyledContent>;
 
 const ComponentThatDoesSomethingOnMount = () => {
-  React.useEffect(action('mounted'), []);
+  useEffect(action('mounted'), []);
   return (
-    <div>
+    <>
       This item is mounted and stays mounted no matter what. However, it&lsquo;d be hidden with css
-    </div>
+    </>
   );
 };
 

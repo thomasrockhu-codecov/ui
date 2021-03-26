@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useMemo } from 'react';
 import R from 'ramda';
 import styled, { css, withTheme } from 'styled-components';
 import { Theme } from '../../theme/theme.types';
@@ -372,7 +372,7 @@ const RawCSSGridContainer: React.FC<Props & { theme: Theme }> = ({ theme, childr
   const { sm, md, lg, xl } = props;
 
   type SizeAreaTuple = [undefined | Size, { areas: Props['areas'] }];
-  const stylesFnsForChild = React.useMemo(
+  const stylesFnsForChild = useMemo(
     () =>
       ([
         [undefined, { areas: props.areas } as any],

@@ -1,13 +1,13 @@
-import React from 'react';
+import React, { useState } from 'react';
 import styled from 'styled-components';
-import { Typography, CollapsibleCard } from '../..';
+import { CollapsibleCard, Typography } from '../..';
 
 const styledText = styled.p`
   margin: 0;
 `;
 
 const ExampleWithOnClick = () => {
-  const [clicked, setClicked] = React.useState(0);
+  const [clicked, setClicked] = useState(0);
   return (
     <CollapsibleCard
       title={`I've been clicked ${clicked} times`}
@@ -62,7 +62,7 @@ collapsedInitially.story = {
 
 export const collapsibleWithCustomComponentAsTitle = () => {
   return (
-    <CollapsibleCard title={<div>Custom title</div>}>
+    <CollapsibleCard title={<>Custom title</>}>
       <Typography type="primary" as={styledText}>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
         labore et dolore magna aliqua.

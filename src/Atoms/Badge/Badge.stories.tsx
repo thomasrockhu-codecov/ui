@@ -87,7 +87,7 @@ export const CommonBadges = () => {
 export const BadgeWithNumberLimit = () => {
   return (
     <>
-      <Typography type="title2">Number With Limit</Typography>
+      <Typography type="title2">Number with limit</Typography>
       <Box my={2}>
         <Badge>{numberWithLimit(1234567, 99)}</Badge>
       </Box>
@@ -101,18 +101,18 @@ export const JSXAsChild = () => {
       <Typography type="title2">Component as child</Typography>
       <Box my={2}>
         <Badge color={(t) => t.color.textLight}>
-          <span>
+          <>
             <Typography type="title3" color={(t) => t.color.textLight}>
               8
             </Typography>
             <Typography type="tertiary" color={(t) => t.color.textLight}>
               %
             </Typography>
-          </span>
+          </>
         </Badge>
       </Box>
       <Typography as="p" type="caption">
-        * Observe, up to developer to set child component font (family, size, etc.)
+        * It&apos;s up to developer to set child component font (family, size, etc.)
       </Typography>
     </>
   );
@@ -132,7 +132,7 @@ export const FunctionAsChild = () => {
         </Badge>
       </Box>
       <Typography as="p" type="caption">
-        * Observe, up to developer to set child function font (family, size, etc.)
+        * It&apos;s up to developer to set child function font (family, size, etc.)
       </Typography>
     </>
   );

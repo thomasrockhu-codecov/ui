@@ -1,4 +1,4 @@
-import * as React from 'react';
+import React from 'react';
 import styled from 'styled-components';
 import { Box, DropdownBubble, FadedScroll, List as UIList, Separator } from '../../../../..';
 import { useMedia } from '../../../../../Atoms/Media';

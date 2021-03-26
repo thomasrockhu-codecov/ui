@@ -1,4 +1,4 @@
-import * as React from 'react';
+import React from 'react';
 import styled, { css } from 'styled-components';
 import { Flexbox, FormField, Icon } from '../../../../..';
 import { Props } from '../../Select.types';
@@ -47,7 +47,6 @@ const focusBorderStyles = css`
 const hasError = (error?: Props['error']) => error && error !== '';
 
 const borderStyles = css<Pick<Props, 'error' | 'success'>>`
-  outline: none;
   border: 1px solid
     ${(p) => {
       if (hasError(p.error)) return p.theme.color.inputBorderError;

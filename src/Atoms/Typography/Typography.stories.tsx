@@ -1,4 +1,3 @@
-/* eslint-disable react/no-unescaped-entities */
 import React from 'react';
 
 import { Flexbox, Typography } from '../..';
@@ -220,7 +219,7 @@ export const ariaAttributes = () => (
     items={[
       {
         title: 'with aria-hidden',
-        component: <Typography aria-hidden>I'm hidden</Typography>,
+        component: <Typography aria-hidden>I&apos;m hidden</Typography>,
       },
     ]}
   />
