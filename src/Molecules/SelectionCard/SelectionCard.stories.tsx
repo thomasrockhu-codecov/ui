@@ -5,6 +5,14 @@ import styled from 'styled-components';
 import { Flexbox, Icon, Typography } from '../..';
 import { SelectionCard } from './SelectionCard';
 
+export default {
+  title: 'Molecules / SelectionCard',
+  parameters: {
+    component: SelectionCard,
+  },
+  decorators: [withKnobs],
+};
+
 const StyledFlexbox = styled(Flexbox)`
   width: 100%;
 `;
@@ -23,14 +31,6 @@ const getCardProps = () => ({
   horizontal: boolean('Horizontal', false),
   error: boolean('Error', false),
 });
-
-export default {
-  title: 'Molecules | SelectionCard',
-  parameters: {
-    component: SelectionCard,
-  },
-  decorators: [withKnobs],
-};
 
 export const SelectionCardDefault = () => (
   <SelectionCard {...getCardProps()} title="Selection Card Default" onChange={onChange} />
