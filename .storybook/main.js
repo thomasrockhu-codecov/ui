@@ -6,7 +6,6 @@ const storiesDir = process.env.STORYBOOK_DIRECTORY
   : srcPath;
 
 module.exports = {
-  mode: 'none', // add conditionally development / production
   stories: ['../docs/**/*.stories.mdx', path.join(storiesDir, '**/*.stories.@(js|jsx|ts|tsx|mdx)')],
   addons: [
     '@storybook/addon-storysource',

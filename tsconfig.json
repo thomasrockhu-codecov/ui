@@ -1,6 +1,5 @@
 {
   "compilerOptions": {
-    "module": "commonjs", // maybe needed, maybe not
     "target": "es2018",
     "lib": ["es2018", "dom"],
     "allowJs": false,
