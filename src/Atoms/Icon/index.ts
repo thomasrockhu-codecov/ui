@@ -3,7 +3,7 @@ import { AddWithCircle } from './components/AddWithCircle';
 import { Apartment } from './components/Apartment';
 import { Archive } from './components/Archive';
 import { ArrowRight } from './components/ArrowRight';
-import { Attachement } from './components/Attachement';
+import { Attachment } from './components/Attachment';
 import { Bank } from './components/Bank';
 import { BankDeposit } from './components/BankDeposit';
 import { BankID } from './components/BankID';
@@ -132,7 +132,7 @@ export default {
   Apartment,
   Archive,
   ArrowRight,
-  Attachement,
+  Attachment,
   Bank,
   BankDeposit,
   BankID,

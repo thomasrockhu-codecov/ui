@@ -366,7 +366,7 @@ export const createTheme = (config: ThemeConfig = {}): Theme => {
     gutter: GUTTER,
   };
 
-  const theme: Theme = {
+  return {
     animation: {
       easing: {},
       duration: {},
@@ -403,5 +403,4 @@ export const createTheme = (config: ThemeConfig = {}): Theme => {
     spacing,
     zIndex,
   };
-  return theme;
 };

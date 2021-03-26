@@ -142,7 +142,7 @@ export const cssGridWithDifferentGutterOnDifferentScreenSizes = () => (
       </Content>
     </Grid.Item>
     <Grid.Item area="non-existing">
-      <Content>something that doesn&lsquo;t exist</Content>
+      <Content>something that doesn&apos;t exist</Content>
     </Grid.Item>
   </Grid.Container>
 );
@@ -325,7 +325,7 @@ export const shownOnMdHiddenOnSmallScreens = () => (
       </Content>
     </Grid.Item>
     <Grid.Item area="non-existing">
-      <Content>something that doesn&lsquo;t exist</Content>
+      <Content>something that doesn&apos;t exist</Content>
     </Grid.Item>
   </Grid.Container>
 );
@@ -375,7 +375,7 @@ export const shownOnSmallScreenSizesHiddenOnMd = () => (
       </Content>
     </Grid.Item>
     <Grid.Item area="non-existing">
-      <Content>something that doesn&lsquo;t exist</Content>
+      <Content>something that doesn&apos;t exist</Content>
     </Grid.Item>
   </Grid.Container>
 );

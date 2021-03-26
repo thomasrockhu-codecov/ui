@@ -109,7 +109,7 @@ export const integrationCardWithTitleWithCustomComponentAsTitle = () => {
       </Flexbox>
       <Flexbox item>
         <Typography type="secondary" color={(t) => t.color.text} weight="bold">
-          Marknadsöversikt (Not Really a link)
+          Marknadsöversikt (not really a link)
         </Typography>
         <PaddedIcon inline color={(t) => t.color.cta} size={3} />
       </Flexbox>

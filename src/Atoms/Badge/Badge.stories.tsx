@@ -252,7 +252,7 @@ export const BadgeWithAnimation = () => {
       </Box>
       <Box pb={5}>
         <Typography type="title2">
-          Badge with animation, but without inital animation example
+          Badge with animation, but without initial animation example
         </Typography>
         <Box py={3}>
           <StyledFlexbox container justifyContent="space-between">

@@ -23,7 +23,9 @@ test('Single select without custom components', async () => {
     <ThemeProvider theme={theme}>
       <Select
         id={INPUT_ID}
-        options={new Array(3).fill(null)?.map((_, i) => ({ label: `${testMessage}${i}`, value: i }))}
+        options={new Array(3)
+          .fill(null)
+          ?.map((_, i) => ({ label: `${testMessage}${i}`, value: i }))}
         label="Label"
         placeholder="Placeholder"
       />
@@ -354,8 +356,7 @@ test('Props changes are propagated', () => {
       <Select
         {...commonProps}
         value={[{ label: `${testMessage}0`, value: 0 }]}
-        onChange={() => {
-        }}
+        onChange={() => {}}
       />
     </ThemeProvider>,
   );

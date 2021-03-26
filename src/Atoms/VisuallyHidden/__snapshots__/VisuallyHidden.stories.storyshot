@@ -2,7 +2,7 @@
 
 exports[`Storyshots Atoms / VisuallyHidden Visually hidden label 1`] = `
 Array [
-  "There's text here that's only displayed for screenreaders:",
+  "There's text here that's only displayed for screen readers:",
   .c0 {
   position: absolute;
   height: 1px;
@@ -15,7 +15,7 @@ Array [
 <div
     className="c0"
   >
-    I'm only shown for screenreaders.
+    I'm only shown for screen readers.
   </div>,
 ]
 `;

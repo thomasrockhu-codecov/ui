@@ -50,7 +50,7 @@ export type Context = {
   visibleOptions: Array<any>;
   id: string;
   valueFromProps: Array<any>;
-  uncommitedSelectedItems: Array<any>;
+  uncommittedSelectedItems: Array<any>;
   actions: Array<Action>;
 };
 
@@ -77,7 +77,7 @@ export const SelectMachine = Machine<Context>(
       visibleOptions: [] as Array<any>,
       id: 'id-from-props',
       valueFromProps: [] as Array<any>,
-      uncommitedSelectedItems: [] as Array<any>,
+      uncommittedSelectedItems: [] as Array<any>,
     },
     on: {
       [ACTION_TYPES.SYNC]: {
@@ -551,15 +551,12 @@ export const SelectMachine = Machine<Context>(
       }),
       updateVisibleOptions: assign<Context>({
         visibleOptions: (ctx, e) => {
-          const newOptions = ctx.options.filter((x) =>
-            x.label.toLowerCase().includes(e.payload.toLowerCase()),
-          );
-          return newOptions;
+          return ctx.options.filter((x) => x.label.toLowerCase().includes(e.payload.toLowerCase()));
         },
       }),
 
       updateUncommittedItems: assign<Context>({
-        uncommitedSelectedItems: (ctx, e) => {
+        uncommittedSelectedItems: (ctx, e) => {
           if (ctx.multiselect) {
             if (e.type === ACTION_TYPES.SELECT_ITEM) {
               const activeOptions = ctx.options.filter((x) => !x.disabled);
@@ -590,11 +587,11 @@ export const SelectMachine = Machine<Context>(
       }),
 
       commitSelectedItems: assign<Context>({
-        selectedItems: (ctx) => ctx.uncommitedSelectedItems,
-        uncommitedSelectedItems: [],
+        selectedItems: (ctx) => ctx.uncommittedSelectedItems,
+        uncommittedSelectedItems: [],
       }),
       uncommitSelectedItems: assign<Context>({
-        uncommitedSelectedItems: [],
+        uncommittedSelectedItems: [],
       }),
       forceValueFromProps: assign<Context>({ selectedItems: (ctx) => ctx.valueFromProps }),
     } as any,

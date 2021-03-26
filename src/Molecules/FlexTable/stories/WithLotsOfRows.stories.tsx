@@ -70,7 +70,7 @@ export const BigTable = () => {
           return tableData;
         }
         const getValue = (rowData: any) => rowData[sort.columnId.replace('column', 'value')].value;
-        const sorted = tableData.slice(0).sort((rowA, rowB) => {
+        return tableData.slice(0).sort((rowA, rowB) => {
           if (sort.sortOrder === 'ascending') {
             return getValue(rowB).localeCompare(getValue(rowA));
           }
@@ -81,7 +81,6 @@ export const BigTable = () => {
 
           return 0;
         });
-        return sorted;
       }, [tableData, sort]);
 
       return (
@@ -157,7 +156,7 @@ export const VirtualizedTable = () => {
           return tableData;
         }
         const getValue = (rowData: any) => rowData[sort.columnId.replace('column', 'value')].value;
-        const sorted = tableData.slice(0).sort((rowA, rowB) => {
+        return tableData.slice(0).sort((rowA, rowB) => {
           if (sort.sortOrder === 'ascending') {
             return getValue(rowB).localeCompare(getValue(rowA));
           }
@@ -168,7 +167,6 @@ export const VirtualizedTable = () => {
 
           return 0;
         });
-        return sorted;
       }, [tableData, sort]);
 
       return (

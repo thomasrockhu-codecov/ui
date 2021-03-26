@@ -10,8 +10,8 @@ export default {
 };
 export const visuallyHiddenLabel = () => (
   <>
-    There's text here that's only displayed for screenreaders:
-    <VisuallyHidden>I'm only shown for screenreaders.</VisuallyHidden>
+    There's text here that's only displayed for screen readers:
+    <VisuallyHidden>I'm only shown for screen readers.</VisuallyHidden>
   </>
 );
 

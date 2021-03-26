@@ -6,7 +6,7 @@ import { isBefore, isSameDay, startOfDay } from 'date-fns';
 import { Props } from './DoubleDatePicker.types';
 
 /**
- * Imported seperately because when imported in src/index.ts, Input will not have been imported yet and an error will be thrown
+ * Imported separately because when imported in src/index.ts, Input will not have been imported yet and an error will be thrown
  */
 import Input from '../../Input';
 import { Box, DropdownBubble, Flexbox, Icon } from '../../..';

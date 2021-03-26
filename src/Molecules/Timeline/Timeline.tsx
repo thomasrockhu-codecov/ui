@@ -50,16 +50,16 @@ const lineStyles = (status: StepProps['status'], props: any) => {
     width: 2px;
     z-index: 1;
     background: ${(() => {
-    switch (status) {
-      case 'NEUTRAL':
-      case 'ACTIVE':
-      case 'FAILURE':
-        return colorNext ? colorNext(theme) : theme.color.timelineNext;
-      case 'SUCCESS':
-      default:
-        return colorSuccess ? colorSuccess(theme) : theme.color.timelineSuccess;
-    }
-  })()};
+      switch (status) {
+        case 'NEUTRAL':
+        case 'ACTIVE':
+        case 'FAILURE':
+          return colorNext ? colorNext(theme) : theme.color.timelineNext;
+        case 'SUCCESS':
+        default:
+          return colorSuccess ? colorSuccess(theme) : theme.color.timelineSuccess;
+      }
+    })()};
   `;
 };
 

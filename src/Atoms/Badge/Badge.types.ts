@@ -1,5 +1,5 @@
 import React from 'react';
-import { ColorFn } from '../../common/Types/sharedTypes';
+import { ColorFn } from '../../common/Types';
 
 type HtmlProps = {} & Omit<React.HTMLProps<HTMLSpanElement>, 'color'>;
 

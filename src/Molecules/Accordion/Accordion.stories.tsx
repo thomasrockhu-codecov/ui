@@ -22,7 +22,7 @@ const ExampleContent = () => (
 
 const exampleFooter = (
   <Typography as="p" type="secondary" weight="bold">
-    Did not find what you look for? ...Thats a shame. <Spinner id="shame" />
+    Did not find what you look for? ...That&apos;s a shame. <Spinner id="shame" />
   </Typography>
 );
 

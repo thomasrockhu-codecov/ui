@@ -3,15 +3,15 @@ import R from 'ramda';
 import styled, { css, withTheme } from 'styled-components';
 import { Theme } from '../../theme/theme.types';
 import {
-  Props,
+  AreaInfo,
   Gutter,
+  ItemProps,
+  Props,
+  Size,
   TemplateColumn,
   TemplateRow,
-  ItemProps,
-  AreaInfo,
-  Size,
 } from './CssGrid.types';
-import { isUndefined, assert } from '../../common/utils';
+import { assert, isUndefined } from '../../common/utils';
 import { getAreasInfo, getMsRawTemplateColumnOrRowStyles } from './utils';
 
 const formatAreas = (areas: Props['areas']) =>
@@ -43,8 +43,8 @@ const getGutterStyles = (props: { gutter: Gutter; theme: Theme }) => {
   }
 
   return `
-    ${`column-gap: ${theme.spacing.unit(col)}px;`};
-    ${`row-gap: ${theme.spacing.unit(row)}px;`};
+    column-gap: ${theme.spacing.unit(col)}px;;
+    row-gap: ${theme.spacing.unit(row)}px;;
   `;
 };
 
@@ -327,7 +327,21 @@ export const CssGridItem: React.FC<ItemProps> = ({
   md,
   lg,
   xl,
-}) => <RawCssGridItem {...{ align, area, children, justify, place, sm, md, lg, xl }} />;
+}) => (
+  <RawCssGridItem
+    {...{
+      align,
+      area,
+      children,
+      justify,
+      place,
+      sm,
+      md,
+      lg,
+      xl,
+    }}
+  />
+);
 CssGridItem.displayName = 'CssGrid.Item';
 
 const generateChildStyles = (areasInfo: Record<string, AreaInfo>, size: Size, theme: Theme) => (

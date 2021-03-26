@@ -10,7 +10,13 @@ import enLocale from 'date-fns/locale/en-US';
 import nbLocale from 'date-fns/locale/nb';
 import daLocale from 'date-fns/locale/da';
 import fiLocale from 'date-fns/locale/fi';
-import { addWeeks, differenceInCalendarDays, differenceInCalendarWeeks, isMatch, parse } from 'date-fns';
+import {
+  addWeeks,
+  differenceInCalendarDays,
+  differenceInCalendarWeeks,
+  isMatch,
+  parse,
+} from 'date-fns';
 import { capitalize } from './textUtils';
 
 type Options = {

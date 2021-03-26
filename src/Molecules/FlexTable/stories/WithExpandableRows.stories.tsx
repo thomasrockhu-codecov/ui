@@ -20,7 +20,7 @@ const expandedItemsGenerator = (renderComponent = false) =>
     // Make the first item really long
     if (itemIndex === 0) {
       const label = 'This is a reaaaallllyyy loooong label demonstrating truncation';
-      const value = 'This valuues is super long to also demonstrate truncation';
+      const value = 'These values are super long to also demonstrate truncation';
       return [...acc, { label, value }];
     }
     const keyName = `${itemIndex + 1}`;
@@ -311,7 +311,7 @@ export const HiddenExpandItemOnDesktop = () => {
   );
 };
 
-export const WholeRowExpandalbeTable = () => {
+export const WholeRowExpandableTable = () => {
   const expandItemsText = expandedItemsGenerator();
   return (
     <div>
@@ -369,7 +369,7 @@ export const WholeRowExpandalbeTable = () => {
   );
 };
 
-export const ControlledWholeRowExpandalbeTable = () => {
+export const ControlledWholeRowExpandableTable = () => {
   // @ts-ignore
   const ControlledRow: RowComponent = ({ children, ...rowProps }) => {
     const [expanded, setExpanded] = useState(false);

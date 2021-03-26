@@ -2,7 +2,7 @@ import React from 'react';
 import { IconBase } from '../IconBase';
 import { BaseProps } from '../IconBase.types';
 
-export const Attachement = (props: BaseProps) => {
+export const Attachment = (props: BaseProps) => {
   return (
     <IconBase {...props}>
       <path
@@ -13,4 +13,4 @@ export const Attachement = (props: BaseProps) => {
   );
 };
 
-Attachement.displayName = 'Icon.Attachement';
+Attachment.displayName = 'Icon.Attachment';

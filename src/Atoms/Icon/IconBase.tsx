@@ -15,17 +15,15 @@ export const getColor = (
       return colorFnOrColor(theme);
     }
 
-    if (typeof colorFnOrColor === 'string') {
-      if (ALLOWED_COLOR_STRINGS.includes(colorFnOrColor)) {
-        return colorFnOrColor;
-      }
-      assert(
-        ALLOWED_COLOR_STRINGS.includes(colorFnOrColor),
-        `Incorrect string value for color, use t => t.color.<some color> instead. Allowed string values are: ${ALLOWED_COLOR_STRINGS.join(
-          ', ',
-        )}.`,
-      );
+    if (ALLOWED_COLOR_STRINGS.includes(colorFnOrColor)) {
+      return colorFnOrColor;
     }
+    assert(
+      ALLOWED_COLOR_STRINGS.includes(colorFnOrColor),
+      `Incorrect string value for color, use t => t.color.<some color> instead. Allowed string values are: ${ALLOWED_COLOR_STRINGS.join(
+        ', ',
+      )}.`,
+    );
   }
   return defaultColor;
 };

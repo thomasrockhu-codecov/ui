@@ -15,7 +15,7 @@ export const SharevilleLogo = (
 ) => {
   assert(
     Boolean(props.id),
-    'Icon.SharevilleLogo should have id provided because of Chrome being unable to diffrenetiate between defs with same ids',
+    'Icon.SharevilleLogo should have id provided because of Chrome being unable to differentiate between defs with same ids',
   );
   return (
     <IconBase viewBox="0 0 166.54 203.5" {...props} title="Shareville">

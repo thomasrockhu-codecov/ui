@@ -5,7 +5,10 @@ import { addMonths, isSameDay, isSameMonth, isWithinInterval, subMonths } from '
 import { Box, Flexbox, Typography } from '../../../..';
 import { getCalendar, getCalendarIndex, getLocale, newDate } from '../../shared/dateUtils';
 import { Props } from './Calendar.types';
-import { NUMBER_OF_VISIBLE_WEEKDAYS_SINGLE, NUMBER_OF_VISIBLE_WEEKS_SINGLE } from '../../shared/constants';
+import {
+  NUMBER_OF_VISIBLE_WEEKDAYS_SINGLE,
+  NUMBER_OF_VISIBLE_WEEKS_SINGLE,
+} from '../../shared/constants';
 import CalendarDay from '../../shared/components/CalendarDay';
 
 export const StyledBox = styled(Box)`
@@ -17,16 +20,16 @@ export const StyledBox = styled(Box)`
 `;
 
 const Calendar: React.FC<Props> = ({
-                                     disableDate,
-                                     enableDate,
-                                     locale,
-                                     viewedDate,
-                                     setViewedDate,
-                                     onClick,
-                                     selectedDate,
-                                     selectedEndDate,
-                                     focusedState,
-                                   }) => {
+  disableDate,
+  enableDate,
+  locale,
+  viewedDate,
+  setViewedDate,
+  onClick,
+  selectedDate,
+  selectedEndDate,
+  focusedState,
+}) => {
   const [[focusedWeek, focusedDay], setFocused] = focusedState;
   const localeObj = getLocale(locale);
   const calendar = getCalendar(viewedDate, {

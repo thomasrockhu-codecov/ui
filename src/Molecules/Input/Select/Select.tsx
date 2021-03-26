@@ -98,7 +98,7 @@ const Select = (props: Props) => {
       showSearch: props.showSearch || false,
       id: props.id,
       valueFromProps: props.value,
-      uncommitedSelectedItems: [],
+      uncommittedSelectedItems: [],
       actions: props.actions || [],
     },
   });

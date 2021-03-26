@@ -10,8 +10,7 @@ const getLabelOrPlaceholder = (state: ContextType[0]) => {
 
   const value = getSingleSelectValue(state.context.selectedItems);
 
-  const selectedOptionLabel = R.pathOr('', [0, 'label'], value);
-  return selectedOptionLabel;
+  return R.pathOr('', [0, 'label'], value);
 };
 
 const EllipsizingText = styled.span`

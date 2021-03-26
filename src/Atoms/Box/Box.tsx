@@ -112,10 +112,10 @@ const StyledDiv = styled.div<Props>`
   ${(p) => getStyles(p)}
   ${(p) => (p.sm ? getStylesForSize('sm') : '')}
   ${(p) =>
-  p.md ? getStylesForSize('md') : ''}
+    p.md ? getStylesForSize('md') : ''}
   ${(p) => (p.xl ? getStylesForSize('xl') : '')}
   ${(p) =>
-  p.lg ? getStylesForSize('lg') : ''}
+    p.lg ? getStylesForSize('lg') : ''}
     background-color: ${(p) => getColor(p)};
 `;
 

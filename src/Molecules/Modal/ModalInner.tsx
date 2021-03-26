@@ -17,7 +17,7 @@ const PADDING_TOP_MOBILE_FULLSCREEN = 5;
 const PADDING_BOTTOM_MOBILE_FULLSCREEN = 5;
 const CLOSE_ICON_SIZE = 5;
 
-export const Fixedrop = styled(Flexbox)`
+export const FixedDrop = styled(Flexbox)`
   position: fixed;
   top: 0;
   left: 0;
@@ -146,9 +146,9 @@ const BackdropWrapper: React.FC<BackdropWrapperProps> = ({
       {children}
     </Backdrop>
   ) : (
-    <Fixedrop container alignItems="center" justifyContent="center">
+    <FixedDrop container alignItems="center" justifyContent="center">
       {children}
-    </Fixedrop>
+    </FixedDrop>
   );
 
 export const ModalInner: React.FC<Props> = ({

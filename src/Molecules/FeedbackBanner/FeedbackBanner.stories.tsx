@@ -90,7 +90,7 @@ export const complexChildren = () => (
   <HashRouter>
     <FeedbackBanner title="Warning, complex child" variant="warning">
       <div>
-        <div>The message can also be stuctured as a more complex item than just a string</div>
+        <div>The message can also be structured as a more complex item than just a string</div>
         <div>
           For example, you can provide a Spinner <Spinner id="defaultSpinner" /> if you want to
         </div>

@@ -110,8 +110,8 @@ export const Tabs: ContainerComponent & {
     itemsLength: React.Children.count(children),
   });
 
-  const titles: React.ReactElement<any>[] = [];
-  let contents: React.ReactElement<any> | null = null;
+  const titles: React.ReactElement[] = [];
+  let contents: React.ReactElement | null = null;
 
   React.Children.forEach(children, (c, i) => {
     const isActive = i === active;

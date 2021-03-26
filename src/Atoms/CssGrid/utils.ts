@@ -36,7 +36,7 @@ export const getAreasInfo = (
         };
       const row = Math.trunc(idx / size.col);
       const col = Math.trunc(idx % size.col);
-      // 3 elems in col
+      // 3 elements in column
       // idx = 3
       acc[areaName].coordinates.push({ row, col });
 

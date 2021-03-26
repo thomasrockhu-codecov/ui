@@ -1,6 +1,11 @@
 import React, { useReducer } from 'react';
 import * as R from 'ramda';
-import { ColumnActions, ColumnsDataState, ColumnsDispatch, ColumnsState } from './ColumnProvider.types';
+import {
+  ColumnActions,
+  ColumnsDataState,
+  ColumnsDispatch,
+  ColumnsState,
+} from './ColumnProvider.types';
 import { SORT_ORDER_NONE } from '../constants';
 
 export const ACTION_SET_SORTING = 'SET_SORTING';

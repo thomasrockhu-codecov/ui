@@ -5,7 +5,18 @@ import R from 'ramda';
 import styled from 'styled-components';
 import { StateChart } from '@statecharts/xstate-viz';
 import { SelectMachine } from './machine';
-import { Avatar, Box, Flexbox, Icon, Input, Link, Modal, Number, TrackingContext, Typography } from '../../..';
+import {
+  Avatar,
+  Box,
+  Flexbox,
+  Icon,
+  Input,
+  Link,
+  Modal,
+  Number,
+  TrackingContext,
+  Typography,
+} from '../../..';
 import { Display } from '../../../common/Display';
 import docs from './Select.mdx';
 import { Option } from './Select.types';
@@ -77,17 +88,17 @@ const AccountValue = () => {
 const StyledBox = styled(Box)`
   cursor: pointer;
   background: ${(p) =>
-  // @ts-ignore
-  p.focused ? p.theme.color.background : p.theme.color.card};
+    // @ts-ignore
+    p.focused ? p.theme.color.background : p.theme.color.card};
   ${(p) =>
-  // @ts-ignore
-  !p.isKeyboardNavigation
-    ? `
+    // @ts-ignore
+    !p.isKeyboardNavigation
+      ? `
   &: hover {
     background: ${p.theme.color.background};
     }
   `
-    : ''}
+      : ''}
 `;
 // @ts-ignore
 const AccountListItem = ({ index }) => {
@@ -665,8 +676,7 @@ export const accessibleFromDocumentForms = () =>
     const FORM_NAME = 'testForm';
     const SELECT_NAME = 'mySelect';
 
-    // @ts-ignore
-    const [_, forceUpdate] = React.useState([]); // eslint-disable-line @typescript-eslint/no-unused-vars
+    const [, forceUpdate] = React.useState([]);
 
     return (
       <form name={FORM_NAME}>
@@ -1188,8 +1198,7 @@ export const listPositionedToTheLeft = () =>
     );
   });
 
-export const DocumentationCore = () => <StateChart machine={SelectMachine} onSave={() => {
-}} />;
+export const DocumentationCore = () => <StateChart machine={SelectMachine} onSave={() => {}} />;
 DocumentationCore.story = {
   name: 'Documentation: Core',
 };

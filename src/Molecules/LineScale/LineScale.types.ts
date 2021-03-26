@@ -15,7 +15,7 @@ export type Props = {
    * Needs to be between 0 and max if present */
   averageValue?: number;
 
-  /** Text in the average indcator */
+  /** Text in the average indicator */
   averageValueLabel?: string;
 
   /** X axis min label */

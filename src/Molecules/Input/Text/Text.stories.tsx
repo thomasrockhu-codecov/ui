@@ -180,7 +180,7 @@ export const edgeCases = () => (
           <Input.Text
             label="Too long label, goes into ellipsis. Consider smaller label or bigger input"
             placeholder="If placeholder goes too long though, it probably should be truncated into ellipsis, right?"
-            extraInfo="This is much neccessary info wow"
+            extraInfo="This is much necessary info wow"
           />
         ),
         title: 'Long values',

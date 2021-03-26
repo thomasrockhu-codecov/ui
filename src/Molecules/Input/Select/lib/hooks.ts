@@ -143,10 +143,10 @@ export const usePropagateChangesThroughOnChange = (
 
   React.useEffect(() => {
     // Don't want to grab first onChange
-    // Why is it happenning though 🤔
+    // Why is it happening though 🤔
     if (isFirstRender) return;
     if (isChangeUncommitted) {
-      const changes = machineState.context.uncommitedSelectedItems;
+      const changes = machineState.context.uncommittedSelectedItems;
 
       const action = changes.find((x) => typeof x.onSelect === 'function');
       if (action) {
