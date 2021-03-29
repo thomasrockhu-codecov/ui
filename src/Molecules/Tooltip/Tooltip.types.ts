@@ -9,7 +9,7 @@ export type Props = {
   inModal?: boolean;
   /** max-width in units */
   maxWidth?: number;
-  mode?: 'hover' | 'click';
+  mode?: 'hover' | 'click' | 'persistent';
   openDelay?: number;
   closeDelay?: number;
 };

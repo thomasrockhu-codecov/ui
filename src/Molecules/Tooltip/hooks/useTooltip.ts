@@ -6,7 +6,7 @@ import { useOnClickOutside } from '../../../common/Hooks';
 
 export const useTooltip = (mode: TooltipProps['mode'], openDelay?: number, closeDelay?: number) => {
   const id = useId('nn-tooltip-');
-  const [isOpen, setIsOpen] = useState(false);
+  const [isOpen, setIsOpen] = useState(mode === 'persistent');
   const triggerElementRef = useRef(null);
 
   useEffect(() => {
