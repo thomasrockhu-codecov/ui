@@ -1,3 +1,25 @@
+# [6.0.0](https://github.com/nordnet/ui/compare/v5.27.1...v6.0.0) (2021-03-29)
+
+
+### Bug Fixes
+
+* fix typos ([f3ad84f](https://github.com/nordnet/ui/commit/f3ad84f))
+* grooming ([511ac4d](https://github.com/nordnet/ui/commit/511ac4d))
+* grooming ([887f64a](https://github.com/nordnet/ui/commit/887f64a))
+* grooming ([367995b](https://github.com/nordnet/ui/commit/367995b))
+
+
+### Features
+
+* 🎸 bump ts ([840dc48](https://github.com/nordnet/ui/commit/840dc48))
+* bump typescript to 4.2.3 from 3.8.3 ([d6a4101](https://github.com/nordnet/ui/commit/d6a4101))
+* bump typescript to 4.2.3 from 3.8.3 ([cda4064](https://github.com/nordnet/ui/commit/cda4064))
+
+
+### BREAKING CHANGES
+
+* 🧨 y
+
 ## [5.27.1](https://github.com/nordnet/ui/compare/v5.27.0...v5.27.1) (2021-03-23)
 
 
