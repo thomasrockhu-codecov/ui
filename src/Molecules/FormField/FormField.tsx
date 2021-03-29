@@ -1,16 +1,16 @@
 import React from 'react';
 import styled from 'styled-components';
-import { motion, AnimatePresence } from 'framer-motion';
-import { Props, LabelAddonProp } from './FormField.types';
+import { AnimatePresence, motion } from 'framer-motion';
+import { LabelAddonProp, Props } from './FormField.types';
 import {
-  Flexbox,
-  Icon,
-  VisuallyHidden,
-  FormLabel,
-  Typography,
   Fieldset,
+  Flexbox,
+  FormLabel,
+  Icon,
   Legend,
   Tooltip,
+  Typography,
+  VisuallyHidden,
 } from '../..';
 import { assert } from '../../common/utils';
 

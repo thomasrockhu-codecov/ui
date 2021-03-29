@@ -16,7 +16,7 @@ describe('getNumberAsString', () => {
     expect(result).toEqual('10.25');
   });
 
-  test('string to string, preserve decimal seperator', () => {
+  test('string to string, preserve decimal separator', () => {
     const result = getNumberAsString('10,25');
     expect(result).toEqual('10,25');
   });

@@ -82,7 +82,7 @@ import { useKeyPress, useOnClickOutside } from './common/Hooks';
 import theme, { createTheme } from './theme';
 import TrackingContext from './common/tracking';
 
-import { LinkContext, LinkProvider, LinkProviderProps, LinkProps, useLink } from './common/Links';
+import { LinkContext, LinkProps, LinkProvider, LinkProviderProps, useLink } from './common/Links';
 
 import {
   getPersistedSortOrder,

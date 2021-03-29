@@ -1,9 +1,9 @@
 import React from 'react';
 import styled from 'styled-components';
-import { Typography, Icon, Flexbox, Button } from '../../../index';
+import { Button, Flexbox, Icon, Typography } from '../../../index';
 import List from '../../../Atoms/List';
 import PageItems from '../PageItems';
-import { PaginationDefaultProps, PageItemProps, BrowseButtonProps } from '../Pagination.types';
+import { BrowseButtonProps, PageItemProps, PaginationDefaultProps } from '../Pagination.types';
 
 const StyledFlexbox = styled(Flexbox)<{ $numberOfPages: number }>`
   width: ${(p) => {

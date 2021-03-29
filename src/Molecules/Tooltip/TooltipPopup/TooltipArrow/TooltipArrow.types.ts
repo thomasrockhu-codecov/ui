@@ -6,5 +6,3 @@ export type Props = {
   style?: CSSProperties;
   ref?: React.RefObject<any>;
 };
-
-export type TooltipArrowComponent = React.FC<Props>;

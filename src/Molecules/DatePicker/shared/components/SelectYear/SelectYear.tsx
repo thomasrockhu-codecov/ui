@@ -2,14 +2,14 @@ import React, { useMemo, useState } from 'react';
 import styled, { useTheme } from 'styled-components';
 import { Props } from './SelectYear.types';
 /**
- * Imported seperately because when imported in src/index.ts, Input will not have been imported yet and error will be thrown
+ * Imported separately because when imported in src/index.ts, Input will not have been imported yet and error will be thrown
  */
 import Input from '../../../../Input';
 import { Box, Flexbox, Icon, Typography } from '../../../../..';
 import { newDate } from '../../dateUtils';
 import { Theme } from '../../../../../theme/theme.types';
 
-/* using styled like this as a workaround for 
+/* using styled like this as a workaround for
  Select.test.tsx failing because Input.Select is undefined */
 const StyledInputSelect = styled((props) => <Input.Select {...props} />)`
   > div > div > div {
@@ -21,7 +21,7 @@ const StyledInputSelect = styled((props) => <Input.Select {...props} />)`
 const SelectYear: React.FC<Props> = ({ id, viewedDate, onChange, years = 100 }) => {
   const [isHover, setIsHover] = useState(false);
   const today = newDate();
-  const yearOptions = [...Array(years).keys()].map((index: number) => ({
+  const yearOptions = [...Array(years).keys()]?.map((index: number) => ({
     value: today.getFullYear() - index,
     label: (today.getFullYear() - index).toString(),
   }));
@@ -34,7 +34,6 @@ const SelectYear: React.FC<Props> = ({ id, viewedDate, onChange, years = 100 }) 
 
   const components = useMemo(
     () => ({
-      // @ts-ignore
       SelectedValue: () => {
         const [state] = useSelectMachineFromContext();
         let icon = null;

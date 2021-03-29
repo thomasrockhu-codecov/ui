@@ -9,7 +9,7 @@ const loadingOptions = {
   textConfirm: 'Modal text for loading',
 };
 
-const succesOptions = {
+const successOptions = {
   status: 'SUCCESS' as Status,
   title: 'Modal title for success',
   text: 'Modal text for success',
@@ -38,12 +38,15 @@ const twoButtonsOptions = {
   textCancel: 'Cancel',
 };
 
-const defaultProps = { id: 'status-modal', onClose: () => {} };
+const defaultProps = {
+  id: 'status-modal',
+  onClose: () => {},
+};
 
 storiesOf('Organisms / StatusModal', module)
   .addDecorator((storyFn) => storyFn())
   .add('Loading', () => <StatusModal {...defaultProps} loading options={loadingOptions} />)
-  .add('Success', () => <StatusModal {...defaultProps} loading={false} options={succesOptions} />)
+  .add('Success', () => <StatusModal {...defaultProps} loading={false} options={successOptions} />)
   .add('Warning', () => <StatusModal {...defaultProps} loading={false} options={warningOptions} />)
   .add('Error', () => <StatusModal {...defaultProps} loading={false} options={errorOptions} />)
   .add('With two buttons', () => (

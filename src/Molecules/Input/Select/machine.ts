@@ -1,4 +1,4 @@
-import { Machine, send, assign } from 'xstate';
+import { assign, Machine, send } from 'xstate';
 import { SYMBOL_ALL } from './lib/constants';
 import { Action } from './Select.types';
 
@@ -30,7 +30,7 @@ export type OptionLike = {
 const isEqualOptions = (a: OptionLike, b: OptionLike) => a === b || a.value === b.value;
 const includesOption = (arr: OptionLike[], option: OptionLike) =>
   typeof option !== 'undefined' &&
-  (arr.includes(option) || arr.some(x => x.value === option.value));
+  (arr.includes(option) || arr.some((x) => x.value === option.value));
 
 export type Context = {
   error: string;
@@ -50,7 +50,7 @@ export type Context = {
   visibleOptions: Array<any>;
   id: string;
   valueFromProps: Array<any>;
-  uncommitedSelectedItems: Array<any>;
+  uncommittedSelectedItems: Array<any>;
   actions: Array<Action>;
 };
 
@@ -77,7 +77,7 @@ export const SelectMachine = Machine<Context>(
       visibleOptions: [] as Array<any>,
       id: 'id-from-props',
       valueFromProps: [] as Array<any>,
-      uncommitedSelectedItems: [] as Array<any>,
+      uncommittedSelectedItems: [] as Array<any>,
     },
     on: {
       [ACTION_TYPES.SYNC]: {
@@ -92,11 +92,11 @@ export const SelectMachine = Machine<Context>(
           [ACTION_TYPES.OPEN]: {
             target: '.on',
             actions: 'restoreFocusOrFocusFirst',
-            cond: ctx => ctx.actions.length > 0 || ctx.visibleOptions.length > 0,
+            cond: (ctx) => ctx.actions.length > 0 || ctx.visibleOptions.length > 0,
           },
           [ACTION_TYPES.CLOSE]: { target: '.off', actions: 'cleanSearch' },
           [ACTION_TYPES.TOGGLE]: [
-            { actions: send(ACTION_TYPES.CLOSE), cond: ctx => ctx.open },
+            { actions: send(ACTION_TYPES.CLOSE), cond: (ctx) => ctx.open },
             { actions: send(ACTION_TYPES.OPEN) },
           ],
           [ACTION_TYPES.BLUR]: {
@@ -117,7 +117,7 @@ export const SelectMachine = Machine<Context>(
               '': [
                 {
                   target: 'on',
-                  cond: ctx => ctx.open,
+                  cond: (ctx) => ctx.open,
                 },
                 {
                   target: 'off',
@@ -142,7 +142,7 @@ export const SelectMachine = Machine<Context>(
                 {
                   target: 'controlled',
                   actions: 'forceValueFromProps',
-                  cond: ctx => !!ctx.valueFromProps,
+                  cond: (ctx) => !!ctx.valueFromProps,
                 },
                 { target: 'uncontrolled' },
               ],
@@ -163,7 +163,7 @@ export const SelectMachine = Machine<Context>(
               [ACTION_TYPES.DESELECT_ITEM]: {
                 target: '.changeUncommitted',
                 actions: 'updateUncommittedItems',
-                cond: ctx => !!ctx.multiselect,
+                cond: (ctx) => !!ctx.multiselect,
               },
             },
             states: {
@@ -172,11 +172,11 @@ export const SelectMachine = Machine<Context>(
                   '': [
                     {
                       target: 'incorrectSelection',
-                      cond: ctx => ctx.selectedItems.some(x => !includesOption(ctx.options, x)),
+                      cond: (ctx) => ctx.selectedItems.some((x) => !includesOption(ctx.options, x)),
                     },
                     {
                       target: 'on',
-                      cond: ctx => ctx.valueFromProps.length > 0,
+                      cond: (ctx) => ctx.valueFromProps.length > 0,
                     },
                     { target: 'off' },
                   ],
@@ -221,7 +221,7 @@ export const SelectMachine = Machine<Context>(
               [ACTION_TYPES.DESELECT_ITEM]: {
                 target: '.changeUncommitted',
                 actions: 'updateUncommittedItems',
-                cond: ctx => !!ctx.multiselect,
+                cond: (ctx) => !!ctx.multiselect,
               },
             },
             states: {
@@ -230,9 +230,9 @@ export const SelectMachine = Machine<Context>(
                   '': [
                     {
                       target: 'incorrectSelection',
-                      cond: ctx => ctx.selectedItems.some(x => !includesOption(ctx.options, x)),
+                      cond: (ctx) => ctx.selectedItems.some((x) => !includesOption(ctx.options, x)),
                     },
-                    { target: 'on', cond: ctx => ctx.selectedItems.length > 0 },
+                    { target: 'on', cond: (ctx) => ctx.selectedItems.length > 0 },
                     { target: 'off' },
                   ],
                 },
@@ -270,8 +270,8 @@ export const SelectMachine = Machine<Context>(
           unknown: {
             on: {
               '': [
-                { target: 'error', cond: ctx => ctx.error !== '' },
-                { target: 'success', cond: ctx => ctx.success },
+                { target: 'error', cond: (ctx) => ctx.error !== '' },
+                { target: 'success', cond: (ctx) => ctx.success },
                 { target: 'neutral' },
               ],
             },
@@ -288,10 +288,10 @@ export const SelectMachine = Machine<Context>(
           unknown: {
             on: {
               '': [
-                { target: 'disabled', cond: ctx => ctx.disabled },
+                { target: 'disabled', cond: (ctx) => ctx.disabled },
                 {
                   target: 'disabled',
-                  cond: ctx => ctx.options.length === 0 && ctx.actions.length === 0,
+                  cond: (ctx) => ctx.options.length === 0 && ctx.actions.length === 0,
                 },
                 { target: 'enabled' },
               ],
@@ -311,7 +311,7 @@ export const SelectMachine = Machine<Context>(
             states: {
               unknown: {
                 on: {
-                  '': [{ target: 'active', cond: ctx => Boolean(ctx.open) }, { target: 'idle' }],
+                  '': [{ target: 'active', cond: (ctx) => Boolean(ctx.open) }, { target: 'idle' }],
                 },
               },
 
@@ -333,7 +333,7 @@ export const SelectMachine = Machine<Context>(
                       unknown: {
                         on: {
                           '': [
-                            { target: 'explicit', cond: ctx => Boolean(ctx.showSearch) },
+                            { target: 'explicit', cond: (ctx) => Boolean(ctx.showSearch) },
                             { target: 'implicit' },
                           ],
                         },
@@ -405,7 +405,7 @@ export const SelectMachine = Machine<Context>(
                       unknown: {
                         on: {
                           '': [
-                            { target: 'mouse', cond: ctx => ctx.lastNavigationType === 'mouse' },
+                            { target: 'mouse', cond: (ctx) => ctx.lastNavigationType === 'mouse' },
                             { target: 'keyboard' },
                           ],
                         },
@@ -440,7 +440,7 @@ export const SelectMachine = Machine<Context>(
                         on: {
                           '': [
                             { target: 'button', in: '#inputSelect.open.off' },
-                            { target: 'listItem', cond: ctx => ctx.itemFocusIdx !== null },
+                            { target: 'listItem', cond: (ctx) => ctx.itemFocusIdx !== null },
                           ],
                         },
                       },
@@ -474,7 +474,7 @@ export const SelectMachine = Machine<Context>(
       }),
       cleanSearch: assign<Context>({
         searchQuery: '',
-        visibleOptions: ctx => ctx.options,
+        visibleOptions: (ctx) => ctx.options,
       }),
       syncProps: assign<Context>((ctx, e) => ({
         ...ctx,
@@ -483,27 +483,27 @@ export const SelectMachine = Machine<Context>(
         visibleOptions: e.payload.options !== ctx.options ? e.payload.options : ctx.visibleOptions,
       })),
       restoreFocusOrFocusFirst: assign<Context>({
-        itemFocusIdx: ctx =>
+        itemFocusIdx: (ctx) =>
           ctx.selectedItems.length > 0
-            ? ctx.visibleOptions.findIndex(x => isEqualOptions(x, ctx.selectedItems[0]))
+            ? ctx.visibleOptions.findIndex((x) => isEqualOptions(x, ctx.selectedItems[0]))
             : 0,
       }),
       setFocusToSearchedOption: assign<Context>({
-        itemFocusIdx: ctx => {
-          const newIdx = ctx.options.findIndex(x =>
+        itemFocusIdx: (ctx) => {
+          const newIdx = ctx.options.findIndex((x) =>
             x.label.toLowerCase().startsWith(ctx.searchQuery.toLowerCase()),
           );
           return newIdx !== -1 && !ctx.options[newIdx].disabled ? newIdx : ctx.itemFocusIdx;
         },
       }),
       setNextFocusedItem: assign<Context>({
-        itemFocusIdx: ctx => {
+        itemFocusIdx: (ctx) => {
           const MAX_IDX = ctx.visibleOptions.length + ctx.actions.length;
           return ctx.itemFocusIdx !== null ? (ctx.itemFocusIdx + 1) % MAX_IDX : 0;
         },
       }),
       setPrevFocusedItem: assign<Context>({
-        itemFocusIdx: ctx => {
+        itemFocusIdx: (ctx) => {
           const MAX_IDX = ctx.visibleOptions.length + ctx.actions.length;
           return ctx.itemFocusIdx !== null && ctx.itemFocusIdx - 1 >= 0
             ? ctx.itemFocusIdx - 1
@@ -542,7 +542,7 @@ export const SelectMachine = Machine<Context>(
             return [];
           }
           let predicate = (x: OptionLike) => !isEqualOptions(x, payload);
-          if (ctx.options.some(x => x[SYMBOL_ALL])) {
+          if (ctx.options.some((x) => x[SYMBOL_ALL])) {
             // @ts-ignore
             predicate = (x: OptionLike) => !x[SYMBOL_ALL] && !isEqualOptions(x, payload);
           }
@@ -551,23 +551,20 @@ export const SelectMachine = Machine<Context>(
       }),
       updateVisibleOptions: assign<Context>({
         visibleOptions: (ctx, e) => {
-          const newOptions = ctx.options.filter(x =>
-            x.label.toLowerCase().includes(e.payload.toLowerCase()),
-          );
-          return newOptions;
+          return ctx.options.filter((x) => x.label.toLowerCase().includes(e.payload.toLowerCase()));
         },
       }),
 
       updateUncommittedItems: assign<Context>({
-        uncommitedSelectedItems: (ctx, e) => {
+        uncommittedSelectedItems: (ctx, e) => {
           if (ctx.multiselect) {
             if (e.type === ACTION_TYPES.SELECT_ITEM) {
-              const activeOptions = ctx.options.filter(x => !x.disabled);
+              const activeOptions = ctx.options.filter((x) => !x.disabled);
               if (e.payload[SYMBOL_ALL]) {
                 return activeOptions;
               }
               let newSelectedItems = ctx.selectedItems.concat(e.payload);
-              const selectAllOption = ctx.options.find(x => x[SYMBOL_ALL]);
+              const selectAllOption = ctx.options.find((x) => x[SYMBOL_ALL]);
               if (selectAllOption && newSelectedItems.length === activeOptions.length - 1) {
                 newSelectedItems = newSelectedItems.concat(selectAllOption);
               }
@@ -578,7 +575,7 @@ export const SelectMachine = Machine<Context>(
                 return [];
               }
               let predicate = (x: OptionLike) => !isEqualOptions(x, e.payload);
-              if (ctx.options.some(x => x[SYMBOL_ALL])) {
+              if (ctx.options.some((x) => x[SYMBOL_ALL])) {
                 // @ts-ignore
                 predicate = (x: OptionLike) => !x[SYMBOL_ALL] && !isEqualOptions(x, e.payload);
               }
@@ -590,13 +587,13 @@ export const SelectMachine = Machine<Context>(
       }),
 
       commitSelectedItems: assign<Context>({
-        selectedItems: ctx => ctx.uncommitedSelectedItems,
-        uncommitedSelectedItems: [],
+        selectedItems: (ctx) => ctx.uncommittedSelectedItems,
+        uncommittedSelectedItems: [],
       }),
       uncommitSelectedItems: assign<Context>({
-        uncommitedSelectedItems: [],
+        uncommittedSelectedItems: [],
       }),
-      forceValueFromProps: assign<Context>({ selectedItems: ctx => ctx.valueFromProps }),
+      forceValueFromProps: assign<Context>({ selectedItems: (ctx) => ctx.valueFromProps }),
     } as any,
   },
 );

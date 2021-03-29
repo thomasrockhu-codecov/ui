@@ -1,12 +1,12 @@
 import React, { ReactNode } from 'react';
 import {
-  SortOrder,
+  SortButtonComponent,
   SortButtonProps,
+  SortIconComponent,
+  SortIconProps,
+  SortOrder,
   TextWrapperComponent,
   TextWrapperProps,
-  SortIconComponent,
-  SortButtonComponent,
-  SortIconProps,
 } from './HeaderContent/HeaderContent.types';
 import { FlexPropsType } from '../shared/shared.types';
 

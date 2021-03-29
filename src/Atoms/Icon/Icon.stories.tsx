@@ -14,93 +14,65 @@ defaultUse.story = {
 };
 
 export const inlineStory = () => (
-  <span>
+  <>
     You can put the <Icon.ArrowRight inline /> directly in the text with inline prop!
-  </span>
+  </>
 );
 
 export const thinArrowUp = () => (
-  <span>
-    <Icon.ThinArrow direction={select('Direction', ['up', 'right', 'down', 'left'], 'up')} />
-  </span>
+  <Icon.ThinArrow direction={select('Direction', ['up', 'right', 'down', 'left'], 'up')} />
 );
 
 export const thinArrowRight = () => (
-  <span>
-    <Icon.ThinArrow direction={select('Direction', ['up', 'right', 'down', 'left'], 'right')} />
-  </span>
+  <Icon.ThinArrow direction={select('Direction', ['up', 'right', 'down', 'left'], 'right')} />
 );
 
 export const thinArrowDown = () => (
-  <span>
-    <Icon.ThinArrow direction={select('Direction', ['up', 'right', 'down', 'left'], 'down')} />
-  </span>
+  <Icon.ThinArrow direction={select('Direction', ['up', 'right', 'down', 'left'], 'down')} />
 );
 
 export const thinArrowLeft = () => (
-  <span>
-    <Icon.ThinArrow direction={select('Direction', ['up', 'right', 'down', 'left'], 'left')} />
-  </span>
+  <Icon.ThinArrow direction={select('Direction', ['up', 'right', 'down', 'left'], 'left')} />
 );
 
 export const thinChevronUp = () => (
-  <span>
-    <Icon.ThinChevron direction={select('Direction', ['up', 'right', 'down', 'left'], 'up')} />
-  </span>
+  <Icon.ThinChevron direction={select('Direction', ['up', 'right', 'down', 'left'], 'up')} />
 );
 
 export const thinChevronDown = () => (
-  <span>
-    <Icon.ThinChevron direction={select('Direction', ['up', 'right', 'down', 'left'], 'down')} />
-  </span>
+  <Icon.ThinChevron direction={select('Direction', ['up', 'right', 'down', 'left'], 'down')} />
 );
 
 export const thinChevronLeft = () => (
-  <span>
-    <Icon.ThinChevron direction={select('Direction', ['up', 'right', 'down', 'left'], 'left')} />
-  </span>
+  <Icon.ThinChevron direction={select('Direction', ['up', 'right', 'down', 'left'], 'left')} />
 );
 
 export const thinChevronRight = () => (
-  <span>
-    <Icon.ThinChevron direction={select('Direction', ['up', 'right', 'down', 'left'], 'right')} />
-  </span>
+  <Icon.ThinChevron direction={select('Direction', ['up', 'right', 'down', 'left'], 'right')} />
 );
 
 export const chevronUp = () => (
-  <span>
-    <Icon.Chevron direction={select('Direction', ['up', 'down', 'left', 'right'], 'up')} />
-  </span>
+  <Icon.Chevron direction={select('Direction', ['up', 'down', 'left', 'right'], 'up')} />
 );
 
 export const chevronDown = () => (
-  <span>
-    <Icon.Chevron direction={select('Direction', ['up', 'down', 'left', 'right'], 'down')} />
-  </span>
+  <Icon.Chevron direction={select('Direction', ['up', 'down', 'left', 'right'], 'down')} />
 );
 
 export const chevronLeft = () => (
-  <span>
-    <Icon.Chevron direction={select('Direction', ['up', 'down', 'left', 'right'], 'left')} />
-  </span>
+  <Icon.Chevron direction={select('Direction', ['up', 'down', 'left', 'right'], 'left')} />
 );
 
 export const chevronRight = () => (
-  <span>
-    <Icon.Chevron direction={select('Direction', ['up', 'down', 'left', 'right'], 'right')} />
-  </span>
+  <Icon.Chevron direction={select('Direction', ['up', 'down', 'left', 'right'], 'right')} />
 );
 
 export const sortArrowAscending = () => (
-  <span>
-    <Icon.SortArrow direction={select('Direction', ['ascending', 'descending'], 'ascending')} />
-  </span>
+  <Icon.SortArrow direction={select('Direction', ['ascending', 'descending'], 'ascending')} />
 );
 
 export const sortArrowDescending = () => (
-  <span>
-    <Icon.SortArrow direction={select('Direction', ['ascending', 'descending'], 'descending')} />
-  </span>
+  <Icon.SortArrow direction={select('Direction', ['ascending', 'descending'], 'descending')} />
 );
 
 inlineStory.story = {
@@ -186,7 +158,7 @@ withModifiedStroke.story = {
 
 export const availableIcons = () => (
   <Display
-    items={Object.entries(Icon).map(
+    items={Object?.entries(Icon)?.map(
       ([iconName, IconComponent]: [string, React.ComponentType<any>]) => ({
         title: iconName,
         component: (
@@ -205,7 +177,7 @@ availableIcons.story = {
 
 export const allIconsColored = () => (
   <>
-    {Object.entries(Icon).map(([key, IconComponent]: [string, React.ComponentType<any>]) => (
+    {Object?.entries(Icon)?.map(([key, IconComponent]: [string, React.ComponentType<any>]) => (
       <div style={{ outline: '1px dashed #bbb', display: 'inline-block' }}>
         <IconComponent
           color={(t: any) => t.color.cta}

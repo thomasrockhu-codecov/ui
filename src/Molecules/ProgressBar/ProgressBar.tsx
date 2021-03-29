@@ -225,7 +225,7 @@ const ProgressBar: FC<Props> = ({
 
   const generateSteps = () => {
     const steps = R.range(1, numberOfSteps + 1);
-    return steps.map((step: number) => stepBubble(step));
+    return steps?.map((step: number) => stepBubble(step));
   };
 
   return (

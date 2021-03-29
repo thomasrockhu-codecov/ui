@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { Card, Typography, Media } from '../..';
+import { Card, Media, Typography } from '../..';
 import { CardWithTitleComponent } from './CardWithTitle.types';
 import { Box } from '../../Atoms/Box/Box';
 import { isElement } from '../../common/utils';

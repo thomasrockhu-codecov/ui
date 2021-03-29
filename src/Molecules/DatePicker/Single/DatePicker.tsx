@@ -1,4 +1,4 @@
-import React, { useRef, useState, useCallback, useEffect, useMemo } from 'react';
+import React, { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import styled, { useTheme } from 'styled-components';
 import format from 'date-fns/format';
 import { useIntl } from 'react-intl';
@@ -6,22 +6,22 @@ import { isBefore, isSameDay, isSameMonth, startOfDay } from 'date-fns';
 import { Props } from './DatePicker.types';
 
 /**
- * Imported seperately because when imported in src/index.ts, Input will not have been imported yet and an error will be thrown
+ * Imported separately because when imported in src/index.ts, Input will not have been imported yet and an error will be thrown
  */
 import Input from '../../Input';
-import { Box, Icon, DropdownBubble } from '../../..';
+import { Box, DropdownBubble, Icon } from '../../..';
 import { assert, isUndefined } from '../../../common/utils';
 import { useOnClickOutside } from '../../../common/Hooks';
 import {
-  newDate,
-  getLocale,
   getDateFormat,
+  getLocale,
+  newDate,
   parseDateString,
   parseDateStrings,
 } from '../shared/dateUtils';
 import Header from './Header';
 import Calendar from './Calendar';
-import { RANGE_DATE_PICKER, REGULAR_DATE_PICKER, DEFAULT_INPUT_WIDTH } from '../shared/constants';
+import { DEFAULT_INPUT_WIDTH, RANGE_DATE_PICKER, REGULAR_DATE_PICKER } from '../shared/constants';
 
 const StyledInputText = styled(Input.Text)`
   z-index: 1;

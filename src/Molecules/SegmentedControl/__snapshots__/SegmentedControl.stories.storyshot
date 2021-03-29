@@ -68,7 +68,6 @@ exports[`Storyshots Molecules / SegmentedControl Controlled Behaviour 1`] = `
   border: none;
   padding: 0;
   background-color: transparent;
-  outline: none;
   cursor: pointer;
 }
 
@@ -312,7 +311,6 @@ exports[`Storyshots Molecules / SegmentedControl Controlled Disabled 1`] = `
   border: none;
   padding: 0;
   background-color: transparent;
-  outline: none;
   cursor: not-allowed;
 }
 
@@ -490,7 +488,6 @@ exports[`Storyshots Molecules / SegmentedControl Default 1`] = `
   border: none;
   padding: 0;
   background-color: transparent;
-  outline: none;
   cursor: pointer;
 }
 
@@ -649,7 +646,6 @@ exports[`Storyshots Molecules / SegmentedControl Disabled 1`] = `
   border: none;
   padding: 0;
   background-color: transparent;
-  outline: none;
   cursor: not-allowed;
 }
 
@@ -793,7 +789,6 @@ exports[`Storyshots Molecules / SegmentedControl Last Item Selected 1`] = `
   border: none;
   padding: 0;
   background-color: transparent;
-  outline: none;
   cursor: pointer;
 }
 

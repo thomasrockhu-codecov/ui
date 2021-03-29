@@ -14,19 +14,19 @@ import {
 
 const StyledTypography = styled(Typography)`
   position: absolute;
-  top: ${p => p.theme.spacing.unit(VERTICAL_PADDING)}px;
-  left: ${p => p.theme.spacing.unit(HORIZONTAL_PADDING)}px;
+  top: ${(p) => p.theme.spacing.unit(VERTICAL_PADDING)}px;
+  left: ${(p) => p.theme.spacing.unit(HORIZONTAL_PADDING)}px;
 
-  ${p => p.theme.media.greaterThan(p.theme.breakpoints.sm)} {
-    left: ${p => p.theme.spacing.unit(HORIZONTAL_PADDING_DESKTOP)}px;
+  ${(p) => p.theme.media.greaterThan(p.theme.breakpoints.sm)} {
+    left: ${(p) => p.theme.spacing.unit(HORIZONTAL_PADDING_DESKTOP)}px;
   }
 `;
 
 const Circle = styled.span<InternalProps>`
-  width: ${p => p.theme.spacing.unit(STEP_NUMBER_SIZE)}px;
-  height: ${p => p.theme.spacing.unit(STEP_NUMBER_SIZE)}px;
-  background-color: ${p => (p.$current ? p.theme.color.cta : p.theme.color.disabledBackground)};
-  color: ${p => (p.$current ? p.theme.color.buttonText : p.theme.color.disabledText)};
+  width: ${(p) => p.theme.spacing.unit(STEP_NUMBER_SIZE)}px;
+  height: ${(p) => p.theme.spacing.unit(STEP_NUMBER_SIZE)}px;
+  background-color: ${(p) => (p.$current ? p.theme.color.cta : p.theme.color.disabledBackground)};
+  color: ${(p) => (p.$current ? p.theme.color.buttonText : p.theme.color.disabledText)};
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -41,7 +41,7 @@ const Status: StatusComponent = ({ current, done, noIcons, number, titleDone, ti
     {!noIcons && (
       <StyledTypography type="secondary" weight="bold" aria-hidden>
         {done ? (
-          <Icon.CheckMarkCircle size={STEP_NUMBER_SIZE} fill={t => t.color.positive} />
+          <Icon.CheckMarkCircle size={STEP_NUMBER_SIZE} fill={(t) => t.color.positive} />
         ) : (
           <Circle $current={current}>{number}</Circle>
         )}

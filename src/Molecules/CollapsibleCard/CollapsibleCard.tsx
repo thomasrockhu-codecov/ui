@@ -1,7 +1,7 @@
-import React, { useState, useRef, useLayoutEffect } from 'react';
+import React, { useLayoutEffect, useRef, useState } from 'react';
 import styled from 'styled-components';
-import { Card, Typography, Icon, Flexbox } from '../..';
-import { IndicatorsProps, CollapsibleProps } from './Collapsible.types';
+import { Card, Flexbox, Icon, Typography } from '../..';
+import { CollapsibleProps, IndicatorsProps } from './Collapsible.types';
 
 const StyledCollapsible = styled.div<{
   height: string | null;
@@ -9,8 +9,8 @@ const StyledCollapsible = styled.div<{
 }>`
   overflow: hidden;
   will-change: height;
-  height: ${p => (p.height ? p.height : 'auto')};
-  transition: ${p => (p.disabledTransition ? '' : 'height 0.16s ease-out')};
+  height: ${(p) => (p.height ? p.height : 'auto')};
+  transition: ${(p) => (p.disabledTransition ? '' : 'height 0.16s ease-out')};
 
   &[hidden] {
     display: none;
@@ -24,25 +24,25 @@ const StyledButton = styled.button<IndicatorsProps>`
   cursor: pointer;
   display: block;
   width: 100%;
-  padding: ${p => p.theme.spacing.unit(5)}px ${p => p.theme.spacing.unit(5)}px;
+  padding: ${(p) => p.theme.spacing.unit(5)}px ${(p) => p.theme.spacing.unit(5)}px;
   border: 0;
 
   &::before {
     content: '';
     display: block;
-    background: ${p => p.theme.color.cta};
+    background: ${(p) => p.theme.color.cta};
     width: 2px;
     height: 100%;
     position: absolute;
     top: 0;
     left: 0;
     transition: opacity 0.16s ease-out;
-    opacity: ${p => (p.$collapsed && !p.$noIndicator ? 1 : 0)};
+    opacity: ${(p) => (p.$collapsed && !p.$noIndicator ? 1 : 0)};
   }
 `;
 
 const AnimatedChevronUp = styled(Icon.ChevronUp)<IndicatorsProps>`
-  transform: ${p => (p.$collapsed ? 'rotate(180deg)' : 'rotate(0)')};
+  transform: ${(p) => (p.$collapsed ? 'rotate(180deg)' : 'rotate(0)')};
   transform-origin: center center;
   transition: transform 0.16s ease-out;
 `;
@@ -50,7 +50,7 @@ const AnimatedChevronUp = styled(Icon.ChevronUp)<IndicatorsProps>`
 export const CollapsibleCard: React.FC<CollapsibleProps> = ({
   title,
   children,
-  collapsedInitial: collapsedInitial = false,
+  collapsedInitial = false,
   heading = 'h2',
   noIndicator = false,
   onClick = () => {},

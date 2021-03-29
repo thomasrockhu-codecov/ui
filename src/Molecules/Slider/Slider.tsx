@@ -5,7 +5,7 @@ import { THUMB_BIG_PX, THUMB_SMALL_PX, VARIANT_TYPES } from './constants';
 import { SliderHandle } from './SliderHandle';
 import { SliderTrack } from './SliderTrack';
 import { SliderTrackHighlight } from './SliderTrackHighlight';
-import { isNumber, isFunction } from '../../common/utils';
+import { isFunction, isNumber } from '../../common/utils';
 
 const clamp = (val: number, min: number, max: number) => {
   if (val < min) {
@@ -72,10 +72,6 @@ const Container = styled.div<InternalProps>`
   align-items: center;
   height: ${(p) =>
     p.$variant === VARIANT_TYPES.SMALL ? `${THUMB_SMALL_PX}px` : `${THUMB_BIG_PX}px`};
-
-  &:focus {
-    outline: none;
-  }
 `;
 
 const Slider: Component = ({

@@ -54,7 +54,7 @@ export const UncontrolledSortableHeadersThatSavesLastSorted = () => {
 export const ControlledSortableHeadersThatSavesLastSorted = () => {
   const ControlledSortableHeadersExample = () => {
     const ReactComponent = () => {
-      const tableId = 'constrolled-table-saves-last-sorted';
+      const tableId = 'controlled-table-saves-last-sorted';
       const storedSortOrder = getPersistedSortOrder(tableId);
       const initialSortOrder = storedSortOrder || {
         columnId: 'column1',
@@ -123,7 +123,7 @@ export const ControlledSortableHeadersThatSavesLastSorted = () => {
 export const OnlyAscendingDescendingThatSavesLastSorted = () => {
   const ControlledSortableHeadersExample = () => {
     const ReactComponent = () => {
-      const tableId = 'constrolled-table-ascending-descending-saves-last-sorted';
+      const tableId = 'controlled-table-ascending-descending-saves-last-sorted';
       const storedSortOrder = getPersistedSortOrder(tableId);
       const initialSortOrder = storedSortOrder || {
         columnId: 'column1',

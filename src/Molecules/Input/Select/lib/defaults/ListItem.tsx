@@ -1,6 +1,6 @@
-import * as React from 'react';
+import React from 'react';
 import { useSelectMachineFromContext } from '../context';
-import { Option, Optgroup } from '../SingleSelectList/SingleSelectList';
+import { Optgroup, Option } from '../SingleSelectList/SingleSelectList';
 
 export const ListItem: React.FC<{
   index: number;

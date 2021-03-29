@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import Row from './Row';
 import { HeaderRowComponent } from './Row.types';
-import { ColorFn } from '../../../common/Types/sharedTypes';
+import { ColorFn } from '../../../common/Types';
 import { useFlexTable } from '../shared/FlexTableProvider';
 import { getStylesForSizes } from '../shared';
 

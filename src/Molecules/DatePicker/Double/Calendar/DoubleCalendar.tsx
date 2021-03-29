@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useMemo, useState } from 'react';
+import React, { useEffect, useMemo, useRef, useState } from 'react';
 import styled from 'styled-components';
 import * as R from 'ramda';
 import {
@@ -14,11 +14,10 @@ import { getCalendar, getLocale } from '../../shared/dateUtils';
 import { FlexProps } from '../../../../Atoms/Flexbox/Flexbox.types';
 import { Props } from './DoubleCalendar.types';
 import {
-  NUMBER_OF_VISIBLE_WEEKDAYS_SINGLE,
-  // NUMBER_OF_VISIBLE_WEEKS_SINGLE,
-  NUMBER_OF_VISIBLE_WEEKDAYS_DOUBLE,
-  NUMBER_OF_VISIBLE_ROWS_DOUBLE,
   DOUBLE_CALENDAR_GUTTER,
+  NUMBER_OF_VISIBLE_ROWS_DOUBLE,
+  NUMBER_OF_VISIBLE_WEEKDAYS_DOUBLE,
+  NUMBER_OF_VISIBLE_WEEKDAYS_SINGLE,
 } from '../../shared/constants';
 import CalendarDay from '../../shared/components/CalendarDay';
 
@@ -69,8 +68,8 @@ const DoubleCalendar: React.FC<Props> = ({
 
   const calendarDayRefs = useRef(
     useMemo(() => {
-      return [...Array(NUMBER_OF_VISIBLE_ROWS_DOUBLE)].map(() =>
-        [...Array(NUMBER_OF_VISIBLE_WEEKDAYS_DOUBLE)].map(() => React.createRef<HTMLDivElement>()),
+      return [...Array(NUMBER_OF_VISIBLE_ROWS_DOUBLE)]?.map(() =>
+        [...Array(NUMBER_OF_VISIBLE_WEEKDAYS_DOUBLE)]?.map(() => React.createRef<HTMLDivElement>()),
       );
     }, []),
   );
@@ -78,8 +77,8 @@ const DoubleCalendar: React.FC<Props> = ({
   const handleKeyPress = (event: React.KeyboardEvent) => {
     event.stopPropagation();
     // TODO: Implement arrow navigation. Re-implement tests.
-    // Arrow navigation is temporarilty removed as it is not completely finished yet.
-    /* 
+    // Arrow navigation is temporarily removed as it is not completely finished yet.
+    /*
     if (R.isNil(focusedWeek) || R.isNil(focusedDay)) {
       setFocused([0, 0]);
     } else {
@@ -149,10 +148,10 @@ const DoubleCalendar: React.FC<Props> = ({
       locale: localeObj,
     });
     return {
-      weekDays: [...leftCalendar.weekDays, ...rightCalendar.weekDays],
-      dates: leftCalendar.dates.map((leftWeek, index) => [
+      weekDays: [...leftCalendar?.weekDays, ...rightCalendar?.weekDays],
+      dates: leftCalendar?.dates?.map((leftWeek, index) => [
         ...leftWeek,
-        ...rightCalendar.dates[index],
+        ...rightCalendar?.dates[index],
       ]),
     };
   }, [localeObj, viewedDate]);
@@ -170,7 +169,7 @@ const DoubleCalendar: React.FC<Props> = ({
     >
       <Flexbox container direction="column" aria-hidden>
         <Flexbox container>
-          {calendar.weekDays.map((n, index) => (
+          {calendar?.weekDays?.map((n, index) => (
             <StyledCalendarContainer
               item
               justifyContent="center"
@@ -184,9 +183,9 @@ const DoubleCalendar: React.FC<Props> = ({
             </StyledCalendarContainer>
           ))}
         </Flexbox>
-        {calendar.dates.map((week, weekIndex) => (
+        {calendar?.dates?.map((week = [], weekIndex) => (
           <Flexbox container justifyContent="flex-start" key={week.toString()}>
-            {week.map((day, dayIndex) => {
+            {week?.map((day, dayIndex) => {
               const hideDate =
                 (!isSameMonth(leftViewedDate, day) &&
                   isSameMonth(rightViewedDate, day) &&
@@ -202,7 +201,7 @@ const DoubleCalendar: React.FC<Props> = ({
                 />
               ) : (
                 <CalendarDay
-                  ref={calendarDayRefs.current[weekIndex][dayIndex]}
+                  ref={calendarDayRefs?.current[weekIndex][dayIndex]}
                   withGutter={dayIndex === NUMBER_OF_VISIBLE_WEEKDAYS_SINGLE - 1}
                   onFocus={() => {
                     setFocused([weekIndex, dayIndex]);
@@ -239,7 +238,7 @@ const DoubleCalendar: React.FC<Props> = ({
                     (isFirstDayOfMonth(day) && isSameMonth(rightViewedDate, day))
                   }
                   isLastDay={
-                    (weekIndex === calendar.dates.length - 1 && dayIndex === week.length - 1) ||
+                    (weekIndex === calendar?.dates?.length - 1 && dayIndex === week.length - 1) ||
                     (isLastDayOfMonth(day) && isSameMonth(leftViewedDate, day))
                   }
                 />

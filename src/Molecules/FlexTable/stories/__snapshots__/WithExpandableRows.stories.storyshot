@@ -280,10 +280,6 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Controlled Expa
   justify-content: flex-end;
 }
 
-.c17:focus {
-  outline: none;
-}
-
 .c15 {
   padding-top: 0 !important;
   padding-bottom: 0;
@@ -1046,10 +1042,6 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Controlled Expa
   justify-content: flex-end;
 }
 
-.c17:focus {
-  outline: none;
-}
-
 .c15 {
   padding-top: 0 !important;
   padding-bottom: 0;
@@ -1634,7 +1626,7 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Controlled Expa
                 <span
                   className="c14 c9"
                 >
-                  This valuues is super long to also demonstrate truncation
+                  These values are super long to also demonstrate truncation
                 </span>
               </div>
             </div>
@@ -2261,7 +2253,7 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Controlled Expa
                 <span
                   className="c14 c9"
                 >
-                  This valuues is super long to also demonstrate truncation
+                  These values are super long to also demonstrate truncation
                 </span>
               </div>
             </div>
@@ -3045,7 +3037,7 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Controlled Expa
 </div>
 `;
 
-exports[`Storyshots Molecules / FlexTable / With expandable rows Controlled Whole Row Expandalbe Table 1`] = `
+exports[`Storyshots Molecules / FlexTable / With expandable rows Controlled Whole Row Expandable Table 1`] = `
 .c1 {
   box-sizing: border-box;
   display: -webkit-box;
@@ -3246,10 +3238,6 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Controlled Whol
   justify-content: flex-end;
 }
 
-.c17:focus {
-  outline: none;
-}
-
 .c15 {
   padding-top: 0 !important;
   padding-bottom: 0;
@@ -3372,273 +3360,271 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Controlled Whol
 
 }
 
-<div>
+<div
+  className="c0"
+  role="table"
+>
   <div
-    className="c0"
-    role="table"
+    className="c1 c2 c3"
+    role="row"
   >
     <div
-      className="c1 c2 c3"
-      role="row"
+      className="c4 c5"
+      role="columnheader"
     >
       <div
-        className="c4 c5"
-        role="columnheader"
+        className="c6 c7"
       >
-        <div
-          className="c6 c7"
+        <span
+          className="c8 c9"
         >
-          <span
-            className="c8 c9"
-          >
-            Header 1
-          </span>
-        </div>
-      </div>
-      <div
-        className="c4 c5"
-        role="columnheader"
-      >
-        <div
-          className="c6 c7"
-        >
-          <span
-            className="c8 c9"
-          >
-            Header 2
-          </span>
-        </div>
-      </div>
-      <div
-        className="c4 c5"
-        role="columnheader"
-      >
-        <div
-          className="c6 c7"
-        >
-          <span
-            className="c8 c9"
-          >
-            Header 3
-          </span>
-        </div>
-      </div>
-      <div
-        className="c10 c5 c11"
-        role="columnheader"
-      >
-        <div
-          className="c6 c7"
-        >
-          <span
-            className="c8 c9"
-          />
-        </div>
+          Header 1
+        </span>
       </div>
     </div>
     <div
-      className="c1 c12"
-      onClick={[Function]}
-      role="row"
+      className="c4 c5"
+      role="columnheader"
     >
       <div
-        className="c4 c13"
-        role="cell"
+        className="c6 c7"
       >
-        <div
-          className="c6 c7"
+        <span
+          className="c8 c9"
         >
-          <span
-            className="c14 c9"
-          >
-            This row is
-          </span>
-        </div>
-      </div>
-      <div
-        className="c4 c13"
-        role="cell"
-      >
-        <div
-          className="c6 c7"
-        >
-          <span
-            className="c14 c9"
-          >
-            a controlled example
-          </span>
-        </div>
-      </div>
-      <div
-        className="c4 c13"
-        role="cell"
-      >
-        <div
-          className="c6 c7"
-        >
-          <span
-            className="c14 c9"
-          >
-            that handles the expansion
-          </span>
-        </div>
-      </div>
-      <div
-        className="c10 c13 c15 c11"
-        role="cell"
-      >
-        <button
-          aria-expanded={false}
-          className="NormalizedButton__Button-ey7f5x-0 c16 c17"
-          disabled={false}
-          onClick={[Function]}
-          type="button"
-        >
-          <span
-            className="c18"
-          >
-            <svg
-              aria-hidden="true"
-              className="c19"
-              focusable="false"
-              preserveAspectRatio="xMidYMid meet"
-              role="presentation"
-              viewBox="0 0 24 24"
-            >
-              <polygon
-                points="19.969 4 24 8.027 12 20 0 8.027 4.031 4 12 11.952"
-              />
-            </svg>
-          </span>
-        </button>
-        <button
-          aria-expanded={false}
-          className="NormalizedButton__Button-ey7f5x-0 c16 c17"
-          disabled={false}
-          onClick={[Function]}
-          type="button"
-        >
-          <span
-            className="c18"
-          >
-            <svg
-              aria-hidden="true"
-              className="c20 c21"
-              direction="down"
-              focusable="false"
-              preserveAspectRatio="xMidYMid meet"
-              role="presentation"
-              viewBox="0 0 16 16"
-            >
-              <polygon
-                points="14.620 3.580, 16.000 5.020, 8.000 12.730, 0.000 5.030, 1.400 3.580, 8.000 9.96"
-              />
-            </svg>
-          </span>
-        </button>
+          Header 2
+        </span>
       </div>
     </div>
     <div
-      className="c1 c12"
-      onClick={[Function]}
-      role="row"
+      className="c4 c5"
+      role="columnheader"
     >
       <div
-        className="c4 c13"
-        role="cell"
+        className="c6 c7"
       >
-        <div
-          className="c6 c7"
+        <span
+          className="c8 c9"
         >
-          <span
-            className="c14 c9"
-          >
-            This row is
-          </span>
-        </div>
+          Header 3
+        </span>
       </div>
+    </div>
+    <div
+      className="c10 c5 c11"
+      role="columnheader"
+    >
       <div
-        className="c4 c13"
-        role="cell"
+        className="c6 c7"
       >
-        <div
-          className="c6 c7"
-        >
-          <span
-            className="c14 c9"
-          >
-            a controlled example
-          </span>
-        </div>
+        <span
+          className="c8 c9"
+        />
       </div>
+    </div>
+  </div>
+  <div
+    className="c1 c12"
+    onClick={[Function]}
+    role="row"
+  >
+    <div
+      className="c4 c13"
+      role="cell"
+    >
       <div
-        className="c4 c13"
-        role="cell"
+        className="c6 c7"
       >
-        <div
-          className="c6 c7"
+        <span
+          className="c14 c9"
         >
-          <span
-            className="c14 c9"
-          >
-            that handles the expansion
-          </span>
-        </div>
+          This row is
+        </span>
       </div>
+    </div>
+    <div
+      className="c4 c13"
+      role="cell"
+    >
       <div
-        className="c10 c13 c15 c11"
-        role="cell"
+        className="c6 c7"
       >
-        <button
-          aria-expanded={false}
-          className="NormalizedButton__Button-ey7f5x-0 c16 c17"
-          disabled={false}
-          onClick={[Function]}
-          type="button"
+        <span
+          className="c14 c9"
         >
-          <span
-            className="c18"
-          >
-            <svg
-              aria-hidden="true"
-              className="c19"
-              focusable="false"
-              preserveAspectRatio="xMidYMid meet"
-              role="presentation"
-              viewBox="0 0 24 24"
-            >
-              <polygon
-                points="19.969 4 24 8.027 12 20 0 8.027 4.031 4 12 11.952"
-              />
-            </svg>
-          </span>
-        </button>
-        <button
-          aria-expanded={false}
-          className="NormalizedButton__Button-ey7f5x-0 c16 c17"
-          disabled={false}
-          onClick={[Function]}
-          type="button"
-        >
-          <span
-            className="c18"
-          >
-            <svg
-              aria-hidden="true"
-              className="c20 c21"
-              direction="down"
-              focusable="false"
-              preserveAspectRatio="xMidYMid meet"
-              role="presentation"
-              viewBox="0 0 16 16"
-            >
-              <polygon
-                points="14.620 3.580, 16.000 5.020, 8.000 12.730, 0.000 5.030, 1.400 3.580, 8.000 9.96"
-              />
-            </svg>
-          </span>
-        </button>
+          a controlled example
+        </span>
       </div>
+    </div>
+    <div
+      className="c4 c13"
+      role="cell"
+    >
+      <div
+        className="c6 c7"
+      >
+        <span
+          className="c14 c9"
+        >
+          that handles the expansion
+        </span>
+      </div>
+    </div>
+    <div
+      className="c10 c13 c15 c11"
+      role="cell"
+    >
+      <button
+        aria-expanded={false}
+        className="NormalizedButton__Button-ey7f5x-0 c16 c17"
+        disabled={false}
+        onClick={[Function]}
+        type="button"
+      >
+        <span
+          className="c18"
+        >
+          <svg
+            aria-hidden="true"
+            className="c19"
+            focusable="false"
+            preserveAspectRatio="xMidYMid meet"
+            role="presentation"
+            viewBox="0 0 24 24"
+          >
+            <polygon
+              points="19.969 4 24 8.027 12 20 0 8.027 4.031 4 12 11.952"
+            />
+          </svg>
+        </span>
+      </button>
+      <button
+        aria-expanded={false}
+        className="NormalizedButton__Button-ey7f5x-0 c16 c17"
+        disabled={false}
+        onClick={[Function]}
+        type="button"
+      >
+        <span
+          className="c18"
+        >
+          <svg
+            aria-hidden="true"
+            className="c20 c21"
+            direction="down"
+            focusable="false"
+            preserveAspectRatio="xMidYMid meet"
+            role="presentation"
+            viewBox="0 0 16 16"
+          >
+            <polygon
+              points="14.620 3.580, 16.000 5.020, 8.000 12.730, 0.000 5.030, 1.400 3.580, 8.000 9.96"
+            />
+          </svg>
+        </span>
+      </button>
+    </div>
+  </div>
+  <div
+    className="c1 c12"
+    onClick={[Function]}
+    role="row"
+  >
+    <div
+      className="c4 c13"
+      role="cell"
+    >
+      <div
+        className="c6 c7"
+      >
+        <span
+          className="c14 c9"
+        >
+          This row is
+        </span>
+      </div>
+    </div>
+    <div
+      className="c4 c13"
+      role="cell"
+    >
+      <div
+        className="c6 c7"
+      >
+        <span
+          className="c14 c9"
+        >
+          a controlled example
+        </span>
+      </div>
+    </div>
+    <div
+      className="c4 c13"
+      role="cell"
+    >
+      <div
+        className="c6 c7"
+      >
+        <span
+          className="c14 c9"
+        >
+          that handles the expansion
+        </span>
+      </div>
+    </div>
+    <div
+      className="c10 c13 c15 c11"
+      role="cell"
+    >
+      <button
+        aria-expanded={false}
+        className="NormalizedButton__Button-ey7f5x-0 c16 c17"
+        disabled={false}
+        onClick={[Function]}
+        type="button"
+      >
+        <span
+          className="c18"
+        >
+          <svg
+            aria-hidden="true"
+            className="c19"
+            focusable="false"
+            preserveAspectRatio="xMidYMid meet"
+            role="presentation"
+            viewBox="0 0 24 24"
+          >
+            <polygon
+              points="19.969 4 24 8.027 12 20 0 8.027 4.031 4 12 11.952"
+            />
+          </svg>
+        </span>
+      </button>
+      <button
+        aria-expanded={false}
+        className="NormalizedButton__Button-ey7f5x-0 c16 c17"
+        disabled={false}
+        onClick={[Function]}
+        type="button"
+      >
+        <span
+          className="c18"
+        >
+          <svg
+            aria-hidden="true"
+            className="c20 c21"
+            direction="down"
+            focusable="false"
+            preserveAspectRatio="xMidYMid meet"
+            role="presentation"
+            viewBox="0 0 16 16"
+          >
+            <polygon
+              points="14.620 3.580, 16.000 5.020, 8.000 12.730, 0.000 5.030, 1.400 3.580, 8.000 9.96"
+            />
+          </svg>
+        </span>
+      </button>
     </div>
   </div>
 </div>
@@ -4011,10 +3997,6 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Expanded Table 
   justify-content: flex-end;
 }
 
-.c17:focus {
-  outline: none;
-}
-
 .c15 {
   padding-top: 0 !important;
   padding-bottom: 0;
@@ -4192,393 +4174,1023 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Expanded Table 
   }
 }
 
-<div>
+<div
+  className="c0"
+  role="table"
+>
   <div
-    className="c0"
-    role="table"
+    className="c1 c2 c3"
+    role="row"
   >
     <div
-      className="c1 c2 c3"
-      role="row"
+      className="c4 c5"
+      role="columnheader"
     >
       <div
-        className="c4 c5"
-        role="columnheader"
+        className="c6 c7"
       >
-        <div
-          className="c6 c7"
+        <span
+          className="c8 c9"
         >
-          <span
-            className="c8 c9"
-          >
-            Header 1
-          </span>
-        </div>
-      </div>
-      <div
-        className="c4 c5"
-        role="columnheader"
-      >
-        <div
-          className="c6 c7"
-        >
-          <span
-            className="c8 c9"
-          >
-            Header 2
-          </span>
-        </div>
-      </div>
-      <div
-        className="c4 c5"
-        role="columnheader"
-      >
-        <div
-          className="c6 c7"
-        >
-          <span
-            className="c8 c9"
-          >
-            Header 3
-          </span>
-        </div>
-      </div>
-      <div
-        className="c10 c5 c11"
-        role="columnheader"
-      >
-        <div
-          className="c6 c7"
-        >
-          <span
-            className="c8 c9"
-          />
-        </div>
+          Header 1
+        </span>
       </div>
     </div>
     <div
-      className="c1 c12"
-      role="row"
+      className="c4 c5"
+      role="columnheader"
     >
       <div
-        className="c4 c13"
-        role="cell"
+        className="c6 c7"
       >
-        <div
-          className="c6 c7"
+        <span
+          className="c8 c9"
         >
-          <span
-            className="c14 c9"
-          >
-            Disabled
-          </span>
-        </div>
-      </div>
-      <div
-        className="c4 c13"
-        role="cell"
-      >
-        <div
-          className="c6 c7"
-        >
-          <span
-            className="c14 c9"
-          >
-            Disabled
-          </span>
-        </div>
-      </div>
-      <div
-        className="c4 c13"
-        role="cell"
-      >
-        <div
-          className="c6 c7"
-        >
-          <span
-            className="c14 c9"
-          >
-            Disabled
-          </span>
-        </div>
-      </div>
-      <div
-        className="c10 c13 c15 c11"
-        role="cell"
-      >
-        <button
-          aria-expanded={false}
-          className="NormalizedButton__Button-ey7f5x-0 c16 c17"
-          disabled={true}
-          onClick={[Function]}
-          type="button"
-        >
-          <span
-            className="c18"
-          >
-            <svg
-              aria-hidden="true"
-              className="c19"
-              focusable="false"
-              preserveAspectRatio="xMidYMid meet"
-              role="presentation"
-              viewBox="0 0 24 24"
-            >
-              <polygon
-                points="19.969 4 24 8.027 12 20 0 8.027 4.031 4 12 11.952"
-              />
-            </svg>
-          </span>
-        </button>
-        <button
-          aria-expanded={false}
-          className="NormalizedButton__Button-ey7f5x-0 c16 c17"
-          disabled={true}
-          onClick={[Function]}
-          type="button"
-        >
-          <span
-            className="c18"
-          >
-            <svg
-              aria-hidden="true"
-              className="c20 c21"
-              direction="down"
-              focusable="false"
-              preserveAspectRatio="xMidYMid meet"
-              role="presentation"
-              viewBox="0 0 16 16"
-            >
-              <polygon
-                points="14.620 3.580, 16.000 5.020, 8.000 12.730, 0.000 5.030, 1.400 3.580, 8.000 9.96"
-              />
-            </svg>
-          </span>
-        </button>
+          Header 2
+        </span>
       </div>
     </div>
     <div
-      className="c1 c12"
-      role="row"
+      className="c4 c5"
+      role="columnheader"
     >
       <div
-        className="c4 c13"
-        role="cell"
+        className="c6 c7"
       >
-        <div
-          className="c6 c7"
+        <span
+          className="c8 c9"
         >
-          <span
-            className="c14 c9"
-          >
-            Expandable
-          </span>
-        </div>
-      </div>
-      <div
-        className="c4 c13"
-        role="cell"
-      >
-        <div
-          className="c6 c7"
-        >
-          <span
-            className="c14 c9"
-          >
-            Expandable
-          </span>
-        </div>
-      </div>
-      <div
-        className="c4 c13"
-        role="cell"
-      >
-        <div
-          className="c6 c7"
-        >
-          <span
-            className="c14 c9"
-          >
-            Expandable
-          </span>
-        </div>
-      </div>
-      <div
-        className="c10 c13 c15 c11"
-        role="cell"
-      >
-        <button
-          aria-expanded={false}
-          className="NormalizedButton__Button-ey7f5x-0 c22 c17"
-          disabled={false}
-          onClick={[Function]}
-          type="button"
-        >
-          <span
-            className="c18"
-          >
-            <svg
-              aria-hidden="true"
-              className="c23"
-              focusable="false"
-              preserveAspectRatio="xMidYMid meet"
-              role="presentation"
-              viewBox="0 0 24 24"
-            >
-              <polygon
-                points="19.969 4 24 8.027 12 20 0 8.027 4.031 4 12 11.952"
-              />
-            </svg>
-          </span>
-        </button>
-        <button
-          aria-expanded={false}
-          className="NormalizedButton__Button-ey7f5x-0 c22 c17"
-          disabled={false}
-          onClick={[Function]}
-          type="button"
-        >
-          <span
-            className="c18"
-          >
-            <svg
-              aria-hidden="true"
-              className="c24 c21"
-              direction="down"
-              focusable="false"
-              preserveAspectRatio="xMidYMid meet"
-              role="presentation"
-              viewBox="0 0 16 16"
-            >
-              <polygon
-                points="14.620 3.580, 16.000 5.020, 8.000 12.730, 0.000 5.030, 1.400 3.580, 8.000 9.96"
-              />
-            </svg>
-          </span>
-        </button>
+          Header 3
+        </span>
       </div>
     </div>
     <div
-      className="c1 c25"
-      role="row"
+      className="c10 c5 c11"
+      role="columnheader"
     >
       <div
-        className="c4 c13"
-        role="cell"
+        className="c6 c7"
       >
-        <div
-          className="c6 c7"
-        >
-          <span
-            className="c14 c9"
-          >
-            Expandable with initial state
-          </span>
-        </div>
+        <span
+          className="c8 c9"
+        />
       </div>
+    </div>
+  </div>
+  <div
+    className="c1 c12"
+    role="row"
+  >
+    <div
+      className="c4 c13"
+      role="cell"
+    >
       <div
-        className="c4 c13"
-        role="cell"
+        className="c6 c7"
       >
-        <div
-          className="c6 c7"
+        <span
+          className="c14 c9"
         >
-          <span
-            className="c14 c9"
-          >
-            Expandable with initial state
-          </span>
-        </div>
-      </div>
-      <div
-        className="c4 c13"
-        role="cell"
-      >
-        <div
-          className="c6 c7"
-        >
-          <span
-            className="c14 c9"
-          >
-            Expandable with initial state
-          </span>
-        </div>
-      </div>
-      <div
-        className="c10 c13 c15 c11"
-        role="cell"
-      >
-        <button
-          aria-expanded={true}
-          className="NormalizedButton__Button-ey7f5x-0 c22 c17"
-          disabled={false}
-          onClick={[Function]}
-          type="button"
-        >
-          <span
-            className="c18"
-          >
-            <svg
-              aria-hidden="true"
-              className="c23"
-              focusable="false"
-              preserveAspectRatio="xMidYMid meet"
-              role="presentation"
-              viewBox="0 0 24 24"
-            >
-              <polygon
-                points="19.969 4 24 8.027 12 20 0 8.027 4.031 4 12 11.952"
-                transform="rotate(-180 12 12)"
-              />
-            </svg>
-          </span>
-        </button>
-        <button
-          aria-expanded={true}
-          className="NormalizedButton__Button-ey7f5x-0 c22 c17"
-          disabled={false}
-          onClick={[Function]}
-          type="button"
-        >
-          <span
-            className="c18"
-          >
-            <svg
-              aria-hidden="true"
-              className="c24 c26"
-              direction="up"
-              focusable="false"
-              preserveAspectRatio="xMidYMid meet"
-              role="presentation"
-              viewBox="0 0 16 16"
-            >
-              <polygon
-                points="14.620 3.580, 16.000 5.020, 8.000 12.730, 0.000 5.030, 1.400 3.580, 8.000 9.96"
-              />
-            </svg>
-          </span>
-        </button>
+          Disabled
+        </span>
       </div>
     </div>
     <div
-      className="c27"
-      role="row"
+      className="c4 c13"
+      role="cell"
     >
       <div
-        className="c28 c29"
-        role="cell"
+        className="c6 c7"
       >
-        <div
-          className="c30"
+        <span
+          className="c14 c9"
         >
-          <ul
-            className="c31"
+          Disabled
+        </span>
+      </div>
+    </div>
+    <div
+      className="c4 c13"
+      role="cell"
+    >
+      <div
+        className="c6 c7"
+      >
+        <span
+          className="c14 c9"
+        >
+          Disabled
+        </span>
+      </div>
+    </div>
+    <div
+      className="c10 c13 c15 c11"
+      role="cell"
+    >
+      <button
+        aria-expanded={false}
+        className="NormalizedButton__Button-ey7f5x-0 c16 c17"
+        disabled={true}
+        onClick={[Function]}
+        type="button"
+      >
+        <span
+          className="c18"
+        >
+          <svg
+            aria-hidden="true"
+            className="c19"
+            focusable="false"
+            preserveAspectRatio="xMidYMid meet"
+            role="presentation"
+            viewBox="0 0 24 24"
           >
-            <li
-              className="c32 c33"
+            <polygon
+              points="19.969 4 24 8.027 12 20 0 8.027 4.031 4 12 11.952"
+            />
+          </svg>
+        </span>
+      </button>
+      <button
+        aria-expanded={false}
+        className="NormalizedButton__Button-ey7f5x-0 c16 c17"
+        disabled={true}
+        onClick={[Function]}
+        type="button"
+      >
+        <span
+          className="c18"
+        >
+          <svg
+            aria-hidden="true"
+            className="c20 c21"
+            direction="down"
+            focusable="false"
+            preserveAspectRatio="xMidYMid meet"
+            role="presentation"
+            viewBox="0 0 16 16"
+          >
+            <polygon
+              points="14.620 3.580, 16.000 5.020, 8.000 12.730, 0.000 5.030, 1.400 3.580, 8.000 9.96"
+            />
+          </svg>
+        </span>
+      </button>
+    </div>
+  </div>
+  <div
+    className="c1 c12"
+    role="row"
+  >
+    <div
+      className="c4 c13"
+      role="cell"
+    >
+      <div
+        className="c6 c7"
+      >
+        <span
+          className="c14 c9"
+        >
+          Expandable
+        </span>
+      </div>
+    </div>
+    <div
+      className="c4 c13"
+      role="cell"
+    >
+      <div
+        className="c6 c7"
+      >
+        <span
+          className="c14 c9"
+        >
+          Expandable
+        </span>
+      </div>
+    </div>
+    <div
+      className="c4 c13"
+      role="cell"
+    >
+      <div
+        className="c6 c7"
+      >
+        <span
+          className="c14 c9"
+        >
+          Expandable
+        </span>
+      </div>
+    </div>
+    <div
+      className="c10 c13 c15 c11"
+      role="cell"
+    >
+      <button
+        aria-expanded={false}
+        className="NormalizedButton__Button-ey7f5x-0 c22 c17"
+        disabled={false}
+        onClick={[Function]}
+        type="button"
+      >
+        <span
+          className="c18"
+        >
+          <svg
+            aria-hidden="true"
+            className="c23"
+            focusable="false"
+            preserveAspectRatio="xMidYMid meet"
+            role="presentation"
+            viewBox="0 0 24 24"
+          >
+            <polygon
+              points="19.969 4 24 8.027 12 20 0 8.027 4.031 4 12 11.952"
+            />
+          </svg>
+        </span>
+      </button>
+      <button
+        aria-expanded={false}
+        className="NormalizedButton__Button-ey7f5x-0 c22 c17"
+        disabled={false}
+        onClick={[Function]}
+        type="button"
+      >
+        <span
+          className="c18"
+        >
+          <svg
+            aria-hidden="true"
+            className="c24 c21"
+            direction="down"
+            focusable="false"
+            preserveAspectRatio="xMidYMid meet"
+            role="presentation"
+            viewBox="0 0 16 16"
+          >
+            <polygon
+              points="14.620 3.580, 16.000 5.020, 8.000 12.730, 0.000 5.030, 1.400 3.580, 8.000 9.96"
+            />
+          </svg>
+        </span>
+      </button>
+    </div>
+  </div>
+  <div
+    className="c1 c25"
+    role="row"
+  >
+    <div
+      className="c4 c13"
+      role="cell"
+    >
+      <div
+        className="c6 c7"
+      >
+        <span
+          className="c14 c9"
+        >
+          Expandable with initial state
+        </span>
+      </div>
+    </div>
+    <div
+      className="c4 c13"
+      role="cell"
+    >
+      <div
+        className="c6 c7"
+      >
+        <span
+          className="c14 c9"
+        >
+          Expandable with initial state
+        </span>
+      </div>
+    </div>
+    <div
+      className="c4 c13"
+      role="cell"
+    >
+      <div
+        className="c6 c7"
+      >
+        <span
+          className="c14 c9"
+        >
+          Expandable with initial state
+        </span>
+      </div>
+    </div>
+    <div
+      className="c10 c13 c15 c11"
+      role="cell"
+    >
+      <button
+        aria-expanded={true}
+        className="NormalizedButton__Button-ey7f5x-0 c22 c17"
+        disabled={false}
+        onClick={[Function]}
+        type="button"
+      >
+        <span
+          className="c18"
+        >
+          <svg
+            aria-hidden="true"
+            className="c23"
+            focusable="false"
+            preserveAspectRatio="xMidYMid meet"
+            role="presentation"
+            viewBox="0 0 24 24"
+          >
+            <polygon
+              points="19.969 4 24 8.027 12 20 0 8.027 4.031 4 12 11.952"
+              transform="rotate(-180 12 12)"
+            />
+          </svg>
+        </span>
+      </button>
+      <button
+        aria-expanded={true}
+        className="NormalizedButton__Button-ey7f5x-0 c22 c17"
+        disabled={false}
+        onClick={[Function]}
+        type="button"
+      >
+        <span
+          className="c18"
+        >
+          <svg
+            aria-hidden="true"
+            className="c24 c26"
+            direction="up"
+            focusable="false"
+            preserveAspectRatio="xMidYMid meet"
+            role="presentation"
+            viewBox="0 0 16 16"
+          >
+            <polygon
+              points="14.620 3.580, 16.000 5.020, 8.000 12.730, 0.000 5.030, 1.400 3.580, 8.000 9.96"
+            />
+          </svg>
+        </span>
+      </button>
+    </div>
+  </div>
+  <div
+    className="c27"
+    role="row"
+  >
+    <div
+      className="c28 c29"
+      role="cell"
+    >
+      <div
+        className="c30"
+      >
+        <ul
+          className="c31"
+        >
+          <li
+            className="c32 c33"
+          >
+            <div
+              className="c34 c35"
             >
               <div
-                className="c34 c35"
+                className="c6"
+              >
+                <span
+                  className="c8 c9"
+                >
+                  This is a reaaaallllyyy loooong label demonstrating truncation
+                </span>
+              </div>
+            </div>
+            <div
+              className="c34 c36"
+              textAlign="right"
+            >
+              <div
+                className="c6"
+              >
+                <span
+                  className="c14 c9"
+                >
+                  These values are super long to also demonstrate truncation
+                </span>
+              </div>
+            </div>
+          </li>
+          <li
+            className="c32 c33"
+          >
+            <div
+              className="c34 c35"
+            >
+              <div
+                className="c6"
+              >
+                <span
+                  className="c8 c9"
+                >
+                  Label 2
+                </span>
+              </div>
+            </div>
+            <div
+              className="c34 c36"
+              textAlign="right"
+            >
+              <div
+                className="c6"
+              >
+                <span
+                  className="c14 c9"
+                >
+                  42100000000
+                </span>
+              </div>
+            </div>
+          </li>
+          <li
+            className="c32 c33"
+          >
+            <div
+              className="c34 c35"
+            >
+              <div
+                className="c6"
+              >
+                <span
+                  className="c8 c9"
+                >
+                  Label 3
+                </span>
+              </div>
+            </div>
+            <div
+              className="c34 c36"
+              textAlign="right"
+            >
+              <div
+                className="c6"
+              >
+                <span
+                  className="c14 c9"
+                >
+                  42100000000
+                </span>
+              </div>
+            </div>
+          </li>
+          <li
+            className="c32 c33"
+          >
+            <div
+              className="c34 c35"
+            >
+              <div
+                className="c6"
+              >
+                <span
+                  className="c8 c9"
+                >
+                  Label 4
+                </span>
+              </div>
+            </div>
+            <div
+              className="c34 c36"
+              textAlign="right"
+            >
+              <div
+                className="c6"
+              >
+                <span
+                  className="c14 c9"
+                >
+                  42100000000
+                </span>
+              </div>
+            </div>
+          </li>
+          <li
+            className="c32 c33"
+          >
+            <div
+              className="c34 c35"
+            >
+              <div
+                className="c6"
+              >
+                <span
+                  className="c8 c9"
+                >
+                  Label 5
+                </span>
+              </div>
+            </div>
+            <div
+              className="c34 c36"
+              textAlign="right"
+            >
+              <div
+                className="c6"
+              >
+                <span
+                  className="c14 c9"
+                >
+                  42100000000
+                </span>
+              </div>
+            </div>
+          </li>
+          <li
+            className="c32 c33"
+          >
+            <div
+              className="c34 c35"
+            >
+              <div
+                className="c6"
+              >
+                <span
+                  className="c8 c9"
+                >
+                  Label 6
+                </span>
+              </div>
+            </div>
+            <div
+              className="c34 c36"
+              textAlign="right"
+            >
+              <div
+                className="c6"
+              >
+                <span
+                  className="c14 c9"
+                >
+                  42100000000
+                </span>
+              </div>
+            </div>
+          </li>
+          <li
+            className="c32 c33"
+          >
+            <div
+              className="c34 c35"
+            >
+              <div
+                className="c6"
+              >
+                <span
+                  className="c8 c9"
+                >
+                  Label 7
+                </span>
+              </div>
+            </div>
+            <div
+              className="c34 c36"
+              textAlign="right"
+            >
+              <div
+                className="c6"
+              >
+                <span
+                  className="c14 c9"
+                >
+                  42100000000
+                </span>
+              </div>
+            </div>
+          </li>
+          <li
+            className="c32 c33"
+          >
+            <div
+              className="c34 c35"
+            >
+              <div
+                className="c6"
+              >
+                <span
+                  className="c8 c9"
+                >
+                  Label 8
+                </span>
+              </div>
+            </div>
+            <div
+              className="c34 c36"
+              textAlign="right"
+            >
+              <div
+                className="c6"
+              >
+                <span
+                  className="c14 c9"
+                >
+                  42100000000
+                </span>
+              </div>
+            </div>
+          </li>
+          <li
+            className="c32 c33"
+          >
+            <div
+              className="c34 c35"
+            >
+              <div
+                className="c6"
+              >
+                <span
+                  className="c8 c9"
+                >
+                  Label 9
+                </span>
+              </div>
+            </div>
+            <div
+              className="c34 c36"
+              textAlign="right"
+            >
+              <div
+                className="c6"
+              >
+                <span
+                  className="c14 c9"
+                >
+                  42100000000
+                </span>
+              </div>
+            </div>
+          </li>
+          <li
+            className="c32 c33"
+          >
+            <div
+              className="c34 c35"
+            >
+              <div
+                className="c6"
+              >
+                <span
+                  className="c8 c9"
+                >
+                  Label 10
+                </span>
+              </div>
+            </div>
+            <div
+              className="c34 c36"
+              textAlign="right"
+            >
+              <div
+                className="c6"
+              >
+                <span
+                  className="c14 c9"
+                >
+                  42100000000
+                </span>
+              </div>
+            </div>
+          </li>
+          <li
+            className="c32 c33"
+          >
+            <div
+              className="c34 c35"
+            >
+              <div
+                className="c6"
+              >
+                <span
+                  className="c8 c9"
+                >
+                  Label 11
+                </span>
+              </div>
+            </div>
+            <div
+              className="c34 c36"
+              textAlign="right"
+            >
+              <div
+                className="c6"
+              >
+                <span
+                  className="c14 c9"
+                >
+                  42100000000
+                </span>
+              </div>
+            </div>
+          </li>
+          <li
+            className="c32 c33"
+          >
+            <div
+              className="c34 c35"
+            >
+              <div
+                className="c6"
+              >
+                <span
+                  className="c8 c9"
+                >
+                  Label 12
+                </span>
+              </div>
+            </div>
+            <div
+              className="c34 c36"
+              textAlign="right"
+            >
+              <div
+                className="c6"
+              >
+                <span
+                  className="c14 c9"
+                >
+                  42100000000
+                </span>
+              </div>
+            </div>
+          </li>
+          <li
+            className="c32 c33"
+          >
+            <div
+              className="c34 c35"
+            >
+              <div
+                className="c6"
+              >
+                <span
+                  className="c8 c9"
+                >
+                  Label 13
+                </span>
+              </div>
+            </div>
+            <div
+              className="c34 c36"
+              textAlign="right"
+            >
+              <div
+                className="c6"
+              >
+                <span
+                  className="c14 c9"
+                >
+                  42100000000
+                </span>
+              </div>
+            </div>
+          </li>
+          <li
+            className="c32 c33"
+          >
+            <div
+              className="c34 c35"
+            >
+              <div
+                className="c6"
+              >
+                <span
+                  className="c8 c9"
+                >
+                  Label 14
+                </span>
+              </div>
+            </div>
+            <div
+              className="c34 c36"
+              textAlign="right"
+            >
+              <div
+                className="c6"
+              >
+                <span
+                  className="c14 c9"
+                >
+                  42100000000
+                </span>
+              </div>
+            </div>
+          </li>
+          <li
+            className="c32 c33"
+          >
+            <div
+              className="c34 c35"
+            >
+              <div
+                className="c6"
+              >
+                <span
+                  className="c8 c9"
+                >
+                  Label 15
+                </span>
+              </div>
+            </div>
+            <div
+              className="c34 c36"
+              textAlign="right"
+            >
+              <div
+                className="c6"
+              >
+                <span
+                  className="c14 c9"
+                >
+                  42100000000
+                </span>
+              </div>
+            </div>
+          </li>
+          <li
+            className="c32 c33"
+          >
+            <div
+              className="c34 c35"
+            >
+              <div
+                className="c6"
+              >
+                <span
+                  className="c8 c9"
+                >
+                  Label 16
+                </span>
+              </div>
+            </div>
+            <div
+              className="c34 c36"
+              textAlign="right"
+            >
+              <div
+                className="c6"
+              >
+                <span
+                  className="c14 c9"
+                >
+                  42100000000
+                </span>
+              </div>
+            </div>
+          </li>
+          <li
+            className="c32 c33"
+          >
+            <div
+              className="c34 c35"
+            >
+              <div
+                className="c6"
+              >
+                <span
+                  className="c8 c9"
+                >
+                  Label 17
+                </span>
+              </div>
+            </div>
+            <div
+              className="c34 c36"
+              textAlign="right"
+            >
+              <div
+                className="c6"
+              >
+                <span
+                  className="c14 c9"
+                >
+                  42100000000
+                </span>
+              </div>
+            </div>
+          </li>
+          <li
+            className="c32 c33"
+          >
+            <div
+              className="c34 c35"
+            >
+              <div
+                className="c6"
+              >
+                <span
+                  className="c8 c9"
+                >
+                  Label 18
+                </span>
+              </div>
+            </div>
+            <div
+              className="c34 c36"
+              textAlign="right"
+            >
+              <div
+                className="c6"
+              >
+                <span
+                  className="c14 c9"
+                >
+                  42100000000
+                </span>
+              </div>
+            </div>
+          </li>
+          <li
+            className="c32 c33"
+          >
+            <div
+              className="c34 c35"
+            >
+              <div
+                className="c6"
+              >
+                <span
+                  className="c8 c9"
+                >
+                  Label 19
+                </span>
+              </div>
+            </div>
+            <div
+              className="c34 c36"
+              textAlign="right"
+            >
+              <div
+                className="c6"
+              >
+                <span
+                  className="c14 c9"
+                >
+                  42100000000
+                </span>
+              </div>
+            </div>
+          </li>
+          <li
+            className="c32 c33"
+          >
+            <div
+              className="c34 c35"
+            >
+              <div
+                className="c6"
+              >
+                <span
+                  className="c8 c9"
+                >
+                  Label 20
+                </span>
+              </div>
+            </div>
+            <div
+              className="c34 c36"
+              textAlign="right"
+            >
+              <div
+                className="c6"
+              >
+                <span
+                  className="c14 c9"
+                >
+                  42100000000
+                </span>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div
+        className="c37"
+      >
+        <ul
+          className="c31 c38"
+        >
+          <li
+            className="c39 c40"
+          >
+            <div
+              className="c41"
+            >
+              <div
+                className="c42"
               >
                 <div
                   className="c6"
@@ -4591,25 +5203,24 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Expanded Table 
                 </div>
               </div>
               <div
-                className="c34 c36"
-                textAlign="right"
+                className="c6"
               >
-                <div
-                  className="c6"
+                <span
+                  className="c14 c9"
                 >
-                  <span
-                    className="c14 c9"
-                  >
-                    This valuues is super long to also demonstrate truncation
-                  </span>
-                </div>
+                  These values are super long to also demonstrate truncation
+                </span>
               </div>
-            </li>
-            <li
-              className="c32 c33"
+            </div>
+          </li>
+          <li
+            className="c39 c40"
+          >
+            <div
+              className="c41"
             >
               <div
-                className="c34 c35"
+                className="c42"
               >
                 <div
                   className="c6"
@@ -4622,25 +5233,24 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Expanded Table 
                 </div>
               </div>
               <div
-                className="c34 c36"
-                textAlign="right"
+                className="c6"
               >
-                <div
-                  className="c6"
+                <span
+                  className="c14 c9"
                 >
-                  <span
-                    className="c14 c9"
-                  >
-                    42100000000
-                  </span>
-                </div>
+                  42100000000
+                </span>
               </div>
-            </li>
-            <li
-              className="c32 c33"
+            </div>
+          </li>
+          <li
+            className="c39 c40"
+          >
+            <div
+              className="c41"
             >
               <div
-                className="c34 c35"
+                className="c42"
               >
                 <div
                   className="c6"
@@ -4653,25 +5263,24 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Expanded Table 
                 </div>
               </div>
               <div
-                className="c34 c36"
-                textAlign="right"
+                className="c6"
               >
-                <div
-                  className="c6"
+                <span
+                  className="c14 c9"
                 >
-                  <span
-                    className="c14 c9"
-                  >
-                    42100000000
-                  </span>
-                </div>
+                  42100000000
+                </span>
               </div>
-            </li>
-            <li
-              className="c32 c33"
+            </div>
+          </li>
+          <li
+            className="c39 c40"
+          >
+            <div
+              className="c41"
             >
               <div
-                className="c34 c35"
+                className="c42"
               >
                 <div
                   className="c6"
@@ -4684,25 +5293,24 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Expanded Table 
                 </div>
               </div>
               <div
-                className="c34 c36"
-                textAlign="right"
+                className="c6"
               >
-                <div
-                  className="c6"
+                <span
+                  className="c14 c9"
                 >
-                  <span
-                    className="c14 c9"
-                  >
-                    42100000000
-                  </span>
-                </div>
+                  42100000000
+                </span>
               </div>
-            </li>
-            <li
-              className="c32 c33"
+            </div>
+          </li>
+          <li
+            className="c39 c40"
+          >
+            <div
+              className="c41"
             >
               <div
-                className="c34 c35"
+                className="c42"
               >
                 <div
                   className="c6"
@@ -4715,25 +5323,24 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Expanded Table 
                 </div>
               </div>
               <div
-                className="c34 c36"
-                textAlign="right"
+                className="c6"
               >
-                <div
-                  className="c6"
+                <span
+                  className="c14 c9"
                 >
-                  <span
-                    className="c14 c9"
-                  >
-                    42100000000
-                  </span>
-                </div>
+                  42100000000
+                </span>
               </div>
-            </li>
-            <li
-              className="c32 c33"
+            </div>
+          </li>
+          <li
+            className="c39 c40"
+          >
+            <div
+              className="c41"
             >
               <div
-                className="c34 c35"
+                className="c42"
               >
                 <div
                   className="c6"
@@ -4746,25 +5353,24 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Expanded Table 
                 </div>
               </div>
               <div
-                className="c34 c36"
-                textAlign="right"
+                className="c6"
               >
-                <div
-                  className="c6"
+                <span
+                  className="c14 c9"
                 >
-                  <span
-                    className="c14 c9"
-                  >
-                    42100000000
-                  </span>
-                </div>
+                  42100000000
+                </span>
               </div>
-            </li>
-            <li
-              className="c32 c33"
+            </div>
+          </li>
+          <li
+            className="c39 c40"
+          >
+            <div
+              className="c41"
             >
               <div
-                className="c34 c35"
+                className="c42"
               >
                 <div
                   className="c6"
@@ -4777,25 +5383,24 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Expanded Table 
                 </div>
               </div>
               <div
-                className="c34 c36"
-                textAlign="right"
+                className="c6"
               >
-                <div
-                  className="c6"
+                <span
+                  className="c14 c9"
                 >
-                  <span
-                    className="c14 c9"
-                  >
-                    42100000000
-                  </span>
-                </div>
+                  42100000000
+                </span>
               </div>
-            </li>
-            <li
-              className="c32 c33"
+            </div>
+          </li>
+          <li
+            className="c39 c40"
+          >
+            <div
+              className="c41"
             >
               <div
-                className="c34 c35"
+                className="c42"
               >
                 <div
                   className="c6"
@@ -4808,25 +5413,24 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Expanded Table 
                 </div>
               </div>
               <div
-                className="c34 c36"
-                textAlign="right"
+                className="c6"
               >
-                <div
-                  className="c6"
+                <span
+                  className="c14 c9"
                 >
-                  <span
-                    className="c14 c9"
-                  >
-                    42100000000
-                  </span>
-                </div>
+                  42100000000
+                </span>
               </div>
-            </li>
-            <li
-              className="c32 c33"
+            </div>
+          </li>
+          <li
+            className="c39 c40"
+          >
+            <div
+              className="c41"
             >
               <div
-                className="c34 c35"
+                className="c42"
               >
                 <div
                   className="c6"
@@ -4839,25 +5443,24 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Expanded Table 
                 </div>
               </div>
               <div
-                className="c34 c36"
-                textAlign="right"
+                className="c6"
               >
-                <div
-                  className="c6"
+                <span
+                  className="c14 c9"
                 >
-                  <span
-                    className="c14 c9"
-                  >
-                    42100000000
-                  </span>
-                </div>
+                  42100000000
+                </span>
               </div>
-            </li>
-            <li
-              className="c32 c33"
+            </div>
+          </li>
+          <li
+            className="c39 c40"
+          >
+            <div
+              className="c41"
             >
               <div
-                className="c34 c35"
+                className="c42"
               >
                 <div
                   className="c6"
@@ -4870,25 +5473,24 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Expanded Table 
                 </div>
               </div>
               <div
-                className="c34 c36"
-                textAlign="right"
+                className="c6"
               >
-                <div
-                  className="c6"
+                <span
+                  className="c14 c9"
                 >
-                  <span
-                    className="c14 c9"
-                  >
-                    42100000000
-                  </span>
-                </div>
+                  42100000000
+                </span>
               </div>
-            </li>
-            <li
-              className="c32 c33"
+            </div>
+          </li>
+          <li
+            className="c39 c40"
+          >
+            <div
+              className="c41"
             >
               <div
-                className="c34 c35"
+                className="c42"
               >
                 <div
                   className="c6"
@@ -4901,25 +5503,24 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Expanded Table 
                 </div>
               </div>
               <div
-                className="c34 c36"
-                textAlign="right"
+                className="c6"
               >
-                <div
-                  className="c6"
+                <span
+                  className="c14 c9"
                 >
-                  <span
-                    className="c14 c9"
-                  >
-                    42100000000
-                  </span>
-                </div>
+                  42100000000
+                </span>
               </div>
-            </li>
-            <li
-              className="c32 c33"
+            </div>
+          </li>
+          <li
+            className="c39 c40"
+          >
+            <div
+              className="c41"
             >
               <div
-                className="c34 c35"
+                className="c42"
               >
                 <div
                   className="c6"
@@ -4932,25 +5533,24 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Expanded Table 
                 </div>
               </div>
               <div
-                className="c34 c36"
-                textAlign="right"
+                className="c6"
               >
-                <div
-                  className="c6"
+                <span
+                  className="c14 c9"
                 >
-                  <span
-                    className="c14 c9"
-                  >
-                    42100000000
-                  </span>
-                </div>
+                  42100000000
+                </span>
               </div>
-            </li>
-            <li
-              className="c32 c33"
+            </div>
+          </li>
+          <li
+            className="c39 c40"
+          >
+            <div
+              className="c41"
             >
               <div
-                className="c34 c35"
+                className="c42"
               >
                 <div
                   className="c6"
@@ -4963,25 +5563,24 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Expanded Table 
                 </div>
               </div>
               <div
-                className="c34 c36"
-                textAlign="right"
+                className="c6"
               >
-                <div
-                  className="c6"
+                <span
+                  className="c14 c9"
                 >
-                  <span
-                    className="c14 c9"
-                  >
-                    42100000000
-                  </span>
-                </div>
+                  42100000000
+                </span>
               </div>
-            </li>
-            <li
-              className="c32 c33"
+            </div>
+          </li>
+          <li
+            className="c39 c40"
+          >
+            <div
+              className="c41"
             >
               <div
-                className="c34 c35"
+                className="c42"
               >
                 <div
                   className="c6"
@@ -4994,25 +5593,24 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Expanded Table 
                 </div>
               </div>
               <div
-                className="c34 c36"
-                textAlign="right"
+                className="c6"
               >
-                <div
-                  className="c6"
+                <span
+                  className="c14 c9"
                 >
-                  <span
-                    className="c14 c9"
-                  >
-                    42100000000
-                  </span>
-                </div>
+                  42100000000
+                </span>
               </div>
-            </li>
-            <li
-              className="c32 c33"
+            </div>
+          </li>
+          <li
+            className="c39 c40"
+          >
+            <div
+              className="c41"
             >
               <div
-                className="c34 c35"
+                className="c42"
               >
                 <div
                   className="c6"
@@ -5025,25 +5623,24 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Expanded Table 
                 </div>
               </div>
               <div
-                className="c34 c36"
-                textAlign="right"
+                className="c6"
               >
-                <div
-                  className="c6"
+                <span
+                  className="c14 c9"
                 >
-                  <span
-                    className="c14 c9"
-                  >
-                    42100000000
-                  </span>
-                </div>
+                  42100000000
+                </span>
               </div>
-            </li>
-            <li
-              className="c32 c33"
+            </div>
+          </li>
+          <li
+            className="c39 c40"
+          >
+            <div
+              className="c41"
             >
               <div
-                className="c34 c35"
+                className="c42"
               >
                 <div
                   className="c6"
@@ -5056,25 +5653,24 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Expanded Table 
                 </div>
               </div>
               <div
-                className="c34 c36"
-                textAlign="right"
+                className="c6"
               >
-                <div
-                  className="c6"
+                <span
+                  className="c14 c9"
                 >
-                  <span
-                    className="c14 c9"
-                  >
-                    42100000000
-                  </span>
-                </div>
+                  42100000000
+                </span>
               </div>
-            </li>
-            <li
-              className="c32 c33"
+            </div>
+          </li>
+          <li
+            className="c39 c40"
+          >
+            <div
+              className="c41"
             >
               <div
-                className="c34 c35"
+                className="c42"
               >
                 <div
                   className="c6"
@@ -5087,25 +5683,24 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Expanded Table 
                 </div>
               </div>
               <div
-                className="c34 c36"
-                textAlign="right"
+                className="c6"
               >
-                <div
-                  className="c6"
+                <span
+                  className="c14 c9"
                 >
-                  <span
-                    className="c14 c9"
-                  >
-                    42100000000
-                  </span>
-                </div>
+                  42100000000
+                </span>
               </div>
-            </li>
-            <li
-              className="c32 c33"
+            </div>
+          </li>
+          <li
+            className="c39 c40"
+          >
+            <div
+              className="c41"
             >
               <div
-                className="c34 c35"
+                className="c42"
               >
                 <div
                   className="c6"
@@ -5118,25 +5713,24 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Expanded Table 
                 </div>
               </div>
               <div
-                className="c34 c36"
-                textAlign="right"
+                className="c6"
               >
-                <div
-                  className="c6"
+                <span
+                  className="c14 c9"
                 >
-                  <span
-                    className="c14 c9"
-                  >
-                    42100000000
-                  </span>
-                </div>
+                  42100000000
+                </span>
               </div>
-            </li>
-            <li
-              className="c32 c33"
+            </div>
+          </li>
+          <li
+            className="c39 c40"
+          >
+            <div
+              className="c41"
             >
               <div
-                className="c34 c35"
+                className="c42"
               >
                 <div
                   className="c6"
@@ -5149,25 +5743,24 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Expanded Table 
                 </div>
               </div>
               <div
-                className="c34 c36"
-                textAlign="right"
+                className="c6"
               >
-                <div
-                  className="c6"
+                <span
+                  className="c14 c9"
                 >
-                  <span
-                    className="c14 c9"
-                  >
-                    42100000000
-                  </span>
-                </div>
+                  42100000000
+                </span>
               </div>
-            </li>
-            <li
-              className="c32 c33"
+            </div>
+          </li>
+          <li
+            className="c39 c40"
+          >
+            <div
+              className="c41"
             >
               <div
-                className="c34 c35"
+                className="c42"
               >
                 <div
                   className="c6"
@@ -5180,833 +5773,220 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Expanded Table 
                 </div>
               </div>
               <div
-                className="c34 c36"
-                textAlign="right"
+                className="c6"
               >
-                <div
-                  className="c6"
+                <span
+                  className="c14 c9"
                 >
-                  <span
-                    className="c14 c9"
-                  >
-                    42100000000
-                  </span>
-                </div>
+                  42100000000
+                </span>
               </div>
-            </li>
-          </ul>
-        </div>
-        <div
-          className="c37"
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div
+    className="c1 c12"
+    role="row"
+  >
+    <div
+      className="c4 c13"
+      role="cell"
+    >
+      <div
+        className="c6 c7"
+      >
+        <span
+          className="c14 c9"
         >
-          <ul
-            className="c31 c38"
-          >
-            <li
-              className="c39 c40"
-            >
-              <div
-                className="c41"
-              >
-                <div
-                  className="c42"
-                >
-                  <div
-                    className="c6"
-                  >
-                    <span
-                      className="c8 c9"
-                    >
-                      This is a reaaaallllyyy loooong label demonstrating truncation
-                    </span>
-                  </div>
-                </div>
-                <div
-                  className="c6"
-                >
-                  <span
-                    className="c14 c9"
-                  >
-                    This valuues is super long to also demonstrate truncation
-                  </span>
-                </div>
-              </div>
-            </li>
-            <li
-              className="c39 c40"
-            >
-              <div
-                className="c41"
-              >
-                <div
-                  className="c42"
-                >
-                  <div
-                    className="c6"
-                  >
-                    <span
-                      className="c8 c9"
-                    >
-                      Label 2
-                    </span>
-                  </div>
-                </div>
-                <div
-                  className="c6"
-                >
-                  <span
-                    className="c14 c9"
-                  >
-                    42100000000
-                  </span>
-                </div>
-              </div>
-            </li>
-            <li
-              className="c39 c40"
-            >
-              <div
-                className="c41"
-              >
-                <div
-                  className="c42"
-                >
-                  <div
-                    className="c6"
-                  >
-                    <span
-                      className="c8 c9"
-                    >
-                      Label 3
-                    </span>
-                  </div>
-                </div>
-                <div
-                  className="c6"
-                >
-                  <span
-                    className="c14 c9"
-                  >
-                    42100000000
-                  </span>
-                </div>
-              </div>
-            </li>
-            <li
-              className="c39 c40"
-            >
-              <div
-                className="c41"
-              >
-                <div
-                  className="c42"
-                >
-                  <div
-                    className="c6"
-                  >
-                    <span
-                      className="c8 c9"
-                    >
-                      Label 4
-                    </span>
-                  </div>
-                </div>
-                <div
-                  className="c6"
-                >
-                  <span
-                    className="c14 c9"
-                  >
-                    42100000000
-                  </span>
-                </div>
-              </div>
-            </li>
-            <li
-              className="c39 c40"
-            >
-              <div
-                className="c41"
-              >
-                <div
-                  className="c42"
-                >
-                  <div
-                    className="c6"
-                  >
-                    <span
-                      className="c8 c9"
-                    >
-                      Label 5
-                    </span>
-                  </div>
-                </div>
-                <div
-                  className="c6"
-                >
-                  <span
-                    className="c14 c9"
-                  >
-                    42100000000
-                  </span>
-                </div>
-              </div>
-            </li>
-            <li
-              className="c39 c40"
-            >
-              <div
-                className="c41"
-              >
-                <div
-                  className="c42"
-                >
-                  <div
-                    className="c6"
-                  >
-                    <span
-                      className="c8 c9"
-                    >
-                      Label 6
-                    </span>
-                  </div>
-                </div>
-                <div
-                  className="c6"
-                >
-                  <span
-                    className="c14 c9"
-                  >
-                    42100000000
-                  </span>
-                </div>
-              </div>
-            </li>
-            <li
-              className="c39 c40"
-            >
-              <div
-                className="c41"
-              >
-                <div
-                  className="c42"
-                >
-                  <div
-                    className="c6"
-                  >
-                    <span
-                      className="c8 c9"
-                    >
-                      Label 7
-                    </span>
-                  </div>
-                </div>
-                <div
-                  className="c6"
-                >
-                  <span
-                    className="c14 c9"
-                  >
-                    42100000000
-                  </span>
-                </div>
-              </div>
-            </li>
-            <li
-              className="c39 c40"
-            >
-              <div
-                className="c41"
-              >
-                <div
-                  className="c42"
-                >
-                  <div
-                    className="c6"
-                  >
-                    <span
-                      className="c8 c9"
-                    >
-                      Label 8
-                    </span>
-                  </div>
-                </div>
-                <div
-                  className="c6"
-                >
-                  <span
-                    className="c14 c9"
-                  >
-                    42100000000
-                  </span>
-                </div>
-              </div>
-            </li>
-            <li
-              className="c39 c40"
-            >
-              <div
-                className="c41"
-              >
-                <div
-                  className="c42"
-                >
-                  <div
-                    className="c6"
-                  >
-                    <span
-                      className="c8 c9"
-                    >
-                      Label 9
-                    </span>
-                  </div>
-                </div>
-                <div
-                  className="c6"
-                >
-                  <span
-                    className="c14 c9"
-                  >
-                    42100000000
-                  </span>
-                </div>
-              </div>
-            </li>
-            <li
-              className="c39 c40"
-            >
-              <div
-                className="c41"
-              >
-                <div
-                  className="c42"
-                >
-                  <div
-                    className="c6"
-                  >
-                    <span
-                      className="c8 c9"
-                    >
-                      Label 10
-                    </span>
-                  </div>
-                </div>
-                <div
-                  className="c6"
-                >
-                  <span
-                    className="c14 c9"
-                  >
-                    42100000000
-                  </span>
-                </div>
-              </div>
-            </li>
-            <li
-              className="c39 c40"
-            >
-              <div
-                className="c41"
-              >
-                <div
-                  className="c42"
-                >
-                  <div
-                    className="c6"
-                  >
-                    <span
-                      className="c8 c9"
-                    >
-                      Label 11
-                    </span>
-                  </div>
-                </div>
-                <div
-                  className="c6"
-                >
-                  <span
-                    className="c14 c9"
-                  >
-                    42100000000
-                  </span>
-                </div>
-              </div>
-            </li>
-            <li
-              className="c39 c40"
-            >
-              <div
-                className="c41"
-              >
-                <div
-                  className="c42"
-                >
-                  <div
-                    className="c6"
-                  >
-                    <span
-                      className="c8 c9"
-                    >
-                      Label 12
-                    </span>
-                  </div>
-                </div>
-                <div
-                  className="c6"
-                >
-                  <span
-                    className="c14 c9"
-                  >
-                    42100000000
-                  </span>
-                </div>
-              </div>
-            </li>
-            <li
-              className="c39 c40"
-            >
-              <div
-                className="c41"
-              >
-                <div
-                  className="c42"
-                >
-                  <div
-                    className="c6"
-                  >
-                    <span
-                      className="c8 c9"
-                    >
-                      Label 13
-                    </span>
-                  </div>
-                </div>
-                <div
-                  className="c6"
-                >
-                  <span
-                    className="c14 c9"
-                  >
-                    42100000000
-                  </span>
-                </div>
-              </div>
-            </li>
-            <li
-              className="c39 c40"
-            >
-              <div
-                className="c41"
-              >
-                <div
-                  className="c42"
-                >
-                  <div
-                    className="c6"
-                  >
-                    <span
-                      className="c8 c9"
-                    >
-                      Label 14
-                    </span>
-                  </div>
-                </div>
-                <div
-                  className="c6"
-                >
-                  <span
-                    className="c14 c9"
-                  >
-                    42100000000
-                  </span>
-                </div>
-              </div>
-            </li>
-            <li
-              className="c39 c40"
-            >
-              <div
-                className="c41"
-              >
-                <div
-                  className="c42"
-                >
-                  <div
-                    className="c6"
-                  >
-                    <span
-                      className="c8 c9"
-                    >
-                      Label 15
-                    </span>
-                  </div>
-                </div>
-                <div
-                  className="c6"
-                >
-                  <span
-                    className="c14 c9"
-                  >
-                    42100000000
-                  </span>
-                </div>
-              </div>
-            </li>
-            <li
-              className="c39 c40"
-            >
-              <div
-                className="c41"
-              >
-                <div
-                  className="c42"
-                >
-                  <div
-                    className="c6"
-                  >
-                    <span
-                      className="c8 c9"
-                    >
-                      Label 16
-                    </span>
-                  </div>
-                </div>
-                <div
-                  className="c6"
-                >
-                  <span
-                    className="c14 c9"
-                  >
-                    42100000000
-                  </span>
-                </div>
-              </div>
-            </li>
-            <li
-              className="c39 c40"
-            >
-              <div
-                className="c41"
-              >
-                <div
-                  className="c42"
-                >
-                  <div
-                    className="c6"
-                  >
-                    <span
-                      className="c8 c9"
-                    >
-                      Label 17
-                    </span>
-                  </div>
-                </div>
-                <div
-                  className="c6"
-                >
-                  <span
-                    className="c14 c9"
-                  >
-                    42100000000
-                  </span>
-                </div>
-              </div>
-            </li>
-            <li
-              className="c39 c40"
-            >
-              <div
-                className="c41"
-              >
-                <div
-                  className="c42"
-                >
-                  <div
-                    className="c6"
-                  >
-                    <span
-                      className="c8 c9"
-                    >
-                      Label 18
-                    </span>
-                  </div>
-                </div>
-                <div
-                  className="c6"
-                >
-                  <span
-                    className="c14 c9"
-                  >
-                    42100000000
-                  </span>
-                </div>
-              </div>
-            </li>
-            <li
-              className="c39 c40"
-            >
-              <div
-                className="c41"
-              >
-                <div
-                  className="c42"
-                >
-                  <div
-                    className="c6"
-                  >
-                    <span
-                      className="c8 c9"
-                    >
-                      Label 19
-                    </span>
-                  </div>
-                </div>
-                <div
-                  className="c6"
-                >
-                  <span
-                    className="c14 c9"
-                  >
-                    42100000000
-                  </span>
-                </div>
-              </div>
-            </li>
-            <li
-              className="c39 c40"
-            >
-              <div
-                className="c41"
-              >
-                <div
-                  className="c42"
-                >
-                  <div
-                    className="c6"
-                  >
-                    <span
-                      className="c8 c9"
-                    >
-                      Label 20
-                    </span>
-                  </div>
-                </div>
-                <div
-                  className="c6"
-                >
-                  <span
-                    className="c14 c9"
-                  >
-                    42100000000
-                  </span>
-                </div>
-              </div>
-            </li>
-          </ul>
-        </div>
+          Expandable component items
+        </span>
       </div>
     </div>
     <div
-      className="c1 c12"
-      role="row"
+      className="c4 c13"
+      role="cell"
     >
       <div
-        className="c4 c13"
-        role="cell"
+        className="c6 c7"
       >
-        <div
-          className="c6 c7"
+        <span
+          className="c14 c9"
         >
-          <span
-            className="c14 c9"
-          >
-            Expandable component items
-          </span>
-        </div>
-      </div>
-      <div
-        className="c4 c13"
-        role="cell"
-      >
-        <div
-          className="c6 c7"
-        >
-          <span
-            className="c14 c9"
-          >
-            Expandable component items
-          </span>
-        </div>
-      </div>
-      <div
-        className="c4 c13"
-        role="cell"
-      >
-        <div
-          className="c6 c7"
-        >
-          <span
-            className="c14 c9"
-          >
-            Expandable component items
-          </span>
-        </div>
-      </div>
-      <div
-        className="c10 c13 c15 c11"
-        role="cell"
-      >
-        <button
-          aria-expanded={false}
-          className="NormalizedButton__Button-ey7f5x-0 c22 c17"
-          disabled={false}
-          onClick={[Function]}
-          type="button"
-        >
-          <span
-            className="c18"
-          >
-            <svg
-              aria-hidden="true"
-              className="c23"
-              focusable="false"
-              preserveAspectRatio="xMidYMid meet"
-              role="presentation"
-              viewBox="0 0 24 24"
-            >
-              <polygon
-                points="19.969 4 24 8.027 12 20 0 8.027 4.031 4 12 11.952"
-              />
-            </svg>
-          </span>
-        </button>
-        <button
-          aria-expanded={false}
-          className="NormalizedButton__Button-ey7f5x-0 c22 c17"
-          disabled={false}
-          onClick={[Function]}
-          type="button"
-        >
-          <span
-            className="c18"
-          >
-            <svg
-              aria-hidden="true"
-              className="c24 c21"
-              direction="down"
-              focusable="false"
-              preserveAspectRatio="xMidYMid meet"
-              role="presentation"
-              viewBox="0 0 16 16"
-            >
-              <polygon
-                points="14.620 3.580, 16.000 5.020, 8.000 12.730, 0.000 5.030, 1.400 3.580, 8.000 9.96"
-              />
-            </svg>
-          </span>
-        </button>
+          Expandable component items
+        </span>
       </div>
     </div>
     <div
-      className="c1 c12"
-      role="row"
+      className="c4 c13"
+      role="cell"
     >
       <div
-        className="c4 c13"
-        role="cell"
+        className="c6 c7"
       >
-        <div
-          className="c6 c7"
+        <span
+          className="c14 c9"
         >
-          <span
-            className="c14 c9"
-          >
-            Expandable with children
-          </span>
-        </div>
+          Expandable component items
+        </span>
       </div>
+    </div>
+    <div
+      className="c10 c13 c15 c11"
+      role="cell"
+    >
+      <button
+        aria-expanded={false}
+        className="NormalizedButton__Button-ey7f5x-0 c22 c17"
+        disabled={false}
+        onClick={[Function]}
+        type="button"
+      >
+        <span
+          className="c18"
+        >
+          <svg
+            aria-hidden="true"
+            className="c23"
+            focusable="false"
+            preserveAspectRatio="xMidYMid meet"
+            role="presentation"
+            viewBox="0 0 24 24"
+          >
+            <polygon
+              points="19.969 4 24 8.027 12 20 0 8.027 4.031 4 12 11.952"
+            />
+          </svg>
+        </span>
+      </button>
+      <button
+        aria-expanded={false}
+        className="NormalizedButton__Button-ey7f5x-0 c22 c17"
+        disabled={false}
+        onClick={[Function]}
+        type="button"
+      >
+        <span
+          className="c18"
+        >
+          <svg
+            aria-hidden="true"
+            className="c24 c21"
+            direction="down"
+            focusable="false"
+            preserveAspectRatio="xMidYMid meet"
+            role="presentation"
+            viewBox="0 0 16 16"
+          >
+            <polygon
+              points="14.620 3.580, 16.000 5.020, 8.000 12.730, 0.000 5.030, 1.400 3.580, 8.000 9.96"
+            />
+          </svg>
+        </span>
+      </button>
+    </div>
+  </div>
+  <div
+    className="c1 c12"
+    role="row"
+  >
+    <div
+      className="c4 c13"
+      role="cell"
+    >
       <div
-        className="c4 c13"
-        role="cell"
+        className="c6 c7"
       >
-        <div
-          className="c6 c7"
+        <span
+          className="c14 c9"
         >
-          <span
-            className="c14 c9"
-          >
-            Expandable with children
-          </span>
-        </div>
+          Expandable with children
+        </span>
       </div>
+    </div>
+    <div
+      className="c4 c13"
+      role="cell"
+    >
       <div
-        className="c4 c13"
-        role="cell"
+        className="c6 c7"
       >
-        <div
-          className="c6 c7"
+        <span
+          className="c14 c9"
         >
-          <span
-            className="c14 c9"
-          >
-            Expandable with children
-          </span>
-        </div>
+          Expandable with children
+        </span>
       </div>
+    </div>
+    <div
+      className="c4 c13"
+      role="cell"
+    >
       <div
-        className="c10 c13 c15 c11"
-        role="cell"
+        className="c6 c7"
       >
-        <button
-          aria-expanded={false}
-          className="NormalizedButton__Button-ey7f5x-0 c22 c17"
-          disabled={false}
-          onClick={[Function]}
-          type="button"
+        <span
+          className="c14 c9"
         >
-          <span
-            className="c18"
-          >
-            <svg
-              aria-hidden="true"
-              className="c23"
-              focusable="false"
-              preserveAspectRatio="xMidYMid meet"
-              role="presentation"
-              viewBox="0 0 24 24"
-            >
-              <polygon
-                points="19.969 4 24 8.027 12 20 0 8.027 4.031 4 12 11.952"
-              />
-            </svg>
-          </span>
-        </button>
-        <button
-          aria-expanded={false}
-          className="NormalizedButton__Button-ey7f5x-0 c22 c17"
-          disabled={false}
-          onClick={[Function]}
-          type="button"
-        >
-          <span
-            className="c18"
-          >
-            <svg
-              aria-hidden="true"
-              className="c24 c21"
-              direction="down"
-              focusable="false"
-              preserveAspectRatio="xMidYMid meet"
-              role="presentation"
-              viewBox="0 0 16 16"
-            >
-              <polygon
-                points="14.620 3.580, 16.000 5.020, 8.000 12.730, 0.000 5.030, 1.400 3.580, 8.000 9.96"
-              />
-            </svg>
-          </span>
-        </button>
+          Expandable with children
+        </span>
       </div>
+    </div>
+    <div
+      className="c10 c13 c15 c11"
+      role="cell"
+    >
+      <button
+        aria-expanded={false}
+        className="NormalizedButton__Button-ey7f5x-0 c22 c17"
+        disabled={false}
+        onClick={[Function]}
+        type="button"
+      >
+        <span
+          className="c18"
+        >
+          <svg
+            aria-hidden="true"
+            className="c23"
+            focusable="false"
+            preserveAspectRatio="xMidYMid meet"
+            role="presentation"
+            viewBox="0 0 24 24"
+          >
+            <polygon
+              points="19.969 4 24 8.027 12 20 0 8.027 4.031 4 12 11.952"
+            />
+          </svg>
+        </span>
+      </button>
+      <button
+        aria-expanded={false}
+        className="NormalizedButton__Button-ey7f5x-0 c22 c17"
+        disabled={false}
+        onClick={[Function]}
+        type="button"
+      >
+        <span
+          className="c18"
+        >
+          <svg
+            aria-hidden="true"
+            className="c24 c21"
+            direction="down"
+            focusable="false"
+            preserveAspectRatio="xMidYMid meet"
+            role="presentation"
+            viewBox="0 0 16 16"
+          >
+            <polygon
+              points="14.620 3.580, 16.000 5.020, 8.000 12.730, 0.000 5.030, 1.400 3.580, 8.000 9.96"
+            />
+          </svg>
+        </span>
+      </button>
     </div>
   </div>
 </div>
@@ -6292,10 +6272,6 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Expanded Table 
   -webkit-justify-content: flex-end;
   -ms-flex-pack: end;
   justify-content: flex-end;
-}
-
-.c17:focus {
-  outline: none;
 }
 
 .c15 {
@@ -6664,7 +6640,7 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Expanded Table 
                 <span
                   className="c14 c9"
                 >
-                  This valuues is super long to also demonstrate truncation
+                  These values are super long to also demonstrate truncation
                 </span>
               </div>
             </div>
@@ -7291,7 +7267,7 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Expanded Table 
                 <span
                   className="c14 c9"
                 >
-                  This valuues is super long to also demonstrate truncation
+                  These values are super long to also demonstrate truncation
                 </span>
               </div>
             </div>
@@ -8168,10 +8144,6 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Hidden Expand I
   justify-content: flex-end;
 }
 
-.c17:focus {
-  outline: none;
-}
-
 .c15 {
   padding-top: 0 !important;
   padding-bottom: 0;
@@ -8867,10 +8839,6 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Only Expandable
   justify-content: flex-end;
 }
 
-.c18:focus {
-  outline: none;
-}
-
 .c16 {
   padding-top: 0 !important;
   padding-bottom: 0;
@@ -9335,7 +9303,7 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Only Expandable
 </div>
 `;
 
-exports[`Storyshots Molecules / FlexTable / With expandable rows Whole Row Expandalbe Table 1`] = `
+exports[`Storyshots Molecules / FlexTable / With expandable rows Whole Row Expandable Table 1`] = `
 .c1 {
   box-sizing: border-box;
   display: -webkit-box;
@@ -9536,10 +9504,6 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Whole Row Expan
   justify-content: flex-end;
 }
 
-.c17:focus {
-  outline: none;
-}
-
 .c15 {
   padding-top: 0 !important;
   padding-bottom: 0;
@@ -9685,679 +9649,677 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Whole Row Expan
 
 }
 
-<div>
+<div
+  className="c0"
+  role="table"
+>
   <div
-    className="c0"
-    role="table"
+    className="c1 c2 c3"
+    role="row"
   >
     <div
-      className="c1 c2 c3"
-      role="row"
+      className="c4 c5"
+      role="columnheader"
     >
       <div
-        className="c4 c5"
-        role="columnheader"
+        className="c6 c7"
       >
-        <div
-          className="c6 c7"
+        <span
+          className="c8 c9"
         >
-          <span
-            className="c8 c9"
-          >
-            Header 1
-          </span>
-        </div>
-      </div>
-      <div
-        className="c4 c5"
-        role="columnheader"
-      >
-        <div
-          className="c6 c7"
-        >
-          <span
-            className="c8 c9"
-          >
-            Header 2
-          </span>
-        </div>
-      </div>
-      <div
-        className="c4 c5"
-        role="columnheader"
-      >
-        <div
-          className="c6 c7"
-        >
-          <span
-            className="c8 c9"
-          >
-            Header 3
-          </span>
-        </div>
-      </div>
-      <div
-        className="c10 c5 c11"
-        role="columnheader"
-      >
-        <div
-          className="c6 c7"
-        >
-          <span
-            className="c8 c9"
-          />
-        </div>
+          Header 1
+        </span>
       </div>
     </div>
     <div
-      className="c1 c12"
-      onClick={[Function]}
-      role="row"
+      className="c4 c5"
+      role="columnheader"
     >
       <div
-        className="c4 c13"
-        role="cell"
+        className="c6 c7"
       >
-        <div
-          className="c6 c7"
+        <span
+          className="c8 c9"
         >
-          <span
-            className="c14 c9"
-          >
-            Click anywhere
-          </span>
-        </div>
-      </div>
-      <div
-        className="c4 c13"
-        role="cell"
-      >
-        <div
-          className="c6 c7"
-        >
-          <span
-            className="c14 c9"
-          >
-            on this row
-          </span>
-        </div>
-      </div>
-      <div
-        className="c4 c13"
-        role="cell"
-      >
-        <div
-          className="c6 c7"
-        >
-          <span
-            className="c14 c9"
-          >
-            to toggle expand
-          </span>
-        </div>
-      </div>
-      <div
-        className="c10 c13 c15 c11"
-        role="cell"
-      >
-        <button
-          aria-expanded={false}
-          className="NormalizedButton__Button-ey7f5x-0 c16 c17"
-          disabled={false}
-          onClick={[Function]}
-          type="button"
-        >
-          <span
-            className="c18"
-          >
-            <svg
-              aria-hidden="true"
-              className="c19"
-              focusable="false"
-              preserveAspectRatio="xMidYMid meet"
-              role="presentation"
-              viewBox="0 0 24 24"
-            >
-              <polygon
-                points="19.969 4 24 8.027 12 20 0 8.027 4.031 4 12 11.952"
-              />
-            </svg>
-          </span>
-        </button>
-        <button
-          aria-expanded={false}
-          className="NormalizedButton__Button-ey7f5x-0 c16 c17"
-          disabled={false}
-          onClick={[Function]}
-          type="button"
-        >
-          <span
-            className="c18"
-          >
-            <svg
-              aria-hidden="true"
-              className="c20 c21"
-              direction="down"
-              focusable="false"
-              preserveAspectRatio="xMidYMid meet"
-              role="presentation"
-              viewBox="0 0 16 16"
-            >
-              <polygon
-                points="14.620 3.580, 16.000 5.020, 8.000 12.730, 0.000 5.030, 1.400 3.580, 8.000 9.96"
-              />
-            </svg>
-          </span>
-        </button>
+          Header 2
+        </span>
       </div>
     </div>
     <div
-      className="c1 c12"
-      onClick={[Function]}
-      role="row"
+      className="c4 c5"
+      role="columnheader"
     >
       <div
-        className="c4 c13"
-        role="cell"
+        className="c6 c7"
       >
-        <div
-          className="c6 c7"
+        <span
+          className="c8 c9"
         >
-          <span
-            className="c14 c9"
-          >
-            Click anywhere
-          </span>
-        </div>
-      </div>
-      <div
-        className="c4 c13"
-        role="cell"
-      >
-        <div
-          className="c6 c7"
-        >
-          <span
-            className="c14 c9"
-          >
-            on this row
-          </span>
-        </div>
-      </div>
-      <div
-        className="c4 c13"
-        role="cell"
-      >
-        <div
-          className="c6 c7"
-        >
-          <span
-            className="c14 c9"
-          >
-            to toggle expand
-          </span>
-        </div>
-      </div>
-      <div
-        className="c10 c13 c15 c11"
-        role="cell"
-      >
-        <button
-          aria-expanded={false}
-          className="NormalizedButton__Button-ey7f5x-0 c16 c17"
-          disabled={false}
-          onClick={[Function]}
-          type="button"
-        >
-          <span
-            className="c18"
-          >
-            <svg
-              aria-hidden="true"
-              className="c19"
-              focusable="false"
-              preserveAspectRatio="xMidYMid meet"
-              role="presentation"
-              viewBox="0 0 24 24"
-            >
-              <polygon
-                points="19.969 4 24 8.027 12 20 0 8.027 4.031 4 12 11.952"
-              />
-            </svg>
-          </span>
-        </button>
-        <button
-          aria-expanded={false}
-          className="NormalizedButton__Button-ey7f5x-0 c16 c17"
-          disabled={false}
-          onClick={[Function]}
-          type="button"
-        >
-          <span
-            className="c18"
-          >
-            <svg
-              aria-hidden="true"
-              className="c20 c21"
-              direction="down"
-              focusable="false"
-              preserveAspectRatio="xMidYMid meet"
-              role="presentation"
-              viewBox="0 0 16 16"
-            >
-              <polygon
-                points="14.620 3.580, 16.000 5.020, 8.000 12.730, 0.000 5.030, 1.400 3.580, 8.000 9.96"
-              />
-            </svg>
-          </span>
-        </button>
+          Header 3
+        </span>
       </div>
     </div>
     <div
-      className="c1 c12"
-      onClick={[Function]}
-      role="row"
+      className="c10 c5 c11"
+      role="columnheader"
     >
       <div
-        className="c4 c13"
-        role="cell"
+        className="c6 c7"
       >
-        <div
-          className="c6 c7"
-        >
-          <span
-            className="c14 c9"
-          >
-            Click anywhere
-          </span>
-        </div>
+        <span
+          className="c8 c9"
+        />
       </div>
+    </div>
+  </div>
+  <div
+    className="c1 c12"
+    onClick={[Function]}
+    role="row"
+  >
+    <div
+      className="c4 c13"
+      role="cell"
+    >
       <div
-        className="c4 c13"
-        role="cell"
+        className="c6 c7"
       >
-        <div
-          className="c6 c7"
+        <span
+          className="c14 c9"
         >
-          <span
-            className="c14 c9"
-          >
-            on this row
-          </span>
-        </div>
-      </div>
-      <div
-        className="c4 c13"
-        role="cell"
-      >
-        <div
-          className="c6 c7"
-        >
-          <span
-            className="c14 c9"
-          >
-            to toggle expand
-          </span>
-        </div>
-      </div>
-      <div
-        className="c10 c13 c15 c11"
-        role="cell"
-      >
-        <button
-          aria-expanded={false}
-          className="NormalizedButton__Button-ey7f5x-0 c16 c17"
-          disabled={false}
-          onClick={[Function]}
-          type="button"
-        >
-          <span
-            className="c18"
-          >
-            <svg
-              aria-hidden="true"
-              className="c19"
-              focusable="false"
-              preserveAspectRatio="xMidYMid meet"
-              role="presentation"
-              viewBox="0 0 24 24"
-            >
-              <polygon
-                points="19.969 4 24 8.027 12 20 0 8.027 4.031 4 12 11.952"
-              />
-            </svg>
-          </span>
-        </button>
-        <button
-          aria-expanded={false}
-          className="NormalizedButton__Button-ey7f5x-0 c16 c17"
-          disabled={false}
-          onClick={[Function]}
-          type="button"
-        >
-          <span
-            className="c18"
-          >
-            <svg
-              aria-hidden="true"
-              className="c20 c21"
-              direction="down"
-              focusable="false"
-              preserveAspectRatio="xMidYMid meet"
-              role="presentation"
-              viewBox="0 0 16 16"
-            >
-              <polygon
-                points="14.620 3.580, 16.000 5.020, 8.000 12.730, 0.000 5.030, 1.400 3.580, 8.000 9.96"
-              />
-            </svg>
-          </span>
-        </button>
+          Click anywhere
+        </span>
       </div>
     </div>
     <div
-      className="c1 c12"
-      onClick={[Function]}
-      role="row"
+      className="c4 c13"
+      role="cell"
     >
       <div
-        className="c4 c13"
-        role="cell"
+        className="c6 c7"
       >
-        <div
-          className="c6 c7"
+        <span
+          className="c14 c9"
         >
-          <span
-            className="c14 c9"
-          >
-            Click anywhere
-          </span>
-        </div>
-      </div>
-      <div
-        className="c4 c13"
-        role="cell"
-      >
-        <div
-          className="c6 c7"
-        >
-          <span
-            className="c14 c9"
-          >
-            on this row
-          </span>
-        </div>
-      </div>
-      <div
-        className="c4 c13"
-        role="cell"
-      >
-        <div
-          className="c6 c7"
-        >
-          <span
-            className="c14 c9"
-          >
-            to toggle expand
-          </span>
-        </div>
-      </div>
-      <div
-        className="c10 c13 c15 c11"
-        role="cell"
-      >
-        <button
-          aria-expanded={false}
-          className="NormalizedButton__Button-ey7f5x-0 c16 c17"
-          disabled={false}
-          onClick={[Function]}
-          type="button"
-        >
-          <span
-            className="c18"
-          >
-            <svg
-              aria-hidden="true"
-              className="c19"
-              focusable="false"
-              preserveAspectRatio="xMidYMid meet"
-              role="presentation"
-              viewBox="0 0 24 24"
-            >
-              <polygon
-                points="19.969 4 24 8.027 12 20 0 8.027 4.031 4 12 11.952"
-              />
-            </svg>
-          </span>
-        </button>
-        <button
-          aria-expanded={false}
-          className="NormalizedButton__Button-ey7f5x-0 c16 c17"
-          disabled={false}
-          onClick={[Function]}
-          type="button"
-        >
-          <span
-            className="c18"
-          >
-            <svg
-              aria-hidden="true"
-              className="c20 c21"
-              direction="down"
-              focusable="false"
-              preserveAspectRatio="xMidYMid meet"
-              role="presentation"
-              viewBox="0 0 16 16"
-            >
-              <polygon
-                points="14.620 3.580, 16.000 5.020, 8.000 12.730, 0.000 5.030, 1.400 3.580, 8.000 9.96"
-              />
-            </svg>
-          </span>
-        </button>
+          on this row
+        </span>
       </div>
     </div>
     <div
-      className="c1 c22"
-      role="row"
+      className="c4 c13"
+      role="cell"
     >
       <div
-        className="c4 c13"
-        role="cell"
+        className="c6 c7"
       >
-        <div
-          className="c6 c7"
+        <span
+          className="c14 c9"
         >
-          <span
-            className="c14 c9"
-          >
-            This row is NOT clickable!
-          </span>
-        </div>
-      </div>
-      <div
-        className="c4 c13"
-        role="cell"
-      >
-        <div
-          className="c6 c7"
-        >
-          <span
-            className="c14 c9"
-          >
-            Except for on
-          </span>
-        </div>
-      </div>
-      <div
-        className="c4 c13"
-        role="cell"
-      >
-        <div
-          className="c6 c7"
-        >
-          <span
-            className="c14 c9"
-          >
-            the chevron...
-          </span>
-        </div>
-      </div>
-      <div
-        className="c10 c13 c15 c11"
-        role="cell"
-      >
-        <button
-          aria-expanded={false}
-          className="NormalizedButton__Button-ey7f5x-0 c16 c17"
-          disabled={false}
-          onClick={[Function]}
-          type="button"
-        >
-          <span
-            className="c18"
-          >
-            <svg
-              aria-hidden="true"
-              className="c19"
-              focusable="false"
-              preserveAspectRatio="xMidYMid meet"
-              role="presentation"
-              viewBox="0 0 24 24"
-            >
-              <polygon
-                points="19.969 4 24 8.027 12 20 0 8.027 4.031 4 12 11.952"
-              />
-            </svg>
-          </span>
-        </button>
-        <button
-          aria-expanded={false}
-          className="NormalizedButton__Button-ey7f5x-0 c16 c17"
-          disabled={false}
-          onClick={[Function]}
-          type="button"
-        >
-          <span
-            className="c18"
-          >
-            <svg
-              aria-hidden="true"
-              className="c20 c21"
-              direction="down"
-              focusable="false"
-              preserveAspectRatio="xMidYMid meet"
-              role="presentation"
-              viewBox="0 0 16 16"
-            >
-              <polygon
-                points="14.620 3.580, 16.000 5.020, 8.000 12.730, 0.000 5.030, 1.400 3.580, 8.000 9.96"
-              />
-            </svg>
-          </span>
-        </button>
+          to toggle expand
+        </span>
       </div>
     </div>
     <div
-      className="c1 c22"
-      role="row"
+      className="c10 c13 c15 c11"
+      role="cell"
+    >
+      <button
+        aria-expanded={false}
+        className="NormalizedButton__Button-ey7f5x-0 c16 c17"
+        disabled={false}
+        onClick={[Function]}
+        type="button"
+      >
+        <span
+          className="c18"
+        >
+          <svg
+            aria-hidden="true"
+            className="c19"
+            focusable="false"
+            preserveAspectRatio="xMidYMid meet"
+            role="presentation"
+            viewBox="0 0 24 24"
+          >
+            <polygon
+              points="19.969 4 24 8.027 12 20 0 8.027 4.031 4 12 11.952"
+            />
+          </svg>
+        </span>
+      </button>
+      <button
+        aria-expanded={false}
+        className="NormalizedButton__Button-ey7f5x-0 c16 c17"
+        disabled={false}
+        onClick={[Function]}
+        type="button"
+      >
+        <span
+          className="c18"
+        >
+          <svg
+            aria-hidden="true"
+            className="c20 c21"
+            direction="down"
+            focusable="false"
+            preserveAspectRatio="xMidYMid meet"
+            role="presentation"
+            viewBox="0 0 16 16"
+          >
+            <polygon
+              points="14.620 3.580, 16.000 5.020, 8.000 12.730, 0.000 5.030, 1.400 3.580, 8.000 9.96"
+            />
+          </svg>
+        </span>
+      </button>
+    </div>
+  </div>
+  <div
+    className="c1 c12"
+    onClick={[Function]}
+    role="row"
+  >
+    <div
+      className="c4 c13"
+      role="cell"
     >
       <div
-        className="c4 c13"
-        role="cell"
+        className="c6 c7"
       >
-        <div
-          className="c6 c7"
+        <span
+          className="c14 c9"
         >
-          <span
-            className="c14 c9"
-          >
-            This row is NOT clickable!
-          </span>
-        </div>
+          Click anywhere
+        </span>
       </div>
+    </div>
+    <div
+      className="c4 c13"
+      role="cell"
+    >
       <div
-        className="c4 c13"
-        role="cell"
+        className="c6 c7"
       >
-        <div
-          className="c6 c7"
+        <span
+          className="c14 c9"
         >
-          <span
-            className="c14 c9"
-          >
-            Except for on
-          </span>
-        </div>
+          on this row
+        </span>
       </div>
+    </div>
+    <div
+      className="c4 c13"
+      role="cell"
+    >
       <div
-        className="c4 c13"
-        role="cell"
+        className="c6 c7"
       >
-        <div
-          className="c6 c7"
+        <span
+          className="c14 c9"
         >
-          <span
-            className="c14 c9"
-          >
-            the chevron...
-          </span>
-        </div>
+          to toggle expand
+        </span>
       </div>
+    </div>
+    <div
+      className="c10 c13 c15 c11"
+      role="cell"
+    >
+      <button
+        aria-expanded={false}
+        className="NormalizedButton__Button-ey7f5x-0 c16 c17"
+        disabled={false}
+        onClick={[Function]}
+        type="button"
+      >
+        <span
+          className="c18"
+        >
+          <svg
+            aria-hidden="true"
+            className="c19"
+            focusable="false"
+            preserveAspectRatio="xMidYMid meet"
+            role="presentation"
+            viewBox="0 0 24 24"
+          >
+            <polygon
+              points="19.969 4 24 8.027 12 20 0 8.027 4.031 4 12 11.952"
+            />
+          </svg>
+        </span>
+      </button>
+      <button
+        aria-expanded={false}
+        className="NormalizedButton__Button-ey7f5x-0 c16 c17"
+        disabled={false}
+        onClick={[Function]}
+        type="button"
+      >
+        <span
+          className="c18"
+        >
+          <svg
+            aria-hidden="true"
+            className="c20 c21"
+            direction="down"
+            focusable="false"
+            preserveAspectRatio="xMidYMid meet"
+            role="presentation"
+            viewBox="0 0 16 16"
+          >
+            <polygon
+              points="14.620 3.580, 16.000 5.020, 8.000 12.730, 0.000 5.030, 1.400 3.580, 8.000 9.96"
+            />
+          </svg>
+        </span>
+      </button>
+    </div>
+  </div>
+  <div
+    className="c1 c12"
+    onClick={[Function]}
+    role="row"
+  >
+    <div
+      className="c4 c13"
+      role="cell"
+    >
       <div
-        className="c10 c13 c15 c11"
-        role="cell"
+        className="c6 c7"
       >
-        <button
-          aria-expanded={false}
-          className="NormalizedButton__Button-ey7f5x-0 c16 c17"
-          disabled={false}
-          onClick={[Function]}
-          type="button"
+        <span
+          className="c14 c9"
         >
-          <span
-            className="c18"
-          >
-            <svg
-              aria-hidden="true"
-              className="c19"
-              focusable="false"
-              preserveAspectRatio="xMidYMid meet"
-              role="presentation"
-              viewBox="0 0 24 24"
-            >
-              <polygon
-                points="19.969 4 24 8.027 12 20 0 8.027 4.031 4 12 11.952"
-              />
-            </svg>
-          </span>
-        </button>
-        <button
-          aria-expanded={false}
-          className="NormalizedButton__Button-ey7f5x-0 c16 c17"
-          disabled={false}
-          onClick={[Function]}
-          type="button"
-        >
-          <span
-            className="c18"
-          >
-            <svg
-              aria-hidden="true"
-              className="c20 c21"
-              direction="down"
-              focusable="false"
-              preserveAspectRatio="xMidYMid meet"
-              role="presentation"
-              viewBox="0 0 16 16"
-            >
-              <polygon
-                points="14.620 3.580, 16.000 5.020, 8.000 12.730, 0.000 5.030, 1.400 3.580, 8.000 9.96"
-              />
-            </svg>
-          </span>
-        </button>
+          Click anywhere
+        </span>
       </div>
+    </div>
+    <div
+      className="c4 c13"
+      role="cell"
+    >
+      <div
+        className="c6 c7"
+      >
+        <span
+          className="c14 c9"
+        >
+          on this row
+        </span>
+      </div>
+    </div>
+    <div
+      className="c4 c13"
+      role="cell"
+    >
+      <div
+        className="c6 c7"
+      >
+        <span
+          className="c14 c9"
+        >
+          to toggle expand
+        </span>
+      </div>
+    </div>
+    <div
+      className="c10 c13 c15 c11"
+      role="cell"
+    >
+      <button
+        aria-expanded={false}
+        className="NormalizedButton__Button-ey7f5x-0 c16 c17"
+        disabled={false}
+        onClick={[Function]}
+        type="button"
+      >
+        <span
+          className="c18"
+        >
+          <svg
+            aria-hidden="true"
+            className="c19"
+            focusable="false"
+            preserveAspectRatio="xMidYMid meet"
+            role="presentation"
+            viewBox="0 0 24 24"
+          >
+            <polygon
+              points="19.969 4 24 8.027 12 20 0 8.027 4.031 4 12 11.952"
+            />
+          </svg>
+        </span>
+      </button>
+      <button
+        aria-expanded={false}
+        className="NormalizedButton__Button-ey7f5x-0 c16 c17"
+        disabled={false}
+        onClick={[Function]}
+        type="button"
+      >
+        <span
+          className="c18"
+        >
+          <svg
+            aria-hidden="true"
+            className="c20 c21"
+            direction="down"
+            focusable="false"
+            preserveAspectRatio="xMidYMid meet"
+            role="presentation"
+            viewBox="0 0 16 16"
+          >
+            <polygon
+              points="14.620 3.580, 16.000 5.020, 8.000 12.730, 0.000 5.030, 1.400 3.580, 8.000 9.96"
+            />
+          </svg>
+        </span>
+      </button>
+    </div>
+  </div>
+  <div
+    className="c1 c12"
+    onClick={[Function]}
+    role="row"
+  >
+    <div
+      className="c4 c13"
+      role="cell"
+    >
+      <div
+        className="c6 c7"
+      >
+        <span
+          className="c14 c9"
+        >
+          Click anywhere
+        </span>
+      </div>
+    </div>
+    <div
+      className="c4 c13"
+      role="cell"
+    >
+      <div
+        className="c6 c7"
+      >
+        <span
+          className="c14 c9"
+        >
+          on this row
+        </span>
+      </div>
+    </div>
+    <div
+      className="c4 c13"
+      role="cell"
+    >
+      <div
+        className="c6 c7"
+      >
+        <span
+          className="c14 c9"
+        >
+          to toggle expand
+        </span>
+      </div>
+    </div>
+    <div
+      className="c10 c13 c15 c11"
+      role="cell"
+    >
+      <button
+        aria-expanded={false}
+        className="NormalizedButton__Button-ey7f5x-0 c16 c17"
+        disabled={false}
+        onClick={[Function]}
+        type="button"
+      >
+        <span
+          className="c18"
+        >
+          <svg
+            aria-hidden="true"
+            className="c19"
+            focusable="false"
+            preserveAspectRatio="xMidYMid meet"
+            role="presentation"
+            viewBox="0 0 24 24"
+          >
+            <polygon
+              points="19.969 4 24 8.027 12 20 0 8.027 4.031 4 12 11.952"
+            />
+          </svg>
+        </span>
+      </button>
+      <button
+        aria-expanded={false}
+        className="NormalizedButton__Button-ey7f5x-0 c16 c17"
+        disabled={false}
+        onClick={[Function]}
+        type="button"
+      >
+        <span
+          className="c18"
+        >
+          <svg
+            aria-hidden="true"
+            className="c20 c21"
+            direction="down"
+            focusable="false"
+            preserveAspectRatio="xMidYMid meet"
+            role="presentation"
+            viewBox="0 0 16 16"
+          >
+            <polygon
+              points="14.620 3.580, 16.000 5.020, 8.000 12.730, 0.000 5.030, 1.400 3.580, 8.000 9.96"
+            />
+          </svg>
+        </span>
+      </button>
+    </div>
+  </div>
+  <div
+    className="c1 c22"
+    role="row"
+  >
+    <div
+      className="c4 c13"
+      role="cell"
+    >
+      <div
+        className="c6 c7"
+      >
+        <span
+          className="c14 c9"
+        >
+          This row is NOT clickable!
+        </span>
+      </div>
+    </div>
+    <div
+      className="c4 c13"
+      role="cell"
+    >
+      <div
+        className="c6 c7"
+      >
+        <span
+          className="c14 c9"
+        >
+          Except for on
+        </span>
+      </div>
+    </div>
+    <div
+      className="c4 c13"
+      role="cell"
+    >
+      <div
+        className="c6 c7"
+      >
+        <span
+          className="c14 c9"
+        >
+          the chevron...
+        </span>
+      </div>
+    </div>
+    <div
+      className="c10 c13 c15 c11"
+      role="cell"
+    >
+      <button
+        aria-expanded={false}
+        className="NormalizedButton__Button-ey7f5x-0 c16 c17"
+        disabled={false}
+        onClick={[Function]}
+        type="button"
+      >
+        <span
+          className="c18"
+        >
+          <svg
+            aria-hidden="true"
+            className="c19"
+            focusable="false"
+            preserveAspectRatio="xMidYMid meet"
+            role="presentation"
+            viewBox="0 0 24 24"
+          >
+            <polygon
+              points="19.969 4 24 8.027 12 20 0 8.027 4.031 4 12 11.952"
+            />
+          </svg>
+        </span>
+      </button>
+      <button
+        aria-expanded={false}
+        className="NormalizedButton__Button-ey7f5x-0 c16 c17"
+        disabled={false}
+        onClick={[Function]}
+        type="button"
+      >
+        <span
+          className="c18"
+        >
+          <svg
+            aria-hidden="true"
+            className="c20 c21"
+            direction="down"
+            focusable="false"
+            preserveAspectRatio="xMidYMid meet"
+            role="presentation"
+            viewBox="0 0 16 16"
+          >
+            <polygon
+              points="14.620 3.580, 16.000 5.020, 8.000 12.730, 0.000 5.030, 1.400 3.580, 8.000 9.96"
+            />
+          </svg>
+        </span>
+      </button>
+    </div>
+  </div>
+  <div
+    className="c1 c22"
+    role="row"
+  >
+    <div
+      className="c4 c13"
+      role="cell"
+    >
+      <div
+        className="c6 c7"
+      >
+        <span
+          className="c14 c9"
+        >
+          This row is NOT clickable!
+        </span>
+      </div>
+    </div>
+    <div
+      className="c4 c13"
+      role="cell"
+    >
+      <div
+        className="c6 c7"
+      >
+        <span
+          className="c14 c9"
+        >
+          Except for on
+        </span>
+      </div>
+    </div>
+    <div
+      className="c4 c13"
+      role="cell"
+    >
+      <div
+        className="c6 c7"
+      >
+        <span
+          className="c14 c9"
+        >
+          the chevron...
+        </span>
+      </div>
+    </div>
+    <div
+      className="c10 c13 c15 c11"
+      role="cell"
+    >
+      <button
+        aria-expanded={false}
+        className="NormalizedButton__Button-ey7f5x-0 c16 c17"
+        disabled={false}
+        onClick={[Function]}
+        type="button"
+      >
+        <span
+          className="c18"
+        >
+          <svg
+            aria-hidden="true"
+            className="c19"
+            focusable="false"
+            preserveAspectRatio="xMidYMid meet"
+            role="presentation"
+            viewBox="0 0 24 24"
+          >
+            <polygon
+              points="19.969 4 24 8.027 12 20 0 8.027 4.031 4 12 11.952"
+            />
+          </svg>
+        </span>
+      </button>
+      <button
+        aria-expanded={false}
+        className="NormalizedButton__Button-ey7f5x-0 c16 c17"
+        disabled={false}
+        onClick={[Function]}
+        type="button"
+      >
+        <span
+          className="c18"
+        >
+          <svg
+            aria-hidden="true"
+            className="c20 c21"
+            direction="down"
+            focusable="false"
+            preserveAspectRatio="xMidYMid meet"
+            role="presentation"
+            viewBox="0 0 16 16"
+          >
+            <polygon
+              points="14.620 3.580, 16.000 5.020, 8.000 12.730, 0.000 5.030, 1.400 3.580, 8.000 9.96"
+            />
+          </svg>
+        </span>
+      </button>
     </div>
   </div>
 </div>

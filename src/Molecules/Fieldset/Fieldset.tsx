@@ -8,7 +8,7 @@ const StyledFieldset = styled.fieldset`
   border: 0;
 `;
 
-export const Fieldset: React.FC<Props> = props => {
+export const Fieldset: React.FC<Props> = (props) => {
   const { className, children } = props;
 
   return <StyledFieldset className={className}>{children}</StyledFieldset>;

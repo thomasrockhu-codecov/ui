@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
-import { IconBase, getColor } from '../IconBase';
-import { WithBackgroundColor, StyledChildProps } from '../IconBase.types';
+import { getColor, IconBase } from '../IconBase';
+import { StyledChildProps, WithBackgroundColor } from '../IconBase.types';
 
 const Circle = styled.circle<StyledChildProps>`
   ${(p) => {

@@ -49,7 +49,6 @@ export const DifferentHeights = () => {
 };
 
 export const WithButton = () => {
-  /* eslint-disable-next-line no-alert */
   const button = { label: 'Click me', onClick: () => alert('Tihi that tickles') };
   return (
     <Box px={10}>

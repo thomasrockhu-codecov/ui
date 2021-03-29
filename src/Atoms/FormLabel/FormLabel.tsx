@@ -5,7 +5,7 @@ import { Typography } from '../..';
 import { visuallyHiddenCss as visuallyHidden } from '../VisuallyHidden';
 
 const StyledLabel = styled.label`
-  ${p => (p.hidden ? visuallyHidden : '')}
+  ${(p) => (p.hidden ? visuallyHidden : '')}
   text-overflow: ellipsis;
   white-space: nowrap;
   cursor: pointer;
@@ -20,7 +20,7 @@ export const FormLabel: React.FC<Props> = ({
   disabled,
 }) => (
   <StyledLabel as={as} className={className} htmlFor={forId} hidden={Boolean(hideLabel)}>
-    <Typography type="secondary" color={t => (disabled ? t.color.disabled : t.color.label)}>
+    <Typography type="secondary" color={(t) => (disabled ? t.color.disabled : t.color.label)}>
       {children}
     </Typography>
   </StyledLabel>

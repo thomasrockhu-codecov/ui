@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Storyshots Molecules | SelectionCard Default 1`] = `
+exports[`Storyshots Molecules / SelectionCard Default 1`] = `
 .c9 {
   padding-top: 16px;
   padding-right: 20px;
@@ -207,7 +207,7 @@ exports[`Storyshots Molecules | SelectionCard Default 1`] = `
 </label>
 `;
 
-exports[`Storyshots Molecules | SelectionCard With ReactNode 1`] = `
+exports[`Storyshots Molecules / SelectionCard With ReactNode 1`] = `
 .c9 {
   padding-top: 16px;
   padding-right: 20px;
@@ -437,7 +437,7 @@ exports[`Storyshots Molecules | SelectionCard With ReactNode 1`] = `
 </label>
 `;
 
-exports[`Storyshots Molecules | SelectionCard With controlled behavior 1`] = `
+exports[`Storyshots Molecules / SelectionCard With controlled behavior 1`] = `
 Array [
   .c7 {
   padding-top: 16px;
@@ -620,14 +620,12 @@ Array [
   >
     Not selected
   </button>,
-  <span>
-    value: 
-    false
-  </span>,
+  "value: ",
+  "false",
 ]
 `;
 
-exports[`Storyshots Molecules | SelectionCard With icon 1`] = `
+exports[`Storyshots Molecules / SelectionCard With icon 1`] = `
 .c9 {
   padding-top: 16px;
   padding-right: 20px;

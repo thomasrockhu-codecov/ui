@@ -94,7 +94,7 @@ const ProgressLevels: ProgressLevelsComponent = ({
   return (
     <StyledOrderedList>
       {steps &&
-        steps.map((step, i) => {
+        steps?.map((step, i) => {
           const { current, done, label, name, steps: substeps = [] } = step;
           const number = i + 1;
 
@@ -200,7 +200,7 @@ export const TopLevel: TopLevelComponent = ({
       <Media query={(t) => t.media.lessThan(t.breakpoints.md)}>
         <MobileProgressLevels>
           {steps &&
-            steps.map((step, i) => {
+            steps?.map((step, i) => {
               const { current, done, label } = step;
               const number = i + 1;
 

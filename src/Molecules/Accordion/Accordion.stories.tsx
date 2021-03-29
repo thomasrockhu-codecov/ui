@@ -1,5 +1,5 @@
 import React from 'react';
-import { Accordion, AccordionItem, Typography, Spinner } from '../..';
+import { Accordion, AccordionItem, Spinner, Typography } from '../..';
 import docs from './Accordion.mdx';
 
 export default {
@@ -22,7 +22,7 @@ const ExampleContent = () => (
 
 const exampleFooter = (
   <Typography as="p" type="secondary" weight="bold">
-    Did not find what you look for? ...Thats a shame. <Spinner id="shame" />
+    Did not find what you look for? ...That&apos;s a shame. <Spinner id="shame" />
   </Typography>
 );
 

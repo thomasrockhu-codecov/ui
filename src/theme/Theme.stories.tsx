@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import MD from 'react-markdown';
 import { propOr } from 'ramda';
-import { theme, createTheme, Table, Thead, Tbody, Th, Tr, Td, Flexbox } from '..';
+import { createTheme, Flexbox, Table, Tbody, Td, Th, Thead, theme, Tr } from '..';
 import { rawColor } from './theme';
 import colorDocs from './Colors.md';
 import { Display } from '../common/Display';
@@ -28,13 +28,13 @@ const colorWithValue = (color: string | string[]) =>
   typeof color === 'string' ? (
     <>
       <Color $color={color} />
-      <div>{color}</div>
+      <>{color}</>
     </>
   ) : (
-    color.map((c: string) => (
+    color?.map((c: string) => (
       <Flexbox container gutter={1}>
         <ColorInArray $color={c} />
-        <div>{c}</div>
+        <>{c}</>
       </Flexbox>
     ))
   );
@@ -57,7 +57,7 @@ export const colorsSemantic = () => {
         </Tr>
       </Thead>
       <Tbody>
-        {Object.keys(theme.color).map((title) => (
+        {Object.keys(theme.color)?.map((title) => (
           <Tr key={`theme-${title}`}>
             <Td>{title}</Td>
             <Td>{colorWithValue(theme.color[title])}</Td>
@@ -76,15 +76,14 @@ colorsSemantic.story = {
 export const colorsPalette = () => {
   return (
     <>
-      {/* eslint-disable-next-line jsx-a11y/accessible-emoji */}
       <h1>⚠️ Internal object, use colors (semantic)</h1>
       <Display
-        items={Object.entries(rawColor).map(([title, color]) => ({
+        items={Object.entries(rawColor)?.map(([title, color]) => ({
           title,
           component: (
             <>
               <Color $color={color} />
-              <div>{color}</div>
+              <>{color}</>
             </>
           ),
         }))}
@@ -107,7 +106,7 @@ export const screenSizes = () => (
       </Tr>
     </Thead>
     <Tbody>
-      {Object.entries(theme.breakpoints).map(([title, breakpoint]) => (
+      {Object.entries(theme.breakpoints)?.map(([title, breakpoint]) => (
         <Tr key={`breakpoints-${title}`}>
           <Td>{title}</Td>
           <Td>

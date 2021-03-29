@@ -1,8 +1,8 @@
 import React from 'react';
 import styled, { css } from 'styled-components';
 import * as R from 'ramda';
-import { Props, Variant, Size } from './Text.types';
-import { Flexbox, Typography, FormField } from '../../..';
+import { Props, Size, Variant } from './Text.types';
+import { Flexbox, FormField, Typography } from '../../..';
 import NormalizedElements from '../../../common/NormalizedElements';
 
 const hasError = (error?: Props['error']) => error && error !== '';
@@ -36,7 +36,6 @@ const focusBorderStyles = css`
 `;
 
 const borderStyles = css<Pick<Props, 'error' | 'success' | 'disabled' | 'variant'>>`
-  outline: none;
   border: solid;
   border-color: ${(p) => {
     if (hasError(p.error)) return p.theme.color.inputBorderError;

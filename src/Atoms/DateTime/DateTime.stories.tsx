@@ -41,12 +41,18 @@ withDateAsIso8601String.story = {
 };
 
 export const withCustomFormattingOptions = () => {
+  type FormatDateOptionYear = 'numeric';
+  type FormatDateOptionMonth = 'short';
+  type FormatDateOptionDay = 'numeric';
+  type FormatDateOptionWeekDay = 'short';
+
   const options = {
-    year: 'numeric',
-    month: 'short',
-    day: 'numeric',
-    weekday: 'short',
+    year: 'numeric' as FormatDateOptionYear,
+    month: 'short' as FormatDateOptionMonth,
+    day: 'numeric' as FormatDateOptionDay,
+    weekday: 'short' as FormatDateOptionWeekDay,
   };
+
   return <DateTime value="1999-11-11" options={options} />;
 };
 

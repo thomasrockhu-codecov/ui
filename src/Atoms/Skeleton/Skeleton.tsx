@@ -1,7 +1,7 @@
 import React from 'react';
 import * as R from 'ramda';
 import styled, { keyframes } from 'styled-components';
-import { SkeletonComponent, Props, StringOrNumber } from './Skeleton.types';
+import { Props, SkeletonComponent, StringOrNumber } from './Skeleton.types';
 import { Theme } from '../../theme/theme.types';
 import { isNumber } from '../../common/utils';
 
@@ -26,10 +26,10 @@ const CleanDiv = React.forwardRef<HTMLDivElement, any>((props, ref) => (
 ));
 
 const Base = styled(CleanDiv)<Props>`
-  ${p => p.width && `width: ${getSize(p.width, p.theme)};`}
+  ${(p) => p.width && `width: ${getSize(p.width, p.theme)};`}
 
   display: block;
-  background-color: ${p => p.theme.color.skeleton};
+  background-color: ${(p) => p.theme.color.skeleton};
   animation: ${pulse} 1.5s ease-in-out 0.5s infinite;
 `;
 
@@ -43,11 +43,11 @@ const Text = styled(Base)`
 `;
 
 const Rect = styled(Base)`
-  ${p => p.height && `height: ${getSize(p.height, p.theme)};`}
+  ${(p) => p.height && `height: ${getSize(p.height, p.theme)};`}
 `;
 
 const Circle = styled(Base)`
-  ${p => p.height && `height: ${getSize(p.height, p.theme)};`}
+  ${(p) => p.height && `height: ${getSize(p.height, p.theme)};`}
   border-radius: 50%;
 `;
 

@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import Row from './Row';
-import { ColorFn } from '../../../common/Types/sharedTypes';
+import { ColorFn } from '../../../common/Types';
 import { FooterRowComponent } from './Row.types';
 
 const StyledRow = styled(Row).withConfig({

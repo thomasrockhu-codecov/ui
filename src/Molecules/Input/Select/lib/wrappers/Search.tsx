@@ -1,4 +1,4 @@
-import * as React from 'react';
+import React from 'react';
 import { useSelectMachineFromContext } from '../context';
 
 export const SearchWrapper = React.forwardRef<

@@ -1,4 +1,4 @@
-import * as React from 'react';
+import React, { useEffect } from 'react';
 import styled from 'styled-components';
 import { assert } from '../../../../../common/utils';
 import { Box } from '../../../../..';
@@ -12,13 +12,13 @@ const EllipsizingText = styled.span`
 `;
 
 const StyledFlexedBox = styled(Box)`
-  width: ${p => `calc(100% - ${p.theme.spacing.unit(6)}px)`};
+  width: ${(p) => `calc(100% - ${p.theme.spacing.unit(6)}px)`};
   display: flex;
   align-items: center;
 `;
 
 export const SelectedValue = () => {
-  React.useEffect(() => {
+  useEffect(() => {
     assert(
       false,
       'Input.Select: You probably want to redefine default SelectedValue message for your case.',

@@ -34,7 +34,7 @@ const usePickFlexCellProps = ({
   hidden,
   xl,
 }: Partial<FlexPropsType>): Partial<FlexPropsType> => {
-  const sharedProps = useMemo(
+  return useMemo(
     () =>
       R.filter((val) => val !== undefined, {
         align,
@@ -85,12 +85,9 @@ const usePickFlexCellProps = ({
       xl,
     ],
   );
-
-  return sharedProps;
 };
 
 export const useFlexCellProps = (props: Partial<FlexPropsType>) => {
   const cellFlexProps = usePickFlexCellProps(props) || EMPTY_OBJECT;
-  const flexProps = { ...DEFAULT_CELL_FLEX_PROPS, ...cellFlexProps };
-  return flexProps;
+  return { ...DEFAULT_CELL_FLEX_PROPS, ...cellFlexProps };
 };

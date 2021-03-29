@@ -1,10 +1,10 @@
 import React from 'react';
 import styled from 'styled-components';
-import { IconBase, getColor } from '../IconBase';
+import { getColor, IconBase } from '../IconBase';
 import { ChildProps, StyledChildProps } from '../IconBase.types';
 
 const StyledG = styled.g<StyledChildProps>`
-  ${p => {
+  ${(p) => {
     const strokeColor = getColor(p.theme, p.theme.color.svgStokeLight, p.strokeColorFn);
     return `fill: ${strokeColor};`;
   }}

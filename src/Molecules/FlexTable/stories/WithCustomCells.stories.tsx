@@ -110,7 +110,7 @@ export const CustomCells = () => {
             justifyContent="flex-end"
             currency="USD"
           >
-            Transferable Quantity
+            Transferable quantity
           </TruncateStartHeader>
           <FlexTable.Header columnId="country">Country</FlexTable.Header>
           <FlexTable.Header columnId="percentage" justifyContent="flex-end">

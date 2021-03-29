@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
-import { Flexbox, Typography, Separator, TabTitle } from '../..';
+import { Flexbox, Separator, TabTitle, Typography } from '../..';
 import NormalizedElements from '../../common/NormalizedElements/index';
 import { assert } from '../../common/utils';
 import { useKeyboardNavigation } from './useKeyboardNavigation';
 
-import { ContainerComponent, TitleComponent, ItemProps } from './Tabs.types';
+import { ContainerComponent, ItemProps, TitleComponent } from './Tabs.types';
 
 export const Item: React.FC<ItemProps> = ({ children }) => {
   return <>{children}</>;
@@ -110,8 +110,8 @@ export const Tabs: ContainerComponent & {
     itemsLength: React.Children.count(children),
   });
 
-  const titles: React.ReactElement<any>[] = [];
-  let contents: React.ReactElement<any> | null = null;
+  const titles: React.ReactElement[] = [];
+  let contents: React.ReactElement | null = null;
 
   React.Children.forEach(children, (c, i) => {
     const isActive = i === active;

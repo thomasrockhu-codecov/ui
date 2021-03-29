@@ -1,13 +1,13 @@
-import React, { useState, useEffect, useCallback, useRef } from 'react';
+import React, { useCallback, useEffect, useRef, useState } from 'react';
 import { useUIDSeed } from 'react-uid';
 import styled from 'styled-components';
 import FocusLock from 'react-focus-lock';
 import { RemoveScroll } from 'react-remove-scroll';
-import { motion, useDragControls, AnimatePresence } from 'framer-motion';
+import { AnimatePresence, motion, useDragControls } from 'framer-motion';
 import { Props, TitleProps } from './Drawer.types';
-import { isBoolean, isElement, fromKebabToCamelCase } from '../../common/utils';
+import { fromKebabToCamelCase, isBoolean, isElement } from '../../common/utils';
 import { useOnClickOutside } from '../../common/Hooks';
-import { Typography, Icon, useKeyPress, Portal, useMedia, Button } from '../..';
+import { Button, Icon, Portal, Typography, useKeyPress, useMedia } from '../..';
 
 const CROSS_SIZE = 5;
 const PADDING = 5;

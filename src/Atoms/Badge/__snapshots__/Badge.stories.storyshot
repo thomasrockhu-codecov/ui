@@ -573,7 +573,7 @@ Array [
     <span
       className="c1"
     >
-      Badge with animation, but without inital animation example
+      Badge with animation, but without initial animation example
     </span>
     <div
       className="c2"
@@ -644,7 +644,7 @@ Array [
 <span
     className="c0"
   >
-    Number With Limit
+    Number with limit
   </span>,
   .c1 {
   display: -webkit-inline-box;
@@ -1711,7 +1711,7 @@ Array [
 <p
     className="c0"
   >
-    * Observe, up to developer to set child function font (family, size, etc.)
+    * It's up to developer to set child function font (family, size, etc.)
   </p>,
 ]
 `;
@@ -1809,17 +1809,15 @@ Array [
       color={[Function]}
       size={5}
     >
-      <span>
-        <span
-          className="c2"
-        >
-          8
-        </span>
-        <span
-          className="c3"
-        >
-          %
-        </span>
+      <span
+        className="c2"
+      >
+        8
+      </span>
+      <span
+        className="c3"
+      >
+        %
       </span>
     </span>
   </div>,
@@ -1843,7 +1841,7 @@ Array [
 <p
     className="c0"
   >
-    * Observe, up to developer to set child component font (family, size, etc.)
+    * It's up to developer to set child component font (family, size, etc.)
   </p>,
 ]
 `;

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import styled from 'styled-components';
 import { action } from '@storybook/addon-actions';
 import docs from './CssGrid.mdx';
@@ -15,11 +15,11 @@ const StyledContent = styled.div`
 const Content = ({ children }: any) => <StyledContent>{children}</StyledContent>;
 
 const ComponentThatDoesSomethingOnMount = () => {
-  React.useEffect(action('mounted'), []);
+  useEffect(action('mounted'), []);
   return (
-    <div>
+    <>
       This item is mounted and stays mounted no matter what. However, it&lsquo;d be hidden with css
-    </div>
+    </>
   );
 };
 
@@ -40,10 +40,10 @@ export const simpleCssGrid = () => (
   <Grid.Container
     // prettier-ignore
     areas={[
-        ['header', 'header',  'header'],
-        ['menu',   'content', 'ads'],
-        ['footer', 'footer',  'footer'],
-      ]}
+      ['header', 'header', 'header'],
+      ['menu', 'content', 'ads'],
+      ['footer', 'footer', 'footer'],
+    ]}
     templateColumns={['1fr', '1fr', '1fr']}
     templateRows={['1fr', '1fr', '1fr']}
   >
@@ -74,10 +74,10 @@ export const cssGridWithCustomGutter = () => (
     gutter={0}
     // prettier-ignore
     areas={[
-        ['left', 'top',     'sidebar'],
-        ['left', 'content', 'sidebar'],
-        ['left', 'content', 'sidebar'],
-      ]}
+      ['left', 'top', 'sidebar'],
+      ['left', 'content', 'sidebar'],
+      ['left', 'content', 'sidebar'],
+    ]}
     templateColumns={['1fr', '1fr', '1fr']}
     templateRows={['1fr', '1fr', '1fr']}
   >
@@ -106,20 +106,20 @@ export const cssGridWithDifferentGutterOnDifferentScreenSizes = () => (
     templateColumns={['1fr', '1fr', '1fr']}
     // prettier-ignore
     templateRows={[
-        'auto',
-        'auto'
-      ]}
+      'auto',
+      'auto',
+    ]}
     // prettier-ignore
     areas={[
       ['left', 'top', 'content'],
       ['left', 'top', 'content'],
-      ]}
+    ]}
     md={{
       // prettier-ignore
       templateRows: [
-          'auto',
-          'auto'
-        ],
+        'auto',
+        'auto',
+      ],
       templateColumns: ['1fr'],
       areas: [
         ['left', 'top', 'content'],
@@ -142,7 +142,7 @@ export const cssGridWithDifferentGutterOnDifferentScreenSizes = () => (
       </Content>
     </Grid.Item>
     <Grid.Item area="non-existing">
-      <Content>something that doesn&lsquo;t exist</Content>
+      <Content>something that doesn&apos;t exist</Content>
     </Grid.Item>
   </Grid.Container>
 );
@@ -158,12 +158,12 @@ export const cssGridWithObjectAsGutterAndCustomSizedColumns = () => (
     templateRows={['1fr', '1fr', '1fr']}
     // prettier-ignore
     areas={[
-        ['left', 'top',     'messages'],
-        ['left', 'top',     'order'],
-        ['left', 'top',     'sidebar'],
-        ['left', 'top',     'sidebar'],
-        ['left', 'content', 'sidebar'],
-      ]}
+      ['left', 'top', 'messages'],
+      ['left', 'top', 'order'],
+      ['left', 'top', 'sidebar'],
+      ['left', 'top', 'sidebar'],
+      ['left', 'content', 'sidebar'],
+    ]}
   >
     <Grid.Item area="left">
       <Content>Left</Content>
@@ -196,10 +196,10 @@ export const cssGridWithCustomTemplateColumns = () => (
     templateRows={['1fr', '1fr', '1fr']}
     // prettier-ignore
     areas={[
-        ['left', 'top',     'sidebar'],
-        ['left', 'content', 'sidebar'],
-        ['left', 'content', 'sidebar'],
-      ]}
+      ['left', 'top', 'sidebar'],
+      ['left', 'content', 'sidebar'],
+      ['left', 'content', 'sidebar'],
+    ]}
   >
     <Grid.Item area="left">
       <Content>Left</Content>
@@ -226,8 +226,8 @@ export const cssGridWithDifferentLayoutsForDifferentScreenSizes = () => (
     templateRows={['1fr', '1fr', '1fr']}
     // prettier-ignore
     areas={[
-      ['top',     'top'],
-      ['left',    'sidebar'],
+      ['top', 'top'],
+      ['left', 'sidebar'],
       ['content', 'sidebar'],
     ]}
     sm={{
@@ -235,7 +235,7 @@ export const cssGridWithDifferentLayoutsForDifferentScreenSizes = () => (
       templateRows: ['auto', '1fr', '1fr'],
       // prettier-ignore
       areas: [
-        ['left', 'top',     'sidebar'],
+        ['left', 'top', 'sidebar'],
         ['left', 'content', 'sidebar'],
         ['left', 'content', 'sidebar'],
       ],
@@ -265,9 +265,9 @@ export const withMinMax = () => (
     templateColumns={['1fr', 'minmax(30ch, 2fr)', '1fr']}
     // prettier-ignore
     areas={[
-        ['left', 'top',     'sidebar'],
-        ['left', 'content', 'sidebar'],
-      ]}
+      ['left', 'top', 'sidebar'],
+      ['left', 'content', 'sidebar'],
+    ]}
   >
     <Grid.Item area="left">
       <Content>Left</Content>
@@ -293,20 +293,20 @@ export const shownOnMdHiddenOnSmallScreens = () => (
     templateColumns={['1fr', '1fr', '1fr']}
     // prettier-ignore
     templateRows={[
-        'auto',
-        'auto'
-      ]}
+      'auto',
+      'auto',
+    ]}
     // prettier-ignore
     areas={[
-        ['left', 'content', 'content'],
-        ['left', 'content', 'content'],
-      ]}
+      ['left', 'content', 'content'],
+      ['left', 'content', 'content'],
+    ]}
     md={{
       // prettier-ignore
       templateRows: [
-          'auto',
-          'auto'
-        ],
+        'auto',
+        'auto',
+      ],
       templateColumns: ['1fr'],
       areas: [['left'], ['top'], ['content']],
     }}
@@ -325,7 +325,7 @@ export const shownOnMdHiddenOnSmallScreens = () => (
       </Content>
     </Grid.Item>
     <Grid.Item area="non-existing">
-      <Content>something that doesn&lsquo;t exist</Content>
+      <Content>something that doesn&apos;t exist</Content>
     </Grid.Item>
   </Grid.Container>
 );
@@ -339,26 +339,26 @@ export const shownOnSmallScreenSizesHiddenOnMd = () => (
     templateColumns={['1fr', '1fr', '1fr']}
     // prettier-ignore
     templateRows={[
-        'auto',
-        'auto'
-      ]}
+      'auto',
+      'auto',
+    ]}
     // prettier-ignore
     areas={[
-        ['left', 'top', 'top'],
-        ['left', 'content', 'content'],
-      ]}
+      ['left', 'top', 'top'],
+      ['left', 'content', 'content'],
+    ]}
     md={{
       // prettier-ignore
       templateRows: [
-          'auto',
-          'auto'
-        ],
+        'auto',
+        'auto',
+      ],
       templateColumns: ['1fr'],
       // prettier-ignore
       areas: [
-          ['left'], 
-          ['content']
-        ],
+        ['left'],
+        ['content'],
+      ],
     }}
   >
     <Grid.Item area="left">
@@ -375,7 +375,7 @@ export const shownOnSmallScreenSizesHiddenOnMd = () => (
       </Content>
     </Grid.Item>
     <Grid.Item area="non-existing">
-      <Content>something that doesn&lsquo;t exist</Content>
+      <Content>something that doesn&apos;t exist</Content>
     </Grid.Item>
   </Grid.Container>
 );
@@ -392,15 +392,15 @@ export const conditionallyHiddenGoodWayHidden = () => {
       // prettier-ignore
       templateRows={isHidden ? [
         'auto',
-        'auto'
-      ]: ['auto']}
+        'auto',
+      ] : ['auto']}
       areas={
         // prettier-ignore
-        isHidden ? 
+        isHidden ?
           [
             ['left', 'top', 'top'],
-            ['left', 'content', 'content']
-          ] : 
+            ['left', 'content', 'content'],
+          ] :
           [['left', 'content', 'content']]
       }
     >
@@ -433,11 +433,11 @@ export const conditionallyHiddenGoodWayShown = () => {
       templateRows={isHidden ? ['auto', 'auto'] : ['auto']}
       areas={
         // prettier-ignore
-        isHidden ? 
+        isHidden ?
           [
             ['left', 'top', 'top'],
-            ['left', 'content', 'content']
-          ] : 
+            ['left', 'content', 'content'],
+          ] :
           [['left', 'content', 'content']]
       }
     >
@@ -471,9 +471,9 @@ export const conditionallyHiddenWrongWayHidden = () => {
       areas={
         // prettier-ignore
         [
-            ['left', 'top', 'top'],
-            ['left', 'content', 'content']
-          ]
+          ['left', 'top', 'top'],
+          ['left', 'content', 'content'],
+        ]
       }
     >
       <Grid.Item area="left">
@@ -508,9 +508,9 @@ export const conditionallyHiddenWrongWayShown = () => {
       areas={
         // prettier-ignore
         [
-            ['left', 'top', 'top'],
-            ['left', 'content', 'content']
-          ]
+          ['left', 'top', 'top'],
+          ['left', 'content', 'content'],
+        ]
       }
     >
       <Grid.Item area="left">

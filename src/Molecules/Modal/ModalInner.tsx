@@ -1,10 +1,10 @@
-import React, { useEffect, useState, useRef } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import { useUIDSeed } from 'react-uid';
 import { RemoveScroll } from 'react-remove-scroll';
 import FocusLock from 'react-focus-lock';
 import styled from 'styled-components';
 import { motion } from 'framer-motion';
-import { DialogProps, BackdropProps, Props, BackdropWrapperProps } from './Modal.types';
+import { BackdropProps, BackdropWrapperProps, DialogProps, Props } from './Modal.types';
 import NormalizedElements from '../../common/NormalizedElements';
 import { isFunction } from '../../common/utils';
 import { Title } from './Title';
@@ -17,7 +17,7 @@ const PADDING_TOP_MOBILE_FULLSCREEN = 5;
 const PADDING_BOTTOM_MOBILE_FULLSCREEN = 5;
 const CLOSE_ICON_SIZE = 5;
 
-export const Fixedrop = styled(Flexbox)`
+export const FixedDrop = styled(Flexbox)`
   position: fixed;
   top: 0;
   left: 0;
@@ -146,9 +146,9 @@ const BackdropWrapper: React.FC<BackdropWrapperProps> = ({
       {children}
     </Backdrop>
   ) : (
-    <Fixedrop container alignItems="center" justifyContent="center">
+    <FixedDrop container alignItems="center" justifyContent="center">
       {children}
-    </Fixedrop>
+    </FixedDrop>
   );
 
 export const ModalInner: React.FC<Props> = ({

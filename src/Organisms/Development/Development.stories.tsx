@@ -3,7 +3,7 @@ import MD from 'react-markdown';
 
 import docs from './Development.md';
 import { Development, Typography } from '../../index';
-import { Display } from '../../common/Display/index';
+import { Display } from '../../common/Display';
 import { TYPOGRAPHY_TYPES } from '../../Atoms/Typography/Typography';
 
 export default {
@@ -158,7 +158,7 @@ regressionValueIsNonZeroButRoundedValueIs0.story = {
 };
 
 export const integrationWithDifferentTypographies = () => {
-  const items = Object.values(TYPOGRAPHY_TYPES).map((type) => ({
+  const items = Object.values(TYPOGRAPHY_TYPES)?.map((type) => ({
     title: type,
     component: (
       <Typography type={type}>

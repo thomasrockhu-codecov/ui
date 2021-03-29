@@ -1,5 +1,5 @@
 import React from 'react';
-import { FlexTableProviderComponent, FlexTableContextProps } from './FlexTableProvider.types';
+import { FlexTableContextProps, FlexTableProviderComponent } from './FlexTableProvider.types';
 
 export const FlexTableContext = React.createContext<FlexTableContextProps>(undefined);
 

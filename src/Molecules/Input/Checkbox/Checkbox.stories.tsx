@@ -1,6 +1,6 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { actions } from '@storybook/addon-actions';
-import { Input, Flexbox, FormField, Typography, Box } from '../../..';
+import { Box, Flexbox, FormField, Input, Typography } from '../../..';
 import { Display } from '../../../common/Display';
 
 const handlers = actions(
@@ -88,7 +88,7 @@ withDefaultChecked.story = {
 
 export const withCheckedControlledBehaviour = () => {
   const Component = () => {
-    const [checked, setChecked] = React.useState(false);
+    const [checked, setChecked] = useState(false);
     const toggleCheckbox = () => setChecked(!checked);
 
     return (
@@ -143,7 +143,7 @@ requiredStory.story = {
 
 export const withAnErrorIfNotChecked = () => {
   const Component = () => {
-    const [checked, setChecked] = React.useState(false);
+    const [checked, setChecked] = useState(false);
     const toggleCheckbox = () => setChecked(!checked);
 
     return (
@@ -212,9 +212,9 @@ inAGroupWithTooltipPositionTop.story = {
 
 export const inAGroupWithError = () => {
   const Component = () => {
-    const [oneChecked, setOneChecked] = React.useState(false);
-    const [twoChecked, setTwoChecked] = React.useState(false);
-    const [threeChecked, setThreeChecked] = React.useState(false);
+    const [oneChecked, setOneChecked] = useState(false);
+    const [twoChecked, setTwoChecked] = useState(false);
+    const [threeChecked, setThreeChecked] = useState(false);
     const hasGroupError = !oneChecked && !twoChecked && !threeChecked;
 
     return (

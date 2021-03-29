@@ -1,4 +1,4 @@
-import React, { useMemo } from 'react';
+import React, { useCallback, useContext, useEffect, useMemo, useRef } from 'react';
 import { useMachine } from '@xstate/react';
 import styled from 'styled-components';
 import R from 'ramda';
@@ -6,22 +6,22 @@ import R from 'ramda';
 import { useOnClickOutside } from '../../../common/Hooks';
 
 import {
+  ActionsWrapper,
+  FormFieldOrFragment,
   ListItemWrapper,
   ListWrapper,
   ListWrapperWithPortal,
-  SelectedValueWrapper,
-  FormFieldOrFragment,
   SearchWrapper,
-  ActionsWrapper,
+  SelectedValueWrapper,
 } from './lib/wrappers';
-import { useSelectMachineFromContext, SelectStateContext } from './lib/context';
+import { SelectStateContext, useSelectMachineFromContext } from './lib/context';
 import {
-  useComponentsWithDefaults,
   defaultComponents,
   defaultComponentsMultiselect,
+  useComponentsWithDefaults,
 } from './lib/defaults';
-import { SelectMachine, OptionLike, ACTION_TYPES } from './machine';
-import { Props, Action as ActionType } from './Select.types';
+import { ACTION_TYPES, OptionLike, SelectMachine } from './machine';
+import { Action as ActionType, Props } from './Select.types';
 
 import { assert } from '../../../common/utils';
 
@@ -31,9 +31,9 @@ import {
   useFocusFromMachine,
   useIsFirstRender,
   useMultiRef,
+  useOnBlurAndOnFocus,
   usePropagateChangesThroughOnChange,
   useSyncPropsWithMachine,
-  useOnBlurAndOnFocus,
 } from './lib/hooks';
 import { SYMBOL_ALL } from './lib/constants';
 import TrackingContext from '../../../common/tracking';
@@ -50,7 +50,7 @@ const getValuesForNativeSelect = (
   isMultiselect: boolean,
 ) => {
   if (isMultiselect) {
-    return selectedItems.map((x) => x.value);
+    return selectedItems?.map((x) => x.value);
   }
 
   const value = getSingleSelectValue(selectedItems);
@@ -65,7 +65,7 @@ const Select = (props: Props) => {
     `Input.Select: You can't use 'value' prop without onChange. It makes sense only if you want a readonly Input.Select, which is really weird. Don't do that.`,
   );
 
-  const trackContext = React.useContext(TrackingContext);
+  const trackContext = useContext(TrackingContext);
 
   const isFirstRender = useIsFirstRender();
 
@@ -98,16 +98,16 @@ const Select = (props: Props) => {
       showSearch: props.showSearch || false,
       id: props.id,
       valueFromProps: props.value,
-      uncommitedSelectedItems: [],
+      uncommittedSelectedItems: [],
       actions: props.actions || [],
     },
   });
   const [machineState, send, service] = machineHandlers;
 
   /******      Tracking      ******/
-  const currentPropsRef = React.useRef(props);
+  const currentPropsRef = useRef(props);
   currentPropsRef.current = props;
-  React.useEffect(() => {
+  useEffect(() => {
     const listener = (e: any) =>
       trackContext && trackContext.track('Input.Select', e as any, currentPropsRef.current);
 
@@ -118,7 +118,7 @@ const Select = (props: Props) => {
     };
   }, [trackContext, service]);
 
-  React.useEffect(() => {
+  useEffect(() => {
     if (!props.onSearchQueryChange) return;
     const listener = (e: { type: string; payload: string }) =>
       e.type === ACTION_TYPES.SEARCH_QUERY_UPDATE && props.onSearchQueryChange!(e);
@@ -185,20 +185,20 @@ const Select = (props: Props) => {
     'interaction.enabled.active.navigation.keyboard',
   );
 
-  const handleMouseMove = React.useCallback(() => {
+  const handleMouseMove = useCallback(() => {
     if (isKeyboardNavigation) {
       send('MOUSE_MOVE');
     }
   }, [send, isKeyboardNavigation]);
 
   /******      Refs      ******/
-  const buttonRef = React.useRef(null);
+  const buttonRef = useRef(null);
   const [itemRefs, setItemRef] = useMultiRef();
-  const listRef = React.useRef(null);
-  const formFieldRef = React.useRef(null);
-  const selectWrapperRef = React.useRef(null);
-  const inputRef = React.useRef(null);
-  const searchRef = React.useRef(null);
+  const listRef = useRef(null);
+  const formFieldRef = useRef(null);
+  const selectWrapperRef = useRef(null);
+  const inputRef = useRef(null);
+  const searchRef = useRef(null);
 
   /******      Focus management      ******/
   useAutofocus(buttonRef, props.autoFocus);
@@ -250,10 +250,10 @@ const Select = (props: Props) => {
         onChange={noop}
       >
         {placeholder && <option label={placeholder} value="" />}
-        {options.map((x: any) =>
+        {options?.map((x: any) =>
           x.options ? (
             <optgroup label={x.label} key={x.label}>
-              {x.options.map((y: any) => (
+              {x.options?.map((y: any) => (
                 <option label={y.label} value={y.value} key={`${y.label}${y.value}`} />
               ))}
             </optgroup>
@@ -316,7 +316,7 @@ const Select = (props: Props) => {
               maxHeight={props.listMaxHeight}
               width={props.width}
             >
-              {allOptions.map((x: any, index: number) => (
+              {allOptions?.map((x: any, index: number) => (
                 <ListItemWrapper
                   // eslint-disable-next-line react/no-array-index-key
                   key={index}

@@ -132,7 +132,8 @@ exports[`Storyshots Atoms / Spinner Colors 1`] = `
 `;
 
 exports[`Storyshots Atoms / Spinner Regression: 2 spinners with same color and size affects each other in Chrome 1`] = `
-.c0 {
+Array [
+  .c0 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
   margin: 0;
@@ -141,14 +142,11 @@ exports[`Storyshots Atoms / Spinner Regression: 2 spinners with same color and s
   line-height: 1.5;
 }
 
-<div>
-  <div>
-    <span
-      className="c0"
-    >
-      Only the one with green border should be shown. The bug before was that if two spinners had the same size and color, both were hidden.
-    </span>
-  </div>
+<span
+    className="c0"
+  >
+    Only the one with green border should be shown. The bug before was that if two spinners had the same size and color, both were hidden.
+  </span>,
   <div
     style={
       Object {
@@ -156,15 +154,15 @@ exports[`Storyshots Atoms / Spinner Regression: 2 spinners with same color and s
         "display": "none",
       }
     }
-  />
+  />,
   <div
     style={
       Object {
         "border": "1px green solid",
       }
     }
-  />
-</div>
+  />,
+]
 `;
 
 exports[`Storyshots Atoms / Spinner Spinner big 1`] = `null`;

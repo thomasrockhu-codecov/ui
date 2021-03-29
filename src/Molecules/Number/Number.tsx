@@ -10,9 +10,8 @@ const getPrefix = (sign: boolean, value: number) => (sign && value > 0 ? '+' : '
 
 const getTickDecimals = (value: number, ticks: Ticks) => {
   if (process.env.NODE_ENV !== 'production') {
-    // @ts-ignore
     const wrongTick = ticks.find(R.or(R.has('from_price'), R.has('to_price')));
-    assert(!wrongTick, `Found ticks with snake cased keys, they should be camelcased.`);
+    assert(!wrongTick, `Found ticks with snake cased keys, they should be in camelcase.`);
   }
   const tick = ticks.find((t) => value >= t.fromPrice && value < t.toPrice + (t.tick || 0));
 
@@ -58,8 +57,8 @@ const getDecimalsFromMinMax = (
   maximumDecimals: number = Number.MAX_VALUE,
   minimumDecimals: number = 0,
 ) => {
-  const splitted = value.toString().split('.');
-  const decimals = splitted && splitted[1] ? splitted[1].length : 0;
+  const split = value.toString().split('.');
+  const decimals = split && split[1] ? split[1].length : 0;
   if (decimals <= minimumDecimals) return minimumDecimals;
   if (decimals >= maximumDecimals) return maximumDecimals;
   return decimals;

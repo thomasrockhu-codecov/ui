@@ -121,7 +121,6 @@ exports[`Storyshots Molecules / Input / Select Accessible From Document Forms 1`
 
 .c6 {
   height: 40px;
-  outline: none;
   border: 1px solid #BCBCB6;
   position: relative;
   background: #FFFFFF;
@@ -437,7 +436,6 @@ exports[`Storyshots Molecules / Input / Select Actions 1`] = `
 
 .c6 {
   height: 40px;
-  outline: none;
   border: 1px solid #BCBCB6;
   position: relative;
   background: #FFFFFF;
@@ -745,7 +743,6 @@ exports[`Storyshots Molecules / Input / Select Actions And Empty Option List 1`]
 
 .c6 {
   height: 40px;
-  outline: none;
   border: 1px solid #BCBCB6;
   position: relative;
   background: #FFFFFF;
@@ -1041,7 +1038,6 @@ exports[`Storyshots Molecules / Input / Select Auto Focus 1`] = `
 
 .c6 {
   height: 40px;
-  outline: none;
   border: 1px solid #BCBCB6;
   position: relative;
   background: #FFFFFF;
@@ -1229,7 +1225,11 @@ exports[`Storyshots Molecules / Input / Select Auto Focus 1`] = `
 `;
 
 exports[`Storyshots Molecules / Input / Select Auto Placement 1`] = `
-.c12 {
+Array [
+  <h1>
+    Open the Select and scroll down
+  </h1>,
+  .c12 {
   padding-left: 8px;
   padding-right: 8px;
   background-color: transparent;
@@ -1349,7 +1349,6 @@ exports[`Storyshots Molecules / Input / Select Auto Placement 1`] = `
 
 .c6 {
   height: 40px;
-  outline: none;
   border: 1px solid #BCBCB6;
   position: relative;
   background: #FFFFFF;
@@ -1427,11 +1426,7 @@ exports[`Storyshots Molecules / Input / Select Auto Placement 1`] = `
   display: inline-block;
 }
 
-<div>
-  <h1>
-    Open the Select and scroll down
-  </h1>
-  <div
+<div
     style={
       Object {
         "alignItems": "center",
@@ -1547,8 +1542,8 @@ exports[`Storyshots Molecules / Input / Select Auto Placement 1`] = `
         </div>
       </div>
     </div>
-  </div>
-</div>
+  </div>,
+]
 `;
 
 exports[`Storyshots Molecules / Input / Select Changes From Props 1`] = `
@@ -1734,7 +1729,6 @@ Array [
 
 .c6 {
   height: 40px;
-  outline: none;
   border: 1px solid #BCBCB6;
   position: relative;
   background: #FFFFFF;
@@ -2043,7 +2037,6 @@ exports[`Storyshots Molecules / Input / Select Controlled behaviour 1`] = `
 
 .c6 {
   height: 40px;
-  outline: none;
   border: 1px solid #BCBCB6;
   position: relative;
   background: #FFFFFF;
@@ -2352,7 +2345,6 @@ exports[`Storyshots Molecules / Input / Select Custom Renderers 1`] = `
 
 .c6 {
   height: 40px;
-  outline: none;
   border: 1px solid #BCBCB6;
   position: relative;
   background: #FFFFFF;
@@ -2651,7 +2643,6 @@ exports[`Storyshots Molecules / Input / Select Default Story 1`] = `
 
 .c6 {
   height: 40px;
-  outline: none;
   border: 1px solid #BCBCB6;
   position: relative;
   background: #FFFFFF;
@@ -2986,7 +2977,6 @@ exports[`Storyshots Molecules / Input / Select Default variations 1`] = `
 
 .c9 {
   height: 40px;
-  outline: none;
   border: 1px solid #BCBCB6;
   position: relative;
   background: #FFFFFF;
@@ -3004,7 +2994,6 @@ exports[`Storyshots Molecules / Input / Select Default variations 1`] = `
 
 .c20 {
   height: 40px;
-  outline: none;
   border: 1px solid #FF1900;
   position: relative;
   background: #FFFFFF;
@@ -3026,7 +3015,6 @@ exports[`Storyshots Molecules / Input / Select Default variations 1`] = `
 
 .c24 {
   height: 40px;
-  outline: none;
   border: 1px solid #BCBCB6;
   position: relative;
   background: #FFFFFF;
@@ -3048,7 +3036,6 @@ exports[`Storyshots Molecules / Input / Select Default variations 1`] = `
 
 .c26 {
   height: 40px;
-  outline: none;
   border: 1px solid #00D200;
   position: relative;
   background: #FFFFFF;
@@ -3828,7 +3815,6 @@ exports[`Storyshots Molecules / Input / Select Disabled Items 1`] = `
 
 .c6 {
   height: 40px;
-  outline: none;
   border: 1px solid #BCBCB6;
   position: relative;
   background: #FFFFFF;
@@ -4162,7 +4148,6 @@ Array [
 
 .c6 {
   height: 40px;
-  outline: none;
   border: 1px solid #BCBCB6;
   position: relative;
   background: #FFFFFF;
@@ -4486,7 +4471,6 @@ exports[`Storyshots Molecules / Input / Select Full Width 1`] = `
 
 .c6 {
   height: 40px;
-  outline: none;
   border: 1px solid #BCBCB6;
   position: relative;
   background: #FFFFFF;
@@ -4794,7 +4778,6 @@ exports[`Storyshots Molecules / Input / Select Fully Empty 1`] = `
 
 .c6 {
   height: 40px;
-  outline: none;
   border: 1px solid #BCBCB6;
   position: relative;
   background: #FFFFFF;
@@ -5090,7 +5073,6 @@ exports[`Storyshots Molecules / Input / Select Grouped Options 1`] = `
 
 .c6 {
   height: 40px;
-  outline: none;
   border: 1px solid #BCBCB6;
   position: relative;
   background: #FFFFFF;
@@ -5169,41 +5151,19 @@ exports[`Storyshots Molecules / Input / Select Grouped Options 1`] = `
 }
 
 <div>
-  <div>
-    <select
-      aria-hidden="true"
-      className="c0"
-      disabled={false}
-      onChange={[Function]}
+  <select
+    aria-hidden="true"
+    className="c0"
+    disabled={false}
+    onChange={[Function]}
+  >
+    <option
+      label="Select option"
+      value=""
+    />
+    <optgroup
+      label="Group 1"
     >
-      <option
-        label="Select option"
-        value=""
-      />
-      <optgroup
-        label="Group 1"
-      >
-        <option
-          label="Child 1 0"
-          value="c1-0"
-        />
-        <option
-          label="Child 1 1"
-          value="c1-1"
-        />
-        <option
-          label="Child 1 2"
-          value="c1-2"
-        />
-        <option
-          label="Child 1 3"
-          value="c1-3"
-        />
-        <option
-          label="Child 1 4"
-          value="c1-4"
-        />
-      </optgroup>
       <option
         label="Child 1 0"
         value="c1-0"
@@ -5224,30 +5184,30 @@ exports[`Storyshots Molecules / Input / Select Grouped Options 1`] = `
         label="Child 1 4"
         value="c1-4"
       />
-      <optgroup
-        label="Group 2"
-      >
-        <option
-          label="Child 2 0"
-          value="c2-0"
-        />
-        <option
-          label="Child 2 1"
-          value="c2-1"
-        />
-        <option
-          label="Child 2 2"
-          value="c2-2"
-        />
-        <option
-          label="Child 2 3"
-          value="c2-3"
-        />
-        <option
-          label="Child 2 4"
-          value="c2-4"
-        />
-      </optgroup>
+    </optgroup>
+    <option
+      label="Child 1 0"
+      value="c1-0"
+    />
+    <option
+      label="Child 1 1"
+      value="c1-1"
+    />
+    <option
+      label="Child 1 2"
+      value="c1-2"
+    />
+    <option
+      label="Child 1 3"
+      value="c1-3"
+    />
+    <option
+      label="Child 1 4"
+      value="c1-4"
+    />
+    <optgroup
+      label="Group 2"
+    >
       <option
         label="Child 2 0"
         value="c2-0"
@@ -5268,87 +5228,107 @@ exports[`Storyshots Molecules / Input / Select Grouped Options 1`] = `
         label="Child 2 4"
         value="c2-4"
       />
-    </select>
+    </optgroup>
+    <option
+      label="Child 2 0"
+      value="c2-0"
+    />
+    <option
+      label="Child 2 1"
+      value="c2-1"
+    />
+    <option
+      label="Child 2 2"
+      value="c2-2"
+    />
+    <option
+      label="Child 2 3"
+      value="c2-3"
+    />
+    <option
+      label="Child 2 4"
+      value="c2-4"
+    />
+  </select>
+  <div
+    className="c1"
+  >
     <div
-      className="c1"
+      className="c2"
     >
       <div
-        className="c2"
+        className="c3"
       >
-        <div
-          className="c3"
+        <label
+          className="c4"
+          hidden={false}
+          htmlFor="grouped-options-single"
         >
-          <label
-            className="c4"
-            hidden={false}
-            htmlFor="grouped-options-single"
+          <span
+            className="c5"
           >
-            <span
-              className="c5"
+            <div
+              className="c2"
+            >
+              Grouped options single 
+            </div>
+          </span>
+        </label>
+        <div
+          className="c6"
+          disabled={false}
+          label="Grouped options single"
+          onBlur={[Function]}
+          onFocus={[Function]}
+          tabIndex={0}
+        >
+          <span
+            className="c7"
+          >
+            <button
+              aria-expanded="false"
+              aria-haspopup="listbox"
+              aria-label="Grouped options single: Select option"
+              className="c8 c9"
+              data-testid="input-select-button"
+              disabled={false}
+              form=""
+              id="grouped-options-single"
+              onClick={[Function]}
+              tabIndex={0}
+              type="button"
             >
               <div
-                className="c2"
-              >
-                Grouped options single 
-              </div>
-            </span>
-          </label>
-          <div
-            className="c6"
-            disabled={false}
-            label="Grouped options single"
-            onBlur={[Function]}
-            onFocus={[Function]}
-            tabIndex={0}
-          >
-            <span
-              className="c7"
-            >
-              <button
-                aria-expanded="false"
-                aria-haspopup="listbox"
-                aria-label="Grouped options single: Select option"
-                className="c8 c9"
-                data-testid="input-select-button"
-                disabled={false}
-                form=""
-                id="grouped-options-single"
-                onClick={[Function]}
-                tabIndex={0}
-                type="button"
+                aria-hidden="true"
+                className="c10 c11"
               >
                 <div
-                  aria-hidden="true"
-                  className="c10 c11"
+                  className="c12 c13"
                 >
-                  <div
-                    className="c12 c13"
+                  <span
+                    className="c14"
                   >
-                    <span
-                      className="c14"
-                    >
-                      Select option
-                    </span>
-                  </div>
+                    Select option
+                  </span>
                 </div>
-              </button>
-            </span>
-            <svg
-              aria-hidden="true"
-              className="c15 c16"
-              focusable="false"
-              open={false}
-              preserveAspectRatio="xMidYMid meet"
-              role="presentation"
-              viewBox="0 0 24 24"
-            >
-              <polygon
-                points="19.969 4 24 8.027 12 20 0 8.027 4.031 4 12 11.952"
-              />
-            </svg>
-          </div>
-          
+              </div>
+            </button>
+          </span>
+          <svg
+            aria-hidden="true"
+            className="c15 c16"
+            focusable="false"
+            open={false}
+            preserveAspectRatio="xMidYMid meet"
+            role="presentation"
+            viewBox="0 0 24 24"
+          >
+            <polygon
+              points="19.969 4 24 8.027 12 20 0 8.027 4.031 4 12 11.952"
+            />
+          </svg>
         </div>
+        
       </div>
     </div>
   </div>
@@ -5482,7 +5462,6 @@ exports[`Storyshots Molecules / Input / Select Hide Label 1`] = `
 
 .c6 {
   height: 40px;
-  outline: none;
   border: 1px solid #BCBCB6;
   position: relative;
   background: #FFFFFF;
@@ -5806,7 +5785,6 @@ exports[`Storyshots Molecules / Input / Select Inside Modal 1`] = `
 
 .c9 {
   height: 40px;
-  outline: none;
   border: 1px solid #BCBCB6;
   position: relative;
   background: #FFFFFF;
@@ -7684,7 +7662,6 @@ exports[`Storyshots Molecules / Input / Select Multi Select Uncontrolled 1`] = `
 
 .c6 {
   height: 40px;
-  outline: none;
   border: 1px solid #BCBCB6;
   position: relative;
   background: #FFFFFF;
@@ -7989,7 +7966,6 @@ exports[`Storyshots Molecules / Input / Select Multiselect 1`] = `
 
 .c6 {
   height: 40px;
-  outline: none;
   border: 1px solid #BCBCB6;
   position: relative;
   background: #FFFFFF;
@@ -8294,7 +8270,6 @@ exports[`Storyshots Molecules / Input / Select Multiselect Actions 1`] = `
 
 .c6 {
   height: 40px;
-  outline: none;
   border: 1px solid #BCBCB6;
   position: relative;
   background: #FFFFFF;
@@ -8599,7 +8574,6 @@ exports[`Storyshots Molecules / Input / Select Multiselect Select All 1`] = `
 
 .c6 {
   height: 40px;
-  outline: none;
   border: 1px solid #BCBCB6;
   position: relative;
   background: #FFFFFF;
@@ -8916,7 +8890,6 @@ exports[`Storyshots Molecules / Input / Select On A Coloured Background 1`] = `
 
 .c7 {
   height: 40px;
-  outline: none;
   border: 1px solid #BCBCB6;
   position: relative;
   background: #FFFFFF;
@@ -9224,7 +9197,6 @@ exports[`Storyshots Molecules / Input / Select On Blur And On Focus 1`] = `
 
 .c6 {
   height: 40px;
-  outline: none;
   border: 1px solid #BCBCB6;
   position: relative;
   background: #FFFFFF;
@@ -9532,7 +9504,6 @@ exports[`Storyshots Molecules / Input / Select On Search Query Change 1`] = `
 
 .c6 {
   height: 40px;
-  outline: none;
   border: 1px solid #00D200;
   position: relative;
   background: #FFFFFF;
@@ -9840,7 +9811,6 @@ exports[`Storyshots Molecules / Input / Select Overflow Story 1`] = `
 
 .c6 {
   height: 40px;
-  outline: none;
   border: 1px solid #BCBCB6;
   position: relative;
   background: #FFFFFF;
@@ -10541,7 +10511,6 @@ exports[`Storyshots Molecules / Input / Select Placement Top 1`] = `
 
 .c7 {
   height: 40px;
-  outline: none;
   border: 1px solid #BCBCB6;
   position: relative;
   background: #FFFFFF;
@@ -10853,7 +10822,6 @@ exports[`Storyshots Molecules / Input / Select Preselected Options 1`] = `
 
 .c6 {
   height: 40px;
-  outline: none;
   border: 1px solid #BCBCB6;
   position: relative;
   background: #FFFFFF;
@@ -11163,7 +11131,6 @@ exports[`Storyshots Molecules / Input / Select Search Story 1`] = `
 
 .c6 {
   height: 40px;
-  outline: none;
   border: 1px solid #BCBCB6;
   position: relative;
   background: #FFFFFF;
@@ -11514,7 +11481,6 @@ exports[`Storyshots Molecules / Input / Select Size S 1`] = `
 
 .c9 {
   height: 32px;
-  outline: none;
   border: 1px solid #BCBCB6;
   position: relative;
   background: #FFFFFF;
@@ -11532,7 +11498,6 @@ exports[`Storyshots Molecules / Input / Select Size S 1`] = `
 
 .c20 {
   height: 32px;
-  outline: none;
   border: 1px solid #FF1900;
   position: relative;
   background: #FFFFFF;
@@ -11554,7 +11519,6 @@ exports[`Storyshots Molecules / Input / Select Size S 1`] = `
 
 .c24 {
   height: 32px;
-  outline: none;
   border: 1px solid #BCBCB6;
   position: relative;
   background: #FFFFFF;
@@ -11576,7 +11540,6 @@ exports[`Storyshots Molecules / Input / Select Size S 1`] = `
 
 .c26 {
   height: 32px;
-  outline: none;
   border: 1px solid #00D200;
   position: relative;
   background: #FFFFFF;
@@ -12360,7 +12323,6 @@ exports[`Storyshots Molecules / Input / Select Tracking 1`] = `
 
 .c6 {
   height: 40px;
-  outline: none;
   border: 1px solid #BCBCB6;
   position: relative;
   background: #FFFFFF;
@@ -12669,7 +12631,6 @@ Array [
 
 .c6 {
   height: 40px;
-  outline: none;
   border: 1px solid #BCBCB6;
   position: relative;
   background: #FFFFFF;
@@ -12974,7 +12935,6 @@ Array [
 
 .c6 {
   height: 40px;
-  outline: none;
   border: 1px solid #BCBCB6;
   position: relative;
   background: #FFFFFF;
@@ -13301,7 +13261,6 @@ exports[`Storyshots Molecules / Input / Select With Label Tooltip 1`] = `
 
 .c9 {
   height: 40px;
-  outline: none;
   border: 1px solid #BCBCB6;
   position: relative;
   background: #FFFFFF;
@@ -13662,7 +13621,6 @@ Array [
 
 .c9 {
   height: 40px;
-  outline: none;
   border: 1px solid #BCBCB6;
   position: relative;
   background: #FFFFFF;

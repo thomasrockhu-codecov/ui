@@ -3,12 +3,12 @@ import styled from 'styled-components';
 import { Props } from './TabTitle.types';
 
 const StyledTitle = styled.span<Props>`
-  ${props => (props.height ? `height: ${props.theme.spacing.unit(props.height)}px;` : '')}
+  ${(props) => (props.height ? `height: ${props.theme.spacing.unit(props.height)}px;` : '')}
   position: relative;
   display: inline-flex;
   align-items: center;
 
-  ${props => {
+  ${(props) => {
     if (props.active) {
       return `
         &::after {

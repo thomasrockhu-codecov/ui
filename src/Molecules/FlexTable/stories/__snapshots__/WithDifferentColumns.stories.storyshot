@@ -285,10 +285,6 @@ exports[`Storyshots Molecules / FlexTable / With different columns Column Width 
   justify-content: flex-end;
 }
 
-.c28:focus {
-  outline: none;
-}
-
 .c26 {
   padding-top: 0 !important;
   padding-bottom: 0;
@@ -690,7 +686,7 @@ exports[`Storyshots Molecules / FlexTable / With different columns Column Width 
           <span
             className="c25 c16"
           >
-            Very long cell content that should be truncated or ellipsized depepending on your language preferences
+            Very long cell content that should be truncated or ellipsized depending on your language preferences
           </span>
         </div>
       </div>
@@ -1312,10 +1308,6 @@ exports[`Storyshots Molecules / FlexTable / With different columns Column Width 
   justify-content: flex-end;
 }
 
-.c21:focus {
-  outline: none;
-}
-
 .c19 {
   padding-top: 0 !important;
   padding-bottom: 0;
@@ -1563,7 +1555,7 @@ exports[`Storyshots Molecules / FlexTable / With different columns Column Width 
           <span
             className="c18 c11"
           >
-            Very long cell content that should be truncated or ellipsized depepending on your language preferences
+            Very long cell content that should be truncated or ellipsized depending on your language preferences
           </span>
         </div>
       </div>
@@ -2171,10 +2163,6 @@ exports[`Storyshots Molecules / FlexTable / With different columns Different Ali
   -webkit-justify-content: flex-end;
   -ms-flex-pack: end;
   justify-content: flex-end;
-}
-
-.c21:focus {
-  outline: none;
 }
 
 .c19 {
@@ -2965,10 +2953,6 @@ exports[`Storyshots Molecules / FlexTable / With different columns Hidden Column
   -webkit-justify-content: flex-end;
   -ms-flex-pack: end;
   justify-content: flex-end;
-}
-
-.c20:focus {
-  outline: none;
 }
 
 .c18 {

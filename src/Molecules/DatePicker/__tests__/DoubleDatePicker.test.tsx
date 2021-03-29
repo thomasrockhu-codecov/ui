@@ -1,5 +1,5 @@
 import React from 'react';
-import { render, fireEvent, cleanup } from '@testing-library/react';
+import { cleanup, fireEvent, render } from '@testing-library/react';
 import '@testing-library/jest-dom/extend-expect';
 import { advanceTo, clear } from 'jest-date-mock';
 import { format } from 'date-fns';
@@ -169,7 +169,7 @@ describe('Double date picker', () => {
   });
 
   // TODO: Re-implement this test when arrow navigation is added.
-  it.skip('select a range by using arrowkeys', async () => {
+  it.skip('select a range by using arrow keys', async () => {
     const onChange = jest.fn((first: Date | null, second: Date | null) => {
       if (first && !second) return [format(first, 'MMMM d'), null];
       if (first && second) return [format(first, 'MMMM d'), format(second, 'MMMM d')];

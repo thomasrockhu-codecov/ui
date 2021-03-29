@@ -1,6 +1,6 @@
 import React, { forwardRef } from 'react';
 import styled from 'styled-components';
-import { TooltipContentComponent, StyledTooltipProps } from './TooltipContent.types';
+import { StyledTooltipProps } from './TooltipContent.types';
 import { BORDER_SIZE } from '../../consts';
 import { Typography } from '../../../..';
 
@@ -14,19 +14,24 @@ const StyledTooltip = styled.div<StyledTooltipProps>`
   overflow-wrap: break-word;
 `;
 
-const TooltipContent: TooltipContentComponent = forwardRef(
-  ({ label, ariaLabel, maxWidth }, ref) => {
-    return (
-      <StyledTooltip
-        ref={ref as any}
-        maxWidth={maxWidth}
-        aria-label={ariaLabel}
-        role={ariaLabel ? 'tooltip' : undefined}
-      >
-        <Typography type="tertiary">{label}</Typography>
-      </StyledTooltip>
-    );
-  },
-);
+const TooltipContent: React.ForwardRefExoticComponent<
+  React.PropsWithoutRef<{
+    readonly maxWidth?: any;
+    readonly label?: any;
+    readonly ariaLabel?: any;
+  }> &
+    React.RefAttributes<unknown>
+> = forwardRef(({ label, ariaLabel, maxWidth }, ref) => {
+  return (
+    <StyledTooltip
+      ref={ref as any}
+      maxWidth={maxWidth}
+      aria-label={ariaLabel}
+      role={ariaLabel ? 'tooltip' : undefined}
+    >
+      <Typography type="tertiary">{label}</Typography>
+    </StyledTooltip>
+  );
+});
 
 export default TooltipContent;

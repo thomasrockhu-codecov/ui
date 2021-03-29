@@ -1,9 +1,9 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { actions } from '@storybook/addon-actions';
-import { Input, Icon, Flexbox, Button, Box } from '../../..';
+import { Box, Button, Flexbox, Icon, Input } from '../../..';
 import { Display } from '../../../common/Display';
 
-// A bit laggy for now, let's optimize later
+// TODO: A bit laggy for now, let's optimize later
 const handlers = actions(
   'onBlur',
   'onClick',
@@ -45,7 +45,7 @@ withDefaultValueUncontrolledBehaviour.story = {
 
 export const errorIfEmptyText = () => {
   const Component = () => {
-    const [value, setValue] = React.useState('');
+    const [value, setValue] = useState('');
 
     return (
       <Input.Text
@@ -144,7 +144,7 @@ actionsStory.story = {
 };
 
 export const extraInfoBelow = () => (
-  <Input.Text label="Label" placeholder="Placeholder" extraInfo="Use wisely this space" />
+  <Input.Text label="Label" placeholder="Placeholder" extraInfo="Use this space wisely" />
 );
 
 extraInfoBelow.story = {
@@ -153,13 +153,13 @@ extraInfoBelow.story = {
 
 export const extraInfoWithError = () => {
   const Component = () => {
-    const [value, setValue] = React.useState('');
+    const [value, setValue] = useState('');
 
     return (
       <Input.Text
         label="My awesome text field"
         placeholder="This is a placeholder"
-        extraInfo="Use wisely this space"
+        extraInfo="Use this space wisely"
         onChange={(e) => setValue(e.target.value)}
         {...(value === '' ? { error: 'Enter text' } : {})}
       />
@@ -180,7 +180,7 @@ export const edgeCases = () => (
           <Input.Text
             label="Too long label, goes into ellipsis. Consider smaller label or bigger input"
             placeholder="If placeholder goes too long though, it probably should be truncated into ellipsis, right?"
-            extraInfo="This is much neccessary info wow"
+            extraInfo="This is much necessary info wow"
           />
         ),
         title: 'Long values',

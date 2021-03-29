@@ -4,18 +4,20 @@ import { useIntersect } from '../../common/Hooks';
 import { Component, InternalProps, Props } from './FadedScroll.types';
 import {
   containerStyles,
-  fadeBottomStyles,
   fadeBottomDesktopStyles,
-  fadeTopStyles,
+  fadeBottomStyles,
   fadeTopDesktopStyles,
+  fadeTopStyles,
   intersectionStyles,
   scrollerStyles,
 } from './FadedScroll.styles';
 
 const Container = styled.div<InternalProps & Props>`
   ${containerStyles}
-  ${p => !p.disableTopFade && (p.enableMobileFade ? fadeTopStyles : fadeTopDesktopStyles)}
-  ${p => (p.enableMobileFade ? fadeBottomStyles : fadeBottomDesktopStyles)}
+  ${(p) => !p.disableTopFade && (p.enableMobileFade ? fadeTopStyles : fadeTopDesktopStyles)}
+  ${(
+    p,
+  ) => (p.enableMobileFade ? fadeBottomStyles : fadeBottomDesktopStyles)}
 `;
 
 const Scroller = styled.div<Props>`

@@ -1,4 +1,4 @@
-import { ColorFn } from '../../../../common/Types/sharedTypes';
+import { ColorFn } from '../../../../common/Types';
 
 export type TextProps = {
   className?: string;

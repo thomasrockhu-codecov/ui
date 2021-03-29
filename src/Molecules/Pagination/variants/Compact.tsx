@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
-import { Flexbox, Icon, Button } from '../../../index';
-import { PaginationCompactProps, BrowseButtonProps } from '../Pagination.types';
+import { Button, Flexbox, Icon } from '../../../index';
+import { BrowseButtonProps, PaginationCompactProps } from '../Pagination.types';
 
 const StyledButton = styled(Button)<{ $direction: 'left' | 'right' }>`
   display: flex;
@@ -10,7 +10,6 @@ const StyledButton = styled(Button)<{ $direction: 'left' | 'right' }>`
   border: none;
   padding: 0;
   background-color: transparent;
-  outline: none;
   flex-direction: row;
   justify-content: ${(p) => (p.$direction === 'left' ? 'flex-start' : 'flex-end')};
 `;

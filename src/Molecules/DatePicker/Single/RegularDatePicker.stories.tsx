@@ -48,7 +48,7 @@ export const Controlled = () => {
 
   return (
     <>
-      <Button onClick={() => setDate(add(date, { days: 1 }))}>Next Date</Button>
+      <Button onClick={() => setDate(add(date, { days: 1 }))}>Next date</Button>
       <DatePicker
         id="controlled"
         label="Label"

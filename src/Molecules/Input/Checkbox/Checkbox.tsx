@@ -1,8 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
 import * as R from 'ramda';
-import { FormLabel, Icon, Flexbox, Typography, FormField, Tooltip } from '../../..';
-import { CheckboxComponent, Props, InternalInputProps } from './Checkbox.types';
+import { Flexbox, FormField, FormLabel, Icon, Tooltip, Typography } from '../../..';
+import { CheckboxComponent, InternalInputProps, Props } from './Checkbox.types';
 import { isString } from '../../../common/utils';
 
 const CHECKBOX_DEFAULT_SIZE = 5;

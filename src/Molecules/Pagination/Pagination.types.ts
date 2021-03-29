@@ -23,7 +23,7 @@ export type PageItemsProps = {
   numberOfPages: number;
   onClickPageItem: (newPage: number) => void;
   PageItem: React.FC<PageItemProps>;
-  TruncatedPageNumbers: React.FC<{}>;
+  TruncatedPageNumbers: React.FC;
   currentPageLabel: string;
   pageItemLabel: string;
 };

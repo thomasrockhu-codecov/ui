@@ -1,7 +1,7 @@
-import * as React from 'react';
+import React from 'react';
 import R from 'ramda';
 import styled from 'styled-components';
-import { useSelectMachineFromContext, ContextType } from '../context';
+import { ContextType, useSelectMachineFromContext } from '../context';
 import { Box } from '../../../../..';
 import { getSingleSelectValue } from '../utils';
 
@@ -10,8 +10,7 @@ const getLabelOrPlaceholder = (state: ContextType[0]) => {
 
   const value = getSingleSelectValue(state.context.selectedItems);
 
-  const selectedOptionLabel = R.pathOr('', [0, 'label'], value);
-  return selectedOptionLabel;
+  return R.pathOr('', [0, 'label'], value);
 };
 
 const EllipsizingText = styled.span`

@@ -1,6 +1,6 @@
 import React from 'react';
 import FlexTable from '../FlexTable';
-import { Typography, Flag } from '../../..';
+import { Flag, Typography } from '../../..';
 import docs from '../FlexTable.mdx';
 import { FlexProps } from '../../../Atoms/Flexbox/Flexbox.types';
 import { StyledBackground } from './storiesShared';
@@ -103,7 +103,7 @@ export const ColumnWidthTableWithCustomFlagCell = () => (
           Cell 1-1
         </FlexTable.Cell>
         <FlexTable.Cell flex="0 15%" columnId="column2">
-          Very long cell content that should be truncated or ellipsized depepending on your language
+          Very long cell content that should be truncated or ellipsized depending on your language
           preferences
         </FlexTable.Cell>
         <FlexTable.Cell flex="0 100px" columnId="column3">
@@ -162,7 +162,7 @@ export const ColumnWidthSortableTable = () => (
           Cell 1-1
         </FlexTable.Cell>
         <FlexTable.Cell flex="0 15%" columnId="column2">
-          Very long cell content that should be truncated or ellipsized depepending on your language
+          Very long cell content that should be truncated or ellipsized depending on your language
           preferences
         </FlexTable.Cell>
         <FlexTable.Cell flex="0 100px" columnId="column3">

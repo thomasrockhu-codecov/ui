@@ -1,12 +1,12 @@
-import React, { useState, useRef } from 'react';
+import React, { useRef, useState } from 'react';
 import { useIntl } from 'react-intl';
 import styled, { css } from 'styled-components';
 import * as R from 'ramda';
-import { Props, NumberComponent, Variant } from './Number.types';
-import { Flexbox, VisuallyHidden, Icon, Typography, FormField } from '../../..';
+import { NumberComponent, Props, Variant } from './Number.types';
+import { Flexbox, FormField, Icon, Typography, VisuallyHidden } from '../../..';
 import NormalizedElements from '../../../common/NormalizedElements';
-import { getStringAsNumber, getNumberAsString } from './utils';
-import { isNumber, isString, isUndefined, assert } from '../../../common/utils';
+import { getNumberAsString, getStringAsNumber } from './utils';
+import { assert, isNumber, isString, isUndefined } from '../../../common/utils';
 import adjustValue from './adjustValue';
 import { placeholderNormalization } from '../Text/Text';
 
@@ -52,7 +52,6 @@ const focusBorderStyles = css`
 `;
 
 const borderStyles = css<Pick<Props, 'error' | 'success' | 'variant' | 'disabled'>>`
-  outline: none;
   border: 1px solid
     ${(p) => {
       if (hasError(p.error)) return p.theme.color.inputBorderError;

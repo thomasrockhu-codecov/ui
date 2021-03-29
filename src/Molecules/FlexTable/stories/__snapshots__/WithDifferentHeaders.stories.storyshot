@@ -249,7 +249,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Controlled So
   <span
     className="c1"
   >
-    Controlled Sortable Headers
+    Controlled sortable headers
   </span>
   <div
     className="c2"
@@ -705,7 +705,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Default Table
   <span
     className="c1"
   >
-    Table Header Variations
+    Table header variations
   </span>
   <div
     className="c2"
@@ -1177,7 +1177,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sortable Head
   <span
     className="c1"
   >
-    Uncontrolled Sortable Headers With Different Alignments
+    Uncontrolled sortable headers with different alignments
   </span>
   <div
     className="c2"
@@ -1675,7 +1675,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sortable Head
   <span
     className="c1"
   >
-    Sortable Headers – Only Ascending/Descending
+    Sortable headers – only ascending/descending
   </span>
   <div
     className="c2"
@@ -2088,10 +2088,6 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
   justify-content: flex-end;
 }
 
-.c20:focus {
-  outline: none;
-}
-
 .c18 {
   padding-top: 0 !important;
   padding-bottom: 0;
@@ -2286,7 +2282,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
   <span
     className="c1"
   >
-    Sticky Headers For Different ScreenSizes
+    Sticky headers for different screen sizes
   </span>
   <div
     className="c2"
@@ -8786,7 +8782,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Uncontrolled 
   <span
     className="c1"
   >
-    Uncontrolled Sortable Headers
+    Uncontrolled sortable headers
   </span>
   <div
     className="c2"

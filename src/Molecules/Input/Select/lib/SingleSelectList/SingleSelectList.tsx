@@ -1,14 +1,14 @@
-import * as React from 'react';
+import React from 'react';
 import styled, { css } from 'styled-components';
 import {
+  Box,
+  DropdownBubble,
+  FadedScroll,
   Flexbox,
-  Typography,
   Icon,
   List as UIList,
-  Box,
-  FadedScroll,
-  DropdownBubble,
   Separator,
+  Typography,
 } from '../../../../..';
 
 type ListProps = {
@@ -111,6 +111,7 @@ const hoverIfNotKeyboardNav = css<{ isKeyboardNavigation?: boolean }>`
 }
 `}
 `;
+
 const StyledOption = styled(Typography)<Partial<OptionProps>>`
   display: flex;
   align-items: center;
@@ -120,8 +121,6 @@ const StyledOption = styled(Typography)<Partial<OptionProps>>`
   padding-bottom: ${(p) => p.theme.spacing.unit(1)}px;
   color: ${(p) => (p.selected ? p.theme.color.cta : p.theme.color.text)};
   height: ${(p) => p.theme.spacing.unit(6)}px;
-  outline: none;
-
   white-space: nowrap;
   ${(p) =>
     p.focused

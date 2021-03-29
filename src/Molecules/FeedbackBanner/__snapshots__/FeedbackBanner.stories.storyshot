@@ -87,24 +87,22 @@ exports[`Storyshots Molecules / FeedbackBanner Complex children 1`] = `
   <div
     className="c1"
   >
-    <span>
-      <svg
-        aria-hidden="true"
-        className="c2"
-        focusable="false"
-        preserveAspectRatio="xMidYMid meet"
-        role="presentation"
-        viewBox="0 0 92 90"
-      >
-        <path
-          d="M46 0l46 89.3913043H0z"
-        />
-        <path
-          d="M50 63.8333333v8h-8v-8h8zm0-28v24h-8v-24h8z"
-          fill="#FFF"
-        />
-      </svg>
-    </span>
+    <svg
+      aria-hidden="true"
+      className="c2"
+      focusable="false"
+      preserveAspectRatio="xMidYMid meet"
+      role="presentation"
+      viewBox="0 0 92 90"
+    >
+      <path
+        d="M46 0l46 89.3913043H0z"
+      />
+      <path
+        d="M50 63.8333333v8h-8v-8h8zm0-28v24h-8v-24h8z"
+        fill="#FFF"
+      />
+    </svg>
     <div
       className="c3 c4"
     >
@@ -116,15 +114,13 @@ exports[`Storyshots Molecules / FeedbackBanner Complex children 1`] = `
       <span
         className="c6"
       >
-        <div>
-          <div>
-            The message can also be stuctured as a more complex item than just a string
-          </div>
-          <div>
-            For example, you can provide a Spinner 
-             if you want to
-          </div>
-        </div>
+        <p>
+          The message can also be structured as a more complex item than just a string
+        </p>
+        <p>
+          For example, you can provide a Spinner 
+           if you want to
+        </p>
       </span>
     </div>
   </div>
@@ -222,24 +218,22 @@ exports[`Storyshots Molecules / FeedbackBanner Default usage 1`] = `
   <div
     className="c1"
   >
-    <span>
-      <svg
-        aria-hidden="true"
-        className="c2"
-        focusable="false"
-        preserveAspectRatio="xMidYMid meet"
-        role="presentation"
-        viewBox="0 0 20 20"
-      >
-        <path
-          d="M10,20 C4.4771525,20 0,15.5228475 0,10 C0,4.4771525 4.4771525,0 10,0 C15.5228475,0 20,4.4771525 20,10 C20,15.5228475 15.5228475,20 10,20 Z"
-        />
-        <polygon
-          className="c3"
-          points="11 8 11 16 9 16 9 8 11 8 11 4 11 6 9 6 9 4 11 4"
-        />
-      </svg>
-    </span>
+    <svg
+      aria-hidden="true"
+      className="c2"
+      focusable="false"
+      preserveAspectRatio="xMidYMid meet"
+      role="presentation"
+      viewBox="0 0 20 20"
+    >
+      <path
+        d="M10,20 C4.4771525,20 0,15.5228475 0,10 C0,4.4771525 4.4771525,0 10,0 C15.5228475,0 20,4.4771525 20,10 C20,15.5228475 15.5228475,20 10,20 Z"
+      />
+      <polygon
+        className="c3"
+        points="11 8 11 16 9 16 9 8 11 8 11 4 11 6 9 6 9 4 11 4"
+      />
+    </svg>
     <div
       className="c4 c5"
     >
@@ -485,24 +479,22 @@ exports[`Storyshots Molecules / FeedbackBanner Different variant 1`] = `
         <div
           className="c4"
         >
-          <span>
-            <svg
-              aria-hidden="true"
-              className="c5"
-              focusable="false"
-              preserveAspectRatio="xMidYMid meet"
-              role="presentation"
-              viewBox="0 0 20 20"
-            >
-              <path
-                d="M10,20 C4.4771525,20 0,15.5228475 0,10 C0,4.4771525 4.4771525,0 10,0 C15.5228475,0 20,4.4771525 20,10 C20,15.5228475 15.5228475,20 10,20 Z"
-              />
-              <polygon
-                className="c6"
-                points="11 8 11 16 9 16 9 8 11 8 11 4 11 6 9 6 9 4 11 4"
-              />
-            </svg>
-          </span>
+          <svg
+            aria-hidden="true"
+            className="c5"
+            focusable="false"
+            preserveAspectRatio="xMidYMid meet"
+            role="presentation"
+            viewBox="0 0 20 20"
+          >
+            <path
+              d="M10,20 C4.4771525,20 0,15.5228475 0,10 C0,4.4771525 4.4771525,0 10,0 C15.5228475,0 20,4.4771525 20,10 C20,15.5228475 15.5228475,20 10,20 Z"
+            />
+            <polygon
+              className="c6"
+              points="11 8 11 16 9 16 9 8 11 8 11 4 11 6 9 6 9 4 11 4"
+            />
+          </svg>
           <div
             className="c7 c8"
           >
@@ -537,30 +529,28 @@ exports[`Storyshots Molecules / FeedbackBanner Different variant 1`] = `
         <div
           className="c4"
         >
-          <span>
-            <svg
-              aria-hidden="true"
-              className="c12"
-              focusable="false"
-              preserveAspectRatio="xMidYMid meet"
-              role="presentation"
-              viewBox="0 0 24 24"
+          <svg
+            aria-hidden="true"
+            className="c12"
+            focusable="false"
+            preserveAspectRatio="xMidYMid meet"
+            role="presentation"
+            viewBox="0 0 24 24"
+          >
+            <g
+              fill="none"
+              fillRule="evenodd"
             >
-              <g
-                fill="none"
-                fillRule="evenodd"
-              >
-                <polygon
-                  className="c13"
-                  points="16.8 0 24 7.2 24 16.8 16.8 24 7.2 24 0 16.8 0 7.2 7.2 0"
-                />
-                <path
-                  className="c14"
-                  d="M13,17 L13,19 L11,19 L11,17 L13,17 Z M13,5 L13,15 L11,15 L11,5 L13,5 Z"
-                />
-              </g>
-            </svg>
-          </span>
+              <polygon
+                className="c13"
+                points="16.8 0 24 7.2 24 16.8 16.8 24 7.2 24 0 16.8 0 7.2 7.2 0"
+              />
+              <path
+                className="c14"
+                d="M13,17 L13,19 L11,19 L11,17 L13,17 Z M13,5 L13,15 L11,15 L11,5 L13,5 Z"
+              />
+            </g>
+          </svg>
           <div
             className="c7 c8"
           >
@@ -595,24 +585,22 @@ exports[`Storyshots Molecules / FeedbackBanner Different variant 1`] = `
         <div
           className="c4"
         >
-          <span>
-            <svg
-              aria-hidden="true"
-              className="c16"
-              focusable="false"
-              preserveAspectRatio="xMidYMid meet"
-              role="presentation"
-              viewBox="0 0 92 90"
-            >
-              <path
-                d="M46 0l46 89.3913043H0z"
-              />
-              <path
-                d="M50 63.8333333v8h-8v-8h8zm0-28v24h-8v-24h8z"
-                fill="#FFF"
-              />
-            </svg>
-          </span>
+          <svg
+            aria-hidden="true"
+            className="c16"
+            focusable="false"
+            preserveAspectRatio="xMidYMid meet"
+            role="presentation"
+            viewBox="0 0 92 90"
+          >
+            <path
+              d="M46 0l46 89.3913043H0z"
+            />
+            <path
+              d="M50 63.8333333v8h-8v-8h8zm0-28v24h-8v-24h8z"
+              fill="#FFF"
+            />
+          </svg>
           <div
             className="c7 c8"
           >
@@ -647,30 +635,28 @@ exports[`Storyshots Molecules / FeedbackBanner Different variant 1`] = `
         <div
           className="c4"
         >
-          <span>
-            <svg
-              aria-hidden="true"
-              className="c12"
-              focusable="false"
-              preserveAspectRatio="xMidYMid meet"
-              role="presentation"
-              viewBox="0 0 24 24"
+          <svg
+            aria-hidden="true"
+            className="c12"
+            focusable="false"
+            preserveAspectRatio="xMidYMid meet"
+            role="presentation"
+            viewBox="0 0 24 24"
+          >
+            <g
+              fill="none"
+              fillRule="evenodd"
             >
-              <g
-                fill="none"
-                fillRule="evenodd"
-              >
-                <path
-                  className="c18"
-                  d="M12 23.87c6.627 0 12-5.315 12-11.87C24 5.445 18.627.13 12 .13S0 5.445 0 12c0 6.555 5.373 11.87 12 11.87z"
-                />
-                <path
-                  className="c19"
-                  d="M16.474 8.87l.933.927L11 16.174l-3.88-3.861.933-.928L11 14.318z"
-                />
-              </g>
-            </svg>
-          </span>
+              <path
+                className="c18"
+                d="M12 23.87c6.627 0 12-5.315 12-11.87C24 5.445 18.627.13 12 .13S0 5.445 0 12c0 6.555 5.373 11.87 12 11.87z"
+              />
+              <path
+                className="c19"
+                d="M16.474 8.87l.933.927L11 16.174l-3.88-3.861.933-.928L11 14.318z"
+              />
+            </g>
+          </svg>
           <div
             className="c7 c8"
           >
@@ -854,24 +840,22 @@ exports[`Storyshots Molecules / FeedbackBanner Displaying title 1`] = `
         <div
           className="c4"
         >
-          <span>
-            <svg
-              aria-hidden="true"
-              className="c5"
-              focusable="false"
-              preserveAspectRatio="xMidYMid meet"
-              role="presentation"
-              viewBox="0 0 20 20"
-            >
-              <path
-                d="M10,20 C4.4771525,20 0,15.5228475 0,10 C0,4.4771525 4.4771525,0 10,0 C15.5228475,0 20,4.4771525 20,10 C20,15.5228475 15.5228475,20 10,20 Z"
-              />
-              <polygon
-                className="c6"
-                points="11 8 11 16 9 16 9 8 11 8 11 4 11 6 9 6 9 4 11 4"
-              />
-            </svg>
-          </span>
+          <svg
+            aria-hidden="true"
+            className="c5"
+            focusable="false"
+            preserveAspectRatio="xMidYMid meet"
+            role="presentation"
+            viewBox="0 0 20 20"
+          >
+            <path
+              d="M10,20 C4.4771525,20 0,15.5228475 0,10 C0,4.4771525 4.4771525,0 10,0 C15.5228475,0 20,4.4771525 20,10 C20,15.5228475 15.5228475,20 10,20 Z"
+            />
+            <polygon
+              className="c6"
+              points="11 8 11 16 9 16 9 8 11 8 11 4 11 6 9 6 9 4 11 4"
+            />
+          </svg>
           <div
             className="c7 c8"
           >
@@ -906,24 +890,22 @@ exports[`Storyshots Molecules / FeedbackBanner Displaying title 1`] = `
         <div
           className="c4"
         >
-          <span>
-            <svg
-              aria-hidden="true"
-              className="c5"
-              focusable="false"
-              preserveAspectRatio="xMidYMid meet"
-              role="presentation"
-              viewBox="0 0 20 20"
-            >
-              <path
-                d="M10,20 C4.4771525,20 0,15.5228475 0,10 C0,4.4771525 4.4771525,0 10,0 C15.5228475,0 20,4.4771525 20,10 C20,15.5228475 15.5228475,20 10,20 Z"
-              />
-              <polygon
-                className="c6"
-                points="11 8 11 16 9 16 9 8 11 8 11 4 11 6 9 6 9 4 11 4"
-              />
-            </svg>
-          </span>
+          <svg
+            aria-hidden="true"
+            className="c5"
+            focusable="false"
+            preserveAspectRatio="xMidYMid meet"
+            role="presentation"
+            viewBox="0 0 20 20"
+          >
+            <path
+              d="M10,20 C4.4771525,20 0,15.5228475 0,10 C0,4.4771525 4.4771525,0 10,0 C15.5228475,0 20,4.4771525 20,10 C20,15.5228475 15.5228475,20 10,20 Z"
+            />
+            <polygon
+              className="c6"
+              points="11 8 11 16 9 16 9 8 11 8 11 4 11 6 9 6 9 4 11 4"
+            />
+          </svg>
           <div
             className="c7 c8"
           >

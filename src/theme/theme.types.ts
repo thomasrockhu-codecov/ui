@@ -279,7 +279,7 @@ export type ThemeColors<Version extends ThemeColorsVersion> = {
   timelineFailure: ChangeableColor<RawColor['negative'], RawColor['a11yNegative'], Version>;
   /** gray4 */
   timelineNext: RawColor['gray4'];
-  /** brankPink */
+  /** brandPink */
   transferProgressBar1: RawColor['brandPink'];
   /** positive */
   transferProgressBar2: ChangeableColor<RawColor['positive'], RawColor['a11yPositive'], Version>;

@@ -33,7 +33,7 @@ basicOrderedList.story = {
   name: 'Basic ordered list',
 };
 
-export const SeparetedList = () => (
+export const SeparatedList = () => (
   <List separated>
     <ListItem>List item 1</ListItem>
     <ListItem>List item 2</ListItem>
@@ -41,6 +41,6 @@ export const SeparetedList = () => (
   </List>
 );
 
-SeparetedList.story = {
+SeparatedList.story = {
   name: 'With separators between each li',
 };

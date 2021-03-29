@@ -1,10 +1,10 @@
-import * as React from 'react';
+import React, { useCallback, useEffect, useMemo, useRef } from 'react';
 import scrollIntoView from 'scroll-into-view-if-needed';
 import { ContextType } from './context';
 import { Context } from '../machine';
 
 export const useAutofocus = (ref: React.RefObject<any>, enable?: boolean) => {
-  React.useEffect(() => {
+  useEffect(() => {
     if (enable && ref && ref.current) ref.current.focus();
   }, [enable, ref]);
 };
@@ -16,7 +16,7 @@ export const useFocusFromMachine = (
   searchRef: React.RefObject<HTMLInputElement>,
 ) => {
   const isInButtonFocusState = machineState.matches('interaction.enabled.active.focus.button');
-  React.useEffect(() => {
+  useEffect(() => {
     if (
       machineState.matches('interaction.enabled.active.focus.listItem') &&
       machineState.matches({ open: 'on' })
@@ -47,8 +47,8 @@ export const useFocusFromMachine = (
 };
 
 export const useIsFirstRender = () => {
-  const isFirstRender = React.useRef(true);
-  React.useEffect(() => {
+  const isFirstRender = useRef(true);
+  useEffect(() => {
     isFirstRender.current = false;
   }, []);
   return isFirstRender.current;
@@ -62,10 +62,10 @@ export const useIsFirstRender = () => {
  * Which in turn, will batch them inside machine
  */
 export const useBatchedSend = (send: Function) => {
-  const accumulatedArrowActions = React.useRef([] as any[]);
-  const currentTimeoutId = React.useRef<NodeJS.Timeout | null>(null);
+  const accumulatedArrowActions = useRef([] as any[]);
+  const currentTimeoutId = useRef<NodeJS.Timeout | null>(null);
 
-  return React.useCallback(
+  return useCallback(
     (actionTypes: any[]) => {
       accumulatedArrowActions.current.push(...actionTypes);
       // If previous send wasn't invoked, clear timeout and try one more time
@@ -85,7 +85,7 @@ export const useBatchedSend = (send: Function) => {
 
 export const useSyncPropsWithMachine = (propsToSync: Partial<Context>, deps: Array<any>) => {
   const send = deps[0];
-  React.useEffect(() => {
+  useEffect(() => {
     send({
       type: 'SYNC',
       payload: propsToSync,
@@ -94,8 +94,8 @@ export const useSyncPropsWithMachine = (propsToSync: Partial<Context>, deps: Arr
 };
 
 export const useMultiRef = () => {
-  const itemRefs = React.useMemo(() => [] as Array<HTMLElement>, []);
-  const setItemRef = React.useCallback(
+  const itemRefs = useMemo(() => [] as Array<HTMLElement>, []);
+  const setItemRef = useCallback(
     (index: number) => (ref: HTMLElement) => {
       if (ref) itemRefs[index] = ref;
     },
@@ -141,12 +141,12 @@ export const usePropagateChangesThroughOnChange = (
     machineState.matches('selection.controlled.changeUncommitted') ||
     machineState.matches('selection.uncontrolled.changeUncommitted');
 
-  React.useEffect(() => {
+  useEffect(() => {
     // Don't want to grab first onChange
-    // Why is it happenning though 🤔
+    // Why is it happening though 🤔
     if (isFirstRender) return;
     if (isChangeUncommitted) {
-      const changes = machineState.context.uncommitedSelectedItems;
+      const changes = machineState.context.uncommittedSelectedItems;
 
       const action = changes.find((x) => typeof x.onSelect === 'function');
       if (action) {
@@ -174,27 +174,27 @@ export const useOnBlurAndOnFocus = (
   listRef: React.RefObject<any>,
 ) => {
   const isPassive = machineState.matches('interaction.enabled.idle');
-  React.useEffect(() => {
+  useEffect(() => {
     // Using the real select ref here
     // for the name and id to be on it
     if (!isFirstRender && isPassive && onBlur) onBlur({ target: selectRef.current });
   }, [isPassive]); // eslint-disable-line react-hooks/exhaustive-deps
 
   const isActive = machineState.matches('interaction.enabled.active');
-  React.useEffect(() => {
+  useEffect(() => {
     // Using the real select ref here
     // for the name and id to be on it
     if (isActive && onFocus) onFocus({ target: selectRef.current });
   }, [isActive]); // eslint-disable-line react-hooks/exhaustive-deps
 
-  const handleFocus = React.useCallback(
+  const handleFocus = useCallback(
     (_) => {
       send('FOCUS');
     },
     [send],
   );
 
-  const handleBlur = React.useCallback(
+  const handleBlur = useCallback(
     (_) => {
       setTimeout(() => {
         // Need setTimeout for activeElement to be correct

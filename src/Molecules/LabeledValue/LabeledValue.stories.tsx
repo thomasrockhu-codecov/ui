@@ -1,6 +1,6 @@
 import React from 'react';
 import LabeledValue from './index';
-import { Typography, Development, Number, Flexbox } from '../..';
+import { Development, Flexbox, Number, Typography } from '../..';
 
 export default {
   title: 'Molecules / LabeledValue',

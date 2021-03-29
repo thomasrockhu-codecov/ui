@@ -1,6 +1,6 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { action, actions } from '@storybook/addon-actions';
-import { Icon, Input, Box } from '../../..';
+import { Box, Icon, Input } from '../../..';
 import { Display } from '../../../common/Display';
 
 const handlers = actions(
@@ -32,7 +32,7 @@ defaultStory.story = {
 
 export const withValueControlledBehaviour = () => {
   const Component = () => {
-    const [value, setValue] = React.useState(10);
+    const [value, setValue] = useState(10);
     const changeHandler = (v: string) => {
       const newValueAsNumber = parseInt(v, 10);
       setValue(newValueAsNumber);
@@ -136,7 +136,7 @@ withAllActions.story = {
 export const withErrorIfValueIsLessThan1 = () => {
   const Component = () => {
     const defaultValue = '0';
-    const [value, setValue] = React.useState(defaultValue);
+    const [value, setValue] = useState(defaultValue);
     const showError = parseInt(value, 10) < 1;
 
     return (
@@ -164,7 +164,7 @@ withSuccess.story = {
 };
 
 export const withExtraInfoBelow = () => (
-  <Input.Number id="insert-unique-id" label="Label" extraInfo="Use wisely this space" />
+  <Input.Number id="insert-unique-id" label="Label" extraInfo="Use this space wisely" />
 );
 
 withExtraInfoBelow.story = {
@@ -174,7 +174,7 @@ withExtraInfoBelow.story = {
 export const withExtraInfoAndError = () => {
   const Component = () => {
     const defaultValue = '0';
-    const [value, setValue] = React.useState(defaultValue);
+    const [value, setValue] = useState(defaultValue);
     const showError = parseInt(value, 10) < 1;
 
     return (
@@ -183,7 +183,7 @@ export const withExtraInfoAndError = () => {
         label="Label"
         defaultValue={defaultValue}
         onChange={(x) => x && setValue(x)}
-        extraInfo="Use wisely this space"
+        extraInfo="Use this space wisely"
         {...(showError ? { error: 'Number needs to be greater than 0' } : {})}
       />
     );

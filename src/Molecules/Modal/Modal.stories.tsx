@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
-import { Modal, Typography, Box, Button, Flexbox, Icon, FadedScroll } from '../..';
+import { Box, Button, FadedScroll, Flexbox, Icon, Modal, Typography } from '../..';
 
 const ScrollMaker = styled.div`
   background-image: linear-gradient(
@@ -34,7 +34,7 @@ export const defaultStory = () => {
     };
 
     return (
-      <div>
+      <>
         <button type="button" onClick={onOpen}>
           Open modal
         </button>
@@ -66,7 +66,7 @@ export const defaultStory = () => {
             </a>
           </Typography>
         </Modal>
-      </div>
+      </>
     );
   };
   return <Example />;
@@ -89,18 +89,18 @@ export const footerStory = () => {
     };
 
     const footer = (
-      <div>
+      <>
         <Typography type="primary" as="p">
           This is a footer which is a ReactNode, which could e.g. contain a button or only text
         </Typography>
         <Button variant="primary" onClick={() => {}}>
           Button
         </Button>
-      </div>
+      </>
     );
 
     return (
-      <div>
+      <>
         <button type="button" onClick={onOpen}>
           Open modal
         </button>
@@ -162,7 +162,7 @@ export const footerStory = () => {
             </Typography>
           </FadedScroll>
         </Modal>
-      </div>
+      </>
     );
   };
   return <Example />;
@@ -185,7 +185,7 @@ export const withoutHeader = () => {
     };
 
     return (
-      <div>
+      <>
         <button type="button" onClick={onOpen}>
           Open modal
         </button>
@@ -217,7 +217,7 @@ export const withoutHeader = () => {
             </a>
           </Typography>
         </Modal>
-      </div>
+      </>
     );
   };
   return <Example />;
@@ -230,7 +230,7 @@ withoutHeader.story = {
 export const uncontrolledBehavior = () => {
   const Example = () => {
     return (
-      <div>
+      <>
         <ScrollMaker />
         {/* ScrollMaker is just used to show how the Modal locks scrolling when open */}
         <Modal title="Dialog information">
@@ -259,7 +259,7 @@ export const uncontrolledBehavior = () => {
             </a>
           </Typography>
         </Modal>
-      </div>
+      </>
     );
   };
   return <Example />;
@@ -284,7 +284,7 @@ export const hideClose = () => {
     const hideCloseButton = true;
 
     return (
-      <div>
+      <>
         <button type="button" onClick={onOpen}>
           Open modal
         </button>
@@ -298,7 +298,7 @@ export const hideClose = () => {
             </Typography>
           </Box>
         </Modal>
-      </div>
+      </>
     );
   };
   return <Example />;
@@ -320,7 +320,7 @@ export const nodeAsTitle = () => {
   );
   const Example = () => {
     return (
-      <div>
+      <>
         <ScrollMaker />
         {/* ScrollMaker is just used to show how the Modal locks scrolling when open */}
         <Modal title={Title}>
@@ -349,7 +349,7 @@ export const nodeAsTitle = () => {
             </a>
           </Typography>
         </Modal>
-      </div>
+      </>
     );
   };
   return <Example />;
@@ -368,7 +368,7 @@ export const closeOnBackdropClickStory = () => {
     };
 
     return (
-      <div>
+      <>
         <button type="button" onClick={onOpen}>
           Open modal
         </button>
@@ -400,7 +400,7 @@ export const closeOnBackdropClickStory = () => {
             </a>
           </Typography>
         </Modal>
-      </div>
+      </>
     );
   };
   return <Example />;
@@ -436,7 +436,7 @@ export const notFullScreenMobile = () => {
     );
 
     return (
-      <div>
+      <>
         <button type="button" onClick={onOpen}>
           Open modal
         </button>
@@ -454,7 +454,7 @@ export const notFullScreenMobile = () => {
             </Typography>
           </Box>
         </Modal>
-      </div>
+      </>
     );
   };
   return <Example />;
@@ -506,7 +506,7 @@ export const modalStandardSmall = () => {
     );
 
     return (
-      <div>
+      <>
         <button type="button" onClick={onOpen}>
           Open modal
         </button>
@@ -531,7 +531,7 @@ export const modalStandardSmall = () => {
             </Typography>
           </Box>
         </Modal>
-      </div>
+      </>
     );
   };
   return <Example />;
@@ -699,7 +699,7 @@ export const modalStandardLargeWithScroll = () => {
     );
 
     return (
-      <div>
+      <>
         <button type="button" onClick={() => {}}>
           Open modal
         </button>
@@ -762,7 +762,7 @@ export const modalStandardLargeWithScroll = () => {
             </Box>
           </FadedScroll>
         </Modal>
-      </div>
+      </>
     );
   };
   return <Example />;
@@ -806,7 +806,7 @@ export const modalStandardMobile = () => {
     );
 
     return (
-      <div>
+      <>
         <button type="button" onClick={onOpen}>
           Open modal
         </button>
@@ -839,7 +839,7 @@ export const modalStandardMobile = () => {
             </Typography>
           </Box>
         </Modal>
-      </div>
+      </>
     );
   };
   return <Example />;
@@ -878,7 +878,7 @@ export const modalStandardMobileScroll = () => {
     );
 
     return (
-      <div>
+      <>
         <button type="button" onClick={onOpen}>
           Open modal
         </button>
@@ -911,7 +911,7 @@ export const modalStandardMobileScroll = () => {
             </Typography>
           </Box>
         </Modal>
-      </div>
+      </>
     );
   };
   return <Example />;
@@ -955,7 +955,7 @@ export const modalMobileSmall = () => {
     );
 
     return (
-      <div>
+      <>
         <button type="button" onClick={onOpen}>
           Open modal
         </button>
@@ -977,7 +977,7 @@ export const modalMobileSmall = () => {
             </Typography>
           </Box>
         </Modal>
-      </div>
+      </>
     );
   };
   return <Example />;
@@ -1016,7 +1016,7 @@ export const modalMobileSmallOneButton = () => {
     );
 
     return (
-      <div>
+      <>
         <button type="button" onClick={onOpen}>
           Open modal
         </button>
@@ -1038,7 +1038,7 @@ export const modalMobileSmallOneButton = () => {
             </Typography>
           </Box>
         </Modal>
-      </div>
+      </>
     );
   };
   return <Example />;
@@ -1078,7 +1078,7 @@ export const modalMobileFullscreenWithScroll = () => {
     );
 
     return (
-      <div>
+      <>
         <button type="button" onClick={() => {}}>
           Open modal
         </button>
@@ -1127,7 +1127,7 @@ export const modalMobileFullscreenWithScroll = () => {
             </Box>
           </FadedScroll>
         </Modal>
-      </div>
+      </>
     );
   };
   return <Example />;
@@ -1162,7 +1162,7 @@ export const modalMobileFullscreenWithScrollTwoButtons = () => {
     );
 
     return (
-      <div>
+      <>
         <button type="button" onClick={() => {}}>
           Open modal
         </button>
@@ -1219,7 +1219,7 @@ export const modalMobileFullscreenWithScrollTwoButtons = () => {
             </Box>
           </FadedScroll>
         </Modal>
-      </div>
+      </>
     );
   };
   return <Example />;
@@ -1240,7 +1240,7 @@ export const modalWithAnimationComplete = () => {
     const [text, setText] = useState('initial text');
 
     return (
-      <div>
+      <>
         <ScrollMaker />
         <Modal
           title="Dialog information"
@@ -1252,7 +1252,7 @@ export const modalWithAnimationComplete = () => {
             </Typography>
           </Box>
         </Modal>
-      </div>
+      </>
     );
   };
   return <Example />;
@@ -1275,7 +1275,7 @@ export const modalWithoutBackdrop = () => {
     };
 
     return (
-      <div>
+      <>
         <button type="button" onClick={onOpen}>
           Open modal
         </button>
@@ -1291,7 +1291,7 @@ export const modalWithoutBackdrop = () => {
             </Typography>
           </Box>
         </Modal>
-      </div>
+      </>
     );
   };
   return <Example />;

@@ -1,27 +1,25 @@
-/** eslint-disable react-hooks/rules-of-hooks */
-import React from 'react';
+import React, { createElement, useCallback, useMemo, useState } from 'react';
 import { action } from '@storybook/addon-actions';
 import R from 'ramda';
 import styled from 'styled-components';
 import { StateChart } from '@statecharts/xstate-viz';
 import { SelectMachine } from './machine';
 import {
-  Input,
   Avatar,
-  Flexbox,
-  Number,
-  Typography,
   Box,
+  Flexbox,
   Icon,
+  Input,
   Link,
-  TrackingContext,
   Modal,
+  Number,
+  TrackingContext,
+  Typography,
 } from '../../..';
 import { Display } from '../../../common/Display';
 import docs from './Select.mdx';
 import { Option } from './Select.types';
 
-/* eslint-disable react-hooks/rules-of-hooks */
 const useSelectMachineFromContext = Input.Select.useSelectMachineFromContext;
 
 const FlexedBox = styled(Box)`
@@ -84,14 +82,10 @@ const AccountValue = () => {
   );
 };
 
-// @ts-ignore
-const StyledBox = styled(Box)`
+const StyledBox = styled(Box)<{ focused?: boolean; isKeyboardNavigation?: boolean }>`
   cursor: pointer;
-  background: ${(p) =>
-    // @ts-ignore
-    p.focused ? p.theme.color.background : p.theme.color.card};
+  background: ${(p) => (p.focused ? p.theme.color.background : p.theme.color.card)};
   ${(p) =>
-    // @ts-ignore
     !p.isKeyboardNavigation
       ? `
   &: hover {
@@ -108,7 +102,6 @@ const AccountListItem = ({ index }) => {
   const selected = state.context.selectedItems.includes(option);
   const focused = isKeyboardNavigation && state.context.itemFocusIdx === index;
   return (
-    // @ts-ignore
     <StyledBox px={2} py={1} focused={focused} isKeyboardNavigation={isKeyboardNavigation}>
       <Flexbox container justifyContent="space-between" gutter={4}>
         <Flexbox item container alignItems="center" basis="32px" grow={0}>
@@ -204,7 +197,7 @@ export const hideLabel = () => (
 export const overflowStory = () => (
   <Input.Select
     id="input-1"
-    options={new Array(100).fill(null).map((_, i) => ({
+    options={new Array(100).fill(null)?.map((_, i) => ({
       value: i,
       label: `${i}${i}${i}${i}${i}${i}${i}${i}${i}${i}${i}${i}${i}${i}${i}${i}${i}${i}${i}${i}`,
     }))}
@@ -214,10 +207,10 @@ export const overflowStory = () => (
 );
 
 export const preselectedOptions = () =>
-  React.createElement(() => {
+  createElement(() => {
     // This component you need to redefine for your particular case
     // Consider translations and a11y!
-    const CustomSelectedValue = React.useCallback(() => {
+    const CustomSelectedValue = useCallback(() => {
       const [machineState] = useSelectMachineFromContext();
       const selectedCount = machineState.context.selectedItems.length;
       return (
@@ -229,7 +222,7 @@ export const preselectedOptions = () =>
       );
     }, []);
 
-    const [values, setValues] = React.useState([
+    const [values, setValues] = useState([
       // Non-referentially equal options
       { ...accountOptions[1] },
       { ...accountOptions[2] },
@@ -251,10 +244,10 @@ export const preselectedOptions = () =>
   });
 
 export const multiSelectUncontrolled = () =>
-  React.createElement(() => {
+  createElement(() => {
     // This component you need to redefine for your particular case
     // Consider translations and a11y!
-    const CustomSelectedValue = React.useCallback(() => {
+    const CustomSelectedValue = useCallback(() => {
       const [machineState] = useSelectMachineFromContext();
       const selectedCount = machineState.context.selectedItems.length;
       return (
@@ -363,7 +356,7 @@ export const disabledItems = () => {
   return (
     <Input.Select
       id="onchange-select"
-      options={accountOptions.map((acc, i) =>
+      options={accountOptions?.map((acc, i) =>
         i === 1 || i === 2 ? { ...acc, disabled: true } : acc,
       )}
       label="User account"
@@ -388,8 +381,8 @@ export const customRenderers = () => {
 };
 
 export const actions = () =>
-  React.createElement(() => {
-    const [value, setValue] = React.useState([]);
+  createElement(() => {
+    const [value, setValue] = useState([]);
     return (
       <Input.Select
         id="custom-renderers-select"
@@ -424,8 +417,8 @@ export const actions = () =>
     );
   });
 export const actionsAndEmptyOptionList = () =>
-  React.createElement(() => {
-    const [value, setValue] = React.useState([]);
+  createElement(() => {
+    const [value, setValue] = useState([]);
     return (
       <Input.Select
         id="custom-renderers-select"
@@ -460,8 +453,8 @@ export const actionsAndEmptyOptionList = () =>
     );
   });
 export const fullyEmpty = () =>
-  React.createElement(() => {
-    const [value, setValue] = React.useState([]);
+  createElement(() => {
+    const [value, setValue] = useState([]);
     return (
       <Input.Select
         id="custom-renderers-select"
@@ -489,12 +482,12 @@ export const onBlurAndOnFocus = () => {
 };
 
 export const multiselect = () =>
-  React.createElement(() => {
-    const [value, setValue] = React.useState([]);
+  createElement(() => {
+    const [value, setValue] = useState([]);
 
     // This component you need to redefine for your particular case
     // Consider translations and a11y!
-    const CustomSelectedValue = React.useMemo(
+    const CustomSelectedValue = useMemo(
       () => () => {
         const [machineState] = useSelectMachineFromContext();
         const selectedCount = machineState.context.selectedItems.length;
@@ -524,12 +517,12 @@ export const multiselect = () =>
   });
 
 export const multiselectActions = () =>
-  React.createElement(() => {
-    const [value, setValue] = React.useState([]);
+  createElement(() => {
+    const [value, setValue] = useState([]);
 
     // This component you need to redefine for your particular case
     // Consider translations and a11y!
-    const CustomSelectedValue = React.useMemo(
+    const CustomSelectedValue = useMemo(
       () => () => {
         const [machineState] = useSelectMachineFromContext();
         const selectedCount = machineState.context.selectedItems.length;
@@ -581,12 +574,12 @@ const accountOptionsAndSelectAll: Option[] = [
 ];
 
 export const multiselectSelectAll = () =>
-  React.createElement(() => {
-    const [value, setValue] = React.useState([]);
+  createElement(() => {
+    const [value, setValue] = useState([]);
 
     // This component you need to redefine for your particular case
     // Consider translations and a11y!
-    const CustomSelectedValue = React.useCallback(() => {
+    const CustomSelectedValue = useCallback(() => {
       const [machineState] = useSelectMachineFromContext();
       const selectedCount = machineState.context.selectedItems.length;
       const allSelected = machineState.context.selectedItems.some(
@@ -624,11 +617,11 @@ export const multiselectSelectAll = () =>
   });
 
 export const changesFromProps = () =>
-  React.createElement(() => {
-    const [searchQuery, setSearchQuery] = React.useState('');
-    const [accs, setAccs] = React.useState(accountOptions);
-    const [value, setValue] = React.useState([]);
-    const [disabled, setDisabled] = React.useState(false);
+  createElement(() => {
+    const [searchQuery, setSearchQuery] = useState('');
+    const [accs, setAccs] = useState(accountOptions);
+    const [value, setValue] = useState([]);
+    const [disabled, setDisabled] = useState(false);
 
     const removeAcc = () => setAccs(accs.slice(0, -1));
     // @ts-ignore
@@ -672,12 +665,11 @@ export const changesFromProps = () =>
   });
 
 export const accessibleFromDocumentForms = () =>
-  React.createElement(() => {
+  createElement(() => {
     const FORM_NAME = 'testForm';
     const SELECT_NAME = 'mySelect';
 
-    // @ts-ignore
-    const [_, forceUpdate] = React.useState([]); // eslint-disable-line @typescript-eslint/no-unused-vars
+    const [, forceUpdate] = useState([]);
 
     return (
       <form name={FORM_NAME}>
@@ -701,8 +693,8 @@ export const accessibleFromDocumentForms = () =>
   });
 
 export const controlledBehaviour = () =>
-  React.createElement(() => {
-    const [value, setValue] = React.useState(() => [accountOptions[1]]);
+  createElement(() => {
+    const [value, setValue] = useState(() => [accountOptions[1]]);
     return (
       <Input.Select
         id="onchange-select"
@@ -847,13 +839,12 @@ const createCounter = () => {
 };
 
 export const linkWithDropdownAndSearchBoxSecondary = () =>
-  React.createElement(() => {
-    // Don't mind counter
+  createElement(() => {
+    // Don't mind the counter
     // just to have persistent unique keys
     const counter = createCounter();
-    const customComponents = React.useMemo(
+    const customComponents = useMemo(
       () => ({
-        // @ts-ignore
         SelectedValue: () => {
           const [state] = useSelectMachineFromContext();
 
@@ -876,26 +867,26 @@ export const linkWithDropdownAndSearchBoxSecondary = () =>
       [],
     );
 
-    const [value, setValue] = React.useState([]);
-    const hugeOptionsList = React.useMemo(
+    const [value, setValue] = useState([]);
+    const hugeOptionsList = useMemo(
       () =>
         accountOptions
           .concat(
-            accountOptions.map((x) => ({
+            accountOptions?.map((x) => ({
               ...x,
               value: x.value + counter.next(),
               label: x.label + counter.next(),
             })),
           )
           .concat(
-            accountOptions.map((x) => ({
+            accountOptions?.map((x) => ({
               ...x,
               value: x.value + counter.next(),
               label: x.label + counter.next(),
             })),
           )
           .concat(
-            accountOptions.map((x) => ({
+            accountOptions?.map((x) => ({
               ...x,
               value: x.value + counter.next(),
               label: x.label + counter.next(),
@@ -929,10 +920,9 @@ export const linkWithDropdownAndSearchBoxSecondary = () =>
   });
 
 export const linkWithDropdownAndSearchBoxTertiary = () =>
-  React.createElement(() => {
-    const customComponents = React.useMemo(
+  createElement(() => {
+    const customComponents = useMemo(
       () => ({
-        // @ts-ignore
         SelectedValue: () => {
           const [state] = useSelectMachineFromContext();
 
@@ -955,29 +945,29 @@ export const linkWithDropdownAndSearchBoxTertiary = () =>
       [],
     );
 
-    const [value, setValue] = React.useState([]);
-    // Don't mind counter
+    const [value, setValue] = useState([]);
+    // Don't mind the counter
     // just to have persistent unique keys
     const counter = createCounter();
-    const hugeOptionsList = React.useMemo(
+    const hugeOptionsList = useMemo(
       () =>
         accountOptions
           .concat(
-            accountOptions.map((x) => ({
+            accountOptions?.map((x) => ({
               ...x,
               value: x.value + counter.next(),
               label: x.label + counter.next(),
             })),
           )
           .concat(
-            accountOptions.map((x) => ({
+            accountOptions?.map((x) => ({
               ...x,
               value: x.value + counter.next(),
               label: x.label + counter.next(),
             })),
           )
           .concat(
-            accountOptions.map((x) => ({
+            accountOptions?.map((x) => ({
               ...x,
               value: x.value + counter.next(),
               label: x.label + counter.next(),
@@ -1011,10 +1001,9 @@ export const linkWithDropdownAndSearchBoxTertiary = () =>
   });
 
 export const linkWithDropdownAndSearchBoxMultiselect = () =>
-  React.createElement(() => {
-    const customComponents = React.useMemo(
+  createElement(() => {
+    const customComponents = useMemo(
       () => ({
-        // @ts-ignore
         SelectedValue: () => {
           const [state] = useSelectMachineFromContext();
 
@@ -1037,29 +1026,29 @@ export const linkWithDropdownAndSearchBoxMultiselect = () =>
       [],
     );
 
-    const [value, setValue] = React.useState([]);
-    // Don't mind counter
+    const [value, setValue] = useState([]);
+    // Don't mind the counter
     // just to have persistent unique keys
     const counter = createCounter();
-    const hugeOptionsList = React.useMemo(
+    const hugeOptionsList = useMemo(
       () =>
         accountOptions
           .concat(
-            accountOptions.map((x) => ({
+            accountOptions?.map((x) => ({
               ...x,
               value: x.value + counter.next(),
               label: x.label + counter.next(),
             })),
           )
           .concat(
-            accountOptions.map((x) => ({
+            accountOptions?.map((x) => ({
               ...x,
               value: x.value + counter.next(),
               label: x.label + counter.next(),
             })),
           )
           .concat(
-            accountOptions.map((x) => ({
+            accountOptions?.map((x) => ({
               ...x,
               value: x.value + counter.next(),
               label: x.label + counter.next(),
@@ -1109,8 +1098,8 @@ export const linkWithDropdownAndSearchBoxMultiselect = () =>
   });
 
 export const listPositionedToTheLeft = () =>
-  React.createElement(() => {
-    const customComponents = React.useMemo(
+  createElement(() => {
+    const customComponents = useMemo(
       () => ({
         // @ts-ignore
         SelectedValue: () => {
@@ -1135,29 +1124,29 @@ export const listPositionedToTheLeft = () =>
       [],
     );
 
-    const [value, setValue] = React.useState([]);
-    // Don't mind counter
+    const [value, setValue] = useState([]);
+    // Don't mind the counter
     // just to have persistent unique keys
     const counter = createCounter();
-    const hugeOptionsList = React.useMemo(
+    const hugeOptionsList = useMemo(
       () =>
         accountOptions
           .concat(
-            accountOptions.map((x) => ({
+            accountOptions?.map((x) => ({
               ...x,
               value: x.value + counter.next(),
               label: x.label + counter.next(),
             })),
           )
           .concat(
-            accountOptions.map((x) => ({
+            accountOptions?.map((x) => ({
               ...x,
               value: x.value + counter.next(),
               label: x.label + counter.next(),
             })),
           )
           .concat(
-            accountOptions.map((x) => ({
+            accountOptions?.map((x) => ({
               ...x,
               value: x.value + counter.next(),
               label: x.label + counter.next(),
@@ -1292,7 +1281,7 @@ export const placementTop = () => (
 );
 
 export const autoPlacement = () => (
-  <div>
+  <>
     <h1>Open the Select and scroll down</h1>
     <div style={{ display: 'flex', alignItems: 'center', height: '160vh' }}>
       <Input.Select
@@ -1303,23 +1292,23 @@ export const autoPlacement = () => (
         withPortal
       />
     </div>
-  </div>
+  </>
 );
 
-export const groupedOptions = () => {
-  const [value, setValue] = React.useState([]);
+export const GroupedOptions = () => {
+  const [value, setValue] = useState([]);
 
   const options = [
     {
       label: 'Group 1',
-      options: new Array(5).fill(null).map((_, i) => ({
+      options: new Array(5).fill(null)?.map((_, i) => ({
         label: `Child 1 ${i}`,
         value: `c1-${i}`,
       })),
     },
     {
       label: 'Group 2',
-      options: new Array(5).fill(null).map((_, i) => ({
+      options: new Array(5).fill(null)?.map((_, i) => ({
         label: `Child 2 ${i}`,
         value: `c2-${i}`,
       })),
@@ -1329,7 +1318,7 @@ export const groupedOptions = () => {
   // selected -> group with selected
   const valueToSelected = (_value: any) =>
     options
-      .map((option) => ({
+      ?.map((option) => ({
         ...option,
         options: option.options.filter((child) =>
           _value.find((val: any) => val.value === child.value),
@@ -1337,23 +1326,20 @@ export const groupedOptions = () => {
       }))
       .filter((option) => option.options.length);
 
-  // @ts-ignore
-  const handleChange = (newVal) => {
+  const handleChange = (newVal: any) => {
     action('change')(newVal);
     setValue(newVal);
   };
 
   return (
-    <div>
-      <Input.Select
-        id="grouped-options-single"
-        options={options}
-        label="Grouped options single"
-        placeholder="Select option"
-        value={valueToSelected(value)}
-        onChange={handleChange}
-      />
-    </div>
+    <Input.Select
+      id="grouped-options-single"
+      options={options}
+      label="Grouped options single"
+      placeholder="Select option"
+      value={valueToSelected(value)}
+      onChange={handleChange}
+    />
   );
 };
 

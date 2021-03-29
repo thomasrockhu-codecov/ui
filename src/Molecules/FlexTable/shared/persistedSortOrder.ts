@@ -25,7 +25,6 @@ export const setPersistedSortOrder = (
       }
     }
   } catch {
-    // eslint-disable-next-line no-empty
     // Do nothing, fail silently
   }
 };
