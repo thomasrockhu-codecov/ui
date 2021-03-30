@@ -31,11 +31,13 @@ const StyledTooltipPopup = styled.span<StyledTooltipPopupProps>`
 
 // styled to allow consumers to use it as styling-identifier directly from TooltipPopup.components.TooltipContent
 const StyledTooltipContent = styled(TooltipContent)``;
+const StyledTooltipArrow = styled(TooltipArrow)``;
 
 const displayName = 'Tooltip Popup';
 
 const components = {
   TooltipContent: StyledTooltipContent,
+  TooltipArrow: StyledTooltipArrow,
 };
 
 type Props = {
@@ -88,7 +90,7 @@ const TooltipPopup = (forwardRef<HTMLSpanElement, Props>(
           {...htmlSpanProps}
           {...attributes.popper}
         >
-          <TooltipArrow
+          <StyledTooltipArrow
             ref={setArrowElement as any}
             position={state?.placement as any}
             style={styles.arrow}

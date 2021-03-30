@@ -7,7 +7,21 @@ import { Props as PersistentTooltipProps } from './PersistentTooltip.types';
 
 const StyledTooltipPopup = styled(TooltipPopup)`
   ${TooltipPopup.components.TooltipContent} {
-    background: grey;
+    background: ${(p) => p.theme.color.backgroundDark};
+    padding: ${(p) => p.theme.spacing.unit(3)}px;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    border-bottom: solid ${(p) => p.theme.spacing.unit(1)}px
+      ${(p) => p.theme.color.tooltipBorderLight};
+  }
+  ${TooltipPopup.components.TooltipArrow} {
+    &:before {
+      border-bottom-color: ${(p) => p.theme.color.backgroundDark};
+    }
+    &:after {
+      border-bottom-color: ${(p) => p.theme.color.backgroundDark};
+    }
   }
 `;
 
@@ -20,12 +34,16 @@ export const PersistentTooltip = forwardRef<HTMLDivElement, PersistentTooltipPro
     const label = (
       <Box>
         <Flexbox container>
-          <Typography type="primary">Im a title</Typography>
+          <Typography type="primary" color={(t) => t.color.textLight}>
+            Im a title
+          </Typography>
           <Button onClick={onClose}>
             <Icon.Cross size={4} />
           </Button>
         </Flexbox>
-        <Typography>More description text here.More description text here.</Typography>
+        <Typography color={(t) => t.color.textLight}>
+          More description text here.More description text here.
+        </Typography>
       </Box>
     );
 
