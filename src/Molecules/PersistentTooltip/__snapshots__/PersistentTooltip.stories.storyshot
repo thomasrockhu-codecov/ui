@@ -45,11 +45,11 @@ Array [
       />
     </g>
   </svg>,
-  .c6 {
+  .c7 {
   background-color: transparent;
 }
 
-.c7 {
+.c8 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -57,7 +57,7 @@ Array [
   display: flex;
 }
 
-.c11 {
+.c12 {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -71,7 +71,7 @@ Array [
   display: block;
 }
 
-.c5 {
+.c6 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
   margin: 0;
@@ -80,16 +80,16 @@ Array [
   line-height: 1.3333333333333333;
 }
 
-.c8 {
+.c9 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #282823;
+  color: #FFFFFF;
   margin: 0;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
 }
 
-.c10 {
+.c11 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: inherit;
   margin: 0;
@@ -98,7 +98,7 @@ Array [
   line-height: 1.4285714285714286;
 }
 
-.c9 {
+.c10 {
   font-family: inherit;
   font-size: 100%;
   line-height: 1.15;
@@ -128,29 +128,29 @@ Array [
   cursor: pointer;
 }
 
-.c9,
-.c9[type='button'],
-.c9[type='reset'],
-.c9[type='submit'] {
+.c10,
+.c10[type='button'],
+.c10[type='reset'],
+.c10[type='submit'] {
   -webkit-appearance: button;
 }
 
-.c9::-moz-focus-inner,
-.c9[type='button']::-moz-focus-inner,
-.c9[type='reset']::-moz-focus-inner,
-.c9[type='submit']::-moz-focus-inner {
+.c10::-moz-focus-inner,
+.c10[type='button']::-moz-focus-inner,
+.c10[type='reset']::-moz-focus-inner,
+.c10[type='submit']::-moz-focus-inner {
   border-style: none;
   padding: 0;
 }
 
-.c9:-moz-focusring,
-.c9[type='button']:-moz-focusring,
-.c9[type='reset']:-moz-focusring,
-.c9[type='submit']:-moz-focusring {
+.c10:-moz-focusring,
+.c10[type='button']:-moz-focusring,
+.c10[type='reset']:-moz-focusring,
+.c10[type='submit']:-moz-focusring {
   outline: 1px dotted ButtonText;
 }
 
-.c9::before {
+.c10::before {
   content: '';
   display: block;
   position: absolute;
@@ -161,11 +161,11 @@ Array [
   height: calc(100% - 4px);
 }
 
-.c9:hover {
+.c10:hover {
   background-color: hsl(223.5,100%,45%);
 }
 
-.c9:active {
+.c10:active {
   background-color: hsl(223.5,100%,40%);
 }
 
@@ -183,7 +183,7 @@ Array [
   top: 0;
 }
 
-.c3 {
+.c4 {
   padding: 4px 8px;
   box-shadow: 0 10px 16px rgba(0,0,0,0.16);
   background: #FFFFFF;
@@ -211,8 +211,21 @@ Array [
   padding-left: 12px;
 }
 
-.c1 .c4 {
-  background: grey;
+.c1 .c5 {
+  background: #282823;
+  padding: 12px;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  border-bottom: solid 4px #F5F5F5;
+}
+
+.c1 .c3:before {
+  border-bottom-color: #282823;
+}
+
+.c1 .c3:after {
+  border-bottom-color: #282823;
 }
 
 <portal-dummy>
@@ -227,37 +240,37 @@ Array [
       }
     >
       <span
-        className="c2"
+        className="c2 c3 "
       />
       <div
-        className="c3 c4 "
+        className="c4 c5 "
       >
         <span
-          className="c5"
+          className="c6"
         >
           <div
-            className="c6"
+            className="c7"
           >
             <div
-              className="c7"
+              className="c8"
             >
               <span
-                className="c8"
+                className="c9"
               >
                 Im a title
               </span>
               <button
-                className="NormalizedButton__Button-ey7f5x-0 c9"
+                className="NormalizedButton__Button-ey7f5x-0 c10"
                 onClick={[Function]}
                 type="button"
               >
                 <span>
                   <span
-                    className="c10"
+                    className="c11"
                   >
                     <svg
                       aria-hidden="true"
-                      className="c11"
+                      className="c12"
                       focusable="false"
                       preserveAspectRatio="xMidYMid meet"
                       role="presentation"
@@ -272,7 +285,7 @@ Array [
               </button>
             </div>
             <span
-              className="c8"
+              className="c9"
             >
               More description text here.More description text here.
             </span>
