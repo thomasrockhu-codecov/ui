@@ -1,0 +1,281 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Molecules / Persistent Tooltip Default Story 1`] = `
+Array [
+  .c0 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 20px;
+  height: 20px;
+  fill: #282823;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
+}
+
+.c1 {
+  stroke: #6E6E69;
+}
+
+<svg
+    aria-hidden="true"
+    className="c0"
+    focusable="false"
+    preserveAspectRatio="xMidYMid meet"
+    role="presentation"
+    viewBox="0 0 24 24"
+  >
+    <g
+      fillRule="evenodd"
+      transform="translate(1 1)"
+    >
+      <circle
+        className="c1"
+        cx="11"
+        cy="11"
+        fill="none"
+        r="11"
+      />
+      <path
+        d="M9.4544,13.5528 L9.4544,13.3008 C9.4544,12.1584 9.4376,11.6376 11.1512,10.2432 C11.8904,9.6384 12.4784,9.2184 12.4784,8.496 C12.4784,7.8576 12.0248,7.3536 11.1176,7.3536 C10.1768,7.3536 9.656,7.9416 9.4376,8.6472 L6.9008,8.6472 C7.2368,6.3624 8.9504,5.1696 11.168,5.1696 C13.5032,5.1696 15.0992,6.4128 15.0992,8.3784 C15.0992,9.6888 14.5448,10.3776 13.0496,11.6544 C12.344,12.2424 11.84,12.6456 11.7056,13.3008 L11.6552,13.5528 L9.4544,13.5528 Z M11.9072,14.7288 L11.9072,17.4 L9.2696,17.4 L9.2696,14.7288 L11.9072,14.7288 Z"
+        fillRule="nonzero"
+      />
+    </g>
+  </svg>,
+  .c4 {
+  background-color: transparent;
+}
+
+.c5 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.c9 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 16px;
+  height: 16px;
+  fill: #282823;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
+}
+
+.c3 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.3333333333333333;
+}
+
+.c6 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.c8 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: inherit;
+  margin: 0;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c7 {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  overflow: visible;
+  text-transform: none;
+  position: relative;
+  box-sizing: border-box;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  padding: 4px 12px;
+  min-height: 32px;
+  background-color: #0046FF;
+  color: #FFFFFF;
+  border: none;
+  border-radius: 0;
+  cursor: pointer;
+}
+
+.c7,
+.c7[type='button'],
+.c7[type='reset'],
+.c7[type='submit'] {
+  -webkit-appearance: button;
+}
+
+.c7::-moz-focus-inner,
+.c7[type='button']::-moz-focus-inner,
+.c7[type='reset']::-moz-focus-inner,
+.c7[type='submit']::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+.c7:-moz-focusring,
+.c7[type='button']:-moz-focusring,
+.c7[type='reset']:-moz-focusring,
+.c7[type='submit']:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+.c7::before {
+  content: '';
+  display: block;
+  position: absolute;
+  border: 2px solid transparent;
+  top: 0;
+  left: 0;
+  width: calc(100% - 4px);
+  height: calc(100% - 4px);
+}
+
+.c7:hover {
+  background-color: hsl(223.5,100%,45%);
+}
+
+.c7:active {
+  background-color: hsl(223.5,100%,40%);
+}
+
+.c1::before,
+.c1::after {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 0;
+  height: 0;
+}
+
+.c1::before {
+  left: 0;
+  top: 0;
+}
+
+.c2 {
+  padding: 4px 8px;
+  box-shadow: 0 10px 16px rgba(0,0,0,0.16);
+  background: #FFFFFF;
+  border: solid 1px #BCBCB6;
+  overflow-wrap: break-word;
+}
+
+.c0 {
+  z-index: 400;
+}
+
+.c0[data-popper-placement^='top'] {
+  padding-bottom: 12px;
+}
+
+.c0[data-popper-placement^='bottom'] {
+  padding-top: 12px;
+}
+
+.c0[data-popper-placement^='left'] {
+  padding-right: 12px;
+}
+
+.c0[data-popper-placement^='right'] {
+  padding-left: 12px;
+}
+
+<portal-dummy>
+    <span
+      className="c0"
+      style={
+        Object {
+          "left": "0",
+          "position": "absolute",
+          "top": "0",
+        }
+      }
+    >
+      <span
+        className="c1"
+      />
+      <div
+        className="c2"
+      >
+        <span
+          className="c3"
+        >
+          <div
+            className="c4"
+          >
+            <div
+              className="c5"
+            >
+              <span
+                className="c6"
+              >
+                Im a title
+              </span>
+              <button
+                className="NormalizedButton__Button-ey7f5x-0 c7"
+                onClick={[Function]}
+                type="button"
+              >
+                <span>
+                  <span
+                    className="c8"
+                  >
+                    <svg
+                      aria-hidden="true"
+                      className="c9"
+                      focusable="false"
+                      preserveAspectRatio="xMidYMid meet"
+                      role="presentation"
+                      viewBox="0 0 24 24"
+                    >
+                      <polygon
+                        points="15.739 12 24 20.062 19.969 24 12 16.223 4.031 24 0 20.062 8.261 12 0 3.938 4.031 0 12 7.777 19.969 0 24 3.938"
+                      />
+                    </svg>
+                  </span>
+                </span>
+              </button>
+            </div>
+            <span
+              className="c6"
+            >
+              More description text here.More description text here.
+            </span>
+          </div>
+        </span>
+      </div>
+    </span>
+  </portal-dummy>,
+]
+`;
