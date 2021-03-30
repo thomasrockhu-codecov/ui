@@ -13,24 +13,26 @@ const StyledTooltip = styled.div<StyledTooltipProps>`
   overflow-wrap: break-word;
 `;
 
-const TooltipContent: React.ForwardRefExoticComponent<
-  React.PropsWithoutRef<{
-    readonly maxWidth?: any;
-    readonly label?: any;
-    readonly ariaLabel?: any;
-  }> &
-    React.RefAttributes<unknown>
-> = forwardRef(({ label, ariaLabel, maxWidth }, ref) => {
-  return (
-    <StyledTooltip
-      ref={ref as any}
-      maxWidth={maxWidth}
-      aria-label={ariaLabel}
-      role={ariaLabel ? 'tooltip' : undefined}
-    >
-      <Typography type="tertiary">{label}</Typography>
-    </StyledTooltip>
-  );
-});
+type Props = {
+  readonly maxWidth?: any;
+  readonly label?: any;
+  readonly ariaLabel?: any;
+};
+
+const TooltipContent = forwardRef<HTMLDivElement, Props>(
+  ({ label, ariaLabel, maxWidth, ...htmlDivProps }, ref) => {
+    return (
+      <StyledTooltip
+        ref={ref as any}
+        maxWidth={maxWidth}
+        aria-label={ariaLabel}
+        role={ariaLabel ? 'tooltip' : undefined}
+        {...htmlDivProps}
+      >
+        <Typography type="tertiary">{label}</Typography>
+      </StyledTooltip>
+    );
+  },
+);
 
 export default TooltipContent;

@@ -5,5 +5,3 @@ export type Props = {
   open: boolean;
   onClose: () => void;
 };
-
-export type PersistentTooltipComponent = React.FC<Props>;

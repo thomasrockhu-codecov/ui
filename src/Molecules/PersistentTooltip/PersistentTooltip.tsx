@@ -1,11 +1,18 @@
 import React, { cloneElement, forwardRef, useRef, useState } from 'react';
+import styled from 'styled-components';
 import { mergeRefs } from '../../common/utils';
 import { Box, Button, Flexbox, Icon, Typography } from '../..';
 import { TooltipPopup } from '../Tooltip/TooltipPopup';
-import { PersistentTooltipComponent } from './PersistentTooltip.types';
+import { Props as PersistentTooltipProps } from './PersistentTooltip.types';
 
-export const PersistentTooltip: PersistentTooltipComponent = forwardRef(
-  ({ children, position = 'bottom', open, onClose }, ref) => {
+const StyledTooltipPopup = styled(TooltipPopup)`
+  ${TooltipPopup.components.TooltipContent} {
+    background: grey;
+  }
+`;
+
+export const PersistentTooltip = forwardRef<HTMLDivElement, PersistentTooltipProps>(
+  ({ children, position = 'bottom', open, onClose, ...htmlDivProps }, ref) => {
     const child = React.Children.only(children) as any;
     const [triggerElement, setTriggerElement] = useState(undefined);
     const triggerElementRef = useRef(null);
@@ -26,11 +33,12 @@ export const PersistentTooltip: PersistentTooltipComponent = forwardRef(
       <>
         {cloneElement(child, { ref: mergeRefs([setTriggerElement, triggerElementRef]) })}
         {open && (
-          <TooltipPopup
+          <StyledTooltipPopup
             ref={ref as any}
             label={label}
             position={position}
             triggerElement={triggerElement}
+            {...htmlDivProps}
           />
         )}
       </>

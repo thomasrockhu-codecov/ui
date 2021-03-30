@@ -29,21 +29,39 @@ const StyledTooltipPopup = styled.span<StyledTooltipPopupProps>`
   }
 `;
 
-const TooltipPopup: React.ForwardRefExoticComponent<
-  React.PropsWithoutRef<{
-    readonly label?: any;
-    readonly maxWidth?: any;
-    readonly inModal?: any;
-    readonly position?: any;
-    readonly triggerElement?: any;
-    readonly id?: any;
-    readonly ariaLabel?: any;
-    readonly pointerEvents?: any;
-  }> &
-    React.RefAttributes<unknown>
-> = forwardRef(
+// styled to allow consumers to use it as styling-identifier directly from TooltipPopup.components.TooltipContent
+const StyledTooltipContent = styled(TooltipContent)``;
+
+const displayName = 'Tooltip Popup';
+
+const components = {
+  TooltipContent: StyledTooltipContent,
+};
+
+type Props = {
+  readonly label?: any;
+  readonly maxWidth?: any;
+  readonly inModal?: any;
+  readonly position?: any;
+  readonly triggerElement?: any;
+  readonly id?: any;
+  readonly ariaLabel?: any;
+  readonly pointerEvents?: any;
+};
+
+const TooltipPopup = (forwardRef<HTMLSpanElement, Props>(
   (
-    { id, label, ariaLabel, position, inModal, maxWidth, triggerElement, pointerEvents = true },
+    {
+      id,
+      label,
+      ariaLabel,
+      position,
+      inModal,
+      maxWidth,
+      triggerElement,
+      pointerEvents = true,
+      ...htmlSpanProps
+    },
     ref,
   ) => {
     const [popperElement, setPopperElement] = useState(null);
@@ -67,6 +85,7 @@ const TooltipPopup: React.ForwardRefExoticComponent<
           maxWidth={maxWidth}
           style={styles.popper}
           $pointerEvents={pointerEvents}
+          {...htmlSpanProps}
           {...attributes.popper}
         >
           <TooltipArrow
@@ -74,11 +93,16 @@ const TooltipPopup: React.ForwardRefExoticComponent<
             position={state?.placement as any}
             style={styles.arrow}
           />
-          <TooltipContent label={label} ariaLabel={ariaLabel} maxWidth={maxWidth} />
+          <StyledTooltipContent label={label} ariaLabel={ariaLabel} maxWidth={maxWidth} />
         </StyledTooltipPopup>
       </Portal>
     );
   },
-);
+) as any) as React.ForwardRefExoticComponent<Props & React.RefAttributes<HTMLSpanElement>> & {
+  components: typeof components;
+};
+
+TooltipPopup.components = components;
+TooltipPopup.displayName = displayName;
 
 export default TooltipPopup;
