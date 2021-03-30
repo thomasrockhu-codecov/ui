@@ -28,6 +28,7 @@ export const Tooltip: TooltipComponent = forwardRef(
       maxWidth = 50,
       openDelay = 100,
       closeDelay = 500,
+      open: controlledOpen,
     },
     ref,
   ) => {
@@ -44,7 +45,7 @@ export const Tooltip: TooltipComponent = forwardRef(
       handleMouseLeave,
       handleKeyDown,
       handleMouseDown,
-    } = useTooltip(mode, openDelay, closeDelay);
+    } = useTooltip(mode, controlledOpen, openDelay, closeDelay);
 
     return (
       <>
@@ -70,6 +71,7 @@ export const Tooltip: TooltipComponent = forwardRef(
             position={position}
             inModal={inModal}
             maxWidth={maxWidth}
+            pointerEvents={false}
           />
         )}
       </>

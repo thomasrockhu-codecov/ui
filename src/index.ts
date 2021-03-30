@@ -56,6 +56,7 @@ import Number from './Molecules/Number';
 import PageHeaderCard from './Molecules/PageHeaderCard';
 import PageWrapper from './Molecules/PageWrapper';
 import Pagination from './Molecules/Pagination';
+import PersistentTooltip from './Molecules/PersistentTooltip';
 import ProgressBar from './Molecules/ProgressBar';
 import Rating from './Molecules/Rating';
 import SegmentedControl from './Molecules/SegmentedControl';
@@ -145,6 +146,7 @@ export {
   PageHeaderCard,
   PageWrapper,
   Pagination,
+  PersistentTooltip,
   Pill,
   Portal,
   ProgressBar,

@@ -4,9 +4,14 @@ import { useId } from './useId';
 import { State, store } from './useTooltip.store';
 import { useOnClickOutside } from '../../../common/Hooks';
 
-export const useTooltip = (mode: TooltipProps['mode'], openDelay?: number, closeDelay?: number) => {
+export const useTooltip = (
+  mode: TooltipProps['mode'],
+  controlledOpen: TooltipProps['open'],
+  openDelay?: number,
+  closeDelay?: number,
+) => {
   const id = useId('nn-tooltip-');
-  const [isOpen, setIsOpen] = useState(mode === 'persistent');
+  const [isOpen, setIsOpen] = useState(false);
   const triggerElementRef = useRef(null);
 
   useEffect(() => {
@@ -85,7 +90,7 @@ export const useTooltip = (mode: TooltipProps['mode'], openDelay?: number, close
   return {
     id,
     triggerElementRef,
-    isOpen,
+    isOpen: typeof controlledOpen === 'undefined' ? isOpen : controlledOpen,
     handleMouseEnter,
     handleMouseMove,
     handleFocus,

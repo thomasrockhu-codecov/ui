@@ -5,7 +5,6 @@ import { BORDER_SIZE } from '../../consts';
 import { Typography } from '../../../..';
 
 const StyledTooltip = styled.div<StyledTooltipProps>`
-  pointer-events: none;
   padding: ${(p) => p.theme.spacing.unit(1)}px ${(p) => p.theme.spacing.unit(2)}px;
   box-shadow: 0 10px 16px ${(p) => p.theme.color.shadowModal};
   background: ${(p) => p.theme.color.bubbleBackground};

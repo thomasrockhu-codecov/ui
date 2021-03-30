@@ -54,16 +54,6 @@ defaultStory.story = {
   name: 'Default',
 };
 
-export const persistentStory = () => (
-  <Tooltip label={label} mode="persistent">
-    <Button type="button">Hover me</Button>
-  </Tooltip>
-);
-
-persistentStory.story = {
-  name: 'Persistent',
-};
-
 export const withMode = () => (
   <Tooltip label={label} mode="click">
     <Button type="button">Click me</Button>

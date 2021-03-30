@@ -4,6 +4,7 @@ export type StyledTooltipPopupProps = {
   id: string;
   inModal: TooltipProps['inModal'];
   maxWidth: number;
+  $pointerEvents?: boolean;
 };
 
 export type Props = {
