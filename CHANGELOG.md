@@ -1,3 +1,10 @@
+# [6.1.0](https://github.com/nordnet/ui/compare/v6.0.0...v6.1.0) (2021-03-30)
+
+
+### Features
+
+* 🎸 add chevron style to accordion item ([38f63ee](https://github.com/nordnet/ui/commit/38f63ee))
+
 # [6.0.0](https://github.com/nordnet/ui/compare/v5.27.1...v6.0.0) (2021-03-29)
 
 
