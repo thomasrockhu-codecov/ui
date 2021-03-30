@@ -45,11 +45,11 @@ Array [
       />
     </g>
   </svg>,
-  .c4 {
+  .c6 {
   background-color: transparent;
 }
 
-.c5 {
+.c7 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -57,7 +57,7 @@ Array [
   display: flex;
 }
 
-.c9 {
+.c11 {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -71,7 +71,7 @@ Array [
   display: block;
 }
 
-.c3 {
+.c5 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
   margin: 0;
@@ -80,7 +80,7 @@ Array [
   line-height: 1.3333333333333333;
 }
 
-.c6 {
+.c8 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
   margin: 0;
@@ -89,7 +89,7 @@ Array [
   line-height: 1.5;
 }
 
-.c8 {
+.c10 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: inherit;
   margin: 0;
@@ -98,7 +98,7 @@ Array [
   line-height: 1.4285714285714286;
 }
 
-.c7 {
+.c9 {
   font-family: inherit;
   font-size: 100%;
   line-height: 1.15;
@@ -128,29 +128,29 @@ Array [
   cursor: pointer;
 }
 
-.c7,
-.c7[type='button'],
-.c7[type='reset'],
-.c7[type='submit'] {
+.c9,
+.c9[type='button'],
+.c9[type='reset'],
+.c9[type='submit'] {
   -webkit-appearance: button;
 }
 
-.c7::-moz-focus-inner,
-.c7[type='button']::-moz-focus-inner,
-.c7[type='reset']::-moz-focus-inner,
-.c7[type='submit']::-moz-focus-inner {
+.c9::-moz-focus-inner,
+.c9[type='button']::-moz-focus-inner,
+.c9[type='reset']::-moz-focus-inner,
+.c9[type='submit']::-moz-focus-inner {
   border-style: none;
   padding: 0;
 }
 
-.c7:-moz-focusring,
-.c7[type='button']:-moz-focusring,
-.c7[type='reset']:-moz-focusring,
-.c7[type='submit']:-moz-focusring {
+.c9:-moz-focusring,
+.c9[type='button']:-moz-focusring,
+.c9[type='reset']:-moz-focusring,
+.c9[type='submit']:-moz-focusring {
   outline: 1px dotted ButtonText;
 }
 
-.c7::before {
+.c9::before {
   content: '';
   display: block;
   position: absolute;
@@ -161,16 +161,16 @@ Array [
   height: calc(100% - 4px);
 }
 
-.c7:hover {
+.c9:hover {
   background-color: hsl(223.5,100%,45%);
 }
 
-.c7:active {
+.c9:active {
   background-color: hsl(223.5,100%,40%);
 }
 
-.c1::before,
-.c1::after {
+.c2::before,
+.c2::after {
   content: '';
   display: block;
   position: absolute;
@@ -178,12 +178,12 @@ Array [
   height: 0;
 }
 
-.c1::before {
+.c2::before {
   left: 0;
   top: 0;
 }
 
-.c2 {
+.c3 {
   padding: 4px 8px;
   box-shadow: 0 10px 16px rgba(0,0,0,0.16);
   background: #FFFFFF;
@@ -211,9 +211,13 @@ Array [
   padding-left: 12px;
 }
 
+.c1 .c4 {
+  background: grey;
+}
+
 <portal-dummy>
     <span
-      className="c0"
+      className="c0 c1"
       style={
         Object {
           "left": "0",
@@ -223,37 +227,37 @@ Array [
       }
     >
       <span
-        className="c1"
+        className="c2"
       />
       <div
-        className="c2"
+        className="c3 c4 "
       >
         <span
-          className="c3"
+          className="c5"
         >
           <div
-            className="c4"
+            className="c6"
           >
             <div
-              className="c5"
+              className="c7"
             >
               <span
-                className="c6"
+                className="c8"
               >
                 Im a title
               </span>
               <button
-                className="NormalizedButton__Button-ey7f5x-0 c7"
+                className="NormalizedButton__Button-ey7f5x-0 c9"
                 onClick={[Function]}
                 type="button"
               >
                 <span>
                   <span
-                    className="c8"
+                    className="c10"
                   >
                     <svg
                       aria-hidden="true"
-                      className="c9"
+                      className="c11"
                       focusable="false"
                       preserveAspectRatio="xMidYMid meet"
                       role="presentation"
@@ -268,7 +272,7 @@ Array [
               </button>
             </div>
             <span
-              className="c6"
+              className="c8"
             >
               More description text here.More description text here.
             </span>
