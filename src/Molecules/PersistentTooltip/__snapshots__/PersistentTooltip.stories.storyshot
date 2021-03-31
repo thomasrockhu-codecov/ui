@@ -55,16 +55,20 @@ Array [
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
 }
 
-.c12 {
+.c13 {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
   width: 16px;
   height: 16px;
-  fill: #282823;
+  fill: #FFFFFF;
   -webkit-flex-shrink: 0;
   -ms-flex-negative: 0;
   flex-shrink: 0;
@@ -84,16 +88,25 @@ Array [
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #FFFFFF;
   margin: 0;
-  font-weight: 400;
+  font-weight: 700;
   font-size: 16px;
   line-height: 1.5;
 }
 
-.c11 {
+.c12 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: inherit;
   margin: 0;
   font-weight: 700;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c14 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #FFFFFF;
+  margin: 0;
+  font-weight: 400;
   font-size: 14px;
   line-height: 1.4285714285714286;
 }
@@ -119,10 +132,9 @@ Array [
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  padding: 4px 12px;
-  min-height: 32px;
-  background-color: #0046FF;
-  color: #FFFFFF;
+  padding: 0;
+  background-color: transparent;
+  color: #282823;
   border: none;
   border-radius: 0;
   cursor: pointer;
@@ -148,25 +160,6 @@ Array [
 .c10[type='reset']:-moz-focusring,
 .c10[type='submit']:-moz-focusring {
   outline: 1px dotted ButtonText;
-}
-
-.c10::before {
-  content: '';
-  display: block;
-  position: absolute;
-  border: 2px solid transparent;
-  top: 0;
-  left: 0;
-  width: calc(100% - 4px);
-  height: calc(100% - 4px);
-}
-
-.c10:hover {
-  background-color: hsl(223.5,100%,45%);
-}
-
-.c10:active {
-  background-color: hsl(223.5,100%,40%);
 }
 
 .c2::before,
@@ -228,6 +221,10 @@ Array [
   border-bottom-color: #282823;
 }
 
+.c11 {
+  margin-left: 20px;
+}
+
 <portal-dummy>
     <span
       className="c0 c1"
@@ -260,32 +257,34 @@ Array [
                 Im a title
               </span>
               <button
-                className="NormalizedButton__Button-ey7f5x-0 c10"
+                className="NormalizedButton__Button-ey7f5x-0 c10 c11"
                 onClick={[Function]}
                 type="button"
               >
-                <span>
-                  <span
-                    className="c11"
+                <span
+                  className="c12"
+                >
+                  <svg
+                    aria-hidden="false"
+                    className="c13"
+                    focusable="false"
+                    preserveAspectRatio="xMidYMid meet"
+                    role="img"
+                    viewBox="0 0 16 16"
                   >
-                    <svg
-                      aria-hidden="true"
-                      className="c12"
-                      focusable="false"
-                      preserveAspectRatio="xMidYMid meet"
-                      role="presentation"
-                      viewBox="0 0 24 24"
-                    >
-                      <polygon
-                        points="15.739 12 24 20.062 19.969 24 12 16.223 4.031 24 0 20.062 8.261 12 0 3.938 4.031 0 12 7.777 19.969 0 24 3.938"
-                      />
-                    </svg>
-                  </span>
+                    <path
+                      d="M6.857 8L0 1.143 1.143 0 8 6.857 14.857 0 16 1.143 9.143 8 16 14.857 14.857 16 8 9.143 1.143 16 0 14.857z"
+                      fillRule="evenodd"
+                    />
+                    <title>
+                      TODO prop for setting this title?
+                    </title>
+                  </svg>
                 </span>
               </button>
             </div>
             <span
-              className="c9"
+              className="c14"
             >
               More description text here.More description text here.
             </span>
