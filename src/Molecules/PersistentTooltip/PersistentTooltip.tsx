@@ -25,6 +25,10 @@ const StyledTooltipPopup = styled(TooltipPopup)`
   }
 `;
 
+const StyledButton = styled(Button)`
+  margin-left: ${(p) => p.theme.spacing.unit(5)}px;
+`;
+
 export const PersistentTooltip = forwardRef<HTMLDivElement, PersistentTooltipProps>(
   ({ children, position = 'bottom', open, onClose, ...htmlDivProps }, ref) => {
     const child = React.Children.only(children) as any;
@@ -33,15 +37,19 @@ export const PersistentTooltip = forwardRef<HTMLDivElement, PersistentTooltipPro
 
     const label = (
       <Box>
-        <Flexbox container>
-          <Typography type="primary" color={(t) => t.color.textLight}>
+        <Flexbox container justifyContent="space-between">
+          <Typography type="primary" weight="bold" color={(t) => t.color.textLight}>
             Im a title
           </Typography>
-          <Button onClick={onClose}>
-            <Icon.Cross size={4} />
-          </Button>
+          <StyledButton onClick={onClose} variant="neutral">
+            <Icon.CrossMedium
+              size={4}
+              color={(t) => t.color.textLight}
+              title="TODO prop for setting this title?"
+            />
+          </StyledButton>
         </Flexbox>
-        <Typography color={(t) => t.color.textLight}>
+        <Typography type="secondary" color={(t) => t.color.textLight}>
           More description text here.More description text here.
         </Typography>
       </Box>
