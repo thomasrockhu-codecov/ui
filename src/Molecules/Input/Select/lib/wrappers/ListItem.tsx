@@ -6,6 +6,7 @@ import { Option } from '../../Select.types';
 
 const StyledListItemWrapper = styled.li`
   width: 100%;
+  outline: none;
 `;
 
 type ListItemComponent = React.ComponentType<{ index: number }>;
