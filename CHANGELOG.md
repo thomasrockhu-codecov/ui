@@ -1,3 +1,10 @@
+# [6.2.0](https://github.com/nordnet/ui/compare/v6.1.0...v6.2.0) (2021-03-31)
+
+
+### Features
+
+* 🎸 add Lock icon ([a080792](https://github.com/nordnet/ui/commit/a080792))
+
 # [6.1.0](https://github.com/nordnet/ui/compare/v6.0.0...v6.1.0) (2021-03-30)
 
 
