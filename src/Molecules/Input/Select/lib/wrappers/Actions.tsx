@@ -10,6 +10,10 @@ const StyledList = styled(List)<any>`
   list-style: none;
 `;
 
+const StyledLi = styled.li`
+  outline: none;
+`;
+
 export const ActionsWrapper: React.FC<{
   onClickFactory: (action: any) => (event: React.MouseEvent) => void;
   component: React.ComponentType<any>;
@@ -38,7 +42,7 @@ export const ActionsWrapper: React.FC<{
       {actions?.map((a, index) => (
         // Because it has keyboard navigation from Input.Select itself
         // eslint-disable-next-line jsx-a11y/click-events-have-key-events
-        <li
+        <StyledLi
           key={a.label}
           role="menuitem"
           onClick={handleClick(index)}
@@ -57,7 +61,7 @@ export const ActionsWrapper: React.FC<{
             isKeyboardNavigation={isKeyboardNavigation}
             disabled={a.disabled}
           />
-        </li>
+        </StyledLi>
       ))}
     </StyledList>
   );
