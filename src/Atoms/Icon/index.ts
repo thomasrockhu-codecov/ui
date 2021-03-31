@@ -69,6 +69,7 @@ import { InfoCircle } from './components/InfoCircle';
 import { InfoPending } from './components/InfoPending';
 import { Leaf } from './components/Leaf';
 import { LineGraph } from './components/LineGraph';
+import { Lock } from './components/Lock';
 import { LowRisk } from './components/LowRisk';
 import { Maximize } from './components/Maximize';
 import { MediumRisk } from './components/MediumRisk';
@@ -198,6 +199,7 @@ export default {
   InfoPending,
   Leaf,
   LineGraph,
+  Lock,
   LowRisk,
   Maximize,
   MediumRisk,
