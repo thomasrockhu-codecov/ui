@@ -1,3 +1,10 @@
+## [6.2.1](https://github.com/nordnet/ui/compare/v6.2.0...v6.2.1) (2021-03-31)
+
+
+### Bug Fixes
+
+* add missing outlines ([7c7e7f1](https://github.com/nordnet/ui/commit/7c7e7f1))
+
 # [6.2.0](https://github.com/nordnet/ui/compare/v6.1.0...v6.2.0) (2021-03-31)
 
 
