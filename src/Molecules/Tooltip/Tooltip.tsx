@@ -63,7 +63,6 @@ export const Tooltip: TooltipComponent = forwardRef(
 
         {isOpen && (
           <TooltipPopup
-            id={id}
             ref={ref as any}
             triggerElement={triggerElement}
             ariaLabel={ariaLabel}
