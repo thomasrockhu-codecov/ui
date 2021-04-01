@@ -151,16 +151,16 @@ Array [
       </span>
     </label>
   </div>,
-  .c7 {
-  background-color: transparent;
-}
-
-.c9 {
-  margin-bottom: 16px;
+  .c6 {
   background-color: transparent;
 }
 
 .c8 {
+  margin-bottom: 16px;
+  background-color: transparent;
+}
+
+.c7 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -172,7 +172,7 @@ Array [
   justify-content: space-between;
 }
 
-.c14 {
+.c13 {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -186,7 +186,7 @@ Array [
   display: block;
 }
 
-.c6 {
+.c5 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
   margin: 0;
@@ -195,7 +195,7 @@ Array [
   line-height: 1.3333333333333333;
 }
 
-.c10 {
+.c9 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #FF1900;
   margin: 0;
@@ -204,7 +204,7 @@ Array [
   line-height: 1.5;
 }
 
-.c13 {
+.c12 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: inherit;
   margin: 0;
@@ -213,7 +213,7 @@ Array [
   line-height: 1.4285714285714286;
 }
 
-.c15 {
+.c14 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #FFFFFF;
   margin: 0;
@@ -222,7 +222,7 @@ Array [
   line-height: 1.4285714285714286;
 }
 
-.c11 {
+.c10 {
   font-family: inherit;
   font-size: 100%;
   line-height: 1.15;
@@ -251,25 +251,25 @@ Array [
   cursor: pointer;
 }
 
-.c11,
-.c11[type='button'],
-.c11[type='reset'],
-.c11[type='submit'] {
+.c10,
+.c10[type='button'],
+.c10[type='reset'],
+.c10[type='submit'] {
   -webkit-appearance: button;
 }
 
-.c11::-moz-focus-inner,
-.c11[type='button']::-moz-focus-inner,
-.c11[type='reset']::-moz-focus-inner,
-.c11[type='submit']::-moz-focus-inner {
+.c10::-moz-focus-inner,
+.c10[type='button']::-moz-focus-inner,
+.c10[type='reset']::-moz-focus-inner,
+.c10[type='submit']::-moz-focus-inner {
   border-style: none;
   padding: 0;
 }
 
-.c11:-moz-focusring,
-.c11[type='button']:-moz-focusring,
-.c11[type='reset']:-moz-focusring,
-.c11[type='submit']:-moz-focusring {
+.c10:-moz-focusring,
+.c10[type='button']:-moz-focusring,
+.c10[type='reset']:-moz-focusring,
+.c10[type='submit']:-moz-focusring {
   outline: 1px dotted ButtonText;
 }
 
@@ -287,11 +287,11 @@ Array [
   top: 0;
 }
 
-.c4 {
+.c3 {
   padding: 4px 8px;
   box-shadow: 0 10px 16px rgba(0,0,0,0.16);
-  background: #FFFFFF;
-  border: solid 1px #BCBCB6;
+  background: #282823;
+  border: solid 1px transparent;
   overflow-wrap: break-word;
 }
 
@@ -315,24 +315,12 @@ Array [
   padding-left: 12px;
 }
 
-.c1 .c5 {
-  background: #282823;
+.c1 .c4 {
   padding: 12px;
-  border-top: none;
-  border-right: none;
-  border-left: none;
   border-bottom: solid 4px #F5F5F5;
 }
 
-.c1 .c3::before {
-  border-bottom-color: #282823;
-}
-
-.c1 .c3::after {
-  border-bottom-color: #282823;
-}
-
-.c12 {
+.c11 {
   margin-left: 20px;
 }
 
@@ -348,40 +336,40 @@ Array [
       }
     >
       <span
-        className="c2 c3 "
+        className="c2"
       />
       <div
-        className="c4 c5 "
+        className="c3 c4 "
       >
         <span
-          className="c6"
+          className="c5"
         >
           <div
-            className="c7"
+            className="c6"
           >
             <div
-              className="c8"
+              className="c7"
             >
               <div
-                className="c9"
+                className="c8"
               >
                 <span
-                  className="c10"
+                  className="c9"
                 >
                   I'm in a box
                 </span>
               </div>
               <button
-                className="NormalizedButton__Button-ey7f5x-0 c11 c12"
+                className="NormalizedButton__Button-ey7f5x-0 c10 c11"
                 onClick={[Function]}
                 type="button"
               >
                 <span
-                  className="c13"
+                  className="c12"
                 >
                   <svg
                     aria-hidden="false"
-                    className="c14 "
+                    className="c13 "
                     focusable="false"
                     preserveAspectRatio="xMidYMid meet"
                     role="img"
@@ -399,7 +387,7 @@ Array [
               </button>
             </div>
             <span
-              className="c15"
+              className="c14"
             >
               The max width is not set with a prop for this tooltip. This is the description that is quite long and stuff. Just showing how the tooltip will look if description is really long. I mean really really long.
             </span>
@@ -562,11 +550,11 @@ Array [
       </span>
     </label>
   </div>,
-  .c7 {
+  .c6 {
   background-color: transparent;
 }
 
-.c8 {
+.c7 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -578,7 +566,7 @@ Array [
   justify-content: space-between;
 }
 
-.c13 {
+.c12 {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -592,7 +580,7 @@ Array [
   display: block;
 }
 
-.c6 {
+.c5 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
   margin: 0;
@@ -601,7 +589,7 @@ Array [
   line-height: 1.3333333333333333;
 }
 
-.c9 {
+.c8 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #FFFFFF;
   margin: 0;
@@ -610,7 +598,7 @@ Array [
   line-height: 1.5;
 }
 
-.c12 {
+.c11 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: inherit;
   margin: 0;
@@ -619,7 +607,7 @@ Array [
   line-height: 1.4285714285714286;
 }
 
-.c14 {
+.c13 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #FFFFFF;
   margin: 0;
@@ -628,7 +616,7 @@ Array [
   line-height: 1.4285714285714286;
 }
 
-.c10 {
+.c9 {
   font-family: inherit;
   font-size: 100%;
   line-height: 1.15;
@@ -657,25 +645,25 @@ Array [
   cursor: pointer;
 }
 
-.c10,
-.c10[type='button'],
-.c10[type='reset'],
-.c10[type='submit'] {
+.c9,
+.c9[type='button'],
+.c9[type='reset'],
+.c9[type='submit'] {
   -webkit-appearance: button;
 }
 
-.c10::-moz-focus-inner,
-.c10[type='button']::-moz-focus-inner,
-.c10[type='reset']::-moz-focus-inner,
-.c10[type='submit']::-moz-focus-inner {
+.c9::-moz-focus-inner,
+.c9[type='button']::-moz-focus-inner,
+.c9[type='reset']::-moz-focus-inner,
+.c9[type='submit']::-moz-focus-inner {
   border-style: none;
   padding: 0;
 }
 
-.c10:-moz-focusring,
-.c10[type='button']:-moz-focusring,
-.c10[type='reset']:-moz-focusring,
-.c10[type='submit']:-moz-focusring {
+.c9:-moz-focusring,
+.c9[type='button']:-moz-focusring,
+.c9[type='reset']:-moz-focusring,
+.c9[type='submit']:-moz-focusring {
   outline: 1px dotted ButtonText;
 }
 
@@ -693,11 +681,11 @@ Array [
   top: 0;
 }
 
-.c4 {
+.c3 {
   padding: 4px 8px;
   box-shadow: 0 10px 16px rgba(0,0,0,0.16);
-  background: #FFFFFF;
-  border: solid 1px #BCBCB6;
+  background: #282823;
+  border: solid 1px transparent;
   max-width: 480px;
   overflow-wrap: break-word;
 }
@@ -722,24 +710,12 @@ Array [
   padding-left: 12px;
 }
 
-.c1 .c5 {
-  background: #282823;
+.c1 .c4 {
   padding: 12px;
-  border-top: none;
-  border-right: none;
-  border-left: none;
   border-bottom: solid 4px #F5F5F5;
 }
 
-.c1 .c3::before {
-  border-bottom-color: #282823;
-}
-
-.c1 .c3::after {
-  border-bottom-color: #282823;
-}
-
-.c11 {
+.c10 {
   margin-left: 20px;
 }
 
@@ -755,36 +731,36 @@ Array [
       }
     >
       <span
-        className="c2 c3 "
+        className="c2"
       />
       <div
-        className="c4 c5 "
+        className="c3 c4 "
       >
         <span
-          className="c6"
+          className="c5"
         >
           <div
-            className="c7"
+            className="c6"
           >
             <div
-              className="c8"
+              className="c7"
             >
               <span
-                className="c9"
+                className="c8"
               >
                 This is persistent tooltip
               </span>
               <button
-                className="NormalizedButton__Button-ey7f5x-0 c10 c11"
+                className="NormalizedButton__Button-ey7f5x-0 c9 c10"
                 onClick={[Function]}
                 type="button"
               >
                 <span
-                  className="c12"
+                  className="c11"
                 >
                   <svg
                     aria-hidden="false"
-                    className="c13 "
+                    className="c12 "
                     focusable="false"
                     preserveAspectRatio="xMidYMid meet"
                     role="img"
@@ -802,7 +778,7 @@ Array [
               </button>
             </div>
             <span
-              className="c14"
+              className="c13"
             >
               The tooltip will not close until the user clicks the close-button – useful for pointing the user's attention somewhere (for instance when showcasing new features).
             </span>
@@ -821,7 +797,7 @@ Array [
   background-color: transparent;
 }
 
-.c15 {
+.c14 {
   background-color: transparent;
 }
 
@@ -837,7 +813,7 @@ Array [
   align-items: center;
 }
 
-.c16 {
+.c15 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -855,7 +831,7 @@ Array [
   cursor: pointer;
 }
 
-.c21 {
+.c20 {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -887,7 +863,7 @@ Array [
   line-height: 1.4285714285714286;
 }
 
-.c14 {
+.c13 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
   margin: 0;
@@ -896,7 +872,7 @@ Array [
   line-height: 1.3333333333333333;
 }
 
-.c17 {
+.c16 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #FFFFFF;
   margin: 0;
@@ -905,7 +881,7 @@ Array [
   line-height: 1.5;
 }
 
-.c20 {
+.c19 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: inherit;
   margin: 0;
@@ -914,7 +890,7 @@ Array [
   line-height: 1.4285714285714286;
 }
 
-.c22 {
+.c21 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #FFFFFF;
   margin: 0;
@@ -923,7 +899,7 @@ Array [
   line-height: 1.4285714285714286;
 }
 
-.c18 {
+.c17 {
   font-family: inherit;
   font-size: 100%;
   line-height: 1.15;
@@ -952,25 +928,25 @@ Array [
   cursor: pointer;
 }
 
-.c18,
-.c18[type='button'],
-.c18[type='reset'],
-.c18[type='submit'] {
+.c17,
+.c17[type='button'],
+.c17[type='reset'],
+.c17[type='submit'] {
   -webkit-appearance: button;
 }
 
-.c18::-moz-focus-inner,
-.c18[type='button']::-moz-focus-inner,
-.c18[type='reset']::-moz-focus-inner,
-.c18[type='submit']::-moz-focus-inner {
+.c17::-moz-focus-inner,
+.c17[type='button']::-moz-focus-inner,
+.c17[type='reset']::-moz-focus-inner,
+.c17[type='submit']::-moz-focus-inner {
   border-style: none;
   padding: 0;
 }
 
-.c18:-moz-focusring,
-.c18[type='button']:-moz-focusring,
-.c18[type='reset']:-moz-focusring,
-.c18[type='submit']:-moz-focusring {
+.c17:-moz-focusring,
+.c17[type='button']:-moz-focusring,
+.c17[type='reset']:-moz-focusring,
+.c17[type='submit']:-moz-focusring {
   outline: 1px dotted ButtonText;
 }
 
@@ -1070,11 +1046,11 @@ Array [
   top: 0;
 }
 
-.c12 {
+.c11 {
   padding: 4px 8px;
   box-shadow: 0 10px 16px rgba(0,0,0,0.16);
-  background: #FFFFFF;
-  border: solid 1px #BCBCB6;
+  background: #282823;
+  border: solid 1px transparent;
   overflow-wrap: break-word;
 }
 
@@ -1098,75 +1074,12 @@ Array [
   padding-left: 12px;
 }
 
-.c9 .c13 {
-  background: #282823;
+.c9 .c12 {
   padding: 12px;
-  border-top: none;
-  border-right: none;
-  border-left: none;
   border-bottom: solid 4px #F5F5F5;
 }
 
-.c9 .c11::before {
-  border-right-color: #282823;
-}
-
-.c9 .c11::after {
-  border-right-color: #282823;
-}
-
-.c23 .c13 {
-  background: #282823;
-  padding: 12px;
-  border-top: none;
-  border-right: none;
-  border-left: none;
-  border-bottom: solid 4px #F5F5F5;
-}
-
-.c23 .c11::before {
-  border-bottom-color: #282823;
-}
-
-.c23 .c11::after {
-  border-bottom-color: #282823;
-}
-
-.c24 .c13 {
-  background: #282823;
-  padding: 12px;
-  border-top: none;
-  border-right: none;
-  border-left: none;
-  border-bottom: solid 4px #F5F5F5;
-}
-
-.c24 .c11::before {
-  border-left-color: #282823;
-}
-
-.c24 .c11::after {
-  border-left-color: #282823;
-}
-
-.c25 .c13 {
-  background: #282823;
-  padding: 12px;
-  border-top: none;
-  border-right: none;
-  border-left: none;
-  border-bottom: solid 4px #F5F5F5;
-}
-
-.c25 .c11::before {
-  border-top-color: #282823;
-}
-
-.c25 .c11::after {
-  border-top-color: #282823;
-}
-
-.c19 {
+.c18 {
   margin-left: 20px;
 }
 
@@ -1216,36 +1129,36 @@ Array [
         }
       >
         <span
-          className="c10 c11 "
+          className="c10"
         />
         <div
-          className="c12 c13 "
+          className="c11 c12 "
         >
           <span
-            className="c14"
+            className="c13"
           >
             <div
-              className="c15"
+              className="c14"
             >
               <div
-                className="c16"
+                className="c15"
               >
                 <span
-                  className="c17"
+                  className="c16"
                 >
                   Different Positions - Right
                 </span>
                 <button
-                  className="NormalizedButton__Button-ey7f5x-0 c18 c19"
+                  className="NormalizedButton__Button-ey7f5x-0 c17 c18"
                   onClick={[Function]}
                   type="button"
                 >
                   <span
-                    className="c20"
+                    className="c19"
                   >
                     <svg
                       aria-hidden="false"
-                      className="c21 "
+                      className="c20 "
                       focusable="false"
                       preserveAspectRatio="xMidYMid meet"
                       role="img"
@@ -1263,7 +1176,7 @@ Array [
                 </button>
               </div>
               <span
-                className="c22"
+                className="c21"
               >
                 This tooltip is positioned on the right
               </span>
@@ -1278,7 +1191,7 @@ Array [
   background-color: transparent;
 }
 
-.c15 {
+.c14 {
   background-color: transparent;
 }
 
@@ -1294,7 +1207,7 @@ Array [
   align-items: center;
 }
 
-.c16 {
+.c15 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -1312,7 +1225,7 @@ Array [
   cursor: pointer;
 }
 
-.c21 {
+.c20 {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -1344,7 +1257,7 @@ Array [
   line-height: 1.4285714285714286;
 }
 
-.c14 {
+.c13 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
   margin: 0;
@@ -1353,7 +1266,7 @@ Array [
   line-height: 1.3333333333333333;
 }
 
-.c17 {
+.c16 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #FFFFFF;
   margin: 0;
@@ -1362,7 +1275,7 @@ Array [
   line-height: 1.5;
 }
 
-.c20 {
+.c19 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: inherit;
   margin: 0;
@@ -1371,7 +1284,7 @@ Array [
   line-height: 1.4285714285714286;
 }
 
-.c22 {
+.c21 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #FFFFFF;
   margin: 0;
@@ -1380,7 +1293,7 @@ Array [
   line-height: 1.4285714285714286;
 }
 
-.c18 {
+.c17 {
   font-family: inherit;
   font-size: 100%;
   line-height: 1.15;
@@ -1409,25 +1322,25 @@ Array [
   cursor: pointer;
 }
 
-.c18,
-.c18[type='button'],
-.c18[type='reset'],
-.c18[type='submit'] {
+.c17,
+.c17[type='button'],
+.c17[type='reset'],
+.c17[type='submit'] {
   -webkit-appearance: button;
 }
 
-.c18::-moz-focus-inner,
-.c18[type='button']::-moz-focus-inner,
-.c18[type='reset']::-moz-focus-inner,
-.c18[type='submit']::-moz-focus-inner {
+.c17::-moz-focus-inner,
+.c17[type='button']::-moz-focus-inner,
+.c17[type='reset']::-moz-focus-inner,
+.c17[type='submit']::-moz-focus-inner {
   border-style: none;
   padding: 0;
 }
 
-.c18:-moz-focusring,
-.c18[type='button']:-moz-focusring,
-.c18[type='reset']:-moz-focusring,
-.c18[type='submit']:-moz-focusring {
+.c17:-moz-focusring,
+.c17[type='button']:-moz-focusring,
+.c17[type='reset']:-moz-focusring,
+.c17[type='submit']:-moz-focusring {
   outline: 1px dotted ButtonText;
 }
 
@@ -1527,11 +1440,11 @@ Array [
   top: 0;
 }
 
-.c12 {
+.c11 {
   padding: 4px 8px;
   box-shadow: 0 10px 16px rgba(0,0,0,0.16);
-  background: #FFFFFF;
-  border: solid 1px #BCBCB6;
+  background: #282823;
+  border: solid 1px transparent;
   overflow-wrap: break-word;
 }
 
@@ -1555,75 +1468,12 @@ Array [
   padding-left: 12px;
 }
 
-.c23 .c13 {
-  background: #282823;
+.c9 .c12 {
   padding: 12px;
-  border-top: none;
-  border-right: none;
-  border-left: none;
   border-bottom: solid 4px #F5F5F5;
 }
 
-.c23 .c11::before {
-  border-right-color: #282823;
-}
-
-.c23 .c11::after {
-  border-right-color: #282823;
-}
-
-.c9 .c13 {
-  background: #282823;
-  padding: 12px;
-  border-top: none;
-  border-right: none;
-  border-left: none;
-  border-bottom: solid 4px #F5F5F5;
-}
-
-.c9 .c11::before {
-  border-bottom-color: #282823;
-}
-
-.c9 .c11::after {
-  border-bottom-color: #282823;
-}
-
-.c24 .c13 {
-  background: #282823;
-  padding: 12px;
-  border-top: none;
-  border-right: none;
-  border-left: none;
-  border-bottom: solid 4px #F5F5F5;
-}
-
-.c24 .c11::before {
-  border-left-color: #282823;
-}
-
-.c24 .c11::after {
-  border-left-color: #282823;
-}
-
-.c25 .c13 {
-  background: #282823;
-  padding: 12px;
-  border-top: none;
-  border-right: none;
-  border-left: none;
-  border-bottom: solid 4px #F5F5F5;
-}
-
-.c25 .c11::before {
-  border-top-color: #282823;
-}
-
-.c25 .c11::after {
-  border-top-color: #282823;
-}
-
-.c19 {
+.c18 {
   margin-left: 20px;
 }
 
@@ -1673,36 +1523,36 @@ Array [
         }
       >
         <span
-          className="c10 c11 "
+          className="c10"
         />
         <div
-          className="c12 c13 "
+          className="c11 c12 "
         >
           <span
-            className="c14"
+            className="c13"
           >
             <div
-              className="c15"
+              className="c14"
             >
               <div
-                className="c16"
+                className="c15"
               >
                 <span
-                  className="c17"
+                  className="c16"
                 >
                   Different Positions - Bottom
                 </span>
                 <button
-                  className="NormalizedButton__Button-ey7f5x-0 c18 c19"
+                  className="NormalizedButton__Button-ey7f5x-0 c17 c18"
                   onClick={[Function]}
                   type="button"
                 >
                   <span
-                    className="c20"
+                    className="c19"
                   >
                     <svg
                       aria-hidden="false"
-                      className="c21 "
+                      className="c20 "
                       focusable="false"
                       preserveAspectRatio="xMidYMid meet"
                       role="img"
@@ -1720,7 +1570,7 @@ Array [
                 </button>
               </div>
               <span
-                className="c22"
+                className="c21"
               >
                 This tooltip is positioned on the bottom
               </span>
@@ -1735,7 +1585,7 @@ Array [
   background-color: transparent;
 }
 
-.c15 {
+.c14 {
   background-color: transparent;
 }
 
@@ -1751,7 +1601,7 @@ Array [
   align-items: center;
 }
 
-.c16 {
+.c15 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -1769,7 +1619,7 @@ Array [
   cursor: pointer;
 }
 
-.c21 {
+.c20 {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -1801,7 +1651,7 @@ Array [
   line-height: 1.4285714285714286;
 }
 
-.c14 {
+.c13 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
   margin: 0;
@@ -1810,7 +1660,7 @@ Array [
   line-height: 1.3333333333333333;
 }
 
-.c17 {
+.c16 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #FFFFFF;
   margin: 0;
@@ -1819,7 +1669,7 @@ Array [
   line-height: 1.5;
 }
 
-.c20 {
+.c19 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: inherit;
   margin: 0;
@@ -1828,7 +1678,7 @@ Array [
   line-height: 1.4285714285714286;
 }
 
-.c22 {
+.c21 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #FFFFFF;
   margin: 0;
@@ -1837,7 +1687,7 @@ Array [
   line-height: 1.4285714285714286;
 }
 
-.c18 {
+.c17 {
   font-family: inherit;
   font-size: 100%;
   line-height: 1.15;
@@ -1866,25 +1716,25 @@ Array [
   cursor: pointer;
 }
 
-.c18,
-.c18[type='button'],
-.c18[type='reset'],
-.c18[type='submit'] {
+.c17,
+.c17[type='button'],
+.c17[type='reset'],
+.c17[type='submit'] {
   -webkit-appearance: button;
 }
 
-.c18::-moz-focus-inner,
-.c18[type='button']::-moz-focus-inner,
-.c18[type='reset']::-moz-focus-inner,
-.c18[type='submit']::-moz-focus-inner {
+.c17::-moz-focus-inner,
+.c17[type='button']::-moz-focus-inner,
+.c17[type='reset']::-moz-focus-inner,
+.c17[type='submit']::-moz-focus-inner {
   border-style: none;
   padding: 0;
 }
 
-.c18:-moz-focusring,
-.c18[type='button']:-moz-focusring,
-.c18[type='reset']:-moz-focusring,
-.c18[type='submit']:-moz-focusring {
+.c17:-moz-focusring,
+.c17[type='button']:-moz-focusring,
+.c17[type='reset']:-moz-focusring,
+.c17[type='submit']:-moz-focusring {
   outline: 1px dotted ButtonText;
 }
 
@@ -1984,11 +1834,11 @@ Array [
   top: 0;
 }
 
-.c12 {
+.c11 {
   padding: 4px 8px;
   box-shadow: 0 10px 16px rgba(0,0,0,0.16);
-  background: #FFFFFF;
-  border: solid 1px #BCBCB6;
+  background: #282823;
+  border: solid 1px transparent;
   max-width: 316px;
   overflow-wrap: break-word;
 }
@@ -2013,75 +1863,12 @@ Array [
   padding-left: 12px;
 }
 
-.c23 .c13 {
-  background: #282823;
+.c9 .c12 {
   padding: 12px;
-  border-top: none;
-  border-right: none;
-  border-left: none;
   border-bottom: solid 4px #F5F5F5;
 }
 
-.c23 .c11::before {
-  border-right-color: #282823;
-}
-
-.c23 .c11::after {
-  border-right-color: #282823;
-}
-
-.c24 .c13 {
-  background: #282823;
-  padding: 12px;
-  border-top: none;
-  border-right: none;
-  border-left: none;
-  border-bottom: solid 4px #F5F5F5;
-}
-
-.c24 .c11::before {
-  border-bottom-color: #282823;
-}
-
-.c24 .c11::after {
-  border-bottom-color: #282823;
-}
-
-.c9 .c13 {
-  background: #282823;
-  padding: 12px;
-  border-top: none;
-  border-right: none;
-  border-left: none;
-  border-bottom: solid 4px #F5F5F5;
-}
-
-.c9 .c11::before {
-  border-left-color: #282823;
-}
-
-.c9 .c11::after {
-  border-left-color: #282823;
-}
-
-.c25 .c13 {
-  background: #282823;
-  padding: 12px;
-  border-top: none;
-  border-right: none;
-  border-left: none;
-  border-bottom: solid 4px #F5F5F5;
-}
-
-.c25 .c11::before {
-  border-top-color: #282823;
-}
-
-.c25 .c11::after {
-  border-top-color: #282823;
-}
-
-.c19 {
+.c18 {
   margin-left: 20px;
 }
 
@@ -2131,36 +1918,36 @@ Array [
         }
       >
         <span
-          className="c10 c11 "
+          className="c10"
         />
         <div
-          className="c12 c13 "
+          className="c11 c12 "
         >
           <span
-            className="c14"
+            className="c13"
           >
             <div
-              className="c15"
+              className="c14"
             >
               <div
-                className="c16"
+                className="c15"
               >
                 <span
-                  className="c17"
+                  className="c16"
                 >
                   Different Positions - Left
                 </span>
                 <button
-                  className="NormalizedButton__Button-ey7f5x-0 c18 c19"
+                  className="NormalizedButton__Button-ey7f5x-0 c17 c18"
                   onClick={[Function]}
                   type="button"
                 >
                   <span
-                    className="c20"
+                    className="c19"
                   >
                     <svg
                       aria-hidden="false"
-                      className="c21 "
+                      className="c20 "
                       focusable="false"
                       preserveAspectRatio="xMidYMid meet"
                       role="img"
@@ -2178,7 +1965,7 @@ Array [
                 </button>
               </div>
               <span
-                className="c22"
+                className="c21"
               >
                 This tooltip is positioned on the left, as you can see it's still positioned on the right. This is because it's dynamically repositioned. It does not fit  on left side of target.
               </span>
@@ -2193,7 +1980,7 @@ Array [
   background-color: transparent;
 }
 
-.c15 {
+.c14 {
   background-color: transparent;
 }
 
@@ -2209,7 +1996,7 @@ Array [
   align-items: center;
 }
 
-.c16 {
+.c15 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -2227,7 +2014,7 @@ Array [
   cursor: pointer;
 }
 
-.c21 {
+.c20 {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -2259,7 +2046,7 @@ Array [
   line-height: 1.4285714285714286;
 }
 
-.c14 {
+.c13 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
   margin: 0;
@@ -2268,7 +2055,7 @@ Array [
   line-height: 1.3333333333333333;
 }
 
-.c17 {
+.c16 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #FFFFFF;
   margin: 0;
@@ -2277,7 +2064,7 @@ Array [
   line-height: 1.5;
 }
 
-.c20 {
+.c19 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: inherit;
   margin: 0;
@@ -2286,7 +2073,7 @@ Array [
   line-height: 1.4285714285714286;
 }
 
-.c22 {
+.c21 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #FFFFFF;
   margin: 0;
@@ -2295,7 +2082,7 @@ Array [
   line-height: 1.4285714285714286;
 }
 
-.c18 {
+.c17 {
   font-family: inherit;
   font-size: 100%;
   line-height: 1.15;
@@ -2324,25 +2111,25 @@ Array [
   cursor: pointer;
 }
 
-.c18,
-.c18[type='button'],
-.c18[type='reset'],
-.c18[type='submit'] {
+.c17,
+.c17[type='button'],
+.c17[type='reset'],
+.c17[type='submit'] {
   -webkit-appearance: button;
 }
 
-.c18::-moz-focus-inner,
-.c18[type='button']::-moz-focus-inner,
-.c18[type='reset']::-moz-focus-inner,
-.c18[type='submit']::-moz-focus-inner {
+.c17::-moz-focus-inner,
+.c17[type='button']::-moz-focus-inner,
+.c17[type='reset']::-moz-focus-inner,
+.c17[type='submit']::-moz-focus-inner {
   border-style: none;
   padding: 0;
 }
 
-.c18:-moz-focusring,
-.c18[type='button']:-moz-focusring,
-.c18[type='reset']:-moz-focusring,
-.c18[type='submit']:-moz-focusring {
+.c17:-moz-focusring,
+.c17[type='button']:-moz-focusring,
+.c17[type='reset']:-moz-focusring,
+.c17[type='submit']:-moz-focusring {
   outline: 1px dotted ButtonText;
 }
 
@@ -2442,11 +2229,11 @@ Array [
   top: 0;
 }
 
-.c12 {
+.c11 {
   padding: 4px 8px;
   box-shadow: 0 10px 16px rgba(0,0,0,0.16);
-  background: #FFFFFF;
-  border: solid 1px #BCBCB6;
+  background: #282823;
+  border: solid 1px transparent;
   overflow-wrap: break-word;
 }
 
@@ -2470,75 +2257,12 @@ Array [
   padding-left: 12px;
 }
 
-.c23 .c13 {
-  background: #282823;
+.c9 .c12 {
   padding: 12px;
-  border-top: none;
-  border-right: none;
-  border-left: none;
   border-bottom: solid 4px #F5F5F5;
 }
 
-.c23 .c11::before {
-  border-right-color: #282823;
-}
-
-.c23 .c11::after {
-  border-right-color: #282823;
-}
-
-.c24 .c13 {
-  background: #282823;
-  padding: 12px;
-  border-top: none;
-  border-right: none;
-  border-left: none;
-  border-bottom: solid 4px #F5F5F5;
-}
-
-.c24 .c11::before {
-  border-bottom-color: #282823;
-}
-
-.c24 .c11::after {
-  border-bottom-color: #282823;
-}
-
-.c25 .c13 {
-  background: #282823;
-  padding: 12px;
-  border-top: none;
-  border-right: none;
-  border-left: none;
-  border-bottom: solid 4px #F5F5F5;
-}
-
-.c25 .c11::before {
-  border-left-color: #282823;
-}
-
-.c25 .c11::after {
-  border-left-color: #282823;
-}
-
-.c9 .c13 {
-  background: #282823;
-  padding: 12px;
-  border-top: none;
-  border-right: none;
-  border-left: none;
-  border-bottom: solid 4px #F5F5F5;
-}
-
-.c9 .c11::before {
-  border-top-color: #282823;
-}
-
-.c9 .c11::after {
-  border-top-color: #282823;
-}
-
-.c19 {
+.c18 {
   margin-left: 20px;
 }
 
@@ -2588,36 +2312,36 @@ Array [
         }
       >
         <span
-          className="c10 c11 "
+          className="c10"
         />
         <div
-          className="c12 c13 "
+          className="c11 c12 "
         >
           <span
-            className="c14"
+            className="c13"
           >
             <div
-              className="c15"
+              className="c14"
             >
               <div
-                className="c16"
+                className="c15"
               >
                 <span
-                  className="c17"
+                  className="c16"
                 >
                   Different Positions - Top
                 </span>
                 <button
-                  className="NormalizedButton__Button-ey7f5x-0 c18 c19"
+                  className="NormalizedButton__Button-ey7f5x-0 c17 c18"
                   onClick={[Function]}
                   type="button"
                 >
                   <span
-                    className="c20"
+                    className="c19"
                   >
                     <svg
                       aria-hidden="false"
-                      className="c21 "
+                      className="c20 "
                       focusable="false"
                       preserveAspectRatio="xMidYMid meet"
                       role="img"
@@ -2635,7 +2359,7 @@ Array [
                 </button>
               </div>
               <span
-                className="c22"
+                className="c21"
               >
                 This tooltip is positioned on the top
               </span>
@@ -2803,11 +2527,11 @@ Array [
       </span>
     </label>
   </div>,
-  .c8 {
+  .c7 {
   background-color: transparent;
 }
 
-.c9 {
+.c8 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -2819,7 +2543,7 @@ Array [
   justify-content: space-between;
 }
 
-.c14 {
+.c13 {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -2833,7 +2557,7 @@ Array [
   display: block;
 }
 
-.c7 {
+.c6 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
   margin: 0;
@@ -2842,7 +2566,7 @@ Array [
   line-height: 1.3333333333333333;
 }
 
-.c10 {
+.c9 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
   margin: 0;
@@ -2851,7 +2575,7 @@ Array [
   line-height: 1.2;
 }
 
-.c13 {
+.c12 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: inherit;
   margin: 0;
@@ -2860,7 +2584,7 @@ Array [
   line-height: 1.4285714285714286;
 }
 
-.c16 {
+.c15 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
   margin: 0;
@@ -2869,7 +2593,7 @@ Array [
   line-height: 1.5;
 }
 
-.c11 {
+.c10 {
   font-family: inherit;
   font-size: 100%;
   line-height: 1.15;
@@ -2898,25 +2622,25 @@ Array [
   cursor: pointer;
 }
 
-.c11,
-.c11[type='button'],
-.c11[type='reset'],
-.c11[type='submit'] {
+.c10,
+.c10[type='button'],
+.c10[type='reset'],
+.c10[type='submit'] {
   -webkit-appearance: button;
 }
 
-.c11::-moz-focus-inner,
-.c11[type='button']::-moz-focus-inner,
-.c11[type='reset']::-moz-focus-inner,
-.c11[type='submit']::-moz-focus-inner {
+.c10::-moz-focus-inner,
+.c10[type='button']::-moz-focus-inner,
+.c10[type='reset']::-moz-focus-inner,
+.c10[type='submit']::-moz-focus-inner {
   border-style: none;
   padding: 0;
 }
 
-.c11:-moz-focusring,
-.c11[type='button']:-moz-focusring,
-.c11[type='reset']:-moz-focusring,
-.c11[type='submit']:-moz-focusring {
+.c10:-moz-focusring,
+.c10[type='button']:-moz-focusring,
+.c10[type='reset']:-moz-focusring,
+.c10[type='submit']:-moz-focusring {
   outline: 1px dotted ButtonText;
 }
 
@@ -2934,11 +2658,11 @@ Array [
   top: 0;
 }
 
-.c5 {
+.c4 {
   padding: 4px 8px;
   box-shadow: 0 10px 16px rgba(0,0,0,0.16);
-  background: #FFFFFF;
-  border: solid 1px #BCBCB6;
+  background: #FFCF00;
+  border: solid 1px #FF1900;
   max-width: 316px;
   overflow-wrap: break-word;
 }
@@ -2963,48 +2687,23 @@ Array [
   padding-left: 12px;
 }
 
-.c1 .c6 {
-  background: #282823;
+.c1 .c5 {
   padding: 12px;
-  border-top: none;
-  border-right: none;
-  border-left: none;
-  border-bottom: solid 4px #F5F5F5;
+  border-bottom: solid 4px #00D200;
 }
 
-.c1 .c4::before {
-  border-bottom-color: #282823;
-}
-
-.c1 .c4::after {
-  border-bottom-color: #282823;
-}
-
-.c12 {
+.c11 {
   margin-left: 20px;
 }
 
-.c2 .c6 {
-  background: #FFCF00;
-  border-bottom-color: #282823;
-}
-
-.c2 .c4:before {
-  border-bottom-color: #FFCF00;
-}
-
-.c2 .c4:after {
-  border-bottom-color: #FFCF00;
-}
-
-.c2 .c15 {
+.c2 .c14 {
   fill: #282823;
   width: 8px;
   height: 8px;
 }
 
 @media (min-width:760px) {
-  .c10 {
+  .c9 {
     font-size: 24px;
     line-height: 1.1666666666666667;
   }
@@ -3022,36 +2721,36 @@ Array [
       }
     >
       <span
-        className="c3 c4 "
+        className="c3"
       />
       <div
-        className="c5 c6 "
+        className="c4 c5 "
       >
         <span
-          className="c7"
+          className="c6"
         >
           <div
-            className="c8"
+            className="c7"
           >
             <div
-              className="c9"
+              className="c8"
             >
               <span
-                className="c10"
+                className="c9"
               >
                 I'm in a box
               </span>
               <button
-                className="NormalizedButton__Button-ey7f5x-0 c11 c12"
+                className="NormalizedButton__Button-ey7f5x-0 c10 c11"
                 onClick={[Function]}
                 type="button"
               >
                 <span
-                  className="c13"
+                  className="c12"
                 >
                   <svg
                     aria-hidden="false"
-                    className="c14 c15 "
+                    className="c13 c14 "
                     focusable="false"
                     preserveAspectRatio="xMidYMid meet"
                     role="img"
@@ -3069,7 +2768,7 @@ Array [
               </button>
             </div>
             <span
-              className="c16"
+              className="c15"
             >
               The max width is set with a prop for this tooltip. Also, it's subcomponents styled – different color, smaller close button.
             </span>
