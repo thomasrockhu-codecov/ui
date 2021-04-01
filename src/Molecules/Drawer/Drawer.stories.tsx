@@ -159,6 +159,32 @@ withNoTitle.story = {
   name: 'With no title',
 };
 
+export const withCloseButtonTitle = () => {
+  const Example = () => {
+    const [open, setOpen] = useState(true);
+
+    const toggle = () => {
+      setOpen(!open);
+    };
+
+    const onClose = () => {
+      setOpen(false);
+    };
+
+    return (
+      <>
+        <button type="button" onClick={toggle}>
+          Toggle drawer
+        </button>
+        <Drawer onClose={onClose} title="Drawer title" closeButtonTitle="Close" open={open}>
+          {contentLarge}
+        </Drawer>
+      </>
+    );
+  };
+  return <Example />;
+};
+
 export const integrationWithFadedScroll = () => {
   const Example = () => {
     const [open, setOpen] = useState(true);
