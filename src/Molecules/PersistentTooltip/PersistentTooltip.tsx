@@ -5,66 +5,16 @@ import { Box, Button, Flexbox, Icon, Typography } from '../..';
 import { TooltipPopup } from '../Tooltip/TooltipPopup';
 import { Props as PersistentTooltipProps } from './PersistentTooltip.types';
 
-const styledTooltipArrow = (position: PersistentTooltipProps['position'], color: string) => {
-  switch (position) {
-    case 'bottom':
-      return `
-        &::before {
-          border-bottom-color: ${color};
-        }
-
-        &::after {
-          border-bottom-color: ${color};
-        }
-      `;
-    case 'top':
-      return `
-        &::before {
-          border-top-color: ${color};
-        }
-
-        &::after {
-          border-top-color: ${color};
-        }
-      `;
-    case 'right':
-      return `
-        &::before {
-          border-right-color: ${color};
-        }
-
-        &::after {
-          border-right-color: ${color};
-        }
-      `;
-    case 'left':
-      return `
-        &::before {
-          border-left-color: ${color};
-        }
-
-        &::after {
-          border-left-color: ${color};
-        }
-      `;
-    default:
-      return '';
-  }
-};
-
-const StyledTooltipPopup = styled(TooltipPopup)`
+const StyledTooltipPopup = styled(TooltipPopup)<{
+  $calculatedPosition: PersistentTooltipProps['position'];
+  $borderBottomColor: NonNullable<PersistentTooltipProps['borderBottomColor']>;
+}>`
   ${TooltipPopup.components.TooltipContent} {
-    background: ${(p) => p.theme.color.backgroundDark};
     padding: ${(p) => p.theme.spacing.unit(3)}px;
-    border-top: none;
-    border-right: none;
-    border-left: none;
-    border-bottom: solid ${(p) => p.theme.spacing.unit(1)}px
-      ${(p) => p.theme.color.tooltipBorderLight};
-  }
-
-  ${TooltipPopup.components.TooltipArrow} {
-    ${(p) => styledTooltipArrow(p.position, p.theme.color.backgroundDark)}
+    ${(p) =>
+      p.$calculatedPosition !== 'top'
+        ? `border-bottom: solid ${p.theme.spacing.unit(1)}px ${p.$borderBottomColor(p.theme)};`
+        : ''}
   }
 `;
 
@@ -76,7 +26,6 @@ const StyledCrossIcon = styled(Icon.CrossMedium)``;
 
 const components = {
   TooltipContent: TooltipPopup.components.TooltipContent,
-  TooltipArrow: TooltipPopup.components.TooltipArrow,
   CloseButtonIcon: StyledCrossIcon,
 };
 
@@ -91,6 +40,10 @@ export const PersistentTooltip = (forwardRef<HTMLDivElement, PersistentTooltipPr
       description: descriptionProp,
       closeButtonTitle,
       maxWidth,
+      positionCallback: positionCallbackProp,
+      borderColor: borderColorProp,
+      borderBottomColor: borderBottomColorProp,
+      backgroundColor: backgroundColorProp,
       ...htmlDivProps
     },
     ref,
@@ -98,6 +51,17 @@ export const PersistentTooltip = (forwardRef<HTMLDivElement, PersistentTooltipPr
     const child = React.Children.only(children) as any;
     const [triggerElement, setTriggerElement] = useState(undefined);
     const triggerElementRef = useRef(null);
+
+    const [calculatedPosition, setCalculatedPosition] = useState<
+      NonNullable<PersistentTooltipProps['position']>
+    >();
+
+    const positionCallback = (finalPosition: NonNullable<PersistentTooltipProps['position']>) => {
+      if (positionCallbackProp) {
+        positionCallbackProp(finalPosition);
+      }
+      setCalculatedPosition(finalPosition);
+    };
 
     const title = isElement(titleProp) ? (
       titleProp
@@ -135,8 +99,17 @@ export const PersistentTooltip = (forwardRef<HTMLDivElement, PersistentTooltipPr
             ref={ref as any}
             label={label}
             position={position}
+            positionCallback={positionCallback}
             triggerElement={triggerElement}
             maxWidth={maxWidth}
+            backgroundColor={(t) => {
+              return backgroundColorProp ? backgroundColorProp(t) : t.color.backgroundDark;
+            }}
+            borderColor={(t) => (borderColorProp ? borderColorProp(t) : 'transparent')}
+            $borderBottomColor={(t) => {
+              return borderBottomColorProp ? borderBottomColorProp(t) : t.color.tooltipBorderLight;
+            }}
+            $calculatedPosition={calculatedPosition}
             {...htmlDivProps}
           />
         )}

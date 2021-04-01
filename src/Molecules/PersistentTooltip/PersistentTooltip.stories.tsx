@@ -46,18 +46,6 @@ export const CustomTitleAndDescription = () => {
 };
 
 const StyledPersistentTooltip = styled(PersistentTooltip)`
-  ${PersistentTooltip.components.TooltipContent} {
-    background: ${(p) => p.theme.color.warning};
-    border-bottom-color: ${(p) => p.theme.color.backgroundDark};
-  }
-  ${PersistentTooltip.components.TooltipArrow} {
-    &:before {
-      border-bottom-color: ${(p) => p.theme.color.warning};
-    }
-    &:after {
-      border-bottom-color: ${(p) => p.theme.color.warning};
-    }
-  }
   ${PersistentTooltip.components.CloseButtonIcon} {
     fill: ${(p) => p.theme.color.text};
     width: ${(p) => p.theme.spacing.unit(2)}px;
@@ -80,6 +68,9 @@ export const StyledSubcomponents = () => {
       }
       maxWidth={79}
       closeButtonTitle="Close by clicking X"
+      backgroundColor={(t) => t.color.warning}
+      borderColor={(t) => t.color.negative}
+      borderBottomColor={(t) => t.color.positive}
       onClose={() => setOpen(false)}
     >
       <Input.Text label="Label" />

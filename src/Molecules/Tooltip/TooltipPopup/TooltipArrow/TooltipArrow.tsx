@@ -3,13 +3,18 @@ import styled, { css } from 'styled-components';
 import { Props } from './TooltipArrow.types';
 import { BORDER_SIZE, TRIANGLE_SIZE } from '../../consts';
 
-const arrowTop = css`
+type ArrorProps = {
+  borderColor: Props['borderColor'];
+  backgroundColor: Props['backgroundColor'];
+};
+
+const arrowTop = css<ArrorProps>`
   top: 3px;
   margin-left: -${TRIANGLE_SIZE}px;
   &::before {
     border-left: ${TRIANGLE_SIZE}px solid transparent;
     border-right: ${TRIANGLE_SIZE}px solid transparent;
-    border-bottom: ${TRIANGLE_SIZE}px solid ${(p) => p.theme.color.bubbleBorder};
+    border-bottom: ${TRIANGLE_SIZE}px solid ${(p) => p.borderColor(p.theme)};
   }
 
   &::after {
@@ -17,18 +22,17 @@ const arrowTop = css`
     top: 2px;
     border-left: ${TRIANGLE_SIZE - BORDER_SIZE * 2}px solid transparent;
     border-right: ${TRIANGLE_SIZE - BORDER_SIZE * 2}px solid transparent;
-    border-bottom: ${TRIANGLE_SIZE - BORDER_SIZE * 2}px solid
-      ${(p) => p.theme.color.bubbleBackground};
+    border-bottom: ${TRIANGLE_SIZE - BORDER_SIZE * 2}px solid ${(p) => p.backgroundColor(p.theme)};
   }
 `;
 
-const arrowBottom = css`
+const arrowBottom = css<ArrorProps>`
   bottom: 13px;
   margin-left: -${TRIANGLE_SIZE}px;
   &::before {
     border-left: ${TRIANGLE_SIZE}px solid transparent;
     border-right: ${TRIANGLE_SIZE}px solid transparent;
-    border-top: ${TRIANGLE_SIZE}px solid ${(p) => p.theme.color.bubbleBorder};
+    border-top: ${TRIANGLE_SIZE}px solid ${(p) => p.borderColor(p.theme)};
   }
 
   &::after {
@@ -36,17 +40,17 @@ const arrowBottom = css`
     top: 0;
     border-left: ${TRIANGLE_SIZE - BORDER_SIZE * 2}px solid transparent;
     border-right: ${TRIANGLE_SIZE - BORDER_SIZE * 2}px solid transparent;
-    border-top: ${TRIANGLE_SIZE - BORDER_SIZE * 2}px solid ${(p) => p.theme.color.bubbleBackground};
+    border-top: ${TRIANGLE_SIZE - BORDER_SIZE * 2}px solid ${(p) => p.backgroundColor(p.theme)};
   }
 `;
 
-const arrowLeft = css`
+const arrowLeft = css<ArrorProps>`
   left: 3px;
   margin-top: -${TRIANGLE_SIZE}px;
   &::before {
     border-top: ${TRIANGLE_SIZE}px solid transparent;
     border-bottom: ${TRIANGLE_SIZE}px solid transparent;
-    border-right: ${TRIANGLE_SIZE}px solid ${(p) => p.theme.color.bubbleBorder};
+    border-right: ${TRIANGLE_SIZE}px solid ${(p) => p.borderColor(p.theme)};
   }
 
   &::after {
@@ -54,19 +58,18 @@ const arrowLeft = css`
     top: ${BORDER_SIZE * 2}px;
     border-top: ${TRIANGLE_SIZE - BORDER_SIZE * 2}px solid transparent;
     border-bottom: ${TRIANGLE_SIZE - BORDER_SIZE * 2}px solid transparent;
-    border-right: ${TRIANGLE_SIZE - BORDER_SIZE * 2}px solid
-      ${(p) => p.theme.color.bubbleBackground};
+    border-right: ${TRIANGLE_SIZE - BORDER_SIZE * 2}px solid ${(p) => p.backgroundColor(p.theme)};
   }
 `;
 
-const arrowRight = css`
+const arrowRight = css<ArrorProps>`
   left: auto;
   right: 13px;
   margin-top: -${TRIANGLE_SIZE}px;
   &::before {
     border-top: ${TRIANGLE_SIZE}px solid transparent;
     border-bottom: ${TRIANGLE_SIZE}px solid transparent;
-    border-left: ${TRIANGLE_SIZE}px solid ${(p) => p.theme.color.bubbleBorder};
+    border-left: ${TRIANGLE_SIZE}px solid ${(p) => p.borderColor(p.theme)};
   }
 
   &::after {
@@ -74,7 +77,7 @@ const arrowRight = css`
     top: ${BORDER_SIZE * 2}px;
     border-top: ${TRIANGLE_SIZE - BORDER_SIZE * 2}px solid transparent;
     border-bottom: ${TRIANGLE_SIZE - BORDER_SIZE * 2}px solid transparent;
-    border-left: ${TRIANGLE_SIZE - BORDER_SIZE * 2}px solid ${(p) => p.theme.color.bubbleBackground};
+    border-left: ${TRIANGLE_SIZE - BORDER_SIZE * 2}px solid ${(p) => p.backgroundColor(p.theme)};
   }
 `;
 
@@ -103,8 +106,17 @@ const StyledArrow = styled.span<Props>`
 type PropsWithoutRef = Omit<Props, 'ref'>;
 
 const TooltipArrow = forwardRef<HTMLSpanElement, PropsWithoutRef>(
-  ({ position, style, ...htmlSpanProps }, ref) => {
-    return <StyledArrow ref={ref as any} position={position} style={style} {...htmlSpanProps} />;
+  ({ position, style, backgroundColor, borderColor, ...htmlSpanProps }, ref) => {
+    return (
+      <StyledArrow
+        ref={ref as any}
+        position={position}
+        style={style}
+        backgroundColor={backgroundColor}
+        borderColor={borderColor}
+        {...htmlSpanProps}
+      />
+    );
   },
 );
 

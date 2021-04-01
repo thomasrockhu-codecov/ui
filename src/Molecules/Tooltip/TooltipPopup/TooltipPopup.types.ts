@@ -1,16 +1,17 @@
+import { ColorFn } from 'common/Types';
+import React from 'react';
 import { Props as TooltipProps } from '../Tooltip.types';
 
-export type StyledTooltipPopupProps = {
-  id: string;
-  inModal: TooltipProps['inModal'];
-  maxWidth: number;
-  $pointerEvents?: boolean;
-};
-
 export type Props = {
+  ref?: React.RefObject<any>;
   label: React.ReactNode;
   position: TooltipProps['position'];
+  positionCallback?: (calulatedPostion: NonNullable<TooltipProps['position']>) => void;
   triggerElement?: Element;
   ariaLabel?: string;
-  ref?: React.RefObject<any>;
-} & StyledTooltipPopupProps;
+  backgroundColor?: ColorFn;
+  borderColor?: ColorFn;
+  inModal?: TooltipProps['inModal'];
+  maxWidth?: number;
+  pointerEvents?: boolean;
+};
