@@ -1,3 +1,10 @@
+## [6.2.2](https://github.com/nordnet/ui/compare/v6.2.1...v6.2.2) (2021-04-06)
+
+
+### Bug Fixes
+
+* 🐛 remove hardcoded title and add prop for it instead ([6c1a725](https://github.com/nordnet/ui/commit/6c1a725))
+
 ## [6.2.1](https://github.com/nordnet/ui/compare/v6.2.0...v6.2.1) (2021-03-31)
 
 
