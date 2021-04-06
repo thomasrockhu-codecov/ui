@@ -129,6 +129,7 @@ export const Drawer = (React.forwardRef<HTMLDivElement, Props>(
       onClose,
       open: isOpenExternal,
       title,
+      closeButtonTitle,
       onExitAnimationComplete,
       onAnimationComplete,
       disableInitialAnimation,
@@ -223,7 +224,7 @@ export const Drawer = (React.forwardRef<HTMLDivElement, Props>(
                   <TitleWrapper onTouchStart={startDrag}>
                     {title && <Title title={title} uid={uid} />}
                     <CloseButton type="button" variant="neutral" onClick={handleClose}>
-                      <Icon.CrossMedium size={4} title="Close this drawer" />
+                      <Icon.CrossMedium size={4} title={closeButtonTitle} />
                     </CloseButton>
                   </TitleWrapper>
                   {disableContentStyle ? children : <Content>{children}</Content>}
