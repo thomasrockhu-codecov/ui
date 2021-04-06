@@ -18,7 +18,40 @@ export const DefaultStory = () => {
       description="The tooltip will not close until the user clicks the close-button – useful for pointing the user's attention somewhere (for instance when showcasing new features)."
       closeButtonTitle="Close by clicking X"
       onClose={() => setOpen(false)}
-      maxWidth={120}
+    >
+      <Input.Text label="Label" />
+    </PersistentTooltip>
+  );
+};
+
+export const WithMaxWidth = () => {
+  const [open, setOpen] = useState(true);
+
+  return (
+    <PersistentTooltip
+      open={open}
+      title="This is persistent tooltip"
+      description="The tooltip will not close until the user clicks the close-button – useful for pointing the user's attention somewhere (for instance when showcasing new features)."
+      closeButtonTitle="Close by clicking X"
+      onClose={() => setOpen(false)}
+      maxWidth={30}
+    >
+      <Input.Text label="Label" />
+    </PersistentTooltip>
+  );
+};
+
+export const WithMaxWidthAuto = () => {
+  const [open, setOpen] = useState(true);
+
+  return (
+    <PersistentTooltip
+      open={open}
+      title="This is persistent tooltip"
+      description="The tooltip will not close until the user clicks the close-button – useful for pointing the user's attention somewhere (for instance when showcasing new features)."
+      closeButtonTitle="Close by clicking X"
+      onClose={() => setOpen(false)}
+      maxWidth="auto"
     >
       <Input.Text label="Label" />
     </PersistentTooltip>
@@ -66,7 +99,6 @@ export const StyledSubcomponents = () => {
           different color, smaller close button.
         </Typography>
       }
-      maxWidth={79}
       closeButtonTitle="Close by clicking X"
       backgroundColor={(t) => t.color.warning}
       borderColor={(t) => t.color.negative}
@@ -116,7 +148,6 @@ export const DifferentPositions = () => {
           description="This tooltip is positioned on the left, as you can see it's still positioned on the right. This is because it's dynamically repositioned. It does not fit  on left side of target."
           closeButtonTitle="Close by clicking X"
           position="left"
-          maxWidth={79}
           onClose={() => setOpenThree(false)}
         >
           <Input.Text label="Label" />

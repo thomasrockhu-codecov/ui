@@ -297,6 +297,7 @@ Array [
   box-shadow: 0 10px 16px rgba(0,0,0,0.16);
   background: #282823;
   border: solid 1px transparent;
+  max-width: 316px;
   overflow-wrap: break-word;
 }
 
@@ -699,7 +700,7 @@ Array [
   box-shadow: 0 10px 16px rgba(0,0,0,0.16);
   background: #282823;
   border: solid 1px transparent;
-  max-width: 480px;
+  max-width: 316px;
   overflow-wrap: break-word;
 }
 
@@ -1072,6 +1073,7 @@ Array [
   box-shadow: 0 10px 16px rgba(0,0,0,0.16);
   background: #282823;
   border: solid 1px transparent;
+  max-width: 316px;
   overflow-wrap: break-word;
 }
 
@@ -1474,6 +1476,7 @@ Array [
   box-shadow: 0 10px 16px rgba(0,0,0,0.16);
   background: #282823;
   border: solid 1px transparent;
+  max-width: 316px;
   overflow-wrap: break-word;
 }
 
@@ -2279,6 +2282,7 @@ Array [
   box-shadow: 0 10px 16px rgba(0,0,0,0.16);
   background: #282823;
   border: solid 1px transparent;
+  max-width: 316px;
   overflow-wrap: break-word;
 }
 
@@ -2819,6 +2823,803 @@ Array [
             >
               The max width is set with a prop for this tooltip. Also, it's subcomponents styled – different color, smaller close button.
             </span>
+          </div>
+        </span>
+      </div>
+    </span>
+  </portal-dummy>,
+]
+`;
+
+exports[`Storyshots Molecules / Persistent Tooltip With Max Width 1`] = `
+Array [
+  .c3 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c1 {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.c2 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #6E6E69;
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c4 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c6 {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  overflow: visible;
+  border: 0;
+  width: 100%;
+  padding: 8px;
+  margin: 0;
+  line-height: inherit;
+  box-sizing: border-box;
+  height: 40px;
+  border: solid;
+  border-color: #BCBCB6;
+  border-width: 1px;
+  position: relative;
+  background-color: #FFFFFF;
+}
+
+.c6:focus {
+  border-width: 1px;
+}
+
+.c6:hover {
+  border-color: #4B4B46;
+}
+
+.c6:focus {
+  border-color: #0046FF;
+}
+
+.c6::-webkit-input-placeholder {
+  color: #6E6E69;
+  line-height: inherit;
+  opacity: 1;
+}
+
+.c6::-moz-placeholder {
+  color: #6E6E69;
+  line-height: inherit;
+  opacity: 1;
+}
+
+.c6:-ms-input-placeholder {
+  color: #6E6E69;
+  line-height: inherit;
+  opacity: 1;
+}
+
+.c6::placeholder {
+  color: #6E6E69;
+  line-height: inherit;
+  opacity: 1;
+}
+
+.c6:disabled::-webkit-input-placeholder {
+  color: #A0A09B;
+}
+
+.c6:disabled::-moz-placeholder {
+  color: #A0A09B;
+}
+
+.c6:disabled:-ms-input-placeholder {
+  color: #A0A09B;
+}
+
+.c6:disabled::placeholder {
+  color: #A0A09B;
+}
+
+.c5 {
+  position: relative;
+  padding: 0px 0;
+}
+
+.c0 {
+  width: 200px;
+  display: inline-block;
+}
+
+<div
+    className="c0"
+  >
+    <label
+      className="c1"
+      hidden={false}
+    >
+      <span
+        className="c2"
+      >
+        <div
+          className="c3"
+        >
+          Label 
+        </div>
+        <span
+          className="c4"
+        >
+          <div
+            className="c5"
+          >
+            <input
+              className="NormalizedInput__Input-sc-1m4kmh9-0 c6"
+              type="text"
+              variant="normal"
+            />
+          </div>
+        </span>
+      </span>
+    </label>
+  </div>,
+  .c6 {
+  background-color: transparent;
+}
+
+.c13 {
+  margin-top: 4px;
+  background-color: transparent;
+}
+
+.c7 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.c12 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 16px;
+  height: 16px;
+  fill: #FFFFFF;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
+}
+
+.c5 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.3333333333333333;
+}
+
+.c8 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #FFFFFF;
+  margin: 0;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.c11 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: inherit;
+  margin: 0;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c14 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #FFFFFF;
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c9 {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  overflow: visible;
+  text-transform: none;
+  position: relative;
+  box-sizing: border-box;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  padding: 0;
+  background-color: transparent;
+  color: #282823;
+  border: none;
+  border-radius: 0;
+  cursor: pointer;
+}
+
+.c9,
+.c9[type='button'],
+.c9[type='reset'],
+.c9[type='submit'] {
+  -webkit-appearance: button;
+}
+
+.c9::-moz-focus-inner,
+.c9[type='button']::-moz-focus-inner,
+.c9[type='reset']::-moz-focus-inner,
+.c9[type='submit']::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+.c9:-moz-focusring,
+.c9[type='button']:-moz-focusring,
+.c9[type='reset']:-moz-focusring,
+.c9[type='submit']:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+.c2::before,
+.c2::after {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 0;
+  height: 0;
+}
+
+.c2::before {
+  left: 0;
+  top: 0;
+}
+
+.c3 {
+  padding: 4px 8px;
+  box-shadow: 0 10px 16px rgba(0,0,0,0.16);
+  background: #282823;
+  border: solid 1px transparent;
+  max-width: 120px;
+  overflow-wrap: break-word;
+}
+
+.c0 {
+  z-index: 400;
+}
+
+.c0[data-popper-placement^='top'] {
+  padding-bottom: 12px;
+}
+
+.c0[data-popper-placement^='bottom'] {
+  padding-top: 12px;
+}
+
+.c0[data-popper-placement^='left'] {
+  padding-right: 12px;
+}
+
+.c0[data-popper-placement^='right'] {
+  padding-left: 12px;
+}
+
+.c1 .c4 {
+  padding: 12px;
+}
+
+.c10 {
+  margin-left: 20px;
+}
+
+<portal-dummy>
+    <span
+      className="c0 c1"
+      style={
+        Object {
+          "left": "0",
+          "position": "absolute",
+          "top": "0",
+        }
+      }
+    >
+      <span
+        className="c2"
+      />
+      <div
+        className="c3 c4 "
+      >
+        <span
+          className="c5"
+        >
+          <div
+            className="c6"
+          >
+            <div
+              className="c7"
+            >
+              <span
+                className="c8"
+              >
+                This is persistent tooltip
+              </span>
+              <button
+                className="NormalizedButton__Button-ey7f5x-0 c9 c10"
+                onClick={[Function]}
+                type="button"
+              >
+                <span
+                  className="c11"
+                >
+                  <svg
+                    aria-hidden="false"
+                    className="c12 "
+                    focusable="false"
+                    preserveAspectRatio="xMidYMid meet"
+                    role="img"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M6.857 8L0 1.143 1.143 0 8 6.857 14.857 0 16 1.143 9.143 8 16 14.857 14.857 16 8 9.143 1.143 16 0 14.857z"
+                      fillRule="evenodd"
+                    />
+                    <title>
+                      Close by clicking X
+                    </title>
+                  </svg>
+                </span>
+              </button>
+            </div>
+            <div
+              className="c13"
+            >
+              <span
+                className="c14"
+              >
+                The tooltip will not close until the user clicks the close-button – useful for pointing the user's attention somewhere (for instance when showcasing new features).
+              </span>
+            </div>
+          </div>
+        </span>
+      </div>
+    </span>
+  </portal-dummy>,
+]
+`;
+
+exports[`Storyshots Molecules / Persistent Tooltip With Max Width Auto 1`] = `
+Array [
+  .c3 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c1 {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.c2 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #6E6E69;
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c4 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c6 {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  overflow: visible;
+  border: 0;
+  width: 100%;
+  padding: 8px;
+  margin: 0;
+  line-height: inherit;
+  box-sizing: border-box;
+  height: 40px;
+  border: solid;
+  border-color: #BCBCB6;
+  border-width: 1px;
+  position: relative;
+  background-color: #FFFFFF;
+}
+
+.c6:focus {
+  border-width: 1px;
+}
+
+.c6:hover {
+  border-color: #4B4B46;
+}
+
+.c6:focus {
+  border-color: #0046FF;
+}
+
+.c6::-webkit-input-placeholder {
+  color: #6E6E69;
+  line-height: inherit;
+  opacity: 1;
+}
+
+.c6::-moz-placeholder {
+  color: #6E6E69;
+  line-height: inherit;
+  opacity: 1;
+}
+
+.c6:-ms-input-placeholder {
+  color: #6E6E69;
+  line-height: inherit;
+  opacity: 1;
+}
+
+.c6::placeholder {
+  color: #6E6E69;
+  line-height: inherit;
+  opacity: 1;
+}
+
+.c6:disabled::-webkit-input-placeholder {
+  color: #A0A09B;
+}
+
+.c6:disabled::-moz-placeholder {
+  color: #A0A09B;
+}
+
+.c6:disabled:-ms-input-placeholder {
+  color: #A0A09B;
+}
+
+.c6:disabled::placeholder {
+  color: #A0A09B;
+}
+
+.c5 {
+  position: relative;
+  padding: 0px 0;
+}
+
+.c0 {
+  width: 200px;
+  display: inline-block;
+}
+
+<div
+    className="c0"
+  >
+    <label
+      className="c1"
+      hidden={false}
+    >
+      <span
+        className="c2"
+      >
+        <div
+          className="c3"
+        >
+          Label 
+        </div>
+        <span
+          className="c4"
+        >
+          <div
+            className="c5"
+          >
+            <input
+              className="NormalizedInput__Input-sc-1m4kmh9-0 c6"
+              type="text"
+              variant="normal"
+            />
+          </div>
+        </span>
+      </span>
+    </label>
+  </div>,
+  .c6 {
+  background-color: transparent;
+}
+
+.c13 {
+  margin-top: 4px;
+  background-color: transparent;
+}
+
+.c7 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.c12 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 16px;
+  height: 16px;
+  fill: #FFFFFF;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
+}
+
+.c5 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.3333333333333333;
+}
+
+.c8 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #FFFFFF;
+  margin: 0;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.c11 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: inherit;
+  margin: 0;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c14 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #FFFFFF;
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c9 {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  overflow: visible;
+  text-transform: none;
+  position: relative;
+  box-sizing: border-box;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  padding: 0;
+  background-color: transparent;
+  color: #282823;
+  border: none;
+  border-radius: 0;
+  cursor: pointer;
+}
+
+.c9,
+.c9[type='button'],
+.c9[type='reset'],
+.c9[type='submit'] {
+  -webkit-appearance: button;
+}
+
+.c9::-moz-focus-inner,
+.c9[type='button']::-moz-focus-inner,
+.c9[type='reset']::-moz-focus-inner,
+.c9[type='submit']::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+.c9:-moz-focusring,
+.c9[type='button']:-moz-focusring,
+.c9[type='reset']:-moz-focusring,
+.c9[type='submit']:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+.c2::before,
+.c2::after {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 0;
+  height: 0;
+}
+
+.c2::before {
+  left: 0;
+  top: 0;
+}
+
+.c3 {
+  padding: 4px 8px;
+  box-shadow: 0 10px 16px rgba(0,0,0,0.16);
+  background: #282823;
+  border: solid 1px transparent;
+  overflow-wrap: break-word;
+}
+
+.c0 {
+  z-index: 400;
+}
+
+.c0[data-popper-placement^='top'] {
+  padding-bottom: 12px;
+}
+
+.c0[data-popper-placement^='bottom'] {
+  padding-top: 12px;
+}
+
+.c0[data-popper-placement^='left'] {
+  padding-right: 12px;
+}
+
+.c0[data-popper-placement^='right'] {
+  padding-left: 12px;
+}
+
+.c1 .c4 {
+  padding: 12px;
+}
+
+.c10 {
+  margin-left: 20px;
+}
+
+<portal-dummy>
+    <span
+      className="c0 c1"
+      style={
+        Object {
+          "left": "0",
+          "position": "absolute",
+          "top": "0",
+        }
+      }
+    >
+      <span
+        className="c2"
+      />
+      <div
+        className="c3 c4 "
+      >
+        <span
+          className="c5"
+        >
+          <div
+            className="c6"
+          >
+            <div
+              className="c7"
+            >
+              <span
+                className="c8"
+              >
+                This is persistent tooltip
+              </span>
+              <button
+                className="NormalizedButton__Button-ey7f5x-0 c9 c10"
+                onClick={[Function]}
+                type="button"
+              >
+                <span
+                  className="c11"
+                >
+                  <svg
+                    aria-hidden="false"
+                    className="c12 "
+                    focusable="false"
+                    preserveAspectRatio="xMidYMid meet"
+                    role="img"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M6.857 8L0 1.143 1.143 0 8 6.857 14.857 0 16 1.143 9.143 8 16 14.857 14.857 16 8 9.143 1.143 16 0 14.857z"
+                      fillRule="evenodd"
+                    />
+                    <title>
+                      Close by clicking X
+                    </title>
+                  </svg>
+                </span>
+              </button>
+            </div>
+            <div
+              className="c13"
+            >
+              <span
+                className="c14"
+              >
+                The tooltip will not close until the user clicks the close-button – useful for pointing the user's attention somewhere (for instance when showcasing new features).
+              </span>
+            </div>
           </div>
         </span>
       </div>

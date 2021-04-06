@@ -12,5 +12,5 @@ export type Props = {
   title: React.ReactNode;
   description: React.ReactNode;
   closeButtonTitle: string;
-  maxWidth?: number;
+  maxWidth?: number | 'auto';
 };

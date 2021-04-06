@@ -34,7 +34,7 @@ export const PersistentTooltip = (forwardRef<HTMLDivElement, PersistentTooltipPr
       title: titleProp,
       description: descriptionProp,
       closeButtonTitle,
-      maxWidth,
+      maxWidth = 79,
       positionCallback: positionCallbackProp,
       borderColor: borderColorProp,
       backgroundColor: backgroundColorProp,
@@ -97,7 +97,7 @@ export const PersistentTooltip = (forwardRef<HTMLDivElement, PersistentTooltipPr
             position={position}
             positionCallback={positionCallback}
             triggerElement={triggerElement}
-            maxWidth={maxWidth}
+            maxWidth={maxWidth === 'auto' ? undefined : maxWidth} // Let TooltipPopup handle default maxWidth if auto.
             backgroundColor={(t) => {
               return backgroundColorProp ? backgroundColorProp(t) : t.color.backgroundDark;
             }}
