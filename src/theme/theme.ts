@@ -225,7 +225,6 @@ const createColors = (type: ThemeColorsVersion): ThemeColors<typeof type> => {
     dateAvatarBackground2: rawColor.gray7,
     dateAvatarText1: rawColor.gray2,
     dateAvatarText2: rawColor.gray0,
-    tooltipBorderLight: rawColor.gray7,
     transferPendingIconColor: a11yColors ? rawColor.a11yIndex : rawColor.index,
     timelineActive: a11yColors ? rawColor.a11yCta : rawColor.cta,
     timelineSuccess: a11yColors ? rawColor.a11yPositive : rawColor.positive,

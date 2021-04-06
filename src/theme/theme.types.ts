@@ -267,8 +267,6 @@ export type ThemeColors<Version extends ThemeColorsVersion> = {
   dateAvatarText1: RawColor['gray2'];
   /** gray0 */
   dateAvatarText2: RawColor['gray0'];
-  /** gray7 */
-  tooltipBorderLight: RawColor['gray7'];
   /** index */
   transferPendingIconColor: ChangeableColor<RawColor['index'], RawColor['a11yIndex'], Version>;
   /** cta */
