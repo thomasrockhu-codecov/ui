@@ -48,7 +48,7 @@ const getWidthForList = (
   truncatedItemWidth: number,
   numberOfPages: number,
 ) => {
-  const MAX_NUMBER_ITEMS = 7;
+  const MAX_NUMBER_ITEMS = 9;
   const NUMBER_OF_CHEVRONS = 2;
 
   if (numberOfPages <= 5) {
@@ -115,9 +115,15 @@ const Large: React.FC<PaginationDefaultProps> = ({
   currentPageLabel,
   pageItemLabel,
 }) => {
+  if (numberOfPages <= 1) {
+    return null;
+  }
+
   return (
     <Flexbox container>
-      <ChevronButton direction="left" onClick={onClickPrevious} label={previousPageLabel} />
+      {currentPage !== 1 && (
+        <ChevronButton direction="left" onClick={onClickPrevious} label={previousPageLabel} />
+      )}
       <StyledList $numberOfPages={numberOfPages}>
         <PageItems
           currentPage={currentPage}
@@ -129,7 +135,9 @@ const Large: React.FC<PaginationDefaultProps> = ({
           pageItemLabel={pageItemLabel}
         />
       </StyledList>
-      <ChevronButton direction="right" onClick={onClickNext} label={nextPageLabel} />
+      {currentPage !== numberOfPages && (
+        <ChevronButton direction="right" onClick={onClickNext} label={nextPageLabel} />
+      )}
     </Flexbox>
   );
 };

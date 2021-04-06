@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { Button, Flexbox, Icon } from '../../../index';
+import { Box, Button, Flexbox, Icon } from '../../../index';
 import { BrowseButtonProps, PaginationCompactProps } from '../Pagination.types';
 
 const StyledButton = styled(Button)<{ $direction: 'left' | 'right' }>`
@@ -23,6 +23,8 @@ const ChevronButton: React.FC<BrowseButtonProps> = ({ direction, onClick, label 
 );
 
 const Compact: React.FC<PaginationCompactProps> = ({
+  currentPage,
+  numberOfPages,
   onClickPrevious,
   onClickNext,
   previousPageLabel,
@@ -30,8 +32,14 @@ const Compact: React.FC<PaginationCompactProps> = ({
 }) => {
   return (
     <Flexbox container gutter={1}>
-      <ChevronButton direction="left" onClick={onClickPrevious} label={previousPageLabel} />
-      <ChevronButton direction="right" onClick={onClickNext} label={nextPageLabel} />
+      {currentPage !== 1 && (
+        <ChevronButton direction="left" onClick={onClickPrevious} label={previousPageLabel} />
+      )}
+      {currentPage !== numberOfPages && (
+        <Box ml={currentPage <= 1 ? 9 : 0}>
+          <ChevronButton direction="right" onClick={onClickNext} label={nextPageLabel} />
+        </Box>
+      )}
     </Flexbox>
   );
 };
