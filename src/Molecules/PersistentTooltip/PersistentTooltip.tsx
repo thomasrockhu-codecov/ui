@@ -7,14 +7,9 @@ import { Props as PersistentTooltipProps } from './PersistentTooltip.types';
 
 const StyledTooltipPopup = styled(TooltipPopup)<{
   $calculatedPosition: PersistentTooltipProps['position'];
-  $borderBottomColor: NonNullable<PersistentTooltipProps['borderBottomColor']>;
 }>`
   ${TooltipPopup.components.TooltipContent} {
     padding: ${(p) => p.theme.spacing.unit(3)}px;
-    ${(p) =>
-      p.$calculatedPosition !== 'top'
-        ? `border-bottom: solid ${p.theme.spacing.unit(1)}px ${p.$borderBottomColor(p.theme)};`
-        : ''}
   }
 `;
 
@@ -42,7 +37,6 @@ export const PersistentTooltip = (forwardRef<HTMLDivElement, PersistentTooltipPr
       maxWidth,
       positionCallback: positionCallbackProp,
       borderColor: borderColorProp,
-      borderBottomColor: borderBottomColorProp,
       backgroundColor: backgroundColorProp,
       ...htmlDivProps
     },
@@ -74,9 +68,11 @@ export const PersistentTooltip = (forwardRef<HTMLDivElement, PersistentTooltipPr
     const description = isElement(descriptionProp) ? (
       descriptionProp
     ) : (
-      <Typography type="secondary" color={(t) => t.color.textLight}>
-        {descriptionProp}
-      </Typography>
+      <Box mt={1}>
+        <Typography type="secondary" color={(t) => t.color.textLight}>
+          {descriptionProp}
+        </Typography>
+      </Box>
     );
 
     const label = (
@@ -106,9 +102,6 @@ export const PersistentTooltip = (forwardRef<HTMLDivElement, PersistentTooltipPr
               return backgroundColorProp ? backgroundColorProp(t) : t.color.backgroundDark;
             }}
             borderColor={(t) => (borderColorProp ? borderColorProp(t) : 'transparent')}
-            $borderBottomColor={(t) => {
-              return borderBottomColorProp ? borderBottomColorProp(t) : t.color.tooltipBorderLight;
-            }}
             $calculatedPosition={calculatedPosition}
             {...htmlDivProps}
           />

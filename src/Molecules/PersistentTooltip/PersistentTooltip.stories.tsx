@@ -70,7 +70,6 @@ export const StyledSubcomponents = () => {
       closeButtonTitle="Close by clicking X"
       backgroundColor={(t) => t.color.warning}
       borderColor={(t) => t.color.negative}
-      borderBottomColor={(t) => t.color.positive}
       onClose={() => setOpen(false)}
     >
       <Input.Text label="Label" />

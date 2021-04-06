@@ -160,6 +160,11 @@ Array [
   background-color: transparent;
 }
 
+.c14 {
+  margin-top: 4px;
+  background-color: transparent;
+}
+
 .c7 {
   box-sizing: border-box;
   display: -webkit-box;
@@ -213,7 +218,7 @@ Array [
   line-height: 1.4285714285714286;
 }
 
-.c14 {
+.c15 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #FFFFFF;
   margin: 0;
@@ -317,7 +322,6 @@ Array [
 
 .c1 .c4 {
   padding: 12px;
-  border-bottom: solid 4px #F5F5F5;
 }
 
 .c11 {
@@ -386,11 +390,15 @@ Array [
                 </span>
               </button>
             </div>
-            <span
+            <div
               className="c14"
             >
-              The max width is not set with a prop for this tooltip. This is the description that is quite long and stuff. Just showing how the tooltip will look if description is really long. I mean really really long.
-            </span>
+              <span
+                className="c15"
+              >
+                The max width is not set with a prop for this tooltip. This is the description that is quite long and stuff. Just showing how the tooltip will look if description is really long. I mean really really long.
+              </span>
+            </div>
           </div>
         </span>
       </div>
@@ -554,6 +562,11 @@ Array [
   background-color: transparent;
 }
 
+.c13 {
+  margin-top: 4px;
+  background-color: transparent;
+}
+
 .c7 {
   box-sizing: border-box;
   display: -webkit-box;
@@ -607,7 +620,7 @@ Array [
   line-height: 1.4285714285714286;
 }
 
-.c13 {
+.c14 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #FFFFFF;
   margin: 0;
@@ -712,7 +725,6 @@ Array [
 
 .c1 .c4 {
   padding: 12px;
-  border-bottom: solid 4px #F5F5F5;
 }
 
 .c10 {
@@ -777,11 +789,15 @@ Array [
                 </span>
               </button>
             </div>
-            <span
+            <div
               className="c13"
             >
-              The tooltip will not close until the user clicks the close-button – useful for pointing the user's attention somewhere (for instance when showcasing new features).
-            </span>
+              <span
+                className="c14"
+              >
+                The tooltip will not close until the user clicks the close-button – useful for pointing the user's attention somewhere (for instance when showcasing new features).
+              </span>
+            </div>
           </div>
         </span>
       </div>
@@ -798,6 +814,11 @@ Array [
 }
 
 .c14 {
+  background-color: transparent;
+}
+
+.c21 {
+  margin-top: 4px;
   background-color: transparent;
 }
 
@@ -890,7 +911,7 @@ Array [
   line-height: 1.4285714285714286;
 }
 
-.c21 {
+.c22 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #FFFFFF;
   margin: 0;
@@ -1076,7 +1097,6 @@ Array [
 
 .c9 .c12 {
   padding: 12px;
-  border-bottom: solid 4px #F5F5F5;
 }
 
 .c18 {
@@ -1175,11 +1195,15 @@ Array [
                   </span>
                 </button>
               </div>
-              <span
+              <div
                 className="c21"
               >
-                This tooltip is positioned on the right
-              </span>
+                <span
+                  className="c22"
+                >
+                  This tooltip is positioned on the right
+                </span>
+              </div>
             </div>
           </span>
         </div>
@@ -1192,6 +1216,11 @@ Array [
 }
 
 .c14 {
+  background-color: transparent;
+}
+
+.c21 {
+  margin-top: 4px;
   background-color: transparent;
 }
 
@@ -1284,7 +1313,7 @@ Array [
   line-height: 1.4285714285714286;
 }
 
-.c21 {
+.c22 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #FFFFFF;
   margin: 0;
@@ -1470,7 +1499,6 @@ Array [
 
 .c9 .c12 {
   padding: 12px;
-  border-bottom: solid 4px #F5F5F5;
 }
 
 .c18 {
@@ -1569,11 +1597,15 @@ Array [
                   </span>
                 </button>
               </div>
-              <span
+              <div
                 className="c21"
               >
-                This tooltip is positioned on the bottom
-              </span>
+                <span
+                  className="c22"
+                >
+                  This tooltip is positioned on the bottom
+                </span>
+              </div>
             </div>
           </span>
         </div>
@@ -1586,6 +1618,11 @@ Array [
 }
 
 .c14 {
+  background-color: transparent;
+}
+
+.c21 {
+  margin-top: 4px;
   background-color: transparent;
 }
 
@@ -1678,7 +1715,7 @@ Array [
   line-height: 1.4285714285714286;
 }
 
-.c21 {
+.c22 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #FFFFFF;
   margin: 0;
@@ -1865,7 +1902,6 @@ Array [
 
 .c9 .c12 {
   padding: 12px;
-  border-bottom: solid 4px #F5F5F5;
 }
 
 .c18 {
@@ -1964,11 +2000,15 @@ Array [
                   </span>
                 </button>
               </div>
-              <span
+              <div
                 className="c21"
               >
-                This tooltip is positioned on the left, as you can see it's still positioned on the right. This is because it's dynamically repositioned. It does not fit  on left side of target.
-              </span>
+                <span
+                  className="c22"
+                >
+                  This tooltip is positioned on the left, as you can see it's still positioned on the right. This is because it's dynamically repositioned. It does not fit  on left side of target.
+                </span>
+              </div>
             </div>
           </span>
         </div>
@@ -1981,6 +2021,11 @@ Array [
 }
 
 .c14 {
+  background-color: transparent;
+}
+
+.c21 {
+  margin-top: 4px;
   background-color: transparent;
 }
 
@@ -2073,7 +2118,7 @@ Array [
   line-height: 1.4285714285714286;
 }
 
-.c21 {
+.c22 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #FFFFFF;
   margin: 0;
@@ -2259,7 +2304,6 @@ Array [
 
 .c9 .c12 {
   padding: 12px;
-  border-bottom: solid 4px #F5F5F5;
 }
 
 .c18 {
@@ -2358,11 +2402,15 @@ Array [
                   </span>
                 </button>
               </div>
-              <span
+              <div
                 className="c21"
               >
-                This tooltip is positioned on the top
-              </span>
+                <span
+                  className="c22"
+                >
+                  This tooltip is positioned on the top
+                </span>
+              </div>
             </div>
           </span>
         </div>
@@ -2689,7 +2737,6 @@ Array [
 
 .c1 .c5 {
   padding: 12px;
-  border-bottom: solid 4px #00D200;
 }
 
 .c11 {
