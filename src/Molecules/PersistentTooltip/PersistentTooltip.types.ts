@@ -1,16 +1,20 @@
-import { ColorFn } from 'common/Types';
+import { Props as PopOverProps } from '../../common/PopOver/PopOver.types';
 
 export type Props = {
-  backgroundColor?: ColorFn;
-  borderColor?: ColorFn;
   children?: React.ReactNode;
-  /** @default bottom */
-  position?: 'top' | 'right' | 'bottom' | 'left';
-  positionCallback?: (calulatedPostion: 'top' | 'right' | 'bottom' | 'left') => void;
-  open: boolean;
+  isOpen: boolean;
   onClose: () => void;
   title: React.ReactNode;
   description: React.ReactNode;
   closeButtonTitle: string;
   maxWidth?: number | 'auto';
-};
+} & Pick<
+  PopOverProps,
+  | 'id'
+  | 'position'
+  | 'positionCallback'
+  | 'backgroundColor'
+  | 'borderColor'
+  | 'ariaLabel'
+  | 'inModal'
+>;

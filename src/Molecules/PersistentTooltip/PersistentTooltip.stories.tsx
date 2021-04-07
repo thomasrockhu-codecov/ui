@@ -7,15 +7,15 @@ export default {
 };
 
 export const DefaultStory = () => {
-  const [open, setOpen] = useState(true);
+  const [isOpen, setIsOpen] = useState(true);
 
   return (
     <PersistentTooltip
-      open={open}
+      isOpen={isOpen}
       title="This is persistent tooltip"
       description="The tooltip will not close until the user clicks the close-button – useful for pointing the user's attention somewhere (for instance when showcasing new features)."
       closeButtonTitle="Close by clicking X"
-      onClose={() => setOpen(false)}
+      onClose={() => setIsOpen(false)}
     >
       <Input.Text label="Label" />
     </PersistentTooltip>
@@ -23,15 +23,15 @@ export const DefaultStory = () => {
 };
 
 export const WithMaxWidth = () => {
-  const [open, setOpen] = useState(true);
+  const [isOpen, setIsOpen] = useState(true);
 
   return (
     <PersistentTooltip
-      open={open}
+      isOpen={isOpen}
       title="This is persistent tooltip"
       description="The tooltip will not close until the user clicks the close-button – useful for pointing the user's attention somewhere (for instance when showcasing new features)."
       closeButtonTitle="Close by clicking X"
-      onClose={() => setOpen(false)}
+      onClose={() => setIsOpen(false)}
       maxWidth={30}
     >
       <Input.Text label="Label" />
@@ -40,15 +40,15 @@ export const WithMaxWidth = () => {
 };
 
 export const WithMaxWidthAuto = () => {
-  const [open, setOpen] = useState(true);
+  const [isOpen, setIsOpen] = useState(true);
 
   return (
     <PersistentTooltip
-      open={open}
+      isOpen={isOpen}
       title="This is persistent tooltip"
       description="The tooltip will not close until the user clicks the close-button – useful for pointing the user's attention somewhere (for instance when showcasing new features)."
       closeButtonTitle="Close by clicking X"
-      onClose={() => setOpen(false)}
+      onClose={() => setIsOpen(false)}
       maxWidth="auto"
     >
       <Input.Text label="Label" />
@@ -57,11 +57,11 @@ export const WithMaxWidthAuto = () => {
 };
 
 export const CustomTitleAndDescription = () => {
-  const [open, setOpen] = useState(true);
+  const [isOpen, setIsOpen] = useState(true);
 
   return (
     <PersistentTooltip
-      open={open}
+      isOpen={isOpen}
       title={
         <Box mb={4}>
           <Typography color={(t) => t.color.negative}>I&apos;m in a box</Typography>
@@ -69,7 +69,7 @@ export const CustomTitleAndDescription = () => {
       }
       description="The max width is not set with a prop for this tooltip. This is the description that is quite long and stuff. Just showing how the tooltip will look if description is really long. I mean really really long."
       closeButtonTitle="Close by clicking X"
-      onClose={() => setOpen(false)}
+      onClose={() => setIsOpen(false)}
     >
       <Input.Text label="Label" />
     </PersistentTooltip>
@@ -85,11 +85,11 @@ const StyledPersistentTooltip = styled(PersistentTooltip)`
 `;
 
 export const StyledSubcomponents = () => {
-  const [open, setOpen] = useState(true);
+  const [isOpen, setIsOpen] = useState(true);
 
   return (
     <StyledPersistentTooltip
-      open={open}
+      isOpen={isOpen}
       title={<Typography type="title2">I&apos;m in a box</Typography>}
       description={
         <Typography>
@@ -100,7 +100,7 @@ export const StyledSubcomponents = () => {
       closeButtonTitle="Close by clicking X"
       backgroundColor={(t) => t.color.warning}
       borderColor={(t) => t.color.negative}
-      onClose={() => setOpen(false)}
+      onClose={() => setIsOpen(false)}
     >
       <Input.Text label="Label" />
     </StyledPersistentTooltip>
@@ -117,7 +117,7 @@ export const DifferentPositions = () => {
     <>
       <Box mb={40}>
         <PersistentTooltip
-          open={openOne}
+          isOpen={openOne}
           title="Different Positions - Right"
           description="This tooltip is positioned on the right"
           closeButtonTitle="Close by clicking X"
@@ -129,7 +129,7 @@ export const DifferentPositions = () => {
       </Box>
       <Box mb={40}>
         <PersistentTooltip
-          open={openTwo}
+          isOpen={openTwo}
           title="Different Positions - Bottom"
           description="This tooltip is positioned on the bottom"
           closeButtonTitle="Close by clicking X"
@@ -141,7 +141,7 @@ export const DifferentPositions = () => {
       </Box>
       <Box mb={40}>
         <PersistentTooltip
-          open={openThree}
+          isOpen={openThree}
           title="Different Positions - Left"
           description="This tooltip is positioned on the left, as you can see it's still positioned on the right. This is because it's dynamically repositioned. It does not fit  on left side of target."
           closeButtonTitle="Close by clicking X"
@@ -153,7 +153,7 @@ export const DifferentPositions = () => {
       </Box>
       <Box mb={40}>
         <PersistentTooltip
-          open={openFour}
+          isOpen={openFour}
           title="Different Positions - Top"
           description="This tooltip is positioned on the top"
           closeButtonTitle="Close by clicking X"
@@ -168,21 +168,21 @@ export const DifferentPositions = () => {
 };
 
 export const PersistentTooltipInDrawer = () => {
-  const [open, setOpen] = useState(false);
+  const [isOpen, setIsOpen] = useState(false);
 
   return (
     <Drawer
       onAnimationComplete={() => {
-        setOpen(true);
+        setIsOpen(true);
       }}
       preventOnClickOutsideDataAttributes={['data-specific-drawer-prevent-click-outside']}
     >
       <PersistentTooltip
-        open={open}
+        isOpen={isOpen}
         title="This is persistent tooltip"
         description="The tooltip will not close until the user clicks the close-button – useful for pointing the user's attention somewhere (for instance when showcasing new features)."
         closeButtonTitle="Close by clicking X"
-        onClose={() => setOpen(false)}
+        onClose={() => setIsOpen(false)}
         data-specific-drawer-prevent-click-outside
       >
         <Input.Text label="Label" />

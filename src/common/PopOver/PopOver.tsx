@@ -46,6 +46,7 @@ const components = {
 const PopOver = (forwardRef<HTMLSpanElement, Props>(
   (
     {
+      id,
       label,
       ariaLabel,
       position,
@@ -87,6 +88,7 @@ const PopOver = (forwardRef<HTMLSpanElement, Props>(
     return (
       <Portal>
         <StyledSpan
+          id={id}
           ref={mergeRefs([setPopperElement, ref])}
           $inModal={inModal}
           style={styles.popper}

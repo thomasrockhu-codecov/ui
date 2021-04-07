@@ -1,9 +1,12 @@
 import React, { forwardRef } from 'react';
 import styled from 'styled-components';
-import { ColorFn } from 'common/Types';
-import { StyledTooltipProps } from './TooltipContent.types';
+import { TooltipContentProps } from './TooltipContent.types';
 import { BORDER_SIZE } from '../consts';
 import { Typography } from '../../..';
+
+type StyledTooltipProps = {
+  ref?: React.RefObject<any>;
+} & Omit<TooltipContentProps, 'label'>;
 
 const StyledTooltip = styled.div<StyledTooltipProps>`
   padding: ${(p) => p.theme.spacing.unit(1)}px ${(p) => p.theme.spacing.unit(2)}px;
@@ -14,15 +17,7 @@ const StyledTooltip = styled.div<StyledTooltipProps>`
   overflow-wrap: break-word;
 `;
 
-type Props = {
-  readonly maxWidth?: any;
-  readonly label?: any;
-  readonly ariaLabel?: any;
-  readonly backgroundColor: ColorFn;
-  readonly borderColor: ColorFn;
-};
-
-const TooltipContent = forwardRef<HTMLDivElement, Props>(
+const TooltipContent = forwardRef<HTMLDivElement, TooltipContentProps>(
   ({ label, ariaLabel, maxWidth, backgroundColor, borderColor, ...htmlDivProps }, ref) => {
     return (
       <StyledTooltip

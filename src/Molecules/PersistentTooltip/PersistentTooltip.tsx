@@ -26,16 +26,19 @@ export const PersistentTooltip = (forwardRef<HTMLDivElement, PersistentTooltipPr
   (
     {
       children,
+      id,
       position = 'bottom',
-      open,
+      positionCallback: positionCallbackProp,
+      isOpen,
       onClose,
       title: titleProp,
       description: descriptionProp,
       closeButtonTitle,
-      maxWidth = 79,
-      positionCallback: positionCallbackProp,
-      borderColor: borderColorProp,
       backgroundColor: backgroundColorProp,
+      borderColor: borderColorProp,
+      maxWidth = 79,
+      ariaLabel,
+      inModal,
       ...htmlDivProps
     },
     ref,
@@ -82,9 +85,13 @@ export const PersistentTooltip = (forwardRef<HTMLDivElement, PersistentTooltipPr
 
     return (
       <>
-        {cloneElement(child, { ref: mergeRefs([setTriggerElement, triggerElementRef]) })}
-        {open && (
+        {cloneElement(child, {
+          'aria-describedby': isOpen ? id : undefined,
+          ref: mergeRefs([setTriggerElement, triggerElementRef]),
+        })}
+        {isOpen && (
           <StyledTooltipPopup
+            id={id}
             ref={ref as any}
             label={label}
             position={position}
@@ -95,6 +102,8 @@ export const PersistentTooltip = (forwardRef<HTMLDivElement, PersistentTooltipPr
               return backgroundColorProp ? backgroundColorProp(t) : t.color.backgroundDark;
             }}
             borderColor={(t) => (borderColorProp ? borderColorProp(t) : 'transparent')}
+            ariaLabel={ariaLabel}
+            inModal={inModal}
             {...htmlDivProps}
           />
         )}

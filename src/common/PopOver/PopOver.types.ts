@@ -5,7 +5,7 @@ export type InModal = boolean;
 export type Position = 'top' | 'right' | 'bottom' | 'left';
 
 export type Props = {
-  ref?: React.RefObject<any>;
+  id?: string;
   label: React.ReactNode;
   position?: Position;
   positionCallback?: (calulatedPostion: Position) => void;
