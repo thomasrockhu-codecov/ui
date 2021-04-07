@@ -1,8 +1,7 @@
 import { useCallback, useEffect, useRef, useState } from 'react';
 import { Props as TooltipProps } from '../Tooltip.types';
-import { useId } from './useId';
 import { State, store } from './useTooltip.store';
-import { useOnClickOutside } from '../../../common/Hooks';
+import { useOnClickOutside, useGeneratedId } from '../../../common/Hooks';
 
 export const useTooltip = (
   mode: TooltipProps['mode'],
@@ -10,7 +9,7 @@ export const useTooltip = (
   openDelay?: number,
   closeDelay?: number,
 ) => {
-  const id = useId('nn-tooltip-');
+  const id = useGeneratedId('nn-tooltip-');
   const [isOpen, setIsOpen] = useState(false);
   const triggerElementRef = useRef(null);
 

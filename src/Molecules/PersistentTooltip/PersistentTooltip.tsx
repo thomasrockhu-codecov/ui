@@ -4,6 +4,7 @@ import { isElement, mergeRefs } from '../../common/utils';
 import { Box, Button, Flexbox, Icon, Typography } from '../..';
 import { PopOver } from '../../common/PopOver';
 import { Props as PersistentTooltipProps } from './PersistentTooltip.types';
+import { useGeneratedId } from '../../common/Hooks';
 
 const StyledTooltipPopup = styled(PopOver)`
   ${PopOver.components.TooltipContent} {
@@ -26,7 +27,7 @@ export const PersistentTooltip = (forwardRef<HTMLDivElement, PersistentTooltipPr
   (
     {
       children,
-      id,
+      id: idProp,
       position = 'bottom',
       positionCallback: positionCallbackProp,
       isOpen,
@@ -52,6 +53,9 @@ export const PersistentTooltip = (forwardRef<HTMLDivElement, PersistentTooltipPr
         positionCallbackProp(finalPosition);
       }
     };
+
+    const generatedId = useGeneratedId('nn-persistent-tooltip-');
+    const id = idProp || generatedId;
 
     const title = isElement(titleProp) ? (
       titleProp

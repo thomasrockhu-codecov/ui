@@ -6,7 +6,7 @@ const generateNewId = () => {
   return ++idGenerator;
 };
 
-export const useId = (prefix: string) => {
+const useGeneratedId = (prefix: string) => {
   const [id, setId] = useState<string>('');
 
   useEffect(() => {
@@ -15,3 +15,5 @@ export const useId = (prefix: string) => {
 
   return id;
 };
+
+export default useGeneratedId;
