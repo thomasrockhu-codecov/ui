@@ -1,8 +1,6 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
-import { Box, Input, Typography } from '../..';
-
-import { PersistentTooltip } from './PersistentTooltip';
+import { Box, Drawer, Input, PersistentTooltip, Typography } from '../..';
 
 export default {
   title: 'Molecules / Persistent Tooltip',
@@ -166,5 +164,29 @@ export const DifferentPositions = () => {
         </PersistentTooltip>
       </Box>
     </>
+  );
+};
+
+export const PersistentTooltipInDrawer = () => {
+  const [open, setOpen] = useState(false);
+
+  return (
+    <Drawer
+      onAnimationComplete={() => {
+        setOpen(true);
+      }}
+      preventOnClickOutsideDataAttributes={['data-specific-drawer-prevent-click-outside']}
+    >
+      <PersistentTooltip
+        open={open}
+        title="This is persistent tooltip"
+        description="The tooltip will not close until the user clicks the close-button – useful for pointing the user's attention somewhere (for instance when showcasing new features)."
+        closeButtonTitle="Close by clicking X"
+        onClose={() => setOpen(false)}
+        data-specific-drawer-prevent-click-outside
+      >
+        <Input.Text label="Label" />
+      </PersistentTooltip>
+    </Drawer>
   );
 };
