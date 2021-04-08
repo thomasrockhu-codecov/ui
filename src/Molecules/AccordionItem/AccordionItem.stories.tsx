@@ -86,3 +86,9 @@ export const TextOnlyContentIsFormattedCorrect = () => (
     </AccordionItem>
   </>
 );
+
+export const withChevron = () => (
+  <AccordionItem withChevron title="How much risk are you willing to take?">
+    <ExampleContent />
+  </AccordionItem>
+);

@@ -1,3 +1,31 @@
+## [6.2.2](https://github.com/nordnet/ui/compare/v6.2.1...v6.2.2) (2021-04-06)
+
+
+### Bug Fixes
+
+* 🐛 remove hardcoded title and add prop for it instead ([6c1a725](https://github.com/nordnet/ui/commit/6c1a725))
+
+## [6.2.1](https://github.com/nordnet/ui/compare/v6.2.0...v6.2.1) (2021-03-31)
+
+
+### Bug Fixes
+
+* add missing outlines ([7c7e7f1](https://github.com/nordnet/ui/commit/7c7e7f1))
+
+# [6.2.0](https://github.com/nordnet/ui/compare/v6.1.0...v6.2.0) (2021-03-31)
+
+
+### Features
+
+* 🎸 add Lock icon ([a080792](https://github.com/nordnet/ui/commit/a080792))
+
+# [6.1.0](https://github.com/nordnet/ui/compare/v6.0.0...v6.1.0) (2021-03-30)
+
+
+### Features
+
+* 🎸 add chevron style to accordion item ([38f63ee](https://github.com/nordnet/ui/commit/38f63ee))
+
 # [6.0.0](https://github.com/nordnet/ui/compare/v5.27.1...v6.0.0) (2021-03-29)
 
 

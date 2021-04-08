@@ -9,6 +9,7 @@ export type Props = {
   footer?: React.ReactNode;
   onClose?: Function;
   title?: React.ReactNode;
+  closeButtonTitle?: string;
   open?: boolean;
   ref?: React.Ref<HTMLDivElement>;
   as?: keyof JSX.IntrinsicElements | React.ComponentType<any>;

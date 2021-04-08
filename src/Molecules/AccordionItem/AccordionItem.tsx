@@ -21,7 +21,7 @@ const Item = styled.div<{ $hasFocus: boolean }>`
     $hasFocus ? `${theme.color.background}` : 'transparent'};
 `;
 
-const Button = styled.button`
+const Button = styled.button<{ $withChevron?: boolean }>`
   font: inherit;
   box-sizing: border-box;
   position: relative;
@@ -29,18 +29,18 @@ const Button = styled.button`
   width: 100%;
   border: 0;
   padding-top: ${(p) => p.theme.spacing.unit(3)}px;
-  padding-right: 0;
   padding-bottom: ${(p) => p.theme.spacing.unit(3)}px;
-  padding-left: ${(p) => p.theme.spacing.unit(6)}px;
+  padding-right: ${(p) => p.theme.spacing.unit(p.$withChevron ? 6 : 0)}px;
+  padding-left: ${(p) => p.theme.spacing.unit(p.$withChevron ? 0 : 6)}px;
   background-color: transparent;
   cursor: pointer;
   text-align: start;
 `;
 
-const IconWrapper = styled.div`
+const IconWrapper = styled.div<{ $withChevron?: boolean }>`
   position: absolute;
   top: 15px;
-  left: 0;
+  ${(p) => (p.$withChevron ? 'right' : 'left')}: 0;
 `;
 
 export const AccordionItem: AccordionItemComponent = React.forwardRef(
@@ -54,6 +54,7 @@ export const AccordionItem: AccordionItemComponent = React.forwardRef(
       title,
       onClick,
       onToggle,
+      withChevron,
     },
     ref,
   ) => {
@@ -76,24 +77,32 @@ export const AccordionItem: AccordionItemComponent = React.forwardRef(
       }
     };
 
+    const icon = (
+      <IconWrapper $withChevron={withChevron}>
+        {(() => {
+          if (withChevron)
+            return <Icon.ThinChevron direction={expanded ? 'up' : 'down'} size={4} />;
+
+          if (expanded) return <Icon.Minus size={3} fill={(t) => t.color.cta} />;
+          return <Icon.Plus size={3} fill={(t) => t.color.cta} />;
+        })()}
+      </IconWrapper>
+    );
+
     return (
       <Item className={className} aria-expanded={expanded} $hasFocus={hasFocus}>
         <Typography as={as} type="secondary" weight="bold">
           <Button
+            $withChevron={withChevron}
             type="button"
             onClick={clickHandler}
             ref={ref}
             onFocus={() => setHasFocus(true)}
             onBlur={() => setHasFocus(false)}
           >
-            <IconWrapper>
-              {expanded ? (
-                <Icon.Minus size={3} fill={(t) => t.color.cta} />
-              ) : (
-                <Icon.Plus size={3} fill={(t) => t.color.cta} />
-              )}
-            </IconWrapper>
+            {!withChevron && icon}
             {title}
+            {withChevron && icon}
           </Button>
         </Typography>
         <AnimatePresence initial={false}>
@@ -108,7 +117,7 @@ export const AccordionItem: AccordionItemComponent = React.forwardRef(
               }}
               transition={{ duration: 0.16, ease: 'easeOut' }}
             >
-              <Box pt={1} pb={3} pl={6}>
+              <Box pt={1} pb={3} pl={withChevron ? 0 : 6} pr={withChevron ? 6 : 0}>
                 {isString(children) ? (
                   <Typography as="p" type="secondary" color={(t) => t.color.accordionText}>
                     {children}
