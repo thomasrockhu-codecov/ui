@@ -28,7 +28,7 @@ export const Tooltip: TooltipComponent = forwardRef(
       maxWidth = 50,
       openDelay = 100,
       closeDelay = 500,
-      open: controlledOpen,
+      isOpen: controlledIsOpen,
     },
     ref,
   ) => {
@@ -45,7 +45,7 @@ export const Tooltip: TooltipComponent = forwardRef(
       handleMouseLeave,
       handleKeyDown,
       handleMouseDown,
-    } = useTooltip(mode, controlledOpen, openDelay, closeDelay);
+    } = useTooltip(mode, controlledIsOpen, openDelay, closeDelay);
 
     return (
       <>

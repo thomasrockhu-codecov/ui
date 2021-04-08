@@ -14,7 +14,7 @@ export type Props = {
   mode?: 'hover' | 'click';
   openDelay?: number;
   closeDelay?: number;
-  open?: boolean;
+  isOpen?: boolean;
 };
 
 export type TooltipComponent = React.FC<Props>;
