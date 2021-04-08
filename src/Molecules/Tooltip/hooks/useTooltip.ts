@@ -5,7 +5,7 @@ import { useOnClickOutside, useGeneratedId } from '../../../common/Hooks';
 
 export const useTooltip = (
   mode: TooltipProps['mode'],
-  controlledOpen: TooltipProps['open'],
+  controlledIsOpen: TooltipProps['isOpen'],
   openDelay?: number,
   closeDelay?: number,
 ) => {
@@ -89,7 +89,7 @@ export const useTooltip = (
   return {
     id,
     triggerElementRef,
-    isOpen: typeof controlledOpen === 'undefined' ? isOpen : controlledOpen,
+    isOpen: typeof controlledIsOpen === 'undefined' ? isOpen : controlledIsOpen,
     handleMouseEnter,
     handleMouseMove,
     handleFocus,
