@@ -1,24 +1,37 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
-import { Box, Drawer, Input, PersistentTooltip, Typography } from '../..';
+import { Box, Flexbox, Drawer, Input, PersistentTooltip, Typography } from '../..';
 
 export default {
   title: 'Molecules / Persistent Tooltip',
 };
 
+const StoryWrapper: React.FC = ({ children }) => (
+  <>
+    <Box mb={4}>
+      <Typography type="title2">
+        This component is used to let the user discover new features
+      </Typography>
+    </Box>
+    {children}
+  </>
+);
+
 export const DefaultStory = () => {
   const [isOpen, setIsOpen] = useState(true);
 
   return (
-    <PersistentTooltip
-      isOpen={isOpen}
-      title="This is persistent tooltip"
-      description="The tooltip will not close until the user clicks the close-button – useful for pointing the user's attention somewhere (for instance when showcasing new features)."
-      closeButtonTitle="Close by clicking X"
-      onClose={() => setIsOpen(false)}
-    >
-      <Input.Text label="Label" />
-    </PersistentTooltip>
+    <StoryWrapper>
+      <PersistentTooltip
+        isOpen={isOpen}
+        title="Default persistent tooltip"
+        description="The tooltip will not close until the user clicks the close-button – useful for pointing the user's attention somewhere (for instance when showcasing new features)."
+        closeButtonTitle="Close by clicking X"
+        onClose={() => setIsOpen(false)}
+      >
+        <Input.Text label="Label" />
+      </PersistentTooltip>
+    </StoryWrapper>
   );
 };
 
@@ -26,16 +39,18 @@ export const WithMaxWidth = () => {
   const [isOpen, setIsOpen] = useState(true);
 
   return (
-    <PersistentTooltip
-      isOpen={isOpen}
-      title="This is persistent tooltip"
-      description="The tooltip will not close until the user clicks the close-button – useful for pointing the user's attention somewhere (for instance when showcasing new features)."
-      closeButtonTitle="Close by clicking X"
-      onClose={() => setIsOpen(false)}
-      maxWidth={30}
-    >
-      <Input.Text label="Label" />
-    </PersistentTooltip>
+    <StoryWrapper>
+      <PersistentTooltip
+        isOpen={isOpen}
+        title="Persistent tooltip with Max Width"
+        description="The tooltip will not close until the user clicks the close-button – useful for pointing the user's attention somewhere (for instance when showcasing new features)."
+        closeButtonTitle="Close by clicking X"
+        onClose={() => setIsOpen(false)}
+        maxWidth={30}
+      >
+        <Input.Text label="Label" />
+      </PersistentTooltip>
+    </StoryWrapper>
   );
 };
 
@@ -43,16 +58,18 @@ export const WithMaxWidthAuto = () => {
   const [isOpen, setIsOpen] = useState(true);
 
   return (
-    <PersistentTooltip
-      isOpen={isOpen}
-      title="This is persistent tooltip"
-      description="The tooltip will not close until the user clicks the close-button – useful for pointing the user's attention somewhere (for instance when showcasing new features)."
-      closeButtonTitle="Close by clicking X"
-      onClose={() => setIsOpen(false)}
-      maxWidth="auto"
-    >
-      <Input.Text label="Label" />
-    </PersistentTooltip>
+    <StoryWrapper>
+      <PersistentTooltip
+        isOpen={isOpen}
+        title="Persistent tooltip with max width auto"
+        description="Observe that the width might get very long. The tooltip will not close until the user clicks the close-button – useful for pointing the user's attention somewhere (for instance when showcasing new features)."
+        closeButtonTitle="Close by clicking X"
+        onClose={() => setIsOpen(false)}
+        maxWidth="auto"
+      >
+        <Input.Text label="Label" />
+      </PersistentTooltip>
+    </StoryWrapper>
   );
 };
 
@@ -60,19 +77,34 @@ export const CustomTitleAndDescription = () => {
   const [isOpen, setIsOpen] = useState(true);
 
   return (
-    <PersistentTooltip
-      isOpen={isOpen}
-      title={
-        <Box mb={4}>
-          <Typography color={(t) => t.color.negative}>I&apos;m in a box</Typography>
-        </Box>
-      }
-      description="The max width is not set with a prop for this tooltip. This is the description that is quite long and stuff. Just showing how the tooltip will look if description is really long. I mean really really long."
-      closeButtonTitle="Close by clicking X"
-      onClose={() => setIsOpen(false)}
-    >
-      <Input.Text label="Label" />
-    </PersistentTooltip>
+    <StoryWrapper>
+      <PersistentTooltip
+        isOpen={isOpen}
+        title={
+          <Box mb={4}>
+            <Typography color={(t) => t.color.negative}>I&apos;m in a box</Typography>
+          </Box>
+        }
+        description={
+          <Flexbox container gutter={4}>
+            <Flexbox item>
+              <Typography color={(t) => t.color.textLight}>
+                I am in a custom jsx description.
+              </Typography>
+            </Flexbox>
+            <Flexbox item>
+              <Typography color={(t) => t.color.textLight}>
+                I am in a custom jsx description too!
+              </Typography>
+            </Flexbox>
+          </Flexbox>
+        }
+        closeButtonTitle="Close by clicking X"
+        onClose={() => setIsOpen(false)}
+      >
+        <Input.Text label="Label" />
+      </PersistentTooltip>
+    </StoryWrapper>
   );
 };
 
@@ -88,22 +120,24 @@ export const StyledSubcomponents = () => {
   const [isOpen, setIsOpen] = useState(true);
 
   return (
-    <StyledPersistentTooltip
-      isOpen={isOpen}
-      title={<Typography type="title2">I&apos;m in a box</Typography>}
-      description={
-        <Typography>
-          The max width is set with a prop for this tooltip. Also, it&apos;s subcomponents styled –
-          different color, smaller close button.
-        </Typography>
-      }
-      closeButtonTitle="Close by clicking X"
-      backgroundColor={(t) => t.color.warning}
-      borderColor={(t) => t.color.negative}
-      onClose={() => setIsOpen(false)}
-    >
-      <Input.Text label="Label" />
-    </StyledPersistentTooltip>
+    <StoryWrapper>
+      <StyledPersistentTooltip
+        isOpen={isOpen}
+        title={<Typography type="title2">I&apos;m in a box</Typography>}
+        description={
+          <Typography>
+            The max width is set with a prop for this tooltip. Also, it&apos;s subcomponents styled
+            – different color, smaller close button.
+          </Typography>
+        }
+        closeButtonTitle="Close by clicking X"
+        backgroundColor={(t) => t.color.warning}
+        borderColor={(t) => t.color.negative}
+        onClose={() => setIsOpen(false)}
+      >
+        <Input.Text label="Label" />
+      </StyledPersistentTooltip>
+    </StoryWrapper>
   );
 };
 
@@ -114,7 +148,7 @@ export const DifferentPositions = () => {
   const [openFour, setOpenFour] = useState(true);
 
   return (
-    <>
+    <StoryWrapper>
       <Box mb={40}>
         <PersistentTooltip
           isOpen={openOne}
@@ -163,7 +197,7 @@ export const DifferentPositions = () => {
           <Input.Text label="Label" />
         </PersistentTooltip>
       </Box>
-    </>
+    </StoryWrapper>
   );
 };
 
@@ -171,22 +205,24 @@ export const PersistentTooltipInDrawer = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <Drawer
-      onAnimationComplete={() => {
-        setIsOpen(true);
-      }}
-      preventOnClickOutsideDataAttributes={['data-specific-drawer-prevent-click-outside']}
-    >
-      <PersistentTooltip
-        isOpen={isOpen}
-        title="This is persistent tooltip"
-        description="The tooltip will not close until the user clicks the close-button – useful for pointing the user's attention somewhere (for instance when showcasing new features)."
-        closeButtonTitle="Close by clicking X"
-        onClose={() => setIsOpen(false)}
-        data-specific-drawer-prevent-click-outside
+    <StoryWrapper>
+      <Drawer
+        onAnimationComplete={() => {
+          setIsOpen(true);
+        }}
+        preventOnClickOutsideDataAttributes={['data-specific-drawer-prevent-click-outside']}
       >
-        <Input.Text label="Label" />
-      </PersistentTooltip>
-    </Drawer>
+        <PersistentTooltip
+          isOpen={isOpen}
+          title="This is persistent tooltip"
+          description="The tooltip will not close until the user clicks the close-button – useful for pointing the user's attention somewhere (for instance when showcasing new features)."
+          closeButtonTitle="Close by clicking X"
+          onClose={() => setIsOpen(false)}
+          data-specific-drawer-prevent-click-outside
+        >
+          <Input.Text label="Label" />
+        </PersistentTooltip>
+      </Drawer>
+    </StoryWrapper>
   );
 };

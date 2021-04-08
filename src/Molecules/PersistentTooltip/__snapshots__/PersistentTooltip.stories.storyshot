@@ -2,6 +2,36 @@
 
 exports[`Storyshots Molecules / Persistent Tooltip Custom Title And Description 1`] = `
 Array [
+  .c0 {
+  margin-bottom: 16px;
+  background-color: transparent;
+}
+
+.c1 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 1.2;
+}
+
+@media (min-width:760px) {
+  .c1 {
+    font-size: 24px;
+    line-height: 1.1666666666666667;
+  }
+}
+
+<div
+    className="c0"
+  >
+    <span
+      className="c1"
+    >
+      This component is used to let the user discover new features
+    </span>
+  </div>,
   .c3 {
   box-sizing: border-box;
   display: -webkit-box;
@@ -120,6 +150,10 @@ Array [
   display: inline-block;
 }
 
+@media (min-width:760px) {
+
+}
+
 <div
     className="c0"
   >
@@ -152,17 +186,12 @@ Array [
       </span>
     </label>
   </div>,
-  .c6 {
-  background-color: transparent;
-}
-
-.c8 {
+  .c8 {
   margin-bottom: 16px;
   background-color: transparent;
 }
 
-.c14 {
-  margin-top: 4px;
+.c6 {
   background-color: transparent;
 }
 
@@ -180,6 +209,29 @@ Array [
   -webkit-box-align: flex-start;
   -ms-flex-align: flex-start;
   align-items: flex-start;
+}
+
+.c14 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: -8px;
+  margin-right: -8px;
+}
+
+.c14 > * {
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+.c14 > *:not(:first-child) {
+  padding-top: 0;
+}
+
+.c15 {
+  box-sizing: border-box;
 }
 
 .c13 {
@@ -223,13 +275,13 @@ Array [
   line-height: 1.4285714285714286;
 }
 
-.c15 {
+.c16 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #FFFFFF;
   margin: 0;
   font-weight: 400;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
+  font-size: 16px;
+  line-height: 1.5;
 }
 
 .c10 {
@@ -334,6 +386,10 @@ Array [
   margin-left: 20px;
 }
 
+@media (min-width:760px) {
+
+}
+
 <portal-dummy>
     <span
       className="c0 c1"
@@ -400,11 +456,24 @@ Array [
             <div
               className="c14"
             >
-              <span
+              <div
                 className="c15"
               >
-                The max width is not set with a prop for this tooltip. This is the description that is quite long and stuff. Just showing how the tooltip will look if description is really long. I mean really really long.
-              </span>
+                <span
+                  className="c16"
+                >
+                  I am in a custom jsx description.
+                </span>
+              </div>
+              <div
+                className="c15"
+              >
+                <span
+                  className="c16"
+                >
+                  I am in a custom jsx description too!
+                </span>
+              </div>
             </div>
           </div>
         </span>
@@ -416,6 +485,36 @@ Array [
 
 exports[`Storyshots Molecules / Persistent Tooltip Default Story 1`] = `
 Array [
+  .c0 {
+  margin-bottom: 16px;
+  background-color: transparent;
+}
+
+.c1 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 1.2;
+}
+
+@media (min-width:760px) {
+  .c1 {
+    font-size: 24px;
+    line-height: 1.1666666666666667;
+  }
+}
+
+<div
+    className="c0"
+  >
+    <span
+      className="c1"
+    >
+      This component is used to let the user discover new features
+    </span>
+  </div>,
   .c3 {
   box-sizing: border-box;
   display: -webkit-box;
@@ -532,6 +631,10 @@ Array [
 .c0 {
   width: 200px;
   display: inline-block;
+}
+
+@media (min-width:760px) {
+
 }
 
 <div
@@ -743,6 +846,10 @@ Array [
   margin-left: 20px;
 }
 
+@media (min-width:760px) {
+
+}
+
 <portal-dummy>
     <span
       className="c0 c1"
@@ -773,7 +880,7 @@ Array [
               <span
                 className="c8"
               >
-                This is persistent tooltip
+                Default persistent tooltip
               </span>
               <button
                 className="NormalizedButton__Button-ey7f5x-0 c9 c10"
@@ -821,6 +928,36 @@ Array [
 
 exports[`Storyshots Molecules / Persistent Tooltip Different Positions 1`] = `
 Array [
+  .c0 {
+  margin-bottom: 16px;
+  background-color: transparent;
+}
+
+.c1 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 1.2;
+}
+
+@media (min-width:760px) {
+  .c1 {
+    font-size: 24px;
+    line-height: 1.1666666666666667;
+  }
+}
+
+<div
+    className="c0"
+  >
+    <span
+      className="c1"
+    >
+      This component is used to let the user discover new features
+    </span>
+  </div>,
   .c0 {
   margin-bottom: 160px;
   background-color: transparent;
@@ -1119,6 +1256,10 @@ Array [
 
 .c18 {
   margin-left: 20px;
+}
+
+@media (min-width:760px) {
+
 }
 
 <div
@@ -1530,6 +1671,10 @@ Array [
   margin-left: 20px;
 }
 
+@media (min-width:760px) {
+
+}
+
 <div
     className="c0"
   >
@@ -1937,6 +2082,10 @@ Array [
 
 .c18 {
   margin-left: 20px;
+}
+
+@media (min-width:760px) {
+
 }
 
 <div
@@ -2348,6 +2497,10 @@ Array [
   margin-left: 20px;
 }
 
+@media (min-width:760px) {
+
+}
+
 <div
     className="c0"
   >
@@ -2461,7 +2614,46 @@ Array [
 `;
 
 exports[`Storyshots Molecules / Persistent Tooltip Persistent Tooltip In Drawer 1`] = `
-.c9 {
+Array [
+  .c0 {
+  margin-bottom: 16px;
+  background-color: transparent;
+}
+
+.c1 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 1.2;
+}
+
+@media (min-width:760px) {
+  .c1 {
+    font-size: 24px;
+    line-height: 1.1666666666666667;
+  }
+}
+
+@media (min-width:760px) {
+
+}
+
+@media (min-width:1600px) {
+
+}
+
+<div
+    className="c0"
+  >
+    <span
+      className="c1"
+    >
+      This component is used to let the user discover new features
+    </span>
+  </div>,
+  .c9 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -2679,138 +2871,173 @@ exports[`Storyshots Molecules / Persistent Tooltip Persistent Tooltip In Drawer 
 
 }
 
+@media (min-width:760px) {
+
+}
+
 @media (min-width:1600px) {
 
 }
 
 <portal-dummy>
-  <div
-    data-focus-guard={true}
-    style={
-      Object {
-        "height": "0px",
-        "left": "1px",
-        "overflow": "hidden",
-        "padding": 0,
-        "position": "fixed",
-        "top": "1px",
-        "width": "1px",
-      }
-    }
-    tabIndex={0}
-  />
-  <div
-    data-focus-guard={true}
-    style={
-      Object {
-        "height": "0px",
-        "left": "1px",
-        "overflow": "hidden",
-        "padding": 0,
-        "position": "fixed",
-        "top": "1px",
-        "width": "1px",
-      }
-    }
-    tabIndex={1}
-  />
-  <div
-    data-focus-lock-disabled={false}
-    onBlur={[Function]}
-    onFocus={[Function]}
-  >
     <div
-      onScrollCapture={[Function]}
-      onTouchMoveCapture={[Function]}
-      onWheelCapture={[Function]}
+      data-focus-guard={true}
+      style={
+        Object {
+          "height": "0px",
+          "left": "1px",
+          "overflow": "hidden",
+          "padding": 0,
+          "position": "fixed",
+          "top": "1px",
+          "width": "1px",
+        }
+      }
+      tabIndex={0}
+    />
+    <div
+      data-focus-guard={true}
+      style={
+        Object {
+          "height": "0px",
+          "left": "1px",
+          "overflow": "hidden",
+          "padding": 0,
+          "position": "fixed",
+          "top": "1px",
+          "width": "1px",
+        }
+      }
+      tabIndex={1}
+    />
+    <div
+      data-focus-lock-disabled={false}
+      onBlur={[Function]}
+      onFocus={[Function]}
     >
-      <div>
-        <div
-          className="c0"
-          onTouchStart={[Function]}
-        >
-          <button
-            className="NormalizedButton__Button-ey7f5x-0 c1 c2"
-            onClick={[Function]}
-            type="button"
-          >
-            <span
-              className="c3"
-            >
-              <svg
-                aria-hidden="true"
-                className="c4"
-                focusable="false"
-                preserveAspectRatio="xMidYMid meet"
-                role="presentation"
-                viewBox="0 0 16 16"
-              >
-                <path
-                  d="M6.857 8L0 1.143 1.143 0 8 6.857 14.857 0 16 1.143 9.143 8 16 14.857 14.857 16 8 9.143 1.143 16 0 14.857z"
-                  fillRule="evenodd"
-                />
-              </svg>
-            </span>
-          </button>
-        </div>
-        <div
-          className="c5"
-        >
+      <div
+        onScrollCapture={[Function]}
+        onTouchMoveCapture={[Function]}
+        onWheelCapture={[Function]}
+      >
+        <div>
           <div
-            className="c6"
+            className="c0"
+            onTouchStart={[Function]}
           >
-            <label
-              className="c7"
-              hidden={false}
+            <button
+              className="NormalizedButton__Button-ey7f5x-0 c1 c2"
+              onClick={[Function]}
+              type="button"
             >
               <span
-                className="c8"
+                className="c3"
               >
-                <div
-                  className="c9"
+                <svg
+                  aria-hidden="true"
+                  className="c4"
+                  focusable="false"
+                  preserveAspectRatio="xMidYMid meet"
+                  role="presentation"
+                  viewBox="0 0 16 16"
                 >
-                  Label 
-                </div>
+                  <path
+                    d="M6.857 8L0 1.143 1.143 0 8 6.857 14.857 0 16 1.143 9.143 8 16 14.857 14.857 16 8 9.143 1.143 16 0 14.857z"
+                    fillRule="evenodd"
+                  />
+                </svg>
+              </span>
+            </button>
+          </div>
+          <div
+            className="c5"
+          >
+            <div
+              className="c6"
+            >
+              <label
+                className="c7"
+                hidden={false}
+              >
                 <span
-                  className="c10"
+                  className="c8"
                 >
                   <div
-                    className="c11"
+                    className="c9"
                   >
-                    <input
-                      className="NormalizedInput__Input-sc-1m4kmh9-0 c12"
-                      type="text"
-                      variant="normal"
-                    />
+                    Label 
                   </div>
+                  <span
+                    className="c10"
+                  >
+                    <div
+                      className="c11"
+                    >
+                      <input
+                        className="NormalizedInput__Input-sc-1m4kmh9-0 c12"
+                        type="text"
+                        variant="normal"
+                      />
+                    </div>
+                  </span>
                 </span>
-              </span>
-            </label>
+              </label>
+            </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-  <div
-    data-focus-guard={true}
-    style={
-      Object {
-        "height": "0px",
-        "left": "1px",
-        "overflow": "hidden",
-        "padding": 0,
-        "position": "fixed",
-        "top": "1px",
-        "width": "1px",
+    <div
+      data-focus-guard={true}
+      style={
+        Object {
+          "height": "0px",
+          "left": "1px",
+          "overflow": "hidden",
+          "padding": 0,
+          "position": "fixed",
+          "top": "1px",
+          "width": "1px",
+        }
       }
-    }
-    tabIndex={0}
-  />
-</portal-dummy>
+      tabIndex={0}
+    />
+  </portal-dummy>,
+]
 `;
 
 exports[`Storyshots Molecules / Persistent Tooltip Styled Subcomponents 1`] = `
 Array [
+  .c0 {
+  margin-bottom: 16px;
+  background-color: transparent;
+}
+
+.c1 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 1.2;
+}
+
+@media (min-width:760px) {
+  .c1 {
+    font-size: 24px;
+    line-height: 1.1666666666666667;
+  }
+}
+
+<div
+    className="c0"
+  >
+    <span
+      className="c1"
+    >
+      This component is used to let the user discover new features
+    </span>
+  </div>,
   .c3 {
   box-sizing: border-box;
   display: -webkit-box;
@@ -2999,15 +3226,6 @@ Array [
   display: block;
 }
 
-.c6 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #282823;
-  margin: 0;
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 1.3333333333333333;
-}
-
 .c9 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
@@ -3015,6 +3233,15 @@ Array [
   font-weight: 800;
   font-size: 20px;
   line-height: 1.2;
+}
+
+.c6 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.3333333333333333;
 }
 
 .c12 {
@@ -3224,6 +3451,36 @@ Array [
 
 exports[`Storyshots Molecules / Persistent Tooltip With Max Width 1`] = `
 Array [
+  .c0 {
+  margin-bottom: 16px;
+  background-color: transparent;
+}
+
+.c1 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 1.2;
+}
+
+@media (min-width:760px) {
+  .c1 {
+    font-size: 24px;
+    line-height: 1.1666666666666667;
+  }
+}
+
+<div
+    className="c0"
+  >
+    <span
+      className="c1"
+    >
+      This component is used to let the user discover new features
+    </span>
+  </div>,
   .c3 {
   box-sizing: border-box;
   display: -webkit-box;
@@ -3340,6 +3597,10 @@ Array [
 .c0 {
   width: 200px;
   display: inline-block;
+}
+
+@media (min-width:760px) {
+
 }
 
 <div
@@ -3551,6 +3812,10 @@ Array [
   margin-left: 20px;
 }
 
+@media (min-width:760px) {
+
+}
+
 <portal-dummy>
     <span
       className="c0 c1"
@@ -3581,7 +3846,7 @@ Array [
               <span
                 className="c8"
               >
-                This is persistent tooltip
+                Persistent tooltip with Max Width
               </span>
               <button
                 className="NormalizedButton__Button-ey7f5x-0 c9 c10"
@@ -3629,6 +3894,36 @@ Array [
 
 exports[`Storyshots Molecules / Persistent Tooltip With Max Width Auto 1`] = `
 Array [
+  .c0 {
+  margin-bottom: 16px;
+  background-color: transparent;
+}
+
+.c1 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 1.2;
+}
+
+@media (min-width:760px) {
+  .c1 {
+    font-size: 24px;
+    line-height: 1.1666666666666667;
+  }
+}
+
+<div
+    className="c0"
+  >
+    <span
+      className="c1"
+    >
+      This component is used to let the user discover new features
+    </span>
+  </div>,
   .c3 {
   box-sizing: border-box;
   display: -webkit-box;
@@ -3745,6 +4040,10 @@ Array [
 .c0 {
   width: 200px;
   display: inline-block;
+}
+
+@media (min-width:760px) {
+
 }
 
 <div
@@ -3955,6 +4254,10 @@ Array [
   margin-left: 20px;
 }
 
+@media (min-width:760px) {
+
+}
+
 <portal-dummy>
     <span
       className="c0 c1"
@@ -3985,7 +4288,7 @@ Array [
               <span
                 className="c8"
               >
-                This is persistent tooltip
+                Persistent tooltip with max width auto
               </span>
               <button
                 className="NormalizedButton__Button-ey7f5x-0 c9 c10"
@@ -4020,7 +4323,7 @@ Array [
               <span
                 className="c14"
               >
-                The tooltip will not close until the user clicks the close-button – useful for pointing the user's attention somewhere (for instance when showcasing new features).
+                Observe that the width might get very long. The tooltip will not close until the user clicks the close-button – useful for pointing the user's attention somewhere (for instance when showcasing new features).
               </span>
             </div>
           </div>
