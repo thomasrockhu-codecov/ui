@@ -1,6 +1,6 @@
 import React, { cloneElement, forwardRef, useState } from 'react';
 import { TooltipComponent } from './Tooltip.types';
-import { TooltipPopup } from './TooltipPopup';
+import { PopOver } from '../../common/PopOver';
 import { mergeRefs, wrapEvent } from '../../common/utils';
 import { useTooltip } from './hooks';
 
@@ -28,6 +28,8 @@ export const Tooltip: TooltipComponent = forwardRef(
       maxWidth = 50,
       openDelay = 100,
       closeDelay = 500,
+      isOpen: controlledIsOpen,
+      wrapChild,
     },
     ref,
   ) => {
@@ -44,11 +46,11 @@ export const Tooltip: TooltipComponent = forwardRef(
       handleMouseLeave,
       handleKeyDown,
       handleMouseDown,
-    } = useTooltip(mode, openDelay, closeDelay);
+    } = useTooltip(mode, controlledIsOpen, openDelay, closeDelay);
 
     return (
       <>
-        {cloneElement(child, {
+        {cloneElement(wrapChild ? <span>{child}</span> : child, {
           'aria-describedby': isOpen ? id : undefined,
           ref: mergeRefs([setTriggerElement, triggerElementRef]),
           onMouseEnter: wrapEvent(child.props.onMouseEnter, handleMouseEnter),
@@ -61,7 +63,7 @@ export const Tooltip: TooltipComponent = forwardRef(
         })}
 
         {isOpen && (
-          <TooltipPopup
+          <PopOver
             id={id}
             ref={ref as any}
             triggerElement={triggerElement}
@@ -70,6 +72,7 @@ export const Tooltip: TooltipComponent = forwardRef(
             position={position}
             inModal={inModal}
             maxWidth={maxWidth}
+            pointerEvents={false}
           />
         )}
       </>

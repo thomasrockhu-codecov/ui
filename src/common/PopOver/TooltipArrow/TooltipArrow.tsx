@@ -1,15 +1,20 @@
 import React, { forwardRef } from 'react';
-import styled, { css, CSSProperties } from 'styled-components';
+import styled, { css } from 'styled-components';
 import { Props } from './TooltipArrow.types';
-import { BORDER_SIZE, TRIANGLE_SIZE } from '../../consts';
+import { BORDER_SIZE, TRIANGLE_SIZE } from '../consts';
 
-const arrowTop = css`
+type ArrowProps = {
+  borderColor: Props['borderColor'];
+  backgroundColor: Props['backgroundColor'];
+};
+
+const arrowTop = css<ArrowProps>`
   top: 3px;
   margin-left: -${TRIANGLE_SIZE}px;
   &::before {
     border-left: ${TRIANGLE_SIZE}px solid transparent;
     border-right: ${TRIANGLE_SIZE}px solid transparent;
-    border-bottom: ${TRIANGLE_SIZE}px solid ${(p) => p.theme.color.bubbleBorder};
+    border-bottom: ${TRIANGLE_SIZE}px solid ${(p) => p.borderColor(p.theme)};
   }
 
   &::after {
@@ -17,18 +22,17 @@ const arrowTop = css`
     top: 2px;
     border-left: ${TRIANGLE_SIZE - BORDER_SIZE * 2}px solid transparent;
     border-right: ${TRIANGLE_SIZE - BORDER_SIZE * 2}px solid transparent;
-    border-bottom: ${TRIANGLE_SIZE - BORDER_SIZE * 2}px solid
-      ${(p) => p.theme.color.bubbleBackground};
+    border-bottom: ${TRIANGLE_SIZE - BORDER_SIZE * 2}px solid ${(p) => p.backgroundColor(p.theme)};
   }
 `;
 
-const arrowBottom = css`
+const arrowBottom = css<ArrowProps>`
   bottom: 13px;
   margin-left: -${TRIANGLE_SIZE}px;
   &::before {
     border-left: ${TRIANGLE_SIZE}px solid transparent;
     border-right: ${TRIANGLE_SIZE}px solid transparent;
-    border-top: ${TRIANGLE_SIZE}px solid ${(p) => p.theme.color.bubbleBorder};
+    border-top: ${TRIANGLE_SIZE}px solid ${(p) => p.borderColor(p.theme)};
   }
 
   &::after {
@@ -36,17 +40,17 @@ const arrowBottom = css`
     top: 0;
     border-left: ${TRIANGLE_SIZE - BORDER_SIZE * 2}px solid transparent;
     border-right: ${TRIANGLE_SIZE - BORDER_SIZE * 2}px solid transparent;
-    border-top: ${TRIANGLE_SIZE - BORDER_SIZE * 2}px solid ${(p) => p.theme.color.bubbleBackground};
+    border-top: ${TRIANGLE_SIZE - BORDER_SIZE * 2}px solid ${(p) => p.backgroundColor(p.theme)};
   }
 `;
 
-const arrowLeft = css`
+const arrowLeft = css<ArrowProps>`
   left: 3px;
   margin-top: -${TRIANGLE_SIZE}px;
   &::before {
     border-top: ${TRIANGLE_SIZE}px solid transparent;
     border-bottom: ${TRIANGLE_SIZE}px solid transparent;
-    border-right: ${TRIANGLE_SIZE}px solid ${(p) => p.theme.color.bubbleBorder};
+    border-right: ${TRIANGLE_SIZE}px solid ${(p) => p.borderColor(p.theme)};
   }
 
   &::after {
@@ -54,19 +58,18 @@ const arrowLeft = css`
     top: ${BORDER_SIZE * 2}px;
     border-top: ${TRIANGLE_SIZE - BORDER_SIZE * 2}px solid transparent;
     border-bottom: ${TRIANGLE_SIZE - BORDER_SIZE * 2}px solid transparent;
-    border-right: ${TRIANGLE_SIZE - BORDER_SIZE * 2}px solid
-      ${(p) => p.theme.color.bubbleBackground};
+    border-right: ${TRIANGLE_SIZE - BORDER_SIZE * 2}px solid ${(p) => p.backgroundColor(p.theme)};
   }
 `;
 
-const arrowRight = css`
+const arrowRight = css<ArrowProps>`
   left: auto;
   right: 13px;
   margin-top: -${TRIANGLE_SIZE}px;
   &::before {
     border-top: ${TRIANGLE_SIZE}px solid transparent;
     border-bottom: ${TRIANGLE_SIZE}px solid transparent;
-    border-left: ${TRIANGLE_SIZE}px solid ${(p) => p.theme.color.bubbleBorder};
+    border-left: ${TRIANGLE_SIZE}px solid ${(p) => p.borderColor(p.theme)};
   }
 
   &::after {
@@ -74,7 +77,7 @@ const arrowRight = css`
     top: ${BORDER_SIZE * 2}px;
     border-top: ${TRIANGLE_SIZE - BORDER_SIZE * 2}px solid transparent;
     border-bottom: ${TRIANGLE_SIZE - BORDER_SIZE * 2}px solid transparent;
-    border-left: ${TRIANGLE_SIZE - BORDER_SIZE * 2}px solid ${(p) => p.theme.color.bubbleBackground};
+    border-left: ${TRIANGLE_SIZE - BORDER_SIZE * 2}px solid ${(p) => p.backgroundColor(p.theme)};
   }
 `;
 
@@ -100,11 +103,21 @@ const StyledArrow = styled.span<Props>`
   ${(p) => (p.position === 'right' ? arrowLeft : '')}
 `;
 
-const TooltipArrow: React.ForwardRefExoticComponent<
-  React.PropsWithoutRef<{ readonly position?: any; style?: CSSProperties }> &
-    React.RefAttributes<unknown>
-> = forwardRef(({ position, style }, ref) => {
-  return <StyledArrow ref={ref as any} position={position} style={style} />;
-});
+type PropsWithoutRef = Omit<Props, 'ref'>;
+
+const TooltipArrow = forwardRef<HTMLSpanElement, PropsWithoutRef>(
+  ({ position, style, backgroundColor, borderColor, ...htmlSpanProps }, ref) => {
+    return (
+      <StyledArrow
+        ref={ref as any}
+        position={position}
+        style={style}
+        backgroundColor={backgroundColor}
+        borderColor={borderColor}
+        {...htmlSpanProps}
+      />
+    );
+  },
+);
 
 export default TooltipArrow;
