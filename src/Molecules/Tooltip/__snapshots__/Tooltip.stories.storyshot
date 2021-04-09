@@ -1,5 +1,296 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`Storyshots Molecules / Tooltip Broken Positioning 1`] = `
+.c1 {
+  margin-top: 160px;
+  background-color: transparent;
+}
+
+.c0 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.c2 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 20px;
+  height: 20px;
+  fill: #282823;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
+}
+
+.c6 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.3333333333333333;
+}
+
+.c4::before,
+.c4::after {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 0;
+  height: 0;
+}
+
+.c4::before {
+  left: 0;
+  top: 0;
+}
+
+.c5 {
+  padding: 4px 8px;
+  box-shadow: 0 10px 16px rgba(0,0,0,0.16);
+  background: #FFFFFF;
+  border: solid 1px #BCBCB6;
+  max-width: 200px;
+  overflow-wrap: break-word;
+}
+
+.c3 {
+  z-index: 400;
+  pointer-events: none;
+}
+
+.c3[data-popper-placement^='top'] {
+  padding-bottom: 12px;
+}
+
+.c3[data-popper-placement^='bottom'] {
+  padding-top: 12px;
+}
+
+.c3[data-popper-placement^='left'] {
+  padding-right: 12px;
+}
+
+.c3[data-popper-placement^='right'] {
+  padding-left: 12px;
+}
+
+<div
+  className="c0"
+>
+  <div
+    className="c1"
+  >
+    <svg
+      aria-describedby=""
+      aria-hidden="true"
+      className="c2"
+      focusable="false"
+      onBlur={[Function]}
+      onFocus={[Function]}
+      onKeyDown={[Function]}
+      onMouseDown={[Function]}
+      onMouseEnter={[Function]}
+      onMouseLeave={[Function]}
+      onMouseMove={[Function]}
+      preserveAspectRatio="xMidYMid meet"
+      role="presentation"
+      viewBox="0 0 24 24"
+    >
+      <path
+        d="M5.72727273,14.1935484 L5.72727273,3.87096774 L1.27272727,3.87096774 L1.27272727,14.1935484 L5.72727273,14.1935484 Z M5.72727273,15.483871 L1.27272727,15.483871 L3.5,18.0645161 L5.72727273,15.483871 Z M5.72727273,2.58064516 L5.72727273,1.29032258 L1.27272727,1.29032258 L1.27272727,2.58064516 L5.72727273,2.58064516 Z M0,0 L7,0 L7,16.1290323 L3.5,20 L0,16.1290323 L0,0 Z M1.90909091,13.5483871 L1.90909091,4.51612903 L3.18181818,4.51612903 L3.18181818,13.5483871 L1.90909091,13.5483871 Z M3.81818182,13.5483871 L3.81818182,4.51612903 L5.09090909,4.51612903 L5.09090909,13.5483871 L3.81818182,13.5483871 Z M2.54545455,17.4193548 L4.45454545,17.4193548 L4.45454545,18.7096774 L2.54545455,18.7096774 L2.54545455,17.4193548 Z"
+        transform="rotate(45,7,21) scale(1.35)"
+      />
+    </svg>
+    <portal-dummy>
+      <span
+        className="c3"
+        id=""
+        style={
+          Object {
+            "left": "0",
+            "position": "absolute",
+            "top": "0",
+          }
+        }
+      >
+        <span
+          className="c4"
+        />
+        <div
+          className="c5 "
+        >
+          <span
+            className="c6"
+          >
+            This tooltip has children which doesn't handle refs correctly. Thus, it's positioning doesn't work properly. See wrapChild for examples of how to fix this.
+          </span>
+        </div>
+      </span>
+    </portal-dummy>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Molecules / Tooltip Controlled Open 1`] = `
+Array [
+  .c0 {
+  display: block;
+}
+
+<button
+    className="c0"
+    onClick={[Function]}
+  >
+    Toogle Tooltip
+  </button>,
+  .c1 {
+  margin-top: 40px;
+  background-color: transparent;
+}
+
+.c0 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.c2 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 20px;
+  height: 20px;
+  fill: #282823;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
+}
+
+.c6 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.3333333333333333;
+}
+
+.c4::before,
+.c4::after {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 0;
+  height: 0;
+}
+
+.c4::before {
+  left: 0;
+  top: 0;
+}
+
+.c5 {
+  padding: 4px 8px;
+  box-shadow: 0 10px 16px rgba(0,0,0,0.16);
+  background: #FFFFFF;
+  border: solid 1px #BCBCB6;
+  max-width: 200px;
+  overflow-wrap: break-word;
+}
+
+.c3 {
+  z-index: 400;
+  pointer-events: none;
+}
+
+.c3[data-popper-placement^='top'] {
+  padding-bottom: 12px;
+}
+
+.c3[data-popper-placement^='bottom'] {
+  padding-top: 12px;
+}
+
+.c3[data-popper-placement^='left'] {
+  padding-right: 12px;
+}
+
+.c3[data-popper-placement^='right'] {
+  padding-left: 12px;
+}
+
+<div
+    className="c0"
+  >
+    <div
+      className="c1"
+    >
+      <div
+        aria-describedby="nn-tooltip-43"
+        onBlur={[Function]}
+        onFocus={[Function]}
+        onKeyDown={[Function]}
+        onMouseDown={[Function]}
+        onMouseEnter={[Function]}
+        onMouseLeave={[Function]}
+        onMouseMove={[Function]}
+      >
+        <svg
+          aria-hidden="true"
+          className="c2"
+          focusable="false"
+          preserveAspectRatio="xMidYMid meet"
+          role="presentation"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M5.72727273,14.1935484 L5.72727273,3.87096774 L1.27272727,3.87096774 L1.27272727,14.1935484 L5.72727273,14.1935484 Z M5.72727273,15.483871 L1.27272727,15.483871 L3.5,18.0645161 L5.72727273,15.483871 Z M5.72727273,2.58064516 L5.72727273,1.29032258 L1.27272727,1.29032258 L1.27272727,2.58064516 L5.72727273,2.58064516 Z M0,0 L7,0 L7,16.1290323 L3.5,20 L0,16.1290323 L0,0 Z M1.90909091,13.5483871 L1.90909091,4.51612903 L3.18181818,4.51612903 L3.18181818,13.5483871 L1.90909091,13.5483871 Z M3.81818182,13.5483871 L3.81818182,4.51612903 L5.09090909,4.51612903 L5.09090909,13.5483871 L3.81818182,13.5483871 Z M2.54545455,17.4193548 L4.45454545,17.4193548 L4.45454545,18.7096774 L2.54545455,18.7096774 L2.54545455,17.4193548 Z"
+            transform="rotate(45,7,21) scale(1.35)"
+          />
+        </svg>
+      </div>
+      <portal-dummy>
+        <span
+          className="c3"
+          id="nn-tooltip-43"
+          style={
+            Object {
+              "left": "0",
+              "position": "absolute",
+              "top": "0",
+            }
+          }
+        >
+          <span
+            className="c4"
+          />
+          <div
+            className="c5 "
+          >
+            <span
+              className="c6"
+            >
+              This is a controlled tooltip.
+            </span>
+          </div>
+        </span>
+      </portal-dummy>
+    </div>
+  </div>,
+]
+`;
+
 exports[`Storyshots Molecules / Tooltip Custom max-width 1`] = `
 .c0 {
   display: block;
@@ -567,4 +858,285 @@ exports[`Storyshots Molecules / Tooltip With position defined 1`] = `
     </div>
   </div>
 </div>
+`;
+
+exports[`Storyshots Molecules / Tooltip Wrap Child 1`] = `
+Array [
+  .c1 {
+  margin-top: 80px;
+  background-color: transparent;
+}
+
+.c0 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.c2 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 20px;
+  height: 20px;
+  fill: #282823;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
+}
+
+.c6 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.3333333333333333;
+}
+
+.c4::before,
+.c4::after {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 0;
+  height: 0;
+}
+
+.c4::before {
+  left: 0;
+  top: 0;
+}
+
+.c5 {
+  padding: 4px 8px;
+  box-shadow: 0 10px 16px rgba(0,0,0,0.16);
+  background: #FFFFFF;
+  border: solid 1px #BCBCB6;
+  max-width: 200px;
+  overflow-wrap: break-word;
+}
+
+.c3 {
+  z-index: 400;
+  pointer-events: none;
+}
+
+.c3[data-popper-placement^='top'] {
+  padding-bottom: 12px;
+}
+
+.c3[data-popper-placement^='bottom'] {
+  padding-top: 12px;
+}
+
+.c3[data-popper-placement^='left'] {
+  padding-right: 12px;
+}
+
+.c3[data-popper-placement^='right'] {
+  padding-left: 12px;
+}
+
+<div
+    className="c0"
+  >
+    <div
+      className="c1"
+    >
+      <span
+        aria-describedby="nn-tooltip-44"
+        onBlur={[Function]}
+        onFocus={[Function]}
+        onKeyDown={[Function]}
+        onMouseDown={[Function]}
+        onMouseEnter={[Function]}
+        onMouseLeave={[Function]}
+        onMouseMove={[Function]}
+      >
+        <svg
+          aria-hidden="true"
+          className="c2"
+          focusable="false"
+          preserveAspectRatio="xMidYMid meet"
+          role="presentation"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M5.72727273,14.1935484 L5.72727273,3.87096774 L1.27272727,3.87096774 L1.27272727,14.1935484 L5.72727273,14.1935484 Z M5.72727273,15.483871 L1.27272727,15.483871 L3.5,18.0645161 L5.72727273,15.483871 Z M5.72727273,2.58064516 L5.72727273,1.29032258 L1.27272727,1.29032258 L1.27272727,2.58064516 L5.72727273,2.58064516 Z M0,0 L7,0 L7,16.1290323 L3.5,20 L0,16.1290323 L0,0 Z M1.90909091,13.5483871 L1.90909091,4.51612903 L3.18181818,4.51612903 L3.18181818,13.5483871 L1.90909091,13.5483871 Z M3.81818182,13.5483871 L3.81818182,4.51612903 L5.09090909,4.51612903 L5.09090909,13.5483871 L3.81818182,13.5483871 Z M2.54545455,17.4193548 L4.45454545,17.4193548 L4.45454545,18.7096774 L2.54545455,18.7096774 L2.54545455,17.4193548 Z"
+            transform="rotate(45,7,21) scale(1.35)"
+          />
+        </svg>
+      </span>
+      <portal-dummy>
+        <span
+          className="c3"
+          id="nn-tooltip-44"
+          style={
+            Object {
+              "left": "0",
+              "position": "absolute",
+              "top": "0",
+            }
+          }
+        >
+          <span
+            className="c4"
+          />
+          <div
+            className="c5 "
+          >
+            <span
+              className="c6"
+            >
+              With the wrapChiild prop, a DOM element of type span wraps the children, this guarantees a element in the DOM to work properly with ref (and thus positioning).
+            </span>
+          </div>
+        </span>
+      </portal-dummy>
+    </div>
+  </div>,
+  .c1 {
+  margin-top: 160px;
+  background-color: transparent;
+}
+
+.c0 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.c2 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 20px;
+  height: 20px;
+  fill: #282823;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
+}
+
+.c6 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.3333333333333333;
+}
+
+.c4::before,
+.c4::after {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 0;
+  height: 0;
+}
+
+.c4::before {
+  left: 0;
+  top: 0;
+}
+
+.c5 {
+  padding: 4px 8px;
+  box-shadow: 0 10px 16px rgba(0,0,0,0.16);
+  background: #FFFFFF;
+  border: solid 1px #BCBCB6;
+  max-width: 200px;
+  overflow-wrap: break-word;
+}
+
+.c3 {
+  z-index: 400;
+  pointer-events: none;
+}
+
+.c3[data-popper-placement^='top'] {
+  padding-bottom: 12px;
+}
+
+.c3[data-popper-placement^='bottom'] {
+  padding-top: 12px;
+}
+
+.c3[data-popper-placement^='left'] {
+  padding-right: 12px;
+}
+
+.c3[data-popper-placement^='right'] {
+  padding-left: 12px;
+}
+
+<div
+    className="c0"
+  >
+    <div
+      className="c1"
+    >
+      <div
+        aria-describedby="nn-tooltip-45"
+        onBlur={[Function]}
+        onFocus={[Function]}
+        onKeyDown={[Function]}
+        onMouseDown={[Function]}
+        onMouseEnter={[Function]}
+        onMouseLeave={[Function]}
+        onMouseMove={[Function]}
+      >
+        <svg
+          aria-hidden="true"
+          className="c2"
+          focusable="false"
+          preserveAspectRatio="xMidYMid meet"
+          role="presentation"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M5.72727273,14.1935484 L5.72727273,3.87096774 L1.27272727,3.87096774 L1.27272727,14.1935484 L5.72727273,14.1935484 Z M5.72727273,15.483871 L1.27272727,15.483871 L3.5,18.0645161 L5.72727273,15.483871 Z M5.72727273,2.58064516 L5.72727273,1.29032258 L1.27272727,1.29032258 L1.27272727,2.58064516 L5.72727273,2.58064516 Z M0,0 L7,0 L7,16.1290323 L3.5,20 L0,16.1290323 L0,0 Z M1.90909091,13.5483871 L1.90909091,4.51612903 L3.18181818,4.51612903 L3.18181818,13.5483871 L1.90909091,13.5483871 Z M3.81818182,13.5483871 L3.81818182,4.51612903 L5.09090909,4.51612903 L5.09090909,13.5483871 L3.81818182,13.5483871 Z M2.54545455,17.4193548 L4.45454545,17.4193548 L4.45454545,18.7096774 L2.54545455,18.7096774 L2.54545455,17.4193548 Z"
+            transform="rotate(45,7,21) scale(1.35)"
+          />
+        </svg>
+      </div>
+      <portal-dummy>
+        <span
+          className="c3"
+          id="nn-tooltip-45"
+          style={
+            Object {
+              "left": "0",
+              "position": "absolute",
+              "top": "0",
+            }
+          }
+        >
+          <span
+            className="c4"
+          />
+          <div
+            className="c5 "
+          >
+            <span
+              className="c6"
+            >
+              This tooltip doesn't use the wrapChild prop, but has a children that correctly handles refs
+            </span>
+          </div>
+        </span>
+      </portal-dummy>
+    </div>
+  </div>,
+]
 `;
