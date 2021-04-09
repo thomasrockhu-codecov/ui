@@ -29,6 +29,7 @@ export const Tooltip: TooltipComponent = forwardRef(
       openDelay = 100,
       closeDelay = 500,
       isOpen: controlledIsOpen,
+      wrapChild,
     },
     ref,
   ) => {
@@ -49,7 +50,7 @@ export const Tooltip: TooltipComponent = forwardRef(
 
     return (
       <>
-        {cloneElement(child, {
+        {cloneElement(wrapChild ? <span>{child}</span> : child, {
           'aria-describedby': isOpen ? id : undefined,
           ref: mergeRefs([setTriggerElement, triggerElementRef]),
           onMouseEnter: wrapEvent(child.props.onMouseEnter, handleMouseEnter),

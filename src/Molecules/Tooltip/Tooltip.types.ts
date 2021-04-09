@@ -15,6 +15,12 @@ export type Props = {
   openDelay?: number;
   closeDelay?: number;
   isOpen?: boolean;
+  /**
+   * @wrapChild
+   * Wraps children with a span DOM element.
+   * Useful for when children does not handle refs correctly. Could fix positioning issues.
+   */
+  wrapChild?: boolean;
 };
 
 export type TooltipComponent = React.FC<Props>;

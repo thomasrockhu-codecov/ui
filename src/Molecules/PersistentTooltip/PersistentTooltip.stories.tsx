@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
-import { Box, Flexbox, Drawer, Input, PersistentTooltip, Typography } from '../..';
+import { Box, Flexbox, Drawer, Input, PersistentTooltip, Typography, Icon } from '../..';
 
 export default {
   title: 'Molecules / Persistent Tooltip',
@@ -223,6 +223,70 @@ export const PersistentTooltipInDrawer = () => {
           <Input.Text label="Label" />
         </PersistentTooltip>
       </Drawer>
+    </StoryWrapper>
+  );
+};
+
+export const WrapChild = () => {
+  const [isOpen, setIsOpen] = useState(true);
+
+  return (
+    <StoryWrapper>
+      <Flexbox container>
+        <Box mt={20}>
+          <PersistentTooltip
+            isOpen={isOpen}
+            title="With wrapchild prop"
+            description="With the wrapChiild prop, a DOM element of type span wraps the children, this guarantees a element in the DOM to work properly with ref (and thus positioning)."
+            closeButtonTitle="Close by clicking X"
+            onClose={() => setIsOpen(false)}
+            position="right"
+            wrapChild
+          >
+            <Icon.Pen />
+          </PersistentTooltip>
+        </Box>
+      </Flexbox>
+
+      <Flexbox container>
+        <Box mt={40}>
+          <PersistentTooltip
+            isOpen={isOpen}
+            title="With a proper DOM-node as children"
+            description="This tooltip doesn't use the wrapChild prop, but has a children that correctly handles refs."
+            closeButtonTitle="Close by clicking X"
+            onClose={() => setIsOpen(false)}
+            position="right"
+          >
+            <div>
+              <Icon.Pen />
+            </div>
+          </PersistentTooltip>
+        </Box>
+      </Flexbox>
+    </StoryWrapper>
+  );
+};
+
+export const BrokenPositioning = () => {
+  const [isOpen, setIsOpen] = useState(true);
+
+  return (
+    <StoryWrapper>
+      <Flexbox container>
+        <Box mt={40}>
+          <PersistentTooltip
+            isOpen={isOpen}
+            title="Broken positioning"
+            description="This tooltip has children which doesn't handle refs correctly. Thus, it's positioning doesn't work properly. See wrapChild for examples of how to fix this."
+            closeButtonTitle="Close by clicking X"
+            onClose={() => setIsOpen(false)}
+            position="right"
+          >
+            <Icon.Pen />
+          </PersistentTooltip>
+        </Box>
+      </Flexbox>
     </StoryWrapper>
   );
 };

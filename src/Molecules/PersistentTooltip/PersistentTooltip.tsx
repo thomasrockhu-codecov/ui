@@ -40,6 +40,7 @@ export const PersistentTooltip = (forwardRef<HTMLDivElement, PersistentTooltipPr
       maxWidth = 79,
       ariaLabel,
       inModal,
+      wrapChild,
       ...htmlDivProps
     },
     ref,
@@ -89,7 +90,7 @@ export const PersistentTooltip = (forwardRef<HTMLDivElement, PersistentTooltipPr
 
     return (
       <>
-        {cloneElement(child, {
+        {cloneElement(wrapChild ? <span>{child}</span> : child, {
           'aria-describedby': isOpen ? id : undefined,
           ref: mergeRefs([setTriggerElement, triggerElementRef]),
         })}
