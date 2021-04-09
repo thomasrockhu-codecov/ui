@@ -319,6 +319,14 @@ export type ThemeColors<Version extends ThemeColorsVersion> = {
   indexFundsBackground: RawColor['gray6'];
   /** brandBlue */
   indexFundsNorwegianAccent: RawColor['brandBlue'];
+  /** complementaryPink1 */
+  investmentPredictionGraphPink: RawColor['complementaryPink1'];
+  /** complementaryBlue2 */
+  investmentPredictionGraphBlue: RawColor['complementaryBlue2'];
+  /** complementaryGreen2 */
+  investmentPredictionGraphGreen: RawColor['complementaryGreen2'];
+  /** complementaryTurquoise2 */
+  investmentPredictionGraphTurquoise: RawColor['complementaryTurquoise2'];
   /** brandPink, brandBlue, complementaryBlue2, black, complementaryTurquoise1 */
   indexFundsFinnishAccent: string[];
   paletteMap: string[];
