@@ -1,3 +1,31 @@
+# [6.4.0](https://github.com/nordnet/ui/compare/v6.3.0...v6.4.0) (2021-04-09)
+
+
+### Bug Fixes
+
+* 🐛 alignment of close button ([5ffb296](https://github.com/nordnet/ui/commit/5ffb296))
+* 🐛 change prop name from open to isopen in tooltip ([74a2c33](https://github.com/nordnet/ui/commit/74a2c33))
+* 🐛 change prop name in usetooltip ([c4fd221](https://github.com/nordnet/ui/commit/c4fd221))
+* 🐛 only allow single child to persistent tooltip ([7d8513f](https://github.com/nordnet/ui/commit/7d8513f))
+* 🐛 remove unecessary id in tooltip ([97ba501](https://github.com/nordnet/ui/commit/97ba501))
+* 🐛 remove unused color ([8ff27c0](https://github.com/nordnet/ui/commit/8ff27c0))
+* add storyshot ([caebb38](https://github.com/nordnet/ui/commit/caebb38))
+* handle maxWidth props default value ([70de9c5](https://github.com/nordnet/ui/commit/70de9c5))
+* remove custom border bottom prop and and margin fix ([14a4121](https://github.com/nordnet/ui/commit/14a4121))
+
+
+### Features
+
+* 🎸 add dynamic color styling to persistant tooltip ([17a2d1a](https://github.com/nordnet/ui/commit/17a2d1a))
+* 🎸 add remaining popover props to persistent tooltip ([34cd857](https://github.com/nordnet/ui/commit/34cd857))
+* 🎸 add wrapchild prop to prevent positioning issues ([aee7957](https://github.com/nordnet/ui/commit/aee7957))
+* 🎸 export and style content from tooltip popup components ([c4a9e29](https://github.com/nordnet/ui/commit/c4a9e29))
+* 🎸 export tooltip sub components for easy styling ([9eb40a4](https://github.com/nordnet/ui/commit/9eb40a4))
+* 🎸 generate new id if none is passed to persisted tooltip ([30ffc9c](https://github.com/nordnet/ui/commit/30ffc9c))
+* 🎸 implement new persistent tooltip component ([b674fc1](https://github.com/nordnet/ui/commit/b674fc1))
+* add a story for persistent tooltip ([8649583](https://github.com/nordnet/ui/commit/8649583))
+* wip add persisted tooltip ([45297c0](https://github.com/nordnet/ui/commit/45297c0))
+
 # [6.3.0](https://github.com/nordnet/ui/compare/v6.2.2...v6.3.0) (2021-04-09)
 
 
