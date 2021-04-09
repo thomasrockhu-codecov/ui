@@ -1,7 +1,7 @@
 import { Props as PopOverProps } from '../../common/PopOver/PopOver.types';
 
 export type Props = {
-  children?: React.ReactNode;
+  children: React.ReactChild;
   isOpen: boolean;
   onClose: () => void;
   title: React.ReactNode;
