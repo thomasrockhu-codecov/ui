@@ -1,3 +1,10 @@
+# [6.3.0](https://github.com/nordnet/ui/compare/v6.2.2...v6.3.0) (2021-04-09)
+
+
+### Features
+
+* add new epk graph colors ([14631bf](https://github.com/nordnet/ui/commit/14631bf))
+
 ## [6.2.2](https://github.com/nordnet/ui/compare/v6.2.1...v6.2.2) (2021-04-06)
 
 
