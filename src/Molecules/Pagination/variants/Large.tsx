@@ -48,7 +48,7 @@ const getWidthForList = (
   truncatedItemWidth: number,
   numberOfPages: number,
 ) => {
-  const MAX_NUMBER_ITEMS = 9;
+  const MAX_NUMBER_ITEMS = 7;
   const NUMBER_OF_CHEVRONS = 2;
 
   if (numberOfPages <= 5) {
