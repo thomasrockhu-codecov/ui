@@ -57,6 +57,8 @@ const Pagination: React.FC<PaginationProps> = ({
     <nav role="navigation" aria-label={label}>
       {variant === 'compact' && (
         <Compact
+          currentPage={currentPageFromProps || currentPage}
+          numberOfPages={numberOfPages}
           onClickPrevious={onClickPrevious}
           onClickNext={onClickNext}
           nextPageLabel={nextPageLabel}

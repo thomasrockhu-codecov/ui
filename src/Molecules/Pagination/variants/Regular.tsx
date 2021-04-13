@@ -66,9 +66,15 @@ const Regular: React.FC<PaginationDefaultProps> = ({
   currentPageLabel,
   pageItemLabel,
 }) => {
+  if (numberOfPages <= 1) {
+    return null;
+  }
+
   return (
     <StyledFlexbox container $numberOfPages={numberOfPages}>
-      <ChevronButton direction="left" onClick={onClickPrevious} label={previousPageLabel} />
+      {currentPage !== 1 && (
+        <ChevronButton direction="left" onClick={onClickPrevious} label={previousPageLabel} />
+      )}
       <Flexbox container item flex="1" justifyContent="center" gutter={2} as={List}>
         <PageItems
           currentPage={currentPage}
@@ -80,7 +86,9 @@ const Regular: React.FC<PaginationDefaultProps> = ({
           pageItemLabel={pageItemLabel}
         />
       </Flexbox>
-      <ChevronButton direction="right" onClick={onClickNext} label={nextPageLabel} />
+      {currentPage !== numberOfPages && (
+        <ChevronButton direction="right" onClick={onClickNext} label={nextPageLabel} />
+      )}
     </StyledFlexbox>
   );
 };
