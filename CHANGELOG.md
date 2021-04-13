@@ -1,3 +1,11 @@
+## [6.5.1](https://github.com/nordnet/ui/compare/v6.5.0...v6.5.1) (2021-04-13)
+
+
+### Bug Fixes
+
+* add pagination buttons not needed ([f13346b](https://github.com/nordnet/ui/commit/f13346b))
+* dont adjust num pages now, do that later ([3dd1c95](https://github.com/nordnet/ui/commit/3dd1c95))
+
 # [6.5.0](https://github.com/nordnet/ui/compare/v6.4.0...v6.5.0) (2021-04-13)
 
 
