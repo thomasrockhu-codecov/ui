@@ -1,3 +1,10 @@
+# [6.5.0](https://github.com/nordnet/ui/compare/v6.4.0...v6.5.0) (2021-04-13)
+
+
+### Features
+
+* add mortage colors to theme ([f93a6e3](https://github.com/nordnet/ui/commit/f93a6e3))
+
 # [6.4.0](https://github.com/nordnet/ui/compare/v6.3.0...v6.4.0) (2021-04-09)
 
 
