@@ -1983,6 +1983,42 @@ Array [
       focusable="false"
       preserveAspectRatio="xMidYMid meet"
       role="presentation"
+      viewBox="0 0 24 24"
+    >
+      <path
+        d="M15.64 5.47L19 2.11l3.36 3.36-1.06 1.06-1.55-1.55V22h-1.5V4.98L16.7 6.53l-1.06-1.06zM14.75 8v14h-1.5V8h1.5zm-5 4v10h-1.5V12h1.5zm-5 4v6h-1.5v-6h1.5z"
+        fillRule="nonzero"
+      />
+    </svg>
+  </div>,
+  .c0 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 20px;
+  height: 20px;
+  fill: #0046FF;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
+}
+
+<div
+    style={
+      Object {
+        "display": "inline-block",
+        "outline": "1px dashed #bbb",
+      }
+    }
+  >
+    <svg
+      aria-hidden="true"
+      className="c0"
+      focusable="false"
+      preserveAspectRatio="xMidYMid meet"
+      role="presentation"
       viewBox="0 0 16 16"
     >
       <path
@@ -7226,6 +7262,40 @@ exports[`Storyshots Atoms / Icon Available icons 1`] = `
           <path
             d="M0 0l5 8.26v7.66l6-4.19V8.28L15.98 0H0zm3.55 2h8.9L9 7.72v2.97l-2 1.4v-4.4L3.55 2z"
             fillRule="evenodd"
+          />
+        </svg>
+      </div>
+    </div>
+  </div>
+  <div
+    className="c1"
+    direction="row"
+  >
+    <div
+      className="c2"
+    >
+      FinanceGrowth
+    </div>
+    <div>
+      <div
+        style={
+          Object {
+            "display": "inline-block",
+            "outline": "1px dashed #bbb",
+          }
+        }
+      >
+        <svg
+          aria-hidden="true"
+          className="c3"
+          focusable="false"
+          preserveAspectRatio="xMidYMid meet"
+          role="presentation"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M15.64 5.47L19 2.11l3.36 3.36-1.06 1.06-1.55-1.55V22h-1.5V4.98L16.7 6.53l-1.06-1.06zM14.75 8v14h-1.5V8h1.5zm-5 4v10h-1.5V12h1.5zm-5 4v6h-1.5v-6h1.5z"
+            fillRule="nonzero"
           />
         </svg>
       </div>
