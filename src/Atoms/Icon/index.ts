@@ -49,6 +49,7 @@ import { EyeWithPlus } from './components/EyeWithPlus';
 import { EyeWithPlusActive } from './components/EyeWithPlusActive';
 import { File } from './components/File';
 import { Filter } from './components/Filter';
+import { FinanceGrowth } from './components/FinanceGrowth';
 import { Financial } from './components/Financial';
 import { Flag } from './components/Flag';
 import { Glasses } from './components/Glasses';
@@ -179,6 +180,7 @@ export default {
   EyeWithPlusActive,
   File,
   Filter,
+  FinanceGrowth,
   Financial,
   Flag,
   Glasses,
