@@ -1,3 +1,10 @@
+# [6.6.0](https://github.com/nordnet/ui/compare/v6.5.1...v6.6.0) (2021-04-19)
+
+
+### Features
+
+* add finance growth icon ([6e69ba8](https://github.com/nordnet/ui/commit/6e69ba8))
+
 ## [6.5.1](https://github.com/nordnet/ui/compare/v6.5.0...v6.5.1) (2021-04-13)
 
 
