@@ -914,7 +914,7 @@ exports[`Storyshots Molecules / Input / Text Disabled +addon 1`] = `
 .c1 {
   text-overflow: ellipsis;
   white-space: nowrap;
-  cursor: pointer;
+  cursor: not-allowed;
 }
 
 .c9 {
@@ -989,6 +989,7 @@ exports[`Storyshots Molecules / Input / Text Disabled +addon 1`] = `
   background-color: #EBEBE8;
   padding-left: 32px;
   padding-right: 40px;
+  cursor: not-allowed;
 }
 
 .c6:focus {
@@ -1126,7 +1127,7 @@ exports[`Storyshots Molecules / Input / Text Disabled 1`] = `
 .c1 {
   text-overflow: ellipsis;
   white-space: nowrap;
-  cursor: pointer;
+  cursor: not-allowed;
 }
 
 .c2 {
@@ -1165,6 +1166,7 @@ exports[`Storyshots Molecules / Input / Text Disabled 1`] = `
   border-width: 1px;
   position: relative;
   background-color: #EBEBE8;
+  cursor: not-allowed;
 }
 
 .c6:focus {
@@ -3034,7 +3036,7 @@ Array [
   align-items: center;
 }
 
-.c18 {
+.c19 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -3050,7 +3052,7 @@ Array [
   align-items: center;
 }
 
-.c15 {
+.c16 {
   position: absolute;
   height: 1px;
   width: 1px;
@@ -3063,6 +3065,12 @@ Array [
   text-overflow: ellipsis;
   white-space: nowrap;
   cursor: pointer;
+}
+
+.c11 {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  cursor: not-allowed;
 }
 
 .c5 {
@@ -3083,7 +3091,7 @@ Array [
   line-height: 1.4285714285714286;
 }
 
-.c11 {
+.c12 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #A0A09B;
   margin: 0;
@@ -3092,7 +3100,7 @@ Array [
   line-height: 1.4285714285714286;
 }
 
-.c14 {
+.c15 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #FF1900;
   margin: 0;
@@ -3101,7 +3109,7 @@ Array [
   line-height: 1.3333333333333333;
 }
 
-.c20 {
+.c21 {
   width: 32px;
   top: 0;
   height: 100%;
@@ -3111,12 +3119,12 @@ Array [
   right: 4px;
 }
 
-.c20:not(:focus) {
+.c21:not(:focus) {
   padding-left: 0;
   padding-right: 0;
 }
 
-.c20:not(:focus) {
+.c21:not(:focus) {
   right: 0;
 }
 
@@ -3220,7 +3228,7 @@ Array [
   padding-right: 0px;
 }
 
-.c12 {
+.c13 {
   font-family: inherit;
   font-size: 100%;
   line-height: 1.15;
@@ -3242,110 +3250,11 @@ Array [
   color: #0046FF;
   font-size: 28px;
   font-weight: bold;
-}
-
-.c12:focus {
-  border-width: 1px;
-}
-
-.c12:focus {
-  border-color: #0046FF;
-}
-
-.c12::-webkit-input-placeholder {
-  color: #0046FF;
-  line-height: inherit;
-  opacity: 1;
-}
-
-.c12::-moz-placeholder {
-  color: #0046FF;
-  line-height: inherit;
-  opacity: 1;
-}
-
-.c12:-ms-input-placeholder {
-  color: #0046FF;
-  line-height: inherit;
-  opacity: 1;
-}
-
-.c12::placeholder {
-  color: #0046FF;
-  line-height: inherit;
-  opacity: 1;
-}
-
-.c12:focus::-webkit-input-placeholder {
-  color: #A0A09B;
-}
-
-.c12:focus::-moz-placeholder {
-  color: #A0A09B;
-}
-
-.c12:focus:-ms-input-placeholder {
-  color: #A0A09B;
-}
-
-.c12:focus::placeholder {
-  color: #A0A09B;
-}
-
-.c12:disabled::-webkit-input-placeholder {
-  color: #A0A09B;
-}
-
-.c12:disabled::-moz-placeholder {
-  color: #A0A09B;
-}
-
-.c12:disabled:-ms-input-placeholder {
-  color: #A0A09B;
-}
-
-.c12:disabled::placeholder {
-  color: #A0A09B;
-}
-
-.c12:disabled {
-  color: #A0A09B;
-}
-
-.c12:focus {
-  padding-left: 8px;
-  padding-right: 0px;
-}
-
-.c13 {
-  font-family: inherit;
-  font-size: 100%;
-  line-height: 1.15;
-  margin: 0;
-  overflow: visible;
-  border: 0;
-  width: 100%;
-  padding: 0px;
-  margin: 0;
-  line-height: inherit;
-  box-sizing: border-box;
-  height: 40px;
-  border: solid;
-  border-color: #FF1900;
-  border-width: 0 0 2px 0;
-  position: relative;
-  background-color: #FFFFFF;
-  color: #0046FF;
-  font-size: 28px;
-  font-weight: bold;
+  cursor: not-allowed;
 }
 
 .c13:focus {
   border-width: 1px;
-}
-
-.c13:hover {
-  border-color: #4B4B46;
 }
 
 .c13:focus {
@@ -3417,7 +3326,7 @@ Array [
   padding-right: 0px;
 }
 
-.c16 {
+.c14 {
   font-family: inherit;
   font-size: 100%;
   line-height: 1.15;
@@ -3431,7 +3340,7 @@ Array [
   box-sizing: border-box;
   height: 40px;
   border: solid;
-  border-color: #00D200;
+  border-color: #FF1900;
   border-width: 0 0 2px 0;
   position: relative;
   background-color: #FFFFFF;
@@ -3440,79 +3349,79 @@ Array [
   font-weight: bold;
 }
 
-.c16:focus {
+.c14:focus {
   border-width: 1px;
 }
 
-.c16:hover {
+.c14:hover {
   border-color: #4B4B46;
 }
 
-.c16:focus {
+.c14:focus {
   border-color: #0046FF;
 }
 
-.c16::-webkit-input-placeholder {
+.c14::-webkit-input-placeholder {
   color: #0046FF;
   line-height: inherit;
   opacity: 1;
 }
 
-.c16::-moz-placeholder {
+.c14::-moz-placeholder {
   color: #0046FF;
   line-height: inherit;
   opacity: 1;
 }
 
-.c16:-ms-input-placeholder {
+.c14:-ms-input-placeholder {
   color: #0046FF;
   line-height: inherit;
   opacity: 1;
 }
 
-.c16::placeholder {
+.c14::placeholder {
   color: #0046FF;
   line-height: inherit;
   opacity: 1;
 }
 
-.c16:focus::-webkit-input-placeholder {
+.c14:focus::-webkit-input-placeholder {
   color: #A0A09B;
 }
 
-.c16:focus::-moz-placeholder {
+.c14:focus::-moz-placeholder {
   color: #A0A09B;
 }
 
-.c16:focus:-ms-input-placeholder {
+.c14:focus:-ms-input-placeholder {
   color: #A0A09B;
 }
 
-.c16:focus::placeholder {
+.c14:focus::placeholder {
   color: #A0A09B;
 }
 
-.c16:disabled::-webkit-input-placeholder {
+.c14:disabled::-webkit-input-placeholder {
   color: #A0A09B;
 }
 
-.c16:disabled::-moz-placeholder {
+.c14:disabled::-moz-placeholder {
   color: #A0A09B;
 }
 
-.c16:disabled:-ms-input-placeholder {
+.c14:disabled:-ms-input-placeholder {
   color: #A0A09B;
 }
 
-.c16:disabled::placeholder {
+.c14:disabled::placeholder {
   color: #A0A09B;
 }
 
-.c16:disabled {
+.c14:disabled {
   color: #A0A09B;
 }
 
-.c16:focus {
+.c14:focus {
   padding-left: 8px;
   padding-right: 0px;
 }
@@ -3531,11 +3440,10 @@ Array [
   box-sizing: border-box;
   height: 40px;
   border: solid;
-  border-color: #BCBCB6;
+  border-color: #00D200;
   border-width: 0 0 2px 0;
   position: relative;
   background-color: #FFFFFF;
-  padding-right: 40px;
   color: #0046FF;
   font-size: 28px;
   font-weight: bold;
@@ -3615,10 +3523,111 @@ Array [
 
 .c17:focus {
   padding-left: 8px;
+  padding-right: 0px;
+}
+
+.c18 {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  overflow: visible;
+  border: 0;
+  width: 100%;
+  padding: 0px;
+  margin: 0;
+  line-height: inherit;
+  box-sizing: border-box;
+  height: 40px;
+  border: solid;
+  border-color: #BCBCB6;
+  border-width: 0 0 2px 0;
+  position: relative;
+  background-color: #FFFFFF;
+  padding-right: 40px;
+  color: #0046FF;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.c18:focus {
+  border-width: 1px;
+}
+
+.c18:hover {
+  border-color: #4B4B46;
+}
+
+.c18:focus {
+  border-color: #0046FF;
+}
+
+.c18::-webkit-input-placeholder {
+  color: #0046FF;
+  line-height: inherit;
+  opacity: 1;
+}
+
+.c18::-moz-placeholder {
+  color: #0046FF;
+  line-height: inherit;
+  opacity: 1;
+}
+
+.c18:-ms-input-placeholder {
+  color: #0046FF;
+  line-height: inherit;
+  opacity: 1;
+}
+
+.c18::placeholder {
+  color: #0046FF;
+  line-height: inherit;
+  opacity: 1;
+}
+
+.c18:focus::-webkit-input-placeholder {
+  color: #A0A09B;
+}
+
+.c18:focus::-moz-placeholder {
+  color: #A0A09B;
+}
+
+.c18:focus:-ms-input-placeholder {
+  color: #A0A09B;
+}
+
+.c18:focus::placeholder {
+  color: #A0A09B;
+}
+
+.c18:disabled::-webkit-input-placeholder {
+  color: #A0A09B;
+}
+
+.c18:disabled::-moz-placeholder {
+  color: #A0A09B;
+}
+
+.c18:disabled:-ms-input-placeholder {
+  color: #A0A09B;
+}
+
+.c18:disabled::placeholder {
+  color: #A0A09B;
+}
+
+.c18:disabled {
+  color: #A0A09B;
+}
+
+.c18:focus {
+  padding-left: 8px;
   padding-right: 32px;
 }
 
-.c17:focus + .c19 {
+.c18:focus + .c20 {
   padding-right: 8px;
 }
 
@@ -3804,11 +3813,11 @@ Array [
           className="c10"
         >
           <label
-            className="c4"
+            className="c11"
             hidden={false}
           >
             <span
-              className="c11"
+              className="c12"
             >
               <div
                 className="c6"
@@ -3822,7 +3831,7 @@ Array [
                   className="c8"
                 >
                   <input
-                    className="NormalizedInput__Input-sc-1m4kmh9-0 c12"
+                    className="NormalizedInput__Input-sc-1m4kmh9-0 c13"
                     disabled={true}
                     type="text"
                     value="0"
@@ -3868,7 +3877,7 @@ Array [
                 >
                   <input
                     aria-invalid={true}
-                    className="NormalizedInput__Input-sc-1m4kmh9-0 c13"
+                    className="NormalizedInput__Input-sc-1m4kmh9-0 c14"
                     placeholder="Placeholder"
                     type="text"
                     variant="quiet"
@@ -3879,10 +3888,10 @@ Array [
           </label>
           <div>
             <span
-              className="c14"
+              className="c15"
             >
               <div
-                className="c15"
+                className="c16"
               >
                 Error: 
               </div>
@@ -3924,7 +3933,7 @@ Array [
                   className="c8"
                 >
                   <input
-                    className="NormalizedInput__Input-sc-1m4kmh9-0 c16"
+                    className="NormalizedInput__Input-sc-1m4kmh9-0 c17"
                     placeholder="Placeholder"
                     type="text"
                     variant="quiet"
@@ -3968,13 +3977,13 @@ Array [
                   className="c8"
                 >
                   <input
-                    className="NormalizedInput__Input-sc-1m4kmh9-0 c17"
+                    className="NormalizedInput__Input-sc-1m4kmh9-0 c18"
                     placeholder="Placeholder"
                     type="text"
                     variant="quiet"
                   />
                   <div
-                    className="c18 c19 c20"
+                    className="c19 c20 c21"
                     position="right"
                     variant="quiet"
                   >
