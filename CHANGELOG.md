@@ -1,3 +1,10 @@
+## [6.6.1](https://github.com/nordnet/ui/compare/v6.6.0...v6.6.1) (2021-04-20)
+
+
+### Bug Fixes
+
+* add default to state for currentPaga ([0ca6a10](https://github.com/nordnet/ui/commit/0ca6a10))
+
 # [6.6.0](https://github.com/nordnet/ui/compare/v6.5.1...v6.6.0) (2021-04-19)
 
 
