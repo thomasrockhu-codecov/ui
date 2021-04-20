@@ -17,7 +17,7 @@ const Pagination: React.FC<PaginationProps> = ({
   currentPageLabel = 'Current Page, page:',
   pageItemLabel = 'Go to Page',
 }) => {
-  const [currentPage, setCurrentPage] = useState(1);
+  const [currentPage, setCurrentPage] = useState(currentPageFromProps || 1);
 
   const controlled = !R.isNil(currentPageFromProps);
 
