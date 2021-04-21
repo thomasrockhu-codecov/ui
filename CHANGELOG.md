@@ -1,3 +1,11 @@
+# [6.7.0](https://github.com/nordnet/ui/compare/v6.6.1...v6.7.0) (2021-04-21)
+
+
+### Features
+
+* 🎸 add new icons for etp screener ([5c26b5e](https://github.com/nordnet/ui/commit/5c26b5e))
+* 🎸 storyshot update ([d314712](https://github.com/nordnet/ui/commit/d314712))
+
 ## [6.6.1](https://github.com/nordnet/ui/compare/v6.6.0...v6.6.1) (2021-04-20)
 
 
