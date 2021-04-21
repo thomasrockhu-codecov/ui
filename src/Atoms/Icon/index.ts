@@ -11,6 +11,7 @@ import { Bell } from './components/Bell';
 import { BellActive } from './components/BellActive';
 import { BellInactive } from './components/BellInactive';
 import { BellPlain } from './components/BellPlain';
+import { Book } from './components/Book';
 import { Bolt } from './components/Bolt';
 import { BrowserWindow } from './components/BrowserWindow';
 import { BulbInCircle } from './components/BulbInCircle';
@@ -91,6 +92,9 @@ import { Questionmark } from './components/Questionmark';
 import { Raising } from './components/Raising';
 import { Refresh } from './components/Refresh';
 import { RealEstate } from './components/RealEstate';
+import { RiskBarHigh } from './components/RiskBarHigh';
+import { RiskBarLow } from './components/RiskBarLow';
+import { RiskBarMedium } from './components/RiskBarMedium';
 import { RiskLow } from './components/RiskLow';
 import { RiskMedium } from './components/RiskMedium';
 import { RiskHigh } from './components/RiskHigh';
@@ -142,6 +146,7 @@ export default {
   BellActive,
   BellInactive,
   BellPlain,
+  Book,
   Bolt,
   BrowserWindow,
   BulbInCircle,
@@ -222,6 +227,9 @@ export default {
   Raising,
   Refresh,
   RealEstate,
+  RiskBarHigh,
+  RiskBarLow,
+  RiskBarMedium,
   RiskLow,
   RiskMedium,
   RiskHigh,
