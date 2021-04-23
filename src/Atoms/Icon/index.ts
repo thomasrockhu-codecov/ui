@@ -55,6 +55,7 @@ import { Financial } from './components/Financial';
 import { Flag } from './components/Flag';
 import { Glasses } from './components/Glasses';
 import { Globe } from './components/Globe';
+import { GoldBars } from './components/GoldBars';
 import { Growth } from './components/Growth';
 import { Hamburger } from './components/Hamburger';
 import { HandWithCoin } from './components/HandWithCoin';
@@ -190,6 +191,7 @@ export default {
   Flag,
   Glasses,
   Globe,
+  GoldBars,
   Growth,
   Hamburger,
   HandWithCoin,
