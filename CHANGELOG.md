@@ -1,3 +1,15 @@
+# [6.8.0](https://github.com/nordnet/ui/compare/v6.7.0...v6.8.0) (2021-04-23)
+
+
+### Bug Fixes
+
+* optimize the size of gold bar icon ([fa88fa8](https://github.com/nordnet/ui/commit/fa88fa8))
+
+
+### Features
+
+* 🎸 add gold bar icon ([5c1eb4b](https://github.com/nordnet/ui/commit/5c1eb4b))
+
 # [6.7.0](https://github.com/nordnet/ui/compare/v6.6.1...v6.7.0) (2021-04-21)
 
 
