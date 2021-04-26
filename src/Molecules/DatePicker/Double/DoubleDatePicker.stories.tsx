@@ -1,21 +1,28 @@
 import { action } from '@storybook/addon-actions';
 import { add, isSameWeek } from 'date-fns';
 import React, { useState } from 'react';
-import { Button, Flexbox, Typography } from '../../..';
+import { Button, Flexbox } from '../../..';
 import DatePicker from '../DatePicker';
+import { DoubleDatePickerDisclaimer } from './DoubleDatePickerDisclaimer';
 
 export default {
   title: 'Molecules / DatePicker / Double DatePicker',
   parameters: {
     component: DatePicker,
   },
+  decorators: [
+    (Story: any) => (
+      <DoubleDatePickerDisclaimer>
+        <Story />
+      </DoubleDatePickerDisclaimer>
+    ),
+  ],
 };
 
 const dateNow = new Date();
 
 export const Default = () => (
   <>
-    <Typography>Watch out! Arrow navigation is yet to be implemented</Typography>
     <DatePicker
       id="input-id"
       labelFrom="Label"
