@@ -11,7 +11,7 @@ export const DoubleDatePickerDisclaimer: React.FC = ({ children }) => {
         >
           The intended user case is when the user wants to select two dates relative close to each
           other, but the second date can overlap to another month. The dates selected should
-          probably not be further apart then two months.
+          probably not be further apart than two months.
         </FeedbackBanner>
       </Box>
       <Box mb={2}>
