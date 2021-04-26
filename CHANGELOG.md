@@ -1,3 +1,10 @@
+## [6.9.1](https://github.com/nordnet/ui/compare/v6.9.0...v6.9.1) (2021-04-26)
+
+
+### Bug Fixes
+
+* 🐛 correct typo in double datepicker disclaimer ([b1e6bbb](https://github.com/nordnet/ui/commit/b1e6bbb))
+
 # [6.9.0](https://github.com/nordnet/ui/compare/v6.8.0...v6.9.0) (2021-04-26)
 
 
