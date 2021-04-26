@@ -46,6 +46,7 @@ const DatePicker = React.forwardRef<HTMLDivElement, Props>((props, ref) => {
     ariaLabelPrevious,
     ariaLabelNext,
     onChange,
+    onBlur,
     label,
     disabled,
     disableDate,
@@ -292,6 +293,15 @@ const DatePicker = React.forwardRef<HTMLDivElement, Props>((props, ref) => {
     setInputValue(value);
   }, []);
 
+  const handleInputOnBlur = useCallback((event: React.ChangeEvent<HTMLInputElement>) => {
+    const { value } = event.target;
+    const date: Date = new Date(format(new Date(value), dateFormat, options));
+    setViewedDate(newDate(date));
+    setSelectedDate(newDate(date));
+    setInputValue(value);
+    if (onBlur) onBlur(date);
+  }, []);
+
   const onMonthChange = useCallback(
     (index: number) => {
       viewedDate.setMonth(index);
@@ -366,6 +376,7 @@ const DatePicker = React.forwardRef<HTMLDivElement, Props>((props, ref) => {
         onChange={handleInputOnChange}
         onKeyDown={handleInputKeyDown}
         onFocus={handleInputOnFocus}
+        onBlur={handleInputOnBlur}
         width={typeof width === 'string' ? width : `${theme.spacing.unit(width)}px`}
         autoComplete="off"
       />
