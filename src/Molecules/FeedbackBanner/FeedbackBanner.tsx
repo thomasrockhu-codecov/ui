@@ -40,7 +40,8 @@ const getIcon = (variant: FeedbackBannerProps['variant']) => {
 };
 
 const StyledContainer = styled.div<FeedbackBannerProps>`
-  background-color: ${(p) => p.theme.color.background};
+  background-color: ${({ theme, scope }) =>
+    theme.color[scope === 'module' ? 'background' : 'card']};
   border-left: ${(p) => p.theme.spacing.unit(1)}px solid ${getBorderColor};
   padding: ${(p) => `${p.theme.spacing.unit(1)}px ${p.theme.spacing.unit(3)}px`};
   box-sizing: border-box;
@@ -50,10 +51,15 @@ const TextFlexbox = styled(Flexbox)`
   width: 100%;
 `;
 
-export const FeedbackBanner: FeedbackBannerComponent = (props) => {
-  const { variant, title, children, className } = props;
+export const FeedbackBanner: FeedbackBannerComponent = ({
+  variant = 'info',
+  scope = 'module',
+  title,
+  children,
+  className,
+}) => {
   return (
-    <StyledContainer className={className} variant={variant}>
+    <StyledContainer className={className} variant={variant} scope={scope}>
       <Flexbox container direction="row" alignItems="center" gutter={3}>
         <>{getIcon(variant)}</>
         <TextFlexbox container item direction="column">
