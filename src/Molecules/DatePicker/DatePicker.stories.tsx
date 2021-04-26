@@ -1,6 +1,8 @@
 import React from 'react';
 import { action } from '@storybook/addon-actions';
 import DatePicker from './DatePicker';
+import { DoubleDatePickerDisclaimer } from './Double/DoubleDatePickerDisclaimer';
+import { Typography, Box } from '../..';
 
 export default {
   title: 'Molecules / DatePicker',
@@ -24,13 +26,18 @@ export const All = () => {
         onChange={action('onChange range')}
         variant="RANGE"
       />
-      <DatePicker
-        id="double-datepicker"
-        labelFrom="Date from"
-        labelTo="Date to"
-        onChange={action('onChange double')}
-        variant="DOUBLE"
-      />
+      <Box mt={2}>
+        <Typography type="title3">Double</Typography>
+      </Box>
+      <DoubleDatePickerDisclaimer>
+        <DatePicker
+          id="double-datepicker"
+          labelFrom="Date from"
+          labelTo="Date to"
+          onChange={action('onChange double')}
+          variant="DOUBLE"
+        />
+      </DoubleDatePickerDisclaimer>
     </>
   );
 };
