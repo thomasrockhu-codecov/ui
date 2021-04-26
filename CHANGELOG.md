@@ -1,3 +1,10 @@
+# [6.9.0](https://github.com/nordnet/ui/compare/v6.8.0...v6.9.0) (2021-04-26)
+
+
+### Features
+
+* 🎸 add scope prop to FeedbackBanner ([894042c](https://github.com/nordnet/ui/commit/894042c))
+
 # [6.8.0](https://github.com/nordnet/ui/compare/v6.7.0...v6.8.0) (2021-04-23)
 
 
