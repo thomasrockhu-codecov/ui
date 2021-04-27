@@ -357,7 +357,7 @@ test('Enter date manually', async () => {
   expect(dateElement.parentElement).toHaveStyle(`background: ${theme.color.cta}`);
 });
 
-test('Select date by typing it in', async () => {
+test('Select date by typing it in and blur', async () => {
   const INPUT_ID = 'datepicker-input';
   const onBlur = jest.fn();
 
@@ -373,8 +373,27 @@ test('Select date by typing it in', async () => {
   fireEvent.change(input, { target: { value: '12/12/1990' } });
   fireEvent.blur(input);
 
-  expect(onBlur).toBeCalled();
-  expect(onBlur).toBeCalledWith(new Date('12/12/1990'));
+  expect(onBlur).toHaveBeenCalled();
+  expect(onBlur).toHaveBeenCalledWith(new Date('12/12/1990'));
+  const dateElementDay = screen.getByTestId('December 12');
+  expect(dateElementDay).toBeInTheDocument();
+  expect(dateElementDay).toHaveStyle(`background: ${theme.color.cta}`);
+});
+
+test('Select date by typing it in', async () => {
+  const INPUT_ID = 'datepicker-input';
+
+  const { getByTestId } = render(
+    <PageProviders>
+      <DatePicker id={INPUT_ID} label="Label" allowDateUpdateOnType />
+    </PageProviders>,
+  );
+
+  const input = getByTestId(INPUT_ID);
+  fireEvent.focus(input);
+  expect(screen.getByTestId('styled-dropdown-bubble-wrapper')).toBeInTheDocument();
+  fireEvent.change(input, { target: { value: '12/12/1990' } });
+
   const dateElementDay = screen.getByTestId('December 12');
   expect(dateElementDay).toBeInTheDocument();
   expect(dateElementDay).toHaveStyle(`background: ${theme.color.cta}`);
