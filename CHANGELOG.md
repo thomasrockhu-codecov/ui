@@ -1,3 +1,12 @@
+## [6.9.2](https://github.com/nordnet/ui/compare/v6.9.1...v6.9.2) (2021-04-27)
+
+
+### Bug Fixes
+
+* added some test, and applied existing handleInputSubmitRegular ([b4c2c20](https://github.com/nordnet/ui/commit/b4c2c20))
+* missing snapshots ([fcfbd50](https://github.com/nordnet/ui/commit/fcfbd50))
+* see the branch name for comment ([c70a889](https://github.com/nordnet/ui/commit/c70a889))
+
 ## [6.9.1](https://github.com/nordnet/ui/compare/v6.9.0...v6.9.1) (2021-04-26)
 
 
