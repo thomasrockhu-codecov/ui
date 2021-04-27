@@ -45,6 +45,7 @@ const DatePicker = React.forwardRef<HTMLDivElement, Props>((props, ref) => {
   const {
     ariaLabelPrevious,
     ariaLabelNext,
+    allowDateUpdateOnType = false,
     onChange,
     onBlur,
     label,
@@ -289,18 +290,25 @@ const DatePicker = React.forwardRef<HTMLDivElement, Props>((props, ref) => {
 
   const handleInputOnFocus = useCallback(() => setOpen(true), [setOpen]);
 
-  const handleInputOnChange = useCallback((event: React.ChangeEvent<HTMLInputElement>) => {
-    const { value } = event.target;
-    setInputValue(value);
-  }, []);
+  const handleInputOnChange = useCallback(
+    (event: React.ChangeEvent<HTMLInputElement>) => {
+      const { value } = event.target;
+
+      if (variant === REGULAR_DATE_PICKER && allowDateUpdateOnType) handleInputSubmitRegular(value);
+      if (variant === RANGE_DATE_PICKER && allowDateUpdateOnType) handleInputSubmitRange(value);
+      setInputValue(value);
+    },
+    [handleInputSubmitRange, handleInputSubmitRegular, allowDateUpdateOnType, variant],
+  );
 
   const handleInputOnBlur = useCallback(
     (event: React.ChangeEvent<HTMLInputElement>) => {
       const { value } = event.target;
 
-      handleInputSubmitRegular(value);
+      if (variant === REGULAR_DATE_PICKER) handleInputSubmitRegular(value);
+      if (variant === RANGE_DATE_PICKER) handleInputSubmitRange(value);
     },
-    [handleInputSubmitRegular],
+    [handleInputSubmitRange, handleInputSubmitRegular, variant],
   );
 
   const onMonthChange = useCallback(
