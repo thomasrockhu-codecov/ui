@@ -212,9 +212,10 @@ const DatePicker = React.forwardRef<HTMLDivElement, Props>((props, ref) => {
       setSelectedDate(date);
       setViewedDate(newDate(date));
 
+      if (onBlur) onBlur(date);
       if (onChange) onChange(date);
     },
-    [allowedDate, dateFormat, locale, onChange, options, selectedDate],
+    [allowedDate, dateFormat, locale, onBlur, onChange, options, selectedDate],
   );
 
   const handleInputSubmitRange = useCallback(
@@ -293,14 +294,14 @@ const DatePicker = React.forwardRef<HTMLDivElement, Props>((props, ref) => {
     setInputValue(value);
   }, []);
 
-  const handleInputOnBlur = useCallback((event: React.ChangeEvent<HTMLInputElement>) => {
-    const { value } = event.target;
-    const date: Date = new Date(format(new Date(value), dateFormat, options));
-    setViewedDate(newDate(date));
-    setSelectedDate(newDate(date));
-    setInputValue(value);
-    if (onBlur) onBlur(date);
-  }, []);
+  const handleInputOnBlur = useCallback(
+    (event: React.ChangeEvent<HTMLInputElement>) => {
+      const { value } = event.target;
+
+      handleInputSubmitRegular(value);
+    },
+    [handleInputSubmitRegular],
+  );
 
   const onMonthChange = useCallback(
     (index: number) => {
@@ -381,7 +382,7 @@ const DatePicker = React.forwardRef<HTMLDivElement, Props>((props, ref) => {
         autoComplete="off"
       />
       {open ? (
-        <StyledDropdownBubbleWrapper>
+        <StyledDropdownBubbleWrapper data-testid="styled-dropdown-bubble-wrapper">
           <StyledDropdownBubble>{datepicker}</StyledDropdownBubble>
         </StyledDropdownBubbleWrapper>
       ) : null}
