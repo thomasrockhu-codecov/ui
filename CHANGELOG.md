@@ -1,3 +1,11 @@
+# [6.10.0](https://github.com/nordnet/ui/compare/v6.9.2...v6.10.0) (2021-04-27)
+
+
+### Features
+
+* add stories for allow updating date on type; add unit test; ([7817b4a](https://github.com/nordnet/ui/commit/7817b4a))
+* allow date update while typing option for REGULAR and RANGE ([a6ebc59](https://github.com/nordnet/ui/commit/a6ebc59))
+
 ## [6.9.2](https://github.com/nordnet/ui/compare/v6.9.1...v6.9.2) (2021-04-27)
 
 
