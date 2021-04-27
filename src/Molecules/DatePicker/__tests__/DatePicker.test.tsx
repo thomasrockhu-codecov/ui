@@ -1,5 +1,5 @@
 import React from 'react';
-import { cleanup, fireEvent, render } from '@testing-library/react';
+import { cleanup, fireEvent, render, screen } from '@testing-library/react';
 import '@testing-library/jest-dom/extend-expect';
 import { advanceTo, clear } from 'jest-date-mock';
 import { DatePicker } from '../../..';
@@ -355,4 +355,27 @@ test('Enter date manually', async () => {
 
   const dateElement = getByText('19');
   expect(dateElement.parentElement).toHaveStyle(`background: ${theme.color.cta}`);
+});
+
+test('Select date by typing it in', async () => {
+  const INPUT_ID = 'datepicker-input';
+  const onBlur = jest.fn();
+
+  const { getByTestId } = render(
+    <PageProviders>
+      <DatePicker id={INPUT_ID} label="Label" onBlur={onBlur} />
+    </PageProviders>,
+  );
+
+  const input = getByTestId(INPUT_ID);
+  fireEvent.focus(input);
+  expect(screen.getByTestId('styled-dropdown-bubble-wrapper')).toBeInTheDocument();
+  fireEvent.change(input, { target: { value: '12/12/1990' } });
+  fireEvent.blur(input);
+
+  expect(onBlur).toBeCalled();
+  expect(onBlur).toBeCalledWith(new Date('12/12/1990'));
+  const dateElementDay = screen.getByTestId('December 12');
+  expect(dateElementDay).toBeInTheDocument();
+  expect(dateElementDay).toHaveStyle(`background: ${theme.color.cta}`);
 });

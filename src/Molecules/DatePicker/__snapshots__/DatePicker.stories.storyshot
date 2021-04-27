@@ -196,6 +196,7 @@ Array [
                 className="NormalizedInput__Input-sc-1m4kmh9-0 c7"
                 data-testid="datepicker-input"
                 id="regular-datepicker"
+                onBlur={[Function]}
                 onChange={[Function]}
                 onFocus={[Function]}
                 onKeyDown={[Function]}
@@ -422,6 +423,7 @@ Array [
                 className="NormalizedInput__Input-sc-1m4kmh9-0 c7"
                 data-testid="datepicker-input"
                 id="range-datepicker"
+                onBlur={[Function]}
                 onChange={[Function]}
                 onFocus={[Function]}
                 onKeyDown={[Function]}

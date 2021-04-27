@@ -333,6 +333,7 @@ Array [
                 className="NormalizedInput__Input-sc-1m4kmh9-0 c7"
                 data-testid="datepicker-input"
                 id="controlled"
+                onBlur={[Function]}
                 onChange={[Function]}
                 onFocus={[Function]}
                 onKeyDown={[Function]}
@@ -559,6 +560,7 @@ exports[`Storyshots Molecules / DatePicker / DatePicker with range Default 1`] =
               className="NormalizedInput__Input-sc-1m4kmh9-0 c7"
               data-testid="datepicker-input"
               id="input-id"
+              onBlur={[Function]}
               onChange={[Function]}
               onFocus={[Function]}
               onKeyDown={[Function]}
@@ -781,6 +783,7 @@ exports[`Storyshots Molecules / DatePicker / DatePicker with range Disabled Inpu
               data-testid="datepicker-input"
               disabled={true}
               id="disabled-input"
+              onBlur={[Function]}
               onChange={[Function]}
               onFocus={[Function]}
               onKeyDown={[Function]}
@@ -1006,6 +1009,7 @@ exports[`Storyshots Molecules / DatePicker / DatePicker with range Same Week Dis
               className="NormalizedInput__Input-sc-1m4kmh9-0 c7"
               data-testid="datepicker-input"
               id="disable-dates-input"
+              onBlur={[Function]}
               onChange={[Function]}
               onFocus={[Function]}
               onKeyDown={[Function]}
@@ -1231,6 +1235,7 @@ exports[`Storyshots Molecules / DatePicker / DatePicker with range Same Week Ena
               className="NormalizedInput__Input-sc-1m4kmh9-0 c7"
               data-testid="datepicker-input"
               id="enable-dates-input"
+              onBlur={[Function]}
               onChange={[Function]}
               onFocus={[Function]}
               onKeyDown={[Function]}
