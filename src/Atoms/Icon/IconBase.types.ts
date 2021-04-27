@@ -1,6 +1,7 @@
 import { Theme } from '../../theme/theme.types';
 
 export type ColorFn = (t: Theme) => Values<Theme['color']>;
+
 type Values<ObjectType> = ObjectType extends Record<any, infer K> ? K : never; // can move it to util types
 
 export type StyledIconBaseProps = {
@@ -13,6 +14,8 @@ export type StyledIconBaseProps = {
 export type StyledChildProps = {
   strokeColorFn?: ColorFn | string;
   backgroundColorFn?: ColorFn | string;
+  /** @default 'fill' */
+  cssAttribute?: string;
 };
 
 export type BaseProps = {

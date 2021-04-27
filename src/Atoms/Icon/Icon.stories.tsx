@@ -1,5 +1,5 @@
 import React from 'react';
-import { select } from '@storybook/addon-knobs';
+import { number, select, color } from '@storybook/addon-knobs';
 import { Icon } from '../..';
 import { Display } from '../../common/Display';
 
@@ -19,60 +19,69 @@ export const inlineStory = () => (
   </>
 );
 
-export const thinArrowUp = () => (
-  <Icon.ThinArrow direction={select('Direction', ['up', 'right', 'down', 'left'], 'up')} />
-);
+const directionKnob = () => select('Direction', ['up', 'right', 'down', 'left'], 'up');
 
-export const thinArrowRight = () => (
-  <Icon.ThinArrow direction={select('Direction', ['up', 'right', 'down', 'left'], 'right')} />
-);
+export const thinArrow = () => <Icon.ThinArrow direction={directionKnob()} />;
 
-export const thinArrowDown = () => (
-  <Icon.ThinArrow direction={select('Direction', ['up', 'right', 'down', 'left'], 'down')} />
-);
+export const thinChevron = () => <Icon.ThinChevron direction={directionKnob()} />;
 
-export const thinArrowLeft = () => (
-  <Icon.ThinArrow direction={select('Direction', ['up', 'right', 'down', 'left'], 'left')} />
-);
+export const chevron = () => <Icon.Chevron direction={directionKnob()} />;
 
-export const thinChevronUp = () => (
-  <Icon.ThinChevron direction={select('Direction', ['up', 'right', 'down', 'left'], 'up')} />
-);
-
-export const thinChevronDown = () => (
-  <Icon.ThinChevron direction={select('Direction', ['up', 'right', 'down', 'left'], 'down')} />
-);
-
-export const thinChevronLeft = () => (
-  <Icon.ThinChevron direction={select('Direction', ['up', 'right', 'down', 'left'], 'left')} />
-);
-
-export const thinChevronRight = () => (
-  <Icon.ThinChevron direction={select('Direction', ['up', 'right', 'down', 'left'], 'right')} />
-);
-
-export const chevronUp = () => (
-  <Icon.Chevron direction={select('Direction', ['up', 'down', 'left', 'right'], 'up')} />
-);
-
-export const chevronDown = () => (
-  <Icon.Chevron direction={select('Direction', ['up', 'down', 'left', 'right'], 'down')} />
-);
-
-export const chevronLeft = () => (
-  <Icon.Chevron direction={select('Direction', ['up', 'down', 'left', 'right'], 'left')} />
-);
-
-export const chevronRight = () => (
-  <Icon.Chevron direction={select('Direction', ['up', 'down', 'left', 'right'], 'right')} />
-);
-
-export const sortArrowAscending = () => (
+export const sortArrow = () => (
   <Icon.SortArrow direction={select('Direction', ['ascending', 'descending'], 'ascending')} />
 );
 
-export const sortArrowDescending = () => (
-  <Icon.SortArrow direction={select('Direction', ['ascending', 'descending'], 'descending')} />
+export const Account = () => (
+  <Icon.Account
+    size={number('Size', 10)}
+    fill={(t) => color('Fill color', t.color.backgroundBlack)}
+  />
+);
+
+export const CalendarO = () => (
+  <Icon.CalendarO
+    size={number('Size', 10)}
+    fill={(t) => color('Fill color', t.color.backgroundBlack)}
+  />
+);
+
+export const FAQ = () => (
+  <Icon.FAQ size={number('Size', 10)} fill={(t) => color('Fill color', t.color.cta)} />
+);
+
+export const Percent = () => (
+  <Icon.Percent
+    size={number('Size', 10)}
+    fill={(t) => color('Fill color', t.color.backgroundBlack)}
+  />
+);
+
+export const Profile = () => (
+  <Icon.Profile
+    size={number('Size', 10)}
+    fill={(t) => color('Fill color', t.color.backgroundBlack)}
+  />
+);
+
+export const ThreeDotsO = () => (
+  <Icon.ThreeDotsO
+    size={number('Size', 10)}
+    fill={(t) => color('Fill color', t.color.backgroundBlack)}
+  />
+);
+
+export const TaxPercentage = () => (
+  <Icon.TaxPercentage
+    size={number('Size', 10)}
+    fill={(t) => color('Fill color', t.color.backgroundBlack)}
+  />
+);
+
+export const Transfer = () => (
+  <Icon.Transfer
+    size={number('Size', 10)}
+    fill={(t) => color('Fill color', t.color.backgroundBlack)}
+  />
 );
 
 inlineStory.story = {
