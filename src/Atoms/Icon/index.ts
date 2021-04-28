@@ -1,3 +1,4 @@
+import { Account } from './components/Account';
 import { AccountNumbers } from './components/AccountNumbers';
 import { AddWithCircle } from './components/AddWithCircle';
 import { Apartment } from './components/Apartment';
@@ -44,10 +45,12 @@ import { Csv } from './components/Csv';
 import { DiagonalWithCircle } from './components/DiagonalWithCircle';
 import { DirectionDown } from './components/DirectionDown';
 import { DirectionUp } from './components/DirectionUp';
+import { CalendarO } from './components/CalendarO';
 import { Energy } from './components/Energy';
 import { ExternalLink } from './components/ExternalLink';
 import { EyeWithPlus } from './components/EyeWithPlus';
 import { EyeWithPlusActive } from './components/EyeWithPlusActive';
+import { FAQ } from './components/FAQ';
 import { File } from './components/File';
 import { Filter } from './components/Filter';
 import { FinanceGrowth } from './components/FinanceGrowth';
@@ -88,7 +91,9 @@ import { Pending } from './components/Pending';
 import { Plus } from './components/Plus';
 import { PlusThin } from './components/PlusThin';
 import { PlusWithCircle } from './components/PlusWithCircle';
+import { Percent } from './components/Percent';
 import { Printer } from './components/Printer';
+import { Profile } from './components/Profile';
 import { Questionmark } from './components/Questionmark';
 import { Raising } from './components/Raising';
 import { Refresh } from './components/Refresh';
@@ -122,11 +127,14 @@ import { Star24 } from './components/Star24';
 import { StarAboveBars } from './components/StarAboveBars';
 import { StarOutline } from './components/StarOutline';
 import { Tax } from './components/Tax';
+import { TaxPercentage } from './components/TaxPercentage';
 import { Technology } from './components/Technology';
 import { ThinArrow } from './components/ThinArrow';
 import { ThinChevron } from './components/ThinChevron';
 import { ThreeDots } from './components/ThreeDots';
+import { ThreeDotsO } from './components/ThreeDotsO';
 import { Trash } from './components/Trash';
+import { Transfer } from './components/Transfer';
 import { TrendlineArrowhead } from './components/TrendlineArrowhead';
 import { Utilities } from './components/Utilities';
 import { WarningCircle } from './components/WarningCircle';
@@ -134,6 +142,7 @@ import { WarningTriangle } from './components/WarningTriangle';
 import { WarningTriangleHollow } from './components/WarningTriangleHollow';
 
 export default {
+  Account,
   AccountNumbers,
   AddWithCircle,
   Apartment,
@@ -152,6 +161,7 @@ export default {
   BrowserWindow,
   BulbInCircle,
   Calendar,
+  CalendarO,
   CalendarTwoRows,
   CandleSticks,
   CheckMark,
@@ -184,6 +194,7 @@ export default {
   ExternalLink,
   EyeWithPlus,
   EyeWithPlusActive,
+  FAQ,
   File,
   Filter,
   FinanceGrowth,
@@ -224,7 +235,9 @@ export default {
   Plus,
   PlusThin,
   PlusWithCircle,
+  Percent,
   Printer,
+  Profile,
   Questionmark,
   Raising,
   Refresh,
@@ -258,11 +271,14 @@ export default {
   StarAboveBars,
   StarOutline,
   Tax,
+  TaxPercentage,
   Technology,
   ThinArrow,
   ThinChevron,
   ThreeDots,
+  ThreeDotsO,
   Trash,
+  Transfer,
   TrendlineArrowhead,
   Utilities,
   WarningCircle,
