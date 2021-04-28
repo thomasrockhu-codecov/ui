@@ -1,3 +1,10 @@
+# [6.11.0](https://github.com/nordnet/ui/compare/v6.10.1...v6.11.0) (2021-04-28)
+
+
+### Features
+
+* 🎸 Adds multiple new Icons ([ef052ef](https://github.com/nordnet/ui/commit/ef052ef))
+
 ## [6.10.1](https://github.com/nordnet/ui/compare/v6.10.0...v6.10.1) (2021-04-28)
 
 
