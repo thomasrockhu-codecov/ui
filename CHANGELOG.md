@@ -1,3 +1,10 @@
+## [6.11.2](https://github.com/nordnet/ui/compare/v6.11.1...v6.11.2) (2021-04-28)
+
+
+### Bug Fixes
+
+* sanitize hidden prop on Flexbox ([cc5f725](https://github.com/nordnet/ui/commit/cc5f725))
+
 ## [6.11.1](https://github.com/nordnet/ui/compare/v6.11.0...v6.11.1) (2021-04-28)
 
 
