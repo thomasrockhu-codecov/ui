@@ -1,3 +1,10 @@
+## [6.11.1](https://github.com/nordnet/ui/compare/v6.11.0...v6.11.1) (2021-04-28)
+
+
+### Bug Fixes
+
+* 🐛 Element id clash in Icons ([d78b882](https://github.com/nordnet/ui/commit/d78b882))
+
 # [6.11.0](https://github.com/nordnet/ui/compare/v6.10.1...v6.11.0) (2021-04-28)
 
 
