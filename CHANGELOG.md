@@ -1,3 +1,10 @@
+## [6.10.1](https://github.com/nordnet/ui/compare/v6.10.0...v6.10.1) (2021-04-28)
+
+
+### Bug Fixes
+
+* trigger version update ([1067099](https://github.com/nordnet/ui/commit/1067099))
+
 # [6.10.0](https://github.com/nordnet/ui/compare/v6.9.2...v6.10.0) (2021-04-27)
 
 
