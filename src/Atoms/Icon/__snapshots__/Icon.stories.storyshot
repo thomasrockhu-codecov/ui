@@ -3641,7 +3641,7 @@ Array [
       >
         <mask
           fill="#fff"
-          id="mask-2"
+          id="percent-mask"
         >
           <path
             d="M0 0H26V26H0z"
@@ -3650,7 +3650,7 @@ Array [
         <path
           className="c1"
           d="M1 27.003L25-1M7 9a4 4 0 100-8 4 4 0 000 8zm12 16a4 4 0 100-8 4 4 0 000 8z"
-          mask="url(#mask-2)"
+          mask="url(#percent-mask)"
           strokeWidth="2"
         />
       </g>
@@ -5644,7 +5644,7 @@ Array [
       >
         <mask
           fill="#fff"
-          id="mask-2"
+          id="transfer-mask"
         >
           <path
             d="M28 12v10H0V12h28zm0-12v10H0V0h28z"
@@ -5653,7 +5653,7 @@ Array [
         <path
           className="c1"
           d="M3 5h20M8.707 11.364L2.343 5l6.364-6.364M25 17H5m14.293 6.364L25.657 17l-6.364-6.364"
-          mask="url(#mask-2)"
+          mask="url(#transfer-mask)"
           strokeWidth="2"
           transform="matrix(-1 0 0 1 28 0)"
         />
@@ -9475,7 +9475,7 @@ exports[`Storyshots Atoms / Icon Available icons 1`] = `
           >
             <mask
               fill="#fff"
-              id="mask-2"
+              id="percent-mask"
             >
               <path
                 d="M0 0H26V26H0z"
@@ -9484,7 +9484,7 @@ exports[`Storyshots Atoms / Icon Available icons 1`] = `
             <path
               className="c4"
               d="M1 27.003L25-1M7 9a4 4 0 100-8 4 4 0 000 8zm12 16a4 4 0 100-8 4 4 0 000 8z"
-              mask="url(#mask-2)"
+              mask="url(#percent-mask)"
               strokeWidth="2"
             />
           </g>
@@ -11318,7 +11318,7 @@ exports[`Storyshots Atoms / Icon Available icons 1`] = `
           >
             <mask
               fill="#fff"
-              id="mask-2"
+              id="transfer-mask"
             >
               <path
                 d="M28 12v10H0V12h28zm0-12v10H0V0h28z"
@@ -11327,7 +11327,7 @@ exports[`Storyshots Atoms / Icon Available icons 1`] = `
             <path
               className="c4"
               d="M3 5h20M8.707 11.364L2.343 5l6.364-6.364M25 17H5m14.293 6.364L25.657 17l-6.364-6.364"
-              mask="url(#mask-2)"
+              mask="url(#transfer-mask)"
               strokeWidth="2"
               transform="matrix(-1 0 0 1 28 0)"
             />
@@ -11760,7 +11760,7 @@ exports[`Storyshots Atoms / Icon Percent 1`] = `
   >
     <mask
       fill="#fff"
-      id="mask-2"
+      id="percent-mask"
     >
       <path
         d="M0 0H26V26H0z"
@@ -11769,7 +11769,7 @@ exports[`Storyshots Atoms / Icon Percent 1`] = `
     <path
       className="c1"
       d="M1 27.003L25-1M7 9a4 4 0 100-8 4 4 0 000 8zm12 16a4 4 0 100-8 4 4 0 000 8z"
-      mask="url(#mask-2)"
+      mask="url(#percent-mask)"
       strokeWidth="2"
     />
   </g>
@@ -12031,7 +12031,7 @@ exports[`Storyshots Atoms / Icon Transfer 1`] = `
   >
     <mask
       fill="#fff"
-      id="mask-2"
+      id="transfer-mask"
     >
       <path
         d="M28 12v10H0V12h28zm0-12v10H0V0h28z"
@@ -12040,7 +12040,7 @@ exports[`Storyshots Atoms / Icon Transfer 1`] = `
     <path
       className="c1"
       d="M3 5h20M8.707 11.364L2.343 5l6.364-6.364M25 17H5m14.293 6.364L25.657 17l-6.364-6.364"
-      mask="url(#mask-2)"
+      mask="url(#transfer-mask)"
       strokeWidth="2"
       transform="matrix(-1 0 0 1 28 0)"
     />
