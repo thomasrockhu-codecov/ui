@@ -1,3 +1,10 @@
+## [6.11.4](https://github.com/nordnet/ui/compare/v6.11.3...v6.11.4) (2021-04-29)
+
+
+### Bug Fixes
+
+* input-select, chaneg smoothe to auto scroll ([a98b73e](https://github.com/nordnet/ui/commit/a98b73e))
+
 ## [6.11.3](https://github.com/nordnet/ui/compare/v6.11.2...v6.11.3) (2021-04-29)
 
 
