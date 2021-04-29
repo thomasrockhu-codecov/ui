@@ -1,3 +1,10 @@
+## [6.11.3](https://github.com/nordnet/ui/compare/v6.11.2...v6.11.3) (2021-04-29)
+
+
+### Bug Fixes
+
+* 🐛 use pointer not-allowed on disabled label and text input ([42de448](https://github.com/nordnet/ui/commit/42de448))
+
 ## [6.11.2](https://github.com/nordnet/ui/compare/v6.11.1...v6.11.2) (2021-04-28)
 
 
