@@ -31,8 +31,8 @@ export const useFocusFromMachine = (
           itemRefs[machineState.context.itemFocusIdx].scrollIntoView
         ) {
           scrollIntoView(itemRefs[machineState.context.itemFocusIdx!], {
-            behavior: 'smooth',
-            block: 'nearest',
+            behavior: 'auto',
+            block: 'center',
             inline: 'center',
           });
         }
