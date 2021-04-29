@@ -136,6 +136,11 @@ const Input = styled(NormalizedElements.Input).attrs((p) => ({ type: p.type || '
       -webkit-appearance: textfield;
     }
     `}
+    ${(p) =>
+    p.disabled &&
+    `
+      cursor: not-allowed;
+      `}
 `;
 
 const Wrapper = styled.div<{ variant?: Variant }>`

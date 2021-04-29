@@ -853,7 +853,7 @@ exports[`Storyshots Molecules / DatePicker / DatePicker with range Disabled Inpu
 .c2 {
   text-overflow: ellipsis;
   white-space: nowrap;
-  cursor: pointer;
+  cursor: not-allowed;
 }
 
 .c10 {
@@ -917,6 +917,7 @@ exports[`Storyshots Molecules / DatePicker / DatePicker with range Disabled Inpu
   position: relative;
   background-color: #EBEBE8;
   padding-right: 40px;
+  cursor: not-allowed;
 }
 
 .c7:focus {

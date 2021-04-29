@@ -66,6 +66,42 @@ Array [
 ]
 `;
 
+exports[`Storyshots Atoms / FormLabel Disabled 1`] = `
+Array [
+  .c0 {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  cursor: not-allowed;
+}
+
+.c1 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #A0A09B;
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+<label
+    className="c0"
+    hidden={false}
+    htmlFor="unique-id"
+  >
+    <span
+      className="c1"
+    >
+      This is disabled
+    </span>
+  </label>,
+  <input
+    disabled={true}
+    id="unique-id"
+    type="text"
+  />,
+]
+`;
+
 exports[`Storyshots Atoms / FormLabel With hidden label 1`] = `
 Array [
   .c0 {

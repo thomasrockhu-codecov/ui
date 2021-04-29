@@ -43,3 +43,16 @@ export const asAWrapper = () => (
 asAWrapper.story = {
   name: 'As a wrapper',
 };
+
+export const disabled = () => (
+  <>
+    <FormLabel forId="unique-id" disabled>
+      This is disabled
+    </FormLabel>
+    <input type="text" id="unique-id" disabled />
+  </>
+);
+
+defaultStory.story = {
+  name: 'Default',
+};

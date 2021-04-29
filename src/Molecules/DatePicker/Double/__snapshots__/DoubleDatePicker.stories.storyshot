@@ -1591,7 +1591,7 @@ Array [
 .c3 {
   text-overflow: ellipsis;
   white-space: nowrap;
-  cursor: pointer;
+  cursor: not-allowed;
 }
 
 .c11 {
@@ -1655,6 +1655,7 @@ Array [
   position: relative;
   background-color: #EBEBE8;
   padding-right: 40px;
+  cursor: not-allowed;
 }
 
 .c8:focus {
