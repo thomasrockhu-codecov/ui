@@ -1,3 +1,82 @@
+## [6.11.2](https://github.com/nordnet/ui/compare/v6.11.1...v6.11.2) (2021-04-28)
+
+
+### Bug Fixes
+
+* sanitize hidden prop on Flexbox ([cc5f725](https://github.com/nordnet/ui/commit/cc5f725))
+
+## [6.11.1](https://github.com/nordnet/ui/compare/v6.11.0...v6.11.1) (2021-04-28)
+
+
+### Bug Fixes
+
+* 🐛 Element id clash in Icons ([d78b882](https://github.com/nordnet/ui/commit/d78b882))
+
+# [6.11.0](https://github.com/nordnet/ui/compare/v6.10.1...v6.11.0) (2021-04-28)
+
+
+### Features
+
+* 🎸 Adds multiple new Icons ([ef052ef](https://github.com/nordnet/ui/commit/ef052ef))
+
+## [6.10.1](https://github.com/nordnet/ui/compare/v6.10.0...v6.10.1) (2021-04-28)
+
+
+### Bug Fixes
+
+* trigger version update ([1067099](https://github.com/nordnet/ui/commit/1067099))
+
+# [6.10.0](https://github.com/nordnet/ui/compare/v6.9.2...v6.10.0) (2021-04-27)
+
+
+### Features
+
+* add stories for allow updating date on type; add unit test; ([7817b4a](https://github.com/nordnet/ui/commit/7817b4a))
+* allow date update while typing option for REGULAR and RANGE ([a6ebc59](https://github.com/nordnet/ui/commit/a6ebc59))
+
+## [6.9.2](https://github.com/nordnet/ui/compare/v6.9.1...v6.9.2) (2021-04-27)
+
+
+### Bug Fixes
+
+* added some test, and applied existing handleInputSubmitRegular ([b4c2c20](https://github.com/nordnet/ui/commit/b4c2c20))
+* missing snapshots ([fcfbd50](https://github.com/nordnet/ui/commit/fcfbd50))
+* see the branch name for comment ([c70a889](https://github.com/nordnet/ui/commit/c70a889))
+
+## [6.9.1](https://github.com/nordnet/ui/compare/v6.9.0...v6.9.1) (2021-04-26)
+
+
+### Bug Fixes
+
+* 🐛 correct typo in double datepicker disclaimer ([b1e6bbb](https://github.com/nordnet/ui/commit/b1e6bbb))
+
+# [6.9.0](https://github.com/nordnet/ui/compare/v6.8.0...v6.9.0) (2021-04-26)
+
+
+### Features
+
+* 🎸 add scope prop to FeedbackBanner ([894042c](https://github.com/nordnet/ui/commit/894042c))
+
+# [6.8.0](https://github.com/nordnet/ui/compare/v6.7.0...v6.8.0) (2021-04-23)
+
+
+### Bug Fixes
+
+* optimize the size of gold bar icon ([fa88fa8](https://github.com/nordnet/ui/commit/fa88fa8))
+
+
+### Features
+
+* 🎸 add gold bar icon ([5c1eb4b](https://github.com/nordnet/ui/commit/5c1eb4b))
+
+# [6.7.0](https://github.com/nordnet/ui/compare/v6.6.1...v6.7.0) (2021-04-21)
+
+
+### Features
+
+* 🎸 add new icons for etp screener ([5c26b5e](https://github.com/nordnet/ui/commit/5c26b5e))
+* 🎸 storyshot update ([d314712](https://github.com/nordnet/ui/commit/d314712))
+
 ## [6.6.1](https://github.com/nordnet/ui/compare/v6.6.0...v6.6.1) (2021-04-20)
 
 

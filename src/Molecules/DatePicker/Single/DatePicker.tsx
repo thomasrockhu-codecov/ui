@@ -45,7 +45,9 @@ const DatePicker = React.forwardRef<HTMLDivElement, Props>((props, ref) => {
   const {
     ariaLabelPrevious,
     ariaLabelNext,
+    allowDateUpdateOnType = false,
     onChange,
+    onBlur,
     label,
     disabled,
     disableDate,
@@ -211,9 +213,10 @@ const DatePicker = React.forwardRef<HTMLDivElement, Props>((props, ref) => {
       setSelectedDate(date);
       setViewedDate(newDate(date));
 
+      if (onBlur) onBlur(date);
       if (onChange) onChange(date);
     },
-    [allowedDate, dateFormat, locale, onChange, options, selectedDate],
+    [allowedDate, dateFormat, locale, onBlur, onChange, options, selectedDate],
   );
 
   const handleInputSubmitRange = useCallback(
@@ -287,10 +290,26 @@ const DatePicker = React.forwardRef<HTMLDivElement, Props>((props, ref) => {
 
   const handleInputOnFocus = useCallback(() => setOpen(true), [setOpen]);
 
-  const handleInputOnChange = useCallback((event: React.ChangeEvent<HTMLInputElement>) => {
-    const { value } = event.target;
-    setInputValue(value);
-  }, []);
+  const handleInputOnChange = useCallback(
+    (event: React.ChangeEvent<HTMLInputElement>) => {
+      const { value } = event.target;
+
+      if (variant === REGULAR_DATE_PICKER && allowDateUpdateOnType) handleInputSubmitRegular(value);
+      if (variant === RANGE_DATE_PICKER && allowDateUpdateOnType) handleInputSubmitRange(value);
+      setInputValue(value);
+    },
+    [handleInputSubmitRange, handleInputSubmitRegular, allowDateUpdateOnType, variant],
+  );
+
+  const handleInputOnBlur = useCallback(
+    (event: React.ChangeEvent<HTMLInputElement>) => {
+      const { value } = event.target;
+
+      if (variant === REGULAR_DATE_PICKER) handleInputSubmitRegular(value);
+      if (variant === RANGE_DATE_PICKER) handleInputSubmitRange(value);
+    },
+    [handleInputSubmitRange, handleInputSubmitRegular, variant],
+  );
 
   const onMonthChange = useCallback(
     (index: number) => {
@@ -366,11 +385,12 @@ const DatePicker = React.forwardRef<HTMLDivElement, Props>((props, ref) => {
         onChange={handleInputOnChange}
         onKeyDown={handleInputKeyDown}
         onFocus={handleInputOnFocus}
+        onBlur={handleInputOnBlur}
         width={typeof width === 'string' ? width : `${theme.spacing.unit(width)}px`}
         autoComplete="off"
       />
       {open ? (
-        <StyledDropdownBubbleWrapper>
+        <StyledDropdownBubbleWrapper data-testid="styled-dropdown-bubble-wrapper">
           <StyledDropdownBubble>{datepicker}</StyledDropdownBubble>
         </StyledDropdownBubbleWrapper>
       ) : null}

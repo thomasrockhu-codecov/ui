@@ -6,7 +6,9 @@ export type Props = {
   ariaLabelPrevious?: string;
   ariaLabelNext?: string;
   open?: boolean;
+  allowDateUpdateOnType?: boolean;
   onChange?: (date: Date, endDate?: Date | null) => void;
+  onBlur?: (date: Date, endDate?: Date | null) => void;
   label: string;
   disableDate?: (date: Date) => boolean;
   disabled?: boolean;

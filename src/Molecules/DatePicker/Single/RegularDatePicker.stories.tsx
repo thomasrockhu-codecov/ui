@@ -70,3 +70,14 @@ export const DisabledInput = () => {
 export const FullWidthInput = () => {
   return <DatePicker id="full-width-input" label="Label" variant="REGULAR" width="100%" />;
 };
+
+export const AllowUpdateWhileTyping = () => {
+  return (
+    <DatePicker
+      id="disabled-input"
+      variant="REGULAR"
+      allowDateUpdateOnType
+      label="Allow update while typing"
+    />
+  );
+};

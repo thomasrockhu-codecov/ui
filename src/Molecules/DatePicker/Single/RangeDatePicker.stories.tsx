@@ -74,3 +74,14 @@ export const Controlled = () => {
 export const DisabledInput = () => {
   return <DatePicker id="disabled-input" variant="RANGE" label="Disabled input" disabled />;
 };
+
+export const AllowUpdateWhileTyping = () => {
+  return (
+    <DatePicker
+      id="disabled-input"
+      variant="RANGE"
+      allowDateUpdateOnType
+      label="Allow update while typing"
+    />
+  );
+};
