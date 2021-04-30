@@ -32,7 +32,7 @@ export type RawColor = {
   gray2: '#6E6E69';
   gray3: '#A0A09B';
   gray4: '#BCBCB6';
-  /** @deprecated */ gray5: '#D7D7D2';
+  gray5: '#D7D7D2';
   gray6: '#EBEBE8';
   gray7: '#F5F5F5';
   white: '#FFFFFF';
@@ -241,6 +241,10 @@ export type ThemeColors<Version extends ThemeColorsVersion> = {
   menuAccent4: RawColor['brandPink'];
   /** brandBlue */
   menuAccent5: RawColor['brandBlue'];
+  /** gray5 */
+  messageCentralFaqIcon: RawColor['gray5'];
+  /** gray4 */
+  messageCentralFaqButtonBorder: RawColor['gray4'];
   /** gray5 */
   selectionCardBorder: RawColor['gray5'];
   /** gray2 */
