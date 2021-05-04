@@ -1,3 +1,10 @@
+## [6.11.5](https://github.com/nordnet/ui/compare/v6.11.4...v6.11.5) (2021-05-04)
+
+
+### Bug Fixes
+
+* 🐛 styling on ssr when the as prop is used ([4efea65](https://github.com/nordnet/ui/commit/4efea65))
+
 ## [6.11.4](https://github.com/nordnet/ui/compare/v6.11.3...v6.11.4) (2021-04-29)
 
 
