@@ -1,3 +1,10 @@
+## [6.11.6](https://github.com/nordnet/ui/compare/v6.11.5...v6.11.6) (2021-05-04)
+
+
+### Bug Fixes
+
+* make the regular and large variant of the pagination bold ([22a6ea4](https://github.com/nordnet/ui/commit/22a6ea4))
+
 ## [6.11.5](https://github.com/nordnet/ui/compare/v6.11.4...v6.11.5) (2021-05-04)
 
 
