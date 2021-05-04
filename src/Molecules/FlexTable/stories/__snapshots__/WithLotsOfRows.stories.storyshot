@@ -431,14 +431,6 @@ exports[`Storyshots Molecules / FlexTable / With lots of rows Big Table 1`] = `
   }
 }
 
-@media not all and (max-width:975px) {
-
-}
-
-@media not all and (min-width:976px) {
-
-}
-
 @media (min-width:760px) {
   .c1 {
     font-size: 20px;
@@ -484,6 +476,14 @@ exports[`Storyshots Molecules / FlexTable / With lots of rows Big Table 1`] = `
   .c22 > *:nth-last-child(2) {
     padding-right: 0;
   }
+}
+
+@media not all and (max-width:975px) {
+
+}
+
+@media not all and (min-width:976px) {
+
 }
 
 <div
@@ -21336,19 +21336,19 @@ exports[`Storyshots Molecules / FlexTable / With lots of rows Big Table Without 
   }
 }
 
+@media (min-width:760px) {
+  .c1 {
+    font-size: 20px;
+    line-height: 1.2;
+  }
+}
+
 @media not all and (max-width:975px) {
 
 }
 
 @media not all and (min-width:976px) {
 
-}
-
-@media (min-width:760px) {
-  .c1 {
-    font-size: 20px;
-    line-height: 1.2;
-  }
 }
 
 <div
@@ -121811,19 +121811,19 @@ exports[`Storyshots Molecules / FlexTable / With lots of rows Multiple Big Table
   }
 }
 
+@media (min-width:760px) {
+  .c1 {
+    font-size: 20px;
+    line-height: 1.2;
+  }
+}
+
 @media not all and (max-width:975px) {
 
 }
 
 @media not all and (min-width:976px) {
 
-}
-
-@media (min-width:760px) {
-  .c1 {
-    font-size: 20px;
-    line-height: 1.2;
-  }
 }
 
 <div
