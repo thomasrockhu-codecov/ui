@@ -36,7 +36,11 @@ const PageNumberItem: React.FC<PageItemProps> = ({
       aria-label={`${label} ${children}`}
       aria-disabled={isCurrentPage}
     >
-      <Typography type="secondary" color={(t) => (isCurrentPage ? t.color.cta : t.color.text)}>
+      <Typography
+        type="secondary"
+        color={(t) => (isCurrentPage ? t.color.cta : t.color.text)}
+        weight="bold"
+      >
         {children}
       </Typography>
     </Button>
@@ -45,7 +49,9 @@ const PageNumberItem: React.FC<PageItemProps> = ({
 
 const TruncatedPageNumbers = () => (
   <Flexbox item container alignItems="center" as="li">
-    <Typography type="secondary">...</Typography>
+    <Typography type="secondary" weight="bold">
+      ...
+    </Typography>
   </Flexbox>
 );
 

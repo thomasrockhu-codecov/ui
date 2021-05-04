@@ -79,7 +79,11 @@ const PageItem: React.FC<PageItemProps> = ({ isCurrentPage = false, onClick, chi
       aria-label={`${label} ${children}`}
       aria-disabled={isCurrentPage}
     >
-      <Typography type="primary" color={(t) => (isCurrentPage ? t.color.buttonText : t.color.text)}>
+      <Typography
+        type="primary"
+        color={(t) => (isCurrentPage ? t.color.buttonText : t.color.text)}
+        weight="bold"
+      >
         {children}
       </Typography>
     </StyledButton>
@@ -88,7 +92,9 @@ const PageItem: React.FC<PageItemProps> = ({ isCurrentPage = false, onClick, chi
 
 const TruncatedPageNumbers = () => (
   <StyledTruncatedBox>
-    <Typography type="secondary">...</Typography>
+    <Typography type="primary" weight="bold">
+      ...
+    </Typography>
   </StyledTruncatedBox>
 );
 
