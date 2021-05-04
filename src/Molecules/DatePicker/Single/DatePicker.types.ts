@@ -2,7 +2,7 @@ import { RANGE_DATE_PICKER, REGULAR_DATE_PICKER } from '../shared/constants';
 
 type DatePickerVariant = typeof REGULAR_DATE_PICKER | typeof RANGE_DATE_PICKER;
 
-export type Props = {
+export type SingleDatePickerProps = {
   ariaLabelPrevious?: string;
   ariaLabelNext?: string;
   open?: boolean;
