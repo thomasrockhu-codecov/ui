@@ -83,7 +83,7 @@ import { useKeyPress, useOnClickOutside } from './common/Hooks';
 import theme, { createTheme } from './theme';
 import TrackingContext from './common/tracking';
 
-import { LinkContext, LinkProps, LinkProvider, LinkProviderProps, useLink } from './common/Links';
+import { LinkContext, LinkProvider, useLink } from './common/Links';
 
 import {
   getPersistedSortOrder,
@@ -92,6 +92,9 @@ import {
 
 /** Utils */
 import { numberWithLimit } from './common/utils';
+
+/** Types */
+// import { OnSort } from './Molecules/FlexTable/Header/Header.types';
 
 /** Runtime code */
 export {
@@ -132,9 +135,7 @@ export {
   Link,
   LinkBuy,
   LinkContext,
-  LinkProps,
   LinkProvider,
-  LinkProviderProps,
   LinkSell,
   List,
   ListItem,

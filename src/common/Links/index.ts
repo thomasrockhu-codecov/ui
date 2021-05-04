@@ -1,4 +1,4 @@
 export * from './context';
 export * from './provider';
-export * from './types';
+// export { LinkProps, LinkProviderProps } from './Links.types';
 export * from './useLink';

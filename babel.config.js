@@ -1,4 +1,4 @@
-module.exports = api => {
+module.exports = (api) => {
   const presets = [
     '@babel/preset-react',
     '@babel/preset-typescript',
@@ -21,7 +21,7 @@ module.exports = api => {
     [
       'babel-plugin-transform-remove-imports',
       {
-        test: 'types$',
+        test: /.*\.types$/,
       },
     ],
   ];
@@ -46,6 +46,6 @@ module.exports = api => {
         plugins: [...plugins, 'require-context-hook', '@babel/plugin-transform-runtime'],
       },
     },
-    ignore,
+    // ignore,
   };
 };

@@ -73,3 +73,5 @@ export type FlexTableComponents = {
   HeaderRow: HeaderRowComponent;
   Row: RowComponent;
 };
+
+export { OnSort } from './Header/Header.types';
