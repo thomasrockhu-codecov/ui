@@ -5,7 +5,8 @@ import { Theme } from '../../theme/theme.types';
 import { assert, isUndefined } from '../../common/utils';
 import NormalizedElements from '../../common/NormalizedElements';
 import TrackingContext from '../../common/tracking';
-import { LinkProps as RawLinkProps, useLink } from '../../common/Links';
+import { useLink } from '../../common/Links';
+import { LinkProps as RawLinkProps } from '../../common/Links/Links.types';
 
 const getEnabledColor = (color: LinkProps['color'], theme: Theme): string => {
   if (color === 'black') {

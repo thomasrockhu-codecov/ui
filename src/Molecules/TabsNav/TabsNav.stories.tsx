@@ -4,7 +4,8 @@ import { Link, MemoryRouter, useRouteMatch } from 'react-router-dom';
 import { action } from '@storybook/addon-actions';
 import { Box, Flexbox, Separator, TabsNav } from '../..';
 import docs from './TabsNav.mdx';
-import { LinkProps, LinkProvider } from '../../common/Links';
+import { LinkProvider } from '../../common/Links';
+import { LinkProps } from '../../common/Links/Links.types';
 
 export default {
   title: 'Molecules / TabsNav',
