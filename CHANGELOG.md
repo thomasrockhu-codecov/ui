@@ -1,3 +1,10 @@
+## [6.11.7](https://github.com/nordnet/ui/compare/v6.11.6...v6.11.7) (2021-05-05)
+
+
+### Bug Fixes
+
+* 🐛 add message central colors ([c1b8208](https://github.com/nordnet/ui/commit/c1b8208))
+
 ## [6.11.6](https://github.com/nordnet/ui/compare/v6.11.5...v6.11.6) (2021-05-04)
 
 
