@@ -74,4 +74,6 @@ export type FlexTableComponents = {
   Row: RowComponent;
 };
 
+export { Props as CellProps } from './Cell/Cell.types';
 export { OnSort } from './Header/Header.types';
+export { SortOrder } from './Header/HeaderContent/HeaderContent.types';

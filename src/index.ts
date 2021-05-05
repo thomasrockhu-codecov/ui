@@ -40,7 +40,7 @@ import DatePicker from './Molecules/DatePicker';
 import Drawer from './Molecules/Drawer';
 import FeedbackBanner from './Molecules/FeedbackBanner';
 import Fieldset from './Molecules/Fieldset';
-import FlexTable from './Molecules/FlexTable';
+import FlexTable, { CellProps, OnSort, SortOrder } from './Molecules/FlexTable';
 import FormField from './Molecules/FormField';
 import InfoBar from './Molecules/InfoBar';
 import Input from './Molecules/Input';
@@ -93,8 +93,8 @@ import {
 /** Utils */
 import { numberWithLimit } from './common/utils';
 
-/** Types */
-// import { OnSort } from './Molecules/FlexTable/Header/Header.types';
+/** Exports for types */
+export type { CellProps, OnSort, SortOrder };
 
 /** Runtime code */
 export {
@@ -144,6 +144,7 @@ export {
   Modal,
   MultiStepProgress,
   Number,
+  // OnSort,
   PageHeaderCard,
   PageWrapper,
   Pagination,
