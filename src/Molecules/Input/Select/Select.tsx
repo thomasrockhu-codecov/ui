@@ -100,6 +100,7 @@ const Select = (props: Props) => {
       valueFromProps: props.value,
       uncommittedSelectedItems: [],
       actions: props.actions || [],
+      disableSearchComponent: props.disableSearchComponent,
     },
   });
   const [machineState, send, service] = machineHandlers;
@@ -147,6 +148,7 @@ const Select = (props: Props) => {
       showSearch: props.showSearch || false,
       id: props.id,
       actions: props.actions || [],
+      disableSearchComponent: props.disableSearchComponent,
     },
     [
       send,
@@ -163,6 +165,7 @@ const Select = (props: Props) => {
       props.id,
       props.actions,
       props.searchQuery,
+      props.disableSearchComponent,
     ],
   );
 
@@ -234,6 +237,7 @@ const Select = (props: Props) => {
   const options = machineState.context.visibleOptions;
   const selectedItems = machineState.context.selectedItems;
   const multiselect = machineState.context.multiselect;
+  const disableSearchComponent = machineState.context.disableSearchComponent;
 
   const ListWrapperComponent = props.withPortal ? ListWrapperWithPortal : ListWrapper;
   const hiddenSelectValues = getValuesForNativeSelect(selectedItems, multiselect);
@@ -305,7 +309,9 @@ const Select = (props: Props) => {
               onMouseMove={handleMouseMove}
               ref={listRef}
               data-testid="input-select-list"
-              searchComponent={<SearchWrapper ref={searchRef} component={Search} />}
+              searchComponent={
+                !disableSearchComponent && <SearchWrapper ref={searchRef} component={Search} />
+              }
               listPosition={props.listPosition}
               placement={props.placement}
               actionsComponent={

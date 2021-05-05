@@ -52,6 +52,7 @@ export type Context = {
   valueFromProps: Array<any>;
   uncommittedSelectedItems: Array<any>;
   actions: Array<Action>;
+  disableSearchComponent: boolean;
 };
 
 export const SelectMachine = Machine<Context>(
@@ -78,6 +79,7 @@ export const SelectMachine = Machine<Context>(
       id: 'id-from-props',
       valueFromProps: [] as Array<any>,
       uncommittedSelectedItems: [] as Array<any>,
+      disableSearchComponent: false,
     },
     on: {
       [ACTION_TYPES.SYNC]: {

@@ -1420,6 +1420,21 @@ export const onAColouredBackground = () => (
   </Box>
 );
 
+export const withoutSearchComponent = () => (
+  <Box p={5} backgroundColor={(t) => t.color.disabledBackground}>
+    <Input.Select
+      id="input-without-a-search-component"
+      label="Without search component"
+      placeholder="Select an option"
+      options={[
+        { label: 'foo', value: 1 },
+        { label: 'bar', value: 2 },
+      ]}
+      disableSearchComponent
+    />
+  </Box>
+);
+
 export default {
   title: 'Molecules / Input / Select',
   parameters: {
