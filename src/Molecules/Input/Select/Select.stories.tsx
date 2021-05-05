@@ -7,7 +7,6 @@ import { SelectMachine } from './machine';
 import {
   Avatar,
   Box,
-  Button,
   Flexbox,
   Icon,
   Input,
@@ -1431,22 +1430,7 @@ export const withoutSearchComponent = () => (
         { label: 'foo', value: 1 },
         { label: 'bar', value: 2 },
       ]}
-      searchComponent={<></>}
-    />
-  </Box>
-);
-
-export const withCustomSearchComponent = () => (
-  <Box p={5} backgroundColor={(t) => t.color.disabledBackground}>
-    <Input.Select
-      id="input-with-custom-search-component"
-      label="With custom search component"
-      placeholder="Select an option"
-      options={[
-        { label: 'foo', value: 1 },
-        { label: 'bar', value: 2 },
-      ]}
-      searchComponent={<Button>blibli</Button>}
+      disableSearchComponent
     />
   </Box>
 );

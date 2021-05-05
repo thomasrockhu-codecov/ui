@@ -91,7 +91,7 @@ export type Props = {
    * Use with showSearch only
    */
   onSearchQueryChange?: (e: { type: string; payload: string }) => void;
-  searchComponent?: React.ReactNode;
+  disableSearchComponent?: boolean;
 };
 
 type OptionItem = {
