@@ -1,3 +1,10 @@
+## [6.11.9](https://github.com/nordnet/ui/compare/v6.11.8...v6.11.9) (2021-05-05)
+
+
+### Bug Fixes
+
+* dont render buttons fullserverredirect prop to dom ([e16b95e](https://github.com/nordnet/ui/commit/e16b95e))
+
 ## [6.11.8](https://github.com/nordnet/ui/compare/v6.11.7...v6.11.8) (2021-05-05)
 
 
