@@ -91,6 +91,10 @@ export type Props = {
    * Use with showSearch only
    */
   onSearchQueryChange?: (e: { type: string; payload: string }) => void;
+  /**
+   * @default false
+   * Disables the possibility to filter options by typing
+   */
   disableSearchComponent?: boolean;
 };
 
