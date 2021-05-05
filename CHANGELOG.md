@@ -1,3 +1,12 @@
+## [6.11.8](https://github.com/nordnet/ui/compare/v6.11.7...v6.11.8) (2021-05-05)
+
+
+### Bug Fixes
+
+* add a lil documentation ([99b37a1](https://github.com/nordnet/ui/commit/99b37a1))
+* introduce new prop, ditch the previous idea ([132541d](https://github.com/nordnet/ui/commit/132541d))
+* searchcomponent ([d8d8093](https://github.com/nordnet/ui/commit/d8d8093))
+
 ## [6.11.7](https://github.com/nordnet/ui/compare/v6.11.6...v6.11.7) (2021-05-05)
 
 
