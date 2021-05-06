@@ -45,5 +45,4 @@ export type InnerProps = Omit<ButtonProps, 'variant' | 'size' | 'fullWidth' | 'c
   $fullWidth?: ButtonProps['fullWidth'];
   $size: Exclude<ButtonProps['size'], undefined>;
   $colorFn?: ColorFn;
-  $fullServerRedirect?: ButtonProps['fullServerRedirect'];
 };
