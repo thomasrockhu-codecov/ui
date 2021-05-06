@@ -76,6 +76,7 @@ colorsSemantic.story = {
 export const colorsPalette = () => {
   return (
     <>
+      {/* eslint-disable-next-line jsx-a11y/accessible-emoji */}
       <h1>⚠️ Internal object, use colors (semantic)</h1>
       <Display
         items={Object.entries(rawColor)?.map(([title, color]) => ({
