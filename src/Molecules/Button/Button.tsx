@@ -7,7 +7,7 @@ import TrackingContext from '../../common/tracking';
 import ButtonContent from './ButtonContent';
 import { neutralStyles, primaryStyles, secondaryStyles } from './Button.styles';
 import { useLink } from '../../common/Links';
-import { LinkProps as RawLinkProps } from '../../common/Links/Links.types';
+import { LinkProps as RawLinkProps } from '../../common/Links/types';
 
 const isPrimary = (variant: ButtonProps['variant']) => variant === 'primary';
 const isSecondary = (variant: ButtonProps['variant']) => variant === 'secondary';

@@ -5,7 +5,7 @@ import { assert } from '../../common/utils';
 import { useKeyboardNavigation } from '../Tabs/useKeyboardNavigation';
 import { Component, ItemProps, TitleComponent } from './TabsNav.types';
 import { useLink } from '../../common/Links';
-import { LinkProps } from '../../common/Links/Links.types';
+import { LinkProps } from '../../common/Links/types';
 
 export const Item: React.FC<ItemProps> = ({ children }) => {
   return <div>{children}</div>;

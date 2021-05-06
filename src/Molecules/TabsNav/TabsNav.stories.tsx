@@ -5,7 +5,7 @@ import { action } from '@storybook/addon-actions';
 import { Box, Flexbox, Separator, TabsNav } from '../..';
 import docs from './TabsNav.mdx';
 import { LinkProvider } from '../../common/Links';
-import { LinkProps } from '../../common/Links/Links.types';
+import { LinkProps } from '../../common/Links/types';
 
 export default {
   title: 'Molecules / TabsNav',

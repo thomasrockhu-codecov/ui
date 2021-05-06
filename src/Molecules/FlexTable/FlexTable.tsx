@@ -5,7 +5,7 @@ import { Header } from './Header';
 import { Footer } from './Footer';
 import { Cell } from './Cell';
 import { CellInlineContainer, ColumnProvider, constants, getStylesForSizes } from './shared';
-import { FlexTableComponent, FlexTableComponents, OnSort } from './FlexTable.types';
+import { FlexTableComponent, FlexTableComponents } from './FlexTable.types';
 import { FlexTableProvider, useFlexTable } from './shared/FlexTableProvider';
 import { ExpandCell } from './Cell/ExpandCell';
 import { Typography } from '../..';
@@ -130,4 +130,3 @@ FlexTable.CONSTANTS = constants;
 FlexTable.ExpandItems = ExpandItems;
 
 export default FlexTable;
-export type { OnSort };

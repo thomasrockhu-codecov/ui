@@ -83,7 +83,7 @@ import { useKeyPress, useOnClickOutside } from './common/Hooks';
 import theme, { createTheme } from './theme';
 import TrackingContext from './common/tracking';
 
-import { LinkContext, LinkProvider, useLink } from './common/Links';
+import { LinkContext, LinkProvider, useLink, LinkProps, LinkProviderProps } from './common/Links';
 
 import {
   getPersistedSortOrder,
@@ -94,7 +94,7 @@ import {
 import { numberWithLimit } from './common/utils';
 
 /** Exports for types */
-export type { CellProps, OnSort, SortOrder };
+export type { LinkProps, LinkProviderProps, CellProps, OnSort, SortOrder };
 
 /** Runtime code */
 export {

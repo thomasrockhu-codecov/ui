@@ -1,5 +1,5 @@
 import React from 'react';
-import { LinkProviderProps } from './Links.types';
+import { LinkProviderProps } from './types';
 import LinkContext from './context';
 
 export const LinkProvider = ({ link, children }: LinkProviderProps) => {
