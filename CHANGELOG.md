@@ -1,3 +1,10 @@
+## [6.11.10](https://github.com/nordnet/ui/compare/v6.11.9...v6.11.10) (2021-05-06)
+
+
+### Bug Fixes
+
+* ignore jsx-a11y for emojis ([5291923](https://github.com/nordnet/ui/commit/5291923))
+
 ## [6.11.9](https://github.com/nordnet/ui/compare/v6.11.8...v6.11.9) (2021-05-05)
 
 
