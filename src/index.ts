@@ -164,7 +164,6 @@ export {
   Modal,
   MultiStepProgress,
   Number,
-  // OnSort,
   PageHeaderCard,
   PageWrapper,
   Pagination,
