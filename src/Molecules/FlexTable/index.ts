@@ -1,5 +1,23 @@
 import FlexTable from './FlexTable';
-import { CellProps, OnSort, SortOrder } from './FlexTable.types';
+import {
+  CellProps,
+  FooterProps,
+  Density,
+  FontSize,
+  MediaRelatedProps,
+  FlexPropsType,
+  OnSort,
+  SortOrder,
+} from './FlexTable.types';
 
 export default FlexTable;
-export type { CellProps, OnSort, SortOrder };
+export type {
+  CellProps,
+  FooterProps,
+  Density,
+  FontSize,
+  MediaRelatedProps,
+  FlexPropsType,
+  OnSort,
+  SortOrder,
+};

@@ -75,5 +75,7 @@ export type FlexTableComponents = {
 };
 
 export { Props as CellProps } from './Cell/Cell.types';
+export { Props as FooterProps } from './Footer/Footer.types';
+export { Density, FontSize, MediaRelatedProps, FlexPropsType } from './shared/shared.types';
 export { OnSort } from './Header/Header.types';
 export { SortOrder } from './Header/HeaderContent/HeaderContent.types';
