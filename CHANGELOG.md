@@ -1,3 +1,10 @@
+## [6.12.1](https://github.com/nordnet/ui/compare/v6.12.0...v6.12.1) (2021-05-07)
+
+
+### Bug Fixes
+
+* 🐛 adjust strokes on some icons ([18653d1](https://github.com/nordnet/ui/commit/18653d1))
+
 # [6.12.0](https://github.com/nordnet/ui/compare/v6.11.11...v6.12.0) (2021-05-07)
 
 
