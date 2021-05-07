@@ -4,9 +4,10 @@ import { StyledChildProps } from './IconBase.types';
 
 export default styled.path<StyledChildProps>`
   ${(p) =>
-    `${p.cssAttribute ?? 'fill'}: ${getColor(
-      p.theme,
-      p.theme.color.backgroundBlack,
-      p.strokeColorFn,
-    )};`}
+    `${(p.cssAttributes ?? [p.cssAttribute ?? 'fill'])
+      .map(
+        (cssAtr: string) =>
+          `${cssAtr}:${getColor(p.theme, p.theme.color.backgroundBlack, p.strokeColorFn)}`,
+      )
+      .join(';')}`}
 `;

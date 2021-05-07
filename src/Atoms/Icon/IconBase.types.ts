@@ -16,6 +16,8 @@ export type StyledChildProps = {
   backgroundColorFn?: ColorFn | string;
   /** @default 'fill' */
   cssAttribute?: string;
+  /** if multiple attributes need to be set */
+  cssAttributes?: string[];
 };
 
 export type BaseProps = {

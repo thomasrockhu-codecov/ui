@@ -57,6 +57,7 @@ import { FinanceGrowth } from './components/FinanceGrowth';
 import { Financial } from './components/Financial';
 import { Flag } from './components/Flag';
 import { Glasses } from './components/Glasses';
+import { Global } from './components/Global';
 import { Globe } from './components/Globe';
 import { GoldBars } from './components/GoldBars';
 import { Growth } from './components/Growth';
@@ -82,6 +83,8 @@ import { MediumRisk } from './components/MediumRisk';
 import { Minimize } from './components/Minimize';
 import { Minus } from './components/Minus';
 import { Money } from './components/Money';
+import { MoneyMove } from './components/MoneyMove';
+import { MoneyThin } from './components/MoneyThin';
 import { Move } from './components/Move';
 import { MoveBig } from './components/MoveBig';
 import { NoFee } from './components/NoFee';
@@ -126,6 +129,7 @@ import { Star } from './components/Star';
 import { Star24 } from './components/Star24';
 import { StarAboveBars } from './components/StarAboveBars';
 import { StarOutline } from './components/StarOutline';
+import { Stock } from './components/Stock';
 import { Tax } from './components/Tax';
 import { TaxPercentage } from './components/TaxPercentage';
 import { Technology } from './components/Technology';
@@ -201,6 +205,7 @@ export default {
   Financial,
   Flag,
   Glasses,
+  Global,
   Globe,
   GoldBars,
   Growth,
@@ -226,6 +231,8 @@ export default {
   Minimize,
   Minus,
   Money,
+  MoneyMove,
+  MoneyThin,
   Move,
   MoveBig,
   NoFee,
@@ -270,6 +277,7 @@ export default {
   Star24,
   StarAboveBars,
   StarOutline,
+  Stock,
   Tax,
   TaxPercentage,
   Technology,
