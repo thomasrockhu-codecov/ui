@@ -3,7 +3,7 @@ import styled, { useTheme } from 'styled-components';
 import format from 'date-fns/format';
 import { useIntl } from 'react-intl';
 import { isBefore, isSameDay, isSameMonth, startOfDay } from 'date-fns';
-import { Props } from './DatePicker.types';
+import { SingleDatePickerProps } from './DatePicker.types';
 
 /**
  * Imported separately because when imported in src/index.ts, Input will not have been imported yet and an error will be thrown
@@ -41,7 +41,7 @@ const StyledDropdownBubbleWrapper = styled.div`
   position: absolute;
 `;
 
-const DatePicker = React.forwardRef<HTMLDivElement, Props>((props, ref) => {
+const DatePicker = React.forwardRef<HTMLDivElement, SingleDatePickerProps>((props, ref) => {
   const {
     ariaLabelPrevious,
     ariaLabelNext,

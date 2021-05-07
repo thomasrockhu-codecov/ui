@@ -1,4 +1,4 @@
-export type Props = {
+export type DoubleDatePickerProps = {
   ariaLabelPrevious?: string;
   ariaLabelNext?: string;
   open?: boolean;

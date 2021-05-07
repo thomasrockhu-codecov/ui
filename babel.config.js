@@ -1,4 +1,4 @@
-module.exports = api => {
+module.exports = (api) => {
   const presets = [
     '@babel/preset-react',
     '@babel/preset-typescript',
@@ -21,13 +21,10 @@ module.exports = api => {
     [
       'babel-plugin-transform-remove-imports',
       {
-        test: 'types$',
+        test: /.*\.types$/,
       },
     ],
   ];
-
-  const ignore = ['**/*.types.ts'];
-  if (process.env.NODE_ENV !== 'test') ignore.unshift('src/**/*.test.ts', 'src/**/*.snap');
 
   return {
     comments: false,
@@ -46,6 +43,5 @@ module.exports = api => {
         plugins: [...plugins, 'require-context-hook', '@babel/plugin-transform-runtime'],
       },
     },
-    ignore,
   };
 };

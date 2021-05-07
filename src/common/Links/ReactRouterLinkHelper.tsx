@@ -1,6 +1,7 @@
 import React, { FC } from 'react';
 import { Link as RRLink, MemoryRouter } from 'react-router-dom';
-import { LinkProps, LinkProvider } from '.';
+import { LinkProvider } from '.';
+import { LinkProps } from './types';
 
 export const RawLink: FC<LinkProps> = (props) => {
   const {

@@ -4,7 +4,8 @@ import { Flexbox, TabTitle, Typography } from '../..';
 import { assert } from '../../common/utils';
 import { useKeyboardNavigation } from '../Tabs/useKeyboardNavigation';
 import { Component, ItemProps, TitleComponent } from './TabsNav.types';
-import { LinkProps, useLink } from '../../common/Links';
+import { useLink } from '../../common/Links';
+import { LinkProps } from '../../common/Links/types';
 
 export const Item: React.FC<ItemProps> = ({ children }) => {
   return <div>{children}</div>;

@@ -40,7 +40,16 @@ import DatePicker from './Molecules/DatePicker';
 import Drawer from './Molecules/Drawer';
 import FeedbackBanner from './Molecules/FeedbackBanner';
 import Fieldset from './Molecules/Fieldset';
-import FlexTable from './Molecules/FlexTable';
+import FlexTable, {
+  CellProps,
+  FooterProps,
+  Density,
+  FontSize,
+  MediaRelatedProps,
+  FlexPropsType,
+  OnSort,
+  SortOrder,
+} from './Molecules/FlexTable';
 import FormField from './Molecules/FormField';
 import InfoBar from './Molecules/InfoBar';
 import Input from './Molecules/Input';
@@ -83,7 +92,7 @@ import { useKeyPress, useOnClickOutside } from './common/Hooks';
 import theme, { createTheme } from './theme';
 import TrackingContext from './common/tracking';
 
-import { LinkContext, LinkProps, LinkProvider, LinkProviderProps, useLink } from './common/Links';
+import { LinkContext, LinkProvider, useLink, LinkProps, LinkProviderProps } from './common/Links';
 
 import {
   getPersistedSortOrder,
@@ -92,6 +101,20 @@ import {
 
 /** Utils */
 import { numberWithLimit } from './common/utils';
+
+/** Exports for types */
+export type {
+  LinkProps,
+  LinkProviderProps,
+  CellProps,
+  FooterProps,
+  Density,
+  FontSize,
+  MediaRelatedProps,
+  FlexPropsType,
+  OnSort,
+  SortOrder,
+};
 
 /** Runtime code */
 export {
@@ -132,9 +155,7 @@ export {
   Link,
   LinkBuy,
   LinkContext,
-  LinkProps,
   LinkProvider,
-  LinkProviderProps,
   LinkSell,
   List,
   ListItem,
