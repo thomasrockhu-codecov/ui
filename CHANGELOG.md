@@ -1,3 +1,16 @@
+## [6.11.11](https://github.com/nordnet/ui/compare/v6.11.10...v6.11.11) (2021-05-07)
+
+
+### Bug Fixes
+
+* DatePicker types, no imports, just exports, and renames ([2f35b6d](https://github.com/nordnet/ui/commit/2f35b6d))
+* exposed types CellProps, OnSort, and SortOrder from Molecules/FlexTable ([9fdc1e6](https://github.com/nordnet/ui/commit/9fdc1e6))
+* exposed types FooterPiops, Density, FontSize, MediaRelatedProps, FlexPropsType from Molecules/FlexTable ([f89bd4c](https://github.com/nordnet/ui/commit/f89bd4c))
+* exposed types LinkProps and LinkProviderProps from common/Links ([4a01a55](https://github.com/nordnet/ui/commit/4a01a55))
+* import fixes ([3ed6062](https://github.com/nordnet/ui/commit/3ed6062))
+* removed unnecessery variable and comment ([a082505](https://github.com/nordnet/ui/commit/a082505))
+* wip types exports ([83b39d6](https://github.com/nordnet/ui/commit/83b39d6))
+
 ## [6.11.10](https://github.com/nordnet/ui/compare/v6.11.9...v6.11.10) (2021-05-06)
 
 
