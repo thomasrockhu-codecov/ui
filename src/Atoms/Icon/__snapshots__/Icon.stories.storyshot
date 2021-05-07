@@ -3346,6 +3346,7 @@ Array [
         <path
           className="c1"
           d="M28 19V9H4m0 4v10h24m-2.828-5.667L28 20.162l2.828-2.829M1.172 14.667L4 11.838l2.828 2.829M16 19a3 3 0 100-6 3 3 0 000 6z"
+          strokeWidth="2"
         />
       </g>
     </svg>
@@ -5405,7 +5406,6 @@ Array [
 }
 
 .c1 {
-  stroke: #0046FF;
   fill: #0046FF;
 }
 
@@ -6136,11 +6136,6 @@ exports[`Storyshots Atoms / Icon Available icons 1`] = `
   fill: #000000;
 }
 
-.c34 {
-  stroke: #000000;
-  fill: #000000;
-}
-
 .c6 {
   fill: #28282A;
 }
@@ -6237,13 +6232,13 @@ exports[`Storyshots Atoms / Icon Available icons 1`] = `
   stroke: #6E6E69;
 }
 
-.c35 {
+.c34 {
   -webkit-transform: rotate(90deg);
   -ms-transform: rotate(90deg);
   transform: rotate(90deg);
 }
 
-.c36 {
+.c35 {
   -webkit-transform: rotate(0deg);
   -ms-transform: rotate(0deg);
   transform: rotate(0deg);
@@ -9375,6 +9370,7 @@ exports[`Storyshots Atoms / Icon Available icons 1`] = `
             <path
               className="c4"
               d="M28 19V9H4m0 4v10h24m-2.828-5.667L28 20.162l2.828-2.829M1.172 14.667L4 11.838l2.828 2.829M16 19a3 3 0 100-6 3 3 0 000 6z"
+              strokeWidth="2"
             />
           </g>
         </svg>
@@ -11300,7 +11296,7 @@ exports[`Storyshots Atoms / Icon Available icons 1`] = `
           viewBox="0 0 32 32"
         >
           <path
-            className="c34"
+            className="c15"
             d="M20.2382 9L22.2382 7H31.6666V16.4277L29.6666 18.4277V10.6302L20.1502 21.3362L10.8666 14.7051L2.12265 25.9473L0.543945 24.7194L10.4667 11.9616L19.8497 18.6638L28.4398 9H20.2382Z"
           />
         </svg>
@@ -11473,7 +11469,7 @@ exports[`Storyshots Atoms / Icon Available icons 1`] = `
       >
         <svg
           aria-hidden="true"
-          className="c5 c35"
+          className="c5 c34"
           direction="up"
           focusable="false"
           preserveAspectRatio="xMidYMid meet"
@@ -11507,7 +11503,7 @@ exports[`Storyshots Atoms / Icon Available icons 1`] = `
       >
         <svg
           aria-hidden="true"
-          className="c5 c36"
+          className="c5 c35"
           direction="down"
           focusable="false"
           preserveAspectRatio="xMidYMid meet"
