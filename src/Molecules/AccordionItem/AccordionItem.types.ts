@@ -11,6 +11,7 @@ type Props = {
   ref?: React.Ref<HTMLButtonElement>;
   withChevron?: boolean;
   disableBackgroundColor?: boolean;
+  itemPaddingX?: number;
 };
 
 export type AccordionItemComponent = React.FC<Props>;
