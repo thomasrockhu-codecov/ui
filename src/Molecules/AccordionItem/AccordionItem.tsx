@@ -6,19 +6,20 @@ import { Box, Icon, Typography } from '../..';
 import { isBoolean, isFunction, isString } from '../../common/utils';
 import { AccordionItemComponent } from './AccordionItem.types';
 
-const Item = styled.div<{ $hasFocus: boolean }>`
+const Item = styled.div<{ $hasFocus: boolean; $disableBackgroundColor: boolean }>`
   & + & {
     border-top: 1px solid ${(p) => p.theme.color.divider};
   }
 
   &:hover {
-    background-color: ${({ theme }) => theme.color.background};
+    background-color: ${({ $disableBackgroundColor, theme }) =>
+      $disableBackgroundColor ? '' : theme.color.background};
   }
 
   outline: ${({ $hasFocus, theme }) => ($hasFocus ? `1px solid ${theme.color.cta}` : 'none')};
 
-  background-color: ${({ $hasFocus, theme }) =>
-    $hasFocus ? `${theme.color.background}` : 'transparent'};
+  background-color: ${({ $disableBackgroundColor, $hasFocus, theme }) =>
+    !$disableBackgroundColor && $hasFocus ? `${theme.color.background}` : 'transparent'};
 `;
 
 const Button = styled.button<{ $withChevron?: boolean }>`
@@ -55,6 +56,7 @@ export const AccordionItem: AccordionItemComponent = React.forwardRef(
       onClick,
       onToggle,
       withChevron,
+      disableBackgroundColor = false,
     },
     ref,
   ) => {
@@ -90,7 +92,12 @@ export const AccordionItem: AccordionItemComponent = React.forwardRef(
     );
 
     return (
-      <Item className={className} aria-expanded={expanded} $hasFocus={hasFocus}>
+      <Item
+        className={className}
+        aria-expanded={expanded}
+        $hasFocus={hasFocus}
+        $disableBackgroundColor={disableBackgroundColor}
+      >
         <Typography as={as} type="secondary" weight="bold">
           <Button
             $withChevron={withChevron}

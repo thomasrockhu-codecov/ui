@@ -92,3 +92,9 @@ export const withChevron = () => (
     <ExampleContent />
   </AccordionItem>
 );
+
+export const withDisabledBackgroundColor = () => (
+  <AccordionItem title="This card has its hover and focus color disabled" disableBackgroundColor>
+    <ExampleContent />
+  </AccordionItem>
+);
