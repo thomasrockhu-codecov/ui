@@ -11,7 +11,13 @@ type Props = {
   ref?: React.Ref<HTMLButtonElement>;
   withChevron?: boolean;
   disableBackgroundColor?: boolean;
-  itemPaddingX?: number;
+  p?: number;
+  px?: number;
+  py?: number;
+  pt?: number;
+  pb?: number;
+  pl?: number;
+  pr?: number;
 };
 
 export type AccordionItemComponent = React.FC<Props>;

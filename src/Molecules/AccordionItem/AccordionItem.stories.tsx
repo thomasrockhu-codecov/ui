@@ -99,8 +99,32 @@ export const withDisabledBackgroundColor = () => (
   </AccordionItem>
 );
 
-export const withOptionalXPadding = () => (
-  <AccordionItem title="This accordion item has a custom X padding set" itemPaddingX={20}>
-    <ExampleContent />
-  </AccordionItem>
+export const withDifferentPaddings = () => (
+  <>
+    <AccordionItem title="This accordion item has a custom padding" p={10}>
+      <ExampleContent />
+    </AccordionItem>
+    <AccordionItem title="This accordion item has a custom horizontal padding" px={20}>
+      <ExampleContent />
+    </AccordionItem>
+    <AccordionItem title="This accordion item has a custom vertical padding" py={10}>
+      <ExampleContent />
+    </AccordionItem>
+    <AccordionItem title="This accordion item has a custom top padding" pt={10}>
+      <ExampleContent />
+    </AccordionItem>
+    <AccordionItem title="This accordion item has a custom bottom padding" pb={10}>
+      <ExampleContent />
+    </AccordionItem>
+    <AccordionItem title="This accordion item has a custom left padding" pl={20}>
+      <ExampleContent />
+    </AccordionItem>
+    <AccordionItem
+      title="This accordion item has a custom right padding and chevron to demonstrate"
+      pr={20}
+      withChevron
+    >
+      <ExampleContent />
+    </AccordionItem>
+  </>
 );
