@@ -99,7 +99,7 @@ export const withDisabledBackgroundColor = () => (
   </AccordionItem>
 );
 
-export const withDisabledOutline = () => (
+export const withOptionalXPadding = () => (
   <AccordionItem title="This accordion item has a custom X padding set" itemPaddingX={20}>
     <ExampleContent />
   </AccordionItem>
