@@ -8,7 +8,7 @@ exports[`Storyshots Atoms / Icon Account 1`] = `
   user-select: none;
   width: 40px;
   height: 40px;
-  fill: #FFFFFF;
+  fill: #282823;
   -webkit-flex-shrink: 0;
   -ms-flex-negative: 0;
   flex-shrink: 0;
@@ -16,7 +16,7 @@ exports[`Storyshots Atoms / Icon Account 1`] = `
 }
 
 .c1 {
-  stroke: #000000;
+  fill: #000000;
 }
 
 <svg
@@ -29,8 +29,15 @@ exports[`Storyshots Atoms / Icon Account 1`] = `
 >
   <path
     className="c1"
-    d="M22.857 9H28v19H7.667A3.667 3.667 0 014 24.333V6.5M25 18h-3M6.5 4H23v5H6.5a2.5 2.5 0 010-5z"
-    strokeWidth="2"
+    d="M25 20h2v-2h-2v2z"
+    strokeWidth={0}
+  />
+  <path
+    className="c1"
+    clipRule="evenodd"
+    d="M1 5a4 4 0 014-4h22v6h4v24H5a4 4 0 01-4-4V5zm4-2h20v4H5a2 2 0 110-4zm0 6h24v20H5a2 2 0 01-2-2V8.465C3.588 8.805 4.271 9 5 9z"
+    fillRule="evenodd"
+    strokeWidth={0}
   />
 </svg>
 `;
@@ -44,7 +51,7 @@ Array [
   user-select: none;
   width: 20px;
   height: 20px;
-  fill: #FFFFFF;
+  fill: #0046FF;
   -webkit-flex-shrink: 0;
   -ms-flex-negative: 0;
   flex-shrink: 0;
@@ -52,7 +59,7 @@ Array [
 }
 
 .c1 {
-  stroke: #0046FF;
+  fill: #0046FF;
 }
 
 <div
@@ -73,8 +80,15 @@ Array [
     >
       <path
         className="c1"
-        d="M22.857 9H28v19H7.667A3.667 3.667 0 014 24.333V6.5M25 18h-3M6.5 4H23v5H6.5a2.5 2.5 0 010-5z"
-        strokeWidth="2"
+        d="M25 20h2v-2h-2v2z"
+        strokeWidth={0}
+      />
+      <path
+        className="c1"
+        clipRule="evenodd"
+        d="M1 5a4 4 0 014-4h22v6h4v24H5a4 4 0 01-4-4V5zm4-2h20v4H5a2 2 0 110-4zm0 6h24v20H5a2 2 0 01-2-2V8.465C3.588 8.805 4.271 9 5 9z"
+        fillRule="evenodd"
+        strokeWidth={0}
       />
     </svg>
   </div>,
@@ -804,7 +818,7 @@ Array [
   user-select: none;
   width: 20px;
   height: 20px;
-  fill: #FFFFFF;
+  fill: transparent;
   -webkit-flex-shrink: 0;
   -ms-flex-negative: 0;
   flex-shrink: 0;
@@ -833,8 +847,10 @@ Array [
     >
       <path
         className="c1"
-        d="M5 7h22v5H5V7zm0 5h22v16H5V12zm18-8v4M9 4v4"
-        strokeWidth="2"
+        clipRule="evenodd"
+        d="M2 10h28v20H2zM2 3h28v7H2zM8 1v4M24 1v4"
+        fillRule="evenodd"
+        strokeWidth={2}
       />
     </svg>
   </div>,
@@ -3747,7 +3763,7 @@ Array [
   user-select: none;
   width: 20px;
   height: 20px;
-  fill: #FFFFFF;
+  fill: #0046FF;
   -webkit-flex-shrink: 0;
   -ms-flex-negative: 0;
   flex-shrink: 0;
@@ -3755,7 +3771,7 @@ Array [
 }
 
 .c1 {
-  stroke: #0046FF;
+  fill: #0046FF;
 }
 
 <div
@@ -3774,24 +3790,18 @@ Array [
       role="presentation"
       viewBox="0 0 32 32"
     >
-      <g
-        transform="translate(3 3)"
-      >
-        <mask
-          fill="#fff"
-          id="percent-mask"
-        >
-          <path
-            d="M0 0H26V26H0z"
-          />
-        </mask>
-        <path
-          className="c1"
-          d="M1 27.003L25-1M7 9a4 4 0 100-8 4 4 0 000 8zm12 16a4 4 0 100-8 4 4 0 000 8z"
-          mask="url(#percent-mask)"
-          strokeWidth="2"
-        />
-      </g>
+      <path
+        className="c1"
+        d="M3.522 30L25.92 2h2.56L6.084 30H3.522z"
+        strokeWidth={0}
+      />
+      <path
+        className="c1"
+        clipRule="evenodd"
+        d="M23.015 30h-.03a5 5 0 11.03 0zM20 25a3 3 0 116 0 3 3 0 01-6 0zM9 2a5 5 0 100 10A5 5 0 009 2zM6 7a3 3 0 116 0 3 3 0 01-6 0z"
+        fillRule="evenodd"
+        strokeWidth={0}
+      />
     </svg>
   </div>,
   .c0 {
@@ -3849,7 +3859,7 @@ Array [
 }
 
 .c1 {
-  stroke: #0046FF;
+  fill: #0046FF;
 }
 
 <div
@@ -3870,9 +3880,10 @@ Array [
     >
       <path
         className="c1"
-        d="M5 27v-5.4C5 19.612 6.642 18 8.667 18h14.666C25.358 18 27 19.612 27 21.6V27M16 4a5 5 0 110 10 5 5 0 010-10z"
-        fill="#ffffff"
-        strokeWidth="2"
+        clipRule="evenodd"
+        d="M11 9a5 5 0 1110 0 5 5 0 01-10 0zm5-7a7 7 0 100 14 7 7 0 000-14zM6 18a4 4 0 00-4 4v7h2v-7a2 2 0 012-2h20a2 2 0 012 2v7h2v-7a4 4 0 00-4-4H6z"
+        fillRule="evenodd"
+        strokeWidth={0}
       />
     </svg>
   </div>,
@@ -5714,7 +5725,7 @@ Array [
   user-select: none;
   width: 20px;
   height: 20px;
-  fill: #FFFFFF;
+  fill: #0046FF;
   -webkit-flex-shrink: 0;
   -ms-flex-negative: 0;
   flex-shrink: 0;
@@ -5722,7 +5733,7 @@ Array [
 }
 
 .c1 {
-  stroke: #0046FF;
+  fill: #0046FF;
 }
 
 <div
@@ -5743,8 +5754,10 @@ Array [
     >
       <path
         className="c1"
-        d="M6 13a3 3 0 110 6 3 3 0 010-6zm20 0a3 3 0 110 6 3 3 0 010-6zm-10 0a3 3 0 110 6 3 3 0 010-6z"
-        strokeWidth="2"
+        clipRule="evenodd"
+        d="M5 20a4 4 0 100-8 4 4 0 000 8zm0-2a2 2 0 100-4 2 2 0 000 4zM16 20a4 4 0 100-8 4 4 0 000 8zm0-2a2 2 0 100-4 2 2 0 000 4zM31 16a4 4 0 11-8 0 4 4 0 018 0zm-2 0a2 2 0 11-4 0 2 2 0 014 0z"
+        fillRule="evenodd"
+        strokeWidth={0}
       />
     </svg>
   </div>,
@@ -5790,7 +5803,7 @@ Array [
   user-select: none;
   width: 20px;
   height: 20px;
-  fill: #FFFFFF;
+  fill: #0046FF;
   -webkit-flex-shrink: 0;
   -ms-flex-negative: 0;
   flex-shrink: 0;
@@ -5798,7 +5811,7 @@ Array [
 }
 
 .c1 {
-  stroke: #0046FF;
+  fill: #0046FF;
 }
 
 <div
@@ -5817,25 +5830,10 @@ Array [
       role="presentation"
       viewBox="0 0 32 32"
     >
-      <g
-        transform="translate(2 5)"
-      >
-        <mask
-          fill="#fff"
-          id="transfer-mask"
-        >
-          <path
-            d="M28 12v10H0V12h28zm0-12v10H0V0h28z"
-          />
-        </mask>
-        <path
-          className="c1"
-          d="M3 5h20M8.707 11.364L2.343 5l6.364-6.364M25 17H5m14.293 6.364L25.657 17l-6.364-6.364"
-          mask="url(#transfer-mask)"
-          strokeWidth="2"
-          transform="matrix(-1 0 0 1 28 0)"
-        />
-      </g>
+      <path
+        className="c1"
+        d="M22.173 15H25l5-5-5-5h-2.828l4 4H8v2h18.173l-4 4zM10.828 17H8l-5 5 5 5h2.828l-4-4h18.173v-2H6.828l4-4z"
+      />
     </svg>
   </div>,
   .c0 {
@@ -6051,21 +6049,21 @@ exports[`Storyshots Atoms / Icon Available icons 1`] = `
   user-select: none;
   width: 20px;
   height: 20px;
-  fill: #FFFFFF;
+  fill: #282823;
   -webkit-flex-shrink: 0;
   -ms-flex-negative: 0;
   flex-shrink: 0;
   display: block;
 }
 
-.c5 {
+.c7 {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
   width: 20px;
   height: 20px;
-  fill: #282823;
+  fill: transparent;
   -webkit-flex-shrink: 0;
   -ms-flex-negative: 0;
   flex-shrink: 0;
@@ -6129,48 +6127,48 @@ exports[`Storyshots Atoms / Icon Available icons 1`] = `
 }
 
 .c4 {
-  stroke: #000000;
-}
-
-.c15 {
   fill: #000000;
 }
 
-.c6 {
+.c8 {
+  stroke: #000000;
+}
+
+.c5 {
   fill: #28282A;
 }
 
-.c7 {
+.c6 {
   fill: #D2F500;
 }
 
-.c8 {
+.c9 {
   fill: #28282A;
 }
 
-.c9 {
+.c10 {
   fill: #FFF;
 }
 
-.c10 {
+.c11 {
   -webkit-transform: rotate(0deg);
   -ms-transform: rotate(0deg);
   transform: rotate(0deg);
 }
 
-.c12 {
+.c13 {
   fill: #FFF;
 }
 
-.c11 {
+.c12 {
   fill: #28282A;
 }
 
-.c13 {
+.c14 {
   stroke: #6E6E69;
 }
 
-.c14 {
+.c15 {
   fill: #FFFFFF;
 }
 
@@ -6333,8 +6331,15 @@ exports[`Storyshots Atoms / Icon Available icons 1`] = `
         >
           <path
             className="c4"
-            d="M22.857 9H28v19H7.667A3.667 3.667 0 014 24.333V6.5M25 18h-3M6.5 4H23v5H6.5a2.5 2.5 0 010-5z"
-            strokeWidth="2"
+            d="M25 20h2v-2h-2v2z"
+            strokeWidth={0}
+          />
+          <path
+            className="c4"
+            clipRule="evenodd"
+            d="M1 5a4 4 0 014-4h22v6h4v24H5a4 4 0 01-4-4V5zm4-2h20v4H5a2 2 0 110-4zm0 6h24v20H5a2 2 0 01-2-2V8.465C3.588 8.805 4.271 9 5 9z"
+            fillRule="evenodd"
+            strokeWidth={0}
           />
         </svg>
       </div>
@@ -6360,7 +6365,7 @@ exports[`Storyshots Atoms / Icon Available icons 1`] = `
       >
         <svg
           aria-hidden="true"
-          className="c5"
+          className="c3"
           focusable="false"
           preserveAspectRatio="xMidYMid meet"
           role="presentation"
@@ -6403,7 +6408,7 @@ exports[`Storyshots Atoms / Icon Available icons 1`] = `
       >
         <svg
           aria-hidden="true"
-          className="c5"
+          className="c3"
           focusable="false"
           preserveAspectRatio="xMidYMid meet"
           role="presentation"
@@ -6436,7 +6441,7 @@ exports[`Storyshots Atoms / Icon Available icons 1`] = `
       >
         <svg
           aria-hidden="true"
-          className="c5"
+          className="c3"
           focusable="false"
           preserveAspectRatio="xMidYMid meet"
           role="presentation"
@@ -6481,7 +6486,7 @@ exports[`Storyshots Atoms / Icon Available icons 1`] = `
       >
         <svg
           aria-hidden="true"
-          className="c5"
+          className="c3"
           focusable="false"
           preserveAspectRatio="xMidYMid meet"
           role="presentation"
@@ -6515,7 +6520,7 @@ exports[`Storyshots Atoms / Icon Available icons 1`] = `
       >
         <svg
           aria-hidden="true"
-          className="c5"
+          className="c3"
           focusable="false"
           preserveAspectRatio="xMidYMid meet"
           role="presentation"
@@ -6548,7 +6553,7 @@ exports[`Storyshots Atoms / Icon Available icons 1`] = `
       >
         <svg
           aria-hidden="true"
-          className="c5"
+          className="c3"
           focusable="false"
           preserveAspectRatio="xMidYMid meet"
           role="presentation"
@@ -6582,7 +6587,7 @@ exports[`Storyshots Atoms / Icon Available icons 1`] = `
       >
         <svg
           aria-hidden="true"
-          className="c5"
+          className="c3"
           focusable="false"
           preserveAspectRatio="xMidYMid meet"
           role="presentation"
@@ -6615,7 +6620,7 @@ exports[`Storyshots Atoms / Icon Available icons 1`] = `
       >
         <svg
           aria-hidden="true"
-          className="c5"
+          className="c3"
           focusable="false"
           preserveAspectRatio="xMidYMid meet"
           role="presentation"
@@ -6648,7 +6653,7 @@ exports[`Storyshots Atoms / Icon Available icons 1`] = `
       >
         <svg
           aria-hidden="true"
-          className="c5"
+          className="c3"
           focusable="false"
           preserveAspectRatio="xMidYMid meet"
           role="presentation"
@@ -6662,7 +6667,7 @@ exports[`Storyshots Atoms / Icon Available icons 1`] = `
               y="-510"
             >
               <g
-                className="c6"
+                className="c5"
                 x="85"
                 y="510"
               >
@@ -6729,7 +6734,7 @@ exports[`Storyshots Atoms / Icon Available icons 1`] = `
       >
         <svg
           aria-hidden="true"
-          className="c5"
+          className="c3"
           focusable="false"
           preserveAspectRatio="xMidYMid meet"
           role="presentation"
@@ -6762,7 +6767,7 @@ exports[`Storyshots Atoms / Icon Available icons 1`] = `
       >
         <svg
           aria-hidden="true"
-          className="c5"
+          className="c3"
           focusable="false"
           preserveAspectRatio="xMidYMid meet"
           role="presentation"
@@ -6795,7 +6800,7 @@ exports[`Storyshots Atoms / Icon Available icons 1`] = `
       >
         <svg
           aria-hidden="true"
-          className="c5"
+          className="c3"
           focusable="false"
           preserveAspectRatio="xMidYMid meet"
           role="presentation"
@@ -6828,7 +6833,7 @@ exports[`Storyshots Atoms / Icon Available icons 1`] = `
       >
         <svg
           aria-hidden="true"
-          className="c5"
+          className="c3"
           focusable="false"
           preserveAspectRatio="xMidYMid meet"
           role="presentation"
@@ -6861,7 +6866,7 @@ exports[`Storyshots Atoms / Icon Available icons 1`] = `
       >
         <svg
           aria-hidden="true"
-          className="c5"
+          className="c3"
           focusable="false"
           preserveAspectRatio="xMidYMid meet"
           role="presentation"
@@ -6895,7 +6900,7 @@ exports[`Storyshots Atoms / Icon Available icons 1`] = `
       >
         <svg
           aria-hidden="true"
-          className="c5"
+          className="c3"
           focusable="false"
           preserveAspectRatio="xMidYMid meet"
           role="presentation"
@@ -6929,7 +6934,7 @@ exports[`Storyshots Atoms / Icon Available icons 1`] = `
       >
         <svg
           aria-hidden="true"
-          className="c5"
+          className="c3"
           focusable="false"
           preserveAspectRatio="xMidYMid meet"
           role="presentation"
@@ -6963,14 +6968,14 @@ exports[`Storyshots Atoms / Icon Available icons 1`] = `
       >
         <svg
           aria-hidden="true"
-          className="c5"
+          className="c3"
           focusable="false"
           preserveAspectRatio="xMidYMid meet"
           role="presentation"
           viewBox="0 0 32 32"
         >
           <circle
-            className="c7"
+            className="c6"
             cx="16"
             cy="16"
             r="16"
@@ -7002,7 +7007,7 @@ exports[`Storyshots Atoms / Icon Available icons 1`] = `
       >
         <svg
           aria-hidden="true"
-          className="c5"
+          className="c3"
           focusable="false"
           preserveAspectRatio="xMidYMid meet"
           role="presentation"
@@ -7035,16 +7040,18 @@ exports[`Storyshots Atoms / Icon Available icons 1`] = `
       >
         <svg
           aria-hidden="true"
-          className="c3"
+          className="c7"
           focusable="false"
           preserveAspectRatio="xMidYMid meet"
           role="presentation"
           viewBox="0 0 32 32"
         >
           <path
-            className="c4"
-            d="M5 7h22v5H5V7zm0 5h22v16H5V12zm18-8v4M9 4v4"
-            strokeWidth="2"
+            className="c8"
+            clipRule="evenodd"
+            d="M2 10h28v20H2zM2 3h28v7H2zM8 1v4M24 1v4"
+            fillRule="evenodd"
+            strokeWidth={2}
           />
         </svg>
       </div>
@@ -7070,7 +7077,7 @@ exports[`Storyshots Atoms / Icon Available icons 1`] = `
       >
         <svg
           aria-hidden="true"
-          className="c5"
+          className="c3"
           focusable="false"
           preserveAspectRatio="xMidYMid meet"
           role="presentation"
@@ -7103,7 +7110,7 @@ exports[`Storyshots Atoms / Icon Available icons 1`] = `
       >
         <svg
           aria-hidden="true"
-          className="c5"
+          className="c3"
           focusable="false"
           preserveAspectRatio="xMidYMid meet"
           role="presentation"
@@ -7137,7 +7144,7 @@ exports[`Storyshots Atoms / Icon Available icons 1`] = `
       >
         <svg
           aria-hidden="true"
-          className="c5"
+          className="c3"
           focusable="false"
           preserveAspectRatio="xMidYMid meet"
           role="presentation"
@@ -7170,7 +7177,7 @@ exports[`Storyshots Atoms / Icon Available icons 1`] = `
       >
         <svg
           aria-hidden="true"
-          className="c5"
+          className="c3"
           focusable="false"
           preserveAspectRatio="xMidYMid meet"
           role="presentation"
@@ -7181,11 +7188,11 @@ exports[`Storyshots Atoms / Icon Available icons 1`] = `
             fillRule="evenodd"
           >
             <path
-              className="c8"
+              className="c9"
               d="M12 23.87c6.627 0 12-5.315 12-11.87C24 5.445 18.627.13 12 .13S0 5.445 0 12c0 6.555 5.373 11.87 12 11.87z"
             />
             <path
-              className="c9"
+              className="c10"
               d="M16.474 8.87l.933.927L11 16.174l-3.88-3.861.933-.928L11 14.318z"
             />
           </g>
@@ -7213,7 +7220,7 @@ exports[`Storyshots Atoms / Icon Available icons 1`] = `
       >
         <svg
           aria-hidden="true"
-          className="c5"
+          className="c3"
           focusable="false"
           preserveAspectRatio="xMidYMid meet"
           role="presentation"
@@ -7246,7 +7253,7 @@ exports[`Storyshots Atoms / Icon Available icons 1`] = `
       >
         <svg
           aria-hidden="true"
-          className="c5 c10"
+          className="c3 c11"
           direction="down"
           focusable="false"
           preserveAspectRatio="xMidYMid meet"
@@ -7280,7 +7287,7 @@ exports[`Storyshots Atoms / Icon Available icons 1`] = `
       >
         <svg
           aria-hidden="true"
-          className="c5"
+          className="c3"
           focusable="false"
           preserveAspectRatio="xMidYMid meet"
           role="presentation"
@@ -7313,7 +7320,7 @@ exports[`Storyshots Atoms / Icon Available icons 1`] = `
       >
         <svg
           aria-hidden="true"
-          className="c5"
+          className="c3"
           focusable="false"
           preserveAspectRatio="xMidYMid meet"
           role="presentation"
@@ -7347,7 +7354,7 @@ exports[`Storyshots Atoms / Icon Available icons 1`] = `
       >
         <svg
           aria-hidden="true"
-          className="c5"
+          className="c3"
           focusable="false"
           preserveAspectRatio="xMidYMid meet"
           role="presentation"
@@ -7381,7 +7388,7 @@ exports[`Storyshots Atoms / Icon Available icons 1`] = `
       >
         <svg
           aria-hidden="true"
-          className="c5"
+          className="c3"
           focusable="false"
           preserveAspectRatio="xMidYMid meet"
           role="presentation"
@@ -7415,7 +7422,7 @@ exports[`Storyshots Atoms / Icon Available icons 1`] = `
       >
         <svg
           aria-hidden="true"
-          className="c5"
+          className="c3"
           focusable="false"
           preserveAspectRatio="xMidYMid meet"
           role="presentation"
@@ -7448,7 +7455,7 @@ exports[`Storyshots Atoms / Icon Available icons 1`] = `
       >
         <svg
           aria-hidden="true"
-          className="c5"
+          className="c3"
           focusable="false"
           preserveAspectRatio="xMidYMid meet"
           role="presentation"
@@ -7485,7 +7492,7 @@ exports[`Storyshots Atoms / Icon Available icons 1`] = `
       >
         <svg
           aria-hidden="true"
-          className="c5"
+          className="c3"
           focusable="false"
           preserveAspectRatio="xMidYMid meet"
           role="presentation"
@@ -7519,7 +7526,7 @@ exports[`Storyshots Atoms / Icon Available icons 1`] = `
       >
         <svg
           aria-hidden="true"
-          className="c5"
+          className="c3"
           focusable="false"
           preserveAspectRatio="xMidYMid meet"
           role="presentation"
@@ -7554,7 +7561,7 @@ exports[`Storyshots Atoms / Icon Available icons 1`] = `
       >
         <svg
           aria-hidden="true"
-          className="c5"
+          className="c3"
           focusable="false"
           preserveAspectRatio="xMidYMid meet"
           role="presentation"
@@ -7587,7 +7594,7 @@ exports[`Storyshots Atoms / Icon Available icons 1`] = `
       >
         <svg
           aria-hidden="true"
-          className="c5"
+          className="c3"
           focusable="false"
           preserveAspectRatio="xMidYMid meet"
           role="presentation"
@@ -7620,7 +7627,7 @@ exports[`Storyshots Atoms / Icon Available icons 1`] = `
       >
         <svg
           aria-hidden="true"
-          className="c5"
+          className="c3"
           focusable="false"
           preserveAspectRatio="xMidYMid meet"
           role="presentation"
@@ -7653,7 +7660,7 @@ exports[`Storyshots Atoms / Icon Available icons 1`] = `
       >
         <svg
           aria-hidden="true"
-          className="c5"
+          className="c3"
           focusable="false"
           preserveAspectRatio="xMidYMid meet"
           role="presentation"
@@ -7686,7 +7693,7 @@ exports[`Storyshots Atoms / Icon Available icons 1`] = `
       >
         <svg
           aria-hidden="true"
-          className="c5"
+          className="c3"
           focusable="false"
           preserveAspectRatio="xMidYMid meet"
           role="presentation"
@@ -7720,7 +7727,7 @@ exports[`Storyshots Atoms / Icon Available icons 1`] = `
       >
         <svg
           aria-hidden="true"
-          className="c5"
+          className="c3"
           focusable="false"
           preserveAspectRatio="xMidYMid meet"
           role="presentation"
@@ -7754,7 +7761,7 @@ exports[`Storyshots Atoms / Icon Available icons 1`] = `
       >
         <svg
           aria-hidden="true"
-          className="c5"
+          className="c3"
           focusable="false"
           preserveAspectRatio="xMidYMid meet"
           role="presentation"
@@ -7787,7 +7794,7 @@ exports[`Storyshots Atoms / Icon Available icons 1`] = `
       >
         <svg
           aria-hidden="true"
-          className="c5"
+          className="c3"
           focusable="false"
           preserveAspectRatio="xMidYMid meet"
           role="presentation"
@@ -7798,11 +7805,11 @@ exports[`Storyshots Atoms / Icon Available icons 1`] = `
             fillRule="evenodd"
           >
             <polygon
-              className="c11"
+              className="c12"
               points="16.8 0 24 7.2 24 16.8 16.8 24 7.2 24 0 16.8 0 7.2 7.2 0"
             />
             <path
-              className="c12"
+              className="c13"
               d="M13,17 L13,19 L11,19 L11,17 L13,17 Z M13,5 L13,15 L11,15 L11,5 L13,5 Z"
             />
           </g>
@@ -7830,7 +7837,7 @@ exports[`Storyshots Atoms / Icon Available icons 1`] = `
       >
         <svg
           aria-hidden="true"
-          className="c5"
+          className="c3"
           focusable="false"
           preserveAspectRatio="xMidYMid meet"
           role="presentation"
@@ -7864,14 +7871,14 @@ exports[`Storyshots Atoms / Icon Available icons 1`] = `
       >
         <svg
           aria-hidden="true"
-          className="c5"
+          className="c3"
           focusable="false"
           preserveAspectRatio="xMidYMid meet"
           role="presentation"
           viewBox="0 0 24 24"
         >
           <path
-            className="c13"
+            className="c14"
             d="m 1 1 l 22 22 m -22 0 l 22 -22"
             strokeWidth={2}
           />
@@ -7899,7 +7906,7 @@ exports[`Storyshots Atoms / Icon Available icons 1`] = `
       >
         <svg
           aria-hidden="true"
-          className="c5"
+          className="c3"
           focusable="false"
           preserveAspectRatio="xMidYMid meet"
           role="presentation"
@@ -7912,7 +7919,7 @@ exports[`Storyshots Atoms / Icon Available icons 1`] = `
             d="M0 6.4h11.95v6.4H0z"
           />
           <path
-            className="c14"
+            className="c15"
             d="M2.74 11.38c.83 0 1.5-.55 1.55-1.26h-.8a.77.77 0 01-.77.57c-.57 0-.94-.46-.94-1.17s.37-1.16.94-1.16c.35 0 .62.16.76.5h.8c-.08-.67-.73-1.2-1.54-1.2-1.1 0-1.77.82-1.77 1.86s.66 1.86 1.77 1.86zm3.42.01c.9 0 1.44-.46 1.44-1.13 0-.63-.43-.89-1.28-1.1-.58-.15-.83-.22-.83-.47 0-.21.18-.37.55-.37.41 0 .67.2.71.46h.77c-.07-.76-.74-1.11-1.46-1.11-.86 0-1.35.47-1.35 1.06 0 .54.28.84 1.24 1.1.53.13.87.19.87.49 0 .27-.24.41-.63.41s-.76-.15-.82-.52H4.6c.04.71.62 1.18 1.57 1.18zm3.88-.09l1.1-3.55h-.8l-.85 2.96-.84-2.96h-.82l1.1 3.55h1.11z"
           />
         </svg>
@@ -7939,7 +7946,7 @@ exports[`Storyshots Atoms / Icon Available icons 1`] = `
       >
         <svg
           aria-hidden="true"
-          className="c5"
+          className="c3"
           focusable="false"
           preserveAspectRatio="xMidYMid meet"
           role="presentation"
@@ -7972,7 +7979,7 @@ exports[`Storyshots Atoms / Icon Available icons 1`] = `
       >
         <svg
           aria-hidden="true"
-          className="c5"
+          className="c3"
           focusable="false"
           preserveAspectRatio="xMidYMid meet"
           role="presentation"
@@ -8006,7 +8013,7 @@ exports[`Storyshots Atoms / Icon Available icons 1`] = `
       >
         <svg
           aria-hidden="true"
-          className="c5"
+          className="c3"
           focusable="false"
           preserveAspectRatio="xMidYMid meet"
           role="presentation"
@@ -8039,7 +8046,7 @@ exports[`Storyshots Atoms / Icon Available icons 1`] = `
       >
         <svg
           aria-hidden="true"
-          className="c5"
+          className="c3"
           focusable="false"
           preserveAspectRatio="xMidYMid meet"
           role="presentation"
@@ -8073,7 +8080,7 @@ exports[`Storyshots Atoms / Icon Available icons 1`] = `
       >
         <svg
           aria-hidden="true"
-          className="c5"
+          className="c3"
           focusable="false"
           preserveAspectRatio="xMidYMid meet"
           role="presentation"
@@ -8107,7 +8114,7 @@ exports[`Storyshots Atoms / Icon Available icons 1`] = `
       >
         <svg
           aria-hidden="true"
-          className="c5"
+          className="c3"
           focusable="false"
           preserveAspectRatio="xMidYMid meet"
           role="presentation"
@@ -8141,7 +8148,7 @@ exports[`Storyshots Atoms / Icon Available icons 1`] = `
       >
         <svg
           aria-hidden="true"
-          className="c5"
+          className="c3"
           focusable="false"
           preserveAspectRatio="xMidYMid meet"
           role="presentation"
@@ -8175,14 +8182,14 @@ exports[`Storyshots Atoms / Icon Available icons 1`] = `
       >
         <svg
           aria-hidden="true"
-          className="c5"
+          className="c3"
           focusable="false"
           preserveAspectRatio="xMidYMid meet"
           role="presentation"
           viewBox="0 0 32 32"
         >
           <path
-            className="c15"
+            className="c4"
             d="M25,3 L25,8 L30,8 L30,29.8685171 L22.698,25 L7,25 L7,21.535 L2,24.8685171 L2,3 L25,3 Z M25,20 L9.302,20 L9,20.201 L9,23 L23.3027756,23 L28,26.13 L28,10 L25,10 L25,20 Z M14.6417778,14.604 L12.1297778,14.604 L12.1297778,17.148 L14.6417778,17.148 L14.6417778,14.604 Z M13.9377778,5.5 C11.8257778,5.5 10.1937778,6.636 9.87377778,8.812 L12.2897778,8.812 C12.4977778,8.14 12.9937778,7.58 13.8897778,7.58 C14.7537778,7.58 15.1857778,8.06 15.1857778,8.668 C15.1857778,9.20857143 14.8400635,9.57134694 14.3504192,9.98139359 L13.9217778,10.332 C12.6161778,11.3944 12.3652978,11.92432 12.3171698,12.650848 L12.307962,12.8754337 L12.3057778,13.484 L14.4017778,13.484 L14.4497778,13.244 C14.5545051,12.7334545 14.8948687,12.3835702 15.3832353,11.9665004 L15.7297778,11.676 C17.1537778,10.46 17.6817778,9.804 17.6817778,8.556 C17.6817778,6.684 16.1617778,5.5 13.9377778,5.5 Z"
           />
         </svg>
@@ -8209,7 +8216,7 @@ exports[`Storyshots Atoms / Icon Available icons 1`] = `
       >
         <svg
           aria-hidden="true"
-          className="c5"
+          className="c3"
           focusable="false"
           preserveAspectRatio="xMidYMid meet"
           role="presentation"
@@ -8242,7 +8249,7 @@ exports[`Storyshots Atoms / Icon Available icons 1`] = `
       >
         <svg
           aria-hidden="true"
-          className="c5"
+          className="c3"
           focusable="false"
           preserveAspectRatio="xMidYMid meet"
           role="presentation"
@@ -8276,7 +8283,7 @@ exports[`Storyshots Atoms / Icon Available icons 1`] = `
       >
         <svg
           aria-hidden="true"
-          className="c5"
+          className="c3"
           focusable="false"
           preserveAspectRatio="xMidYMid meet"
           role="presentation"
@@ -8310,7 +8317,7 @@ exports[`Storyshots Atoms / Icon Available icons 1`] = `
       >
         <svg
           aria-hidden="true"
-          className="c5"
+          className="c3"
           focusable="false"
           preserveAspectRatio="xMidYMid meet"
           role="presentation"
@@ -8344,7 +8351,7 @@ exports[`Storyshots Atoms / Icon Available icons 1`] = `
       >
         <svg
           aria-hidden="true"
-          className="c5"
+          className="c3"
           focusable="false"
           preserveAspectRatio="xMidYMid meet"
           role="presentation"
@@ -8398,7 +8405,7 @@ exports[`Storyshots Atoms / Icon Available icons 1`] = `
       >
         <svg
           aria-hidden="true"
-          className="c5"
+          className="c3"
           focusable="false"
           preserveAspectRatio="xMidYMid meet"
           role="presentation"
@@ -8432,7 +8439,7 @@ exports[`Storyshots Atoms / Icon Available icons 1`] = `
       >
         <svg
           aria-hidden="true"
-          className="c5"
+          className="c3"
           focusable="false"
           preserveAspectRatio="xMidYMid meet"
           role="presentation"
@@ -8443,7 +8450,7 @@ exports[`Storyshots Atoms / Icon Available icons 1`] = `
             fillRule="evenodd"
           >
             <path
-              className="c4"
+              className="c8"
               d="M16 28c6.627 0 12-5.373 12-12S22.627 4 16 4 4 9.373 4 16s5.373 12 12 12zm0 0c2.21 0 4-5.373 4-12S18.21 4 16 4s-4 5.373-4 12 1.79 12 4 12zM4 16c0 2.21 5.373 4 12 4s12-1.79 12-4-5.373-4-12-4-12 1.79-12 4z"
               strokeWidth="2"
             />
@@ -8472,7 +8479,7 @@ exports[`Storyshots Atoms / Icon Available icons 1`] = `
       >
         <svg
           aria-hidden="false"
-          className="c5"
+          className="c3"
           focusable="false"
           preserveAspectRatio="xMidYMid meet"
           role="img"
@@ -8512,7 +8519,7 @@ exports[`Storyshots Atoms / Icon Available icons 1`] = `
       >
         <svg
           aria-hidden="true"
-          className="c5"
+          className="c3"
           focusable="false"
           preserveAspectRatio="xMidYMid meet"
           role="presentation"
@@ -8557,7 +8564,7 @@ exports[`Storyshots Atoms / Icon Available icons 1`] = `
       >
         <svg
           aria-hidden="true"
-          className="c5"
+          className="c3"
           focusable="false"
           preserveAspectRatio="xMidYMid meet"
           role="presentation"
@@ -8590,7 +8597,7 @@ exports[`Storyshots Atoms / Icon Available icons 1`] = `
       >
         <svg
           aria-hidden="true"
-          className="c5"
+          className="c3"
           focusable="false"
           preserveAspectRatio="xMidYMid meet"
           role="presentation"
@@ -8624,7 +8631,7 @@ exports[`Storyshots Atoms / Icon Available icons 1`] = `
       >
         <svg
           aria-hidden="true"
-          className="c5"
+          className="c3"
           focusable="false"
           preserveAspectRatio="xMidYMid meet"
           role="presentation"
@@ -8657,7 +8664,7 @@ exports[`Storyshots Atoms / Icon Available icons 1`] = `
       >
         <svg
           aria-hidden="true"
-          className="c5"
+          className="c3"
           focusable="false"
           preserveAspectRatio="xMidYMid meet"
           role="presentation"
@@ -8691,7 +8698,7 @@ exports[`Storyshots Atoms / Icon Available icons 1`] = `
       >
         <svg
           aria-hidden="true"
-          className="c5"
+          className="c3"
           focusable="false"
           preserveAspectRatio="xMidYMid meet"
           role="presentation"
@@ -8725,7 +8732,7 @@ exports[`Storyshots Atoms / Icon Available icons 1`] = `
       >
         <svg
           aria-hidden="true"
-          className="c5"
+          className="c3"
           focusable="false"
           preserveAspectRatio="xMidYMid meet"
           role="presentation"
@@ -8758,7 +8765,7 @@ exports[`Storyshots Atoms / Icon Available icons 1`] = `
       >
         <svg
           aria-hidden="true"
-          className="c5"
+          className="c3"
           focusable="false"
           preserveAspectRatio="xMidYMid meet"
           role="presentation"
@@ -8792,7 +8799,7 @@ exports[`Storyshots Atoms / Icon Available icons 1`] = `
       >
         <svg
           aria-hidden="true"
-          className="c5"
+          className="c3"
           focusable="false"
           preserveAspectRatio="xMidYMid meet"
           role="presentation"
@@ -8825,7 +8832,7 @@ exports[`Storyshots Atoms / Icon Available icons 1`] = `
       >
         <svg
           aria-hidden="true"
-          className="c5"
+          className="c3"
           focusable="false"
           preserveAspectRatio="xMidYMid meet"
           role="presentation"
@@ -8871,7 +8878,7 @@ exports[`Storyshots Atoms / Icon Available icons 1`] = `
       >
         <svg
           aria-hidden="true"
-          className="c5"
+          className="c3"
           focusable="false"
           preserveAspectRatio="xMidYMid meet"
           role="presentation"
@@ -8905,7 +8912,7 @@ exports[`Storyshots Atoms / Icon Available icons 1`] = `
       >
         <svg
           aria-hidden="true"
-          className="c5"
+          className="c3"
           focusable="false"
           preserveAspectRatio="xMidYMid meet"
           role="presentation"
@@ -8943,7 +8950,7 @@ exports[`Storyshots Atoms / Icon Available icons 1`] = `
       >
         <svg
           aria-hidden="true"
-          className="c5"
+          className="c3"
           focusable="false"
           preserveAspectRatio="xMidYMid meet"
           role="presentation"
@@ -8977,7 +8984,7 @@ exports[`Storyshots Atoms / Icon Available icons 1`] = `
       >
         <svg
           aria-hidden="true"
-          className="c5"
+          className="c3"
           focusable="false"
           preserveAspectRatio="xMidYMid meet"
           role="presentation"
@@ -9014,7 +9021,7 @@ exports[`Storyshots Atoms / Icon Available icons 1`] = `
       >
         <svg
           aria-hidden="true"
-          className="c5"
+          className="c3"
           focusable="false"
           preserveAspectRatio="xMidYMid meet"
           role="presentation"
@@ -9051,7 +9058,7 @@ exports[`Storyshots Atoms / Icon Available icons 1`] = `
       >
         <svg
           aria-hidden="true"
-          className="c5"
+          className="c3"
           focusable="false"
           preserveAspectRatio="xMidYMid meet"
           role="presentation"
@@ -9084,7 +9091,7 @@ exports[`Storyshots Atoms / Icon Available icons 1`] = `
       >
         <svg
           aria-hidden="true"
-          className="c5"
+          className="c3"
           focusable="false"
           preserveAspectRatio="xMidYMid meet"
           role="presentation"
@@ -9118,7 +9125,7 @@ exports[`Storyshots Atoms / Icon Available icons 1`] = `
       >
         <svg
           aria-hidden="true"
-          className="c5"
+          className="c3"
           focusable="false"
           preserveAspectRatio="xMidYMid meet"
           role="presentation"
@@ -9158,7 +9165,7 @@ exports[`Storyshots Atoms / Icon Available icons 1`] = `
       >
         <svg
           aria-hidden="true"
-          className="c5"
+          className="c3"
           focusable="false"
           preserveAspectRatio="xMidYMid meet"
           role="presentation"
@@ -9191,7 +9198,7 @@ exports[`Storyshots Atoms / Icon Available icons 1`] = `
       >
         <svg
           aria-hidden="true"
-          className="c5"
+          className="c3"
           focusable="false"
           preserveAspectRatio="xMidYMid meet"
           role="presentation"
@@ -9224,7 +9231,7 @@ exports[`Storyshots Atoms / Icon Available icons 1`] = `
       >
         <svg
           aria-hidden="true"
-          className="c5"
+          className="c3"
           focusable="false"
           preserveAspectRatio="xMidYMid meet"
           role="presentation"
@@ -9257,7 +9264,7 @@ exports[`Storyshots Atoms / Icon Available icons 1`] = `
       >
         <svg
           aria-hidden="true"
-          className="c5"
+          className="c3"
           focusable="false"
           preserveAspectRatio="xMidYMid meet"
           role="presentation"
@@ -9290,7 +9297,7 @@ exports[`Storyshots Atoms / Icon Available icons 1`] = `
       >
         <svg
           aria-hidden="true"
-          className="c5"
+          className="c3"
           focusable="false"
           preserveAspectRatio="xMidYMid meet"
           role="presentation"
@@ -9324,7 +9331,7 @@ exports[`Storyshots Atoms / Icon Available icons 1`] = `
       >
         <svg
           aria-hidden="true"
-          className="c5"
+          className="c3"
           focusable="false"
           preserveAspectRatio="xMidYMid meet"
           role="presentation"
@@ -9357,7 +9364,7 @@ exports[`Storyshots Atoms / Icon Available icons 1`] = `
       >
         <svg
           aria-hidden="true"
-          className="c5"
+          className="c3"
           focusable="false"
           preserveAspectRatio="xMidYMid meet"
           role="presentation"
@@ -9368,7 +9375,7 @@ exports[`Storyshots Atoms / Icon Available icons 1`] = `
             fillRule="evenodd"
           >
             <path
-              className="c4"
+              className="c8"
               d="M28 19V9H4m0 4v10h24m-2.828-5.667L28 20.162l2.828-2.829M1.172 14.667L4 11.838l2.828 2.829M16 19a3 3 0 100-6 3 3 0 000 6z"
               strokeWidth="2"
             />
@@ -9397,7 +9404,7 @@ exports[`Storyshots Atoms / Icon Available icons 1`] = `
       >
         <svg
           aria-hidden="true"
-          className="c5"
+          className="c3"
           focusable="false"
           preserveAspectRatio="xMidYMid meet"
           role="presentation"
@@ -9408,7 +9415,7 @@ exports[`Storyshots Atoms / Icon Available icons 1`] = `
             fillRule="evenodd"
           >
             <path
-              className="c4"
+              className="c8"
               d="M16 19a3 3 0 100-6 3 3 0 000 6zM3 13a4 4 0 004-4M3 19a4 4 0 014 4m22-10a4 4 0 01-4-4m4 10a4 4 0 00-4 4M3 9h26v14H3V9z"
               strokeWidth="2"
             />
@@ -9437,7 +9444,7 @@ exports[`Storyshots Atoms / Icon Available icons 1`] = `
       >
         <svg
           aria-hidden="true"
-          className="c5"
+          className="c3"
           focusable="false"
           preserveAspectRatio="xMidYMid meet"
           role="presentation"
@@ -9475,7 +9482,7 @@ exports[`Storyshots Atoms / Icon Available icons 1`] = `
       >
         <svg
           aria-hidden="true"
-          className="c5"
+          className="c3"
           focusable="false"
           preserveAspectRatio="xMidYMid meet"
           role="presentation"
@@ -9516,7 +9523,7 @@ exports[`Storyshots Atoms / Icon Available icons 1`] = `
       >
         <svg
           aria-hidden="true"
-          className="c5"
+          className="c3"
           focusable="false"
           preserveAspectRatio="xMidYMid meet"
           role="presentation"
@@ -9549,7 +9556,7 @@ exports[`Storyshots Atoms / Icon Available icons 1`] = `
       >
         <svg
           aria-hidden="true"
-          className="c5"
+          className="c3"
           focusable="false"
           preserveAspectRatio="xMidYMid meet"
           role="presentation"
@@ -9583,7 +9590,7 @@ exports[`Storyshots Atoms / Icon Available icons 1`] = `
       >
         <svg
           aria-hidden="true"
-          className="c5"
+          className="c3"
           focusable="false"
           preserveAspectRatio="xMidYMid meet"
           role="presentation"
@@ -9617,7 +9624,7 @@ exports[`Storyshots Atoms / Icon Available icons 1`] = `
       >
         <svg
           aria-hidden="true"
-          className="c5"
+          className="c3"
           focusable="false"
           preserveAspectRatio="xMidYMid meet"
           role="presentation"
@@ -9657,7 +9664,7 @@ exports[`Storyshots Atoms / Icon Available icons 1`] = `
       >
         <svg
           aria-hidden="true"
-          className="c5"
+          className="c3"
           focusable="false"
           preserveAspectRatio="xMidYMid meet"
           role="presentation"
@@ -9691,7 +9698,7 @@ exports[`Storyshots Atoms / Icon Available icons 1`] = `
       >
         <svg
           aria-hidden="true"
-          className="c5"
+          className="c3"
           focusable="false"
           preserveAspectRatio="xMidYMid meet"
           role="presentation"
@@ -9728,7 +9735,7 @@ exports[`Storyshots Atoms / Icon Available icons 1`] = `
       >
         <svg
           aria-hidden="true"
-          className="c5"
+          className="c3"
           focusable="false"
           preserveAspectRatio="xMidYMid meet"
           role="presentation"
@@ -9768,24 +9775,18 @@ exports[`Storyshots Atoms / Icon Available icons 1`] = `
           role="presentation"
           viewBox="0 0 32 32"
         >
-          <g
-            transform="translate(3 3)"
-          >
-            <mask
-              fill="#fff"
-              id="percent-mask"
-            >
-              <path
-                d="M0 0H26V26H0z"
-              />
-            </mask>
-            <path
-              className="c4"
-              d="M1 27.003L25-1M7 9a4 4 0 100-8 4 4 0 000 8zm12 16a4 4 0 100-8 4 4 0 000 8z"
-              mask="url(#percent-mask)"
-              strokeWidth="2"
-            />
-          </g>
+          <path
+            className="c4"
+            d="M3.522 30L25.92 2h2.56L6.084 30H3.522z"
+            strokeWidth={0}
+          />
+          <path
+            className="c4"
+            clipRule="evenodd"
+            d="M23.015 30h-.03a5 5 0 11.03 0zM20 25a3 3 0 116 0 3 3 0 01-6 0zM9 2a5 5 0 100 10A5 5 0 009 2zM6 7a3 3 0 116 0 3 3 0 01-6 0z"
+            fillRule="evenodd"
+            strokeWidth={0}
+          />
         </svg>
       </div>
     </div>
@@ -9810,7 +9811,7 @@ exports[`Storyshots Atoms / Icon Available icons 1`] = `
       >
         <svg
           aria-hidden="true"
-          className="c5"
+          className="c3"
           focusable="false"
           preserveAspectRatio="xMidYMid meet"
           role="presentation"
@@ -9848,7 +9849,7 @@ exports[`Storyshots Atoms / Icon Available icons 1`] = `
       >
         <svg
           aria-hidden="true"
-          className="c5"
+          className="c3"
           focusable="false"
           preserveAspectRatio="xMidYMid meet"
           role="presentation"
@@ -9856,9 +9857,10 @@ exports[`Storyshots Atoms / Icon Available icons 1`] = `
         >
           <path
             className="c4"
-            d="M5 27v-5.4C5 19.612 6.642 18 8.667 18h14.666C25.358 18 27 19.612 27 21.6V27M16 4a5 5 0 110 10 5 5 0 010-10z"
-            fill="#ffffff"
-            strokeWidth="2"
+            clipRule="evenodd"
+            d="M11 9a5 5 0 1110 0 5 5 0 01-10 0zm5-7a7 7 0 100 14 7 7 0 000-14zM6 18a4 4 0 00-4 4v7h2v-7a2 2 0 012-2h20a2 2 0 012 2v7h2v-7a4 4 0 00-4-4H6z"
+            fillRule="evenodd"
+            strokeWidth={0}
           />
         </svg>
       </div>
@@ -9884,7 +9886,7 @@ exports[`Storyshots Atoms / Icon Available icons 1`] = `
       >
         <svg
           aria-hidden="true"
-          className="c5"
+          className="c3"
           focusable="false"
           preserveAspectRatio="xMidYMid meet"
           role="presentation"
@@ -9930,7 +9932,7 @@ exports[`Storyshots Atoms / Icon Available icons 1`] = `
       >
         <svg
           aria-hidden="true"
-          className="c5"
+          className="c3"
           focusable="false"
           preserveAspectRatio="xMidYMid meet"
           role="presentation"
@@ -9963,7 +9965,7 @@ exports[`Storyshots Atoms / Icon Available icons 1`] = `
       >
         <svg
           aria-hidden="true"
-          className="c5"
+          className="c3"
           focusable="false"
           preserveAspectRatio="xMidYMid meet"
           role="presentation"
@@ -10003,7 +10005,7 @@ exports[`Storyshots Atoms / Icon Available icons 1`] = `
       >
         <svg
           aria-hidden="true"
-          className="c5"
+          className="c3"
           focusable="false"
           preserveAspectRatio="xMidYMid meet"
           role="presentation"
@@ -10037,7 +10039,7 @@ exports[`Storyshots Atoms / Icon Available icons 1`] = `
       >
         <svg
           aria-hidden="true"
-          className="c5"
+          className="c3"
           focusable="false"
           preserveAspectRatio="xMidYMid meet"
           role="presentation"
@@ -10092,7 +10094,7 @@ exports[`Storyshots Atoms / Icon Available icons 1`] = `
       >
         <svg
           aria-hidden="true"
-          className="c5"
+          className="c3"
           focusable="false"
           preserveAspectRatio="xMidYMid meet"
           role="presentation"
@@ -10147,7 +10149,7 @@ exports[`Storyshots Atoms / Icon Available icons 1`] = `
       >
         <svg
           aria-hidden="true"
-          className="c5"
+          className="c3"
           focusable="false"
           preserveAspectRatio="xMidYMid meet"
           role="presentation"
@@ -10202,7 +10204,7 @@ exports[`Storyshots Atoms / Icon Available icons 1`] = `
       >
         <svg
           aria-hidden="true"
-          className="c5"
+          className="c3"
           focusable="false"
           preserveAspectRatio="xMidYMid meet"
           role="presentation"
@@ -10235,7 +10237,7 @@ exports[`Storyshots Atoms / Icon Available icons 1`] = `
       >
         <svg
           aria-hidden="true"
-          className="c5"
+          className="c3"
           focusable="false"
           preserveAspectRatio="xMidYMid meet"
           role="presentation"
@@ -10268,7 +10270,7 @@ exports[`Storyshots Atoms / Icon Available icons 1`] = `
       >
         <svg
           aria-hidden="true"
-          className="c5"
+          className="c3"
           focusable="false"
           preserveAspectRatio="xMidYMid meet"
           role="presentation"
@@ -10301,7 +10303,7 @@ exports[`Storyshots Atoms / Icon Available icons 1`] = `
       >
         <svg
           aria-hidden="true"
-          className="c5"
+          className="c3"
           focusable="false"
           preserveAspectRatio="xMidYMid meet"
           role="presentation"
@@ -10334,7 +10336,7 @@ exports[`Storyshots Atoms / Icon Available icons 1`] = `
       >
         <svg
           aria-hidden="true"
-          className="c5"
+          className="c3"
           focusable="false"
           preserveAspectRatio="xMidYMid meet"
           role="presentation"
@@ -10398,7 +10400,7 @@ exports[`Storyshots Atoms / Icon Available icons 1`] = `
       >
         <svg
           aria-hidden="true"
-          className="c5"
+          className="c3"
           focusable="false"
           preserveAspectRatio="xMidYMid meet"
           role="presentation"
@@ -10444,7 +10446,7 @@ exports[`Storyshots Atoms / Icon Available icons 1`] = `
       >
         <svg
           aria-hidden="true"
-          className="c5"
+          className="c3"
           focusable="false"
           preserveAspectRatio="xMidYMid meet"
           role="presentation"
@@ -10478,7 +10480,7 @@ exports[`Storyshots Atoms / Icon Available icons 1`] = `
       >
         <svg
           aria-hidden="true"
-          className="c5"
+          className="c3"
           focusable="false"
           preserveAspectRatio="xMidYMid meet"
           role="presentation"
@@ -10524,7 +10526,7 @@ exports[`Storyshots Atoms / Icon Available icons 1`] = `
       >
         <svg
           aria-hidden="true"
-          className="c5"
+          className="c3"
           focusable="false"
           preserveAspectRatio="xMidYMid meet"
           role="presentation"
@@ -10559,7 +10561,7 @@ exports[`Storyshots Atoms / Icon Available icons 1`] = `
       >
         <svg
           aria-hidden="true"
-          className="c5"
+          className="c3"
           focusable="false"
           preserveAspectRatio="xMidYMid meet"
           role="presentation"
@@ -10610,7 +10612,7 @@ exports[`Storyshots Atoms / Icon Available icons 1`] = `
       >
         <svg
           aria-hidden="true"
-          className="c5"
+          className="c3"
           focusable="false"
           preserveAspectRatio="xMidYMid meet"
           role="presentation"
@@ -10653,7 +10655,7 @@ exports[`Storyshots Atoms / Icon Available icons 1`] = `
       >
         <svg
           aria-hidden="true"
-          className="c5"
+          className="c3"
           focusable="false"
           preserveAspectRatio="xMidYMid meet"
           role="presentation"
@@ -10696,7 +10698,7 @@ exports[`Storyshots Atoms / Icon Available icons 1`] = `
       >
         <svg
           aria-hidden="true"
-          className="c5"
+          className="c3"
           focusable="false"
           preserveAspectRatio="xMidYMid meet"
           role="presentation"
@@ -10729,7 +10731,7 @@ exports[`Storyshots Atoms / Icon Available icons 1`] = `
       >
         <svg
           aria-hidden="true"
-          className="c5"
+          className="c3"
           focusable="false"
           preserveAspectRatio="xMidYMid meet"
           role="presentation"
@@ -10762,7 +10764,7 @@ exports[`Storyshots Atoms / Icon Available icons 1`] = `
       >
         <svg
           aria-hidden="false"
-          className="c5"
+          className="c3"
           focusable="false"
           id="shareville-logo"
           preserveAspectRatio="xMidYMid meet"
@@ -11080,7 +11082,7 @@ exports[`Storyshots Atoms / Icon Available icons 1`] = `
       >
         <svg
           aria-hidden="true"
-          className="c5"
+          className="c3"
           focusable="false"
           preserveAspectRatio="xMidYMid meet"
           role="presentation"
@@ -11116,7 +11118,7 @@ exports[`Storyshots Atoms / Icon Available icons 1`] = `
       >
         <svg
           aria-hidden="true"
-          className="c5 c31"
+          className="c3 c31"
           direction="ascending"
           focusable="false"
           preserveAspectRatio="xMidYMid meet"
@@ -11152,7 +11154,7 @@ exports[`Storyshots Atoms / Icon Available icons 1`] = `
       >
         <svg
           aria-hidden="true"
-          className="c5"
+          className="c3"
           focusable="false"
           preserveAspectRatio="xMidYMid meet"
           role="presentation"
@@ -11187,7 +11189,7 @@ exports[`Storyshots Atoms / Icon Available icons 1`] = `
       >
         <svg
           aria-hidden="true"
-          className="c5"
+          className="c3"
           focusable="false"
           preserveAspectRatio="xMidYMid meet"
           role="presentation"
@@ -11222,7 +11224,7 @@ exports[`Storyshots Atoms / Icon Available icons 1`] = `
       >
         <svg
           aria-hidden="true"
-          className="c5"
+          className="c3"
           focusable="false"
           preserveAspectRatio="xMidYMid meet"
           role="presentation"
@@ -11256,7 +11258,7 @@ exports[`Storyshots Atoms / Icon Available icons 1`] = `
       >
         <svg
           aria-hidden="true"
-          className="c5"
+          className="c3"
           focusable="false"
           preserveAspectRatio="xMidYMid meet"
           role="presentation"
@@ -11289,14 +11291,14 @@ exports[`Storyshots Atoms / Icon Available icons 1`] = `
       >
         <svg
           aria-hidden="true"
-          className="c5"
+          className="c3"
           focusable="false"
           preserveAspectRatio="xMidYMid meet"
           role="presentation"
           viewBox="0 0 32 32"
         >
           <path
-            className="c15"
+            className="c4"
             d="M20.2382 9L22.2382 7H31.6666V16.4277L29.6666 18.4277V10.6302L20.1502 21.3362L10.8666 14.7051L2.12265 25.9473L0.543945 24.7194L10.4667 11.9616L19.8497 18.6638L28.4398 9H20.2382Z"
           />
         </svg>
@@ -11323,7 +11325,7 @@ exports[`Storyshots Atoms / Icon Available icons 1`] = `
       >
         <svg
           aria-hidden="true"
-          className="c5"
+          className="c3"
           focusable="false"
           preserveAspectRatio="xMidYMid meet"
           role="presentation"
@@ -11393,7 +11395,7 @@ exports[`Storyshots Atoms / Icon Available icons 1`] = `
       >
         <svg
           aria-hidden="true"
-          className="c5"
+          className="c3"
           focusable="false"
           preserveAspectRatio="xMidYMid meet"
           role="presentation"
@@ -11406,7 +11408,7 @@ exports[`Storyshots Atoms / Icon Available icons 1`] = `
             strokeWidth="1"
           >
             <path
-              className="c4"
+              className="c8"
               d="M7 3h18v26H7V3zm5 13l8-9m-7.5 3a1.5 1.5 0 100-3 1.5 1.5 0 000 3zm7 6a1.5 1.5 0 100-3 1.5 1.5 0 000 3zM10 21h12m-12 4h7"
               strokeWidth="2"
             />
@@ -11435,7 +11437,7 @@ exports[`Storyshots Atoms / Icon Available icons 1`] = `
       >
         <svg
           aria-hidden="true"
-          className="c5"
+          className="c3"
           focusable="false"
           preserveAspectRatio="xMidYMid meet"
           role="presentation"
@@ -11469,7 +11471,7 @@ exports[`Storyshots Atoms / Icon Available icons 1`] = `
       >
         <svg
           aria-hidden="true"
-          className="c5 c34"
+          className="c3 c34"
           direction="up"
           focusable="false"
           preserveAspectRatio="xMidYMid meet"
@@ -11503,7 +11505,7 @@ exports[`Storyshots Atoms / Icon Available icons 1`] = `
       >
         <svg
           aria-hidden="true"
-          className="c5 c35"
+          className="c3 c35"
           direction="down"
           focusable="false"
           preserveAspectRatio="xMidYMid meet"
@@ -11537,7 +11539,7 @@ exports[`Storyshots Atoms / Icon Available icons 1`] = `
       >
         <svg
           aria-hidden="true"
-          className="c5"
+          className="c3"
           focusable="false"
           preserveAspectRatio="xMidYMid meet"
           role="presentation"
@@ -11579,8 +11581,10 @@ exports[`Storyshots Atoms / Icon Available icons 1`] = `
         >
           <path
             className="c4"
-            d="M6 13a3 3 0 110 6 3 3 0 010-6zm20 0a3 3 0 110 6 3 3 0 010-6zm-10 0a3 3 0 110 6 3 3 0 010-6z"
-            strokeWidth="2"
+            clipRule="evenodd"
+            d="M5 20a4 4 0 100-8 4 4 0 000 8zm0-2a2 2 0 100-4 2 2 0 000 4zM16 20a4 4 0 100-8 4 4 0 000 8zm0-2a2 2 0 100-4 2 2 0 000 4zM31 16a4 4 0 11-8 0 4 4 0 018 0zm-2 0a2 2 0 11-4 0 2 2 0 014 0z"
+            fillRule="evenodd"
+            strokeWidth={0}
           />
         </svg>
       </div>
@@ -11606,7 +11610,7 @@ exports[`Storyshots Atoms / Icon Available icons 1`] = `
       >
         <svg
           aria-hidden="true"
-          className="c5"
+          className="c3"
           focusable="false"
           preserveAspectRatio="xMidYMid meet"
           role="presentation"
@@ -11645,25 +11649,10 @@ exports[`Storyshots Atoms / Icon Available icons 1`] = `
           role="presentation"
           viewBox="0 0 32 32"
         >
-          <g
-            transform="translate(2 5)"
-          >
-            <mask
-              fill="#fff"
-              id="transfer-mask"
-            >
-              <path
-                d="M28 12v10H0V12h28zm0-12v10H0V0h28z"
-              />
-            </mask>
-            <path
-              className="c4"
-              d="M3 5h20M8.707 11.364L2.343 5l6.364-6.364M25 17H5m14.293 6.364L25.657 17l-6.364-6.364"
-              mask="url(#transfer-mask)"
-              strokeWidth="2"
-              transform="matrix(-1 0 0 1 28 0)"
-            />
-          </g>
+          <path
+            className="c4"
+            d="M22.173 15H25l5-5-5-5h-2.828l4 4H8v2h18.173l-4 4zM10.828 17H8l-5 5 5 5h2.828l-4-4h18.173v-2H6.828l4-4z"
+          />
         </svg>
       </div>
     </div>
@@ -11688,7 +11677,7 @@ exports[`Storyshots Atoms / Icon Available icons 1`] = `
       >
         <svg
           aria-hidden="true"
-          className="c5"
+          className="c3"
           focusable="false"
           preserveAspectRatio="xMidYMid meet"
           role="presentation"
@@ -11722,7 +11711,7 @@ exports[`Storyshots Atoms / Icon Available icons 1`] = `
       >
         <svg
           aria-hidden="true"
-          className="c5"
+          className="c3"
           focusable="false"
           preserveAspectRatio="xMidYMid meet"
           role="presentation"
@@ -11756,7 +11745,7 @@ exports[`Storyshots Atoms / Icon Available icons 1`] = `
       >
         <svg
           aria-hidden="true"
-          className="c5"
+          className="c3"
           focusable="false"
           preserveAspectRatio="xMidYMid meet"
           role="presentation"
@@ -11802,7 +11791,7 @@ exports[`Storyshots Atoms / Icon Available icons 1`] = `
       >
         <svg
           aria-hidden="true"
-          className="c5"
+          className="c3"
           focusable="false"
           preserveAspectRatio="xMidYMid meet"
           role="presentation"
@@ -11839,7 +11828,7 @@ exports[`Storyshots Atoms / Icon Available icons 1`] = `
       >
         <svg
           aria-hidden="true"
-          className="c5"
+          className="c3"
           focusable="false"
           preserveAspectRatio="xMidYMid meet"
           role="presentation"
@@ -11871,7 +11860,7 @@ exports[`Storyshots Atoms / Icon Calendar O 1`] = `
   user-select: none;
   width: 40px;
   height: 40px;
-  fill: #FFFFFF;
+  fill: transparent;
   -webkit-flex-shrink: 0;
   -ms-flex-negative: 0;
   flex-shrink: 0;
@@ -11892,8 +11881,10 @@ exports[`Storyshots Atoms / Icon Calendar O 1`] = `
 >
   <path
     className="c1"
-    d="M5 7h22v5H5V7zm0 5h22v16H5V12zm18-8v4M9 4v4"
-    strokeWidth="2"
+    clipRule="evenodd"
+    d="M2 10h28v20H2zM2 3h28v7H2zM8 1v4M24 1v4"
+    fillRule="evenodd"
+    strokeWidth={2}
   />
 </svg>
 `;
@@ -12068,7 +12059,7 @@ exports[`Storyshots Atoms / Icon Percent 1`] = `
   user-select: none;
   width: 40px;
   height: 40px;
-  fill: #FFFFFF;
+  fill: #282823;
   -webkit-flex-shrink: 0;
   -ms-flex-negative: 0;
   flex-shrink: 0;
@@ -12076,7 +12067,7 @@ exports[`Storyshots Atoms / Icon Percent 1`] = `
 }
 
 .c1 {
-  stroke: #000000;
+  fill: #000000;
 }
 
 <svg
@@ -12087,24 +12078,18 @@ exports[`Storyshots Atoms / Icon Percent 1`] = `
   role="presentation"
   viewBox="0 0 32 32"
 >
-  <g
-    transform="translate(3 3)"
-  >
-    <mask
-      fill="#fff"
-      id="percent-mask"
-    >
-      <path
-        d="M0 0H26V26H0z"
-      />
-    </mask>
-    <path
-      className="c1"
-      d="M1 27.003L25-1M7 9a4 4 0 100-8 4 4 0 000 8zm12 16a4 4 0 100-8 4 4 0 000 8z"
-      mask="url(#percent-mask)"
-      strokeWidth="2"
-    />
-  </g>
+  <path
+    className="c1"
+    d="M3.522 30L25.92 2h2.56L6.084 30H3.522z"
+    strokeWidth={0}
+  />
+  <path
+    className="c1"
+    clipRule="evenodd"
+    d="M23.015 30h-.03a5 5 0 11.03 0zM20 25a3 3 0 116 0 3 3 0 01-6 0zM9 2a5 5 0 100 10A5 5 0 009 2zM6 7a3 3 0 116 0 3 3 0 01-6 0z"
+    fillRule="evenodd"
+    strokeWidth={0}
+  />
 </svg>
 `;
 
@@ -12124,7 +12109,7 @@ exports[`Storyshots Atoms / Icon Profile 1`] = `
 }
 
 .c1 {
-  stroke: #000000;
+  fill: #000000;
 }
 
 <svg
@@ -12137,9 +12122,10 @@ exports[`Storyshots Atoms / Icon Profile 1`] = `
 >
   <path
     className="c1"
-    d="M5 27v-5.4C5 19.612 6.642 18 8.667 18h14.666C25.358 18 27 19.612 27 21.6V27M16 4a5 5 0 110 10 5 5 0 010-10z"
-    fill="#ffffff"
-    strokeWidth="2"
+    clipRule="evenodd"
+    d="M11 9a5 5 0 1110 0 5 5 0 01-10 0zm5-7a7 7 0 100 14 7 7 0 000-14zM6 18a4 4 0 00-4 4v7h2v-7a2 2 0 012-2h20a2 2 0 012 2v7h2v-7a4 4 0 00-4-4H6z"
+    fillRule="evenodd"
+    strokeWidth={0}
   />
 </svg>
 `;
@@ -12304,7 +12290,7 @@ exports[`Storyshots Atoms / Icon Three Dots O 1`] = `
   user-select: none;
   width: 40px;
   height: 40px;
-  fill: #FFFFFF;
+  fill: #282823;
   -webkit-flex-shrink: 0;
   -ms-flex-negative: 0;
   flex-shrink: 0;
@@ -12312,7 +12298,7 @@ exports[`Storyshots Atoms / Icon Three Dots O 1`] = `
 }
 
 .c1 {
-  stroke: #000000;
+  fill: #000000;
 }
 
 <svg
@@ -12325,8 +12311,10 @@ exports[`Storyshots Atoms / Icon Three Dots O 1`] = `
 >
   <path
     className="c1"
-    d="M6 13a3 3 0 110 6 3 3 0 010-6zm20 0a3 3 0 110 6 3 3 0 010-6zm-10 0a3 3 0 110 6 3 3 0 010-6z"
-    strokeWidth="2"
+    clipRule="evenodd"
+    d="M5 20a4 4 0 100-8 4 4 0 000 8zm0-2a2 2 0 100-4 2 2 0 000 4zM16 20a4 4 0 100-8 4 4 0 000 8zm0-2a2 2 0 100-4 2 2 0 000 4zM31 16a4 4 0 11-8 0 4 4 0 018 0zm-2 0a2 2 0 11-4 0 2 2 0 014 0z"
+    fillRule="evenodd"
+    strokeWidth={0}
   />
 </svg>
 `;
@@ -12339,7 +12327,7 @@ exports[`Storyshots Atoms / Icon Transfer 1`] = `
   user-select: none;
   width: 40px;
   height: 40px;
-  fill: #FFFFFF;
+  fill: #282823;
   -webkit-flex-shrink: 0;
   -ms-flex-negative: 0;
   flex-shrink: 0;
@@ -12347,7 +12335,7 @@ exports[`Storyshots Atoms / Icon Transfer 1`] = `
 }
 
 .c1 {
-  stroke: #000000;
+  fill: #000000;
 }
 
 <svg
@@ -12358,25 +12346,10 @@ exports[`Storyshots Atoms / Icon Transfer 1`] = `
   role="presentation"
   viewBox="0 0 32 32"
 >
-  <g
-    transform="translate(2 5)"
-  >
-    <mask
-      fill="#fff"
-      id="transfer-mask"
-    >
-      <path
-        d="M28 12v10H0V12h28zm0-12v10H0V0h28z"
-      />
-    </mask>
-    <path
-      className="c1"
-      d="M3 5h20M8.707 11.364L2.343 5l6.364-6.364M25 17H5m14.293 6.364L25.657 17l-6.364-6.364"
-      mask="url(#transfer-mask)"
-      strokeWidth="2"
-      transform="matrix(-1 0 0 1 28 0)"
-    />
-  </g>
+  <path
+    className="c1"
+    d="M22.173 15H25l5-5-5-5h-2.828l4 4H8v2h18.173l-4 4zM10.828 17H8l-5 5 5 5h2.828l-4-4h18.173v-2H6.828l4-4z"
+  />
 </svg>
 `;
 

@@ -4,12 +4,14 @@ import { BaseProps, ColorFn } from '../IconBase.types';
 import StyledPath from '../StyledPath';
 
 export const Account = ({ fill, ...props }: BaseProps & { fill: ColorFn | string }) => (
-  <IconBase {...props} viewBox="0 0 32 32" fill={(t) => t.color.spinnerWhite}>
+  <IconBase {...props} viewBox="0 0 32 32">
+    <StyledPath d="M25 20h2v-2h-2v2z" strokeColorFn={fill} strokeWidth={0} />
     <StyledPath
-      cssAttribute="stroke"
+      fillRule="evenodd"
+      clipRule="evenodd"
       strokeColorFn={fill}
-      strokeWidth="2"
-      d="M22.857 9H28v19H7.667A3.667 3.667 0 014 24.333V6.5M25 18h-3M6.5 4H23v5H6.5a2.5 2.5 0 010-5z"
+      strokeWidth={0}
+      d="M1 5a4 4 0 014-4h22v6h4v24H5a4 4 0 01-4-4V5zm4-2h20v4H5a2 2 0 110-4zm0 6h24v20H5a2 2 0 01-2-2V8.465C3.588 8.805 4.271 9 5 9z"
     />
   </IconBase>
 );
