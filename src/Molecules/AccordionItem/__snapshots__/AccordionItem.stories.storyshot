@@ -446,6 +446,205 @@ exports[`Storyshots Molecules / AccordionItem Default Collapsed 1`] = `
 </div>
 `;
 
+exports[`Storyshots Molecules / AccordionItem Disabled 1`] = `
+Array [
+  .c5 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 12px;
+  height: 12px;
+  fill: #A0A09B;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
+}
+
+.c2 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c1 {
+  outline: none;
+  background-color: transparent;
+}
+
+.c1 + .c0 {
+  border-top: 1px solid #EBEBE8;
+}
+
+.c3 {
+  font: inherit;
+  box-sizing: border-box;
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  border: 0;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-right: 0px;
+  padding-left: 24px;
+  color: #A0A09B;
+  background-color: transparent;
+  cursor: default;
+  text-align: start;
+}
+
+.c4 {
+  position: absolute;
+  top: 15px;
+  left: 0;
+}
+
+<div
+    aria-expanded={false}
+    className="c0 c1"
+  >
+    <h3
+      className="c2"
+    >
+      <button
+        className="c3"
+        disabled={true}
+        onBlur={[Function]}
+        onClick={[Function]}
+        onFocus={[Function]}
+        type="button"
+      >
+        <div
+          className="c4"
+        >
+          <svg
+            aria-hidden="true"
+            className="c5"
+            focusable="false"
+            preserveAspectRatio="xMidYMid meet"
+            role="presentation"
+            viewBox="0 0 12 12"
+          >
+            <path
+              d="M7.166 0v5h5v2h-5v5h-2V6.999L.166 7V5l5-.001V0h2z"
+              fillRule="evenodd"
+            />
+          </svg>
+        </div>
+        This accordion item is disabled
+      </button>
+    </h3>
+  </div>,
+  .c5 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 16px;
+  height: 16px;
+  fill: #A0A09B;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
+}
+
+.c6 {
+  -webkit-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  transform: rotate(0deg);
+}
+
+.c2 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c1 {
+  outline: none;
+  background-color: transparent;
+}
+
+.c1 + .c0 {
+  border-top: 1px solid #EBEBE8;
+}
+
+.c3 {
+  font: inherit;
+  box-sizing: border-box;
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  border: 0;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-right: 24px;
+  padding-left: 0px;
+  color: #A0A09B;
+  background-color: transparent;
+  cursor: default;
+  text-align: start;
+}
+
+.c4 {
+  position: absolute;
+  top: 15px;
+  right: 0;
+}
+
+<div
+    aria-expanded={false}
+    className="c0 c1"
+  >
+    <h3
+      className="c2"
+    >
+      <button
+        className="c3"
+        disabled={true}
+        onBlur={[Function]}
+        onClick={[Function]}
+        onFocus={[Function]}
+        type="button"
+      >
+        This accordion item is disabled with chevron
+        <div
+          className="c4"
+        >
+          <svg
+            aria-hidden="true"
+            className="c5 c6"
+            direction="down"
+            focusable="false"
+            preserveAspectRatio="xMidYMid meet"
+            role="presentation"
+            viewBox="0 0 16 16"
+          >
+            <polygon
+              points="14.620 3.580, 16.000 5.020, 8.000 12.730, 0.000 5.030, 1.400 3.580, 8.000 9.96"
+            />
+          </svg>
+        </div>
+      </button>
+    </h3>
+  </div>,
+]
+`;
+
 exports[`Storyshots Molecules / AccordionItem Expanded 1`] = `
 .c6 {
   padding-left: 24px;
@@ -778,7 +977,6 @@ exports[`Storyshots Molecules / AccordionItem With Chevron 1`] = `
   user-select: none;
   width: 16px;
   height: 16px;
-  fill: #282823;
   -webkit-flex-shrink: 0;
   -ms-flex-negative: 0;
   flex-shrink: 0;
@@ -1612,7 +1810,6 @@ Array [
   user-select: none;
   width: 16px;
   height: 16px;
-  fill: #282823;
   -webkit-flex-shrink: 0;
   -ms-flex-negative: 0;
   flex-shrink: 0;
