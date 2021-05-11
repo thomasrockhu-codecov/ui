@@ -1,3 +1,10 @@
+## [6.13.2](https://github.com/nordnet/ui/compare/v6.13.1...v6.13.2) (2021-05-11)
+
+
+### Bug Fixes
+
+* 🐛 fix transparent fill on icons ([e72f76c](https://github.com/nordnet/ui/commit/e72f76c))
+
 ## [6.13.1](https://github.com/nordnet/ui/compare/v6.13.0...v6.13.1) (2021-05-11)
 
 
