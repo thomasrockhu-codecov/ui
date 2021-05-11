@@ -1,3 +1,11 @@
+## [6.12.2](https://github.com/nordnet/ui/compare/v6.12.1...v6.12.2) (2021-05-11)
+
+
+### Bug Fixes
+
+* 🐛 leaking backgroundColor prop made transient ([9473172](https://github.com/nordnet/ui/commit/9473172))
+* ignore a11y warning becayse of emoji in story ([6ccec64](https://github.com/nordnet/ui/commit/6ccec64))
+
 ## [6.12.1](https://github.com/nordnet/ui/compare/v6.12.0...v6.12.1) (2021-05-07)
 
 
