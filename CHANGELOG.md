@@ -1,3 +1,10 @@
+## [6.13.1](https://github.com/nordnet/ui/compare/v6.13.0...v6.13.1) (2021-05-11)
+
+
+### Bug Fixes
+
+* forward ref to framer motion mock ([680f3af](https://github.com/nordnet/ui/commit/680f3af))
+
 # [6.13.0](https://github.com/nordnet/ui/compare/v6.12.2...v6.13.0) (2021-05-11)
 
 
