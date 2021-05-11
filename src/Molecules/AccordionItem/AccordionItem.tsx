@@ -6,19 +6,52 @@ import { Box, Icon, Typography } from '../..';
 import { isBoolean, isFunction, isString } from '../../common/utils';
 import { AccordionItemComponent } from './AccordionItem.types';
 
-const Item = styled.div<{ $hasFocus: boolean }>`
+const Item = styled.div<{
+  $hasFocus: boolean;
+  $disableBackgroundColor?: boolean;
+  $p?: number;
+  $px?: number;
+  $py?: number;
+  $pt?: number;
+  $pb?: number;
+  $pl?: number;
+  $pr?: number;
+}>`
   & + & {
     border-top: 1px solid ${(p) => p.theme.color.divider};
   }
 
   &:hover {
-    background-color: ${({ theme }) => theme.color.background};
+    background-color: ${({ $disableBackgroundColor, theme }) =>
+      $disableBackgroundColor ? '' : theme.color.background};
   }
 
   outline: ${({ $hasFocus, theme }) => ($hasFocus ? `1px solid ${theme.color.cta}` : 'none')};
 
-  background-color: ${({ $hasFocus, theme }) =>
-    $hasFocus ? `${theme.color.background}` : 'transparent'};
+  ${({ $p, theme }) => ($p ? `padding: ${theme.spacing.unit($p)}px;` : '')}
+  ${({ $px, theme }) =>
+    $px
+      ? `padding-left: ${theme.spacing.unit($px)}px; padding-right: ${theme.spacing.unit($px)}px;`
+      : ''}
+  ${({ $py, theme }) =>
+    $py
+      ? `padding-top: ${theme.spacing.unit($py)}px; padding-bottom: ${theme.spacing.unit($py)}px;`
+      : ''}
+  ${({ $pt, theme }) => ($pt ? `padding-top: ${theme.spacing.unit($pt)}px;` : '')}
+  ${({
+    $pb,
+    theme,
+  }) => ($pb ? `padding-bottom: ${theme.spacing.unit($pb)}px;` : '')}
+  ${({ $pl, theme }) =>
+    $pl ? `padding-left: ${theme.spacing.unit($pl)}px;` : ''}
+  ${({ $pr, theme }) =>
+    $pr ? `padding-right: ${theme.spacing.unit($pr)}px;` : ''}
+
+  background-color: ${({
+    $disableBackgroundColor,
+    $hasFocus,
+    theme,
+  }) => (!$disableBackgroundColor && $hasFocus ? `${theme.color.background}` : 'transparent')};
 `;
 
 const Button = styled.button<{ $withChevron?: boolean }>`
@@ -55,6 +88,14 @@ export const AccordionItem: AccordionItemComponent = React.forwardRef(
       onClick,
       onToggle,
       withChevron,
+      disableBackgroundColor,
+      p,
+      px,
+      py,
+      pt,
+      pb,
+      pl,
+      pr,
     },
     ref,
   ) => {
@@ -90,7 +131,19 @@ export const AccordionItem: AccordionItemComponent = React.forwardRef(
     );
 
     return (
-      <Item className={className} aria-expanded={expanded} $hasFocus={hasFocus}>
+      <Item
+        className={className}
+        aria-expanded={expanded}
+        $hasFocus={hasFocus}
+        $disableBackgroundColor={disableBackgroundColor}
+        $p={p}
+        $px={px}
+        $py={py}
+        $pt={pt}
+        $pb={pb}
+        $pl={pl}
+        $pr={pr}
+      >
         <Typography as={as} type="secondary" weight="bold">
           <Button
             $withChevron={withChevron}

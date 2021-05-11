@@ -10,6 +10,14 @@ type Props = {
   onToggle?: (expanded: boolean) => void;
   ref?: React.Ref<HTMLButtonElement>;
   withChevron?: boolean;
+  disableBackgroundColor?: boolean;
+  p?: number;
+  px?: number;
+  py?: number;
+  pt?: number;
+  pb?: number;
+  pl?: number;
+  pr?: number;
 };
 
 export type AccordionItemComponent = React.FC<Props>;
