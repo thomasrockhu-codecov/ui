@@ -128,3 +128,14 @@ export const withDifferentPaddings = () => (
     </AccordionItem>
   </>
 );
+
+export const disabled = () => (
+  <>
+    <AccordionItem title="This accordion item is disabled" disabled>
+      <ExampleContent />
+    </AccordionItem>
+    <AccordionItem title="This accordion item is disabled with chevron" disabled withChevron>
+      <ExampleContent />
+    </AccordionItem>
+  </>
+);

@@ -11,6 +11,7 @@ type Props = {
   ref?: React.Ref<HTMLButtonElement>;
   withChevron?: boolean;
   disableBackgroundColor?: boolean;
+  disabled?: boolean;
   p?: number;
   px?: number;
   py?: number;

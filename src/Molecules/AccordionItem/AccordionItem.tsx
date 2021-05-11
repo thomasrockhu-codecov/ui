@@ -8,6 +8,7 @@ import { AccordionItemComponent } from './AccordionItem.types';
 
 const Item = styled.div<{
   $hasFocus: boolean;
+  $disabled?: boolean;
   $disableBackgroundColor?: boolean;
   $p?: number;
   $px?: number;
@@ -22,8 +23,8 @@ const Item = styled.div<{
   }
 
   &:hover {
-    background-color: ${({ $disableBackgroundColor, theme }) =>
-      $disableBackgroundColor ? '' : theme.color.background};
+    background-color: ${({ $disabled, $disableBackgroundColor, theme }) =>
+      $disableBackgroundColor || $disabled ? '' : theme.color.background};
   }
 
   outline: ${({ $hasFocus, theme }) => ($hasFocus ? `1px solid ${theme.color.cta}` : 'none')};
@@ -54,7 +55,7 @@ const Item = styled.div<{
   }) => (!$disableBackgroundColor && $hasFocus ? `${theme.color.background}` : 'transparent')};
 `;
 
-const Button = styled.button<{ $withChevron?: boolean }>`
+const Button = styled.button<{ $withChevron?: boolean; $disabled?: boolean }>`
   font: inherit;
   box-sizing: border-box;
   position: relative;
@@ -65,8 +66,9 @@ const Button = styled.button<{ $withChevron?: boolean }>`
   padding-bottom: ${(p) => p.theme.spacing.unit(3)}px;
   padding-right: ${(p) => p.theme.spacing.unit(p.$withChevron ? 6 : 0)}px;
   padding-left: ${(p) => p.theme.spacing.unit(p.$withChevron ? 0 : 6)}px;
+  color: ${(p) => (p.$disabled ? p.theme.color.disabledText : '')};
   background-color: transparent;
-  cursor: pointer;
+  cursor: ${(p) => (p.$disabled ? 'default' : 'pointer')};
   text-align: start;
 `;
 
@@ -89,6 +91,7 @@ export const AccordionItem: AccordionItemComponent = React.forwardRef(
       onToggle,
       withChevron,
       disableBackgroundColor,
+      disabled,
       p,
       px,
       py,
@@ -122,10 +125,18 @@ export const AccordionItem: AccordionItemComponent = React.forwardRef(
       <IconWrapper $withChevron={withChevron}>
         {(() => {
           if (withChevron)
-            return <Icon.ThinChevron direction={expanded ? 'up' : 'down'} size={4} />;
+            return (
+              <Icon.ThinChevron
+                color={(t) => (disabled ? t.color.disabledText : '')}
+                direction={expanded ? 'up' : 'down'}
+                size={4}
+              />
+            );
 
           if (expanded) return <Icon.Minus size={3} fill={(t) => t.color.cta} />;
-          return <Icon.Plus size={3} fill={(t) => t.color.cta} />;
+          return (
+            <Icon.Plus size={3} fill={(t) => (disabled ? t.color.disabledText : t.color.cta)} />
+          );
         })()}
       </IconWrapper>
     );
@@ -135,6 +146,7 @@ export const AccordionItem: AccordionItemComponent = React.forwardRef(
         className={className}
         aria-expanded={expanded}
         $hasFocus={hasFocus}
+        $disabled={disabled}
         $disableBackgroundColor={disableBackgroundColor}
         $p={p}
         $px={px}
@@ -147,11 +159,13 @@ export const AccordionItem: AccordionItemComponent = React.forwardRef(
         <Typography as={as} type="secondary" weight="bold">
           <Button
             $withChevron={withChevron}
+            $disabled={disabled}
             type="button"
             onClick={clickHandler}
             ref={ref}
             onFocus={() => setHasFocus(true)}
             onBlur={() => setHasFocus(false)}
+            disabled={disabled}
           >
             {!withChevron && icon}
             {title}
