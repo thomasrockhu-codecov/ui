@@ -1,3 +1,17 @@
+# [6.13.0](https://github.com/nordnet/ui/compare/v6.12.2...v6.13.0) (2021-05-11)
+
+
+### Bug Fixes
+
+* add optional x padding for accordion item ([0591065](https://github.com/nordnet/ui/commit/0591065))
+* add several padding options ([8d4681f](https://github.com/nordnet/ui/commit/8d4681f))
+* correct item padding x story name ([bf0d5e7](https://github.com/nordnet/ui/commit/bf0d5e7))
+
+
+### Features
+
+* optional background color on hover and on focus ([d02f20d](https://github.com/nordnet/ui/commit/d02f20d))
+
 ## [6.12.2](https://github.com/nordnet/ui/compare/v6.12.1...v6.12.2) (2021-05-11)
 
 
