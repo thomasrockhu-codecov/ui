@@ -4,12 +4,14 @@ import { BaseProps, ColorFn } from '../IconBase.types';
 import StyledPath from '../StyledPath';
 
 export const CalendarO = ({ fill, ...props }: BaseProps & { fill: ColorFn | string }) => (
-  <IconBase {...props} viewBox="0 0 32 32" fill={(t) => t.color.spinnerWhite}>
+  <IconBase {...props} viewBox="0 0 32 32" fill={() => 'transparent'}>
     <StyledPath
+      fillRule="evenodd"
+      clipRule="evenodd"
       cssAttribute="stroke"
       strokeColorFn={fill}
-      strokeWidth="2"
-      d="M5 7h22v5H5V7zm0 5h22v16H5V12zm18-8v4M9 4v4"
+      strokeWidth={2}
+      d="M2 10h28v20H2zM2 3h28v7H2zM8 1v4M24 1v4"
     />
   </IconBase>
 );

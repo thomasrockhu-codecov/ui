@@ -6,11 +6,11 @@ import StyledPath from '../StyledPath';
 export const Profile = ({ fill, ...props }: BaseProps & { fill: ColorFn | string }) => (
   <IconBase {...props} viewBox="0 0 32 32">
     <StyledPath
-      cssAttribute="stroke"
-      d="M5 27v-5.4C5 19.612 6.642 18 8.667 18h14.666C25.358 18 27 19.612 27 21.6V27M16 4a5 5 0 110 10 5 5 0 010-10z"
+      fillRule="evenodd"
+      clipRule="evenodd"
+      d="M11 9a5 5 0 1110 0 5 5 0 01-10 0zm5-7a7 7 0 100 14 7 7 0 000-14zM6 18a4 4 0 00-4 4v7h2v-7a2 2 0 012-2h20a2 2 0 012 2v7h2v-7a4 4 0 00-4-4H6z"
       strokeColorFn={fill}
-      fill="#ffffff"
-      strokeWidth="2"
+      strokeWidth={0}
     />
   </IconBase>
 );
