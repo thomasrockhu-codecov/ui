@@ -1,4 +1,5 @@
 import React from 'react';
+import { number, text, withKnobs } from '@storybook/addon-knobs';
 import styled from 'styled-components';
 
 import { Flexbox } from '../..';
@@ -15,6 +16,7 @@ export default {
   parameters: {
     component: Flexbox,
   },
+  decorators: [withKnobs],
 };
 
 export const defaultStory = () => (
@@ -189,4 +191,93 @@ export const withBreakpointProps = () => {
 
 withBreakpointProps.story = {
   name: 'With breakpoint props',
+};
+
+const GrowingDiv = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  color: ${({ theme }) => theme.color.textLight};
+  background: ${({ theme }) => theme.color.cta};
+`;
+
+export const widthAndHeightInNumbers = () => (
+  <Flexbox
+    container
+    width={number('Width', 100)}
+    height={number('Height', 100)}
+    alignItems="center"
+    justifyContent="space-between"
+    gutter={5}
+  >
+    <Flexbox item height="100%">
+      <GrowingDiv>One</GrowingDiv>
+    </Flexbox>
+    <Flexbox item height="100%">
+      <GrowingDiv>Two</GrowingDiv>
+    </Flexbox>
+    <Flexbox item height="100%">
+      <GrowingDiv>Three</GrowingDiv>
+    </Flexbox>
+  </Flexbox>
+);
+
+widthAndHeightInNumbers.story = {
+  name: 'With width and height as number',
+};
+
+export const widthAndHeightInPercentage = () => (
+  <div style={{ height: '500px' }}>
+    <Flexbox
+      container
+      width={text('Width', '50%')}
+      height={text('Height', '50%')}
+      alignItems="center"
+      justifyContent="space-between"
+      gutter={5}
+    >
+      <Flexbox item height="100%">
+        <GrowingDiv>One</GrowingDiv>
+      </Flexbox>
+      <Flexbox item height="100%">
+        <GrowingDiv>Two</GrowingDiv>
+      </Flexbox>
+      <Flexbox item height="100%">
+        <GrowingDiv>Three</GrowingDiv>
+      </Flexbox>
+    </Flexbox>
+  </div>
+);
+
+widthAndHeightInPercentage.story = {
+  name: 'With width and height as percentage',
+};
+
+export const differentSizedItems = () => (
+  <Flexbox
+    container
+    width={100}
+    height={100}
+    alignItems="center"
+    justifyContent="space-between"
+    gutter={5}
+  >
+    <Flexbox item width="100%" height="100%">
+      <GrowingDiv>One</GrowingDiv>
+    </Flexbox>
+    <Flexbox item width="66%" height="66%">
+      <GrowingDiv>Two</GrowingDiv>
+    </Flexbox>
+    <Flexbox item width="33%" height="33%">
+      <GrowingDiv>Three</GrowingDiv>
+    </Flexbox>
+  </Flexbox>
+);
+
+differentSizedItems.story = {
+  name: 'Different sized items',
 };

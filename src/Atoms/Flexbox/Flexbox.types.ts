@@ -1,8 +1,12 @@
 import { Property } from 'csstype';
 
+export type Width = number | string;
+export type Height = number | string;
+
 export type ContainerProps = {
   container?: boolean;
-  height?: number;
+  width?: Width;
+  height?: Height;
   as?: keyof JSX.IntrinsicElements | React.ComponentType<any>;
   /** flexbox direction */
   direction?: 'row' | 'row-reverse' | 'column' | 'column-reverse';
@@ -59,6 +63,8 @@ export type ItemProps = {
   align?: 'auto' | 'flex-start' | 'flex-end' | 'center' | 'baseline' | 'stretch';
   alignSelf?: Property.AlignSelf;
   size?: number | string;
+  width?: Width;
+  height?: Height;
   as?: keyof JSX.IntrinsicElements | React.ComponentType<any>;
   hidden?: boolean;
   /** a11y */
