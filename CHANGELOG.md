@@ -1,3 +1,15 @@
+# [6.14.0](https://github.com/nordnet/ui/compare/v6.13.2...v6.14.0) (2021-05-12)
+
+
+### Bug Fixes
+
+* 🐛 Update snapshot ([cd10ac6](https://github.com/nordnet/ui/commit/cd10ac6))
+
+
+### Features
+
+* 🎸 Add disabled option to AccordionItem ([c65a852](https://github.com/nordnet/ui/commit/c65a852))
+
 ## [6.13.2](https://github.com/nordnet/ui/compare/v6.13.1...v6.13.2) (2021-05-11)
 
 
