@@ -1,3 +1,10 @@
+# [6.15.0](https://github.com/nordnet/ui/compare/v6.14.0...v6.15.0) (2021-05-17)
+
+
+### Features
+
+* 🎸 add width and height controls to Flexbox components ([db1f718](https://github.com/nordnet/ui/commit/db1f718))
+
 # [6.14.0](https://github.com/nordnet/ui/compare/v6.13.2...v6.14.0) (2021-05-12)
 
 
