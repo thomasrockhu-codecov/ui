@@ -4909,7 +4909,7 @@ Array [
 `;
 
 exports[`Storyshots Molecules / Input / Select Full Width 1`] = `
-.c12 {
+.c13 {
   padding-left: 8px;
   padding-right: 8px;
   background-color: transparent;
@@ -4921,13 +4921,26 @@ exports[`Storyshots Molecules / Input / Select Full Width 1`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  width: 100%;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
 }
 
-.c10 {
+.c6 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c11 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -4941,7 +4954,7 @@ exports[`Storyshots Molecules / Input / Select Full Width 1`] = `
   cursor: pointer;
 }
 
-.c15 {
+.c16 {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -4955,7 +4968,7 @@ exports[`Storyshots Molecules / Input / Select Full Width 1`] = `
   display: block;
 }
 
-.c8 {
+.c9 {
   font-family: inherit;
   font-size: 100%;
   line-height: 1.15;
@@ -4964,25 +4977,25 @@ exports[`Storyshots Molecules / Input / Select Full Width 1`] = `
   text-transform: none;
 }
 
-.c8,
-.c8[type='button'],
-.c8[type='reset'],
-.c8[type='submit'] {
+.c9,
+.c9[type='button'],
+.c9[type='reset'],
+.c9[type='submit'] {
   -webkit-appearance: button;
 }
 
-.c8::-moz-focus-inner,
-.c8[type='button']::-moz-focus-inner,
-.c8[type='reset']::-moz-focus-inner,
-.c8[type='submit']::-moz-focus-inner {
+.c9::-moz-focus-inner,
+.c9[type='button']::-moz-focus-inner,
+.c9[type='reset']::-moz-focus-inner,
+.c9[type='submit']::-moz-focus-inner {
   border-style: none;
   padding: 0;
 }
 
-.c8:-moz-focusring,
-.c8[type='button']:-moz-focusring,
-.c8[type='reset']:-moz-focusring,
-.c8[type='submit']:-moz-focusring {
+.c9:-moz-focusring,
+.c9[type='button']:-moz-focusring,
+.c9[type='reset']:-moz-focusring,
+.c9[type='submit']:-moz-focusring {
   outline: 1px dotted ButtonText;
 }
 
@@ -4995,7 +5008,7 @@ exports[`Storyshots Molecules / Input / Select Full Width 1`] = `
   line-height: 1.4285714285714286;
 }
 
-.c7 {
+.c8 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
   margin: 0;
@@ -5004,7 +5017,7 @@ exports[`Storyshots Molecules / Input / Select Full Width 1`] = `
   line-height: 1.4285714285714286;
 }
 
-.c16 {
+.c17 {
   -webkit-transform: translateY(-50%) rotate(0);
   -ms-transform: translateY(-50%) rotate(0);
   transform: translateY(-50%) rotate(0);
@@ -5027,7 +5040,7 @@ exports[`Storyshots Molecules / Input / Select Full Width 1`] = `
   width: 100%;
 }
 
-.c6 {
+.c7 {
   height: 40px;
   border: 1px solid #BCBCB6;
   position: relative;
@@ -5036,24 +5049,24 @@ exports[`Storyshots Molecules / Input / Select Full Width 1`] = `
   position: relative;
 }
 
-.c6:hover {
+.c7:hover {
   border-color: #4B4B46;
 }
 
-.c6:focus-within {
+.c7:focus-within {
   border-color: #0046FF;
 }
 
-.c6.focus-within {
+.c7.focus-within {
   border-color: #0046FF;
 }
 
-.c11 {
+.c12 {
   height: 100%;
   width: 100%;
 }
 
-.c9 {
+.c10 {
   background: transparent;
   width: 100%;
   height: 100%;
@@ -5073,11 +5086,11 @@ exports[`Storyshots Molecules / Input / Select Full Width 1`] = `
   text-align: initial;
 }
 
-.c9:active {
+.c10:active {
   color: inherit;
 }
 
-.c14 {
+.c15 {
   width: 100%;
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -5085,7 +5098,7 @@ exports[`Storyshots Molecules / Input / Select Full Width 1`] = `
   text-align: left;
 }
 
-.c13 {
+.c14 {
   width: calc(100% - 20px - 4px);
   display: -webkit-box;
   display: -webkit-flex;
@@ -5184,14 +5197,14 @@ exports[`Storyshots Molecules / Input / Select Full Width 1`] = `
             className="c5"
           >
             <div
-              className="c2"
+              className="c6"
             >
               User account 
             </div>
           </span>
         </label>
         <div
-          className="c6"
+          className="c7"
           disabled={false}
           label="User account"
           onBlur={[Function]}
@@ -5199,13 +5212,13 @@ exports[`Storyshots Molecules / Input / Select Full Width 1`] = `
           tabIndex={0}
         >
           <span
-            className="c7"
+            className="c8"
           >
             <button
               aria-expanded="false"
               aria-haspopup="listbox"
               aria-label="User account: Select account"
-              className="c8 c9"
+              className="c9 c10"
               data-testid="input-select-button"
               disabled={false}
               form=""
@@ -5216,13 +5229,13 @@ exports[`Storyshots Molecules / Input / Select Full Width 1`] = `
             >
               <div
                 aria-hidden="true"
-                className="c10 c11"
+                className="c11 c12"
               >
                 <div
-                  className="c12 c13"
+                  className="c13 c14"
                 >
                   <span
-                    className="c14"
+                    className="c15"
                   >
                     Select account
                   </span>
@@ -5232,7 +5245,7 @@ exports[`Storyshots Molecules / Input / Select Full Width 1`] = `
           </span>
           <svg
             aria-hidden="true"
-            className="c15 c16"
+            className="c16 c17"
             focusable="false"
             open={false}
             preserveAspectRatio="xMidYMid meet"
