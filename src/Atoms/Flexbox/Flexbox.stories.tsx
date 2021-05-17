@@ -201,8 +201,8 @@ const GrowingDiv = styled.div`
   height: 100%;
   padding: 10px;
   box-sizing: border-box;
-  color: ${({ theme }) => theme.color.textLight};
-  background: ${({ theme }) => theme.color.cta};
+  border: 1px solid black;
+  background-color: #eee;
 `;
 
 export const widthAndHeightInNumbers = () => (

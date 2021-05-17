@@ -183,8 +183,8 @@ exports[`Storyshots Atoms / Flexbox Different sized items 1`] = `
   height: 100%;
   padding: 10px;
   box-sizing: border-box;
-  color: #FFFFFF;
-  background: #0046FF;
+  border: 1px solid black;
+  background-color: #eee;
 }
 
 <div
@@ -701,8 +701,8 @@ exports[`Storyshots Atoms / Flexbox With width and height as number 1`] = `
   height: 100%;
   padding: 10px;
   box-sizing: border-box;
-  color: #FFFFFF;
-  background: #0046FF;
+  border: 1px solid black;
+  background-color: #eee;
 }
 
 <div
@@ -790,8 +790,8 @@ exports[`Storyshots Atoms / Flexbox With width and height as percentage 1`] = `
   height: 100%;
   padding: 10px;
   box-sizing: border-box;
-  color: #FFFFFF;
-  background: #0046FF;
+  border: 1px solid black;
+  background-color: #eee;
 }
 
 <div
