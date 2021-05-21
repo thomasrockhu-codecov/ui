@@ -115,17 +115,15 @@ export const SelectMachine = Machine<Context>(
         },
         states: {
           unknown: {
-            on: {
-              '': [
-                {
-                  target: 'on',
-                  cond: (ctx) => ctx.open,
-                },
-                {
-                  target: 'off',
-                },
-              ],
-            },
+            always: [
+              {
+                target: 'on',
+                cond: (ctx) => ctx.open,
+              },
+              {
+                target: 'off',
+              },
+            ],
           },
           on: {
             onEntry: 'open',
@@ -139,16 +137,14 @@ export const SelectMachine = Machine<Context>(
         initial: 'unknown',
         states: {
           unknown: {
-            on: {
-              '': [
-                {
-                  target: 'controlled',
-                  actions: 'forceValueFromProps',
-                  cond: (ctx) => !!ctx.valueFromProps,
-                },
-                { target: 'uncontrolled' },
-              ],
-            },
+            always: [
+              {
+                target: 'controlled',
+                actions: 'forceValueFromProps',
+                cond: (ctx) => !!ctx.valueFromProps,
+              },
+              { target: 'uncontrolled' },
+            ],
           },
           controlled: {
             initial: 'unknown',
@@ -170,19 +166,17 @@ export const SelectMachine = Machine<Context>(
             },
             states: {
               unknown: {
-                on: {
-                  '': [
-                    {
-                      target: 'incorrectSelection',
-                      cond: (ctx) => ctx.selectedItems.some((x) => !includesOption(ctx.options, x)),
-                    },
-                    {
-                      target: 'on',
-                      cond: (ctx) => ctx.valueFromProps.length > 0,
-                    },
-                    { target: 'off' },
-                  ],
-                },
+                always: [
+                  {
+                    target: 'incorrectSelection',
+                    cond: (ctx) => ctx.selectedItems.some((x) => !includesOption(ctx.options, x)),
+                  },
+                  {
+                    target: 'on',
+                    cond: (ctx) => ctx.valueFromProps.length > 0,
+                  },
+                  { target: 'off' },
+                ],
               },
               on: {},
               off: {},
@@ -199,11 +193,9 @@ export const SelectMachine = Machine<Context>(
                 },
               },
               incorrectSelection: {
-                on: {
-                  '': {
-                    target: 'off',
-                    actions: 'resetSelection',
-                  },
+                always: {
+                  target: 'off',
+                  actions: 'resetSelection',
                 },
               },
             },
@@ -228,16 +220,14 @@ export const SelectMachine = Machine<Context>(
             },
             states: {
               unknown: {
-                on: {
-                  '': [
-                    {
-                      target: 'incorrectSelection',
-                      cond: (ctx) => ctx.selectedItems.some((x) => !includesOption(ctx.options, x)),
-                    },
-                    { target: 'on', cond: (ctx) => ctx.selectedItems.length > 0 },
-                    { target: 'off' },
-                  ],
-                },
+                always: [
+                  {
+                    target: 'incorrectSelection',
+                    cond: (ctx) => ctx.selectedItems.some((x) => !includesOption(ctx.options, x)),
+                  },
+                  { target: 'on', cond: (ctx) => ctx.selectedItems.length > 0 },
+                  { target: 'off' },
+                ],
               },
               on: {},
               off: {},
@@ -254,11 +244,9 @@ export const SelectMachine = Machine<Context>(
                 },
               },
               incorrectSelection: {
-                on: {
-                  '': {
-                    target: 'off',
-                    actions: 'resetSelection',
-                  },
+                always: {
+                  target: 'off',
+                  actions: 'resetSelection',
                 },
               },
             },
@@ -267,16 +255,13 @@ export const SelectMachine = Machine<Context>(
       },
       correctness: {
         initial: 'unknown',
-
         states: {
           unknown: {
-            on: {
-              '': [
-                { target: 'error', cond: (ctx) => ctx.error !== '' },
-                { target: 'success', cond: (ctx) => ctx.success },
-                { target: 'neutral' },
-              ],
-            },
+            always: [
+              { target: 'error', cond: (ctx) => ctx.error !== '' },
+              { target: 'success', cond: (ctx) => ctx.success },
+              { target: 'neutral' },
+            ],
           },
           error: {},
           success: {},
@@ -288,16 +273,14 @@ export const SelectMachine = Machine<Context>(
 
         states: {
           unknown: {
-            on: {
-              '': [
-                { target: 'disabled', cond: (ctx) => ctx.disabled },
-                {
-                  target: 'disabled',
-                  cond: (ctx) => ctx.options.length === 0 && ctx.actions.length === 0,
-                },
-                { target: 'enabled' },
-              ],
-            },
+            always: [
+              { target: 'disabled', cond: (ctx) => ctx.disabled },
+              {
+                target: 'disabled',
+                cond: (ctx) => ctx.options.length === 0 && ctx.actions.length === 0,
+              },
+              { target: 'enabled' },
+            ],
           },
           disabled: {},
           enabled: {
@@ -312,9 +295,10 @@ export const SelectMachine = Machine<Context>(
             initial: 'unknown',
             states: {
               unknown: {
-                on: {
-                  '': [{ target: 'active', cond: (ctx) => Boolean(ctx.open) }, { target: 'idle' }],
-                },
+                always: [
+                  { target: 'active', cond: (ctx) => Boolean(ctx.open) },
+                  { target: 'idle' },
+                ],
               },
 
               idle: {
@@ -333,12 +317,10 @@ export const SelectMachine = Machine<Context>(
 
                     states: {
                       unknown: {
-                        on: {
-                          '': [
-                            { target: 'explicit', cond: (ctx) => Boolean(ctx.showSearch) },
-                            { target: 'implicit' },
-                          ],
-                        },
+                        always: [
+                          { target: 'explicit', cond: (ctx) => Boolean(ctx.showSearch) },
+                          { target: 'implicit' },
+                        ],
                       },
                       explicit: {
                         on: {
@@ -364,9 +346,7 @@ export const SelectMachine = Machine<Context>(
                             },
                           },
                           resetTimeout: {
-                            on: {
-                              '': 'processInput',
-                            },
+                            always: 'processInput',
                           },
 
                           processInput: {
@@ -382,12 +362,9 @@ export const SelectMachine = Machine<Context>(
                           },
 
                           search: {
-                            on: {
-                              '': {
-                                target: 'idle',
-
-                                actions: 'setFocusToSearchedOption',
-                              },
+                            always: {
+                              target: 'idle',
+                              actions: 'setFocusToSearchedOption',
                             },
                           },
                         },
@@ -405,12 +382,10 @@ export const SelectMachine = Machine<Context>(
                     initial: 'unknown',
                     states: {
                       unknown: {
-                        on: {
-                          '': [
-                            { target: 'mouse', cond: (ctx) => ctx.lastNavigationType === 'mouse' },
-                            { target: 'keyboard' },
-                          ],
-                        },
+                        always: [
+                          { target: 'mouse', cond: (ctx) => ctx.lastNavigationType === 'mouse' },
+                          { target: 'keyboard' },
+                        ],
                       },
                       keyboard: {
                         on: {
@@ -439,12 +414,10 @@ export const SelectMachine = Machine<Context>(
                     },
                     states: {
                       unknown: {
-                        on: {
-                          '': [
-                            { target: 'button', in: '#inputSelect.open.off' },
-                            { target: 'listItem', cond: (ctx) => ctx.itemFocusIdx !== null },
-                          ],
-                        },
+                        always: [
+                          { target: 'button', in: '#inputSelect.open.off' },
+                          { target: 'listItem', cond: (ctx) => ctx.itemFocusIdx !== null },
+                        ],
                       },
                       button: {},
                       listItem: {
