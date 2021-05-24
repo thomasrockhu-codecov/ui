@@ -2,8 +2,6 @@ import React, { createElement, useCallback, useMemo, useState } from 'react';
 import { action } from '@storybook/addon-actions';
 import R from 'ramda';
 import styled from 'styled-components';
-import { StateChart } from '@statecharts/xstate-viz';
-import { SelectMachine } from './machine';
 import {
   Avatar,
   Box,
@@ -1250,11 +1248,6 @@ export const listPositionedToTheLeft = () =>
       </Flexbox>
     );
   });
-
-export const DocumentationCore = () => <StateChart machine={SelectMachine} onSave={() => {}} />;
-DocumentationCore.story = {
-  name: 'Documentation: Core',
-};
 
 export const onSearchQueryChange = () => (
   <Input.Select
