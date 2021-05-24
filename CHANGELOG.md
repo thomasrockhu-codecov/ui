@@ -1,3 +1,12 @@
+## [6.15.1](https://github.com/nordnet/ui/compare/v6.15.0...v6.15.1) (2021-05-24)
+
+
+### Bug Fixes
+
+* remove not officially supported and now broken visualizer support ([81c41fb](https://github.com/nordnet/ui/commit/81c41fb))
+* the typescript "warnings" ([0f2977d](https://github.com/nordnet/ui/commit/0f2977d))
+* **Input.Select:** fix the xstate machine warning after main app was updated to the semilatest xstate ([e4b3021](https://github.com/nordnet/ui/commit/e4b3021))
+
 # [6.15.0](https://github.com/nordnet/ui/compare/v6.14.0...v6.15.0) (2021-05-17)
 
 
