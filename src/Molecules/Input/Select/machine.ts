@@ -314,7 +314,6 @@ export const SelectMachine = Machine<Context>(
                 states: {
                   search: {
                     initial: 'unknown',
-
                     states: {
                       unknown: {
                         always: [
@@ -445,6 +444,7 @@ export const SelectMachine = Machine<Context>(
       open: assign<Context>(() => ({ open: true })),
       close: assign<Context>(() => ({ open: false })),
       updateSearch: assign<Context>({
+        // @ts-ignore
         searchQuery: (_, e) => e.payload,
       }),
       cleanSearch: assign<Context>({
@@ -453,8 +453,11 @@ export const SelectMachine = Machine<Context>(
       }),
       syncProps: assign<Context>((ctx, e) => ({
         ...ctx,
+        // @ts-ignore
         ...e.payload,
+        // @ts-ignore
         valueFromProps: e.payload.valueFromProps,
+        // @ts-ignore
         visibleOptions: e.payload.options !== ctx.options ? e.payload.options : ctx.visibleOptions,
       })),
       restoreFocusOrFocusFirst: assign<Context>({
@@ -500,6 +503,7 @@ export const SelectMachine = Machine<Context>(
           payload: event.payload,
         };
       }),
+      // @ts-ignore
       sendSelectOrDeselectVisibleFocusedOption: send((ctx: Context) => {
         if (ctx.itemFocusIdx === null) return '';
 
@@ -512,6 +516,7 @@ export const SelectMachine = Machine<Context>(
       }),
       resetSelection: assign<Context>({ selectedItems: [] }),
       deselectOption: assign<Context>({
+        // @ts-ignore
         selectedItems: (ctx, { payload }) => {
           if (payload[SYMBOL_ALL]) {
             return [];
@@ -526,6 +531,7 @@ export const SelectMachine = Machine<Context>(
       }),
       updateVisibleOptions: assign<Context>({
         visibleOptions: (ctx, e) => {
+          // @ts-ignore
           return ctx.options.filter((x) => x.label.toLowerCase().includes(e.payload.toLowerCase()));
         },
       }),
@@ -535,9 +541,11 @@ export const SelectMachine = Machine<Context>(
           if (ctx.multiselect) {
             if (e.type === ACTION_TYPES.SELECT_ITEM) {
               const activeOptions = ctx.options.filter((x) => !x.disabled);
+              // @ts-ignore
               if (e.payload[SYMBOL_ALL]) {
                 return activeOptions;
               }
+              // @ts-ignore
               let newSelectedItems = ctx.selectedItems.concat(e.payload);
               const selectAllOption = ctx.options.find((x) => x[SYMBOL_ALL]);
               if (selectAllOption && newSelectedItems.length === activeOptions.length - 1) {
@@ -546,9 +554,11 @@ export const SelectMachine = Machine<Context>(
               return newSelectedItems;
               // eslint-disable-next-line no-else-return
             } else if (e.type === ACTION_TYPES.DESELECT_ITEM) {
+              // @ts-ignore
               if (e.payload[SYMBOL_ALL]) {
                 return [];
               }
+              // @ts-ignore
               let predicate = (x: OptionLike) => !isEqualOptions(x, e.payload);
               if (ctx.options.some((x) => x[SYMBOL_ALL])) {
                 // @ts-ignore
@@ -557,6 +567,7 @@ export const SelectMachine = Machine<Context>(
               return ctx.selectedItems.filter(predicate);
             }
           }
+          // @ts-ignore
           return [e.payload];
         },
       }),
