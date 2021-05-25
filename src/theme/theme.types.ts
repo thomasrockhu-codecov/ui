@@ -307,8 +307,14 @@ export type ThemeColors<Version extends ThemeColorsVersion> = {
   transferStatusBannerText3: RawColor['gray0'];
   /** gray0 */
   transferStatusBannerChevron: RawColor['gray0'];
-  /** brandBlue, brandGreen, brandPink, brandTurquoise */
-  onboardingAccent: string[];
+  /** brandBlue */
+  onboardingAccentBlue: RawColor['brandBlue'];
+  /** brandGreen */
+  onboardingAccentGreen: RawColor['brandGreen'];
+  /** brandPink */
+  onboardingAccentPink: RawColor['brandPink'];
+  /** brandTurquoise */
+  onboardingAccentTurquoise: RawColor['brandTurquoise'];
   /** white */
   progressBarText: RawColor['white'];
   /** positive */
