@@ -130,6 +130,7 @@ import { Star24 } from './components/Star24';
 import { StarAboveBars } from './components/StarAboveBars';
 import { StarOutline } from './components/StarOutline';
 import { Stock } from './components/Stock';
+import { StockSmallArrow } from './components/StockSmallArrow';
 import { Tax } from './components/Tax';
 import { TaxPercentage } from './components/TaxPercentage';
 import { Technology } from './components/Technology';
@@ -278,6 +279,7 @@ export default {
   StarAboveBars,
   StarOutline,
   Stock,
+  StockSmallArrow,
   Tax,
   TaxPercentage,
   Technology,
