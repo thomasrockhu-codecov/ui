@@ -5470,6 +5470,41 @@ Array [
       focusable="false"
       preserveAspectRatio="xMidYMid meet"
       role="presentation"
+      viewBox="0 0 24 24"
+    >
+      <path
+        d="M21.75 5.25V11h-1.5V8.09l-6.02 7.3-5.52-3.58-5.12 6.65-1.18-.92L8.37 9.8l5.55 3.62 5.49-6.66H16v-1.5z"
+      />
+    </svg>
+  </div>,
+  .c0 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 20px;
+  height: 20px;
+  fill: #0046FF;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
+}
+
+<div
+    style={
+      Object {
+        "display": "inline-block",
+        "outline": "1px dashed #bbb",
+      }
+    }
+  >
+    <svg
+      aria-hidden="true"
+      className="c0"
+      focusable="false"
+      preserveAspectRatio="xMidYMid meet"
+      role="presentation"
       viewBox="0 0 68 76"
     >
       <g
@@ -11300,6 +11335,39 @@ exports[`Storyshots Atoms / Icon Available icons 1`] = `
           <path
             className="c4"
             d="M20.2382 9L22.2382 7H31.6666V16.4277L29.6666 18.4277V10.6302L20.1502 21.3362L10.8666 14.7051L2.12265 25.9473L0.543945 24.7194L10.4667 11.9616L19.8497 18.6638L28.4398 9H20.2382Z"
+          />
+        </svg>
+      </div>
+    </div>
+  </div>
+  <div
+    className="c1"
+    direction="row"
+  >
+    <div
+      className="c2"
+    >
+      StockSmallArrow
+    </div>
+    <div>
+      <div
+        style={
+          Object {
+            "display": "inline-block",
+            "outline": "1px dashed #bbb",
+          }
+        }
+      >
+        <svg
+          aria-hidden="true"
+          className="c3"
+          focusable="false"
+          preserveAspectRatio="xMidYMid meet"
+          role="presentation"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M21.75 5.25V11h-1.5V8.09l-6.02 7.3-5.52-3.58-5.12 6.65-1.18-.92L8.37 9.8l5.55 3.62 5.49-6.66H16v-1.5z"
           />
         </svg>
       </div>
