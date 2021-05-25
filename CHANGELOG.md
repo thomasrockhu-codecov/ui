@@ -1,3 +1,10 @@
+# [6.16.0](https://github.com/nordnet/ui/compare/v6.15.1...v6.16.0) (2021-05-25)
+
+
+### Features
+
+* 🎸 add semantic colors for onboarding ([86db5fd](https://github.com/nordnet/ui/commit/86db5fd))
+
 ## [6.15.1](https://github.com/nordnet/ui/compare/v6.15.0...v6.15.1) (2021-05-24)
 
 
