@@ -1,3 +1,16 @@
+# [6.17.0](https://github.com/nordnet/ui/compare/v6.16.0...v6.17.0) (2021-05-26)
+
+
+### Bug Fixes
+
+* 🐛 onboarding accent colors api ([fb4ce61](https://github.com/nordnet/ui/commit/fb4ce61))
+* 🐛 update snapshot ([5bfe9b3](https://github.com/nordnet/ui/commit/5bfe9b3))
+
+
+### Features
+
+* 🎸 add stock icon with small arrow ([8801484](https://github.com/nordnet/ui/commit/8801484))
+
 # [6.16.0](https://github.com/nordnet/ui/compare/v6.15.1...v6.16.0) (2021-05-25)
 
 
