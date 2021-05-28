@@ -322,7 +322,7 @@ const Select = (props: Props) => {
               maxHeight={props.listMaxHeight}
               width={props.width}
             >
-              {allOptions?.map((x: any, index: number) => (
+              {options?.map((x: any, index: number) => (
                 <ListItemWrapper
                   // eslint-disable-next-line react/no-array-index-key
                   key={index}
