@@ -1,3 +1,10 @@
+## [6.17.1](https://github.com/nordnet/ui/compare/v6.17.0...v6.17.1) (2021-05-28)
+
+
+### Bug Fixes
+
+* 🐛 select from filtered options instead of all options ([d782ca9](https://github.com/nordnet/ui/commit/d782ca9))
+
 # [6.17.0](https://github.com/nordnet/ui/compare/v6.16.0...v6.17.0) (2021-05-26)
 
 
