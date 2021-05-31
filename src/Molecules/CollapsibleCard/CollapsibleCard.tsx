@@ -1,6 +1,7 @@
 import React, { useLayoutEffect, useRef, useState } from 'react';
 import styled from 'styled-components';
 import { Card, Flexbox, Icon, Typography } from '../..';
+import { isElement, isFunction } from '../../common/utils';
 import { CollapsibleProps, IndicatorsProps } from './Collapsible.types';
 
 const StyledCollapsible = styled.div<{
@@ -24,7 +25,7 @@ const StyledButton = styled.button<IndicatorsProps>`
   cursor: pointer;
   display: block;
   width: 100%;
-  padding: ${(p) => p.theme.spacing.unit(5)}px ${(p) => p.theme.spacing.unit(5)}px;
+  padding: ${(p) => p.theme.spacing.unit(p.$py)}px ${(p) => p.theme.spacing.unit(p.$px)}px;
   border: 0;
 
   &::before {
@@ -41,7 +42,7 @@ const StyledButton = styled.button<IndicatorsProps>`
   }
 `;
 
-const AnimatedChevronUp = styled(Icon.ChevronUp)<IndicatorsProps>`
+const AnimatedChevronUp = styled(Icon.ChevronUp)<Pick<IndicatorsProps, '$collapsed'>>`
   transform: ${(p) => (p.$collapsed ? 'rotate(180deg)' : 'rotate(0)')};
   transform-origin: center center;
   transition: transform 0.16s ease-out;
@@ -54,6 +55,9 @@ export const CollapsibleCard: React.FC<CollapsibleProps> = ({
   heading = 'h2',
   noIndicator = false,
   onClick = () => {},
+  expandElement,
+  titleRowPaddingX = 5,
+  titleRowPaddingY = 5,
 }) => {
   const [collapsed, setCollapsed] = useState(collapsedInitial);
   const [collapsing, setCollapsing] = useState(false);
@@ -151,6 +155,8 @@ export const CollapsibleCard: React.FC<CollapsibleProps> = ({
         $collapsed={collapsed}
         $noIndicator={noIndicator}
         aria-expanded={!collapsed}
+        $py={titleRowPaddingY}
+        $px={titleRowPaddingX}
       >
         <Flexbox container gutter={4} alignItems="center" justifyContent="space-between">
           <Flexbox item>
@@ -159,7 +165,11 @@ export const CollapsibleCard: React.FC<CollapsibleProps> = ({
             </Typography>
           </Flexbox>
           <Flexbox item>
-            <AnimatedChevronUp size={2} $collapsed={collapsed} $noIndicator={noIndicator} />
+            {(() => {
+              if (isFunction(expandElement)) return expandElement(collapsed);
+              if (isElement(expandElement)) return expandElement;
+              return <AnimatedChevronUp size={2} $collapsed={collapsed} />;
+            })()}
           </Flexbox>
         </Flexbox>
       </StyledButton>
