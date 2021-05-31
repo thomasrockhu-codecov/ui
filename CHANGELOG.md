@@ -1,3 +1,10 @@
+## [6.17.2](https://github.com/nordnet/ui/compare/v6.17.1...v6.17.2) (2021-05-31)
+
+
+### Bug Fixes
+
+* need new version ([778f07b](https://github.com/nordnet/ui/commit/778f07b))
+
 ## [6.17.1](https://github.com/nordnet/ui/compare/v6.17.0...v6.17.1) (2021-05-28)
 
 
