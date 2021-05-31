@@ -1,3 +1,10 @@
+# [6.18.0](https://github.com/nordnet/ui/compare/v6.17.2...v6.18.0) (2021-05-31)
+
+
+### Features
+
+* 🎸 add custom expand element and title row padding props ([312889d](https://github.com/nordnet/ui/commit/312889d))
+
 ## [6.17.2](https://github.com/nordnet/ui/compare/v6.17.1...v6.17.2) (2021-05-31)
 
 
