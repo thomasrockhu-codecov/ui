@@ -101,20 +101,17 @@ exports[`Storyshots Molecules / FlexTable / With persist sorting order Controlle
   line-height: 1.5;
 }
 
-.c13 {
-  display: inline-block;
-  width: 100%;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  overflow: hidden;
-}
-
 .c12 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
   min-width: 0;
+}
+
+.c13 {
+  display: inline-block;
+  width: 100%;
 }
 
 .c14 {
@@ -563,20 +560,17 @@ exports[`Storyshots Molecules / FlexTable / With persist sorting order Only Asce
   line-height: 1.5;
 }
 
-.c13 {
-  display: inline-block;
-  width: 100%;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  overflow: hidden;
-}
-
 .c12 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
   min-width: 0;
+}
+
+.c13 {
+  display: inline-block;
+  width: 100%;
 }
 
 .c14 {
@@ -1020,20 +1014,17 @@ exports[`Storyshots Molecules / FlexTable / With persist sorting order Uncontrol
   line-height: 1.5;
 }
 
-.c13 {
-  display: inline-block;
-  width: 100%;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  overflow: hidden;
-}
-
 .c12 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
   min-width: 0;
+}
+
+.c13 {
+  display: inline-block;
+  width: 100%;
 }
 
 .c14 {

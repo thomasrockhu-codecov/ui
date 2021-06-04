@@ -117,14 +117,6 @@ exports[`Storyshots Molecules / FlexTable / With Different Rows Default Rows 1`]
   line-height: 1.4285714285714286;
 }
 
-.c7 {
-  display: inline-block;
-  width: 100%;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  overflow: hidden;
-}
-
 .c17 {
   font-family: inherit;
   font-size: 100%;
@@ -174,6 +166,11 @@ exports[`Storyshots Molecules / FlexTable / With Different Rows Default Rows 1`]
 .c17[type='reset']:-moz-focusring,
 .c17[type='submit']:-moz-focusring {
   outline: 1px dotted ButtonText;
+}
+
+.c7 {
+  display: inline-block;
+  width: 100%;
 }
 
 .c8 {
@@ -818,14 +815,6 @@ exports[`Storyshots Molecules / FlexTable / With Different Rows With Colored Sep
   line-height: 1.4285714285714286;
 }
 
-.c7 {
-  display: inline-block;
-  width: 100%;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  overflow: hidden;
-}
-
 .c17 {
   font-family: inherit;
   font-size: 100%;
@@ -875,6 +864,11 @@ exports[`Storyshots Molecules / FlexTable / With Different Rows With Colored Sep
 .c17[type='reset']:-moz-focusring,
 .c17[type='submit']:-moz-focusring {
   outline: 1px dotted ButtonText;
+}
+
+.c7 {
+  display: inline-block;
+  width: 100%;
 }
 
 .c8 {
@@ -1565,14 +1559,6 @@ exports[`Storyshots Molecules / FlexTable / With Different Rows With Hidden Sepa
   line-height: 1.4285714285714286;
 }
 
-.c7 {
-  display: inline-block;
-  width: 100%;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  overflow: hidden;
-}
-
 .c17 {
   font-family: inherit;
   font-size: 100%;
@@ -1622,6 +1608,11 @@ exports[`Storyshots Molecules / FlexTable / With Different Rows With Hidden Sepa
 .c17[type='reset']:-moz-focusring,
 .c17[type='submit']:-moz-focusring {
   outline: 1px dotted ButtonText;
+}
+
+.c7 {
+  display: inline-block;
+  width: 100%;
 }
 
 .c8 {
@@ -2265,14 +2256,6 @@ exports[`Storyshots Molecules / FlexTable / With Different Rows Without Hover Hi
   line-height: 1.4285714285714286;
 }
 
-.c7 {
-  display: inline-block;
-  width: 100%;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  overflow: hidden;
-}
-
 .c16 {
   font-family: inherit;
   font-size: 100%;
@@ -2322,6 +2305,11 @@ exports[`Storyshots Molecules / FlexTable / With Different Rows Without Hover Hi
 .c16[type='reset']:-moz-focusring,
 .c16[type='submit']:-moz-focusring {
   outline: 1px dotted ButtonText;
+}
+
+.c7 {
+  display: inline-block;
+  width: 100%;
 }
 
 .c8 {

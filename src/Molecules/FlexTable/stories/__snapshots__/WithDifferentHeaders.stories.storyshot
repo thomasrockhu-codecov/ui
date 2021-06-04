@@ -101,20 +101,17 @@ exports[`Storyshots Molecules / FlexTable / With different headers Controlled So
   line-height: 1.5;
 }
 
-.c13 {
-  display: inline-block;
-  width: 100%;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  overflow: hidden;
-}
-
 .c12 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
   min-width: 0;
+}
+
+.c13 {
+  display: inline-block;
+  width: 100%;
 }
 
 .c14 {
@@ -557,20 +554,17 @@ exports[`Storyshots Molecules / FlexTable / With different headers Default Table
   line-height: 1.5;
 }
 
-.c8 {
-  display: inline-block;
-  width: 100%;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  overflow: hidden;
-}
-
 .c18 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
   min-width: 0;
+}
+
+.c8 {
+  display: inline-block;
+  width: 100%;
 }
 
 .c9 {
@@ -1029,20 +1023,17 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sortable Head
   line-height: 1.5;
 }
 
-.c13 {
-  display: inline-block;
-  width: 100%;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  overflow: hidden;
-}
-
 .c12 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
   min-width: 0;
+}
+
+.c13 {
+  display: inline-block;
+  width: 100%;
 }
 
 .c14 {
@@ -1523,20 +1514,17 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sortable Head
   line-height: 1.5;
 }
 
-.c13 {
-  display: inline-block;
-  width: 100%;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  overflow: hidden;
-}
-
 .c12 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
   min-width: 0;
+}
+
+.c13 {
+  display: inline-block;
+  width: 100%;
 }
 
 .c14 {
@@ -2004,14 +1992,6 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
   line-height: 1.4285714285714286;
 }
 
-.c8 {
-  display: inline-block;
-  width: 100%;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  overflow: hidden;
-}
-
 .c19 {
   font-family: inherit;
   font-size: 100%;
@@ -2061,6 +2041,11 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
 .c19[type='reset']:-moz-focusring,
 .c19[type='submit']:-moz-focusring {
   outline: 1px dotted ButtonText;
+}
+
+.c8 {
+  display: inline-block;
+  width: 100%;
 }
 
 .c9 {
@@ -8634,20 +8619,17 @@ exports[`Storyshots Molecules / FlexTable / With different headers Uncontrolled 
   line-height: 1.5;
 }
 
-.c13 {
-  display: inline-block;
-  width: 100%;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  overflow: hidden;
-}
-
 .c12 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
   min-width: 0;
+}
+
+.c13 {
+  display: inline-block;
+  width: 100%;
 }
 
 .c14 {

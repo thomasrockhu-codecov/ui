@@ -144,14 +144,6 @@ exports[`Storyshots Molecules / FlexTable / With different size props Tables Wit
   line-height: 1.4285714285714286;
 }
 
-.c8 {
-  display: inline-block;
-  width: 100%;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  overflow: hidden;
-}
-
 .c19 {
   font-family: inherit;
   font-size: 100%;
@@ -201,6 +193,11 @@ exports[`Storyshots Molecules / FlexTable / With different size props Tables Wit
 .c19[type='reset']:-moz-focusring,
 .c19[type='submit']:-moz-focusring {
   outline: 1px dotted ButtonText;
+}
+
+.c8 {
+  display: inline-block;
+  width: 100%;
 }
 
 .c9 {
@@ -781,14 +778,6 @@ exports[`Storyshots Molecules / FlexTable / With different size props Tables Wit
   line-height: 1.4285714285714286;
 }
 
-.c10 {
-  display: inline-block;
-  width: 100%;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  overflow: hidden;
-}
-
 .c19 {
   font-family: inherit;
   font-size: 100%;
@@ -838,6 +827,11 @@ exports[`Storyshots Molecules / FlexTable / With different size props Tables Wit
 .c19[type='reset']:-moz-focusring,
 .c19[type='submit']:-moz-focusring {
   outline: 1px dotted ButtonText;
+}
+
+.c10 {
+  display: inline-block;
+  width: 100%;
 }
 
 .c11 {
@@ -2262,14 +2256,6 @@ exports[`Storyshots Molecules / FlexTable / With different size props Tables Wit
   line-height: 1.4285714285714286;
 }
 
-.c10 {
-  display: inline-block;
-  width: 100%;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  overflow: hidden;
-}
-
 .c19 {
   font-family: inherit;
   font-size: 100%;
@@ -2319,6 +2305,11 @@ exports[`Storyshots Molecules / FlexTable / With different size props Tables Wit
 .c19[type='reset']:-moz-focusring,
 .c19[type='submit']:-moz-focusring {
   outline: 1px dotted ButtonText;
+}
+
+.c10 {
+  display: inline-block;
+  width: 100%;
 }
 
 .c11 {
@@ -3456,14 +3447,6 @@ exports[`Storyshots Molecules / FlexTable / With different size props Tables Wit
   line-height: 1.5;
 }
 
-.c9 {
-  display: inline-block;
-  width: 100%;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  overflow: hidden;
-}
-
 .c18 {
   font-family: inherit;
   font-size: 100%;
@@ -3513,6 +3496,11 @@ exports[`Storyshots Molecules / FlexTable / With different size props Tables Wit
 .c18[type='reset']:-moz-focusring,
 .c18[type='submit']:-moz-focusring {
   outline: 1px dotted ButtonText;
+}
+
+.c9 {
+  display: inline-block;
+  width: 100%;
 }
 
 .c10 {
