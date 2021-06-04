@@ -193,14 +193,6 @@ exports[`Storyshots Molecules / FlexTable / With different columns Column Width 
   line-height: 1.4285714285714286;
 }
 
-.c13 {
-  display: inline-block;
-  width: 100%;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  overflow: hidden;
-}
-
 .c27 {
   font-family: inherit;
   font-size: 100%;
@@ -258,6 +250,11 @@ exports[`Storyshots Molecules / FlexTable / With different columns Column Width 
   display: -ms-inline-flexbox;
   display: inline-flex;
   min-width: 0;
+}
+
+.c13 {
+  display: inline-block;
+  width: 100%;
 }
 
 .c14 {
@@ -1216,14 +1213,6 @@ exports[`Storyshots Molecules / FlexTable / With different columns Column Width 
   line-height: 1.4285714285714286;
 }
 
-.c8 {
-  display: inline-block;
-  width: 100%;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  overflow: hidden;
-}
-
 .c20 {
   font-family: inherit;
   font-size: 100%;
@@ -1281,6 +1270,11 @@ exports[`Storyshots Molecules / FlexTable / With different columns Column Width 
   display: -ms-inline-flexbox;
   display: inline-flex;
   min-width: 0;
+}
+
+.c8 {
+  display: inline-block;
+  width: 100%;
 }
 
 .c9 {
@@ -2081,14 +2075,6 @@ exports[`Storyshots Molecules / FlexTable / With different columns Different Ali
   line-height: 1.4285714285714286;
 }
 
-.c8 {
-  display: inline-block;
-  width: 100%;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  overflow: hidden;
-}
-
 .c20 {
   font-family: inherit;
   font-size: 100%;
@@ -2138,6 +2124,11 @@ exports[`Storyshots Molecules / FlexTable / With different columns Different Ali
 .c20[type='reset']:-moz-focusring,
 .c20[type='submit']:-moz-focusring {
   outline: 1px dotted ButtonText;
+}
+
+.c8 {
+  display: inline-block;
+  width: 100%;
 }
 
 .c9 {
@@ -2871,14 +2862,6 @@ exports[`Storyshots Molecules / FlexTable / With different columns Hidden Column
   line-height: 1.4285714285714286;
 }
 
-.c8 {
-  display: inline-block;
-  width: 100%;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  overflow: hidden;
-}
-
 .c19 {
   font-family: inherit;
   font-size: 100%;
@@ -2928,6 +2911,11 @@ exports[`Storyshots Molecules / FlexTable / With different columns Hidden Column
 .c19[type='reset']:-moz-focusring,
 .c19[type='submit']:-moz-focusring {
   outline: 1px dotted ButtonText;
+}
+
+.c8 {
+  display: inline-block;
+  width: 100%;
 }
 
 .c9 {

@@ -165,14 +165,6 @@ exports[`Storyshots Molecules / FlexTable / With lots of rows Big Table 1`] = `
   line-height: 1.4285714285714286;
 }
 
-.c13 {
-  display: inline-block;
-  width: 100%;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  overflow: hidden;
-}
-
 .c26 {
   font-family: inherit;
   font-size: 100%;
@@ -230,6 +222,11 @@ exports[`Storyshots Molecules / FlexTable / With lots of rows Big Table 1`] = `
   display: -ms-inline-flexbox;
   display: inline-flex;
   min-width: 0;
+}
+
+.c13 {
+  display: inline-block;
+  width: 100%;
 }
 
 .c14 {
@@ -21078,14 +21075,6 @@ exports[`Storyshots Molecules / FlexTable / With lots of rows Big Table Without 
   line-height: 1.4285714285714286;
 }
 
-.c12 {
-  display: inline-block;
-  width: 100%;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  overflow: hidden;
-}
-
 .c26 {
   font-family: inherit;
   font-size: 100%;
@@ -21143,6 +21132,11 @@ exports[`Storyshots Molecules / FlexTable / With lots of rows Big Table Without 
   display: -ms-inline-flexbox;
   display: inline-flex;
   min-width: 0;
+}
+
+.c12 {
+  display: inline-block;
+  width: 100%;
 }
 
 .c13 {
@@ -121548,14 +121542,6 @@ exports[`Storyshots Molecules / FlexTable / With lots of rows Multiple Big Table
   line-height: 1.4285714285714286;
 }
 
-.c14 {
-  display: inline-block;
-  width: 100%;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  overflow: hidden;
-}
-
 .c28 {
   font-family: inherit;
   font-size: 100%;
@@ -121613,6 +121599,11 @@ exports[`Storyshots Molecules / FlexTable / With lots of rows Multiple Big Table
   display: -ms-inline-flexbox;
   display: inline-flex;
   min-width: 0;
+}
+
+.c14 {
+  display: inline-block;
+  width: 100%;
 }
 
 .c15 {
@@ -148271,20 +148262,17 @@ exports[`Storyshots Molecules / FlexTable / With lots of rows Virtualized Table 
   line-height: 1.5;
 }
 
-.c14 {
-  display: inline-block;
-  width: 100%;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  overflow: hidden;
-}
-
 .c13 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
   min-width: 0;
+}
+
+.c14 {
+  display: inline-block;
+  width: 100%;
 }
 
 .c15 {

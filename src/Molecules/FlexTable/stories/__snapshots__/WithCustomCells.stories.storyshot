@@ -126,14 +126,6 @@ exports[`Storyshots Molecules / FlexTable / With Custom Cells Bold Cells 1`] = `
   line-height: 1.4285714285714286;
 }
 
-.c6 {
-  display: inline-block;
-  width: 100%;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  overflow: hidden;
-}
-
 .c17 {
   font-family: inherit;
   font-size: 100%;
@@ -183,6 +175,11 @@ exports[`Storyshots Molecules / FlexTable / With Custom Cells Bold Cells 1`] = `
 .c17[type='reset']:-moz-focusring,
 .c17[type='submit']:-moz-focusring {
   outline: 1px dotted ButtonText;
+}
+
+.c6 {
+  display: inline-block;
+  width: 100%;
 }
 
 .c7 {
@@ -693,14 +690,6 @@ exports[`Storyshots Molecules / FlexTable / With Custom Cells Custom Cells 1`] =
   line-height: 1.5;
 }
 
-.c6 {
-  display: inline-block;
-  width: 100%;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  overflow: hidden;
-}
-
 .c26 {
   font-family: inherit;
   font-size: 100%;
@@ -758,6 +747,11 @@ exports[`Storyshots Molecules / FlexTable / With Custom Cells Custom Cells 1`] =
   display: -ms-inline-flexbox;
   display: inline-flex;
   min-width: 0;
+}
+
+.c6 {
+  display: inline-block;
+  width: 100%;
 }
 
 .c7 {

@@ -117,14 +117,6 @@ exports[`Storyshots Molecules / FlexTable / With different table props Default 1
   line-height: 1.4285714285714286;
 }
 
-.c6 {
-  display: inline-block;
-  width: 100%;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  overflow: hidden;
-}
-
 .c16 {
   font-family: inherit;
   font-size: 100%;
@@ -174,6 +166,11 @@ exports[`Storyshots Molecules / FlexTable / With different table props Default 1
 .c16[type='reset']:-moz-focusring,
 .c16[type='submit']:-moz-focusring {
   outline: 1px dotted ButtonText;
+}
+
+.c6 {
+  display: inline-block;
+  width: 100%;
 }
 
 .c7 {
@@ -820,14 +817,6 @@ exports[`Storyshots Molecules / FlexTable / With different table props With Acti
   line-height: 1.4285714285714286;
 }
 
-.c6 {
-  display: inline-block;
-  width: 100%;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  overflow: hidden;
-}
-
 .c15 {
   font-family: inherit;
   font-size: 100%;
@@ -928,6 +917,11 @@ exports[`Storyshots Molecules / FlexTable / With different table props With Acti
 .c19[type='reset']:-moz-focusring,
 .c19[type='submit']:-moz-focusring {
   outline: 1px dotted ButtonText;
+}
+
+.c6 {
+  display: inline-block;
+  width: 100%;
 }
 
 .c7 {
@@ -1709,14 +1703,6 @@ exports[`Storyshots Molecules / FlexTable / With different table props With Cust
   line-height: 1.4285714285714286;
 }
 
-.c12 {
-  display: inline-block;
-  width: 100%;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  overflow: hidden;
-}
-
 .c22 {
   font-family: inherit;
   font-size: 100%;
@@ -1766,6 +1752,11 @@ exports[`Storyshots Molecules / FlexTable / With different table props With Cust
 .c22[type='reset']:-moz-focusring,
 .c22[type='submit']:-moz-focusring {
   outline: 1px dotted ButtonText;
+}
+
+.c12 {
+  display: inline-block;
+  width: 100%;
 }
 
 .c13 {
@@ -2286,14 +2277,6 @@ exports[`Storyshots Molecules / FlexTable / With different table props With Foot
   line-height: 1.5;
 }
 
-.c6 {
-  display: inline-block;
-  width: 100%;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  overflow: hidden;
-}
-
 .c16 {
   font-family: inherit;
   font-size: 100%;
@@ -2343,6 +2326,11 @@ exports[`Storyshots Molecules / FlexTable / With different table props With Foot
 .c16[type='reset']:-moz-focusring,
 .c16[type='submit']:-moz-focusring {
   outline: 1px dotted ButtonText;
+}
+
+.c6 {
+  display: inline-block;
+  width: 100%;
 }
 
 .c7 {
@@ -3054,14 +3042,6 @@ exports[`Storyshots Molecules / FlexTable / With different table props With Titl
   line-height: 1.4285714285714286;
 }
 
-.c9 {
-  display: inline-block;
-  width: 100%;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  overflow: hidden;
-}
-
 .c19 {
   font-family: inherit;
   font-size: 100%;
@@ -3111,6 +3091,11 @@ exports[`Storyshots Molecules / FlexTable / With different table props With Titl
 .c19[type='reset']:-moz-focusring,
 .c19[type='submit']:-moz-focusring {
   outline: 1px dotted ButtonText;
+}
+
+.c9 {
+  display: inline-block;
+  width: 100%;
 }
 
 .c10 {
