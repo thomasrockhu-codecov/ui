@@ -1,3 +1,10 @@
+## [6.18.1](https://github.com/nordnet/ui/compare/v6.18.0...v6.18.1) (2021-06-04)
+
+
+### Bug Fixes
+
+* use div instead of truncate if no truncate should be done ([1cc9d5b](https://github.com/nordnet/ui/commit/1cc9d5b))
+
 # [6.18.0](https://github.com/nordnet/ui/compare/v6.17.2...v6.18.0) (2021-05-31)
 
 
