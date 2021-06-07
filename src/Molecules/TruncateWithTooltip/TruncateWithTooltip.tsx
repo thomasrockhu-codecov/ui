@@ -6,6 +6,7 @@ import { Truncate, Tooltip } from '../..';
 const StyledDiv = styled.div`
   display: inline-block;
   width: 100%;
+  white-space: nowrap;
 `;
 
 export const TruncateWithTooltip: TruncateWithTooltipComponent = ({
@@ -19,7 +20,7 @@ export const TruncateWithTooltip: TruncateWithTooltipComponent = ({
   // TODO: Check truncation again on screen or container resize
   const measuredRef = useCallback((node) => {
     if (node !== null) {
-      const truncated = node.clientWidth <= node.scrollWidth;
+      const truncated = node.clientWidth < node.scrollWidth;
       setIsTruncated(truncated);
     }
   }, []);

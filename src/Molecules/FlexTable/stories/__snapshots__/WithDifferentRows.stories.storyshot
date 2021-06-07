@@ -171,6 +171,7 @@ exports[`Storyshots Molecules / FlexTable / With Different Rows Default Rows 1`]
 .c7 {
   display: inline-block;
   width: 100%;
+  white-space: nowrap;
 }
 
 .c8 {
@@ -869,6 +870,7 @@ exports[`Storyshots Molecules / FlexTable / With Different Rows With Colored Sep
 .c7 {
   display: inline-block;
   width: 100%;
+  white-space: nowrap;
 }
 
 .c8 {
@@ -1613,6 +1615,7 @@ exports[`Storyshots Molecules / FlexTable / With Different Rows With Hidden Sepa
 .c7 {
   display: inline-block;
   width: 100%;
+  white-space: nowrap;
 }
 
 .c8 {
@@ -2310,6 +2313,7 @@ exports[`Storyshots Molecules / FlexTable / With Different Rows Without Hover Hi
 .c7 {
   display: inline-block;
   width: 100%;
+  white-space: nowrap;
 }
 
 .c8 {
