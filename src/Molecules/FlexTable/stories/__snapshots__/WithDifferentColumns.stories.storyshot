@@ -255,6 +255,7 @@ exports[`Storyshots Molecules / FlexTable / With different columns Column Width 
 .c13 {
   display: inline-block;
   width: 100%;
+  white-space: nowrap;
 }
 
 .c14 {
@@ -1275,6 +1276,7 @@ exports[`Storyshots Molecules / FlexTable / With different columns Column Width 
 .c8 {
   display: inline-block;
   width: 100%;
+  white-space: nowrap;
 }
 
 .c9 {
@@ -2129,6 +2131,7 @@ exports[`Storyshots Molecules / FlexTable / With different columns Different Ali
 .c8 {
   display: inline-block;
   width: 100%;
+  white-space: nowrap;
 }
 
 .c9 {
@@ -2916,6 +2919,7 @@ exports[`Storyshots Molecules / FlexTable / With different columns Hidden Column
 .c8 {
   display: inline-block;
   width: 100%;
+  white-space: nowrap;
 }
 
 .c9 {
