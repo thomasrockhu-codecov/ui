@@ -6,7 +6,9 @@ import { Truncate, Tooltip } from '../..';
 const StyledDiv = styled.div`
   display: inline-block;
   width: 100%;
+  text-overflow: ellipsis;
   white-space: nowrap;
+  overflow: hidden;
 `;
 
 export const TruncateWithTooltip: TruncateWithTooltipComponent = ({

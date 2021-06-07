@@ -198,7 +198,9 @@ exports[`Storyshots Molecules / FlexTable / With different size props Tables Wit
 .c8 {
   display: inline-block;
   width: 100%;
+  text-overflow: ellipsis;
   white-space: nowrap;
+  overflow: hidden;
 }
 
 .c9 {
@@ -833,7 +835,9 @@ exports[`Storyshots Molecules / FlexTable / With different size props Tables Wit
 .c10 {
   display: inline-block;
   width: 100%;
+  text-overflow: ellipsis;
   white-space: nowrap;
+  overflow: hidden;
 }
 
 .c11 {
@@ -2312,7 +2316,9 @@ exports[`Storyshots Molecules / FlexTable / With different size props Tables Wit
 .c10 {
   display: inline-block;
   width: 100%;
+  text-overflow: ellipsis;
   white-space: nowrap;
+  overflow: hidden;
 }
 
 .c11 {
@@ -3504,7 +3510,9 @@ exports[`Storyshots Molecules / FlexTable / With different size props Tables Wit
 .c9 {
   display: inline-block;
   width: 100%;
+  text-overflow: ellipsis;
   white-space: nowrap;
+  overflow: hidden;
 }
 
 .c10 {

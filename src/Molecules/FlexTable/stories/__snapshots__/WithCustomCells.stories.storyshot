@@ -180,7 +180,9 @@ exports[`Storyshots Molecules / FlexTable / With Custom Cells Bold Cells 1`] = `
 .c6 {
   display: inline-block;
   width: 100%;
+  text-overflow: ellipsis;
   white-space: nowrap;
+  overflow: hidden;
 }
 
 .c7 {
@@ -753,7 +755,9 @@ exports[`Storyshots Molecules / FlexTable / With Custom Cells Custom Cells 1`] =
 .c6 {
   display: inline-block;
   width: 100%;
+  text-overflow: ellipsis;
   white-space: nowrap;
+  overflow: hidden;
 }
 
 .c7 {
