@@ -1,3 +1,10 @@
+## [6.18.2](https://github.com/nordnet/ui/compare/v6.18.1...v6.18.2) (2021-06-07)
+
+
+### Bug Fixes
+
+* trigger build ([d9d27a3](https://github.com/nordnet/ui/commit/d9d27a3))
+
 ## [6.18.1](https://github.com/nordnet/ui/compare/v6.18.0...v6.18.1) (2021-06-04)
 
 
