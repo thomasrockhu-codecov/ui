@@ -1,3 +1,11 @@
+# [6.19.0](https://github.com/nordnet/ui/compare/v6.18.3...v6.19.0) (2021-06-08)
+
+
+### Features
+
+* 🎸 add phone input ([0d2a62e](https://github.com/nordnet/ui/commit/0d2a62e))
+* 🎸 allow sorting options by country for phone input ([2eed404](https://github.com/nordnet/ui/commit/2eed404))
+
 ## [6.18.3](https://github.com/nordnet/ui/compare/v6.18.2...v6.18.3) (2021-06-08)
 
 
