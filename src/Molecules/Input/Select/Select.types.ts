@@ -46,6 +46,10 @@ export type Props = {
    */
   width?: string;
   /**
+   * Set a specific with for the dropdown list.
+   */
+  listWidth?: string;
+  /**
    * Maximum height that list can be.
    */
   listMaxHeight?: string;
@@ -98,9 +102,9 @@ export type Props = {
   disableSearchComponent?: boolean;
 };
 
-type OptionItem = {
+export type OptionItem = {
   [K: string]: any;
-  label: string;
+  label: string | JSX.Element;
   value: any;
   disabled?: boolean;
   [SYMBOL_ALL]?: boolean;

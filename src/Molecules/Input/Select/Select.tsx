@@ -320,7 +320,7 @@ const Select = (props: Props) => {
                 ) : null
               }
               maxHeight={props.listMaxHeight}
-              width={props.width}
+              width={props.listWidth || props.width}
             >
               {options?.map((x: any, index: number) => (
                 <ListItemWrapper
