@@ -227,7 +227,9 @@ exports[`Storyshots Molecules / FlexTable / With lots of rows Big Table 1`] = `
 .c13 {
   display: inline-block;
   width: 100%;
+  text-overflow: ellipsis;
   white-space: nowrap;
+  overflow: hidden;
 }
 
 .c14 {
@@ -21138,7 +21140,9 @@ exports[`Storyshots Molecules / FlexTable / With lots of rows Big Table Without 
 .c12 {
   display: inline-block;
   width: 100%;
+  text-overflow: ellipsis;
   white-space: nowrap;
+  overflow: hidden;
 }
 
 .c13 {
@@ -121606,7 +121610,9 @@ exports[`Storyshots Molecules / FlexTable / With lots of rows Multiple Big Table
 .c14 {
   display: inline-block;
   width: 100%;
+  text-overflow: ellipsis;
   white-space: nowrap;
+  overflow: hidden;
 }
 
 .c15 {
@@ -148276,7 +148282,9 @@ exports[`Storyshots Molecules / FlexTable / With lots of rows Virtualized Table 
 .c14 {
   display: inline-block;
   width: 100%;
+  text-overflow: ellipsis;
   white-space: nowrap;
+  overflow: hidden;
 }
 
 .c15 {
