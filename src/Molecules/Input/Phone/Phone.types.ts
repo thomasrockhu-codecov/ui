@@ -15,7 +15,6 @@ export type Props = {
   name?: string;
   error?: string;
   success?: boolean;
-  /** TODO: is this needed? */
   extraInfo?: string;
   rightAddon?: React.ReactNode;
   leftAddon?: React.ReactNode;
@@ -47,4 +46,8 @@ export type Props = {
   onKeyDown?: React.KeyboardEventHandler<HTMLInputElement>;
   onKeyUp?: React.KeyboardEventHandler<HTMLInputElement>;
   onKeyPress?: React.KeyboardEventHandler<HTMLInputElement>;
+  /**
+   * Used to sort the options list so the specified country comes first.
+   */
+  sortByCountry?: string;
 };

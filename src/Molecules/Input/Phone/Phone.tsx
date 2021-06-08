@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useMemo, useCallback } from 'react';
 import * as R from 'ramda';
 import { Props } from './Phone.types';
 import { Box, Flag, Flexbox, FormField, Icon, Typography } from '../../..';
@@ -48,44 +48,68 @@ const PhoneComponent = React.forwardRef<HTMLInputElement, Props>((props, ref) =>
     value,
     visuallyEmphasiseRequired,
     type,
+    sortByCountry,
   } = props;
 
-  const options = [
-    {
-      label: <CountryCodeLabel countryCode="se" prefixCode="+46" />,
-      value: '46',
-      flag: <Flag country="se" height={3} />,
-    },
-    {
-      label: <CountryCodeLabel countryCode="dk" prefixCode="+45" />,
-      value: '45',
-      flag: <Flag country="dk" height={3} />,
-    },
-    {
-      label: <CountryCodeLabel countryCode="no" prefixCode="+47" />,
-      value: '47',
-      flag: <Flag country="no" height={3} />,
-    },
-    {
-      label: <CountryCodeLabel countryCode="fi" prefixCode="+385" />,
-      value: '385',
-      flag: <Flag country="fi" height={3} />,
-    },
-    {
-      label: (
-        <Flexbox container alignItems="center" gutter={3}>
-          <Flexbox item>
-            <Icon.Globe size={3} />
+  const options = useMemo(
+    () => [
+      {
+        label: <CountryCodeLabel countryCode="dk" prefixCode="+45" />,
+        value: '45',
+        country: 'dk',
+        flag: <Flag country="dk" height={3} />,
+      },
+      {
+        label: <CountryCodeLabel countryCode="se" prefixCode="+46" />,
+        value: '46',
+        country: 'se',
+        flag: <Flag country="se" height={3} />,
+      },
+      {
+        label: <CountryCodeLabel countryCode="no" prefixCode="+47" />,
+        value: '47',
+        country: 'no',
+        flag: <Flag country="no" height={3} />,
+      },
+      {
+        label: <CountryCodeLabel countryCode="fi" prefixCode="+385" />,
+        value: '385',
+        country: 'fi',
+        flag: <Flag country="fi" height={3} />,
+      },
+      {
+        label: (
+          <Flexbox container alignItems="center" gutter={3}>
+            <Flexbox item>
+              <Icon.Globe size={3} />
+            </Flexbox>
+            <Flexbox item>
+              <Typography type="secondary">+</Typography>
+            </Flexbox>
           </Flexbox>
-          <Flexbox item>
-            <Typography type="secondary">+</Typography>
-          </Flexbox>
-        </Flexbox>
-      ),
-      value: '',
-      flag: <Icon.Globe size={3} />,
+        ),
+        value: '',
+        country: 'other',
+        flag: <Icon.Globe size={3} />,
+      },
+    ],
+    [],
+  );
+
+  const byCountry = useCallback(
+    (a, b) => {
+      if (a.country === sortByCountry) {
+        return -1;
+      }
+      if (b.country === sortByCountry) {
+        return 1;
+      }
+      return 0;
     },
-  ];
+    [sortByCountry],
+  );
+
+  const sortedOptions = useMemo(() => options.sort(byCountry), [options, byCountry]);
 
   // @ts-ignore
   const CountryCodeListItem = ({ index }) => {
@@ -116,7 +140,9 @@ const PhoneComponent = React.forwardRef<HTMLInputElement, Props>((props, ref) =>
     );
   };
 
-  const [countryCode, setCountryCode] = useState<OptionItem[]>([options[0]]);
+  const [countryCode, setCountryCode] = useState<OptionItem[]>(
+    sortByCountry ? [sortedOptions[0]] : [options[0]],
+  );
   const [phoneNumber, setPhoneNumber] = useState<string>('');
 
   const changeCountryCode = (vals: OptionItem[]) => {
@@ -158,7 +184,7 @@ const PhoneComponent = React.forwardRef<HTMLInputElement, Props>((props, ref) =>
           label="country code"
           hideLabel
           disabled={disabled}
-          options={options}
+          options={sortByCountry ? sortedOptions : options}
           components={{
             ListItem: CountryCodeListItem,
             SelectedValue: CountryCodeValue,

@@ -1,6 +1,6 @@
 /* eslint-disable no-console */
 import React from 'react';
-import { Input } from '../../..';
+import { Flexbox, Input } from '../../..';
 
 export default {
   title: 'Molecules / Input / Phone',
@@ -84,4 +84,18 @@ export const isDisabled = () => (
 
 isDisabled.story = {
   name: 'Is disabled',
+};
+
+export const sortByCountry = () => (
+  <Flexbox container direction="column" gutter={3}>
+    <Input.Phone name="country-code-example" label="Sweden" sortByCountry="se" />
+    <Input.Phone name="country-code-example" label="Denmark" sortByCountry="dk" />
+    <Input.Phone name="country-code-example" label="Finland" sortByCountry="fi" />
+    <Input.Phone name="country-code-example" label="Norway" sortByCountry="no" />
+    <Input.Phone name="country-code-example" label="Other" sortByCountry="other" />
+  </Flexbox>
+);
+
+sortByCountry.story = {
+  name: 'Sort by country',
 };
