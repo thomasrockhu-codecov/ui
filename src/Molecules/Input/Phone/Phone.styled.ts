@@ -65,12 +65,22 @@ export const placeholderNormalization = css<Pick<Props, 'variant' | 'disabled'>>
   }
 `;
 
-export const StyledSelect = styled(Select)`
-  max-width: 50px;
-  & * {
-    border: none;
-  }
-`;
+/**
+ * TODO: Select is undefined when running test:
+ * src/Molecules/Input/Select/__tests__/Select.test.tsx
+ *
+ *    Cannot create styled-component for component: undefined.
+ *    > 76 | export const StyledSelect = styled(Select)`
+ *                                       ^
+ */
+export const StyledSelect = Select
+  ? styled(Select)`
+      max-width: 50px;
+      & * {
+        border: none;
+      }
+    `
+  : Select;
 
 export const StyledCountryCode = styled(Flexbox)<{ disabled?: boolean }>`
   cursor: ${({ disabled }) => (disabled ? 'not-allowed' : 'auto')};
