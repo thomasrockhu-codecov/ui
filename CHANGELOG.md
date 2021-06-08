@@ -1,3 +1,10 @@
+## [6.18.3](https://github.com/nordnet/ui/compare/v6.18.2...v6.18.3) (2021-06-08)
+
+
+### Bug Fixes
+
+* put back ellipsis again and add example story ([8d8f6c9](https://github.com/nordnet/ui/commit/8d8f6c9))
+
 ## [6.18.2](https://github.com/nordnet/ui/compare/v6.18.1...v6.18.2) (2021-06-07)
 
 
