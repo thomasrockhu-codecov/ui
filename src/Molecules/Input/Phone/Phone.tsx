@@ -45,7 +45,6 @@ const PhoneComponent = React.forwardRef<HTMLInputElement, Props>((props, ref) =>
     variant = 'normal',
     size,
     success,
-    value,
     visuallyEmphasiseRequired,
     type,
     sortByCountry,
@@ -110,6 +109,13 @@ const PhoneComponent = React.forwardRef<HTMLInputElement, Props>((props, ref) =>
   );
 
   const sortedOptions = useMemo(() => options.sort(byCountry), [options, byCountry]);
+  const getInitialCountryCodeValue = useCallback(() => {
+    if (defaultValue?.countryCode) {
+      return options.filter((opt) => opt.value === defaultValue.countryCode.replace('+', ''));
+    }
+
+    return sortByCountry ? [sortedOptions[0]] : [options[0]];
+  }, [defaultValue, options, sortByCountry, sortedOptions]);
 
   // @ts-ignore
   const CountryCodeListItem = ({ index }) => {
@@ -134,15 +140,15 @@ const PhoneComponent = React.forwardRef<HTMLInputElement, Props>((props, ref) =>
       state.context.selectedItems.length === 0 ? null : state.context.selectedItems[0];
 
     return (
-      <Flexbox container alignItems="center" justifyContent="center">
-        <Box pl={2}>{selectedOption.flag}</Box>
-      </Flexbox>
+      selectedOption && (
+        <Flexbox container alignItems="center" justifyContent="center">
+          <Box pl={2}>{selectedOption.flag}</Box>
+        </Flexbox>
+      )
     );
   };
 
-  const [countryCode, setCountryCode] = useState<OptionItem[]>(
-    sortByCountry ? [sortedOptions[0]] : [options[0]],
-  );
+  const [countryCode, setCountryCode] = useState<OptionItem[]>(getInitialCountryCodeValue());
   const [phoneNumber, setPhoneNumber] = useState<string>('');
   const [focused, setFocused] = useState(false);
 
@@ -209,6 +215,7 @@ const PhoneComponent = React.forwardRef<HTMLInputElement, Props>((props, ref) =>
         </StyledCountryCode>
         <StyledInput
           onChange={changePhoneNumber}
+          defaultValue={defaultValue?.phoneNumber}
           {...{
             autoComplete,
             autoFocus,
@@ -228,7 +235,6 @@ const PhoneComponent = React.forwardRef<HTMLInputElement, Props>((props, ref) =>
             variant,
             size,
             success,
-            value,
             type,
             ref,
           }}

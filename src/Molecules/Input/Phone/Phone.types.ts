@@ -1,6 +1,11 @@
 export type Variant = 'normal' | 'quiet';
 export type Size = Pick<Props, 'size'>;
 
+type DefaultPhoneNumberValue = {
+  countryCode: string;
+  phoneNumber: string;
+};
+
 export type Props = {
   className?: string;
   id?: string;
@@ -33,8 +38,7 @@ export type Props = {
    */
   width?: string | number;
   type?: string;
-  value?: string;
-  defaultValue?: string;
+  defaultValue?: DefaultPhoneNumberValue;
   required?: boolean;
   maxLength?: number;
   visuallyEmphasiseRequired?: boolean;
