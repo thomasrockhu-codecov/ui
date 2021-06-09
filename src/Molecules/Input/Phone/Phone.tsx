@@ -32,10 +32,10 @@ const PhoneComponent = React.forwardRef<HTMLInputElement, Props>((props, ref) =>
     id,
     maxLength,
     name,
-    onBlur,
+    onBlur = () => {},
     onChange = () => {},
     onClick,
-    onFocus,
+    onFocus = () => {},
     onMouseLeave,
     onKeyDown,
     onKeyPress,
@@ -45,7 +45,6 @@ const PhoneComponent = React.forwardRef<HTMLInputElement, Props>((props, ref) =>
     variant = 'normal',
     size,
     success,
-    value,
     visuallyEmphasiseRequired,
     type,
     sortByCountry,
@@ -110,6 +109,13 @@ const PhoneComponent = React.forwardRef<HTMLInputElement, Props>((props, ref) =>
   );
 
   const sortedOptions = useMemo(() => options.sort(byCountry), [options, byCountry]);
+  const getInitialCountryCodeValue = useCallback(() => {
+    if (defaultValue?.countryCode) {
+      return options.filter((opt) => opt.value === defaultValue.countryCode.replace('+', ''));
+    }
+
+    return sortByCountry ? [sortedOptions[0]] : [options[0]];
+  }, [defaultValue, options, sortByCountry, sortedOptions]);
 
   // @ts-ignore
   const CountryCodeListItem = ({ index }) => {
@@ -134,16 +140,17 @@ const PhoneComponent = React.forwardRef<HTMLInputElement, Props>((props, ref) =>
       state.context.selectedItems.length === 0 ? null : state.context.selectedItems[0];
 
     return (
-      <Flexbox container alignItems="center" justifyContent="center">
-        <Box pl={2}>{selectedOption.flag}</Box>
-      </Flexbox>
+      selectedOption && (
+        <Flexbox container alignItems="center" justifyContent="center">
+          <Box pl={2}>{selectedOption.flag}</Box>
+        </Flexbox>
+      )
     );
   };
 
-  const [countryCode, setCountryCode] = useState<OptionItem[]>(
-    sortByCountry ? [sortedOptions[0]] : [options[0]],
-  );
+  const [countryCode, setCountryCode] = useState<OptionItem[]>(getInitialCountryCodeValue());
   const [phoneNumber, setPhoneNumber] = useState<string>('');
+  const [focused, setFocused] = useState(false);
 
   const changeCountryCode = (vals: OptionItem[]) => {
     const { value: newValue } = vals[0];
@@ -178,6 +185,7 @@ const PhoneComponent = React.forwardRef<HTMLInputElement, Props>((props, ref) =>
       <StyledWrapper
         container
         alignItems="stretch"
+        focused={focused}
         {...R.pick(['error', 'success', 'disabled', 'variant'], props)}
       >
         <StyledSelect
@@ -193,6 +201,12 @@ const PhoneComponent = React.forwardRef<HTMLInputElement, Props>((props, ref) =>
           onChange={changeCountryCode}
           listWidth="80px"
           id="phone-input-country-code-selector"
+          onFocus={() => {
+            setFocused(true);
+          }}
+          onBlur={() => {
+            setFocused(false);
+          }}
         />
         <StyledCountryCode container alignItems="center" disabled={disabled}>
           <Typography type="secondary" color={(t) => t.color[disabled ? 'label' : 'text']}>
@@ -201,18 +215,16 @@ const PhoneComponent = React.forwardRef<HTMLInputElement, Props>((props, ref) =>
         </StyledCountryCode>
         <StyledInput
           onChange={changePhoneNumber}
+          defaultValue={defaultValue?.phoneNumber}
           {...{
             autoComplete,
             autoFocus,
-            defaultValue,
             disabled,
             error,
             id,
             maxLength,
             name,
-            onBlur,
             onClick,
-            onFocus,
             onMouseLeave,
             onKeyDown,
             onKeyPress,
@@ -222,13 +234,20 @@ const PhoneComponent = React.forwardRef<HTMLInputElement, Props>((props, ref) =>
             variant,
             size,
             success,
-            value,
             type,
             ref,
           }}
           {...getAriaProps(props)}
           {...getDataProps(props)}
           {...(hasError(error) ? { 'aria-invalid': true } : {})}
+          onFocus={(e: React.FocusEvent<HTMLInputElement>) => {
+            setFocused(true);
+            onFocus(e);
+          }}
+          onBlur={(e: React.FocusEvent<HTMLInputElement>) => {
+            setFocused(false);
+            onBlur(e);
+          }}
         />
       </StyledWrapper>
     </FormField>

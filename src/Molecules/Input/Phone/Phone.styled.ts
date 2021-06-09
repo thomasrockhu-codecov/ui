@@ -28,12 +28,6 @@ const hoverBorderStyles = css<Pick<Props, 'disabled'>>`
 `}
 `;
 
-const focusBorderStyles = css`
-  &:focus {
-    border-color: ${(p) => p.theme.color.borderActive};
-  }
-`;
-
 const borderStyles = css<Pick<Props, 'error' | 'success' | 'disabled' | 'variant'>>`
   border: solid;
   border-color: ${(p) => {
@@ -47,7 +41,6 @@ const borderStyles = css<Pick<Props, 'error' | 'success' | 'disabled' | 'variant
   }
   position: relative;
   ${hoverBorderStyles}
-  ${focusBorderStyles}
   ${(p) =>
     p.disabled && p.variant === 'quiet' ? `border-color: ${p.theme.color.disabledBackground};` : ''}
 `;
@@ -92,6 +85,7 @@ export const StyledInput = styled(NormalizedElements.Input).attrs((p) => ({
   type: p.type || 'text',
 }))<Partial<Props>>`
   border: 0;
+  outline: none;
   width: 100%;
   padding: ${(p) => p.theme.spacing.unit(p.variant === 'quiet' ? 0 : 2)}px;
   margin: 0;
@@ -128,10 +122,11 @@ export const StyledInput = styled(NormalizedElements.Input).attrs((p) => ({
       `}
 `;
 
-export const StyledWrapper = styled(Flexbox)<{ variant?: Variant }>`
+export const StyledWrapper = styled(Flexbox)<{ focused?: boolean; variant?: Variant }>`
   position: relative;
   padding: ${(p) => p.theme.spacing.unit(p.variant === 'quiet' ? 1 : 0)}px 0;
   ${borderStyles}
+  ${({ focused, theme }) => (focused ? `border-color: ${theme.color.borderActive};` : '')}
 `;
 
 export const StyledBox = styled(Box)<{ focused?: boolean; isKeyboardNavigation?: boolean }>`
