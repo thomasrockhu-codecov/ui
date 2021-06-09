@@ -1,3 +1,12 @@
+## [6.19.1](https://github.com/nordnet/ui/compare/v6.19.0...v6.19.1) (2021-06-09)
+
+
+### Bug Fixes
+
+* 🐛 adjust focused styling of phone input ([b049c2d](https://github.com/nordnet/ui/commit/b049c2d))
+* 🐛 defaultValue object for phone input ([a2d310f](https://github.com/nordnet/ui/commit/a2d310f))
+* 🐛 Removed potential bug with controlled phone input ([bb149ce](https://github.com/nordnet/ui/commit/bb149ce))
+
 # [6.19.0](https://github.com/nordnet/ui/compare/v6.18.3...v6.19.0) (2021-06-08)
 
 
