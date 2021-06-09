@@ -22,6 +22,20 @@ defaultStory.story = {
   name: 'Default',
 };
 
+export const autoFocus = () => (
+  <Input.Phone
+    name="default-example"
+    label="Phone number"
+    placeholder="123 456 789"
+    onChange={console.log}
+    autoFocus
+  />
+);
+
+autoFocus.story = {
+  name: 'Auto focus',
+};
+
 export const fullWidth = () => (
   <Input.Phone
     name="full-width-example"
