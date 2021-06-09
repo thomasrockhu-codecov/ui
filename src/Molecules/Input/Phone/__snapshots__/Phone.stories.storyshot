@@ -3041,7 +3041,7 @@ exports[`Storyshots Molecules / Input / Phone Is disabled 1`] = `
             className="c7"
             disabled={true}
             onChange={[Function]}
-            value="45"
+            value="46"
           >
             
             <option
@@ -3168,20 +3168,37 @@ exports[`Storyshots Molecules / Input / Phone Is disabled 1`] = `
                               role="img"
                               viewBox="0 0 640 480"
                             >
-                              <path
-                                d="M0 0h640.1v480H0z"
-                                fill="#c60c30"
-                              />
-                              <path
-                                d="M205.714 0h68.57v480h-68.57z"
-                                fill="#fff"
-                              />
-                              <path
-                                d="M0 205.714h640.1v68.57H0z"
-                                fill="#fff"
-                              />
+                              <g
+                                transform="translate(50.082) scale(.9375)"
+                              >
+                                <g
+                                  fillRule="evenodd"
+                                  strokeWidth="1pt"
+                                >
+                                  <path
+                                    d="M-121.103.302h256V205.1h-256zM-121.103 307.178h256v204.8h-256z"
+                                    fill="#006aa7"
+                                  />
+                                  <path
+                                    d="M-121.103 204.984h256v102.4h-256z"
+                                    fill="#fecc00"
+                                  />
+                                  <path
+                                    d="M133.843.01h102.4v511.997h-102.4z"
+                                    fill="#fecc00"
+                                  />
+                                  <path
+                                    d="M232.995 205.013h460.798v102.4H232.995z"
+                                    fill="#fecc00"
+                                  />
+                                  <path
+                                    d="M236.155 307.208h460.797v204.799H236.155zM236.155.302h460.797V205.1H236.155z"
+                                    fill="#006aa7"
+                                  />
+                                </g>
+                              </g>
                               <title>
-                                Denmark
+                                Sweden
                               </title>
                             </svg>
                           </div>
@@ -3216,18 +3233,567 @@ exports[`Storyshots Molecules / Input / Phone Is disabled 1`] = `
             className="c10"
           >
             +
-            45
+            46
           </span>
         </div>
         <input
           className="NormalizedInput__Input-sc-1m4kmh9-0 c23"
+          defaultValue="123 456 789"
           disabled={true}
           name="disabled-example"
           onBlur={[Function]}
           onChange={[Function]}
           onFocus={[Function]}
           type="text"
-          value="123 456 789"
+          variant="normal"
+        />
+      </div>
+    </span>
+  </label>
+</div>
+`;
+
+exports[`Storyshots Molecules / Input / Phone Prefilled default values 1`] = `
+.c17 {
+  padding-left: 8px;
+  background-color: transparent;
+}
+
+.c18 {
+  height: 12px;
+  box-sizing: border-box;
+  display: block;
+  width: 16px;
+  overflow: hidden;
+}
+
+.c3 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c4 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: stretch;
+  -webkit-box-align: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+}
+
+.c14 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.c16 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c1 {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.c9 {
+  position: absolute;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  -webkit-clip: rect(1px,1px,1px,1px);
+  clip: rect(1px,1px,1px,1px);
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.c19 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 20px;
+  height: 20px;
+  fill: #282823;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
+}
+
+.c12 {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  overflow: visible;
+  text-transform: none;
+}
+
+.c12,
+.c12[type='button'],
+.c12[type='reset'],
+.c12[type='submit'] {
+  -webkit-appearance: button;
+}
+
+.c12::-moz-focus-inner,
+.c12[type='button']::-moz-focus-inner,
+.c12[type='reset']::-moz-focus-inner,
+.c12[type='submit']::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+.c12:-moz-focusring,
+.c12[type='button']:-moz-focusring,
+.c12[type='reset']:-moz-focusring,
+.c12[type='submit']:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+.c2 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #6E6E69;
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c11 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c20 {
+  -webkit-transform: translateY(-50%) rotate(0);
+  -ms-transform: translateY(-50%) rotate(0);
+  transform: translateY(-50%) rotate(0);
+  -webkit-transform-origin: center center;
+  -ms-transform-origin: center center;
+  transform-origin: center center;
+  -webkit-transition: -webkit-transform 0.16s ease-out;
+  -webkit-transition: transform 0.16s ease-out;
+  transition: transform 0.16s ease-out;
+  position: absolute;
+  height: 8px;
+  top: 50%;
+  right: 4px;
+  pointer-events: none;
+}
+
+.c8 {
+  position: relative;
+  display: block;
+  width: auto;
+}
+
+.c10 {
+  height: 40px;
+  border: 1px solid #BCBCB6;
+  position: relative;
+  background: #FFFFFF;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.c10:hover {
+  border-color: #4B4B46;
+}
+
+.c10:focus-within {
+  border-color: #0046FF;
+}
+
+.c10.focus-within {
+  border-color: #0046FF;
+}
+
+.c15 {
+  height: 100%;
+  width: 100%;
+}
+
+.c13 {
+  background: transparent;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  padding: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  border: 0;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  outline: 0;
+  text-align: initial;
+}
+
+.c13:active {
+  color: inherit;
+}
+
+.c7 {
+  display: none;
+}
+
+.c6 {
+  max-width: 50px;
+}
+
+.c6 * {
+  border: none;
+}
+
+.c21 {
+  cursor: auto;
+  background-color: #FFFFFF;
+}
+
+.c22 {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  overflow: visible;
+  border: 0;
+  outline: none;
+  width: 100%;
+  padding: 8px;
+  margin: 0;
+  line-height: inherit;
+  box-sizing: border-box;
+  height: 40px;
+  background-color: #FFFFFF;
+}
+
+.c22::-webkit-input-placeholder {
+  color: #6E6E69;
+  line-height: inherit;
+  opacity: 1;
+}
+
+.c22::-moz-placeholder {
+  color: #6E6E69;
+  line-height: inherit;
+  opacity: 1;
+}
+
+.c22:-ms-input-placeholder {
+  color: #6E6E69;
+  line-height: inherit;
+  opacity: 1;
+}
+
+.c22::placeholder {
+  color: #6E6E69;
+  line-height: inherit;
+  opacity: 1;
+}
+
+.c22:disabled::-webkit-input-placeholder {
+  color: #A0A09B;
+}
+
+.c22:disabled::-moz-placeholder {
+  color: #A0A09B;
+}
+
+.c22:disabled:-ms-input-placeholder {
+  color: #A0A09B;
+}
+
+.c22:disabled::placeholder {
+  color: #A0A09B;
+}
+
+.c5 {
+  position: relative;
+  padding: 0px 0;
+  border: solid;
+  border-color: #BCBCB6;
+  border-width: 1px;
+  position: relative;
+}
+
+.c5:focus {
+  border-width: 1px;
+}
+
+.c5:hover {
+  border-color: #4B4B46;
+}
+
+.c0 {
+  width: 200px;
+  display: inline-block;
+}
+
+<div
+  className="c0"
+>
+  <label
+    className="c1"
+    hidden={false}
+  >
+    <span
+      className="c2"
+    >
+      <div
+        className="c3"
+      >
+        Phone number 
+      </div>
+      <div
+        className="c4 c5"
+        focused={false}
+      >
+        <div
+          className="c6"
+        >
+          <select
+            aria-hidden="true"
+            className="c7"
+            disabled={false}
+            onChange={[Function]}
+            value="46"
+          >
+            
+            <option
+              label={
+                <CountryCodeLabel
+                  countryCode="dk"
+                  prefixCode="+45"
+                />
+              }
+              value="45"
+            />
+            <option
+              label={
+                <CountryCodeLabel
+                  countryCode="se"
+                  prefixCode="+46"
+                />
+              }
+              value="46"
+            />
+            <option
+              label={
+                <CountryCodeLabel
+                  countryCode="no"
+                  prefixCode="+47"
+                />
+              }
+              value="47"
+            />
+            <option
+              label={
+                <CountryCodeLabel
+                  countryCode="fi"
+                  prefixCode="+385"
+                />
+              }
+              value="385"
+            />
+            <option
+              label={
+                <ForwardRef
+                  alignItems="center"
+                  container={true}
+                  gutter={3}
+                >
+                  <ForwardRef
+                    item={true}
+                  >
+                    <Icon.Globe
+                      size={3}
+                    />
+                  </ForwardRef>
+                  <ForwardRef
+                    item={true}
+                  >
+                    <ForwardRef
+                      type="secondary"
+                    >
+                      +
+                    </ForwardRef>
+                  </ForwardRef>
+                </ForwardRef>
+              }
+              value=""
+            />
+          </select>
+          <div
+            className="c8"
+          >
+            <div
+              className="c3"
+            >
+              <div
+                className="c0"
+              >
+                <label
+                  className="c9"
+                  hidden={true}
+                  htmlFor="phone-input-country-code-selector"
+                >
+                  <span
+                    className="c2"
+                  >
+                    country code 
+                  </span>
+                </label>
+                <div
+                  className="c10"
+                  disabled={false}
+                  label="country code"
+                  onBlur={[Function]}
+                  onFocus={[Function]}
+                  tabIndex={0}
+                >
+                  <span
+                    className="c11"
+                  >
+                    <button
+                      aria-expanded="false"
+                      aria-haspopup="listbox"
+                      aria-label="country code: [object Object]"
+                      className="c12 c13"
+                      data-testid="input-select-button"
+                      disabled={false}
+                      form=""
+                      id="phone-input-country-code-selector"
+                      onClick={[Function]}
+                      tabIndex={0}
+                      type="button"
+                    >
+                      <div
+                        aria-hidden="true"
+                        className="c14 c15"
+                      >
+                        <div
+                          className="c16"
+                        >
+                          <div
+                            className="c17"
+                          >
+                            <svg
+                              className="c18"
+                              focusable="false"
+                              role="img"
+                              viewBox="0 0 640 480"
+                            >
+                              <g
+                                transform="translate(50.082) scale(.9375)"
+                              >
+                                <g
+                                  fillRule="evenodd"
+                                  strokeWidth="1pt"
+                                >
+                                  <path
+                                    d="M-121.103.302h256V205.1h-256zM-121.103 307.178h256v204.8h-256z"
+                                    fill="#006aa7"
+                                  />
+                                  <path
+                                    d="M-121.103 204.984h256v102.4h-256z"
+                                    fill="#fecc00"
+                                  />
+                                  <path
+                                    d="M133.843.01h102.4v511.997h-102.4z"
+                                    fill="#fecc00"
+                                  />
+                                  <path
+                                    d="M232.995 205.013h460.798v102.4H232.995z"
+                                    fill="#fecc00"
+                                  />
+                                  <path
+                                    d="M236.155 307.208h460.797v204.799H236.155zM236.155.302h460.797V205.1H236.155z"
+                                    fill="#006aa7"
+                                  />
+                                </g>
+                              </g>
+                              <title>
+                                Sweden
+                              </title>
+                            </svg>
+                          </div>
+                        </div>
+                      </div>
+                    </button>
+                  </span>
+                  <svg
+                    aria-hidden="true"
+                    className="c19 c20"
+                    focusable="false"
+                    open={false}
+                    preserveAspectRatio="xMidYMid meet"
+                    role="presentation"
+                    viewBox="0 0 24 24"
+                  >
+                    <polygon
+                      points="19.969 4 24 8.027 12 20 0 8.027 4.031 4 12 11.952"
+                    />
+                  </svg>
+                </div>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          className="c3 c21"
+        >
+          <span
+            className="c11"
+          >
+            +
+            46
+          </span>
+        </div>
+        <input
+          className="NormalizedInput__Input-sc-1m4kmh9-0 c22"
+          defaultValue="123 456 789"
+          name="disabled-example"
+          onBlur={[Function]}
+          onChange={[Function]}
+          onFocus={[Function]}
+          type="text"
           variant="normal"
         />
       </div>

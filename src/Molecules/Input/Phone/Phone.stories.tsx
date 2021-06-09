@@ -22,6 +22,18 @@ defaultStory.story = {
   name: 'Default',
 };
 
+export const prefilledDefaultValues = () => (
+  <Input.Phone
+    name="disabled-example"
+    label="Phone number"
+    defaultValue={{ countryCode: '46', phoneNumber: '123 456 789' }}
+  />
+);
+
+prefilledDefaultValues.story = {
+  name: 'Prefilled default values',
+};
+
 export const autoFocus = () => (
   <Input.Phone
     name="default-example"
@@ -93,7 +105,12 @@ hasSuccess.story = {
 };
 
 export const isDisabled = () => (
-  <Input.Phone name="disabled-example" label="Phone number" value="123 456 789" disabled />
+  <Input.Phone
+    name="disabled-example"
+    label="Phone number"
+    defaultValue={{ countryCode: '46', phoneNumber: '123 456 789' }}
+    disabled
+  />
 );
 
 isDisabled.story = {

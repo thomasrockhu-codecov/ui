@@ -219,7 +219,6 @@ const PhoneComponent = React.forwardRef<HTMLInputElement, Props>((props, ref) =>
           {...{
             autoComplete,
             autoFocus,
-            defaultValue,
             disabled,
             error,
             id,
