@@ -1,14 +1,10 @@
 import styled, { css } from 'styled-components';
-import { Props, Size, Variant } from './Phone.types';
+import { Props, Variant } from './Phone.types';
 import { Box, Flexbox } from '../../..';
 import { Select } from '../Select';
 import NormalizedElements from '../../../common/NormalizedElements';
 
 const hasError = (error?: Props['error']) => error && error !== '';
-
-const height = css<Size>`
-  height: ${(p) => (p.size === 's' ? p.theme.spacing.unit(8) : p.theme.spacing.unit(10))}px;
-`;
 
 const background = css<Pick<Props, 'disabled' | 'variant'>>`
   background-color: ${(p) =>
@@ -91,7 +87,6 @@ export const StyledInput = styled(NormalizedElements.Input).attrs((p) => ({
   margin: 0;
   line-height: inherit;
   box-sizing: border-box;
-  ${height}
   ${background}
   ${placeholderNormalization}
   ${(p) =>

@@ -15,7 +15,7 @@ const StyledContent = styled.div`
 const Content = ({ children }: any) => <StyledContent>{children}</StyledContent>;
 
 const ComponentThatDoesSomethingOnMount = () => {
-  useEffect(action('mounted'), []);
+  useEffect(action('mounted'), []); // eslint-disable-line react-hooks/exhaustive-deps
   return (
     <>
       This item is mounted and stays mounted no matter what. However, it&lsquo;d be hidden with css

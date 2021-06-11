@@ -33,6 +33,7 @@ export const onCloseProp = () => (
     <br />
     <br />
     <br />
+    {/* eslint-disable-next-line no-alert */}
     <InfoBar onClose={() => alert('close')}>
       With onClose prop InfoBar can be dismissed, but ParentComponent is in charge to react and
       actually hide the InfoBar.

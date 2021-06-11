@@ -49,7 +49,7 @@ export const DifferentHeights = () => {
 };
 
 export const WithButton = () => {
-  const button = { label: 'Click me', onClick: () => alert('Tihi that tickles') };
+  const button = { label: 'Click me', onClick: () => alert('Tihi that tickles') }; // eslint-disable-line no-alert
   return (
     <Box px={10}>
       <Timeline
