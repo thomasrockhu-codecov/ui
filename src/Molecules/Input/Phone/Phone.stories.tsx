@@ -1,5 +1,7 @@
 /* eslint-disable no-console */
 import React from 'react';
+import { select, withKnobs } from '@storybook/addon-knobs';
+
 import { Flexbox, Input } from '../../..';
 
 export default {
@@ -7,6 +9,7 @@ export default {
   parameters: {
     component: Input.Phone,
   },
+  decorators: [withKnobs],
 };
 
 export const defaultStory = () => (
@@ -14,6 +17,7 @@ export const defaultStory = () => (
     name="default-example"
     label="Phone number"
     placeholder="123 456 789"
+    size={select('Size', { Small: 's', Normal: undefined }, undefined)}
     onChange={console.log}
   />
 );

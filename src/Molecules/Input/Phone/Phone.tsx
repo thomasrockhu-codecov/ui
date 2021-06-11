@@ -191,6 +191,7 @@ const PhoneComponent = React.forwardRef<HTMLInputElement, Props>((props, ref) =>
         <StyledSelect
           label="country code"
           hideLabel
+          size={size}
           disabled={disabled}
           options={sortByCountry ? sortedOptions : options}
           components={{
