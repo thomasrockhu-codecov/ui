@@ -184,7 +184,7 @@ const PhoneComponent = React.forwardRef<HTMLInputElement, Props>((props, ref) =>
     >
       <StyledWrapper
         container
-        alignItems="stretch"
+        alignItems="center"
         focused={focused}
         {...R.pick(['error', 'success', 'disabled', 'variant'], props)}
       >
@@ -214,42 +214,44 @@ const PhoneComponent = React.forwardRef<HTMLInputElement, Props>((props, ref) =>
             +{countryCode[0].value}
           </Typography>
         </StyledCountryCode>
-        <StyledInput
-          onChange={changePhoneNumber}
-          defaultValue={defaultValue?.phoneNumber}
-          {...{
-            autoComplete,
-            autoFocus,
-            disabled,
-            error,
-            id,
-            maxLength,
-            name,
-            onClick,
-            onMouseLeave,
-            onKeyDown,
-            onKeyPress,
-            onKeyUp,
-            placeholder,
-            required,
-            variant,
-            size,
-            success,
-            type,
-            ref,
-          }}
-          {...getAriaProps(props)}
-          {...getDataProps(props)}
-          {...(hasError(error) ? { 'aria-invalid': true } : {})}
-          onFocus={(e: React.FocusEvent<HTMLInputElement>) => {
-            setFocused(true);
-            onFocus(e);
-          }}
-          onBlur={(e: React.FocusEvent<HTMLInputElement>) => {
-            setFocused(false);
-            onBlur(e);
-          }}
-        />
+        <Flexbox container alignItems="center">
+          <StyledInput
+            onChange={changePhoneNumber}
+            defaultValue={defaultValue?.phoneNumber}
+            {...{
+              autoComplete,
+              autoFocus,
+              disabled,
+              error,
+              id,
+              maxLength,
+              name,
+              onClick,
+              onMouseLeave,
+              onKeyDown,
+              onKeyPress,
+              onKeyUp,
+              placeholder,
+              required,
+              variant,
+              size,
+              success,
+              type,
+              ref,
+            }}
+            {...getAriaProps(props)}
+            {...getDataProps(props)}
+            {...(hasError(error) ? { 'aria-invalid': true } : {})}
+            onFocus={(e: React.FocusEvent<HTMLInputElement>) => {
+              setFocused(true);
+              onFocus(e);
+            }}
+            onBlur={(e: React.FocusEvent<HTMLInputElement>) => {
+              setFocused(false);
+              onBlur(e);
+            }}
+          />
+        </Flexbox>
       </StyledWrapper>
     </FormField>
   );

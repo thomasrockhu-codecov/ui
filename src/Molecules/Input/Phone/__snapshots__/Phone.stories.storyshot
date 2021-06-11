@@ -1,12 +1,12 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Storyshots Molecules / Input / Phone Auto focus 1`] = `
-.c17 {
+.c16 {
   padding-left: 8px;
   background-color: transparent;
 }
 
-.c18 {
+.c17 {
   height: 12px;
   box-sizing: border-box;
   display: block;
@@ -26,19 +26,7 @@ exports[`Storyshots Molecules / Input / Phone Auto focus 1`] = `
   align-items: center;
 }
 
-.c4 {
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: stretch;
-  -webkit-box-align: stretch;
-  -ms-flex-align: stretch;
-  align-items: stretch;
-}
-
-.c14 {
+.c13 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -46,7 +34,7 @@ exports[`Storyshots Molecules / Input / Phone Auto focus 1`] = `
   display: flex;
 }
 
-.c16 {
+.c15 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -68,7 +56,7 @@ exports[`Storyshots Molecules / Input / Phone Auto focus 1`] = `
   cursor: pointer;
 }
 
-.c9 {
+.c8 {
   position: absolute;
   height: 1px;
   width: 1px;
@@ -80,7 +68,7 @@ exports[`Storyshots Molecules / Input / Phone Auto focus 1`] = `
   cursor: pointer;
 }
 
-.c19 {
+.c18 {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -94,7 +82,7 @@ exports[`Storyshots Molecules / Input / Phone Auto focus 1`] = `
   display: block;
 }
 
-.c12 {
+.c11 {
   font-family: inherit;
   font-size: 100%;
   line-height: 1.15;
@@ -103,25 +91,25 @@ exports[`Storyshots Molecules / Input / Phone Auto focus 1`] = `
   text-transform: none;
 }
 
-.c12,
-.c12[type='button'],
-.c12[type='reset'],
-.c12[type='submit'] {
+.c11,
+.c11[type='button'],
+.c11[type='reset'],
+.c11[type='submit'] {
   -webkit-appearance: button;
 }
 
-.c12::-moz-focus-inner,
-.c12[type='button']::-moz-focus-inner,
-.c12[type='reset']::-moz-focus-inner,
-.c12[type='submit']::-moz-focus-inner {
+.c11::-moz-focus-inner,
+.c11[type='button']::-moz-focus-inner,
+.c11[type='reset']::-moz-focus-inner,
+.c11[type='submit']::-moz-focus-inner {
   border-style: none;
   padding: 0;
 }
 
-.c12:-moz-focusring,
-.c12[type='button']:-moz-focusring,
-.c12[type='reset']:-moz-focusring,
-.c12[type='submit']:-moz-focusring {
+.c11:-moz-focusring,
+.c11[type='button']:-moz-focusring,
+.c11[type='reset']:-moz-focusring,
+.c11[type='submit']:-moz-focusring {
   outline: 1px dotted ButtonText;
 }
 
@@ -134,7 +122,7 @@ exports[`Storyshots Molecules / Input / Phone Auto focus 1`] = `
   line-height: 1.4285714285714286;
 }
 
-.c11 {
+.c10 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
   margin: 0;
@@ -143,7 +131,7 @@ exports[`Storyshots Molecules / Input / Phone Auto focus 1`] = `
   line-height: 1.4285714285714286;
 }
 
-.c20 {
+.c19 {
   -webkit-transform: translateY(-50%) rotate(0);
   -ms-transform: translateY(-50%) rotate(0);
   transform: translateY(-50%) rotate(0);
@@ -160,13 +148,13 @@ exports[`Storyshots Molecules / Input / Phone Auto focus 1`] = `
   pointer-events: none;
 }
 
-.c8 {
+.c7 {
   position: relative;
   display: block;
   width: auto;
 }
 
-.c10 {
+.c9 {
   height: 40px;
   border: 1px solid #BCBCB6;
   position: relative;
@@ -175,24 +163,24 @@ exports[`Storyshots Molecules / Input / Phone Auto focus 1`] = `
   position: relative;
 }
 
-.c10:hover {
+.c9:hover {
   border-color: #4B4B46;
 }
 
-.c10:focus-within {
+.c9:focus-within {
   border-color: #0046FF;
 }
 
-.c10.focus-within {
+.c9.focus-within {
   border-color: #0046FF;
 }
 
-.c15 {
+.c14 {
   height: 100%;
   width: 100%;
 }
 
-.c13 {
+.c12 {
   background: transparent;
   width: 100%;
   height: 100%;
@@ -212,28 +200,28 @@ exports[`Storyshots Molecules / Input / Phone Auto focus 1`] = `
   text-align: initial;
 }
 
-.c13:active {
+.c12:active {
   color: inherit;
 }
 
-.c7 {
+.c6 {
   display: none;
 }
 
-.c6 {
+.c5 {
   max-width: 50px;
 }
 
-.c6 * {
+.c5 * {
   border: none;
 }
 
-.c21 {
+.c20 {
   cursor: auto;
   background-color: #FFFFFF;
 }
 
-.c22 {
+.c21 {
   font-family: inherit;
   font-size: 100%;
   line-height: 1.15;
@@ -246,51 +234,50 @@ exports[`Storyshots Molecules / Input / Phone Auto focus 1`] = `
   margin: 0;
   line-height: inherit;
   box-sizing: border-box;
-  height: 40px;
   background-color: #FFFFFF;
 }
 
-.c22::-webkit-input-placeholder {
+.c21::-webkit-input-placeholder {
   color: #6E6E69;
   line-height: inherit;
   opacity: 1;
 }
 
-.c22::-moz-placeholder {
+.c21::-moz-placeholder {
   color: #6E6E69;
   line-height: inherit;
   opacity: 1;
 }
 
-.c22:-ms-input-placeholder {
+.c21:-ms-input-placeholder {
   color: #6E6E69;
   line-height: inherit;
   opacity: 1;
 }
 
-.c22::placeholder {
+.c21::placeholder {
   color: #6E6E69;
   line-height: inherit;
   opacity: 1;
 }
 
-.c22:disabled::-webkit-input-placeholder {
+.c21:disabled::-webkit-input-placeholder {
   color: #A0A09B;
 }
 
-.c22:disabled::-moz-placeholder {
+.c21:disabled::-moz-placeholder {
   color: #A0A09B;
 }
 
-.c22:disabled:-ms-input-placeholder {
+.c21:disabled:-ms-input-placeholder {
   color: #A0A09B;
 }
 
-.c22:disabled::placeholder {
+.c21:disabled::placeholder {
   color: #A0A09B;
 }
 
-.c5 {
+.c4 {
   position: relative;
   padding: 0px 0;
   border: solid;
@@ -299,11 +286,11 @@ exports[`Storyshots Molecules / Input / Phone Auto focus 1`] = `
   position: relative;
 }
 
-.c5:focus {
+.c4:focus {
   border-width: 1px;
 }
 
-.c5:hover {
+.c4:hover {
   border-color: #4B4B46;
 }
 
@@ -328,15 +315,15 @@ exports[`Storyshots Molecules / Input / Phone Auto focus 1`] = `
         Phone number 
       </div>
       <div
-        className="c4 c5"
+        className="c3 c4"
         focused={false}
       >
         <div
-          className="c6"
+          className="c5"
         >
           <select
             aria-hidden="true"
-            className="c7"
+            className="c6"
             disabled={false}
             onChange={[Function]}
             value="45"
@@ -407,7 +394,7 @@ exports[`Storyshots Molecules / Input / Phone Auto focus 1`] = `
             />
           </select>
           <div
-            className="c8"
+            className="c7"
           >
             <div
               className="c3"
@@ -416,7 +403,7 @@ exports[`Storyshots Molecules / Input / Phone Auto focus 1`] = `
                 className="c0"
               >
                 <label
-                  className="c9"
+                  className="c8"
                   hidden={true}
                   htmlFor="phone-input-country-code-selector"
                 >
@@ -427,7 +414,7 @@ exports[`Storyshots Molecules / Input / Phone Auto focus 1`] = `
                   </span>
                 </label>
                 <div
-                  className="c10"
+                  className="c9"
                   disabled={false}
                   label="country code"
                   onBlur={[Function]}
@@ -435,13 +422,13 @@ exports[`Storyshots Molecules / Input / Phone Auto focus 1`] = `
                   tabIndex={0}
                 >
                   <span
-                    className="c11"
+                    className="c10"
                   >
                     <button
                       aria-expanded="false"
                       aria-haspopup="listbox"
                       aria-label="country code: [object Object]"
-                      className="c12 c13"
+                      className="c11 c12"
                       data-testid="input-select-button"
                       disabled={false}
                       form=""
@@ -452,16 +439,16 @@ exports[`Storyshots Molecules / Input / Phone Auto focus 1`] = `
                     >
                       <div
                         aria-hidden="true"
-                        className="c14 c15"
+                        className="c13 c14"
                       >
                         <div
-                          className="c16"
+                          className="c15"
                         >
                           <div
-                            className="c17"
+                            className="c16"
                           >
                             <svg
-                              className="c18"
+                              className="c17"
                               focusable="false"
                               role="img"
                               viewBox="0 0 640 480"
@@ -489,7 +476,7 @@ exports[`Storyshots Molecules / Input / Phone Auto focus 1`] = `
                   </span>
                   <svg
                     aria-hidden="true"
-                    className="c19 c20"
+                    className="c18 c19"
                     focusable="false"
                     open={false}
                     preserveAspectRatio="xMidYMid meet"
@@ -507,26 +494,30 @@ exports[`Storyshots Molecules / Input / Phone Auto focus 1`] = `
           </div>
         </div>
         <div
-          className="c3 c21"
+          className="c3 c20"
         >
           <span
-            className="c11"
+            className="c10"
           >
             +
             45
           </span>
         </div>
-        <input
-          autoFocus={true}
-          className="NormalizedInput__Input-sc-1m4kmh9-0 c22"
-          name="default-example"
-          onBlur={[Function]}
-          onChange={[Function]}
-          onFocus={[Function]}
-          placeholder="123 456 789"
-          type="text"
-          variant="normal"
-        />
+        <div
+          className="c3"
+        >
+          <input
+            autoFocus={true}
+            className="NormalizedInput__Input-sc-1m4kmh9-0 c21"
+            name="default-example"
+            onBlur={[Function]}
+            onChange={[Function]}
+            onFocus={[Function]}
+            placeholder="123 456 789"
+            type="text"
+            variant="normal"
+          />
+        </div>
       </div>
     </span>
   </label>
@@ -534,6 +525,529 @@ exports[`Storyshots Molecules / Input / Phone Auto focus 1`] = `
 `;
 
 exports[`Storyshots Molecules / Input / Phone Default 1`] = `
+.c16 {
+  padding-left: 8px;
+  background-color: transparent;
+}
+
+.c17 {
+  height: 12px;
+  box-sizing: border-box;
+  display: block;
+  width: 16px;
+  overflow: hidden;
+}
+
+.c3 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c13 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.c15 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c1 {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.c8 {
+  position: absolute;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  -webkit-clip: rect(1px,1px,1px,1px);
+  clip: rect(1px,1px,1px,1px);
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.c18 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 20px;
+  height: 20px;
+  fill: #282823;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
+}
+
+.c11 {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  overflow: visible;
+  text-transform: none;
+}
+
+.c11,
+.c11[type='button'],
+.c11[type='reset'],
+.c11[type='submit'] {
+  -webkit-appearance: button;
+}
+
+.c11::-moz-focus-inner,
+.c11[type='button']::-moz-focus-inner,
+.c11[type='reset']::-moz-focus-inner,
+.c11[type='submit']::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+.c11:-moz-focusring,
+.c11[type='button']:-moz-focusring,
+.c11[type='reset']:-moz-focusring,
+.c11[type='submit']:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+.c2 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #6E6E69;
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c10 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c19 {
+  -webkit-transform: translateY(-50%) rotate(0);
+  -ms-transform: translateY(-50%) rotate(0);
+  transform: translateY(-50%) rotate(0);
+  -webkit-transform-origin: center center;
+  -ms-transform-origin: center center;
+  transform-origin: center center;
+  -webkit-transition: -webkit-transform 0.16s ease-out;
+  -webkit-transition: transform 0.16s ease-out;
+  transition: transform 0.16s ease-out;
+  position: absolute;
+  height: 8px;
+  top: 50%;
+  right: 4px;
+  pointer-events: none;
+}
+
+.c7 {
+  position: relative;
+  display: block;
+  width: auto;
+}
+
+.c9 {
+  height: 40px;
+  border: 1px solid #BCBCB6;
+  position: relative;
+  background: #FFFFFF;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.c9:hover {
+  border-color: #4B4B46;
+}
+
+.c9:focus-within {
+  border-color: #0046FF;
+}
+
+.c9.focus-within {
+  border-color: #0046FF;
+}
+
+.c14 {
+  height: 100%;
+  width: 100%;
+}
+
+.c12 {
+  background: transparent;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  padding: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  border: 0;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  outline: 0;
+  text-align: initial;
+}
+
+.c12:active {
+  color: inherit;
+}
+
+.c6 {
+  display: none;
+}
+
+.c5 {
+  max-width: 50px;
+}
+
+.c5 * {
+  border: none;
+}
+
+.c20 {
+  cursor: auto;
+  background-color: #FFFFFF;
+}
+
+.c21 {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  overflow: visible;
+  border: 0;
+  outline: none;
+  width: 100%;
+  padding: 8px;
+  margin: 0;
+  line-height: inherit;
+  box-sizing: border-box;
+  background-color: #FFFFFF;
+}
+
+.c21::-webkit-input-placeholder {
+  color: #6E6E69;
+  line-height: inherit;
+  opacity: 1;
+}
+
+.c21::-moz-placeholder {
+  color: #6E6E69;
+  line-height: inherit;
+  opacity: 1;
+}
+
+.c21:-ms-input-placeholder {
+  color: #6E6E69;
+  line-height: inherit;
+  opacity: 1;
+}
+
+.c21::placeholder {
+  color: #6E6E69;
+  line-height: inherit;
+  opacity: 1;
+}
+
+.c21:disabled::-webkit-input-placeholder {
+  color: #A0A09B;
+}
+
+.c21:disabled::-moz-placeholder {
+  color: #A0A09B;
+}
+
+.c21:disabled:-ms-input-placeholder {
+  color: #A0A09B;
+}
+
+.c21:disabled::placeholder {
+  color: #A0A09B;
+}
+
+.c4 {
+  position: relative;
+  padding: 0px 0;
+  border: solid;
+  border-color: #BCBCB6;
+  border-width: 1px;
+  position: relative;
+}
+
+.c4:focus {
+  border-width: 1px;
+}
+
+.c4:hover {
+  border-color: #4B4B46;
+}
+
+.c0 {
+  width: 200px;
+  display: inline-block;
+}
+
+<div
+  className="c0"
+>
+  <label
+    className="c1"
+    hidden={false}
+  >
+    <span
+      className="c2"
+    >
+      <div
+        className="c3"
+      >
+        Phone number 
+      </div>
+      <div
+        className="c3 c4"
+        focused={false}
+      >
+        <div
+          className="c5"
+        >
+          <select
+            aria-hidden="true"
+            className="c6"
+            disabled={false}
+            onChange={[Function]}
+            value="45"
+          >
+            
+            <option
+              label={
+                <CountryCodeLabel
+                  countryCode="dk"
+                  prefixCode="+45"
+                />
+              }
+              value="45"
+            />
+            <option
+              label={
+                <CountryCodeLabel
+                  countryCode="se"
+                  prefixCode="+46"
+                />
+              }
+              value="46"
+            />
+            <option
+              label={
+                <CountryCodeLabel
+                  countryCode="no"
+                  prefixCode="+47"
+                />
+              }
+              value="47"
+            />
+            <option
+              label={
+                <CountryCodeLabel
+                  countryCode="fi"
+                  prefixCode="+385"
+                />
+              }
+              value="385"
+            />
+            <option
+              label={
+                <ForwardRef
+                  alignItems="center"
+                  container={true}
+                  gutter={3}
+                >
+                  <ForwardRef
+                    item={true}
+                  >
+                    <Icon.Globe
+                      size={3}
+                    />
+                  </ForwardRef>
+                  <ForwardRef
+                    item={true}
+                  >
+                    <ForwardRef
+                      type="secondary"
+                    >
+                      +
+                    </ForwardRef>
+                  </ForwardRef>
+                </ForwardRef>
+              }
+              value=""
+            />
+          </select>
+          <div
+            className="c7"
+          >
+            <div
+              className="c3"
+            >
+              <div
+                className="c0"
+              >
+                <label
+                  className="c8"
+                  hidden={true}
+                  htmlFor="phone-input-country-code-selector"
+                >
+                  <span
+                    className="c2"
+                  >
+                    country code 
+                  </span>
+                </label>
+                <div
+                  className="c9"
+                  disabled={false}
+                  label="country code"
+                  onBlur={[Function]}
+                  onFocus={[Function]}
+                  tabIndex={0}
+                >
+                  <span
+                    className="c10"
+                  >
+                    <button
+                      aria-expanded="false"
+                      aria-haspopup="listbox"
+                      aria-label="country code: [object Object]"
+                      className="c11 c12"
+                      data-testid="input-select-button"
+                      disabled={false}
+                      form=""
+                      id="phone-input-country-code-selector"
+                      onClick={[Function]}
+                      tabIndex={0}
+                      type="button"
+                    >
+                      <div
+                        aria-hidden="true"
+                        className="c13 c14"
+                      >
+                        <div
+                          className="c15"
+                        >
+                          <div
+                            className="c16"
+                          >
+                            <svg
+                              className="c17"
+                              focusable="false"
+                              role="img"
+                              viewBox="0 0 640 480"
+                            >
+                              <path
+                                d="M0 0h640.1v480H0z"
+                                fill="#c60c30"
+                              />
+                              <path
+                                d="M205.714 0h68.57v480h-68.57z"
+                                fill="#fff"
+                              />
+                              <path
+                                d="M0 205.714h640.1v68.57H0z"
+                                fill="#fff"
+                              />
+                              <title>
+                                Denmark
+                              </title>
+                            </svg>
+                          </div>
+                        </div>
+                      </div>
+                    </button>
+                  </span>
+                  <svg
+                    aria-hidden="true"
+                    className="c18 c19"
+                    focusable="false"
+                    open={false}
+                    preserveAspectRatio="xMidYMid meet"
+                    role="presentation"
+                    viewBox="0 0 24 24"
+                  >
+                    <polygon
+                      points="19.969 4 24 8.027 12 20 0 8.027 4.031 4 12 11.952"
+                    />
+                  </svg>
+                </div>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          className="c3 c20"
+        >
+          <span
+            className="c10"
+          >
+            +
+            45
+          </span>
+        </div>
+        <div
+          className="c3"
+        >
+          <input
+            className="NormalizedInput__Input-sc-1m4kmh9-0 c21"
+            name="default-example"
+            onBlur={[Function]}
+            onChange={[Function]}
+            onFocus={[Function]}
+            placeholder="123 456 789"
+            type="text"
+            variant="normal"
+          />
+        </div>
+      </div>
+    </span>
+  </label>
+</div>
+`;
+
+exports[`Storyshots Molecules / Input / Phone Full width 1`] = `
 .c17 {
   padding-left: 8px;
   background-color: transparent;
@@ -557,18 +1071,6 @@ exports[`Storyshots Molecules / Input / Phone Default 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-}
-
-.c4 {
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: stretch;
-  -webkit-box-align: stretch;
-  -ms-flex-align: stretch;
-  align-items: stretch;
 }
 
 .c14 {
@@ -693,7 +1195,7 @@ exports[`Storyshots Molecules / Input / Phone Default 1`] = `
   pointer-events: none;
 }
 
-.c8 {
+.c7 {
   position: relative;
   display: block;
   width: auto;
@@ -749,15 +1251,15 @@ exports[`Storyshots Molecules / Input / Phone Default 1`] = `
   color: inherit;
 }
 
-.c7 {
+.c6 {
   display: none;
 }
 
-.c6 {
+.c5 {
   max-width: 50px;
 }
 
-.c6 * {
+.c5 * {
   border: none;
 }
 
@@ -779,7 +1281,6 @@ exports[`Storyshots Molecules / Input / Phone Default 1`] = `
   margin: 0;
   line-height: inherit;
   box-sizing: border-box;
-  height: 40px;
   background-color: #FFFFFF;
 }
 
@@ -823,7 +1324,7 @@ exports[`Storyshots Molecules / Input / Phone Default 1`] = `
   color: #A0A09B;
 }
 
-.c5 {
+.c4 {
   position: relative;
   padding: 0px 0;
   border: solid;
@@ -832,15 +1333,20 @@ exports[`Storyshots Molecules / Input / Phone Default 1`] = `
   position: relative;
 }
 
-.c5:focus {
+.c4:focus {
   border-width: 1px;
 }
 
-.c5:hover {
+.c4:hover {
   border-color: #4B4B46;
 }
 
 .c0 {
+  width: 100%;
+  display: inline-block;
+}
+
+.c8 {
   width: 200px;
   display: inline-block;
 }
@@ -861,15 +1367,15 @@ exports[`Storyshots Molecules / Input / Phone Default 1`] = `
         Phone number 
       </div>
       <div
-        className="c4 c5"
+        className="c3 c4"
         focused={false}
       >
         <div
-          className="c6"
+          className="c5"
         >
           <select
             aria-hidden="true"
-            className="c7"
+            className="c6"
             disabled={false}
             onChange={[Function]}
             value="45"
@@ -940,13 +1446,13 @@ exports[`Storyshots Molecules / Input / Phone Default 1`] = `
             />
           </select>
           <div
-            className="c8"
+            className="c7"
           >
             <div
               className="c3"
             >
               <div
-                className="c0"
+                className="c8"
               >
                 <label
                   className="c9"
@@ -1049,29 +1555,33 @@ exports[`Storyshots Molecules / Input / Phone Default 1`] = `
             45
           </span>
         </div>
-        <input
-          className="NormalizedInput__Input-sc-1m4kmh9-0 c22"
-          name="default-example"
-          onBlur={[Function]}
-          onChange={[Function]}
-          onFocus={[Function]}
-          placeholder="123 456 789"
-          type="text"
-          variant="normal"
-        />
+        <div
+          className="c3"
+        >
+          <input
+            className="NormalizedInput__Input-sc-1m4kmh9-0 c22"
+            name="full-width-example"
+            onBlur={[Function]}
+            onChange={[Function]}
+            onFocus={[Function]}
+            placeholder="123 456 789"
+            type="text"
+            variant="normal"
+          />
+        </div>
       </div>
     </span>
   </label>
 </div>
 `;
 
-exports[`Storyshots Molecules / Input / Phone Full width 1`] = `
-.c18 {
+exports[`Storyshots Molecules / Input / Phone Has an error 1`] = `
+.c16 {
   padding-left: 8px;
   background-color: transparent;
 }
 
-.c19 {
+.c17 {
   height: 12px;
   box-sizing: border-box;
   display: block;
@@ -1091,16 +1601,12 @@ exports[`Storyshots Molecules / Input / Phone Full width 1`] = `
   align-items: center;
 }
 
-.c4 {
+.c13 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-align-items: stretch;
-  -webkit-box-align: stretch;
-  -ms-flex-align: stretch;
-  align-items: stretch;
 }
 
 .c15 {
@@ -1109,14 +1615,6 @@ exports[`Storyshots Molecules / Input / Phone Full width 1`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-}
-
-.c17 {
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
   -ms-flex-pack: center;
@@ -1127,571 +1625,34 @@ exports[`Storyshots Molecules / Input / Phone Full width 1`] = `
   align-items: center;
 }
 
-.c1 {
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  cursor: pointer;
-}
-
-.c10 {
+.c23 {
   position: absolute;
   height: 1px;
   width: 1px;
   overflow: hidden;
   -webkit-clip: rect(1px,1px,1px,1px);
   clip: rect(1px,1px,1px,1px);
+}
+
+.c1 {
   text-overflow: ellipsis;
   white-space: nowrap;
   cursor: pointer;
-}
-
-.c20 {
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  width: 20px;
-  height: 20px;
-  fill: #282823;
-  -webkit-flex-shrink: 0;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
-  display: block;
-}
-
-.c13 {
-  font-family: inherit;
-  font-size: 100%;
-  line-height: 1.15;
-  margin: 0;
-  overflow: visible;
-  text-transform: none;
-}
-
-.c13,
-.c13[type='button'],
-.c13[type='reset'],
-.c13[type='submit'] {
-  -webkit-appearance: button;
-}
-
-.c13::-moz-focus-inner,
-.c13[type='button']::-moz-focus-inner,
-.c13[type='reset']::-moz-focus-inner,
-.c13[type='submit']::-moz-focus-inner {
-  border-style: none;
-  padding: 0;
-}
-
-.c13:-moz-focusring,
-.c13[type='button']:-moz-focusring,
-.c13[type='reset']:-moz-focusring,
-.c13[type='submit']:-moz-focusring {
-  outline: 1px dotted ButtonText;
-}
-
-.c2 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #6E6E69;
-  margin: 0;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
-}
-
-.c12 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #282823;
-  margin: 0;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
-}
-
-.c21 {
-  -webkit-transform: translateY(-50%) rotate(0);
-  -ms-transform: translateY(-50%) rotate(0);
-  transform: translateY(-50%) rotate(0);
-  -webkit-transform-origin: center center;
-  -ms-transform-origin: center center;
-  transform-origin: center center;
-  -webkit-transition: -webkit-transform 0.16s ease-out;
-  -webkit-transition: transform 0.16s ease-out;
-  transition: transform 0.16s ease-out;
-  position: absolute;
-  height: 8px;
-  top: 50%;
-  right: 4px;
-  pointer-events: none;
 }
 
 .c8 {
-  position: relative;
-  display: block;
-  width: auto;
-}
-
-.c11 {
-  height: 40px;
-  border: 1px solid #BCBCB6;
-  position: relative;
-  background: #FFFFFF;
-  box-sizing: border-box;
-  position: relative;
-}
-
-.c11:hover {
-  border-color: #4B4B46;
-}
-
-.c11:focus-within {
-  border-color: #0046FF;
-}
-
-.c11.focus-within {
-  border-color: #0046FF;
-}
-
-.c16 {
-  height: 100%;
-  width: 100%;
-}
-
-.c14 {
-  background: transparent;
-  width: 100%;
-  height: 100%;
-  cursor: pointer;
-  padding: 0;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  border: 0;
   position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  outline: 0;
-  text-align: initial;
-}
-
-.c14:active {
-  color: inherit;
-}
-
-.c7 {
-  display: none;
-}
-
-.c6 {
-  max-width: 50px;
-}
-
-.c6 * {
-  border: none;
-}
-
-.c22 {
-  cursor: auto;
-  background-color: #FFFFFF;
-}
-
-.c23 {
-  font-family: inherit;
-  font-size: 100%;
-  line-height: 1.15;
-  margin: 0;
-  overflow: visible;
-  border: 0;
-  outline: none;
-  width: 100%;
-  padding: 8px;
-  margin: 0;
-  line-height: inherit;
-  box-sizing: border-box;
-  height: 40px;
-  background-color: #FFFFFF;
-}
-
-.c23::-webkit-input-placeholder {
-  color: #6E6E69;
-  line-height: inherit;
-  opacity: 1;
-}
-
-.c23::-moz-placeholder {
-  color: #6E6E69;
-  line-height: inherit;
-  opacity: 1;
-}
-
-.c23:-ms-input-placeholder {
-  color: #6E6E69;
-  line-height: inherit;
-  opacity: 1;
-}
-
-.c23::placeholder {
-  color: #6E6E69;
-  line-height: inherit;
-  opacity: 1;
-}
-
-.c23:disabled::-webkit-input-placeholder {
-  color: #A0A09B;
-}
-
-.c23:disabled::-moz-placeholder {
-  color: #A0A09B;
-}
-
-.c23:disabled:-ms-input-placeholder {
-  color: #A0A09B;
-}
-
-.c23:disabled::placeholder {
-  color: #A0A09B;
-}
-
-.c5 {
-  position: relative;
-  padding: 0px 0;
-  border: solid;
-  border-color: #BCBCB6;
-  border-width: 1px;
-  position: relative;
-}
-
-.c5:focus {
-  border-width: 1px;
-}
-
-.c5:hover {
-  border-color: #4B4B46;
-}
-
-.c0 {
-  width: 100%;
-  display: inline-block;
-}
-
-.c9 {
-  width: 200px;
-  display: inline-block;
-}
-
-<div
-  className="c0"
->
-  <label
-    className="c1"
-    hidden={false}
-  >
-    <span
-      className="c2"
-    >
-      <div
-        className="c3"
-      >
-        Phone number 
-      </div>
-      <div
-        className="c4 c5"
-        focused={false}
-      >
-        <div
-          className="c6"
-        >
-          <select
-            aria-hidden="true"
-            className="c7"
-            disabled={false}
-            onChange={[Function]}
-            value="45"
-          >
-            
-            <option
-              label={
-                <CountryCodeLabel
-                  countryCode="dk"
-                  prefixCode="+45"
-                />
-              }
-              value="45"
-            />
-            <option
-              label={
-                <CountryCodeLabel
-                  countryCode="se"
-                  prefixCode="+46"
-                />
-              }
-              value="46"
-            />
-            <option
-              label={
-                <CountryCodeLabel
-                  countryCode="no"
-                  prefixCode="+47"
-                />
-              }
-              value="47"
-            />
-            <option
-              label={
-                <CountryCodeLabel
-                  countryCode="fi"
-                  prefixCode="+385"
-                />
-              }
-              value="385"
-            />
-            <option
-              label={
-                <ForwardRef
-                  alignItems="center"
-                  container={true}
-                  gutter={3}
-                >
-                  <ForwardRef
-                    item={true}
-                  >
-                    <Icon.Globe
-                      size={3}
-                    />
-                  </ForwardRef>
-                  <ForwardRef
-                    item={true}
-                  >
-                    <ForwardRef
-                      type="secondary"
-                    >
-                      +
-                    </ForwardRef>
-                  </ForwardRef>
-                </ForwardRef>
-              }
-              value=""
-            />
-          </select>
-          <div
-            className="c8"
-          >
-            <div
-              className="c3"
-            >
-              <div
-                className="c9"
-              >
-                <label
-                  className="c10"
-                  hidden={true}
-                  htmlFor="phone-input-country-code-selector"
-                >
-                  <span
-                    className="c2"
-                  >
-                    country code 
-                  </span>
-                </label>
-                <div
-                  className="c11"
-                  disabled={false}
-                  label="country code"
-                  onBlur={[Function]}
-                  onFocus={[Function]}
-                  tabIndex={0}
-                >
-                  <span
-                    className="c12"
-                  >
-                    <button
-                      aria-expanded="false"
-                      aria-haspopup="listbox"
-                      aria-label="country code: [object Object]"
-                      className="c13 c14"
-                      data-testid="input-select-button"
-                      disabled={false}
-                      form=""
-                      id="phone-input-country-code-selector"
-                      onClick={[Function]}
-                      tabIndex={0}
-                      type="button"
-                    >
-                      <div
-                        aria-hidden="true"
-                        className="c15 c16"
-                      >
-                        <div
-                          className="c17"
-                        >
-                          <div
-                            className="c18"
-                          >
-                            <svg
-                              className="c19"
-                              focusable="false"
-                              role="img"
-                              viewBox="0 0 640 480"
-                            >
-                              <path
-                                d="M0 0h640.1v480H0z"
-                                fill="#c60c30"
-                              />
-                              <path
-                                d="M205.714 0h68.57v480h-68.57z"
-                                fill="#fff"
-                              />
-                              <path
-                                d="M0 205.714h640.1v68.57H0z"
-                                fill="#fff"
-                              />
-                              <title>
-                                Denmark
-                              </title>
-                            </svg>
-                          </div>
-                        </div>
-                      </div>
-                    </button>
-                  </span>
-                  <svg
-                    aria-hidden="true"
-                    className="c20 c21"
-                    focusable="false"
-                    open={false}
-                    preserveAspectRatio="xMidYMid meet"
-                    role="presentation"
-                    viewBox="0 0 24 24"
-                  >
-                    <polygon
-                      points="19.969 4 24 8.027 12 20 0 8.027 4.031 4 12 11.952"
-                    />
-                  </svg>
-                </div>
-                
-              </div>
-            </div>
-          </div>
-        </div>
-        <div
-          className="c3 c22"
-        >
-          <span
-            className="c12"
-          >
-            +
-            45
-          </span>
-        </div>
-        <input
-          className="NormalizedInput__Input-sc-1m4kmh9-0 c23"
-          name="full-width-example"
-          onBlur={[Function]}
-          onChange={[Function]}
-          onFocus={[Function]}
-          placeholder="123 456 789"
-          type="text"
-          variant="normal"
-        />
-      </div>
-    </span>
-  </label>
-</div>
-`;
-
-exports[`Storyshots Molecules / Input / Phone Has an error 1`] = `
-.c17 {
-  padding-left: 8px;
-  background-color: transparent;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  -webkit-clip: rect(1px,1px,1px,1px);
+  clip: rect(1px,1px,1px,1px);
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  cursor: pointer;
 }
 
 .c18 {
-  height: 12px;
-  box-sizing: border-box;
-  display: block;
-  width: 16px;
-  overflow: hidden;
-}
-
-.c3 {
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.c4 {
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: stretch;
-  -webkit-box-align: stretch;
-  -ms-flex-align: stretch;
-  align-items: stretch;
-}
-
-.c14 {
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.c16 {
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.c24 {
-  position: absolute;
-  height: 1px;
-  width: 1px;
-  overflow: hidden;
-  -webkit-clip: rect(1px,1px,1px,1px);
-  clip: rect(1px,1px,1px,1px);
-}
-
-.c1 {
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  cursor: pointer;
-}
-
-.c9 {
-  position: absolute;
-  height: 1px;
-  width: 1px;
-  overflow: hidden;
-  -webkit-clip: rect(1px,1px,1px,1px);
-  clip: rect(1px,1px,1px,1px);
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  cursor: pointer;
-}
-
-.c19 {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -1705,7 +1666,7 @@ exports[`Storyshots Molecules / Input / Phone Has an error 1`] = `
   display: block;
 }
 
-.c12 {
+.c11 {
   font-family: inherit;
   font-size: 100%;
   line-height: 1.15;
@@ -1714,25 +1675,25 @@ exports[`Storyshots Molecules / Input / Phone Has an error 1`] = `
   text-transform: none;
 }
 
-.c12,
-.c12[type='button'],
-.c12[type='reset'],
-.c12[type='submit'] {
+.c11,
+.c11[type='button'],
+.c11[type='reset'],
+.c11[type='submit'] {
   -webkit-appearance: button;
 }
 
-.c12::-moz-focus-inner,
-.c12[type='button']::-moz-focus-inner,
-.c12[type='reset']::-moz-focus-inner,
-.c12[type='submit']::-moz-focus-inner {
+.c11::-moz-focus-inner,
+.c11[type='button']::-moz-focus-inner,
+.c11[type='reset']::-moz-focus-inner,
+.c11[type='submit']::-moz-focus-inner {
   border-style: none;
   padding: 0;
 }
 
-.c12:-moz-focusring,
-.c12[type='button']:-moz-focusring,
-.c12[type='reset']:-moz-focusring,
-.c12[type='submit']:-moz-focusring {
+.c11:-moz-focusring,
+.c11[type='button']:-moz-focusring,
+.c11[type='reset']:-moz-focusring,
+.c11[type='submit']:-moz-focusring {
   outline: 1px dotted ButtonText;
 }
 
@@ -1745,7 +1706,7 @@ exports[`Storyshots Molecules / Input / Phone Has an error 1`] = `
   line-height: 1.4285714285714286;
 }
 
-.c11 {
+.c10 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
   margin: 0;
@@ -1754,7 +1715,7 @@ exports[`Storyshots Molecules / Input / Phone Has an error 1`] = `
   line-height: 1.4285714285714286;
 }
 
-.c23 {
+.c22 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #FF1900;
   margin: 0;
@@ -1763,7 +1724,7 @@ exports[`Storyshots Molecules / Input / Phone Has an error 1`] = `
   line-height: 1.3333333333333333;
 }
 
-.c20 {
+.c19 {
   -webkit-transform: translateY(-50%) rotate(0);
   -ms-transform: translateY(-50%) rotate(0);
   transform: translateY(-50%) rotate(0);
@@ -1780,13 +1741,13 @@ exports[`Storyshots Molecules / Input / Phone Has an error 1`] = `
   pointer-events: none;
 }
 
-.c8 {
+.c7 {
   position: relative;
   display: block;
   width: auto;
 }
 
-.c10 {
+.c9 {
   height: 40px;
   border: 1px solid #BCBCB6;
   position: relative;
@@ -1795,24 +1756,24 @@ exports[`Storyshots Molecules / Input / Phone Has an error 1`] = `
   position: relative;
 }
 
-.c10:hover {
+.c9:hover {
   border-color: #4B4B46;
 }
 
-.c10:focus-within {
+.c9:focus-within {
   border-color: #0046FF;
 }
 
-.c10.focus-within {
+.c9.focus-within {
   border-color: #0046FF;
 }
 
-.c15 {
+.c14 {
   height: 100%;
   width: 100%;
 }
 
-.c13 {
+.c12 {
   background: transparent;
   width: 100%;
   height: 100%;
@@ -1832,28 +1793,28 @@ exports[`Storyshots Molecules / Input / Phone Has an error 1`] = `
   text-align: initial;
 }
 
-.c13:active {
+.c12:active {
   color: inherit;
 }
 
-.c7 {
+.c6 {
   display: none;
 }
 
-.c6 {
+.c5 {
   max-width: 50px;
 }
 
-.c6 * {
+.c5 * {
   border: none;
 }
 
-.c21 {
+.c20 {
   cursor: auto;
   background-color: #FFFFFF;
 }
 
-.c22 {
+.c21 {
   font-family: inherit;
   font-size: 100%;
   line-height: 1.15;
@@ -1866,51 +1827,50 @@ exports[`Storyshots Molecules / Input / Phone Has an error 1`] = `
   margin: 0;
   line-height: inherit;
   box-sizing: border-box;
-  height: 40px;
   background-color: #FFFFFF;
 }
 
-.c22::-webkit-input-placeholder {
+.c21::-webkit-input-placeholder {
   color: #6E6E69;
   line-height: inherit;
   opacity: 1;
 }
 
-.c22::-moz-placeholder {
+.c21::-moz-placeholder {
   color: #6E6E69;
   line-height: inherit;
   opacity: 1;
 }
 
-.c22:-ms-input-placeholder {
+.c21:-ms-input-placeholder {
   color: #6E6E69;
   line-height: inherit;
   opacity: 1;
 }
 
-.c22::placeholder {
+.c21::placeholder {
   color: #6E6E69;
   line-height: inherit;
   opacity: 1;
 }
 
-.c22:disabled::-webkit-input-placeholder {
+.c21:disabled::-webkit-input-placeholder {
   color: #A0A09B;
 }
 
-.c22:disabled::-moz-placeholder {
+.c21:disabled::-moz-placeholder {
   color: #A0A09B;
 }
 
-.c22:disabled:-ms-input-placeholder {
+.c21:disabled:-ms-input-placeholder {
   color: #A0A09B;
 }
 
-.c22:disabled::placeholder {
+.c21:disabled::placeholder {
   color: #A0A09B;
 }
 
-.c5 {
+.c4 {
   position: relative;
   padding: 0px 0;
   border: solid;
@@ -1919,11 +1879,11 @@ exports[`Storyshots Molecules / Input / Phone Has an error 1`] = `
   position: relative;
 }
 
-.c5:focus {
+.c4:focus {
   border-width: 1px;
 }
 
-.c5:hover {
+.c4:hover {
   border-color: #4B4B46;
 }
 
@@ -1948,16 +1908,16 @@ exports[`Storyshots Molecules / Input / Phone Has an error 1`] = `
         Phone number 
       </div>
       <div
-        className="c4 c5"
+        className="c3 c4"
         error="Incorrect phone number"
         focused={false}
       >
         <div
-          className="c6"
+          className="c5"
         >
           <select
             aria-hidden="true"
-            className="c7"
+            className="c6"
             disabled={false}
             onChange={[Function]}
             value="45"
@@ -2028,7 +1988,7 @@ exports[`Storyshots Molecules / Input / Phone Has an error 1`] = `
             />
           </select>
           <div
-            className="c8"
+            className="c7"
           >
             <div
               className="c3"
@@ -2037,7 +1997,7 @@ exports[`Storyshots Molecules / Input / Phone Has an error 1`] = `
                 className="c0"
               >
                 <label
-                  className="c9"
+                  className="c8"
                   hidden={true}
                   htmlFor="phone-input-country-code-selector"
                 >
@@ -2048,7 +2008,7 @@ exports[`Storyshots Molecules / Input / Phone Has an error 1`] = `
                   </span>
                 </label>
                 <div
-                  className="c10"
+                  className="c9"
                   disabled={false}
                   label="country code"
                   onBlur={[Function]}
@@ -2056,13 +2016,13 @@ exports[`Storyshots Molecules / Input / Phone Has an error 1`] = `
                   tabIndex={0}
                 >
                   <span
-                    className="c11"
+                    className="c10"
                   >
                     <button
                       aria-expanded="false"
                       aria-haspopup="listbox"
                       aria-label="country code: [object Object]"
-                      className="c12 c13"
+                      className="c11 c12"
                       data-testid="input-select-button"
                       disabled={false}
                       form=""
@@ -2073,16 +2033,16 @@ exports[`Storyshots Molecules / Input / Phone Has an error 1`] = `
                     >
                       <div
                         aria-hidden="true"
-                        className="c14 c15"
+                        className="c13 c14"
                       >
                         <div
-                          className="c16"
+                          className="c15"
                         >
                           <div
-                            className="c17"
+                            className="c16"
                           >
                             <svg
-                              className="c18"
+                              className="c17"
                               focusable="false"
                               role="img"
                               viewBox="0 0 640 480"
@@ -2110,7 +2070,7 @@ exports[`Storyshots Molecules / Input / Phone Has an error 1`] = `
                   </span>
                   <svg
                     aria-hidden="true"
-                    className="c19 c20"
+                    className="c18 c19"
                     focusable="false"
                     open={false}
                     preserveAspectRatio="xMidYMid meet"
@@ -2128,35 +2088,39 @@ exports[`Storyshots Molecules / Input / Phone Has an error 1`] = `
           </div>
         </div>
         <div
-          className="c3 c21"
+          className="c3 c20"
         >
           <span
-            className="c11"
+            className="c10"
           >
             +
             45
           </span>
         </div>
-        <input
-          aria-invalid={true}
-          className="NormalizedInput__Input-sc-1m4kmh9-0 c22"
-          name="has-error-example"
-          onBlur={[Function]}
-          onChange={[Function]}
-          onFocus={[Function]}
-          placeholder="123 456 789"
-          type="text"
-          variant="normal"
-        />
+        <div
+          className="c3"
+        >
+          <input
+            aria-invalid={true}
+            className="NormalizedInput__Input-sc-1m4kmh9-0 c21"
+            name="has-error-example"
+            onBlur={[Function]}
+            onChange={[Function]}
+            onFocus={[Function]}
+            placeholder="123 456 789"
+            type="text"
+            variant="normal"
+          />
+        </div>
       </div>
     </span>
   </label>
   <div>
     <span
-      className="c23"
+      className="c22"
     >
       <div
-        className="c24"
+        className="c23"
       >
         Error: 
       </div>
@@ -2167,12 +2131,12 @@ exports[`Storyshots Molecules / Input / Phone Has an error 1`] = `
 `;
 
 exports[`Storyshots Molecules / Input / Phone Has success 1`] = `
-.c17 {
+.c16 {
   padding-left: 8px;
   background-color: transparent;
 }
 
-.c18 {
+.c17 {
   height: 12px;
   box-sizing: border-box;
   display: block;
@@ -2192,19 +2156,7 @@ exports[`Storyshots Molecules / Input / Phone Has success 1`] = `
   align-items: center;
 }
 
-.c4 {
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: stretch;
-  -webkit-box-align: stretch;
-  -ms-flex-align: stretch;
-  align-items: stretch;
-}
-
-.c14 {
+.c13 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -2212,7 +2164,7 @@ exports[`Storyshots Molecules / Input / Phone Has success 1`] = `
   display: flex;
 }
 
-.c16 {
+.c15 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -2234,7 +2186,7 @@ exports[`Storyshots Molecules / Input / Phone Has success 1`] = `
   cursor: pointer;
 }
 
-.c9 {
+.c8 {
   position: absolute;
   height: 1px;
   width: 1px;
@@ -2246,7 +2198,7 @@ exports[`Storyshots Molecules / Input / Phone Has success 1`] = `
   cursor: pointer;
 }
 
-.c19 {
+.c18 {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -2260,7 +2212,7 @@ exports[`Storyshots Molecules / Input / Phone Has success 1`] = `
   display: block;
 }
 
-.c12 {
+.c11 {
   font-family: inherit;
   font-size: 100%;
   line-height: 1.15;
@@ -2269,25 +2221,25 @@ exports[`Storyshots Molecules / Input / Phone Has success 1`] = `
   text-transform: none;
 }
 
-.c12,
-.c12[type='button'],
-.c12[type='reset'],
-.c12[type='submit'] {
+.c11,
+.c11[type='button'],
+.c11[type='reset'],
+.c11[type='submit'] {
   -webkit-appearance: button;
 }
 
-.c12::-moz-focus-inner,
-.c12[type='button']::-moz-focus-inner,
-.c12[type='reset']::-moz-focus-inner,
-.c12[type='submit']::-moz-focus-inner {
+.c11::-moz-focus-inner,
+.c11[type='button']::-moz-focus-inner,
+.c11[type='reset']::-moz-focus-inner,
+.c11[type='submit']::-moz-focus-inner {
   border-style: none;
   padding: 0;
 }
 
-.c12:-moz-focusring,
-.c12[type='button']:-moz-focusring,
-.c12[type='reset']:-moz-focusring,
-.c12[type='submit']:-moz-focusring {
+.c11:-moz-focusring,
+.c11[type='button']:-moz-focusring,
+.c11[type='reset']:-moz-focusring,
+.c11[type='submit']:-moz-focusring {
   outline: 1px dotted ButtonText;
 }
 
@@ -2300,7 +2252,7 @@ exports[`Storyshots Molecules / Input / Phone Has success 1`] = `
   line-height: 1.4285714285714286;
 }
 
-.c11 {
+.c10 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
   margin: 0;
@@ -2309,7 +2261,7 @@ exports[`Storyshots Molecules / Input / Phone Has success 1`] = `
   line-height: 1.4285714285714286;
 }
 
-.c20 {
+.c19 {
   -webkit-transform: translateY(-50%) rotate(0);
   -ms-transform: translateY(-50%) rotate(0);
   transform: translateY(-50%) rotate(0);
@@ -2326,13 +2278,13 @@ exports[`Storyshots Molecules / Input / Phone Has success 1`] = `
   pointer-events: none;
 }
 
-.c8 {
+.c7 {
   position: relative;
   display: block;
   width: auto;
 }
 
-.c10 {
+.c9 {
   height: 40px;
   border: 1px solid #BCBCB6;
   position: relative;
@@ -2341,24 +2293,24 @@ exports[`Storyshots Molecules / Input / Phone Has success 1`] = `
   position: relative;
 }
 
-.c10:hover {
+.c9:hover {
   border-color: #4B4B46;
 }
 
-.c10:focus-within {
+.c9:focus-within {
   border-color: #0046FF;
 }
 
-.c10.focus-within {
+.c9.focus-within {
   border-color: #0046FF;
 }
 
-.c15 {
+.c14 {
   height: 100%;
   width: 100%;
 }
 
-.c13 {
+.c12 {
   background: transparent;
   width: 100%;
   height: 100%;
@@ -2378,28 +2330,28 @@ exports[`Storyshots Molecules / Input / Phone Has success 1`] = `
   text-align: initial;
 }
 
-.c13:active {
+.c12:active {
   color: inherit;
 }
 
-.c7 {
+.c6 {
   display: none;
 }
 
-.c6 {
+.c5 {
   max-width: 50px;
 }
 
-.c6 * {
+.c5 * {
   border: none;
 }
 
-.c21 {
+.c20 {
   cursor: auto;
   background-color: #FFFFFF;
 }
 
-.c22 {
+.c21 {
   font-family: inherit;
   font-size: 100%;
   line-height: 1.15;
@@ -2412,51 +2364,50 @@ exports[`Storyshots Molecules / Input / Phone Has success 1`] = `
   margin: 0;
   line-height: inherit;
   box-sizing: border-box;
-  height: 40px;
   background-color: #FFFFFF;
 }
 
-.c22::-webkit-input-placeholder {
+.c21::-webkit-input-placeholder {
   color: #6E6E69;
   line-height: inherit;
   opacity: 1;
 }
 
-.c22::-moz-placeholder {
+.c21::-moz-placeholder {
   color: #6E6E69;
   line-height: inherit;
   opacity: 1;
 }
 
-.c22:-ms-input-placeholder {
+.c21:-ms-input-placeholder {
   color: #6E6E69;
   line-height: inherit;
   opacity: 1;
 }
 
-.c22::placeholder {
+.c21::placeholder {
   color: #6E6E69;
   line-height: inherit;
   opacity: 1;
 }
 
-.c22:disabled::-webkit-input-placeholder {
+.c21:disabled::-webkit-input-placeholder {
   color: #A0A09B;
 }
 
-.c22:disabled::-moz-placeholder {
+.c21:disabled::-moz-placeholder {
   color: #A0A09B;
 }
 
-.c22:disabled:-ms-input-placeholder {
+.c21:disabled:-ms-input-placeholder {
   color: #A0A09B;
 }
 
-.c22:disabled::placeholder {
+.c21:disabled::placeholder {
   color: #A0A09B;
 }
 
-.c5 {
+.c4 {
   position: relative;
   padding: 0px 0;
   border: solid;
@@ -2465,11 +2416,11 @@ exports[`Storyshots Molecules / Input / Phone Has success 1`] = `
   position: relative;
 }
 
-.c5:focus {
+.c4:focus {
   border-width: 1px;
 }
 
-.c5:hover {
+.c4:hover {
   border-color: #4B4B46;
 }
 
@@ -2494,16 +2445,16 @@ exports[`Storyshots Molecules / Input / Phone Has success 1`] = `
         Phone number 
       </div>
       <div
-        className="c4 c5"
+        className="c3 c4"
         focused={false}
         success={true}
       >
         <div
-          className="c6"
+          className="c5"
         >
           <select
             aria-hidden="true"
-            className="c7"
+            className="c6"
             disabled={false}
             onChange={[Function]}
             value="45"
@@ -2574,7 +2525,7 @@ exports[`Storyshots Molecules / Input / Phone Has success 1`] = `
             />
           </select>
           <div
-            className="c8"
+            className="c7"
           >
             <div
               className="c3"
@@ -2583,7 +2534,7 @@ exports[`Storyshots Molecules / Input / Phone Has success 1`] = `
                 className="c0"
               >
                 <label
-                  className="c9"
+                  className="c8"
                   hidden={true}
                   htmlFor="phone-input-country-code-selector"
                 >
@@ -2594,7 +2545,7 @@ exports[`Storyshots Molecules / Input / Phone Has success 1`] = `
                   </span>
                 </label>
                 <div
-                  className="c10"
+                  className="c9"
                   disabled={false}
                   label="country code"
                   onBlur={[Function]}
@@ -2602,13 +2553,13 @@ exports[`Storyshots Molecules / Input / Phone Has success 1`] = `
                   tabIndex={0}
                 >
                   <span
-                    className="c11"
+                    className="c10"
                   >
                     <button
                       aria-expanded="false"
                       aria-haspopup="listbox"
                       aria-label="country code: [object Object]"
-                      className="c12 c13"
+                      className="c11 c12"
                       data-testid="input-select-button"
                       disabled={false}
                       form=""
@@ -2619,16 +2570,16 @@ exports[`Storyshots Molecules / Input / Phone Has success 1`] = `
                     >
                       <div
                         aria-hidden="true"
-                        className="c14 c15"
+                        className="c13 c14"
                       >
                         <div
-                          className="c16"
+                          className="c15"
                         >
                           <div
-                            className="c17"
+                            className="c16"
                           >
                             <svg
-                              className="c18"
+                              className="c17"
                               focusable="false"
                               role="img"
                               viewBox="0 0 640 480"
@@ -2656,7 +2607,7 @@ exports[`Storyshots Molecules / Input / Phone Has success 1`] = `
                   </span>
                   <svg
                     aria-hidden="true"
-                    className="c19 c20"
+                    className="c18 c19"
                     focusable="false"
                     open={false}
                     preserveAspectRatio="xMidYMid meet"
@@ -2674,25 +2625,29 @@ exports[`Storyshots Molecules / Input / Phone Has success 1`] = `
           </div>
         </div>
         <div
-          className="c3 c21"
+          className="c3 c20"
         >
           <span
-            className="c11"
+            className="c10"
           >
             +
             45
           </span>
         </div>
-        <input
-          className="NormalizedInput__Input-sc-1m4kmh9-0 c22"
-          name="has-success-example"
-          onBlur={[Function]}
-          onChange={[Function]}
-          onFocus={[Function]}
-          placeholder="123 456 789"
-          type="text"
-          variant="normal"
-        />
+        <div
+          className="c3"
+        >
+          <input
+            className="NormalizedInput__Input-sc-1m4kmh9-0 c21"
+            name="has-success-example"
+            onBlur={[Function]}
+            onChange={[Function]}
+            onFocus={[Function]}
+            placeholder="123 456 789"
+            type="text"
+            variant="normal"
+          />
+        </div>
       </div>
     </span>
   </label>
@@ -2700,12 +2655,12 @@ exports[`Storyshots Molecules / Input / Phone Has success 1`] = `
 `;
 
 exports[`Storyshots Molecules / Input / Phone Is disabled 1`] = `
-.c18 {
+.c17 {
   padding-left: 8px;
   background-color: transparent;
 }
 
-.c19 {
+.c18 {
   height: 12px;
   box-sizing: border-box;
   display: block;
@@ -2725,19 +2680,7 @@ exports[`Storyshots Molecules / Input / Phone Is disabled 1`] = `
   align-items: center;
 }
 
-.c4 {
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: stretch;
-  -webkit-box-align: stretch;
-  -ms-flex-align: stretch;
-  align-items: stretch;
-}
-
-.c15 {
+.c14 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -2745,7 +2688,7 @@ exports[`Storyshots Molecules / Input / Phone Is disabled 1`] = `
   display: flex;
 }
 
-.c17 {
+.c16 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -2767,7 +2710,7 @@ exports[`Storyshots Molecules / Input / Phone Is disabled 1`] = `
   cursor: not-allowed;
 }
 
-.c9 {
+.c8 {
   position: absolute;
   height: 1px;
   width: 1px;
@@ -2779,7 +2722,7 @@ exports[`Storyshots Molecules / Input / Phone Is disabled 1`] = `
   cursor: pointer;
 }
 
-.c20 {
+.c19 {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -2793,7 +2736,7 @@ exports[`Storyshots Molecules / Input / Phone Is disabled 1`] = `
   display: block;
 }
 
-.c13 {
+.c12 {
   font-family: inherit;
   font-size: 100%;
   line-height: 1.15;
@@ -2802,25 +2745,25 @@ exports[`Storyshots Molecules / Input / Phone Is disabled 1`] = `
   text-transform: none;
 }
 
-.c13,
-.c13[type='button'],
-.c13[type='reset'],
-.c13[type='submit'] {
+.c12,
+.c12[type='button'],
+.c12[type='reset'],
+.c12[type='submit'] {
   -webkit-appearance: button;
 }
 
-.c13::-moz-focus-inner,
-.c13[type='button']::-moz-focus-inner,
-.c13[type='reset']::-moz-focus-inner,
-.c13[type='submit']::-moz-focus-inner {
+.c12::-moz-focus-inner,
+.c12[type='button']::-moz-focus-inner,
+.c12[type='reset']::-moz-focus-inner,
+.c12[type='submit']::-moz-focus-inner {
   border-style: none;
   padding: 0;
 }
 
-.c13:-moz-focusring,
-.c13[type='button']:-moz-focusring,
-.c13[type='reset']:-moz-focusring,
-.c13[type='submit']:-moz-focusring {
+.c12:-moz-focusring,
+.c12[type='button']:-moz-focusring,
+.c12[type='reset']:-moz-focusring,
+.c12[type='submit']:-moz-focusring {
   outline: 1px dotted ButtonText;
 }
 
@@ -2833,7 +2776,7 @@ exports[`Storyshots Molecules / Input / Phone Is disabled 1`] = `
   line-height: 1.4285714285714286;
 }
 
-.c10 {
+.c9 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #6E6E69;
   margin: 0;
@@ -2842,7 +2785,7 @@ exports[`Storyshots Molecules / Input / Phone Is disabled 1`] = `
   line-height: 1.4285714285714286;
 }
 
-.c12 {
+.c11 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
   margin: 0;
@@ -2851,7 +2794,7 @@ exports[`Storyshots Molecules / Input / Phone Is disabled 1`] = `
   line-height: 1.4285714285714286;
 }
 
-.c21 {
+.c20 {
   -webkit-transform: translateY(-50%) rotate(0);
   -ms-transform: translateY(-50%) rotate(0);
   transform: translateY(-50%) rotate(0);
@@ -2868,13 +2811,13 @@ exports[`Storyshots Molecules / Input / Phone Is disabled 1`] = `
   pointer-events: none;
 }
 
-.c8 {
+.c7 {
   position: relative;
   display: block;
   width: auto;
 }
 
-.c11 {
+.c10 {
   height: 40px;
   border: 1px solid #BCBCB6;
   position: relative;
@@ -2883,20 +2826,20 @@ exports[`Storyshots Molecules / Input / Phone Is disabled 1`] = `
   position: relative;
 }
 
-.c11:focus-within {
+.c10:focus-within {
   border-color: #0046FF;
 }
 
-.c11.focus-within {
+.c10.focus-within {
   border-color: #0046FF;
 }
 
-.c16 {
+.c15 {
   height: 100%;
   width: 100%;
 }
 
-.c14 {
+.c13 {
   background: #EBEBE8;
   width: 100%;
   height: 100%;
@@ -2916,28 +2859,28 @@ exports[`Storyshots Molecules / Input / Phone Is disabled 1`] = `
   text-align: initial;
 }
 
-.c14:active {
+.c13:active {
   color: inherit;
 }
 
-.c7 {
+.c6 {
   display: none;
 }
 
-.c6 {
+.c5 {
   max-width: 50px;
 }
 
-.c6 * {
+.c5 * {
   border: none;
 }
 
-.c22 {
+.c21 {
   cursor: not-allowed;
   background-color: #EBEBE8;
 }
 
-.c23 {
+.c22 {
   font-family: inherit;
   font-size: 100%;
   line-height: 1.15;
@@ -2950,52 +2893,51 @@ exports[`Storyshots Molecules / Input / Phone Is disabled 1`] = `
   margin: 0;
   line-height: inherit;
   box-sizing: border-box;
-  height: 40px;
   background-color: #EBEBE8;
   cursor: not-allowed;
 }
 
-.c23::-webkit-input-placeholder {
+.c22::-webkit-input-placeholder {
   color: #6E6E69;
   line-height: inherit;
   opacity: 1;
 }
 
-.c23::-moz-placeholder {
+.c22::-moz-placeholder {
   color: #6E6E69;
   line-height: inherit;
   opacity: 1;
 }
 
-.c23:-ms-input-placeholder {
+.c22:-ms-input-placeholder {
   color: #6E6E69;
   line-height: inherit;
   opacity: 1;
 }
 
-.c23::placeholder {
+.c22::placeholder {
   color: #6E6E69;
   line-height: inherit;
   opacity: 1;
 }
 
-.c23:disabled::-webkit-input-placeholder {
+.c22:disabled::-webkit-input-placeholder {
   color: #A0A09B;
 }
 
-.c23:disabled::-moz-placeholder {
+.c22:disabled::-moz-placeholder {
   color: #A0A09B;
 }
 
-.c23:disabled:-ms-input-placeholder {
+.c22:disabled:-ms-input-placeholder {
   color: #A0A09B;
 }
 
-.c23:disabled::placeholder {
+.c22:disabled::placeholder {
   color: #A0A09B;
 }
 
-.c5 {
+.c4 {
   position: relative;
   padding: 0px 0;
   border: solid;
@@ -3004,7 +2946,7 @@ exports[`Storyshots Molecules / Input / Phone Is disabled 1`] = `
   position: relative;
 }
 
-.c5:focus {
+.c4:focus {
   border-width: 1px;
 }
 
@@ -3029,16 +2971,16 @@ exports[`Storyshots Molecules / Input / Phone Is disabled 1`] = `
         Phone number 
       </div>
       <div
-        className="c4 c5"
+        className="c3 c4"
         disabled={true}
         focused={false}
       >
         <div
-          className="c6"
+          className="c5"
         >
           <select
             aria-hidden="true"
-            className="c7"
+            className="c6"
             disabled={true}
             onChange={[Function]}
             value="46"
@@ -3109,7 +3051,7 @@ exports[`Storyshots Molecules / Input / Phone Is disabled 1`] = `
             />
           </select>
           <div
-            className="c8"
+            className="c7"
           >
             <div
               className="c3"
@@ -3118,18 +3060,18 @@ exports[`Storyshots Molecules / Input / Phone Is disabled 1`] = `
                 className="c0"
               >
                 <label
-                  className="c9"
+                  className="c8"
                   hidden={true}
                   htmlFor="phone-input-country-code-selector"
                 >
                   <span
-                    className="c10"
+                    className="c9"
                   >
                     country code 
                   </span>
                 </label>
                 <div
-                  className="c11"
+                  className="c10"
                   disabled={true}
                   label="country code"
                   onBlur={[Function]}
@@ -3137,13 +3079,13 @@ exports[`Storyshots Molecules / Input / Phone Is disabled 1`] = `
                   tabIndex={0}
                 >
                   <span
-                    className="c12"
+                    className="c11"
                   >
                     <button
                       aria-expanded="false"
                       aria-haspopup="listbox"
                       aria-label="country code: [object Object]"
-                      className="c13 c14"
+                      className="c12 c13"
                       data-testid="input-select-button"
                       disabled={true}
                       form=""
@@ -3154,16 +3096,16 @@ exports[`Storyshots Molecules / Input / Phone Is disabled 1`] = `
                     >
                       <div
                         aria-hidden="true"
-                        className="c15 c16"
+                        className="c14 c15"
                       >
                         <div
-                          className="c17"
+                          className="c16"
                         >
                           <div
-                            className="c18"
+                            className="c17"
                           >
                             <svg
-                              className="c19"
+                              className="c18"
                               focusable="false"
                               role="img"
                               viewBox="0 0 640 480"
@@ -3208,7 +3150,7 @@ exports[`Storyshots Molecules / Input / Phone Is disabled 1`] = `
                   </span>
                   <svg
                     aria-hidden="true"
-                    className="c20 c21"
+                    className="c19 c20"
                     focusable="false"
                     open={false}
                     preserveAspectRatio="xMidYMid meet"
@@ -3226,27 +3168,31 @@ exports[`Storyshots Molecules / Input / Phone Is disabled 1`] = `
           </div>
         </div>
         <div
-          className="c3 c22"
+          className="c3 c21"
           disabled={true}
         >
           <span
-            className="c10"
+            className="c9"
           >
             +
             46
           </span>
         </div>
-        <input
-          className="NormalizedInput__Input-sc-1m4kmh9-0 c23"
-          defaultValue="123 456 789"
-          disabled={true}
-          name="disabled-example"
-          onBlur={[Function]}
-          onChange={[Function]}
-          onFocus={[Function]}
-          type="text"
-          variant="normal"
-        />
+        <div
+          className="c3"
+        >
+          <input
+            className="NormalizedInput__Input-sc-1m4kmh9-0 c22"
+            defaultValue="123 456 789"
+            disabled={true}
+            name="disabled-example"
+            onBlur={[Function]}
+            onChange={[Function]}
+            onFocus={[Function]}
+            type="text"
+            variant="normal"
+          />
+        </div>
       </div>
     </span>
   </label>
@@ -3254,12 +3200,12 @@ exports[`Storyshots Molecules / Input / Phone Is disabled 1`] = `
 `;
 
 exports[`Storyshots Molecules / Input / Phone Prefilled default values 1`] = `
-.c17 {
+.c16 {
   padding-left: 8px;
   background-color: transparent;
 }
 
-.c18 {
+.c17 {
   height: 12px;
   box-sizing: border-box;
   display: block;
@@ -3279,19 +3225,7 @@ exports[`Storyshots Molecules / Input / Phone Prefilled default values 1`] = `
   align-items: center;
 }
 
-.c4 {
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: stretch;
-  -webkit-box-align: stretch;
-  -ms-flex-align: stretch;
-  align-items: stretch;
-}
-
-.c14 {
+.c13 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -3299,7 +3233,7 @@ exports[`Storyshots Molecules / Input / Phone Prefilled default values 1`] = `
   display: flex;
 }
 
-.c16 {
+.c15 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -3321,7 +3255,7 @@ exports[`Storyshots Molecules / Input / Phone Prefilled default values 1`] = `
   cursor: pointer;
 }
 
-.c9 {
+.c8 {
   position: absolute;
   height: 1px;
   width: 1px;
@@ -3333,7 +3267,7 @@ exports[`Storyshots Molecules / Input / Phone Prefilled default values 1`] = `
   cursor: pointer;
 }
 
-.c19 {
+.c18 {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -3347,7 +3281,7 @@ exports[`Storyshots Molecules / Input / Phone Prefilled default values 1`] = `
   display: block;
 }
 
-.c12 {
+.c11 {
   font-family: inherit;
   font-size: 100%;
   line-height: 1.15;
@@ -3356,25 +3290,25 @@ exports[`Storyshots Molecules / Input / Phone Prefilled default values 1`] = `
   text-transform: none;
 }
 
-.c12,
-.c12[type='button'],
-.c12[type='reset'],
-.c12[type='submit'] {
+.c11,
+.c11[type='button'],
+.c11[type='reset'],
+.c11[type='submit'] {
   -webkit-appearance: button;
 }
 
-.c12::-moz-focus-inner,
-.c12[type='button']::-moz-focus-inner,
-.c12[type='reset']::-moz-focus-inner,
-.c12[type='submit']::-moz-focus-inner {
+.c11::-moz-focus-inner,
+.c11[type='button']::-moz-focus-inner,
+.c11[type='reset']::-moz-focus-inner,
+.c11[type='submit']::-moz-focus-inner {
   border-style: none;
   padding: 0;
 }
 
-.c12:-moz-focusring,
-.c12[type='button']:-moz-focusring,
-.c12[type='reset']:-moz-focusring,
-.c12[type='submit']:-moz-focusring {
+.c11:-moz-focusring,
+.c11[type='button']:-moz-focusring,
+.c11[type='reset']:-moz-focusring,
+.c11[type='submit']:-moz-focusring {
   outline: 1px dotted ButtonText;
 }
 
@@ -3387,7 +3321,7 @@ exports[`Storyshots Molecules / Input / Phone Prefilled default values 1`] = `
   line-height: 1.4285714285714286;
 }
 
-.c11 {
+.c10 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #282823;
   margin: 0;
@@ -3396,7 +3330,7 @@ exports[`Storyshots Molecules / Input / Phone Prefilled default values 1`] = `
   line-height: 1.4285714285714286;
 }
 
-.c20 {
+.c19 {
   -webkit-transform: translateY(-50%) rotate(0);
   -ms-transform: translateY(-50%) rotate(0);
   transform: translateY(-50%) rotate(0);
@@ -3413,13 +3347,13 @@ exports[`Storyshots Molecules / Input / Phone Prefilled default values 1`] = `
   pointer-events: none;
 }
 
-.c8 {
+.c7 {
   position: relative;
   display: block;
   width: auto;
 }
 
-.c10 {
+.c9 {
   height: 40px;
   border: 1px solid #BCBCB6;
   position: relative;
@@ -3428,24 +3362,24 @@ exports[`Storyshots Molecules / Input / Phone Prefilled default values 1`] = `
   position: relative;
 }
 
-.c10:hover {
+.c9:hover {
   border-color: #4B4B46;
 }
 
-.c10:focus-within {
+.c9:focus-within {
   border-color: #0046FF;
 }
 
-.c10.focus-within {
+.c9.focus-within {
   border-color: #0046FF;
 }
 
-.c15 {
+.c14 {
   height: 100%;
   width: 100%;
 }
 
-.c13 {
+.c12 {
   background: transparent;
   width: 100%;
   height: 100%;
@@ -3465,28 +3399,28 @@ exports[`Storyshots Molecules / Input / Phone Prefilled default values 1`] = `
   text-align: initial;
 }
 
-.c13:active {
+.c12:active {
   color: inherit;
 }
 
-.c7 {
+.c6 {
   display: none;
 }
 
-.c6 {
+.c5 {
   max-width: 50px;
 }
 
-.c6 * {
+.c5 * {
   border: none;
 }
 
-.c21 {
+.c20 {
   cursor: auto;
   background-color: #FFFFFF;
 }
 
-.c22 {
+.c21 {
   font-family: inherit;
   font-size: 100%;
   line-height: 1.15;
@@ -3499,51 +3433,50 @@ exports[`Storyshots Molecules / Input / Phone Prefilled default values 1`] = `
   margin: 0;
   line-height: inherit;
   box-sizing: border-box;
-  height: 40px;
   background-color: #FFFFFF;
 }
 
-.c22::-webkit-input-placeholder {
+.c21::-webkit-input-placeholder {
   color: #6E6E69;
   line-height: inherit;
   opacity: 1;
 }
 
-.c22::-moz-placeholder {
+.c21::-moz-placeholder {
   color: #6E6E69;
   line-height: inherit;
   opacity: 1;
 }
 
-.c22:-ms-input-placeholder {
+.c21:-ms-input-placeholder {
   color: #6E6E69;
   line-height: inherit;
   opacity: 1;
 }
 
-.c22::placeholder {
+.c21::placeholder {
   color: #6E6E69;
   line-height: inherit;
   opacity: 1;
 }
 
-.c22:disabled::-webkit-input-placeholder {
+.c21:disabled::-webkit-input-placeholder {
   color: #A0A09B;
 }
 
-.c22:disabled::-moz-placeholder {
+.c21:disabled::-moz-placeholder {
   color: #A0A09B;
 }
 
-.c22:disabled:-ms-input-placeholder {
+.c21:disabled:-ms-input-placeholder {
   color: #A0A09B;
 }
 
-.c22:disabled::placeholder {
+.c21:disabled::placeholder {
   color: #A0A09B;
 }
 
-.c5 {
+.c4 {
   position: relative;
   padding: 0px 0;
   border: solid;
@@ -3552,11 +3485,11 @@ exports[`Storyshots Molecules / Input / Phone Prefilled default values 1`] = `
   position: relative;
 }
 
-.c5:focus {
+.c4:focus {
   border-width: 1px;
 }
 
-.c5:hover {
+.c4:hover {
   border-color: #4B4B46;
 }
 
@@ -3581,15 +3514,15 @@ exports[`Storyshots Molecules / Input / Phone Prefilled default values 1`] = `
         Phone number 
       </div>
       <div
-        className="c4 c5"
+        className="c3 c4"
         focused={false}
       >
         <div
-          className="c6"
+          className="c5"
         >
           <select
             aria-hidden="true"
-            className="c7"
+            className="c6"
             disabled={false}
             onChange={[Function]}
             value="46"
@@ -3660,7 +3593,7 @@ exports[`Storyshots Molecules / Input / Phone Prefilled default values 1`] = `
             />
           </select>
           <div
-            className="c8"
+            className="c7"
           >
             <div
               className="c3"
@@ -3669,7 +3602,7 @@ exports[`Storyshots Molecules / Input / Phone Prefilled default values 1`] = `
                 className="c0"
               >
                 <label
-                  className="c9"
+                  className="c8"
                   hidden={true}
                   htmlFor="phone-input-country-code-selector"
                 >
@@ -3680,7 +3613,7 @@ exports[`Storyshots Molecules / Input / Phone Prefilled default values 1`] = `
                   </span>
                 </label>
                 <div
-                  className="c10"
+                  className="c9"
                   disabled={false}
                   label="country code"
                   onBlur={[Function]}
@@ -3688,13 +3621,13 @@ exports[`Storyshots Molecules / Input / Phone Prefilled default values 1`] = `
                   tabIndex={0}
                 >
                   <span
-                    className="c11"
+                    className="c10"
                   >
                     <button
                       aria-expanded="false"
                       aria-haspopup="listbox"
                       aria-label="country code: [object Object]"
-                      className="c12 c13"
+                      className="c11 c12"
                       data-testid="input-select-button"
                       disabled={false}
                       form=""
@@ -3705,16 +3638,16 @@ exports[`Storyshots Molecules / Input / Phone Prefilled default values 1`] = `
                     >
                       <div
                         aria-hidden="true"
-                        className="c14 c15"
+                        className="c13 c14"
                       >
                         <div
-                          className="c16"
+                          className="c15"
                         >
                           <div
-                            className="c17"
+                            className="c16"
                           >
                             <svg
-                              className="c18"
+                              className="c17"
                               focusable="false"
                               role="img"
                               viewBox="0 0 640 480"
@@ -3759,7 +3692,7 @@ exports[`Storyshots Molecules / Input / Phone Prefilled default values 1`] = `
                   </span>
                   <svg
                     aria-hidden="true"
-                    className="c19 c20"
+                    className="c18 c19"
                     focusable="false"
                     open={false}
                     preserveAspectRatio="xMidYMid meet"
@@ -3777,25 +3710,29 @@ exports[`Storyshots Molecules / Input / Phone Prefilled default values 1`] = `
           </div>
         </div>
         <div
-          className="c3 c21"
+          className="c3 c20"
         >
           <span
-            className="c11"
+            className="c10"
           >
             +
             46
           </span>
         </div>
-        <input
-          className="NormalizedInput__Input-sc-1m4kmh9-0 c22"
-          defaultValue="123 456 789"
-          name="disabled-example"
-          onBlur={[Function]}
-          onChange={[Function]}
-          onFocus={[Function]}
-          type="text"
-          variant="normal"
-        />
+        <div
+          className="c3"
+        >
+          <input
+            className="NormalizedInput__Input-sc-1m4kmh9-0 c21"
+            defaultValue="123 456 789"
+            name="disabled-example"
+            onBlur={[Function]}
+            onChange={[Function]}
+            onFocus={[Function]}
+            type="text"
+            variant="normal"
+          />
+        </div>
       </div>
     </span>
   </label>
@@ -3803,12 +3740,12 @@ exports[`Storyshots Molecules / Input / Phone Prefilled default values 1`] = `
 `;
 
 exports[`Storyshots Molecules / Input / Phone Sort by country 1`] = `
-.c18 {
+.c17 {
   padding-left: 8px;
   background-color: transparent;
 }
 
-.c19 {
+.c18 {
   height: 12px;
   box-sizing: border-box;
   display: block;
@@ -3816,7 +3753,7 @@ exports[`Storyshots Molecules / Input / Phone Sort by country 1`] = `
   overflow: hidden;
 }
 
-.c24 {
+.c23 {
   height: 12px;
   border: 1px solid #EBEBE8;
   box-sizing: border-box;
@@ -3852,19 +3789,7 @@ exports[`Storyshots Molecules / Input / Phone Sort by country 1`] = `
   align-items: center;
 }
 
-.c5 {
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: stretch;
-  -webkit-box-align: stretch;
-  -ms-flex-align: stretch;
-  align-items: stretch;
-}
-
-.c15 {
+.c14 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -3872,7 +3797,7 @@ exports[`Storyshots Molecules / Input / Phone Sort by country 1`] = `
   display: flex;
 }
 
-.c17 {
+.c16 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -3889,1445 +3814,6 @@ exports[`Storyshots Molecules / Input / Phone Sort by country 1`] = `
 }
 
 .c2 {
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  cursor: pointer;
-}
-
-.c10 {
-  position: absolute;
-  height: 1px;
-  width: 1px;
-  overflow: hidden;
-  -webkit-clip: rect(1px,1px,1px,1px);
-  clip: rect(1px,1px,1px,1px);
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  cursor: pointer;
-}
-
-.c20 {
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  width: 20px;
-  height: 20px;
-  fill: #282823;
-  -webkit-flex-shrink: 0;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
-  display: block;
-}
-
-.c25 {
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  width: 12px;
-  height: 12px;
-  fill: #282823;
-  -webkit-flex-shrink: 0;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
-  display: block;
-}
-
-.c13 {
-  font-family: inherit;
-  font-size: 100%;
-  line-height: 1.15;
-  margin: 0;
-  overflow: visible;
-  text-transform: none;
-}
-
-.c13,
-.c13[type='button'],
-.c13[type='reset'],
-.c13[type='submit'] {
-  -webkit-appearance: button;
-}
-
-.c13::-moz-focus-inner,
-.c13[type='button']::-moz-focus-inner,
-.c13[type='reset']::-moz-focus-inner,
-.c13[type='submit']::-moz-focus-inner {
-  border-style: none;
-  padding: 0;
-}
-
-.c13:-moz-focusring,
-.c13[type='button']:-moz-focusring,
-.c13[type='reset']:-moz-focusring,
-.c13[type='submit']:-moz-focusring {
-  outline: 1px dotted ButtonText;
-}
-
-.c3 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #6E6E69;
-  margin: 0;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
-}
-
-.c12 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #282823;
-  margin: 0;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.4285714285714286;
-}
-
-.c21 {
-  -webkit-transform: translateY(-50%) rotate(0);
-  -ms-transform: translateY(-50%) rotate(0);
-  transform: translateY(-50%) rotate(0);
-  -webkit-transform-origin: center center;
-  -ms-transform-origin: center center;
-  transform-origin: center center;
-  -webkit-transition: -webkit-transform 0.16s ease-out;
-  -webkit-transition: transform 0.16s ease-out;
-  transition: transform 0.16s ease-out;
-  position: absolute;
-  height: 8px;
-  top: 50%;
-  right: 4px;
-  pointer-events: none;
-}
-
-.c9 {
-  position: relative;
-  display: block;
-  width: auto;
-}
-
-.c11 {
-  height: 40px;
-  border: 1px solid #BCBCB6;
-  position: relative;
-  background: #FFFFFF;
-  box-sizing: border-box;
-  position: relative;
-}
-
-.c11:hover {
-  border-color: #4B4B46;
-}
-
-.c11:focus-within {
-  border-color: #0046FF;
-}
-
-.c11.focus-within {
-  border-color: #0046FF;
-}
-
-.c16 {
-  height: 100%;
-  width: 100%;
-}
-
-.c14 {
-  background: transparent;
-  width: 100%;
-  height: 100%;
-  cursor: pointer;
-  padding: 0;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  border: 0;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  outline: 0;
-  text-align: initial;
-}
-
-.c14:active {
-  color: inherit;
-}
-
-.c8 {
-  display: none;
-}
-
-.c7 {
-  max-width: 50px;
-}
-
-.c7 * {
-  border: none;
-}
-
-.c22 {
-  cursor: auto;
-  background-color: #FFFFFF;
-}
-
-.c23 {
-  font-family: inherit;
-  font-size: 100%;
-  line-height: 1.15;
-  margin: 0;
-  overflow: visible;
-  border: 0;
-  outline: none;
-  width: 100%;
-  padding: 8px;
-  margin: 0;
-  line-height: inherit;
-  box-sizing: border-box;
-  height: 40px;
-  background-color: #FFFFFF;
-}
-
-.c23::-webkit-input-placeholder {
-  color: #6E6E69;
-  line-height: inherit;
-  opacity: 1;
-}
-
-.c23::-moz-placeholder {
-  color: #6E6E69;
-  line-height: inherit;
-  opacity: 1;
-}
-
-.c23:-ms-input-placeholder {
-  color: #6E6E69;
-  line-height: inherit;
-  opacity: 1;
-}
-
-.c23::placeholder {
-  color: #6E6E69;
-  line-height: inherit;
-  opacity: 1;
-}
-
-.c23:disabled::-webkit-input-placeholder {
-  color: #A0A09B;
-}
-
-.c23:disabled::-moz-placeholder {
-  color: #A0A09B;
-}
-
-.c23:disabled:-ms-input-placeholder {
-  color: #A0A09B;
-}
-
-.c23:disabled::placeholder {
-  color: #A0A09B;
-}
-
-.c6 {
-  position: relative;
-  padding: 0px 0;
-  border: solid;
-  border-color: #BCBCB6;
-  border-width: 1px;
-  position: relative;
-}
-
-.c6:focus {
-  border-width: 1px;
-}
-
-.c6:hover {
-  border-color: #4B4B46;
-}
-
-.c1 {
-  width: 200px;
-  display: inline-block;
-}
-
-<div
-  className="c0"
->
-  <div
-    className="c1"
-  >
-    <label
-      className="c2"
-      hidden={false}
-    >
-      <span
-        className="c3"
-      >
-        <div
-          className="c4"
-        >
-          Sweden 
-        </div>
-        <div
-          className="c5 c6"
-          focused={false}
-        >
-          <div
-            className="c7"
-          >
-            <select
-              aria-hidden="true"
-              className="c8"
-              disabled={false}
-              onChange={[Function]}
-              value="46"
-            >
-              
-              <option
-                label={
-                  <CountryCodeLabel
-                    countryCode="se"
-                    prefixCode="+46"
-                  />
-                }
-                value="46"
-              />
-              <option
-                label={
-                  <CountryCodeLabel
-                    countryCode="dk"
-                    prefixCode="+45"
-                  />
-                }
-                value="45"
-              />
-              <option
-                label={
-                  <CountryCodeLabel
-                    countryCode="no"
-                    prefixCode="+47"
-                  />
-                }
-                value="47"
-              />
-              <option
-                label={
-                  <CountryCodeLabel
-                    countryCode="fi"
-                    prefixCode="+385"
-                  />
-                }
-                value="385"
-              />
-              <option
-                label={
-                  <ForwardRef
-                    alignItems="center"
-                    container={true}
-                    gutter={3}
-                  >
-                    <ForwardRef
-                      item={true}
-                    >
-                      <Icon.Globe
-                        size={3}
-                      />
-                    </ForwardRef>
-                    <ForwardRef
-                      item={true}
-                    >
-                      <ForwardRef
-                        type="secondary"
-                      >
-                        +
-                      </ForwardRef>
-                    </ForwardRef>
-                  </ForwardRef>
-                }
-                value=""
-              />
-            </select>
-            <div
-              className="c9"
-            >
-              <div
-                className="c4"
-              >
-                <div
-                  className="c1"
-                >
-                  <label
-                    className="c10"
-                    hidden={true}
-                    htmlFor="phone-input-country-code-selector"
-                  >
-                    <span
-                      className="c3"
-                    >
-                      country code 
-                    </span>
-                  </label>
-                  <div
-                    className="c11"
-                    disabled={false}
-                    label="country code"
-                    onBlur={[Function]}
-                    onFocus={[Function]}
-                    tabIndex={0}
-                  >
-                    <span
-                      className="c12"
-                    >
-                      <button
-                        aria-expanded="false"
-                        aria-haspopup="listbox"
-                        aria-label="country code: [object Object]"
-                        className="c13 c14"
-                        data-testid="input-select-button"
-                        disabled={false}
-                        form=""
-                        id="phone-input-country-code-selector"
-                        onClick={[Function]}
-                        tabIndex={0}
-                        type="button"
-                      >
-                        <div
-                          aria-hidden="true"
-                          className="c15 c16"
-                        >
-                          <div
-                            className="c17"
-                          >
-                            <div
-                              className="c18"
-                            >
-                              <svg
-                                className="c19"
-                                focusable="false"
-                                role="img"
-                                viewBox="0 0 640 480"
-                              >
-                                <g
-                                  transform="translate(50.082) scale(.9375)"
-                                >
-                                  <g
-                                    fillRule="evenodd"
-                                    strokeWidth="1pt"
-                                  >
-                                    <path
-                                      d="M-121.103.302h256V205.1h-256zM-121.103 307.178h256v204.8h-256z"
-                                      fill="#006aa7"
-                                    />
-                                    <path
-                                      d="M-121.103 204.984h256v102.4h-256z"
-                                      fill="#fecc00"
-                                    />
-                                    <path
-                                      d="M133.843.01h102.4v511.997h-102.4z"
-                                      fill="#fecc00"
-                                    />
-                                    <path
-                                      d="M232.995 205.013h460.798v102.4H232.995z"
-                                      fill="#fecc00"
-                                    />
-                                    <path
-                                      d="M236.155 307.208h460.797v204.799H236.155zM236.155.302h460.797V205.1H236.155z"
-                                      fill="#006aa7"
-                                    />
-                                  </g>
-                                </g>
-                                <title>
-                                  Sweden
-                                </title>
-                              </svg>
-                            </div>
-                          </div>
-                        </div>
-                      </button>
-                    </span>
-                    <svg
-                      aria-hidden="true"
-                      className="c20 c21"
-                      focusable="false"
-                      open={false}
-                      preserveAspectRatio="xMidYMid meet"
-                      role="presentation"
-                      viewBox="0 0 24 24"
-                    >
-                      <polygon
-                        points="19.969 4 24 8.027 12 20 0 8.027 4.031 4 12 11.952"
-                      />
-                    </svg>
-                  </div>
-                  
-                </div>
-              </div>
-            </div>
-          </div>
-          <div
-            className="c4 c22"
-          >
-            <span
-              className="c12"
-            >
-              +
-              46
-            </span>
-          </div>
-          <input
-            className="NormalizedInput__Input-sc-1m4kmh9-0 c23"
-            name="country-code-example"
-            onBlur={[Function]}
-            onChange={[Function]}
-            onFocus={[Function]}
-            type="text"
-            variant="normal"
-          />
-        </div>
-      </span>
-    </label>
-  </div>
-  <div
-    className="c1"
-  >
-    <label
-      className="c2"
-      hidden={false}
-    >
-      <span
-        className="c3"
-      >
-        <div
-          className="c4"
-        >
-          Denmark 
-        </div>
-        <div
-          className="c5 c6"
-          focused={false}
-        >
-          <div
-            className="c7"
-          >
-            <select
-              aria-hidden="true"
-              className="c8"
-              disabled={false}
-              onChange={[Function]}
-              value="45"
-            >
-              
-              <option
-                label={
-                  <CountryCodeLabel
-                    countryCode="dk"
-                    prefixCode="+45"
-                  />
-                }
-                value="45"
-              />
-              <option
-                label={
-                  <CountryCodeLabel
-                    countryCode="se"
-                    prefixCode="+46"
-                  />
-                }
-                value="46"
-              />
-              <option
-                label={
-                  <CountryCodeLabel
-                    countryCode="no"
-                    prefixCode="+47"
-                  />
-                }
-                value="47"
-              />
-              <option
-                label={
-                  <CountryCodeLabel
-                    countryCode="fi"
-                    prefixCode="+385"
-                  />
-                }
-                value="385"
-              />
-              <option
-                label={
-                  <ForwardRef
-                    alignItems="center"
-                    container={true}
-                    gutter={3}
-                  >
-                    <ForwardRef
-                      item={true}
-                    >
-                      <Icon.Globe
-                        size={3}
-                      />
-                    </ForwardRef>
-                    <ForwardRef
-                      item={true}
-                    >
-                      <ForwardRef
-                        type="secondary"
-                      >
-                        +
-                      </ForwardRef>
-                    </ForwardRef>
-                  </ForwardRef>
-                }
-                value=""
-              />
-            </select>
-            <div
-              className="c9"
-            >
-              <div
-                className="c4"
-              >
-                <div
-                  className="c1"
-                >
-                  <label
-                    className="c10"
-                    hidden={true}
-                    htmlFor="phone-input-country-code-selector"
-                  >
-                    <span
-                      className="c3"
-                    >
-                      country code 
-                    </span>
-                  </label>
-                  <div
-                    className="c11"
-                    disabled={false}
-                    label="country code"
-                    onBlur={[Function]}
-                    onFocus={[Function]}
-                    tabIndex={0}
-                  >
-                    <span
-                      className="c12"
-                    >
-                      <button
-                        aria-expanded="false"
-                        aria-haspopup="listbox"
-                        aria-label="country code: [object Object]"
-                        className="c13 c14"
-                        data-testid="input-select-button"
-                        disabled={false}
-                        form=""
-                        id="phone-input-country-code-selector"
-                        onClick={[Function]}
-                        tabIndex={0}
-                        type="button"
-                      >
-                        <div
-                          aria-hidden="true"
-                          className="c15 c16"
-                        >
-                          <div
-                            className="c17"
-                          >
-                            <div
-                              className="c18"
-                            >
-                              <svg
-                                className="c19"
-                                focusable="false"
-                                role="img"
-                                viewBox="0 0 640 480"
-                              >
-                                <path
-                                  d="M0 0h640.1v480H0z"
-                                  fill="#c60c30"
-                                />
-                                <path
-                                  d="M205.714 0h68.57v480h-68.57z"
-                                  fill="#fff"
-                                />
-                                <path
-                                  d="M0 205.714h640.1v68.57H0z"
-                                  fill="#fff"
-                                />
-                                <title>
-                                  Denmark
-                                </title>
-                              </svg>
-                            </div>
-                          </div>
-                        </div>
-                      </button>
-                    </span>
-                    <svg
-                      aria-hidden="true"
-                      className="c20 c21"
-                      focusable="false"
-                      open={false}
-                      preserveAspectRatio="xMidYMid meet"
-                      role="presentation"
-                      viewBox="0 0 24 24"
-                    >
-                      <polygon
-                        points="19.969 4 24 8.027 12 20 0 8.027 4.031 4 12 11.952"
-                      />
-                    </svg>
-                  </div>
-                  
-                </div>
-              </div>
-            </div>
-          </div>
-          <div
-            className="c4 c22"
-          >
-            <span
-              className="c12"
-            >
-              +
-              45
-            </span>
-          </div>
-          <input
-            className="NormalizedInput__Input-sc-1m4kmh9-0 c23"
-            name="country-code-example"
-            onBlur={[Function]}
-            onChange={[Function]}
-            onFocus={[Function]}
-            type="text"
-            variant="normal"
-          />
-        </div>
-      </span>
-    </label>
-  </div>
-  <div
-    className="c1"
-  >
-    <label
-      className="c2"
-      hidden={false}
-    >
-      <span
-        className="c3"
-      >
-        <div
-          className="c4"
-        >
-          Finland 
-        </div>
-        <div
-          className="c5 c6"
-          focused={false}
-        >
-          <div
-            className="c7"
-          >
-            <select
-              aria-hidden="true"
-              className="c8"
-              disabled={false}
-              onChange={[Function]}
-              value="385"
-            >
-              
-              <option
-                label={
-                  <CountryCodeLabel
-                    countryCode="fi"
-                    prefixCode="+385"
-                  />
-                }
-                value="385"
-              />
-              <option
-                label={
-                  <CountryCodeLabel
-                    countryCode="dk"
-                    prefixCode="+45"
-                  />
-                }
-                value="45"
-              />
-              <option
-                label={
-                  <CountryCodeLabel
-                    countryCode="se"
-                    prefixCode="+46"
-                  />
-                }
-                value="46"
-              />
-              <option
-                label={
-                  <CountryCodeLabel
-                    countryCode="no"
-                    prefixCode="+47"
-                  />
-                }
-                value="47"
-              />
-              <option
-                label={
-                  <ForwardRef
-                    alignItems="center"
-                    container={true}
-                    gutter={3}
-                  >
-                    <ForwardRef
-                      item={true}
-                    >
-                      <Icon.Globe
-                        size={3}
-                      />
-                    </ForwardRef>
-                    <ForwardRef
-                      item={true}
-                    >
-                      <ForwardRef
-                        type="secondary"
-                      >
-                        +
-                      </ForwardRef>
-                    </ForwardRef>
-                  </ForwardRef>
-                }
-                value=""
-              />
-            </select>
-            <div
-              className="c9"
-            >
-              <div
-                className="c4"
-              >
-                <div
-                  className="c1"
-                >
-                  <label
-                    className="c10"
-                    hidden={true}
-                    htmlFor="phone-input-country-code-selector"
-                  >
-                    <span
-                      className="c3"
-                    >
-                      country code 
-                    </span>
-                  </label>
-                  <div
-                    className="c11"
-                    disabled={false}
-                    label="country code"
-                    onBlur={[Function]}
-                    onFocus={[Function]}
-                    tabIndex={0}
-                  >
-                    <span
-                      className="c12"
-                    >
-                      <button
-                        aria-expanded="false"
-                        aria-haspopup="listbox"
-                        aria-label="country code: [object Object]"
-                        className="c13 c14"
-                        data-testid="input-select-button"
-                        disabled={false}
-                        form=""
-                        id="phone-input-country-code-selector"
-                        onClick={[Function]}
-                        tabIndex={0}
-                        type="button"
-                      >
-                        <div
-                          aria-hidden="true"
-                          className="c15 c16"
-                        >
-                          <div
-                            className="c17"
-                          >
-                            <div
-                              className="c18"
-                            >
-                              <svg
-                                className="c24"
-                                focusable="false"
-                                role="img"
-                                viewBox="0 0 640 480"
-                              >
-                                <path
-                                  d="M0 0h640v480H0z"
-                                  fill="#fff"
-                                />
-                                <path
-                                  d="M0 174.545h640v130.909H0z"
-                                  fill="#003580"
-                                />
-                                <path
-                                  d="M175.455 0h130.909v480H175.455z"
-                                  fill="#003580"
-                                />
-                                <title>
-                                  Finland
-                                </title>
-                              </svg>
-                            </div>
-                          </div>
-                        </div>
-                      </button>
-                    </span>
-                    <svg
-                      aria-hidden="true"
-                      className="c20 c21"
-                      focusable="false"
-                      open={false}
-                      preserveAspectRatio="xMidYMid meet"
-                      role="presentation"
-                      viewBox="0 0 24 24"
-                    >
-                      <polygon
-                        points="19.969 4 24 8.027 12 20 0 8.027 4.031 4 12 11.952"
-                      />
-                    </svg>
-                  </div>
-                  
-                </div>
-              </div>
-            </div>
-          </div>
-          <div
-            className="c4 c22"
-          >
-            <span
-              className="c12"
-            >
-              +
-              385
-            </span>
-          </div>
-          <input
-            className="NormalizedInput__Input-sc-1m4kmh9-0 c23"
-            name="country-code-example"
-            onBlur={[Function]}
-            onChange={[Function]}
-            onFocus={[Function]}
-            type="text"
-            variant="normal"
-          />
-        </div>
-      </span>
-    </label>
-  </div>
-  <div
-    className="c1"
-  >
-    <label
-      className="c2"
-      hidden={false}
-    >
-      <span
-        className="c3"
-      >
-        <div
-          className="c4"
-        >
-          Norway 
-        </div>
-        <div
-          className="c5 c6"
-          focused={false}
-        >
-          <div
-            className="c7"
-          >
-            <select
-              aria-hidden="true"
-              className="c8"
-              disabled={false}
-              onChange={[Function]}
-              value="47"
-            >
-              
-              <option
-                label={
-                  <CountryCodeLabel
-                    countryCode="no"
-                    prefixCode="+47"
-                  />
-                }
-                value="47"
-              />
-              <option
-                label={
-                  <CountryCodeLabel
-                    countryCode="dk"
-                    prefixCode="+45"
-                  />
-                }
-                value="45"
-              />
-              <option
-                label={
-                  <CountryCodeLabel
-                    countryCode="se"
-                    prefixCode="+46"
-                  />
-                }
-                value="46"
-              />
-              <option
-                label={
-                  <CountryCodeLabel
-                    countryCode="fi"
-                    prefixCode="+385"
-                  />
-                }
-                value="385"
-              />
-              <option
-                label={
-                  <ForwardRef
-                    alignItems="center"
-                    container={true}
-                    gutter={3}
-                  >
-                    <ForwardRef
-                      item={true}
-                    >
-                      <Icon.Globe
-                        size={3}
-                      />
-                    </ForwardRef>
-                    <ForwardRef
-                      item={true}
-                    >
-                      <ForwardRef
-                        type="secondary"
-                      >
-                        +
-                      </ForwardRef>
-                    </ForwardRef>
-                  </ForwardRef>
-                }
-                value=""
-              />
-            </select>
-            <div
-              className="c9"
-            >
-              <div
-                className="c4"
-              >
-                <div
-                  className="c1"
-                >
-                  <label
-                    className="c10"
-                    hidden={true}
-                    htmlFor="phone-input-country-code-selector"
-                  >
-                    <span
-                      className="c3"
-                    >
-                      country code 
-                    </span>
-                  </label>
-                  <div
-                    className="c11"
-                    disabled={false}
-                    label="country code"
-                    onBlur={[Function]}
-                    onFocus={[Function]}
-                    tabIndex={0}
-                  >
-                    <span
-                      className="c12"
-                    >
-                      <button
-                        aria-expanded="false"
-                        aria-haspopup="listbox"
-                        aria-label="country code: [object Object]"
-                        className="c13 c14"
-                        data-testid="input-select-button"
-                        disabled={false}
-                        form=""
-                        id="phone-input-country-code-selector"
-                        onClick={[Function]}
-                        tabIndex={0}
-                        type="button"
-                      >
-                        <div
-                          aria-hidden="true"
-                          className="c15 c16"
-                        >
-                          <div
-                            className="c17"
-                          >
-                            <div
-                              className="c18"
-                            >
-                              <svg
-                                className="c19"
-                                focusable="false"
-                                role="img"
-                                viewBox="0 0 640 480"
-                              >
-                                <path
-                                  d="M0 0h640v480H0z"
-                                  fill="#ef2b2d"
-                                />
-                                <path
-                                  d="M180 0h120v480H180z"
-                                  fill="#fff"
-                                />
-                                <path
-                                  d="M0 180h640v120H0z"
-                                  fill="#fff"
-                                />
-                                <path
-                                  d="M210 0h60v480h-60z"
-                                  fill="#002868"
-                                />
-                                <path
-                                  d="M0 210h640v60H0z"
-                                  fill="#002868"
-                                />
-                                <title>
-                                  Norway
-                                </title>
-                              </svg>
-                            </div>
-                          </div>
-                        </div>
-                      </button>
-                    </span>
-                    <svg
-                      aria-hidden="true"
-                      className="c20 c21"
-                      focusable="false"
-                      open={false}
-                      preserveAspectRatio="xMidYMid meet"
-                      role="presentation"
-                      viewBox="0 0 24 24"
-                    >
-                      <polygon
-                        points="19.969 4 24 8.027 12 20 0 8.027 4.031 4 12 11.952"
-                      />
-                    </svg>
-                  </div>
-                  
-                </div>
-              </div>
-            </div>
-          </div>
-          <div
-            className="c4 c22"
-          >
-            <span
-              className="c12"
-            >
-              +
-              47
-            </span>
-          </div>
-          <input
-            className="NormalizedInput__Input-sc-1m4kmh9-0 c23"
-            name="country-code-example"
-            onBlur={[Function]}
-            onChange={[Function]}
-            onFocus={[Function]}
-            type="text"
-            variant="normal"
-          />
-        </div>
-      </span>
-    </label>
-  </div>
-  <div
-    className="c1"
-  >
-    <label
-      className="c2"
-      hidden={false}
-    >
-      <span
-        className="c3"
-      >
-        <div
-          className="c4"
-        >
-          Other 
-        </div>
-        <div
-          className="c5 c6"
-          focused={false}
-        >
-          <div
-            className="c7"
-          >
-            <select
-              aria-hidden="true"
-              className="c8"
-              disabled={false}
-              onChange={[Function]}
-              value=""
-            >
-              
-              <option
-                label={
-                  <ForwardRef
-                    alignItems="center"
-                    container={true}
-                    gutter={3}
-                  >
-                    <ForwardRef
-                      item={true}
-                    >
-                      <Icon.Globe
-                        size={3}
-                      />
-                    </ForwardRef>
-                    <ForwardRef
-                      item={true}
-                    >
-                      <ForwardRef
-                        type="secondary"
-                      >
-                        +
-                      </ForwardRef>
-                    </ForwardRef>
-                  </ForwardRef>
-                }
-                value=""
-              />
-              <option
-                label={
-                  <CountryCodeLabel
-                    countryCode="dk"
-                    prefixCode="+45"
-                  />
-                }
-                value="45"
-              />
-              <option
-                label={
-                  <CountryCodeLabel
-                    countryCode="se"
-                    prefixCode="+46"
-                  />
-                }
-                value="46"
-              />
-              <option
-                label={
-                  <CountryCodeLabel
-                    countryCode="no"
-                    prefixCode="+47"
-                  />
-                }
-                value="47"
-              />
-              <option
-                label={
-                  <CountryCodeLabel
-                    countryCode="fi"
-                    prefixCode="+385"
-                  />
-                }
-                value="385"
-              />
-            </select>
-            <div
-              className="c9"
-            >
-              <div
-                className="c4"
-              >
-                <div
-                  className="c1"
-                >
-                  <label
-                    className="c10"
-                    hidden={true}
-                    htmlFor="phone-input-country-code-selector"
-                  >
-                    <span
-                      className="c3"
-                    >
-                      country code 
-                    </span>
-                  </label>
-                  <div
-                    className="c11"
-                    disabled={false}
-                    label="country code"
-                    onBlur={[Function]}
-                    onFocus={[Function]}
-                    tabIndex={0}
-                  >
-                    <span
-                      className="c12"
-                    >
-                      <button
-                        aria-expanded="false"
-                        aria-haspopup="listbox"
-                        aria-label="country code: [object Object]"
-                        className="c13 c14"
-                        data-testid="input-select-button"
-                        disabled={false}
-                        form=""
-                        id="phone-input-country-code-selector"
-                        onClick={[Function]}
-                        tabIndex={0}
-                        type="button"
-                      >
-                        <div
-                          aria-hidden="true"
-                          className="c15 c16"
-                        >
-                          <div
-                            className="c17"
-                          >
-                            <div
-                              className="c18"
-                            >
-                              <svg
-                                aria-hidden="false"
-                                className="c25"
-                                focusable="false"
-                                preserveAspectRatio="xMidYMid meet"
-                                role="img"
-                                viewBox="0 0 24 24"
-                              >
-                                <g
-                                  fillRule="nonzero"
-                                >
-                                  <path
-                                    d="M12 23.403C18.312 23.403 23.403 18.312 23.403 12 23.403 5.688 18.312.597 12 .597 5.688.597 .597 5.688.597 12 .597 18.312 5.688 23.403 12 23.403ZM1.887 12.611 5.077 12.611C5.213 15.054 5.959 17.09 6.91 18.719 6.367 18.991 5.824 19.262 5.281 19.602 3.38 17.837 2.09 15.394 1.887 12.611ZM11.457 1.887C11.457 1.887 11.457 1.887 11.457 1.887L11.457 5.077C10.507 5.009 9.624 4.873 8.674 4.602 9.828 3.109 11.05 2.226 11.457 1.887ZM7.656 4.262C7.181 4.059 6.774 3.855 6.367 3.652 7.317 3.041 8.335 2.566 9.421 2.226 8.81 2.769 8.199 3.448 7.656 4.262ZM15.326 4.67C14.443 4.941 13.493 5.077 12.543 5.145L12.543 1.955C12.543 1.955 12.543 1.955 12.611 1.955 13.018 2.226 14.172 3.109 15.326 4.67ZM14.647 2.226C15.733 2.498 16.751 2.973 17.701 3.652 17.294 3.855 16.819 4.059 16.412 4.262 15.801 3.448 15.19 2.769 14.647 2.226ZM12.543 22.113C12.543 22.113 12.543 22.113 12.543 22.113L12.475 18.787C13.493 18.787 14.443 18.923 15.394 19.262 14.24 20.824 13.018 21.774 12.543 22.113ZM16.48 19.602C16.955 19.805 17.362 20.009 17.837 20.281 16.887 20.959 15.801 21.434 14.647 21.774 15.19 21.231 15.869 20.484 16.48 19.602ZM8.606 19.262C9.557 18.991 10.507 18.855 11.457 18.787L11.457 22.113C11.457 22.113 11.457 22.113 11.457 22.113 11.05 21.774 9.76 20.824 8.606 19.262ZM9.421 21.774C8.267 21.434 7.181 20.959 6.231 20.281 6.706 20.009 7.113 19.805 7.588 19.602 8.199 20.484 8.81 21.231 9.421 21.774ZM12.543 17.701 12.543 12.611 17.837 12.611C17.701 14.919 16.955 16.819 16.005 18.312 14.919 17.905 13.765 17.701 12.543 17.701ZM12.543 11.525 12.543 6.163C13.697 6.095 14.851 5.891 15.937 5.552 16.955 7.113 17.769 9.081 17.837 11.525L12.543 11.525ZM11.457 6.163 11.457 11.525 6.163 11.525C6.231 9.081 7.113 7.113 8.063 5.552 9.149 5.891 10.303 6.095 11.457 6.163ZM11.457 12.611 11.457 17.701C10.235 17.769 9.081 17.973 7.995 18.312 7.045 16.819 6.299 14.919 6.163 12.611L11.457 12.611ZM18.719 19.534C18.176 19.195 17.633 18.923 17.09 18.719 18.041 17.09 18.855 15.054 18.923 12.611L22.113 12.611C21.91 15.394 20.62 17.837 18.719 19.534ZM22.113 11.525 18.923 11.525C18.855 8.946 17.973 6.774 16.955 5.145 17.498 4.941 18.041 4.67 18.584 4.33 20.62 6.095 21.977 8.674 22.113 11.525ZM5.416 4.33C5.959 4.67 6.502 4.941 7.045 5.145 6.027 6.774 5.213 8.946 5.077 11.525L1.887 11.525C2.023 8.674 3.38 6.095 5.416 4.33Z"
-                                  />
-                                </g>
-                                <title>
-                                  All countries
-                                </title>
-                              </svg>
-                            </div>
-                          </div>
-                        </div>
-                      </button>
-                    </span>
-                    <svg
-                      aria-hidden="true"
-                      className="c20 c21"
-                      focusable="false"
-                      open={false}
-                      preserveAspectRatio="xMidYMid meet"
-                      role="presentation"
-                      viewBox="0 0 24 24"
-                    >
-                      <polygon
-                        points="19.969 4 24 8.027 12 20 0 8.027 4.031 4 12 11.952"
-                      />
-                    </svg>
-                  </div>
-                  
-                </div>
-              </div>
-            </div>
-          </div>
-          <div
-            className="c4 c22"
-          >
-            <span
-              className="c12"
-            >
-              +
-              
-            </span>
-          </div>
-          <input
-            className="NormalizedInput__Input-sc-1m4kmh9-0 c23"
-            name="country-code-example"
-            onBlur={[Function]}
-            onChange={[Function]}
-            onFocus={[Function]}
-            type="text"
-            variant="normal"
-          />
-        </div>
-      </span>
-    </label>
-  </div>
-</div>
-`;
-
-exports[`Storyshots Molecules / Input / Phone With help text 1`] = `
-.c17 {
-  padding-left: 8px;
-  background-color: transparent;
-}
-
-.c18 {
-  height: 12px;
-  box-sizing: border-box;
-  display: block;
-  width: 16px;
-  overflow: hidden;
-}
-
-.c3 {
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.c4 {
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: stretch;
-  -webkit-box-align: stretch;
-  -ms-flex-align: stretch;
-  align-items: stretch;
-}
-
-.c14 {
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.c16 {
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.c1 {
   text-overflow: ellipsis;
   white-space: nowrap;
   cursor: pointer;
@@ -5352,6 +3838,20 @@ exports[`Storyshots Molecules / Input / Phone With help text 1`] = `
   user-select: none;
   width: 20px;
   height: 20px;
+  fill: #282823;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
+}
+
+.c24 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 12px;
+  height: 12px;
   fill: #282823;
   -webkit-flex-shrink: 0;
   -ms-flex-negative: 0;
@@ -5390,7 +3890,7 @@ exports[`Storyshots Molecules / Input / Phone With help text 1`] = `
   outline: 1px dotted ButtonText;
 }
 
-.c2 {
+.c3 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #6E6E69;
   margin: 0;
@@ -5406,15 +3906,6 @@ exports[`Storyshots Molecules / Input / Phone With help text 1`] = `
   font-weight: 400;
   font-size: 14px;
   line-height: 1.4285714285714286;
-}
-
-.c23 {
-  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color: #6E6E69;
-  margin: 0;
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 1.3333333333333333;
 }
 
 .c20 {
@@ -5520,7 +4011,6 @@ exports[`Storyshots Molecules / Input / Phone With help text 1`] = `
   margin: 0;
   line-height: inherit;
   box-sizing: border-box;
-  height: 40px;
   background-color: #FFFFFF;
 }
 
@@ -5581,6 +4071,1447 @@ exports[`Storyshots Molecules / Input / Phone With help text 1`] = `
   border-color: #4B4B46;
 }
 
+.c1 {
+  width: 200px;
+  display: inline-block;
+}
+
+<div
+  className="c0"
+>
+  <div
+    className="c1"
+  >
+    <label
+      className="c2"
+      hidden={false}
+    >
+      <span
+        className="c3"
+      >
+        <div
+          className="c4"
+        >
+          Sweden 
+        </div>
+        <div
+          className="c4 c5"
+          focused={false}
+        >
+          <div
+            className="c6"
+          >
+            <select
+              aria-hidden="true"
+              className="c7"
+              disabled={false}
+              onChange={[Function]}
+              value="46"
+            >
+              
+              <option
+                label={
+                  <CountryCodeLabel
+                    countryCode="se"
+                    prefixCode="+46"
+                  />
+                }
+                value="46"
+              />
+              <option
+                label={
+                  <CountryCodeLabel
+                    countryCode="dk"
+                    prefixCode="+45"
+                  />
+                }
+                value="45"
+              />
+              <option
+                label={
+                  <CountryCodeLabel
+                    countryCode="no"
+                    prefixCode="+47"
+                  />
+                }
+                value="47"
+              />
+              <option
+                label={
+                  <CountryCodeLabel
+                    countryCode="fi"
+                    prefixCode="+385"
+                  />
+                }
+                value="385"
+              />
+              <option
+                label={
+                  <ForwardRef
+                    alignItems="center"
+                    container={true}
+                    gutter={3}
+                  >
+                    <ForwardRef
+                      item={true}
+                    >
+                      <Icon.Globe
+                        size={3}
+                      />
+                    </ForwardRef>
+                    <ForwardRef
+                      item={true}
+                    >
+                      <ForwardRef
+                        type="secondary"
+                      >
+                        +
+                      </ForwardRef>
+                    </ForwardRef>
+                  </ForwardRef>
+                }
+                value=""
+              />
+            </select>
+            <div
+              className="c8"
+            >
+              <div
+                className="c4"
+              >
+                <div
+                  className="c1"
+                >
+                  <label
+                    className="c9"
+                    hidden={true}
+                    htmlFor="phone-input-country-code-selector"
+                  >
+                    <span
+                      className="c3"
+                    >
+                      country code 
+                    </span>
+                  </label>
+                  <div
+                    className="c10"
+                    disabled={false}
+                    label="country code"
+                    onBlur={[Function]}
+                    onFocus={[Function]}
+                    tabIndex={0}
+                  >
+                    <span
+                      className="c11"
+                    >
+                      <button
+                        aria-expanded="false"
+                        aria-haspopup="listbox"
+                        aria-label="country code: [object Object]"
+                        className="c12 c13"
+                        data-testid="input-select-button"
+                        disabled={false}
+                        form=""
+                        id="phone-input-country-code-selector"
+                        onClick={[Function]}
+                        tabIndex={0}
+                        type="button"
+                      >
+                        <div
+                          aria-hidden="true"
+                          className="c14 c15"
+                        >
+                          <div
+                            className="c16"
+                          >
+                            <div
+                              className="c17"
+                            >
+                              <svg
+                                className="c18"
+                                focusable="false"
+                                role="img"
+                                viewBox="0 0 640 480"
+                              >
+                                <g
+                                  transform="translate(50.082) scale(.9375)"
+                                >
+                                  <g
+                                    fillRule="evenodd"
+                                    strokeWidth="1pt"
+                                  >
+                                    <path
+                                      d="M-121.103.302h256V205.1h-256zM-121.103 307.178h256v204.8h-256z"
+                                      fill="#006aa7"
+                                    />
+                                    <path
+                                      d="M-121.103 204.984h256v102.4h-256z"
+                                      fill="#fecc00"
+                                    />
+                                    <path
+                                      d="M133.843.01h102.4v511.997h-102.4z"
+                                      fill="#fecc00"
+                                    />
+                                    <path
+                                      d="M232.995 205.013h460.798v102.4H232.995z"
+                                      fill="#fecc00"
+                                    />
+                                    <path
+                                      d="M236.155 307.208h460.797v204.799H236.155zM236.155.302h460.797V205.1H236.155z"
+                                      fill="#006aa7"
+                                    />
+                                  </g>
+                                </g>
+                                <title>
+                                  Sweden
+                                </title>
+                              </svg>
+                            </div>
+                          </div>
+                        </div>
+                      </button>
+                    </span>
+                    <svg
+                      aria-hidden="true"
+                      className="c19 c20"
+                      focusable="false"
+                      open={false}
+                      preserveAspectRatio="xMidYMid meet"
+                      role="presentation"
+                      viewBox="0 0 24 24"
+                    >
+                      <polygon
+                        points="19.969 4 24 8.027 12 20 0 8.027 4.031 4 12 11.952"
+                      />
+                    </svg>
+                  </div>
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            className="c4 c21"
+          >
+            <span
+              className="c11"
+            >
+              +
+              46
+            </span>
+          </div>
+          <div
+            className="c4"
+          >
+            <input
+              className="NormalizedInput__Input-sc-1m4kmh9-0 c22"
+              name="country-code-example"
+              onBlur={[Function]}
+              onChange={[Function]}
+              onFocus={[Function]}
+              type="text"
+              variant="normal"
+            />
+          </div>
+        </div>
+      </span>
+    </label>
+  </div>
+  <div
+    className="c1"
+  >
+    <label
+      className="c2"
+      hidden={false}
+    >
+      <span
+        className="c3"
+      >
+        <div
+          className="c4"
+        >
+          Denmark 
+        </div>
+        <div
+          className="c4 c5"
+          focused={false}
+        >
+          <div
+            className="c6"
+          >
+            <select
+              aria-hidden="true"
+              className="c7"
+              disabled={false}
+              onChange={[Function]}
+              value="45"
+            >
+              
+              <option
+                label={
+                  <CountryCodeLabel
+                    countryCode="dk"
+                    prefixCode="+45"
+                  />
+                }
+                value="45"
+              />
+              <option
+                label={
+                  <CountryCodeLabel
+                    countryCode="se"
+                    prefixCode="+46"
+                  />
+                }
+                value="46"
+              />
+              <option
+                label={
+                  <CountryCodeLabel
+                    countryCode="no"
+                    prefixCode="+47"
+                  />
+                }
+                value="47"
+              />
+              <option
+                label={
+                  <CountryCodeLabel
+                    countryCode="fi"
+                    prefixCode="+385"
+                  />
+                }
+                value="385"
+              />
+              <option
+                label={
+                  <ForwardRef
+                    alignItems="center"
+                    container={true}
+                    gutter={3}
+                  >
+                    <ForwardRef
+                      item={true}
+                    >
+                      <Icon.Globe
+                        size={3}
+                      />
+                    </ForwardRef>
+                    <ForwardRef
+                      item={true}
+                    >
+                      <ForwardRef
+                        type="secondary"
+                      >
+                        +
+                      </ForwardRef>
+                    </ForwardRef>
+                  </ForwardRef>
+                }
+                value=""
+              />
+            </select>
+            <div
+              className="c8"
+            >
+              <div
+                className="c4"
+              >
+                <div
+                  className="c1"
+                >
+                  <label
+                    className="c9"
+                    hidden={true}
+                    htmlFor="phone-input-country-code-selector"
+                  >
+                    <span
+                      className="c3"
+                    >
+                      country code 
+                    </span>
+                  </label>
+                  <div
+                    className="c10"
+                    disabled={false}
+                    label="country code"
+                    onBlur={[Function]}
+                    onFocus={[Function]}
+                    tabIndex={0}
+                  >
+                    <span
+                      className="c11"
+                    >
+                      <button
+                        aria-expanded="false"
+                        aria-haspopup="listbox"
+                        aria-label="country code: [object Object]"
+                        className="c12 c13"
+                        data-testid="input-select-button"
+                        disabled={false}
+                        form=""
+                        id="phone-input-country-code-selector"
+                        onClick={[Function]}
+                        tabIndex={0}
+                        type="button"
+                      >
+                        <div
+                          aria-hidden="true"
+                          className="c14 c15"
+                        >
+                          <div
+                            className="c16"
+                          >
+                            <div
+                              className="c17"
+                            >
+                              <svg
+                                className="c18"
+                                focusable="false"
+                                role="img"
+                                viewBox="0 0 640 480"
+                              >
+                                <path
+                                  d="M0 0h640.1v480H0z"
+                                  fill="#c60c30"
+                                />
+                                <path
+                                  d="M205.714 0h68.57v480h-68.57z"
+                                  fill="#fff"
+                                />
+                                <path
+                                  d="M0 205.714h640.1v68.57H0z"
+                                  fill="#fff"
+                                />
+                                <title>
+                                  Denmark
+                                </title>
+                              </svg>
+                            </div>
+                          </div>
+                        </div>
+                      </button>
+                    </span>
+                    <svg
+                      aria-hidden="true"
+                      className="c19 c20"
+                      focusable="false"
+                      open={false}
+                      preserveAspectRatio="xMidYMid meet"
+                      role="presentation"
+                      viewBox="0 0 24 24"
+                    >
+                      <polygon
+                        points="19.969 4 24 8.027 12 20 0 8.027 4.031 4 12 11.952"
+                      />
+                    </svg>
+                  </div>
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            className="c4 c21"
+          >
+            <span
+              className="c11"
+            >
+              +
+              45
+            </span>
+          </div>
+          <div
+            className="c4"
+          >
+            <input
+              className="NormalizedInput__Input-sc-1m4kmh9-0 c22"
+              name="country-code-example"
+              onBlur={[Function]}
+              onChange={[Function]}
+              onFocus={[Function]}
+              type="text"
+              variant="normal"
+            />
+          </div>
+        </div>
+      </span>
+    </label>
+  </div>
+  <div
+    className="c1"
+  >
+    <label
+      className="c2"
+      hidden={false}
+    >
+      <span
+        className="c3"
+      >
+        <div
+          className="c4"
+        >
+          Finland 
+        </div>
+        <div
+          className="c4 c5"
+          focused={false}
+        >
+          <div
+            className="c6"
+          >
+            <select
+              aria-hidden="true"
+              className="c7"
+              disabled={false}
+              onChange={[Function]}
+              value="385"
+            >
+              
+              <option
+                label={
+                  <CountryCodeLabel
+                    countryCode="fi"
+                    prefixCode="+385"
+                  />
+                }
+                value="385"
+              />
+              <option
+                label={
+                  <CountryCodeLabel
+                    countryCode="dk"
+                    prefixCode="+45"
+                  />
+                }
+                value="45"
+              />
+              <option
+                label={
+                  <CountryCodeLabel
+                    countryCode="se"
+                    prefixCode="+46"
+                  />
+                }
+                value="46"
+              />
+              <option
+                label={
+                  <CountryCodeLabel
+                    countryCode="no"
+                    prefixCode="+47"
+                  />
+                }
+                value="47"
+              />
+              <option
+                label={
+                  <ForwardRef
+                    alignItems="center"
+                    container={true}
+                    gutter={3}
+                  >
+                    <ForwardRef
+                      item={true}
+                    >
+                      <Icon.Globe
+                        size={3}
+                      />
+                    </ForwardRef>
+                    <ForwardRef
+                      item={true}
+                    >
+                      <ForwardRef
+                        type="secondary"
+                      >
+                        +
+                      </ForwardRef>
+                    </ForwardRef>
+                  </ForwardRef>
+                }
+                value=""
+              />
+            </select>
+            <div
+              className="c8"
+            >
+              <div
+                className="c4"
+              >
+                <div
+                  className="c1"
+                >
+                  <label
+                    className="c9"
+                    hidden={true}
+                    htmlFor="phone-input-country-code-selector"
+                  >
+                    <span
+                      className="c3"
+                    >
+                      country code 
+                    </span>
+                  </label>
+                  <div
+                    className="c10"
+                    disabled={false}
+                    label="country code"
+                    onBlur={[Function]}
+                    onFocus={[Function]}
+                    tabIndex={0}
+                  >
+                    <span
+                      className="c11"
+                    >
+                      <button
+                        aria-expanded="false"
+                        aria-haspopup="listbox"
+                        aria-label="country code: [object Object]"
+                        className="c12 c13"
+                        data-testid="input-select-button"
+                        disabled={false}
+                        form=""
+                        id="phone-input-country-code-selector"
+                        onClick={[Function]}
+                        tabIndex={0}
+                        type="button"
+                      >
+                        <div
+                          aria-hidden="true"
+                          className="c14 c15"
+                        >
+                          <div
+                            className="c16"
+                          >
+                            <div
+                              className="c17"
+                            >
+                              <svg
+                                className="c23"
+                                focusable="false"
+                                role="img"
+                                viewBox="0 0 640 480"
+                              >
+                                <path
+                                  d="M0 0h640v480H0z"
+                                  fill="#fff"
+                                />
+                                <path
+                                  d="M0 174.545h640v130.909H0z"
+                                  fill="#003580"
+                                />
+                                <path
+                                  d="M175.455 0h130.909v480H175.455z"
+                                  fill="#003580"
+                                />
+                                <title>
+                                  Finland
+                                </title>
+                              </svg>
+                            </div>
+                          </div>
+                        </div>
+                      </button>
+                    </span>
+                    <svg
+                      aria-hidden="true"
+                      className="c19 c20"
+                      focusable="false"
+                      open={false}
+                      preserveAspectRatio="xMidYMid meet"
+                      role="presentation"
+                      viewBox="0 0 24 24"
+                    >
+                      <polygon
+                        points="19.969 4 24 8.027 12 20 0 8.027 4.031 4 12 11.952"
+                      />
+                    </svg>
+                  </div>
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            className="c4 c21"
+          >
+            <span
+              className="c11"
+            >
+              +
+              385
+            </span>
+          </div>
+          <div
+            className="c4"
+          >
+            <input
+              className="NormalizedInput__Input-sc-1m4kmh9-0 c22"
+              name="country-code-example"
+              onBlur={[Function]}
+              onChange={[Function]}
+              onFocus={[Function]}
+              type="text"
+              variant="normal"
+            />
+          </div>
+        </div>
+      </span>
+    </label>
+  </div>
+  <div
+    className="c1"
+  >
+    <label
+      className="c2"
+      hidden={false}
+    >
+      <span
+        className="c3"
+      >
+        <div
+          className="c4"
+        >
+          Norway 
+        </div>
+        <div
+          className="c4 c5"
+          focused={false}
+        >
+          <div
+            className="c6"
+          >
+            <select
+              aria-hidden="true"
+              className="c7"
+              disabled={false}
+              onChange={[Function]}
+              value="47"
+            >
+              
+              <option
+                label={
+                  <CountryCodeLabel
+                    countryCode="no"
+                    prefixCode="+47"
+                  />
+                }
+                value="47"
+              />
+              <option
+                label={
+                  <CountryCodeLabel
+                    countryCode="dk"
+                    prefixCode="+45"
+                  />
+                }
+                value="45"
+              />
+              <option
+                label={
+                  <CountryCodeLabel
+                    countryCode="se"
+                    prefixCode="+46"
+                  />
+                }
+                value="46"
+              />
+              <option
+                label={
+                  <CountryCodeLabel
+                    countryCode="fi"
+                    prefixCode="+385"
+                  />
+                }
+                value="385"
+              />
+              <option
+                label={
+                  <ForwardRef
+                    alignItems="center"
+                    container={true}
+                    gutter={3}
+                  >
+                    <ForwardRef
+                      item={true}
+                    >
+                      <Icon.Globe
+                        size={3}
+                      />
+                    </ForwardRef>
+                    <ForwardRef
+                      item={true}
+                    >
+                      <ForwardRef
+                        type="secondary"
+                      >
+                        +
+                      </ForwardRef>
+                    </ForwardRef>
+                  </ForwardRef>
+                }
+                value=""
+              />
+            </select>
+            <div
+              className="c8"
+            >
+              <div
+                className="c4"
+              >
+                <div
+                  className="c1"
+                >
+                  <label
+                    className="c9"
+                    hidden={true}
+                    htmlFor="phone-input-country-code-selector"
+                  >
+                    <span
+                      className="c3"
+                    >
+                      country code 
+                    </span>
+                  </label>
+                  <div
+                    className="c10"
+                    disabled={false}
+                    label="country code"
+                    onBlur={[Function]}
+                    onFocus={[Function]}
+                    tabIndex={0}
+                  >
+                    <span
+                      className="c11"
+                    >
+                      <button
+                        aria-expanded="false"
+                        aria-haspopup="listbox"
+                        aria-label="country code: [object Object]"
+                        className="c12 c13"
+                        data-testid="input-select-button"
+                        disabled={false}
+                        form=""
+                        id="phone-input-country-code-selector"
+                        onClick={[Function]}
+                        tabIndex={0}
+                        type="button"
+                      >
+                        <div
+                          aria-hidden="true"
+                          className="c14 c15"
+                        >
+                          <div
+                            className="c16"
+                          >
+                            <div
+                              className="c17"
+                            >
+                              <svg
+                                className="c18"
+                                focusable="false"
+                                role="img"
+                                viewBox="0 0 640 480"
+                              >
+                                <path
+                                  d="M0 0h640v480H0z"
+                                  fill="#ef2b2d"
+                                />
+                                <path
+                                  d="M180 0h120v480H180z"
+                                  fill="#fff"
+                                />
+                                <path
+                                  d="M0 180h640v120H0z"
+                                  fill="#fff"
+                                />
+                                <path
+                                  d="M210 0h60v480h-60z"
+                                  fill="#002868"
+                                />
+                                <path
+                                  d="M0 210h640v60H0z"
+                                  fill="#002868"
+                                />
+                                <title>
+                                  Norway
+                                </title>
+                              </svg>
+                            </div>
+                          </div>
+                        </div>
+                      </button>
+                    </span>
+                    <svg
+                      aria-hidden="true"
+                      className="c19 c20"
+                      focusable="false"
+                      open={false}
+                      preserveAspectRatio="xMidYMid meet"
+                      role="presentation"
+                      viewBox="0 0 24 24"
+                    >
+                      <polygon
+                        points="19.969 4 24 8.027 12 20 0 8.027 4.031 4 12 11.952"
+                      />
+                    </svg>
+                  </div>
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            className="c4 c21"
+          >
+            <span
+              className="c11"
+            >
+              +
+              47
+            </span>
+          </div>
+          <div
+            className="c4"
+          >
+            <input
+              className="NormalizedInput__Input-sc-1m4kmh9-0 c22"
+              name="country-code-example"
+              onBlur={[Function]}
+              onChange={[Function]}
+              onFocus={[Function]}
+              type="text"
+              variant="normal"
+            />
+          </div>
+        </div>
+      </span>
+    </label>
+  </div>
+  <div
+    className="c1"
+  >
+    <label
+      className="c2"
+      hidden={false}
+    >
+      <span
+        className="c3"
+      >
+        <div
+          className="c4"
+        >
+          Other 
+        </div>
+        <div
+          className="c4 c5"
+          focused={false}
+        >
+          <div
+            className="c6"
+          >
+            <select
+              aria-hidden="true"
+              className="c7"
+              disabled={false}
+              onChange={[Function]}
+              value=""
+            >
+              
+              <option
+                label={
+                  <ForwardRef
+                    alignItems="center"
+                    container={true}
+                    gutter={3}
+                  >
+                    <ForwardRef
+                      item={true}
+                    >
+                      <Icon.Globe
+                        size={3}
+                      />
+                    </ForwardRef>
+                    <ForwardRef
+                      item={true}
+                    >
+                      <ForwardRef
+                        type="secondary"
+                      >
+                        +
+                      </ForwardRef>
+                    </ForwardRef>
+                  </ForwardRef>
+                }
+                value=""
+              />
+              <option
+                label={
+                  <CountryCodeLabel
+                    countryCode="dk"
+                    prefixCode="+45"
+                  />
+                }
+                value="45"
+              />
+              <option
+                label={
+                  <CountryCodeLabel
+                    countryCode="se"
+                    prefixCode="+46"
+                  />
+                }
+                value="46"
+              />
+              <option
+                label={
+                  <CountryCodeLabel
+                    countryCode="no"
+                    prefixCode="+47"
+                  />
+                }
+                value="47"
+              />
+              <option
+                label={
+                  <CountryCodeLabel
+                    countryCode="fi"
+                    prefixCode="+385"
+                  />
+                }
+                value="385"
+              />
+            </select>
+            <div
+              className="c8"
+            >
+              <div
+                className="c4"
+              >
+                <div
+                  className="c1"
+                >
+                  <label
+                    className="c9"
+                    hidden={true}
+                    htmlFor="phone-input-country-code-selector"
+                  >
+                    <span
+                      className="c3"
+                    >
+                      country code 
+                    </span>
+                  </label>
+                  <div
+                    className="c10"
+                    disabled={false}
+                    label="country code"
+                    onBlur={[Function]}
+                    onFocus={[Function]}
+                    tabIndex={0}
+                  >
+                    <span
+                      className="c11"
+                    >
+                      <button
+                        aria-expanded="false"
+                        aria-haspopup="listbox"
+                        aria-label="country code: [object Object]"
+                        className="c12 c13"
+                        data-testid="input-select-button"
+                        disabled={false}
+                        form=""
+                        id="phone-input-country-code-selector"
+                        onClick={[Function]}
+                        tabIndex={0}
+                        type="button"
+                      >
+                        <div
+                          aria-hidden="true"
+                          className="c14 c15"
+                        >
+                          <div
+                            className="c16"
+                          >
+                            <div
+                              className="c17"
+                            >
+                              <svg
+                                aria-hidden="false"
+                                className="c24"
+                                focusable="false"
+                                preserveAspectRatio="xMidYMid meet"
+                                role="img"
+                                viewBox="0 0 24 24"
+                              >
+                                <g
+                                  fillRule="nonzero"
+                                >
+                                  <path
+                                    d="M12 23.403C18.312 23.403 23.403 18.312 23.403 12 23.403 5.688 18.312.597 12 .597 5.688.597 .597 5.688.597 12 .597 18.312 5.688 23.403 12 23.403ZM1.887 12.611 5.077 12.611C5.213 15.054 5.959 17.09 6.91 18.719 6.367 18.991 5.824 19.262 5.281 19.602 3.38 17.837 2.09 15.394 1.887 12.611ZM11.457 1.887C11.457 1.887 11.457 1.887 11.457 1.887L11.457 5.077C10.507 5.009 9.624 4.873 8.674 4.602 9.828 3.109 11.05 2.226 11.457 1.887ZM7.656 4.262C7.181 4.059 6.774 3.855 6.367 3.652 7.317 3.041 8.335 2.566 9.421 2.226 8.81 2.769 8.199 3.448 7.656 4.262ZM15.326 4.67C14.443 4.941 13.493 5.077 12.543 5.145L12.543 1.955C12.543 1.955 12.543 1.955 12.611 1.955 13.018 2.226 14.172 3.109 15.326 4.67ZM14.647 2.226C15.733 2.498 16.751 2.973 17.701 3.652 17.294 3.855 16.819 4.059 16.412 4.262 15.801 3.448 15.19 2.769 14.647 2.226ZM12.543 22.113C12.543 22.113 12.543 22.113 12.543 22.113L12.475 18.787C13.493 18.787 14.443 18.923 15.394 19.262 14.24 20.824 13.018 21.774 12.543 22.113ZM16.48 19.602C16.955 19.805 17.362 20.009 17.837 20.281 16.887 20.959 15.801 21.434 14.647 21.774 15.19 21.231 15.869 20.484 16.48 19.602ZM8.606 19.262C9.557 18.991 10.507 18.855 11.457 18.787L11.457 22.113C11.457 22.113 11.457 22.113 11.457 22.113 11.05 21.774 9.76 20.824 8.606 19.262ZM9.421 21.774C8.267 21.434 7.181 20.959 6.231 20.281 6.706 20.009 7.113 19.805 7.588 19.602 8.199 20.484 8.81 21.231 9.421 21.774ZM12.543 17.701 12.543 12.611 17.837 12.611C17.701 14.919 16.955 16.819 16.005 18.312 14.919 17.905 13.765 17.701 12.543 17.701ZM12.543 11.525 12.543 6.163C13.697 6.095 14.851 5.891 15.937 5.552 16.955 7.113 17.769 9.081 17.837 11.525L12.543 11.525ZM11.457 6.163 11.457 11.525 6.163 11.525C6.231 9.081 7.113 7.113 8.063 5.552 9.149 5.891 10.303 6.095 11.457 6.163ZM11.457 12.611 11.457 17.701C10.235 17.769 9.081 17.973 7.995 18.312 7.045 16.819 6.299 14.919 6.163 12.611L11.457 12.611ZM18.719 19.534C18.176 19.195 17.633 18.923 17.09 18.719 18.041 17.09 18.855 15.054 18.923 12.611L22.113 12.611C21.91 15.394 20.62 17.837 18.719 19.534ZM22.113 11.525 18.923 11.525C18.855 8.946 17.973 6.774 16.955 5.145 17.498 4.941 18.041 4.67 18.584 4.33 20.62 6.095 21.977 8.674 22.113 11.525ZM5.416 4.33C5.959 4.67 6.502 4.941 7.045 5.145 6.027 6.774 5.213 8.946 5.077 11.525L1.887 11.525C2.023 8.674 3.38 6.095 5.416 4.33Z"
+                                  />
+                                </g>
+                                <title>
+                                  All countries
+                                </title>
+                              </svg>
+                            </div>
+                          </div>
+                        </div>
+                      </button>
+                    </span>
+                    <svg
+                      aria-hidden="true"
+                      className="c19 c20"
+                      focusable="false"
+                      open={false}
+                      preserveAspectRatio="xMidYMid meet"
+                      role="presentation"
+                      viewBox="0 0 24 24"
+                    >
+                      <polygon
+                        points="19.969 4 24 8.027 12 20 0 8.027 4.031 4 12 11.952"
+                      />
+                    </svg>
+                  </div>
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            className="c4 c21"
+          >
+            <span
+              className="c11"
+            >
+              +
+              
+            </span>
+          </div>
+          <div
+            className="c4"
+          >
+            <input
+              className="NormalizedInput__Input-sc-1m4kmh9-0 c22"
+              name="country-code-example"
+              onBlur={[Function]}
+              onChange={[Function]}
+              onFocus={[Function]}
+              type="text"
+              variant="normal"
+            />
+          </div>
+        </div>
+      </span>
+    </label>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Molecules / Input / Phone With help text 1`] = `
+.c16 {
+  padding-left: 8px;
+  background-color: transparent;
+}
+
+.c17 {
+  height: 12px;
+  box-sizing: border-box;
+  display: block;
+  width: 16px;
+  overflow: hidden;
+}
+
+.c3 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c13 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.c15 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c1 {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.c8 {
+  position: absolute;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  -webkit-clip: rect(1px,1px,1px,1px);
+  clip: rect(1px,1px,1px,1px);
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.c18 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 20px;
+  height: 20px;
+  fill: #282823;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
+}
+
+.c11 {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  overflow: visible;
+  text-transform: none;
+}
+
+.c11,
+.c11[type='button'],
+.c11[type='reset'],
+.c11[type='submit'] {
+  -webkit-appearance: button;
+}
+
+.c11::-moz-focus-inner,
+.c11[type='button']::-moz-focus-inner,
+.c11[type='reset']::-moz-focus-inner,
+.c11[type='submit']::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+.c11:-moz-focusring,
+.c11[type='button']:-moz-focusring,
+.c11[type='reset']:-moz-focusring,
+.c11[type='submit']:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+.c2 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #6E6E69;
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c10 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c22 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #6E6E69;
+  margin: 0;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.3333333333333333;
+}
+
+.c19 {
+  -webkit-transform: translateY(-50%) rotate(0);
+  -ms-transform: translateY(-50%) rotate(0);
+  transform: translateY(-50%) rotate(0);
+  -webkit-transform-origin: center center;
+  -ms-transform-origin: center center;
+  transform-origin: center center;
+  -webkit-transition: -webkit-transform 0.16s ease-out;
+  -webkit-transition: transform 0.16s ease-out;
+  transition: transform 0.16s ease-out;
+  position: absolute;
+  height: 8px;
+  top: 50%;
+  right: 4px;
+  pointer-events: none;
+}
+
+.c7 {
+  position: relative;
+  display: block;
+  width: auto;
+}
+
+.c9 {
+  height: 40px;
+  border: 1px solid #BCBCB6;
+  position: relative;
+  background: #FFFFFF;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.c9:hover {
+  border-color: #4B4B46;
+}
+
+.c9:focus-within {
+  border-color: #0046FF;
+}
+
+.c9.focus-within {
+  border-color: #0046FF;
+}
+
+.c14 {
+  height: 100%;
+  width: 100%;
+}
+
+.c12 {
+  background: transparent;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  padding: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  border: 0;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  outline: 0;
+  text-align: initial;
+}
+
+.c12:active {
+  color: inherit;
+}
+
+.c6 {
+  display: none;
+}
+
+.c5 {
+  max-width: 50px;
+}
+
+.c5 * {
+  border: none;
+}
+
+.c20 {
+  cursor: auto;
+  background-color: #FFFFFF;
+}
+
+.c21 {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  overflow: visible;
+  border: 0;
+  outline: none;
+  width: 100%;
+  padding: 8px;
+  margin: 0;
+  line-height: inherit;
+  box-sizing: border-box;
+  background-color: #FFFFFF;
+}
+
+.c21::-webkit-input-placeholder {
+  color: #6E6E69;
+  line-height: inherit;
+  opacity: 1;
+}
+
+.c21::-moz-placeholder {
+  color: #6E6E69;
+  line-height: inherit;
+  opacity: 1;
+}
+
+.c21:-ms-input-placeholder {
+  color: #6E6E69;
+  line-height: inherit;
+  opacity: 1;
+}
+
+.c21::placeholder {
+  color: #6E6E69;
+  line-height: inherit;
+  opacity: 1;
+}
+
+.c21:disabled::-webkit-input-placeholder {
+  color: #A0A09B;
+}
+
+.c21:disabled::-moz-placeholder {
+  color: #A0A09B;
+}
+
+.c21:disabled:-ms-input-placeholder {
+  color: #A0A09B;
+}
+
+.c21:disabled::placeholder {
+  color: #A0A09B;
+}
+
+.c4 {
+  position: relative;
+  padding: 0px 0;
+  border: solid;
+  border-color: #BCBCB6;
+  border-width: 1px;
+  position: relative;
+}
+
+.c4:focus {
+  border-width: 1px;
+}
+
+.c4:hover {
+  border-color: #4B4B46;
+}
+
 .c0 {
   width: 200px;
   display: inline-block;
@@ -5602,15 +5533,15 @@ exports[`Storyshots Molecules / Input / Phone With help text 1`] = `
         Phone number 
       </div>
       <div
-        className="c4 c5"
+        className="c3 c4"
         focused={false}
       >
         <div
-          className="c6"
+          className="c5"
         >
           <select
             aria-hidden="true"
-            className="c7"
+            className="c6"
             disabled={false}
             onChange={[Function]}
             value="45"
@@ -5681,7 +5612,7 @@ exports[`Storyshots Molecules / Input / Phone With help text 1`] = `
             />
           </select>
           <div
-            className="c8"
+            className="c7"
           >
             <div
               className="c3"
@@ -5690,7 +5621,7 @@ exports[`Storyshots Molecules / Input / Phone With help text 1`] = `
                 className="c0"
               >
                 <label
-                  className="c9"
+                  className="c8"
                   hidden={true}
                   htmlFor="phone-input-country-code-selector"
                 >
@@ -5701,7 +5632,7 @@ exports[`Storyshots Molecules / Input / Phone With help text 1`] = `
                   </span>
                 </label>
                 <div
-                  className="c10"
+                  className="c9"
                   disabled={false}
                   label="country code"
                   onBlur={[Function]}
@@ -5709,13 +5640,13 @@ exports[`Storyshots Molecules / Input / Phone With help text 1`] = `
                   tabIndex={0}
                 >
                   <span
-                    className="c11"
+                    className="c10"
                   >
                     <button
                       aria-expanded="false"
                       aria-haspopup="listbox"
                       aria-label="country code: [object Object]"
-                      className="c12 c13"
+                      className="c11 c12"
                       data-testid="input-select-button"
                       disabled={false}
                       form=""
@@ -5726,16 +5657,16 @@ exports[`Storyshots Molecules / Input / Phone With help text 1`] = `
                     >
                       <div
                         aria-hidden="true"
-                        className="c14 c15"
+                        className="c13 c14"
                       >
                         <div
-                          className="c16"
+                          className="c15"
                         >
                           <div
-                            className="c17"
+                            className="c16"
                           >
                             <svg
-                              className="c18"
+                              className="c17"
                               focusable="false"
                               role="img"
                               viewBox="0 0 640 480"
@@ -5763,7 +5694,7 @@ exports[`Storyshots Molecules / Input / Phone With help text 1`] = `
                   </span>
                   <svg
                     aria-hidden="true"
-                    className="c19 c20"
+                    className="c18 c19"
                     focusable="false"
                     open={false}
                     preserveAspectRatio="xMidYMid meet"
@@ -5781,31 +5712,35 @@ exports[`Storyshots Molecules / Input / Phone With help text 1`] = `
           </div>
         </div>
         <div
-          className="c3 c21"
+          className="c3 c20"
         >
           <span
-            className="c11"
+            className="c10"
           >
             +
             45
           </span>
         </div>
-        <input
-          className="NormalizedInput__Input-sc-1m4kmh9-0 c22"
-          name="with-help-text-example"
-          onBlur={[Function]}
-          onChange={[Function]}
-          onFocus={[Function]}
-          placeholder="123 456 789"
-          type="text"
-          variant="normal"
-        />
+        <div
+          className="c3"
+        >
+          <input
+            className="NormalizedInput__Input-sc-1m4kmh9-0 c21"
+            name="with-help-text-example"
+            onBlur={[Function]}
+            onChange={[Function]}
+            onFocus={[Function]}
+            placeholder="123 456 789"
+            type="text"
+            variant="normal"
+          />
+        </div>
       </div>
     </span>
   </label>
   <div>
     <span
-      className="c23"
+      className="c22"
     >
       Please fill in your phone number
     </span>
