@@ -1,3 +1,10 @@
+## [6.19.2](https://github.com/nordnet/ui/compare/v6.19.1...v6.19.2) (2021-06-11)
+
+
+### Bug Fixes
+
+* 🐛 adds size prop to phone input ([879e24a](https://github.com/nordnet/ui/commit/879e24a))
+
 ## [6.19.1](https://github.com/nordnet/ui/compare/v6.19.0...v6.19.1) (2021-06-09)
 
 
