@@ -281,6 +281,7 @@ const Select = (props: Props) => {
           error={error}
           success={success}
           extraInfo={extraInfo}
+          height={props.height}
           id={props.id}
           size={props.size}
           onFocus={handleFocus}

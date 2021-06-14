@@ -184,6 +184,7 @@ const PhoneComponent = React.forwardRef<HTMLInputElement, Props>((props, ref) =>
     >
       <StyledWrapper
         container
+        size={size}
         alignItems="center"
         focused={focused}
         {...R.pick(['error', 'success', 'disabled', 'variant'], props)}
@@ -191,7 +192,7 @@ const PhoneComponent = React.forwardRef<HTMLInputElement, Props>((props, ref) =>
         <StyledSelect
           label="country code"
           hideLabel
-          size={size}
+          height={size === 's' ? 7.5 : 9.5}
           disabled={disabled}
           options={sortByCountry ? sortedOptions : options}
           components={{

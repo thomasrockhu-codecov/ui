@@ -34,6 +34,10 @@ export type Props = {
    * @default 'm'
    */
   size?: 's' | 'm';
+  /*
+   * Height in 4x pixels e.g 4 equals 16px
+   */
+  height?: number;
   disabled?: boolean;
   onChange?: (newValue: OptionItem[]) => void;
   onFocus?: React.FocusEventHandler;

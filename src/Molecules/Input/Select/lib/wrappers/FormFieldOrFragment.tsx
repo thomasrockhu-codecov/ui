@@ -20,8 +20,16 @@ const StyledRelativeDiv = styled.div<any>`
   width: ${(p) => (p.fullWidth ? '100%' : 'auto')};
 `;
 
-const height = css<Pick<Props, 'size'>>`
-  height: ${(p) => (p.size === 's' ? p.theme.spacing.unit(8) : p.theme.spacing.unit(10))}px;
+const determineHeight = (p: any) => {
+  if (p.height) {
+    return p.theme.spacing.unit(p.height);
+  }
+
+  return p.size === 's' ? p.theme.spacing.unit(8) : p.theme.spacing.unit(10);
+};
+
+const height = css<Pick<Props, 'height' | 'size'>>`
+  height: ${determineHeight}px;
 `;
 
 const hoverBorderStyles = css<Pick<Props, 'disabled'>>`
