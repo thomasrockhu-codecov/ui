@@ -1,10 +1,12 @@
 import React, { createElement, useCallback, useMemo, useState } from 'react';
 import { action } from '@storybook/addon-actions';
+import { number } from '@storybook/addon-knobs';
 import R from 'ramda';
 import styled from 'styled-components';
 import {
   Avatar,
   Box,
+  CardWithTitle,
   Flexbox,
   Icon,
   Input,
@@ -1425,6 +1427,25 @@ export const withoutSearchComponent = () => (
       ]}
       disableSearchComponent
     />
+  </Box>
+);
+
+export const withCustomHeight = () => (
+  <Box p={5} backgroundColor={(t) => t.color.disabledBackground}>
+    <CardWithTitle title="Setting a custom `height` overwrites the `size` prop">
+      <Input.Select
+        id="input-with-custom-height"
+        options={[
+          { value: 1, label: 'Strawberry 🍓' },
+          { value: 2, label: 'Blueberry 🫐' },
+          { value: 3, label: 'Banana 🍌' },
+        ]}
+        label="This is a tall input"
+        placeholder="What's your favourite berry?"
+        fullWidth
+        height={number('Height', 20)}
+      />
+    </CardWithTitle>
   </Box>
 );
 

@@ -1,6 +1,6 @@
 /* eslint-disable no-console */
 import React from 'react';
-import { select, withKnobs } from '@storybook/addon-knobs';
+import { boolean, select, withKnobs } from '@storybook/addon-knobs';
 
 import { Flexbox, Input } from '../../..';
 
@@ -18,6 +18,7 @@ export const defaultStory = () => (
     label="Phone number"
     placeholder="123 456 789"
     size={select('Size', { Small: 's', Normal: undefined }, undefined)}
+    disabled={boolean('Disabled', false)}
     onChange={console.log}
   />
 );

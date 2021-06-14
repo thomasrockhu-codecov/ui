@@ -282,6 +282,7 @@ exports[`Storyshots Molecules / Input / Phone Auto focus 1`] = `
   position: relative;
   height: 40px;
   padding: 0px 0;
+  background: #FFFFFF;
   border: solid;
   border-color: #BCBCB6;
   border-width: 1px;
@@ -809,6 +810,7 @@ exports[`Storyshots Molecules / Input / Phone Default 1`] = `
   position: relative;
   height: 40px;
   padding: 0px 0;
+  background: #FFFFFF;
   border: solid;
   border-color: #BCBCB6;
   border-width: 1px;
@@ -845,6 +847,7 @@ exports[`Storyshots Molecules / Input / Phone Default 1`] = `
       </div>
       <div
         className="c3 c4"
+        disabled={false}
         focused={false}
       >
         <div
@@ -1025,6 +1028,7 @@ exports[`Storyshots Molecules / Input / Phone Default 1`] = `
         </div>
         <div
           className="c3 c20"
+          disabled={false}
         >
           <span
             className="c10"
@@ -1038,6 +1042,7 @@ exports[`Storyshots Molecules / Input / Phone Default 1`] = `
         >
           <input
             className="NormalizedInput__Input-sc-1m4kmh9-0 c21"
+            disabled={false}
             name="default-example"
             onBlur={[Function]}
             onChange={[Function]}
@@ -1335,6 +1340,7 @@ exports[`Storyshots Molecules / Input / Phone Full width 1`] = `
   position: relative;
   height: 40px;
   padding: 0px 0;
+  background: #FFFFFF;
   border: solid;
   border-color: #BCBCB6;
   border-width: 1px;
@@ -1884,6 +1890,7 @@ exports[`Storyshots Molecules / Input / Phone Has an error 1`] = `
   position: relative;
   height: 40px;
   padding: 0px 0;
+  background: #FFFFFF;
   border: solid;
   border-color: #FF1900;
   border-width: 1px;
@@ -2424,6 +2431,7 @@ exports[`Storyshots Molecules / Input / Phone Has success 1`] = `
   position: relative;
   height: 40px;
   padding: 0px 0;
+  background: #FFFFFF;
   border: solid;
   border-color: #00D200;
   border-width: 1px;
@@ -2957,6 +2965,7 @@ exports[`Storyshots Molecules / Input / Phone Is disabled 1`] = `
   position: relative;
   height: 40px;
   padding: 0px 0;
+  background: #EBEBE8;
   border: solid;
   border-color: #BCBCB6;
   border-width: 1px;
@@ -3499,6 +3508,7 @@ exports[`Storyshots Molecules / Input / Phone Prefilled default values 1`] = `
   position: relative;
   height: 40px;
   padding: 0px 0;
+  background: #FFFFFF;
   border: solid;
   border-color: #BCBCB6;
   border-width: 1px;
@@ -4080,6 +4090,7 @@ exports[`Storyshots Molecules / Input / Phone Sort by country 1`] = `
   position: relative;
   height: 40px;
   padding: 0px 0;
+  background: #FFFFFF;
   border: solid;
   border-color: #BCBCB6;
   border-width: 1px;
@@ -5528,6 +5539,7 @@ exports[`Storyshots Molecules / Input / Phone With help text 1`] = `
   position: relative;
   height: 40px;
   padding: 0px 0;
+  background: #FFFFFF;
   border: solid;
   border-color: #BCBCB6;
   border-width: 1px;

@@ -192,6 +192,11 @@ const PhoneComponent = React.forwardRef<HTMLInputElement, Props>((props, ref) =>
         <StyledSelect
           label="country code"
           hideLabel
+          /**
+           * NOTE: Custom heights to accomdate the Select within another FormField
+           * Needs to be the standard height -2px to fit within the border of the container
+           * Converted to 4x units: 10 -> 9.5 for default, 8 -> 7.5 for size 's'
+           */
           height={size === 's' ? 7.5 : 9.5}
           disabled={disabled}
           options={sortByCountry ? sortedOptions : options}
