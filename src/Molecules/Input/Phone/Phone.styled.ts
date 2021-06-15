@@ -82,11 +82,11 @@ export const StyledInput = styled(NormalizedElements.Input).attrs((p) => ({
 }))<Partial<Props>>`
   border: 0;
   outline: none;
+  color: ${({ theme }) => theme.color.text};
   width: 100%;
   height: 100%;
-  padding-left: ${(p) => p.theme.spacing.unit(p.variant === 'quiet' ? 0 : 2)}px;
+  padding: 0px ${(p) => p.theme.spacing.unit(p.variant === 'quiet' ? 0 : 2)}px;
   margin: 0;
-  line-height: inherit;
   box-sizing: border-box;
   ${background}
   ${placeholderNormalization}
