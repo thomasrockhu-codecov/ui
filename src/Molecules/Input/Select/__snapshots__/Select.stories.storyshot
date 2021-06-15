@@ -14773,6 +14773,440 @@ Array [
 ]
 `;
 
+exports[`Storyshots Molecules / Input / Select With Custom Height 1`] = `
+.c0 {
+  padding: 20px;
+  background-color: #EBEBE8;
+}
+
+.c3 {
+  padding-left: 12px;
+  padding-top: 12px;
+  padding-right: 12px;
+  padding-bottom: 8px;
+  background-color: transparent;
+}
+
+.c7 {
+  padding-left: 12px;
+  padding-right: 12px;
+  padding-bottom: 20px;
+  background-color: transparent;
+}
+
+.c21 {
+  padding-left: 8px;
+  padding-right: 8px;
+  background-color: transparent;
+}
+
+.c1 {
+  background: #FFFFFF;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.03);
+}
+
+.c10 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c14 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c19 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.c12 {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.c24 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 20px;
+  height: 20px;
+  fill: #282823;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
+}
+
+.c17 {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  overflow: visible;
+  text-transform: none;
+}
+
+.c17,
+.c17[type='button'],
+.c17[type='reset'],
+.c17[type='submit'] {
+  -webkit-appearance: button;
+}
+
+.c17::-moz-focus-inner,
+.c17[type='button']::-moz-focus-inner,
+.c17[type='reset']::-moz-focus-inner,
+.c17[type='submit']::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+.c17:-moz-focusring,
+.c17[type='button']:-moz-focusring,
+.c17[type='reset']:-moz-focusring,
+.c17[type='submit']:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+.c5 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.3333333333333333;
+}
+
+.c13 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #6E6E69;
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c16 {
+  font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color: #282823;
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4285714285714286;
+}
+
+.c2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  max-height: 100%;
+}
+
+.c25 {
+  -webkit-transform: translateY(-50%) rotate(0);
+  -ms-transform: translateY(-50%) rotate(0);
+  transform: translateY(-50%) rotate(0);
+  -webkit-transform-origin: center center;
+  -ms-transform-origin: center center;
+  transform-origin: center center;
+  -webkit-transition: -webkit-transform 0.16s ease-out;
+  -webkit-transition: transform 0.16s ease-out;
+  transition: transform 0.16s ease-out;
+  position: absolute;
+  height: 8px;
+  top: 50%;
+  right: 4px;
+  pointer-events: none;
+}
+
+.c9 {
+  position: relative;
+  display: block;
+  width: 100%;
+}
+
+.c15 {
+  height: 80px;
+  border: 1px solid #BCBCB6;
+  position: relative;
+  background: #FFFFFF;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.c15:hover {
+  border-color: #4B4B46;
+}
+
+.c15:focus-within {
+  border-color: #0046FF;
+}
+
+.c15.focus-within {
+  border-color: #0046FF;
+}
+
+.c20 {
+  height: 100%;
+  width: 100%;
+}
+
+.c18 {
+  background: transparent;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  padding: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  border: 0;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  outline: 0;
+  text-align: initial;
+}
+
+.c18:active {
+  color: inherit;
+}
+
+.c23 {
+  width: 100%;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  text-align: left;
+}
+
+.c22 {
+  width: calc(100% - 20px - 4px);
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c8 {
+  display: none;
+}
+
+.c11 {
+  width: 100%;
+  display: inline-block;
+}
+
+@media (min-width:760px) {
+  .c3 {
+    padding-left: 20px;
+    padding-top: 16px;
+    padding-right: 20px;
+  }
+}
+
+@media (min-width:760px) {
+  .c7 {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+@media (min-width:760px) {
+  .c5 {
+    font-size: 20px;
+    line-height: 1.2;
+  }
+}
+
+@media not all and (min-width:760px) {
+  .c4 {
+    display: none;
+  }
+}
+
+@media not all and (max-width:759px) {
+  .c6 {
+    display: none;
+  }
+}
+
+<div
+  className="c0"
+>
+  <div
+    className="c1 c2"
+  >
+    <header
+      className="c3"
+    >
+      <div
+        className="c4"
+      >
+        <span
+          className="c5"
+        >
+          Setting a custom \`height\` overwrites the \`size\` prop
+        </span>
+      </div>
+      <div
+        className="c6"
+      >
+        <span
+          className="c5"
+        >
+          Setting a custom \`height\` overwrites the \`size\` prop
+        </span>
+      </div>
+    </header>
+    <div
+      className="c7"
+    >
+      <div>
+        <select
+          aria-hidden="true"
+          className="c8"
+          disabled={false}
+          onChange={[Function]}
+        >
+          <option
+            label="What's your favourite berry?"
+            value=""
+          />
+          <option
+            label="Strawberry 🍓"
+            value={1}
+          />
+          <option
+            label="Blueberry 🫐"
+            value={2}
+          />
+          <option
+            label="Banana 🍌"
+            value={3}
+          />
+        </select>
+        <div
+          className="c9"
+        >
+          <div
+            className="c10"
+          >
+            <div
+              className="c11"
+            >
+              <label
+                className="c12"
+                hidden={false}
+                htmlFor="input-with-custom-height"
+              >
+                <span
+                  className="c13"
+                >
+                  <div
+                    className="c14"
+                  >
+                    This is a tall input 
+                  </div>
+                </span>
+              </label>
+              <div
+                className="c15"
+                disabled={false}
+                height={20}
+                label="This is a tall input"
+                onBlur={[Function]}
+                onFocus={[Function]}
+                tabIndex={0}
+              >
+                <span
+                  className="c16"
+                >
+                  <button
+                    aria-expanded="false"
+                    aria-haspopup="listbox"
+                    aria-label="This is a tall input: What's your favourite berry?"
+                    className="c17 c18"
+                    data-testid="input-select-button"
+                    disabled={false}
+                    form=""
+                    id="input-with-custom-height"
+                    onClick={[Function]}
+                    tabIndex={0}
+                    type="button"
+                  >
+                    <div
+                      aria-hidden="true"
+                      className="c19 c20"
+                    >
+                      <div
+                        className="c21 c22"
+                      >
+                        <span
+                          className="c23"
+                        >
+                          What's your favourite berry?
+                        </span>
+                      </div>
+                    </div>
+                  </button>
+                </span>
+                <svg
+                  aria-hidden="true"
+                  className="c24 c25"
+                  focusable="false"
+                  open={false}
+                  preserveAspectRatio="xMidYMid meet"
+                  role="presentation"
+                  viewBox="0 0 24 24"
+                >
+                  <polygon
+                    points="19.969 4 24 8.027 12 20 0 8.027 4.031 4 12 11.952"
+                  />
+                </svg>
+              </div>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
 exports[`Storyshots Molecules / Input / Select With Label Tooltip 1`] = `
 .c15 {
   padding-left: 8px;

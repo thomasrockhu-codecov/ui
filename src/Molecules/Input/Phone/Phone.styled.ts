@@ -83,7 +83,8 @@ export const StyledInput = styled(NormalizedElements.Input).attrs((p) => ({
   border: 0;
   outline: none;
   width: 100%;
-  padding: ${(p) => p.theme.spacing.unit(p.variant === 'quiet' ? 0 : 2)}px;
+  height: 100%;
+  padding-left: ${(p) => p.theme.spacing.unit(p.variant === 'quiet' ? 0 : 2)}px;
   margin: 0;
   line-height: inherit;
   box-sizing: border-box;
@@ -117,9 +118,15 @@ export const StyledInput = styled(NormalizedElements.Input).attrs((p) => ({
       `}
 `;
 
-export const StyledWrapper = styled(Flexbox)<{ focused?: boolean; variant?: Variant }>`
+export const StyledWrapper = styled(Flexbox)<{
+  disabled?: boolean;
+  focused?: boolean;
+  variant?: Variant;
+}>`
   position: relative;
+  height: ${(p) => (p.size === 's' ? p.theme.spacing.unit(8) : p.theme.spacing.unit(10))}px;
   padding: ${(p) => p.theme.spacing.unit(p.variant === 'quiet' ? 1 : 0)}px 0;
+  background: ${(p) => (p.disabled ? p.theme.color.disabledBackground : p.theme.color.card)};
   ${borderStyles}
   ${({ focused, theme }) => (focused ? `border-color: ${theme.color.borderActive};` : '')}
 `;
