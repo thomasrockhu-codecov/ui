@@ -88,6 +88,7 @@ export const StyledInput = styled(NormalizedElements.Input).attrs((p) => ({
   padding: 0px ${(p) => p.theme.spacing.unit(p.variant === 'quiet' ? 0 : 2)}px;
   margin: 0;
   box-sizing: border-box;
+  line-height: inherit;
   ${background}
   ${placeholderNormalization}
   ${(p) =>
