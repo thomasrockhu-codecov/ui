@@ -48,6 +48,7 @@ const PhoneComponent = React.forwardRef<HTMLInputElement, Props>((props, ref) =>
     visuallyEmphasiseRequired,
     type,
     sortByCountry,
+    disableSearchComponent = true,
   } = props;
 
   const options = useMemo(
@@ -214,6 +215,7 @@ const PhoneComponent = React.forwardRef<HTMLInputElement, Props>((props, ref) =>
           onBlur={() => {
             setFocused(false);
           }}
+          disableSearchComponent={disableSearchComponent}
         />
         <StyledCountryCode container alignItems="center" disabled={disabled}>
           <Typography type="secondary" color={(t) => t.color[disabled ? 'label' : 'text']}>

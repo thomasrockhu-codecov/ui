@@ -54,4 +54,9 @@ export type Props = {
    * Used to sort the options list so the specified country comes first.
    */
   sortByCountry?: string;
+  /**
+   * Disables search results via keyboard typing.
+   * @default true
+   */
+  disableSearchComponent?: boolean;
 };
