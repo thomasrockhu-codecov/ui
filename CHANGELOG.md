@@ -1,3 +1,11 @@
+## [6.19.3](https://github.com/nordnet/ui/compare/v6.19.2...v6.19.3) (2021-06-15)
+
+
+### Bug Fixes
+
+* 🐛 Account for border height in Input phone component ([7979795](https://github.com/nordnet/ui/commit/7979795))
+* 🐛 phone input disabled style fix and add height stories ([b97d907](https://github.com/nordnet/ui/commit/b97d907))
+
 ## [6.19.2](https://github.com/nordnet/ui/compare/v6.19.1...v6.19.2) (2021-06-11)
 
 
