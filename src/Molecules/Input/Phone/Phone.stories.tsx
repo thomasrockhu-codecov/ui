@@ -135,3 +135,19 @@ export const sortByCountry = () => (
 sortByCountry.story = {
   name: 'Sort by country',
 };
+
+export const enableSearchComponent = () => (
+  <Input.Phone
+    name="enable-search-component-example"
+    label="Phone number"
+    placeholder="123 456 789"
+    size={select('Size', { Small: 's', Normal: undefined }, undefined)}
+    disabled={boolean('Disabled', false)}
+    onChange={console.log}
+    disableSearchComponent={false}
+  />
+);
+
+enableSearchComponent.story = {
+  name: 'Enable search component',
+};
