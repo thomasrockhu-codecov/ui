@@ -1,3 +1,11 @@
+## [6.19.4](https://github.com/nordnet/ui/compare/v6.19.3...v6.19.4) (2021-06-15)
+
+
+### Bug Fixes
+
+* 🐛 expose disableSearchComponent prop to PhoneInput ([7a4fc44](https://github.com/nordnet/ui/commit/7a4fc44))
+* 🐛 misalignment in phonenumber input in chrome ([87d0a8e](https://github.com/nordnet/ui/commit/87d0a8e))
+
 ## [6.19.3](https://github.com/nordnet/ui/compare/v6.19.2...v6.19.3) (2021-06-15)
 
 
