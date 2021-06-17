@@ -234,7 +234,7 @@ exports[`Storyshots Molecules / Input / Phone Auto focus 1`] = `
   background-color: #FFFFFF;
 }
 
-.c22 {
+.c23 {
   font-family: inherit;
   font-size: 100%;
   line-height: 1.15;
@@ -252,43 +252,43 @@ exports[`Storyshots Molecules / Input / Phone Auto focus 1`] = `
   background-color: #FFFFFF;
 }
 
-.c22::-webkit-input-placeholder {
+.c23::-webkit-input-placeholder {
   color: #6E6E69;
   line-height: inherit;
   opacity: 1;
 }
 
-.c22::-moz-placeholder {
+.c23::-moz-placeholder {
   color: #6E6E69;
   line-height: inherit;
   opacity: 1;
 }
 
-.c22:-ms-input-placeholder {
+.c23:-ms-input-placeholder {
   color: #6E6E69;
   line-height: inherit;
   opacity: 1;
 }
 
-.c22::placeholder {
+.c23::placeholder {
   color: #6E6E69;
   line-height: inherit;
   opacity: 1;
 }
 
-.c22:disabled::-webkit-input-placeholder {
+.c23:disabled::-webkit-input-placeholder {
   color: #A0A09B;
 }
 
-.c22:disabled::-moz-placeholder {
+.c23:disabled::-moz-placeholder {
   color: #A0A09B;
 }
 
-.c22:disabled:-ms-input-placeholder {
+.c23:disabled:-ms-input-placeholder {
   color: #A0A09B;
 }
 
-.c22:disabled::placeholder {
+.c23:disabled::placeholder {
   color: #A0A09B;
 }
 
@@ -309,6 +309,10 @@ exports[`Storyshots Molecules / Input / Phone Auto focus 1`] = `
 
 .c4:hover {
   border-color: #4B4B46;
+}
+
+.c22 {
+  width: inherit;
 }
 
 .c0 {
@@ -525,11 +529,11 @@ exports[`Storyshots Molecules / Input / Phone Auto focus 1`] = `
           className="c21"
         >
           <span
-            className="c10"
+            className="c10 c22"
           >
             <input
               autoFocus={true}
-              className="NormalizedInput__Input-sc-1m4kmh9-0 c22"
+              className="NormalizedInput__Input-sc-1m4kmh9-0 c23"
               name="default-example"
               onBlur={[Function]}
               onChange={[Function]}
@@ -780,7 +784,7 @@ exports[`Storyshots Molecules / Input / Phone Default 1`] = `
   background-color: #FFFFFF;
 }
 
-.c22 {
+.c23 {
   font-family: inherit;
   font-size: 100%;
   line-height: 1.15;
@@ -798,43 +802,43 @@ exports[`Storyshots Molecules / Input / Phone Default 1`] = `
   background-color: #FFFFFF;
 }
 
-.c22::-webkit-input-placeholder {
+.c23::-webkit-input-placeholder {
   color: #6E6E69;
   line-height: inherit;
   opacity: 1;
 }
 
-.c22::-moz-placeholder {
+.c23::-moz-placeholder {
   color: #6E6E69;
   line-height: inherit;
   opacity: 1;
 }
 
-.c22:-ms-input-placeholder {
+.c23:-ms-input-placeholder {
   color: #6E6E69;
   line-height: inherit;
   opacity: 1;
 }
 
-.c22::placeholder {
+.c23::placeholder {
   color: #6E6E69;
   line-height: inherit;
   opacity: 1;
 }
 
-.c22:disabled::-webkit-input-placeholder {
+.c23:disabled::-webkit-input-placeholder {
   color: #A0A09B;
 }
 
-.c22:disabled::-moz-placeholder {
+.c23:disabled::-moz-placeholder {
   color: #A0A09B;
 }
 
-.c22:disabled:-ms-input-placeholder {
+.c23:disabled:-ms-input-placeholder {
   color: #A0A09B;
 }
 
-.c22:disabled::placeholder {
+.c23:disabled::placeholder {
   color: #A0A09B;
 }
 
@@ -855,6 +859,10 @@ exports[`Storyshots Molecules / Input / Phone Default 1`] = `
 
 .c4:hover {
   border-color: #4B4B46;
+}
+
+.c22 {
+  width: inherit;
 }
 
 .c0 {
@@ -1073,10 +1081,10 @@ exports[`Storyshots Molecules / Input / Phone Default 1`] = `
           className="c21"
         >
           <span
-            className="c10"
+            className="c10 c22"
           >
             <input
-              className="NormalizedInput__Input-sc-1m4kmh9-0 c22"
+              className="NormalizedInput__Input-sc-1m4kmh9-0 c23"
               disabled={false}
               name="default-example"
               onBlur={[Function]}
@@ -1328,7 +1336,7 @@ exports[`Storyshots Molecules / Input / Phone Enable search component 1`] = `
   background-color: #FFFFFF;
 }
 
-.c22 {
+.c23 {
   font-family: inherit;
   font-size: 100%;
   line-height: 1.15;
@@ -1346,43 +1354,43 @@ exports[`Storyshots Molecules / Input / Phone Enable search component 1`] = `
   background-color: #FFFFFF;
 }
 
-.c22::-webkit-input-placeholder {
+.c23::-webkit-input-placeholder {
   color: #6E6E69;
   line-height: inherit;
   opacity: 1;
 }
 
-.c22::-moz-placeholder {
+.c23::-moz-placeholder {
   color: #6E6E69;
   line-height: inherit;
   opacity: 1;
 }
 
-.c22:-ms-input-placeholder {
+.c23:-ms-input-placeholder {
   color: #6E6E69;
   line-height: inherit;
   opacity: 1;
 }
 
-.c22::placeholder {
+.c23::placeholder {
   color: #6E6E69;
   line-height: inherit;
   opacity: 1;
 }
 
-.c22:disabled::-webkit-input-placeholder {
+.c23:disabled::-webkit-input-placeholder {
   color: #A0A09B;
 }
 
-.c22:disabled::-moz-placeholder {
+.c23:disabled::-moz-placeholder {
   color: #A0A09B;
 }
 
-.c22:disabled:-ms-input-placeholder {
+.c23:disabled:-ms-input-placeholder {
   color: #A0A09B;
 }
 
-.c22:disabled::placeholder {
+.c23:disabled::placeholder {
   color: #A0A09B;
 }
 
@@ -1403,6 +1411,10 @@ exports[`Storyshots Molecules / Input / Phone Enable search component 1`] = `
 
 .c4:hover {
   border-color: #4B4B46;
+}
+
+.c22 {
+  width: inherit;
 }
 
 .c0 {
@@ -1621,10 +1633,10 @@ exports[`Storyshots Molecules / Input / Phone Enable search component 1`] = `
           className="c21"
         >
           <span
-            className="c10"
+            className="c10 c22"
           >
             <input
-              className="NormalizedInput__Input-sc-1m4kmh9-0 c22"
+              className="NormalizedInput__Input-sc-1m4kmh9-0 c23"
               disabled={false}
               name="enable-search-component-example"
               onBlur={[Function]}
@@ -1876,7 +1888,7 @@ exports[`Storyshots Molecules / Input / Phone Full width 1`] = `
   background-color: #FFFFFF;
 }
 
-.c23 {
+.c24 {
   font-family: inherit;
   font-size: 100%;
   line-height: 1.15;
@@ -1894,43 +1906,43 @@ exports[`Storyshots Molecules / Input / Phone Full width 1`] = `
   background-color: #FFFFFF;
 }
 
-.c23::-webkit-input-placeholder {
+.c24::-webkit-input-placeholder {
   color: #6E6E69;
   line-height: inherit;
   opacity: 1;
 }
 
-.c23::-moz-placeholder {
+.c24::-moz-placeholder {
   color: #6E6E69;
   line-height: inherit;
   opacity: 1;
 }
 
-.c23:-ms-input-placeholder {
+.c24:-ms-input-placeholder {
   color: #6E6E69;
   line-height: inherit;
   opacity: 1;
 }
 
-.c23::placeholder {
+.c24::placeholder {
   color: #6E6E69;
   line-height: inherit;
   opacity: 1;
 }
 
-.c23:disabled::-webkit-input-placeholder {
+.c24:disabled::-webkit-input-placeholder {
   color: #A0A09B;
 }
 
-.c23:disabled::-moz-placeholder {
+.c24:disabled::-moz-placeholder {
   color: #A0A09B;
 }
 
-.c23:disabled:-ms-input-placeholder {
+.c24:disabled:-ms-input-placeholder {
   color: #A0A09B;
 }
 
-.c23:disabled::placeholder {
+.c24:disabled::placeholder {
   color: #A0A09B;
 }
 
@@ -1951,6 +1963,10 @@ exports[`Storyshots Molecules / Input / Phone Full width 1`] = `
 
 .c4:hover {
   border-color: #4B4B46;
+}
+
+.c23 {
+  width: inherit;
 }
 
 .c0 {
@@ -2172,10 +2188,10 @@ exports[`Storyshots Molecules / Input / Phone Full width 1`] = `
           className="c22"
         >
           <span
-            className="c11"
+            className="c11 c23"
           >
             <input
-              className="NormalizedInput__Input-sc-1m4kmh9-0 c23"
+              className="NormalizedInput__Input-sc-1m4kmh9-0 c24"
               name="full-width-example"
               onBlur={[Function]}
               onChange={[Function]}
@@ -2255,7 +2271,7 @@ exports[`Storyshots Molecules / Input / Phone Has an error 1`] = `
   align-items: center;
 }
 
-.c24 {
+.c25 {
   position: absolute;
   height: 1px;
   width: 1px;
@@ -2345,7 +2361,7 @@ exports[`Storyshots Molecules / Input / Phone Has an error 1`] = `
   line-height: 1.4285714285714286;
 }
 
-.c23 {
+.c24 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #FF1900;
   margin: 0;
@@ -2444,7 +2460,7 @@ exports[`Storyshots Molecules / Input / Phone Has an error 1`] = `
   background-color: #FFFFFF;
 }
 
-.c22 {
+.c23 {
   font-family: inherit;
   font-size: 100%;
   line-height: 1.15;
@@ -2462,43 +2478,43 @@ exports[`Storyshots Molecules / Input / Phone Has an error 1`] = `
   background-color: #FFFFFF;
 }
 
-.c22::-webkit-input-placeholder {
+.c23::-webkit-input-placeholder {
   color: #6E6E69;
   line-height: inherit;
   opacity: 1;
 }
 
-.c22::-moz-placeholder {
+.c23::-moz-placeholder {
   color: #6E6E69;
   line-height: inherit;
   opacity: 1;
 }
 
-.c22:-ms-input-placeholder {
+.c23:-ms-input-placeholder {
   color: #6E6E69;
   line-height: inherit;
   opacity: 1;
 }
 
-.c22::placeholder {
+.c23::placeholder {
   color: #6E6E69;
   line-height: inherit;
   opacity: 1;
 }
 
-.c22:disabled::-webkit-input-placeholder {
+.c23:disabled::-webkit-input-placeholder {
   color: #A0A09B;
 }
 
-.c22:disabled::-moz-placeholder {
+.c23:disabled::-moz-placeholder {
   color: #A0A09B;
 }
 
-.c22:disabled:-ms-input-placeholder {
+.c23:disabled:-ms-input-placeholder {
   color: #A0A09B;
 }
 
-.c22:disabled::placeholder {
+.c23:disabled::placeholder {
   color: #A0A09B;
 }
 
@@ -2519,6 +2535,10 @@ exports[`Storyshots Molecules / Input / Phone Has an error 1`] = `
 
 .c4:hover {
   border-color: #4B4B46;
+}
+
+.c22 {
+  width: inherit;
 }
 
 .c0 {
@@ -2736,11 +2756,11 @@ exports[`Storyshots Molecules / Input / Phone Has an error 1`] = `
           className="c21"
         >
           <span
-            className="c10"
+            className="c10 c22"
           >
             <input
               aria-invalid={true}
-              className="NormalizedInput__Input-sc-1m4kmh9-0 c22"
+              className="NormalizedInput__Input-sc-1m4kmh9-0 c23"
               name="has-error-example"
               onBlur={[Function]}
               onChange={[Function]}
@@ -2756,10 +2776,10 @@ exports[`Storyshots Molecules / Input / Phone Has an error 1`] = `
   </label>
   <div>
     <span
-      className="c23"
+      className="c24"
     >
       <div
-        className="c24"
+        className="c25"
       >
         Error: 
       </div>
@@ -3003,7 +3023,7 @@ exports[`Storyshots Molecules / Input / Phone Has success 1`] = `
   background-color: #FFFFFF;
 }
 
-.c22 {
+.c23 {
   font-family: inherit;
   font-size: 100%;
   line-height: 1.15;
@@ -3021,43 +3041,43 @@ exports[`Storyshots Molecules / Input / Phone Has success 1`] = `
   background-color: #FFFFFF;
 }
 
-.c22::-webkit-input-placeholder {
+.c23::-webkit-input-placeholder {
   color: #6E6E69;
   line-height: inherit;
   opacity: 1;
 }
 
-.c22::-moz-placeholder {
+.c23::-moz-placeholder {
   color: #6E6E69;
   line-height: inherit;
   opacity: 1;
 }
 
-.c22:-ms-input-placeholder {
+.c23:-ms-input-placeholder {
   color: #6E6E69;
   line-height: inherit;
   opacity: 1;
 }
 
-.c22::placeholder {
+.c23::placeholder {
   color: #6E6E69;
   line-height: inherit;
   opacity: 1;
 }
 
-.c22:disabled::-webkit-input-placeholder {
+.c23:disabled::-webkit-input-placeholder {
   color: #A0A09B;
 }
 
-.c22:disabled::-moz-placeholder {
+.c23:disabled::-moz-placeholder {
   color: #A0A09B;
 }
 
-.c22:disabled:-ms-input-placeholder {
+.c23:disabled:-ms-input-placeholder {
   color: #A0A09B;
 }
 
-.c22:disabled::placeholder {
+.c23:disabled::placeholder {
   color: #A0A09B;
 }
 
@@ -3078,6 +3098,10 @@ exports[`Storyshots Molecules / Input / Phone Has success 1`] = `
 
 .c4:hover {
   border-color: #4B4B46;
+}
+
+.c22 {
+  width: inherit;
 }
 
 .c0 {
@@ -3295,10 +3319,10 @@ exports[`Storyshots Molecules / Input / Phone Has success 1`] = `
           className="c21"
         >
           <span
-            className="c10"
+            className="c10 c22"
           >
             <input
-              className="NormalizedInput__Input-sc-1m4kmh9-0 c22"
+              className="NormalizedInput__Input-sc-1m4kmh9-0 c23"
               name="has-success-example"
               onBlur={[Function]}
               onChange={[Function]}
@@ -3554,7 +3578,7 @@ exports[`Storyshots Molecules / Input / Phone Is disabled 1`] = `
   background-color: #EBEBE8;
 }
 
-.c23 {
+.c24 {
   font-family: inherit;
   font-size: 100%;
   line-height: 1.15;
@@ -3573,43 +3597,43 @@ exports[`Storyshots Molecules / Input / Phone Is disabled 1`] = `
   cursor: not-allowed;
 }
 
-.c23::-webkit-input-placeholder {
+.c24::-webkit-input-placeholder {
   color: #6E6E69;
   line-height: inherit;
   opacity: 1;
 }
 
-.c23::-moz-placeholder {
+.c24::-moz-placeholder {
   color: #6E6E69;
   line-height: inherit;
   opacity: 1;
 }
 
-.c23:-ms-input-placeholder {
+.c24:-ms-input-placeholder {
   color: #6E6E69;
   line-height: inherit;
   opacity: 1;
 }
 
-.c23::placeholder {
+.c24::placeholder {
   color: #6E6E69;
   line-height: inherit;
   opacity: 1;
 }
 
-.c23:disabled::-webkit-input-placeholder {
+.c24:disabled::-webkit-input-placeholder {
   color: #A0A09B;
 }
 
-.c23:disabled::-moz-placeholder {
+.c24:disabled::-moz-placeholder {
   color: #A0A09B;
 }
 
-.c23:disabled:-ms-input-placeholder {
+.c24:disabled:-ms-input-placeholder {
   color: #A0A09B;
 }
 
-.c23:disabled::placeholder {
+.c24:disabled::placeholder {
   color: #A0A09B;
 }
 
@@ -3626,6 +3650,10 @@ exports[`Storyshots Molecules / Input / Phone Is disabled 1`] = `
 
 .c4:focus {
   border-width: 1px;
+}
+
+.c23 {
+  width: inherit;
 }
 
 .c0 {
@@ -3861,10 +3889,10 @@ exports[`Storyshots Molecules / Input / Phone Is disabled 1`] = `
           className="c22"
         >
           <span
-            className="c11"
+            className="c11 c23"
           >
             <input
-              className="NormalizedInput__Input-sc-1m4kmh9-0 c23"
+              className="NormalizedInput__Input-sc-1m4kmh9-0 c24"
               defaultValue="123 456 789"
               disabled={true}
               name="disabled-example"
@@ -4116,7 +4144,7 @@ exports[`Storyshots Molecules / Input / Phone Prefilled default values 1`] = `
   background-color: #FFFFFF;
 }
 
-.c22 {
+.c23 {
   font-family: inherit;
   font-size: 100%;
   line-height: 1.15;
@@ -4134,43 +4162,43 @@ exports[`Storyshots Molecules / Input / Phone Prefilled default values 1`] = `
   background-color: #FFFFFF;
 }
 
-.c22::-webkit-input-placeholder {
+.c23::-webkit-input-placeholder {
   color: #6E6E69;
   line-height: inherit;
   opacity: 1;
 }
 
-.c22::-moz-placeholder {
+.c23::-moz-placeholder {
   color: #6E6E69;
   line-height: inherit;
   opacity: 1;
 }
 
-.c22:-ms-input-placeholder {
+.c23:-ms-input-placeholder {
   color: #6E6E69;
   line-height: inherit;
   opacity: 1;
 }
 
-.c22::placeholder {
+.c23::placeholder {
   color: #6E6E69;
   line-height: inherit;
   opacity: 1;
 }
 
-.c22:disabled::-webkit-input-placeholder {
+.c23:disabled::-webkit-input-placeholder {
   color: #A0A09B;
 }
 
-.c22:disabled::-moz-placeholder {
+.c23:disabled::-moz-placeholder {
   color: #A0A09B;
 }
 
-.c22:disabled:-ms-input-placeholder {
+.c23:disabled:-ms-input-placeholder {
   color: #A0A09B;
 }
 
-.c22:disabled::placeholder {
+.c23:disabled::placeholder {
   color: #A0A09B;
 }
 
@@ -4191,6 +4219,10 @@ exports[`Storyshots Molecules / Input / Phone Prefilled default values 1`] = `
 
 .c4:hover {
   border-color: #4B4B46;
+}
+
+.c22 {
+  width: inherit;
 }
 
 .c0 {
@@ -4424,10 +4456,10 @@ exports[`Storyshots Molecules / Input / Phone Prefilled default values 1`] = `
           className="c21"
         >
           <span
-            className="c10"
+            className="c10 c22"
           >
             <input
-              className="NormalizedInput__Input-sc-1m4kmh9-0 c22"
+              className="NormalizedInput__Input-sc-1m4kmh9-0 c23"
               defaultValue="123 456 789"
               name="disabled-example"
               onBlur={[Function]}
@@ -4458,7 +4490,7 @@ exports[`Storyshots Molecules / Input / Phone Sort by country 1`] = `
   overflow: hidden;
 }
 
-.c24 {
+.c25 {
   height: 12px;
   border: 1px solid #EBEBE8;
   box-sizing: border-box;
@@ -4563,7 +4595,7 @@ exports[`Storyshots Molecules / Input / Phone Sort by country 1`] = `
   display: block;
 }
 
-.c25 {
+.c26 {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -4716,7 +4748,7 @@ exports[`Storyshots Molecules / Input / Phone Sort by country 1`] = `
   background-color: #FFFFFF;
 }
 
-.c23 {
+.c24 {
   font-family: inherit;
   font-size: 100%;
   line-height: 1.15;
@@ -4734,43 +4766,43 @@ exports[`Storyshots Molecules / Input / Phone Sort by country 1`] = `
   background-color: #FFFFFF;
 }
 
-.c23::-webkit-input-placeholder {
+.c24::-webkit-input-placeholder {
   color: #6E6E69;
   line-height: inherit;
   opacity: 1;
 }
 
-.c23::-moz-placeholder {
+.c24::-moz-placeholder {
   color: #6E6E69;
   line-height: inherit;
   opacity: 1;
 }
 
-.c23:-ms-input-placeholder {
+.c24:-ms-input-placeholder {
   color: #6E6E69;
   line-height: inherit;
   opacity: 1;
 }
 
-.c23::placeholder {
+.c24::placeholder {
   color: #6E6E69;
   line-height: inherit;
   opacity: 1;
 }
 
-.c23:disabled::-webkit-input-placeholder {
+.c24:disabled::-webkit-input-placeholder {
   color: #A0A09B;
 }
 
-.c23:disabled::-moz-placeholder {
+.c24:disabled::-moz-placeholder {
   color: #A0A09B;
 }
 
-.c23:disabled:-ms-input-placeholder {
+.c24:disabled:-ms-input-placeholder {
   color: #A0A09B;
 }
 
-.c23:disabled::placeholder {
+.c24:disabled::placeholder {
   color: #A0A09B;
 }
 
@@ -4791,6 +4823,10 @@ exports[`Storyshots Molecules / Input / Phone Sort by country 1`] = `
 
 .c5:hover {
   border-color: #4B4B46;
+}
+
+.c23 {
+  width: inherit;
 }
 
 .c1 {
@@ -5027,10 +5063,10 @@ exports[`Storyshots Molecules / Input / Phone Sort by country 1`] = `
             className="c22"
           >
             <span
-              className="c11"
+              className="c11 c23"
             >
               <input
-                className="NormalizedInput__Input-sc-1m4kmh9-0 c23"
+                className="NormalizedInput__Input-sc-1m4kmh9-0 c24"
                 name="country-code-example"
                 onBlur={[Function]}
                 onChange={[Function]}
@@ -5253,10 +5289,10 @@ exports[`Storyshots Molecules / Input / Phone Sort by country 1`] = `
             className="c22"
           >
             <span
-              className="c11"
+              className="c11 c23"
             >
               <input
-                className="NormalizedInput__Input-sc-1m4kmh9-0 c23"
+                className="NormalizedInput__Input-sc-1m4kmh9-0 c24"
                 name="country-code-example"
                 onBlur={[Function]}
                 onChange={[Function]}
@@ -5420,7 +5456,7 @@ exports[`Storyshots Molecules / Input / Phone Sort by country 1`] = `
                               className="c17"
                             >
                               <svg
-                                className="c24"
+                                className="c25"
                                 focusable="false"
                                 role="img"
                                 viewBox="0 0 640 480"
@@ -5479,10 +5515,10 @@ exports[`Storyshots Molecules / Input / Phone Sort by country 1`] = `
             className="c22"
           >
             <span
-              className="c11"
+              className="c11 c23"
             >
               <input
-                className="NormalizedInput__Input-sc-1m4kmh9-0 c23"
+                className="NormalizedInput__Input-sc-1m4kmh9-0 c24"
                 name="country-code-example"
                 onBlur={[Function]}
                 onChange={[Function]}
@@ -5713,10 +5749,10 @@ exports[`Storyshots Molecules / Input / Phone Sort by country 1`] = `
             className="c22"
           >
             <span
-              className="c11"
+              className="c11 c23"
             >
               <input
-                className="NormalizedInput__Input-sc-1m4kmh9-0 c23"
+                className="NormalizedInput__Input-sc-1m4kmh9-0 c24"
                 name="country-code-example"
                 onBlur={[Function]}
                 onChange={[Function]}
@@ -5881,7 +5917,7 @@ exports[`Storyshots Molecules / Input / Phone Sort by country 1`] = `
                             >
                               <svg
                                 aria-hidden="false"
-                                className="c25"
+                                className="c26"
                                 focusable="false"
                                 preserveAspectRatio="xMidYMid meet"
                                 role="img"
@@ -5936,10 +5972,10 @@ exports[`Storyshots Molecules / Input / Phone Sort by country 1`] = `
             className="c22"
           >
             <span
-              className="c11"
+              className="c11 c23"
             >
               <input
-                className="NormalizedInput__Input-sc-1m4kmh9-0 c23"
+                className="NormalizedInput__Input-sc-1m4kmh9-0 c24"
                 name="country-code-example"
                 onBlur={[Function]}
                 onChange={[Function]}
@@ -6100,7 +6136,7 @@ exports[`Storyshots Molecules / Input / Phone With help text 1`] = `
   line-height: 1.4285714285714286;
 }
 
-.c23 {
+.c24 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: #6E6E69;
   margin: 0;
@@ -6199,7 +6235,7 @@ exports[`Storyshots Molecules / Input / Phone With help text 1`] = `
   background-color: #FFFFFF;
 }
 
-.c22 {
+.c23 {
   font-family: inherit;
   font-size: 100%;
   line-height: 1.15;
@@ -6217,43 +6253,43 @@ exports[`Storyshots Molecules / Input / Phone With help text 1`] = `
   background-color: #FFFFFF;
 }
 
-.c22::-webkit-input-placeholder {
+.c23::-webkit-input-placeholder {
   color: #6E6E69;
   line-height: inherit;
   opacity: 1;
 }
 
-.c22::-moz-placeholder {
+.c23::-moz-placeholder {
   color: #6E6E69;
   line-height: inherit;
   opacity: 1;
 }
 
-.c22:-ms-input-placeholder {
+.c23:-ms-input-placeholder {
   color: #6E6E69;
   line-height: inherit;
   opacity: 1;
 }
 
-.c22::placeholder {
+.c23::placeholder {
   color: #6E6E69;
   line-height: inherit;
   opacity: 1;
 }
 
-.c22:disabled::-webkit-input-placeholder {
+.c23:disabled::-webkit-input-placeholder {
   color: #A0A09B;
 }
 
-.c22:disabled::-moz-placeholder {
+.c23:disabled::-moz-placeholder {
   color: #A0A09B;
 }
 
-.c22:disabled:-ms-input-placeholder {
+.c23:disabled:-ms-input-placeholder {
   color: #A0A09B;
 }
 
-.c22:disabled::placeholder {
+.c23:disabled::placeholder {
   color: #A0A09B;
 }
 
@@ -6274,6 +6310,10 @@ exports[`Storyshots Molecules / Input / Phone With help text 1`] = `
 
 .c4:hover {
   border-color: #4B4B46;
+}
+
+.c22 {
+  width: inherit;
 }
 
 .c0 {
@@ -6490,10 +6530,10 @@ exports[`Storyshots Molecules / Input / Phone With help text 1`] = `
           className="c21"
         >
           <span
-            className="c10"
+            className="c10 c22"
           >
             <input
-              className="NormalizedInput__Input-sc-1m4kmh9-0 c22"
+              className="NormalizedInput__Input-sc-1m4kmh9-0 c23"
               name="with-help-text-example"
               onBlur={[Function]}
               onChange={[Function]}
@@ -6509,7 +6549,7 @@ exports[`Storyshots Molecules / Input / Phone With help text 1`] = `
   </label>
   <div>
     <span
-      className="c23"
+      className="c24"
     >
       Please fill in your phone number
     </span>
