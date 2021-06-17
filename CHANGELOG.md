@@ -1,3 +1,10 @@
+## [6.19.5](https://github.com/nordnet/ui/compare/v6.19.4...v6.19.5) (2021-06-17)
+
+
+### Bug Fixes
+
+* 🐛 Make width of input in Phone component inherit from parent ([0d1330a](https://github.com/nordnet/ui/commit/0d1330a))
+
 ## [6.19.4](https://github.com/nordnet/ui/compare/v6.19.3...v6.19.4) (2021-06-15)
 
 
