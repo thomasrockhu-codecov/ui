@@ -11,6 +11,7 @@ import {
   StyledInput,
   StyledWrapper,
   StyledBox,
+  StyledTypography,
 } from './Phone.styled';
 
 const hasError = (error?: Props['error']) => error && error !== '';
@@ -223,7 +224,7 @@ const PhoneComponent = React.forwardRef<HTMLInputElement, Props>((props, ref) =>
           </Typography>
         </StyledCountryCode>
         <Flexbox container alignItems="center" width="100%">
-          <Typography type="secondary">
+          <StyledTypography type="secondary">
             <StyledInput
               onChange={changePhoneNumber}
               defaultValue={defaultValue?.phoneNumber}
@@ -260,7 +261,7 @@ const PhoneComponent = React.forwardRef<HTMLInputElement, Props>((props, ref) =>
                 onBlur(e);
               }}
             />
-          </Typography>
+          </StyledTypography>
         </Flexbox>
       </StyledWrapper>
     </FormField>

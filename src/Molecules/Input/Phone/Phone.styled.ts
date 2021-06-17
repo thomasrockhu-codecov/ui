@@ -1,6 +1,6 @@
 import styled, { css } from 'styled-components';
 import { Props, Variant } from './Phone.types';
-import { Box, Flexbox } from '../../..';
+import { Box, Flexbox, Typography } from '../../..';
 import { Select } from '../Select';
 import NormalizedElements from '../../../common/NormalizedElements';
 
@@ -143,4 +143,8 @@ export const StyledBox = styled(Box)<{ focused?: boolean; isKeyboardNavigation?:
   }
 `
       : ''}
+`;
+
+export const StyledTypography = styled(Typography)`
+  width: inherit;
 `;
