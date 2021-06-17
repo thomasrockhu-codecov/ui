@@ -1,4 +1,4 @@
-import React, { useContext, useEffect, useState } from 'react';
+import React, { useCallback, useContext, useEffect, useState } from 'react';
 import styled, { ThemeContext } from 'styled-components';
 import R from 'ramda';
 
@@ -12,11 +12,13 @@ const StyledDiv = styled.div<{ query: Props['query'] }>`
     display: none;
   }
 `;
+
 const useMedia = (query: string | ((t: Theme) => string)) => {
   const theme = useContext(ThemeContext);
   const [matches, setMatches] = useState<boolean | null>(null);
   const mediaQuery = (typeof query === 'string' ? query : query(theme)).replace('@media ', '');
 
+  const mediaChangeHandler = useCallback((e: MediaQueryListEvent) => setMatches(e.matches), []);
   // Effect won't run during SSR
   useEffect(() => {
     if (typeof window === 'undefined' || typeof window.matchMedia !== 'function') {
@@ -27,15 +29,14 @@ const useMedia = (query: string | ((t: Theme) => string)) => {
 
     // Set matches first time
     setMatches(media.matches);
-    const handler = (e: MediaQueryListEvent) => setMatches(e.matches);
 
     // Then update matches
     // if screen hits new breakpoint
-    media.addListener(handler);
+    media.addEventListener('change', mediaChangeHandler);
 
     // And of course unsubscribe onunmount
-    return () => media.removeListener(handler);
-  }, [mediaQuery]);
+    return () => media.removeEventListener('change', mediaChangeHandler);
+  }, [mediaChangeHandler, mediaQuery]);
 
   return matches;
 };
