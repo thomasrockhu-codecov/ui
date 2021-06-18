@@ -2982,6 +2982,14 @@ Array [
 
 }
 
+@media (max-width:759px) {
+
+}
+
+@media (max-width:759px) {
+
+}
+
 <div
     className="c0"
   >
@@ -3215,6 +3223,18 @@ Array [
 
 @media (min-width:1600px) {
 
+}
+
+@media (max-width:759px) {
+  .c5 {
+    padding: 0 12px;
+  }
+}
+
+@media (max-width:759px) {
+  .c0 {
+    padding: 20px 12px 0 12px;
+  }
 }
 
 <portal-dummy>

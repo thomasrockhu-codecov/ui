@@ -534,6 +534,18 @@ exports[`Storyshots Molecules / Tooltip Integration: With Drawer and Modal 1`] =
 
 }
 
+@media (max-width:759px) {
+  .c5 {
+    padding: 0 12px;
+  }
+}
+
+@media (max-width:759px) {
+  .c0 {
+    padding: 20px 12px 0 12px;
+  }
+}
+
 <portal-dummy>
   <div
     data-focus-guard={true}
