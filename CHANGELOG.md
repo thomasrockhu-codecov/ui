@@ -1,3 +1,10 @@
+## [6.19.6](https://github.com/nordnet/ui/compare/v6.19.5...v6.19.6) (2021-06-18)
+
+
+### Bug Fixes
+
+* add mobile paddings to drawer ([81574af](https://github.com/nordnet/ui/commit/81574af))
+
 ## [6.19.5](https://github.com/nordnet/ui/compare/v6.19.4...v6.19.5) (2021-06-17)
 
 
