@@ -73,8 +73,8 @@ const PhoneComponent = React.forwardRef<HTMLInputElement, Props>((props, ref) =>
         flag: <Flag country="no" height={3} />,
       },
       {
-        label: <CountryCodeLabel countryCode="fi" prefixCode="+385" />,
-        value: '385',
+        label: <CountryCodeLabel countryCode="fi" prefixCode="+358" />,
+        value: '358',
         country: 'fi',
         flag: <Flag country="fi" height={3} />,
       },
