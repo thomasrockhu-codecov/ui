@@ -1,3 +1,10 @@
+## [6.19.7](https://github.com/nordnet/ui/compare/v6.19.6...v6.19.7) (2021-06-22)
+
+
+### Bug Fixes
+
+* 🐛 adjust finnish country code for phone input ([56117cb](https://github.com/nordnet/ui/commit/56117cb))
+
 ## [6.19.6](https://github.com/nordnet/ui/compare/v6.19.5...v6.19.6) (2021-06-18)
 
 
