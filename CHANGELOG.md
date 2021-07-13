@@ -1,3 +1,11 @@
+## [6.19.8](https://github.com/nordnet/ui/compare/v6.19.7...v6.19.8) (2021-07-13)
+
+
+### Bug Fixes
+
+* **CssGrid:** stop warning about potential ie11 problems, we dont support it anymore ([af713fd](https://github.com/nordnet/ui/commit/af713fd))
+* **IconBase:** omit focus from being passed down to svg ([4b39fb5](https://github.com/nordnet/ui/commit/4b39fb5))
+
 ## [6.19.7](https://github.com/nordnet/ui/compare/v6.19.6...v6.19.7) (2021-06-22)
 
 
