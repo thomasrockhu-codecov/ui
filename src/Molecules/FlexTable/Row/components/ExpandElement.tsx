@@ -58,7 +58,9 @@ export const ExpandElement: React.FC<
           disabled,
         }
       : {
+          expanded: false,
           as: rowType === 'header' ? FlexTable.Header : FlexTable.Footer,
+          onClick: () => {},
         };
 
   return (

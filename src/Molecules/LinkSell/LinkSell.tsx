@@ -33,7 +33,7 @@ export const LinkSell: LinkSellComponent = ({
   rel,
 }) => (
   <StyledLink
-    {...(disabled ? { as: 'span' } : {})}
+    {...(disabled ? { as: 'span' as any } : {})}
     className={className}
     disabled={disabled}
     onClick={onClick}
