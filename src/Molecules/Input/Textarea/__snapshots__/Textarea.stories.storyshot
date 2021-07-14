@@ -130,7 +130,7 @@ Array [
           className="c4"
         >
           <textarea
-            className="NormalizedTextarea__Textarea-i5on9-0 c5"
+            className="NormalizedTextarea__Textarea-sc-i5on9-0 c5"
             onBlur={[Function]}
             onChange={[Function]}
             onClick={[Function]}
@@ -274,7 +274,7 @@ exports[`Storyshots Molecules / Input / Textarea Default 1`] = `
         className="c4"
       >
         <textarea
-          className="NormalizedTextarea__Textarea-i5on9-0 c5"
+          className="NormalizedTextarea__Textarea-sc-i5on9-0 c5"
           placeholder="Placeholder"
           rows={3}
         />
@@ -406,7 +406,7 @@ exports[`Storyshots Molecules / Input / Textarea Disabled 1`] = `
         className="c4"
       >
         <textarea
-          className="NormalizedTextarea__Textarea-i5on9-0 c5"
+          className="NormalizedTextarea__Textarea-sc-i5on9-0 c5"
           disabled={true}
           placeholder="Placeholder"
           rows={3}
@@ -623,7 +623,7 @@ exports[`Storyshots Molecules / Input / Textarea Edge cases 1`] = `
               className="c7"
             >
               <textarea
-                className="NormalizedTextarea__Textarea-i5on9-0 c8"
+                className="NormalizedTextarea__Textarea-sc-i5on9-0 c8"
                 placeholder="If placeholder goes too long though, it probably should be truncated into ellipsis, right?"
                 rows={3}
               />
@@ -669,7 +669,7 @@ exports[`Storyshots Molecules / Input / Textarea Edge cases 1`] = `
               className="c7"
             >
               <textarea
-                className="NormalizedTextarea__Textarea-i5on9-0 c8"
+                className="NormalizedTextarea__Textarea-sc-i5on9-0 c8"
                 placeholder=""
                 rows={3}
               />
@@ -834,7 +834,7 @@ exports[`Storyshots Molecules / Input / Textarea Error if empty text 1`] = `
       >
         <textarea
           aria-invalid={true}
-          className="NormalizedTextarea__Textarea-i5on9-0 c5"
+          className="NormalizedTextarea__Textarea-sc-i5on9-0 c5"
           onChange={[Function]}
           placeholder="This is a placeholder"
           rows={3}
@@ -992,7 +992,7 @@ exports[`Storyshots Molecules / Input / Textarea Extra info below 1`] = `
         className="c4"
       >
         <textarea
-          className="NormalizedTextarea__Textarea-i5on9-0 c5"
+          className="NormalizedTextarea__Textarea-sc-i5on9-0 c5"
           placeholder="Placeholder"
           rows={3}
         />
@@ -1154,7 +1154,7 @@ exports[`Storyshots Molecules / Input / Textarea Extra info with error 1`] = `
       >
         <textarea
           aria-invalid={true}
-          className="NormalizedTextarea__Textarea-i5on9-0 c5"
+          className="NormalizedTextarea__Textarea-sc-i5on9-0 c5"
           onChange={[Function]}
           placeholder="This is a placeholder"
           rows={3}
@@ -1303,7 +1303,7 @@ exports[`Storyshots Molecules / Input / Textarea Full width 1`] = `
         className="c4"
       >
         <textarea
-          className="NormalizedTextarea__Textarea-i5on9-0 c5"
+          className="NormalizedTextarea__Textarea-sc-i5on9-0 c5"
           placeholder="Placeholder"
           rows={3}
         />
@@ -1436,7 +1436,7 @@ exports[`Storyshots Molecules / Input / Textarea Hidden label 1`] = `
         className="c4"
       >
         <textarea
-          className="NormalizedTextarea__Textarea-i5on9-0 c5"
+          className="NormalizedTextarea__Textarea-sc-i5on9-0 c5"
           placeholder="Placeholder"
           rows={3}
         />
@@ -1580,7 +1580,7 @@ exports[`Storyshots Molecules / Input / Textarea On a coloured background 1`] = 
           className="c5"
         >
           <textarea
-            className="NormalizedTextarea__Textarea-i5on9-0 c6"
+            className="NormalizedTextarea__Textarea-sc-i5on9-0 c6"
             placeholder="Placeholder"
             rows={3}
           />
@@ -1823,7 +1823,7 @@ Array [
                 className="c7"
               >
                 <textarea
-                  className="NormalizedTextarea__Textarea-i5on9-0 c8"
+                  className="NormalizedTextarea__Textarea-sc-i5on9-0 c8"
                   placeholder="Placeholder"
                   required={true}
                   rows={3}
@@ -1863,7 +1863,7 @@ Array [
                 className="c7"
               >
                 <textarea
-                  className="NormalizedTextarea__Textarea-i5on9-0 c8"
+                  className="NormalizedTextarea__Textarea-sc-i5on9-0 c8"
                   placeholder="Placeholder"
                   required={true}
                   rows={3}
@@ -2016,7 +2016,7 @@ exports[`Storyshots Molecules / Input / Textarea Specific width 1`] = `
         className="c4"
       >
         <textarea
-          className="NormalizedTextarea__Textarea-i5on9-0 c5"
+          className="NormalizedTextarea__Textarea-sc-i5on9-0 c5"
           placeholder="Placeholder"
           rows={3}
         />
@@ -2152,7 +2152,7 @@ exports[`Storyshots Molecules / Input / Textarea Success 1`] = `
         className="c4"
       >
         <textarea
-          className="NormalizedTextarea__Textarea-i5on9-0 c5"
+          className="NormalizedTextarea__Textarea-sc-i5on9-0 c5"
           placeholder="Placeholder"
           rows={3}
         />
@@ -2289,7 +2289,7 @@ exports[`Storyshots Molecules / Input / Textarea With auto focus 1`] = `
       >
         <textarea
           autoFocus={true}
-          className="NormalizedTextarea__Textarea-i5on9-0 c5"
+          className="NormalizedTextarea__Textarea-sc-i5on9-0 c5"
           placeholder="Placeholder"
           rows={3}
         />
@@ -2425,7 +2425,7 @@ exports[`Storyshots Molecules / Input / Textarea With default value (Uncontrolle
         className="c4"
       >
         <textarea
-          className="NormalizedTextarea__Textarea-i5on9-0 c5"
+          className="NormalizedTextarea__Textarea-sc-i5on9-0 c5"
           defaultValue="Some predefined text"
           placeholder="Placeholder"
           rows={3}
@@ -2619,7 +2619,7 @@ Array [
           className="c7"
         >
           <textarea
-            className="NormalizedTextarea__Textarea-i5on9-0 c8"
+            className="NormalizedTextarea__Textarea-sc-i5on9-0 c8"
             placeholder="Placeholder"
             rows={3}
           />
@@ -2810,7 +2810,7 @@ exports[`Storyshots Molecules / Input / Textarea With tooltip as label addon 1`]
         className="c7"
       >
         <textarea
-          className="NormalizedTextarea__Textarea-i5on9-0 c8"
+          className="NormalizedTextarea__Textarea-sc-i5on9-0 c8"
           placeholder="Placeholder"
           rows={3}
         />
@@ -2946,7 +2946,7 @@ exports[`Storyshots Molecules / Input / Textarea With value (Controlled behaviou
         className="c4"
       >
         <textarea
-          className="NormalizedTextarea__Textarea-i5on9-0 c5"
+          className="NormalizedTextarea__Textarea-sc-i5on9-0 c5"
           placeholder="Placeholder"
           rows={3}
           value="Some predefined text"

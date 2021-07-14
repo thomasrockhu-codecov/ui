@@ -4,7 +4,9 @@ module.exports = {
   testPathIgnorePatterns: ['/dist/', '/node_modules/'],
   testEnvironment: 'jest-environment-jsdom-fourteen',
   moduleFileExtensions: ['js', 'ts', 'tsx', 'json', 'md'],
-  transformIgnorePatterns: ['node_modules/(?!(@statecharts|react-syntax-highlighter)/.*)'],
+  transformIgnorePatterns: [
+    'node_modules/(?!(@statecharts|@storybook|react-syntax-highlighter)/.*)',
+  ],
   moduleNameMapper: {
     '\\.(mdx?)$': '<rootDir>/src/mdMock.ts',
   },
