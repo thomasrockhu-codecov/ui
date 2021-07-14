@@ -10,26 +10,23 @@ module.exports = {
   addons: [
     '@storybook/addon-storysource',
     '@storybook/addon-knobs',
-    '@storybook/addon-docs',
     '@storybook/addon-actions',
     '@storybook/addon-a11y',
     '@storybook/addon-links',
     '@storybook/addon-viewport',
     'storybook-addon-intl',
+    {
+      name: '@storybook/addon-docs',
+      options: {
+        sourceLoaderOptions: {
+          parser: 'typescript',
+        },
+      },
+    },
   ],
   webpackFinal: async (config) => {
     config.entry.unshift(require.resolve('core-js/es/weak-set'));
     config.entry.unshift(require.resolve('focus-within-polyfill'));
-    config.module.rules.push({
-      test: /\.stories\.tsx?$/,
-      loaders: [
-        {
-          loader: require.resolve('@storybook/source-loader'),
-          options: { parser: 'typescript' },
-        },
-      ],
-      enforce: 'pre',
-    });
     config.module.rules.push({
       test: /\.(ts|tsx)$/,
       loaders: [
@@ -39,7 +36,6 @@ module.exports = {
             presets: [['react-app', { flow: false, typescript: true }]],
           },
         },
-        { loader: 'react-docgen-typescript-loader' },
       ],
     });
     config.module.rules.push({
