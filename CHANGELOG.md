@@ -1,3 +1,10 @@
+## [6.19.10](https://github.com/nordnet/ui/compare/v6.19.9...v6.19.10) (2021-07-15)
+
+
+### Bug Fixes
+
+* revert to addListener in Media ([78f535a](https://github.com/nordnet/ui/commit/78f535a))
+
 ## [6.19.9](https://github.com/nordnet/ui/compare/v6.19.8...v6.19.9) (2021-07-15)
 
 
