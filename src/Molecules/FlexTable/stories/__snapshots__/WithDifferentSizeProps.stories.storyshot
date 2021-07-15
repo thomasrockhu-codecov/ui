@@ -358,19 +358,19 @@ exports[`Storyshots Molecules / FlexTable / With different size props Tables Wit
   }
 }
 
-@media (min-width:760px) {
-  .c1 {
-    font-size: 20px;
-    line-height: 1.2;
-  }
-}
-
 @media not all and (max-width:975px) {
 
 }
 
 @media not all and (min-width:976px) {
 
+}
+
+@media (min-width:760px) {
+  .c1 {
+    font-size: 20px;
+    line-height: 1.2;
+  }
 }
 
 <div
@@ -1008,19 +1008,19 @@ exports[`Storyshots Molecules / FlexTable / With different size props Tables Wit
   }
 }
 
-@media (min-width:760px) {
-  .c1 {
-    font-size: 20px;
-    line-height: 1.2;
-  }
-}
-
 @media not all and (max-width:975px) {
 
 }
 
 @media not all and (min-width:976px) {
 
+}
+
+@media (min-width:760px) {
+  .c1 {
+    font-size: 20px;
+    line-height: 1.2;
+  }
 }
 
 <div
@@ -2470,19 +2470,19 @@ exports[`Storyshots Molecules / FlexTable / With different size props Tables Wit
   }
 }
 
-@media (min-width:760px) {
-  .c1 {
-    font-size: 20px;
-    line-height: 1.2;
-  }
-}
-
 @media not all and (max-width:975px) {
 
 }
 
 @media not all and (min-width:976px) {
 
+}
+
+@media (min-width:760px) {
+  .c1 {
+    font-size: 20px;
+    line-height: 1.2;
+  }
 }
 
 <div
@@ -3670,6 +3670,14 @@ exports[`Storyshots Molecules / FlexTable / With different size props Tables Wit
   }
 }
 
+@media not all and (max-width:975px) {
+
+}
+
+@media not all and (min-width:976px) {
+
+}
+
 @media (min-width:760px) {
   .c1 {
     font-size: 20px;
@@ -3703,14 +3711,6 @@ exports[`Storyshots Molecules / FlexTable / With different size props Tables Wit
     padding-top: 0px !important;
     padding-bottom: 0px;
   }
-}
-
-@media not all and (max-width:975px) {
-
-}
-
-@media not all and (min-width:976px) {
-
 }
 
 <div

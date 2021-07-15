@@ -6416,13 +6416,6 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Expanded Table 
   }
 }
 
-@media (min-width:976px) {
-  .c9 {
-    font-size: 12px;
-    line-height: 16px;
-  }
-}
-
 @media not all and (max-width:975px) {
   .c25 {
     display: none;
@@ -6432,6 +6425,13 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Expanded Table 
 @media not all and (min-width:976px) {
   .c32 {
     display: none;
+  }
+}
+
+@media (min-width:976px) {
+  .c9 {
+    font-size: 12px;
+    line-height: 16px;
   }
 }
 
@@ -8286,18 +8286,6 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Hidden Expand I
   }
 }
 
-@media (min-width:976px) {
-  .c39 {
-    display: none;
-  }
-}
-
-@media (min-width:976px) {
-  .c32 {
-    display: none;
-  }
-}
-
 @media not all and (max-width:975px) {
   .c25 {
     display: none;
@@ -8306,6 +8294,18 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Hidden Expand I
 
 @media not all and (min-width:976px) {
   .c33 {
+    display: none;
+  }
+}
+
+@media (min-width:976px) {
+  .c39 {
+    display: none;
+  }
+}
+
+@media (min-width:976px) {
+  .c32 {
     display: none;
   }
 }
@@ -8968,6 +8968,14 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Only Expandable
   }
 }
 
+@media not all and (max-width:975px) {
+
+}
+
+@media not all and (min-width:976px) {
+
+}
+
 @media (min-width:976px) {
   .c12 {
     display: none;
@@ -9006,14 +9014,6 @@ exports[`Storyshots Molecules / FlexTable / With expandable rows Only Expandable
   .c13 > *:nth-last-child(2) {
     padding-right: 0;
   }
-}
-
-@media not all and (max-width:975px) {
-
-}
-
-@media not all and (min-width:976px) {
-
 }
 
 <div
