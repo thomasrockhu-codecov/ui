@@ -1,3 +1,11 @@
+## [6.19.9](https://github.com/nordnet/ui/compare/v6.19.8...v6.19.9) (2021-07-15)
+
+
+### Bug Fixes
+
+* restore to styled div outside render ([926e815](https://github.com/nordnet/ui/commit/926e815))
+* update deprecated event listener ([197e798](https://github.com/nordnet/ui/commit/197e798))
+
 ## [6.19.8](https://github.com/nordnet/ui/compare/v6.19.7...v6.19.8) (2021-07-13)
 
 
