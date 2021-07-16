@@ -22,6 +22,7 @@ const components = {
 
 const getAriaProps = R.pickBy((val, key) => key.startsWith('aria-'));
 const getDataProps = R.pickBy((val, key) => key.startsWith('data-'));
+const doNothing = () => {};
 
 const PhoneComponent = React.forwardRef<HTMLInputElement, Props>((props, ref) => {
   const {
@@ -33,10 +34,10 @@ const PhoneComponent = React.forwardRef<HTMLInputElement, Props>((props, ref) =>
     id,
     maxLength,
     name,
-    onBlur = () => {},
-    onChange = () => {},
+    onBlur = doNothing,
+    onChange = doNothing,
     onClick,
-    onFocus = () => {},
+    onFocus = doNothing,
     onMouseLeave,
     onKeyDown,
     onKeyPress,
@@ -157,13 +158,13 @@ const PhoneComponent = React.forwardRef<HTMLInputElement, Props>((props, ref) =>
   const changeCountryCode = (vals: OptionItem[]) => {
     const { value: newValue } = vals[0];
     setCountryCode(vals);
-    onChange(`+${newValue}${phoneNumber}`);
+    onChange(`+${newValue}${phoneNumber}`, newValue, phoneNumber);
   };
 
   const changePhoneNumber = (e: React.ChangeEvent<HTMLInputElement>) => {
     const { value: newValue } = e.target;
     setPhoneNumber(newValue);
-    onChange(`+${countryCode[0].value}${newValue}`);
+    onChange(`+${countryCode[0].value}${newValue}`, countryCode[0].value, newValue);
   };
 
   return (
