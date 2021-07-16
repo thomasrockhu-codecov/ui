@@ -1,3 +1,10 @@
+# [6.20.0](https://github.com/nordnet/ui/compare/v6.19.10...v6.20.0) (2021-07-16)
+
+
+### Features
+
+* 🎸 Phone input returns additional metadata onChange ([27ffd40](https://github.com/nordnet/ui/commit/27ffd40))
+
 ## [6.19.10](https://github.com/nordnet/ui/compare/v6.19.9...v6.19.10) (2021-07-15)
 
 
