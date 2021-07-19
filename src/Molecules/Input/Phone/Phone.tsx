@@ -152,7 +152,7 @@ const PhoneComponent = React.forwardRef<HTMLInputElement, Props>((props, ref) =>
   };
 
   const [countryCode, setCountryCode] = useState<OptionItem[]>(getInitialCountryCodeValue());
-  const [phoneNumber, setPhoneNumber] = useState<string>('');
+  const [phoneNumber, setPhoneNumber] = useState<string | undefined>(defaultValue?.phoneNumber);
   const [focused, setFocused] = useState(false);
 
   const changeCountryCode = (vals: OptionItem[]) => {
