@@ -29,6 +29,7 @@ defaultStory.story = {
 
 export const prefilledDefaultValues = () => (
   <Input.Phone
+    onChange={(val) => console.log(val)}
     name="disabled-example"
     label="Phone number"
     defaultValue={{ countryCode: '46', phoneNumber: '123 456 789' }}
