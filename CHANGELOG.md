@@ -1,3 +1,10 @@
+## [6.20.1](https://github.com/nordnet/ui/compare/v6.20.0...v6.20.1) (2021-07-20)
+
+
+### Bug Fixes
+
+* 🐛 Default phoneNumber value added to initial state ([ecabda9](https://github.com/nordnet/ui/commit/ecabda9))
+
 # [6.20.0](https://github.com/nordnet/ui/compare/v6.19.10...v6.20.0) (2021-07-16)
 
 
