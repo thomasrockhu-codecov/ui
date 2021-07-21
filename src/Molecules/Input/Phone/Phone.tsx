@@ -1,4 +1,4 @@
-import React, { useState, useMemo, useCallback } from 'react';
+import React, { useState, useMemo, useCallback, useRef, useEffect } from 'react';
 import * as R from 'ramda';
 import { Props } from './Phone.types';
 import { Box, Flag, Flexbox, FormField, Icon, Typography } from '../../..';
@@ -152,7 +152,7 @@ const PhoneComponent = React.forwardRef<HTMLInputElement, Props>((props, ref) =>
   };
 
   const [countryCode, setCountryCode] = useState<OptionItem[]>(getInitialCountryCodeValue());
-  const [phoneNumber, setPhoneNumber] = useState<string | undefined>(defaultValue?.phoneNumber);
+  const [phoneNumber, setPhoneNumber] = useState<string>(defaultValue?.phoneNumber ?? '');
   const [focused, setFocused] = useState(false);
 
   const changeCountryCode = (vals: OptionItem[]) => {
@@ -166,6 +166,37 @@ const PhoneComponent = React.forwardRef<HTMLInputElement, Props>((props, ref) =>
     setPhoneNumber(newValue);
     onChange(`+${countryCode[0].value}${newValue}`, countryCode[0].value, newValue);
   };
+
+  const fieldRef = useRef(null);
+
+  const handleClickOutside = useCallback(
+    (e: any) => {
+      const field: any = R.propOr(null, 'current', fieldRef);
+      if (focused && field && !field.contains(e.target)) {
+        onBlur(e);
+        setFocused(false);
+      }
+    },
+    [fieldRef, onBlur, focused],
+  );
+
+  const handleFocus = useCallback(
+    (e: any) => {
+      if (focused) {
+        return;
+      }
+
+      setFocused(true);
+      onFocus(e);
+    },
+    [onFocus, focused],
+  );
+
+  // onBlur is called when a new countrycode is selected, hence the special treatment
+  useEffect(() => {
+    document.addEventListener('mousedown', handleClickOutside);
+    return () => document.removeEventListener('mousedown', handleClickOutside);
+  }, [handleClickOutside]);
 
   return (
     <FormField
@@ -184,6 +215,7 @@ const PhoneComponent = React.forwardRef<HTMLInputElement, Props>((props, ref) =>
         props,
       )}
       required={visuallyEmphasiseRequired}
+      ref={fieldRef}
     >
       <StyledWrapper
         container
@@ -211,12 +243,7 @@ const PhoneComponent = React.forwardRef<HTMLInputElement, Props>((props, ref) =>
           onChange={changeCountryCode}
           listWidth="80px"
           id="phone-input-country-code-selector"
-          onFocus={() => {
-            setFocused(true);
-          }}
-          onBlur={() => {
-            setFocused(false);
-          }}
+          onFocus={handleFocus}
           disableSearchComponent={disableSearchComponent}
         />
         <StyledCountryCode container alignItems="center" disabled={disabled}>
@@ -253,14 +280,7 @@ const PhoneComponent = React.forwardRef<HTMLInputElement, Props>((props, ref) =>
               {...getAriaProps(props)}
               {...getDataProps(props)}
               {...(hasError(error) ? { 'aria-invalid': true } : {})}
-              onFocus={(e: React.FocusEvent<HTMLInputElement>) => {
-                setFocused(true);
-                onFocus(e);
-              }}
-              onBlur={(e: React.FocusEvent<HTMLInputElement>) => {
-                setFocused(false);
-                onBlur(e);
-              }}
+              onFocus={handleFocus}
             />
           </StyledTypography>
         </Flexbox>
