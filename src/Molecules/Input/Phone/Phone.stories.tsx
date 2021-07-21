@@ -152,3 +152,36 @@ export const enableSearchComponent = () => (
 enableSearchComponent.story = {
   name: 'Enable search component',
 };
+
+export const withOnBlur = () => (
+  <Input.Phone
+    name="on-blur-example"
+    label="Phone number"
+    placeholder="123 456 789"
+    size={select('Size', { Small: 's', Normal: undefined }, undefined)}
+    disabled={boolean('Disabled', false)}
+    onChange={console.log}
+    onBlur={() => console.log('BLUUUR!!')}
+  />
+);
+
+withOnBlur.story = {
+  name: 'With blur function',
+};
+
+export const withOnFocus = () => (
+  <Input.Phone
+    name="on-focus-example"
+    label="Phone number"
+    placeholder="123 456 789"
+    size={select('Size', { Small: 's', Normal: undefined }, undefined)}
+    disabled={boolean('Disabled', false)}
+    onChange={console.log}
+    onBlur={() => console.log('BLUUUR!!')}
+    onFocus={() => console.log('FOCUS!!!')}
+  />
+);
+
+withOnFocus.story = {
+  name: 'With focus function',
+};
