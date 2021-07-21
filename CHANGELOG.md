@@ -1,3 +1,12 @@
+## [6.20.2](https://github.com/nordnet/ui/compare/v6.20.1...v6.20.2) (2021-07-21)
+
+
+### Bug Fixes
+
+* 🐛 Fixed onBlur and onFocus in the Phone Input component ([2e7664b](https://github.com/nordnet/ui/commit/2e7664b))
+* 🐛 Switched to storybook actions in phone stories ([e71a567](https://github.com/nordnet/ui/commit/e71a567))
+* 🐛 Updated snapshots ([8e47339](https://github.com/nordnet/ui/commit/8e47339))
+
 ## [6.20.1](https://github.com/nordnet/ui/compare/v6.20.0...v6.20.1) (2021-07-20)
 
 
