@@ -8,12 +8,19 @@ const StyledButton = styled(Button)`
 `;
 
 const SmallScreenExpandButton: React.FC<{
+  className?: string;
   expanded: boolean;
   disabled: boolean;
   onClick: () => void;
   size: number;
-}> = ({ expanded, disabled, onClick, size }) => (
-  <StyledButton variant="neutral" onClick={onClick} aria-expanded={expanded} disabled={disabled}>
+}> = ({ className, expanded, disabled, onClick, size }) => (
+  <StyledButton
+    className={className}
+    variant="neutral"
+    onClick={onClick}
+    aria-expanded={expanded}
+    disabled={disabled}
+  >
     {expanded ? (
       <Icon.ChevronUp size={size} fill={(t) => (disabled ? t.color.disabled : t.color.text)} />
     ) : (
@@ -23,12 +30,19 @@ const SmallScreenExpandButton: React.FC<{
 );
 
 const LargeScreenExpandButton: React.FC<{
+  className?: string;
   expanded: boolean;
   disabled: boolean;
   onClick: () => void;
   size: number;
-}> = ({ expanded, disabled, onClick, size }) => (
-  <StyledButton variant="neutral" onClick={onClick} aria-expanded={expanded} disabled={disabled}>
+}> = ({ className, expanded, disabled, onClick, size }) => (
+  <StyledButton
+    className={className}
+    variant="neutral"
+    onClick={onClick}
+    aria-expanded={expanded}
+    disabled={disabled}
+  >
     <Icon.ThinChevron
       direction={expanded ? 'up' : 'down'}
       size={size}
@@ -45,25 +59,28 @@ export const ExpandButton: React.FC<{
   <>
     <Media
       query={(t) => t.media.lessThan(t.breakpoints.md)}
-      as={() => (
+      as={({ className }) => (
         <SmallScreenExpandButton
+          className={className}
           expanded={expanded}
           disabled={disabled}
           onClick={onClick}
           size={2}
         />
       )}
-    ></Media>
+    />
+
     <Media
       query={(t) => t.media.greaterThan(t.breakpoints.md)}
-      as={() => (
+      as={({ className }) => (
         <LargeScreenExpandButton
+          className={className}
           expanded={expanded}
           disabled={disabled}
           onClick={onClick}
           size={4}
         />
       )}
-    ></Media>
+    />
   </>
 );
