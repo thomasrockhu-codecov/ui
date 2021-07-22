@@ -1,3 +1,10 @@
+## [6.20.3](https://github.com/nordnet/ui/compare/v6.20.2...v6.20.3) (2021-07-22)
+
+
+### Bug Fixes
+
+* 🐛 prevent double expand chevron on flextable row mount ([2f09911](https://github.com/nordnet/ui/commit/2f09911))
+
 ## [6.20.2](https://github.com/nordnet/ui/compare/v6.20.1...v6.20.2) (2021-07-21)
 
 
