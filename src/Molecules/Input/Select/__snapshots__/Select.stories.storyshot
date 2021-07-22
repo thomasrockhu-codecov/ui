@@ -15046,13 +15046,13 @@ exports[`Storyshots Molecules / Input / Select With Custom Height 1`] = `
 
 @media not all and (min-width:760px) {
   .c4 {
-    display: none;
+    display: none !important;
   }
 }
 
 @media not all and (max-width:759px) {
   .c6 {
-    display: none;
+    display: none !important;
   }
 }
 

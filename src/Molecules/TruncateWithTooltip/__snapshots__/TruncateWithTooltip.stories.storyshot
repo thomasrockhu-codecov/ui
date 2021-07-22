@@ -184,7 +184,7 @@ exports[`Storyshots Molecules / TruncateWithTooltip Truncate With Tooltip Table 
   flex: 0 20px;
 }
 
-.c24 {
+.c25 {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -198,7 +198,7 @@ exports[`Storyshots Molecules / TruncateWithTooltip Truncate With Tooltip Table 
   display: block;
 }
 
-.c25 {
+.c27 {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -212,7 +212,7 @@ exports[`Storyshots Molecules / TruncateWithTooltip Truncate With Tooltip Table 
   display: block;
 }
 
-.c26 {
+.c28 {
   -webkit-transform: rotate(0deg);
   -ms-transform: rotate(0deg);
   transform: rotate(0deg);
@@ -245,7 +245,7 @@ exports[`Storyshots Molecules / TruncateWithTooltip Truncate With Tooltip Table 
   line-height: 1.5;
 }
 
-.c23 {
+.c24 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: inherit;
   margin: 0;
@@ -458,11 +458,15 @@ exports[`Storyshots Molecules / TruncateWithTooltip Truncate With Tooltip Table 
 }
 
 @media not all and (max-width:975px) {
-
+  .c23 {
+    display: none !important;
+  }
 }
 
 @media not all and (min-width:976px) {
-
+  .c26 {
+    display: none !important;
+  }
 }
 
 @media (min-width:760px) {
@@ -623,17 +627,17 @@ exports[`Storyshots Molecules / TruncateWithTooltip Truncate With Tooltip Table 
       >
         <button
           aria-expanded={false}
-          className="NormalizedButton__Button-ey7f5x-0 c21 c22"
+          className="NormalizedButton__Button-ey7f5x-0 c21 c22 c23"
           disabled={true}
           onClick={[Function]}
           type="button"
         >
           <span
-            className="c23"
+            className="c24"
           >
             <svg
               aria-hidden="true"
-              className="c24"
+              className="c25"
               focusable="false"
               preserveAspectRatio="xMidYMid meet"
               role="presentation"
@@ -647,17 +651,17 @@ exports[`Storyshots Molecules / TruncateWithTooltip Truncate With Tooltip Table 
         </button>
         <button
           aria-expanded={false}
-          className="NormalizedButton__Button-ey7f5x-0 c21 c22"
+          className="NormalizedButton__Button-ey7f5x-0 c21 c22 c26"
           disabled={true}
           onClick={[Function]}
           type="button"
         >
           <span
-            className="c23"
+            className="c24"
           >
             <svg
               aria-hidden="true"
-              className="c25 c26"
+              className="c27 c28"
               direction="down"
               focusable="false"
               preserveAspectRatio="xMidYMid meet"
@@ -738,17 +742,17 @@ exports[`Storyshots Molecules / TruncateWithTooltip Truncate With Tooltip Table 
       >
         <button
           aria-expanded={false}
-          className="NormalizedButton__Button-ey7f5x-0 c21 c22"
+          className="NormalizedButton__Button-ey7f5x-0 c21 c22 c23"
           disabled={true}
           onClick={[Function]}
           type="button"
         >
           <span
-            className="c23"
+            className="c24"
           >
             <svg
               aria-hidden="true"
-              className="c24"
+              className="c25"
               focusable="false"
               preserveAspectRatio="xMidYMid meet"
               role="presentation"
@@ -762,17 +766,17 @@ exports[`Storyshots Molecules / TruncateWithTooltip Truncate With Tooltip Table 
         </button>
         <button
           aria-expanded={false}
-          className="NormalizedButton__Button-ey7f5x-0 c21 c22"
+          className="NormalizedButton__Button-ey7f5x-0 c21 c22 c26"
           disabled={true}
           onClick={[Function]}
           type="button"
         >
           <span
-            className="c23"
+            className="c24"
           >
             <svg
               aria-hidden="true"
-              className="c25 c26"
+              className="c27 c28"
               direction="down"
               focusable="false"
               preserveAspectRatio="xMidYMid meet"
@@ -853,17 +857,17 @@ exports[`Storyshots Molecules / TruncateWithTooltip Truncate With Tooltip Table 
       >
         <button
           aria-expanded={false}
-          className="NormalizedButton__Button-ey7f5x-0 c21 c22"
+          className="NormalizedButton__Button-ey7f5x-0 c21 c22 c23"
           disabled={true}
           onClick={[Function]}
           type="button"
         >
           <span
-            className="c23"
+            className="c24"
           >
             <svg
               aria-hidden="true"
-              className="c24"
+              className="c25"
               focusable="false"
               preserveAspectRatio="xMidYMid meet"
               role="presentation"
@@ -877,17 +881,17 @@ exports[`Storyshots Molecules / TruncateWithTooltip Truncate With Tooltip Table 
         </button>
         <button
           aria-expanded={false}
-          className="NormalizedButton__Button-ey7f5x-0 c21 c22"
+          className="NormalizedButton__Button-ey7f5x-0 c21 c22 c26"
           disabled={true}
           onClick={[Function]}
           type="button"
         >
           <span
-            className="c23"
+            className="c24"
           >
             <svg
               aria-hidden="true"
-              className="c25 c26"
+              className="c27 c28"
               direction="down"
               focusable="false"
               preserveAspectRatio="xMidYMid meet"
