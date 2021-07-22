@@ -1934,7 +1934,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
   flex: 0 20px;
 }
 
-.c22 {
+.c23 {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -1948,7 +1948,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
   display: block;
 }
 
-.c23 {
+.c25 {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -1962,7 +1962,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
   display: block;
 }
 
-.c24 {
+.c26 {
   -webkit-transform: rotate(0deg);
   -ms-transform: rotate(0deg);
   transform: rotate(0deg);
@@ -1995,7 +1995,7 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
   line-height: 1.5;
 }
 
-.c21 {
+.c22 {
   font-family: 'Nordnet Sans Mono',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   color: inherit;
   margin: 0;
@@ -2208,11 +2208,15 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
 }
 
 @media not all and (max-width:975px) {
-
+  .c21 {
+    display: none !important;
+  }
 }
 
 @media not all and (min-width:976px) {
-
+  .c24 {
+    display: none !important;
+  }
 }
 
 @media (min-width:760px) {
@@ -2435,17 +2439,17 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
       >
         <button
           aria-expanded={false}
-          className="NormalizedButton__Button-ey7f5x-0 c19 c20"
+          className="NormalizedButton__Button-ey7f5x-0 c19 c20 c21"
           disabled={true}
           onClick={[Function]}
           type="button"
         >
           <span
-            className="c21"
+            className="c22"
           >
             <svg
               aria-hidden="true"
-              className="c22"
+              className="c23"
               focusable="false"
               preserveAspectRatio="xMidYMid meet"
               role="presentation"
@@ -2459,17 +2463,17 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
         </button>
         <button
           aria-expanded={false}
-          className="NormalizedButton__Button-ey7f5x-0 c19 c20"
+          className="NormalizedButton__Button-ey7f5x-0 c19 c20 c24"
           disabled={true}
           onClick={[Function]}
           type="button"
         >
           <span
-            className="c21"
+            className="c22"
           >
             <svg
               aria-hidden="true"
-              className="c23 c24"
+              className="c25 c26"
               direction="down"
               focusable="false"
               preserveAspectRatio="xMidYMid meet"
@@ -2558,17 +2562,17 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
       >
         <button
           aria-expanded={false}
-          className="NormalizedButton__Button-ey7f5x-0 c19 c20"
+          className="NormalizedButton__Button-ey7f5x-0 c19 c20 c21"
           disabled={true}
           onClick={[Function]}
           type="button"
         >
           <span
-            className="c21"
+            className="c22"
           >
             <svg
               aria-hidden="true"
-              className="c22"
+              className="c23"
               focusable="false"
               preserveAspectRatio="xMidYMid meet"
               role="presentation"
@@ -2582,17 +2586,17 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
         </button>
         <button
           aria-expanded={false}
-          className="NormalizedButton__Button-ey7f5x-0 c19 c20"
+          className="NormalizedButton__Button-ey7f5x-0 c19 c20 c24"
           disabled={true}
           onClick={[Function]}
           type="button"
         >
           <span
-            className="c21"
+            className="c22"
           >
             <svg
               aria-hidden="true"
-              className="c23 c24"
+              className="c25 c26"
               direction="down"
               focusable="false"
               preserveAspectRatio="xMidYMid meet"
@@ -2681,17 +2685,17 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
       >
         <button
           aria-expanded={false}
-          className="NormalizedButton__Button-ey7f5x-0 c19 c20"
+          className="NormalizedButton__Button-ey7f5x-0 c19 c20 c21"
           disabled={true}
           onClick={[Function]}
           type="button"
         >
           <span
-            className="c21"
+            className="c22"
           >
             <svg
               aria-hidden="true"
-              className="c22"
+              className="c23"
               focusable="false"
               preserveAspectRatio="xMidYMid meet"
               role="presentation"
@@ -2705,17 +2709,17 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
         </button>
         <button
           aria-expanded={false}
-          className="NormalizedButton__Button-ey7f5x-0 c19 c20"
+          className="NormalizedButton__Button-ey7f5x-0 c19 c20 c24"
           disabled={true}
           onClick={[Function]}
           type="button"
         >
           <span
-            className="c21"
+            className="c22"
           >
             <svg
               aria-hidden="true"
-              className="c23 c24"
+              className="c25 c26"
               direction="down"
               focusable="false"
               preserveAspectRatio="xMidYMid meet"
@@ -2804,17 +2808,17 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
       >
         <button
           aria-expanded={false}
-          className="NormalizedButton__Button-ey7f5x-0 c19 c20"
+          className="NormalizedButton__Button-ey7f5x-0 c19 c20 c21"
           disabled={true}
           onClick={[Function]}
           type="button"
         >
           <span
-            className="c21"
+            className="c22"
           >
             <svg
               aria-hidden="true"
-              className="c22"
+              className="c23"
               focusable="false"
               preserveAspectRatio="xMidYMid meet"
               role="presentation"
@@ -2828,17 +2832,17 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
         </button>
         <button
           aria-expanded={false}
-          className="NormalizedButton__Button-ey7f5x-0 c19 c20"
+          className="NormalizedButton__Button-ey7f5x-0 c19 c20 c24"
           disabled={true}
           onClick={[Function]}
           type="button"
         >
           <span
-            className="c21"
+            className="c22"
           >
             <svg
               aria-hidden="true"
-              className="c23 c24"
+              className="c25 c26"
               direction="down"
               focusable="false"
               preserveAspectRatio="xMidYMid meet"
@@ -2927,17 +2931,17 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
       >
         <button
           aria-expanded={false}
-          className="NormalizedButton__Button-ey7f5x-0 c19 c20"
+          className="NormalizedButton__Button-ey7f5x-0 c19 c20 c21"
           disabled={true}
           onClick={[Function]}
           type="button"
         >
           <span
-            className="c21"
+            className="c22"
           >
             <svg
               aria-hidden="true"
-              className="c22"
+              className="c23"
               focusable="false"
               preserveAspectRatio="xMidYMid meet"
               role="presentation"
@@ -2951,17 +2955,17 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
         </button>
         <button
           aria-expanded={false}
-          className="NormalizedButton__Button-ey7f5x-0 c19 c20"
+          className="NormalizedButton__Button-ey7f5x-0 c19 c20 c24"
           disabled={true}
           onClick={[Function]}
           type="button"
         >
           <span
-            className="c21"
+            className="c22"
           >
             <svg
               aria-hidden="true"
-              className="c23 c24"
+              className="c25 c26"
               direction="down"
               focusable="false"
               preserveAspectRatio="xMidYMid meet"
@@ -3050,17 +3054,17 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
       >
         <button
           aria-expanded={false}
-          className="NormalizedButton__Button-ey7f5x-0 c19 c20"
+          className="NormalizedButton__Button-ey7f5x-0 c19 c20 c21"
           disabled={true}
           onClick={[Function]}
           type="button"
         >
           <span
-            className="c21"
+            className="c22"
           >
             <svg
               aria-hidden="true"
-              className="c22"
+              className="c23"
               focusable="false"
               preserveAspectRatio="xMidYMid meet"
               role="presentation"
@@ -3074,17 +3078,17 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
         </button>
         <button
           aria-expanded={false}
-          className="NormalizedButton__Button-ey7f5x-0 c19 c20"
+          className="NormalizedButton__Button-ey7f5x-0 c19 c20 c24"
           disabled={true}
           onClick={[Function]}
           type="button"
         >
           <span
-            className="c21"
+            className="c22"
           >
             <svg
               aria-hidden="true"
-              className="c23 c24"
+              className="c25 c26"
               direction="down"
               focusable="false"
               preserveAspectRatio="xMidYMid meet"
@@ -3173,17 +3177,17 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
       >
         <button
           aria-expanded={false}
-          className="NormalizedButton__Button-ey7f5x-0 c19 c20"
+          className="NormalizedButton__Button-ey7f5x-0 c19 c20 c21"
           disabled={true}
           onClick={[Function]}
           type="button"
         >
           <span
-            className="c21"
+            className="c22"
           >
             <svg
               aria-hidden="true"
-              className="c22"
+              className="c23"
               focusable="false"
               preserveAspectRatio="xMidYMid meet"
               role="presentation"
@@ -3197,17 +3201,17 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
         </button>
         <button
           aria-expanded={false}
-          className="NormalizedButton__Button-ey7f5x-0 c19 c20"
+          className="NormalizedButton__Button-ey7f5x-0 c19 c20 c24"
           disabled={true}
           onClick={[Function]}
           type="button"
         >
           <span
-            className="c21"
+            className="c22"
           >
             <svg
               aria-hidden="true"
-              className="c23 c24"
+              className="c25 c26"
               direction="down"
               focusable="false"
               preserveAspectRatio="xMidYMid meet"
@@ -3296,17 +3300,17 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
       >
         <button
           aria-expanded={false}
-          className="NormalizedButton__Button-ey7f5x-0 c19 c20"
+          className="NormalizedButton__Button-ey7f5x-0 c19 c20 c21"
           disabled={true}
           onClick={[Function]}
           type="button"
         >
           <span
-            className="c21"
+            className="c22"
           >
             <svg
               aria-hidden="true"
-              className="c22"
+              className="c23"
               focusable="false"
               preserveAspectRatio="xMidYMid meet"
               role="presentation"
@@ -3320,17 +3324,17 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
         </button>
         <button
           aria-expanded={false}
-          className="NormalizedButton__Button-ey7f5x-0 c19 c20"
+          className="NormalizedButton__Button-ey7f5x-0 c19 c20 c24"
           disabled={true}
           onClick={[Function]}
           type="button"
         >
           <span
-            className="c21"
+            className="c22"
           >
             <svg
               aria-hidden="true"
-              className="c23 c24"
+              className="c25 c26"
               direction="down"
               focusable="false"
               preserveAspectRatio="xMidYMid meet"
@@ -3419,17 +3423,17 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
       >
         <button
           aria-expanded={false}
-          className="NormalizedButton__Button-ey7f5x-0 c19 c20"
+          className="NormalizedButton__Button-ey7f5x-0 c19 c20 c21"
           disabled={true}
           onClick={[Function]}
           type="button"
         >
           <span
-            className="c21"
+            className="c22"
           >
             <svg
               aria-hidden="true"
-              className="c22"
+              className="c23"
               focusable="false"
               preserveAspectRatio="xMidYMid meet"
               role="presentation"
@@ -3443,17 +3447,17 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
         </button>
         <button
           aria-expanded={false}
-          className="NormalizedButton__Button-ey7f5x-0 c19 c20"
+          className="NormalizedButton__Button-ey7f5x-0 c19 c20 c24"
           disabled={true}
           onClick={[Function]}
           type="button"
         >
           <span
-            className="c21"
+            className="c22"
           >
             <svg
               aria-hidden="true"
-              className="c23 c24"
+              className="c25 c26"
               direction="down"
               focusable="false"
               preserveAspectRatio="xMidYMid meet"
@@ -3542,17 +3546,17 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
       >
         <button
           aria-expanded={false}
-          className="NormalizedButton__Button-ey7f5x-0 c19 c20"
+          className="NormalizedButton__Button-ey7f5x-0 c19 c20 c21"
           disabled={true}
           onClick={[Function]}
           type="button"
         >
           <span
-            className="c21"
+            className="c22"
           >
             <svg
               aria-hidden="true"
-              className="c22"
+              className="c23"
               focusable="false"
               preserveAspectRatio="xMidYMid meet"
               role="presentation"
@@ -3566,17 +3570,17 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
         </button>
         <button
           aria-expanded={false}
-          className="NormalizedButton__Button-ey7f5x-0 c19 c20"
+          className="NormalizedButton__Button-ey7f5x-0 c19 c20 c24"
           disabled={true}
           onClick={[Function]}
           type="button"
         >
           <span
-            className="c21"
+            className="c22"
           >
             <svg
               aria-hidden="true"
-              className="c23 c24"
+              className="c25 c26"
               direction="down"
               focusable="false"
               preserveAspectRatio="xMidYMid meet"
@@ -3665,17 +3669,17 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
       >
         <button
           aria-expanded={false}
-          className="NormalizedButton__Button-ey7f5x-0 c19 c20"
+          className="NormalizedButton__Button-ey7f5x-0 c19 c20 c21"
           disabled={true}
           onClick={[Function]}
           type="button"
         >
           <span
-            className="c21"
+            className="c22"
           >
             <svg
               aria-hidden="true"
-              className="c22"
+              className="c23"
               focusable="false"
               preserveAspectRatio="xMidYMid meet"
               role="presentation"
@@ -3689,17 +3693,17 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
         </button>
         <button
           aria-expanded={false}
-          className="NormalizedButton__Button-ey7f5x-0 c19 c20"
+          className="NormalizedButton__Button-ey7f5x-0 c19 c20 c24"
           disabled={true}
           onClick={[Function]}
           type="button"
         >
           <span
-            className="c21"
+            className="c22"
           >
             <svg
               aria-hidden="true"
-              className="c23 c24"
+              className="c25 c26"
               direction="down"
               focusable="false"
               preserveAspectRatio="xMidYMid meet"
@@ -3788,17 +3792,17 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
       >
         <button
           aria-expanded={false}
-          className="NormalizedButton__Button-ey7f5x-0 c19 c20"
+          className="NormalizedButton__Button-ey7f5x-0 c19 c20 c21"
           disabled={true}
           onClick={[Function]}
           type="button"
         >
           <span
-            className="c21"
+            className="c22"
           >
             <svg
               aria-hidden="true"
-              className="c22"
+              className="c23"
               focusable="false"
               preserveAspectRatio="xMidYMid meet"
               role="presentation"
@@ -3812,17 +3816,17 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
         </button>
         <button
           aria-expanded={false}
-          className="NormalizedButton__Button-ey7f5x-0 c19 c20"
+          className="NormalizedButton__Button-ey7f5x-0 c19 c20 c24"
           disabled={true}
           onClick={[Function]}
           type="button"
         >
           <span
-            className="c21"
+            className="c22"
           >
             <svg
               aria-hidden="true"
-              className="c23 c24"
+              className="c25 c26"
               direction="down"
               focusable="false"
               preserveAspectRatio="xMidYMid meet"
@@ -3911,17 +3915,17 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
       >
         <button
           aria-expanded={false}
-          className="NormalizedButton__Button-ey7f5x-0 c19 c20"
+          className="NormalizedButton__Button-ey7f5x-0 c19 c20 c21"
           disabled={true}
           onClick={[Function]}
           type="button"
         >
           <span
-            className="c21"
+            className="c22"
           >
             <svg
               aria-hidden="true"
-              className="c22"
+              className="c23"
               focusable="false"
               preserveAspectRatio="xMidYMid meet"
               role="presentation"
@@ -3935,17 +3939,17 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
         </button>
         <button
           aria-expanded={false}
-          className="NormalizedButton__Button-ey7f5x-0 c19 c20"
+          className="NormalizedButton__Button-ey7f5x-0 c19 c20 c24"
           disabled={true}
           onClick={[Function]}
           type="button"
         >
           <span
-            className="c21"
+            className="c22"
           >
             <svg
               aria-hidden="true"
-              className="c23 c24"
+              className="c25 c26"
               direction="down"
               focusable="false"
               preserveAspectRatio="xMidYMid meet"
@@ -4034,17 +4038,17 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
       >
         <button
           aria-expanded={false}
-          className="NormalizedButton__Button-ey7f5x-0 c19 c20"
+          className="NormalizedButton__Button-ey7f5x-0 c19 c20 c21"
           disabled={true}
           onClick={[Function]}
           type="button"
         >
           <span
-            className="c21"
+            className="c22"
           >
             <svg
               aria-hidden="true"
-              className="c22"
+              className="c23"
               focusable="false"
               preserveAspectRatio="xMidYMid meet"
               role="presentation"
@@ -4058,17 +4062,17 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
         </button>
         <button
           aria-expanded={false}
-          className="NormalizedButton__Button-ey7f5x-0 c19 c20"
+          className="NormalizedButton__Button-ey7f5x-0 c19 c20 c24"
           disabled={true}
           onClick={[Function]}
           type="button"
         >
           <span
-            className="c21"
+            className="c22"
           >
             <svg
               aria-hidden="true"
-              className="c23 c24"
+              className="c25 c26"
               direction="down"
               focusable="false"
               preserveAspectRatio="xMidYMid meet"
@@ -4157,17 +4161,17 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
       >
         <button
           aria-expanded={false}
-          className="NormalizedButton__Button-ey7f5x-0 c19 c20"
+          className="NormalizedButton__Button-ey7f5x-0 c19 c20 c21"
           disabled={true}
           onClick={[Function]}
           type="button"
         >
           <span
-            className="c21"
+            className="c22"
           >
             <svg
               aria-hidden="true"
-              className="c22"
+              className="c23"
               focusable="false"
               preserveAspectRatio="xMidYMid meet"
               role="presentation"
@@ -4181,17 +4185,17 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
         </button>
         <button
           aria-expanded={false}
-          className="NormalizedButton__Button-ey7f5x-0 c19 c20"
+          className="NormalizedButton__Button-ey7f5x-0 c19 c20 c24"
           disabled={true}
           onClick={[Function]}
           type="button"
         >
           <span
-            className="c21"
+            className="c22"
           >
             <svg
               aria-hidden="true"
-              className="c23 c24"
+              className="c25 c26"
               direction="down"
               focusable="false"
               preserveAspectRatio="xMidYMid meet"
@@ -4280,17 +4284,17 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
       >
         <button
           aria-expanded={false}
-          className="NormalizedButton__Button-ey7f5x-0 c19 c20"
+          className="NormalizedButton__Button-ey7f5x-0 c19 c20 c21"
           disabled={true}
           onClick={[Function]}
           type="button"
         >
           <span
-            className="c21"
+            className="c22"
           >
             <svg
               aria-hidden="true"
-              className="c22"
+              className="c23"
               focusable="false"
               preserveAspectRatio="xMidYMid meet"
               role="presentation"
@@ -4304,17 +4308,17 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
         </button>
         <button
           aria-expanded={false}
-          className="NormalizedButton__Button-ey7f5x-0 c19 c20"
+          className="NormalizedButton__Button-ey7f5x-0 c19 c20 c24"
           disabled={true}
           onClick={[Function]}
           type="button"
         >
           <span
-            className="c21"
+            className="c22"
           >
             <svg
               aria-hidden="true"
-              className="c23 c24"
+              className="c25 c26"
               direction="down"
               focusable="false"
               preserveAspectRatio="xMidYMid meet"
@@ -4403,17 +4407,17 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
       >
         <button
           aria-expanded={false}
-          className="NormalizedButton__Button-ey7f5x-0 c19 c20"
+          className="NormalizedButton__Button-ey7f5x-0 c19 c20 c21"
           disabled={true}
           onClick={[Function]}
           type="button"
         >
           <span
-            className="c21"
+            className="c22"
           >
             <svg
               aria-hidden="true"
-              className="c22"
+              className="c23"
               focusable="false"
               preserveAspectRatio="xMidYMid meet"
               role="presentation"
@@ -4427,17 +4431,17 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
         </button>
         <button
           aria-expanded={false}
-          className="NormalizedButton__Button-ey7f5x-0 c19 c20"
+          className="NormalizedButton__Button-ey7f5x-0 c19 c20 c24"
           disabled={true}
           onClick={[Function]}
           type="button"
         >
           <span
-            className="c21"
+            className="c22"
           >
             <svg
               aria-hidden="true"
-              className="c23 c24"
+              className="c25 c26"
               direction="down"
               focusable="false"
               preserveAspectRatio="xMidYMid meet"
@@ -4526,17 +4530,17 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
       >
         <button
           aria-expanded={false}
-          className="NormalizedButton__Button-ey7f5x-0 c19 c20"
+          className="NormalizedButton__Button-ey7f5x-0 c19 c20 c21"
           disabled={true}
           onClick={[Function]}
           type="button"
         >
           <span
-            className="c21"
+            className="c22"
           >
             <svg
               aria-hidden="true"
-              className="c22"
+              className="c23"
               focusable="false"
               preserveAspectRatio="xMidYMid meet"
               role="presentation"
@@ -4550,17 +4554,17 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
         </button>
         <button
           aria-expanded={false}
-          className="NormalizedButton__Button-ey7f5x-0 c19 c20"
+          className="NormalizedButton__Button-ey7f5x-0 c19 c20 c24"
           disabled={true}
           onClick={[Function]}
           type="button"
         >
           <span
-            className="c21"
+            className="c22"
           >
             <svg
               aria-hidden="true"
-              className="c23 c24"
+              className="c25 c26"
               direction="down"
               focusable="false"
               preserveAspectRatio="xMidYMid meet"
@@ -4649,17 +4653,17 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
       >
         <button
           aria-expanded={false}
-          className="NormalizedButton__Button-ey7f5x-0 c19 c20"
+          className="NormalizedButton__Button-ey7f5x-0 c19 c20 c21"
           disabled={true}
           onClick={[Function]}
           type="button"
         >
           <span
-            className="c21"
+            className="c22"
           >
             <svg
               aria-hidden="true"
-              className="c22"
+              className="c23"
               focusable="false"
               preserveAspectRatio="xMidYMid meet"
               role="presentation"
@@ -4673,17 +4677,17 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
         </button>
         <button
           aria-expanded={false}
-          className="NormalizedButton__Button-ey7f5x-0 c19 c20"
+          className="NormalizedButton__Button-ey7f5x-0 c19 c20 c24"
           disabled={true}
           onClick={[Function]}
           type="button"
         >
           <span
-            className="c21"
+            className="c22"
           >
             <svg
               aria-hidden="true"
-              className="c23 c24"
+              className="c25 c26"
               direction="down"
               focusable="false"
               preserveAspectRatio="xMidYMid meet"
@@ -4772,17 +4776,17 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
       >
         <button
           aria-expanded={false}
-          className="NormalizedButton__Button-ey7f5x-0 c19 c20"
+          className="NormalizedButton__Button-ey7f5x-0 c19 c20 c21"
           disabled={true}
           onClick={[Function]}
           type="button"
         >
           <span
-            className="c21"
+            className="c22"
           >
             <svg
               aria-hidden="true"
-              className="c22"
+              className="c23"
               focusable="false"
               preserveAspectRatio="xMidYMid meet"
               role="presentation"
@@ -4796,17 +4800,17 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
         </button>
         <button
           aria-expanded={false}
-          className="NormalizedButton__Button-ey7f5x-0 c19 c20"
+          className="NormalizedButton__Button-ey7f5x-0 c19 c20 c24"
           disabled={true}
           onClick={[Function]}
           type="button"
         >
           <span
-            className="c21"
+            className="c22"
           >
             <svg
               aria-hidden="true"
-              className="c23 c24"
+              className="c25 c26"
               direction="down"
               focusable="false"
               preserveAspectRatio="xMidYMid meet"
@@ -4895,17 +4899,17 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
       >
         <button
           aria-expanded={false}
-          className="NormalizedButton__Button-ey7f5x-0 c19 c20"
+          className="NormalizedButton__Button-ey7f5x-0 c19 c20 c21"
           disabled={true}
           onClick={[Function]}
           type="button"
         >
           <span
-            className="c21"
+            className="c22"
           >
             <svg
               aria-hidden="true"
-              className="c22"
+              className="c23"
               focusable="false"
               preserveAspectRatio="xMidYMid meet"
               role="presentation"
@@ -4919,17 +4923,17 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
         </button>
         <button
           aria-expanded={false}
-          className="NormalizedButton__Button-ey7f5x-0 c19 c20"
+          className="NormalizedButton__Button-ey7f5x-0 c19 c20 c24"
           disabled={true}
           onClick={[Function]}
           type="button"
         >
           <span
-            className="c21"
+            className="c22"
           >
             <svg
               aria-hidden="true"
-              className="c23 c24"
+              className="c25 c26"
               direction="down"
               focusable="false"
               preserveAspectRatio="xMidYMid meet"
@@ -5018,17 +5022,17 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
       >
         <button
           aria-expanded={false}
-          className="NormalizedButton__Button-ey7f5x-0 c19 c20"
+          className="NormalizedButton__Button-ey7f5x-0 c19 c20 c21"
           disabled={true}
           onClick={[Function]}
           type="button"
         >
           <span
-            className="c21"
+            className="c22"
           >
             <svg
               aria-hidden="true"
-              className="c22"
+              className="c23"
               focusable="false"
               preserveAspectRatio="xMidYMid meet"
               role="presentation"
@@ -5042,17 +5046,17 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
         </button>
         <button
           aria-expanded={false}
-          className="NormalizedButton__Button-ey7f5x-0 c19 c20"
+          className="NormalizedButton__Button-ey7f5x-0 c19 c20 c24"
           disabled={true}
           onClick={[Function]}
           type="button"
         >
           <span
-            className="c21"
+            className="c22"
           >
             <svg
               aria-hidden="true"
-              className="c23 c24"
+              className="c25 c26"
               direction="down"
               focusable="false"
               preserveAspectRatio="xMidYMid meet"
@@ -5141,17 +5145,17 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
       >
         <button
           aria-expanded={false}
-          className="NormalizedButton__Button-ey7f5x-0 c19 c20"
+          className="NormalizedButton__Button-ey7f5x-0 c19 c20 c21"
           disabled={true}
           onClick={[Function]}
           type="button"
         >
           <span
-            className="c21"
+            className="c22"
           >
             <svg
               aria-hidden="true"
-              className="c22"
+              className="c23"
               focusable="false"
               preserveAspectRatio="xMidYMid meet"
               role="presentation"
@@ -5165,17 +5169,17 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
         </button>
         <button
           aria-expanded={false}
-          className="NormalizedButton__Button-ey7f5x-0 c19 c20"
+          className="NormalizedButton__Button-ey7f5x-0 c19 c20 c24"
           disabled={true}
           onClick={[Function]}
           type="button"
         >
           <span
-            className="c21"
+            className="c22"
           >
             <svg
               aria-hidden="true"
-              className="c23 c24"
+              className="c25 c26"
               direction="down"
               focusable="false"
               preserveAspectRatio="xMidYMid meet"
@@ -5264,17 +5268,17 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
       >
         <button
           aria-expanded={false}
-          className="NormalizedButton__Button-ey7f5x-0 c19 c20"
+          className="NormalizedButton__Button-ey7f5x-0 c19 c20 c21"
           disabled={true}
           onClick={[Function]}
           type="button"
         >
           <span
-            className="c21"
+            className="c22"
           >
             <svg
               aria-hidden="true"
-              className="c22"
+              className="c23"
               focusable="false"
               preserveAspectRatio="xMidYMid meet"
               role="presentation"
@@ -5288,17 +5292,17 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
         </button>
         <button
           aria-expanded={false}
-          className="NormalizedButton__Button-ey7f5x-0 c19 c20"
+          className="NormalizedButton__Button-ey7f5x-0 c19 c20 c24"
           disabled={true}
           onClick={[Function]}
           type="button"
         >
           <span
-            className="c21"
+            className="c22"
           >
             <svg
               aria-hidden="true"
-              className="c23 c24"
+              className="c25 c26"
               direction="down"
               focusable="false"
               preserveAspectRatio="xMidYMid meet"
@@ -5387,17 +5391,17 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
       >
         <button
           aria-expanded={false}
-          className="NormalizedButton__Button-ey7f5x-0 c19 c20"
+          className="NormalizedButton__Button-ey7f5x-0 c19 c20 c21"
           disabled={true}
           onClick={[Function]}
           type="button"
         >
           <span
-            className="c21"
+            className="c22"
           >
             <svg
               aria-hidden="true"
-              className="c22"
+              className="c23"
               focusable="false"
               preserveAspectRatio="xMidYMid meet"
               role="presentation"
@@ -5411,17 +5415,17 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
         </button>
         <button
           aria-expanded={false}
-          className="NormalizedButton__Button-ey7f5x-0 c19 c20"
+          className="NormalizedButton__Button-ey7f5x-0 c19 c20 c24"
           disabled={true}
           onClick={[Function]}
           type="button"
         >
           <span
-            className="c21"
+            className="c22"
           >
             <svg
               aria-hidden="true"
-              className="c23 c24"
+              className="c25 c26"
               direction="down"
               focusable="false"
               preserveAspectRatio="xMidYMid meet"
@@ -5510,17 +5514,17 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
       >
         <button
           aria-expanded={false}
-          className="NormalizedButton__Button-ey7f5x-0 c19 c20"
+          className="NormalizedButton__Button-ey7f5x-0 c19 c20 c21"
           disabled={true}
           onClick={[Function]}
           type="button"
         >
           <span
-            className="c21"
+            className="c22"
           >
             <svg
               aria-hidden="true"
-              className="c22"
+              className="c23"
               focusable="false"
               preserveAspectRatio="xMidYMid meet"
               role="presentation"
@@ -5534,17 +5538,17 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
         </button>
         <button
           aria-expanded={false}
-          className="NormalizedButton__Button-ey7f5x-0 c19 c20"
+          className="NormalizedButton__Button-ey7f5x-0 c19 c20 c24"
           disabled={true}
           onClick={[Function]}
           type="button"
         >
           <span
-            className="c21"
+            className="c22"
           >
             <svg
               aria-hidden="true"
-              className="c23 c24"
+              className="c25 c26"
               direction="down"
               focusable="false"
               preserveAspectRatio="xMidYMid meet"
@@ -5633,17 +5637,17 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
       >
         <button
           aria-expanded={false}
-          className="NormalizedButton__Button-ey7f5x-0 c19 c20"
+          className="NormalizedButton__Button-ey7f5x-0 c19 c20 c21"
           disabled={true}
           onClick={[Function]}
           type="button"
         >
           <span
-            className="c21"
+            className="c22"
           >
             <svg
               aria-hidden="true"
-              className="c22"
+              className="c23"
               focusable="false"
               preserveAspectRatio="xMidYMid meet"
               role="presentation"
@@ -5657,17 +5661,17 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
         </button>
         <button
           aria-expanded={false}
-          className="NormalizedButton__Button-ey7f5x-0 c19 c20"
+          className="NormalizedButton__Button-ey7f5x-0 c19 c20 c24"
           disabled={true}
           onClick={[Function]}
           type="button"
         >
           <span
-            className="c21"
+            className="c22"
           >
             <svg
               aria-hidden="true"
-              className="c23 c24"
+              className="c25 c26"
               direction="down"
               focusable="false"
               preserveAspectRatio="xMidYMid meet"
@@ -5756,17 +5760,17 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
       >
         <button
           aria-expanded={false}
-          className="NormalizedButton__Button-ey7f5x-0 c19 c20"
+          className="NormalizedButton__Button-ey7f5x-0 c19 c20 c21"
           disabled={true}
           onClick={[Function]}
           type="button"
         >
           <span
-            className="c21"
+            className="c22"
           >
             <svg
               aria-hidden="true"
-              className="c22"
+              className="c23"
               focusable="false"
               preserveAspectRatio="xMidYMid meet"
               role="presentation"
@@ -5780,17 +5784,17 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
         </button>
         <button
           aria-expanded={false}
-          className="NormalizedButton__Button-ey7f5x-0 c19 c20"
+          className="NormalizedButton__Button-ey7f5x-0 c19 c20 c24"
           disabled={true}
           onClick={[Function]}
           type="button"
         >
           <span
-            className="c21"
+            className="c22"
           >
             <svg
               aria-hidden="true"
-              className="c23 c24"
+              className="c25 c26"
               direction="down"
               focusable="false"
               preserveAspectRatio="xMidYMid meet"
@@ -5879,17 +5883,17 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
       >
         <button
           aria-expanded={false}
-          className="NormalizedButton__Button-ey7f5x-0 c19 c20"
+          className="NormalizedButton__Button-ey7f5x-0 c19 c20 c21"
           disabled={true}
           onClick={[Function]}
           type="button"
         >
           <span
-            className="c21"
+            className="c22"
           >
             <svg
               aria-hidden="true"
-              className="c22"
+              className="c23"
               focusable="false"
               preserveAspectRatio="xMidYMid meet"
               role="presentation"
@@ -5903,17 +5907,17 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
         </button>
         <button
           aria-expanded={false}
-          className="NormalizedButton__Button-ey7f5x-0 c19 c20"
+          className="NormalizedButton__Button-ey7f5x-0 c19 c20 c24"
           disabled={true}
           onClick={[Function]}
           type="button"
         >
           <span
-            className="c21"
+            className="c22"
           >
             <svg
               aria-hidden="true"
-              className="c23 c24"
+              className="c25 c26"
               direction="down"
               focusable="false"
               preserveAspectRatio="xMidYMid meet"
@@ -6002,17 +6006,17 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
       >
         <button
           aria-expanded={false}
-          className="NormalizedButton__Button-ey7f5x-0 c19 c20"
+          className="NormalizedButton__Button-ey7f5x-0 c19 c20 c21"
           disabled={true}
           onClick={[Function]}
           type="button"
         >
           <span
-            className="c21"
+            className="c22"
           >
             <svg
               aria-hidden="true"
-              className="c22"
+              className="c23"
               focusable="false"
               preserveAspectRatio="xMidYMid meet"
               role="presentation"
@@ -6026,17 +6030,17 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
         </button>
         <button
           aria-expanded={false}
-          className="NormalizedButton__Button-ey7f5x-0 c19 c20"
+          className="NormalizedButton__Button-ey7f5x-0 c19 c20 c24"
           disabled={true}
           onClick={[Function]}
           type="button"
         >
           <span
-            className="c21"
+            className="c22"
           >
             <svg
               aria-hidden="true"
-              className="c23 c24"
+              className="c25 c26"
               direction="down"
               focusable="false"
               preserveAspectRatio="xMidYMid meet"
@@ -6125,17 +6129,17 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
       >
         <button
           aria-expanded={false}
-          className="NormalizedButton__Button-ey7f5x-0 c19 c20"
+          className="NormalizedButton__Button-ey7f5x-0 c19 c20 c21"
           disabled={true}
           onClick={[Function]}
           type="button"
         >
           <span
-            className="c21"
+            className="c22"
           >
             <svg
               aria-hidden="true"
-              className="c22"
+              className="c23"
               focusable="false"
               preserveAspectRatio="xMidYMid meet"
               role="presentation"
@@ -6149,17 +6153,17 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
         </button>
         <button
           aria-expanded={false}
-          className="NormalizedButton__Button-ey7f5x-0 c19 c20"
+          className="NormalizedButton__Button-ey7f5x-0 c19 c20 c24"
           disabled={true}
           onClick={[Function]}
           type="button"
         >
           <span
-            className="c21"
+            className="c22"
           >
             <svg
               aria-hidden="true"
-              className="c23 c24"
+              className="c25 c26"
               direction="down"
               focusable="false"
               preserveAspectRatio="xMidYMid meet"
@@ -6248,17 +6252,17 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
       >
         <button
           aria-expanded={false}
-          className="NormalizedButton__Button-ey7f5x-0 c19 c20"
+          className="NormalizedButton__Button-ey7f5x-0 c19 c20 c21"
           disabled={true}
           onClick={[Function]}
           type="button"
         >
           <span
-            className="c21"
+            className="c22"
           >
             <svg
               aria-hidden="true"
-              className="c22"
+              className="c23"
               focusable="false"
               preserveAspectRatio="xMidYMid meet"
               role="presentation"
@@ -6272,17 +6276,17 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
         </button>
         <button
           aria-expanded={false}
-          className="NormalizedButton__Button-ey7f5x-0 c19 c20"
+          className="NormalizedButton__Button-ey7f5x-0 c19 c20 c24"
           disabled={true}
           onClick={[Function]}
           type="button"
         >
           <span
-            className="c21"
+            className="c22"
           >
             <svg
               aria-hidden="true"
-              className="c23 c24"
+              className="c25 c26"
               direction="down"
               focusable="false"
               preserveAspectRatio="xMidYMid meet"
@@ -6371,17 +6375,17 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
       >
         <button
           aria-expanded={false}
-          className="NormalizedButton__Button-ey7f5x-0 c19 c20"
+          className="NormalizedButton__Button-ey7f5x-0 c19 c20 c21"
           disabled={true}
           onClick={[Function]}
           type="button"
         >
           <span
-            className="c21"
+            className="c22"
           >
             <svg
               aria-hidden="true"
-              className="c22"
+              className="c23"
               focusable="false"
               preserveAspectRatio="xMidYMid meet"
               role="presentation"
@@ -6395,17 +6399,17 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
         </button>
         <button
           aria-expanded={false}
-          className="NormalizedButton__Button-ey7f5x-0 c19 c20"
+          className="NormalizedButton__Button-ey7f5x-0 c19 c20 c24"
           disabled={true}
           onClick={[Function]}
           type="button"
         >
           <span
-            className="c21"
+            className="c22"
           >
             <svg
               aria-hidden="true"
-              className="c23 c24"
+              className="c25 c26"
               direction="down"
               focusable="false"
               preserveAspectRatio="xMidYMid meet"
@@ -6494,17 +6498,17 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
       >
         <button
           aria-expanded={false}
-          className="NormalizedButton__Button-ey7f5x-0 c19 c20"
+          className="NormalizedButton__Button-ey7f5x-0 c19 c20 c21"
           disabled={true}
           onClick={[Function]}
           type="button"
         >
           <span
-            className="c21"
+            className="c22"
           >
             <svg
               aria-hidden="true"
-              className="c22"
+              className="c23"
               focusable="false"
               preserveAspectRatio="xMidYMid meet"
               role="presentation"
@@ -6518,17 +6522,17 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
         </button>
         <button
           aria-expanded={false}
-          className="NormalizedButton__Button-ey7f5x-0 c19 c20"
+          className="NormalizedButton__Button-ey7f5x-0 c19 c20 c24"
           disabled={true}
           onClick={[Function]}
           type="button"
         >
           <span
-            className="c21"
+            className="c22"
           >
             <svg
               aria-hidden="true"
-              className="c23 c24"
+              className="c25 c26"
               direction="down"
               focusable="false"
               preserveAspectRatio="xMidYMid meet"
@@ -6617,17 +6621,17 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
       >
         <button
           aria-expanded={false}
-          className="NormalizedButton__Button-ey7f5x-0 c19 c20"
+          className="NormalizedButton__Button-ey7f5x-0 c19 c20 c21"
           disabled={true}
           onClick={[Function]}
           type="button"
         >
           <span
-            className="c21"
+            className="c22"
           >
             <svg
               aria-hidden="true"
-              className="c22"
+              className="c23"
               focusable="false"
               preserveAspectRatio="xMidYMid meet"
               role="presentation"
@@ -6641,17 +6645,17 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
         </button>
         <button
           aria-expanded={false}
-          className="NormalizedButton__Button-ey7f5x-0 c19 c20"
+          className="NormalizedButton__Button-ey7f5x-0 c19 c20 c24"
           disabled={true}
           onClick={[Function]}
           type="button"
         >
           <span
-            className="c21"
+            className="c22"
           >
             <svg
               aria-hidden="true"
-              className="c23 c24"
+              className="c25 c26"
               direction="down"
               focusable="false"
               preserveAspectRatio="xMidYMid meet"
@@ -6740,17 +6744,17 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
       >
         <button
           aria-expanded={false}
-          className="NormalizedButton__Button-ey7f5x-0 c19 c20"
+          className="NormalizedButton__Button-ey7f5x-0 c19 c20 c21"
           disabled={true}
           onClick={[Function]}
           type="button"
         >
           <span
-            className="c21"
+            className="c22"
           >
             <svg
               aria-hidden="true"
-              className="c22"
+              className="c23"
               focusable="false"
               preserveAspectRatio="xMidYMid meet"
               role="presentation"
@@ -6764,17 +6768,17 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
         </button>
         <button
           aria-expanded={false}
-          className="NormalizedButton__Button-ey7f5x-0 c19 c20"
+          className="NormalizedButton__Button-ey7f5x-0 c19 c20 c24"
           disabled={true}
           onClick={[Function]}
           type="button"
         >
           <span
-            className="c21"
+            className="c22"
           >
             <svg
               aria-hidden="true"
-              className="c23 c24"
+              className="c25 c26"
               direction="down"
               focusable="false"
               preserveAspectRatio="xMidYMid meet"
@@ -6863,17 +6867,17 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
       >
         <button
           aria-expanded={false}
-          className="NormalizedButton__Button-ey7f5x-0 c19 c20"
+          className="NormalizedButton__Button-ey7f5x-0 c19 c20 c21"
           disabled={true}
           onClick={[Function]}
           type="button"
         >
           <span
-            className="c21"
+            className="c22"
           >
             <svg
               aria-hidden="true"
-              className="c22"
+              className="c23"
               focusable="false"
               preserveAspectRatio="xMidYMid meet"
               role="presentation"
@@ -6887,17 +6891,17 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
         </button>
         <button
           aria-expanded={false}
-          className="NormalizedButton__Button-ey7f5x-0 c19 c20"
+          className="NormalizedButton__Button-ey7f5x-0 c19 c20 c24"
           disabled={true}
           onClick={[Function]}
           type="button"
         >
           <span
-            className="c21"
+            className="c22"
           >
             <svg
               aria-hidden="true"
-              className="c23 c24"
+              className="c25 c26"
               direction="down"
               focusable="false"
               preserveAspectRatio="xMidYMid meet"
@@ -6986,17 +6990,17 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
       >
         <button
           aria-expanded={false}
-          className="NormalizedButton__Button-ey7f5x-0 c19 c20"
+          className="NormalizedButton__Button-ey7f5x-0 c19 c20 c21"
           disabled={true}
           onClick={[Function]}
           type="button"
         >
           <span
-            className="c21"
+            className="c22"
           >
             <svg
               aria-hidden="true"
-              className="c22"
+              className="c23"
               focusable="false"
               preserveAspectRatio="xMidYMid meet"
               role="presentation"
@@ -7010,17 +7014,17 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
         </button>
         <button
           aria-expanded={false}
-          className="NormalizedButton__Button-ey7f5x-0 c19 c20"
+          className="NormalizedButton__Button-ey7f5x-0 c19 c20 c24"
           disabled={true}
           onClick={[Function]}
           type="button"
         >
           <span
-            className="c21"
+            className="c22"
           >
             <svg
               aria-hidden="true"
-              className="c23 c24"
+              className="c25 c26"
               direction="down"
               focusable="false"
               preserveAspectRatio="xMidYMid meet"
@@ -7109,17 +7113,17 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
       >
         <button
           aria-expanded={false}
-          className="NormalizedButton__Button-ey7f5x-0 c19 c20"
+          className="NormalizedButton__Button-ey7f5x-0 c19 c20 c21"
           disabled={true}
           onClick={[Function]}
           type="button"
         >
           <span
-            className="c21"
+            className="c22"
           >
             <svg
               aria-hidden="true"
-              className="c22"
+              className="c23"
               focusable="false"
               preserveAspectRatio="xMidYMid meet"
               role="presentation"
@@ -7133,17 +7137,17 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
         </button>
         <button
           aria-expanded={false}
-          className="NormalizedButton__Button-ey7f5x-0 c19 c20"
+          className="NormalizedButton__Button-ey7f5x-0 c19 c20 c24"
           disabled={true}
           onClick={[Function]}
           type="button"
         >
           <span
-            className="c21"
+            className="c22"
           >
             <svg
               aria-hidden="true"
-              className="c23 c24"
+              className="c25 c26"
               direction="down"
               focusable="false"
               preserveAspectRatio="xMidYMid meet"
@@ -7232,17 +7236,17 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
       >
         <button
           aria-expanded={false}
-          className="NormalizedButton__Button-ey7f5x-0 c19 c20"
+          className="NormalizedButton__Button-ey7f5x-0 c19 c20 c21"
           disabled={true}
           onClick={[Function]}
           type="button"
         >
           <span
-            className="c21"
+            className="c22"
           >
             <svg
               aria-hidden="true"
-              className="c22"
+              className="c23"
               focusable="false"
               preserveAspectRatio="xMidYMid meet"
               role="presentation"
@@ -7256,17 +7260,17 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
         </button>
         <button
           aria-expanded={false}
-          className="NormalizedButton__Button-ey7f5x-0 c19 c20"
+          className="NormalizedButton__Button-ey7f5x-0 c19 c20 c24"
           disabled={true}
           onClick={[Function]}
           type="button"
         >
           <span
-            className="c21"
+            className="c22"
           >
             <svg
               aria-hidden="true"
-              className="c23 c24"
+              className="c25 c26"
               direction="down"
               focusable="false"
               preserveAspectRatio="xMidYMid meet"
@@ -7355,17 +7359,17 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
       >
         <button
           aria-expanded={false}
-          className="NormalizedButton__Button-ey7f5x-0 c19 c20"
+          className="NormalizedButton__Button-ey7f5x-0 c19 c20 c21"
           disabled={true}
           onClick={[Function]}
           type="button"
         >
           <span
-            className="c21"
+            className="c22"
           >
             <svg
               aria-hidden="true"
-              className="c22"
+              className="c23"
               focusable="false"
               preserveAspectRatio="xMidYMid meet"
               role="presentation"
@@ -7379,17 +7383,17 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
         </button>
         <button
           aria-expanded={false}
-          className="NormalizedButton__Button-ey7f5x-0 c19 c20"
+          className="NormalizedButton__Button-ey7f5x-0 c19 c20 c24"
           disabled={true}
           onClick={[Function]}
           type="button"
         >
           <span
-            className="c21"
+            className="c22"
           >
             <svg
               aria-hidden="true"
-              className="c23 c24"
+              className="c25 c26"
               direction="down"
               focusable="false"
               preserveAspectRatio="xMidYMid meet"
@@ -7478,17 +7482,17 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
       >
         <button
           aria-expanded={false}
-          className="NormalizedButton__Button-ey7f5x-0 c19 c20"
+          className="NormalizedButton__Button-ey7f5x-0 c19 c20 c21"
           disabled={true}
           onClick={[Function]}
           type="button"
         >
           <span
-            className="c21"
+            className="c22"
           >
             <svg
               aria-hidden="true"
-              className="c22"
+              className="c23"
               focusable="false"
               preserveAspectRatio="xMidYMid meet"
               role="presentation"
@@ -7502,17 +7506,17 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
         </button>
         <button
           aria-expanded={false}
-          className="NormalizedButton__Button-ey7f5x-0 c19 c20"
+          className="NormalizedButton__Button-ey7f5x-0 c19 c20 c24"
           disabled={true}
           onClick={[Function]}
           type="button"
         >
           <span
-            className="c21"
+            className="c22"
           >
             <svg
               aria-hidden="true"
-              className="c23 c24"
+              className="c25 c26"
               direction="down"
               focusable="false"
               preserveAspectRatio="xMidYMid meet"
@@ -7601,17 +7605,17 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
       >
         <button
           aria-expanded={false}
-          className="NormalizedButton__Button-ey7f5x-0 c19 c20"
+          className="NormalizedButton__Button-ey7f5x-0 c19 c20 c21"
           disabled={true}
           onClick={[Function]}
           type="button"
         >
           <span
-            className="c21"
+            className="c22"
           >
             <svg
               aria-hidden="true"
-              className="c22"
+              className="c23"
               focusable="false"
               preserveAspectRatio="xMidYMid meet"
               role="presentation"
@@ -7625,17 +7629,17 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
         </button>
         <button
           aria-expanded={false}
-          className="NormalizedButton__Button-ey7f5x-0 c19 c20"
+          className="NormalizedButton__Button-ey7f5x-0 c19 c20 c24"
           disabled={true}
           onClick={[Function]}
           type="button"
         >
           <span
-            className="c21"
+            className="c22"
           >
             <svg
               aria-hidden="true"
-              className="c23 c24"
+              className="c25 c26"
               direction="down"
               focusable="false"
               preserveAspectRatio="xMidYMid meet"
@@ -7724,17 +7728,17 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
       >
         <button
           aria-expanded={false}
-          className="NormalizedButton__Button-ey7f5x-0 c19 c20"
+          className="NormalizedButton__Button-ey7f5x-0 c19 c20 c21"
           disabled={true}
           onClick={[Function]}
           type="button"
         >
           <span
-            className="c21"
+            className="c22"
           >
             <svg
               aria-hidden="true"
-              className="c22"
+              className="c23"
               focusable="false"
               preserveAspectRatio="xMidYMid meet"
               role="presentation"
@@ -7748,17 +7752,17 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
         </button>
         <button
           aria-expanded={false}
-          className="NormalizedButton__Button-ey7f5x-0 c19 c20"
+          className="NormalizedButton__Button-ey7f5x-0 c19 c20 c24"
           disabled={true}
           onClick={[Function]}
           type="button"
         >
           <span
-            className="c21"
+            className="c22"
           >
             <svg
               aria-hidden="true"
-              className="c23 c24"
+              className="c25 c26"
               direction="down"
               focusable="false"
               preserveAspectRatio="xMidYMid meet"
@@ -7847,17 +7851,17 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
       >
         <button
           aria-expanded={false}
-          className="NormalizedButton__Button-ey7f5x-0 c19 c20"
+          className="NormalizedButton__Button-ey7f5x-0 c19 c20 c21"
           disabled={true}
           onClick={[Function]}
           type="button"
         >
           <span
-            className="c21"
+            className="c22"
           >
             <svg
               aria-hidden="true"
-              className="c22"
+              className="c23"
               focusable="false"
               preserveAspectRatio="xMidYMid meet"
               role="presentation"
@@ -7871,17 +7875,17 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
         </button>
         <button
           aria-expanded={false}
-          className="NormalizedButton__Button-ey7f5x-0 c19 c20"
+          className="NormalizedButton__Button-ey7f5x-0 c19 c20 c24"
           disabled={true}
           onClick={[Function]}
           type="button"
         >
           <span
-            className="c21"
+            className="c22"
           >
             <svg
               aria-hidden="true"
-              className="c23 c24"
+              className="c25 c26"
               direction="down"
               focusable="false"
               preserveAspectRatio="xMidYMid meet"
@@ -7970,17 +7974,17 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
       >
         <button
           aria-expanded={false}
-          className="NormalizedButton__Button-ey7f5x-0 c19 c20"
+          className="NormalizedButton__Button-ey7f5x-0 c19 c20 c21"
           disabled={true}
           onClick={[Function]}
           type="button"
         >
           <span
-            className="c21"
+            className="c22"
           >
             <svg
               aria-hidden="true"
-              className="c22"
+              className="c23"
               focusable="false"
               preserveAspectRatio="xMidYMid meet"
               role="presentation"
@@ -7994,17 +7998,17 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
         </button>
         <button
           aria-expanded={false}
-          className="NormalizedButton__Button-ey7f5x-0 c19 c20"
+          className="NormalizedButton__Button-ey7f5x-0 c19 c20 c24"
           disabled={true}
           onClick={[Function]}
           type="button"
         >
           <span
-            className="c21"
+            className="c22"
           >
             <svg
               aria-hidden="true"
-              className="c23 c24"
+              className="c25 c26"
               direction="down"
               focusable="false"
               preserveAspectRatio="xMidYMid meet"
@@ -8093,17 +8097,17 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
       >
         <button
           aria-expanded={false}
-          className="NormalizedButton__Button-ey7f5x-0 c19 c20"
+          className="NormalizedButton__Button-ey7f5x-0 c19 c20 c21"
           disabled={true}
           onClick={[Function]}
           type="button"
         >
           <span
-            className="c21"
+            className="c22"
           >
             <svg
               aria-hidden="true"
-              className="c22"
+              className="c23"
               focusable="false"
               preserveAspectRatio="xMidYMid meet"
               role="presentation"
@@ -8117,17 +8121,17 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
         </button>
         <button
           aria-expanded={false}
-          className="NormalizedButton__Button-ey7f5x-0 c19 c20"
+          className="NormalizedButton__Button-ey7f5x-0 c19 c20 c24"
           disabled={true}
           onClick={[Function]}
           type="button"
         >
           <span
-            className="c21"
+            className="c22"
           >
             <svg
               aria-hidden="true"
-              className="c23 c24"
+              className="c25 c26"
               direction="down"
               focusable="false"
               preserveAspectRatio="xMidYMid meet"
@@ -8216,17 +8220,17 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
       >
         <button
           aria-expanded={false}
-          className="NormalizedButton__Button-ey7f5x-0 c19 c20"
+          className="NormalizedButton__Button-ey7f5x-0 c19 c20 c21"
           disabled={true}
           onClick={[Function]}
           type="button"
         >
           <span
-            className="c21"
+            className="c22"
           >
             <svg
               aria-hidden="true"
-              className="c22"
+              className="c23"
               focusable="false"
               preserveAspectRatio="xMidYMid meet"
               role="presentation"
@@ -8240,17 +8244,17 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
         </button>
         <button
           aria-expanded={false}
-          className="NormalizedButton__Button-ey7f5x-0 c19 c20"
+          className="NormalizedButton__Button-ey7f5x-0 c19 c20 c24"
           disabled={true}
           onClick={[Function]}
           type="button"
         >
           <span
-            className="c21"
+            className="c22"
           >
             <svg
               aria-hidden="true"
-              className="c23 c24"
+              className="c25 c26"
               direction="down"
               focusable="false"
               preserveAspectRatio="xMidYMid meet"
@@ -8339,17 +8343,17 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
       >
         <button
           aria-expanded={false}
-          className="NormalizedButton__Button-ey7f5x-0 c19 c20"
+          className="NormalizedButton__Button-ey7f5x-0 c19 c20 c21"
           disabled={true}
           onClick={[Function]}
           type="button"
         >
           <span
-            className="c21"
+            className="c22"
           >
             <svg
               aria-hidden="true"
-              className="c22"
+              className="c23"
               focusable="false"
               preserveAspectRatio="xMidYMid meet"
               role="presentation"
@@ -8363,17 +8367,17 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
         </button>
         <button
           aria-expanded={false}
-          className="NormalizedButton__Button-ey7f5x-0 c19 c20"
+          className="NormalizedButton__Button-ey7f5x-0 c19 c20 c24"
           disabled={true}
           onClick={[Function]}
           type="button"
         >
           <span
-            className="c21"
+            className="c22"
           >
             <svg
               aria-hidden="true"
-              className="c23 c24"
+              className="c25 c26"
               direction="down"
               focusable="false"
               preserveAspectRatio="xMidYMid meet"
@@ -8462,17 +8466,17 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
       >
         <button
           aria-expanded={false}
-          className="NormalizedButton__Button-ey7f5x-0 c19 c20"
+          className="NormalizedButton__Button-ey7f5x-0 c19 c20 c21"
           disabled={true}
           onClick={[Function]}
           type="button"
         >
           <span
-            className="c21"
+            className="c22"
           >
             <svg
               aria-hidden="true"
-              className="c22"
+              className="c23"
               focusable="false"
               preserveAspectRatio="xMidYMid meet"
               role="presentation"
@@ -8486,17 +8490,17 @@ exports[`Storyshots Molecules / FlexTable / With different headers Sticky Header
         </button>
         <button
           aria-expanded={false}
-          className="NormalizedButton__Button-ey7f5x-0 c19 c20"
+          className="NormalizedButton__Button-ey7f5x-0 c19 c20 c24"
           disabled={true}
           onClick={[Function]}
           type="button"
         >
           <span
-            className="c21"
+            className="c22"
           >
             <svg
               aria-hidden="true"
-              className="c23 c24"
+              className="c25 c26"
               direction="down"
               focusable="false"
               preserveAspectRatio="xMidYMid meet"

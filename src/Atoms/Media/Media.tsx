@@ -9,7 +9,7 @@ const negateMedia = R.pipe(R.split(' '), R.insert(1, 'not all and'), R.join(' ')
 
 const StyledDiv = styled.div<{ query: Props['query'] }>`
   ${(p) => negateMedia(typeof p.query === 'string' ? p.query : p.query(p.theme))} {
-    display: none;
+    display: none !important;
   }
 `;
 

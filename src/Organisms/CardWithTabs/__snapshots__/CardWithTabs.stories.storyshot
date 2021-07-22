@@ -1704,13 +1704,13 @@ exports[`Storyshots Organisms / CardWithTabs With variant big 1`] = `
 
 @media not all and (min-width:760px) {
   .c3 {
-    display: none;
+    display: none !important;
   }
 }
 
 @media not all and (max-width:759px) {
   .c5 {
-    display: none;
+    display: none !important;
   }
 }
 
