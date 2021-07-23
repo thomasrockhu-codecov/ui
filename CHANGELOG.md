@@ -1,3 +1,10 @@
+# [6.21.0](https://github.com/nordnet/ui/compare/v6.20.3...v6.21.0) (2021-07-23)
+
+
+### Features
+
+* 🎸 add className prop to CollapsibleCard ([581a2ec](https://github.com/nordnet/ui/commit/581a2ec))
+
 ## [6.20.3](https://github.com/nordnet/ui/compare/v6.20.2...v6.20.3) (2021-07-22)
 
 
