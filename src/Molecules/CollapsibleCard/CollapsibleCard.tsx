@@ -49,6 +49,7 @@ const AnimatedChevronUp = styled(Icon.ChevronUp)<Pick<IndicatorsProps, '$collaps
 `;
 
 export const CollapsibleCard: React.FC<CollapsibleProps> = ({
+  className,
   title,
   children,
   collapsedInitial = false,
@@ -148,7 +149,7 @@ export const CollapsibleCard: React.FC<CollapsibleProps> = ({
     'ontouchstart' in document.documentElement;
 
   return (
-    <Card>
+    <Card className={className}>
       <StyledButton
         type="button"
         {...{ [hasOnTouch ? 'onTouchStart' : 'onClick']: toggle }}
