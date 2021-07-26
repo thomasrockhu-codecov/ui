@@ -1,3 +1,12 @@
+# [6.22.0](https://github.com/nordnet/ui/compare/v6.21.0...v6.22.0) (2021-07-26)
+
+
+### Features
+
+* **TP-16009:** add compability of data-prevent-order-side-panel-click-outside to Link, LinkSell, LinkBuy, Button ([1481df1](https://github.com/nordnet/ui/commit/1481df1))
+* **TP-16009:** disabled eslint warning ([97728ec](https://github.com/nordnet/ui/commit/97728ec))
+* **TP-16009:** updated snapshot ([0fdb354](https://github.com/nordnet/ui/commit/0fdb354))
+
 # [6.21.0](https://github.com/nordnet/ui/compare/v6.20.3...v6.21.0) (2021-07-23)
 
 
