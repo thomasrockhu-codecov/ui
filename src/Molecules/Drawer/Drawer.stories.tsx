@@ -2,7 +2,17 @@ import React, { useState } from 'react';
 import { action } from '@storybook/addon-actions';
 import styled from 'styled-components';
 import Box from '../../Atoms/Box';
-import { Button, Drawer, FadedScroll, Flexbox, Icon, Typography } from '../../index';
+import {
+  Button,
+  Drawer,
+  FadedScroll,
+  Flexbox,
+  Icon,
+  Typography,
+  Link,
+  LinkBuy,
+  LinkSell,
+} from '../../index';
 
 export default {
   title: 'Molecules / Drawer',
@@ -351,6 +361,18 @@ export const WithoutCloseOnSpecificElementClick = () => {
             <input placeholder="Random text input" />
           </Box>
         </StyledBoxGreen>
+        <Box>
+          <Link data-custom-prevent-click-outside>Buy</Link>
+        </Box>
+        <Box>
+          <Button data-custom-prevent-click-outside>Buy Button</Button>
+        </Box>
+        <Box>
+          <LinkBuy data-custom-prevent-click-outside>Buy Link</LinkBuy>
+        </Box>
+        <Box>
+          <LinkSell data-custom-prevent-click-outside>Sell Link</LinkSell>
+        </Box>
         <Drawer
           onClose={onClose}
           title="Drawer title"
