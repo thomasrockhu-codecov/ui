@@ -362,6 +362,7 @@ export const WithoutCloseOnSpecificElementClick = () => {
           </Box>
         </StyledBoxGreen>
         <Box>
+          {/* eslint-disable-next-line */}
           <Link data-custom-prevent-click-outside>Buy</Link>
         </Box>
         <Box>
